@@ -13,3 +13,4 @@ lpe
 sub $1,3
 mul $1,2
 add $1,15
+mov $0,$1

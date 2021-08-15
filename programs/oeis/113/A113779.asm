@@ -6,5 +6,4 @@ mul $0,2
 add $0,1
 mod $0,3
 gcd $0,10
-mov $1,$0
-add $1,7
+add $0,7

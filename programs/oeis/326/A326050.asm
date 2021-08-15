@@ -6,4 +6,3 @@ seq $0,82052 ; Sum of divisors of n that are not of the form 4k+1.
 add $0,9
 add $2,10
 sub $0,$2
-mov $1,$0

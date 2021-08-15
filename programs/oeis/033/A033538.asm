@@ -3,7 +3,6 @@
 
 trn $0,1
 seq $0,3688 ; a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
-mov $1,$0
-div $1,3
-mul $1,4
-add $1,1
+div $0,3
+mul $0,4
+add $0,1

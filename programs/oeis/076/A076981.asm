@@ -4,6 +4,5 @@
 trn $0,1
 seq $0,75365 ; Smallest k such that (n+1)(n+2)...(n+k) is divisible by the product of all the primes up to n.
 mul $0,7
-mov $1,$0
-sub $1,6
-div $1,7
+sub $0,6
+div $0,7

@@ -6,3 +6,4 @@ lpb $0
   mov $1,$0
   seq $0,66628 ; a(n) = n - the largest Fibonacci number <= n.
 lpe
+mov $0,$1

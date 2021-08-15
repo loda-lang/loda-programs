@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,204539 ; a(n) = number of integers N=4k whose "basin" sequence (cf. comment) ends in n^2.
-mov $1,$0

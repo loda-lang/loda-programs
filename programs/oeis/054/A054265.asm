@@ -8,3 +8,4 @@ lpb $0
   seq $2,211006 ; Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
   add $1,$2
 lpe
+mov $0,$1

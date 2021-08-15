@@ -3,4 +3,3 @@
 
 seq $0,144619 ; a(n) = 19n + 8.
 seq $0,11746 ; Expansion of (1 + x^2)/(1 + x^2 + x^5) mod 2.
-mov $1,$0

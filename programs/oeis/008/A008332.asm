@@ -4,4 +4,3 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 trn $0,2
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $1,$0

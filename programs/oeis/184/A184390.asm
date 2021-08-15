@@ -5,5 +5,4 @@ seq $0,7955 ; Product of divisors of n.
 add $1,$0
 mul $1,$0
 add $0,$1
-mov $1,$0
-div $1,2
+div $0,2

@@ -6,6 +6,5 @@ mod $0,2
 mul $0,12
 add $0,1
 pow $0,2
-mov $1,$0
-sub $1,79
-div $1,39
+sub $0,79
+div $0,39

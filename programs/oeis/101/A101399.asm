@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,97333 ; Sum k=0..n, C(n-k, floor(k/2)).
-mov $1,$0

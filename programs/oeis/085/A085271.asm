@@ -4,5 +4,4 @@
 seq $0,72668 ; Numbers one less than composite numbers.
 sub $0,1
 seq $0,46667 ; a(n) = A046666(n)/2.
-mov $1,$0
-mul $1,2
+mul $0,2

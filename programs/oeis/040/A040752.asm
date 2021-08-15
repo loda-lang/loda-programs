@@ -3,6 +3,5 @@
 
 mul $0,2
 seq $0,40329 ; Continued fraction for sqrt(348).
-mov $1,$0
-mul $1,3
-div $1,2
+mul $0,3
+div $0,2

@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
-mov $1,$0

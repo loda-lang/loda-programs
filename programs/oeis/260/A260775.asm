@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,68875 ; Expansion of (1 + x*C)*C, where C = (1 - (1 - 4*x)^(1/2))/(2*x) is the g.f. for Catalan numbers, A000108.
-mov $1,$0

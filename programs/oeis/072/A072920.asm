@@ -11,3 +11,4 @@ lpb $2
   seq $0,34693 ; Smallest k such that k*n+1 is prime.
   add $1,$0
 lpe
+mov $0,$1

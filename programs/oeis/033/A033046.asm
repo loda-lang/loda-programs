@@ -3,5 +3,4 @@
 
 seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
 seq $0,5836 ; Numbers n whose base 3 representation contains no 2.
-mov $1,$0
-div $1,4
+div $0,4

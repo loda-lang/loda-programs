@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,155038 ; Triangle read by rows: T(n,k) is the number of compositions of n with first part k.
-mov $1,$0

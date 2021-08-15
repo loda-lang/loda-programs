@@ -7,4 +7,3 @@ mov $2,$0
 seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,$2
 add $0,1
-mov $1,$0

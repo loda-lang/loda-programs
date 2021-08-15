@@ -8,3 +8,4 @@ lpb $0
   seq $2,334572 ; Let x(n, k) be the exponent of prime(k) in the factorization of n, then a(n) = Max_{k} abs(x(n,k)- x(n-1,k)).
   add $1,$2
 lpe
+mov $0,$1

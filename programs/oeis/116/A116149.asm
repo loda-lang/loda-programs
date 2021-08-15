@@ -4,4 +4,3 @@
 mul $0,2
 add $0,2
 seq $0,303383 ; Total volume of all cubes with side length q such that n = p + q and p <= q.
-mov $1,$0

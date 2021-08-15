@@ -3,9 +3,9 @@
 
 seq $0,277236 ; Number of strings of length n composed of symbols from the circular list [1,2,3,4] such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1 and 3.
 mov $1,$0
-mul $0,2
-sub $1,2
-div $1,2
-sub $0,$1
-mov $1,$0
-sub $1,1
+sub $0,2
+div $0,2
+mul $1,2
+sub $1,$0
+mov $0,$1
+sub $0,1

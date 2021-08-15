@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-mov $1,$0

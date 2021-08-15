@@ -7,3 +7,4 @@ lpb $0
   seq $2,87624 ; a(n)=0 if n is prime, A001221(n) otherwise.
   add $1,$2
 lpe
+mov $0,$1

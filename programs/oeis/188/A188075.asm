@@ -8,3 +8,4 @@ lpb $0
   seq $1,188089 ; Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(3), n>=1.
 lpe
 add $1,4
+mov $0,$1

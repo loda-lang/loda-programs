@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
-mov $1,$0
-div $1,2
+div $0,2

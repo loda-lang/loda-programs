@@ -5,4 +5,3 @@ seq $0,108306 ; Expansion of (3*x+1)/(1-3*x-3*x^2).
 add $0,1
 mul $0,2
 div $0,3
-mov $1,$0

@@ -3,5 +3,5 @@
 
 mul $0,2
 mov $1,$0
-seq $0,33270 ; Number of odd primes <= n.
-sub $1,$0
+seq $1,33270 ; Number of odd primes <= n.
+sub $0,$1

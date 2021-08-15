@@ -8,3 +8,4 @@ lpb $0
   seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 lpe
 mul $1,2
+mov $0,$1

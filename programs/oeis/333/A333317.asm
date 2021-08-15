@@ -7,3 +7,4 @@ lpb $0
   seq $2,248577 ; Product of the number of divisors of n and the number of distinct prime divisors of n; i.e., tau(n) * omega(n).
   add $1,$2
 lpe
+mov $0,$1

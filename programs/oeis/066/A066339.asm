@@ -10,3 +10,4 @@ lpb $2
   seq $0,79260 ; Characteristic function of primes of form 4n+1 (1 if n is prime of form 4n+1, 0 otherwise).
   add $1,$0
 lpe
+mov $0,$1

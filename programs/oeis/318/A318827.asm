@@ -6,3 +6,4 @@ seq $0,49559 ; a(n) = gcd(n - 1, phi(n)).
 mov $1,1
 sub $2,$0
 add $1,$2
+mov $0,$1

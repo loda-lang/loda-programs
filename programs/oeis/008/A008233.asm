@@ -7,3 +7,4 @@ lpb $0
   seq $2,8218 ; Floor(n/4)*floor((n+1)/4)*floor((n+2)/4).
   add $1,$2
 lpe
+mov $0,$1

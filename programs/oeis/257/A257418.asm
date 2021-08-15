@@ -4,4 +4,3 @@
 seq $0,183979 ; 1/4 the number of (n+1) X 3 binary arrays with all 2 X 2 subblock sums the same.
 sub $0,1
 div $0,2
-mov $1,$0

@@ -38,3 +38,4 @@ lpb $9
   mov $9,0
 lpe
 div $1,66
+mov $0,$1

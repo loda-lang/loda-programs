@@ -3,4 +3,3 @@
 
 seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
 cmp $0,2
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,79 ; Powers of 2: a(n) = 2^n.
 seq $0,85787 ; Generalized heptagonal numbers: m*(5*m - 3)/2, m = 0, +-1, +-2 +-3, ...
-mov $1,$0

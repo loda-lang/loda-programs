@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,31138 ; Numbers k such that 1^5 + 2^5 + ... + k^5 is a square.
-mov $1,$0
-div $1,12
+div $0,12

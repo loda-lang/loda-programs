@@ -4,4 +4,3 @@
 seq $0,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
 sub $0,2
 seq $0,7064 ; Numbers not of form "nearest integer to n*tau", tau=(1+sqrt(5))/2.
-mov $1,$0

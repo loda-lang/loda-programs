@@ -4,3 +4,4 @@
 seq $0,9191 ; a(n) = gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
 mov $1,1
 bin $1,$0
+mov $0,$1

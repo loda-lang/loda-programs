@@ -3,5 +3,4 @@
 
 seq $0,32925 ; Numbers whose set of base 4 digits is {1,2}.
 seq $0,33162 ; Begins with (3, 4); avoids 3-term arithmetic progressions.
-mov $1,$0
-sub $1,3
+sub $0,3

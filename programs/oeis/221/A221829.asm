@@ -5,5 +5,4 @@ add $0,1
 seq $0,60801 ; Invert transform of odd numbers: a(n) = Sum_{k=1..n} (2*k+1)*a(n-k), a(0)=1.
 add $0,66240
 div $0,4
-mov $1,$0
-sub $1,16560
+sub $0,16560

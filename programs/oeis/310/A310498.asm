@@ -4,5 +4,4 @@
 mul $0,5
 seq $0,201629 ; a(n) = n if n is even and otherwise its nearest multiple of 4.
 trn $0,1
-mov $1,$0
-add $1,1
+add $0,1

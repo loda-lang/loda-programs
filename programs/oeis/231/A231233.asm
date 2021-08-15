@@ -3,4 +3,3 @@
 
 seq $0,75362 ; Triangle read by rows with the n-th row containing the first n multiples of n.
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-mov $1,$0

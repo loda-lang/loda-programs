@@ -3,5 +3,4 @@
 
 add $0,40
 seq $0,144077 ; a(n) = z(n^2,n) with z(x,y) = if x>y then z(x-y,y+1) else y.
-mov $1,$0
-sub $1,70
+sub $0,70

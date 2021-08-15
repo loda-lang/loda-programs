@@ -9,3 +9,4 @@ lpb $0
   seq $2,101605 ; a(n) = 1 if n is a product of exactly 3 (not necessarily distinct) primes, otherwise 0.
   add $1,$2
 lpe
+mov $0,$1

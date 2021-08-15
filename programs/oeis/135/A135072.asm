@@ -4,12 +4,12 @@
 add $0,1
 pow $0,3
 mov $1,$0
-mul $0,3
+mul $1,3
 mov $2,1
-lpb $0
-  mov $0,$1
-  div $0,$2
+lpb $1
+  mov $1,$0
+  div $1,$2
   add $2,1
 lpe
-div $1,$2
-add $1,1
+div $0,$2
+add $0,1

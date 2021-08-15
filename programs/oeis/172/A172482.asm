@@ -4,6 +4,6 @@
 mul $0,4
 add $0,6
 mov $1,$0
-bin $1,3
-add $1,$0
-div $1,8
+bin $0,3
+add $0,$1
+div $0,8

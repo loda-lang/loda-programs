@@ -8,3 +8,4 @@ lpb $0
   seq $2,257644 ; First differences of A264100.
   add $1,$2
 lpe
+mov $0,$1

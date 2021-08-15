@@ -4,6 +4,6 @@
 seq $0,140434 ; Number of new visible points created at each step in an n X n grid.
 sub $0,1
 mov $1,$0
-trn $0,1
-add $1,$0
-add $1,3
+trn $1,1
+add $0,$1
+add $0,3

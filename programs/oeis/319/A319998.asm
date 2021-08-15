@@ -8,3 +8,4 @@ lpb $0
   seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpe
 mul $1,2
+mov $0,$1

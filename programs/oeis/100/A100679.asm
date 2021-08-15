@@ -17,3 +17,4 @@ lpb $0
   div $1,29
 lpe
 sub $1,16
+mov $0,$1

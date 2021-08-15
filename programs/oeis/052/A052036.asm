@@ -20,3 +20,4 @@ lpb $0
 lpe
 add $1,1
 trn $1,7
+mov $0,$1

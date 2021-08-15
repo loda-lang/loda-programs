@@ -3,5 +3,4 @@
 
 seq $0,198644 ; 8*3^n-1.
 seq $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
-mov $1,$0
-div $1,8
+div $0,8

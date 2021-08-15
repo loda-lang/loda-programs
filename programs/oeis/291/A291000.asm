@@ -3,6 +3,5 @@
 
 add $0,2
 seq $0,103685 ; Consider the morphism 1->{1,2}, 2->{1,3}, 3->{1}; a(n) is the total number of '3' after n substitutions.
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

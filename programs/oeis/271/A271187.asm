@@ -8,4 +8,3 @@ lpb $0
   lpe
   dif $0,9
 lpe
-mov $1,$0

@@ -14,7 +14,6 @@ bin $1,2
 add $0,$1
 add $0,1
 mul $0,2
-mov $1,$0
-sub $1,10
-mul $1,4
-add $1,1
+sub $0,10
+mul $0,4
+add $0,1

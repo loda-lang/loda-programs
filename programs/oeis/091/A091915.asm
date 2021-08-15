@@ -51,3 +51,4 @@ lpb $4
   add $1,$5
 lpe
 mul $1,2
+mov $0,$1

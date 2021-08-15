@@ -3,6 +3,5 @@
 
 add $0,2
 seq $0,232582 ; Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

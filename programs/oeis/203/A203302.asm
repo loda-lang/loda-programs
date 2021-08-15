@@ -6,7 +6,6 @@ add $0,2
 add $2,1
 add $0,$2
 sub $0,1
-mov $1,$0
-mul $1,2
-seq $1,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
-div $1,4
+mul $0,2
+seq $0,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
+div $0,4

@@ -4,4 +4,3 @@
 seq $0,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 mul $0,6
 div $0,4
-mov $1,$0

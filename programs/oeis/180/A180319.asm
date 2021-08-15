@@ -4,6 +4,5 @@
 mul $0,4
 bin $0,2
 trn $0,2
-mov $1,$0
-div $1,2
-mul $1,4
+div $0,2
+mul $0,4

@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,32096 ; "BHK" (reversible, identity, unlabeled) transform of 2,2,2,2,...
-mov $1,$0
-sub $1,2
+sub $0,2

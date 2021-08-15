@@ -4,9 +4,7 @@
 mov $2,$0
 seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 add $0,$2
-mov $1,$0
-mul $2,26
 lpb $2
-  add $1,1
-  mov $2,$0
+  add $0,1
+  mov $2,$1
 lpe

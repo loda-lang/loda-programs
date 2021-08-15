@@ -4,4 +4,3 @@
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0

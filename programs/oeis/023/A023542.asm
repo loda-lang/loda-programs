@@ -12,3 +12,4 @@ lpb $3
   seq $0,88207 ; a(n) = Sum_{k=0..n} floor(k*phi^2)) where phi=(1+sqrt(5))/2.
   add $1,$0
 lpe
+mov $0,$1

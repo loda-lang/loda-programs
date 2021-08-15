@@ -4,4 +4,3 @@
 seq $0,88720 ; Unique monotone sequence satisfying a(a(a(n))) = 2n.
 sub $0,1
 div $0,2
-mov $1,$0

@@ -11,9 +11,9 @@ mov $2,2985984
 gcd $2,$0
 div $0,$2
 mov $1,$0
-seq $0,133882 ; a(n) = binomial(n+2,n) mod 2^2.
+seq $1,133882 ; a(n) = binomial(n+2,n) mod 2^2.
 mov $2,2
-bin $2,$0
-add $1,$2
-sub $1,1
-mod $1,2
+bin $2,$1
+add $0,$2
+sub $0,1
+mod $0,2

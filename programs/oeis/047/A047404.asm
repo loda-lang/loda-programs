@@ -3,4 +3,3 @@
 
 seq $0,47546 ; Numbers that are congruent to {2, 3, 4, 7} mod 8.
 sub $0,1
-add $1,$0

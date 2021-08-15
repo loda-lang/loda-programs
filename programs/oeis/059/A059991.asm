@@ -4,3 +4,4 @@
 seq $0,129760 ; Bitwise AND of binary representation of n-1 and n.
 mov $1,2
 pow $1,$0
+mov $0,$1

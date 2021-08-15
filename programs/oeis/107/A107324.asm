@@ -3,4 +3,3 @@
 
 seq $0,63655 ; Smallest semiperimeter of integral rectangle with area n.
 div $0,2
-mov $1,$0

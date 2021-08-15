@@ -4,4 +4,3 @@
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
 seq $0,34693 ; Smallest k such that k*n+1 is prime.
-mov $1,$0

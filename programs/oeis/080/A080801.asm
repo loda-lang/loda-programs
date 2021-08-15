@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
-mov $1,$0
-add $1,1
+add $0,1

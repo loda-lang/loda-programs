@@ -3,4 +3,3 @@
 
 seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
 seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-mov $1,$0

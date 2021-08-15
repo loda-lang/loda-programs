@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,133899 ; Numbers m such that binomial(m+9,m) mod 9 = 0.
-mov $1,$0
-sub $1,72
-mul $1,10
+sub $0,72
+mul $0,10

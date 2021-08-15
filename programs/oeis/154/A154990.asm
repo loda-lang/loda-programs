@@ -3,5 +3,4 @@
 
 seq $0,23531 ; a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.
 mul $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

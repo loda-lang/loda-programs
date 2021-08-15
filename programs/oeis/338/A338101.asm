@@ -3,4 +3,3 @@
 
 seq $0,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

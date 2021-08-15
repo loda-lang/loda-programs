@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,107782 ; In binary representation of n: (number of zeros) minus (number of blocks of contiguous zeros).
-mov $1,$0

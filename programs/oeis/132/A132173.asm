@@ -21,3 +21,4 @@ lpb $0
   add $4,5
 lpe
 add $1,1
+mov $0,$1

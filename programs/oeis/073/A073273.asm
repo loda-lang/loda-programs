@@ -8,6 +8,5 @@ add $0,6
 seq $2,40 ; The prime numbers.
 add $0,$2
 sub $0,1
-mov $1,$0
-div $1,2
-sub $1,3
+div $0,2
+sub $0,3

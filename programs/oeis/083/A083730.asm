@@ -3,4 +3,3 @@
 
 seq $0,249740 ; The largest prime whose square divides n, 1 if n is squarefree.
 pow $0,2
-mov $1,$0

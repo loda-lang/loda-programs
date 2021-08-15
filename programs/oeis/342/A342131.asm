@@ -3,4 +3,3 @@
 
 mul $0,3
 seq $0,124072 ; First differences of A129819.
-mov $1,$0

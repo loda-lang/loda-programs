@@ -5,6 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  cal $2,2663 ; a(n) = 2^n - C(n,0) - C(n,1) - C(n,2) - C(n,3).
+  seq $2,2663 ; a(n) = 2^n - C(n,0) - C(n,1) - C(n,2) - C(n,3).
   add $1,$2
 lpe
+mov $0,$1

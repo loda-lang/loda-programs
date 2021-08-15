@@ -4,6 +4,5 @@
 mul $0,2
 add $0,2
 seq $0,7504 ; Sum of the first n primes.
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

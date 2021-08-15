@@ -23,3 +23,4 @@ lpe
 add $1,$3
 div $1,4
 add $1,3
+mov $0,$1

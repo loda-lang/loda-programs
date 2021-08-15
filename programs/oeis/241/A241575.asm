@@ -3,4 +3,3 @@
 
 add $0,36
 seq $0,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
-mov $1,$0

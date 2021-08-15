@@ -4,4 +4,3 @@
 add $0,1
 pow $0,3
 seq $0,7091 ; Numbers in base 5.
-mov $1,$0

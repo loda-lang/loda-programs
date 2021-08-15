@@ -3,7 +3,7 @@
 
 mod $0,4
 mov $1,$0
-gcd $0,4
-mul $1,$0
-mul $1,2
-add $1,1
+gcd $1,4
+mul $0,$1
+mul $0,2
+add $0,1

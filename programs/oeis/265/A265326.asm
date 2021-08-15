@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,55945 ; a(n) = n - (reversal of base-2 digits of n) (and then the result is written in base 10).
-mov $1,$0

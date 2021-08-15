@@ -3,7 +3,6 @@
 
 mul $0,4
 seq $0,86117 ; Denominator of mean deviation of a symmetrical binomial distribution on n elements.
-mov $1,$0
-pow $1,3
-div $1,8
-mul $1,16
+pow $0,3
+div $0,8
+mul $0,16

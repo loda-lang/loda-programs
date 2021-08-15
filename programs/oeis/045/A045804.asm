@@ -7,6 +7,5 @@ add $2,$0
 add $0,$2
 add $0,22
 seq $0,45806 ; 6-ish numbers (end in 23, 27, 61, 89).
-mov $1,$0
-div $1,3
-sub $1,200
+div $0,3
+sub $0,200

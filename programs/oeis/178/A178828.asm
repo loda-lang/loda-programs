@@ -7,3 +7,4 @@ lpb $0
   seq $2,154992 ; A048473 prefixed by two zeros.
   add $1,$2
 lpe
+mov $0,$1

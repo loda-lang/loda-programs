@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,251260 ; Expansion of (1 + 2*x + x^2 + x^3) / ((1 - x^2)^2 * (1 - x^3) * (1 - x^4)) in powers of x.
-mov $1,$0

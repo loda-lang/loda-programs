@@ -5,3 +5,4 @@ seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 mod $0,4
 div $0,2
 pow $1,$0
+mov $0,$1

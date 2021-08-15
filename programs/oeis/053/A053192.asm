@@ -6,3 +6,4 @@ seq $0,53650 ; Cototient function of n^2.
 add $1,$2
 mul $1,$0
 add $1,$0
+mov $0,$1

@@ -6,10 +6,9 @@ add $2,$0
 pow $2,3
 mov $4,$0
 sub $0,$2
-mov $1,$0
 mov $5,$4
 mul $5,$4
 mul $5,$4
 mov $3,$5
 mul $3,5
-add $1,$3
+add $0,$3

@@ -4,4 +4,3 @@
 mul $0,9
 trn $0,4
 seq $0,114806 ; Nonuple factorial, 9-factorial, n!9, n!!!!!!!!!.
-mov $1,$0

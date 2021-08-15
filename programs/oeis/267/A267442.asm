@@ -4,9 +4,9 @@
 mov $1,$0
 mov $2,$0
 cmp $2,0
-add $1,$2
-lpb $0
-  sub $0,1
+add $0,$2
+lpb $1
   div $0,2
+  sub $1,1
   div $1,2
 lpe

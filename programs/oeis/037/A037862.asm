@@ -8,3 +8,4 @@ lpb $0
   seq $2,131561 ; Period 3: repeat [1, 1, -1].
   add $1,$2
 lpe
+mov $0,$1

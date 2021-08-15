@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,234903 ; a(n)*Pi is the total length of irregular spiral (center points: 1, 3, 2) after n rotations.
-mov $1,$0
-sub $1,11
+sub $0,11

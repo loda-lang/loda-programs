@@ -5,9 +5,8 @@ mov $2,$0
 seq $0,6005 ; The odd prime numbers together with 1.
 sub $2,$0
 mul $0,2
-mov $1,$0
 add $2,1
 mov $3,$2
 cmp $3,0
 add $2,$3
-mod $1,$2
+mod $0,$2

@@ -4,4 +4,3 @@
 add $0,1
 pow $0,2
 seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
-mov $1,$0

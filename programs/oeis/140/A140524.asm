@@ -4,9 +4,9 @@
 mov $2,$0
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mov $1,$0
-mod $1,2
-add $0,$1
-add $0,13
+mod $0,2
 add $1,$0
-sub $1,14
-add $1,$2
+add $1,13
+add $0,$1
+sub $0,14
+add $0,$2

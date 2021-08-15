@@ -48,3 +48,4 @@ lpb $3
   lpe
   add $1,$15
 lpe
+mov $0,$1

@@ -4,4 +4,3 @@
 pow $0,2
 mul $0,5
 seq $0,22847 ; Integer nearest n*sqrt(3).
-mov $1,$0

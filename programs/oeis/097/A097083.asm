@@ -4,4 +4,3 @@
 add $0,3
 seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
 div $0,5
-mov $1,$0

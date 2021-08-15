@@ -4,5 +4,4 @@
 seq $0,83399 ; Number of divisors of n that are not divisors of other divisors of n.
 pow $0,2
 div $0,4
-mov $1,$0
-add $1,1
+add $0,1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,60715 ; Number of primes between n and 2n exclusive.
   add $1,$2
 lpe
+mov $0,$1

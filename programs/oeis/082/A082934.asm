@@ -11,3 +11,4 @@ lpb $2
   seq $0,82928 ; If n is prime, a(n) = n+1; if n is even, a(n) = n/2; otherwise a(n) = n.
   add $1,$0
 lpe
+mov $0,$1

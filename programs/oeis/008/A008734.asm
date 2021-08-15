@@ -4,4 +4,3 @@
 add $0,2
 seq $0,8797 ; Molien series for group [2,4]+ = 224.
 div $0,2
-mov $1,$0

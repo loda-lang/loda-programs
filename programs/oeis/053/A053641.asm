@@ -4,10 +4,10 @@
 add $0,2
 mov $1,$0
 mov $2,1
-lpb $0
-  sub $0,$2
-  mov $2,$1
+lpb $1
+  sub $1,$2
+  mov $2,$0
   dif $2,2
-  sub $2,$0
+  sub $2,$1
 lpe
-mov $1,$0
+mov $0,$1

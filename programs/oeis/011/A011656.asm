@@ -3,7 +3,7 @@
 
 mod $0,7
 mov $1,$0
-div $0,2
-bin $1,$0
-gcd $1,2
-sub $1,1
+div $1,2
+bin $0,$1
+gcd $0,2
+sub $0,1

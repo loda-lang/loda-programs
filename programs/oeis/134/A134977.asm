@@ -9,5 +9,4 @@ mul $3,$2
 sub $3,1
 mul $0,$3
 mod $0,3
-mov $1,$0
-add $1,2
+add $0,2

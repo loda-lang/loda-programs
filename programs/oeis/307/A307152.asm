@@ -3,5 +3,4 @@
 
 seq $0,111215 ; Numbers k such that 4k + 5 is prime.
 div $0,6
-mov $1,$0
-add $1,1
+add $0,1

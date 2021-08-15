@@ -5,4 +5,3 @@ mov $1,$0
 add $0,3
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 gcd $0,$1
-mov $1,$0

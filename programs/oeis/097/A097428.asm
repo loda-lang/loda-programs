@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,32615 ; a(n) = floor(n/Pi).
-mov $1,$0

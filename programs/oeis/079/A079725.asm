@@ -9,3 +9,4 @@ lpb $0
   seq $2,54265 ; Sum of composite numbers between successive primes.
   add $1,$2
 lpe
+mov $0,$1

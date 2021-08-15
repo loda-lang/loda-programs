@@ -4,4 +4,3 @@
 seq $0,127245 ; Row sums of a signed Thue-Morse related triangle.
 mul $0,2
 sub $0,1
-mov $1,$0

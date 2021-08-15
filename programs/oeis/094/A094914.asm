@@ -4,12 +4,10 @@
 
 add $0,1
 mov $1,$0
-pow $1,2
-add $1,$0
+pow $0,2
+add $0,$1
 ; Now $1 hold n^n + n
-
-sub $1,1354363
-
+sub $0,1354363
 ; Absolute value of $1
-sub $2,$1
-max $1,$2
+sub $2,$0
+max $0,$2

@@ -78,3 +78,4 @@ lpb $4
   add $1,$7
   sub $4,1
 lpe
+mov $0,$1

@@ -4,5 +4,4 @@
 mul $0,2
 add $0,1
 seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-mov $1,$0
-sub $1,1
+sub $0,1

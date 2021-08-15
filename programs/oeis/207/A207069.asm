@@ -4,4 +4,3 @@
 add $0,2
 seq $0,38718 ; Number of permutations P of {1,2,...,n} such that P(1)=1 and |P^-1(i+1)-P^-1(i)| equals 1 or 2 for i=1,2,...,n-1.
 pow $0,2
-mov $1,$0

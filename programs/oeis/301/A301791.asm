@@ -5,5 +5,4 @@ seq $0,71679 ; Least k such that the maximum number of elements among the contin
 mov $2,$0
 cmp $2,3
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

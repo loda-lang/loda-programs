@@ -4,4 +4,3 @@
 seq $0,151374 ; Number of walks within N^2 (the first quadrant of Z^2) starting at (0, 0), ending on the vertical axis and consisting of 2n steps taken from {(-1, -1), (-1, 0), (1, 1)}.
 mul $0,6
 div $0,4
-mov $1,$0

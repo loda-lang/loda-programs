@@ -4,11 +4,11 @@
 mul $0,2
 add $0,1
 mov $1,$0
-seq $0,188383 ; Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
-div $0,2
-mov $2,$0
-mul $2,2
-add $1,$2
-sub $1,15
+seq $1,188383 ; Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
 div $1,2
-add $1,8
+mov $2,$1
+mul $2,2
+add $0,$2
+sub $0,15
+div $0,2
+add $0,8

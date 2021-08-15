@@ -4,6 +4,5 @@
 add $0,1
 seq $0,25169 ; a(n) = 2*Fibonacci(2*n+2).
 pow $0,2
-mov $1,$0
-div $1,4
-add $1,1
+div $0,4
+add $0,1

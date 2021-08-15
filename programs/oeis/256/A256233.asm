@@ -3,4 +3,3 @@
 
 seq $0,2878 ; Bisection of Lucas sequence: a(n) = L(2*n+1).
 sub $0,2
-mov $1,$0

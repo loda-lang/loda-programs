@@ -5,6 +5,5 @@ lpb $0
   dif $0,4
   seq $0,38759 ; a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
 lpe
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

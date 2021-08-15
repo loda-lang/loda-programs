@@ -5,4 +5,3 @@ seq $0,143956 ; Triangle read by rows, A000012 * A136521 * A000012; 1<=k<=n.
 mov $2,$0
 gcd $0,2
 mul $0,$2
-mov $1,$0

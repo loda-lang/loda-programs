@@ -3,7 +3,7 @@
 
 add $0,4
 mov $1,$0
-bin $0,4
-sub $1,2
-mul $1,$0
-mul $1,2
+sub $0,2
+bin $1,4
+mul $0,$1
+mul $0,2

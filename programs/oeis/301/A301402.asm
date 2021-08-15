@@ -3,6 +3,5 @@
 
 add $0,2
 seq $0,221462 ; Number of 0..7 arrays of length n with each element unequal to at least one neighbor, starting with 0
-mov $1,$0
-div $1,49
-mul $1,4
+div $0,49
+mul $0,4

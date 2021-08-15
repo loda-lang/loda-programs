@@ -3,5 +3,4 @@
 
 seq $0,49240 ; Smallest nonnegative value taken on by x^2 - ny^2 for an infinite number of integer pairs (x, y).
 mul $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

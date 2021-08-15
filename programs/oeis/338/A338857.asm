@@ -4,7 +4,6 @@
 mov $3,$0
 seq $0,319795 ; a(n) = n^(n+1)/(n-1)^n for n>1, rounded to nearest integer.
 div $0,7
-mov $1,$0
 mov $2,$3
 mul $2,7
-add $1,$2
+add $0,$2

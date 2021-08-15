@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,153485 ; Sum of all aliquot divisors of all positive integers <= n.
-mov $1,$0

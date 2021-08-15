@@ -5,5 +5,4 @@ mul $0,2
 seq $0,74148 ; a(n) = n + floor(n^2/2).
 sub $0,1
 seq $0,92054 ; Base-2 logarithm of the sum of numerator and denominator of the convergents of the continued fraction expansion [1; 1/2, 1/3, 1/4, ..., 1/n, ...].
-mov $1,$0
-div $1,2
+div $0,2

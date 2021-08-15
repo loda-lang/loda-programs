@@ -5,4 +5,3 @@ lpb $0
   dif $0,4
 lpe
 seq $0,134667 ; Period 6: repeat [0, 1, 0, 0, 0, -1].
-mov $1,$0

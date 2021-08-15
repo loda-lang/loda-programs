@@ -7,3 +7,4 @@ lpb $0
   seq $2,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   add $1,$2
 lpe
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,66829 ; 1 if product of odd number of primes; 0 if product of even number of primes.
   add $1,$2
 lpe
+mov $0,$1

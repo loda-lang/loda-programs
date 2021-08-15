@@ -5,4 +5,3 @@ mov $2,70
 add $2,$0
 mov $0,$2
 seq $0,188295 ; [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
-mov $1,$0

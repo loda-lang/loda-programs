@@ -3,4 +3,3 @@
 
 seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-mov $1,$0

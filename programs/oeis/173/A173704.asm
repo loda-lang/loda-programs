@@ -7,3 +7,4 @@ lpb $0
   seq $2,36487 ; a(n) = floor((n^3)/2).
   add $1,$2
 lpe
+mov $0,$1

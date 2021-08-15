@@ -3,5 +3,4 @@
 
 seq $0,253470 ; Indices of centered triangular numbers (A005448) which are also centered pentagonal numbers (A005891).
 bin $0,2
-mov $1,$0
-div $1,10
+div $0,10

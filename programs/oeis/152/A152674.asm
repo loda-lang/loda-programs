@@ -4,3 +4,4 @@
 seq $0,183299 ; Complement of A005563.
 add $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $0,$1

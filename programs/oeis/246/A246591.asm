@@ -3,5 +3,4 @@
 
 seq $0,86799 ; Replace all trailing 0's with 1's in binary representation of n.
 seq $0,6257 ; Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
-mov $1,$0
-div $1,2
+div $0,2

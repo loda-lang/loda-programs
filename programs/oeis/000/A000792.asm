@@ -5,3 +5,4 @@ max $1,$0
 max $1,1
 seq $1,7601 ; Positions where A007600 increases.
 sub $1,1
+mov $0,$1

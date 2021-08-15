@@ -3,5 +3,4 @@
 
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 seq $0,201629 ; a(n) = n if n is even and otherwise its nearest multiple of 4.
-mov $1,$0
-div $1,2
+div $0,2

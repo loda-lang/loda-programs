@@ -4,6 +4,5 @@
 mul $0,2
 seq $0,262864 ; Decimal representation of the middle column of the "Rule 147" elementary cellular automaton starting with a single ON (black) cell.
 seq $0,248375 ; a(n) = floor(9*n/8).
-mov $1,$0
-mul $1,2
-add $1,3
+mul $0,2
+add $0,3

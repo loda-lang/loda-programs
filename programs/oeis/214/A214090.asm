@@ -6,3 +6,4 @@ lpb $0
   gcd $0,3
   mov $1,$0
 lpe
+mov $0,$1

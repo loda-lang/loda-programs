@@ -9,5 +9,4 @@ lpb $2
   cmp $1,0
   sub $2,1
 lpe
-mov $1,$0
-div $1,3
+div $0,3

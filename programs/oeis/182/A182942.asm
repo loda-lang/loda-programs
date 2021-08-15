@@ -4,4 +4,3 @@
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
 sub $0,2
 seq $0,25548 ; a(n) = sum of the exponents in the prime factorization of the least common multiple of {1,3,5,...,2n-1}.
-mov $1,$0

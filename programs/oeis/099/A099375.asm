@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,179753 ; Integers (2k)-1..0 followed by integers (2k)+1..0 and so on.
-mov $1,$0

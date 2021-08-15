@@ -5,5 +5,4 @@ add $0,1
 dif $0,2
 sub $0,1
 seq $0,46079 ; Number of Pythagorean triangles with leg n.
-mov $1,$0
-add $1,1
+add $0,1

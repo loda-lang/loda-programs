@@ -8,3 +8,4 @@ lpb $0
   seq $2,27818 ; a(n) = (n+1)*binomial(n+6,6).
   add $1,$2
 lpe
+mov $0,$1

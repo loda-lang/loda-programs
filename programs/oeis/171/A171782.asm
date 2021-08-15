@@ -3,5 +3,4 @@
 
 seq $0,171781 ; Numbers for which the second bit of the binary expansion is equal to the last bit.
 seq $0,169964 ; Numbers whose decimal expansion contains only 0's and 5's.
-mov $1,$0
-div $1,5
+div $0,5

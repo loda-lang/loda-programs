@@ -3,5 +3,4 @@
 
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 seq $0,156279 ; 4 times the Lucas number A000032(n).
-mov $1,$0
-div $1,4
+div $0,4

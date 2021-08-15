@@ -8,4 +8,3 @@ div $0,2
 mul $0,2
 sub $0,1
 seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-mov $1,$0

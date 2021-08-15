@@ -3,4 +3,3 @@
 
 seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
 seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
-mov $1,$0

@@ -7,3 +7,4 @@ lpb $0
   seq $2,185708 ; Characteristic function of positive numbers that are primes ending in 7.
   add $1,$2
 lpe
+mov $0,$1

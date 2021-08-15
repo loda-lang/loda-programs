@@ -6,5 +6,4 @@ add $0,5
 mul $0,20
 div $0,3
 dif $0,3
-mov $1,$0
-mod $1,10
+mod $0,10

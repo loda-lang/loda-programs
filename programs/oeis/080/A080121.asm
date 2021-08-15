@@ -6,5 +6,4 @@ seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divis
 seq $0,94360 ; Pair reversal of Jacobsthal-Lucas numbers.
 mul $0,2
 div $0,3
-mov $1,$0
-add $1,1
+add $0,1

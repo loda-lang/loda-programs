@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,235796 ; 2*n - 1 - sigma(n).
-mov $1,2
-add $1,$0
+add $0,2

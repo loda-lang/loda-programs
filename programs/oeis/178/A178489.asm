@@ -7,3 +7,4 @@ lpb $0
   add $1,108
 lpe
 div $1,108
+mov $0,$1

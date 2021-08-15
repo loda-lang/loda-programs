@@ -7,5 +7,4 @@ seq $0,198081 ; Ceiling(n*Sqrt(3)).
 add $0,$2
 sub $0,3
 div $0,2
-mov $1,$0
-add $1,1
+add $0,1

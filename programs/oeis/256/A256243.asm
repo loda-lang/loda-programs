@@ -3,6 +3,5 @@
 
 mov $2,$0
 seq $0,253203 ; The least square larger than n with same parity as n.
-mov $1,$0
-sub $1,$2
-div $1,2
+sub $0,$2
+div $0,2

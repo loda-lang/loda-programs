@@ -7,3 +7,4 @@ lpb $0
   seq $2,151774 ; Characteristic function of numbers with binary weight 2 (A018900).
   add $1,$2
 lpe
+mov $0,$1

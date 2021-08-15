@@ -8,4 +8,3 @@ lpb $2
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   div $2,7
 lpe
-mov $1,$0

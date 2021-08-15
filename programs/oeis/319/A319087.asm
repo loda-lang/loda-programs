@@ -8,3 +8,4 @@ lpb $0
   seq $2,53191 ; a(n) = n^2 * phi(n).
   add $1,$2
 lpe
+mov $0,$1

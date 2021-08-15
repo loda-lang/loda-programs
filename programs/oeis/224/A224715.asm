@@ -4,3 +4,4 @@
 mov $1,2
 max $1,$0
 seq $1,62302 ; Number of ways writing n-th prime as a sum of a prime and a nonprime.
+mov $0,$1

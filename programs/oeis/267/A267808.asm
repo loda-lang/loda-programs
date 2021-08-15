@@ -8,3 +8,4 @@ lpb $0
   seq $2,79343 ; Period 6: repeat [0, 1, 1, 2, 3, 1]; also F(n) mod 4, where F(n) = A000045(n).
   add $1,$2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 seq $0,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
-mov $1,$0

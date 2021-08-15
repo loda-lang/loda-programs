@@ -13,3 +13,4 @@ lpb $0
   mod $0,1
 lpe
 mod $1,2
+mov $0,$1

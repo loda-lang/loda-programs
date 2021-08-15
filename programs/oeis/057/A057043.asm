@@ -4,5 +4,4 @@
 seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 sub $0,1
 seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
-mov $1,$0
-add $1,1
+add $0,1

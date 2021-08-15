@@ -16,3 +16,4 @@ lpb $0
 lpe
 trn $1,36
 div $1,2
+mov $0,$1

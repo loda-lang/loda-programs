@@ -8,3 +8,4 @@ lpb $0
   seq $2,61019 ; Negate primes in factorization of n.
   add $1,$2
 lpe
+mov $0,$1

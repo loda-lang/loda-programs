@@ -14,12 +14,11 @@ lpb $0
   lpe
 lpe
 sub $0,1
-mov $1,$0
 lpb $3
   mod $3,4
 lpe
-mul $1,$3
-add $1,4
+mul $0,$3
+add $0,4
 mov $4,$2
 mul $4,4
-add $1,$4
+add $0,$4

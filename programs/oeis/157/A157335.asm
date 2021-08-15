@@ -5,6 +5,5 @@ add $0,1
 seq $0,295774 ; a(n) is the minimum size of a restricted planar additive basis for the square [0,2n]^2.
 sub $0,1
 seq $0,1911 ; a(n) = Fibonacci(n+3) - 2.
-mov $1,$0
-div $1,9
-add $1,1
+div $0,9
+add $0,1

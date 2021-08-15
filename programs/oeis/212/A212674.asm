@@ -3,6 +3,5 @@
 
 pow $0,2
 seq $0,1859 ; Triangular numbers plus quarter-squares: n*(n+1)/2 + floor((n+1)^2/4) (i.e., A000217(n) + A002620(n+1)).
-mov $1,$0
-mul $1,2
-div $1,4
+mul $0,2
+div $0,4

@@ -4,4 +4,3 @@
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 sub $0,1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-mov $1,$0

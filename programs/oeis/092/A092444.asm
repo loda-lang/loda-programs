@@ -5,6 +5,5 @@ mul $0,2
 add $0,2
 trn $0,4
 seq $0,193643 ; Number of arrays of -3..3 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero
-mov $1,$0
-div $1,3
-add $1,1
+div $0,3
+add $0,1

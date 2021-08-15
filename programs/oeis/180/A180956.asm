@@ -3,4 +3,3 @@
 
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 seq $0,46161 ; a(n) = denominator of binomial(2n,n)/4^n.
-mov $1,$0

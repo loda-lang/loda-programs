@@ -3,4 +3,3 @@
 
 seq $0,106187 ; Sequence array for central binomial numbers A000984.
 dif $0,2
-mov $1,$0

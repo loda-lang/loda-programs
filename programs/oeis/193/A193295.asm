@@ -5,4 +5,3 @@ add $0,2
 pow $0,2
 sub $0,2
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-mov $1,$0

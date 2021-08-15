@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,118966 ; a(n) = (n+1)/2 if n occurs among the first n-1 terms of the sequence, otherwise a(n) = 2*n - 1.
-mov $1,$0
-sub $1,1
+sub $0,1

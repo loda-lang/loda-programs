@@ -3,4 +3,3 @@
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

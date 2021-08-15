@@ -3,5 +3,4 @@
 
 seq $0,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
 pow $0,4
-mov $1,$0
-div $1,16
+div $0,16

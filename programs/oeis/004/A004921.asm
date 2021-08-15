@@ -3,4 +3,3 @@
 
 seq $0,4961 ; a(n) = ceiling(n*phi^6), where phi is the golden ratio.
 trn $0,1
-mov $1,$0

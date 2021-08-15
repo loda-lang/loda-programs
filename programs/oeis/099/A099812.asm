@@ -7,5 +7,4 @@ lpb $0
   dif $0,4
 lpe
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0
-add $1,1
+add $0,1

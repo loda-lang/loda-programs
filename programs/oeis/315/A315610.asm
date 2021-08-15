@@ -4,10 +4,10 @@
 mul $0,2
 trn $0,1
 mov $1,$0
-mul $0,2
-lpb $0
-  sub $0,1
-  trn $0,4
-  add $1,4
+mul $1,2
+lpb $1
+  add $0,4
+  sub $1,1
+  trn $1,4
 lpe
-add $1,1
+add $0,1

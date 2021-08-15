@@ -4,6 +4,5 @@
 add $0,1
 mul $0,42
 dif $0,10
-mov $1,$0
-div $1,21
-mul $1,5
+div $0,21
+mul $0,5

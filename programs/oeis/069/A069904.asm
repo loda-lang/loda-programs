@@ -5,5 +5,4 @@ add $0,2
 bin $0,2
 sub $0,1
 seq $0,73093 ; Number of prime power divisors of n.
-mov $1,$0
-sub $1,1
+sub $0,1

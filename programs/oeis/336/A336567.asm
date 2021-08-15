@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
-mov $1,$0

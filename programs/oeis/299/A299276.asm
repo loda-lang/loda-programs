@@ -11,3 +11,4 @@ lpb $2
   seq $0,8137 ; Coordination sequence T1 for Zeolite Code LTA and RHO.
   add $1,$0
 lpe
+mov $0,$1

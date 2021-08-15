@@ -11,4 +11,3 @@ lpb $0
   sub $4,2
 lpe
 sub $0,$2
-max $1,$0

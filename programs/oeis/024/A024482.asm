@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,97613 ; a(n) = binomial(2n-3,n-1) + binomial(2n-2,n-2).
-mov $1,$0

@@ -3,5 +3,4 @@
 
 seq $0,46930 ; Size of sea of composite numbers surrounding n-th prime.
 dif $0,2
-mov $1,$0
-add $1,1
+add $0,1

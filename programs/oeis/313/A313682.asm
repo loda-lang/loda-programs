@@ -4,4 +4,3 @@
 max $2,$0
 seq $0,315742 ; Coordination sequence Gal.5.302.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 sub $0,$2
-add $1,$0

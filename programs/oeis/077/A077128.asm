@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,97050 ; Smallest prime > n(n+1)/2.
-mov $1,$0

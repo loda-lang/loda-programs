@@ -3,6 +3,5 @@
 
 seq $0,27383 ; Number of balanced strings of length n: let d(S) = #(1's) - #(0's), # == count in S, then S is balanced if every substring T of S has -2 <= d(T) <= 2.
 div $0,2
-mov $1,$0
-mul $1,16
-add $1,15
+mul $0,16
+add $0,15

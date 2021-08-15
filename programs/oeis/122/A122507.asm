@@ -3,6 +3,5 @@
 
 seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
 seq $0,15614 ; a(n) = -1 + Sum_{i=1..n} phi(i).
-mov $1,$0
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

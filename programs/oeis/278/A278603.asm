@@ -8,3 +8,4 @@ lpb $0
   seq $2,65357 ; a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
   add $1,$2
 lpe
+mov $0,$1

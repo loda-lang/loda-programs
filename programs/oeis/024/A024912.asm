@@ -3,4 +3,3 @@
 
 seq $0,126785 ; Numbers k such that 10*k + 11 is prime.
 add $0,1
-mov $1,$0

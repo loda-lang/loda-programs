@@ -4,6 +4,6 @@
 mov $2,$0
 seq $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
 mov $1,$0
-add $1,1
-add $1,$2
-mul $1,$0
+add $0,1
+add $0,$2
+mul $0,$1

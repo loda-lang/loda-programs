@@ -6,4 +6,3 @@ add $0,1
 div $0,2
 seq $2,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 add $0,$2
-mov $1,$0

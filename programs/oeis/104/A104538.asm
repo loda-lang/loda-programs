@@ -15,3 +15,4 @@ lpb $0
   mul $3,2
   cmp $4,0
 lpe
+mov $0,$1

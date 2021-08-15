@@ -3,4 +3,3 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,34694 ; Smallest prime == 1 (mod n).
-mov $1,$0

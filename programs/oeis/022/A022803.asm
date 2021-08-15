@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,4758 ; Binary expansion starts 110.
-mov $1,$0
-add $1,1
+add $0,1

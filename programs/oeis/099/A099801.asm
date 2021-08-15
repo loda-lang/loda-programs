@@ -7,4 +7,3 @@ lpb $0
   mul $0,$1
   trn $0,2
 lpe
-mov $1,$0

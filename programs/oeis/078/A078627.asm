@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,180094 ; Number of steps to reach 0 or 1, starting with n and applying the map k -> (number of 1's in binary expansion of k) repeatedly.
-mov $1,$0
-add $1,1
+add $0,1

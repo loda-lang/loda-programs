@@ -3,6 +3,5 @@
 
 add $0,1
 mul $0,2
-mov $1,$0
-seq $1,271342 ; Sum of all even divisors of all positive integers <= n.
-div $1,2
+seq $0,271342 ; Sum of all even divisors of all positive integers <= n.
+div $0,2

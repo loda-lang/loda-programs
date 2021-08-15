@@ -7,4 +7,3 @@ mov $2,$0
 seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
 sub $2,1
 mul $0,$2
-mov $1,$0

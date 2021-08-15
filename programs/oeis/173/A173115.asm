@@ -3,6 +3,5 @@
 
 seq $0,87799 ; a(n) = 10*a(n-1) - a(n-2), starting with a(0) = 2 and a(1) = 10.
 pow $0,2
-mov $1,$0
-sub $1,4
-div $1,4
+sub $0,4
+div $0,4

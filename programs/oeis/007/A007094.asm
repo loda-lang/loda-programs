@@ -4,10 +4,11 @@
 
 mov $3,1 ; Scale factor for first digit
 lpb $0
-    mov $2,$0
-    mod $2,8   ; Extract the lowest base 8 digit
-    mul $2,$3  ; Convert from base 8 to 10
-    add $1,$2  ; Insert into result
-    div $0,8   ; Remove the lowest base 8 digit
-    mul $3,10  ; Scale factor for next digit
+  mov $2,$0
+  mod $2,8 ; Extract the lowest base 8 digit
+  mul $2,$3 ; Convert from base 8 to 10
+  add $1,$2 ; Insert into result
+  div $0,8 ; Remove the lowest base 8 digit
+  mul $3,10 ; Scale factor for next digit
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-mov $1,$0

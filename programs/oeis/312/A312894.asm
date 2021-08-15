@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,314112 ; Coordination sequence Gal.4.134.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 sub $0,$2
-mov $1,$0

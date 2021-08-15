@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,32358 ; Number of iterations of phi(n) needed to reach 2.
-mov $1,$0

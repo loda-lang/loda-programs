@@ -12,3 +12,4 @@ lpb $2
   seq $0,1444 ; Bending a piece of wire of length n+1 (configurations that can only be brought into coincidence by turning the figure over are counted as different).
   add $1,$0
 lpe
+mov $0,$1

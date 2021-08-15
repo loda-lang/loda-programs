@@ -3,5 +3,4 @@
 
 add $0,5
 seq $0,102342 ; Numbers k such that 10k + 7 is prime.
-mov $1,$0
-sub $1,9
+sub $0,9

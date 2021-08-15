@@ -4,3 +4,4 @@
 seq $0,245710 ; Number of nonzero evil numbers <= n, see A001969.
 mov $1,2
 pow $1,$0
+mov $0,$1

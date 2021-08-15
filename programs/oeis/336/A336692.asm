@@ -3,5 +3,4 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
-mov $1,$0
-add $1,1
+add $0,1

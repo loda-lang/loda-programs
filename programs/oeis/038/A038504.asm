@@ -8,3 +8,4 @@ lpb $0
   seq $2,38503 ; Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 0".
   add $1,$2
 lpe
+mov $0,$1

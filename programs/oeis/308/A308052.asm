@@ -3,4 +3,3 @@
 
 div $0,2
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-mov $1,$0

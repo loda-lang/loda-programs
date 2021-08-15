@@ -5,7 +5,6 @@ seq $0,33132 ; Base-5 digits are, in order, the first n terms of the periodic se
 mul $0,18
 div $0,5
 mul $0,3
-mov $1,$0
-sub $1,9
-div $1,12
-add $1,1
+sub $0,9
+div $0,12
+add $0,1

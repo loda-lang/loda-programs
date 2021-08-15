@@ -9,3 +9,4 @@ lpb $0
   seq $2,37952 ; a(n) = binomial(n, floor((n-1)/2)).
   add $1,$2
 lpe
+mov $0,$1

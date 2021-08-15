@@ -5,3 +5,4 @@ seq $0,4738 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n >= 2.
 mov $1,2
 pow $1,$0
 div $1,2
+mov $0,$1

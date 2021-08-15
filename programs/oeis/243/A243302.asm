@@ -5,5 +5,4 @@ add $0,4
 bin $0,2
 add $0,14
 div $0,3
-mov $1,$0
-sub $1,5
+sub $0,5

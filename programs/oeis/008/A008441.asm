@@ -3,5 +3,4 @@
 
 mul $0,4
 seq $0,34730 ; Dirichlet convolution of b_n=1 with c_n=3^(n-1).
-mov $1,$0
-mod $1,10
+mod $0,10

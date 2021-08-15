@@ -4,6 +4,5 @@
 pow $0,2
 add $0,4
 bin $0,2
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

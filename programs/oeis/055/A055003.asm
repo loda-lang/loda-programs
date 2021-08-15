@@ -4,4 +4,3 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 trn $0,2
 seq $0,40 ; The prime numbers.
-mov $1,$0

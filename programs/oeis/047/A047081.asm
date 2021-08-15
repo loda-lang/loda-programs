@@ -4,4 +4,3 @@
 seq $0,90993 ; Number of meaningful differential operations of the n-th order on the space R^8.
 sub $0,1
 div $0,6
-mov $1,$0

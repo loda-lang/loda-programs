@@ -4,4 +4,3 @@
 pow $0,3
 mul $0,2
 seq $0,55400 ; Cube excess: difference between n and largest cube <= n.
-mov $1,$0

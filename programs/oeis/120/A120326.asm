@@ -11,3 +11,4 @@ lpb $2
   seq $0,39701 ; a(n) = n-th prime modulo 3.
   add $1,$0
 lpe
+mov $0,$1

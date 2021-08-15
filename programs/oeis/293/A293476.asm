@@ -5,4 +5,3 @@ mov $2,$0
 add $0,1
 seq $0,1297 ; Stirling numbers of the second kind S(n+3, n).
 mul $0,$2
-mov $1,$0

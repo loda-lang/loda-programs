@@ -5,4 +5,3 @@ add $0,2
 lpb $0
   mov $0,32
 lpe
-mov $1,$0

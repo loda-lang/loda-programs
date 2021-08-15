@@ -5,3 +5,4 @@ seq $0,77750 ; Least significant digit of A077749(n).
 mov $1,3
 add $2,$0
 sub $1,$2
+mov $0,$1

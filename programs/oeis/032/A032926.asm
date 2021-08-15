@@ -3,5 +3,4 @@
 
 seq $0,32925 ; Numbers whose set of base 4 digits is {1,2}.
 seq $0,20655 ; Lexicographically earliest increasing sequence of positive numbers that contains no arithmetic progression of length 5.
-mov $1,$0
-sub $1,1
+sub $0,1

@@ -4,4 +4,3 @@
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0

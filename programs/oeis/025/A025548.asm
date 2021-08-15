@@ -8,3 +8,4 @@ lpb $0
   seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $1,$2
 lpe
+mov $0,$1

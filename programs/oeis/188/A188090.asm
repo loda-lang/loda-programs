@@ -9,4 +9,3 @@ lpb $0
   seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
   add $2,$0
 lpe
-mov $1,$0

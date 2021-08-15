@@ -4,4 +4,3 @@
 mul $0,2
 add $0,2
 seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
-mov $1,$0

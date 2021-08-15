@@ -10,3 +10,4 @@ lpb $3
   seq $0,189723 ; Fixed point of the morphism 0->011, 1->101.
   add $1,$0
 lpe
+mov $0,$1

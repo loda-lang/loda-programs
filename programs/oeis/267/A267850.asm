@@ -3,7 +3,6 @@
 
 seq $0,267941 ; Decimal representation of the n-th iteration of the "Rule 253" elementary cellular automaton starting with a single ON (black) cell.
 seq $0,123001 ; Binary numbers that start 10...
-mov $1,$0
-sub $1,106
-div $1,90
-add $1,1
+sub $0,106
+div $0,90
+add $0,1

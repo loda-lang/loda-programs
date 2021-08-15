@@ -8,3 +8,4 @@ lpb $0
   seq $2,143348 ; a(n) = -(-1)^n times sum of divisors of n.
   add $1,$2
 lpe
+mov $0,$1

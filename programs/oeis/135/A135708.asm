@@ -3,5 +3,4 @@
 
 mul $0,3
 seq $0,183867 ; a(n) = n + floor(2*sqrt(n)); complement of A184676.
-mov $1,$0
-add $1,3
+add $0,3

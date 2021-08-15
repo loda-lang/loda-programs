@@ -7,6 +7,5 @@ sub $2,$0
 mul $0,$2
 bin $2,2
 add $0,$2
-mov $1,$0
-div $1,15
-mul $1,30
+div $0,15
+mul $0,30

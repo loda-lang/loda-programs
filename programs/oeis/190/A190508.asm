@@ -3,4 +3,3 @@
 
 seq $0,189378 ; a(n) = n + [nr/s] + [nt/s]; r=2, s=(-1+sqrt(5))/2, t=(1+sqrt(5))/2.
 seq $0,63732 ; Numbers n such that Lucas representation of n excludes L_0 = 2.
-mov $1,$0

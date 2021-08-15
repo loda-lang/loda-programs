@@ -5,5 +5,4 @@ mov $2,$0
 add $0,2
 mul $0,$2
 seq $0,194029 ; Natural fractal sequence of the Fibonacci sequence (1,2,3,5,8,...).
-mov $1,$0
-sub $1,1
+sub $0,1

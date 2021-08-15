@@ -58,3 +58,4 @@ lpb $3
   add $1,$8
   sub $3,1
 lpe
+mov $0,$1

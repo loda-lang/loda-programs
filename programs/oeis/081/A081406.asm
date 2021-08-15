@@ -10,3 +10,4 @@ lpb $0
   trn $0,2
 lpe
 div $1,100
+mov $0,$1

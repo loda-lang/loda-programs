@@ -4,6 +4,5 @@
 seq $0,40 ; The prime numbers.
 sub $0,1
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
-mov $1,$0
-sub $1,2
-mul $1,2
+sub $0,2
+mul $0,2

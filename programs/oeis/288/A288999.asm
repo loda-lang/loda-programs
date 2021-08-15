@@ -5,5 +5,4 @@ add $0,1
 mov $2,$0
 seq $0,80754 ; a(n) = ceiling(n*(1+sqrt(2))).
 add $0,$2
-mov $1,$0
-sub $1,3
+sub $0,3

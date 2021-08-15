@@ -4,5 +4,4 @@
 add $0,1
 seq $0,164316 ; Number of binary strings of length n with no substrings equal to 000, 001, or 010.
 seq $0,47261 ; Numbers that are congruent to {2, 4, 5} mod 6.
-mov $1,$0
-div $1,6
+div $0,6

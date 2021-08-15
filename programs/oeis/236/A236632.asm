@@ -7,3 +7,4 @@ lpb $0
   seq $2,65608 ; Sum of divisors of n minus the number of divisors of n.
   add $1,$2
 lpe
+mov $0,$1

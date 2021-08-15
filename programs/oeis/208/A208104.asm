@@ -5,4 +5,3 @@ seq $0,226271 ; Index of 1/n in the Fibonacci (or rabbit) ordering of the positi
 mul $0,2
 add $0,1
 pow $0,2
-mov $1,$0

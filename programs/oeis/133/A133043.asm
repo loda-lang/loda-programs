@@ -3,9 +3,9 @@
 
 add $0,1
 mov $1,$0
-div $0,2
-add $1,6
-add $1,$0
-trn $0,2
-sub $1,$0
-sub $1,4
+add $0,6
+div $1,2
+add $0,$1
+trn $1,2
+sub $0,$1
+sub $0,4

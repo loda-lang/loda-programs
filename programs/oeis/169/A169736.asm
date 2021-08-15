@@ -22,3 +22,4 @@ lpb $2
   lpe
   mov $2,$5
 lpe
+mov $0,$1

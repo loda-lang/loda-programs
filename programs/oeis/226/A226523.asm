@@ -6,4 +6,3 @@ pow $0,2
 sub $0,1
 dif $0,2
 seq $0,14017 ; Inverse of 8th cyclotomic polynomial.
-mov $1,$0

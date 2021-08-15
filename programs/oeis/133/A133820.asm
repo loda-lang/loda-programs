@@ -5,3 +5,4 @@ seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
 mov $1,1
 add $1,$0
 pow $1,3
+mov $0,$1

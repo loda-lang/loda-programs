@@ -3,5 +3,4 @@
 
 mul $0,4
 seq $0,20986 ; a(n) = n-th partial sum of Golay-Rudin-Shapiro sequence A020985.
-mov $1,$0
-div $1,2
+div $0,2

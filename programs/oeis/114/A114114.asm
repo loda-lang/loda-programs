@@ -3,4 +3,3 @@
 
 seq $0,30528 ; Triangle read by rows: a(n,k) = binomial(k,n-k).
 min $0,2
-mov $1,$0

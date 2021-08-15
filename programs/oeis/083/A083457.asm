@@ -4,9 +4,9 @@
 dif $0,2
 mov $1,$0
 mov $2,3
-lpb $0
-  mov $0,2
+lpb $1
+  mov $1,2
   pow $2,2
-  mov $1,$2
+  mov $0,$2
 lpe
-add $1,1
+add $0,1

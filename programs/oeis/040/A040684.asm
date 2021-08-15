@@ -3,5 +3,4 @@
 
 dif $0,2
 pow $0,4
-mov $1,$0
-seq $1,40683 ; Continued fraction for sqrt(710).
+seq $0,40683 ; Continued fraction for sqrt(710).

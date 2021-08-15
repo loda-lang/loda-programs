@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,63655 ; Smallest semiperimeter of integral rectangle with area n.
-mov $1,$0

@@ -5,4 +5,3 @@ seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

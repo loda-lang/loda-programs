@@ -4,5 +4,4 @@
 seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
 seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
 mod $0,3
-mov $1,$0
-mod $1,2
+mod $0,2

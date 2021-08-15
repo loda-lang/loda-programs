@@ -3,4 +3,3 @@
 
 seq $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mov $1,$0

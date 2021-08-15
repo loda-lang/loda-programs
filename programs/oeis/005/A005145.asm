@@ -6,3 +6,4 @@ lpb $0
   sub $0,$1
 lpe
 seq $1,40 ; The prime numbers.
+mov $0,$1

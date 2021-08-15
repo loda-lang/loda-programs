@@ -3,4 +3,3 @@
 
 seq $0,28387 ; a(n) = n + (n+1)^2.
 seq $0,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
-mov $1,$0

@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,140271 ; Least divisor of n that is > sqrt(n), with a(1) = 1.
-mov $1,$0

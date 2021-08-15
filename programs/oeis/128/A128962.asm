@@ -6,6 +6,5 @@ mov $2,4
 pow $2,$0
 bin $0,3
 mul $0,$2
-mov $1,$0
-div $1,64
-mul $1,96
+div $0,64
+mul $0,96

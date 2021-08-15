@@ -3,6 +3,5 @@
 
 add $0,8190
 seq $0,32928 ; Numbers whose set of base 7 digits is {1,2}.
-mov $1,$0
-sub $1,16148168401
-mul $1,6
+sub $0,16148168401
+mul $0,6

@@ -5,5 +5,4 @@ add $0,1
 mul $0,5
 sub $0,1
 seq $0,61078 ; Sum of the products of the digits of the first n even numbers.
-mov $1,$0
-div $1,20
+div $0,20

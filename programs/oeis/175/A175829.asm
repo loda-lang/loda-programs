@@ -7,3 +7,4 @@ lpb $0
   seq $2,36409 ; a(n) = ceiling(n^2/11).
   add $1,$2
 lpe
+mov $0,$1

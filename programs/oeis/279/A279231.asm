@@ -8,3 +8,4 @@ lpb $0
   seq $2,307395 ; Expansion of 1/((1 - x) * ((1 - x)^3 + x^3)).
   add $1,$2
 lpe
+mov $0,$1

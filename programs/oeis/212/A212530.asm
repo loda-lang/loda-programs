@@ -3,5 +3,4 @@
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 seq $0,53186 ; Square excess of n: difference between n and largest square <= n.
-mov $1,$0
-add $1,1
+add $0,1

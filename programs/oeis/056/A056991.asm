@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,242660 ; Nonnegative numbers of the form x^2+xy-2y^2.
-mov $1,$0

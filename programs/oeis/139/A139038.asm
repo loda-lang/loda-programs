@@ -3,7 +3,6 @@
 
 seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
 mul $0,2
-mov $1,$0
-sub $1,3
-div $1,3
-add $1,1
+sub $0,3
+div $0,3
+add $0,1

@@ -3,4 +3,3 @@
 
 seq $0,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
 seq $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
-mov $1,$0

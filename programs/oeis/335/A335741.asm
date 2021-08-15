@@ -11,3 +11,4 @@ lpb $2
   seq $0,105349 ; Characteristic sequence for the Pell numbers.
   add $1,$0
 lpe
+mov $0,$1

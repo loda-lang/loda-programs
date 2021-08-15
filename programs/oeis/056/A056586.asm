@@ -3,4 +3,3 @@
 
 seq $0,56570 ; Third power of Fibonacci numbers (A000045).
 pow $0,3
-mov $1,$0

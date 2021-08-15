@@ -3,5 +3,4 @@
 
 seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
 seq $0,49559 ; a(n) = gcd(n - 1, phi(n)).
-mov $1,$0
-add $1,1
+add $0,1

@@ -6,4 +6,3 @@ seq $0,161511 ; Number of 1...0 pairs in the binary representation of 2n.
 add $0,1
 div $0,2
 sub $0,1
-mov $1,$0

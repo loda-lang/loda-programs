@@ -5,5 +5,4 @@ add $0,2
 seq $0,120718 ; Expansion of 3*x/(1 - 2*x^2 - 2*x + x^3).
 mul $0,2
 pow $0,2
-mov $1,$0
-div $1,36
+div $0,36

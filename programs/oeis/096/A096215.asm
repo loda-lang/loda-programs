@@ -3,4 +3,3 @@
 
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 seq $0,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
-mov $1,$0

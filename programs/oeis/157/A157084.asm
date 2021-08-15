@@ -7,3 +7,4 @@ lpb $0
   seq $2,87799 ; a(n) = 10*a(n-1) - a(n-2), starting with a(0) = 2 and a(1) = 10.
   add $1,$2
 lpe
+mov $0,$1

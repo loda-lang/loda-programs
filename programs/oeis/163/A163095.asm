@@ -3,4 +3,3 @@
 
 seq $0,788 ; Total number of 1's in binary expansions of 0, ..., n.
 pow $0,2
-mov $1,$0

@@ -10,3 +10,4 @@ lpb $2
   seq $0,219652 ; Number of steps to reach 0 starting with n and using the iterated process:  x -> x - (sum of digits in factorial expansion of x).
   add $1,$0
 lpe
+mov $0,$1

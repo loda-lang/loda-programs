@@ -4,4 +4,3 @@
 mul $0,2
 add $0,2
 seq $0,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
-mov $1,$0

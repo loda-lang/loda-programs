@@ -15,3 +15,4 @@ lpe
 seq $0,8 ; Number of ways of making change for n cents using coins of 1, 2, 5, 10 cents.
 add $1,$0
 sub $1,4
+mov $0,$1

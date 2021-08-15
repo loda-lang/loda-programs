@@ -5,4 +5,3 @@ add $0,2
 bin $0,2
 sub $0,1
 seq $0,55881 ; a(n) = largest m such that m! divides n.
-mov $1,$0

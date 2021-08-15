@@ -13,3 +13,4 @@ lpb $0
   mul $4,3
   mov $2,$4
 lpe
+mov $0,$1

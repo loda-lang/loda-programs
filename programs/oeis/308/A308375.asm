@@ -3,4 +3,3 @@
 
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mov $1,$0

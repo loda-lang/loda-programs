@@ -3,4 +3,3 @@
 
 seq $0,80820 ; Least m such that m^2 >= n*(n+1)/2.
 pow $0,2
-mov $1,$0

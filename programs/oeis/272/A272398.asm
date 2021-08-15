@@ -4,4 +4,3 @@
 seq $0,47229 ; Numbers that are congruent to {0, 2, 3, 4} mod 6.
 add $0,2
 bin $0,2
-mov $1,$0

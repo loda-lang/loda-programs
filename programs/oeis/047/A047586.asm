@@ -4,5 +4,4 @@
 mul $0,2
 add $0,1
 seq $0,47562 ; Numbers that are congruent to {3, 4, 5, 6, 7} mod 8.
-mov $1,$0
-div $1,2
+div $0,2

@@ -7,10 +7,9 @@ mov $3,$0
 sub $3,1
 add $3,$0
 mul $0,$2
-mov $1,$0
-sub $1,$3
-mul $1,8
-trn $1,10
-mul $1,18
-div $1,36
-add $1,1
+sub $0,$3
+mul $0,8
+trn $0,10
+mul $0,18
+div $0,36
+add $0,1

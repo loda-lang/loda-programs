@@ -3,5 +3,4 @@
 
 add $0,19
 seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
-mov $1,$0
-sub $1,31
+sub $0,31

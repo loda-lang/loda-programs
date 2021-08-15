@@ -3,4 +3,3 @@
 
 seq $0,168565 ; Let p = prime(n); then a(n) = p + (p-1)/2.
 add $0,2
-mov $1,$0

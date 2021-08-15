@@ -3,4 +3,3 @@
 
 seq $0,223659 ; Number of n X 1 [0..3] arrays with row sums unimodal and column sums inverted unimodal.
 pow $0,2
-mov $1,$0

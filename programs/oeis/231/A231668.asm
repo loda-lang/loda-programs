@@ -7,3 +7,4 @@ lpb $0
   seq $2,53824 ; Sum of digits of (n written in base 5).
   add $1,$2
 lpe
+mov $0,$1

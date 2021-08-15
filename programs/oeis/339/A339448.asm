@@ -3,4 +3,3 @@
 
 seq $0,8347 ; a(n) = Sum_{i=0..n-1} (-1)^i * prime(n-i).
 mod $0,3
-mov $1,$0

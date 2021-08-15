@@ -4,6 +4,5 @@
 mov $2,$0
 seq $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
 add $0,$2
-mov $1,$0
-mul $1,4
-sub $1,3
+mul $0,4
+sub $0,3

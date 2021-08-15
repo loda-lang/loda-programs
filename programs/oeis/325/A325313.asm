@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,48250 ; Sum of the squarefree divisors of n.
 sub $0,$2
 sub $0,1
-mov $1,$0

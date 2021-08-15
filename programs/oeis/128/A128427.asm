@@ -14,8 +14,7 @@ mov $0,1
 mov $2,1
 sub $2,$3
 sub $0,$2
-mov $1,$0
-sub $1,23
-div $1,35
-add $1,5
-add $1,$4
+sub $0,23
+div $0,35
+add $0,5
+add $0,$4

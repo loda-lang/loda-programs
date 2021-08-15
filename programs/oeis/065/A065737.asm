@@ -4,4 +4,3 @@
 seq $0,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
 div $0,2
 pow $0,2
-mov $1,$0

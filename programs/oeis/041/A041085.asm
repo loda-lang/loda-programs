@@ -4,5 +4,4 @@
 add $0,1
 mul $0,6
 seq $0,2965 ; Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).
-mov $1,$0
-div $1,5
+div $0,5

@@ -4,22 +4,22 @@
 mov $2,$0
 add $0,2
 mov $1,$0
-pow $0,3
-mov $4,$1
+pow $1,3
+mov $4,$0
 bin $4,4
-add $4,$0
+add $4,$1
 add $4,3
-lpb $0
-  mov $0,0
+lpb $1
+  mov $1,0
   mov $5,$4
   add $5,2
 lpe
-add $0,$5
-mov $1,$0
-sub $1,5
+add $1,$5
+mov $0,$1
+sub $0,5
 mov $3,$2
 mul $3,2
-add $1,$3
+add $0,$3
 mov $6,$2
 mul $6,$2
-add $1,$6
+add $0,$6

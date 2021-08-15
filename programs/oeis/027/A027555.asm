@@ -7,3 +7,4 @@ lpb $2
   add $2,$1
 lpe
 bin $1,$2
+mov $0,$1

@@ -7,5 +7,4 @@ gcd $1,$0
 sub $0,$1
 pow $0,2
 div $0,$1
-mov $1,$0
-div $1,4
+div $0,4

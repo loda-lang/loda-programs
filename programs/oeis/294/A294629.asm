@@ -4,11 +4,10 @@
 mov $3,$0
 seq $0,244049 ; Sum of all proper divisors of all positive integers <= n.
 mul $0,2
-mov $1,$0
-add $1,7
+add $0,7
 mov $2,$3
 mul $2,3
-add $1,$2
-sub $1,7
-mul $1,4
-add $1,4
+add $0,$2
+sub $0,7
+mul $0,4
+add $0,4

@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,22125 ; Fibonacci sequence beginning 3, 14.
-mov $1,$0
-mul $1,2
+mul $0,2

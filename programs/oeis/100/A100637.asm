@@ -8,3 +8,4 @@ mov $1,$2
 seq $1,33270 ; Number of odd primes <= n.
 trn $1,1
 add $1,2
+mov $0,$1

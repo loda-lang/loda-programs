@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,338064 ; Numbers k such that the Enots Wolley sequence A336957(k) is even.
-mov $1,$0
-sub $1,2
+sub $0,2

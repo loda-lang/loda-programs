@@ -3,5 +3,4 @@
 
 add $0,19
 seq $0,180123 ; Second of three "least, sum, least" self-generating sequences.
-mov $1,$0
-sub $1,73
+sub $0,73

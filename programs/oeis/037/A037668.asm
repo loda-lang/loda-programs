@@ -5,4 +5,3 @@ add $0,1
 seq $0,33132 ; Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
 mul $0,17
 div $0,30
-mov $1,$0

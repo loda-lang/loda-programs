@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,83089 ; Numbers that are congruent to {0, 2, 4, 6, 7, 9, 11} mod 12.
 add $0,$2
 trn $0,2
-mov $1,$0
-add $1,1
+add $0,1

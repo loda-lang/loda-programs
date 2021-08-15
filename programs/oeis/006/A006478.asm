@@ -9,3 +9,4 @@ lpb $0
   seq $2,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
   add $1,$2
 lpe
+mov $0,$1

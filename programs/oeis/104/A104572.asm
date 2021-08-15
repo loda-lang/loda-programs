@@ -5,5 +5,4 @@ seq $0,212012 ; Triangle read by rows in which row n lists the number of states 
 mul $0,3
 sub $0,1
 pow $0,2
-mov $1,$0
-div $1,24
+div $0,24

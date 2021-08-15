@@ -3,4 +3,3 @@
 
 seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
 seq $0,3422 ; Left factorials: !n = Sum_{k=0..n-1} k!.
-mov $1,$0

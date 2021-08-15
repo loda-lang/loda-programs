@@ -7,5 +7,4 @@ lpb $0
   dif $0,2
 lpe
 mul $0,$2
-mov $1,$0
-div $1,7142
+div $0,7142

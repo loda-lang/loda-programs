@@ -4,3 +4,4 @@
 seq $0,54024 ; Sum of the divisors of n reduced modulo n.
 div $0,2
 bin $1,$0
+mov $0,$1

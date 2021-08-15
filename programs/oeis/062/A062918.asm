@@ -12,3 +12,4 @@ lpb $2
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $1,$0
 lpe
+mov $0,$1

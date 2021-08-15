@@ -4,5 +4,4 @@
 mul $0,3
 seq $0,277545 ; a(n) = n/7^m mod 7, where 7^m is the greatest power of 7 that divides n.
 sub $0,1
-mov $1,$0
-mod $1,2
+mod $0,2

@@ -3,6 +3,5 @@
 
 seq $0,127948 ; Triangle, A004736 * A127899.
 bin $0,32
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

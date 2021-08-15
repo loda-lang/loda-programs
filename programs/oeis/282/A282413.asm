@@ -9,3 +9,4 @@ lpb $0
   gcd $0,2
 lpe
 sub $1,1
+mov $0,$1

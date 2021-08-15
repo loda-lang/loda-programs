@@ -8,8 +8,9 @@ lpb $4
   mov $3,0
   sub $4,1
   sub $0,$4
-  add $3,$0 ;  add it to the result register (to update the count of coprime k <= n)
+  add $3,$0 ; add it to the result register (to update the count of coprime k <= n)
   seq $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
   sub $3,$0
   add $1,$3
 lpe
+mov $0,$1

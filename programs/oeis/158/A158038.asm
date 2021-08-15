@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,333884 ; Difference between smallest cube > n and n.
-mov $1,$0

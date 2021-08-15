@@ -21,3 +21,4 @@ lpb $2
 lpe
 sub $1,10
 div $1,10
+mov $0,$1

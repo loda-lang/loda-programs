@@ -3,4 +3,3 @@
 
 seq $0,131326 ; Row sums of A131325.
 div $0,4
-mov $1,$0

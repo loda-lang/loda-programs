@@ -6,8 +6,7 @@ mul $0,4
 seq $0,178729 ; a(n) = n XOR 3n, where XOR is bitwise XOR.
 add $0,4
 mul $0,2
-mov $1,$0
-sub $1,7
-div $1,8
-add $1,$2
-div $1,2
+sub $0,7
+div $0,8
+add $0,$2
+div $0,2

@@ -3,4 +3,3 @@
 
 dif $0,2
 seq $0,40693 ; Continued fraction for sqrt(720).
-mov $1,$0

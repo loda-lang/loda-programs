@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,134917 ; a(n) = ceiling(n^(4/3)).
 sub $0,$2
-mov $1,$0
-sub $1,1
+sub $0,1

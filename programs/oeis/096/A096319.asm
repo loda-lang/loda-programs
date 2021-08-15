@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,7504 ; Sum of the first n primes.
-mov $1,$0
-mod $1,10
+mod $0,10

@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
-mov $1,$0
-sub $1,3
-div $1,4
-add $1,1
+sub $0,3
+div $0,4
+add $0,1

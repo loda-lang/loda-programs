@@ -3,4 +3,3 @@
 
 seq $0,184118 ; Upper s(n)-Wythoff sequence, where s(n) = 2n + 1.
 div $0,2
-mov $1,$0

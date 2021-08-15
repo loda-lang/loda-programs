@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
-mov $1,$0

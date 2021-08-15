@@ -4,4 +4,3 @@
 add $0,1
 seq $0,47551 ; Numbers that are congruent to {0, 1, 6, 7} mod 8.
 seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
-mov $1,$0

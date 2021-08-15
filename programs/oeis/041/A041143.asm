@@ -4,4 +4,3 @@
 add $0,1
 seq $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
 dif $0,4
-mov $1,$0

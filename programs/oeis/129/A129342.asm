@@ -8,3 +8,4 @@ lpb $0
   seq $2,16116 ; a(n) = 2^floor(n/2).
   add $1,$2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,75362 ; Triangle read by rows with the n-th row containing the first n multiples of n.
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

@@ -7,3 +7,4 @@ lpb $0
   seq $2,135133 ; a(n) = floor(S2(n)/3) mod 2, where S2(n) denotes the binary weight of n.
   add $1,$2
 lpe
+mov $0,$1

@@ -3,3 +3,4 @@
 
 seq $0,118825 ; Numerators of the convergents of the 2-adic continued fraction of zero given by A118824.
 sub $1,$0
+mov $0,$1

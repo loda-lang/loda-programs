@@ -3,5 +3,4 @@
 
 seq $0,134478 ; Triangle read by rows, T(0,0) = 1; n-th row = (n+1) terms of n, n+1, n+2...
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,33890 ; a(n) = Fibonacci(4*n+2).
 mul $2,2
 sub $0,$2
-mov $1,$0
-div $1,5
+div $0,5

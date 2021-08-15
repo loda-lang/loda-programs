@@ -18,4 +18,3 @@ lpb $3
   lpe
   add $2,3
 lpe
-mov $1,$0

@@ -8,3 +8,4 @@ lpb $0
   seq $2,56558 ; Third tetrahedral coordinate, i.e., tetrahedron with T(t,n,k)=k; succession of growing finite triangles with increasing values towards bottom right.
   add $1,$2
 lpe
+mov $0,$1

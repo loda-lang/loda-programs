@@ -4,10 +4,10 @@
 add $0,2
 mov $1,$0
 mov $2,1
-lpb $0
-  sub $0,$2
-  mul $3,$1
-  gcd $3,$0
+lpb $1
+  sub $1,$2
+  mul $3,$0
+  gcd $3,$1
   mod $2,$3
 lpe
-mov $1,$0
+mov $0,$1

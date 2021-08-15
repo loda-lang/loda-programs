@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,57977 ; GCD of consecutive central binomial coefficients: a(n) = gcd(A001405(n+1), A001405(n)).
-mov $1,$0

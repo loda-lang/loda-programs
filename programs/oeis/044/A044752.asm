@@ -4,7 +4,6 @@
 add $0,1
 seq $0,277592 ; Numbers k such that k/10^m == 5 mod 10, where 10^m is the greatest power of 10 that divides n.
 div $0,2
-mov $1,$0
-sub $1,7
-mul $1,20
-add $1,39
+sub $0,7
+mul $0,20
+add $0,39

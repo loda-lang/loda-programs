@@ -8,4 +8,3 @@ lpb $0
   add $0,1
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 lpe
-mov $1,$0

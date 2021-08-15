@@ -50,3 +50,4 @@ lpb $11
   sub $1,$3
   mov $11,0
 lpe
+mov $0,$1

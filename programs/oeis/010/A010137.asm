@@ -5,5 +5,4 @@ seq $0,10201 ; Continued fraction for sqrt(142).
 mul $0,3
 trn $0,8
 div $0,5
-mov $1,$0
-add $1,1
+add $0,1

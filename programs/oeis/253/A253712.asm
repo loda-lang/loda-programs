@@ -8,3 +8,4 @@ lpb $0
   seq $2,123094 ; Sum of first n 12th powers.
   add $1,$2
 lpe
+mov $0,$1

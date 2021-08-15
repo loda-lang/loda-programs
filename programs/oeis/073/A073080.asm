@@ -7,3 +7,4 @@ lpb $0
   mul $1,2
   trn $0,$1
 lpe
+mov $0,$1

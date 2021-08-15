@@ -8,3 +8,4 @@ lpb $0
   seq $2,274089 ; Numbers repeated except that powers of 2 only appear once.
   add $1,$2
 lpe
+mov $0,$1

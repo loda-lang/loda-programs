@@ -4,3 +4,4 @@
 seq $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
 mov $1,1
 max $1,$0
+mov $0,$1

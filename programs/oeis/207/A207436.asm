@@ -3,7 +3,7 @@
 
 seq $0,71679 ; Least k such that the maximum number of elements among the continued fractions for k/1, k/2, k/3, k/4 ...., k/k equals n.
 mov $1,$0
-mul $1,$0
-mul $0,2
-add $1,$0
-add $1,1
+pow $0,2
+mul $1,2
+add $0,$1
+add $0,1

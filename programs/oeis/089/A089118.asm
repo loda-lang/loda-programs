@@ -7,5 +7,4 @@ div $0,2
 seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
 add $0,$2
 mul $0,3
-mov $1,$0
-sub $1,1
+sub $0,1

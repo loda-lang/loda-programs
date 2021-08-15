@@ -38,3 +38,4 @@ lpb $7
   lpe
 lpe
 div $1,6
+mov $0,$1

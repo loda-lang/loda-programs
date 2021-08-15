@@ -3,9 +3,8 @@
 
 seq $0,159693 ; Partial sums of A000463.
 add $0,11
-mov $1,$0
-div $1,2
-mul $1,301657
-sub $1,1809942
-div $1,301657
-add $1,1
+div $0,2
+mul $0,301657
+sub $0,1809942
+div $0,301657
+add $0,1

@@ -5,3 +5,4 @@ seq $0,275367 ; Number of odd divisors of n^2.
 mov $1,3
 div $1,$0
 mod $1,2
+mov $0,$1

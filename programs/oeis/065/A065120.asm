@@ -7,3 +7,4 @@ lpb $0
   seq $2,209229 ; Characteristic function of powers of 2, cf. A000079.
   add $1,$2
 lpe
+mov $0,$1

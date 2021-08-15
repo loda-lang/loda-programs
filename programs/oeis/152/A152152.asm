@@ -5,3 +5,4 @@ seq $0,98600 ; a(n) = Fibonacci(n-1) + Fibonacci(n+1) - (-1)^n.
 sub $0,1
 add $1,$0
 mul $1,$0
+mov $0,$1

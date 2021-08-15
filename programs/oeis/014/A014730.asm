@@ -3,6 +3,5 @@
 
 seq $0,254962 ; Indices of hexagonal numbers (A000384) that are also centered pentagonal numbers (A005891).
 div $0,2
-mov $1,$0
-mul $1,8
-add $1,1
+mul $0,8
+add $0,1

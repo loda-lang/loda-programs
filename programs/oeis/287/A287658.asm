@@ -5,5 +5,4 @@ max $2,$0
 seq $2,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 add $2,$0
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

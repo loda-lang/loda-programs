@@ -8,4 +8,3 @@ lpb $0
 lpe
 seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mod $0,7
-mov $1,$0

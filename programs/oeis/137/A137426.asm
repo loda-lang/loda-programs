@@ -8,3 +8,4 @@ lpb $0
   seq $2,137429 ; a(n) = -2*a(n-1) - 2*a(n-2), with a(0)=1 and a(1)=-4.
   add $1,$2
 lpe
+mov $0,$1

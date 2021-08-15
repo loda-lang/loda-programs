@@ -3,4 +3,3 @@
 
 seq $0,7491 ; Smallest prime > n^2.
 pow $0,2
-mov $1,$0

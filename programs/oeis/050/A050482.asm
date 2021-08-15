@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,1
 seq $0,4125 ; Sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
-add $1,$0

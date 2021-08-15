@@ -3,5 +3,4 @@
 
 seq $0,90739 ; Exponent of 2 in 9^n - 1.
 seq $0,6355 ; Number of binary vectors of length n containing no singletons.
-mov $1,$0
-div $1,2
+div $0,2

@@ -18,3 +18,4 @@ lpe
 div $1,2
 sub $1,2
 div $1,2
+mov $0,$1

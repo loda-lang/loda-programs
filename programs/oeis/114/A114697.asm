@@ -4,4 +4,3 @@
 add $0,1
 seq $0,174192 ; Expansion of (1-x+2x^2)/ ((1-x)*(1-2x-x^2)).
 div $0,2
-mov $1,$0

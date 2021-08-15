@@ -4,6 +4,5 @@
 trn $0,1
 add $0,2
 seq $0,155874 ; Smallest positive composite number such that a(n)+n is also composite.
-mov $1,$0
-div $1,2
-sub $1,1
+div $0,2
+sub $0,1

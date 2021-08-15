@@ -6,3 +6,4 @@ mov $1,1
 add $1,$0
 seq $1,155110 ; a(n) = 8*Fibonacci(2n+1).
 div $1,256
+mov $0,$1

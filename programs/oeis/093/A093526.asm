@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-seq $0,195686 ; a(n) = C(2*n,n) / gcd(n,C(2*n,n)).
-add $1,1
-div $0,$1
-mov $1,$0
+add $0,1
+seq $1,195686 ; a(n) = C(2*n,n) / gcd(n,C(2*n,n)).
+div $1,$0
+mov $0,$1

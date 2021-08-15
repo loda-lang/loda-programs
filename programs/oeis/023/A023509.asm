@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,111089 ; Largest prime factor of 2n.
-mov $1,$0

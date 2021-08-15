@@ -3,4 +3,3 @@
 
 seq $0,6094 ; Products of 2 successive primes.
 seq $0,80883 ; Distance of n to next square.
-mov $1,$0

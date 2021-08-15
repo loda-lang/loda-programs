@@ -3,5 +3,4 @@
 
 seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 mod $0,3
-mov $1,$0
-add $1,1
+add $0,1

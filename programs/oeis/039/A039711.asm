@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 mod $0,13
-mov $1,$0

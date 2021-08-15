@@ -6,3 +6,4 @@ lpb $0
   sub $0,1
   seq $1,48726 ; a(n) = Xmult(n,6), or 2*A048724(n).
 lpe
+mov $0,$1

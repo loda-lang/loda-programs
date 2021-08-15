@@ -3,6 +3,5 @@
 
 seq $0,173741 ; T(n,k) = binomial(n,k) + 4 for 1 <= k <= n - 1, n >= 2, and T(n,0) = T(n,n) = 1 for n >= 0, triangle read by rows.
 seq $0,124356 ; Number of (directed) Hamiltonian cycles on the Moebius ladder graph M_n (for n>=4).
-mov $1,$0
-div $1,2
-sub $1,3
+div $0,2
+sub $0,3

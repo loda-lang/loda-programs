@@ -4,3 +4,4 @@
 seq $0,6481 ; Euler characteristics of polytopes.
 sub $1,$0
 add $1,1
+mov $0,$1

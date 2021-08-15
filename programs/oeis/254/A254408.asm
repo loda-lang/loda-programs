@@ -3,5 +3,4 @@
 
 seq $0,5430 ; Apéry numbers: n*C(2*n,n).
 pow $0,2
-mov $1,$0
-mul $1,2
+mul $0,2

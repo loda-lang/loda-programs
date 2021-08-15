@@ -3,7 +3,6 @@
 
 mov $2,$0
 add $0,1
-mov $1,$0
-mul $1,5
-seq $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
-add $1,$2
+mul $0,5
+seq $0,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+add $0,$2

@@ -5,5 +5,4 @@ mov $1,$0
 add $0,100
 seq $1,85501 ; Number of prime powers p^k <= n that are not prime (k = 0 or k > 1).
 sub $0,$1
-mov $1,$0
-sub $1,99
+sub $0,99

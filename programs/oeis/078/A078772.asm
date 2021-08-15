@@ -4,4 +4,3 @@
 trn $0,1
 seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

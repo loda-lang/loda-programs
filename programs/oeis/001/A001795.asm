@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,98597 ; Numerator of Catalan(n)/2^(2n+1). Also, numerators of (2n-1)!!/(n+1)!. Odd part of the n-th Catalan number.
-mov $1,$0

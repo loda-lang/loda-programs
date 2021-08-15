@@ -11,3 +11,4 @@ lpb $0
   add $2,$1
 lpe
 div $1,6
+mov $0,$1

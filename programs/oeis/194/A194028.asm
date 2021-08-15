@@ -4,5 +4,4 @@
 mul $0,2
 add $0,2
 seq $0,198081 ; Ceiling(n*Sqrt(3)).
-mov $1,$0
-sub $1,1
+sub $0,1

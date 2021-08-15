@@ -5,6 +5,5 @@ mov $2,$0
 mul $0,2
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
 sub $0,$2
-mov $1,$0
-mul $1,2
-sub $1,5
+mul $0,2
+sub $0,5

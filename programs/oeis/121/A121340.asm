@@ -11,4 +11,3 @@ lpb $0
   sub $0,$3
 lpe
 pow $0,$1
-mov $1,$0

@@ -8,3 +8,4 @@ lpb $0
   seq $2,77973 ; Expansion of 1/(1+x-2*x^3).
   add $1,$2
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,253470 ; Indices of centered triangular numbers (A005448) which are also centered pentagonal numbers (A005891).
 mul $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

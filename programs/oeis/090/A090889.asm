@@ -7,3 +7,4 @@ lpb $0
   seq $2,249152 ; Exponent of 2 in the hyperfactorials: a(n) = A007814(A002109(n)).
   add $1,$2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,1
-add $1,$0

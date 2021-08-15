@@ -8,3 +8,4 @@ lpb $0
   seq $2,62383 ; a(0) = 1: for n>0, a(n) = 2^floor(log_2(n)+1) or a(n) = 2*a(floor(n/2)).
   add $1,$2
 lpe
+mov $0,$1

@@ -4,3 +4,4 @@
 seq $0,325939 ; Expansion of Sum_{k>=1} x^(2*k) / (1 + x^k).
 sub $1,$0
 add $1,1
+mov $0,$1

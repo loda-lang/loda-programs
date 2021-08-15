@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,51903 ; Maximal exponent in prime factorization of n.
-mov $1,$0

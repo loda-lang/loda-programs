@@ -4,5 +4,4 @@
 add $0,2
 seq $0,298468 ; Solution (aa(n)) of the system of 3 complementary equations in Comments.
 div $0,2
-mov $1,$0
-sub $1,2
+sub $0,2

@@ -3,5 +3,4 @@
 
 seq $0,10152 ; Continued fraction for sqrt(74).
 div $0,3
-mov $1,$0
-add $1,1
+add $0,1

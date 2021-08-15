@@ -6,4 +6,3 @@ mov $2,$0
 seq $0,1108 ; a(n)-th triangular number is a square: a(n+1) = 6*a(n)-a(n-1)+2, with a(0) = 0, a(1) = 1.
 mul $2,2
 mul $0,$2
-mov $1,$0

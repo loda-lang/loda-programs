@@ -7,3 +7,4 @@ lpb $0
   seq $2,295316 ; a(n) = 1 if there are no even exponents in the prime factorization of n, 0 otherwise.
   add $1,$2
 lpe
+mov $0,$1

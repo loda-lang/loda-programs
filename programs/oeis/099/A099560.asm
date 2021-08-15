@@ -7,3 +7,4 @@ lpb $0
   seq $2,78012 ; Expansion of (1 - x) / (1 - x - x^3) in powers of x.
   add $1,$2
 lpe
+mov $0,$1

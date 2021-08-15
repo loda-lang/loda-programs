@@ -3,12 +3,12 @@
 
 mul $0,2
 mov $1,$0
+seq $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mov $2,$0
-seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-add $1,$0
-add $1,1
+add $0,$1
+add $0,1
 mov $3,$2
 cmp $3,0
 add $2,$3
-div $1,$2
-sub $1,1
+div $0,$2
+sub $0,1

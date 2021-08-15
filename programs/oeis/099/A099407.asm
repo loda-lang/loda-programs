@@ -4,7 +4,7 @@
 seq $0,40 ; The prime numbers.
 seq $0,13636 ; n*nextprime(n).
 mov $1,$0
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-sub $1,$0
-div $1,2
-add $1,1
+seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+sub $0,$1
+div $0,2
+add $0,1

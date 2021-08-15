@@ -3,4 +3,3 @@
 
 seq $0,63886 ; Number of n-step walks on a line starting from the origin but not returning to it.
 pow $0,2
-mov $1,$0

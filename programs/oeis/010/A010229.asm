@@ -3,5 +3,4 @@
 
 seq $0,10144 ; Continued fraction for sqrt(59).
 seq $0,188190 ; Positions of 0 in A188189; complement of A188191.
-mov $1,$0
-sub $1,2
+sub $0,2

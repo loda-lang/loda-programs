@@ -72,3 +72,4 @@ lpb $2
   lpe
   add $1,$10
 lpe
+mov $0,$1

@@ -4,6 +4,5 @@
 mul $0,2
 add $0,1
 seq $0,1078 ; a(n) = 10*a(n-1) - a(n-2) with a(0) = 0, a(1) = 2.
-mov $1,$0
-sub $1,2
-div $1,2
+sub $0,2
+div $0,2

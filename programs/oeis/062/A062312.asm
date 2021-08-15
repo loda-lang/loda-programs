@@ -3,4 +3,3 @@
 
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 pow $0,2
-mov $1,$0

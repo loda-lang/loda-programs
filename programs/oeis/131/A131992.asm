@@ -3,5 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.
-mov $1,$0
-add $1,1
+add $0,1

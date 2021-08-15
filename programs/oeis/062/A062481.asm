@@ -5,3 +5,4 @@ mov $1,1
 add $1,$0
 seq $0,6005 ; The odd prime numbers together with 1.
 pow $1,$0
+mov $0,$1

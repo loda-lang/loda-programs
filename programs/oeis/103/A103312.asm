@@ -9,3 +9,4 @@ lpb $0
   max $1,0
   seq $1,57681 ; a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j).
 lpe
+mov $0,$1

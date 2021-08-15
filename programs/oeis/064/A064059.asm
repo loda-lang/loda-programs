@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,115130 ; Partial sums of A005557.
-mov $1,$0
-sub $1,42
+sub $0,42

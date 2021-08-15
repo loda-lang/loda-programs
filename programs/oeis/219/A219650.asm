@@ -8,3 +8,4 @@ lpb $0
   seq $2,230405 ; a(n) = A000217(A230404(n+1)); the first differences of A219650.
   add $1,$2
 lpe
+mov $0,$1

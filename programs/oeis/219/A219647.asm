@@ -4,3 +4,4 @@
 max $1,$0
 seq $1,219646 ; Partial sums of A219642.
 add $1,$0
+mov $0,$1

@@ -5,6 +5,5 @@ add $0,1
 mul $0,2
 seq $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
 pow $0,3
-mov $1,$0
-div $1,8
-mul $1,16
+div $0,8
+mul $0,16

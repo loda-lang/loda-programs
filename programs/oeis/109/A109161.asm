@@ -9,5 +9,4 @@ lpb $2
   trn $2,$1
   sub $1,1
 lpe
-mov $1,$0
-add $1,5
+add $0,5

@@ -5,3 +5,4 @@ seq $0,5668 ; Denominators of continued fraction convergents to sqrt(10).
 mul $0,5
 mov $1,1
 max $1,$0
+mov $0,$1

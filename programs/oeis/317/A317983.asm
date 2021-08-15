@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,538 ; Sum of fourth powers: 0^4 + 1^4 + ... + n^4.
-mov $1,$0
-mul $1,420
+mul $0,420

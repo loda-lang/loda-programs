@@ -7,5 +7,4 @@ pow $0,2
 sub $2,2
 gcd $2,4
 div $0,$2
-mov $1,$0
-div $1,25
+div $0,25

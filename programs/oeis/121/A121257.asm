@@ -4,4 +4,3 @@
 add $0,1
 seq $0,281199 ; Number of n X 2 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
 mul $0,2
-mov $1,$0

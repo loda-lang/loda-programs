@@ -5,8 +5,7 @@ sub $0,1
 mul $0,2
 trn $0,1
 sub $0,1
-mov $1,$0
-mul $1,485
-div $1,9
-add $1,3
-mod $1,10
+mul $0,485
+div $0,9
+add $0,3
+mod $0,10

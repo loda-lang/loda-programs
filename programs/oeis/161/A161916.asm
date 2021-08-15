@@ -9,3 +9,4 @@ seq $2,39963 ; The period-doubling sequence A035263 repeated.
 bin $0,$2
 sub $1,$0
 add $1,2
+mov $0,$1

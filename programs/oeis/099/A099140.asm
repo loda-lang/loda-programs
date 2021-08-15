@@ -3,6 +3,5 @@
 
 mul $0,2
 seq $0,14335 ; Exponential convolution of Fibonacci numbers with themselves (divided by 2).
-mov $1,$0
-mul $1,5
-add $1,1
+mul $0,5
+add $0,1

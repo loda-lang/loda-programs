@@ -23,3 +23,4 @@ lpe
 mov $1,2
 gcd $1,$4
 sub $1,1
+mov $0,$1

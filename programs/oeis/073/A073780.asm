@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
-mov $1,$0

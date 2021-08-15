@@ -5,4 +5,3 @@ seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 dif $0,2
 mul $0,2
-mov $1,$0

@@ -3,5 +3,4 @@
 
 seq $0,15996 ; (tau(n^4) + 3)/4, where tau = A000005.
 mul $0,4
-mov $1,$0
-sub $1,3
+sub $0,3

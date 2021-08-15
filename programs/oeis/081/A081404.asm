@@ -3,4 +3,3 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,8475 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).
-mov $1,$0

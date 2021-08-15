@@ -4,4 +4,3 @@
 mul $0,3
 add $0,2
 seq $0,83054 ; a(n) = floor(sqrt(3)*n) - 3*floor(n/sqrt(3)).
-mov $1,$0

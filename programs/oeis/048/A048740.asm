@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,324502 ; a(n) = denominator of  Sum_{d|n} (1/pod(d)) where pod(k) = the product of the divisors of k (A007955).
-mov $1,$0

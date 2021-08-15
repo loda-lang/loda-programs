@@ -3,4 +3,3 @@
 
 max $0,1
 seq $0,60715 ; Number of primes between n and 2n exclusive.
-mov $1,$0

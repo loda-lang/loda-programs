@@ -3,4 +3,3 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,89309 ; Write n in binary; a(n) = length of the rightmost run of 1's.
-mov $1,$0

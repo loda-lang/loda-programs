@@ -7,4 +7,3 @@ seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists t
 mov $2,$0
 cmp $2,0
 add $0,$2
-mov $1,$0

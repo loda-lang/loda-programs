@@ -5,3 +5,4 @@ seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
 mov $1,2
 pow $1,$0
 sub $1,1
+mov $0,$1

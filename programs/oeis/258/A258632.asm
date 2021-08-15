@@ -19,3 +19,4 @@ lpb $4
   div $5,2
   add $1,$5
 lpe
+mov $0,$1

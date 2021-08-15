@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,336853 ; a(n) = A003961(n) - n, where A003961 is the prime shift towards larger primes.
 sub $0,$2
 sub $0,1
-mov $1,$0

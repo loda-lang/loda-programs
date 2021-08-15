@@ -3,4 +3,3 @@
 
 seq $0,40282 ; Continued fraction for sqrt(300).
 dif $0,4
-mov $1,$0

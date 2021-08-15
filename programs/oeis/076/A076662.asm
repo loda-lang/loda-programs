@@ -6,3 +6,4 @@ max $0,2
 seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
 pow $1,$0
 add $1,2
+mov $0,$1

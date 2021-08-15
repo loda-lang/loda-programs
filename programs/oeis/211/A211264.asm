@@ -7,3 +7,4 @@ lpb $0
   seq $2,56924 ; Number of divisors of n that are smaller than sqrt(n).
   add $1,$2
 lpe
+mov $0,$1

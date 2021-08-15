@@ -54,3 +54,4 @@ lpb $7
   add $8,1
   add $1,$8
 lpe
+mov $0,$1

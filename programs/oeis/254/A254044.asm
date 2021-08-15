@@ -4,8 +4,8 @@
 mul $0,2
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 mov $1,$0
-lpb $0
-  div $1,2
-  sub $0,$1
+lpb $1
+  div $0,2
+  sub $1,$0
 lpe
-mov $1,$0
+mov $0,$1

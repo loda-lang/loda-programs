@@ -10,3 +10,4 @@ lpb $2
   gcd $2,2
 lpe
 trn $1,$2
+mov $0,$1

@@ -3,10 +3,10 @@
 
 pow $0,2
 mov $1,$0
-add $1,2
-gcd $1,3
-lpb $0
-  mov $0,4
-  add $1,4
+add $0,2
+gcd $0,3
+lpb $1
+  add $0,4
+  mov $1,4
 lpe
-div $1,2
+div $0,2

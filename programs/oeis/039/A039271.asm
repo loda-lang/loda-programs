@@ -3,4 +3,3 @@
 
 seq $0,39218 ; Numbers whose base-12 representation has the same number of 0's and 9's.
 sub $0,1
-mov $1,$0

@@ -4,4 +4,3 @@
 seq $0,102393 ; A wicked evil sequence.
 add $0,1
 div $0,2
-mov $1,$0

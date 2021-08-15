@@ -10,5 +10,4 @@ lpb $0
   dif $0,3
   div $2,2
 lpe
-mov $1,$0
-mod $1,2
+mod $0,2

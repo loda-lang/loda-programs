@@ -4,5 +4,4 @@
 mul $0,2
 add $0,1
 seq $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
-mov $1,$0
-div $1,2
+div $0,2

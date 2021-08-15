@@ -9,3 +9,4 @@ lpb $0
 lpe
 sub $1,7
 div $1,8
+mov $0,$1

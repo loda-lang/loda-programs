@@ -3,4 +3,3 @@
 
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 seq $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
-mov $1,$0

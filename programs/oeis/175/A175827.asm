@@ -7,3 +7,4 @@ lpb $0
   seq $2,36408 ; a(n) = ceiling(n^2/10).
   add $1,$2
 lpe
+mov $0,$1

@@ -6,3 +6,4 @@ sub $1,$0
 seq $0,23548 ; Convolution of natural numbers >= 2 and Fibonacci numbers.
 add $1,$0
 sub $1,2
+mov $0,$1

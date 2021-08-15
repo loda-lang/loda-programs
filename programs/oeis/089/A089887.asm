@@ -4,6 +4,5 @@
 add $0,1
 seq $0,122800 ; A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
 seq $0,27383 ; Number of balanced strings of length n: let d(S) = #(1's) - #(0's), # == count in S, then S is balanced if every substring T of S has -2 <= d(T) <= 2.
-mov $1,$0
-div $1,4
-add $1,1
+div $0,4
+add $0,1

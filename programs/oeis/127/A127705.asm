@@ -3,4 +3,3 @@
 
 seq $0,53139 ; a(n) = phi(n) - mu(n).
 max $0,1
-mov $1,$0

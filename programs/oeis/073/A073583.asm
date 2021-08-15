@@ -9,5 +9,4 @@ sub $0,1
 div $0,2
 max $0,0
 seq $0,70342 ; a(n) = 3^n mod 19.
-mov $1,$0
-mod $1,10
+mod $0,10

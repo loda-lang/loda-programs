@@ -8,3 +8,4 @@ lpb $0
   seq $2,242601 ; Integers repeated twice in a canonical order.
   add $1,$2
 lpe
+mov $0,$1

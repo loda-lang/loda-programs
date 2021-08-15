@@ -8,3 +8,4 @@ lpb $0
   seq $2,24551 ; a(n) = floor(a(n-1)/(sqrt(5) - 2)) for n > 0 and a(0) = 1.
   add $1,$2
 lpe
+mov $0,$1

@@ -5,4 +5,3 @@ seq $0,66796 ; a(n) = Sum_{i=1..n} binomial(2*i,i).
 mov $2,2
 div $2,$0
 sub $0,$2
-mov $1,$0

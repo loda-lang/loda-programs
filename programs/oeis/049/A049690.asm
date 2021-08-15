@@ -7,3 +7,4 @@ lpb $0
   seq $2,2088 ; Sum of totient function: a(n) = Sum_{k=1..n} phi(k), cf. A000010.
   add $1,$2
 lpe
+mov $0,$1

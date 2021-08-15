@@ -3,4 +3,3 @@
 
 seq $0,49473 ; Nearest integer to n/sqrt(2).
 sub $0,1
-mov $1,$0

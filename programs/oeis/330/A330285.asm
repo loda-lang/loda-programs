@@ -11,3 +11,4 @@ lpb $3
   seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
   add $1,$0
 lpe
+mov $0,$1

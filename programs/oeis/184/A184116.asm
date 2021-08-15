@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,184104 ; n+floor(5*sqrt(n)); complement of A184105.
-mov $1,$0
-sub $1,1
+sub $0,1

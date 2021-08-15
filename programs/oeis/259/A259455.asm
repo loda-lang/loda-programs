@@ -6,5 +6,4 @@ mov $2,21
 mul $2,$0
 seq $0,1297 ; Stirling numbers of the second kind S(n+3, n).
 mul $0,$2
-mov $1,$0
-div $1,21
+div $0,21

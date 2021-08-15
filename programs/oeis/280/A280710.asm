@@ -6,5 +6,4 @@ bin $0,2
 div $0,3
 mul $0,4
 div $0,6
-mov $1,$0
-mod $1,2
+mod $0,2

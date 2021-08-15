@@ -3,10 +3,10 @@
 
 add $0,1
 mov $1,$0
-lpb $0
+lpb $1
   sub $0,1
-  mul $0,2
   sub $1,1
+  mul $1,2
 lpe
-seq $1,173919 ; Numbers that are prime or one less than a prime.
-add $1,1
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+add $0,1

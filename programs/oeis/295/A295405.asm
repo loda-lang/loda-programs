@@ -5,3 +5,4 @@ seq $0,147810 ; Half the number of divisors of n^2+1.
 mov $1,1
 sub $1,$0
 cmp $1,0
+mov $0,$1

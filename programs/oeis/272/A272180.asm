@@ -5,11 +5,11 @@ pow $0,2
 mov $1,$0
 mov $2,$0
 mov $4,$0
-lpb $0
-  mov $0,$2
+lpb $1
+  mov $1,$2
   add $3,1
-  div $0,$3
-  sub $0,$3
+  div $1,$3
+  sub $1,$3
   add $4,1
-  mul $1,$4
+  mul $0,$4
 lpe

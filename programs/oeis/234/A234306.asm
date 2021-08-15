@@ -4,4 +4,3 @@
 mov $2,$0
 seq $2,69930 ; Number of integers of the form (n+k)/(n-k) with 1<=k<=n-1.
 sub $0,$2
-mov $1,$0

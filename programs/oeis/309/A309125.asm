@@ -11,3 +11,4 @@ lpb $2
   seq $0,35316 ; Sum of the square divisors of n.
   add $1,$0
 lpe
+mov $0,$1

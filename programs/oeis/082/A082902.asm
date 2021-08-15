@@ -3,4 +3,3 @@
 
 seq $0,1227 ; Number of odd divisors of n.
 gcd $0,256
-mov $1,$0

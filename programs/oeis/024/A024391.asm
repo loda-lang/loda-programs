@@ -6,5 +6,4 @@ add $0,6
 bin $0,2
 sub $0,1
 bin $0,2
-mov $1,$0
-div $1,9
+div $0,9

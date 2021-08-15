@@ -12,3 +12,4 @@ lpb $3
   trn $3,6
 lpe
 sub $1,19
+mov $0,$1

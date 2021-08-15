@@ -3,4 +3,3 @@
 
 seq $0,28387 ; a(n) = n + (n+1)^2.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

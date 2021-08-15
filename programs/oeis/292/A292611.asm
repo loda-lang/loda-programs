@@ -3,4 +3,3 @@
 
 seq $0,189151 ; Numbers n such that n < floor(sqrt(n)) * ceiling(sqrt(n)).
 bin $0,2
-mov $1,$0

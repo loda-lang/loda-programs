@@ -3,4 +3,3 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,82186 ; 1 + sum of first n terms of A001221.
-mov $1,$0

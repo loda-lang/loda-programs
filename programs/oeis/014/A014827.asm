@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,185055 ; Number of representations of 5^(2n) as a sum a^2 + b^2 + c^2 with 0 < a <= b <= c.
-mov $1,$0
-div $1,2
+div $0,2

@@ -3,7 +3,7 @@
 
 seq $0,279313 ; Period 14 zigzag sequence: repeat [0,1,2,3,4,5,6,7,6,5,4,3,2,1].
 mov $1,$0
-seq $0,259626 ; List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
-div $0,3
-sub $1,$0
-mul $1,2
+seq $1,259626 ; List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
+div $1,3
+sub $0,$1
+mul $0,2

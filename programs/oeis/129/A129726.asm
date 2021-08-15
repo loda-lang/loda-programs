@@ -6,5 +6,4 @@ seq $0,6005 ; The odd prime numbers together with 1.
 mul $2,2
 add $0,$2
 trn $0,2
-mov $1,$0
-add $1,2
+add $0,2

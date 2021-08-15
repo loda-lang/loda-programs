@@ -3,4 +3,3 @@
 
 seq $0,48724 ; Write n and 2n in binary and add them mod 2.
 mod $0,3
-mov $1,$0

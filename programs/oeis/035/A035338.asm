@@ -5,7 +5,6 @@ mov $1,$0
 seq $0,134864 ; Wythoff BBB numbers.
 mul $0,5
 sub $0,$1
-mov $1,$0
-sub $1,65
-div $1,8
-add $1,5
+sub $0,65
+div $0,8
+add $0,5

@@ -4,5 +4,4 @@
 seq $0,278597 ; One half of A278481.
 add $0,1
 bin $0,2
-mov $1,$0
-add $1,2
+add $0,2

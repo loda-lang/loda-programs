@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0

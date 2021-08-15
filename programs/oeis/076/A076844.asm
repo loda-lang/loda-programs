@@ -7,6 +7,5 @@ mov $2,$0
 cmp $2,0
 add $0,$2
 seq $0,115180 ; Beatty sequence for (Champernowne constant)*10 = 1.234567891011121314....
-mov $1,$0
-mul $1,2
-sub $1,3
+mul $0,2
+sub $0,3

@@ -6,3 +6,4 @@ mov $1,2
 pow $1,$0
 seq $1,7094 ; Numbers in base 8.
 div $1,2
+mov $0,$1

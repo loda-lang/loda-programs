@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,38572 ; a(n) = n rotated one binary place to the right.
-mov $1,$0

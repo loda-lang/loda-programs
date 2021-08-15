@@ -3,5 +3,4 @@
 
 seq $0,5097 ; (Odd primes - 1)/2.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0
-add $1,1
+add $0,1

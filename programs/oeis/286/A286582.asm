@@ -3,5 +3,4 @@
 
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
-mov $1,$0
-sub $1,1
+sub $0,1

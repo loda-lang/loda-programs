@@ -3,4 +3,3 @@
 
 seq $0,20500 ; Cyclotomic polynomials at x=1.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

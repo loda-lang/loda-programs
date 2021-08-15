@@ -3,7 +3,6 @@
 
 seq $0,2315 ; NSW numbers: a(n) = 6*a(n-1) - a(n-2); also a(n)^2 - 2*b(n)^2 = -1 with b(n)=A001653(n+1).
 pow $0,2
-mov $1,$0
-div $1,48
-mul $1,12696
-add $1,529
+div $0,48
+mul $0,12696
+add $0,529

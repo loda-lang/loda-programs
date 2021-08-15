@@ -7,8 +7,7 @@ add $3,$0
 add $0,$3
 add $0,$3
 seq $0,53793 ; n^2+n modulo 7.
-mov $1,$0
-add $1,30
+add $0,30
 mov $2,$4
 mul $2,32
-add $1,$2
+add $0,$2

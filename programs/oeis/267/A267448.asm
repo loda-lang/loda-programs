@@ -7,3 +7,4 @@ lpb $0
   seq $2,71051 ; Number of 1's in n-th row of triangle in A071035.
   add $1,$2
 lpe
+mov $0,$1

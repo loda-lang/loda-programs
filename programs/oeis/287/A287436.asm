@@ -12,8 +12,7 @@ add $0,1
 lpb $0
   mod $0,3
 lpe
-mov $1,$0
-add $1,1
+add $0,1
 mov $3,$2
 mul $3,3
-add $1,$3
+add $0,$3

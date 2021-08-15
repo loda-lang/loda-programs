@@ -5,6 +5,5 @@ mov $2,$0
 seq $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
 seq $2,224880 ; a(n) = 2n + sum of divisors of n.
 sub $0,$2
-mov $1,$0
-gcd $1,2
-sub $1,1
+gcd $0,2
+sub $0,1

@@ -3,6 +3,5 @@
 
 add $0,71726
 seq $0,189723 ; Fixed point of the morphism 0->011, 1->101.
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

@@ -11,3 +11,4 @@ lpb $3
   seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   add $1,$0
 lpe
+mov $0,$1

@@ -3,10 +3,9 @@
 
 mov $2,$0
 seq $0,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
-mov $1,$0
-add $1,5
-div $1,2
+add $0,5
+div $0,2
 mod $2,2
 mul $2,2
-add $1,$2
-sub $1,1
+add $0,$2
+sub $0,1

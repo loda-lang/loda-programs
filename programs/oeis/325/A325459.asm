@@ -5,4 +5,3 @@ trn $0,1
 mov $2,$0
 seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
 sub $0,$2
-mov $1,$0

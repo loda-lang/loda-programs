@@ -6,6 +6,5 @@ pow $0,2
 div $0,2
 mul $0,3
 trn $0,1
-mov $1,$0
-mul $1,6
-add $1,6
+mul $0,6
+add $0,6

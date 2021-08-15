@@ -32,3 +32,4 @@ lpb $9
 lpe
 div $1,2
 add $1,5
+mov $0,$1

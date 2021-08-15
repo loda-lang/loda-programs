@@ -4,5 +4,4 @@
 seq $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = ij (i>=0, j>=0).
 mul $0,2
 trn $0,1
-mov $1,$0
-add $1,1
+add $0,1

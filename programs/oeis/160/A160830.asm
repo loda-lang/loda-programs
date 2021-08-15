@@ -4,4 +4,3 @@
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 sub $0,1
 div $0,4
-mov $1,$0

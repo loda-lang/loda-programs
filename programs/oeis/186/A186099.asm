@@ -3,5 +3,4 @@
 
 seq $0,65330 ; a(n) = max { k | gcd(n, k) = k and gcd(k, 6) = 1 }.
 seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-mov $1,$0
-div $1,24
+div $0,24

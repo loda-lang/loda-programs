@@ -4,5 +4,4 @@
 add $0,1
 div $0,2
 seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
-mov $1,$0
-sub $1,1
+sub $0,1

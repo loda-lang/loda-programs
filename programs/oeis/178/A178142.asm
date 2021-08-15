@@ -3,8 +3,8 @@
 
 mul $0,5
 mov $1,$0
-bin $0,3
-sub $1,1
-div $0,$1
-mov $1,$0
-mod $1,10
+sub $0,1
+bin $1,3
+div $1,$0
+mov $0,$1
+mod $0,10

@@ -3,4 +3,3 @@
 
 seq $0,130321 ; Triangle, (2^0, 2^1, 2^2, ...) in every column.
 dif $0,2
-mov $1,$0

@@ -8,3 +8,4 @@ lpb $0
   seq $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
   add $1,1
 lpe
+mov $0,$1

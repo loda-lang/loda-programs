@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-mov $1,$0

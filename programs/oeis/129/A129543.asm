@@ -4,4 +4,3 @@
 seq $0,48724 ; Write n and 2n in binary and add them mod 2.
 div $0,2
 seq $0,40 ; The prime numbers.
-mov $1,$0

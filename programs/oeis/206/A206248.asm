@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,208558 ; Number of 6 X n 0..1 arrays avoiding 0 0 0 and 0 0 1 horizontally and 0 0 1 and 0 1 1 vertically.
-mov $1,$0
-div $1,16
+div $0,16

@@ -4,5 +4,4 @@
 add $0,3
 bin $0,2
 trn $0,4
-mov $1,$0
-add $1,1
+add $0,1

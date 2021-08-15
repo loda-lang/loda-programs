@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,196700 ; Number of n X 1 0..4 arrays with each element x equal to the number of its horizontal and vertical neighbors equal to 3,1,0,4,2 for x=0,1,2,3,4.
-mov $1,$0

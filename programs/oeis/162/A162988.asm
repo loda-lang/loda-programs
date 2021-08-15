@@ -9,3 +9,4 @@ lpb $0
   seq $1,83375 ; n appears prime(n) times.
 lpe
 add $1,1
+mov $0,$1

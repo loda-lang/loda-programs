@@ -4,7 +4,6 @@
 mov $2,$0
 mul $0,2
 seq $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
 mul $2,2
 add $2,1
-mod $1,$2
+mod $0,$2

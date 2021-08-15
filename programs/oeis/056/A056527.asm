@@ -3,5 +3,4 @@
 
 seq $0,203016 ; Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
 div $0,2
-mov $1,$0
-add $1,1
+add $0,1

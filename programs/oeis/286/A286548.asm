@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,3188 ; Decimal equivalent of Gray code for n.
 sub $0,$2
-mov $1,$0

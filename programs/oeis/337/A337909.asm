@@ -3,6 +3,5 @@
 
 mul $0,2
 seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

@@ -5,5 +5,4 @@ mul $0,4
 seq $0,60464 ; Numbers that are not congruent to 4 or 5 mod 9.
 add $0,6
 bin $0,6
-mov $1,$0
-mod $1,2
+mod $0,2

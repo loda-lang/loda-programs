@@ -3,4 +3,3 @@
 
 seq $0,34870 ; Even-numbered rows of Pascal's triangle.
 mod $0,2
-mov $1,$0

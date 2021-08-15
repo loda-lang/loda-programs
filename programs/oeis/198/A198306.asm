@@ -5,5 +5,4 @@ mul $0,2
 add $0,1
 seq $0,224251 ; Numbers, a(n) where binomial(a(n), 5n-1) == 0 (mod 5) and binomial(a(n), k) != 0 (mod 5) for k != 5n - 1.
 add $0,1
-mov $1,$0
-div $1,2
+div $0,2

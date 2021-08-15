@@ -3,4 +3,3 @@
 
 seq $0,22087 ; Fibonacci sequence beginning 0, 4.
 mul $0,5
-mov $1,$0

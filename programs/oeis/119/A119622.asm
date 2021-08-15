@@ -9,5 +9,4 @@ lpb $1
   mov $1,$0
   seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
 lpe
-mov $1,$0
-mul $1,2
+mul $0,2

@@ -4,4 +4,3 @@
 add $0,5
 seq $0,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
 div $0,2
-mov $1,$0

@@ -4,3 +4,4 @@
 seq $0,69722 ; Number of rooted unicursal planar maps with n edges and exactly one vertex of valency 1 (unicursal means that exactly two vertices are of odd valency; there is an Eulerian path).
 add $1,$0
 mul $1,$0
+mov $0,$1

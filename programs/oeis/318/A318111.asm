@@ -7,3 +7,4 @@ lpb $0
   seq $1,4006 ; a(n) = C(n,1) + C(n,2) + C(n,3), or n*(n^2 + 5)/6.
 lpe
 add $1,1
+mov $0,$1

@@ -28,3 +28,4 @@ lpb $5
   sub $5,1
 lpe
 trn $1,4
+mov $0,$1

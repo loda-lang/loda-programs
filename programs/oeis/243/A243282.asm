@@ -7,3 +7,4 @@ lpb $0
   seq $2,319988 ; a(n) = 1 if n is divisible by the square of its largest prime factor, 0 otherwise.
   add $1,$2
 lpe
+mov $0,$1

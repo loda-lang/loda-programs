@@ -3,9 +3,9 @@
 
 add $0,1
 mov $1,$0
-bin $1,3
-sub $1,$0
-lpb $0
-  sub $0,1
-  mul $1,2
+bin $0,3
+sub $0,$1
+lpb $1
+  mul $0,2
+  sub $1,1
 lpe

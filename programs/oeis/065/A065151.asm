@@ -4,4 +4,3 @@
 seq $0,49711 ; a(n) = n - prevprime(n).
 sub $0,1
 seq $0,40 ; The prime numbers.
-mov $1,$0

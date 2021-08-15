@@ -22,4 +22,3 @@ lpb $3
   cmp $6,0
   mov $3,$6
 lpe
-mov $1,$0

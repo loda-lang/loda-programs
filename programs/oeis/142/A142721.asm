@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,38572 ; a(n) = n rotated one binary place to the right.
-mov $1,$0
-sub $1,1
+sub $0,1

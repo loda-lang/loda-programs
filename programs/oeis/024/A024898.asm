@@ -20,3 +20,4 @@ lpb $2
   lpe
 lpe
 div $1,10
+mov $0,$1

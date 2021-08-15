@@ -3,5 +3,4 @@
 
 seq $0,28387 ; a(n) = n + (n+1)^2.
 seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-mov $1,$0
-sub $1,2
+sub $0,2

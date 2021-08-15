@@ -3,4 +3,3 @@
 
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
 seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
-mov $1,$0

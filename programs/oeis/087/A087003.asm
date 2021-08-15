@@ -3,3 +3,4 @@
 
 seq $0,99991 ; a(n) = Moebius(2n).
 sub $1,$0
+mov $0,$1

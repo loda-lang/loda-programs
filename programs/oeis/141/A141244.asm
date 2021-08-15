@@ -6,4 +6,3 @@ seq $0,45621 ; a(n) = 2^n - binomial(n, floor(n/2)).
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

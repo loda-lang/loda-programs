@@ -11,3 +11,4 @@ lpb $2
   seq $0,28290 ; Expansion of 1/((1-x)(1-x^2)(1-x^3)(1-x^5)(1-x^8)).
   add $1,$0
 lpe
+mov $0,$1

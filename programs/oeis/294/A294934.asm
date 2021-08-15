@@ -3,5 +3,5 @@
 
 seq $0,235796 ; 2*n - 1 - sigma(n).
 mov $1,$0
-max $1,0
-cmp $1,$0
+max $0,0
+cmp $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,114389 ; Bisection of A065621.
 seq $0,113778 ; Invert blocks of four in the sequence of natural numbers.
-mov $1,$0
-div $1,2
+div $0,2

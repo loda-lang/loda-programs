@@ -13,3 +13,4 @@ lpb $2
   seq $0,55099 ; Expansion of g.f.: (1 + x)/(1 - 3*x - 2*x^2).
   add $1,$0
 lpe
+mov $0,$1

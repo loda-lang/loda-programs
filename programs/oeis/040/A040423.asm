@@ -3,4 +3,3 @@
 
 seq $0,10217 ; Continued fraction for sqrt(173).
 seq $0,7092 ; Numbers in base 6.
-mov $1,$0

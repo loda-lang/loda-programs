@@ -3,4 +3,3 @@
 
 dif $0,2
 seq $0,40624 ; Continued fraction for sqrt(650).
-mov $1,$0

@@ -3,13 +3,13 @@
 
 add $0,4
 mov $1,$0
-mul $1,5
-lpb $0
-  sub $0,1
-  trn $0,2
-  add $1,5
-  div $1,2
-  mul $1,2
+mul $0,5
+lpb $1
+  add $0,5
+  div $0,2
+  mul $0,2
+  sub $1,1
+  trn $1,2
 lpe
-div $1,2
-sub $1,12
+div $0,2
+sub $0,12

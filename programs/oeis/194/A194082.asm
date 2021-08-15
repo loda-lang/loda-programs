@@ -7,3 +7,4 @@ lpb $0
   seq $2,171970 ; Integer part of the height of an equilateral triangle with side length n.
   add $1,$2
 lpe
+mov $0,$1

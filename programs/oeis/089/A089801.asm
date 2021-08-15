@@ -10,3 +10,4 @@ lpb $0
 lpe
 sub $0,1
 bin $1,$0
+mov $0,$1

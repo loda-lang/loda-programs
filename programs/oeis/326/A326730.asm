@@ -3,5 +3,4 @@
 
 seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
 seq $0,161511 ; Number of 1...0 pairs in the binary representation of 2n.
-mov $1,$0
-div $1,2
+div $0,2

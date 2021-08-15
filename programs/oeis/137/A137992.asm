@@ -4,3 +4,4 @@
 seq $0,39968 ; An example of a d-perfect sequence.
 mov $1,2
 sub $1,$0
+mov $0,$1

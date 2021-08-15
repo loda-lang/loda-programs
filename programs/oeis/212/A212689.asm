@@ -40,3 +40,4 @@ lpb $2
     add $1,$10
   lpe
 lpe
+mov $0,$1

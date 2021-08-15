@@ -5,4 +5,3 @@ seq $0,228879 ; a(n+2) = 3*a(n), starting 4,7.
 lpb $0
   dif $0,4
 lpe
-mov $1,$0

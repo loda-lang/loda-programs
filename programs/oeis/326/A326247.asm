@@ -9,3 +9,4 @@ lpb $0
   seq $1,207064 ; Number of n X 4 0..1 arrays avoiding 0 0 1 and 0 1 0 horizontally and 0 0 1 and 1 0 1 vertically.
 lpe
 div $1,9
+mov $0,$1

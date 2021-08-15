@@ -4,4 +4,3 @@
 add $0,1
 seq $0,112561 ; Sieve performed by successive iterations of steps where step m is: keep m terms, remove the next 3 and repeat; as m = 1,2,3,.. the remaining terms form this sequence.
 div $0,4
-mov $1,$0

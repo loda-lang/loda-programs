@@ -9,7 +9,6 @@ lpb $2
   mod $0,$3
   sub $2,1
 lpe
-mov $1,$0
-div $1,2
-mul $1,2
-add $1,1
+div $0,2
+mul $0,2
+add $0,1

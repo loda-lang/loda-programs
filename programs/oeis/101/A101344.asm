@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,298864 ; Ranks of products 3*p when all primes p and products 3*p are jointly ranked.
 sub $0,$2
 sub $0,$2
-mov $1,$0
-sub $1,2
+sub $0,2

@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,5667 ; Numerators of continued fraction convergents to sqrt(10).
-mov $1,$0

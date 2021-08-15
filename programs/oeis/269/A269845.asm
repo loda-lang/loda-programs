@@ -3,5 +3,4 @@
 
 seq $0,37 ; Numbers that are not squares (or, the nonsquares).
 seq $0,88226 ; a(1)=0, a(2)=0, a(3)=1; for n>3, a(n)=abs(a(n-1)-a(n-2)-a(n-3)).
-mov $1,$0
-pow $1,2
+pow $0,2

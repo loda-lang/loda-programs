@@ -3,11 +3,11 @@
 
 add $0,1
 mov $1,$0
-lpb $1
-  add $0,1
-  mov $1,2
+lpb $0
+  mov $0,2
+  add $1,1
 lpe
-mov $1,183
-add $1,$0
-seq $1,298364 ; Permutation of the natural numbers partitioned into quadruples [4k-2, 4k-1, 4k-3, 4k] for k > 0.
-sub $1,185
+mov $0,183
+add $0,$1
+seq $0,298364 ; Permutation of the natural numbers partitioned into quadruples [4k-2, 4k-1, 4k-3, 4k] for k > 0.
+sub $0,185

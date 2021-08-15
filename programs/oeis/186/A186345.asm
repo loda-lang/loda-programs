@@ -8,16 +8,16 @@ mov $2,$0
 pow $2,2
 lpb $2
   lpb $4
-    mov $0,2
-    mov $4,$1
-    add $1,1
+    mov $1,2
+    mov $4,$0
+    add $0,1
     mul $4,2
     sub $2,$4
   lpe
-  add $4,$0
-  add $0,1
+  add $4,$1
+  add $1,1
   trn $2,1
   trn $4,4
   add $4,2
 lpe
-add $1,$3
+add $0,$3

@@ -8,3 +8,4 @@ lpb $0
   seq $2,108958 ; Number of unordered pairs of distinct length-n binary words having the same number of 1's.
   add $1,$2
 lpe
+mov $0,$1

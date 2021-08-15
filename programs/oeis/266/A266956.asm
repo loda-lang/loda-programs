@@ -3,5 +3,4 @@
 
 seq $0,156638 ; Numbers n such that n^2 + 2 == 0 (mod 9).
 pow $0,2
-mov $1,$0
-div $1,9
+div $0,9

@@ -8,5 +8,4 @@ lpb $0
   seq $2,62547 ; a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
 lpe
 add $0,$2
-mov $1,$0
-sub $1,1
+sub $0,1

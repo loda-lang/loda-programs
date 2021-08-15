@@ -16,4 +16,3 @@ lpb $0
     cmp $3,0
   lpe
 lpe
-mov $1,$0

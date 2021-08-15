@@ -6,3 +6,4 @@ seq $0,96346 ; Complement of A004128.
 sub $2,$0
 sub $1,$2
 div $1,3
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,51903 ; Maximal exponent in prime factorization of n.
-mov $1,$0

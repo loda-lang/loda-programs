@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,186539 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186540.
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

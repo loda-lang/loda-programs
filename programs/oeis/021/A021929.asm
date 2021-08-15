@@ -5,7 +5,6 @@ lpb $0
   pow $0,4
   sub $0,1
 lpe
-mov $1,$0
-add $1,$0
-mod $1,3
-pow $1,3
+mul $0,2
+mod $0,3
+pow $0,3

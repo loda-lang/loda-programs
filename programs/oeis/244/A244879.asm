@@ -6,7 +6,6 @@ add $0,3
 pow $0,2
 seq $0,83364 ; Antidiagonal sums of table A083362.
 mul $0,2
-mov $1,$0
-sub $1,879
-div $1,960
-add $1,1
+sub $0,970
+div $0,960
+add $0,1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,65359 ; Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
   add $1,$2
 lpe
+mov $0,$1

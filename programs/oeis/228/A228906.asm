@@ -11,3 +11,4 @@ lpb $3
   seq $0,135861 ; a(n) = binomial(n*(n+1),n)/(n+1).
   add $1,$0
 lpe
+mov $0,$1

@@ -3,6 +3,5 @@
 
 seq $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 seq $0,154890 ; Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
-mov $1,$0
-sub $1,4
-div $1,2
+sub $0,4
+div $0,2

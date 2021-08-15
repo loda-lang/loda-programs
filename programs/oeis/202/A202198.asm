@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,27810 ; a(n) = (n+1)*binomial(n+5, 5).
-mov $1,$0
-mul $1,12
+mul $0,12

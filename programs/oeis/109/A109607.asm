@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,46151 ; a(n) = n*phi(n) - 1.
-mov $1,$0
-div $1,2
+div $0,2

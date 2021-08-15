@@ -4,4 +4,3 @@
 add $0,1
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
 div $0,3
-mov $1,$0

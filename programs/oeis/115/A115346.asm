@@ -7,5 +7,4 @@ lpb $0
 lpe
 add $0,1
 seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
-mov $1,$0
-sub $1,8
+sub $0,8

@@ -5,5 +5,4 @@ mov $2,$0
 add $0,1
 seq $0,20712 ; Pisot sequences E(5,8), P(5,8).
 sub $0,$2
-mov $1,$0
-sub $1,5
+sub $0,5

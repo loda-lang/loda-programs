@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,269641 ; Number of length-4 0..n arrays with no repeated value differing from the previous repeated value by other than plus two or minus 1.
 sub $0,$2
-mov $1,$0
-add $1,1
+add $0,1

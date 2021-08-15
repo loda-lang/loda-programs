@@ -3,6 +3,6 @@
 
 mod $0,6
 mov $1,$0
-div $1,2
-pow $1,$0
-mod $1,4
+div $0,2
+pow $0,$1
+mod $0,4

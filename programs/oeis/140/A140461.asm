@@ -4,12 +4,12 @@
 add $0,2
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
 mov $1,$0
-add $0,2
-sub $1,4
-mul $1,2
-add $1,5
-lpb $1
-  sub $1,$0
-  mul $1,32
-  add $1,1
+sub $0,4
+mul $0,2
+add $0,5
+add $1,2
+lpb $0
+  sub $0,$1
+  mul $0,32
+  add $0,1
 lpe

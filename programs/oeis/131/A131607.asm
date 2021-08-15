@@ -3,5 +3,4 @@
 
 add $0,4
 seq $0,131037 ; Sequence A001333 with last digits set to zero.
-mov $1,$0
-div $1,10
+div $0,10

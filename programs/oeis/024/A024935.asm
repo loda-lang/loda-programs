@@ -3,4 +3,3 @@
 
 add $0,2
 seq $0,72491 ; Define f(1) = 0. For n>=2, let f(n) = n - p where p is the largest prime <= n. a(n) = number of iterations of f to reach 0, starting from n.
-mov $1,$0

@@ -2,6 +2,6 @@
 ; 1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2
 
 mov $1,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $1,1
-div $1,$0
+add $0,1
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+div $0,$1

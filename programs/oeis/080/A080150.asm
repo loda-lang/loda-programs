@@ -3,4 +3,3 @@
 
 seq $0,80151 ; Let m = Wonderful Demlo number A002477(n); a(n) = sum of digits of m.
 pow $0,2
-mov $1,$0

@@ -5,4 +5,3 @@ seq $0,177228 ; A combinatorial differential triangle sequence:q=3;t=1/q;f(t,n)=
 lpb $0
   mov $0,2
 lpe
-mov $1,$0

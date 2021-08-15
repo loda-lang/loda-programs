@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,4643 ; Powers of 2 written in base 4.
-mov $1,$0
-div $1,2
+div $0,2

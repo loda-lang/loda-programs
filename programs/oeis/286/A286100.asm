@@ -9,3 +9,4 @@ lpe
 clr $2,$0
 mov $1,$2
 div $1,4
+mov $0,$1

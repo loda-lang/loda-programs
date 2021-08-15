@@ -6,4 +6,3 @@ lpb $0
   dif $0,4
   mul $0,2
 lpe
-mov $1,$0

@@ -30,3 +30,4 @@ lpb $7
   add $1,$6
 lpe
 add $1,$4
+mov $0,$1

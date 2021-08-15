@@ -5,6 +5,5 @@ add $0,2
 pow $0,2
 mul $0,2
 trn $0,9
-mov $1,$0
-mul $1,10
-add $1,10
+mul $0,10
+add $0,10

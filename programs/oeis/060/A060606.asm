@@ -7,3 +7,4 @@ lpb $0
   seq $2,3434 ; Number of iterations of phi(x) at n needed to reach 1.
   add $1,$2
 lpe
+mov $0,$1

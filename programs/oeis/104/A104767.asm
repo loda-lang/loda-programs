@@ -8,3 +8,4 @@ lpb $0
   seq $1,77943 ; Expansion of 1/(1-2*x+2*x^2-2*x^3).
 lpe
 div $1,4
+mov $0,$1

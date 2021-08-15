@@ -5,3 +5,4 @@ add $0,1
 seq $0,52954 ; Expansion of (2-x-x^2-x^3)/((1-x)*(1-x^2-x^3)).
 add $1,$0
 div $1,2
+mov $0,$1

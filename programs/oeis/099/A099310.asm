@@ -3,4 +3,3 @@
 
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-mov $1,$0

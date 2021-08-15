@@ -5,4 +5,3 @@ add $0,1
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 sub $0,1
 seq $0,40 ; The prime numbers.
-mov $1,$0

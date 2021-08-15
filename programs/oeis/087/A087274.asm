@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 mul $0,3
 seq $0,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
-mov $1,$0

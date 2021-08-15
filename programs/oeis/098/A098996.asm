@@ -3,6 +3,5 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,2492 ; Sum of the first n even squares: 2*n*(n+1)*(2*n+1)/3.
-mov $1,$0
-div $1,4
-mul $1,6
+div $0,4
+mul $0,6

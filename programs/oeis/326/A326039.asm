@@ -6,4 +6,3 @@ seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
 seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
 add $0,1
 pow $0,2
-mov $1,$0

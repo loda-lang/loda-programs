@@ -5,5 +5,4 @@ add $0,16
 mov $2,$0
 seq $0,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
 add $0,$2
-mov $1,$0
-sub $1,21
+sub $0,21

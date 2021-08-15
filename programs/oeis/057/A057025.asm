@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,50921 ; Smallest prime of form n*2^m+1, m >= 0, or 0 if no prime exists.
-mov $1,$0

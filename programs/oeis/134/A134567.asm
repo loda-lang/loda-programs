@@ -9,3 +9,4 @@ lpb $0
   seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
   mov $0,$2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,82630 ; Limit of the sequence obtained from S(0) = (1,1) and, for n > 0, S(n) = I(S(n-1)), where I consists of inserting, for i = 1, 2, 3..., the term a(i) + a(i+1) between any two terms for which 7*a(i+1) <= 11*a(i).
 dif $0,2
-mov $1,$0

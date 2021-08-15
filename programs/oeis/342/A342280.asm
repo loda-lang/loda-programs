@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,187393 ; a(n) = floor(r*n), where r = 4 + sqrt(8); complement of A187394.
 div $0,2
-mov $1,$0

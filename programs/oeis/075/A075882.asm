@@ -3,4 +3,3 @@
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

@@ -4,6 +4,5 @@
 mov $2,$0
 seq $0,247840 ; Sum(6^k, k=2..n).
 sub $0,$2
-mov $1,$0
-div $1,5
-add $1,1
+div $0,5
+add $0,1

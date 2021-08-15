@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 cmp $2,0
 sub $0,$2
-mov $1,$0

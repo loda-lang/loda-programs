@@ -3,5 +3,4 @@
 
 seq $0,80565 ; Binary expansion of n has form 11**...*1.
 seq $0,161511 ; Number of 1...0 pairs in the binary representation of 2n.
-mov $1,$0
-sub $1,1
+sub $0,1

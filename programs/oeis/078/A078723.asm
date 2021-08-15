@@ -5,4 +5,3 @@ add $0,3
 bin $0,2
 sub $0,2
 seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0

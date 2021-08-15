@@ -5,3 +5,4 @@ seq $0,52553 ; Square array of binomial coefficients T(n,k) = binomial(n,k), n >
 add $0,2
 add $1,$0
 cmp $1,2
+mov $0,$1

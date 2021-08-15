@@ -7,3 +7,4 @@ lpb $0
   seq $2,176040 ; Periodic sequence: Repeat 3, 1.
   add $1,$2
 lpe
+mov $0,$1

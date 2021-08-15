@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,14144 ; Apply partial sum operator twice to factorials.
-mov $1,$0
-div $1,2
+div $0,2

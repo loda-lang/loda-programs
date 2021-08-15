@@ -6,4 +6,3 @@ seq $0,8615 ; a(n) = floor(n/2) - floor(n/3).
 add $0,1
 pow $0,2
 div $0,4
-mov $1,$0

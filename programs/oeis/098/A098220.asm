@@ -5,4 +5,3 @@ seq $0,40 ; The prime numbers.
 mov $2,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 div $0,$2
-mov $1,$0

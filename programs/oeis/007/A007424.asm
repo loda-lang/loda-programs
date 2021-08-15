@@ -3,4 +3,3 @@
 
 seq $0,8833 ; Largest square dividing n.
 min $0,2
-mov $1,$0

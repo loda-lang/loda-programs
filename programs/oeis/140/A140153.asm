@@ -18,3 +18,4 @@ lpb $3
   pow $0,$5
   add $1,$0
 lpe
+mov $0,$1

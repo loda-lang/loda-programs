@@ -10,3 +10,4 @@ lpb $1
   mov $1,$2
 lpe
 trn $1,$0
+mov $0,$1

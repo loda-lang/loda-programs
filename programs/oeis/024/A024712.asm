@@ -5,5 +5,4 @@ seq $0,215848 ; Primes > 3.
 pow $0,2
 div $0,2
 mod $0,9
-mov $1,$0
-div $1,3
+div $0,3

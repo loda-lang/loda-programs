@@ -8,3 +8,4 @@ seq $1,155110 ; a(n) = 8*Fibonacci(2n+1).
 div $1,256
 mul $1,40
 add $1,1
+mov $0,$1

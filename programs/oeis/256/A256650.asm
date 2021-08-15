@@ -7,3 +7,4 @@ lpb $0
   seq $2,254474 ; 30-gonal numbers: a(n) = n*(14*n-13).
   add $1,$2
 lpe
+mov $0,$1

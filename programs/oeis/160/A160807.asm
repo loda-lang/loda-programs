@@ -8,3 +8,4 @@ lpb $0
   seq $2,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
   add $1,$2
 lpe
+mov $0,$1

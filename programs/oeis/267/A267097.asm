@@ -4,5 +4,4 @@
 seq $0,175216 ; The first nonprimes after the primes.
 sub $0,2
 seq $0,331134 ; a(n) = Sum_{primes p <= n} r_2(p)/4, where r_2(n) = A004018(n).
-mov $1,$0
-div $1,2
+div $0,2

@@ -3,7 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 mul $0,2
-seq $0,230980 ; Number of primes <= n, starting at n=0.
-mul $0,2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
+seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).

@@ -5,3 +5,4 @@ seq $0,40583 ; Continued fraction for sqrt(608).
 mov $1,2
 max $1,$0
 div $1,2
+mov $0,$1

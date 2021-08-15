@@ -4,10 +4,11 @@
 
 mov $3,1 ; Scale factor for first digit
 lpb $0
-    mov $2,$0
-    mod $2,3   ; Extract the lowest trit
-    mul $2,$3  ; Convert from ternary to 10
-    add $1,$2  ; Insert into result
-    div $0,3   ; Remove the lowest trit
-    mul $3,10  ; Scale factor for next digit
+  mov $2,$0
+  mod $2,3 ; Extract the lowest trit
+  mul $2,$3 ; Convert from ternary to 10
+  add $1,$2 ; Insert into result
+  div $0,3 ; Remove the lowest trit
+  mul $3,10 ; Scale factor for next digit
 lpe
+mov $0,$1

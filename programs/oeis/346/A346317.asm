@@ -6,7 +6,7 @@ pow $2,$0
 sub $2,$0
 add $0,$2
 mov $1,$0
-seq $0,234373 ; Row 4 of the square array A234951.
-mul $1,2
-mul $1,$0
-div $1,8
+mul $0,2
+seq $1,234373 ; Row 4 of the square array A234951.
+mul $0,$1
+div $0,8

@@ -20,8 +20,8 @@ lpb $0
 lpe
 div $0,3
 mov $1,$0
-sub $0,1
-gcd $0,2
-add $1,2
-pow $1,$0
-div $1,$0
+add $0,2
+sub $1,1
+gcd $1,2
+pow $0,$1
+div $0,$1

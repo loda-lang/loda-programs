@@ -10,3 +10,4 @@ lpb $0
   add $1,1
 lpe
 bin $1,$0
+mov $0,$1

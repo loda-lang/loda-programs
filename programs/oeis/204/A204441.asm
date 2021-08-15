@@ -11,3 +11,4 @@ lpe
 bin $1,3
 add $1,1
 mod $1,2
+mov $0,$1

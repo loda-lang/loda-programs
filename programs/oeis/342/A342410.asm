@@ -5,4 +5,3 @@ lpb $0
   trn $0,1
   seq $0,64405 ; Number of even entries (A048967) minus the number of odd entries (A001316) in row n of Pascal's triangle (A007318).
 lpe
-mov $1,$0

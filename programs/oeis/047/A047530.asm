@@ -3,10 +3,10 @@
 
 add $0,2
 mov $1,$0
+mul $1,11
+mod $1,4
+trn $1,1
 mov $2,$0
-mul $0,11
-mod $0,4
-trn $0,1
-add $1,$0
-add $1,$2
-sub $1,5
+add $0,$1
+add $0,$2
+sub $0,5

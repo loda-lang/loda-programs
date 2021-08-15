@@ -7,3 +7,4 @@ seq $0,46933 ; Number of composites between successive primes.
 add $1,$0
 div $1,2
 add $1,1
+mov $0,$1

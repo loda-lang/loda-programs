@@ -5,5 +5,4 @@ add $0,1
 seq $0,56570 ; Third power of Fibonacci numbers (A000045).
 add $0,6
 div $0,4
-mov $1,$0
-sub $1,1
+sub $0,1

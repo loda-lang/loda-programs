@@ -3,5 +3,4 @@
 
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-mov $1,$0
-sub $1,1
+sub $0,1

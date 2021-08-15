@@ -5,9 +5,8 @@ mul $0,2
 add $0,1
 pow $0,2
 mul $0,3
-mov $1,$0
-add $1,2
-pow $1,2
-div $1,48
-mul $1,2
-add $1,1
+add $0,2
+pow $0,2
+div $0,48
+mul $0,2
+add $0,1

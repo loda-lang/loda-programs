@@ -3,4 +3,3 @@
 
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-add $1,$0

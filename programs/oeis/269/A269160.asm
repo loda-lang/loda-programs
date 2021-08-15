@@ -4,23 +4,21 @@
 
 mov $5,$0
 mul $5,2
-cal $5,163617
+seq $5,163617
 ; Now $5 holds (2n OR 4n).
-
-mov $4,1  ; Inital scale factor
+mov $4,1 ; Inital scale factor
 ; Loop using $5 (2n OR 4n), which is always higher than $0 (n).
 lpb $5
-    ; Do xor with the lowest bit
-    mov $3,$0
-    add $3,$5
-    mod $3,2 
-    ; Now $3 holds the bitwise xor with $0 and $5
-
-    ; Scale up the bit, and add to result
-    mul $3,$4
-    add $1,$3
-    
-    div $0,2 ; Remove the lowest bit from n
-    div $5,2 ; Remove the lowest bit from (2n OR 4n).
-    mul $4,2 ; Double the scale factor. Example: 1,2,4,8,16,32
+  ; Do xor with the lowest bit
+  mov $3,$0
+  add $3,$5
+  mod $3,2
+  ; Now $3 holds the bitwise xor with $0 and $5
+  ; Scale up the bit, and add to result
+  mul $3,$4
+  add $1,$3
+  div $0,2 ; Remove the lowest bit from n
+  div $5,2 ; Remove the lowest bit from (2n OR 4n).
+  mul $4,2 ; Double the scale factor. Example: 1,2,4,8,16,32
 lpe
+mov $0,$1

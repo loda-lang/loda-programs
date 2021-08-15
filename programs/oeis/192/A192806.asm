@@ -4,5 +4,4 @@
 mul $0,3
 trn $0,3
 seq $0,89068 ; a(n) = a(n-1)+a(n-2)+a(n-3)+2 with a(0)=0, a(1)=0 and a(2)=1.
-mov $1,$0
-add $1,1
+add $0,1

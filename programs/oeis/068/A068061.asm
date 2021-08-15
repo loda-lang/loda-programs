@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,56525 ; Palindromes with odd number of digits.
-mov $1,$0

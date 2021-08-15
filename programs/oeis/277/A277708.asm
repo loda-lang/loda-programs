@@ -4,4 +4,3 @@
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 sub $0,1
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-mov $1,$0

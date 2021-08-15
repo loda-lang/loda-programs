@@ -3,8 +3,8 @@
 
 add $0,2
 mov $1,$0
-seq $0,230980 ; Number of primes <= n, starting at n=0.
-div $1,$0
-mul $1,2
-sub $1,2
-div $1,2
+seq $1,230980 ; Number of primes <= n, starting at n=0.
+div $0,$1
+mul $0,2
+sub $0,2
+div $0,2

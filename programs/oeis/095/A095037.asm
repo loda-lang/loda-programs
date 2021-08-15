@@ -1,19 +1,46 @@
 ; A095037: The (v,k,lambda)=(23,11,5) cyclic difference set.
 ; 1,2,3,4,6,8,9,12,13,16,18
 
-mov $2,$0
-add $2,1
-mov $4,$0
-lpb $2
-  mov $0,$4
-  sub $2,1
-  sub $0,$2
-  bin $0,2
-  seq $0,177277 ; Partial sums of round(n^2/28).
-  trn $0,2
-  seq $0,279321 ; Period 7: repeat [1, 3, 5, 7, 5, 3, 1].
-  mov $3,$0
-  div $3,2
-  add $3,1
-  add $1,$3
+mov $3,$0
+add $3,1
+mov $7,$0
+lpb $3
+  mov $0,$7
+  sub $3,1
+  sub $0,$3
+  mov $9,2
+  mov $10,0
+  mov $11,$0
+  lpb $9
+    mov $0,$11
+    mov $4,0
+    sub $9,1
+    add $0,$9
+    sub $0,1
+    mul $0,2
+    sub $0,2
+    lpb $0
+      add $2,$0
+      sub $0,1
+      trn $0,4
+      add $2,1
+      add $4,$2
+      mov $2,11
+    lpe
+    mov $5,$2
+    cmp $5,0
+    add $2,$5
+    div $4,$2
+    mov $0,$4
+    mov $8,$9
+    mul $8,$4
+    add $10,$8
+  lpe
+  min $11,1
+  mul $11,$0
+  mov $0,$10
+  sub $0,$11
+  add $0,1
+  add $6,$0
 lpe
+mov $0,$6

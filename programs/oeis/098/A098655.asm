@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,98657 ; Expansion of (1-x-4x^2)/((1-2x)(1-8x^2)).
-mov $1,$0
-div $1,2
+div $0,2

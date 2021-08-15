@@ -3,4 +3,3 @@
 
 seq $0,176095 ; a(n) = n - phi(2*n), where phi() is the Euler totient A000010().
 div $0,2
-mov $1,$0

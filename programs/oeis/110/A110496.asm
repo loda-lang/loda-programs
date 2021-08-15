@@ -4,5 +4,4 @@
 seq $0,153481 ; a(n) = prime(n)^3 - 2.
 sub $0,1
 dif $0,2
-mov $1,$0
-add $1,2
+add $0,2

@@ -5,21 +5,21 @@ add $0,1
 mov $1,$0
 mov $3,$0
 lpb $3
-  mov $5,$1
+  mov $5,$0
   lpb $5
     mov $4,$2
     cmp $4,0
     add $2,$4
-    mov $6,$0
-    div $0,$2
+    mov $6,$1
+    div $1,$2
     mod $6,$2
     cmp $6,0
     sub $5,$6
   lpe
   add $2,1
-  mov $6,$0
+  mov $6,$1
   cmp $6,1
   cmp $6,0
   sub $3,$6
 lpe
-bin $1,$2
+bin $0,$2

@@ -6,5 +6,4 @@ seq $0,152113 ; A001333 with terms repeated.
 add $0,1
 mul $0,2
 sub $0,1
-mov $1,$0
-div $1,2
+div $0,2

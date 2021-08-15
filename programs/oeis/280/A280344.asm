@@ -7,5 +7,4 @@ lpb $0
   bin $0,2
 lpe
 bin $0,2
-mov $1,$0
-mul $1,2
+mul $0,2

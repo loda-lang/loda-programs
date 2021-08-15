@@ -9,5 +9,4 @@ mul $2,8
 sub $2,2
 trn $2,1
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

@@ -4,7 +4,6 @@
 mul $0,2
 add $0,2
 seq $0,316708 ; Bisection of the odd-indexed Pell numbers A001653: part 1.
-mov $1,$0
-sub $1,985
-div $1,3
-add $1,328
+sub $0,985
+div $0,3
+add $0,328

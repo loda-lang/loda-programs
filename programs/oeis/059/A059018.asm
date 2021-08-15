@@ -9,3 +9,4 @@ lpe
 lpb $1
   mod $1,4
 lpe
+mov $0,$1

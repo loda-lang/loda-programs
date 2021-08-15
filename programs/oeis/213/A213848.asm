@@ -14,3 +14,4 @@ lpe
 sub $1,12
 div $1,4
 add $1,3
+mov $0,$1

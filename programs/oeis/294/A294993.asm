@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,7520 ; Primes == 3 (mod 8).
-mov $1,$0

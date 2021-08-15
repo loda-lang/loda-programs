@@ -3,4 +3,3 @@
 
 seq $0,3991 ; Multiplication table read by antidiagonals: T(i,j) = i*j, i>=1, j>=1.
 seq $0,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
-mov $1,$0

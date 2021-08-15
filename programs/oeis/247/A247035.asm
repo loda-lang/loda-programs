@@ -3,5 +3,4 @@
 
 seq $0,2878 ; Bisection of Lucas sequence: a(n) = L(2*n+1).
 seq $0,129527 ; a(2n) = a(n) + 2n, a(2n+1) = 2n + 1.
-mov $1,$0
-mul $1,2
+mul $0,2

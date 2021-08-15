@@ -12,3 +12,4 @@ lpb $3
   seq $0,8734 ; Molien series for 3-dimensional group [2+,n ] = 2*(n/2).
   add $1,$0
 lpe
+mov $0,$1

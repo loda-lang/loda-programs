@@ -12,3 +12,4 @@ lpb $2
   seq $0,180672 ; a(n) = Fibonacci(n+7) - Fibonacci(7).
   add $1,$0
 lpe
+mov $0,$1

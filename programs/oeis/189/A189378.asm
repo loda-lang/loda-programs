@@ -6,4 +6,3 @@ add $0,1
 seq $0,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
 add $0,1
 div $0,2
-mov $1,$0

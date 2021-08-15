@@ -4,4 +4,3 @@
 seq $0,62402 ; a(n) = sigma(phi(n)).
 sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

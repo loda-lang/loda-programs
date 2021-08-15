@@ -3,4 +3,3 @@
 
 seq $0,166260 ; a(n) = A089026(n) - 1.
 seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0

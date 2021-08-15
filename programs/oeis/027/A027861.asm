@@ -3,4 +3,3 @@
 
 seq $0,129307 ; Intersection of A000217 and A005098.
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
-mov $1,$0

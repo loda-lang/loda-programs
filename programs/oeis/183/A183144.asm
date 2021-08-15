@@ -7,3 +7,4 @@ lpb $0
   seq $2,183142 ; Beatty sequence for 2/(3+sqrt(3)).
   add $1,$2
 lpe
+mov $0,$1

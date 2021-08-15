@@ -8,3 +8,4 @@ bin $1,$0
 lpb $1
   dif $1,2
 lpe
+mov $0,$1

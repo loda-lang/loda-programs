@@ -4,6 +4,5 @@
 mul $0,6
 mod $0,9
 mod $0,4
-mov $1,$0
-mul $1,9
-add $1,19
+mul $0,9
+add $0,19

@@ -4,3 +4,4 @@
 seq $0,14138 ; Partial sums of (Catalan numbers starting 1, 2, 5, ...).
 sub $1,$0
 add $1,1
+mov $0,$1

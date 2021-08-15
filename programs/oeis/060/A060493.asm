@@ -3,13 +3,12 @@
 
 mul $0,2
 add $0,1
-mov $1,$0
 mov $2,$0
+mul $0,5
+add $0,4
 add $2,5
-mov $0,$2
-bin $0,5
-mul $1,5
-add $1,4
-mul $1,$0
-sub $1,$0
-div $1,48
+mov $1,$2
+bin $1,5
+mul $0,$1
+sub $0,$1
+div $0,48

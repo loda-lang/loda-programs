@@ -3,4 +3,3 @@
 
 add $0,4
 seq $0,8763 ; Expansion of g.f.: x^4/((1-x)*(1-x^2)^2*(1-x^3)).
-mov $1,$0

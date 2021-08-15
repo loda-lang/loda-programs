@@ -6,3 +6,4 @@ seq $0,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
 mul $0,8
 add $1,$0
 div $1,6
+mov $0,$1

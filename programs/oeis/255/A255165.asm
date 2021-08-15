@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,342871 ; a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.
 add $1,$0
 sub $1,1
+mov $0,$1

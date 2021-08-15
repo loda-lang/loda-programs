@@ -4,6 +4,5 @@
 add $0,87505
 seq $0,7091 ; Numbers in base 5.
 seq $0,16825 ; Positive integers congruent to 2 mod 4: a(n) = 4*n+2, for n >= 0.
-mov $1,$0
-div $1,2
-sub $1,20600000
+div $0,2
+sub $0,20600000

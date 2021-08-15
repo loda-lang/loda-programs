@@ -8,5 +8,4 @@ sub $2,1
 trn $2,$3
 sub $0,$2
 seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-mov $1,$0
-mul $1,2
+mul $0,2

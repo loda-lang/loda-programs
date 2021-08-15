@@ -8,3 +8,4 @@ lpb $0
   cmp $1,$0
   trn $0,9
 lpe
+mov $0,$1

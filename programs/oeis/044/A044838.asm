@@ -29,3 +29,4 @@ lpb $2
   add $3,13
   add $1,$3
 lpe
+mov $0,$1

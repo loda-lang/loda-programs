@@ -9,3 +9,4 @@ lpb $0
   seq $2,77847 ; Expansion of (1-x)^(-1)/(1-2*x-2*x^2+2*x^3).
   add $1,$2
 lpe
+mov $0,$1

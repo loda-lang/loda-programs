@@ -3,6 +3,6 @@
 
 add $0,1
 mov $1,$0
-seq $0,26597 ; Expansion of (1+x)/(1-x-4*x^2).
-mul $1,$0
-div $1,2
+seq $1,26597 ; Expansion of (1+x)/(1-x-4*x^2).
+mul $0,$1
+div $0,2

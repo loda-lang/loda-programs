@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
-mov $1,$0
-mul $1,2
+mul $0,2

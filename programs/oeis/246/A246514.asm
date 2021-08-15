@@ -7,7 +7,6 @@ mov $2,$0
 sub $2,1
 add $0,$2
 seq $0,62298 ; Number of nonprimes <= n.
-mov $1,$0
-sub $1,$2
-sub $1,1
-add $1,$3
+sub $0,$2
+sub $0,1
+add $0,$3

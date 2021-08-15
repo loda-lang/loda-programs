@@ -3,5 +3,4 @@
 
 seq $0,243502 ; Permutation of even numbers: a(n) = 2 * A064216(n).
 seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
-mov $1,$0
-sub $1,1
+sub $0,1

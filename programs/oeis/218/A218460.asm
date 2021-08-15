@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,171228 ; n^(p-n) where p is smallest prime > n.
-mov $1,$0

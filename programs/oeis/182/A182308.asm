@@ -10,3 +10,4 @@ lpb $2
 lpe
 div $1,8
 add $1,7
+mov $0,$1

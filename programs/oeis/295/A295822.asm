@@ -4,8 +4,7 @@
 seq $0,49637 ; Congruent to 2, 3, 6, 8, 10 or 12 mod 13, but not equal to 3.
 mul $0,2
 sub $0,4
-mov $1,$0
 mov $2,$0
 cmp $2,0
-add $1,$2
-mul $1,2
+add $0,$2
+mul $0,2

@@ -7,8 +7,7 @@ seq $0,93001 ; Least k such that Sum_{r=n+1..k} r is greater than or equal to th
 mul $0,2
 sub $0,1
 div $0,4
-mov $1,$0
-add $1,2
+add $0,2
 mov $2,$3
 mul $2,2
-add $1,$2
+add $0,$2

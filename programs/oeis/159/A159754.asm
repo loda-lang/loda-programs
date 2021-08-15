@@ -4,8 +4,7 @@
 mov $3,$0
 mod $0,2
 add $0,3
-mov $1,$0
-mul $1,$0
+pow $0,2
 mov $2,$3
 mul $2,25
-add $1,$2
+add $0,$2

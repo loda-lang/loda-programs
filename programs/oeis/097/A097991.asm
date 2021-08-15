@@ -4,4 +4,3 @@
 pow $0,2
 add $0,10
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

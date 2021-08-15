@@ -4,7 +4,6 @@
 seq $0,122367 ; Dimension of 3-variable non-commutative harmonics (twisted derivative). The dimension of the space of non-commutative polynomials in 3 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( xi w ) = w and d_{xi} ( xj w ) = 0 for i != j).
 add $0,1
 bin $0,2
-mov $1,$0
-div $1,2
-mul $1,20
-add $1,11
+div $0,2
+mul $0,20
+add $0,11

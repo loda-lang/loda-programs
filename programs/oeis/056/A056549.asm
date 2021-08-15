@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,60831 ; a(n) = Sum_{k=1..n} (number of odd divisors of k) (cf. A001227).
-mov $1,$0

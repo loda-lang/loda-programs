@@ -10,3 +10,4 @@ lpb $2
   seq $0,5069 ; Sum of odd primes dividing n.
   add $1,$0
 lpe
+mov $0,$1

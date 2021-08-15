@@ -23,6 +23,5 @@ div $0,$8
 add $0,$6
 add $0,1
 add $0,$4
-mov $1,$0
-sub $1,2
-add $1,$2
+sub $0,2
+add $0,$2

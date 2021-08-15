@@ -7,6 +7,5 @@ mov $2,$0
 sub $0,2
 pow $2,2
 mul $0,$2
-mov $1,$0
-div $1,9
-mul $1,16
+div $0,9
+mul $0,16

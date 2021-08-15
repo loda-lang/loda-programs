@@ -3,5 +3,4 @@
 
 seq $0,163063 ; Lucas(3n+2) = Fibonacci(3n+1) + Fibonacci(3n+3).
 div $0,2
-mov $1,$0
-add $1,1
+add $0,1

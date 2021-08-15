@@ -3,4 +3,3 @@
 
 seq $0,144065 ; Values of n such that the expression sqrt(4!*(n+1) + 1) yields an integer.
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $1,$0

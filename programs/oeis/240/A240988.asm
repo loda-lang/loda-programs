@@ -3,6 +3,5 @@
 
 seq $0,89279 ; a(n) = 2 + sum(k=1 to n) [(-1)^k A001511(k)].
 seq $0,335843 ; a(n) is the number of n-digit positive integers with exactly two distinct base 10 digits.
-mov $1,$0
-div $1,162
-add $1,1
+div $0,162
+add $0,1

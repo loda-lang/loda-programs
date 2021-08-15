@@ -5,4 +5,3 @@ mov $1,$0
 seq $0,40 ; The prime numbers.
 add $1,2
 mod $0,$1
-mov $1,$0

@@ -4,5 +4,4 @@
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
 seq $0,32924 ; Numbers whose ternary expansion contains no 0.
-mov $1,$0
-div $1,9
+div $0,9

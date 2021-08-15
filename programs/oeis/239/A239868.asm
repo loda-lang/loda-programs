@@ -7,3 +7,4 @@ lpb $0
   seq $2,54024 ; Sum of the divisors of n reduced modulo n.
   add $1,$2
 lpe
+mov $0,$1

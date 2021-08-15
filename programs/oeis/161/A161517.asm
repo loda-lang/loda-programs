@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,4125 ; Sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
-mov $1,$0

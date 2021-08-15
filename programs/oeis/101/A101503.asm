@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,108751 ; Numbers n such that 11*n - 911 is prime.
-mov $1,$0
-sub $1,92
+sub $0,92

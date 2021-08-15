@@ -6,4 +6,3 @@ add $2,1
 mov $0,$2
 seq $0,293407 ; Least integer k such that k/n^2 > (-1 + sqrt(5))/2 (the golden ratio).
 div $0,$2
-mov $1,$0

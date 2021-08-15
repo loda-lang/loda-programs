@@ -12,3 +12,4 @@ lpb $0
   div $0,10
 lpe
 sub $1,19
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,6094 ; Products of 2 successive primes.
 seq $0,53186 ; Square excess of n: difference between n and largest square <= n.
-mov $1,$0

@@ -3,5 +3,4 @@
 
 seq $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = ij (i>=0, j>=0).
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $1,$0
-add $1,1
+add $0,1

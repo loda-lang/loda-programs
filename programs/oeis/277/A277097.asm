@@ -4,3 +4,4 @@
 seq $0,7652 ; Final digit of prime(n).
 sub $1,$0
 add $1,5
+mov $0,$1

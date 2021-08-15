@@ -12,3 +12,4 @@ lpb $2
   seq $0,158943 ; INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
   add $1,$0
 lpe
+mov $0,$1

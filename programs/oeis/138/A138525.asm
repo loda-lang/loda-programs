@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,341900 ; Partial sums of A005165.
-mov $1,$0
-add $1,1
+add $0,1

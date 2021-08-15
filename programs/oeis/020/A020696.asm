@@ -3,4 +3,3 @@
 
 seq $0,229337 ; Sum of products of elements of nonempty subsets of divisors of n.
 add $0,1
-mov $1,$0

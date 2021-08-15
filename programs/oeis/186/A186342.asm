@@ -5,5 +5,4 @@ add $0,10
 seq $0,1954 ; Wythoff game.
 add $0,2
 div $0,2
-mov $1,$0
-sub $1,17
+sub $0,17

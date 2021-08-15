@@ -5,3 +5,4 @@ mul $0,5
 mov $1,928752
 min $1,$0
 seq $1,26810 ; Number of partitions of n in which the greatest part is 4.
+mov $0,$1

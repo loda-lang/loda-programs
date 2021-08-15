@@ -3,4 +3,3 @@
 
 seq $0,96 ; a(n) = n*(n+3)/2.
 seq $0,33677 ; Smallest divisor of n >= sqrt(n).
-mov $1,$0

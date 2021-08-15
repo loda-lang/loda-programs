@@ -29,3 +29,4 @@ lpb $5
     div $7,6
   lpe
 lpe
+mov $0,$1

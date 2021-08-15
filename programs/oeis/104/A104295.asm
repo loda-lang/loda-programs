@@ -3,4 +3,3 @@
 
 seq $0,67076 ; Numbers k such that 2*k + 3 is a prime.
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
-mov $1,$0

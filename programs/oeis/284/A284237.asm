@@ -5,3 +5,4 @@ seq $0,283709 ; Decimal representation of the x-axis, from the left edge to the 
 add $0,2
 add $1,$0
 div $1,3
+mov $0,$1

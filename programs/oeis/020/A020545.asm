@@ -9,3 +9,4 @@ lpe
 bin $1,3
 div $1,4
 mul $1,3
+mov $0,$1

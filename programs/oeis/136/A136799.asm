@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,156828 ; a(1) = 2. a(n) = the smallest prime >= a(n-1) + 4.
-mov $1,$0
-sub $1,1
+sub $0,1

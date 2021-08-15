@@ -3,7 +3,7 @@
 
 mul $0,5
 mov $1,$0
-pow $0,2
-sub $1,3
-mul $1,$0
-div $1,50
+sub $0,3
+pow $1,2
+mul $0,$1
+div $0,50

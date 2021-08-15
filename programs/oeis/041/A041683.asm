@@ -3,4 +3,3 @@
 
 seq $0,41161 ; Denominators of continued fraction convergents to sqrt(90).
 dif $0,2
-mov $1,$0

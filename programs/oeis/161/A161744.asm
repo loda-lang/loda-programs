@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
-mov $1,$0

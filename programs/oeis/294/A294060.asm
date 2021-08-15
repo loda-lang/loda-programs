@@ -8,3 +8,4 @@ lpb $0
   seq $2,262869 ; Number of squarefree numbers appearing among the smaller parts of the partitions of n into two parts.
   add $1,$2
 lpe
+mov $0,$1

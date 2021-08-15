@@ -9,5 +9,4 @@ sub $3,1
 pow $3,2
 add $0,$3
 div $0,6
-mov $1,$0
-add $1,$2
+add $0,$2

@@ -6,24 +6,21 @@ mov $1,1 ; numerator
 mov $2,1 ; denominator
 mov $3,$0 ; loop counter
 mul $3,5 ; magic number to ensure convergence
-
 lpb $3
   mul $2,$3 ; denominator *= loop counter
   add $1,$2 ; "+1" in Horner's method
-
   mov $5,$4 ; reduce the size of the numerator and denominator (heuristic)
   div $5,3
   max $5,1
   div $1,$5
   div $2,$5
-
   sub $3,1 ; decrement loop counter
   add $4,1
 lpe
-
 mov $6,10
 pow $6,$0
 div $2,$6 ; divide denominator by 10^n
 div $1,$2 ; execute fraction
 add $1,$6
 mod $1,10 ; last digit
+mov $0,$1

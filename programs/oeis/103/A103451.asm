@@ -7,5 +7,4 @@ lpb $0
   sub $2,1
 lpe
 bin $0,2
-mov $1,$0
-cmp $1,0
+cmp $0,0

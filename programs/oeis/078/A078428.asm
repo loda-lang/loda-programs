@@ -11,3 +11,4 @@ lpb $2
   seq $0,35187 ; Sum over divisors d of n of Kronecker symbol (5|d).
   add $1,$0
 lpe
+mov $0,$1

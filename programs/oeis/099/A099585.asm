@@ -5,4 +5,3 @@ seq $0,6093 ; a(n) = prime(n) - 1.
 lpb $0
   dif $0,3
 lpe
-mov $1,$0

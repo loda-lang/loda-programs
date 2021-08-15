@@ -8,3 +8,4 @@ lpb $0
   seq $2,65599 ; If n odd, a(n) = n^2 else a(n) = n.
   add $1,$2
 lpe
+mov $0,$1

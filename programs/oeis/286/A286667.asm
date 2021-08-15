@@ -4,5 +4,4 @@
 add $0,1
 seq $0,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 div $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

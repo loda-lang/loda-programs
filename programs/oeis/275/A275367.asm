@@ -5,4 +5,3 @@ add $0,1
 pow $0,2
 sub $0,1
 seq $0,1227 ; Number of odd divisors of n.
-mov $1,$0

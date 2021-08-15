@@ -2,8 +2,7 @@
 ; 1,3,5,9,13,17,21,27,33,41,47,55
 
 seq $0,34107 ; Fractional part of square root of a(n) starts with 1: first term of runs.
-mov $1,$0
-div $1,7
-sub $1,1
-mul $1,2
-add $1,1
+div $0,7
+sub $0,1
+mul $0,2
+add $0,1

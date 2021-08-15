@@ -7,3 +7,4 @@ lpb $0
   seq $2,206917 ; Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
   add $1,$2
 lpe
+mov $0,$1

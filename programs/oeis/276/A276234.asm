@@ -9,5 +9,5 @@ lpb $2
   sub $2,1
   mul $3,2
 lpe
-gcd $3,$0
-div $1,$3
+gcd $3,$1
+div $0,$3

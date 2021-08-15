@@ -5,24 +5,24 @@ mov $5,$0
 mul $0,2
 mov $1,$0
 mov $6,$0
-lpb $0
+lpb $1
+  add $0,3
   trn $2,5
-  add $3,$0
-  sub $0,2
-  add $1,3
+  add $3,$1
+  sub $1,2
   add $4,$3
   add $4,$6
-  add $1,$4
+  add $0,$4
   add $2,$4
-  add $1,$2
+  add $0,$2
   mov $2,4
   mov $3,0
   add $4,3
   add $6,1
 lpe
-add $1,5
+add $0,5
 lpb $5
-  add $1,2
+  add $0,2
   sub $5,1
 lpe
-sub $1,4
+sub $0,4

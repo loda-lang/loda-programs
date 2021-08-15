@@ -4,6 +4,5 @@
 mov $2,$0
 pow $0,7
 sub $0,$2
-mov $1,$0
-div $1,42
-mul $1,3
+div $0,42
+mul $0,3

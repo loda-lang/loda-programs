@@ -4,4 +4,3 @@
 seq $0,97133 ; 3*Fibonacci(n)+(-1)^n.
 mul $0,2
 div $0,3
-mov $1,$0

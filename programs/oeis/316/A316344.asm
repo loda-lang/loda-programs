@@ -6,4 +6,3 @@ lpb $0
   mul $0,13
 lpe
 seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-mov $1,$0

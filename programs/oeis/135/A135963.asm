@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
 bin $0,$2
-mov $1,$0

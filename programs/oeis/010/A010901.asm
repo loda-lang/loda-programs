@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
-mov $1,$0
-div $1,2
+div $0,2

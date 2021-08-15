@@ -35,3 +35,4 @@ lpb $7
   add $10,2
   add $1,$10
 lpe
+mov $0,$1

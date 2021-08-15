@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
 add $1,$0
 div $1,2
+mov $0,$1

@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,213393 ; Number of (w,x,y) with all terms in {0,...,n} and 2*max(w,x,y) > 3*min(w,x,y).
-mov $1,$0
-div $1,6
+div $0,6

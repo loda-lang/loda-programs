@@ -3,5 +3,4 @@
 
 add $0,272104
 seq $0,184484 ; Lower s-Wythoff sequence, where s(n)=3n-2.  Complement of A184485.
-mov $1,$0
-sub $1,354417
+sub $0,354417

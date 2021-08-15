@@ -7,3 +7,4 @@ lpb $0
   seq $2,189706 ; Fixed point of the morphism 0->011, 1->001.
   add $1,$2
 lpe
+mov $0,$1

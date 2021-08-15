@@ -4,4 +4,3 @@
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
 seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-mov $1,$0

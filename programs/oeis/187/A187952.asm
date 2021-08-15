@@ -4,8 +4,7 @@
 mov $3,$0
 div $0,2
 seq $0,339765 ; a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
-mov $1,$0
-add $1,2
+add $0,2
 mov $2,$3
 mul $2,2
-add $1,$2
+add $0,$2

@@ -11,10 +11,10 @@ mul $3,$0
 add $3,1
 sub $3,$0
 add $3,1
-add $1,$3
-mov $2,$1
-add $2,$1
+add $0,$3
+mov $2,$0
+add $2,$0
 add $2,2
-sub $2,$0
-add $1,$2
-div $1,2
+sub $2,$1
+add $0,$2
+div $0,2

@@ -3,4 +3,3 @@
 
 seq $0,284920 ; Numbers with digits 2 and 4 only.
 mul $0,2
-mov $1,$0

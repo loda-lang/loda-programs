@@ -3,6 +3,6 @@
 
 add $0,5
 mov $1,$0
-bin $1,5
-add $1,$0
-sub $1,4
+bin $0,5
+add $0,$1
+sub $0,4

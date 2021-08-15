@@ -7,4 +7,3 @@ add $0,$2
 sub $2,$0
 seq $0,211006 ; Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
 mod $0,$2
-mov $1,$0

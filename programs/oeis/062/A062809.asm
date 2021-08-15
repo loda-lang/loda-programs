@@ -6,3 +6,4 @@ add $0,1
 seq $0,3101 ; a(n) = Sum_{k = 1..n} (n - k + 1)^k.
 add $1,$0
 sub $1,1
+mov $0,$1

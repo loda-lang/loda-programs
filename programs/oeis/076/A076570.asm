@@ -3,4 +3,3 @@
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-mov $1,$0

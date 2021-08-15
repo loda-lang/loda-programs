@@ -3,10 +3,10 @@
 
 div $0,2
 mov $1,$0
-sub $1,3456
-mov $2,$0
-mov $0,4
-add $0,$2
-div $0,2
-mod $1,2
-pow $1,$0
+sub $0,3456
+mod $0,2
+mov $2,$1
+mov $1,4
+add $1,$2
+div $1,2
+pow $0,$1

@@ -6,5 +6,4 @@ seq $0,14217 ; a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden rati
 add $0,5
 cmp $2,0
 sub $0,$2
-mov $1,$0
-sub $1,4
+sub $0,4

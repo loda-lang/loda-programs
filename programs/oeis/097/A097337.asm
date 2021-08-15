@@ -3,12 +3,12 @@
 
 add $0,1
 mov $1,$0
-sub $1,$0
-pow $0,2
-div $0,3
-lpb $0
-  sub $0,1
-  add $1,2
-  trn $0,$1
+mov $0,0
+pow $1,2
+div $1,3
+lpb $1
+  add $0,2
+  sub $1,1
+  trn $1,$0
 lpe
-div $1,2
+div $0,2

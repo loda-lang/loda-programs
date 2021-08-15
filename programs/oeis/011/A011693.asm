@@ -11,3 +11,4 @@ lpb $3
   mod $3,10
 lpe
 div $1,9
+mov $0,$1

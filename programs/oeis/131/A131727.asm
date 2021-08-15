@@ -3,5 +3,4 @@
 
 add $0,4
 seq $0,131726 ; Pell numbers A000129 with 0 instead of last digit.
-mov $1,$0
-div $1,10
+div $0,10

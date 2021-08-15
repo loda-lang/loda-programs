@@ -3,4 +3,3 @@
 
 seq $0,2145 ; Primes of the form 4*k+3.
 seq $0,7089 ; Numbers in base 3.
-mov $1,$0

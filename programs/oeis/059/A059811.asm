@@ -23,3 +23,4 @@ lpb $0
   mov $1,$0
 lpe
 pow $1,2
+mov $0,$1

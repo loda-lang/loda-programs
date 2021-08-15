@@ -6,5 +6,4 @@ pow $0,2
 sub $0,4
 dif $0,4
 dif $0,4
-mov $1,$0
-mul $1,4
+mul $0,4

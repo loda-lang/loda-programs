@@ -7,3 +7,4 @@ lpb $0
   seq $2,36405 ; a(n) = ceiling(n^2/7).
   add $1,$2
 lpe
+mov $0,$1

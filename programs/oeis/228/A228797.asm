@@ -4,3 +4,4 @@
 seq $0,77921 ; Expansion of (1-x)^(-1)/(1+2*x-x^2).
 gcd $1,$0
 mul $1,2
+mov $0,$1

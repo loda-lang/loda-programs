@@ -10,3 +10,4 @@ lpb $2
   mul $1,$2
   sub $2,2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,3188 ; Decimal equivalent of Gray code for n.
 seq $0,38572 ; a(n) = n rotated one binary place to the right.
-mov $1,$0

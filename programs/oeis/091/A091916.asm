@@ -7,4 +7,3 @@ mul $2,2
 add $0,$2
 div $0,3
 seq $0,83658 ; a(n) = a(n-1) + a(n-2) + gcd(a(n-1),a(n-2)) for n>1, with a(0)=1, a(1)=1.
-mov $1,$0

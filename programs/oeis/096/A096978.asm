@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,110953 ; Starting a priori with the fraction 1/1, the denominators of fractions built according to the rule: add top and bottom to get the new bottom, add top and 9 times the bottom to get the new top.
 add $1,$0
 div $1,9
+mov $0,$1

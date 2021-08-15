@@ -22,3 +22,4 @@ lpb $2
   div $5,10
   add $1,$5
 lpe
+mov $0,$1

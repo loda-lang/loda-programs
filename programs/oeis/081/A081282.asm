@@ -7,5 +7,4 @@ add $0,$2
 seq $0,288963 ; Number of 5-cycles in the n X n rook graph.
 add $2,2
 div $0,$2
-mov $1,$0
-div $1,12
+div $0,12

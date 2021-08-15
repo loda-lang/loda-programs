@@ -34,3 +34,4 @@ lpb $8
   sub $10,3
   add $1,$10
 lpe
+mov $0,$1

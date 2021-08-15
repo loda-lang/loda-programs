@@ -7,3 +7,4 @@ lpb $0
   trn $0,8
 lpe
 div $1,12
+mov $0,$1

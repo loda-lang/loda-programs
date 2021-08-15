@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,173732 ; a(n) = (A016957(n)/2^A007814(A016957(n)) - 1)/2, with A016957(n) = 6*n+4 and A007814(n) the 2-adic valuation of n.
 sub $0,$2
-mov $1,$0

@@ -4,3 +4,4 @@
 seq $0,15910 ; a(n) = 2^n mod n.
 mov $1,2
 cmp $1,$0
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,309891 ; a(n) is the total number of trailing zeros in the representations of n over all bases b >= 2.
   add $1,$2
 lpe
+mov $0,$1

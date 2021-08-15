@@ -6,5 +6,4 @@ lpb $0
   seq $2,62378 ; n divided by largest cubefree factor of n.
   div $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

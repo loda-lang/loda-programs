@@ -3,4 +3,3 @@
 
 seq $0,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
 dif $0,2
-mov $1,$0

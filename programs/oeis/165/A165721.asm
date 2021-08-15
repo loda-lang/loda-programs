@@ -4,6 +4,5 @@
 add $0,3
 seq $0,269819 ; Numbers that are congruent to {5, 11, 13, 19} mod 24.
 pow $0,2
-mov $1,$0
-div $1,48
-sub $1,3
+div $0,48
+sub $0,3

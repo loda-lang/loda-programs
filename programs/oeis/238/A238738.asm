@@ -9,3 +9,4 @@ lpb $0
   add $1,$0
   trn $0,3
 lpe
+mov $0,$1

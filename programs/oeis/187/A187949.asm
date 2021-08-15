@@ -3,5 +3,4 @@
 
 seq $0,307295 ; If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
 seq $0,3259 ; Complement of A003258.
-mov $1,$0
-sub $1,4
+sub $0,4

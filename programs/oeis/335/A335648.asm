@@ -8,3 +8,4 @@ lpb $0
   seq $2,6010 ; Number of paraffins (see Losanitsch reference for precise definition).
   add $1,$2
 lpe
+mov $0,$1

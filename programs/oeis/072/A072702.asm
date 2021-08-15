@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,72682 ; Numbers congruent to {3, 36, 54, 57} mod 60.
-mov $1,$0
-sub $1,45
+sub $0,45

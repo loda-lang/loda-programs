@@ -3,6 +3,5 @@
 
 add $0,2
 seq $0,80039 ; a(n) = floor((1+sqrt(2))^n).
-mov $1,$0
-div $1,2
-sub $1,1
+div $0,2
+sub $0,1

@@ -6,3 +6,4 @@ pow $1,$0
 seq $0,210448 ; Total number of different letters summed over all ternary words of length n.
 sub $1,1
 sub $1,$0
+mov $0,$1

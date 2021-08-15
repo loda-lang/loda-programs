@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,73136 ; a(n) = prime(n) + prime(prime(n)).
-mov $1,$0
-div $1,2
+div $0,2

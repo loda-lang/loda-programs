@@ -3,9 +3,9 @@
 
 add $0,4
 mov $1,$0
-sub $0,1
-gcd $1,38
-pow $1,2
-mul $1,$0
-add $1,5
-mod $1,10
+gcd $0,38
+pow $0,2
+sub $1,1
+mul $0,$1
+add $0,5
+mod $0,10

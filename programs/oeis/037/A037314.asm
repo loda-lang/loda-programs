@@ -8,3 +8,4 @@ lpb $0
   seq $2,120437 ; Differences of A037314 (sum of base-3 digits of n = sum of base-9 digits of n).
   add $1,$2
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,218130 ; Number of length 6 primitive (=aperiodic or period 6) n-ary words.
-mov $1,$0
-div $1,6
+div $0,6

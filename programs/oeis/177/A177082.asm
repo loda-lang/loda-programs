@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,71148 ; Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
 add $2,1
 mul $0,$2
-mov $1,$0
-mul $1,2
+mul $0,2

@@ -3,4 +3,3 @@
 
 seq $0,2659 ; a(n) = 2*sigma(n) - 1.
 seq $0,593 ; Sum of odd divisors of n.
-mov $1,$0

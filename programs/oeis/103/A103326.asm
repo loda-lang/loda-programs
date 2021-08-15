@@ -3,7 +3,6 @@
 
 seq $0,127546 ; a(n) = F(n)^2 + F(n+1)^2 + F(n+2)^2, where F(n) denotes the n-th Fibonacci number.
 pow $0,2
-mov $1,$0
-div $1,32
-mul $1,50
-add $1,5
+div $0,32
+mul $0,50
+add $0,5

@@ -3,4 +3,3 @@
 
 seq $0,24905 ; Numbers k such that 7*k + 1 is prime.
 sub $0,1
-mov $1,$0

@@ -5,5 +5,4 @@ add $0,1
 mul $0,2
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0
-sub $1,1
+sub $0,1

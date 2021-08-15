@@ -4,4 +4,3 @@
 div $0,2
 trn $0,1
 seq $0,57627 ; Number of nonsquarefree numbers not exceeding n.
-mov $1,$0

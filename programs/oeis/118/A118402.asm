@@ -9,3 +9,4 @@ lpb $0
   gcd $0,2
 lpe
 add $1,1
+mov $0,$1

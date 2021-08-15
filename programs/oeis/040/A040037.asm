@@ -4,5 +4,4 @@
 seq $0,40329 ; Continued fraction for sqrt(348).
 div $0,3
 trn $0,1
-add $1,$0
-add $1,1
+add $0,1

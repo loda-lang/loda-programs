@@ -8,5 +8,4 @@ div $0,2
 add $2,1
 add $0,$2
 seq $0,189664 ; Fixed point of the morphism 0->010, 1->001.
-mov $1,$0
-add $1,1
+add $0,1

@@ -5,5 +5,4 @@ lpb $0
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpe
 trn $0,1
-mov $1,$0
-add $1,2
+add $0,2

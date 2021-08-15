@@ -6,16 +6,15 @@ mov $2,2
 add $2,$0
 add $2,$0
 add $2,4
-add $0,$2
+add $1,$2
 mov $3,1
-lpb $0
-  add $1,$3
-  add $1,$3
-  add $1,1
-  mov $3,$0
-  sub $0,1
-  trn $0,1
-  add $1,1
+lpb $1
+  add $0,$3
+  add $0,$3
+  add $0,2
+  mov $3,$1
+  sub $1,1
+  trn $1,1
   trn $3,4
 lpe
-sub $1,4
+sub $0,4

@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,185382 ; Sum_{j=1..n-1} P(n)-P(j), where P(j) = A065091(j) is the j-th odd prime.
-mov $1,$0
-div $1,2
+div $0,2

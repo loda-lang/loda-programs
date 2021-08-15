@@ -7,10 +7,10 @@ mul $0,2
 trn $0,1
 seq $0,45621 ; a(n) = 2^n - binomial(n, floor(n/2)).
 mov $1,$0
-add $1,1
-mov $2,$0
+add $0,1
+mov $2,$1
 lpb $3
-  add $1,$2
+  add $0,$2
   sub $3,1
 lpe
-sub $1,1
+sub $0,1

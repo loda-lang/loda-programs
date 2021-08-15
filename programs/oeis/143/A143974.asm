@@ -3,4 +3,3 @@
 
 seq $0,3991 ; Multiplication table read by antidiagonals: T(i,j) = i*j, i>=1, j>=1.
 div $0,3
-mov $1,$0

@@ -48,3 +48,4 @@ lpb $10
   mov $10,0
 lpe
 sub $1,1
+mov $0,$1

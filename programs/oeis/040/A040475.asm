@@ -4,4 +4,3 @@
 seq $0,10144 ; Continued fraction for sqrt(59).
 seq $0,198265 ; Ceiling(n*sqrt(10)).
 sub $0,1
-mov $1,$0

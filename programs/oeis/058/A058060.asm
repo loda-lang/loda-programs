@@ -4,4 +4,3 @@
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0

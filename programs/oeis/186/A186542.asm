@@ -13,5 +13,4 @@ sub $5,2
 add $5,$3
 mov $0,$5
 seq $0,278814 ; a(n) = ceiling(sqrt(3n+1)).
-mov $1,$0
-add $1,$4
+add $0,$4

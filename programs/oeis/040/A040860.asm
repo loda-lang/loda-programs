@@ -4,4 +4,3 @@
 seq $0,40693 ; Continued fraction for sqrt(720).
 mul $0,18
 div $0,16
-mov $1,$0

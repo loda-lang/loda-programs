@@ -9,5 +9,4 @@ mul $1,$0
 add $2,1
 add $2,$1
 mul $0,$2
-mov $1,$0
-add $1,1
+add $0,1

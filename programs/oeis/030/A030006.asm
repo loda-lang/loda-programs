@@ -4,5 +4,4 @@
 seq $0,215848 ; Primes > 3.
 sub $0,3
 pow $0,2
-mov $1,$0
-div $1,12
+div $0,12

@@ -7,3 +7,4 @@ lpb $0
   mul $0,2
   seq $1,230980 ; Number of primes <= n, starting at n=0.
 lpe
+mov $0,$1

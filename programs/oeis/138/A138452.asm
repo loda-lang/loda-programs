@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 pow $0,3
 bin $0,2
-mov $1,$0

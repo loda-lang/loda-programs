@@ -3,4 +3,3 @@
 
 seq $0,225975 ; Square root of A226008(n).
 pow $0,2
-mov $1,$0

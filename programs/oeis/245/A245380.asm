@@ -8,3 +8,4 @@ lpb $0
   seq $2,8384 ; Crystal ball sequence for A_4 lattice.
   add $1,$2
 lpe
+mov $0,$1

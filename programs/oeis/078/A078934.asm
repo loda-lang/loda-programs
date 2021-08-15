@@ -3,4 +3,3 @@
 
 seq $0,96 ; a(n) = n*(n+3)/2.
 seq $0,63655 ; Smallest semiperimeter of integral rectangle with area n.
-mov $1,$0

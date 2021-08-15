@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,81188 ; 6th binomial transform of (1,0,1,0,1,.....), A059841.
 sub $0,$2
-mov $1,$0
-mul $1,2
+mul $0,2

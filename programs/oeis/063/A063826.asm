@@ -3,5 +3,4 @@
 
 seq $0,55086 ; n appears 1+[n/2] times.
 mod $0,4
-mov $1,$0
-add $1,1
+add $0,1

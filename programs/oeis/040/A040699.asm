@@ -3,8 +3,8 @@
 
 seq $0,40867 ; Continued fraction for sqrt(897).
 mov $1,$0
-sub $1,1
-add $2,$0
+sub $0,1
+add $2,$1
 div $2,9
-sub $1,$2
-add $1,1
+sub $0,$2
+add $0,1

@@ -4,9 +4,8 @@
 mov $3,$0
 mod $0,8
 trn $0,5
-mov $1,$0
-mod $1,2
-add $1,54
+mod $0,2
+add $0,54
 mov $2,$3
 mul $2,64
-add $1,$2
+add $0,$2

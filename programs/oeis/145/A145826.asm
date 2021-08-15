@@ -3,5 +3,4 @@
 
 seq $0,52147 ; a(n) = prime(n) + 2.
 seq $0,183866 ; n+floor(2*sqrt(n-1)); complement of A035106.
-mov $1,$0
-sub $1,2
+sub $0,2

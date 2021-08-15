@@ -4,5 +4,4 @@
 seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
 add $0,2
 bin $0,3
-mov $1,$0
-div $1,4
+div $0,4

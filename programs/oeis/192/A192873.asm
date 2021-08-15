@@ -3,8 +3,7 @@
 
 mov $2,$0
 seq $0,175395 ; a(n) = 2*Fibonacci(n)^2.
-mov $1,$0
-add $1,4
+add $0,4
 mod $2,2
-sub $1,$2
-sub $1,4
+sub $0,$2
+sub $0,4

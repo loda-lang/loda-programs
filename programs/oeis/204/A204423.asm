@@ -3,4 +3,3 @@
 
 seq $0,51162 ; Triangle T(n,k) = n+k, n >= 0, 0 <= k <= n.
 mod $0,3
-mov $1,$0

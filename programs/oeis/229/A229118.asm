@@ -4,4 +4,3 @@
 add $0,2
 bin $0,2
 seq $0,53188 ; Distance from n to nearest square.
-mov $1,$0

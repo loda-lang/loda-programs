@@ -8,3 +8,4 @@ mov $2,$0
 add $2,22
 mov $1,$2
 seq $1,93709 ; Characteristic function of squares or twice squares.
+mov $0,$1

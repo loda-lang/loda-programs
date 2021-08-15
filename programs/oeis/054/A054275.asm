@@ -8,3 +8,4 @@ lpb $0
   seq $1,131912 ; Row sums of triangle A131911.
 lpe
 add $1,1
+mov $0,$1

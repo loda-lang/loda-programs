@@ -5,3 +5,4 @@ lpb $0
   seq $0,219641 ; a(n) = n minus (number of 1's in Zeckendorf expansion of n).
   add $1,1
 lpe
+mov $0,$1

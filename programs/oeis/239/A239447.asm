@@ -7,3 +7,4 @@ lpb $0
   seq $2,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   add $1,$2
 lpe
+mov $0,$1

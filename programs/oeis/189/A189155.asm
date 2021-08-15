@@ -4,4 +4,3 @@
 add $0,2
 seq $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
 pow $0,3
-mov $1,$0

@@ -8,3 +8,4 @@ lpb $0
   seq $2,10873 ; a(n) = n mod 4.
   add $1,$2
 lpe
+mov $0,$1

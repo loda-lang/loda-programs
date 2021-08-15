@@ -8,3 +8,4 @@ lpb $0
   seq $2,253513 ; The characteristic function of the multiples of eight.
   add $1,$2
 lpe
+mov $0,$1

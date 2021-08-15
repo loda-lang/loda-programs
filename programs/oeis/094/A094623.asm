@@ -7,3 +7,4 @@ lpb $0
   seq $2,286507 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
   add $1,$2
 lpe
+mov $0,$1

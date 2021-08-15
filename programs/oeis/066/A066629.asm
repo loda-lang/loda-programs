@@ -7,4 +7,3 @@ seq $0,71 ; a(n) = Fibonacci(n) - 1.
 mod $1,2
 add $1,$0
 add $0,$1
-mov $1,$0

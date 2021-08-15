@@ -4,4 +4,3 @@
 add $0,1
 pow $0,2
 seq $0,7093 ; Numbers in base 7.
-mov $1,$0

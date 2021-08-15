@@ -8,3 +8,4 @@ lpb $0
   mul $1,$2
   mod $1,9
 lpe
+mov $0,$1

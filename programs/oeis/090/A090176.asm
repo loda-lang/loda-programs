@@ -5,5 +5,4 @@ seq $0,8647 ; Expansion of g.f.: (1+x^9)/((1-x^4)*(1-x^6)).
 mov $2,$0
 mul $2,$0
 add $0,$2
-mov $1,$0
-div $1,2
+div $0,2

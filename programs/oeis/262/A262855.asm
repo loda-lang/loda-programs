@@ -7,3 +7,4 @@ seq $1,75439 ; Triangle read by rows giving successive iterations of the Rule 10
 sub $1,$0
 add $1,2
 mod $1,2
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,4737 ; Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mov $1,$0

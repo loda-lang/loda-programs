@@ -8,3 +8,4 @@ lpb $0
   seq $1,217402 ; Numbers starting with 9.
 lpe
 mul $1,10
+mov $0,$1

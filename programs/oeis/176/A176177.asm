@@ -8,5 +8,4 @@ lpb $2
   mul $0,3
   sub $2,2
 lpe
-mov $1,$0
-div $1,3
+div $0,3

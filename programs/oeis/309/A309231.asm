@@ -3,8 +3,7 @@
 
 mov $3,$0
 seq $0,56832 ; All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
-mov $1,$0
-add $1,6
+add $0,6
 mov $2,$3
 mul $2,9
-add $1,$2
+add $0,$2

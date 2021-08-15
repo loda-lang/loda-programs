@@ -7,3 +7,4 @@ lpb $0
   seq $2,97448 ; If n is square, replace with sqrt(n).
   add $1,$2
 lpe
+mov $0,$1

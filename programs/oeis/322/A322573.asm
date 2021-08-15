@@ -4,4 +4,3 @@
 seq $0,52991 ; Expansion of (1-x-x^2)/(1-3x-x^2).
 add $0,1
 div $0,3
-mov $1,$0

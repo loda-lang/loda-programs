@@ -6,4 +6,3 @@ seq $0,4427 ; Arithmetic mean of digits of n (rounded up).
 mov $3,$2
 mul $3,10
 add $0,$3
-mov $1,$0

@@ -6,3 +6,4 @@ lpb $0
   trn $0,1
   seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 lpe
+mov $0,$1

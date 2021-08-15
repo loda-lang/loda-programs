@@ -3,7 +3,6 @@
 
 trn $0,1
 seq $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
-mov $1,$0
-pow $1,2
-div $1,5
-add $1,1
+pow $0,2
+div $0,5
+add $0,1

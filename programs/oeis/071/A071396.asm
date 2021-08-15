@@ -4,4 +4,3 @@
 pow $0,4
 mul $0,12
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $1,$0

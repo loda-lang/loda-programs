@@ -3,5 +3,4 @@
 
 seq $0,26352 ; a(n) = floor(n*tau)+n+1.
 seq $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
-mov $1,$0
-add $1,4
+add $0,4

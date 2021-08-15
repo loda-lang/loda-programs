@@ -4,5 +4,4 @@
 seq $0,162801 ; Bisection of A162800.
 sub $0,1
 trn $0,1
-mov $1,$0
-add $1,2
+add $0,2

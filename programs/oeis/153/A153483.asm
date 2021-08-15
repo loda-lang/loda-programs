@@ -3,5 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 pow $0,4
-mov $1,$0
-sub $1,32
+sub $0,32

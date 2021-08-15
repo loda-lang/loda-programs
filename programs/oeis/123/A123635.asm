@@ -3,4 +3,3 @@
 
 seq $0,24675 ; Average of two consecutive odd primes.
 mod $0,3
-mov $1,$0

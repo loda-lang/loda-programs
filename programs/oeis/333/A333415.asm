@@ -5,4 +5,3 @@ mul $0,2
 add $0,1
 seq $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

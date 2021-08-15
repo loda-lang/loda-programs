@@ -18,3 +18,4 @@ lpb $0
   mul $4,2
   sub $4,2
 lpe
+mov $0,$1

@@ -3,10 +3,9 @@
 
 seq $0,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
 seq $0,4951 ; Nearest integer to n*phi^16, where phi is the golden ratio, A001622.
-mov $1,$0
-sub $1,1686
-div $1,843
-mul $1,2
-sub $1,6
-div $1,2
-add $1,3
+sub $0,1686
+div $0,843
+mul $0,2
+sub $0,6
+div $0,2
+add $0,3

@@ -30,3 +30,4 @@ lpb $6
   mov $6,1
 lpe
 sub $1,1
+mov $0,$1

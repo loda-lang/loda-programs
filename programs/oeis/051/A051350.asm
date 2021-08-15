@@ -11,3 +11,4 @@ lpb $3
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $1,$0
 lpe
+mov $0,$1

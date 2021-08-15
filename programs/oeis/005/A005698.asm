@@ -5,5 +5,4 @@ add $0,3
 seq $0,141355 ; The Jacobsthal sequence, dropping each third term.
 div $0,3
 mul $0,2
-mov $1,$0
-add $1,1
+add $0,1

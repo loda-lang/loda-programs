@@ -9,3 +9,4 @@ lpb $0
   seq $1,82662 ; Numbers k such that the odd part of k is less than sqrt(2k).
 lpe
 mul $1,8
+mov $0,$1

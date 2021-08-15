@@ -8,3 +8,4 @@ lpb $0
   seq $2,127630 ; Expansion of (1+x-x^2-x^3)/(1+x^2)^2.
   add $1,$2
 lpe
+mov $0,$1

@@ -6,5 +6,4 @@ mul $0,2
 mod $2,2
 add $0,$2
 seq $0,139268 ; Twice nonagonal numbers (or twice 9-gonal numbers): a(n) = n(7n-5).
-mov $1,$0
-div $1,2
+div $0,2

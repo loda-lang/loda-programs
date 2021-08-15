@@ -3,5 +3,4 @@
 
 seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
 seq $0,120718 ; Expansion of 3*x/(1 - 2*x^2 - 2*x + x^3).
-mov $1,$0
-div $1,3
+div $0,3

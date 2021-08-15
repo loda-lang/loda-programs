@@ -3,6 +3,5 @@
 
 trn $0,1
 seq $0,68639 ; a(0) = 0, a(n) = a(n-1) + (-1)^p(n) for n >= 1, where p(n) = highest power of 2 dividing n.
-mov $1,$0
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

@@ -4,7 +4,6 @@
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
 seq $0,32929 ; Numbers whose set of base 8 digits is {1,2}.
-mov $1,$0
-div $1,64
-mul $1,7
-add $1,2
+div $0,64
+mul $0,7
+add $0,2

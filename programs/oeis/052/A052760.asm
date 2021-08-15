@@ -11,6 +11,5 @@ add $$5,1
 sub $0,1
 sub $4,8
 mul $0,$4
-mov $1,$0
-div $1,8
-mul $1,4
+div $0,8
+mul $0,4

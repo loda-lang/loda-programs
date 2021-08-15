@@ -13,8 +13,7 @@ lpb $0
   sub $0,8
 lpe
 trn $0,2
-mov $1,$0
-add $1,5
+add $0,5
 mov $2,$3
 mul $2,7
-add $1,$2
+add $0,$2

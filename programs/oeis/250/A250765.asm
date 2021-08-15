@@ -13,6 +13,5 @@ lpe
 mov $2,2
 mul $2,$1
 add $0,$2
-mov $1,$0
-add $1,10
-mul $1,2
+add $0,10
+mul $0,2

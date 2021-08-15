@@ -3,6 +3,6 @@
 
 sub $0,2
 mov $1,$0
-trn $0,2
-dif $1,2
-trn $1,$0
+dif $0,2
+trn $1,2
+trn $0,$1

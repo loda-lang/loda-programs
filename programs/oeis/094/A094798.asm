@@ -12,3 +12,4 @@ lpb $2
   seq $0,268643 ; Number of 1's in decimal representation of n.
   add $1,$0
 lpe
+mov $0,$1

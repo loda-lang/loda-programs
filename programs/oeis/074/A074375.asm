@@ -3,5 +3,4 @@
 
 seq $0,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
 bin $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

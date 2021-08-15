@@ -6,5 +6,4 @@ add $0,1
 seq $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
 mod $2,2
 sub $0,$2
-mov $1,$0
-sub $1,1
+sub $0,1

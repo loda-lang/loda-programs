@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,27444 ; a(n) = n^3 + n^2 + n.
-mov $1,$0

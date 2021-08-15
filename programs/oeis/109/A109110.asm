@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,77850 ; Expansion of (1-x)^(-1)/(1 - 2*x - x^2 + x^3).
-mov $1,$0
-add $1,1
+add $0,1

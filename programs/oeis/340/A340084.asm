@@ -5,4 +5,3 @@ seq $0,340081 ; a(n) = gcd(n-1, A003958(n)).
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

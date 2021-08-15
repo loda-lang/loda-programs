@@ -7,3 +7,4 @@ mov $2,$0
 seq $2,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
 add $1,$2
 add $1,1
+mov $0,$1

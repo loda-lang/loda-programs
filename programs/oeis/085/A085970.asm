@@ -7,3 +7,4 @@ lpb $0
   seq $2,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $1,$2
 lpe
+mov $0,$1

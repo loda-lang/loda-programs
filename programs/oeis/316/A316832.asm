@@ -8,5 +8,4 @@ lpb $0
   sub $0,$1
   dif $0,2
 lpe
-mov $1,$0
-mod $1,2
+mod $0,2

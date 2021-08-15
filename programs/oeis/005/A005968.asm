@@ -7,3 +7,4 @@ lpb $0
   seq $2,56570 ; Third power of Fibonacci numbers (A000045).
   add $1,$2
 lpe
+mov $0,$1

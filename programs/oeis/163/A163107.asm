@@ -4,4 +4,3 @@
 seq $0,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
 sub $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $1,$0

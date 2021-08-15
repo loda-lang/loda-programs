@@ -14,3 +14,4 @@ lpb $3
   sub $0,1
   sub $3,2
 lpe
+mov $0,$1

@@ -4,3 +4,4 @@
 seq $0,102691 ; Least n-expodigital number (i.e., numbers m such that m^n has exactly n decimal digits).
 sub $1,$0
 add $1,10
+mov $0,$1

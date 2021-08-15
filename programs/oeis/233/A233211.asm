@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,87439 ; Expansion of (1-4x)/((1-x)(1-3x)(1-5x)).
-mov $1,$0
-add $1,1
+add $0,1

@@ -6,5 +6,4 @@ pow $0,2
 mov $2,$0
 gcd $2,8
 div $0,$2
-mov $1,$0
-mul $1,9
+mul $0,9

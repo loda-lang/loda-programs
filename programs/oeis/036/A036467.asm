@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,86529 ; Beginning with 2, distinct even numbers such that the arithmetic mean of successive pairs of terms gives odd primes in their natural order. {a(n) + a(n+1)}/2 = prime(n+1).
-mov $1,$0
-div $1,2
+div $0,2

@@ -12,3 +12,4 @@ lpb $2
   seq $0,87440 ; Expansion of (1-2x-3x^2)/((1-2x)(1-4x)).
   add $1,$0
 lpe
+mov $0,$1

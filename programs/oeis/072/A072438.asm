@@ -6,5 +6,4 @@ lpb $0
   seq $2,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   div $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

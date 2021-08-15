@@ -9,3 +9,4 @@ lpb $0
   max $1,0
   seq $1,120478 ; Binomial(n+6,5)-binomial(n,5).
 lpe
+mov $0,$1

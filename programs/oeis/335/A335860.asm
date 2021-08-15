@@ -7,3 +7,4 @@ lpb $0
   seq $2,64097 ; A quasi-logarithm defined inductively by a(1) = 0 and a(p) = 1 + a(p-1) if p is prime and a(n*m) = a(n) + a(m) if m,n > 1.
   add $1,$2
 lpe
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,56170 ; Number of non-unitary prime divisors of n.
   add $1,$2
 lpe
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,255186 ; 27-gonal numbers: a(n) = n*(25*n-23)/2.
   add $1,$2
 lpe
+mov $0,$1

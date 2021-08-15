@@ -9,3 +9,4 @@ lpb $1
     cmp $1,0
   lpe
 lpe
+mov $0,$1

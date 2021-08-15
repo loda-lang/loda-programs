@@ -7,3 +7,4 @@ lpb $0
   seq $2,210736 ; Expansion of (1 + sqrt( (1 + 2*x) / (1 - 2*x))) / 2 in powers of x.
   add $1,$2
 lpe
+mov $0,$1

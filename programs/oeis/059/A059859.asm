@@ -7,3 +7,4 @@ lpb $0
   seq $2,30179 ; Quarter-squares squared: A002620^2.
   add $1,$2
 lpe
+mov $0,$1

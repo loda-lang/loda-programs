@@ -4,8 +4,8 @@
 mov $1,$0
 mov $2,2
 gcd $2,$0
-mul $0,$2
-add $0,2
-add $1,$0
-mul $1,$0
-div $1,4
+mul $1,$2
+add $1,2
+add $0,$1
+mul $0,$1
+div $0,4

@@ -3,8 +3,8 @@
 
 add $0,3
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $1,2
-mul $1,$0
-div $1,6
-mul $1,3
+gcd $0,2
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $0,$1
+div $0,6
+mul $0,3

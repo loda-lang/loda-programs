@@ -3,4 +3,3 @@
 
 seq $0,1157 ; sigma_2(n): sum of squares of divisors of n.
 mod $0,5
-mov $1,$0

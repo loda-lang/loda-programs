@@ -3,5 +3,4 @@
 
 seq $0,112714 ; Numbers of the form k*2^m-1 with k<2^m and k odd.
 seq $0,259445 ; Multiplicative with a(n) = n if n is odd and a(2^s)=2.
-mov $1,$0
-div $1,2
+div $0,2

@@ -10,3 +10,4 @@ lpb $2
   seq $0,226881 ; Number of n-length binary words w with #(w,0) >= #(w,1) >= 1, where #(w,x) gives the number of digits x in w.
   add $1,$0
 lpe
+mov $0,$1

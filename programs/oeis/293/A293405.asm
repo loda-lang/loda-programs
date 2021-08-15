@@ -3,7 +3,6 @@
 
 mov $2,$0
 seq $0,293402 ; The integer k that minimizes |k/n^2 - tau|, where tau = (1+sqrt(5))/2 (golden ratio).
-mov $1,$0
 mov $3,$2
 mul $3,$2
-add $1,$3
+add $0,$3

@@ -3,5 +3,4 @@
 
 add $0,14
 seq $0,184483 ; Upper s-Wythoff sequence, where s(n)=3n-1.  Complement of A184482.
-mov $1,$0
-sub $1,61
+sub $0,61

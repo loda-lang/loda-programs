@@ -14,5 +14,4 @@ lpb $4
     mov $4,1
   lpe
 lpe
-mov $1,$0
-sub $1,1
+sub $0,1

@@ -5,4 +5,3 @@ seq $0,64427 ; (Number of primes <= n - 1) + n.
 mov $2,1
 mod $2,$0
 add $0,$2
-mov $1,$0

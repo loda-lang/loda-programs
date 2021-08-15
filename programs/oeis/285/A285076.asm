@@ -3,17 +3,17 @@
 
 mov $1,$0
 mov $2,4
-lpb $0
-  mov $0,$1
-  sub $0,1
+lpb $1
+  mov $1,$0
+  sub $1,1
   pow $2,0
 lpe
-mov $1,$0
+mov $0,$1
 add $2,1
 div $2,5
 mul $2,5
 pow $2,2
 div $2,12
-add $1,$2
-seq $1,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-sub $1,3
+add $0,$2
+seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+sub $0,3

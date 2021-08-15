@@ -7,3 +7,4 @@ lpb $0
   seq $2,334841 ; a(0) = 0; for n > 0, a(n) = (number of 1's and 3's in base 4 representation of n) - (number of 0's and 2's in base 4 representation of n).
   add $1,$2
 lpe
+mov $0,$1

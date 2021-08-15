@@ -3,22 +3,22 @@
 
 mov $1,$0
 mov $5,$0
-lpb $0
-  mov $0,$3
-  add $0,4
-  add $2,$1
-  mov $1,6
-  add $1,$0
+lpb $1
+  mov $1,$3
+  add $1,4
+  add $2,$0
+  mov $0,6
+  add $0,$1
   trn $2,6
-  add $0,$2
-  trn $1,$2
+  trn $0,$2
+  add $1,$2
   add $4,4
   mov $3,$4
 lpe
-mov $1,$0
-trn $1,1
+mov $0,$1
+trn $0,1
 lpb $5
-  add $1,4
+  add $0,4
   sub $5,1
 lpe
-add $1,1
+add $0,1

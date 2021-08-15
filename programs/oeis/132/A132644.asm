@@ -3,5 +3,4 @@
 
 mul $0,6
 seq $0,100230 ; Main diagonal of triangle A100229.
-mov $1,$0
-div $1,4
+div $0,4

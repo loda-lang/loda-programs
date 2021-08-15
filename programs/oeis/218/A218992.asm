@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,15451 ; a(n) = 6*a(n-1) + a(n-2) for n > 1, with a(0) = a(1) = 1.
-mov $1,$0
-div $1,6
+div $0,6

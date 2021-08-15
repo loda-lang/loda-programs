@@ -8,6 +8,5 @@ lpb $2
   add $1,2
   trn $2,$1
 lpe
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

@@ -6,3 +6,4 @@ seq $0,163271 ; Numerators of fractions in a 'zero-transform' approximation of s
 add $1,$0
 div $1,2
 add $1,$2
+mov $0,$1

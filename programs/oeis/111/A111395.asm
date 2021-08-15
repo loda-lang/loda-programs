@@ -5,3 +5,4 @@ mov $1,5
 pow $1,$0
 seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mod $1,10
+mov $0,$1

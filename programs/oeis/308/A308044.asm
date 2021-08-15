@@ -4,5 +4,4 @@
 mul $0,2
 add $0,1
 seq $0,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
-mov $1,$0
-sub $1,2
+sub $0,2

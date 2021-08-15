@@ -4,6 +4,5 @@
 seq $0,4009 ; Expansion of Eisenstein series E_4(q) (alternate convention E_2(q)); theta series of E_8 lattice.
 div $0,6
 trn $0,2
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

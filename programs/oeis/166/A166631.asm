@@ -6,4 +6,3 @@ seq $0,165831 ; Totally multiplicative sequence with a(p) = 10.
 mov $1,1
 add $1,$2
 mul $0,$1
-mov $1,$0

@@ -7,5 +7,4 @@ lpb $0
   dif $0,4
 lpe
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0
-add $1,2
+add $0,2

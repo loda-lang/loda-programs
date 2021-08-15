@@ -6,3 +6,4 @@ seq $0,48764 ; Largest factorial <= n.
 sub $0,1
 sub $0,$2
 cmp $1,$0
+mov $0,$1

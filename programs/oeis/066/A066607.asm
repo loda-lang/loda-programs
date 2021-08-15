@@ -6,10 +6,10 @@ add $0,1
 mov $2,$0
 pow $2,3
 ; Now $2 holds n^3
-
 mov $1,1
 lpb $0
-  mul $1,3   ; Raise 3 to the n'th power
-  mod $1,$2  ; For every raise, modulo with n^3
+  mul $1,3 ; Raise 3 to the n'th power
+  mod $1,$2 ; For every raise, modulo with n^3
   sub $0,1
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,302748 ; Half thrice the previous number, rounded down, plus 1, starting with 6.
 div $0,2
-mov $1,1
-add $1,$0
+add $0,1

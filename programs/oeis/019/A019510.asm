@@ -3,18 +3,18 @@
 
 add $0,3
 mov $1,$0
-bin $1,3
-sub $1,$0
-sub $1,$0
-lpb $0
-  mul $1,3
-  lpb $0
-    add $0,1
-    mul $0,$1
-    mul $0,100
-    sub $1,3
-    gcd $1,$0
-    mod $0,3
+bin $0,3
+sub $0,$1
+sub $0,$1
+lpb $1
+  mul $0,3
+  lpb $1
+    add $1,1
+    mul $1,$0
+    sub $0,3
+    mul $1,100
+    gcd $0,$1
+    mod $1,3
   lpe
 lpe
-div $1,3
+div $0,3

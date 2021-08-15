@@ -3,5 +3,4 @@
 
 add $0,8190
 seq $0,32927 ; Numbers whose set of base 6 digits is {1,2}.
-mov $1,$0
-sub $1,2612138803
+sub $0,2612138803

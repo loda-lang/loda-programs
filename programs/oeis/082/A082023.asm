@@ -4,4 +4,3 @@
 trn $0,1
 seq $0,51953 ; Cototient(n) := n - phi(n).
 div $0,2
-mov $1,$0

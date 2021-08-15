@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,10049 ; Second-order Fibonacci numbers.
-mov $1,$0
-add $1,1
+add $0,1

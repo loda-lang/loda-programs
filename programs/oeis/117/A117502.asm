@@ -3,5 +3,4 @@
 
 seq $0,128138 ; A000012 * A128132.
 seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
-mov $1,$0
-sub $1,7
+sub $0,7

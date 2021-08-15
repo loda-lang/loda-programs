@@ -3,4 +3,3 @@
 
 pow $0,3
 seq $0,316868 ; Number of times 7 appears in decimal expansion of n.
-mov $1,$0

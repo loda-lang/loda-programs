@@ -10,8 +10,7 @@ lpb $2
   cmp $2,1
   add $3,1
 lpe
-mov $1,$0
 mov $4,$3
 cmp $4,0
 add $3,$4
-div $1,$3
+div $0,$3

@@ -3,7 +3,6 @@
 
 add $0,2
 seq $0,94626 ; Expansion of x*(1+x)/((1-x)*(1-10*x^2)).
-mov $1,$0
-sub $1,3
-div $1,2
-add $1,1
+sub $0,3
+div $0,2
+add $0,1

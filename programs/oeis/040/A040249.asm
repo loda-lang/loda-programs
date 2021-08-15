@@ -5,7 +5,6 @@ seq $0,10197 ; Continued fraction for sqrt(138).
 seq $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
 div $0,2
 mul $0,7
-mov $1,$0
-sub $1,8
-div $1,4
-add $1,3
+sub $0,8
+div $0,4
+add $0,3

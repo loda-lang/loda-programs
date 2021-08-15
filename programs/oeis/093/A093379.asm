@@ -7,5 +7,4 @@ add $0,3
 mov $2,1
 seq $2,74929 ; a(n)>0 such that p(n)*p(n+1)-a(n) is a maximal square.
 div $0,$2
-mov $1,$0
-sub $1,1
+sub $0,1

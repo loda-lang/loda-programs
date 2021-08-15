@@ -11,3 +11,4 @@ lpb $2
   mul $3,2
 lpe
 trn $1,2
+mov $0,$1

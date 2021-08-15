@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,133073 ; a(n) = n^5 + n^3 + n^2.
-mov $1,$0

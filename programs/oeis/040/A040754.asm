@@ -4,4 +4,3 @@
 seq $0,40700 ; Continued fraction for sqrt(727).
 mul $0,44
 div $0,42
-mov $1,$0

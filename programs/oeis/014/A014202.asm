@@ -8,3 +8,4 @@ lpb $0
   seq $2,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
   add $1,$2
 lpe
+mov $0,$1

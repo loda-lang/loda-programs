@@ -5,4 +5,3 @@ mov $1,2
 mul $1,$0
 seq $0,104721 ; Expansion of (1+x)^2/(1-4*x^2).
 mul $0,$1
-mov $1,$0

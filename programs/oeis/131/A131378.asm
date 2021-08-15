@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,71986 ; Parity of the prime-counting function pi(n).
-mov $1,$0

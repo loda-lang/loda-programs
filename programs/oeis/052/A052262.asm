@@ -7,3 +7,4 @@ lpb $0
   seq $2,14824 ; a(0) = 0; for n>0, a(n) = 10*a(n-1) + n.
   add $1,$2
 lpe
+mov $0,$1

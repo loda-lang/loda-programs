@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
-mov $1,$0
-mod $1,2
+mod $0,2

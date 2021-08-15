@@ -4,3 +4,4 @@
 seq $0,305291 ; Numbers k such that 4*k + 3 is a perfect cube, sorted by absolute values.
 sub $1,$0
 sub $1,1
+mov $0,$1

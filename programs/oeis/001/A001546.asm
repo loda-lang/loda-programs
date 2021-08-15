@@ -7,5 +7,4 @@ mul $0,4
 pow $0,2
 sub $0,5
 pow $0,2
-mov $1,$0
-sub $1,16
+sub $0,16

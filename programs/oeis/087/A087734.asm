@@ -4,5 +4,4 @@
 mul $0,2
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
 seq $0,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
-mov $1,$0
-div $1,4
+div $0,4

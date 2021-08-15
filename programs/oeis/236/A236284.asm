@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $2,1
 pow $0,$2
-mov $1,$0

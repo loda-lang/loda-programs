@@ -5,5 +5,4 @@ seq $0,235796 ; 2*n - 1 - sigma(n).
 add $0,3
 mul $0,24
 trn $0,1
-mov $1,$0
-mod $1,2
+mod $0,2

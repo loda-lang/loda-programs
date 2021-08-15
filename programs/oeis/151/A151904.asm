@@ -4,5 +4,4 @@
 mul $0,2
 div $0,3
 seq $0,161411 ; First differences of A160410.
-mov $1,$0
-div $1,8
+div $0,8

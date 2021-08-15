@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,87076 ; Sums of the squares of the elements in the subsets of the integers 1 to n.
-mov $1,$0

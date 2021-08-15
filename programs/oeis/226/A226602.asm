@@ -4,4 +4,3 @@
 pow $0,3
 trn $0,1
 seq $0,5361 ; Product of exponents of prime factorization of n.
-mov $1,$0

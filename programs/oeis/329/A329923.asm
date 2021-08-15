@@ -40,3 +40,4 @@ lpb $8
   add $6,1
   add $1,$6
 lpe
+mov $0,$1

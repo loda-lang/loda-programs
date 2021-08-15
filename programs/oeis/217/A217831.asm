@@ -8,3 +8,4 @@ lpb $0
   gcd $1,$2
   cmp $1,1
 lpe
+mov $0,$1

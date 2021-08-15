@@ -3,4 +3,3 @@
 
 seq $0,47790 ; a(n) = Fibonacci(2*n)-2^n+1.
 sub $0,1
-mov $1,$0

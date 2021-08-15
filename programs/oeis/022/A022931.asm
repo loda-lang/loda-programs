@@ -17,3 +17,4 @@ lpb $2
   gcd $2,7
 lpe
 div $1,2062
+mov $0,$1

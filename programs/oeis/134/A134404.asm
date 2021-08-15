@@ -3,5 +3,4 @@
 
 seq $0,4737 ; Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
 seq $0,6355 ; Number of binary vectors of length n containing no singletons.
-mov $1,$0
-div $1,2
+div $0,2

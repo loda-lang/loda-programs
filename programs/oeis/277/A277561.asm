@@ -4,3 +4,4 @@
 seq $0,69010 ; Number of runs of 1's in binary representation of n.
 mov $1,2
 pow $1,$0
+mov $0,$1

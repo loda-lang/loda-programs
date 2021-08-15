@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,168565 ; Let p = prime(n); then a(n) = p + (p-1)/2.
-mov $1,$0
-div $1,6
+div $0,6

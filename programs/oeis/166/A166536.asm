@@ -4,5 +4,4 @@
 add $0,1
 seq $0,2878 ; Bisection of Lucas sequence: a(n) = L(2*n+1).
 div $0,5
-mov $1,$0
-add $1,1
+add $0,1

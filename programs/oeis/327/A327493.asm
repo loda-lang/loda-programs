@@ -3,7 +3,6 @@
 
 seq $0,327492 ; Partial sums of A327491.
 seq $0,277989 ; a(n) = 424*2^n + 37.
-mov $1,$0
-sub $1,461
-div $1,424
-add $1,1
+sub $0,461
+div $0,424
+add $0,1

@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,101301 ; The sum of the first n primes, minus n.
 add $1,$0
 sub $1,1
+mov $0,$1

@@ -4,4 +4,3 @@
 mul $0,2
 trn $0,1
 seq $0,32121 ; Number of reversible strings with n beads of 4 colors.
-mov $1,$0

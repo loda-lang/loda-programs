@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,61240 ; Prime numbers == 5 (mod 9).
-mov $1,$0
-mul $1,5
+mul $0,5

@@ -6,4 +6,3 @@ lpb $0
   trn $0,1
   seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
 lpe
-mov $1,$0

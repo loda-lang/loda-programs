@@ -10,4 +10,3 @@ lpb $0
 lpe
 add $2,$3
 add $0,$2
-add $1,$0

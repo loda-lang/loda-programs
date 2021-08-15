@@ -3,5 +3,4 @@
 
 seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

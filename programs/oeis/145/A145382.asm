@@ -5,5 +5,4 @@ seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,1
 max $0,1
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
-mov $1,$0
-sub $1,1
+sub $0,1

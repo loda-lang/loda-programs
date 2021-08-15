@@ -4,6 +4,5 @@
 add $0,1
 pow $0,2
 sub $0,3
-mov $1,$0
-div $1,4
-seq $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+div $0,4
+seq $0,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).

@@ -5,6 +5,5 @@ seq $0,4755 ; Binary expansion starts 11.
 div $0,3
 mul $0,4
 add $0,4
-mov $1,$0
-div $1,4
-sub $1,1
+div $0,4
+sub $0,1

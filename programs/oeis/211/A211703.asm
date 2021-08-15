@@ -3,9 +3,9 @@
 
 add $0,1
 mov $1,$0
-lpb $0
-  mov $2,$0
-  mov $0,1
+lpb $1
+  mov $2,$1
+  mov $1,1
   seq $2,187323 ; Floor(n/2)+floor(n/3)+floor(n/4).
 lpe
-add $1,$2
+add $0,$2

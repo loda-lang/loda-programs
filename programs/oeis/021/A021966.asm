@@ -12,3 +12,4 @@ lpb $2
   mul $2,$1
   mod $2,6
 lpe
+mov $0,$1

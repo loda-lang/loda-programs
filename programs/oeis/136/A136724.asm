@@ -8,6 +8,5 @@ lpb $2
   sub $2,$0
   trn $2,2
 lpe
-mov $1,$0
-mul $1,4
-add $1,12
+mul $0,4
+add $0,12

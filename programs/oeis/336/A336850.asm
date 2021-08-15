@@ -3,4 +3,3 @@
 
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 seq $0,9194 ; a(n) = gcd(n, sigma(n)).
-mov $1,$0

@@ -8,5 +8,4 @@ sub $0,2
 bin $0,3
 mul $2,2
 add $0,$2
-mov $1,$0
-div $1,4
+div $0,4

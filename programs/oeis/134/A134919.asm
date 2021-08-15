@@ -3,6 +3,4 @@
 
 add $0,1
 pow $0,5
-seq $0,134914 ; Ceiling(n^(1/3)).
-mov $1,$0
-sub $1,1
+seq $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.

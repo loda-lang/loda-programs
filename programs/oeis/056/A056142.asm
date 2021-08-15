@@ -7,3 +7,4 @@ lpb $0
   mul $1,10
 lpe
 div $1,10
+mov $0,$1

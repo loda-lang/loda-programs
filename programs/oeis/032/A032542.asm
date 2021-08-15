@@ -5,4 +5,3 @@ add $0,1
 mov $2,$0
 seq $0,7091 ; Numbers in base 5.
 div $0,$2
-mov $1,$0

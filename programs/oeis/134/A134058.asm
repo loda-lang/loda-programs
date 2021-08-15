@@ -7,3 +7,4 @@ seq $0,109128 ; Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) + 1 for 0<
 sub $0,$2
 add $1,$0
 add $1,1
+mov $0,$1

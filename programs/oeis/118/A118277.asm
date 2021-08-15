@@ -3,5 +3,4 @@
 
 seq $0,113805 ; Numbers that are congruent to {5, 9} mod 14.
 pow $0,2
-mov $1,$0
-div $1,56
+div $0,56

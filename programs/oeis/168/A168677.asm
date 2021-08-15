@@ -4,6 +4,5 @@
 add $0,1
 gcd $0,8
 div $0,4
-mov $1,$0
-mul $1,4
-add $1,1
+mul $0,4
+add $0,1

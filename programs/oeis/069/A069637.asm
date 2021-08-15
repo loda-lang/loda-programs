@@ -7,3 +7,4 @@ lpb $0
   seq $2,268340 ; Characteristic function of the prime powers p^k, k >= 2.
   add $1,$2
 lpe
+mov $0,$1

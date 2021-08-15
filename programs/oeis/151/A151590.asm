@@ -17,6 +17,5 @@ mov $4,$0
 mul $0,2
 trn $3,$4
 mul $0,$3
-mov $1,$0
-div $1,6
-mul $1,3
+div $0,6
+mul $0,3

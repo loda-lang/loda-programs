@@ -8,3 +8,4 @@ lpb $0
   cmp $1,0
 lpe
 bin $1,$0
+mov $0,$1

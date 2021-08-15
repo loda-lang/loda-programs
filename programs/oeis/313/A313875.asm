@@ -34,3 +34,4 @@ lpb $9
   mov $9,0
 lpe
 add $1,$5
+mov $0,$1

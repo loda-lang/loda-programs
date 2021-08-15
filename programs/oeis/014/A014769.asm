@@ -3,4 +3,3 @@
 
 seq $0,14632 ; Odd pentagonal numbers.
 pow $0,2
-mov $1,$0

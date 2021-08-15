@@ -7,3 +7,4 @@ lpb $0
   seq $2,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
   add $1,$2
 lpe
+mov $0,$1

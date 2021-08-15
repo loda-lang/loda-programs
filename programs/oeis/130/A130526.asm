@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,2251 ; Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
 sub $0,$2
-mov $1,$0

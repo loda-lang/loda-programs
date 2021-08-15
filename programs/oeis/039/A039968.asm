@@ -8,3 +8,4 @@ lpb $0
   div $0,3
 lpe
 mod $1,3
+mov $0,$1

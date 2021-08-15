@@ -3,5 +3,4 @@
 
 mul $0,4
 seq $0,44170 ; Numbers n such that string 4,4 occurs in the base 7 representation of n but not of n-1.
-mov $1,$0
-div $1,4
+div $0,4

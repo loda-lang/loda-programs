@@ -10,3 +10,4 @@ lpb $3
   sub $3,1
 lpe
 div $1,3
+mov $0,$1

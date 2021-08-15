@@ -4,7 +4,6 @@
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
 seq $0,32926 ; Numbers whose set of base 5 digits is {1,2}.
-mov $1,$0
-div $1,25
-mul $1,2
-add $1,1
+div $0,25
+mul $0,2
+add $0,1

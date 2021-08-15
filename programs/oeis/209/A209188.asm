@@ -6,4 +6,3 @@ add $2,4
 mul $0,$2
 add $0,$2
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-mov $1,$0

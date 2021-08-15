@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,65363 ; Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
-mov $1,$0

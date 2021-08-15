@@ -5,3 +5,4 @@ lpb $0
   sub $0,1
   seq $1,7843 ; Least positive integer k for which 2^n divides k!.
 lpe
+mov $0,$1

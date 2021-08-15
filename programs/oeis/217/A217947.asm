@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,5701 ; Number of exterior points formed by extending diagonals of n-gon in general position.
-mov $1,$0
-sub $1,3
+sub $0,3

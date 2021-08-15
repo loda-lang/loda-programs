@@ -6,5 +6,4 @@ pow $0,3
 sub $0,1
 seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
 add $0,1
-mov $1,$0
-pow $1,2
+pow $0,2

@@ -8,3 +8,4 @@ lpb $0
   seq $2,137356 ; a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k).
   add $1,$2
 lpe
+mov $0,$1

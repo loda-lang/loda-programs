@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,33714 ; Number of zeros in numbers 0 to 999..9 (n digits).
 add $0,$2
-mov $1,$0

@@ -6,5 +6,4 @@ sub $2,1
 mul $2,8
 trn $2,1
 add $0,$2
-mov $1,$0
-mul $1,4
+mul $0,4

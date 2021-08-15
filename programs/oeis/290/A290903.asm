@@ -14,3 +14,4 @@ lpe
 div $1,6
 mul $1,5
 add $1,5
+mov $0,$1

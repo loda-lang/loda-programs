@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,93131 ; Binomial transform of Fibonacci(2n).
-mov $1,$0

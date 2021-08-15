@@ -3,4 +3,3 @@
 
 seq $0,283523 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 913", based on the 5-celled von Neumann neighborhood.
 dif $0,2
-mov $1,$0

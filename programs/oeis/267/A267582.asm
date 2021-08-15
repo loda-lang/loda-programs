@@ -6,5 +6,4 @@ seq $0,131136 ; Denominator of (exponential) expansion of log((x/2-1)/(x-1)).
 div $0,-2
 add $0,$2
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

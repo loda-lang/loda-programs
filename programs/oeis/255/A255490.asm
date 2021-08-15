@@ -3,7 +3,6 @@
 
 add $0,3
 seq $0,122756 ; Odd-indexed terms, a(n) = 2^n. Even-indexed terms, a(n) = floor(2^n+2^(n-1)).
-mov $1,$0
-div $1,10
-mul $1,2
-add $1,1
+div $0,10
+mul $0,2
+add $0,1

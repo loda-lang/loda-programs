@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,147810 ; Half the number of divisors of n^2+1.
-mov $1,$0

@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 dif $0,2
-mov $1,$0

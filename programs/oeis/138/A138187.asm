@@ -4,5 +4,4 @@
 add $0,1
 mul $0,2
 seq $0,99470 ; A sequence generated from the Quadrifoil.
-mov $1,$0
-mul $1,-1
+mul $0,-1

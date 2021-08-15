@@ -3,5 +3,5 @@
 
 seq $0,40752 ; Continued fraction for sqrt(780).
 mov $1,$0
-div $0,11
-add $1,$0
+div $1,11
+add $0,$1

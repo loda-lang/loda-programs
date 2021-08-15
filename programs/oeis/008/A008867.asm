@@ -8,5 +8,4 @@ seq $0,338896 ; Inradii of Pythagorean triples of A338895.
 add $0,2
 div $2,2
 add $0,$2
-mov $1,$0
-div $1,2
+div $0,2

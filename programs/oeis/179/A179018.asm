@@ -7,3 +7,4 @@ lpb $0
   seq $2,173173 ; a(n) = ceiling(Fibonacci(n)/2).
   add $1,$2
 lpe
+mov $0,$1

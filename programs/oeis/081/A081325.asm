@@ -6,4 +6,3 @@ pow $0,2
 sub $0,1
 seq $0,46897 ; Sum of divisors of n that are not divisible by 4.
 mod $0,4
-mov $1,$0

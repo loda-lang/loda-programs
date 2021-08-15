@@ -3,4 +3,3 @@
 
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 seq $0,68527 ; Difference between smallest square >= n and n.
-mov $1,$0

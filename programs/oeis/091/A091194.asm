@@ -7,3 +7,4 @@ lpb $0
   seq $2,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
   add $1,$2
 lpe
+mov $0,$1

@@ -10,4 +10,4 @@ lpb $0,8
   add $3,$0
   div $3,3
 lpe
-mov $1,$3
+mov $0,$3

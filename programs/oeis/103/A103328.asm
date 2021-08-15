@@ -9,4 +9,4 @@ lpb $1,2
   sub $2,$4
 lpe
 bin $4,$2
-mov $1,$4
+mov $0,$4

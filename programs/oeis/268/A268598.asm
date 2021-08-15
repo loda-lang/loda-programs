@@ -5,6 +5,5 @@ sub $0,2
 mov $2,$0
 max $0,0
 seq $0,268586 ; Expansion of (x^3*(3*x - 2))/(2*x - 1)^3.
-mov $1,$0
 sub $2,1
-mul $1,$2
+mul $0,$2

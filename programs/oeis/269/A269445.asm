@@ -6,3 +6,4 @@ lpb $0
   sub $0,13
   add $1,$0
 lpe
+mov $0,$1

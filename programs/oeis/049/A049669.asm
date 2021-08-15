@@ -3,5 +3,4 @@
 
 mul $0,3
 seq $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
-mov $1,$0
-div $1,17
+div $0,17

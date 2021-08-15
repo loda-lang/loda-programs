@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,81057 ; E.g.f.: Sum_{n>=0} a(n)*x^n/n! = {Sum_{n>=0} F(n+1)*x^n/n!}^2, where F(n) is the n-th Fibonacci number.
-mov $1,$0
-mul $1,5
-div $1,4
+mul $0,5
+div $0,4

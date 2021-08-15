@@ -4,4 +4,3 @@
 seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
 seq $0,13636 ; n*nextprime(n).
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0

@@ -7,3 +7,4 @@ lpb $0
   seq $2,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
   add $1,$2
 lpe
+mov $0,$1

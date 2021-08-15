@@ -11,3 +11,4 @@ lpe
 sub $1,1
 bin $1,2
 mod $1,10
+mov $0,$1

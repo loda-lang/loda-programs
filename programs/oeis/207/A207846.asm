@@ -6,5 +6,4 @@ mul $0,3
 mov $2,$0
 cmp $2,0
 add $0,$2
-mov $1,$0
-mul $1,6
+mul $0,6

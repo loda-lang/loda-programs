@@ -7,6 +7,5 @@ seq $0,170060 ; Number of reduced words of length n in Coxeter group on 3 genera
 add $0,4
 add $2,2
 mul $0,$2
-mov $1,$0
-div $1,4
-sub $1,1
+div $0,4
+sub $0,1

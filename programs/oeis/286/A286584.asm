@@ -4,5 +4,4 @@
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 add $0,1
 mod $0,8
-mov $1,$0
-div $1,2
+div $0,2

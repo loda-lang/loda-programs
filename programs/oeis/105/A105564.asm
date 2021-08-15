@@ -19,3 +19,4 @@ lpb $0
   mov $1,$4
 lpe
 sub $1,544
+mov $0,$1

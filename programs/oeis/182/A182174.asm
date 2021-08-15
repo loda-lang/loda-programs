@@ -6,3 +6,4 @@ seq $0,40 ; The prime numbers.
 pow $0,2
 sub $0,1
 add $1,$0
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,194223 ; a(n) = [sum{(k/6) : 1<=k<=n}], where [ ]=floor, ( )=fractional part.
   add $1,$2
 lpe
+mov $0,$1

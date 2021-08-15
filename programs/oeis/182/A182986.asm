@@ -7,4 +7,3 @@ seq $0,40 ; The prime numbers.
 lpb $0
   mul $0,$2
 lpe
-mov $1,$0

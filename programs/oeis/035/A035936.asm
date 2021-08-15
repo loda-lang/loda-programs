@@ -33,4 +33,4 @@ lpb $8
   mov $8,0
   sub $9,$1
 lpe
-mov $1,$9
+mov $0,$9

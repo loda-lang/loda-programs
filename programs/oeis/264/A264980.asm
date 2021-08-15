@@ -3,4 +3,3 @@
 
 seq $0,79 ; Powers of 2: a(n) = 2^n.
 seq $0,30102 ; Base-3 reversal of n (written in base 10).
-mov $1,$0

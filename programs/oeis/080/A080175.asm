@@ -3,4 +3,3 @@
 
 seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
 pow $0,4
-mov $1,$0

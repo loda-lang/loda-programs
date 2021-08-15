@@ -16,3 +16,4 @@ lpb $1
   dif $1,10
 lpe
 div $1,5
+mov $0,$1

@@ -4,19 +4,19 @@
 mov $1,$0
 mov $3,7
 mov $6,$0
-lpb $0
-  sub $0,1
-  mov $4,$1
+lpb $1
+  sub $1,1
+  mov $4,$0
   mov $5,$3
   add $3,1
-  trn $3,$1
-  add $1,$0
+  trn $3,$0
+  add $0,$1
 lpe
 add $4,5
 sub $4,$5
 sub $4,4
 trn $4,$5
-mov $1,$4
+mov $0,$4
 mov $7,$6
 mov $9,$6
 lpb $9
@@ -26,6 +26,6 @@ lpe
 mov $2,3
 mov $7,$8
 lpb $2
-  add $1,$7
+  add $0,$7
   sub $2,1
 lpe

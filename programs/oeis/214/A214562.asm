@@ -8,3 +8,4 @@ lpb $0
   seq $2,80791 ; Number of nonleading 0's in binary expansion of n.
   add $1,$2
 lpe
+mov $0,$1

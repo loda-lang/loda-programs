@@ -3,7 +3,7 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 mov $1,$0
-gcd $0,4
-mul $1,2
-add $1,4
-div $1,$0
+mul $0,2
+add $0,4
+gcd $1,4
+div $0,$1

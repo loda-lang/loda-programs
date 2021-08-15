@@ -1,7 +1,6 @@
 ; A005678: A squarefree ternary sequence.
 ; 1,2,1,3,2,1,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,2,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,1,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,3,1,3,2,1,2,3,1,2,1,3,2,1,2,3,1,3,2,3,1,2,1,3,2,1,2
 
-mov $1,$0
-add $1,2730
-seq $1,36581 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-add $1,1
+add $0,2730
+seq $0,36581 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+add $0,1

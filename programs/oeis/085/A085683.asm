@@ -3,4 +3,3 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
-mov $1,$0

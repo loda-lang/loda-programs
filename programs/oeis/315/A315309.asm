@@ -4,4 +4,3 @@
 mul $0,4
 seq $0,60464 ; Numbers that are not congruent to 4 or 5 mod 9.
 max $0,1
-mov $1,$0

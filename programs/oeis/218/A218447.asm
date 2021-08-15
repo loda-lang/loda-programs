@@ -10,3 +10,4 @@ lpb $2
   seq $0,1899 ; Number of divisors of n of form 5k+4; a(0) = 0.
   add $1,$0
 lpe
+mov $0,$1

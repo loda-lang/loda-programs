@@ -4,4 +4,3 @@
 mov $1,$0
 seq $0,32443 ; a(n) = Sum_{i=0..n} binomial(2*n, i).
 mul $0,$1
-mov $1,$0

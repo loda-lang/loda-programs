@@ -4,3 +4,4 @@
 seq $0,9195 ; a(n) = gcd(n, phi(n)).
 mov $1,1
 bin $1,$0
+mov $0,$1

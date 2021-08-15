@@ -4,8 +4,8 @@
 seq $0,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
 mul $0,2
 mov $1,$0
-add $0,18
-mod $0,4
-mul $1,4
-add $1,$0
-div $1,2
+mul $0,4
+add $1,18
+mod $1,4
+add $0,$1
+div $0,2

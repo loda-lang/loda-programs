@@ -3,4 +3,3 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,292936 ; a(n) = the least k >= 0 such that floor(n/(2^k)) is a nonprime; a(n) is degree of the "safeness" of prime, 0 if n is not a prime, 1 for unsafe primes (A059456), and k >= 2 for primes that are (k-1)-safe but not k-safe.
-mov $1,$0

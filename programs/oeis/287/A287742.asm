@@ -5,4 +5,3 @@ add $0,2
 seq $0,94026 ; Expansion of x(1+10x)/((1-x^2)(1-10x^2)).
 add $0,8
 div $0,11
-mov $1,$0

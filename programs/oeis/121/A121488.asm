@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,87056 ; Difference between 2 * n^2 and the next smaller square number.
-mov $1,$0

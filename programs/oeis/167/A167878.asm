@@ -6,5 +6,4 @@ lpb $0
   seq $2,81603 ; Number of 2's in ternary representation of n.
   sub $0,$2
 lpe
-mov $1,$0
-mul $1,2
+mul $0,2

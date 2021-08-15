@@ -3,6 +3,6 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
-trn $1,5
-add $1,$0
-add $1,5
+trn $0,5
+add $0,$1
+add $0,5

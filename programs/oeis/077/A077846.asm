@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,52945 ; Number of compositions of n when each odd part can be of two kinds.
-mov $1,$0
-mul $1,2
-div $1,3
+mul $0,2
+div $0,3

@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,190062 ; a(n) = n*Fibonacci(n) - Sum_{i=0..n-1} Fibonacci(i).
-mov $1,$0
-mul $1,3
+mul $0,3

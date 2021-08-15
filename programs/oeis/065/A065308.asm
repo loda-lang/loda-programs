@@ -3,4 +3,3 @@
 
 seq $0,65855 ; Number of composites <= n.
 seq $0,40 ; The prime numbers.
-mov $1,$0

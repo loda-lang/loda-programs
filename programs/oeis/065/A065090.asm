@@ -12,5 +12,4 @@ lpb $2
   seq $0,230980 ; Number of primes <= n, starting at n=0.
   div $2,2
 lpe
-mov $1,$0
-add $1,$3
+add $0,$3

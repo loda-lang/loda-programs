@@ -3,4 +3,3 @@
 
 mul $0,6
 seq $0,7661 ; Triple factorial numbers a(n) = n!!!, defined by a(n) = n*a(n-3), a(0) = a(1) = 1, a(2) = 2. Sometimes written n!3.
-mov $1,$0

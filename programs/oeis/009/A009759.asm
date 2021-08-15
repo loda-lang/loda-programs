@@ -10,8 +10,7 @@ lpb $0
   add $2,$1
   add $1,$2
 lpe
-mov $1,$0
-add $1,1
-add $1,$2
-sub $1,8
-div $1,2
+add $0,1
+add $0,$2
+sub $0,8
+div $0,2

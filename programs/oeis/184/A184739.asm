@@ -4,5 +4,4 @@
 mul $0,2
 add $0,13
 seq $0,184735 ; a(n)=floor(n*s+h-h*s), where s=(3+sqrt(5))/2, h=1/3; complement of A184734.
-mov $1,$0
-sub $1,33
+sub $0,33

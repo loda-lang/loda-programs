@@ -9,3 +9,4 @@ lpb $3
   trn $0,$3
 lpe
 pow $1,$0
+mov $0,$1

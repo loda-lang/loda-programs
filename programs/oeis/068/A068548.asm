@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,1794 ; Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n >= 0.
-mov $1,$0

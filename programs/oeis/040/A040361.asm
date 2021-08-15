@@ -3,6 +3,5 @@
 
 seq $0,10225 ; Continued fraction for sqrt(183).
 seq $0,203016 ; Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
-mov $1,$0
-div $1,3
-sub $1,1
+div $0,3
+sub $0,1

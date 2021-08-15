@@ -27,3 +27,4 @@ lpb $1
   mov $2,$1
 lpe
 mod $1,10
+mov $0,$1

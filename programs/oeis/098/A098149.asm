@@ -6,3 +6,4 @@ seq $0,75269 ; Product of Lucas numbers and inverted Lucas numbers: a(n)=A000032
 mov $1,1
 sub $2,$0
 add $1,$2
+mov $0,$1

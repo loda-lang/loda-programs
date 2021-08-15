@@ -3,17 +3,17 @@
 
 sub $0,1
 mov $1,$0
+mod $1,4
 mov $2,$0
-mod $0,4
-mul $1,5
+mul $0,5
 add $2,4
-add $2,$1
-mov $1,0
+add $2,$0
+mov $0,0
 div $2,4
-lpb $0
-  trn $0,$2
-  mov $1,1
-  add $1,$2
+lpb $1
+  mov $0,1
+  add $0,$2
+  trn $1,$2
 lpe
-div $1,4
-add $1,1
+div $0,4
+add $0,1

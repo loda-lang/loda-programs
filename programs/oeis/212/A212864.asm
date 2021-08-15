@@ -7,3 +7,4 @@ lpb $0
   seq $2,42968 ; Numbers not divisible by 4.
   add $1,$2
 lpe
+mov $0,$1

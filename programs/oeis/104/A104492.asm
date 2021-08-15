@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,55400 ; Cube excess: difference between n and largest cube <= n.
-mov $1,$0

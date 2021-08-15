@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
 mod $2,2
 trn $0,$2
-mov $1,$0

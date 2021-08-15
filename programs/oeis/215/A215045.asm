@@ -3,7 +3,4 @@
 
 seq $0,155110 ; a(n) = 8*Fibonacci(2n+1).
 pow $0,5
-mov $1,$0
-sub $1,32768
-div $1,32768
-add $1,1
+div $0,32768

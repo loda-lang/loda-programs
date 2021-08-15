@@ -3,11 +3,10 @@
 
 mov $3,$0
 seq $0,91915 ; Maximum of even products of partitions of n.
-mov $1,$0
 mov $2,$0
 cmp $2,0
-add $1,$2
-div $3,$1
+add $0,$2
+div $3,$0
 add $3,1
-add $1,$3
-sub $1,1
+add $0,$3
+sub $0,1

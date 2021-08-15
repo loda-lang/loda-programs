@@ -12,3 +12,4 @@ lpb $2
   seq $0,339183 ; Number of partitions of n into two parts such that the smaller part is a nonzero square.
   add $1,$0
 lpe
+mov $0,$1

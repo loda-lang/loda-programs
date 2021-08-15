@@ -8,5 +8,4 @@ lpb $0
   sub $3,1
   mov $0,$3
 lpe
-mov $1,$0
-add $1,1
+add $0,1

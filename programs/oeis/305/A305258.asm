@@ -5,3 +5,4 @@ mul $0,2
 seq $0,329116 ; Successively count to (-1)^(n+1)*n (n = 0, 1, 2, ... ).
 sub $1,$0
 div $1,2
+mov $0,$1

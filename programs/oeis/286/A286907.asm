@@ -7,10 +7,10 @@ lpb $0
   sub $0,1
 lpe
 mov $1,$0
-div $0,2
-seq $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-sub $1,$0
-mod $1,2
-add $1,4
-mod $1,3
 div $1,2
+seq $1,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
+sub $0,$1
+mod $0,2
+add $0,4
+mod $0,3
+div $0,2

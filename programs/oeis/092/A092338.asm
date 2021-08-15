@@ -47,3 +47,4 @@ lpb $4
   mov $4,0
 lpe
 add $1,1
+mov $0,$1

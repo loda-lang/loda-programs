@@ -8,4 +8,3 @@ lpb $0
 lpe
 seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
 cmp $0,1
-mov $1,$0

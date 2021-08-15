@@ -3,4 +3,3 @@
 
 seq $0,60464 ; Numbers that are not congruent to 4 or 5 mod 9.
 pow $0,2
-mov $1,$0

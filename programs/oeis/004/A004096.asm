@@ -3,4 +3,3 @@
 
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

@@ -6,4 +6,3 @@ seq $0,83176 ; Arithmetic means of rows of A083173.
 mov $2,1
 add $2,$3
 mul $0,$2
-mov $1,$0

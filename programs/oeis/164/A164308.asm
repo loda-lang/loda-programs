@@ -6,3 +6,4 @@ seq $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gr
 mov $1,3
 pow $1,$0
 div $1,9
+mov $0,$1

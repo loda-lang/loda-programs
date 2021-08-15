@@ -4,8 +4,7 @@
 mov $3,$0
 div $0,5
 trn $0,1
-mov $1,$0
-mod $1,2
+mod $0,2
 mov $2,$3
 mul $2,2
-add $1,$2
+add $0,$2

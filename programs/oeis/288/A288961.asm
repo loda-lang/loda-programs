@@ -3,6 +3,6 @@
 
 add $0,1
 mov $1,$0
-bin $0,3
-mul $1,$0
-mul $1,2
+bin $1,3
+mul $0,$1
+mul $0,2

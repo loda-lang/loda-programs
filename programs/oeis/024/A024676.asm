@@ -5,5 +5,4 @@ add $0,1
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 sub $0,1
 seq $0,73093 ; Number of prime power divisors of n.
-mov $1,$0
-sub $1,2
+sub $0,2

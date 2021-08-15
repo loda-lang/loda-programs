@@ -4,3 +4,4 @@
 seq $0,81005 ; a(n) = Fibonacci(4n+3) + 1, or Fibonacci(2n+1)*Lucas(2n+2).
 add $1,$0
 div $1,3
+mov $0,$1

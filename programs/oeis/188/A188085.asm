@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,276883 ; Sums-complement of the Beatty sequence for 2 + sqrt(3).
-mov $1,$0
-sub $1,1
+sub $0,1

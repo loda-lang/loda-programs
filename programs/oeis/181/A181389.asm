@@ -8,5 +8,4 @@ sub $0,2
 add $2,7
 div $2,$0
 trn $0,$2
-mov $1,$0
-mul $1,2
+mul $0,2

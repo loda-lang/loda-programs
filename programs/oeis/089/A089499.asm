@@ -3,5 +3,5 @@
 
 seq $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
 mov $1,$0
-gcd $0,2
-mul $1,$0
+gcd $1,2
+mul $0,$1

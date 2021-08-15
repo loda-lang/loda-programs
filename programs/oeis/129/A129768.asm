@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,177018 ; a(n) is the smallest integer >= a(n-1) such that a(n) + A067076(n) + n-1 is an odd prime.
-mov $1,$0
-sub $1,2
+sub $0,2

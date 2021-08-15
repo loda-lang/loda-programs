@@ -3,4 +3,3 @@
 
 mul $0,3
 seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
-mov $1,$0

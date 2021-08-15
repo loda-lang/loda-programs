@@ -4,5 +4,4 @@
 add $0,1
 pow $0,2
 seq $0,86936 ; Number of primes between n and p(n) inclusive.
-mov $1,$0
-sub $1,1
+sub $0,1

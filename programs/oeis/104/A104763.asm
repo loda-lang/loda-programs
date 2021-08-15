@@ -3,5 +3,4 @@
 
 seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

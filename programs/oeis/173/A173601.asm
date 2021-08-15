@@ -7,3 +7,4 @@ lpb $0
   seq $1,7843 ; Least positive integer k for which 2^n divides k!.
 lpe
 sub $1,1
+mov $0,$1

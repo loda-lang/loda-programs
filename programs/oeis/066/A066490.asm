@@ -7,3 +7,4 @@ lpb $0
   seq $2,79261 ; Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
   add $1,$2
 lpe
+mov $0,$1

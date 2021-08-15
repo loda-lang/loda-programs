@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,59793 ; Stationary value of quotient in the continued fraction expansion of sqrt(prime) when the quotient-cycle-length = 1.
-mov $1,$0
-pow $1,2
-div $1,16
+pow $0,2
+div $0,16

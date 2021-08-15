@@ -3,4 +3,3 @@
 
 seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
 bin $0,2
-mov $1,$0

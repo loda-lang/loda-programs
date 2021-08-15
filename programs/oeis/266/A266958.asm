@@ -3,4 +3,3 @@
 
 seq $0,185039 ; Numbers of the form 9*m^2 + 4*m, m an integer.
 sub $0,1
-mov $1,$0

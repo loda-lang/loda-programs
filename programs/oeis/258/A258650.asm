@@ -3,4 +3,3 @@
 
 seq $0,258649 ; Ninth arithmetic derivative of n.
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-mov $1,$0

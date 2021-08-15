@@ -3,4 +3,3 @@
 
 mul $0,3
 seq $0,1401 ; Number of partitions of n into at most 5 parts.
-mov $1,$0

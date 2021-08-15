@@ -5,3 +5,4 @@ mov $1,1
 mov $2,$0
 seq $2,202023 ; Triangle T(n,k), read by rows, given by (1, 0, 1, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (0, 1, -1, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
 min $1,$2
+mov $0,$1

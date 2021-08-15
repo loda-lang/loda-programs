@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,332682 ; a(n) = Sum_{k=1..n} (-1)^(k+1) * ceiling(n/k).
-mov $1,$0
-sub $1,1
+sub $0,1

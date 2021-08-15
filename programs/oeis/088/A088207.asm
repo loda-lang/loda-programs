@@ -7,3 +7,4 @@ lpb $0
   seq $2,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
   add $1,$2
 lpe
+mov $0,$1

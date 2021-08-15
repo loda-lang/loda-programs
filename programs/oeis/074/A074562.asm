@@ -3,11 +3,10 @@
 
 mov $3,$0
 seq $0,74513 ; a(n) = 1^n + 4^n + 7^n.
-mov $1,$0
-add $1,6
+add $0,6
 mov $4,5
 pow $4,$3
 mov $2,$4
 add $2,2
-add $1,$2
-sub $1,9
+add $0,$2
+sub $0,9

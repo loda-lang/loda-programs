@@ -5,4 +5,3 @@ mul $0,2
 add $0,1
 seq $0,27626 ; Denominator of n*(n+5)/((n+2)*(n+3)).
 dif $0,2
-mov $1,$0

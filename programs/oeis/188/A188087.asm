@@ -4,6 +4,5 @@
 mov $2,$0
 div $0,3
 seq $0,76538 ; Numerators a(n) of fractions slowly converging to e: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < e then a(n+1) = a(n) + 1, else a(n+1)= a(n).
-mov $1,$0
-add $1,1
-add $1,$2
+add $0,1
+add $0,$2

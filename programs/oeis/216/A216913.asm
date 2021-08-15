@@ -3,4 +3,3 @@
 
 seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 dif $0,3
-mov $1,$0

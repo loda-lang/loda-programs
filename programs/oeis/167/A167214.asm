@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-seq $0,7504 ; Sum of the first n primes.
-mul $1,$0
+seq $1,7504 ; Sum of the first n primes.
+mul $0,$1

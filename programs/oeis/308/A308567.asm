@@ -4,3 +4,4 @@
 seq $0,38698 ; Surfeit of 4k-1 primes over 4k+1 primes, beginning with prime 2.
 add $0,1
 sub $1,$0
+mov $0,$1

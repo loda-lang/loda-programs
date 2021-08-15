@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,66096 ; Duplicate values in A060143.
-mov $1,$0

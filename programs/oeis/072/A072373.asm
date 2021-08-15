@@ -6,7 +6,7 @@ mov $2,$0
 seq $0,278417 ; a(n) = n*((2+sqrt(3))^n + (2-sqrt(3))^n)/2.
 sub $0,$2
 mov $1,$0
-div $0,5
-mov $3,$0
+div $1,5
+mov $3,$1
 add $3,1
-dif $1,$3
+dif $0,$3

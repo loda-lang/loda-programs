@@ -3,4 +3,3 @@
 
 seq $0,124669 ; Product of successive primes minus 2.
 seq $0,111089 ; Largest prime factor of 2n.
-mov $1,$0

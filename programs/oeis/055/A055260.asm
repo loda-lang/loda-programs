@@ -4,7 +4,6 @@
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
 seq $0,32930 ; Numbers whose set of base 9 digits is {1,2}.
-mov $1,$0
-div $1,81
-mul $1,8
-add $1,2
+div $0,81
+mul $0,8
+add $0,2

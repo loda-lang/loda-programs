@@ -8,4 +8,3 @@ lpb $0
 lpe
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-mov $1,$0

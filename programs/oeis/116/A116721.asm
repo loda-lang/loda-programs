@@ -7,5 +7,4 @@ trn $0,2
 bin $0,2
 bin $2,3
 sub $0,$2
-mov $1,$0
-add $1,1
+add $0,1

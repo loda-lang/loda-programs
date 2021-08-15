@@ -3,4 +3,3 @@
 
 seq $0,128018 ; Expansion of (1-4*x)/(1-2*x+4*x^2).
 add $0,1
-mov $1,$0

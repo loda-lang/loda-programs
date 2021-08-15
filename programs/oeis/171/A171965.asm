@@ -7,3 +7,4 @@ lpb $0
   seq $2,56827 ; a(n) = floor(n^2/6).
   add $1,$2
 lpe
+mov $0,$1

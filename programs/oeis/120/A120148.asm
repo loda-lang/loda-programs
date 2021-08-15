@@ -12,5 +12,4 @@ lpe
 mov $0,1
 div $2,2
 add $0,$2
-mov $1,$0
-add $1,3
+add $0,3

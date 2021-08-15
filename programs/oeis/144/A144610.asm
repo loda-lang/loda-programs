@@ -1,11 +1,10 @@
 ; A144610: Sturmian word of slope e.
 ; 0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1
 
-mov $1,$0
-seq $1,43657 ; Numbers whose base-13 representation has exactly 2 runs.
-mov $2,$1
+seq $0,43657 ; Numbers whose base-13 representation has exactly 2 runs.
+mov $2,$0
 div $2,2
 add $2,5
-mul $1,$2
-add $1,1
-mod $1,2
+mul $0,$2
+add $0,1
+mod $0,2

@@ -3,5 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,79 ; Powers of 2: a(n) = 2^n.
-mov $1,$0
-sub $1,5
+sub $0,5

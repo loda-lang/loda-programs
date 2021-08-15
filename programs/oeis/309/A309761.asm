@@ -3,7 +3,6 @@
 
 seq $0,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
 seq $0,204094 ; Numbers whose set of base 10 digits is {0,7}.
-mov $1,$0
-sub $1,77
-div $1,70
-add $1,1
+sub $0,77
+div $0,70
+add $0,1

@@ -5,5 +5,4 @@ mov $2,$0
 div $0,2
 seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

@@ -12,3 +12,4 @@ lpb $3
   seq $0,4164 ; Sum of digits of n^3.
   add $1,$0
 lpe
+mov $0,$1

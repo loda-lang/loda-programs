@@ -3,5 +3,4 @@
 
 seq $0,3984 ; Table of max(x,y), where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

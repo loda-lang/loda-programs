@@ -8,3 +8,4 @@ lpb $0
   mov $1,3
 lpe
 pow $1,$2
+mov $0,$1

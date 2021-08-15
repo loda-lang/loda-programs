@@ -3,5 +3,4 @@
 
 seq $0,32925 ; Numbers whose set of base 4 digits is {1,2}.
 seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
-mov $1,$0
-div $1,3
+div $0,3

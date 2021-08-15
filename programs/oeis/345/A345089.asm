@@ -4,7 +4,6 @@
 mul $0,2
 add $0,2
 seq $0,111254 ; a(n) = Prime[n+2]+Prime[n]+1.
-mov $1,$0
-sub $1,17
-div $1,2
-add $1,8
+sub $0,17
+div $0,2
+add $0,8

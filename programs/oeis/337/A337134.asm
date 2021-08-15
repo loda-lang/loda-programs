@@ -11,3 +11,4 @@ lpb $2
   seq $0,103128 ; a(n) = floor(sqrt(2n-1)).
   add $1,$0
 lpe
+mov $0,$1

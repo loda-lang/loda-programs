@@ -4,5 +4,4 @@
 seq $0,175216 ; The first nonprimes after the primes.
 sub $0,1
 div $0,10
-mov $1,$0
-add $1,1
+add $0,1

@@ -5,4 +5,3 @@ seq $0,40304 ; Continued fraction for sqrt(322).
 lpb $0
   dif $0,8
 lpe
-mov $1,$0

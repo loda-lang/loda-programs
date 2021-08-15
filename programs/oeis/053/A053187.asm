@@ -8,3 +8,4 @@ lpe
 pow $1,2
 mul $1,2
 div $1,8
+mov $0,$1

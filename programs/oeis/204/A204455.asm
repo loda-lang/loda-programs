@@ -4,6 +4,5 @@
 mul $0,2
 add $0,1
 seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

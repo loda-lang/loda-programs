@@ -3,5 +3,4 @@
 
 max $0,1
 seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
-mov $1,$0
-add $1,1
+add $0,1

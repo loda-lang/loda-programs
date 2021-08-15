@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,113979 ; Number of compositions of n with an even number of 1's.
-mov $1,$0
-mul $1,2
+mul $0,2

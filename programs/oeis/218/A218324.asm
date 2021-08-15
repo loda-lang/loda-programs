@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,100161 ; Structured disdyakis dodecahedral numbers (vertex structure 9).
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,175216 ; The first nonprimes after the primes.
 seq $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
-mov $1,$0

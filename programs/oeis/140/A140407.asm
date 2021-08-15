@@ -20,5 +20,4 @@ lpb $2
   mov $0,$3
   mov $2,0
 lpe
-mov $1,$0
-sub $1,1
+sub $0,1

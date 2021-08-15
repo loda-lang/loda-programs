@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,254627 ; Indices of centered pentagonal numbers (A005891) that are also triangular numbers (A000217).
-mov $1,$0
-mul $1,2
-sub $1,1
+mul $0,2
+sub $0,1

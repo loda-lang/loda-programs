@@ -3,5 +3,4 @@
 
 seq $0,276190 ; Sum of the squares of the digits of the base-4 representation of n.
 mod $0,3
-mov $1,$0
-add $1,1
+add $0,1

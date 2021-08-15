@@ -5,3 +5,4 @@ seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n
 mov $1,2
 pow $1,$0
 sub $1,1
+mov $0,$1

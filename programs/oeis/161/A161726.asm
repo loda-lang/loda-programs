@@ -10,7 +10,6 @@ add $2,$0
 sub $0,3
 sub $2,1799
 mul $0,$2
-mov $1,$0
-div $1,8
-mul $1,2
-add $1,409
+div $0,8
+mul $0,2
+add $0,409

@@ -3,4 +3,3 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,60884 ; a(n) = n^4 - n^3 + n^2 - n + 1.
-mov $1,$0

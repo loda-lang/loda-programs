@@ -6,3 +6,4 @@ lpb $0
   add $1,17
 lpe
 div $1,17
+mov $0,$1

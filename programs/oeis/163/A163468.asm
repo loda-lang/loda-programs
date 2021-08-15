@@ -5,5 +5,4 @@ seq $0,40 ; The prime numbers.
 sub $0,1
 mul $0,2
 seq $0,62298 ; Number of nonprimes <= n.
-mov $1,$0
-add $1,2
+add $0,2

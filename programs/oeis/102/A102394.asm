@@ -6,3 +6,4 @@ seq $0,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0
 mul $2,$0
 add $2,$0
 add $1,$2
+mov $0,$1

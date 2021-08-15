@@ -3,5 +3,4 @@
 
 seq $0,184624 ; a(n) = floor(n*r +h), where r=sqrt(2), h=-1/4; complement of A184619.
 div $0,2
-mov $1,$0
-add $1,1
+add $0,1

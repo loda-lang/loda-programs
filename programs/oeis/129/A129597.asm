@@ -6,5 +6,4 @@ mul $0,2
 pow $0,2
 sub $0,1
 seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
-mov $1,$0
-div $1,2
+div $0,2

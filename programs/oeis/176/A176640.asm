@@ -7,3 +7,4 @@ lpb $0
   seq $2,5985 ; Length of longest trail (i.e., path with all distinct edges) on the edges of an n-cube.
   add $1,$2
 lpe
+mov $0,$1

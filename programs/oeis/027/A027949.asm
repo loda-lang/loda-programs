@@ -6,4 +6,3 @@ seq $0,14162 ; Apply partial sum operator thrice to Fibonacci numbers.
 mov $2,$0
 cmp $2,0
 add $0,$2
-mov $1,$0

@@ -19,3 +19,4 @@ lpb $2
   lpe
   mov $2,0
 lpe
+mov $0,$1

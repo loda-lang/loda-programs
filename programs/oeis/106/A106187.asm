@@ -3,5 +3,5 @@
 
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 mov $1,$0
-mul $1,2
-bin $1,$0
+mul $0,2
+bin $0,$1

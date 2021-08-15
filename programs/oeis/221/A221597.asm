@@ -40,3 +40,4 @@ lpb $10
   add $1,$7
   sub $10,1
 lpe
+mov $0,$1

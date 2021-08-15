@@ -8,3 +8,4 @@ lpb $0
   seq $2,542 ; Sum of 8th powers: 1^8 + 2^8 + ... + n^8.
   add $1,$2
 lpe
+mov $0,$1

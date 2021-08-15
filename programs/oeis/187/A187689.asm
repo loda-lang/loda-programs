@@ -3,4 +3,3 @@
 
 seq $0,187690 ; Complement of A187689.
 div $0,2
-mov $1,$0

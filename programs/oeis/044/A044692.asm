@@ -5,4 +5,3 @@ mul $0,2
 add $0,1
 seq $0,44672 ; Numbers n such that string 4,4 occurs in the base 9 representation of n but not of n+1.
 div $0,2
-mov $1,$0

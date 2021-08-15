@@ -4,10 +4,11 @@
 
 add $0,1
 mov $2,$0
-cal $2,45 ; Fibonacci
+seq $2,45 ; Fibonacci
 mov $1,1
 lpb $0
-  mul $1,2   ; Raise 2 to the n'th power
-  mod $1,$2  ; For every raise, modulo with Fibonacci(n)
+  mul $1,2 ; Raise 2 to the n'th power
+  mod $1,$2 ; For every raise, modulo with Fibonacci(n)
   sub $0,1
 lpe
+mov $0,$1

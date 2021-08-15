@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-mov $1,$0

@@ -3,6 +3,6 @@
 
 mul $0,2
 mov $1,$0
-seq $1,173722 ; Partial sums of round(n^2/8).
-mul $1,$0
-div $1,2
+seq $0,173722 ; Partial sums of round(n^2/8).
+mul $0,$1
+div $0,2

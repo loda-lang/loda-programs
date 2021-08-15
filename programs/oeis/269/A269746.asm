@@ -12,3 +12,4 @@ lpb $2
   seq $0,130128 ; Triangle read by rows: T(n,k) = (n - k + 1)*2^(k-1).
   add $1,$0
 lpe
+mov $0,$1

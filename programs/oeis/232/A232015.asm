@@ -4,4 +4,3 @@
 seq $0,91000 ; Number of closed walks of length n on the Petersen graph.
 mul $0,2
 sub $0,1
-mov $1,$0

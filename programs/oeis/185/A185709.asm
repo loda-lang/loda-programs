@@ -15,3 +15,4 @@ lpb $3
   dif $3,10
 lpe
 div $1,2
+mov $0,$1

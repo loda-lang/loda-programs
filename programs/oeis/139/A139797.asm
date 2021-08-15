@@ -8,3 +8,4 @@ lpb $0
   seq $2,131666 ; First differences of (A113405 prefixed with a 0).
   add $1,$2
 lpe
+mov $0,$1

@@ -6,3 +6,4 @@ sub $1,$0
 seq $0,178729 ; a(n) = n XOR 3n, where XOR is bitwise XOR.
 add $1,$0
 div $1,4
+mov $0,$1

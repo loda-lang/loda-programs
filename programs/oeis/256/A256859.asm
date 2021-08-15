@@ -3,9 +3,9 @@
 
 add $0,1
 mov $1,$0
-add $0,1
-seq $0,101357 ; Partial sums of A060354.
-mul $1,255936
-mul $0,$1
-mov $1,$0
-div $1,767808
+mul $0,255936
+add $1,1
+seq $1,101357 ; Partial sums of A060354.
+mul $1,$0
+mov $0,$1
+div $0,767808

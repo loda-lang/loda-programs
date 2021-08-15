@@ -4,6 +4,5 @@
 add $0,1
 seq $0,788 ; Total number of 1's in binary expansions of 0, ..., n.
 div $0,3
-mov $1,$0
-mul $1,4
-add $1,208
+mul $0,4
+add $0,208

@@ -8,6 +8,5 @@ lpb $0
   sub $0,6
   dif $0,6
 lpe
-mov $1,$0
-div $1,6
-add $1,1
+div $0,6
+add $0,1

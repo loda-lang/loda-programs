@@ -5,12 +5,10 @@
 
 add $0,1
 mov $1,$0
-
-lpb $0
-    mov $2,$0
-    mul $2,2
-    cal $2,4216 ; a(n) = floor(log_10(n)).
-    add $1,$2 ; Sum up floor(log_10(2*i)
-    
-    sub $0,1
+lpb $1
+  mov $2,$1
+  mul $2,2
+  seq $2,4216 ; a(n) = floor(log_10(n)).
+  add $0,$2 ; Sum up floor(log_10(2*i)
+  sub $1,1
 lpe

@@ -7,3 +7,4 @@ lpb $0
   seq $2,293543 ; a(n) is the least integer k such that k/Fibonacci(n) > 1/3.
   add $1,$2
 lpe
+mov $0,$1

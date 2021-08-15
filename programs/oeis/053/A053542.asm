@@ -3,4 +3,3 @@
 
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 seq $0,7920 ; Smallest number k such that n + k is prime.
-mov $1,$0

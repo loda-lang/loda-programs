@@ -4,4 +4,3 @@
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
 sub $0,1
 mul $0,8
-mov $1,$0

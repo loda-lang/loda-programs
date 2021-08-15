@@ -3,4 +3,3 @@
 
 seq $0,165257 ; Triangle in which n-th row is binomial(n+k-1,k), for column k=1..n.
 bin $0,2
-mov $1,$0

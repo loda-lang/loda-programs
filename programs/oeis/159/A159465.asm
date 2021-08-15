@@ -11,3 +11,4 @@ lpb $2
   seq $0,88828 ; Nonsquare positive odd numbers.
   add $1,$0
 lpe
+mov $0,$1

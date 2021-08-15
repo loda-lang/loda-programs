@@ -6,3 +6,4 @@ mul $1,$0
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
 add $1,$0
 add $1,5
+mov $0,$1

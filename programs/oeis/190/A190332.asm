@@ -5,6 +5,5 @@ mov $2,$0
 seq $0,22838 ; Beatty sequence for sqrt(3); complement of A054406.
 mul $0,4
 div $0,3
-mov $1,$0
-add $1,1
-add $1,$2
+add $0,1
+add $0,$2

@@ -14,3 +14,4 @@ lpb $2
   add $1,$0
 lpe
 mod $1,2
+mov $0,$1

@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,24930 ; a(n) = sum of remainders of n mod 1,3,5,...,2k-1, where k = [ (n+1)/2 ].
-mov $1,$0

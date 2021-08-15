@@ -5,4 +5,3 @@ mul $0,4
 add $0,3
 seq $0,48725 ; a(n) = Xmult(n,5) or rule90(n,1).
 div $0,4
-mov $1,$0

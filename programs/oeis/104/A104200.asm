@@ -4,4 +4,3 @@
 seq $0,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
 sub $0,1
 seq $0,40 ; The prime numbers.
-mov $1,$0

@@ -3,6 +3,5 @@
 
 seq $0,78113 ; Let u(1)=u(2)=1, u(3)=n, u(k) = (1/2)*abs(2*u(k-1) -u(k-2)-u(k-3)); sequence gives values of n such that sum(k>=1, u(k)) is an integer.
 dif $0,2
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

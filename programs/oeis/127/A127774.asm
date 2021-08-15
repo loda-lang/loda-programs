@@ -3,5 +3,4 @@
 
 seq $0,127949 ; A000012 as an infinite lower triangular matrix with all 1's; A127899 = a simple transform; then A000012 * A127899. Given A051340, change all 1's to -1. Triangle read by rows, (n-1) -1's followed by "n".
 add $0,2
-mov $1,$0
-bin $1,3
+bin $0,3

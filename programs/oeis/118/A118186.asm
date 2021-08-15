@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,117403 ; a(n) = Sum_{k=0..floor(n/2)} 2^((n-2*k)*k) for n>=0.
-mov $1,$0

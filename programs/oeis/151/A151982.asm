@@ -4,4 +4,3 @@
 sub $0,1
 div $0,3
 seq $0,108035 ; Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n times.
-mov $1,$0

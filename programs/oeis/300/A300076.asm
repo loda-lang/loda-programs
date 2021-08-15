@@ -3,10 +3,10 @@
 
 add $0,4
 mov $1,$0
-gcd $0,6
-div $1,2
-add $1,5
+div $0,2
+add $0,5
+gcd $1,6
 mov $2,1
-div $2,$0
-add $1,$2
-sub $1,7
+div $2,$1
+add $0,$2
+sub $0,7

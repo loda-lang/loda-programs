@@ -3,21 +3,21 @@
 
 mov $1,$0
 mov $5,$0
-lpb $1
-  lpb $0
-    mov $2,$1
+lpb $0
+  lpb $1
+    mov $2,$0
+    add $0,3
     seq $2,60145 ; a(n) = floor(n/tau) - floor(n/(1 + tau)).
-    mov $0,$2
-    add $0,1
-    add $1,3
+    mov $1,$2
+    add $1,1
   lpe
-  mov $1,2
+  mov $0,2
 lpe
-mov $4,$0
+mov $4,$1
 cmp $4,0
-add $0,$4
-mov $1,$0
-add $1,3
+add $1,$4
+mov $0,$1
+add $0,3
 mov $3,$5
 mul $3,3
-add $1,$3
+add $0,$3

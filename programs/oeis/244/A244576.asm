@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,244049 ; Sum of all proper divisors of all positive integers <= n.
-mov $1,$0

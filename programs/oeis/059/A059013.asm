@@ -5,4 +5,3 @@ mul $0,2
 seq $0,59011 ; Odd number of 0's and 1's in binary expansion.
 sub $0,1
 div $0,2
-mov $1,$0

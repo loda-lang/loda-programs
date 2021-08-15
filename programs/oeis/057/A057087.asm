@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,106568 ; Expansion of 4*x/(1-4*x-4*x^2).
-mov $1,$0
-div $1,4
+div $0,4

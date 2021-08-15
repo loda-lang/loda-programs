@@ -6,4 +6,3 @@ seq $0,49559 ; a(n) = gcd(n - 1, phi(n)).
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

@@ -12,3 +12,4 @@ lpb $0
 lpe
 bin $1,$3
 mod $1,2
+mov $0,$1

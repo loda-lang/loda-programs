@@ -6,5 +6,4 @@ mov $2,$0
 seq $0,52937 ; Expansion of (2-3*x-x^2)/((1-x)*(1-2*x-x^2)).
 sub $0,$2
 div $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

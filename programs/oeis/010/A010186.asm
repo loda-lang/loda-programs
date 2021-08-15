@@ -5,3 +5,4 @@ seq $0,10158 ; Continued fraction for sqrt(85).
 add $1,$0
 div $0,4
 add $1,$0
+mov $0,$1

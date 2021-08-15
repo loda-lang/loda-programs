@@ -7,3 +7,4 @@ lpb $0
   seq $2,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
   add $1,$2
 lpe
+mov $0,$1

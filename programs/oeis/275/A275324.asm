@@ -3,4 +3,3 @@
 
 seq $0,56040 ; Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).
 dif $0,2
-mov $1,$0

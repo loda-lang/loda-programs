@@ -9,3 +9,4 @@ lpb $0
 lpe
 div $1,42
 add $1,6
+mov $0,$1

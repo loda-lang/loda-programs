@@ -11,3 +11,4 @@ lpb $0
   mov $0,0
   seq $1,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 lpe
+mov $0,$1

@@ -12,3 +12,4 @@ lpb $2
   seq $0,8966 ; 1 if n is squarefree, else 0.
   add $1,$0
 lpe
+mov $0,$1

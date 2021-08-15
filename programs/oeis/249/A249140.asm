@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
-mov $1,$0

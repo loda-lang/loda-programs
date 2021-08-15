@@ -7,5 +7,4 @@ lpb $0
   dif $0,4
 lpe
 gcd $0,4
-mov $1,$0
-div $1,4
+div $0,4

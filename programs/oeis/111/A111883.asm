@@ -3,4 +3,3 @@
 
 seq $0,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
 pow $0,2
-mov $1,$0

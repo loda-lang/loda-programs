@@ -3,11 +3,11 @@
 
 add $0,3
 mov $1,$0
-lpb $0
-  add $1,1
-  add $1,$0
-  trn $0,2
-  sub $1,$0
-  trn $0,3
+lpb $1
+  add $0,1
+  add $0,$1
+  trn $1,2
+  sub $0,$1
+  trn $1,3
 lpe
-sub $1,6
+sub $0,6

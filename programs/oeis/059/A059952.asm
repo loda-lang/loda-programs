@@ -5,9 +5,9 @@ trn $2,$0
 add $2,2
 sub $0,$2
 mov $1,$0
-gcd $0,2
+gcd $1,2
 sub $2,55
-mul $0,$2
-sub $1,$0
-div $1,2
-sub $1,25
+mul $1,$2
+sub $0,$1
+div $0,2
+sub $0,25

@@ -3,4 +3,3 @@
 
 trn $0,2
 seq $0,140475 ; 1 along with primes greater than 3.
-mov $1,$0

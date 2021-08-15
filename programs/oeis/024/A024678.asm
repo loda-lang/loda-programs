@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,24675 ; Average of two consecutive odd primes.
 add $1,$0
 sub $1,2
+mov $0,$1

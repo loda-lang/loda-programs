@@ -3,4 +3,3 @@
 
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mov $1,$0

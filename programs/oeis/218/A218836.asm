@@ -3,7 +3,6 @@
 
 mul $0,2
 seq $0,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
-mov $1,$0
-sub $1,2
-div $1,2
-add $1,1
+sub $0,2
+div $0,2
+add $0,1

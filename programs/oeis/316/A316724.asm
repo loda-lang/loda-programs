@@ -7,3 +7,4 @@ lpb $0
   seq $2,317322 ; Multiples of 22 and odd numbers interleaved.
   add $1,$2
 lpe
+mov $0,$1

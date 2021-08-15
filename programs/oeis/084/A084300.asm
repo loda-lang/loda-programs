@@ -3,4 +3,3 @@
 
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mod $0,6
-mov $1,$0

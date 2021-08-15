@@ -4,37 +4,29 @@
 ; a(n) = A163617(n) AND A269173(n).
 
 mov $5,$0
-cal $5,163617 ; a(2*n) = 2*a(n), a(2*n + 1) = 2*a(n) + 2 + (-1)^n, for all n in Z.
-
-cal $0,269173 ; Formula for Wolfram's Rule 126 cellular automaton: a(n) = (n XOR 2n) OR (n XOR 4n).
-
+seq $5,163617 ; a(2*n) = 2*a(n), a(2*n + 1) = 2*a(n) + 2 + (-1)^n, for all n in Z.
+seq $0,269173 ; Formula for Wolfram's Rule 126 cellular automaton: a(n) = (n XOR 2n) OR (n XOR 4n).
 ; Determine the number of times to loop
 mov $2,$5
 max $2,$0
-cal $2,70939 ; Length of binary representation of Fibonacci(n+1).
-
-mov $4,1  ; Inital scale factor
+seq $2,70939 ; Length of binary representation of Fibonacci(n+1).
+mov $4,1 ; Inital scale factor
 lpb $2
-    ; Take the lowest bit of A269173
-    mov $3,$0
-    mod $3,2
-    
-    ; Take the lowest bit of A163617
-    mov $6,$5
-    mod $6,2
-    
-    ; Do bitwise OR
-    mul $3,$6
-    ; Now $3 holds the bitwise OR with $0 and $5
-
-    ; Scale up the bit, and add to result
-    mul $3,$4
-    add $1,$3
-    
-    div $0,2 ; Remove the lowest bit from A269173
-    div $5,2 ; Remove the lowest bit from A163617
-    
-    mul $4,2 ; Double the scale factor. Example: 1,2,4,8,16,32
-    sub $2,1
+  ; Take the lowest bit of A269173
+  mov $3,$0
+  mod $3,2
+  ; Take the lowest bit of A163617
+  mov $6,$5
+  mod $6,2
+  ; Do bitwise OR
+  mul $3,$6
+  ; Now $3 holds the bitwise OR with $0 and $5
+  ; Scale up the bit, and add to result
+  mul $3,$4
+  add $1,$3
+  div $0,2 ; Remove the lowest bit from A269173
+  div $5,2 ; Remove the lowest bit from A163617
+  mul $4,2 ; Double the scale factor. Example: 1,2,4,8,16,32
+  sub $2,1
 lpe
-
+mov $0,$1

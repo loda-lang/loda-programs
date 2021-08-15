@@ -7,3 +7,4 @@ seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), wh
 add $1,$2
 add $1,$0
 mod $1,2
+mov $0,$1

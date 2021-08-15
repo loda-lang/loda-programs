@@ -5,7 +5,7 @@ lpb $0
   bin $0,2
 lpe
 mov $1,$0
-add $0,2
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mul $1,2
-div $1,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $0,2
+add $1,2
+div $0,$1

@@ -4,5 +4,4 @@
 mul $0,2
 trn $0,1
 seq $0,22840 ; Beatty sequence for sqrt(6).
-mov $1,$0
-mod $1,2
+mod $0,2

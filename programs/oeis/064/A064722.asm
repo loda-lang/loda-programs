@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,49711 ; a(n) = n - prevprime(n).
-mov $1,$0
-sub $1,1
+sub $0,1

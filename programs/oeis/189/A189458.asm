@@ -3,4 +3,3 @@
 
 seq $0,188383 ; Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
 div $0,2
-mov $1,$0

@@ -3,6 +3,5 @@
 
 seq $0,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
 seq $0,161511 ; Number of 1...0 pairs in the binary representation of 2n.
-mov $1,$0
-sub $1,1
-mul $1,4
+sub $0,1
+mul $0,4

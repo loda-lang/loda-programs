@@ -4,6 +4,6 @@
 add $0,2
 pow $0,2
 mov $1,$0
-gcd $0,2
-mul $1,$0
-sub $1,$0
+gcd $1,2
+mul $0,$1
+sub $0,$1

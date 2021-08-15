@@ -5,10 +5,10 @@ mul $0,2
 mov $2,$0
 seq $0,80764 ; First differences of A049472, floor(n/sqrt(2)).
 mov $1,$0
-add $0,$2
-cmp $1,0
-div $1,$0
-add $1,3
-add $0,$1
-mov $1,$0
-sub $1,3
+cmp $0,0
+add $1,$2
+div $0,$1
+add $0,3
+add $1,$0
+mov $0,$1
+sub $0,3

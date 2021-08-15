@@ -3,6 +3,5 @@
 
 add $0,1
 mod $0,11
-mov $1,$0
-gcd $1,3
-div $1,2
+gcd $0,3
+div $0,2

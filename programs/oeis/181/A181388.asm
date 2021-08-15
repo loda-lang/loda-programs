@@ -69,3 +69,4 @@ lpb $4
   add $1,$18
 lpe
 div $1,2
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

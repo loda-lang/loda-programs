@@ -6,3 +6,4 @@ add $1,$0
 seq $0,55615 ; a(n) = n*moebius(n) (cf. A008683).
 mul $1,$0
 div $1,2
+mov $0,$1

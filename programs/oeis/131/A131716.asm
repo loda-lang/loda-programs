@@ -10,3 +10,4 @@ lpb $0
   add $1,$0
 lpe
 mod $1,10
+mov $0,$1

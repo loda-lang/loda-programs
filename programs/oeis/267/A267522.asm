@@ -3,10 +3,9 @@
 
 mov $2,$0
 add $0,2
-mov $1,$0
 add $2,$0
 mul $2,2
 bin $2,2
-mul $1,$2
-div $1,12
-mul $1,8
+mul $0,$2
+div $0,12
+mul $0,8

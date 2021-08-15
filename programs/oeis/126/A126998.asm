@@ -3,4 +3,3 @@
 
 seq $0,120533 ; Primes having a prime number of digits.
 bin $0,11
-mov $1,$0

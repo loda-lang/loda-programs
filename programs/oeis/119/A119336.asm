@@ -11,3 +11,4 @@ lpb $2
   seq $0,306847 ; a(n) = Sum_{k=0..floor(n/6)} binomial(n,6*k).
   add $1,$0
 lpe
+mov $0,$1

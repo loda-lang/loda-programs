@@ -4,5 +4,4 @@
 seq $0,65621 ; Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
 div $0,2
 seq $0,337909 ; Distinct terms of A080079 in the order in which they appear.
-mov $1,$0
-sub $1,1
+sub $0,1

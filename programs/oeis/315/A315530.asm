@@ -39,3 +39,4 @@ lpb $9
   sub $1,$8
   mov $9,0
 lpe
+mov $0,$1

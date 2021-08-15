@@ -5,4 +5,3 @@ add $0,1
 mov $2,$0
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 div $0,$2
-mov $1,$0

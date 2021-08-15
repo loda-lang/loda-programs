@@ -16,3 +16,4 @@ lpb $2
   min $1,1
   mul $1,$3
 lpe
+mov $0,$1

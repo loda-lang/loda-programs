@@ -2,8 +2,8 @@
 ; 1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,0,1,0,0,1,1,1,1,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1
 
 mov $1,$0
-trn $0,1
-seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
-add $1,$0
-add $1,1
-mod $1,2
+trn $1,1
+seq $1,8507 ; Number of odd composite numbers less than n-th odd prime.
+add $0,$1
+add $0,1
+mod $0,2

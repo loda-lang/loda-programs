@@ -4,4 +4,3 @@
 mov $2,$0
 seq $2,224996 ; Floor(1/f(x^(1/n))) for x = 2, where f computes the fractional part.
 add $0,$2
-mov $1,$0

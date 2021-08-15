@@ -4,4 +4,3 @@
 mul $0,2
 trn $0,1
 seq $0,2821 ; a(n) = nearest integer to n^(3/2).
-mov $1,$0

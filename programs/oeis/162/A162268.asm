@@ -15,3 +15,4 @@ lpb $0
   trn $5,8
   mul $5,2
 lpe
+mov $0,$1

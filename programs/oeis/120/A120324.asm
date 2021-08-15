@@ -3,7 +3,6 @@
 
 gcd $0,6
 add $0,7
-mov $1,$0
-gcd $1,20
-sub $1,2
-div $1,2
+gcd $0,20
+sub $0,2
+div $0,2

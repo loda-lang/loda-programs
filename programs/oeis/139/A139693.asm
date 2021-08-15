@@ -6,4 +6,3 @@ seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 sub $0,$2
 add $2,$0
 mul $0,$2
-mov $1,$0

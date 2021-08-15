@@ -20,3 +20,4 @@ lpe
 mov $1,3
 add $1,$4
 add $1,1
+mov $0,$1

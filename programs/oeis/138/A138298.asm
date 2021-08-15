@@ -86,3 +86,4 @@ lpb $4
   lpe
   add $1,$19
 lpe
+mov $0,$1

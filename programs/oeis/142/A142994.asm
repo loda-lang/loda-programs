@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,69038 ; Expansion of x*(1+x)^4/(1-x)^6.
-mov $1,$0

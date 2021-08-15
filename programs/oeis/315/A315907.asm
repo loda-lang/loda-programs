@@ -4,8 +4,8 @@
 mul $0,2
 trn $0,1
 mov $1,$0
-lpb $0
-  trn $0,3
-  add $1,4
+lpb $1
+  add $0,4
+  trn $1,3
 lpe
-add $1,1
+add $0,1

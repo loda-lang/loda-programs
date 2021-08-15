@@ -5,4 +5,3 @@ seq $0,259796 ; Number of partitions of 3^n into n-th powers.
 mul $0,2
 sub $0,2
 div $0,4
-mov $1,$0

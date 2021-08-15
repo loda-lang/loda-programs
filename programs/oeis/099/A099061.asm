@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,960 ; Flavius Josephus's sieve: Start with the natural numbers; at the k-th sieving step, remove every (k+1)-st term of the sequence remaining after the (k-1)-st sieving step; iterate.
-mov $1,$0

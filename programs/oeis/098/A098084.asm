@@ -3,4 +3,3 @@
 
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 seq $0,7920 ; Smallest number k such that n + k is prime.
-mov $1,$0

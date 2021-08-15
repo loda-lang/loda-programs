@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,183572 ; a(n) = n + floor(sqrt(2*n-1)).
-mov $1,$0
-sub $1,2
+sub $0,2

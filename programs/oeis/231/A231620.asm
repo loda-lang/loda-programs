@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,930 ; Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
-mov $1,$0

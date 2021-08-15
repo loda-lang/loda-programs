@@ -3,4 +3,3 @@
 
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 max $0,2
-mov $1,$0

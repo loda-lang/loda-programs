@@ -3,4 +3,3 @@
 
 seq $0,165 ; Double factorial of even numbers: (2n)!! = 2^n*n!.
 seq $0,55642 ; Number of digits in decimal expansion of n.
-mov $1,$0

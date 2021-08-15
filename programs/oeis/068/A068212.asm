@@ -5,4 +5,3 @@ add $0,2
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
 seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
-mov $1,$0

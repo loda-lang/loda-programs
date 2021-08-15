@@ -3,5 +3,4 @@
 
 seq $0,269910 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 trn $0,2
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,46992 ; a(n) = Sum_{k=1..n} pi(k) (cf. A000720).
-mov $1,$0
-mul $1,2
+mul $0,2

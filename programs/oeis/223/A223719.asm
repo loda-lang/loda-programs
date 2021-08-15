@@ -3,4 +3,3 @@
 
 seq $0,223718 ; Number of nX1 0..2 arrays with rows, antidiagonals and columns unimodal.
 pow $0,2
-mov $1,$0

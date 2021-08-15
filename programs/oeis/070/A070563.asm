@@ -7,8 +7,8 @@ lpe
 seq $0,64987 ; a(n) = n*sigma(n).
 add $0,7
 mov $1,$0
-div $0,3
-add $0,$1
-add $0,1
-mov $1,$0
-mod $1,2
+div $1,3
+add $1,$0
+add $1,1
+mov $0,$1
+mod $0,2

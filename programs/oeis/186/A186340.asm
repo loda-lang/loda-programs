@@ -7,3 +7,4 @@ lpb $0
   trn $0,3
 lpe
 pow $1,$2
+mov $0,$1

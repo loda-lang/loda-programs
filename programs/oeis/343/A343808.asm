@@ -7,3 +7,4 @@ lpb $0
   seq $2,62074 ; a(n) = n^3 * 3^n.
   add $1,$2
 lpe
+mov $0,$1

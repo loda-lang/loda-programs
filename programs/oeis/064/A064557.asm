@@ -3,4 +3,3 @@
 
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

@@ -7,7 +7,6 @@ mul $2,$0
 sub $2,1
 mul $0,$2
 mul $0,$2
-mov $1,$0
-mul $1,6
-div $1,36
-mul $1,3
+mul $0,6
+div $0,36
+mul $0,3

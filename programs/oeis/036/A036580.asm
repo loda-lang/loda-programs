@@ -4,3 +4,4 @@
 seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 sub $1,$0
 add $1,2
+mov $0,$1

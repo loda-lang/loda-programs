@@ -11,3 +11,4 @@ lpb $2
   seq $0,35250 ; Number of primes between n and 2n (inclusive).
   add $1,$0
 lpe
+mov $0,$1

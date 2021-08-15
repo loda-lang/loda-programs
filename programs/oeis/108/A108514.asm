@@ -3,19 +3,19 @@
 
 add $0,1
 mov $1,$0
-lpb $0
-  lpb $1
-    mov $3,$1
+lpb $1
+  lpb $0
+    mov $3,$0
     lpb $3
-      mul $0,2
-      sub $1,4
-      mov $2,$0
+      sub $0,4
+      mul $1,2
+      mov $2,$1
       cmp $2,0
-      add $0,$2
-      dif $3,$0
+      add $1,$2
+      dif $3,$1
     lpe
   lpe
-  sub $0,1
-  add $1,1
+  add $0,1
+  sub $1,1
 lpe
-div $1,2
+div $0,2

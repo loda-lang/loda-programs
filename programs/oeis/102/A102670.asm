@@ -7,3 +7,4 @@ lpb $0
   seq $2,102669 ; Number of digits >= 2 in decimal representation of n.
   add $1,$2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,75327 ; Sum of n-th pair in A075325.
 div $0,3
-mov $1,$0

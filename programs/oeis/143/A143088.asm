@@ -3,4 +3,3 @@
 
 seq $0,130328 ; Triangle of differences between powers of 2, read by rows.
 seq $0,129527 ; a(2n) = a(n) + 2n, a(2n+1) = 2n + 1.
-mov $1,$0

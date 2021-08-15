@@ -6,6 +6,5 @@ seq $0,66096 ; Duplicate values in A060143.
 sub $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,1
-mov $1,$0
-trn $1,1
-add $1,2
+trn $0,1
+add $0,2

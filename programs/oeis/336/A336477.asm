@@ -9,8 +9,7 @@ lpe
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 sub $0,10
-mov $1,$0
-mod $1,8
-add $1,10
-mod $1,10
-div $1,9
+mod $0,8
+add $0,10
+mod $0,10
+div $0,9

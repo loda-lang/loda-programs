@@ -4,5 +4,4 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 bin $0,2
 max $0,1
-mov $1,$0
-mul $1,3
+mul $0,3

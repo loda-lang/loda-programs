@@ -12,3 +12,4 @@ lpb $0
   div $0,10
   mul $3,2
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,294091 ; Numbers k such that (k - 1)/2 is prime that are not congruent to -1 mod 8.
 pow $0,2
-mov $1,$0
-div $1,8
+div $0,8

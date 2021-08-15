@@ -1,9 +1,9 @@
 ; A080817: Leading diagonal of triangle in A080818.
 ; 1,3,6,10,6,10,15,8,13,19,26,15,22,30,16,24,33,43,25,35,46,25,36,48,61,36,49,63,35,49,64,33,48,64,81,46,63,81,43,61,80,100,58,78,99,54,75,97,49,71,94,118,66,90,115,60,85,111,138,79,106,134,72,100,129,159,93,123
 
-add $0,1
 mov $1,$0
 add $0,1
-bin $0,2
-seq $0,68527 ; Difference between smallest square >= n and n.
-add $1,$0
+add $1,2
+bin $1,2
+seq $1,68527 ; Difference between smallest square >= n and n.
+add $0,$1

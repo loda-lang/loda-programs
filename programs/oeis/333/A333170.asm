@@ -11,3 +11,4 @@ lpb $3
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $1,$0
 lpe
+mov $0,$1

@@ -11,5 +11,4 @@ lpb $0
 lpe
 add $0,$3
 add $0,$3
-mov $1,$0
-div $1,6
+div $0,6

@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,34694 ; Smallest prime == 1 (mod n).
-mov $1,$0

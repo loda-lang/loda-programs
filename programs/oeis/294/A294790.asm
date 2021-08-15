@@ -4,4 +4,3 @@
 max $2,$0
 seq $0,14140 ; Apply partial sum operator twice to Catalan numbers.
 sub $0,$2
-mov $1,$0

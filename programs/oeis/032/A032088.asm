@@ -4,6 +4,5 @@
 seq $0,240437 ; Number of non-palindromic n-tuples of 5 distinct elements.
 sub $0,1
 div $0,10
-mov $1,$0
-mul $1,5
-add $1,5
+mul $0,5
+add $0,5

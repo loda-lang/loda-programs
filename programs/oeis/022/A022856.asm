@@ -3,8 +3,8 @@
 
 trn $0,2
 mov $1,$0
-trn $1,1
-bin $1,2
-add $0,$1
-mov $1,$0
-add $1,1
+trn $0,1
+bin $0,2
+add $1,$0
+mov $0,$1
+add $0,1

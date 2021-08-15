@@ -5,3 +5,4 @@ max $0,1
 add $0,6096
 seq $0,269027 ; Parity of the number of 1's in A039724(n).
 pow $1,$0
+mov $0,$1

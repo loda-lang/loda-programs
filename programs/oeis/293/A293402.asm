@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,7067 ; Nearest integer to n*tau.
-mov $1,$0

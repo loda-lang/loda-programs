@@ -3,4 +3,3 @@
 
 seq $0,132355 ; Numbers of the form 9*h^2 + 2*h, for h an integer.
 sub $0,1
-mov $1,$0

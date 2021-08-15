@@ -6,5 +6,4 @@ sub $0,1
 seq $0,97022 ; a(n) = (sigma(2n^2)-3)/6.
 gcd $0,2
 mul $0,2
-mov $1,$0
-sub $1,3
+sub $0,3

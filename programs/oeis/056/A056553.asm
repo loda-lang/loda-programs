@@ -3,4 +3,3 @@
 
 seq $0,56554 ; Powerfree kernel of 4th-powerfree part of n.
 pow $0,4
-mov $1,$0

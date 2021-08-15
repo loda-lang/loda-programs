@@ -3,7 +3,6 @@
 
 seq $0,3500 ; a(n) = 4*a(n-1) - a(n-2) with a(0) = 2, a(1) = 4.
 pow $0,2
-mov $1,$0
-sub $1,7
-div $1,2
-add $1,3
+sub $0,7
+div $0,2
+add $0,3

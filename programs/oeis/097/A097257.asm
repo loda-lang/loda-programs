@@ -3,6 +3,5 @@
 
 add $0,8190
 seq $0,32931 ; Numbers whose set of base 11 digits is {1,2}.
-mov $1,$0
-sub $1,3452271214393
-mul $1,10
+sub $0,3452271214393
+mul $0,10

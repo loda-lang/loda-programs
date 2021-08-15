@@ -12,4 +12,3 @@ lpb $0
   add $5,$3
   dif $0,$5
 lpe
-mov $1,$0

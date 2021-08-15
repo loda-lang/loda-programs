@@ -6,4 +6,3 @@ seq $0,141468 ; Zero together with the nonprime numbers A018252.
 pow $0,2
 sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

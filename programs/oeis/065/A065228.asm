@@ -9,3 +9,4 @@ lpb $0
 lpe
 mov $1,$2
 seq $1,64866 ; Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
+mov $0,$1

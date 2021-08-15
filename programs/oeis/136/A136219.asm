@@ -6,3 +6,4 @@ lpb $0
   seq $1,186354 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=3i and g(j)=j(j+1)/2 (triangular number).  Complement of A186355.
 lpe
 add $1,1
+mov $0,$1

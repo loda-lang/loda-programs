@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
-mov $1,$0

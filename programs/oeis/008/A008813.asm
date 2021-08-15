@@ -7,3 +7,4 @@ lpb $0
   trn $0,6
   add $1,$0
 lpe
+mov $0,$1

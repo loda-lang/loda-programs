@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,306957 ; a(n) = n!*binomial(10,n).
-mov $1,$0
-div $1,10
-mul $1,9
+div $0,10
+mul $0,9

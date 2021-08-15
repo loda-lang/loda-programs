@@ -7,3 +7,4 @@ lpb $0
   seq $2,254378 ; Run lengths of A228495 (Characteristic function of the odd odious numbers).
   add $1,$2
 lpe
+mov $0,$1

@@ -5,4 +5,3 @@ seq $0,321100 ; Sequence {a(n), n>=0} satisfying the continued fraction relation
 add $0,2
 dif $0,2
 mod $0,3
-mov $1,$0

@@ -4,3 +4,4 @@
 seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
 mov $1,1
 bin $1,$0
+mov $0,$1

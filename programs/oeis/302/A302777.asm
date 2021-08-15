@@ -3,4 +3,3 @@
 
 seq $0,100995 ; If n is a prime power p^m, m >= 1, then m, otherwise 0.
 seq $0,209229 ; Characteristic function of powers of 2, cf. A000079.
-mov $1,$0

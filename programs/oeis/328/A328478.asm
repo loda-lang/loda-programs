@@ -7,4 +7,3 @@ lpb $0
   div $0,$2
 lpe
 add $0,1
-mov $1,$0

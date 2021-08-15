@@ -5,5 +5,4 @@ add $0,1
 mov $1,$0
 seq $0,226044 ; Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
 mul $0,$1
-mov $1,$0
-div $1,8
+div $0,8

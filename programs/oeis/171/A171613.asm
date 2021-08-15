@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,62028 ; a(n) = n + sum of the digits of n.
-mov $1,$0

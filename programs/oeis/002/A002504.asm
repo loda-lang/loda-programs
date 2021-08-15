@@ -3,5 +3,4 @@
 
 seq $0,121259 ; Numbers n such that (3n^2+1)/4 is prime.
 add $0,1
-mov $1,$0
-div $1,2
+div $0,2

@@ -8,3 +8,4 @@ lpb $0
   seq $2,52150 ; Partial sums of A000340, second partial sums of A003462.
   add $1,$2
 lpe
+mov $0,$1

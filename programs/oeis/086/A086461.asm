@@ -3,4 +3,3 @@
 
 seq $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = ij (i>=0, j>=0).
 max $0,1
-mov $1,$0

@@ -6,5 +6,4 @@ seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, 
 lpb $0
   dif $0,2
 lpe
-mov $1,$0
-mul $1,2
+mul $0,2

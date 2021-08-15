@@ -7,5 +7,4 @@ div $0,3
 mod $2,2
 add $2,6
 add $0,$2
-mov $1,$0
-sub $1,7
+sub $0,7

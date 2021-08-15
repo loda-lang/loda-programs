@@ -8,3 +8,4 @@ lpe
 div $0,2
 gcd $1,3
 pow $1,$0
+mov $0,$1

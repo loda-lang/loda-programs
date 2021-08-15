@@ -3,5 +3,4 @@
 
 seq $0,67076 ; Numbers k such that 2*k + 3 is a prime.
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

@@ -8,3 +8,4 @@ seq $1,98090 ; Numbers k such that 2k-3 is prime.
 sub $1,7
 mul $1,2
 add $1,11
+mov $0,$1

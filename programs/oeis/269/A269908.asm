@@ -11,3 +11,4 @@ lpb $2
   seq $0,269906 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 1", based on the 5-celled von Neumann neighborhood.
   add $1,$0
 lpe
+mov $0,$1

@@ -10,5 +10,4 @@ lpb $2
   trn $2,4
   add $3,3
 lpe
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mov $1,$0

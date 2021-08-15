@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,53143 ; Smallest square divisible by n.
-mov $1,$0

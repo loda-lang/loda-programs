@@ -5,7 +5,8 @@ lpb $0
   mov $2,$0
   sub $0,1
   div $2,2
-  cal $2,2315 ; NSW numbers: a(n) = 6*a(n-1) - a(n-2); also a(n)^2 - 2*b(n)^2 = -1 with b(n)=A001653(n+1).
+  seq $2,2315 ; NSW numbers: a(n) = 6*a(n-1) - a(n-2); also a(n)^2 - 2*b(n)^2 = -1 with b(n)=A001653(n+1).
   add $1,$2
 lpe
 add $1,2
+mov $0,$1

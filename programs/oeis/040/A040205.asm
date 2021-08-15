@@ -3,7 +3,6 @@
 
 seq $0,40304 ; Continued fraction for sqrt(322).
 dif $0,4
-mov $1,$0
-mul $1,4
-div $1,5
-add $1,1
+mul $0,4
+div $0,5
+add $0,1

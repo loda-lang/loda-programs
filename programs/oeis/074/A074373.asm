@@ -3,4 +3,3 @@
 
 seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
 pow $0,2
-mov $1,$0

@@ -3,8 +3,8 @@
 
 seq $0,307119 ; a(1) = 1, for n>1, a(n) = dp(n-1) + dp(n) + dp(n+1), where dp(n) is the number of divisors of n less than n (A032741).
 mov $1,$0
-add $1,3
-lpb $1
-  mov $1,3
-  mul $1,$0
+add $0,3
+lpb $0
+  mov $0,3
+  mul $0,$1
 lpe

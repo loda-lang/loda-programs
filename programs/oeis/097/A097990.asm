@@ -4,5 +4,4 @@
 seq $0,97991 ; A puzzle: reverse digits of n^2 + 10.
 sub $0,4
 trn $0,6
-mov $1,$0
-add $1,10
+add $0,10

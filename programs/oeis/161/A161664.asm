@@ -7,3 +7,4 @@ lpb $0
   seq $2,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
   add $1,$2
 lpe
+mov $0,$1

@@ -6,3 +6,4 @@ lpb $0
   sub $0,1
   mul $1,10
 lpe
+mov $0,$1

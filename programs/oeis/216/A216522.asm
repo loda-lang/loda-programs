@@ -4,5 +4,4 @@
 mul $0,12
 add $0,4
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-mov $1,$0
-sub $1,2
+sub $0,2

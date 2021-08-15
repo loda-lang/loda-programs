@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  cal $0,301721 ; Partial sums of A301720.
+  seq $0,301721 ; Partial sums of A301720.
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -17,3 +17,4 @@ lpe
 min $4,1
 mul $4,$5
 sub $1,$4
+mov $0,$1

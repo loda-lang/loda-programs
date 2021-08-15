@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
-mov $1,$0

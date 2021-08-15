@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
-mov $1,$0

@@ -16,3 +16,4 @@ lpe
 trn $1,9
 add $1,1
 add $1,$2
+mov $0,$1

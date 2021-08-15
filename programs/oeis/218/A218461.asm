@@ -3,5 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-mov $1,$0
-seq $1,76080 ; a(n) = A076079(n)/n.
+seq $0,76080 ; a(n) = A076079(n)/n.

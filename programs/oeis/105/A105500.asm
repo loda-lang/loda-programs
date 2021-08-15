@@ -3,5 +3,4 @@
 
 seq $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
 mod $0,4
-mov $1,$0
-add $1,1
+add $0,1

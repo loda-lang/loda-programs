@@ -3,4 +3,3 @@
 
 seq $0,238949 ; Degree of divisor lattice D(n).
 trn $0,1
-mov $1,$0

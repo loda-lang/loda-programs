@@ -3,5 +3,4 @@
 
 seq $0,96 ; a(n) = n*(n+3)/2.
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-mov $1,$0
-add $1,1
+add $0,1

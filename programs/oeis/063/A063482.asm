@@ -3,5 +3,5 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-mod $0,10
-mul $1,$0
+mod $1,10
+mul $0,$1

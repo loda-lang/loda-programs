@@ -3,4 +3,3 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

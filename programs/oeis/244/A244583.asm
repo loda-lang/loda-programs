@@ -4,5 +4,4 @@
 seq $0,40 ; The prime numbers.
 mul $0,2
 seq $0,271342 ; Sum of all even divisors of all positive integers <= n.
-mov $1,$0
-div $1,2
+div $0,2

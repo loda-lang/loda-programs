@@ -4,5 +4,4 @@
 mul $0,2
 seq $0,188319 ; Positions of 0 in A188318; complement of A188320.
 sub $0,2
-mov $1,$0
-div $1,2
+div $0,2

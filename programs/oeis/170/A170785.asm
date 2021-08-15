@@ -9,3 +9,4 @@ lpb $2
   bin $2,2
 lpe
 div $1,8
+mov $0,$1

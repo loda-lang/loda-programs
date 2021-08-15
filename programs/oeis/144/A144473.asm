@@ -5,5 +5,4 @@ seq $0,158894 ; Sawtooth pattern of one, then two, then three, then four etc. co
 lpb $0
   mod $0,3
 lpe
-mov $1,$0
-sub $1,1
+sub $0,1

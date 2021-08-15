@@ -3,9 +3,9 @@
 
 add $0,1
 mov $1,$0
-mul $0,3
-seq $0,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
-lpb $0
-  sub $0,1
-  mov $1,$0
+mul $1,3
+seq $1,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
+lpb $1
+  sub $1,1
+  mov $0,$1
 lpe

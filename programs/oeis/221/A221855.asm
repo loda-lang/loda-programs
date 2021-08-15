@@ -3,6 +3,5 @@
 
 seq $0,220020 ; Number of cyclotomic cosets of 9 mod 10^n.
 div $0,4
-mov $1,$0
-add $1,1
-mul $1,2
+add $0,1
+mul $0,2

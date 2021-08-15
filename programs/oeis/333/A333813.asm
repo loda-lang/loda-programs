@@ -3,6 +3,5 @@
 
 seq $0,198644 ; 8*3^n-1.
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
-mov $1,$0
-sub $1,8
-div $1,8
+sub $0,8
+div $0,8

@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,261423 ; Largest palindrome <= n.
-add $1,$0

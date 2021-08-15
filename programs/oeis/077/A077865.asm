@@ -5,3 +5,4 @@ mov $1,2
 add $1,$0
 seq $1,28495 ; Expansion of (1-x^2)/(1-x-2*x^2+x^3).
 sub $1,1
+mov $0,$1

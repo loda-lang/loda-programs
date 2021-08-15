@@ -3,4 +3,3 @@
 
 seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $1,$0

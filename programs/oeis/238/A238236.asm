@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,60945 ; Number of compositions (ordered partitions) of n into 1's, 2's and 4's.
-mov $1,$0

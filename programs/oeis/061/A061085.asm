@@ -3,4 +3,3 @@
 
 seq $0,309809 ; a(n) is the concatenation of n and 2n+1.
 div $0,3
-mov $1,$0

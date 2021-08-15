@@ -10,3 +10,4 @@ lpe
 div $1,2
 sub $1,1
 mul $1,3
+mov $0,$1

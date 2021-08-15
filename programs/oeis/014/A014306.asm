@@ -3,4 +3,3 @@
 
 seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
 min $0,1
-mov $1,$0

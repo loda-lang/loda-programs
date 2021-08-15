@@ -7,3 +7,4 @@ lpb $0
   seq $2,66096 ; Duplicate values in A060143.
   add $1,$2
 lpe
+mov $0,$1

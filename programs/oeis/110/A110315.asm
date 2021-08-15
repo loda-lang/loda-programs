@@ -3,4 +3,3 @@
 
 seq $0,110332 ; Diagonal sums of number a triangle related to the Pell numbers.
 dif $0,2
-mov $1,$0

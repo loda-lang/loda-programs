@@ -9,3 +9,4 @@ lpb $0
   seq $1,307295 ; If n is even, a(n) = A001950(n/2+1), otherwise a(n) = A001950((n-1)/2+1) + 1.
 lpe
 add $1,1
+mov $0,$1

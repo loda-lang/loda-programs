@@ -7,5 +7,4 @@ add $0,1
 seq $0,66096 ; Duplicate values in A060143.
 sub $2,1
 add $0,$2
-mov $1,$0
-sub $1,37
+sub $0,37

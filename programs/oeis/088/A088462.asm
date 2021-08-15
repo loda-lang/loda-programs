@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
 sub $0,$2
-mov $1,$0

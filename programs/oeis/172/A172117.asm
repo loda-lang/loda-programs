@@ -7,3 +7,4 @@ lpb $0
   seq $2,51874 ; 22-gonal numbers: a(n) = n*(10*n-9).
   add $1,$2
 lpe
+mov $0,$1

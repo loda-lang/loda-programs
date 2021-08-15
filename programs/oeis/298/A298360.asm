@@ -3,6 +3,5 @@
 
 seq $0,112652 ; a(n) squared is congruent to a(n) (mod 12).
 seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
-mov $1,$0
-div $1,2
-add $1,3
+div $0,2
+add $0,3

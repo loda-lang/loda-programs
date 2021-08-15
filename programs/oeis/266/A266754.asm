@@ -6,3 +6,4 @@ lpb $0
   mod $0,2
 lpe
 bin $1,$0
+mov $0,$1

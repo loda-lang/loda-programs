@@ -5,4 +5,3 @@ lpb $0
   mul $0,143
   mod $0,8
 lpe
-mov $1,$0

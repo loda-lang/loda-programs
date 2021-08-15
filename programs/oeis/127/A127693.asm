@@ -3,8 +3,7 @@
 
 mul $0,4
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-mov $1,$0
-trn $1,7
-div $1,2
-add $1,1
-mod $1,2
+trn $0,7
+div $0,2
+add $0,1
+mod $0,2

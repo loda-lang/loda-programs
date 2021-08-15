@@ -12,3 +12,4 @@ lpb $2
   seq $0,14125 ; Bisection of A001400.
   add $1,$0
 lpe
+mov $0,$1

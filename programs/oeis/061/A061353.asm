@@ -6,6 +6,5 @@ dif $0,2
 bin $2,2
 add $2,$0
 add $0,$2
-mov $1,$0
-add $1,1
-mod $1,10
+add $0,1
+mod $0,10

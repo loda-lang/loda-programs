@@ -6,4 +6,3 @@ mul $0,2
 mov $2,$0
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 sub $0,$2
-mov $1,$0

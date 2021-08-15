@@ -9,5 +9,4 @@ lpb $0
   add $2,1
   mov $3,1
 lpe
-mov $1,$0
-cmp $1,0
+cmp $0,0

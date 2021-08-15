@@ -5,4 +5,3 @@ mul $0,2
 max $2,$0
 seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
 add $0,$2
-mov $1,$0

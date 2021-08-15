@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,295012 ; a(n) = sigma(12n - 1)/12, where sigma = sum of divisors (A000203).
 sub $0,$2
-mov $1,$0
-sub $1,1
+sub $0,1

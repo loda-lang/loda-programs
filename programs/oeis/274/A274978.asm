@@ -3,6 +3,5 @@
 
 seq $0,47341 ; Numbers that are congruent to {3, 4} mod 7.
 pow $0,2
-mov $1,$0
-sub $1,9
-div $1,7
+sub $0,9
+div $0,7

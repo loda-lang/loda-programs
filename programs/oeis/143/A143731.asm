@@ -3,3 +3,4 @@
 
 seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
 bin $1,$0
+mov $0,$1

@@ -4,4 +4,3 @@
 add $0,1
 seq $0,198084 ; Ceiling(n*sqrt(7)).
 sub $0,1
-mov $1,$0

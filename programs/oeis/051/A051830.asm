@@ -4,5 +4,4 @@
 seq $0,138689 ; Numbers of the form 26+p^2 (where p is a prime).
 mul $0,64
 mod $0,40
-mov $1,$0
-div $1,8
+div $0,8

@@ -17,3 +17,4 @@ lpe
 gcd $1,$0
 div $1,4
 add $1,1
+mov $0,$1

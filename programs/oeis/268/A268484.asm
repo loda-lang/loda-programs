@@ -6,8 +6,7 @@ add $0,5
 sub $3,1
 add $0,$3
 bin $0,3
-mov $1,$0
 sub $3,3
 sub $2,$3
-add $1,$2
-sub $1,5
+add $0,$2
+sub $0,5

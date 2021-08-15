@@ -42,3 +42,4 @@ lpb $8
   trn $1,$7
   mov $8,0
 lpe
+mov $0,$1

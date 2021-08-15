@@ -7,4 +7,3 @@ lpb $0
   seq $1,178225 ; Characteristic function of A006995 (binary palindromes).
   add $0,$1
 lpe
-mov $1,$0

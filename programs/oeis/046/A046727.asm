@@ -6,3 +6,4 @@ lpb $0
   mov $0,0
   seq $1,84159 ; Pell oblongs.
 lpe
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   div $0,$1
 lpe
+mov $0,$1

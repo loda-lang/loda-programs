@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-mov $1,$0
-div $1,2
+div $0,2

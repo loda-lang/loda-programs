@@ -9,6 +9,5 @@ bin $0,3
 add $2,1
 mul $2,3
 trn $0,$2
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

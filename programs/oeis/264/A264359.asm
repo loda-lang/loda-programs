@@ -3,5 +3,4 @@
 
 seq $0,232935 ; Number of n X 2 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, vertically or antidiagonally.
 pow $0,2
-mov $1,$0
-div $1,4
+div $0,4

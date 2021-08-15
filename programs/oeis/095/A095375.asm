@@ -11,3 +11,4 @@ lpb $2
   seq $0,14499 ; Number of 1's in binary representation of n-th prime.
   add $1,$0
 lpe
+mov $0,$1

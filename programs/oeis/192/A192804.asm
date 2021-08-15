@@ -3,5 +3,4 @@
 
 trn $0,2
 seq $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
-mov $1,$0
-add $1,1
+add $0,1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,11371 ; a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
   add $1,$2
 lpe
+mov $0,$1

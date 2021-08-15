@@ -3,4 +3,3 @@
 
 seq $0,5836 ; Numbers n whose base 3 representation contains no 2.
 seq $0,7089 ; Numbers in base 3.
-mov $1,$0

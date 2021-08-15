@@ -12,5 +12,4 @@ lpb $0
   mov $2,$4
 lpe
 add $0,$3
-mov $1,$0
-add $1,1
+add $0,1

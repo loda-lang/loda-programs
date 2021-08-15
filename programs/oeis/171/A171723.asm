@@ -12,3 +12,4 @@ lpe
 add $1,5
 add $1,$0
 sub $1,5
+mov $0,$1

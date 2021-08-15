@@ -6,7 +6,6 @@ seq $0,73553 ; Number of Fibonacci numbers F(k), k <= 10^n, which end in 5.
 mul $0,3
 add $0,3
 bin $0,2
-mov $1,$0
-sub $1,989
-div $1,180
-add $1,5
+sub $0,989
+div $0,180
+add $0,5

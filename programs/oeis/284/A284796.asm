@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,229785 ; Partial sums of A157129.
-mov $1,$0

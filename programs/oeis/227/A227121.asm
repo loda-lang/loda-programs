@@ -6,4 +6,3 @@ add $1,$0
 seq $1,55417 ; Number of points in N^n of norm <= 2.
 add $2,$1
 add $0,$2
-mov $1,$0

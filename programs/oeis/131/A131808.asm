@@ -11,3 +11,4 @@ lpb $2
   seq $0,71986 ; Parity of the prime-counting function pi(n).
   add $1,$0
 lpe
+mov $0,$1

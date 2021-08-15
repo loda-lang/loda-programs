@@ -5,5 +5,4 @@ add $0,3
 pow $0,2
 sub $0,5
 div $0,9
-mov $1,$0
-add $1,1
+add $0,1

@@ -6,3 +6,4 @@ seq $0,121496 ; Run lengths of successive numbers in A068225.
 mov $1,2
 pow $1,$0
 div $1,8
+mov $0,$1

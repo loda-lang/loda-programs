@@ -6,4 +6,3 @@ seq $0,65383 ; a(n) = smallest prime >= n*(n + 1)/2.
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

@@ -5,5 +5,4 @@ seq $0,128634 ; Number of parallel permutations of length n.
 add $2,$0
 min $0,1
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

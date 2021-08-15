@@ -9,7 +9,7 @@ The [programs/oeis](programs/oeis) folder contains programs that generate intege
 
 If you would like to receive updates on the miner findings, you can check the [changes on the master branch](https://github.com/ckrause/loda/commits/master) for new and updated programs or get real-time updates from [@lodaminer](https://twitter.com/lodaminer) on Twitter.
 
-:woman_teacher: You can try out the LODA language using the [interactive web interface](https://neoneye.github.io/lodalab/?id=6) of [LODA Lab](https://github.com/neoneye/loda-lab) written by Simon Strandgaard, or use one of the command-line tools (see below).
+:woman_teacher: You can try out the LODA language using the [interactive web interface](https://neoneye.github.io/lodalab/?id=203) of [LODA Lab](https://github.com/neoneye/loda-lab) written by Simon Strandgaard, or use one of the command-line tools (see below).
 
 [Contributions](CONTRIBUTING.md) are warmly welcome! You can get in touch with us by sending a mail to "me" at ckrause dot org or via GitHub issues. If you would like to chat with us, we use Slack.
 
@@ -31,6 +31,7 @@ lpb $0        ; loop as long as $0 decreases
   add $1,$3   ;    add $1 := $1 + $3
   mov $3,$2   ; assign $3 := $2
 lpe           ; end of loop
+mov $0,$1     ; store result in $0
 
 ; result is stored in $1
 ```
@@ -47,7 +48,7 @@ For a detailed description of the language features, please take a look the [lan
 
 ## Command-Line Tool (C++)
 
-The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. There is also an implementation in Rust: [LODA Lab](https://github.com/neoneye/loda-lab) with an [interactive web interface](https://neoneye.github.io/lodalab/?id=45) written by Simon Strandgaard.
+The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. There is also an implementation in Rust: [LODA Lab](https://github.com/neoneye/loda-lab) with an [interactive web interface](https://neoneye.github.io/lodalab/?id=203) written by Simon Strandgaard.
 
 There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any external libraries, but only the `wget`, `gzip` command-line tools.
 
@@ -136,7 +137,7 @@ Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder.
 
 ## Related Projects
 
-* [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an implementation of the LODA language in Rust with an [interactive web interface](https://neoneye.github.io/lodalab/?id=6)!
+* [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an implementation of the LODA language in Rust with an [interactive web interface](https://neoneye.github.io/lodalab/?id=203)!
 * [jOEIS](https://github.com/archmageirvine/joeis) by Sean A. Irvine and Georg Fischer is a collection of pure Java programs implementing sequences from the OEIS.
 * [Sequence Database](http://sequencedb.net) by [Jon Maiga](http://www.jonkagstrom.com/) is a database with machine generated integer and decimal sequences.
 * [The Ramanujan Machine](https://github.com/ShaharGottlieb/MasseyRamanujan) by Shahar Gottlieb is an algorithmic approach to discover new mathematical conjectures.

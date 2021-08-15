@@ -6,23 +6,23 @@ mov $1,$0
 mov $2,6
 mov $4,2
 mov $5,1
-lpb $1
+lpb $0
   add $2,1
   lpb $5
-    div $0,$4
+    div $0,3
+    div $1,$4
     add $3,1001
-    add $0,$3
-    add $0,2
-    div $1,3
+    add $1,$3
+    add $1,2
     sub $2,4
-    add $3,$0
-    mov $0,$2
+    add $3,$1
+    mov $1,$2
     mov $5,0
   lpe
-  sub $1,1
+  sub $0,1
 lpe
-gcd $0,$3
-sub $0,$2
-mov $1,1
-add $1,$0
-add $1,1
+mov $0,1
+gcd $1,$3
+sub $1,$2
+add $0,$1
+add $0,1

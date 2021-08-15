@@ -4,4 +4,3 @@
 mul $0,5
 div $0,2
 seq $0,144448 ; First bisection of A061039.
-mov $1,$0

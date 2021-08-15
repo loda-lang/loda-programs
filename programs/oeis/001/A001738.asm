@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,7089 ; Numbers in base 3.
-mov $1,$0

@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,15449 ; Expansion of (1-4*x)/(1-5*x-x^2).
-mov $1,$0
-div $1,5
+div $0,5

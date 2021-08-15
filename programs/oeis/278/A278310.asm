@@ -4,7 +4,6 @@
 add $0,1
 seq $0,3499 ; a(n) = 6*a(n-1) - a(n-2), with a(0) = 2, a(1) = 6.
 pow $0,2
-mov $1,$0
-sub $1,36
-div $1,8
-add $1,3
+sub $0,36
+div $0,8
+add $0,3

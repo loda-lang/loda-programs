@@ -5,9 +5,9 @@ seq $0,40 ; The prime numbers.
 mov $1,$0
 mov $2,2
 lpb $2
-  mov $2,$0
+  mov $2,$1
   seq $2,46667 ; a(n) = A046666(n)/2.
-  sub $0,$2
-  add $1,1
+  sub $1,$2
+  add $0,1
 lpe
-add $1,2
+add $0,2

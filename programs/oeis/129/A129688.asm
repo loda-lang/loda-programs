@@ -7,3 +7,4 @@ lpb $0
   sub $0,4
   mov $1,$0
 lpe
+mov $0,$1

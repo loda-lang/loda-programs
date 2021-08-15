@@ -4,5 +4,4 @@
 seq $0,79704 ; 2p^2 where p runs through the primes.
 sub $0,1
 seq $0,10874 ; a(n) = n mod 5.
-mov $1,$0
-sub $1,1
+sub $0,1

@@ -3,4 +3,3 @@
 
 seq $0,46079 ; Number of Pythagorean triangles with leg n.
 pow $0,2
-mov $1,$0

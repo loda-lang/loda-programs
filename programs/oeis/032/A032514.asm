@@ -7,3 +7,4 @@ lpb $0
   seq $2,100196 ; Numbers of positive integer cubes <= n^2.
   add $1,$2
 lpe
+mov $0,$1

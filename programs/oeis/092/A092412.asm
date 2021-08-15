@@ -4,4 +4,3 @@
 seq $0,90739 ; Exponent of 2 in 9^n - 1.
 add $$1,2
 mod $0,4
-mov $1,$0

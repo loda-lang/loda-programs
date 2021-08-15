@@ -4,4 +4,3 @@
 seq $0,22086 ; Fibonacci sequence beginning 0, 3.
 add $0,2
 div $0,5
-mov $1,$0

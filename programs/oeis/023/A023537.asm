@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,23550 ; Convolution of natural numbers >= 2 and (F(2), F(3), F(4), ...).
 add $1,$0
 sub $1,1
+mov $0,$1

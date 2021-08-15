@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,39218 ; Numbers whose base-12 representation has the same number of 0's and 9's.
-mov $1,$0
-sub $1,2
+sub $0,2

@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

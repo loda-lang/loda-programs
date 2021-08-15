@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,75111 ; a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
 mul $0,2
-mov $1,$0

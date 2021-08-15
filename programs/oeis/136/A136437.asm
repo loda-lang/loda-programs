@@ -3,5 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-mov $1,$0
-seq $1,212598 ; a(n) = n - m!, where m is the largest number such that m! <= n.
+seq $0,212598 ; a(n) = n - m!, where m is the largest number such that m! <= n.

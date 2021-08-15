@@ -6,4 +6,3 @@ mov $2,$0
 seq $0,230980 ; Number of primes <= n, starting at n=0.
 mul $0,$2
 div $0,2
-mov $1,$0

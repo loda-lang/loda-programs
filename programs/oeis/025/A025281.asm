@@ -8,3 +8,4 @@ lpb $0
   seq $2,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   add $1,$2
 lpe
+mov $0,$1

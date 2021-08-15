@@ -8,3 +8,4 @@ lpb $0
   seq $2,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
   add $1,$2
 lpe
+mov $0,$1

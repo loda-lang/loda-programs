@@ -8,3 +8,4 @@ lpb $0
   mul $1,-13
 lpe
 div $1,169
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,189151 ; Numbers n such that n < floor(sqrt(n)) * ceiling(sqrt(n)).
 seq $0,34871 ; Odd-numbered rows of Pascal's triangle.
-mov $1,$0

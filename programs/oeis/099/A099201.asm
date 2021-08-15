@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,119913 ; Number of directed simple cycles in the complete graph K_n.
-mov $1,$0
-div $1,2
+div $0,2

@@ -4,4 +4,3 @@
 add $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-mov $1,$0

@@ -5,4 +5,3 @@ add $0,1
 seq $0,2492 ; Sum of the first n even squares: 2*n*(n+1)*(2*n+1)/3.
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 div $0,2
-mov $1,$0

@@ -3,9 +3,9 @@
 
 mul $0,8
 mov $1,$0
-add $1,2
-div $1,3
-mul $1,4
-trn $1,1
-add $1,7
-add $1,$0
+add $0,2
+div $0,3
+mul $0,4
+trn $0,1
+add $0,7
+add $0,$1

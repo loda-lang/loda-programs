@@ -4,3 +4,4 @@
 seq $0,83375 ; n appears prime(n) times.
 add $1,$0
 mod $1,2
+mov $0,$1

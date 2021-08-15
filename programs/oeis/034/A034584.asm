@@ -3,5 +3,4 @@
 
 add $0,4
 seq $0,34586 ; Log_2 of dimension of an irreducible Z_2 graded H-module for Clifford algebra Cl_n.
-mov $1,$0
-sub $1,2
+sub $0,2

@@ -7,3 +7,4 @@ lpb $0
   seq $2,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
   add $1,$2
 lpe
+mov $0,$1

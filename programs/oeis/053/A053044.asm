@@ -7,3 +7,4 @@ lpb $0
   seq $2,64415 ; a(1) = 0, a(n) = iter(n) if n is even, a(n) = iter(n)-1 if n is odd, where iter(n) = A003434(n) = smallest number of iterations of Euler totient function phi needed to reach 1.
   add $1,$2
 lpe
+mov $0,$1

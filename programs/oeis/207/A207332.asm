@@ -11,3 +11,4 @@ lpb $2
   max $2,$0
 lpe
 div $1,54
+mov $0,$1

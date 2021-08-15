@@ -4,8 +4,7 @@
 add $0,2
 pow $0,2
 bin $0,2
-mov $1,$0
-sub $1,6
-div $1,6
-mul $1,108
-add $1,107
+sub $0,6
+div $0,6
+mul $0,108
+add $0,107

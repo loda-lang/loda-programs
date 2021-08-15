@@ -5,5 +5,4 @@ mov $2,-2
 bin $2,$0
 seq $0,40976 ; a(n) = prime(n) - 2.
 sub $0,$2
-mov $1,$0
-add $1,2
+add $0,2

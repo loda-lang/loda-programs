@@ -4,5 +4,4 @@
 seq $0,122879 ; Periodic sequence of period 21.
 pow $0,3
 seq $0,116470 ; All distinct Fibonacci and Lucas numbers.
-mov $1,$0
-add $1,12
+add $0,12

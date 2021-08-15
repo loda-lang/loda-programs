@@ -9,5 +9,4 @@ lpb $2
   gcd $2,2
   add $0,$2
 lpe
-mov $1,$0
-add $1,15
+add $0,15

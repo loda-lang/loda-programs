@@ -3,4 +3,3 @@
 
 seq $0,56020 ; Numbers that are congruent to +-1 mod 9.
 pow $0,2
-mov $1,$0

@@ -4,6 +4,5 @@
 mod $0,4
 pow $0,3
 mod $0,20
-mov $1,$0
-mul $1,6
-add $1,1
+mul $0,6
+add $0,1

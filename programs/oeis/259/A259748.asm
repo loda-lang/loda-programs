@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,290312 ; Third diagonal sequence of the Sheffer triangle A094816 (special Charlier).
 add $2,1
 mod $0,$2
-mov $1,$0

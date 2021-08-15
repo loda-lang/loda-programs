@@ -3,7 +3,6 @@
 
 add $0,2
 seq $0,76507 ; Three people (P1, P2, P3) are in a circle and are saying Hello to each other. They start with P2 saying "Hello, Hello". Thereafter Pn says "Hello" for n times the total number of Hello's so far.
-mov $1,$0
-sub $1,16
-div $1,16
-add $1,1
+sub $0,16
+div $0,16
+add $0,1

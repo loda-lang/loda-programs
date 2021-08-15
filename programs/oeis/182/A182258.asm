@@ -10,5 +10,4 @@ lpb $2
     mul $2,2
   lpe
 lpe
-mov $1,$0
-add $1,3
+add $0,3

@@ -3,4 +3,3 @@
 
 seq $0,182105 ; Number of elements merged by bottom-up merge sort.
 min $0,2
-mov $1,$0

@@ -6,3 +6,4 @@ lpb $0
   mov $1,$0
   div $0,9
 lpe
+mov $0,$1

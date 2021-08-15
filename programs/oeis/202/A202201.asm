@@ -6,3 +6,4 @@ add $2,$0
 seq $2,56003 ; A second-order recursive sequence.
 add $1,$2
 mul $1,18
+mov $0,$1

@@ -5,3 +5,4 @@ seq $0,52995 ; Expansion of 2*x*(1 - x)/(1 - 3*x + x^2).
 sub $0,2
 sub $1,$0
 div $1,2
+mov $0,$1

@@ -48,3 +48,4 @@ lpb $11
   mov $11,0
 lpe
 div $1,13
+mov $0,$1

@@ -6,4 +6,3 @@ lpb $0
   trn $0,1
   seq $0,8472 ; Sum of the distinct primes dividing n.
 lpe
-mov $1,$0

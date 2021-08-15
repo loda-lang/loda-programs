@@ -4,5 +4,4 @@
 seq $0,127920 ; 1/6 of product of three numbers: n-th prime, previous and following number.
 sub $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-mov $1,$0
-add $1,1
+add $0,1

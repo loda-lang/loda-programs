@@ -5,5 +5,4 @@ seq $0,40 ; The prime numbers.
 add $0,1
 gcd $0,8
 div $0,4
-mov $1,$0
-add $1,2
+add $0,2

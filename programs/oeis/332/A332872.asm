@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,7052 ; Number of order-consecutive partitions of n.
-mov $1,$0

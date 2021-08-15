@@ -4,6 +4,5 @@
 mul $0,3
 bin $0,5
 gcd $0,7
-mov $1,$0
-mul $1,7
-div $1,42
+mul $0,7
+div $0,42

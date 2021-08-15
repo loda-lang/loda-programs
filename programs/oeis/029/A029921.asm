@@ -4,5 +4,4 @@
 add $0,2
 seq $0,184921 ; n+[rn/s]+[tn/s]+[un/s], where []=floor and r=2^(1/2), s=r+1, t=r+2, u=r+3.
 div $0,3
-mov $1,$0
-sub $1,4
+sub $0,4

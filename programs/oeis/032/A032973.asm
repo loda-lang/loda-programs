@@ -8,3 +8,4 @@ lpb $2
   mov $0,3
   trn $2,8
 lpe
+mov $0,$1

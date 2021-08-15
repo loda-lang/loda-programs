@@ -8,3 +8,4 @@ lpb $0
   seq $2,123740 ; Characteristic sequence for Wythoff AB-numbers A003623.
   add $1,$2
 lpe
+mov $0,$1

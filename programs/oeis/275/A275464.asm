@@ -6,3 +6,4 @@ add $1,$0
 seq $0,38802 ; Factor 2n+1 = (2^m1)*(3^m2)*(5^m3)*...; a(n) = number of initial zero exponents.
 sub $1,$0
 sub $1,1
+mov $0,$1

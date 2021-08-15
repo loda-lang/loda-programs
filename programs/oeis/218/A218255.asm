@@ -5,4 +5,3 @@ mul $0,10
 trn $0,1
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 seq $0,40 ; The prime numbers.
-mov $1,$0

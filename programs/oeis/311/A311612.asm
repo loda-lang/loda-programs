@@ -5,15 +5,14 @@ mov $4,$0
 add $0,1
 mov $2,$0
 add $0,1
-mov $1,$0
 add $2,2
 seq $2,39163 ; Numbers whose base-11 representation has the same number of 0's and 8's.
-add $1,$2
+add $0,$2
 sub $2,4
 trn $2,1
-mov $3,$1
-mov $1,4
-add $1,$2
-add $1,$3
-sub $1,9
-add $1,$4
+mov $3,$0
+mov $0,4
+add $0,$2
+add $0,$3
+sub $0,9
+add $0,$4

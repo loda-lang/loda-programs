@@ -6,5 +6,4 @@ lpb $0
   add $2,100
 lpe
 add $0,$2
-mov $1,$0
-add $1,11
+add $0,11

@@ -8,4 +8,3 @@ lpb $0
   trn $0,$1
 lpe
 sub $0,$2
-mov $1,$0

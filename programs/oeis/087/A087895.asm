@@ -10,5 +10,4 @@ lpb $0
   add $0,$2
   sub $0,1
 lpe
-cal $0,140475 ; 1 along with primes greater than 3.
-mov $1,$0
+seq $0,140475 ; 1 along with primes greater than 3.

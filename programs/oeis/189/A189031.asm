@@ -12,3 +12,4 @@ lpe
 mod $1,2
 add $1,2
 mod $1,2
+mov $0,$1

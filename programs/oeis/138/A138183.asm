@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,246104 ; Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
-mov $1,$0

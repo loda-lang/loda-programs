@@ -9,5 +9,4 @@ seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of perm
 div $0,2
 mul $0,-3
 bin $0,2
-mov $1,$0
-div $1,6
+div $0,6

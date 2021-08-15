@@ -4,5 +4,4 @@
 min $0,3
 add $0,6
 dif $0,2
-mov $1,$0
-sub $1,3
+sub $0,3

@@ -8,3 +8,4 @@ lpb $0
   seq $2,541 ; Sum of 7th powers: 1^7 + 2^7 + ... + n^7.
   add $1,$2
 lpe
+mov $0,$1

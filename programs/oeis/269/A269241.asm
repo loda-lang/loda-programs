@@ -3,4 +3,3 @@
 
 pow $0,3
 seq $0,268643 ; Number of 1's in decimal representation of n.
-mov $1,$0

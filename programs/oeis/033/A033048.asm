@@ -3,5 +3,4 @@
 
 add $0,8190
 seq $0,32932 ; Numbers whose set of base 12 digits is {1,2}.
-mov $1,$0
-sub $1,9726655034461
+sub $0,9726655034461

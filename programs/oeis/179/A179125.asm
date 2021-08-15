@@ -3,4 +3,3 @@
 
 seq $0,37 ; Numbers that are not squares (or, the nonsquares).
 pow $0,3
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,65515 ; Number of prime powers <= n.
-mov $1,$0

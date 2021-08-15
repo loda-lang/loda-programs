@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 gcd $2,$0
 sub $0,$2
-mov $1,$0

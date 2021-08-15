@@ -9,4 +9,3 @@ lpb $2
   div $0,4
   mod $2,9
 lpe
-mov $1,$0

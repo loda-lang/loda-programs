@@ -9,3 +9,4 @@ lpb $0
   pow $1,$1
   add $2,$1
 lpe
+mov $0,$1

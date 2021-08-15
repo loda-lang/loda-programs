@@ -5,3 +5,4 @@ mov $1,561
 add $1,$0
 seq $1,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
 sub $1,793
+mov $0,$1

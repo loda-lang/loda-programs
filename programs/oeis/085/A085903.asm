@@ -4,4 +4,3 @@
 add $0,1
 seq $0,14236 ; Expansion of g.f.: 2*x*(1-x)/((1-2*x)*(1-2*x^2)).
 seq $0,55945 ; a(n) = n - (reversal of base-2 digits of n) (and then the result is written in base 10).
-mov $1,$0

@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,227252 ; Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically nondecreasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
-mov $1,$0
-div $1,2
+div $0,2

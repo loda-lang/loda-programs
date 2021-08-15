@@ -32,3 +32,4 @@ lpb $7
   mov $7,0
 lpe
 div $1,4
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,593 ; Sum of odd divisors of n.
-mov $1,$0

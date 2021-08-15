@@ -3,5 +3,4 @@
 
 add $0,4
 seq $0,2965 ; Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).
-mov $1,$0
-sub $1,1
+sub $0,1

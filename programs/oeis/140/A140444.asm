@@ -3,5 +3,4 @@
 
 seq $0,24905 ; Numbers k such that 7*k + 1 is prime.
 mul $0,7
-mov $1,$0
-add $1,1
+add $0,1

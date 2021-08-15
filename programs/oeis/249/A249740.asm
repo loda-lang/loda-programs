@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-mov $1,$0

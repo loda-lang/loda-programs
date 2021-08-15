@@ -12,3 +12,4 @@ lpb $2
   seq $0,26898 ; a(n) = Sum_{k=0..n} (n-k+1)^k.
   add $1,$0
 lpe
+mov $0,$1

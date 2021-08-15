@@ -8,3 +8,4 @@ lpb $0
   seq $2,8836 ; Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
   add $1,$2
 lpe
+mov $0,$1

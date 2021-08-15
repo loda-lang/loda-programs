@@ -3,4 +3,3 @@
 
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 seq $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
-mov $1,$0

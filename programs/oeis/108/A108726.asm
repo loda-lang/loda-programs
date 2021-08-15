@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,141854 ; Primes congruent to 7 mod 11.
-mov $1,$0
-sub $1,29
-div $1,11
+sub $0,29
+div $0,11

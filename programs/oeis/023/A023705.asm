@@ -4,4 +4,3 @@
 add $0,1
 seq $0,259568 ; Numbers following gaps in the sequence of base-4 numbers that don't contain 0.
 div $0,4
-mov $1,$0

@@ -7,4 +7,3 @@ lpb $0
   max $0,$2
   sub $0,1
 lpe
-mov $1,$0

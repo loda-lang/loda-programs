@@ -8,3 +8,4 @@ lpb $0
   seq $2,5701 ; Number of exterior points formed by extending diagonals of n-gon in general position.
   add $1,$2
 lpe
+mov $0,$1

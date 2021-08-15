@@ -6,10 +6,9 @@ add $0,1
 seq $0,198083 ; Ceiling(n*Sqrt(6)).
 add $0,2
 mul $0,2
-mov $1,$0
-sub $1,10
-div $1,4
-add $1,3
+sub $0,10
+div $0,4
+add $0,3
 mov $2,$3
 mul $2,2
-add $1,$2
+add $0,$2

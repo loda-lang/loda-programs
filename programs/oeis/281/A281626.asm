@@ -7,5 +7,4 @@ seq $0,235796 ; 2*n - 1 - sigma(n).
 cmp $1,0
 sub $0,$1
 sub $0,$1
-mov $1,$0
-add $1,3
+add $0,3

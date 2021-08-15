@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,127712 ; Row sums of the inverse of the triangle A(n,k) = 1/F(n+1) if k <= n <= 2k, 0 otherwise.
-mov $1,$0

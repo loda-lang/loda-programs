@@ -5,3 +5,4 @@ seq $0,38760 ; a(n) = n - floor(sqrt(n)) * ceiling(sqrt(n)).
 sub $0,1
 trn $1,$0
 mod $1,2
+mov $0,$1

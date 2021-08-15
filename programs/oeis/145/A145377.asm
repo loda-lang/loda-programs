@@ -5,3 +5,4 @@ seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such 
 mov $1,3
 mod $1,$0
 cmp $1,0
+mov $0,$1

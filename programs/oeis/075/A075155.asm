@@ -3,5 +3,4 @@
 
 seq $0,156279 ; 4 times the Lucas number A000032(n).
 pow $0,3
-mov $1,$0
-div $1,64
+div $0,64

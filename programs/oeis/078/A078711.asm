@@ -3,6 +3,5 @@
 
 seq $0,100833 ; Smallest positive palindrome-free and squarefree sequence.
 sub $0,1
-mov $1,$0
-mod $1,3
-add $1,1
+mod $0,3
+add $0,1

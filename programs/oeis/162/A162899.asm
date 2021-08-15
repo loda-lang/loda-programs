@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,30533 ; Expansion of Molien series for 4-D extraspecial group 2^{1+2*2}.
-mov $1,$0
-sub $1,5
+sub $0,5

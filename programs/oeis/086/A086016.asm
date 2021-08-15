@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,316869 ; Number of times 8 appears in decimal expansion of n.
-mov $1,$0

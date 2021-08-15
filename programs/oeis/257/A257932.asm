@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,233522 ; Expansion of 1 / (1 - x - x^4 + x^9) in powers of x.
-mov $1,$0

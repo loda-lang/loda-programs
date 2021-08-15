@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0
-div $1,2
+div $0,2

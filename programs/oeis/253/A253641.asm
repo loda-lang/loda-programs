@@ -4,4 +4,3 @@
 sub $0,1
 max $0,1
 seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
-mov $1,$0

@@ -7,3 +7,4 @@ lpb $0
   seq $2,94588 ; a(n) = n*F(n-1) + F(n), where F = A000045.
   add $1,$2
 lpe
+mov $0,$1

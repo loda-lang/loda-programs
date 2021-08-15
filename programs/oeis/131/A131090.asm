@@ -3,5 +3,4 @@
 
 seq $0,154890 ; Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
 div $0,3
-mov $1,$0
-sub $1,1
+sub $0,1

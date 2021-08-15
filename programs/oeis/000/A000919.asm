@@ -7,3 +7,4 @@ seq $0,210448 ; Total number of different letters summed over all ternary words 
 sub $1,$0
 div $1,6
 mul $1,24
+mov $0,$1

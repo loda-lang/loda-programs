@@ -6,4 +6,3 @@ seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(
 div $1,2
 sub $0,$1
 sub $0,$1
-mov $1,$0

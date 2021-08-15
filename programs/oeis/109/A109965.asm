@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,2984 ; a(0) = 1; for n > 0, a(n) = a(n-1) + floor(sqrt(a(n-1))).
-mov $1,$0

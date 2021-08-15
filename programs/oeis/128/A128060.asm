@@ -25,3 +25,4 @@ lpb $2
     div $5,4
   lpe
 lpe
+mov $0,$1

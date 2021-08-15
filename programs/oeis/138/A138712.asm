@@ -3,4 +3,3 @@
 
 seq $0,56556 ; First tetrahedral coordinate; repeat m (m+1)*(m+2)/2 times.
 mod $0,2
-mov $1,$0

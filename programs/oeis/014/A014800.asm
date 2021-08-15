@@ -3,4 +3,3 @@
 
 seq $0,15224 ; Even pentagonal pyramidal numbers.
 pow $0,2
-mov $1,$0

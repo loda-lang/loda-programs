@@ -5,16 +5,16 @@ mov $2,$0
 trn $0,1
 add $0,4
 mov $1,$0
-lpb $0
-  sub $0,1
-  trn $1,2
-  trn $3,$1
-  sub $1,8
+lpb $1
+  trn $0,2
+  sub $1,1
+  trn $3,$0
+  sub $0,8
   add $3,2
 lpe
-mov $1,$3
+mov $0,$3
 lpb $2
-  add $1,3
+  add $0,3
   sub $2,1
 lpe
-sub $1,7
+sub $0,7

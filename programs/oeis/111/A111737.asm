@@ -4,6 +4,5 @@
 seq $0,40 ; The prime numbers.
 mul $0,5
 seq $0,308046 ; a(n) = 2*nextprime(n - 1) - 2*n, where nextprime(n) is the smallest prime > n.
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

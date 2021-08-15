@@ -3,5 +3,4 @@
 
 seq $0,136004 ; a(n) = A005811(n) + 4.
 seq $0,22091 ; Fibonacci sequence beginning 0, 8.
-mov $1,$0
-div $1,8
+div $0,8

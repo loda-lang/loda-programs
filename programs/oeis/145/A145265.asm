@@ -32,3 +32,4 @@ lpb $7
   mov $4,2
   cmp $4,$6
 lpe
+mov $0,$1

@@ -8,3 +8,4 @@ lpb $0
 lpe
 add $1,1
 bin $1,3
+mov $0,$1

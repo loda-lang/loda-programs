@@ -3,4 +3,3 @@
 
 seq $0,32121 ; Number of reversible strings with n beads of 4 colors.
 trn $0,4
-mov $1,$0

@@ -3,5 +3,4 @@
 
 div $0,2
 seq $0,143157 ; Partial sums of A091512.
-mov $1,$0
-mul $1,2
+mul $0,2

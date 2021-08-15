@@ -12,3 +12,4 @@ lpb $2
   seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
   add $1,$0
 lpe
+mov $0,$1

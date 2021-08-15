@@ -5,3 +5,4 @@ seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); numbe
 add $1,$0
 min $1,2
 mul $1,$0
+mov $0,$1

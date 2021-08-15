@@ -3,5 +3,4 @@
 
 seq $0,120454 ; a(n) = ceiling(GPF(n)/LPF(n)) where GPF is greatest prime factor, LPF is least prime factor.
 max $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

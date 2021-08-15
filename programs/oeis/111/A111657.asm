@@ -3,4 +3,3 @@
 
 seq $0,83375 ; n appears prime(n) times.
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-mov $1,$0

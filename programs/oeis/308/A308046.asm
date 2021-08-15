@@ -6,3 +6,4 @@ seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 add $1,$0
 sub $1,1
 mul $1,2
+mov $0,$1

@@ -4,3 +4,4 @@
 seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
 add $1,$0
 seq $1,34694 ; Smallest prime == 1 (mod n).
+mov $0,$1

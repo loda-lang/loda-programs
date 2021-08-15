@@ -14,3 +14,4 @@ mov $4,1
 seq $4,215862 ; Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.
 add $1,$4
 sub $1,2
+mov $0,$1

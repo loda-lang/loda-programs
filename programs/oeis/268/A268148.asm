@@ -3,11 +3,9 @@
 
 mul $0,2
 mov $1,$0
-cmp $0,1
-add $0,$1
-mov $1,4
-pow $1,$0
-bin $0,2
-mul $1,$0
-div $1,16
-mul $1,8
+mov $0,4
+pow $0,$1
+bin $1,2
+mul $0,$1
+div $0,16
+mul $0,8

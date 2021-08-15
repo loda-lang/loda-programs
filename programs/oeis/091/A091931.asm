@@ -3,5 +3,4 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
-mov $1,$0
-sub $1,1
+sub $0,1

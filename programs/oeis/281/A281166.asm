@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,130750 ; Binomial transform of A010882.
-mov $1,$0

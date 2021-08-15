@@ -9,3 +9,4 @@ lpb $0,5
   trn $0,$5
   mov $3,$5
 lpe
+mov $0,$1

@@ -8,3 +8,4 @@ lpe
 mov $2,$0
 trn $2,1
 add $1,$2
+mov $0,$1

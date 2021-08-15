@@ -20,4 +20,4 @@ lpb $2
   div $2,3810
 lpe
 div $5,$0
-mov $1,$5
+mov $0,$5

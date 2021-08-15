@@ -7,3 +7,4 @@ lpb $0
   seq $2,244992 ; Characteristic function for A244991: a(n) = A000035(A061395(n)).
   add $1,$2
 lpe
+mov $0,$1

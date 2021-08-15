@@ -7,3 +7,4 @@ lpb $0
   mul $1,$0
   bin $0,2
 lpe
+mov $0,$1

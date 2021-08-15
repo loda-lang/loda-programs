@@ -3,7 +3,7 @@
 
 seq $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
 mov $1,$0
-seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
-add $1,1
-mul $1,4
-sub $1,$0
+add $0,1
+mul $0,4
+seq $1,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
+sub $0,$1

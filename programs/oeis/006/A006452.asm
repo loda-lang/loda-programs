@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,217975 ; 2*n^2 - 7 is a square.
-mov $1,$0
-div $1,2
+div $0,2

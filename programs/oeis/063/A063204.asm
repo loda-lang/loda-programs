@@ -4,5 +4,4 @@
 add $0,3
 mul $0,19
 seq $0,10764 ; a(n) = floor(n/2) mod floor(n/3).
-mov $1,$0
-sub $1,10
+sub $0,10

@@ -4,5 +4,4 @@
 add $0,1
 seq $0,320947 ; a(n) is the number of dominoes, among all domino tilings of the 2 X n rectangle, sharing a length-2 side with the boundary of the rectangle.
 pow $0,3
-mov $1,$0
-div $1,8
+div $0,8

@@ -19,3 +19,4 @@ lpb $2
   mul $2,$4
   add $5,1
 lpe
+mov $0,$1

@@ -7,8 +7,8 @@ mul $0,2
 add $0,$1
 sub $0,3
 mov $1,$0
-mul $0,4
-add $0,4
-seq $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
-add $1,$0
-add $1,3
+mul $1,4
+add $1,4
+seq $1,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessarily-distinct primes plus 1.
+add $0,$1
+add $0,3

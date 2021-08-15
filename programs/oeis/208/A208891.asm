@@ -3,4 +3,3 @@
 
 seq $0,71919 ; Number of monotone nondecreasing functions [n]->[m] for n>=0, m>=0, read by antidiagonals.
 max $0,1
-mov $1,$0

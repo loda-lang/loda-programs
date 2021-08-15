@@ -3,11 +3,11 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 mov $1,$0
-pow $0,2
-sub $0,$1
-lpb $1
-  max $1,$0
-  mov $0,$2
-  dif $1,2
-  bin $1,3
+pow $1,2
+sub $1,$0
+lpb $0
+  max $0,$1
+  dif $0,2
+  bin $0,3
+  mov $1,$2
 lpe

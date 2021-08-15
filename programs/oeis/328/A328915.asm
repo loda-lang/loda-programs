@@ -3,4 +3,3 @@
 
 seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mov $1,$0

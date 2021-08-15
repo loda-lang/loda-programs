@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $1,$0
-seq $0,122918 ; Expansion of (1+x)^2/(1+x+x^2)^2.
-add $1,$0
-mul $1,4
-add $1,4
+seq $1,122918 ; Expansion of (1+x)^2/(1+x+x^2)^2.
+add $0,$1
+mul $0,4
+add $0,4

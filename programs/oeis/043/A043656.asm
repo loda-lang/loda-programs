@@ -4,3 +4,4 @@
 seq $0,43652 ; Numbers whose base-12 representation has exactly 3 runs.
 add $1,$0
 add $1,3006720
+mov $0,$1

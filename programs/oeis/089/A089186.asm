@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,178914 ; 10's complement of nonnegative numbers.
-mov $1,$0

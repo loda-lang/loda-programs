@@ -12,3 +12,4 @@ lpb $2
   seq $0,53767 ; Sum of first n composite numbers.
   add $1,$0
 lpe
+mov $0,$1

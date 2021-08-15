@@ -13,4 +13,3 @@ add $0,$3
 seq $0,182079 ; a(n) = floor(n*floor((n-1)/2)/3).
 div $0,4
 sub $0,$2
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,48575 ; Pisot sequences L(2,5), E(2,5).
 dif $0,2
-mov $1,$0

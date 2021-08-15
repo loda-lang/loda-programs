@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,98662 ; E.g.f. BesselI(0,2*sqrt(3)*x) + BesselI(1,2*sqrt(3)*x)/sqrt(3).
-mov $1,$0

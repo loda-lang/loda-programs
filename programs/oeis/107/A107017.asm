@@ -6,3 +6,4 @@ lpb $0
   seq $1,139764 ; Smallest term in Zeckendorf representation of n.
   sub $0,$1
 lpe
+mov $0,$1

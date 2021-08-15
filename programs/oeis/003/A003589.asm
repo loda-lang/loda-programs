@@ -31,3 +31,4 @@ lpb $2
 lpe
 div $1,5
 add $1,2
+mov $0,$1

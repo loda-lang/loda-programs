@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
-mov $1,$0

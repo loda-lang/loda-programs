@@ -3,4 +3,3 @@
 
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
 pow $0,2
-mov $1,$0

@@ -6,5 +6,4 @@ add $0,2
 mod $0,6
 sub $0,1
 mod $0,2
-mov $1,$0
-add $1,4
+add $0,4

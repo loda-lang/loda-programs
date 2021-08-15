@@ -5,3 +5,4 @@ seq $0,40 ; The prime numbers.
 add $1,$0
 mod $0,10
 mod $1,$0
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
-mov $1,$0

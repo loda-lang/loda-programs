@@ -3,5 +3,4 @@
 
 seq $0,204125 ; Symmetric matrix based on f(i,j)=(i if i=j and 1 otherwise), by antidiagonals.
 seq $0,79 ; Powers of 2: a(n) = 2^n.
-mov $1,$0
-div $1,2
+div $0,2

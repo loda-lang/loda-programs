@@ -8,4 +8,3 @@ lpb $0
 lpe
 seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-mov $1,$0

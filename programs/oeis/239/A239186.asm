@@ -4,13 +4,12 @@
 mov $4,$0
 mul $0,2
 seq $0,239195 ; Sum of the next to smallest parts in the partitions of 4n into 4 parts with smallest part = 1.
-mov $1,$0
-add $1,1
+add $0,1
 mov $2,$4
 mul $2,3
-add $1,$2
+add $0,$2
 mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,2
-add $1,$2
+add $0,$2

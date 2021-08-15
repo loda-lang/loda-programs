@@ -9,5 +9,4 @@ sub $2,2
 gcd $0,$2
 add $0,$2
 div $0,3
-mov $1,$0
-add $1,2
+add $0,2

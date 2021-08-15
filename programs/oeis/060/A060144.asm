@@ -3,4 +3,3 @@
 
 seq $0,189663 ; Partial sums of A189661.
 trn $0,1
-mov $1,$0

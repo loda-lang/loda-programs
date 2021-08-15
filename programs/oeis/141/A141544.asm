@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,2145 ; Primes of the form 4*k+3.
-mov $1,$0
-div $1,2
-sub $1,2
+div $0,2
+sub $0,2

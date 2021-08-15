@@ -11,3 +11,4 @@ mov $1,$2
 div $1,2
 seq $1,193773 ; Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
 sub $1,1
+mov $0,$1

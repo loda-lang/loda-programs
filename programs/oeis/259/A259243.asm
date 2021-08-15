@@ -7,3 +7,4 @@ seq $1,162740 ; Number of reduced words of length n in Coxeter group on 4 genera
 div $1,2
 add $1,1
 mul $1,3
+mov $0,$1

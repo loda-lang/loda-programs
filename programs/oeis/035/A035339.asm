@@ -10,5 +10,4 @@ lpb $1
   add $1,79201
   mod $1,6
 lpe
-mov $1,$0
-sub $1,44
+sub $0,44

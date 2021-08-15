@@ -3,7 +3,6 @@
 
 mov $2,$0
 seq $0,1954 ; Wythoff game.
-mov $1,$0
 sub $2,$0
-sub $1,$2
-add $1,1
+sub $0,$2
+add $0,1

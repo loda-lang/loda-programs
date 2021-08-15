@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,28334 ; Differences between consecutive odd primes, divided by 2.
 add $2,2
 mul $0,$2
-mov $1,$0

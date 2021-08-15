@@ -5,5 +5,4 @@ mov $1,2
 pow $1,$0
 pow $0,$0
 div $0,$1
-mov $1,$0
-mod $1,2
+mod $0,2

@@ -3,5 +3,4 @@
 
 seq $0,111094 ; Numbers k such that 18*k + 1 is prime.
 mul $0,18
-mov $1,$0
-add $1,1
+add $0,1

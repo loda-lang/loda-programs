@@ -5,5 +5,4 @@ mov $2,$0
 seq $2,37772 ; Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0,2.
 mov $0,$2
 seq $0,47381 ; Numbers that are congruent to {0, 1, 2, 4, 5} mod 7.
-mov $1,$0
-div $1,2
+div $0,2

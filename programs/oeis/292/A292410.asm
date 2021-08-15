@@ -6,4 +6,3 @@ add $0,1
 pow $0,2
 div $0,2
 seq $0,6257 ; Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
-mov $1,$0

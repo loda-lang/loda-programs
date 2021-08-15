@@ -5,4 +5,3 @@ seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

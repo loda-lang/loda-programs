@@ -3,5 +3,5 @@
 
 pow $0,2
 mov $1,$0
-seq $0,48762 ; Largest cube <= n.
-add $1,$0
+seq $1,48762 ; Largest cube <= n.
+add $0,$1

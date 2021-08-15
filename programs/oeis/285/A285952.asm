@@ -5,3 +5,4 @@ mul $0,2
 trn $0,2
 seq $0,286063 ; Fixed point of the mapping 00->001, 1->100, starting with 00.
 pow $1,$0
+mov $0,$1

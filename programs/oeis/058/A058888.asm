@@ -8,3 +8,4 @@ lpb $0
   seq $1,79295 ; (D(p)-6)/(12p) where D(p) denotes the denominator of the 2p-th Bernoulli number and p runs through the primes.
 lpe
 mul $1,2
+mov $0,$1

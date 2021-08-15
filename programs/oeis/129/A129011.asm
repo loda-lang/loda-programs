@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,100196 ; Numbers of positive integer cubes <= n^2.
-mov $1,$0

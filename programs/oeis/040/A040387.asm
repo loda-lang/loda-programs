@@ -3,7 +3,7 @@
 
 pow $0,4
 mov $1,$0
-trn $0,4
-sub $0,4
-gcd $1,$0
-mul $1,5
+trn $1,4
+sub $1,4
+gcd $0,$1
+mul $0,5

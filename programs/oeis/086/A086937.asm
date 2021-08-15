@@ -3,4 +3,3 @@
 
 seq $0,138689 ; Numbers of the form 26+p^2 (where p is a prime).
 mod $0,5
-mov $1,$0

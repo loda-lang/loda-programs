@@ -3,6 +3,6 @@
 
 add $0,2
 mov $1,$0
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-add $1,$0
-sub $1,1
+seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
+add $0,$1
+sub $0,1

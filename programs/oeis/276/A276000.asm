@@ -3,10 +3,10 @@
 
 mov $1,$0
 mov $2,$0
-lpb $0
-  mov $1,$0
-  mov $0,1
-  seq $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
+lpb $1
+  mov $0,$1
+  seq $0,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
+  mov $1,1
 lpe
-add $1,1
-add $1,$2
+add $0,1
+add $0,$2

@@ -3,5 +3,4 @@
 
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-mov $1,$0
-sub $1,1982
+sub $0,1982

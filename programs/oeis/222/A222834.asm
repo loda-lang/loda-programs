@@ -5,6 +5,5 @@ seq $0,183356 ; One quarter the number of n X 4 1..4 arrays with no two neighbor
 sub $0,42
 mul $0,3
 add $0,2
-mov $1,$0
-div $1,18
-add $1,7
+div $0,18
+add $0,7

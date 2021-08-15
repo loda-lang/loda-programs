@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,236916 ; The first "octad" is 0, 1, 2, 2, 2, 2, 3, 3; thereafter add 4 to get the next octad.
-mov $1,$0
-sub $1,2
+sub $0,2

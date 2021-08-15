@@ -3,6 +3,5 @@
 
 seq $0,49651 ; a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
 div $0,2
-mov $1,$0
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

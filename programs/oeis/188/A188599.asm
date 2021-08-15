@@ -8,3 +8,4 @@ lpb $0
   seq $1,66770 ; a(n) = 5^n*sin(2n*arctan(1/2)) or numerator of tan(2n*arctan(1/2)).
 lpe
 div $1,4
+mov $0,$1

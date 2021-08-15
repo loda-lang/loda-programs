@@ -3,5 +3,4 @@
 
 seq $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
 mod $0,4
-mov $1,$0
-add $1,1
+add $0,1

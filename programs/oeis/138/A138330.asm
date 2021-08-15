@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-add $1,$0
-add $1,1
+add $0,1

@@ -25,3 +25,4 @@ lpb $3
   sub $3,$6
   mod $4,2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 div $0,5
 seq $0,246817 ; Possible number of trailing zeros in hyperfactorials (A002109).
-mov $1,$0

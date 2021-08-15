@@ -3,4 +3,3 @@
 
 seq $0,33133 ; Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
 seq $0,47318 ; Numbers that are congruent to {0, 1, 2, 4, 5, 6} mod 7.
-mov $1,$0

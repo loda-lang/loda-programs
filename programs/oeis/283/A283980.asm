@@ -3,11 +3,11 @@
 
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 mov $1,$0
-add $1,$0
-lpb $0
-  dif $0,3
-  mul $1,2
+mul $0,2
+lpb $1
+  mul $0,2
+  dif $1,3
 lpe
-sub $1,2
-div $1,2
-add $1,1
+sub $0,2
+div $0,2
+add $0,1

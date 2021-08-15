@@ -3,6 +3,4 @@
 
 add $0,1
 seq $0,208881 ; Number of words either empty or beginning with the first letter of the ternary alphabet, where each letter of the alphabet occurs n times.
-mov $1,$0
-mul $1,2
-div $1,4
+div $0,2

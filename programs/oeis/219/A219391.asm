@@ -3,5 +3,4 @@
 
 seq $0,219721 ; Expansion of (1+7*x+5*x^2+7*x^3+x^4)/(1-x-x^4+x^5).
 pow $0,2
-mov $1,$0
-div $1,21
+div $0,21

@@ -3,8 +3,7 @@
 
 seq $0,269913 ; First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
 sub $0,1
-mov $1,$0
-div $1,2
-sub $1,1
-mul $1,2
-add $1,3
+div $0,2
+sub $0,1
+mul $0,2
+add $0,3

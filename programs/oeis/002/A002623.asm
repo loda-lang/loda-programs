@@ -3,4 +3,3 @@
 
 add $0,2
 seq $0,173196 ; Partial sums of A002620.
-mov $1,$0

@@ -3,5 +3,4 @@
 
 seq $0,281445 ; Nonnegative k for which (2*k^2 + 1)/11 is an integer.
 pow $0,2
-mov $1,$0
-div $1,11
+div $0,11

@@ -3,5 +3,4 @@
 
 seq $0,110801 ; Numbers n such that 12n + 1 is prime.
 mul $0,12
-mov $1,$0
-add $1,1
+add $0,1

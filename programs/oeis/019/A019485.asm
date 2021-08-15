@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,162740 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^3 = I.
-mov $1,$0
-div $1,6
+div $0,6

@@ -4,4 +4,3 @@
 seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 seq $0,3188 ; Decimal equivalent of Gray code for n.
 seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-mov $1,$0

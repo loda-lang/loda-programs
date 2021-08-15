@@ -10,5 +10,4 @@ add $0,$1
 seq $2,135708 ; Minimal total number of edges in a polyhex consisting of n hexagonal cells.
 add $2,4
 sub $0,$2
-mov $1,$0
-sub $1,107
+sub $0,107

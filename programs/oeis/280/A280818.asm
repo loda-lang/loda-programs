@@ -3,4 +3,3 @@
 
 mul $0,4
 seq $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
-mov $1,$0

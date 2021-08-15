@@ -4,3 +4,4 @@
 seq $0,204421 ; Symmetric matrix: f(i,j)=(i+j+2 mod 3), by antidiagonals.
 sub $1,$0
 add $1,2
+mov $0,$1

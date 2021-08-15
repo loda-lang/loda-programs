@@ -8,3 +8,4 @@ lpb $0
   seq $1,288932 ; Fixed point of the mapping 00->1000, 10->10101, starting with 00.
 lpe
 add $1,1
+mov $0,$1

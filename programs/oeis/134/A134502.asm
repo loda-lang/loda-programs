@@ -3,6 +3,5 @@
 
 mul $0,7
 seq $0,204644 ; Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
-mov $1,$0
-div $1,4
-add $1,1
+div $0,4
+add $0,1

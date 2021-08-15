@@ -8,3 +8,4 @@ lpb $0
   seq $2,101092 ; Second partial sums of fifth powers (A000584).
   add $1,$2
 lpe
+mov $0,$1

@@ -21,5 +21,4 @@ lpb $3
   cmp $6,0
   sub $3,$6
 lpe
-mov $1,$0
-div $1,2
+div $0,2

@@ -4,6 +4,5 @@
 mov $1,$0
 seq $0,284625 ; Positions of 2 in A284749.
 sub $0,$1
-mov $1,$0
-sub $1,3
-div $1,2
+sub $0,3
+div $0,2

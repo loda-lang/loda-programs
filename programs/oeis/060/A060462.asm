@@ -4,4 +4,3 @@
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 sub $0,1
 max $0,1
-mov $1,$0

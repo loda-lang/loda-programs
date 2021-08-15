@@ -3,5 +3,4 @@
 
 seq $0,20712 ; Pisot sequences E(5,8), P(5,8).
 mul $0,3
-mov $1,$0
-sub $1,11
+sub $0,11

@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-mov $1,$0

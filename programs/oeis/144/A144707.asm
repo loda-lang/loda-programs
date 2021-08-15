@@ -6,5 +6,4 @@ cmp $2,0
 add $0,$2
 add $0,1
 seq $0,97133 ; 3*Fibonacci(n)+(-1)^n.
-mov $1,$0
-sub $1,3
+sub $0,3

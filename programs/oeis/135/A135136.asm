@@ -3,4 +3,3 @@
 
 seq $0,179868 ; (Number of 1's in the binary expansion of n) mod 4.
 div $0,2
-mov $1,$0

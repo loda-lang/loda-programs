@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,46161 ; a(n) = denominator of binomial(2n,n)/4^n.
-mov $1,$0
-div $1,2
+div $0,2

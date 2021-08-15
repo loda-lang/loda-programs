@@ -4,4 +4,3 @@
 mul $0,4
 seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 div $0,2
-mov $1,$0

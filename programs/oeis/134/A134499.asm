@@ -3,5 +3,4 @@
 
 mul $0,7
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

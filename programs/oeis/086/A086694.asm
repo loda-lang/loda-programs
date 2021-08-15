@@ -6,3 +6,4 @@ lpb $0
   sub $0,1
 lpe
 cmp $1,$0
+mov $0,$1

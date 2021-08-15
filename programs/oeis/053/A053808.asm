@@ -9,3 +9,4 @@ lpb $0
   seq $2,1891 ; Hit polynomials; convolution of natural numbers with Fibonacci numbers F(2), F(3), F(4),....
   add $1,$2
 lpe
+mov $0,$1

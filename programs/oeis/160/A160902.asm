@@ -3,4 +3,3 @@
 
 seq $0,3991 ; Multiplication table read by antidiagonals: T(i,j) = i*j, i>=1, j>=1.
 seq $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
-mov $1,$0

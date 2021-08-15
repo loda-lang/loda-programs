@@ -4,5 +4,4 @@
 mul $0,3
 add $0,203
 seq $0,202305 ; Floor(sqrt(5*n)).
-mov $1,$0
-sub $1,30
+sub $0,30

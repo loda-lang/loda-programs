@@ -13,5 +13,4 @@ lpb $0
   mov $0,$4
 lpe
 trn $0,1
-mov $1,$0
-mul $1,9
+mul $0,9

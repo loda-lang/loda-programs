@@ -3,4 +3,3 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-mov $1,$0

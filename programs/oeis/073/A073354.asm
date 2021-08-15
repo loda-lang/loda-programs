@@ -30,3 +30,4 @@ lpb $3
   add $7,$8
   sub $3,$7
 lpe
+mov $0,$1

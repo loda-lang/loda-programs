@@ -18,3 +18,4 @@ lpe
 mov $1,8
 add $1,$3
 div $1,5
+mov $0,$1

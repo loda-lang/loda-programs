@@ -12,3 +12,4 @@ lpb $3
   seq $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
   add $1,$0
 lpe
+mov $0,$1

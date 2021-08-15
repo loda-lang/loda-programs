@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,126328 ; Rounded value of n!/(n(n+1)/2); A000142(n)/A000217(n).
-mov $1,$0

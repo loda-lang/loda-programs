@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,151978 ; Numbers that are congruent to {0, 1} mod 17.
-mov $1,$0
-mod $1,10
+mod $0,10

@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,5428 ; a(n) = ceiling((1 + sum of preceding terms) / 2) starting with a(0) = 1.
-mov $1,$0

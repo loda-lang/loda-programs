@@ -7,3 +7,4 @@ lpb $0
   seq $2,153234 ; a(n) = floor(2^n/9).
   add $1,$2
 lpe
+mov $0,$1

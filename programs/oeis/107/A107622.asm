@@ -5,5 +5,4 @@ mov $2,7142
 gcd $2,$0
 seq $0,6005 ; The odd prime numbers together with 1.
 trn $0,$2
-mov $1,$0
-add $1,4
+add $0,4

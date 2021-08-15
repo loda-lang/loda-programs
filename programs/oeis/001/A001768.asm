@@ -21,3 +21,4 @@ lpb $3
   add $1,$0
   cmp $4,7
 lpe
+mov $0,$1

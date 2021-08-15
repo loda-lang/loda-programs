@@ -4,3 +4,4 @@
 sub $1,$0
 seq $0,101300 ; Second-smallest prime larger than n.
 add $1,$0
+mov $0,$1

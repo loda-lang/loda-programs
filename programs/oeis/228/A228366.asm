@@ -8,3 +8,4 @@ lpb $0
   seq $2,228367 ; n-th element of the ruler function plus the highest power of 2 dividing n.
   add $1,$2
 lpe
+mov $0,$1

@@ -3,8 +3,8 @@
 
 pow $0,2
 mov $1,$0
-div $0,6
+div $1,6
 mov $2,2
-mul $2,$0
+mul $2,$1
 mul $2,2
-sub $1,$2
+sub $0,$2

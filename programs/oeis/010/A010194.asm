@@ -3,4 +3,3 @@
 
 dif $0,2
 seq $0,10195 ; Continued fraction for sqrt(136).
-mov $1,$0

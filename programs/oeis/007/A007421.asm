@@ -3,4 +3,3 @@
 
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 gcd $0,2
-mov $1,$0

@@ -6,4 +6,3 @@ seq $0,40 ; The prime numbers.
 sub $2,1
 sub $0,$2
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
-mov $1,$0

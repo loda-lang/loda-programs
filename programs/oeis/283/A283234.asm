@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,288713 ; Positions of 1 in A288711; complement of A288712.
-mov $1,$0
-sub $1,3
+sub $0,3

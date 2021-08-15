@@ -3,5 +3,4 @@
 
 seq $0,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
 seq $0,195172 ; a(n) = 4*n - floor(2*n*r), where r=(1+sqrt(5))/2 (the golden ratio).
-mov $1,$0
-sub $1,1
+sub $0,1

@@ -4,5 +4,5 @@
 add $0,5
 div $0,2
 mov $1,$0
-bin $1,3
-div $1,$0
+bin $0,3
+div $0,$1

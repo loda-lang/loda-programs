@@ -3,8 +3,8 @@
 
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mov $1,$0
-lpb $0
-  mul $0,$2
-  sub $1,1
+lpb $1
+  sub $0,1
+  mul $1,$2
 lpe
-seq $1,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
+seq $0,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.

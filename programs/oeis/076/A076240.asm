@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,1
 seq $0,4648 ; a(n) = prime(n) mod n.
-mov $1,$0

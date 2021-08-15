@@ -4,4 +4,3 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

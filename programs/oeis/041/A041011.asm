@@ -3,4 +3,3 @@
 
 seq $0,77985 ; Expansion of 1/(1 + 2*x - x^2).
 dif $0,-2
-mov $1,$0

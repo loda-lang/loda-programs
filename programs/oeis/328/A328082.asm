@@ -5,6 +5,5 @@ seq $0,212012 ; Triangle read by rows in which row n lists the number of states 
 div $0,2
 seq $0,52995 ; Expansion of 2*x*(1 - x)/(1 - 3*x + x^2).
 sub $0,2
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

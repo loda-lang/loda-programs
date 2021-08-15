@@ -7,3 +7,4 @@ lpb $0
   seq $2,130237 ; The 'lower' Fibonacci Inverse A130233(n) multiplied by n.
   add $1,$2
 lpe
+mov $0,$1

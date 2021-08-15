@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,69097 ; Moebius transform of A064987, n*sigma(n).
-mov $1,$0

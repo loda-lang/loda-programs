@@ -12,3 +12,4 @@ lpb $2
   div $0,16
   add $1,$0
 lpe
+mov $0,$1

@@ -5,4 +5,3 @@ seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,34693 ; Smallest k such that k*n+1 is prime.
 add $0,1
 div $0,2
-mov $1,$0

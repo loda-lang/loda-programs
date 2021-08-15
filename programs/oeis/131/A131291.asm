@@ -9,5 +9,4 @@ mod $0,9
 dif $0,-2
 mod $0,3
 dif $0,2
-mov $1,$0
-add $1,4
+add $0,4

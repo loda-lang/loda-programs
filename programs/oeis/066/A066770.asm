@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,99456 ; Expansion of 1/(1 - 4*x + 5*x^2).
-mov $1,$0

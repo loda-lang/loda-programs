@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,99674 ; Partial sums of repdigits of A002281.
-mov $1,$0
-div $1,7
+div $0,7

@@ -3,3 +3,4 @@
 
 seq $0,226205 ; a(n) = F(n)^2 - F(n-1)^2 or F(n+1) * F(n-2) where F(n) = A000045(n), the Fibonacci numbers.
 sub $1,$0
+mov $0,$1

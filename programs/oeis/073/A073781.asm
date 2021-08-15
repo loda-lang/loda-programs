@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,81603 ; Number of 2's in ternary representation of n.
-mov $1,$0

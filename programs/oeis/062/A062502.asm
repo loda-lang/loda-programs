@@ -6,3 +6,4 @@ sub $0,1
 add $1,$0
 seq $1,73093 ; Number of prime power divisors of n.
 sub $1,1
+mov $0,$1

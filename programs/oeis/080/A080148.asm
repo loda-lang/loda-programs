@@ -3,5 +3,4 @@
 
 seq $0,2145 ; Primes of the form 4*k+3.
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
-mov $1,$0
-sub $1,1
+sub $0,1

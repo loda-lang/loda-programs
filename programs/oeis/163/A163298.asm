@@ -7,4 +7,3 @@ lpb $2
   sub $0,1
   div $2,2
 lpe
-mov $1,$0

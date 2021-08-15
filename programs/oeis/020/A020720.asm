@@ -3,4 +3,3 @@
 
 add $0,8
 seq $0,134816 ; Padovan's spiral numbers.
-mov $1,$0

@@ -9,6 +9,5 @@ mov $4,720
 mul $4,$3
 add $4,4
 add $0,$4
-mov $1,$0
-sub $1,4
-add $1,$2
+sub $0,4
+add $0,$2

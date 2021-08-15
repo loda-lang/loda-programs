@@ -3,4 +3,3 @@
 
 seq $0,91304 ; a(n) = Omega(2n-1) (number of prime factors of the n-th odd number, counted with multiplicity).
 trn $0,1
-mov $1,$0

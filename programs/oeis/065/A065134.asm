@@ -3,5 +3,5 @@
 
 add $0,2
 mov $1,$0
-seq $0,230980 ; Number of primes <= n, starting at n=0.
-mod $1,$0
+seq $1,230980 ; Number of primes <= n, starting at n=0.
+mod $0,$1

@@ -3,4 +3,3 @@
 
 add $0,12
 seq $0,24165 ; Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b > b - a.
-mov $1,$0

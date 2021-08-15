@@ -5,4 +5,3 @@ mov $1,$0
 seq $0,26491 ; a(n) = least k > a(n-1) such that A001285(k-1) = A001285(n-1) for n >= 1.
 div $1,2
 add $0,$1
-mov $1,$0

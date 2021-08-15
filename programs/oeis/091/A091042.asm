@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,34871 ; Odd-numbered rows of Pascal's triangle.
-mov $1,$0

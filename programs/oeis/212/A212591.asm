@@ -3,5 +3,4 @@
 
 seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
 seq $0,86799 ; Replace all trailing 0's with 1's in binary representation of n.
-mov $1,$0
-div $1,6
+div $0,6

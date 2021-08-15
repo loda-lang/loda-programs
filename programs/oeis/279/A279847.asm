@@ -10,3 +10,4 @@ lpb $2
   seq $0,67558 ; Sum of squares of proper divisors of n.
   add $1,$0
 lpe
+mov $0,$1

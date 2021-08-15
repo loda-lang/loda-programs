@@ -13,7 +13,6 @@ mul $0,$2
 mul $2,$3
 mul $0,$2
 mul $0,3
-mov $1,$0
-sub $1,12
-div $1,24
-add $1,1
+sub $0,12
+div $0,24
+add $0,1

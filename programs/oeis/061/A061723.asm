@@ -4,8 +4,7 @@
 add $0,10
 seq $0,62005 ; Floor of arithmetic-geometric mean of n and 2n.
 sub $0,14
-mov $1,$0
 mov $2,$0
 cmp $2,0
-add $1,$2
-sub $1,1
+add $0,$2
+sub $0,1

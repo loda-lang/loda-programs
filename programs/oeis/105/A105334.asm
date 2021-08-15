@@ -6,5 +6,4 @@ pow $2,2
 add $2,$0
 mov $0,$2
 mod $0,64
-mov $1,$0
-div $1,2
+div $0,2

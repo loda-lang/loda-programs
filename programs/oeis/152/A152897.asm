@@ -7,3 +7,4 @@ lpb $0
   seq $2,152896 ; a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
   add $1,$2
 lpe
+mov $0,$1

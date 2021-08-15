@@ -3,4 +3,3 @@
 
 seq $0,3627 ; Primes of the form 3n-1.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

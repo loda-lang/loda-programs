@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,7775 ; Numbers not divisible by 2, 3 or 5.
-mov $1,$0

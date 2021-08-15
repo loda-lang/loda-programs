@@ -52,3 +52,4 @@ lpb $4
   lpe
   add $1,$14
 lpe
+mov $0,$1

@@ -5,4 +5,3 @@ seq $0,40 ; The prime numbers.
 trn $0,4
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 trn $0,1
-mov $1,$0

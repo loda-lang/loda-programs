@@ -9,4 +9,3 @@ lpb $0
 lpe
 mov $0,$2
 mod $0,3
-mov $1,$0

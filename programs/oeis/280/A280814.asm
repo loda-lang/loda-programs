@@ -4,5 +4,4 @@
 add $0,2
 seq $0,287775 ; Positions of 0 in A287772; complement of A050140 (conjectured and proved).
 div $0,3
-mov $1,$0
-sub $1,1
+sub $0,1

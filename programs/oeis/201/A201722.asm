@@ -5,8 +5,8 @@ pow $0,2
 mul $0,3
 mov $1,$0
 mov $2,4
-lpb $0
-  mov $0,4
+lpb $1
+  mov $1,4
 lpe
-add $0,$2
-add $1,$0
+add $1,$2
+add $0,$1

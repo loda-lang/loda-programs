@@ -29,3 +29,4 @@ lpb $6
   sub $6,1
 lpe
 add $1,11
+mov $0,$1

@@ -3,6 +3,5 @@
 
 sub $0,1
 div $0,2
-mov $1,$0
-seq $1,1318 ; Generalized pentagonal numbers: m*(3*m - 1)/2, m = 0, +-1, +-2, +-3, ....
-mul $1,2
+seq $0,1318 ; Generalized pentagonal numbers: m*(3*m - 1)/2, m = 0, +-1, +-2, +-3, ....
+mul $0,2

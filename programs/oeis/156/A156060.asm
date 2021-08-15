@@ -7,5 +7,4 @@ lpb $2
   mul $0,5
   sub $2,1
 lpe
-mov $1,$0
-div $1,5
+div $0,5

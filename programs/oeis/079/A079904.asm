@@ -10,4 +10,3 @@ lpb $2
   trn $2,$1
 lpe
 mul $0,$1
-mov $1,$0

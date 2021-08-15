@@ -4,7 +4,6 @@
 seq $0,72668 ; Numbers one less than composite numbers.
 sub $0,1
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
-mov $1,$0
-sub $1,5
-mul $1,2
-add $1,7
+sub $0,5
+mul $0,2
+add $0,7

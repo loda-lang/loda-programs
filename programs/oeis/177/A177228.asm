@@ -4,3 +4,4 @@
 seq $0,173741 ; T(n,k) = binomial(n,k) + 4 for 1 <= k <= n - 1, n >= 2, and T(n,0) = T(n,n) = 1 for n >= 0, triangle read by rows.
 sub $1,$0
 add $1,4
+mov $0,$1

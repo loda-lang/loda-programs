@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,4125 ; Sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
 mul $2,$0
 add $0,$2
-mov $1,$0

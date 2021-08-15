@@ -5,5 +5,4 @@ add $0,1
 seq $0,112652 ; a(n) squared is congruent to a(n) (mod 12).
 seq $0,90772 ; Numbers that are congruent to {2, 8} mod 10.
 div $0,4
-mov $1,$0
-sub $1,1
+sub $0,1

@@ -3,10 +3,10 @@
 
 mul $0,5
 mov $1,$0
-bin $0,2
-add $1,2
-mod $0,$1
-pow $0,3
-mov $1,$0
-add $1,4
-mod $1,10
+add $0,2
+bin $1,2
+mod $1,$0
+pow $1,3
+mov $0,$1
+add $0,4
+mod $0,10

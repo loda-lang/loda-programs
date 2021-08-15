@@ -13,3 +13,4 @@ lpb $0
   trn $0,1
   mov $3,1
 lpe
+mov $0,$1

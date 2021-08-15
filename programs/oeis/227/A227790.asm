@@ -5,4 +5,3 @@ add $0,1
 pow $0,2
 mul $0,3
 seq $0,53188 ; Distance from n to nearest square.
-mov $1,$0

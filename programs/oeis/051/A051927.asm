@@ -8,3 +8,4 @@ seq $1,285869 ; a(n) is the number of zeros of the Chebyshev S(n, x) polynomial 
 sub $1,81367
 mul $1,2
 add $1,1
+mov $0,$1

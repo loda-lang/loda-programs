@@ -10,3 +10,4 @@ lpb $0
 lpe
 pow $1,2
 div $1,64
+mov $0,$1

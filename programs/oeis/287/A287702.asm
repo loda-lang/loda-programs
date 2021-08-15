@@ -9,10 +9,9 @@ mov $2,$3
 mul $2,$4
 mov $5,$0
 sub $0,$2
-mov $1,$0
 mov $6,$5
 mul $6,$5
 mul $6,$5
 mov $7,$6
 mul $7,36
-add $1,$7
+add $0,$7

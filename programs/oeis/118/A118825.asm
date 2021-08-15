@@ -17,3 +17,4 @@ lpe
 mul $2,2
 mul $1,$2
 div $1,2
+mov $0,$1

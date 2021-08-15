@@ -18,3 +18,4 @@ lpb $2
   bin $1,$2
   trn $2,$3
 lpe
+mov $0,$1

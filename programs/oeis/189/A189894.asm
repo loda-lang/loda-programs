@@ -45,3 +45,4 @@ lpb $12
   lpe
   add $1,$9
 lpe
+mov $0,$1

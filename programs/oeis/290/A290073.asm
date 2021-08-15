@@ -18,4 +18,3 @@ lpb $0
   add $2,$4
 lpe
 add $0,$2
-mov $1,$0

@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 add $0,2
 seq $0,51903 ; Maximal exponent in prime factorization of n.
-mov $1,$0

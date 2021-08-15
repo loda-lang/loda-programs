@@ -7,3 +7,4 @@ lpb $0
   seq $2,98578 ; a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).
   add $1,$2
 lpe
+mov $0,$1

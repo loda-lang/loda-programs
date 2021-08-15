@@ -4,4 +4,3 @@
 mul $0,2
 add $0,2
 seq $0,8347 ; a(n) = Sum_{i=0..n-1} (-1)^i * prime(n-i).
-mov $1,$0

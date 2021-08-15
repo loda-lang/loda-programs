@@ -3,4 +3,3 @@
 
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,49502 ; Major index of n, 2nd definition.
-mov $1,$0

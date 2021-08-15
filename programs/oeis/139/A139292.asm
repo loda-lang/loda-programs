@@ -4,3 +4,4 @@
 seq $0,40976 ; a(n) = prime(n) - 2.
 mov $1,4
 pow $1,$0
+mov $0,$1

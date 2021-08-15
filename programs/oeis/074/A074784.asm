@@ -12,3 +12,4 @@ lpb $2
   seq $0,118881 ; Square of sum of decimal digits of n.
   add $1,$0
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,26218 ; a(n) = (1/3)*(s(n) + 2), where s(n) is the n-th number congruent to 1 mod 3 in A026177.
-mov $1,$0
-sub $1,1
+sub $0,1

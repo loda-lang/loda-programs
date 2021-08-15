@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,196564 ; Number of odd digits in decimal representation of n.
-mov $1,$0

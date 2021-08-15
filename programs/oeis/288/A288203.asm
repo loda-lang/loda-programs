@@ -10,6 +10,6 @@ lpb $2
 lpe
 add $0,2
 mov $1,$0
-bin $0,2
-mul $1,$0
-mod $1,2
+bin $1,2
+mul $0,$1
+mod $0,2

@@ -3,4 +3,3 @@
 
 seq $0,112714 ; Numbers of the form k*2^m-1 with k<2^m and k odd.
 seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
-mov $1,$0

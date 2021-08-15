@@ -4,4 +4,3 @@
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

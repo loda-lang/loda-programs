@@ -4,5 +4,4 @@
 seq $0,138406 ; a(n) = prime(n)^5 - prime(n)^3.
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,$0
-sub $1,1
+sub $0,1

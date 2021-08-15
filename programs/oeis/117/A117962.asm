@@ -14,3 +14,4 @@ lpb $2
   bin $3,2
   add $1,$3
 lpe
+mov $0,$1

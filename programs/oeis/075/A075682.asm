@@ -25,9 +25,8 @@ trn $5,1
 sub $0,$5
 mul $6,2
 sub $0,$6
-mov $1,$0
 mov $3,3
 sub $4,4
 add $3,$4
-add $1,$3
-trn $1,3
+add $0,$3
+trn $0,3

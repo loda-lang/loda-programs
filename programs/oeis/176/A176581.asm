@@ -3,9 +3,8 @@
 
 mov $2,$0
 seq $0,185549 ; a(n) = ceiling(n^(3/2)); complement of A185550.
-mov $1,$0
-pow $1,2
+pow $0,2
 mov $3,$2
 mul $3,$2
 mul $3,$2
-add $1,$3
+add $0,$3

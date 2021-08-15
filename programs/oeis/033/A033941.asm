@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
-mov $1,$0

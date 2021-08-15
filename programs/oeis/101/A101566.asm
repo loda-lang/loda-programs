@@ -3,4 +3,3 @@
 
 seq $0,25581 ; Triangle T(n, k) = n-k, 0 <= k <= n.
 seq $0,8643 ; Molien series for group of 4 X 4 upper triangular matrices over GF(2).
-mov $1,$0

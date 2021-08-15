@@ -3,5 +3,4 @@
 
 seq $0,284920 ; Numbers with digits 2 and 4 only.
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0
-div $1,2
+div $0,2

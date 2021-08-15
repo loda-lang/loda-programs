@@ -5,3 +5,4 @@ seq $0,71 ; a(n) = Fibonacci(n) - 1.
 add $0,1
 add $1,$0
 seq $1,70939 ; Length of binary representation of n.
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

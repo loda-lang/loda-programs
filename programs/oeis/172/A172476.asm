@@ -4,4 +4,3 @@
 seq $0,198083 ; Ceiling(n*Sqrt(6)).
 sub $0,1
 div $0,6
-mov $1,$0

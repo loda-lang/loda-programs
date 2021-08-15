@@ -3,4 +3,3 @@
 
 seq $0,73577 ; a(n) = 4*n^2 + 4*n - 1.
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-mov $1,$0

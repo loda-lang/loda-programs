@@ -3,4 +3,3 @@
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $1,$0

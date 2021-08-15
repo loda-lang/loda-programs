@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,62028 ; a(n) = n + sum of the digits of n.
-mov $1,$0

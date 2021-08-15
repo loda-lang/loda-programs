@@ -5,3 +5,4 @@ seq $0,160384 ; Number of nonzero digits in the base-3 representation of n.
 mov $1,2
 pow $1,$0
 div $1,2
+mov $0,$1

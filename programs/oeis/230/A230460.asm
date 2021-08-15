@@ -5,4 +5,3 @@ seq $0,40 ; The prime numbers.
 mul $0,2
 sub $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0

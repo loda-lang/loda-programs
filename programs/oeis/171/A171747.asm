@@ -3,4 +3,3 @@
 
 seq $0,3627 ; Primes of the form 3n-1.
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
-mov $1,$0

@@ -16,3 +16,4 @@ lpb $2
   add $3,$5
   add $1,$3
 lpe
+mov $0,$1

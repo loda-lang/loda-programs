@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,2321 ; Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
 add $2,1
 mul $0,$2
-mov $1,$0

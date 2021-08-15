@@ -6,3 +6,4 @@ trn $1,$0
 max $0,0
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
 add $1,$0
+mov $0,$1

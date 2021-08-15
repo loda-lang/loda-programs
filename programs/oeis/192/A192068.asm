@@ -7,3 +7,4 @@ lpb $0
   seq $2,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
   add $1,$2
 lpe
+mov $0,$1

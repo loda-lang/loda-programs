@@ -11,3 +11,4 @@ lpb $2
   seq $0,22559 ; Sum of exponents in prime-power factorization of n!.
   add $1,$0
 lpe
+mov $0,$1

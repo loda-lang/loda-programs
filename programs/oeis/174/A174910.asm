@@ -11,3 +11,4 @@ lpb $2
   seq $0,28835 ; Numbers whose iterated sum of digits is a prime.
   add $1,$0
 lpe
+mov $0,$1

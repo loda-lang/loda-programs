@@ -4,4 +4,3 @@
 mov $2,$0
 seq $2,192956 ; Constant term of the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
 add $0,$2
-mov $1,$0

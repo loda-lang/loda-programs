@@ -3,4 +3,3 @@
 
 seq $0,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
 pow $0,2
-mov $1,$0

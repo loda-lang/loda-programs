@@ -3,5 +3,4 @@
 
 seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
 seq $0,188070 ; Positions of 1 in A188068; complement of A188069.
-mov $1,$0
-sub $1,2
+sub $0,2

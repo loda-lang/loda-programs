@@ -3,4 +3,3 @@
 
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
 div $0,2
-add $1,$0

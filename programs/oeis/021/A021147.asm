@@ -11,5 +11,4 @@ gcd $0,6
 lpb $0
   mod $0,6
 lpe
-mov $1,$0
-mul $1,3
+mul $0,3

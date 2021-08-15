@@ -4,6 +4,5 @@
 add $0,2
 seq $0,78020 ; Expansion of (1-x)/(1-x+2*x^2).
 gcd $0,$0
-mov $1,$0
-div $1,4
-add $1,1
+div $0,4
+add $0,1

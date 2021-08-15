@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,333884 ; Difference between smallest cube > n and n.
-mov $1,$0

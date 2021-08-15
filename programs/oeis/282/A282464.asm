@@ -7,3 +7,4 @@ lpb $0
   seq $2,169630 ; a(n) = n times the square of Fibonacci(n).
   add $1,$2
 lpe
+mov $0,$1

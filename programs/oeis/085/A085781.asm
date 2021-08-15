@@ -15,3 +15,4 @@ lpb $0
 lpe
 trn $1,37
 add $1,1
+mov $0,$1

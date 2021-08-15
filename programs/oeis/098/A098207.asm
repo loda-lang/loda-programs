@@ -4,3 +4,4 @@
 seq $0,33175 ; n 3's followed by 1.
 add $1,$0
 pow $1,2
+mov $0,$1

@@ -7,4 +7,3 @@ lpb $0
   mod $0,10
 lpe
 mod $0,4
-mov $1,$0

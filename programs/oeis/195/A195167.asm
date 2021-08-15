@@ -4,3 +4,4 @@
 max $1,$0
 seq $0,195122 ; a(n) = 2*n - floor(n*r/2), where r=(1+sqrt(5))/2.
 add $1,$0
+mov $0,$1

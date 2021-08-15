@@ -3,4 +3,3 @@
 
 seq $0,56552 ; Powerfree kernel of cubefree part of n.
 pow $0,3
-mov $1,$0

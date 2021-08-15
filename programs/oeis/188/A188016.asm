@@ -3,4 +3,3 @@
 
 seq $0,188435 ; Positions of 1 in A188433; complement of A188434.
 seq $0,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
-mov $1,$0

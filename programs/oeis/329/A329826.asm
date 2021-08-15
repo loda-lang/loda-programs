@@ -7,9 +7,9 @@ add $2,6
 div $2,2
 add $2,1
 div $2,4
-add $1,$2
-div $1,4
-add $1,2
-mov $3,$0
+add $0,$2
+div $0,4
+add $0,2
+mov $3,$1
 mul $3,2
-add $1,$3
+add $0,$3

@@ -8,3 +8,4 @@ lpb $2
   add $0,1
   sub $1,$2
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
 seq $0,1157 ; sigma_2(n): sum of squares of divisors of n.
-mov $1,$0
-sub $1,1
+sub $0,1

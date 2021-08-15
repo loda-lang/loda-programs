@@ -4,7 +4,6 @@
 seq $0,48645 ; Integers with one or two 1-bits in their binary expansion.
 mul $0,2
 seq $0,160412 ; Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
-mov $1,$0
-sub $1,12
-div $1,9
-add $1,1
+sub $0,12
+div $0,9
+add $0,1

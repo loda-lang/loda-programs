@@ -3,4 +3,3 @@
 
 seq $0,280084 ; 1 together with the Pythagorean primes.
 max $0,2
-mov $1,$0

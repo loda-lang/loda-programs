@@ -3,5 +3,4 @@
 
 mul $0,5
 seq $0,258160 ; a(n) = 8*Lucas(n).
-mov $1,$0
-div $1,8
+div $0,8

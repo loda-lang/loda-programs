@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,253654 ; Indices of pentagonal numbers (A000326) which are also centered pentagonal numbers (A005891).
-mov $1,$0
-sub $1,6
-div $1,5
-add $1,1
+sub $0,6
+div $0,5
+add $0,1

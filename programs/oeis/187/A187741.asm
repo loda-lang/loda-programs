@@ -2,12 +2,12 @@
 ; 1,1,1,2,3,6,12,24,60,120,360,720,2520,5040,20160,40320,181440,362880,1814400,3628800,19958400,39916800,239500800,479001600,3113510400,6227020800,43589145600,87178291200,653837184000,1307674368000,10461394944000,20922789888000
 
 mov $1,$0
-div $0,2
-add $0,1
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-sub $1,1
-gcd $1,2
-mul $1,$0
-sub $1,2
+sub $0,1
+gcd $0,2
 div $1,2
 add $1,1
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $0,$1
+sub $0,2
+div $0,2
+add $0,1

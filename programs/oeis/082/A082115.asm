@@ -5,4 +5,3 @@ mul $0,3
 add $0,3
 mul $0,5
 seq $0,285193 ; Expansion of 1/(1+x+2*x^2) mod 3.
-mov $1,$0

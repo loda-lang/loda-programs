@@ -23,3 +23,4 @@ lpb $5
   mov $5,0
 lpe
 div $1,4
+mov $0,$1

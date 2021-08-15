@@ -3,7 +3,7 @@
 
 add $0,2
 mov $1,$0
-seq $0,209229 ; Characteristic function of powers of 2, cf. A000079.
-mul $0,$1
-mov $1,$0
-div $1,2
+seq $1,209229 ; Characteristic function of powers of 2, cf. A000079.
+mul $1,$0
+mov $0,$1
+div $0,2

@@ -4,4 +4,3 @@
 add $0,1
 seq $0,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
 dif $0,2
-add $1,$0

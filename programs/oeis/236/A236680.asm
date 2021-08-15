@@ -4,6 +4,5 @@
 seq $0,236916 ; The first "octad" is 0, 1, 2, 2, 2, 2, 3, 3; thereafter add 4 to get the next octad.
 add $0,1
 seq $0,335843 ; a(n) is the number of n-digit positive integers with exactly two distinct base 10 digits.
-mov $1,$0
-div $1,162
-add $1,1
+div $0,162
+add $0,1

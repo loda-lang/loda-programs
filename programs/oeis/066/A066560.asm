@@ -4,3 +4,4 @@
 seq $0,143545 ; a(n) = n unless n is a prime, in which case a(n) = 2n.
 mov $1,4
 max $1,$0
+mov $0,$1

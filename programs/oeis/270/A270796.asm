@@ -7,4 +7,3 @@ lpb $2
   seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
   sub $2,1
 lpe
-mov $1,$0

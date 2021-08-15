@@ -3,4 +3,3 @@
 
 seq $0,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
 trn $0,1
-mov $1,$0

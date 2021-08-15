@@ -7,5 +7,4 @@ mov $2,-3
 bin $2,$0
 sub $2,2
 mul $0,$2
-mov $1,$0
-sub $1,2
+sub $0,2

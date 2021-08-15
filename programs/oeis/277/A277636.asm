@@ -3,5 +3,4 @@
 
 seq $0,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
 pow $0,3
-mov $1,$0
-div $1,216
+div $0,216

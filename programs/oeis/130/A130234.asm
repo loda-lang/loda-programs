@@ -9,6 +9,5 @@ lpb $2
   add $0,4
   trn $2,1
 lpe
-mov $1,$0
-sub $1,8
-div $1,4
+sub $0,8
+div $0,4

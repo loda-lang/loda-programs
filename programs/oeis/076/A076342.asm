@@ -3,6 +3,6 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-mod $0,4
-add $1,$0
-sub $1,2
+mod $1,4
+add $0,$1
+sub $0,2

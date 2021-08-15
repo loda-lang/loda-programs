@@ -3,4 +3,3 @@
 
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
 seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-mov $1,$0

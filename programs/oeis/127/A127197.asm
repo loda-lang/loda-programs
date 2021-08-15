@@ -6,4 +6,3 @@ seq $0,230980 ; Number of primes <= n, starting at n=0.
 lpb $0
   dif $0,2
 lpe
-mov $1,$0

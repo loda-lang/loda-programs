@@ -3,5 +3,4 @@
 
 seq $0,163109 ; a(n) = phi(tau(n)).
 seq $0,73642 ; Replace 2^k in the binary representation of n with k (i.e., if n = 2^a + 2^b + 2^c + ... then a(n) = a + b + c + ...).
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,5 +3,4 @@
 
 mul $0,3
 seq $0,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
-mov $1,$0
-cmp $1,0
+cmp $0,0

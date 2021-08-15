@@ -8,3 +8,4 @@ lpb $0
   seq $1,81078 ; a(n) = Lucas(4n) - 3, or Lucas(2n-1)*Lucas(2n+1).
 lpe
 add $1,1
+mov $0,$1

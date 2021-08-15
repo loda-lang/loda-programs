@@ -22,3 +22,4 @@ lpb $0
   mov $5,2
 lpe
 sub $1,3
+mov $0,$1

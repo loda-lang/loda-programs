@@ -4,4 +4,3 @@
 seq $0,178142 ; Sum over the divisors d = 2 and/or 3 of n.
 mul $0,2
 seq $0,81249 ; Partial sums of A081134.
-mov $1,$0

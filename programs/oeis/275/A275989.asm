@@ -3,6 +3,6 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,$1
-mov $1,$0
+seq $1,6005 ; The odd prime numbers together with 1.
+sub $1,$0
+mov $0,$1

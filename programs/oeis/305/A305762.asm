@@ -5,5 +5,4 @@ dif $0,2
 mul $0,2
 gcd $0,144
 dif $0,3
-mov $1,$0
-div $1,2
+div $0,2

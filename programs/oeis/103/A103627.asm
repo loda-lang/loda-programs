@@ -6,3 +6,4 @@ lpb $0
   mov $$0,$0
   trn $$2,3
 lpe
+mov $0,$1

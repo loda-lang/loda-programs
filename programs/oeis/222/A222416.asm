@@ -4,3 +4,4 @@
 seq $0,8475 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).
 mov $1,1
 max $1,$0
+mov $0,$1

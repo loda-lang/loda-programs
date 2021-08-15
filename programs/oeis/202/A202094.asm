@@ -3,7 +3,6 @@
 
 add $0,7
 seq $0,307182 ; Crossing number of the n-crown graph (conjectured).
-mov $1,$0
-pow $1,2
-mul $1,26
-div $1,416
+pow $0,2
+mul $0,26
+div $0,416

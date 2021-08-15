@@ -61,3 +61,4 @@ lpb $11
   add $1,$8
   sub $11,1
 lpe
+mov $0,$1

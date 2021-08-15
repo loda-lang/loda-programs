@@ -8,5 +8,4 @@ lpb $0
   trn $0,1
   seq $0,36579 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 lpe
-mov $1,$0
-add $1,1
+add $0,1

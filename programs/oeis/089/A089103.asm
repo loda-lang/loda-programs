@@ -5,6 +5,5 @@ mov $2,$0
 seq $0,6005 ; The odd prime numbers together with 1.
 add $0,$2
 trn $0,2
-mov $1,$0
-add $1,3
-mod $1,10
+add $0,3
+mod $0,10

@@ -6,3 +6,4 @@ seq $0,141856 ; Primes congruent to 9 mod 11.
 add $1,$0
 sub $1,96
 div $1,11
+mov $0,$1

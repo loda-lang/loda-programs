@@ -4,5 +4,4 @@
 seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 sub $0,1
 seq $0,22351 ; Fibonacci sequence beginning 0, 17.
-mov $1,$0
-div $1,17
+div $0,17

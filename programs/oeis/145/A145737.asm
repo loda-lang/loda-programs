@@ -5,4 +5,3 @@ add $0,1
 mul $0,2
 max $0,3
 seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
-mov $1,$0

@@ -3,7 +3,6 @@
 
 trn $0,1
 seq $0,31138 ; Numbers k such that 1^5 + 2^5 + ... + k^5 is a square.
-mov $1,$0
-div $1,12
-mul $1,8
-add $1,1
+div $0,12
+mul $0,8
+add $0,1

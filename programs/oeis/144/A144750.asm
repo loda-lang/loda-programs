@@ -4,4 +4,3 @@
 seq $0,47342 ; Numbers that are congruent to {0, 3, 4} mod 7.
 add $0,2
 seq $0,154529 ; A090040 mod 9.
-mov $1,$0

@@ -6,4 +6,3 @@ mul $0,3
 div $0,4
 seq $0,332056 ; a(1) = 1, then a(n+1) = a(n) - (-1)^a(n) Sum_{k=1..n} a(k): if a(n) is odd, add the partial sum, else subtract.
 div $0,2
-mov $1,$0

@@ -4,3 +4,4 @@
 seq $0,40 ; The prime numbers.
 mov $1,5
 pow $1,$0
+mov $0,$1

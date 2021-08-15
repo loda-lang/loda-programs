@@ -3,6 +3,5 @@
 
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
-mov $1,$0
-sub $1,2
-div $1,2
+sub $0,2
+div $0,2

@@ -4,7 +4,6 @@
 mov $2,$0
 seq $0,137709 ; Secondary Upper Wythoff Sequence.
 sub $0,3
-mov $1,$0
-div $1,2
-add $1,2
-add $1,$2
+div $0,2
+add $0,2
+add $0,$2

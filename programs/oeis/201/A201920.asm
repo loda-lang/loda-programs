@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,126605 ; Final three digits of 2^n.
-mov $1,$0
-div $1,8
+div $0,8

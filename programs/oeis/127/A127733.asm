@@ -3,4 +3,3 @@
 
 seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
 pow $0,2
-mov $1,$0

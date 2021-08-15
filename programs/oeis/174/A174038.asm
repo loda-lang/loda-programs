@@ -3,4 +3,3 @@
 
 seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
-mov $1,$0

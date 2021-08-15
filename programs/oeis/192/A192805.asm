@@ -4,5 +4,4 @@
 mul $0,2
 trn $0,5
 seq $0,23435 ; Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-5).
-mov $1,$0
-add $1,1
+add $0,1

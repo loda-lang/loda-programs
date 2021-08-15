@@ -6,10 +6,10 @@ mul $0,2
 add $0,1
 seq $0,80468 ; a(n) = A080578(n)-2n.
 mov $1,$0
-div $0,2
-add $0,$1
-mov $1,$0
-add $1,5
+div $1,2
+add $1,$0
+mov $0,$1
+add $0,5
 mov $3,$2
 mul $3,4
-add $1,$3
+add $0,$3

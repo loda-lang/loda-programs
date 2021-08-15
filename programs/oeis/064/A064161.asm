@@ -13,6 +13,5 @@ mov $2,$4
 cmp $2,0
 add $4,$2
 div $0,$4
-mov $1,$0
-mul $1,2
-add $1,12
+mul $0,2
+add $0,12

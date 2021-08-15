@@ -8,3 +8,4 @@ lpb $0
   seq $2,88917 ; Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
   add $1,$2
 lpe
+mov $0,$1

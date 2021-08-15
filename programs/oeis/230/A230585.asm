@@ -4,5 +4,4 @@
 add $0,2
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 trn $0,3
-mov $1,$0
-add $1,3
+add $0,3

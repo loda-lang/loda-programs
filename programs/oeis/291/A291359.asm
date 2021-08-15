@@ -23,3 +23,4 @@ lpb $3
   pow $7,$6
   sub $3,$7
 lpe
+mov $0,$1

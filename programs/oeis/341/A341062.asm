@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
-mov $1,$0

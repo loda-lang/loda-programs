@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,168458 ; a(n) = 7 + 10*floor((n-1)/2).
 seq $0,97326 ; Largest integer m such that m*n has the same decimal digit length as n.
-mov $1,$0

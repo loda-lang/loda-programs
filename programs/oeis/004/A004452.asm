@@ -4,10 +4,10 @@
 mul $0,2
 seq $0,4457 ; Nimsum n + 16.
 mov $1,$0
-mod $0,8
-sub $0,511879
-mul $0,2
-sub $1,8
-sub $1,$0
-sub $1,1023743
-div $1,2
+sub $0,8
+mod $1,8
+sub $1,511879
+mul $1,2
+sub $0,$1
+sub $0,1023743
+div $0,2

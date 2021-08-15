@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,65359 ; Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
-mov $1,$0

@@ -12,3 +12,4 @@ lpb $2
   seq $0,24165 ; Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b > b - a.
   add $1,$0
 lpe
+mov $0,$1

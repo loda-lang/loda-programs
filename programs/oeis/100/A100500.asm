@@ -3,4 +3,3 @@
 
 seq $0,105092 ; Sum of the sides of ordered 2 prime sided prime triangles.
 div $0,2
-mov $1,$0

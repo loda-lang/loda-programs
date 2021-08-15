@@ -3,4 +3,3 @@
 
 add $0,2
 seq $0,274089 ; Numbers repeated except that powers of 2 only appear once.
-mov $1,$0

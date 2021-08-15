@@ -3,7 +3,6 @@
 
 add $0,2
 seq $0,49652 ; a(n) = (F(3*n+2) - 1)/4, where F=A000045 (the Fibonacci sequence).
-mov $1,$0
-sub $1,5
-mul $1,24
-add $1,126
+sub $0,5
+mul $0,24
+add $0,126

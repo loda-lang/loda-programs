@@ -5,4 +5,3 @@ add $0,1
 mul $0,9
 sub $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $1,$0

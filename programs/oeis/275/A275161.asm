@@ -5,5 +5,4 @@ add $0,1
 seq $0,122197 ; Fractal sequence: count up to successive integers twice.
 mul $0,2
 min $0,3
-mov $1,$0
-mul $1,2
+mul $0,2

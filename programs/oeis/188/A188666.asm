@@ -4,4 +4,3 @@
 add $0,1
 div $0,2
 seq $0,15 ; Smallest prime power >= n.
-mov $1,$0

@@ -5,4 +5,3 @@ seq $0,300518 ; The greatest prime factor of the squarefree part of n, or 1 if n
 pow $1,0
 mov $2,-1
 mov $$3,$$0
-mov $1,$0

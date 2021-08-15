@@ -3,4 +3,3 @@
 
 seq $0,4737 ; Concatenation of sequences (1,2,..,n-1,n,n-1,..,1) for n >= 1.
 pow $0,3
-mov $1,$0

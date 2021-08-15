@@ -4,4 +4,3 @@
 seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
 mul $0,2
 trn $0,1
-mov $1,$0

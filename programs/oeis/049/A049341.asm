@@ -9,6 +9,5 @@ lpb $0
   mul $0,4
   mod $0,5
 lpe
-mov $1,$0
-mul $1,3
-add $1,3
+mul $0,3
+add $0,3

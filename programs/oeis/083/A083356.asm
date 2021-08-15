@@ -8,3 +8,4 @@ lpb $0
   seq $2,60872 ; Sum of d*d' over all unordered pairs (d,d') with d*d' = n.
   add $1,$2
 lpe
+mov $0,$1

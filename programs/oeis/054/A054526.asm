@@ -6,4 +6,3 @@ lpb $0
   sub $0,$1
 lpe
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

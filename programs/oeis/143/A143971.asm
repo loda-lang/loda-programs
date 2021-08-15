@@ -8,3 +8,4 @@ lpe
 sub $1,$0
 mul $1,3
 add $1,1
+mov $0,$1

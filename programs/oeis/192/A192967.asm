@@ -7,3 +7,4 @@ sub $1,$0
 seq $0,22086 ; Fibonacci sequence beginning 0, 3.
 add $1,$0
 sub $1,5
+mov $0,$1

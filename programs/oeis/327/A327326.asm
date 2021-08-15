@@ -7,3 +7,4 @@ lpb $0
   seq $2,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
   add $1,$2
 lpe
+mov $0,$1

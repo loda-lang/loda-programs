@@ -8,4 +8,3 @@ lpe
 sub $0,1
 sub $0,$1
 bin $0,2
-mov $1,$0

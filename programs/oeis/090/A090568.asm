@@ -5,14 +5,14 @@ mul $0,1236
 div $0,672
 mov $1,$0
 mov $2,3
-lpb $1
-  lpb $0
-    sub $0,4
-    pow $0,$2
+lpb $0
+  lpb $1
+    sub $1,4
+    pow $1,$2
   lpe
-  mul $0,2
-  seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-  seq $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
-  mov $1,$0
+  mul $1,2
+  seq $1,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  seq $1,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+  mov $0,$1
 lpe
-add $1,1
+add $0,1

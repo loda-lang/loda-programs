@@ -4,7 +4,6 @@
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
 seq $0,32928 ; Numbers whose set of base 7 digits is {1,2}.
-mov $1,$0
-div $1,49
-mul $1,3
-add $1,1
+mul $0,12
+div $0,196
+add $0,1

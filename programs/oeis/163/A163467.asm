@@ -14,3 +14,4 @@ lpb $3
   mul $1,$3
   div $3,2
 lpe
+mov $0,$1

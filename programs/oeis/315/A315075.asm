@@ -30,3 +30,4 @@ lpb $7
   sub $7,1
 lpe
 sub $1,9
+mov $0,$1

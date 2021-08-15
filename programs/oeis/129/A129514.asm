@@ -18,3 +18,4 @@ lpb $0
 lpe
 add $5,1
 gcd $1,$5
+mov $0,$1

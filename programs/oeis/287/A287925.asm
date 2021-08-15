@@ -5,5 +5,4 @@ seq $0,6005 ; The odd prime numbers together with 1.
 pow $0,2
 max $0,4
 pow $0,2
-mov $1,$0
-add $1,16
+add $0,16

@@ -8,4 +8,3 @@ lpb $3
   add $2,6
   trn $3,$2
 lpe
-mov $1,$0

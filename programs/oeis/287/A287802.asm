@@ -4,7 +4,6 @@
 mov $2,$0
 div $0,2
 seq $0,287659 ; Positions of 1 in A287657; complement of A287658.
-mov $1,$0
-div $1,2
-add $1,1
-add $1,$2
+div $0,2
+add $0,1
+add $0,$2

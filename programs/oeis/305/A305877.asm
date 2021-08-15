@@ -3,4 +3,3 @@
 
 seq $0,30102 ; Base-3 reversal of n (written in base 10).
 seq $0,7089 ; Numbers in base 3.
-mov $1,$0

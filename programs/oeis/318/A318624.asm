@@ -49,3 +49,4 @@ lpb $4
   lpe
   add $1,$13
 lpe
+mov $0,$1

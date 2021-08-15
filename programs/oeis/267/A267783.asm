@@ -3,9 +3,9 @@
 
 add $0,3
 mov $1,$0
-lpb $0
-  mod $0,1
-  pow $1,2
-  div $1,4
+lpb $1
+  pow $0,2
+  div $0,4
+  mod $1,1
 lpe
-pow $1,3
+pow $0,3

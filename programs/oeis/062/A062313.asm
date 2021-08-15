@@ -3,4 +3,3 @@
 
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $1,$0

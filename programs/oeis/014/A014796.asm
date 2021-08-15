@@ -3,4 +3,3 @@
 
 seq $0,15220 ; Even tetrahedral numbers.
 pow $0,2
-mov $1,$0

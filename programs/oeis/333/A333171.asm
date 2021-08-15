@@ -3,13 +3,13 @@
 
 mov $1,$0
 mov $2,1
-lpb $0
-  sub $0,$2
-  mov $1,$0
-  max $1,0
-  seq $1,147807 ; Partial sums of A147810(n) = tau(n^2 + 1)/2.
-  sub $2,$0
-  add $0,$2
+lpb $1
+  sub $1,$2
+  mov $0,$1
+  max $0,0
+  seq $0,147807 ; Partial sums of A147810(n) = tau(n^2 + 1)/2.
+  sub $2,$1
+  add $1,$2
 lpe
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

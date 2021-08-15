@@ -10,3 +10,4 @@ lpb $0
   gcd $1,$0
   mul $0,$1
 lpe
+mov $0,$1

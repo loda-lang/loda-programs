@@ -3,4 +3,3 @@
 
 seq $0,214429 ; Integers of the form (n^2 - 49) / 120.
 sub $0,1
-mov $1,$0

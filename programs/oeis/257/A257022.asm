@@ -5,3 +5,4 @@ lpb $0
   mov $1,$0
   seq $0,25685 ; Exponent of 10 (value of j) in n-th number of form 3^i*10^j.
 lpe
+mov $0,$1

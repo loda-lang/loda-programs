@@ -7,3 +7,4 @@ lpb $0
   seq $2,131234 ; Starts with 1, then n appears Fibonacci(n-1) times.
   add $1,$2
 lpe
+mov $0,$1

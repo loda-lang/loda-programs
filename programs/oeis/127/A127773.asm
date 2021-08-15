@@ -4,4 +4,3 @@
 add $0,1
 seq $0,130296 ; Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 < j <= i = 1,2,3,...
 bin $0,2
-mov $1,$0

@@ -4,4 +4,3 @@
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 seq $0,70320 ; Max( phi(k) : k=1,2,3,...,n ).
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mov $1,$0

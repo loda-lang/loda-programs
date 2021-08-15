@@ -4,6 +4,6 @@
 seq $0,135098 ; First differences of A135094.
 add $0,198
 mov $1,$0
-div $1,3
-add $1,$0
-sub $1,264
+div $0,3
+add $0,$1
+sub $0,264

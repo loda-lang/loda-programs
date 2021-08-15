@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,58482 ; Number of 3 X n binary matrices with no zero rows or columns.
-mov $1,$0
-div $1,24
+div $0,24

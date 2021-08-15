@@ -6,6 +6,5 @@ lpb $0
 lpe
 seq $0,70372 ; a(n) = 5^n mod 18.
 sub $0,9
-mov $1,$0
-mul $1,-9
-div $1,18
+mul $0,-9
+div $0,18

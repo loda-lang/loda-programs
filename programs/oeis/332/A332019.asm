@@ -10,7 +10,6 @@ trn $5,$3
 add $5,1
 trn $0,$5
 add $0,1
-mov $1,$0
 mov $2,$4
 mul $2,8
-add $1,$2
+add $0,$2

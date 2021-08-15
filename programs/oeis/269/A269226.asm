@@ -6,6 +6,5 @@ dif $0,2
 gcd $0,$0
 add $0,20
 mod $0,3
-mov $1,$0
-mul $1,3
-add $1,3
+mul $0,3
+add $0,3

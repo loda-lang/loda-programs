@@ -29,3 +29,4 @@ lpb $3
     sub $3,$6
   lpe
 lpe
+mov $0,$1

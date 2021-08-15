@@ -3,5 +3,4 @@
 
 add $0,9
 seq $0,302405 ; Total domination number of the n-prism graph.
-mov $1,$0
-sub $1,6
+sub $0,6

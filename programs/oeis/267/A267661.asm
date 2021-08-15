@@ -3,6 +3,5 @@
 
 seq $0,1911 ; a(n) = Fibonacci(n+3) - 2.
 add $0,1
-mov $1,$0
-pow $1,2
-mul $1,2
+pow $0,2
+mul $0,2

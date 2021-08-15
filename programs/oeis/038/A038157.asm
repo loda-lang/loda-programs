@@ -20,3 +20,4 @@ lpb $0
   cmp $26,0
   add $3,$26
 lpe
+mov $0,$1

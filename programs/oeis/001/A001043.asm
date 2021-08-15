@@ -7,5 +7,4 @@ seq $0,40 ; The prime numbers.
 add $0,6
 seq $2,40 ; The prime numbers.
 add $0,$2
-mov $1,$0
-sub $1,6
+sub $0,6

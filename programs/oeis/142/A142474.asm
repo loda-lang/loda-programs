@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,78012 ; Expansion of (1 - x) / (1 - x - x^3) in powers of x.
-mov $1,$0

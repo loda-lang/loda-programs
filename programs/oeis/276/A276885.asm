@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains infinitely many primes.
 add $0,$2
-mov $1,$0

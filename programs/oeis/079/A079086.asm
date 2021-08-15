@@ -4,5 +4,4 @@
 seq $0,6094 ; Products of 2 successive primes.
 seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-mov $1,$0
-sub $1,2
+sub $0,2

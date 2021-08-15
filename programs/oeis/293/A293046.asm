@@ -35,3 +35,4 @@ lpb $9
   div $8,2
   add $1,$8
 lpe
+mov $0,$1

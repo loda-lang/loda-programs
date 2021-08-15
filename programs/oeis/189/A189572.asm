@@ -3,4 +3,3 @@
 
 seq $0,270226 ; a(n) is the number of terms in the n-th block of consecutive integers of A136119.
 div $0,3
-mov $1,$0

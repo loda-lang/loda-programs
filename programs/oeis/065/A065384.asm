@@ -9,5 +9,4 @@ lpb $0
   seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
   sub $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

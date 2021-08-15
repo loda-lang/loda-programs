@@ -8,3 +8,4 @@ lpb $0
   seq $2,66660 ; Number of divisors of 2n excluding 1.
   add $1,$2
 lpe
+mov $0,$1

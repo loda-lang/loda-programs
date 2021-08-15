@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mov $1,$0

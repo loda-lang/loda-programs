@@ -4,31 +4,31 @@
 mov $5,$0
 add $0,5
 mov $1,$0
-bin $0,3
-mod $1,2
+mod $0,2
+bin $1,3
 mov $6,4
-add $6,$0
-add $0,$6
+add $6,$1
+add $1,$6
 mov $2,5
 lpb $2
-  add $1,$0
+  add $0,$1
   mov $2,1
 lpe
 add $2,6
-add $2,$1
+add $2,$0
 sub $2,8
 mul $2,4
-mov $1,$2
-add $1,13
+mov $0,$2
+add $0,13
 mov $3,$5
 mul $3,58
-add $1,$3
+add $0,$3
 mov $4,$5
 mul $4,$5
 mov $3,$4
 mul $3,24
-add $1,$3
+add $0,$3
 mul $4,$5
 mov $3,$4
 mul $3,4
-add $1,$3
+add $0,$3

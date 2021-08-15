@@ -5,4 +5,3 @@ add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

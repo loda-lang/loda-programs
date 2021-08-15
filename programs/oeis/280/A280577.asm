@@ -5,6 +5,5 @@ mov $2,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,2
 add $0,1
-mov $1,$0
-add $1,$2
-div $1,2
+add $0,$2
+div $0,2

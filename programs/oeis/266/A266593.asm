@@ -3,9 +3,9 @@
 
 mul $0,2
 mov $1,$0
-trn $1,5
-lpb $0
-  dif $0,4
-  mov $1,2
+trn $0,5
+lpb $1
+  mov $0,2
+  dif $1,4
 lpe
-add $1,1
+add $0,1

@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,788 ; Total number of 1's in binary expansions of 0, ..., n.
 sub $0,$2
-mov $1,$0
-mul $1,2
+mul $0,2

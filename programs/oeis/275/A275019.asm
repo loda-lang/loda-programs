@@ -3,5 +3,4 @@
 
 seq $0,130809 ; If X_1, ..., X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 3-subsets of X containing none of X_i, (i=1,...,n).
 seq $0,136480 ; Number of trailing equal digits in binary representation of n.
-mov $1,$0
-sub $1,3
+sub $0,3

@@ -3,3 +3,4 @@
 
 seq $0,309214 ; a(0)=0; thereafter a(n) = a(n-1)+n if a(n-1) even, otherwise a(n) = a(n-1)-n.
 sub $1,$0
+mov $0,$1

@@ -4,5 +4,4 @@
 pow $0,2
 trn $0,3
 seq $0,280514 ; Index sequence of the reverse block-fractal sequence A003849.
-mov $1,$0
-sub $1,1
+sub $0,1

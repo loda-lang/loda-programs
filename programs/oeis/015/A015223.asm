@@ -8,5 +8,4 @@ mov $3,$0
 add $0,1
 mul $2,$3
 mul $0,$2
-mov $1,$0
-div $1,2
+div $0,2

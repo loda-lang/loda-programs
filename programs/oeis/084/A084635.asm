@@ -9,3 +9,4 @@ lpb $0
   seq $1,124671 ; Row sums of A126277 = binomial transform of (1, 2, 2, 3, 4, 4, 4,...)
 lpe
 add $1,1
+mov $0,$1

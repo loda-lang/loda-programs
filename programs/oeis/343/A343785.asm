@@ -5,3 +5,4 @@ seq $0,60236 ; If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
 mov $1,3
 div $1,$0
 sub $1,2
+mov $0,$1

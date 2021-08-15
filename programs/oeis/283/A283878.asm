@@ -18,4 +18,3 @@ lpb $0
   sub $0,1
   mov $5,-9
 lpe
-mov $1,$0

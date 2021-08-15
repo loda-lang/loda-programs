@@ -17,7 +17,6 @@ sub $5,1
 mov $3,$5
 bin $3,2
 add $0,$3
-mov $1,$0
-sub $1,1
-mul $1,2
-add $1,41
+sub $0,1
+mul $0,2
+add $0,41

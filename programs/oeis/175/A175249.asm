@@ -4,4 +4,3 @@
 seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 trn $0,2
 seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0

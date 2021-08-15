@@ -3,7 +3,6 @@
 
 seq $0,127948 ; Triangle, A004736 * A127899.
 min $0,1
-mov $1,$0
-mod $1,2
-add $1,2
-mod $1,2
+mod $0,2
+add $0,2
+mod $0,2

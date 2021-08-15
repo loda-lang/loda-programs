@@ -9,3 +9,4 @@ lpb $2
 lpe
 dif $1,2
 mod $1,2
+mov $0,$1

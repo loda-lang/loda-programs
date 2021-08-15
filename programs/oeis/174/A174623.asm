@@ -3,13 +3,12 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-mov $1,$0
-mov $0,4
-pow $0,$1
+mov $1,4
+pow $1,$0
 mov $2,2
-pow $2,$1
-add $0,$2
-mov $1,$0
-sub $1,6
-mul $1,4
-add $1,25
+pow $2,$0
+add $1,$2
+mov $0,$1
+sub $0,6
+mul $0,4
+add $0,25

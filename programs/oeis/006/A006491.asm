@@ -7,3 +7,4 @@ seq $0,6367 ; Number of binary vectors of length n+1 beginning with 0 and contai
 add $1,$2
 mul $1,$0
 div $1,2
+mov $0,$1

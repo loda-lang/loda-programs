@@ -3,4 +3,3 @@
 
 seq $0,14633 ; Even pentagonal numbers.
 pow $0,2
-mov $1,$0

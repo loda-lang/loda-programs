@@ -8,8 +8,7 @@ mov $2,$0
 seq $0,6522 ; 4-dimensional analog of centered polygonal numbers. Also number of regions created by sides and diagonals of a convex n-gon in general position.
 div $0,$2
 mul $0,2
-mov $1,$0
-add $1,$4
+add $0,$4
 mov $3,$4
 mul $3,$4
-add $1,$3
+add $0,$3

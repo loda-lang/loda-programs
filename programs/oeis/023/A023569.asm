@@ -7,4 +7,3 @@ lpb $0
   sub $0,1
   seq $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
 lpe
-mov $1,$0

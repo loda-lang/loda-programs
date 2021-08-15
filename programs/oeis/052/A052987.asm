@@ -19,3 +19,4 @@ lpb $0
   mov $4,3
 lpe
 add $1,1
+mov $0,$1

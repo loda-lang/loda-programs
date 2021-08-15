@@ -3,4 +3,3 @@
 
 seq $0,1609 ; a(1) = a(2) = 1, a(3) = 4; thereafter a(n) = a(n-1) + a(n-3).
 pow $0,2
-mov $1,$0

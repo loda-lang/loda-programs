@@ -8,3 +8,4 @@ lpb $0
   seq $2,11888 ; Partial sums of A011863.
   add $1,$2
 lpe
+mov $0,$1

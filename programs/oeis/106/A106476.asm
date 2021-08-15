@@ -3,4 +3,3 @@
 
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0

@@ -3,7 +3,6 @@
 
 mov $2,$0
 seq $0,37800 ; Number of occurrences of 01 in the binary expansion of n.
-mov $1,$0
 gcd $2,2
-add $1,$2
-sub $1,1
+add $0,$2
+sub $0,1

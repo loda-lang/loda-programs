@@ -3,4 +3,3 @@
 
 seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

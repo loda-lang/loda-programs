@@ -11,3 +11,4 @@ lpb $3
   seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
   add $1,$0
 lpe
+mov $0,$1

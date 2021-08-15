@@ -9,3 +9,4 @@ add $1,$0
 add $1,2
 seq $1,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
 div $1,2
+mov $0,$1

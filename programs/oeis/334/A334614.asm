@@ -6,6 +6,5 @@ seq $0,40 ; The prime numbers.
 sub $0,$2
 sub $0,1
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0
-add $1,$2
-add $1,1
+add $0,$2
+add $0,1

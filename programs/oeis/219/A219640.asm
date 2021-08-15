@@ -3,4 +3,3 @@
 
 seq $0,26351 ; Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 seq $0,219641 ; a(n) = n minus (number of 1's in Zeckendorf expansion of n).
-mov $1,$0

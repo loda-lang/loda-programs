@@ -5,3 +5,4 @@ lpb $0
   seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
   add $1,1
 lpe
+mov $0,$1

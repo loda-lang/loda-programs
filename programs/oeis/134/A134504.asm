@@ -4,4 +4,3 @@
 mul $0,7
 add $0,6
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mov $1,$0

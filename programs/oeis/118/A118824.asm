@@ -3,3 +3,4 @@
 
 seq $0,118821 ; 2-adic continued fraction of zero, where a(n) = 2 if n is odd, -A006519(n/2) otherwise.
 sub $1,$0
+mov $0,$1

@@ -6,3 +6,4 @@ pow $0,2
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 mov $1,2
 pow $1,$0
+mov $0,$1

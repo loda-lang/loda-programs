@@ -13,9 +13,8 @@ lpb $0
 lpe
 sub $0,8
 mul $0,$2
-mov $1,$0
-pow $1,2
-div $1,2
-sub $1,128
-div $1,2
-add $1,64
+pow $0,2
+div $0,2
+sub $0,128
+div $0,2
+add $0,64

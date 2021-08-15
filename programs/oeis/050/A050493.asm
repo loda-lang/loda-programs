@@ -9,4 +9,3 @@ lpb $2
   div $2,2
   sub $0,$2
 lpe
-mov $1,$0

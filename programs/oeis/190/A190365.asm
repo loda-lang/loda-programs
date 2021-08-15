@@ -5,9 +5,8 @@ mov $3,$0
 seq $0,22840 ; Beatty sequence for sqrt(6).
 mul $0,4
 sub $0,6
-mov $1,$0
-div $1,3
-add $1,5
+div $0,3
+add $0,5
 mov $2,$3
 mul $2,3
-add $1,$2
+add $0,$2

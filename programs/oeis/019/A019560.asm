@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,8412 ; Coordination sequence for 4-dimensional cubic lattice (points on surface of 4-dimensional cross-polytope).
-mov $1,$0

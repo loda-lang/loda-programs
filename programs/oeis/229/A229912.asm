@@ -4,4 +4,3 @@
 seq $0,22087 ; Fibonacci sequence beginning 0, 4.
 div $0,-2
 bin $0,2
-mov $1,$0

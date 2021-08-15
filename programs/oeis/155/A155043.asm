@@ -8,3 +8,4 @@ lpb $0
   add $1,9
 lpe
 div $1,9
+mov $0,$1

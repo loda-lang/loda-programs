@@ -7,5 +7,4 @@ lpb $0
 lpe
 trn $0,1
 seq $0,134181 ; Difference between cumulative prime and odd sums.
-mov $1,$0
-add $1,1
+add $0,1

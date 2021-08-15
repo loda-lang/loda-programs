@@ -8,5 +8,4 @@ add $0,3
 div $2,2
 div $2,$0
 sub $0,$2
-mov $1,$0
-sub $1,2
+sub $0,2

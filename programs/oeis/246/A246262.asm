@@ -8,3 +8,4 @@ lpb $0
   seq $2,246260 ; Characteristic function of A246261: a(n) = A000035(A048673(n)).
   add $1,$2
 lpe
+mov $0,$1

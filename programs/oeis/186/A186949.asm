@@ -7,3 +7,4 @@ lpb $1
   sub $1,2
   mul $1,4
 lpe
+mov $0,$1

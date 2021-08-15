@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,538 ; Sum of fourth powers: 0^4 + 1^4 + ... + n^4.
-mov $1,$0

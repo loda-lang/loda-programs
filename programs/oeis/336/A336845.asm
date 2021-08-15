@@ -3,4 +3,3 @@
 
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 seq $0,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
-mov $1,$0

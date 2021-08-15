@@ -3,5 +3,4 @@
 
 seq $0,1157 ; sigma_2(n): sum of squares of divisors of n.
 seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-mov $1,$0
-add $1,1
+add $0,1

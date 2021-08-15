@@ -5,3 +5,4 @@ add $$0,$0
 seq $0,65383 ; a(n) = smallest prime >= n*(n + 1)/2.
 add $2,$0
 mov $1,$2
+mov $0,$1

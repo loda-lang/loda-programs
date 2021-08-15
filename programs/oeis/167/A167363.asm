@@ -3,4 +3,3 @@
 
 seq $0,166591 ; Totally multiplicative sequence with a(p) = p+3 for prime p.
 pow $0,2
-mov $1,$0

@@ -3,5 +3,4 @@
 
 seq $0,48487 ; a(n) = T(4,n), array T given by A048483.
 trn $0,5
-mov $1,$0
-add $1,1
+add $0,1

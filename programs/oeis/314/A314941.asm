@@ -10,8 +10,7 @@ mov $3,$2
 cmp $3,0
 add $2,$3
 add $0,$2
-mov $1,$0
-sub $1,2
+sub $0,2
 mov $5,$4
 mul $5,4
-add $1,$5
+add $0,$5

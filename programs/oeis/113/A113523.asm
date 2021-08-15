@@ -7,3 +7,4 @@ lpe
 max $1,$0
 seq $0,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
 add $1,$0
+mov $0,$1

@@ -3,17 +3,16 @@
 
 mov $4,$0
 div $0,5
-mov $1,$0
-add $1,10
+add $0,10
 mov $2,$4
 mul $2,34
-add $1,$2
+add $0,$2
 mov $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,36
-add $1,$2
+add $0,$2
 mul $3,$4
 mov $2,$3
 mul $2,12
-add $1,$2
+add $0,$2

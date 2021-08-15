@@ -9,5 +9,4 @@ mul $0,2
 lpb $0
   mov $0,19
 lpe
-mov $1,$0
-sub $1,5
+sub $0,5

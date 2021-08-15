@@ -3,4 +3,3 @@
 
 dif $0,2
 seq $0,14033 ; Inverse of 24th cyclotomic polynomial.
-mov $1,$0

@@ -11,3 +11,4 @@ lpb $2
   seq $0,75682 ; First differences of A075681.
   add $1,$0
 lpe
+mov $0,$1

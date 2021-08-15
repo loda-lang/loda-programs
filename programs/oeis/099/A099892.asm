@@ -4,7 +4,6 @@
 mul $0,2
 trn $0,1
 seq $0,99894 ; XOR BINOMIAL transform of A038712.
-mov $1,$0
-div $1,2
-mul $1,3
-div $1,2
+div $0,2
+mul $0,3
+div $0,2

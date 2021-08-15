@@ -4,3 +4,4 @@
 seq $0,178142 ; Sum over the divisors d = 2 and/or 3 of n.
 seq $0,194508 ; First coordinate of the (2,3)-Lagrange pair for n.
 sub $1,$0
+mov $0,$1

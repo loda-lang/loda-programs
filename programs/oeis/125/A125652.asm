@@ -4,6 +4,5 @@
 seq $0,276602 ; Values of n such that n^2 + 10 is a triangular number (A000217).
 dif $0,2
 sub $0,1
-mov $1,$0
-div $1,3
-add $1,1
+div $0,3
+add $0,1

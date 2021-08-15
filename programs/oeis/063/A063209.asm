@@ -3,5 +3,4 @@
 
 mul $0,4
 seq $0,63199 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 11 ).
-mov $1,$0
-add $1,2
+add $0,2

@@ -29,3 +29,4 @@ lpb $5
   lpe
   add $1,$8
 lpe
+mov $0,$1

@@ -4,4 +4,3 @@
 mul $0,2
 trn $0,1
 seq $0,93 ; a(n) = floor(n^(3/2)).
-mov $1,$0

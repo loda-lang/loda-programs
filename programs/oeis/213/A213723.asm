@@ -3,4 +3,3 @@
 
 seq $0,213724 ; Largest natural number x such that x=n+A000120(x), or zero if no such number exists.
 trn $0,1
-mov $1,$0

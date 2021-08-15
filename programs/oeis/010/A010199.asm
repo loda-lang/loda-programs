@@ -6,4 +6,3 @@ lpb $0
   pow $0,4
   mod $0,34
 lpe
-mov $1,$0

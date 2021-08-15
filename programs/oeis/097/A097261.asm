@@ -3,6 +3,5 @@
 
 add $0,8190
 seq $0,32935 ; Numbers whose set of base 15 digits is {1,2}.
-mov $1,$0
-sub $1,139013933454241
-mul $1,14
+sub $0,139013933454241
+mul $0,14

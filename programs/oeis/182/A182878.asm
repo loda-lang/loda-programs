@@ -3,4 +3,3 @@
 
 seq $0,26729 ; Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
 pow $0,2
-mov $1,$0

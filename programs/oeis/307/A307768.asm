@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,45621 ; a(n) = 2^n - binomial(n, floor(n/2)).
-mov $1,$0
-mul $1,2
+mul $0,2

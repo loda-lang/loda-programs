@@ -10,3 +10,4 @@ lpb $2
   seq $0,75802 ; Characteristic function of perfect powers, A001597.
   add $1,$0
 lpe
+mov $0,$1

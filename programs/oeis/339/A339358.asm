@@ -32,3 +32,4 @@ lpb $3
     add $1,$5
   lpe
 lpe
+mov $0,$1

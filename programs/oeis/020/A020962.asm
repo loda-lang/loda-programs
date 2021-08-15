@@ -3,5 +3,4 @@
 
 mov $2,$0
 seq $0,279101 ; a(n) = Sum_{k=0..n} ceiling((1 + sqrt(2))^k).
-mov $1,$0
-sub $1,$2
+sub $0,$2

@@ -4,5 +4,4 @@
 mul $0,2
 add $0,6
 seq $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
-bin $1,7
+bin $0,7

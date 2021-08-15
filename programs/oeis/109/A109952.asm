@@ -3,8 +3,7 @@
 
 add $0,2
 seq $0,61240 ; Prime numbers == 5 (mod 9).
-mov $1,$0
-sub $1,41
-div $1,18
-mul $1,10
-add $1,5
+sub $0,41
+div $0,18
+mul $0,10
+add $0,5

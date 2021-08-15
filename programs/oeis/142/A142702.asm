@@ -3,7 +3,6 @@
 
 add $0,3
 gcd $0,4
-mov $1,$0
-mod $1,4
-mul $1,3
-add $1,2
+mod $0,4
+mul $0,3
+add $0,2

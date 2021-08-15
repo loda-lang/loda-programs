@@ -7,3 +7,4 @@ lpb $0
   seq $2,53829 ; Sum of digits of (n written in base 8).
   add $1,$2
 lpe
+mov $0,$1

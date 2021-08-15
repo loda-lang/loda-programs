@@ -3,4 +3,3 @@
 
 div $0,2
 seq $0,49691 ; a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
-mov $1,$0

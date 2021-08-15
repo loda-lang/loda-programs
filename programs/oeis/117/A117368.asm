@@ -4,4 +4,3 @@
 seq $0,38802 ; Factor 2n+1 = (2^m1)*(3^m2)*(5^m3)*...; a(n) = number of initial zero exponents.
 sub $0,1
 seq $0,40 ; The prime numbers.
-mov $1,$0

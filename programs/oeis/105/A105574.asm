@@ -4,4 +4,3 @@
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 sub $0,1
 seq $0,40 ; The prime numbers.
-mov $1,$0

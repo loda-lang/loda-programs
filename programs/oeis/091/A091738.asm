@@ -7,5 +7,4 @@ mov $2,$0
 add $2,1
 add $0,$2
 seq $0,1750 ; Primes multiplied by 5.
-mov $1,$0
-div $1,5
+div $0,5

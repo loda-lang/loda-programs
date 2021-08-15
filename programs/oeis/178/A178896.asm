@@ -9,12 +9,11 @@ mul $0,2
 seq $0,178735 ; a(n) = n XOR 9n, where XOR is bitwise XOR.
 add $0,4
 mul $0,2
-mov $1,$0
-sub $1,7
-div $1,8
+sub $0,7
+div $0,8
 mov $3,$2
 mul $3,2
-add $1,$3
-add $1,$4
-add $1,$5
-add $1,$6
+add $0,$3
+add $0,$4
+add $0,$5
+add $0,$6

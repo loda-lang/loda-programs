@@ -3,4 +3,3 @@
 
 seq $0,40752 ; Continued fraction for sqrt(780).
 seq $0,140472 ; Chaotic sequence related to A004001: a(n) = a(n - a(n-1)) + a(floor(n/2)).
-mov $1,$0

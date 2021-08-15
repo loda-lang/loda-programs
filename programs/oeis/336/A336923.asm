@@ -3,4 +3,3 @@
 
 seq $0,593 ; Sum of odd divisors of n.
 seq $0,209229 ; Characteristic function of powers of 2, cf. A000079.
-mov $1,$0

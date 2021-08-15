@@ -3,6 +3,5 @@
 
 mul $0,8
 add $0,1
-mov $1,$0
-pow $1,3
-div $1,8
+pow $0,3
+div $0,8

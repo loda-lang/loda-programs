@@ -39,3 +39,4 @@ lpb $4
     lpe
   lpe
 lpe
+mov $0,$1

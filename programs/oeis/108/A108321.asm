@@ -22,4 +22,4 @@ lpb $2
     sub $7,1
   lpe
 lpe
-mov $1,$7
+mov $0,$7

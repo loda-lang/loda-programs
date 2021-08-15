@@ -3,7 +3,7 @@
 
 add $0,1
 mov $1,$0
-pow $1,2
-add $0,$1
-mov $1,$0
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+pow $0,2
+add $1,$0
+mov $0,$1
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

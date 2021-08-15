@@ -22,3 +22,4 @@ lpe
 sub $1,26
 div $1,6
 add $1,3
+mov $0,$1

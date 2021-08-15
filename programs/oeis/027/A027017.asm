@@ -4,4 +4,3 @@
 mul $0,2
 trn $0,1
 seq $0,27964 ; T(n,n+4), T given by A027960.
-mov $1,$0

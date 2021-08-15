@@ -3,4 +3,3 @@
 
 seq $0,193592 ; Triangle read by rows having n-th row 1, n, n-1, n-2,..., 2, 1 for n>=0.
 mod $0,2
-mov $1,$0

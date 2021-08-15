@@ -3,4 +3,3 @@
 
 seq $0,40270 ; Continued fraction for sqrt(287).
 seq $0,3188 ; Decimal equivalent of Gray code for n.
-mov $1,$0

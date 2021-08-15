@@ -4,9 +4,8 @@
 mul $0,2
 max $0,1
 seq $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
-pow $1,2
-sub $1,4
-mul $1,5
-div $1,4
-add $1,5
+pow $0,2
+sub $0,4
+mul $0,5
+div $0,4
+add $0,5

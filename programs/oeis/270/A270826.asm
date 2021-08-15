@@ -3,5 +3,4 @@
 
 seq $0,134864 ; Wythoff BBB numbers.
 seq $0,72649 ; n occurs Fibonacci(n) times (cf. A000045).
-mov $1,$0
-sub $1,6
+sub $0,6

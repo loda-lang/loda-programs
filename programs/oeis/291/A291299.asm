@@ -3,6 +3,5 @@
 
 trn $0,2
 seq $0,179041 ; Partial sums of ceiling(Fibonacci(n)/3).
-mov $1,$0
-mul $1,2
-add $1,2
+mul $0,2
+add $0,2

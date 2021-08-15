@@ -3,4 +3,3 @@
 
 seq $0,111650 ; 2n appears n times (n>0).
 seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
-mov $1,$0

@@ -5,4 +5,3 @@ seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,3
 trn $0,1
 seq $0,91972 ; G.f.: (1 + x^5 ) / ( (1-x^3)*(1-x^4)).
-mov $1,$0

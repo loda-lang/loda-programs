@@ -6,4 +6,3 @@ seq $0,165829 ; Totally multiplicative sequence with a(p) = 8.
 mov $1,1
 add $1,$2
 mul $0,$1
-mov $1,$0

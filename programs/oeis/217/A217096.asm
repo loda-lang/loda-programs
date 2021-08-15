@@ -3,3 +3,4 @@
 
 seq $0,98736 ; a(n) = product of n and all its digits.
 bin $1,$0
+mov $0,$1

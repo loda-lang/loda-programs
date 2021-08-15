@@ -8,3 +8,4 @@ lpb $0
   max $1,0
   seq $1,1401 ; Number of partitions of n into at most 5 parts.
 lpe
+mov $0,$1

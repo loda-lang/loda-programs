@@ -8,4 +8,3 @@ seq $0,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 mod $0,4
 add $0,1
 div $0,2
-mov $1,$0

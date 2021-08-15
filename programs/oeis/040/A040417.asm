@@ -3,6 +3,6 @@
 
 seq $0,40303 ; Continued fraction for sqrt(321).
 mov $1,$0
-add $1,4
-div $1,6
-add $1,$0
+add $0,4
+div $0,6
+add $0,$1

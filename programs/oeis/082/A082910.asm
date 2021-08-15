@@ -3,4 +3,3 @@
 
 seq $0,46933 ; Number of composites between successive primes.
 seq $0,40 ; The prime numbers.
-mov $1,$0

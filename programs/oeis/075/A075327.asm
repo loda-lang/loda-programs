@@ -4,18 +4,18 @@
 mov $3,$0
 add $0,1
 mov $1,$0
-pow $0,2
+pow $1,2
 mov $4,1
-lpb $0
-  dif $0,2
+lpb $1
+  dif $1,2
   mul $4,2
 lpe
-mov $0,$4
-mod $0,5
-add $1,$0
-sub $1,2
-div $1,2
-add $1,4
+mov $1,$4
+mod $1,5
+add $0,$1
+sub $0,2
+div $0,2
+add $0,4
 mov $2,$3
 mul $2,7
-add $1,$2
+add $0,$2

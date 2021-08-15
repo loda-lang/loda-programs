@@ -3,4 +3,3 @@
 
 seq $0,28387 ; a(n) = n + (n+1)^2.
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

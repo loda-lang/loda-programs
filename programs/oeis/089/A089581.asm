@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,40 ; The prime numbers.
 seq $0,13636 ; n*nextprime(n).
-mov $1,$0

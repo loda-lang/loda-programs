@@ -3,6 +3,5 @@
 
 seq $0,298790 ; Partial sums of A298788.
 div $0,2
-mov $1,$0
-mul $1,3
-add $1,1
+mul $0,3
+add $0,1

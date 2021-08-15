@@ -19,3 +19,4 @@ lpb $0
     mod $5,4
   lpe
 lpe
+mov $0,$1

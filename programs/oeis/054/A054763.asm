@@ -9,5 +9,4 @@ sub $0,1
 seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 add $0,2
 mod $0,6
-mov $1,$0
-sub $1,1
+sub $0,1

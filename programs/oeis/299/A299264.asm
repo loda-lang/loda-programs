@@ -11,3 +11,4 @@ lpb $2
   seq $0,299258 ; Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 4.6.12 2D tiling (cf. A072154).
   add $1,$0
 lpe
+mov $0,$1

@@ -3,5 +3,4 @@
 
 add $0,35
 seq $0,3259 ; Complement of A003258.
-mov $1,$0
-sub $1,91
+sub $0,91

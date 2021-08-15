@@ -3,9 +3,8 @@
 
 add $0,1
 seq $0,267027 ; "Polyrhythmic sequence" P(3,4): numbers congruent to 1 mod 3 (A016777) or 1 mod 4 (A016813).
-mov $1,$0
-sub $1,1
-pow $1,2
-sub $1,9
-mul $1,168
-add $1,1512
+sub $0,1
+pow $0,2
+sub $0,9
+mul $0,168
+add $0,1512

@@ -13,3 +13,4 @@ lpb $2
   seq $3,210448 ; Total number of different letters summed over all ternary words of length n.
   add $1,$3
 lpe
+mov $0,$1

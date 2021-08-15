@@ -3,4 +3,3 @@
 
 seq $0,215879 ; Written in base 3, n ends in a(n) consecutive nonzero digits.
 mod $0,2
-mov $1,$0

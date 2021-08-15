@@ -8,3 +8,4 @@ lpb $0
   seq $2,257687 ; Discard the most significant digit from factorial base representation of n, then convert back to decimal: a(n) = n - A257686(n).
   mul $0,$2
 lpe
+mov $0,$1

@@ -3,6 +3,5 @@
 
 trn $0,1
 seq $0,6308 ; Coefficients of period polynomials.
-mov $1,$0
-mul $1,2
-sub $1,1
+mul $0,2
+sub $0,1

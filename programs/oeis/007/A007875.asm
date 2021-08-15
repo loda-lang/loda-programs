@@ -3,4 +3,3 @@
 
 seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
 dif $0,2
-mov $1,$0

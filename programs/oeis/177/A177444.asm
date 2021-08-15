@@ -5,9 +5,8 @@ seq $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
 add $0,4
 trn $0,3
 seq $0,22086 ; Fibonacci sequence beginning 0, 3.
-mov $1,$0
-div $1,3
-lpb $1
-  mov $1,4
+div $0,3
+lpb $0
+  mov $0,4
 lpe
-mod $1,2
+mod $0,2

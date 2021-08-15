@@ -6,6 +6,5 @@ mov $2,$0
 seq $0,192760 ; Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 pow $2,2
 sub $0,$2
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

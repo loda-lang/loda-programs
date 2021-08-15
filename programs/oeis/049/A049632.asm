@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,49696 ; a(n)=T(n,n), array T as in A049695.
 min $2,1
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,4 +3,3 @@
 
 seq $0,27434 ; a(1) = 2; then defined by property that a(n) = smallest number >= a(n-1) such that successive runs have lengths 1,1,2,2,3,3,4,4.
 pow $0,2
-mov $1,$0

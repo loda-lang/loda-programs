@@ -55,3 +55,4 @@ lpb $3
   sub $14,1
   add $1,$14
 lpe
+mov $0,$1

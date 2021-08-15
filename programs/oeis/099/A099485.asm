@@ -4,5 +4,4 @@
 seq $0,25169 ; a(n) = 2*Fibonacci(2*n+2).
 add $0,7
 div $0,3
-mov $1,$0
-sub $1,2
+sub $0,2

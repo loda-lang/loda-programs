@@ -3,7 +3,6 @@
 
 seq $0,182306 ; a(n+1) = a(n) + floor(a(n)/5) with a(0)=5.
 mul $0,2
-mov $1,$0
-sub $1,10
-div $1,12
-add $1,1
+sub $0,10
+div $0,12
+add $0,1

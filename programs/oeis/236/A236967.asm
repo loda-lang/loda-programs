@@ -3,10 +3,9 @@
 
 mov $3,$0
 mul $0,4
-mov $1,$0
 mov $4,$0
 cmp $4,0
-add $1,$4
+add $0,$4
 mov $2,3
 pow $2,$3
-mul $1,$2
+mul $0,$2

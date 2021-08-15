@@ -3,4 +3,3 @@
 
 div $0,2
 seq $0,157142 ; Signed denominators of Leibniz series for Pi/4.
-mov $1,$0

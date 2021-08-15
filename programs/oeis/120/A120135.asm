@@ -22,7 +22,6 @@ mov $2,2
 mul $2,$1
 add $2,2
 add $0,$2
-mov $1,$0
-sub $1,108
-div $1,32
-add $1,5
+sub $0,108
+div $0,32
+add $0,5

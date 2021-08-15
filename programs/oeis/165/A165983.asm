@@ -4,3 +4,4 @@
 seq $0,70262 ; 5th diagonal of triangle defined in A051537.
 add $1,$0
 gcd $1,4
+mov $0,$1

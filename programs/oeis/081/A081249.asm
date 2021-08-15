@@ -7,3 +7,4 @@ lpb $0
   seq $2,81134 ; Distance to nearest power of 3.
   add $1,$2
 lpe
+mov $0,$1

@@ -8,3 +8,4 @@ lpb $0
   seq $2,220212 ; Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
   add $1,$2
 lpe
+mov $0,$1

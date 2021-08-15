@@ -23,6 +23,5 @@ lpb $4
     lpe
   lpe
 lpe
-mov $1,$0
-add $1,2
-mod $1,2
+add $0,2
+mod $0,2

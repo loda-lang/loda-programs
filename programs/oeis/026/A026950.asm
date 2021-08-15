@@ -4,8 +4,7 @@
 add $0,2
 mov $2,$0
 seq $0,26383 ; a(n) = 5*a(n-2), starting 1,2.
-mov $1,$0
-mul $1,$2
-sub $1,10
-div $1,10
-add $1,1
+mul $0,$2
+sub $0,10
+div $0,10
+add $0,1

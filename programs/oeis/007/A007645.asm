@@ -3,4 +3,3 @@
 
 seq $0,123365 ; Values of k such that A046530(k) = (k+2)/3, where A046530(k) is the number of distinct residues of cubes mod k.
 max $0,3
-mov $1,$0

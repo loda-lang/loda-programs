@@ -3,5 +3,4 @@
 
 seq $0,100892 ; a(n) = (2*n-1) XOR (2*n+1), bitwise.
 dif $0,3
-mov $1,$0
-div $1,2
+div $0,2

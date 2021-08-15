@@ -18,4 +18,4 @@ lpb $4
 lpe
 mov $2,$3
 trn $2,5
-mov $1,$2
+mov $0,$2

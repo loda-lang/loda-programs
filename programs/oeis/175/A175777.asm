@@ -7,3 +7,4 @@ lpb $0
   seq $2,11861 ; a(n) = floor(n(n-1)/8).
   add $1,$2
 lpe
+mov $0,$1

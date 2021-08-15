@@ -8,3 +8,4 @@ lpb $0
   seq $2,69720 ; a(n) = 2^(n-1)*binomial(2n-1, n).
   add $1,$2
 lpe
+mov $0,$1

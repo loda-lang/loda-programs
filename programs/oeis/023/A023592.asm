@@ -3,7 +3,6 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 seq $0,195508 ; Number of iterations in a Draim factorization of 2n+1.
-mov $1,$0
-sub $1,1
-mul $1,2
-add $1,3
+sub $0,1
+mul $0,2
+add $0,3

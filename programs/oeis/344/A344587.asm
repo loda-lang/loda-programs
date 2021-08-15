@@ -3,5 +3,4 @@
 
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
 seq $0,235796 ; 2*n - 1 - sigma(n).
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,6 +3,5 @@
 
 mov $2,$0
 seq $0,147562 ; Number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton.
-mov $1,$0
-div $1,2
-add $1,$2
+div $0,2
+add $0,$2

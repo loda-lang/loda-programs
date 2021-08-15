@@ -15,3 +15,4 @@ lpb $2
   pow $2,2
   mod $2,9
 lpe
+mov $0,$1

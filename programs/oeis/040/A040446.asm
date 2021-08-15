@@ -36,3 +36,4 @@ lpb $5
 lpe
 div $1,2
 add $1,1
+mov $0,$1

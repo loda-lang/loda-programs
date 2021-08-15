@@ -5,4 +5,3 @@ seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry
 lpb $0
   mod $0,4
 lpe
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,30696 ; Cube root of A030695.
 pow $0,3
-mov $1,$0

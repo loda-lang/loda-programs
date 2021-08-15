@@ -4,4 +4,3 @@
 seq $0,253560 ; Multiply n by its largest prime factor: a(n) = A006530(n) * n.
 sub $0,1
 seq $0,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
-mov $1,$0

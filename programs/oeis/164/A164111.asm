@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,141125 ; Hankel transform of a transform of Fibonacci numbers.
-mov $1,$0
-div $1,4
+div $0,4

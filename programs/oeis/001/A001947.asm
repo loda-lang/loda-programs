@@ -3,5 +3,4 @@
 
 mul $0,5
 seq $0,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
-mov $1,$0
-add $1,2
+add $0,2

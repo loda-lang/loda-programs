@@ -3,5 +3,4 @@
 
 seq $0,2145 ; Primes of the form 4*k+3.
 add $0,1
-mov $1,$0
-bin $1,2
+bin $0,2

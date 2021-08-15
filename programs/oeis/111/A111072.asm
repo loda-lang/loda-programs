@@ -7,3 +7,4 @@ lpb $0
   seq $2,8954 ; Final digit of triangular number n*(n+1)/2.
   add $1,$2
 lpe
+mov $0,$1

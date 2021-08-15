@@ -9,3 +9,4 @@ lpe
 pow $1,2
 mul $1,10
 add $1,9
+mov $0,$1

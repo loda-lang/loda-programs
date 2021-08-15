@@ -8,8 +8,7 @@ lpe
 add $0,1
 mul $0,-2
 bin $0,6
-mov $1,$0
-pow $1,3
-mod $1,5
-mul $1,3
-add $1,2
+pow $0,3
+mod $0,5
+mul $0,3
+add $0,2

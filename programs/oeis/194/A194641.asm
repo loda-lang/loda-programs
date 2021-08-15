@@ -1,8 +1,7 @@
 ; A194641: Digital roots of the nonzero heptagonal numbers.
 ; 1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1
 
+mul $0,4
 mov $1,$0
-mul $1,4
+seq $1,56992 ; Digital roots of square numbers A000290.
 mov $0,$1
-seq $0,56992 ; Digital roots of square numbers A000290.
-mov $1,$0

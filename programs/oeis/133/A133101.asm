@@ -3,5 +3,4 @@
 
 mul $0,5
 seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
-mov $1,$0
-cmp $1,0
+cmp $0,0

@@ -10,3 +10,4 @@ lpb $2
   trn $2,1
   add $4,2
 lpe
+mov $0,$1

@@ -4,5 +4,5 @@
 add $0,1
 pow $0,3
 mov $1,$0
-gcd $0,6
-div $1,$0
+gcd $1,6
+div $0,$1

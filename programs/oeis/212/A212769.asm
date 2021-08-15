@@ -6,6 +6,6 @@ add $0,1
 seq $0,40 ; The prime numbers.
 mov $1,$0
 seq $2,40 ; The prime numbers.
-add $0,$2 ; Now $0 holds p + q
-mul $1,$2 ; Now $2 holds p * q
-mod $1,$0 ; Compute (p*q) mod (p+q)
+mul $0,$2 ; Now $2 holds p * q
+add $1,$2 ; Now $0 holds p + q
+mod $0,$1 ; Compute (p*q) mod (p+q)

@@ -8,3 +8,4 @@ lpb $0
   seq $2,101093 ; Second partial sums of sixth powers (A001014).
   add $1,$2
 lpe
+mov $0,$1

@@ -4,3 +4,4 @@
 seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 mov $1,-1
 pow $1,$0
+mov $0,$1

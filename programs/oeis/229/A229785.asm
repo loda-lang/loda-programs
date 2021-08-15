@@ -11,3 +11,4 @@ lpb $2
   seq $0,157129 ; An analog of the Kolakoski sequence  A000002, only now a(n) = (length of n-th run divided by 2) using 1 and 2 and starting with 1,1.
   add $1,$0
 lpe
+mov $0,$1

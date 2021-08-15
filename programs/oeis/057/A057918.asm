@@ -3,5 +3,4 @@
 
 seq $0,8833 ; Largest square dividing n.
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $1,$0
-sub $1,1
+sub $0,1

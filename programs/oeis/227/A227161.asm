@@ -4,7 +4,6 @@
 add $0,1
 bin $0,2
 add $0,6
-mov $1,$0
-bin $1,2
-div $1,3
-sub $1,4
+bin $0,2
+div $0,3
+sub $0,4

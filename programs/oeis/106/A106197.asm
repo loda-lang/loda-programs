@@ -19,3 +19,4 @@ lpb $4
   mov $1,$3
   dif $4,6
 lpe
+mov $0,$1

@@ -4,4 +4,3 @@
 seq $0,94360 ; Pair reversal of Jacobsthal-Lucas numbers.
 mul $0,2
 div $0,3
-mov $1,$0

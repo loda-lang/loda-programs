@@ -7,3 +7,4 @@ lpb $0
   mov $1,4
 lpe
 pow $1,$2
+mov $0,$1

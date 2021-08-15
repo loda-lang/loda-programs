@@ -14,3 +14,4 @@ lpb $2
   seq $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
   add $1,$0
 lpe
+mov $0,$1

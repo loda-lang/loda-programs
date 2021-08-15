@@ -3,6 +3,5 @@
 
 add $0,4
 div $0,2
-mov $1,$0
-pow $1,2
-div $1,4
+pow $0,2
+div $0,4

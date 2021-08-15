@@ -7,3 +7,4 @@ lpb $0
   seq $2,152535 ; a(n) = n*prime(n) - Sum_{i=1..n} prime(i).
   add $1,$2
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mov $1,$0

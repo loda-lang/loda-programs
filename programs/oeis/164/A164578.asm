@@ -11,5 +11,4 @@ lpb $5,10
 lpe
 add $0,8
 bin $0,2
-mov $1,$0
-div $1,12
+div $0,12

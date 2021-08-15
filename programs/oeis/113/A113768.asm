@@ -6,3 +6,4 @@ lpb $0
   seq $1,219227 ; a(n) is the sum of n addends nested as follows: floor(f(floor(f(...(n)...)))) where f(x) = x^(1/3).
 lpe
 add $1,1
+mov $0,$1

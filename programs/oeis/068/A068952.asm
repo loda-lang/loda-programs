@@ -5,3 +5,4 @@ mul $0,2
 seq $0,225875 ; We write the 1 + 4*k numbers once and twice the others.
 add $1,$0
 pow $1,2
+mov $0,$1

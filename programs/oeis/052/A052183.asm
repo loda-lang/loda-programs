@@ -2,7 +2,7 @@
 ; 2,3,12,60,330,1911,11424,69768,432630,2713425,17168580,109390320,700939512,4512458580,29164264320,189120846288,1229917589262,8018580361365,52392620853300,342991368096300,2249282417749290
 
 mov $1,$0
-seq $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
-add $1,2
-mul $0,$1
-mov $1,$0
+add $0,2
+seq $1,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
+mul $1,$0
+mov $0,$1

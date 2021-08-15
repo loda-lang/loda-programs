@@ -10,4 +10,3 @@ lpb $1
   mov $1,34
   add $1,$2
 lpe
-max $1,$0

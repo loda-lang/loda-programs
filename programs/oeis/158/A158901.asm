@@ -4,4 +4,3 @@
 sub $2,$0
 seq $0,137319 ; Start with the set of natural numbers. Add 1 to every 2nd term, 2 to every 3rd term, 3 to every 4th term, etc.
 add $0,$2
-mov $1,$0

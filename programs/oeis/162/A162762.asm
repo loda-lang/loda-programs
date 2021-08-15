@@ -9,3 +9,4 @@ lpb $0
   trn $0,1
 lpe
 mul $1,2
+mov $0,$1

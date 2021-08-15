@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 seq $0,122800 ; A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
 div $0,2
-mov $1,$0

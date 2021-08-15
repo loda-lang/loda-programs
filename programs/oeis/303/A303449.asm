@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,90633 ; Start with the sequence [1, 1/2, 1/3, ..., 1/n]; form new sequence of n-1 terms by taking averages of successive terms; repeat until reach a single number F(n); a(n) = numerator of F(n).
-mov $1,$0

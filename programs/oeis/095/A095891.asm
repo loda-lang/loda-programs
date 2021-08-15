@@ -3,4 +3,3 @@
 
 seq $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
 pow $0,$0
-mov $1,$0

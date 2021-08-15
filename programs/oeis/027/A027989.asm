@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,10049 ; Second-order Fibonacci numbers.
-mov $1,$0

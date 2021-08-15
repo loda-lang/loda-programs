@@ -5,3 +5,4 @@ seq $0,6005 ; The odd prime numbers together with 1.
 add $1,$0
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 sub $1,$0
+mov $0,$1

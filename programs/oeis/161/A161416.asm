@@ -10,3 +10,4 @@ lpb $2
   seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
   add $1,$0
 lpe
+mov $0,$1

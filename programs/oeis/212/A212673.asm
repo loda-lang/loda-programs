@@ -3,6 +3,5 @@
 
 pow $0,2
 seq $0,153448 ; 3 times 12-gonal (or dodecagonal) numbers: 3*n*(5*n-4).
-mov $1,$0
-div $1,48
-mul $1,2
+div $0,48
+mul $0,2

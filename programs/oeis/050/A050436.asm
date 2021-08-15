@@ -6,5 +6,4 @@ lpb $2
   seq $0,72668 ; Numbers one less than composite numbers.
   div $2,10
 lpe
-mov $1,$0
-add $1,1
+add $0,1

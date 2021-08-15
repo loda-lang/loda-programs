@@ -3,8 +3,7 @@
 
 seq $0,289652 ; Catalan numbers - 2 (A120304) with first three terms changed to 1,1,1.
 sub $0,3
-mov $1,$0
 mov $2,$0
 cmp $2,0
-add $1,$2
-add $1,3
+add $0,$2
+add $0,3

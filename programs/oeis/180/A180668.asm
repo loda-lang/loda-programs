@@ -8,3 +8,4 @@ lpb $0
   seq $2,27024 ; a(n) = T(n,n+2), T given by A027023.
   add $1,$2
 lpe
+mov $0,$1

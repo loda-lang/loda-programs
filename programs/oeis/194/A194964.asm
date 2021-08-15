@@ -3,5 +3,4 @@
 
 seq $0,22839 ; Beatty sequence for sqrt(5).
 div $0,5
-mov $1,$0
-add $1,1
+add $0,1

@@ -9,3 +9,4 @@ lpb $0
 lpe
 mul $1,6
 add $1,1764
+mov $0,$1

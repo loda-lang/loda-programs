@@ -3,6 +3,5 @@
 
 add $0,9
 seq $0,63235 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 83 ).
-mov $1,$0
-div $1,2
-sub $1,64
+div $0,2
+sub $0,64

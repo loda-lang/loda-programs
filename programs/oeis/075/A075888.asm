@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,267896 ; a(n) = (Prime(n+1)^2 - Prime(n)^2) / 8.
-mov $1,$0
-div $1,3
+div $0,3

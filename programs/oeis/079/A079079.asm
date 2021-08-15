@@ -3,7 +3,6 @@
 
 seq $0,6094 ; Products of 2 successive primes.
 seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
-mov $1,$0
-sub $1,11
-div $1,4
-add $1,3
+sub $0,11
+div $0,4
+add $0,3

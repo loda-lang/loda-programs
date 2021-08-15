@@ -9,3 +9,4 @@ lpb $0
   seq $2,52987 ; Expansion of (1-2x^2)/(1-2x-2x^2+2x^3).
   add $1,$2
 lpe
+mov $0,$1

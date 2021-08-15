@@ -5,7 +5,6 @@ seq $0,106389 ; Numbers j such that 6j^2 + 6j + 1 = 13k.
 mov $2,$0
 pow $2,2
 add $0,$2
-mov $1,$0
-div $1,26
-mul $1,12
-add $1,1
+div $0,26
+mul $0,12
+add $0,1

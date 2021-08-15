@@ -20,3 +20,4 @@ lpb $0
   sub $1,$3
 lpe
 sub $1,8
+mov $0,$1

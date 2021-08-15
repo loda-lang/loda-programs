@@ -4,6 +4,5 @@
 div $0,2
 sub $0,3
 pow $0,2
-mov $1,$0
-div $1,8
-bin $1,4
+div $0,8
+bin $0,4

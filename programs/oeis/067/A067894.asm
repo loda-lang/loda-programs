@@ -7,3 +7,4 @@ lpb $0
   seq $2,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
   add $1,$2
 lpe
+mov $0,$1

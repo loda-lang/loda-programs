@@ -8,3 +8,4 @@ lpb $0
   trn $0,$1
 lpe
 bin $1,$2
+mov $0,$1

@@ -3,5 +3,4 @@
 
 seq $0,288713 ; Positions of 1 in A288711; complement of A288712.
 max $0,3
-mov $1,$0
-sub $1,2
+sub $0,2

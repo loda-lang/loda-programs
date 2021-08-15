@@ -22,3 +22,4 @@ lpb $2
     div $12,$12
   lpe
 lpe
+mov $0,$1

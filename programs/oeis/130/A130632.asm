@@ -3,6 +3,6 @@
 
 seq $0,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
 mov $1,$0
-cmp $1,0
-gcd $1,$0
-sub $1,1
+cmp $0,0
+gcd $0,$1
+sub $0,1

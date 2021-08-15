@@ -7,3 +7,4 @@ lpb $0
   seq $2,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
   add $1,$2
 lpe
+mov $0,$1

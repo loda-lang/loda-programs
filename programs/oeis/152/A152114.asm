@@ -3,7 +3,6 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,22086 ; Fibonacci sequence beginning 0, 3.
-mov $1,$0
-sub $1,8
-div $1,3
-add $1,3
+sub $0,8
+div $0,3
+add $0,3

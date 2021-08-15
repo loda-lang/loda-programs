@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,68921 ; Number of ways to tile a 2 X n room with 1x2 Tatami mats. At most 3 Tatami mats may meet at a point.
-mov $1,$0
-mul $1,$0
+pow $0,2

@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,13655 ; a(n) = F(n+1) + L(n), where F(n) and L(n) are Fibonacci and Lucas numbers, respectively.
 add $0,$2
-mov $1,$0

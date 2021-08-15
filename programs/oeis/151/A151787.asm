@@ -3,4 +3,3 @@
 
 seq $0,160713 ; 3 times numbers of Gould's sequence: a(n) = A001316(n)*3.
 div $0,2
-add $1,$0

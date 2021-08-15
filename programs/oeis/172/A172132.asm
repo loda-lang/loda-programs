@@ -3,4 +3,3 @@
 
 seq $0,35289 ; Number of ways to place a non-attacking white and black knight on n X n chessboard.
 div $0,2
-mov $1,$0

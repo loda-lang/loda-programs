@@ -7,4 +7,3 @@ lpb $0
   dif $0,4
 lpe
 seq $0,1157 ; sigma_2(n): sum of squares of divisors of n.
-mov $1,$0

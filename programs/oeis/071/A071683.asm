@@ -9,13 +9,12 @@ add $4,1
 add $0,$4
 seq $0,14445 ; Even Fibonacci numbers; or, Fibonacci(3*n).
 mul $0,2
-mov $1,$0
-sub $1,4
-div $1,4
-add $1,1
+sub $0,4
+div $0,4
+add $0,1
 cmp $3,0
 mul $3,3
-sub $1,$3
+sub $0,$3
 cmp $2,1
 mul $2,13
-sub $1,$2
+sub $0,$2

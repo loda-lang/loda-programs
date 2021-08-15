@@ -7,3 +7,4 @@ lpb $0
   seq $2,324964 ; a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
   add $1,$2
 lpe
+mov $0,$1

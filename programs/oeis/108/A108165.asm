@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,277722 ; a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
-mov $1,$0
-sub $1,1
+sub $0,1

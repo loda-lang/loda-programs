@@ -31,7 +31,6 @@ lpb $0
   lpe
 lpe
 add $0,$5
-mov $1,$0
-add $1,$6
-add $1,2
-mod $1,2
+add $0,$6
+add $0,2
+mod $0,2

@@ -4,4 +4,3 @@
 seq $0,96 ; a(n) = n*(n+3)/2.
 add $0,2
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

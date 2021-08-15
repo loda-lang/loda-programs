@@ -3,4 +3,3 @@
 
 seq $0,72731 ; Difference of numbers of composite and prime numbers <= n.
 add $0,1
-mov $1,$0

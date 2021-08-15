@@ -3,8 +3,7 @@
 
 mul $0,3
 seq $0,99425 ; Expansion of (1+x^2)/(1-2*x-x^2).
-mov $1,$0
-sub $1,14
-div $1,2
-add $1,7
-mul $1,2
+sub $0,14
+div $0,2
+add $0,7
+mul $0,2

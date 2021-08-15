@@ -9,3 +9,4 @@ lpb $0
   max $1,0
   seq $1,75101 ; Numerator of 2^n/n.
 lpe
+mov $0,$1

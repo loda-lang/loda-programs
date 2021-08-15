@@ -3,4 +3,3 @@
 
 seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 seq $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
-mov $1,$0

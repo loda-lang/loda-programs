@@ -11,3 +11,4 @@ lpb $3
   seq $0,6 ; Integer part of square root of n-th prime.
   add $1,$0
 lpe
+mov $0,$1

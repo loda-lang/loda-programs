@@ -3,4 +3,3 @@
 
 seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mod $0,9
-mov $1,$0

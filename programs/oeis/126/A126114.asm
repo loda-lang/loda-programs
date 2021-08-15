@@ -3,4 +3,3 @@
 
 seq $0,122197 ; Fractal sequence: count up to successive integers twice.
 pow $0,2
-mov $1,$0

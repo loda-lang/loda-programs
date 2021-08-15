@@ -7,3 +7,4 @@ lpb $0
   seq $2,86926 ; Product of Fibonacci and (shifted) triangular numbers.
   add $1,$2
 lpe
+mov $0,$1

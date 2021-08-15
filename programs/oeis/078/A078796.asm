@@ -4,13 +4,13 @@
 mov $3,$0
 mul $0,2
 mov $1,$0
-add $0,2
-seq $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
-mov $2,$0
+add $1,2
+seq $1,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
+mov $2,$1
 add $2,2
-add $1,$2
-div $1,2
-add $1,$0
-mod $1,2
-add $1,$3
-add $1,1
+add $0,$2
+div $0,2
+add $0,$1
+mod $0,2
+add $0,$3
+add $0,1

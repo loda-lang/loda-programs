@@ -22,3 +22,4 @@ lpb $3
   cmp $7,0
   sub $3,$7
 lpe
+mov $0,$1

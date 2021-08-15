@@ -7,5 +7,4 @@ lpb $2
   add $0,3
   bin $2,4
 lpe
-mov $1,$0
-add $1,1
+add $0,1

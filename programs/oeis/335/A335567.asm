@@ -3,4 +3,3 @@
 
 seq $0,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
 bin $0,2
-mov $1,$0

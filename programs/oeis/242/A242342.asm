@@ -5,4 +5,3 @@ mov $2,$0
 add $0,1
 seq $2,7978 ; Least non-divisor of n.
 bin $0,$2
-mov $1,$0

@@ -4,12 +4,11 @@
 mov $4,$0
 mul $0,3
 pow $0,2
-mov $1,$0
-div $1,2
-add $1,$4
+div $0,2
+add $0,$4
 mov $3,$4
 mul $3,$4
 mul $3,$4
 mov $2,$3
 mul $2,3
-add $1,$2
+add $0,$2

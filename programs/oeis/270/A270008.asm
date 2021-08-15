@@ -3,5 +3,4 @@
 
 seq $0,270012 ; Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.
 trn $0,2
-mov $1,$0
-add $1,1
+add $0,1

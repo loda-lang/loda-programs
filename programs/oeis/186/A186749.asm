@@ -5,3 +5,4 @@ seq $0,16035 ; a(n) = Sum_{j|n, 1 < j < n} phi(j). Also a(n) = n - phi(n) - 1 fo
 mov $1,3
 add $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+mov $0,$1

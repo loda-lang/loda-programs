@@ -3,4 +3,3 @@
 
 pow $0,3
 seq $0,48761 ; Smallest square greater than or equal to n.
-mov $1,$0

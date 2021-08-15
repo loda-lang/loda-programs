@@ -10,3 +10,4 @@ lpb $0
 lpe
 div $1,60
 mul $1,7
+mov $0,$1

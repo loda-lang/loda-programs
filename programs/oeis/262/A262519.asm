@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,155043 ; a(0)=0; for n >= 1, a(n) = 1 + a(n-d(n)), where d(n) is the number of divisors of n (A000005).
-mov $1,$0

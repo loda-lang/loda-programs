@@ -3,5 +3,5 @@
 
 add $0,1
 mov $1,$0
-seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-mul $1,$0
+seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mul $0,$1

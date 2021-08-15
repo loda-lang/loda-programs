@@ -3,5 +3,4 @@
 
 seq $0,1076 ; Denominators of continued fraction convergents to sqrt(5).
 pow $0,2
-mov $1,$0
-mul $1,4
+mul $0,4

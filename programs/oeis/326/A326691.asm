@@ -4,18 +4,18 @@
 mov $2,$0
 add $0,1
 mov $1,$0
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-mul $2,$0
+seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+mul $2,$1
 mov $3,1
 add $3,$2
-gcd $1,$3
-add $1,5
+gcd $0,$3
+add $0,5
 sub $3,$2
 mul $3,2
-mul $1,$3
-sub $3,$1
-sub $1,$3
-div $1,2
-sub $1,11
-div $1,2
-add $1,1
+mul $0,$3
+sub $3,$0
+sub $0,$3
+div $0,2
+sub $0,11
+div $0,2
+add $0,1

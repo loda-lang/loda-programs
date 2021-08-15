@@ -9,3 +9,4 @@ lpb $0
 lpe
 bin $1,2
 div $1,6
+mov $0,$1

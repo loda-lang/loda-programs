@@ -3,4 +3,3 @@
 
 seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
 seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-mov $1,$0

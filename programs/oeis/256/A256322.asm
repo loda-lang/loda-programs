@@ -3,6 +3,3 @@
 
 mul $0,7
 seq $0,69905 ; Number of partitions of n into 3 positive parts.
-mov $1,2
-add $1,$0
-sub $1,2

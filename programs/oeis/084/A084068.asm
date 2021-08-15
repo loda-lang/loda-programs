@@ -12,3 +12,4 @@ lpb $2
   seq $0,1653 ; Numbers k such that 2*k^2 - 1 is a square.
   add $1,$0
 lpe
+mov $0,$1

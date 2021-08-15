@@ -4,3 +4,4 @@
 seq $0,194029 ; Natural fractal sequence of the Fibonacci sequence (1,2,3,5,8,...).
 mov $1,1
 mod $1,$0
+mov $0,$1

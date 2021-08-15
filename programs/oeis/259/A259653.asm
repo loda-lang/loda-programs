@@ -8,3 +8,4 @@ lpb $0
   seq $2,98355 ; Multiplication table of the powers of three read by antidiagonals.
   add $1,$2
 lpe
+mov $0,$1

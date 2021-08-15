@@ -7,3 +7,4 @@ lpb $0
   mov $1,$0
   seq $1,214211 ; Doubled Fibonacci word: the A003842 sequence replacing 1 with 1,1 and 2 with 2,2.
 lpe
+mov $0,$1

@@ -4,5 +4,4 @@
 trn $0,1
 seq $0,87161 ; Records in A087159, i.e., A087159(a(n)) = n, and satisfies the recurrence a(n+3) = 5*a(n+2) - 6* a(n+1) + 2*a(n) with a(1) = 1, a(2) = 2, and a(3) = 4.
 mul $0,2
-mov $1,$0
-sub $1,2
+sub $0,2

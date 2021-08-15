@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,154890 ; Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
-mov $1,$0
-sub $1,2
+sub $0,2

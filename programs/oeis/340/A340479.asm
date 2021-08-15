@@ -3,4 +3,3 @@
 
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 seq $0,62028 ; a(n) = n + sum of the digits of n.
-mov $1,$0

@@ -4,3 +4,4 @@
 add $0,3
 seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
 pow $1,$0
+mov $0,$1

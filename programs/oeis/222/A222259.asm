@@ -9,5 +9,4 @@ lpb $2
   mul $2,$3
   mod $2,4
 lpe
-mov $1,$0
-add $1,1
+add $0,1

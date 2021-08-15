@@ -19,3 +19,4 @@ lpb $4
   add $1,1
   trn $4,6
 lpe
+mov $0,$1

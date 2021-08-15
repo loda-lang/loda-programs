@@ -3,8 +3,8 @@
 
 mul $0,4
 mov $1,$0
-seq $0,284625 ; Positions of 2 in A284749.
-sub $0,$1
-mov $1,$0
-div $1,4
-add $1,1
+seq $1,284625 ; Positions of 2 in A284749.
+sub $1,$0
+mov $0,$1
+div $0,4
+add $0,1

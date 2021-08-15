@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,34693 ; Smallest k such that k*n+1 is prime.
-mov $1,$0

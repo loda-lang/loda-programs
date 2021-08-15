@@ -7,3 +7,4 @@ lpb $0
   seq $2,106510 ; Expansion of (1+x)^2/(1+x+x^2).
   add $1,$2
 lpe
+mov $0,$1

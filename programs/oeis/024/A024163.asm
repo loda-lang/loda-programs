@@ -4,7 +4,7 @@
 trn $0,2
 seq $0,8615 ; a(n) = floor(n/2) - floor(n/3).
 mov $1,$0
-sub $1,1
-mul $1,2
-mul $1,$0
-div $1,4
+sub $0,1
+mul $0,2
+mul $0,$1
+div $0,4

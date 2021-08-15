@@ -8,5 +8,4 @@ lpb $0
   seq $2,92323 ; 2^m - 1 appears 2^m times.
   sub $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

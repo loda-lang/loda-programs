@@ -4,3 +4,4 @@
 seq $0,62756 ; Number of 1's in ternary (base-3) expansion of n.
 sub $1,$0
 add $1,6
+mov $0,$1

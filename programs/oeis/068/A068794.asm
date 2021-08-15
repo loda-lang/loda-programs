@@ -5,5 +5,4 @@ lpb $0
   seq $0,130065 ; a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
   sub $0,1
 lpe
-mov $1,$0
-add $1,1
+add $0,1

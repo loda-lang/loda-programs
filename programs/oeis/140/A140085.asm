@@ -3,5 +3,4 @@
 
 mod $0,8
 seq $0,324467 ; Three times the binary weight of n: 3*A000120(n).
-mov $1,$0
-div $1,3
+div $0,3

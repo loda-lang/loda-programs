@@ -8,8 +8,7 @@ seq $0,55997 ; Numbers n such that n(n - 1)/2 is a square.
 lpb $0
   dif $0,2
 lpe
-mov $1,$0
-sub $1,9
-div $1,8
-mul $1,12
-add $1,13
+sub $0,9
+div $0,8
+mul $0,12
+add $0,13

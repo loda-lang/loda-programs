@@ -5,4 +5,3 @@ seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
 add $0,1
-mov $1,$0

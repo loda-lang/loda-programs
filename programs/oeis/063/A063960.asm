@@ -4,4 +4,3 @@
 sub $0,1
 div $0,2
 seq $0,34387 ; Sum of primes <= n.
-mov $1,$0

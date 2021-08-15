@@ -9,5 +9,4 @@ mov $1,$2
 sub $1,2
 sub $0,$1
 seq $0,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
-mov $1,$0
-div $1,2
+div $0,2

@@ -6,6 +6,5 @@ pow $1,$0
 gcd $0,2
 add $0,6
 mul $0,$1
-mov $1,$0
-div $1,2
-mul $1,3
+div $0,2
+mul $0,3

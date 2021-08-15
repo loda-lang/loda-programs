@@ -6,5 +6,4 @@ pow $0,3
 sub $0,1
 seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0
-add $1,1
+add $0,1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,56865 ; a(n) = floor(n^2/10).
   add $1,$2
 lpe
+mov $0,$1

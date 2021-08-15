@@ -17,6 +17,5 @@ lpb $0
 lpe
 add $3,1
 gcd $0,$3
-mov $1,$0
-add $1,1
-add $1,$5
+add $0,1
+add $0,$5

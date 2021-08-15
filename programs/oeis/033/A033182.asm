@@ -3,9 +3,9 @@
 
 add $0,20639
 mov $1,$0
-div $0,6
-add $1,1
-div $1,5
-sub $2,$0
-add $1,$2
-sub $1,688
+add $0,1
+div $0,5
+div $1,6
+sub $2,$1
+add $0,$2
+sub $0,688

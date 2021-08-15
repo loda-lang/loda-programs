@@ -3,5 +3,4 @@
 
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,6 +3,5 @@
 
 seq $0,283208 ; Minimal exponent integer sequence associated with Vietoris sequence.
 seq $0,59141 ; A hierarchical sequence (W2{3}*c - see A059126).
-mov $1,$0
-sub $1,11
-div $1,7
+sub $0,11
+div $0,7

@@ -5,7 +5,6 @@ mov $2,-2
 bin $2,$0
 div $2,2
 sub $0,$2
-mov $1,$0
-mul $1,5
-div $1,22
-add $1,1
+mul $0,5
+div $0,22
+add $0,1

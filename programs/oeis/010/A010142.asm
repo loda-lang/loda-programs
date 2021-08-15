@@ -4,7 +4,6 @@
 seq $0,10225 ; Continued fraction for sqrt(183).
 seq $0,64997 ; A Beatty sequence: [Pi^2 -8].
 div $0,2
-mov $1,$0
-sub $1,2
-div $1,2
-add $1,1
+sub $0,2
+div $0,2
+add $0,1

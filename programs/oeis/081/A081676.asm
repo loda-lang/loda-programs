@@ -6,5 +6,4 @@ lpb $0
   seq $2,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
   sub $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

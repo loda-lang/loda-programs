@@ -4,5 +4,4 @@
 trn $0,1
 seq $0,193641 ; Number of arrays of -1..1 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero.
 trn $0,2
-mov $1,$0
-add $1,1
+add $0,1

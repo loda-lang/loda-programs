@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,190512 ; Number of one-sided n-step prudent walks, avoiding single west step only, i.e., two or more consecutive west steps are permitted.
-mov $1,$0

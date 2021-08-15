@@ -3,5 +3,4 @@
 
 seq $0,56556 ; First tetrahedral coordinate; repeat m (m+1)*(m+2)/2 times.
 gcd $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

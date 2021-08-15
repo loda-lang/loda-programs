@@ -3,4 +3,3 @@
 
 add $0,18
 seq $0,20712 ; Pisot sequences E(5,8), P(5,8).
-mov $1,$0

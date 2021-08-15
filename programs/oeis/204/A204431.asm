@@ -3,4 +3,3 @@
 
 seq $0,111650 ; 2n appears n times (n>0).
 mod $0,3
-mov $1,$0

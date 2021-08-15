@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $2,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
 add $0,$2
-mov $1,$0
-add $1,2
+add $0,2

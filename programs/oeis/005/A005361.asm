@@ -3,4 +3,3 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $1,$0

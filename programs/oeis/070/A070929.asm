@@ -3,4 +3,3 @@
 
 pow $0,3
 seq $0,68527 ; Difference between smallest square >= n and n.
-mov $1,$0

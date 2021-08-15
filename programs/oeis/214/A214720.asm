@@ -9,5 +9,4 @@ seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
 lpb $0
   sub $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

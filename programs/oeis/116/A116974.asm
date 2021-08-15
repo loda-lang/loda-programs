@@ -8,3 +8,4 @@ mul $0,2
 max $0,1
 seq $0,173919 ; Numbers that are prime or one less than a prime.
 add $1,$0
+mov $0,$1

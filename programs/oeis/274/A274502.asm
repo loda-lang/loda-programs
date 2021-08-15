@@ -9,3 +9,4 @@ lpb $0
   seq $1,52254 ; Partial sums of A050406.
 lpe
 mul $1,9
+mov $0,$1

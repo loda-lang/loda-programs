@@ -5,4 +5,3 @@ seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,2
 max $0,4
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-mov $1,$0

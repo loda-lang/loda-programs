@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,44632 ; Numbers n such that string 0,0 occurs in the base 9 representation of n but not of n+1.
-mov $1,$0
-div $1,2
+div $0,2

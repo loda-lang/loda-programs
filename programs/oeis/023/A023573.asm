@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 trn $0,4
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

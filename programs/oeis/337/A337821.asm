@@ -3,5 +3,4 @@
 
 seq $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 seq $0,90739 ; Exponent of 2 in 9^n - 1.
-mov $1,$0
-sub $1,4
+sub $0,4

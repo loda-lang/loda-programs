@@ -3,4 +3,3 @@
 
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 pow $0,3
-mov $1,$0

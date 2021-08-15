@@ -4,5 +4,4 @@
 seq $0,280014 ; Numbers n == +- 2 (mod 10) but not n == 2 (mod 6).
 sub $0,5
 pow $0,2
-mov $1,$0
-div $1,120
+div $0,120

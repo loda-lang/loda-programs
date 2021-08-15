@@ -3,4 +3,3 @@
 
 seq $0,245391 ; a(n) = 2^n*binomial(2*(n+1), n).
 dif $0,2
-mov $1,$0

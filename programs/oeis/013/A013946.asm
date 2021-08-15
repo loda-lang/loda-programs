@@ -5,4 +5,3 @@ add $0,1
 pow $0,2
 add $0,3
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-mov $1,$0

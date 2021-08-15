@@ -10,3 +10,4 @@ lpe
 add $2,1
 add $1,$2
 div $1,2
+mov $0,$1

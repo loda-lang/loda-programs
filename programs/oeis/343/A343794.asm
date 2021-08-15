@@ -3,8 +3,6 @@
 
 add $0,27
 seq $0,40 ; The prime numbers.
-mul $0,2
-mov $1,$0
-sub $1,214
-div $1,4
-add $1,53
+sub $0,107
+div $0,2
+add $0,53

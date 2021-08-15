@@ -7,3 +7,4 @@ lpb $0
   div $0,$0
   seq $1,288932 ; Fixed point of the mapping 00->1000, 10->10101, starting with 00.
 lpe
+mov $0,$1

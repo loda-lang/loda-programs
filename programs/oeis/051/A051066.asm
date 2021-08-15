@@ -7,3 +7,4 @@ lpb $0
   seq $2,51065 ; a(n) = A004128(n) mod 2.
   add $1,$2
 lpe
+mov $0,$1

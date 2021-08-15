@@ -7,4 +7,3 @@ seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2
 add $0,1
 mul $0,19
 div $0,26
-mov $1,$0

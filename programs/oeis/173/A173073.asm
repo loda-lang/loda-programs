@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
-mov $1,$0

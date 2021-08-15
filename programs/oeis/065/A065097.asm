@@ -4,10 +4,9 @@
 mul $0,2
 add $0,2
 mov $1,$0
-mov $2,$0
-mul $0,2
-bin $0,$2
-add $1,1
-div $0,$1
-mov $1,$0
-div $1,2
+mul $1,2
+bin $1,$0
+add $0,1
+div $1,$0
+mov $0,$1
+div $0,2

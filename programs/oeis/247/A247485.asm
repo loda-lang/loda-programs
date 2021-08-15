@@ -3,5 +3,4 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,55086 ; n appears 1+[n/2] times.
-mov $1,$0
-add $1,2
+add $0,2

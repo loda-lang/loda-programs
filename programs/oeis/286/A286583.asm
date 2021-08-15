@@ -3,5 +3,4 @@
 
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 seq $0,90739 ; Exponent of 2 in 9^n - 1.
-mov $1,$0
-sub $1,4
+sub $0,4

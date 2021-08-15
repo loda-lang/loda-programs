@@ -5,3 +5,4 @@ mov $1,1
 trn $1,$0
 seq $0,71050 ; Number of 0's in n-th row of triangle in A071035.
 add $1,$0
+mov $0,$1

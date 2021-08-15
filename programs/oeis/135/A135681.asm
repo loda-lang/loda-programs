@@ -25,3 +25,4 @@ lpb $2
   lpe
   pow $1,2
 lpe
+mov $0,$1

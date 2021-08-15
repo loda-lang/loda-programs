@@ -7,4 +7,3 @@ add $0,$2
 lpb $0
   gcd $0,128
 lpe
-mov $1,$0

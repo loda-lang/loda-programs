@@ -8,3 +8,4 @@ max $2,0
 seq $2,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
 add $1,$2
 add $1,1
+mov $0,$1

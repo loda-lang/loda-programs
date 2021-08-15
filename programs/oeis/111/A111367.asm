@@ -22,3 +22,4 @@ lpe
 mul $1,2
 div $1,28
 mul $1,2
+mov $0,$1

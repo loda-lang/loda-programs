@@ -5,4 +5,3 @@ add $0,2
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
 sub $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $1,$0

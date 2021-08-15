@@ -13,4 +13,3 @@ lpb $2
   lpe
   mov $2,1
 lpe
-mov $1,$0

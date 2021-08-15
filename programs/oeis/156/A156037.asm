@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,135731 ; a(1) = 3; thereafter a(n+1) = a(n) + nextprime(a(n)) - prevprime(a(n)).
-mov $1,$0
-sub $1,2
+sub $0,2

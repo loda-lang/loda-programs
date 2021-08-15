@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,71377 ; Number of positive integers <= n which are the sum of 3 squares.
-mov $1,$0

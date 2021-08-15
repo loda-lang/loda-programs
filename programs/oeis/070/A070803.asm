@@ -4,5 +4,4 @@
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
-mov $1,$0
-sub $1,1
+sub $0,1

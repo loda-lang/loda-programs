@@ -4,3 +4,4 @@
 seq $0,77846 ; Expansion of 1/(1 - 3*x + 2*x^3).
 div $0,-3
 sub $1,$0
+mov $0,$1

@@ -7,3 +7,4 @@ lpb $0
   seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   add $1,$2
 lpe
+mov $0,$1

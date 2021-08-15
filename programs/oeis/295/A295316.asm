@@ -5,3 +5,4 @@ seq $0,336643 ; Squarefree kernel of n divided by the squarefree part of n: a(n)
 sub $1,$0
 add $1,1
 cmp $1,0
+mov $0,$1

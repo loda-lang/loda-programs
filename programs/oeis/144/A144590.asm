@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,117054 ; Number of ordered ways of writing n = i + j, where i is a prime and j is of the form k*(k+1), k > 0.
-mov $1,$0

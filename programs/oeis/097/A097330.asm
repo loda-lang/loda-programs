@@ -4,4 +4,3 @@
 trn $0,1
 seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
 div $0,2
-mov $1,$0

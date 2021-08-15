@@ -11,3 +11,4 @@ lpb $2
   pow $3,$0
 lpe
 sub $1,11
+mov $0,$1

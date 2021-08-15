@@ -59,3 +59,4 @@ lpb $7
   add $1,$4
   sub $7,1
 lpe
+mov $0,$1

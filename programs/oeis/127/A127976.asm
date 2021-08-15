@@ -3,6 +3,5 @@
 
 seq $0,91596 ; Expansion of x(1-2x^2)/(1-x-2x^2)^2.
 div $0,2
-mov $1,$0
-mul $1,4
-add $1,1
+mul $0,4
+add $0,1

@@ -13,3 +13,4 @@ lpb $3
   mod $0,19
   add $1,$0
 lpe
+mov $0,$1

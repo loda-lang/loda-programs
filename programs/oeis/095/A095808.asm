@@ -5,5 +5,4 @@ sub $0,1
 mul $0,4
 add $0,6
 seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
-mov $1,$0
-sub $1,1
+sub $0,1

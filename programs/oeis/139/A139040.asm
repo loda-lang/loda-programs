@@ -3,4 +3,3 @@
 
 seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
 seq $0,930 ; Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
-mov $1,$0

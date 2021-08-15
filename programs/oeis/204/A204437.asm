@@ -4,4 +4,3 @@
 seq $0,3056 ; n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
 pow $0,4
 mod $0,3
-mov $1,$0

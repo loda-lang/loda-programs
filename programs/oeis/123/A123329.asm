@@ -8,3 +8,4 @@ lpb $0
   seq $2,244049 ; Sum of all proper divisors of all positive integers <= n.
   add $1,$2
 lpe
+mov $0,$1

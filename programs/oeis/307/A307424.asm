@@ -5,4 +5,3 @@ add $0,1
 pow $0,2
 sub $0,1
 seq $0,210826 ; G.f.: Sum_{n>=1} a(n)*x^n/(1 - x^n) = Sum_{n>=1} x^(n^3).
-mov $1,$0

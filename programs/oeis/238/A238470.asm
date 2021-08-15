@@ -8,3 +8,4 @@ lpb $0
   max $1,0
   sub $1,$0
 lpe
+mov $0,$1

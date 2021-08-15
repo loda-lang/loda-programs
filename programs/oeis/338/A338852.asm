@@ -7,3 +7,4 @@ lpb $0
   seq $1,47320 ; Numbers that are congruent to {0, 5, 6} mod 7.
 lpe
 add $1,2
+mov $0,$1

@@ -6,3 +6,4 @@ add $1,$0
 seq $0,287864 ; Consider a symmetric pyramid-shaped chessboard with rows of squares of lengths n, n-2, n-4, ..., ending with either 2 or 1 squares; a(n) is the maximal number of mutually non-attacking queens that can be placed on this board.
 div $1,2
 sub $1,$0
+mov $0,$1

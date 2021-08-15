@@ -4,4 +4,3 @@
 add $0,1
 pow $0,3
 seq $0,196564 ; Number of odd digits in decimal representation of n.
-mov $1,$0

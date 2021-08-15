@@ -10,3 +10,4 @@ seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 mov $1,2
 pow $1,$0
 mul $1,2
+mov $0,$1

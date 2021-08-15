@@ -8,6 +8,5 @@ mul $2,$0
 add $0,6
 mul $0,$2
 sub $0,$2
-mov $1,$0
-div $1,64
-sub $1,8
+div $0,64
+sub $0,8

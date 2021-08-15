@@ -10,3 +10,4 @@ lpb $2
   mov $1,$2
   div $2,4
 lpe
+mov $0,$1

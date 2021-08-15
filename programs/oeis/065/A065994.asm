@@ -3,4 +3,3 @@
 
 seq $0,65890 ; Number of composites less than the n-th prime.
 seq $0,40 ; The prime numbers.
-mov $1,$0

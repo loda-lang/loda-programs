@@ -3,4 +3,3 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $0,13632 ; Difference between n and the next prime greater than n.
-mov $1,$0

@@ -8,3 +8,4 @@ lpb $0
   seq $1,5056 ; a(n) = 3^n + 2^n - 1.
 lpe
 add $1,1
+mov $0,$1

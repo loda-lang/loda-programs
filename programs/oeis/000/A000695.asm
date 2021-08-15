@@ -8,3 +8,4 @@ lpb $0
   seq $2,276391 ; G.f. satisfies A(x) - 4*A(x^2) = x/(1+x).
   add $1,$2
 lpe
+mov $0,$1

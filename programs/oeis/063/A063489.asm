@@ -6,10 +6,9 @@ add $0,1
 mul $0,2
 bin $0,3
 mul $0,5
-mov $1,$0
 lpb $2
-  add $1,8
+  add $0,8
   sub $2,1
 lpe
-div $1,4
-add $1,1
+div $0,4
+add $0,1

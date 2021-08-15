@@ -3,10 +3,10 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-lpb $0
-  mod $0,8
-  sub $1,2
+lpb $1
+  sub $0,2
+  mod $1,8
 lpe
-sub $1,2
-mul $1,6
-add $1,27
+sub $0,2
+mul $0,6
+add $0,27

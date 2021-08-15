@@ -5,29 +5,29 @@ mov $1,$0
 mov $2,$0
 add $2,1
 lpb $2
-  add $1,$0
+  add $0,$1
   mov $4,2
   mov $6,$2
   add $6,1
-  mul $6,$1
-  add $1,1
+  mul $6,$0
+  add $0,1
   lpb $4
-    mul $1,4
+    mul $0,4
     mov $4,1
     div $6,5
   lpe
   add $5,$6
   mov $6,2
   lpb $5
-    add $1,$4
-    trn $5,$1
+    add $0,$4
+    trn $5,$0
   lpe
   lpb $6
-    mov $2,$0
-    add $3,$1
-    trn $6,$1
+    mov $2,$1
+    add $3,$0
+    trn $6,$0
   lpe
-  add $1,$3
-  div $1,6
+  add $0,$3
+  div $0,6
 lpe
-add $1,1
+add $0,1

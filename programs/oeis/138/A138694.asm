@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,24898 ; Positive integers k such that 6*k - 1 is prime.
-mov $1,$0
-sub $1,2
-mul $1,3
-add $1,1
+sub $0,2
+mul $0,3
+add $0,1

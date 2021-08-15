@@ -10,3 +10,4 @@ lpb $0
   seq $2,1401 ; Number of partitions of n into at most 5 parts.
   add $1,$2
 lpe
+mov $0,$1

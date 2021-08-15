@@ -19,3 +19,4 @@ lpb $0
   mul $1,$4
 lpe
 div $1,64
+mov $0,$1

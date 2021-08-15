@@ -15,3 +15,4 @@ lpb $2
   seq $0,108578 ; Number of 3 X 3 magic squares with magic sum 3n.
   add $1,$0
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 trn $0,2
 seq $0,210469 ; a(n) = n - primepi(2n).
-mov $1,$0

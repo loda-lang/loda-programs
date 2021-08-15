@@ -8,3 +8,4 @@ lpb $0
   seq $1,70659 ; n^6 mod 36.
 lpe
 mod $1,10
+mov $0,$1

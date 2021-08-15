@@ -4,6 +4,5 @@
 mov $2,$0
 add $0,3
 seq $0,40 ; The prime numbers.
-mov $1,$0
 seq $2,40 ; The prime numbers.
-mul $1,$2
+mul $0,$2

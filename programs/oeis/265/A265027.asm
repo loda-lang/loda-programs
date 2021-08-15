@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,265026 ; First differences of A048701.
-mov $1,$0
-div $1,6
+div $0,6

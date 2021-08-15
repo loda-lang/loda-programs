@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,73388 ; Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
-mov $1,$0
-div $1,4
+div $0,4

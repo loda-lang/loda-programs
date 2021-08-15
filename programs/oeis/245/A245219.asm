@@ -9,5 +9,4 @@ lpb $0
   mod $0,5
   div $0,2
 lpe
-mov $1,$0
-add $1,2
+add $0,2

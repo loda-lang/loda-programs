@@ -3,6 +3,5 @@
 
 seq $0,198644 ; 8*3^n-1.
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mov $1,$0
-div $1,1000
-add $1,1
+div $0,1000
+add $0,1

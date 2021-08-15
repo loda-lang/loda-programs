@@ -12,3 +12,4 @@ lpb $2
 lpe
 mov $1,5
 pow $1,$2
+mov $0,$1

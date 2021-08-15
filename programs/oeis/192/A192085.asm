@@ -10,3 +10,4 @@ lpb $0
     sub $1,$0
   lpe
 lpe
+mov $0,$1

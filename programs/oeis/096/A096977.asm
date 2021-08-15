@@ -7,3 +7,4 @@ lpb $0
   seq $2,139818 ; Squares of Jacobsthal numbers.
   add $1,$2
 lpe
+mov $0,$1

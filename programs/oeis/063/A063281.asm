@@ -4,6 +4,5 @@
 mov $2,$0
 seq $0,152271 ; a(n)=1 for even n and (n+1)/2 for odd n.
 div $0,2
-mov $1,$0
-add $1,$2
-sub $1,1
+add $0,$2
+sub $0,1

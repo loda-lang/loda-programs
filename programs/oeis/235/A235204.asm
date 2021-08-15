@@ -7,4 +7,3 @@ seq $0,101776 ; Smallest k such that k^2 is equal to the sum of n not-necessaril
 pow $0,2
 add $0,1
 div $0,2
-mov $1,$0

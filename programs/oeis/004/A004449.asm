@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,4457 ; Nimsum n + 16.
-mov $1,$0
-div $1,2
+div $0,2

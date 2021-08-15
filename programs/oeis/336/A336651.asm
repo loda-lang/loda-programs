@@ -3,7 +3,6 @@
 
 seq $0,336551 ; a(n) = A003557(n) - 1.
 add $0,1
-mov $1,$0
-lpb $1
-  dif $1,2
+lpb $0
+  dif $0,2
 lpe

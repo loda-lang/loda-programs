@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,81604 ; Number of digits in ternary representation of n.
-mov $1,$0

@@ -4,4 +4,3 @@
 seq $0,33677 ; Smallest divisor of n >= sqrt(n).
 sub $0,1
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mov $1,$0

@@ -4,4 +4,3 @@
 add $0,1
 seq $0,171972 ; Greatest integer k such that k/n^2 < sqrt(3).
 div $0,4
-mov $1,$0

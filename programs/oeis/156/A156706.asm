@@ -6,4 +6,3 @@ sub $2,$0
 seq $0,75743 ; For all numbers of the form 6 +- 1 starting with 5,7,11,13,..., '1' indicates prime and '0' indicates composite.
 sub $0,2
 pow $0,$2
-mov $1,$0

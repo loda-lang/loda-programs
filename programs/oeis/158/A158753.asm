@@ -3,4 +3,3 @@
 
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 seq $0,2878 ; Bisection of Lucas sequence: a(n) = L(2*n+1).
-mov $1,$0

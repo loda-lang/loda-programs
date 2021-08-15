@@ -3,5 +3,4 @@
 
 dif $0,2
 seq $0,4155 ; Sum of digits of n-th odd number.
-mov $1,$0
-sub $1,1
+sub $0,1

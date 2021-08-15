@@ -4,4 +4,3 @@
 add $0,2
 seq $0,65220 ; a(n) = Fibonacci(n) - n.
 div $0,11
-mov $1,$0

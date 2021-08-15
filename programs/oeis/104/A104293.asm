@@ -4,5 +4,4 @@
 seq $0,98090 ; Numbers k such that 2k-3 is prime.
 sub $0,3
 seq $0,6093 ; a(n) = prime(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

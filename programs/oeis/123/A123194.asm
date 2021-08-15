@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,23607 ; a(n) = n * Fibonacci(n+1).
-mov $1,$0
-add $1,3
+add $0,3

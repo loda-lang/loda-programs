@@ -7,3 +7,4 @@ lpb $0
   seq $2,266449 ; Number of OFF (white) cells in the n-th iteration of the "Rule 25" elementary cellular automaton starting with a single ON (black) cell.
   add $1,$2
 lpe
+mov $0,$1

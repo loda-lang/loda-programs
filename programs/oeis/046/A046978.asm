@@ -9,3 +9,4 @@ lpb $0
   seq $2,14017 ; Inverse of 8th cyclotomic polynomial.
   add $1,$2
 lpe
+mov $0,$1

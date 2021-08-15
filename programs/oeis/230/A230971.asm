@@ -5,7 +5,6 @@ seq $0,230929 ; Number of black-square subarrays of (n+2) X (2+2) 0..3 arrays x(
 pow $0,2
 mul $0,2
 add $0,8
-mov $1,$0
-div $1,8
-sub $1,1
-mul $1,16
+div $0,8
+sub $0,1
+mul $0,16

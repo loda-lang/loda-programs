@@ -3,5 +3,4 @@
 
 add $0,4
 seq $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
-mov $1,$0
-sub $1,1
+sub $0,1

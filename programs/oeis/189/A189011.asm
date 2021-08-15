@@ -14,3 +14,4 @@ lpb $0
   trn $2,5
 lpe
 mod $1,2
+mov $0,$1

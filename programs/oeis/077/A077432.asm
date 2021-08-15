@@ -3,4 +3,3 @@
 
 seq $0,77431 ; n repeated in decimal representation, but separated by enough zeros that the square has the pattern (n^2)(2n^2)(n^2).
 pow $0,2
-mov $1,$0

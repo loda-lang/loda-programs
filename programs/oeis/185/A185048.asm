@@ -11,3 +11,4 @@ lpb $2
   add $2,1
   gcd $2,2
 lpe
+mov $0,$1

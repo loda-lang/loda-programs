@@ -20,5 +20,4 @@ gcd $4,2
 mul $4,2
 sub $0,$4
 add $0,6
-mov $1,$0
-div $1,2
+div $0,2

@@ -31,3 +31,4 @@ lpb $8
   add $7,13
   add $1,$7
 lpe
+mov $0,$1

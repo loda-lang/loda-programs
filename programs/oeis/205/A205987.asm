@@ -5,4 +5,3 @@ add $0,2
 mul $0,9
 sub $0,2
 seq $0,240025 ; Characteristic function of quarter squares, cf. A002620.
-mov $1,$0

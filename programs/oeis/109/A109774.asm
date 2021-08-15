@@ -9,3 +9,4 @@ lpe
 add $1,1
 pow $1,2
 div $1,6
+mov $0,$1

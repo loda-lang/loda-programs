@@ -3,4 +3,3 @@
 
 seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $1,$0

@@ -3,5 +3,5 @@
 
 seq $0,131326 ; Row sums of A131325.
 mov $1,$0
-div $0,3
-add $1,$0
+div $1,3
+add $0,$1

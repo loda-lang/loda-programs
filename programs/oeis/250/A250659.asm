@@ -6,6 +6,5 @@ add $0,7
 mul $0,8
 bin $0,2
 add $0,20
-mov $1,$0
-div $1,8
-sub $1,36
+div $0,8
+sub $0,36

@@ -32,3 +32,4 @@ lpb $8
 lpe
 div $1,3
 mul $1,2
+mov $0,$1

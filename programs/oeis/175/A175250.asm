@@ -3,4 +3,3 @@
 
 seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
-mov $1,$0

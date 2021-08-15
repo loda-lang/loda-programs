@@ -7,4 +7,3 @@ lpe
 bin $0,3
 bin $0,3
 mod $0,2
-mov $1,$0

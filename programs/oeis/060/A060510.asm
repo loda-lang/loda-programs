@@ -3,4 +3,3 @@
 
 seq $0,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
 mod $0,2
-mov $1,$0

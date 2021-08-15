@@ -7,3 +7,4 @@ lpb $0
   seq $2,71042 ; Number of 0's in n-th row of triangle in A070886.
   add $1,$2
 lpe
+mov $0,$1

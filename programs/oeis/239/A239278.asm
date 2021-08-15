@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,284723 ; Smallest odd prime that is relatively prime to n.
-mov $1,$0

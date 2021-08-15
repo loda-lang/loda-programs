@@ -3,3 +3,4 @@
 
 seq $0,48158 ; Triangular array T read by rows: T(n,k) = n mod k, for k=1,2,...,n, n=1,2,...
 pow $1,$0
+mov $0,$1

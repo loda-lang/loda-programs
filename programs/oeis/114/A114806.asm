@@ -7,3 +7,4 @@ lpb $2
   mul $1,$2
   trn $2,9
 lpe
+mov $0,$1

@@ -2,9 +2,9 @@
 ; 0,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,0,1,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1
 
 mov $1,$0
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-mov $2,$0
+seq $1,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+mov $2,$1
 cmp $2,0
-add $0,$2
-div $1,$0
-mod $1,2
+add $1,$2
+div $0,$1
+mod $0,2

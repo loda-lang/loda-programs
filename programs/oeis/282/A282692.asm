@@ -2,5 +2,4 @@
 ; 0,1,2,3,3,3,4,5,5,5,5,5,6,7,7
 
 seq $0,284359 ; Double triangle (2*n+2 terms by row). Every row is 2*n + 1 followed by 2*n + 1 times 2*n + 2.
-mov $1,$0
-sub $1,1
+sub $0,1

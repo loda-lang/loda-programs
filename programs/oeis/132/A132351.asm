@@ -11,3 +11,4 @@ lpb $2
   seq $0,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
   add $1,$0
 lpe
+mov $0,$1

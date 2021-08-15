@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,276833 ; Sum of mu(d)*phi(d) over divisors d of n.
-mov $1,$0

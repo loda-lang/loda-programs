@@ -4,5 +4,4 @@
 add $0,4
 seq $0,34586 ; Log_2 of dimension of an irreducible Z_2 graded H-module for Clifford algebra Cl_n.
 seq $0,110286 ; a(n) = 15*2^n.
-mov $1,$0
-div $1,60
+div $0,60

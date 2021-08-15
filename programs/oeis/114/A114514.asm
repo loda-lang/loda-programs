@@ -5,5 +5,4 @@ add $0,1
 mul $0,3
 pow $0,3
 dif $0,2
-mov $1,$0
-mod $1,10
+mod $0,10

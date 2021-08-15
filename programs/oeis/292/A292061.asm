@@ -3,7 +3,7 @@
 
 bin $0,2
 mov $1,$0
-bin $0,2
-mul $1,$0
-div $1,9
-mul $1,6
+bin $1,2
+mul $0,$1
+div $0,9
+mul $0,6

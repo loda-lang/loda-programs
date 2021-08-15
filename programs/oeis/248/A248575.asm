@@ -3,4 +3,3 @@
 
 seq $0,169711 ; The function W_n(6) (see Borwein et al. reference for definition).
 div $0,2
-mov $1,$0

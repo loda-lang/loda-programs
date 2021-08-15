@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,163305 ; Numerators of fractions in the approximation of the square root of 5 satisfying: a(n)= (a(n-1)+ c)/(a(n-1)+1); with c=5 and a(1)=0. Also product of the powers of two and five times the Fibonacci numbers.
-mov $1,$0
-div $1,10
+div $0,10

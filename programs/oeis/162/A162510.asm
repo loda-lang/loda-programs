@@ -4,3 +4,4 @@
 seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 mov $1,2
 pow $1,$0
+mov $0,$1

@@ -3,5 +3,4 @@
 
 add $0,3
 seq $0,77868 ; Expansion of (1-x)^(-1)/(1-x-x^3).
-mov $1,$0
-add $1,1
+add $0,1

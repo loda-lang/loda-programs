@@ -5,4 +5,3 @@ add $0,1
 pow $0,2
 mul $0,3
 seq $0,53186 ; Square excess of n: difference between n and largest square <= n.
-mov $1,$0

@@ -8,5 +8,4 @@ max $2,$0
 mod $2,$0
 mul $0,2
 trn $0,$2
-mov $1,$0
-add $1,4
+add $0,4

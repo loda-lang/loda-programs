@@ -9,3 +9,4 @@ lpb $0
   seq $2,272912 ; Difference sequence of the sequence A116470 of all distinct Fibonacci numbers and Lucas numbers (A000032).
   add $1,$2
 lpe
+mov $0,$1

@@ -4,4 +4,3 @@
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 seq $0,52925 ; Expansion of (2-6*x+4*x^2-x^3)/((1-x)*(1-3*x+x^2)).
 sub $0,1
-mov $1,$0

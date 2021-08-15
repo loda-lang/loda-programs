@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,3188 ; Decimal equivalent of Gray code for n.
-mov $1,$0

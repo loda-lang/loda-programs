@@ -3,5 +3,4 @@
 
 seq $0,175885 ; Numbers that are congruent to {1, 10} mod 11.
 pow $0,2
-mov $1,$0
-div $1,11
+div $0,11

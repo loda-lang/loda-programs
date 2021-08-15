@@ -3,4 +3,3 @@
 
 add $0,4
 seq $0,188044 ; a(n) = [n*r] - [k*r] - [n*r-k*r], where r=sqrt(2), k=4, [ ]=floor.
-add $1,$0

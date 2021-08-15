@@ -4,3 +4,4 @@
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 mov $1,2
 bin $1,$0
+mov $0,$1

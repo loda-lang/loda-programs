@@ -3,4 +3,3 @@
 
 seq $0,79904 ; Triangle read by rows: T(n, k) = n*k, 0<=k<=n.
 bin $0,3
-mov $1,$0

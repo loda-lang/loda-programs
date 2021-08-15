@@ -3,9 +3,8 @@
 
 sub $2,$0
 seq $0,268234 ; Partial sums of A047999.
-mov $1,$0
-add $1,2
+add $0,2
 add $2,2
-add $2,$1
-add $1,$2
-sub $1,7
+add $2,$0
+add $0,$2
+sub $0,7

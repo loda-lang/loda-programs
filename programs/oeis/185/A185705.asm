@@ -7,3 +7,4 @@ lpb $2
   mov $1,$0
   dif $2,10
 lpe
+mov $0,$1

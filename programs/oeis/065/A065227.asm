@@ -4,4 +4,3 @@
 add $0,1
 bin $0,2
 seq $0,124171 ; Sequence obtained by reading the triangles shown below by rows.
-mov $1,$0

@@ -7,3 +7,4 @@ lpb $0
   seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $1,$2
 lpe
+mov $0,$1

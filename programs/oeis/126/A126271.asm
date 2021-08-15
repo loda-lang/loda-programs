@@ -3,8 +3,7 @@
 
 seq $0,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
 pow $0,2
-mov $1,$0
-mod $1,11
-mod $1,2
-mul $1,16
-add $1,16
+mod $0,11
+mod $0,2
+mul $0,16
+add $0,16

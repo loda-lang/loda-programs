@@ -4,3 +4,4 @@
 seq $0,48724 ; Write n and 2n in binary and add them mod 2.
 add $1,$0
 div $1,2
+mov $0,$1

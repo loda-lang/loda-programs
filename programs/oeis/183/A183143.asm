@@ -10,3 +10,4 @@ lpb $3
   seq $0,97337 ; Integer part of the edge of a cube that has space-diagonal n.
   add $1,$0
 lpe
+mov $0,$1

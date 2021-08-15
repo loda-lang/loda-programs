@@ -11,3 +11,4 @@ lpb $0
   pow $0,$4
 lpe
 pow $1,$3
+mov $0,$1

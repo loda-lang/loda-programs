@@ -4,3 +4,4 @@
 seq $0,39834 ; a(n+2) = -a(n+1) + a(n) (signed Fibonacci numbers) with a(-2) = a(-1) = 1; or Fibonacci numbers (A000045) extended to negative indices.
 mov $1,2
 sub $1,$0
+mov $0,$1

@@ -3,5 +3,5 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mul $1,$0
+seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
+mul $0,$1

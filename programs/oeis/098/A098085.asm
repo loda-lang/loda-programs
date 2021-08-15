@@ -3,4 +3,3 @@
 
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 seq $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
-mov $1,$0

@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,85787 ; Generalized heptagonal numbers: m*(5*m - 3)/2, m = 0, +-1, +-2 +-3, ...
-mov $1,$0

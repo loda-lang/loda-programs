@@ -3,5 +3,4 @@
 
 add $0,22
 seq $0,45806 ; 6-ish numbers (end in 23, 27, 61, 89).
-mov $1,$0
-sub $1,550
+sub $0,550

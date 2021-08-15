@@ -7,4 +7,3 @@ mov $2,1
 add $2,$0
 seq $0,163590 ; Odd part of the swinging factorial A056040.
 mul $0,$2
-mov $1,$0

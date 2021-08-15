@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,23416 ; Number of 0's in binary expansion of n.
-mov $1,$0

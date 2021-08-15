@@ -7,3 +7,4 @@ lpb $0
   seq $2,100047 ; A Chebyshev transform of the Fibonacci numbers.
   add $1,$2
 lpe
+mov $0,$1

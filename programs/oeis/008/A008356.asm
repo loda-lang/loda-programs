@@ -8,3 +8,4 @@ lpb $0
   seq $2,8355 ; Coordination sequence for D_5 lattice.
   add $1,$2
 lpe
+mov $0,$1

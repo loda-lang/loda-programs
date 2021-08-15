@@ -8,3 +8,4 @@ lpb $0
   seq $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
   add $1,$2
 lpe
+mov $0,$1

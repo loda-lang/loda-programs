@@ -3,7 +3,7 @@
 
 seq $0,177228 ; A combinatorial differential triangle sequence:q=3;t=1/q;f(t,n)=d^n/dt^n*(t/(1+t); c(t.n,m)=(1/(1+t)*f(n,t)/(f(t,m)*f(t,(n-m))
 mov $1,$0
-lpb $0
-  add $1,1
-  trn $0,$1
+lpb $1
+  add $0,1
+  trn $1,$0
 lpe

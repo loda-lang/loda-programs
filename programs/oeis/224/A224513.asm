@@ -8,3 +8,4 @@ lpb $0
   seq $2,224512 ; Gray code variant of A147582.
   add $1,$2
 lpe
+mov $0,$1

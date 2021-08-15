@@ -17,3 +17,4 @@ lpb $2
   mul $2,$4
 lpe
 mul $1,$5
+mov $0,$1

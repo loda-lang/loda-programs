@@ -7,4 +7,3 @@ mul $0,$2
 mul $0,2
 seq $0,27656 ; Expansion of 1/(1-x^2)^2 (included only for completeness - the policy is always to omit the zeros from such sequences).
 sub $0,1
-mov $1,$0

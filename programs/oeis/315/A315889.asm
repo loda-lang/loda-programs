@@ -28,3 +28,4 @@ lpb $0
 lpe
 trn $1,6
 add $1,$4
+mov $0,$1

@@ -5,4 +5,3 @@ mov $2,$0
 add $0,1
 seq $2,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
 mod $0,$2
-mov $1,$0

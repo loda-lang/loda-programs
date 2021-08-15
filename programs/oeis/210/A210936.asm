@@ -3,5 +3,4 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
-mov $1,$0
-sub $1,2
+sub $0,2

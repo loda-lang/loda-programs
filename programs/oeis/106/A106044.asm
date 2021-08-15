@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,80883 ; Distance of n to next square.
-mov $1,$0

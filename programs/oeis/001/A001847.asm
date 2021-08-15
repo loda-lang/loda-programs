@@ -8,3 +8,4 @@ lpb $0
   seq $2,8413 ; Coordination sequence for 5-dimensional cubic lattice.
   add $1,$2
 lpe
+mov $0,$1

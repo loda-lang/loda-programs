@@ -4,4 +4,3 @@
 seq $0,2659 ; a(n) = 2*sigma(n) - 1.
 div $0,2
 seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-mov $1,$0

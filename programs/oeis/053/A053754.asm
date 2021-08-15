@@ -3,9 +3,9 @@
 
 mov $1,$0
 mov $2,1
-lpb $0
-  add $1,$2
+lpb $1
+  add $0,$2
   mul $2,2
-  trn $0,$2
+  trn $1,$2
   mul $2,2
 lpe

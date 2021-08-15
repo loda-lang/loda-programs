@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,47560 ; Numbers that are congruent to {0, 2, 3, 6, 7} mod 8.
 div $0,2
-mov $1,$0

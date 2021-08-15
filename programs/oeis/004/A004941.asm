@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,4961 ; a(n) = ceiling(n*phi^6), where phi is the golden ratio.
 div $0,2
-mov $1,$0

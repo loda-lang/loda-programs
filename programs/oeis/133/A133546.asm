@@ -11,3 +11,4 @@ lpb $0
 lpe
 add $2,3
 sub $1,$2
+mov $0,$1

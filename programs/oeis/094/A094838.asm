@@ -9,4 +9,3 @@ lpe
 add $0,2
 mul $0,6
 div $0,11
-mov $1,$0

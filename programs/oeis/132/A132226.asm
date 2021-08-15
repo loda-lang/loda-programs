@@ -5,3 +5,4 @@ seq $0,261693 ; Irregular triangle read by rows in which row n lists the positiv
 mov $1,3
 add $1,$0
 div $1,2
+mov $0,$1

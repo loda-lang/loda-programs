@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,24904 ; Numbers k such that 7*k - 5 is prime.
-mov $1,$0
-sub $1,4
-mul $1,7
-add $1,23
+sub $0,4
+mul $0,7
+add $0,23

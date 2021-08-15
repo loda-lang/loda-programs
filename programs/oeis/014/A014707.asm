@@ -8,5 +8,4 @@ lpe
 lpb $0
   mod $0,4
 lpe
-mov $1,$0
-div $1,2
+div $0,2

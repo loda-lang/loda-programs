@@ -10,3 +10,4 @@ lpb $2
   seq $0,55640 ; Number of nonzero digits in decimal expansion of n.
   add $1,$0
 lpe
+mov $0,$1

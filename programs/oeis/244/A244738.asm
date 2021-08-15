@@ -4,4 +4,3 @@
 seq $0,40 ; The prime numbers.
 mod $0,5
 mod $0,3
-mov $1,$0

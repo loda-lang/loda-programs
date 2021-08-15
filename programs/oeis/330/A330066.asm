@@ -5,6 +5,5 @@ mov $2,$0
 add $0,3
 seq $0,109237 ; a(n) = floor(n*coth(1)).
 div $0,2
-mov $1,$0
-sub $1,1
-add $1,$2
+sub $0,1
+add $0,$2

@@ -4,6 +4,5 @@
 add $0,1
 mod $0,13
 mod $0,3
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

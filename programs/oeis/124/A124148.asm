@@ -5,4 +5,3 @@ seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration o
 seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
 add $0,1
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mov $1,$0

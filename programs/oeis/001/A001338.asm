@@ -8,3 +8,4 @@ lpb $0
   seq $1,2104 ; Logarithmic numbers.
 lpe
 sub $1,1
+mov $0,$1

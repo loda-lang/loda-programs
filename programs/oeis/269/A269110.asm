@@ -7,3 +7,4 @@ lpb $0
   seq $1,101881 ; Write two numbers, skip one, write two, skip two, write two, skip three ... and so on.
 lpe
 add $1,1
+mov $0,$1

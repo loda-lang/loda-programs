@@ -7,3 +7,4 @@ lpb $0
   seq $2,17898 ; Expansion of (1-x)/(1-x-x^4).
   add $1,$2
 lpe
+mov $0,$1

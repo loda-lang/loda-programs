@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $0,$2
 seq $0,319528 ; a(n) = 8 * sigma(n).
-mov $1,$0
-div $1,8
+div $0,8

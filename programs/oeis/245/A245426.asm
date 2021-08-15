@@ -58,3 +58,4 @@ lpb $2
   mul $3,7
   add $1,$3
 lpe
+mov $0,$1

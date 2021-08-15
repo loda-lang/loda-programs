@@ -5,6 +5,5 @@ seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
 mul $0,6
 sub $0,2
-mov $1,$0
-pow $1,2
-div $1,12
+pow $0,2
+div $0,12

@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,261423 ; Largest palindrome <= n.
-mov $1,$0

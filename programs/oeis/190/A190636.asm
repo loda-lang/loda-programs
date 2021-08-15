@@ -3,11 +3,11 @@
 
 add $0,1
 mov $1,$0
-mul $0,2
-mul $0,$1
-mul $0,$1
+mul $1,2
 mul $1,$0
-mul $1,3
-add $1,2
 mul $1,$0
-div $1,16
+mul $0,$1
+mul $0,3
+add $0,2
+mul $0,$1
+div $0,16

@@ -12,3 +12,4 @@ lpb $3
   seq $0,91703 ; Count, setting 5n to zero.
   add $1,$0
 lpe
+mov $0,$1

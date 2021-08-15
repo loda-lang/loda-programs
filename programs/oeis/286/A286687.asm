@@ -5,5 +5,4 @@ mov $2,$0
 seq $0,80764 ; First differences of A049472, floor(n/sqrt(2)).
 mul $2,2
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

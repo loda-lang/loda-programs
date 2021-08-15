@@ -6,4 +6,3 @@ lpb $0
   dif $0,2
   dif $0,3
 lpe
-mov $1,$0

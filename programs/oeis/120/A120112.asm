@@ -4,3 +4,4 @@
 seq $0,20500 ; Cyclotomic polynomials at x=1.
 mov $1,1
 sub $1,$0
+mov $0,$1

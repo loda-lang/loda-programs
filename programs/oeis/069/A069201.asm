@@ -8,3 +8,4 @@ lpb $0
   seq $2,74823 ; a(n) = 2^omega(n)*mu(n)^2.
   add $1,$2
 lpe
+mov $0,$1

@@ -5,5 +5,4 @@ mov $2,$0
 add $0,1
 seq $0,188190 ; Positions of 0 in A188189; complement of A188191.
 seq $0,57363 ; a(n) = floor(8*n/13).
-mov $1,$0
-add $1,$2
+add $0,$2

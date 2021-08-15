@@ -3,4 +3,3 @@
 
 div $0,2
 seq $0,14137 ; Partial sums of Catalan numbers (A000108).
-mov $1,$0

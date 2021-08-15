@@ -10,3 +10,4 @@ lpb $0
   seq $1,70369 ; a(n) = 5^n mod 14.
 lpe
 div $1,2
+mov $0,$1

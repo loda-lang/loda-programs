@@ -4,3 +4,4 @@
 mov $1,3
 pow $1,$0
 seq $1,7092 ; Numbers in base 6.
+mov $0,$1

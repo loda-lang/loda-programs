@@ -8,5 +8,4 @@ lpe
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,8833 ; Largest square dividing n.
 min $0,2
-mov $1,$0
-mod $1,2
+mod $0,2

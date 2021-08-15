@@ -4,3 +4,4 @@
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
 sub $0,3
 sub $1,$0
+mov $0,$1

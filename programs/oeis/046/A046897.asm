@@ -3,5 +3,4 @@
 
 seq $0,259445 ; Multiplicative with a(n) = n if n is odd and a(2^s)=2.
 seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
-mov $1,$0
-add $1,1
+add $0,1

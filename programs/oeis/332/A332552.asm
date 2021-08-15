@@ -22,3 +22,4 @@ lpb $0
   sub $2,$3
   trn $3,8
 lpe
+mov $0,$1

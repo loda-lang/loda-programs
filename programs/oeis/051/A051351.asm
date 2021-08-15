@@ -8,3 +8,4 @@ lpb $0
   seq $2,7605 ; Sum of digits of n-th prime.
   add $1,$2
 lpe
+mov $0,$1

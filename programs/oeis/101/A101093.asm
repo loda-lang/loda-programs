@@ -8,3 +8,4 @@ lpb $0
   seq $2,540 ; Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6.
   add $1,$2
 lpe
+mov $0,$1

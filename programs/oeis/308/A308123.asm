@@ -6,4 +6,3 @@ seq $0,59169 ; Number of partitions of n into 3 parts which form the sides of a 
 mov $2,$3
 add $2,1
 mul $0,$2
-mov $1,$0

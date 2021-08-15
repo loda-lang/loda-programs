@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,5712 ; Coefficient of x^4 in expansion of (1+x+x^2)^n.
 sub $0,$2
-mov $1,$0
-sub $1,2
+sub $0,2

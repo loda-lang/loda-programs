@@ -3,4 +3,3 @@
 
 seq $0,79 ; Powers of 2: a(n) = 2^n.
 seq $0,1399 ; a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.
-mov $1,$0

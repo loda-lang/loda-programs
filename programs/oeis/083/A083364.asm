@@ -13,6 +13,5 @@ add $5,1
 sub $4,$5
 mul $4,$5
 mul $0,$4
-mov $1,$0
-add $1,1
-add $1,$2
+add $0,1
+add $0,$2

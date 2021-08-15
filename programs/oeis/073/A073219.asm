@@ -4,7 +4,6 @@
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
 seq $0,32931 ; Numbers whose set of base 11 digits is {1,2}.
-mov $1,$0
-div $1,121
-mul $1,5
-add $1,1
+div $0,121
+mul $0,5
+add $0,1

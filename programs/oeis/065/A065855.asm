@@ -7,3 +7,4 @@ mov $2,$1
 seq $2,33270 ; Number of odd primes <= n.
 sub $1,$2
 sub $1,1
+mov $0,$1

@@ -6,3 +6,4 @@ add $0,1
 seq $0,96457 ; If n is prime replace n with the next prime.
 add $1,$0
 sub $1,2
+mov $0,$1

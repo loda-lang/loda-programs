@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,32615 ; a(n) = floor(n/Pi).
-mov $1,$0
-add $1,1
+add $0,1

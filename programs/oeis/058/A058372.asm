@@ -4,3 +4,4 @@
 seq $0,145067 ; Zero followed by partial sums of A008865.
 sub $1,$0
 add $1,2
+mov $0,$1

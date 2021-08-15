@@ -3,6 +3,5 @@
 
 trn $0,2
 seq $0,74331 ; a(n) = Fibonacci(n+1) - (1 + (-1)^n)/2.
-mov $1,$0
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

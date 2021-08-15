@@ -3,23 +3,23 @@
 
 mov $1,$0
 mov $2,$0
-lpb $0
-  sub $2,$1
-  add $1,$0
-  sub $0,1
-  add $1,2
+lpb $1
+  sub $2,$0
+  add $0,$1
+  add $0,2
+  sub $1,1
   mov $3,1
   sub $3,$2
   mov $2,$3
 lpe
-trn $0,1
-add $0,2
+trn $1,1
+add $1,2
 mul $3,2
 mov $4,2
 add $4,$3
-add $0,$4
-mul $0,2
-mov $1,$0
-sub $1,8
-div $1,4
-add $1,1
+add $1,$4
+mul $1,2
+mov $0,$1
+sub $0,8
+div $0,4
+add $0,1

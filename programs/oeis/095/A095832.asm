@@ -9,3 +9,4 @@ lpe
 add $1,$2
 bin $1,2
 mul $1,2
+mov $0,$1

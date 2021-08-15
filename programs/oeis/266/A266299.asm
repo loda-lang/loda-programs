@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,3953 ; Expansion of g.f.: (1+x)/(1-10*x).
-mov $1,$0

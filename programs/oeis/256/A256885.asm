@@ -11,3 +11,4 @@ lpb $2
   seq $0,14684 ; In the sequence of positive integers subtract 1 from each prime number.
   add $1,$0
 lpe
+mov $0,$1

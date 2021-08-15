@@ -4,4 +4,3 @@
 seq $0,24675 ; Average of two consecutive odd primes.
 sub $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $1,$0

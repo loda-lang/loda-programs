@@ -7,3 +7,4 @@ lpb $0
   seq $1,90368 ; a(1) = 1; for n>1, smallest divisor > 1 of 2n-1.
   div $0,$1
 lpe
+mov $0,$1

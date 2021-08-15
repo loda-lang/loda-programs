@@ -4,5 +4,4 @@
 seq $0,97538 ; Subtract 2 from primes == 3 (mod 4).
 add $0,1
 seq $0,40976 ; a(n) = prime(n) - 2.
-mov $1,$0
-add $1,2
+add $0,2

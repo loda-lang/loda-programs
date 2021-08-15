@@ -26,3 +26,4 @@ lpb $3
   add $2,6
   sub $3,1
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,7956 ; Product of proper divisors of n.
 pow $0,2
-mov $1,$0

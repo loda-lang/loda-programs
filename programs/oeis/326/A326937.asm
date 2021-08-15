@@ -3,4 +3,3 @@
 
 seq $0,55615 ; a(n) = n*moebius(n) (cf. A008683).
 dif $0,2
-mov $1,$0

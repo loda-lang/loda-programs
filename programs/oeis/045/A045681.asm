@@ -4,15 +4,15 @@
 mov $3,$0
 add $0,1
 mov $1,$0
-div $0,3
-div $1,2
+div $0,2
+div $1,3
 mov $2,24
-lpb $0
-  sub $0,5
-  trn $0,1
-  sub $1,1
+lpb $1
+  sub $0,1
+  sub $1,5
+  trn $1,1
 lpe
-add $1,$2
-div $1,2
-sub $1,12
-add $1,$3
+add $0,$2
+div $0,2
+sub $0,12
+add $0,$3

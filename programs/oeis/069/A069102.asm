@@ -5,5 +5,4 @@ seq $0,76273 ; a(0) = 1, a(1) = 2; for n>1, a(n) = prime(n)+prime(n-1)-1.
 lpb $0
   bin $0,3
 lpe
-mov $1,$0
-add $1,1
+add $0,1

@@ -8,3 +8,4 @@ lpb $0
   seq $2,50997 ; Fifth powers of primes.
   add $1,$2
 lpe
+mov $0,$1

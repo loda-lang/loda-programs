@@ -4,5 +4,4 @@
 mov $2,$0
 seq $0,128634 ; Number of parallel permutations of length n.
 sub $0,$2
-mov $1,$0
-add $1,1
+add $0,1

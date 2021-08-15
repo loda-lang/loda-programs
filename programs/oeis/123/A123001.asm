@@ -3,5 +3,4 @@
 
 seq $0,4754 ; Numbers n whose binary expansion starts 10.
 seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
-mov $1,$0
-div $1,6
+div $0,6

@@ -6,3 +6,4 @@ lpb $0
   sub $0,1
   seq $1,94761 ; a(n) = n + (square excess of n).
 lpe
+mov $0,$1

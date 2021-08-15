@@ -6,7 +6,8 @@ add $0,1
 mov $2,$0
 mov $1,1
 lpb $0
-  mul $1,8   ; Raise 8 to the n'th power
-  mod $1,$2  ; For every raise, modulo with n
+  mul $1,8 ; Raise 8 to the n'th power
+  mod $1,$2 ; For every raise, modulo with n
   sub $0,1
 lpe
+mov $0,$1

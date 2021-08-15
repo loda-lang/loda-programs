@@ -5,11 +5,11 @@ mul $0,2
 max $0,1
 seq $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
-seq $0,55642 ; Number of digits in decimal expansion of n.
-seq $1,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mov $2,$1
-div $1,$0
-mod $2,$0
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+seq $1,55642 ; Number of digits in decimal expansion of n.
+mov $2,$0
+div $0,$1
+mod $2,$1
 cmp $2,0
 cmp $2,0
-add $1,$2
+add $0,$2

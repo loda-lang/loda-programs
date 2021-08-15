@@ -4,3 +4,4 @@
 seq $0,2821 ; a(n) = nearest integer to n^(3/2).
 add $1,$0
 pow $1,2
+mov $0,$1

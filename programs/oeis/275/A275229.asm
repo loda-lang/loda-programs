@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,208044 ; Number of n X 3 0..3 arrays with new values 0..3 introduced in row major order and no element equal to any horizontal, vertical or antidiagonal neighbor (colorings ignoring permutations of colors).
-mov $1,$0
-div $1,4
+div $0,4

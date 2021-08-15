@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,91000 ; Number of closed walks of length n on the Petersen graph.
-mov $1,$0
-div $1,2
+div $0,2

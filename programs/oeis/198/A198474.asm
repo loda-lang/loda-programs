@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,26597 ; Expansion of (1+x)/(1-x-4*x^2).
 mul $0,2
-mov $1,$0

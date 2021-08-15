@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,120880 ; G.f. satisfies: A(x) = A(x^3)*(1 + 2*x + x^2); thus a(n) = 2^A062756(n), where A062756(n) is the number of 1's in the ternary expansion of n.
 div $0,2
-mov $1,$0

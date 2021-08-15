@@ -6,3 +6,4 @@ mul $1,$0
 seq $1,22320 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 6.
 div $1,2
 add $1,1
+mov $0,$1

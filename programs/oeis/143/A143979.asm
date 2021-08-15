@@ -3,4 +3,3 @@
 
 seq $0,98352 ; Multiplication table of the even numbers read by antidiagonals.
 div $0,6
-mov $1,$0

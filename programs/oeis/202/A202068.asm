@@ -7,6 +7,5 @@ lpb $0
 lpe
 add $0,2
 pow $0,2
-mov $1,$0
-sub $1,3
-mod $1,10
+sub $0,3
+mod $0,10

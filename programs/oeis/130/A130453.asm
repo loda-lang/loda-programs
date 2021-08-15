@@ -3,6 +3,5 @@
 
 seq $0,128219 ; A000012 * A127701. a(1) = 1, a(2) = 2, a(3) = 2; by rows, n-1 terms of 2, 3, 4...followed by "n".
 seq $0,304517 ; a(n) = 16*2^n - 11 (n>=1).
-mov $1,$0
-div $1,64
-add $1,1
+div $0,64
+add $0,1

@@ -3,5 +3,4 @@
 
 seq $0,92242 ; Numbers that are congruent to {5, 7} mod 12.
 pow $0,2
-mov $1,$0
-div $1,24
+div $0,24

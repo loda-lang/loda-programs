@@ -3,5 +3,4 @@
 
 seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
-mov $1,$0
-sub $1,2
+sub $0,2

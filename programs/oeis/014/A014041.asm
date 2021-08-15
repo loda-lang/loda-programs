@@ -3,4 +3,3 @@
 
 dif $0,2
 seq $0,14025 ; Expansion of the inverse of the 16th cyclotomic polynomial.
-mov $1,$0

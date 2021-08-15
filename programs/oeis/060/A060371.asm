@@ -3,6 +3,5 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,1
-mov $1,$0
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-add $1,1
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+add $0,1

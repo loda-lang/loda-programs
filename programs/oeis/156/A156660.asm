@@ -6,4 +6,3 @@ seq $0,292936 ; a(n) = the least k >= 0 such that floor(n/(2^k)) is a nonprime; 
 sub $0,1
 min $0,1
 max $0,0
-mov $1,$0

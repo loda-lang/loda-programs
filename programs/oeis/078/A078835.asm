@@ -3,5 +3,4 @@
 
 seq $0,24675 ; Average of two consecutive odd primes.
 seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
-mov $1,$0
-add $1,1
+add $0,1

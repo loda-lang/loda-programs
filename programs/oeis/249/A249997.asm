@@ -7,3 +7,4 @@ seq $1,53404 ; Expansion of 1/((1+3*x)*(1-4*x)).
 sub $1,13
 div $1,12
 add $1,1
+mov $0,$1

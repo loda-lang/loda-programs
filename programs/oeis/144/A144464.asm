@@ -5,3 +5,4 @@ seq $0,157454 ; Triangle read by rows: T(n, m) = min(2*m - 1, 2*(n - m) + 1).
 div $0,2
 mov $1,2
 pow $1,$0
+mov $0,$1

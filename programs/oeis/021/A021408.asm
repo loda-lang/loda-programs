@@ -6,3 +6,4 @@ lpb $0
   mod $0,2
   seq $1,135537 ; Period 4: repeat [7, 5, 2, 4].
 lpe
+mov $0,$1

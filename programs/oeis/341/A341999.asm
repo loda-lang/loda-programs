@@ -4,7 +4,6 @@
 lpb $0
   seq $0,258644 ; Fourth arithmetic derivative of n.
 lpe
-mov $1,$0
-add $1,$0
-trn $1,1
-mod $1,2
+mul $0,2
+trn $0,1
+mod $0,2

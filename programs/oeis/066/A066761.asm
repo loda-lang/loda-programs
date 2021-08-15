@@ -20,3 +20,4 @@ lpb $0
   lpe
 lpe
 div $1,50
+mov $0,$1

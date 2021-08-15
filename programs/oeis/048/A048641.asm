@@ -7,3 +7,4 @@ lpb $0
   seq $2,3188 ; Decimal equivalent of Gray code for n.
   add $1,$2
 lpe
+mov $0,$1

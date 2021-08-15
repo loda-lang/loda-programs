@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,343720 ; Triangle read by rows: T(n,k) = k^2 mod n for k = 0..n-1, n >= 1.
-mov $1,$0

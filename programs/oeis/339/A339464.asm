@@ -8,4 +8,3 @@ min $2,1
 sub $0,$2
 sub $0,1
 seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
-mov $1,$0

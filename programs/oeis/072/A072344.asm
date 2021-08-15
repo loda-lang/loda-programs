@@ -4,4 +4,3 @@
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,1
 seq $0,34693 ; Smallest k such that k*n+1 is prime.
-mov $1,$0

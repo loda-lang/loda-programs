@@ -3,5 +3,4 @@
 
 add $0,15
 seq $0,184551 ; Super-birthdays (falling on the same weekday), version 3 (birth within 2 and 3 years after a February 29).
-mov $1,$0
-sub $1,106
+sub $0,106

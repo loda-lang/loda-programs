@@ -7,3 +7,4 @@ lpb $0
   seq $2,8724 ; a(n) = floor(n^2/12).
   add $1,$2
 lpe
+mov $0,$1

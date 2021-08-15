@@ -7,5 +7,4 @@ lpb $1
   gcd $1,$0
   add $0,3
 lpe
-mov $1,$0
-div $1,2
+div $0,2

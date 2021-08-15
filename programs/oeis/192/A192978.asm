@@ -8,3 +8,4 @@ lpb $0
   seq $2,27181 ; a(n) = Lucas(n+4) - 2*(n+3).
   add $1,$2
 lpe
+mov $0,$1

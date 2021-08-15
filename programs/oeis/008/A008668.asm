@@ -19,3 +19,4 @@ lpb $3
   div $6,16
   add $1,$6
 lpe
+mov $0,$1

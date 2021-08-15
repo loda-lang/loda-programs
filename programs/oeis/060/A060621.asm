@@ -7,6 +7,5 @@ pow $1,$0
 bin $0,2
 sub $0,3
 mul $0,$1
-mov $1,$0
-div $1,256
-mul $1,4
+div $0,256
+mul $0,4

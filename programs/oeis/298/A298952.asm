@@ -10,3 +10,4 @@ lpb $0
 lpe
 gcd $2,2
 mod $1,$2
+mov $0,$1

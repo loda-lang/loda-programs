@@ -4,5 +4,4 @@
 add $0,1
 mod $0,12
 seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
-mov $1,$0
-mod $1,10
+mod $0,10

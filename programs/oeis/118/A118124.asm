@@ -4,5 +4,4 @@
 seq $0,131421 ; Triangle read by rows (n>=1, 1<=k<=n): T(n,k) = 2*(n+k) - 3.
 pow $0,2
 div $0,4
-mov $1,$0
-add $1,41
+add $0,41

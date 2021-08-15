@@ -6,6 +6,5 @@ sub $0,1
 seq $0,40 ; The prime numbers.
 seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mov $1,$0
-mul $1,2
-add $1,2
+mul $0,2
+add $0,2

@@ -3,6 +3,5 @@
 
 trn $0,1
 seq $0,123567 ; Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
-mov $1,$0
-sub $1,3
-div $1,2
+sub $0,3
+div $0,2

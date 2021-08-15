@@ -5,13 +5,11 @@
 mov $2,3
 pow $2,$0
 ; Now $2 holds 3^n
-
 mov $1,$0
-min $1,1
+min $0,1
 ; If n == 0 then use 0 else use 1.
-
-lpb $0
-  mul $1,5   ; Raise 5 to the n'th power
-  mod $1,$2  ; For every raise, modulo with 3^n
-  sub $0,1
+lpb $1
+  mul $0,5 ; Raise 5 to the n'th power
+  mod $0,$2 ; For every raise, modulo with 3^n
+  sub $1,1
 lpe

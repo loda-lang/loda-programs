@@ -7,3 +7,4 @@ seq $0,166118 ; Fixed points of the mapping f(x) = (x + 2^x) mod (17 + x).
 add $1,$0
 add $1,$2
 sub $1,3
+mov $0,$1

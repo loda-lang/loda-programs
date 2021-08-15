@@ -4,8 +4,8 @@
 seq $0,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
 sub $0,1
 mov $1,$0
-trn $0,1
-seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,1
-max $1,$0
-add $1,1
+trn $1,1
+seq $1,6005 ; The odd prime numbers together with 1.
+sub $1,1
+max $0,$1
+add $0,1

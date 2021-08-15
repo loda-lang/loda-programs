@@ -3,4 +3,3 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,55947 ; n - reversal of base 3 digits of n (written in base 10).
-mov $1,$0

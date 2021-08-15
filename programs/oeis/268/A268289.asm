@@ -7,3 +7,4 @@ lpb $0
   seq $2,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   add $1,$2
 lpe
+mov $0,$1

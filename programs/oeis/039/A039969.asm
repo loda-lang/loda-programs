@@ -4,4 +4,3 @@
 add $0,1
 seq $0,132328 ; a(n) = Product_{k>0} (1+floor(n/3^k)).
 mod $0,3
-mov $1,$0

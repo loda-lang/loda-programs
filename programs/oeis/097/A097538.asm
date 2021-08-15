@@ -19,3 +19,4 @@ lpe
 div $1,4
 mul $1,4
 sub $1,3
+mov $0,$1

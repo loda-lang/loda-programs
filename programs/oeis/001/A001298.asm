@@ -8,3 +8,4 @@ lpb $0
   seq $2,259455 ; n Sum_n Sum_n Sum_n.
   add $1,$2
 lpe
+mov $0,$1

@@ -5,9 +5,8 @@ pow $0,2
 mov $2,$0
 mov $3,$0
 pow $0,2
-mov $1,$0
 pow $2,2
 sub $2,$3
 mul $3,$2
-mul $1,$3
-add $1,$3
+mul $0,$3
+add $0,$3

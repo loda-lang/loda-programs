@@ -3,4 +3,3 @@
 
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $1,$0

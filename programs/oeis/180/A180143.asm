@@ -4,4 +4,3 @@
 seq $0,7482 ; a(n) is the number of subsequences of [ 1, ..., 2n ] in which each odd number has an even neighbor.
 mul $0,3
 div $0,2
-mov $1,$0

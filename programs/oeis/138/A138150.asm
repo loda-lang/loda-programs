@@ -4,3 +4,4 @@
 seq $0,83375 ; n appears prime(n) times.
 mod $0,2
 bin $1,$0
+mov $0,$1

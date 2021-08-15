@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,40620 ; Continued fraction for sqrt(646).
 mod $2,2
 sub $0,$2
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,277097 ; a(n) = 5 - (prime(n) mod 10).
 mod $0,-3
-mov $1,$0

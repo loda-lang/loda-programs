@@ -4,4 +4,3 @@
 seq $0,176270 ; Triangle T(n,m) = 1 + m*(m-n) read by rows, 0 <= m <= n.
 mul $0,3
 sub $0,2
-mov $1,$0

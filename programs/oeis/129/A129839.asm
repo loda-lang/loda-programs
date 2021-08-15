@@ -3,4 +3,3 @@
 
 seq $0,392 ; Stirling numbers of second kind S(n,3).
 pow $0,2
-mov $1,$0

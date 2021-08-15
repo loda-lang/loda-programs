@@ -3,8 +3,8 @@
 
 add $0,1
 mov $1,$0
-add $1,$0
-seq $0,134287 ; Fifth column of triangle A103371 (without leading zeros).
-mul $0,$1
-mov $1,$0
-div $1,60
+mul $0,2
+seq $1,134287 ; Fifth column of triangle A103371 (without leading zeros).
+mul $1,$0
+mov $0,$1
+div $0,60

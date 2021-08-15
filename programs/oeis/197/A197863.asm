@@ -6,4 +6,3 @@ mov $2,$0
 sub $0,1
 seq $0,55231 ; Powerfree part of n: product of primes that divide n only once.
 mul $0,$2
-mov $1,$0

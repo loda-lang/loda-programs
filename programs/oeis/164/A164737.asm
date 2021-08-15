@@ -4,4 +4,3 @@
 mul $0,3
 seq $0,238549 ; a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
 add $0,4
-mov $1,$0

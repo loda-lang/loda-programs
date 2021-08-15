@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,80951 ; Sequence associated with recurrence a(n) = 2*a(n-1) + k*(k+2)*a(n-2).
-mov $1,$0

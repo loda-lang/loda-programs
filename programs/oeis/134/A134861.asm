@@ -7,5 +7,4 @@ seq $0,130568 ; Generalized Beatty sequence 1+2*floor(n*phi), which contains inf
 add $0,$2
 mul $0,55
 div $0,34
-mov $1,$0
-sub $1,4
+sub $0,4

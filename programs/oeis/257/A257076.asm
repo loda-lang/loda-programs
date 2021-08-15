@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,109265 ; Row sums of Riordan array (1-x-x^2,x(1-x)).
-mov $1,$0

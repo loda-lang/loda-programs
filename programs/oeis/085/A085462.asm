@@ -6,5 +6,4 @@ add $2,1
 mul $2,2
 add $0,$2
 seq $0,5585 ; 5-dimensional pyramidal numbers: n(n+1)(n+2)(n+3)(2n+3)/5!.
-mov $1,$0
-div $1,27
+div $0,27

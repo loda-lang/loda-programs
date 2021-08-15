@@ -8,3 +8,4 @@ lpb $0
   seq $2,59502 ; a(n) = (3*n*F(2n-1) + (3-n)*F(2n))/5 where F() = Fibonacci numbers A000045.
   add $1,$2
 lpe
+mov $0,$1

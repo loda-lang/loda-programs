@@ -4,5 +4,4 @@
 seq $0,40 ; The prime numbers.
 mul $0,3
 seq $0,59132 ; A hierarchical sequence (W2{2}c - see A059126).
-mov $1,$0
-div $1,6
+div $0,6

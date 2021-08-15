@@ -6,3 +6,4 @@ seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
 mov $1,1
 sub $2,$0
 add $1,$2
+mov $0,$1

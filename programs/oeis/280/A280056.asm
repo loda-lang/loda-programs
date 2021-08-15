@@ -8,6 +8,5 @@ bin $0,2
 mov $2,$3
 div $2,2
 mul $0,$2
-mov $1,$0
-div $1,4
-mul $1,8
+div $0,4
+mul $0,8

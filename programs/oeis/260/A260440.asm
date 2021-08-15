@@ -4,10 +4,9 @@
 mul $0,21
 div $0,2
 add $0,1
-mov $1,$0
-mul $1,6
-div $1,4
-mul $1,12
-sub $1,12
-div $1,6
-add $1,27
+mul $0,6
+div $0,4
+mul $0,12
+sub $0,12
+div $0,6
+add $0,27

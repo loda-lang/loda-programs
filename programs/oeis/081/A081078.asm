@@ -3,7 +3,6 @@
 
 seq $0,25169 ; a(n) = 2*Fibonacci(2*n+2).
 pow $0,2
-mov $1,$0
-div $1,4
-mul $1,5
-sub $1,1
+div $0,4
+mul $0,5
+sub $0,1

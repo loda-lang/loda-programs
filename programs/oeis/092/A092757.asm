@@ -7,3 +7,4 @@ lpb $0
   seq $2,4257 ; a(n) = round(log_2(n)).
   add $1,$2
 lpe
+mov $0,$1

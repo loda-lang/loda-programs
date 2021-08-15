@@ -1,7 +1,6 @@
 ; A133201: A133195/3.
 ; 0,1,2,3,13,23,33,133,233,333,1333,2333,3333,13333,23333,33333,133333,233333,333333,1333333,2333333,3333333,13333333,23333333,33333333,133333333,233333333,333333333,1333333333,2333333333,3333333333
 
-mov $1,3
-mul $1,$0
-seq $1,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
-div $1,3
+mul $0,3
+seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
+div $0,3

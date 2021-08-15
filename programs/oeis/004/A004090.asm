@@ -3,4 +3,3 @@
 
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-mov $1,$0

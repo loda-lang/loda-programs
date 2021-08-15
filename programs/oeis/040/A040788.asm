@@ -7,8 +7,8 @@ mul $0,90
 div $0,72
 seq $0,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
 mov $1,$0
-lpb $0
-  trn $0,7
-  add $1,2
+lpb $1
+  add $0,2
+  trn $1,7
 lpe
-sub $1,3
+sub $0,3

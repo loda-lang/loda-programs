@@ -3,5 +3,4 @@
 
 seq $0,33138 ; a(n) = floor(2^(n+2)/7).
 seq $0,245710 ; Number of nonzero evil numbers <= n, see A001969.
-mov $1,$0
-add $1,1
+add $0,1

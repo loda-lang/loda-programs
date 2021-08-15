@@ -7,3 +7,4 @@ lpb $0
   seq $0,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
   mul $0,$1
 lpe
+mov $0,$1

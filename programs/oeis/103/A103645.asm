@@ -3,4 +3,3 @@
 
 seq $0,131040 ; a(n) = (1/2+1/2*i*sqrt(11))^n + (1/2-1/2*i*sqrt(11))^n, where i=sqrt(-1).
 pow $0,2
-mov $1,$0

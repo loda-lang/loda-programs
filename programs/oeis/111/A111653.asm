@@ -3,4 +3,3 @@
 
 seq $0,3056 ; n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
-mov $1,$0

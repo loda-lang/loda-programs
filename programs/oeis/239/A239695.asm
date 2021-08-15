@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,53830 ; Sum of digits of (n written in base 9).
-mov $1,$0

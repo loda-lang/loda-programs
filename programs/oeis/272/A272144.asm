@@ -7,3 +7,4 @@ lpb $0
   seq $2,295 ; Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018).
   add $1,$2
 lpe
+mov $0,$1

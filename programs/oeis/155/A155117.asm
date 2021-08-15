@@ -4,6 +4,5 @@
 seq $0,57087 ; Scaled Chebyshev U-polynomials evaluated at i. Generalized Fibonacci sequence.
 mul $0,3
 sub $0,1
-mov $1,$0
-div $1,4
-add $1,1
+div $0,4
+add $0,1

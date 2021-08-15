@@ -7,5 +7,4 @@ seq $0,285958 ; Positions of 0 in A285957; complement of A285959.
 sub $0,4084
 sub $2,84360
 sub $0,$2
-mov $1,$0
-sub $1,80276
+sub $0,80276

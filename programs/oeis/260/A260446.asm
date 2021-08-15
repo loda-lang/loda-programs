@@ -5,5 +5,4 @@ lpb $0
   seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
   sub $0,2
 lpe
-mov $1,$0
-mod $1,2
+mod $0,2

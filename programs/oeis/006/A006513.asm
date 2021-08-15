@@ -10,6 +10,5 @@ lpb $3
   sub $0,$2
   trn $3,3
 lpe
-mov $1,$0
-mod $1,2
-add $1,1
+mod $0,2
+add $0,1

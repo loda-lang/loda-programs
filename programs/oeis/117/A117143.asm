@@ -3,14 +3,14 @@
 
 mov $1,$0
 mov $3,$0
-lpb $0
-  sub $0,2
-  add $1,$0
-  mov $2,$0
+lpb $1
+  sub $1,2
+  add $0,$1
+  mov $2,$1
   max $2,0
   seq $2,87278 ; Distance to nearest square is not greater than 1.
-  add $1,$2
+  add $0,$2
 lpe
-add $1,$3
-div $1,2
-add $1,1
+add $0,$3
+div $0,2
+add $0,1

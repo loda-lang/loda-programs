@@ -6,4 +6,3 @@ add $0,1
 seq $0,48589 ; Pisot sequence L(7,9).
 sub $0,8
 sub $0,$2
-mov $1,$0

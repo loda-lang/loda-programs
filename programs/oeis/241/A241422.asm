@@ -3,5 +3,4 @@
 
 add $0,100
 seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
-mov $1,$0
-mod $1,2
+mod $0,2

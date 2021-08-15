@@ -5,5 +5,4 @@ seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 seq $0,13636 ; n*nextprime(n).
 mul $0,6
 div $0,110
-mov $1,$0
-add $1,1
+add $0,1

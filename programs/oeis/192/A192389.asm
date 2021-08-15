@@ -7,3 +7,4 @@ lpb $0
   seq $2,192953 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
   add $1,$2
 lpe
+mov $0,$1

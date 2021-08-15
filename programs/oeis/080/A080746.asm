@@ -7,4 +7,3 @@ lpb $0
   mul $0,6
 lpe
 seq $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
-mov $1,$0

@@ -3,5 +3,4 @@
 
 trn $0,1
 seq $0,51437 ; Number of undirected walks of length n+1 on an oriented triangle, visiting n+2 vertices, with n "corners"; the symmetry group is C3. Walks are not self-avoiding.
-mov $1,$0
-mul $1,2
+mul $0,2

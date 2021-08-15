@@ -7,3 +7,4 @@ lpb $0
   seq $2,7997 ; a(n) = ceiling((n-3)(n-4)/6).
   add $1,$2
 lpe
+mov $0,$1

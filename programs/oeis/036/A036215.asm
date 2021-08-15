@@ -3,6 +3,5 @@
 
 seq $0,198644 ; 8*3^n-1.
 seq $0,30109 ; Write n in binary, reverse bits, subtract 1, divide by 2.
-mov $1,$0
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

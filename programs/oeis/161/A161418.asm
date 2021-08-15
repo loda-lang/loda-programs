@@ -11,3 +11,4 @@ lpb $0
   max $3,1
 lpe
 mul $1,6
+mov $0,$1

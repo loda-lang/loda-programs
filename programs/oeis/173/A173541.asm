@@ -11,4 +11,3 @@ lpb $0
   add $4,$3
   mod $0,$4
 lpe
-mov $1,$0

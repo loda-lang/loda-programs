@@ -3,7 +3,6 @@
 
 seq $0,40699 ; Continued fraction for sqrt(726).
 seq $0,47543 ; Numbers that are congruent to {3, 4, 7} mod 8.
-mov $1,$0
-sub $1,5
-div $1,4
-add $1,1
+sub $0,5
+div $0,4
+add $0,1

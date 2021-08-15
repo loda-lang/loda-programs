@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,48763 ; Smallest cube >= n.
-mov $1,$0

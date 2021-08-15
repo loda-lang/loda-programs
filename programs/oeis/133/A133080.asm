@@ -3,4 +3,3 @@
 
 seq $0,128229 ; A natural number transform, inverse of signed A094587.
 mod $0,2
-mov $1,$0

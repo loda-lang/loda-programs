@@ -3,6 +3,5 @@
 
 trn $0,1
 seq $0,296058 ; Numbers k such that floor((3*k - 1)/2) is prime.
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

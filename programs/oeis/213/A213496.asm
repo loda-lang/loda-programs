@@ -4,15 +4,15 @@
 mov $5,$0
 mul $0,2
 mov $1,$0
-lpb $0
-  add $1,3
-  div $1,4
-  mov $3,$0
-  mov $0,$4
+lpb $1
+  add $0,3
+  div $0,4
+  mov $3,$1
+  mov $1,$4
   add $3,1
-  mul $1,$3
+  mul $0,$3
 lpe
 mov $2,$5
 mul $2,$5
 mul $2,$5
-add $1,$2
+add $0,$2

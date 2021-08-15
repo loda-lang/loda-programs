@@ -4,4 +4,3 @@
 mul $0,2
 seq $0,248739 ; a(n) = 29*n + ceiling(n/29).
 div $0,2
-add $1,$0

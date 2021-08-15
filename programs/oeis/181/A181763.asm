@@ -3,4 +3,3 @@
 
 seq $0,61037 ; Numerator of 1/4 - 1/n^2.
 pow $0,2
-mov $1,$0

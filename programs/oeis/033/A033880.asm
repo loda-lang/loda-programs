@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 sub $0,$2
 sub $0,1
-mov $1,$0

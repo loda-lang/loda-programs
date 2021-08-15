@@ -7,3 +7,4 @@ lpb $0
   seq $2,130256 ; Minimal index k of an odd Fibonacci number A001519 such that A001519(k) = Fibonacci(2*k-1) >= n (the 'upper' odd Fibonacci Inverse).
   add $1,$2
 lpe
+mov $0,$1

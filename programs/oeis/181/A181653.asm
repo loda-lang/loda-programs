@@ -18,3 +18,4 @@ lpb $2
   mov $2,1
 lpe
 mod $1,2
+mov $0,$1

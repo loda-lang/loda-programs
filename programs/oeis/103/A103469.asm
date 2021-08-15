@@ -3,8 +3,8 @@
 
 add $0,11
 mov $1,$0
-gcd $0,2
-add $1,$0
-add $1,$0
-div $1,3
-sub $1,3
+gcd $1,2
+add $0,$1
+add $0,$1
+div $0,3
+sub $0,3

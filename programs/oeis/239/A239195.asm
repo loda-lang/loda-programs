@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,38390 ; Bisection of A028289.
-mov $1,$0

@@ -9,3 +9,4 @@ lpe
 mov $2,$1
 cmp $2,0
 add $1,$2
+mov $0,$1

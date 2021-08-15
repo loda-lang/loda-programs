@@ -3,12 +3,12 @@
 
 add $0,1
 mov $1,$0
-mul $1,2
-bin $1,$0
-lpb $0
-  mov $2,$0
-  sub $0,1
+mul $0,2
+bin $0,$1
+lpb $1
+  mov $2,$1
+  sub $1,1
   seq $2,120588 ; G.f. is 1 + x*c(x), where c(x) is the g.f. of the Catalan numbers (A000108).
-  add $1,$2
+  add $0,$2
 lpe
-sub $1,1
+sub $0,1

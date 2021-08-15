@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,60715 ; Number of primes between n and 2n exclusive.
-add $1,$0

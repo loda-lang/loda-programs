@@ -6,5 +6,4 @@ lpb $0
   sub $0,$2
 lpe
 sub $0,1
-mov $1,$0
-cmp $1,0
+cmp $0,0

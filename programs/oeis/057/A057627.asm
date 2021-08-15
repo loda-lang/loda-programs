@@ -7,3 +7,4 @@ lpb $0
   seq $2,107078 ; Whether n has non-unitary prime divisors.
   add $1,$2
 lpe
+mov $0,$1

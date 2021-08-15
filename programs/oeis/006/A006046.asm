@@ -3,9 +3,9 @@
 
 sub $0,1
 mov $1,$0
-max $0,0
-seq $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
-add $1,4
-add $0,$1
-mov $1,$0
-sub $1,3
+add $0,4
+max $1,0
+seq $1,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
+add $1,$0
+mov $0,$1
+sub $0,3

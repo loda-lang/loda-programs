@@ -3,5 +3,4 @@
 
 seq $0,330410 ; a(n) = 6*prime(n) - 1.
 seq $0,13632 ; Difference between n and the next prime greater than n.
-mov $1,$0
-sub $1,1
+sub $0,1

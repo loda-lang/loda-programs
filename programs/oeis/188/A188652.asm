@@ -8,3 +8,4 @@ lpb $0
   seq $2,188653 ; Second differences of A000463; first differences of A188652.
   add $1,$2
 lpe
+mov $0,$1

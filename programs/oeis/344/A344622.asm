@@ -15,3 +15,4 @@ lpb $0
   cmp $3,$2
   add $4,$3
 lpe
+mov $0,$1

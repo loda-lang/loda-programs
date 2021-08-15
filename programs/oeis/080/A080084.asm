@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,22559 ; Sum of exponents in prime-power factorization of n!.
-mov $1,$0

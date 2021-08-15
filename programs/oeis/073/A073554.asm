@@ -6,3 +6,4 @@ lpb $0
   mov $0,0
   seq $1,73553 ; Number of Fibonacci numbers F(k), k <= 10^n, which end in 5.
 lpe
+mov $0,$1

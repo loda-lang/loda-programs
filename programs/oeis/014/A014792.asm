@@ -3,4 +3,3 @@
 
 seq $0,14640 ; Even heptagonal numbers (A000566).
 pow $0,2
-mov $1,$0

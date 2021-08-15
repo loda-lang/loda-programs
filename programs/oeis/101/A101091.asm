@@ -8,3 +8,4 @@ lpb $0
   seq $2,101090 ; Third partial sums of fourth powers (A000583).
   add $1,$2
 lpe
+mov $0,$1

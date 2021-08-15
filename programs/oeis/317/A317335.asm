@@ -4,4 +4,3 @@
 seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
 mul $0,2
 min $0,1
-mov $1,$0

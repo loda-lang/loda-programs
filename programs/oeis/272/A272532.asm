@@ -4,6 +4,5 @@
 sub $0,19
 bin $0,2
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $1,$0
-add $1,1
-mod $1,2
+add $0,1
+mod $0,2

@@ -7,3 +7,4 @@ lpb $0
   add $2,$0
 lpe
 pow $1,$2
+mov $0,$1

@@ -5,5 +5,4 @@ mov $2,$0
 add $0,1
 add $0,$2
 seq $0,53754 ; If k is in the sequence then 2*k and 2*k+1 are not (and 0 is in the sequence); when written in binary k has an even number of bits (0 has 0 digits).
-mov $1,$0
-div $1,2
+div $0,2

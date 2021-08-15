@@ -5,3 +5,4 @@ mov $1,2
 pow $1,$0
 seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
 sub $1,1
+mov $0,$1

@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,5173 ; Number of trees of subsets of an n-set.
-mov $1,$0
-div $1,6
+div $0,6

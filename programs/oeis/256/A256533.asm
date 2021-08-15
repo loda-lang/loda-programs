@@ -5,8 +5,7 @@ mov $3,$0
 add $0,1
 mul $0,2
 seq $0,271342 ; Sum of all even divisors of all positive integers <= n.
-mov $1,$0
 mov $2,$3
 mul $2,$0
-add $1,$2
-div $1,2
+add $0,$2
+div $0,2

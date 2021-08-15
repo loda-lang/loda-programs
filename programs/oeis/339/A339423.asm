@@ -3,4 +3,3 @@
 
 seq $0,322382 ; a(n) = p*a(n/p) + 1, where p is the smallest prime divisor of n; a(1)=0.
 trn $0,1
-mov $1,$0

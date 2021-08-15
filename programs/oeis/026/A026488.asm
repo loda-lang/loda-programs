@@ -3,8 +3,7 @@
 
 mov $2,$0
 add $0,1
-mov $1,$0
 trn $2,2
-add $1,$2
-mul $1,6
-div $1,4
+add $0,$2
+mul $0,6
+div $0,4

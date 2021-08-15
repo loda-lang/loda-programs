@@ -7,3 +7,4 @@ lpb $0
   seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mul $1,2
 lpe
+mov $0,$1

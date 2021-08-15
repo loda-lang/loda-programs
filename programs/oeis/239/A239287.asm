@@ -4,5 +4,4 @@
 seq $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
 pow $0,2
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $1,$0
-div $1,2
+div $0,2

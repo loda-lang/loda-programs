@@ -23,3 +23,4 @@ lpe
 bin $4,3
 mul $1,$4
 div $1,4
+mov $0,$1

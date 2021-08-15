@@ -4,4 +4,3 @@
 seq $0,77985 ; Expansion of 1/(1 + 2*x - x^2).
 gcd $0,$0
 add $0,1
-mov $1,$0

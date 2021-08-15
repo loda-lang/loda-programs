@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,855 ; Final two digits of 2^n.
-mov $1,$0

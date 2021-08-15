@@ -4,5 +4,4 @@
 add $0,1
 mul $0,2
 seq $0,339358 ; Maximum number of copies of a 1234567 permutation pattern in an alternating (or zig-zag) permutation of length n + 11.
-mov $1,$0
-div $1,32
+div $0,32

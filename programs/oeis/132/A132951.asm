@@ -3,6 +3,5 @@
 
 add $0,1061
 seq $0,87204 ; Period 6: repeat [2, 1, -1, -2, -1, 1].
-mov $1,$0
-mul $1,7
-div $1,4
+mul $0,7
+div $0,4

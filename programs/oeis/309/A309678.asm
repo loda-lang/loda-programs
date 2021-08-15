@@ -12,3 +12,4 @@ lpb $2
   seq $0,189376 ; Expansion of 1/((1-x)^5*(x^3+x^2+x+1)^2).
   add $1,$0
 lpe
+mov $0,$1

@@ -3,4 +3,3 @@
 
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 div $0,2
-mov $1,$0

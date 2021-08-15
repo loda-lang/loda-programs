@@ -52,3 +52,4 @@ lpb $2
   div $7,6
   add $1,$7
 lpe
+mov $0,$1

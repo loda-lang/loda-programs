@@ -23,3 +23,4 @@ lpb $2
   lpe
 lpe
 div $1,95278
+mov $0,$1

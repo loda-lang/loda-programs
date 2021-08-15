@@ -7,5 +7,4 @@ mov $2,$0
 seq $2,46666 ; a(n) = n - (smallest prime dividing n).
 sub $2,$0
 sub $0,$2
-mov $1,$0
-add $1,4
+add $0,4

@@ -5,4 +5,3 @@ seq $0,71 ; a(n) = Fibonacci(n) - 1.
 add $0,1
 pow $0,4
 div $0,4
-mov $1,$0

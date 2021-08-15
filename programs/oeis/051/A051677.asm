@@ -8,7 +8,7 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  cal $0,158894 ; Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
+  seq $0,158894 ; Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
   pow $0,2
   mov $3,$0
   sub $3,9
@@ -16,3 +16,4 @@ lpb $2
   add $3,1
   add $1,$3
 lpe
+mov $0,$1

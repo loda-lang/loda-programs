@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,8472 ; Sum of the distinct primes dividing n.
-mov $1,$0

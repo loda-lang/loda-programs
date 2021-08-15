@@ -3,5 +3,4 @@
 
 mul $0,2
 seq $0,10225 ; Continued fraction for sqrt(183).
-mov $1,$0
-mul $1,2
+mul $0,2

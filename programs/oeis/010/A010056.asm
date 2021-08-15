@@ -3,3 +3,4 @@
 
 seq $0,66628 ; a(n) = n - the largest Fibonacci number <= n.
 bin $1,$0
+mov $0,$1

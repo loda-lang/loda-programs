@@ -8,5 +8,4 @@ div $2,2
 sub $0,$2
 mul $0,5
 sub $0,$2
-mov $1,$0
-div $1,4
+div $0,4

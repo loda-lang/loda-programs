@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,208891 ; Pascal's triangle matrix augmented with a right border of 1's.
-mov $1,$0

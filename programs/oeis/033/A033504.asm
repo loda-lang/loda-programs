@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,346 ; a(n) = 2^(2*n+1) - binomial(2*n+1, n+1).
 add $2,1
 mul $0,$2
-mov $1,$0

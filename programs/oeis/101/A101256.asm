@@ -7,3 +7,4 @@ lpb $0
   seq $2,191558 ; a(n) = 0 if n prime, otherwise n.
   add $1,$2
 lpe
+mov $0,$1

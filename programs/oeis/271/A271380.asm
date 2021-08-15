@@ -4,7 +4,8 @@
 
 mov $1,1
 lpb $0
-  mul $1,5   ; Raise 5 to the n'th power
+  mul $1,5 ; Raise 5 to the n'th power
   mod $1,163 ; For every raise, modulo with 163
   sub $0,1
 lpe
+mov $0,$1

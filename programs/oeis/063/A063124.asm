@@ -4,4 +4,3 @@
 mov $2,$0
 seq $0,20900 ; Greatest k such that k-th prime < twice n-th prime.
 sub $0,$2
-mov $1,$0

@@ -2,6 +2,6 @@
 ; 1,1,1,4,1,5,1,6,9,7,1,11,1,9,13,16,1,15,1,19,17,13,1,22,25,15,21,25,1,29,1,28,25,19,33,36,1,21,29,37,1,41,1,37,41,25,1,46,49,45,37,43,1,51,49,55,41,31,1,56,1,33,61,64,57,61,1,55,49,67,1,71,1,39,65,61,73,71,1
 
 mov $1,$0
-seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
-sub $1,$0
-add $1,1
+seq $1,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
+sub $0,$1
+add $0,1

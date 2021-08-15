@@ -3,15 +3,15 @@
 
 mod $0,4
 mov $1,$0
-add $1,$0
-add $1,$0
-mov $2,$0
+mul $0,2
+add $0,$1
+mov $2,$1
 mul $2,2
 cmp $2,2
-mul $2,$1
+mul $2,$0
 mul $2,3
-add $1,$2
-add $1,2
-trn $1,4
-mul $1,2
-add $1,34
+add $0,$2
+add $0,2
+trn $0,4
+mul $0,2
+add $0,34

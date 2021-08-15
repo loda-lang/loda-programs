@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,54849 ; a(n) = 2^(n-5)*binomial(n,5). Number of 5D hypercubes in an n-dimensional hypercube.
-mov $1,$0
-mul $1,4
-div $1,16
+mul $0,4
+div $0,16

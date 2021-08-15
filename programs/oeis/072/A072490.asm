@@ -3,4 +3,3 @@
 
 seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
 trn $0,2
-mov $1,$0

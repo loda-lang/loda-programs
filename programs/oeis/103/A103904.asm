@@ -13,3 +13,4 @@ lpb $0
   lpe
 lpe
 div $1,17
+mov $0,$1

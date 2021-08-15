@@ -3,5 +3,5 @@
 
 seq $0,187394 ; a(n) = floor(s*n), where s = 4 - sqrt(8); complement of A187393.
 mov $1,$0
-div $0,2
-add $1,$0
+div $1,2
+add $0,$1

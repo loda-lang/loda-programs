@@ -23,3 +23,4 @@ lpb $4
   add $1,$5
 lpe
 add $1,$2
+mov $0,$1

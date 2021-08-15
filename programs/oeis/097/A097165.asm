@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,193656 ; Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0<=k<=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
-mov $1,$0
-div $1,6
+div $0,6

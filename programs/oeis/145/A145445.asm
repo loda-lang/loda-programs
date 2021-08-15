@@ -4,4 +4,3 @@
 seq $0,6 ; Integer part of square root of n-th prime.
 add $0,1
 pow $0,2
-mov $1,$0

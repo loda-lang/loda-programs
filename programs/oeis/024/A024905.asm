@@ -22,3 +22,4 @@ lpb $2
 lpe
 div $1,14
 mul $1,2
+mov $0,$1

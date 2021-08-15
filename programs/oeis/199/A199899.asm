@@ -3,11 +3,10 @@
 
 mov $2,$0
 add $0,4
-mov $1,$0
 add $2,$0
 bin $2,2
-mul $1,$2
-sub $1,24
-div $1,3
-mul $1,2
-add $1,15
+mul $0,$2
+sub $0,24
+div $0,3
+mul $0,2
+add $0,15

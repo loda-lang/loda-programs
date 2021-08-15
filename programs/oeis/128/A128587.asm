@@ -5,6 +5,5 @@ seq $0,119282 ; Alternating sum of the first n Fibonacci numbers.
 mul $0,4
 add $0,3
 div $0,4
-mov $1,$0
-mul $1,2
-add $1,1
+mul $0,2
+add $0,1

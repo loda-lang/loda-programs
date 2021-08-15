@@ -16,10 +16,9 @@ lpb $0
   mov $0,$2
 lpe
 sub $0,6
-mov $1,$0
-trn $1,1
+trn $0,1
 lpb $5
-  add $1,4
+  add $0,4
   sub $5,1
 lpe
-add $1,1
+add $0,1

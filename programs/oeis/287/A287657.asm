@@ -3,5 +3,4 @@
 
 seq $0,187576 ; Rank transform of the sequence 2*floor((n-1)/2)); complement of A187577.
 add $0,1
-mov $1,$0
-mod $1,2
+mod $0,2

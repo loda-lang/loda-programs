@@ -4,4 +4,3 @@
 mul $0,2
 trn $0,1
 seq $0,123001 ; Binary numbers that start 10...
-mov $1,$0

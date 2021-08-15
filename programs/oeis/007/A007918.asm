@@ -3,8 +3,4 @@
 
 trn $0,2
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-seq $0,6005 ; The odd prime numbers together with 1.
-mul $0,2
-max $0,4
-mov $1,$0
-div $1,2
+seq $0,40 ; The prime numbers.

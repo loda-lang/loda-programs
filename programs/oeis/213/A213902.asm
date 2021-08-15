@@ -4,4 +4,3 @@
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
 sub $0,2
 div $0,3
-mov $1,$0

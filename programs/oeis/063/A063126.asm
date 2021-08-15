@@ -7,5 +7,4 @@ div $0,2
 mov $1,1
 sub $1,$0
 trn $0,$1
-mov $1,$0
-add $1,6
+add $0,6

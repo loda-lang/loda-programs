@@ -3,4 +3,3 @@
 
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 seq $0,55642 ; Number of digits in decimal expansion of n.
-mov $1,$0

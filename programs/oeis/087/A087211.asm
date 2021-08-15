@@ -4,4 +4,3 @@
 seq $0,229354 ; Total sum of n-th powers of parts in all partitions of 3.
 div $0,3
 sub $0,1
-mov $1,$0

@@ -3,6 +3,5 @@
 
 add $0,8190
 seq $0,32929 ; Numbers whose set of base 8 digits is {1,2}.
-mov $1,$0
-sub $1,78536544841
-mul $1,7
+sub $0,78536544841
+mul $0,7

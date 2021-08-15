@@ -5,3 +5,4 @@ sub $1,$0
 seq $0,342362 ; Expansion of the o.g.f. (1 + 8*x + 10*x^2 + 8*x^3 + x^4)/((1 - x)^4*(1 + x)^2).
 add $1,$0
 div $1,4
+mov $0,$1

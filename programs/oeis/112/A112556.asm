@@ -9,3 +9,4 @@ lpb $0
   seq $1,120305 ; a(n) = Sum_{i=0..n} Sum_{j=0..n} (-1)^(i+j) * (i+j)!/(i!j!).
 lpe
 add $1,1
+mov $0,$1

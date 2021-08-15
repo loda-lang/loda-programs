@@ -4,4 +4,3 @@
 seq $0,48974 ; Odd numbers that are the sum of 2 primes.
 sub $0,4
 seq $0,71538 ; Number of twin prime pairs (p, p+2) with p <= n.
-mov $1,$0

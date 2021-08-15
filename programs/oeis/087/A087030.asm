@@ -4,6 +4,5 @@
 mov $2,$0
 add $0,1
 seq $0,308046 ; a(n) = 2*nextprime(n - 1) - 2*n, where nextprime(n) is the smallest prime > n.
-mov $1,$0
-add $1,3
-add $1,$2
+add $0,3
+add $0,$2

@@ -3,4 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,67535 ; Smallest squarefree number >= n.
-mov $1,$0

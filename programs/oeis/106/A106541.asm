@@ -4,3 +4,4 @@
 seq $0,106540 ; a(n)= a(n-1)-2*a(n-2)-3*a(n-3)-...-(n-1)*a(1), beginning with 1.
 add $1,$0
 mul $1,2
+mov $0,$1

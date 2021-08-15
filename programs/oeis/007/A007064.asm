@@ -3,4 +3,3 @@
 
 seq $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
 div $0,2
-mov $1,$0

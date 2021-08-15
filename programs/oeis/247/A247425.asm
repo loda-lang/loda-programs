@@ -4,3 +4,4 @@
 max $1,$0
 seq $1,3259 ; Complement of A003258.
 sub $1,$0
+mov $0,$1

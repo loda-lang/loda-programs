@@ -4,4 +4,3 @@
 add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,37952 ; a(n) = binomial(n, floor((n-1)/2)).
-mov $1,$0

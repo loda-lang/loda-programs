@@ -3,5 +3,4 @@
 
 seq $0,267941 ; Decimal representation of the n-th iteration of the "Rule 253" elementary cellular automaton starting with a single ON (black) cell.
 trn $0,2
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,8 +3,8 @@
 
 add $0,2
 mov $1,$0
-seq $0,25785 ; Expansion of 1/((1-x)(1-x^7)(1-x^9)).
-add $1,$0
-sub $1,3
-mul $1,4
-add $1,2
+seq $1,25785 ; Expansion of 1/((1-x)(1-x^7)(1-x^9)).
+add $0,$1
+sub $0,3
+mul $0,4
+add $0,2

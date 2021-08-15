@@ -9,3 +9,4 @@ lpb $0
   max $1,0
   seq $1,108738 ; a(n) = n/(smallest odd prime divisor of n), if any.
 lpe
+mov $0,$1

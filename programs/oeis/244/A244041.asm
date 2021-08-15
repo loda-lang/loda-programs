@@ -7,4 +7,3 @@ lpb $4,3
   sub $0,$5
   mul $5,3
 lpe
-mov $1,$0

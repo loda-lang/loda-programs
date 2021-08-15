@@ -3,4 +3,3 @@
 
 seq $0,22838 ; Beatty sequence for sqrt(3); complement of A054406.
 mod $0,-3
-mov $1,$0

@@ -3,7 +3,6 @@
 
 seq $0,215848 ; Primes > 3.
 div $0,3
-mov $1,$0
-mul $1,3
-div $1,2
-add $1,1
+mul $0,3
+div $0,2
+add $0,1

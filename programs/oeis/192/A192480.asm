@@ -8,3 +8,4 @@ lpb $0
   seq $1,120588 ; G.f. is 1 + x*c(x), where c(x) is the g.f. of the Catalan numbers (A000108).
 lpe
 add $1,$2
+mov $0,$1

@@ -12,3 +12,4 @@ seq $0,173919 ; Numbers that are prime or one less than a prime.
 mul $1,$0
 div $1,7
 add $1,1
+mov $0,$1

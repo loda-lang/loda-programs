@@ -3,4 +3,3 @@
 
 seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mov $1,$0

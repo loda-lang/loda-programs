@@ -10,3 +10,4 @@ lpb $2
   trn $2,8
   max $3,$0
 lpe
+mov $0,$1

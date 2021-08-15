@@ -3,5 +3,4 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0
-div $1,2
+div $0,2

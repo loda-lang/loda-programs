@@ -3,5 +3,4 @@
 
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-mov $1,$0
-div $1,24
+div $0,24

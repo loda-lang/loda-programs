@@ -3,7 +3,6 @@
 
 trn $0,2
 seq $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
-mov $1,$0
-div $1,2
-mul $1,3
-add $1,1
+div $0,2
+mul $0,3
+add $0,1

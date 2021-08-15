@@ -5,7 +5,7 @@ seq $0,188435 ; Positions of 1 in A188433; complement of A188434.
 seq $0,4957 ; a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 add $0,8
 mov $1,$0
-seq $0,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
-add $1,$0
-div $1,2
-sub $1,12
+seq $1,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
+add $0,$1
+div $0,2
+sub $0,12

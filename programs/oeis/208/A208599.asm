@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,83669 ; Number of ordered quintuples (a,b,c,d,e), -n <= a,b,c,d,e <= n, such that a+b+c+d+e = 0.
-mov $1,$0
-sub $1,51
-div $1,5
-add $1,11
+sub $0,51
+div $0,5
+add $0,11

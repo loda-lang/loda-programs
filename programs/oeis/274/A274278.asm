@@ -7,5 +7,4 @@ sub $2,1
 pow $0,$2
 pow $2,$2
 sub $0,$2
-mov $1,$0
-div $1,2
+div $0,2

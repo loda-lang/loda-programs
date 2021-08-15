@@ -8,5 +8,4 @@ lpb $0
   cmp $3,0
 lpe
 cmp $0,0
-mov $1,$0
-add $1,2
+add $0,2

@@ -4,3 +4,4 @@
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 mov $1,2
 pow $1,$0
+mov $0,$1

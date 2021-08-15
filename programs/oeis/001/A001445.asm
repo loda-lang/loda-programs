@@ -3,6 +3,5 @@
 
 add $0,2
 seq $0,56309 ; Number of reversible strings with n beads using exactly two different colors.
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

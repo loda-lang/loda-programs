@@ -4,5 +4,4 @@
 mov $2,$0
 seq $2,23652 ; Convolution of (F(2), F(3), F(4), ...) and odd numbers.
 add $0,$2
-mov $1,$0
-add $1,1
+add $0,1

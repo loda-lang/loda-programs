@@ -4,4 +4,3 @@
 mul $0,2
 add $0,1
 seq $0,4159 ; Sum of digits of n^2.
-mov $1,$0

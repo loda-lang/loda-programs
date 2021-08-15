@@ -3,4 +3,3 @@
 
 seq $0,61240 ; Prime numbers == 5 (mod 9).
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-mov $1,$0

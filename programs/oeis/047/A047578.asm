@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,47557 ; Numbers that are congruent to {0, 3, 6, 7} mod 8.
-mov $1,$0
-sub $1,1
+sub $0,1

@@ -3,4 +3,3 @@
 
 dif $0,2
 seq $0,40360 ; Continued fraction for sqrt(380).
-mov $1,$0

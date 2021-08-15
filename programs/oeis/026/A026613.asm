@@ -4,3 +4,4 @@
 seq $0,26611 ; Number of 3's between n-th 2 and (n+1)st 2 in A026600.
 sub $0,2
 sub $1,$0
+mov $0,$1

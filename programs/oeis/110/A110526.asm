@@ -4,4 +4,3 @@
 seq $0,49651 ; a(n) = (F(3*n+1) - 1)/2, where F=A000045 (the Fibonacci sequence).
 add $0,1
 div $0,2
-mov $1,$0

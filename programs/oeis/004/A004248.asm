@@ -8,4 +8,3 @@ lpb $0
   sub $2,$0
 lpe
 pow $0,$2
-mov $1,$0

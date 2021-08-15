@@ -4,4 +4,3 @@
 add $0,1
 seq $0,130484 ; a(n) = Sum_{k=0..n} (k mod 6) (Partial sums of A010875).
 div $0,6
-mov $1,$0

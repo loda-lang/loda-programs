@@ -4,3 +4,4 @@
 sub $1,$0
 seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 add $1,$0
+mov $0,$1

@@ -4,5 +4,4 @@
 mul $0,2
 add $0,1
 seq $0,44470 ; Numbers n such that string 2,2 occurs in the base 5 representation of n but not of n+1.
-mov $1,$0
-div $1,2
+div $0,2

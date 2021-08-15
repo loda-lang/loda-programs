@@ -7,3 +7,4 @@ lpb $0
   seq $2,268411 ; Parity of number of runs of 1's in binary representation of n.
   add $1,$2
 lpe
+mov $0,$1

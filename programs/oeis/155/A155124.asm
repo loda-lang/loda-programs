@@ -4,3 +4,4 @@
 seq $0,167407 ; T(m,n) is -m if n=0, 1 elsewhere.
 add $1,$0
 add $1,1
+mov $0,$1

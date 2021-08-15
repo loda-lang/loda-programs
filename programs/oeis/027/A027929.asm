@@ -12,3 +12,4 @@ lpb $2
   seq $0,27928 ; a(n) = T(n, 2*n-5), T given by A027926.
   add $1,$0
 lpe
+mov $0,$1

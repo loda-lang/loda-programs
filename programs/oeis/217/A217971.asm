@@ -7,6 +7,5 @@ sub $2,$0
 pow $0,$0
 mul $2,$0
 sub $0,$2
-mov $1,$0
-div $1,4
-mul $1,8
+div $0,4
+mul $0,8

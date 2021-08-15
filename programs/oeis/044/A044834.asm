@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,133898 ; Numbers m such that binomial(m+8,m) mod 8 = 0.
-mov $1,$0
-sub $1,56
-mul $1,9
+sub $0,56
+mul $0,9

@@ -3,5 +3,4 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,155043 ; a(0)=0; for n >= 1, a(n) = 1 + a(n-d(n)), where d(n) is the number of divisors of n (A000005).
-mov $1,$0
-add $1,1
+add $0,1

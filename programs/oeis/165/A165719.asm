@@ -5,5 +5,4 @@ add $0,2
 seq $0,47608 ; Numbers that are congruent to {4, 5} mod 8.
 bin $0,2
 sub $0,10
-mov $1,$0
-div $1,4
+div $0,4

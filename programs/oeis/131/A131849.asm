@@ -19,3 +19,4 @@ lpb $0
   lpe
 lpe
 div $1,9
+mov $0,$1

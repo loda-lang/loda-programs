@@ -4,5 +4,4 @@
 mul $0,3
 seq $0,191276 ; Numbers that are congruent to {0, 1, 4, 5, 7, 9, 11} mod 12.
 trn $0,1
-mov $1,$0
-add $1,1
+add $0,1

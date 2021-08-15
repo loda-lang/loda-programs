@@ -8,3 +8,4 @@ mov $3,$2
 add $3,$0
 mov $1,$3
 seq $1,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
+mov $0,$1

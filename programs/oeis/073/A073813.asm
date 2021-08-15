@@ -6,3 +6,4 @@ lpb $0
   mov $0,0
   seq $1,56608 ; Least prime factor of the n-th composite number.
 lpe
+mov $0,$1

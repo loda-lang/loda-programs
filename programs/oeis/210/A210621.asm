@@ -11,6 +11,5 @@ lpb $0
 lpe
 sub $3,$2
 min $0,$3
-mov $1,$0
-add $1,14
-mod $1,10
+add $0,14
+mod $0,10

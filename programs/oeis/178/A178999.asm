@@ -3,11 +3,11 @@
 
 bin $0,8
 mov $1,$0
-lpb $0
-  mov $0,$1
-  min $0,4
+lpb $1
+  mov $1,$0
+  add $0,10
+  min $1,4
   add $2,1
-  sub $0,$2
-  add $1,10
+  sub $1,$2
 lpe
-mul $1,2
+mul $0,2

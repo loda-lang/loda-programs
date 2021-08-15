@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,26811 ; Number of partitions of n in which the greatest part is 5.
-mov $1,$0

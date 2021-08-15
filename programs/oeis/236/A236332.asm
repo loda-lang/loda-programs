@@ -3,11 +3,11 @@
 
 add $0,1
 mov $1,$0
-pow $1,3
-mov $2,$0
+pow $0,3
+mov $2,$1
 pow $2,7
 gcd $2,8
-add $1,$2
-sub $1,2
-div $1,2
-add $1,1
+add $0,$2
+sub $0,2
+div $0,2
+add $0,1

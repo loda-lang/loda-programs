@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,80579 ; a(1)=1; for n>1, a(n)=a(n-1)+1 if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
-mov $1,$0
-sub $1,2
+sub $0,2

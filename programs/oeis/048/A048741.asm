@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,7956 ; Product of proper divisors of n.
-mov $1,$0

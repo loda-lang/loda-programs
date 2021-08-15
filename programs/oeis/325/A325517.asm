@@ -4,4 +4,3 @@
 mov $2,$0
 seq $2,131941 ; Partial sums of ceiling(n^2/2) (A000982).
 mul $0,$2
-add $1,$0

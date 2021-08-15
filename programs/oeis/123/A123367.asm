@@ -8,3 +8,4 @@ lpb $0
   seq $1,123642 ; a(n) = n! - 2^n.
 lpe
 div $1,8
+mov $0,$1

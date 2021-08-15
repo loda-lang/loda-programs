@@ -4,4 +4,3 @@
 div $0,2
 trn $0,1
 seq $0,114209 ; Number of permutations of [n] having exactly two fixed points and avoiding the patterns 123 and 231.
-mov $1,$0

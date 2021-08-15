@@ -8,3 +8,4 @@ lpb $0
   seq $2,249032 ; First differences of A075326.
   add $1,$2
 lpe
+mov $0,$1

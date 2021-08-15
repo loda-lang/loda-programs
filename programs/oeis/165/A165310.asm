@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,52533 ; Expansion of (1-x)/(1-x-3*x^2).
-mov $1,$0

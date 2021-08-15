@@ -3,4 +3,3 @@
 
 pow $0,2
 seq $0,276914 ; Subsequence of triangular numbers obtained by adding a square and two smaller triangles, a(n) = n^2 + 2*A000217(A052928(n)).
-mov $1,$0

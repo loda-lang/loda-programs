@@ -11,6 +11,5 @@ mul $0,5
 div $0,4
 mul $0,4
 div $0,10
-mov $1,$0
-mul $1,2
-mod $1,3
+mul $0,2
+mod $0,3

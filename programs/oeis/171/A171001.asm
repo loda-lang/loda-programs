@@ -6,4 +6,3 @@ seq $0,57353 ; a(n) = floor(3n/4).
 sub $2,$0
 bin $0,$2
 pow $0,2
-mov $1,$0

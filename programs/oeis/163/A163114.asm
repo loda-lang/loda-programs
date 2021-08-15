@@ -7,3 +7,4 @@ seq $0,224251 ; Numbers, a(n) where binomial(a(n), 5n-1) == 0 (mod 5) and binomi
 add $0,5
 add $1,$0
 div $1,5
+mov $0,$1

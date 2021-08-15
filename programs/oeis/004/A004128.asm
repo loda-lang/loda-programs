@@ -5,3 +5,4 @@ lpb $0
   add $1,$0
   div $0,3
 lpe
+mov $0,$1

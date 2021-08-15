@@ -6,6 +6,5 @@ bin $2,2
 sub $2,$0
 trn $0,1
 add $0,$2
-mov $1,$0
-mul $1,3
-add $1,2
+mul $0,3
+add $0,2

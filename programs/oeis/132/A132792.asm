@@ -3,5 +3,4 @@
 
 seq $0,128229 ; A natural number transform, inverse of signed A094587.
 bin $0,2
-add $1,$0
-mul $1,2
+mul $0,2

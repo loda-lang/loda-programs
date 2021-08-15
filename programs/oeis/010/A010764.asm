@@ -3,6 +3,6 @@
 
 add $0,3
 mov $1,$0
-div $0,3
-div $1,2
-mod $1,$0
+div $0,2
+div $1,3
+mod $0,$1

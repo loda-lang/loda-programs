@@ -3,15 +3,15 @@
 
 add $0,1
 mov $1,$0
-seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-lpb $0
-  sub $0,1
-  mod $0,2
-  sub $0,1
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+lpb $1
+  sub $1,1
+  mod $1,2
+  sub $1,1
 lpe
-lpb $0
-  add $1,2
-  sub $0,$1
-  trn $0,1
+lpb $1
+  add $0,2
+  sub $1,$0
+  trn $1,1
 lpe
-sub $1,1
+sub $0,1

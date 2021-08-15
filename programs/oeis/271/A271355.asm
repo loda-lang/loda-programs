@@ -3,4 +3,3 @@
 
 seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
 seq $0,169985 ; Round phi^n to the nearest integer.
-mov $1,$0

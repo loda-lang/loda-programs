@@ -8,3 +8,4 @@ lpb $0
   seq $2,84219 ; Inverse binomial transform of A053088.
   add $1,$2
 lpe
+mov $0,$1

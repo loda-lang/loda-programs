@@ -6,4 +6,3 @@ add $2,$0
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1
 gcd $0,$2
-mov $1,$0

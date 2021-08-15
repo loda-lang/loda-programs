@@ -7,4 +7,3 @@ lpb $0
   seq $2,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
   add $0,$2
 lpe
-mov $1,$0

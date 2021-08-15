@@ -3,5 +3,4 @@
 
 mul $0,7
 seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-mov $1,$0
-sub $1,1981
+sub $0,1981

@@ -4,4 +4,3 @@
 mul $0,4
 trn $0,2
 seq $0,134816 ; Padovan's spiral numbers.
-mov $1,$0

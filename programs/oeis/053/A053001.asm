@@ -9,11 +9,10 @@ sub $5,$0
 mov $0,-6
 add $5,2
 add $0,$5
-mov $1,$0
-add $1,2
+add $0,2
 mov $4,$2
 mul $4,3
-add $1,$4
+add $0,$4
 mov $3,$2
 mul $3,$2
-add $1,$3
+add $0,$3

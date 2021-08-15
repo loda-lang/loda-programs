@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,74909 ; Running sum of Pascal's triangle (A007318), or beheaded Pascal's triangle read by beheaded rows.
-mov $1,$0

@@ -3,4 +3,3 @@
 
 seq $0,16035 ; a(n) = Sum_{j|n, 1 < j < n} phi(j). Also a(n) = n - phi(n) - 1 for n > 1.
 seq $0,51953 ; Cototient(n) := n - phi(n).
-mov $1,$0

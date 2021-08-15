@@ -6,5 +6,4 @@ lpb $0
   sub $0,1
 lpe
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-mov $1,$0
-mul $1,2
+mul $0,2

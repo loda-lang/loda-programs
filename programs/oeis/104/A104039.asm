@@ -3,5 +3,4 @@
 
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,46151 ; a(n) = n*phi(n) - 1.
-mov $1,$0
-add $1,1
+add $0,1

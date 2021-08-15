@@ -8,3 +8,4 @@ lpe
 seq $0,154115 ; Numbers n such that n + 3 is prime.
 add $1,$0
 add $1,1
+mov $0,$1

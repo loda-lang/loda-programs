@@ -5,4 +5,3 @@ pow $0,2
 lpb $0
   dif $0,4
 lpe
-mov $1,$0

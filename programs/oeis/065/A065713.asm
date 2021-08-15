@@ -5,4 +5,3 @@ mul $0,2
 seq $0,51 ; a(n) = 2^n + 1.
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 sub $0,1
-mov $1,$0

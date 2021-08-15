@@ -4,5 +4,4 @@
 seq $0,226177 ; a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
 pow $0,2
 seq $0,80883 ; Distance of n to next square.
-mov $1,$0
-div $1,2
+div $0,2

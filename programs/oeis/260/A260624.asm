@@ -3,4 +3,3 @@
 
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-mov $1,$0

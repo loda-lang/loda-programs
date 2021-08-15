@@ -13,5 +13,3 @@ lpb $0
   add $2,4
   add $3,$2
 lpe
-trn $1,$3
-add $1,$0

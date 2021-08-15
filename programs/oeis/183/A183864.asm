@@ -15,3 +15,4 @@ lpb $0
   add $3,$2
   trn $0,$3
 lpe
+mov $0,$1

@@ -10,3 +10,4 @@ lpb $2
   seq $0,189668 ; Fixed point of the morphism 0->010, 1->100.
   add $1,$0
 lpe
+mov $0,$1

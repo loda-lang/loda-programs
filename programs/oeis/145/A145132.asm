@@ -10,3 +10,4 @@ lpb $2
   seq $0,145131 ; Expansion of x/((1 - x - x^4)*(1 - x)^2).
   add $1,$0
 lpe
+mov $0,$1

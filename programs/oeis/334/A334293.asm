@@ -3,4 +3,3 @@
 
 mul $0,4
 seq $0,931 ; Padovan sequence (or Padovan numbers): a(n) = a(n-2) + a(n-3) with a(0) = 1, a(1) = a(2) = 0.
-mov $1,$0

@@ -9,4 +9,3 @@ div $2,$0
 sub $2,$0
 sub $0,$2
 seq $0,147846 ; Triangular numbers n*(n+1)/2 with n or n+1 prime.
-mov $1,$0

@@ -4,4 +4,3 @@
 seq $0,73577 ; a(n) = 4*n^2 + 4*n - 1.
 seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 add $0,1
-mov $1,$0

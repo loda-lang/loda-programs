@@ -7,4 +7,3 @@ lpb $0
   sub $0,1
   seq $0,109395 ; Denominator of phi(n)/n = Product_{p|n} (1 - 1/p); phi(n)=A000010(n), the Euler totient function.
 lpe
-mov $1,$0

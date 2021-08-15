@@ -4,5 +4,4 @@
 seq $0,259445 ; Multiplicative with a(n) = n if n is odd and a(2^s)=2.
 mul $0,6
 div $0,8
-mov $1,$0
-add $1,1
+add $0,1

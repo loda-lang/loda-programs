@@ -10,3 +10,4 @@ lpb $2
 lpe
 seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 add $1,$3
+mov $0,$1

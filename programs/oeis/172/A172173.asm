@@ -8,3 +8,4 @@ lpb $0
   seq $2,22100 ; Fibonacci sequence beginning 1, 10.
   add $1,$2
 lpe
+mov $0,$1

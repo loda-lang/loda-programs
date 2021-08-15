@@ -12,3 +12,4 @@ lpb $0
   sub $1,1
   seq $1,4663 ; Powers of 3 written in base 9.
 lpe
+mov $0,$1

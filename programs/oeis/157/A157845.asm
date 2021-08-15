@@ -3,4 +3,3 @@
 
 trn $0,1
 seq $0,230297 ; a(n) = A010062(n) written in binary: a(n+1) = a(n) + hammingweight(a(n)) in binary.
-mov $1,$0

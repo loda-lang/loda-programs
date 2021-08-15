@@ -57,3 +57,4 @@ lpb $5
   add $1,$7
   sub $5,1
 lpe
+mov $0,$1

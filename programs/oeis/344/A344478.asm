@@ -7,5 +7,4 @@ seq $0,80883 ; Distance of n to next square.
 mov $2,$0
 add $2,$0
 add $0,$2
-mov $1,$0
-div $1,13
+div $0,13

@@ -20,3 +20,4 @@ lpb $5
   div $5,7
 lpe
 sub $1,$3
+mov $0,$1

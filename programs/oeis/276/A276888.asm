@@ -5,5 +5,4 @@ sub $1,$0
 seq $0,285075 ; Positions of 1 in A285073; complement of A285074.
 add $1,$0
 add $0,$1
-mov $1,$0
-sub $1,3
+sub $0,3

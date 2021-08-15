@@ -3,6 +3,5 @@
 
 add $0,2
 seq $0,104934 ; Expansion of (1-x)/(1 - 3*x - 2*x^2).
-mov $1,$0
-div $1,4
-mul $1,3
+div $0,4
+mul $0,3

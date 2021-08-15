@@ -4,4 +4,3 @@
 seq $0,40976 ; a(n) = prime(n) - 2.
 add $0,3
 bin $0,2
-mov $1,$0

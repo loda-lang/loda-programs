@@ -3,4 +3,3 @@
 
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,13632 ; Difference between n and the next prime greater than n.
-mov $1,$0

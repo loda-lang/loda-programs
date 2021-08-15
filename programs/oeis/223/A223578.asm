@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,223577 ; Positive integers n for which there is exactly one negative integer m such that -n = floor(cot(Pi/(2*m))).
 mul $0,2
 sub $0,$2
-mov $1,$0

@@ -3,7 +3,6 @@
 
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
 seq $0,78642 ; Numbers with two representations as the sum of two Fibonacci numbers.
-mov $1,$0
-mul $1,10
-div $1,20
-sub $1,1
+mul $0,10
+div $0,20
+sub $0,1

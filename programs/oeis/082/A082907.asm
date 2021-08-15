@@ -4,3 +4,4 @@
 seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 mov $1,32
 gcd $1,$0
+mov $0,$1

@@ -5,6 +5,5 @@ seq $0,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
 lpb $0
   dif $0,2
 lpe
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

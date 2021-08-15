@@ -7,3 +7,4 @@ lpb $0
   seq $2,161935 ; 28-gonal numbers: a(n) = n*(13*n - 12).
   add $1,$2
 lpe
+mov $0,$1

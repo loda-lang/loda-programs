@@ -9,3 +9,4 @@ lpb $0
   mod $2,2
   bin $1,$2
 lpe
+mov $0,$1

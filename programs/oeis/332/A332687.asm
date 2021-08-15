@@ -3,7 +3,7 @@
 
 sub $0,1
 mov $1,$0
-max $0,0
-seq $0,82186 ; 1 + sum of first n terms of A001221.
-add $1,$0
-add $1,1
+max $1,0
+seq $1,82186 ; 1 + sum of first n terms of A001221.
+add $0,$1
+add $0,1

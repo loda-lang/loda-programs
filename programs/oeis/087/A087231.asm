@@ -4,6 +4,5 @@
 seq $0,176961 ; a(n) = (3*2^(n+1) - 8 - (-2)^n)/6.
 add $0,2
 seq $0,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
-mov $1,$0
-div $1,2
-add $1,1
+div $0,2
+add $0,1

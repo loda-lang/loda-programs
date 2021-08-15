@@ -8,3 +8,4 @@ lpb $0
   seq $2,307912 ; a(n) = n - 1 - pi(2*n-1) + pi(n), where pi is the prime counting function.
   sub $1,$2
 lpe
+mov $0,$1

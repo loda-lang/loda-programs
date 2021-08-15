@@ -5,6 +5,5 @@ trn $0,1
 mod $0,4
 add $0,4
 bin $0,2
-mov $1,$0
-sub $1,6
-mod $1,10
+sub $0,6
+mod $0,10

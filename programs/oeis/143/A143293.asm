@@ -11,3 +11,4 @@ lpb $2
   seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
   add $1,$0
 lpe
+mov $0,$1

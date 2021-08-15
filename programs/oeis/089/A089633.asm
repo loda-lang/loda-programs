@@ -7,3 +7,4 @@ lpb $0
   seq $2,57728 ; A triangular table of decreasing powers of two (with first column all ones).
   add $1,$2
 lpe
+mov $0,$1

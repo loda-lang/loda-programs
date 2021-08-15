@@ -4,4 +4,3 @@
 mul $0,2
 div $0,3
 seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
-mov $1,$0

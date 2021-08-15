@@ -6,5 +6,4 @@ lpb $0
   seq $2,53589 ; Greatest primorial number (A002110) which divides n.
   sub $0,$2
 lpe
-mov $1,$0
-add $1,1
+add $0,1

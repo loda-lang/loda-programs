@@ -10,3 +10,4 @@ lpb $2
   seq $0,147809 ; Half the number of proper divisors (> 1) of n^2 + 1, i.e., tau(n^2 + 1)/2 - 1.
   add $1,$0
 lpe
+mov $0,$1

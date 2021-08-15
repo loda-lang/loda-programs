@@ -4,6 +4,5 @@
 add $0,1
 mul $0,2
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
-mov $1,$0
-div $1,2
-add $1,5
+div $0,2
+add $0,5

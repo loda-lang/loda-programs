@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,89033 ; Numbers n such that 7*n+3 is prime.
-mov $1,$0
-sub $1,2
-mul $1,21
-add $1,51
+sub $0,2
+mul $0,21
+add $0,51

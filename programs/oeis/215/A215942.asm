@@ -19,3 +19,4 @@ lpb $0
   sub $3,2
 lpe
 add $1,$3
+mov $0,$1

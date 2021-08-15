@@ -3,4 +3,3 @@
 
 seq $0,65252 ; The sequence A065251 reduced modulo 3 (i.e., replace every -1 with 2).
 dif $0,-2
-mov $1,$0

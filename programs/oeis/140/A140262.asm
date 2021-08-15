@@ -3,4 +3,3 @@
 
 seq $0,140260 ; Those n for which A140259(n) = A002264(n+11).
 mod $0,9
-mov $1,$0

@@ -4,5 +4,4 @@
 dif $0,2
 seq $0,40139 ; Continued fraction for sqrt(152).
 div $0,2
-mov $1,$0
-mul $1,3
+mul $0,3

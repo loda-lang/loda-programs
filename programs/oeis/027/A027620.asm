@@ -3,6 +3,6 @@
 
 add $0,3
 mov $1,$0
-sub $0,2
-pow $1,2
-mul $1,$0
+pow $0,2
+sub $1,2
+mul $0,$1

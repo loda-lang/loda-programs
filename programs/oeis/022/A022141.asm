@@ -20,3 +20,4 @@ lpb $0
   sub $3,4
   add $4,$1
 lpe
+mov $0,$1

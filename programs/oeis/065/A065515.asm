@@ -11,3 +11,4 @@ lpb $3
   seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $1,$0
 lpe
+mov $0,$1

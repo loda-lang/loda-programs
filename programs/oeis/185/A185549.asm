@@ -3,4 +3,3 @@
 
 pow $0,3
 seq $0,135034 ; Positive integers n repeated 2n-1 times, with a leading a(0) = 0. Also: ceiling of square root of n.
-mov $1,$0

@@ -7,3 +7,4 @@ lpb $0
   add $1,3
 lpe
 add $1,4
+mov $0,$1

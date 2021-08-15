@@ -7,3 +7,4 @@ lpb $0
   seq $2,56829 ; Nearest integer to n^2/6.
   add $1,$2
 lpe
+mov $0,$1

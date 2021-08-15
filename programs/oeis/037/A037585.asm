@@ -3,4 +3,3 @@
 
 seq $0,33116 ; Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,0.
 seq $0,63204 ; Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 25 ).
-mov $1,$0

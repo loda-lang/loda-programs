@@ -4,5 +4,4 @@
 mul $0,3
 add $0,2
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $1,$0
-div $1,2
+div $0,2

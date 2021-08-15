@@ -9,6 +9,5 @@ lpb $0
   sub $0,1
   add $1,4
 lpe
-mov $1,$0
-div $1,4
-add $1,1
+div $0,4
+add $0,1

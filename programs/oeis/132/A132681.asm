@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,130296 ; Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 < j <= i = 1,2,3,...
-mov $1,$0
-sub $1,1
+sub $0,1

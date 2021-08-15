@@ -11,3 +11,4 @@ lpb $0
   seq $0,105564 ; Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
 lpe
 add $1,4
+mov $0,$1

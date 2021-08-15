@@ -3,5 +3,4 @@
 
 seq $0,57538 ; Birthday set of order 5: numbers congruent to +/-1 modulo 2, 3, 4 and 5.
 pow $0,2
-mov $1,$0
-div $1,120
+div $0,120

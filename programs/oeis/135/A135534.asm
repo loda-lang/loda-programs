@@ -3,17 +3,17 @@
 
 add $0,1
 mov $1,$0
-lpb $0
-  div $1,$0
-  bin $1,$0
+lpb $1
+  div $0,$1
+  bin $0,$1
   mov $2,1
-  lpb $0
-    dif $0,2
+  lpb $1
+    dif $1,2
     mul $2,2
   lpe
-  mov $0,$2
+  mov $1,$2
 lpe
-add $1,$0
-mul $1,2
-sub $1,2
-div $1,2
+add $0,$1
+mul $0,2
+sub $0,2
+div $0,2

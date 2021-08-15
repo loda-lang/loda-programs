@@ -7,5 +7,4 @@ sub $2,1
 mov $0,$2
 seq $0,6005 ; The odd prime numbers together with 1.
 pow $0,2
-mov $1,$0
-sub $1,1
+sub $0,1

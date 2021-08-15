@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,318919 ; Define b(0)=0, b(1)[1]=1, b(1)[2]=1; and for n>=2, b(n)[1] = total number of digits in b(n-1), and b(n)[2] = total number of digits in b(0),...,b(n-1); a(n) = b(n)[2].
-mov $1,$0
-sub $1,2
+sub $0,2

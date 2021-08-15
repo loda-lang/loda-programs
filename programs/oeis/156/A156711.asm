@@ -3,9 +3,8 @@
 
 mov $3,$0
 mul $0,12
-mov $1,$0
-pow $1,2
-add $1,28
+pow $0,2
+add $0,28
 mov $2,$3
 mul $2,127
-add $1,$2
+add $0,$2

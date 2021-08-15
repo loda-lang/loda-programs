@@ -10,3 +10,4 @@ lpb $0
   add $1,$3
   max $3,1
 lpe
+mov $0,$1

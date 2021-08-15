@@ -6,4 +6,3 @@ lpb $0,$0
   sub $0,$2
 lpe
 bin $0,$2
-mov $1,$0

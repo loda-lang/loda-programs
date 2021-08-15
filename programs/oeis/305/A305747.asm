@@ -3,4 +3,3 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,33677 ; Smallest divisor of n >= sqrt(n).
-mov $1,$0

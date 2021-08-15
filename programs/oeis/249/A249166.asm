@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
-mov $1,$0

@@ -22,3 +22,4 @@ lpb $5
   sub $5,1
 lpe
 add $1,1
+mov $0,$1

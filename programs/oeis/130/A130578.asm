@@ -3,5 +3,4 @@
 
 add $0,2
 seq $0,5252 ; a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k,2k).
-mov $1,$0
-sub $1,1
+sub $0,1

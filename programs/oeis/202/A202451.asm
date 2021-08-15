@@ -4,5 +4,4 @@
 seq $0,127948 ; Triangle, A004736 * A127899.
 max $0,0
 seq $0,22087 ; Fibonacci sequence beginning 0, 4.
-mov $1,$0
-div $1,4
+div $0,4

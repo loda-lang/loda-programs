@@ -7,6 +7,5 @@ add $2,2
 bin $0,$2
 add $0,3
 pow $0,$2
-mov $1,$0
-mul $1,9
-div $1,80
+mul $0,9
+div $0,80

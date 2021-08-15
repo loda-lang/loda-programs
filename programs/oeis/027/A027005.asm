@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,27963 ; T(n,n+3), T given by A027960.
-mov $1,$0

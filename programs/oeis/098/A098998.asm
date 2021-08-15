@@ -4,10 +4,10 @@
 seq $0,40 ; The prime numbers.
 mul $0,11
 mov $1,$0
-sub $0,2
-sub $1,5
-mul $0,$1
-mov $1,$0
-sub $1,340
-div $1,11
-add $1,30
+sub $0,5
+sub $1,2
+mul $1,$0
+mov $0,$1
+sub $0,340
+div $0,11
+add $0,30

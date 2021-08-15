@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,290254 ; The viabin numbers of the self-conjugate integer partitions.
-mov $1,$0
-mul $1,2
+mul $0,2

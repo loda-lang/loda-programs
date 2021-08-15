@@ -4,4 +4,3 @@
 add $0,2
 seq $0,56965 ; a(n) = n - (reversal of digits of n).
 sub $0,1
-add $1,$0

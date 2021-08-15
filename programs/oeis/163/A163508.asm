@@ -6,7 +6,6 @@ pow $0,4
 mul $0,2
 sub $0,1
 seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-mov $1,$0
-sub $1,22
-div $1,4
-add $1,5
+sub $0,22
+div $0,4
+add $0,5

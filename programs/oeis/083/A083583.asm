@@ -3,7 +3,7 @@
 
 seq $0,169545 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^35 = I.
 mov $1,$0
-gcd $0,2
-mul $1,2
-add $1,$0
-sub $1,2
+mul $0,2
+gcd $1,2
+add $0,$1
+sub $0,2

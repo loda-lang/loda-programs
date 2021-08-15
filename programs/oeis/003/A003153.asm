@@ -3,4 +3,3 @@
 
 seq $0,186222 ; Adjusted joint rank sequence of (g(i)) and (f(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and squares.  Complement of A186221.
 add $0,1
-mov $1,$0

@@ -3,7 +3,6 @@
 
 seq $0,88502 ; Numbers n such that (n^2 - 5)/4 is prime.
 pow $0,2
-mov $1,$0
-sub $1,25
-div $1,4
-add $1,5
+sub $0,25
+div $0,4
+add $0,5

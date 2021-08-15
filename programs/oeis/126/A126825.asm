@@ -3,4 +3,3 @@
 
 seq $0,64987 ; a(n) = n*sigma(n).
 mod $0,3
-mov $1,$0

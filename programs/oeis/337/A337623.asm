@@ -7,3 +7,4 @@ seq $0,337624 ; a(n) is the least positive integer in base n that when multiplie
 add $1,$2
 add $1,$2
 mul $1,$0
+mov $0,$1

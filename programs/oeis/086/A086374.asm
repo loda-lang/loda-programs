@@ -5,5 +5,4 @@ mov $2,$0
 mod $0,2
 seq $2,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
 add $0,$2
-mov $1,$0
-sub $1,1
+sub $0,1

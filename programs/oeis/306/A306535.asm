@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
-mov $1,$0

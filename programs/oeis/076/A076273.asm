@@ -3,5 +3,4 @@
 
 seq $0,158611 ; 0, 1 and the primes.
 seq $0,13634 ; a(n) = nextprime(n) + n.
-mov $1,$0
-sub $1,1
+sub $0,1

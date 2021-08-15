@@ -8,4 +8,3 @@ lpb $0
   seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   sub $0,$2
 lpe
-mov $1,$0

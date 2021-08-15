@@ -3,6 +3,6 @@
 
 pow $0,2
 mov $1,$0
-seq $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
-add $1,$0
-div $1,2
+seq $1,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+add $0,$1
+div $0,2

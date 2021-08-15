@@ -39,3 +39,4 @@ lpb $5
   add $11,1
   add $1,$11
 lpe
+mov $0,$1

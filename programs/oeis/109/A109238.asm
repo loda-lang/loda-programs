@@ -4,3 +4,4 @@
 seq $0,182767 ; Beatty sequence for 1+e^2.
 add $1,$0
 div $1,2
+mov $0,$1

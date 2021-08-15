@@ -5,5 +5,4 @@ lpb $0
   seq $0,49084 ; a(n) = pi(n) if n is prime, otherwise 0.
   sub $0,1
 lpe
-mov $1,$0
-add $1,1
+add $0,1

@@ -3,6 +3,5 @@
 
 mul $0,3
 seq $0,106832 ; 4*n-2 and 6*n alternatively.
-mov $1,$0
-div $1,2
-mul $1,3
+div $0,2
+mul $0,3

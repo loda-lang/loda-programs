@@ -7,3 +7,4 @@ lpb $0
   seq $2,252233 ; Characteristic function for the integers that are the product of an odd number of primes each with multiplicity one.
   add $1,$2
 lpe
+mov $0,$1

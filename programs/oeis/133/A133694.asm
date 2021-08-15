@@ -3,6 +3,5 @@
 
 add $0,2
 bin $0,2
-mov $1,$0
-mul $1,3
-sub $1,2
+mul $0,3
+sub $0,2

@@ -9,3 +9,4 @@ lpb $0
   seq $2,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
   add $1,$2
 lpe
+mov $0,$1

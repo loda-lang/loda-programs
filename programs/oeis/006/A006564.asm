@@ -4,6 +4,5 @@
 mul $0,2
 add $0,1
 seq $0,64096 ; Fifth diagonal of triangle A064094.
-mov $1,$0
-div $1,16
-add $1,1
+div $0,16
+add $0,1

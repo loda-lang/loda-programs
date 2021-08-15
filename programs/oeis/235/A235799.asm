@@ -5,4 +5,3 @@ mov $2,$0
 seq $0,235796 ; 2*n - 1 - sigma(n).
 pow $2,2
 add $0,$2
-mov $1,$0

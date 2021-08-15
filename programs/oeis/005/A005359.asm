@@ -9,3 +9,4 @@ lpb $0
   trn $0,1
 lpe
 div $1,3
+mov $0,$1

@@ -5,7 +5,6 @@ seq $0,106387 ; Numbers j such that 6j^2 + 6j + 1 = 11k.
 mov $2,$0
 pow $2,2
 add $0,$2
-mov $1,$0
-sub $1,20
-div $1,2
-add $1,11
+sub $0,20
+div $0,2
+add $0,11

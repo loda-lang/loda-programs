@@ -11,3 +11,4 @@ lpb $2
   seq $0,166515 ; Partial sum of A166514.
   add $1,$0
 lpe
+mov $0,$1

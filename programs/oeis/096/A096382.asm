@@ -8,4 +8,4 @@ bin $0,3
 mul $0,2
 add $0,$2
 mov $1,$0
-mul $1,6
+mul $0,6

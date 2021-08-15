@@ -3,4 +3,3 @@
 
 mul $0,2
 seq $0,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-mov $1,$0

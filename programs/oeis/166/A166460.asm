@@ -11,5 +11,4 @@ lpb $0
   sub $3,6
 lpe
 seq $0,65090 ; Natural numbers which are not odd primes: composites plus 1 and 2.
-mov $1,$0
-sub $1,1
+sub $0,1

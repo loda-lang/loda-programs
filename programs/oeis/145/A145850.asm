@@ -3,5 +3,4 @@
 
 seq $0,98871 ; Sums of distinct powers of 4 plus 1.
 mul $0,16
-mov $1,$0
-sub $1,15
+sub $0,15

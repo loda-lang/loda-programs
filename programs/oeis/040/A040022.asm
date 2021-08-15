@@ -3,4 +3,3 @@
 
 seq $0,40282 ; Continued fraction for sqrt(300).
 seq $0,53828 ; Sum of digits of (n written in base 7).
-mov $1,$0

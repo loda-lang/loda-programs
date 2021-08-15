@@ -3,4 +3,3 @@
 
 add $0,1
 seq $0,43563 ; Number of runs in base-11 representation of n.
-mov $1,$0

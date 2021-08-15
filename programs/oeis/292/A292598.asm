@@ -8,3 +8,4 @@ lpb $0
   seq $2,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
   add $1,$2
 lpe
+mov $0,$1

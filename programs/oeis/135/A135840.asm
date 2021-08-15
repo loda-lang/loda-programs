@@ -5,4 +5,3 @@ seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 seq $0,290255 ; Number of 0's following directly the first 1 in the binary representation of n.
 add $0,2
 div $0,2
-mov $1,$0

@@ -5,4 +5,3 @@ seq $0,122747 ; Bishops on an n X n board (see Robinson paper for details).
 mov $2,$0
 div $2,2
 sub $0,$2
-mov $1,$0

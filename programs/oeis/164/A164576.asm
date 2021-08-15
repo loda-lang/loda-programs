@@ -3,5 +3,4 @@
 
 add $0,1
 seq $0,117794 ; Hexagonal numbers divisible by 6.
-mov $1,$0
-div $1,6
+div $0,6

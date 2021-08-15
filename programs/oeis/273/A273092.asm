@@ -4,4 +4,3 @@
 seq $0,126646 ; a(n) = 2^(n+1) - 1.
 div $0,2
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mov $1,$0

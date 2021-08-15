@@ -4,5 +4,4 @@
 add $0,1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 trn $0,3
-mov $1,$0
-add $1,3
+add $0,3

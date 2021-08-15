@@ -15,3 +15,4 @@ lpb $0
   sub $5,3
 lpe
 trn $1,3
+mov $0,$1

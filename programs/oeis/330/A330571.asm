@@ -3,4 +3,3 @@
 
 seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
 pow $0,2
-mov $1,$0

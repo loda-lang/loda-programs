@@ -7,3 +7,4 @@ lpb $0
   seq $2,102683 ; Number of digits 9 in decimal representation of n.
   add $1,$2
 lpe
+mov $0,$1

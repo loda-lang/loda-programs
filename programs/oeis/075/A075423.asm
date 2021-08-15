@@ -6,4 +6,3 @@ lpb $0
   seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
   div $0,$2
 lpe
-mov $1,$0

@@ -4,7 +4,6 @@
 add $0,1
 mul $0,3
 seq $0,45806 ; 6-ish numbers (end in 23, 27, 61, 89).
-mov $1,$0
-sub $1,89
-div $1,3
-add $1,13
+sub $0,89
+div $0,3
+add $0,13

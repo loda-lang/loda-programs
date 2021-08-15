@@ -59,3 +59,4 @@ lpb $5
   div $7,4
   add $1,$7
 lpe
+mov $0,$1

@@ -4,5 +4,4 @@
 add $0,2
 seq $0,77973 ; Expansion of 1/(1+x-2*x^3).
 add $0,3
-mov $1,$0
-div $1,4
+div $0,4

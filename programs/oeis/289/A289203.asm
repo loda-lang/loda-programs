@@ -10,3 +10,4 @@ lpe
 gcd $0,2
 sub $1,$0
 add $1,3
+mov $0,$1
