@@ -4,9 +4,9 @@
 
 mov $1,$0
 seq $1,2024
-; $0 = n = row in triangle
+; $1 = n = row in triangle
 seq $0,2262
 add $0,1
-; $1 = k = column in triangle + 1
-sub $1,$0 ; $0 = n-k
-bin $0,$1 ; $1 = binomial(k,n-k)
+; $0 = k = column in triangle + 1
+sub $1,$0 ; $1 = n-k
+bin $0,$1 ; $0 = binomial(k,n-k)

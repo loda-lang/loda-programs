@@ -6,8 +6,8 @@ add $0,1
 mov $1,$0
 pow $0,2
 add $0,$1
-; Now $1 hold n^n + n
+; Now $0 hold n^n + n
 sub $0,1354363
-; Absolute value of $1
+; Take the absolute value
 sub $2,$0
 max $0,$2

@@ -4,11 +4,11 @@
 
 mov $1,$0
 seq $0,20639
-; $1 contains A020639
+; $0 contains A020639
 ; Data A: 1,2,3,2,5,2,7,2,3,2
 add $1,1
 div $1,$0
-; Check $0 divide by A020639($0) 
+; Check $1 divide by A020639($0) 
 ; Data B: 1,1,1,2,1,3,1,4,3,5,1
 mov $2,$1
 cmp $2,1
