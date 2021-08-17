@@ -5,6 +5,5 @@ mul $0,4
 seq $0,266721 ; Decimal representation of the middle column of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
 add $0,1
 seq $0,285953 ; Positions of 0 in A285952; complement of A285954.
-sub $0,8
 div $0,4
-add $0,1
+sub $0,1
