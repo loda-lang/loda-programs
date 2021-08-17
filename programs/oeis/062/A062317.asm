@@ -3,7 +3,5 @@
 
 seq $0,47221 ; Numbers that are congruent to {2, 3} mod 5.
 pow $0,2
-add $1,$0
-div $1,5
-add $1,1
-mov $0,$1
+div $0,5
+add $0,1
