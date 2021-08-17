@@ -4,11 +4,11 @@
 lpb $0
   add $1,1
   mov $2,$0
-  sub $0,1
   mod $2,3
-  gcd $2,$0
-  div $0,$2
+  sub $2,1
+  mul $0,$2
+  div $0,2
 lpe
-add $1,1
-mod $1,2
 mov $0,$1
+add $0,1
+mod $0,2
