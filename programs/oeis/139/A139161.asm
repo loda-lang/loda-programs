@@ -3,6 +3,5 @@
 
 add $0,1
 seq $0,131491 ; 2*prime(n)!.
-sub $0,7
 div $0,6
-add $0,3
+add $0,1

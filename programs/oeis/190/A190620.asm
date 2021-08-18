@@ -3,6 +3,5 @@
 
 seq $0,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
 seq $0,38572 ; a(n) = n rotated one binary place to the right.
-sub $0,3
 mul $0,2
-add $0,5
+sub $0,1

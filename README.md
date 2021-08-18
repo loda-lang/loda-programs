@@ -9,7 +9,7 @@ The [programs/oeis](programs/oeis) folder contains programs that generate intege
 
 If you would like to receive updates on the miner findings, you can check the [changes on the master branch](https://github.com/ckrause/loda/commits/master) for new and updated programs or get real-time updates from [@lodaminer](https://twitter.com/lodaminer) on Twitter.
 
-:woman_teacher: You can try out the LODA language using the [interactive web interface](https://neoneye.github.io/lodalab/?id=203) of [LODA Lab](https://github.com/neoneye/loda-lab) written by Simon Strandgaard, or use one of the command-line tools (see below).
+:woman_teacher: You can try out the LODA language using the [interactive web interface](https://neoneye.github.io/lodalab/?id=2994) of [LODA Lab](https://github.com/neoneye/loda-lab) written by Simon Strandgaard, or use one of the command-line tools (see below).
 
 [Contributions](CONTRIBUTING.md) are warmly welcome! You can get in touch with us by sending a mail to "me" at ckrause dot org or via GitHub issues. If you would like to chat with us, we use Slack.
 
@@ -17,29 +17,25 @@ If you would like to receive updates on the miner findings, you can check the [c
 
 The LODA language is an assembly language with focus on arithmetic and number-theoretical operations. It supports an unbounded set of memory cells storing integers, common arithmetic operations, an operation for calling other programs, and a loop based on a lexicographical order descent on memory regions. The name "LODA" means _"Lexicographical Order Descent Assembly."_
 
-Here is a basic example of a LODA program for computing the Fibonacci numbers:
+Here is a basic example of a LODA program for computing the initial digit of the cubes:
 
 ```asm
-; A000045: Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+; A002994: Initial digit of cubes: 0,1,8,2,6,1,2,3,5,7,1,1,1,2,2,3,...
 
-; argument is stored in $0
+; Memory cell $0 is used to pass the argument and store the result. 
 
-mov $3,1      ; assign $3 := 1
-lpb $0        ; loop as long as $0 decreases
-  sub $0,1    ; decrement $0
-  mov $2,$1   ; assign $2 := $1
-  add $1,$3   ;    add $1 := $1 + $3
-  mov $3,$2   ; assign $3 := $2
-lpe           ; end of loop
-mov $0,$1     ; store result in $0
-
-; result is stored in $1
+pow $0,3     ; take cube of $0
+lpb $0       ; loop as long as $0 decreases
+  mov $1,$0  ; assign $1 := $0
+  div $0,10  ; divide $0 by 10
+lpe          ; end of loop
+mov $0,$1    ; store result in $0
 ```
 
-To evaluate this program to an integer sequence, you can run:
+You can try it out using the [interactive web interface](https://neoneye.github.io/lodalab/?id=2994) of LODA Lab or the LODA command-line tool:
 ```bash
-./loda eval A000045
-0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181
+./loda eval A002994
+0,1,8,2,6,1,2,3,5,7
 ```
 
 The language is not limited to sequences -- it supports an arbitrary number of input and outputs. It is more powerful than primitive recursion (see, e.g., [program for the Ackermann function](programs/general/ackermann.asm)), but termination is nevertheless guaranteed.
@@ -48,7 +44,7 @@ For a detailed description of the language features, please take a look the [lan
 
 ## Command-Line Tool (C++)
 
-The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. There is also an implementation in Rust: [LODA Lab](https://github.com/neoneye/loda-lab) with an [interactive web interface](https://neoneye.github.io/lodalab/?id=203) written by Simon Strandgaard.
+The LODA command-line tool is written in C++ and is published under the terms of the Apache License 2.0. There is also an implementation in Rust: [LODA Lab](https://github.com/neoneye/loda-lab) with an [interactive web interface](https://neoneye.github.io/lodalab/?id=2994) written by Simon Strandgaard.
 
 There are currently no binaries available. You need to build it by running `make` in the `src` folder. It has been tested on Linux and MacOS and does not require any external libraries, but only the `wget`, `gzip` command-line tools.
 
@@ -137,7 +133,7 @@ Run a maintenance for all programs in the [programs/oeis](programs/oeis) folder.
 
 ## Related Projects
 
-* [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an implementation of the LODA language in Rust with an [interactive web interface](https://neoneye.github.io/lodalab/?id=203)!
+* [LODA Lab](https://github.com/neoneye/loda-lab) by Simon Strandgaard is an implementation of the LODA language in Rust with an [interactive web interface](https://neoneye.github.io/lodalab/?id=2994)!
 * [jOEIS](https://github.com/archmageirvine/joeis) by Sean A. Irvine and Georg Fischer is a collection of pure Java programs implementing sequences from the OEIS.
 * [Sequence Database](http://sequencedb.net) by [Jon Maiga](http://www.jonkagstrom.com/) is a database with machine generated integer and decimal sequences.
 * [The Ramanujan Machine](https://github.com/ShaharGottlieb/MasseyRamanujan) by Shahar Gottlieb is an algorithmic approach to discover new mathematical conjectures.

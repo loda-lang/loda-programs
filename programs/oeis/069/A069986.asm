@@ -1,8 +1,9 @@
 ; A069986: Denominator of b(n)=binomial(2n,n)^3*(42n+5)/2^(12n+4).
 ; 16,8192,33554432,17179869184,562949953421312,288230376151711744,1180591620717411303424,604462909807314587353088,158456325028528675187087900672,81129638414606681695789005144064
 
-mul $0,4
-seq $0,86117 ; Denominator of mean deviation of a symmetrical binomial distribution on n elements.
+mul $0,2
+add $0,1
+seq $0,46161 ; a(n) = denominator of binomial(2n,n)/4^n.
 pow $0,3
 div $0,8
 mul $0,16
