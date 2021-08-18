@@ -1,26 +1,10 @@
 ; A291359: The arithmetic function u(n,2,5).
 ; 6,2,3,2,5,2,6,2,3,2,6,2,6,2,3,2,6,2,6,2,3,2,6,2,5,2,3,2,6,2,6,2,3,2,5,2,6,2,3,2,6,2,6,2,3,2,6,2,6,2,3,2,6,2,5,2,3,2,6,2,6,2,3,2,5,2,6,2,3,2,6,2,6,2,3,2,6,2,6,2,3,2,6,2,5,2,3,2,6,2,6,2,3,2,5,2,6,2,3,2
 
-add $0,1
-mov $1,2
-mov $3,4
-mov $4,4
-lpb $3
-  add $2,7
-  mov $5,$4
-  lpb $5
-    add $6,1
-    mov $7,$0
-    mod $7,$1
-    add $1,$2
-    cmp $7,0
-    sub $5,$7
-  lpe
-  cmp $6,0
-  cmp $6,0
-  mov $7,$1
-  add $1,1
-  pow $7,$6
-  sub $3,$7
+mul $0,7
+add $0,6
+seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+lpb $0
+  mul $0,78
+  gcd $0,6
 lpe
-mov $0,$1
