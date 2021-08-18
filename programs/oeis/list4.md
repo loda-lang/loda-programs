@@ -94,6 +94,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A202109](http://oeis.org/A202109) ([program](202/A202109.asm)): n^3*(n+1)^3*(n+2)^3/72.
 * [A202141](http://oeis.org/A202141) ([program](202/A202141.asm)): a(n) = 13*n^2 - 16*n + 5.
 * [A202156](http://oeis.org/A202156) ([program](202/A202156.asm)): y-values in the solution to  x^2 - 13*y^2 = -1.
+* [A202169](http://oeis.org/A202169) ([program](202/A202169.asm)): Size of maximal independent set in graph S_3(n).
 * [A202174](http://oeis.org/A202174) ([program](202/A202174.asm)): In base 10 lunar arithmetic, a(n) is the smallest number than has exactly n different square roots (or -1 if no such number exists).
 * [A202194](http://oeis.org/A202194) ([program](202/A202194.asm)): Number of (n+2)X(n+2) binary arrays avoiding patterns 001 and 101 in rows and columns
 * [A202195](http://oeis.org/A202195) ([program](202/A202195.asm)): Number of (n+2) X 3 binary arrays avoiding patterns 001 and 101 in rows and columns.
@@ -143,6 +144,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A203135](http://oeis.org/A203135) ([program](203/A203135.asm)): Indices of hexagonal numbers that are also decagonal
 * [A203136](http://oeis.org/A203136) ([program](203/A203136.asm)): Indices of decagonal numbers that are also hexagonal.
 * [A203150](http://oeis.org/A203150) ([program](203/A203150.asm)): (n-1)-st elementary symmetric function of the first n terms of (1,2,1,2,1,2,1,2,1,2,...)=A000034.
+* [A203157](http://oeis.org/A203157) ([program](203/A203157.asm)): (n-1)-st elementary symmetric function of the first n triangular numbers.
 * [A203230](http://oeis.org/A203230) ([program](203/A203230.asm)): (n-1)-st elementary symmetric function of the first n terms of A010684.
 * [A203232](http://oeis.org/A203232) ([program](203/A203232.asm)): (n-1)-st elementary symmetric function of the first n terms of the periodic sequence (2,3,2,3,2,3,...).
 * [A203234](http://oeis.org/A203234) ([program](203/A203234.asm)): (n-1)-st elementary symmetric function of the first n terms of the periodic sequence (1,1,1,2,1,1,1,2,...).
@@ -155,6 +157,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A203298](http://oeis.org/A203298) ([program](203/A203298.asm)): Second elementary symmetric function of the first n terms of (1,2,2,3,3,4,4,5,5...).
 * [A203299](http://oeis.org/A203299) ([program](203/A203299.asm)): Second elementary symmetric function of the first n terms of (2,2,3,3,4,4,5,5...).
 * [A203302](http://oeis.org/A203302) ([program](203/A203302.asm)): Cumulative sums of A201206.
+* [A203310](http://oeis.org/A203310) ([program](203/A203310.asm)): a(n) = A203309(n+1)/A203309(n).
 * [A203425](http://oeis.org/A203425) ([program](203/A203425.asm)): a(n) = w(n+1)/(4*w(n)), where w = A203424.
 * [A203429](http://oeis.org/A203429) ([program](203/A203429.asm)): w(n+1)/(3*w(n)), where w=A203428.
 * [A203536](http://oeis.org/A203536) ([program](203/A203536.asm)): Number of nX2 0..2 arrays with every element neighboring horizontally or vertically both a 0 and a 1
@@ -1855,6 +1858,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A228220](http://oeis.org/A228220) ([program](228/A228220.asm)): Number of second differences of arrays of length 5 of numbers in 0..n.
 * [A228221](http://oeis.org/A228221) ([program](228/A228221.asm)): Number of second differences of arrays of length 6 of numbers in 0..n.
 * [A228229](http://oeis.org/A228229) ([program](228/A228229.asm)): Recurrence a(n) = n*(n + 1)*a(n-1) + 1 with a(0) = 1.
+* [A228230](http://oeis.org/A228230) ([program](228/A228230.asm)): Recurrence a(n) = 1/2*n*(n + 1)*a(n-1) + 1 with a(0) = 1.
 * [A228261](http://oeis.org/A228261) ([program](228/A228261.asm)): Number of third differences of arrays of length 5 of numbers in 0..n.
 * [A228290](http://oeis.org/A228290) ([program](228/A228290.asm)): a(n) = n^6 + n^5 + n^4 + n^3 + n^2 + n.
 * [A228291](http://oeis.org/A228291) ([program](228/A228291.asm)): a(n) = Sum_{k=1..7} n^k.
@@ -1947,6 +1951,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A229152](http://oeis.org/A229152) ([program](229/A229152.asm)): a(n) = n^9*(11*n+9)/2.
 * [A229154](http://oeis.org/A229154) ([program](229/A229154.asm)): The clubs patterns appearing in n X n coins, with rotation allowed.
 * [A229183](http://oeis.org/A229183) ([program](229/A229183.asm)): a(n) = n*(n^2 + 3)/2.
+* [A229232](http://oeis.org/A229232) ([program](229/A229232.asm)): Number of undirected circular permutations pi(1), ..., pi(n) of 1, ..., n with the n numbers pi(1)*pi(2)-1, pi(2)*pi(3)-1, ..., pi(n-1)*pi(n)-1, pi(n)*pi(1)-1 all prime.
 * [A229253](http://oeis.org/A229253) ([program](229/A229253.asm)): Total number of elements of nonempty subsets of divisors of n.
 * [A229274](http://oeis.org/A229274) ([program](229/A229274.asm)): Composite squarefree numbers n such that p+tau(n) divides n-sigma(n), where p are the prime factors of n, tau(n) = A000005(n) and sigma(n) = A000203(n).
 * [A229277](http://oeis.org/A229277) ([program](229/A229277.asm)): Number of ascending runs in {1,...,3}^n.
@@ -2075,6 +2080,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A231149](http://oeis.org/A231149) ([program](231/A231149.asm)): Greatest integer k such that n+1 + ... + n+k <= 1 + ... + n.
 * [A231151](http://oeis.org/A231151) ([program](231/A231151.asm)): Least integer k such that n+1 + ... + n+k > 1 + ... + n.
 * [A231204](http://oeis.org/A231204) ([program](231/A231204.asm)): If n = Sum_{i=0..m} c(i)*2^i, c(i) = 0 or 1, then a(n) = (m-i)*c(i).
+* [A231209](http://oeis.org/A231209) ([program](231/A231209.asm)): Smallest squarefree number k with 2^n ways to write k as k = x*y, where x, y = squarefree numbers, 1 <= x <= k, 1 <= y <= k.
 * [A231233](http://oeis.org/A231233) ([program](231/A231233.asm)): Triangle T(n,k) = greatest prime factor of n*k+1.
 * [A231279](http://oeis.org/A231279) ([program](231/A231279.asm)): a(n) = Jacobsthal(n^2), where Jacobsthal(n) = A001045(n), for n>=1.
 * [A231303](http://oeis.org/A231303) ([program](231/A231303.asm)): Recurrence a(n) = a(n-2) + n^M for M=4, starting with a(0)=0, a(1)=1.
@@ -2737,6 +2743,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A244048](http://oeis.org/A244048) ([program](244/A244048.asm)): Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
 * [A244049](http://oeis.org/A244049) ([program](244/A244049.asm)): Sum of all proper divisors of all positive integers <= n.
 * [A244050](http://oeis.org/A244050) ([program](244/A244050.asm)): Partial sums of A243980.
+* [A244056](http://oeis.org/A244056) ([program](244/A244056.asm)): Maximum score achievable in the 2048 game on an n X n grid.
 * [A244063](http://oeis.org/A244063) ([program](244/A244063.asm)): Number of prime factors (with multiplicity) of the number of distinct prime factors of n; i.e., Omega(omega(n)).
 * [A244082](http://oeis.org/A244082) ([program](244/A244082.asm)): a(n) = 32*n^2.
 * [A244151](http://oeis.org/A244151) ([program](244/A244151.asm)): 0-additive sequence: start with a(1) = 2; thereafter, a(n) = smallest number not already in sequence which is not the sum of any previous two terms.

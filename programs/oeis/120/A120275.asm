@@ -3,12 +3,10 @@
 
 dif $0,2
 mul $0,2
+trn $0,1
 mov $1,10
-mov $2,4
-add $2,$0
-gcd $1,$2
-trn $1,$0
-div $1,2
+bin $1,$0
 mul $1,2
-add $1,3
 mov $0,$1
+add $0,3
+mod $0,10

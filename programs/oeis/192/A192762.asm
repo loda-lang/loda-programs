@@ -1,14 +1,5 @@
 ; A192762: Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 ; 0,1,6,13,26,47,82,139,232,383,628,1025,1668,2709,4394,7121,11534,18675,30230,48927,79180,128131,207336,335493,542856,878377,1421262,2299669,3720962,6020663,9741658,15762355,25504048,41266439,66770524
 
-mov $2,4
-lpb $0
-  sub $0,1
-  add $4,2
-  add $1,$4
-  sub $1,1
-  mov $3,$4
-  mov $4,$2
-  add $2,$3
-lpe
-mov $0,$1
+seq $0,179991 ; Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.
+sub $0,2

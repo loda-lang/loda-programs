@@ -8,6 +8,5 @@ dif $0,4
 lpb $0
   bin $0,4
 lpe
-mov $1,$0
 mul $0,2
 add $0,1

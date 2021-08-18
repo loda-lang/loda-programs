@@ -7,9 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 lpb $0
-  lpb $0
-    div $0,10
-  lpe
-  mov $1,$0
+  mov $0,0
+  mov $1,0
 lpe
 mov $0,$1
