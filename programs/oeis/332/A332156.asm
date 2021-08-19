@@ -7,11 +7,9 @@ pow $1,$0
 mul $1,5
 add $1,5
 bin $1,2
-div $1,9
-mul $1,5
-sub $1,155
-div $1,25
-sub $1,26
-div $1,5
-add $1,6
+div $1,45
+mul $1,4
 mov $0,$1
+sub $0,131
+div $0,20
+add $0,6

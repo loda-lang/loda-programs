@@ -3,8 +3,7 @@
 
 add $0,1
 seq $0,47266 ; Numbers that are congruent to {0, 1, 5} mod 6.
-add $1,$0
-div $1,6
-add $1,$0
-sub $1,1
-mov $0,$1
+add $2,$0
+div $2,6
+add $0,$2
+sub $0,1

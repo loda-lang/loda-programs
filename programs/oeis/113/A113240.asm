@@ -2,14 +2,15 @@
 ; 1,2,5,6,13,14,25,30,49,50,97,98,165,186,325,326,621,622,1161,1230,2257,2258,4481,4498,8597,8858,17125,17126,34077,34078,66985,68014,133553,133634,267057,267058,529205,533306,1058261,1058262,2115133
 
 mov $2,$0
-mov $3,$0
-lpb $3
-  mov $0,$2
-  sub $3,1
-  sub $0,$3
+add $2,1
+mov $4,$0
+lpb $2
+  mov $0,$4
+  sub $2,1
+  sub $0,$2
   add $0,1
-  seq $0,247146 ; As a binary numeral, the bit 2^(m-1) of a(n) is 1 iff m is a proper divisor of n.
-  add $1,$0
+  seq $0,328337 ; The number whose binary indices are the nontrivial divisors of n (greater than 1 and less than n).
+  add $0,1
+  add $3,$0
 lpe
-add $1,1
-mov $0,$1
+mov $0,$3

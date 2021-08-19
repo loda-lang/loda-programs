@@ -5,6 +5,4 @@ mov $2,1
 trn $2,$0
 seq $0,109128 ; Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) + 1 for 0<k<n, T(n,0) = T(n,n) = 1.
 sub $0,$2
-add $1,$0
-add $1,1
-mov $0,$1
+add $0,1

@@ -1,5 +1,16 @@
 ; A145607: Numbers k such that (3*(2*k + 1)^2 + 2)/5 is a square.
 ; 0,4,35,279,2200,17324,136395,1073839,8454320,66560724,524031475,4125691079,32481497160,255726286204,2013328792475,15850904053599,124793903636320,982500325036964,7735208696659395,60899169248238199
 
-seq $0,253470 ; Indices of centered triangular numbers (A005448) which are also centered pentagonal numbers (A005891).
-sub $0,1
+mov $1,5
+mov $2,4
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $2,$1
+  add $2,$1
+  add $2,$1
+  add $1,1
+  add $1,$2
+lpe
+mov $0,$1
+div $0,9
