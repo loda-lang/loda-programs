@@ -6,8 +6,7 @@ lpb $0
   sub $0,1
   seq $2,1449 ; Binomial coefficients binomial(5n,n).
   add $3,$2
-  mov $2,$3
 lpe
-mov $0,$2
+mov $0,$3
 div $0,5
 add $0,1
