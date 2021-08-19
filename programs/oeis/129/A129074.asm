@@ -4,4 +4,4 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
 mul $0,8
-add $0,9
+add $0,25
