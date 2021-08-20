@@ -4,6 +4,5 @@
 add $0,1
 seq $0,87799 ; a(n) = 10*a(n-1) - a(n-2), starting with a(0) = 2 and a(1) = 10.
 pow $0,2
-sub $0,100
 div $0,12
-add $0,7
+sub $0,1
