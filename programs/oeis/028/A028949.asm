@@ -1,4 +1,4 @@
-; A028949: Write numbers from 1 to n(n+1)/2 in a triangular array (a) downwards and (b) across; a(n) is number of numbers in same position in both.
+; A028949: Write numbers from 1 to n(n+1)/2 in a left-justified lower triangular array (a) downwards and (b) across; a(n) is number of numbers in same position in both.
 ; 1,3,4,4,5,4,4,6,4,6,4,6,6,4,6,4,6,6,4,6,4,5,8,4,10,4,4,6,6,10,4,4,6,4,6,4,4,10,6,6,4,6,10,4,6,6,6,8,4,6,8,4,6,6,8,6,6,6,6,8,6,4,10,6,6,6,4,10,6,6,4,4,8,4,6,6,6,6,6,14,4,6,6,4,6,4,4,10,4,10,6,4,10,6,10,6,10,10,4
 
 lpb $0

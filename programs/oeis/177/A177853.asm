@@ -3,22 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $4,$0
-  mov $5,0
-  mov $6,$0
-  add $6,1
-  lpb $6
-    mov $0,$4
-    sub $6,1
-    sub $0,$6
-    seq $0,140434 ; Number of new visible points created at each step in an n X n grid.
-    add $5,$0
-  lpe
-  add $1,$5
+  seq $0,18805 ; Number of elements in the set {(x,y): 1 <= x,y <= n, gcd(x,y)=1}.
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

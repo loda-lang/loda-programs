@@ -3,18 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $5,$0
+mov $4,$0
 lpb $2
-  mov $0,$5
+  mov $0,$4
   sub $2,1
   sub $0,$2
   seq $0,83539 ; a(n) = sigma(n) * sigma(n+1): product of sigma-values for consecutive integers.
-  mov $4,$0
-  mul $4,5069
-  mov $3,$4
-  sub $3,15206
-  div $3,5069
-  add $3,3
-  add $1,$3
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

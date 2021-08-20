@@ -3,8 +3,6 @@
 
 mul $0,2
 add $0,2
-mov $1,$0
-add $0,1
-seq $1,26351 ; Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
-add $0,$1
-sub $0,2
+seq $0,288713 ; Positions of 1 in A288711; complement of A288712.
+div $0,2
+sub $0,1

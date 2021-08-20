@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $5,4
+  mov $5,1
   lpb $0
     mul $5,$0
     sub $0,1
@@ -22,4 +22,3 @@ min $6,1
 mul $6,$0
 mov $0,$4
 sub $0,$6
-div $0,4
