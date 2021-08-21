@@ -3,6 +3,3 @@
 
 mul $0,3
 seq $0,3527 ; Divisors of 2^16 - 1.
-div $0,2
-mul $0,2
-add $0,1
