@@ -1838,6 +1838,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332495](http://oeis.org/A332495) ([program](332/A332495.asm)): a(n-2) = a(n-6) + 5*(1+2*n) with a(0)=0, a(1)=2, a(2)=7, a(3)=15 for n>=4.
 * [A332519](http://oeis.org/A332519) ([program](332/A332519.asm)): a(n) = 4*(n^2+n-2).
 * [A332552](http://oeis.org/A332552) ([program](332/A332552.asm)): a(n) = A082184(n) - A082183(n).
+* [A332557](http://oeis.org/A332557) ([program](332/A332557.asm)): Number of inequivalent Z_{2^s}-linear Hadamard codes of length 2^n.
 * [A332569](http://oeis.org/A332569) ([program](332/A332569.asm)): a(n) = Sum_{k=1..n} floor(n/k) * ceiling(n/k).
 * [A332602](http://oeis.org/A332602) ([program](332/A332602.asm)): Tridiagonal matrix M read by antidiagonals: main diagonal is 1,2,2,2,2,..., two adjacent diagonals are 1,1,1,1,1,...
 * [A332613](http://oeis.org/A332613) ([program](332/A332613.asm)): Covering radius of the dihedral group code D_n.
@@ -2445,11 +2446,14 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A346403](http://oeis.org/A346403) ([program](346/A346403.asm)): a(1)=1; for n>1, a(n) gives the sum of the exponents in the different ways to write n as n = x^y, 2 <= x, 1 <= y.
 * [A346425](http://oeis.org/A346425) ([program](346/A346425.asm)): a(n) is the greatest number k such that k! <= prime(n).
 * [A346502](http://oeis.org/A346502) ([program](346/A346502.asm)): a(n) = 3n - (sum of digits of 3n in base 3).
+* [A346563](http://oeis.org/A346563) ([program](346/A346563.asm)): a(n) = n + A007978(n).
 * [A346597](http://oeis.org/A346597) ([program](346/A346597.asm)): Partial sums of A019554.
 * [A346633](http://oeis.org/A346633) ([program](346/A346633.asm)): Sum of even-indexed parts (even bisection) of the n-th composition in standard order.
 * [A346663](http://oeis.org/A346663) ([program](346/A346663.asm)): The number of nonreal roots of Sum_{k=0..n} prime(k+1)*x^k.
 * [A346759](http://oeis.org/A346759) ([program](346/A346759.asm)): a(n) = Sum_{d|n} floor(d^2/4).
 * [A346865](http://oeis.org/A346865) ([program](346/A346865.asm)): Sum of divisors of the n-th hexagonal number.
+* [A346877](http://oeis.org/A346877) ([program](346/A346877.asm)): Sum of the divisors, except the largest, of the n-th odd number.
+* [A346878](http://oeis.org/A346878) ([program](346/A346878.asm)): Sum of the divisors, except the largest, of the n-th positive even number.
 * [A346879](http://oeis.org/A346879) ([program](346/A346879.asm)): Sum of the divisors, except the smallest and the largest, of the n-th odd number.
 * [A346880](http://oeis.org/A346880) ([program](346/A346880.asm)): Sum of the divisors, except the smallest and the largest, of the n-th positive even number.
 * [A346949](http://oeis.org/A346949) ([program](346/A346949.asm)): Value of the permanent of the matrix [1-zeta^{j-k}]_{1<=j,k<=2n}, where zeta is any primitive 2n-th root of unity.

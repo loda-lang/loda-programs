@@ -3440,6 +3440,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130812](http://oeis.org/A130812) ([program](130/A130812.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 6-subsets of X containing none of X_i, (i=1,...n).
 * [A130813](http://oeis.org/A130813) ([program](130/A130813.asm)): If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 7-subsets of X containing none of X_i, (i=1,...n).
 * [A130815](http://oeis.org/A130815) ([program](130/A130815.asm)): Period 6: repeat [1, 5, 4, -1, -5, -4].
+* [A130818](http://oeis.org/A130818) ([program](130/A130818.asm)): Decimal expansion of number whose Engel expansion is the sequence of squares, that is, 1, 4, 9, 16,...
 * [A130819](http://oeis.org/A130819) ([program](130/A130819.asm)): 2n appears 2n-1 times.
 * [A130821](http://oeis.org/A130821) ([program](130/A130821.asm)): 2n-1 appears 2n times.
 * [A130822](http://oeis.org/A130822) ([program](130/A130822.asm)): Two 1's, one 2, four 3's, three 4's ...
@@ -4472,7 +4473,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A137357](http://oeis.org/A137357) ([program](137/A137357.asm)): a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k+1).
 * [A137358](http://oeis.org/A137358) ([program](137/A137358.asm)): a(n) = Sum_{k <= n/2 } binomial(n-2k, 3k+2).
 * [A137362](http://oeis.org/A137362) ([program](137/A137362.asm)): Positions at which the truncated square root of triangular numbers is unique.
-* [A137397](http://oeis.org/A137397) ([program](137/A137397.asm)): Number of distinct palindromic subwords in the binary representation of n.
 * [A137399](http://oeis.org/A137399) ([program](137/A137399.asm)): a(n)=4a(n-4).
 * [A137410](http://oeis.org/A137410) ([program](137/A137410.asm)): a(n) = (5^n - 3) / 2.
 * [A137426](http://oeis.org/A137426) ([program](137/A137426.asm)): a(n)=-a(n-1)+2a(n-3).

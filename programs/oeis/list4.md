@@ -1693,6 +1693,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A225700](http://oeis.org/A225700) ([program](225/A225700.asm)): Denominators of coefficients arising from q-expansion of Integrate[eta[q^4]^8/eta[q^2]^4, q]/q where eta is the Dedekind eta function.
 * [A225743](http://oeis.org/A225743) ([program](225/A225743.asm)): Triangular array:  row n is least squarefree word of length n using positive integers.
 * [A225773](http://oeis.org/A225773) ([program](225/A225773.asm)): The squares on a chessboard that are black, counting from top left corner and down.
+* [A225785](http://oeis.org/A225785) ([program](225/A225785.asm)): Numbers n such that triangular(n) + triangular(2*n) is a triangular number.
 * [A225786](http://oeis.org/A225786) ([program](225/A225786.asm)): Numbers k such that oblong(2*k) + oblong(k) is a square, where oblong(k) = A002378(k) = k*(k+1).
 * [A225810](http://oeis.org/A225810) ([program](225/A225810.asm)): a(n) = (10^n)^2 + 4*(10^n) + 1.
 * [A225813](http://oeis.org/A225813) ([program](225/A225813.asm)): a(n) = (10^n)^2 + 7(10^n) + 1.

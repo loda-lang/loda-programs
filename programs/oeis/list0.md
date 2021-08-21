@@ -3949,14 +3949,30 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019584](http://oeis.org/A019584) ([program](019/A019584.asm)): a(n) = n^2*(n-1)^3/4.
 * [A019590](http://oeis.org/A019590) ([program](019/A019590.asm)): Fermat's Last Theorem: a(n) = 1 if x^n + y^n = z^n has a nontrivial solution in integers, otherwise a(n) = 0.
 * [A019739](http://oeis.org/A019739) ([program](019/A019739.asm)): Decimal expansion of e/2.
+* [A019740](http://oeis.org/A019740) ([program](019/A019740.asm)): Decimal expansion of e/3.
 * [A019741](http://oeis.org/A019741) ([program](019/A019741.asm)): Decimal expansion of e/4.
+* [A019743](http://oeis.org/A019743) ([program](019/A019743.asm)): Decimal expansion of e/6.
 * [A019744](http://oeis.org/A019744) ([program](019/A019744.asm)): Decimal expansion of e/7.
 * [A019745](http://oeis.org/A019745) ([program](019/A019745.asm)): Decimal expansion of e/8.
+* [A019746](http://oeis.org/A019746) ([program](019/A019746.asm)): Decimal expansion of e/9.
 * [A019748](http://oeis.org/A019748) ([program](019/A019748.asm)): Decimal expansion of e/11.
+* [A019749](http://oeis.org/A019749) ([program](019/A019749.asm)): Decimal expansion of e/12.
+* [A019750](http://oeis.org/A019750) ([program](019/A019750.asm)): Decimal expansion of e/13.
 * [A019751](http://oeis.org/A019751) ([program](019/A019751.asm)): Decimal expansion of e/14.
+* [A019753](http://oeis.org/A019753) ([program](019/A019753.asm)): Decimal expansion of e/16.
+* [A019754](http://oeis.org/A019754) ([program](019/A019754.asm)): Decimal expansion of e/17.
+* [A019755](http://oeis.org/A019755) ([program](019/A019755.asm)): Decimal expansion of e/18.
+* [A019756](http://oeis.org/A019756) ([program](019/A019756.asm)): Decimal expansion of e/19.
+* [A019758](http://oeis.org/A019758) ([program](019/A019758.asm)): Decimal expansion of e/21.
+* [A019759](http://oeis.org/A019759) ([program](019/A019759.asm)): Decimal expansion of e/22.
+* [A019760](http://oeis.org/A019760) ([program](019/A019760.asm)): Decimal expansion of e/23.
+* [A019761](http://oeis.org/A019761) ([program](019/A019761.asm)): Decimal expansion of e/24.
+* [A019762](http://oeis.org/A019762) ([program](019/A019762.asm)): Decimal expansion of 2*e.
 * [A019763](http://oeis.org/A019763) ([program](019/A019763.asm)): Decimal expansion of 2*e/3.
 * [A019764](http://oeis.org/A019764) ([program](019/A019764.asm)): Decimal expansion of 2*e/5 (or 4*e).
 * [A019774](http://oeis.org/A019774) ([program](019/A019774.asm)): Decimal expansion of sqrt(e).
+* [A019775](http://oeis.org/A019775) ([program](019/A019775.asm)): Decimal expansion of sqrt(e)/2.
+* [A019778](http://oeis.org/A019778) ([program](019/A019778.asm)): Decimal expansion of sqrt(e)/5.
 * [A019999](http://oeis.org/A019999) ([program](019/A019999.asm)): Number of similarity classes of descendants created by bisection refinement from an initial n-simplex.
 * [A020330](http://oeis.org/A020330) ([program](020/A020330.asm)): Numbers whose base-2 representation is the juxtaposition of two identical strings.
 * [A020331](http://oeis.org/A020331) ([program](020/A020331.asm)): Numbers whose base-3 representation is the juxtaposition of two identical strings.

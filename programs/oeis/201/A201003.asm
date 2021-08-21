@@ -5,10 +5,9 @@ mov $2,$0
 seq $2,75869 ; Numbers k such that 5*k^2 - 9 is a square.
 mov $0,$2
 mul $0,4
-mul $2,12
+mul $2,14
 add $2,$0
 mul $0,$2
 div $0,648
 mul $0,25
-div $0,6400
-mul $0,36
+div $0,200

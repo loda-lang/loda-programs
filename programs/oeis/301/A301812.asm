@@ -3,6 +3,4 @@
 
 seq $0,3627 ; Primes of the form 3n-1.
 pow $0,2
-add $1,$0
-sub $1,1
-mov $0,$1
+sub $0,1
