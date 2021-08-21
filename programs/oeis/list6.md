@@ -1773,6 +1773,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332027](http://oeis.org/A332027) ([program](332/A332027.asm)): Savannah problem: number of distinct possible populations after n weeks, allowing populations after the empty set.
 * [A332028](http://oeis.org/A332028) ([program](332/A332028.asm)): Savannah problem: number of distinct possible populations after n weeks, not allowing new populations after the empty set.
 * [A332044](http://oeis.org/A332044) ([program](332/A332044.asm)): a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
+* [A332049](http://oeis.org/A332049) ([program](332/A332049.asm)): a(n) = (1/2) * Sum_{d|n, d > 1} d * phi(d).
 * [A332056](http://oeis.org/A332056) ([program](332/A332056.asm)): a(1) = 1, then a(n+1) = a(n) - (-1)^a(n) Sum_{k=1..n} a(k): if a(n) is odd, add the partial sum, else subtract.
 * [A332057](http://oeis.org/A332057) ([program](332/A332057.asm)): Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
 * [A332101](http://oeis.org/A332101) ([program](332/A332101.asm)): Least m such that m^n <= Sum_{k<m} k^n.

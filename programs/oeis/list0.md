@@ -318,6 +318,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A001553](http://oeis.org/A001553) ([program](001/A001553.asm)): a(n) = 1^n + 2^n + ... + 6^n.
 * [A001561](http://oeis.org/A001561) ([program](001/A001561.asm)): a(n) = (7*n+3)*(7*n+5)*(7*n+6).
 * [A001563](http://oeis.org/A001563) ([program](001/A001563.asm)): a(n) = n*n! = (n+1)! - n!.
+* [A001564](http://oeis.org/A001564) ([program](001/A001564.asm)): 2nd differences of factorial numbers.
 * [A001570](http://oeis.org/A001570) ([program](001/A001570.asm)): Numbers k such that k^2 is centered hexagonal.
 * [A001571](http://oeis.org/A001571) ([program](001/A001571.asm)): a(0) = 0, a(1) = 2, a(n) = 4*a(n-1) - a(n-2) + 1.
 * [A001576](http://oeis.org/A001576) ([program](001/A001576.asm)): a(n) = 1^n + 2^n + 4^n.
@@ -766,6 +767,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A004142](http://oeis.org/A004142) ([program](004/A004142.asm)): n(3^n-2^n).
 * [A004146](http://oeis.org/A004146) ([program](004/A004146.asm)): Alternate Lucas numbers - 2.
 * [A004151](http://oeis.org/A004151) ([program](004/A004151.asm)): Omit trailing zeros from n.
+* [A004152](http://oeis.org/A004152) ([program](004/A004152.asm)): Sum of digits of n!.
 * [A004153](http://oeis.org/A004153) ([program](004/A004153.asm)): Factorial numbers written backwards.
 * [A004154](http://oeis.org/A004154) ([program](004/A004154.asm)): Omit trailing zeros from factorial numbers.
 * [A004155](http://oeis.org/A004155) ([program](004/A004155.asm)): Sum of digits of n-th odd number.

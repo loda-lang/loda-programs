@@ -1,4 +1,4 @@
-; A095037: The (v,k,lambda)=(23,11,5) cyclic difference set.
+; A095037: An example of a (v,k,lambda)=(23,11,5) cyclic difference set.
 ; 1,2,3,4,6,8,9,12,13,16,18
 
 mov $3,$0

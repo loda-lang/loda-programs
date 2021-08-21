@@ -808,6 +808,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A262753](http://oeis.org/A262753) ([program](262/A262753.asm)): Number of (n+2) X (2+2) 0..1 arrays with each row divisible by 5 and each column divisible by 7, read as a binary number with top and left being the most significant bits.
 * [A262767](http://oeis.org/A262767) ([program](262/A262767.asm)): Minimum perimeter of a rectangle with area n and integer sides.
 * [A262773](http://oeis.org/A262773) ([program](262/A262773.asm)): A Beatty sequence: a(n)=floor(q*n) where q=A231187.
+* [A262782](http://oeis.org/A262782) ([program](262/A262782.asm)): a(n) = sum_{k=1..n} 3^prime(k).
 * [A262786](http://oeis.org/A262786) ([program](262/A262786.asm)): a(n) = 37^(2*n+1).
 * [A262787](http://oeis.org/A262787) ([program](262/A262787.asm)): a(n) = 41^(2*n+1).
 * [A262789](http://oeis.org/A262789) ([program](262/A262789.asm)): Number of (n+2) X (2+2) 0..1 arrays with each row divisible by 5 and column not divisible by 5, read as a binary number with top and left being the most significant bits.
@@ -2785,6 +2786,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A289296](http://oeis.org/A289296) ([program](289/A289296.asm)): a(n) = (n - 1)*(2*floor(n/2) + 1).
 * [A289356](http://oeis.org/A289356) ([program](289/A289356.asm)): Least number k such that n^2 + n + k is prime.
 * [A289357](http://oeis.org/A289357) ([program](289/A289357.asm)): Least number k such that n^2 + n - k is prime.
+* [A289382](http://oeis.org/A289382) ([program](289/A289382.asm)): a(n) = 2^n mod triangular(n).
 * [A289399](http://oeis.org/A289399) ([program](289/A289399.asm)): Total path length of the complete ternary tree of height n.
 * [A289404](http://oeis.org/A289404) ([program](289/A289404.asm)): Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 566", based on the 5-celled von Neumann neighborhood.
 * [A289437](http://oeis.org/A289437) ([program](289/A289437.asm)): The arithmetic function v_2(n,4).

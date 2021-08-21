@@ -3,7 +3,3 @@
 
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-lpb $0
-  mov $0,$1
-  sub $0,1
-lpe

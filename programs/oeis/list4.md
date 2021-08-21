@@ -480,6 +480,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A209116](http://oeis.org/A209116) ([program](209/A209116.asm)): Number of 4-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and avoiding the patterns z z+1 z+2 and z z-1 z-2.
 * [A209188](http://oeis.org/A209188) ([program](209/A209188.asm)): Smallest prime factor of n^2 + n - 1.
 * [A209189](http://oeis.org/A209189) ([program](209/A209189.asm)): Smallest prime factor of n^2 + n + 1.
+* [A209197](http://oeis.org/A209197) ([program](209/A209197.asm)):  Column 1 of triangle A209196.
 * [A209229](http://oeis.org/A209229) ([program](209/A209229.asm)): Characteristic function of powers of 2, cf. A000079.
 * [A209231](http://oeis.org/A209231) ([program](209/A209231.asm)): Number of binary words of length n such that there is at least one 0  and every run of consecutive 0's is of length >= 4.
 * [A209262](http://oeis.org/A209262) ([program](209/A209262.asm)): a(n) = 1 + 2*n^2 + 3*n^3 + 4*n^4.
@@ -2339,6 +2340,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A236348](http://oeis.org/A236348) ([program](236/A236348.asm)): Expansion of (1 - x + 2*x^2 + x^3) / ((1 - x) * (1 - x^3)) in powers of x.
 * [A236364](http://oeis.org/A236364) ([program](236/A236364.asm)): Sum of all the middle parts in the partitions of 3n into 3 parts.
 * [A236398](http://oeis.org/A236398) ([program](236/A236398.asm)): Period 4: repeat 1,1,2,1.
+* [A236399](http://oeis.org/A236399) ([program](236/A236399.asm)): Left factorial !p, where p = prime(n).
 * [A236403](http://oeis.org/A236403) ([program](236/A236403.asm)): Numbers not in A236402.
 * [A236428](http://oeis.org/A236428) ([program](236/A236428.asm)): a(n) = F(n+1)^2 + F(n+1)*F(n) - F(n)^2, where F = A000045.
 * [A236432](http://oeis.org/A236432) ([program](236/A236432.asm)): a(n) = (2n-1)*210; numbers which are 210 times an odd number.

@@ -758,7 +758,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A105955](http://oeis.org/A105955) ([program](105/A105955.asm)): a(n) = Fibonacci(n) mod 11.
 * [A105963](http://oeis.org/A105963) ([program](105/A105963.asm)): Expansion of (1+4*x)/(1-x-3*x^2).
 * [A105968](http://oeis.org/A105968) ([program](105/A105968.asm)): a(n) = 4*a(n-1) - a(n-2) - 2*(-1)^n, a(0) = 1, a(1) = 4.
+* [A105994](http://oeis.org/A105994) ([program](105/A105994.asm)): Fibonacci sequence (mod 13).
+* [A105995](http://oeis.org/A105995) ([program](105/A105995.asm)): Fibonacci sequence (mod 14).
 * [A106002](http://oeis.org/A106002) ([program](106/A106002.asm)): a(n)=1 if there is a number of the form 6k+3 such that prime(n) < 6k+3 < prime(n+1), otherwise 0.
+* [A106005](http://oeis.org/A106005) ([program](106/A106005.asm)): Fibonacci sequence (mod 15).
 * [A106006](http://oeis.org/A106006) ([program](106/A106006.asm)): [n/2] + [n/3] + [n/5].
 * [A106035](http://oeis.org/A106035) ([program](106/A106035.asm)): The "Octanacci" sequence: Trajectory of 1 under the morphism 1->{1,2,1}, 2->{1}.
 * [A106040](http://oeis.org/A106040) ([program](106/A106040.asm)): First 9-free digit in the fractional part of the decimal expansion of (1/10^n)^(1/10^n).
@@ -5498,7 +5501,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A144968](http://oeis.org/A144968) ([program](144/A144968.asm)): Number of squares between consecutive cubes.
 * [A145004](http://oeis.org/A145004) ([program](145/A145004.asm)): Values of n at which the number of roots of the function x+n*cos(x) increases.
 * [A145011](http://oeis.org/A145011) ([program](145/A145011.asm)): First differences of A007775.
-* [A145018](http://oeis.org/A145018) ([program](145/A145018.asm)): a(1) = 4; then add 1 to the first number, then 2, then 3 and so on.
+* [A145018](http://oeis.org/A145018) ([program](145/A145018.asm)): a(n) = (n^2 - n + 8)/2.
 * [A145027](http://oeis.org/A145027) ([program](145/A145027.asm)): a(n) = a(n-1) + a(n-2) + a(n-3) with a(1) = 2, a(2) = 3, a(3) = 4.
 * [A145037](http://oeis.org/A145037) ([program](145/A145037.asm)): Number of 1's minus number of 0's in the binary representation of n.
 * [A145051](http://oeis.org/A145051) ([program](145/A145051.asm)): Numerator of the first convergent to sqrt(n) using the recursion x = (n/x + x)/2.
