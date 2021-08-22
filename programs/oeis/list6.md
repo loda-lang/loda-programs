@@ -2023,6 +2023,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337024](http://oeis.org/A337024) ([program](337/A337024.asm)): Number of ways to tile a 2n X 2n square with 1 X 1 white and n X n black squares.
 * [A337025](http://oeis.org/A337025) ([program](337/A337025.asm)): Number of n-state 2-symbol halt-free Turing machines.
 * [A337030](http://oeis.org/A337030) ([program](337/A337030.asm)): a(n) is the number of squarefree composite numbers < prime(n).
+* [A337046](http://oeis.org/A337046) ([program](337/A337046.asm)): Integers n such that n! = x^2 + y^3 + z^6 where x, y and z are nonnegative integers, is soluble.
 * [A337101](http://oeis.org/A337101) ([program](337/A337101.asm)): Number of partitions of n into two positive parts (s,t), s <= t, such that the harmonic mean of the smallest and largest part is an integer.
 * [A337110](http://oeis.org/A337110) ([program](337/A337110.asm)): Number of length three 1..n vectors that contain their geometric mean.
 * [A337130](http://oeis.org/A337130) ([program](337/A337130.asm)): a(n) is the sum of all products of pairs of numbers joined by the diagonals of an n-gon when its vertices are numbered from 1 to n in order.

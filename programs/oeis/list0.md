@@ -704,6 +704,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A003688](http://oeis.org/A003688) ([program](003/A003688.asm)): a(n) = 3*a(n-1) + a(n-2), with a(1)=1 and a(2)=4.
 * [A003690](http://oeis.org/A003690) ([program](003/A003690.asm)): Number of spanning trees in K_3 X P_n.
 * [A003699](http://oeis.org/A003699) ([program](003/A003699.asm)): Number of Hamiltonian cycles in C_4 X P_n.
+* [A003751](http://oeis.org/A003751) ([program](003/A003751.asm)): Number of spanning trees in K_5 x P_n.
 * [A003769](http://oeis.org/A003769) ([program](003/A003769.asm)): Number of perfect matchings (or domino tilings) in K_4 X P_n.
 * [A003773](http://oeis.org/A003773) ([program](003/A003773.asm)): Number of spanning trees in K_4 X P_n.
 * [A003777](http://oeis.org/A003777) ([program](003/A003777.asm)): a(n) = n^3 + n^2 - 1.
@@ -6041,7 +6042,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032797](http://oeis.org/A032797) ([program](032/A032797.asm)): Numbers n such that n(n+1)(n+2)...(n+10) /(n+(n+1)+(n+2)+...+(n+10)) is a multiple of n.
 * [A032798](http://oeis.org/A032798) ([program](032/A032798.asm)): Numbers such that n(n+1)(n+2)...(n+12) / (n+(n+1)+(n+2)+...+(n+12)) is a multiple of n.
 * [A032801](http://oeis.org/A032801) ([program](032/A032801.asm)): Number of unordered sets a, b, c, d of distinct integers from 1..n such that a+b+c+d = 0 (mod n).
-* [A032828](http://oeis.org/A032828) ([program](032/A032828.asm)): Numbers whose set of base 16 digits is {1,4}.
 * [A032908](http://oeis.org/A032908) ([program](032/A032908.asm)): One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
 * [A032916](http://oeis.org/A032916) ([program](032/A032916.asm)): Numbers whose set of base 9 digits is {1,3}.
 * [A032924](http://oeis.org/A032924) ([program](032/A032924.asm)): Numbers whose ternary expansion contains no 0.

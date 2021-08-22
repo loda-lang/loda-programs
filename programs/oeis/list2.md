@@ -1820,6 +1820,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115960](http://oeis.org/A115960) ([program](115/A115960.asm)): Numbers n having exactly 6 distinct prime factors, the largest of which is greater than or equal to sqrt(n) (i.e., sqrt(n)-rough numbers with exactly 6 distinct prime factors).
 * [A115971](http://oeis.org/A115971) ([program](115/A115971.asm)): a(0) = 0. If a(n) = 0, then a(2^n) through a(2^(n+1)-1) are each equal to 1. If a(n) = 1, then a(m + 2^n) = a(m) for each m, 0 <= m <= 2^n -1.
 * [A116073](http://oeis.org/A116073) ([program](116/A116073.asm)): Sum of the divisors of n that are not divisible by 5.
+* [A116081](http://oeis.org/A116081) ([program](116/A116081.asm)): Final nonzero digit of n^n.
 * [A116082](http://oeis.org/A116082) ([program](116/A116082.asm)): a(n) = C(n,7) + C(n,6) + C(n,5) + C(n,4) + C(n,3) + C(n,2) + C(n,1).
 * [A116127](http://oeis.org/A116127) ([program](116/A116127.asm)): Number of numbers that are congruent to {2, 4} mod 6 between prime(n) and prime(n+1) inclusive.
 * [A116138](http://oeis.org/A116138) ([program](116/A116138.asm)): a(n) = 3^n * n*(n + 1).
@@ -3292,6 +3293,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A129981](http://oeis.org/A129981) ([program](129/A129981.asm)): Sum of n!!, with n>=0.
 * [A130008](http://oeis.org/A130008) ([program](130/A130008.asm)): Noncomposite numbers sandwiched between 1's.
 * [A130032](http://oeis.org/A130032) ([program](130/A130032.asm)): Row sums of unsigned triangle A129467.
+* [A130036](http://oeis.org/A130036) ([program](130/A130036.asm)): Denominators of partial sums of a series for the inverse of the arithmetic-geometric mean (agM) of 1 and sqrt(3)/2.
 * [A130053](http://oeis.org/A130053) ([program](130/A130053.asm)): G.f. A(x) = (1-x+x^2)/(1-x)^3 - x*[Sum_{n>=0} x^(n + 2^n)]/(1-x)^2 .
 * [A130065](http://oeis.org/A130065) ([program](130/A130065.asm)): a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
 * [A130102](http://oeis.org/A130102) ([program](130/A130102.asm)): E.g.f.: (e^x - x)^2.

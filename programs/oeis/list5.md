@@ -116,6 +116,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A252994](http://oeis.org/A252994) ([program](252/A252994.asm)): Multiples of 26.
 * [A253012](http://oeis.org/A253012) ([program](253/A253012.asm)): a(n) = ceiling( (n+1) * (n+2) / 12).
 * [A253068](http://oeis.org/A253068) ([program](253/A253068.asm)): The subsequence A253066(2^n-1).
+* [A253103](http://oeis.org/A253103) ([program](253/A253103.asm)): A001045(n)^3.
 * [A253122](http://oeis.org/A253122) ([program](253/A253122.asm)): Number of length n+2 0..1 arrays with the sum of medians of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A253130](http://oeis.org/A253130) ([program](253/A253130.asm)): Number of length 2+2 0..n arrays with the sum of medians of adjacent triples multiplied by some arrangement of +-1 equal to zero.
 * [A253145](http://oeis.org/A253145) ([program](253/A253145.asm)): Triangular numbers (A000217) omitting the term 1.
@@ -2100,6 +2101,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A278129](http://oeis.org/A278129) ([program](278/A278129.asm)): a(n) = 348*2^n - 188.
 * [A278130](http://oeis.org/A278130) ([program](278/A278130.asm)): a(n) = 492*2^n - 222.
 * [A278131](http://oeis.org/A278131) ([program](278/A278131.asm)): a(n) = 591*2^n - 273.
+* [A278142](http://oeis.org/A278142) ([program](278/A278142.asm)): Denominators of partial sums of a Ramanujan series converging to 2^(3/2)/(sqrt(Pi)*Gamma(3/4)^2) given in A278146.
 * [A278145](http://oeis.org/A278145) ([program](278/A278145.asm)): Denominator of partial sums of the m=1 member of an m-family of series considered by Hardy with value 4/Pi (see A088538).
 * [A278169](http://oeis.org/A278169) ([program](278/A278169.asm)): Characteristic function for A000960.
 * [A278290](http://oeis.org/A278290) ([program](278/A278290.asm)): Number of neighbors of each new term in a square array read by antidiagonals.
@@ -3151,6 +3153,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A294629](http://oeis.org/A294629) ([program](294/A294629.asm)): Partial sums of A294628.
 * [A294630](http://oeis.org/A294630) ([program](294/A294630.asm)): Partial sums of A294629.
 * [A294640](http://oeis.org/A294640) ([program](294/A294640.asm)): G.f. A(x) = Sum_{n>=0} x^n/a(n) satisfies: A(x) = A(x^2) + Integral A(x^2) dx.
+* [A294646](http://oeis.org/A294646) ([program](294/A294646.asm)): a(n) = (1/2)^(2*n) mod (2*n+1).
 * [A294732](http://oeis.org/A294732) ([program](294/A294732.asm)): Maximal diameter of the connected cubic graphs on 2*n vertices.
 * [A294774](http://oeis.org/A294774) ([program](294/A294774.asm)): a(n) = 2*n^2 + 2*n + 5.
 * [A294790](http://oeis.org/A294790) ([program](294/A294790.asm)): Subtract n from partial sums of partial sums of Catalan numbers.

@@ -9,12 +9,11 @@ lpb $4
   add $0,$4
   trn $0,1
   seq $0,134816 ; Padovan's spiral numbers.
-  mov $3,$0
   mov $5,$4
   mul $5,$0
-  add $1,$5
+  add $3,$5
 lpe
 min $2,1
-mul $2,$3
-sub $1,$2
-mov $0,$1
+mul $2,$0
+mov $0,$3
+sub $0,$2

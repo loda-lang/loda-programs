@@ -1243,6 +1243,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A217200](http://oeis.org/A217200) ([program](217/A217200.asm)): Number of permutations in S_{n+2} containing an increasing subsequence of length n.
 * [A217213](http://oeis.org/A217213) ([program](217/A217213.asm)): 2*A002740(n).
 * [A217233](http://oeis.org/A217233) ([program](217/A217233.asm)): Expansion of (1-2*x+x^2)/(1-3*x-3*x^2+x^3).
+* [A217284](http://oeis.org/A217284) ([program](217/A217284.asm)): a(n) = Sum_{k=0..n} (n!/k!)^3.
 * [A217285](http://oeis.org/A217285) ([program](217/A217285.asm)): Irregular triangle read by rows:  T(n,k) is the number of labeled relations on n nodes with exactly k edges; n>=0, 0<=k<=n^2.
 * [A217290](http://oeis.org/A217290) ([program](217/A217290.asm)): Integers n such that 2*cos(2*Pi/n) is an integer.
 * [A217330](http://oeis.org/A217330) ([program](217/A217330.asm)): The number of integer solutions to the equation x1 + x2 + x3 + x4 = n, with xi >= 0, and with x2 + x3 divisible by 3.
@@ -3175,6 +3176,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A249450](http://oeis.org/A249450) ([program](249/A249450.asm)): Alternate Fibonacci numbers - 2.
 * [A249452](http://oeis.org/A249452) ([program](249/A249452.asm)): Numbers n such that A249441(n) = 3.
 * [A249453](http://oeis.org/A249453) ([program](249/A249453.asm)): a(0) = 4; for n>0, a(n) = a(n-1) + 2^n - 3.
+* [A249459](http://oeis.org/A249459) ([program](249/A249459.asm)): Sum_{k=1..n} k^(2*n).
 * [A249547](http://oeis.org/A249547) ([program](249/A249547.asm)): a(n) = (10*n^2+8*n-1+(-1)^n)/8.
 * [A249572](http://oeis.org/A249572) ([program](249/A249572.asm)): Least positive integer whose decimal digits divide the plane into n+1 regions. Equivalently, least positive integer with n holes in its decimal digits.
 * [A249586](http://oeis.org/A249586) ([program](249/A249586.asm)): Sum of the first n^3 cubes.

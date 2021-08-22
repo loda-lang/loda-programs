@@ -3570,6 +3570,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175677](http://oeis.org/A175677) ([program](175/A175677.asm)): Binomial(n,4) mod n.
 * [A175723](http://oeis.org/A175723) ([program](175/A175723.asm)): a(1)=a(2)=1; thereafter a(n) = gpf(a(n-1)+a(n-2)), where gpf = "greatest prime factor".
 * [A175724](http://oeis.org/A175724) ([program](175/A175724.asm)): Partial sums of floor(n^2/12).
+* [A175744](http://oeis.org/A175744) ([program](175/A175744.asm)): Numbers with 34 divisors.
 * [A175753](http://oeis.org/A175753) ([program](175/A175753.asm)): Numbers with 46 divisors.
 * [A175774](http://oeis.org/A175774) ([program](175/A175774.asm)): 7*(10^n-5)
 * [A175775](http://oeis.org/A175775) ([program](175/A175775.asm)): 7*(10^n-3).
