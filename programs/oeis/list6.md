@@ -2435,6 +2435,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345963](http://oeis.org/A345963) ([program](345/A345963.asm)): a(n) = (q^2-q+1)/3 where q = 2^(2*n+1) = A004171(n).
 * [A346004](http://oeis.org/A346004) ([program](346/A346004.asm)): If n even then n otherwise ((n+1)/2)^2.
 * [A346070](http://oeis.org/A346070) ([program](346/A346070.asm)): Symbolic code for the corner turns in the Lévy dragon curve.
+* [A346155](http://oeis.org/A346155) ([program](346/A346155.asm)): Partial sums of A007978.
 * [A346178](http://oeis.org/A346178) ([program](346/A346178.asm)): Expansion of (1-2*x)/(1-10*x).
 * [A346197](http://oeis.org/A346197) ([program](346/A346197.asm)): a(n) is the minimum number of pebbles such that any assignment of those pebbles on K_5 is a next-player winning game in the two-player impartial (n+1,n) pebbling game.
 * [A346232](http://oeis.org/A346232) ([program](346/A346232.asm)): Maximum number of squares whose interiors can be touched by a line segment of length n on a square grid.

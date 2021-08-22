@@ -1798,6 +1798,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A062785](http://oeis.org/A062785) ([program](062/A062785.asm)): Chowla's function * sigma(n).
 * [A062786](http://oeis.org/A062786) ([program](062/A062786.asm)): Centered 10-gonal numbers.
 * [A062796](http://oeis.org/A062796) ([program](062/A062796.asm)): Inverse Moebius transform of f(n) = n^n (A000312).
+* [A062805](http://oeis.org/A062805) ([program](062/A062805.asm)): a(n) = Sum_{i=1..n} i*n^(n-i).
 * [A062806](http://oeis.org/A062806) ([program](062/A062806.asm)): a(n) = Sum_{i=1..n} i*n^i.
 * [A062808](http://oeis.org/A062808) ([program](062/A062808.asm)): a(n) = Sum_{i=1..n} n^i * (n - i).
 * [A062809](http://oeis.org/A062809) ([program](062/A062809.asm)): a(n) = Sum_{i = 1..n} (n - i)^(1 + i).
@@ -3504,6 +3505,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A074700](http://oeis.org/A074700) ([program](074/A074700.asm)): a(n) = tau(F(2^n)) where tau(x) is the number of divisors of x (A000005(x)) and F(k) the k-th Fibonacci number (A000045(k)).
 * [A074701](http://oeis.org/A074701) ([program](074/A074701.asm)): Numbers k such that k = Sum_{d|phi(k)} mu(phi(d))*phi(k)/d.
 * [A074719](http://oeis.org/A074719) ([program](074/A074719.asm)): ip(n): the number of primes not exceeding reverse(n).
+* [A074721](http://oeis.org/A074721) ([program](074/A074721.asm)): Concatenate the primes as 2357111317192329313..., then insert commas from left to right so that between each pair of successive commas is a prime, always making the new prime as small as possible.
 * [A074723](http://oeis.org/A074723) ([program](074/A074723.asm)): Largest power of 2 dividing F(3n) where F(k) is the k-th Fibonacci number.
 * [A074724](http://oeis.org/A074724) ([program](074/A074724.asm)): Largest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
 * [A074742](http://oeis.org/A074742) ([program](074/A074742.asm)): a(n) = (n^3 + 6n^2 - n + 12)/6.
@@ -5447,6 +5449,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A088748](http://oeis.org/A088748) ([program](088/A088748.asm)): a(n) = 1 + Sum_{k=0..n-1} 2 * A014577(k) - 1.
 * [A088795](http://oeis.org/A088795) ([program](088/A088795.asm)): Fibonacci(n) as n runs through the quarter-squares.
 * [A088802](http://oeis.org/A088802) ([program](088/A088802.asm)): Denominators of the coefficients of powers of n^(-1) in the Romanovsky series expansion of the mean of the standard deviation from a normal population.
+* [A088805](http://oeis.org/A088805) ([program](088/A088805.asm)): 10^p + p for prime p.
 * [A088821](http://oeis.org/A088821) ([program](088/A088821.asm)): a(n) is the sum of smallest prime factors of numbers from 1 to n.
 * [A088822](http://oeis.org/A088822) ([program](088/A088822.asm)): a(n) is the sum of largest prime factors of numbers from 1 to n.
 * [A088828](http://oeis.org/A088828) ([program](088/A088828.asm)): Nonsquare positive odd numbers.
@@ -6832,5 +6835,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A099979](http://oeis.org/A099979) ([program](099/A099979.asm)): Bisection of A001157: sigma_2(2n).
 * [A099984](http://oeis.org/A099984) ([program](099/A099984.asm)): Bisection of A007947.
 * [A099985](http://oeis.org/A099985) ([program](099/A099985.asm)): Bisection of A007947.
+* [A099987](http://oeis.org/A099987) ([program](099/A099987.asm)): Bisection of A001113 (digits of e).
 * [A099990](http://oeis.org/A099990) ([program](099/A099990.asm)): a(n) = Moebius(2n+1).
 * [A099991](http://oeis.org/A099991) ([program](099/A099991.asm)): a(n) = Moebius(2n).

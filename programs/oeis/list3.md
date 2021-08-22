@@ -484,7 +484,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A155600](http://oeis.org/A155600) ([program](155/A155600.asm)): 9^n-2^n+1^n
 * [A155601](http://oeis.org/A155601) ([program](155/A155601.asm)): 10^n-2^n+1^n
 * [A155602](http://oeis.org/A155602) ([program](155/A155602.asm)): 4^n + 3^n - 1.
-* [A155603](http://oeis.org/A155603) ([program](155/A155603.asm)): 5^n+3^n-1.
+* [A155603](http://oeis.org/A155603) ([program](155/A155603.asm)): a(n) = 5^n+3^n-1.
 * [A155604](http://oeis.org/A155604) ([program](155/A155604.asm)): 6^n+3^n-1.
 * [A155605](http://oeis.org/A155605) ([program](155/A155605.asm)): 7^n+3^n-1.
 * [A155606](http://oeis.org/A155606) ([program](155/A155606.asm)): a(n) = 8^n + 3^n - 1.

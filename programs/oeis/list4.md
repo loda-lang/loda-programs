@@ -277,7 +277,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204708](http://oeis.org/A204708) ([program](204/A204708.asm)): Number of (n+1) X 4 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
 * [A204766](http://oeis.org/A204766) ([program](204/A204766.asm)): a(n) = 167*(n-1)-a(n-1) with n>1, a(1)=13.
 * [A204769](http://oeis.org/A204769) ([program](204/A204769.asm)): a(n) = 151*(n-1) - a(n-1) with n>1, a(1)=46.
+* [A204816](http://oeis.org/A204816) ([program](204/A204816.asm)): Final nonzero digit of n^n in base 6.
 * [A204817](http://oeis.org/A204817) ([program](204/A204817.asm)): Final nonzero digit of n^n in base 7.
+* [A204818](http://oeis.org/A204818) ([program](204/A204818.asm)): Final nonzero digit of n^n in base 8.
+* [A204819](http://oeis.org/A204819) ([program](204/A204819.asm)): Final nonzero digit of n^n in base 9.
 * [A204877](http://oeis.org/A204877) ([program](204/A204877.asm)): Continued fraction expansion of 3*tanh(1/3).
 * [A204879](http://oeis.org/A204879) ([program](204/A204879.asm)): Numbers that can be written as sum of perfect numbers.
 * [A204896](http://oeis.org/A204896) ([program](204/A204896.asm)): p(n)-q(n), where (p(n), q(n)) is the least pair of primes (ordered as in A204890) for which n divides p(n)-q(n).

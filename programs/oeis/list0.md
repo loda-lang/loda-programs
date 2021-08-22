@@ -64,6 +64,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A000245](http://oeis.org/A000245) ([program](000/A000245.asm)): a(n) = 3*(2*n)!/((n+2)!*(n-1)!).
 * [A000246](http://oeis.org/A000246) ([program](000/A000246.asm)): Number of permutations in the symmetric group S_n that have odd order.
 * [A000247](http://oeis.org/A000247) ([program](000/A000247.asm)): a(n) = 2^n - n - 2.
+* [A000262](http://oeis.org/A000262) ([program](000/A000262.asm)): Number of "sets of lists": number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset.
 * [A000265](http://oeis.org/A000265) ([program](000/A000265.asm)): Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 * [A000267](http://oeis.org/A000267) ([program](000/A000267.asm)): Integer part of square root of 4n+1.
 * [A000272](http://oeis.org/A000272) ([program](000/A000272.asm)): Number of trees on n labeled nodes: n^(n-2) with a(0)=1.
@@ -3988,6 +3989,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020517](http://oeis.org/A020517) ([program](020/A020517.asm)): 9th cyclotomic polynomial evaluated at powers of 2.
 * [A020520](http://oeis.org/A020520) ([program](020/A020520.asm)): 12th cyclotomic polynomial evaluated at powers of 2.
 * [A020522](http://oeis.org/A020522) ([program](020/A020522.asm)): a(n) = 4^n - 2^n.
+* [A020524](http://oeis.org/A020524) ([program](020/A020524.asm)): a(n) = 4th Euler polynomial evaluated at 2^n.
 * [A020527](http://oeis.org/A020527) ([program](020/A020527.asm)): 2nd Bernoulli polynomial evaluated at powers of 2 (multiplied by 6).
 * [A020528](http://oeis.org/A020528) ([program](020/A020528.asm)): 3rd Bernoulli polynomial evaluated at powers of 2 (multiplied by 6).
 * [A020530](http://oeis.org/A020530) ([program](020/A020530.asm)): a(n) = 8^n + 2^(n+1).
@@ -4182,7 +4184,12 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021228](http://oeis.org/A021228) ([program](021/A021228.asm)): Decimal expansion of 1/224.
 * [A021232](http://oeis.org/A021232) ([program](021/A021232.asm)): Decimal expansion of 1/228.
 * [A021235](http://oeis.org/A021235) ([program](021/A021235.asm)): Decimal expansion of 1/231.
+* [A021236](http://oeis.org/A021236) ([program](021/A021236.asm)): Decimal expansion of 1/232.
+* [A021237](http://oeis.org/A021237) ([program](021/A021237.asm)): Decimal expansion of 1/233.
 * [A021238](http://oeis.org/A021238) ([program](021/A021238.asm)): Decimal expansion of 1/234.
+* [A021239](http://oeis.org/A021239) ([program](021/A021239.asm)): Decimal expansion of 1/235.
+* [A021240](http://oeis.org/A021240) ([program](021/A021240.asm)): Decimal expansion of 1/236.
+* [A021241](http://oeis.org/A021241) ([program](021/A021241.asm)): Decimal expansion of 1/237.
 * [A021242](http://oeis.org/A021242) ([program](021/A021242.asm)): Decimal expansion of 1/238.
 * [A021243](http://oeis.org/A021243) ([program](021/A021243.asm)): Decimal expansion of 1/239.
 * [A021246](http://oeis.org/A021246) ([program](021/A021246.asm)): Decimal expansion of 1/242.
@@ -6043,18 +6050,18 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032798](http://oeis.org/A032798) ([program](032/A032798.asm)): Numbers such that n(n+1)(n+2)...(n+12) / (n+(n+1)+(n+2)+...+(n+12)) is a multiple of n.
 * [A032801](http://oeis.org/A032801) ([program](032/A032801.asm)): Number of unordered sets a, b, c, d of distinct integers from 1..n such that a+b+c+d = 0 (mod n).
 * [A032908](http://oeis.org/A032908) ([program](032/A032908.asm)): One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
-* [A032916](http://oeis.org/A032916) ([program](032/A032916.asm)): Numbers whose set of base 9 digits is {1,3}.
+* [A032916](http://oeis.org/A032916) ([program](032/A032916.asm)): Numbers whose set of base-9 digits is {1,3}.
 * [A032924](http://oeis.org/A032924) ([program](032/A032924.asm)): Numbers whose ternary expansion contains no 0.
-* [A032925](http://oeis.org/A032925) ([program](032/A032925.asm)): Numbers whose set of base 4 digits is {1,2}.
-* [A032926](http://oeis.org/A032926) ([program](032/A032926.asm)): Numbers whose set of base 5 digits is {1,2}.
-* [A032927](http://oeis.org/A032927) ([program](032/A032927.asm)): Numbers whose set of base 6 digits is {1,2}.
-* [A032928](http://oeis.org/A032928) ([program](032/A032928.asm)): Numbers whose set of base 7 digits is {1,2}.
-* [A032929](http://oeis.org/A032929) ([program](032/A032929.asm)): Numbers whose set of base 8 digits is {1,2}.
-* [A032930](http://oeis.org/A032930) ([program](032/A032930.asm)): Numbers whose set of base 9 digits is {1,2}.
+* [A032925](http://oeis.org/A032925) ([program](032/A032925.asm)): Numbers whose set of base-4 digits is {1,2}.
+* [A032926](http://oeis.org/A032926) ([program](032/A032926.asm)): Numbers whose set of base-5 digits is {1,2}.
+* [A032927](http://oeis.org/A032927) ([program](032/A032927.asm)): Numbers whose set of base-6 digits is {1,2}.
+* [A032928](http://oeis.org/A032928) ([program](032/A032928.asm)): Numbers whose set of base-7 digits is {1,2}.
+* [A032929](http://oeis.org/A032929) ([program](032/A032929.asm)): Numbers whose set of base-8 digits is {1,2}.
+* [A032930](http://oeis.org/A032930) ([program](032/A032930.asm)): Numbers whose set of base-9 digits is {1,2}.
 * [A032931](http://oeis.org/A032931) ([program](032/A032931.asm)): Numbers whose set of base 11 digits is {1,2}.
-* [A032932](http://oeis.org/A032932) ([program](032/A032932.asm)): Numbers whose set of base 12 digits is {1,2}.
-* [A032934](http://oeis.org/A032934) ([program](032/A032934.asm)): Numbers whose set of base 14 digits is {1,2}.
-* [A032935](http://oeis.org/A032935) ([program](032/A032935.asm)): Numbers whose set of base 15 digits is {1,2}.
+* [A032932](http://oeis.org/A032932) ([program](032/A032932.asm)): Numbers whose set of base-12 digits is {1,2}.
+* [A032934](http://oeis.org/A032934) ([program](032/A032934.asm)): Numbers whose set of base-14 digits is {1,2}.
+* [A032935](http://oeis.org/A032935) ([program](032/A032935.asm)): Numbers whose set of base-15 digits is {1,2}.
 * [A032936](http://oeis.org/A032936) ([program](032/A032936.asm)): Numbers whose set of base 16 digits is {1,2}.
 * [A032960](http://oeis.org/A032960) ([program](032/A032960.asm)): Numbers whose base-10 representation Sum_{i=0..m} d(i)*10^(m-i) has even d(i) for all odd i.
 * [A032961](http://oeis.org/A032961) ([program](032/A032961.asm)): Numbers whose base-11 representation Sum_{i=0..m} d(i)*11^(m-i) has even d(i) for all odd i.
@@ -6434,7 +6441,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A034833](http://oeis.org/A034833) ([program](034/A034833.asm)): a(n) = n-th sept-factorial number divided by 6.
 * [A034834](http://oeis.org/A034834) ([program](034/A034834.asm)): One seventh of sept-factorial numbers.
 * [A034850](http://oeis.org/A034850) ([program](034/A034850.asm)): Triangular array formed by taking every other term of Pascal's triangle.
-* [A034856](http://oeis.org/A034856) ([program](034/A034856.asm)): a(n) = binomial(n+1, 2) + n - 1 = n*(n + 3)/2 - 1.
+* [A034856](http://oeis.org/A034856) ([program](034/A034856.asm)): a(n) = binomial(n+1, 2) + n - 1 = n*(n+3)/2 - 1.
 * [A034857](http://oeis.org/A034857) ([program](034/A034857.asm)): a(n) = C(n+2,3) + 2*C(n,2) + 2*(n-2).
 * [A034858](http://oeis.org/A034858) ([program](034/A034858.asm)): a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15.
 * [A034860](http://oeis.org/A034860) ([program](034/A034860.asm)): a(n) = n!*(2*n-5)/2.
@@ -8140,6 +8147,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048330](http://oeis.org/A048330) ([program](048/A048330.asm)): a(n) in base 5 is a repdigit.
 * [A048331](http://oeis.org/A048331) ([program](048/A048331.asm)): a(n) in base 6 is a repdigit.
 * [A048332](http://oeis.org/A048332) ([program](048/A048332.asm)): a(n) in base 7 is a repdigit.
+* [A048333](http://oeis.org/A048333) ([program](048/A048333.asm)): Numbers that are repdigits in base 8.
 * [A048334](http://oeis.org/A048334) ([program](048/A048334.asm)): a(n) in base 9 is a repdigit.
 * [A048395](http://oeis.org/A048395) ([program](048/A048395.asm)): Sum of consecutive nonsquares.
 * [A048396](http://oeis.org/A048396) ([program](048/A048396.asm)): Sums of consecutive noncubes.

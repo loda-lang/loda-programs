@@ -460,6 +460,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A103168](http://oeis.org/A103168) ([program](103/A103168.asm)): a(n) = remainder when (n written backwards) is divided by n.
 * [A103177](http://oeis.org/A103177) ([program](103/A103177.asm)): (7*3^n + 2n + 5)/4.
 * [A103192](http://oeis.org/A103192) ([program](103/A103192.asm)): Trajectory of 1 under repeated application of the function n -> A102370(n).
+* [A103194](http://oeis.org/A103194) ([program](103/A103194.asm)): LAH transform of squares.
 * [A103196](http://oeis.org/A103196) ([program](103/A103196.asm)): a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1)).
 * [A103202](http://oeis.org/A103202) ([program](103/A103202.asm)): A102370 sorted.
 * [A103204](http://oeis.org/A103204) ([program](103/A103204.asm)): a(1) = 2, a(2) = 4; a(n) = 2*a(n-1) - 1.
@@ -3690,6 +3691,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A131987](http://oeis.org/A131987) ([program](131/A131987.asm)): Representation of a dense para-sequence.
 * [A131991](http://oeis.org/A131991) ([program](131/A131991.asm)): a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3.
 * [A131992](http://oeis.org/A131992) ([program](131/A131992.asm)): a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4.
+* [A131993](http://oeis.org/A131993) ([program](131/A131993.asm)): 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4 + prime(n)^5.
 * [A131996](http://oeis.org/A131996) ([program](131/A131996.asm)): Number of partitions of n into distinct powers of 2 or of 3.
 * [A132009](http://oeis.org/A132009) ([program](132/A132009.asm)): a(1) = 1; for n>=2, a(n) = n-th positive integer which is coprime to the largest prime divisor of n.
 * [A132027](http://oeis.org/A132027) ([program](132/A132027.asm)): a(n) = Product_{k=0..floor(log_3(n))} floor(n/3^k), n>=1.
@@ -4562,6 +4564,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A138128](http://oeis.org/A138128) ([program](138/A138128.asm)): Powers of 127.
 * [A138129](http://oeis.org/A138129) ([program](138/A138129.asm)): Multiples of 1729, the Hardy-Ramanujan number.
 * [A138130](http://oeis.org/A138130) ([program](138/A138130.asm)): Powers of 1729, the Hardy-Ramanujan number.
+* [A138134](http://oeis.org/A138134) ([program](138/A138134.asm)): a(n) = Sum_{i=0..n} Fibonacci(5*i).
 * [A138139](http://oeis.org/A138139) ([program](138/A138139.asm)): Triangle read by rows: row n contains n terms and each column lists the prime numbers A000040.
 * [A138143](http://oeis.org/A138143) ([program](138/A138143.asm)): Triangle read by rows in which row n lists p(1), p(2), ..., p(n), p(n-1), ..., p(1), where p(i) = i-th prime.
 * [A138144](http://oeis.org/A138144) ([program](138/A138144.asm)): Palindromes formed from the reflected decimal expansion of the concatenation of 1, 1 and infinite 0's.
