@@ -299,6 +299,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A304839](http://oeis.org/A304839) ([program](304/A304839.asm)): a(n) = 61*n - 38 (n>=1).
 * [A304840](http://oeis.org/A304840) ([program](304/A304840.asm)): a(n) = 52*n - 2 (n>=1).
 * [A304841](http://oeis.org/A304841) ([program](304/A304841.asm)): a(n) = 67*n - 10 (n>=1).
+* [A304887](http://oeis.org/A304887) ([program](304/A304887.asm)): Number of non-isomorphic blobs of weight n.
 * [A304909](http://oeis.org/A304909) ([program](304/A304909.asm)): Expansion of x * (d/dx) Product_{k>=0} 1/(1 - x^(2^k)).
 * [A304974](http://oeis.org/A304974) ([program](304/A304974.asm)): Number of achiral color patterns (set partitions) for a row or loop of length n using exactly 4 colors (sets).
 * [A304993](http://oeis.org/A304993) ([program](304/A304993.asm)): a(n) = n*(n + 1)*(7*n + 5)/6.
@@ -2083,7 +2084,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338043](http://oeis.org/A338043) ([program](338/A338043.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of edges thus created. See Comments for details.
 * [A338045](http://oeis.org/A338045) ([program](338/A338045.asm)): G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^3.
 * [A338046](http://oeis.org/A338046) ([program](338/A338046.asm)): G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^4.
-* [A338062](http://oeis.org/A338062) ([program](338/A338062.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is odd.
 * [A338064](http://oeis.org/A338064) ([program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
 * [A338086](http://oeis.org/A338086) ([program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338100](http://oeis.org/A338100) ([program](338/A338100.asm)): Number of spanning trees in the n X 2 king graph.

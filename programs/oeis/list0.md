@@ -582,6 +582,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002698](http://oeis.org/A002698) ([program](002/A002698.asm)): Coefficients of Chebyshev polynomials: n(2n-3)2^(2n-5).
 * [A002699](http://oeis.org/A002699) ([program](002/A002699.asm)): a(n) = n*2^(2*n-1).
 * [A002700](http://oeis.org/A002700) ([program](002/A002700.asm)): Coefficients of Chebyshev polynomials: n*(2*n+1) * 4^(n-1).
+* [A002708](http://oeis.org/A002708) ([program](002/A002708.asm)): a(n) = Fibonacci(n) mod n.
 * [A002717](http://oeis.org/A002717) ([program](002/A002717.asm)): a(n) = floor(n(n+2)(2n+1)/8).
 * [A002731](http://oeis.org/A002731) ([program](002/A002731.asm)): Numbers n such that (n^2 + 1)/2 is prime.
 * [A002734](http://oeis.org/A002734) ([program](002/A002734.asm)): Remove squares!
@@ -3979,7 +3980,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A020332](http://oeis.org/A020332) ([program](020/A020332.asm)): Numbers whose base-4 representation is the juxtaposition of two identical strings.
 * [A020333](http://oeis.org/A020333) ([program](020/A020333.asm)): Numbers whose base-5 representation is the juxtaposition of two identical strings.
 * [A020334](http://oeis.org/A020334) ([program](020/A020334.asm)): Numbers whose base-6 representation is the juxtaposition of two identical strings.
-* [A020336](http://oeis.org/A020336) ([program](020/A020336.asm)): Numbers whose base-8 representation is the juxtaposition of two identical strings.
 * [A020338](http://oeis.org/A020338) ([program](020/A020338.asm)): Doublets: base-10 representation is the juxtaposition of two identical strings.
 * [A020490](http://oeis.org/A020490) ([program](020/A020490.asm)): Numbers k such that phi(k) <= sigma_0(k).
 * [A020500](http://oeis.org/A020500) ([program](020/A020500.asm)): Cyclotomic polynomials at x=1.
@@ -4646,7 +4646,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A022840](http://oeis.org/A022840) ([program](022/A022840.asm)): Beatty sequence for sqrt(6).
 * [A022841](http://oeis.org/A022841) ([program](022/A022841.asm)): Beatty sequence for sqrt(7).
 * [A022842](http://oeis.org/A022842) ([program](022/A022842.asm)): Beatty sequence for sqrt(8).
-* [A022844](http://oeis.org/A022844) ([program](022/A022844.asm)): a(n) = floor(n*Pi).
 * [A022846](http://oeis.org/A022846) ([program](022/A022846.asm)): Nearest integer to n*sqrt(2).
 * [A022847](http://oeis.org/A022847) ([program](022/A022847.asm)): Integer nearest n*sqrt(3).
 * [A022848](http://oeis.org/A022848) ([program](022/A022848.asm)): Integer nearest nx, where x = sqrt(5).
@@ -8125,6 +8124,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A048151](http://oeis.org/A048151) ([program](048/A048151.asm)): Triangular array T read by rows: T(n,k)=k mod n, for k=1,2,...,n, n=1,2,...
 * [A048152](http://oeis.org/A048152) ([program](048/A048152.asm)): Triangular array T read by rows: T(n,k) = k^2 mod n, for 1 <= k <= n, n >= 1.
 * [A048153](http://oeis.org/A048153) ([program](048/A048153.asm)): a(n) = Sum_{k=1..n} (k^2 mod n).
+* [A048154](http://oeis.org/A048154) ([program](048/A048154.asm)): Triangular array T read by rows: T(n,k)=k^3 mod n, for k=1,2,...,n, n=1,2,...
 * [A048155](http://oeis.org/A048155) ([program](048/A048155.asm)): a(n)=Sum{T(n,k): k=1,2,...,n}, array T as in A048154.
 * [A048157](http://oeis.org/A048157) ([program](048/A048157.asm)): a(n)=Sum{T(n,k): k=1,2,...,n}, array T as in A048156.
 * [A048158](http://oeis.org/A048158) ([program](048/A048158.asm)): Triangular array T read by rows: T(n,k) = n mod k, for k=1,2,...,n, n=1,2,...

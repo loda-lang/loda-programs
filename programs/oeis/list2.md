@@ -1220,6 +1220,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A109883](http://oeis.org/A109883) ([program](109/A109883.asm)): Start subtracting from n its divisors beginning from 1 until one reaches a number smaller than the last divisor subtracted or reaches the last nontrivial divisor < n. Define this to be the perfect deficiency of n. Then a(n) = perfect deficiency of n.
 * [A109900](http://oeis.org/A109900) ([program](109/A109900.asm)): The (n,r)-th term of the following triangle is T(n)-T(r) for r = 0 to n. The n-th row contains n+1 terms. T(n) = the n-th triangular number = n(n+1)/2. Sequence contains the sum of terms at a 45-degree angle.
 * [A109901](http://oeis.org/A109901) ([program](109/A109901.asm)): a(n) = binomial(n^2, n*(n+1)/2).
+* [A109916](http://oeis.org/A109916) ([program](109/A109916.asm)): a(n) = n-th digit after decimal point in e^n.
 * [A109921](http://oeis.org/A109921) ([program](109/A109921.asm)): a(2n) = prime(n). a(2n+1) = sum of composite numbers between prime(n) and prime(n+1). We define a(1) = 1.
 * [A109952](http://oeis.org/A109952) ([program](109/A109952.asm)): Degrees Centigrade for which Fahrenheit is a prime.
 * [A109961](http://oeis.org/A109961) ([program](109/A109961.asm)): Expansion of (1-x)^3/(1-4x+5x^2-4x^3+x^4).
@@ -3442,6 +3443,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A130815](http://oeis.org/A130815) ([program](130/A130815.asm)): Period 6: repeat [1, 5, 4, -1, -5, -4].
 * [A130818](http://oeis.org/A130818) ([program](130/A130818.asm)): Decimal expansion of number whose Engel expansion is the sequence of squares, that is, 1, 4, 9, 16,...
 * [A130819](http://oeis.org/A130819) ([program](130/A130819.asm)): 2n appears 2n-1 times.
+* [A130820](http://oeis.org/A130820) ([program](130/A130820.asm)): Decimal expansion of number whose Engel expansion is given by the sequence: 1,1,2,2,3,3,4,4,...Ceiling[n/2],...
 * [A130821](http://oeis.org/A130821) ([program](130/A130821.asm)): 2n-1 appears 2n times.
 * [A130822](http://oeis.org/A130822) ([program](130/A130822.asm)): Two 1's, one 2, four 3's, three 4's ...
 * [A130823](http://oeis.org/A130823) ([program](130/A130823.asm)): Each odd number appears thrice.
