@@ -15,8 +15,6 @@ There are currently :star: &nbsp; **More than 35k programs available!** :star: &
 * [A300001 - A350000](oeis/list6.md)
 * [A350001 - A400000](oeis/list7.md)
 
-![Program counts](/program_counts.png)
-
 If you want to receive updates on new miner findings, you can follow the [commits in this repository](https://github.com/loda-lang/loda-programs/commits/main) or subscribe to the [@lodaminer](https://twitter.com/lodaminer) channel on Twitter, or join us on Slack.
 
 ## Related Repositories
