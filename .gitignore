@@ -1,8 +1,0 @@
-*.o
-/src/loda
-/src/build
-/loda
-/completer.hist
-/.DS_Store
-/.settings
-/.vscode
