@@ -5,8 +5,7 @@ seq $0,40 ; The prime numbers.
 mov $1,2
 pow $1,$0
 bin $1,2
-mul $1,2
 mov $0,$1
-sub $0,12
-div $0,2
-add $0,6
+mul $0,4
+div $0,8
+mul $0,2

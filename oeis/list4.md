@@ -260,6 +260,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A204558](http://oeis.org/A204558) ([program](204/A204558.asm)): Row sums of the triangle A045975.
 * [A204560](http://oeis.org/A204560) ([program](204/A204560.asm)): Symmetric matrix: f(i,j)=floor[(2i+2j+4)/4]-floor[(i+j+2)/4], by (constant) antidiagonals.
 * [A204562](http://oeis.org/A204562) ([program](204/A204562.asm)): Symmetric matrix: f(i,j) = floor((2i+2j+6)/4)-floor((i+j+3)/4), by (constant) antidiagonals.
+* [A204595](http://oeis.org/A204595) ([program](204/A204595.asm)): a(n) = maximal i such that there is a quasigroup q of order n such that q, q^2, ..., q^i are quasigroups of order n.
 * [A204623](http://oeis.org/A204623) ([program](204/A204623.asm)): Number of (n+1)X2 0..2 arrays with every 2X2 subblock having unequal diagonal elements or unequal antidiagonal elements, and new values 0..2 introduced in row major order
 * [A204644](http://oeis.org/A204644) ([program](204/A204644.asm)): Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
 * [A204671](http://oeis.org/A204671) ([program](204/A204671.asm)): a(n) = n^n (mod 6).
@@ -2169,6 +2170,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A232423](http://oeis.org/A232423) ([program](232/A232423.asm)): a(n) = ceiling(sqrt(n^4 - n^3 - n^2 + n + 1))^2 - (n^4 - n^3 - n^2 + n + 1).
 * [A232495](http://oeis.org/A232495) ([program](232/A232495.asm)): 9*n^3/2 - 21*n^2/2 + 8*n - 4.
 * [A232508](http://oeis.org/A232508) ([program](232/A232508.asm)): Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally, diagonally or antidiagonally, with no adjacent elements equal.
+* [A232533](http://oeis.org/A232533) ([program](232/A232533.asm)): a(n) = Sum_{i=1...n} Sum_{j=1..i} lcm(i,j)/i.
 * [A232580](http://oeis.org/A232580) ([program](232/A232580.asm)): Number of binary sequences of length n that contain at least one contiguous subsequence 011.
 * [A232582](http://oeis.org/A232582) ([program](232/A232582.asm)): Number of (n+1) X (1+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal.
 * [A232584](http://oeis.org/A232584) ([program](232/A232584.asm)): Number of (n+1)X(3+1) 0..2 arrays with every element next to itself plus and minus one within the range 0..2 horizontally or antidiagonally, with no adjacent elements equal
@@ -2563,6 +2565,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A240857](http://oeis.org/A240857) ([program](240/A240857.asm)): Triangle read by rows: T(0,0) = 0; T(n+1,k) = T(n,k+1), 0 <= k < n; T(n+1,n) = T(n,0); T(n+1,n+1) = T(n,0)+1.
 * [A240877](http://oeis.org/A240877) ([program](240/A240877.asm)): Sum of the denominators of the Farey series of order n (A006843).
 * [A240883](http://oeis.org/A240883) ([program](240/A240883.asm)): Central terms of the triangle in A240857.
+* [A240917](http://oeis.org/A240917) ([program](240/A240917.asm)): a(n) = 2*3^(2*n) - 3*3^n + 1.
 * [A240924](http://oeis.org/A240924) ([program](240/A240924.asm)): Digital root of squares of numbers not divisible by 2, 3 or 5.
 * [A240926](http://oeis.org/A240926) ([program](240/A240926.asm)): a(n) = 2 + L(2*n) = 2 + A005248(n), n >= 0, with the Lucas numbers (A000032).
 * [A240930](http://oeis.org/A240930) ([program](240/A240930.asm)): a(n) = n^7 - n^6.

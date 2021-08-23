@@ -1181,6 +1181,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A158670](http://oeis.org/A158670) ([program](158/A158670.asm)): a(n) = 60*n^2 - 1.
 * [A158672](http://oeis.org/A158672) ([program](158/A158672.asm)): a(n) = 900*n^2 + 30.
 * [A158673](http://oeis.org/A158673) ([program](158/A158673.asm)): a(n) = 60*n^2 + 1.
+* [A158674](http://oeis.org/A158674) ([program](158/A158674.asm)): Period 18: repeat 3, 4, 0, 8, 6, 3, 3, 7, 0, 2, 6, 6, 3, 1, 0, 5, 6, 0.
 * [A158675](http://oeis.org/A158675) ([program](158/A158675.asm)): a(n) = 961*n^2 + 31.
 * [A158676](http://oeis.org/A158676) ([program](158/A158676.asm)): a(n) = 62*n^2 + 1.
 * [A158679](http://oeis.org/A158679) ([program](158/A158679.asm)): a(n) = 961*n^2 - 31.
@@ -2940,7 +2941,9 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A170691](http://oeis.org/A170691) ([program](170/A170691.asm)): Number of reduced words of length n in Coxeter group on 10 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
 * [A170692](http://oeis.org/A170692) ([program](170/A170692.asm)): Number of reduced words of length n in Coxeter group on 11 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
 * [A170693](http://oeis.org/A170693) ([program](170/A170693.asm)): Number of reduced words of length n in Coxeter group on 12 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
+* [A170698](http://oeis.org/A170698) ([program](170/A170698.asm)): Number of reduced words of length n in Coxeter group on 17 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
 * [A170709](http://oeis.org/A170709) ([program](170/A170709.asm)): Number of reduced words of length n in Coxeter group on 28 generators S_i with relations (S_i)^2 = (S_i S_j)^50 = I.
+* [A170736](http://oeis.org/A170736) ([program](170/A170736.asm)): Expansion of g.f.: (1+x)/(1-16*x).
 * [A170747](http://oeis.org/A170747) ([program](170/A170747.asm)): Expansion of g.f.: (1+x)/(1-27*x).
 * [A170774](http://oeis.org/A170774) ([program](170/A170774.asm)): a(n) = n^8*(n^2+1)/2.
 * [A170775](http://oeis.org/A170775) ([program](170/A170775.asm)): a(n) = n^8*(n^3 + 1)/2.
@@ -3431,6 +3434,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A174395](http://oeis.org/A174395) ([program](174/A174395.asm)): The number of different 4-colorings for the vertices of all triangulated planar polygons on a base with n vertices if the colors of two adjacent boundary vertices are fixed.
 * [A174396](http://oeis.org/A174396) ([program](174/A174396.asm)): Numbers congruent to {1,4,5,8} mod 9.
 * [A174398](http://oeis.org/A174398) ([program](174/A174398.asm)): Numbers that are congruent to {1, 4, 5, 8} mod 12.
+* [A174405](http://oeis.org/A174405) ([program](174/A174405.asm)): Partial sums of Sum_{k=1..n} n/gcd(n,k), or partial sums of Sum_{d|n} d*phi(d) (see A057660).
 * [A174426](http://oeis.org/A174426) ([program](174/A174426.asm)): Denominator of fractions in A171676.
 * [A174438](http://oeis.org/A174438) ([program](174/A174438.asm)): Numbers that are congruent to {0, 2, 5, 8} mod 9.
 * [A174446](http://oeis.org/A174446) ([program](174/A174446.asm)): Triangle T(n, k, q) = ceiling(binomial(n, k)/f(n, q)) with T(0, 0) = 1, f(n, q) = 1 + tanh((n-1)/q), and q = 1, read by rows.
@@ -3570,7 +3574,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A175677](http://oeis.org/A175677) ([program](175/A175677.asm)): Binomial(n,4) mod n.
 * [A175723](http://oeis.org/A175723) ([program](175/A175723.asm)): a(1)=a(2)=1; thereafter a(n) = gpf(a(n-1)+a(n-2)), where gpf = "greatest prime factor".
 * [A175724](http://oeis.org/A175724) ([program](175/A175724.asm)): Partial sums of floor(n^2/12).
-* [A175744](http://oeis.org/A175744) ([program](175/A175744.asm)): Numbers with 34 divisors.
 * [A175753](http://oeis.org/A175753) ([program](175/A175753.asm)): Numbers with 46 divisors.
 * [A175774](http://oeis.org/A175774) ([program](175/A175774.asm)): 7*(10^n-5)
 * [A175775](http://oeis.org/A175775) ([program](175/A175775.asm)): 7*(10^n-3).
@@ -5789,6 +5792,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A195590](http://oeis.org/A195590) ([program](195/A195590.asm)): Number of ways to place 2n nonattacking kings on a vertical cylinder 4 X 2n.
 * [A195605](http://oeis.org/A195605) ([program](195/A195605.asm)): a(n) = (4*n*(n+2)+(-1)^n+1)/2 + 1.
 * [A195614](http://oeis.org/A195614) ([program](195/A195614.asm)): Denominators a(n) of Pythagorean approximations b(n)/a(n) to 2.
+* [A195615](http://oeis.org/A195615) ([program](195/A195615.asm)): Numerators b(n) of Pythagorean approximations b(n)/a(n) to 2.
 * [A195616](http://oeis.org/A195616) ([program](195/A195616.asm)): Denominators a(n) of Pythagorean approximations b(n)/a(n) to 3.
 * [A195617](http://oeis.org/A195617) ([program](195/A195617.asm)): Numerators b(n) of Pythagorean approximations b(n)/a(n) to 3.
 * [A195679](http://oeis.org/A195679) ([program](195/A195679.asm)): Order of n-th homotopy group of the topological group O(oo), with -1 if the homotopy group is Z.

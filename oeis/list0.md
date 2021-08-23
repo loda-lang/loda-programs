@@ -481,6 +481,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A002140](http://oeis.org/A002140) ([program](002/A002140.asm)): 7th powers written backwards.
 * [A002144](http://oeis.org/A002144) ([program](002/A002144.asm)): Pythagorean primes: primes of form 4*k + 1.
 * [A002145](http://oeis.org/A002145) ([program](002/A002145.asm)): Primes of the form 4*k+3.
+* [A002175](http://oeis.org/A002175) ([program](002/A002175.asm)): Excess of number of divisors of 12n+1 of form 4k+1 over those of form 4k+3.
 * [A002203](http://oeis.org/A002203) ([program](002/A002203.asm)): Companion Pell numbers: a(n) = 2*a(n-1) + a(n-2), a(0) = a(1) = 2.
 * [A002232](http://oeis.org/A002232) ([program](002/A002232.asm)): 8th powers written backwards.
 * [A002239](http://oeis.org/A002239) ([program](002/A002239.asm)): 9th powers written backwards.
@@ -3927,6 +3928,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A019428](http://oeis.org/A019428) ([program](019/A019428.asm)): Continued fraction for tan(1/5).
 * [A019429](http://oeis.org/A019429) ([program](019/A019429.asm)): Continued fraction for tan(1/6).
 * [A019430](http://oeis.org/A019430) ([program](019/A019430.asm)): Continued fraction for tan(1/7).
+* [A019438](http://oeis.org/A019438) ([program](019/A019438.asm)): Squarefree orders of elements of Mathieu group M_23.
 * [A019442](http://oeis.org/A019442) ([program](019/A019442.asm)): Numbers n such that a Hadamard matrix of order n exists.
 * [A019444](http://oeis.org/A019444) ([program](019/A019444.asm)): a_1, a_2, ..., is a permutation of the positive integers such that the average of each initial segment is an integer, using the greedy algorithm to define a_n.
 * [A019445](http://oeis.org/A019445) ([program](019/A019445.asm)): Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1+..+p_n.
@@ -4388,6 +4390,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A021868](http://oeis.org/A021868) ([program](021/A021868.asm)): Decimal expansion of 1/864.
 * [A021872](http://oeis.org/A021872) ([program](021/A021872.asm)): Decimal expansion of 1/868.
 * [A021878](http://oeis.org/A021878) ([program](021/A021878.asm)): Decimal expansion of 1/874.
+* [A021879](http://oeis.org/A021879) ([program](021/A021879.asm)): Decimal expansion of 1/875.
 * [A021892](http://oeis.org/A021892) ([program](021/A021892.asm)): Decimal expansion of 1/888.
 * [A021895](http://oeis.org/A021895) ([program](021/A021895.asm)): Decimal expansion of 1/891.
 * [A021900](http://oeis.org/A021900) ([program](021/A021900.asm)): Decimal expansion of 1/896.
@@ -6058,11 +6061,11 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A032928](http://oeis.org/A032928) ([program](032/A032928.asm)): Numbers whose set of base-7 digits is {1,2}.
 * [A032929](http://oeis.org/A032929) ([program](032/A032929.asm)): Numbers whose set of base-8 digits is {1,2}.
 * [A032930](http://oeis.org/A032930) ([program](032/A032930.asm)): Numbers whose set of base-9 digits is {1,2}.
-* [A032931](http://oeis.org/A032931) ([program](032/A032931.asm)): Numbers whose set of base 11 digits is {1,2}.
+* [A032931](http://oeis.org/A032931) ([program](032/A032931.asm)): Numbers whose set of base-11 digits is {1,2}.
 * [A032932](http://oeis.org/A032932) ([program](032/A032932.asm)): Numbers whose set of base-12 digits is {1,2}.
 * [A032934](http://oeis.org/A032934) ([program](032/A032934.asm)): Numbers whose set of base-14 digits is {1,2}.
 * [A032935](http://oeis.org/A032935) ([program](032/A032935.asm)): Numbers whose set of base-15 digits is {1,2}.
-* [A032936](http://oeis.org/A032936) ([program](032/A032936.asm)): Numbers whose set of base 16 digits is {1,2}.
+* [A032936](http://oeis.org/A032936) ([program](032/A032936.asm)): Numbers whose set of base-16 digits is {1,2}.
 * [A032960](http://oeis.org/A032960) ([program](032/A032960.asm)): Numbers whose base-10 representation Sum_{i=0..m} d(i)*10^(m-i) has even d(i) for all odd i.
 * [A032961](http://oeis.org/A032961) ([program](032/A032961.asm)): Numbers whose base-11 representation Sum_{i=0..m} d(i)*11^(m-i) has even d(i) for all odd i.
 * [A032962](http://oeis.org/A032962) ([program](032/A032962.asm)): Numbers whose base-12 representation Sum_{i=0..m} d(i)*12^(m-i) has even d(i) for all odd i.
@@ -7337,7 +7340,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A042974](http://oeis.org/A042974) ([program](042/A042974.asm)): n 1's followed by a 2.
 * [A043000](http://oeis.org/A043000) ([program](043/A043000.asm)): Number of digits in all base-b representations of n, for 2 <= b <= n.
 * [A043094](http://oeis.org/A043094) ([program](043/A043094.asm)): Every string of 2 consecutive base 8 digits contains exactly 2 distinct numbers.
-* [A043155](http://oeis.org/A043155) ([program](043/A043155.asm)): Numbers n such that 0 and 4 occur juxtaposed in the base 8 representation of n but not of n-1.
+* [A043155](http://oeis.org/A043155) ([program](043/A043155.asm)): Numbers k such that 0 and 4 occur juxtaposed in the base-8 representation of k but not of k-1.
 * [A043220](http://oeis.org/A043220) ([program](043/A043220.asm)): Numbers n such that 0 and 5 occur juxtaposed in the base 10 representation of n but not of n-1.
 * [A043291](http://oeis.org/A043291) ([program](043/A043291.asm)): Every run length in base 2 is 2.
 * [A043314](http://oeis.org/A043314) ([program](043/A043314.asm)): a(n)=A033008(n)/11.
@@ -7592,8 +7595,10 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A046175](http://oeis.org/A046175) ([program](046/A046175.asm)): Indices of triangular numbers which are also pentagonal.
 * [A046176](http://oeis.org/A046176) ([program](046/A046176.asm)): Indices of square numbers that are also hexagonal.
 * [A046177](http://oeis.org/A046177) ([program](046/A046177.asm)): Squares (A000290) which are also hexagonal numbers (A000384).
+* [A046178](http://oeis.org/A046178) ([program](046/A046178.asm)): Indices of pentagonal numbers that are also hexagonal.
 * [A046179](http://oeis.org/A046179) ([program](046/A046179.asm)): Indices of hexagonal numbers that are also pentagonal.
 * [A046184](http://oeis.org/A046184) ([program](046/A046184.asm)): Indices of octagonal numbers which are also square.
+* [A046193](http://oeis.org/A046193) ([program](046/A046193.asm)): Indices of heptagonal numbers (A000566) which are also triangular numbers (A000217).
 * [A046212](http://oeis.org/A046212) ([program](046/A046212.asm)): First numerator and then denominator of central elements of Leibniz's Harmonic Triangle.
 * [A046219](http://oeis.org/A046219) ([program](046/A046219.asm)): Denominators of elements of 1/2-Pascal triangle (by row).
 * [A046231](http://oeis.org/A046231) ([program](046/A046231.asm)): Numbers whose cube is palindromic in base 4.

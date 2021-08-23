@@ -219,6 +219,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A254614](http://oeis.org/A254614) ([program](254/A254614.asm)): Union of odd odious (A092246) and evil (A001969) numbers.
 * [A254626](http://oeis.org/A254626) ([program](254/A254626.asm)): Indices of triangular numbers (A000217) that are also centered pentagonal numbers (A005891).
 * [A254627](http://oeis.org/A254627) ([program](254/A254627.asm)): Indices of centered pentagonal numbers (A005891) that are also triangular numbers (A000217).
+* [A254628](http://oeis.org/A254628) ([program](254/A254628.asm)): Triangular numbers (A000217) that are also centered pentagonal numbers (A005891).
 * [A254640](http://oeis.org/A254640) ([program](254/A254640.asm)): Third partial sums of sixth powers (A001014).
 * [A254641](http://oeis.org/A254641) ([program](254/A254641.asm)): Third partial sums of seventh powers (A001015).
 * [A254642](http://oeis.org/A254642) ([program](254/A254642.asm)): Third partial sums of eighth powers (A001016).
@@ -895,6 +896,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A264663](http://oeis.org/A264663) ([program](264/A264663.asm)): Catalan numbers written in base 2.
 * [A264724](http://oeis.org/A264724) ([program](264/A264724.asm)): a(n) = n^2 + phi(n).
 * [A264740](http://oeis.org/A264740) ([program](264/A264740.asm)): Sum of odd parts of divisors of n.
+* [A264744](http://oeis.org/A264744) ([program](264/A264744.asm)): Exponent of the prime power A264734(n).
 * [A264749](http://oeis.org/A264749) ([program](264/A264749.asm)): a(n) = floor(n/BL(n)) where BL(n) = A070939(n) is the binary length of n.
 * [A264750](http://oeis.org/A264750) ([program](264/A264750.asm)): Number of sequences of 5 throws of an n-sided die (with faces numbered 1, 2, ..., n) in which the sum of the throws first reaches or exceeds n on the 5th throw.
 * [A264754](http://oeis.org/A264754) ([program](264/A264754.asm)): Expansion of (1 + 2*x - 2*x^3 + x^4)/((1 - x)^3*(1 + x)^2).
@@ -1682,6 +1684,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A272975](http://oeis.org/A272975) ([program](272/A272975.asm)): Numbers that are congruent to {0,7} mod 12.
 * [A272978](http://oeis.org/A272978) ([program](272/A272978.asm)): Numbers not in the range of the sum of perfect divisors function.
 * [A273005](http://oeis.org/A273005) ([program](273/A273005.asm)): Sum of coefficients in the hereditary representation of n in base 10.
+* [A273045](http://oeis.org/A273045) ([program](273/A273045.asm)): Fibonacci numbers with digits in nondecreasing order.
 * [A273053](http://oeis.org/A273053) ([program](273/A273053.asm)): Numbers n such that 15*n^2 + 16 is a square.
 * [A273092](http://oeis.org/A273092) ([program](273/A273092.asm)): a(n) = 2^n - 1 written backwards.
 * [A273109](http://oeis.org/A273109) ([program](273/A273109.asm)): Numbers n such that in the difference triangle of the divisors of n (including the divisors of n) the diagonal from the bottom entry to n gives the divisors of n.
@@ -3272,7 +3275,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A296965](http://oeis.org/A296965) ([program](296/A296965.asm)): Expansion of x*(1 - x + 2*x^2) / ((1 - x)*(1 - 2*x)).
 * [A296966](http://oeis.org/A296966) ([program](296/A296966.asm)): Sum of all the parts in the partitions of n into two distinct parts such that the smaller part divides the larger.
 * [A297024](http://oeis.org/A297024) ([program](297/A297024.asm)): Sum of the smaller parts of the partitions of n into two parts such that the smaller part does not divide the larger.
-* [A297045](http://oeis.org/A297045) ([program](297/A297045.asm)): Number of pieces in the list d(m), d(m-1), ..., d(0) of base-20 digits of n; see Comments.
 * [A297086](http://oeis.org/A297086) ([program](297/A297086.asm)): a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
 * [A297109](http://oeis.org/A297109) ([program](297/A297109.asm)): If n is prime(k)^e, e >= 1, then a(n) = k, otherwise 0.
 * [A297155](http://oeis.org/A297155) ([program](297/A297155.asm)): a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
