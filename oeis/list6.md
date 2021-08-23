@@ -2448,14 +2448,20 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A346403](http://oeis.org/A346403) ([program](346/A346403.asm)): a(1)=1; for n>1, a(n) gives the sum of the exponents in the different ways to write n as n = x^y, 2 <= x, 1 <= y.
 * [A346425](http://oeis.org/A346425) ([program](346/A346425.asm)): a(n) is the greatest number k such that k! <= prime(n).
 * [A346502](http://oeis.org/A346502) ([program](346/A346502.asm)): a(n) = 3n - (sum of digits of 3n in base 3).
+* [A346513](http://oeis.org/A346513) ([program](346/A346513.asm)): a(n) = Fibonacci(n+1)^3 - Fibonacci(n)^3.
 * [A346563](http://oeis.org/A346563) ([program](346/A346563.asm)): a(n) = n + A007978(n).
 * [A346597](http://oeis.org/A346597) ([program](346/A346597.asm)): Partial sums of A019554.
 * [A346633](http://oeis.org/A346633) ([program](346/A346633.asm)): Sum of even-indexed parts (even bisection) of the n-th composition in standard order.
 * [A346663](http://oeis.org/A346663) ([program](346/A346663.asm)): The number of nonreal roots of Sum_{k=0..n} prime(k+1)*x^k.
 * [A346759](http://oeis.org/A346759) ([program](346/A346759.asm)): a(n) = Sum_{d|n} floor(d^2/4).
+* [A346796](http://oeis.org/A346796) ([program](346/A346796.asm)): Number of equivalence classes of triangles in an n-dimensional hypercube, equivalent up to translation of difference vectors corresponding to edges.
 * [A346865](http://oeis.org/A346865) ([program](346/A346865.asm)): Sum of divisors of the n-th hexagonal number.
+* [A346869](http://oeis.org/A346869) ([program](346/A346869.asm)): Sum of all divisors, except the smallest and the largest of every number, of the first n odd numbers.
+* [A346870](http://oeis.org/A346870) ([program](346/A346870.asm)): Sum of all divisors, except the smallest and the largest of every number, of the first n positive even numbers.
 * [A346877](http://oeis.org/A346877) ([program](346/A346877.asm)): Sum of the divisors, except the largest, of the n-th odd number.
 * [A346878](http://oeis.org/A346878) ([program](346/A346878.asm)): Sum of the divisors, except the largest, of the n-th positive even number.
 * [A346879](http://oeis.org/A346879) ([program](346/A346879.asm)): Sum of the divisors, except the smallest and the largest, of the n-th odd number.
 * [A346880](http://oeis.org/A346880) ([program](346/A346880.asm)): Sum of the divisors, except the smallest and the largest, of the n-th positive even number.
 * [A346949](http://oeis.org/A346949) ([program](346/A346949.asm)): Value of the permanent of the matrix [1-zeta^{j-k}]_{1<=j,k<=2n}, where zeta is any primitive 2n-th root of unity.
+* [A347153](http://oeis.org/A347153) ([program](347/A347153.asm)): Sum of all divisors, except the largest of every number, of the first n odd numbers.
+* [A347154](http://oeis.org/A347154) ([program](347/A347154.asm)): Sum of all divisors, except the largest of every number, of the first n positive even numbers.

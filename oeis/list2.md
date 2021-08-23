@@ -1572,6 +1572,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A113335](http://oeis.org/A113335) ([program](113/A113335.asm)): a(n) = 3^5 * binomial(n+4, 5).
 * [A113338](http://oeis.org/A113338) ([program](113/A113338.asm)): Positive integers of the form (18*m^2+1)/11.
 * [A113405](http://oeis.org/A113405) ([program](113/A113405.asm)): Expansion of x^3/(1-2*x+x^3-2*x^4) = x^3/( (1-2*x)*(1+x)*(1-x+x^2) ).
+* [A113407](http://oeis.org/A113407) ([program](113/A113407.asm)): Expansion of psi(x) * phi(x^2) in powers of x where psi(), phi() are Ramanujan theta functions.
 * [A113415](http://oeis.org/A113415) ([program](113/A113415.asm)): Expansion of Sum_{k>0} x^k/(1-x^(2k))^2.
 * [A113422](http://oeis.org/A113422) ([program](113/A113422.asm)): a(n) = floor((5*n^2+1)/3).
 * [A113452](http://oeis.org/A113452) ([program](113/A113452.asm)): a(n) is the n-th smallest permanental minor of any H_m (m >= n), where H_m is the square matrix of order m with 1's on or below the super diagonal and 0's elsewhere.
@@ -1819,7 +1820,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A115953](http://oeis.org/A115953) ([program](115/A115953.asm)): Periodic {1,-1,0,0,1,-2,1,0,0,-1,1,-1}.
 * [A115955](http://oeis.org/A115955) ([program](115/A115955.asm)): Product of A115952 and summing matrix (1/(1-x),x).
 * [A115960](http://oeis.org/A115960) ([program](115/A115960.asm)): Numbers n having exactly 6 distinct prime factors, the largest of which is greater than or equal to sqrt(n) (i.e., sqrt(n)-rough numbers with exactly 6 distinct prime factors).
-* [A115971](http://oeis.org/A115971) ([program](115/A115971.asm)): a(0) = 0. If a(n) = 0, then a(2^n) through a(2^(n+1)-1) are each equal to 1. If a(n) = 1, then a(m + 2^n) = a(m) for each m, 0 <= m <= 2^n -1.
 * [A116073](http://oeis.org/A116073) ([program](116/A116073.asm)): Sum of the divisors of n that are not divisible by 5.
 * [A116081](http://oeis.org/A116081) ([program](116/A116081.asm)): Final nonzero digit of n^n.
 * [A116082](http://oeis.org/A116082) ([program](116/A116082.asm)): a(n) = C(n,7) + C(n,6) + C(n,5) + C(n,4) + C(n,3) + C(n,2) + C(n,1).
@@ -4416,6 +4416,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A136548](http://oeis.org/A136548) ([program](136/A136548.asm)): a(n) = max {k >= 1 | sigma(k) <= n}.
 * [A136556](http://oeis.org/A136556) ([program](136/A136556.asm)): a(n) = binomial(2^n - 1, n).
 * [A136572](http://oeis.org/A136572) ([program](136/A136572.asm)): Triangle read by rows: row n consists of n zeros followed by n!.
+* [A136574](http://oeis.org/A136574) ([program](136/A136574.asm)): Row sums of triangle A136573.
 * [A136580](http://oeis.org/A136580) ([program](136/A136580.asm)): Row sums of triangle A136579.
 * [A136610](http://oeis.org/A136610) ([program](136/A136610.asm)): Number of odd digits in Fibonacci numbers.
 * [A136616](http://oeis.org/A136616) ([program](136/A136616.asm)): a(n) = largest m with H(m) - H(n) <= 1, where H(i) = Sum_{j=1 to i} 1/j, the i-th harmonic number, H(0) = 0.
