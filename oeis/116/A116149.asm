@@ -3,4 +3,10 @@
 
 mul $0,2
 add $0,2
-seq $0,303383 ; Total volume of all cubes with side length q such that n = p + q and p <= q.
+lpb $0
+  mov $2,$0
+  sub $0,1
+  seq $2,309335 ; a(n) = n^3 if n odd, 7*n^3/8 if n even.
+  add $1,$2
+lpe
+mov $0,$1

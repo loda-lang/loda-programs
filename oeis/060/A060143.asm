@@ -3,12 +3,10 @@
 
 mov $2,$0
 mul $2,$0
-mov $3,$2
-lpb $3
-  add $1,1316
-  sub $3,1
-  sub $3,$0
-  add $0,2
+lpb $2
+  add $0,1
+  sub $2,$0
+  add $0,1
+  add $3,1
 lpe
-div $1,1316
-mov $0,$1
+mov $0,$3

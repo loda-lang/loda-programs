@@ -9,12 +9,8 @@ lpb $3
   mul $1,$3
   mul $2,$3
   add $1,$2
-  mov $5,$0
-  max $5,1
-  div $1,$5
-  div $2,$5
   add $2,$1
-  sub $3,1
+  sub $3,2
 lpe
 mov $4,10
 pow $4,$0

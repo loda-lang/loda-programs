@@ -3,16 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $3,$0
 lpb $2
-  mov $0,$4
+  mov $0,$3
   sub $2,1
   sub $0,$2
-  seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
-  mov $3,$0
-  div $3,3
-  mul $3,2
-  add $3,1
-  add $1,$3
+  seq $0,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  add $4,$0
 lpe
-mov $0,$1
+mov $0,$4

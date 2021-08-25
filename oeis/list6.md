@@ -32,6 +32,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A300847](http://oeis.org/A300847) ([program](300/A300847.asm)): a(n) = 12*binomial(n, 5).
 * [A300850](http://oeis.org/A300850) ([program](300/A300850.asm)): Number of 6-cycles in the n-odd graph.
 * [A300950](http://oeis.org/A300950) ([program](300/A300950.asm)): Fixed points of A300948.
+* [A300951](http://oeis.org/A300951) ([program](300/A300951.asm)): a(n) = Product_{j=1..floor(n/2)} p(j) where p(j) = j if j is prime else 1.
 * [A301270](http://oeis.org/A301270) ([program](301/A301270.asm)): Number of labeled trees on n vertices containing two fixed non-adjacent edges.
 * [A301291](http://oeis.org/A301291) ([program](301/A301291.asm)): Expansion of (x^4+3*x^3+x^2+3*x+1) / ((x^2+1)*(x-1)^2).
 * [A301292](http://oeis.org/A301292) ([program](301/A301292.asm)): Partial sums of A301291.
@@ -1151,6 +1152,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A319995](http://oeis.org/A319995) ([program](319/A319995.asm)): Number of divisors of n of the form 6*k + 5.
 * [A319998](http://oeis.org/A319998) ([program](319/A319998.asm)): a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
 * [A320006](http://oeis.org/A320006) ([program](320/A320006.asm)): a(n) = 1 if n encodes a nonnegative combinatorial game (in a style of A106486), otherwise 0; Characteristic function of A126001.
+* [A320007](http://oeis.org/A320007) ([program](320/A320007.asm)): If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
 * [A320016](http://oeis.org/A320016) ([program](320/A320016.asm)): a(1) = a(2) = 1; for n > 2, a(n) = A000005(n) * a(A000005(n)), where A000005(n) gives the number of divisors of n.
 * [A320065](http://oeis.org/A320065) ([program](320/A320065.asm)): a(n) is the smallest integer i such that binomial(2i,i) > n.
 * [A320106](http://oeis.org/A320106) ([program](320/A320106.asm)): Möbius transform of A320107.
@@ -1812,6 +1814,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A332168](http://oeis.org/A332168) ([program](332/A332168.asm)): a(n) = 6*(10^(2*n+1)-1)/9 + 2*10^n.
 * [A332169](http://oeis.org/A332169) ([program](332/A332169.asm)): a(n) = 6*(10^(2*n+1)-1)/9 + 3*10^n.
 * [A332170](http://oeis.org/A332170) ([program](332/A332170.asm)): a(n) = 7*(10^(2n+1)-1)/9 - 7*10^n.
+* [A332175](http://oeis.org/A332175) ([program](332/A332175.asm)): a(n) = 7*(10^(2n+1)-1)/9 - 2*10^n.
 * [A332178](http://oeis.org/A332178) ([program](332/A332178.asm)): a(n) = 7*(10^(2n+1)-1)/9 + 10^n.
 * [A332180](http://oeis.org/A332180) ([program](332/A332180.asm)): a(n) = 8*(10^(2n+1)-1)/9 - 8*10^n.
 * [A332182](http://oeis.org/A332182) ([program](332/A332182.asm)): a(n) = 8*(10^(2n+1)-1)/9 - 6*10^n.
@@ -2085,7 +2088,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A338043](http://oeis.org/A338043) ([program](338/A338043.asm)): Draw n rays from each of two distinct points in the plane; a(n) is the number of edges thus created. See Comments for details.
 * [A338045](http://oeis.org/A338045) ([program](338/A338045.asm)): G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^3.
 * [A338046](http://oeis.org/A338046) ([program](338/A338046.asm)): G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^4.
-* [A338064](http://oeis.org/A338064) ([program](338/A338064.asm)): Numbers k such that the Enots Wolley sequence A336957(k) is even.
 * [A338086](http://oeis.org/A338086) ([program](338/A338086.asm)): Duplicate the ternary digits of n, so each 0, 1 or 2 becomes 00, 11 or 22 respectively.
 * [A338100](http://oeis.org/A338100) ([program](338/A338100.asm)): Number of spanning trees in the n X 2 king graph.
 * [A338101](http://oeis.org/A338101) ([program](338/A338101.asm)): Smallest odd prime dividing n is a(n)-th prime, or 0 if no such prime exists.
@@ -2169,6 +2171,8 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A339685](http://oeis.org/A339685) ([program](339/A339685.asm)): a(n) = Sum_{d|n} 5^(d-1).
 * [A339686](http://oeis.org/A339686) ([program](339/A339686.asm)): a(n) = Sum_{d|n} 6^(d-1).
 * [A339687](http://oeis.org/A339687) ([program](339/A339687.asm)): a(n) = Sum_{d|n} 7^(d-1).
+* [A339688](http://oeis.org/A339688) ([program](339/A339688.asm)): a(n) = Sum_{d|n} 8^(d-1).
+* [A339689](http://oeis.org/A339689) ([program](339/A339689.asm)): a(n) = Sum_{d|n} 9^(d-1).
 * [A339747](http://oeis.org/A339747) ([program](339/A339747.asm)): a(n) = (5^(valuation(n, 5) + 1) - 1) / 4.
 * [A339748](http://oeis.org/A339748) ([program](339/A339748.asm)): a(n) = (6^(valuation(n, 6) + 1) - 1) / 5.
 * [A339765](http://oeis.org/A339765) ([program](339/A339765.asm)): a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
@@ -2421,6 +2425,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345504](http://oeis.org/A345504) ([program](345/A345504.asm)): Numbers that are the sum of nine squares in seven or more ways.
 * [A345531](http://oeis.org/A345531) ([program](345/A345531.asm)): Smallest prime power greater than the n-th prime.
 * [A345668](http://oeis.org/A345668) ([program](345/A345668.asm)): Last prime minus distance to last prime.
+* [A345685](http://oeis.org/A345685) ([program](345/A345685.asm)): a(n) is the smallest cardinality of all covering sets associated with Riesel number A101036(n).
 * [A345701](http://oeis.org/A345701) ([program](345/A345701.asm)): a(n) = 3*n^3 - 1.
 * [A345702](http://oeis.org/A345702) ([program](345/A345702.asm)): Numbers that can be written as 2*a^2 - 1 and 3*b^3 - 1.
 * [A345735](http://oeis.org/A345735) ([program](345/A345735.asm)): A prime-generating quasipolynomial: a(n) = 6*floor(n^2/4) + 17.

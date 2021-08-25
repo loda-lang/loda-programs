@@ -3,13 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
-  seq $0,55874 ; a(n) = largest m such that 1, 2, ..., m divide n.
-  add $0,1
-  add $4,$0
+  seq $0,7978 ; Least non-divisor of n.
+  add $3,$0
 lpe
-mov $0,$4
+mov $0,$3
