@@ -1,14 +1,10 @@
 ; A128922: Numbers simultaneously 10-gonal and centered 10-gonal.
 ; 1,451,145351,46802701,15070324501,4852597686751,1562521384809451,503127033310956601,162005342204743216201,52165217062894004660251,16797037888909664757384751
 
-mov $2,$0
-seq $2,75869 ; Numbers k such that 5*k^2 - 9 is a square.
-mov $0,$2
+seq $0,75869 ; Numbers k such that 5*k^2 - 9 is a square.
 mul $0,4
-mul $2,14
-add $2,$0
-mov $0,$2
 pow $0,2
-div $0,839808
+mul $0,2
+div $0,82944
 mul $0,450
 add $0,1

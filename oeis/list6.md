@@ -571,6 +571,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A309709](http://oeis.org/A309709) ([program](309/A309709.asm)): Number of binary digits that change when n is multiplied by 4.
 * [A309714](http://oeis.org/A309714) ([program](309/A309714.asm)): The smallest possible nonnegative difference between the sum of the first n positive integers (A000217) and the sum of any number of the directly following and consecutive integers.
 * [A309715](http://oeis.org/A309715) ([program](309/A309715.asm)): Number of even parts appearing among the third largest parts of the partitions of n into 4 parts.
+* [A309731](http://oeis.org/A309731) ([program](309/A309731.asm)): Expansion of Sum_{k>=1} k * x^k/(1 - x^k)^3.
 * [A309758](http://oeis.org/A309758) ([program](309/A309758.asm)): Numbers that are sums of consecutive powers of 3.
 * [A309761](http://oeis.org/A309761) ([program](309/A309761.asm)): Numbers that are sums of consecutive powers of 10.
 * [A309779](http://oeis.org/A309779) ([program](309/A309779.asm)): Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.
@@ -1647,6 +1648,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A329924](http://oeis.org/A329924) ([program](329/A329924.asm)): Beatty sequence for (8+sqrt(34))/5.
 * [A329925](http://oeis.org/A329925) ([program](329/A329925.asm)): Beatty sequence for (1+sqrt(41))/5.
 * [A329926](http://oeis.org/A329926) ([program](329/A329926.asm)): Beatty sequence for (9+sqrt(41))/5.
+* [A329928](http://oeis.org/A329928) ([program](329/A329928.asm)): a(n) = (Pi/2)*(2*n+1)!*binomial(2*n+1, (2*n+1)/2).
 * [A329938](http://oeis.org/A329938) ([program](329/A329938.asm)): Beatty sequence for sinh x, where csch x + sech x = 1 .
 * [A329939](http://oeis.org/A329939) ([program](329/A329939.asm)): Beatty sequence for cosh x,  where csch x + sech x = 1 .
 * [A329952](http://oeis.org/A329952) ([program](329/A329952.asm)): Numbers k such that binomial(k,3) is divisible by 8.
@@ -1765,7 +1767,6 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A331677](http://oeis.org/A331677) ([program](331/A331677.asm)): a(n) is the difference between the number of primes smaller than prime(n) (i.e., n-1) and greater than prime(n) but less than 2*prime(n).
 * [A331714](http://oeis.org/A331714) ([program](331/A331714.asm)): Number of non-isomorphic set-systems with 3 sets each with n elements.
 * [A331739](http://oeis.org/A331739) ([program](331/A331739.asm)): a(n) is n minus its largest odd divisor.
-* [A331743](http://oeis.org/A331743) ([program](331/A331743.asm)): Lexicographically earliest infinite sequence such that a(i) = a(j) => A002487(i) = A002487(j) and A323901(i) = A323901(j) for all i, j.
 * [A331764](http://oeis.org/A331764) ([program](331/A331764.asm)): a(n) = ((p-1)^3-(p-1)^2)/4 where p is the n-th prime.
 * [A331943](http://oeis.org/A331943) ([program](331/A331943.asm)): a(n) = n^2 + 1 - ceiling((n + 2)/3).
 * [A331952](http://oeis.org/A331952) ([program](331/A331952.asm)): a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
@@ -2068,6 +2069,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A337821](http://oeis.org/A337821) ([program](337/A337821.asm)): For n >= 0, a(4n+1) = 0, a(4n+3) = a(2n+1) + 1, a(2n+2) = a(n+1).
 * [A337843](http://oeis.org/A337843) ([program](337/A337843.asm)): a(n) is n + the number of digits in the decimal expansion of n.
 * [A337851](http://oeis.org/A337851) ([program](337/A337851.asm)): a(n) = (2^n + 2)^n.
+* [A337852](http://oeis.org/A337852) ([program](337/A337852.asm)): a(n) = (2^(n+1) + 1)^n.
 * [A337864](http://oeis.org/A337864) ([program](337/A337864.asm)): Numbers formed by removing from n each digit if it is a duplicate of the previous digit, from left to right.
 * [A337895](http://oeis.org/A337895) ([program](337/A337895.asm)): Number of oriented colorings of the tetrahedral facets (or vertices) of a regular 4-dimensional simplex using n or fewer colors.
 * [A337896](http://oeis.org/A337896) ([program](337/A337896.asm)): Number of chiral pairs of colorings of the 8 triangular faces of a regular octahedron or the 8 vertices of a cube using n or fewer colors.
@@ -2224,6 +2226,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A340520](http://oeis.org/A340520) ([program](340/A340520.asm)): a(n) = 2*A006463(n) + 1.
 * [A340528](http://oeis.org/A340528) ([program](340/A340528.asm)): Radio number of the path graph P_n.
 * [A340536](http://oeis.org/A340536) ([program](340/A340536.asm)): Digital root of 2*n^2.
+* [A340615](http://oeis.org/A340615) ([program](340/A340615.asm)): a(n) = k/2 if k is even, otherwise (3k+1)/2, where k = n+floor((n+1)/5).
 * [A340627](http://oeis.org/A340627) ([program](340/A340627.asm)): a(n) = (11*2^n - 2*(-1)^n)/3 for n >= 0.
 * [A340631](http://oeis.org/A340631) ([program](340/A340631.asm)): a(n) is the minimum number of pebbles such that any assignment of those pebbles on a complete graph with n vertices is a next-player winning game in the two-player impartial pebbling game.
 * [A340646](http://oeis.org/A340646) ([program](340/A340646.asm)): a(n) = (prime(n)^n) mod prime(n+1).
@@ -2420,6 +2423,7 @@ List of integer sequences with links to LODA programs. An _Ln_ program is a LODA
 * [A345339](http://oeis.org/A345339) ([program](345/A345339.asm)): a(n) = 18*n + 20.
 * [A345360](http://oeis.org/A345360) ([program](345/A345360.asm)): a(n) = n^n*n - n.
 * [A345366](http://oeis.org/A345366) ([program](345/A345366.asm)): a(n) = (p*q+1) mod (p+q) where p=prime(n) and q=prime(n+1).
+* [A345401](http://oeis.org/A345401) ([program](345/A345401.asm)): a(n) is the unique odd number h such that BCR(h*2^m-1) = 2n (except for BCR(0) = 1) where BCR is bit complement and reverse per A036044.
 * [A345493](http://oeis.org/A345493) ([program](345/A345493.asm)): Numbers that are the sum of eight squares in six or more ways.
 * [A345502](http://oeis.org/A345502) ([program](345/A345502.asm)): Numbers that are the sum of nine squares in five or more ways.
 * [A345504](http://oeis.org/A345504) ([program](345/A345504.asm)): Numbers that are the sum of nine squares in seven or more ways.

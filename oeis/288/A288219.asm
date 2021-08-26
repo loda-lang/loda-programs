@@ -3,8 +3,7 @@
 
 seq $0,14739 ; Expansion of (1+x^2)/(1-2*x+x^3).
 lpb $0
-  mul $0,2
-  div $0,3
+  sub $0,1
   mul $0,2
 lpe
 add $0,2
