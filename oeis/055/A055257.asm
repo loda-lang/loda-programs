@@ -3,7 +3,7 @@
 
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 mul $0,2
-seq $0,32927 ; Numbers whose set of base 6 digits is {1,2}.
+seq $0,32927 ; Numbers whose set of base-6 digits is {1,2}.
 div $0,36
 mul $0,5
 add $0,2
