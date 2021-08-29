@@ -9,14 +9,13 @@ lpb $4
   add $0,$4
   trn $0,1
   seq $0,286909 ; Positions of 1 in A286907; complement of A286908.
-  mov $3,$0
-  mov $5,$4
-  mul $5,$0
-  add $1,$5
+  mov $3,$4
+  mul $3,$0
+  add $5,$3
 lpe
 min $2,1
-mul $2,$3
-sub $1,$2
-sub $1,2
-div $1,2
-mov $0,$1
+mul $2,$0
+mov $0,$5
+sub $0,$2
+sub $0,2
+div $0,2
