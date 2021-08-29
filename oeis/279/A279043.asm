@@ -8,7 +8,5 @@ sub $0,81
 div $0,3
 add $0,26
 pow $0,2
-sub $0,676
 div $0,672
 mul $0,63
-add $0,63

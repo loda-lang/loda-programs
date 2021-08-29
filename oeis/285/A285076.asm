@@ -1,19 +1,21 @@
 ; A285076: 1-limiting word of the morphism 0->10, 1-> 010.
 ; 1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1
 
-mov $1,$0
-mov $2,4
-lpb $1
-  mov $1,$0
-  sub $1,1
-  pow $2,0
+mov $3,2
+mov $4,$0
+lpb $3
+  mov $0,$4
+  sub $3,1
+  add $0,$3
+  trn $0,1
+  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  mov $2,$3
+  mul $2,$0
+  add $5,$2
 lpe
-mov $0,$1
-add $2,1
-div $2,5
-mul $2,5
-pow $2,2
-div $2,12
-add $0,$2
-seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-sub $0,3
+min $4,1
+mul $4,$0
+mov $0,$5
+sub $0,$4
+add $0,1
+mod $0,2

@@ -8,14 +8,13 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  seq $0,305849 ; Positions of 2 in the difference sequence of A305847.
+  seq $0,305848 ; Solution b() of the complementary equation a(n) + b(n) = 5n, where a(1) = 1. See Comments.
   mov $2,$3
   mul $2,$0
-  add $1,$2
-  mov $4,$0
+  add $4,$2
 lpe
 min $5,1
-mul $5,$4
-sub $1,$5
-sub $1,2
-mov $0,$1
+mul $5,$0
+mov $0,$4
+sub $0,$5
+sub $0,3

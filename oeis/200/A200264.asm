@@ -8,9 +8,6 @@ lpb $4
   sub $4,1
   sub $0,$4
   seq $0,200263 ; a(n) = 1 iff n-th prime has an odd digit sum.
-  seq $0,3952 ; Expansion of g.f.: (1+x)/(1-9*x).
-  mov $3,$0
-  div $3,9
-  add $1,$3
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

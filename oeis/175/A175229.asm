@@ -1,6 +1,7 @@
 ; A175229: Delete sequence of step 4 of sieve from A175227.
 ; 10,20,27,35,44,51,58,66,75,82,90,96,105,114,120,126,134,142,148,156,164,171,178,186,194,202
 
-mul $0,3
-add $0,2
-seq $0,99861 ; Bisection of A002808.
+mul $0,6
+add $0,7
+seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $0,1

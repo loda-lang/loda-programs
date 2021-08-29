@@ -3,9 +3,3 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,1593 ; a(n) = 5^n + n^5.
-add $0,2
-mul $0,8
-add $1,$0
-add $0,$1
-div $0,16
-sub $0,2
