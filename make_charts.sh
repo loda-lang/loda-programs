@@ -18,11 +18,11 @@ done
 
 echo "Generating count chart"
 cat << EOF > counts.gp
-set terminal pngcairo font "arial,9" size 600,300
+set terminal pngcairo font "arial,9" size 800,600
 set output 'program_counts.png'
 set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
-set format x "%Y"
+set format x "%m/%Y"
 set xrange ["2018-09-20 00:00:00":*]
 set xtics "2018-09-20 00:00:00",7776000
 set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
