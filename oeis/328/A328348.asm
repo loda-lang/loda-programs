@@ -3,14 +3,15 @@
 
 lpb $0
   mov $2,$0
-  sub $2,1
-  lpb $0
-    mov $0,$2
-    add $1,1
-    mul $1,20
-    add $3,$1
-  lpe
+  sub $0,1
+  seq $2,86578 ; a(n) = 7*(10^n - 1).
+  add $3,$2
+  mov $2,2
   mul $3,2
 lpe
+mov $4,$2
+cmp $4,0
+add $2,$4
+div $3,$2
 mov $0,$3
-div $0,40
+div $0,63
