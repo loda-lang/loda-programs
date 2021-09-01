@@ -5,7 +5,7 @@ lpb $0
   sub $0,7
   mov $2,$0
   max $2,0
-  seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Studied by Indian scholars before Fibonacci - see Comments.
   add $1,$2
 lpe
 mul $1,7

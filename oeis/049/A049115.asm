@@ -1,4 +1,4 @@
-; A049115: If n is a power of 2, then a(n) = 0; otherwise, a(n) is the number of iterations of the Euler phi function that must be repeatedly applied to n to reach 1.
+; A049115: a(n) is the number of iterations of the Euler phi function needed to reach a power of 2, when starting from n.
 ; 0,0,1,0,1,1,2,0,2,1,2,1,2,2,1,0,1,2,3,1,2,2,3,1,2,2,3,2,3,1,2,0,2,1,2,2,3,3,2,1,2,2,3,2,2,3,4,1,3,2,1,2,3,3,2,2,3,3,4,1,2,2,3,0,2,2,3,1,3,2,3,2,3,3,2,3,2,2,3,1,4,2,3,2,1,3,3,2,3,2,3,3,2,4,3,1,2,3,2,2
 
 lpb $0

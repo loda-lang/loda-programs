@@ -1,8 +1,19 @@
 ; A076509: Expansion of 3*x*(1-x)*(1+2*x+6*x^2)/(1-24*x^3).
 ; 3,3,12,54,72,288,1296,1728,6912,31104,41472,165888,746496,995328,3981312,17915904,23887872,95551488,429981696,573308928,2293235712,10319560704,13759414272,55037657088,247669456896,330225942528
 
-add $0,1
-max $0,2
-seq $0,76507 ; Three people (P1, P2, P3) are in a circle and are saying Hello to each other. They start with P2 saying "Hello, Hello". Thereafter Pn says "Hello" for n times the total number of Hello's so far.
-div $0,8
-mul $0,3
+mov $3,2
+mov $5,$0
+lpb $3
+  mov $0,$5
+  sub $3,1
+  add $0,$3
+  trn $0,1
+  seq $0,76510 ; Expansion of 3*(1+2*x+6 x^2)/(1-24*x^3).
+  mov $2,$3
+  mul $2,$0
+  add $4,$2
+lpe
+min $5,1
+mul $5,$0
+mov $0,$4
+sub $0,$5

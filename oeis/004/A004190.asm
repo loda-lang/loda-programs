@@ -5,6 +5,4 @@ mov $2,$0
 mul $2,2
 seq $2,20704 ; Pisot sequences E(3,10), P(3,10).
 mov $0,$2
-sub $0,3
 div $0,3
-add $0,1

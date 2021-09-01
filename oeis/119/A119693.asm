@@ -4,6 +4,6 @@
 mov $1,$0
 mul $0,2
 bin $0,$1
-seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Studied by Indian scholars before Fibonacci - see Comments.
 mul $0,$1
 div $0,2
