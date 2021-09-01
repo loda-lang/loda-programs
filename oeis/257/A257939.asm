@@ -3,12 +3,11 @@
 
 mul $0,3
 div $0,2
-seq $0,81010 ; a(n) = Fibonacci(4n+1) + 2, or Fibonacci(2n-1)*Lucas(2n+2).
+seq $0,81007 ; a(n) = Fibonacci(4n+1) - 1, or Fibonacci(2n)*Lucas(2n+1).
 mov $2,$0
 mov $0,0
 mul $2,2
 sub $0,$2
 sub $2,$0
 mov $0,$2
-sub $0,8
 div $0,8

@@ -3,4 +3,3 @@
 
 seq $0,152864 ; Deficiency of n, plus the number of proper divisors of n: a(n) = 2n - sigma(n) + d(n) - 1.
 gcd $0,0
-mov $1,$0

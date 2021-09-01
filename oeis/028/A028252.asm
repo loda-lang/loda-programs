@@ -1,8 +1,11 @@
 ; A028252: Sequence arising in multiprocessor page migration.
 ; 3,8,14,19,24,29,35,40,45,51
 
-mul $0,2
-pow $0,2
-mul $0,7
-seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-add $0,3
+mul $0,4
+mov $1,1
+add $1,$0
+div $0,3
+add $1,$0
+cmp $0,2
+add $0,$1
+add $0,2

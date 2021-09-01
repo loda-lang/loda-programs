@@ -9,8 +9,5 @@ cmp $3,0
 add $2,$3
 div $0,$2
 add $2,$0
-mul $2,17
 mov $0,$2
-sub $0,34
-div $0,17
-add $0,1
+sub $0,1

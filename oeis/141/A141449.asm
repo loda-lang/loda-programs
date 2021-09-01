@@ -3,12 +3,13 @@
 
 mul $0,2
 mov $1,1
-lpb $0
-  sub $1,$0
-  cmp $0,2
-  mod $1,3
-lpe
-mul $1,3
-add $1,8
-mod $1,10
-mov $0,$1
+mov $2,$0
+mul $0,2
+add $1,$0
+div $0,3
+sub $1,2
+add $2,1
+mod $2,$1
+add $0,$2
+add $0,1
+mod $0,10
