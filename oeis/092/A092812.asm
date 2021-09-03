@@ -3,4 +3,7 @@
 
 mul $0,2
 trn $0,1
-seq $0,32121 ; Number of reversible strings with n beads of 4 colors.
+seq $0,242985 ; a(n) = 4^n + 2^(n+1).
+div $0,6
+mul $0,3
+add $0,1
