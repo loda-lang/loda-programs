@@ -7,8 +7,5 @@ pow $1,$0
 mul $1,27
 mov $0,$1
 add $0,7
-mov $1,$0
-div $1,10
-mov $0,$1
+div $0,30
 mul $0,2
-div $0,3

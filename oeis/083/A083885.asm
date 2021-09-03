@@ -3,8 +3,4 @@
 
 seq $0,52531 ; If n is even then 2^n+1 otherwise 2^n.
 pow $0,2
-mov $2,$0
-div $2,2
-mov $0,$2
-mul $0,294
-div $0,588
+div $0,4

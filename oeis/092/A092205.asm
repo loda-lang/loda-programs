@@ -5,6 +5,6 @@ seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such 
 sub $0,1
 seq $0,40 ; The prime numbers.
 seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Studied by Indian scholars before Fibonacci - see Comments.
 mul $0,2
 add $0,2

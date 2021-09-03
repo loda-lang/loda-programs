@@ -6,12 +6,7 @@ lpb $0
   sub $0,1
   seq $2,86578 ; a(n) = 7*(10^n - 1).
   add $3,$2
-  mov $2,4
   mul $3,4
 lpe
-mov $4,$2
-cmp $4,0
-add $2,$4
-div $3,$2
 mov $0,$3
-div $0,63
+div $0,252

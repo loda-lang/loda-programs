@@ -7,16 +7,13 @@ lpb $3
   mov $0,$5
   sub $3,1
   add $0,$3
-  trn $0,2
-  seq $0,68921 ; Number of ways to tile a 2 X n room with 1x2 Tatami mats. At most 3 Tatami mats may meet at a point.
-  mul $0,2
+  trn $0,1
+  seq $0,930 ; Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
   mov $2,$3
   mul $2,$0
-  add $1,$2
-  mov $4,$0
+  add $4,$2
 lpe
 min $5,1
-mul $5,$4
-sub $1,$5
-div $1,2
-mov $0,$1
+mul $5,$0
+mov $0,$4
+sub $0,$5
