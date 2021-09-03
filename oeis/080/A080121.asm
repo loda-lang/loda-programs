@@ -3,7 +3,11 @@
 
 seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
 seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-seq $0,94360 ; Pair reversal of Jacobsthal-Lucas numbers.
-mul $0,2
-div $0,3
-add $0,1
+add $0,2
+seq $0,111927 ; Expansion of x^3 / ((x-1)*(2*x-1)*(x^2-x+1)).
+add $0,2
+lpb $0
+  sub $0,1
+  seq $0,82841 ; a(n) = 4*a(n-1) - a(n-2) for n>1, a(0)=3, a(1)=9.
+lpe
+sub $0,1
