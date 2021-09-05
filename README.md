@@ -1,6 +1,6 @@
 # LODA Programs
 
-LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate integer sequences from the [On-Line Encyclopedia of Integer Sequences®](http://oeis.org/) (OEIS®).
+[LODA](https://loda-lang.org) is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate integer sequences from the [On-Line Encyclopedia of Integer Sequences®](http://oeis.org/) (OEIS®).
 
 This repository contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using [loda-cpp](https://github.com/loda-lang/loda-cpp), but there are also a few hand-written programs.
 
@@ -21,4 +21,3 @@ If you want to receive updates on new miner findings, you can follow the [commit
 
 * [loda-cpp](https://github.com/loda-lang/loda-cpp): Interpreter, optimizer and miner written in C++
 * [loda-rust](https://github.com/loda-lang/loda-rust): Interpreter and web interface written in Rust
-* [loda-lang](https://github.com/loda-lang/loda-lang): LODA language specification
