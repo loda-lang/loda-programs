@@ -3,5 +3,10 @@
 
 mul $0,2
 add $0,1
-seq $0,188070 ; Positions of 1 in A188068; complement of A188069.
-sub $0,1
+mov $2,$0
+add $0,28
+mul $0,3
+sub $0,$2
+mul $0,28
+div $0,41
+sub $0,56

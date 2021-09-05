@@ -3,7 +3,7 @@
 
 mov $1,$0
 add $1,1
-seq $1,69241 ; Number of Hamiltonian paths in the graph on n vertices {1,...,n}, with i adjacent to j iff |i-j|<=2.
+seq $1,69241 ; Number of Hamiltonian paths in the graph on n vertices {1,...,n}, with i adjacent to j iff |i-j| <= 2.
 sub $1,1
 mov $2,$1
 cmp $2,0

@@ -3,5 +3,6 @@
 
 mul $0,2
 add $0,1
-seq $0,6497 ; a(n) = 3*a(n-1) + a(n-2) with a(0) = 2, a(1) = 3.
+seq $0,100230 ; Main diagonal of triangle A100229.
 div $0,3
+add $0,1

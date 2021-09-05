@@ -3,7 +3,4 @@
 
 add $0,2
 seq $0,138134 ; a(n) = Sum_{i=0..n} Fibonacci(5*i).
-mul $0,2
-sub $0,120
-div $0,10
-add $0,12
+div $0,5

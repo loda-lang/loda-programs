@@ -1,19 +1,19 @@
 # LODA Programs
 
-LODA is an assembly language, a computational model and a tool for mining integer sequences. You can use it to search programs that calculate integer sequences from the [On-Line Encyclopedia of Integer Sequences®](http://oeis.org/) (OEIS®).
+[LODA](https://loda-lang.org) is an assembly language, a computational model and a tool for mining integer sequences.
+You can use it to mine programs that calculate integer sequences from the [On-Line Encyclopedia of Integer Sequences®](http://oeis.org/) (OEIS®).
 
 This repository contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using [loda-cpp](https://github.com/loda-lang/loda-cpp), but there are also a few hand-written programs.
 
 There are currently :star: &nbsp; **More than 35k programs available!** :star: &nbsp; You can find lists with descriptions and links here:
 
-* [A000001 - A050000](oeis/list0.md)
-* [A050001 - A100000](oeis/list1.md)
-* [A100001 - A150000](oeis/list2.md)
-* [A150001 - A200000](oeis/list3.md) 
-* [A200001 - A250000](oeis/list4.md)
-* [A250001 - A300000](oeis/list5.md)
-* [A300001 - A350000](oeis/list6.md)
-* [A350001 - A400000](oeis/list7.md)
+* [A000001-A049999](https://loda-lang.org/list0)
+* [A050000-A099999](https://loda-lang.org/list1)
+* [A100000-A149999](https://loda-lang.org/list2)
+* [A150000-A199999](https://loda-lang.org/list3)
+* [A200000-A249999](https://loda-lang.org/list4)
+* [A250000-A299999](https://loda-lang.org/list5)
+* [A300000-A349999](https://loda-lang.org/list6)
 
 If you want to receive updates on new miner findings, you can follow the [commits in this repository](https://github.com/loda-lang/loda-programs/commits/main) or subscribe to the [@lodaminer](https://twitter.com/lodaminer) channel on Twitter, or join us on Slack.
 
@@ -21,4 +21,3 @@ If you want to receive updates on new miner findings, you can follow the [commit
 
 * [loda-cpp](https://github.com/loda-lang/loda-cpp): Interpreter, optimizer and miner written in C++
 * [loda-rust](https://github.com/loda-lang/loda-rust): Interpreter and web interface written in Rust
-* [loda-lang](https://github.com/loda-lang/loda-lang): LODA language specification
