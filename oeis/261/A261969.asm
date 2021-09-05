@@ -3,7 +3,9 @@
 
 lpb $0
   mov $1,$0
-  seq $0,336551 ; a(n) = A003557(n) - 1.
+  seq $1,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+  mov $2,$0
+  div $0,$1
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2
+add $0,1
