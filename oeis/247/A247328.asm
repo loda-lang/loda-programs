@@ -3,29 +3,28 @@
 
 mov $2,$0
 add $2,1
-mov $4,$0
+mov $5,$0
 lpb $2
-  mov $0,$4
+  mov $0,$5
   sub $2,1
   sub $0,$2
+  mov $6,$0
+  add $6,1
   mov $7,0
   mov $8,$0
-  add $8,1
-  lpb $8
-    mov $0,$6
-    sub $8,1
-    sub $0,$8
-    mul $0,2
-    pow $0,2
-    div $0,8
-    mov $5,4
-    seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-    lpb $0
-      trn $5,$0
-      mov $0,$5
-    lpe
-    add $7,$5
+  lpb $6
+    mov $0,$8
+    sub $6,1
+    sub $0,$6
+    mov $3,$0
+    seq $0,95140 ; Triangle formed by reading Pascal's triangle (A007318) mod 5.
+    mov $9,$3
+    cmp $9,0
+    add $3,$9
+    div $0,$3
+    mul $3,$0
+    add $7,$3
   lpe
-  add $3,$7
+  add $4,$7
 lpe
-mov $0,$3
+mov $0,$4
