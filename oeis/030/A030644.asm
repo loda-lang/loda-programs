@@ -5,5 +5,4 @@ seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
 mov $2,16
 sub $2,$0
 mov $0,$2
-add $0,3
-mod $0,10
+sub $0,7
