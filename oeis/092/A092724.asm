@@ -3,13 +3,12 @@
 
 sub $3,$0
 lpb $0
-  max $1,$0
   sub $0,7
   mov $2,6
-  add $2,$1
+  sub $2,$3
   bin $2,$0
-  mul $2,$3
 lpe
+mul $2,$3
 mov $0,$2
 div $0,7
 mul $0,264

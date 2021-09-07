@@ -3,6 +3,5 @@
 
 mov $2,$0
 mul $2,2
-mov $1,$2
-seq $1,286519 ; Binary representation of the diagonal from the origin to the corner (or of the corner to the origin) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
-mov $0,$1
+seq $2,286519 ; Binary representation of the diagonal from the origin to the corner (or of the corner to the origin) of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 659", based on the 5-celled von Neumann neighborhood.
+mov $0,$2
