@@ -1,5 +1,8 @@
 ; A007875: Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
 ; 1,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,2,1,2,2,2,1,2,1,2,1,2,1,4,1,1,2,2,2,2,1,2,2,2,1,4,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,4,1,2,2,1,2,4,1,2,2,4,1,2,1,2,2,2,2,4,1,2,1,2,1,4,2,2,2,2,1,4,2,2,2,2,2,2,1,2,2,2
 
-seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-dif $0,2
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+bin $0,2
+mul $0,6
+div $0,5
+add $0,1
