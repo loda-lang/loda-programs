@@ -3,9 +3,5 @@
 
 mov $2,$0
 seq $2,114121 ; Expansion of (sqrt(1 - 4*x) + (1 - 2*x))/(2*(1 - 4*x)).
-mul $0,$2
-add $0,8
-mul $0,3
-sub $0,24
-div $0,6
-mul $0,2
+mul $2,$0
+mov $0,$2
