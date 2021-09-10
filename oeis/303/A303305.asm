@@ -3,6 +3,5 @@
 
 seq $0,248474 ; Numbers congruent to 13 or 17 mod 30.
 pow $0,2
-mul $0,288
-sub $0,48672
-div $0,34560
+sub $0,169
+div $0,120
