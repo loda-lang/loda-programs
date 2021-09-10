@@ -3,14 +3,13 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $4,$0
 lpb $2
-  mov $0,$3
+  mov $0,$4
   sub $2,1
   sub $0,$2
-  seq $0,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
-  div $0,2
+  seq $0,63647 ; Number of ways to write 1/n as a difference of exactly 2 unit fractions.
   add $0,1
-  add $4,$0
+  add $3,$0
 lpe
-mov $0,$4
+mov $0,$3

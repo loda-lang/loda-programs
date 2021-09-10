@@ -3,61 +3,30 @@
 
 mov $2,$0
 add $2,1
-mov $15,$0
+mov $4,$0
 lpb $2
-  mov $0,$15
+  mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $11,$0
-  mov $12,0
-  mov $13,2
-  lpb $13
-    mov $0,$11
-    mov $9,0
-    sub $13,1
-    add $0,$13
-    sub $0,1
-    mov $8,$0
-    mov $10,$0
-    add $10,1
-    lpb $10
-      mov $0,$8
-      mov $5,0
-      sub $10,1
-      sub $0,$10
-      mov $4,$0
-      mov $6,2
-      lpb $6
-        mov $0,$4
-        sub $6,1
-        add $0,$6
-        trn $0,1
-        seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-        mov $7,$6
-        mul $7,$0
-        add $5,$7
-      lpe
-      min $4,1
-      mul $4,$0
-      mov $0,$5
-      sub $0,$4
-      add $0,1
-      mod $0,2
-      add $0,4
-      mod $0,3
-      add $9,$0
-    lpe
-    mov $0,$9
-    div $0,2
-    mov $14,$13
-    mul $14,$0
-    add $12,$14
+  mov $6,$0
+  mov $7,0
+  mov $8,2
+  lpb $8
+    mov $0,$6
+    sub $8,1
+    add $0,$8
+    trn $0,1
+    seq $0,49472 ; a(n) = floor(n/sqrt(2)).
+    mov $5,$8
+    mul $5,$0
+    add $7,$5
   lpe
-  min $11,1
-  mul $11,$0
-  mov $0,$12
-  sub $0,$11
+  min $6,1
+  mul $6,$0
+  mov $0,$7
+  sub $0,$6
   add $0,1
   add $3,$0
 lpe
 mov $0,$3
+add $0,1

@@ -3,5 +3,4 @@
 
 seq $0,75869 ; Numbers k such that 5*k^2 - 9 is a square.
 pow $0,2
-div $0,2592
-mul $0,72
+div $0,36

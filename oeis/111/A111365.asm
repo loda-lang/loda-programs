@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,106569 ; First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,4],[1,4]] and v is the column vector [0,1].
+  seq $2,106569 ; a(n) = 5*a(n-1) + 3*a(n-2), where a(0) = 0, a(1) = 3.
   add $1,$2
 lpe
 div $1,3
