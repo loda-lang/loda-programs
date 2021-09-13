@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  seq $0,86148 ; Sum of the orders of the elements in the dihedral group D_2n.
+  seq $0,57660 ; a(n) = Sum_{k=1..n} n/gcd(n,k).
   mov $2,$3
   mul $2,$0
   add $4,$2
@@ -17,4 +17,3 @@ min $5,1
 mul $5,$0
 mov $0,$4
 sub $0,$5
-sub $0,2

@@ -3,14 +3,13 @@
 
 mov $1,1
 mov $2,1
-mov $3,$0
-mul $3,5
-lpb $3
-  mul $1,$0
-  min $3,$1
-  mul $2,$3
-  sub $3,1
-  max $3,1
-  add $4,$2
+lpb $1
+  lpb $0,7
+    add $3,$2
+    mul $2,$0
+    trn $0,1
+    cmp $1,$2
+  lpe
 lpe
-mov $0,$4
+mov $0,$3
+sub $0,1

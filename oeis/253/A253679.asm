@@ -8,7 +8,6 @@ mov $1,2
 sub $1,$0
 add $0,1
 pow $0,3
-sub $1,$2
-add $1,$0
-sub $1,4
-mov $0,$1
+sub $2,$1
+sub $0,$2
+sub $0,4
