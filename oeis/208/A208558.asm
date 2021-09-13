@@ -3,8 +3,6 @@
 
 add $0,1
 seq $0,228661 ; Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
-add $1,$0
-pow $1,2
-div $1,4
-mul $1,16
-mov $0,$1
+pow $0,2
+div $0,4
+mul $0,16

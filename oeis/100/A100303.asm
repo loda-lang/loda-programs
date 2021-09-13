@@ -11,10 +11,9 @@ lpb $3
   seq $0,100305 ; Expansion of (1-x-4x^2)/(1-2x-7x^2+8x^3).
   mov $2,$3
   mul $2,$0
-  add $1,$2
-  mov $4,$0
+  add $4,$2
 lpe
 min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mul $5,$0
+mov $0,$4
+sub $0,$5

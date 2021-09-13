@@ -3,7 +3,3 @@
 
 seq $0,262033 ; Number of permutations of [n] beginning with at least floor(n/2) ascents.
 pow $0,2
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1

@@ -4,7 +4,6 @@
 seq $0,82841 ; a(n) = 4*a(n-1) - a(n-2) for n>1, a(0)=3, a(1)=9.
 pow $0,2
 div $0,6
-mul $0,2
 pow $0,2
-div $0,2
+mul $0,2
 sub $0,1

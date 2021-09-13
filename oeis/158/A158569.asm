@@ -2,7 +2,5 @@
 ; 1,1,2,4,12,54,609,28656,14930351,365435296161,4660046610375530308,1454489111232772683678306641952
 
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-seq $0,78642 ; Numbers with two representations as the sum of two Fibonacci numbers.
-mul $0,10
-div $0,20
-sub $0,1
+seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
+sub $0,1982

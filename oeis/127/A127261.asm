@@ -11,11 +11,10 @@ lpb $3
   seq $0,83102 ; a(n) = 2*a(n-1) + 10*a(n-2).
   mov $2,$3
   mul $2,$0
-  add $1,$2
-  mov $5,$0
+  add $5,$2
 lpe
 min $4,1
-mul $4,$5
-sub $1,$4
-mul $1,2
-mov $0,$1
+mul $4,$0
+mov $0,$5
+sub $0,$4
+mul $0,2
