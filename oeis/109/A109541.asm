@@ -2,7 +2,7 @@
 ; 1,1,1,1,1,1,1,7,7,13,19,31,49,85,133,217,349,565,913,1483,2395,3877,6271,10147,16417,26569,42985,69553,112537,182089,294625,476719,771343,1248061,2019403,3267463,5286865,8554333,13841197,22395529,36236725
 
 trn $0,3
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Studied by Indian scholars before Fibonacci - see Comments.
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 add $0,5
 div $0,4
 sub $0,1

@@ -1,14 +1,17 @@
 ; A096365: Maximum number of iterations of the RUNS transform needed to reduce any binary sequence of length n to a sequence of length 1.
 ; 0,2,3,4,5,5,6,6,6,7,7,7,7,8,8,8,8,8,8,8,9
 
-mul $0,4
-add $0,2
-div $0,3
-pow $0,4
-lpb $0
-  sub $0,1
-  div $0,5
-  add $1,64
+pow $0,2
+mov $1,$0
+add $0,5
+mov $3,$1
+mov $1,$0
+mul $3,2
+mul $3,$0
+mul $1,$3
+lpb $1
+  div $1,10
+  add $2,16
 lpe
-div $1,64
-mov $0,$1
+mov $0,$2
+div $0,16
