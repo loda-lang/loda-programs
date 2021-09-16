@@ -5,6 +5,4 @@ mov $2,$0
 seq $0,6013 ; a(n) = binomial(3*n+1,n)/(n+1).
 add $2,2
 mul $0,$2
-add $1,$0
-div $1,2
-mov $0,$1
+div $0,2

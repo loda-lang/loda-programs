@@ -4,7 +4,5 @@
 add $0,1
 seq $0,157456 ; Expansion of x*(1-x) / ( 1 - 16*x + x^2 ).
 pow $0,2
-sub $0,225
 div $0,224
 mul $0,48
-add $0,48
