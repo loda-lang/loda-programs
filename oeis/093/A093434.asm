@@ -3,23 +3,7 @@
 
 add $0,1
 mov $2,$0
-mul $0,3
-mov $5,3
-lpb $0
-  mul $5,$0
-  lpb $5
-    mov $3,$2
-    mov $4,$0
-    cmp $4,0
-    add $0,$4
-    dif $3,$0
-    add $0,1
-    cmp $3,$2
-    cmp $3,0
-    sub $5,$3
-  lpe
-  sub $0,1
-lpe
-mov $0,$5
+seq $2,202946 ; a(n+1) = 6*A060544(n)*a(n).
+mov $0,$2
 div $0,18
 mul $0,3

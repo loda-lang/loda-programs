@@ -6,5 +6,4 @@ add $0,1
 mul $0,4
 seq $0,34730 ; Dirichlet convolution of b_n=1 with c_n=3^(n-1).
 mod $0,10
-mul $0,4
-div $0,8
+div $0,2

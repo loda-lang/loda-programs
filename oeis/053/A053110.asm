@@ -3,6 +3,4 @@
 
 add $0,1
 seq $0,36226 ; Expansion of 1/(1-7*x)^7.
-sub $0,49
 div $0,49
-add $0,1

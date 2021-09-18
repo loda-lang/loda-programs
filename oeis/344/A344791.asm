@@ -3,44 +3,43 @@
 
 mov $2,$0
 add $2,1
-mov $3,$0
+mov $12,$0
 lpb $2
-  mov $0,$3
+  mov $0,$12
   sub $2,1
   sub $0,$2
+  mov $9,$0
+  mov $10,0
   mov $11,$0
-  mov $12,0
-  mov $13,$0
-  add $13,1
-  lpb $13
-    mov $0,$11
-    mov $9,0
-    sub $13,1
-    sub $0,$13
+  add $11,1
+  lpb $11
+    mov $0,$9
+    mov $7,0
+    sub $11,1
+    sub $0,$11
+    mov $6,$0
     mov $8,$0
-    mov $10,$0
-    add $10,1
-    lpb $10
-      mov $0,$8
-      mov $6,0
-      sub $10,1
-      sub $0,$10
+    add $8,1
+    lpb $8
+      mov $0,$6
+      mov $4,0
+      sub $8,1
+      sub $0,$8
+      mov $3,$0
       mov $5,$0
-      mov $7,$0
-      add $7,1
-      lpb $7
-        mov $0,$5
-        sub $7,1
-        sub $0,$7
+      add $5,1
+      lpb $5
+        mov $0,$3
+        sub $5,1
+        sub $0,$5
         trn $0,1
-        mov $4,$0
-        gcd $4,2
-        add $6,$4
+        gcd $0,2
+        add $4,$0
       lpe
-      add $9,$6
+      add $7,$4
     lpe
-    add $12,$9
+    add $10,$7
   lpe
-  add $1,$12
+  add $13,$10
 lpe
-mov $0,$1
+mov $0,$13
