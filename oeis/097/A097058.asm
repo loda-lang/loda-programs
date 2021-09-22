@@ -5,7 +5,6 @@ seq $0,40 ; The prime numbers.
 seq $0,1580 ; a(n) = 2^n + n^2.
 add $0,2
 mul $0,8
-add $1,$0
-add $0,$1
-div $0,16
-sub $0,2
+sub $0,79
+div $0,8
+add $0,8

@@ -8,21 +8,10 @@ lpb $2
   mov $0,$4
   sub $2,1
   sub $0,$2
-  mov $5,$0
-  add $5,1
-  mov $6,$0
-  mov $7,0
-  lpb $5
-    mov $0,$6
-    sub $5,1
-    sub $0,$5
-    add $0,1
-    seq $0,78688 ; Continued fraction expansion of e^(1/4).
-    mov $3,$0
-    mul $3,2
-    div $3,4
-    add $7,$3
-  lpe
-  add $1,$7
+  div $0,3
+  mul $0,2
+  add $0,2
+  bin $0,2
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3

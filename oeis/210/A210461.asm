@@ -7,6 +7,4 @@ sub $0,3
 mov $2,9
 pow $2,$0
 mov $0,$2
-sub $0,729
 div $0,8
-add $0,91

@@ -3,9 +3,9 @@
 
 mul $0,2
 lpb $0
-  mov $2,$0
   dif $0,2
-  seq $2,16116 ; a(n) = 2^floor(n/2).
-  add $1,$2
+  mov $1,2
+  pow $1,$0
+  add $2,$1
 lpe
-mov $0,$1
+mov $0,$2

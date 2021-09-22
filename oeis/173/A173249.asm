@@ -3,19 +3,12 @@
 
 mov $2,$0
 add $2,1
-mov $5,$0
+mov $3,$0
 lpb $2
-  mov $0,$5
+  mov $0,$3
   sub $2,1
   sub $0,$2
-  mov $3,$0
-  pow $3,$0
-  pow $0,2
-  mov $6,$0
-  cmp $6,0
-  add $0,$6
-  div $3,$0
-  max $1,$3
-  add $4,$1
+  seq $0,272 ; Number of trees on n labeled nodes: n^(n-2) with a(0)=1.
+  add $4,$0
 lpe
 mov $0,$4

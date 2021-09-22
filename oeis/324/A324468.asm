@@ -1,6 +1,14 @@
 ; A324468: a(n)=r(n)+r(n+1)+r(n+2), where r(n) is the ruler sequence A007814.
 ; 1,3,2,3,1,4,3,4,1,3,2,3,1,5,4,5,1,3,2,3,1,4,3,4,1,3,2,3,1,6,5,6,1,3,2,3,1,4,3,4,1,3,2,3,1,5,4,5,1,3,2,3,1,4,3,4,1,3,2,3,1,7,6,7,1,3,2,3,1,4,3,4,1,3,2,3,1,5,4,5,1,3,2,3,1,4,3,4,1,3,2,3,1,6,5,6,1,3,2,3
 
-seq $0,130809 ; If X_1, ..., X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 3-subsets of X containing none of X_i, (i=1,...,n).
-seq $0,136480 ; Number of trailing equal digits in binary representation of n.
+add $0,3
+bin $0,3
+mov $2,2
+mov $3,6
+lpb $0
+  dif $0,2
+  add $3,$2
+lpe
+mov $0,$3
+div $0,2
 sub $0,2
