@@ -14,7 +14,7 @@ mov $9,10
 lpb $3
   mov $4,$2
   pow $4,2
-  mul $4,8 ; this is the number that we want to take the square root of
+  mul $4,8
   mov $5,$1
   pow $5,2
   add $4,$5

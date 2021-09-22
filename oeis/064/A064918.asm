@@ -5,10 +5,6 @@ lpb $0
   mov $2,$0
   seq $2,330492 ; a(n) = sum of second differences of the sorted divisors of n.
   sub $0,$2
-  mov $3,$2
-  min $3,1
-  mul $3,2
-  add $1,$3
+  add $3,1
 lpe
-div $1,2
-mov $0,$1
+mov $0,$3
