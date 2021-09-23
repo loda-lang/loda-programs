@@ -3,6 +3,4 @@
 
 add $0,3
 seq $0,26597 ; Expansion of (1+x)/(1-x-4*x^2).
-sub $0,14
 div $0,8
-add $0,1

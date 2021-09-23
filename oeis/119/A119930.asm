@@ -3,14 +3,13 @@
 
 mov $2,$0
 mov $4,$0
-add $4,1
-lpb $4
-  mov $0,$2
-  sub $4,1
-  sub $0,$4
+lpb $2
+  mov $0,$4
+  sub $2,1
+  sub $0,$2
   seq $0,48158 ; Triangular array T read by rows: T(n,k) = n mod k, for k=1,2,...,n, n=1,2,...
-  mov $3,$0
-  add $3,1
-  add $1,$3
+  add $0,1
+  add $3,$0
 lpe
-mov $0,$1
+mov $0,$3
+add $0,1

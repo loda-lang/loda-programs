@@ -5,5 +5,4 @@ mov $2,$0
 seq $2,90326 ; Number of rules of a context-free grammar in Chomsky normal form that generates all permutations of n symbols.
 add $2,$0
 mov $0,$2
-mul $0,2
-div $0,8
+div $0,4
