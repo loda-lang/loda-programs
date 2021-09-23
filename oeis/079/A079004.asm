@@ -8,6 +8,5 @@ trn $1,2
 mov $2,3
 pow $2,$1
 mul $0,$2
-sub $0,3
 mul $0,3
-add $0,7
+sub $0,2

@@ -2,14 +2,10 @@
 ; 1,2,3,5,6,7,10,13,14,15
 
 add $0,1
-mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
   seq $2,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
   add $1,$2
 lpe
-add $1,2
-add $1,$2
 mov $0,$1
-sub $0,4

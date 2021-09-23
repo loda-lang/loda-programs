@@ -3,8 +3,7 @@
 
 add $0,1
 seq $0,153111 ; Solutions of the Pell-like equation 1 + 6*A*A = 7*B*B, with A, B integers.
-mul $0,2
-sub $0,50
-div $0,48
+sub $0,25
+div $0,24
 mul $0,84
 add $0,85

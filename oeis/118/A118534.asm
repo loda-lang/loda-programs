@@ -3,11 +3,8 @@
 
 lpb $0
   mov $2,$0
-  mul $0,2
-  seq $2,62234 ; a(n) = 2*prime(n) - prime(n+1).
-  mov $3,$2
-  min $3,1
-  add $0,$3
+  pow $0,3
   mod $0,4
+  seq $2,62234 ; a(n) = 2*prime(n) - prime(n+1).
 lpe
 mov $0,$2
