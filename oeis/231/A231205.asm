@@ -3,8 +3,9 @@
 
 lpb $0
   mov $2,$0
-  div $0,7
-  seq $2,277822 ; a(n) = index of the column where n is located in array A277880.
-  add $3,$2
+  seq $2,130517 ; Triangle read by rows: row n counts down from n in steps of 2, then counts up the remaining elements in the set {1,2,...n}, again in steps of 2.
+  mul $0,$2
+  div $0,8
+  add $3,1
 lpe
 mov $0,$3

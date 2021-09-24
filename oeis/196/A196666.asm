@@ -3,12 +3,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,169490 ; Number of reduced words of length n in Coxeter group on 45 generators S_i with relations (S_i)^2 = (S_i S_j)^33 = I.
+  sub $0,1
+  seq $2,170294 ; Number of reduced words of length n in Coxeter group on 45 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
   add $3,$2
   div $3,2
-  mov $4,$2
-  min $4,1
-  sub $0,$4
 lpe
 mov $0,$3
 div $0,11

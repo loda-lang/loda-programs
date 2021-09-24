@@ -3,12 +3,6 @@
 
 add $0,1
 seq $0,1113 ; Decimal expansion of e.
-mov $1,40206
-mov $2,3
-mul $2,$0
-sub $2,1
-sub $1,$2
-sub $1,40183
-div $1,3
-add $1,1
-mov $0,$1
+sub $2,$0
+mov $0,$2
+add $0,9

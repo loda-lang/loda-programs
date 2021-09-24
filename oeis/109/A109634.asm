@@ -3,11 +3,12 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,73388 ; Convolution of A002605(n) (generalized (2,2)-Fibonacci), n >= 0, with itself.
-  sub $0,$2
-  add $1,$2
-  add $0,$1
+  add $2,2
+  add $2,$0
+  max $1,$2
+  add $2,$3
+  mul $2,2
+  mov $3,$1
 lpe
 mov $0,$1
+div $0,2
