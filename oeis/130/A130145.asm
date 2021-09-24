@@ -1,4 +1,4 @@
-; A130145: Number of nonisomorphic orthogonal arrays OA(n,4,2,2)'s when n is not a multiple of 8.
+; A130145: Number of nonisomorphic orthogonal arrays OA(8*n+4,4,2,2).
 ; 1,3,7,15,28,48,79,123,184,268,379,523,709,943,1234,1594,2032,2560,3194,3946,4832,5872,7082,8482,10097
 
 mov $3,$0

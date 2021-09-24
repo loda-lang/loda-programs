@@ -1,0 +1,6 @@
+; A037547: Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 1,2,2.
+; 1,8,50,301,1808,10850,65101,390608,2343650,14061901,84371408,506228450,3037370701,18224224208,109345345250,656072071501,3936432429008,23618594574050,141711567444301,850269404665808,5101616427994850
+
+seq $0,33133 ; Base-6 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
+mul $0,100
+div $0,84

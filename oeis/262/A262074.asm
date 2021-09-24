@@ -3,7 +3,6 @@
 
 add $0,1
 seq $0,157877 ; Expansion of (1-x)*x/(x^2-30*x+1).
-div $0,2
-sub $0,14
-mul $0,8
+sub $0,29
+mul $0,4
 add $0,113

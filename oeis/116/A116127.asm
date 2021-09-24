@@ -8,14 +8,13 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
-  seq $0,135731 ; a(1) = 3; thereafter a(n+1) = a(n) + nextprime(a(n)) - prevprime(a(n)).
-  div $0,3
+  seq $0,296058 ; Numbers k such that floor((3*k - 1)/2) is prime.
+  div $0,2
   mov $2,$3
   mul $2,$0
-  add $1,$2
-  mov $4,$0
+  add $4,$2
 lpe
 min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mul $5,$0
+mov $0,$4
+sub $0,$5

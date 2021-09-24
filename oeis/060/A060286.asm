@@ -6,6 +6,3 @@ mov $1,2
 pow $1,$0
 bin $1,2
 mov $0,$1
-mul $0,4
-div $0,8
-mul $0,2
