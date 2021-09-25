@@ -5,7 +5,6 @@ add $0,1
 lpb $0
   sub $0,1
   seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
-  add $1,1
+  add $1,2
 lpe
 mov $0,$1
-mul $0,2

@@ -1,7 +1,6 @@
 ; A071906: Sum of digits of 2^n (mod 2).
 ; 1,0,0,0,1,1,0,1,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1,1,1,0,1,1,0,1
 
-seq $0,51 ; a(n) = 2^n + 1.
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-add $0,13
+seq $0,79 ; Powers of 2: a(n) = 2^n.
+seq $0,196564 ; Number of odd digits in decimal representation of n.
 mod $0,2

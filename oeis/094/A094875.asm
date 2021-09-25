@@ -5,15 +5,6 @@ lpb $0
   add $0,3
   dif $0,8
 lpe
-mov $1,$0
-add $2,1
-mov $3,1
-lpb $2
-  sub $0,1
-  sub $2,$1
-lpe
-lpb $0
-  mov $0,$3
-lpe
-add $0,1
+mul $0,3
+seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 mod $0,2
