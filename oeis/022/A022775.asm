@@ -1,32 +1,26 @@
 ; A022775: Place where n-th 1 occurs in A007336.
 ; 1,3,6,11,17,25,34,44,56,69,84,100,117,136,156,178,201,226,252,279,308,338,370,403,437,473,510,549,589,631,674,718,764,811,860,910,961,1014,1068,1124,1181,1239,1299,1360,1423,1487,1553,1620,1688
 
+mov $2,$0
 mov $4,$0
-add $4,1
-mov $9,$0
-lpb $4
-  mov $0,$9
-  sub $4,1
-  sub $0,$4
+lpb $2
+  mov $0,$4
+  sub $2,1
+  sub $0,$2
+  mov $5,$0
+  add $5,1
   mov $6,$0
   mov $7,0
-  mov $8,$0
-  add $8,1
-  lpb $8
+  lpb $5
     mov $0,$6
-    mov $3,0
-    sub $8,1
-    sub $0,$8
-    lpb $0
-      mov $2,$0
-      mod $0,3
-      seq $2,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
-      add $3,$2
-    lpe
-    mov $0,$3
-    add $0,1
+    sub $5,1
+    sub $0,$5
+    trn $0,1
+    seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+    sub $0,2
     add $7,$0
   lpe
-  add $5,$7
+  add $3,$7
 lpe
-mov $0,$5
+mov $0,$3
+add $0,1

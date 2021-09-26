@@ -3,7 +3,6 @@
 
 seq $0,76273 ; a(0) = 1, a(1) = 2; for n>1, a(n) = prime(n)+prime(n-1)-1.
 lpb $0
-  bin $0,2
-  mul $0,13
+  div $0,-2
 lpe
 add $0,1
