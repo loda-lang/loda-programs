@@ -7,9 +7,4 @@ pow $1,$0
 gcd $0,2
 add $0,12
 mul $0,$1
-div $0,12
-add $0,2
-mul $0,40
-sub $0,120
-div $0,80
-add $0,1
+div $0,24

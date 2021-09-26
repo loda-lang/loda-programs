@@ -7,7 +7,9 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  seq $0,189668 ; Fixed point of the morphism 0->010, 1->100.
-  add $1,$0
+  mov $1,729
+  sub $1,$0
+  seq $1,284817 ; a(n) = 2n - 1 - A284776(n).
+  add $4,$1
 lpe
-mov $0,$1
+mov $0,$4

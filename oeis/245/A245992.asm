@@ -4,7 +4,5 @@
 mul $0,3
 add $0,7
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
-div $0,2
-sub $0,10
-mul $0,12
-add $0,126
+add $0,1
+mul $0,6

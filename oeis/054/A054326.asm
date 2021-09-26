@@ -3,12 +3,5 @@
 
 mul $0,2
 add $0,1
-mov $1,-2
-pow $1,$0
-mov $2,-8
-bin $2,$0
-mul $1,$2
-mov $0,$1
-mul $0,6
-div $0,96
-mul $0,8
+seq $0,54851 ; a(n) = 2^(n-7)*binomial(n,7). Number of 7D hypercubes in an n-dimensional hypercube.
+div $0,2
