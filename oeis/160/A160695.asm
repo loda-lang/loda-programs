@@ -3,5 +3,4 @@
 
 seq $0,30221 ; Chebyshev even indexed U-polynomials evaluated at sqrt(7)/2.
 pow $0,2
-mul $0,6
-div $0,42
+div $0,7

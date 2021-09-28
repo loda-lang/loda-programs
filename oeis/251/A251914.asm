@@ -3,6 +3,5 @@
 
 mul $0,2
 seq $0,291181 ; p-INVERT of the positive integers, where p(S) = 1 - 8*S.
-mul $0,2
-sub $0,16
-div $0,16
+sub $0,8
+div $0,8

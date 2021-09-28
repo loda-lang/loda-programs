@@ -3,7 +3,4 @@
 
 mul $0,2
 seq $0,134316 ; a(n) = index of first derangement of 1..n (n>=2).
-mul $0,4
-sub $0,8
-div $0,4
-add $0,1
+sub $0,1

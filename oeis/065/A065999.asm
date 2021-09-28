@@ -3,7 +3,3 @@
 
 mul $0,2
 seq $0,4166 ; Sum of digits of 3^n.
-mov $2,2
-add $2,$0
-mov $0,$2
-sub $0,2
