@@ -3,9 +3,7 @@
 
 mov $1,$0
 seq $0,183156 ; The number T(n) of isometries of all subspaces of the finite metric space {1,2,...,n} (as a subspace of the reals with the Euclidean metric).
-add $2,$1
-mov $3,$2
-add $3,$0
-mov $0,$3
+add $1,$0
+mov $0,$1
 div $0,2
 add $0,1

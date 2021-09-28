@@ -3,4 +3,7 @@
 
 mul $0,4
 add $0,3
-seq $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $0,$1
+sub $0,2

@@ -3,7 +3,6 @@
 
 mov $2,$0
 seq $0,180189 ; Number of permutations of [n] having exactly 1 circular succession. A circular succession in a permutation p of [n] is either a pair p(i), p(i+1), where p(i+1)=p(i)+1 or the pair p(n), p(1) if p(1)=p(n)+1.
-mul $2,$0
-add $2,$0
-mov $0,$2
+add $2,1
+mul $0,$2
 div $0,4

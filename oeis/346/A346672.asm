@@ -3,20 +3,17 @@
 
 mov $3,$0
 mov $5,$0
-add $5,1
 lpb $5
   mov $0,$3
-  mov $1,0
-  mov $2,0
   sub $5,1
   sub $0,$5
-  add $1,$0
-  mul $1,8
-  add $2,$0
-  trn $2,1
-  bin $1,$2
+  mov $2,7
+  mul $2,$0
+  add $0,$2
+  bin $0,$2
   add $2,1
-  div $1,$2
-  add $4,$1
+  div $0,$2
+  add $4,$0
 lpe
 mov $0,$4
+add $0,1

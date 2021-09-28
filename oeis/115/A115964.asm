@@ -3,10 +3,4 @@
 
 add $0,1
 seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-div $0,2
-mul $0,4
-mov $1,$0
-pow $1,3
-mov $0,$1
-div $0,64
-mul $0,8
+pow $0,3

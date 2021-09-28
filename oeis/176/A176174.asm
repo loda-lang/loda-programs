@@ -3,6 +3,4 @@
 
 add $0,1
 seq $0,57086 ; Scaled Chebyshev U-polynomials evaluated at sqrt(10)/2.
-sub $0,10
 div $0,10
-add $0,1

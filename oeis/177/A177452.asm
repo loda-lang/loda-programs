@@ -4,8 +4,9 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  seq $2,2055 ; Number of diagonal dissections of a convex n-gon into n-4 regions.
-  add $1,$2
+  seq $2,257888 ; Number of nonintersecting (or self-avoiding) rook paths of length 2n+2 joining opposite corners of an n X n grid.
+  add $3,$2
 lpe
-add $1,1
-mov $0,$1
+mov $0,$3
+div $0,4
+add $0,1
