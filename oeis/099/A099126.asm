@@ -1,0 +1,10 @@
+; A099126: Number of orbits of the wreath product of S_n with S_n on n X n matrices over {0,1,2,3,4,5,6,7}.
+; Submitted by Jon Maiga
+; 1,8,666,295240,503167995,2629770332904,35773664992355004,1119582594247762626696,73241437035618231162682185,9277639855710782695858431981840
+
+mov $2,$0
+add $2,7
+bin $2,$0
+sub $2,1
+add $0,$2
+bin $0,$2
