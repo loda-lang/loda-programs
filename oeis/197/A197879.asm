@@ -1,8 +1,8 @@
 ; A197879: Parity of floor(n*sqrt(8)).
+; Submitted by Jon Maiga
 ; 0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0
 
-mul $0,2
 add $0,1
-seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
-sub $0,1
+mul $0,2
+seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
 mod $0,2
