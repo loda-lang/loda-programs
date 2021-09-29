@@ -3,12 +3,12 @@
 
 lpb $0
   mov $2,$0
-  mov $0,0
+  mul $0,$3
   seq $2,86178 ; Decimal expansion of 1 + 2*sqrt(2).
-  mov $4,$2
-  sub $4,15
-  add $3,$4
+  sub $2,45
 lpe
-mov $0,$3
-add $0,15
+mov $0,$2
+sub $0,5
+mod $0,10
+add $0,10
 mod $0,10

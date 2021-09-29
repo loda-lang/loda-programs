@@ -4,6 +4,5 @@
 add $0,1
 seq $0,130328 ; Triangle of differences between powers of 2, read by rows.
 seq $0,3188 ; Decimal equivalent of Gray code for n.
-sub $0,2
 mul $0,2
-add $0,1
+sub $0,3

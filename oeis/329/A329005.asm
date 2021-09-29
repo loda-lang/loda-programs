@@ -9,7 +9,7 @@ lpb $2,2
   cmp $26,0
   add $2,$26
   div $0,$2
-  add $3,1
+  add $3,$0
   dif $3,3
   pow $3,$2
 lpe

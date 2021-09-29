@@ -1,8 +1,7 @@
 ; A204547: Symmetric matrix: f(i,j)=floor[(i+j+4)/4]-floor[(i+j+2)/4], by (constant) antidiagonals.
+; Submitted by Jon Maiga
 ; 0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 seq $0,204164 ; Symmetric matrix based on f(i,j)=floor[(i+j)/2], by antidiagonals.
-mov $1,-1
-add $1,$0
-mov $0,$1
+add $0,1
 mod $0,2

@@ -3,11 +3,10 @@
 
 lpb $0
   mov $2,$0
-  mod $0,1
+  mov $0,0
   seq $2,10476 ; Decimal expansion of square root of 20.
-  add $3,$2
-  add $3,2
+  add $2,22
 lpe
-mov $0,$3
+mov $0,$2
 add $0,8
 mod $0,10
