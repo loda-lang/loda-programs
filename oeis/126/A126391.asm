@@ -1,40 +1,20 @@
 ; A126391: a(1)=1; for n>1: a(n) = sum of all subsets of (a(1),..,a(n-1)).
+; Submitted by Jon Maiga
 ; 1,1,4,24,240,4320,146880,9694080,1260230400,325139443200,167121673804800,171466837323724800,351507016513635840000,1440475753672879672320000,11803258325595576034990080000
 
-mov $6,2
-mov $8,$0
-lpb $6
-  mov $0,$8
-  mov $1,0
-  mov $3,0
-  sub $6,1
-  add $0,$6
-  sub $0,1
-  mov $2,$0
-  lpb $0
-    mov $9,$2
-    cmp $9,0
-    add $2,$9
-    div $0,$2
-    add $1,1
-    cmp $9,0
-    add $3,$9
-    sub $0,$3
-  lpe
-  mov $3,1
-  lpb $2
-    mov $5,$1
-    mul $1,2
-    sub $2,1
-    add $5,1
-    mul $3,$5
-  lpe
-  mov $0,$3
-  mov $4,$6
-  mul $4,$3
-  add $7,$4
+mov $3,2
+mov $4,$0
+lpb $3
+  mov $0,$4
+  sub $3,1
+  add $0,$3
+  trn $0,1
+  seq $0,28361 ; Number of totally isotropic spaces of index n in orthogonal geometry of dimension 2n.
+  mov $2,$3
+  mul $2,$0
+  add $5,$2
 lpe
-min $8,1
-mul $8,$0
-mov $0,$7
-sub $0,$8
+min $4,1
+mul $4,$0
+mov $0,$5
+sub $0,$4
