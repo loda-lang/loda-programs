@@ -11,7 +11,6 @@ lpb $0
       mov $26,$0
       cmp $26,0
       add $0,$26
-      trn $2,32
       dif $3,$0
     lpe
     mul $3,$0
