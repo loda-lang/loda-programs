@@ -5,5 +5,5 @@ seq $0,292565 ; Take 0, skip 3 * 1 + 1, take 1, skip 3 * 2 + 1, take 2, skip 3 *
 sub $0,1
 add $3,$0
 mov $2,$3
-seq $2,4247 ; Multiplication table read by antidiagonals: T(i,j) = ij (i>=0, j>=0).
+seq $2,4247 ; Multiplication table read by antidiagonals: T(i,j) = i*j (i>=0, j>=0). Alternatively, multiplication triangle read by rows: P(i,j) = j*(i-j) (i>=0, 0<=j<=i).
 mov $0,$2

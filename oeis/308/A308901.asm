@@ -1,8 +1,17 @@
 ; A308901: Lexicographically earliest overlap-free binary sequence.
+; Submitted by Jon Maiga
 ; 0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0
 
-max $0,1
-add $0,6096
-seq $0,269027 ; Parity of the number of 1's in A039724(n).
-pow $1,$0
-mov $0,$1
+mov $2,$0
+cmp $2,0
+add $0,$2
+mov $4,$0
+add $4,57
+lpb $4
+  add $3,5585
+  sub $4,1
+  dif $4,2
+lpe
+mov $0,$3
+sub $0,1
+mod $0,2
