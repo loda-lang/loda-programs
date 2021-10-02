@@ -1,5 +1,13 @@
 ; A174695: Partial sums of A173950.
+; Submitted by Jon Maiga
 ; 0,0,1,0,1,0,1,0,1,2,1,0,1,0,1,2,3,2,1,2,1,0,1,2,1,2,1,2,1,2,1,2,3,2,3,2,1,0,1,2,3,2,3,2,3,2,1,0,1,0,1,2,1,2,3,4,5,4,3,4,3,4,3,4,3,4,3,2,3,2,3,4,3,2,1,2,3,2,3,2,3,2,3,2,1,2,3,2,3,2,3,4,3,4,3,4,5,6,5,4
 
-seq $0,112632 ; Excess of 3k - 1 primes over 3k + 1 primes, beginning with 2.
-sub $0,1
+mov $3,2
+lpb $0
+  mov $2,$0
+  sub $0,1
+  seq $2,173950 ; a(n) = 1 if 6 divides (prime(n) + 1), a(n) = -1 if 6 divides (prime(n) - 1), a(n) = 0 otherwise.
+  add $3,$2
+lpe
+mov $0,$3
+sub $0,2
