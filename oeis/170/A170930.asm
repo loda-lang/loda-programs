@@ -1,31 +1,30 @@
 ; A170930: G(n,1) with n index G(n,i)=n*(G(n,i-1)+G(n,i-2))=(a^i-b^i)*d where d=sqrt(n*(n+4)); a=(n+d)/2; b=(n-d)/2
+; Submitted by Jon Maiga
 ; 0,21,63,252,945,3591,13608,51597,195615,741636,2811753,10660167,40415760,153227781,580930623,2202475212,8350217505,31658078151,120024886968,455048895357,1725221346975,6540810726996,24798096221913
 
 mov $2,2
-mov $3,$0
+mov $7,$0
 lpb $2
-  mov $0,$3
+  mov $0,$7
   sub $0,1
   sub $2,1
-  mov $4,$0
-  mov $5,0
-  mov $6,2
-  lpb $6
-    mov $0,$4
-    sub $6,1
-    add $0,$6
-    trn $0,1
-    seq $0,103820 ; Whitney transform of 3^n.
-    mov $7,$6
-    mul $7,$0
-    add $5,$7
+  mov $3,$0
+  mov $4,0
+  mov $5,2
+  lpb $5
+    mov $0,$3
+    sub $5,1
+    add $0,$5
+    max $0,0
+    seq $0,108306 ; Expansion of (3*x+1)/(1-3*x-3*x^2).
+    div $0,5
+    mov $6,$5
+    mul $6,$0
+    add $4,$6
   lpe
-  min $4,1
-  mul $4,$0
-  mov $0,$5
-  sub $0,$4
+  min $3,1
+  mul $3,$0
+  mov $0,$4
+  sub $0,$3
 lpe
-min $3,1
-mul $3,$0
-mov $0,$3
 mul $0,21
