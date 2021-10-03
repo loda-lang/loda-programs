@@ -1,10 +1,13 @@
 ; A262617: First differences of A256266.
+; Submitted by Christian Krause
 ; 0,6,12,6,24,18,12,6,48,42,36,30,24,18,12,6,96,90,84,78,72,66,60,54,48,42,36,30,24,18,12,6,192,186,180,174,168,162,156,150,144,138,132,126,120,114,108,102,96,90,84,78,72,66,60,54,48,42,36,30,24,18,12,6,384,378,372,366,360,354,348,342,336,330,324,318
 
-max $2,$0
-trn $0,1
-seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
-lpb $0
-  mov $0,$2
-lpe
 mul $0,6
+mov $2,6
+lpb $0
+  sub $0,$2
+  add $1,$2
+  mov $2,$1
+lpe
+sub $1,$0
+mov $0,$1

@@ -1,10 +1,14 @@
 ; A189479: Fixed point starting with 0 of the morphism 0->01, 1->101.
+; Submitted by Jon Maiga
 ; 0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1
 
-sub $0,1
-mov $1,$0
-max $1,0
-seq $1,120613 ; a(n) = floor(phi*floor(n/phi)) where phi=(1+sqrt(5))/2.
-add $0,$1
-add $0,1
+mov $3,$0
+seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
+mov $2,$3
+lpb $2
+  add $4,$0
+  add $4,1
+  mov $2,$4
+lpe
+mov $0,$2
 mod $0,2

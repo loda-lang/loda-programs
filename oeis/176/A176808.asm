@@ -1,20 +1,15 @@
 ; A176808: Triangle read by rows: T(n,m)=Floor[(n - 1)/m], 1<=m<=n.
+; Submitted by Christian Krause
 ; 0,1,0,2,1,0,3,1,1,0,4,2,1,1,0,5,2,1,1,1,0,6,3,2,1,1,1,0,7,3,2,1,1,1,1,0,8,4,2,2,1,1,1,1,0,9,4,3,2,1,1,1,1,1,0
 
-mov $4,$0
-sub $4,$0
-mov $5,$0
-lpb $5
-  mov $3,$5
-  add $4,1
-  sub $5,1
-  trn $5,$4
+mov $1,2
+mov $2,$0
+add $2,1
+sub $0,$2
+lpb $1,2
+  add $0,1
+  mod $1,2
+  sub $2,$0
+  bin $1,$2
 lpe
-mov $1,1
-mov $2,$3
-cmp $2,0
-add $3,$2
-div $4,$3
-add $1,$4
-sub $1,1
-mov $0,$1
+div $0,$2

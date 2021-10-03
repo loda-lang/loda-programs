@@ -1,24 +1,12 @@
 ; A080566: Partial sums of A079000.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken
 ; 1,5,11,18,26,35,46,59,74,90,107,125,144,164,185,208,233,260,289,320,353,387,422,458,495,533,572,612,653,695,738,782,827,874,923,974,1027,1082,1139,1198,1259,1322,1387,1454,1523,1593,1664,1736,1809,1883,1958
 
-mov $4,$0
-add $4,1
-mov $6,$0
-lpb $4
-  mov $0,$6
-  mov $3,0
-  sub $4,1
-  sub $0,$4
-  lpb $0
-    mov $2,$0
-    sub $0,1
-    trn $2,1
-    seq $2,79948 ; First differences of A079000.
-    add $3,$2
-  lpe
-  mov $0,$3
-  add $0,1
-  add $5,$0
+lpb $0
+  mov $2,$0
+  sub $0,1
+  seq $2,79000 ; a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
+  add $3,$2
 lpe
-mov $0,$5
+mov $0,$3
+add $0,1
