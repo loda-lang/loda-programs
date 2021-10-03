@@ -1,25 +1,14 @@
 ; A105686: Number of inequivalent codes attaining highest minimal Hamming distance of any Type 4^H Hermitian linear self-dual code over GF(4) of length 2n.
+; Submitted by Christian Krause
 ; 1,1,1,1,2,5,1,4,1,2
 
-mul $0,4
-sub $0,4
-lpb $0
-  mov $2,$0
-  lpb $2
-    lpb $0
-      div $0,8
-      mod $2,10
-      mov $1,$2
-    lpe
-  lpe
-  add $0,2
-  add $0,$1
-  mul $2,$1
-  lpb $2
-    add $1,2
-    mod $2,6
-  lpe
-lpe
-div $1,2
-add $1,1
+mov $1,$0
+add $0,2
+mov $2,$1
+sub $1,1
+pow $1,$2
+div $1,3
+trn $1,$0
 mov $0,$1
+add $0,1
+mod $0,10

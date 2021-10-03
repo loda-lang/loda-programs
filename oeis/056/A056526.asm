@@ -1,21 +1,23 @@
 ; A056526: First differences of Flavius Josephus's sieve.
+; Submitted by Jon Maiga
 ; 2,4,6,6,8,12,10,14,16,12,18,24,14,34,26,16,30,36,18,42,38,12,60,22,48,38,46,36,60,54,44,36,84,22,60,84,18,78,72,60,38,112,12,96,114,26,88,92,34,90,138,26,82,98,112,54,170,36,60,168,52,128,52,128,94,108,90,188,34,72,170,120,46,158,196,20,160,108,176,96,130,108,146,120,100,204,138,50,228,172,30,210,128,142,150,150,114,258,108,114
 
-mov $3,2
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  add $0,$3
+mov $2,$0
+mov $4,2
+lpb $4
+  mov $0,$2
+  sub $4,1
+  add $0,$4
   trn $0,1
-  seq $0,73359 ; Nested floor product of n and fractions (2k+2)/(2k+1) for all k>=0, divided by 2.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
+  add $0,1
+  seq $0,960 ; Flavius Josephus's sieve: Start with the natural numbers; at the k-th sieving step, remove every (k+1)-st term of the sequence remaining after the (k-1)-st sieving step; iterate.
+  div $0,2
+  mov $5,$4
+  mul $5,$0
+  add $3,$5
 lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mul $1,2
-mov $0,$1
+min $2,1
+mul $2,$0
+mov $0,$3
+sub $0,$2
+mul $0,2
