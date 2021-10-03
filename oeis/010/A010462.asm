@@ -1,23 +1,23 @@
 ; A010462: Squares mod 30.
+; Submitted by Jon Maiga
 ; 0,1,4,6,9,10,15,16,19,21,24,25
 
-mov $3,$0
-add $3,1
-lpb $3
+mov $2,$0
+add $2,1
+lpb $2
   mov $0,$6
-  sub $3,1
-  sub $0,$3
+  sub $2,1
+  sub $0,$2
   pow $0,2
-  mov $4,2
+  mov $5,0
   lpb $0
-    mov $2,$0
-    trn $0,6
-    seq $2,47313 ; Numbers that are congruent to {1, 4, 5, 6} mod 7.
-    mov $4,$2
+    sub $0,1
+    mov $3,$0
+    cmp $3,0
+    add $0,$3
+    mov $5,$0
+    trn $0,5
   lpe
-  mov $0,$4
-  sub $0,2
-  add $5,$0
+  add $4,$5
 lpe
-mov $0,$5
-div $0,2
+mov $0,$4
