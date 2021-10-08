@@ -1,22 +1,9 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+; Submitted by Jon Maiga
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
 
-mov $2,$0
-mov $4,2
-lpb $4
-  mov $0,$2
-  sub $4,1
-  add $0,$4
-  trn $0,1
-  seq $0,286909 ; Positions of 1 in A286907; complement of A286908.
-  mov $3,$4
-  mul $3,$0
-  add $5,$3
-lpe
-min $2,1
-mul $2,$0
-mov $0,$5
-sub $0,$2
-sub $0,2
-div $0,2
+mov $2,1
+add $2,$0
+mov $0,$2
+seq $0,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
 add $0,3

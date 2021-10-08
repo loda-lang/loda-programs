@@ -1,10 +1,22 @@
 ; A324965: Partial sums of A324964.
+; Submitted by Jon Maiga
 ; 0,1,1,1,1,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11
 
-lpb $0
-  mov $2,$0
+mov $3,$0
+mov $5,$0
+lpb $5
+  mov $0,$3
+  sub $5,1
+  sub $0,$5
   sub $0,1
-  seq $2,324964 ; a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
-  add $1,$2
+  sub $1,$0
+  mov $2,$1
+  cmp $1,$0
+  div $2,2
+  sub $2,2
+  bin $2,$0
+  mov $0,$2
+  mod $0,2
+  add $4,$0
 lpe
-mov $0,$1
+mov $0,$4

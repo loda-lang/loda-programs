@@ -1,10 +1,10 @@
 ; A001227: Number of odd divisors of n.
+; Submitted by Jon Maiga
 ; 1,1,2,1,2,2,2,1,3,2,2,2,2,2,4,1,2,3,2,2,4,2,2,2,3,2,4,2,2,4,2,1,4,2,4,3,2,2,4,2,2,4,2,2,6,2,2,2,3,3,4,2,2,4,4,2,4,2,2,4,2,2,6,1,4,4,2,2,4,4,2,3,2,2,6,2,4,4,2,2,5,2,2,4,4,2,4,2,2,6,4,2,4,2,4,2,2,3,6,3
 
-add $0,1
 lpb $0
+  mul $0,2
+  sub $0,2
   dif $0,4
 lpe
-dif $0,2
-seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-add $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
