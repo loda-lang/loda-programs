@@ -1,8 +1,8 @@
 ; A134444: (A000012 * A128174 + A128174 * A000012) - A000012.
+; Submitted by Jon Maiga
 ; 1,1,1,3,1,1,3,3,1,1,5,3,3,1,1,5,5,3,3,1,1,7,5,5,3,3,1,1,7,7,5,5,3,3,1,1,9,7,7,5,5,3,3,1,1,9,9,7,7,5,5,3,3,1,1
 
-seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
-sub $0,1
-div $0,4
+seq $0,143971 ; Triangle read by rows, (3n-2) subsequences decrescendo
+div $0,6
 mul $0,2
 add $0,1
