@@ -4,8 +4,7 @@
 
 seq $0,83811 ; Numbers n such that 2n+1 is the digit reversal of n+1.
 bin $0,2
-sub $0,171
-div $0,30
-sub $0,15
-div $0,3
-add $0,6
+sub $0,630
+div $0,180
+add $0,3
+mul $0,2
