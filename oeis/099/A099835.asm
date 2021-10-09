@@ -5,6 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,232893 ; Numbers whose sum of square divisors is a palindrome in base 10 having at least two digits.
-sub $0,30751
 div $0,15376
-add $0,2

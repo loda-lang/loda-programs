@@ -13,18 +13,18 @@ lpb $3
   add $5,2
   mul $2,$5
   add $1,$2
-  div $5,$2
-  add $5,$0
+  cmp $4,0
+  mov $5,$0
+  add $5,$4
   div $1,$5
   div $2,$5
   sub $3,1
 lpe
-mul $1,6
-mov $4,10
-pow $4,$0
-div $2,$4
-mul $2,2
+mul $1,3
+add $1,1
+mov $6,10
+pow $6,$0
+div $2,$6
 div $1,$2
-add $1,$4
 mov $0,$1
 mod $0,10
