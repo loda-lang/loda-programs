@@ -20,11 +20,10 @@ lpb $1
     sub $2,1
   lpe
   lpb $3
+    add $4,$0
     div $0,2
     sub $3,1
-    add $4,$0
   lpe
   sub $1,1
 lpe
 mov $0,$4
-mul $0,2
