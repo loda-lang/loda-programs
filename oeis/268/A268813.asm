@@ -4,7 +4,7 @@
 
 mov $2,5
 mov $3,$0
-mul $3,8
+mul $3,7
 lpb $3
   mul $1,$3
   mul $2,2
