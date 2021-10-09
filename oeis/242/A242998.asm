@@ -1,23 +1,17 @@
 ; A242998: Number of integers k such that R = (2^k*Q - Q - 1)/(Q + 1 - 2^k) is a prime number, when Q = A000668(n) is the n-th Mersenne prime.
+; Submitted by Jon Maiga
 ; 0,1,1,2,1,1,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $3,$0
-lpb $3
-  add $0,4
-  add $2,4
-  mov $4,1
-  lpb $2
-    sub $2,$3
-    add $1,$2
-    add $3,$2
-    mul $2,2
-  lpe
-  lpb $0
-    add $1,$4
-    mov $0,$1
-    trn $3,5
-    mul $3,2
-  lpe
-  mov $2,5
+mul $0,6
+mov $1,4
+mov $2,6
+mov $3,8
+lpb $2
+  add $2,$0
+  div $2,$1
+  sub $2,4
+  div $2,2
+  add $3,1
 lpe
-mov $0,$1
+mov $0,$3
+sub $0,8
