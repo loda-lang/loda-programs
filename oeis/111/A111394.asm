@@ -8,11 +8,9 @@ lpb $0
   mov $3,$2
   lpb $3
     add $2,1
-    mov $4,3
-    gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    add $4,2
     sub $3,$4
+    add $4,1
   lpe
   sub $0,1
   add $2,1

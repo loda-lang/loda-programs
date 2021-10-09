@@ -4,29 +4,6 @@
 
 mul $0,2
 add $0,1
-lpb $0
-  seq $0,135098 ; First differences of A135094.
-  mov $1,$0
-  add $1,197
-  mov $0,$1
-  pow $0,2
-  mod $0,29
-  mul $0,2
-  mov $1,$0
-  add $0,1
-  sub $1,3
-  mul $1,2
-  add $0,$1
-lpe
-seq $0,138288 ; a(n) = A054320(n) - A001078(n).
-pow $0,2
-div $0,80
-mul $0,360
-add $0,5
-lpb $1
-  mov $0,2
-  mov $1,2
-lpe
-sub $0,365
-div $0,72
-add $0,5
+seq $0,200994 ; Triangular numbers, T(m), that are three-halves of another triangular number; T(m) such that 2*T(m) = 3*T(k) for some k.
+div $0,15
+mul $0,5
