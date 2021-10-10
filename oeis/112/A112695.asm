@@ -6,10 +6,7 @@ add $0,1
 mov $1,270
 lpb $1
   mov $2,2
-  mov $5,$4
-  cmp $5,0
-  add $4,$5
-  mod $2,$4
+  min $2,$4
   sub $2,$0
   lpb $2
     mov $1,0
@@ -32,4 +29,4 @@ lpb $1
   add $4,1
 lpe
 mov $0,$4
-sub $0,3
+sub $0,2

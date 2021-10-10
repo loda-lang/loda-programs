@@ -6,29 +6,24 @@ mov $1,2
 mov $2,1
 mov $3,$0
 mul $3,4
-mov $7,3
-lpb $7
-  lpb $3
-    mul $1,$3
-    mul $2,$3
-    add $1,$2
-    cmp $7,0
-    cmp $8,0
-    add $5,$8
-    div $1,$5
-    div $2,$5
-    add $2,$1
-    mul $1,6
-    mul $2,5
-    sub $3,2
-  lpe
+lpb $3
+  mul $1,$3
+  mul $2,$3
+  add $1,$2
+  cmp $6,0
+  add $5,$6
+  div $1,$5
+  div $2,$5
+  add $2,$1
+  mul $1,6
+  div $1,5
+  sub $3,1
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-mov $6,$2
-cmp $6,1
-add $2,$6
+add $3,1
+add $2,$3
 div $1,$2
+mod $1,10
 mov $0,$1
-mod $0,10

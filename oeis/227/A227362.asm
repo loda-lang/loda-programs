@@ -1,30 +1,21 @@
 ; A227362: Distinct digits of n arranged in decreasing order.
 ; Submitted by Simon Strandgaard
-; 0,1,2,3,4,5,6,7,8,9,10,1,21,31,41,51,61,71,81,91,20,21,2,32,42,52,62,72,82,92,30,31,32,3,43,53,63,73,83,93
+; 0,1,2,3,4,5,6,7,8,9,10,1,21,31,41,51,61,71,81,91,20,21,2,32,42,52,62,72,82,92,30,31,32,3,43,53,63,73,83,93,40,41,42,43,4,54,64,74,84,94,50,51,52,53,54,5,65,75,85,95,60,61,62,63,64,65,6,76,86,96,70,71,72,73,74,75,76,7,87,97,80,81,82,83,84,85,86,87,8,98,90,91,92,93,94,95,96,97,98,9
 
 mov $1,$0
 mov $0,0
 mov $2,10
-; loop through the digits: 9,8,7,6,5,4,3,2,1,0
 lpb $2
   sub $2,1
-
-  ; iterate through all the decimals in the digit
-  ; count the number of times the digit occurs
-  mov $4,0 ; COUNT = 0
   mov $3,$1
   lpb $3
     mov $5,$3
-    mod $5,10
-    cmp $5,$2 ; If it's the same as the current digit
-    add $4,$5 ; Then increment COUNT
     div $3,10
+    mod $5,10
+    cmp $5,$2
+    add $4,$5
   lpe
-  
-  ; clamp COUNT to 0 or 1
   min $4,1
-  
-  ; if (COUNT > 0) then append the digit to the result
   lpb $4
     mul $0,10
     add $0,$2

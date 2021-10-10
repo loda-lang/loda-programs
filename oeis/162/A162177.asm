@@ -1,8 +1,22 @@
 ; A162177: a(n) is the number of composite numbers that are smaller than A008578(n).
+; Submitted by Jon Maiga
 ; 0,0,0,1,2,5,6,9,10,13,18,19,24,27,28,31,36,41,42,47,50,51,56,59,64,71,74,75,78,79,82,95,98,103,104,113,114,119,124,127,132,137,138,147,148,151,152,163,174,177,178,181,186,187,196,201,206,211,212,217,220,221
 
-mov $2,$0
-trn $0,1
-seq $0,6005 ; The odd prime numbers together with 1.
-add $2,1
-trn $0,$2
+mov $1,1
+mov $2,1
+lpb $0
+  mov $3,$2
+  lpb $3
+    add $2,1
+    mov $4,$1
+    gcd $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
+    add $5,1
+  lpe
+  sub $0,1
+  add $2,1
+  mul $1,$2
+lpe
+mov $0,$5

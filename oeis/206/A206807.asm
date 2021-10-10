@@ -4,8 +4,4 @@
 
 add $0,1
 seq $0,122437 ; Allowable values of the "dropping time" of the Collatz (3x+1) iteration.
-mov $2,5
-mul $2,$0
-mov $0,$2
-div $0,5
 sub $0,1
