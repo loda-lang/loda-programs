@@ -5,14 +5,15 @@
 mov $1,1
 mov $3,$0
 mul $3,4
+mov $6,$0
+cmp $6,0
+add $0,$6
 lpb $3
   mul $1,$3
   mul $2,$3
   add $1,$2
-  cmp $6,0
-  add $5,$6
-  div $1,$5
-  div $2,$5
+  div $1,$0
+  div $2,$0
   add $2,$1
   sub $3,1
 lpe
@@ -21,6 +22,8 @@ pow $4,$0
 add $4,1
 div $2,$4
 cmp $6,0
+cmp $6,0
 add $2,$6
 div $1,$2
-mov $0,$1
+add $5,$1
+mov $0,$5
