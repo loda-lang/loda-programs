@@ -1,7 +1,7 @@
 ; A005140: Number of n-dimensional determinant 4 lattices.
+; Submitted by Jon Maiga
 ; 0,1,1,2,3,4,5,6,7,10,13,16,22
 
-mov $3,7
 lpb $0
   mov $2,$0
   div $0,3
@@ -9,4 +9,3 @@ lpb $0
   add $3,$2
 lpe
 mov $0,$3
-sub $0,7
