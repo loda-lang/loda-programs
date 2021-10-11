@@ -4,9 +4,7 @@
 
 add $0,1
 mov $2,$0
-pow $0,2
-mov $1,1
-mov $4,1
+mov $4,$0
 lpb $2
   mov $3,$2
   gcd $3,$0
@@ -16,4 +14,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,1

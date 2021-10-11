@@ -1,14 +1,14 @@
 ; A000178: Superfactorials: product of first n factorials.
+; Submitted by Jamie Morken
 ; 1,1,2,12,288,34560,24883200,125411328000,5056584744960000,1834933472251084800000,6658606584104736522240000000,265790267296391946810949632000000000
 
-add $0,1
-mov $2,$0
-div $2,$0
-mov $4,1
+mov $1,1
+mov $2,1
+mov $3,1
 lpb $0
   sub $0,1
-  add $3,1
-  mul $4,$2
-  mul $2,$3
+  add $2,1
+  mul $3,$1
+  mul $1,$2
 lpe
-mov $0,$4
+mov $0,$3
