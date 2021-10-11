@@ -1,15 +1,14 @@
-; A000010 o=1: Euler totient function phi(n): count numbers <= n and prime to n.
-; Coded manually 2021-02-23 by Antti Karttunen, https://github.com/karttu (My first LODA-program! Small correction by Christian Krause)
-; Logic follows this PARI-snippet: A000010(n) = { my(s=0,x=n); while(x,s+=(1==gcd(x,n));x--); (s); };
+; A000010: Euler totient function phi(n): count numbers <= n and prime to n.
+; Submitted by Jamie Morken
+; 1,1,2,2,4,2,6,4,6,4,10,4,12,6,8,8,16,6,18,8,12,10,22,8,20,12,18,12,28,8,30,16,20,16,24,12,36,18,24,16,40,12,42,20,24,22,46,16,42,20,32,24,52,18,40,24,36,28,58,16,60,30,36,32,48,20,66,32,44,24,70,24,72,36,40,36,60,24,78,32,54,40,82,24,64,42,56,40,88,24,72,44,60,46,72,32,96,42,60,40
 
-add $0,1 ;  Add one, because A000010 is starting offset=1 sequence.
-mov $1,0 ;  Initialize the result-register (is this really needed?)
-mov $2,$0 ;  Make a copy of an argument, to be used as
-lpb $2 ;   a loop-counter
-  mov $3,$2 ;  Get a temp copy of loop counter
-  gcd $3,$0 ;  now $3 = gcd(original_n,loop_counter)
-  cmp $3,1 ;  now $3 = 1 if loop_counter was coprime, 0 otherwise
-  add $1,$3 ;  add it to the result register (to update the count of coprime k <= n)
-  sub $2,1 ;  decrement the loop counter.
+add $0,1
+mov $2,$0
+lpb $2
+  mov $3,$2
+  gcd $3,$0
+  cmp $3,1
+  add $1,$3
+  sub $2,1
 lpe
 mov $0,$1

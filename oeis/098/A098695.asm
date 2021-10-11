@@ -1,15 +1,15 @@
 ; A098695: a(n) = 2^(n(n-1)/2) * Product_{k=1..n} k!.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken
 ; 1,1,4,96,18432,35389440,815372697600,263006617337856000,1357366631815981301760000,126095668058466123464363212800000
 
 mov $1,1
-mov $2,1
-mov $3,1
+mov $2,2
+mov $3,2
 lpb $0
   sub $0,1
+  add $2,2
   mul $3,$1
-  mul $1,2
-  add $2,1
   mul $1,$2
 lpe
 mov $0,$3
+div $0,2
