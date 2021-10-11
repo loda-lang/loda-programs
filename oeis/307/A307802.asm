@@ -1,6 +1,6 @@
 ; A307802: Number of palindromic octagonal numbers of length n whose index is also palindromic.
+; Submitted by Christian Krause
 ; 3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-pow $1,$0
-mul $1,3
-mov $0,$1
+cmp $0,0
+mul $0,3
