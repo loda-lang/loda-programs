@@ -1,3 +1,4 @@
+A003893: a(n) = Fibonacci(n) mod 10.
 A006005: The odd prime numbers together with 1.
 A006519: Highest power of 2 dividing n.
 A006577: Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
@@ -6,6 +7,7 @@ A008507: Number of odd composite numbers less than n-th odd prime.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A038500: Highest power of 3 dividing n.
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
+A048974: Odd numbers that are the sum of 2 primes.
 A060904: Largest power of 5 that divides n.
 A068503: Highest power of 3 dividing prime(n)-1.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
@@ -14,6 +16,9 @@ A099802: Bisection of A000720.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A135481: a(n) = 2^A007814(n+1) - 1.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
+A158611: 0, 1 and the primes.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
+A160656: The odd prime numbers together with 0: p - (-1)^p - 1 where p = n-th prime.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
 A268354: Highest power of 7 dividing n.
+A273801: Numbers n for which n = (x - phi(x)) * (y - phi(y)), where n = x + y and x - phi(x) is the Euler cototient function of x.
