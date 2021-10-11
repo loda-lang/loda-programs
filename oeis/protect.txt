@@ -19,6 +19,9 @@ A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the larges
 A158611: 0, 1 and the primes.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160656: The odd prime numbers together with 0: p - (-1)^p - 1 where p = n-th prime.
+A168565: Let p = prime(n); then a(n) = p + (p-1)/2.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
+A179893: a(n) = 3/2 * (prime(n)-1).
+A245685: Sigma(2p)/2, for odd primes p.
 A268354: Highest power of 7 dividing n.
 A273801: Numbers n for which n = (x - phi(x)) * (y - phi(y)), where n = x + y and x - phi(x) is the Euler cototient function of x.
