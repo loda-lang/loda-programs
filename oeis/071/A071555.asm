@@ -1,8 +1,25 @@
 ; A071555: Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 3<=i<=n.
+; Submitted by Jamie Morken
 ; 6,36,386,5006,85086,1616616,37182146,1078282206,33426748356,1236789689136,50708377254536,2180460221945006,102481630431415236,5431526412865007456,320460058359035439846,19548063559901161830546
 
 add $0,3
-seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+mov $1,1
+mov $2,1
+lpb $0
+  mov $3,$2
+  lpb $3
+    add $2,1
+    mov $4,$1
+    gcd $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
+  lpe
+  sub $0,1
+  add $2,1
+  mul $1,$2
+lpe
+mov $0,$1
 sub $0,30
 div $0,6
 add $0,6
