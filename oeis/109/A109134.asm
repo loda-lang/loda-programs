@@ -19,7 +19,6 @@ lpb $3
   div $2,$5
   add $2,$1
   sub $3,1
-  mov $5,$0
 lpe
 mov $4,10
 pow $4,$0

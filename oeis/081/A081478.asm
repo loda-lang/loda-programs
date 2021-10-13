@@ -1,4 +1,4 @@
-; A081478: Consider the mapping f(a/b) = (a - b)/(ab). Taking a = 2 b = 1 to start with and carrying out this mapping repeatedly on each new (reduced) rational number gives the following sequence 2/1,1/2,-1/2,-3/-2,-1/6,... Sequence contains the denominators.
+; A081478: Consider the mapping f(a/b) = (a - b)/(ab). Taking a = 2 and b = 1 to start with and carrying out this mapping repeatedly on each new (reduced) rational number gives the following sequence 2/1,1/2,-1/2,-3/-2,-1/6,... Sequence contains the denominators.
 ; Submitted by Jon Maiga
 ; 1,2,2,-2,6,-6,42,-42,1806,-1806,3263442,-3263442,10650056950806,-10650056950806,113423713055421844361000442,-113423713055421844361000442
 

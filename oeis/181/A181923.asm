@@ -1,23 +1,8 @@
 ; A181923: Nonprimes (A018252) mod 2.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(m1)
 ; 1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0
 
-mov $1,1
-mov $2,1
-mov $5,1
-lpb $0
-  mov $3,$2
-  mul $3,2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    mul $3,$4
-    sub $3,$5
-  lpe
-  sub $0,1
-  add $2,1
-  mul $1,$2
-lpe
+mov $2,$0
+seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 mov $0,$2
 mod $0,2
