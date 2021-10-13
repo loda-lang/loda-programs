@@ -1,15 +1,21 @@
 ; A108400: a(n) = Product_{k = 0..n} k!*2^k.
-; Submitted by Jamie Morken
+; Submitted by Jon Maiga
 ; 1,2,16,768,294912,1132462080,52183852646400,33664847019245568000,347485857744891213250560000,64560982045934655213753964953600000
 
 mov $1,2
 mov $2,2
-mov $3,2
+mov $4,23
 lpb $0
+  mov $3,$2
+  add $2,1
+  mul $4,$1
+  lpb $3
+    mov $3,30
+    cmp $4,5
+  lpe
   sub $0,1
-  add $2,2
-  mul $3,$1
+  add $2,1
   mul $1,$2
 lpe
-mov $0,$3
-div $0,2
+mov $0,$4
+div $0,23
