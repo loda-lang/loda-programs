@@ -10,7 +10,6 @@ seq $0,84136 ; Binomial transform of cosh(sqrt(2)*x)^2.
 sub $0,$2
 mul $3,2
 add $3,$0
-sub $3,1
 mov $0,$3
 mul $0,2
-add $0,1
+sub $0,1

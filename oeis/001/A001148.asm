@@ -1,8 +1,8 @@
 ; A001148: Final digit of 3^n.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1,3,9,7,1
 
-mov $1,3
-pow $1,$0
-mov $0,$1
+seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
+mul $0,8
+sub $0,5
 mod $0,10
