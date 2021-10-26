@@ -1,4 +1,4 @@
-; A088150: Value of n-th digit in binary representation of n^n.
+; A088150: Value of n-th digit (counting from the right) in binary representation of n^n.
 ; 1,0,1,1,0,1,1,1,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,1,1,0,0,0,1,0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,1,1,1
 
 mov $1,2
