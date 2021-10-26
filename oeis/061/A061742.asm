@@ -1,5 +1,22 @@
 ; A061742: a(n) is the square of the product of first n primes.
+; Submitted by Jamie Morken(m4a)
 ; 1,4,36,900,44100,5336100,901800900,260620460100,94083986096100,49770428644836900,41856930490307832900,40224510201185827416900,55067354465423397733736100,92568222856376731590410384100,171158644061440576710668800200900,378089444731722233953867379643788100
 
-seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-pow $0,2
+mov $1,1
+mov $2,1
+lpb $0
+  mov $3,$2
+  lpb $3
+    add $2,1
+    mov $4,$1
+    gcd $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
+  lpe
+  sub $0,1
+  add $2,1
+  mul $1,$2
+lpe
+pow $1,2
+mov $0,$1

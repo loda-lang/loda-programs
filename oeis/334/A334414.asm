@@ -1,6 +1,9 @@
 ; A334414: First differences of A334415.
+; Submitted by Jamie Morken(m3)
 ; 0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0
 
-seq $0,334413 ; First differences of A101803.
-bin $1,$0
-mov $0,$1
+add $0,628
+seq $0,50141 ; a(n) = 2*floor((n+1)*phi) - 2*floor(n*phi) - 1 where phi = (1 + sqrt(5))/2 is the golden ratio.
+div $0,2
+add $0,1
+mod $0,2
