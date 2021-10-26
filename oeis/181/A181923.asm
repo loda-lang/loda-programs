@@ -1,8 +1,8 @@
 ; A181923: Nonprimes (A018252) mod 2.
-; Submitted by Jamie Morken(m1)
+; Submitted by Jamie Morken(m3a)
 ; 1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0
 
-mov $2,$0
-seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
-mov $0,$2
+add $0,2
+seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $0,1
 mod $0,2

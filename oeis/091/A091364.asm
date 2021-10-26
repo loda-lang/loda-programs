@@ -1,8 +1,9 @@
 ; A091364: a(n) = n! * n^4.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 0,1,32,486,6144,75000,933120,12101040,165150720,2380855680,36288000000,584421868800,9932577177600,177849941068800,3349041234739200,66201014880000000,1371195958099968000,29707369682006016000
 
-mov $1,$0
-seq $1,174335 ; Upper bound in enumerating what majority decisions are possible with possible abstaining.
-mul $0,$1
-div $0,16
+mov $2,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+pow $2,4
+mul $2,$0
+mov $0,$2

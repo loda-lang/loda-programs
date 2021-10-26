@@ -1,34 +1,7 @@
 ; A334413: First differences of A101803.
+; Submitted by Jamie Morken(m3)
 ; 1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1
 
-mov $4,2
-mov $7,$0
-lpb $4
-  mov $0,$7
-  mov $2,0
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  mov $5,$0
-  lpb $0
-    mul $0,21
-    add $0,4
-    mov $2,$0
-    mov $0,1
-    div $2,34
-  lpe
-  mov $3,$4
-  mov $6,$2
-  add $6,2
-  add $6,$5
-  lpb $3
-    mov $1,$6
-    sub $3,1
-  lpe
-lpe
-lpb $7
-  sub $1,$6
-  mov $7,0
-lpe
-sub $1,1
-mov $0,$1
+add $0,628
+seq $0,50141 ; a(n) = 2*floor((n+1)*phi) - 2*floor(n*phi) - 1 where phi = (1 + sqrt(5))/2 is the golden ratio.
+div $0,2
