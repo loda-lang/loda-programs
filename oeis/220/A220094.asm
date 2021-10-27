@@ -1,7 +1,16 @@
 ; A220094: Sum of the n-digit base-ten numbers whose digits are nonzero.
+; Submitted by Christian Krause
 ; 45,4455,404595,36446355,3280467195,295244704755,26572047342795,2391484476085155,215233604784766395,19371024448062897555,1743392200482566077995,156905298044843094701955,14121476824048587852317595,1270932914164487290670858355
 
-seq $0,83811 ; Numbers n such that 2n+1 is the digit reversal of n+1.
-seq $0,321243 ; a(n) is the product of n and all its decimal digits individually except the leftmost digit.
-div $0,216
+add $0,1
+mov $3,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  mul $2,30
+  mul $3,3
+lpe
+mul $2,$3
+mov $0,$2
+div $0,90
 mul $0,45
