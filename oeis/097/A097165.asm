@@ -1,6 +1,16 @@
 ; A097165: Expansion of (1-3x)/((1-x)(1-4x)(1-5x)).
+; Submitted by Jamie Morken(s1)
 ; 1,7,41,227,1221,6447,33601,173467,889181,4533287,23015961,116477907,587981941,2962279327,14900875121,74862289547,375743103501,1884442140567,9445117195081,47317211944387,236952563597861
 
+add $0,2
+mov $1,4
+pow $1,$0
+mov $2,5
+pow $2,$0
+sub $2,$1
+div $1,6
+add $2,$1
+mov $0,$2
+sub $0,11
+div $0,10
 add $0,1
-seq $0,193656 ; Q-residue of the triangle p(n,k)=(2^(n - k))*5^k, 0<=k<=n, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
-div $0,6
