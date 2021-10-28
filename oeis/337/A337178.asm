@@ -1,4 +1,5 @@
 ; A337178: Number of biconnected geodetic graphs with n unlabeled vertices.
+; Submitted by Jamie Morken(s2)
 ; 0,1,1,1,2,1,3,1,3,4,3
 
 sub $0,2
@@ -17,4 +18,3 @@ lpe
 div $2,2
 mov $0,$2
 add $0,1
-mod $0,10
