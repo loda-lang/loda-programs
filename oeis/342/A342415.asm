@@ -1,4 +1,4 @@
-; A342413: a(n) = gcd(phi(n), A003415(n)), where A003415(n) is the arithmetic derivative of n, and phi is Euler totient function.
+; A342415: a(n) = phi(n) / gcd(phi(n),A003415(n)), where A003415(n) is the arithmetic derivative of n, and phi is Euler totient function.
 ; Submitted by Simon Strandgaard
 ; 1,1,2,1,4,2,6,1,1,4,10,1,12,2,1,1,16,2,18,1,6,10,22,2,2,4,2,3,28,8,30,1,10,16,2,1,36,6,3,4
 
