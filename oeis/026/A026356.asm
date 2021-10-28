@@ -3,5 +3,5 @@
 
 mov $1,$0
 add $0,1
-seq $1,26351 ; Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+seq $1,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 add $0,$1

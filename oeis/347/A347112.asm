@@ -7,7 +7,7 @@ mov $3,$0
 mov $4,$0
 add $0,1
 seq $0,40 ; The prime numbers.
-seq $1,4216 ; a(n) =  floor(log_10(n)).
+seq $1,4216 ; a(n) = floor(log_10(n)).
 add $1,1
 mov $2,10
 pow $2,$1
