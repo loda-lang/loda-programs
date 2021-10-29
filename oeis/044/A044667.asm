@@ -1,9 +1,9 @@
 ; A044667: Numbers n such that string 3,8 occurs in the base 9 representation of n but not of n+1.
+; Submitted by Jamie Morken(s1)
 ; 35,116,197,278,323,359,440,521,602,683,764,845,926,1007,1052,1088,1169,1250,1331,1412,1493,1574,1655,1736,1781,1817,1898,1979,2060,2141,2222,2303,2384,2465,2510,2546,2627,2708,2789
 
 mov $4,$0
 mov $5,$0
-add $5,1
 mov $7,$0
 lpb $5
   mov $0,$7
@@ -29,3 +29,4 @@ lpb $5
 lpe
 add $1,$4
 mov $0,$1
+add $0,35

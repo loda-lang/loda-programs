@@ -1,10 +1,16 @@
 ; A286665: {0->01}-transform of the Pell word, A171588.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0
 
-mov $2,3
-add $2,$0
+mov $3,2
+mov $4,$0
+lpb $3
+  mov $0,$4
+  sub $3,1
+  add $0,$3
+  seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
+  add $2,$0
+  add $4,2
+lpe
 mov $0,$2
-seq $0,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
-add $0,1
 mod $0,2

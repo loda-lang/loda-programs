@@ -1,10 +1,12 @@
 ; A099913: Related to the Herschel graph.
-; Submitted by Jamie Morken(m1)
+; Submitted by Jamie Morken(s1)
 ; 1,3,25,243,2425,24243,242425,2424243,24242425,242424243,2424242425,24242424243,242424242425,2424242424243,24242424242425,242424242424243,2424242424242425,24242424242424243,242424242424242425
 
-seq $0,42 ; Unary representation of natural numbers.
-div $0,2
+mov $1,10
+pow $1,$0
+div $1,9
+mov $0,$1
 mul $0,12
-div $0,55
+div $0,11
 mul $0,2
 add $0,1

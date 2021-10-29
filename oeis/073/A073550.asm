@@ -1,8 +1,14 @@
 ; A073550: Number of Fibonacci numbers F(k), k <= 10^n, which end in 1.
+; Submitted by Jamie Morken(s2)
 ; 3,14,134,1334,13334,133334,1333334,13333334,133333334,1333333334,13333333334,133333333334,1333333333334,13333333333334,133333333333334,1333333333333334,13333333333333334,133333333333333334
 
-seq $0,83818 ; Numbers n such that 2n-1 is the digit reversal of n.
-trn $0,4
-mul $0,6
-div $0,18
-add $0,3
+add $0,1
+mov $1,10
+pow $1,$0
+sub $1,3
+div $1,5
+mul $1,2
+sub $1,6
+mov $0,$1
+div $0,3
+add $0,4

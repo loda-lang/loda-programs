@@ -4,6 +4,5 @@
 
 mov $2,$0
 seq $0,55086 ; n appears 1+[n/2] times.
-add $0,3
+add $0,2
 add $0,$2
-sub $0,1

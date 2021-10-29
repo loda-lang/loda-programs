@@ -1,9 +1,15 @@
 ; A213455: 90*A002451(n).
+; Submitted by Jamie Morken(s1)
 ; 90,1260,13230,126720,1171170,10663380,96461910,870123240,7838973450,70582218300,635365793790,5718795460560,51471172410930,463248604762020,4169269655112870,37523555745034680,337712517101387610,3039414715496790540,27354740685808323150,246192699157623741600,2215734424360009007490
 
-mul $0,2
-add $0,2
-seq $0,174395 ; The number of different 4-colorings for the vertices of all triangulated planar polygons on a base with n vertices if the colors of two adjacent boundary vertices are fixed.
-sub $0,10
-mul $0,9
-add $0,90
+mov $2,1
+lpb $0
+  sub $0,1
+  add $1,$2
+  mul $1,4
+  mul $2,9
+  add $2,1
+lpe
+add $1,$2
+mov $0,$1
+mul $0,90
