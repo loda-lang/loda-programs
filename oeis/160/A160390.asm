@@ -7,7 +7,5 @@ mov $2,$0
 seq $2,2194 ; Decimal expansion of sqrt(3).
 mov $3,$0
 add $3,$2
-add $3,1
 sub $3,$0
 mov $0,$3
-sub $0,1

@@ -1,6 +1,13 @@
 ; A081840: a(1)=0, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+4 otherwise.
+; Submitted by Jamie Morken(s3)
 ; 0,4,8,11,15,19,23,26,30,34,37,41,45,49,52,56,60,64,67,71,75,79,82,86,90,93,97,101,105,108,112,116,120,123,127,131,134,138,142,146,149,153,157,161,164,168,172,176,179,183,187,190,194,198,202,205,209,213,217
 
-add $0,19
-seq $0,180123 ; Second of three "least, sum, least" self-generating sequences.
-sub $0,73
+mul $0,2
+add $0,10
+mul $0,97
+div $0,52
+add $0,1
+mul $0,2
+sub $0,2
+div $0,2
+sub $0,18

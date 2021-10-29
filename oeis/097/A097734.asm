@@ -5,6 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,41113 ; Denominators of continued fraction convergents to sqrt(65).
-sub $0,16
 div $0,16
-add $0,1

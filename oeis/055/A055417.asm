@@ -9,7 +9,4 @@ bin $1,3
 add $1,$0
 add $1,2
 mul $0,$1
-div $0,2
-sub $0,4
-div $0,4
-add $0,1
+div $0,8

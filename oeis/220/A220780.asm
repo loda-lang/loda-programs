@@ -1,18 +1,14 @@
 ; A220780: Nonzero terms of A220779: exponent of highest power of 2 dividing an even sum 1^n + 2^n + ... + n^n.
+; Submitted by Christian Krause
 ; 2,1,4,2,2,1,6,3,2,1,4,2,2,1,8,4,2,1,4,2,2,1,6,3,2,1,4,2,2,1,10,5,2,1,4,2,2,1,6,3,2,1,4,2,2,1,8,4,2,1,4,2,2,1,6,3,2,1,4,2,2,1,12,6,2,1,4,2,2,1,6,3,2,1,4,2,2,1,8,4,2,1,4,2,2,1
 
-mul $0,2
-seq $0,27764 ; a(n) = (n+1)*binomial(n+1,4).
 mov $2,$0
-lpb $2
-  lpb $0
-    dif $0,2
-    add $1,60
-  lpe
-  div $1,2
-  mov $2,2
+add $0,1
+gcd $2,2
+add $0,$2
+lpb $0
+  add $0,1
+  dif $0,2
+  add $1,$2
 lpe
-sub $1,30
-div $1,30
-add $1,1
 mov $0,$1
