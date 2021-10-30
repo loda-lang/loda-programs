@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  check-programs:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - name: Check Programs
+        run: |
+          mkdir -p $HOME/loda/bin
+          curl -fsSLo $HOME/loda/bin/loda https://github.com/loda-lang/loda-cpp/releases/latest/download/loda-ubuntu-20
+          chmod u+x $HOME/loda/bin/loda
+          ln -s $(pwd) $HOME/loda/programs
+          for f in ${{ steps.files.outputs.all }}; do
+            if [[ $f == oeis/*.asm ]]; then  
+              a=${f:9:7}
+              d=$(date +"%Y-%m-%d %H:%M:%S")
+              echo -n "$d Checking $a... "
+              r=$($HOME/loda/bin/loda check $a)
+              echo $r
+              if [ "$r" != "ok" ] && [ "$r" != "warning" ]; then
+                error=true
+              fi
+            fi
+          done
+          if [ -n "$error" ]; then
+            echo "Error occurred while checking programs"
+            exit 1
+          fi
