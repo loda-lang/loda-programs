@@ -1,16 +1,14 @@
 ; A155104: Numbers appearing in the fourth column of A155103.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,5,45,765,25245,1640925,211679325,54401586525,27908013887325,28605714234508125,58613108466507148125,240137905387279785868125,1967449858837983285617548125,32236665937060356134843526028125
 
-add $0,1
-mov $2,11
-mov $3,4
+mov $1,1
+mov $2,2
 lpb $0
   sub $0,1
-  add $4,1
-  mul $2,$4
-  mov $4,$3
-  mul $3,2
+  mul $2,2
+  add $2,1
+  mul $1,$2
+  sub $2,1
 lpe
-mov $0,$2
-div $0,11
+mov $0,$1
