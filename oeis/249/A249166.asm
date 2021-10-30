@@ -1,5 +1,16 @@
 ; A249166: Odd integers concatenated with themselves.
+; Submitted by Jamie Morken(s2)
 ; 11,33,55,77,99,1111,1313,1515,1717,1919,2121,2323,2525,2727,2929,3131,3333,3535,3737,3939,4141,4343,4545,4747,4949,5151,5353,5555,5757,5959,6161,6363,6565,6767,6969,7171,7373,7575,7777,7979,8181,8383,8585,8787
 
 mul $0,2
-seq $0,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+mov $1,$0
+add $0,1
+add $1,2
+mov $2,$0
+lpb $1
+  mul $0,10
+  div $1,12
+lpe
+add $0,1
+add $0,$2
+sub $0,1
