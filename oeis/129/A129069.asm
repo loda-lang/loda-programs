@@ -23,6 +23,5 @@ add $3,5
 sub $1,$3
 mov $0,$1
 sub $0,26
-mul $0,4
-add $0,14
-div $0,2
+mul $0,2
+add $0,7
