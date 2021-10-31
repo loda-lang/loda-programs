@@ -1,11 +1,11 @@
 ; A211372: Side length of smallest square containing n L's with short sides 1, 2, ..., n.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s2.)
 ; 2,4,7,11,14,18,22,26,31,36
 
-mul $0,2
-mov $1,$0
-seq $0,8672 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)).
-sub $1,1
+mov $1,9
 add $1,$0
+pow $1,2
+mul $1,5
+div $1,36
 mov $0,$1
-add $0,2
+sub $0,9

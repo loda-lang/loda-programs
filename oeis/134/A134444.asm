@@ -1,8 +1,14 @@
 ; A134444: (A000012 * A128174 + A128174 * A000012) - A000012.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3.)
 ; 1,1,1,3,1,1,3,3,1,1,5,3,3,1,1,5,5,3,3,1,1,7,5,5,3,3,1,1,7,7,5,5,3,3,1,1,9,7,7,5,5,3,3,1,1,9,9,7,7,5,5,3,3,1,1
 
-seq $0,143971 ; Triangle read by rows, (3n-2) subsequences decrescendo
-div $0,6
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+div $1,2
+mov $0,$1
 mul $0,2
 add $0,1
+mod $0,10
