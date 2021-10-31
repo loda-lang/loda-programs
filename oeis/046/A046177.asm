@@ -5,6 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,164080 ; Perfect squares one less than a triangular number.
-sub $0,9
 div $0,9
-add $0,1

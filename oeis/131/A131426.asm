@@ -1,7 +1,29 @@
 ; A131426: a(n) = 2*prime(n) - 3.
+; Submitted by Jamie Morken(s1)
 ; 1,3,7,11,19,23,31,35,43,55,59,71,79,83,91,103,115,119,131,139,143,155,163,175,191,199,203,211,215,223,251,259,271,275,295,299,311,323,331,343,355,359,379,383,391,395,419,443,451,455,463,475,479,499,511,523,535,539,551,559,563,583,611
 
-seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0
-trn $0,3
-add $0,$1
+mov $2,$0
+add $2,1
+pow $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,2
+  mov $4,$0
+  max $4,1
+  cmp $4,$0
+  mul $2,$4
+lpe
+div $1,2
+mul $1,2
+add $1,29
+add $3,5
+sub $1,$3
+mov $0,$1
+sub $0,26
+mul $0,4
+add $0,14
+div $0,2
+sub $0,6
