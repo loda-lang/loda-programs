@@ -1,6 +1,10 @@
 ; A052038: First nonzero digit in expansion of 1/n.
+; Submitted by Christian Krause
 ; 1,5,3,2,2,1,1,1,1,1,9,8,7,7,6,6,5,5,5,5,4,4,4,4,4,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-mul $0,2
-seq $0,168458 ; a(n) = 7 + 10*floor((n-1)/2).
-seq $0,97326 ; Largest integer m such that m*n has the same decimal digit length as n.
+seq $0,33424 ; a(n) = floor(10^8/n).
+lpb $0
+  mov $1,$0
+  div $0,10
+lpe
+mov $0,$1

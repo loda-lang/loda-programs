@@ -1,16 +1,15 @@
 ; A028361: Number of totally isotropic spaces of index n in orthogonal geometry of dimension 2n.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 1,2,6,30,270,4590,151470,9845550,1270075950,326409519150,167448083323950,171634285407048750,351678650799042888750,1440827432323678715208750,11804699153027899713705288750,193419995622362136809061156168750,6338179836549184861096125026493768750
 
-add $0,1
-mov $2,11
-mov $3,1
+mov $1,2
+mov $2,2
 lpb $0
   sub $0,1
-  add $4,1
-  mul $2,$4
-  mov $4,$3
-  mul $3,2
+  div $1,2
+  mul $2,2
+  mul $1,$2
+  sub $2,1
 lpe
-mov $0,$2
-div $0,11
+mov $0,$1
+div $0,2

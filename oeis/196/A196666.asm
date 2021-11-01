@@ -1,14 +1,16 @@
 ; A196666: Expansion of (1-7x)/(1-22x).
+; Submitted by Jamie Morken(s3.)
 ; 1,15,330,7260,159720,3513840,77304480,1700698560,37415368320,823138103040,18109038266880,398398841871360,8764774521169920,192825039465738240,4242150868246241280,93327319101417308160,2053201020231180779520,45170422445085977149440
 
+mov $2,1
+mov $3,1
 lpb $0
-  mov $2,$0
   sub $0,1
-  seq $2,170294 ; Number of reduced words of length n in Coxeter group on 45 generators S_i with relations (S_i)^2 = (S_i S_j)^41 = I.
-  add $3,$2
-  div $3,2
+  add $2,$3
+  mul $2,22
+  mov $3,3
 lpe
-mov $0,$3
-div $0,11
+mov $0,$2
+div $0,22
 mul $0,7
 add $0,1

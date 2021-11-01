@@ -1,7 +1,13 @@
 ; A073531: Number of n-digit positive integers with all digits distinct.
+; Submitted by Jamie Morken(s1)
 ; 9,81,648,4536,27216,136080,544320,1632960,3265920,3265920
 
-add $0,1
-seq $0,306957 ; a(n) = n!*binomial(10,n).
-div $0,10
+mov $1,1
+mov $2,10
+lpb $0
+  sub $0,1
+  sub $2,1
+  mul $1,$2
+lpe
+mov $0,$1
 mul $0,9

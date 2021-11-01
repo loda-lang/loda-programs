@@ -1,11 +1,16 @@
 ; A097832: Partial sums of Chebyshev sequence S(n,19)= U(n,19/2)=A078368(n).
+; Submitted by Jamie Morken(s1.)
 ; 1,20,380,7201,136440,2585160,48981601,928065260,17584258340,333172843201,6312699762480,119608122643920,2266241630472001,42938982856324100,813574432639685900,15414975237297708001
 
+mov $3,1
 lpb $0
-  mov $2,$0
-  sub $0,1
-  seq $2,78368 ; A Chebyshev S-sequence with Diophantine property.
-  add $3,$2
+  sub $0,$3
+  add $2,1
+  add $4,1
+  mov $1,$4
+  mul $1,17
+  add $2,$1
+  add $4,$2
 lpe
-mov $0,$3
+mov $0,$4
 add $0,1

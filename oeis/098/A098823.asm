@@ -2,26 +2,7 @@
 ; Submitted by Jamie Morken(s1)
 ; 368,496,752,1008,1520,1776,2288,2544,3056,3824,4080,4848,5360,5616,6128,6896,7664,7920,8688,9200,9456,10224,10736,11504,12528,13040,13296,13808,14064,14576,16368,16880,17648,17904,19184,19440,20208,20976
 
-mov $2,$0
-add $2,1
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,1
-  cmp $4,$0
-  mul $2,$4
-lpe
-div $1,2
-mul $1,2
-add $1,29
-add $3,5
-sub $1,$3
-mov $0,$1
-sub $0,26
+seq $0,6005 ; The odd prime numbers together with 1.
+trn $0,2
 mul $0,128
 add $0,368

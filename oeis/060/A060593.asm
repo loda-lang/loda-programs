@@ -1,5 +1,12 @@
 ; A060593: a(n) is the number of ways that a cycle of length 2n+1 in the symmetric group S_(2n+1) can be decomposed as the product of two cycles of length 2n+1.
+; Submitted by Jamie Morken(s1)
 ; 1,1,8,180,8064,604800,68428800,10897286400,2324754432000,640237370572800,221172909834240000,93666727314800640000,47726800133326110720000,28806532937614688256000000,20325889640780924033433600000,16578303738261941164769280000000,15478284525511384127483412480000000,16401822168866896713756589424640000000
 
+mov $1,$0
 mul $0,2
-seq $0,61370 ; a(n) = floor(ratio of product and sum of first n numbers).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+trn $0,2
+mov $2,1
+add $2,$1
+div $0,$2
+add $0,1

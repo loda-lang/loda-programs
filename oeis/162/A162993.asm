@@ -1,8 +1,14 @@
 ; A162993: The second left hand column of triangle A162990
+; Submitted by Jamie Morken(s3)
 ; 9,144,3600,129600,6350400,406425600,32920473600,3292047360000,398337730560000,57360633200640000,9693947010908160000,1900013614137999360000,427503063181049856000000
 
-add $0,3
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+add $0,2
+mov $1,$0
+add $0,1
+lpb $1
+  mul $0,$1
+  sub $1,1
+lpe
 pow $0,2
 div $0,36
 mul $0,9

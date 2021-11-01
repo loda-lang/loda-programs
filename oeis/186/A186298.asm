@@ -1,6 +1,19 @@
 ; A186298: A007520(n)-2.
-; Submitted by Jamie Morken(m3)
+; Submitted by Jamie Morken(s2)
 ; 1,9,17,41,57,65,81,105,129,137,161,177,209,225,249,281,305,329,345,377,417,441,465,489,497,521,545,561,569,585,617,641,657,681,689,737,785,809,825,857,881,905,945,969,1017,1049,1089,1121,1161,1169,1185
 
-seq $0,7520 ; Primes == 3 (mod 8).
-sub $0,2
+mov $2,961
+lpb $2
+  add $1,2
+  sub $2,1
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,6
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+lpe
+mov $0,$1
+sub $0,7
