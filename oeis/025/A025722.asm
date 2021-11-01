@@ -8,7 +8,3 @@ bin $0,2
 div $0,7
 add $0,4
 div $0,5
-mul $0,108
-sub $0,108
-div $0,108
-add $0,1

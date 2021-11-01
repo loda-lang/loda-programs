@@ -4,9 +4,5 @@
 
 mul $0,2
 add $0,1
-mul $0,4
-sub $0,2
-seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-sub $0,1986
+seq $0,33889 ; a(n) = Fibonacci(4*n + 1).
 div $0,3
-add $0,1
