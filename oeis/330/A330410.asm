@@ -2,27 +2,7 @@
 ; Submitted by Jamie Morken(s1)
 ; 11,17,29,41,65,77,101,113,137,173,185,221,245,257,281,317,353,365,401,425,437,473,497,533,581,605,617,641,653,677,761,785,821,833,893,905,941,977,1001,1037,1073,1085,1145,1157,1181,1193,1265,1337,1361,1373,1397,1433,1445
 
-mov $2,$0
-add $2,1
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,1
-  cmp $4,$0
-  mul $2,$4
-lpe
-div $1,2
-mul $1,2
-add $1,29
-add $3,5
-sub $1,$3
-mul $1,2
-mov $0,$1
-sub $0,26
-mul $0,3
-sub $0,67
+seq $0,6005 ; The odd prime numbers together with 1.
+trn $0,2
+mul $0,6
+add $0,11
