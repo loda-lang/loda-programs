@@ -1,15 +1,15 @@
 ; A028365: Order of general affine group over GF(2), AGL(n,2).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s1.)
 ; 1,2,24,1344,322560,319979520,1290157424640,20972799094947840,1369104324918194995200,358201502736997192984166400,375234700595146883504949480652800
 
-mov $1,1
 mov $2,1
+mov $4,1
 lpb $0
   sub $0,1
-  mul $1,$2
-  mov $3,$2
-  add $2,1
-  mul $1,$2
-  add $2,$3
+  add $3,$2
+  mul $4,$3
+  mul $4,$2
+  mul $2,2
 lpe
-mov $0,$1
+mul $4,$2
+mov $0,$4
