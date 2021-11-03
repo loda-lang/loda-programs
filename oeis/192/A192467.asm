@@ -1,15 +1,7 @@
 ; A192467: (A192466)/2.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s3)
 ; 1,3,12,45,176,693,2752,10965,43776,174933,699392,2796885,11186176,44741973,178962432,715838805,2863333376,11453289813,45813071872,183252112725,733008101376,2932031706453,11728125427712,46912498914645,187649990066176
 
-add $0,1
-mov $1,-1
-mov $2,2
-pow $2,$0
-sub $1,$2
-pow $2,2
-sub $2,$1
-mov $0,$2
-sub $0,7
-div $0,6
-add $0,1
+seq $0,92431 ; Numbers having in binary representation a leading 1 followed by n zeros and n-1 ones.
+add $0,2
+div $0,3
