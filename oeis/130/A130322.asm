@@ -1,13 +1,11 @@
 ; A130322: A130321^2.
+; Submitted by Jamie Morken(s3)
 ; 1,4,1,12,4,1,32,12,4,1,80,32,12,4,1,192,80,32,12,4,1,448,192,80,32,12,4,1,1024,448,192,80,32,12,4,1,2304,1024,448,192,80,32,12,4,1
 
-seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
-mov $2,$0
-add $2,1
-lpb $0
-  sub $0,1
-  mul $2,2
-lpe
-add $2,1
-add $0,$2
-sub $0,1
+seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
+div $0,2
+mov $1,2
+pow $1,$0
+mul $1,$0
+mov $0,$1
+div $0,2

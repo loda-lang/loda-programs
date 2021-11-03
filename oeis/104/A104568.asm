@@ -1,6 +1,13 @@
 ; A104568: Triangle of numbers that are 0 or 1 mod 3.
+; Submitted by Jamie Morken(s1.)
 ; 1,3,1,4,3,1,6,4,3,1,7,6,4,3,1,9,7,6,4,3,1,10,9,7,6,4,3,1,12,10,9,7,6,4,3,1,13,12,10,9,7,6,4,3,1,15,13,12,10,9,7,6,4,3,1,16,15,13,12,10,9,7,6,4,3,1,18,16,15,13,12,10,9,7,6,4,3,1,19,18,16,15,13,12,10,9,7,6,4,3,1
 
-seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
-mul $0,3
-div $0,4
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+mul $1,3
+add $1,3
+div $1,2
+mov $0,$1

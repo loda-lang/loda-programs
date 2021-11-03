@@ -4,5 +4,6 @@
 
 add $0,2
 pow $0,2
-sub $0,1
+sub $0,2
 seq $0,57627 ; Number of nonsquarefree numbers not exceeding n.
+add $0,1
