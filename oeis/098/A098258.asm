@@ -5,6 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,90314 ; a(n) = 23*a(n-1) + a(n-2), starting with a(0) = 2 and a(1) = 23.
-sub $0,23
 div $0,23
-add $0,1

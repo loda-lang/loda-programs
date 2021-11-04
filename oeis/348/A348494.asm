@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,342001 ; Arithmetic derivative of n divided by {n / the largest squarefree divisor of n}: a(n) = A003415(n) / A003557(n).
-seq $1,347128 ; a(n) = A018804(n) / A003557(n).
+seq $1,347128 ; a(n) = A018804(n) / A003557(n), where A018804 is Pillai's arithmetical function.
 gcd $0,$1
