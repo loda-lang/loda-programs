@@ -19,7 +19,7 @@ jobs:
           chmod u+x $HOME/loda/bin/loda
           ln -s $(pwd) $HOME/loda/programs
           for f in ${{ steps.files.outputs.all }}; do
-            if [[ $f == oeis/*.asm ]]; then  
+            if [[ -f "$f" ]] && [[ $f == oeis/*.asm ]]; then  
               a=${f:9:7}
               d=$(date +"%Y-%m-%d %H:%M:%S")
               echo -n "$d Checking $a... "
