@@ -1,18 +1,16 @@
 ; A173094: a(1)=2, a(2)=3, a(n)=a(n-2)*a(n-1)-a(n-1).
-; Submitted by Jamie Morken(s4)
+; Submitted by Jamie Morken(s2)
 ; 2,3,3,6,12,60,660,38940,25661460,999231590940,25641740502411581460,25622037156669717708454796390940
 
+mov $1,4
+mov $2,3
 lpb $0
   sub $0,1
-  add $3,$2
-  mul $1,$3
-  add $1,$2
   mov $3,$2
   mov $2,$1
-  mov $1,$3
-  trn $2,1
-  add $2,1
-  mov $3,2
+  mul $1,$3
+  div $1,2
+  sub $2,2
 lpe
-mov $0,$2
-add $0,2
+mov $0,$1
+div $0,2
