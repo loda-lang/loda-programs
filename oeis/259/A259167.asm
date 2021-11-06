@@ -1,12 +1,8 @@
 ; A259167: Positive octagonal numbers (A000567) that are squares (A000290) divided by 2.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s2)
 ; 8,78408,752875208,7229107670408,69413891098384008,666512175097575576008,6399849835873029582446408,61451357457540654953074835208,590055927907455532986394985222408,5665716958316030570194709695030728008
 
 mul $0,2
-add $0,1
-seq $0,1078 ; a(n) = 10*a(n-1) - a(n-2) with a(0) = 0, a(1) = 2.
+seq $0,291181 ; p-INVERT of the positive integers, where p(S) = 1 - 8*S.
 pow $0,2
-add $0,9
-div $0,4
-sub $0,2
-mul $0,8
+div $0,8

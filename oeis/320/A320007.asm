@@ -1,20 +1,10 @@
 ; A320007: If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
-; Submitted by Jamie Morken(s3.)
+; Submitted by Jamie Morken(s3)
 ; 0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1
 
 add $0,13
 pow $0,$0
 div $0,2
 bin $0,2
+add $0,1
 mod $0,2
-mov $1,1
-mov $2,44
-lpb $0
-  mov $2,$0
-  sub $0,1
-lpe
-mov $0,$1
-lpb $0
-  mov $0,$2
-  div $0,19
-lpe
