@@ -1,0 +1,16 @@
+; A037515: Base 6 digits are, in order, the first n terms of the periodic sequence with initial period 2,0,1.
+; Submitted by Christian Krause
+; 2,12,73,440,2640,15841,95048,570288,3421729,20530376,123182256,739093537,4434561224,26607367344,159644204065,957865224392,5747191346352,34483148078113,206898888468680,1241393330812080,7448359984872481
+
+mov $2,2
+lpb $0
+  sub $0,1
+  sub $2,1
+  add $1,$2
+  add $1,1
+  mul $1,6
+  add $2,14
+  mod $2,3
+lpe
+add $1,$2
+mov $0,$1

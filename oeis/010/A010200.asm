@@ -1,19 +1,10 @@
 ; A010200: Continued fraction for sqrt(141).
+; Submitted by Jamie Morken(s3.)
 ; 11,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1,22,1,6,1
 
-mov $4,$0
-mul $0,2
-mov $1,15
-mov $2,2
+seq $0,10201 ; Continued fraction for sqrt(142).
 lpb $0
-  mov $0,1
-  add $3,4
-  gcd $4,$3
-  add $4,1
-  mov $1,$4
-  pow $1,2
-  add $1,1
+  pow $0,4
+  mod $0,34
+  add $0,2
 lpe
-add $1,$2
-sub $1,6
-mov $0,$1

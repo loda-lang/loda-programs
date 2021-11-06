@@ -1,7 +1,14 @@
 ; A192465: Constant term of the reduction by x^2->x+2 of the polynomial p(n,x)=1+x^n+x^(2n).
+; Submitted by Jamie Morken(s3)
 ; 3,9,25,93,353,1389,5505,21933,87553,349869,1398785,5593773,22372353,89483949,357924865,1431677613,5726666753,22906579629,91626143745,366504225453,1466016202753,5864063412909,23456250855425,93824997829293
 
-seq $0,92431 ; Numbers having in binary representation a leading 1 followed by n zeros and n-1 ones.
-div $0,3
+add $0,1
+mov $2,2
+pow $2,$0
+mov $0,$2
+mul $0,$2
+add $2,5
+add $0,$2
+div $0,6
 mul $0,2
-add $0,3
+add $0,1
