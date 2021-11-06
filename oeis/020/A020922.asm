@@ -6,6 +6,4 @@ add $0,1
 mov $2,$0
 seq $0,20920 ; Expansion of 1/(1-4*x)^(9/2).
 mul $0,$2
-sub $0,18
 div $0,18
-add $0,1

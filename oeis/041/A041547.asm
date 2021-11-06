@@ -13,8 +13,5 @@ lpb $0
   dif $2,2
   mul $2,17
 lpe
-mul $2,2
 mov $0,$2
-sub $0,34
-div $0,34
-add $0,1
+div $0,17
