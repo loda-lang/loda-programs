@@ -1,15 +1,12 @@
 ; A192466: Coefficient of x in the reduction by x^2->x+2 of the polynomial p(n,x)=1+x^n+x^(2n).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s3)
 ; 2,6,24,90,352,1386,5504,21930,87552,349866,1398784,5593770,22372352,89483946,357924864,1431677610,5726666752,22906579626,91626143744,366504225450,1466016202752,5864063412906,23456250855424,93824997829290
 
 add $0,1
-mov $1,-1
 mov $2,2
 pow $2,$0
-sub $1,$2
-pow $2,2
-sub $2,$1
 mov $0,$2
-sub $0,7
-div $0,3
-add $0,2
+mul $0,$2
+add $0,$2
+div $0,6
+mul $0,2
