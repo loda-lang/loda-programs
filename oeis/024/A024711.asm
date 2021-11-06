@@ -1,9 +1,11 @@
 ; A024711: a(n) = residue mod 2 of n-th term of A024702.
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jamie Morken(s1)
 ; 1,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,0,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,1,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,0,1,1,1,1
 
-add $0,2
-seq $0,6005 ; The odd prime numbers together with 1.
+seq $0,215848 ; Primes > 3.
 pow $0,2
-div $0,24
+div $0,2
+sub $0,10
+div $0,12
+add $0,1
 mod $0,2

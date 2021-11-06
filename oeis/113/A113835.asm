@@ -1,7 +1,13 @@
 ; A113835: a(n) = a(n-1) + 2^(A007494(n-1)).
+; Submitted by Jamie Morken(s1.)
 ; 1,5,13,45,109,365,877,2925,7021,23405,56173,187245,449389,1497965,3595117,11983725,28760941,95869805,230087533,766958445,1840700269,6135667565,14725602157,49085340525,117804817261,392682724205
 
+mov $1,$0
+mod $0,2
+lpb $1
+  mul $0,8
+  add $0,3
+  sub $1,2
+lpe
+mul $0,4
 add $0,1
-mul $0,3
-seq $0,238549 ; a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
-div $0,7
