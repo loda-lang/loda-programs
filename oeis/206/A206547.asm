@@ -5,7 +5,7 @@
 add $0,6
 lpb $0
   mov $2,$0
-  mov $0,2
+  mov $0,1
   seq $2,160545 ; Numbers coprime to 21.
   add $3,$2
 lpe

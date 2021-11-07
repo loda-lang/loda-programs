@@ -6,6 +6,4 @@ add $0,1
 mov $1,$0
 seq $1,127578 ; Primes congruent to 31 mod 32.
 mov $0,$1
-sub $0,127
 div $0,32
-add $0,3

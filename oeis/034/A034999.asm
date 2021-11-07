@@ -1,29 +1,17 @@
 ; A034999: Number of ways to cut a 2 X n rectangle into rectangles with integer sides.
+; Submitted by Jon Maiga
 ; 1,2,8,34,148,650,2864,12634,55756,246098,1086296,4795090,21166468,93433178,412433792,1820570506,8036386492,35474325410,156591247016,691227204226,3051224496244,13468756547882,59453967813584,262442511046330,1158477291582892
 
-mov $5,2
-mov $6,$0
-lpb $5
-  mov $0,$6
-  mov $3,0
-  sub $5,1
-  add $0,$5
+mov $1,2
+mov $2,4
+lpb $0
   sub $0,1
-  lpb $0
-    sub $0,1
-    mov $2,$0
-    max $2,0
-    seq $2,86351 ; T(n,3) of A086350.
-    add $3,$2
-  lpe
-  mov $4,$5
-  mov $7,$3
-  mul $7,2
-  add $7,1
-  mul $4,$7
-  add $1,$4
+  sub $2,$1
+  add $1,$2
+  add $1,$2
+  mul $2,7
 lpe
-min $6,1
-mul $6,$7
-sub $1,$6
-mov $0,$1
+mov $0,$2
+sub $0,7
+div $0,7
+add $0,1
