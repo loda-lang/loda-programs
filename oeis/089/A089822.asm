@@ -8,7 +8,7 @@ mov $0,$4
 seq $0,230980 ; Number of primes <= n, starting at n=0.
 mov $2,$0
 bin $0,2
-sub $2,2
+sub $2,1
 mov $3,$4
 sub $3,$2
 lpb $3
@@ -16,3 +16,4 @@ lpb $3
   sub $3,1
 lpe
 div $0,4
+mul $0,2
