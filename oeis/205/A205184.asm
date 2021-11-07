@@ -2,16 +2,7 @@
 ; Submitted by Jon Maiga
 ; 1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8
 
-mov $3,1
-lpb $0
-  sub $0,$3
-  add $2,2
-  add $4,1
-  mov $1,$4
-  mul $1,4
-  add $2,$1
-  add $4,$2
-lpe
-mod $4,9
-mov $0,$4
+seq $0,115599 ; Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives Z-X values.
+sub $0,2
+mod $0,9
 add $0,1

@@ -2,17 +2,12 @@
 ; Submitted by Jon Maiga
 ; 2,2,2,1,1,5,1,1,2,2,2
 
-sub $1,$0
-sub $0,6
-mov $3,$0
-cmp $3,0
-add $0,$3
-add $1,4
-mov $2,3
-div $2,$0
-mov $3,$1
-cmp $3,0
-add $1,$3
-div $2,$1
-mov $0,$2
+sub $0,5
+pow $0,2
+sub $0,2
+bin $0,2
+mov $1,9
+div $1,$0
+mov $0,$1
 add $0,2
+mod $0,10

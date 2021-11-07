@@ -1,22 +1,15 @@
 ; A038096: Number of rooted graphs on n labeled nodes where the root has degree 3.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s4)
 ; 32,1280,61440,4587520,587202560,135291469824,57724360458240,46443371157258240,71337018097548656640,211030752203237270487040,1210134745434243803880882176,13518305228996352601898436526080,295311883829168321372671978724392960
 
-add $0,1
 mov $1,$0
-lpb $1
-  add $0,$1
-  mov $2,$0
-  mov $4,$0
-  lpb $2
-    dif $2,$4
-    mov $3,$0
-    seq $3,48482 ; a(n) = T(n,n), array T given by A048472.
-  lpe
-  sub $1,1
-lpe
-mov $0,$3
-sub $0,13
-div $0,12
+add $1,3
+bin $1,2
+mov $0,$1
+bin $1,2
+mov $2,2
+pow $2,$0
+mul $1,$2
+mov $0,$1
+div $0,24
 mul $0,32
-add $0,32
