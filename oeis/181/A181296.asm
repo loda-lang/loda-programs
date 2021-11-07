@@ -8,9 +8,7 @@ lpb $0
   seq $1,181331 ; Number of 0's in the top rows of all 2-compositions of n.
   add $2,$1
 lpe
-mov $3,$0
-add $3,1
-div $3,2
+max $3,$0
 add $2,$3
 mov $0,$2
 mul $0,2

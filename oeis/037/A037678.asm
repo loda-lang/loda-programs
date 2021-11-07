@@ -9,14 +9,12 @@ lpb $0
   lpb $3
     add $2,2
     mod $3,5
-    div $4,7
-    cmp $4,0
-    sub $3,$4
-    add $5,1
+    sub $3,1
+    add $4,1
   lpe
   sub $0,1
   add $2,2
-  mul $5,8
+  mul $4,8
 lpe
-mov $0,$5
+mov $0,$4
 div $0,8
