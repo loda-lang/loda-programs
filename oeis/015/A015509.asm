@@ -1,15 +1,20 @@
 ; A015509: a(1)=1, a(n) = sum_{k=1}^{k=n-1} (8^k-1)/7 a(k).
-; Submitted by Jamie Morken(s2)
+; Submitted by Jon Maiga
 ; 1,1,10,740,433640,2030302480,76034827876000,22779578222682344000,54596862986901017252624000,1046838176230046602563156976288000
 
+lpb $0
+  lpb $0
+    mov $0,10
+  lpe
+  add $0,3
+lpe
 sub $0,1
 mov $1,1
 mov $2,1
 lpb $0
   sub $0,1
-  mul $2,4
-  add $2,1
-  mul $2,2
+  mul $2,8
+  add $2,2
   mul $1,$2
   sub $2,1
 lpe
