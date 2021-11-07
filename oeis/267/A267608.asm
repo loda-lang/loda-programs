@@ -5,6 +5,4 @@
 add $0,1
 seq $0,267247 ; Decimal representation of the n-th iteration of the "Rule 165" elementary cellular automaton starting with a single ON (black) cell.
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-sub $0,10
 div $0,10
-add $0,1

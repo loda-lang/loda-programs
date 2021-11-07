@@ -15,9 +15,8 @@ mul $2,2
 mul $5,$2
 add $4,$5
 mov $1,$4
-add $1,43
 mov $3,$6
 mul $3,50
 add $1,$3
 mov $0,$1
-add $0,6
+add $0,49
