@@ -1,9 +1,7 @@
 ; A152099: Semiprimes based on powers of two and primes: a(n)=(2^Prime[n] - 1)*(2^Prime[n] + 1)=2^(2*Prime[n])-1.
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jon Maiga
 ; 15,63,1023,16383,4194303,67108863,17179869183,274877906943,70368744177663,288230376151711743,4611686018427387903,18889465931478580854783,4835703278458516698824703
 
 seq $0,139290 ; 2^(2p - 1)/4, where p is prime.
-mul $0,2
-sub $0,3
-mul $0,4
-add $0,11
+mul $0,8
+sub $0,1

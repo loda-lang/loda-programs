@@ -1,16 +1,11 @@
 ; A152684: a(n) is the number of top-down sequences (F_1, F_2, ..., F_n) whereas each F_i is a labeled forest on n nodes, containing i directed rooted trees. F_(i+1) is proper subset of F_i.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jon Maiga
 ; 1,2,18,384,15000,933120,84707280,10569646080,1735643790720,362880000000000,94121726392108800,29658516531078758400,11159820050604594969600,4942478402320838374195200,2544989406021562500000000000,1507645899890367707813511168000,1018127893314230509110892720128000,777501260728772831263132565372928000
 
+mov $1,$0
 add $0,1
-mov $2,$0
-lpb $0
-  sub $0,1
-  mov $3,1
-  lpb $0
-    mul $3,$0
-    sub $0,1
-    mul $3,$2
-  lpe
+pow $0,$1
+lpb $1
+  mul $0,$1
+  sub $1,1
 lpe
-mov $0,$3
