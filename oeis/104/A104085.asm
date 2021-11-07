@@ -2,12 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,2,11,26,47,72,99,132,167,206,251,300,351,406,463,526,591,660,735,812,893,978,1065,1156,1249,1344,1443
 
-lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,14076 ; Odd nonprimes.
-  add $1,$2
-lpe
-mov $0,$1
+mov $2,$0
+trn $0,1
+sub $2,$0
+seq $0,163631 ; Partial sums of the odd nonprimes, A014076.
+mul $0,$2
 add $0,1

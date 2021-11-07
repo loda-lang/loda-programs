@@ -5,11 +5,10 @@
 add $0,1
 mov $1,10
 pow $1,$0
-mul $1,7
-add $1,5
-bin $1,2
-mul $1,8
+mul $1,14
+add $1,9
+pow $1,2
 mov $0,$1
-sub $0,22200
+sub $0,22201
 div $0,2520
 add $0,8

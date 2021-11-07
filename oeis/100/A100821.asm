@@ -1,6 +1,10 @@
 ; A100821: a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
+; Submitted by Jon Maiga
 ; 0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
 
-seq $0,40 ; The prime numbers.
-add $0,1
-seq $0,80545 ; Characteristic function of {1} union {odd primes}: 1 if n is 1 or an odd prime, else 0.
+seq $0,137780 ; a(n) = 1 + 2^( prime(n + 1) - prime(n) ).
+div $0,2
+mov $1,2
+div $1,$0
+mov $0,$1
+mod $0,2
