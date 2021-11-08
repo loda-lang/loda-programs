@@ -5,6 +5,5 @@
 seq $0,199684 ; 4*10^n+1.
 mul $0,2
 seq $0,7094 ; Numbers in base 8.
-sub $0,12
-div $0,10
-add $0,1
+mul $0,3
+div $0,30

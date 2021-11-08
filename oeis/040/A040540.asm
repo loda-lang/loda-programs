@@ -1,11 +1,17 @@
 ; A040540: Continued fraction for sqrt(564).
-; Submitted by Jamie Morken(l1)
+; Submitted by Jon Maiga
 ; 23,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1,46,1,2,1
 
-seq $0,10197 ; Continued fraction for sqrt(138).
-seq $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
-mov $1,11
-mul $1,$0
-mov $0,$1
-div $0,8
-sub $0,3
+gcd $0,262156
+mul $0,42
+mod $0,13
+mov $1,$0
+add $0,4
+add $1,3
+div $1,5
+mul $1,16
+add $0,$1
+add $0,10
+div $0,3
+add $0,$1
+sub $0,26

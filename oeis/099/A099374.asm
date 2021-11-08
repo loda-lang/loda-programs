@@ -1,14 +1,16 @@
 ; A099374: Squares of A041041(n-1), n>=1 (generalized Fibonacci).
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jamie Morken(s2)
 ; 0,1,100,10201,1040400,106110601,10822240900,1103762461201,112572948801600,11481337015302001,1170983802612002500,119428866529408953001,12180573402197101203600
 
-mov $2,$0
-mov $0,0
-mul $2,2
-add $0,$2
-seq $0,86927 ; a(n) = 10*a(n-1) + a(n-2), starting with a(0) = 2 and a(1) = 10.
-div $0,4
-add $0,2
-div $0,2
-mul $0,5
-div $0,65
+mov $1,1
+lpb $0
+  sub $0,1
+  mov $3,$1
+  mov $1,$4
+  mul $4,5
+  add $3,$4
+  add $4,$3
+lpe
+mov $2,$4
+pow $2,2
+mov $0,$2

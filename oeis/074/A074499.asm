@@ -4,26 +4,37 @@
 
 mov $4,$0
 add $4,1
-mov $5,$0
+mov $7,$0
 lpb $4
-  mov $0,$5
+  mov $0,$7
   sub $4,1
   sub $0,$4
-  mov $1,2
-  mov $2,1
-  mov $3,$0
-  mul $3,5
-  lpb $3
-    mul $2,$3
-    lpb $0
-      add $1,$2
-      mul $2,$0
-      trn $0,7
+  mov $5,0
+  mov $8,1
+  lpb $8
+    mov $1,2
+    mov $2,1
+    mov $3,$0
+    mul $3,5
+    sub $8,1
+    lpb $3
+      mul $2,$3
+      lpb $0
+        add $1,$2
+        mul $2,$0
+        trn $0,7
+        cmp $9,0
+        add $5,$9
+        div $1,$5
+        div $2,$5
+      lpe
+      div $3,11
+      sub $3,1
     lpe
-    div $3,11
-    sub $3,1
+    div $1,$2
+    mov $9,$2
+    cmp $9,0
   lpe
-  div $1,$2
   mov $0,$1
   add $0,1
   add $6,$0

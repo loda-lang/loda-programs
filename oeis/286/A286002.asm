@@ -1,8 +1,18 @@
 ; A286002: a(n) = 2n - d(n), where d(n) is the number of divisors of n (A000005).
+; Submitted by Jon Maiga
 ; 1,2,4,5,8,8,12,12,15,16,20,18,24,24,26,27,32,30,36,34,38,40,44,40,47,48,50,50,56,52,60,58,62,64,66,63,72,72,74,72,80,76,84,82,84,88,92,86,95,94,98,98,104,100,106,104,110,112,116
 
-mov $1,$0
-mul $0,2
-seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $1,2
-sub $0,$1
+add $0,1
+mov $2,$0
+lpb $0
+  mov $3,$2
+  mov $4,$0
+  cmp $4,1
+  add $0,$4
+  dif $3,$0
+  sub $0,1
+  cmp $3,$2
+  add $1,$3
+lpe
+add $2,$1
+mov $0,$2
