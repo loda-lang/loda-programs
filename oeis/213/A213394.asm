@@ -5,7 +5,5 @@
 mov $2,$0
 seq $0,53666 ; Product of digits of n-th prime.
 sub $0,1
-add $2,1
 sub $2,$0
 mov $0,$2
-sub $0,1

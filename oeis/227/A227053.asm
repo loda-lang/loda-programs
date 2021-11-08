@@ -1,0 +1,13 @@
+; A227053: a(n) = (n^3)! / (n^3-n)! = number of ways of placing n labeled balls into n^3 labeled boxes with at most one ball in each box.
+; Submitted by Jon Maiga
+; 1,1,56,17550,15249024,28143753000,94689953674560,525169893772283760,4469844204191484518400,55337211594165488805417600,955860613004397508326213120000,22282564877342299983672172489536000
+
+mov $2,$0
+pow $2,3
+mov $3,1
+lpb $0
+  sub $0,1
+  mul $3,$2
+  sub $2,1
+lpe
+mov $0,$3

@@ -12,7 +12,7 @@ lpb $0
     add $1,$2
     sub $3,1
   lpe
-  div $0,19
+  div $0,22
 lpe
 mov $0,$1
 mul $0,10

@@ -1,27 +1,8 @@
 ; A020765: Decimal expansion of 1/sqrt(8).
-; Submitted by Jamie Morken
+; Submitted by Jamie Morken(s4)
 ; 3,5,3,5,5,3,3,9,0,5,9,3,2,7,3,7,6,2,2,0,0,4,2,2,1,8,1,0,5,2,4,2,4,5,1,9,6,4,2,4,1,7,9,6,8,8,4,4,2,3,7,0,1,8,2,9,4,1,6,9,9,3,4,4,9,7,6,8,3,1,1,9,6,1,5,5,2,6,7,5,9,7,1,2,5,9,6,8,8,3,5,8,1,9,1,0,3,9,3,1
 
 add $0,1
-mov $2,1
-mov $3,$0
-mul $3,4
-lpb $3
-  mul $1,$3
-  mul $2,$3
-  add $1,$2
-  cmp $6,0
-  add $5,$6
-  div $1,$5
-  div $2,$5
-  add $2,$1
-  mul $1,2
-  sub $3,1
-lpe
-div $1,4
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
-mov $0,$1
+seq $0,11547 ; Decimal expansion of sqrt(2) truncated to n places.
+div $0,4
 mod $0,10
