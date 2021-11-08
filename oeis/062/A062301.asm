@@ -1,9 +1,6 @@
 ; A062301: Number of ways writing n-th prime as a sum of two primes.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s3)
 ; 0,0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
 
 trn $0,1
-seq $0,74927 ; a(n) such that p(n)*p(n+1)+a(n) is a minimal square.
-mov $2,1
-div $2,$0
-mov $0,$2
+seq $0,100821 ; a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
