@@ -1,11 +1,14 @@
 ; A154287: (L)-sieve transform of {1,4,9,16,...,n^2,...}=A000290.
+; Submitted by Jon Maiga
 ; 1,3,6,9,13,18,23,29,35,42,49,57,66,75,85,95,106,117,129,141,154,167,181,195,210,225,241,258,275,293,311,330,349,369,389,410,431,453,475,498,521,545,569
 
-lpb $0
-  mov $2,$0
-  sub $0,1
-  seq $2,274089 ; Numbers repeated except that powers of 2 only appear once.
-  add $1,$2
+mov $1,$0
+lpb $1
+  mov $1,$0
+  add $0,1
+  add $2,1
+  div $1,$2
+  sub $1,$2
+  add $0,$1
 lpe
-add $1,1
-mov $0,$1
+add $0,1

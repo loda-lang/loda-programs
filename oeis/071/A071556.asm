@@ -1,11 +1,9 @@
 ; A071556: Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 4<=i<=n.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s2)
 ; 8,78,1002,17018,323324,7436430,215656442,6685349672,247357937828,10141675450908,436092044389002,20496326086283048,1086305282573001492,64092011671807087970,3909612711980232366110,261944051702675568529304
 
-mov $2,$0
-add $2,3
-seq $2,88860 ; Twice the primorials (first definition), 2*A002110(n).
-mov $0,$2
-sub $0,420
-div $0,60
-add $0,8
+add $0,2
+seq $0,71554 ; Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 2<=i<=n.
+mul $0,8
+div $0,120
+add $0,1

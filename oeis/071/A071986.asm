@@ -1,6 +1,7 @@
 ; A071986: Parity of the prime-counting function pi(n).
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s4)
 ; 0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1
 
-seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+sub $0,1
 mod $0,2
