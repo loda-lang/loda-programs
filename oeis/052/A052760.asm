@@ -7,7 +7,11 @@ bin $0,$5
 mov $4,2
 pow $4,$2
 bin $5,4
-add $$5,1
+mov $2,$5
+cmp $5,4
+add $4,$5
+cmp $2,0
+add $0,$2
 sub $0,1
 sub $4,8
 mul $0,$4
