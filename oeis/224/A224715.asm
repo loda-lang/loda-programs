@@ -4,8 +4,7 @@
 
 lpb $0
   mov $2,$0
+  mov $0,1
   seq $2,62302 ; Number of ways writing n-th prime as a sum of a prime and a nonprime.
-  add $3,1
-  mov $0,$3
 lpe
 mov $0,$2

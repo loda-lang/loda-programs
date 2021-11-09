@@ -1,18 +1,17 @@
 ; A138721: Concatenation of n digits 1, n digits 0 and n digits 1.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s4)
 ; 101,110011,111000111,111100001111,111110000011111,111111000000111111,111111100000001111111,111111110000000011111111,111111111000000000111111111,111111111100000000001111111111
 
 add $0,1
-mov $1,10
-pow $1,$0
-mov $2,$1
-sub $1,1
-pow $2,2
+mov $1,1
+mov $2,10
+pow $2,$0
+add $1,$2
+mov $3,1
+sub $3,$2
+mul $1,$3
+mul $1,$3
+mul $2,2
+add $2,$1
 mov $0,$2
-mul $0,$1
-add $0,$1
-div $0,30
-sub $0,30
-div $0,3
-mul $0,10
-add $0,101
+div $0,9

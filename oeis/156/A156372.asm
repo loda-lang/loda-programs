@@ -8,12 +8,10 @@ mov $3,15
 pow $3,$0
 lpb $0
   lpb $2
-    sub $0,1
     dif $2,2
+    mov $0,$2
     mul $3,2
   lpe
-  mul $2,2
-  sub $2,9
 lpe
 mov $0,$3
 div $0,15

@@ -1,9 +1,13 @@
 ; A196676: Expansion of (1-8x)/(1-25x).
+; Submitted by Jon Maiga
 ; 1,17,425,10625,265625,6640625,166015625,4150390625,103759765625,2593994140625,64849853515625,1621246337890625,40531158447265625,1013278961181640625,25331974029541015625,633299350738525390625
 
-seq $0,168847 ; Number of reduced words of length n in Coxeter group on 26 generators S_i with relations (S_i)^2 = (S_i S_j)^20 = I.
-seq $0,43677 ; Numbers whose base-16 representation has exactly 4 runs.
-sub $0,4114
-div $0,13
-mul $0,8
-add $0,1
+mov $1,1
+mov $2,10
+lpb $0
+  sub $0,1
+  add $2,7
+  mul $1,$2
+  mov $2,18
+lpe
+mov $0,$1

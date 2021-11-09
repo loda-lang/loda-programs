@@ -1,6 +1,19 @@
 ; A019485: a(n) = 2*a(n-1) + 2*a(n-2) - 3*a(n-3).
+; Submitted by Jon Maiga
 ; 2,5,12,28,65,150,346,797,1836,4228,9737,22422,51634,118901,273804,630508,1451921,3343446,7699210,17729549,40827180,94015828,216497369,498544854,1148036962,2643671525,6087782412,14018796988
 
-add $0,2
-seq $0,162740 ; Number of reduced words of length n in Coxeter group on 4 generators S_i with relations (S_i)^2 = (S_i S_j)^3 = I.
-div $0,6
+mov $2,3
+mov $4,3
+lpb $0
+  sub $0,1
+  mov $1,$2
+  add $1,$2
+  mov $3,$2
+  mov $2,$4
+  add $2,4
+  add $4,$3
+  add $4,$1
+lpe
+mov $0,$4
+div $0,3
+add $0,1
