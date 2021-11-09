@@ -1,9 +1,16 @@
 ; A115378: a(n) = number of positive integers k < n such that n XOR k = (n+k).
+; Submitted by Jon Maiga
 ; 0,1,0,3,1,1,0,7,3,3,1,3,1,1,0,15,7,7,3,7,3,3,1,7,3,3,1,3,1,1,0,31,15,15,7,15,7,7,3,15,7,7,3,7,3,3,1,15,7,7,3,7,3,3,1,7,3,3,1,3,1,1,0,63,31,31,15,31,15,15,7,31,15,15,7,15,7,7,3,31,15,15,7,15,7,7,3,15,7,7,3,7,3
 
+sub $1,$0
+add $0,2
+add $1,1
+lpb $0
+  add $0,1
+  div $0,2
+  add $1,$0
+lpe
 add $0,1
-seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
-mov $1,2
-pow $1,$0
-sub $1,1
-mov $0,$1
+pow $0,$1
+sub $0,4
+div $0,4

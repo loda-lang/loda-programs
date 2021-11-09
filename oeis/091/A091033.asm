@@ -1,5 +1,15 @@
 ; A091033: Third column (k=4) of array A090438 ((4,2)-Stirling2).
+; Submitted by Jon Maiga
 ; 1,180,25200,4233600,898128000,239740300800,79332244992000,32011868528640000,15509750302126080000,8898339094906060800000,5971815866682429603840000,4637851802955964809216000000
 
 mul $0,2
-seq $0,5461 ; Number of simplices in barycentric subdivision of n-simplex.
+add $0,2
+mov $2,$0
+lpb $0
+  sub $0,1
+  add $3,$0
+  mul $2,$3
+  mov $3,4
+lpe
+mov $0,$2
+div $0,8
