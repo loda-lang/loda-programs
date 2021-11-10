@@ -1,6 +1,14 @@
 ; A099372: Squares of A099371(n) (generalized Fibonacci).
-; Submitted by Jamie Morken(s4.)
+; Submitted by Jamie Morken(s2)
 ; 0,1,81,6724,558009,46308025,3843008064,318923361289,26466795978921,2196425142889156,182276820063821025,15126779640154255921,1255340433312739420416,104178129185317217638609
 
-seq $0,99371 ; Expansion of g.f.: x/(1 - 9*x - x^2).
-pow $0,2
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $2,$3
+  mul $3,9
+  add $3,$1
+  mov $1,$2
+lpe
+pow $1,2
+mov $0,$1

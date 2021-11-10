@@ -1,8 +1,8 @@
 ; A019438: Squarefree orders of elements of Mathieu group M_23.
+; Submitted by Jon Maiga
 ; 1,2,3,5,6,7,11,14,15,23
 
 mov $4,$0
-add $4,1
 mov $6,$0
 lpb $4
   mov $0,$6
@@ -22,3 +22,4 @@ lpb $4
   add $5,$2
 lpe
 mov $0,$5
+add $0,1
