@@ -4,6 +4,4 @@
 
 seq $0,282005 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
 seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
-sub $0,6
 div $0,6
-add $0,1
