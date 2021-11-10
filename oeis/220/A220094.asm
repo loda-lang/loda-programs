@@ -1,16 +1,14 @@
 ; A220094: Sum of the n-digit base-ten numbers whose digits are nonzero.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 45,4455,404595,36446355,3280467195,295244704755,26572047342795,2391484476085155,215233604784766395,19371024448062897555,1743392200482566077995,156905298044843094701955,14121476824048587852317595,1270932914164487290670858355
 
 add $0,1
-mov $3,1
-lpb $0
-  sub $0,1
-  add $2,$3
-  mul $2,30
-  mul $3,3
-lpe
-mul $2,$3
-mov $0,$2
-div $0,90
+mov $1,10
+pow $1,$0
+mov $2,9
+pow $2,$0
+mul $1,$2
+sub $1,$2
+mov $0,$1
+div $0,81
 mul $0,45

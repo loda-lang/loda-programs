@@ -1,9 +1,6 @@
 ; A171774: Radix expansion of -1/6 in radix -exp(Pi/sqrt(3)).
 ; 1,0,1,1,0,0,2,0,1,0,0,1,2,0,0,1,0,0,2,0,2,0,0,0,1,0,1,2,0,0,2,0,0,0,0,1,2,0,2,0,0,0,2,0,0,0,0,1,3,0,0,2,0,0,0,0,2,0,0,0,2,0,2,1,0,0,2,0,0,0,0,0,2,0,1,2,0,0,2,0,1,0,0,2,0,0,0,0,0,0,4,0,2,0,0,0,2,0,0,1
 
-mov $9,$0
-mov $3,$9
-add $$3,3
-gcd $3,$0
-seq $3,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
-mov $0,$3
+mov $2,$0
+seq $2,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+mov $0,$2

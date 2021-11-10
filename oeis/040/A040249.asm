@@ -1,10 +1,19 @@
 ; A040249: Continued fraction for sqrt(266).
+; Submitted by Jon Maiga
 ; 16,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3,32,3,4,3
 
-seq $0,10197 ; Continued fraction for sqrt(138).
-seq $0,47423 ; Numbers that are congruent to {2, 3, 4, 5, 6} mod 8.
-div $0,2
-mul $0,7
-sub $0,8
-div $0,4
+mov $1,4
+mov $2,$0
+gcd $2,4
+pow $1,$2
+lpb $0
+  mov $0,1
+  mul $1,2
+lpe
+div $1,24
+add $1,$0
+mul $1,2
+mul $2,$1
+mov $0,$2
+div $0,6
 add $0,3
