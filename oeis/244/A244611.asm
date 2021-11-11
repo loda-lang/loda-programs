@@ -5,10 +5,9 @@
 seq $0,300518 ; The greatest prime factor of the squarefree part of n, or 1 if n is square.
 trn $0,2
 add $0,1
+mov $2,$0
+cmp $2,2
 mov $3,$0
-mov $4,$0
 cmp $3,1
-cmp $4,2
-mov $0,0
-add $0,$3
-sub $0,$4
+mov $0,$3
+sub $0,$2

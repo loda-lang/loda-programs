@@ -4,13 +4,9 @@
 add $0,1
 lpb $0
   mov $2,$0
-  mov $3,$0
-  cmp $2,0
+  cmp $2,1
   mul $2,$1
-  cmp $3,1
-  mul $3,$1
-  add $0,$2
-  add $1,$3
+  add $1,$2
   add $1,1
   trn $0,$1
 lpe
