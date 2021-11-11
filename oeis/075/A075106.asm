@@ -9,8 +9,8 @@ mov $3,-1
 lpb $1
   div $1,2
   add $3,1
-  mov $0,$3
 lpe
+mov $0,$3
 mov $1,$3
 gcd $1,$2
 div $0,$1
