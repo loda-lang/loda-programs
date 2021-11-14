@@ -1,7 +1,10 @@
 ; A139293: (2^(2p - 1)/8)-1, where p is prime.
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jon Maiga
 ; 0,3,63,1023,262143,4194303,1073741823,17179869183,4398046511103,18014398509481983,288230376151711743,1180591620717411303423,302231454903657293676543,4835703278458516698824703
 
-seq $0,139290 ; 2^(2p - 1)/4, where p is prime.
+seq $0,6005 ; The odd prime numbers together with 1.
+trn $0,2
+mov $2,4
+pow $2,$0
+mov $0,$2
 sub $0,1
-div $0,2

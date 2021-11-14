@@ -6,7 +6,6 @@ pow $0,2
 mov $2,$0
 trn $0,1
 seq $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
-mov $3,$2
-add $3,$2
-add $3,$0
-mov $0,$3
+mul $2,2
+add $2,$0
+mov $0,$2

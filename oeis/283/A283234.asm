@@ -4,8 +4,7 @@
 
 mov $2,$0
 seq $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
+mul $2,2
 add $0,$2
-add $0,3
-add $0,$2
-sub $0,1
+add $0,2
 mul $0,2

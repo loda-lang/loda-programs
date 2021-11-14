@@ -8,29 +8,24 @@ lpb $0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
     cmp $6,0
     add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
+    max $4,$6
     sub $3,$4
+    mov $6,12
   lpe
-  mov $5,1
   lpb $0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     dif $0,$2
     mul $1,6
-    mul $5,$2
-    add $5,1
-    mul $1,$5
-    trn $2,8
+    mov $5,$2
+    sub $2,1
   lpe
+  add $2,1
+  add $5,1
+  mul $1,$5
 lpe
 mov $0,$1
