@@ -8,9 +8,9 @@ lpb $0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $26,$2
-    cmp $26,0
-    add $2,$26
+    mov $6,$2
+    cmp $6,0
+    add $2,$6
     mod $4,$2
     cmp $4,0
     cmp $4,0
@@ -29,10 +29,7 @@ lpb $0
   mul $1,$5
   add $2,1
   mul $1,$2
-  lpb $2,2
-    div $1,2
-    mul $1,2
-    div $3,10
-  lpe
+  div $1,2
+  mul $1,2
 lpe
 mov $0,$1

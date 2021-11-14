@@ -16,12 +16,12 @@ lpb $3
     mov $4,10
     sub $5,$2
   lpe
-  mov $2,$0
-  cmp $2,1
+  cmp $2,3
   cmp $2,0
   sub $3,$2
   add $5,2
 lpe
 mov $0,$5
+sub $0,2
 div $0,2
-add $0,1
+add $0,2

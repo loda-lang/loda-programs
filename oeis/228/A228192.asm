@@ -4,7 +4,3 @@
 
 pow $0,2
 seq $0,1850 ; Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
-mul $0,18
-sub $0,18
-div $0,18
-add $0,1

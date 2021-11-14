@@ -12,6 +12,5 @@ lpb $0
     dif $2,$3
   lpe
   sub $0,1
-  add $1,1
 lpe
-mov $0,$1
+mov $0,$2

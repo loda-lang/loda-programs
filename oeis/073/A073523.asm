@@ -1,7 +1,6 @@
 ; A073523: The set of 36 consecutive primes that form a 6 X 6 pandiagonal magic square with the smallest magic constant (930).
-; Submitted by Jamie Morken(s3)
+; Submitted by Jon Maiga
 ; 67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251
 
-add $0,17
-seq $0,48974 ; Odd numbers that are the sum of 2 primes.
-sub $0,2
+add $0,16
+seq $0,215848 ; Primes > 3.

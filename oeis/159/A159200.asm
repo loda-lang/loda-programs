@@ -1,7 +1,12 @@
 ; A159200: Decimal expansion of Sum_{k >= 1} (1/(10^(4*k + 2) - 1)) - (1/(10^(2*k + 1) - 1)), negated.
+; Submitted by Jon Maiga
 ; 0,0,1,0,1,0,1,0,2,0,1,0,1,0,3,0,1,0,1,0,3,0,1,0,2,0,3,0,1,0,1,0,3,0,3,0,1,0,3,0,1,0,1,0,5,0,1,0,2,0,3,0,1,0,3,0,3,0,1,0,1,0,5,0,3,0,1,0,3,0,1,0,1,0,5,0,3,0,1,0,4,0,1,0,3,0,3,0,1,0,3,0,3,0,3,0,1,0,5,0
 
-add $0,1
-dif $0,-2
-max $0,0
-seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+lpb $0
+  mod $0,2
+  sub $0,1
+lpe
+mov $2,$0
+seq $0,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
+sub $2,$0
+mov $0,$2
