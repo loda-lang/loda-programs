@@ -4,10 +4,7 @@
 
 add $0,1
 mov $1,1
-mov $2,2
-mov $4,1
 lpb $0
-  mul $1,$4
   mov $3,$0
   lpb $3
     mov $4,$0
@@ -31,4 +28,4 @@ lpb $0
   add $5,2
   mul $1,$5
 lpe
-gcd $0,$1
+mov $0,$1

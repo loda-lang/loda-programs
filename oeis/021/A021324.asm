@@ -8,8 +8,7 @@ lpb $0
   sub $0,1
   mul $1,10
   sub $2,1
-  div $3,2
-  mul $3,12
+  mul $3,6
   add $3,2
   sub $3,$2
   add $1,$3

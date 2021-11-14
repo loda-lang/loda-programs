@@ -23,6 +23,7 @@ jobs:
           curl -fsSLo $HOME/loda/bin/loda https://github.com/loda-lang/loda-cpp/releases/latest/download/loda-ubuntu-20
           chmod u+x $HOME/loda/bin/loda
           ln -s $(pwd) $HOME/loda/programs
+          start_time="$(date -u +%s)"
           for f in ${{ steps.files.outputs.all_modified_files }}; do
             if [[ -f "$f" ]] && [[ $f == oeis/*.asm ]]; then  
               a=${f:9:7}
@@ -33,6 +34,12 @@ jobs:
               if [ "$r" != "ok" ] && [ "$r" != "warning" ]; then
                 error=true
               fi
+            fi
+            end_time="$(date -u +%s)"
+            elapsed="$(($end_time-$start_time))"
+            if (( elapsed > 600 )); then
+              echo "Warning: maximum execution time exceeded, aborting..."
+              break
             fi
           done
           if [ -n "$error" ]; then
