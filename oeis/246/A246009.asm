@@ -5,7 +5,3 @@
 seq $0,40 ; The prime numbers.
 sub $0,1
 seq $0,8908 ; (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
-mul $0,2
-sub $0,4
-div $0,2
-add $0,2
