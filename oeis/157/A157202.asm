@@ -11,11 +11,12 @@ lpb $2
   mov $3,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,33
+  add $1,66
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
 lpe
 mov $0,$1
+sub $0,70
 div $0,66

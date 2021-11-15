@@ -6,6 +6,5 @@ seq $0,91983 ; a(0) = 1, a(n) = 20*sigma[3](n).
 add $0,4
 mul $0,8
 div $0,5
-sub $0,3
+sub $0,6
 div $0,2
-sub $0,1
