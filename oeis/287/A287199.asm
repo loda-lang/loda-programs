@@ -10,7 +10,7 @@ pow $3,$0
 mov $1,$3
 mul $2,$3
 lpb $0
-  mov $0,1
+  mov $0,2
   add $1,1
   mul $1,2
   mod $2,$1

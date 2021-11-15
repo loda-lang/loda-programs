@@ -1,15 +1,9 @@
 ; A005614: The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+; Submitted by Jon Maiga
 ; 1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1
 
-lpb $0
-  mov $1,$0
-  mov $2,$0
-  seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
-  mov $0,$2
-lpe
-lpb $1
-  mov $1,2
-lpe
-add $1,1
-mod $1,2
-mov $0,$1
+mov $2,$0
+seq $2,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
+mov $0,$2
+add $0,1
+mod $0,2

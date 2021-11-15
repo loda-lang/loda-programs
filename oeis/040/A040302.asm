@@ -1,7 +1,17 @@
 ; A040302: Continued fraction for sqrt(320).
+; Submitted by Jon Maiga
 ; 17,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1,34,1,7,1
 
-seq $0,40304 ; Continued fraction for sqrt(322).
-seq $0,199423 ; Greatest prime factor of n and 2*n+1
+gcd $0,262156
+mul $0,42
+mod $0,13
+mul $0,2
+mov $1,$0
+sub $0,2
+sub $1,4
+div $1,5
+mul $1,22
+trn $1,$0
+mov $0,$1
 div $0,2
-sub $0,1
+add $0,1

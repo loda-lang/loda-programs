@@ -1,21 +1,13 @@
 ; A033126: Base 8 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jamie Morken(s3)
 ; 1,8,65,521,4168,33345,266761,2134088,17072705,136581641,1092653128,8741225025,69929800201,559438401608,4475507212865,35804057702921,286432461623368,2291459692986945,18331677543895561,146653420351164488,1173227362809315905,9385818902474527241
 
-add $0,1
-mov $2,1
+mov $1,1
 lpb $0
-  mov $3,$2
-  lpb $3
-    mov $2,1
-    mod $3,5
-    cmp $4,0
-    sub $3,$4
-    add $5,1
-  lpe
   sub $0,1
-  add $2,2
-  mul $5,8
+  mod $2,2
+  add $2,$1
+  mul $1,7
+  add $1,$2
 lpe
-mov $0,$5
-div $0,8
+mov $0,$1

@@ -4,5 +4,6 @@
 
 mul $0,2
 add $0,1
-seq $0,84703 ; Squares n such that 2*n+1 is also a square.
-div $0,36
+seq $0,3499 ; a(n) = 6*a(n-1) - a(n-2), with a(0) = 2, a(1) = 6.
+pow $0,2
+div $0,288
