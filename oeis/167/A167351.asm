@@ -31,7 +31,7 @@ lpb $0
     mul $1,$5
     add $5,1
     mul $1,$5
-    mod $2,2
+    mod $2,3
   lpe
 lpe
 mov $0,$1

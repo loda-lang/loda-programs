@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,27
+  gcd $0,2
   trn $0,3
   seq $2,37702 ; Base-4 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,0,2.
   add $3,$2

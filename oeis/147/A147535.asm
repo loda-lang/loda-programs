@@ -5,11 +5,9 @@
 mov $1,3
 pow $1,$0
 add $0,1
-div $1,2
-mul $1,8
+mul $1,4
 mov $2,2
 pow $2,$0
 bin $2,2
 add $1,$2
 mov $0,$1
-add $0,4
