@@ -1,8 +1,12 @@
 ; A287922: a(n) = prime(1)^2 + prime(n)^2.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jon Maiga
 ; 8,13,29,53,125,173,293,365,533,845,965,1373,1685,1853,2213,2813,3485,3725,4493,5045,5333,6245,6893,7925,9413,10205,10613,11453,11885,12773,16133,17165,18773,19325,22205,22805,24653,26573,27893,29933,32045,32765,36485
 
-seq $0,6005 ; The odd prime numbers together with 1.
-pow $0,2
-max $0,4
+mov $2,1
+max $2,$0
+add $0,$2
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+sub $1,$0
+pow $1,2
+mov $0,$1
 add $0,4

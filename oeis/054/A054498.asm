@@ -8,15 +8,13 @@ lpb $3
   mov $0,$5
   sub $3,1
   sub $0,$3
+  mov $4,$0
+  add $4,1
   mov $9,$0
-  mov $10,0
-  mov $11,$0
-  add $11,1
-  lpb $11
+  lpb $4
     mov $0,$9
-    mov $7,0
-    sub $11,1
-    sub $0,$11
+    sub $4,1
+    sub $0,$4
     mov $6,$0
     mov $8,$0
     add $8,1
@@ -28,9 +26,7 @@ lpb $3
       seq $2,299338 ; Expansion of 1 / ((1 - x)^7*(1 + x)^6).
       add $7,$2
     lpe
-    add $10,$7
   lpe
-  add $4,$10
 lpe
-mov $0,$4
+mov $0,$7
 add $0,1

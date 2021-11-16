@@ -5,7 +5,6 @@
 add $0,1
 mov $2,$0
 seq $0,4982 ; a(n) = (2^n/n!) * Product_{k=0..n-1} (4*k + 3).
-mov $1,$2
-mul $1,$0
-mov $0,$1
+mul $2,$0
+mov $0,$2
 div $0,6
