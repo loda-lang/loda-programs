@@ -11,9 +11,8 @@ lpb $0
   add $0,$4
   dif $3,$0
   lpb $3
-    cmp $3,$2
+    div $3,$0
     cmp $3,0
-    sub $0,$3
     mul $3,$0
   lpe
   sub $0,1

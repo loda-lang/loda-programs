@@ -4,8 +4,4 @@
 
 add $0,1
 seq $0,233450 ; Numbers n such that 3*T(n)+1 is a square, where T = A000217.
-mov $1,-1
-add $1,$0
-mul $1,$0
-mov $0,$1
-div $0,2
+bin $0,2

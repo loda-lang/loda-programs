@@ -1,22 +1,6 @@
 ; A027171: a(n) = A027170(2n, n).
-; Submitted by Jamie Morken(s1)
+; Submitted by Jon Maiga
 ; 1,10,42,156,570,2096,7784,29168,110106,418128,1595616,6113740,23505352,90633796,350351636,1357278296,5268292826,20483876816,79765662896,311038321436,1214362277696,4746455801876,18570960418916
 
-mov $4,3
-lpb $4
-  sub $4,1
-  add $0,$4
-  sub $0,1
-  mov $6,2
-  lpb $6
-    mov $2,$0
-    add $2,$0
-    bin $2,$0
-    sub $6,1
-    mov $5,$6
-    mul $5,$2
-    add $3,$5
-  lpe
-lpe
-mov $0,$3
+seq $0,81496 ; Start with Pascal's triangle; a(n) is the sum of the numbers on the periphery of the n-th central rhombus containing exactly 4 numbers.
 sub $0,4
