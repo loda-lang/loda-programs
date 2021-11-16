@@ -1,10 +1,15 @@
 ; A261971: Number of unit cubes that have a side on the surface of a p X p X p cube composed of p^3 unit cubes, where p is the n-th prime.
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jon Maiga
 ; 8,26,98,218,602,866,1538,1946,2906,4706,5402,7778,9602,10586,12698,16226,20186,21602,26138,29402,31106,36506,40346,46466,55298,60002,62426,67418,69986,75266,95258,101402,110978,114266,131426,135002,146018,157466
 
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $1,1
+mov $2,1
+max $2,$0
+add $0,$2
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+sub $1,$0
+pow $1,2
+mov $0,$1
 sub $0,1
-pow $0,2
-trn $0,1
 mul $0,6
 add $0,8
