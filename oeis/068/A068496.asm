@@ -1,0 +1,9 @@
+; A068496: n! reduced mod 2^n.
+; Submitted by Christian Krause
+; 1,2,6,8,24,16,48,128,384,768,1280,3072,3072,10240,22528,32768,98304,196608,65536,262144,262144,1572864,6815744,12582912,29360128,25165824,8388608,234881024,369098752,335544320,738197504,2147483648,6442450944
+
+add $0,1
+mov $1,2
+pow $1,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mod $0,$1
