@@ -19,8 +19,6 @@ lpb $0
   lpe
   div $0,$2
   max $0,$1
-  mov $4,$3
-  add $4,$2
-  sub $4,$3
+  mov $4,$2
 lpe
 mov $0,$4
