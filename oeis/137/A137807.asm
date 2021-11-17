@@ -1,8 +1,12 @@
 ; A137807: Final digit of prime(n)^2.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jon Maiga
 ; 4,9,5,9,1,9,9,1,9,1,1,9,1,9,9,9,1,1,9,1,9,1,9,1,9,1,9,9,1,9,9,1,9,1,1,1,9,9,9,9,1,1,1,9,9,1,1,9,9,1,9,1,1,1,9,9,1,1,9,1,9,9,9,1,9,9,1,9,9,1,9,1,9,9,1,9,1,9,1,1,1,1,1,9,1,9,1,9,1,9,9,1,9,1,1,9,1,1,9,1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-pow $0,2
-max $0,4
+mov $2,1
+max $2,$0
+add $0,$2
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+sub $1,$0
+pow $1,2
+mov $0,$1
 mod $0,10
