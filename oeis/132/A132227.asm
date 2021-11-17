@@ -1,8 +1,11 @@
 ; A132227: a(n) = 3*prime(n) - 5.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jon Maiga
 ; 1,4,10,16,28,34,46,52,64,82,88,106,118,124,136,154,172,178,196,208,214,232,244,262,286,298,304,316,322,334,376,388,406,412,442,448,466,484,496,514
 
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $2,1
+max $2,$0
+add $0,$2
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+sub $0,2
 mul $0,3
-max $0,6
-sub $0,5
+add $0,1

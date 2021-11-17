@@ -5,15 +5,12 @@
 add $0,2
 lpb $0
   sub $0,1
-  div $1,2
-  mul $1,2
   max $2,26
-  mul $2,7
-  div $3,2
-  mul $3,20
+  mul $2,10
+  mul $3,12
   add $3,$1
-  mul $1,12
+  mul $1,7
   add $1,$2
 lpe
 mov $0,$3
-div $0,182
+div $0,260

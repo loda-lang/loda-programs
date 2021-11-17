@@ -6,6 +6,4 @@ mov $2,1
 max $2,$0
 add $0,$2
 seq $0,173919 ; Numbers that are prime or one less than a prime.
-sub $0,2
 mul $0,5
-add $0,10

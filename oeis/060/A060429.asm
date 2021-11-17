@@ -9,6 +9,5 @@ seq $0,173919 ; Numbers that are prime or one less than a prime.
 sub $1,$0
 pow $1,2
 mov $0,$1
-sub $0,4
 mul $0,4
-add $0,17
+add $0,1

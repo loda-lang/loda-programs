@@ -8,8 +8,7 @@ lpb $0
   div $1,2
   max $2,26
   mul $2,8
-  div $3,2
-  mul $3,18
+  mul $3,9
   add $3,$1
   mul $1,10
   add $1,$2

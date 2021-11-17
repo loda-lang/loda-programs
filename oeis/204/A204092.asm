@@ -1,21 +1,17 @@
 ; A204092: The number of 1 by n Haunted Mirror Maze puzzles with a unique solution.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 1,3,17,91,449,2123,9841,45211,206881,945003,4313297,19680571,89784449,409577483,1868351281,8522666971,38876763361,177338745003,808940722577,3690027171451,16832256509249,76781232397643,350241657358321,1597645838773531,7287745912705441
 
 lpb $0
   sub $0,1
-  add $3,1
-  add $2,$3
-  trn $2,4
-  sub $4,$1
-  mul $1,4
+  mul $2,2
+  add $3,$2
+  sub $3,1
   add $4,1
-  add $4,$2
-  add $1,$4
-  add $2,4
+  mul $4,2
   add $2,$4
-  mov $3,$1
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2
 mul $0,2
 add $0,1
