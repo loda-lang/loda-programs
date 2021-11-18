@@ -4,6 +4,5 @@
 
 add $0,1
 seq $0,171947 ; P-positions for game of UpMark.
-sub $0,3
 mul $0,4
-add $0,7
+sub $0,5

@@ -1,13 +1,13 @@
 ; A006617: Zarankiewicz's problem.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s1)
 ; 6,10,14,19,25,30,36,43,51,57
 
+add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
-  add $2,1
   seq $2,108872 ; Sums of ordinal references for a triangular table read by columns, top to bottom.
   add $1,$2
 lpe
 mov $0,$1
-add $0,6
+add $0,3

@@ -1,11 +1,14 @@
 ; A084153: Binomial transform of a Jacobsthal convolution.
+; Submitted by Jamie Morken(s1)
 ; 0,0,1,6,33,170,861,4326,21673,108450,542421,2712446,13562913,67815930,339082381,1695417366,8477097753,42385510610,211927596741,1059638071086,5298190530193,26490953000490,132454765701501,662273829905606
 
-lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,84177 ; Binomial transform of Jacobsthal oblongs.
-  add $1,$2
-lpe
+mov $1,5
+pow $1,$0
+div $1,2
+add $1,142
+mov $2,2
+pow $2,$0
+sub $1,$2
 mov $0,$1
+sub $0,141
+div $0,9
