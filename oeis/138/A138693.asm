@@ -1,12 +1,7 @@
 ; A138693: Numbers of the form 110 + p^2. (where p is a prime).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 114,119,135,159,231,279,399,471,639,951,1071,1479,1791,1959,2319,2919,3591,3831,4599,5151,5439,6351,6999,8031,9519,10311,10719,11559,11991,12879,16239,17271,18879,19431,22311,22911,24759,26679,27999,30039
 
-mov $2,1
-max $2,$0
-add $0,$2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-sub $1,$0
-pow $1,2
-mov $0,$1
+seq $0,40 ; The prime numbers.
+pow $0,2
 add $0,110
