@@ -1,18 +1,17 @@
 ; A179599: Eight white kings and one red king on a 3 X 3 chessboard. G.f.: (1 + 4*x)/(1 - 3*x - 8*x^2).
-; Submitted by Jamie Morken(s4)
+; Submitted by Jamie Morken(s3)
 ; 1,7,29,143,661,3127,14669,69023,324421,1525447,7171709,33718703,158529781,745338967,3504255149,16475477183,77460472741,364185235687,1712239488989,8050200352463,37848516969301,177947153727607
 
+mov $3,1
 lpb $0
   sub $0,1
-  mul $1,4
-  add $1,5
-  add $2,1
-  sub $2,$3
-  mov $3,$2
-  mov $2,$1
-  mov $1,$3
+  mov $2,$3
+  mul $2,9
+  add $3,$1
+  add $3,2
+  add $2,$3
   add $1,$2
-  sub $2,6
 lpe
 mov $0,$1
+div $0,2
 add $0,1

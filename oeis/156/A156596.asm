@@ -1,8 +1,10 @@
 ; A156596: Infinite Fibonacci word fractal sequence.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s2)
 ; 1,0,1,2,0,2,0,2,1,0,1,2,0,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,0,2,1,0,1,2,0,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,0,2,1,0,1,2,0,2,0,2,1,0,1,2,0,2,0,2,1,0,1,0,1,2,0,2
 
-seq $0,143668 ; Result of the morphing 01->01021212, 02->0102121201, 12->01021201, iterated from '01'. Sequence of the Fibonacci word fractal.
-sub $0,2
-pow $0,$0
-add $0,1
+mov $1,$0
+seq $1,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+mod $0,$1
+add $1,$0
+mov $0,$1
+sub $0,1
