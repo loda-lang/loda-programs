@@ -1,10 +1,6 @@
 ; A100821: a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
 
-seq $0,137780 ; a(n) = 1 + 2^( prime(n + 1) - prime(n) ).
-div $0,2
-mov $1,2
-div $1,$0
-mov $0,$1
-mod $0,2
+seq $0,100810 ; a(n) = 0 if prime(n) + 2 = prime(n+1), otherwise 1.
+seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
