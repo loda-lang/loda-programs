@@ -1,18 +1,18 @@
 ; A203573: Bisection of A099924 (convolution of Lucas numbers); even arguments.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s1)
 ; 4,13,45,152,491,1531,4652,13865,40713,118144,339559,968183,2742100,7721797,21637221,60367976,167787107,464776435,1283571068,3535240289,9713031489,26627195728,72847698655,198929987567,542305383076,1476061431421
 
-mul $0,2
 mov $2,$0
-add $2,2
+add $2,$0
 mov $1,$2
+add $1,2
+add $2,3
 add $1,$2
-mov $4,$2
 lpb $0
   sub $0,1
-  mov $3,$1
-  mov $1,$4
-  add $1,1
-  add $4,$3
+  add $1,$2
+  add $2,$1
+  sub $2,1
 lpe
 mov $0,$1
+sub $0,1

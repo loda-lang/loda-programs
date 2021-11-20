@@ -1,6 +1,17 @@
 ; A010227: Continued fraction for sqrt(185).
+; Submitted by Jamie Morken(s3)
 ; 13,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1,26,1,1,1,1
 
-seq $0,10152 ; Continued fraction for sqrt(74).
-seq $0,26273 ; a(n) = least k such that s(k) = n, where s = A026272.
-sub $0,1
+mov $4,$0
+add $0,5
+gcd $0,$4
+mov $2,$0
+lpb $2
+  div $0,4
+  lpb $4
+    mov $0,2
+    mov $4,$3
+  lpe
+  mul $0,13
+  mov $2,1
+lpe
