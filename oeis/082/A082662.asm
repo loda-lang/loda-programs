@@ -1,12 +1,14 @@
 ; A082662: Numbers k such that the odd part of k is less than sqrt(2k).
+; Submitted by Christian Krause
 ; 1,2,4,6,8,12,16,20,24,28,32,40,48,56,64,72,80,88,96,104,112,120,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,544,576,608,640,672,704,736,768,800,832,864,896,928,960,992,1024,1056,1088,1120,1152,1184,1216,1248,1280,1312,1344,1376,1408,1440,1472,1504,1536,1568,1600,1632,1664,1696,1728,1760,1792,1824,1856,1888,1920,1952,1984,2016,2048,2112,2176,2240,2304,2368
 
-lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,306390 ; Size of one subtree in the unlabeled binary rooted tree shape of size n whose leaf-labeled trees have the largest number of coalescence sequences.
-  add $1,$2
+mov $1,$0
+add $0,1
+mov $2,1
+lpb $1
+  sub $0,$2
+  sub $1,2
+  div $1,2
+  mul $2,2
 lpe
-add $1,1
-mov $0,$1
+mul $0,$2
