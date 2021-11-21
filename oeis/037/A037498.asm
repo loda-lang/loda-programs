@@ -1,10 +1,15 @@
 ; A037498: Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
+; Submitted by Christian Krause
 ; 1,5,27,136,680,3402,17011,85055,425277,2126386,10631930,53159652,265798261,1328991305,6644956527,33224782636,166123913180,830619565902,4153097829511,20765489147555,103827445737777,519137228688886
 
-seq $0,33132 ; Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
-mul $0,18
-div $0,5
-mul $0,3
-sub $0,9
-div $0,12
-add $0,1
+mov $2,2
+lpb $0
+  sub $0,1
+  add $1,$2
+  mul $1,5
+  add $2,16
+  mod $2,6
+lpe
+add $1,$2
+mov $0,$1
+div $0,2
