@@ -6,7 +6,5 @@ seq $0,5097 ; (Odd primes - 1)/2.
 mov $1,1
 add $1,$0
 mov $0,$1
-sub $0,2
 mul $0,20
 div $0,40
-add $0,1

@@ -4,6 +4,5 @@
 
 seq $0,48645 ; Integers with one or two 1-bits in their binary expansion.
 seq $0,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
-sub $0,3
 mul $0,2
-add $0,7
+add $0,1
