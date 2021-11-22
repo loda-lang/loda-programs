@@ -1,14 +1,14 @@
 ; A037496: Base-3 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,2.
+; Submitted by Christian Krause
 ; 1,3,11,34,102,308,925,2775,8327,24982,74946,224840,674521,2023563,6070691,18212074,54636222,163908668,491726005,1475178015,4425534047,13276602142,39829806426,119489419280,358468257841,1075404773523
 
-add $0,1
-mov $2,3
+mov $2,1
 lpb $0
   sub $0,1
-  mul $2,3
-  mov $1,$2
-  add $1,5
-  mov $2,$1
-  div $1,13
+  add $1,$2
+  mul $1,3
+  add $2,20
+  mod $2,3
 lpe
+add $1,$2
 mov $0,$1
