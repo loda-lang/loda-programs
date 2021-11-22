@@ -1,10 +1,11 @@
 ; A319988: a(n) = 1 if n is divisible by the square of its largest prime factor, 0 otherwise.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
 
 mov $6,1
 lpb $6
   add $0,1
+  sub $0,$3
   mov $2,1
   sub $6,1
   lpb $0
@@ -20,7 +21,7 @@ lpb $6
       max $4,$5
       sub $3,$4
     lpe
-    add $3,1
+    add $3,3
     mov $5,1
     lpb $0
       dif $0,$2
