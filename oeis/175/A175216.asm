@@ -4,6 +4,5 @@
 
 trn $0,1
 add $0,1
-mod $0,59
 seq $0,40 ; The prime numbers.
 add $0,1
