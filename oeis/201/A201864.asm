@@ -9,10 +9,9 @@ lpb $0
   add $2,$1
 lpe
 lpb $0
-  sub $0,1
+  div $0,8
   add $2,$1
 lpe
-add $2,17
-div $2,2
 mov $0,$2
-sub $0,9
+sub $0,1
+div $0,2

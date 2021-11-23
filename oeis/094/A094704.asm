@@ -1,15 +1,15 @@
 ; A094704: Convolution of Fibonacci(n) and 10^n.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 0,1,11,112,1123,11235,112358,1123593,11235951,112359544,1123595495,11235955039,112359550534,1123595505573,11235955056107,112359550561680,1123595505617787,11235955056179467,112359550561797254
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mov $2,$1
-  add $4,$1
-  add $1,$3
-  mov $3,$2
-  mul $4,10
+mov $2,$0
+mov $3,$0
+lpb $3
+  mov $0,$2
+  sub $3,1
+  sub $0,$3
+  seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  mul $1,10
+  add $1,$0
 lpe
-mov $0,$4
-div $0,10
+mov $0,$1
