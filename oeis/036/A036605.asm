@@ -8,6 +8,5 @@ seq $0,187107 ; Number of nontrivial compositions of differential operations and
 sub $0,5
 mul $0,2
 div $0,4
-sub $0,1
 mul $0,3
-add $0,1
+sub $0,2
