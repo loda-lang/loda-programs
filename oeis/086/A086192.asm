@@ -1,17 +1,17 @@
 ; A086192: Tribonacci numbers that start with first three squares.
-; Submitted by Jamie Morken(s4)
+; Submitted by Jamie Morken(s1)
 ; 1,4,9,14,27,50,91,168,309,568,1045,1922,3535,6502,11959,21996,40457,74412,136865,251734,463011,851610,1566355,2880976,5298941,9746272,17926189,32971402,60643863,111541454,205156719,377342036,694040209
 
-mov $1,10
-mov $2,6
-mov $3,1
+mov $1,1
+mov $2,2
+mov $3,2
+mov $4,4
 lpb $0
   sub $0,1
-  sub $2,2
+  add $2,$3
+  mov $3,$4
   add $4,$1
-  mov $1,$3
-  add $4,$3
-  mov $3,$2
+  mov $1,$2
   mov $2,$4
 lpe
-mov $0,$3
+mov $0,$1
