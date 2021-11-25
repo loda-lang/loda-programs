@@ -8,6 +8,4 @@ mod $2,4
 mul $2,3
 sub $0,$2
 pow $0,2
-sub $0,16
 div $0,16
-add $0,1

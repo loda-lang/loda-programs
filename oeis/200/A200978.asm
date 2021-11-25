@@ -1,10 +1,9 @@
 ; A200978: Number of ways to arrange n books on 3 consecutive shelves leaving none of the shelves empty.
-; Submitted by Jamie Morken(s2)
+; Submitted by Jamie Morken(s4)
 ; 6,72,720,7200,75600,846720,10160640,130636800,1796256000,26345088000,410983372800,6799906713600,118998367488000,2196892938240000,42682491371520000,870722823979008000,18611700362551296000,416026243398205440000
 
-mov $1,$0
-add $0,1
-add $1,1
-seq $1,1286 ; Lah numbers: (n-1)*n!/2.
-mul $1,$0
-mov $0,$1
+mov $2,$0
+add $0,2
+seq $0,180119 ; a(n) = (n+2)! * Sum_{k = 1..n} 1/((k+1)*(k+2)).
+add $2,1
+mul $0,$2
