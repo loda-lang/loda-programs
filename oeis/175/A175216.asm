@@ -4,6 +4,5 @@
 
 trn $0,1
 seq $0,5097 ; (Odd primes - 1)/2.
-sub $0,1
+add $0,1
 mul $0,2
-add $0,4

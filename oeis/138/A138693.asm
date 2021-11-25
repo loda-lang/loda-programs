@@ -1,7 +1,8 @@
 ; A138693: Numbers of the form 110 + p^2. (where p is a prime).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s1)
 ; 114,119,135,159,231,279,399,471,639,951,1071,1479,1791,1959,2319,2919,3591,3831,4599,5151,5439,6351,6999,8031,9519,10311,10719,11559,11991,12879,16239,17271,18879,19431,22311,22911,24759,26679,27999,30039
 
-seq $0,40 ; The prime numbers.
+seq $0,6005 ; The odd prime numbers together with 1.
 pow $0,2
+max $0,4
 add $0,110
