@@ -1,14 +1,9 @@
 ; A037653: Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 3,0,2.
+; Submitted by Jamie Morken(s1)
 ; 3,12,50,203,812,3250,13003,52012,208050,832203,3328812,13315250,53261003,213044012,852176050,3408704203,13634816812,54539267250,218157069003,872628276012,3490513104050,13962052416203,55848209664812
 
-mul $0,2
-add $0,2
-mov $1,46
-lpb $0
-  sub $0,1
-  sub $1,1
-  mul $1,2
-  add $1,6
-lpe
+mov $1,4
+pow $1,$0
+mul $1,200
 div $1,63
 mov $0,$1
