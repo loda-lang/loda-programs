@@ -19,11 +19,11 @@ lpb $0
   lpe
   div $0,$2
   mov $4,$2
-  mov $5,$2
+  add $5,$2
   lpb $5
-    add $4,3
-    sub $5,1
+    mul $4,4
+    add $4,4
+    mov $5,1
   lpe
-  add $4,4
 lpe
 mov $0,$1

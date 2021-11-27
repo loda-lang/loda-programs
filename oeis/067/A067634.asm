@@ -1,15 +1,16 @@
 ; A067634: a(1) = 1; string of digits of a(n)^2 is a substring of the string of digits of a(n+1)^2.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s1)
 ; 1,4,13,130,1300,13000,130000,1300000,13000000,130000000,1300000000,13000000000,130000000000,1300000000000,13000000000000,130000000000000,1300000000000000,13000000000000000,130000000000000000
 
-mov $3,3
+mov $1,-6
+mov $3,1
 lpb $0
   sub $0,1
-  add $1,1
-  mul $1,9
   mov $2,$3
+  mul $3,10
   add $3,$1
-  mov $1,$3
+  mov $1,3
 lpe
 mov $0,$2
+mul $0,3
 add $0,1
