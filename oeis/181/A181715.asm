@@ -1,4 +1,4 @@
-; A181715: Length of the complete Cunningham chain of the second kind starting with prime(n), or -1 if the chain has infinite length.
+; A181715: Length of the complete Cunningham chain of the second kind starting with prime(n).
 ; Submitted by Jon Maiga
 ; 3,2,1,2,1,1,1,3,1,1,2,2,1,1,1,1,1,1,1,1,1,3,1,1,2,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,2,2,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,1,3,2,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1
 
