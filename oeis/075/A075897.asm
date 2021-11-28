@@ -1,18 +1,9 @@
 ; A075897: 1 if binary weight of n is 1 or 2, otherwise 0.
-; Submitted by Jamie Morken(s3.)
+; Submitted by Christian Krause
 ; 0,1,1,1,1,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 
-lpb $0
-  mul $0,2
-  dif $0,4
-lpe
-sub $0,1
-mov $2,2
-lpb $2
-  lpb $0
-    dif $0,2
-  lpe
-  add $1,1
-  mov $2,$0
-lpe
+sub $1,$0
+bin $1,$0
+bin $1,2
 mov $0,$1
+mod $0,2
