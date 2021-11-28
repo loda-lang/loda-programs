@@ -1,9 +1,23 @@
 ; A063717: a(n) is the greatest divisor of n^2 that is less than n.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,1,2,1,4,1,4,3,5,1,9,1,7,9,8,1,12,1,16,9,11,1,18,5,13,9,16,1,25,1,16,11,17,25,27,1,19,13,32,1,36,1,22,27,23,1,36,7,25,17,26,1,36,25,49,19,29,1,50,1,31,49,32,25,44,1,34,23,50,1,64,1,37,45,38,49,52,1,64,27,41,1,72,25,43,29,64,1,81,49,46,31,47,25,72,1,49,81,80,1
 
-mov $2,$0
-seq $0,63428 ; a(n) is the smallest positive integer of the form n*k/(n+k).
-add $2,2
-sub $2,$0
-mov $0,$2
+mov $4,$0
+sub $4,$0
+add $0,2
+mov $2,1
+mov $3,$0
+lpb $0
+  sub $0,$2
+  mov $1,$0
+  sub $4,$3
+  add $5,$4
+  gcd $5,$0
+  div $5,$0
+  lpb $5
+    mov $0,0
+    sub $5,1
+  lpe
+  trn $5,6
+lpe
+mov $0,$1

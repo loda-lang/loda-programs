@@ -6,5 +6,4 @@ mov $2,$0
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 mul $2,$0
 mul $2,10
-add $2,$0
-mov $0,$2
+add $0,$2

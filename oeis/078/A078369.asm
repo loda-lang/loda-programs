@@ -1,16 +1,15 @@
 ; A078369: A Chebyshev T-sequence with Diophantine property.
-; Submitted by Jamie Morken(s2.)
+; Submitted by Jamie Morken(s4)
 ; 2,19,359,6802,128879,2441899,46267202,876634939,16609796639,314709501202,5962870726199,112979834296579,2140653980908802,40559445802970659,768488816275533719,14560728063432170002
 
 mov $2,1
-mov $3,1
 lpb $0
-  sub $0,$3
-  add $4,1
-  mov $1,$4
+  sub $0,1
+  add $3,1
+  mov $1,$3
   mul $1,17
   add $2,$1
-  add $4,$2
+  add $3,$2
 lpe
 mov $0,$2
 add $0,1
