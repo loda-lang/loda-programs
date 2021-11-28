@@ -1,12 +1,14 @@
 ; A091035: Fifth column (k=6) of array A090438 ((4,2)-Stirling2).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,840,352800,139708800,59935075200,29088489830400,16183777978368000,10339833534750720000,7563588230670151680000,6303583414831453470720000,5951909813793488171827200000,6330667711034891964579840000000
 
 mul $0,2
-add $0,1
-mov $2,$0
-seq $0,62193 ; Fourth (unsigned) column sequence of triangle A062139 (generalized a=2 Laguerre).
-mov $1,$2
-mul $1,$0
-mov $0,$1
+mov $1,$0
+add $0,6
+bin $0,$1
+add $1,4
+lpb $1
+  mul $0,$1
+  sub $1,1
+lpe
 div $0,24
