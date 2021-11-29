@@ -1,17 +1,15 @@
 ; A287830: Number of sequences over the alphabet {0,1,...,9} such that no two consecutive terms have distance 7.
-; Submitted by Jamie Morken(s2)
+; Submitted by Jamie Morken(s4)
 ; 1,10,94,886,8350,78694,741646,6989590,65872894,620814406,5850821230,55140648694,519669123166,4897584703270,46156938822094,435002788211926,4099652849195710,38636886795609094,364130592557264686,3431722880197818550,32342028292009425694
 
 mov $1,1
+mov $3,1
 lpb $0
   sub $0,1
-  mul $1,4
-  add $2,$1
-  mov $1,10
-  add $1,$2
-  add $3,$2
-  add $1,$3
-  sub $1,8
-  mov $3,$2
+  mov $2,$3
+  mul $2,4
+  mul $3,9
+  add $3,$1
+  mov $1,$2
 lpe
-mov $0,$1
+mov $0,$3

@@ -1,44 +1,40 @@
 ; A211939: Number of distinct regular languages over unary alphabet, whose minimum regular expression has reverse Polish length n.
-; Submitted by Jamie Morken(s2)
+; Submitted by Christian Krause
 ; 3,1,2,2,3,4,6,7,11,15
 
-mov $7,2
-mov $9,$0
-lpb $7
-  mov $0,$9
+mov $6,$0
+mov $8,2
+lpb $8
+  mov $0,$6
+  mov $1,0
   mov $5,0
-  sub $7,1
-  add $0,$7
-  trn $0,1
-  mov $1,1
+  sub $8,1
+  add $0,$8
+  sub $0,1
+  bin $1,$0
+  add $0,2
   mov $2,1
   mov $3,$0
   mul $3,4
   lpb $3
-    mul $1,$3
-    mov $2,2
-    mul $2,$3
-    add $1,$2
-    mov $10,$5
-    cmp $10,0
-    add $5,$10
-    div $1,$5
+    sub $3,1
+    add $5,$2
+    add $1,$5
     add $2,$1
     mul $1,2
-    sub $3,2
-    add $5,1
+    sub $3,1
   lpe
-  add $2,1
-  mov $4,11
+  add $2,$5
+  mov $4,10
   pow $4,$0
   div $2,$4
   mov $0,$2
-  mov $6,$7
-  mul $6,$2
-  add $8,$6
+  mov $9,$8
+  mul $9,$2
+  add $7,$9
 lpe
-min $9,1
-mul $9,$0
-mov $0,$8
-sub $0,$9
+min $6,1
+mul $6,$0
+mov $0,$7
+sub $0,$6
 add $0,1

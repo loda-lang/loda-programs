@@ -1,16 +1,14 @@
 ; A340495: Records in first differences of A340494.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s2)
 ; 2,3,8,33,138,563,2268,9093,36398,145623,582528,2330153,9320658,37282683,149130788,596523213,2386092918,9544371743,38177487048,152709948273,610839793178,2443359172803
 
-mov $3,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $1,$3
-  mul $1,4
+  trn $1,1
+  add $1,$2
+  mul $2,4
   add $2,2
-  mov $3,$2
-  add $2,3
 lpe
 mov $0,$1
-div $0,4
 add $0,2
