@@ -11,6 +11,5 @@ lpb $1
   mul $0,$1
   sub $1,1
 lpe
-div $0,2
 mul $0,2
-div $0,8
+div $0,16
