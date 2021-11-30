@@ -1,11 +1,7 @@
 ; A080763: Exchange 1's and 2's in the eta-sequence A006337.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s1)
 ; 2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2
 
-mov $2,2
-add $2,$0
-mov $0,$2
-seq $0,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
 add $0,1
-mod $0,2
+seq $0,144611 ; Sturmian word of slope 2-sqrt(2).
 add $0,1
