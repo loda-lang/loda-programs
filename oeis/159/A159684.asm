@@ -1,7 +1,8 @@
 ; A159684: Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s1)
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0
 
-seq $0,286926 ; Positions of 0 in A286925; complement of A286927.
-sub $0,1
+add $0,1
+seq $0,144611 ; Sturmian word of slope 2-sqrt(2).
+add $0,1
 mod $0,2
