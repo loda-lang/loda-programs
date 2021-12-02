@@ -4,12 +4,11 @@
 
 mov $1,10
 pow $1,$0
-add $1,1
-mov $0,$1
+mul $1,3
+add $1,3
 bin $1,2
-mul $1,6
-add $1,7
-add $1,$0
-add $1,$0
+sub $1,15
 mov $0,$1
-sub $0,6
+mul $0,2
+div $0,3
+add $0,11

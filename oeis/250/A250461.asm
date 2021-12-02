@@ -17,7 +17,4 @@ add $0,$3
 add $1,$0
 add $1,$2
 mov $0,$1
-div $0,2
-sub $0,4
-mul $0,2
-add $0,11
+add $0,3

@@ -4,6 +4,5 @@
 
 add $0,5
 seq $0,40 ; The prime numbers.
-mul $0,6
-sub $0,78
-div $0,12
+sub $0,13
+div $0,2

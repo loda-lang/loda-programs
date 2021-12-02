@@ -1,15 +1,9 @@
 ; A133080: Interpolation operator: Triangle with an even number of zeros in each line followed by 1 or 2 ones.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
 
-mov $2,$0
-lpb $0
-  mov $0,$2
-  add $1,1
-  add $3,3
-  trn $0,$3
-  sub $2,$1
-lpe
-bin $1,$2
-mov $0,$1
+seq $0,134082 ; Triangle read by rows, (n-1) zeros followed by (2n, 1).
+dif $0,-2
+mod $0,2
+add $0,2
 mod $0,2
