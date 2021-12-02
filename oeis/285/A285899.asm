@@ -16,9 +16,6 @@ lpb $4
     add $7,1
     min $0,$7
     mov $3,$2
-    mov $8,$0
-    cmp $8,0
-    add $0,$8
     dif $3,$0
     cmp $3,$2
     sub $2,$7
