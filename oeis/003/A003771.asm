@@ -1,18 +1,17 @@
 ; A003771: Number of Hamiltonian cycles in K_4 X P_n.
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jamie Morken(s2)
 ; 3,30,198,1326,8886,59550,399078,2674446,17922966,120111870,804937158,5394336366,36150480246,242264688990,1623551862438,10880333659086,72915231888726,488645955902910,3274691227542918
 
-mov $2,2
+mov $1,1
+mov $2,1
 mov $3,1
 lpb $0
   sub $0,1
-  add $3,$2
+  add $3,$1
+  mul $3,2
   add $2,$3
-  mul $2,2
   mov $1,$2
-  sub $1,1
-  add $3,$2
+  mul $1,2
 lpe
 mov $0,$1
 mul $0,3
-add $0,3

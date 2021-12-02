@@ -5,7 +5,6 @@ add $0,1
 mov $2,$0
 mov $4,$0
 lpb $0
-  max $0,1
   mov $3,$2
   gcd $3,$0
   mul $3,$4

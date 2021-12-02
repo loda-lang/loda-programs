@@ -20,9 +20,6 @@ lpb $0
   lpe
   mov $5,1
   lpb $0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     dif $0,$2
     sub $2,2
     mul $5,$2
