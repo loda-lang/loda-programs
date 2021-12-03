@@ -4,7 +4,6 @@
 mov $2,$0
 add $0,1
 lpb $0
-  max $0,3
   mov $3,$2
   dif $3,$0
   cmp $3,$2

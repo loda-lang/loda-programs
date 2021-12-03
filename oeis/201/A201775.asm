@@ -8,15 +8,12 @@ lpb $1
   mov $2,$0
   mov $4,$1
   lpb $2
-    cmp $3,0
-    add $4,$3
     dif $2,$4
     pow $2,9
     div $2,2
-    cmp $3,0
-    mov $5,$0
-    seq $5,306811 ; Decimal expansion of Pi/(Pi - 1) = 1 + 1/Pi + 1/Pi^2 + ... .
+    mov $3,$0
+    seq $3,306811 ; Decimal expansion of Pi/(Pi - 1) = 1 + 1/Pi + 1/Pi^2 + ... .
   lpe
   sub $1,1
 lpe
-mov $0,$5
+mov $0,$3
