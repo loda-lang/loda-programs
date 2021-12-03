@@ -5,9 +5,8 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  seq $2,226268 ; Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
+  seq $2,308436 ; Expansion of 1/((1-2*x)*(1-4*x)*(1-8*x)*(1-16*x)*(1-32*x)).
   add $1,$2
 lpe
+add $1,1
 mov $0,$1
-div $0,840
-add $0,1
