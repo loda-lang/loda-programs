@@ -1,18 +1,10 @@
 ; A077845: Expansion of (1-x)^(-1)/(1-2*x-2*x^2-x^3).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,3,9,26,74,210,595,1685,4771,13508,38244,108276,306549,867895,2457165,6956670,19695566,55761638,157871079,446961001,1265425799,3582644680,10143101960,28716919080,81302686761,230182313643,651686919889,1845041153826,5223638461074
 
-lpb $0
-  sub $0,1
-  add $1,$3
-  add $2,2
-  add $2,$3
-  mov $3,$4
-  mov $4,$2
-  add $2,2
-  add $2,$1
-  mov $1,1
-  add $3,$4
-lpe
-mov $0,$4
+add $0,1
+seq $0,193642 ; Number of arrays of -2..2 integers x(1..n) with every x(i) in a subsequence of length 1 or 2 with sum zero
+div $0,2
+sub $0,2
+div $0,2
 add $0,1

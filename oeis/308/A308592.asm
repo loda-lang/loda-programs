@@ -1,22 +1,18 @@
 ; A308592: Number of total dominating sets in the (2n-1)-triangular snake (for n > 1).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s4)
 ; 1,4,16,46,148,466,1468,4630,14596,46018,145084,457414,1442116,4546642,14334460,45193078,142482820,449213794,1416262204,4465131430,14077477060,44382872818,139928439676,441160451926,1390871968516,4385082172162,13825101153724
 
-mov $2,1
+mov $2,3
 lpb $0
   sub $0,1
-  add $1,$3
-  add $1,$3
-  sub $3,$1
-  add $1,2
-  add $1,$2
-  sub $3,3
-  add $1,$3
+  mov $1,$2
+  add $4,3
+  mov $2,$4
   mul $2,2
-  sub $2,$3
-  add $3,$2
+  sub $4,$2
+  add $4,$3
+  mul $3,3
+  add $3,$1
 lpe
 mov $0,$3
-div $0,2
-mul $0,3
 add $0,1

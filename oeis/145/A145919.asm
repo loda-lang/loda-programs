@@ -7,8 +7,5 @@ lpb $0
   mov $2,$0
 lpe
 sub $2,1
-mov $3,$2
-cmp $3,0
-add $2,$3
 dif $1,$2
 mov $0,$1

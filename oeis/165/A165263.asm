@@ -1,18 +1,15 @@
 ; A165263: A sequence similar to the Fibonacci rabbit sequence for the Padovan sequence
+; Submitted by Jamie Morken(s1)
 ; 0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,1,0
 
-mov $2,$0
-lpb $0
-  add $1,$0
-  div $0,2
-  trn $0,1
-lpe
-mov $3,$1
-lpb $2
-  sub $2,5
-  sub $4,12
-  add $2,$4
-  add $3,1
-lpe
-mov $0,$3
+mov $1,$0
+add $0,5
+div $0,11
+add $1,1
+mul $1,43
+div $1,2
+sub $1,6
+div $1,2
+add $1,1
+add $0,$1
 mod $0,2

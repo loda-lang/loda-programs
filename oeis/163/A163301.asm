@@ -9,11 +9,9 @@ lpb $1
   mov $4,$1
   lpb $2
     sub $0,2
-    mov $3,$4
-    cmp $3,0
-    add $4,$3
     dif $2,$4
     mov $5,$0
+    mov $0,1
     max $5,0
     seq $5,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
   lpe

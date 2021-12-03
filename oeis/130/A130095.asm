@@ -1,21 +1,18 @@
 ; A130095: Inverse Möbius transform of odd-indexed Fibonacci numbers.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s3)
 ; 1,3,6,16,35,97,234,626,1603,4218,10947,28767,75026,196654,514269,1346895,3524579,9229159,24157818,63250217,165580380,433505386,1134903171,2971244450,7778742084,20365086102,53316292776,139584059112,365435296163,956722544582
 
 add $0,1
 mov $2,$0
 lpb $0
   mov $3,$2
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
   dif $3,$0
   sub $0,1
   cmp $3,$2
-  sub $3,$1
-  add $5,1
-  sub $5,$3
-  add $1,$5
+  cmp $3,0
+  add $5,$4
+  add $5,$3
+  add $4,$5
 lpe
 mov $0,$5
 add $0,1
