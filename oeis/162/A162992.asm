@@ -1,20 +1,14 @@
 ; A162992: The second right hand column of triangle A162990
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 36,144,1600,32400,1016064,45158400,2687385600,205752960000,19670999040000,2294425328025600,320461058211840000,52778155948277760000,10118415696592896000000,2233485391313240064000000
 
-add $0,1
-mov $2,$0
+mov $1,3
+add $1,$0
+bin $1,2
 lpb $0
+  mul $1,$0
   sub $0,1
-  add $2,1
-  mov $3,1
-  add $3,$2
-  bin $3,2
-  lpb $0
-    mul $3,$0
-    sub $0,1
-  lpe
 lpe
-pow $3,2
-mov $0,$3
+pow $1,2
+mov $0,$1
 mul $0,4

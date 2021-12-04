@@ -1,8 +1,9 @@
 ; A052745: A simple grammar.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s1)
 ; 0,0,0,6,24,110,600,3836,28224,235224,2191680,22584672,255087360,3134139840,41620400640,594082771200,9070900715520,147531542054400,2546434166169600,46489412442009600,895079522340864000,18125736166340812800,385129713617510400000
 
-mov $1,$0
-trn $0,1
-seq $0,52517 ; Number of ordered pairs of cycles over all n-permutations having two cycles.
-mul $0,$1
+mov $2,$0
+trn $0,2
+seq $0,254 ; Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
+mul $0,$2
+mul $0,2

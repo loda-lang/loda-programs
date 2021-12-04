@@ -7,9 +7,6 @@ mov $2,$0
 lpb $0
   add $12,$3
   mov $3,$2
-  mov $26,$0
-  cmp $26,0
-  add $0,$26
   dif $3,$0
   cmp $3,$2
   cmp $3,0

@@ -12,9 +12,6 @@ lpb $6
   mov $1,2
   mov $3,$0
   min $3,2
-  mov $9,$3
-  cmp $9,0
-  add $3,$9
   dif $1,$3
   mov $2,1
   lpb $0
