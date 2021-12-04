@@ -1,0 +1,15 @@
+; A329304: Numerators of convergents to A309930, the constant whose continued fraction representation consists of the cubes, [0; 1, 8, 27, 64, ...].
+; Submitted by Christian Krause
+; 0,1,8,217,13896,1737217,375252768,128713436641,65901654812960,48042435072084481,48042500973739293960,63944616838482072345241,110496345939397994751870408,242760535973474232951931631617,666135021207559234618095149027456
+
+mov $2,1
+mov $3,$0
+lpb $3
+  mov $0,$2
+  mul $2,$3
+  mul $2,$3
+  mul $2,$3
+  add $2,$1
+  mov $1,$0
+  sub $3,1
+lpe
