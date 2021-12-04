@@ -23,9 +23,6 @@ lpb $0
   lpe
   add $7,$2
   lpb $0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     dif $0,$2
   lpe
 lpe

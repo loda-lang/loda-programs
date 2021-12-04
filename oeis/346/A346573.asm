@@ -6,18 +6,15 @@ add $0,1
 mov $1,$0
 lpb $1
   mov $2,$0
-  mov $6,$1
+  mov $3,$1
   lpb $2
-    mov $3,$6
-    cmp $3,0
-    add $6,$3
-    dif $2,$6
+    dif $2,$3
+    sub $3,$1
     max $4,0
     sub $4,1
     mov $5,$0
     seq $5,19670 ; Decimal expansion of Pi/3.
     mul $4,$5
-    sub $6,$1
   lpe
   sub $1,2
 lpe

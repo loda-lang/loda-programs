@@ -4,19 +4,16 @@
 
 add $0,1
 mov $1,$0
-mov $5,$0
+mov $3,$0
 lpb $1
   mov $2,$0
   mov $4,$1
   pow $4,2
   lpb $2
-    mov $3,$4
-    cmp $3,0
-    add $4,$3
     dif $2,$4
-    add $5,$2
-    add $4,$5
+    add $3,$2
+    add $4,$3
   lpe
   sub $1,1
 lpe
-mov $0,$5
+mov $0,$3
