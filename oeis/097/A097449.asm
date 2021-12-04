@@ -6,9 +6,6 @@ lpb $0
   seq $2,70589 ; n^4 mod 46.
   pow $2,2
   add $4,$2
-  add $5,$4
-  mov $3,$5
-  cmp $3,0
-  add $5,$3
-  dif $0,$5
+  add $3,$4
+  dif $0,$3
 lpe
