@@ -7,14 +7,11 @@ mov $1,$0
 lpb $1
   mov $2,$0
   pow $2,3
-  mov $4,$1
-  pow $4,4
+  mov $3,$1
+  pow $3,4
   lpb $2
     mov $1,1
-    mov $3,$4
-    cmp $3,0
-    add $4,$3
-    dif $2,$4
+    dif $2,$3
   lpe
   sub $1,1
 lpe

@@ -1,8 +1,11 @@
 ; A024713: a(n) = residue mod 5 of n-th term of A024702.
-; Submitted by Christian Krause
+; Submitted by Stefano Spezia
 ; 1,2,0,2,2,0,2,0,0,2,0,2,2,2,0,0,2,0,2,0,2,0,2,0,2,2,0,2,2,0,2,0,0,0,2,2,2,2,0,0,0,2,2,0,0,2,2,0,2,0,0,0,2,2,0,0,2,0,2,2,2,0,2,2,0,2,2,0,2,0,2,2,0,2,0,2,0,0,0,0,0,2,0,2,0,2,0,2,2,0,2,0,0,2,0,0,2,0,2,2
 
-seq $0,173135 ; Primes other than 3 and 5.
-pow $0,2
-div $0,4
-mod $0,10
+add $0,1
+seq $0,98090 ; Numbers k such that 2k-3 is prime.
+sub $0,1
+bin $0,2
+mul $0,4
+div $0,12
+mod $0,5

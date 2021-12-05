@@ -4,14 +4,11 @@
 add $0,1
 mov $1,$0
 mov $2,$0
-mov $5,$0
+mov $4,$0
 lpb $1
   mov $3,$2
-  mov $4,$1
-  cmp $4,0
-  add $1,$4
   dif $3,$1
-  add $1,$5
+  add $1,$4
   cmp $3,$2
   cmp $3,0
   mul $3,$1

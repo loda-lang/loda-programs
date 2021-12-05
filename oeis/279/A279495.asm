@@ -9,9 +9,6 @@ lpb $1
   mov $4,$1
   lpb $2
     bin $4,3
-    mov $5,$4
-    cmp $5,0
-    add $4,$5
     dif $2,$4
     add $3,2
     mov $4,1

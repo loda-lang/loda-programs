@@ -7,9 +7,6 @@ mov $2,$1
 lpb $1
   lpb $0
     mov $0,$2
-    mov $3,$1
-    cmp $3,0
-    add $1,$3
     dif $0,$1
     sub $0,$1
     mul $0,$1
