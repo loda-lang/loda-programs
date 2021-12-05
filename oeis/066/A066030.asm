@@ -13,9 +13,6 @@ lpb $1
   div $2,$5
   mov $6,$1
   lpb $2
-    mov $3,$6
-    cmp $3,0
-    add $6,$3
     dif $2,$6
     add $4,34
     mov $6,1

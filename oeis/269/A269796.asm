@@ -6,13 +6,9 @@ add $0,1
 mov $1,$0
 lpb $1
   mov $2,$0
-  mov $6,$1
+  mov $3,$1
   lpb $2
-    mov $3,$6
-    cmp $3,0
-    add $6,$3
-    dif $2,$6
-    sub $2,$6
+    sub $2,$3
     mov $4,$0
     seq $4,212344 ; Sequence of coefficients of x^(n-3) in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
     mov $5,$0

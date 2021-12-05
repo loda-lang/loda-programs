@@ -8,7 +8,6 @@ mov $2,$0
 add $0,$4
 lpb $0
   sub $0,3
-  max $0,1
   sub $2,1
   mov $3,$2
   dif $3,$0

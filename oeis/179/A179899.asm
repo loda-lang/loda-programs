@@ -9,9 +9,6 @@ lpb $1
   mov $4,$1
   lpb $2
     sub $0,2
-    mov $3,$4
-    cmp $3,0
-    add $4,$3
     dif $2,$4
     mov $5,$0
     max $5,0
