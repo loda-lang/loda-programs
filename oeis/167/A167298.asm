@@ -22,9 +22,6 @@ lpb $0
   lpe
   mul $1,6
   lpb $0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     dif $0,$2
     sub $2,2
   lpe

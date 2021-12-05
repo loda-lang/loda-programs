@@ -4,15 +4,12 @@
 add $0,1
 mov $1,$0
 lpb $1
-  mov $2,$1
+  mov $2,$0
+  dif $2,$1
+  cmp $2,$0
   cmp $2,0
-  add $1,$2
-  mov $3,$0
-  dif $3,$1
-  cmp $3,$0
-  cmp $3,0
-  mul $3,$1
-  add $0,$3
+  mul $2,$1
+  add $0,$2
   sub $1,1
 lpe
 add $0,1

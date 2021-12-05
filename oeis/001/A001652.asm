@@ -6,6 +6,5 @@ mul $0,2
 dif $0,2
 seq $0,9759 ; Expansion of (3 - 21*x + 4*x^2)/((x-1)*(x^2 - 6*x + 1)).
 mul $0,2
-add $0,8
+add $0,6
 div $0,2
-sub $0,1

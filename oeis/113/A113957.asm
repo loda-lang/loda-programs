@@ -11,11 +11,8 @@ lpb $0
   cmp $3,0
   mul $3,$0
   sub $0,1
-  dif $2,7
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
   add $1,$3
+  dif $2,7
 lpe
 add $1,1
 mov $0,$1

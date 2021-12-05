@@ -6,15 +6,12 @@ add $0,1
 mov $1,$0
 lpb $1
   mov $2,$0
-  mov $4,$1
-  pow $4,3
+  mov $3,$1
+  pow $3,3
   lpb $2
     mov $1,1
-    mov $3,$4
-    cmp $3,0
-    add $4,$3
-    dif $2,$4
+    dif $2,$3
   lpe
   sub $1,1
 lpe
-mov $0,$4
+mov $0,$3
