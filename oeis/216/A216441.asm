@@ -8,7 +8,6 @@ sub $0,1
 lpb $1
   mov $4,$1
   lpb $2
-    cmp $3,0
     add $4,$3
     dif $2,$4
     cmp $3,0

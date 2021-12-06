@@ -6,20 +6,17 @@ add $0,1
 mov $2,$0
 lpb $0
   mov $3,$2
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
   dif $3,$0
   cmp $3,$2
   cmp $3,0
   add $1,$3
-  mov $5,2
-  gcd $5,$0
+  mov $4,2
+  gcd $4,$0
   sub $0,1
-  lpb $5
+  lpb $4
     add $1,$3
-    add $5,2
-    mod $5,3
+    add $4,2
+    mod $4,3
   lpe
 lpe
 mov $0,$1

@@ -11,12 +11,9 @@ lpb $0
   sub $0,1
   cmp $3,$2
   cmp $3,0
-  add $5,$3
+  add $4,$3
 lpe
-lpb $2
-  bin $2,$4
-  mul $5,2
-lpe
-mov $0,$5
+mul $4,2
+mov $0,$4
 sub $0,1
 div $0,2

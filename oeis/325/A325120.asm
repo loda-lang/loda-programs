@@ -27,7 +27,6 @@ lpb $0
       div $2,7
       add $6,$4
     lpe
-    sub $2,8
   lpe
   trn $2,5
 lpe

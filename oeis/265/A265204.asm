@@ -33,9 +33,6 @@ lpb $6
       dif $0,$2
       mul $5,$3
     lpe
-    mov $9,$3
-    cmp $9,0
-    add $3,$9
     dif $5,$3
     trn $2,$5
     mul $5,$2
