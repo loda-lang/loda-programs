@@ -1,20 +1,21 @@
 ; A317202: Decimal expansion of 3 + (t^2+t^4)/2, where t = 0.543689... (A192918) is the real root of x^3+x^2+x=1.
-; Submitted by Christian Krause
+; Submitted by Stefano Spezia
 ; 3,1,9,1,4,8,7,8,8,3,9,5,3,1,1,8,7,4,7,0,6,1,3,5,4,2,6,8,2,2,7,5,1,7,2,9,3,4,7,4,6,9,1,0,2,1,8,7,4,2,8,8,0,9,1,0,0,9,7,8,1,3,3,8,6,1,7,6,8,5,9,4,8,0,0,4,9,7,0,1,4,6,1,1,1
 
 mov $2,1
 mov $3,$0
-mul $3,4
-mov $5,2
+mul $3,3
 lpb $3
-  add $1,$2
+  div $1,2
   add $5,$2
   add $1,$5
+  mul $1,2
   add $2,$1
-  add $2,$1
+  add $2,24
   sub $3,1
+  add $5,$1
 lpe
-mov $1,1
+mov $1,3
 add $1,$5
 mov $4,10
 pow $4,$0
