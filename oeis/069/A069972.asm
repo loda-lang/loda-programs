@@ -8,9 +8,6 @@ mov $2,$0
 lpb $0
   bin $0,2
   mov $3,$2
-  mov $5,$0
-  cmp $5,0
-  add $0,$5
   dif $3,$0
   mov $0,$4
   cmp $3,$2

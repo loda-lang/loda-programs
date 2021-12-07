@@ -1,9 +1,7 @@
 ; A007652: Final digit of prime(n).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s4)
 ; 2,3,5,7,1,3,7,9,3,9,1,7,1,3,7,3,9,1,7,1,3,9,3,9,7,1,3,7,9,3,7,1,7,9,9,1,7,3,7,3,9,1,1,3,7,9,1,3,7,9,3,9,1,1,7,3,9,1,7,1,3,3,7,1,3,7,1,7,7,9,3,9,7,3,9,3,9,7,1,9,9,1,1,3,9,3,9,7,1,3,7,9,7,1,9,3,9,1,3,1
 
-mov $2,1
-max $2,$0
-add $0,$2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,6005 ; The odd prime numbers together with 1.
+max $0,2
 mod $0,10

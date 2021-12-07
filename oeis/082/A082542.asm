@@ -13,7 +13,7 @@ lpb $2
   max $4,1
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,2
 lpe
 mov $0,$1
 div $0,4
