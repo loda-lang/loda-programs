@@ -8,9 +8,6 @@ lpb $0
   mov $3,1
   lpb $2,2
     mov $3,$2
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
     dif $3,$0
     cmp $3,$2
     bin $4,$0
