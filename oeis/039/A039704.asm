@@ -1,9 +1,7 @@
 ; A039704: a(n) = n-th prime modulo 6.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s4)
 ; 2,3,5,1,5,1,5,1,5,5,1,1,5,1,5,5,5,1,1,5,1,1,5,5,1,5,1,5,1,5,1,5,5,1,5,1,1,1,5,5,5,1,5,1,5,1,1,1,5,1,5,5,1,5,5,5,5,1,1,5,1,5,1,5,1,5,1,1,5,1,5,5,1,1,1,5,5,1,5,1,5,1,5,1,1,5,5,1,5,1,5,5,1,5,1,5,5,5,1,1
 
-mov $2,1
-max $2,$0
-add $0,$2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,40976 ; a(n) = prime(n) - 2.
+add $0,2
 mod $0,6
