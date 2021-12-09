@@ -1,27 +1,6 @@
 ; A153043: Numbers n > 1 such that 2*n-3 is not a prime.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s1)
 ; 2,6,9,12,14,15,18,19,21,24,26,27,29,30,33,34,36,39,40,42,44,45,47,48,49,51,54,57,59,60,61,62,63,64,66,68,69,72,73,74,75,78,79,81,82,84,86,87,89,90,93,94,95,96,99,102,103,104,105,106,108,109,110,111,112,114,117,119,120,123,124,125,126,128,129,131,132,134,135,138,139,141,144,145,146,147,149,150,151,152,153,154,156,159,161,162,163,164,165,166
 
-add $0,1
-mov $1,$0
-lpb $1
-  mov $2,$0
-  mov $4,$1
-  lpb $2
-    sub $0,2
-    mov $3,$4
-    cmp $3,0
-    add $4,$3
-    dif $2,$4
-    mov $5,$0
-    max $5,0
-    seq $5,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
-  lpe
-  cmp $3,0
-  add $5,$3
-  div $1,$5
-lpe
-mov $0,$5
-sub $0,1
-div $0,2
-add $0,2
+seq $0,153044 ; Numbers n such that 2*n-9 is not a prime.
+sub $0,3

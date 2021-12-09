@@ -1,9 +1,7 @@
 ; A333167: a(n) = r_2(n^2 + 1), where r_2(k) is the number of ways of writing k as a sum of 2 squares (A004018).
+; Submitted by Simon Strandgaard
 ; 4,4,8,8,8,8,8,12,16,8,8,8,16,16,8,8,8,16,24,8,8,16,16,16,8,8,8,16,16,8,16,16,24,16,16,8,8,16,24,8,8,12,16,24,16,8,16,32,16,8,16,8,16,16,8,16,8,32,16,8,16,8,16,16,16,8,8,16,32,8,24,8,32,32,8,16,16,16,16,8,16,16,24,32,8,8,16,16,16,16,8,16,16,24,8,8,16,16,32,24
 
 pow $0,2
-add $0,1
-dif $0,2
-seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-add $0,1
+seq $0,1227 ; Number of odd divisors of n.
 mul $0,4

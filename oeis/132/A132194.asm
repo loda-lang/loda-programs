@@ -1,11 +1,9 @@
 ; A132194: a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 1,1,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,1,1,1,0,0
 
-mov $2,1
-max $2,$0
-add $0,$2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,175221 ; a(n) = prime(n) + 4.
+mul $0,2
 mod $0,3
 add $0,1
 mod $0,2

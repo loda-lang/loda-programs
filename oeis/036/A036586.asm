@@ -1,8 +1,9 @@
 ; A036586: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s4)
 ; 2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,0,2,0,1
 
-seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-add $0,5
-mul $0,2
-mod $0,3
+seq $0,36585 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+dif $0,-2
+add $0,3
+div $0,2
+sub $0,1
