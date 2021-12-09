@@ -1,10 +1,7 @@
 ; A039702: a(n) = n-th prime modulo 4.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s4)
 ; 2,3,1,3,3,1,1,3,3,1,3,1,1,3,3,1,3,1,3,3,1,3,3,1,1,1,3,3,1,1,3,3,1,3,1,3,1,3,3,1,3,1,3,1,1,3,3,3,3,1,1,3,1,3,1,3,1,3,1,1,3,1,3,3,1,1,3,1,3,1,1,3,3,1,3,3,1,1,1,1,3,1,3,1,3,3,1,1,1,3,3,3,3,3,3,3,1,1,3,1
 
-seq $0,40 ; The prime numbers.
-mov $2,$0
-lpb $2
-  mod $2,4
-lpe
-mov $0,$2
+seq $0,6005 ; The odd prime numbers together with 1.
+max $0,2
+mod $0,4

@@ -8,6 +8,4 @@ mod $1,2
 add $0,$1
 gcd $1,13
 mul $0,$1
-sub $0,2
 div $0,2
-add $0,1

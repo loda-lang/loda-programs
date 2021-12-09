@@ -4,13 +4,24 @@
 
 # add programs
 echo "adding programs"
-num_added=0
+files=
 while read -r s f; do
   if [[ $f == oeis/* ]] && [[ $s == "??" ]]; then
-    git add $f
-    ((num_added++))
+  files="$files $f"
   fi
 done < <(git status --porcelain)
+num_added=0
+for f in $files; do
+  clear
+  cat $f
+  read -p "Add program? (Y/n) " a
+  if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
+    git add $f
+    ((num_added++))
+  else
+    rm $f
+  fi
+done
 if (( num_added > 0 )); then
   git commit -m "added $num_added programs"
 fi

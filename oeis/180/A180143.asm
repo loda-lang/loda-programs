@@ -1,6 +1,17 @@
 ; A180143: Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 + x^2)/(1 - 4*x + x^2 + 2*x^3).
+; Submitted by Jamie Morken(s1)
 ; 1,4,16,58,208,742,2644,9418,33544,119470,425500,1515442,5397328,19222870,68463268,243835546,868433176,3092970622,11015778220,39233275906,139731384160,497660704294,1772444881204,6312656052202
 
-seq $0,7482 ; a(n) is the number of subsequences of [ 1, ..., 2n ] in which each odd number has an even neighbor.
-mul $0,3
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $2,$3
+  mul $2,2
+  mul $3,3
+  add $3,$1
+  mov $1,$2
+lpe
+mov $0,$3
 div $0,2
+mul $0,3
+add $0,1
