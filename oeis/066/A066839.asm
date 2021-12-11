@@ -8,9 +8,6 @@ lpb $0
   min $4,14
   lpb $4
     mov $3,$2
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
     dif $3,$0
     lpb $3,3
       cmp $3,$2
