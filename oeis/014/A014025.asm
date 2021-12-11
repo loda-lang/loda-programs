@@ -1,5 +1,9 @@
 ; A014025: Expansion of the inverse of the 16th cyclotomic polynomial.
+; Submitted by Jamie Morken(s4)
 ; 1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,1,0,0,0
 
-dif $0,2
-seq $0,14017 ; Inverse of 8th cyclotomic polynomial.
+mov $1,$0
+mov $0,4
+gcd $1,16
+sub $1,12
+div $0,$1

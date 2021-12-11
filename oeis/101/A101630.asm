@@ -1,8 +1,10 @@
 ; A101630: Denominator of partial sums of a certain series.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 1,42,6006,204204,3879876,446185740,38818159380,2406725881560,89048857617720,3651003162326520,156993135980040360,51650741737433278440,2737489312083963757320,2737489312083963757320
 
 add $0,1
+mul $0,4
+seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
 mul $0,2
-seq $0,119634 ; a(n) = lcm(1,...,2n+2)/2.
-div $0,30
+div $0,120
+add $0,1
