@@ -1,12 +1,12 @@
 ; A080757: First differences of Beatty sequence A022838(n) = floor(n sqrt(3)).
+; Submitted by Jamie Morken(s4)
 ; 1,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2
 
 lpb $0
-  mov $2,$0
-  seq $2,275855 ; Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
-  mul $0,$2
-  mov $1,126
+  trn $0,1
+  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+  sub $0,1
+  mov $1,1
 lpe
-div $1,126
-add $1,1
 mov $0,$1
+add $0,1
