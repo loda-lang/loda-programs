@@ -1,7 +1,7 @@
 ; A059163: A hierarchical sequence (W'3{2,2}*c - see A059126).
-; Submitted by Jamie Morken(s3.)
+; Submitted by Jamie Morken(s2)
 ; 4,8,4,8,16,8,4,8,4,16,32,16,4,8,4,8,16,8,4,8,4,32,64,32,4,8,4,8,16,8,4,8,4,16,32,16,4,8,4,8,16,8,4,8,4,64,128,64,4,8,4,8,16,8,4,8,4,16,32,16,4,8,4,8,16,8,4,8,4,32,64,32,4,8,4,8,16,8,4,8,4,16,32,16,4,8,4,8,16
 
-seq $0,1871 ; Expansion of 1/(1 - 3*x + x^2)^2.
+seq $0,99254 ; Self-convolution of A010892. The g.f. is 1/(Alexander polynomial of granny knot).
 gcd $0,32
 mul $0,4
