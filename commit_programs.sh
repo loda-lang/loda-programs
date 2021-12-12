@@ -75,4 +75,6 @@ if (( num_updated > 0 )); then
 fi
 
 git pull -X theirs
+git fetch upstream
+git merge -X theirs upstream/main
 git push
