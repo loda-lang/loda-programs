@@ -1,0 +1,16 @@
+; A089467: Hyperbinomial transform of A089466 and also the inverse hyperbinomial transform of A089468.
+; Submitted by Christian Krause
+; 1,2,8,52,478,5706,83824,1461944,29510268,676549450,17361810016,492999348348,15345359136232,519525230896322,19005788951346240,747102849650454256,31404054519248544016,1405608808807797838866
+
+lpb $0
+  sub $0,1
+  add $3,1
+  mov $1,$3
+  mul $1,$0
+  add $2,$1
+  add $4,1
+  mul $3,$4
+  add $3,$2
+lpe
+mov $0,$3
+add $0,1
