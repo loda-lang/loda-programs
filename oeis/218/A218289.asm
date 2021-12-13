@@ -14,6 +14,4 @@ div $1,$0
 bin $0,3
 gcd $1,$0
 div $0,$1
-sub $0,1
 mul $0,6
-add $0,6

@@ -11,8 +11,7 @@ div $1,7
 sub $1,1
 sub $0,$1
 div $0,3
-add $0,2
 add $2,3
 dif $2,2
 add $0,$2
-sub $0,3
+sub $0,1
