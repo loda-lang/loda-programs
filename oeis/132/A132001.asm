@@ -8,9 +8,6 @@ lpb $0
   add $4,1
   add $1,$4
   mov $3,$2
-  mov $5,$0
-  cmp $5,0
-  add $0,$5
   dif $3,$0
   cmp $3,$2
   cmp $3,0

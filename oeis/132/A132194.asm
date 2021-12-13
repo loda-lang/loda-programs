@@ -1,9 +1,9 @@
 ; A132194: a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s4)
 ; 1,1,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,1,1,1,0,0
 
-seq $0,175221 ; a(n) = prime(n) + 4.
-mul $0,2
-mod $0,3
+seq $0,6005 ; The odd prime numbers together with 1.
+sub $0,3
+div $0,3
 add $0,1
 mod $0,2
