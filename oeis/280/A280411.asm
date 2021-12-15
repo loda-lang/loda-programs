@@ -1,6 +1,12 @@
 ; A280411: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 1,1,100,111,10000,11111,1000000,1111111,100000000,111111111,10000000000,11111111111,1000000000000,1111111111111,100000000000000,111111111111111,10000000000000000,11111111111111111,1000000000000000000,1111111111111111111,100000000000000000000,111111111111111111111,10000000000000000000000,11111111111111111111111,1000000000000000000000000,1111111111111111111111111,100000000000000000000000000,111111111111111111111111111,10000000000000000000000000000,11111111111111111111111111111
 
-seq $0,51049 ; Number of moves needed to solve an (n+1)-ring baguenaudier if two simultaneous moves of the two end rings are counted as one.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,10
+pow $1,$0
+mod $0,2
+mov $2,3
+pow $2,$0
+div $1,$2
+div $1,$2
+mov $0,$1

@@ -1,27 +1,6 @@
 ; A267209: Binary representation of the middle column of the "Rule 109" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jamie Morken(m4)
+; Submitted by Jamie Morken(s2)
 ; 1,11,111,1110,11101,111011,1110110,11101101,111011011,1110110110,11101101101,111011011011,1110110110110,11101101101101,111011011011011,1110110110110110,11101101101101101,111011011011011011,1110110110110110110,11101101101101101101,111011011011011011011,1110110110110110110110,11101101101101101101101,111011011011011011011011,1110110110110110110110110,11101101101101101101101101,111011011011011011011011011,1110110110110110110110110110,11101101101101101101101101101,111011011011011011011011011011
 
-mov $2,1
-lpb $0
-  mov $3,$2
-  lpb $3
-    add $2,1
-    add $5,2
-    lpb $3
-      div $3,9
-      mov $4,$2
-      mul $5,10
-    lpe
-    add $2,1
-  lpe
-  sub $0,1
-  lpb $4
-    mod $2,2
-    dif $4,6
-    sub $5,2
-  lpe
-lpe
-mov $0,$5
-div $0,2
-add $0,1
+seq $0,267210 ; Decimal representation of the middle column of the "Rule 109" elementary cellular automaton starting with a single ON (black) cell.
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
