@@ -29,7 +29,7 @@ lpb $3
   max $8,2
   div $1,$8
   div $2,$8
-  sub $3,1
+  sub $3,2
 lpe
 mov $3,$9
 pow $3,$0

@@ -1,16 +1,15 @@
 ; A236579: The number of tilings of a 5 X (4n) floor with 1 X 4 tetrominoes.
-; Submitted by Jamie Morken(s1.)
+; Submitted by Jamie Morken(s2)
 ; 1,3,15,75,371,1833,9057,44753,221137,1092699,5399327,26679563,131831075,651413681,3218814561,15905050017,78591236385,388340962771,1918899743823,9481812581835,46852249642771
 
 lpb $0
   sub $0,1
   add $1,1
   add $4,$1
+  add $4,$1
   add $2,$4
   add $3,$2
   add $1,$3
-  add $1,$3
 lpe
 mov $0,$3
-mul $0,2
 add $0,1
