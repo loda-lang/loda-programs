@@ -1,9 +1,16 @@
 ; A097656: Binomial transform of A038507.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 2,4,9,24,81,358,2021,13828,109857,986922,9865125,108507160,1302065441,16926805678,236975181189,3554627504844,56874039618753,966858672535762,17403456103546565,330665665962928288,6613313319249128577
 
+mov $2,1
 mov $3,$0
-seq $0,522 ; Total number of arrangements of a set with n elements: a(n) = Sum_{k=0..n} n!/k!.
-mov $2,2
-pow $2,$3
-add $0,$2
+lpb $3
+  mul $2,$3
+  add $1,$2
+  sub $3,1
+lpe
+mov $4,2
+pow $4,$0
+add $4,$1
+mov $0,$4
+add $0,1

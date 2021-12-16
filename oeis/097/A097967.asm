@@ -1,10 +1,16 @@
 ; A097967: a(n) = Sum_{k=1..n} (P(n,k) + C(n,k)).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 0,2,7,22,79,356,2019,13826,109855,986920,9865123,108507158,1302065439,16926805676,236975181187,3554627504842,56874039618751,966858672535760,17403456103546563,330665665962928286,6613313319249128575
 
+mov $2,1
 mov $3,$0
-seq $0,522 ; Total number of arrangements of a set with n elements: a(n) = Sum_{k=0..n} n!/k!.
-mov $2,2
-pow $2,$3
-add $0,$2
-sub $0,2
+lpb $3
+  mul $2,$3
+  add $1,$2
+  sub $3,1
+lpe
+mov $4,2
+pow $4,$0
+add $4,$1
+mov $0,$4
+sub $0,1
