@@ -1,4 +1,4 @@
-; A349221: Triangle read by rows: T(n,k) = 1 if k divides binomial(n-1, k-1), T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+; A349221: Triangle read by rows: T(n, k) = 1 if k divides binomial(n-1, k-1), T(n, k) = 0 otherwise (n >= 1, 1 <= k <= n).
 ; Submitted by Simon Strandgaard
 ; 1,1,0,1,1,0,1,0,1,0,1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0
 

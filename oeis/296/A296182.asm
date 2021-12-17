@@ -19,8 +19,6 @@ lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-mov $6,$4
-cmp $6,0
 cmp $6,0
 add $2,$6
 div $1,$2
