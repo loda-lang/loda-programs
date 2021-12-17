@@ -1,11 +1,9 @@
 ; A071555: Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 3<=i<=n.
-; Submitted by Jamie Morken(s2)
+; Submitted by Jon Maiga
 ; 6,36,386,5006,85086,1616616,37182146,1078282206,33426748356,1236789689136,50708377254536,2180460221945006,102481630431415236,5431526412865007456,320460058359035439846,19548063559901161830546
 
 add $0,1
 seq $0,71554 ; Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 2<=i<=n.
-sub $0,9
-mul $0,8
-sub $0,56
-div $0,24
+sub $0,16
+div $0,3
 add $0,6

@@ -1,10 +1,16 @@
 ; A180739: Diagonal of array arising in computing the number of numerical semigroups using generating functions.
+; Submitted by Jamie Morken(s2)
 ; 1,2,6,10,17,28,44,66,95,132,178,234
 
+mov $1,1
 mov $2,$0
+mov $3,1
 lpb $0
-  mod $0,2
-  seq $2,11826 ; f-vectors for simplicial complexes of dimension at most 1 (graphs) on at most n-1 vertices.
+  mov $0,1
+  add $2,$1
+  add $3,$2
+  bin $2,3
+  add $2,$3
 lpe
 mov $0,$2
 add $0,1

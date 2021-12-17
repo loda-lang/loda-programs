@@ -7,6 +7,5 @@ add $0,1
 trn $1,1
 seq $1,6005 ; The odd prime numbers together with 1.
 max $0,$1
-sub $0,1
 mul $0,2
-add $0,1
+sub $0,1

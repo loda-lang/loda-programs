@@ -1,16 +1,12 @@
 ; A184040: 1/9 the number of (n+1)X(n+1) 0..2 arrays with all 2X2 subblocks having the same four values
-; Submitted by Jamie Morken(s4)
+; Submitted by Jon Maiga
 ; 9,21,41,81,153,297,569,1113,2169,4281,8441,16761,33273,66297
 
-mov $1,3
-mov $2,$0
-lpb $0
-  mul $1,2
-  add $1,$2
-  sub $1,$0
-  sub $0,1
-  trn $2,2
-lpe
-mov $0,$1
+mov $3,$0
+seq $0,209726 ; 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
+mov $2,2
+add $3,1
+pow $2,$3
+add $0,$2
 mul $0,4
-sub $0,3
+sub $0,63
