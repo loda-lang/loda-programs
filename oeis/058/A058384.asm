@@ -1,15 +1,12 @@
 ; A058384: Largest power of 2 which is a divisor of p(n)-1, where p(n) = n-th prime.
+; Submitted by Jon Maiga
 ; 1,2,4,2,2,4,16,2,2,4,2,4,8,2,2,4,2,4,2,2,8,2,2,8,32,4,2,2,4,16,2,2,8,2,4,2,4,2,2,4,2,4,2,64,4,2,2,2,2,4,8,2,16,2,256,2,4,2,4,8,2,4,2,2,8,4,2,16,2,4,32,2,2,4,2,2,4,4,16,8,2,4,2,16,2,2,64,8,4,2,2,2,2,2,2,2,4,8,2,4
 
-seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,3
-mov $1,4
-mov $3,$0
-add $3,2
-mov $2,$3
-lpb $2
-  mul $1,2
-  dif $2,2
+seq $0,40 ; The prime numbers.
+sub $0,1
+mov $2,1
+lpb $0
+  dif $0,2
+  mul $2,2
 lpe
-div $1,4
-mov $0,$1
+mov $0,$2

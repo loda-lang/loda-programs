@@ -1,10 +1,8 @@
 ; A026609: a(n) = number of 3's between n-th 1 and (n+1)st 1 in A026600.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 2,1,1,1,0,2,0,2,1,1,0,2,0,2,0,2,1,1,0,2,0,2,1,1,1,0,2,1,0,2,0,2,0,2,1,1,0,2,0,2,1,1,1,0,1,2,1,1,1,0,2,0,2,1,0,2,0,2,1,1,1,0,1,2,1,1,1,0,2,0,2,1,1,0,2,0,2,0,2,1,1,1,0,2,0,2,0,2,1,1
 
 seq $0,26612 ; a(n) = number of 1's between n-th 3 and (n+1)st 3 in A026600.
-mov $1,3
-add $2,$0
-sub $1,$2
-mov $0,$1
-sub $0,1
+mul $0,169
+add $0,2
+mod $0,10

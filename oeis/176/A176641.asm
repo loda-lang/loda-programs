@@ -1,7 +1,12 @@
 ; A176641: Triangle T(n, k) = 28^(k*(n-k)), read by rows.
+; Submitted by Jon Maiga
 ; 1,1,1,1,28,1,1,784,784,1,1,21952,614656,21952,1,1,614656,481890304,481890304,614656,1,1,17210368,377801998336,10578455953408,377801998336,17210368,1,1,481890304,296196766695424,232218265089212416,232218265089212416,296196766695424,481890304,1
 
-seq $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = i*j (i>=0, j>=0). Alternatively, multiplication triangle read by rows: P(i,j) = j*(i-j) (i>=0, 0<=j<=i).
-mov $1,28
-pow $1,$0
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+mul $1,$0
+mov $0,28
+pow $0,$1

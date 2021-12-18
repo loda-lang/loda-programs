@@ -1,14 +1,13 @@
 ; A037644: Base 9 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 2,21,190,1712,15411,138700,1248302,11234721,101112490,910012412,8190111711,73711005400,663399048602,5970591437421,53735322936790,483617906431112,4352561157880011,39173050420920100,352557453788280902,3173017084094528121
 
 mov $2,1
 lpb $0
   sub $0,1
+  add $2,1
   add $1,$2
-  add $1,1
   mul $1,9
-  add $2,10
   mod $2,3
 lpe
 add $1,$2

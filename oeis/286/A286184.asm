@@ -9,8 +9,7 @@ mov $2,2
 pow $2,$0
 sub $2,1
 add $1,$2
-sub $1,2
 mul $2,$0
 add $1,$2
 mov $0,$1
-add $0,3
+add $0,1

@@ -1,6 +1,8 @@
 ; A188037: a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
-; Submitted by Jamie Morken(s1)
+; Submitted by Jon Maiga
 ; 0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0
 
+max $0,1
+seq $0,144611 ; Sturmian word of slope 2-sqrt(2).
 add $0,1
-seq $0,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
+mod $0,2

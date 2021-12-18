@@ -4,6 +4,5 @@
 
 add $0,7
 seq $0,30431 ; Primes of form 10n+3.
-sub $0,13
 div $0,10
-sub $0,9
+sub $0,10
