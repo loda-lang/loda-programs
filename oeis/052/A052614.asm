@@ -1,14 +1,11 @@
 ; A052614: E.g.f. 1/((1-x)(1-x^4)).
+; Submitted by Jon Maiga
 ; 1,1,2,6,48,240,1440,10080,120960,1088640,10886400,119750400,1916006400,24908083200,348713164800,5230697472000,104613949440000,1778437140480000,32011868528640000,608225502044160000
 
-mov $2,$0
-div $2,2
-mov $3,$0
-seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $1,$3
-div $2,2
-lpb $2
-  add $1,$3
-  sub $2,1
+mov $1,$0
+div $0,4
+add $0,1
+lpb $1
+  mul $0,$1
+  sub $1,1
 lpe
-mov $0,$1

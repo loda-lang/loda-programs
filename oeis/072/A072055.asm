@@ -5,7 +5,6 @@
 mul $0,2
 max $0,1
 seq $0,173919 ; Numbers that are prime or one less than a prime.
-mul $0,8
-sub $0,16
-div $0,4
+sub $0,2
+mul $0,2
 add $0,5
