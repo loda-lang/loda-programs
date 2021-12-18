@@ -1,3 +1,4 @@
+A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 A006519: Highest power of 2 dividing n.
 A006577: Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.

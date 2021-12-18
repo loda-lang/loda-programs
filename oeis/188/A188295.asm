@@ -1,22 +1,6 @@
 ; A188295: [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
+; Submitted by Jon Maiga
 ; 0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0
 
-mov $2,$0
-mov $4,2
-lpb $4
-  mov $0,$2
-  sub $4,1
-  add $0,$4
-  trn $0,1
-  seq $0,187393 ; a(n) = floor(r*n), where r = 4 + sqrt(8); complement of A187394.
-  div $0,4
-  mov $3,$0
-  mov $5,$4
-  mul $5,$0
-  add $1,$5
-lpe
-min $2,1
-mul $2,$3
-sub $1,$2
-sub $1,1
-mov $0,$1
+seq $0,276869 ; First differences of the Beatty sequence A182769 for 2 + sqrt(1/2).
+sub $0,2

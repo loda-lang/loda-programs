@@ -1,8 +1,6 @@
 ; A267584: a(0)=1; thereafter a(n) = 2^(1 + number of zeros in binary expansion of n).
+; Submitted by Jon Maiga
 ; 1,2,4,2,8,4,4,2,16,8,8,4,8,4,4,2,32,16,16,8,16,8,8,4,16,8,8,4,8,4,4,2,64,32,32,16,32,16,16,8,32,16,16,8,16,8,8,4,32,16,16,8,16,8,8,4,16,8,8,4,8,4,4,2,128,64,64,32,64,32,32,16,64,32,32,16,32,16,16,8,64,32,32,16,32,16,16,8,32,16,16,8,16,8,8,4,64,32,32,16
 
 mul $0,2
-seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
-mov $1,2
-pow $1,$0
-mov $0,$1
+seq $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).

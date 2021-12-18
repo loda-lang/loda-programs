@@ -1,5 +1,12 @@
 ; A095076: Parity of 1-fibits in Zeckendorf expansion A014417(n).
+; Submitted by Jon Maiga
 ; 0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1
 
-seq $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+lpb $0
+  mov $2,$0
+  seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
+  mov $0,$2
+  add $1,1
+lpe
+mov $0,$1
 mod $0,2

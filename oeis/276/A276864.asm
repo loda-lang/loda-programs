@@ -1,7 +1,9 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-; Submitted by Jamie Morken(s1)
+; Submitted by Jon Maiga
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
 
+max $0,1
+seq $0,144611 ; Sturmian word of slope 2-sqrt(2).
 add $0,1
-seq $0,285076 ; 1-limiting word of the morphism 0->10, 1-> 010.
+mod $0,2
 add $0,3
