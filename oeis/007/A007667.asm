@@ -4,6 +4,5 @@
 
 seq $0,54320 ; Expansion of g.f.: (1 + x)/(1 - 10*x + x^2).
 pow $0,2
-sub $0,1
 mul $0,3
-add $0,5
+add $0,2

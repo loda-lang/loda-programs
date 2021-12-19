@@ -1,11 +1,15 @@
 ; A240434: Binomial transform of the sum of the first n even squares (A002492).
-; Submitted by Jamie Morken(s2)
+; Submitted by Jon Maiga
 ; 0,4,28,128,480,1600,4928,14336,39936,107520,281600,720896,1810432,4472832,10895360,26214400,62390272,147062784,343670784,796917760,1835008000,4198498304,9550430208,21609054208,48653926400,109051904000,243403849728,541165879296
 
-mov $2,$0
-add $0,1
-seq $2,176027 ; Binomial transform of A005563.
-mul $2,$0
-mov $0,$2
-div $0,6
+mov $1,$0
+mov $0,2
+pow $0,$1
+mov $2,1
+add $2,$1
+mul $1,$2
+bin $2,3
+add $2,$1
+mul $0,$2
+div $0,4
 mul $0,4

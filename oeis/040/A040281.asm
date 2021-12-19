@@ -1,14 +1,6 @@
 ; A040281: Continued fraction for sqrt(299).
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 17,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3
 
-seq $0,40304 ; Continued fraction for sqrt(322).
-dif $0,8
-mov $1,$0
-div $1,3
-sub $1,1
-mov $2,$0
-sub $2,2
-dif $2,$1
-mov $0,$2
-add $0,2
+seq $0,40282 ; Continued fraction for sqrt(300).
+dif $0,4
