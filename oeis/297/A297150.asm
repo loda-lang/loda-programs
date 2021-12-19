@@ -4,6 +4,5 @@
 
 seq $0,136799 ; Last term in a sequence of at least 3 consecutive composite integers.
 seq $0,326041 ; a(n) = sigma(A064989(n)).
-sub $0,8
+sub $0,1
 mul $0,5
-add $0,35
