@@ -1,16 +1,13 @@
 ; A057009: Number of conjugacy classes of subgroups of index 3 in free group of rank n.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 1,7,41,235,1361,7987,47321,281995,1685921,10096867,60524201,362972155,2177309681,13062280147,78368930681,470199300715,2821152888641,16926788453827,101560343826761,609360901747675,3656161925798801,21936961098633907,131621735219132441
 
-mov $1,3
+mov $1,6
 pow $1,$0
-div $1,2
 mov $2,2
 pow $2,$0
-mul $2,$1
-add $2,2
-add $1,$2
+sub $1,$2
 mov $0,$1
-sub $0,2
-mul $0,2
+div $0,$2
+add $0,$1
 add $0,1
