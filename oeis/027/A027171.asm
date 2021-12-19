@@ -2,5 +2,15 @@
 ; Submitted by Jon Maiga
 ; 1,10,42,156,570,2096,7784,29168,110106,418128,1595616,6113740,23505352,90633796,350351636,1357278296,5268292826,20483876816,79765662896,311038321436,1214362277696,4746455801876,18570960418916
 
-seq $0,81496 ; Start with Pascal's triangle; a(n) is the sum of the numbers on the periphery of the n-th central rhombus containing exactly 4 numbers.
+mul $0,2
+mov $1,$0
+div $0,2
+mov $2,$1
+bin $1,$0
+add $0,1
+add $2,2
+bin $2,$0
+mul $2,2
+add $2,$1
+mov $0,$2
 sub $0,4

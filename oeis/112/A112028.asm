@@ -7,10 +7,6 @@ lpb $0
   mov $3,$2
   add $3,$0
   bin $3,$0
-  lpb $3
-    cmp $3,0
-    sub $3,5
-  lpe
   sub $0,1
   pow $3,3
   add $1,$3

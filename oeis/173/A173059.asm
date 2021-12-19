@@ -4,6 +4,5 @@
 
 add $0,6
 seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,15
+sub $0,17
 div $0,2
-sub $0,1

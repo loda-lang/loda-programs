@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   seq $3,89013 ; a(n) = (A088567(8n) mod 2).
   sub $0,$3
-  add $1,5
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -17,5 +17,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,5
 add $0,1
