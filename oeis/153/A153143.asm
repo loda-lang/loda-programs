@@ -4,6 +4,4 @@
 
 add $0,6
 seq $0,5097 ; (Odd primes - 1)/2.
-mul $0,2
-sub $0,18
-div $0,2
+sub $0,9

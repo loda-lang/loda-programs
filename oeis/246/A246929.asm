@@ -5,6 +5,5 @@
 mul $0,11
 add $0,9
 seq $0,5097 ; (Odd primes - 1)/2.
-sub $0,2
 mul $0,2
-add $0,5
+add $0,1

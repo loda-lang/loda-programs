@@ -4,7 +4,4 @@
 
 trn $0,1
 seq $0,298252 ; Even integers n such that n-3 is prime.
-sub $0,6
-div $0,2
-mul $0,2
-add $0,4
+sub $0,2

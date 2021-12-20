@@ -1,7 +1,19 @@
 ; A107410: Each term is sum of three previous terms mod 9.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jon Maiga
 ; 0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2,5,2,0,7,0,7,5,3,6,5,5,7,8,2,8,0,1,0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2,5,2,0,7,0,7,5,3,6,5,5,7,8,2,8,0,1,0,1,2,3,6,2,2,1,5,8,5,0,4,0,4,8,3,6,8,8,4,2
 
-add $0,2
-seq $0,1590 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=0, a(1)=1, a(2)=0.
+mov $1,3
+mov $2,2
+lpb $0
+  sub $0,1
+  mul $1,2
+  add $1,$4
+  add $1,$3
+  sub $1,$2
+  mov $4,$3
+  mov $3,$2
+  mov $2,$1
+lpe
+mov $0,$3
+div $0,2
 mod $0,9

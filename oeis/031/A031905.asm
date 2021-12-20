@@ -1,7 +1,8 @@
 ; A031905: a(n) = prime(10*n - 4).
-; Submitted by Jamie Morken(s3)
+; Submitted by Jon Maiga
 ; 13,53,101,151,199,263,317,383,443,503,577,641,701,769,839,911,983,1049,1109,1193,1277,1321,1429,1487,1559,1619,1699,1783,1871,1949,2017,2089,2161,2267,2339,2393,2473,2579,2663,2713,2791,2861,2957
 
 mul $0,10
-add $0,5
-seq $0,6005 ; The odd prime numbers together with 1.
+add $0,4
+seq $0,298252 ; Even integers n such that n-3 is prime.
+sub $0,3

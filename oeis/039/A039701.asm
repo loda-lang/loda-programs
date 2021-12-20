@@ -1,6 +1,8 @@
 ; A039701: a(n) = n-th prime modulo 3.
+; Submitted by Jon Maiga
 ; 2,0,2,1,2,1,2,1,2,2,1,1,2,1,2,2,2,1,1,2,1,1,2,2,1,2,1,2,1,2,1,2,2,1,2,1,1,1,2,2,2,1,2,1,2,1,1,1,2,1,2,2,1,2,2,2,2,1,1,2,1,2,1,2,1,2,1,1,2,1,2,2,1,1,1,2,2,1,2,1,2,1,2,1,1,2,2,1,2,1,2,2,1,2,1,2,2,2,1,1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-max $0,2
+mul $0,2
+max $0,1
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mod $0,3
