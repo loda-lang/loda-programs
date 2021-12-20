@@ -1,19 +1,9 @@
 ; A201775: Decimal expansion of 1/(Pi - 1).
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 4,6,6,9,4,2,2,0,6,9,2,4,2,5,9,8,5,9,9,8,3,3,9,4,8,1,3,2,3,3,6,6,7,5,7,3,1,4,3,2,6,8,4,0,6,7,4,3,1,8,2,3,6,7,2,5,3,4,1,3,1,0,1,6,6,1,0,9,9,7,8,5,6,4,6,4,5,8,9,1,8,8,7,5,2,2,2,3,6,9,5,5,6,8,5,4,1,3,9,6
 
-add $0,1
-mov $1,$0
-lpb $1
-  mov $2,$0
-  mov $4,$1
-  lpb $2
-    dif $2,$4
-    pow $2,9
-    div $2,2
-    mov $3,$0
-    seq $3,306811 ; Decimal expansion of Pi/(Pi - 1) = 1 + 1/Pi + 1/Pi^2 + ... .
-  lpe
-  sub $1,1
-lpe
-mov $0,$3
+mov $2,$0
+cmp $2,$0
+add $2,$0
+seq $2,306811 ; Decimal expansion of Pi/(Pi - 1) = 1 + 1/Pi + 1/Pi^2 + ... .
+mov $0,$2

@@ -15,7 +15,3 @@ lpb $0
   gcd $2,$3
 lpe
 mov $0,$2
-mul $0,24
-sub $0,24
-div $0,24
-add $0,1

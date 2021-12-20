@@ -1,18 +1,16 @@
 ; A186830: Keith sequence for the number 197.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 1,9,7,17,33,57,107,197,361,665,1223,2249,4137,7609,13995,25741,47345,87081,160167,294593,541841,996601,1833035,3371477,6201113,11405625,20978215,38584953,70968793,130531961
 
+mov $1,2
+mov $2,6
+mov $3,1
 lpb $0
   sub $0,1
-  add $2,4
-  mov $4,$2
-  add $4,$3
-  mov $3,$2
-  mov $2,$1
-  sub $2,1
-  add $4,1
-  add $1,$4
+  add $2,$1
+  add $1,$3
+  sub $1,$2
+  add $3,$2
+  add $2,$1
 lpe
 mov $0,$3
-mul $0,2
-add $0,1

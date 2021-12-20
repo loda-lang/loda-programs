@@ -6,14 +6,11 @@ add $0,1
 mov $1,$0
 lpb $1
   mov $2,$0
-  mov $6,$1
+  mov $4,$1
   lpb $2
-    cmp $4,0
-    add $6,$4
-    dif $2,$6
+    dif $2,$4
     add $3,$2
     mov $2,$3
-    cmp $4,0
     add $5,2
   lpe
   sub $1,1

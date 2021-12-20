@@ -1,8 +1,9 @@
 ; A330410: a(n) = 6*prime(n) - 1.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jon Maiga
 ; 11,17,29,41,65,77,101,113,137,173,185,221,245,257,281,317,353,365,401,425,437,473,497,533,581,605,617,641,653,677,761,785,821,833,893,905,941,977,1001,1037,1073,1085,1145,1157,1181,1193,1265,1337,1361,1373,1397,1433,1445
 
-seq $0,6005 ; The odd prime numbers together with 1.
-trn $0,2
+mul $0,2
+max $0,1
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mul $0,6
-add $0,11
+sub $0,1

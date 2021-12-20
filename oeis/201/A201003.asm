@@ -4,5 +4,4 @@
 
 seq $0,7805 ; a(n) = Fibonacci(6*n+3)/2.
 pow $0,2
-div $0,288
-mul $0,36
+div $0,8
