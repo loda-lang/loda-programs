@@ -4,6 +4,5 @@
 
 add $0,26
 seq $0,298252 ; Even integers n such that n-3 is prime.
-sub $0,110
 div $0,2
-add $0,53
+sub $0,2
