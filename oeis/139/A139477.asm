@@ -1,35 +1,20 @@
 ; A139477: Number of binary digits in A001109(n).
+; Submitted by Jamie Morken(s4)
 ; 1,3,6,8,11,13,16,18,21,23,26,29,31,34,36,39,41,44,46,49,51,54,56,59,62,64,67,69,72,74,77,79,82,84,87,90,92,95,97,100,102,105,107,110,112,115,118,120,123,125
 
+add $0,12
+mov $1,11
 mov $2,$0
-add $2,1
-mov $6,$0
-lpb $2
-  mov $0,$6
-  sub $2,1
-  sub $0,$2
-  mov $4,$0
-  mov $8,2
-  lpb $8
-    sub $8,1
-    add $0,$8
-    sub $0,1
-    mov $5,$0
-    mul $5,54
-    add $5,1
-    div $5,35
-    mov $7,$8
-    lpb $7
-      mov $3,$5
-      sub $7,1
-    lpe
-  lpe
-  lpb $4
-    sub $3,$5
-    mov $4,0
-  lpe
-  mov $5,$3
-  add $5,1
-  add $1,$5
-lpe
+add $2,5
+mul $1,$2
 mov $0,$1
+add $0,4
+mov $3,3
+mul $3,$2
+add $3,$2
+sub $1,$3
+mul $1,$3
+sub $1,$3
+div $1,$0
+mov $0,$1
+sub $0,41
