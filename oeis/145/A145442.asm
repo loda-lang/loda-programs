@@ -1,13 +1,15 @@
 ; A145442: Multipliers of SI prefixes, in increasing order.
+; Submitted by Jamie Morken(s3)
 ; 10,100,1000,1000000,1000000000,1000000000000,1000000000000000,1000000000000000000,1000000000000000000000,1000000000000000000000000
 
-sub $0,1
-mov $2,$0
-mul $0,2
-max $0,2
-add $0,1
-add $0,$2
-seq $0,246058 ; a(n) = (16*10^n-7)/9.
-div $0,1600
-mul $0,90
-add $0,10
+mov $3,$0
+lpb $3
+  mul $3,2
+  add $0,$3
+  sub $0,4
+  mov $3,2
+lpe
+mov $2,10
+pow $2,$0
+mov $0,$2
+mul $0,10

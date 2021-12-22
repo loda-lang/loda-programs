@@ -1,15 +1,11 @@
 ; A100311: Modulo 2 binomial transform of 8^n.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s2)
 ; 1,9,65,585,4097,36873,266305,2396745,16777217,150994953,1090519105,9814671945,68736258049,618626322441,4467856773185,40210710958665,281474976710657,2533274790395913,18295873486192705,164662861375734345
 
 mov $1,1
 lpb $0
   sub $0,1
   mul $1,7
-  sub $1,5
-  seq $1,184617 ; With nonadjacent forms: A184615(n) + A184616(n).
+  seq $1,48724 ; Write n and 2n in binary and add them mod 2.
 lpe
 mov $0,$1
-sub $0,1
-mul $0,8
-add $0,1
