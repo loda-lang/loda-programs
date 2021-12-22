@@ -1,6 +1,8 @@
 ; A097807: Riordan array (1/(1+x),1) read by rows.
+; Submitted by Jamie Morken(s3)
 ; 1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1
 
-seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
-mod $0,4
-sub $0,1
+seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
+mov $1,-1
+bin $1,$0
+mov $0,$1
