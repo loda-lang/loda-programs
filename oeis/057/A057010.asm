@@ -1,0 +1,18 @@
+; A057010: Number of conjugacy classes of subgroups of index 4 in free group of rank n.
+; Submitted by Christian Krause
+; 1,26,604,14120,334576,7987616,191318464,4588288640,110090411776,2641931680256,63404394241024,1521689370306560,36520413978750976,876488875160477696,21035724442850934784,504857317670233210880
+
+add $0,1
+mov $3,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  mul $2,2
+  add $1,$2
+  mul $1,6
+  mul $2,12
+  mul $3,8
+lpe
+sub $2,$1
+mov $0,$2
+div $0,12

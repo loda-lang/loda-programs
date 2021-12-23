@@ -13,7 +13,9 @@ lpb $0
   add $3,$1
   mul $1,2
   add $3,$2
+  add $3,2
 lpe
-add $2,$3
-mov $0,$2
+mov $0,$3
 div $0,2
+add $2,$0
+mov $0,$2
