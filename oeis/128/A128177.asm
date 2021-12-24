@@ -1,11 +1,16 @@
 ; A128177: A128174 * A004736 as infinite lower triangular matrices.
+; Submitted by Jamie Morken(s4)
 ; 1,2,1,4,2,1,6,4,2,1,9,6,4,2,1,12,9,6,4,2,1,16,12,9,6,4,2,1,20,16,12,9,6,4,2,1,25,20,16,12,9,6,4,2,1,30,25,20,16,12,9,6,4,2,1,36,30,25,20,16,12,9,6,4,2,1,42,36,30,25,20,16,12,9,6,4,2,1
 
-seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
-mov $1,$0
-add $0,1
-lpb $1
-  sub $1,1
-  add $0,$1
-  sub $1,1
+lpb $0
+  add $1,1
+  sub $0,$1
 lpe
+add $1,2
+sub $1,$0
+mov $0,$1
+mul $0,$1
+div $0,2
+sub $0,2
+div $0,2
+add $0,1

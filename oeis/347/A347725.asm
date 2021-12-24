@@ -1,19 +1,17 @@
 ; A347725: Number of irredundant sets in the (2n-1)-triangular snake graph (for n > 1).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,4,10,25,64,163,415,1057,2692,6856,17461,44470,113257,288445,734617,1870936,4764934,12135421,30906712,78713779,200469691,510559873,1300303216,3311635996,8434135081,21480209374,54706189825,139326724105,354839847409,903712608748
 
-mov $1,1
 mov $2,1
+mov $3,1
+mov $4,1
 lpb $0
   sub $0,1
-  mul $1,2
-  add $1,$4
-  add $1,$3
-  add $1,1
-  mov $4,$3
-  mov $3,$2
-  mov $2,$1
+  mov $1,$4
+  add $3,$2
+  add $3,$4
+  mov $4,$2
+  add $2,$3
+  mov $3,$1
 lpe
-mov $0,$3
-mul $0,3
-add $0,1
+mov $0,$2

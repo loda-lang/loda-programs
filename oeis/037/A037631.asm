@@ -1,10 +1,15 @@
 ; A037631: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 2,3,0.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 2,23,230,2302,23023,230230,2302302,23023023,230230230,2302302302,23023023023,230230230230,2302302302302,23023023023023,230230230230230,2302302302302302
 
-seq $0,33132 ; Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,1,0.
-mul $0,26
-div $0,12
-add $0,6
-seq $0,7091 ; Numbers in base 5.
-sub $0,11
+mov $2,2
+lpb $0
+  sub $0,1
+  add $1,$2
+  mul $1,10
+  add $2,21
+  div $2,2
+  mod $2,4
+lpe
+add $1,$2
+mov $0,$1

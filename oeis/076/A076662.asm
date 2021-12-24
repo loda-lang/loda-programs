@@ -1,9 +1,7 @@
 ; A076662: First differences of A007066.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2
 
-add $0,1
-max $0,2
-seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
-cmp $0,0
+trn $0,1
+seq $0,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
 add $0,2
