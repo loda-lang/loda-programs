@@ -1,8 +1,6 @@
 ; A114986: Characteristic function of (A000201 prefixed with 0).
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0
 
-add $0,1
-max $0,2
-seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
-cmp $0,0
+trn $0,1
+seq $0,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
