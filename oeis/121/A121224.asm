@@ -4,9 +4,8 @@
 
 add $0,1
 mov $3,$0
-mul $3,5
+mul $3,3
 lpb $3
-  add $2,988
   mov $4,$3
   cmp $4,0
   add $3,$4
@@ -14,11 +13,12 @@ lpb $3
   add $1,$2
   add $2,$1
   sub $1,$2
-  mul $2,4
   mul $2,$3
+  mul $2,4
   add $1,$2
   div $1,$0
   div $2,$0
+  add $2,1
   sub $3,1
 lpe
 mov $5,10
