@@ -1,16 +1,15 @@
 ; A083860: First subdiagonal of generalized Fibonacci array A083856.
-; Submitted by Jamie Morken(s3)
+; Submitted by Jamie Morken(s2)
 ; 0,1,1,5,11,55,176,937,3781,21571,102455,624493,3356640,21752431,129055681,884773585,5696734715,41129090011,283908657880,2149818248341,15765656131765,124759995175751,965186517474191,7956847444317049
 
-mov $4,7
-mov $5,$0
+mov $2,$0
+add $2,1
+mov $3,1
 lpb $0
   sub $0,1
-  mov $3,$2
-  mov $2,$4
-  add $4,$3
-  mul $3,$5
-  add $4,$3
+  mov $1,$3
+  mul $4,$2
+  add $3,$4
+  mov $4,$1
 lpe
-mov $0,$2
-div $0,7
+mov $0,$4

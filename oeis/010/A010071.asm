@@ -1,17 +1,13 @@
 ; A010071: a(n+1) = a(n) + sum of digits in base 8 representation of a(n).
-; Submitted by Jamie Morken(m4)
+; Submitted by Jamie Morken(s2)
 ; 1,2,4,8,9,11,15,23,32,36,44,53,64,65,67,71,79,88,92,100,109,120,128,130,134,142,151,162,170,179,190,205,214,225,233,242,253,268,277,288,296,305,316,331,340,351,366,382,400,408,417,428,443,459
 
-mov $2,1
 lpb $0
-  mov $3,$2
-  lpb $3
-    add $2,1
-    lpb $1,7
-      dif $3,8
-    lpe
-    sub $3,1
-  lpe
   sub $0,1
+  mov $2,$1
+  add $2,1
+  seq $2,53829 ; Sum of digits of (n written in base 8).
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1
+add $0,1

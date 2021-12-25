@@ -1,24 +1,13 @@
 ; A153041: Numbers n >=10 such that 2*n-19 is not a prime.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 10,14,17,20,22,23,26,27,29,32,34,35,37,38,41,42,44,47,48,50,52,53,55,56,57,59,62,65,67,68,69,70,71,72,74,76,77,80,81,82,83,86,87,89,90,92,94,95,97,98,101,102,103,104,107,110,111,112,113,114,116,117,118,119,120,122,125,127,128,131,132,133,134,136,137,139,140,142,143,146,147,149,152,153,154,155,157,158,159,160,161,162,164,167,169,170,171,172,173,174
 
-add $0,1
-mov $1,$0
-lpb $1
+lpb $0
+  trn $0,1
+  seq $0,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
   mov $2,$0
-  mov $4,$1
-  lpb $2
-    sub $0,2
-    dif $2,$4
-    mov $5,$0
-    max $5,0
-    seq $5,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
-  lpe
-  cmp $3,0
-  add $5,$3
-  div $1,$5
+  mov $0,$1
 lpe
-mov $0,$5
-sub $0,1
+mov $0,$2
 div $0,2
 add $0,10

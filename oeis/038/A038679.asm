@@ -11,7 +11,5 @@ sub $0,1
 div $1,$0
 mov $2,4
 pow $2,$0
-sub $2,2
 sub $2,$1
 mov $0,$2
-add $0,2

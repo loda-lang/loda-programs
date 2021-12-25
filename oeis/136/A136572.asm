@@ -1,35 +1,14 @@
 ; A136572: Triangle read by rows: row n consists of n zeros followed by n!.
+; Submitted by Christian Krause
 ; 1,0,1,0,0,2,0,0,0,6,0,0,0,0,24,0,0,0,0,0,120,0,0,0,0,0,0,720,0,0,0,0,0,0,0,5040,0,0,0,0,0,0,0,0,40320,0,0,0,0,0,0,0,0,0,362880,0,0,0,0,0,0,0,0,0,0,3628800,0,0,0,0,0,0,0,0,0,0,0,39916800,0,0,0,0,0,0,0,0,0,0,0,0,479001600,0,0,0,0,0,0,0,0,0
 
-mov $3,2
-mov $7,$0
-lpb $3
-  mov $0,$7
-  sub $3,1
-  add $0,$3
-  sub $0,2
-  mov $2,1
-  mov $4,1
-  mov $6,1
-  lpb $0
-    sub $0,1
-    mul $4,$6
-    add $2,$4
-    add $6,1
-    trn $0,$6
-  lpe
-  mov $4,$2
-  mul $4,4
-  mov $5,$3
-  mov $8,$4
-  lpb $5
-    mov $1,$8
-    sub $5,1
-  lpe
+mov $2,1
+lpb $0
+  add $1,1
+  sub $0,$1
+  mul $2,$1
 lpe
-lpb $7
-  sub $1,$8
-  mov $7,0
-lpe
-div $1,4
-mov $0,$1
+sub $0,$1
+bin $1,$0
+mul $2,$1
+mov $0,$2
