@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   trn $0,3
   mul $2,2
-  seq $2,94014 ; Expansion of (1-2x)/(1-8x^2).
+  seq $2,94014 ; Expansion of (1-2*x)/(1-8*x^2).
   add $3,$2
 lpe
 mov $0,$3

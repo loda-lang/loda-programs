@@ -1,19 +1,6 @@
 ; A266680: Binary representation of the middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(s2)
 ; 1,11,110,1101,11011,110111,1101111,11011111,110111111,1101111111,11011111111,110111111111,1101111111111,11011111111111,110111111111111,1101111111111111,11011111111111111,110111111111111111,1101111111111111111,11011111111111111111,110111111111111111111,1101111111111111111111,11011111111111111111111,110111111111111111111111,1101111111111111111111111,11011111111111111111111111,110111111111111111111111111,1101111111111111111111111111,11011111111111111111111111111,110111111111111111111111111111
 
-lpb $0
-  mov $3,$2
-  add $5,10
-  lpb $3
-    cmp $4,0
-    sub $3,$4
-    sub $5,1
-  lpe
-  sub $0,1
-  add $2,3
-  mul $5,10
-lpe
-mov $0,$5
-div $0,10
-add $0,1
+seq $0,267604 ; Decimal representation of the middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.

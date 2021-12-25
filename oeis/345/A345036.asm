@@ -13,8 +13,7 @@ lpb $0
   sub $0,1
   sub $2,1
   cmp $3,0
-  sub $3,1
-  mul $3,$5
+  sub $3,$5
   pow $3,$2
   add $1,$3
 lpe

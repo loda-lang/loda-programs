@@ -1,9 +1,19 @@
 ; A052642: E.g.f. x^2*(2+x-x^2)/(1-x).
+; Submitted by Jamie Morken(s2)
 ; 0,0,4,18,48,240,1440,10080,80640,725760,7257600,79833600,958003200,12454041600,174356582400,2615348736000,41845579776000,711374856192000,12804747411456000,243290200817664000
 
-lpb $0
-  mov $2,$0
-  mov $0,1
-  seq $2,52628 ; E.g.f. (2+x^3-x^4)/(1-x).
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+div $0,2
+mov $2,$0
+mul $0,2
+mod $2,4
+mov $3,$0
+lpb $2
+  add $3,1
+  gcd $4,2
+  mov $1,$4
+  mov $2,1
 lpe
-mov $0,$2
+add $1,$3
+mov $0,$1
+mul $0,2

@@ -1,24 +1,13 @@
 ; A153051: Numbers n>=9 such that 2*n-17 is not a prime.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 9,13,16,19,21,22,25,26,28,31,33,34,36,37,40,41,43,46,47,49,51,52,54,55,56,58,61,64,66,67,68,69,70,71,73,75,76,79,80,81,82,85,86,88,89,91,93,94,96,97,100,101,102,103,106,109,110,111,112,113,115,116,117,118,119,121,124,126,127,130,131,132,133,135,136,138,139,141,142,145,146,148,151,152,153,154,156,157,158,159,160,161,163,166,168,169,170,171,172,173
 
-add $0,1
-mov $1,$0
-lpb $1
+lpb $0
+  trn $0,1
+  seq $0,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
   mov $2,$0
-  mov $4,$1
-  lpb $2
-    sub $0,2
-    dif $2,$4
-    mov $5,$0
-    max $5,0
-    seq $5,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
-  lpe
-  cmp $3,0
-  add $5,$3
-  div $1,$5
+  mov $0,$1
 lpe
-mov $0,$5
-sub $0,1
+mov $0,$2
 div $0,2
 add $0,9
