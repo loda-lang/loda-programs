@@ -4,5 +4,4 @@
 
 add $0,1
 seq $0,1849 ; Crystal ball sequence for 7-dimensional cubic lattice.
-mul $0,2
-div $0,4
+div $0,2
