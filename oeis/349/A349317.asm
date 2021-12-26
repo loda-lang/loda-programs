@@ -1,8 +1,17 @@
 ; A349317: Triangle T(n,k): T(n,k) = 1 if gcd(n, k) > 1, else 0.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
 
-seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
-cmp $0,1
-add $0,3
+add $0,1
+lpb $0
+  add $1,1
+  mov $2,$0
+  trn $0,$1
+lpe
+add $0,$1
+gcd $2,$1
+mul $2,$0
+cmp $1,$2
+mov $0,$1
+add $0,1
 mod $0,2
