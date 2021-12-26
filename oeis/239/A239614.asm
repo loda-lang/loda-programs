@@ -4,11 +4,8 @@
 add $0,1
 mov $2,$0
 lpb $0
-  mov $3,$2
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
   add $1,2
+  mov $3,$2
   dif $3,$0
   cmp $3,$2
   cmp $3,0
@@ -18,9 +15,9 @@ lpb $0
   lpb $1
     pow $1,2
     mod $1,8
-    add $5,1
+    add $4,1
   lpe
   trn $1,8
 lpe
-mov $0,$5
+mov $0,$4
 add $0,1
