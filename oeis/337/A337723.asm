@@ -1,0 +1,20 @@
+; A337723: a(n) = prime(n-2) - ceiling(a(n-2)/2); a(1)=0, a(2)=1.
+; Submitted by Simon Strandgaard
+; 0,1,2,2,4,6,9,10,12,14,17,22,22,26,30,30,32,38,43,42,45,50,50,54,58,62,68,70,69,72,74,77,90,92,92,93,103,104,105,111
+
+mov $1,$0
+cmp $1,0
+cmp $1,0
+trn $0,1
+lpb $0
+  mov $4,$2
+  mov $2,$1
+  mov $1,$3
+  seq $1,40 ; The prime numbers.
+  add $4,1
+  div $4,2
+  sub $1,$4
+  add $3,1
+  sub $0,1
+lpe
+mov $0,$1

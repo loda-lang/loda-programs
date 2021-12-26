@@ -21,9 +21,7 @@ lpb $2
   mov $6,$5
   mod $6,2
   ; Do bitwise OR
-  add $3,$6
-  cmp $3,0
-  cmp $3,0
+  max $3,$6
   ; Now $3 holds the bitwise OR with $0 and $5
   ; Scale up the bit, and add to result
   mul $3,$4
