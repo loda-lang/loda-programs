@@ -15,5 +15,4 @@ lpb $0
   add $2,$3
   mul $3,24
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1
