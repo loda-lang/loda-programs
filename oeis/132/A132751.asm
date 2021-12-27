@@ -11,6 +11,5 @@ lpe
 bin $1,$0
 mul $2,$1
 mov $0,$2
-sub $0,1
 mul $0,2
-add $0,1
+sub $0,1

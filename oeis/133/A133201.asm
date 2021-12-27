@@ -1,6 +1,21 @@
 ; A133201: A133195/3.
+; Submitted by Jamie Morken(s2)
 ; 0,1,2,3,13,23,33,133,233,333,1333,2333,3333,13333,23333,33333,133333,233333,333333,1333333,2333333,3333333,13333333,23333333,33333333,133333333,233333333,333333333,1333333333,2333333333,3333333333
 
-mul $0,3
-seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
-div $0,3
+mov $3,$0
+mov $4,$0
+add $4,1
+lpb $4
+  mov $0,$3
+  sub $4,1
+  sub $0,$4
+  mov $2,$0
+  sub $2,1
+  div $2,9
+  mov $5,10
+  pow $5,$2
+  add $1,$5
+  add $3,2
+lpe
+mov $0,$1
+sub $0,1

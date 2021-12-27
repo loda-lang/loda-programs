@@ -1,7 +1,19 @@
 ; A153282: Numbers n such that 3*n+4 is not prime.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s2)
 ; 0,2,4,6,7,8,10,12,14,15,16,17,18,20,22,24,26,27,28,29,30,32,34,36,37,38,39,40,42,43,44,46,47,48,50,52,54,55,56,57,58,60,61,62,64,66,67,68,70,71,72,74,76,77,78,80,81,82,83,84,85,86,87,88,90,92,94,95,96,97,98,99,100,102,104,105,106,107,108,110,112,113,114,116,117,118,119,120,122,124,126,127,128,129,130,132,133,134,136,137
 
-add $0,1
-seq $0,153184 ; Numbers n such that 3*n-2 is not prime.
-sub $0,2
+mov $2,$0
+add $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  lpb $3
+    add $1,3
+    trn $3,9
+  lpe
+  add $1,3
+lpe
+mov $0,$1
+sub $0,6
+div $0,3
