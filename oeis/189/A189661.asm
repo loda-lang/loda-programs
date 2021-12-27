@@ -4,7 +4,7 @@
 
 mov $1,$0
 sub $1,1
-max $1,2
+max $1,1
 seq $1,120613 ; a(n) = floor(phi*floor(n/phi)) where phi=(1+sqrt(5))/2.
 add $0,$1
 add $0,1
