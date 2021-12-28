@@ -5,7 +5,3 @@
 mul $0,2
 add $0,1
 seq $0,99195 ; Figurate numbers based on the 8-dimensional regular convex polytope called the 8-dimensional cross-polytope, or 8-dimensional hyperoctahedron, which is represented by the Schlaefli symbol {3, 3, 3, 3, 3, 3, 4}. It is the dual of the 8-dimensional hypercube.
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
