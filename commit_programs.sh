@@ -76,5 +76,5 @@ fi
 
 git pull -X theirs
 git fetch upstream
-git merge -X theirs upstream/main
+git merge -X theirs -m "merge upstream" upstream/main
 git push
