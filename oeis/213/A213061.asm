@@ -1,6 +1,16 @@
 ; A213061: Triangle of Stirling numbers of second kind (A048993) read mod 2.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,1,1,0,1,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,1,1,0,1,0,0,0
 
-seq $0,121314 ; Triangle T(n,k), 0 <= k <= n, read by rows given by [0, 1, 0, 0, 0, 0, ...] DELTA [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, ...] where DELTA is the operator defined in A084938.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+add $0,$1
+sub $1,$0
+add $0,$1
+mul $0,2
+bin $1,$0
+mov $0,$1
 mod $0,2
