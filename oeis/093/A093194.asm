@@ -1,11 +1,11 @@
 ; A093194: Minimal values of m=a^2+b^2=c^2+d^2 for each x=a+b+c+d=6*p (p=any odd prime).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 50,130,250,610,850,1450,1810,2650,4210,4810,6850,8410,9250,11050,14050
 
-add $0,1
-mul $0,2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-pow $0,2
-div $0,2
-add $0,1
+seq $0,98090 ; Numbers k such that 2k-3 is prime.
+sub $0,1
+bin $0,2
+mul $0,4
+sub $0,4
 mul $0,10
+add $0,50
