@@ -1,11 +1,9 @@
 ; A293497: Triangular array read by rows: row n >= 1 is the list of integers from 0 to 2n-1.
+; Submitted by Christian Krause
 ; 0,1,0,1,2,3,0,1,2,3,4,5,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0,1,2,3,4,5,6,7,8
 
-mov $3,$0
-mov $0,0
-lpb $2,4
-  add $0,2
-  sub $3,$0
-  trn $2,$3
+lpb $0
+  add $2,1
+  sub $0,$2
+  sub $0,$2
 lpe
-mov $0,$3
