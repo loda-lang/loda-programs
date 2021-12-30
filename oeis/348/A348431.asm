@@ -1,6 +1,24 @@
 ; A348431: a(n) = (n')^(n'), where ' is the arithmetic derivative of n.
-; Submitted by Jamie Morken(m4)
+; Submitted by Jamie Morken(s2)
 ; 1,1,1,1,256,1,3125,1,8916100448256,46656,823543,1,18446744073709551616,1,387420489,16777216,1461501637330902918203684832716283019655932542976,1,5842587018385982521381124421,1,1333735776850284124449081472843776,10000000000,302875106592253
 
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-pow $0,$0
+mov $2,2
+mov $5,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    cmp $4,0
+    cmp $4,0
+    sub $3,$4
+  lpe
+  div $0,$2
+  mov $4,$0
+  mul $4,$5
+  add $1,$4
+  mul $5,$2
+lpe
+pow $1,$1
+mov $0,$1
