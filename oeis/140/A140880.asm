@@ -1,15 +1,16 @@
 ; A140880: Triangle read by rows, T(n,k) = Gamma(n+3)/(Gamma(k+1)*Gamma(n-k+1)) for n>=0 and 0<=k<=n.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 2,6,6,12,24,12,20,60,60,20,30,120,180,120,30,42,210,420,420,210,42,56,336,840,1120,840,336,56,72,504,1512,2520,2520,1512,504,72,90,720,2520,5040,6300,5040,2520,720,90
 
 lpb $0
-  add $2,$1
   add $1,1
   sub $0,$1
-  add $2,2
 lpe
+add $0,2
+add $1,2
 bin $1,$0
-mul $2,$1
-add $2,$1
-mov $0,$2
-mul $0,2
+mul $1,$0
+mul $0,$1
+add $0,3
+sub $0,$1
+sub $0,3

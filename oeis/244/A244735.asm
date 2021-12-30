@@ -1,7 +1,9 @@
 ; A244735: a(n) = (prime(n) mod 5) mod 2.
+; Submitted by Simon Strandgaard
 ; 0,1,0,0,1,1,0,0,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,1,1,0,0,1,1,0,0,1,0,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,1,1,0,1,0,0,1,1,0,0,0,1,0,1,0,1,1,1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-max $0,2
+mul $0,2
+max $0,1
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mod $0,5
 mod $0,2
