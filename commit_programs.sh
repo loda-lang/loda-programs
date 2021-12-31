@@ -11,10 +11,19 @@ while read -r s f; do
   fi
 done < <(git status --porcelain)
 num_added=0
+add_all="n"
 for f in $files; do
   clear
   cat $f
-  read -p "Add program? (Y/n) " a
+  if [ "$add_all" != "y" ]; then
+    read -p "Add program? (Y/n/a) " a
+  else
+    a="y"
+  fi
+  if [ "$a" = "a" ]; then
+    a="y"
+    add_all="y"
+  fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git add $f
     ((num_added++))
