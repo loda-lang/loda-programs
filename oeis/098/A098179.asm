@@ -4,6 +4,4 @@
 
 add $0,2
 seq $0,38504 ; Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 1".
-mul $0,2
-sub $0,2
-div $0,2
+sub $0,1
