@@ -6,9 +6,7 @@ mov $2,$0
 seq $0,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
 sub $2,$0
 mov $0,$2
-mul $0,2
-sub $0,2
-div $0,2
+sub $2,1
 mul $2,$0
 mov $0,$2
 div $0,2
