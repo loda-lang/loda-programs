@@ -9,9 +9,9 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  seq $0,21092 ; Expansion of 1/((1-x)(1-2x)(1-4x)(1-10x)).
+  seq $0,453 ; Stirling numbers of the second kind, S(n,4).
   sub $0,$1
-  mul $1,4
+  mul $1,11
   add $1,$0
 lpe
 mov $0,$1
