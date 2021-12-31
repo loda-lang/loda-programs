@@ -1,17 +1,15 @@
 ; A112702: Partial sum of Catalan numbers A000108 multiplied by powers of 8.
+; Submitted by Christian Krause
 ; 1,9,137,2697,60041,1436297,36039305,935717513,24927136393,677493729929,18712061405833,523679956331145,14818155751139977,423231749888535177,12185543261045516937,353292577084597987977,10305591916877658319497
 
-mov $1,$0
 lpb $0
-  sub $1,1
+  mul $1,2
   mov $2,$0
-  trn $0,5
-  seq $2,25225 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
-  add $3,$2
-  mul $3,4
-  div $0,$3
-  add $0,$1
+  sub $0,1
+  mul $1,4
+  seq $2,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+  add $1,$2
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1
+mul $0,8
 add $0,1

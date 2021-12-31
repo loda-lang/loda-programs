@@ -1,23 +1,21 @@
 ; A089079: Numbers n such that 7*n - 23 is prime.
-; Submitted by Jamie Morken(s2)
+; Submitted by Jamie Morken(s4)
 ; 4,6,10,12,16,18,22,28,36,40,42,48,58,60,66,70,76,78,88,90,100,102,106,108,112,126,130,136,142,148,156,160,168,172,178,180,186,190,192,208,210,216,222,226,232,240,246,252,258,262,270,282,286,288,298,312,318,328,330,340,342,346,352,366,376,388,390,396
 
+mov $1,4
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
-  add $1,4
-  sub $2,1
   mov $3,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,10
+  add $1,14
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-sub $0,13
 div $0,7
 add $0,4
