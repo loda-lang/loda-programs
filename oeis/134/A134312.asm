@@ -9,11 +9,10 @@ lpb $0
   sub $2,$0
   trn $2,1
 lpe
-trn $0,1
-mov $1,0
+max $0,1
 pow $1,$2
-mov $2,$1
-mul $2,2
+mov $2,2
+div $2,$1
 pow $2,$0
-mul $2,$1
 mov $0,$2
+div $0,2
