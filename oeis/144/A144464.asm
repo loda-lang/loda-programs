@@ -1,8 +1,13 @@
 ; A144464: Triangle T(n,m) read by rows: T(n,m) = 2^min(m,n-m).
+; Submitted by Jon Maiga
 ; 1,1,1,1,2,1,1,2,2,1,1,2,4,2,1,1,2,4,4,2,1,1,2,4,8,4,2,1,1,2,4,8,8,4,2,1,1,2,4,8,16,8,4,2,1,1,2,4,8,16,16,8,4,2,1,1,2,4,8,16,32,16,8,4,2,1
 
-seq $0,157454 ; Triangle read by rows: T(n, m) = min(2*m - 1, 2*(n - m) + 1).
-div $0,2
-mov $1,2
-pow $1,$0
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+  mov $2,$1
+  sub $2,$0
+lpe
+min $2,$0
+mov $0,2
+pow $0,$2

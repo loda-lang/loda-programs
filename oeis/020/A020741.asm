@@ -6,9 +6,8 @@ mov $2,1
 mov $4,2
 lpb $4
   mov $1,6
-  add $2,1
-  mov $3,8
-  mov $4,1
+  mov $3,4
+  mov $4,0
   lpb $0
     sub $0,1
     div $3,$2

@@ -1,14 +1,9 @@
 ; A040788: Continued fraction for sqrt(817).
+; Submitted by Jon Maiga
 ; 28,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1,2,1,1,56,1,1
 
-seq $0,10225 ; Continued fraction for sqrt(183).
-dif $0,4
-mul $0,90
-div $0,72
-seq $0,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
-mov $1,$0
-lpb $1
-  add $0,2
-  trn $1,7
-lpe
-sub $0,3
+seq $0,40258 ; Continued fraction for sqrt(275).
+add $0,4
+mul $0,9
+div $0,5
+sub $0,8
