@@ -7,6 +7,7 @@ mov $2,$0
 mov $3,$0
 lpb $2
   mov $0,$3
+  dif $2,$1
   sub $2,1
   sub $0,$2
   seq $0,20782 ; Expansion of 1/((1-7x)(1-8x)(1-9x)).
