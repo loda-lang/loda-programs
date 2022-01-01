@@ -11,9 +11,7 @@ lpe
 add $0,2
 bin $1,$0
 sub $0,3
-add $1,1
 add $2,1
 bin $2,$0
 add $2,$1
 mov $0,$2
-sub $0,1

@@ -1,11 +1,11 @@
 ; A001468: There are a(n) 2's between successive 1's.
-; Submitted by Simon Strandgaard
+; Submitted by Jon Maiga
 ; 1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1
 
 mov $1,$0
-max $1,3
+add $0,1
+max $1,1
 seq $1,120613 ; a(n) = floor(phi*floor(n/phi)) where phi=(1+sqrt(5))/2.
 add $0,$1
-add $0,1
 mod $0,2
 add $0,1

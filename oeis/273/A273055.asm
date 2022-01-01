@@ -4,6 +4,4 @@
 
 mul $0,2
 add $0,1
-mov $1,$0
-seq $1,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
-mov $0,$1
+seq $0,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.

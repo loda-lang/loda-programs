@@ -4,5 +4,5 @@
 
 add $0,1
 mov $2,$0
-seq $0,25238 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-2)*a(2) for n >= 3.
+seq $0,2212 ; Number of restricted hexagonal polyominoes with n cells.
 mul $0,$2

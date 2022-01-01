@@ -6,7 +6,3 @@ mov $2,$0
 cmp $2,0
 add $0,$2
 seq $0,104722 ; Self-convolution of repeated Catalan numbers.
-mov $3,1
-add $3,$0
-mov $0,$3
-sub $0,1
