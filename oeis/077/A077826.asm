@@ -9,7 +9,7 @@ lpb $0
   add $2,$5
   sub $4,1
   add $4,$3
-  add $4,3
+  add $4,2
   mov $5,$4
   mov $4,$2
   mov $2,$3
@@ -17,4 +17,3 @@ lpb $0
   mov $3,$5
 lpe
 mov $0,$3
-div $0,2
