@@ -1,10 +1,10 @@
 ; A143928: 2*p^2, for p an odd prime.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 18,50,98,242,338,578,722,1058,1682,1922,2738,3362,3698,4418,5618,6962,7442,8978,10082,10658,12482,13778,15842,18818,20402,21218,22898,23762,25538,32258,34322,37538,38642,44402,45602,49298,53138,55778,59858
 
-seq $0,98090 ; Numbers k such that 2k-3 is prime.
-sub $0,1
-bin $0,2
-mul $0,8
-add $0,1
+seq $0,298252 ; Even integers n such that n-3 is prime.
+sub $0,3
+mul $0,3
+pow $0,2
+div $0,9
 mul $0,2

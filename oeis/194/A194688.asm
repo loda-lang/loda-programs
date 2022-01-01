@@ -2,21 +2,9 @@
 ; Submitted by Jon Maiga
 ; 4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4
 
-mov $3,2
-mov $5,$0
-lpb $3
-  mov $0,$5
-  sub $3,1
-  add $0,$3
-  max $0,0
-  seq $0,79523 ; Utterly odd numbers: numbers whose binary representation ends in an odd number of ones.
-  sub $0,1
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+add $0,1
+seq $0,80426 ; a(1)=1, a(2)=3; all terms are either 1 or 3; each run of 3's is followed by a run of two 1's; and a(n) is the length of the n-th run of 3's.
+mul $0,2
+div $0,4
+mul $0,2
+add $0,2

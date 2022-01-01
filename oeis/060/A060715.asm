@@ -1,15 +1,15 @@
 ; A060715: Number of primes between n and 2n exclusive.
-; Submitted by Jamie Morken(m3a)
+; Submitted by Jon Maiga
 ; 0,1,1,2,1,2,2,2,3,4,3,4,3,3,4,5,4,4,4,4,5,6,5,6,6,6,7,7,6,7,7,7,7,8,8,9,9,9,9,10,9,10,9,9,10,10,9,9,10,10,11,12,11,12,13,13,14,14,13,13,12,12,12,13,13,14,13,13,14,15,14,14,13,13,14,15,15,15,15,15,15,16,15,16,16,16,17,17,16,17,18,18,18,18,18,19,19,19,20,21
 
-mov $2,$0
-mul $2,2
-mov $4,$0
-lpb $4
-  mov $0,$2
-  sub $4,1
-  sub $0,$4
-  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $3,$0
+mov $3,$0
+mul $0,2
+mov $5,$0
+lpb $3
+  mov $2,$5
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $3,1
+  add $4,$2
+  sub $5,1
 lpe
-mov $0,$3
+mov $0,$4

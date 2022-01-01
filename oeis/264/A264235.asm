@@ -1,0 +1,9 @@
+; A264235: Denominator of the coefficients in the expansion of 1/W(x) - 1/x where W(x) is the Lambert W function.
+; Submitted by Christian Krause
+; 1,2,3,8,15,144,35,5760,2835,44800,6237,43545600,25025,6706022400,13030875,229605376,10854718875,376610217984000,282907625,128047474114560000,311834363841,166487326720000,407510816383125,26976017466662584320000,62628675484375
+
+mov $1,$0
+trn $0,1
+seq $0,95996 ; a(n) = largest divisor of n! that is coprime to n.
+add $1,1
+mul $0,$1

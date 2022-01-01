@@ -10,8 +10,7 @@ lpb $2
   sub $2,1
   sub $0,$2
   seq $0,453 ; Stirling numbers of the second kind, S(n,4).
-  sub $0,$1
-  mul $1,6
+  mul $1,5
   add $1,$0
 lpe
 mov $0,$1

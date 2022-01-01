@@ -1,12 +1,21 @@
 ; A134974: Decimal expansion of 4*(-1 + phi) = 4*A094214, where the golden ratio phi = A001622.
+; Submitted by Jon Maiga
 ; 2,4,7,2,1,3,5,9,5,4,9,9,9,5,7,9,3,9,2,8,1,8,3,4,7,3,3,7,4,6,2,5,5,2,4,7,0,8,8,1,2,3,6,7,1,9,2,2,3,0,5,1,4,4,8,5,4,1,7,9,4,4,9,0,8,2,1,0,4,1,8,5,1,2,7,5,6,0,9,7,9,8,8,2,8,8,2,8,8,1,6,7,5,7,5,6,4,5,4,9
 
-lpb $0
-  mov $2,$0
-  mov $0,0
-  seq $2,10476 ; Decimal expansion of square root of 20.
-  add $2,18
+mov $1,11
+mov $3,$0
+mul $3,4
+lpb $3
+  add $1,$2
+  add $2,$1
+  mul $1,4
+  sub $3,1
 lpe
-mov $0,$2
-add $0,2
+mul $1,2
+mov $4,10
+pow $4,$0
+div $2,$4
+add $2,1
+div $1,$2
+mov $0,$1
 mod $0,10

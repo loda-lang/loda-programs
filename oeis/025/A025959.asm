@@ -7,11 +7,10 @@ mov $2,$0
 mov $3,$0
 lpb $2
   mov $0,$3
+  mul $1,2
   sub $2,1
   sub $0,$2
-  seq $0,16296 ; Expansion of 1/((1-2x)(1-5x)(1-7x)).
-  sub $0,$1
-  mul $1,5
+  seq $0,18209 ; Expansion of 1/((1-4x)(1-5x)(1-7x)).
   add $1,$0
 lpe
 mov $0,$1

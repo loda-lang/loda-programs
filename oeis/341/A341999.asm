@@ -1,7 +1,10 @@
 ; A341999: a(n) = 1 if the k-th arithmetic derivative is nonzero for all k >= 0, otherwise 0.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,1,0,1,1,1,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1
 
-seq $0,328308 ; a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
-add $0,1
-mod $0,2
+lpb $0
+  seq $0,258645 ; Fifth arithmetic derivative of n.
+lpe
+lpb $0
+  mov $0,1
+lpe

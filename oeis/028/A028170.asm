@@ -9,9 +9,9 @@ lpb $2
   mov $0,$3
   sub $2,1
   sub $0,$2
-  seq $0,19793 ; Expansion of 1/((1-5x)(1-6x)(1-9x)).
+  seq $0,20579 ; Expansion of 1/((1-6x)(1-8x)(1-9x)).
   sub $0,$1
-  mul $1,9
+  mul $1,6
   add $1,$0
 lpe
 mov $0,$1
