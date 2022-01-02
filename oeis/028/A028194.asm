@@ -7,7 +7,6 @@ mov $2,$0
 mov $3,$0
 lpb $2
   mov $0,$3
-  min $2,15
   trn $2,1
   sub $0,$2
   seq $0,20980 ; Expansion of 1/((1-8*x)*(1-10*x)*(1-12*x)).
