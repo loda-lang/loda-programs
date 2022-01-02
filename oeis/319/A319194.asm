@@ -12,10 +12,9 @@ lpb $3
   div $2,$3
   mov $5,$3
   pow $5,$0
-  mul $2,$5
-  add $4,$2
-  add $5,$4
+  mul $5,$2
   div $2,$5
   sub $3,1
+  add $4,$5
 lpe
 mov $0,$4

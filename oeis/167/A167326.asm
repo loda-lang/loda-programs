@@ -22,14 +22,13 @@ lpb $0
   lpe
   mov $5,1
   lpb $0
-    cmp $6,0
-    add $2,$6
     dif $0,$2
     mul $1,7
     mul $5,$2
     add $5,3
     mul $1,$5
     trn $2,7
+    cmp $6,0
   lpe
 lpe
 mov $0,$1

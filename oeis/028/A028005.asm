@@ -7,10 +7,12 @@ mov $2,$0
 mov $3,$0
 lpb $2
   mov $0,$3
+  dif $2,$1
   sub $2,1
   sub $0,$2
-  seq $0,16316 ; Expansion of 1/((1-2x)(1-8x)(1-9x)).
-  mul $1,7
+  seq $0,20782 ; Expansion of 1/((1-7x)(1-8x)(1-9x)).
+  sub $0,$1
+  mul $1,3
   add $1,$0
 lpe
 mov $0,$1

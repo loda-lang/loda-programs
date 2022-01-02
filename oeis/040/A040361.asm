@@ -1,7 +1,7 @@
 ; A040361: Continued fraction for sqrt(381).
+; Submitted by Jon Maiga
 ; 19,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1
 
-seq $0,10225 ; Continued fraction for sqrt(183).
-seq $0,203016 ; Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
-div $0,3
-sub $0,1
+seq $0,40256 ; Continued fraction for sqrt(273).
+mul $0,12
+div $0,10
