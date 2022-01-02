@@ -5,5 +5,4 @@
 pow $1,$0
 trn $0,1
 seq $0,5572 ; Number of walks on cubic lattice starting and finishing on the xy plane and never going below it.
-add $1,$0
-mov $0,$1
+add $0,$1

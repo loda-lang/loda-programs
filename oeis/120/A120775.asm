@@ -1,13 +1,9 @@
 ; A120775: The (3,1)-entry of the matrix M^n, where M is the 3 X 3 matrix [0,1,1; 2,1,2; 1,2,2] (n>=1).
+; Submitted by Simon Strandgaard
 ; 1,6,23,100,421,1786,7563,32040,135721,574926,2435423,10316620,43701901,185124226,784198803,3321919440,14071876561,59609425686,252509579303,1069647742900,4531100550901,19194049946506,81307300336923
 
 mul $0,3
-lpb $0
-  mov $2,$0
-  trn $0,2
-  seq $2,22112 ; Fibonacci sequence beginning 2, 6.
-  add $1,$2
-lpe
-div $1,4
-add $1,1
+mov $1,$0
+seq $1,199935 ; Size (b^3_n) of unit sphere in a certain graph (see Hazama article for precise definition).
 mov $0,$1
+add $0,1

@@ -4,6 +4,5 @@
 
 add $0,1
 seq $0,2388 ; Decimal expansion of Pi^2.
-sub $0,9
-sub $2,$0
-mov $0,$2
+mul $0,-1
+add $0,9
