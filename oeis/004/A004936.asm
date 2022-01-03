@@ -4,9 +4,3 @@
 
 seq $0,144186 ; Numerators of series expansion of the e.g.f. for the Catalan numbers.
 pow $0,2
-div $0,24
-add $0,2
-mul $0,2
-sub $0,4
-mul $0,12
-add $0,1
