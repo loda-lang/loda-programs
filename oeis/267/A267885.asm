@@ -5,8 +5,3 @@
 seq $0,267886 ; Decimal representation of the n-th iteration of the "Rule 235" elementary cellular automaton starting with a single ON (black) cell.
 seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
 div $0,6
-sub $0,10
-mul $0,10
-add $0,90
-div $0,10
-add $0,1
