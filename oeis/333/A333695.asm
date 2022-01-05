@@ -5,8 +5,6 @@
 mov $2,$0
 seq $0,57660 ; a(n) = Sum_{k=1..n} n/gcd(n,k).
 mov $1,$0
-sub $0,1
 add $2,1
 gcd $1,$2
 div $0,$1
-add $0,1
