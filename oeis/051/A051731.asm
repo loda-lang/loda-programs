@@ -1,16 +1,6 @@
 ; A051731: Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,1,1,1,0,1,1,1,0,1,1,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-add $0,1
-add $1,1
-lpb $0
-  div $1,10
-  add $2,1
-  gcd $0,$2
-lpe
-mov $0,$1
+seq $0,127446 ; Triangle T(n,k) = n*A051731(n,k) read by rows.
+min $0,1
