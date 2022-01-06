@@ -1,4 +1,4 @@
-; A175001: Number of stable n-celled patterns ("still lifes") in the Move (aka Morley; B368/S245) cellular automaton.
+; A175001: Number of stable n-celled patterns ("still lifes") in the Move (a.k.a. Morley; B368/S245) cellular automaton.
 ; 0,0,0,1,1,2,2,4,1,3
 
 mov $1,2
