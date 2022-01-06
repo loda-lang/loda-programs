@@ -1,15 +1,13 @@
 ; A084942: Enneagorials: n-th polygorial for k=9.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(s3)
 ; 1,1,9,216,9936,745200,82717200,12738448800,2598643555200,678245967907200,220429939569840000,87290256069656640000,41375581377017247360000,23128949989752641274240000
 
-sub $0,1
-mov $1,1
 mov $2,1
+mov $4,1
 lpb $0
   sub $0,1
-  add $3,7
-  add $2,$3
-  add $2,1
-  mul $1,$2
+  add $3,$2
+  add $2,7
+  mul $4,$3
 lpe
-mov $0,$1
+mov $0,$4
