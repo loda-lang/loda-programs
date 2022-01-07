@@ -43,6 +43,8 @@ A005693: Erroneous version of A321442.
 A005734: Incomplete version of A001049.
 A005780: Erroneous version of A033678.
 A005844: a(n+1) = 2^a(n) - 1.
+A005881: Theta series of planar hexagonal lattice (A2) with respect to edge.
+A005882: Theta series of planar hexagonal lattice (A2) with respect to deep hole.
 A005932: Erroneous version of A003781.
 A005965: Erroneous version of A000421.
 A005992: Erroneous version of A011260.
