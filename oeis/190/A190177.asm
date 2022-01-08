@@ -9,14 +9,14 @@ mul $3,4
 lpb $3
   div $1,2
   mul $1,2
+  add $6,17
   add $1,$6
-  add $1,$3
   add $2,$1
-  add $1,$2
   sub $3,1
   add $5,$2
   sub $2,$6
   add $6,$5
+  add $6,$1
 lpe
 mov $4,10
 pow $4,$0
