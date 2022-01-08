@@ -1,8 +1,6 @@
 ; A097613: a(n) = binomial(2n-3,n-1) + binomial(2n-2,n-2).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,2,7,25,91,336,1254,4719,17875,68068,260338,999362,3848222,14858000,57500460,222981435,866262915,3370764540,13135064250,51250632510,200205672810,782920544640,3064665881940,12007086477750,47081501377326,184753963255176,725510446350004
 
-mov $2,$0
-seq $2,51924 ; a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
-dif $2,2
-mov $0,$2
+seq $0,51924 ; a(n) = binomial(2*n,n) - binomial(2*n-2,n-1); or (3n-2)*C(n-1), where C = Catalan numbers (A000108).
+dif $0,2
