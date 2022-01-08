@@ -4,8 +4,6 @@
 
 add $0,5
 seq $0,930 ; Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
-mul $0,2
-sub $0,8
-div $0,2
+sub $0,4
 mul $0,3
 add $0,128
