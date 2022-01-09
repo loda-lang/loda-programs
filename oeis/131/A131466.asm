@@ -13,7 +13,6 @@ div $0,2
 add $0,1
 mov $2,9
 add $2,$0
-sub $3,2
 pow $4,2
 add $3,$4
 add $3,$2
@@ -22,4 +21,4 @@ mov $0,$3
 sub $0,72
 div $0,9
 mul $0,2
-add $0,1
+sub $0,3
