@@ -8,13 +8,9 @@ mov $3,1
 lpb $0
   mul $2,$0
   sub $2,$3
-  lpb $3
-    cmp $3,0
-    sub $3,7088
-  lpe
   mul $3,$0
   sub $0,1
 lpe
-mul $3,$2
-mov $0,$3
+mul $2,$3
+mov $0,$2
 div $0,2
