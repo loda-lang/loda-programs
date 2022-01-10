@@ -1,0 +1,19 @@
+; A121001: Denominators of partial sums of Catalan numbers scaled by powers of 1/18^2 = 1/324.
+; Submitted by Christian Krause
+; 1,324,52488,34012224,5509980288,595077871104,96402615118848,124937789194027008,60719765548297125888,19673204037648268787712,3187059054099019543609344,2065214267056164664258854912
+
+mov $1,1
+lpb $0
+  mov $2,$0
+  sub $0,1
+  mul $2,2
+  add $2,1
+  mul $3,$2
+  add $2,1
+  add $3,$1
+  mul $1,81
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1

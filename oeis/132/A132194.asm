@@ -1,8 +1,8 @@
 ; A132194: a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w4)
 ; 1,1,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,1,1,1,0,0
 
 trn $0,1
-seq $0,296058 ; Numbers k such that floor((3*k - 1)/2) is prime.
-add $0,1
+seq $0,65091 ; Odd primes.
+div $0,3
 mod $0,2
