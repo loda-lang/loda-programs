@@ -1,10 +1,12 @@
 ; A039914: Smallest k>1 such that k(p-1)-1 is divisible by p^2, p=n-th prime.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(s3)
 ; 5,5,19,41,109,155,271,341,505,811,929,1331,1639,1805,2161,2755,3421,3659,4421,4969,5255,6161,6805,7831,9311,10099,10505,11341,11771,12655,16001,17029,18631,19181,22051,22649,24491,26405,27721,29755,31861
 
-mul $0,2
-max $0,2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-bin $0,2
-mul $0,2
+mod $0,53
+max $0,1
+seq $0,40 ; The prime numbers.
+mov $1,$0
+bin $1,2
+mul $1,2
+mov $0,$1
 sub $0,1
