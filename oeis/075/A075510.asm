@@ -1,17 +1,8 @@
 ; A075510: Fifth column of triangle A075497.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w3)
 ; 1,30,560,8400,111216,1360800,15790720,176563200,1922176256,20518417920,215825326080,2244998246400,23153670762496,237224718704640,2418102840688640,24549985173504000,248464183682727936
 
-mov $1,1
-mov $2,$0
-mov $3,$0
-lpb $2
-  mov $0,$3
-  sub $2,1
-  sub $0,$2
-  seq $0,26562 ; Expansion of 1/((1-2x)(1-6x)(1-8x)(1-10x)).
-  sub $0,$1
-  mul $1,5
-  add $1,$0
-lpe
-mov $0,$1
+mov $2,2
+pow $2,$0
+seq $0,481 ; Stirling numbers of the second kind, S(n,5).
+mul $0,$2
