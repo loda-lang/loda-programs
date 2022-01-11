@@ -4,7 +4,8 @@
 
 mov $2,-1
 pow $2,$0
-seq $0,121443 ; Sum of divisors d of n which are odd and n/d is not divisible by 3.
+seq $0,124449 ; Expansion of (phi(-q^3)^4 - phi(-q)^4)/8 in powers of q where phi() is a Ramanujan theta function.
 mul $2,2
-bin $2,2
 mul $0,$2
+mul $0,18
+div $0,36
