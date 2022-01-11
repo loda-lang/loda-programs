@@ -1,7 +1,12 @@
 ; A188221: [nr+kr]-[nr]-[kr], where r=sqrt(5), k=1, [ ]=floor.
+; Submitted by Jamie Morken(w3)
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0
 
 mul $0,2
-add $0,1
-seq $0,159917 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
-div $0,2
+seq $0,139764 ; Smallest term in Zeckendorf representation of n.
+sub $0,1
+mov $1,4
+lpb $0
+  mov $0,$1
+lpe
+mod $0,2

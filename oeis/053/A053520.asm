@@ -1,19 +1,18 @@
 ; A053520: Denominators of successive convergents to continued fraction 1/(2+2/(3+3/(4+4/(5+5/(6+6/(7+7/(8+8/9+...))))))).
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w2)
 ; 2,8,38,74,1522,11986,11838,1054766,11506538,45706526,1772006854,24681524038,11169012898,5874202721042,99515904921182,66139171377658,3075946152109262,51924337160029042,4714400135799462226
 
 add $0,1
 mov $1,1
 lpb $0
-  sub $1,$2
-  add $2,$1
-  mul $2,$0
+  mov $2,$0
   sub $0,1
-  mul $1,2
-  mul $2,2
-  dif $2,-1
-  sub $1,$2
+  add $1,$3
+  add $2,1
+  mul $3,-1
+  add $3,$1
+  mul $1,$2
 lpe
-gcd $2,$1
-div $1,$2
+gcd $3,$1
+div $1,$3
 mov $0,$1
