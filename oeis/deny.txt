@@ -1729,6 +1729,7 @@ A300755: Erroneous version of A145393.
 A302203: a(n) = floor(sin(n)) + 1.
 A306574: Incorrect version of A088527.
 A307289: Erroneous version of A006227.
+A317107: Numbers missing from A317105.
 A317949: Erroneous version of A013582.
 A318936: Erroneous version of A088750.
 A323461: Erroneous version of A323457.

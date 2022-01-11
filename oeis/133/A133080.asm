@@ -1,18 +1,6 @@
 ; A133080: Interpolation operator: Triangle with an even number of zeros in each line followed by 1 or 2 ones.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w3)
 ; 1,1,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-sub $1,$0
-pow $1,28
-sub $1,$0
-add $0,$1
-sub $1,2
-bin $1,$0
-mov $0,$1
-mod $0,2
-add $0,2
+seq $0,94587 ; Triangle of permutation coefficients arranged with 1's on the diagonal. Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
 mod $0,2

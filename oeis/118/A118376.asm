@@ -5,9 +5,8 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  seq $2,166229 ; Expansion of (1-2x-sqrt(1-8x+8x^2))/(2x).
-  add $1,$2
+  seq $2,68764 ; Generalized Catalan numbers.
+  add $3,$2
 lpe
-mov $0,$1
-div $0,2
+mov $0,$3
 add $0,1
