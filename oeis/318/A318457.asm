@@ -1,6 +1,6 @@
-; A318458: a(n) = n AND A001065(n), where AND is bitwise-and (A004198) & A001065 = sum of proper divisors.
+; A318457: a(n) = n XOR A001065(n), where XOR is bitwise-xor (A003987) and A001065 = sum of proper divisors.
 ; Coded manually 2021-09-25 by Simon Strandgaard, https://github.com/neoneye
-; 0,3,2,6,4,5,6,12,10,15,10,10,12,9,10,24,16,27,18,30,18,29,22,20,28,23,18,18,28,17,30,48,42,51,36,54,36,53,42,60
+; 1,3,2,7,4,0,6,15,13,2,10,28,12,4,6,31,16,7,18,2,30,24,22,60,31,10,22,0,28,52,30,63,46,54,46,19,36,48,54,26
 
 mov $5,$0
 add $0,1 ; Adjust offset=1
