@@ -4,5 +4,4 @@
 
 mul $0,10
 add $0,7
-seq $0,48974 ; Odd numbers that are the sum of 2 primes.
-sub $0,2
+seq $0,65091 ; Odd primes.

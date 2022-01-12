@@ -5,5 +5,4 @@
 add $0,1
 seq $0,65091 ; Odd primes.
 pow $0,2
-div $0,24
-mul $0,8
+div $0,3
