@@ -6,7 +6,4 @@ add $0,1
 seq $0,65091 ; Odd primes.
 sub $0,6
 pow $0,2
-sub $0,25
-div $0,3
-add $0,8
-div $0,8
+div $0,24
