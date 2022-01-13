@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $0,2
-seq $1,63718 ; a(n) is the smallest divisor of n^2 that is greater than n.
+seq $1,63717 ; a(n) is the greatest divisor of n^2 that is less than n.
 gcd $0,$1
 div $1,$0
 div $0,$1

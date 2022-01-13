@@ -1,15 +1,15 @@
 ; A005666: Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; 0,2,7,21,59,163,447,1223,3343,9135,24959,68191,186303,508991,1390591,3799167,10379519,28357375,77473791,211662335,578272255,1579869183,4316282879,11792304127,32217174015,88018956287,240472260607,656982433791,1794909388799
 
-mov $2,1
-mov $4,1
 lpb $0
   sub $0,1
   mul $2,2
-  mov $3,$4
-  mov $4,$2
-  add $2,$3
+  mov $3,$2
+  add $3,$4
+  add $4,1
+  mov $2,$4
+  add $4,$3
 lpe
+add $2,$4
 mov $0,$2
-sub $0,1

@@ -9,5 +9,4 @@ sub $0,1
 pow $1,4
 mul $1,$0
 mov $0,$1
-div $0,24
-mul $0,4
+div $0,6
