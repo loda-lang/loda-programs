@@ -1,7 +1,7 @@
 ; A072335: Expansion of 1/((1-x^2)*(1-4*x+x^2)).
-; Submitted by Jamie Morken(s2)
+; Submitted by Jon Maiga
 ; 1,4,16,60,225,840,3136,11704,43681,163020,608400,2270580,8473921,31625104,118026496,440480880,1643897025,6135107220,22896531856,85451020204,318907548961,1190179175640,4441809153600,16577057438760,61866420601441,230888624967004
 
-add $0,2
-seq $0,1075 ; a(0) = 1, a(1) = 2, a(n) = 4*a(n-1) - a(n-2).
-div $0,6
+add $0,1
+seq $0,102091 ; Number of perfect matchings in the C_{2n} X P_3 graph (C_{2n} is the cycle graph on 2n vertices and P_3 is the path graph on 3 vertices).
+div $0,24

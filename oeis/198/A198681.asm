@@ -8,7 +8,7 @@ lpb $0
   div $0,3
 lpe
 mul $3,5
-add $3,4
+add $3,1
 lpb $3
   mod $3,3
 lpe

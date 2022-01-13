@@ -9,17 +9,12 @@ mul $0,8
 add $0,1
 lpb $0
   add $0,1
-  mov $3,$0
   gcd $0,3
-  lpb $3
-    mov $2,1
-    mov $3,1
-  lpe
   lpb $0
     sub $0,1
     add $2,2
   lpe
 lpe
 mov $0,$2
-add $0,6
+add $0,7
 mod $0,10
