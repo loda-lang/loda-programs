@@ -1,20 +1,15 @@
 ; A133034: First differences of Padovan sequence A000931.
-; Submitted by Christian Krause
+; Submitted by Jon Maiga
 ; -1,0,1,-1,1,0,0,1,0,1,1,1,2,2,3,4,5,7,9,12,16,21,28,37,49,65,86,114,151,200,265,351,465,616,816,1081,1432,1897,2513,3329,4410,5842,7739,10252,13581,17991,23833,31572,41824,55405,73396
 
-add $0,1
-mov $2,3
-mov $4,6
+mov $2,1
+mov $3,-1
 lpb $0
   sub $0,1
-  sub $3,1
-  sub $3,$1
-  add $4,$1
-  mov $1,$3
-  sub $2,4
-  mov $3,$2
-  mov $2,$4
-  sub $2,1
-  add $3,1
+  mov $1,$4
+  mov $4,$2
+  mov $2,$1
+  add $2,$3
+  mov $3,$1
 lpe
-mov $0,$1
+mov $0,$3

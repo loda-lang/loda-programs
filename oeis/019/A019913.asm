@@ -4,8 +4,7 @@
 
 add $0,1
 seq $0,11549 ; Decimal expansion of sqrt(3) truncated to n places.
+mod $0,10
+sub $0,13
 mul $0,-1
-add $0,9
-mod $0,10
-add $0,10
-mod $0,10
+sub $0,4

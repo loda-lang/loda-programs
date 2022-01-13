@@ -1,5 +1,5 @@
 ; A127594: Numbers k such that 256 k + 85 is prime.
-; Submitted by Jamie Morken(s4)
+; Submitted by Christian Krause
 ; 3,4,6,7,9,13,22,24,27,28,39,42,43,48,52,66,69,72,73,76,84,88,93,97,108,114,118,123,126,147,154,157,163,168,183,184,186,196,198
 
 mov $1,-8
@@ -22,6 +22,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$1
-sub $0,131
 div $0,64
-add $0,2
