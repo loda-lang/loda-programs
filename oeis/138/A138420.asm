@@ -8,5 +8,4 @@ mov $1,$0
 pow $1,2
 sub $1,$0
 mov $0,$1
-div $0,12
-mul $0,3
+div $0,4

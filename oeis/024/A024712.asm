@@ -1,9 +1,12 @@
 ; A024712: a(n) = residue mod 3 of n-th term of A024702.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,2,2,1,0,0,1,2,1,0,1,2,2,0,1,2,1,0,0,2,2,0,2,2,1,0,0,1,0,1,2,1,1,2,1,0,1,2,0,0,2,1,0,0,1,2,2,1,0,1,2,0,1,2,0,0,2,2,1,1,0,1,2,2,2,1,1,2,2,0,2,1,0,1,2,0,1,1,1,2,0,0,2,2,0,2,2,1,0,2,0,1,1,0,1,0,0,0,2,0
 
-add $0,2
-seq $0,6005 ; The odd prime numbers together with 1.
+seq $0,173064 ; a(n) = prime(n) - 5.
+add $0,7
+mul $0,4
+sub $0,8
 pow $0,2
-mod $0,18
-div $0,6
+mul $0,2
+div $0,768
+mod $0,3

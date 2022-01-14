@@ -5,9 +5,6 @@ add $0,1
 mov $2,$0
 lpb $0
   mov $3,$2
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
   dif $3,$0
   lpb $3
     mov $1,$0
