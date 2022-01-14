@@ -8,15 +8,14 @@ lpb $2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $5,$1
-  add $1,4
+  add $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
   sub $2,18
-  sub $5,1
   add $5,$1
-  add $1,1
+  add $1,2
   mov $6,$5
   add $5,2
 lpe

@@ -6,6 +6,4 @@ seq $0,74599 ; Numerator of 2 * H(n,2,1), a generalized harmonic number. See A07
 lpb $0
   dif $0,4
 lpe
-sub $0,2
 div $0,2
-add $0,1

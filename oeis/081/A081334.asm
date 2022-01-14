@@ -1,9 +1,10 @@
 ; A081334: sigma(2*n^2) modulo 4.
+; Submitted by Jon Maiga
 ; 3,3,3,3,1,3,3,3,3,1,3,3,1,3,1,3,1,3,3,1,3,3,3,3,3,1,3,3,1,1,3,3,3,1,1,3,1,3,1,1,1,3,3,3,1,3,3,3,3,3,1,1,1,3,1,3,3,1,3,1,1,3,3,3,3,3,3,1,3,1,3,3,1,1,3,3,3,1,3,1,3,1,3,3,3,3,1,3,1,1,1,3,3,3,1,3,1,3,3,3
 
-seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-sub $0,1
-seq $0,97022 ; a(n) = (sigma(2n^2)-3)/6.
-gcd $0,2
 mul $0,2
+add $0,2
+pow $0,2
 sub $0,1
+seq $0,46897 ; Sum of divisors of n that are not divisible by 4.
+mod $0,4

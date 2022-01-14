@@ -5,8 +5,7 @@
 mov $2,$0
 add $0,1
 mov $1,$0
-mov $0,1
-seq $0,40 ; The prime numbers.
+mov $0,3
 pow $0,$1
 seq $2,40 ; The prime numbers.
 mod $0,$2

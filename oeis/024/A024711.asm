@@ -1,8 +1,11 @@
 ; A024711: a(n) = residue mod 2 of n-th term of A024702.
-; Submitted by Jamie Morken(s3)
+; Submitted by Christian Krause
 ; 1,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,0,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,1,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,0,1,1,1,1
 
-add $0,1
-seq $0,48974 ; Odd numbers that are the sum of 2 primes.
-div $0,4
+seq $0,173064 ; a(n) = prime(n) - 5.
+add $0,7
+mul $0,4
+sub $0,8
+pow $0,2
+div $0,384
 mod $0,2
