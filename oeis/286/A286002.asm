@@ -4,7 +4,6 @@
 
 add $0,1
 mov $2,$0
-mov $4,1
 lpb $0
   mov $3,$2
   dif $3,$0
@@ -14,4 +13,4 @@ lpb $0
 lpe
 add $4,$2
 mov $0,$4
-sub $0,2
+sub $0,1
