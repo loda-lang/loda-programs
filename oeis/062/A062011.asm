@@ -1,28 +1,6 @@
 ; A062011: a(n) = 2*tau(n) = 2*A000005(n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 2,4,4,6,4,8,4,8,6,8,4,12,4,8,8,10,4,12,4,12,8,8,4,16,6,8,8,12,4,16,4,12,8,8,8,18,4,8,8,16,4,16,4,12,12,8,4,20,6,12,8,12,4,16,8,16,8,8,4,24,4,8,12,14,8,16,4,12,8,16,4,24,4,8,12,12,8,16,4,20,10,8,4,24,8,8,8,16,4,24,8,12,8,8,8,24,4,12,12,18
 
-add $0,1
-mov $1,1
-mov $2,2
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    cmp $4,0
-    cmp $4,0
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    add $5,1
-  lpe
-  mul $1,$5
-lpe
-mov $0,$1
-sub $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mul $0,2
-add $0,2

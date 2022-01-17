@@ -1,12 +1,8 @@
 ; A165826: Totally multiplicative sequence with a(p) = 5.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w4)
 ; 1,5,5,25,5,25,5,125,25,25,5,125,5,25,25,625,5,125,5,125,25,25,5,625,25,25,125,125,5,125,5,3125,25,25,25,625,5,25,25,625,5,125,5,125,125,25,5,3125,25,125,25,125,5,625,25,625,25,25,5,625,5,25,125,15625,25,125,5,125,25,125,5,3125,5,25,125,125,25,125,5,3125,625,25,5,625,25,25,25,625,5,625,25,125,25,25,25,15625,5,125,125,625
 
-add $0,1
-mov $1,1
-lpb $0
-  sub $0,1
-  seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
-  mul $1,5
-lpe
-mov $0,$1
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+mov $2,5
+pow $2,$0
+mov $0,$2
