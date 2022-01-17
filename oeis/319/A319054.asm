@@ -1,12 +1,10 @@
 ; A319054: Maximum product of an aperiodic integer partition of n.
+; Submitted by Jamie Morken(w3)
 ; 1,2,3,4,6,8,12,18,24,36,54,72,108,162,216,324,486,648,972,1458,1944,2916,4374,5832,8748,13122,17496,26244,39366,52488,78732,118098,157464,236196,354294,472392,708588,1062882,1417176,2125764,3188646,4251528,6377292
 
-mov $3,$0
-seq $0,91915 ; Maximum of even products of partitions of n.
-mov $2,$0
-cmp $2,0
-add $0,$2
-div $3,$0
-add $3,1
-add $0,$3
-sub $0,1
+add $0,2
+seq $0,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
+add $0,17
+mul $0,2
+div $0,3
+sub $0,11
