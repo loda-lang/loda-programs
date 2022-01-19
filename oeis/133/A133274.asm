@@ -1,9 +1,15 @@
 ; A133274: Numbers which are both 12-gonal and centered 12-gonal numbers.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,793,382537,184382353,88871911921,42836077163881,20646900321079033,9951763118682930337,4796729176304851343713,2312013511215819664739641,1114385715676848773553163561,537131602942729893032960097073
 
-seq $0,157014 ; Expansion of x*(1-x)/(1 - 22*x + x^2).
-pow $0,2
-div $0,440
-mul $0,792
-add $0,1
+mov $3,3
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,20
+  add $2,$1
+  add $3,$2
+lpe
+pow $3,2
+mov $0,$3
+div $0,5
