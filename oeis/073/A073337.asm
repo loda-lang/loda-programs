@@ -6,6 +6,5 @@ mov $1,$0
 seq $1,96174 ; Even numbers n such that (n^3+1)/(n+1) is prime.
 bin $1,2
 mov $0,$1
-sub $0,1
 mul $0,2
-add $0,3
+add $0,1
