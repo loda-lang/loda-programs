@@ -6,24 +6,18 @@ add $0,1
 mov $2,$0
 mov $3,12
 lpb $0
-  lpb $0
-    mov $1,$2
-    dif $1,$0
-    cmp $1,$2
-    cmp $1,0
-    add $3,$1
-    mul $1,$0
-    lpb $1
-      dif $1,2
-    lpe
-    sub $0,1
-    add $3,$1
+  mov $1,$2
+  dif $1,$0
+  cmp $1,$2
+  cmp $1,0
+  add $3,$1
+  mul $1,$0
+  lpb $1
+    dif $1,2
   lpe
-  add $1,8
-  mul $1,$3
+  sub $0,1
+  add $3,$1
 lpe
-div $1,8
-mov $0,$1
-sub $0,12
+mov $0,$3
 div $0,2
-add $0,1
+sub $0,5

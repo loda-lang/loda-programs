@@ -1,23 +1,21 @@
 ; A076390: Decimal expansion of lemniscate constant B.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w3)
 ; 5,9,9,0,7,0,1,1,7,3,6,7,7,9,6,1,0,3,7,1,9,9,6,1,2,4,6,1,4,0,1,6,1,9,3,9,1,1,3,6,0,6,3,3,1,6,0,7,8,2,5,7,7,9,1,3,1,8,3,7,4,7,6,4,7,3,2,0,2,6,0,7,0,7,1,9,5,7,8,3,5,4,1,7,9,4,2,7,7,8,2,4,4,8,9,6,6,9,4,6
 
 add $0,1
-mov $2,1
+mov $1,1
 mov $3,$0
-mul $3,10
+mul $3,5
 lpb $3
-  trn $3,1
   mul $1,$3
   mov $5,$3
   mul $5,2
-  add $5,1
+  sub $5,1
   mul $2,$5
+  add $2,$1
   add $1,$2
-  bin $5,$1
-  add $5,$0
-  div $1,$5
-  div $2,$5
+  div $1,$0
+  div $2,$0
   sub $3,1
 lpe
 mov $4,10
