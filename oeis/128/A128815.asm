@@ -1,7 +1,24 @@
 ; A128815: Numbers n such that n-th and (n+2)th triangular numbers sum up to a prime.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,4,5,7,11,13,14,16,19,20,23,26,32,37,40,49,53,56,58,61,65,68,70,74,76,77,79,88,89,98,100,104,109,110,116,118,130,137,140,142,146,149,152,154,160,161,163,166,167,172,175,187,188,191,193,202,205,208,214,217,230,235,244,245,265,271,277,278,286,287,289,292,308,313,328,331,335,341,343,347,350,356,368,377,380,382,391,394,397,401,403,404,413,415,425,433,434,446,452
 
+mov $1,6
+mov $2,$0
+pow $2,2
+mov $5,4
+lpb $2
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $5,2
+  add $1,$5
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$5
+sub $0,4
+div $0,2
 add $0,1
-seq $0,55494 ; Numbers k such that k^2 - k + 1 is prime.
-sub $0,2
