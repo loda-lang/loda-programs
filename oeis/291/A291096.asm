@@ -6,5 +6,4 @@ mov $1,$0
 mov $0,3
 pow $0,$1
 seq $1,2293 ; Number of dissections of a polygon: binomial(4*n, n)/(3*n + 1).
-mul $1,$0
-mov $0,$1
+mul $0,$1

@@ -7,7 +7,7 @@ mov $4,1
 lpb $0
   mov $2,$0
   add $2,1
-  pow $3,14
+  pow $3,6
   lpb $3
     mul $2,$4
     mov $4,$1
