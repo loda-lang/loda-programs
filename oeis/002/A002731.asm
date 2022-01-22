@@ -1,8 +1,23 @@
 ; A002731: Numbers n such that (n^2 + 1)/2 is prime.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 3,5,9,11,15,19,25,29,35,39,45,49,51,59,61,65,69,71,79,85,95,101,121,131,139,141,145,159,165,169,171,175,181,195,199,201,205,209,219,221,231,245,261,271,275,279,289,299,309,315,321,325,329,335,345,349,371,375,379,391,399,405,409,415,425,435,441,445,449,451,459,461,471,519,521,529,535,545,559,569,571,575,579,581,595,609,631,639,641,649,661,669,685,689,695,699,711,715,739,745
 
-seq $0,129307 ; Intersection of A000217 and A005098.
-seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
-mul $0,2
-add $0,1
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $5,4
+  add $1,$5
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$5
+sub $0,4
+div $0,2
+add $0,3
