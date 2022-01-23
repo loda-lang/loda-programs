@@ -7,8 +7,4 @@ seq $0,40 ; The prime numbers.
 add $1,1
 seq $1,7504 ; Sum of the first n primes.
 mul $1,$0
-mul $1,66
 mov $0,$1
-sub $0,264
-div $0,66
-add $0,4

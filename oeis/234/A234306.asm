@@ -12,10 +12,5 @@ lpb $0
   cmp $3,$2
   add $4,$3
 lpe
-lpb $2
-  cmp $2,3
-  mul $4,4
-lpe
 mov $0,$4
-sub $0,4
-div $0,4
+sub $0,1
