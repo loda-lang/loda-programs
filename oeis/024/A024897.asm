@@ -17,6 +17,4 @@ lpb $2
   add $4,10
 lpe
 mov $0,$4
-sub $0,18
 div $0,5
-add $0,3

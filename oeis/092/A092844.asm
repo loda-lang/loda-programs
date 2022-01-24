@@ -5,7 +5,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  seq $2,100484 ; Even semiprimes.
+  seq $2,100484 ; The primes doubled.
   add $1,$2
   mul $1,10
 lpe
