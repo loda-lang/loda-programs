@@ -1,19 +1,16 @@
 ; A307465: Number of Catalan words of length n avoiding the pattern 110.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w4)
 ; 1,1,2,5,13,33,82,201,489,1185,2866,6925,16725,40385,97506,235409,568337,1372097,3312546,7997205,19306973,46611169,112529330,271669849,655869049,1583407969,3822685010,9228778013,22280241061,53789260161,129858761410
 
-mov $1,4
-mov $2,1
-mov $4,1
 lpb $0
   sub $0,1
-  sub $1,1
-  add $1,$4
-  mov $3,$4
-  mov $4,$2
-  add $2,$3
-  add $4,$2
+  add $2,$4
+  add $1,$2
+  mov $3,$2
+  add $4,1
+  mov $2,$4
+  add $4,$3
 lpe
 mov $0,$1
 div $0,2
-sub $0,1
+add $0,1

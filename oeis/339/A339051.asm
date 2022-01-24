@@ -1,11 +1,7 @@
 ; A339051: Even bisection of the infinite Fibonacci word A096270.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0
 
-add $0,1
-trn $0,2
 mul $0,2
-add $0,1
-seq $0,159917 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
-add $0,5
-mod $0,2
+seq $0,276868 ; First differences of the Beatty sequence A276855 for 3 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
+sub $0,4
