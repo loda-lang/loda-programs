@@ -1702,6 +1702,7 @@ A274942: Erroneous version of A129860.
 A275081: Duplicate of A097443.
 A275571: Incorrect duplicate of A004146.
 A276853: Beatty sequence for 2*e.
+A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265)
 A277723: a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265)
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279796: Erroneous duplicate of A285022.
