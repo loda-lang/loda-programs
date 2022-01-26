@@ -6,7 +6,7 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  mov $5,$3
+  mov $5,$0
   mov $7,2
   lpb $7
     sub $7,1
@@ -17,13 +17,14 @@ lpb $3
     seq $2,81737 ; a(n) = (n-1)*10 + n-th decimal digit of Pi=3.14159...
     mov $3,0
     mov $4,$2
-    add $4,10
     mov $6,$7
     mul $6,$2
     add $8,$6
   lpe
+  min $5,1
   mul $5,$4
   mov $4,$8
   sub $4,$5
 lpe
 mov $0,$4
+sub $0,10
