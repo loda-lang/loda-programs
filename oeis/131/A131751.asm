@@ -1,13 +1,17 @@
 ; A131751: Numbers that are both centered triangular and centered pentagonal.
+; Submitted by Jamie Morken(w1)
 ; 1,31,1891,117181,7263301,450207451,27905598631,1729696907641,107213302675081,6645495068947351,411913480972060651,25531990325198812981,1582571486681354344141,98093900183918770523731
 
-seq $0,253654 ; Indices of pentagonal numbers (A000326) which are also centered pentagonal numbers (A005891).
-div $0,5
-mul $0,3
-add $0,1
-mul $0,2
-sub $0,1
-pow $0,2
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,6
+  add $2,$1
+  add $3,$2
+lpe
+pow $3,2
+mov $0,$3
 div $0,48
 mul $0,30
 add $0,1
