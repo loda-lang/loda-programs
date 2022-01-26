@@ -10,12 +10,7 @@ lpb $0
   sub $0,2
   cmp $3,$2
   cmp $3,0
-  add $5,$3
+  add $4,$3
 lpe
-lpb $2
-  bin $2,$4
-  div $2,2
-  add $5,$0
-lpe
-mov $0,$5
+add $0,$4
 sub $0,1

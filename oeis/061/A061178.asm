@@ -1,0 +1,8 @@
+; A061178: Third column (m=2) of triangle A060920 (bisection of Fibonacci triangle, even part).
+; Submitted by Jamie Morken(w2)
+; 1,9,51,233,942,3522,12473,42447,140109,451441,1426380,4434420,13599505,41225349,123723351,368080793,1086665562,3186317718,9286256393,26916587307,77634928209,222920650081
+
+mov $2,$0
+add $2,$0
+seq $2,1628 ; Convolved Fibonacci numbers.
+mov $0,$2
