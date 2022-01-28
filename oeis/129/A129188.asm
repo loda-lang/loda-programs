@@ -4,8 +4,7 @@
 
 mov $3,$0
 seq $0,129189 ; n-th prime + n-th composite - n.
-add $0,4
+add $0,2
 mov $2,$3
 mul $2,2
 add $0,$2
-sub $0,2

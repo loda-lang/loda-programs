@@ -5,6 +5,4 @@
 mul $0,2
 add $0,1
 seq $0,1874 ; Convolved Fibonacci numbers.
-sub $0,6
 div $0,2
-add $0,3
