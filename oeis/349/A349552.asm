@@ -1,4 +1,4 @@
-; A349552: allocated for Clark Kimberling
+; A349552: a(n) is the number of halving partitions of n (see Comments for definition).
 ; Submitted by Christian Krause
 ; 1,1,1,1,2,1,2,1,2,2,3,1,3,2,2,1
 

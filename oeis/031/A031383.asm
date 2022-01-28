@@ -4,6 +4,5 @@
 
 mul $0,9
 seq $0,173059 ; Nonnegative numbers n such that 2*n + 17 is prime.
-sub $0,3
 mul $0,2
-add $0,23
+add $0,17
