@@ -1,5 +1,5 @@
 ; A287005: Number of connected dominating sets on the n-Moebius ladder.
-; Submitted by Jamie Morken(w1)
+; Submitted by Christian Krause
 ; 49,129,361,989,2689,7233,19273,50925,133585,348225,902825
 
 add $0,2
@@ -20,6 +20,5 @@ lpb $0
 lpe
 add $5,$1
 mov $0,$5
-sub $0,10
 mul $0,4
-add $0,49
+add $0,9

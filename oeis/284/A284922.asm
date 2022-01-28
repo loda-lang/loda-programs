@@ -1,7 +1,23 @@
 ; A284922: Numbers with digits 2 and 8 only.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w3)
 ; 2,8,22,28,82,88,222,228,282,288,822,828,882,888,2222,2228,2282,2288,2822,2828,2882,2888,8222,8228,8282,8288,8822,8828,8882,8888,22222,22228,22282,22288,22822,22828,22882,22888,28222,28228,28282,28288,28822,28828
 
-seq $0,32818 ; Numbers whose set of base-6 digits is {1,4}.
-seq $0,7092 ; Numbers in base 6.
+add $0,1
+mov $2,1
+lpb $0
+  mov $3,$0
+  mul $0,2
+  sub $0,1
+  div $0,4
+  mod $3,2
+  mul $3,$2
+  add $1,$3
+  mul $2,10
+lpe
+mul $1,9
+sub $2,$1
+mul $2,4
+mov $0,$2
+add $0,$1
+div $0,9
 mul $0,2
