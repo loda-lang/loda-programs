@@ -1585,7 +1585,6 @@ A214044: Duplicate of A177516.
 A214213: Erroneous version of A005942.
 A214267: Duplicate of A005437.
 A214610: Duplicate of A000104
-A217589: Bit reversed 16-bit numbers.
 A217716: Duplicate of A129824.
 A218877: Erroneous version of A179982.
 A219876: Duplicate of A077042 with alternating up/down antidiagonals.
