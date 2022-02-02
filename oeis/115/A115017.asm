@@ -1,18 +1,27 @@
 ; A115017: a(n) = largest triangular number dividing n.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w1)
 ; 1,1,3,1,1,6,1,1,3,10,1,6,1,1,15,1,1,6,1,10,21,1,1,6,1,1,3,28,1,15,1,1,3,1,1,36,1,1,3,10,1,21,1,1,45,1,1,6,1,10,3,1,1,6,55,28,3,1,1,15,1,1,21,1,1,66,1,1,3,10,1,36,1,1,15,1,1,78,1,10,3,1,1,28,1,1,3,1,1,45,91,1,3,1,1,6,1,1,3,10
 
 add $0,1
-mov $1,$0
-lpb $1
-  mov $2,$0
-  mov $3,$1
-  bin $3,2
-  max $3,1
-  lpb $2
-    mov $1,1
-    dif $2,$3
-  lpe
-  sub $1,1
+mov $1,1
+mov $2,$0
+mov $3,1
+mov $4,1
+lpb $2
+  add $3,1
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  sub $6,$1
+  mul $6,$5
+  add $1,$6
+  mov $5,$0
+  add $5,5
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
 lpe
-mov $0,$3
+mov $0,$1

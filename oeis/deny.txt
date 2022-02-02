@@ -10,6 +10,7 @@ A001180: Erroneous version of A002572.
 A001199: Erroneous version of A056642.
 A001493: Erroneous version of A000637.
 A001984: Erroneous version of A045535.
+A002324: Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
 A002692: Not integral, withdrawn.
 A002693: Not integral, withdrawn.
 A002719: Erroneous version of A020554.
@@ -1142,6 +1143,7 @@ A096112: Duplicate of A052330.
 A096118: Duplicate of A050029.
 A096120: Erroneous version of A050030.
 A096263: Duplicate of A007996.
+A096270: Fixed point of the morphism 0->01, 1->011.
 A096350: Duplicate of A018239.
 A096387: Duplicate of A081512.
 A096593: Erroneous version of A050694.
@@ -1702,6 +1704,7 @@ A274942: Erroneous version of A129860.
 A275081: Duplicate of A097443.
 A275571: Incorrect duplicate of A004146.
 A276853: Beatty sequence for 2*e.
+A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265)
 A277723: a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265)
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
@@ -1713,6 +1716,7 @@ A283055: Erroneous version of A272435.
 A283823: Erroneous version of A000676.
 A285664: Erroneous version of A049297.
 A288573: Erroneous version of A288574.
+A289034: Fixed point of the morphism 0->010, 1->10 starting with 1. 
 A291303: Appears to be an erroneous version of A019294.
 A291967: Erroneous version of A001699.
 A292650: Rank of n*e when all the numbers j*e and k*Pi, for j>=1, k>=1, are jointly ranked.
@@ -1732,6 +1736,7 @@ A302203: a(n) = floor(sin(n)) + 1.
 A306574: Incorrect version of A088527.
 A307289: Erroneous version of A006227.
 A317107: Numbers missing from A317105.
+A317440: Numbers missing from A317438.
 A317949: Erroneous version of A013582.
 A318936: Erroneous version of A088750.
 A323461: Erroneous version of A323457.
