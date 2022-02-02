@@ -1,11 +1,7 @@
 ; A145362: Lower triangular array, called S1hat(-1), related to partition number array A145361.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w1)
 ; 1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1
 
-seq $0,127948 ; Triangle, A004736 * A127899.
+seq $0,72786 ; Differences between A072782 and A072739.
 add $0,1
-lpb $0
-  mul $0,$1
-  mov $2,1
-lpe
-mov $0,$2
+mod $0,2
