@@ -1,8 +1,5 @@
 ; A082389: a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w2)
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2
 
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-lpb $0
-  mov $0,2
-lpe
+seq $0,59426 ; First differences of A026273.

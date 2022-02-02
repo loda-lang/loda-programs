@@ -1,6 +1,21 @@
 ; A159066: A102370(n) modulo 7 .
-; Submitted by Jamie Morken(w1)
+; Submitted by Christian Krause
 ; 0,3,6,5,4,1,3,2,1,4,0,6,0,2,4,3,2,5,1,0,6,3,5,4,3,6,2,5,2,4,6,5,4,0,3,2,1,5,0,6,5,1,4,3,4,6,1,0,6,2,5,4,3,0,2,1,0,3,0,2,6,1,3,2,1,4,0,6,5,2,4,3,2,5,1,0,1,3,5,4,3,6,2,1,0,4,6,5,4,0,3,6,3,5,0,6,5,1,4,3
 
-seq $0,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
+mov $1,$0
+add $0,1
+mov $2,$1
+mov $4,1
+lpb $2
+  mul $4,2
+  mov $3,$4
+  mov $5,$0
+  add $0,1
+  mod $5,$4
+  cmp $5,0
+  mul $3,$5
+  add $1,$3
+  div $2,2
+lpe
+mov $0,$1
 mod $0,7
