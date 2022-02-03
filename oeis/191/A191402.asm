@@ -9,7 +9,6 @@ lpb $4
   lpb $9
     mov $6,$0
     mov $8,$0
-    add $8,1
     sub $9,1
     lpb $8
       mov $0,$6
@@ -29,3 +28,4 @@ lpb $4
   lpe
 lpe
 mov $0,$7
+add $0,1
