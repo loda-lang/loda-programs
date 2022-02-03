@@ -16,4 +16,5 @@ A135481: a(n) = 2^A007814(n+1) - 1.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
+A217589: Bit reversed 16-bit numbers.
 A268354: Highest power of 7 dividing n.
