@@ -4,7 +4,7 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  seq $2,6579 ; Sum of gcd(n,k) for k = 1 to n-1.
+  seq $2,6579 ; a(n) = Sum_{k=1..n-1} gcd(n,k).
   add $1,$2
 lpe
 mov $0,$1
