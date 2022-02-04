@@ -1,14 +1,12 @@
 ; A179802: Digital root of A179545.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 3,9,3,9,3,9,3,9,3,3,9,9,3,9,3,3,3,9,9,3,9,9,3,3,9,3,9,3,9,3,9,3,3,9,3,9,9,9,3,3,3,9,3,9,3,9,9,9,3,9,3,3,9,3,3,3,3,9,9,3,9,3,9,3,9,3,9,9,3,9,3,3,9,9,9,3,3,9,3,9,3,9,3,9,9,3,3,9,3,9,3,3,9,3,9,3,3,3,9,9
 
-seq $0,6005 ; The odd prime numbers together with 1.
-trn $0,2
-mod $0,3
-mov $2,$0
-lpb $2
-  mov $2,1
-lpe
+seq $0,40 ; The prime numbers.
+mul $0,2
+sub $0,2
+bin $0,2
+mov $2,3
+gcd $2,$0
 mov $0,$2
-mul $0,6
-add $0,3
+mul $0,3
