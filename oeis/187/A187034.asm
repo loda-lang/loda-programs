@@ -7,11 +7,9 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-min $0,$1
 sub $0,$1
+max $2,$0
 sub $2,1
+sub $2,$0
 bin $2,$1
-mov $1,2
-pow $1,$0
-mul $2,$1
 mov $0,$2
