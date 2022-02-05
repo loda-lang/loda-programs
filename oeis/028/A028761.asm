@@ -4,8 +4,7 @@
 
 mov $2,$0
 lpb $2
-  sub $2,13
   add $0,1
-  sub $2,14
+  sub $2,27
 lpe
 seq $0,37 ; Numbers that are not squares (or, the nonsquares).
