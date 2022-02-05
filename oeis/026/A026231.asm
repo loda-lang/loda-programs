@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
   sub $0,$3
-  add $1,12
+  add $1,13
   mov $4,$0
   max $4,1
   cmp $4,$0
@@ -18,6 +18,7 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,24
-div $0,4
+sub $0,26
+div $0,13
+mul $0,3
 add $0,8
