@@ -19,7 +19,6 @@ lpb $2
   cmp $4,$0
   mul $2,$4
 lpe
-mul $3,2
-mov $0,$3
-sub $0,102
-div $0,90
+mov $0,$1
+sub $0,51
+div $0,45
