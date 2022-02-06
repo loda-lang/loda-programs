@@ -1722,6 +1722,8 @@ A283021: Erroneous version of A263656.
 A283055: Erroneous version of A272435.
 A283823: Erroneous version of A000676.
 A285664: Erroneous version of A049297.
+A287523: Fixed point starting with 1 of the morphism 0->01, 1->101.
+A287803: Positions of 1 in A287801; complement of A287802.
 A288573: Erroneous version of A288574.
 A289034: Fixed point of the morphism 0->010, 1->10 starting with 1. 
 A291303: Appears to be an erroneous version of A019294.
