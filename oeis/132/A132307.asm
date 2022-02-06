@@ -4,6 +4,5 @@
 
 seq $0,120910 ; Triangle read by rows: T(n,k) is the number of ternary words of length n having k levels (n >= 1, 0 <= k <= n-1). A level is a pair of identical consecutive letters).
 div $0,3
-sub $0,1
 mul $0,2
-add $0,1
+sub $0,1

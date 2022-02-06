@@ -12,7 +12,6 @@ bin $1,$0
 mul $2,$1
 mov $1,2
 add $1,$0
-mul $1,30
-mul $1,$2
-mov $0,$1
-div $0,60
+mul $2,$1
+mov $0,$2
+div $0,2

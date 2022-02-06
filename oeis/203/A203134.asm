@@ -1,10 +1,18 @@
 ; A203134: Decagonal hexagonal numbers
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w4)
 ; 1,1540,1777555,2051297326,2367195337045,2731741367653000,3152427171076225351,3637898223680596402450,4198131397700237172202345,4844639995047850016125104076,5590710356153821218371197901755,6451674906361514638150346253521590
 
-mul $0,2
-seq $0,253811 ; Part of the y solutions of the Pell equation x^2 - 2*y^2 = +7.
-pow $0,2
-sub $0,5
+mov $2,4
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,32
+  add $2,$1
+  add $3,$2
+lpe
+pow $3,2
+mov $0,$3
 div $0,8
+mul $0,9
 add $0,1
