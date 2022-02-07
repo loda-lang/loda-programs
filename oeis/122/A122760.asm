@@ -1,15 +1,15 @@
 ; A122760: Triangle read by rows: t(n,m) = 2*3^m*(n mod 2).
-; Submitted by Jamie Morken(s2)
+; Submitted by Christian Krause
 ; 0,2,6,0,0,0,2,6,18,54,0,0,0,0,0,2,6,18,54,162,486,0,0,0,0,0,0,0,2,6,18,54,162,486,1458,4374,0,0,0,0,0,0,0,0,0,2,6,18,54,162,486,1458,4374,13122,39366,0,0,0,0,0,0,0,0,0,0,0
 
 lpb $0
-  cmp $2,0
-  add $3,1
-  sub $0,$3
+  add $1,1
+  sub $0,$1
 lpe
-lpb $0
-  sub $0,1
-  mul $2,3
-lpe
+mov $2,$1
+mov $1,3
+pow $1,$0
+mod $2,2
+mul $2,$1
 mov $0,$2
 mul $0,2

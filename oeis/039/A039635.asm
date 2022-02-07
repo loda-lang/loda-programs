@@ -1,14 +1,11 @@
 ; A039635: Fixed point of "n -> n/2 or (n+1)/2 until result is prime".
+; Submitted by Jamie Morken(w1)
 ; 1,2,3,2,5,3,7,2,5,5,11,3,13,7,2,2,17,5,19,5,11,11,23,3,13,13,7,7,29,2,31,2,17,17,5,5,37,19,5,5,41,11,43,11,23,23,47,3,13,13,13,13,53,7,7,7,29,29,59,2,61,31,2,2,17,17,67,17,5,5,71,5,73,37,19,19,5,5,79,5,41,41,83,11,43,43,11,11,89,23,23,23,47,47,3,3,97,13,13,13
 
 lpb $0
-  mov $2,$0
-  seq $2,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
-  mov $3,$2
-  add $3,$2
-  mov $4,$3
-  cmp $4,0
-  add $3,$4
-  div $0,$3
+  seq $0,66560 ; Smallest composite number divisible by n.
+  add $0,1
+  div $0,2
+  sub $0,1
 lpe
 add $0,1
