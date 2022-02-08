@@ -5,8 +5,3 @@
 add $0,1
 seq $0,96 ; a(n) = n*(n+3)/2.
 seq $0,111089 ; Largest prime factor of 2n.
-add $0,1
-mul $0,78
-sub $0,295
-div $0,78
-add $0,3
