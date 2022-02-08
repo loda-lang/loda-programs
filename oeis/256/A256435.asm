@@ -13,7 +13,7 @@ lpb $7
   mov $2,$0
   pow $2,2
   lpb $2
-    add $1,2
+    add $1,1
     mov $3,$1
     seq $3,229062 ; 1 if n is representable as sum of two nonnegative squares, otherwise 0.
     sub $0,$3
@@ -24,7 +24,6 @@ lpb $7
     sub $2,1
   lpe
   mov $0,$1
-  div $0,2
   mul $0,13
   mov $8,$7
   mul $8,$0
@@ -32,8 +31,8 @@ lpb $7
 lpe
 min $5,1
 mul $5,$0
-sub $6,10
 mov $0,$6
 sub $0,$5
+sub $0,12
 div $0,13
 add $0,1

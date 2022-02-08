@@ -20,6 +20,4 @@ lpb $5
   add $4,$1
 lpe
 mov $0,$4
-sub $0,10
 div $0,10
-add $0,1

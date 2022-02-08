@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$3
   mov $4,$0
+  pow $0,$3
   max $4,0
   seq $4,1628 ; Convolved Fibonacci numbers.
   mul $2,$4
