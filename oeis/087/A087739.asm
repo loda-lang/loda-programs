@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  mov $0,$4
+  mov $0,0
   trn $2,2
   seq $2,163563 ; n occurs 1+a(n) times starting with a(1)=1.
   mul $2,6005

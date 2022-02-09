@@ -1,9 +1,7 @@
 ; A103589: 1's complement of A103583.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w4)
 ; 0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-seq $1,103583 ; Same as A103582, but read antidiagonals in upward direction.
-mov $0,$1
+seq $0,103583 ; Same as A103582, but read antidiagonals in upward direction.
 add $0,1
 mod $0,2

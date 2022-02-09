@@ -7,14 +7,13 @@ lpb $0
   mov $3,$2
   mov $2,$0
   add $2,$3
-  mov $5,2
   lpb $3
     mov $4,$1
     gcd $4,$2
     div $1,$4
-    mov $3,$5
+    mov $3,2
   lpe
-  trn $0,$5
+  trn $0,2
   mul $1,$2
 lpe
 mov $0,$1

@@ -9,17 +9,17 @@ lpb $0
   lpb $3
     sub $0,1
     add $1,6
-    mov $3,$4
-    mov $5,$2
-    cmp $5,1
+    mov $3,0
+    mov $4,$2
+    cmp $4,1
   lpe
   mov $2,2
   lpb $0
-    dif $0,$2
-    mul $5,$2
+    dif $0,2
+    mul $4,2
   lpe
-  add $5,1
-  mul $1,$5
+  add $4,1
+  mul $1,$4
 lpe
 mov $0,$1
 sub $0,12
