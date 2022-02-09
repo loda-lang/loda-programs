@@ -4,10 +4,9 @@
 
 add $0,3
 bin $0,3
-mov $3,6
 lpb $0
   dif $0,2
-  add $2,$3
+  add $2,6
 lpe
 mov $0,$2
 div $0,6

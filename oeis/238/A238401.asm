@@ -9,10 +9,6 @@ lpb $0
   mul $2,$0
   max $0,2
   sub $2,$3
-  lpb $3
-    cmp $3,0
-    sub $3,7088
-  lpe
   mul $3,$0
   sub $0,1
 lpe

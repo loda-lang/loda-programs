@@ -1,8 +1,8 @@
 ; A219113: Sequence of integers which are simultaneously a sum of consecutive squares and a difference of consecutive cubes.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w2)
 ; 1,61,5941,582121,57041881,5589522181,547716131821,53670591396241,5259170240699761,515345012997180301,50498552103482969701,4948342761128333850361,484887092038473234365641,47513986677009248633982421,4655885807254867892895911581
 
-mov $3,1
+mov $3,6
 lpb $0
   sub $0,1
   mov $1,$3
@@ -12,6 +12,5 @@ lpb $0
 lpe
 pow $3,2
 mov $0,$3
-div $0,80
-mul $0,60
+div $0,48
 add $0,1

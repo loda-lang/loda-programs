@@ -1,0 +1,6 @@
+; A351268: Sum of the 5th powers of the squarefree divisors of n.
+; Submitted by Jamie Morken(w4)
+; 1,33,244,33,3126,8052,16808,33,244,103158,161052,8052,371294,554664,762744,33,1419858,8052,2476100,103158,4101152,5314716,6436344,8052,3126,12252702,244,554664,20511150,25170552,28629152,33,39296688,46855314,52541808,8052,69343958
+
+seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+seq $0,1160 ; sigma_5(n), the sum of the 5th powers of the divisors of n.
