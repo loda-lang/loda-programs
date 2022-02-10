@@ -3,5 +3,5 @@
 ; 0,1,2,3,4,5,6,1,1,2,3,4,5,6,2,2,2,3,4,5,6,3,3,3,3,4,5,6,4,4,4,4,4,5,6,5,5,5,5,5,5,6,6,6,6,6,6,6,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,2,2,2,3,4,5,6,3,3,3,3,4,5,6,4,4,4,4,4,5,6,5,5,5,5,5,5,6,6,6,6,6,6,6,6,2,2
 
 seq $0,7093 ; Numbers in base 7.
-seq $0,4185 ; Arrange digits of n in increasing order, then (for n>0) omit the zeros.
+seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
 mod $0,10
