@@ -22,7 +22,7 @@ lpb $4
   add $3,1
   mov $7,$3
   lpb $2
-    mov $1,$7
+    mov $1,$3
     sub $2,1
   lpe
 lpe

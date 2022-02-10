@@ -4,10 +4,7 @@
 
 mov $2,$0
 mov $3,$0
-mov $4,$0
 seq $0,324600 ; a(n) = (k(n)*(k(n) + 1))/2 with k = A018252 (nonprime numbers), for n >= 1.
 bin $3,2
 sub $0,$3
-mul $4,2
-sub $0,$4
-add $0,$2
+sub $0,$2
