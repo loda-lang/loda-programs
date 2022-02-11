@@ -1,9 +1,10 @@
 ; A350526: a(n) = f(n*r)*c(n/r), where f = floor, c = ceiling, and r = golden ratio (A001622).
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w2)
 ; 1,6,8,18,32,36,55,60,84,112,119,152,189,198,240,250,297,348,360,416,429,490,555,570,640,714,731,810,828,912,1000,1020,1113,1210,1232,1334,1357,1464,1575,1600,1716,1742,1863,1988,2016,2146,2280,2310,2449,2480
 
-mov $1,$0
-seq $0,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
-mul $1,$0
-pow $0,2
-add $0,$1
+sub $3,$0
+seq $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
+mov $2,$0
+add $3,$0
+mul $2,$3
+mov $0,$2

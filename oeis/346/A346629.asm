@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cmp $0,$3
+  cmp $0,0
   seq $2,136926 ; Numbers k such that k and k^2 use only the digits 0, 2, 7 and 9.
   div $2,6
   sub $2,1
