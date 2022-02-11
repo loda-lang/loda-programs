@@ -1,6 +1,31 @@
 ; A351267: Sum of the 4th powers of the squarefree divisors of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w1)
 ; 1,17,82,17,626,1394,2402,17,82,10642,14642,1394,28562,40834,51332,17,83522,1394,130322,10642,196964,248914,279842,1394,626,485554,82,40834,707282,872644,923522,17,1200644,1419874,1503652,1394,1874162,2215474,2342084,10642,2825762,3348388
 
-seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-seq $0,1159 ; sigma_4(n): sum of 4th powers of divisors of n.
+add $0,1
+mov $1,1
+lpb $0
+  cmp $2,0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mov $6,$2
+    cmp $6,0
+    add $2,$6
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    mov $5,$2
+    add $2,1
+    cmp $5,1
+    max $4,$5
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+  lpe
+  pow $2,4
+  add $2,1
+  mul $1,$2
+lpe
+mov $0,$1
