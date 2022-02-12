@@ -5,7 +5,7 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,2
+  add $1,1
   mov $3,$1
   seq $3,14578 ; Binary expansion of Thue constant (or Roth's constant).
   sub $0,$3
@@ -16,5 +16,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,2
 add $0,1
