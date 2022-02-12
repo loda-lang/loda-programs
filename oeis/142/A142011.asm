@@ -4,9 +4,8 @@
 
 mov $1,6
 mov $2,$0
-bin $2,2
 add $2,3
-pow $2,2
+pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1

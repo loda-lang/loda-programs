@@ -4,7 +4,6 @@
 
 mov $12,$0
 mov $13,$0
-add $13,1
 lpb $13
   mov $0,$12
   sub $13,1
@@ -52,3 +51,4 @@ lpb $13
   lpe
 lpe
 mov $0,$10
+add $0,1

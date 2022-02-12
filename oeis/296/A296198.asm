@@ -20,18 +20,17 @@ lpb $3
     mul $4,$0
     add $0,5
     mod $0,2
-    mov $6,2
     lpb $0
       trn $0,$5
       div $2,2
       add $4,$2
-      mul $4,$6
+      mul $4,2
       sub $4,2
     lpe
     add $5,1
-    mov $11,$4
-    div $11,2
-    add $8,$11
+    mov $6,$4
+    div $6,2
+    add $8,$6
   lpe
   add $1,$8
 lpe

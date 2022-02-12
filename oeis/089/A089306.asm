@@ -18,6 +18,6 @@ lpb $12,3
   lpe
   mul $0,2
   add $0,2
-  mul $12,$10
+  mul $12,0
 lpe
 mov $0,$2
