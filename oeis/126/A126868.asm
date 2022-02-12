@@ -5,7 +5,7 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  mov $0,$1
+  mov $0,0
   max $2,0
   seq $2,119688 ; a(n) = n!! mod (n+1).
 lpe

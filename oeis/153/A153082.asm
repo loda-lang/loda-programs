@@ -1,24 +1,8 @@
 ; A153082: Numbers k such that 2*k + 13 is not prime.
-; Submitted by Jamie Morken(w3)
+; Submitted by Christian Krause
 ; 1,4,6,7,10,11,13,16,18,19,21,22,25,26,28,31,32,34,36,37,39,40,41,43,46,49,51,52,53,54,55,56,58,60,61,64,65,66,67,70,71,73,74,76,78,79,81,82,85,86,87,88,91,94,95,96,97,98,100,101,102,103,104,106,109,111,112,115,116,117,118,120,121,123,124,126,127,130,131,133,136,137,138,139,141,142,143,144,145,146,148,151,153,154,155,156,157,158,160,161
 
-mov $1,12
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  add $1,2
-  sub $2,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-lpe
-mov $0,$1
-sub $0,14
-div $0,2
 add $0,1
+seq $0,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
+div $0,2
+sub $0,6

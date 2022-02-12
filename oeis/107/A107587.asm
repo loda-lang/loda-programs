@@ -4,9 +4,9 @@
 
 mov $3,$0
 mov $5,$0
+sub $5,1
 lpb $5
   mov $0,$3
-  add $0,1
   sub $3,1
   sub $5,1
   sub $0,$5
@@ -20,11 +20,9 @@ lpb $5
   bin $2,$0
   add $0,1
   div $1,$0
-  mul $1,47
   mul $1,$2
   add $4,$1
   sub $5,1
 lpe
 mov $0,$4
-div $0,47
 add $0,1

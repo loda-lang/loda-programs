@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  mov $0,$3
+  mov $0,0
   seq $2,60371 ; a(n) = (prime(n) - 1)! + 1.
 lpe
 mov $0,$2

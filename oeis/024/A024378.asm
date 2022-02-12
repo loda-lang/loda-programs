@@ -17,15 +17,14 @@ add $1,2
 add $1,$6
 add $1,3
 mov $4,$7
-mov $8,$7
 lpb $4
-  add $2,$8
+  add $2,$7
   sub $4,1
 lpe
 mov $3,20
 mov $8,$2
 lpb $3
-  add $1,$8
+  add $1,$2
   sub $3,1
 lpe
 mov $2,0
@@ -37,7 +36,7 @@ lpe
 mov $3,11
 mov $8,$2
 lpb $3
-  add $1,$8
+  add $1,$2
   sub $3,1
 lpe
 mov $2,0
@@ -47,9 +46,8 @@ lpb $4
   sub $4,1
 lpe
 mov $3,2
-mov $8,$2
 lpb $3
-  add $1,$8
+  add $1,$2
   sub $3,1
 lpe
 mov $0,$1
