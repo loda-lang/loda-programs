@@ -1,31 +1,26 @@
 ; A351266: Sum of the cubes of the squarefree divisors of n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w4)
 ; 1,9,28,9,126,252,344,9,28,1134,1332,252,2198,3096,3528,9,4914,252,6860,1134,9632,11988,12168,252,126,19782,28,3096,24390,31752,29792,9,37296,44226,43344,252,50654,61740,61544,1134,68922,86688,79508,11988,3528,109512,103824
 
 add $0,1
 mov $1,1
+mov $2,2
 lpb $0
-  cmp $2,0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  pow $2,3
-  add $2,1
-  mul $1,$2
+  mov $5,$2
+  pow $5,3
+  add $5,1
+  mul $1,$5
 lpe
 mov $0,$1

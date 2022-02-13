@@ -23,10 +23,9 @@ lpb $2
       mul $3,$5
       mov $4,$3
       bin $4,2
-      mov $5,$4
       mov $10,$9
       lpb $10
-        mov $8,$5
+        mov $8,$4
         sub $10,1
       lpe
     lpe
