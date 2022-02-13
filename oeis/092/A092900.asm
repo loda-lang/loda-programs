@@ -6,7 +6,7 @@ mov $1,14
 lpb $0
   sub $0,2
   mul $2,10
-  add $2,$1
+  add $2,14
 lpe
 lpb $0
   sub $0,1

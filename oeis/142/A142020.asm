@@ -4,9 +4,9 @@
 
 mov $2,$0
 pow $2,2
-mov $4,18
+mov $4,20
 lpb $2
-  add $3,5
+  add $3,3
   mul $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
@@ -20,4 +20,4 @@ lpb $2
 lpe
 mov $0,$4
 mul $0,2
-add $0,11
+add $0,7
