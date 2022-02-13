@@ -8,13 +8,11 @@ mov $4,$0
 mov $0,0
 pow $2,2
 mov $5,4
-mov $6,11
 lpb $2
   add $0,11
   sub $2,5
   trn $2,$5
-  sub $5,1
-  add $5,$6
+  add $5,10
 lpe
 sub $0,2
 mov $3,$4

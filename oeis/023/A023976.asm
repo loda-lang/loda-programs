@@ -9,7 +9,7 @@ add $0,40
 sub $0,$1
 lpb $0
   div $0,24
-  bin $2,$3
+  bin $2,0
 lpe
 mov $0,$2
 add $0,1
