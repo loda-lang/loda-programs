@@ -1,19 +1,16 @@
 ; A114219: Number triangle (k-(k-1)*0^(n-k))*[k<=n].
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w4)
 ; 1,0,1,0,1,1,0,1,2,1,0,1,2,3,1,0,1,2,3,4,1,0,1,2,3,4,5,1,0,1,2,3,4,5,6,1,0,1,2,3,4,5,6,7,1,0,1,2,3,4,5,6,7,8,1,0,1,2,3,4,5,6,7,8,9,1
 
-mov $2,$0
-lpb $2
-  mov $0,4
-  sub $1,1
-  add $2,$1
+mov $2,1
+mov $3,2
+lpb $0
+  add $2,1
+  sub $0,$2
 lpe
-sub $2,1
-add $1,$2
-add $2,$0
-add $2,16
-mul $1,$2
-mod $2,$1
-mov $0,$2
-add $0,1
-mod $0,10
+lpb $0
+  mov $3,$0
+  div $0,16
+lpe
+mov $0,$3
+sub $0,1

@@ -3,12 +3,11 @@
 
 mov $2,2
 pow $2,$0
-mov $3,1
-mov $5,512
-lpb $5
-  add $4,$3
+mov $3,512
+lpb $3
+  div $3,2
+  add $4,1
   mul $4,$2
-  div $5,2
 lpe
 mov $0,$4
 add $0,1

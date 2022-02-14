@@ -10,7 +10,6 @@ add $4,3
 mul $4,2
 mov $7,10
 pow $7,$4
-mov $9,10
 lpb $3
   add $1,1
   mov $4,$2
@@ -31,9 +30,9 @@ lpb $3
   div $2,$8
   sub $3,1
 lpe
-mov $3,$9
+mov $3,10
 pow $3,$0
 div $2,$3
 div $1,$2
-mod $1,$9
+mod $1,10
 mov $0,$1

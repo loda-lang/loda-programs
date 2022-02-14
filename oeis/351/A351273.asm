@@ -1,31 +1,26 @@
 ; A351273: Sum of the 10th powers of the squarefree divisors of n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w4)
 ; 1,1025,59050,1025,9765626,60526250,282475250,1025,59050,10009766650,25937424602,60526250,137858491850,289537131250,576660215300,1025,2015993900450,60526250,6131066257802,10009766650,16680163512500,26585860217050,41426511213650,60526250
 
 add $0,1
 mov $1,1
+mov $2,2
 lpb $0
-  cmp $2,0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  pow $2,10
-  add $2,1
-  mul $1,$2
+  mov $5,$2
+  pow $5,10
+  add $5,1
+  mul $1,$5
 lpe
 mov $0,$1

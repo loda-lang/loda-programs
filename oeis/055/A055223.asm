@@ -4,7 +4,7 @@
 
 add $0,2
 lpb $0
-  mov $0,$1
+  mov $0,0
   seq $0,10152 ; Continued fraction for sqrt(74).
   pow $0,3
 lpe
