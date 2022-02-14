@@ -4,6 +4,5 @@
 
 add $0,1
 seq $0,5384 ; Sophie Germain primes p: 2p+1 is also prime.
-sub $0,3
 div $0,2
-add $0,2
+add $0,1
