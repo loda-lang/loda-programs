@@ -1,31 +1,26 @@
 ; A351270: Sum of the 7th powers of the squarefree divisors of n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w4)
 ; 1,129,2188,129,78126,282252,823544,129,2188,10078254,19487172,282252,62748518,106237176,170939688,129,410338674,282252,893871740,10078254,1801914272,2513845188,3404825448,282252,78126,8094558822,2188,106237176,17249876310,22051219752,27512614112
 
 add $0,1
 mov $1,1
+mov $2,2
 lpb $0
-  cmp $2,0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  pow $2,7
-  add $2,1
-  mul $1,$2
+  mov $5,$2
+  pow $5,7
+  add $5,1
+  mul $1,$5
 lpe
 mov $0,$1
