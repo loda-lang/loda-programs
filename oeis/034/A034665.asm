@@ -4,13 +4,12 @@
 
 mov $2,2
 pow $2,$0
-mov $3,1
+mov $3,2048
 mov $4,$2
-mov $5,2048
-lpb $5
-  add $4,$3
+lpb $3
+  div $3,8
+  add $4,1
   mul $4,$2
-  div $5,8
 lpe
 mov $0,$4
 add $0,1

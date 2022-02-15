@@ -8,6 +8,5 @@ mov $2,2
 add $3,1
 pow $2,$3
 add $0,$2
-add $2,$0
-mov $0,$2
+add $0,$2
 sub $0,17

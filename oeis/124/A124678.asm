@@ -1,13 +1,17 @@
 ; A124678: Number of conjugacy classes in PSL_2(p), p = prime(n).
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w2)
 ; 3,4,5,6,8,9,11,12,14,17,18,21,23,24,26,29,32,33,36,38,39,42,44,47,51,53,54,56,57,59,66,68,71,72,77,78,81,84,86,89,92,93,98,99,101,102,108,114,116,117,119,122,123,128,131,134,137,138,141,143,144,149,156,158,159,161,168,171,176,177,179,182,186,189,192,194,197,201,203,207,212,213,218,219,222,224,227,231,233,234,236,242,246,248,252,254,257,263,264,273
 
-mul $0,2
 mov $2,$0
-sub $0,1
+pow $2,5
+lpb $2
+  mov $3,$1
+  add $1,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
 div $0,2
-seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
-mul $0,2
-add $0,7
-add $0,$2
-div $0,2
+add $0,3
