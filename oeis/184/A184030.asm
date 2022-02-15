@@ -1,5 +1,5 @@
 ; A184030: 1/16 the number of (n+1)X(n+1) 0..3 arrays with all 2X2 subblocks having the same four values
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w4)
 ; 16,40,82,166,322,634,1234,2434,4786,9490,18802,37426,74482
 
 mov $3,$0
@@ -8,9 +8,7 @@ mov $2,2
 add $3,1
 pow $2,$3
 add $0,$2
-sub $0,18
 mul $0,2
 add $0,$2
-sub $0,2
 mul $0,3
-add $0,16
+sub $0,98

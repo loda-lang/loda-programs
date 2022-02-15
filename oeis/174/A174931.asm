@@ -7,8 +7,6 @@ seq $0,79 ; Powers of 2: a(n) = 2^n.
 mov $1,-1
 add $1,$0
 seq $1,53735 ; Sum of digits of (n written in base 3).
-add $2,$1
-mov $3,1
-add $3,$2
-mov $0,$3
+mov $0,$1
 div $0,2
+add $0,1

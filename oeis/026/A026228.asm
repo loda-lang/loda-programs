@@ -1,14 +1,21 @@
 ; A026228: Numbers k such that A026166(k) = A026136(k) - 1.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w2)
 ; 2,5,11,14,23,29,32,38,41,50,59,65,68,77,83,86,92,95,104,110,113,119,122,131,140,146,149,158,167,173,176,185,191,194,200,203,212,221,227,230,239,245,248,254,257,266,272,275,281,284
 
-lpb $0
-  sub $0,1
-  mov $1,$0
-  mov $0,0
-  max $1,0
-  seq $1,26225 ; a(n) = (1/3)*(s(n+1) - 1), where s = A026224.
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
+  sub $0,$3
+  add $1,14
+  mov $4,$0
+  max $4,1
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
+div $0,14
 mul $0,3
 add $0,2
