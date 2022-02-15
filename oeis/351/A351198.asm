@@ -1,31 +1,24 @@
 ; A351198: Sum of the 10th powers of the primes dividing n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,1024,59049,1024,9765625,60073,282475249,1024,59049,9766649,25937424601,60073,137858491849,282476273,9824674,1024,2015993900449,60073,6131066257801,9766649,282534298,25937425625,41426511213649,60073,9765625,137858492873,59049,282476273
 
 add $0,1
-mov $1,1
+mov $2,2
 lpb $0
-  cmp $2,0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  pow $2,10
-  add $1,$2
+  mov $5,$2
+  pow $5,10
+  add $1,$5
 lpe
 mov $0,$1
-sub $0,1
