@@ -17,10 +17,7 @@ lpb $3
 lpe
 mov $1,1
 add $1,$5
-sub $1,1
 mov $4,10
-cmp $6,0
-add $1,$6
 pow $4,$0
 div $2,$4
 div $1,$2

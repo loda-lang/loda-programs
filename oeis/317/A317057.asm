@@ -4,5 +4,5 @@
 
 add $0,1
 seq $0,5840 ; Expansion of (1-x)*e^x/(2-e^x).
-seq $0,259445 ; Multiplicative with a(n) = n if n is odd and a(2^s)=2.
+add $0,1
 div $0,2

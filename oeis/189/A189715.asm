@@ -6,7 +6,7 @@ mov $2,$0
 mul $2,2
 pow $2,2
 lpb $2
-  add $1,2
+  add $1,4
   mov $3,$1
   seq $3,156595 ; Fixed point of the morphism 0->011, 1->010.
   sub $0,$3
@@ -18,5 +18,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,3
+div $0,5
 add $0,1
