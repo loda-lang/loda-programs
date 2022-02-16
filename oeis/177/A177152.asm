@@ -5,7 +5,6 @@ mov $1,1
 mov $2,$0
 mov $3,$0
 pow $3,2
-mov $7,$0
 lpb $2
   mov $4,$3
   lpb $4
@@ -14,9 +13,9 @@ lpb $2
     trn $4,$5
   lpe
   div $1,4
-  mov $2,$6
+  mov $2,0
 lpe
-mov $8,$7
-mul $8,3
-add $1,$8
+mov $6,$0
+mul $6,3
+add $1,$6
 mov $0,$1

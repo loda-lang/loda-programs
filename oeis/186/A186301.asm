@@ -1,20 +1,18 @@
 ; A186301: a(n) = A007521(n) - 2.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 3,11,27,35,51,59,99,107,147,155,171,179,195,227,267,275,291,315,347,371,387,395,419,459,507,539,555,611,651,659,675,699,707,731,755,771,795,819,827,851,875,939,995,1011,1019,1059,1067,1091,1107,1115,1179,1211
 
 mov $1,4
 mov $2,$0
-pow $2,2
+pow $2,5
 lpb $2
+  sub $2,1
   mov $3,$1
+  add $1,5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,8
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,3
+  sub $2,$0
 lpe
-sub $1,1
 mov $0,$1
+sub $0,1

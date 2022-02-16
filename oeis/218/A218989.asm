@@ -4,8 +4,6 @@
 
 add $0,1
 seq $0,341250 ; a(n) = 5*a(n-1) - 4*a(n-3) for n >= 4, where a(1) = 1, a(2) = 3, a(3) = 13.
-mul $0,3
-sub $0,9
-div $0,3
+sub $0,3
 mul $0,2
 add $0,5
