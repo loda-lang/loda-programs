@@ -19,5 +19,6 @@ lpb $0
     dif $0,$2
   lpe
   mul $1,3
+  add $2,1
 lpe
 mov $0,$1

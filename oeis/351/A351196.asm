@@ -1,29 +1,26 @@
 ; A351196: Sum of the 8th powers of the primes dividing n.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w4)
 ; 0,256,6561,256,390625,6817,5764801,256,6561,390881,214358881,6817,815730721,5765057,397186,256,6975757441,6817,16983563041,390881,5771362,214359137,78310985281,6817,390625,815730977,6561,5765057,500246412961,397442,852891037441,256
 
 add $0,1
+mov $1,1
+mov $2,2
 lpb $0
-  cmp $2,0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  pow $2,8
-  add $1,$2
+  mov $5,$2
+  pow $5,8
+  add $1,$5
 lpe
 mov $0,$1
+sub $0,1
