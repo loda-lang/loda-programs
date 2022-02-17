@@ -12,8 +12,7 @@ lpb $0
   mov $2,$3
   add $2,$1
   mov $1,$3
-  mul $2,2
-  mul $4,2
+  mul $4,4
   mul $5,4
   add $5,$4
   mov $3,$5

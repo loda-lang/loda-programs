@@ -6,6 +6,5 @@ mov $1,$0
 add $0,1
 gcd $0,2
 seq $1,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
-add $1,$0
-mov $0,$1
+add $0,$1
 sub $0,2
