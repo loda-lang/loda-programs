@@ -1,7 +1,9 @@
 ; A099618: a(n) = 1 if the n-th prime == 1 mod 6, otherwise a(n) = 0.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,0,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,1,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,1,0,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,0,1,0,1,0,0,0,1,1
 
 seq $0,40 ; The prime numbers.
-seq $0,7089 ; Numbers in base 3.
+sub $0,2
+mul $0,6
+div $0,9
 mod $0,2

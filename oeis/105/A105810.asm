@@ -8,8 +8,7 @@ lpb $0
 lpe
 sub $1,1
 sub $0,$1
-trn $1,$0
-add $1,$0
+max $1,0
 add $1,2
 add $1,$0
 div $1,-1
