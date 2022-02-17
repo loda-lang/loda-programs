@@ -3,9 +3,8 @@
 
 add $0,4
 mov $1,$0
-mov $2,-3
 lpb $0
   div $0,3
-  add $0,$2
+  sub $0,3
   add $0,$1
 lpe

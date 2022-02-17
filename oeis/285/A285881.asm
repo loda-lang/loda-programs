@@ -8,7 +8,7 @@ lpb $2
   mov $0,$3
   sub $2,2
   sub $0,$2
-  seq $0,8966 ; 1 if n is squarefree, else 0.
+  seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $1,$0
 lpe
 mov $0,$1
