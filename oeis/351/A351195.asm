@@ -1,29 +1,24 @@
 ; A351195: Sum of the 7th powers of the primes dividing n.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w4)
 ; 0,128,2187,128,78125,2315,823543,128,2187,78253,19487171,2315,62748517,823671,80312,128,410338673,2315,893871739,78253,825730,19487299,3404825447,2315,78125,62748645,2187,823671,17249876309,80440,27512614111,128,19489358,410338801
 
 add $0,1
+mov $2,2
 lpb $0
-  cmp $2,0
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
+    cmp $4,0
+    cmp $4,0
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  pow $2,7
-  add $1,$2
+  mov $5,$2
+  pow $5,7
+  add $1,$5
 lpe
 mov $0,$1
