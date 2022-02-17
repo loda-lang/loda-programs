@@ -4,7 +4,7 @@
 
 mov $2,$0
 add $2,2
-mul $2,18
+pow $2,2
 mov $4,3
 lpb $2
   add $3,22
