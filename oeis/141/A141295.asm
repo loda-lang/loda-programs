@@ -3,10 +3,9 @@
 
 mov $1,2
 mov $2,1
-mov $3,1
 lpb $0
   sub $0,$2
-  sub $2,$3
+  sub $2,1
   sub $2,$1
   gcd $2,$0
   dif $2,$1
