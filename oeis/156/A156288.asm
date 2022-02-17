@@ -1,22 +1,20 @@
 ; A156288: Numbers n such that 4*n-5 is not a prime number.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w1)
 ; 5,8,10,11,14,15,17,20,23,24,25,26,29,30,31,32,35,37,38,40,41,44,45,47,48,50,52,53,55,56,59,60,62,63,65,66,68,70,71,73,74,75,76,77,80,81,82,83,85,86,87,89,90,92,94,95,98,99,100,101,102,103,104,105,107,108,110,113,114,115,116,119,120,122,125,128,129,130,131,133,134,135,136,137,139,140,141,143,145,146,147,149,150,152,154,155,157,158,160,161
 
-seq $0,162886 ; Even numbers in an alternating 1-based sum up to some odd nonprime.
-seq $2,142268 ; Primes congruent to 19 mod 43.
-mov $4,1
-mov $5,$0
+add $0,1
+mov $1,10
+mov $2,$0
+pow $2,4
 lpb $2
-  mov $2,3
-  add $3,5
-  cmp $3,0
-  cmp $3,0
-  add $5,1
-  add $4,$5
-  mul $3,$4
+  add $1,4
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $0,$3
+  sub $0,1
+  sub $2,$0
 lpe
-mov $0,$3
-div $0,2
-sub $0,13
-div $0,3
+mov $0,$1
+sub $0,10
+div $0,4
 add $0,5

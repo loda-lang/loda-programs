@@ -1,9 +1,6 @@
 ; A089986: Numbers n such that 4n + 7 is prime.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; -1,0,1,3,4,6,9,10,13,15,16,18,19,24,25,30,31,33,36,39,40,43,46,48,51,54,55,58,61,64,66,69,75,76,81,85,88,90,93,94,103,106,108,109,114,115,118,120,121,123,124,129,135,139,141,145,148,150,153,156,159,160,163,169
 
-mov $1,$0
-seq $1,89193 ; Odd numbers n such that 2*n-7 is a prime of the form 4*k+3.
-mov $0,$1
-sub $0,7
-div $0,2
+seq $0,5099 ; (( Primes == -1 mod 4 ) + 1)/4.
+sub $0,2
