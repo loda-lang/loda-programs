@@ -6,9 +6,8 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,$0
 sub $0,$2
-mov $2,$1
+add $2,$0
 sub $2,1
 add $0,$2
 max $2,0

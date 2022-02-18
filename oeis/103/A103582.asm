@@ -1,5 +1,5 @@
 ; A103582: Binary array below read by downward antidiagonals.
-; Submitted by Jamie Morken(s2)
+; Submitted by Jamie Morken(w3)
 ; 1,0,1,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1
 
 lpb $0
@@ -7,10 +7,9 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-lpb $0
-  sub $0,1
-  div $1,2
-lpe
+mov $2,2
+pow $2,$0
+div $1,$2
 mov $0,$1
 add $0,1
 mod $0,2
