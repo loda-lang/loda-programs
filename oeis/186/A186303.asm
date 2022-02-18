@@ -1,22 +1,19 @@
 ; A186303: ( A007522(n)+1 )/2.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 4,12,16,24,36,40,52,64,76,84,96,100,112,120,132,136,156,180,184,192,216,220,232,240,244,252,300,304,316,324,360,364,372,376,412,420,432,444,456,460,484,492,496,516,520,532,544
 
+add $0,1
 mov $1,6
 mov $2,$0
-add $2,3
-pow $2,2
+pow $2,5
 lpb $2
-  sub $2,1
   mov $3,$1
+  add $1,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,8
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+  add $1,7
+  sub $2,$0
 lpe
 mov $0,$1
 div $0,2
-sub $0,3
+add $0,1

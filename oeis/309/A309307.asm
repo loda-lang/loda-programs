@@ -1,8 +1,6 @@
 ; A309307: Number of unitary divisors of n (excluding 1).
+; Submitted by Christian Krause
 ; 0,1,1,1,1,3,1,1,1,3,1,3,1,3,3,1,1,3,1,3,3,3,1,3,1,3,1,3,1,7,1,1,3,3,3,3,1,3,3,3,1,7,1,3,3,3,1,3,1,3,3,3,1,3,3,3,3,3,1,7,1,3,3,1,3,7,1,3,3,7,1,3,1,3,3,3,3,7,1,3,1,3,1,7,3,3,3,3,1,7,3,3,3,3,3,3,1,3,3,3
 
-seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,2
-pow $1,$0
-sub $1,1
-mov $0,$1
+seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+sub $0,1

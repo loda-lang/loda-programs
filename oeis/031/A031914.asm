@@ -4,5 +4,16 @@
 
 mul $0,10
 add $0,1
-seq $0,173064 ; a(n) = prime(n) - 5.
-add $0,5
+mov $1,6
+mov $2,$0
+pow $2,5
+lpb $2
+  mov $3,$1
+  add $1,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
+add $0,1

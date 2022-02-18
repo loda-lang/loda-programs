@@ -5,6 +5,8 @@
 mul $0,8
 add $0,3
 seq $0,173064 ; a(n) = prime(n) - 5.
+sub $0,8
 div $0,2
+sub $0,3
 mul $0,2
-add $0,5
+add $0,19

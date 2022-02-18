@@ -1,0 +1,15 @@
+; A008914: Order of simple Chevalley group G_2 (q), q = prime power.
+; Submitted by Simon Strandgaard
+; 12096,4245696,251596800,5859000000,664376138496,4329310519296,22594320403200,376611192619200,3914077489672896,71776114783027200,167795197370551296,796793353927300800,11570921621943780096
+
+seq $0,246655 ; Prime powers: numbers of the form p^k where p is a prime and k >= 1.
+pow $0,2
+mov $2,$0
+pow $0,2
+mul $0,$2
+bin $0,2
+sub $2,1
+mul $2,$0
+mov $0,$2
+div $0,6048
+mul $0,12096
