@@ -17,20 +17,19 @@ add $1,1
 mul $1,2
 sub $1,$0
 mov $2,1
-mov $6,$5
 lpb $2
-  add $1,$6
+  add $1,$5
   sub $2,1
 lpe
 mov $8,$5
 lpb $8
-  add $7,$6
+  add $7,$5
   sub $8,1
 lpe
 mov $2,21
 mov $6,$7
 lpb $2
-  add $1,$6
+  add $1,$7
   sub $2,1
 lpe
 mov $7,0
@@ -40,9 +39,8 @@ lpb $8
   sub $8,1
 lpe
 mov $2,17
-mov $6,$7
 lpb $2
-  add $1,$6
+  add $1,$7
   sub $2,1
 lpe
 mov $0,$1
