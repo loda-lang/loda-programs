@@ -1,18 +1,18 @@
 ; A230076: (A007521(n)-1)/4.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 1,3,7,9,13,15,25,27,37,39,43,45,49,57,67,69,73,79,87,93,97,99,105,115,127,135,139,153,163,165,169,175,177,183,189,193,199,205,207,213,219,235,249,253,255,265,267,273,277,279,295,303,307
 
-mov $1,4
+mov $1,2
 mov $2,$0
+add $0,1
 pow $2,5
 lpb $2
-  sub $2,1
   mov $3,$1
-  add $1,5
+  mul $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,3
+  add $1,4
   sub $2,$0
 lpe
 mov $0,$1
-div $0,4
+div $0,2

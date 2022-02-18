@@ -6,7 +6,7 @@ lpb $0
   trn $0,1
   seq $0,48711 ; 2nd row of Family 1 "90 X 150 array": generations 0 .. n of Rule 90 starting from seed pattern 7.
   mov $2,$0
-  mov $0,$1
+  mov $0,0
 lpe
 mov $0,$2
 div $0,2
