@@ -1,19 +1,16 @@
 ; A166457: Numbers n such that n*100+1 is prime.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,4,6,7,12,13,16,18,19,28,30,33,37,40,42,48,51,55,57,58,61,63,67,70,79,81,85,90,96,99,103,105,106,117,118,121,123,124,126,130,139,144,151,154,156,159,160,163,169,174,183,184,187,190,193,195,198,201,202,210,211,214,216,217,225,229,232,238,240,253,256,258,265,267,268,277,279,280,282,289,291,292,294,295,316,324,328,333,336,343,345,352,354,358,369,372,375,382,385,393
 
-mov $2,$0
-add $2,2
-bin $2,2
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $1,35
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,65
-  sub $2,$0
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,100
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,100

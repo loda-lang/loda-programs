@@ -1,17 +1,17 @@
 ; A163627: Numbers n such that 42n + 5 is prime.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,2,3,4,6,9,11,12,14,16,17,18,21,22,23,24,26,28,29,31,34,37,38,43,47,49,54,56,57,58,62,64,66,67,68,69,79,81,82,83,84,86,87,88,93,97,102,104,106,109,113,114,116,117,119,121,123,126,128,131,133,136,138,139,141,143,144,148,149,152,154,157,166,167,169,171,172,178,179,181,182,183,186,188,192,193,196,199,201,204,207,208,209,211,213,218,219,223,224
 
-mov $1,4
-mov $2,$0
-pow $2,3
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $1,42
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  sub $2,$0
+add $0,1
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,42
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,42

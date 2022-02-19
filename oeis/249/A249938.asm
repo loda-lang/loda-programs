@@ -4,6 +4,5 @@
 
 mul $0,2
 seq $0,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
-sub $0,1
 mul $0,2
-add $0,1
+sub $0,1

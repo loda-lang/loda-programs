@@ -1,12 +1,11 @@
 ; A336409: Distance from prime(n) to the nearest odd composite that is < prime(n).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w1)
 ; 2,4,2,4,2,2,4,2,2,4,2,2,2,4,2,2,4,2,2,2,2,2,4,2,4,2,2,2,2,4,2,4,2,2,2,2,2,4,2,4,2,4,2,2,2,4,2,2,4,2,2,2,2,4,2,2,4,2,2,2,4,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,4,2,4,2,2,2,2,2,4
 
-add $0,3
 mov $2,$0
-sub $0,1
-mov $1,6
-pow $2,5
+add $0,4
+add $2,25
+pow $2,2
 lpb $2
   mov $3,$1
   add $1,1
