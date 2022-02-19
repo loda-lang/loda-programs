@@ -20,7 +20,7 @@ jobs:
       - name: Check Programs
         run: |
           mkdir -p $HOME/loda/bin
-          curl -fsSLo $HOME/loda/bin/loda https://github.com/loda-lang/loda-cpp/releases/latest/download/loda-ubuntu-20
+          curl -fsSLo $HOME/loda/bin/loda https://github.com/loda-lang/loda-cpp/releases/latest/download/loda-linux-x86
           chmod u+x $HOME/loda/bin/loda
           ln -s $(pwd) $HOME/loda/programs
           start_time="$(date -u +%s)"

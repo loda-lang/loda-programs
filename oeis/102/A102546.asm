@@ -13,7 +13,6 @@ lpb $3
   sub $3,$0
 lpe
 mov $0,$2
-div $0,100
-sub $0,1
-mul $0,10
+sub $0,100
+div $0,10
 add $0,10
