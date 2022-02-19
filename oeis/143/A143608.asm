@@ -15,17 +15,17 @@ lpb $3
     mov $0,$8
     sub $6,1
     sub $0,$6
+    mov $2,$0
     mov $10,2
-    mov $12,$0
     lpb $10
-      mov $0,$12
+      mov $0,$2
       sub $10,1
       add $0,$10
       sub $0,1
       lpb $0
         div $0,2
         mov $4,$0
-        mov $0,$2
+        mov $0,0
         seq $4,281237 ; Solutions x to the negative Pell equation y^2 = 72*x^2 - 73728 with x,y >= 0.
         mul $4,2
       lpe

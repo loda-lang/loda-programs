@@ -1,19 +1,17 @@
 ; A076355: Numbers n such that 210*n + 11 is prime.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,2,3,5,7,9,10,12,13,16,17,19,20,21,24,25,26,29,30,31,34,42,43,45,48,49,54,57,59,60,61,63,64,67,72,74,75,76,80,81,82,89,90,91,93,94,95,100,101,104,106,107,108,109,111,112,113,116,123,125,127,128,133,134,136,139,140,146,147,148,150,151,153,155,156,158,162,166,167,168,172,173,174,175,177,180,182,184,185,194,195,197,199,201,203,206,207,208,210,212
 
-mov $1,10
-mov $2,$0
-add $2,13
-pow $2,3
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $1,36
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,69
-  sub $2,$0
+add $0,1
+mov $2,10
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,105
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,210

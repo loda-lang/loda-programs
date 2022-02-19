@@ -6,6 +6,4 @@ mov $2,$0
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 seq $2,228661 ; Number of 2Xn binary arrays with top left value 1 and no two ones adjacent horizontally, diagonally or antidiagonally.
 mul $0,$2
-sub $0,2
 div $0,2
-add $0,1
