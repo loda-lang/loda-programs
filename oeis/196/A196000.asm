@@ -1,18 +1,17 @@
 ; A196000: Numbers k such that 90*k + 19 is prime.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,1,2,4,8,9,10,11,14,16,17,22,23,24,25,28,30,34,35,36,39,41,43,46,48,50,53,55,56,60,63,64,65,69,74,77,78,79,80,81,83,85,86,91,93,98,99,101,102,107,108,109,111,112,115,116,118,119,121,130,140,142,143,144,146,147,148,153,154,157,160,164,165,168,170,174,176,186,189,191,192,193,195,196,197,198,199,202,203,204,210,211,220,223,225,226,230,231,232,235
 
-mov $1,3
-mov $2,$0
-pow $2,5
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $1,15
-  mul $3,6
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  sub $2,$0
+add $0,1
+mov $1,18
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $2,$1
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$2
+  add $1,90
+  sub $3,$0
 lpe
 mov $0,$1
-div $0,15
+div $0,90

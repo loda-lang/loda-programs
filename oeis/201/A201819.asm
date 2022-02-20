@@ -1,23 +1,17 @@
 ; A201819: Numbers n such that 90*n + 31 is prime.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,2,6,7,8,11,13,14,15,16,19,20,22,25,26,28,30,33,35,36,37,39,40,47,49,51,53,60,61,63,64,65,68,71,74,75,76,77,81,82,84,85,88,91,92,95,97,99,104,107,110,112,118,120,128,130,131,138,139,141,146,149,152,156,158,159,160,167,169,170,172,173,179,180,182,189,193,194,195,197,198,201,202,203,205,207,215,216,222,223,228,229,230,233,244,246,249,250,251,256
 
-mov $2,$0
-add $2,2
-pow $2,2
-mov $4,15
-lpb $2
-  mul $3,2
-  pow $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $1,$0
-  max $1,0
-  cmp $1,$0
-  mul $2,$1
-  sub $2,1
-  add $4,45
-  mov $3,$4
+add $0,1
+mov $2,30
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,90
+  sub $3,$0
 lpe
-mov $0,$4
-div $0,45
+mov $0,$2
+div $0,90
