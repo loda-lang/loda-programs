@@ -23,12 +23,10 @@ lpb $8
     add $1,$2
     seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
     add $1,$0
-    mov $0,$1
-    div $0,2
-    add $4,$0
+    add $4,$1
   lpe
   mov $0,$4
-  div $0,2
+  div $0,4
   add $0,1
   mov $9,$8
   mul $9,$0
