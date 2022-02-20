@@ -1,0 +1,14 @@
+; A055746: Product of first n terms of A003046.
+; Submitted by Jamie Morken(w2)
+; 1,1,2,20,2800,16464000,12778698240000,4254956888736153600000,2026001446509988558521630720000000,4690285643617101997210180025102660272128000000000
+
+mov $1,4
+mov $2,$0
+lpb $2
+  sub $0,1
+  seq $2,3046 ; Product of first n Catalan numbers.
+  mul $1,$2
+  mov $2,$0
+lpe
+mov $0,$1
+div $0,4

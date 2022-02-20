@@ -1,0 +1,14 @@
+; A316342: Fibonacci word A003849 with first two terms replaced by 2's.
+; Submitted by Jamie Morken(w2)
+; 2,2,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
+
+lpb $0
+  mov $2,$0
+  seq $2,82524 ; a(1)=1, a(2)=2, then use the rule when a(n) is the end of a run, n appears a(n) times.
+  sub $0,$2
+  mov $1,$0
+  add $1,58
+lpe
+mov $0,$1
+add $0,2
+mod $0,10

@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101
 
-add $0,9
-seq $0,5097 ; (Odd primes - 1)/2.
+add $0,8
+seq $0,89038 ; Nonnegative numbers k such that 2k+5 is prime.
+sub $0,7
 mul $0,2
-add $0,1
+add $0,19

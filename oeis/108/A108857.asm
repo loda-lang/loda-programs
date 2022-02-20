@@ -1,18 +1,17 @@
 ; A108857: Numbers n such that 10*n + 131 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 0,2,5,6,8,11,12,14,15,18,20,27,29,30,33,36,39,41,44,47,50,51,53,56,57,62,63,68,69,75,78,81,84,86,89,90,92,93,96,102,104,105,107,110,116,117,119,123,125,132,134,135,138,140,144,147,149,159,161,167,168,170,173,174,177,180,182,188,195,198,200,201,203,209,212,215,218,221,222,224,225,228,231,239,240,242,246,249,254,258,260,261,266,267,272,273,284,287,288,291
 
 add $0,7
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$1
-  add $1,7
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,3
-  sub $2,$0
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,10
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 sub $0,130
 div $0,10

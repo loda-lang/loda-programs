@@ -3,15 +3,16 @@
 ; 4,12,16,28,36,40,52,60,72,88,96,100,108,112,136,148,156,172,180,192,196,228,232,240,256,268,276,280,292,312,316,336,348,352,372,388,396,400,408,420,432,448,456,460,508,520,540,556,568,576,592,600,612,616
 
 add $0,1
-mov $1,4
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$1
-  add $1,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,3
-  sub $2,$0
+mov $3,$0
+pow $3,5
+lpb $3
+  add $2,4
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
+div $0,4
+add $0,1
+mul $0,4
