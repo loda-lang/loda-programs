@@ -11,13 +11,12 @@ lpb $0
   dif $3,$0
   mod $0,2
   mul $0,$4
-  pow $0,4
+  pow $0,3
   cmp $3,$2
   sub $2,$4
   cmp $3,0
   mul $3,$0
   mov $0,$2
-  div $3,$4
   add $1,$3
   sub $2,$4
 lpe
