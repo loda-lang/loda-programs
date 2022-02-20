@@ -5,8 +5,6 @@
 mul $0,9
 add $0,1
 seq $0,89038 ; Nonnegative numbers k such that 2k+5 is prime.
-sub $0,7
-mul $0,4
-add $0,4
-div $0,2
-add $0,17
+add $0,11
+mul $0,2
+sub $0,17

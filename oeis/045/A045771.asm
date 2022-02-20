@@ -23,10 +23,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mul $4,$2
-    cmp $6,$1
-    sub $6,1
-    sub $4,$6
-    add $4,1
+    add $4,2
     mul $5,$2
     add $5,$4
   lpe

@@ -1,0 +1,13 @@
+; A181335: Partial products of A036691.
+; Submitted by Simon Strandgaard
+; 1,4,96,18432,31850496,550376570880,114126085737676800,331312591939905257472000,14427205603578338379772723200000,10051861189298894268003697526046720000000
+
+mov $1,1
+mov $2,$0
+lpb $2
+  sub $0,1
+  seq $2,36691 ; Compositorial numbers: product of first n composite numbers.
+  mul $1,$2
+  mov $2,$0
+lpe
+mov $0,$1
