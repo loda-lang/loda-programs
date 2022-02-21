@@ -1,19 +1,16 @@
 ; A111215: Numbers k such that 4k + 5 is prime.
-; Submitted by Jamie Morken(w3)
+; Submitted by Christian Krause
 ; 0,2,3,6,8,9,12,14,17,21,23,24,26,27,33,36,38,42,44,47,48,56,57,59,63,66,68,69,72,77,78,83,86,87,92,96,98,99,101,104,107,111,113,114,126,129,134,138,141,143,147,149,152,153,159,162,164,167,168,174,176,182,188,189,191,192,198,201,204,206,212,213,218,219,231,233,234,237,243,248,251,252,254,257,261,264,266,272,273,276,278,281,287,294,297,299,302,303,306,308
 
 add $0,1
-mov $1,4
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$1
-  add $1,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,3
-  sub $2,$0
+mov $3,$0
+pow $3,5
+lpb $3
+  add $2,4
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,4
-sub $0,1
