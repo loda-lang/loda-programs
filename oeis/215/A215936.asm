@@ -4,10 +4,9 @@
 
 sub $0,1
 mov $2,8
-mov $3,-1
 lpb $0
   sub $0,1
-  mul $1,$3
+  mul $1,-1
   add $2,$1
   add $1,$2
   sub $2,$1

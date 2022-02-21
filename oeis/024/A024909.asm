@@ -1,19 +1,18 @@
 ; A024909: Numbers k such that 9*k - 4 is prime.
-; Submitted by Jamie Morken(w2)
+; Submitted by Christian Krause
 ; 1,3,5,7,13,15,17,19,27,29,33,35,39,43,45,47,55,57,63,67,69,73,83,85,89,99,105,109,113,115,117,123,133,137,143,145,147,153,157,159,165,167,173,175,179,189,193,199,203,209,213,215,217,223,227,235,237,249,253,257,265,267,269,283,287,293,299,305,309,323,327,329,335,343,347,349,355,357,367,375,377,379,385,393,403,407,409,419,423,425,435,437,439,445,447,453,455,459,469,473
 
 add $0,1
-mov $1,4
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$1
-  add $1,5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,13
-  sub $2,$0
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,18
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,9
 add $0,1

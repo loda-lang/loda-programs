@@ -3,13 +3,12 @@
 
 mov $1,$0
 gcd $0,8
-mov $3,10
+mov $2,10
 lpb $1
   add $0,6
   mov $1,0
-  mov $3,$2
-  add $3,7
+  mov $2,7
 lpe
-mul $0,$3
+mul $0,$2
 trn $0,63
 add $0,1

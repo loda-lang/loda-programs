@@ -1,20 +1,10 @@
 ; A088978: Number of Pythagorean triangles having the n-th prime prime(n) as one of their sides.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w3)
 ; 0,1,2,1,1,2,2,1,1,2,1,2,2,1,1,2,1,2,1,1,2,1,1,2,2,2,1,1,2,2,1,1,2,1,2,1,2,1,1,2,1,2,1,2,2,1,1,1,1,2,2,1,2,1,2,1,2,1,2,2,1,2,1,1,2,2,1,2,1,2,2,1,1,2,1,1,2,2,2,2,1,2,1,2,1,1,2,2,2,1,1,1,1,1,1,1,2,2,1,2
 
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$1
-  add $1,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
-  sub $2,$0
-lpe
-mov $0,$1
-sub $0,6
-div $0,2
+seq $0,277992 ; b(n, 2) where b(n, m) is defined by expansion of ((Product_{k>=1} (1 - x^(prime(n)*k))/(1 - x^k)^prime(n)) - 1)/prime(n) in powers of x.
+sub $0,9
+mod $0,4
 add $0,2
 mod $0,2
 add $0,1
