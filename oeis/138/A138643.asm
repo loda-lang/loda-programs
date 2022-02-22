@@ -1,24 +1,19 @@
 ; A138643: Nonnegative integers k such that 19*k-3 is prime.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w2)
 ; 4,8,14,26,34,38,40,50,56,64,68,70,88,94,104,106,110,118,130,134,140,158,160,190,200,206,218,220,224,236,238,256,260,266,278,284,286,290,298,308,328,334,346,356,370,374,386,388,398,404,416,424,430,434,454,458,460,476,496,500,508,518,530,536,544,568,574,578,584,586,596,608,610,616,620,634,638,640,650,664,668,676,680,694,698,700,706,710,728,740,754,760,766,770,776,778,788,794,796,808
 
-mov $1,7
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  add $1,27
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,11
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+add $0,1
+mov $2,34
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,38
+  sub $3,$0
 lpe
-mov $0,$1
-sub $0,45
+mov $0,$2
+sub $0,72
 div $0,19
 add $0,4

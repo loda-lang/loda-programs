@@ -3,10 +3,9 @@
 
 mov $3,$0
 add $0,1
-mov $4,4
 lpb $3
   cmp $2,6
-  sub $2,$4
+  sub $2,4
   div $0,$2
   div $3,4
 lpe

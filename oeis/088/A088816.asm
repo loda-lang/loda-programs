@@ -1,9 +1,9 @@
 ; A088816: Numbers of the form p^p - 2 where p is prime.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,25,3123,823541,285311670609,302875106592251,827240261886336764175,1978419655660313589123977,20880467999847912034355032910565,2567686153161211134561828214731016126483467
 
-mul $0,2
-max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-pow $0,$0
+seq $0,40 ; The prime numbers.
+add $2,$0
+pow $2,$2
+mov $0,$2
 sub $0,2

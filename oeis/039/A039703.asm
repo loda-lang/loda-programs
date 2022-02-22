@@ -1,8 +1,11 @@
 ; A039703: a(n) = n-th prime modulo 5.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,3,0,2,1,3,2,4,3,4,1,2,1,3,2,3,4,1,2,1,3,4,3,4,2,1,3,2,4,3,2,1,2,4,4,1,2,3,2,3,4,1,1,3,2,4,1,3,2,4,3,4,1,1,2,3,4,1,2,1,3,3,2,1,3,2,1,2,2,4,3,4,2,3,4,3,4,2,1,4,4,1,1,3,4,3,4,2,1,3,2,4,2,1,4,3,4,1,3,1
 
-mul $0,2
-max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,40 ; The prime numbers.
+add $2,$0
+mov $3,1
+add $3,$2
+mov $0,$3
+sub $0,1
 mod $0,5

@@ -6,12 +6,3 @@ seq $0,5097 ; (Odd primes - 1)/2.
 mul $0,2
 add $0,1
 bin $0,3
-add $0,2
-mul $0,4
-add $0,1
-mul $0,10
-sub $0,130
-div $0,20
-sub $0,4
-div $0,2
-add $0,3

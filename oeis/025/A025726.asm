@@ -35,7 +35,7 @@ lpb $2
       mov $3,$6
       mov $13,$12
       lpb $13
-        mov $11,$3
+        mov $11,$6
         sub $13,1
       lpe
     lpe
