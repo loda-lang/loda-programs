@@ -23,17 +23,16 @@ lpb $2
       sub $9,1
       add $0,$9
       sub $0,2
-      mov $3,6
       mov $4,7
       lpb $0
         sub $0,1
         mul $4,2
       lpe
-      div $4,$3
+      div $4,6
       mov $3,$4
       mov $10,$9
       lpb $10
-        mov $8,$3
+        mov $8,$4
         sub $10,1
       lpe
     lpe
