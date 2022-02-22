@@ -1,9 +1,7 @@
 ; A138690: Numbers of the form 56+p^2 (where p is a prime).
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 60,65,81,105,177,225,345,417,585,897,1017,1425,1737,1905,2265,2865,3537,3777,4545,5097,5385,6297,6945,7977,9465,10257,10665,11505,11937,12825,16185,17217,18825,19377,22257,22857,24705,26625,27945,29985
 
-mul $0,2
-max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,40 ; The prime numbers.
 pow $0,2
 add $0,56

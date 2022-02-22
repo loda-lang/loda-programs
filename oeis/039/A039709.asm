@@ -1,8 +1,11 @@
 ; A039709: a(n) = n-th prime modulo 11.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,3,5,7,0,2,6,8,1,7,9,4,8,10,3,9,4,6,1,5,7,2,6,1,9,2,4,8,10,3,6,10,5,7,6,8,3,9,2,8,3,5,4,6,10,1,2,3,7,9,2,8,10,9,4,10,5,7,2,6,8,7,10,3,5,9,1,7,6,8,1,7,4,10,5,9,4,1,5,2,1,3,2,4,10,3,9,6,10,1,5,6,3,7,4,8,3,4,6,2
 
-mul $0,2
-max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,40 ; The prime numbers.
+add $2,$0
+mov $3,1
+add $3,$2
+mov $0,$3
+sub $0,1
 mod $0,11
