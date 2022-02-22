@@ -1,0 +1,6 @@
+; A180492: Product of remainders of prime(n) mod k, for k = 2,3,4,...,prime(n)-1
+; Submitted by Simon Strandgaard
+; 1,1,2,6,720,2160,2419200,65318400,754427520000,32953394073600000,311409573995520000,37269497815783833600000,7890485108998805913600000000,1096106738916569123487744000000
+
+seq $0,6093 ; a(n) = prime(n) - 1.
+seq $0,173392 ; Product of nonzero remainders of n mod k, for k = 1,2,3,...,n.
