@@ -1,4 +1,4 @@
-; A173997: Irregular triangular by columns derived from (1, 2, 3,...) * (1, 2, 3,...).
+; A173997: Irregular triangular by columns derived from (1, 2, 3, ...) * (1, 2, 3, ...).
 ; Submitted by Jon Maiga
 ; 1,2,3,2,4,4,5,6,3,6,8,6,7,10,9,4,8,12,12,8,9,14,15,12,5,10,16,18,16,10,11,18,21,20,15,6,12,20,24,24,20,12
 

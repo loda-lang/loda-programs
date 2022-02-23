@@ -5,6 +5,6 @@
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,159288 ; Expansion of (1+x+x^2)/(1-x^2-2*x^3).
+seq $0,159288 ; Expansion of (1 + x + x^2)/(1 - x^2 - 2*x^3).
 sub $1,$0
 mov $0,$1
