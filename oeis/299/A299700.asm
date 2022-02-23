@@ -4,7 +4,6 @@
 
 mov $1,1
 mov $4,1
-mov $5,2
 lpb $0
   mov $3,$2
   mov $2,$0
@@ -13,9 +12,9 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     div $1,$4
-    mov $3,$5
+    mov $3,2
   lpe
-  trn $0,$5
+  trn $0,2
   mul $1,$2
   div $1,$4
 lpe
