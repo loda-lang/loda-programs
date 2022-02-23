@@ -1,9 +1,19 @@
 ; A287922: a(n) = prime(1)^2 + prime(n)^2.
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 8,13,29,53,125,173,293,365,533,845,965,1373,1685,1853,2213,2813,3485,3725,4493,5045,5333,6245,6893,7925,9413,10205,10613,11453,11885,12773,16133,17165,18773,19325,22205,22805,24653,26573,27893,29933,32045,32765,36485
 
-mul $0,2
-max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,2
+  sub $3,$0
+lpe
+pow $2,$0
+mov $0,$2
+add $0,1
 pow $0,2
 add $0,4

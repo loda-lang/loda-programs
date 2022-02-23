@@ -1,19 +1,18 @@
 ; A138918: Numbers n such that 18n-1 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 1,3,4,5,6,10,11,13,14,15,20,24,25,26,28,29,31,33,36,38,39,40,43,45,46,48,49,53,54,59,61,64,66,68,70,71,76,80,83,84,88,89,90,91,95,104,105,106,110,111,115,116,119,123,126,130,131,133,134,136,144,145,148,150,153,155,158,159,160,161,165,168,169,176,178,179,181,185,186,194,196,199,201,204,209,210,211,213,214,218,223,225,230,231,234,235,238,241,243,244
 
 add $0,1
-mov $1,16
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$1
-  add $1,35
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  sub $1,17
-  sub $2,$0
+mov $2,16
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,18
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,18
 add $0,1
