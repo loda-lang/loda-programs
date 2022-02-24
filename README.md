@@ -18,6 +18,10 @@ There are currently more than :star: **60,000 programs** :star: available! You c
 
 If you want to receive updates on new miner findings, you can follow the [commits in this repository](https://github.com/loda-lang/loda-programs/commits/main) or subscribe to the [@lodaminer](https://twitter.com/lodaminer) channel on Twitter, or join the [LODA community on Slack](https://loda-lang.slack.com/).
 
+**History of LODA Mining**
+
+<img src="https://raw.githubusercontent.com/loda-lang/loda-programs/main/program_counts.png" width=400 />
+
 ## Related Repositories
 
 * [loda-lang.org](https://loda-lang.org): Main home page of LODA.
