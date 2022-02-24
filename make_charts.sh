@@ -7,32 +7,33 @@ for cmd in cat date git gnuplot grep seq; do
   fi
 done
 
-echo "Counting programs"
-echo "" > counts.dat
-for commit in $(git rev-list main); do
-  date=$(git show -s --format="%ci" $commit)
-  date=${date/ +0100/}
-  count=$(git ls-tree --name-only -r $commit | grep ".*oeis/.*" | wc -l)
-  echo $date,$count >> counts.dat 
-done
+if [ ! -f counts.dat ]; then
+  echo "Counting programs"
+  for commit in $(git rev-list main); do
+    date=$(git show -s --format="%ci" $commit)
+    date=${date/ +0100/}
+    count=$(git ls-tree --name-only -r $commit | grep ".*oeis/.*" | wc -l)
+    echo $date,$count >> counts.dat
+  done
+fi
 
 echo "Generating count chart"
 cat << EOF > counts.gp
-set terminal pngcairo font "arial,9" size 800,600
+set terminal pngcairo font "Helvetica,20" size 1024,768
 set output 'program_counts.png'
 set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
 set format x "%m/%Y"
 set xrange ["2018-09-20 00:00:00":*]
-set xtics "2018-09-20 00:00:00",7776000
+set xtics "2018-09-20 00:00:00",31104000
 set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
 set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
 unset key
 set datafile separator ','
 set title "Number of LODA Programs"
-plot "counts.dat" using 1:2 with lines linecolor rgb "#0000FF"
+plot "counts.dat" using 1:2 with filledcurves above
 EOF
 
 gnuplot counts.gp
-rm counts.gp
-rm counts.dat
+# rm counts.gp
+# rm counts.dat

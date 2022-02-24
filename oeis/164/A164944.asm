@@ -1,0 +1,20 @@
+; A164944: Decimal value of the concatenation of first n even numbers in binary.
+; Submitted by Christian Krause
+; 2,20,166,2664,42634,682156,10914510,349264336,11176458770,357646680660,11444693781142,366230200996568,11719366431890202,375019725820486492,12000631226255567774,768040398480356337568,49154585502742805604386
+
+add $0,1
+lpb $0
+  mov $2,$1
+  mov $3,2
+  mul $3,$0
+  lpb $2
+    div $2,2
+    mul $3,2
+  lpe
+  lpb $3
+    sub $0,1
+    add $1,$3
+    mov $3,0
+  lpe
+lpe
+mov $0,$1
