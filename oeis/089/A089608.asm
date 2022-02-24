@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   dif $0,2
-  cmp $1,$2
+  cmp $1,0
 lpe
 mul $1,4
 add $1,1
