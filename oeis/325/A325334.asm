@@ -3,4 +3,4 @@
 
 mul $0,2
 trn $0,1
-seq $0,88722 ; Number of divisors d>1 of n such that also d+1 divides n.
+seq $0,88722 ; Number of divisors d>1 of n such that d+1 also divides n.

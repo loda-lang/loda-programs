@@ -8,7 +8,7 @@ lpb $0
 lpe
 sub $1,$0
 sub $0,$1
-sub $2,1
+mov $2,-1
 sub $2,$0
 bin $2,$1
 mov $1,2

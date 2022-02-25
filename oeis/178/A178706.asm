@@ -3,16 +3,13 @@
 
 mov $1,5040
 mov $2,6
-mov $3,6
-mov $4,3
 lpb $0
   sub $0,1
-  sub $1,$4
-  sub $1,2
-  mul $2,$4
+  sub $1,5
+  mul $2,3
   add $1,$2
 lpe
-mul $1,$3
+mul $1,6
 add $1,13
 div $1,30
 sub $1,1008
