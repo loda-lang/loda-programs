@@ -18,7 +18,7 @@ lpb $8
       mov $4,$1
       gcd $4,$2
       div $1,$4
-      mov $3,$5
+      mov $3,0
     lpe
     sub $0,1
     mul $4,$1
@@ -26,9 +26,9 @@ lpb $8
     add $1,$4
   lpe
   mov $0,$1
-  mov $9,$8
-  mul $9,$1
-  add $7,$9
+  mov $5,$8
+  mul $5,$1
+  add $7,$5
 lpe
 min $6,1
 mul $6,$0

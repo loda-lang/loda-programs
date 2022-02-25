@@ -1,21 +1,19 @@
 ; A084151: Binomial transform of a Pell convolution.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w2)
 ; 0,0,1,9,62,390,2359,14007,82412,482652,2820061,16457397,95983370,559619970,3262267891,19015581699,110836005272,646014798840,3765295834489,21945889348257,127910427675542,745517838966462
 
+mul $0,2
 mov $1,1
 lpb $0
   sub $0,1
+  dif $3,2
   add $1,$3
-  mov $2,$4
   sub $3,$4
+  mov $4,$2
   sub $2,$3
-  mov $3,$5
+  mov $3,$1
   add $4,$1
-  mov $1,1
   add $4,$2
-  add $2,1
-  mul $5,7
-  add $5,$2
-  sub $5,$3
 lpe
-mov $0,$3
+mov $0,$2
+div $0,2
