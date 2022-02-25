@@ -6,6 +6,6 @@ lpb $0
   trn $0,1
   seq $0,70952 ; Number of 1's in n-th generation of 1-D CA using Rule 30, started with a single 1.
   mov $2,$0
-  mov $0,$1
+  mov $0,0
 lpe
 mov $0,$2
