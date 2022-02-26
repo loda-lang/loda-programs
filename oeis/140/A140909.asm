@@ -1,0 +1,19 @@
+; A140909: Number of 5 X 7 matrices with elements in 0..n with each row and each column in nondecreasing order. 5,7,n can be permuted, see formula.
+; Submitted by Jamie Morken(w4)
+; 1,792,169884,16195608,868489479,30107635272,739309710568,13710834632352,201299981193168,2424984388825856,24648355308799872,216147115784860416,1665094848682410288,11437167331673750304,70921650365525951640,401206240199887951400
+
+add $0,4
+mov $2,10
+mov $4,$0
+mov $0,12
+lpb $0
+  sub $0,2
+  mov $3,$4
+  add $3,2
+  bin $3,$1
+  mov $1,7
+  mul $2,$3
+  add $4,1
+lpe
+mov $0,$2
+div $0,114048000
