@@ -1,11 +1,7 @@
 ; A079295: (D(p)-6)/(12p) where D(p) denotes the denominator of the 2p-th Bernoulli number and p runs through the primes.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0
 
-seq $0,40 ; The prime numbers.
+seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,2
-seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
-lpb $0
-  mov $0,2
-lpe
-div $0,2
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

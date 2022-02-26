@@ -1,5 +1,5 @@
 ; A263419: a(n) is the total number of pentagrams in a variant of pentagram fractal after n iterations.
-; Submitted by Jamie Morken(l1)
+; Submitted by Christian Krause
 ; 1,6,11,26,51,106,201,396,751,1446,2741
 
 mov $3,1
@@ -18,7 +18,6 @@ lpb $0
   div $3,$2
   mul $3,2
   mov $1,$3
-  trn $3,$2
   pow $4,2
 lpe
 mov $0,$2

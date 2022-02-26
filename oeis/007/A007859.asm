@@ -1,10 +1,9 @@
 ; A007859: Number of matchings in rooted plane trees on n nodes.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w4)
 ; 0,1,4,18,84,405,2002,10101,51844,269994,1423784,7590044,40846390,221650195,1211606190
 
 mov $4,$0
 add $4,1
-mov $5,1
 lpb $0
   sub $0,1
   mov $2,$4
@@ -20,4 +19,3 @@ lpb $0
   add $5,$3
 lpe
 mov $0,$5
-sub $0,1
