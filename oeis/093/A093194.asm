@@ -5,6 +5,5 @@
 seq $0,5097 ; (Odd primes - 1)/2.
 add $0,1
 bin $0,2
-mul $0,4
-add $0,1
-mul $0,10
+mul $0,40
+add $0,10
