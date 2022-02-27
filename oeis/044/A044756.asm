@@ -1,5 +1,5 @@
 ; A044756: Numbers n such that string 4,3 occurs in the base 10 representation of n but not of n+1.
-; Submitted by Stefano Spezia
+; Submitted by Christian Krause
 ; 43,143,243,343,439,443,543,643,743,843,943,1043,1143,1243,1343,1439,1443,1543,1643,1743,1843,1943,2043,2143,2243,2343,2439,2443,2543,2643,2743,2843,2943,3043,3143,3243,3343,3439,3443
 
 add $0,2
@@ -15,6 +15,5 @@ add $0,$1
 sub $0,3
 mul $0,5
 div $0,2
-sub $0,97
 mul $0,2
-add $0,43
+sub $0,151
