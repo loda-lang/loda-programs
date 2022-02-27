@@ -8,5 +8,5 @@ lpb $0
   seq $2,339194 ; Sum of all squarefree semiprimes with greater prime factor prime(n).
   add $1,$2
 lpe
+mul $1,2
 mov $0,$1
-mul $0,2
