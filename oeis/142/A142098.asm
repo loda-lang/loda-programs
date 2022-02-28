@@ -5,7 +5,7 @@
 add $0,1
 mov $2,32
 mov $3,$0
-pow $3,20
+pow $3,5
 lpb $3
   mov $1,$2
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
