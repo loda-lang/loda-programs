@@ -1,18 +1,6 @@
 ; A099836: Bisection of A000961.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(l1)
 ; 1,3,5,8,11,16,19,25,29,32,41,47,53,61,67,73,81,89,101,107,113,125,128,137,149,157,167,173,181,193,199,223,229,239,243,256,263,271,281,289,307,313,331,343,349,359,367,379,389,401,419,431,439,449,461,467,487
 
 mul $0,2
-mov $2,$0
-add $2,$0
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $1,1
-  seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
-  sub $0,$3
-  sub $2,$0
-lpe
-mov $0,$1
-add $0,1
+seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).

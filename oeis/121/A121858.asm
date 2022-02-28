@@ -6,6 +6,5 @@ seq $0,40 ; The prime numbers.
 mov $2,3
 pow $2,$0
 mov $0,$2
-div $0,18
-mul $0,6
-add $0,3
+div $0,9
+mul $0,3

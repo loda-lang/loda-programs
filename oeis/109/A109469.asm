@@ -1,0 +1,11 @@
+; A109469: Cumulative sum of coefficients of ménage hit polynomials (A000033).
+; Submitted by Christian Krause
+; 0,2,5,9,49,259,1736,13408,117664,1153714,12492569,147987413,1903194061,26402007855,392928613560,6244069139240,105515436903720,1889249822655882,35726927316484053,711526052649064073
+
+lpb $0
+  mov $2,$0
+  sub $0,1
+  seq $2,33 ; Coefficients of ménage hit polynomials.
+  add $1,$2
+lpe
+mov $0,$1

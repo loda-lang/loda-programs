@@ -1,11 +1,7 @@
 ; A099847: Bisection of A000961.
-; Submitted by Jamie Morken(s4)
+; Submitted by Jamie Morken(l1)
 ; 2,4,7,9,13,17,23,27,31,37,43,49,59,64,71,79,83,97,103,109,121,127,131,139,151,163,169,179,191,197,211,227,233,241,251,257,269,277,283,293,311,317,337,347,353,361,373,383,397,409,421,433,443,457,463,479,491
 
-mul $0,4
-mov $2,2
-lpb $0
-  sub $0,2
-  seq $2,15 ; Smallest prime power >= n.
-lpe
-mov $0,$2
+mul $0,2
+add $0,1
+seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
