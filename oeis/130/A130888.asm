@@ -1,4 +1,4 @@
-; A130888: Triangle read by rows, A051731(n,k) dot (1, 3, 7, 15,...) with like numbers of terms.
+; A130888: Triangle read by rows, A051731(n,k) dot (1, 3, 7, 15, ...) with like numbers of terms.
 ; Submitted by Jon Maiga
 ; 1,1,3,1,0,7,1,3,0,15,1,0,0,0,31,1,3,7,0,0,63,1,0,0,0,0,0,127,1,3,0,15,0,0,0,255
 

@@ -9,10 +9,9 @@ mov $1,$2
 mul $1,$0
 pow $2,2
 add $2,1
-mul $1,$2
-mul $1,$0
-pow $2,10
-sub $2,2
+pow $2,9
+sub $2,1
 div $2,$1
+div $2,$0
 mov $0,$2
 add $0,1

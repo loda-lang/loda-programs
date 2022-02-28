@@ -5,6 +5,5 @@
 seq $0,40 ; The prime numbers.
 sub $0,1
 pow $0,2
-sub $0,1
 mul $0,6
-add $0,8
+add $0,2

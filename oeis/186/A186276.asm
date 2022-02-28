@@ -22,20 +22,19 @@ lpb $3
       add $7,1
       mov $4,$7
       mul $4,$0
-      mov $6,1
       lpb $4
-        add $2,$6
+        add $2,1
         sub $4,1
         trn $4,$2
       lpe
       mov $5,$2
       mov $2,0
     lpe
+    mov $6,$11
     mov $7,$5
-    mov $12,$11
-    lpb $12
-      mov $10,$7
-      sub $12,1
+    lpb $6
+      sub $6,1
+      mov $10,$5
     lpe
   lpe
   lpb $9

@@ -4,10 +4,5 @@
 
 mov $2,$0
 seq $0,293490 ; a(n) = Sum_{k=0..n} binomial(2*k, k)*binomial(2*n-k, n).
-mov $1,$0
 add $2,1
-add $2,$0
-gcd $1,$2
-div $2,$1
-mov $0,$2
-sub $0,1
+div $0,$2

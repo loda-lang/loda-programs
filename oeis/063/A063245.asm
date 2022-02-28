@@ -4,14 +4,13 @@
 mov $1,$0
 mul $1,2
 mov $2,$0
-mov $3,3
+mov $3,$0
 mov $4,$1
-mov $5,$0
 lpb $2
   lpb $4
     add $0,1
     add $2,1
-    trn $4,$3
+    trn $4,3
   lpe
   lpb $1
     sub $0,1
@@ -20,8 +19,8 @@ lpb $2
     trn $2,$0
   lpe
 lpe
-lpb $5
+lpb $3
   add $0,4
-  sub $5,1
+  sub $3,1
 lpe
 add $0,3
