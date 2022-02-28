@@ -12,7 +12,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     div $1,$4
-    mov $3,$5
+    mov $3,0
   lpe
   sub $0,1
   mul $1,$2

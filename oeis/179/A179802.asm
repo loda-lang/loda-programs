@@ -1,11 +1,14 @@
 ; A179802: Digital root of A179545.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 3,9,3,9,3,9,3,9,3,3,9,9,3,9,3,3,3,9,9,3,9,9,3,3,9,3,9,3,9,3,9,3,3,9,3,9,9,9,3,3,3,9,3,9,3,9,9,9,3,9,3,3,9,3,3,3,3,9,9,3,9,3,9,3,9,3,9,9,3,9,3,3,9,9,9,3,3,9,3,9,3,9,3,9,9,3,3,9,3,9,3,3,9,3,9,3,3,3,9,9
 
-mul $0,2
-trn $0,1
-seq $0,147846 ; Triangular numbers n*(n+1)/2 with n or n+1 prime.
-add $0,11
-mod $0,3
-mul $0,3
+seq $0,40 ; The prime numbers.
+add $0,1
+pow $0,2
+sub $0,1
+gcd $0,3
+sub $0,18
+div $0,2
+add $0,8
+mul $0,6
 add $0,3

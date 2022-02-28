@@ -1,5 +1,5 @@
 ; A216216: Square array T, read by antidiagonals: T(n,k) = 0 if n-k>=3 or if k-n>=3, T(2,0) = T(1,0) = T(0,0) = T(0,1) = T(0,2) = 1, T(n,k) = T(n-1,k) + T(n,k-1).
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w1)
 ; 1,1,1,1,2,1,0,3,3,0,0,3,6,3,0,0,0,9,9,0,0,0,0,9,18,9,0,0,0,0,0,27,27,0,0,0,0,0,0,27,54,27,0,0,0,0,0,0,0,81,81,0,0,0,0,0,0,0,0,81,162,81,0,0,0,0
 
 lpb $0
@@ -10,9 +10,7 @@ lpb $0
   div $2,2
 lpe
 sub $0,$2
-sub $1,1
 sub $1,$2
-add $1,1
 sub $1,$2
 bin $1,$0
 mov $0,3
