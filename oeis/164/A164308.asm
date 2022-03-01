@@ -1,4 +1,4 @@
-; A164308: Triangle read by rows, binomial distribution of the terms (1, 3, 9, 27,...)
+; A164308: Triangle read by rows, binomial distribution of the terms (1, 3, 9, 27, ...).
 ; 1,1,3,1,3,9,3,1,3,9,3,9,27,9,3,1,3,9,3,9,27,9,3,9,27,81,27,9,27,9,3,1,3,9,3,9,27,9,3,9,27,81,27,9,27,9,3
 
 seq $0,4754 ; Numbers n whose binary expansion starts 10.

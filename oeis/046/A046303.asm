@@ -5,6 +5,5 @@
 mov $2,$0
 add $0,1
 seq $0,46302 ; Product of 4 successive primes.
-seq $2,272470 ; 7 times the primes.
+seq $2,40 ; The prime numbers.
 mul $0,$2
-div $0,7

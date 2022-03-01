@@ -4,7 +4,3 @@
 
 mul $0,2
 seq $0,191321 ; Number of dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0) steps at positive heights) having only ascents of even length (an ascent is a maximal sequence of consecutive (1,1)-steps).
-mul $0,9
-sub $0,9
-div $0,9
-add $0,1

@@ -1,5 +1,5 @@
 ; A100672: Second least-significant bit in the binary expansion of the n-th prime.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w1)
 ; 1,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,1,1,0,0,0,1,1,0,0,1,1,0,1,0,1,0,1,1,0,1,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,0,0,1,0,1,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,1,0
 
 sub $0,2
@@ -18,8 +18,5 @@ mov $0,$2
 mul $0,2
 sub $0,5
 div $0,4
-mul $0,6
-add $0,6
-div $0,6
-add $0,3
+add $0,2
 mod $0,2
