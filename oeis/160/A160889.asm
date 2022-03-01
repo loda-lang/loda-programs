@@ -18,10 +18,10 @@ lpb $0
     max $4,$6
     sub $3,$4
   lpe
+  add $4,1
   mov $5,1
   lpb $0
     dif $0,$2
-    mul $4,2
     mul $4,$2
     add $4,1
     mul $5,$2

@@ -4,5 +4,7 @@
 
 add $0,1
 mov $2,$0
-seq $2,217800 ; Number of alternating permutations on 2n+1 letters that avoid a certain pattern of length 4 (see Lewis, 2012, Appendix, for precise definition).
-mov $0,$2
+add $0,1
+seq $0,139 ; a(n) = 2*(3*n)!/((2*n+1)!*((n+1)!)).
+seq $2,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mul $0,$2
