@@ -4,4 +4,4 @@
 
 add $0,1
 seq $0,225 ; a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that name is usually reserved for A001348.)
-seq $0,4185 ; Arrange digits of n in increasing order, then (for n>0) omit the zeros.
+seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
