@@ -7,6 +7,6 @@ mov $1,1
 lpb $2
   add $0,$1
   sub $1,$0
-  gcd $1,$3
+  gcd $1,0
   trn $2,$1
 lpe
