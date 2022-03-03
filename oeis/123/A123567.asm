@@ -16,12 +16,11 @@ lpb $3
     lpb $0
       seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
       sub $0,1
-      add $2,1
+      add $2,2
     lpe
     add $7,$2
   lpe
   add $4,$7
 lpe
 mov $0,$4
-mul $0,2
 add $0,3
