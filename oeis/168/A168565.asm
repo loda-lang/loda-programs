@@ -18,6 +18,5 @@ mov $0,$2
 mul $0,2
 sub $0,5
 div $0,4
-add $0,1
 mul $0,3
-add $0,4
+add $0,7

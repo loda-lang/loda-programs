@@ -4,6 +4,6 @@
 mov $2,$0
 add $2,1
 mul $2,2
-seq $2,1922 ; Numbers n such that 3*n^2-3*n+1 is both a square (A000290) and a centered hexagonal number (A003215).
+seq $2,1922 ; Numbers k such that 3*k^2 - 3*k + 1 is both a square (A000290) and a centered hexagonal number (A003215).
 div $2,2
 mov $0,$2
