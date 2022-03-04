@@ -2,24 +2,15 @@
 ; Submitted by Christian Krause
 ; 97,307,727,937,1567,1777,1987,2617,3037,3457,3877,4297,4507,5347,5557,6397,6607,7027,7237,7867,8287,8707,9127,9337,9547,9967,10177,10597,11437,12277,12487,12697,12907,13327,13537,14797,15217,15427,16057,16267,16477,17107,17317,17737,18367,18787
 
-mov $1,30
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  sub $2,2
-  mov $3,$1
-  mul $3,3
-  add $3,6
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,35
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+add $0,1
+mov $2,96
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,105
+  sub $3,$0
 lpe
-mov $0,$1
-sub $0,53
-mul $0,3
-add $0,61
+add $0,$2

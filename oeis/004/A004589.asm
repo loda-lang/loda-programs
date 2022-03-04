@@ -5,11 +5,8 @@
 mov $2,1
 mov $3,$0
 add $3,2
-mov $4,$0
-add $4,2
-mul $4,2
-mov $7,10
-pow $7,$4
+mov $7,9
+pow $7,$0
 lpb $3
   mov $4,$2
   pow $4,2
@@ -22,9 +19,10 @@ lpb $3
   mul $6,$2
   mul $6,2
   mov $2,$6
+  mul $7,7
   mov $8,$4
   div $8,$7
-  max $8,1
+  max $8,2
   div $1,$8
   div $2,$8
   add $2,3

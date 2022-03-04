@@ -11,16 +11,15 @@ gcd $4,3
 mov $7,$8
 lpb $2
   add $0,2
-  bin $1,$9
+  bin $1,$5
   mov $2,$0
-  mov $5,$1
   mov $6,$4
   add $8,1
   sub $2,$8
-  mov $9,$2
+  mov $5,$2
   lpb $4
-    sub $9,$5
-    mov $0,$9
+    sub $5,$1
+    mov $0,$5
     add $0,6
     div $0,2
     add $3,$2
