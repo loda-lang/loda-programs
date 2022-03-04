@@ -1,8 +1,11 @@
 ; A014690: a(n) = n + prime(n+1).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 4,7,10,15,18,23,26,31,38,41,48,53,56,61,68,75,78,85,90,93,100,105,112,121,126,129,134,137,142,157,162,169,172,183,186,193,200,205,212,219,222,233,236,241,244,257,270,275,278,283,290,293,304,311,318,325,328
 
-add $0,1
-mov $1,$0
-seq $0,6005 ; The odd prime numbers together with 1.
-add $0,$1
+mov $2,$0
+seq $0,98090 ; Numbers k such that 2k-3 is prime.
+mov $1,$2
+add $1,$0
+add $1,$0
+mov $0,$1
+sub $0,2

@@ -4,10 +4,8 @@
 
 mov $2,$0
 mul $0,2
-add $2,15
+add $2,1
 mod $2,2
 add $0,$2
 seq $0,202637 ; x-values in the solution to x^2 - 7*y^2 = -3.
-sub $0,5
 div $0,2
-add $0,2
