@@ -50,7 +50,7 @@ lpb $4
           mov $9,$8
           mov $22,$5
           lpb $9
-            mov $7,$22
+            mov $7,$5
             sub $9,1
           lpe
         lpe
@@ -61,7 +61,7 @@ lpb $4
         mov $13,$12
         mov $22,$7
         lpb $13
-          mov $11,$22
+          mov $11,$7
           sub $13,1
         lpe
       lpe
@@ -72,7 +72,7 @@ lpb $4
       mov $17,$16
       mov $22,$11
       lpb $17
-        mov $15,$22
+        mov $15,$11
         sub $17,1
       lpe
     lpe
