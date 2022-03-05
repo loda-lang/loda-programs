@@ -1,42 +1,7 @@
 ; A025730: Index of 8^n within sequence of numbers of form 6^i*8^j.
+; Submitted by Jamie Morken(w2)
 ; 1,3,6,10,15,21,28,37,47,58,70,83,97,113,130,148,167,187,208,231,255,280,306,333,361,391,422,454,487,521,556,592,630,669,709,750,792,835,880,926,973,1021,1070,1120,1172,1225,1279,1334,1390,1447,1506,1566,1627,1689
 
 mov $2,$0
-add $2,1
-mov $4,$0
-lpb $2
-  mov $0,$4
-  sub $2,1
-  sub $0,$2
-  mov $5,$0
-  add $5,1
-  mov $6,0
-  mov $7,$0
-  lpb $5
-    mov $0,$7
-    sub $5,1
-    sub $0,$5
-    mov $9,2
-    mov $10,0
-    mov $11,$0
-    lpb $9
-      sub $9,1
-      add $0,$9
-      sub $0,1
-      mov $3,$0
-      mul $3,4
-      div $3,25
-      mov $8,$9
-      mul $8,$3
-      add $10,$8
-    lpe
-    min $11,1
-    mul $11,$3
-    mov $3,$10
-    sub $3,$11
-    add $3,1
-    add $6,$3
-  lpe
-  add $1,$6
-lpe
-mov $0,$1
+seq $2,25706 ; Index of 5^n within sequence of numbers of form 4^i*5^j.
+mov $0,$2

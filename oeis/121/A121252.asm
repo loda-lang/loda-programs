@@ -1,8 +1,19 @@
 ; A121252: Number of labeled digraphs without isolated vertices and with n arcs.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w3)
 ; 1,2,25,520,15150,567540,25986334,1406214816,87803248260,6213408758960,491423381371208,42958461746823376,4112928296979824348,428022362222941505760,48106759414197240877200,5807382441785322296139392
 
-seq $0,173218 ; G.f.: A(x) = Sum_{n>=0} (1 + x)^(n^2+n) / 2^(n+1).
-sub $0,1
+mov $2,$0
+mul $0,44
+lpb $0
+  div $1,2
+  add $1,$3
+  mov $3,$0
+  sub $0,1
+  sub $3,2
+  bin $3,2
+  mul $3,2
+  bin $3,$2
+lpe
+mov $0,$1
 div $0,2
 add $0,1

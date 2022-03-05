@@ -11,16 +11,15 @@ lpb $3
   sub $0,1
   mov $4,$5
   mov $6,1
-  mov $8,1
   lpb $0
     trn $0,2
-    add $6,$8
+    add $6,1
     mul $4,$6
   lpe
   mov $2,$3
   mov $8,$4
   lpb $2
-    mov $1,$8
+    mov $1,$4
     sub $2,1
   lpe
 lpe

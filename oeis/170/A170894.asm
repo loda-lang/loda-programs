@@ -1,8 +1,7 @@
 ; A170894: Similar to A160406, always staying outside the wedge, but starting with a horizontal toothpick whose endpoint touches the vertex of the wedge.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(l1)
 ; 0,1,2,4,7,10,13,19,27,33,37
 
-mov $1,1
 lpb $0
   mov $2,$0
   sub $0,1
@@ -10,4 +9,3 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$1
-sub $0,1
