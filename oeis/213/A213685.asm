@@ -1,5 +1,5 @@
 ; A213685: Arises in enumerating maximal antichains of minimum size.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w3)
 ; 1,3,6,9,12,17,22,28,33,41,48,57,64
 
 mov $4,$0
@@ -17,10 +17,9 @@ lpb $4
     mov $3,$2
     sub $3,$0
     mov $7,0
-    mov $13,$0
-    mov $14,$3
-    trn $14,$0
-    mov $10,$14
+    mov $13,$3
+    trn $13,$0
+    mov $10,$13
     cmp $12,0
     add $10,$12
     mov $11,$3
@@ -29,10 +28,10 @@ lpb $4
     mul $10,$11
     mov $9,$10
     lpb $9
-      mov $8,$13
+      mov $8,$0
       mod $8,2
       add $7,$8
-      div $10,2
+      div $10,4
       mov $9,$10
     lpe
     cmp $7,0

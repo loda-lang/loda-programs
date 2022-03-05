@@ -1,10 +1,9 @@
 ; A346758: a(n) = Sum_{d|n} mu(n/d) * floor(d^2/4).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w1)
 ; 0,1,2,3,6,6,12,12,18,18,30,24,42,36,48,48,72,54,90,72,96,90,132,96,150,126,162,144,210,144,240,192,240,216,288,216,342,270,336,288,420,288,462,360,432,396,552,384,588,450,576,504,702,486,720,576,720,630,870,576,930
 
-seq $0,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
-mov $1,1
-add $1,$0
-mov $2,$1
-div $2,4
-mov $0,$2
+mov $1,$0
+seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
+div $1,2
+dif $1,2
+mov $0,$1
