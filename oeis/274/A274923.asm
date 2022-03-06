@@ -8,8 +8,8 @@ lpb $0
   seq $2,339265 ; Expansion of Product_{n >= 1} (1 - x^(2*n))*(1 - x^(2*n-1))*(1 - x^(2*n+1)).
   add $1,$2
   dif $1,$2
-  sub $1,2
   mov $2,$0
 lpe
-mov $0,$1
+sub $2,$1
+mov $0,$2
 div $0,2
