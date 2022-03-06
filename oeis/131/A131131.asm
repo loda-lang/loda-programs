@@ -16,6 +16,5 @@ bin $2,$0
 mul $2,6
 add $1,$2
 mov $0,$1
-sub $0,8
 div $0,2
-add $0,1
+sub $0,3

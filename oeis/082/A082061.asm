@@ -1,4 +1,4 @@
-; A082061: Greatest common prime-divisor of n and phi(n)=A000010(n); a(n)=1 if no common prime-divisor was found.
+; A082061: Greatest common prime-divisor of n and phi(n)=A000010(n); a(n)=1 if no common prime-divisor exists.
 ; 1,1,1,2,1,2,1,2,3,2,1,2,1,2,1,2,1,3,1,2,3,2,1,2,5,2,3,2,1,2,1,2,1,2,1,3,1,2,3,2,1,3,1,2,3,2,1,2,7,5,1,2,1,3,5,2,3,2,1,2,1,2,3,2,1,2,1,2,1,2,1,3,1,2,5,2,1,3,1,2,3,2,1,3,1,2,1,2,1,3,1,2,3,2,1,2,1,7,3,5
 
 seq $0,9195 ; a(n) = gcd(n, phi(n)).

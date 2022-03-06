@@ -21,7 +21,7 @@ lpb $4
   mov $3,$4
   mov $6,$0
   lpb $3
-    mov $1,$6
+    mov $1,$0
     sub $3,1
   lpe
 lpe
