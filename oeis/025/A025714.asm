@@ -4,8 +4,4 @@
 
 mov $2,$0
 seq $2,25729 ; Index of 8^n within sequence of numbers of form 5^i*8^j.
-mul $2,2
 mov $0,$2
-sub $0,2
-div $0,2
-add $0,1
