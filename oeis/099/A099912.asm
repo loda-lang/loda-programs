@@ -1,22 +1,20 @@
 ; A099912: Number of closed walks on the Herschel graph.
-; Submitted by Jamie Morken(w2)
+; Submitted by Jamie Morken(l1)
 ; 1,4,32,328,3560,39064,429512,4724248,51965960,571624024,6287861192,69166466968,760831124360,8369142343384,92060565728072,1012666222910488,11139328451818760,122532612969613144,1347858742664958152
 
 mov $1,1
-mov $2,1
-mov $3,2
 lpb $0
   sub $0,1
-  mov $3,$1
-  mul $1,7
-  mul $3,4
-  add $3,2
-  sub $3,$2
-  add $1,$3
-  mul $2,2
-  add $2,1
-  sub $1,$2
-  add $2,2
+  mov $2,$1
+  mul $2,5
+  add $3,5
+  mov $1,$3
+  mul $3,2
+  mul $4,6
+  add $4,$2
+  add $1,$4
+  sub $3,1
 lpe
-mov $0,$3
-sub $0,1
+mov $0,$1
+div $0,3
+add $0,1

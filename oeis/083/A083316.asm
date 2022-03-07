@@ -7,6 +7,4 @@ seq $0,85352 ; Expansion of (1-4x)/((1-5x)(1-6x)).
 mov $2,3
 pow $2,$3
 add $0,$2
-sub $0,1
 div $0,2
-add $0,1

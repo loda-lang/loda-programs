@@ -11,11 +11,11 @@ lpb $3
     add $2,2
     mov $0,$2
     lpb $5
-      mov $3,2
       div $6,$0
       div $0,2
       cmp $6,0
       sub $5,$6
     lpe
+    mov $3,$6
   lpe
 lpe
