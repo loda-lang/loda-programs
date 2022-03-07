@@ -1,11 +1,10 @@
 ; A293607: Number of unlabeled clutters of weight n.
-; Submitted by Jamie Morken(l1)
+; Submitted by Christian Krause
 ; 1,1,1,1,2,2,7,8,23,42
 
 add $0,1
 mov $2,$0
 lpb $0
-  mov $3,$2
   gcd $3,$0
   mov $4,$0
   sub $0,1

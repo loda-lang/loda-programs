@@ -4,6 +4,4 @@
 
 seq $0,136724 ; Numbers divisible by 4 that are not powers of 2.
 seq $0,5836 ; Numbers whose base 3 representation contains no 2.
-sub $0,36
 div $0,9
-add $0,4
