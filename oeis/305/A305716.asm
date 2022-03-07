@@ -5,7 +5,7 @@
 lpb $0
   seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   mov $1,$0
-  cmp $0,$2
+  cmp $0,0
 lpe
 mov $0,$1
 add $0,2
