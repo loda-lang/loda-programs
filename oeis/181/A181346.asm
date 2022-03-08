@@ -1,5 +1,5 @@
 ; A181346: Absolute difference between (sum of previous terms) and prime(n) with a(0) = 1 and a(1) = 2.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,0,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8,10,2,10,2,6,4,6,8,4,2,4,12,8,4,8,4,6,12
 
 mov $4,$0
@@ -24,7 +24,6 @@ lpb $6
   pow $2,$0
   mov $0,$2
   add $0,2
-  mul $0,2
   mov $7,$6
   mul $7,$0
   add $5,$7
@@ -33,4 +32,3 @@ min $4,1
 mul $4,$0
 mov $0,$5
 sub $0,$4
-div $0,2

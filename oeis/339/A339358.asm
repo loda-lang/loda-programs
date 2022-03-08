@@ -12,9 +12,9 @@ lpb $3
     mov $0,$6
     sub $4,1
     sub $0,$4
+    mov $2,0
     mov $5,0
     mov $8,2
-    mov $9,0
     lpb $8
       sub $8,1
       add $0,$8
@@ -22,12 +22,12 @@ lpb $3
       div $0,2
       seq $0,27790 ; a(n) = 10*(n+1)*binomial(n+3,5)/3.
       add $5,$0
-      mul $0,$2
+      mul $0,0
       mov $7,$8
       mul $7,$5
-      add $9,$7
+      add $2,$7
     lpe
-    mov $5,$9
+    mov $5,$2
     div $5,10
     add $1,$5
   lpe
