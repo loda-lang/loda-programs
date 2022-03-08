@@ -1,7 +1,9 @@
 ; A137807: Final digit of prime(n)^2.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 4,9,5,9,1,9,9,1,9,1,1,9,1,9,9,9,1,1,9,1,9,1,9,1,9,1,9,9,1,9,9,1,9,1,1,1,9,9,9,9,1,1,1,9,9,1,1,9,9,1,9,1,1,1,9,9,1,1,9,1,9,9,9,1,9,9,1,9,9,1,9,1,9,9,1,9,1,9,1,1,1,1,1,9,1,9,1,9,1,9,9,1,9,1,1,9,1,1,9,1
 
-seq $0,40 ; The prime numbers.
+mul $0,2
+max $0,1
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 pow $0,2
 mod $0,10
