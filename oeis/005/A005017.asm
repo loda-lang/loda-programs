@@ -2,5 +2,20 @@
 ; Submitted by Christian Krause
 ; 1,1,1,36,144,400,3600,2822400,16257024,32920473600,823011840000,8129341440000,292656291840000,3877578804363264,58642395498086400,844450495172444160000,54044831691036426240000
 
-seq $0,144187 ; Denominators of series expansion of the e.g.f. for the Catalan numbers.
-pow $0,2
+mul $0,2
+mov $1,1
+mov $3,1
+lpb $0
+  mov $2,$0
+  sub $0,1
+  div $2,2
+  mul $3,$0
+  sub $0,1
+  add $2,1
+  bin $2,2
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+pow $1,2
+mov $0,$1
