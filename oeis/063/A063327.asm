@@ -5,11 +5,11 @@
 lpb $0
   mul $0,4
   mov $2,$0
-  cmp $0,$3
+  cmp $0,0
   seq $2,301694 ; Expansion of (1 + 5*x + 4*x^2 + 5*x^3 + x^4)/((1 - x)*(1 - x^3)).
-  mov $4,$2
-  min $4,1
+  mov $3,$2
+  min $3,1
 lpe
-sub $4,1
-add $2,$4
+sub $3,1
+add $2,$3
 mov $0,$2

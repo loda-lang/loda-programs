@@ -2,8 +2,16 @@
 ; Submitted by Jamie Morken(l1)
 ; 0,1,-1,1,-1,0,-1,1,-1,0,-1,0,-1,0,-2,1,-1,0,-1,0,-2,0,-1,0,-1,0,-1,0,-1,-1,-1,1,-2,0,-2,0,-1,0,-2,0,-1,-1,-1,0,-2,0,-1,0,-1,0,-2,0,-1,0,-2,0,-2,0,-1,-1,-1,0,-2,1,-2,-1,-1,0,-2,-1,-1,0,-1,0,-2,0,-2,-1,-1,0,-1,0,-1,-1,-2,0,-2,0,-1,-1,-2,0,-2,0,-2,0,-1,0,-2,0
 
-mov $1,$0
-seq $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
-seq $1,10673 ; Period 2: repeat [0, 2].
-sub $1,$0
+lpb $0
+  sub $0,1
+  mul $0,2
+  dif $0,4
+  mov $1,1
+lpe
+lpb $0
+  seq $0,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $0,1
+  sub $1,$0
+  mod $0,2
+lpe
 mov $0,$1

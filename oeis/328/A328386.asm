@@ -4,6 +4,6 @@
 
 add $0,1
 mov $1,$0
-seq $1,276086 ; Prime product form of primorial base expansion of n: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $1,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 mod $1,$0
 mov $0,$1
