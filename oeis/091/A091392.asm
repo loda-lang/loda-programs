@@ -9,9 +9,8 @@ lpb $0
   sub $0,1
   dif $2,2
   pow $3,2
-  sub $3,2
+  add $3,1
   sub $3,$0
-  add $3,3
   mod $3,$2
   cmp $3,$0
   add $1,$3
