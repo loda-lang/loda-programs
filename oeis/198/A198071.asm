@@ -7,12 +7,11 @@ mov $2,$0
 pow $0,4
 pow $2,2
 add $0,$2
-mov $1,$0
-pow $1,2
 add $2,1
 pow $2,9
 mul $2,2
-div $2,$1
+div $2,$0
+pow $0,2
 div $2,$0
 sub $2,1
 div $2,2
