@@ -7,6 +7,7 @@ lpb $5
   sub $5,1
   mov $7,2
   lpb $7
+    mov $2,2
     sub $7,1
     add $0,$7
     sub $0,1
@@ -35,5 +36,6 @@ lpb $5
   lpe
 lpe
 mov $0,$6
-div $0,33
-mul $0,3
+sub $0,35
+div $0,11
+add $0,3

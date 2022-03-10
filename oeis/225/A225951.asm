@@ -11,7 +11,7 @@ add $1,2
 add $0,$1
 mov $2,$1
 mul $1,$0
-mul $2,2
+mul $2,4
 add $0,$2
 gcd $0,$1
 pow $0,$1
