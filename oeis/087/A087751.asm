@@ -1,18 +1,18 @@
 ; A087751: Weighted sum of the harmonic numbers.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,7,56,538,6124,81048,1226112,20902992,396857376,8308373760,190212376320,4728556327680,126865966625280,3654264347274240,112484501485977600,3685202487258163200,128039255560187596800
 
 mov $2,1
 lpb $0
-  add $3,$4
-  add $3,$2
+  mul $2,2
   add $4,$2
   mul $2,$0
   sub $0,1
+  add $3,$4
   mov $1,$3
-  mul $2,2
   mul $3,$0
   mul $3,2
   mul $4,$0
 lpe
 mov $0,$1
+div $0,2

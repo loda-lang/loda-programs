@@ -4,8 +4,7 @@
 
 mov $2,$0
 seq $0,134515 ; Third column (k=2) of triangle A134832 (circular succession numbers).
-add $2,3
+add $2,4
+bin $2,2
 mul $0,$2
-add $2,1
-mul $0,$2
-div $0,12
+div $0,6

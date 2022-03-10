@@ -1,9 +1,10 @@
 ; A139288: 2^(2p - 1)/2, where p is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(l1)
 ; 4,16,256,4096,1048576,16777216,4294967296,68719476736,17592186044416,72057594037927936,1152921504606846976,4722366482869645213696,1208925819614629174706176,19342813113834066795298816
 
-seq $0,40 ; The prime numbers.
-sub $0,1
+seq $0,6005 ; The odd prime numbers together with 1.
+max $0,2
 mov $2,4
 pow $2,$0
 mov $0,$2
+div $0,4

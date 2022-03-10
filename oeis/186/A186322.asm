@@ -6,18 +6,17 @@ mov $3,$0
 mov $5,1
 add $5,$0
 lpb $2
-  mov $6,$5
+  mov $4,$5
   lpb $5
-    mov $5,$4
-    pow $6,2
+    pow $4,2
+    mov $5,0
   lpe
   mov $0,5
-  mov $1,5
   mov $5,1
-  lpb $6
+  lpb $4
     add $0,1
-    add $5,$1
-    trn $6,$5
+    add $5,5
+    trn $4,$5
   lpe
   mov $2,1
 lpe

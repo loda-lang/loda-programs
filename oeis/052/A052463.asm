@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  cmp $0,$3
+  cmp $0,0
   seq $2,327770 ; a(n) = (23 * 7^(2*n) + 1)/24. Sequence related to the properties of the partition function A000041 modulo a power of 7.
 lpe
 mov $0,$2
