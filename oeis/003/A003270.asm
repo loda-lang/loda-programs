@@ -1,12 +1,19 @@
 ; A003270: A nonrepetitive sequence.
+; Submitted by Simon Strandgaard
 ; 1,2,3,1,3,2,3,1,2,3,2,1,3,1,2,1,3,2,3,1,2,3,2,1,2,3,1,2,1,3,2,3,1,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,3,1,2,1,3,2,3,1,2,3,2,1,2,3,1,2,1,3,2,3,1
 
+mul $0,3
 lpb $0
-  mov $2,$0
+  add $0,3
   div $0,3
-  seq $2,132355 ; Numbers of the form 9*h^2 + 2*h, for h an integer.
-  add $1,$2
+  add $0,1
+  mov $2,$0
+  sub $0,2
   mod $1,3
+  dif $2,2
+  sub $2,1
+  mul $2,8
+  add $1,$2
 lpe
-add $1,1
 mov $0,$1
+add $0,1
