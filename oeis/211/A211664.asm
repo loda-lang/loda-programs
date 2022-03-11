@@ -3,9 +3,8 @@
 
 add $0,5
 mov $1,3
-mov $2,$0
 lpb $1
-  mov $1,$2
+  mov $1,$0
   div $1,6
   add $1,1
 lpe

@@ -4,7 +4,3 @@
 
 mul $0,2
 seq $0,20910 ; Number of terms in Zeckendorf representation of 3^n.
-mul $0,3
-sub $0,3
-div $0,3
-add $0,1

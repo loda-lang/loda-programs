@@ -1,41 +1,21 @@
 ; A094686: A Fibonacci convolution.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w4)
 ; 1,0,1,2,2,4,7,10,17,28,44,72,117,188,305,494,798,1292,2091,3382,5473,8856,14328,23184,37513,60696,98209,158906,257114,416020,673135,1089154,1762289,2851444,4613732,7465176,12078909,19544084,31622993,51167078
 
-mov $7,$0
-mov $9,2
-lpb $9
-  mov $0,$7
-  sub $9,1
-  add $0,$9
-  mov $3,2
-  mov $4,1
-  lpb $0
-    sub $0,1
-    mov $2,$3
-    mov $3,$4
-    add $3,$2
-    mov $4,$2
-  lpe
-  add $0,2
-  div $2,2
-  add $2,7
-  mov $6,2
-  add $6,$0
-  add $2,$6
-  mov $5,$9
-  mov $8,$2
-  sub $8,12
-  mul $8,2
-  add $8,2
-  lpb $5
-    mov $1,$8
-    sub $5,1
-  lpe
+mov $3,1
+mov $4,1
+mov $5,1
+lpb $0
+  sub $0,1
+  sub $3,$4
+  mov $4,$2
+  mov $2,$3
+  add $2,1
+  add $2,$1
+  add $3,$5
+  mov $1,$3
+  sub $1,$2
+  add $5,$4
+  mov $3,$5
 lpe
-lpb $7
-  sub $1,$8
-  mov $7,0
-lpe
-div $1,2
-mov $0,$1
+mov $0,$4

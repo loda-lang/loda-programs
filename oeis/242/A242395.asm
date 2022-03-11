@@ -1,5 +1,5 @@
 ; A242395: Number of equilateral triangles (sides length = 1) that intersect the circumference of a circle of radius n centered at (1/2,0).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w1)
 ; 14,26,38,58,70,82,98,110,122,142,154,166,182,194,206,218,238,250,262,278,290,302,322,334,346,362,374,386,398,418,430,442,458,470,482,502,514,526,542,554,566,578,598,610,622,638,650,662,682,694,706,722,734,746,766,778,790
 
 add $0,1
@@ -18,6 +18,5 @@ lpb $0
   lpe
 lpe
 mov $0,$4
-sub $0,2
 mul $0,4
-add $0,14
+add $0,6
