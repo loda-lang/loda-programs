@@ -6,10 +6,9 @@ add $0,1
 mov $1,21
 pow $1,$0
 mov $2,$0
-mul $2,2
 add $2,1
-mul $2,12
-sub $2,1
+mul $2,24
+sub $2,13
 mul $1,$2
 mov $0,$1
 div $0,147

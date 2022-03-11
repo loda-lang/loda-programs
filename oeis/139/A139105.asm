@@ -6,7 +6,3 @@ mul $0,2
 seq $0,6093 ; a(n) = prime(n) - 1.
 sub $0,1
 seq $0,118256 ; Concatenation for i=1 to n of A005171(i); also A118255 in base 2.
-mul $0,10
-sub $0,10
-div $0,10
-add $0,1

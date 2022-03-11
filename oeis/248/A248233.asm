@@ -12,10 +12,10 @@ lpb $2
   add $2,2
   mul $4,$2
   lpb $4
-    pow $2,0
     add $3,2
     trn $4,$3
   lpe
+  mov $2,$0
   div $3,2
 lpe
 mov $0,$3
