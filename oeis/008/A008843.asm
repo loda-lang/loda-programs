@@ -1,15 +1,14 @@
 ; A008843: Squares of NSW numbers (A002315): x^2 such that x^2 - 2y^2 = -1 for some y.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,49,1681,57121,1940449,65918161,2239277041,76069501249,2584123765441,87784138523761,2982076586042449,101302819786919521,3441313796169221281,116903366249966604049,3971273138702695316401
 
-mov $2,2
 mov $3,1
 lpb $0
   sub $0,1
-  mov $1,$3
-  mul $1,4
-  add $2,$1
-  add $3,$2
+  mov $2,$3
+  mul $2,8
+  sub $1,$2
+  add $3,$1
 lpe
 pow $3,2
 mov $0,$3

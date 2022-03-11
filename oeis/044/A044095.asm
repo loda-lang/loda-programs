@@ -9,13 +9,13 @@ add $0,14
 mov $3,25
 lpb $0
   gcd $3,$0
-  mov $0,$4
+  mov $0,0
 lpe
 div $2,$3
 mul $3,$2
 mov $1,$3
-mov $6,$5
-mul $6,24
-add $1,$6
+mov $4,$5
+mul $4,24
+add $1,$4
 mov $0,$1
 add $0,18

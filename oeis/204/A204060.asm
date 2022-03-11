@@ -6,9 +6,8 @@ add $0,1
 mov $1,$0
 lpb $1
   mov $2,$0
-  mov $4,$1
   lpb $2
-    dif $2,$4
+    dif $2,$1
     sub $2,$1
     mul $2,$0
     mov $3,$0
