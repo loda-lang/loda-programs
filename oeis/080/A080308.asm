@@ -4,10 +4,9 @@
 
 mov $2,1
 lpb $0
-  mov $1,255
   lpb $3
     add $2,1
-    mov $4,$1
+    mov $4,255
     gcd $4,$2
     cmp $4,1
     cmp $4,0

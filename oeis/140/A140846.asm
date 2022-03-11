@@ -15,6 +15,5 @@ lpb $3
   sub $3,$0
 lpe
 add $0,$2
-sub $0,15
 mul $0,2
-add $0,29
+sub $0,1

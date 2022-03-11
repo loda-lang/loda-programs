@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  max $2,5
-  seq $2,82524 ; a(1)=1, a(2)=2, then use the rule when a(n) is the end of a run, n appears a(n) times.
+  add $2,4
+  seq $2,130312 ; Each Fibonacci number F(n) appears F(n) times.
   sub $0,$2
 lpe
 add $0,1
