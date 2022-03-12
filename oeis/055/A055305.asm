@@ -8,6 +8,5 @@ add $2,1
 mul $0,$2
 add $2,1
 mul $0,$2
-mul $0,30
-div $0,60
+div $0,2
 mul $0,5

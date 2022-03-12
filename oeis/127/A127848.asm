@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  mul $0,$1
+  mul $0,0
   seq $2,78009 ; a(0)=1, for n>=1 a(n) = Sum_{k=0..n} 5^k*N(n,k) where N(n,k) = C(n,k)*C(n,k+1)/n are the Narayana numbers (A001263).
 lpe
 mov $0,$2

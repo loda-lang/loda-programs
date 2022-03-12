@@ -1,23 +1,27 @@
 ; A351914: Numbers m such that the average of the prime numbers up to m is greater than or equal to m/2.
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(w1)
 ; 2,3,4,5,6,7,8,11,13,19
 
-lpb $0
-  sub $0,1
-  add $2,3
-  mul $3,2
-  sub $3,$4
-  add $3,1
-  mov $4,$1
-  add $1,$2
-  add $1,$3
-  mov $2,$3
-  sub $4,10
-  trn $4,2
+mov $2,$0
+mov $3,$0
+mov $5,$0
+lpb $2
+  mov $0,$3
+  sub $2,1
+  sub $0,$2
+  add $0,1
+  mov $6,11
+  lpb $0
+    div $0,2
+    add $0,3
+    mul $6,3
+  lpe
+  mov $4,$6
+  div $4,33
   add $4,1
-  add $5,$4
-  mov $3,$5
-  add $4,$1
+  add $1,$4
 lpe
-mov $0,$3
+add $1,$5
+mov $0,$1
+div $0,2
 add $0,2
