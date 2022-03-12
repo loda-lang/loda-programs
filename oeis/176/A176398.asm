@@ -7,7 +7,7 @@ mov $3,$0
 mul $3,3
 mov $6,3
 lpb $3
-  bin $1,$4
+  bin $1,0
   add $1,$6
   add $1,$2
   add $2,$1

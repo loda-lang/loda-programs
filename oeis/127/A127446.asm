@@ -10,6 +10,6 @@ add $0,1
 add $2,1
 lpb $0
   gcd $0,$2
-  mul $2,$1
+  mul $2,0
 lpe
 mov $0,$2
