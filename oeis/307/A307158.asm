@@ -11,7 +11,6 @@ lpb $5
   sub $0,$5
   mov $1,$3
   bin $1,$0
-  mul $1,2
   mov $2,1
   sub $2,$5
   sub $2,2
@@ -21,4 +20,3 @@ lpb $5
   trn $5,2
 lpe
 mov $0,$4
-div $0,2

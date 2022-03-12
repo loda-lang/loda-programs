@@ -1,4 +1,4 @@
-; A128046: Triangle read by rows: inverse of the lower triangular matrix (1/1; 1/1, 1/3; 1/1, 1/3, 1/5;...).
+; A128046: Triangle read by rows: inverse of the lower triangular matrix (1/1; 1/1, 1/3; 1/1, 1/3, 1/5; ...).
 ; Submitted by Jon Maiga
 ; 1,-3,3,0,-5,5,0,0,-7,7,0,0,0,-9,9,0,0,0,0,-11,11,0,0,0,0,0,-13,13,0,0,0,0,0,0,-15,15
 
