@@ -6,5 +6,4 @@ mov $2,$0
 add $0,1
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
 seq $2,40 ; The prime numbers.
-mul $2,$0
-mov $0,$2
+mul $0,$2

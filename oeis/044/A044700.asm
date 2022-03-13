@@ -6,6 +6,5 @@ add $0,2
 seq $0,44639 ; Numbers n such that string 0,7 occurs in the base 9 representation of n but not of n+1.
 add $0,1
 div $0,3
-sub $0,83
 mul $0,3
-add $0,68
+sub $0,181

@@ -1,15 +1,18 @@
 ; A277227: Triangular array T read by rows: T(n,k) gives the additive orders k modulo n, for k = 0,1, ..., n-1.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jamie Morken(l1)
 ; 1,1,2,1,3,3,1,4,2,4,1,5,5,5,5,1,6,3,2,3,6,1,7,7,7,7,7,7,1,8,4,8,2,8,4,8,1,9,9,3,9,9,3,9,9,1,10,5,10,5,2,5,10,5,10,1,11,11,11,11,11,11,11,11,11,11,1,12,6,4,3,12,2,12,3,4,6,12,1,13,13,13,13,13,13,13,13,13,13,13,13,1,14,7,14,7,14,7,2,7
 
-mov $3,1
 lpb $0
-  add $2,1
-  mov $3,$0
-  gcd $0,$2
-  max $3,$2
-  div $3,$0
-  mul $0,$3
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
-mov $0,$3
+sub $1,$0
+add $0,1
+add $0,$1
+add $1,1
+mov $2,$1
+mov $1,$0
+add $0,$2
+gcd $0,$1
+div $1,$0
+mov $0,$1
