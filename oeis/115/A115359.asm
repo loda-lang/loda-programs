@@ -1,11 +1,19 @@
 ; A115359: Matrix (1,x)-(x,x^2) in Riordan array notation.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,-1,1,0,0,1,0,-1,0,1,0,0,0,0,1,0,0,-1,0,0,1,0,0,0,0,0,0,1,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0
 
-seq $0,54531 ; Triangular array T read by rows: T(n,k) = n/gcd(n,k) (n >= 1, 1 <= k <= n).
-mov $2,$0
-cmp $2,2
-mov $3,$0
-cmp $3,1
-mov $0,$3
-sub $0,$2
+mov $1,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,1
+gcd $0,$1
+sub $1,$0
+sub $0,$1
+mul $1,2
+mov $2,-1
+sub $2,$0
+add $1,$2
+bin $2,$1
+mov $0,$2

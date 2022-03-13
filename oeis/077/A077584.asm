@@ -1,13 +1,20 @@
 ; A077584: Last term of n-th row of A077583.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(l1)
 ; 1,4,9,10,25,14,49,22,33,25,121,28,169,36,45,46,289,44,361,52,69,60,529,58,145,72,105,76,841,69,961,94,114,96,145,88,1369,108,138,105,1681,99,1849,122,140,132,2209,118,385,132,186,146,2809,134,253,152
 
+mov $1,1
+add $1,$0
+mov $2,$1
 lpb $0
-  mov $1,$0
-  mov $2,$0
-  mov $0,0
-  seq $2,81518 ; Final term in row n of A081520.
-  add $1,$2
+  mov $3,$2
+  lpb $3
+    add $2,1
+    mov $4,$1
+    gcd $4,$2
+    cmp $4,1
+    sub $3,$4
+  lpe
+  sub $0,1
+  add $2,1
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2

@@ -1,8 +1,9 @@
 ; A255887: a(n) = 1 if the n-th prime is the sum of three squares, otherwise a(n) = 0.
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w1)
 ; 1,1,1,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,0,1,1,0,1,1,1,1
 
-seq $0,40 ; The prime numbers.
-bin $0,6
+mul $0,2
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+bin $0,7
 add $0,1
 mod $0,2
