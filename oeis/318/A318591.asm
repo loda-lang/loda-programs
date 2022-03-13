@@ -11,6 +11,4 @@ dif $2,6
 bin $1,$2
 add $0,$1
 add $0,$1
-sub $0,3
 div $0,3
-add $0,1
