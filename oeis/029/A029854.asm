@@ -8,13 +8,10 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $2,96059601
-  mov $4,$0
+  mov $2,$0
   bin $0,$3
-  max $4,0
-  seq $4,1043 ; Numbers that are the sum of 2 successive primes.
-  mul $2,$4
+  max $2,0
+  seq $2,1043 ; Numbers that are the sum of 2 successive primes.
   gcd $1,$2
 lpe
 mov $0,$1
-div $0,96059601

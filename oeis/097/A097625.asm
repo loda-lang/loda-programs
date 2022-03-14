@@ -14,12 +14,11 @@ lpb $3
   add $1,$4
   mul $1,$0
   add $0,1
-  mul $2,-1
+  mul $2,-2
   cmp $4,0
   add $5,1
   add $5,$4
   div $1,$5
-  mul $2,2
   add $2,$1
   sub $3,1
   add $5,2
