@@ -1,8 +1,7 @@
 ; A160417: a(n) = A160415(n+1)/4.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,1,7,1,7,3,21,1,7,3,21,3,21,9,63,1,7,3,21,3,21,9,63,3,21,9,63,9,63,27,189,1,7,3,21,3,21,9,63,3,21,9,63,9,63,27,189
 
 add $0,1
 seq $0,160797 ; First differences of A160796.
-mul $0,2
-div $0,6
+div $0,3
