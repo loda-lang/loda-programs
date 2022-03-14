@@ -1,28 +1,27 @@
 ; A005324: Column of Motzkin triangle A026300.
-; Submitted by Jamie Morken(w2)
+; Submitted by Christian Krause
 ; 1,5,20,70,230,726,2235,6765,20240,60060,177177,520455,1524120,4453320,12991230,37854954,110218905,320751445,933149470,2714401580,7895719634,22969224850,66829893650,194486929650,566141346225,1648500576021
 
 add $0,1
 lpb $0
   sub $0,1
-  mov $2,$1
+  mov $2,$5
   bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  sub $1,1
   mul $2,2
+  mov $3,$4
+  bin $3,$5
   mul $3,6
   mul $3,$2
-  mov $4,$1
-  add $1,2
   mul $3,10
-  add $4,6
+  mov $4,$5
+  add $4,5
   add $4,$0
   div $3,$4
-  add $5,$3
+  add $1,$3
+  add $5,1
 lpe
-mov $0,$5
-div $0,3
-sub $0,8
+mov $0,$1
 div $0,8
+sub $0,2
+div $0,3
 add $0,1

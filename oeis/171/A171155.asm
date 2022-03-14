@@ -26,7 +26,6 @@ lpb $2
       add $10,$0
       add $10,$0
       add $6,$10
-      mul $6,2
       mov $0,$6
       mov $11,$12
       mul $11,$6
@@ -42,4 +41,4 @@ lpb $2
   lpe
 lpe
 mov $0,$8
-div $0,128
+div $0,64

@@ -6,7 +6,3 @@ mul $0,2
 seq $0,6093 ; a(n) = prime(n) - 1.
 sub $0,1
 seq $0,118255 ; a(1)=1, then a(n)=2*a(n-1) if n is prime, a(n)=2*a(n-1)+1 if n not prime.
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1

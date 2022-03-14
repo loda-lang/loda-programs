@@ -1,8 +1,6 @@
 ; A175992: Triangle T(n,k) read by rows. If n=k then 0, else if k divides n then 1 else 0.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(l1)
 ; 0,1,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0
 
 seq $0,114002 ; Expansion of x^k(1+x^(k+1))/(1-x^(k+1)).
-mov $2,$0
-cmp $2,2
-mov $0,$2
+div $0,2
