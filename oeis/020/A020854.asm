@@ -4,7 +4,7 @@
 
 mov $2,1
 mov $3,$0
-add $3,7
+add $3,6
 mov $4,$0
 add $4,3
 mov $7,10

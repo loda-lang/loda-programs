@@ -6,10 +6,8 @@ add $0,1
 mov $3,1
 add $3,$0
 mul $0,2
-mov $4,1
 lpb $0
-  add $3,$4
-  add $3,1
+  add $3,2
   sub $0,$3
   trn $0,1
   add $0,$3
