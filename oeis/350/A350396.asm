@@ -25,15 +25,13 @@ lpb $4
     cmp $11,0
     add $3,$11
     mod $2,$3
-    mov $3,1
     lpb $0
       sub $0,1
       div $0,2
       mul $0,2
       mov $2,$0
       div $0,10051
-      add $2,1
-      add $2,$3
+      add $2,2
     lpe
     mov $0,$2
     mov $7,$8

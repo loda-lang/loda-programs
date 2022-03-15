@@ -1,19 +1,7 @@
 ; A073171: (n^2)-th composite number.
+; Submitted by Simon Strandgaard
 ; 4,9,16,26,38,52,69,88,111,133,159,187,217,250,287,323,362,404,448,495,542,592,648,703,760,818,882,945,1011,1081,1152,1225,1302,1377,1457,1539,1628,1712,1800,1891,1981,2077,2176,2275,2378,2484,2586,2697,2811
 
-mov $2,$0
-add $2,1
-pow $2,2
-add $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,1
-  lpb $4,8
-    add $1,$3
-    add $1,1
-    sub $5,1
-  lpe
-lpe
-mov $0,$1
+add $0,1
+pow $0,2
+seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
