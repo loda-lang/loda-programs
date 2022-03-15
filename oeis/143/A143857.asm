@@ -4,12 +4,11 @@
 add $0,2
 mov $1,$0
 mov $2,1
-mov $3,1
 lpb $0
-  sub $0,$3
+  sub $0,1
   add $2,$1
-  gcd $4,$2
-  pow $1,$4
+  gcd $3,$2
+  pow $1,$3
 lpe
 mov $0,$2
 sub $0,3

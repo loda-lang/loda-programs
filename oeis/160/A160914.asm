@@ -12,14 +12,13 @@ lpb $4
   sub $3,1
   mov $6,$0
   mov $0,3
-  mov $2,1
   sub $3,$6
   add $8,$6
   lpb $0
     mov $0,4
     gcd $3,2
     sub $0,$3
-    mov $8,$2
+    mov $8,1
   lpe
   mov $2,$8
   div $2,4
