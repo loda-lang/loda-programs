@@ -1,7 +1,31 @@
 ; A158647: A145501(16n+8).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(l1)
 ; 13,39,39,39,78,39,39,117,39,39,117,39,78,130,39,39,117,117,39,117,39,39,234,39,78,117,39,117,117,39,39,234,117,39,117,39,39,234,117,39,195,39,117,117,39,117,117,117,39,234,39,39,351,39,39,117,39,117,234,117,78,117,130
 
 mul $0,2
-seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+add $0,1
+mov $1,1
+mov $2,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    mov $5,$2
+    add $2,1
+    cmp $5,1
+    max $4,$5
+    sub $3,$4
+  lpe
+  mov $5,1
+  lpb $0
+    dif $0,$2
+    add $4,1
+    add $5,$4
+  lpe
+  mul $1,$5
+lpe
+mov $0,$1
 mul $0,13

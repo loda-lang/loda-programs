@@ -19,21 +19,20 @@ trn $4,$0
 add $4,$2
 mov $1,$4
 sub $1,4
-mov $6,$5
 mov $9,3
 lpb $9
-  add $1,$6
+  add $1,$5
   sub $9,1
 lpe
 mov $8,$5
 lpb $8
-  add $7,$6
+  add $7,$5
   sub $8,1
 lpe
 mov $6,$7
 mov $9,26
 lpb $9
-  add $1,$6
+  add $1,$7
   sub $9,1
 lpe
 mov $7,0
@@ -42,10 +41,9 @@ lpb $8
   add $7,$6
   sub $8,1
 lpe
-mov $6,$7
 mov $9,18
 lpb $9
-  add $1,$6
+  add $1,$7
   sub $9,1
 lpe
 mov $0,$1
