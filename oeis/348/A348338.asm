@@ -27,7 +27,7 @@ lpb $4
       lpe
       mov $2,4
       lpb $0
-        dif $0,$2
+        dif $0,4
       lpe
       sub $0,2
     lpe
