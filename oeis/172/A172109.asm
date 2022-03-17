@@ -1,9 +1,7 @@
 ; A172109: T_2(n) gives the number of ordered partitions of {1,1,2,3,...,n-1}.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,2,8,44,308,2612,25988,296564,3816548,54667412,862440068,14857100084,277474957988,5584100659412,120462266974148,2772968936479604,67843210855558628,1757952715142990612,48093560991292628228
 
-mov $1,$0
-seq $1,5649 ; Expansion of e.g.f. (2 - e^x)^(-2).
-div $1,2
-mov $0,$1
+seq $0,5649 ; Expansion of e.g.f. (2 - e^x)^(-2).
+div $0,2
 mul $0,2

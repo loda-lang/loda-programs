@@ -4,7 +4,7 @@
 
 mul $0,3
 mov $1,4
-mov $2,6
+mov $2,8
 mov $3,$0
 pow $3,5
 lpb $3

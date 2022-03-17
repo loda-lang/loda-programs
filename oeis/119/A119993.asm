@@ -1,14 +1,13 @@
 ; A119993: a(n) = n-th prime from among those primes which are coprime to n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w3)
 ; 2,5,7,11,13,19,19,23,29,37,37,43,43,53,59,59,61,71,71,79,83,89,89,101,101,107,107,113,113,137,131,137,149,151,157,163,163,173,179,181,181,197,193,199,211,223,223,229,229,239,241,251,251,263,269,271,277,281
 
 mov $1,1
 add $1,$0
 add $0,1
 mov $2,1
-mov $4,32
 lpb $0
-  add $3,$4
+  mov $3,$2
   mul $3,$0
   lpb $3
     add $2,1
