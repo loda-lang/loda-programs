@@ -1,4 +1,5 @@
 A000017: Erroneous version of A032522.
+A000095: Number of fixed points of GAMMA_0 (n) of type i.
 A000154: Erroneous version of A003713.
 A000381: Essentially the same as A001611.
 A000480: a(n) = floor(cos(n)).

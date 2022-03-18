@@ -1,12 +1,13 @@
 ; A336649: Sum of divisors of A336651(n) (odd part of n divided by its largest squarefree divisor).
-; Submitted by Jamie Morken(l1)
+; Submitted by Christian Krause
 ; 1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,6,1,13,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,4,1,1,1,8,6,1,1,1,13,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,4,1,1,6,1,1,1,1,1,40,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,8,4,6
 
 add $0,1
-mov $1,1
+mov $1,4
 mov $2,1
 lpb $0
   mov $3,$0
+  sub $3,1
   lpb $3
     mov $4,$0
     mod $4,$2
@@ -27,3 +28,4 @@ lpb $0
   mul $1,$5
 lpe
 mov $0,$1
+div $0,4
