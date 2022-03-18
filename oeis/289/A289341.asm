@@ -1,13 +1,12 @@
 ; A289341: Partial sums of l-fusc A288002(n-1) + 1;
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w1)
 ; 1,1,1,2,2,3,4,6,6,7,8,11,12,14,16,19,19,20,21,25,26,29,32,37,38,40,42,47,49,52,55,59,59,60,61,66,67,71,75,82,83,86,89,97,100,105,110,117,118,120,122,129,131,136,141,149,151,154,157,164,167,171,175,180,180,181,182,188,189,194,199,208,209,213,217,228,232
 
 lpb $0
   sub $0,1
-  mov $2,$0
-  max $2,0
   seq $2,288002 ; L-fusc, sequence l of the mutual diatomic recurrence pair: l(1)=0, r(1)=1, l(2n) = l(n), r(2n) = r(n), l(2n+1) = l(n)+r(n), r(2n+1) = l(n+1)+r(n+1), where r(n) = A288003(n).
   add $1,$2
+  mov $2,$0
 lpe
 mov $0,$1
 add $0,1

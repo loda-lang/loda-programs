@@ -1,20 +1,9 @@
 ; A105092: Sum of the sides of ordered 2 prime sided prime triangles.
-; Submitted by Jamie Morken(w2)
+; Submitted by Jamie Morken(l1)
 ; 20,62,118,194,262,346,422,502,602,658,790,878,974,1066,1162,1266,1378,1462,1578,1658,1766,1882,2030,2122,2238,2338,2458,2570,2662,2762,2866,2986,3106,3290,3406,3514,3614,3698,3830,3918,4022,4150,4310,4430,4538
 
 mul $0,3
-sub $0,1
-mov $2,$0
-mov $3,3
-lpb $3
-  mov $0,$2
-  add $0,1
-  sub $3,1
-  add $0,$3
-  max $0,0
-  seq $0,86801 ; a(n) = prime(n) - 3.
-  add $1,3
-  add $1,$0
-lpe
-mov $0,$1
+seq $0,34961 ; Sums of three consecutive primes.
+sub $0,10
 mul $0,2
+add $0,20

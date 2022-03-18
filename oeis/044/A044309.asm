@@ -14,12 +14,11 @@ lpb $2
     mov $5,4
     sub $6,3
   lpe
-  mod $1,2
-  add $1,39
+  mov $1,39
   mov $2,0
   sub $6,6
   lpb $6
-    add $1,$5
+    add $1,4
     mul $1,2
     add $1,12
     add $2,$6
