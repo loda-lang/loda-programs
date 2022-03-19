@@ -6,6 +6,4 @@ mov $2,$0
 seq $0,1227 ; Number of odd divisors of n.
 seq $2,274536 ; a(n) = 6 * sigma(n).
 mul $0,$2
-sub $0,6
 div $0,6
-add $0,1

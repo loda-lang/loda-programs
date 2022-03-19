@@ -4,8 +4,9 @@
 
 add $0,2
 lpb $0
-  sub $0,2
   mov $2,$0
+  sub $0,2
+  sub $2,2
   add $2,$4
   add $2,$4
   bin $2,$0
@@ -13,6 +14,7 @@ lpb $0
   mov $3,$4
   bin $3,$1
   add $1,1
+  min $1,45
   mul $3,$2
   div $3,$1
   add $4,2

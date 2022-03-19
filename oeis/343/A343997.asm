@@ -1,28 +1,11 @@
 ; A343997: a(n) = A011772(n) if that number is even, otherwise A011772(n)+1.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w4)
 ; 2,4,2,8,4,4,6,16,8,4,10,8,12,8,6,32,16,8,18,16,6,12,22,16,24,12,26,8,28,16,30,64,12,16,14,8,36,20,12,16,40,20,42,32,10,24,46,32,48,24,18,40,52,28,10,48,18,28,58,16,60,32,28,128,26,12,66,16,24,20,70,64,72,36,24,56,22,12,78,64,80,40,82,48,34,44,30,32,88,36,14,24,30,48,20,64,96,48,44,24
 
+mul $0,2
 add $0,1
-mov $3,$0
-mul $3,3
-mov $4,$0
-lpb $3
-  add $0,$3
-  lpb $5
-    mov $2,$0
-    mod $2,$4
-    cmp $2,0
-    add $3,$5
-    mov $4,10
-    sub $5,$2
-  lpe
-  cmp $2,3
-  cmp $2,0
-  sub $3,$2
-  add $5,2
-lpe
-mov $0,$5
-sub $0,2
+seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
+add $0,1
+mul $0,2
 div $0,4
 mul $0,2
-add $0,2

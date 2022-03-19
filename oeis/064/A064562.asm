@@ -1,8 +1,17 @@
 ; A064562: Reciprocal of n terminates with an infinite repetition of digit 3. Multiples of 10 are omitted.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 3,12,48,75,192,768,1875,3072,12288,46875,49152,196608,786432,1171875,3145728,12582912,29296875,50331648,201326592,732421875,805306368,3221225472,12884901888,18310546875,51539607552,206158430208
 
-seq $0,158204 ; Terms in A178335 not divisible by 10.
-pow $0,2
-div $0,49
+add $0,1
+mov $2,1
+lpb $0
+  sub $0,1
+  add $3,$2
+  mov $2,5
+  pow $2,$0
+  trn $2,$3
+  min $2,$3
+lpe
+pow $3,2
+mov $0,$3
 mul $0,3
