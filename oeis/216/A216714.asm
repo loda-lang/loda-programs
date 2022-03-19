@@ -6,6 +6,6 @@ lpb $0
   trn $0,1
   seq $0,38360 ; Ranks of certain relations among Euler sums of weight n.
   mov $2,$0
-  mov $0,$1
+  mov $0,0
 lpe
 mov $0,$2

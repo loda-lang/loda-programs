@@ -1,7 +1,23 @@
 ; A100995: If n is a prime power p^m, m >= 1, then m, otherwise 0.
+; Submitted by Simon Strandgaard
 ; 0,1,1,2,1,0,1,3,2,0,1,0,1,0,0,4,1,0,1,0,0,0,1,0,2,0,3,0,1,0,1,5,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,2,0,0,0,1,0,0,0,0,0,1,0,1,0,0,6,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,4,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
-seq $0,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
-sub $0,1
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $0,1
+add $0,1
+mov $2,2
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    cmp $4,0
+    cmp $4,0
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+    add $1,1
+  lpe
+  pow $0,11
+lpe
+mov $0,$1

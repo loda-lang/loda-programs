@@ -1,8 +1,16 @@
 ; A077051: Right summatory matrix, T, by antidiagonals.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(l1)
 ; 1,0,1,0,1,1,0,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
 
-seq $0,51126 ; Table T(n,k) = n mod k read by antidiagonals (n >= 1, k >= 1).
-mov $2,$0
-cmp $2,0
-mov $0,$2
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $0,1
+sub $0,$1
+add $1,2
+gcd $1,$0
+div $1,$0
+mov $0,$1
+add $0,2
+mod $0,2

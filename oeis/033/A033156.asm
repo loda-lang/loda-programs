@@ -8,9 +8,10 @@ mov $3,$0
 add $3,$0
 lpb $0
   add $1,$0
-  trn $0,$2
+  sub $0,$2
   mul $2,2
 lpe
 add $1,$3
 sub $1,1
+add $1,$0
 mov $0,$1
