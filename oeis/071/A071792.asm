@@ -7,7 +7,7 @@ lpb $0
   mul $0,26
   div $0,7
   mov $1,$0
-  mov $0,$2
+  mov $0,0
   mod $1,10
 lpe
 mov $0,$1

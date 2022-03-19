@@ -1,5 +1,5 @@
 ; A256888: Terms of the continued fraction expansion of 1 + sqrt(64 / 37).
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3,2,3,5,1,3,1,3,1,5,3
 
 pow $0,2
@@ -9,14 +9,13 @@ lpb $0
   lpb $0
     div $0,90
     add $1,$2
-    sub $1,1
     mov $3,2
     add $6,$2
     pow $3,$6
     lpb $0,2
       lpb $6
         sub $3,2
-        mov $6,0
+        mov $6,2
       lpe
       bin $1,0
     lpe

@@ -8,7 +8,7 @@ lpb $2
   mov $7,2
   lpb $7
     mov $0,$4
-    mod $4,86
+    mod $4,85
     sub $7,1
     add $0,$7
     sub $0,1

@@ -1,10 +1,10 @@
 ; A286063: Fixed point of the mapping 00->001, 1->100, starting with 00.
+; Submitted by Jamie Morken(w1)
 ; 0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0
 
-lpb $0
-  mov $2,$0
-  seq $2,82446 ; a(0)=0, a(1)=1, a(2)=0; thereafter, if k>=0 and a block of the first 3*2^k terms is known, then a(3*2^k+i)=1-a(i) for 0<=i<3*2^k.
-  sub $0,$2
-  mod $0,3
-lpe
-div $0,2
+mul $0,4
+add $0,1
+mul $0,2
+div $0,3
+seq $0,115384 ; Partial sums of Thue-Morse numbers A010060.
+mod $0,2

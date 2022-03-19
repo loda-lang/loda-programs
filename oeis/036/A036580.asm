@@ -1,7 +1,7 @@
 ; A036580: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w3)
 ; 0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,0,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,2,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,0,2,1,0,2,0,1,2,1,0,1,2,0,2,1,0,2,0,1,2,0,2,1,0,1,2,1,0,2,0,1,2,1,0,1,2
 
-seq $0,36585 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+seq $0,29883 ; First differences of Thue-Morse sequence A001285.
 mul $0,-1
-add $0,3
+add $0,1
