@@ -1,31 +1,20 @@
 ; A119944: First differences of A003418(n) = lcm(1..n).
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(l1)
 ; 0,1,4,6,48,0,360,420,1680,0,25200,0,332640,0,0,360360,11531520,0,220540320,0,0,0,5121436320,0,21416915520,0,53542288800,0,2248776129600,0,69872686884000,72201776446800,0,0,0
 
-mov $5,$0
-mov $7,2
-lpb $7
-  mov $0,$5
-  sub $7,1
-  add $0,$7
-  trn $0,1
-  add $0,1
-  mov $2,$0
-  lpb $0
-    mov $3,$2
-    gcd $3,$0
-    mov $4,$0
-    sub $0,1
-    div $4,$3
-    mul $2,$4
-  lpe
-  mov $0,$2
-  sub $0,1
-  mov $8,$7
-  mul $8,$0
-  add $6,$8
+mov $3,2
+mov $4,$0
+lpb $3
+  mov $0,$4
+  div $3,2
+  add $0,$3
+  seq $0,195507 ; Smallest integer m greater than n such that m (mod k) == n (mod k) for k = 1..n-1.
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mul $4,$3
+  mov $5,$0
 lpe
-min $5,1
-mul $5,$0
-mov $0,$6
-sub $0,$5
+sub $1,$5
+mov $0,$1
+sub $0,1

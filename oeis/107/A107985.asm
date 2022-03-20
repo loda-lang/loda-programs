@@ -12,8 +12,6 @@ mov $2,$0
 sub $2,$1
 mul $1,$2
 mul $1,$0
-cmp $2,$0
-sub $2,$0
-add $0,$2
+mov $0,0
 gcd $0,$1
 div $0,2

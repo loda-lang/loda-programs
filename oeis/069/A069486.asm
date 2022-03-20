@@ -5,7 +5,3 @@
 seq $0,40 ; The prime numbers.
 seq $0,13636 ; n*nextprime(n).
 mul $0,2
-add $0,7
-div $0,2
-sub $0,3
-mul $0,2
