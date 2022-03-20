@@ -4,14 +4,11 @@
 
 add $0,4
 seq $0,44337 ; Numbers n such that string 0,5 occurs in the base 10 representation of n but not of n-1.
-div $0,2
-sub $0,55
+mov $1,$0
 mul $0,2
-mov $2,$0
-mod $0,10
-pow $0,2
-trn $0,1
-mov $1,$2
+mod $0,4
+sub $1,$0
+mul $0,8
 add $1,$0
 mov $0,$1
-sub $0,351
+sub $0,461

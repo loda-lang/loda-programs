@@ -5,7 +5,4 @@
 add $0,1
 seq $0,40 ; The prime numbers.
 seq $0,13632 ; Difference between n and the next prime greater than n.
-div $0,2
 sub $0,1
-mul $0,2
-add $0,1

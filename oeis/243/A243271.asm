@@ -1,5 +1,5 @@
 ; A243271: Number of graphs with n nodes that are Hamiltonian and distance-regular.
-; Submitted by Jamie Morken(s4)
+; Submitted by Christian Krause
 ; 1,0,1,2,2,4,2,5,4,6
 
 lpb $0
@@ -13,4 +13,3 @@ lpb $0
 lpe
 mov $0,$1
 add $0,1
-mod $0,10
