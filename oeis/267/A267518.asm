@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   add $0,$3
   seq $0,71049 ; Number of 1's in n-th generation of 1-D CA using Rule 110, started with a single 1.
-  mov $3,1
+  mov $3,0
 lpe
 min $2,1
 mul $2,$0
