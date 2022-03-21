@@ -4,6 +4,5 @@
 
 add $0,1
 seq $0,78678 ; Number of binary strings with n 1's and n 0's avoiding zigzags, that is avoiding the substrings 101 and 010.
-sub $0,2
-div $0,2
-add $0,1
+mul $0,2
+div $0,4
