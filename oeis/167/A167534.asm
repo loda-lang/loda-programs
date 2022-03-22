@@ -9,12 +9,12 @@ lpb $1
   sub $0,2
   sub $1,1
   trn $1,1
-  add $4,11
-  add $0,$4
-  add $4,6
-  add $0,$4
-  add $0,$4
-  mov $4,$3
+  add $3,11
+  add $0,$3
+  add $3,6
+  add $0,$3
+  add $0,$3
+  mov $3,0
 lpe
 lpb $2
   add $0,17

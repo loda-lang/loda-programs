@@ -12,7 +12,7 @@ lpb $0
     add $1,2
     gcd $4,$2
     div $1,$4
-    mov $3,$5
+    mov $3,0
   lpe
   sub $0,1
 lpe
