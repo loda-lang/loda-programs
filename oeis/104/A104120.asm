@@ -1,9 +1,6 @@
 ; A104120: (Prime(n + 1) - Prime(n))/2 (mod 2).
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(w4)
 ; 1,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,1,1,1
 
-add $0,1
-seq $0,40 ; The prime numbers.
-seq $0,13636 ; n*nextprime(n).
-div $0,2
+seq $0,28334 ; Differences between consecutive odd primes, divided by 2.
 mod $0,2

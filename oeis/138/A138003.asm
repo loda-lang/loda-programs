@@ -1,18 +1,15 @@
 ; A138003: Binomial transform of 1, 1, 0, -1, -1 (periodically continued).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w3)
 ; 1,2,3,3,0,-8,-21,-34,-34,0,89,233,377,377,0,-987,-2584,-4181,-4181,0,10946,28657,46368,46368,0,-121393,-317811,-514229,-514229,0,1346269,3524578,5702887,5702887,0,-14930352,-39088169,-63245986,-63245986
 
-add $0,1
-mov $3,5
+mov $3,1
 lpb $0
   sub $0,1
-  add $2,$3
-  sub $4,$3
-  sub $3,$1
-  add $1,$3
-  add $4,$2
-  add $1,$4
-  sub $1,5
+  add $3,$1
+  add $4,$3
+  add $3,$2
+  sub $1,$3
+  add $2,$4
 lpe
-mov $0,$2
-div $0,5
+add $3,$2
+mov $0,$3
