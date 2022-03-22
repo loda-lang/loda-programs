@@ -1,12 +1,10 @@
 ; A092163: a(n) = Prime(2n) + prime(2n+1).
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 8,18,30,42,60,78,90,112,128,144,162,186,204,216,240,268,288,308,330,352,372,390,410,450,462,480,508,532,548,564,600,624,648,684,702,726,752,772,798,828,852,872,892,918,930,966,990,1012,1044,1088,1120,1140
 
 mul $0,2
 add $0,1
-mov $1,$0
 seq $0,40 ; The prime numbers.
-add $1,1
-seq $1,40 ; The prime numbers.
-add $1,$0
-mov $0,$1
+seq $0,13634 ; a(n) = nextprime(n) + n.
+div $0,2
+mul $0,2

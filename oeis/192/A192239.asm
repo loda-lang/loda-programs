@@ -1,18 +1,17 @@
 ; A192239: Coefficient of x in the reduction of the polynomial x(x+1)(x+2)...(x+n-1) by x^2 -> x+1.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w4)
 ; 0,1,3,13,71,463,3497,29975,287265,3042545,35284315,444617525,6048575335,88347242335,1378930649745,22903345844335,403342641729665,7506843094993825,147226845692229875,3034786640911840925,65592491119118514375
 
+add $0,1
 mov $2,1
-mov $3,$0
-lpb $3
-  mov $0,$2
-  sub $2,$1
-  add $3,1
-  mul $2,$3
-  add $1,$2
-  mod $2,$0
-  mul $2,$3
-  add $2,$1
-  mov $1,$0
-  sub $3,2
+lpb $0
+  max $0,2
+  sub $0,1
+  add $3,$2
+  add $4,$2
+  mov $2,$3
+  mul $3,$0
+  add $3,$4
+  mul $4,$0
 lpe
+mov $0,$4

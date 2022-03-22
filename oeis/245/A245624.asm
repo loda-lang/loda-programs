@@ -20,7 +20,7 @@ lpb $3
   mul $5,$4
   mov $6,$5
   lpb $2
-    mov $1,$6
+    mov $1,$5
     sub $2,1
   lpe
 lpe
