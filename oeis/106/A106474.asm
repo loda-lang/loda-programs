@@ -4,5 +4,5 @@
 add $0,1
 mul $0,4
 sub $0,1
-seq $0,6579 ; Sum of gcd(n,k) for k = 1 to n-1.
+seq $0,6579 ; a(n) = Sum_{k=1..n-1} gcd(n,k).
 div $0,4
