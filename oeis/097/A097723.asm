@@ -1,13 +1,9 @@
 ; A097723: One fourth of sum of divisors of 4n+3.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,5,6,10,8,12,14,11,12,18,18,15,26,17,18,31,20,21,30,28,30,39,26,27,38,36,36,42,32,33,60,35,42,57,38,48,54,41,42,65,62,45,62,54,48,84,50,60,78,53,66,74,56,57,96,72,60,91,70,63,108,76,66,90,68,93,104,71,84,98,90,84,102,77,78,156,90,90,110,83,102,114,100,87,140,108,90,133,92,108,156,95,96,143,108,120,160
 
-add $0,1
-mul $0,2
-sub $0,1
-seq $0,5880 ; Theta series of D_4 lattice with respect to edge.
 mul $0,4
-div $0,8
-sub $0,4
+add $0,2
+seq $0,326990 ; Sum of odd divisors of n that are greater than 1.
 div $0,4
 add $0,1

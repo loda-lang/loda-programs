@@ -1,8 +1,9 @@
 ; A035849: Coordination sequence for A_23 lattice.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w2)
 ; 1,552,76452,4756952,169447302,3956576472,66087441092,839584669992,8489857618992,70764981877592,499828461729852,3059000328006312,16519884821277962,79920498285116712,350767245201478812
 
 add $0,2
+mov $4,5
 lpb $0
   mov $2,$0
   sub $0,2
@@ -13,12 +14,8 @@ lpb $0
   bin $3,$1
   add $1,1
   pow $3,2
-  mul $3,16
   mul $3,$2
   add $4,$3
 lpe
 mov $0,$4
-div $0,2
-sub $0,7
-div $0,8
-add $0,1
+sub $0,5

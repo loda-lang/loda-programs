@@ -6,15 +6,13 @@ trn $0,2
 pow $0,2
 mov $1,1
 mov $2,17
-mov $5,5
-mov $6,-14
 lpb $0
   mul $0,5
   sub $1,$0
   mov $0,1
   sub $2,5
-  mul $2,$6
-  sub $2,$5
+  mul $2,-14
+  sub $2,5
   div $1,$2
 lpe
 mov $3,$4

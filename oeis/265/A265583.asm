@@ -9,8 +9,7 @@ lpb $0
   sub $2,$0
 lpe
 mov $1,$0
-pow $1,$2
-mov $2,$1
-mul $2,$0
-add $2,$1
-mov $0,$2
+pow $0,$2
+add $1,1
+mul $1,$0
+mov $0,$1

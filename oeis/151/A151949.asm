@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,4186 ; Arrange digits of n in decreasing order.
-seq $1,4185 ; Arrange digits of n in increasing order, then (for n>0) omit the zeros.
+seq $1,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
 sub $0,$1

@@ -1,8 +1,8 @@
 ; A176246: a(n) = A001223(n+1) - 1.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,1,3,1,3,1,3,5,1,5,3,1,3,5,5,1,5,3,1,5,3,5,7,3,1,3,1,3,13,3,5,1,9,1,5,5,3,5,5,1,9,1,3,1,11,11,3,1,3,5,1,9,5,5,5,1,5,3,1,9,13,3,1,3,13,5,9,1,3,5,7,5,5,3,5,7,3,7,9,1,9,1,5,3,5,7,3,1,3,11,7,3,7
 
-add $0,1
-seq $0,40 ; The prime numbers.
-seq $0,13632 ; Difference between n and the next prime greater than n.
+seq $0,28334 ; Differences between consecutive odd primes, divided by 2.
 sub $0,1
+mul $0,2
+add $0,1
