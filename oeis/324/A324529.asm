@@ -6,5 +6,4 @@ mov $2,$0
 seq $0,244668 ; Numerators of (product of divisors of n / sum of divisors of n).
 seq $2,274536 ; a(n) = 6 * sigma(n).
 mul $0,$2
-mul $0,2
-div $0,12
+div $0,6
