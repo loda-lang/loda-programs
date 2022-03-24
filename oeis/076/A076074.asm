@@ -5,11 +5,10 @@
 mul $0,2
 max $0,1
 mov $5,$0
-sub $0,3
+sub $0,5
 div $0,2
 mov $2,6
 mov $3,$0
-sub $0,1
 pow $3,5
 mov $4,$0
 lpb $3
@@ -24,11 +23,8 @@ mov $0,$2
 mul $0,2
 sub $0,5
 div $0,4
-add $0,4
+add $0,5
 sub $0,$4
 mul $0,2
-add $0,4
 add $0,$5
-mul $0,2
-sub $0,26
-div $0,2
+sub $0,11

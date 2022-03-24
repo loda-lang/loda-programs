@@ -11,9 +11,7 @@ lpb $0
 lpe
 lpb $0
   mov $2,$0
-  gcd $2,4
   trn $0,$1
-  mov $6,2
   add $2,1
   add $2,$1
 lpe

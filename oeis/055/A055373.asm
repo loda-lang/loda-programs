@@ -1,10 +1,16 @@
 ; A055373: Invert transform applied twice to Pascal's triangle A007318.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,3,6,3,9,27,27,9,27,108,162,108,27,81,405,810,810,405,81,243,1458,3645,4860,3645,1458,243,729,5103,15309,25515,25515,15309,5103,729,2187,17496,61236,122472,153090,122472,61236,17496,2187,6561
 
-mov $2,$0
-seq $2,38221 ; Triangle whose (i,j)-th entry is binomial(i,j)*3^(i-j)*3^j.
-mov $0,$2
-sub $0,3
+mov $2,1
+lpb $0
+  add $1,1
+  sub $0,$1
+  mov $2,$1
+lpe
+bin $1,$0
+mov $0,3
+pow $0,$2
+mul $1,$0
+mov $0,$1
 div $0,3
-add $0,1

@@ -4,5 +4,4 @@
 
 seq $0,253475 ; Indices of centered square numbers (A001844) which are also centered hexagonal numbers (A003215).
 bin $0,2
-mul $0,2
-div $0,30
+div $0,15
