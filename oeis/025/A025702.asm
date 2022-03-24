@@ -30,7 +30,7 @@ lpb $3
       mov $9,$10
       lpb $9
         sub $9,1
-        mov $11,$4
+        mov $11,$2
       lpe
     lpe
     lpb $12

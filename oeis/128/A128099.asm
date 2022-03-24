@@ -11,9 +11,7 @@ lpb $0
 lpe
 sub $1,$0
 bin $1,$0
-add $0,5
 mov $2,2
 pow $2,$0
 mul $2,$1
 mov $0,$2
-div $0,32

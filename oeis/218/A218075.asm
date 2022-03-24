@@ -5,6 +5,5 @@
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
 add $0,1
 seq $0,48487 ; a(n) = T(4,n), array T given by A048483.
-sub $0,16
 div $0,10
-add $0,2
+add $0,1

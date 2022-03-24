@@ -1,8 +1,8 @@
 ; A297439: Number of maximum independent vertex sets and minimum vertex covers in the n-web graph.
+; Submitted by Jamie Morken(w3)
 ; 4,9,8,30,16,84,32,216,64,528,128,1248,256,2880,512,6528,1024,14592,2048,32256,4096,70656,8192,153600,16384,331776,32768,712704,65536,1523712,131072,3244032,262144,6881280,524288,14548992,1048576,30670848,2097152
 
 mov $2,$0
-add $2,1
 mov $4,$0
 mov $6,2
 mov $8,$0
@@ -26,8 +26,6 @@ lpb $2
     div $11,6
   lpe
   mov $4,$1
-  mov $1,$6
-  sub $1,1
   mov $10,$5
   mov $5,$7
   mul $5,2
@@ -39,5 +37,5 @@ lpb $2
   sub $6,$5
   mov $8,0
 lpe
-add $1,3
-mov $0,$1
+mov $0,$6
+add $0,2

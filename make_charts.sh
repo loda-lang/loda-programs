@@ -19,7 +19,7 @@ fi
 
 echo "Generating count chart"
 cat << EOF > counts.gp
-set terminal pngcairo font "Helvetica,20" size 1024,768
+set terminal pngcairo font "Helvetica,24" size 1024,768
 set output 'program_counts.png'
 set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
