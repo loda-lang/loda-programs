@@ -23,12 +23,11 @@ mov $0,$2
 mul $0,2
 sub $0,5
 div $0,4
-add $0,4
 sub $0,$4
 mul $0,2
 add $0,5
 add $0,$5
-sub $0,14
+sub $0,4
 mul $0,9
-add $0,23
+sub $0,5
 mod $0,10

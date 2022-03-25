@@ -8,7 +8,7 @@ lpb $3
   mov $0,$4
   div $3,2
   add $0,$3
-  seq $0,129824 ; a(n) = Product_{k=0..n} (1 + binomial(n,k)).
+  seq $0,55612 ; a(n) = Product_{m=1..n} (binomial(n,m)+1).
   mov $2,$3
   mul $2,$0
   add $1,$2
@@ -16,4 +16,3 @@ lpb $3
 lpe
 sub $1,$5
 mov $0,$1
-div $0,2
