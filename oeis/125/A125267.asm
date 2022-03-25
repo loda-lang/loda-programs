@@ -12,11 +12,9 @@ lpb $3
   seq $0,91964 ; Number of left factors of peakless Motzkin paths of length n.
   mov $2,$3
   mul $2,$0
-  add $4,3
   add $4,$2
 lpe
 min $5,1
 mul $5,$0
 add $5,$4
 mov $0,$5
-sub $0,6
