@@ -4,11 +4,11 @@
 
 mov $2,$0
 mov $3,49
+mov $4,$0
 mov $5,$0
-mov $8,$0
 lpb $0
   gcd $3,$0
-  mov $0,$4
+  mov $0,0
   add $2,1
 lpe
 mul $3,2
@@ -20,7 +20,7 @@ mov $7,$5
 mul $7,24
 add $1,$7
 add $1,12
-mov $6,$8
+mov $6,$4
 mul $6,24
 add $1,$6
 mov $0,$1

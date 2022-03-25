@@ -26,6 +26,5 @@ add $0,9
 sub $0,$4
 mul $0,2
 add $0,$5
-sub $0,19
+sub $0,17
 mul $0,2
-add $0,4

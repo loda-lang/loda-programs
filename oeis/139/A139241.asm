@@ -1,20 +1,8 @@
 ; A139241: Second differences of Mersenne numbers A001348.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 20,72,1824,4224,116736,270336,7471104,520617984,1082130432,133680857088,1926292832256,4535485464576,125344325566464,8734520371052544,558587091282296832,1161928703861587968,143538727323552448512,2068341179264683474944,4869940435459321626624
 
-mov $3,2
-lpb $3
-  sub $3,1
-  add $0,$3
-  sub $0,1
-  mov $2,$3
-  mov $5,$0
-  add $5,1
-  max $5,0
-  seq $5,139238 ; First differences of Mersenne numbers A001348.
-  mul $2,$5
-  add $1,$2
-  mov $4,$5
-lpe
-sub $1,$4
-mov $0,$1
+seq $0,139242 ; Second differences of Mersenne numbers A001348, divided by 2.
+sub $0,10
+mul $0,2
+add $0,20
