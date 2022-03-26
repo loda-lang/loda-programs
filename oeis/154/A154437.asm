@@ -7,8 +7,7 @@ mov $2,1
 lpb $0
   div $0,2
   add $1,$3
-  gcd $3,833
-  bin $3,8
+  gcd $3,834
   trn $3,3
   add $3,$0
   mod $3,2

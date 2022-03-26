@@ -3,7 +3,6 @@
 
 lpb $0
   sub $0,1
-  dif $0,7
   sub $1,2
   add $2,4
   sub $2,$1

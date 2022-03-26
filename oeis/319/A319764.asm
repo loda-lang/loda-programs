@@ -7,7 +7,6 @@ mov $9,2
 lpb $9
   mov $0,$7
   mov $2,0
-  mov $5,0
   mov $6,0
   sub $9,1
   add $0,$9
@@ -28,12 +27,11 @@ lpb $9
   mov $4,10
   pow $4,$0
   div $2,$4
-  cmp $5,0
-  add $2,$5
+  add $2,1
   mov $0,$2
-  mov $10,$9
-  mul $10,$2
-  add $8,$10
+  mov $5,$9
+  mul $5,$2
+  add $8,$5
 lpe
 min $7,1
 mul $7,$0
