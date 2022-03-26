@@ -3,9 +3,8 @@
 
 sub $1,$0
 add $0,1
-mov $2,9
 lpb $0
   mod $0,3
-  pow $0,$2
+  pow $0,9
 lpe
 sub $0,$1
