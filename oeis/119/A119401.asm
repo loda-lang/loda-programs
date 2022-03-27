@@ -4,15 +4,14 @@
 
 mov $1,1
 mov $3,$0
-mov $4,1
 lpb $3
   mul $1,$3
   mul $1,-1
   mul $1,$3
-  add $5,$4
-  div $1,$5
+  add $4,1
+  div $1,$4
   mul $1,$0
-  sub $0,$4
+  sub $0,1
   add $2,$1
   sub $3,1
 lpe

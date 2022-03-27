@@ -1,6 +1,30 @@
 ; A033633: Primes modulo 19.
-; Submitted by Jamie Morken(l1)
+; Submitted by Christian Krause
 ; 2,3,5,7,11,13,17,0,4,10,12,18,3,5,9,15,2,4,10,14,16,3,7,13,2,6,8,12,14,18,13,17,4,6,16,18,5,11,15,2,8,10,1,3,7,9,2,14,18,1,5,11,13,4,10,16,3,5,11,15,17,8,3,7,9,13,8,14,5,7,11,17,6,12,18,3,9,17,2,10,1,3,13,15,2,6,12,1,5,7,11,4,12,16,5,9,15,8,10,9
 
-seq $0,40 ; The prime numbers.
+mul $0,2
+max $0,1
+mov $5,$0
+sub $0,4
+div $0,2
+mov $2,6
+mov $3,$0
+pow $3,5
+mov $4,$0
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $2,2
+  sub $3,$0
+lpe
+pow $2,$0
+mov $0,$2
+mul $0,2
+sub $0,5
+div $0,4
+sub $0,$4
+mul $0,2
+add $0,$5
+add $0,1
 mod $0,19
