@@ -1,5 +1,5 @@
 ; A059595: Seventh column (m=6) of convolution triangle A059594(n,m).
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w3)
 ; 1,7,35,133,434,1246,3262,7890,17913,38479,78883,155141,294280,540344,963832,1674568,2841006,4715970,7673834,12259142,19254676,29768972,45355660,68164628,101143574,148289946
 
 add $0,2
@@ -8,12 +8,11 @@ lpb $0
   mov $2,6
   add $2,$0
   bin $2,$0
-  mov $4,6
-  add $4,$1
-  mov $3,$4
+  mov $3,6
+  add $3,$1
   bin $3,$1
   add $1,1
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4

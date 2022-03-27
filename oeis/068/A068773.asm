@@ -5,10 +5,9 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  seq $2,140434 ; Number of new visible points created at each step in an n X n grid.
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $1,$2
   mul $1,-1
 lpe
 mov $0,$1
-add $0,2
-div $0,2
+add $0,1

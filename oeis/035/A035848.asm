@@ -13,12 +13,9 @@ lpb $0
   mov $3,22
   bin $3,$1
   add $1,1
-  mul $3,2
-  pow $3,2
+  mul $2,$3
   mul $3,$2
   add $4,$3
 lpe
 mov $0,$4
-sub $0,6
-div $0,4
-add $0,1
+sub $0,5
