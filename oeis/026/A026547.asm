@@ -8,11 +8,9 @@ add $0,2
 add $4,1
 div $4,2
 lpb $0
-  mov $2,$0
   sub $0,2
-  sub $2,3
-  add $2,$4
-  add $2,1
+  mov $2,$4
+  add $2,$0
   div $2,2
   bin $2,$0
   mov $3,$4
