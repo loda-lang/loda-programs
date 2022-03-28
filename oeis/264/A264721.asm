@@ -1,10 +1,8 @@
 ; A264721: Composite numbers that are greater than the average of their closest flanking primes.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 10,16,22,27,28,35,36,40,46,51,52,57,58,65,66,70,77,78,82,87,88,94,95,96,100,106,112,121,122,123,124,125,126,130,135,136,145,146,147,148,155,156,161,162,166,171,172,177,178,187,188,189,190,196,206,207,208,209,210,218,219,220,221,222,226,232,237,238,247,248,249,250,255,256,261,262,267,268,275,276,280,289,290,291,292,301,302,303,304,305,306,310,316,325,326,327,328,329,330,335
 
-mul $0,2
 add $0,1
-seq $0,308833 ; Numbers r such that the r-th tetrahedral number A000292(r) divides r!.
+seq $0,14076 ; Odd nonprimes.
 seq $0,13634 ; a(n) = nextprime(n) + n.
 div $0,2
-add $0,1

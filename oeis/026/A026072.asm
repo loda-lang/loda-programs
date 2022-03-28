@@ -7,9 +7,8 @@ add $0,3
 lpb $0
   mov $2,$0
   sub $0,2
-  sub $2,1
   add $2,$4
-  sub $2,3
+  sub $2,4
   bin $2,$0
   mov $3,$4
   bin $3,$1

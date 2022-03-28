@@ -9,7 +9,7 @@ lpb $1
   mov $4,$1
   lpb $2
     sub $0,2
-    dif $2,$4
+    dif $2,$1
     mov $5,$0
     mov $0,1
     max $5,0

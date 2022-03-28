@@ -1,11 +1,10 @@
 ; A140299: a(n) = A100626(n+1)/A100626(n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 4,16,16,256,16,256,16,256,4096,16,4096,256,16,256,4096,4096,16,4096,256,16,4096,256,4096,65536,256,16,256,16,256,268435456,256,4096,16,1048576,16,4096,4096,256,4096,4096,16,1048576,16,256,16,16777216
 
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
 mul $0,2
 add $0,1
 seq $0,48487 ; a(n) = T(4,n), array T given by A048483.
-sub $0,16
 div $0,10
-add $0,2
+add $0,1
