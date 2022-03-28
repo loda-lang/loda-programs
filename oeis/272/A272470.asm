@@ -5,7 +5,7 @@
 mul $0,2
 max $0,1
 mov $5,$0
-sub $0,3
+sub $0,4
 div $0,2
 mov $2,6
 mov $3,$0
@@ -25,7 +25,6 @@ sub $0,5
 div $0,4
 sub $0,$4
 mul $0,2
-add $0,5
 add $0,$5
-sub $0,4
+add $0,1
 mul $0,7
