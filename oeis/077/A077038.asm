@@ -1,11 +1,8 @@
 ; A077038: Least difference of primes p, q such that p < n^3 < q.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w1)
 ; 4,6,6,14,12,10,12,6,12,34,10,24,8,16,6,10,12,6,16,20,12,34,22,10,6,6,18,12,18,14,22,18,12,36,14,20,8,52,10,10,16,38,34,6,40,24,10,16,12,14,8,18,20,30,20,32,18,34,40,48,10,6,8,18,10,18,18,30,30,30,42,20,6,44,12,10,10,16,12,74,18,6,30,16,16,20,30,36,26,14,12,26,8,38,26,78,22,6,20,10
 
 seq $0,77037 ; Largest prime < n^3.
 add $0,2
 seq $0,13632 ; Difference between n and the next prime greater than n.
-mul $0,2
-sub $0,6
-div $0,2
-add $0,5
+add $0,2

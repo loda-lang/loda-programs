@@ -1,10 +1,9 @@
 ; A258468: a(n) = lcm(n, n - tau(n)).
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w3)
 ; 0,0,3,4,15,6,35,8,18,30,99,12,143,70,165,176,255,36,323,140,357,198,483,48,550,286,621,308,783,330,899,416,957,510,1085,108,1295,646,1365,160,1599,714,1763,836,585,966,2115,912,2254,1100,2397,1196
 
 mov $2,$0
-seq $0,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
-sub $0,1
+seq $0,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
 mov $1,$0
 add $2,1
 gcd $1,$2

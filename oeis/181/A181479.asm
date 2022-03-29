@@ -8,10 +8,9 @@ lpb $0
   mov $2,6
   add $2,$0
   bin $2,$0
-  mov $4,2
+  mov $4,20
   add $4,$1
   mov $3,$4
-  add $3,18
   bin $3,$1
   add $1,1
   mul $3,$2
