@@ -1,6 +1,9 @@
 ; A167021: a(n) = 1 iff 6n+1 is prime.
+; Submitted by Jamie Morken(w2)
 ; 1,1,1,0,1,1,1,0,0,1,1,1,1,0,0,1,1,1,0,0,1,0,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,0,0,1,1,1,0,0,0,1,1,0,0,1,1,0,1,0,0,1,1,1,0,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1
 
 add $0,1
 mul $0,6
-seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+mov $2,$0
+seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+mov $0,$2

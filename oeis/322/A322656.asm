@@ -4,7 +4,7 @@
 
 mov $1,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $1,319296 ; a(n) = (Sum_{d|n} (sigma(d))) mod sigma(n).
+seq $1,7429 ; Inverse Moebius transform applied twice to natural numbers.
 gcd $1,$0
 mov $2,$0
 div $2,$1
