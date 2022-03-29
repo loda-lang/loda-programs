@@ -1752,6 +1752,7 @@ A317949: Erroneous version of A013582.
 A318936: Erroneous version of A088750.
 A323461: Erroneous version of A323457.
 A323841: Erroneous version of: Number of Stanley graphs on n nodes.
+A325645: "Sloping quinary numbers": write numbers in quinary under each other (right-justified), read diagonals in upward direction, convert to decimal.
 A327136: a(n) = n-th number k such that sin(2k) > sin(2k+2) < sin(2k+4).
 A328087: Erroneous version of A001523.
 A328980: Erroneous version of A328910: Number of solutions to Erdős''s Last Equation in n variables.
