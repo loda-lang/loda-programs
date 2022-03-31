@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  mul $0,$3
+  mul $0,0
   trn $2,1
   seq $2,345478 ; Numbers that are the sum of seven squares in one or more ways.
   add $2,2
