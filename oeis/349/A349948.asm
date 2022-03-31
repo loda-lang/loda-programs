@@ -1,7 +1,16 @@
 ; A349948: Tetrahedral-sided isoceles Heron triangle pairs.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w2)
 ; 0,10,48,190,720,2698,10080,37630,140448,524170,1956240,7300798,27246960,101687050,379501248,1416317950,5285770560,19726764298,73621286640,274758382270,1025412242448,3826890587530,14282150107680,53301709843198,198924689265120
 
-seq $0,334277 ; Perimeters of almost-equilateral Heronian triangles.
-sub $0,11
-div $0,3
+lpb $0
+  sub $0,1
+  add $1,2
+  mov $2,1
+  mov $4,1
+  add $4,$1
+  add $2,$4
+  add $3,$2
+  add $3,$2
+  add $1,$3
+lpe
+mov $0,$1
