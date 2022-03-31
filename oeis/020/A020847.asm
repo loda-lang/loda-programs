@@ -1,39 +1,24 @@
 ; A020847: Decimal expansion of 1/sqrt(90) = sqrt(10)/30.
-; Submitted by Jamie Morken(s1)
+; Submitted by Simon Strandgaard
 ; 1,0,5,4,0,9,2,5,5,3,3,8,9,4,5,9,7,7,7,3,3,2,9,6,4,5,1,4,8,1,0,9,0,6,1,7,7,9,0,6,5,1,8,3,7,9,7,7,5,0,7,2,2,7,5,6,1,9,1,6,8,2,8,4,2,6,4,1,9,8,1,4,6,2,1,3,0,7,9,4,0,7,1,1,4,7,4,9,3,6,9,4,5,9,7,6,6,7,6,5
 
-mov $1,1
-mov $2,1
 mov $3,$0
-add $3,8
-mov $4,$0
-add $4,2
-mul $4,2
-mov $7,10
-pow $7,$4
+mul $3,4
 lpb $3
-  mov $4,$2
-  pow $4,2
-  mul $4,40
-  mov $5,$1
-  pow $5,2
-  add $4,$5
-  mov $6,$1
-  mov $1,$4
-  mul $6,$2
-  mul $6,2
-  mov $2,$6
-  mov $8,$4
-  div $8,$7
-  max $8,2
-  div $1,$8
-  div $2,$8
+  mov $1,$0
+  add $5,$2
+  add $1,$5
+  mul $1,9
+  add $2,$1
   sub $3,2
+  add $5,$1
 lpe
-div $1,6
-mov $3,10
-pow $3,$0
-div $2,$3
+mov $1,1
+add $1,$5
+mov $4,10
+pow $4,$0
+div $2,$4
+add $2,1
 div $1,$2
-mod $1,10
 mov $0,$1
+mod $0,10
