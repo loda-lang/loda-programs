@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  mul $0,$3
+  mul $0,0
   trn $2,1
   seq $2,7591 ; Numbers k such that k^2 + 4 is prime.
   add $2,1

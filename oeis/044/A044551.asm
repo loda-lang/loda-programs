@@ -8,10 +8,10 @@ lpb $0
   sub $0,1
   gcd $0,49
   mov $3,2
-  mov $6,$0
-  mov $0,$4
-  sub $6,2
-  add $3,$6
+  mov $4,$0
+  mov $0,0
+  sub $4,2
+  add $3,$4
 lpe
 mov $1,$3
 div $1,3
