@@ -1,6 +1,13 @@
 ; A122098: Smallest number, different from 1, which when multiplied by "n" produces a number with "n" as its rightmost digits.
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(w2)
 ; 11,6,11,6,3,6,11,6,11,11,101,26,101,51,21,26,101,51,101,6,101,51,101,26,5,51,101,26,101,11,101,26,101,51,21,26,101,51,101,6,101,51,101,26,21,51,101,26,101,3,101,26,101,51,21,26,101,51,101,6,101,51,101,26,21,51,101,26,101,11,101,26,101,51,5,26,101,51,101,6,101,51,101,26,21,51,101,26,101,11,101,26,101,51,21,26,101,51,101,11
 
-seq $0,78267 ; Smallest k such that k*N is an integer where N is obtained by placing the string "n" after a decimal point.
+mov $2,$0
+seq $0,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).
+mov $1,$0
+add $2,1
+add $2,$0
+gcd $1,$2
+div $2,$1
+mov $0,$2
 add $0,1
