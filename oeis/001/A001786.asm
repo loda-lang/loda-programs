@@ -11,9 +11,7 @@ lpb $0
   add $4,4
   add $2,$4
   bin $2,$0
-  bin $3,0
-  mul $3,$2
+  add $3,$2
   mov $4,4
-  add $5,$3
 lpe
-mov $0,$5
+mov $0,$3
