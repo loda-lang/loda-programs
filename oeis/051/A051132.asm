@@ -8,9 +8,6 @@ mov $5,2
 lpb $5
   mov $0,$4
   sub $0,1
-  mov $2,0
-  mov $3,0
-  sub $5,1
   lpb $0
     sub $0,1
     add $2,2
@@ -20,11 +17,9 @@ lpb $5
     div $1,$2
     mod $1,2
     add $3,$1
+    bin $5,2
   lpe
   mov $0,$3
   mul $0,4
   add $0,1
 lpe
-min $4,1
-mul $4,$0
-mov $0,$4
