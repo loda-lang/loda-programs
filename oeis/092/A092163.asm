@@ -5,4 +5,7 @@
 mul $0,2
 add $0,1
 seq $0,40 ; The prime numbers.
+add $0,1
 seq $0,13634 ; a(n) = nextprime(n) + n.
+div $0,2
+mul $0,2
