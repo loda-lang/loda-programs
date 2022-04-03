@@ -10,7 +10,7 @@ lpb $0
     add $0,1
     sub $3,$0
     mul $0,2
-    mul $3,680
+    mul $3,678
   lpe
   sub $0,1
   add $2,1

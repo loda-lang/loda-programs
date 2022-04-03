@@ -6,12 +6,11 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  sub $0,1
-  mov $2,$3
   mov $4,$0
-  add $4,1
   max $4,0
   seq $4,139190 ; a(n) = (prime(n)!-2)/2.
+  sub $0,1
+  mov $2,$3
   mul $2,$4
   add $1,$2
 lpe
