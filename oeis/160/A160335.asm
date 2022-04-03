@@ -9,12 +9,9 @@ lpb $0
   add $2,$3
   mov $3,$1
   mov $1,$2
-  mul $1,2
-  mul $2,24
-  mul $3,-1
+  mul $2,48
+  mul $3,-961
   mul $3,$0
-  mul $3,961
-  add $3,$2
+  mul $3,2
 lpe
 mov $0,$1
-div $0,2

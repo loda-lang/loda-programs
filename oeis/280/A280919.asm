@@ -1,5 +1,5 @@
 ; A280919: Precipices from the successive terraces, descending by the main diagonal of the pyramid described in A245092. Also first differences of A071562.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w3)
 ; 1,2,2,2,1,3,3,1,2,2,4,1,3,2,2,3,1,4,2,3,3,1,1,4,2,4,3,1,2,4,2,5,3,1,3,4,2,1,5,2,1,1,4,4,2,2,5,3,1,5,2,2,2,3,5,3,1,6,3,1,2,4,2,3,3,1,1,6,4,2,5,3,2,3,1,2,2,4,4,1,1,6,4,1,3,1,3,3,3,4,2,2,5,5,3,1,4,4,2,4
 
 mov $3,2
@@ -16,6 +16,4 @@ lpb $3
 lpe
 sub $1,$2
 mov $0,$1
-sub $0,12
 div $0,16
-add $0,1

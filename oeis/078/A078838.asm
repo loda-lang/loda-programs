@@ -3,10 +3,10 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
-mov $2,$0
+mov $1,$0
 mul $0,3
 add $0,1
-mul $0,$2
-mul $2,$0
-add $0,$2
+mul $0,$1
+mul $1,$0
+add $0,$1
 div $0,4
