@@ -5,7 +5,7 @@ mov $1,3
 add $1,$0
 sub $1,1
 mul $1,3
-sub $1,1
+sub $1,5
 mov $3,$0
 add $3,1
 mov $5,$0
@@ -14,7 +14,6 @@ sub $7,$0
 mov $8,$0
 add $8,$0
 add $0,$3
-sub $1,4
 mov $3,1
 mov $4,1
 add $7,$8
@@ -34,9 +33,9 @@ mov $1,$4
 add $1,8
 mov $2,$5
 mul $2,4
-add $1,$2
 mov $6,$5
 mul $6,$5
+add $1,$2
 mov $2,$6
 mul $2,3
 add $1,$2

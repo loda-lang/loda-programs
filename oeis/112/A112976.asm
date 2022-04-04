@@ -5,8 +5,8 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  mov $0,1
   seq $1,163489 ; Indices n such that composite(n)/3 is prime.
+  mov $0,1
 lpe
 add $1,$2
 mov $0,$1
