@@ -7,22 +7,22 @@ mov $2,-19
 mov $3,$0
 mul $3,5
 lpb $3
-  gcd $1,$6
   mul $2,$3
-  add $1,$2
   cmp $4,0
   mov $5,$0
   div $5,3
   add $5,$4
+  gcd $1,0
+  add $1,$2
   div $1,$5
   div $2,$5
   sub $3,1
   cmp $4,0
 lpe
-mul $1,4
 mov $6,10
 pow $6,$0
 div $2,$6
+mul $1,4
 div $1,$2
 add $1,$6
 mod $1,10

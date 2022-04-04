@@ -2,13 +2,13 @@
 ; Submitted by Jamie Morken(l1)
 ; 1,2,6,18,54,120,240,480,960,1920
 
-mov $3,1
+mov $1,1
 lpb $0
   sub $0,1
-  mul $3,2
-  add $3,$2
+  mul $1,2
+  add $1,$2
   add $2,48
-  trn $2,$3
-  min $2,$3
+  trn $2,$1
+  min $2,$1
 lpe
-mov $0,$3
+mov $0,$1

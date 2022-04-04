@@ -9,10 +9,10 @@ lpb $0
   add $3,1
 lpe
 bin $1,$0
-mov $0,2
 bin $2,2
-pow $0,$2
 add $3,1
+mov $0,2
+pow $0,$2
 mul $1,$3
 mul $1,$0
 mov $0,$1
