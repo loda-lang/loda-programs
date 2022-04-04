@@ -3,21 +3,18 @@
 ; 1,2,3,9,6,7,17,46,45,17,18,19,20,90,106,260,37,77,40,41,42,132,190,50,51,105,222,58,119,61,62,127,335,70,71,145,74,75,310,326,169,531,92,93,189,490,101,735,442,113,345,235,854,510,660,271,414,710,438
 
 mov $3,2
+mov $4,$0
 lpb $3
-  sub $3,1
+  mov $0,$4
+  div $3,2
   add $0,$3
-  sub $0,1
+  seq $0,129388 ; Primes that are equal to the mean of 5 consecutive squares.
   mov $2,$3
-  mov $5,$0
-  add $5,1
-  max $5,0
-  seq $5,129388 ; Primes that are equal to the mean of 5 consecutive squares.
-  mul $2,$5
+  mul $2,$0
   add $1,$2
+  mul $4,$3
+  mov $5,$0
 lpe
-max $4,$5
-sub $1,$4
+sub $1,$5
 mov $0,$1
-sub $0,72
 div $0,72
-add $0,1

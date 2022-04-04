@@ -8,12 +8,11 @@ lpb $0
   add $1,$2
   add $2,$1
   add $2,1
-  add $3,4
+  add $3,1
   add $3,$1
-  sub $3,3
   add $1,$3
-  add $1,4
   sub $1,$2
+  add $1,4
   add $3,$1
   mov $1,$3
 lpe

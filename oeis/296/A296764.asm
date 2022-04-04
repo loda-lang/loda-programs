@@ -4,21 +4,8 @@
 
 lpb $0
   add $1,1
-  add $2,1
-  div $1,$2
-  sub $0,$2
+  sub $0,$1
 lpe
-mul $2,20
-add $0,$2
-mov $1,-1
-bin $1,$0
-pow $2,2
-mul $2,-1
-add $2,$0
-mod $1,3
-div $2,2
-sub $2,1
-bin $2,$0
-mul $1,$2
-div $1,2
+mul $1,20
+add $0,$1
 add $0,20
