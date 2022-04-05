@@ -1,23 +1,19 @@
 ; A035874: Coordination sequence for A_48 lattice.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 1,2352,1384152,362955152,53762385852,5126650450992,342037616253032,16917775827266832,647441209728416082,19812657149517726032,497675838364649446152,10483172845268383890672,188497102616595297692972
 
 add $0,2
 lpb $0
   mov $2,$0
   sub $0,2
-  max $4,95
-  div $4,2
-  add $4,1
-  add $2,$4
-  sub $2,3
+  add $2,45
   bin $2,$0
   add $0,1
-  mov $3,$4
+  mov $3,48
   bin $3,$1
   add $1,1
   pow $3,2
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4
