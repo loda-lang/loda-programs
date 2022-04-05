@@ -6,16 +6,13 @@ add $0,2
 lpb $0
   mov $2,$0
   sub $0,2
-  max $4,100
-  dif $4,2
-  add $2,$4
-  sub $2,3
+  add $2,47
   bin $2,$0
   add $0,1
-  mov $3,$4
+  mov $3,50
   bin $3,$1
   add $1,1
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4
