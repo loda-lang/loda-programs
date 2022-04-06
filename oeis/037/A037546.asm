@@ -6,8 +6,8 @@ pow $1,$0
 add $1,2
 trn $2,$1
 add $2,$1
-mul $1,6
 div $2,31
+mul $1,6
 sub $1,$2
 sub $1,18
 div $1,4

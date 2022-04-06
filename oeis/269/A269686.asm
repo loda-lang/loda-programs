@@ -10,12 +10,12 @@ lpb $0
   mul $1,4
   add $1,$3
   add $3,$5
-  mov $2,$3
   add $5,$4
+  mov $2,$3
+  mul $2,2
   mov $3,$5
   add $4,$1
   mov $1,$4
-  mul $2,2
   add $5,$2
 lpe
 mov $0,$4
