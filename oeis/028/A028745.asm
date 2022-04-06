@@ -20,8 +20,8 @@ add $1,1
 add $1,$3
 trn $1,2
 lpb $4
-  add $1,1
   sub $4,1
+  add $1,1
 lpe
 add $1,2
 mov $0,$1
