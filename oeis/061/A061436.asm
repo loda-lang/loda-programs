@@ -5,10 +5,10 @@
 bin $2,$0
 lpb $0
   mov $2,$0
-  div $0,3
   add $2,7
   pow $2,2
   mod $2,3
+  div $0,3
   add $1,$2
   mov $2,$1
   add $1,1

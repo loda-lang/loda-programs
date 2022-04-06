@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,190057 ; a(n) = n + [n*r/s] + [n*t/s];  r=1/2, s=sin(Pi/3), t=csc(Pi/3).
-sub $0,$1
 sub $0,1
+sub $0,$1
