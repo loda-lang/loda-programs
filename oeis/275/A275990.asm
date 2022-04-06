@@ -5,5 +5,5 @@ seq $0,40976 ; a(n) = prime(n) - 2.
 mov $1,50000000000
 sub $1,$0
 seq $0,40 ; The prime numbers.
-add $0,$1
 sub $0,50000000002
+add $0,$1

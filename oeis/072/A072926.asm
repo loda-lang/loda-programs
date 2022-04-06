@@ -5,9 +5,9 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   add $2,1
   seq $2,51699 ; Distance from n to closest prime.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

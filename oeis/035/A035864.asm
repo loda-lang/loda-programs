@@ -1,22 +1,20 @@
 ; A035864: Coordination sequence for A_38 lattice.
-; Submitted by Jamie Morken(l1)
+; Submitted by Christian Krause
 ; 1,1482,549822,91025922,8533542732,516758578518,21987155711274,697043285935854,17195888346453804,341373149589873674,5601169210715792766,77632358572786641858,925542147627865217268
 
-mov $4,$0
 add $0,2
 lpb $0
   mov $2,$0
-  sub $4,5
-  max $4,88
-  div $4,2
-  sub $4,6
   sub $0,2
-  sub $2,3
+  max $4,92
+  div $4,3
+  add $4,8
   add $2,$4
+  sub $2,3
   bin $2,$0
+  add $0,1
   mov $3,$4
   bin $3,$1
-  add $0,1
   add $1,1
   pow $3,2
   mul $3,$2

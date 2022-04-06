@@ -5,7 +5,6 @@ sub $1,$0
 seq $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
 add $1,$0
 add $0,$1
-mov $1,138100
+mov $1,3
 sub $1,$0
-sub $1,138097
 mov $0,$1

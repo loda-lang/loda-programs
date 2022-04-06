@@ -5,6 +5,5 @@
 add $0,1
 seq $0,89253 ; Numbers n such that 2n - 5 is a prime.
 mul $0,4
-sub $0,10
+sub $0,6
 div $0,6
-add $0,1
