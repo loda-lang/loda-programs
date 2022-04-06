@@ -5,10 +5,10 @@
 mov $1,2
 lpb $0
   mov $2,$0
-  sub $0,1
   mul $2,2
   add $2,1
   seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

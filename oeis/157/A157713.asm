@@ -2,9 +2,9 @@
 ; Submitted by Jamie Morken(s4)
 ; 1,10,280,12600,776160,60540480,5708102400,630745315200,79894406592000,11408921261337600,1812981305892556800,317271728531197440000,60623305667038033920000,12557684745315021312000000
 
-mov $2,$0
+mov $1,$0
+seq $1,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 add $0,2
 seq $0,1813 ; Quadruple factorial numbers: a(n) = (2n)!/n!.
-seq $2,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-mul $0,$2
+mul $0,$1
 div $0,12

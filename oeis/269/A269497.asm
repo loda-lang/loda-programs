@@ -4,74 +4,73 @@
 mov $3,$0
 mul $0,4
 add $0,2
-mov $1,$0
+mov $2,$0
+add $2,$0
 mul $0,2
-mov $2,$1
-add $2,$1
 mov $1,$0
 sub $1,2
 mul $2,2
 add $2,$1
 lpb $1
-  add $0,$2
   sub $1,1
+  add $0,$2
 lpe
 add $0,16
 mov $6,$3
 lpb $6
-  add $5,$3
   sub $6,1
+  add $5,$3
 lpe
 mov $4,$5
 mov $7,2
 lpb $7
-  add $0,$5
   sub $7,1
+  add $0,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
 mov $4,$5
 mov $7,148
 lpb $7
-  add $0,$5
   sub $7,1
+  add $0,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
 mov $4,$5
 mov $7,60
 lpb $7
-  add $0,$5
   sub $7,1
+  add $0,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
 mov $4,$5
 mov $7,12
 lpb $7
-  add $0,$5
   sub $7,1
+  add $0,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
 mov $7,1
 lpb $7
-  add $0,$5
   sub $7,1
+  add $0,$5
 lpe

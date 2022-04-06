@@ -3,10 +3,10 @@
 
 mov $1,2
 mov $3,$0
+sub $3,4
 mov $4,$0
 sub $0,1
 mov $2,$0
-sub $3,4
 lpb $2
   add $0,2
   trn $1,$2
@@ -18,8 +18,8 @@ lpb $2
   sub $2,1
 lpe
 lpb $4
-  add $1,2
   sub $4,1
+  add $1,2
 lpe
 sub $1,1
 mov $0,$1
