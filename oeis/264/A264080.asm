@@ -6,11 +6,11 @@ mov $1,-1
 mov $2,1
 mov $3,$0
 lpb $3
-  add $1,$2
+  sub $3,1
   cmp $4,0
+  add $1,$2
   add $2,$4
   add $2,$1
-  sub $3,1
 lpe
 add $1,$2
 mov $0,$1
