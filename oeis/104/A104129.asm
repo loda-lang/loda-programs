@@ -4,9 +4,9 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
-mov $3,$0
-pow $3,$0
-mov $2,$3
+mov $1,$0
+pow $1,$0
+mov $2,$1
 div $2,$0
 add $2,$0
 mov $0,$2

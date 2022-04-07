@@ -4,9 +4,9 @@
 
 mul $0,3
 add $0,1
-mov $2,-1
-pow $2,$0
+mov $1,-1
+pow $1,$0
+add $1,2
 seq $0,4016 ; Theta series of planar hexagonal lattice A_2.
-add $2,2
-mul $0,$2
+mul $0,$1
 div $0,6

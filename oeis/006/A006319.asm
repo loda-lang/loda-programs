@@ -5,32 +5,31 @@
 mov $9,$0
 mov $11,2
 lpb $11
-  mov $0,$9
-  mov $6,0
   sub $11,1
+  mov $0,$9
   add $0,$11
   sub $0,1
   mov $5,$0
+  mov $6,0
   mov $7,2
   lpb $7
-    mov $0,$5
-    mov $3,0
     sub $7,1
+    mov $0,$5
     add $0,$7
     mov $2,$0
+    mov $3,0
     sub $0,1
     mov $4,$0
     lpb $2
-      mov $0,$4
       sub $2,1
+      mov $0,$4
       sub $0,$2
       seq $0,1003 ; Schroeder's second problem (generalized parentheses); also called super-Catalan numbers or little Schroeder numbers.
       add $3,$0
     lpe
     mov $0,$3
-    sub $0,1
     mul $0,2
-    add $0,1
+    sub $0,1
     mov $8,$7
     mul $8,$0
     add $6,$8
@@ -39,9 +38,9 @@ lpb $11
   mul $5,$0
   mov $0,$6
   sub $0,$5
-  mov $12,$11
-  mul $12,$0
-  add $10,$12
+  mov $1,$11
+  mul $1,$0
+  add $10,$1
 lpe
 min $9,1
 mul $9,$0
