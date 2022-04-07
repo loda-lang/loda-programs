@@ -5,9 +5,9 @@
 mov $5,$0
 add $5,2
 lpb $5
-  mov $0,$3
   mov $2,$5
   sub $5,1
+  mov $0,$3
   sub $0,$5
   mov $1,$3
   bin $1,$0

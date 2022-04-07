@@ -5,8 +5,8 @@ sub $2,$0
 div $2,12
 mul $2,2
 mov $4,$0
-sub $4,1
 sub $4,$2
+sub $4,1
 mul $4,2
 div $4,7
 mov $1,$4

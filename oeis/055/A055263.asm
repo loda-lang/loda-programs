@@ -1,14 +1,6 @@
 ; A055263: a(n) = Sum of digits of (n + a(n-1)).
-; Submitted by Jamie Morken(w3)
+; Submitted by Christian Krause
 ; 0,1,3,6,1,6,3,1,9,9,10,3,6,10,6,3,10,9,9,10,3,6,10,6,3,10,9,9,10,12,6,10,6,12,10,9,9,10,12,6,10,6,12,10,9,9,10,12,6,10,6,12,10,9,9,10,12,15,10,15,12,10,9,9,10,12,15,10,15,12,10,9,9,10,12,15,10,15,12,10,9,9,10,12,15,1,15,3,10,18,9,1,12,6,1,15,3,1,18,9
 
 seq $0,55262 ; n + sum of digits of a(n-1).
-lpb $0
-  mov $2,$0
-  mod $2,10
-  mul $2,2
-  div $0,10
-  add $1,$2
-lpe
-mov $0,$1
-div $0,2
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).

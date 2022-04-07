@@ -5,5 +5,5 @@
 add $0,2
 seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
 div $0,12
-sub $2,$0
-mov $0,$2
+sub $1,$0
+mov $0,$1

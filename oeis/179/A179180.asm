@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

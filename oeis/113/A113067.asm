@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,3
   seq $2,98149 ; a(0)=-1, a(1)=-1, a(n)=-3*a(n-1)-a(n-2) for n>1.
-  add $3,$2
+  trn $0,3
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
