@@ -7,9 +7,9 @@ lpb $2
   sub $2,1
   mov $5,1
   lpb $0
+    add $3,1
     mov $4,$0
     sub $0,1
-    add $3,1
     trn $0,$3
     div $4,$3
     mul $4,$5

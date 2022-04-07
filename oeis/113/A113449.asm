@@ -6,9 +6,9 @@ add $0,2
 lpb $0
   sub $0,1
   mov $2,$1
+  add $2,$3
   mov $1,$3
   add $1,4
-  add $2,$3
   add $3,$2
   mul $2,169
   mul $2,$1

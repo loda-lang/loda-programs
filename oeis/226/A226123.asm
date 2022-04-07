@@ -4,6 +4,7 @@
 
 add $0,1
 mov $1,270
+add $1,1
 lpb $1
   mov $2,2
   sub $2,$0
@@ -18,7 +19,7 @@ lpb $1
     mul $0,3
     add $0,1
     sub $2,1
-    mod $4,$3
+    mod $4,1
   lpe
   lpb $3
     div $0,2

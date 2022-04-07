@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,301 ; a(n) = a(n-1)*a(n-2) with a(0) = 1, a(1) = 2; also a(n) = 2^Fibonacci(n).
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,2
