@@ -4,7 +4,7 @@
 
 seq $0,32926 ; Numbers whose set of base-5 digits is {1,2}.
 mov $1,$0
-mod $0,2
 mod $1,5
+mod $0,2
 mul $0,$1
 add $0,1

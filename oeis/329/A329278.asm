@@ -4,10 +4,10 @@
 
 mov $2,2
 lpb $0
-  mov $3,$0
+  mov $1,$0
+  bin $1,2
+  mod $1,$2
   trn $0,$2
-  bin $3,2
-  mod $3,$2
   mul $2,2
 lpe
-mov $0,$3
+mov $0,$1

@@ -5,11 +5,11 @@ mov $2,-1
 mul $2,$0
 bin $2,$0
 pow $2,2
-mov $3,$2
+mov $1,$2
 mul $2,2
-lpb $3
+lpb $1
+  dif $1,4
   div $2,2
-  dif $3,4
 lpe
 mov $0,$2
 div $0,2

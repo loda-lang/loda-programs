@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,52262 ; Partial sums of A014824.
   mul $2,2
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 div $0,2
