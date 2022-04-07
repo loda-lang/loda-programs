@@ -4,11 +4,11 @@
 
 seq $0,246655 ; Prime powers: numbers of the form p^k where p is a prime and k >= 1.
 pow $0,2
-mov $2,$0
+mov $1,$0
 pow $0,2
 bin $0,2
-sub $2,1
-dif $2,2
-mul $2,$0
-mul $2,2
-mov $0,$2
+sub $1,1
+dif $1,2
+mul $1,$0
+mul $1,2
+mov $0,$1

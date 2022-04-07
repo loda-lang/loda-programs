@@ -4,6 +4,8 @@
 
 mov $2,$0
 add $2,1
+sub $0,1
+div $0,2
 seq $0,66205 ; a(n) = Product_{k=1..n} prime(2k-1), where prime(k) is k-th prime.
 mov $1,$0
 gcd $1,$2

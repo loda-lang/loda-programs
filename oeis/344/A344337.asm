@@ -4,7 +4,3 @@
 
 seq $0,74816 ; a(n) = 3^A001221(n) = 3^omega(n).
 pow $0,2
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
