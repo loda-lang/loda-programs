@@ -4,8 +4,8 @@
 mov $2,$0
 lpb $0
   mov $3,$0
-  mul $0,2
   seq $3,182986 ; Zero together with the prime numbers (A000040).
+  mul $0,2
   mov $1,$3
   trn $1,$0
   mov $0,2

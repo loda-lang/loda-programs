@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,145134 ; Expansion of x/((1 - x - x^4)*(1 - x)^5).
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

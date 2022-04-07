@@ -4,13 +4,13 @@
 mov $3,$0
 mul $3,5
 lpb $3
-  mov $2,$0
   div $3,5
   add $3,$0
   sub $3,1
   max $3,1
-  add $4,2
+  add $1,2
+  mov $2,$0
 lpe
-add $4,$2
-mov $0,$4
+add $1,$2
+mov $0,$1
 add $0,4
