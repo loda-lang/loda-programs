@@ -5,7 +5,7 @@
 add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,2
-mov $2,$0
+mov $1,$0
 cmp $0,22
-sub $2,$0
-mov $0,$2
+sub $1,$0
+mov $0,$1

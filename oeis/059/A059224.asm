@@ -10,8 +10,8 @@ lpb $0
   sub $0,1
   mul $2,2
 lpe
-add $1,6
 mul $2,10
+add $1,6
 mul $1,$2
 mul $1,4
 sub $1,5760

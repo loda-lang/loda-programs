@@ -4,6 +4,5 @@
 
 mul $0,4
 add $0,2
-seq $0,5097 ; (Odd primes - 1)/2.
-mul $0,2
-add $0,1
+seq $0,154115 ; Numbers n such that n + 3 is prime.
+add $0,3

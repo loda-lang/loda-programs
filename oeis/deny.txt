@@ -1252,6 +1252,7 @@ A110354: Beyond repair - see A245628 for a better version.
 A110366: Duplicate of A070635.
 A111274: Erroneous enumeration of "congruent and symmetric divisions" of n points on a circle.
 A111410: Erroneous version of A073131.
+A111701: Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
 A111945: Duplicate of A002143.
 A112025: Duplicate of A060512.
 A112089: Erroneous version of A038119.

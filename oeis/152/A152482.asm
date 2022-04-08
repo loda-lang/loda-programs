@@ -10,6 +10,5 @@ seq $0,153043 ; Numbers n > 1 such that 2*n-3 is not a prime.
 mul $0,2
 sub $0,$2
 add $0,$1
-sub $0,3
 mul $0,2
-add $0,2
+sub $0,4

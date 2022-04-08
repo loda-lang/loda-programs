@@ -4,8 +4,8 @@
 
 seq $0,29935 ; a(n) = Sum phi(d)*phi(n/d); d divides n.
 sub $0,3
-mov $1,2
 mov $2,$0
 div $2,2
+mov $1,2
 add $1,$2
 mov $0,$1

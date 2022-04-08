@@ -5,12 +5,11 @@ add $0,3
 mov $2,3
 mul $2,$0
 mul $0,2
+sub $0,38
 add $0,$2
-add $0,4
 div $2,2
 sub $2,2
-mov $3,3
-seq $3,155937 ; Numbers n such that 13*n + 8 is a prime.
-mul $2,$3
+mov $1,3
+seq $1,155937 ; Numbers n such that 13*n + 8 is a prime.
+mul $2,$1
 add $0,$2
-sub $0,42
