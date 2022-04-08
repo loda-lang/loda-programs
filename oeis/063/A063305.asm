@@ -3,6 +3,5 @@
 
 mul $0,9
 trn $0,2
-sub $0,7
 mul $0,2
-add $0,13
+sub $0,1

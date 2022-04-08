@@ -3,8 +3,8 @@
 
 lpb $0
   sub $0,2
-  mov $2,$0
-  max $2,0
-  seq $2,92323 ; 2^m - 1 appears 2^m times.
-  sub $0,$2
+  mov $1,$0
+  max $1,0
+  seq $1,92323 ; 2^m - 1 appears 2^m times.
+  sub $0,$1
 lpe

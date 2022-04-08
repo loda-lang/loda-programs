@@ -5,9 +5,9 @@ mov $2,$0
 lpb $0
   mov $0,$2
   div $0,10
-  mov $1,$2
   mov $3,$2
   cmp $3,0
+  mov $1,$2
   add $1,$3
   sub $1,1
   seq $1,4663 ; Powers of 3 written in base 9.

@@ -8,6 +8,5 @@ seq $0,209726 ; 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subbloc
 add $0,$1
 add $0,$1
 add $0,$1
-sub $0,19
 mul $0,3
-add $0,325
+add $0,268

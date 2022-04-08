@@ -3,18 +3,17 @@
 
 add $0,1
 mov $1,$0
-mov $2,2
 mov $4,$0
 lpb $0
-  mov $5,$4
-  lpb $5
+  mov $2,$4
+  lpb $2
     add $0,90909
     mod $0,2
     mov $3,$1
-    div $1,$2
-    mod $3,$2
+    mod $3,2
     cmp $3,0
-    sub $5,$3
+    div $1,2
+    sub $2,$3
   lpe
   mov $3,$1
   cmp $3,1

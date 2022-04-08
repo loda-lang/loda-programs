@@ -5,10 +5,10 @@
 lpb $0
   mov $2,$0
   sub $0,1
-  trn $0,$3
+  trn $0,$1
   add $2,1
   seq $2,126068 ; Expansion of 1 - x - sqrt(1 - 2*x - 3*x^2) in powers of x.
-  add $3,$2
+  add $1,$2
 lpe
 mov $0,$2
 div $0,2

@@ -7,33 +7,4 @@ seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 sub $0,2
 div $0,2
 add $0,1
-lpb $0
-  mov $3,$0
-lpe
-mov $5,$0
-mov $6,$0
 mul $0,2
-seq $0,178735 ; a(n) = n XOR 9n, where XOR is bitwise XOR.
-add $0,4
-mul $0,2
-sub $0,7
-div $0,8
-mov $3,$5
-add $0,1
-mov $3,1
-mov $0,$6
-div $0,3
-add $0,1
-mov $2,1
-add $0,1
-mul $0,10
-add $0,1
-pow $0,9
-mov $0,$3
-div $0,16
-mov $3,2
-mov $5,$0
-mov $0,$6
-sub $0,1
-mul $0,2
-add $0,2

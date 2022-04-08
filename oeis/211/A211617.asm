@@ -9,11 +9,11 @@ lpb $0
   trn $0,1
   sub $3,2
 lpe
-mov $1,$3
 mov $2,$4
 mul $2,$4
 mul $2,$4
 mov $5,$2
 mul $5,4
+mov $1,$3
 add $1,$5
 mov $0,$1
