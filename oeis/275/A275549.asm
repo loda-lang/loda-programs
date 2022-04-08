@@ -4,9 +4,9 @@
 
 mov $1,$0
 mov $2,$0
-pow $0,$0
 add $2,1
 div $2,2
+pow $0,$0
 pow $1,$2
 add $1,$0
 mov $0,$1

@@ -4,9 +4,9 @@
 lpb $0
   sub $0,2
   mov $1,$0
-  mov $0,1
   max $1,0
   seq $1,52254 ; Partial sums of A050406.
+  mov $0,1
 lpe
 mul $1,9
 mov $0,$1

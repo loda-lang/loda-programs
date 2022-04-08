@@ -4,13 +4,13 @@
 
 mul $0,2
 add $0,1
+mov $1,$0
 mov $2,2
-mov $4,$0
 lpb $2
-  mov $0,$4
   sub $2,1
+  mov $0,$1
   sub $0,$2
-  add $4,$0
+  add $1,$0
   add $0,2
   seq $0,277818 ; Index of the column where n is located in array A277820: a(n) = 1 + A268389(n).
   add $3,$0
