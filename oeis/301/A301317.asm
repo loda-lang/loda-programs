@@ -4,6 +4,6 @@
 
 add $0,1
 mov $1,$0
-seq $0,185387 ; E.g.f. exp(x)+log(1/(1-x)).
 pow $1,3
+seq $0,185387 ; E.g.f. exp(x)+log(1/(1-x)).
 mod $0,$1

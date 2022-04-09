@@ -10,7 +10,6 @@ mov $2,2
 pow $2,$0
 sub $1,$2
 mov $0,$1
-add $0,3
 mul $0,4
-sub $0,4
+add $0,8
 div $0,8

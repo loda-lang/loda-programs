@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,68764 ; Generalized Catalan numbers.
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 add $1,$3

@@ -4,5 +4,4 @@
 
 add $0,1
 seq $0,69484 ; a(n) = prime(n+1)^2 + prime(n)^2.
-mul $0,10
-div $0,20
+div $0,2

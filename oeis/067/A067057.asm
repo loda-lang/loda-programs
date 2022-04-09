@@ -5,13 +5,13 @@
 mov $2,$0
 add $2,8
 mov $3,$0
-seq $0,914 ; Stirling numbers of the first kind: s(n+2, n).
 add $3,$2
 mov $4,$3
+seq $0,914 ; Stirling numbers of the first kind: s(n+2, n).
 lpb $3
+  sub $4,2
   mul $0,2
   mov $1,$0
-  sub $4,2
   mov $3,$4
 lpe
 sub $1,32

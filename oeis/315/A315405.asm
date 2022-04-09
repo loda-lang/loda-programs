@@ -3,8 +3,8 @@
 
 mul $0,5
 mov $1,$0
-add $0,1
 dif $1,2
 trn $1,2
 mod $1,3
+add $0,1
 sub $0,$1

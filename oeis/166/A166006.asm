@@ -5,5 +5,5 @@
 mov $1,$0
 seq $0,302342 ; Cumulative sums of the bits in the binary representation of Pi.
 mul $0,2
-sub $0,$1
 sub $0,1
+sub $0,$1

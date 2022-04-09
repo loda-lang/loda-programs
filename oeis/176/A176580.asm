@@ -4,9 +4,9 @@
 mov $2,$0
 seq $2,93 ; a(n) = floor(n^(3/2)).
 pow $2,2
-mov $1,$2
 mov $3,$0
 mul $3,$0
 mul $3,$0
+mov $1,$2
 add $1,$3
 mov $0,$1

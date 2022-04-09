@@ -12,10 +12,10 @@ mov $2,$0
 sub $2,$1
 sub $1,$2
 mul $1,$0
+mul $1,-1
 pow $2,4
 sub $2,$0
 add $0,$2
-mul $1,-1
 gcd $0,$1
 div $1,$0
 mov $0,$1
