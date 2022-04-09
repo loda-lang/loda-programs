@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,2
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   add $0,$3
   trn $0,1
   seq $0,168013 ; a(n) = Sum of all divisors of all numbers < (n+1)^2.

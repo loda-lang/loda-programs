@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,51866 ; 14-gonal (or tetradecagonal) numbers: a(n) = n*(6*n-5).
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

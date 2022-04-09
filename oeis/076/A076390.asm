@@ -7,10 +7,10 @@ mov $1,1
 mov $3,$0
 mul $3,5
 lpb $3
-  mul $1,$3
   mov $5,$3
   mul $5,2
   sub $5,1
+  mul $1,$3
   mul $2,$5
   add $2,$1
   add $1,$2
