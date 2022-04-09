@@ -5,15 +5,15 @@
 mov $5,$0
 mov $7,$0
 lpb $7
-  mov $0,$5
-  mov $2,0
   sub $7,1
+  mov $0,$5
   sub $0,$7
   mov $1,$0
+  mov $2,0
   mov $3,2
   lpb $3
-    mov $0,$1
     sub $3,1
+    mov $0,$1
     add $0,$3
     trn $0,1
     seq $0,14811 ; a(n) = Sum_{k=1..n-1} ceiling(k^2/n).

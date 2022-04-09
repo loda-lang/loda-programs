@@ -6,13 +6,13 @@ mov $1,5
 mov $3,$0
 add $3,1
 lpb $3
+  sub $3,1
   mov $0,$1
   add $0,1
   seq $0,4164 ; Sum of digits of n^3.
   mov $2,$1
-  add $1,$0
   mul $2,124
-  sub $3,1
+  add $1,$0
 lpe
 mov $0,$2
 div $0,124
