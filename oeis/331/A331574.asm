@@ -5,6 +5,6 @@
 mov $1,$0
 div $0,2
 sub $1,$0
-bin $0,3
 bin $1,3
+bin $0,3
 mul $0,$1

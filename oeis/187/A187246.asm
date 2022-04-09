@@ -8,9 +8,9 @@ lpb $0
   sub $0,1
   add $2,1
   sub $3,$1
-  mul $1,$2
   mul $3,-1
   sub $4,$3
+  mul $1,$2
   sub $1,$4
   trn $3,4
   add $3,$4

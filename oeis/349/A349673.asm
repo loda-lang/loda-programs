@@ -1,16 +1,25 @@
 ; A349673: a(n) is the smallest positive integer m such that the set of numbers {f(k) : 1 <= k <= n} are pairwise distinct modulo m for f(x)=x^3+x.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w3)
 ; 1,3,3,9,9,9,9,9,9,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,243,243,243,243,243,243,243,243,243,243,243,243,243,243,243,243,243,243,243
 
-mov $1,1
-add $0,1
+mov $2,2
+mov $5,1
+add $2,1
 lpb $0
-  sub $0,1
-  div $3,$1
-  mul $3,$1
-  add $1,$3
-  add $1,$3
-  add $2,1
-  mov $3,$2
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    mov $5,3
+  lpe
+  div $0,$2
+  mov $4,$0
+  mul $4,$5
+  add $1,$4
+  mul $5,$2
 lpe
-mov $0,$1
+pow $1,$1
+mov $1,1
+mov $0,$5

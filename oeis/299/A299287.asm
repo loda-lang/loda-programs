@@ -8,10 +8,10 @@ mul $0,7
 sub $0,$2
 lpb $0
   mul $2,$0
-  gcd $0,3
   sub $2,6
   div $2,8
   add $2,2
+  gcd $0,3
 lpe
 mov $1,$2
 add $1,1

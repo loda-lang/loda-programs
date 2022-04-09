@@ -5,8 +5,7 @@ sub $0,9
 mov $1,$0
 cmp $1,0
 add $0,$1
-add $0,24
 mul $0,8
-sub $0,7
+add $0,185
 div $0,6
 sub $0,17

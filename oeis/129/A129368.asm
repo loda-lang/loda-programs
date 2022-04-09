@@ -4,12 +4,12 @@
 
 mov $3,$0
 div $0,2
-mov $5,$0
-add $5,1
-lpb $5
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
   mov $0,$3
-  sub $5,1
-  sub $0,$5
+  sub $0,$1
   mov $2,$0
   mul $0,2
   bin $0,$2

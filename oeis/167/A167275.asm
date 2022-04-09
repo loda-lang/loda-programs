@@ -7,6 +7,6 @@ lpb $1
   div $0,2
   sub $1,$0
 lpe
-add $0,1
 add $1,1
+add $0,1
 pow $0,$1

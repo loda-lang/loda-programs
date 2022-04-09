@@ -6,8 +6,8 @@ mov $5,$0
 lpb $0
   lpb $1
     mov $2,$0
-    add $0,3
     seq $2,60145 ; a(n) = floor(n/tau) - floor(n/(1 + tau)).
+    add $0,3
     mov $1,$2
     add $1,1
   lpe

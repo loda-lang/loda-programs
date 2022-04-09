@@ -1,8 +1,13 @@
 ; A245235: Repeat 2^(n*(n+1)/2) n+1 times.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jamie Morken(l1)
 ; 1,2,2,8,8,8,64,64,64,64,1024,1024,1024,1024,1024,32768,32768,32768,32768,32768,32768,2097152,2097152,2097152,2097152,2097152,2097152,2097152,268435456,268435456,268435456,268435456,268435456,268435456,268435456,268435456
 
-seq $0,57944 ; Largest triangular number less than or equal to n; write m-th triangular number m+1 times.
-mov $1,2
-pow $1,$0
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+  mov $2,$1
+lpe
+add $2,1
+bin $2,2
+mov $0,2
+pow $0,$2
