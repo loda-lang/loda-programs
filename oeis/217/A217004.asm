@@ -4,9 +4,9 @@
 
 add $0,9
 seq $0,246655 ; Prime powers: numbers of the form p^k where p is a prime and k >= 1.
-mov $2,$0
-mul $2,$0
-add $0,$2
+mov $1,$0
+mul $1,$0
+add $0,$1
 div $0,2
 mul $0,2
 add $0,1
