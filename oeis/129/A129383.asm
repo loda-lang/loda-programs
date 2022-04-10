@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,2
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   add $0,$3
   trn $0,1
   seq $0,129384 ; a(n)=sum{k=0..floor(n/2), C(n-k,floor((n-k)/2))}.

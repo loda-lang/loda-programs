@@ -7,14 +7,14 @@ mov $2,$0
 lpb $0
   mov $3,$2
   lpb $2,2
-    dif $3,$0
     add $9,1
+    dif $3,$0
     lpb $3
       cmp $3,$2
-      add $2,5
       cmp $3,0
       mul $3,$0
       sub $3,1
+      add $2,5
     lpe
   lpe
   sub $0,1

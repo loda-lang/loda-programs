@@ -8,8 +8,7 @@ mul $3,3
 lpb $3
   sub $3,1
   add $6,$2
-  cmp $1,1
-  add $1,$6
+  mov $1,$6
   add $1,$2
   div $1,3
   mul $1,4

@@ -7,17 +7,12 @@ add $0,1
 lpb $0
   mov $3,$0
   mul $0,2
-  pow $3,$3
   div $0,4
   mod $3,2
   mul $3,$2
   add $1,$3
   mul $2,10
 lpe
-mul $1,5
-sub $2,$1
-mul $1,2
-mul $2,7
-sub $2,$1
 mov $0,$1
+mul $0,10
 div $0,9

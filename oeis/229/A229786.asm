@@ -1,30 +1,6 @@
 ; A229786: Primes modulo 23.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 2,3,5,7,11,13,17,19,0,6,8,14,18,20,1,7,13,15,21,2,4,10,14,20,5,9,11,15,17,21,12,16,22,1,11,13,19,2,6,12,18,20,7,9,13,15,4,16,20,22,3,9,11,21,4,10,16,18,1,5,7,17,8,12,14,18,9,15,2,4,8,14,22,5,11,15,21,6,10,18,5,7,17,19,2,6,12,20,1,3,7,19,4,8,16,20,3,15,17,12
 
-mul $0,2
-max $0,1
-mov $5,$0
-sub $0,4
-div $0,2
-mov $2,6
-mov $3,$0
-pow $3,5
-mov $4,$0
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,2
-  sub $3,$0
-lpe
-pow $2,$0
-mov $0,$2
-mul $0,2
-sub $0,5
-div $0,4
-sub $0,$4
-mul $0,2
-add $0,$5
-add $0,1
+seq $0,40 ; The prime numbers.
 mod $0,23
