@@ -1,8 +1,8 @@
 ; A343974: Even numbers k such that the two sets of primes in the Goldbach representation of k and k+2 as the sum of two odd primes do not intersect.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w4)
 ; 38,68,80,98,122,128,146,158,164,188,206,212,218,224,248,278,290,302,308,326,332,338,344,368,374,380,398,410,416,428,440,458,476,488,500,518,530,536,542,548,554,578,584,608,614,626,632,638,668,674,692,698,710
 
-mov $1,4
+mov $1,10
 mov $2,$0
 add $2,2
 pow $2,2

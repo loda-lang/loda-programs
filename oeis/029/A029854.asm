@@ -9,9 +9,9 @@ lpb $3
   add $0,$3
   sub $0,1
   mov $2,$0
-  bin $0,$3
   max $2,0
   seq $2,1043 ; Numbers that are the sum of 2 successive primes.
+  bin $0,$3
   gcd $1,$2
 lpe
 mov $0,$1

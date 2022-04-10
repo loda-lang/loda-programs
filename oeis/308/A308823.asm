@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,5
   seq $2,26811 ; Number of partitions of n in which the greatest part is 5.
+  sub $0,5
   add $1,$2
 lpe
 mov $0,$1

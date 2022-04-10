@@ -1,14 +1,24 @@
 ; A118802: Row squared sums of triangle A118801: a(n) = Sum_{k=0..n} A118801(n,k)^2.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,2,11,76,565,4406,35455,291264,2427113,20436202,173435251,1481052596,12711044125,109543953182,947334302951,8216780507176,71450654876625,622692860482514,5437356743763163,47561030194674972,416661242790844421
 
-lpb $0
-  mov $2,$0
-  seq $2,63395 ; T(2n,n) with T(n,m) as in A063394.
-  sub $2,1
-  sub $0,1
-  add $1,$2
+mov $1,1
+mov $3,$0
+mov $4,1
+lpb $3
+  sub $3,1
+  mul $1,$3
+  mul $1,4
+  add $5,$4
+  add $5,1
+  div $1,$5
+  div $2,2
+  add $2,$1
+  mul $2,2
+  add $2,1
+  add $4,2
+  mul $1,$4
 lpe
-mov $0,$1
-div $0,2
+mul $2,$0
+mov $0,$2
 add $0,1

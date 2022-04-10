@@ -4,6 +4,6 @@
 
 add $0,1
 mov $1,$0
-seq $0,45755 ; 8-fold factorials: a(n) = Product_{k=0..n-1} (8*k+1).
 mul $1,2
+seq $0,45755 ; 8-fold factorials: a(n) = Product_{k=0..n-1} (8*k+1).
 mod $0,$1

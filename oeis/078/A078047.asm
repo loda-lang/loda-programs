@@ -11,8 +11,8 @@ lpb $0
   dif $2,-1
   sub $2,$1
   add $3,$1
-  mul $1,2
   add $3,$2
+  mul $1,2
 lpe
 mov $0,$3
 div $0,2

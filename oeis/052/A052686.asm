@@ -4,12 +4,12 @@
 
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 div $0,2
+mov $1,$0
 mov $2,$0
 mod $2,4
-mov $3,$0
 lpb $2
   mov $2,1
-  mov $3,12
+  mov $1,12
 lpe
-mov $0,$3
+mov $0,$1
 mul $0,2

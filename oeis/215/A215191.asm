@@ -6,12 +6,10 @@ seq $0,213834 ; Antidiagonal sums of the convolution array A213833.
 sub $0,2
 add $2,$3
 sub $3,$2
-div $2,2
 sub $3,$0
-mov $0,1
-mov $1,1
+div $2,2
 add $2,$3
-mul $0,$2
-sub $1,$0
+mov $1,1
+sub $1,$2
 mul $1,2
 mov $0,$1

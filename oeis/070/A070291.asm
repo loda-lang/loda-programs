@@ -7,10 +7,10 @@ add $1,$0
 mov $0,1
 seq $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
 mov $2,$0
-mul $0,91
 gcd $2,$1
-mul $1,$0
 pow $2,2
+mul $0,91
+mul $1,$0
 div $1,$2
 mov $0,$1
 div $0,91

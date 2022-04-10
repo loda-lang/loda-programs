@@ -6,6 +6,4 @@ add $0,2
 seq $0,40976 ; a(n) = prime(n) - 2.
 seq $0,120487 ; Denominator of 1^n/n + 2^n/(n-1) + 3^n/(n-2) + ... + (n-1)^n/2 + n^n/1.
 div $0,2
-sub $0,6
 mul $0,2
-add $0,12

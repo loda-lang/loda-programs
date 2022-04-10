@@ -4,11 +4,10 @@
 mov $1,$0
 seq $1,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
 mov $3,16
-mov $5,6
 lpb $3
+  mov $4,$1
   add $0,1
   sub $0,$1
-  mov $4,$1
   pow $1,3
   mov $2,$4
   cmp $2,0
@@ -16,6 +15,4 @@ lpb $3
   add $4,$2
   div $0,$4
 lpe
-mul $0,$5
-div $0,6
 add $0,1

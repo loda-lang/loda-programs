@@ -7,8 +7,8 @@ add $1,$0
 mov $2,$0
 lpb $2
   mul $1,$0
-  mov $0,2
   add $1,1
+  mov $0,2
   sub $2,1
   max $2,1
 lpe

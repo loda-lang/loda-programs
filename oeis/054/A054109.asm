@@ -4,9 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,54108 ; a(n)=(-1)^(n+1)*sum(k=0,n+1,(-1)^k*binomial(2*k,k)).
-add $1,2
+seq $0,54108 ; a(n) = (-1)^(n+1)*sum(k=0,n+1,(-1)^k*binomial(2*k,k)).
 add $1,$0
-sub $1,2
 mov $0,$1
 div $0,2
