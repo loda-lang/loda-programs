@@ -1,7 +1,12 @@
 ; A278617: Number of distinct odd primes less than or equal to 2n-3 that appear as a part in the partitions of 2n into two parts.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,0,1,2,3,3,4,5,5,6,7,7,8,8,8,9,10,10,10,11,11,12,13,13,14,14,14,15,15,15,16,17,17,17,18,18,19,20,20,20,21,21,22,22,22,23,23,23,23,24,24,25,26,26,27,28,28,29,29,29,29,29,29,29,30,30,31,31,31
 
+sub $0,1
 mul $0,2
-trn $0,2
-seq $0,82460 ; a(n) = pi(n) - a(n - 1) = A000720(n) - a(n - 1).
+max $0,0
+seq $0,33270 ; Number of odd primes <= n.
+mov $2,2
+mul $2,$0
+mov $0,$2
+div $0,2
