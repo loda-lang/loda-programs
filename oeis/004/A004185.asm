@@ -6,20 +6,20 @@ mov $1,$0
 mov $0,0
 mov $2,9
 lpb $2
-  mov $3,$1
   mov $6,10
   sub $6,$2
+  mov $3,$1
   lpb $3
     mov $5,$3
-    div $3,10
     mod $5,10
     cmp $5,$6
+    div $3,10
     add $4,$5
   lpe
   lpb $4
+    sub $4,1
     mul $0,10
     add $0,$6
-    sub $4,1
   lpe
   sub $2,1
 lpe
