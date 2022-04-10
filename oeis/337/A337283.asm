@@ -4,8 +4,8 @@
 mov $3,$0
 mov $4,$0
 lpb $4
-  mov $0,$3
   sub $4,1
+  mov $0,$3
   sub $0,$4
   mov $2,$0
   seq $0,85697 ; a(n) = T(n)^2, where T(n) = A000073(n) is the n-th tribonacci number.

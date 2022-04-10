@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,1591 ; Pentanacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5), a(0)=a(1)=a(2)=a(3)=0, a(4)=1.
   pow $2,2
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

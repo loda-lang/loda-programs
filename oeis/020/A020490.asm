@@ -2,11 +2,11 @@
 ; Submitted by Jon Maiga
 ; 1,2,3,4,6,8,10,12,18,24,30
 
-mov $2,$0
 mov $3,$0
+mov $2,$0
 lpb $2
-  mov $0,$3
   sub $2,1
+  mov $0,$3
   sub $0,$2
   div $0,4
   mov $1,$0

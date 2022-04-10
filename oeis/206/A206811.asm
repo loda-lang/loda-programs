@@ -4,9 +4,9 @@
 
 mul $0,2
 add $0,1
-mov $1,1
 mov $2,$0
 seq $0,1753 ; Expansion of 1/((1+x)*(1-x)^6).
+mov $1,1
 add $1,$2
 add $1,4
 mul $1,$0

@@ -8,11 +8,11 @@ mov $3,$0
 trn $3,1
 mov $4,1
 add $4,$3
-mod $3,2
 div $4,3
-mov $5,$4
-mul $5,2
-add $5,$3
-sub $2,$5
+mod $3,2
+mov $1,$4
+mul $1,2
+add $1,$3
+sub $2,$1
 mov $0,$2
 add $0,4

@@ -3,9 +3,8 @@
 
 mov $1,7
 pow $1,$0
-add $1,3
+sub $1,1
 mov $2,5
 pow $2,$0
 add $1,$2
-sub $1,4
 mov $0,$1

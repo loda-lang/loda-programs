@@ -4,13 +4,13 @@
 mov $1,$0
 gcd $1,2
 lpb $1
-  trn $0,2
   mov $1,1
+  trn $0,2
   mov $2,2
   add $2,$0
 lpe
-mov $0,10
 add $3,$2
+mov $0,10
 pow $0,$3
 mul $0,2
 div $0,198

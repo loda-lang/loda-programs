@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,$0
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   sub $0,$3
   seq $0,204544 ; Fractional part of (3/2)^n without the decimal point.
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).

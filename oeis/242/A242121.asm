@@ -1,30 +1,6 @@
 ; A242121: Primes modulo 21.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 2,3,5,7,11,13,17,19,2,8,10,16,20,1,5,11,17,19,4,8,10,16,20,5,13,17,19,2,4,8,1,5,11,13,2,4,10,16,20,5,11,13,2,4,8,10,1,13,17,19,2,8,10,20,5,11,17,19,4,8,10,20,13,17,19,2,16,1,11,13,17,2,10,16,1,5,11,19,2,10,20,1,11,13,19,2,8,16,20,1,5,17,4,8,16,20,5,17,19,16
 
-mul $0,2
-max $0,1
-mov $5,$0
-sub $0,4
-div $0,2
-mov $2,6
-mov $3,$0
-pow $3,5
-mov $4,$0
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,2
-  sub $3,$0
-lpe
-pow $2,$0
-mov $0,$2
-mul $0,2
-sub $0,5
-div $0,4
-sub $0,$4
-mul $0,2
-add $0,$5
-add $0,1
+seq $0,40 ; The prime numbers.
 mod $0,21

@@ -5,9 +5,9 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,8645 ; Molien series of 6 X 6 upper triangular matrices over GF( 2 ).
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-div $3,2
-mov $0,$3
+div $1,2
+mov $0,$1

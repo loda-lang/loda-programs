@@ -8,6 +8,5 @@ sub $1,$0
 mul $0,2
 bin $0,3
 add $0,$1
-sub $0,4
 mul $0,6
-add $0,15
+sub $0,9

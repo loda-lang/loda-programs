@@ -3,10 +3,10 @@
 
 mov $2,2
 mul $2,$0
+add $2,2
 mov $5,$0
 gcd $0,1
 add $0,22
-add $2,2
 mov $4,158
 mul $4,$2
 div $4,$0

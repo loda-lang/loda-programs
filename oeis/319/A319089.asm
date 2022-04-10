@@ -4,21 +4,26 @@
 
 cmp $4,$4
 lpb $0
-  mov $3,$0
+  mov $3,$2
+  mul $0,2
   div $0,877
+  bin $2,42
   mul $0,2
   add $2,$0
   mov $4,$0
   sub $2,1
   mov $4,1
   cmp $1,$3
-  sub $2,4
-  mov $0,4
+  add $3,$1
+  mul $4,2
+  mov $0,2
+  pow $4,16
   mul $0,$2
   mov $3,$4
   mov $3,3
   mul $0,2
   mod $2,2
+  mul $4,2
 lpe
 gcd $0,$3
 max $0,0
