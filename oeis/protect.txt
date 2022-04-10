@@ -1,7 +1,6 @@
 A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1->12, 2->1, take limit; or, start with S(0)=2, S(1)=1, and for n>1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 A006519: Highest power of 2 dividing n.
-A006577: Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
