@@ -3,26 +3,26 @@
 
 add $0,1
 mov $1,1
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
-  mov $5,$4
   mov $6,0
+  mov $5,$4
   lpb $5
     mov $6,8
-    mov $7,$0
     mov $8,$2
     cmp $8,0
     add $2,$8
-    div $0,$2
+    mov $7,$0
     mod $7,$2
     cmp $7,0
+    div $0,$2
     sub $5,$7
   lpe
-  mov $0,$4
   cmp $6,0
   mov $7,$2
   pow $7,$6
+  mov $0,$4
   mul $1,$7
   add $2,1
   mov $7,$4

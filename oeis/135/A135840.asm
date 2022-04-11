@@ -4,7 +4,5 @@
 
 seq $0,143956 ; Triangle read by rows, A000012 * A136521 * A000012; 1<=k<=n.
 seq $0,124356 ; Number of (directed) Hamiltonian cycles on the Moebius ladder graph M_n (for n>=4).
-sub $0,6
-div $0,2
-add $0,5
-div $0,4
+add $0,4
+div $0,8

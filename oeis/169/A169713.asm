@@ -6,59 +6,57 @@ lpb $0
   sub $0,1
   add $1,5
 lpe
-mov $0,4
 add $4,$1
+mov $0,4
 sub $1,2
 add $3,$1
 lpb $3
-  add $2,5
   sub $3,1
+  add $2,5
 lpe
 lpb $2
-  add $0,$4
   sub $2,1
+  add $0,$4
 lpe
 sub $0,3
 mov $5,6
-mov $9,$8
 lpb $5
-  add $0,$9
   sub $5,1
+  add $0,$8
 lpe
 mov $6,$8
 lpb $6
   sub $6,1
-  add $7,$9
+  add $7,$8
 lpe
-mov $6,$8
 mov $9,$7
 mov $7,0
+mov $6,$8
 lpb $6
   sub $6,1
   add $7,$9
 lpe
+mov $9,$7
 mov $5,50
-mov $9,$7
 lpb $5
-  add $0,$9
   sub $5,1
+  add $0,$7
 lpe
-mov $6,$8
 mov $7,0
+mov $6,$8
 lpb $6
   sub $6,1
   add $7,$9
 lpe
-mov $6,$8
 mov $9,$7
 mov $7,0
+mov $6,$8
 lpb $6
   sub $6,1
   add $7,$9
 lpe
 mov $5,120
-mov $9,$7
 lpb $5
-  add $0,$9
   sub $5,1
+  add $0,$7
 lpe

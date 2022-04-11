@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,49039 ; Geometric Connell sequence: 1 odd, 2 even, 4 odd, 8 even, ...
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

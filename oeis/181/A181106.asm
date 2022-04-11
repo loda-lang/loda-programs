@@ -4,6 +4,5 @@
 add $0,1
 pow $0,2
 div $0,4
-sub $0,1
 mul $0,4
-add $0,3
+sub $0,1

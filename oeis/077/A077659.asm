@@ -3,8 +3,8 @@
 
 lpb $0
   sub $0,3
-  add $2,1
-  mul $0,$2
+  add $1,1
+  mul $0,$1
 lpe
 bin $0,2
 mul $0,2

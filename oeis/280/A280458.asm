@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,23896 ; Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

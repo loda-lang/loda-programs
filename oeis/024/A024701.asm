@@ -4,5 +4,4 @@
 
 seq $0,65091 ; Odd primes.
 pow $0,2
-div $0,8
-mul $0,2
+div $0,4

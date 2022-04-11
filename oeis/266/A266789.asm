@@ -3,10 +3,10 @@
 
 mov $1,$0
 lpb $1
-  add $0,3
   sub $1,5
   pow $1,2
   div $1,3
+  add $0,3
 lpe
 trn $0,3
 add $0,1

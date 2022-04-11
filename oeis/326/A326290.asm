@@ -4,8 +4,8 @@
 
 mul $0,2
 trn $0,1
-mov $2,2
-pow $2,$0
+mov $1,2
+pow $1,$0
 div $0,2
 seq $0,155069 ; Expansion of (3 - x - sqrt(1 - 6*x + x^2))/2.
-mul $0,$2
+mul $0,$1

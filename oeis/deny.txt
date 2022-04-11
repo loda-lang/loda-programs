@@ -1497,6 +1497,7 @@ A168002: Duplicate of A079559.
 A168074: Duplicate of A061891.
 A168560: Incorrect duplicate of A019446.
 A168581: Duplicate of A024699.
+A168651: Integers that can be generated with a C/C++ expression that is two or more characters shorter than their decimal representation.
 A169763: Duplicate of A004035.
 A169807: Erroneous version of A005028.
 A169930: Duplicate of A048379.

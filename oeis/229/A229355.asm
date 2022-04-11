@@ -6,9 +6,9 @@ mov $3,2
 pow $3,$0
 mov $1,$3
 add $1,3
-mul $1,$3
 mov $2,3
 pow $2,$0
+mul $1,$3
 add $1,$2
 mov $0,$1
 add $0,7

@@ -7,10 +7,10 @@ lpb $0
   sub $0,$1
   mov $2,$1
 lpe
+mod $2,4
 add $0,1
 pow $0,25
 mul $0,2
-mod $2,4
 mov $1,$2
 mul $1,2
 add $1,12

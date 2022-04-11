@@ -9,13 +9,13 @@ mul $0,$1
 add $0,109
 mov $2,$4
 mul $2,110
-add $0,$2
 mov $3,$4
 mul $3,$4
+add $0,$2
 mov $2,$3
 mul $2,44
-add $0,$2
 mul $3,$4
+add $0,$2
 mov $2,$3
 mul $2,4
 add $0,$2
