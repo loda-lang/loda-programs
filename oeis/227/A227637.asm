@@ -6,10 +6,10 @@ lpb $0
   add $1,$0
   sub $0,1
 lpe
-mov $0,1
-add $6,$1
-add $0,$6
 mov $3,1
+add $6,$1
+mov $0,1
+add $0,$6
 lpb $0
   add $2,$0
   trn $0,3
@@ -31,12 +31,12 @@ mov $1,$4
 add $1,1
 mov $12,$9
 lpb $12
-  add $11,$9
   sub $12,1
+  add $11,$9
 lpe
 mov $13,1
 lpb $13
-  add $1,$11
   sub $13,1
+  add $1,$11
 lpe
 mov $0,$1

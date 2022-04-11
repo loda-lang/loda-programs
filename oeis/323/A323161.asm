@@ -4,10 +4,10 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.
   mov $0,0
-  max $2,0
-  seq $2,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

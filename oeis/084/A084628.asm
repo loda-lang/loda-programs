@@ -3,7 +3,6 @@
 
 add $0,7
 bin $0,4
-div $0,5
-sub $0,6
-div $0,7
+sub $0,30
+div $0,35
 add $0,1

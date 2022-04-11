@@ -7,17 +7,17 @@ lpb $0
   mov $3,$0
   mul $3,2
   lpb $3
+    mov $1,$2
+    cmp $1,0
+    add $2,$1
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    add $0,$2
     mod $4,$2
     cmp $4,0
     cmp $4,0
     mov $5,$2
-    add $2,1
     cmp $5,1
+    add $0,$2
+    add $2,1
     max $4,$5
     sub $3,$4
   lpe

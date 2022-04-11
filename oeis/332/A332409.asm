@@ -8,8 +8,8 @@ mov $2,$0
 seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 lpb $0
   mul $1,$0
+  mod $1,$2
   sub $0,1
   trn $0,1
-  mod $1,$2
 lpe
 mov $0,$1

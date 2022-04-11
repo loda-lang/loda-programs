@@ -6,19 +6,19 @@ mov $6,$0
 mov $8,$0
 add $8,1
 lpb $8
-  mov $0,$6
-  mov $2,0
-  mov $5,0
   sub $8,1
+  mov $2,0
+  mov $4,1
+  mov $5,0
+  mov $0,$6
   sub $0,$8
   mov $1,1
   mov $3,$0
-  mov $4,1
   lpb $3
     mul $1,$3
     sub $3,1
-    mul $1,$3
     add $5,$4
+    mul $1,$3
     div $1,$5
     add $2,$1
     sub $3,1

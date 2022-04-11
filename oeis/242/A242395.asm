@@ -9,8 +9,8 @@ lpb $0
   mov $3,$0
   lpb $3
     div $0,2
-    cmp $6,0
-    add $2,$6
+    cmp $1,0
+    add $2,$1
     mov $5,$2
     add $2,1
     max $4,$5

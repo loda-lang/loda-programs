@@ -3,6 +3,6 @@
 
 pow $0,2
 add $0,2
-mov $2,5
-trn $2,$0
-trn $0,$2
+mov $1,5
+trn $1,$0
+trn $0,$1

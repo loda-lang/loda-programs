@@ -1,27 +1,13 @@
 ; A325299: a(n) = 9 * sigma(n).
-; Submitted by Jamie Morken(w2)
+; Submitted by Christian Krause
 ; 9,27,36,63,54,108,72,135,117,162,108,252,126,216,216,279,162,351,180,378,288,324,216,540,279,378,360,504,270,648,288,567,432,486,432,819,342,540,504,810,378,864,396,756,702,648,432,1116,513,837,648,882,486,1080,648,1080,720,810,540,1512
 
-mov $1,9
-mov $2,2
-add $0,1
 lpb $0
-  mov $3,$0
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-    add $5,1
-  lpe
-  mul $1,$5
+  sub $0,70
 lpe
-mov $0,$1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $0,10
+sub $0,10
+div $0,10
+mul $0,9
+add $0,9

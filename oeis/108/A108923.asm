@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,108922 ; Expansion of 1/((x^8+1)*(x-1)^2).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

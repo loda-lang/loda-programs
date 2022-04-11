@@ -4,8 +4,7 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,134632 ; 5*n^5 + 3*n^3 - 2*n^2. Coefficients and exponents are the prime numbers in decreasing order.
-add $0,2
 mul $0,8
-sub $0,79
+sub $0,63
 div $0,8
 add $0,8

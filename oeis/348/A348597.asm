@@ -5,10 +5,7 @@
 add $0,1
 lpb $0
   sub $0,1
-  sub $2,1
-  add $2,$4
-  pow $2,$1
-  mov $3,$4
+  cmp $2,$4
   sub $3,$2
   pow $3,$1
   mov $4,$3

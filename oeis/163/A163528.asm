@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,163532 ; The change in X-coordinate when moving from the n-1:th to the n-th point in the Peano curve A163334.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

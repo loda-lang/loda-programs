@@ -5,9 +5,9 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   trn $2,1
   seq $2,2144 ; Pythagorean primes: primes of form 4*k + 1.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

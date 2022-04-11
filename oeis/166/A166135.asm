@@ -11,9 +11,9 @@ lpb $0
   mov $2,$4
   add $2,1
   bin $2,$0
-  trn $0,2
   mov $3,$4
   bin $3,$1
+  trn $0,2
   add $1,1
   mul $3,$2
   div $3,$1

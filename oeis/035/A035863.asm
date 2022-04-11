@@ -1,23 +1,19 @@
 ; A035863: Coordination sequence for A_37 lattice.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w4)
 ; 1,1406,494912,77756018,6920161874,398019718826,16094610778352,485262943621094,11394625956532886,215500967075111278,3371762603125563792,44608224481707201954,508174845038478558618
 
 add $0,2
 lpb $0
   mov $2,$0
-  max $4,92
-  div $4,2
-  sub $4,9
   sub $0,2
-  sub $2,3
-  add $2,$4
+  add $2,34
   bin $2,$0
-  mov $3,$4
+  mov $3,37
   bin $3,$1
   add $0,1
   add $1,1
   pow $3,2
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4

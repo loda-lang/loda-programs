@@ -5,9 +5,9 @@
 lpb $0
   mov $2,$0
   lpb $2
+    sub $2,1
     seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
     add $0,32
-    sub $2,1
   lpe
 lpe
 seq $0,40 ; The prime numbers.

@@ -5,7 +5,7 @@ mov $3,$0
 seq $0,265227 ; Nonnegative m for which k*floor(m^2/9) = floor(k*m^2/9), with 2 < k < 9.
 mov $2,$0
 cmp $2,0
+mov $1,$3
+mul $1,3
 add $0,$2
-mov $4,$3
-mul $4,3
-add $0,$4
+add $0,$1

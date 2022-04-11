@@ -8,8 +8,8 @@ bin $0,2
 add $3,1
 lpb $3
   mul $1,$0
-  add $0,1
   mul $2,$3
+  add $0,1
   add $1,$2
   sub $3,1
   max $3,1

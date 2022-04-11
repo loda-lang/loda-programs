@@ -6,12 +6,12 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  sub $0,1
-  mov $2,$3
   mov $4,$0
-  add $4,2
+  add $4,1
   div $4,2
   seq $4,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
+  sub $0,1
+  mov $2,$3
   mul $2,$4
   add $1,$2
 lpe
