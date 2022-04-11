@@ -3,8 +3,8 @@
 
 mov $2,$0
 gcd $2,3
-bin $3,$0
-sub $3,$2
-bin $3,2
-mov $0,$3
+bin $1,$0
+sub $1,$2
+bin $1,2
+mov $0,$1
 mul $0,2

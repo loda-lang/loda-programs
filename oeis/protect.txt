@@ -1,3 +1,6 @@
+A001748: 3 * primes.
+A001749: Primes multiplied by 4.
+A001750: Primes multiplied by 5.
 A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1->12, 2->1, take limit; or, start with S(0)=2, S(1)=1, and for n>1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 A005722: a(n) = (prime(n) - 1)^2.
@@ -5,6 +8,8 @@ A006519: Highest power of 2 dividing n.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
+A014692: a(n) = prime(n) - (n-1).
 A031377: a(n) = prime(3n-2).
 A033633: Primes modulo 19.
 A037168: a(n) = 2*prime(n) - 2.
