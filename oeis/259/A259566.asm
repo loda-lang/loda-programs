@@ -6,12 +6,12 @@ mov $3,$0
 mov $5,$0
 mov $7,$0
 lpb $7
-  mov $0,$3
   sub $7,1
+  mov $0,$3
   sub $0,$7
-  add $0,1
   mov $2,2
   mov $6,11
+  add $0,1
   lpb $0
     mod $2,2
     add $2,$0

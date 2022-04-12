@@ -5,6 +5,5 @@
 mod $0,40
 min $0,36
 seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
-sub $0,8
 mul $0,8
-add $0,1
+sub $0,63

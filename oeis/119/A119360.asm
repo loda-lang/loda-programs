@@ -4,18 +4,18 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,$0
 mov $5,1
+mov $3,$0
 lpb $3
+  mov $6,$2
   cmp $0,$5
   add $1,$5
-  mov $6,$2
   add $2,1
   mul $5,$6
+  mod $5,$4
   mov $6,$0
   cmp $6,0
   sub $3,$6
-  mod $5,$4
 lpe
 mov $0,$1

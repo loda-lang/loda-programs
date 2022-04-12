@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   mul $2,$0
-  sub $0,1
   seq $2,330002 ; Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
+  sub $0,1
   add $1,$2
 lpe
 mul $1,2

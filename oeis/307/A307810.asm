@@ -4,7 +4,3 @@
 
 seq $0,307695 ; Expansion of 1/(sqrt(1-4*x)*sqrt(1-16*x)).
 pow $0,2
-sub $0,25
-div $0,3
-mul $0,3
-add $0,25

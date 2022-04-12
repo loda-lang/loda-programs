@@ -2,9 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,1,1,1,4,1,16,7,6,7,1,10,37,35,37,44,25,20,14,49,8,65,17,8,96,56,61,30,45,49,8,7,123,44,73,9,101,115,128,148,158,82,85,112,156,121,148,34,10
 
-mov $2,$0
+mov $1,$0
+seq $1,40 ; The prime numbers.
 add $0,1
 seq $0,40 ; The prime numbers.
 pow $0,12
-seq $2,40 ; The prime numbers.
-mod $0,$2
+mod $0,$1

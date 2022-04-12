@@ -4,8 +4,8 @@
 add $0,3
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,77943 ; Expansion of 1/(1-2*x+2*x^2-2*x^3).
+  mov $0,0
 lpe
 div $1,4
 mov $0,$1
