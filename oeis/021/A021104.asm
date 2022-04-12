@@ -5,9 +5,9 @@
 add $0,2
 lpb $0
   sub $0,1
-  mul $3,12
   mul $2,2
   add $2,1
+  mul $3,12
   add $3,$1
   mul $1,4
   add $1,$2

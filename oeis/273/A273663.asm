@@ -5,8 +5,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,276950 ; Characteristic function for A273670: 1 if there is at least one maximal digit present in the factorial representation of n (A007623), otherwise 0.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

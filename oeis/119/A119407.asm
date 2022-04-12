@@ -6,31 +6,31 @@ mov $9,$0
 mov $11,$0
 add $11,1
 lpb $11
-  mov $0,$9
-  mov $7,0
   sub $11,1
+  mov $0,$9
   sub $0,$11
   mov $6,$0
+  mov $7,0
   mov $8,$0
   add $8,1
   lpb $8
-    mov $0,$6
+    sub $8,1
     mov $1,0
     mov $4,0
     mov $5,0
-    sub $8,1
+    mov $0,$6
     sub $0,$8
-    add $0,2
     mov $2,1
     mov $3,0
+    add $0,2
     lpb $0
       sub $0,1
       add $5,$1
+      add $5,$2
       mov $1,$3
       sub $3,$4
       mov $4,$2
       mov $2,$3
-      add $5,$4
       mov $3,$5
     lpe
     add $7,$1

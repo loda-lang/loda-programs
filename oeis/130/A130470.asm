@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,341900 ; Partial sums of A005165.
-  add $3,$2
+  sub $0,2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

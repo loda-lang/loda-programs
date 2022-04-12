@@ -15,11 +15,11 @@ lpb $0
   add $3,6
   add $6,2
 lpe
-mul $1,$6
-sub $1,61
 mov $5,$7
 mul $5,2
+mul $1,$6
 add $1,$5
+sub $1,61
 div $1,2
 add $1,4
 mov $2,$4

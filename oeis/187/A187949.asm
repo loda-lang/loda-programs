@@ -6,7 +6,7 @@ mov $1,$0
 add $0,2
 seq $0,188010 ; Positions of 0 in A188009; complement of A101866.
 mul $0,3
+sub $0,8
 div $1,2
 sub $1,1
 sub $0,$1
-sub $0,8

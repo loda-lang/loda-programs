@@ -3,8 +3,8 @@
 
 sub $0,1
 mov $1,$0
-mov $0,3
 trn $1,2
+mov $0,3
 add $0,$1
 lpb $0
   mul $1,$0
