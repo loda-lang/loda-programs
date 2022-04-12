@@ -6,8 +6,8 @@ mov $2,1
 mov $3,$0
 mul $3,4
 lpb $3
-  mul $2,3
   sub $3,2
+  mul $2,3
 lpe
 mov $4,10
 pow $4,$0

@@ -5,7 +5,6 @@ sub $1,$0
 div $0,2
 mul $0,5
 add $1,$0
-add $1,1
 mul $1,2
-add $1,1
+add $1,3
 mov $0,$1

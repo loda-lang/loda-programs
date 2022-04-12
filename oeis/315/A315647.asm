@@ -18,8 +18,8 @@ add $3,3
 add $1,$3
 add $1,1
 lpb $2
-  add $1,4
   sub $2,1
+  add $1,4
 lpe
 sub $1,6
 mov $0,$1

@@ -4,9 +4,8 @@
 
 seq $0,4454 ; Nimsum n + 13.
 mov $1,$0
-sub $0,8
 mod $1,8
 sub $1,511879
 mul $1,2
 sub $0,$1
-sub $0,1023743
+sub $0,1023751

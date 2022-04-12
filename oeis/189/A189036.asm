@@ -7,10 +7,10 @@ add $1,$0
 add $0,1
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
 mov $2,$0
-mul $0,91
 gcd $2,$1
-mul $1,$0
 pow $2,2
+mul $0,91
+mul $1,$0
 div $1,$2
 mov $0,$1
 div $0,91

@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,208881 ; Number of words either empty or beginning with the first letter of the ternary alphabet, where each letter of the alphabet occurs n times.
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 mul $0,3
 add $0,1

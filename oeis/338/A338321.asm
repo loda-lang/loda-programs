@@ -4,8 +4,8 @@
 add $0,3
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,261557 ; a(0) = a(1) = 0; for n>1, a(n) = 2*n - a(n-1) - a(n-2).
+  sub $0,2
   add $1,$2
 lpe
 div $1,2

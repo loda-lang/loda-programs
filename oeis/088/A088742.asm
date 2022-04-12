@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,2
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   add $0,$3
   trn $0,1
   seq $0,106841 ; Numbers m such that m, m+1 and m+2 have odd part of form 4k+1.
