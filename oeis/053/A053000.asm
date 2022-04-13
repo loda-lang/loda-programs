@@ -1,20 +1,6 @@
-; A053000: (Smallest prime > n^2) - n^2.
+; A053000: a(n) = (smallest prime > n^2) - n^2.
+; Submitted by Simon Strandgaard
 ; 2,1,1,2,1,4,1,4,3,2,1,6,5,4,1,2,1,4,7,6,1,2,3,12,1,6,1,4,3,12,7,6,7,2,7,4,1,4,3,2,1,12,13,12,13,2,13,4,5,10,3,8,3,10,1,12,1,2,7,10,7,6,3,20,3,4,1,4,13,22,3,10,5,4,1,14,3,10,5,6,21,2,9,10,1,4,15,4,9,6,1,6,3,14,1,4,5,4,9,2
 
-mov $2,$0
-add $2,2
-mov $5,$0
-mul $5,$0
-lpb $2
-  add $1,1
-  sub $2,1
-  mov $3,$5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,2
-  lpb $3
-    mul $2,$4
-    div $3,4
-  lpe
-  sub $5,1
-lpe
-mov $0,$1
+pow $0,2
+seq $0,13632 ; Difference between n and the next prime greater than n.
