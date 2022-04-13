@@ -9,7 +9,3 @@ lpb $0
   seq $1,5836 ; Numbers whose base 3 representation contains no 2.
 lpe
 mov $0,$1
-mul $0,1764
-sub $0,3528
-div $0,1764
-add $0,2
