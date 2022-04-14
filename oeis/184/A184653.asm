@@ -5,12 +5,10 @@
 add $0,4
 mov $1,16
 mul $1,$0
-add $1,31
 sub $1,$0
 mul $1,2
-div $1,2
-sub $1,7
-div $1,41
+add $1,48
+div $1,82
 mul $0,2
-add $0,$1
 sub $0,7
+add $0,$1
