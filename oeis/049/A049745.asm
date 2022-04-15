@@ -1,7 +1,19 @@
 ; A049745: a(n)=T(n,2), array T as in A049735.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 13,21,25,45,69,97,129,177,221,277,333,401,473,553,633,725,821,933,1041,1153,1273,1405,1541,1685,1829,1993,2145,2313,2477,2661,2845,3041,3241,3433,3657,3869,4085,4317,4545,4809,5049,5297
 
 pow $0,2
 add $0,4
-seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
+mov $3,1
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $4,$0
+  div $4,$3
+  mul $0,-1
+  add $1,$4
+  add $3,2
+lpe
+mov $0,$1
+mul $0,4
+add $0,1

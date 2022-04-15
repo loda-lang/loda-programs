@@ -3,9 +3,9 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   trn $1,1
   seq $1,217402 ; Numbers starting with 9.
+  mov $0,0
 lpe
 mul $1,10
 mov $0,$1
