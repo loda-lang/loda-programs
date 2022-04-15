@@ -1,27 +1,18 @@
 ; A329517: G.f. = (2*x^6 - 3*x^4 - 3*x^3 - 3*x^2 - 2*x - 1)/(x - 1).
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w4)
 ; 1,3,6,9,12,12,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
 
-lpb $0
-  lpb $3
-    mov $1,$2
-    cmp $1,0
-    add $2,$1
-    mov $4,$0
-    mod $4,$2
-    max $4,$5
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $2,1
-    sub $3,$4
-  lpe
-  gcd $3,$2
-  add $3,2
-  mov $5,1
-  sub $0,1
-  mod $2,1
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  div $3,$0
+  trn $2,1
+  add $2,4
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
 lpe
-mov $0,$3
+mov $0,$2
+div $0,2
 add $0,1

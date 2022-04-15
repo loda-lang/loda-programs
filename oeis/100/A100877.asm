@@ -5,6 +5,5 @@
 mul $0,2
 add $0,1
 seq $0,215523 ; Slowest increasing sequence of alternate-parity integers m such that 2m+1 is prime.
-sub $0,2
 mul $0,2
-add $0,5
+add $0,1
