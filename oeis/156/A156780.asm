@@ -10,8 +10,8 @@ lpb $0
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   add $2,$0
   sub $0,1
-  add $3,3
+  add $1,3
 lpe
-mul $2,$3
+mul $2,$1
 mov $0,$2
 div $0,3

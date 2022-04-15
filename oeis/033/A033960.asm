@@ -10,8 +10,7 @@ lpb $3
   sub $0,$3
   add $0,2
   seq $0,204644 ; Number of (n+1) X 2 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
-  mul $0,4
-  div $0,16
+  div $0,4
   sub $0,4
   add $2,$0
 lpe

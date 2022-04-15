@@ -2,27 +2,6 @@
 ; Submitted by Simon Strandgaard
 ; 368,496,752,1008,1520,1776,2288,2544,3056,3824,4080,4848,5360,5616,6128,6896,7664,7920,8688,9200,9456,10224,10736,11504,12528,13040,13296,13808,14064,14576,16368,16880,17648,17904,19184,19440,20208,20976
 
-mul $0,2
-sub $0,6
-div $0,2
-mov $2,8
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,2
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
-lpe
-sub $4,$0
-mov $0,$2
-mul $0,2
-sub $0,5
-div $0,4
-sub $0,$4
-mul $0,2
-add $0,3
-max $0,2
+seq $0,40 ; The prime numbers.
 mul $0,128
 add $0,112

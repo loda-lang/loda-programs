@@ -5,6 +5,7 @@ A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphis
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 A005722: a(n) = (prime(n) - 1)^2.
 A006093: a(n) = prime(n) - 1.
+A006450: Prime-indexed primes: primes with prime subscripts.
 A006519: Highest power of 2 dividing n.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 A007652: Final digit of prime(n).
