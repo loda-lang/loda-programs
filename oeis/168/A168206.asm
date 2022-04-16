@@ -11,5 +11,5 @@ add $0,1
 gcd $0,2
 add $0,3
 pow $0,2
-add $0,$2
 sub $0,16
+add $0,$2

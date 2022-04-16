@@ -1,5 +1,5 @@
 ; A192250: 0-sequence of reduction of central binomial coefficient sequence by x^2 -> x+1.
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(w1)
 ; 1,1,7,27,167,923,5543,32999,200309,1221329,7503033,46301793,286971677,1784658077,11131825877,69611130917,436270168817,2739539507957,17232530582057,108564692241257,684901029237677,4326215549824277,27357682806703397
 
 add $0,1
@@ -8,9 +8,8 @@ lpb $0
   mov $2,2
   mul $2,$0
   bin $2,$0
-  mov $3,$2
-  add $3,$4
-  mov $4,$1
-  add $1,$3
+  add $2,$3
+  add $3,$1
+  mov $1,$2
 lpe
-mov $0,$3
+mov $0,$2

@@ -8,14 +8,14 @@ mov $4,$0
 seq $0,212983 ; Number of (w,x,y) with all terms in {0,...,n} and w<=x+y and x<=y.
 sub $0,$2
 mul $0,2
+mov $1,$4
+mul $1,10
 mov $3,$4
-mov $5,$4
-mul $5,10
-add $0,$5
 mul $3,$4
-mov $5,$3
-mul $5,5
-add $0,$5
+add $0,$1
+mov $1,$3
+mul $1,5
 mul $3,$4
+add $0,$1
 add $0,$3
 add $0,5

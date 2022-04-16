@@ -8,12 +8,9 @@ lpb $0
 lpe
 mov $1,$2
 bin $1,$0
-add $2,$0
-bin $0,$2
-mul $1,8
-bin $2,$0
-mul $2,6
-add $1,$2
+mov $0,$2
+lpb $0
+  mov $0,0
+  mul $1,4
+lpe
 mov $0,$1
-div $0,2
-sub $0,3
