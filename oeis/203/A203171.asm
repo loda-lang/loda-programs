@@ -5,8 +5,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,56571 ; Fourth power of Fibonacci numbers A000045.
+  sub $0,2
   add $1,$2
   mul $1,-1
 lpe

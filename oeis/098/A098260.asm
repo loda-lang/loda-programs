@@ -12,5 +12,5 @@ lpb $0
   add $3,$1
   mov $1,$2
 lpe
+div $3,25
 mov $0,$3
-div $0,25

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,347398 ; Expansion of g.f. Sum_{k>=1} k^k * x^(k^k)/(1 - x^(k^k)).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

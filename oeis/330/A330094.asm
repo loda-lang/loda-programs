@@ -6,14 +6,14 @@ mov $2,$0
 add $2,1
 lpb $2
   add $0,$1
-  mov $4,2
   mov $6,$2
   add $6,1
   mul $6,$0
   add $0,1
+  mov $4,2
   lpb $4
-    mul $0,4
     mov $4,1
+    mul $0,4
     div $6,5
   lpe
   add $5,$6
@@ -23,9 +23,9 @@ lpb $2
     trn $5,$0
   lpe
   lpb $6
+    trn $6,$0
     mov $2,$1
     add $3,$0
-    trn $6,$0
   lpe
   add $0,$3
   div $0,6

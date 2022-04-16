@@ -6,8 +6,8 @@ mov $3,$0
 add $3,1
 mov $4,2
 lpb $4
-  mov $0,$3
   sub $4,1
+  mov $0,$3
   add $0,$4
   trn $0,1
   seq $0,131060 ; 3*A007318 - 2*A000012 as infinite lower triangular matrices.
