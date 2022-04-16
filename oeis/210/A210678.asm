@@ -8,8 +8,7 @@ mov $1,38
 sub $1,$0
 seq $0,22310 ; a(n) = a(n-1) + a(n-2) + 1 for n>1, a(0)=0, a(1)=5.
 mul $1,2
-sub $1,4
+sub $1,78
 add $1,$0
-sub $1,74
 add $1,$2
 mov $0,$1

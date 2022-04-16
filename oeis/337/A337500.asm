@@ -7,7 +7,7 @@ mov $1,$0
 div $0,2
 mov $2,1
 add $2,$0
+bin $1,$2
 mul $0,2
 bin $0,$2
-bin $1,$2
 add $0,$1

@@ -4,8 +4,8 @@
 mov $1,10
 lpb $0
   mov $2,$0
-  div $0,2
   mov $3,$1
+  div $0,2
   mov $1,$2
   sub $1,$0
   mul $1,$3

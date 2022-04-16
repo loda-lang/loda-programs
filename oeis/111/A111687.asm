@@ -5,8 +5,8 @@
 mov $1,8
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,67563 ; Product of n-th prime number and n-th composite number.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

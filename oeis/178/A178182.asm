@@ -3,9 +3,8 @@
 
 add $0,1
 mov $1,4
-mov $2,$0
+mul $1,$0
 sub $0,4
-mul $1,$2
 gcd $0,$1
 div $1,$0
 mov $0,$1

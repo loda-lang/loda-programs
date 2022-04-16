@@ -4,8 +4,8 @@
 
 mov $1,-8
 pow $1,$0
-add $0,2
 mul $1,2
+add $0,2
 mov $2,2
 pow $2,$0
 dif $1,$2
