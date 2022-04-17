@@ -7,9 +7,7 @@ seq $0,5667 ; Numerators of continued fraction convergents to sqrt(10).
 sub $0,117
 div $0,6
 mul $0,9
-add $0,172
-div $0,2
-sub $0,85
-div $0,5
+add $0,2
+div $0,10
 mul $0,2
 add $0,35

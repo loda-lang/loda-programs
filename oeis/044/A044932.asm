@@ -3,7 +3,7 @@
 
 seq $0,44950 ; Runs of odd length in the base 10 representation of n.
 add $2,$0
-mov $3,4
-sub $3,$2
-mul $0,$3
+mov $1,4
+sub $1,$2
+mul $0,$1
 sub $0,2

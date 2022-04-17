@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,82647 ; Number of ways n can be expressed as the sum of d consecutive positive integers where d>0 is a divisor of n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

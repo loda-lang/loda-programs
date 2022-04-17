@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  mov $1,$3
   add $2,1
+  mov $1,$3
   div $1,$2
   add $2,$1
   add $3,$2

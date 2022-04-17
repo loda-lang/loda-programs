@@ -7,10 +7,10 @@ mov $2,1
 mov $3,$0
 lpb $3
   mul $1,$0
-  max $0,3
   gcd $1,$2
   mul $2,$3
   mov $4,$3
+  max $0,3
   sub $3,1
 lpe
 mul $4,$2

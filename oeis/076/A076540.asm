@@ -15,10 +15,10 @@ lpb $5
   div $0,2
   mov $2,$0
   add $2,1
-  mul $4,2
   add $2,$0
   bin $2,$0
   mul $1,$2
+  mul $4,2
   add $4,$1
 lpe
 mov $0,$4

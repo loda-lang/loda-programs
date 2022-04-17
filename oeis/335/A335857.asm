@@ -4,9 +4,9 @@
 
 mul $0,2
 add $0,1
-mov $1,1
 mov $2,$0
 seq $0,107398 ; a(n) = binomial(n+7, 7) * binomial(n+9, 7).
+mov $1,1
 add $1,$2
 add $1,4
 mul $1,$0

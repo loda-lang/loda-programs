@@ -4,10 +4,10 @@
 mov $3,3
 lpb $0
   mov $2,$0
-  seq $2,29907 ; a(n+1) = a(n) + a(n-1) + Fibonacci(n).
+  seq $2,29907 ; a(n+1) = a(n) + a(n-1) + Fibonacci(n), with a(0) = 0 and a(1) = 1.
   mul $3,$0
-  mov $0,0
   add $3,$2
+  mov $0,0
   add $1,$3
 lpe
 mov $0,$1

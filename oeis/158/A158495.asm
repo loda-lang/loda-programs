@@ -5,18 +5,18 @@
 mov $4,$0
 mov $6,2
 lpb $6
+  sub $6,1
   mov $0,$4
   sub $0,1
   mov $1,0
-  mov $2,$4
   mov $3,$0
-  sub $6,1
+  mov $2,$4
   lpb $2
-    mov $0,$3
     sub $2,1
+    mul $5,$1
+    mov $0,$3
     sub $0,$2
     seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-    mul $5,$1
     mul $1,2
     add $1,$0
   lpe

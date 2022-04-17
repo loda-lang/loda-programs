@@ -4,21 +4,20 @@
 
 mov $4,$0
 sub $4,$0
-add $0,2
-mov $2,1
 mov $3,$0
-add $3,1
+add $3,3
+add $0,2
 lpb $0
-  sub $0,$2
+  sub $0,1
   add $1,1
   sub $4,$3
-  add $5,$4
-  gcd $5,$0
-  div $5,$0
-  lpb $5
+  add $2,$4
+  gcd $2,$0
+  div $2,$0
+  lpb $2
+    sub $2,1
     mov $0,0
-    sub $5,1
   lpe
-  trn $5,6
+  trn $2,6
 lpe
 mov $0,$1
