@@ -6,8 +6,8 @@ add $0,1
 pow $0,2
 lpb $0
   div $0,7
-  add $2,2
-  mul $0,$2
+  add $1,2
+  mul $0,$1
   add $0,3
 lpe
 div $0,2

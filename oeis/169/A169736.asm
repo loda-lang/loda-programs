@@ -6,19 +6,19 @@ mov $2,$0
 mov $3,$0
 mov $0,4
 lpb $2
-  add $0,5
-  add $4,$2
   mov $5,1
   add $5,$1
+  add $0,5
   trn $1,2
+  add $4,$2
   sub $4,10
   lpb $4
     trn $4,$3
     trn $5,$0
   lpe
   lpb $5
-    add $1,$0
     trn $5,$3
+    add $1,$0
   lpe
   mov $2,$5
 lpe

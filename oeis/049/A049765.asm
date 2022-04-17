@@ -5,13 +5,13 @@
 lpb $0
   add $2,1
   mov $4,$0
+  add $4,1
   sub $0,1
   sub $0,$2
-  add $4,1
 lpe
+mov $1,$0
+cmp $1,0
 mov $3,$0
-mov $5,$0
-cmp $5,0
-add $3,$5
+add $3,$1
 mod $4,$3
 add $0,$4

@@ -5,16 +5,16 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   trn $0,1
   add $0,1
   seq $0,960 ; Flavius Josephus's sieve: Start with the natural numbers; at the k-th sieving step, remove every (k+1)-st term of the sequence remaining after the (k-1)-st sieving step; iterate.
   div $0,2
-  mov $5,$4
-  mul $5,$0
-  add $3,$5
+  mov $1,$4
+  mul $1,$0
+  add $3,$1
 lpe
 min $2,1
 mul $2,$0

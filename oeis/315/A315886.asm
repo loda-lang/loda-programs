@@ -8,10 +8,9 @@ trn $1,2
 add $1,$0
 add $0,$1
 sub $0,3
-mov $2,6
 lpb $0
   sub $0,1
-  trn $0,$2
+  trn $0,6
   add $1,4
 lpe
 mov $0,$1

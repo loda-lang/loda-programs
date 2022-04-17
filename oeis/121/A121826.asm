@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

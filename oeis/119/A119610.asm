@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $0,5
   seq $2,5010 ; a(n) = 9*2^n.
+  trn $0,5
   add $1,$2
 lpe
 div $1,18

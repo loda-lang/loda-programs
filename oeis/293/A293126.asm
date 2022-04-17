@@ -9,8 +9,8 @@ lpb $0
   add $1,$2
   add $2,$3
   add $2,$1
-  add $1,1
   mul $3,4
+  add $1,1
   add $2,$3
   add $3,$2
 lpe

@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  mod $0,1
   seq $2,56169 ; Number of unitary prime divisors of n.
   mov $3,$2
   min $3,1
+  mod $0,1
   add $1,$3
   add $1,3
 lpe
