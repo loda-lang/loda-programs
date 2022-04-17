@@ -7,9 +7,9 @@ pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1
-  add $1,1
   seq $3,321512 ; Characteristic function of the reverse in the shuffle (perfect faro shuffle with cut): 1 if the sequence of shuffles of n cards contains the reverse of the original order of cards, 0 if not.
   sub $0,$3
+  add $1,1
   sub $2,$0
 lpe
 mov $0,$1

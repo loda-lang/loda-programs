@@ -2,14 +2,14 @@
 ; Submitted by Christian Krause
 ; 0,1,3,4,5,9,11,12,14,15,16,20
 
+mov $1,$0
 mov $6,$0
-mov $8,$0
 lpb $6
-  mov $0,$8
   sub $6,1
+  mov $2,1
+  mov $0,$1
   sub $0,$6
   add $0,1
-  mov $2,1
   lpb $0
     mov $3,$0
     lpb $3
@@ -18,8 +18,8 @@ lpb $6
       cmp $4,0
       cmp $4,0
       mov $5,$2
-      add $2,1
       cmp $5,1
+      add $2,1
       max $4,$5
       sub $3,$4
     lpe

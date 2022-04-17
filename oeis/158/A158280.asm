@@ -1,9 +1,7 @@
 ; A158280: Octosection: A145511(8n+4) or A145501(8n+4).
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w1)
 ; 7,21,21,21,42,21,21,63,21,21,63,21,42,70,21,21,63,63,21,63,21,21,126,21,42,63,21,63,63,21,21,126,63,21,63,21,21,126,63,21,105,21,63,63,21,63,63,63,21,126,21,21,189,21,21,63,21,63,126,63,42,63,70,21,63,21,63,210,21,21
 
 mul $0,2
-mov $1,$0
-seq $1,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
-mov $0,$1
+seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
 mul $0,7

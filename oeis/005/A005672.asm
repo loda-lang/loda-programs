@@ -1,26 +1,20 @@
 ; A005672: a(n) = Fibonacci(n+1) - 2^floor(n/2).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 0,0,0,1,1,4,5,13,18,39,57,112,169,313,482,859,1341,2328,3669,6253,9922,16687,26609,44320,70929,117297,188226,309619,497845,815656,1313501,2145541
 
 mov $1,1
 lpb $0
-  mov $3,3
-  lpb $3
-    add $2,1
-    sub $2,$3
-    cmp $4,3
-    add $4,$2
-    cmp $4,0
-    sub $3,$4
-    add $7,$1
-  lpe
   sub $0,1
-  add $2,1
-  mul $1,$2
-  mul $7,$5
-  mov $5,-1
-  sub $6,$7
-  add $7,$6
+  sub $3,$4
+  mov $5,$1
+  mov $6,$4
+  add $1,$3
+  add $2,$3
+  mov $3,$4
+  mov $4,$2
+  add $5,$2
+  mov $2,$3
+  mul $2,2
+  mov $3,$5
 lpe
 mov $0,$6
-div $0,2

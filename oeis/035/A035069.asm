@@ -1,17 +1,18 @@
 ; A035069: a(n) is root of square starting with digit 2: first term of runs.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w4)
 ; 5,15,45,142,448,1415,4473,14143,44722,141422,447214,1414214,4472136,14142136,44721360,141421357,447213596,1414213563,4472135955,14142135624,44721359550,141421356238,447213595500,1414213562374
 
 mov $2,$0
-add $2,1
 mov $0,10
 pow $0,$2
+mul $0,5
 mov $1,$0
-mul $1,2
 lpb $0
   mov $2,$1
   div $2,$0
   add $0,$2
+  mov $3,$0
   div $0,2
 lpe
+mov $0,$3
 add $0,1

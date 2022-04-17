@@ -5,8 +5,8 @@ mov $4,$0
 add $0,2
 mov $2,14
 add $2,$0
-mov $1,$2
 mov $3,$2
 bin $3,$4
+mov $1,$2
 mul $1,$3
 mov $0,$1

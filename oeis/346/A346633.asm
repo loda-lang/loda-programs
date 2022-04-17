@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,102393 ; A wicked evil sequence.
   mov $3,$2
   min $3,1
+  div $0,2
   add $1,$3
 lpe
 mov $0,$1

@@ -11,8 +11,8 @@ lpb $0
   add $1,1
   add $2,$1
 lpe
-mov $0,$1
 mul $2,2
+mov $0,$1
 add $0,$2
 mul $0,2
 add $0,17

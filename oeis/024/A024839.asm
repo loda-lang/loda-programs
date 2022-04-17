@@ -4,11 +4,8 @@
 
 add $0,1
 mul $0,2
-mov $1,-1
-pow $1,$0
-mul $1,-1
 seq $0,24832 ; Least m such that if r and s in {Pi/2 - atn(h): h = 1,2,...,n} satisfy r < s, then r < k/m < s for some integer k.
-add $0,$1
+add $0,1
 div $0,2
 mul $0,4
-add $0,1
+sub $0,3

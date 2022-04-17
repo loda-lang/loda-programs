@@ -5,10 +5,10 @@
 mov $3,3
 lpb $0
   mov $2,$0
-  div $0,2
   mul $2,2
   mod $2,4
   mul $2,$3
+  div $0,2
   add $1,$2
   add $1,2
   mul $1,2

@@ -7,12 +7,12 @@ lpb $0
   mov $4,$0
   lpb $0
     mov $2,$0
-    mod $0,6
     mod $2,10
-    add $5,$4
+    mod $0,6
+    add $1,$4
   lpe
+  add $3,$1
   div $0,10
-  add $3,$5
   lpb $2
     trn $2,4
     sub $3,1

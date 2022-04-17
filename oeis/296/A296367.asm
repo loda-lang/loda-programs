@@ -10,13 +10,13 @@ div $1,12
 mul $1,4
 mov $2,$4
 mul $2,16
-add $1,$2
 mov $3,$4
 mul $3,$4
+add $1,$2
 mov $2,$3
 mul $2,22
-add $1,$2
 mul $3,$4
+add $1,$2
 mov $2,$3
 mul $2,10
 add $1,$2
