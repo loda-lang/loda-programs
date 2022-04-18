@@ -4,17 +4,16 @@
 
 add $0,1
 mov $2,1
-mov $3,$0
-mov $4,$0
 mov $5,1
+mov $3,$0
 lpb $3
   mul $5,$2
-  mov $2,2
-  mov $6,$0
-  cmp $6,1
-  cmp $6,0
-  sub $3,$6
-  mod $5,$4
+  mod $5,$0
+  mov $4,$0
+  cmp $4,1
+  cmp $4,0
   max $1,$5
+  mov $2,2
+  sub $3,$4
 lpe
 mov $0,$1

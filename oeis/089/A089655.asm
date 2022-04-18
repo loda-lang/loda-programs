@@ -7,8 +7,8 @@ lpb $0
   pow $0,2
   trn $0,2
   seq $0,336551 ; a(n) = A003557(n) - 1.
-  mov $2,$0
-  mov $0,$1
+  mov $1,$0
+  mov $0,0
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

@@ -4,11 +4,11 @@
 
 mov $2,$0
 add $2,20
-mov $3,$0
-lpb $3
+mov $1,$0
+lpb $1
+  sub $1,1
   mov $0,$2
-  sub $3,1
-  sub $0,$3
+  sub $0,$1
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $2,$0
 lpe

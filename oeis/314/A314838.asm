@@ -8,6 +8,6 @@ mov $1,7
 add $1,$0
 mov $0,$1
 div $1,7
-add $1,$0
 sub $1,3
+add $1,$0
 mov $0,$1

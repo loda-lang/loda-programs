@@ -9,10 +9,10 @@ lpb $0
     lpb $0
       add $2,2
       sub $0,$2
-      mov $4,$0
-      cmp $4,0
+      mov $1,$0
+      cmp $1,0
     lpe
-    sub $3,$4
+    sub $3,$1
   lpe
   sub $0,1
   add $2,1

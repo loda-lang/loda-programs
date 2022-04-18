@@ -10,9 +10,9 @@ lpb $0
   mov $2,$3
   add $2,$1
   add $3,$5
-  mov $1,$3
   add $4,$2
   add $5,$4
+  mov $1,$3
   mov $3,$5
   mov $5,$4
 lpe
