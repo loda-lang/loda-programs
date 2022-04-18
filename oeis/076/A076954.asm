@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,307539 ; Heinz numbers of square integer partitions, where the Heinz number of an integer partition (y_1,...,y_k) is prime(y_1)*...*prime(y_k).
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

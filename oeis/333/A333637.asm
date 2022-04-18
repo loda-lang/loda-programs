@@ -4,13 +4,13 @@
 mov $9,$0
 mov $11,$0
 lpb $11
-  mov $0,$9
   sub $11,1
+  mov $6,2
+  mov $0,$9
   sub $0,$11
   mov $1,$0
   mov $3,2
   mul $3,$0
-  mov $6,2
   lpb $3,2
     add $3,1
     add $3,$1

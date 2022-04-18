@@ -1,7 +1,9 @@
 ; A068995: Integer parts of the square roots of the schizophrenic numbers (A014824).
-; Submitted by Jamie Morken(w4)
+; Submitted by Christian Krause
 ; 1,3,11,35,111,351,1111,3513,11111,35136,111111,351364,1111111,3513641,11111111,35136418,111111111,351364184,1111111111,3513641844,11111111111,35136418446,111111111111,351364184463,1111111111111
 
-add $0,1
-seq $0,49416 ; Largest number whose square has n digits.
+add $0,2
+mov $1,$0
+seq $1,17934 ; Powers of sqrt(10) rounded down.
+mov $0,$1
 div $0,9

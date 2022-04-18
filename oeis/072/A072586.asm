@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,295316 ; a(n) = 1 if there are no even exponents in the prime factorization of n, 0 otherwise.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

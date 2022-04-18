@@ -4,6 +4,5 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,51 ; a(n) = 2^n + 1.
-sub $0,9
 mul $0,2
-add $0,16
+sub $0,2

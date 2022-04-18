@@ -5,7 +5,7 @@
 mov $1,$0
 add $1,1
 add $1,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $1,56 ; Order of the group SL(2,Z_n).
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,$1
 div $0,6

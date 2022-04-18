@@ -3,10 +3,10 @@
 
 pow $0,2
 mul $0,10
+mov $1,9194
 mov $2,$0
 add $2,$0
 mov $0,9194
-mov $1,9194
 lpb $0
   mov $0,$2
   trn $0,1
