@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,59377 ; Jordan function J_4(n).
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

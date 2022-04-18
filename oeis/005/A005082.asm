@@ -6,19 +6,19 @@ add $0,1
 mov $2,2
 mov $3,$0
 lpb $3
-  add $2,1
   mov $4,$3
+  add $2,1
   lpb $3
     mov $5,$4
     lpb $5
-      add $6,1
       mov $7,$0
       mod $7,$2
+      add $6,1
       lpb $6
-        div $0,$2
-        cmp $7,0
-        sub $5,$7
         trn $6,5
+        cmp $7,0
+        div $0,$2
+        sub $5,$7
       lpe
       sub $3,1
     lpe
