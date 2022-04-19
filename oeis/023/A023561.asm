@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
+  seq $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
   add $0,$3
   trn $0,3
-  seq $2,1595 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1.
   add $1,$2
   add $1,1
   sub $3,1

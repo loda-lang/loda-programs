@@ -5,10 +5,10 @@
 lpb $0
   add $1,$2
   bin $2,$1
+  mul $2,2
   add $1,$0
   mul $1,$0
   sub $0,1
-  mul $2,2
 lpe
 div $1,2
 mov $0,$1

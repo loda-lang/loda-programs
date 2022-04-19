@@ -8,9 +8,9 @@ add $0,$5
 mov $4,10
 pow $4,$0
 lpb $3,9
+  trn $3,7
   div $4,$0
   sub $0,1
-  trn $3,7
 lpe
 mov $0,$4
 mod $0,10

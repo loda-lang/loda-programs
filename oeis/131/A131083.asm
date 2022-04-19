@@ -5,8 +5,9 @@
 mov $3,2
 lpb $3
   add $0,$3
-  mov $5,2
-  lpb $5
+  mov $1,2
+  lpb $1
+    bin $1,2
     sub $0,1
     mov $2,$0
     max $2,0
@@ -14,7 +15,6 @@ lpb $3
     mov $3,0
     add $4,$2
     add $4,4
-    bin $5,2
   lpe
 lpe
 mov $0,$4

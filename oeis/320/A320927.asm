@@ -7,8 +7,8 @@ mov $3,$0
 lpb $3
   cmp $1,0
   lpb $3
-    mov $2,$0
     dif $3,3
+    mov $2,$0
   lpe
   cmp $2,1
   cmp $2,0

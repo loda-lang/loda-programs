@@ -4,14 +4,13 @@
 
 mov $5,13
 mov $3,$0
-mul $3,3
+mul $3,2
 lpb $3
   sub $3,1
   add $6,$4
   add $6,$2
   add $2,$7
-  cmp $1,1
-  add $1,$6
+  mov $1,$6
   add $1,$2
   mul $1,16
   add $2,$1

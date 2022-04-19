@@ -1,10 +1,9 @@
 ; A189220: Positions of 0 in A189219; complement of A189221.
-; Submitted by Jamie Morken(w1)
+; Submitted by Christian Krause
 ; 1,3,5,7,10,11,14,15,18,19,21,23,25,27,29,31,33,35,37,39,42,44,45,47,50,52,53,55,58,60,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,98,100,102,103,105,107,110,112,114,115,117,119,122,124,126,127,129,131,133,135,137
 
-mov $1,$0
-mul $1,2
-seq $1,189219 ; Zero-one sequence based on the octagonal numbers:  a(A000567(k))=a(k); a(A183220(k))=1-a(k), a(1)=0.
 mul $0,2
-add $0,$1
+mov $1,$0
+seq $1,189219 ; Zero-one sequence based on the octagonal numbers:  a(A000567(k))=a(k); a(A183220(k))=1-a(k), a(1)=0.
 add $0,1
+add $0,$1

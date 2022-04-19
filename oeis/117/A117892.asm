@@ -7,11 +7,11 @@ lpb $0
   sub $0,1
   mov $2,$4
   gcd $2,$0
-  max $0,$5
   cmp $2,1
   mov $3,$4
   mul $3,$2
   add $4,1
-  add $5,$3
+  max $0,$1
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1

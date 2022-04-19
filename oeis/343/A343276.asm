@@ -6,10 +6,10 @@ pow $0,2
 lpb $0
   mov $0,$2
   mul $0,$2
+  add $1,1
   sub $2,1
   add $4,$0
-  add $6,1
-  mul $4,$6
+  mul $4,$1
   cmp $5,0
   add $3,$5
   sub $0,$3

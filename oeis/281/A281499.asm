@@ -7,10 +7,10 @@ cmp $3,0
 mov $1,$3
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,133223 ; Sum of digits of primes (A007605), sorted and with duplicates removed.
   mod $2,2
   add $2,$1
+  div $0,2
   add $1,$2
 lpe
 add $1,$3

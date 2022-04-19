@@ -2,13 +2,13 @@
 ; Submitted by Jon Maiga
 ; 0,1,2,3,4,6,9,16,20,29,34,45
 
-mov $4,$0
 mov $6,$0
+mov $4,$0
 lpb $4
-  mov $0,$6
-  mov $1,0
   sub $4,1
+  mov $0,$6
   sub $0,$4
+  mov $1,0
   mov $2,$0
   add $0,1
   div $0,2
@@ -19,11 +19,11 @@ lpb $4
     sub $3,1
     mov $8,$3
     sub $8,$0
-    mov $7,$8
     mov $9,$0
+    mov $7,$8
     lpb $7
-      div $2,2
       mov $7,$1
+      div $2,2
       div $9,2
     lpe
     add $1,$9

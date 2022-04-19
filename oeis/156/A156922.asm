@@ -1,5 +1,5 @@
 ; A156922: Third right hand column (n-m=2) of the A156920 triangle
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,15,129,877,5280,29658,159742,838038,4323003,22057825,111750519,563535483,2833221970,14216330916,71243079660,356731958812,1785306330981,8931761831331,44675371382365
 
 add $0,2
@@ -13,5 +13,4 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$3
-mul $0,2
-div $0,4
+div $0,2

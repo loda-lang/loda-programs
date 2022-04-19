@@ -3,8 +3,8 @@
 
 mov $1,$0
 lpb $1
-  mov $1,$0
   add $2,1
+  mov $1,$0
   div $1,$2
   sub $1,$2
 lpe

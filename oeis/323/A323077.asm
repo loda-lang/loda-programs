@@ -4,9 +4,9 @@
 lpb $0
   mov $2,$0
   seq $2,322982 ; If n is a noncomposite, then a(n) = 2*n - 1, otherwise a(n) = A032742(n), the largest proper divisor of n.
-  sub $0,$2
   mov $3,$2
   min $3,1
+  sub $0,$2
   add $1,$3
 lpe
 mov $0,$1

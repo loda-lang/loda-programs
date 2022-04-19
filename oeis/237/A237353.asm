@@ -5,9 +5,9 @@
 lpb $0
   mov $2,$0
   mov $0,0
-  mov $3,$2
-  cmp $3,0
-  add $2,$3
+  mov $1,$2
+  cmp $1,0
+  add $2,$1
   seq $2,230799 ; The number of distinct nonzero coefficients in the n-th cyclotomic polynomial.
 lpe
 mov $0,$2

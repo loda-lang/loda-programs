@@ -4,8 +4,8 @@
 
 mov $1,3
 lpb $1
+  div $1,2
   seq $0,80541 ; In binary representation: keep the first digit and left-rotate the others.
   sub $0,1
-  div $1,2
 lpe
 add $0,1

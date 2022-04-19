@@ -9,13 +9,13 @@ lpb $0
   lpb $0
     div $0,90
     add $1,$2
-    mov $3,2
     add $6,$2
+    mov $3,2
     pow $3,$6
     lpb $0,2
       lpb $6
-        sub $3,2
         mov $6,2
+        sub $3,2
       lpe
       bin $1,0
     lpe

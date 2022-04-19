@@ -12,8 +12,8 @@ lpe
 mul $1,4
 trn $1,1
 lpb $3
-  add $1,4
   sub $3,1
+  add $1,4
 lpe
 add $1,1
 mov $0,$1

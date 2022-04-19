@@ -11,9 +11,9 @@ lpb $0
     mov $1,$2
     div $1,2
   lpe
+  add $2,$1
+  add $2,$1
   div $0,2
-  add $2,$1
-  add $2,$1
   sub $1,$2
 lpe
 mov $0,$2
