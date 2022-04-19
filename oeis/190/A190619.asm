@@ -4,6 +4,5 @@
 
 seq $0,164874 ; Triangle read by rows: T(1,1)=2; T(n,k)=2*T(n-1,k)+1, 1<=k<n; T(n,n)=2*(T(n-1,n-1)+1).
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-sub $0,10
 mul $0,10
-add $0,101
+add $0,1

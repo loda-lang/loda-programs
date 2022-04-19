@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,177747 ; Convolution of A008805 (triangular numbers repeated) with itself.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

@@ -4,20 +4,16 @@
 
 lpb $0
   sub $0,1
-  max $2,1
-  sub $3,$1
-  add $4,$3
-  add $5,$3
-  mul $5,-1
-  sub $3,1
-  sub $3,$4
-  add $3,$2
-  sub $2,$3
-  add $4,$3
-  add $4,1
-  add $4,$1
-  add $4,$2
   add $1,$5
+  sub $3,$4
+  mov $4,$2
+  add $6,$3
+  mov $2,$3
+  add $2,$1
+  sub $3,$6
+  add $5,$4
+  mov $1,$3
+  mov $3,$5
+  sub $6,1
 lpe
-mov $0,$1
-div $0,2
+mov $0,$2

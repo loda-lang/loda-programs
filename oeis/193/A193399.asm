@@ -11,13 +11,13 @@ mov $1,$3
 add $1,23
 mov $2,$4
 mul $2,50
-add $1,$2
 mov $5,$4
 mul $5,$4
+add $1,$2
 mov $2,$5
 mul $2,28
-add $1,$2
 mul $5,$4
+add $1,$2
 mov $2,$5
 mul $2,4
 add $1,$2

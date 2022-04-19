@@ -1,8 +1,6 @@
 ; A158315: A158280(n)/7.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(w1)
 ; 1,3,3,3,6,3,3,9,3,3,9,3,6,10,3,3,9,9,3,9,3,3,18,3,6,9,3,9,9,3,3,18,9,3,9,3,3,18,9,3,15,3,9,9,3,9,9,9,3,18,3,3,27,3,3,9,3,9,18,9,6,9,10,3,9,3,9,30,3,3,9,9,9,18,3,3,18,9,3,9,9,3,27,3,6,18,3,18,9,3,3,9,9,9,30,3,3,27
 
 mul $0,2
-mov $1,$0
-seq $1,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
-mov $0,$1
+seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
