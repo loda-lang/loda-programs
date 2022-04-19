@@ -6,13 +6,13 @@ pow $0,2
 mov $2,$0
 mov $0,0
 lpb $2
+  sub $2,1
   trn $0,$4
   add $0,5
-  sub $2,1
   mov $3,$2
   lpb $3
-    add $1,$0
     div $3,10
+    add $1,$0
   lpe
   mov $4,7
 lpe

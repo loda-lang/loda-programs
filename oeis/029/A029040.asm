@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,3
   seq $2,25778 ; Expansion of 1/((1-x)(1-x^5)(1-x^8)).
+  sub $0,3
   add $1,$2
 lpe
 add $1,1

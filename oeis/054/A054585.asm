@@ -6,6 +6,6 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,97945 ; a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

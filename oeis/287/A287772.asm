@@ -1,14 +1,6 @@
 ; A287772: {0->1, 1->00}-transform of the infinite Fibonacci word A003849.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w2)
 ; 1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0
 
 seq $0,308898 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
-add $0,3
-mul $0,2
-lpb $0
-  div $0,4
-  mov $1,$0
-  mov $0,0
-lpe
-mov $0,$1
-mod $0,2
+seq $0,204435 ; Symmetric matrix: f(i,j)=((i+j)^2 mod 3), read by (constant) antidiagonals.

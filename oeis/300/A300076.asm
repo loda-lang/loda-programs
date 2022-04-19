@@ -3,10 +3,9 @@
 
 add $0,4
 mov $1,$0
-div $0,2
-add $0,5
 gcd $1,6
+div $0,2
+sub $0,2
 mov $2,1
 div $2,$1
 add $0,$2
-sub $0,7

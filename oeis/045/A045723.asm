@@ -9,15 +9,15 @@ lpb $0
   div $2,-1
   bin $2,$0
   mul $4,2
+  add $5,1
   mov $3,$4
   bin $3,$1
-  add $1,1
   mul $3,$2
-  mov $2,$1
   mul $3,4
-  add $4,2
-  add $5,1
   add $3,$5
+  add $1,1
+  mov $2,$1
+  add $4,2
   div $4,2
   add $5,$3
 lpe
