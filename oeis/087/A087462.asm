@@ -7,9 +7,9 @@ pow $1,$0
 gcd $0,3
 lpb $0
   mul $1,$0
-  div $0,6
   add $1,4
   div $1,3
+  div $0,6
 lpe
 mov $0,$1
 sub $0,1

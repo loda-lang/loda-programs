@@ -4,17 +4,17 @@
 
 mul $0,2
 mov $2,1
-mov $3,$0
 mov $4,1
+mov $3,$0
 lpb $3
-  mul $1,2
+  sub $3,2
   sub $4,1
+  sub $5,2
+  mul $1,2
   mul $1,$4
   mul $1,2
-  mul $2,4
-  sub $3,2
-  sub $5,2
   div $1,$5
+  mul $2,4
   add $2,$1
   add $1,$2
 lpe

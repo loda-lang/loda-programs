@@ -12,9 +12,9 @@ lpb $0
   sub $0,1
   add $4,1
   lpb $4
-    add $1,1
     add $4,$3
     mod $4,10
+    add $1,1
   lpe
   trn $4,3
 lpe

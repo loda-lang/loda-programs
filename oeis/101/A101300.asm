@@ -1,9 +1,21 @@
 ; A101300: Second-smallest prime larger than n.
+; Submitted by Jamie Morken(w1)
 ; 3,3,5,7,7,11,11,13,13,13,13,17,17,19,19,19,19,23,23,29,29,29,29,31,31,31,31,31,31,37,37,41,41,41,41,41,41,43,43,43,43,47,47,53,53,53,53,59,59,59,59,59,59,61,61,61,61,61,61,67,67,71,71,71,71,71,71,73,73,73,73,79,79,83,83,83,83,83,83,89,89,89,89,97,97,97,97,97,97,101,101,101,101,101,101,101,101,103,103,103
 
-trn $0,1
-seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-seq $0,98090 ; Numbers k such that 2k-3 is prime.
-sub $0,3
-mul $0,2
-add $0,3
+mov $1,$0
+mov $2,$0
+add $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  add $1,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  lpb $3
+    div $3,4
+    add $4,1
+    mul $2,$4
+  lpe
+  sub $1,1
+lpe
+mov $0,$1
+add $0,1

@@ -3,7 +3,7 @@
 
 add $0,1
 mul $0,2
-mov $2,$0
+mov $1,$0
+sub $1,1
 seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
-sub $2,1
-mul $0,$2
+mul $0,$1

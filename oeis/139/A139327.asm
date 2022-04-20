@@ -14,12 +14,12 @@ lpb $0
   trn $0,1
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $0,1
-  mov $5,$4
-  cmp $5,0
-  add $4,$5
+  mov $1,$4
+  cmp $1,0
+  add $3,1
+  add $4,$1
   div $2,$4
   div $2,2
-  add $3,1
   add $2,$3
   add $4,$3
 lpe

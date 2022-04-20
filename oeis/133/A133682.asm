@@ -6,10 +6,10 @@ mov $3,$0
 mul $3,4
 sub $3,1
 lpb $3
-  mov $1,3
   mov $4,$0
   cmp $4,0
   add $0,$4
+  mov $1,3
   div $1,$0
   mul $1,$3
   sub $1,$0

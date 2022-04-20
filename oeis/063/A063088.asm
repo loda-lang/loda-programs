@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,63070 ; a(n) = phi(n) - d(n), where d(n) is the number of divisors function (A000005).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1
