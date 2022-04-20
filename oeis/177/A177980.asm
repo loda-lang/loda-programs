@@ -5,8 +5,8 @@ lpb $0
   dif $0,2
 lpe
 lpb $0
-  mov $2,$0
-  seq $2,46667 ; a(n) = A046666(n)/2.
-  sub $0,$2
+  mov $1,$0
+  seq $1,46667 ; a(n) = A046666(n)/2.
+  sub $0,$1
 lpe
 add $0,2

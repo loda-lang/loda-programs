@@ -8,7 +8,7 @@ seq $4,30101 ; a(n) is the number produced when n is converted to binary digits,
 max $2,$0
 seq $2,70939 ; Length of binary representation of n.
 lpb $2
-  sub $2,1
+  sub $2,2
   mov $3,$0
   add $3,$4
   mod $3,2
@@ -17,4 +17,3 @@ lpb $2
   add $1,$3
 lpe
 mov $0,$1
-div $0,2

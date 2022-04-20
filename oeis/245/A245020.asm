@@ -1,17 +1,16 @@
 ; A245020: Number of ordered n-tuples of positive integers, whose minimum is 0 and maximum is 5.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,2,30,302,2550,19502,140070,963902,6433590,41983502,269335110,1705278302,10686396630,66425568302,410223570150,2520229093502,15417960407670,93999281613902,571487645261190,3466523088409502,20987674370482710,126870924446280302
 
+mov $2,1
 add $0,1
 lpb $0
   sub $0,1
-  max $2,26
-  mul $2,5
-  div $3,2
-  mul $3,8
+  mul $2,2
+  mul $3,5
   add $3,$1
-  mul $1,6
+  mul $1,4
   add $1,$2
+  mul $2,3
 lpe
 mov $0,$3
-div $0,65

@@ -9,9 +9,9 @@ add $0,1
 div $0,2
 add $0,$2
 add $2,$1
-bin $1,2
 add $2,2
 div $2,3
+bin $1,2
 add $1,$2
 mul $0,$1
 div $0,2

@@ -5,8 +5,8 @@
 mov $2,$0
 mov $3,$0
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,4291 ; Expansion of (1 + 2*x + x^2)/(1 - 10*x + x^2).
   mul $1,10

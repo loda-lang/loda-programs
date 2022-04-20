@@ -1,11 +1,10 @@
 ; A101711: Main diagonal of A101646.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(l1)
 ; 1,3,8,15,21,32,40,55,72,84,105,128,144,171,189,220,253,275,312,336,377,420,448,495,544,576,629,663,720,779,817,880,945,987,1056,1100,1173,1248,1296,1375,1425,1508,1593,1647,1736,1827,1885,1980,2040,2139,2240
 
 add $0,1
 mov $1,$0
+seq $1,5206 ; Hofstadter G-sequence: a(n) = n - a(a(n-1)).
 mul $0,2
-mov $2,$1
-seq $2,5206 ; Hofstadter G-sequence: a(n) = n - a(a(n-1)).
-sub $0,$2
-mul $0,$2
+sub $0,$1
+mul $0,$1

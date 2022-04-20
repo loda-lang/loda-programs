@@ -3,25 +3,24 @@
 
 mov $2,2
 add $2,$0
-mov $0,4
-mov $1,2
 bin $2,2
-mov $3,5
 mov $4,$2
 sub $4,6
+mov $3,5
 add $3,$4
 div $3,2
+mov $1,2
 sub $1,$3
 mov $5,$2
 add $5,2
 div $5,3
 add $5,17
+mov $0,4
 lpb $0
   mod $0,2
-  add $1,2
+  add $1,1
   add $1,$5
   add $1,$5
-  sub $1,1
 lpe
 sub $1,38
 mov $0,$1

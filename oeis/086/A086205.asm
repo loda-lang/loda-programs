@@ -1,16 +1,14 @@
 ; A086205: Determinant of n X n matrix M_(i,j)=binomial(i^2, j).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,6,360,302400,4572288000,1520925880320000,13153940405570764800000,3412910854477066178396160000000,30107378079113824305786648526848000000000
 
 mov $1,1
-mov $2,5
+mov $2,2
+mov $3,1
 lpb $0
   sub $0,1
-  add $2,1
-  mov $3,$2
-  pow $2,$0
+  add $2,4
+  mul $3,$1
   mul $1,$2
-  mov $2,3
-  add $2,$3
 lpe
-mov $0,$1
+mov $0,$3

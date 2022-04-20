@@ -14,8 +14,8 @@ lpb $0
   gcd $2,$0
   div $2,$0
   lpb $2
-    mov $0,0
     sub $2,1
+    mov $0,0
   lpe
   trn $2,6
 lpe
