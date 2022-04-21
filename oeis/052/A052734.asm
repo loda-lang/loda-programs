@@ -5,6 +5,5 @@
 mov $1,2
 pow $1,$0
 seq $0,52714 ; a(n) = 2^(n-1) * n! * Catalan(n-1) for n > 0 with a(0) = 0.
-mul $1,2
 mul $0,$1
-div $0,4
+div $0,2

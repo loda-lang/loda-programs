@@ -6,12 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 mov $5,$0
-mov $6,$0
-sub $6,$0
+mov $1,$0
+sub $1,$0
 lpb $2
-  add $6,$5
-  add $6,1
-  mov $3,$6
+  add $1,$5
+  add $1,1
+  mov $3,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
@@ -21,5 +21,5 @@ lpb $2
   sub $2,1
   max $2,3
 lpe
-mov $0,$6
+mov $0,$1
 add $0,1

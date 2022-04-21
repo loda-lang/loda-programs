@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   trn $2,1
   seq $2,215040 ; a(n) = F(2*n+1)^3, n>=0, with F = A000045 (Fibonacci).
-  add $3,$2
-  div $3,-1
+  sub $0,1
+  add $1,$2
+  div $1,-1
 lpe
-mov $0,$3
+mov $0,$1

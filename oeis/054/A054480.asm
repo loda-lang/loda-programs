@@ -1,27 +1,25 @@
 ; A054480: Number of different positive braids with n crossings of 4 strands.
-; Submitted by Jamie Morken(w2)
+; Submitted by Jamie Morken(w4)
 ; 1,3,8,19,43,94,202,429,905,1901,3983,8332,17413,36370,75938,158519,330862,690523,1441082,3007369,6275917,13096737,27330418,57033206,119016808,248363751,518283950,1081551220,2256972626,4709831964,9828437634,20509899437,42799880699
 
-add $0,2
+mov $1,1
+add $0,5
 lpb $0
   sub $0,1
-  add $2,$4
-  sub $2,$5
+  sub $4,$3
   sub $3,$4
   mov $5,$1
-  add $5,$2
   mov $6,$4
   add $1,$3
-  add $1,2
+  sub $3,1
+  add $2,$3
+  add $2,$4
   mov $3,$4
-  add $3,$5
   mov $4,$2
+  add $5,$2
   mov $2,$3
   add $2,$7
-  mov $5,$4
+  mov $3,$5
   mov $7,$6
 lpe
-mov $0,$2
-sub $0,2
-div $0,2
-add $0,1
+mov $0,$3

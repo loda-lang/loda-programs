@@ -1,11 +1,10 @@
 ; A040764: Continued fraction for sqrt(793).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 28,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6,56,6,4,6
 
 seq $0,40282 ; Continued fraction for sqrt(300).
 dif $0,4
 mul $0,5
-div $0,3
-add $0,1
-div $0,2
+add $0,3
+div $0,6
 mul $0,2

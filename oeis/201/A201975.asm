@@ -11,16 +11,16 @@ mov $4,$0
 sub $4,1
 lpb $0
   mov $0,1
-  mov $1,2
   add $2,$4
+  mov $1,2
   add $1,$2
   mul $1,2
   mul $3,2
 lpe
-sub $1,2
 add $3,2
 mov $6,$3
 mul $6,2
+sub $1,2
 add $1,$6
 mov $5,$3
 mul $5,$3
