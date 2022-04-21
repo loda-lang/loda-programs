@@ -1,27 +1,29 @@
 ; A011022: Decimal expansion of 4th root of 27.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w3)
 ; 2,2,7,9,5,0,7,0,5,6,9,5,4,7,7,7,6,4,1,9,9,3,5,6,3,2,5,1,9,6,3,6,3,6,0,0,6,1,9,0,3,2,0,3,4,6,6,6,1,9,3,0,9,5,5,8,3,3,8,6,5,9,6,1,1,0,0,9,6,6,6,9,9,5,1,3,1,4,1,8,1,4,7,8,3,2,3,1,8,4,2,4,9,5,1,1,1,4,7,0
 
-mov $1,1
+mov $5,14
 mov $3,$0
-mul $3,4
+mul $3,3
 lpb $3
-  add $2,$1
-  mod $5,$1
-  add $1,$6
-  add $1,$6
-  add $2,$1
   sub $3,1
-  add $5,$2
+  add $6,$4
+  add $6,$2
+  mov $1,$6
+  add $1,$2
+  div $1,11
+  mul $1,16
+  add $2,$1
   add $5,$2
   add $6,$5
+  add $4,$5
 lpe
-mul $1,3
+mov $1,$5
+mul $1,2
 mov $4,10
 pow $4,$0
+add $2,10
 div $2,$4
-add $2,1
 div $1,$2
-sub $1,$4
 mov $0,$1
 mod $0,10

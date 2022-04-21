@@ -14,8 +14,8 @@ lpb $0
   max $2,4
   sub $2,1
   add $4,$3
-  mov $3,1
   add $4,$1
+  mov $3,1
   add $3,$4
 lpe
 mov $0,$2

@@ -4,11 +4,10 @@
 sub $0,1
 lpb $0
   mov $1,$0
-  mul $0,0
   trn $1,1
   seq $1,43569 ; Numbers whose base-2 representation has exactly 2 runs.
+  mul $0,0
 lpe
-add $1,16
+add $1,2
 add $1,$0
-sub $1,14
 mov $0,$1

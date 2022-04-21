@@ -4,17 +4,17 @@
 
 mov $5,14
 mov $3,$0
-mul $3,3
+mul $3,2
 lpb $3
   sub $3,1
   add $6,$4
   add $6,$2
   add $2,$7
-  cmp $1,1
-  add $1,$6
+  mov $1,$6
   add $1,$2
+  mul $1,4
   div $1,7
-  mul $1,32
+  mul $1,8
   add $2,$1
   add $5,$2
   add $6,$5
@@ -25,7 +25,7 @@ mov $1,$5
 mul $1,2
 mov $4,10
 pow $4,$0
-add $2,10
+add $2,12
 div $2,$4
 div $1,$2
 mov $0,$1

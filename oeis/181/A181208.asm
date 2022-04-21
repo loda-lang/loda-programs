@@ -5,8 +5,8 @@ add $0,2
 lpb $0
   mov $1,$0
   seq $1,52528 ; Expansion of (1 - x)/(1 - 2*x - 2*x^2 + 2*x^3).
-  div $0,$1
   add $2,$1
+  div $0,$1
   mul $1,$2
 lpe
 mov $0,$1

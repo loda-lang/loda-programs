@@ -5,8 +5,8 @@
 mov $2,$0
 mov $3,$0
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,166592 ; Hankel transform of A166588(n-1).
   add $1,$0

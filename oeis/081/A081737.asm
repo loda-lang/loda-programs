@@ -3,12 +3,12 @@
 
 mov $2,2
 mul $2,$0
-mov $3,$0
-sub $3,$0
+mov $1,$0
+sub $1,$0
 seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
 add $0,9
 mod $0,10
-add $3,4
-mul $3,$2
-add $3,$2
-add $0,$3
+add $1,4
+mul $1,$2
+add $1,$2
+add $0,$1

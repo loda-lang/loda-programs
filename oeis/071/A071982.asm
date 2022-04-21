@@ -1,19 +1,7 @@
 ; A071982: Parity of the decimal digits of sqrt(2).
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(w4)
 ; 1,0,1,0,0,1,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,1,1,0
 
-mov $2,$0
-mul $2,2
-mov $0,10
-pow $0,$2
 mul $0,2
-mov $1,$0
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,6
-  add $0,$2
-  div $0,2
-lpe
-sub $0,1
+seq $0,126981 ; Largest perfect square less than 2*10^n.
 mod $0,2

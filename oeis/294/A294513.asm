@@ -1,0 +1,20 @@
+; A294513: Denominators of the partial sums of the reciprocals of twice the pentagonal numbers.
+; Submitted by Christian Krause
+; 2,5,120,1320,9240,52360,52360,602140,70450380,2043061020,16344488160,3268897632,62109055008,2546471255328,1157486934240,54401885909280,272009429546400,4805499921986400,4805499921986400,283524495397197600,418536159872053600
+
+add $0,1
+lpb $0
+  mov $2,$0
+  mov $4,$0
+  sub $0,1
+  max $1,1
+  mul $2,2
+  add $2,$0
+  mul $2,$4
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1
