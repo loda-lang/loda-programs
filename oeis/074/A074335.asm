@@ -8,7 +8,7 @@ bin $2,$0
 div $2,2
 lpb $0
   sub $0,$2
-  mov $3,12
+  mov $1,12
 lpe
-sub $3,$2
-mov $0,$3
+sub $1,$2
+mov $0,$1

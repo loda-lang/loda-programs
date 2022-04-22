@@ -3,8 +3,8 @@
 
 lpb $0
   add $1,$0
-  sub $0,1
   mul $1,10
+  sub $0,1
 lpe
 div $1,10
 mul $1,9

@@ -15,16 +15,15 @@ lpb $0
 lpe
 add $2,1
 sub $4,3
+mov $1,-5
 add $1,$4
 add $4,2
 add $1,$4
-sub $1,1
 sub $1,$2
-sub $1,4
 trn $1,$2
 lpb $6
-  add $1,2
   sub $6,1
+  add $1,2
 lpe
 add $1,1
 mov $0,$1

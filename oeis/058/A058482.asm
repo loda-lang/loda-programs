@@ -3,9 +3,9 @@
 
 lpb $0
   sub $0,1
-  mul $1,3
   mul $2,7
   add $2,1
+  mul $1,3
   add $1,$2
 lpe
 mul $1,24

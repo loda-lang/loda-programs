@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,56822 ; Nearest integer to n^2/16.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

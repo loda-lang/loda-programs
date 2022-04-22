@@ -6,8 +6,8 @@ add $0,1
 lpb $0
   mod $0,6
   mov $1,$0
+  sub $1,$2
+  sub $1,$2
   div $0,3
-  sub $1,$2
-  sub $1,$2
 lpe
 mov $0,$1

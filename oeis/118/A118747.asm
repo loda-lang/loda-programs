@@ -5,10 +5,10 @@
 mov $2,2
 lpb $0
   mov $1,$0
+  sub $1,1
   mul $0,2
   trn $0,1
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $1,1
   mul $2,$0
   mov $0,$1
 lpe

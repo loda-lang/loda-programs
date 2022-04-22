@@ -8,11 +8,11 @@ add $1,1
 mov $2,$0
 mul $2,2
 add $2,$1
+add $2,2
 bin $1,$0
 mul $0,2
 add $0,1
 div $1,$0
 pow $1,2
-add $2,2
 mul $1,$2
 mov $0,$1

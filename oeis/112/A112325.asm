@@ -6,8 +6,8 @@ mov $1,$0
 mov $2,1
 mov $3,$0
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   sub $0,$3
   seq $0,186621 ; Semiprimes - 1.
   mod $0,2

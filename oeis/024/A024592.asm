@@ -7,12 +7,12 @@ mov $2,$0
 lpb $0
   sub $0,1
   sub $3,$4
-  add $6,$3
   mov $4,$2
   mov $2,1
   sub $2,$4
   add $2,$1
   add $5,$4
+  add $6,$3
   add $6,$5
   mov $1,$3
   mov $3,$5

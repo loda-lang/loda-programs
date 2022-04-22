@@ -14,10 +14,10 @@ mov $3,$7
 add $3,$6
 mov $1,$3
 add $1,1
-add $1,$5
 mov $4,$5
 mul $4,$5
 mov $2,$4
 mul $2,2
+add $1,$5
 add $1,$2
 mov $0,$1

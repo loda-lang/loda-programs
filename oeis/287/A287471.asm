@@ -5,12 +5,12 @@
 add $0,3
 lpb $0
   sub $0,1
+  sub $2,$0
   add $2,$1
   sub $1,1
   sub $1,$0
   add $1,$3
   add $1,$3
-  sub $2,$0
   mul $3,4
   add $1,$3
   add $2,$3

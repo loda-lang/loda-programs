@@ -1,20 +1,14 @@
 ; A221490: Number of primes of the form k*n + k - n, 1 <= k <= n.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w3)
 ; 0,0,1,1,3,1,2,2,5,3,6,3,5,4,4,3,9,2,6,5,8,4,9,4,9,7,10,4,17,3,10,9,11,9,15,4,9,10,13,5,20,7,11,10,16,8,19,6,18,12,17,5,23,9,18,9,15,8,26,7,15,12,16,13,29,8,18,13,26,9,25,10,19,18,16,11,28,10,23,17,22,11,32,16,23,14,22,12,36,13,21,16,26,15,34,12,29,20,29,14
 
 mov $3,$0
-add $3,1
-mov $5,$0
-mov $6,$3
-add $6,1
+add $0,2
 lpb $3
-  mov $0,$5
-  sub $3,1
-  sub $0,$3
   mov $2,$0
-  mul $2,$6
+  mul $2,$3
   seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $4,$2
+  sub $3,1
+  add $1,$2
 lpe
-mov $0,$4
-sub $0,1
+mov $0,$1

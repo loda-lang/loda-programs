@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,164549 ; a(n) = 4*a(n-1) + 2*a(n-2) for n > 1; a(0) = 1, a(1) = 6.
+  sub $0,1
   add $1,$2
 lpe
 div $1,2

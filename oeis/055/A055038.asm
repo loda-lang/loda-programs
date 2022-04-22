@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,66829 ; Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
   sub $0,1
-  seq $2,66829 ; 1 if product of odd number of primes; 0 if product of even number of primes.
   add $1,$2
 lpe
 mov $0,$1

@@ -5,20 +5,20 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   add $0,$5
   sub $0,1
   mov $1,$0
   mov $2,1
   lpb $2
+    mov $2,0
     mov $0,$1
     add $0,1
     mul $0,$1
     seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
     div $0,4
     mov $1,7
-    mov $2,0
   lpe
   mul $1,2
   mul $1,$0
