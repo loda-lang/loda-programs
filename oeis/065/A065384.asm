@@ -5,8 +5,8 @@ add $0,3
 bin $0,2
 sub $0,1
 lpb $0
-  mov $2,$0
-  seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
-  sub $0,$2
+  mov $1,$0
+  seq $1,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,$1
 lpe
 add $0,1

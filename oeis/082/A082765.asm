@@ -5,12 +5,10 @@
 lpb $0
   mov $2,$0
   seq $2,1517 ; Bessel polynomials y_n(x) (see A001498) evaluated at 2.
-  mov $3,$2
-  min $3,1
-  add $4,1
-  sub $0,$3
+  add $3,1
+  sub $0,1
   add $1,$2
-  mul $1,$4
+  mul $1,$3
 lpe
 mov $0,$1
 add $0,1

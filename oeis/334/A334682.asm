@@ -5,15 +5,15 @@
 mov $1,3
 mov $6,2
 lpb $6
+  mov $6,0
   sub $0,1
   sub $1,3
   mov $2,$0
   add $2,2
   mov $4,2
-  mov $6,$7
   lpb $4
-    mov $0,$2
     sub $4,1
+    mov $0,$2
     add $0,$4
     trn $0,1
     seq $0,2293 ; Number of dissections of a polygon: binomial(4*n, n)/(3*n + 1).
@@ -22,9 +22,9 @@ lpb $6
     add $1,$3
     mov $5,$0
   lpe
-  mov $0,$7
   min $2,1
   mul $2,$5
+  mov $0,0
   sub $1,$2
 lpe
 mov $0,$1

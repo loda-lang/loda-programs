@@ -9,8 +9,8 @@ lpb $0
   mul $1,2
   mul $2,4
   add $2,$1
-  mul $1,5
   mul $2,-1
+  mul $1,5
 lpe
 gcd $2,$1
 div $1,$2

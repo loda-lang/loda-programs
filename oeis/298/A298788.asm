@@ -3,18 +3,16 @@
 
 pow $1,$0
 add $1,$0
-mov $2,3
 mov $3,$0
 gcd $0,3
 lpb $0
   mul $1,$0
+  add $1,4
+  div $1,3
   div $0,6
-  add $1,1
-  add $1,$2
-  div $1,$2
 lpe
+mov $2,$3
+mul $2,3
 sub $1,1
-mov $4,$3
-mul $4,3
-add $1,$4
+add $1,$2
 mov $0,$1

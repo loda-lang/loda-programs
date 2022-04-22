@@ -7,6 +7,7 @@ pow $2,$0
 mov $3,$0
 mul $3,4
 lpb $3
+  sub $3,2
   add $6,$2
   add $1,$6
   div $6,3
@@ -14,7 +15,6 @@ lpb $3
   add $1,$6
   add $2,$1
   mul $2,2
-  sub $3,2
   mov $5,$1
   add $5,$2
   mul $5,3

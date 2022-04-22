@@ -4,11 +4,10 @@
 
 lpb $0
   sub $0,1
-  add $2,12
   add $3,8
   mov $1,$3
   mul $1,338
-  add $2,1
+  add $2,13
   add $2,$1
   add $3,$2
 lpe

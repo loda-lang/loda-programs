@@ -6,5 +6,5 @@ pow $0,2
 mov $1,$0
 trn $0,1
 seq $0,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
-add $0,$1
 sub $0,1
+add $0,$1

@@ -3,5 +3,5 @@
 
 mov $1,$0
 seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
-add $0,$1
 sub $0,1
+add $0,$1

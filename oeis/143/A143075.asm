@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $0,6
   seq $2,192748 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
+  trn $0,6
   add $1,$2
 lpe
 mov $0,$1

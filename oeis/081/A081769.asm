@@ -5,13 +5,12 @@
 mov $1,$0
 mov $3,$0
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   sub $0,$3
   seq $0,92910 ; a(n) is the (3n+2)-th component of the continued fraction for sum(k>=0,2^(-k!)).
-  sub $0,2
   mul $0,3
-  add $0,2
+  sub $0,4
   add $2,$0
 lpe
 mov $0,$2

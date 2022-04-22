@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,3
   seq $2,218930 ; Number of maximal supersolvable conjugacy classes of subgroups of the symmetric group.
-  add $3,$2
+  div $0,3
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

@@ -5,15 +5,15 @@
 mov $3,2
 lpb $3
   add $0,$3
-  mov $5,2
-  lpb $5
+  mov $1,2
+  lpb $1
+    sub $1,1
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,1157 ; sigma_2(n): sum of squares of divisors of n.
+    seq $2,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
     mov $3,0
     add $4,$2
-    sub $5,1
   lpe
 lpe
 mov $0,$4

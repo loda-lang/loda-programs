@@ -6,9 +6,9 @@ mul $0,2
 add $0,2
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,101615 ; Number of representations of n as a sum of the Jacobsthal numbers A078008 (2 is allowed twice as a part).
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 sub $0,1

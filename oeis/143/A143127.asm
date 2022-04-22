@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

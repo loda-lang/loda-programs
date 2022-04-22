@@ -5,8 +5,8 @@
 lpb $0
   mov $2,$0
   seq $2,91732 ; Iphi(n): infinitary analog of Euler's phi function.
-  add $3,$2
+  add $1,$2
   sub $2,1
   mov $0,$2
 lpe
-mov $0,$3
+mov $0,$1
