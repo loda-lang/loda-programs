@@ -9,14 +9,14 @@ lpb $0
   mul $2,$0
   add $2,$4
   bin $2,$0
-  dif $0,39
   mov $3,-4
   bin $3,$1
-  sub $4,$1
-  add $1,3
-  mod $1,2
   mul $3,$2
   add $4,1
+  sub $4,$1
+  dif $0,39
+  add $1,3
+  mod $1,2
   add $5,$3
   mul $5,2
 lpe

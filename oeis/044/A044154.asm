@@ -10,7 +10,7 @@ mul $0,12
 add $0,4
 lpb $0
   gcd $3,$0
-  mov $0,0
+  mov $0,6
 lpe
 div $2,$3
 mul $3,$2

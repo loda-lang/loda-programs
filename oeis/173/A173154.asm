@@ -9,5 +9,5 @@ mov $1,$0
 bin $0,3
 add $0,$1
 div $0,8
-add $0,$2
 sub $0,1
+add $0,$2

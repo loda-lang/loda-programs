@@ -1,7 +1,30 @@
 ; A064433: Number of iterations of A064455 to reach 2 (or 1 in the case of 1).
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; 1,1,2,6,3,5,7,12,4,14,6,11,8,8,13,13,5,10,15,15,7,7,12,12,9,17,9,71,14,14,14,68,6,19,11,11,16,16,16,24,8,70,8,21,13,13,13,67,10,18,18,18,10,10,72,72,15,23,15,23,15,15,69,69,7,20,20,20,12,12,12,66,17,74,17,12,17,17,25,25,9,17,71,71,9,9,22,22,14,22,14,60,14,14,68,68,11,76,19,19
 
-trn $0,1
-seq $0,6666 ; Number of halving steps to reach 1 in '3x+1' problem, or -1 if this never happens.
+mov $1,270
+add $1,2
+lpb $1
+  mov $2,2
+  sub $2,$0
+  lpb $2
+    mov $2,0
+    mov $1,0
+  lpe
+  mov $3,1
+  mov $2,$0
+  mod $2,2
+  lpb $2
+    sub $2,1
+    mul $0,3
+    add $0,1
+  lpe
+  lpb $3
+    sub $3,1
+    div $0,2
+  lpe
+  sub $1,1
+  add $4,1
+lpe
+mov $0,$4
 add $0,1

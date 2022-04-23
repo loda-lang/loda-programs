@@ -1,6 +1,16 @@
 ; A267156: Binary representation of the middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Jamie Morken(w1)
+; Submitted by Christian Krause
 ; 1,10,100,1001,10011,100111,1001111,10011111,100111111,1001111111,10011111110,100111111101,1001111111010,10011111110101,100111111101010,1001111111010101,10011111110101010,100111111101010101,1001111111010101010,10011111110101010101,100111111101010101010,1001111111010101010101,10011111110101010101010,100111111101010101010101,1001111111010101010101010,10011111110101010101010101,100111111101010101010101010,1001111111010101010101010101,10011111110101010101010101010,100111111101010101010101010101
 
-seq $0,267157 ; Decimal representation of the middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,1
+mov $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,267155 ; Middle column of the "Rule 107" elementary cellular automaton starting with a single ON (black) cell.
+  mul $1,10
+  add $1,$0
+lpe
+mov $0,$1

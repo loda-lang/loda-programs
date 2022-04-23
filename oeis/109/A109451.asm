@@ -8,11 +8,9 @@ add $2,$0
 mov $3,$0
 add $0,1
 gcd $0,2
-add $0,3
-div $2,2
-add $2,2
-div $2,2
+sub $0,1
+add $2,4
+div $2,4
 mod $2,2
 add $0,$2
-sub $0,4
 add $0,$3

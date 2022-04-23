@@ -1,5 +1,5 @@
 ; A131337: Row sums of triangle A131336.
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w3)
 ; 1,2,4,9,16,32,57,106,188,337
 
 add $0,2
@@ -23,6 +23,4 @@ lpb $0
   mov $7,$6
 lpe
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

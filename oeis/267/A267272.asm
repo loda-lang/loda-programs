@@ -6,14 +6,14 @@ sub $4,1
 mov $1,$4
 mov $3,$4
 cmp $3,0
-add $1,$3
 max $4,0
 seq $4,165775 ; n + (least square >= n), i.e., n + A048761(n).
+add $1,$3
 add $1,$4
 mov $2,3
 trn $2,$0
 mov $0,$1
-sub $0,5
 sub $0,$2
+sub $0,5
 gcd $0,2
 mod $0,2

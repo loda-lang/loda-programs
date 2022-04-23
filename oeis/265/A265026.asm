@@ -18,13 +18,13 @@ lpb $4
   lpe
   mov $2,$4
   lpb $2
-    mov $1,$5
     sub $2,1
+    mov $1,$5
   lpe
 lpe
 lpb $3
-  sub $1,$5
   mov $3,0
+  sub $1,$5
 lpe
 mov $0,$1
 mul $0,3

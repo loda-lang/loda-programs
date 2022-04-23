@@ -50,8 +50,10 @@ A102704: Numbers k such that k999 is prime.
 A106139: Semiprimes (mod 3).
 A106140: Semiprimes (mod 4).
 A106141: Semiprimes (mod 5).
+A106142: Semiprimes (mod 6).
 A106143: Semiprimes (mod 7).
 A106144: Semiprimes (mod 8).
+A106145: Semiprimes (mod 9).
 A113935: a(n) = prime(n) + 3.
 A129069: Numbers n such that (n-3)/2 is prime.
 A129070: Numbers n such that (n-5)/4 is prime.

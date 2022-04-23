@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   seq $2,109866 ; 9's complement of the digits of the golden ratio phi (A001622): 9.999999999999... - 1.6180339887... = 8.3819660112501051517954131656334...
   cmp $3,0
-  add $4,$3
-  mod $0,$4
+  add $1,$3
+  mod $0,$1
 lpe
 mov $0,$2
