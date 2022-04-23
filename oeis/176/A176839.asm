@@ -4,9 +4,9 @@
 lpb $0
   mov $2,$0
   seq $2,62821 ; Number of divisors of totient of n.
-  sub $0,$2
   mov $3,$2
   min $3,1
+  sub $0,$2
   add $1,$3
 lpe
 mov $0,$1

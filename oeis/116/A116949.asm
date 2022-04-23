@@ -11,9 +11,9 @@ mov $0,$1
 mod $0,2
 div $0,-1
 div $1,2
-add $0,$1
 mov $2,-1
 bin $2,$1
+add $0,$1
 mov $1,2
 pow $1,$0
 mul $2,$1

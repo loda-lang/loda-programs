@@ -8,10 +8,10 @@ lpb $0
   sub $4,1
   mov $3,$4
   bin $3,$1
+  pow $3,2
   max $1,$0
   add $0,1
   mul $2,-1
-  pow $3,2
   add $2,$3
 lpe
 mov $0,$2

@@ -5,11 +5,11 @@ mul $0,3
 mov $2,$0
 lpb $0
   add $2,$0
-  mov $0,$2
   mov $3,$2
-  mov $4,$2
-  cmp $4,0
-  add $2,$4
+  mov $0,$2
+  mov $1,$2
+  cmp $1,0
+  add $2,$1
   div $3,$2
   add $3,1
   lpb $0

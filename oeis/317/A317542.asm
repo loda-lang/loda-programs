@@ -3,9 +3,9 @@
 
 lpb $0
   sub $0,1
-  sub $2,2
-  sub $0,$2
+  sub $1,2
+  sub $0,$1
   dif $0,2
-  bin $2,2
+  bin $1,2
 lpe
 mod $0,2

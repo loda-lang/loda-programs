@@ -4,10 +4,10 @@
 add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $2,$0
-add $3,$0
-lpb $3
+add $1,$0
+lpb $1
+  sub $1,1
+  div $1,2
   mul $2,2
-  sub $3,1
-  div $3,2
 lpe
 mov $0,$2

@@ -3,8 +3,14 @@
 ; 1,1,1,1,1,2,1,1,2,3,1,1,2,3,5,1,1,2,3,5,8,1,1,2,3,5,8,13,1,1,2,3,5,8,13,21,1,1,2,3,5,8,13,21,34,1,1,2,3,5,8,13,21,34,55,1,1,2,3,5,8,13,21,34,55,89,1,1,2,3,5,8,13,21,34,55,89,144,1,1,2,3,5,8,13,21,34,55,89,144,233,1,1,2,3,5,8,13,21,34
 
 lpb $0
-  add $1,1
-  sub $0,$1
+  add $2,1
+  sub $0,$2
 lpe
-seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
-sub $0,7
+mov $1,1
+lpb $0
+  sub $0,1
+  add $1,$3
+  mul $3,-1
+  add $3,$1
+lpe
+mov $0,$1

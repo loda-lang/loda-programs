@@ -5,7 +5,7 @@
 mov $1,$0
 seq $0,39647 ; Related to A000032 (Lucas numbers): (n-1)!*L(n).
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe
 mul $0,2

@@ -4,11 +4,11 @@
 
 lpb $0
   mov $2,$0
-  mov $0,0
   seq $2,2003 ; a(n) = 2 * Sum_{k=0..n-1} binomial(n-1, k)*binomial(n+k, k).
-  mov $3,$2
-  add $3,$2
-  sub $3,1
+  mov $0,0
+  mov $1,$2
+  add $1,$2
+  sub $1,1
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

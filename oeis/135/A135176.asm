@@ -4,7 +4,7 @@
 
 seq $0,40 ; The prime numbers.
 seq $0,74527 ; a(n) = 2^n + 3^n + 5^n.
-mov $2,1
-add $2,$0
-mov $0,$2
+mov $1,1
+add $1,$0
+mov $0,$1
 sub $0,1

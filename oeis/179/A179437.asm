@@ -3,10 +3,10 @@
 
 seq $0,173072 ; n-th prime minus n-th even number.
 mov $2,$0
+sub $2,2
 mul $0,7
 sub $0,8
 add $1,$0
 mod $1,2
-sub $2,2
 mul $1,$2
 mov $0,$1

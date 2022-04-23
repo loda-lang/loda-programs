@@ -3,7 +3,7 @@
 
 seq $0,255047 ; 1 together with the positive terms of A000225.
 lpb $0
-  add $2,1
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
 add $0,1

@@ -4,9 +4,9 @@
 mov $1,2
 mov $2,1
 lpb $0
+  add $0,3
   add $1,2
   sub $0,$1
-  add $0,3
 lpe
 bin $2,$0
 mov $0,$2

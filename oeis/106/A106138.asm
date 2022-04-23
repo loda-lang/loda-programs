@@ -1,7 +1,22 @@
 ; A106138: Semiprimes (mod 2).
-; Submitted by Jamie Morken(l1)
+; Submitted by Jamie Morken(w3)
 ; 0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,0,0,1,1,0,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,0,0,1,1,1,1,0,1,1,0,1,1,1,0
 
-seq $0,88707 ; Semiprimes + 1.
+mov $1,3
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
 sub $0,1
 mod $0,2
