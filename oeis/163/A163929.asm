@@ -1,0 +1,19 @@
+; A163929: Denominators of the higher order exponential integral constants alpha(2,n).
+; Submitted by Simon Strandgaard
+; 1,1,16,1296,20736,12960000,4320000,10372320000,165957120000,40327580160000,40327580160000,590436101122560000,590436101122560000,16863445484161436160000,2409063640594490880000,2409063640594490880000
+
+mov $1,1
+sub $0,1
+lpb $0
+  mov $2,$0
+  add $2,1
+  pow $2,4
+  mul $3,$2
+  add $3,$1
+  mul $3,47
+  sub $0,1
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1
