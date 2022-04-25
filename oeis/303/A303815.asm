@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,317325 ; Multiples of 25 and odd numbers interleaved.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

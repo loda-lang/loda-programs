@@ -1,4 +1,5 @@
 ; A060296: Number of regular convex polytopes in n-dimensional space, or -1 if the number is infinite.
+; Submitted by Jamie Morken(w2)
 ; 1,1,-1,5,6,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
 add $0,1
@@ -12,11 +13,9 @@ lpb $0
   cmp $3,$2
   cmp $3,0
   mul $3,$0
-  sub $0,2
-  mov $1,1
   add $3,2
-  add $1,$3
-  sub $1,1
+  sub $0,2
+  mov $1,$3
   div $2,6
 lpe
 add $1,1

@@ -1,9 +1,8 @@
 ; A054133: T(2n-1,n).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(l1)
 ; 2,7,39,236,1479,9418,60492,390720,2534115,16489802,107594725,703681448,4611414244,30273029080,199045400424
 
 mov $4,$0
-mov $5,1
 add $0,1
 lpb $0
   sub $0,1
@@ -20,4 +19,3 @@ lpb $0
   mul $2,0
 lpe
 mov $0,$5
-sub $0,1

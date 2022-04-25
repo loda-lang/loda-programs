@@ -5,8 +5,8 @@
 mov $2,$0
 mov $4,$0
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   sub $0,$4
   mov $3,$0
   seq $0,336040 ; Characteristic function of refactorable numbers (A033950).

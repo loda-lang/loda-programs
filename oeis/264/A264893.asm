@@ -6,12 +6,11 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  sub $0,1
-  mov $2,$3
   mov $5,$0
-  add $5,1
   max $5,0
   seq $5,155043 ; a(0)=0; for n >= 1, a(n) = 1 + a(n-d(n)), where d(n) is the number of divisors of n (A000005).
+  sub $0,1
+  mov $2,$3
   mul $2,$5
   add $1,$2
 lpe

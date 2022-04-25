@@ -5,5 +5,5 @@
 mov $1,$0
 add $1,1
 seq $1,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
-seq $0,1157 ; sigma_2(n): sum of squares of divisors of n.
+seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
 mul $0,$1

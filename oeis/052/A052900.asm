@@ -5,11 +5,11 @@
 mov $6,$0
 mov $8,2
 lpb $8
-  mov $0,$6
+  sub $8,1
   mov $1,0
   mov $2,0
   mov $4,0
-  sub $8,1
+  mov $0,$6
   add $0,$8
   sub $0,1
   lpb $0

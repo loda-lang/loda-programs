@@ -1,14 +1,13 @@
 ; A023628: Convolution of (1, p(1), p(2), ...) and (F(2), F(3), F(4), ...).
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w4)
 ; 1,4,10,22,44,84,152,266,454,762,1268,2090,3426,5594,9104,14788,23992,38892,63004,102024,165166,267334,432652,700148,1132972,1833306,2966476,4799986,7766672
 
-mov $1,2
-mov $3,1
+mov $1,1
+add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
   add $4,$1
-  add $4,1
   mov $2,$1
   mov $1,$3
   seq $1,40 ; The prime numbers.
@@ -16,4 +15,3 @@ lpb $0
   add $3,1
 lpe
 mov $0,$4
-add $0,1

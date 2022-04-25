@@ -7,9 +7,9 @@ mul $0,29
 mul $1,58
 sub $1,$0
 lpb $1
+  sub $1,6
   mul $0,2
   sub $0,2
-  sub $1,6
 lpe
 mod $0,3
 mul $0,3

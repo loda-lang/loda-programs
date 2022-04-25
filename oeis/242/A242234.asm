@@ -4,6 +4,5 @@
 
 add $0,3
 seq $0,189740 ; Partial sums of tetranacci numbers (A000288).
-sub $0,4
 mul $0,3
-add $0,10
+sub $0,2

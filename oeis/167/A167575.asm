@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,167586 ; The fourth row of the ED4 array A167584.
+  sub $0,1
   add $1,$2
 lpe
 mul $1,18

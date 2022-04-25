@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,152896 ; a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1
