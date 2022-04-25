@@ -7,8 +7,8 @@ add $3,1
 mul $3,3
 lpb $3
   add $6,$2
-  add $1,$6
   add $2,$7
+  add $1,$6
   add $1,$2
   add $2,$1
   mov $6,$3
@@ -21,10 +21,10 @@ lpb $3
   add $7,$4
   sub $7,$2
 lpe
-mov $1,$5
 mov $4,10
 pow $4,$0
 div $2,$4
+mov $1,$5
 div $1,$2
 mov $0,$1
 add $0,$4

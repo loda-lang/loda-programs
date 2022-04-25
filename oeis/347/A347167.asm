@@ -2,8 +2,8 @@
 ; Submitted by Jon Maiga
 ; 2,3,4,5,6,16,17,256,257,65536,65537,4294967296
 
-sub $0,1
 mov $3,2
+sub $0,1
 lpb $0
   sub $0,2
   mov $2,$1

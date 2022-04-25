@@ -9,10 +9,10 @@ lpb $0
   mov $0,1
   mov $6,4
   bin $6,$2
+  add $6,$4
   add $2,1
   div $2,3
   mul $2,2
-  add $6,$4
   trn $0,$6
   mov $1,$2
   add $4,1

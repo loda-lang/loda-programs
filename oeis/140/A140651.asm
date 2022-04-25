@@ -6,9 +6,8 @@ pow $2,2
 add $2,$0
 mov $3,1
 add $3,$2
-mov $4,1
-add $4,$0
-sub $4,2
-add $4,$3
-mov $0,$4
+mov $1,-1
+add $1,$0
+add $1,$3
+mov $0,$1
 seq $0,48671 ; a(n) is the least common multiple of the proper divisors of n.

@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,2057 ; Fourth convolution of Catalan numbers: 4*binomial(2n+3,n)/(n+4).
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

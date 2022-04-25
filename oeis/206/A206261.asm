@@ -4,16 +4,15 @@
 
 add $0,5
 mov $1,$0
-mod $0,2
 bin $1,3
-mov $2,5
 mov $3,4
 add $3,$1
+mod $0,2
+mov $2,5
 lpb $2
   mov $2,1
   sub $3,10
   max $3,9
 lpe
-add $0,1023
+add $0,14
 add $0,$3
-sub $0,1009

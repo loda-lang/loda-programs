@@ -3,7 +3,7 @@
 ; 1,1,4,6,144,240,8640,15120,403200,725760,43545600,79833600,201180672000,373621248000,2092278988800,3923023104000,1883051089920000,3556874280960000,2688996956405760000,5109094217170944000,1605715325396582400000,3065456530302566400000
 
 mov $2,$0
-seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
 add $2,1
 gcd $1,$2
+seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
 div $0,$1

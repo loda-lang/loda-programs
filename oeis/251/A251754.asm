@@ -3,17 +3,17 @@
 
 mov $5,$0
 mul $0,2
-sub $0,$5
 add $0,5
+sub $0,$5
 mov $2,$0
 add $0,8
 add $0,$2
-mov $1,2
 mov $4,$0
 mul $4,$0
 mul $5,4
 add $5,1
 mul $5,$4
+mov $1,2
 add $1,$5
 mov $5,2
 lpb $0

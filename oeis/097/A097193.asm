@@ -4,6 +4,6 @@
 
 add $0,1
 seq $0,305991 ; Expansion of (1-27*x)^(1/9).
-gcd $2,$0
-mov $0,$2
+gcd $1,$0
+mov $0,$1
 div $0,3

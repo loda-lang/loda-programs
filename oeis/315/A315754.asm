@@ -14,7 +14,7 @@ lpe
 mul $0,2
 trn $0,1
 lpb $2
-  add $0,4
   sub $2,1
+  add $0,4
 lpe
 add $0,1

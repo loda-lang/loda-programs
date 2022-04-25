@@ -4,9 +4,9 @@
 
 mov $1,$0
 mov $2,$0
-div $2,2
 mov $4,1
 add $0,1
+div $2,2
 lpb $2
   div $2,2
   mul $4,3

@@ -7,17 +7,15 @@ lpb $0
   sub $0,1
   add $2,$4
   sub $2,$5
-  add $4,$1
   mov $5,$1
+  add $5,$2
   mov $6,$4
   add $1,$3
   add $1,2
   mov $3,$4
   add $3,$5
   mov $4,$2
-  sub $7,$6
-  mov $2,$3
-  add $2,$7
+  mov $2,$7
   mov $5,$4
   mov $7,$6
   add $4,$1

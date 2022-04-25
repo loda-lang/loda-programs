@@ -10,34 +10,32 @@ lpb $0
   trn $0,1
 lpe
 mov $3,$4
-mov $5,$4
 lpb $3
   sub $3,1
-  add $6,$5
+  add $6,$4
 lpe
+mov $5,$6
 mov $2,40
-mov $5,$6
 lpb $2
-  add $1,$5
   sub $2,1
+  add $1,$6
 lpe
-mov $3,$4
 mov $6,0
+mov $3,$4
 lpb $3
   sub $3,1
   add $6,$5
 lpe
-mov $3,$4
 mov $5,$6
 mov $6,0
+mov $3,$4
 lpb $3
   sub $3,1
   add $6,$5
 lpe
 mov $2,80
-mov $5,$6
 lpb $2
-  add $1,$5
   sub $2,1
+  add $1,$6
 lpe
 mov $0,$1

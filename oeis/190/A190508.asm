@@ -9,10 +9,10 @@ add $1,2
 seq $1,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
 mov $2,$1
 add $2,2
+add $3,$2
 add $0,$2
 div $0,2
 add $0,$1
 mod $0,2
-add $3,$2
-add $0,$3
 sub $0,3
+add $0,$3

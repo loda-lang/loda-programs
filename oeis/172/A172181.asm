@@ -10,13 +10,12 @@ lpb $2
   mov $3,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   lpb $3
-    add $1,3
     trn $3,9
+    add $1,3
   lpe
   add $1,3
 lpe
 div $1,2
 mov $0,$1
-sub $0,5
 mul $0,2
-add $0,9
+sub $0,1

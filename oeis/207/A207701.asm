@@ -12,13 +12,12 @@ lpb $0
   cmp $3,$2
   cmp $3,0
   mul $3,$0
-  sub $0,1
   add $4,$1
+  sub $0,1
   add $1,$3
   mov $2,1
 lpe
 bin $4,2
 mov $0,$4
-sub $0,3
 mul $0,8
-add $0,25
+add $0,1

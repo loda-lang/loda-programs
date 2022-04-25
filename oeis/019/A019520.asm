@@ -1,13 +1,12 @@
 ; A019520: a(n) is the concatenation of the first n positive even numbers.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w2)
 ; 2,24,246,2468,246810,24681012,2468101214,246810121416,24681012141618,2468101214161820,246810121416182022,24681012141618202224,2468101214161820222426,246810121416182022242628,24681012141618202224262830,2468101214161820222426283032
 
 mov $1,1
-mov $5,1
+mov $3,1
 add $0,2
 lpb $0
   sub $0,1
-  mov $3,$5
   div $3,$1
   mul $3,$1
   mul $3,9
@@ -16,8 +15,8 @@ lpb $0
   mul $3,$1
   mov $4,$2
   add $4,$3
-  add $5,1
+  add $5,2
   mov $2,$5
-  add $5,1
+  mov $3,$5
 lpe
 mov $0,$4

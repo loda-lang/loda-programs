@@ -5,15 +5,15 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
-  mov $1,0
   sub $5,1
+  mov $1,0
+  mov $0,$3
   add $0,$5
   trn $0,1
   lpb $0
     mov $2,$0
-    sub $0,1
     seq $2,150 ; Number of dissections of an n-gon, rooted at an exterior edge, asymmetric with respect to that edge.
+    sub $0,1
     add $1,$2
   lpe
   mov $0,$1

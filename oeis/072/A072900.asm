@@ -4,8 +4,8 @@
 seq $0,40 ; The prime numbers.
 mov $1,$0
 lpb $1
-  mul $0,4
   div $1,2
   mod $1,2
+  mul $0,4
 lpe
 div $0,4
