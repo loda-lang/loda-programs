@@ -9,9 +9,9 @@ lpb $3
   add $1,$2
   mul $1,$3
   mul $2,$3
-  add $1,$2
   mov $5,$0
   max $5,1
+  add $1,$2
   div $1,$5
   mul $5,2
   div $2,$5
@@ -21,10 +21,9 @@ lpb $3
 lpe
 mov $4,10
 pow $4,$0
-add $1,$4
 div $2,$4
-cmp $6,0
-add $2,$6
+add $2,1
+add $1,$4
 div $1,$2
 mod $1,10
 mov $0,$1

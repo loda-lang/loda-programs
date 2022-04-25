@@ -8,19 +8,19 @@ mov $3,$0
 lpb $3
   mov $5,$0
   lpb $5
-    mov $3,$4
-    mov $6,$1
+    mov $4,$1
+    mod $4,$2
+    cmp $4,0
     div $1,$2
-    mod $6,$2
-    cmp $6,0
-    sub $5,$6
+    mov $3,0
+    sub $5,$4
   lpe
   add $2,1
-  mov $6,$1
+  mov $4,$1
   lpb $3
-    cmp $6,1
-    cmp $6,0
-    sub $3,$6
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
   lpe
 lpe
 mod $0,$2

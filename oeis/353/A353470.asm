@@ -1,7 +1,9 @@
 ; A353470: a(n) = 1 if the number of its divisors, tau(n), is divisible by 3, otherwise 0.
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w1)
 ; 0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,1
 
-seq $0,210826 ; G.f.: Sum_{n>=1} a(n)*x^n/(1 - x^n) = Sum_{n>=1} x^(n^3).
-add $0,11
-mod $0,2
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+gcd $1,201
+mov $0,$1
+div $0,2

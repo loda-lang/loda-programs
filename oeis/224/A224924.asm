@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   mul $2,2
   seq $2,222423 ; Sum of (n AND k) for k = 0, 1, 2, ..., n, where AND is the bitwise AND operator.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -6,16 +6,16 @@ lpb $2
   sub $2,1
   mov $4,4
   lpb $3
-    sub $0,4
     sub $3,4
+    sub $0,4
     mov $4,$3
   lpe
   trn $0,$4
   lpb $4
+    sub $4,4
     add $1,$2
     add $1,$0
     mov $3,4
-    sub $4,4
   lpe
   sub $2,1
 lpe

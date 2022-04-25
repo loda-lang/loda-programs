@@ -8,9 +8,9 @@ lpb $1
   mov $2,$0
   lpb $2
     sub $2,$1
-    div $1,712
     mul $2,2
     sub $2,1
+    div $1,712
     mov $3,$0
     seq $3,81688 ; 0 followed by A030124 - 1.
   lpe

@@ -1,4 +1,4 @@
-; A353471: a(n) = 1 if the number of the divisors of n, tau(n), is equal to the twice number of distinct prime factors of n, 2*omega(n), otherwise 0.
+; A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 ; Submitted by Jamie Morken(w2)
 ; 0,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
 

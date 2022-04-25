@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $0,$2
+  sub $1,1
 lpe
 add $0,1

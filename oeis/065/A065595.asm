@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,339194 ; Sum of all squarefree semiprimes with greater prime factor prime(n).
+  sub $0,1
   add $1,$2
 lpe
 mul $1,2

@@ -6,8 +6,8 @@ mov $1,1
 mov $2,1
 lpb $0
   lpb $3
-    add $2,1
     mov $3,1
+    add $2,1
     mov $4,$1
     gcd $4,$2
     cmp $4,1

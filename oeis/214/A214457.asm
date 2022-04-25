@@ -10,8 +10,8 @@ lpe
 add $0,1
 add $1,4
 bin $1,$0
-add $0,1
 mul $1,20
+add $0,1
 add $2,3
 bin $2,$0
 add $0,1

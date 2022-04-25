@@ -1,16 +1,15 @@
 ; A265165: a(n) = sum of the n-th column of the array A265163(n,k). See Comments for more details.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,2,7,32,179,1182,8993,77440,744425,7901410,91774375,1157782560,15764338315,230416499390,3598316747905,59792454064640,1053360827319185,19610513077334850,384703418451703175,7931544941793536800,171459202078545968675,3877969156687438765150
 
-mov $3,1
+mov $2,1
 lpb $0
-  mov $1,$0
   sub $0,1
   mov $4,$3
   mul $3,$1
-  sub $3,$4
   add $3,$2
+  add $1,1
   mul $2,$1
   add $2,$4
 lpe
-mov $0,$2
+mov $0,$3
