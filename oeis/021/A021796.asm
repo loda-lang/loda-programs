@@ -4,10 +4,10 @@
 mov $1,$0
 mul $1,2
 lpb $1
-  mov $0,$2
   pow $1,2
   sub $1,1
   mod $1,8
+  mov $0,$2
   mov $2,$1
 lpe
 trn $0,1

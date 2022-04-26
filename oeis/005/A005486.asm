@@ -17,10 +17,10 @@ lpb $3
   add $6,$5
   sub $6,1
 lpe
-mov $1,$5
 mov $4,10
 pow $4,$0
 div $2,$4
+mov $1,$5
 div $1,$2
 mov $0,$1
 mod $0,10

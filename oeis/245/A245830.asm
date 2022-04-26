@@ -16,8 +16,8 @@ lpb $0
 lpe
 add $1,$4
 lpb $5
-  add $1,4
   sub $5,1
+  add $1,4
 lpe
 add $1,4
 mov $0,$1

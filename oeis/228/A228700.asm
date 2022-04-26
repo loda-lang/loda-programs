@@ -5,7 +5,7 @@
 mov $1,$0
 seq $0,337314 ; a(n) is the number of n-digit positive integers with exactly four distinct base 10 digits.
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe
 div $0,4536

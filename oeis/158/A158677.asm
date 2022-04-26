@@ -5,14 +5,14 @@
 mod $0,6
 lpb $0
   mov $2,$0
-  mod $0,2
   seq $2,6094 ; Products of 2 successive primes.
   sub $2,2
-  mov $3,$2
+  mod $0,2
+  mov $1,$2
   mul $2,2
-  min $3,1
-  add $3,$2
+  min $1,1
+  add $1,$2
 lpe
-add $0,$3
+add $0,$1
 add $0,3
 mod $0,10

@@ -6,57 +6,55 @@ add $0,1
 mul $0,4
 lpb $0
   sub $0,1
-  add $1,$0
   add $2,2
+  add $1,$0
   add $1,$2
 lpe
 sub $1,10
-mov $4,$3
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$3
 lpe
 mov $4,$5
 mov $7,38
 lpb $7
-  add $1,$4
   sub $7,1
+  add $1,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
 mov $4,$5
 mov $7,37
 lpb $7
-  add $1,$4
   sub $7,1
+  add $1,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
 mov $4,$5
 mov $7,10
 lpb $7
-  add $1,$4
   sub $7,1
+  add $1,$5
 lpe
 mov $5,0
 mov $6,$3
 lpb $6
-  add $5,$4
   sub $6,1
+  add $5,$4
 lpe
-mov $4,$5
 mov $7,1
 lpb $7
-  add $1,$4
   sub $7,1
+  add $1,$5
 lpe
 mov $0,$1

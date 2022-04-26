@@ -12,9 +12,9 @@ lpb $10
     mov $6,$0
     mov $8,2
     lpb $8
-      mov $0,$6
-      mov $5,0
       sub $8,1
+      mov $5,0
+      mov $0,$6
       add $0,$8
       lpb $0
         add $2,5
@@ -30,11 +30,11 @@ lpb $10
       add $7,$9
       mov $11,$5
     lpe
-    mov $3,$12
     min $6,1
     mul $6,$11
     mov $11,$7
     sub $11,$6
+    mov $3,$12
     mul $3,$11
     add $1,$3
   lpe

@@ -2,39 +2,39 @@
 ; Submitted by Christian Krause
 ; 0,0,0,0,1,2,5,9,16,24,37,51,71,93
 
-mov $6,$0
 mov $8,$0
+mov $6,$0
 lpb $6
-  mov $0,$8
   sub $6,1
+  mov $0,$8
   sub $0,$6
-  mov $9,$0
   mov $11,0
   mov $12,$0
+  mov $9,$0
   lpb $9
-    mov $0,$12
-    mov $1,0
     sub $9,1
+    mov $0,$12
     sub $0,$9
+    mov $1,0
     mov $2,2
     mov $5,1
     mov $10,0
     lpb $0
       sub $0,2
-      mov $3,$0
       add $10,$2
+      mov $3,$0
       lpb $3
         mov $4,$0
-        add $0,$5
-        div $0,2
         mod $4,$2
         cmp $4,0
+        add $0,$5
+        div $0,2
         mov $5,2
         lpb $10
+          dif $10,2
           add $2,1
           cmp $4,0
           sub $3,$4
-          dif $10,2
         lpe
         div $0,$2
         div $10,2

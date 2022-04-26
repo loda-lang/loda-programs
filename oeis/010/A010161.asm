@@ -4,8 +4,8 @@
 
 mul $0,2
 seq $0,10158 ; Continued fraction for sqrt(85).
-mov $2,1
-sub $2,$0
-div $2,2
-pow $2,$2
-add $0,$2
+mov $1,1
+sub $1,$0
+div $1,2
+pow $1,$1
+add $0,$1

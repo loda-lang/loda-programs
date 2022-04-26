@@ -4,7 +4,7 @@
 
 mov $1,2
 pow $1,$0
-seq $0,21024 ; Expansion of 1/((1-x)(1-2x)(1-3x)(1-5x)).
 mul $1,2
+seq $0,21024 ; Expansion of 1/((1-x)(1-2x)(1-3x)(1-5x)).
 mul $0,$1
 div $0,2

@@ -11,8 +11,8 @@ lpb $0
   trn $0,1
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $0,1
-  add $2,$0
+  add $1,$0
   mov $0,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

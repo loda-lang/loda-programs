@@ -7,19 +7,18 @@ lpb $3
   add $0,$3
   mov $5,2
   lpb $5
+    sub $5,1
     sub $0,1
     mov $2,$0
     max $2,0
     seq $2,24903 ; Numbers k such that 7*k - 4 is prime.
-    sub $5,1
-    mov $6,$5
-    mul $6,$2
-    add $4,$6
+    mov $1,$5
+    mul $1,$2
+    add $4,$1
   lpe
   mov $0,1
   mov $3,0
 lpe
 mov $0,$4
-sub $0,3
 mul $0,21
-add $0,51
+sub $0,12
