@@ -6,10 +6,10 @@ mov $4,$0
 lpb $0
   sub $0,1
   add $1,1
-  mul $2,$1
   mov $3,$4
   add $3,$0
   bin $3,$0
+  mul $2,$1
   add $2,$3
   add $4,$1
   add $4,$0

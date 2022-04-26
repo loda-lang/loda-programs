@@ -6,6 +6,6 @@ mov $1,$0
 trn $1,1
 mov $2,$0
 add $2,$0
-pow $0,$1
 bin $2,$1
+pow $0,$1
 mul $0,$2

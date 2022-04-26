@@ -1,4 +1,4 @@
-; A134237: Triangle read by rows, a(1) = 1, n-th row n terms of: (2n-1, 2n, 2n+1..., followed by n).
+; A134237: Triangle read by rows, a(1) = 1, n-th row n terms of: (2n-1, 2n, 2n+1, ..., followed by n).
 ; Submitted by Jamie Morken(s1)
 ; 1,3,2,5,6,3,7,8,9,4,9,10,11,12,5,11,12,13,14,15,6,13,14,15,16,17,18,7,15,16,17,18,19,20,21,8,17,18,19,20,21,22,23,24,9,19,20,21,22,23,24,25,26,27,10,21,22,23,24,25,26,27,28,29,30,11,23,24,25,26,27,28,29,30,31,32,33,12
 
@@ -8,11 +8,11 @@ lpb $0
   sub $0,$2
 lpe
 add $0,1
-mov $3,$0
+mov $1,$0
 add $0,$2
-lpb $3
+lpb $1
+  mov $1,1
   add $2,$0
-  mov $3,1
 lpe
 mov $0,$2
 add $0,1

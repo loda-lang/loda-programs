@@ -1,21 +1,25 @@
 ; A010596: Decimal expansion of cube root of 24.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w3)
 ; 2,8,8,4,4,9,9,1,4,0,6,1,4,8,1,6,7,6,4,6,4,3,2,7,6,6,2,1,5,6,0,2,1,9,1,7,6,7,8,3,7,3,8,5,0,6,9,9,8,7,0,1,1,5,5,0,9,2,8,3,2,3,8,9,0,8,3,3,7,5,1,9,3,6,5,9,9,9,4,6,7,9,7,0,9,5,1,0,9,5,9,4,1,1,2,9,0,5,1,3
 
-mov $2,1
 mov $3,$0
-mul $3,4
+mul $3,5
+add $3,2
 lpb $3
   sub $3,1
-  add $1,$5
-  add $5,$2
-  add $5,$2
-  add $1,$5
+  add $6,$2
+  add $2,$7
+  cmp $1,1
+  add $1,$6
+  add $1,$2
+  div $1,38
+  mul $1,19
   add $2,$1
-  mul $1,2
+  add $5,$2
+  add $6,$5
+  add $7,$3
 lpe
-mov $1,1
-add $1,$5
+mov $1,$5
 mul $1,2
 mov $4,10
 pow $4,$0

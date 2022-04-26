@@ -6,11 +6,11 @@ mov $2,$0
 mov $3,$0
 add $3,1
 lpb $3
+  sub $3,1
   mov $0,$2
   add $0,1
   seq $0,3463 ; a(n) = (5^n - 1)/4.
   mul $1,2
   add $1,$0
-  sub $3,1
 lpe
 mov $0,$1

@@ -4,18 +4,18 @@
 
 add $0,1
 mov $4,$0
+seq $4,40 ; The prime numbers.
 sub $0,1
 seq $0,40 ; The prime numbers.
-seq $4,40 ; The prime numbers.
 mov $2,$4
 seq $2,70939 ; Length of binary representation of n.
 lpb $2
+  sub $2,1
   mov $3,$0
-  div $0,2
   add $3,$4
   mod $3,2
+  div $0,2
   add $1,$3
-  sub $2,1
   div $4,2
 lpe
 mov $0,$1

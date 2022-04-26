@@ -6,11 +6,11 @@ mov $1,2
 mov $2,2
 mov $3,$0
 lpb $3
-  mul $1,$3
+  cmp $6,0
   mul $2,$3
   mul $2,5
-  cmp $6,0
   add $5,$6
+  mul $1,$3
   div $1,$5
   mul $1,9
   div $2,$5

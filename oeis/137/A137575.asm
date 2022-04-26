@@ -6,9 +6,9 @@ lpb $0
   add $2,2
   add $1,$2
   add $1,1
+  add $2,1
   trn $0,$1
   sub $1,1
-  add $2,1
   trn $1,$2
   add $1,$2
   add $2,1

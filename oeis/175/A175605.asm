@@ -4,10 +4,10 @@
 
 add $0,1
 pow $0,3
-mov $1,$0
 mov $2,$0
+mov $1,$0
 lpb $1
-  mul $0,10
   div $1,10
+  mul $0,10
 lpe
 add $0,$2

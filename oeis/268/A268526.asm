@@ -6,21 +6,21 @@ mov $6,$0
 mov $8,$0
 add $8,1
 lpb $8
-  mov $0,$6
   sub $8,1
+  mov $0,$6
   sub $0,$8
-  add $0,1
   mov $1,1
   mov $2,1
+  add $0,1
   lpb $0
     sub $0,1
     mov $3,$0
     lpb $3
-      add $0,$3
-      cmp $4,3
       mov $5,$2
-      add $2,1
       cmp $5,1
+      add $0,$3
+      add $2,1
+      cmp $4,3
       max $4,$5
       sub $3,$4
     lpe

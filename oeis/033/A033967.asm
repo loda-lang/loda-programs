@@ -11,7 +11,6 @@ lpb $1
   sub $3,$2
   lpb $2
     sub $2,1
-    dif $0,2
     mul $0,21
     add $0,3
   lpe

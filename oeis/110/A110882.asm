@@ -3,12 +3,12 @@
 
 mov $2,$0
 add $0,6
-mov $1,7142
 mov $3,16384
 div $3,$0
 div $3,3
 mul $3,3
+mov $1,7142
 div $1,$3
-sub $1,1
 add $1,$2
+sub $1,1
 mov $0,$1

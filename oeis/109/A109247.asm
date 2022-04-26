@@ -10,9 +10,9 @@ lpb $0
   sub $1,$5
   sub $3,$4
   mov $4,$2
+  add $5,$2
   mov $2,$3
   mul $2,$1
-  add $5,$4
   mov $3,$5
   bin $4,$5
   add $4,$1

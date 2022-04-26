@@ -5,8 +5,8 @@
 add $0,2
 lpb $0
   mov $2,$0
-  trn $0,3
   seq $2,208901 ; Number of bitstrings of length n (with at least two runs) where the last two runs have different lengths.
+  trn $0,3
   add $1,$2
 lpe
 div $1,4

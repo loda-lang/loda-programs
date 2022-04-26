@@ -1,10 +1,24 @@
 ; A034968: Minimal number of factorials that add to n.
+; Submitted by Jamie Morken(w4)
 ; 0,1,1,2,2,3,1,2,2,3,3,4,2,3,3,4,4,5,3,4,4,5,5,6,1,2,2,3,3,4,2,3,3,4,4,5,3,4,4,5,5,6,4,5,5,6,6,7,2,3,3,4,4,5,3,4,4,5,5,6,4,5,5,6,6,7,5,6,6,7,7,8,3,4,4,5,5,6,4,5,5,6,6,7,5,6,6,7,7,8,6,7,7,8,8,9,4,5,5,6
 
-lpb $0
-  trn $0,1
-  seq $0,212598 ; a(n) = n - m!, where m is the largest number such that m! <= n.
-  add $1,17
+mov $2,1
+mov $3,1
+mov $6,1
+mov $8,$0
+lpb $8
+  sub $8,$6
+  add $2,1
+  mov $4,$3
+  mul $4,$2
+  mov $5,$0
+  mod $5,$4
+  sub $0,$5
+  div $5,$3
+  add $1,$5
+  mov $3,$4
+  mov $7,$0
+  cmp $7,0
+  sub $6,$7
 lpe
-div $1,17
 mov $0,$1
