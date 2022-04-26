@@ -5,18 +5,18 @@
 mov $4,$0
 mov $6,2
 lpb $6
-  mov $0,$4
-  mov $1,0
   sub $6,1
+  mov $0,$4
   add $0,$6
   sub $0,1
+  mov $1,0
   mov $2,$0
   lpb $2
+    sub $2,1
     mov $0,$1
     add $0,9
     seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
     add $1,$0
-    sub $2,1
   lpe
   mov $0,$1
   add $0,9

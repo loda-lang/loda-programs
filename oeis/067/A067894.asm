@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,204093 ; Numbers whose set of base-10 digits is {0,6}.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

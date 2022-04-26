@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,187535 ; Central Lah numbers: a(n) = A105278(2*n,n) = A008297(2*n,n).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -12,8 +12,8 @@ dif $2,3
 div $2,11
 mov $6,$2
 add $6,$0
-mov $1,$6
 mov $3,$5
 mul $3,4
+mov $1,$6
 add $1,$3
 mov $0,$1

@@ -4,11 +4,11 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
-  mul $2,2
-  seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
-  mul $2,2
-  mul $0,$2
+  mov $1,$0
+  mul $1,2
+  seq $1,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  mul $1,2
+  mul $0,$1
   sub $0,2
   div $0,2
 lpe

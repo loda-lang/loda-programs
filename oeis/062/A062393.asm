@@ -4,13 +4,12 @@
 mov $1,2
 lpb $0
   mov $2,$0
-  sub $0,2
   trn $2,1
   seq $2,22521 ; a(n) = (n+1)^5 - n^5.
+  sub $0,2
   add $1,$2
 lpe
 add $0,1
-add $1,1
+sub $1,3
 add $1,$0
-sub $1,4
 mov $0,$1

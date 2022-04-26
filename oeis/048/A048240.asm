@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,2
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   add $0,$3
   trn $0,1
   seq $0,48241 ; Number of colors that can be mixed with n >= 0 units of yellow, blue, red.

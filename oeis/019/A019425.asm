@@ -4,8 +4,8 @@
 lpb $0
   sub $0,1
   mov $1,$0
-  mod $0,2
   mul $1,2
+  mod $0,2
   bin $2,$1
 lpe
 add $1,$2

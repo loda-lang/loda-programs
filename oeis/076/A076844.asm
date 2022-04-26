@@ -3,9 +3,9 @@
 
 trn $0,1
 seq $0,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
-mov $2,$0
-cmp $2,0
-add $0,$2
+mov $1,$0
+cmp $1,0
+add $0,$1
 seq $0,115180 ; Beatty sequence for (Champernowne constant)*10 = 1.234567891011121314....
 mul $0,2
 sub $0,3

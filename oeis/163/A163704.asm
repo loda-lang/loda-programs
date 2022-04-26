@@ -3,9 +3,9 @@
 
 lpb $0
   mov $1,$0
-  cmp $0,0
   seq $1,23548 ; Convolution of natural numbers >= 2 and Fibonacci numbers.
   sub $1,1
+  cmp $0,0
 lpe
 add $1,1
 mov $0,$1

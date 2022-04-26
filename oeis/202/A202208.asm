@@ -5,6 +5,5 @@
 seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
 add $0,1
 bin $0,2
-sub $0,1
 mul $0,8
-add $0,9
+add $0,1

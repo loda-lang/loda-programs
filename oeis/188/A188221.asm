@@ -5,8 +5,7 @@
 mul $0,2
 seq $0,139764 ; Smallest term in Zeckendorf representation of n.
 sub $0,1
-mov $1,4
 lpb $0
-  mov $0,$1
+  mov $0,4
 lpe
 mod $0,2

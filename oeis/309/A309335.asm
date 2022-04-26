@@ -3,7 +3,7 @@
 
 pow $0,3
 mul $0,7
-mov $2,2
-gcd $2,$0
-add $2,6
-div $0,$2
+mov $1,2
+gcd $1,$0
+add $1,6
+div $0,$1

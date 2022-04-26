@@ -6,9 +6,9 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,142238 ; Numerators of continued fraction convergents to sqrt(3/2).
-  add $3,$2
-  add $3,$2
+  add $1,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 mul $0,2
 add $0,3

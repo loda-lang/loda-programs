@@ -5,8 +5,8 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   add $0,$5
   trn $0,1
   add $0,1
@@ -15,9 +15,9 @@ lpb $5
   add $2,$0
   seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $0,$2
-  mov $6,$5
-  mul $6,$2
-  add $4,$6
+  mov $1,$5
+  mul $1,$2
+  add $4,$1
 lpe
 min $3,1
 mul $3,$0

@@ -17,11 +17,9 @@ lpb $2
   mul $2,$4
 lpe
 div $1,3
-sub $1,4
 mul $1,2
-add $1,3
+sub $1,5
 div $1,2
-add $1,1
 mul $1,3
-add $1,5
+add $1,8
 mov $0,$1
