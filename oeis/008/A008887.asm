@@ -1,13 +1,12 @@
 ; A008887: Aliquot sequence starting at 60.
-; Submitted by Jamie Morken(w4)
+; Submitted by Jamie Morken(w1)
 ; 60,108,172,136,134,70,74,40,50,43,1,0
 
-mov $1,2
-seq $1,171527 ; Numerator of (n-th composite/n).
+seq $1,171524 ; a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
+add $1,3
 mov $2,$0
-mov $0,9
+mov $0,12
 mul $0,$1
-sub $0,12
 lpb $2
   sub $2,1
   trn $0,1

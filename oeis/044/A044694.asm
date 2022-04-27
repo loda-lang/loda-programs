@@ -5,6 +5,5 @@
 add $0,1
 seq $0,44324 ; Numbers n such that string 8,1 occurs in the base 9 representation of n but not of n-1.
 div $0,3
-sub $0,50
 mul $0,3
-add $0,59
+sub $0,91

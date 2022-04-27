@@ -5,25 +5,25 @@
 mov $10,$0
 mov $12,2
 lpb $12
-  mov $0,$10
-  mov $7,0
   sub $12,1
+  mov $0,$10
   add $0,$12
   sub $0,1
   mov $6,$0
+  mov $7,0
   mov $8,2
   lpb $8
-    mov $0,$6
-    mov $4,0
     sub $8,1
+    mov $0,$6
     add $0,$8
     trn $0,1
-    mov $3,$0
+    mov $4,0
     mov $5,$0
+    mov $3,$0
     lpb $3
-      mov $2,$5
-      seq $2,26225 ; a(n) = (1/3)*(s(n+1) - 1), where s = A026224.
       sub $3,1
+      mov $2,$5
+      seq $2,26225 ; Numbers of the form 3^i * (3k+1).
       add $4,$2
       sub $5,1
     lpe
@@ -37,9 +37,9 @@ lpb $12
   mul $6,$0
   mov $0,$7
   sub $0,$6
-  mov $13,$12
-  mul $13,$0
-  add $11,$13
+  mov $1,$12
+  mul $1,$0
+  add $11,$1
 lpe
 min $10,1
 mul $10,$0

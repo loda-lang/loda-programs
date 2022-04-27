@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,46897 ; Sum of divisors of n that are not divisible by 4.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1
