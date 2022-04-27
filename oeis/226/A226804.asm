@@ -5,6 +5,6 @@
 mov $1,$0
 seq $0,6101 ; Gaussian binomial coefficient [ n,3 ] for q=3.
 lpb $1
-  mul $0,3
   sub $1,1
+  mul $0,3
 lpe

@@ -7,7 +7,7 @@ mov $1,3
 pow $1,$0
 mov $2,2
 pow $2,$0
+add $2,1
 mov $0,$1
 add $0,1
-add $2,1
 gcd $0,$2

@@ -13,8 +13,7 @@ lpb $0
   mov $2,1
   sub $2,$4
   add $2,$1
-  add $5,$6
-  add $5,$4
+  add $2,$5
   mov $1,$3
   mov $3,$5
   add $5,$7

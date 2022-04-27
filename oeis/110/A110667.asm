@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,110666 ; Sequence is {a(1,n)}, where a(m,n) is defined at sequence A110665.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

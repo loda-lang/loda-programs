@@ -4,6 +4,4 @@
 
 seq $0,83368 ; A Fibbinary system represents a number as a sum of distinct Fibonacci numbers (instead of distinct powers of two). Using representations without adjacent zeros, a(n) = the highest bit-position which changes going from n-1 to n.
 seq $0,128209 ; Jacobsthal numbers(A001045) + 1.
-sub $0,2
 div $0,2
-add $0,1
