@@ -6,15 +6,15 @@ mov $2,$0
 add $2,1
 mov $4,7
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   trn $0,1
   seq $0,138692 ; Numbers of the form 86+p^2 (where p is a prime).
   gcd $3,5
   mul $3,$0
-  add $5,$3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1
 div $0,5
 sub $0,602

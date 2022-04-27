@@ -5,12 +5,12 @@
 mov $2,$0
 mov $3,6
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   add $0,$3
   max $0,0
   seq $0,88707 ; Semiprimes + 1.
-  add $0,$4
-  mov $4,$0
+  add $0,$1
+  mov $1,$0
 lpe
 sub $0,6

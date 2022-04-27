@@ -1,5 +1,5 @@
 ; A048494: Array T(k,n) read by antidiagonals: T(n,k) = 2^(n-1) * ((k+1)*n - 2k) + k + 1.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w2)
 ; 1,2,1,5,2,1,13,6,2,1,33,18,7,2,1,81,50,23,8,2,1,193,130,67,28,9,2,1,449,322,179,84,33,10,2,1,1025,770,451,228,101,38,11,2,1,2305,1794,1091,580,277,118,43,12,2,1,5121,4098,2563,1412,709
 
 lpb $0
@@ -7,16 +7,16 @@ lpb $0
   sub $0,$2
 lpe
 sub $2,$0
+mov $3,4
 mov $4,$0
 add $4,1
 mov $0,$2
 lpb $0
   sub $0,1
-  mul $4,2
-  add $1,2
   add $1,$3
-  mul $1,2
+  mul $4,2
   add $3,$4
+  mul $3,2
 lpe
 mov $0,$1
 div $0,4

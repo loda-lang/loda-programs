@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,103354 ; a(n) = floor(x), where x is the solution to x = 2^(n-x).
+  trn $0,2
   add $1,$2
 lpe
 add $1,1

@@ -4,8 +4,8 @@
 pow $0,2
 mul $0,3
 lpb $0
-  sub $0,$1
   sub $0,1
+  sub $0,$1
   add $1,1
   trn $0,$1
 lpe

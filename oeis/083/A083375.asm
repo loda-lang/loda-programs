@@ -6,8 +6,8 @@ sub $0,2
 mov $1,2
 mov $3,4
 lpb $0
-  sub $0,$1
   sub $0,1
+  sub $0,$1
   trn $0,$3
   add $1,1
   add $2,5

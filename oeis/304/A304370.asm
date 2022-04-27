@@ -10,10 +10,10 @@ lpb $0
   mul $2,2
 lpe
 sub $3,$2
-mov $4,$2
+mov $1,$2
 pow $2,2
-add $4,$2
-div $4,3
-add $3,$4
+add $1,$2
+div $1,3
+add $3,$1
 mov $0,$3
 add $0,1

@@ -7,17 +7,17 @@ mov $4,$0
 lpb $0
   mov $3,$0
   lpb $3
-    mov $2,2
     sub $3,2
+    mov $2,2
   lpe
   lpb $0
     dif $0,$2
-    mov $5,$4
+    mov $1,$4
   lpe
-  dif $5,$2
-  pow $5,2
-  sub $5,1
-  mul $4,$5
+  dif $1,$2
+  pow $1,2
+  sub $1,1
+  mul $4,$1
 lpe
 mov $0,$4
 mul $0,2

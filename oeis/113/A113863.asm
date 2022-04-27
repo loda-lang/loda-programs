@@ -1,5 +1,5 @@
 ; A113863: Expansion of Molien series for representation Sym^2(R^n) of the automorphism group of the lattice E_8.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jamie Morken(l1)
 ; 1,1,2,3,6,9,18,31,65,121
 
 mov $2,1
@@ -19,9 +19,9 @@ lpb $0
   add $2,$1
   add $5,$4
   add $6,$5
-  add $7,$4
   mov $1,$3
   sub $3,$7
+  add $4,$2
 lpe
-mov $0,$1
+mov $0,$3
 add $0,1
