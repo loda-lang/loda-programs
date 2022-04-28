@@ -9,9 +9,9 @@ add $2,1
 mod $2,6
 mov $3,2
 lpb $3
+  dif $3,2
   cmp $2,0
   add $2,14
-  dif $3,2
 lpe
 add $0,$2
 sub $0,11

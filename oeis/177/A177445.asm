@@ -5,8 +5,8 @@
 mov $1,2
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,120562 ; Sum of binomial coefficients binomial(i+j, i) modulo 2 over all pairs (i,j) of positive integers satisfying 3i+j=n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -2,25 +2,25 @@
 ; Submitted by Jamie Morken(w2)
 ; 1,2,-1,3,1,-2,-1,4,1,2,-1,-3,1,-2,-1,5,1,2,-1,3,1,-2,-1,-4,1,2,-1,-3,1,-2,-1,6,1,2,-1,3,1,-2,-1,4,1,2,-1,-3,1,-2,-1,-5,1,2,-1,3,1,-2,-1,-4,1,2,-1,-3,1,-2,-1,7,1,2,-1,3,1,-2,-1,4,1,2,-1,-3,1,-2,-1,5,1,2,-1,3,1,-2,-1,-4,1,2,-1,-3,1,-2,-1,-6,1,2,-1,3
 
-mov $5,2
 mov $6,$0
+mov $5,2
 lpb $5
-  mov $0,$6
   sub $5,1
+  mov $0,$6
   add $0,$5
   trn $0,1
   mov $3,1
   lpb $3
+    sub $3,1
     mov $2,$0
     seq $2,227192 ; Sum of the partial sums of the run lengths of binary expansion of n, when starting scanning from the least significant end; Row sums of A227188 and A227738.
-    sub $3,1
   lpe
-  mov $0,$2
   mov $4,$5
   mul $4,$2
-  add $7,$4
+  mov $0,$2
+  add $1,$4
 lpe
 min $6,1
 mul $6,$0
-mov $0,$7
+mov $0,$1
 sub $0,$6

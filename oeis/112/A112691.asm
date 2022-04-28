@@ -7,9 +7,9 @@ lpb $0
   seq $2,87213 ; Expansion of (1+x-4*x^2) / ((1+x)*(1-4*x^2)).
   add $3,$2
   div $3,2
-  mov $4,$2
-  min $4,1
-  mov $0,$4
+  mov $1,$2
+  min $1,1
+  mov $0,$1
   add $2,$3
   sub $2,1
 lpe

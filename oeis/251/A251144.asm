@@ -5,6 +5,5 @@
 seq $0,259216 ; Number of (n+1) X (2+1) 0..1 arrays with each 2 X 2 subblock having clockwise pattern 0000 0011 or 0101.
 mul $0,5
 div $0,3
-sub $0,21
 mul $0,2
-add $0,53
+add $0,11
