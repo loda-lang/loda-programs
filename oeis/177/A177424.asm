@@ -3,13 +3,13 @@
 
 mov $1,$0
 lpb $1
-  add $4,$1
+  add $2,$1
   mul $1,$0
-  bin $1,$4
+  bin $1,$2
   lpb $1
     dif $1,2
     add $3,1
   lpe
-  mov $1,$2
+  mov $1,0
 lpe
 mov $0,$3

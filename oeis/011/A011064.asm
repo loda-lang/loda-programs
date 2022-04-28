@@ -12,13 +12,13 @@ lpb $3
   cmp $1,1
   add $1,$6
   add $1,$2
-  div $1,56
-  mul $1,16
+  div $1,49
+  mul $1,14
   add $2,$1
   add $5,$2
   add $6,$5
-  add $7,$3
   add $7,$1
+  add $7,4
 lpe
 mov $1,$5
 mul $1,2

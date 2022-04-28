@@ -16,11 +16,11 @@ lpb $3
   add $2,$1
   sub $3,1
 lpe
-add $2,$1
-div $1,2
 mov $4,10
 pow $4,$0
+add $2,$1
 div $2,$4
+div $1,2
 div $1,$2
 mod $1,10
 mov $0,$1

@@ -5,8 +5,8 @@ pow $0,3
 mov $2,4
 sub $2,$0
 mul $0,2
-mov $3,$0
-cmp $3,0
-add $0,$3
+mov $1,$0
+cmp $1,0
+add $0,$1
 div $2,$0
 add $0,$2
