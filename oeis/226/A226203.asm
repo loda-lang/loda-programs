@@ -3,11 +3,11 @@
 
 lpb $0
   mov $2,$0
-  trn $0,5
   seq $2,131138 ; a(n)=log_3(A131137(n)).
   sub $2,3
   mov $3,$2
   min $3,1
+  trn $0,5
   add $1,$3
 lpe
 mul $1,2

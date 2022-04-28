@@ -9,9 +9,9 @@ lpb $0
   dif $2,2
   mov $3,$2
   dif $3,$0
-  sub $0,1
   cmp $3,$2
   cmp $3,0
+  sub $0,1
   add $4,$3
 lpe
 add $4,1

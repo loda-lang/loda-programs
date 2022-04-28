@@ -10,13 +10,13 @@ mov $3,$2
 add $3,3
 mov $4,$1
 mul $4,2
-mov $2,$4
 mov $5,$0
-add $0,1
 mul $5,$3
 mul $5,2
+mov $2,$4
 mul $2,$5
 add $2,6
+add $0,1
 mul $0,$2
 sub $0,90
 div $0,6

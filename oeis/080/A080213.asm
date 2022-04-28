@@ -11,9 +11,9 @@ lpb $3
     cmp $4,0
     add $2,$4
     mov $6,$1
-    div $1,$2
     mod $6,$2
     cmp $6,0
+    div $1,$2
     sub $5,$6
   lpe
   add $2,1

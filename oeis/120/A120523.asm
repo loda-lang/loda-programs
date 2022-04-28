@@ -1,11 +1,11 @@
 ; A120523: First differences of successive meta-Fibonacci numbers A120501.
 ; 1,0,0,1,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0
 
-mov $3,2
 mov $5,$0
+mov $3,2
 lpb $3
-  mov $0,$5
   sub $3,1
+  mov $0,$5
   add $0,$3
   trn $0,1
   seq $0,120501 ; Meta-Fibonacci sequence a(n) with parameters s=2.
