@@ -4,8 +4,8 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   add $0,$5
   trn $0,1
   seq $0,342871 ; a(n) = Sum_{k=1..n} floor(n^(1/k)), n >= 1.

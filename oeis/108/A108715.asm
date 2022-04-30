@@ -8,11 +8,11 @@ lpb $4
   sub $4,1
   add $0,$4
   mov $5,$0
-  sub $0,1
-  mov $3,$4
   max $5,0
   seq $5,3602 ; Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
   sub $5,1
+  sub $0,1
+  mov $3,$4
   mul $3,$5
   add $1,$3
 lpe

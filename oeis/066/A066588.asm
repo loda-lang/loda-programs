@@ -5,8 +5,8 @@ add $0,1
 pow $0,$0
 lpb $0
   mov $2,$0
-  div $0,10
   mod $2,10
-  add $3,$2
+  div $0,10
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

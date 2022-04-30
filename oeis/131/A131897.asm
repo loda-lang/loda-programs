@@ -10,7 +10,7 @@ lpb $0
 lpe
 mul $0,$2
 pow $3,$0
+mul $3,$1
 mov $0,2
 pow $0,$2
-mul $3,$1
 add $0,$3

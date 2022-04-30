@@ -7,6 +7,6 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-mov $0,2
 trn $1,1
+mov $0,2
 pow $0,$1

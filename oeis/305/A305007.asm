@@ -5,7 +5,7 @@
 mov $1,$0
 seq $1,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
 mov $2,$0
-add $0,1
 add $2,1
 gcd $1,$2
+add $0,1
 div $0,$1

@@ -2,9 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 6,10,13,15,17,18,18,21,23,25,26,26
 
-mul $0,3
 mov $1,1
 mov $2,4
+mul $0,3
 lpb $0
   sub $0,1
   mov $4,$2

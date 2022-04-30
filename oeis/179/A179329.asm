@@ -5,9 +5,9 @@ lpb $0
   mov $2,$0
   seq $2,46667 ; a(n) = A046666(n)/2.
   sub $0,$2
-  add $1,1
   mov $3,$0
   min $3,1
+  add $1,1
   add $1,$3
   add $1,$3
 lpe

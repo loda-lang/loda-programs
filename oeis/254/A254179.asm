@@ -2,9 +2,9 @@
 ; Submitted by Jamie Morken(w1)
 ; 2,4,1,8,8,8,4,3,2,6
 
+mov $1,2
 add $0,1
 mul $0,9
-mov $1,2
 lpb $0
   add $1,2
   trn $0,$1

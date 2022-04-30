@@ -9,8 +9,8 @@ lpb $0
   sub $2,$0
 lpe
 bin $1,$0
-mov $0,2
 add $2,1
+mov $0,2
 mul $0,$2
 bin $0,$2
 mul $1,16

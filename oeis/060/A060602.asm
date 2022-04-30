@@ -1,13 +1,13 @@
-; A060602: Number of d-dimensional tilings of unary zonotopes. The zonotope Z(D,d) is the projection of the D-dimensional hypercube onto the d-dimensional space and the tiles are the projections of the d-dimensional faces of the hypercube. Here the codimension, i.e., D-d, is constant = 3 and d varies from 0 to ...
-; 8,24,62,148,338,752,1646,3564,7658,16360
+; A060602: Number of tilings of the d-dimensional zonotope constructed from d+3 vectors.
+; 8,24,62,148,338,752,1646,3564,7658,16360,34790,73700,155618,327648,688094,1441756,3014618,6291416,13107158,27262932,56623058,117440464,243269582,503316428,1040187338,2147483592,4429184966
 
 add $0,1
 mov $1,$0
 lpb $1
-  mul $0,2
-  add $0,2
   sub $1,1
   add $2,2
+  mul $0,2
+  add $0,2
   add $0,$2
 lpe
 add $0,2

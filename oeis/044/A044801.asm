@@ -5,10 +5,10 @@
 mov $3,$0
 add $0,1
 mod $0,10
-mov $1,9
-cmp $1,$0
 mov $2,$3
 mul $2,100
+mov $1,9
+cmp $1,$0
 add $1,$2
 mov $0,$1
 add $0,88

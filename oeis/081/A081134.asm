@@ -5,6 +5,6 @@ mov $1,$0
 mul $0,2
 sub $0,$1
 mul $0,2
+add $0,1
 seq $1,80727 ; a(0) = 1; for n>0, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) == 2 mod 3".
 sub $0,$1
-add $0,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,165665 ; a(n) = (3*2^n - 2) * 2^n.
+  trn $0,2
   add $1,$2
 lpe
 div $1,8

@@ -7,8 +7,8 @@ mov $2,1
 lpb $0
   mov $3,$0
   lpb $3
-    sub $0,$2
     max $4,$2
+    sub $0,$2
     add $2,1
     sub $3,$4
   lpe

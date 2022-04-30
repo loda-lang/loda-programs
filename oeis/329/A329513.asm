@@ -4,8 +4,8 @@
 mul $0,2
 mov $1,4
 add $1,$0
-mul $0,7
 trn $1,10
 add $1,5
+mul $0,7
 div $0,$1
 add $0,1
