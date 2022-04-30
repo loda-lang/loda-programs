@@ -8,10 +8,10 @@ lpb $0
   cmp $3,34
   cmp $3,0
   mul $3,$0
-  sub $0,1
   sub $3,1
   mul $3,2
   pow $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

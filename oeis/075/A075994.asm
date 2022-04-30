@@ -4,10 +4,10 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,348388 ; Irregular triangle read by rows: T(n, k) = floor((n-k)/k), for k = 1, 2, ..., floor(n/2) and n >= 2.
   mov $0,0
-  max $2,0
-  seq $2,348388 ; Irregular triangle read by rows: T(n, k) = floor((n-k)/k), for k = 1, 2, ..., floor(n/2) and n >= 2.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

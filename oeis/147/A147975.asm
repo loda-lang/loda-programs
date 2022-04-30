@@ -8,7 +8,7 @@ div $1,2
 mov $2,2
 pow $2,$0
 bin $2,2
-sub $2,$1
 sub $2,1
+sub $2,$1
 mov $0,$2
 mul $0,2

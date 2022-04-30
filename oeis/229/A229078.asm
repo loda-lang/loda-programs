@@ -7,7 +7,7 @@ trn $1,1
 mov $2,$0
 mul $2,$0
 add $2,$0
-pow $0,$1
 add $2,$1
+pow $0,$1
 mul $0,$2
 div $0,2

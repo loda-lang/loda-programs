@@ -2,12 +2,10 @@
 ; Submitted by Jamie Morken(w4)
 ; 38,22,14,10,8,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,2
-seq $1,171527 ; Numerator of (n-th composite/n).
+seq $1,171524 ; a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
 mov $2,$0
-mov $0,6
+mov $0,19
 mul $0,$1
-sub $0,10
 lpb $2
   sub $2,1
   trn $0,1

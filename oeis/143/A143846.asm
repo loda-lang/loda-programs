@@ -1,11 +1,11 @@
 ; A143846: Aliquot sequence starting at 88.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w4)
 ; 88,92,76,64,63,41,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,2
-seq $1,171527 ; Numerator of (n-th composite/n).
+seq $1,171524 ; a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
 mov $2,$0
-mov $0,11
+mov $0,22
 mul $0,$1
 lpb $2
   sub $2,1

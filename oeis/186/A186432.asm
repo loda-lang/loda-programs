@@ -6,7 +6,7 @@ mov $2,$0
 seq $2,86645 ; Triangle read by rows: T(n, k) = binomial(2n, 2k).
 mov $1,$2
 lpb $2
-  mul $1,2
   mov $2,2
+  mul $1,2
 lpe
 mov $0,$1

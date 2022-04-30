@@ -5,15 +5,14 @@
 add $0,1
 lpb $0
   sub $0,1
-  add $2,2
   add $3,1
   mov $1,$3
   mul $1,16
+  add $2,2
   add $2,$1
   add $3,$2
 lpe
 bin $2,2
 mov $0,$2
-sub $0,153
 mul $0,40
-add $0,6100
+sub $0,20

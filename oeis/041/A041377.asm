@@ -10,7 +10,7 @@ lpb $0
   add $3,10
   mov $1,$3
   seq $1,10156 ; Continued fraction for sqrt(78).
-  trn $1,2
+  sub $1,2
   mul $1,$2
   mul $1,2
   add $1,$4

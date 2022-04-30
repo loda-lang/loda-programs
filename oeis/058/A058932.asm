@@ -2,19 +2,19 @@
 ; Submitted by Jon Maiga
 ; 0,0,0,0,0,0,1,1,3,5,11,20
 
-mov $5,$0
+mov $1,$0
 lpb $0
   sub $0,2
   mov $2,$0
-  mov $0,1
   max $2,0
   seq $2,293046 ; Number of even permutations on {1,2,...,n} with exactly 2 weak excedances.
   mov $4,$2
   min $4,1
-  add $5,$4
-  mov $3,$5
+  mov $0,1
+  add $1,$4
+  mov $3,$1
   cmp $3,0
-  add $5,$3
-  div $2,$5
+  add $1,$3
+  div $2,$1
 lpe
 mov $0,$2

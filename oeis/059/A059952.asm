@@ -4,9 +4,9 @@
 trn $2,$0
 add $2,2
 sub $0,$2
+sub $2,55
 mov $1,$0
 gcd $1,2
-sub $2,55
 mul $1,$2
 sub $0,$1
 div $0,2

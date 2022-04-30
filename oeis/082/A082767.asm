@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
   add $0,$2
+  sub $1,1
 lpe
 add $0,1

@@ -10,10 +10,10 @@ lpb $3
   mul $1,$3
   mul $2,$0
   add $2,$1
-  mul $1,$0
   mul $2,2
   sub $3,1
   sub $4,2
+  mul $1,$0
   div $1,$4
   add $2,$1
 lpe

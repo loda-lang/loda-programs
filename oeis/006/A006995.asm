@@ -1,18 +1,11 @@
 ; A006995: Binary palindromes: numbers whose binary expansion is palindromic.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w2)
 ; 0,1,3,5,7,9,15,17,21,27,31,33,45,51,63,65,73,85,93,99,107,119,127,129,153,165,189,195,219,231,255,257,273,297,313,325,341,365,381,387,403,427,443,455,471,495,511,513,561,585,633,645,693,717,765,771,819,843,891,903,951,975,1023,1025,1057,1105,1137,1161,1193,1241,1273,1285,1317,1365,1397,1421,1453,1501,1533,1539,1571,1619,1651,1675,1707,1755,1787,1799,1831,1879,1911,1935,1967,2015,2047,2049,2145,2193,2289,2313
 
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,178225 ; Characteristic function of A006995 (binary palindromes).
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+mov $1,$0
+trn $0,1
+seq $0,164302 ; a(n) = 2* (the n-th positive (odd) integer that is a palindrome when written in base 2).
+cmp $1,0
+cmp $1,0
+mul $0,$1
+div $0,2

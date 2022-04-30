@@ -2,8 +2,8 @@
 ; Submitted by Jamie Morken(s2)
 ; 1,0,1,4,13,44,149,504,1705,5768,19513,66012
 
-mul $0,2
 mov $2,1
+mul $0,2
 lpb $0
   sub $0,1
   add $2,$1

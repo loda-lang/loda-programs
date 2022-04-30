@@ -6,8 +6,8 @@ add $0,3
 bin $0,3
 lpb $0
   dif $0,2
-  add $2,6
+  add $1,6
 lpe
-mov $0,$2
+mov $0,$1
 div $0,6
 add $0,1

@@ -5,8 +5,8 @@
 mov $1,5
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,66872 ; p^2 + 1 as p runs through the primes.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

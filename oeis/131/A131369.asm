@@ -4,7 +4,6 @@
 add $0,1
 gcd $0,10
 div $0,2
-mov $1,10
+mov $1,5
 sub $1,$0
-sub $1,5
 mov $0,$1

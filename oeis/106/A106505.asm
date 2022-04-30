@@ -3,10 +3,10 @@
 
 mov $2,$0
 lpb $2
+  sub $2,1
   trn $0,5
   add $1,2
   trn $1,$0
-  sub $2,1
 lpe
 add $1,5
 mov $0,$1

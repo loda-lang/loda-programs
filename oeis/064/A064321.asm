@@ -5,8 +5,8 @@
 sub $0,1
 bin $0,2
 mov $1,$0
-pow $0,2
 bin $1,2
+pow $0,2
 mul $0,$1
 div $0,9
 mul $0,288

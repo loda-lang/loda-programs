@@ -5,9 +5,9 @@ add $0,6
 lpb $0
   add $0,2
   mov $2,$0
-  seq $2,118831 ; Numerators of the convergents of the 2-adic continued fraction of zero given by A118830.
   mov $3,$0
   mov $0,1
+  seq $2,118831 ; Numerators of the convergents of the 2-adic continued fraction of zero given by A118830.
   sub $2,1
   add $1,$2
   add $1,1

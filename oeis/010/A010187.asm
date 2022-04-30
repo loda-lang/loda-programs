@@ -5,9 +5,9 @@ seq $0,10197 ; Continued fraction for sqrt(138).
 add $1,$0
 lpb $0
   add $1,$0
-  sub $0,1
-  sub $2,4
-  mul $0,$2
   pow $1,2
+  sub $2,4
+  sub $0,1
+  mul $0,$2
 lpe
 mov $0,$1

@@ -7,17 +7,17 @@ sub $3,$0
 lpb $0
   mul $0,$1
   mod $0,2
-  add $1,1
   sub $2,2
-  add $1,$2
-  mod $2,2
   add $3,1
   mov $4,$3
   cmp $4,0
   add $3,$4
   div $0,$3
   sub $0,$3
+  add $1,1
+  add $1,$2
   add $1,$0
+  mod $2,2
   pow $2,8
 lpe
 mov $0,$1

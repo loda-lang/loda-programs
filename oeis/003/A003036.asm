@@ -2,12 +2,12 @@
 ; 1,1,1,2,2,2,2,4,2,4,5,5,6
 
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,334625 ; Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
   mul $0,2
   pow $0,2
   mod $0,7
-  seq $2,334625 ; Maximal size of a subset T of S = {1,2,...,n} with a cyclic arrangement of T such that any three neighbors can be reordered in an arithmetic progression.
 lpe
-mov $0,$2
+mov $0,$1
 div $0,3
 add $0,1

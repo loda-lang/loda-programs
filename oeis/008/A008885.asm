@@ -2,12 +2,10 @@
 ; Submitted by Jamie Morken(w4)
 ; 30,42,54,66,78,90,144,259,45,33,15,9,4,3,1,0
 
-mov $1,2
-seq $1,171528 ; Denominator of (n-th composite/n).
+seq $1,171524 ; a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
 mov $2,$0
-mov $0,14
+mov $0,15
 mul $0,$1
-sub $0,12
 lpb $2
   sub $2,1
   trn $0,1

@@ -5,8 +5,8 @@
 mov $2,$0
 mov $3,3
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   add $0,$3
   max $0,0
   seq $0,176100 ; Even numbers that are not semiprimes, or, twice the nonprimes.

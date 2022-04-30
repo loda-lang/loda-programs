@@ -5,9 +5,9 @@ lpb $0
   mov $2,$0
   mod $2,10
   lpb $2
-    add $1,1
     sub $2,1
     dif $2,5
+    add $1,1
   lpe
   div $0,10
 lpe

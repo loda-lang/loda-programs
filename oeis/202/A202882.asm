@@ -6,7 +6,6 @@ add $0,3
 mul $0,2
 lpb $0
   sub $0,1
-  add $1,1
   sub $1,$2
   add $1,$6
   sub $4,$3
@@ -21,6 +20,3 @@ lpb $0
   sub $3,$5
 lpe
 mov $0,$4
-sub $0,2
-div $0,2
-add $0,1
