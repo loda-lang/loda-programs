@@ -6,18 +6,18 @@ mov $4,1
 lpb $0
   sub $0,1
   add $1,$6
-  add $2,$4
+  mov $5,$1
   mov $6,$4
   add $6,$8
   sub $7,$4
   mov $8,$4
-  mov $4,$1
-  add $4,$7
-  mov $5,$1
-  add $5,$2
   add $1,$3
-  add $1,$6
-  mov $3,$5
+  add $2,$4
+  mov $4,$5
+  add $4,$7
+  add $5,$2
   mov $7,$6
+  mov $3,$5
+  mul $6,2
 lpe
 mov $0,$2

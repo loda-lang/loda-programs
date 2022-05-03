@@ -3,7 +3,7 @@
 
 mul $0,5
 mov $1,$0
-sub $0,3
 pow $1,2
+sub $0,3
 mul $0,$1
 div $0,50

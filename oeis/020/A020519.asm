@@ -6,8 +6,8 @@ pow $2,$0
 mov $3,512
 lpb $3
   div $3,2
-  add $4,1
-  mul $4,$2
+  add $1,1
+  mul $1,$2
 lpe
-mov $0,$4
+mov $0,$1
 add $0,1

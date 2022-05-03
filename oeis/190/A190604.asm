@@ -6,9 +6,9 @@ add $0,4
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   mul $2,2
   seq $2,134816 ; Padovan's spiral numbers.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

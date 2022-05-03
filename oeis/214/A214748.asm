@@ -9,10 +9,10 @@ lpb $0
   lpb $0
     lpb $3
       dif $3,$0
-      sub $0,2
       cmp $3,$2
       cmp $3,0
       mul $3,74922
+      sub $0,2
     lpe
   lpe
   add $1,2

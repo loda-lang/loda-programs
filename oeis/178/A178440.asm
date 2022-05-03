@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,299338 ; Expansion of 1 / ((1 - x)^7*(1 + x)^6).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

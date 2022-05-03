@@ -5,14 +5,13 @@
 mov $3,$0
 mov $5,$0
 lpb $5
-  mov $0,$3
-  mov $1,0
   sub $5,1
+  mov $0,$3
   sub $0,$5
   mov $2,$0
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $0,2
-  add $1,$2
+  mov $1,$2
   seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
   add $1,$0
   add $4,$1

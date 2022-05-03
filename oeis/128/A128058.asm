@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,98331 ; Expansion of 1/sqrt(1 - 2*x + 5*x^2).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

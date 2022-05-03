@@ -1,7 +1,16 @@
 ; A114480: Kekulé numbers for certain benzenoids.
+; Submitted by Simon Strandgaard
 ; 4,50,650,8500,111250,1456250,19062500,249531250,3266406250,42757812500,559707031250,7326660156250,95907226562500,1255441894531250,16433947753906250,215123168945312500,2815998840332031250
 
+mov $1,1
+mov $2,3
 mul $0,2
-seq $0,153365 ; Number of zig-zag paths from top to bottom of a rectangle of width 9 with 2n rows whose color is that of the top right corner.
-div $0,4
+lpb $0
+  sub $0,1
+  sub $2,$1
+  add $1,$2
+  mul $2,5
+lpe
+sub $2,$1
+mov $0,$2
 mul $0,2

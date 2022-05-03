@@ -6,11 +6,10 @@ mov $6,$0
 mov $7,$0
 add $7,1
 lpb $7
-  mov $0,$5
-  mov $3,0
   sub $7,1
+  mov $0,$5
   sub $0,$7
-  add $3,$0
+  mov $3,$0
   seq $0,12245 ; Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
   mov $2,$3
   add $2,$0

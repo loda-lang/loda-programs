@@ -4,12 +4,12 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,95940 ; a(n+2) = 5a(n+1) - 3a(n) (n >= 1); a(0) = 0, a(1) = 1, a(2) = 4.
-  add $3,$2
-  mul $3,3
+  sub $0,1
+  add $1,$2
+  mul $1,3
 lpe
-mov $0,$3
+mov $0,$1
 div $0,3
 mul $0,13
 add $0,2

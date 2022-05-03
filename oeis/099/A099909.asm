@@ -6,7 +6,7 @@ add $0,1
 seq $0,40 ; The prime numbers.
 seq $0,13636 ; n*nextprime(n).
 mov $1,$0
-mul $0,2
 seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+mul $0,2
 sub $0,$1
 div $0,2

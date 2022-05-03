@@ -7,13 +7,13 @@ lpb $0
   add $3,1
   mul $3,$2
   mov $2,$0
-  mov $0,0
   seq $2,178734 ; a(n) = n XOR 8n, where XOR is bitwise XOR.
+  mov $0,0
   add $3,$2
 lpe
 div $3,2
-mov $1,$3
 mov $4,$5
 mul $4,4
+mov $1,$3
 add $1,$4
 mov $0,$1

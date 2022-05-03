@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,27914 ; T(n,0) + T(n,1) + ... + T(n,n), T given by A027907.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

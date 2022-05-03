@@ -4,6 +4,6 @@
 
 add $0,1
 mov $1,$0
-seq $0,71049 ; Number of 1's in n-th generation of 1-D CA using Rule 110, started with a single 1.
 pow $1,2
+seq $0,71049 ; Number of 1's in n-th generation of 1-D CA using Rule 110, started with a single 1.
 mod $0,$1

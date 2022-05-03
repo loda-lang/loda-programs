@@ -5,8 +5,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  sub $0,4
   seq $2,3520 ; a(n) = a(n-1) + a(n-5); a(0) = ... = a(4) = 1.
+  sub $0,4
   add $1,$2
 lpe
 add $1,1

@@ -6,8 +6,8 @@ mov $1,1
 lpb $0
   add $0,$1
   mov $1,$0
-  mov $0,1
   seq $1,70369 ; a(n) = 5^n mod 14.
+  mov $0,1
 lpe
 div $1,2
 mov $0,$1

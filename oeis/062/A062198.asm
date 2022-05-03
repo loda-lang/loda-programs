@@ -6,19 +6,18 @@ mov $5,$0
 mov $7,$0
 add $7,1
 lpb $7
-  mov $0,$5
-  mov $1,0
   sub $7,1
+  mov $0,$5
   sub $0,$7
+  mov $1,0
   mov $2,$0
   add $2,2
   pow $2,2
   lpb $2
     mov $3,$1
-    add $1,2
     seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
     sub $0,$3
-    sub $1,1
+    add $1,1
     mov $4,$0
     max $4,0
     cmp $4,$0

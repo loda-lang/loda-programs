@@ -14,13 +14,13 @@ lpb $2
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $6,2
+  add $1,5
   mul $2,$4
   mul $5,$3
-  add $6,2
-  add $7,5
-  add $5,$7
+  add $5,$1
   add $5,1
-  add $7,$6
+  add $1,$6
 lpe
 mov $0,$6
 div $0,2

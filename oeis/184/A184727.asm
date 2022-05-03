@@ -10,8 +10,8 @@ lpb $0
     gcd $0,$6
   lpe
   sub $2,1
-  mul $0,$2
   cmp $3,$5
+  mul $0,$2
   mov $1,$3
   mov $4,$5
   cmp $4,0

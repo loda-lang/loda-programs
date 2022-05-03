@@ -3,11 +3,11 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,212356 ; Number of terms of the cycle index polynomial Z(D_n) for the dihedral group D_n.
-  add $1,$2
   mov $3,$2
   min $3,1
+  trn $0,2
+  add $1,$2
   sub $1,$3
 lpe
 add $1,1

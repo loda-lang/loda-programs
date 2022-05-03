@@ -7,18 +7,18 @@ lpb $0
   sub $2,1
   cmp $3,$2
   cmp $3,0
+  mul $3,$0
   mov $4,$2
   sub $2,5
-  mul $3,$0
   lpb $4
+    mod $4,2
     sub $0,1
     add $1,$3
-    mod $4,2
   lpe
   lpb $4
+    trn $4,4
     div $0,4
     pow $0,3
-    trn $4,4
   lpe
   add $1,1
 lpe
