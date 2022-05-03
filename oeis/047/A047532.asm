@@ -5,8 +5,8 @@ mov $1,$0
 add $1,25
 div $1,2
 mov $2,$1
-mul $1,2
 gcd $2,2
+mul $1,2
 add $1,$2
 add $0,$1
 sub $0,26

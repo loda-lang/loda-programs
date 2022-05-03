@@ -1,18 +1,15 @@
 ; A180175: Diagonal sums of A164844.
-; Submitted by Jon Maiga
+; Submitted by Jamie Morken(w3)
 ; 1,10,101,1011,10112,101123,1011235,10112358,101123593,1011235951,10112359544,101123595495,1011235955039,10112359550534,101123595505573,1011235955056107,10112359550561680,101123595505617787,1011235955056179467,10112359550561797254
 
-mov $2,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
-  seq $0,6355 ; Number of binary vectors of length n containing no singletons.
-  add $0,1
-  div $0,2
-  mul $1,10
-  add $1,$0
+mov $4,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,$4
+  mul $4,10
+  mov $1,$2
+  mov $2,$3
+  add $3,$1
 lpe
 mov $0,$1

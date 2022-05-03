@@ -6,8 +6,8 @@ mov $2,$0
 add $2,3
 mov $1,$2
 bin $1,$0
-sub $0,3
 pow $1,2
+sub $0,3
 bin $2,$0
 sub $1,$2
 mov $0,$1

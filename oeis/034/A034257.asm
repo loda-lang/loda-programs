@@ -1,16 +1,10 @@
 ; A034257: Maximal discrete supergroups of Gamma_0(n).
+; Submitted by Jamie Morken(w3)
 ; 1,3,3,7,3,9,3,11,9,9
 
-seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
-seq $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
-mul $0,2
-mov $1,$0
-add $1,3
-lpb $1
-  add $0,1
-  div $1,2
-  sub $0,$1
-lpe
-sub $0,1
 mul $0,2
 add $0,1
+seq $0,124315 ; a(n) = Sum_{ d divides n } tau(gcd(d,n/d)), where tau = sigma_0 = A000005.
+seq $0,131138 ; a(n)=log_3(A131137(n)).
+mul $0,2
+sub $0,3

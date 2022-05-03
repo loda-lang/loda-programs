@@ -5,6 +5,5 @@
 seq $0,4754 ; Numbers n whose binary expansion starts 10.
 seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
 div $0,6
-sub $0,10
 mul $0,10
-add $0,101
+add $0,1

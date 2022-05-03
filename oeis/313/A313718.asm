@@ -11,7 +11,7 @@ lpb $0
   add $1,5
 lpe
 lpb $2
-  add $0,4
   sub $2,1
+  add $0,4
 lpe
 add $0,1

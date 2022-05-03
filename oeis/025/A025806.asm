@@ -4,18 +4,17 @@
 
 mov $3,$0
 mov $5,2
-sub $5,$1
 lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
   mov $4,$0
-  add $1,10
   max $4,0
   seq $4,29011 ; Expansion of 1/((1-x)(1-x^2)(1-x^5)(1-x^6)).
   mov $2,$5
   mul $2,$4
   mul $0,$5
+  add $1,10
   add $1,$2
 lpe
 min $3,1

@@ -5,12 +5,12 @@ add $0,1
 mov $2,$0
 lpb $0
   lpb $2
-    add $4,$2
+    add $1,$2
     trn $2,8
     add $3,4086
   lpe
   mov $0,0
 lpe
-mod $3,$4
+mod $3,$1
 mov $0,$3
 add $0,1

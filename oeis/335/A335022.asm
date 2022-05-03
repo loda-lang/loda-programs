@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,58344 ; Difference between the sum of the odd aliquot divisors of n and the sum of the even aliquot divisors of n.
   sub $1,1
+  mov $0,0
 lpe
 mov $0,$1

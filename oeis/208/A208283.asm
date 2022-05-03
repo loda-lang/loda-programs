@@ -19,12 +19,12 @@ lpb $0
   add $1,$5
   mul $1,2
 lpe
-sub $1,2
 mov $6,$3
 mul $6,2
-add $1,$6
 mov $7,$3
 mul $7,$3
+sub $1,2
+add $1,$6
 add $1,$7
 mul $7,$3
 mov $6,$7

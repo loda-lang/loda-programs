@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,15288 ; Gaussian binomial coefficient [ n,4 ] for q = -3.
+  sub $0,1
   add $1,$2
   mul $1,-3
 lpe

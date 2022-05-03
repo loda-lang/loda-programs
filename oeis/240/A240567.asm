@@ -9,8 +9,7 @@ lpb $0
   sub $0,1
   trn $0,3
   add $1,1
-  add $2,3
   mul $2,2
-  add $2,2
+  add $2,8
 lpe
 mov $0,$1

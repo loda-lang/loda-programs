@@ -4,10 +4,10 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  sub $0,1
   div $2,2
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $2,2
+  sub $0,1
   add $1,$2
 lpe
 div $1,2

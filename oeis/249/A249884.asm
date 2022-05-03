@@ -5,16 +5,16 @@
 mov $6,$0
 mov $7,2
 lpb $7
-  mov $0,$6
   sub $7,1
+  mov $0,$6
   add $0,$7
   sub $0,1
   mov $2,$0
-  mov $4,2
   mov $7,0
+  mov $4,2
   lpb $4
-    mov $0,$2
     sub $4,1
+    mov $0,$2
     add $0,$4
     trn $0,1
     seq $0,213560 ; Antidiagonal sums of the convolution array A213558.

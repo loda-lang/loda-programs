@@ -1,9 +1,14 @@
 ; A262394: a(n) = Sum_{k=1..n}(k*binomial(n,k-1)*binomial(2*n,n-k))/n.
+; Submitted by Jamie Morken(w2)
 ; 1,4,20,110,637,3808,23256,144210,904475,5722860,36463440,233646504,1504152860,9721421440,63040282096,409972529754,2672860120455,17464206951100,114330456032100,749760805916430
 
 mov $1,$0
-add $1,3
+mul $0,2
 add $0,1
-seq $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
-mul $0,$1
-div $0,3
+mov $2,$0
+add $0,$1
+bin $0,$2
+add $1,$2
+add $2,2
+bin $1,$2
+sub $0,$1

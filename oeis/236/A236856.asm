@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,$0
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   sub $0,$3
   sub $0,1
   seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.

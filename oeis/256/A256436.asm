@@ -6,8 +6,8 @@ lpb $0
   add $2,$3
   add $4,$3
   lpb $4
-    add $3,1
     div $4,2
+    add $3,1
   lpe
   sub $0,$2
 lpe

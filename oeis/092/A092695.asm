@@ -4,10 +4,10 @@
 mov $13,$0
 add $13,1
 lpb $13
-  mov $0,0
+  sub $13,1
   mov $1,0
   mov $10,0
-  sub $13,1
+  mov $0,0
   sub $0,$13
   mov $2,261241
   lpb $2
@@ -21,10 +21,9 @@ lpb $13
     add $10,2
     lpb $0,8
       lpb $4
-        add $1,2
-        sub $1,$5
-        sub $1,1
         div $4,3
+        sub $1,$5
+        add $1,1
         add $10,$5
       lpe
     lpe

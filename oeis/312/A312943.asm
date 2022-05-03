@@ -8,8 +8,8 @@ mov $6,$0
 trn $6,1
 mov $7,$0
 mov $0,$6
-add $0,1
 mov $6,$2
+add $0,1
 lpb $0
   sub $0,1
   mov $3,$6
@@ -17,8 +17,8 @@ lpb $0
   add $5,$3
   sub $6,1
 lpe
-mov $1,$5
 mov $4,$7
 mul $4,3
+mov $1,$5
 add $1,$4
 mov $0,$1

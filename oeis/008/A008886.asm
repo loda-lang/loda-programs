@@ -2,10 +2,12 @@
 ; Submitted by Jamie Morken(w4)
 ; 42,54,66,78,90,144,259,45,33,15,9,4,3,1,0
 
-seq $1,171524 ; a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
+seq $1,199310 ; 7*5^n+1.
+sub $1,4
 mov $2,$0
-mov $0,21
+mov $0,15
 mul $0,$1
+sub $0,18
 lpb $2
   sub $2,1
   trn $0,1

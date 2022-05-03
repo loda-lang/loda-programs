@@ -13,8 +13,4 @@ sub $0,2
 mov $1,$2
 add $1,$3
 max $1,$0
-add $1,2
 mov $0,$1
-mul $0,3
-sub $0,6
-div $0,3

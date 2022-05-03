@@ -5,12 +5,12 @@
 mov $2,$0
 cmp $2,0
 add $0,$2
-mov $4,$0
-add $4,57
-lpb $4
+mov $1,$0
+add $1,57
+lpb $1
+  sub $1,1
+  dif $1,2
   add $3,5585
-  sub $4,1
-  dif $4,2
 lpe
 mov $0,$3
 sub $0,1

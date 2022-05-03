@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
+  sub $0,2
   add $1,$2
 lpe
 add $1,1

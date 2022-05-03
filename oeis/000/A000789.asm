@@ -6,18 +6,18 @@ mov $5,$0
 mov $6,$0
 add $6,1
 lpb $6
-  mov $0,$5
-  mov $1,0
   sub $6,1
+  mov $0,$5
   sub $0,$6
+  mov $1,0
   mov $2,2
   lpb $0
     mov $3,$0
     sub $3,2
     lpb $3
       mov $4,$0
-      trn $0,$2
       mod $4,$2
+      trn $0,$2
       add $2,1
       cmp $4,0
       cmp $4,0
@@ -30,9 +30,8 @@ lpb $6
     mul $0,$1
   lpe
   mov $0,$2
-  sub $0,2
   mul $0,2
-  add $0,3
+  sub $0,1
   add $7,$0
 lpe
 mov $0,$7

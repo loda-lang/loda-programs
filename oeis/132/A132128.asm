@@ -4,8 +4,8 @@
 mov $1,$0
 seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
 add $3,$0
-mov $0,$1
 mov $2,$3
 cmp $2,0
 add $3,$2
+mov $0,$1
 add $0,$3

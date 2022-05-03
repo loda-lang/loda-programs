@@ -3,9 +3,9 @@
 
 lpb $0
   sub $0,1
-  add $2,$3
+  add $2,$1
   sub $0,$2
-  cmp $3,0
+  cmp $1,0
 lpe
 cmp $0,0
 add $0,2
