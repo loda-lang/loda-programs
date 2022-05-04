@@ -3,10 +3,10 @@
 
 mov $2,$0
 lpb $2
+  mov $2,0
   mov $1,$0
   trn $1,1
   seq $1,96346 ; Complement of A004128.
-  sub $2,1
 lpe
 sub $1,$0
 mov $0,$1

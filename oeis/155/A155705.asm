@@ -14,6 +14,5 @@ mul $1,4
 add $0,$2
 mul $0,2
 add $0,$1
-mul $0,4
-div $0,8
+div $0,2
 add $0,2
