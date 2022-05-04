@@ -4,10 +4,9 @@
 mov $3,$0
 add $0,1
 gcd $0,7
-mov $1,7
-sub $1,$0
-add $1,42
 mov $2,$3
 mul $2,49
+mov $1,49
+sub $1,$0
 add $1,$2
 mov $0,$1
