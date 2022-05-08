@@ -1,0 +1,16 @@
+; A303500: The smallest positive even integer that can be written with n digits in base 3/2.
+; Submitted by Jamie Morken(w2)
+; 2,21,210,2101,21011,210110,2101100,21011000,210110001,2101100011,21011000110,210110001101,2101100011010,21011000110100,210110001101001,2101100011010011,21011000110100110,210110001101001101
+
+mov $3,$0
+mov $1,2
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,205083 ; Parity of A070885.
+  mul $1,10
+  add $1,$0
+lpe
+mov $0,$1
