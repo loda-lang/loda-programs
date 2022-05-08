@@ -1,23 +1,6 @@
 ; A204985: Ordered differences of numbers 2^k for k>=1.
+; Submitted by Simon Strandgaard
 ; 2,6,4,14,12,8,30,28,24,16,62,60,56,48,32,126,124,120,112,96,64,254,252,248,240,224,192,128,510,508,504,496,480,448,384,256,1022,1020,1016,1008,992,960,896,768,512,2046,2044,2040,2032,2016,1984,1920
 
-mov $2,$0
-add $2,2
-mov $0,2
-pow $0,$2
-mov $2,2
-lpb $0
-  mul $2,2
-  mov $3,3
-  sub $3,$0
-  sub $0,$3
-  div $0,$2
-  mul $0,2
-  mov $1,$2
-lpe
-add $1,$3
-sub $1,9
-div $1,4
-mul $1,2
-add $1,2
-mov $0,$1
+seq $0,130328 ; Triangle of differences between powers of 2, read by rows.
+mul $0,2
