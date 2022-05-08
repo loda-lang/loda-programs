@@ -1,33 +1,25 @@
 ; A133205: Fully multiplicative with a(p) = p*(p+1)/2 for prime p.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,3,6,9,15,18,28,27,36,45,66,54,91,84,90,81,153,108,190,135,168,198,276,162,225,273,216,252,435,270,496,243,396,459,420,324,703,570,546,405,861,504,946,594,540,828,1128,486,784,675,918,819,1431,648,990,756
 
 add $0,1
-mov $1,1
+mov $1,$0
+mov $2,2
+mov $4,1
 lpb $0
+  mul $1,$4
+  dif $1,2
   mov $3,$0
   lpb $3
     mov $4,$0
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
     cmp $4,0
     cmp $4,0
-    mov $5,$2
     add $2,1
-    cmp $5,1
-    max $4,$5
     sub $3,$4
   lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $0,$5
-    mul $5,$2
-  lpe
-  add $5,1
-  bin $5,2
-  mul $1,$5
+  div $0,$2
+  mov $4,$2
+  add $4,1
 lpe
 mov $0,$1

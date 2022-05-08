@@ -1,24 +1,11 @@
 ; A345993: Let m = A344005(n) = smallest m such that n divides m*(m+1); a(n) = gcd(n,m+1).
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,3,7,8,9,5,11,4,13,7,3,16,17,9,19,5,7,11,23,3,25,13,27,4,29,6,31,32,3,17,5,9,37,19,13,8,41,7,43,4,5,23,47,16,49,25,3,13,53,27,11,8,19,29,59,4,61,31,7,64,13,6,67,17,3,5,71,9,73,37,25,4,11,13,79,16,81,41,83,21,5,43,3,11,89,10,7,4,31,47,5,3,97,49,9,25
 
-add $0,1
-mov $2,1
-mov $3,$0
-mov $4,$0
-mov $5,1
-lpb $3
-  mov $6,$2
-  add $2,1
-  mul $5,$6
-  mov $6,$0
-  cmp $6,1
-  cmp $6,0
-  mov $0,$6
-  sub $3,$6
-  mod $5,$4
-  add $0,$5
-  mov $5,$3
-lpe
-gcd $4,$3
-mov $0,$4
+mov $2,$0
+add $2,1
+seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
+mov $1,$0
+add $1,1
+gcd $1,$2
+mov $0,$1
