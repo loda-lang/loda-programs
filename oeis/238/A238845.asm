@@ -4,9 +4,9 @@
 lpb $0
   sub $0,1
   mul $0,2
-  mov $2,$0
-  cmp $2,0
-  add $0,$2
+  mov $1,$0
+  cmp $1,0
+  add $0,$1
   dif $0,4
 lpe
 add $0,1

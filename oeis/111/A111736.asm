@@ -5,3 +5,6 @@
 seq $0,40 ; The prime numbers.
 mul $0,4
 seq $0,13632 ; Difference between n and the next prime greater than n.
+div $0,2
+mul $0,2
+add $0,1

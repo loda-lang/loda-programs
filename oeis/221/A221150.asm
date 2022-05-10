@@ -1,6 +1,8 @@
 ; A221150: The generalized Fibonacci word f^[3].
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0
 
 seq $0,308898 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
-seq $0,87509 ; Number of k such that (k*n) == 2 (mod 3) for 0 <= k <= n.
+pow $0,$0
+add $0,1
+mod $0,2

@@ -9,8 +9,8 @@ lpe
 add $2,3
 mov $1,$2
 bin $1,$0
-add $0,3
 add $1,1
+add $0,3
 bin $2,$0
 add $1,$2
 mov $0,$1

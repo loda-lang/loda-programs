@@ -11,7 +11,7 @@ lpb $0
 lpe
 lpb $2
   div $2,3
-  add $3,3
+  add $1,3
 lpe
-mov $0,$3
+mov $0,$1
 div $0,3

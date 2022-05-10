@@ -5,22 +5,22 @@ mov $2,$0
 mov $6,$0
 lpb $0
   pow $0,2
-  mov $1,$2
   mov $5,4
   mul $5,$2
   add $0,$5
+  mov $1,$2
   add $1,$0
   mul $0,2
   mul $1,$0
   trn $0,$1
   div $1,6
 lpe
-add $1,1
 mov $3,$6
 mul $3,4
-add $1,$3
 mov $4,$6
 mul $4,$6
 mul $4,$6
+add $1,1
+add $1,$3
 add $1,$4
 mov $0,$1

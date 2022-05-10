@@ -14,7 +14,7 @@ lpb $3
   add $1,$2
   div $1,94
   add $2,$1
-  add $1,11
+  add $5,1
   add $5,$2
   add $6,$5
   add $7,$1

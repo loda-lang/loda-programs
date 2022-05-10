@@ -2,8 +2,8 @@
 ; 0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,1,1,0,1,0,1,1,1,0,0,0,1,0,0,0,0,1,1,1,1,0,1,0,0,1,0,1,1,0,0,0,2,0,0,1,0,1,0,0,1,1,1,0,0,1,0,1,0,1,0,0,2,0,1,0,1,1,1,0,0,0,1,0,1,0,0,1
 
 lpb $0
-  mov $2,$0
-  seq $2,72438 ; Remove prime factors of form 4*k+1.
-  div $0,$2
+  mov $1,$0
+  seq $1,72438 ; Remove prime factors of form 4*k+1.
+  div $0,$1
 lpe
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
-  trn $0,$3
   seq $2,52262 ; Partial sums of A014824.
-  add $3,$2
+  sub $0,1
+  trn $0,$1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

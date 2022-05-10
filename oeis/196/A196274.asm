@@ -2,11 +2,11 @@
 ; Submitted by Jamie Morken(s2)
 ; 4,3,3,2,1,3,1,2,3,2,1,2,1,3,1,2,3,1,2,2,1,2,1,1,2,3,3,2,1,1,1,1,1,2,2,1,3,1,1,1,3,1,2,1,2,2,1,2,1,3,1,1,1,3,3,1,1,1,1,2,1,1,1,1,2,3,2,1,3,1,1,1,2,1,2,1,2,1,3,1,2,3,1,1,1,2,1,1,1,1,1,2,3,2,1,1,1,1,1,2
 
-mov $3,2
 mov $5,$0
+mov $3,2
 lpb $3
-  mov $0,$5
   sub $3,1
+  mov $0,$5
   add $0,$3
   trn $0,1
   seq $0,53726 ; "Flag numbers": number of dots that can be arranged in successive rows of K, K-1, K, K-1, K, ..., K-1, K (assuming there is a total of L > 1 rows of size K > 1).

@@ -8,10 +8,10 @@ lpb $0
   sub $3,$1
   add $1,$3
   add $2,$1
-  add $3,$2
   mov $4,$1
   mul $4,2
   sub $4,1
+  add $3,$2
   add $3,$4
   mul $3,-1
 lpe

@@ -4,15 +4,15 @@
 lpb $0
   mov $2,$0
   seq $2,328283 ; The maximum number m such that m white, m black and m red queens can coexist on an n X n chessboard without attacking each other.
-  add $5,$0
-  add $0,5
-  add $3,$2
   mov $4,$2
   min $4,1
-  add $5,$4
-  add $5,2
-  mod $0,$5
-  mul $3,$5
+  add $1,$0
+  add $1,$4
+  add $1,2
+  add $0,5
+  mod $0,$1
+  add $3,$2
+  mul $3,$1
 lpe
 mov $0,$3
 mul $0,2

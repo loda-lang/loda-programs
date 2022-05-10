@@ -4,8 +4,8 @@
 
 mov $1,2
 pow $1,$0
+mul $1,2
 seq $0,101986 ; Maximum sum of products of successive pairs in a permutation of order n+1.
 mul $0,4
-mul $1,2
 mul $0,$1
 div $0,32

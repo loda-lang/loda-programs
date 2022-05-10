@@ -4,19 +4,19 @@
 mov $2,-2
 bin $2,$0
 div $2,2
-mov $5,3
-lpb $5
-  sub $0,$2
-  mov $3,$5
+mov $1,3
+lpb $1
+  mov $3,$1
   cmp $3,0
-  add $5,$3
-  div $0,$5
+  add $1,$3
+  sub $0,$2
+  div $0,$1
   sub $0,$2
   dif $0,2
   add $4,15
   add $4,$0
+  trn $1,7
   add $2,$4
-  trn $5,7
 lpe
 mov $0,$2
 sub $0,15

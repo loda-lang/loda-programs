@@ -5,6 +5,7 @@
 mov $2,$0
 add $2,2
 pow $2,2
+add $4,2
 lpb $2
   mov $3,$1
   seq $3,242424 ; Bulgarian solitaire operation on partition list A112798: a(1) = 1, a(n) = A000040(A001222(n)) * A064989(n).
@@ -12,7 +13,7 @@ lpb $2
   gcd $3,2
   sub $0,$3
   add $0,1
-  add $1,1
+  add $1,$4
   mov $4,$0
   max $4,0
   cmp $4,$0

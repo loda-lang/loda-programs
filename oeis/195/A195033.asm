@@ -4,12 +4,12 @@
 mov $1,2
 gcd $1,$0
 add $1,3
-mov $3,5
-mov $4,4
-add $4,$1
 mov $5,$0
 add $5,3
+mov $3,5
 add $3,$5
+mov $4,4
+add $4,$1
 add $4,$3
 mul $1,$4
 add $1,5

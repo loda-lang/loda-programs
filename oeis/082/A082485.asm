@@ -11,26 +11,24 @@ lpb $0
   sub $0,$4
   add $0,4
 lpe
-trn $1,$0
 trn $2,6
+trn $1,$0
 add $1,$2
 mul $1,2
 add $1,3
 mov $3,7
-mov $8,$7
 lpb $3
-  add $1,$8
   sub $3,1
+  add $1,$7
 lpe
 mov $6,$7
 lpb $6
-  add $5,$8
   sub $6,1
+  add $5,$7
 lpe
 mov $3,1
-mov $8,$5
 lpb $3
-  add $1,$8
   sub $3,1
+  add $1,$5
 lpe
 mov $0,$1

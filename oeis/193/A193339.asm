@@ -4,10 +4,10 @@
 lpb $0
   mov $2,$0
   cmp $4,0
-  add $5,$4
-  mod $0,$5
+  add $1,$4
+  mod $0,$1
   seq $2,238526 ; Record values of A238525.
-  sub $2,$5
+  sub $2,$1
   add $3,$2
   add $3,2
 lpe

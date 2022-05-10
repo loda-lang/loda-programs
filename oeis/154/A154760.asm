@@ -8,8 +8,8 @@ lpb $0
   add $2,1
   mov $3,$2
   lpb $3
-    gcd $0,$2
     mod $3,5
+    gcd $0,$2
   lpe
 lpe
 mod $1,10

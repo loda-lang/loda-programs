@@ -4,9 +4,9 @@
 
 seq $0,287774 ; Positions of 0 in A287773; complement of A287777.
 mov $1,$0
-mul $0,2
 mul $1,2
 mod $1,6
+mul $0,2
 add $0,$1
 div $0,2
 sub $0,1

@@ -3,9 +3,8 @@
 
 mov $2,$0
 mov $0,1
-mov $1,1
 lpb $2,8
-  add $0,$1
+  add $0,1
   mov $3,$0
   bin $3,$2
   trn $2,$0

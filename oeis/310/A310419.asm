@@ -9,8 +9,8 @@ mov $3,$0
 seq $0,188510 ; Expansion of x*(1 + x^2)/(1 + x^4) in powers of x.
 mul $3,2
 sub $3,$0
-mov $1,$3
 mov $5,$4
 mul $5,3
+mov $1,$3
 add $1,$5
 mov $0,$1

@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $1,$0
-add $0,1
 seq $1,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
+add $0,1
 mul $0,$1
 div $0,2

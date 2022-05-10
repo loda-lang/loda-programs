@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  mul $0,0
   seq $2,94033 ; Number of connected 2-element antichains on a labeled n-set.
+  mul $0,0
   add $1,$2
   add $1,1
 lpe

@@ -9,9 +9,9 @@ lpb $0
   bin $2,$1
   mov $3,$0
   bin $3,$1
-  add $1,$2
   mul $3,$2
   mul $3,$0
+  add $1,$2
   add $4,$3
 lpe
 mov $0,$4

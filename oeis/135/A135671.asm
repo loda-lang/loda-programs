@@ -5,10 +5,10 @@
 mov $2,$0
 add $0,1
 seq $0,100196 ; Numbers of positive integer cubes <= n^2.
+mov $1,$0
+add $1,41
 mov $3,$2
-mov $4,$0
-add $4,41
-sub $3,$4
+sub $3,$1
 mul $3,2
 mov $0,$3
 add $0,84

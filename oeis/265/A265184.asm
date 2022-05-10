@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,97250 ; Smallest m such that A097249(m) = n; from n=1 onwards, twice the primorials, 2*A002110(n).
+  sub $0,1
   add $1,$2
   mul $1,-1
 lpe

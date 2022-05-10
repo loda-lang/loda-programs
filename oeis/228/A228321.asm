@@ -8,6 +8,6 @@ cmp $2,0
 add $0,$2
 pow $1,2
 mul $1,6
-sub $1,$0
 add $1,10
+sub $1,$0
 mov $0,$1

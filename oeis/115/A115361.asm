@@ -1,9 +1,8 @@
 ; A115361: Inverse of matrix (1,x)-(x,x^2) (expressed in Riordan array notation).
-; Submitted by Simon Strandgaard
+; Submitted by ckrause
 ; 1,1,1,0,0,1,1,1,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
 
-mov $1,$0
 seq $0,115363 ; ((1,x)-(x,x^2))^(-2) (using Riordan array notation).
-add $0,$1
-add $1,1
-div $0,$1
+sub $0,1593535777200
+div $0,48600
+add $0,32788802
