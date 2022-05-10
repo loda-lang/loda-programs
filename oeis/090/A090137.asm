@@ -6,12 +6,12 @@ add $0,1
 mov $2,1
 mov $3,$0
 lpb $3
+  sub $3,1
   mul $1,$0
-  mov $0,2
   max $1,1
   add $4,1
+  mov $0,2
   mul $2,$4
-  sub $3,1
 lpe
 sub $1,$4
 gcd $2,$1

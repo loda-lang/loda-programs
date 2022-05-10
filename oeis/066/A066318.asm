@@ -4,8 +4,8 @@
 mov $1,3415
 lpb $0
   mul $1,$0
-  sub $0,1
   mul $1,2
+  sub $0,1
 lpe
 div $1,3415
 mul $1,2

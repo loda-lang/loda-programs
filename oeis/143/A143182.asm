@@ -1,7 +1,16 @@
 ; A143182: Triangle T(n,m) = 1 + abs(n-2*m), read by rows, 0<=m<=n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Jamie Morken(w4)
 ; 1,2,2,3,1,3,4,2,2,4,5,3,1,3,5,6,4,2,2,4,6,7,5,3,1,3,5,7,8,6,4,2,2,4,6,8,9,7,5,3,1,3,5,7,9,10,8,6,4,2,2,4,6,8,10,11,9,7,5,3,1,3,5,7,9,11,12,10,8,6,4,2,2,4,6,8,10,12,13,11,9,7,5,3,1,3,5,7,9,11,13,14,12,10,8,6,4,2,2,4
 
-seq $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
-gcd $0,$0
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $0,1
+add $1,2
+mov $2,$0
+sub $2,$1
+add $0,$2
+mul $1,$0
+gcd $0,$1
 add $0,1

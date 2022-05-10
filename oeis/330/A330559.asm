@@ -5,8 +5,8 @@
 sub $1,$0
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,80378 ; Residues mod 4 of the n-th difference between consecutive primes.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

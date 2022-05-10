@@ -1,13 +1,11 @@
 ; A187967: [nr+kr]-[nr]-[kr], where r=sqrt(2), k=2, [ ]=floor.
+; Submitted by Christian Krause
 ; 1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1
 
-lpb $0
-  mov $2,$0
-  seq $2,87056 ; Difference between 2 * n^2 and the next smaller square number.
-  mov $0,$2
-  mul $0,2
-lpe
-mov $1,2
-trn $1,$2
-div $1,2
-mov $0,$1
+mov $1,$0
+add $1,3
+seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,$1
+mod $0,2

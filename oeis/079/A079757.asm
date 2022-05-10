@@ -13,8 +13,8 @@ add $3,2
 mov $1,$3
 mod $2,3
 lpb $2
+  trn $2,2
   add $4,3
   sub $1,$4
-  trn $2,2
 lpe
 mov $0,$1

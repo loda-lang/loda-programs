@@ -1,18 +1,18 @@
 ; A115346: Triangle read by rows: T(n,k) = Fibonacci(k+2) - 1.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w1)
 ; 0,0,1,0,1,2,0,1,2,4,0,1,2,4,7,0,1,2,4,7,12,0,1,2,4,7,12,20,0,1,2,4,7,12,20,33,0,1,2,4,7,12,20,33,54,0,1,2,4,7,12,20,33,54,88,0,1,2,4,7,12,20,33,54,88,143,0,1,2,4,7,12,20,33,54,88,143,232
 
 lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,1
-add $0,1
+mov $3,1
+mov $4,1
 lpb $0
   sub $0,1
-  add $1,$3
-  mul $3,-1
+  mov $1,$4
+  mov $4,$3
   add $3,$1
 lpe
-mov $0,$1
+mov $0,$3
 sub $0,1

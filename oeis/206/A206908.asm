@@ -4,7 +4,6 @@
 
 mov $1,$0
 mul $1,2
-add $1,3
 seq $0,182771 ; Beatty sequence for (6+sqrt(3))/3.
-sub $0,1
 add $0,$1
+add $0,2

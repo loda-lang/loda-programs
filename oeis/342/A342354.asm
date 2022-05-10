@@ -11,10 +11,10 @@ lpb $0
   trn $1,$2
 lpe
 trn $0,$1
-pow $1,2
-add $1,$2
 add $3,1
 mul $3,$0
+pow $1,2
+add $1,$2
 add $1,$3
 mov $0,$1
 mul $0,2

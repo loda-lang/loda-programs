@@ -4,9 +4,9 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  sub $0,1
   max $2,0
   seq $2,37952 ; a(n) = binomial(n, floor((n-1)/2)).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

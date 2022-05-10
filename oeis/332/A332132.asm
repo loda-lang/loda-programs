@@ -6,8 +6,5 @@ mov $1,10
 pow $1,$0
 sub $1,1
 bin $1,2
-sub $1,15
-div $1,5
-add $1,2
-div $1,3
+div $1,15
 mov $0,$1

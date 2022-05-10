@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,8507 ; Number of odd composite numbers less than n-th odd prime.
+  sub $0,1
   add $1,$2
 lpe
 mul $1,2

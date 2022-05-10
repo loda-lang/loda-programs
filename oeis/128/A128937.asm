@@ -1,6 +1,15 @@
 ; A128937: Triangle formed by reading A039598 mod 2.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w4)
 ; 1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,0,1,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0
 
-seq $0,156290 ; Triangle read by rows: alternating binomial coefficients with signs.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,1
+add $0,1
+add $0,$1
+dif $0,2
+bin $1,$0
+mov $0,$1
 mod $0,2

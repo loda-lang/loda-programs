@@ -1,13 +1,14 @@
 ; A105060: Triangle read by rows in which the n-th row consists of the first n nonzero terms of A033312.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w4)
 ; 1,1,5,1,5,23,1,5,23,119,1,5,23,119,719,1,5,23,119,719,5039,1,5,23,119,719,5039,40319,1,5,23,119,719,5039,40319,362879,1,5,23,119,719,5039,40319,362879,3628799,1,5,23,119,719,5039,40319,362879,3628799,39916799
 
 lpb $0
   add $2,1
   sub $0,$2
 lpe
+add $0,1
 mov $1,1
-add $0,2
+add $1,$0
 lpb $0
   mul $1,$0
   sub $0,1

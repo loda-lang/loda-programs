@@ -4,9 +4,9 @@
 
 add $0,2
 seq $0,307096 ; Positive integers m such that for any positive integer k the last k bits of the binary expansion of m is not a multiple of 3.
-mov $2,$0
+mov $1,$0
 lpb $0
-  div $2,2
-  sub $0,$2
+  div $1,2
+  sub $0,$1
 lpe
 sub $0,2

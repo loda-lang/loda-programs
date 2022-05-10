@@ -4,9 +4,9 @@
 mov $2,$0
 trn $0,1
 seq $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
-mov $3,$0
-cmp $3,0
-add $0,$3
+mov $1,$0
+cmp $1,0
+add $0,$1
 lpb $0
   mov $0,$2
 lpe

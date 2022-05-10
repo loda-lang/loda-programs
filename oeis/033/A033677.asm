@@ -3,22 +3,22 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
   mov $5,$4
   lpb $5
-    mov $7,$0
     mov $26,$2
     cmp $26,0
     add $2,$26
+    mov $7,$0
     mod $7,$2
     lpb $1,5
       mov $26,$2
       cmp $26,0
       add $2,$26
-      div $0,$2
       cmp $7,0
+      div $0,$2
       lpb $2,9
         mov $2,$0
         sub $5,$7

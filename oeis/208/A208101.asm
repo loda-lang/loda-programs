@@ -7,10 +7,8 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-add $1,2
 sub $2,1
 sub $0,$2
-sub $1,1
 div $1,2
 sub $2,$0
 div $2,2

@@ -18,7 +18,6 @@ lpb $3
   add $5,$2
   add $6,$5
   add $7,$1
-  trn $6,$3
   add $4,$5
 lpe
 mov $1,$5

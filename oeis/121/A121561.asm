@@ -5,6 +5,6 @@
 lpb $0
   seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   trn $0,1
-  add $2,1
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$1

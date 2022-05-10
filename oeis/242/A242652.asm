@@ -1,10 +1,15 @@
 ; A242652: Imaginary part of Product_{k=0..n) (i-k), where i=sqrt(-1).
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w2)
 ; 1,-1,1,0,-10,90,-730,6160,-55900,549900,-5864300,67610400,-839594600,11186357000,-159300557000,2416003824000,-38894192662000,662595375078000,-11911522255750000,225382826562400000,-4477959179352100000,93217812901913700000,-2029107997508660900000,46099220630461596000000
 
-mov $2,-1
-pow $2,$0
-seq $0,231530 ; Real part of Product_{k=1..n} (k+i), where i is the imaginary unit.
-mul $2,2
-mul $0,$2
-div $0,2
+mov $2,1
+lpb $0
+  sub $0,1
+  sub $1,1
+  mov $4,$3
+  mul $3,$1
+  add $3,$2
+  mul $2,$1
+  sub $2,$4
+lpe
+mov $0,$2

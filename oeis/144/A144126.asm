@@ -8,9 +8,8 @@ mov $4,1
 mov $6,$0
 mov $0,5
 mov $3,5
-add $2,$4
-add $3,$4
-add $0,1
+add $3,1
+mov $0,$3
 lpb $3
   add $0,1
   mul $1,$6
@@ -23,5 +22,3 @@ lpb $3
   add $4,2
 lpe
 mov $0,$2
-sub $0,2
-add $0,1

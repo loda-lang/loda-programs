@@ -11,9 +11,9 @@ lpe
 bin $1,$0
 mov $3,2
 pow $3,$0
+sub $3,2
 mov $0,2
 pow $0,$2
-sub $3,2
 add $0,$3
 mul $1,$0
 mov $0,$1

@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   trn $2,1
   seq $2,281166 ; a(n) = 3*a(n-1) - 3*a(n-2) + 2*a(n-3) for n>2, a(0)=a(1)=1, a(2)=3.
+  sub $0,2
   add $1,$2
 lpe
 lpb $0

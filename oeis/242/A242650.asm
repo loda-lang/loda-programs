@@ -3,8 +3,8 @@
 
 lpb $0
   add $1,$0
-  div $0,2
   sub $1,$2
+  div $0,2
   add $2,1
 lpe
 mul $1,6

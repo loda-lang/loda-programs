@@ -6,9 +6,9 @@ lpb $0
   seq $2,94214 ; Decimal expansion of 1/phi = phi - 1.
   sub $2,11197
   bin $0,$2
-  mov $3,1
-  sub $3,$2
+  mov $1,1
+  sub $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1
 mod $0,10

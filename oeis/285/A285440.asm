@@ -4,8 +4,8 @@
 mov $1,$0
 div $1,2
 mov $2,$1
-mul $1,4
 gcd $2,2
+mul $1,4
 add $1,$2
 add $0,$1
 add $0,1

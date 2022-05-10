@@ -8,7 +8,7 @@ lpb $0
   sub $0,$2
   add $2,1
 lpe
-add $0,1
 gcd $1,2
 sub $1,1
+add $0,1
 mul $0,$1

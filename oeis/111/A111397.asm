@@ -1,5 +1,8 @@
 ; A111397: Composite numbers (modulo 3).
+; Submitted by Christian Krause
 ; 1,0,2,0,1,0,2,0,1,0,2,0,1,0,1,2,0,1,0,2,0,1,2,0,2,0,1,0,2,0,1,0,1,2,0,1,0,1,2,0,1,0,2,0,1,2,0,2,0,1,0,2,0,1,2,0,2,0,1,0,1,2,0,1,0,1,2,0,1,2,0,2,0,1,0,2,0,1,0,2,0,1,0,1,2,0,1,2,0,1,2,0,1,2,0,2,0,1,0,1
 
-seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+add $0,3
+seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $0,1
 mod $0,3

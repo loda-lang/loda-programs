@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,3434 ; Number of iterations of phi(x) at n needed to reach 1.
   add $0,$2
+  sub $1,1
 lpe
 add $0,1

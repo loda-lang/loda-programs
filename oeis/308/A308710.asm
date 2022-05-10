@@ -5,8 +5,8 @@ add $0,1
 seq $0,40 ; The prime numbers.
 mov $1,$0
 lpb $1
-  mul $0,2
   div $1,2
+  mul $0,2
 lpe
 sub $0,12
 div $0,4

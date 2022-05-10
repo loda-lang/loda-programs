@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,285097 ; a(n) = difference between the positions of two least significant 1-bits in base-2 representation of n, or 0 if there are less than two 1-bits in n (when n is either zero or a power of 2).
+  div $0,2
   add $1,$2
 lpe
 mov $0,$1

@@ -6,7 +6,18 @@ mov $1,$0
 add $1,1
 gcd $1,5
 mov $2,$0
-mul $2,$0
-add $1,$2
-div $1,5
-mov $0,$1
+lpb $2
+  add $0,2
+  mov $4,$1
+  add $4,$2
+  lpb $4
+    trn $4,5
+    add $0,1
+    mov $1,2
+    mov $3,5
+  lpe
+  sub $2,1
+  sub $0,$3
+  trn $1,$2
+  sub $2,1
+lpe

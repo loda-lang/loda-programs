@@ -9,16 +9,24 @@ div $3,3
 mov $5,$0
 sub $0,1
 mov $2,$0
-mul $2,2
-mul $3,2
-add $3,2
-add $2,$3
-sub $2,1
-div $2,3
-trn $2,1
-add $2,1
-mov $4,$5
-mul $4,4
-mov $1,$2
+mul $0,2
+mov $5,14
+mul $5,$0
+add $5,3
+div $5,6
+mov $0,6
+lpb $0
+  add $3,1
+  mul $5,8
+  mov $0,$5
+lpe
+add $5,2
+mul $5,2
+div $5,3
+add $3,$5
+mov $1,$3
+sub $1,1
+mov $4,$2
+mul $4,2
 add $1,$4
 mov $0,$1
