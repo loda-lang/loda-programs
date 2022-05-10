@@ -1,24 +1,19 @@
 ; A326300: Steinhaus sums.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 2,6,8,16,18,22,24,40,42,46,48,56,58,62,64,96,98,102,104,112,114,118,120,136,138,142,144,152,154,158,160,224,226,230,232,240,242,246,248,264,266,270,272,280,282,286,288,320,322,326,328,336,338,342,344,360,362,366,368
 
+mov $4,1
+mov $5,$0
+add $5,1
 add $0,1
-mov $1,$0
-add $1,$0
-div $1,2
-add $1,1
-mov $2,1
-lpb $0
-  mov $3,$0
-  div $0,2
-  mov $4,$0
-  lpb $3
-    mov $3,1
-    mul $4,$2
-    add $1,$4
-  lpe
-  mul $2,2
+mov $2,$5
+seq $2,70939 ; Length of binary representation of n.
+lpb $2
+  sub $2,1
+  mov $3,$5
+  mul $3,$4
+  mul $4,2
+  div $5,2
+  add $1,$3
 lpe
-mov $0,$1
-mul $0,2
-sub $0,2
+add $0,$1

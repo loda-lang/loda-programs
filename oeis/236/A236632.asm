@@ -5,10 +5,11 @@
 add $0,1
 mov $2,$0
 lpb $0
-  mov $2,$0
-  seq $2,65608 ; Sum of divisors of n minus the number of divisors of n.
+  max $0,1
+  mov $3,$2
+  div $3,$0
   sub $0,1
-  add $1,$2
+  mul $3,$0
+  add $1,$3
 lpe
 mov $0,$1
-div $0,2
