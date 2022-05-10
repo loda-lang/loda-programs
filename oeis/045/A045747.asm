@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,4
   seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+  trn $0,4
   add $1,$2
 lpe
 mov $0,$1

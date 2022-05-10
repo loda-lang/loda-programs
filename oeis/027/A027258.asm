@@ -5,10 +5,10 @@
 lpb $0
   mul $0,2
   sub $0,1
-  mov $2,$0
-  mul $0,$1
-  max $2,0
-  seq $2,26083 ; a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is an integer, s(0) = 0 = s(n), |s(i) - s(i-1)| = 1 for i = 1,2,3; |s(i) - s(i-1)| <= 1 for i >= 4. Also a(n) = T(n,n), where T is the array defined in A026082.
+  mov $1,$0
+  max $1,0
+  seq $1,26083 ; a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is an integer, s(0) = 0 = s(n), |s(i) - s(i-1)| = 1 for i = 1,2,3; |s(i) - s(i-1)| <= 1 for i >= 4. Also a(n) = T(n,n), where T is the array defined in A026082.
+  mul $0,0
 lpe
-mov $0,$2
+mov $0,$1
 div $0,2

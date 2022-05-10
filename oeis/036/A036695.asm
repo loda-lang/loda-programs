@@ -5,5 +5,5 @@
 mov $1,$0
 seq $0,603 ; Number of nonnegative solutions to x^2 + y^2 <= n^2.
 mul $0,2
-sub $0,$1
 sub $0,1
+sub $0,$1

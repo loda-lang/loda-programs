@@ -14,8 +14,7 @@ add $1,3
 add $0,$1
 add $0,$1
 add $0,$1
-sub $0,13
 mul $0,4
-sub $0,372
+sub $0,424
 div $0,4
 add $0,67
