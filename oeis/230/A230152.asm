@@ -6,13 +6,13 @@ add $0,1
 mov $3,$0
 mul $3,3
 lpb $3
+  sub $3,1
   add $6,$7
-  add $1,$6
   add $7,$6
+  add $1,$6
   add $6,$1
   add $1,$7
   add $2,$1
-  sub $3,1
   add $5,$2
   max $6,4
   add $6,$5

@@ -9,11 +9,11 @@ lpb $0
   add $3,1
   add $4,$2
   add $4,3
-  mov $5,$4
+  mov $1,$4
   mov $4,$2
-  mov $2,$3
   sub $4,$3
-  add $5,$4
-  mov $3,$5
+  add $1,$4
+  mov $2,$3
+  mov $3,$1
 lpe
 mov $0,$4

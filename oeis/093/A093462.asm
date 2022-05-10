@@ -4,13 +4,13 @@
 lpb $0
   mov $2,$0
   seq $2,93461 ; a(1)=1, a(n) = 2*(n^(n-1)-1)/(n-1) for n >= 2.
-  mov $3,$0
-  cmp $3,0
-  add $0,$3
+  mov $1,$0
+  cmp $1,0
+  add $0,$1
   div $2,$0
-  mov $0,0
   mul $2,2
   sub $2,2
+  mov $0,0
 lpe
 mov $0,$2
 div $0,2

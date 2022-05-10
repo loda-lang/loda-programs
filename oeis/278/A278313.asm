@@ -3,8 +3,8 @@
 
 add $0,6
 mod $0,5
-mov $2,2
-lpb $2
+mov $1,2
+lpb $1
   trn $0,3
-  gcd $2,$0
+  gcd $1,$0
 lpe

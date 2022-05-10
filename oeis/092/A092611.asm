@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,30433 ; Primes of form 10*k + 9.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

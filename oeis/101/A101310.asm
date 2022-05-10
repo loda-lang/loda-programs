@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,182986 ; Zero together with the prime numbers (A000040).
-  add $3,$2
-  mul $3,10
+  sub $0,1
+  add $1,$2
+  mul $1,10
 lpe
-mov $0,$3
+mov $0,$1

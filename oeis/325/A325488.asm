@@ -1,11 +1,11 @@
 ; A325488: Dimensions of space of harmonic polynomials of each degree invariant under the full icosahedral group.
 ; 1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,2,0,2,0,1,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,3,0,2,0,2,0,3,0,2,0,3,0,3,0,2,0,3,0,3,0,3,0,3,0,3,0,3,0,3,0,4,0,3,0,3,0,4,0,3,0
 
-mov $3,2
 mov $5,$0
+mov $3,2
 lpb $3
-  mov $0,$5
   sub $3,1
+  mov $0,$5
   add $0,$3
   sub $0,1
   div $0,2

@@ -5,8 +5,8 @@ lpb $0
   mov $2,$0
   seq $2,155836 ; 2^(2^n) mod n.
   add $3,$2
-  mov $4,$0
-  min $4,1
-  mov $0,$4
+  mov $1,$0
+  min $1,1
+  mov $0,$1
 lpe
 add $0,$3

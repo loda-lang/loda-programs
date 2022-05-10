@@ -4,9 +4,9 @@
 
 lpb $0
   sub $0,2
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,77978 ; Expansion of 1/(1+x+2*x^2-x^3).
   mov $0,1
-  max $2,0
-  seq $2,77978 ; Expansion of 1/(1+x+2*x^2-x^3).
 lpe
-mov $0,$2
+mov $0,$1

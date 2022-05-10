@@ -4,8 +4,8 @@
 
 lpb $0
   mov $1,$0
-  sub $0,2
   seq $1,181331 ; Number of 0's in the top rows of all 2-compositions of n.
+  sub $0,2
   add $2,$1
 lpe
 max $3,$0

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,47425 ; Numbers that are congruent to {3, 4, 5, 6} mod 8.
+  sub $0,1
   add $1,$2
 lpe
 add $1,3

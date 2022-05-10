@@ -3,12 +3,11 @@
 
 mov $2,$0
 mul $0,2
-mov $6,$0
-mov $0,6
 mov $5,14
-mul $5,$6
+mul $5,$0
 add $5,3
 div $5,6
+mov $0,6
 lpb $0
   add $3,1
   mul $5,8

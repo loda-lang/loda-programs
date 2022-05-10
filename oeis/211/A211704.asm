@@ -5,7 +5,7 @@ add $0,1
 mov $1,$0
 lpb $1
   mov $2,$1
-  mov $1,1
   seq $2,187325 ; a(n) = floor(n/2) + floor(n/3) + floor(n/4) + floor(n/5).
+  mov $1,1
 lpe
 add $0,$2

@@ -3,11 +3,10 @@
 
 mov $1,$0
 sub $1,13
-mov $3,3
 lpb $1
   sub $1,4
   trn $1,1
-  add $2,$3
+  add $2,3
   add $0,$2
   add $0,$1
   trn $1,$2

@@ -6,9 +6,9 @@ trn $0,2
 pow $0,2
 lpb $0
   sub $0,2
-  add $2,4
-  trn $0,$2
+  add $1,4
+  trn $0,$1
 lpe
-mov $0,$2
+mov $0,$1
 div $0,4
 add $0,1

@@ -5,11 +5,11 @@
 add $0,1
 lpb $0
   sub $0,1
-  mov $2,$0
-  min $2,2
   mov $3,$4
   bin $3,$1
   add $1,1
+  mov $2,$0
+  min $2,2
   sub $2,1
   mul $3,$2
   div $3,$1

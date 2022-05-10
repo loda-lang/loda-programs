@@ -6,14 +6,14 @@ trn $0,2
 mov $2,$1
 add $2,$0
 mov $1,$2
-sub $1,2
 add $2,2
-mov $0,$2
 mov $3,$2
 add $3,$2
 sub $3,3
+mov $0,$2
+sub $1,2
 lpb $1
-  add $0,$3
   sub $1,1
+  add $0,$3
 lpe
 sub $0,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  mod $0,2
   seq $1,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
+  mod $0,2
 lpe
 trn $1,$0
 mov $0,$1

@@ -7,9 +7,9 @@ add $0,2
 mov $1,$0
 add $0,2
 lpb $1
+  dif $1,2
   bin $0,2
   add $0,1
-  dif $1,2
 lpe
 sub $0,7
 div $0,2

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,70825 ; One half of product of first n+1 Lucas numbers A000032.
+  mov $0,0
 lpe
 mov $0,$1
 add $0,1

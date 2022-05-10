@@ -1,4 +1,4 @@
-; A177444: Triangle by columns, (1, 1, 0, 1, 0, 0, 0,...); shifted down twice for columns >0.
+; A177444: Triangle by columns, (1, 1, 0, 1, 0, 0, 0, ...); shifted down twice for columns > 0.
 ; 1,1,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
 
 seq $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.

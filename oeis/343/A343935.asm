@@ -6,10 +6,10 @@ mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
-  sub $0,1
   cmp $3,$2
-  add $4,2
-  sub $4,$3
+  sub $0,1
+  add $1,2
+  sub $1,$3
 lpe
-bin $4,$2
-mov $0,$4
+bin $1,$2
+mov $0,$1

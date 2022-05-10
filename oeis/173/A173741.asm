@@ -5,8 +5,8 @@
 seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 lpb $0
   mov $1,$0
-  mov $0,1
   add $1,3
+  mov $0,1
 lpe
 mov $0,$1
 add $0,1

@@ -21,16 +21,16 @@ lpb $0
   cmp $11,$0
   cmp $11,0
   mul $9,$11
-  mov $8,$9
   mov $12,$0
+  mov $8,$9
   lpb $8
     mov $6,$12
     mod $6,2
     mov $7,$9
     mod $7,2
     mul $6,$7
-    add $4,$6
     div $9,2
+    add $4,$6
     mov $8,$9
     div $12,2
   lpe

@@ -5,9 +5,9 @@ bin $0,8
 mov $1,$0
 lpb $1
   mov $1,$0
-  add $0,10
   min $1,4
   add $2,1
+  add $0,10
   sub $1,$2
 lpe
 mul $0,2

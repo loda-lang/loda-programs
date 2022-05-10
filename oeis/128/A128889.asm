@@ -6,10 +6,10 @@ mov $2,$0
 lpb $0
   max $0,2
   sub $0,1
-  mov $3,2
   add $4,$2
+  mov $3,2
   pow $3,$4
-  add $5,$3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1
 add $0,1

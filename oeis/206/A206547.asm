@@ -4,10 +4,10 @@
 
 add $0,6
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,160545 ; Numbers coprime to 21.
   mov $0,0
-  seq $2,160545 ; Numbers coprime to 21.
 lpe
-mov $0,$2
+mov $0,$1
 mul $0,2
 sub $0,21

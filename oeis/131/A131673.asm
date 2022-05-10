@@ -3,9 +3,9 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,131674 ; Size of the largest BDD of symmetric Boolean functions of n variables when the sink nodes are not counted.
   add $1,1
+  mov $0,0
 lpe
 add $1,1
 mov $0,$1

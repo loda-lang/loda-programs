@@ -4,8 +4,8 @@
 lpb $0
   add $2,1
   mov $3,$0
-  trn $0,$2
   mod $3,2
+  trn $0,$2
   add $1,$3
 lpe
 mov $0,$1

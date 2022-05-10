@@ -5,10 +5,10 @@
 seq $0,228141 ; Numbers that are congruent to {1, 5} mod 20.
 sub $0,2
 mov $1,$0
-mul $0,2
 mul $1,9
 mov $2,2
 add $2,$1
+mul $0,2
 mul $0,$2
 div $0,40
 mul $0,5

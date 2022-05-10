@@ -5,9 +5,9 @@
 mov $1,1
 add $0,4
 lpb $0
-  mul $7,2
   sub $0,1
   div $2,2
+  mul $7,2
   add $1,$2
   mov $5,$1
   mov $6,$4

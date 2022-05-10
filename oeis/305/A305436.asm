@@ -1,24 +1,22 @@
 ; A305436: Number of divisors of n of the form 2^k + 1 for k >= 0.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w3)
 ; 0,1,1,1,1,2,0,1,2,2,0,2,0,1,2,1,1,3,0,2,1,1,0,2,1,1,2,1,0,3,0,1,2,2,1,3,0,1,1,2,0,2,0,1,3,1,0,2,0,2,2,1,0,3,1,1,1,1,0,3,0,1,2,1,2,3,0,2,1,2,0,3,0,1,2,1,0,2,0,2,2,1,0,2,2,1,1,1,0,4,0,1,1,1,1,2,0,1,3,2
 
 add $0,1
 mov $1,1
-mov $2,$0
 mov $4,1
+mov $2,$0
 lpb $2
-  mov $3,1
   mul $4,2
-  sub $4,$5
-  mov $5,$0
-  mod $5,$4
-  cmp $5,0
-  mul $3,$5
+  sub $4,$3
+  mov $3,$0
+  mod $3,$4
+  cmp $3,0
   add $1,$3
-  add $5,1
-  cmp $5,0
-  cmp $5,0
-  sub $2,$5
+  add $3,1
+  cmp $3,0
+  cmp $3,0
+  sub $2,$3
 lpe
 mov $0,$1
 sub $0,1

@@ -10,7 +10,7 @@ lpb $0
 lpe
 add $0,$1
 div $0,$2
-add $1,$0
 mul $2,$0
+add $1,$0
 sub $1,$2
 mov $0,$1

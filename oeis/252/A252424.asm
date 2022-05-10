@@ -5,9 +5,9 @@
 add $0,5
 lpb $0
   sub $0,1
-  mov $1,1
   trn $4,207
   sub $3,$4
+  mov $1,1
   add $1,$3
   mov $4,$2
   mov $5,$2

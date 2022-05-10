@@ -3,9 +3,9 @@
 
 mov $2,$0
 mov $3,$0
-mov $4,$0
-cmp $4,0
-add $0,$4
+mov $1,$0
+cmp $1,0
+add $0,$1
 div $2,$0
 add $2,2
 add $0,$2

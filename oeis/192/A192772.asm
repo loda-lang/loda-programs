@@ -1,8 +1,8 @@
 ; A192772: Constant term in the reduction of the n-th Fibonacci polynomial by x^3->x^2+2x+1.
-; Submitted by Simon Strandgaard
+; Submitted by Jamie Morken(w4)
 ; 1,0,1,1,2,7,12,41,86,247,585,1548,3849,9896,25001,63724,161721,411257,1044878,2655719,6748972,17151849,43589578,110777391,281529169,715471992,1818293377,4620978640,11743694657,29845241080,75848270001
 
-mov $1,1
+mov $3,1
 lpb $0
   sub $0,1
   mov $5,$1
@@ -21,4 +21,4 @@ lpb $0
   mov $7,$6
   mov $3,$5
 lpe
-mov $0,$1
+mov $0,$3

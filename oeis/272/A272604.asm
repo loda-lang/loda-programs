@@ -6,10 +6,9 @@ lpb $0
   mov $2,$0
   mod $2,2
   div $0,2
-  max $1,0
-  sub $1,1
   add $1,$2
   add $1,$2
+  trn $1,1
   max $3,$1
 lpe
 mov $0,$3

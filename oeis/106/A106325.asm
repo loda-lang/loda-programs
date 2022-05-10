@@ -6,9 +6,9 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  add $2,$3
-  mov $3,$0
-  add $0,1
   sub $2,1
+  seq $1,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  add $2,$1
+  mov $1,$0
+  add $0,1
 lpe
