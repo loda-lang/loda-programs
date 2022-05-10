@@ -14,4 +14,5 @@ lpb $0
   add $1,$3
   mul $2,8
 lpe
-mov $0,$1
+gcd $0,$1
+div $0,2

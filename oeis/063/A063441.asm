@@ -1,8 +1,33 @@
 ; A063441: a(n) = sigma(n) * mu(n).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,-3,-4,0,-6,12,-8,0,0,18,-12,0,-14,24,24,0,-18,0,-20,0,32,36,-24,0,0,42,0,0,-30,-72,-32,0,48,54,48,0,-38,60,56,0,-42,-96,-44,0,0,72,-48,0,0,0,72,0,-54,0,72,0,80,90,-60,0,-62,96,0,0,84,-144,-68,0,96,-144,-72,0,-74,114,0,0,96,-168,-80,0,0,126,-84,0,108,132,120,0,-90,0,112,0,128,144,120,0,-98,0,0,0
 
-mov $1,$0
-seq $1,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
-seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-mul $0,$1
+mov $1,1
+mov $2,1
+add $0,1
+pow $0,2
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    mov $5,$2
+    cmp $5,1
+    add $2,1
+    max $4,$5
+    sub $3,$4
+  lpe
+  mov $6,2
+  lpb $0
+    dif $0,$2
+    mov $5,$4
+    add $4,$2
+    mul $6,$4
+    sub $4,$6
+    mov $6,1
+  lpe
+  mul $1,$5
+lpe
+mov $0,$1

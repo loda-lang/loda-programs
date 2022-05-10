@@ -1,6 +1,19 @@
 ; A081242: Left-to-right binary enumeration.
+; Submitted by Simon Strandgaard
 ; 1,2,11,21,12,22,111,211,121,221,112,212,122,222,1111,2111,1211,2211,1121,2121,1221,2221,1112,2112,1212,2212,1122,2122,1222,2222,11111,21111,12111,22111,11211,21211,12211,22211,11121,21121,12121,22121
 
-seq $0,284920 ; Numbers with digits 2 and 4 only.
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+add $0,1
+lpb $0
+  mov $2,$0
+  mul $0,2
+  sub $0,1
+  div $0,4
+  add $2,1
+  mod $2,2
+  mul $2,2
+  add $2,2
+  mul $1,10
+  add $1,$2
+lpe
+gcd $0,$1
 div $0,2
