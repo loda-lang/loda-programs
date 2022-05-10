@@ -1,15 +1,18 @@
 ; A350146: Partial sums of A002131.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,3,7,11,17,25,33,41,54,66,78,94,108,124,148,164,182,208,228,252,284,308,332,364,395,423,463,495,525,573,605,637,685,721,769,821,859,899,955,1003,1045,1109,1153,1201,1279,1327,1375,1439,1496,1558,1630,1686,1740,1820
 
-mov $3,$0
+add $0,1
 mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,2131 ; Sum of divisors d of n such that n/d is odd.
-  add $1,$0
+mul $0,2
+lpb $0
+  sub $0,1
+  mov $3,$2
+  div $3,$0
+  sub $0,1
+  add $1,$3
+  pow $3,2
+  add $1,$3
 lpe
 mov $0,$1
+div $0,2

@@ -1,10 +1,16 @@
 ; A130235: Partial sums of the 'lower' Fibonacci Inverse A130233.
+; Submitted by Simon Strandgaard
 ; 0,2,5,9,13,18,23,28,34,40,46,52,58,65,72,79,86,93,100,107,114,122,130,138,146,154,162,170,178,186,194,202,210,218,227,236,245,254,263,272,281,290,299,308,317,326,335,344,353,362,371,380,389,398,407,417,427
 
+mov $1,$0
+mov $2,1
+mov $3,1
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,131234 ; Starts with 1, then n appears Fibonacci(n-1) times.
-  sub $0,1
-  add $1,$2
+  sub $0,$2
+  add $1,$0
+  add $4,$2
+  mov $2,$3
+  mov $3,$4
 lpe
 mov $0,$1

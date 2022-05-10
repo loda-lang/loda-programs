@@ -5,9 +5,8 @@
 add $0,4
 lpb $0
   mov $2,$0
-  sub $0,3
-  trn $0,2
   seq $2,26810 ; Number of partitions of n in which the greatest part is 4.
+  trn $0,5
   add $1,$2
 lpe
 mov $0,$1

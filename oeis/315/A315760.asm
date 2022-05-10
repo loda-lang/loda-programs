@@ -4,10 +4,9 @@
 
 mov $2,$0
 lpb $0
-  sub $0,2
+  sub $0,4
   add $1,4
-  sub $0,$1
-  trn $0,2
+  trn $0,$1
   add $0,$1
   add $1,4
 lpe

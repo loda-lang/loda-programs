@@ -1,12 +1,16 @@
 ; A123316: Triangle read by rows: T(n,k)=(k+1)*n!/2 (1<=k<=n).
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,9,12,24,36,48,60,120,180,240,300,360,720,1080,1440,1800,2160,2520,5040,7560,10080,12600,15120,17640,20160,40320,60480,80640,100800,120960,141120,161280,181440,362880,544320,725760,907200,1088640
 
+mov $1,2
+mov $2,1
 lpb $0
-  mov $2,$0
-  sub $0,1
-  seq $2,130493 ; Triangle read by rows in which row n contains n! repeated n times.
-  add $1,$2
+  add $0,1
+  add $1,1
+  sub $0,$1
+  mul $2,$1
 lpe
-div $1,2
-add $1,1
-mov $0,$1
+mov $1,1
+add $1,$0
+mul $2,$1
+mov $0,$2

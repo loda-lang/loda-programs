@@ -1,27 +1,10 @@
 ; A071378: Largest proper divisor of n^3.
+; Submitted by Simon Strandgaard
 ; 4,9,32,25,108,49,256,243,500,121,864,169,1372,1125,2048,289,2916,361,4000,3087,5324,529,6912,3125,8788,6561,10976,841,13500,961,16384,11979,19652,8575,23328,1369,27436,19773,32000,1681,37044,1849,42592
 
-add $0,2
-mov $1,1
-mov $2,2
-mov $4,$0
-mov $3,$0
-lpb $3
-  mov $5,$4
-  lpb $5
-    mov $6,$0
-    lpb $1
-      div $1,$4
-      pow $0,3
-      div $0,$2
-      mod $6,$2
-      cmp $6,0
-      sub $5,$6
-    lpe
-  lpe
-  add $2,1
-  mov $6,$0
-  cmp $6,1
-  cmp $6,0
-  sub $3,$6
-lpe
+mov $1,$0
+add $1,2
+pow $1,2
+add $0,1
+seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+mul $0,$1
