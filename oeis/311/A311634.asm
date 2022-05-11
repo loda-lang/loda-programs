@@ -16,8 +16,8 @@ lpb $0
   add $0,$3
   trn $0,$3
   add $3,6
-  trn $1,$3
 lpe
+trn $1,$3
 add $1,1
 lpb $2
   sub $2,1

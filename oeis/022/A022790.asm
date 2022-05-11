@@ -9,10 +9,9 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  mul $0,2
+  mul $0,4
   mov $4,$0
-  mul $0,7
-  mul $4,3
+  mul $0,4
   add $4,$0
   div $4,49
   add $4,1

@@ -1,11 +1,14 @@
 ; A023758: Numbers of the form 2^i - 2^j with i >= j.
+; Submitted by Simon Strandgaard
 ; 0,1,2,3,4,6,7,8,12,14,15,16,24,28,30,31,32,48,56,60,62,63,64,96,112,120,124,126,127,128,192,224,240,248,252,254,255,256,384,448,480,496,504,508,510,511,512,768,896,960,992,1008,1016,1020,1022,1023,1024,1536,1792,1920,1984,2016,2032,2040,2044,2046,2047,2048,3072,3584,3840,3968,4032,4064,4080,4088,4092,4094,4095,4096,6144,7168,7680,7936,8064,8128,8160,8176,8184,8188,8190,8191,8192,12288,14336,15360,15872,16128,16256,16320
 
-lpb $0
-  mov $1,$0
-  mul $0,0
-  trn $1,1
-  seq $1,43569 ; Numbers whose base-2 representation has exactly 2 runs.
-lpe
-div $1,2
-mov $0,$1
+mov $1,$0
+trn $0,1
+seq $0,209492 ; a(0)=1; for n >= 1, let k = floor((1 + sqrt(8*n-7))/2), m = n - (k^2 - k+2)/2. Then a(n) = 2^k + 2^(m+1) - 1.
+seq $0,153151 ; Rotated binary decrementing: For n<2 a(n) = n, if n=2^k, a(n) = 2*n-1, otherwise a(n) = n-1.
+sub $0,1
+div $0,2
+seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
+cmp $1,0
+cmp $1,0
+mul $0,$1
