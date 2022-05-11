@@ -6,10 +6,8 @@ mov $2,$0
 add $0,1
 mov $1,$0
 pow $1,2
-add $1,1
 lpb $1
   add $2,1
-  trn $1,$2
+  sub $1,$2
 lpe
-sub $0,1
 add $0,$2

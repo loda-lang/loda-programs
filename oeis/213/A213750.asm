@@ -1,20 +1,20 @@
 ; A213750: Rectangular array:  (row n) = b**c, where b(h) = h, c(h) = 2*(n-1+h)-1, n>=1, h>=1, and ** = convolution.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,5,3,14,11,5,30,26,17,7,55,50,38,23,9,91,85,70,50,29,11,140,133,115,90,62,35,13,204,196,175,145,110,74,41,15,285,276,252,217,175,130,86,47,17,385,375,348,308,259,205,150,98,53,19,506,495,465,420
 
 mov $2,$0
 lpb $2
   add $0,$1
-  add $0,3
   sub $1,1
   add $2,$1
 lpe
 sub $2,1
 add $1,$2
 bin $1,2
-mul $2,7
+add $2,2
 add $2,$0
-add $2,13
+mul $2,2
+add $2,1
 mul $1,$2
 mov $0,$1
-div $0,6
+div $0,3
