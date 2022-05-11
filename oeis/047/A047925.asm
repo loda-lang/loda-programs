@@ -1,6 +1,11 @@
 ; A047925: 3rd column of array in A038150.
+; Submitted by Simon Strandgaard
 ; 8,16,29,37,50,63,71,84,92,105,118,126,139,152,160,173,181,194,207,215,228,236,249,262,270,283,296,304,317,325,338,351,359,372,385,393,406,414,427,440,448,461,469,482,495,503,516,529,537,550,558,571,584,592
 
-seq $0,26352 ; a(n) = floor(n*tau)+n+1.
-seq $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
+mov $1,$0
+seq $1,66096 ; Duplicate values in A060143.
+mul $1,5
+mul $0,3
+add $0,4
+add $0,$1
 add $0,4
