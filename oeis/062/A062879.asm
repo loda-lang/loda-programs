@@ -1,24 +1,6 @@
 ; A062879: Integers whose Zeckendorf expansion does not contain ones at even positions.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 0,2,5,7,13,15,18,20,34,36,39,41,47,49,52,54,89,91,94,96,102,104,107,109,123,125,128,130,136,138,141,143,233,235,238,240,246,248,251,253,267,269,272,274,280,282,285,287,322,324,327,329,335,337,340,342,356,358,361,363,369,371,374,376,610,612,615,617,623,625,628,630,644,646,649,651,657,659,662,664,699,701,704,706,712,714,717,719,733,735,738,740,746,748,751,753,843,845,848,850
 
-mov $2,$0
-mov $4,2
-mov $5,$0
-lpb $2
-  mov $0,$5
-  mov $1,1
-  sub $2,1
-  sub $0,$2
-  mov $3,1
-  lpb $0
-    dif $0,2
-    add $1,$3
-    add $3,$1
-  lpe
-  mov $0,$1
-  add $0,1
-  add $4,$0
-lpe
-mov $0,$4
-sub $0,2
+mul $0,2
+seq $0,62877 ; Apart from the initial term (0), each a(n) is representable as a sum of distinct odd-indexed Fibonacci numbers.

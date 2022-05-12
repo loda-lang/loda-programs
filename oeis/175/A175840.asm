@@ -12,7 +12,6 @@ mov $3,2
 pow $3,$0
 mov $0,3
 pow $0,$2
-pow $1,0
-mul $1,$3
+mov $1,$3
 mul $1,$0
 mov $0,$1

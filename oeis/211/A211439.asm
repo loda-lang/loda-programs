@@ -1,15 +1,17 @@
 ; A211439: Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+3x+3y=0.
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 1,3,5,19,25,31,59,69,79,121,135,149,205,223,241,311,333,355,439,465,491,589,619,649,761,795,829,955,993,1031,1171,1213,1255,1409,1455,1501,1669,1719,1769,1951,2005,2059,2255,2313,2371,2581,2643,2705
 
-mov $1,$0
-sub $2,$0
-mul $2,2
-lpb $1
-  add $0,1
-  sub $1,3
-  add $2,1
-  sub $0,$2
-lpe
 mul $0,2
+add $0,2
+sub $2,$0
+div $2,3
+mul $2,2
+sub $0,1
+mov $1,$0
+add $1,$2
+mul $0,3
+sub $0,$2
+mul $0,$1
 add $0,1
+div $0,4

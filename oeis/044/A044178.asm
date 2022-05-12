@@ -1,25 +1,18 @@
 ; A044178: Numbers n such that string 5,5 occurs in the base 7 representation of n but not of n-1.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 40,89,138,187,236,280,334,383,432,481,530,579,623,677,726,775,824,873,922,966,1020,1069,1118,1167,1216,1265,1309,1363,1412,1461,1510,1559,1608,1652,1706,1755,1804,1853,1902,1951,1960
 
-mov $2,$0
-mov $5,$0
-mov $8,$0
-add $0,205
-mov $3,49
-lpb $0
-  gcd $3,$0
-  mov $0,$4
-lpe
-div $2,$3
-mul $3,$2
-mov $1,$3
-add $1,12
-mov $7,$5
-mul $7,24
-add $1,$7
-mov $6,$8
-mul $6,24
-add $1,$6
+mov $3,$0
+add $3,2
+mul $0,6
+add $0,5
+mov $1,49
+gcd $1,$0
+div $1,6
+mul $1,-5
+add $1,24
+mov $2,$3
+mul $2,49
+add $1,$2
 mov $0,$1
-add $0,28
+sub $0,82

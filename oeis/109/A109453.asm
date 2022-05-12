@@ -1,20 +1,19 @@
 ; A109453: Cumulative sum of initial digits of n.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,3,6,10,15,21,28,36,45,46,47,48,49,50,51,52,53,54,55,57,59,61,63,65,67,69,71,73,75,78,81,84,87,90,93,96,99,102,105,109,113,117,121,125,129,133,137,141,145,150,155,160,165,170,175,180,185,190,195,201,207,213
 
-mov $3,$0
+add $0,1
 mov $4,$0
-lpb $3
+mov $2,$0
+lpb $2
+  sub $2,1
   mov $0,$4
-  sub $3,1
-  sub $0,$3
-  mov $2,1
-  add $2,$0
+  sub $0,$2
+  mov $3,$0
   lpb $0
-    mov $0,8
-    div $2,10
+    div $3,10
+    sub $0,$3
   lpe
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1
-add $0,1
