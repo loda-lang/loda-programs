@@ -5,10 +5,9 @@
 mul $0,2
 pow $0,2
 mul $0,2
-mov $1,1
-add $1,$0
-sub $0,1
-mul $0,4
-div $0,10
-sub $1,$0
-mov $0,$1
+mov $1,$0
+sub $1,1
+mul $1,2
+div $1,5
+add $0,1
+sub $0,$1
