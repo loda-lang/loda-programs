@@ -5,8 +5,8 @@ add $0,1
 mov $2,$0
 seq $2,64784 ; Difference between n-th triangular number t(n) and the largest square <= t(n).
 lpb $2
-  mov $1,$0
   mov $2,$0
+  mov $1,$0
 lpe
 add $1,1
 mov $0,$1

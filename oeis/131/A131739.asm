@@ -6,6 +6,6 @@ mul $2,2
 add $0,$2
 div $0,4
 mov $1,$0
-add $0,1
 gcd $1,3
+add $0,1
 div $0,$1

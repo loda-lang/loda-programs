@@ -2,19 +2,19 @@
 ; Submitted by Jon Maiga
 ; 1,3,6,10,14,18,23,29,36,44,52,60,68,76
 
-mov $2,$0
 mov $4,$0
+mov $2,$0
 lpb $2
-  mov $0,$4
   sub $2,1
+  mov $6,0
+  mov $0,$4
   sub $0,$2
+  mov $1,$0
   mov $5,$0
   add $5,1
-  mov $6,0
-  mov $7,$0
   lpb $5
-    mov $0,$7
     sub $5,1
+    mov $0,$1
     sub $0,$5
     div $0,2
     seq $0,70488 ; a(n) = n^3 mod 26.

@@ -4,10 +4,10 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,2
   seq $2,188044 ; a(n) = [n*r] - [k*r] - [n*r-k*r], where r=sqrt(2), k=4, [ ]=floor.
   add $0,$2
   add $0,1
+  sub $1,2
 lpe
 add $0,1
 mod $0,2

@@ -5,12 +5,11 @@
 add $0,3
 lpb $0
   sub $0,3
-  mul $3,3
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25922 ; Expansion of 1/((1-x^8)(1-x^11)(1-x^12)).
+  seq $2,25907 ; Expansion of 1/((1-x^6)(1-x^11)(1-x^12)).
   add $1,$2
-  mov $3,1
+  mov $3,5
 lpe
 mov $0,$1

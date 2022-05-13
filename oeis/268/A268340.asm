@@ -1,5 +1,5 @@
 ; A268340: Characteristic function of the prime powers p^k, k >= 2.
-; Submitted by Christian Krause
+; Submitted by Jamie Morken(w4)
 ; 0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 lpb $0
@@ -7,16 +7,10 @@ lpb $0
   mov $1,$0
   sub $0,1
 lpe
-lpb $0
-  sub $0,1
-  add $2,$1
-lpe
+mov $0,$1
+div $0,2
+cmp $1,4
 pow $1,$0
 mov $0,$1
-lpb $1
-  lpb $0
-    add $2,1
-    sub $0,$2
-    cmp $1,0
-  lpe
-lpe
+add $0,5
+mod $0,2

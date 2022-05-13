@@ -8,13 +8,13 @@ lpb $0
   mov $2,$4
   mov $3,$0
   lpb $3
-    sub $0,$2
     max $4,$2
+    sub $0,$2
     add $2,1
     sub $3,$4
   lpe
-  sub $0,1
   sub $2,1
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

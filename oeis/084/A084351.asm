@@ -6,6 +6,6 @@ add $0,1
 mov $1,$0
 mul $1,2
 lpb $1
-  seq $0,109045 ; a(n) = lcm(n,4).
   mov $1,2
+  seq $0,109045 ; a(n) = lcm(n,4).
 lpe

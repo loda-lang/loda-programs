@@ -5,6 +5,5 @@ div $0,3
 gcd $0,4
 mul $0,2
 mod $0,5
-sub $0,2
 mul $0,3
-add $0,2
+sub $0,4

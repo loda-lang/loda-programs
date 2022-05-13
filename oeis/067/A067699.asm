@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   add $0,$2
+  sub $1,1
 lpe
 mul $0,2

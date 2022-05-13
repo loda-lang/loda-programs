@@ -6,10 +6,10 @@ lpb $0
   mov $2,$0
   seq $2,122652 ; a(0) = 0, a(1) = 4; for n > 1, a(n) = 10*a(n-1) - a(n-2).
   add $3,$2
-  mov $4,$2
-  min $4,1
-  sub $4,1
-  mov $0,$4
+  mov $1,$2
+  min $1,1
+  sub $1,1
+  mov $0,$1
   add $2,$3
   sub $2,1
 lpe

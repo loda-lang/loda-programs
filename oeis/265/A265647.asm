@@ -12,13 +12,11 @@ lpb $3
     mod $2,$4
     cmp $2,0
     add $3,$1
-    add $0,2
+    add $0,1
     sub $1,$2
   lpe
   add $1,$5
-  cmp $2,5
-  cmp $2,0
-  sub $3,$2
+  sub $3,1
   sub $0,$1
   add $5,1
 lpe

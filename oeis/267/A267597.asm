@@ -3,9 +3,9 @@
 
 lpb $0
   sub $0,2
-  add $2,$0
+  add $1,$0
   sub $0,3
 lpe
-div $2,2
-mov $0,$2
+div $1,2
+mov $0,$1
 add $0,1

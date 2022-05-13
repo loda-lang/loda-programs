@@ -5,6 +5,6 @@ lpb $0
   dif $0,2
 lpe
 div $0,2
-sub $1,1
+mov $1,-1
 pow $1,$0
 mov $0,$1

@@ -2,8 +2,7 @@
 ; Submitted by Jamie Morken(l1)
 ; 1,1,1,3,9,45,265,1855,14833,133497,1334961,14684571,176214841,2290792933,32071101049,481066515735,7697064251745,130850092279665,2355301661033953,44750731559645107,895014631192902121,18795307255050944541,413496759611120779881
 
-mod $0,53
-seq $0,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+mod $0,59
+seq $0,212291 ; Number of permutations of n elements with at most one fixed point.
 div $0,2
-mul $0,2
 add $0,1

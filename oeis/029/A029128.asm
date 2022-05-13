@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,8
   seq $2,25792 ; Expansion of 1/((1-x)(1-x^9)(1-x^11)).
+  sub $0,8
   add $1,$2
   add $1,$2
 lpe

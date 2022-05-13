@@ -7,6 +7,5 @@ pow $1,$0
 pow $0,5
 add $0,1
 mod $0,4
-add $0,2
+sub $0,1
 add $0,$1
-sub $0,3

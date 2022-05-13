@@ -6,7 +6,7 @@ lpb $0
   div $0,10
   add $2,1
 lpe
-mov $3,$2
-cmp $3,0
-add $2,$3
+mov $1,$2
+cmp $1,0
+add $2,$1
 mov $0,$2

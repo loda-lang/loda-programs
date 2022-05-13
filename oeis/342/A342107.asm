@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,8977 ; a(n) = (4*n)!/(n!)^4.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

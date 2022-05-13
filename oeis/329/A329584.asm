@@ -5,6 +5,4 @@
 seq $0,327922 ; Odd numbers m >= 3 for which phi(2*m)/2 = phi(m)/2 is even, where phi = A000010 (Euler's totient).
 sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-sub $0,4
 div $0,4
-add $0,1
