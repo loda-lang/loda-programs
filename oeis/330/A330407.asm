@@ -5,13 +5,12 @@
 mov $2,$0
 mov $3,$0
 trn $3,1
-add $3,1
 lpb $0
   add $1,1
   mov $0,$2
   div $0,$1
   sub $0,$1
-  max $3,2
+  max $3,$1
   add $4,3
   lpb $4
     div $4,2
@@ -21,4 +20,3 @@ lpe
 mul $3,2
 add $1,$3
 mov $0,$1
-sub $0,2
