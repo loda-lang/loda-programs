@@ -6,8 +6,8 @@ max $1,$0
 mod $1,4
 mov $2,$0
 lpb $2
-  add $1,2
   trn $2,8
+  add $1,2
 lpe
 sub $1,3
 div $1,2

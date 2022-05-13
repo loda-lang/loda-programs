@@ -3,6 +3,6 @@
 
 mul $0,2
 seq $0,14166 ; Apply partial sum operator 4 times to Fibonacci numbers.
-mov $2,$0
-cmp $2,0
-add $0,$2
+mov $1,$0
+cmp $1,0
+add $0,$1

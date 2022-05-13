@@ -7,8 +7,8 @@ trn $4,2
 lpb $0
   mul $0,2
   mov $3,$0
-  sub $0,1
   sub $0,$4
+  sub $0,1
   trn $0,5
   mov $2,$3
 lpe

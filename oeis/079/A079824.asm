@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,210978 ; A186029 and positive terms of A001106 interleaved.
+  sub $0,2
   add $1,$2
   add $1,1
 lpe

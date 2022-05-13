@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,4
   seq $2,17898 ; Expansion of (1-x)/(1-x-x^4).
+  sub $0,4
   add $1,$2
 lpe
 mov $0,$1

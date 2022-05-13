@@ -7,16 +7,16 @@ mov $3,1
 lpb $0
   add $3,1
   sub $2,$3
-  mov $0,$2
   add $3,1
+  mov $0,$2
   add $1,$3
   trn $1,$2
 lpe
 trn $0,$1
-pow $1,2
-add $1,$2
 add $3,1
 mul $3,$0
+pow $1,2
+add $1,$2
 add $1,$3
 mov $0,$1
 div $0,2

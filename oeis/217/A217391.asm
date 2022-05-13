@@ -5,9 +5,9 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
   pow $2,2
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

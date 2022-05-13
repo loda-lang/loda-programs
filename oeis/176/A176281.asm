@@ -6,8 +6,8 @@ lpb $0
   mul $1,2
   add $1,1
   mov $2,$0
-  sub $0,1
   seq $2,1906 ; F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).
+  sub $0,1
   add $1,$2
 lpe
 div $1,4

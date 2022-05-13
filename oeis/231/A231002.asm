@@ -6,6 +6,6 @@ add $1,$0
 div $0,2
 mul $0,8
 mul $1,18
-sub $1,$0
 sub $1,571
+sub $1,$0
 mov $0,$1

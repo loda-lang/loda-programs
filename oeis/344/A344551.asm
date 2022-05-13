@@ -14,8 +14,8 @@ lpb $0
   sub $2,1
   cmp $3,0
   mul $3,$0
-  sub $0,1
   pow $3,$2
+  sub $0,1
   add $1,$3
   div $2,$1
 lpe

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

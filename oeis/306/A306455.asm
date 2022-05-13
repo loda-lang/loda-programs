@@ -10,10 +10,10 @@ lpb $0
   add $2,$4
   mov $3,-1
   bin $3,$1
+  mul $3,$2
   mov $4,$0
   mul $5,$1
-  add $1,1
-  mul $3,$2
   add $5,$3
+  add $1,1
 lpe
 mov $0,$5

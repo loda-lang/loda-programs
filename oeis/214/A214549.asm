@@ -12,19 +12,19 @@ lpb $3
   mul $5,2
   add $5,1
   mul $2,$5
-  add $1,$2
   cmp $4,0
   mov $5,$0
   add $5,$4
+  add $1,$2
   div $1,$5
   div $2,$5
   sub $3,1
 lpe
-pow $1,2
-pow $2,2
 mov $6,10
 pow $6,$0
+pow $2,2
 div $2,$6
+pow $1,2
 div $1,$2
 add $1,$6
 mov $0,$1

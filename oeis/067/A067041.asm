@@ -5,9 +5,9 @@ mov $1,1
 mov $3,$0
 lpb $0
   mov $2,$0
-  div $0,10
   mod $2,10
   pow $3,$2
+  div $0,10
   mov $1,$3
 lpe
 mul $1,3

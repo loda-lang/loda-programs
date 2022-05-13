@@ -4,6 +4,6 @@
 
 mov $1,1
 add $1,$0
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 pow $1,10
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 gcd $0,$1

@@ -9,13 +9,13 @@ lpb $0
   lpb $2
     add $1,1
     lpb $2
+      trn $2,2
       mov $4,$3
       cmp $4,0
       add $3,$4
       sub $0,$3
       sub $1,$3
       add $1,$0
-      trn $2,2
     lpe
     trn $2,8
   lpe

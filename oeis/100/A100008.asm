@@ -10,5 +10,5 @@ lpe
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,2
 pow $1,$0
-add $1,$1
+mul $1,2
 mov $0,$1

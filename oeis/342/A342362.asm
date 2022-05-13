@@ -1,14 +1,15 @@
 ; A342362: Expansion of the o.g.f. (1 + 8*x + 10*x^2 + 8*x^3 + x^4)/((1 - x)^4*(1 + x)^2).
+; Submitted by Simon Strandgaard
 ; 1,10,31,76,145,254,399,600,849,1170,1551,2020,2561,3206,3935,4784,5729,6810,7999,9340,10801,12430,14191,16136,18225,20514,22959,25620,28449,31510,34751,38240,41921,45866,50015,54444,59089,64030,69199,74680,80401,86450,92751,99396,106305,113574
 
-mov $3,$0
-seq $0,3451 ; Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation.
-mul $0,2
-sub $0,1
-mov $1,$3
-mul $1,$3
-mov $2,$1
-mul $2,2
-mul $1,$3
+add $0,1
+mov $1,$0
+pow $0,2
+mov $2,4
+gcd $2,$0
+mul $0,7
+sub $0,2
 add $0,$2
-add $0,$1
+mul $1,$0
+mov $0,$1
+div $0,6

@@ -4,9 +4,9 @@
 sub $2,$0
 lpb $0
   max $1,$0
+  add $2,2
   sub $0,2
   gcd $0,$1
-  add $2,2
   sub $0,$2
 lpe
 div $0,2

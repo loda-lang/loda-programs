@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,56113 ; Most significant digit of n-th primorial A002110.
+  sub $0,1
   add $1,$2
 lpe
 div $1,2

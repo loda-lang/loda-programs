@@ -5,8 +5,8 @@ mul $0,4
 mov $2,$0
 lpb $2
   sub $2,$1
-  add $1,2
   trn $2,1
+  add $1,2
 lpe
 add $1,4
 mov $0,$1

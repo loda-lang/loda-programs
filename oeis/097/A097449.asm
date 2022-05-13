@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   seq $2,70589 ; n^4 mod 46.
   pow $2,2
-  add $4,$2
-  add $3,$4
+  add $1,$2
+  add $3,$1
   dif $0,$3
 lpe

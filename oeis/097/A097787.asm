@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,97786 ; a(n)=3a(n-1)+C(n+3,3),n>0, a(0)=1.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

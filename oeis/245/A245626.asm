@@ -10,7 +10,7 @@ lpb $0
   mov $1,3
 lpe
 lpb $2
-  mov $1,1
   mod $2,3
+  mov $1,1
 lpe
 mov $0,$1

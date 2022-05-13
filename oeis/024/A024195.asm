@@ -29,7 +29,7 @@ lpb $2
   lpe
   mov $3,$4
   div $3,6
-  add $3,1
   add $1,$3
 lpe
 mov $0,$1
+add $0,1

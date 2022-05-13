@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,2
   seq $2,14578 ; Binary expansion of Thue constant (or Roth's constant).
   add $0,$2
+  sub $1,2
 lpe
 mod $0,2

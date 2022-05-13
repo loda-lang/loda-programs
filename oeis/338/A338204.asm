@@ -6,16 +6,16 @@ mov $4,$0
 mov $6,$0
 add $6,1
 lpb $6
-  mov $0,$4
-  mov $2,0
   sub $6,1
+  mov $0,$4
   sub $0,$6
   mov $1,$0
+  mov $2,0
   mov $3,$0
   add $3,1
   lpb $3
-    mov $0,$1
     sub $3,1
+    mov $0,$1
     sub $0,$3
     seq $0,347266 ; a(n) is the number whose binary representation is the concatenation of terms in the n-th row of A237048.
     seq $0,345927 ; Alternating sum of the binary expansion of n (row n of A030190). Replace 2^k with (-1)^(A070939(n)-k) in the binary expansion of n (compare to the definition of A065359).

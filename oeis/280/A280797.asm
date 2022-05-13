@@ -3,9 +3,9 @@
 
 sub $1,$0
 mov $2,$0
+sub $2,$1
 trn $0,1
 add $0,2
-sub $2,$1
 pow $1,$2
 div $1,$0
 mov $0,$1

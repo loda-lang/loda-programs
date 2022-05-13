@@ -3,8 +3,8 @@
 
 add $0,6005
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,187948 ; [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
   mov $0,0
-  seq $2,187948 ; [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 lpe
-mov $0,$2
+mov $0,$1

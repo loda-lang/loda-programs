@@ -4,8 +4,7 @@
 add $0,2
 mov $1,6
 pow $1,$0
-div $1,7
-sub $1,5
-div $1,5
+sub $1,35
+div $1,35
 add $1,1
 mov $0,$1

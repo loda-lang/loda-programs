@@ -1,16 +1,14 @@
 ; A112831: Number of non-intersecting cycle systems in a particular directed graph.
-; Submitted by Jamie Morken(s1)
+; Submitted by Jamie Morken(w3)
 ; 1,2,5,17,74,365,1889,9938,52565,278513,1476506,7828925,41513921,220137122,1167334565,6190107857,32824743914,174062236685,923012961569,4894530600818,25954597551605,137631407453873,729828474212666
 
-mul $0,2
 mov $1,1
-mov $3,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  mul $3,3
-  sub $1,$3
+lpb $0
+  sub $0,1
+  mov $2,$3
+  mul $3,5
   add $3,$1
-  mul $1,-1
+  mul $1,2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

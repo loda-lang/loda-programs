@@ -13,8 +13,8 @@ lpb $2
   cmp $4,$0
   mul $2,$4
   sub $2,18
-  sub $5,2
   add $5,$1
+  sub $5,2
   div $5,8
   mov $6,$5
   sub $5,1

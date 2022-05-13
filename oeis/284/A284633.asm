@@ -9,7 +9,7 @@ lpb $0
   mul $0,2
   sub $0,1
   div $0,4
-  mod $3,2
+  gcd $3,2
   mul $3,$2
   add $1,$3
   mul $2,10

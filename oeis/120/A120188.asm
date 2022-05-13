@@ -5,8 +5,8 @@
 lpb $0
   sub $0,1
   add $2,$1
-  mov $1,6
   sub $2,1
+  mov $1,6
   add $1,$2
   div $1,7
   add $2,4

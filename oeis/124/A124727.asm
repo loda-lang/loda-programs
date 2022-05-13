@@ -9,7 +9,7 @@ lpe
 mov $1,$2
 bin $1,$0
 add $0,1
-mul $1,$0
 bin $2,$0
+mul $1,$0
 add $1,$2
 mov $0,$1

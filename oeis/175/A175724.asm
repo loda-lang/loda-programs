@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,8724 ; a(n) = floor(n^2/12).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

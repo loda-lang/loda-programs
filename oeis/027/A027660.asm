@@ -4,8 +4,8 @@
 
 add $0,3
 mov $1,$0
-bin $0,5
 bin $1,3
+bin $0,5
 add $0,$1
 mul $0,8
 sub $0,8
