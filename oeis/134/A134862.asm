@@ -1,7 +1,10 @@
 ; A134862: Wythoff ABB numbers.
+; Submitted by Simon Strandgaard
 ; 8,21,29,42,55,63,76,84,97,110,118,131,144,152,165,173,186,199,207,220,228,241,254,262,275,288,296,309,317,330,343,351,364,377,385,398,406,419,432,440,453,461,474,487,495,508,521,529,542,550,563,576,584,597
 
 add $0,1
-seq $0,26352 ; a(n) = floor(n*tau)+n+1.
-seq $0,276885 ; Sums-complement of the Beatty sequence for 1 + phi.
-sub $0,4
+mov $1,$0
+seq $1,66096 ; Duplicate values in A060143.
+mul $1,5
+mul $0,3
+add $0,$1

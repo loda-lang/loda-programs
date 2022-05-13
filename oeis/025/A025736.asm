@@ -1,29 +1,21 @@
 ; A025736: Index of 9^n within sequence of numbers of form 6^i*9^j.
+; Submitted by Simon Strandgaard
 ; 1,3,6,10,15,22,30,39,49,61,74,88,103,119,137,156,176,197,220,244,269,295,322,351,381,412,444,478,513,549,586,625,665,706,748,791,836,882,929,977,1027,1078,1130,1183,1237,1293,1350,1408,1467,1528,1590,1653,1717
 
-mov $4,$0
 mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mov $6,0
-  mov $7,$0
-  mov $5,$0
-  add $5,1
-  lpb $5
-    sub $5,1
-    mov $0,$7
-    sub $0,$5
-    trn $0,2
-    seq $0,342363 ; First differences of A341282.
-    mov $3,$0
-    mul $3,72
-    div $3,1152
-    add $3,1
-    add $6,$3
-  lpe
-  add $1,$6
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$2
+  sub $0,$3
+  mul $0,4
+  mov $4,$0
+  mul $0,14
+  add $4,$0
+  add $4,2
+  div $4,49
+  add $4,1
+  add $1,$4
 lpe
 mov $0,$1

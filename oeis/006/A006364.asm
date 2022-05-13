@@ -1,10 +1,11 @@
 ; A006364: Numbers n with an even number of 1's in binary, ignoring last bit.
+; Submitted by Simon Strandgaard
 ; 0,1,6,7,10,11,12,13,18,19,20,21,24,25,30,31,34,35,36,37,40,41,46,47,48,49,54,55,58,59,60,61,66,67,68,69,72,73,78,79,80,81,86,87,90,91,92,93,96,97,102,103,106,107,108,109,114,115,116,117,120,121,126,127,130,131,132,133,136,137,142,143,144,145,150,151,154,155,156,157,160,161,166,167,170,171,172,173,178,179,180,181,184,185,190,191,192,193,198,199
 
-lpb $0
-  mov $2,$0
-  sub $0,1
-  seq $2,254378 ; Run lengths of A228495 (Characteristic function of the odd odious numbers).
-  add $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+mul $0,2
+div $0,4
+mul $0,2
+seq $0,115384 ; Partial sums of Thue-Morse numbers A010060.
+mul $0,2
+add $0,$1

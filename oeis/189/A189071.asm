@@ -1,14 +1,14 @@
 ; A189071: The n-th derivative of x^10 evaluated at x=2.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1024,5120,23040,92160,322560,967680,2419200,4838400,7257600,7257600,3628800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,4
-mov $2,11
+mov $2,10
+sub $2,$0
+mov $1,2
+pow $1,$2
 lpb $0
   sub $0,1
-  sub $2,1
+  add $2,1
   mul $1,$2
-  div $1,2
 lpe
 mov $0,$1
-mul $0,256

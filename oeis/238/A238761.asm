@@ -1,17 +1,15 @@
 ; A238761: Subtriangle of the generalized ballot numbers, T(n,k) = A238762(2*k-1,2*n-1), 1<=k<=n, read by rows.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,3,3,8,10,4,15,30,35,5,24,63,112,126,6,35,112,252,420,462,7,48,180,480,990,1584,1716,8,63,270,825,1980,3861,6006,6435,9,80,385,1320,3575,8008,15015,22880,24310,10,99,528,2002,6006,15015,32032,58344,87516,92378
 
 lpb $0
-  mov $1,$0
   add $2,1
   sub $0,$2
-  add $1,1
-  bin $1,$0
-  sub $1,1
 lpe
-add $1,1
-sub $2,$0
 add $2,1
-mul $2,$1
-mov $0,$2
+mov $1,$2
+sub $1,$0
+add $2,$0
+bin $2,$0
+mul $1,$2
+mov $0,$1

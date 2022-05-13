@@ -1,8 +1,17 @@
 ; A348636: Greedy Cantor's Dust Partition.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,3,8,22,24,65,70,72,194,208,210,215,580,582,623,628,630,644,1738,1740,1745,1867,1869,1883,1888,1890,1931,5212,5214,5219,5233,5235,5600,5605,5607,5648,5662,5664,5669,5791,5793,15635,15640,15642,15656,15697,15699
 
-mul $0,3
-seq $0,261691 ; Change of base from fractional base 3/2 to base 3.
-div $0,3
-add $0,1
+mov $1,1
+mov $2,1
+mul $0,2
+lpb $0
+  mov $3,$0
+  div $0,3
+  mul $0,2
+  mod $3,3
+  mul $3,$2
+  add $1,$3
+  mul $2,3
+lpe
+mov $0,$1
