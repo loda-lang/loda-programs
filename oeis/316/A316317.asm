@@ -4,16 +4,16 @@
 
 mov $3,$0
 mov $5,$0
+mul $5,2
 seq $0,316316 ; Coordination sequence for tetravalent node in chamfered version of square grid.
 sub $0,1
 mov $4,$0
 div $4,4
 add $4,1
-mov $1,$4
 mov $2,$3
 trn $2,$4
 mul $2,3
+mov $1,$4
 add $1,$2
-mul $5,2
 add $1,$5
 mov $0,$1

@@ -4,7 +4,7 @@
 
 lpb $0
   seq $0,99802 ; Bisection of A000720.
-  add $2,$0
+  add $1,$0
   mov $0,0
 lpe
-mov $0,$2
+mov $0,$1

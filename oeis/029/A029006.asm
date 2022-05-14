@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,25801 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^12)).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

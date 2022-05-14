@@ -1,10 +1,29 @@
 ; A331830: Numbers k such that k and k + 1 are both negabinary evil numbers.
-; Submitted by Jamie Morken(w1)
+; Submitted by Vato
 ; 7,13,19,27,31,39,45,51,55,61,67,75,79,87,93,99,107,111,117,123,127,135,141,147,155,159,167,173,179,183,189,195,203,207,213,219,223,231,237,243,247,253,259,267,271,279,285,291,299,303,309,315,319,327,333,339,347,351,359,365,371,375,381,387,395,399,407,413,419,427,431,437,443,447,455,461,467,471,477,483,491,495,501,507,511,519,525,531,539,543,551,557,563,567,573,579,587,591,599,605
 
+mov $1,2
+mov $2,$0
 mul $0,2
-add $0,1
-seq $0,84088 ; Numbers k such that k == 2 (mod 3) and the exponent of the highest power of 2 dividing k is even.
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,87230 ; a(n) is the 2-adic valuation of 6*n + 4.
+  add $3,$4
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,$4
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+mul $0,3
+sub $0,6
 div $0,3
 mul $0,2
-add $0,1
+add $0,7

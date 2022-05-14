@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,82115 ; Fibonacci sequence (mod 3).
   mul $2,5
+  sub $0,2
   add $1,$2
 lpe
 div $1,5

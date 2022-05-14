@@ -1,6 +1,34 @@
 ; A068432: Expansion of golden ratio (1 + sqrt(5))/2 in base 2.
-; Submitted by Jon Maiga
+; Submitted by Cruncher Pete
 ; 1,1,0,0,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0
 
-seq $0,293313 ; Greatest integer k such that k/2^n < (1+sqrt(5))/2 (the golden ratio).
+mov $8,3
+mov $1,1
+mov $2,1
+mov $3,$0
+lpb $3
+  cmp $6,0
+  mul $2,$3
+  pow $4,2
+  add $5,$6
+  mul $1,2
+  mul $1,$3
+  add $1,$2
+  div $1,$5
+  div $2,$5
+  bin $6,2
+  add $2,$1
+  mul $1,2
+  sub $3,1
+lpe
+mov $4,2
+mov $7,1
+pow $4,$0
+div $2,$4
+div $1,$2
+mov $0,$1
+mov $7,0
+mod $0,2
+mod $0,2
+add $0,2
 mod $0,2

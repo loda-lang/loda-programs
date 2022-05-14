@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
+  seq $2,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
   sub $0,1
   mul $1,4
-  seq $2,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
   add $1,$2
 lpe
 mov $0,$1

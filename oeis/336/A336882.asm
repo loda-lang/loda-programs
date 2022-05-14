@@ -1,27 +1,18 @@
 ; A336882: a(0) = 1; for k >= 0, 0 <= i < 2^k, a(2^k + i) = m_k * a(i), where m_k is the least odd number not in terms 0..2^k - 1.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 1,3,5,15,7,21,35,105,9,27,45,135,63,189,315,945,11,33,55,165,77,231,385,1155,99,297,495,1485,693,2079,3465,10395,13,39,65,195,91,273,455,1365,117,351,585,1755,819,2457,4095,12285,143,429,715,2145,1001
 
 mov $1,1
-mov $2,1
-mov $3,1
-mov $6,1
-mov $8,$0
-lpb $8
-  sub $8,$6
-  add $2,2
-  mov $4,$3
-  mul $4,2
-  mov $5,$0
-  mod $5,$4
-  sub $0,$5
-  div $5,$3
-  mov $7,$2
-  pow $7,$5
-  mul $1,$7
-  mov $3,$4
-  mov $7,$0
-  cmp $7,0
-  sub $6,$7
+mov $2,16
+lpb $0
+  add $1,2
+  mov $3,$0
+  sub $3,1
+  mod $3,2
+  mul $3,$1
+  div $0,2
+  mul $2,$1
+  dif $2,$3
 lpe
-mov $0,$1
+mov $0,$2
+div $0,16

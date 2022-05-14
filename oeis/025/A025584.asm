@@ -13,11 +13,11 @@ lpb $2
   sub $0,$3
   mov $4,$0
   lpb $3
-    add $1,3
+    trn $3,9
     max $4,0
     cmp $4,$0
+    add $1,3
     mul $2,$4
-    trn $3,9
   lpe
   add $1,1
 lpe

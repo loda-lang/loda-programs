@@ -1,7 +1,9 @@
 ; A004641: Fixed under 0 -> 10, 1 -> 100.
-; Submitted by Stefano Spezia
+; Submitted by William Kahler
 ; 1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1
 
+mov $1,$0
+seq $1,189687 ; Fixed point of the morphism 0->011, 1->01.
+mov $0,$1
 add $0,1
-seq $0,270226 ; a(n) is the number of terms in the n-th block of consecutive integers of A136119.
 mod $0,2

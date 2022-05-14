@@ -5,20 +5,20 @@
 mov $9,$0
 lpb $9
   mov $0,$7
-  mov $2,$8
-  seq $2,70939 ; Length of binary representation of n.
   mov $4,1
   mov $5,$8
+  mov $2,$8
+  seq $2,70939 ; Length of binary representation of n.
   lpb $2
+    sub $2,1
     mov $3,$0
-    div $0,2
     mod $3,2
     mov $6,$5
     mod $6,2
+    div $0,2
     max $3,$6
     mul $3,$4
     add $1,$3
-    sub $2,1
     mul $4,2
     div $5,2
   lpe

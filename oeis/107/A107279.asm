@@ -3,9 +3,9 @@
 
 sub $0,1
 mov $3,$0
+mod $3,2
 max $0,0
 seq $0,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
-mod $3,2
 mov $1,$3
 bin $1,$0
 mov $2,$3
