@@ -3,8 +3,8 @@
 
 lpb $0
   add $1,$0
-  div $0,10
   mul $1,10
+  div $0,10
 lpe
 div $1,10
 mov $0,$1

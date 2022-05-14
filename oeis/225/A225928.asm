@@ -6,7 +6,6 @@ mov $1,2
 pow $1,$0
 add $1,1
 pow $1,2
-sub $1,4
 mul $1,4
-add $1,29
+add $1,13
 mov $0,$1

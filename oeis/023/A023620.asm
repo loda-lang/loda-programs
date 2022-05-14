@@ -4,7 +4,7 @@
 mov $1,$0
 add $1,1
 mov $2,$0
-seq $0,33811 ; Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 2.
 add $2,$1
-sub $0,$2
+seq $0,33811 ; Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 2.
 sub $0,1
+sub $0,$2

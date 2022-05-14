@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

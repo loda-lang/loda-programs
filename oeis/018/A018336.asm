@@ -1,5 +1,5 @@
 ; A018336: Divisors of 210.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 1,2,3,5,6,7,10,14,15,21,30,35,42,70,105,210
 
 mov $1,-1
@@ -18,7 +18,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-mul $0,8
-add $0,8
-div $0,8
-add $0,1
+add $0,2

@@ -5,11 +5,8 @@
 mov $2,$0
 add $2,1
 mul $0,10
-add $0,15
 mov $3,$0
-div $0,360
-sub $3,$0
-add $3,2
+add $3,17
 div $3,33
 mov $1,$2
 mul $1,4

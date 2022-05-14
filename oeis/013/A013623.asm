@@ -1,14 +1,14 @@
 ; A013623: Triangle of coefficients in expansion of (2+7x)^n.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,2,7,4,28,49,8,84,294,343,16,224,1176,2744,2401,32,560,3920,13720,24010,16807,64,1344,11760,54880,144060,201684,117649,128,3136,32928,192080,672280,1411788,1647086,823543,256,7168,87808,614656
 
 lpb $0
   add $1,1
   sub $0,$1
   mov $2,$1
-  sub $2,$0
 lpe
 bin $1,$0
+sub $2,$0
 mov $3,7
 pow $3,$0
 mov $0,2

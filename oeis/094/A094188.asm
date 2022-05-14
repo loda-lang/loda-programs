@@ -5,16 +5,16 @@
 mov $5,$0
 mov $7,2
 lpb $7
-  mov $0,$5
-  mov $2,0
   sub $7,1
+  mov $0,$5
   add $0,$7
   sub $0,1
   mov $1,$0
+  mov $2,0
   mov $3,2
   lpb $3
-    mov $0,$1
     sub $3,1
+    mov $0,$1
     add $0,$3
     trn $0,1
     seq $0,54454 ; Third column of triangle A054453.

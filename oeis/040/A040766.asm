@@ -6,7 +6,7 @@ add $1,$0
 add $0,$1
 div $1,12
 lpb $1
-  sub $0,3
   trn $1,8
+  sub $0,3
 lpe
 add $0,3

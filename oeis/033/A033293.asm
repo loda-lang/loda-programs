@@ -1,27 +1,13 @@
 ; A033293: A Connell-like sequence: take 1 number = 1 (mod Q), 2 numbers = 2 (mod Q), 3 numbers = 3 (mod Q), etc., where Q = 8.
+; Submitted by Simon Strandgaard
 ; 1,2,10,11,19,27,28,36,44,52,53,61,69,77,85,86,94,102,110,118,126,127,135,143,151,159,167,175,176,184,192,200,208,216,224,232,233,241,249,257,265,273,281,289,297,298,306,314,322,330,338,346,354,362,370,371,379,387,395,403,411,419,427,435,443,451,452,460,468,476,484,492,500,508,516,524,532,540,541,549,557,565,573,581,589,597,605,613,621,629,637,638,646,654,662,670,678,686,694,702
 
-mov $1,1
-mov $3,2
-mov $5,$0
-mov $2,$0
-lpb $2
-  mov $4,$2
-  lpb $4
-    trn $4,$3
-    add $1,7
-    sub $2,1
-    add $3,1
-  lpe
-  add $2,1
-  lpb $0
-    sub $0,1
-    mov $1,1
-  lpe
-  sub $2,1
-lpe
-lpb $5
-  sub $5,1
-  add $1,1
-lpe
-mov $0,$1
+sub $1,$0
+seq $0,122797 ; A P_3-stuttered arithmetic progression with a(n+1) = a(n) if n is a triangular number, a(n+1) = a(n) + 1 otherwise.
+mov $2,5
+add $2,$0
+add $2,2
+add $1,$2
+sub $1,1
+mul $0,8
+sub $0,$1

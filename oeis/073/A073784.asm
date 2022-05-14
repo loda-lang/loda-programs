@@ -1,11 +1,13 @@
 ; A073784: Number of primes between successive composite numbers.
+; Submitted by yoyo_rkn
 ; 1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
 
 seq $0,72668 ; Numbers one less than composite numbers.
-seq $0,34693 ; Smallest k such that k*n+1 is prime.
-mov $2,$0
-mul $0,2
-sub $0,1
-sub $0,$2
-cmp $1,$0
+lpb $0
+  add $0,1
+  seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  mov $1,3
+lpe
 mov $0,$1
+add $0,1
+mod $0,2

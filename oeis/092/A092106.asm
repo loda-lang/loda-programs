@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,65368 ; Alternating sum of ternary digits in n. Replace 3^k with (-1)^k in ternary expansion of n.
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
