@@ -8,8 +8,8 @@ lpb $0
 lpe
 mov $2,$1
 mul $2,2
-sub $2,$0
 add $2,2
+sub $2,$0
 bin $2,$1
 bin $1,$0
 mul $2,$1

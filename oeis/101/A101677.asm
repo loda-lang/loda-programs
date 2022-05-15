@@ -8,20 +8,20 @@ mov $4,1
 lpb $0
   add $2,1
   lpb $4
+    mov $4,0
     div $0,3
-    div $1,2
     add $3,1001
+    div $1,2
     add $1,$3
     add $1,2
     sub $2,4
     add $3,$1
     mov $1,$2
-    mov $4,0
   lpe
   sub $0,1
 lpe
-mov $0,1
 gcd $1,$3
 sub $1,$2
+mov $0,1
 add $0,$1
 add $0,1

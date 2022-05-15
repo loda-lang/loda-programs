@@ -1,22 +1,17 @@
 ; A027861: Numbers k such that k^2 + (k+1)^2 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by zombie67 [MM]
 ; 1,2,4,5,7,9,12,14,17,19,22,24,25,29,30,32,34,35,39,42,47,50,60,65,69,70,72,79,82,84,85,87,90,97,99,100,102,104,109,110,115,122,130,135,137,139,144,149,154,157,160,162,164,167,172,174,185,187,189,195,199,202,204,207,212,217,220,222,224,225,229,230,235,259,260,264,267,272,279,284,285,287,289,290,297,304,315,319,320,324,330,334,342,344,347,349,355,357,369,372
 
-mov $1,4
-mov $2,$0
-pow $2,2
-mov $5,4
-lpb $2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $5,4
-  add $1,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,4
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$5
+mov $0,$4
 div $0,4

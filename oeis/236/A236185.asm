@@ -1,12 +1,11 @@
 ; A236185: Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
-; Submitted by Jamie Morken(s2)
+; Submitted by zombie67 [MM]
 ; 4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2
 
-mov $2,7
-sub $2,$0
-mov $0,1599
-sub $0,$2
-add $0,5
+sub $0,22
+sub $1,$0
+mov $0,1603
+sub $0,$1
 lpb $0
   mod $0,8
 lpe

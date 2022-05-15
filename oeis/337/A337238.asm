@@ -6,10 +6,10 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  add $1,4
+  add $1,2
   mov $3,$1
   seq $3,337319 ; a(n) = Sum_{i = 1..floor(log_2(n))+1} g(frac(n/2^i)), where g(t) = [0 if t = 0, -1 if 0 < t < 1/2, 1 if t >= 1/2], and where frac(x) denotes the fractional part.
-  cmp $3,0
+  cmp $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
@@ -18,6 +18,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,4
-mul $0,4
+mul $0,2
 add $0,5

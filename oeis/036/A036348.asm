@@ -1,8 +1,8 @@
 ; A036348: Parity of 'even number' and its sum of prime factors differs (counted with multiplicity).
-; Submitted by zombie67 [MM]
+; Submitted by JZD
 ; 6,10,12,14,20,22,24,26,28,34,38,40,44,46,48,52,54,56,58,62,68,74,76,80,82,86,88,90,92,94,96,104,106,108,112,116,118,122,124,126,134,136,142,146,148,150,152,158,160,164,166,172,176,178,180,184,188,192,194
 
-mov $1,1
+mov $4,1
 mov $2,$0
 add $2,2
 pow $2,2

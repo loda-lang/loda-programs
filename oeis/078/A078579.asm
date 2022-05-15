@@ -1,7 +1,7 @@
 ; A078579: Squarefree kernel of the average of n-th twin prime pair.
-; Submitted by Simon Strandgaard
+; Submitted by JZD
 ; 2,6,6,6,30,42,30,6,102,6,138,30,30,6,66,114,30,30,282,78,174,210,6,462,174,570,30,618,642,330,30,822,138,858,42,510,258,210,354,546,6,1230,426,1290,1302,330,714,66,1482,186,402,30,834,1698,1722,894,78,1878,966,390,222,78,2082,174,66,2130,714,2238,42,2310,390,2382,510,6,2658,42,678,2730,930,2802,330,30,390,66,1626,1086,330,1110,210,1686,3390,3462,102,42,1770,3558,1194,102,942,546
 
-seq $0,54735 ; Sums of twin prime pairs.
+seq $0,1359 ; Lesser of twin primes.
+seq $0,76618 ; Least x>1 such that x^d == 1 (mod d) for each divisor d of n.
 sub $0,1
-seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.

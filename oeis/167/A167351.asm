@@ -17,19 +17,18 @@ lpb $0
     add $2,1
     max $4,$5
     sub $3,$4
-    cmp $6,3
   lpe
   mov $5,1
+  sub $6,1
   lpb $0
     dif $0,$2
-    sub $6,3
-    mul $6,$2
-    sub $4,$6
-    add $4,1
-    mul $5,$2
-    mul $5,$2
-    add $5,$4
     sub $2,1
+    sub $6,$4
+    mul $4,$2
+    sub $4,$6
+    add $5,$4
+    mul $5,$4
+    mov $6,0
   lpe
   mul $1,$5
 lpe

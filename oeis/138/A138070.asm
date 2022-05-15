@@ -1,7 +1,6 @@
 ; A138070: Triangle read by rows: row n lists the successive digits of A135697(n), the palindromic number formed from the reflected decimal expansion of Pi.
+; Submitted by ebahapo
 ; 3,3,3,3,1,3,3,1,1,3,3,1,4,1,3,3,1,4,4,1,3,3,1,4,1,4,1,3,3,1,4,1,1,4,1,3,3,1,4,1,5,1,4,1,3,3,1,4,1,5,5,1,4,1,3,3,1,4,1,5,9,5,1,4,1,3,3,1,4,1,5,9,9,5,1,4,1,3
 
 seq $0,4197 ; Table of min(x,y), where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
-seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
-add $0,9
-mod $0,10
+seq $0,796 ; Decimal expansion of Pi (or digits of Pi).

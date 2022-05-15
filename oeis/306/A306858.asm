@@ -7,19 +7,19 @@ mov $2,2
 mov $3,$0
 mul $3,4
 lpb $3
-  mul $1,$3
-  add $1,$2
   cmp $6,0
   add $5,$6
+  mul $1,$3
+  add $1,$2
   div $1,$5
   div $2,$5
   add $2,$1
   mul $1,2
   sub $3,1
 lpe
-mul $2,2
 mov $4,10
 pow $4,$0
+mul $2,2
 div $2,$4
 div $1,$2
 mov $0,$1

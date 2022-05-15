@@ -1,17 +1,16 @@
 ; A144484: Triangle read by rows: T(n, k) = binomial(3*n+1-k, n-k) for n, k >= 0.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,4,1,21,6,1,120,36,8,1,715,220,55,10,1,4368,1365,364,78,12,1,27132,8568,2380,560,105,14,1,170544,54264,15504,3876,816,136,16,1,1081575,346104,100947,26334,5985,1140,171,18,1,6906900,2220075,657800,177100
 
 lpb $0
-  add $1,1
-  sub $0,$1
+  add $2,1
+  sub $0,$2
 lpe
-sub $0,$1
-mul $0,-1
-add $1,1
-add $1,$0
-mul $1,2
-sub $1,$0
-sub $1,1
+sub $0,$2
+mul $2,2
+add $2,1
+sub $2,$0
+add $0,$2
+mov $1,$2
 bin $1,$0
 mov $0,$1

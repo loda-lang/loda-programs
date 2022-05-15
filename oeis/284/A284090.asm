@@ -1,0 +1,13 @@
+; A284090: Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 798", based on the 5-celled von Neumann neighborhood.
+; Submitted by Bok
+; 1,3,7,15,23,55,127,255,503,1015,1919,3967,6007,14199,32767,65535,131063,262135,524159,1048447,2094967,4192119,8355839,16744447,32997367,66551799,125796223,260013951,393705335,930576247,2147483647,4294967295,8589934583,17179869175,34359738239,68719476607,137438951287,274877904759,549755781119,1099511595007,2199022698487,4398045954039,8796084600703,17592177622911,35184228923255,70368601012087,140735340871679,281472829227007,562913446199287,1125863399620599,2251247910387583,4503047724072831
+
+add $0,1
+mov $1,$0
+seq $0,273973 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 20", based on the 5-celled von Neumann neighborhood.
+mul $0,-1
+mov $2,2
+pow $2,$1
+add $0,$2
+add $0,$2
+div $0,2

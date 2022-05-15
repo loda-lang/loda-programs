@@ -8,17 +8,14 @@ lpb $0
 lpe
 add $2,1
 sub $2,$0
-add $0,2
 mov $1,$0
 mul $1,5
 mov $0,$2
 lpb $0
   sub $0,1
-  sub $3,2
   add $3,$1
   mov $1,$3
   add $1,1
   div $3,4
 lpe
 mov $0,$1
-sub $0,8

@@ -9,8 +9,8 @@ lpb $1
   add $0,$2
   div $1,$0
   trn $1,1
-  mov $0,$1
   add $3,1
+  mov $0,$1
   add $0,$3
 lpe
 add $0,1

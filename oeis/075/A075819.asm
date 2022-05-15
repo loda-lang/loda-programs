@@ -1,17 +1,26 @@
 ; A075819: Even squarefree numbers with exactly 3 prime factors.
-; Submitted by Cruncher Pete
+; Submitted by Werinbert
 ; 30,42,66,70,78,102,110,114,130,138,154,170,174,182,186,190,222,230,238,246,258,266,282,286,290,310,318,322,354,366,370,374,402,406,410,418,426,430,434,438,442,470,474,494,498,506,518,530,534,574,582,590,598,602,606,610,618,638,642,646,654,658,670,678,682,710,730,742,754,762,782,786,790,806,814,822,826,830,834,854,874,890,894,902,906,938,942,946,962,970,978,986,994,1002,1010,1022,1030,1034,1038,1054
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $3,$1
-  sub $0,$3
-  mov $2,$0
-  seq $2,234096 ; Integers of the form (p*q + 1)/2, where p and q are distinct primes.
-  add $1,$2
-  mov $3,5
+sub $1,$4
+mov $6,$4
+add $1,$0
+add $2,1
+lpb $2
+  sub $2,1
+  add $4,10
+  mul $4,2
+  seq $0,234096 ; Integers of the form (p*q + 1)/2, where p and q are distinct primes.
+  div $3,9
+  add $3,$0
 lpe
-mov $0,$1
+add $2,2
+add $3,$0
+add $0,$2
+sub $0,3
+sub $0,7
+add $0,1
 mul $0,4
-sub $0,2
+add $0,30
+sub $0,34
+add $0,30

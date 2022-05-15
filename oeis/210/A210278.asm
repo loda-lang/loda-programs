@@ -9,7 +9,7 @@ lpb $3
   mul $2,$3
   sub $3,1
 lpe
-mov $4,5
-pow $4,$0
-div $2,$4
+mov $1,5
+pow $1,$0
+div $2,$1
 mov $0,$2

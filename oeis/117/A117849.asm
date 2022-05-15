@@ -5,5 +5,6 @@
 seq $0,111166 ; Let p < q be consecutive primes; p is in the sequence if p/(q-p) is a record.
 pow $0,2
 sub $0,6
-div $0,4
+div $0,8
+mul $0,2
 add $0,2

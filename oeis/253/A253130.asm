@@ -15,13 +15,13 @@ mov $1,$4
 add $1,4
 mov $5,$2
 mul $5,2
-add $1,$5
 mov $6,$2
 mul $6,$2
+add $1,$5
 mov $5,$6
 mul $5,6
-add $1,$5
 mul $6,$2
+add $1,$5
 mov $5,$6
 mul $5,8
 add $1,$5
