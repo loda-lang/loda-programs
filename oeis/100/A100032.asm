@@ -1,7 +1,17 @@
 ; A100032: Bisection of A005384.
-; Submitted by Christian Krause
+; Submitted by Vester
 ; 3,11,29,53,89,131,179,233,251,293,419,443,509,641,659,719,761,911,1013,1031,1103,1229,1409,1451,1499,1559,1601,1811,1901,1973,2039,2069,2141,2339,2393,2459,2549,2699,2753,2903,2963,3023,3329,3389,3449,3539,3623
 
 mul $0,2
-add $0,1
-seq $0,5384 ; Sophie Germain primes p: 2p+1 is also prime.
+add $0,2
+mov $1,2
+mov $2,$0
+pow $2,5
+lpb $2
+  mov $3,$1
+  seq $3,156660 ; Characteristic function of Sophie Germain primes.
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1

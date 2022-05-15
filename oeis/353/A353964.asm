@@ -1,20 +1,17 @@
-; A353964: allocated for Gerhard Kirchner
-; Submitted by gingavasalata
+; A353964: Number of tilings of a 2 X n rectangle using 2 X 2 and 1 X 1 tiles and right trominoes.
+; Submitted by Daniel
 ; 1,1,6,13,45,122,373,1073,3182,9293,27349,80178,235509,691097,2028998,5955501,17482685,51318186,150642613,442198913,1298048350,3810328141,11184967717,32832705122,96378199989,282911661033,830468071222,2437782776365,7155946454541
 
-mov $5,$0
-add $5,1
-lpb $5
-  sub $5,1
-  bin $1,0
-  add $1,$2
-  add $3,$4
-  add $3,$4
-  mul $3,2
-  add $2,$4
-  sub $2,$1
+mov $1,1
+lpb $0
+  sub $0,1
   add $2,$3
-  mov $3,$4
-  add $4,$1
+  mov $4,$2
+  mul $4,2
+  mov $2,$3
+  add $2,$1
+  mov $3,$1
+  mov $1,$2
+  add $1,$4
 lpe
-mov $0,$4
+mov $0,$1

@@ -12,7 +12,7 @@ lpb $3
   lpe
   sub $3,1
 lpe
-mov $4,8
-pow $4,$0
-div $2,$4
+mov $1,8
+pow $1,$0
+div $2,$1
 mov $0,$2

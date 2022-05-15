@@ -1,18 +1,17 @@
 ; A154143: Indices k such that 10 plus the k-th triangular number is a perfect square.
-; Submitted by Jon Maiga
+; Submitted by amazing
 ; 3,5,26,36,155,213,906,1244,5283,7253,30794,42276,179483,246405,1046106,1436156,6097155,8370533,35536826,48787044,207123803,284351733,1207205994,1657323356,7036112163,9659588405,41009466986,56300207076,239020689755,328141654053
 
-mov $2,6
+mov $2,3
 lpb $0
   sub $0,1
   mov $3,$0
   add $3,$0
   mod $3,4
   mul $3,$2
-  add $1,2
+  add $1,1
   add $1,$3
   add $2,$1
 lpe
 add $2,$1
 mov $0,$2
-div $0,2

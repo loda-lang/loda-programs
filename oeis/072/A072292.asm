@@ -1,17 +1,11 @@
 ; A072292: Number of proper powers b^d <= n (b > 1, d > 1).
-; Submitted by Jon Maiga
+; Submitted by Cruncher Pete
 ; 0,0,0,1,1,1,1,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,5,5,6,6,6,6,6,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12
 
-mov $2,$0
-mov $4,$0
-lpb $4
-  mov $0,$2
-  sub $4,1
-  sub $0,$4
-  seq $0,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
-  mov $1,14
-  gcd $1,$0
-  div $1,14
-  add $3,$1
+lpb $0
+  mov $2,$0
+  seq $2,75802 ; Characteristic function of perfect powers, A001597.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

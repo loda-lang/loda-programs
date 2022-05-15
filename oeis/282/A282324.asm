@@ -10,7 +10,6 @@ lpb $2
   seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
   div $3,2
   add $3,$4
-  add $5,1
   sub $0,$3
   add $0,1
   add $1,15
@@ -20,6 +19,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$5
-mul $0,15
+mov $0,$1
 add $0,4

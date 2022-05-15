@@ -1,5 +1,5 @@
 ; A292373: A binary encoding of 3-digits in base-4 representation of n.
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 0,0,0,1,0,0,0,1,0,0,0,1,2,2,2,3,0,0,0,1,0,0,0,1,0,0,0,1,2,2,2,3,0,0,0,1,0,0,0,1,0,0,0,1,2,2,2,3,4,4,4,5,4,4,4,5,4,4,4,5,6,6,6,7,0,0,0,1,0,0,0,1,0,0,0,1,2,2,2,3,0,0,0,1,0,0,0,1,0,0,0,1,2,2,2,3,0,0,0,1
 
 mov $2,3
@@ -14,5 +14,4 @@ lpb $0
   mul $2,2
 lpe
 mov $0,$1
-mul $0,18
-div $0,54
+div $0,3

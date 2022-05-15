@@ -1,13 +1,19 @@
 ; A145112: Numbers of length n binary words with fewer than 4 0-digits between any pair of consecutive 1-digits.
-; Submitted by Jamie Morken(w4)
+; Submitted by Cruncher Pete
 ; 1,2,4,8,16,32,63,123,239,463,895,1728,3334,6430,12398,23902,46077,88821,171213,330029,636157,1226238,2363656,4556100,8782172,16928188,32630139,62896623,121237147,233692123,450456059,868281980,1673667338,3226097530,6218502938,11986549818,23104817657,44535967977,85845838425,165473173913,318959798009,614814778362,1185093588748,2284341339072,4403209504232,8487459210456,16360103642551,31535113696355,60785886053639,117168562603047,225849665995639,435339228348728,839143343001102,1617500799948566
 
-mov $2,$0
+add $0,1
 lpb $0
-  trn $0,1
-  seq $0,119407 ; Number of nonempty subsets of {1,2,...,n} with no gap of length greater than 4 (a set S has a gap of length d if a and b are in S but no x with a < x < b is in S, where b-a=d).
-  mov $2,$0
-  mov $0,1
+  sub $0,1
+  add $6,$2
+  mul $1,-1
+  mov $2,1
+  add $2,$1
+  add $2,$5
+  mov $1,$3
+  mov $3,$4
+  mov $4,$5
+  add $5,$6
 lpe
-mov $0,$2
+mov $0,$5
 add $0,1

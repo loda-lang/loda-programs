@@ -9,6 +9,5 @@ sub $1,6
 mul $1,4
 div $1,12
 max $0,$1
-add $0,2
 mul $0,3
-add $0,2
+add $0,8

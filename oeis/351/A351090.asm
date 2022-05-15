@@ -1,11 +1,15 @@
 ; A351090: Lexicographically earliest infinite sequence such that a(i) = a(j) => A351091(i) = A351091(j) and A351092(i) = A351092(j), for all i, j >= 1.
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 1,1,2,1,3,2,4,1,5,3,6,2,7,4,8,1,9,5,10,3,11,6,12,2,13,7,14,4,15,8,16,1,17,9,18,5,19,10,20,3,21,11,22,6,23,12,24,2,25,13,26,7,27,14,28,4,29,15,30,8,31,16,32,1,33,17,34,9,35,18,36,5,37,19,38,10,39,20,40,3,41,21,42,11,43,22,44,6,45,23,46,12,47,24,48,2,49,25,50,13
 
-mov $1,$0
-add $0,1
-seq $1,159496 ; Numerator of Hermite(n, 4/13).
-gcd $1,$0
-div $0,$1
+mov $2,$0
+add $2,3
+add $0,$2
+sub $0,1
+mov $1,8
+pow $1,$0
+mul $2,$1
+gcd $2,$0
+div $0,$2
 div $0,2
 add $0,1

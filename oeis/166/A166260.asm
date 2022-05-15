@@ -1,9 +1,10 @@
 ; A166260: a(n) = A089026(n) - 1.
-; Submitted by Jamie Morken(w4)
+; Submitted by zombie67 [MM]
 ; 0,1,2,0,4,0,6,0,0,0,10,0,12,0,0,0,16,0,18,0,0,0,22,0,0,0,0,0,28,0,30,0,0,0,0,0,36,0,0,0,40,0,42,0,0,0,46,0,0,0,0,0,52,0,0,0,0,0,58,0,60,0,0,0,0,0,66,0,0,0,70,0,72,0,0,0,0,0,78,0,0,0,82,0,0,0,0,0,88,0,0,0,0,0,0
 
-mov $2,$0
-seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-mov $3,$0
-mul $3,$2
-mov $0,$3
+mov $1,$0
+seq $1,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+add $0,1
+gcd $1,$0
+mov $0,$1
+sub $0,1

@@ -4,8 +4,8 @@
 
 sub $0,1
 mov $1,$0
-max $0,1
 trn $1,1
 seq $1,130243 ; Partial sums of the 'lower' Lucas Inverse A130241.
-add $0,$1
+max $0,1
 sub $0,2
+add $0,$1

@@ -1,9 +1,9 @@
 ; A228604: The Merrifield-Simmons index of the ortho-polyphenylene chain of length n.
-; Submitted by Christian Krause
+; Submitted by fzs600
 ; 1,18,299,4932,81301,1340118,22089599,364109832,6001737001,98928520218,1630669938899,26878845894732,443052477632701,7302973450020318,120377210159548199,1984215446621359632,32706447785195768401,539110673967989840418,8886330936793922917499
 
+mov $3,-1
 add $0,2
-mov $4,1
 lpb $0
   sub $0,1
   add $2,$4
@@ -11,8 +11,8 @@ lpb $0
   sub $1,$4
   mul $2,8
   sub $4,$3
-  add $3,$1
   add $4,$2
+  add $3,$1
 lpe
-mov $0,$3
+mov $0,$2
 div $0,8

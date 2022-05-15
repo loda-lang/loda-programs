@@ -5,6 +5,5 @@ mul $0,24
 trn $0,2
 sub $0,2
 div $0,2
-sub $0,10
 mul $0,9
-add $0,98
+add $0,8

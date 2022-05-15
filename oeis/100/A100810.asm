@@ -1,10 +1,15 @@
 ; A100810: a(n) = 0 if prime(n) + 2 = prime(n+1), otherwise 1.
-; Submitted by Simon Strandgaard
+; Submitted by JZD
 ; 1,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1
 
 seq $0,40 ; The prime numbers.
 add $0,1
-mov $2,$0
-mov $0,1
-seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-sub $0,$2
+div $0,2
+mul $0,2
+seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+div $0,4
+add $0,1
+lpb $0
+  mov $0,2
+lpe
+mod $0,2

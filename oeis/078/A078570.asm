@@ -2,6 +2,5 @@
 ; Submitted by zombie67 [MM]
 ; 1,2,2,2,3,3,3,2,3,2,3,3,3,2,3,3,3,3,3,3,3,4,2,4,3,4,3,3,3,4,3,3,3,4,3,4,3,4,3,4,2,4,3,4,4,4,4,3,4,3,3,3,3,3,4,3,3,3,4,4,3,3,3,3,3,4,4,3,3,5,4,3,4,2,3,3,3,5,4,3,4,3,4,3,3,3,4,4,4,3,4,3,3,3,4,3,3,3,3,4
 
-seq $0,54735 ; Sums of twin prime pairs.
-sub $0,1
+seq $0,82496 ; Numbers of the form 2p+1, where p and p+2 are a pair of twin primes.
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

@@ -10,18 +10,18 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    div $3,2
     add $5,1
     mod $5,2
     cmp $5,$2
+    div $3,2
     add $4,$5
   lpe
   add $0,1
   lpb $4
+    sub $4,1
     add $3,$0
     add $3,$0
     mul $0,2
-    sub $4,1
   lpe
 lpe
 add $3,$0

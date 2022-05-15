@@ -1,17 +1,27 @@
 ; A046388: Odd numbers of the form p*q where p and q are distinct primes.
-; Submitted by Cruncher Pete
+; Submitted by Werinbert
 ; 15,21,33,35,39,51,55,57,65,69,77,85,87,91,93,95,111,115,119,123,129,133,141,143,145,155,159,161,177,183,185,187,201,203,205,209,213,215,217,219,221,235,237,247,249,253,259,265,267,287,291,295,299,301,303,305,309,319,321,323,327,329,335,339,341,355,365,371,377,381,391,393,395,403,407,411,413,415,417,427,437,445,447,451,453,469,471,473,481,485,489,493,497,501,505,511,515,517,519,527
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $3,$1
-  sub $0,$3
-  mov $2,$0
-  seq $2,234096 ; Integers of the form (p*q + 1)/2, where p and q are distinct primes.
-  add $1,$2
-  mov $3,5
+sub $1,$4
+mov $6,$4
+add $1,$0
+add $2,1
+lpb $2
+  sub $2,1
+  add $4,10
+  mul $4,2
+  seq $0,234096 ; Integers of the form (p*q + 1)/2, where p and q are distinct primes.
+  div $3,9
+  add $3,$0
 lpe
-mov $0,$1
-mul $0,2
-sub $0,1
+add $2,2
+add $3,$0
+add $0,$2
+sub $0,3
+sub $0,7
+add $0,1
+mul $0,4
+add $0,30
+sub $0,34
+div $0,2
+add $0,15

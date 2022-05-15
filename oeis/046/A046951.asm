@@ -1,5 +1,19 @@
 ; A046951: a(n) is the number of squares dividing n.
+; Submitted by Cruncher Pete
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,3,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,3,1,1,1,4,1,1,1,2,1,1,1,2,2,1,1,3,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,4,1,1,2,2,1,1,1,3,3,1,1,2,1,1,1,2,1,2,1,2,1,1,1,3,1,2,2,4
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+add $0,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  add $4,1
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  add $1,$5
+  sub $2,$3
+lpe
+mov $0,$1
+add $0,1

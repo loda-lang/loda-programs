@@ -1,9 +1,7 @@
 ; A078578: Euler's totient of the average of n-th twin prime pair.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 2,2,4,6,8,12,16,24,32,36,44,40,48,64,60,72,64,72,92,96,112,96,144,120,168,144,160,204,212,160,216,272,264,240,252,256,336,240,348,288,384,320,420,336,360,320,384,440,432,480,528,432,552,564,480,592,576,624,528,480,648,624,692,672,640,560,576,744,648,480,576,792,640,864,884,768,896,576,720,932,720,800,768,960,1080,1080,800,864,768,1120,896,1152,1088,1008,928,1184,1188,1152,1248,1008
 
-seq $0,82496 ; Numbers of the form 2p+1, where p and p+2 are a pair of twin primes.
+seq $0,111166 ; Let p < q be consecutive primes; p is in the sequence if p/(q-p) is a record.
 seq $0,39649 ; a(n) = phi(n)+1.
-sub $0,5
-div $0,2
-add $0,2
+sub $0,1

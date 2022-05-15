@@ -4,7 +4,6 @@
 
 pow $1,$0
 seq $0,175442 ; a(n)>a(n-1), a(n) = smallest prime such that a(n)+a(n-1) is multiple of m, a(1)=2, m=3.
-div $0,2
 add $0,$1
-mul $0,2
-add $0,1
+add $0,$1
+add $0,$1

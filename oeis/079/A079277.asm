@@ -1,24 +1,22 @@
 ; A079277: Largest integer k < n such that any prime factor of k is also a prime factor of n.
-; Submitted by Jamie Morken(s3)
+; Submitted by zombie67 [MM]
 ; 1,1,2,1,4,1,4,3,8,1,9,1,8,9,8,1,16,1,16,9,16,1,18,5,16,9,16,1,27,1,16,27,32,25,32,1,32,27,32,1,36,1,32,27,32,1,36,7,40,27,32,1,48,25,49,27,32,1,54,1,32,49,32,25,64,1,64,27,64,1,64,1,64,45,64,49,72,1,64,27,64,1,81,25,64,81,64,1,81,49,64,81,64,25,81,1,64,81,80,1
 
 mov $4,$0
 sub $4,$0
 add $0,2
-mov $2,1
 mov $3,$0
 pow $3,$0
 lpb $0
-  sub $0,$2
+  sub $0,1
   mov $1,$0
   sub $4,$3
-  add $5,$4
-  gcd $5,$0
-  div $5,$0
-  lpb $5
+  add $2,$4
+  gcd $2,$0
+  div $2,$0
+  lpb $2
+    sub $2,1
     mov $0,0
-    sub $5,1
   lpe
-  trn $5,6
 lpe
 mov $0,$1
