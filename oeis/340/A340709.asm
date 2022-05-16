@@ -3,13 +3,13 @@
 
 mov $6,1
 lpb $6,8
+  trn $6,2
+  sub $5,2
   mov $2,-2
   bin $2,$0
   div $2,2
-  sub $5,2
   div $2,$5
   div $5,2
-  trn $6,2
   mov $8,$2
 lpe
 sub $0,$2

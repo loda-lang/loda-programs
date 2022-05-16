@@ -1,32 +1,28 @@
 ; A324893: a(n) = sigma(A097706(n)), where A097706(n) is the part of n composed of prime factors of form 4k+3.
-; Submitted by Jamie Morken(w4)
+; Submitted by zombie67 [MM]
 ; 1,1,4,1,1,4,8,1,13,1,12,4,1,8,4,1,1,13,20,1,32,12,24,4,1,1,40,8,1,4,32,1,48,1,8,13,1,20,4,1,1,32,44,12,13,24,48,4,57,1,4,1,1,40,12,8,80,1,60,4,1,32,104,1,1,48,68,1,96,8,72,13,1,1,4,20,96,4,80,1,121,1,84,32,1,44,4,12,1,13,8,24,128,48,20,4,1,57,156,1
 
-mov $2,1
-mov $6,1
-lpb $6
-  sub $6,1
-  mov $1,1
-  add $0,1
-  lpb $0
-    mov $3,$0
-    lpb $3
-      mov $4,$0
-      mod $4,$2
-      cmp $4,0
-      cmp $4,0
-      add $5,1
-      cmp $5,1
-      add $2,2
-      max $4,$5
-      sub $3,$4
-    lpe
-    lpb $0
-      dif $0,$2
-      mul $5,$2
-      add $5,1
-    lpe
-    mul $1,$5
+mov $1,4
+mov $2,3
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $3,2
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    add $2,4
+    sub $3,$4
   lpe
+  mov $5,1
+  lpb $0
+    dif $0,$2
+    mul $5,$2
+    add $5,1
+  lpe
+  mul $1,$5
 lpe
 mov $0,$1
+div $0,4

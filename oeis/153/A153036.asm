@@ -4,10 +4,10 @@
 
 mov $1,$0
 lpb $0
-  add $1,362879
   mov $2,$0
-  div $0,2
   mod $2,2
+  div $0,2
+  add $1,362879
   mul $1,$2
 lpe
 div $1,362880

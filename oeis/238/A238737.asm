@@ -1,7 +1,11 @@
 ; A238737: a(n) = 2*n+2 - A224911(n).
-; Submitted by Jamie Morken(w4)
+; Submitted by STE\/E
 ; 0,1,1,1,3,1,1,3,1,1,3,1,3,5,1,1,3,5,1,3,1,1,3,1,3,5,1,3,5,1,1,3,5,1,3,1,1,3,5,1,3,1,3,5,1,3,5,7,1,3,1,1,3,1,1,3,1,3,5,7,9,11,13,1,3,1,3,5,1,1,3,5,7,9
 
 mul $0,2
+mov $1,$0
+add $1,1
+seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+sub $1,$0
+mov $0,$1
 add $0,1
-seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).

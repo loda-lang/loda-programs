@@ -1,6 +1,17 @@
 ; A195155: Number of divisors d of n such that d-1 also divides n or d-1 = 0.
-; Submitted by Stefano Spezia
+; Submitted by [AF] Kalianthys
 ; 1,2,1,2,1,3,1,2,1,2,1,4,1,2,1,2,1,3,1,3,1,2,1,4,1,2,1,2,1,4,1,2,1,2,1,4,1,2,1,3,1,4,1,2,1,2,1,4,1,2,1,2,1,3,1,3,1,2,1,6,1,2,1,2,1,3,1,2,1,2,1,5,1,2,1,2,1,3,1,3,1,2,1,5,1,2,1,2,1,5,1,2,1,2,1,4,1,2,1,3
 
-seq $0,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
+add $0,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  add $1,$5
+  sub $2,$3
+lpe
+mov $0,$1
 add $0,1

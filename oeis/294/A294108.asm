@@ -5,8 +5,7 @@
 trn $0,1
 seq $0,297616 ; a(n) is the number of connected components in the graph with vertices 1..n and adjacency criterion i and j not coprime.
 mov $1,1
-add $1,$0
 div $1,$0
 add $1,$0
 mov $0,$1
-sub $0,3
+sub $0,2

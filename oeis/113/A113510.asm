@@ -5,11 +5,11 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  mov $0,0
   max $2,0
   seq $2,108978 ; Numbers k such that 29*k + 31 is prime.
   add $3,$2
-  add $4,$3
-  add $4,1
+  mov $0,0
+  add $1,$3
+  add $1,1
 lpe
-mov $0,$4
+mov $0,$1

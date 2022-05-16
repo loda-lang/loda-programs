@@ -1,12 +1,11 @@
 ; A172070: Primes p such that either p-1/2-+5/2, but not both, is prime.
-; Submitted by fzs600
+; Submitted by Jamie Morken(w4)
 ; 3,11,17,29,41,59,71,101,107,137,149,179,191,197,227,239,269,281,311,347,419,431,461,521,569,599,617,641,659,809,821,827,857,881,1019,1031,1049,1061,1091,1151,1229,1277,1289,1301,1319,1427,1451,1481,1487,1607,1619,1667,1697,1721,1787,1871,1877
 
-add $0,1
-mov $1,1
 bin $1,$0
+seq $0,172057 ; Primes p such that either p-5/2-+1/2 is prime.
 sub $0,$1
-seq $0,82496 ; Numbers of the form 2p+1, where p and p+2 are a pair of twin primes.
-sub $0,7
+sub $0,3
 div $0,2
-add $0,3
+mul $0,2
+add $0,1

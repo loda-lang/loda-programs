@@ -1,6 +1,14 @@
 ; A132247: Twin primes congruent to {1, 11, 13, 17, 19, 29} mod 30.
-; Submitted by Cruncher Pete
+; Submitted by shiva
 ; 11,13,17,19,29,31,41,43,59,61,71,73,101,103,107,109,137,139,149,151,179,181,191,193,197,199,227,229,239,241,269,271,281,283,311,313,347,349,419,421,431,433,461,463,521,523,569,571,599,601,617,619,641,643
 
-add $0,4
-seq $0,77800 ; List of twin primes {p, p+2}.
+mov $1,$0
+sub $0,1
+gcd $0,2
+div $1,2
+add $1,1
+seq $1,116958 ; Numbers k such that 2*k + 5 and 2*k + 7 are twin primes.
+add $1,$0
+mov $0,$1
+mul $0,2
+add $0,3

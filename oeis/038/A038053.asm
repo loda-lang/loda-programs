@@ -13,6 +13,7 @@ lpb $3
   trn $0,1
   seq $0,38049 ; Number of labeled rooted trees with 2-colored leaves.
   mul $0,$2
+  mov $1,1
 lpe
 div $0,20
 mul $0,4

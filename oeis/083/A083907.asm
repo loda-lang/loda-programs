@@ -1,22 +1,15 @@
 ; A083907: a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
-; Submitted by Jamie Morken(m4a)
+; Submitted by zombie67 [MM]
 ; 1,2,6,6,30,30,210,210,210,210,2310,2310,30030,30030,30030,30030,510510,510510,9699690,9699690,9699690,9699690,223092870,223092870,223092870,223092870,223092870,223092870,6469693230,6469693230,200560490130,200560490130
 
-mov $1,1
-mov $2,1
+mov $1,2
 lpb $0
-  mov $3,$2
-  lpb $3
-    sub $0,1
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    cmp $4,1
-    cmp $4,0
-    sub $3,$4
-  lpe
-  sub $0,1
-  add $2,1
-  mul $1,$2
+  div $0,2
+  mul $0,2
+  trn $0,1
+  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mul $1,$0
+  sub $0,2
 lpe
 mov $0,$1
+div $0,2

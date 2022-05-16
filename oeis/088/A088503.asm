@@ -1,21 +1,21 @@
 ; A088503: Numbers n such that (n^2 + 3)/4 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by [AF] Kalianthys
 ; 3,5,7,11,13,17,25,29,31,35,41,43,49,55,67,77,83,101,109,115,119,125,133,139,143,151,155,157,161,179,181,199,203,211,221,223,235,239,263,277,283,287,295,301,307,311,323,325,329,335,337,347,353,377,379,385,389,407,413,419,431,437,463,473,491,493,533,545,557,559,575,577,581,587,619,629,659,665,673,685,689,697,703,715,739,757,763,767,785,791,797,805,809,811,829,833,853,869,871,895
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,2
-  sub $0,$3
-  add $1,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+add $0,1
+mov $4,2
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,2
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$5
+mov $0,$4
+div $0,2
+mul $0,2
 add $0,1
