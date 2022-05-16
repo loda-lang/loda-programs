@@ -1,0 +1,16 @@
+; A131631: Supersubfactorials: partial product of positive subfactorials (A000166).
+; Submitted by amazing
+; 1,2,18,792,209880,389117520,5771780174160,770509566129663360,1028600220910021528728960,15104551945968674840127424147200,2661646219535110627933754465838408595200
+
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $4,2
+  mul $2,$4
+  add $2,1
+  add $4,1
+  mul $1,$2
+lpe
+gcd $3,$1
+mov $0,$3
