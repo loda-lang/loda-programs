@@ -1,18 +1,16 @@
 ; A020490: Numbers k such that phi(k) <= sigma_0(k).
-; Submitted by Jon Maiga
+; Submitted by zombie67 [MM]
 ; 1,2,3,4,6,8,10,12,18,24,30
 
-mov $3,$0
-mov $2,$0
-lpb $2
+lpb $0
+  mov $2,$0
+  seq $2,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
   sub $2,1
-  mov $0,$3
   sub $0,$2
-  div $0,4
-  mov $1,$0
-  mul $0,2
-  bin $0,$1
-  add $4,$0
+  add $1,2
+  mul $1,$2
+  add $1,$2
 lpe
-mov $0,$4
+mov $0,$1
+div $0,3
 add $0,1

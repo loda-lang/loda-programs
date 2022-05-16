@@ -5,6 +5,5 @@ add $0,1
 pow $0,2
 add $0,1
 bin $0,2
-sub $0,1
 mul $0,60
-add $0,62
+add $0,2

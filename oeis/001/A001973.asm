@@ -5,8 +5,11 @@
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,7997 ; a(n) = ceiling((n-3)(n-4)/6).
-  sub $0,2
+  add $3,1
+  trn $0,3
+  dif $2,2
+  mul $2,$3
   add $1,$2
+  add $3,1
 lpe
-mov $0,$4
+mov $0,$1

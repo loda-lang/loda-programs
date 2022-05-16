@@ -1,16 +1,16 @@
 ; A186302: ( A007522(n)-1 )/2.
-; Submitted by Christian Krause
+; Submitted by [AF] Kalianthys
 ; 3,11,15,23,35,39,51,63,75,83,95,99,111,119,131,135,155,179,183,191,215,219,231,239,243,251,299,303,315,323,359,363,371,375,411,419,431,443,455,459,483,491,495,515,519,531,543,551
 
-add $0,1
 mov $2,6
 mov $3,$0
 pow $3,5
+add $3,3
 lpb $3
-  mov $1,$2
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
   add $2,8
+  sub $0,$1
+  mov $1,$2
   sub $3,$0
 lpe
 mov $0,$2

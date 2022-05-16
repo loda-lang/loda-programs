@@ -1,8 +1,12 @@
 ; A353788: a(n) = 1 if the number of divisors of n is either 2 or 4, otherwise 0.
-; Submitted by fzs600
+; Submitted by Michael Goetz
 ; 0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
 
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-seq $0,21053 ; Decimal expansion of 1/49.
-bin $1,$0
-mov $0,$1
+sub $0,4
+lpb $0
+  div $0,6
+  add $0,1
+lpe
+add $0,3
+mod $0,2

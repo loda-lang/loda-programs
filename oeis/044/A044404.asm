@@ -8,10 +8,9 @@ add $0,18
 div $0,11
 add $1,6
 div $1,11
-add $1,3
 add $0,$1
 mul $0,12
 add $1,$0
 mov $0,$1
+add $0,6
 mul $0,4
-sub $0,132

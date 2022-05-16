@@ -1,31 +1,28 @@
 ; A284233: Sum of odd prime power divisors of n (not including 1).
-; Submitted by Jamie Morken(s2)
+; Submitted by fzs600
 ; 0,0,3,0,5,3,7,0,12,5,11,3,13,7,8,0,17,12,19,5,10,11,23,3,30,13,39,7,29,8,31,0,14,17,12,12,37,19,16,5,41,10,43,11,17,23,47,3,56,30,20,13,53,39,16,7,22,29,59,8,61,31,19,0,18,14,67,17,26,12,71,12,73,37,33,19,18,16,79,5
 
 add $0,1
-mov $2,2
-mov $3,$0
-mov $4,$0
-mov $8,1
-lpb $3
-  add $2,1
-  mov $5,$4
-  mov $6,0
-  lpb $5
-    sub $3,$8
-    add $6,1
-    mul $6,$2
-    mov $7,$0
-    div $0,$2
-    mod $7,$2
-    cmp $7,0
-    sub $5,$7
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $6,$2
+    cmp $6,0
+    add $2,$6
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    mov $5,$2
+    cmp $5,1
+    add $2,2
+    max $4,$5
+    sub $3,$4
   lpe
-  add $1,$6
-  add $2,1
-  mov $7,$0
-  cmp $7,1
-  cmp $7,0
-  sub $3,$7
+  lpb $0
+    dif $0,$2
+    mul $4,$2
+    add $1,$4
+  lpe
 lpe
 mov $0,$1

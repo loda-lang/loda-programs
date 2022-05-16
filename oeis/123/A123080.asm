@@ -1,9 +1,8 @@
 ; A123080: Twin primes of form 4k+3.
-; Submitted by Cruncher Pete
+; Submitted by vanos0512
 ; 3,7,11,19,31,43,59,71,103,107,139,151,179,191,199,227,239,271,283,311,347,419,431,463,523,571,599,619,643,659,811,823,827,859,883,1019,1031,1051,1063,1091,1151,1231,1279,1291,1303,1319,1427,1451,1483,1487,1607
 
-seq $0,14574 ; Average of twin prime pairs.
-sub $0,2
+seq $0,111166 ; Let p < q be consecutive primes; p is in the sequence if p/(q-p) is a record.
 div $0,4
 mul $0,4
 add $0,3

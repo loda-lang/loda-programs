@@ -4,9 +4,9 @@
 mov $5,$0
 add $0,1
 mov $3,$0
+div $3,2
 mov $4,$0
 mul $0,9
-div $3,2
 mul $4,$0
 add $4,3
 mul $3,$4
@@ -16,16 +16,16 @@ lpb $0
   gcd $4,$3
   mov $1,$4
 lpe
-add $1,1
 mov $2,$5
 mul $2,8
+add $1,1
 add $1,$2
 mov $6,$5
 mul $6,$5
 mov $2,$6
 mul $2,12
-add $1,$2
 mul $6,$5
+add $1,$2
 mov $2,$6
 mul $2,6
 add $1,$2

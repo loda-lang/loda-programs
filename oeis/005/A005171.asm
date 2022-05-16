@@ -1,13 +1,13 @@
 ; A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Xe120
 ; 1,0,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1
 
-lpb $0
-  mul $0,2
-  sub $0,1
-  dif $0,3
-lpe
 mov $1,$0
+sub $0,1
+lpb $0
+  mov $1,0
+  dif $0,2
+lpe
 seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $0,$1
 add $0,1

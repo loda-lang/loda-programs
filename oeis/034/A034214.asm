@@ -1,5 +1,5 @@
 ; A034214: Number of ternary codes of length 2 with n words.
-; Submitted by Jamie Morken(w2)
+; Submitted by Maurice Goulois
 ; 1,1,2,4,5,5,4,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,6
@@ -17,6 +17,3 @@ lpb $0
   div $0,$4
   clr $3,$2
 lpe
-mov $4,2
-add $0,$4
-sub $0,2

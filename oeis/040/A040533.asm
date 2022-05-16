@@ -1,10 +1,10 @@
 ; A040533: Continued fraction for sqrt(557).
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 23,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1
 
-seq $0,40327 ; Continued fraction for sqrt(346).
-add $2,$0
-add $2,$0
-div $2,7
-add $2,$0
-mov $0,$2
+seq $0,10152 ; Continued fraction for sqrt(74).
+mov $1,$0
+div $0,8
+mul $0,15
+add $1,$0
+mov $0,$1

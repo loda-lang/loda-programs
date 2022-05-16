@@ -1,7 +1,9 @@
 ; A049711: a(n) = n - prevprime(n).
-; Submitted by Jamie Morken(w4)
+; Submitted by STE\/E
 ; 1,1,2,1,2,1,2,3,4,1,2,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,5,6,1,2,3,4,1,2,3,4,5,6,1,2,3,4,5,6
 
-add $0,1
-seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-add $0,1
+mov $1,$0
+seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+sub $1,$0
+mov $0,$1
+add $0,3

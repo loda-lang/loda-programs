@@ -1,7 +1,20 @@
 ; A353519: a(n) = 1 if n has an odd number of square divisors, otherwise 0.
-; Submitted by Jamie Morken(w2)
+; Submitted by [AF] Kalianthys
 ; 1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,0,0,1,0,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,0,0
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+add $0,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  add $4,1
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  add $1,$5
+  sub $2,$3
+lpe
+mov $0,$1
+add $0,1
 mod $0,2

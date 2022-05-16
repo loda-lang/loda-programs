@@ -1,8 +1,15 @@
 ; A088920: Solutions k to the Diophantine equation k = 2n^2 = m^2+1.
-; Submitted by fzs600
+; Submitted by zombie67 [MM]
 ; 2,50,1682,57122,1940450,65918162,2239277042,76069501250,2584123765442,87784138523762,2982076586042450,101302819786919522,3441313796169221282,116903366249966604050,3971273138702695316402
 
-seq $0,217758 ; Triangular numbers of the form k^2 + k - 1.
-div $0,54
-mul $0,48
-add $0,2
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,4
+  add $2,$1
+  add $3,$2
+lpe
+pow $3,2
+mov $0,$3
+mul $0,2

@@ -8,12 +8,11 @@ lpb $0
   dif $2,13
   mov $3,$2
   dif $3,$0
-  sub $0,1
   cmp $3,$2
   cmp $3,0
-  add $4,$1
+  mul $3,$0
+  sub $0,1
   add $1,$3
 lpe
 add $1,1
-add $1,$4
 mov $0,$1
