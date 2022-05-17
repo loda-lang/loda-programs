@@ -1,9 +1,10 @@
 ; A040705: Continued fraction for sqrt(733).
-; Submitted by Jamie Morken(l1)
+; Submitted by [AF] Kalianthys
 ; 27,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13,1,1,13,54,13
 
-seq $0,10217 ; Continued fraction for sqrt(173).
-seq $0,60464 ; Numbers that are not congruent to 4 or 5 mod 9.
-mul $0,8
-add $0,1
-div $0,5
+seq $0,10158 ; Continued fraction for sqrt(85).
+mov $1,$0
+div $0,4
+mul $0,9
+add $1,$0
+mov $0,$1

@@ -13,8 +13,8 @@ lpb $5
   seq $4,29085 ; Expansion of 1/((1-x)(1-x^5)(1-x^6)(1-x^7)).
   mov $2,$5
   mul $2,$4
-  add $1,$2
   mul $0,$5
+  add $1,$2
 lpe
 min $3,1
 mul $3,$4

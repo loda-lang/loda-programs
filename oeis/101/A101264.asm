@@ -1,8 +1,6 @@
 ; A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
-; Submitted by Jamie Morken(l1)
+; Submitted by Sphynx
 ; 0,1,1,1,0,1,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0,1,1,0,1,1
 
 mul $0,2
-seq $0,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
-add $0,17
-mod $0,2
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

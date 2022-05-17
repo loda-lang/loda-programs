@@ -1,12 +1,12 @@
 ; A070668: Smallest m in range 2..n-1 such that m^3 == 1 mod n, or 1 if no such number exists.
-; Submitted by Dataman
+; Submitted by [DPC] hansR
 ; 1,1,1,1,1,1,2,1,4,1,1,1,3,9,1,1,1,7,7,1,4,1,1,1,1,3,10,9,1,1,5,1,1,1,11,13,10,7,16,1,1,25,6,1,16,1,1,1,18,1,1,9,1,19,1,9,7,1,1,1,13,5,4,1,16,1,29,1,1,11,1,25,8,47,1,45,23,55,23,1,28,1,1,25,1,49,1,1,1,31,9,1,25,1,11,1,35,67,34,1
 
-sub $1,$0
+mov $1,$0
+add $1,2
 seq $0,91733 ; a(n) is the least m > 1 such that m^3 = 1 (mod n).
-add $1,$0
-bin $1,2
-lpb $1
-  mov $1,$0
-lpe
-mov $0,$1
+mul $0,2
+dif $0,$1
+sub $0,2
+div $0,2
+add $0,1

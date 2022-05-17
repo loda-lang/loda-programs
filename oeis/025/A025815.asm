@@ -11,7 +11,6 @@ lpb $5
   mov $4,$0
   max $4,0
   seq $4,29019 ; Expansion of 1/((1-x)(1-x^2)(1-x^6)(1-x^11)).
-  mul $4,2
   mul $0,$5
   mov $2,$5
   mul $2,$4
@@ -21,4 +20,3 @@ min $3,1
 mul $3,$4
 sub $1,$3
 mov $0,$1
-div $0,2

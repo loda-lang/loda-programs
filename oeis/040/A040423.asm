@@ -1,5 +1,12 @@
 ; A040423: Continued fraction for sqrt(445).
+; Submitted by Vester
 ; 21,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10,1,1,10,42,10
 
-seq $0,10217 ; Continued fraction for sqrt(173).
-seq $0,7092 ; Numbers in base 6.
+seq $0,10158 ; Continued fraction for sqrt(85).
+mov $1,$0
+div $0,4
+mul $0,4
+add $1,$0
+div $0,2
+add $1,$0
+mov $0,$1

@@ -1,8 +1,8 @@
 ; A129780: The prime(n)-th lower twin prime.
-; Submitted by Catchercradle
+; Submitted by Jim Weng
 ; 5,11,29,59,137,179,239,281,431,641,809,1031,1151,1277,1427,1667,1931,1997,2141,2339,2549,2789,3119,3359,3581,3851,3929,4091,4157,4259,5009,5279,5639,5657,6359,6551,6779,7127,7349,7757,8231,8387,9011,9239,9431
 
-seq $0,6005 ; The odd prime numbers together with 1.
-trn $0,2
-seq $0,172057 ; Primes p such that either p-5/2-+1/2 is prime.
-sub $0,2
+seq $0,40976 ; a(n) = prime(n) - 2.
+seq $0,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+mul $0,6
+sub $0,1

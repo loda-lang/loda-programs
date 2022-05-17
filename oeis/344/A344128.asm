@@ -1,20 +1,16 @@
 ; A344128: a(n) = Sum_{k=1..n} k * floor(n/k^2).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,3,6,7,8,9,12,16,17,18,21,22,23,24,31,32,36,37,40,41,42,43,46,52,53,57,60,61,62,63,70,71,72,73,85,86,87,88,91,92,93,94,97,101,102,103,110,118,124,125,128,129,133,134,137,138,139,140,143,144,145,149,164,165,166
 
-mov $1,9
-mov $2,$0
-add $2,1
-mov $3,$0
-lpb $2
-  mov $0,$3
-  sub $2,1
-  sub $0,$2
-  seq $0,69290 ; Sum of square roots of square divisors of n.
-  mul $0,2
-  add $1,$0
-lpe
-mov $0,$1
-sub $0,11
-div $0,2
 add $0,1
+mov $2,$0
+lpb $0
+  max $0,1
+  mov $3,$2
+  div $3,$0
+  div $3,$0
+  sub $0,1
+  add $1,$3
+  add $4,$1
+lpe
+mov $0,$4

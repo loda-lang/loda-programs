@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  seq $2,82691 ; a(1)=1, a(2)=2, then if the first 3*2^k-1 terms are a(1), a(2), ..., a(3*2^k - 1), the first 3*2^(k+1)-1 terms are a(1), a(2), ..., a(3*2^k - 1), a(1), a(2), ..., a(3*2^k - 1), a(3*2^k-1) + 1.
   sub $0,1
-  seq $2,82691 ; a(1)=1, a(2)=2, then if 3*2^k-1 first terms are a(1),a(2),.........,a(3*2^k - 1) we have the 3*2^(k+1)-1 first terms as : a(1),a(2),.........,a(3*2^k - 1),a(1),a(2),.........,a(3*2^k - 1),a(3*2^k-1)+1.
-  add $3,$2
+  add $1,$2
 lpe
-add $3,1
-mov $0,$3
+add $1,1
+mov $0,$1

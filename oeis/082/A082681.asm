@@ -14,7 +14,6 @@ lpb $0
   mul $1,$2
 lpe
 gcd $3,$1
-mov $4,$1
-div $4,$3
-mov $0,$4
+div $1,$3
+mov $0,$1
 div $0,2

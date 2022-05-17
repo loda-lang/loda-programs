@@ -1,9 +1,31 @@
 ; A276151: n minus the greatest primorial number (A002110) which divides n: a(n) = n - A053589(n).
-; Submitted by Cruncher Pete
+; Submitted by zombie67 [MM]
 ; 0,0,2,2,4,0,6,6,8,8,10,6,12,12,14,14,16,12,18,18,20,20,22,18,24,24,26,26,28,0,30,30,32,32,34,30,36,36,38,38,40,36,42,42,44,44,46,42,48,48,50,50,52,48,54,54,56,56,58,30,60,60,62,62,64,60,66,66,68,68,70,66,72,72,74,74,76,72,78,78,80,80,82,78,84,84,86,86,88,60,90,90,92,92,94,90,96,96,98,98
 
-mov $1,$0
-seq $0,53589 ; Greatest primorial number (A002110) which divides n.
-add $1,1
-sub $1,$0
-mov $0,$1
+add $0,1
+mov $1,1
+mov $2,2
+mov $4,$0
+mov $3,$0
+lpb $3
+  mov $3,$0
+  mov $6,0
+  mov $5,$4
+  lpb $5
+    add $6,1
+    mov $7,$0
+    mod $7,$2
+    cmp $7,0
+    div $0,$2
+    sub $3,1
+    sub $5,$7
+  lpe
+  cmp $6,0
+  cmp $6,0
+  mov $7,$2
+  pow $7,$6
+  mul $1,$7
+  add $2,1
+lpe
+sub $4,$1
+mov $0,$4

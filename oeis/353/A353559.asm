@@ -1,14 +1,14 @@
 ; A353559: a(n) = 1 if A003968(n) is a multiple of n, where A003968 is multiplicative with a(p^e) = p*(p+1)^(e-1), otherwise 0.
-; Submitted by ckrause
+; Submitted by Cruncher Pete
 ; 1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
 
-mov $2,9
-seq $0,348037 ; a(n) = n / gcd(n, A003968(n)), where A003968 is multiplicative with a(p^e) = p*(p+1)^(e-1).
-mul $0,2
+mov $2,$0
+add $2,1
+seq $0,348030 ; a(n) = A003968(n) - n, where A003968 is multiplicative with a(p^e) = p*(p+1)^(e-1).
 mov $1,$0
+gcd $1,$2
 lpb $1
-  mov $1,2
-  div $2,2
+  sub $1,$2
+  mov $3,1
 lpe
-mov $0,$2
-div $0,5
+mov $0,$3

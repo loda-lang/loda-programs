@@ -4,6 +4,4 @@
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 pow $0,2
-mul $0,2
 mod $0,3
-div $0,2

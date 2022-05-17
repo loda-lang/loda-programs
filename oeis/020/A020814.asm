@@ -1,37 +1,36 @@
 ; A020814: Decimal expansion of 1/sqrt(57).
-; Submitted by Jamie Morken(s1.)
+; Submitted by [AF] Kalianthys
 ; 1,3,2,4,5,3,2,3,5,7,0,6,5,0,4,3,8,0,6,5,3,2,7,5,1,7,2,0,5,1,6,8,6,2,6,4,1,7,9,3,3,6,7,4,9,2,0,3,9,1,8,9,4,9,7,9,4,7,1,2,7,5,2,7,3,1,7,6,7,0,5,1,8,2,3,1,1,9,4,9,4,6,5,9,3,4,1,2,6,4,4,5,8,7,2,8,4,9,0,7
 
 add $0,1
 mov $1,2
 mov $2,1
-mov $3,$0
-add $3,8
 mov $4,$0
 mul $4,2
 mov $7,10
 pow $7,$4
-mov $9,10
+mov $3,$0
+add $3,8
 lpb $3
+  sub $3,2
   mov $4,$2
   pow $4,2
   mul $4,57
   mov $5,$1
   pow $5,2
-  add $4,$5
   mov $6,$1
-  mov $1,$4
   mul $6,$2
   mul $6,2
-  mov $2,$6
+  add $4,$5
   mov $8,$4
   div $8,$7
   max $8,2
+  mov $1,$4
   div $1,$8
+  mov $2,$6
   div $2,$8
-  sub $3,2
 lpe
-mov $3,$9
+mov $3,10
 pow $3,$0
 div $2,$3
 mov $0,$2
