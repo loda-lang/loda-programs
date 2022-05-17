@@ -1,11 +1,6 @@
 ; A189687: Fixed point of the morphism 0->011, 1->01.
-; Submitted by Christian Krause
+; Submitted by Tae Hyun Kim
 ; 0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0
 
-mov $1,$0
-add $1,1
-seq $1,1954 ; a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
-seq $0,1953 ; a(n) = floor((n + 1/2) * sqrt(2)).
-add $0,$1
-sub $0,1
+seq $0,1030 ; Fixed under 1 -> 21, 2 -> 211.
 mod $0,2

@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mod $0,2
-  mul $0,20
   add $0,20
   seq $0,40 ; The prime numbers.
   mul $0,2

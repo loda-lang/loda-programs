@@ -1,11 +1,10 @@
 ; A040275: Continued fraction for sqrt(293).
-; Submitted by Cruncher Pete
+; Submitted by [AF] Kalianthys
 ; 17,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8,34,8,1,1,8
 
 seq $0,10158 ; Continued fraction for sqrt(85).
 mov $1,$0
 div $0,4
-mul $0,2
-add $1,$0
+mul $0,4
 add $1,$0
 mov $0,$1

@@ -1,6 +1,17 @@
 ; A038556: Periodic derivative of n.
+; Submitted by zombie67 [MM]
 ; 0,0,3,0,5,6,3,0,9,10,15,12,5,6,3,0,17,18,23,20,29,30,27,24,9,10,15,12,5,6,3,0,33,34,39,36,45,46,43,40,57,58,63,60,53,54,51,48,17,18,23,20,29,30,27,24,9,10,15,12,5,6,3,0,65,66,71,68,77,78,75,72,89,90,95,92,85,86,83,80,113,114,119,116,125,126,123,120,105,106,111,108,101,102,99,96,33,34,39,36
 
+mov $2,1
 mul $0,2
-add $0,1
-seq $0,38554 ; Derivative of n: write n in binary, replace each pair of adjacent bits with their mod 2 sum (a(0)=a(1)=0 by convention). Also n XOR (n shift 1).
+lpb $0
+  mov $3,$0
+  sub $0,1
+  div $0,2
+  add $3,$0
+  mod $3,2
+  mul $3,$2
+  add $1,$3
+  mul $2,2
+lpe
+mov $0,$1

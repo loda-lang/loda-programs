@@ -20,14 +20,14 @@ lpb $15
     div $3,2
     mul $3,7
   lpe
-  add $3,6
   add $7,4
+  add $3,6
   sub $3,$7
   mov $1,$3
   mov $16,$15
   lpb $16
-    mov $14,$3
     sub $16,1
+    mov $14,$3
   lpe
 lpe
 lpb $13

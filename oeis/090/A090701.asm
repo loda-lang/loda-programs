@@ -5,9 +5,9 @@
 mov $1,4
 add $1,$0
 mov $2,$0
+cmp $2,10
 mod $0,2
 add $1,$0
 div $1,3
-cmp $2,10
 add $1,$2
 mov $0,$1

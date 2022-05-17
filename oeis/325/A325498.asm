@@ -1,19 +1,27 @@
 ; A325498: Difference sequence of A036668.
-; Submitted by vanos0512
+; Submitted by LeChat51X
 ; 3,1,1,1,2,2,2,3,1,2,1,3,1,1,3,1,1,1,4,1,1,4,1,1,1,1,2,2,3,1,1,1,4,2,2,1,1,1,1,1,3,2,3,1,1,1,1,1,2,2,4,2,1,3,1,1,2,1,1,1,1,4,2,3,1,1,1,1,1,2,1,1,3,1,2,4,2,4,1,1,1,3,1,1,3,1,1,1,2,2,2,4,2,1,3,1,1,2,1,1
 
+mov $4,$0
 mov $3,2
+add $2,$7
+add $3,1
 lpb $3
-  sub $3,1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  mov $5,$0
-  max $5,0
-  seq $5,36668 ; Hati numbers: of form 2^i*3^j*k, i+j even, (k,6)=1.
-  sub $0,1
+  seq $0,36668 ; Hati numbers: of form 2^i*3^j*k, i+j even, (k,6)=1.
   mov $2,$3
-  mul $2,$5
+  mul $2,$0
+  mul $4,$3
   add $1,$2
-  mov $4,$5
+  mov $5,$0
 lpe
-sub $1,$4
+sub $1,$5
+mov $0,$1
+mov $9,10
+mov $7,$6
+sub $0,1
+sub $0,3
+add $0,1
 mov $0,$1

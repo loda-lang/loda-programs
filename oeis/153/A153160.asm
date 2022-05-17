@@ -1,6 +1,6 @@
 ; A153160: A007916(n)^6.
-; Submitted by Simon Strandgaard
+; Submitted by Cruncher Pete
 ; 64,729,15625,46656,117649,1000000,1771561,2985984,4826809,7529536,11390625,24137569,34012224,47045881,64000000,85766121,113379904,148035889,191102976,308915776,481890304,594823321,729000000,887503681
 
-seq $0,52485 ; Weak numbers (i.e., not powerful (1)): there is a prime p where p|n is true but p^2|n is not true.
+seq $0,7916 ; Numbers that are not perfect powers.
 pow $0,6

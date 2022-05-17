@@ -8,8 +8,7 @@ mov $2,$3
 lpb $0
   add $1,$0
   trn $1,$2
-  add $0,1
-  trn $0,3
+  trn $0,2
   trn $2,5
 lpe
 mov $0,$1

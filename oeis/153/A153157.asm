@@ -1,6 +1,6 @@
 ; A153157: A007916(n)^4.
-; Submitted by Christian Krause
+; Submitted by mmonnin
 ; 16,81,625,1296,2401,10000,14641,20736,28561,38416,50625,83521,104976,130321,160000,194481,234256,279841,331776,456976,614656,707281,810000,923521,1185921,1336336,1500625,1874161,2085136,2313441,2560000,2825761
 
-seq $0,52485 ; Weak numbers (i.e., not powerful (1)): there is a prime p where p|n is true but p^2|n is not true.
+seq $0,7916 ; Numbers that are not perfect powers.
 pow $0,4

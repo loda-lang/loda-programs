@@ -5,9 +5,9 @@
 mul $0,2
 mov $1,5
 add $1,$0
-mul $0,2
 mov $2,$1
 sub $1,1
+mul $0,2
 mul $0,$1
 trn $0,$2
 add $0,10

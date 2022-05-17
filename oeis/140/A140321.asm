@@ -6,25 +6,26 @@ add $0,1
 mov $3,$0
 mul $3,3
 lpb $3
+  sub $3,1
   add $6,$2
   add $1,$6
   add $1,$2
   mov $2,$5
   add $2,$1
+  mul $2,2
   add $6,$1
   mov $1,$6
   mul $1,2
-  mul $2,2
-  sub $3,1
-  mov $5,$1
+  mov $5,$6
+  mul $5,2
   div $5,8
   add $5,$2
   sub $6,3
   add $6,$5
 lpe
-mul $2,2
 mov $4,10
 pow $4,$0
+mul $2,2
 div $2,$4
 div $1,$2
 mov $0,$1

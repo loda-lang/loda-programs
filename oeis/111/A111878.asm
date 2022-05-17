@@ -1,8 +1,10 @@
 ; A111878: a(n) = denominator(digamma(n+7/2)/2 + log(2) + euler_gamma/2)/15; a(n)=denominator(f(n+2)/15) = A111877(n+1)/5.
-; Submitted by Jamie Morken(l1)
+; Submitted by LG@BOINC
 ; 1,7,21,231,3003,3003,51051,969969,969969,22309287,111546435,334639305,9704539845,300840735195,300840735195,300840735195,11131107202215,11131107202215,456375395290815,19624141997505045,19624141997505045
 
 add $0,2
-mul $0,2
-seq $0,217858 ; Odd part of lcm(1,2,3,...,n).
+seq $0,76100 ; Least common multiple of n numbers starting with n.
+lpb $0
+  dif $0,2
+lpe
 div $0,15

@@ -11,8 +11,9 @@ lpb $3
   seq $0,160239 ; Number of "ON" cells in a 2-dimensional cellular automaton ("Fredkin's Replicator") evolving according to the rule that a cell is ON in a given generation if and only if there was an odd number of ON cells among the eight nearest neighbors in the preceding generation, starting with one ON cell.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
-  pow $4,$3
+  mov $5,$0
 lpe
-sub $1,$0
+sub $1,$5
 mov $0,$1

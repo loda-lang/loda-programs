@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  trn $0,4
   pow $2,2
   mov $3,$2
   min $3,12
+  trn $0,4
   add $1,$3
 lpe
 mov $0,$1

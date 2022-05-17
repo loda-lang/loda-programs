@@ -1,23 +1,21 @@
 ; A109358: Square root of squares of form 2*p + 3, where p is prime.
-; Submitted by Christian Krause
+; Submitted by [AF] Kalianthys
 ; 3,5,7,11,13,19,23,25,29,31,37,41,47,55,65,67,73,77,79,91,97,101,103,109,119,143,151,155,157,161,187,197,205,209,211,221,227,233,235,239,245,253,257,263,265,275,287,289,293,299,305,307,323,331,337,349,353,359,367,371,389,397,403,409,415,427,437,443,449,455,463,473,481,487,491,493,497,509,515,521,527,535,539,547,551,569,571,575,583,587,595,613,619,625,635,649,653,661,671,673
 
-mov $1,2
-mov $2,$0
-pow $2,2
-mov $5,4
-lpb $2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $5,4
-  add $1,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$5
-div $0,2
 add $0,1
+mov $4,4
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,4
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
+lpe
+mov $0,$4
+sub $0,4
+div $0,2
+add $0,3

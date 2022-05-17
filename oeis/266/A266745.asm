@@ -5,13 +5,11 @@
 add $0,3
 lpb $0
   sub $0,3
-  add $3,1
-  trn $3,2
   sub $0,$3
   mov $2,$0
   max $2,0
   seq $2,8674 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^5)*(1-x^7)*(1-x^9)).
   add $1,$2
-  mov $3,3
+  mov $3,2
 lpe
 mov $0,$1

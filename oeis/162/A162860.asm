@@ -1,24 +1,21 @@
 ; A162860: Numbers k such that k^2+4*k+1 is prime.
-; Submitted by Jamie Morken(w2)
+; Submitted by [AF] Kalianthys
 ; 2,6,8,12,18,24,30,32,38,42,44,56,62,66,78,84,86,90,96,108,110,116,122,126,134,138,140,144,162,170,188,192,200,204,206,216,218,248,252,264,266,294,296,302,308,318,320,324,326,330,338,348,354,360,368,414,416,434,438,450,458,468,486,492,500,504,506,524,528,546,552,558,572,578,584,588,606,624,632,638,650,654,656,660,662,666,684,690,692,702,710,720,726,734,744,768,770,788,792,794
 
-mov $5,2
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,4
-  sub $0,$3
-  add $1,$5
-  add $1,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+add $0,1
+mov $4,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  mul $1,2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,4
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$5
+mov $0,$4
+sub $0,6
 div $0,2
-sub $0,1
+add $0,2

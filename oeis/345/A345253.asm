@@ -1,10 +1,11 @@
 ; A345253: Maximal Fibonacci tree: Arrangement of the positive integers as labels of a complete binary tree.
-; Submitted by [AF] Kalianthys
+; Submitted by WTBroughton
 ; 1,2,3,4,5,6,8,7,9,10,13,11,14,16,21,12,15,17,22,18,23,26,34,19,24,27,35,29,37,42,55,20,25,28,36,30,38,43,56,31,39,44,57,47,60,68,89,32,40,45,58,48,61,69,90,50,63,71,92,76,97,110,144,33,41,46,59,49
 
-add $0,1
+mov $4,1
 mov $3,$0
 mul $3,2
+add $3,1
 lpb $3
   sub $3,1
   dif $3,2

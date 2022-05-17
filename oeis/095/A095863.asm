@@ -1,17 +1,7 @@
 ; A095863: Index of largest triangular number with n digits.
-; Submitted by Jamie Morken(w1)
+; Submitted by LeChat51X
 ; 3,13,44,140,446,1413,4471,14141,44720,141420,447213,1414213,4472135,14142135,44721359,141421355,447213594,1414213561,4472135954,14142135623,44721359549,141421356236,447213595499,1414213562372
 
 add $0,1
-mov $2,$0
-mov $0,10
-pow $0,$2
-mov $1,$0
-lpb $0
-  add $2,$1
-  add $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
+seq $0,68092 ; Index of smallest triangular number with n digits.
 sub $0,1

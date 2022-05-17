@@ -1,10 +1,15 @@
 ; A164349: The limit of the string "0, 1" under the operation 'repeat string twice and remove last symbol'.
+; Submitted by Bok
 ; 0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,1
 
-lpb $0
-  sub $0,2
-  mov $1,$0
-  max $1,0
-  seq $1,92323 ; 2^m - 1 appears 2^m times.
-  sub $0,$1
+mov $1,$0
+lpb $1
+  sub $1,2
+  cmp $2,1
+  cmp $2,0
+  lpb $1
+    sub $1,$2
+    mul $2,2
+  lpe
 lpe
+mov $0,$1

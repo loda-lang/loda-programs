@@ -1,9 +1,18 @@
 ; A279340: First differences of A055938.
-; Submitted by Simon Strandgaard
+; Submitted by Daniel
 ; 3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1
 
-add $0,1
-seq $0,182105 ; Number of elements merged by bottom-up merge sort.
+add $0,2
+mov $1,$0
+lpb $1
+  mov $2,1
+  lpb $1
+    sub $1,$2
+    mul $2,2
+  lpe
+lpe
+mov $0,$2
+div $0,2
 mod $0,2
 mul $0,2
 add $0,1

@@ -1,13 +1,10 @@
 ; A040603: Continued fraction for sqrt(629).
+; Submitted by Cruncher Pete
 ; 25,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12,1,1,12,50,12
 
-seq $0,10217 ; Continued fraction for sqrt(173).
-seq $0,60464 ; Numbers that are not congruent to 4 or 5 mod 9.
-mul $0,8
-add $0,6
-div $0,7
-sub $0,1
+seq $0,10158 ; Continued fraction for sqrt(85).
 mov $1,$0
-div $1,3
+div $0,4
+mul $0,8
 add $1,$0
 mov $0,$1

@@ -1,22 +1,19 @@
 ; A229080: Primes of the form T(k) + S(k) + 1 where T(k) is the k-th triangular number and S(k) is the k-th square number.
-; Submitted by Simon Strandgaard
+; Submitted by Cruncher Pete
 ; 3,41,101,127,223,443,673,877,1277,1553,2543,2927,3061,4241,4733,4903,5431,6971,7177,8933,9883,10627,11927,12743,13873,17551,19211,20593,21661,26203,31177,33377,36583,40427,51431,58313,60101,60703,67523,68161,75377,81551,83663,92381,95383,101531,104677,108677,118583,124561,135151,146173,150893,154723,157627,162527,177677,187091,190283,191353,194581,203321,204427,207763,213383,216791,217933,227177,230693,231871,246241,261043,264811,276277,286673,290621,308041,340103,353081,363343,375251,393473
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $5,2
-  add $1,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-  add $5,1
+add $0,1
+mov $4,2
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,3
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2
+add $0,1

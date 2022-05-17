@@ -1,5 +1,5 @@
 ; A291430: The arithmetic function u(n,5,2).
-; Submitted by Christian Krause
+; Submitted by zombie67 [MM]
 ; 9,9,9,9,5,6,7,8,9,5,9,6,9,7,5,8,9,6,9,5,7,9,9,6,5,9,9,7,9,5,9,8,9,9,5,6,9,9,9,5,9,6,9,9,5,9,9,6,7,5,9,9,9,6,5,7,9,9,9,5,9,9,7,8,5,6,9,9,9,5
 
 mov $2,1
@@ -16,7 +16,5 @@ lpb $0
     sub $3,$1
   lpe
   mov $0,0
-  add $2,1
 lpe
 mov $0,$2
-sub $0,1

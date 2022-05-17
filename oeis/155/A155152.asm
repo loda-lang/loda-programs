@@ -1,21 +1,18 @@
 ; A155152: Numbers n such that 13n^2+3n+1 is prime.
-; Submitted by Christian Krause
+; Submitted by Bill F
 ; 1,2,3,6,7,8,11,13,14,15,19,20,22,23,24,26,34,37,39,40,41,42,44,46,47,48,51,53,57,62,63,64,66,68,73,74,75,79,88,91,94,96,97,99,102,107,111,112,116,122,133,135,144,146,152,161,162,163,165,166,167,172,180,183,184,187,189,194,198,201,209,211,213,217,220,223,226,227,229,231,234,237,246,249,250,254,260,268,272,275,278,279,282,287,289,292,294,299,301,304
 
-mov $2,332202
-lpb $2
-  mov $3,$6
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,16
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,$1
-  add $1,10
-  mov $6,$5
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,16
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
+  add $4,10
 lpe
-mov $0,$1
+mov $0,$4
 div $0,26

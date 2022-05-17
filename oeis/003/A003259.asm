@@ -1,8 +1,17 @@
 ; A003259: Complement of A003258.
-; Submitted by Simon Strandgaard
+; Submitted by Cruncher Pete
 ; 1,4,6,9,11,14,17,19,22,25,27,30,32,35,38,40,43,45,48,51,53,56,59,61,64,66,69,72,74,77,79,82,85,87,90,93,95,98,100,103,106,108,111,114,116,119,121,124,127,129,132,134,137,140,142,145,148,150,153,155
 
-mul $0,4
-seq $0,184517 ; Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
-div $0,8
+mov $1,$0
+mov $2,$0
+pow $2,2
+lpb $2
+  sub $2,$0
+  trn $2,3
+  add $0,2
+lpe
+mov $3,$1
+mul $3,3
+add $0,$3
+div $0,2
 add $0,1

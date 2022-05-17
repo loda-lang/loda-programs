@@ -1,23 +1,8 @@
 ; A074953: Numbers equidistant from consecutive twin prime pairs.
-; Submitted by Daniel
+; Submitted by Christian Krause
 ; 5,9,15,24,36,51,66,87,105,123,144,165,186,195,213,234,255,276,297,330,384,426,447,492,546,585,609,630,651,735,816,825,843,870,951,1026,1041,1056,1077,1122,1191,1254,1284,1296,1311,1374,1440,1467,1485,1548,1614,1644,1683,1710,1755,1830,1875,1905,1941,1974,2013,2055,2085,2100,2121,2136,2190,2253,2289,2325,2361,2466,2571,2625,2673,2700,2721,2760,2796,2886,2985,3060,3144,3210,3255,3279,3315,3345,3366,3381,3426,3465,3498,3534,3549,3570,3627,3720,3795,3837
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,82496 ; Numbers of the form 2p+1, where p and p+2 are a pair of twin primes.
-  sub $1,$5
-  mul $4,$3
-  mov $5,$0
-lpe
-sub $1,$5
+mov $1,$0
+seq $1,79328 ; Let f(n)=A001359(n) be the smaller member of the n-th pair of twin primes. Then a(n) is the average of f(n) and f(n+1).
 mov $0,$1
-sub $0,4
-sub $2,$0
-mov $0,$2
-sub $0,21
-div $0,4
-add $0,5
+add $0,1
