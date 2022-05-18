@@ -1,43 +1,18 @@
 ; A023658: Convolution of odd numbers and A000201.
+; Submitted by mmonnin
 ; 1,6,18,40,76,129,202,298,420,572,757,978,1239,1543,1893,2292,2743,3250,3816,4444,5137,5898,6731,7639,8625,9693,10846,12087,13419,14845,16369,17994,19723,21560,23508,25570,27749,30048,32471,35021
 
-mov $12,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$12
-  sub $0,$4
-  mov $9,$0
-  mov $10,0
-  mov $11,$0
-  add $11,1
-  lpb $11
-    sub $11,1
-    mov $3,0
-    mov $7,0
-    mov $0,$9
-    sub $0,$11
-    mov $6,$0
-    mov $8,$0
-    add $8,1
-    lpb $8
-      sub $8,1
-      mov $0,$6
-      sub $0,$8
-      lpb $0
-        mov $2,$0
-        seq $2,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
-        mov $0,0
-        mov $3,2
-        add $3,$2
-      lpe
-      mov $5,$3
-      add $5,1
-      add $7,$5
-    lpe
-    add $10,$7
-  lpe
-  add $1,$10
+mov $1,$0
+mov $3,1
+mov $2,$0
+lpb $2
+  sub $2,1
+  add $4,$3
+  mov $0,$1
+  sub $0,$2
+  seq $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
+  add $3,$0
+  add $4,$3
 lpe
-mov $0,$1
+mov $0,$4
+add $0,1

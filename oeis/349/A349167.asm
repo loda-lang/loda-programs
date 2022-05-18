@@ -1,10 +1,13 @@
 ; A349167: a(n) = 1 if sigma(n) and A003961(n) are relatively prime, otherwise 0.
-; Submitted by Jamie Morken(w1)
+; Submitted by zombie67 [MM]
 ; 1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0
 
+mov $2,$0
+add $2,1
+seq $0,350073 ; a(n) = A064989(sigma(n)), where A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 mov $1,$0
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $1,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-gcd $1,$0
-mov $0,1
-div $0,$1
+gcd $1,$2
+mov $0,$1
+div $0,2
+bin $3,$0
+mov $0,$3

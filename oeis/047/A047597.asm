@@ -1,16 +1,13 @@
 ; A047597: Numbers that are congruent to {0, 2, 3, 4, 5} mod 8.
-; Submitted by Simon Strandgaard
+; Submitted by Maurice Goulois
 ; 0,2,3,4,5,8,10,11,12,13,16,18,19,20,21,24,26,27,28,29,32,34,35,36,37,40,42,43,44,45,48,50,51,52,53,56,58,59,60,61,64,66,67,68,69,72,74,75,76,77,80,82,83,84,85,88,90,91,92,93,96,98,99,100,101
 
-mov $1,46
-add $1,$0
-lpb $0
-  sub $0,5
-  add $1,3
-lpe
-lpb $0
-  div $0,$1
-  add $1,1
-lpe
-sub $1,46
-mov $0,$1
+mov $1,$0
+add $0,3
+add $0,$1
+mul $0,3
+div $0,5
+sub $0,1
+div $1,5
+mul $1,2
+add $0,$1

@@ -1,9 +1,13 @@
 ; A092790: a(n) = (n+1)*phi(n-1)/2.
+; Submitted by Skivelitis2
 ; 2,5,6,14,8,27,20,33,24,65,28,90,48,68,72,152,60,189,88,138,120,275,104,270,168,261,180,434,128,495,272,350,288,444,228,702,360,492,336,860,264,945,460,564,528,1127,400,1071,520,848,648,1430,504,1140,696,1062,840,1769
 
+add $0,1
 mov $1,$0
-add $0,4
+seq $1,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 add $1,1
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+add $0,3
 mul $0,$1
+sub $0,4
 div $0,2
+add $0,2

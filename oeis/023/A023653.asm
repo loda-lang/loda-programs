@@ -1,15 +1,24 @@
 ; A023653: Convolution of (F(2), F(3), F(4), ...) and A000201.
-; Submitted by Cruncher Pete
+; Submitted by mmonnin
 ; 1,5,13,28,55,100,175,298,499,827,1359,2222,3621,5886,9553,15488,25093,40637,65789,106488,172342,278898,451312,730285,1181675,1912042,3093802,5005932,8099825
 
-add $0,3
+mov $1,2
+mov $3,1
+add $0,1
 lpb $0
-  sub $0,3
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,23611 ; Convolution of Fibonacci numbers and A000201.
+  sub $0,1
   add $1,$2
-  sub $3,2
+  mov $4,$2
+  mov $2,$1
+  mov $1,$3
+  seq $1,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
+  mul $1,2
+  add $1,$4
+  add $3,1
 lpe
-mov $0,$1
+mov $0,$2
+sub $0,2
+add $4,$0
+mov $0,$4
+div $0,2
+add $0,1

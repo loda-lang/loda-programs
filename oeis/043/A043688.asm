@@ -1,13 +1,20 @@
 ; A043688: a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 5 runs.
-; Submitted by mmonnin
+; Submitted by aendgraend
 ; 10,18,20,21,22,26,34,36,37,38,40,41,43,44,45,46,50,52,53,54,58,66,68,69,70,72,73,75,76,77,78,80,81,83,87,88,89,91,92,93,94,98,100,101,102,104,105,107,108,109,110,114,116,117,118,122,130,132,133,134,136,137,139,140,141,142,144,145,147,151,152,153,155,156,157,158,160,161,163,167,175,176,177,179,183,184,185,187,188,189,190,194,196,197,198,200,201,203,204,205
 
-add $0,1
+add $0,3
 lpb $0
-  sub $0,1
-  mov $1,$2
-  seq $1,43751 ; Numbers n such that number of runs in the base 2 representation of n is congruent to 5 mod 8.
-  add $2,1
+  sub $0,3
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,43572 ; Numbers whose base-2 representation has exactly 5 runs.
+  mov $1,1
+  add $1,$2
+  mov $3,11
+  pow $3,$1
 lpe
 mov $0,$1
+sub $0,22
 div $0,2
+add $0,10

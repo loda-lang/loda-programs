@@ -1,13 +1,10 @@
 ; A129929: Binomial transform of the periodic sequence with periodic pattern 1,1,1,0,0.
-; Submitted by Jon Maiga
+; Submitted by emoga
 ; 1,2,4,7,11,17,29,58,129,292,639,1333,2666,5188,9999,19388,38166,76332,154261,312703,632171,1271107,2542214,5066717,10087066,20099107,40123189,80246378,160689174,321892577,644617194,1290066428,2580132856
 
-mov $3,$0
+mov $1,2
+pow $1,$0
 add $0,1
 seq $0,139761 ; a(n) = Sum_{ k >= 0} binomial(n,5*k+4).
 mul $0,-1
-add $0,1
-mov $2,2
-pow $2,$3
-add $0,$2
-sub $0,1
+add $0,$1

@@ -1,26 +1,24 @@
 ; A292918: Let A_n be a square n X n matrix with entries A_n(i,j)=1 if i+j is prime, and A_n(i,j)=0 otherwise. Then a(n) counts the 1's in A_n.
-; Submitted by Jon Maiga
+; Submitted by WTBroughton
 ; 1,3,5,9,11,15,19,23,29,37,43,51,57,63,71,81,89,97,105,113,123,135,145,157,169,181,195,209,221,235,249,263,277,293,309,327,345,363,381,401,419,439,457,475,495,515,533,551,571,591,613,637,659,683,709,735,763,791,817,843,867,891,915,941,967,995,1021,1047,1075,1105,1133,1161,1187,1213,1241,1271,1301,1331,1361,1391,1421,1453,1483,1515,1547,1579,1613,1647,1679,1713,1749,1785,1821,1857,1893,1931,1969,2007,2047,2089
 
 mov $6,$0
-mov $8,$0
-lpb $8
+mov $1,$0
+lpb $1
+  sub $1,1
   mov $0,$6
-  mov $4,0
-  sub $8,1
-  sub $0,$8
+  sub $0,$1
   mov $3,$0
   mul $0,2
   mov $5,$0
   lpb $3
+    sub $3,1
     mov $2,$5
     seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-    sub $3,1
     add $4,$2
     sub $5,1
   lpe
-  add $7,$4
 lpe
-mov $0,$7
+mov $0,$4
 mul $0,2
 add $0,1

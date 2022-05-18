@@ -1,9 +1,9 @@
 ; A028766: Nonsquares mod 53.
-; Submitted by mmonnin
+; Submitted by Jim1348
 ; 2,3,5,8,12,14,18,19,20,21,22,23,26,27,30,31,32,33,34,35,39,41,45,48,50,51
 
+mov $1,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
