@@ -4,12 +4,12 @@
 
 mov $1,$0
 sub $2,$0
-mov $0,1
-add $1,1
+mov $0,11
+add $1,2
 lpb $1
   div $1,10
-  mul $0,11
-  sub $0,1
+  max $1,10
+  mul $0,10
 lpe
 add $0,$2
-sub $0,1
+sub $0,2

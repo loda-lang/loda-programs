@@ -5,21 +5,23 @@
 mov $2,332202
 lpb $2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $5,$1
   sub $0,$3
-  add $1,7
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
   sub $2,18
-  add $5,23
   add $5,$1
-  add $1,1
+  add $5,22
+  add $1,8
+  add $5,$1
   mov $3,$5
   div $3,10
   add $3,2
   add $5,2
 lpe
-mov $0,$3
-add $0,1
+mov $0,$5
+sub $0,144
+div $0,80
+mul $0,8
+add $0,17

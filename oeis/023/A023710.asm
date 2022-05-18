@@ -1,7 +1,8 @@
 ; A023710: Numbers with a single 1 in their base 4 expansion.
-; Submitted by Cruncher Pete
+; Submitted by [AF>Amis des Lapins] Xe120
 ; 1,4,6,7,9,13,16,18,19,24,26,27,28,30,31,33,36,38,39,41,45,49,52,54,55,57,61,64,66,67,72,74,75,76,78,79,96,98,99,104,106,107,108,110,111,112,114,115,120,122,123,124,126,127,129,132
 
+mov $1,4
 mov $2,$0
 add $2,2
 pow $2,2

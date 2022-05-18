@@ -1,5 +1,5 @@
 ; A073383: Sixth convolution of A000129(n+1) (generalized (2,1)-Fibonacci, called Pell numbers), n>=0, with itself.
-; Submitted by [AF] Kalianthys
+; Submitted by Saenger
 ; 1,14,119,784,4396,22008,101220,435696,1777986,6943244,26129950,95282992,338108876,1171554776,3975215844,13239402960,43364985867,139925413866,445409413421,1400429394784,4353771487912
 
 mov $6,14
@@ -22,6 +22,4 @@ lpb $0
   sub $6,2
 lpe
 mov $0,$5
-sub $0,32
 div $0,32
-add $0,1

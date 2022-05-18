@@ -1,5 +1,5 @@
 ; A076160: Sod_4 - sod_3 + sod_2 - sod_1, where sod_k is the sum of k-th powers of digits of n.
-; Submitted by Simon Strandgaard
+; Submitted by Cruncher Pete
 ; 0,0,10,60,204,520,1110,2100,3640,5904,0,0,10,60,204,520,1110,2100,3640,5904,10,10,20,70,214,530,1120,2110,3650,5914,60,60,70,120,264,580,1170,2160,3700,5964,204,204,214,264,408,724,1314,2304,3844,6108
 
 lpb $0
@@ -7,7 +7,6 @@ lpb $0
   mod $2,10
   mov $3,$2
   bin $3,2
-  mul $3,2
   div $0,10
   pow $2,2
   add $2,1
@@ -15,3 +14,4 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$1
+mul $0,2

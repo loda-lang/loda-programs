@@ -1,20 +1,17 @@
 ; A038548: Number of divisors of n that are at most sqrt(n).
-; Submitted by Simon Strandgaard
+; Submitted by Vester
 ; 1,1,1,2,1,2,1,2,2,2,1,3,1,2,2,3,1,3,1,3,2,2,1,4,2,2,2,3,1,4,1,3,2,2,2,5,1,2,2,4,1,4,1,3,3,2,1,5,2,3,2,3,1,4,2,4,2,2,1,6,1,2,3,4,2,4,1,3,2,4,1,6,1,2,3,3,2,4,1,5,3,2,1,6,2,2,2,4,1,6,2,3,2,2,2,6,1,3,3,5
 
 add $0,1
 mov $2,$0
-lpb $0
-  add $4,1
-  min $0,$4
-  mov $3,$2
-  dif $3,$0
-  cmp $3,$2
-  cmp $3,0
-  sub $2,$4
-  mov $0,$2
-  add $1,$3
-  sub $2,$4
+lpb $2
+  add $2,1
+  add $3,2
+  sub $4,1
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  add $1,$5
+  sub $2,$3
 lpe
 mov $0,$1
-add $0,1

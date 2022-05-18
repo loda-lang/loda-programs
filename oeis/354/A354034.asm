@@ -1,9 +1,16 @@
-; A354034: allocated for Antti Karttunen
-; Submitted by Daniel
+; A354034: a(n) = 1 if n is an even number or a square, otherwise 0.
+; Submitted by zombie67 [MM]
 ; 1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
 
-mov $1,$0
-seq $0,285989 ; a(0) = 0, a(n) = Sum_{0<d|n, n/d odd} d^4 for n > 0.
-sub $0,$1
-add $0,1
-mod $0,2
+lpb $0
+  sub $0,$1
+  add $1,1
+  sub $0,$1
+  mul $2,2
+  add $2,1
+lpe
+sub $2,$0
+add $1,$2
+mod $1,2
+pow $1,$0
+mov $0,$1

@@ -1,8 +1,7 @@
 ; A008966: a(n) = 1 if n is squarefree, otherwise 0.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by emoga
 ; 1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
 
-mov $1,$0
-seq $1,71325 ; Number of squares > 1 dividing n.
-cmp $1,0
+seq $0,71325 ; Number of squares > 1 dividing n.
+bin $1,$0
 mov $0,$1

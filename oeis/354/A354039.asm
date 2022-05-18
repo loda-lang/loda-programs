@@ -1,20 +1,15 @@
 ; A354039: Odd numbers k for which sigma(k^2) == 1 (mod 4).
-; Submitted by shift
+; Submitted by Christian Krause
 ; 1,3,7,9,11,19,21,23,25,27,31,33,43,47,49,57,59,63,65,67,69,71,75,77,79,81,83,85,93,99,103,107,121,127,129,131,133,139,141,145,147,151,161,163,167,169,171,175,177,179,185,189,191,195,199,201,205,207,209,211,213,217,221,223,225,227,231,237,239,243
 
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,167306 ; Totally multiplicative sequence with a(p) = 5*(p+2) for prime p.
-  add $3,$4
-  div $3,2
-  add $3,1
-  gcd $3,2
+  seq $3,81325 ; sigma(n^2) modulo 4.
+  cmp $3,1
   sub $0,$3
-  add $0,1
-  add $1,$4
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0

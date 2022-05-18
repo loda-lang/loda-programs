@@ -4,8 +4,8 @@
 
 mul $0,5
 mov $2,$0
-add $0,1
 add $2,5
+add $0,1
 add $0,$2
 bin $0,$2
 mul $0,12

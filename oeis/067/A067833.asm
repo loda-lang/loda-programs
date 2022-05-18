@@ -1,7 +1,29 @@
 ; A067833: Primes p such that sigma(p-4) > p.
-; Submitted by zombie67 [MM]
+; Submitted by pelpolaris
 ; 19,29,31,37,43,53,59,61,67,73,79,89,97,103,109,127,137,139,149,151,157,163,173,179,181,191,193,199,211,223,229,239,241,251,257,263,269,271,277,283,293,307,313,331,337,347,349,359,367,373,379,389,397,409
 
-add $0,2
-seq $0,164384 ; Positive nonprimes of the form p-4 where p is prime.
+mov $1,10
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  sub $3,$5
+  add $3,$4
+  sub $5,1
+  add $5,$3
+  bin $3,2
+  add $3,$4
+  sub $0,$3
+  add $0,1
+  add $1,1
+  add $1,$4
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
 add $0,4

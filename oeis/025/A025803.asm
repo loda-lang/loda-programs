@@ -5,12 +5,11 @@
 add $0,3
 lpb $0
   sub $0,3
-  div $3,5
   sub $0,$3
   mov $2,$0
   max $2,0
   seq $2,8617 ; Expansion of 1/((1-x^2)(1-x^7)).
   add $1,$2
-  mov $3,9
+  mov $3,1
 lpe
 mov $0,$1

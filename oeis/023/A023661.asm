@@ -1,9 +1,17 @@
 ; A023661: Convolution of odd numbers and A014306.
-; Submitted by Jamie Morken(w4)
+; Submitted by Saenger
 ; 0,1,4,8,13,20,29,40,53,67,82,99,118,139,162,187,214,243,274,306,339,374,411,450,491,534,579,626,675,726,779,834,891,950,1010,1071,1134,1199,1266,1335,1406,1479,1554,1631,1710,1791,1874,1959,2046
 
 mov $1,$0
-seq $1,23660 ; Convolution of odd numbers and A023533.
-add $0,1
-pow $0,2
-sub $0,$1
+add $1,1
+mov $2,$0
+lpb $2
+  sub $2,1
+  add $4,$3
+  mov $0,$1
+  sub $0,$2
+  seq $0,14306 ; a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
+  add $3,$0
+  add $4,$3
+lpe
+mov $0,$4

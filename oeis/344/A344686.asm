@@ -10,7 +10,7 @@ lpb $0
   add $1,$3
   trn $1,$2
 lpe
-pow $1,2
 mul $3,$0
+pow $1,2
 sub $1,$3
 mov $0,$1

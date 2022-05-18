@@ -1,5 +1,5 @@
 ; A028742: Nonsquares mod 29.
-; Submitted by dthonon
+; Submitted by Cruncher Pete
 ; 2,3,8,10,11,12,14,15,17,18,19,21,26,27
 
 mov $2,$0
@@ -20,6 +20,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,8
 div $0,4
-add $0,2

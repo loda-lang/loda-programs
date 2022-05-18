@@ -5,8 +5,8 @@
 lpb $0
   mov $2,$0
   seq $2,169646 ; Number of squarefree numbers of form k*n, 1 <= k <= n.
-  sub $0,1
   mul $2,2
+  sub $0,1
   add $1,$2
 lpe
 add $1,1
