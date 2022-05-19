@@ -1,0 +1,18 @@
+; A331007: Number of derangements of a set of n elements where 2 specific elements cannot appear in each other's positions.
+; Submitted by Skillz
+; 1,0,0,0,4,24,168,1280,10860,101976,1053136,11881152,145510740,1923678680,27313300344,414633520704,6702860119228,114974897260440,2085904412222880,39909278145297536,803157866412577956,16960527261105495192,375011130469825988680,8664636644578485432960
+
+mov $2,1
+lpb $0
+  sub $0,1
+  mov $5,$1
+  mov $1,$4
+  min $1,1
+  add $3,$0
+  mul $3,$4
+  mov $4,$2
+  add $4,$3
+  mov $2,$3
+  mov $3,$5
+lpe
+mov $0,$2
