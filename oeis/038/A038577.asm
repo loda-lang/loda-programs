@@ -8,7 +8,3 @@ sub $1,$0
 div $1,2
 pow $1,$1
 add $0,$1
-mov $2,2
-mul $2,$0
-mov $0,$2
-div $0,2

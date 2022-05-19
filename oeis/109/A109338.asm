@@ -2,8 +2,8 @@
 ; Submitted by Jamie Morken(s3)
 ; 1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,2,4,4,2,1
 
-seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 mov $1,2
+seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
 lpb $0
   trn $0,$1
   mul $1,2

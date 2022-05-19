@@ -1,5 +1,5 @@
 ; A010056: Characteristic function of Fibonacci numbers: a(n) = 1 if n is a Fibonacci number, otherwise 0.
-; Submitted by [AF] Kalianthys
+; Submitted by [TA]crashtech
 ; 1,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 
 trn $0,1
@@ -9,7 +9,6 @@ lpb $1
   mov $1,1
   mov $2,3
 lpe
-mov $0,$1
-mul $0,$2
+mov $0,$2
 add $0,1
 mod $0,2

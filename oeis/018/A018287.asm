@@ -1,10 +1,9 @@
 ; A018287: Divisors of 108.
-; Submitted by mmonnin
+; Submitted by emoga
 ; 1,2,3,4,6,9,12,18,27,36,54,108
 
 mov $2,1
 lpb $0
-  add $1,8
   mov $3,$2
   lpb $3
     add $2,1
@@ -16,6 +15,6 @@ lpb $0
   lpe
   add $2,1
   sub $0,1
-  mov $1,100
+  mov $1,108
 lpe
 mov $0,$2

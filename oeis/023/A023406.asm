@@ -1,5 +1,5 @@
 ; A023406: If any even power of 2 ends with k 1's and 6's, they must be the first k terms of this sequence in reverse order.
-; Submitted by emoga
+; Submitted by Skillz
 ; 6,1,6,1,1,1,6,1,6,1,6,6,1,6,6,6,6,6,6,1,6,1,1,1,6,6,6,6,6,6,6,6,1,6,6,1,6,6,6,6,6,1,1,1,1,6,6,1,6,1,1,6,1,1,6,1,1,6,1,1,1,1,6,1,1,6,1,6,6,6,1,1,6,6,6,1,6,6,6,1,1,1,1,1,6,1,1,6,6,6,1,6,1,6,6,1,6,1,6,6
 
 mov $2,1
@@ -16,11 +16,7 @@ lpb $0
   div $0,2
   add $1,$3
   mul $2,5
-  gcd $3,6
 lpe
 mov $0,$3
-mul $0,3
-sub $0,6
-div $0,3
-mul $0,5
 add $0,1
+mod $0,10

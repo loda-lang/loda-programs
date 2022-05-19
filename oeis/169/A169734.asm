@@ -1,18 +1,27 @@
 ; A169734: a(1) = 1000; for n>1, a(n) = a(n-1) + digitsum(a(n-1)).
-; Submitted by Jon Maiga
+; Submitted by Skillz
 ; 1000,1001,1003,1007,1015,1022,1027,1037,1048,1061,1069,1085,1099,1118,1129,1142,1150,1157,1171,1181,1192,1205,1213,1220,1225,1235,1246,1259,1276,1292,1306,1316,1327,1340,1348,1364,1378,1397,1417,1430,1438,1454
 
-mov $3,$0
-mov $4,2
-lpb $4
-  mov $0,$3
-  sub $4,2
+mov $6,$0
+mov $5,$0
+lpb $5
+  sub $5,1
+  add $6,$1
+  mov $0,$6
+  sub $0,$5
+  mul $1,0
+  mov $4,1
+  lpb $0
+    mov $2,$0
+    mod $2,10
+    div $0,10
+    add $4,$2
+  lpe
+  mov $0,5
   add $0,$4
-  trn $0,1
-  seq $0,229527 ; Start with 1, skip (sum of digits of n) numbers, accept next number.
-  mov $2,$0
+  mov $3,$0
+  sub $3,6
+  add $1,$3
 lpe
-min $3,1
-mul $3,$2
-mov $0,$3
+mov $0,$6
 add $0,1000

@@ -8,12 +8,11 @@ mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  mov $3,$5
-  mov $5,$4
   mov $0,$1
   sub $0,$2
   seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  add $0,$4
+  mov $4,$3
   add $3,$0
-  add $4,$3
 lpe
-mov $0,$4
+mov $0,$3

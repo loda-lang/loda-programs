@@ -1,6 +1,9 @@
 ; A099774: Number of divisors of 2*n-1.
-; Submitted by Jon Maiga
+; Submitted by Skillz
 ; 1,2,2,2,3,2,2,4,2,2,4,2,3,4,2,2,4,4,2,4,2,2,6,2,3,4,2,4,4,2,2,6,4,2,4,2,2,6,4,2,5,2,4,4,2,4,4,4,2,6,2,2,8,2,2,4,2,4,6,4,3,4,4,2,4,2,4,8,2,2,4,4,4,6,2,2,6,4,2,4,4,2,8,2,3,6,2,6,4,2,2,4,4,4,8,2,2,8,2,2
 
-mul $0,2
-seq $0,1227 ; Number of odd divisors of n.
+mul $0,4
+add $0,1
+mov $1,$0
+seq $1,38548 ; Number of divisors of n that are at most sqrt(n).
+mov $0,$1

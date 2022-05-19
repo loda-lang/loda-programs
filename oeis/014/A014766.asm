@@ -1,5 +1,5 @@
 ; A014766: Numbers k such that the 3k shuffle group does not accomplish a perfect shuffle.
-; Submitted by [TA]crashtech
+; Submitted by Skillz
 ; 9,12,24,27,36,48,60,72,81,84,96,108,120
 
 mov $4,1
@@ -8,7 +8,6 @@ lpb $4
   add $0,2
   mov $6,2
   lpb $6
-    cmp $6,1
     sub $0,1
     mov $2,1
     pow $5,10
@@ -23,6 +22,7 @@ lpb $4
       mul $2,3
       add $2,$1
       max $3,$2
+      mov $6,1
     lpe
   lpe
 lpe
