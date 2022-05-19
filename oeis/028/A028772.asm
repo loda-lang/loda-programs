@@ -1,9 +1,10 @@
 ; A028772: Nonsquares mod 59.
-; Submitted by mmonnin
+; Submitted by Xenon
 ; 2,6,8,10,11,13,14,18,23,24,30,31,32,33,34,37,38,39,40,42,43,44,47,50,52,54,55,56,58
 
 mov $2,$0
 add $2,2
+pow $1,$5
 pow $2,2
 lpb $2
   mov $3,$1

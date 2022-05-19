@@ -1,6 +1,19 @@
 ; A232617: Product of first n odd numbers plus product of first n even numbers: (2n-1)!! + (2n)!!, where k!! = A006882(k).
+; Submitted by Fardringle
 ; 3,11,63,489,4785,56475,780255,12348945,220253985,4370620275,95498916975,2278224696825,58917607974225,1641787169697675,49040157044253375,1563094742062478625,52953322446161762625,1899986948191060603875,71977860935783603175375,2870913642898706235455625
 
+mov $1,1
+mov $3,2
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  add $2,1
+  mul $1,$2
+lpe
+div $3,2
+mov $0,$3
 mul $0,2
 add $0,1
-seq $0,76051 ; Sum of product of odd numbers <= n and the product of even numbers <= n.

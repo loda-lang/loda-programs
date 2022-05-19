@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  mul $1,5
   add $3,1
+  mul $1,5
   add $1,$3
   add $1,$3
   add $2,$3

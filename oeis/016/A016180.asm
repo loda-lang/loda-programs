@@ -1,15 +1,5 @@
 ; A016180: Inverse of 2171st cyclotomic polynomial.
-; Submitted by Jon Maiga
+; Submitted by Skillz
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $2,$0
-div $0,2
-sub $0,6
-pow $1,0
-lpb $0,$2
-  div $0,23
-  bin $1,2
-  sub $2,9
-  gcd $2,2
-lpe
-mov $0,$1
+seq $0,15348 ; Inverse of 1339th cyclotomic polynomial.

@@ -1,17 +1,25 @@
 ; A103842: Triangle read by rows: row n is binary expansion of 2^n-n, n >= 1.
-; Submitted by Jon Maiga
+; Submitted by [TA]crashtech
 ; 1,1,0,1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
 
+mov $2,$1
+sub $2,$2
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
-  mov $3,$1
 lpe
-mov $1,2
-pow $1,$2
-div $3,$1
-mov $0,$3
+sub $0,$1
+add $1,$0
+sub $1,$0
+dif $0,-1
+mod $0,40
+mov $3,$2
+lpb $0
+  sub $0,1
+  div $1,2
+lpe
+mov $0,$1
+add $0,4
+sub $3,1
 add $0,1
 mod $0,2

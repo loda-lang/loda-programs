@@ -1,10 +1,9 @@
 ; A107078: Whether n has non-unitary prime divisors.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by emoga
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,1,1
 
-mov $2,$0
-seq $2,71325 ; Number of squares > 1 dividing n.
-cmp $2,0
-mov $1,$2
-cmp $1,0
+seq $0,71325 ; Number of squares > 1 dividing n.
+bin $1,$0
 mov $0,$1
+add $0,1
+mod $0,2

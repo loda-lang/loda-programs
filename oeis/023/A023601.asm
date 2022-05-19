@@ -1,25 +1,16 @@
 ; A023601: Convolution of A023532 and odd numbers.
+; Submitted by Simon Strandgaard
 ; 1,3,6,11,17,24,33,44,56,69,84,101,120,140,161,184,209,236,265,295,326,359,394,431,470,511,553,596,641,688,737,788,841,896,952,1009,1068,1129,1192,1257,1324,1393,1464,1536,1609,1684,1761,1840,1921
 
-mov $2,$0
-add $2,1
+add $0,1
+mov $2,1
 mov $3,$0
-lpb $2
-  mov $0,$3
-  sub $2,1
-  sub $0,$2
-  mov $4,$0
-  add $4,1
-  mov $5,$0
-  mov $6,0
-  lpb $4
-    mov $0,$5
-    sub $4,1
-    sub $0,$4
-    seq $0,136157 ; Triangle by columns, (3, 1, 0, 0, 0, ...) in every column.
-    gcd $0,2
-    add $6,$0
-  lpe
-  add $1,$6
+pow $3,2
+lpb $3
+  mov $1,$2
+  seq $1,152271 ; a(n)=1 for even n and (n+1)/2 for odd n.
+  sub $0,$1
+  add $2,1
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$3

@@ -1,14 +1,12 @@
 ; A181747: Odd noncomposite numbers that are the difference of 2 primes.
-; Submitted by mmonnin
+; Submitted by Skillz
 ; 1,3,5,11,17,29,41,59,71,101,107,137,149,179,191,197,227,239,269,281,311,347,419,431,461,521,569,599,617,641,659,809,821,827,857,881,1019,1031,1049,1061,1091,1151,1229,1277,1289,1301,1319,1427,1451,1481,1487,1607
 
-sub $0,1
+mul $0,2
 mov $1,$0
 min $1,1
-sub $1,1
-trn $0,1
-mul $0,2
+trn $0,3
 seq $0,171688 ; Twin primes > 3.
+sub $0,4
 add $0,$1
-add $1,$0
-mov $0,$1
+add $0,$1

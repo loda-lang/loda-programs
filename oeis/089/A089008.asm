@@ -1,21 +1,21 @@
 ; A089008: Numbers k such that 18*k^2 + 1 is prime.
-; Submitted by Jamie Morken(w3)
+; Submitted by Skivelitis2
 ; 1,2,3,7,8,9,10,11,12,14,15,22,24,25,29,31,32,33,34,35,41,44,45,51,52,54,59,62,63,67,68,73,76,79,80,85,88,91,95,99,100,102,107,108,109,117,119,120,122,125,129,131,133,135,139,141,142,143,147,150,152,154,156,158,161,162,163,164,168,173,179,185,186,188,190,195,196,199,202,207,211,212,216,219,222,231,233,235,245,250,252,253,254,255,256,261,262,264,266,271
 
-mov $2,332202
-lpb $2
-  mov $3,$6
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $5,$1
-  add $1,18
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,$1
-  mov $6,$5
+add $0,1
+mov $4,2
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  mul $1,9
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,4
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$1
-div $0,18
+mov $0,$4
+div $0,4
+add $0,1

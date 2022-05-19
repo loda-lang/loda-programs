@@ -1,10 +1,9 @@
 ; A105502: Numbers m such that 2 is the leading digit of the n-th Fibonacci number in decimal representation.
-; Submitted by Cruncher Pete
+; Submitted by Skillz
 ; 3,8,13,18,23,32,37,42,47,51,56,61,66,75,80,85,90,99,104,109,114,118,123,128,133,142,147,152,157,166,171,176,185,190,195,200,209,214,219,224,233,238,243,252,257,262,267,276,281,286,291,295,300,305,310,319
 
-mov $2,$0
-add $2,2
-pow $2,2
+mov $2,14161
+add $2,$4
 lpb $2
   mov $3,$1
   seq $3,8963 ; Initial digit of Fibonacci number F(n).

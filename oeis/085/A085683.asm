@@ -1,7 +1,7 @@
 ; A085683: a(n) = Sum_{k = 1..N-1} floor(N/k) where N is the n-th prime.
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 2,4,9,15,28,36,51,59,75,102,112,141,159,169,187,218,248,262,293,313,327,357,378,412,460,483,493,515,529,553,636,658,696,706,767,781,821,857,877,918,952,972,1032,1048,1071,1085,1167,1239,1266,1280,1306,1342,1364,1422,1467,1503,1543,1561,1603,1631,1641,1708,1806,1832,1850,1874,1975,2017,2081,2095,2129,2161,2224,2266,2312,2334,2376,2440,2469,2527,2591,2617,2677,2699,2735,2770,2810,2872,2898,2916,2940,3024,3091,3117,3177,3199,3249,3341,3355,3494
 
 seq $0,40 ; The prime numbers.
-seq $0,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
-sub $0,2
+seq $0,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
+sub $0,1

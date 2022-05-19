@@ -5,10 +5,6 @@
 mul $0,2
 trn $0,1
 seq $0,171688 ; Twin primes > 3.
-mov $1,$0
-add $1,$0
-mov $0,$1
-sub $0,2
-mul $0,$1
-div $0,4
+bin $0,2
+mul $0,2
 sub $0,1

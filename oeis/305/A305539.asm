@@ -1,15 +1,13 @@
 ; A305539: a(n) is a generalized pentagonal number such that 2*a(n) is also a generalized pentagonal number.
-; Submitted by Jamie Morken(w1)
+; Submitted by Fardringle
 ; 0,1,35,1190,40426,1373295,46651605,1584781276,53835911780,1828836219245,62126595542551,2110475412227490,71694037420192110,2435486796874304251,82734857056306152425,2810549653117534878200,95475953348939879706376,3243371864210838375138585
 
-mov $3,1
 lpb $0
   sub $0,1
   mov $1,$3
-  mul $1,4
+  mul $1,32
+  add $2,1
   add $2,$1
   add $3,$2
 lpe
-pow $3,2
 mov $0,$3
-div $0,24

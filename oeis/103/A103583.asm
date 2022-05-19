@@ -1,7 +1,9 @@
 ; A103583: Same as A103582, but read antidiagonals in upward direction.
-; Submitted by [AF] Kalianthys
+; Submitted by Skillz
 ; 1,1,0,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1
 
+mov $2,$1
+sub $2,$2
 lpb $0
   add $1,1
   sub $0,$1
@@ -9,10 +11,16 @@ lpe
 sub $0,$1
 add $1,$0
 dif $0,-1
+mod $0,40
 lpb $0
   sub $0,1
   div $1,2
 lpe
 mov $0,$1
+sub $0,2
+add $0,4
+mod $0,2
 add $0,1
+mod $0,2
+add $0,2
 mod $0,2
