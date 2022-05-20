@@ -1,0 +1,17 @@
+; A351364: Number of necklaces with n black and n white beads that avoid the pattern BBBB.
+; Submitted by Fardringle
+; 1,2,4,9,21,59,162,483,1453,4492,14048,44616,142936,462380,1506534,4941955,16303783,54066560,180111432,602481589,2022797529,6814336663,23026359634,78027238290,265085903996,902733374480,3080967048004,10536594982790,36102498293396,123920278459564
+
+mov $1,$0
+add $1,1
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$1
+  gcd $0,$2
+  seq $0,5725 ; Quadrinomial coefficients.
+  add $3,$0
+lpe
+div $3,$1
+mov $0,$3
