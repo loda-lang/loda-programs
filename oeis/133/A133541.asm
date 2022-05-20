@@ -1,19 +1,25 @@
 ; A133541: Sum of fifth powers of five consecutive primes.
-; Submitted by Jon Maiga
+; Submitted by [TA]crashtech
 ; 181258,552519,1972133,4445107,10864643,31214741,59472599,127396699,240776801,381348901,590182759,979749101,1625329443,2354069543,3557186207,5132070551,6786946651,9149078751,12243523093,16477457435
 
-mov $3,5
 mov $4,$0
+mov $3,6
+sub $3,1
 lpb $3
-  mov $0,$4
   sub $3,1
+  mov $0,$4
   add $0,$3
   max $0,0
   seq $0,153484 ; a(n) = prime(n)^5 - 128.
-  cmp $2,$3
-  add $2,1
+  mov $2,10
   mul $2,$0
   add $1,$2
 lpe
 mov $0,$1
-add $0,640
+div $0,10
+add $0,2560
+sub $0,1024
+sub $0,1152
+sub $0,128
+add $0,256
+add $0,128

@@ -1,8 +1,7 @@
 ; A015426: Inverse of 1417th cyclotomic polynomial.
-; Submitted by Skillz
+; Submitted by biodoc
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,15478 ; Inverse of 1469th cyclotomic polynomial.
-sub $0,3
-mod $0,2
-add $0,1
+seq $0,15348 ; Inverse of 1339th cyclotomic polynomial.
+mul $0,10
+div $0,6

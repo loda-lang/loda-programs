@@ -1,10 +1,21 @@
 ; A015660: Inverse of 1651st cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by ichxorya
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,15790 ; Inverse of 1781st cyclotomic polynomial.
+add $0,1
+mul $0,2
 lpb $0
-  div $0,5
-  add $1,1
+  sub $0,1
+  sub $1,1
+  add $3,2
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+  sub $2,3
 lpe
-mov $0,$1
+add $4,$3
+mul $3,$1
+gcd $3,$1
+div $4,$3
+mov $0,$4
+add $0,2

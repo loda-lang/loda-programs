@@ -4,7 +4,8 @@
 
 mov $4,$0
 mov $3,2
-add $3,$5
+cmp $6,$1
+add $3,1
 lpb $3
   div $3,2
   mov $0,$4
@@ -12,9 +13,17 @@ lpb $3
   seq $0,98842 ; Number of n-digit Fibonacci numbers.
   mov $2,$3
   mul $2,$0
-  mov $7,1
+  mul $4,$3
   add $1,$2
   mov $5,$0
 lpe
 sub $1,$5
+mov $0,$1
+mov $7,$6
+sub $0,8
+div $4,$6
+mov $0,$1
+mov $0,$1
+sub $0,2
+div $0,2
 mov $0,$1

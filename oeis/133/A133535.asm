@@ -1,22 +1,26 @@
 ; A133535: Sum of fourth powers of two consecutive primes.
-; Submitted by Jamie Morken(s2)
+; Submitted by [TA]crashtech
 ; 97,706,3026,17042,43202,112082,213842,410162,987122,1630802,2797682,4699922,6244562,8298482,12770162,20007842,25963202,33996962,45562802,53809922,67348322,86408402,110200562,151271522,192589682,216611282
 
 mov $3,2
-mov $5,$0
 lpb $3
-  mov $0,$5
   sub $3,1
   add $0,$3
-  max $0,0
-  seq $0,153482 ; a(n) = prime(n)^4 - 8.
+  mov $5,$0
+  max $5,0
+  seq $5,172191 ; a(n) = 2*prime(n)^4.
+  sub $0,1
   mov $2,$3
-  cmp $2,$3
-  mov $4,$0
-  mul $4,8
-  mul $2,$4
+  mul $2,$5
+  mov $4,$5
   add $1,$2
+  mov $6,5
 lpe
-div $1,8
+min $6,1
+sub $6,2
+mul $6,$4
+sub $1,$6
 mov $0,$1
-add $0,16
+sub $0,194
+div $0,2
+add $0,97
