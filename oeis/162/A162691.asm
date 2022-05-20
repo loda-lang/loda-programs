@@ -2,8 +2,7 @@
 ; Submitted by Skillz
 ; 8,12,24,40,48,72,120,168,264,552
 
-mov $2,1
-add $0,5
+mov $2,8
 lpb $0
   mov $3,$2
   lpb $3

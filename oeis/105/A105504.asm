@@ -1,8 +1,9 @@
 ; A105504: Numbers m such that 4 is the leading digit of the n-th Fibonacci number in decimal representation.
-; Submitted by mmonnin
+; Submitted by [AF] Kalianthys
 ; 19,24,43,48,62,67,72,86,91,110,115,129,134,153,158,177,182,196,201,220,225,244,249,263,268,287,292,311,316,330,335,354,359,373,378,383,397,402,421,426,440,445,450,464,469,488,493,507,512,517,531,536,555,560
 
 mov $2,14161
+add $2,2
 lpb $2
   mov $3,$1
   seq $3,8963 ; Initial digit of Fibonacci number F(n).

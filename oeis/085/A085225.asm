@@ -7,8 +7,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,80237 ; Start with 1 and apply the process: k-th run is 1, 2, 3, ..., a(k-1)+1.
-  add $1,$2
   add $1,1
+  add $1,$2
 lpe
+add $1,1
 mov $0,$1
-add $0,1

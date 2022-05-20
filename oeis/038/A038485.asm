@@ -4,7 +4,3 @@
 
 seq $0,14311 ; Numbers with exactly 3 ones in binary expansion.
 seq $0,33045 ; Sums of distinct powers of 8.
-mul $0,2
-sub $0,26
-div $0,2
-add $0,13

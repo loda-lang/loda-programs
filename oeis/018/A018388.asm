@@ -1,5 +1,5 @@
 ; A018388: Divisors of 315.
-; Submitted by emoga
+; Submitted by Skillz
 ; 1,3,5,7,9,15,21,35,45,63,105,315
 
 mov $1,-1
@@ -18,6 +18,7 @@ lpb $2
   mov $4,$0
   max $4,0
   cmp $4,$0
+  sub $2,$3
   mul $2,$4
   sub $2,1
 lpe

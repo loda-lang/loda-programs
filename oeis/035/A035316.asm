@@ -1,5 +1,26 @@
 ; A035316: Sum of the square divisors of n.
+; Submitted by Skillz
 ; 1,1,1,5,1,1,1,5,10,1,1,5,1,1,1,21,1,10,1,5,1,1,1,5,26,1,10,5,1,1,1,21,1,1,1,50,1,1,1,5,1,1,1,5,10,1,1,21,50,26,1,5,1,10,1,5,1,1,1,5,1,1,10,85,1,1,1,5,1,1,1,50,1,1,26,5,1,1,1,21,91,1,1,5,1,1,1,5,1,10,1,5,1,1,1,21,1,50,10,130
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+add $0,1
+mov $3,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  mul $6,$5
+  add $1,$6
+  mov $5,$0
+  add $5,1
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
+lpe
+mov $0,$1
+add $0,1

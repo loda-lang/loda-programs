@@ -1,9 +1,9 @@
 ; A143110: Triangle read by rows, A051731 * A000034 * 0^(n-k), 1<=k<=n.
-; Submitted by Christian Krause
+; Submitted by [TA]crashtech
 ; 1,1,2,1,0,1,1,2,0,2,1,0,0,0,1,1,2,1,0,0,2,1,0,0,0,0,0,1,1,2,0,2,0,0,0,2,1,0,1,0,0,0,0,0,1,1,2,0,0,1,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,1,1,2,1,2,0,2,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,1,0,0
 
 seq $0,176079 ; Triangle T(n,k) read by rows: If k divides n then k-1, otherwise -1.
-lpb $0
-  sub $0,2
-lpe
-add $0,1
+mov $1,2
+pow $1,$0
+mod $1,3
+mov $0,$1

@@ -4,7 +4,4 @@
 
 seq $0,45156 ; Numbers n with property that in base 4 representation the numbers of 2's and 3's are 4 and 3, respectively.
 seq $0,5836 ; Numbers whose base 3 representation contains no 2.
-mul $0,2
-sub $0,26
-div $0,2
-sub $0,1793600
+sub $0,1793613

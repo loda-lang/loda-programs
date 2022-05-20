@@ -1,8 +1,9 @@
 ; A034105: Numbers n such that fractional part of square root of n starts with digit 9.
-; Submitted by Skillz
+; Submitted by [AF] Kalianthys
 ; 35,48,63,80,99,119,120,142,143,167,168,194,195,223,224,253,254,255,286,287,288,321,322,323,358,359,360,397,398,399,437,438,439,440,480,481,482,483,525,526,527,528,572,573,574,575,621,622,623,624,671,672
 
 mov $2,$0
+add $1,1
 add $0,6
 add $2,8
 pow $2,2

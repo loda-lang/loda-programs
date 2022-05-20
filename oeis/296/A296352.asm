@@ -1,8 +1,9 @@
 ; A296352: List of numbers k such that the determinant of the Unordered Lights Out matrix UBL_k is nonzero.
-; Submitted by [AF] Kalianthys
+; Submitted by Skillz
 ; 3,4,7,8,9,11,13,14,16,17,19,21,22,23,26,27,28,29,31,32,33,34,37,38,39,41,43,44,46,47,49,51,52,53,56,57,58,59,61,62,63,64,67,68,69,71,73,74,76,77,79,81,82,83,86,87,88,89,91,92,93,94,97,98,99,101,103
 
 mov $4,1
+mov $1,1
 mov $2,$0
 add $2,2
 pow $2,2

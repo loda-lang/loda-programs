@@ -11,7 +11,7 @@ lpb $0
   seq $2,43752 ; Numbers n such that number of runs in the base 2 representation of n is congruent to 6 mod 8.
   mov $1,-9
   add $1,$2
-  mov $3,8
+  mov $3,6
   pow $3,$1
 lpe
 mov $0,$1

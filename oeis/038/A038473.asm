@@ -1,0 +1,10 @@
+; A038473: Sums of 5 distinct powers of 4.
+; Submitted by Skillz
+; 341,1109,1301,1349,1361,1364,4181,4373,4421,4433,4436,5141,5189,5201,5204,5381,5393,5396,5441,5444,5456,16469,16661,16709,16721,16724,17429,17477,17489,17492,17669,17681,17684,17729,17732,17744,20501
+
+add $0,175
+seq $0,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
+seq $0,145850 ; a(n) = A145818(2n-1).
+sub $0,4195664
+div $0,16
+sub $0,3932075

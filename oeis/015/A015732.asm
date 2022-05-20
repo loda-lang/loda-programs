@@ -6,16 +6,13 @@ mov $1,7
 mov $2,$0
 pow $2,5
 lpb $2
+  sub $2,1
   mov $3,$1
   seq $3,279288 ; a(n) = denominator of (phi(n)/tau(n)).
   cmp $3,1
   sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
   add $1,2
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
 add $0,1

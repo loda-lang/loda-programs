@@ -5,14 +5,10 @@
 lpb $0
   add $2,1
   sub $0,$2
-  mov $1,$0
 lpe
-mov $0,$2
-sub $0,$1
-bin $2,-1
-sub $2,2
-add $2,$0
+mov $1,$2
+cmp $1,$0
+add $0,1
 bin $2,$0
-add $1,1
-mul $1,$2
-mov $0,$1
+sub $1,$2
+div $0,$1

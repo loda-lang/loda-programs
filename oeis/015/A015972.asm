@@ -1,23 +1,34 @@
 ; A015972: Inverse of 1963rd cyclotomic polynomial.
-; Submitted by emoga
+; Submitted by Fardringle
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,1
-mov $2,1
 add $0,1
-mul $0,2
-lpb $0
+mov $2,-10
+mov $3,$0
+pow $0,2
+mul $3,5
+lpb $3
+  mov $5,$3
+  mul $5,2
   sub $0,1
-  sub $1,4
-  add $2,3
-  mul $3,$2
-  add $3,1
-  add $3,$1
-  mul $1,$2
+  mul $2,$3
+  mul $2,$5
+  mov $4,$0
+  cmp $4,0
+  add $0,$4
+  add $1,$2
+  div $1,$0
+  div $2,$0
+  mov $4,$0
+  sub $0,53
+  sub $3,1
 lpe
-add $4,$3
-mul $3,$1
-gcd $3,$1
-div $4,$3
-mov $0,$4
+div $2,12
+add $2,$4
+mul $1,4
+div $1,$2
+mov $0,$1
 add $0,1
+mod $0,2
+add $0,2
+mod $0,2
