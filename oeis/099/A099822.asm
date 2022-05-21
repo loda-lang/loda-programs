@@ -1,11 +1,20 @@
 ; A099822: Bisection of A005117.
-; Submitted by Jon Maiga
+; Submitted by emoga
 ; 1,3,6,10,13,15,19,22,26,30,33,35,38,41,43,47,53,57,59,62,66,69,71,74,78,82,85,87,91,94,97,102,105,107,110,113,115,119,123,129,131,134,138,141,143,146,151,155,158,161,165,167,173,177,179,182,185,187,191,194
 
-mov $1,1
-mul $0,12
-lpb $0
-  sub $0,6
-  seq $1,67535 ; Smallest squarefree number >= n.
+mul $0,2
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
+add $0,1

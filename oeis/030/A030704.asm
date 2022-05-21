@@ -1,10 +1,9 @@
 ; A030704: Numbers k such that the decimal expansion of 8^k contains no zeros (probably finite).
-; Submitted by Skillz
+; Submitted by [AF>Occitania]franky82
 ; 0,1,2,3,5,6,8,9,11,12,13,17,24,27
 
 mov $1,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1

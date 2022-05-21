@@ -1,5 +1,5 @@
 ; A028755: Nonsquares mod 42.
-; Submitted by Skillz
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,3,5,6,8,10,11,12,13,14,17,19,20,23,24,26,27,29,31,32,33,34,35,38,40,41
 
 mov $4,21
@@ -8,8 +8,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,164489 ; Number of binary strings of length n with no substrings equal to 0001 1011 or 1100
+  seq $3,58365 ; Number of ways to cover (without overlapping) a ring lattice (necklace) of n sites with molecules that are 8 sites wide.
   gcd $3,2
+  sub $4,1
   sub $0,$3
   add $0,1
   add $1,$4
@@ -21,6 +22,6 @@ lpb $2
   add $4,3
 lpe
 mov $0,$1
-sub $0,25
-div $0,4
+sub $0,26
+div $0,3
 add $0,2

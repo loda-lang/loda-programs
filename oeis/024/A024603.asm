@@ -1,18 +1,20 @@
 ; A024603: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = (odd natural numbers), t = (primes).
-; Submitted by Jamie Morken(l1)
+; Submitted by vanos0512
 ; 2,3,14,22,57,81,160,212,355,429,662,794,1147,1329,1822,2092,2759,3109,3978,4376,5469,6001,7346,7938,9567,10287,12236,13148,15437,16491,19148,20314,23391,24679,28202,29768,33777,35493,40018,41972,47047,49343,55004
 
 mov $1,$0
+add $1,1
 div $0,2
 mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  add $4,$3
+  mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,40 ; The prime numbers.
+  seq $0,15919 ; Positive integers n such that 2^n == 2 (mod n).
   add $3,$0
   add $4,$3
 lpe
-mov $0,$4
+add $5,$4
+mov $0,$5

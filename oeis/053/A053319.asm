@@ -1,8 +1,36 @@
 ; A053319: Distance between the smaller members of successive twin prime pairs.
-; Submitted by Michael Goetz
+; Submitted by emoga
 ; 2,6,6,12,12,18,12,30,6,30,12,30,12,6,30,12,30,12,30,36,72,12,30,60,48,30,18,24,18,150,12,6,30,24,138,12,18,12,30,60,78,48,12,12,18,108,24,30,6,120,12,48,30,24,66,84,6,54,18,48,30,54,6,24,18,12,96,30,42,30,42,168,42,66,30,24,18,60,12,168,30,120,48,84,6,42,30,30,12,18,72,6,60,12,18,24,90,96,54,30
 
-seq $0,204099 ; Number of integers between successive twin prime pairs.
-add $0,3
-div $0,2
-mul $0,2
+mov $4,$0
+add $4,$6
+mov $3,2
+add $6,2
+cmp $6,$1
+add $3,1
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  mul $10,2
+  seq $0,14574 ; Average of twin prime pairs.
+  mov $9,$8
+  pow $7,2
+  mov $2,$3
+  mul $2,$0
+  mov $9,1
+  mul $4,$3
+  add $1,$2
+  mov $5,$0
+lpe
+sub $1,$5
+add $1,1
+mov $7,$6
+sub $0,8
+sub $0,3
+mov $0,$1
+mov $0,$1
+mov $9,$7
+mov $0,$1
+sub $0,3
+add $0,2

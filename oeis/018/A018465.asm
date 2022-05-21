@@ -1,11 +1,11 @@
 ; A018465: Divisors of 456.
-; Submitted by Skillz
+; Submitted by planetclown
 ; 1,2,3,4,6,8,12,19,24,38,57,76,114,152,228,456
 
 mov $2,1
 lpb $0
-  mul $1,6
-  bin $1,2
+  mul $1,12
+  bin $1,4
   mov $3,$2
   lpb $3
     add $2,1

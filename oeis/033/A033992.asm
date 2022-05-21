@@ -1,8 +1,6 @@
 ; A033992: Numbers that are divisible by exactly three different primes.
-; Submitted by [SG-FC] hl
+; Submitted by [TA]crashtech
 ; 30,42,60,66,70,78,84,90,102,105,110,114,120,126,130,132,138,140,150,154,156,165,168,170,174,180,182,186,190,195,198,204,220,222,228,230,231,234,238,240,246,252,255,258,260,264,266,270,273,276,280,282,285,286,290,294,300,306,308,310,312,315,318,322,336,340,342,345,348,350,354,357,360,364,366,370,372,374,378,380,385,396,399,402,406,408,410,414,418,426,429,430,434,435,438,440,442,444,450,455
 
 add $0,1
-mov $1,$0
-seq $1,214195 ; Numbers with the number of distinct prime factors a multiple of 3.
-mov $0,$1
+seq $0,214195 ; Numbers with the number of distinct prime factors a multiple of 3.

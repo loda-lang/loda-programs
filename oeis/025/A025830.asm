@@ -1,20 +1,16 @@
 ; A025830: Expansion of 1/((1-x^3)(1-x^4)(1-x^8)).
-; Submitted by Christian Krause
+; Submitted by biodoc
 ; 1,0,0,1,1,0,1,1,2,1,1,2,3,1,2,3,4,2,3,4,5,3,4,5,7,4,5,7,8,5,7,8,10,7,8,10,12,8,10,12,14,10,12,14,16,12,14,16,19,14,16,19,21,16,19,21,24,19,21,24,27,21,24,27,30,24
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,29034 ; Expansion of 1/((1-x)(1-x^3)(1-x^4)(1-x^8)).
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+add $0,3
+lpb $0
+  sub $0,3
+  sub $0,$3
+  mov $2,$0
+  mul $2,3
+  max $2,0
+  seq $2,33183 ; a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
+  mov $3,5
+  add $1,$2
 lpe
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
+mov $0,$1

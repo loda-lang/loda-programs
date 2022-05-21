@@ -4,19 +4,18 @@
 
 mov $1,$0
 add $1,2
-trn $5,$0
 div $0,2
 mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  mov $3,$5
   mov $5,$4
   mov $0,$1
   sub $0,$2
   seq $0,15919 ; Positive integers n such that 2^n == 2 (mod n).
   add $3,$0
   add $4,$3
+  mov $3,$5
 lpe
-add $5,$4
-mov $0,$5
+add $4,$5
+mov $0,$4

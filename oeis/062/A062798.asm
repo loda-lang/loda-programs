@@ -11,8 +11,8 @@ lpb $0
   cmp $3,0
   mul $3,$0
   mov $4,$0
-  sub $0,1
   div $4,2
+  sub $0,1
   bin $3,$4
   add $1,$3
 lpe

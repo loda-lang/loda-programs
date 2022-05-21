@@ -1,5 +1,5 @@
 ; A096952: Numerators of upper bounds for Lagrange remainder in Taylor's expansion of log((1+x)/(1-x)) for x=1/3, multiplied by 6/5.
-; Submitted by Skillz
+; Submitted by mmonnin
 ; 1,7,11,463,4039,35839,320503,575267,25854247,232557151,298927153,18830313487,6778577311,1525146340543,13726182847159,123535108753519,1111813831298023,2001263178349523,90056808665990167,810511140554958031
 
 mov $2,$0
@@ -9,6 +9,4 @@ seq $0,138233 ; 2^(2*n+1) + 3^(2*n+1).
 mov $1,$0
 gcd $1,$2
 div $0,$1
-sub $0,5
 div $0,5
-add $0,1

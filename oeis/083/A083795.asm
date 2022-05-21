@@ -1,6 +1,21 @@
 ; A083795: Numbers n such that n and n-1 have the same number of divisors. Numbers not included in A083794.
-; Submitted by Fardringle
+; Submitted by arkiss
 ; 3,15,22,27,34,35,39,45,58,76,86,87,94,95,99,105,117,119,123,134,136,142,143,146,148,159,172,178,190,202,203,206,214,215,218,219,231,232,243,244,245,254,286,297,299,302,303,327,333,335,345,375,376,382,388,394,395,430,435,446,447,454,482,502,508,515,527,538,543,549,554,566,604,605,610,623,634,635,646,664,665,695,698,699,707,718,725,736,742,746,767,777,779,783,794,803,806,818,820,843
 
-seq $0,5237 ; Numbers n such that n and n+1 have the same number of divisors.
-add $0,1
+mov $1,1
+mov $2,$0
+add $2,14
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,130638 ; a(n) = 1 iff d(n) = d(n+1), otherwise a(n)=0, where d(n) is the number of divisors of n, A000005.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,2

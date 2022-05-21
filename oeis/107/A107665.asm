@@ -1,9 +1,9 @@
 ; A107665: Numbers with semiprime digits (digits 4, 6, 9 only).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 4,6,9,44,46,49,64,66,69,94,96,99,444,446,449,464,466,469,494,496,499,644,646,649,664,666,669,694,696,699,944,946,949,964,966,969,994,996,999,4444,4446,4449,4464,4466,4469,4494,4496,4499,4644,4646,4649,4664
 
-add $0,1
 mov $3,1
+add $0,1
 lpb $0
   mov $2,$0
   sub $0,1
@@ -11,12 +11,11 @@ lpb $0
   add $2,5
   mod $2,3
   add $2,2
-  bin $2,2
-  mul $2,3
-  add $2,9
+  mul $2,5
+  div $2,2
+  sub $2,1
   mul $2,$3
   add $1,$2
   mul $3,10
 lpe
 mov $0,$1
-div $0,3
