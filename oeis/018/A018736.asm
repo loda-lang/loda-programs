@@ -1,5 +1,5 @@
 ; A018736: Divisors of 945.
-; Submitted by [DPC] hansR
+; Submitted by arkiss
 ; 1,3,5,7,9,15,21,27,35,45,63,105,135,189,315,945
 
 lpb $0
@@ -20,6 +20,4 @@ lpb $0
   mov $1,104
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
 add $0,1

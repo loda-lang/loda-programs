@@ -1,10 +1,10 @@
 ; A040727: Continued fraction for sqrt(755).
+; Submitted by Fardringle
 ; 27,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10,2,54,2,10
 
-seq $0,40270 ; Continued fraction for sqrt(287).
-seq $0,3188 ; Decimal equivalent of Gray code for n.
-add $0,1
-mov $1,20
-mul $1,$0
-div $1,18
-mov $0,$1
+seq $0,40304 ; Continued fraction for sqrt(322).
+sub $0,1
+mul $0,8
+div $0,5
+dif $0,3
+add $0,2

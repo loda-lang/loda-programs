@@ -11,6 +11,5 @@ mov $1,2
 pow $1,$2
 div $0,$2
 mul $0,$1
-sub $0,6
-div $0,3
-add $0,2
+div $0,6
+mul $0,2

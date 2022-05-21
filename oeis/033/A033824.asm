@@ -1,4 +1,5 @@
 ; A033824: Finite sequence associated with M24.
+; Submitted by Sphynx
 ; 24,16,12,10,8,8,6,6,4,4,4,2
 
 pow $0,2
@@ -13,7 +14,6 @@ lpb $0
   sub $1,72
   div $2,2
 lpe
-sub $1,8402
 div $1,36
-add $1,4
 mov $0,$1
+sub $0,229

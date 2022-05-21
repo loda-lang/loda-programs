@@ -1,29 +1,28 @@
 ; A010485: Decimal expansion of square root of 30.
-; Submitted by Simon Strandgaard
+; Submitted by fzs600
 ; 5,4,7,7,2,2,5,5,7,5,0,5,1,6,6,1,1,3,4,5,6,9,6,9,7,8,2,8,0,0,8,0,2,1,3,3,9,5,2,7,4,4,6,9,4,9,9,7,9,8,3,2,5,4,2,2,6,8,9,4,4,4,9,7,3,2,4,9,3,2,7,7,1,2,2,7,2,2,7,3,3,8,0,0,8,5,8,4,3,6,1,6,3,8,7,0,6,2,5,7
 
-add $0,1
+mov $2,1
 mov $3,$0
-mul $3,3
+mul $3,4
 lpb $3
-  sub $3,1
-  mov $1,3
-  add $1,$6
-  add $1,$2
-  mov $2,$5
-  add $2,$1
-  mul $2,2
-  add $6,$1
-  mov $1,$6
-  mul $1,2
-  mov $5,$1
+  sub $3,2
   add $5,$2
-  add $6,$5
+  add $1,$5
+  mov $2,$1
+  mul $2,10
+  sub $5,$2
+  mul $2,3
 lpe
 mov $4,10
 pow $4,$0
-mul $2,2
+mul $5,15
 div $2,$4
+mov $1,6
+add $1,$5
 div $1,$2
 mov $0,$1
+sub $0,1
+mod $0,10
+add $0,10
 mod $0,10

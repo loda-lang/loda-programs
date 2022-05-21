@@ -1,10 +1,9 @@
 ; A030706: Decimal expansion of 11^n contains no zeros (probably finite).
-; Submitted by Skillz
+; Submitted by [AF>Occitania]franky82
 ; 0,1,2,3,4,6,7,8,9,12,13,14,15,16,18,41
 
 mov $1,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1

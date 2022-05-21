@@ -4,19 +4,10 @@
 
 mov $1,$0
 add $1,1
-div $0,2
-mov $2,$0
-add $2,1
+mov $2,1
 lpb $2
   mov $2,0
-  add $4,$3
   mov $0,$1
-  sub $0,$2
   seq $0,144551 ; a(n) = nonprime(n)*nonprime(n+1)/2, where nonprime(n) = A141468(n).
-  add $3,$0
-  add $4,$3
 lpe
-mov $0,$4
-sub $0,2
 mul $0,2
-add $0,4
