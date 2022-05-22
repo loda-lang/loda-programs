@@ -1,29 +1,7 @@
 ; A326990: Sum of odd divisors of n that are greater than 1.
-; Submitted by [AF] Kalianthys
+; Submitted by biodoc
 ; 0,0,3,0,5,3,7,0,12,5,11,3,13,7,23,0,17,12,19,5,31,11,23,3,30,13,39,7,29,23,31,0,47,17,47,12,37,19,55,5,41,31,43,11,77,23,47,3,56,30,71,13,53,39,71,7,79,29,59,23,61,31,103,0,83,47,67,17,95,47,71,12,73,37,123,19,95,55,79,5
 
-mov $1,4
-mov $2,3
-add $0,1
-lpb $0
-  mov $3,$0
-  sub $3,4
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,2
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-    add $5,1
-  lpe
-  mul $1,$5
-lpe
-mov $0,$1
-sub $0,4
-div $0,4
+seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+seq $0,8438 ; Sum of divisors of 2*n + 1.
+sub $0,1

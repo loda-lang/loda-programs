@@ -1,11 +1,15 @@
 ; A293838: "Look once to the left" sequence starting with 1,2 (see comment).
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,2,1,2,1,2
 
-lpb $0
-  sub $0,2
-  mov $2,$0
-  max $2,0
-  seq $2,92323 ; 2^m - 1 appears 2^m times.
-  sub $0,$2
+mov $1,$0
+lpb $1
+  sub $1,2
+  mov $2,1
+  lpb $1
+    sub $1,$2
+    mul $2,2
+  lpe
 lpe
+mov $0,$1
 add $0,1

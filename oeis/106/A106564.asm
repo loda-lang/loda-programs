@@ -5,6 +5,4 @@
 seq $0,106571 ; Indices n of perfect squares n^2 which are not the difference of two primes.
 mul $0,18
 pow $0,2
-sub $0,8100
 div $0,324
-add $0,25

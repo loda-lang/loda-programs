@@ -1,10 +1,9 @@
 ; A018663: Divisors of 819.
-; Submitted by Simon Strandgaard
+; Submitted by Soulfly
 ; 1,3,7,9,13,21,39,63,91,117,273,819
 
 lpb $0
   mov $3,$2
-  sub $1,11
   mul $1,18
   add $2,1
   lpb $3
@@ -17,7 +16,9 @@ lpb $0
   lpe
   add $2,1
   sub $0,1
-  mov $1,102
+  mov $1,91
 lpe
 mov $0,$2
+div $0,2
+mul $0,2
 add $0,1

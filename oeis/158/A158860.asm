@@ -1,17 +1,16 @@
 ; A158860: Triangle T(n,k)= ( 1 +T(n-1,k)*T(n,k-1) ) / T(n-1,k-1) initialized by T(n,0)=3n-2, T(n,k)=0 if k>=n, read by rows 0<=k<n.
-; Submitted by mmonnin
+; Submitted by [AF] Kalianthys
 ; 1,4,1,7,2,1,10,3,2,1,13,4,3,2,1,16,5,4,3,2,1,19,6,5,4,3,2,1,22,7,6,5,4,3,2,1,25,8,7,6,5,4,3,2,1,28,9,8,7,6,5,4,3,2,1
 
 lpb $0
+  add $1,3
   add $2,1
   sub $0,$2
-  mov $1,$0
-  cmp $1,0
-  mul $1,$2
 lpe
-add $1,1
 sub $2,$0
-add $2,$1
-add $2,$1
-mov $0,$2
-sub $0,1
+lpb $0
+  sub $0,1
+  mov $1,$2
+lpe
+mov $0,$1
+add $0,1

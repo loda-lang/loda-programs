@@ -8,8 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,338854 ; Product of the nonzero digits of (n written in base 4).
-  sub $3,3
-  cmp $3,0
+  cmp $3,3
   sub $0,$3
   add $1,4
   mov $4,$0

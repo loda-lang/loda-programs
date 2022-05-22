@@ -1,8 +1,22 @@
 ; A051456: (Terms in A029625)/2.
-; Submitted by Sphynx
+; Submitted by planetclown
 ; 4,7,13,12,20,25,10,45,24,13,50,112,161,154,98,40,63,162,273,315,252,138,16,225,435,588,567,390,60,660,1023,1155,957,19,111,396,1683,2178,2112,825,319,84,130,507,3861,4290,1144,403,22,637,4004,8151,6006,1547
 
-seq $0,268232 ; Indices of 0's in A047999.
-seq $0,29621 ; Numbers in (3,2)-Pascal triangle A029618 that are different from 3.
-mul $0,2
-div $0,4
+mov $1,1
+lpb $0
+  mul $0,$1
+  add $2,$0
+  add $1,1
+  sub $0,1
+  div $0,74
+  sub $0,1
+lpe
+seq $0,29625 ; Even numbers in (3,2)-Pascal triangle A029618 that are different from 2.
+mul $0,9
+sub $0,9
+div $0,9
+mul $0,7
+add $0,7
+sub $0,56
+div $0,14
+add $0,4

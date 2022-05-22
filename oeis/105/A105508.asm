@@ -1,9 +1,11 @@
 ; A105508: Numbers m such that 8 is the leading digit of the m-th Fibonacci number in decimal representation.
-; Submitted by [SG-FC] hl
+; Submitted by ebahapo
 ; 6,11,30,54,73,78,97,121,140,145,164,188,207,231,255,274,298,322,341,365,389,408,432,451,456,475,499,518,523,542,566,585,590,609,633,652,676,700,719,743,767,786,810,834,853,877,896,901,920,944,963,968,987
 
+add $2,$5
 mov $2,14161
-sub $2,$5
+sub $2,1
+add $1,2
 lpb $2
   mov $3,$1
   seq $3,8963 ; Initial digit of Fibonacci number F(n).
@@ -16,4 +18,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
+mul $2,2
 mov $0,$1

@@ -1,10 +1,9 @@
 ; A030703: Decimal expansion of 7^n contains no zeros (probably finite).
-; Submitted by Skillz
+; Submitted by [TA]crashtech
 ; 0,1,2,3,6,7,10,11,19,35
 
 mov $1,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1

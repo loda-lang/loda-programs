@@ -3,7 +3,6 @@
 
 lpb $0
   sub $0,1
-  dif $0,7
   add $1,4
   mod $1,84
   mul $1,2

@@ -1,5 +1,5 @@
 ; A278613: Sum of terms in level n of TRIP -  Stern sequence associated with permutation triple (e,e,132).
-; Submitted by Fardringle
+; Submitted by fzs600
 ; 3,8,21,55,145,381,1001,2633,6921,18193,47833,125745,330569,869057,2284665,6006193,15789865,41510241,109127129,286886801
 
 add $0,1
@@ -19,7 +19,6 @@ lpb $0
   add $4,$2
   add $5,1
 lpe
-mov $0,$3
-sub $0,3
+mov $0,$5
 div $0,2
-add $0,3
+add $0,1
