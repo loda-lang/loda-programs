@@ -1,11 +1,9 @@
 ; A040815: Continued fraction for sqrt(845).
-; Submitted by Cruncher Pete
+; Submitted by [AF] Kalianthys
 ; 29,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14,1,1,14,58,14
 
 seq $0,10158 ; Continued fraction for sqrt(85).
 mov $1,$0
 div $0,4
-mul $0,5
-add $1,$0
-add $1,$0
-mov $0,$1
+mul $0,10
+add $0,$1

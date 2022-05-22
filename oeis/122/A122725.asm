@@ -1,12 +1,12 @@
 ; A122725: a(n) = A000670(n)^2.
-; Submitted by Jon Maiga
+; Submitted by [AF] Kalianthys
 ; 1,1,9,169,5625,292681,21930489,2236627849,297935847225,50229268482121,10454564139438969,2632936466960600329,789136169944454084025,277579719258755165321161,113238180214596650771616249,53030348046942317338336489609,28256184698070300360908567636025
 
-seq $0,122835 ; Number of topologies on n labeled elements in which no element belongs to any pair of noncomparable members of the topology.
-mul $0,2
-mov $1,2
-add $1,$0
-mul $1,$0
-mov $0,$1
-div $0,9
+mod $0,52
+seq $0,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
+pow $0,2
+div $0,2
+mul $0,3
+div $0,12
+mul $0,8
 add $0,1

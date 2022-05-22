@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,326066 ; a(n) = sigma(n) - sigma(A032742(n)), where A032742 gives the largest proper divisor of n.
-sub $0,$1
 sub $0,1
+sub $0,$1

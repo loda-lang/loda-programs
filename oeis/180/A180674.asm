@@ -5,6 +5,5 @@
 add $0,5
 seq $0,211710 ; Number of (n+1) X (n+1) -11..11 symmetric matrices with every 2 X 2 subblock having sum zero and two distinct values.
 mul $0,78
-sub $0,11075
+sub $0,17160
 div $0,468
-sub $0,13

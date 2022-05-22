@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,51870 ; 18-gonal (or octadecagonal) numbers: a(n) = n*(8*n-7).
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

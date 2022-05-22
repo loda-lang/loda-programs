@@ -1,7 +1,13 @@
 ; A317193: First differences of A317192.
-; Submitted by Skillz
+; Submitted by [TA]crashtech
 ; 1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,-1,1,0,1,-1,1,1,-1,1,0,1,-1,1,-1,1,0,1,-1
 
-seq $0,119647 ; Fixed point of the morphism 1->{1,2}, 2->{1,3}, 3->{1}.
-mod $0,3
-dif $0,-2
+seq $0,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
+seq $0,100892 ; a(n) = (2*n-1) XOR (2*n+1), bitwise.
+div $0,4
+lpb $0
+  div $0,2
+  sub $1,1
+lpe
+pow $1,$1
+mov $0,$1

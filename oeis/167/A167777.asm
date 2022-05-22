@@ -1,15 +1,12 @@
 ; A167777: Even single (or even isolated) numbers.
-; Submitted by [AF] Kalianthys
+; Submitted by zombie67 [MM]
 ; 2,4,6,12,18,30,42,60,72,102,108,138,150,180,192,198,228,240,270,282,312,348,420,432,462,522,570,600,618,642,660,810,822,828,858,882,1020,1032,1050,1062,1092,1152,1230,1278,1290,1302,1320,1428,1452,1482,1488
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  seq $2,67829 ; Primes p such that sigma(p-2) < p.
-  add $1,$2
-  mov $3,0
-lpe
-mov $0,$1
-sub $0,1
+mul $0,2
+mov $1,$0
+min $1,1
+trn $0,3
+seq $0,171688 ; Twin primes > 3.
+sub $0,3
+add $0,$1
+add $0,$1

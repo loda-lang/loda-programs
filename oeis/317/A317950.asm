@@ -1,18 +1,16 @@
 ; A317950: First differences of ternary tribonacci word A080843.
-; Submitted by [AF] Kalianthys
+; Submitted by emoga
 ; 1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,1,-1,2,-2,1,-1,0,1,-1,2,-2,1,-1,1,-1,2,-2,1,-1
 
 mov $4,$0
 mov $3,2
 cmp $6,$1
-mov $9,$5
 add $3,1
 lpb $3
   div $3,2
   mov $0,$4
-  gcd $2,$6
   add $0,$3
-  seq $0,119647 ; Fixed point of the morphism 1->{1,2}, 2->{1,3}, 3->{1}.
+  seq $0,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n >= 0, S(n+3) = S(n+2) S(n+1) S(n).
   mov $2,$3
   mul $2,$0
   mul $4,$3
@@ -21,14 +19,14 @@ lpb $3
 lpe
 sub $1,$5
 mov $0,$1
-mov $8,1
+mov $7,$6
 sub $0,8
-sub $0,3
+mov $4,2
 mov $0,$1
-mul $7,3
-sub $6,1
+mov $0,$1
+sub $0,2
 div $0,2
-sub $1,$7
+mov $9,27
 mov $0,$1
 mul $0,2
 div $0,2

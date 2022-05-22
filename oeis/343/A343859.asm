@@ -1,7 +1,9 @@
 ; A343859: Partial sums of the primes excluding 3.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 2,7,14,25,38,55,74,97,126,157,194,235,278,325,378,437,498,565,636,709,788,871,960,1057,1158,1261,1368,1477,1590,1717,1848,1985,2124,2273,2424,2581,2744,2911,3084,3263,3444,3635,3828,4025,4224,4435,4658,4885,5114,5347
 
 add $0,1
-seq $0,237589 ; Sum of first n odd noncomposite numbers.
+mov $1,$0
+seq $1,101301 ; The sum of the first n primes, minus n.
+add $0,$1
 sub $0,2

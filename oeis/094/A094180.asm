@@ -1,26 +1,24 @@
 ; A094180: Numbers k such that 4*k-1 is divisible only by primes of form 4*m-1 (i.e., by the Gaussian primes A002145).
-; Submitted by davidtgx
+; Submitted by mmonnin
 ; 1,2,3,5,6,7,8,11,12,15,16,17,18,20,21,25,26,27,32,33,35,37,38,41,42,43,45,48,50,52,53,56,57,58,60,61,63,66,68,70,71,77,78,83,86,87,90,91,92,95,96,97,100,105,106,108,110,111,116,117,120,121,122,123,125,126,131,133,135,137,141,142,143,147,150,151,152,155,157,158,160,161,162,163,165,171,173,178,180,182,185,186,187,188,190,197,203,206,207,210
 
+mov $1,-1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
+  add $1,3
   mov $3,$1
-  seq $3,46073 ; Number of squares in multiplicative group modulo n.
-  add $3,$4
-  gcd $3,2
+  seq $3,324891 ; a(n) = sigma(A170818(n)), where A170818(n) is the part of n composed of prime factors of form 4k+1.
+  cmp $3,1
   sub $0,$3
-  add $0,1
-  add $1,$4
-  add $1,5
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
   sub $2,1
-  add $4,2
 lpe
 mov $0,$1
-div $0,8
+add $0,1
+div $0,4
 add $0,1

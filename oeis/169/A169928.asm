@@ -1,9 +1,8 @@
 ; A169928: Values of n >= 7 such that 10*n-122+360/n is an integer.
-; Submitted by Skillz
+; Submitted by Jamie Morken(l1)
 ; 8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360
 
-mov $2,1
-add $0,6
+mov $2,8
 lpb $0
   mul $1,5
   mov $3,$2

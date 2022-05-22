@@ -1,5 +1,5 @@
 ; A018617: Divisors of 735.
-; Submitted by [DPC] hansR
+; Submitted by Opolis
 ; 1,3,5,7,15,21,35,49,105,147,245,735
 
 lpb $0
@@ -20,6 +20,4 @@ lpb $0
   mov $1,104
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
 add $0,1
