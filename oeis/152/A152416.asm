@@ -5,5 +5,5 @@
 add $0,1
 seq $0,13661 ; Decimal expansion of Pi^2/6 = zeta(2) = Sum_{m>=1} 1/m^2.
 sub $0,9
-sub $2,$0
-mov $0,$2
+sub $1,$0
+mov $0,$1

@@ -5,7 +5,7 @@ lpb $0
   trn $0,1
   seq $0,1043 ; Numbers that are the sum of 2 successive primes.
   div $0,2
-  mov $2,$0
+  mov $1,$0
   mov $0,0
 lpe
-mov $0,$2
+mov $0,$1

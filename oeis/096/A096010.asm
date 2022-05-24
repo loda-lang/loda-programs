@@ -1,5 +1,5 @@
 ; A096010: Number of different cycles computed with the generalized 3x+1 problem using C=2, B=Cn+m, A=C^m.
-; Submitted by emoga
+; Submitted by PDW
 ; 2,2,3,3,5,7,11,17,31,53,95,173,317,587,1097,2049,3857,7287,13799,26217
 
 add $0,1
@@ -16,6 +16,5 @@ lpe
 mul $2,$4
 div $1,$2
 mov $0,$1
-sub $0,2
 div $0,2
-add $0,2
+add $0,1

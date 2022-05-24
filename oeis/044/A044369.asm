@@ -1,5 +1,5 @@
 ; A044369: Numbers n such that string 3,7 occurs in the base 10 representation of n but not of n-1.
-; Submitted by Simon Strandgaard
+; Submitted by [AF] Kalianthys
 ; 37,137,237,337,370,437,537,637,737,837,937,1037,1137,1237,1337,1370,1437,1537,1637,1737,1837,1937,2037,2137,2237,2337,2370,2437,2537,2637,2737,2837,2937,3037,3137,3237,3337,3370,3437
 
 add $0,1
@@ -19,6 +19,5 @@ add $1,$0
 add $0,$1
 add $0,$1
 mul $0,10
-sub $0,124
 div $0,3
-sub $0,5
+sub $0,46

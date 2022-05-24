@@ -4,10 +4,10 @@
 mov $1,$0
 sub $1,2
 mov $2,$1
-mov $1,10
 trn $2,6
 add $2,1
+mov $1,10
 pow $1,$2
-sub $1,8
 sub $1,$2
+sub $1,8
 add $0,$1

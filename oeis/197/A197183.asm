@@ -1,18 +1,18 @@
 ; A197183: Number of partitions of n^2 into distinct factorials.
-; Submitted by [TA]crashtech
+; Submitted by http://jkfs.petrsu.ru/
 ; 1,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
+mov $1,$0
 mov $2,1
 mov $3,1
 mov $6,1
-mov $1,$0
+pow $0,2
 lpb $1
   sub $1,$6
   add $2,1
   mov $4,$3
   mul $4,$2
   mov $5,$0
-  pow $5,2
   mod $5,$4
   div $5,$3
   mov $3,$4

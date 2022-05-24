@@ -1,10 +1,8 @@
 ; A043313: a(n)=A033007(n)/10.
-; Submitted by [TA]crashtech
+; Submitted by jmorken
 ; 1,2,3,4,5,6,7,8,81,83,84,85,86,87,88,89,162,163,165,166,167,168,169,170,243,244,245,247,248,249,250,251,324,325,326,327,329,330,331,332,405,406,407,408,409,411,412,413,486,487,488
 
 mul $0,10
 div $0,9
 seq $0,44835 ; Positive integers having more base-9 runs of even length than odd.
-sub $0,10
 div $0,10
-add $0,1

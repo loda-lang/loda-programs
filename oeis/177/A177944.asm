@@ -1,15 +1,16 @@
 ; A177944: Array T(n,m) = 1/Beta(n+1, m+1) - n - m read by antidiagonals.
-; Submitted by Jon Maiga
+; Submitted by planetclown
 ; 1,1,1,1,4,1,1,9,9,1,1,16,26,16,1,1,25,55,55,25,1,1,36,99,134,99,36,1,1,49,161,273,273,161,49,1,1,64,244,496,622,496,244,64,1,1,81,351,831,1251,1251,831,351,81,1
 
 lpb $0
   add $2,1
   sub $0,$2
-  mov $1,$2
-  bin $1,$0
-  sub $1,1
 lpe
-add $2,1
-mul $2,$1
-mov $0,$2
+mov $1,$2
+bin $1,$0
+sub $1,1
+mov $3,1
+add $3,$2
+mul $3,$1
+mov $0,$3
 add $0,1

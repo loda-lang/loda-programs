@@ -1,12 +1,22 @@
 ; A130718: 2*(prime(n)-2)!.
+; Submitted by biodoc
 ; 2,2,12,240,725760,79833600,2615348736000,711374856192000,102181884343418880000,21777738900836704321536000000,17683523987479403909087232000000
 
-seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,2
-max $1,$0
-mov $0,1
-lpb $1
-  mul $0,$1
-  sub $1,1
+seq $0,40976 ; a(n) = prime(n) - 2.
+lpb $0
+  mul $0,0
+  add $0,2
+  mov $1,10
+  pow $1,$0
+  sub $1,5
+  bin $1,2
+  div $1,45
+  mov $0,$1
 lpe
+mov $1,1
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $0,$1
 mul $0,2

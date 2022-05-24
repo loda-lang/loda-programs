@@ -1,10 +1,9 @@
 ; A302603: Number of total dominating sets in the wheel graph on n nodes.
-; Submitted by Christian Krause
+; Submitted by Fornax
 ; 4,2,4,11,24,42,79,156,304,587,1144,2246,4419,8712,17224,34131,67744,134642,267919,533636,1063704,2121627,4233904,8452686,16880899,33722192,67380304,134656931,269146104,538020762,1075602319,2150493996,4299838144,8597815787
 
-mov $3,$0
+mov $1,2
+pow $1,$0
 seq $0,1638 ; A Fielder sequence: a(n) = a(n-1) + a(n-3) + a(n-4), n >= 4.
-mov $2,2
-pow $2,$3
-add $0,$2
 sub $0,1
+add $0,$1
