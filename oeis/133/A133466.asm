@@ -1,20 +1,7 @@
 ; A133466: Positive integers k for which there is exactly one integer i in {1,2,3,...,k-1} such that i*k is a square.
-; Submitted by emoga
+; Submitted by respawner
 ; 4,8,12,20,24,28,40,44,52,56,60,68,76,84,88,92,104,116,120,124,132,136,140,148,152,156,164,168,172,184,188,204,212,220,228,232,236,244,248,260,264,268,276,280,284,292,296,308,312,316,328,332,340,344,348,356,364,372,376,380,388,404,408,412,420,424,428,436,440,444,452,456,460,472,476,488,492,508,516,520,524,532,536,548,552,556,564,568,572,580,584,596,604,616,620,628,632,636,644,652
 
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $1,1
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+seq $0,232893 ; Numbers whose sum of square divisors is a palindrome in base 10 having at least two digits.
+div $0,15376
 mul $0,4
-add $0,4

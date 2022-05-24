@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,1870 ; Expansion of (1-x)/(1 - 3*x + x^2)^2.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

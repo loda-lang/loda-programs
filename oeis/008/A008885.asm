@@ -1,10 +1,10 @@
 ; A008885: Aliquot sequence starting at 30.
-; Submitted by Jamie Morken(w4)
+; Submitted by Opolis
 ; 30,42,54,66,78,90,144,259,45,33,15,9,4,3,1,0
 
-seq $1,171524 ; a(n) = numbers m such that are not the product of k-th nonprime number and k for any k >= 1.
+seq $1,199317 ; 2*6^n+1.
 mov $2,$0
-mov $0,15
+mov $0,10
 mul $0,$1
 lpb $2
   sub $2,1

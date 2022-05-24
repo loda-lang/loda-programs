@@ -1,0 +1,12 @@
+; A029766: Unary-binary rooted trees with n nodes.
+; Submitted by [TA]crashtech
+; 0,1,2,12,48,360,2160,25200,201600,2540160,25401600,399168000,4790016000,80951270400,1133317785600,23538138624000,376610217984000,8180810846208000,147254595231744000,3649353012264960000
+
+mov $1,$0
+add $0,1
+seq $0,8644 ; Molien series of 5 X 5 upper triangular matrices over GF( 2 ).
+lpb $1
+  mul $0,$1
+  sub $1,1
+lpe
+div $0,2

@@ -1,8 +1,8 @@
 ; A043802: Numbers n such that number of runs in the base 3 representation of n is congruent to 4 mod 8.
-; Submitted by emoga
+; Submitted by [DPC] hansR
 ; 30,32,33,34,46,47,48,50,57,59,60,61,64,65,69,70,84,86,87,88,90,93,95,98,99,103,105,106,111,113,114,115,127,128,129,131,136,137,139,143,144,147,149,152,154,155,156,158,165,167,168,169
 
-mov $1,2
+mov $1,4
 mov $2,$0
 add $2,7
 pow $2,2

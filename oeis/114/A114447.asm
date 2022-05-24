@@ -1,10 +1,10 @@
 ; A114447: Indices of 6-almost prime pentagonal numbers.
-; Submitted by fzs600
+; Submitted by [TA]crashtech
 ; 32,48,64,72,81,91,99,108,112,117,123,135,139,144,152,155,160,162,176,195,207,208,216,219,240,252,264,272,275,279,292,297,300
 
+mov $1,4
 mov $2,$0
 add $0,6
-mov $1,1
 add $2,8
 pow $2,2
 lpb $2
@@ -20,6 +20,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,94
 div $0,3
-add $0,32
+add $0,1

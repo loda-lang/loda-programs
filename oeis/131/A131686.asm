@@ -1,37 +1,26 @@
 ; A131686: Sum of squares of five consecutive primes.
-; Submitted by [TA]crashtech
+; Submitted by biodoc
 ; 208,373,653,989,1469,2189,2981,4061,5381,6701,8069,9917,12029,14069,16709,19541,22061,24821,27989,31421,35789,40661,45029,49589,53549,56909,62837,69389,76709,84149,93581,100253,107741,115541,124109,131837
 
-mov $4,$0
-mov $3,7
-sub $3,2
+mov $4,2
+trn $3,2
+mov $2,$0
+mov $3,4
+mul $3,2
+sub $3,3
 lpb $3
   sub $3,1
-  mov $0,$4
+  mov $0,$2
   add $0,$3
   max $0,0
   seq $0,153480 ; a(n) = 2*prime(n)^2 - 4.
-  mov $2,10
-  mul $2,$0
-  add $1,$2
+  add $1,$0
 lpe
 mov $0,$1
-div $0,10
-add $0,2560
-sub $0,1024
-sub $0,1152
-sub $0,288
-sub $0,90
+add $0,8
+sub $0,2
 div $0,2
 add $0,3
-sub $0,2
-sub $0,83
-add $0,87
-mov $0,$1
-sub $0,4950
-div $0,10
-add $0,503
-sub $0,1832
-add $0,1834
-div $0,2
-add $0,5
+add $0,8
+sub $0,212
+add $0,208

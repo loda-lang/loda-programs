@@ -1,9 +1,6 @@
 ; A081325: sigma(n^2) modulo 4.
-; Submitted by Christian Krause
+; Submitted by PDW
 ; 1,3,1,3,3,3,1,3,1,1,1,3,3,3,3,3,3,3,1,1,1,3,1,3,1,1,1,3,3,1,1,3,1,1,3,3,3,3,3,1,3,3,1,3,3,3,1,3,1,3,3,1,3,3,3,3,1,1,1,1,3,3,1,3,1,3,1,1,1,1,1,3,3,1,1,3,1,1,1,1,1,1,1,3,1,3,3,3,3,1,3,3,1,3,3,3,3,3,1,3
 
-add $0,1
-pow $0,2
-sub $0,1
-seq $0,46897 ; Sum of divisors of n that are not divisible by 4.
+seq $0,65764 ; Sum of divisors of square numbers.
 mod $0,4

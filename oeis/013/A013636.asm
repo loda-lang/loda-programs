@@ -1,6 +1,8 @@
 ; A013636: n*nextprime(n).
+; Submitted by LeChat51X
 ; 0,2,6,15,20,35,42,77,88,99,110,143,156,221,238,255,272,323,342,437,460,483,506,667,696,725,754,783,812,899,930,1147,1184,1221,1258,1295,1332,1517,1558,1599,1640,1763
 
 mov $1,$0
-seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
-mul $0,$1
+seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mul $1,$0
+mov $0,$1

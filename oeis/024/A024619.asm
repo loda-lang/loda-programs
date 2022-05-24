@@ -1,19 +1,26 @@
 ; A024619: Numbers that are not powers of primes p^k (k >= 0); complement of A000961.
-; Submitted by Christian Krause
+; Submitted by DoctorNow
 ; 6,10,12,14,15,18,20,21,22,24,26,28,30,33,34,35,36,38,39,40,42,44,45,46,48,50,51,52,54,55,56,57,58,60,62,63,65,66,68,69,70,72,74,75,76,77,78,80,82,84,85,86,87,88,90,91,92,93,94,95,96,98,99,100,102,104,105,106,108,110,111,112,114,115,116,117,118,119,120,122,123,124,126,129,130,132,133,134,135,136,138,140,141,142,143,144,145,146,147,148
 
-mov $1,1
+mov $1,4
 mov $2,$0
-add $2,4
+add $0,1
+add $2,3
 pow $2,2
 lpb $2
-  sub $2,1
-  add $1,1
   mov $3,$1
-  seq $3,297109 ; If n is prime(k)^e, e >= 1, then a(n) = k, otherwise 0.
-  cmp $3,0
+  seq $3,87893 ; Number of numbers m satisfying 1 < m < n such that m^2 == m (mod n).
+  add $3,$4
+  cmp $3,1
+  gcd $3,2
   sub $0,$3
-  sub $2,$0
+  add $0,1
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-add $0,2
+add $0,1

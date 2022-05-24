@@ -1,10 +1,11 @@
 ; A043782: Numbers n such that number of runs in base 3 representation of n is congruent to 2 mod 5.
-; Submitted by kotenok2000
+; Submitted by Opolis
 ; 3,5,6,7,9,12,14,17,18,22,24,25,27,36,39,41,44,53,54,67,72,76,78,79,81,108,117,120,122,125,134,161,162,202,216,229,234,238,240,241,243,324,351,360,363,365,368,377,404,485,486,607,648
 
-mov $1,1
+pow $3,2
 mov $2,$0
 add $2,11
+mov $6,1
 pow $2,2
 lpb $2
   mov $3,$1
