@@ -1,0 +1,23 @@
+; A253091: List of ternary words obtained by expanding (1+2x)^n mod 3 and reading the coefficients starting with the constant term.
+; Submitted by Xenon
+; 1,12,111,1002,12021,111222,1001001,12012012,111111111,1000000002,12000000021,111000000222,1002000002001,12021000021012,111222000222111,1001001002002002,12012012021021021,111111111222222222,1000000001000000001,12000000012000000012,111000000111000000111
+
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  add $2,$0
+  bin $2,$0
+  mul $4,2
+  add $4,4
+  add $1,1
+  pow $3,0
+  mul $3,$2
+  mul $3,$4
+  mod $3,3
+  sub $4,2
+  add $5,$3
+  mul $5,10
+lpe
+mov $0,$5
+div $0,10
