@@ -1,13 +1,12 @@
 ; A211526: Number of -1..1 arrays x(i) of n+1 elements i=1..n+1 with set{t,u,v in 0,1}((x[i+t]+x[j+u]+x[k+v])*(-1)^(t+u+v)) having two, four or five distinct values for every i,j,k<=n.
-; Submitted by Christian Krause
+; Submitted by http://asterion.petrsu.ru/
 ; 8,18,32,60,104,192,344,648,1208,2328,4472,8760,17144,33912,67064,133368,265208,528888,1054712,2106360,4206584,8407032,16801784,33591288,67158008,134291448,268533752,537018360,1073938424,2147778552,4295360504,8590524408,17180655608,34360918008,68721049592,137441312760,274881052664,549760532472,1099517919224,2199032692728,4398059094008,8796111896568,17592211210232,35184409837560,70368794509304,140737563852792,281475077373944,562950104416248,1125900108169208,2251800115675128,4503600030023672
 
-mov $3,$0
-seq $0,209726 ; 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
-mul $0,3
-mov $2,2
-pow $2,$3
-mul $2,2
-add $0,$2
-sub $0,46
+mov $1,2
+pow $1,$0
+seq $0,209721 ; 1/4 the number of (n+1) X 3 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
+add $1,$0
+add $0,$1
+add $0,$1
 mul $0,2
+sub $0,14

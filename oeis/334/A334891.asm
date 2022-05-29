@@ -2,34 +2,34 @@
 ; Submitted by Christian Krause
 ; 0,0,3,12,36,84,174,336,612,1044,1701
 
-mov $6,$0
 mov $8,$0
+mov $6,$0
 lpb $6
-  mov $0,$8
   sub $6,1
+  mov $0,$8
   sub $0,$6
-  mov $9,$0
   mov $10,0
   mov $11,$0
+  mov $9,$0
   lpb $9
-    mov $0,$11
     sub $9,1
+    mov $0,$11
     sub $0,$9
-    mov $12,$0
     mov $13,0
     mov $14,$0
+    mov $12,$0
     lpb $12
-      mov $0,$14
       sub $12,1
+      mov $0,$14
       sub $0,$12
-      mov $15,$0
       mov $16,0
       mov $17,$0
+      mov $15,$0
       lpb $15
-        mov $0,$17
-        mov $1,0
         sub $15,1
+        mov $0,$17
         sub $0,$15
+        mov $1,0
         mov $2,2
         mov $5,1
         lpb $0
@@ -46,8 +46,8 @@ lpb $6
           lpe
           div $0,$2
           mov $4,$0
-          sub $0,$5
           mul $4,$5
+          sub $0,$5
           add $1,$4
           mul $5,$2
         lpe

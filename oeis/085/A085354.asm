@@ -4,10 +4,10 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,54127 ; a(1) = 2; a(n) = 9*2^(n-2) - n - 2, n>1.
   add $0,$2
   mul $0,2
+  sub $1,1
 lpe
 div $0,2
 add $0,1

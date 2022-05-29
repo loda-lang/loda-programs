@@ -1,5 +1,5 @@
 ; A125115: Differences between consecutive abundant numbers.
-; Submitted by Tae Hyun Kim
+; Submitted by Sphynx
 ; 6,2,4,6,6,4,2,6,6,2,4,6,4,2,6,2,4,4,2,6,4,2,2,4,4,2,6,6,6,6,2,4,6,6,4,2,6,6,2,4,6,6,4,2,2,4,4,2,6,4,2,2,4,6,6,6,6,6,2,4,6,2,4,4,2,6,6,6,4,2,2,4,6,2,4,6,6,4,2,6,2,2,2,6,4,2,2,4,6,2,4,6,2,4,4,2,6,6,2,4
 
 mov $3,2
@@ -13,12 +13,12 @@ lpb $3
     mov $2,$0
     max $2,0
     seq $2,39725 ; Even abundant numbers divided by 2.
-    mov $3,0
     mov $4,$2
     mov $6,$7
     mul $6,$2
     add $1,$6
   lpe
+  div $3,$2
   min $5,1
   mul $5,$4
   mov $4,$1

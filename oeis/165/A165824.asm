@@ -1,8 +1,12 @@
 ; A165824: Totally multiplicative sequence with a(p) = 3.
-; Submitted by Jon Maiga
+; Submitted by biodoc
 ; 1,3,3,9,3,9,3,27,9,9,3,27,3,9,9,81,3,27,3,27,9,9,3,81,9,9,27,27,3,27,3,243,9,9,9,81,3,9,9,81,3,27,3,27,27,9,3,243,9,27,9,27,3,81,9,81,9,9,3,81,3,9,27,729,9,27,3,27,9,27,3,243,3,9,27,27,9,27,3,243,81,9,3,81,9,9,9,81,3,81,9,27,9,9,9,729,3,27,27,81
 
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-mov $2,3
-pow $2,$0
-mov $0,$2
+mov $1,1
+lpb $0
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+  mul $1,3
+lpe
+mov $0,$1

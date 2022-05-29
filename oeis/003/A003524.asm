@@ -1,5 +1,5 @@
 ; A003524: Divisors of 2^12 - 1.
-; Submitted by Opolis
+; Submitted by [DPC] hansR
 ; 1,3,5,7,9,13,15,21,35,39,45,63,65,91,105,117,195,273,315,455,585,819,1365,4095
 
 lpb $0
@@ -19,6 +19,4 @@ lpb $0
   mov $1,91
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
 add $0,1

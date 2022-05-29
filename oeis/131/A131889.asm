@@ -4,7 +4,7 @@
 
 mov $2,$0
 seq $0,174574 ; Partial sums of A065363.
-mov $1,3
 sub $2,$0
+mov $1,3
 pow $1,$2
 mov $0,$1

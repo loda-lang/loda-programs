@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+  div $0,2
   add $1,$2
   sub $1,2
 lpe

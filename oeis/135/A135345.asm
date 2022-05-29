@@ -15,11 +15,11 @@ lpb $0
   max $2,2
   sub $3,$4
   mov $4,$2
-  mov $2,$3
-  mod $5,2
-  add $5,$4
-  mov $3,$5
   add $4,$1
+  mod $5,2
+  add $5,$2
+  mov $2,$3
+  mov $3,$5
   add $5,$2
 lpe
 mov $0,$3

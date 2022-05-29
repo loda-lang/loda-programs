@@ -10,15 +10,15 @@ lpb $0
   add $2,1
   add $3,$1
   trn $4,$0
-  sub $0,1
   add $4,1
+  sub $0,1
 lpe
 add $4,1
 add $1,$4
 trn $1,4
 lpb $5
-  add $1,1
   sub $5,1
+  add $1,1
 lpe
 add $1,4
 mov $0,$1

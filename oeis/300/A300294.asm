@@ -1,4 +1,5 @@
 ; A300294: Irregular triangle giving the GCD characteristic: t(n, m) = 1 if gcd(n, m) = 1 and zero otherwise, with t(1, 1) = 1 and t(n, m) for n >= 2 and m = 1..(n-1).
+; Submitted by [AF] Kalianthys
 ; 1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,1
 
 lpb $0
@@ -7,6 +8,7 @@ lpb $0
   add $3,$2
   div $3,2
   mul $2,$3
+  add $3,2
   mov $0,$2
   mov $1,$2
   min $1,1

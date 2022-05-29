@@ -1,20 +1,15 @@
 ; A265529: Largest base-3 palindrome m <= n, written in base 10.
-; Submitted by biodoc
+; Submitted by fzs600
 ; 0,1,2,2,4,4,4,4,8,8,10,10,10,13,13,13,16,16,16,16,20,20,20,23,23,23,26,26,28,28,28,28,28,28,28,28,28,28,28,28,40,40,40,40,40,40,40,40,40,40,40,40,52,52,52,52,56,56,56,56,56,56,56,56,56,56,56,56,68,68,68,68,68,68,68,68,68,68,68,68,80,80
 
 mov $2,$0
-mul $0,0
-mov $1,$2
 lpb $2
-  mov $3,$1
-  seq $3,55947 ; n - reversal of base 3 digits of n (written in base 10).
-  cmp $3,0
-  sub $0,$3
-  sub $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+  mov $1,$2
+  seq $1,55947 ; n - reversal of base 3 digits of n (written in base 10).
+  cmp $1,0
+  mov $0,1
+  sub $0,$1
+  mul $2,$0
   sub $2,1
 lpe
-mov $0,$1
+mov $0,$2

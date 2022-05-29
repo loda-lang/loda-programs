@@ -1,6 +1,26 @@
 ; A220018: Number of cyclotomic cosets of 3 mod 10^n.
+; Submitted by [SG]KidDoesCrunch
 ; 4,11,29,71,129,203,293,399,521,659,813,983,1169,1371,1589,1823,2073,2339,2621,2919,3233,3563,3909,4271,4649,5043,5453,5879,6321,6779,7253,7743,8249,8771,9309,9863,10433,11019,11621,12239,12873,13523,14189
 
-seq $0,220020 ; Number of cyclotomic cosets of 9 mod 10^n.
-add $0,2
+mov $3,$0
+mov $5,$0
+mul $0,4
+mov $2,$3
+add $2,$0
+lpb $0
+  sub $0,1
+  sub $2,2
+  add $2,$0
+lpe
+mov $4,4
+add $4,$2
+trn $4,15
+add $1,$4
+add $1,$4
+lpb $5
+  sub $5,1
+  add $1,14
+lpe
+mov $0,$1
 div $0,2
+add $0,4

@@ -10,9 +10,9 @@ lpb $0
   mul $3,$2
   add $3,$1
   add $4,6
+  mod $2,44
   mul $1,$0
   div $1,2
-  mod $2,44
   mul $1,6
   mul $1,$2
   mul $3,$4

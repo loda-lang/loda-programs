@@ -7,9 +7,8 @@ mov $2,$0
 seq $0,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
 mul $0,3
 sub $0,$2
-add $0,7
 mul $0,4
-add $0,4
+add $0,32
 lpb $0
   sub $0,2
   trn $0,$1

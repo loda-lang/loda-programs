@@ -1,5 +1,5 @@
 ; A018596: Divisors of 693.
-; Submitted by Fardringle
+; Submitted by shiva
 ; 1,3,7,9,11,21,33,63,77,99,231,693
 
 lpb $0
@@ -17,6 +17,4 @@ lpb $0
   sub $0,1
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
 add $0,1

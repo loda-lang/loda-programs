@@ -5,6 +5,4 @@
 mov $1,$0
 seq $1,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
 seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
-mul $0,4
 mul $0,$1
-div $0,4

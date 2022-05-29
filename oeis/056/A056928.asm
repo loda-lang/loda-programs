@@ -4,7 +4,6 @@
 
 seq $0,53001 ; Largest prime < n^2.
 seq $0,13634 ; a(n) = nextprime(n) + n.
-mul $0,2
-sub $0,16
-div $0,4
+sub $0,8
+div $0,2
 add $0,4

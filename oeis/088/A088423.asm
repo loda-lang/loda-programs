@@ -1,5 +1,5 @@
 ; A088423: a(n) is the number of primes in arithmetic progression starting with 11 and with d = 2n.
-; Submitted by biodoc
+; Submitted by PDW
 ; 2,1,4,2,1,2,1,1,3,2,1,1,2,1,5,2,1,3,1,1,2,1,1,3,2,1,1,2,1,6,2,1,1,2,1,2,1,1,3,1,1,1,2,1,4,2,1,2,2,1,2,1,1,1,1,1,1,2,1,3,1,1,4,2,1,1,1,1,2,2,1,1,2,1,1,2,1,2,1,1,2,1,1,3,2,1,1,1,1,2,2,1,4,2,1,1,1,1,1,2
 
 mov $2,$0
@@ -19,6 +19,7 @@ lpb $2
   max $4,0
   add $0,1
   cmp $4,$0
+  mul $5,$3
   mul $2,$4
   add $6,$5
   add $6,1

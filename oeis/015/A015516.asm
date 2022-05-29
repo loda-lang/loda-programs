@@ -1,28 +1,32 @@
 ; A015516: Inverse of 1507th cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,1
-mov $2,1
+add $0,1
+mov $2,3
 mov $3,$0
-mul $3,4
+pow $0,2
+mul $3,6
 lpb $3
-  mul $1,$3
-  div $1,9
   mov $5,$3
   mul $5,2
+  sub $0,1
+  mul $2,$3
   mul $2,$5
-  mul $2,5
-  div $2,9
+  mov $4,$0
+  cmp $4,0
+  add $0,$4
+  add $1,$2
+  div $1,$0
+  div $2,$0
+  mov $4,$0
+  sub $0,53
   sub $3,1
 lpe
-sub $1,$2
-mov $4,10
-pow $4,$0
-div $2,$4
+div $2,12
+add $2,$4
+mul $1,4
 div $1,$2
 mov $0,$1
-sub $0,1
-mod $0,2
-add $0,2
+add $0,1
 mod $0,2

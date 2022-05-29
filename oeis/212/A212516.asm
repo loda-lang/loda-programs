@@ -5,13 +5,13 @@
 sub $1,$0
 pow $0,2
 mov $2,$0
+add $2,$1
 add $0,1
 div $0,2
 add $0,$1
-add $2,$1
-bin $1,2
 add $2,1
 div $2,3
+bin $1,2
 add $1,$2
 mul $0,$1
 div $0,2

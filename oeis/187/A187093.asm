@@ -6,6 +6,7 @@ add $1,$0
 sub $1,1
 pow $1,2
 div $1,2
+sub $1,3
 mov $3,$0
 add $3,6
 mov $2,$3
@@ -13,5 +14,4 @@ mod $2,4
 trn $2,1
 add $2,2
 add $1,$2
-sub $1,3
 mov $0,$1

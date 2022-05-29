@@ -4,9 +4,9 @@
 
 lpb $0
   trn $0,1
-  mov $2,$0
-  seq $2,97697 ; Numbers k such that 4*k^2 + 3 is prime.
-  div $0,$2
+  mov $1,$0
+  seq $1,97697 ; Numbers k such that 4*k^2 + 3 is prime.
+  div $0,$1
 lpe
-mov $0,$2
+mov $0,$1
 mul $0,2

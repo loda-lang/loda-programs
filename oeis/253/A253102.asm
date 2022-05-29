@@ -1,7 +1,7 @@
 ; A253102: a(n) = A071053(n)^3.
-; Submitted by Jon Maiga
+; Submitted by [AF] Kalianthys
 ; 1,27,27,125,27,729,125,1331,27,729,729,3375,125,3375,1331,9261,27,729,729,3375,729,19683,3375,35937,125,3375,3375,15625,1331,35937,9261,79507,27,729,729,3375,729,19683,3375,35937,729,19683,19683,91125,3375,91125,35937,250047,125,3375,3375,15625
 
-dif $0,2
+mod $0,72
 seq $0,71053 ; Number of ON cells at n-th generation of 1-D CA defined by Rule 150, starting with a single ON cell at generation 0.
 pow $0,3

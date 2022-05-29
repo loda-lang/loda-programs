@@ -1,10 +1,8 @@
 ; A033475: Denominator of Bernoulli(2n,1/4).
-; Submitted by bcavnaugh
+; Submitted by fzs600
 ; 1,48,3840,86016,983040,34603008,22900899840,805306368,1095216660480,27419071217664,181419418583040,1213860837064704,384213343210045440,13510798882111488,31345053406498652160
 
-mul $0,2
-mov $1,4
+mov $1,16
 pow $1,$0
-seq $0,141459 ; a(n) = Product_{p-1 divides n} p, where p is an odd prime.
-mul $1,$0
-mov $0,$1
+seq $0,1897 ; Denominators of cosecant numbers: -2*(2^(2*n-1)-1)*Bernoulli(2*n).
+mul $0,$1

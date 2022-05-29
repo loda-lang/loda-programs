@@ -4,10 +4,10 @@
 sub $0,1
 mul $0,20
 trn $0,2
-mov $2,$0
-div $2,2
-add $2,4
-add $2,$0
+mov $1,$0
+div $1,2
+add $1,4
+add $1,$0
 bin $0,2
-mod $0,$2
+mod $0,$1
 mod $0,10

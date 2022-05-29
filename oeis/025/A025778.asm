@@ -1,5 +1,5 @@
 ; A025778: Expansion of 1/((1-x)(1-x^5)(1-x^8)).
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by taurec
 ; 1,1,1,1,1,2,2,2,3,3,4,4,4,5,5,6,7,7,8,8,9,10,10,11,12,13,14,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,34,35,36,38,39,41,42,43,45,46,48,50,51,53,54,56
 
 add $0,3
@@ -7,10 +7,10 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
-  mul $2,6
   max $2,0
-  seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-  mov $3,5
+  mul $2,2
+  seq $2,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
   add $1,$2
+  mov $3,5
 lpe
 mov $0,$1

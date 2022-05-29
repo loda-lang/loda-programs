@@ -3,6 +3,5 @@
 
 sub $0,1
 pow $0,3
-add $0,1
 mul $0,4
-add $0,1
+add $0,5

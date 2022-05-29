@@ -4,12 +4,12 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,1
+mov $3,$0
 lpb $3
+  mov $6,0
   add $1,1
   mov $5,$0
-  mov $6,0
   lpb $5
     sub $3,$4
     bin $4,$2

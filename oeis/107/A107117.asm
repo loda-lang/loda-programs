@@ -8,7 +8,6 @@ lpb $0
   add $0,26
   sub $0,$1
   div $0,240
-  div $1,2
   sub $0,1
 lpe
 seq $0,107116 ; Three-digit numbers from the decimal expansion of Pi (version 1).

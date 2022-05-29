@@ -6,8 +6,8 @@ mov $1,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $1,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
 trn $1,$0
-add $1,2
 sub $1,$0
+add $1,2
 sub $0,$1
 div $0,2
 add $0,1

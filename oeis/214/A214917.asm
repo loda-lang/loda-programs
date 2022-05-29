@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   seq $2,214736 ; Least m>0 such that n-m divides n+1+m.
-  add $4,$2
-  mov $0,$4
+  add $1,$2
+  mov $0,$1
 lpe
 mov $3,$0
 cmp $3,0

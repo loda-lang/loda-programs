@@ -1,11 +1,9 @@
 ; A175708: n-th semiprime minus n.
-; Submitted by Simon Strandgaard
+; Submitted by PDW
 ; 3,4,6,6,9,9,14,14,16,16,22,22,22,24,24,30,32,33,36,37,37,40,42,45,49,51,55,57,57,57,60,61,61,61,71,75,78,80,80,81,81,81,86,89,89,95,95,95,96,96,104,106,106,107,111,113,120,120,124,125,126,132,138,138,138,139
 
-mov $1,-1
-mul $1,$0
-seq $0,88707 ; Semiprimes + 1.
-mov $2,$0
-add $2,$1
-mov $0,$2
-sub $0,2
+max $1,$0
+seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
+sub $1,$0
+mov $0,$1
+sub $0,1

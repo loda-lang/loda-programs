@@ -1,14 +1,6 @@
 ; A288872: Denominators for generalized Bernoulli numbers B[5,j](n), for j=1..4, n >= 0.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Fardringle
 ; 1,2,6,1,6,1,42,1,6,1,66,1,546,1,6,1,102,1,798,1,66,1,138,1,546,1,6,1,174,1,14322,1,102,1,6,1,383838,1,6,1,2706,1,1806,1,138,1,282,1,9282,1,66,1,318,1,798,1,174,1,354,1,11357346,1,6,1,102,1,64722,1,6,1,4686,1,28020174,1,6,1,6,1,3318,1,46002,1,498,1,680862,1,6,1,12282,1,272118,1,282,1,6,1,900354,1,6,1
 
-mov $2,$0
-seq $0,176289 ; Denominators of the rational sequence with e.g.f. (x/2)*(1+exp(-x))/(1-exp(-x)).
+seq $0,27642 ; Denominator of Bernoulli number B_n.
 dif $0,5
-mov $1,1
-add $1,$2
-max $2,1
-div $1,$2
-add $1,$0
-mov $0,$1
-sub $0,1

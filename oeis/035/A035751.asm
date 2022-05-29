@@ -5,10 +5,10 @@
 mul $0,4
 lpb $0
   mov $2,$0
-  sub $0,1
   div $2,2
   seq $2,35708 ; Coordination sequence for 13-dimensional cubic lattice.
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1
