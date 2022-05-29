@@ -8,9 +8,9 @@ lpb $0
   pow $2,24
   div $0,$2
   lpb $2
-    add $1,1
     sub $2,1
     div $2,11
+    add $1,1
   lpe
 lpe
 mov $0,$1

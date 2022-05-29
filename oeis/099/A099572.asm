@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,99571 ; Sum C(n-k+3,k), k=0..floor(n/2).
+  sub $0,2
   add $1,$2
 lpe
 add $1,1

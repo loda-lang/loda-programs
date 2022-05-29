@@ -9,9 +9,9 @@ lpb $3
   mul $2,$3
   sub $3,4
 lpe
+mov $1,12
+pow $1,$0
 mul $2,2
-mov $4,12
-pow $4,$0
-div $2,$4
+div $2,$1
 mov $0,$2
 div $0,2

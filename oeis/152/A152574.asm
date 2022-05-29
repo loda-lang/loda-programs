@@ -1,5 +1,5 @@
 ; A152574: Numbers n such that entering (N*0.3/N*0.1) on a Rumor LG Sprint cell phone produced the value 2 instead of 3, where N = n * (2**k) for k = 0, 1, 2, ....
-; Submitted by Jamie Morken(l1)
+; Submitted by Fornax
 ; 1,11,27,37,49,59,69,79,83,93
 
 mov $3,$0
@@ -14,6 +14,5 @@ mov $2,$3
 mul $2,5
 add $1,$2
 mov $0,$1
-sub $0,4
 mul $0,2
-add $0,1
+sub $0,7

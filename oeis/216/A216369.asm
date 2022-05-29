@@ -2,8 +2,8 @@
 ; Submitted by Jon Maiga
 ; 0,0,1,2,4,2,6,6,1,6,1,2,10,8,4,6,13,8,9,6,13,10,21,14,14,16,10,22,17,26,2,6,1,4,34,26,5,10,10,6,4,8,16,10,19,2,18,38,48,36,13,42,13,44,34,22,28,12,28,26,22,60,55,38,49,32,65,38,67,36,68,62,55,32,64,10,34,68,20,6,64,78,27,50,64,70,46,54,76,26,62,2,64,76,9,38,80,50,1,86
 
-mov $2,$0
+mov $1,$0
 add $0,1
-seq $2,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
-mod $2,$0
-mov $0,$2
+seq $1,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+mod $1,$0
+mov $0,$1

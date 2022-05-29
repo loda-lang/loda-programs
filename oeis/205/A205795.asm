@@ -1,21 +1,14 @@
 ; A205795: Sums of coefficients of polynomials from 5n-th moments of X ~ Hypergeometric(4m, 5m, m).
-; Submitted by Jon Maiga
+; Submitted by Fornax
 ; 24,2880,43545600,5230697472000,2432902008176640000,3102242008666197196800000,8841761993739701954543616000000,49205466506600690141269768273920000000,485663859076129603777149565235783270400000000,7911522544013240381082219675638737768808448000000000
 
-mov $2,1
-mov $3,$0
-mul $3,5
-lpb $3
-  mul $2,$3
-  lpb $2,2
-    mov $26,$0
-    cmp $26,0
-    add $0,$26
-    div $2,$0
-    mul $2,$3
-    div $3,$0
-  lpe
-  sub $3,1
+mov $1,1
+mov $2,$0
+mul $2,4
+lpb $2
+  sub $2,1
+  add $0,1
+  mul $1,$0
 lpe
-mov $0,$2
+mov $0,$1
 mul $0,24

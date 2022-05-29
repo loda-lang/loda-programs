@@ -1,8 +1,7 @@
 ; A340862: Number of times the number n turns up in pseudo-Fibonacci sequences starting with [k, 1] (with k >= 1), excluding the starting terms.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by fzs600
 ; 0,1,2,2,3,2,3,3,3,2,4,2,4,3,3,2,4,3,3,3,4,2,5,2,3,3,3,3,5,2,3,3,4,3,4,2,4,4,3,2,4,2,4,3,4,2,5,3,3,3,3,2,6,2,4,3,3,3,4,3,4,3,4,2,4,2,3,4,4,2,4,2,5,3,3,3,5,3,3,3,3,2,5,2,4,4,3,3,5,2,3,3,5,2,4,2,4,4,4,2
 
-mov $1,1
 mov $3,1
 mov $2,$0
 lpb $2
@@ -22,4 +21,3 @@ lpb $2
   mov $3,$6
 lpe
 mov $0,$1
-sub $0,1

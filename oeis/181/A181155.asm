@@ -1,8 +1,9 @@
 ; A181155: Odious numbers (A000069) plus one; complement of A026147.
+; Submitted by PDW
 ; 2,3,5,8,9,12,14,15,17,20,22,23,26,27,29,32,33,36,38,39,42,43,45,48,50,51,53,56,57,60,62,63,65,68,70,71,74,75,77,80,82,83,85,88,89,92,94,95,98,99,101,104,105,108,110,111,113,116,118,119,122,123,125,128,129,132,134,135,138,139,141,144,146,147,149,152,153,156,158,159,162,163,165,168,169,172,174,175,177,180,182,183,186,187,189,192,194,195,197,200
 
 mov $1,$0
-mul $0,2
-seq $1,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
-sub $0,$1
-add $0,2
+mul $1,2
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+gcd $0,2
+add $0,$1

@@ -1,10 +1,9 @@
 ; A023835: Sum of exponents in prime-power factorization of C(4n,2n-1).
-; Submitted by Simon Strandgaard
+; Submitted by Gunnar Hjern
 ; 2,4,6,7,7,9,11,12,13,13,13,15,14,16,17,18,16,18,18,20,22,22,23,25,24,24,25,24,24,28,27,29,27,30,30,32,31,31,34,32,31,33,34,37,36,35,36,40,37,37,38,39,39,42,41,42,42,42,42,43,44,46,47,48,45,46,44,45,48,49,47,50,47,49,53,52,51,52,53,54,53,52,53,56,53,56,56,58,57,60,60,60,61,61,62,63,61,63,64,64
 
 mul $0,-2
-mov $2,2
-sub $2,$0
-sub $2,1
-seq $2,23817 ; Sum of exponents in prime-power factorization of C(2n,n-1).
-mov $0,$2
+mov $1,1
+sub $1,$0
+seq $1,23817 ; Sum of exponents in prime-power factorization of C(2n,n-1).
+mov $0,$1

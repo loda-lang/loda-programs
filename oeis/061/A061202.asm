@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,7426 ; d_4(n), or tau_4(n), the number of ordered factorizations of n as n = rstu.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

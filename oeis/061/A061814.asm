@@ -1,16 +1,16 @@
 ; A061814: Multiples of 4 containing only even digits.
-; Submitted by Michael Goetz
+; Submitted by [AF] Kalianthys
 ; 0,4,8,20,24,28,40,44,48,60,64,68,80,84,88,200,204,208,220,224,228,240,244,248,260,264,268,280,284,288,400,404,408,420,424,428,440,444,448,460,464,468,480,484,488,600,604,608,620,624,628,640,644,648,660,664,668,680,684,688,800,804,808,820,824,828,840,844,848,860,864,868,880,884,888,2000,2004,2008,2020,2024,2028,2040,2044,2048,2060,2064,2068,2080,2084,2088,2200,2204,2208,2220,2224,2228,2240,2244,2248,2260
 
 mov $2,$0
-pow $2,2
+pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,61486 ; Let the number of digits in n be k; a(n) = sum of the products of the digits of n taken r at a time where r ranges from 1 to k.
-  gcd $3,2
+  mul $3,2
+  seq $3,102675 ; Number of digits >= 5 in decimal representation of n.
+  cmp $3,0
   sub $0,$3
-  add $0,1
-  add $1,4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -18,3 +18,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+mul $0,4

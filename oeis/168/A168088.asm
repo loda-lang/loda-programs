@@ -1,8 +1,6 @@
 ; A168088: a(n) = 2^tetranacci(n).
-; Submitted by Christian Krause
+; Submitted by biodoc
 ; 1,1,1,2,2,4,16,256,32768,536870912,72057594037927936,324518553658426726783156020576256,411376139330301510538742295639337626245683966408394965837152256,5164499756173817179311838344006023748659411585658447025661318713081295244033682389259290706560275662871806343945494986752
 
 seq $0,78 ; Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) for n >= 4 with a(0) = a(1) = a(2) = 0 and a(3) = 1.
-seq $0,335843 ; a(n) is the number of n-digit positive integers with exactly two distinct base 10 digits.
-div $0,81
-add $0,1
+seq $0,79 ; Powers of 2: a(n) = 2^n.

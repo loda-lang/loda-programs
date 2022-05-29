@@ -1,15 +1,16 @@
-; A125870: Odd numbers n such that cos(2pi/n) is an algebraic number of a 7-smooth degree, but not 5-smooth.
-; Submitted by [TA]crashtech
+; A125870: Odd numbers k such that cos(2*Pi/k) is an algebraic number of a 7-smooth degree, but not 5-smooth.
+; Submitted by PDW
 ; 29,43,49,71,87,113,127,129,145,147,197,203,211,213,215,245,261,281,301,319,337,339,343,355,377,379,381,387,421,435,441,449,473,491,493,497,539,551,559,565,591,609,631,633,635,637,639,645,673,701,725,731
 
+mov $1,4
 mov $2,$0
 add $2,2
-pow $2,4
+mul $2,2
+pow $2,2
 lpb $2
   mov $3,$1
   seq $3,68211 ; Largest prime factor of Euler totient function phi(n).
-  div $3,2
-  cmp $3,3
+  cmp $3,7
   sub $0,$3
   add $1,2
   mov $4,$0

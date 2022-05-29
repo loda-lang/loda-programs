@@ -1,28 +1,23 @@
 ; A018244: A self-generating sequence: there are a(n) (k+1)'s between successive k's, where k=3.
+; Submitted by Fardringle
 ; 3,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,4,3,4,4,4,3,4,4,4,4,3,4,4,4
 
-mov $3,$0
-mov $6,2
-lpb $6
-  mov $0,$3
-  sub $6,1
-  add $0,$6
+mov $1,3
+mov $2,2
+mov $3,-1
+add $0,1
+lpb $0
   sub $0,1
-  mov $4,$0
-  div $0,6
-  sub $0,$4
-  div $0,4
-  add $0,$4
-  mov $2,$0
-  mov $5,$6
-  lpb $5
-    mov $1,$2
-    sub $5,1
-  lpe
-lpe
-lpb $3
   sub $1,$2
-  mov $3,0
+  div $1,2
+  add $3,$1
+  mod $3,2
+  add $3,2
+  mul $3,2
+  mul $2,4
+  mul $2,$3
+  sub $3,2
 lpe
-add $1,3
-mov $0,$1
+mov $0,$3
+div $0,2
+add $0,3

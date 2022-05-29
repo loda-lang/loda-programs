@@ -4,8 +4,8 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,73627 ; a(1)=a(2)=1; for n > 2, a(n) is the smallest integer such that a(n) > a(n-1) and a(n)+a(n-1) is prime.
   mov $0,1
-  seq $2,73627 ; a(1)=a(2)=1; for n > 2, a(n) is the smallest integer such that a(n) > a(n-1) and a(n)+a(n-1) is prime.
 lpe
-mov $0,$2
+mov $0,$1

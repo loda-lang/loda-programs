@@ -4,8 +4,8 @@
 mov $1,2
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,2104 ; Logarithmic numbers.
+  mov $0,0
 lpe
 sub $1,1
 mov $0,$1

@@ -4,7 +4,6 @@
 
 mul $0,2
 lpb $0
-  add $0,36
   div $0,257
   sub $0,1
 lpe

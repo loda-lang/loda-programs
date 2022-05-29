@@ -1,9 +1,7 @@
 ; A111878: a(n) = denominator(digamma(n+7/2)/2 + log(2) + euler_gamma/2)/15; a(n)=denominator(f(n+2)/15) = A111877(n+1)/5.
-; Submitted by LeChat51X
+; Submitted by [SG]KidDoesCrunch
 ; 1,7,21,231,3003,3003,51051,969969,969969,22309287,111546435,334639305,9704539845,300840735195,300840735195,300840735195,11131107202215,11131107202215,456375395290815,19624141997505045,19624141997505045
 
 add $0,2
-mov $1,$0
-seq $1,25547 ; Least common multiple of {1,3,5,...,2n-1}.
-mov $0,$1
+seq $0,25547 ; Least common multiple of {1,3,5,...,2n-1}.
 div $0,15

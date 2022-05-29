@@ -5,8 +5,8 @@
 mov $2,$0
 mov $3,$0
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,129445 ; Numbers k > 0 such that k^2 is a centered triangular number.
   add $1,$0

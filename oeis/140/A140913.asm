@@ -1,17 +1,23 @@
 ; A140913: Number of 4 X 8 matrices with elements in 0..n with each row and each column in nondecreasing order. 4,8,n can be permuted, see formula.
-; Submitted by Jamie Morken(w2)
+; Submitted by Sphynx
 ; 1,495,70785,4723719,184225041,4789851066,90474964580,1318349483880,15484613937936,151561524301616,1268665346776464,9271015995674160,60142744792450320,351141102288229176,1866359220145419780,9118323640906544350,41286527321442170625
 
 add $0,3
+mov $1,$0
 mov $2,10
-mov $4,$0
-mov $0,17
+mov $0,16
+div $0,2
 lpb $0
-  sub $0,2
-  add $4,1
-  mov $3,$4
+  sub $0,1
+  add $1,1
+  mov $3,$1
   bin $3,4
   mul $2,$3
 lpe
+mul $0,$3
+div $0,7942117837500000
 mov $0,$2
-div $0,16044682500000
+div $0,26250
+div $0,8820
+div $0,210
+div $0,330

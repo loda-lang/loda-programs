@@ -2,8 +2,8 @@
 ; Submitted by Jon Maiga
 ; 1,2,4,6,8,10,12,15,16,18,20,26,24,26,28,34,32,39,36,44,40,42,44,60,48,50,54,62,56,72,60,73,64,66,68,94,72,74,76,98,80,100,84,98,96,90,92,130,96,107,100,116,104,130,108,136,112,114,116,172,120,122
 
-mov $2,$0
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,158901 ; A051731 * (1, 1, 2, 3, 4, 5, ...).
-seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $0,$2
 sub $0,1
+add $0,$1

@@ -9,19 +9,19 @@ sub $0,1
 mul $3,4
 add $3,1
 lpb $3
+  sub $3,1
   add $1,$2
   add $1,1
   add $2,$1
   mul $1,2
-  sub $3,1
 lpe
-mul $1,22
 mov $4,10
 pow $4,$0
 mov $5,$4
 cmp $5,0
 add $4,$5
 div $2,$4
+mul $1,22
 div $1,$2
 mov $0,$1
 mod $0,10

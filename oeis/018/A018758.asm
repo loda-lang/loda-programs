@@ -1,10 +1,9 @@
 ; A018758: Divisors of 984.
-; Submitted by [TA]crashtech
+; Submitted by arkiss
 ; 1,2,3,4,6,8,12,24,41,82,123,164,246,328,492,984
 
 mov $2,1
 lpb $0
-  add $1,24
   mul $1,24
   add $2,2
   mov $3,$2
@@ -18,7 +17,7 @@ lpb $0
   lpe
   add $2,1
   sub $0,1
-  mov $1,99
+  mov $1,123
 lpe
 mov $0,$2
 div $0,3

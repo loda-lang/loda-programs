@@ -1,18 +1,15 @@
 ; A265537: Largest base-7 palindrome m <= n, written in base 10.
-; Submitted by Skillz
+; Submitted by fzs600
 ; 0,1,2,3,4,5,6,6,8,8,8,8,8,8,8,8,16,16,16,16,16,16,16,16,24,24,24,24,24,24,24,24,32,32,32,32,32,32,32,32,40,40,40,40,40,40,40,40,48,48,50,50,50,50,50,50,50,57,57,57,57,57,57,57,64,64,64,64,64,64,64,71,71,71,71,71,71,71,78,78,78,78,78,78
 
 mov $2,$0
-mov $0,0
 lpb $2
-  mov $3,$2
-  seq $3,55955 ; a(n) = n - reversal of base 7 digits of n (written in base 10).
-  cmp $3,0
-  sub $0,$3
-  mov $1,$0
-  max $1,0
-  cmp $1,$0
-  mul $2,$1
+  mov $1,$2
+  seq $1,55955 ; a(n) = n - reversal of base 7 digits of n (written in base 10).
+  cmp $1,0
+  mov $0,1
+  sub $0,$1
+  mul $2,$0
   sub $2,1
 lpe
 mov $0,$2

@@ -1,8 +1,12 @@
 ; A165828: Totally multiplicative sequence with a(p) = 7.
-; Submitted by Jon Maiga
+; Submitted by biodoc
 ; 1,7,7,49,7,49,7,343,49,49,7,343,7,49,49,2401,7,343,7,343,49,49,7,2401,49,49,343,343,7,343,7,16807,49,49,49,2401,7,49,49,2401,7,343,7,343,343,49,7,16807,49,343,49,343,7,2401,49,2401,49,49,7,2401,7,49,343,117649,49,343,7,343,49,343,7,16807,7,49,343,343,49,343,7,16807,2401,49,7,2401,49,49,49,2401,7,2401,49,343,49,49,49,117649,7,343,343,2401
 
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-mov $2,7
-pow $2,$0
-mov $0,$2
+mov $1,1
+lpb $0
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+  mul $1,7
+lpe
+mov $0,$1

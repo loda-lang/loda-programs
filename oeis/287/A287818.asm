@@ -1,19 +1,17 @@
 ; A287818: Number of nonary sequences of length n such that no two consecutive terms have distance 3.
-; Submitted by Christian Krause
+; Submitted by gemini8
 ; 1,9,69,531,4089,31491,242529,1867851,14385369,110789811,853254609,6571393371,50609994249,389776014531,3001884188289,23119197549291,178053936060729,1371293449053651,10561101680875569,81336980637343611,626421808927336809,4824426473972595171
 
+mov $2,1
 mov $3,1
 lpb $0
   sub $0,1
-  mul $1,3
-  add $3,3
-  add $3,$1
-  add $1,$3
+  add $1,$2
   add $2,$3
-  sub $2,1
-  mov $3,$1
+  add $2,$1
+  mov $3,$2
+  mul $1,2
+  mul $2,2
   add $3,$2
 lpe
-mov $0,$1
-mul $0,2
-add $0,1
+mov $0,$3

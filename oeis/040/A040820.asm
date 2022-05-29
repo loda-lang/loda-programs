@@ -1,5 +1,5 @@
 ; A040820: Continued fraction for sqrt(850).
-; Submitted by Jon Maiga
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 29,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6,58,6,2,6
 
 seq $0,40281 ; Continued fraction for sqrt(299).
@@ -9,7 +9,6 @@ mov $2,$0
 div $2,14
 sub $0,$2
 div $0,3
-add $0,7
 mul $0,4
+add $0,1
 add $0,$1
-sub $0,27

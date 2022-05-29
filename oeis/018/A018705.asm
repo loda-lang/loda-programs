@@ -1,5 +1,5 @@
 ; A018705: Divisors of 891.
-; Submitted by [TA]crashtech
+; Submitted by Fornax
 ; 1,3,9,11,27,33,81,99,297,891
 
 lpb $0
@@ -19,6 +19,4 @@ lpb $0
   mov $1,99
 lpe
 mov $0,$2
-div $0,2
-mul $0,2
 add $0,1

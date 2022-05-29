@@ -8,9 +8,9 @@ pow $0,2
 lpb $2
   mov $3,$2
   gcd $3,$0
-  add $0,1
   cmp $3,1
   mul $3,$2
+  add $0,1
   add $1,$3
   sub $2,1
 lpe

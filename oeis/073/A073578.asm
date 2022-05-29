@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,99991 ; a(n) = Moebius(2n).
+  sub $0,1
   add $1,$2
 lpe
 sub $1,1

@@ -4,7 +4,6 @@
 
 mov $4,1
 mov $2,59969536
-add $2,$6
 lpb $2
   add $1,1
   mov $3,$1
@@ -14,7 +13,6 @@ lpb $2
   add $0,1
   add $1,$4
   mov $4,$0
-  sub $4,$6
   max $4,0
   cmp $4,$0
   add $5,12
@@ -22,9 +20,6 @@ lpb $2
   mul $2,$4
   sub $2,3
 lpe
-mov $0,$5
-div $0,12
-add $0,1
 mov $0,$1
 sub $0,14
 div $0,2

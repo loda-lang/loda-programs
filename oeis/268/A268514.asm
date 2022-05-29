@@ -5,8 +5,8 @@ mov $2,$0
 mov $3,$0
 add $3,1
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,80100 ; a(n) = 2^(number of 0's in binary representation of n).
   add $1,$0

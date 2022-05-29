@@ -4,11 +4,11 @@
 mul $0,2
 trn $0,1
 add $0,1
-mov $1,$0
 mov $2,4
+mov $1,$0
 lpb $1
-  add $0,1
   trn $1,$2
   add $1,2
+  add $0,1
   mul $2,2
 lpe

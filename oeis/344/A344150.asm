@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,151842 ; a(3n)=n, a(3n+1)=2n+1, a(3n+2)=n+1.
+  sub $0,1
   sub $0,$2
   add $1,1
 lpe

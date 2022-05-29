@@ -1,14 +1,7 @@
 ; A107790: Ones order in the tribonacci substitution of three symbols.
-; Submitted by emoga
+; Submitted by Sphynx
 ; 3,7,12,15,20,24,29,33,38,41,46,50,55,60,64,69,72,77,81,86,89,94,98,103,108,112,117,120,125,129,134,138,143,146,151,155,160,165,169,174,177,182,186,191,195,200,203,208,212,217,222,226,231,234,239,243,248,251
 
-add $0,52
-lpb $0
-  max $1,$0
-  seq $2,276789 ; First differences of A003145.
-  sub $0,1
-  add $1,$2
-  mov $2,$0
-lpe
-mov $0,$1
-sub $0,226
+mov $1,$0
+seq $0,287176 ; Positions of 1 in A287174.
+add $0,$1

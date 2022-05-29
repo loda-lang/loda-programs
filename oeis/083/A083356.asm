@@ -5,13 +5,13 @@
 mov $2,$0
 mov $4,$0
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   sub $0,$4
   mov $3,$0
   sub $0,1
   seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
   mul $0,$3
-  add $5,$0
+  add $1,$0
 lpe
-mov $0,$5
+mov $0,$1

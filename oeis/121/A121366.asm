@@ -4,9 +4,9 @@
 
 mov $2,2
 pow $2,$0
-bin $0,2
 pow $2,4
-mov $3,8
-pow $3,$0
-mul $2,$3
+bin $0,2
+mov $1,8
+pow $1,$0
+mul $2,$1
 mov $0,$2
