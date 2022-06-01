@@ -6,9 +6,9 @@ mov $2,$0
 mul $0,2
 seq $0,338720 ; Define b(1)=1 and for n>1, b(n)=n/b(n-1); then a(n) = nearest integer to b(n).
 mul $0,2
-mov $3,$2
-mul $3,2
-add $0,$3
+mov $1,$2
+mul $1,2
+add $0,$1
 add $0,$2
 add $0,$2
 div $0,2

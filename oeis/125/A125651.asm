@@ -4,8 +4,8 @@
 mov $1,2
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,72221 ; a(n) = 6*a(n-1) - a(n-2) + 2, with a(0)=1, a(1)=4.
+  mov $0,0
 lpe
 sub $1,1
 mov $0,$1

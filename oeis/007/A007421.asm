@@ -1,14 +1,6 @@
 ; A007421: Liouville's function: parity of number of primes dividing n (with multiplicity).
-; Submitted by Aurum
+; Submitted by Simon Strandgaard
 ; 2,1,1,2,1,2,1,1,2,2,1,1,1,2,2,2,1,1,1,1,2,2,1,2,2,2,1,1,1,1,1,1,2,2,2,2,1,2,2,2,1,1,1,1,1,2,1,1,2,1,2,1,1,2,2,2,2,2,1,2,1,2,1,2,2,1,1,1,2,1,1,1,1,2,1,1,2,1,1,1,2,2,1,2,2,2,2,2,1,2,2,1,2,2,2,2,1,1,1,2
 
-mov $1,17
-lpb $0
-  add $1,5
-  mov $2,$0
-  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  div $0,$2
-lpe
-mov $0,$1
-mod $0,2
-add $0,1
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+gcd $0,2

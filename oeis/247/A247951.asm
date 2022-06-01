@@ -5,7 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,1157 ; sigma_2(n): sum of squares of divisors of n.
+  seq $2,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
   sub $0,1
   mul $1,$2
   mov $2,$0

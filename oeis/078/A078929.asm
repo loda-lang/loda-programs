@@ -6,7 +6,6 @@ mov $4,$0
 mov $3,2
 lpb $3
   div $3,2
-  add $6,1
   mov $0,$4
   add $0,$3
   seq $0,156728 ; a(n) = abs(A054354(n)).
@@ -18,3 +17,4 @@ lpe
 sub $1,$5
 sub $6,$1
 mov $0,$6
+add $0,2

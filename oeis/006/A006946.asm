@@ -6,10 +6,10 @@ add $0,1
 mov $1,$0
 mov $3,$0
 lpb $3
-  mul $1,$3
   cmp $2,0
   max $4,1
   add $4,$2
+  mul $1,$3
   div $1,$4
   mul $1,2
   mov $2,0

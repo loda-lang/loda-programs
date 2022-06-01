@@ -4,7 +4,7 @@
 
 mov $1,2
 pow $1,$0
-add $0,20
 mul $1,9
+add $0,20
 max $0,$1
 add $0,49

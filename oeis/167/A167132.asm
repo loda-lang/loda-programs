@@ -1,8 +1,6 @@
 ; A167132: Gaps between twin prime pairs.
-; Submitted by Vato
+; Submitted by PDW
 ; 0,4,4,10,10,16,10,28,4,28,10,28,10,4,28,10,28,10,28,34,70,10,28,58,46,28,16,22,16,148,10,4,28,22,136,10,16,10,28,58,76,46,10,10,16,106,22,28,4,118,10,46,28,22,64,82,4,52,16,46,28,52,4,22,16,10,94,28,40,28,40,166,40,64,28,22,16,58,10,166,28,118,46,82,4,40,28,28,10,16,70,4,58,10,16,22,88,94,52,28
 
-pow $1,$0
-seq $0,204099 ; Number of integers between successive twin prime pairs.
-add $0,1
-sub $0,$1
+seq $0,53319 ; Distance between the smaller members of successive twin prime pairs.
+sub $0,2

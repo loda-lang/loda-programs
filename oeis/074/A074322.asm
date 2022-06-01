@@ -3,9 +3,9 @@
 
 mov $1,6
 lpb $1
+  sub $1,1
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $0,27
-  sub $1,1
 lpe
 pow $0,2
 div $0,3

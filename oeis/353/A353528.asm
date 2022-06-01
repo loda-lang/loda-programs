@@ -1,8 +1,15 @@
 ; A353528: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+1, otherwise a(n) = 0.
-; Submitted by zombie67 [MM]
+; Submitted by jmorken
 ; 0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 
-mov $1,$0
-seq $1,353529 ; a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
-sub $0,$1
+mov $1,2
+add $0,1
+pow $0,8
+lpb $0
+  dif $0,$1
+  add $1,1
+lpe
+mov $0,$1
+div $0,2
+sub $0,1
 mod $0,2

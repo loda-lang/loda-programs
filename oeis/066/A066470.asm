@@ -4,15 +4,15 @@
 
 mov $2,$0
 add $0,6
-mov $1,11
+mov $1,16
 add $2,8
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
   seq $3,66241 ; 1 + number of anti-divisors of n.
   cmp $3,6
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,6
   cmp $4,$0
@@ -20,4 +20,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,2
+add $0,1

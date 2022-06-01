@@ -1,10 +1,108 @@
 ; A186228: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the triangular numbers and heptagonal numbers.  Complement of A186227.
+; Submitted by JayPi
 ; 2,5,8,11,15,18,21,24,27,31,34,37,40,44,47,50,53,57,60,63,66,70,73,76,79,82,86,89,92,95,99,102,105,108,112,115,118,121,125,128,131,134,137,141,144,147,150,154,157,160,163,167,170,173,176,180,183,186,189,192,196,199,202,205,209,212,215,218,222,225,228,231,235,238,241,244,248,251,254,257,260,264,267,270,273,277,280,283,286,290,293,296,299,303,306,309
 
-mul $0,2
+add $16,2
+mul $21,$8
+sub $21,1
+mov $22,9
+sub $5,$8
+mov $5,8
+mov $17,$15
+add $19,3
+mov $5,1
 add $0,1
-max $1,$0
-seq $1,3259 ; Complement of A003258.
-sub $1,1
-sub $1,$0
+mov $2,1
+mul $8,2
+add $3,26
+mul $7,2
+mov $12,2
+mul $0,2
+lpb $3
+  sub $1,$4
+  mov $21,1
+  add $8,$1
+  max $9,1
+  add $0,$14
+  add $2,$1
+  sub $3,1
+  mov $15,$7
+  cmp $12,1
+  mov $20,1
+  pow $21,2
+  add $11,4
+  mov $20,$1
+  add $12,23
+  add $11,$6
+  add $1,1
+  mov $14,$1
+  sub $13,11
+  sub $6,1
+  mod $4,6
+  mov $4,0
+  mov $7,1
+  mov $12,1
+  mov $13,$7
+  add $1,$2
+lpe
+mov $7,$1
+mov $10,$7
+add $20,$13
+mul $1,$0
+mul $12,$21
+div $13,$0
+mul $19,$17
+bin $13,9
+div $1,$2
+add $14,$20
+add $4,1
+add $0,2
+mul $15,320
+mul $3,$12
 mov $0,$1
+sub $6,36
+add $5,4
+pow $10,2
+add $7,1
+add $1,11
+gcd $5,2
+mul $7,2
+mod $0,2
+mov $0,$1
+bin $15,14
+add $4,1
+mul $0,2
+pow $4,10
+pow $0,2
+add $4,$4
+mov $12,$1
+add $2,11
+mov $19,1
+add $2,$10
+sub $8,1
+add $8,1
+mov $12,1
+sub $0,1
+pow $7,$11
+pow $7,2
+mov $11,$2
+mov $0,$1
+sub $0,1
+add $15,1
+add $10,13
+mov $16,2
+mov $18,$17
+mov $17,47
+pow $4,2
+mul $1,$4
+sub $0,14
+mov $22,1
+mov $0,$1
+sub $0,11
+mov $0,$1
+mod $0,2
+add $0,2
+mod $0,2
+mov $0,$1
+div $0,4194304
+sub $0,25172538100

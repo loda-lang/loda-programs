@@ -5,8 +5,8 @@ add $0,1
 lpb $0
   mov $2,$0
   mul $2,$0
-  sub $0,1
   seq $2,195027 ; a(n) = 2*n*(7*n + 5).
+  sub $0,1
   add $1,$2
 lpe
 div $1,24

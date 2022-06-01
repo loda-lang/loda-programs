@@ -5,9 +5,9 @@
 mov $2,2
 add $2,$0
 mul $0,$2
-mov $3,$0
-seq $0,108954 ; a(n) = pi(2*n) - pi(n). Number of primes in the interval (n,2n].
 sub $2,1
-gcd $3,$2
-add $0,$3
+mov $1,$0
+gcd $1,$2
+seq $0,108954 ; a(n) = pi(2*n) - pi(n). Number of primes in the interval (n,2n].
 sub $0,1
+add $0,$1

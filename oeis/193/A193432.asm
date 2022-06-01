@@ -4,10 +4,10 @@
 
 lpb $0
   sub $0,2
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,193583 ; Number of fixed points under iteration of sum of squares of digits in base b.
   mov $0,0
-  max $2,0
-  seq $2,193583 ; Number of fixed points under iteration of sum of squares of digits in base b.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1
