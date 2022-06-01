@@ -9,7 +9,7 @@ lpe
 mov $2,$1
 sub $2,$0
 bin $1,$0
-sub $3,1
+mov $3,-1
 pow $3,$0
 mov $0,3
 pow $0,$2

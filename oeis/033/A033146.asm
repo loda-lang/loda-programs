@@ -1,14 +1,15 @@
 ; A033146: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 1,0,0.
-; Submitted by Jamie Morken(w1)
+; Submitted by JayPi
 ; 1,10,100,1001,10010,100100,1001001,10010010,100100100,1001001001,10010010010,100100100100,1001001001001,10010010010010,100100100100100,1001001001001001,10010010010010010,100100100100100100,1001001001001001001,10010010010010010010
 
-add $0,3
+mov $2,1
+add $0,1
 lpb $0
-  sub $0,3
-  mov $2,$0
-  max $2,0
-  seq $2,52268 ; First differences of 10^n (A011557).
+  sub $0,1
+  mul $1,5
+  mod $2,2
+  add $2,$1
   add $1,$2
+  sub $2,1
 lpe
 mov $0,$1
-div $0,9

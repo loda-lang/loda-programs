@@ -11,10 +11,6 @@ lpe
 min $2,$0
 mov $0,3
 pow $0,$2
-mul $0,4
 bin $1,$2
 mul $1,$0
 mov $0,$1
-sub $0,3
-div $0,4
-add $0,1

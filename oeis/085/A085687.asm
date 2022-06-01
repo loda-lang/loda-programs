@@ -7,9 +7,9 @@ add $2,2
 add $0,$2
 bin $0,$2
 mul $0,6
-mov $1,2
 add $2,1
-div $0,$2
+mov $1,2
 pow $1,$2
+div $0,$2
 mul $0,$1
 div $0,16

@@ -3,14 +3,14 @@
 
 pow $0,$0
 lpb $0
-  add $2,$0
+  add $1,$0
+  div $1,2
   sub $0,1
   div $0,9
-  div $2,2
 lpe
-lpb $2
-  sub $2,1
-  mul $2,2
-  mod $2,7
+lpb $1
+  sub $1,1
+  mul $1,2
+  mod $1,7
 lpe
-mov $0,$2
+mov $0,$1

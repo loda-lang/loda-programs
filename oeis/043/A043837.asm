@@ -1,0 +1,28 @@
+; A043837: Numbers n such that number of runs in the base 4 representation of n is congruent to 0 mod 6.
+; Submitted by Gunnar Hjern
+; 1092,1094,1095,1096,1097,1099,1100,1101,1102,1121,1122,1123,1124,1126,1127,1132,1133,1134,1137,1138,1139,1140,1142,1143,1144,1145,1147,1156,1158,1159,1160,1161,1163,1164,1165,1166
+
+mov $1,$0
+mov $2,$0
+add $2,11
+mov $6,1
+pow $2,2
+bin $2,2
+lpb $2
+  mov $3,$1
+  seq $3,43556 ; Number of runs in base-4 representation of n.
+  sub $3,1
+  cmp $3,5
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+  mov $5,0
+lpe
+mov $0,$1
+pow $5,2
+add $0,2187
+mov $0,$1

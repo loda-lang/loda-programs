@@ -7,6 +7,6 @@ add $0,1
 add $1,4
 mod $1,3
 lpb $1
-  mov $0,0
   sub $1,1
+  mov $0,0
 lpe

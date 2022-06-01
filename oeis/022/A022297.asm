@@ -2,18 +2,22 @@
 ; Submitted by JayPi
 ; 1,3,4,6,9,12,13,15,16,19,21,22,24,27,28,30,31,33,36,39,40,42,45,47,48,50,51,54,57,58,60,63,66,67,69,70,72,75,77,78,81,84,85,87,90,93,94,96,97,100,102,103,105,108,111,112,114,115,117,120,121,123,124
 
+sub $0,1
 mov $2,$0
-add $2,161
+add $0,2
+mul $2,2
+add $2,149
 lpb $2
   mov $3,$1
-  seq $3,78650 ; 2-A000002(n) where A000002 is the Kolakoski sequence.
+  seq $3,88569 ; Anti-Kolakoski sequence (sequence of run lengths never coincides with the sequence itself).
+  cmp $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
-  max $4,0
+  max $4,2
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,2
 lpe
 mov $0,$1
-bin $0,$4
+add $0,1

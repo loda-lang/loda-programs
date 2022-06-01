@@ -1,8 +1,99 @@
 ; A197879: Parity of floor(n*sqrt(8)).
-; Submitted by Jon Maiga
+; Submitted by Jason Jung
 ; 0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0
 
+sub $5,$13
+mul $4,2
+add $3,3
+mov $5,8
 add $0,1
+add $12,$1
+div $5,2
+add $10,1
+bin $4,$0
+add $7,1
+mov $2,1
+add $16,$14
+mov $19,1
+add $3,26
+add $16,1
+mul $13,2
+mul $20,2
+lpb $3
+  mov $11,2
+  mov $20,2
+  mov $17,1
+  mul $2,2
+  add $2,$1
+  mov $22,0
+  sub $3,1
+  add $21,21
+  mov $23,1
+  mov $22,2
+  mov $17,1
+  add $1,1
+  mov $8,$0
+  mul $8,$14
+  mov $9,$8
+  sub $3,1
+  mov $4,$8
+  mul $14,2
+  mov $7,1
+  mul $11,$7
+  mul $15,$13
+  add $3,1
+  mul $19,$17
+  add $1,$2
+lpe
+mul $4,4
+mul $3,2
 mul $0,2
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mov $23,8
+add $1,$2
+mul $1,$0
+add $9,1
+mov $22,1
+div $1,$2
+sub $0,2
+mov $20,2
+sub $4,2
+mov $16,8
+mod $0,2
+add $8,1
+mov $15,3
+mov $22,1
+sub $5,1
+add $1,7
+pow $18,5
+mov $0,$1
+add $1,1
+add $2,1
+add $7,2
+mov $17,$15
+div $14,2
+div $10,2
+add $12,4
+add $17,6
+add $0,4
+mov $0,$1
+mul $16,$5
+mov $18,11
+add $1,$2
+div $10,24
+add $6,2
+sub $0,2
+sub $10,10
+mov $15,$7
+mul $0,2
+add $0,6
+sub $14,2
+add $0,2
+sub $0,6
+sub $0,20
+div $0,2
+mov $21,2
+mov $21,3
+add $0,3
+mod $0,2
+add $0,2
 mod $0,2

@@ -6,8 +6,8 @@ mov $1,$0
 add $1,1
 mod $1,2
 mov $2,$0
-mul $0,$1
 mod $2,4
 mod $2,3
 min $2,1
+mul $0,$1
 add $0,$2

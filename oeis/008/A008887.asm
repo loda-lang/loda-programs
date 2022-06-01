@@ -1,13 +1,11 @@
 ; A008887: Aliquot sequence starting at 60.
-; Submitted by Jamie Morken(w4)
+; Submitted by ChelseaOilman
 ; 60,108,172,136,134,70,74,40,50,43,1,0
 
-seq $1,199310 ; 7*5^n+1.
-sub $1,3
+seq $1,199317 ; 2*6^n+1.
 mov $2,$0
-mov $0,16
+mov $0,20
 mul $0,$1
-sub $0,20
 lpb $2
   sub $2,1
   trn $0,1

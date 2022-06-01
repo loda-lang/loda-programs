@@ -5,10 +5,10 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  div $0,2
   sub $2,1
   gcd $2,2
   add $2,1
+  div $0,2
   mul $1,$2
 lpe
 max $1,2

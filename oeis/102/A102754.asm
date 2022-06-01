@@ -8,11 +8,11 @@ mov $2,1
 mov $3,$0
 mul $3,5
 lpb $3
-  mul $1,$3
   mov $5,$3
   mul $5,2
   add $5,1
   mul $2,$5
+  mul $1,$3
   add $1,$2
   cmp $4,0
   mov $5,$0
@@ -23,9 +23,9 @@ lpb $3
 lpe
 pow $1,2
 mul $1,2
-pow $2,2
 mov $6,10
 pow $6,$0
+pow $2,2
 div $2,$6
 div $1,$2
 mov $0,$1

@@ -1,8 +1,8 @@
 ; A033197: Discriminants of quadratic number fields Q(sqrt -n) for n squarefree.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Fardringle
 ; -4,-8,-3,-20,-24,-7,-40,-11,-52,-56,-15,-68,-19,-84,-88,-23,-104,-116,-120,-31,-132,-136,-35,-148,-152,-39,-164,-168,-43,-184,-47,-51,-212,-55,-228,-232,-59,-244,-248,-260,-264,-67,-276,-280,-71,-292,-296,-308,-312,-79,-328,-83,-340,-344,-87,-356,-91,-372,-376,-95,-388,-404,-408,-103,-420,-424,-107,-436,-440,-111,-452,-456,-115,-472,-119,-488,-123,-127,-516,-520,-131,-532,-536,-548,-552,-139,-564,-568,-143,-580,-584,-596,-151,-616,-155,-628,-632,-159,-644,-163
 
-seq $0,133466 ; Positive integers k for which there is exactly one integer i in {1,2,3,...,k-1} such that i*k is a square.
+seq $0,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
 sub $0,1
 seq $0,204993 ; Negative of the discriminant of quadratic field Q(sqrt(-n)).
 mul $0,-1

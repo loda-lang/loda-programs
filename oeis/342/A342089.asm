@@ -1,12 +1,80 @@
 ; A342089: Numbers that have two representations as the sum of distinct non-consecutive Lucas numbers (A000032).
-; Submitted by fzs600
+; Submitted by UBT - Mikeejones
 ; 5,12,16,23,30,34,41,45,52,59,63,70,77,81,88,92,99,106,110,117,121,128,135,139,146,153,157,164,168,175,182,186,193,200,204,211,215,222,229,233,240,244,251,258,262,269,276,280,287,291,298,305,309,316,320,327,334,338,345,352,356,363,367,374,381,385,392,399,403,410,414,421,428,432,439,443,450,457,461,468,475,479,486,490,497,504,508,515,522,526,533,537,544,551,555,562,566,573,580,584
 
-mov $1,$0
-add $1,1
-seq $1,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
-mul $0,5
-add $0,$1
-div $0,2
-add $0,$1
+add $0,1
+mov $11,10
+mul $8,2
+mov $5,8
+mul $4,$2
+mov $10,$8
+mul $7,2
+add $10,3
+pow $7,2
+mov $5,1
+sub $12,24
+mov $2,1
+sub $9,$5
+mul $3,3
+mov $13,$3
+add $3,26
+mul $3,2
+sub $2,1
+add $6,100
+lpb $3
+  mul $4,21
+  mov $4,$1
+  add $2,$1
+  sub $3,1
+  sub $4,1
+  mov $4,$9
+  add $6,4
+  add $1,1
+  mov $8,$0
+  mov $9,$8
+  mov $4,$8
+  div $6,4
+  mov $7,1
+  mod $6,2
+  add $1,$2
+lpe
+mov $7,$1
+add $7,2
+mul $1,$0
+mov $12,1
+div $1,$2
+add $0,$0
+add $2,1
+mov $0,$1
+mov $12,2
+mod $0,2
 add $0,2
+add $4,1
+mod $0,2
+mov $0,$1
+add $1,1
+mov $2,1
+pow $2,2
+sub $8,1
+add $4,$5
+add $0,3
+mov $0,$1
+sub $0,1
+add $0,2
+mul $1,3
+sub $0,2
+mul $0,2
+add $0,1
+add $8,$1
+add $0,1
+sub $0,2
+add $0,1
+sub $0,2
+add $0,1
+mul $9,2
+sub $0,2
+mod $1,$5
+add $10,$7
+add $0,4
+mov $0,$8
+sub $0,1

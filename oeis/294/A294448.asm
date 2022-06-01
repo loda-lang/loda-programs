@@ -1,6 +1,9 @@
 ; A294448: Discrepancy of the Kolakoski sequence A000002.
-; Submitted by PDW
+; Submitted by emoga
 ; -1,0,1,0,-1,0,-1,0,1,0,1,2,1,0,1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,-1,0,-1,-2,-1,-2,-1,0,-1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,-1,-2,-1,0,-1,0,1,0,-1,0,-1,0,1,0,1,2,1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,1,0,1,2,1,0,1,0,1,2,1,2,3,2,1,2,1,0,1,2
 
-seq $0,88568 ; 3*n - 2*(partial sums of Kolakoski sequence A000002).
-mul $0,-1
+mov $1,$0
+seq $0,74286 ; Partial sum of the Kolakoski sequence (A000002) minus n.
+mul $0,2
+sub $0,1
+sub $0,$1

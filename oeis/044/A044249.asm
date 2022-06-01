@@ -1,5 +1,5 @@
 ; A044249: Numbers n such that string 7,6 occurs in the base 8 representation of n but not of n-1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by JayPi
 ; 62,126,190,254,318,382,446,496,510,574,638,702,766,830,894,958,1008,1022,1086,1150,1214,1278,1342,1406,1470,1520,1534,1598,1662,1726,1790,1854,1918,1982,2032,2046,2110,2174,2238,2302
 
 mov $2,$0
@@ -19,10 +19,9 @@ lpb $2
   sub $2,1
   add $3,10
 lpe
-mov $0,$1
-mul $0,8
+mul $1,4
 pow $3,2
-mul $3,2
-add $3,$0
+add $3,$1
 mov $0,$3
+mul $0,2
 sub $0,186

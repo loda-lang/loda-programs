@@ -15,10 +15,5 @@ lpb $0
   bin $3,$0
   add $1,$3
   mov $3,$4
-  add $5,$1
-  mov $6,8
-  add $6,$5
 lpe
-mov $0,$6
-sub $0,8
 mov $0,$1

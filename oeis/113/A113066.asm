@@ -9,10 +9,10 @@ lpb $0
   mul $2,4
   sub $2,2
   bin $2,$0
-  trn $0,1
   bin $3,0
   mul $3,$2
   sub $4,1
-  add $5,$3
+  trn $0,1
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1

@@ -4,9 +4,9 @@
 
 mov $2,$0
 seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
-mov $1,$0
 add $2,$0
 add $2,1
-mov $0,$2
+mov $1,$0
 gcd $1,$2
+mov $0,$2
 div $0,$1
