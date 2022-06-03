@@ -1,0 +1,13 @@
+; A189915: Sequence for finding the day of the week for the first day of the month in a common (non-leap) year.
+; Submitted by PDW
+; 0,3,3,6,1,4,6,2,5,0,3,5
+
+seq $0,153841 ; First Sunday in n-th month of 365-day year starting on Tuesday
+seq $0,24639 ; n written in fractional base 7/2.
+add $0,1
+sub $1,$0
+mov $0,$1
+sub $0,3
+mod $0,10
+add $0,10
+mod $0,10
