@@ -1,0 +1,19 @@
+; A121013: Denominators of partial alternating sums of Catalan numbers scaled by powers of 1/(11^2) = 1/121.
+; Submitted by PDW
+; 1,121,14641,1771561,214358881,25937424601,285311670611,34522712143931,4177248169415651,505447028499293771,672749994932560009201,81402749386839761113321,9849732675807611094711841
+
+mov $1,1
+mov $3,1
+mul $0,2
+lpb $0
+  mov $2,$0
+  mul $3,$0
+  sub $0,1
+  div $2,2
+  add $2,1
+  mul $2,11
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1
