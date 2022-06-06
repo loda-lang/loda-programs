@@ -1,11 +1,9 @@
 ; A160959: ((2^b-1)/phi(n))*Sum_{d|n} Moebius(n/d)*d^(b-1) for b = 10.
-; Submitted by Jamie Morken(w1)
+; Submitted by eclipse99
 ; 1023,522753,10067343,133824768,499511463,5144412273,6880289823,34259140608,66051837423,255250357593,241218048687,1316969541888,904033571463,3515828099553,4915692307383,8770339995648,7582212353463
 
 mov $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,69094 ; Jordan function J_9(n).
-mul $0,2
 div $0,$1
-div $0,2
 mul $0,1023

@@ -4,8 +4,8 @@
 mov $6,$0
 mov $8,2
 lpb $8
-  mov $0,$6
   sub $8,1
+  mov $0,$6
   add $0,$8
   sub $0,1
   mov $7,$0
@@ -13,8 +13,8 @@ lpb $8
   lpb $0
     trn $0,1
     mov $2,$0
-    trn $0,1
     seq $2,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
+    trn $0,1
     mov $3,1
     add $3,$2
     mov $4,$2
@@ -24,12 +24,12 @@ lpb $8
   lpe
   mov $5,$8
   lpb $5
-    mov $1,$7
     sub $5,1
+    mov $1,$7
   lpe
 lpe
 lpb $6
-  sub $1,$7
   mov $6,0
+  sub $1,$7
 lpe
 mov $0,$1

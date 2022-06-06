@@ -3,10 +3,10 @@
 
 lpb $0
   add $1,$0
+  add $1,1
   mov $2,$0
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,$2
-  add $1,1
 lpe
 add $1,1
 mov $0,$1

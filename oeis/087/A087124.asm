@@ -4,21 +4,21 @@
 
 mov $3,1
 lpb $3
-  mov $2,2
   sub $3,1
-  mov $7,$0
+  mov $1,$0
+  mov $2,2
   lpb $2
     sub $2,1
-    add $0,$2
     add $6,1
+    add $0,$2
     lpb $0
       sub $0,1
       mov $5,$4
       mov $4,$6
       add $6,$5
     lpe
-    mov $0,$7
-    div $7,33
+    mov $0,$1
+    div $1,33
   lpe
 lpe
 mov $0,$4

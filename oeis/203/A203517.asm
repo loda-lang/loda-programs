@@ -5,8 +5,8 @@
 mov $1,4
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,69722 ; Number of rooted unicursal planar maps with n edges and exactly one vertex of valency 1 (unicursal means that exactly two vertices are of odd valency; there is an Eulerian path).
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

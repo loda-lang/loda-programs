@@ -1,9 +1,8 @@
 ; A075920: Seventh column of triangle A075501.
-; Submitted by Armin Gips
+; Submitted by joe carnivore
 ; 1,168,16632,1270080,82927152,4878631296,266658822144,13809041326080,686528482768128,33073815190800384,1554470788616718336,71638807647968870400,3249771974096785403904,145542549641019667218432
 
 mov $1,6
 pow $1,$0
-seq $0,135456 ; Number of surjections from an n-element set onto a seven-element set.
+seq $0,771 ; Stirling numbers of second kind, S(n,7).
 mul $0,$1
-div $0,5040

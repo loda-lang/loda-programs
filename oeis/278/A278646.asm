@@ -4,6 +4,6 @@
 
 mov $1,2
 mul $1,$0
-seq $0,5043 ; Riordan numbers: a(n) = (n-1)*(2*a(n-1) + 3*a(n-2))/(n+1).
 add $1,1
+seq $0,5043 ; Riordan numbers: a(n) = (n-1)*(2*a(n-1) + 3*a(n-2))/(n+1).
 mul $0,$1

@@ -1,8 +1,19 @@
 ; A078192: a(n) = floor(concatenation of n down to 1 divided by n).
-; Submitted by JayPi
+; Submitted by Dataman
 ; 1,10,107,1080,10864,109053,1093474,10956790,109739369,1098765432,100998877665,10092582304526,1009316229819563,100937222213403880,10094208074065843621,1009463320069436728395,100950083124771234567901
 
-mov $2,$0
-seq $0,422 ; Concatenation of numbers from n down to 1.
-add $2,1
-div $0,$2
+add $0,1
+mov $3,$0
+lpb $0
+  mov $2,$0
+  lpb $2
+    div $2,10
+    mul $1,10
+  lpe
+  add $1,$0
+  sub $0,1
+lpe
+mov $0,$1
+mul $0,10
+div $0,$3
+div $0,10

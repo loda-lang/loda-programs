@@ -1,18 +1,7 @@
 ; A206825: Number of solutions (n,k) of k^4=n^4 (mod n), where 1<=k<n.
-; Submitted by Jon Maiga
+; Submitted by TidalZelda
 ; 0,0,1,0,0,0,3,2,0,0,1,0,0,0,7,0,2,0,1,0,0,0,3,4,0,8,1,0,0,0,7,0,0,0,5,0,0,0,3,0,0,0,1,2,0,0,7,6,4,0,1,0,8,0,3,0,0,0,1,0,0,2,15,0,0,0,1,0,0,0,11,0,0,4,1,0,0,0,7,26,0,0,1,0,0,0,3,0,2,0,1,0,0,0,7,0,6,2,9,0
 
-add $0,2
-mov $2,$0
-lpb $0
-  mov $3,$0
-  mul $3,$0
-  pow $3,2
-  mod $3,$2
-  add $3,1
-  cmp $3,1
-  sub $0,1
-  add $1,$3
-lpe
-mov $0,$1
+add $0,1
+seq $0,190 ; Number of solutions to x^4 == 0 (mod n).
 sub $0,1

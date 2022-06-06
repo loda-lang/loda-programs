@@ -1,7 +1,80 @@
 ; A184523: Upper s-Wythoff sequence, where s=5n.  Complement of A184522.
-; Submitted by Christian Krause
+; Submitted by Dataman
 ; 6,12,18,24,30,37,43,49,55,61,68,74,80,86,92,99,105,111,117,123,130,136,142,148,154,161,167,173,179,185,191,198,204,210,216,222,229,235,241,247,253,260,266,272,278,284,291,297,303,309,315,322,328,334,340
 
-add $0,7
-seq $0,184531 ; Upper s-Wythoff sequence, where s=5n-4.  Complement of A184530.
-sub $0,40
+max $2,0
+mul $1,$14
+mov $19,1
+mov $5,8
+add $11,1
+div $5,2
+div $13,2
+add $0,1
+pow $5,2
+bin $4,$0
+add $2,1
+mul $2,2
+mov $2,1
+add $3,26
+mov $18,1
+mul $3,4
+lpb $3
+  mov $11,2
+  mul $4,21
+  add $12,1
+  add $2,$1
+  sub $3,1
+  add $2,$3
+  add $5,$7
+  add $1,1
+  mov $20,2
+  mov $8,$0
+  mov $16,2
+  mov $17,2
+  add $7,1
+  mov $9,$8
+  sub $3,1
+  mov $4,$8
+  mov $7,1
+  mul $1,5
+  add $1,$2
+  mov $19,1
+lpe
+mov $7,$1
+add $1,$2
+mul $1,$0
+div $1,$2
+sub $3,1
+mov $5,$7
+mov $0,$1
+add $11,2
+gcd $12,2
+add $8,1
+add $0,2
+sub $5,1
+mod $0,2
+add $11,4
+sub $0,$3
+mov $15,11
+add $7,2
+mul $0,2
+mov $21,3
+div $15,2
+mul $15,2
+sub $0,4
+add $0,4
+mov $12,2
+pow $7,5
+pow $6,4
+mov $17,1
+mov $0,$1
+pow $15,2
+sub $20,1
+mov $0,$1
+mov $2,2
+sub $0,2
+mov $21,1
+add $0,1
+mov $0,$1
+add $0,3
+sub $0,3

@@ -4,7 +4,7 @@
 
 lpb $0
   lpb $0
-    seq $0,194029 ; Natural fractal sequence of the Fibonacci sequence (1,2,3,5,8,...).
+    seq $0,194029 ; Natural fractal sequence of the Fibonacci sequence (1, 2, 3, 5, 8, ...).
     sub $0,2
   lpe
   sub $0,1

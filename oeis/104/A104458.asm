@@ -1,11 +1,11 @@
 ; A104458: Define the first two terms to be 2 and 3. All the other terms are obtained by concatenating the two previous terms.
-; Submitted by BarnardsStern
+; Submitted by [SG]KidDoesCrunch
 ; 2,3,23,323,23323,32323323,2332332323323,323233232332332323323,2332332323323323233232332332323323,3232332323323323233232332332323323323233232332332323323,23323323233233232332323323323233233232332323323323233232332332323323323233232332332323323
 
 mov $1,1
 mov $2,2
 mov $3,10
-mov $4,10
+mov $4,40
 lpb $0
   sub $0,1
   mov $5,$1
@@ -14,11 +14,8 @@ lpb $0
   mov $4,$2
   mul $4,$1
   add $4,$3
-  dif $4,2
   mov $2,$3
   mov $3,$5
 lpe
 mov $0,$4
-sub $0,10
-div $0,5
-add $0,2
+div $0,20

@@ -6,9 +6,9 @@ gcd $1,7
 add $1,30
 mov $2,$0
 mul $2,71
-add $1,$2
 mov $3,$0
 mul $3,$0
+add $1,$2
 mov $2,$3
 mul $2,35
 add $1,$2

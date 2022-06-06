@@ -7,8 +7,8 @@ add $2,1
 mov $0,$2
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  mov $0,0
 lpe
 mov $0,$1
 lpb $0

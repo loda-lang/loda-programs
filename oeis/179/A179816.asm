@@ -5,11 +5,11 @@
 mov $3,$0
 mov $4,2
 lpb $4
-  mov $0,$3
   sub $4,1
+  mov $5,0
+  mov $0,$3
   add $0,$4
   mul $0,10
-  mov $5,0
   lpb $0
     sub $0,2
     div $0,2
@@ -18,12 +18,12 @@ lpb $4
     seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
     add $5,$0
   lpe
-  mov $0,$5
   mov $2,$4
   mul $2,$5
-  add $6,$2
+  mov $0,$5
+  add $1,$2
 lpe
 min $3,1
 mul $3,$0
-mov $0,$6
+mov $0,$1
 sub $0,$3

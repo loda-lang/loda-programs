@@ -6,7 +6,7 @@ seq $0,246590 ; Even numbers whose odd part is of the form 4m+3; Numbers missing
 mov $2,$0
 div $2,2
 mod $2,2
-add $3,$0
-add $3,$2
-mov $0,$3
+add $1,$0
+add $1,$2
+mov $0,$1
 sub $0,1

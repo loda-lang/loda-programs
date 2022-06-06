@@ -1,10 +1,9 @@
 ; A125107: Subtract compositions (A011782) from Catalan numbers (A000108).
-; Submitted by Christian Krause
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,1,6,26,100,365,1302,4606,16284,57762,205964,738804,2666248,9678461,35324902,129579254,477507628,1767001046,6563596132,24465218444,91480466488,343055419346,1289895758716,4861929624236,18367319517720
 
-mov $3,$0
+mov $1,2
+pow $1,$0
 seq $0,262543 ; Number of rooted asymmetrical polyenoids of type U_n* having n edges.
-mov $2,2
-pow $2,$3
-sub $0,$2
+sub $0,$1
 div $0,2

@@ -9,9 +9,9 @@ lpb $3
   mov $5,$0
   max $5,0
   seq $5,270125 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 86", based on the 5-celled von Neumann neighborhood.
-  sub $0,1
   mov $2,$3
   mul $2,$5
+  sub $0,1
   sub $0,$1
   add $1,$2
   mov $4,$5

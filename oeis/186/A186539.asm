@@ -1,8 +1,81 @@
 ; A186539: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=-2+3j^2.  Complement of A186540.
+; Submitted by eclipse99
 ; 1,3,4,6,7,9,11,12,14,15,17,18,20,22,23,25,26,28,29,31,33,34,36,37,39,41,42,44,45,47,48,50,52,53,55,56,58,59,61,63,64,66,67,69,70,72,74,75,77,78,80,82,83,85,86,88,89,91,93,94,96,97,99,100,102,104,105,107,108,110,111,113,115,116,118,119,121,123,124,126,127,129,130,132,134,135,137,138,140,141,143,145,146,148,149,151,153,154,156,157
 
+add $7,1
+mov $8,3
+mul $6,$7
+mov $5,8
 add $0,1
-mov $1,$0
-seq $1,276883 ; Sums-complement of the Beatty sequence for 2 + sqrt(3).
-add $0,$1
+bin $4,28
+add $15,1
+add $2,-1
+mod $1,2
+mov $2,1
+add $3,26
+add $9,26
+lpb $3
+  sub $4,$1
+  add $5,2
+  mov $14,2
+  add $4,2
+  mov $11,2
+  add $2,$1
+  sub $3,1
+  add $2,$3
+  sub $1,1
+  add $5,$7
+  mul $1,2
+  mov $8,$0
+  add $8,14
+  mov $9,$8
+  add $13,3
+  mov $4,$8
+  mov $7,1
+  mov $5,1
+  add $1,$2
+  div $1,3
+lpe
+max $5,2
+sub $16,2
+pow $15,$5
+mov $12,2
+add $1,1
+add $1,$2
+mul $1,$0
+add $4,1
+mov $15,2
+div $1,$2
+add $2,1
+add $17,$9
+mov $13,1
+cmp $14,1
+add $0,1
+mov $11,2
+mod $0,2
+mov $0,$1
+add $1,1
+add $7,2
+mul $0,2
+mul $9,5
+sub $9,1
+add $9,$4
+mov $15,1
+mov $15,0
+mov $12,55
+add $2,1
 div $0,2
+add $0,2
+add $15,$8
+mov $0,$1
+sub $0,3
+mul $0,2
+add $0,3
+sub $0,5
+add $0,6
+sub $10,$9
+mul $3,$10
+sub $0,1
+sub $0,1
+div $0,2
+add $0,1

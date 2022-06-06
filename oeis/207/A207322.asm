@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,2893 ; a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(2*k,k).
+  sub $0,1
   add $1,$2
   mul $1,-1
 lpe

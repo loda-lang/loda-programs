@@ -1,11 +1,9 @@
 ; A040429: Continued fraction for sqrt(451).
-; Submitted by BarnardsStern
+; Submitted by [SG]KidDoesCrunch
 ; 21,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8,21,8,2,4,4,42,4,4,2,8
 
 mul $0,3
 seq $0,40335 ; Continued fraction for sqrt(354).
 mov $1,$0
-add $1,10
 dif $0,6
-sub $0,10
 add $0,$1

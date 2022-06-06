@@ -1,5 +1,13 @@
 ; A033128: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 1,0,1.
+; Submitted by Dataman
 ; 1,10,101,1011,10110,101101,1011011,10110110,101101101,1011011011,10110110110,101101101101,1011011011011,10110110110110,101101101101101,1011011011011011,10110110110110110,101101101101101101,1011011011011011011,10110110110110110110
 
-seq $0,33123 ; Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,1.
-seq $0,7091 ; Numbers in base 5.
+mov $1,1
+lpb $0
+  sub $0,1
+  mul $1,5
+  mod $2,2
+  add $2,$1
+  add $1,$2
+lpe
+mov $0,$1

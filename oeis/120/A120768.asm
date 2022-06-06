@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,120405 ; a(n) = 1, a(2) = 1, then append the dot product of (1,2) and (1,1) = 1*1, 1*2 = 1, 2; to the right of 1, 1; getting (1, 1, 1, 2). The next operation uses the dot product of (1, 2, 3, 4) and (1, 1, 1, 2), getting (1, 2, 3, 8) which we append to the right of (1, 1, 1, 2), getting (1, 1, 1, 2, 1, 2, 3, 8) and so on.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

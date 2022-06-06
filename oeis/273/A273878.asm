@@ -1,18 +1,10 @@
 ; A273878: Numerator of (2*(n+1)!/(n+2)).
-; Submitted by Christian Krause
+; Submitted by PDW
 ; 1,4,3,48,40,1440,1260,8960,72576,7257600,6652800,958003200,889574400,11623772160,163459296000,41845579776000,39520825344000,12804747411456000,12164510040883200,231704953159680000,4644631106519040000
 
+mov $1,$0
+add $1,2
 add $0,1
-lpb $0
-  sub $0,1
-  mov $2,4
-  mov $3,2
-  lpb $0
-    sub $0,1
-    mul $2,$3
-    add $3,1
-  lpe
-  dif $2,$3
-lpe
-mov $0,$2
-div $0,2
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $0,2
+dif $0,$1

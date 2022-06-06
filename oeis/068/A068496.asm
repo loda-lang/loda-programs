@@ -4,9 +4,9 @@
 
 add $0,1
 mov $1,$0
-min $0,1
 mov $2,2
-pow $2,$1
+pow $2,$0
+min $0,1
 lpb $1
   mul $0,$1
   mod $0,$2

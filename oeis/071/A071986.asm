@@ -1,14 +1,65 @@
 ; A071986: Parity of the prime-counting function pi(n).
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1
 
+sub $4,1
+mov $7,24
+mov $4,$3
+mov $1,6
+mul $5,8
+add $4,1
+mul $1,4
+mul $1,5
+sub $2,$0
+sub $1,16
+mul $3,4
 lpb $0
-  div $0,2
-  mul $0,2
-  trn $0,1
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $0,2
   add $2,1
+  max $1,1
+  mov $0,$1
+  mov $1,$8
 lpe
-mov $0,$2
+mov $9,1
+max $0,0
+seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
+sub $1,1
+add $1,7
 mod $0,2
+mov $5,$0
+mov $10,$9
+add $0,2
+mod $0,2
+add $0,1
+sub $0,1
+add $4,$3
+add $2,$4
+mod $0,2
+sub $3,1
+mod $0,2
+sub $4,$0
+add $0,1
+sub $2,1
+add $6,3
+mod $0,2
+add $0,2
+mul $1,$4
+mul $5,5
+add $0,$5
+add $7,10
+mov $10,$0
+mod $0,2
+add $3,10
+mod $0,2
+add $0,2
+mod $0,2
+dif $3,8
+mov $0,$4
+mod $0,2
+add $0,2
+sub $5,$5
+mov $0,$4
+sub $0,1
+mod $0,2
+add $0,2
+mod $0,2
+mov $0,$4

@@ -1,17 +1,16 @@
 ; A075140: Denominator of the generalized harmonic number H(n,5,2).
-; Submitted by Christian Krause
+; Submitted by AXm 77
 ; 2,14,84,1428,15708,141372,1130976,41846112,5978016,280966752,3652567776,69398787744,2151362420064,144141282144288,144141282144288,1008988975010016,41368547975410656,1199687891286909024
 
-add $0,1
 mov $1,1
-mov $2,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,1
+  add $2,2
   mul $3,$2
   add $3,$1
   mul $1,$2
-  add $2,4
+  add $2,3
 lpe
 gcd $3,$1
 div $1,$3

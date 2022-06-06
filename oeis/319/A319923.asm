@@ -1,9 +1,9 @@
 ; A319923: Quasi-primes: composite numbers k such that the least prime factor is greater than k^(1/(log log k)^2).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by [AF] Kalianthys
 ; 121,133,143,161,169,187,203,209,217,221,247,253,259,287,289,299,301,319,323,329,341,343,361,371,377,391,403,407,413,427,437,451,469,473,481,493,497,511,517,527,529,533,539,551,553,559,581,583,589,611,623,629,637,649,667,671
 
 add $0,4
-mov $1,4
+mov $1,24
 mov $2,$0
 pow $2,3
 lpb $2

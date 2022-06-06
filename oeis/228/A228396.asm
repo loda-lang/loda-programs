@@ -5,24 +5,24 @@ mov $8,$0
 mov $10,$0
 add $10,1
 lpb $10
-  mov $0,$8
-  mov $6,0
   sub $10,1
+  mov $0,$8
   sub $0,$10
   mov $5,$0
+  mov $6,0
   mov $7,$0
   add $7,1
   lpb $7
-    mov $0,$5
     sub $7,1
+    mov $0,$5
     sub $0,$7
     mov $3,$0
-    mul $3,2
     mov $4,$0
     mov $9,$0
     mul $0,2
-    mov $2,$4
+    mul $3,2
     trn $3,4
+    mov $2,$4
     trn $2,$3
     pow $9,2
     add $9,55

@@ -7,17 +7,17 @@ lpb $0
   sub $0,1
   add $2,1
   div $2,-1
-  bin $2,$0
   mul $4,2
+  mul $5,2
   mov $3,$4
   bin $3,$1
   add $1,1
+  bin $2,$0
   mul $2,$4
   mul $3,$2
+  add $3,$5
   mov $2,$1
   sub $2,$0
-  mul $5,2
-  add $3,$5
   add $4,2
   div $4,2
   add $5,$3

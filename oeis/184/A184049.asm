@@ -3,8 +3,8 @@
 
 lpb $0
   add $2,$1
-  add $1,1
   trn $2,$0
+  add $1,1
   trn $0,$1
 lpe
 bin $1,$2

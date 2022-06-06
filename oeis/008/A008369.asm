@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,212986 ; Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
+  sub $0,2
   add $1,$2
 lpe
 add $1,1

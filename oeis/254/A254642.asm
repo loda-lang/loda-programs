@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,253636 ; Second partial sums of eighth powers (A001016).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

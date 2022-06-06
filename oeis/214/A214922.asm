@@ -3,6 +3,6 @@
 
 mov $1,$0
 lpb $1
-  add $0,1
   mov $1,22
+  add $0,1
 lpe

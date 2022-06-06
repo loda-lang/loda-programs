@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $0,4
   seq $2,22354 ; Fibonacci sequence beginning 0, 20.
+  trn $0,4
   add $1,$2
 lpe
 div $1,20

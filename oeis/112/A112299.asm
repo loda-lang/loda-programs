@@ -7,12 +7,12 @@ mov $1,1
 mov $2,1
 mov $3,$0
 lpb $3
-  add $2,1
   sub $3,1
-  mov $5,-1
+  add $2,1
   mov $6,$0
   mod $6,$2
   cmp $6,0
+  mov $5,-1
   pow $5,$6
   mul $1,$5
   mov $4,$2
@@ -20,9 +20,9 @@ lpb $3
   mov $5,$2
   pow $5,$6
   mov $6,$0
+  mod $6,$4
   div $0,$5
   mod $0,4
-  mod $6,$4
   cmp $6,0
   cmp $6,0
   mul $1,$6

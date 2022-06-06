@@ -10,6 +10,7 @@ lpb $0
   mul $1,2
   sub $3,$4
   mov $4,$2
+  mov $6,$5
   mov $2,$3
   add $2,3
   add $2,$1
@@ -17,7 +18,6 @@ lpb $0
   sub $1,$2
   add $2,$1
   add $3,$5
-  mov $6,$5
   add $5,$2
   add $5,$4
   max $5,3

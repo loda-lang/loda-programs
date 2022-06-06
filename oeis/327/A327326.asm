@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
+  div $0,2
   add $1,$2
 lpe
 mov $0,$1

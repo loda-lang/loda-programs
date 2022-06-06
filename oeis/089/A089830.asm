@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  seq $2,116699 ; Number of permutations of length n which avoid the patterns 123 and 4312.
   sub $0,1
   add $1,$0
-  seq $2,116699 ; Number of permutations of length n which avoid the patterns 123 and 4312.
   add $1,$2
 lpe
 add $1,1

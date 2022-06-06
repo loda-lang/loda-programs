@@ -1,11 +1,13 @@
 ; A043088: (s(n)+1)/10, where s(n)=n-th base 10 palindrome that starts with 9.
-; Submitted by [SG-FC] hl
+; Submitted by Dataman
 ; 1,10,91,92,93,94,95,96,97,98,99,100,901,912,923,934,945,956,967,978,989,1000,9001,9011,9021,9031,9041,9051,9061,9071,9081,9091,9102,9112,9122,9132,9142,9152,9162,9172,9182,9192,9203
 
-mov $2,10000
+mov $1,9
+mov $2,$0
+mul $2,31
+pow $2,2
 lpb $2
   mov $3,$1
-  add $3,9
   seq $3,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
   sub $0,$3
   add $1,10

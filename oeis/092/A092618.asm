@@ -4,11 +4,11 @@
 
 mov $1,524288
 mov $3,$0
-mul $3,3
 mov $5,$0
 sub $5,$0
 cmp $5,0
 add $0,$5
+mul $3,3
 lpb $3
   mul $1,$3
   mul $1,5

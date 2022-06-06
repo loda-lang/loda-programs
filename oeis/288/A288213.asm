@@ -1,7 +1,8 @@
 ; A288213: Fixed point of the mapping 00->0010, 1->011, starting with 00.
+; Submitted by joe carnivore
 ; 0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0
 
-trn $0,1
-seq $0,184117 ; Lower s-Wythoff sequence, where s(n) = 2n + 1.
+mul $0,2
+seq $0,3152 ; A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
 sub $0,1
 mod $0,2

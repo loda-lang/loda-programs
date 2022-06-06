@@ -6,8 +6,8 @@ mul $1,2
 sub $1,1
 mul $1,2
 lpb $1
-  sub $0,1
   sub $1,1
   add $2,2
+  sub $0,1
   trn $1,$2
 lpe

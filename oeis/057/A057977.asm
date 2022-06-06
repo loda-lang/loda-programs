@@ -3,8 +3,8 @@
 
 mov $1,$0
 div $1,2
-bin $0,$1
 mov $2,-2
 sub $2,$1
 bin $2,$1
+bin $0,$1
 gcd $0,$2

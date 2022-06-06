@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,166229 ; Expansion of (1-2x-sqrt(1-8x+8x^2))/(2x).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

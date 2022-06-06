@@ -9,10 +9,10 @@ lpb $0
   mul $2,4
   mov $4,3
 lpe
+mul $2,3
 pow $4,$3
 mul $4,4
 add $1,$4
-mul $2,3
 add $1,$2
 mov $0,$1
 div $0,4

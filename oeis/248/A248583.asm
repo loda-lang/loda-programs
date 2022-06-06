@@ -5,10 +5,7 @@ add $0,2
 mul $0,2
 seq $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
-mov $2,2
 lpb $1
   mod $1,6
 lpe
 mul $0,$1
-add $0,$2
-sub $0,2

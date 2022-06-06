@@ -1,26 +1,19 @@
 ; A160134: Nonprimitive e-perfect numbers.
-; Submitted by Christian Krause
+; Submitted by vanos0512
 ; 180,252,396,468,612,684,828,1044,1116,1260,1332,1476,1548,1692,1908,1980,2124,2196,2340,2412,2556,2628,2772,2844,2988,3060,3204,3276,3420,3492,3636,3708,3852,3924,4068,4140,4284,4572,4716
 
-mov $4,6
+add $0,2
+mov $1,2
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,125287 ; a(n) = mu(n) * A000217(n).
-  add $3,$4
-  gcd $3,2
+  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$3
-  add $0,1
-  add $1,5
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,6
+  sub $2,$0
 lpe
 mov $0,$1
-mul $0,6
-add $0,6
+div $0,3
+add $0,1
+mul $0,36

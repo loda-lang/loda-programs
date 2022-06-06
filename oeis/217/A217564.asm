@@ -4,8 +4,8 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   max $0,0
   seq $0,79952 ; Number of primes less than prime(n)/2.

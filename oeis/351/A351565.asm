@@ -1,7 +1,13 @@
 ; A351565: Odd part of Kimberling's paraphrases: a(n) = A000265(A003602(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Fardringle
 ; 1,1,1,1,3,1,1,1,5,3,3,1,7,1,1,1,9,5,5,3,11,3,3,1,13,7,7,1,15,1,1,1,17,9,9,5,19,5,5,3,21,11,11,3,23,3,3,1,25,13,13,7,27,7,7,1,29,15,15,1,31,1,1,1,33,17,17,9,35,9,9,5,37,19,19,5,39,5,5,3,41,21,21,11,43,11,11,3,45,23,23,3,47,3,3,1,49,25,25,13
 
-seq $0,110963 ; Fractalization of Kimberling's sequence beginning with 1.
-mul $0,2
-sub $0,1
+add $0,1
+lpb $0
+  dif $0,4
+lpe
+add $0,2
+div $0,2
+lpb $0
+  dif $0,2
+lpe

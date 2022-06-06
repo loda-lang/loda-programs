@@ -5,25 +5,25 @@
 mov $1,3
 mov $6,2
 lpb $6
+  mov $6,0
   mov $2,$0
   add $2,1
   mov $4,2
-  mov $6,0
   lpb $4
-    mov $0,$2
-    add $1,2
     sub $4,1
+    mov $0,$2
     add $0,$4
     trn $0,1
     seq $0,90076 ; a(n) = prime(n)*prime(n+2).
     mov $3,$4
     mul $3,$0
+    add $1,2
     add $1,$3
     mov $5,$0
   lpe
-  mov $0,-1
   min $2,1
   mul $2,$5
+  mov $0,-1
   sub $1,$2
 lpe
 mov $0,$1

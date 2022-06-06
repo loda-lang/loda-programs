@@ -9,12 +9,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,43751 ; Numbers n such that number of runs in the base 2 representation of n is congruent to 5 mod 8.
-  mov $1,-9
   add $1,$2
   mov $3,8
   pow $3,$1
 lpe
-mov $0,$1
-add $0,9
-div $0,2
 mov $0,$2

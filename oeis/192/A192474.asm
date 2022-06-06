@@ -1,25 +1,19 @@
 ; A192474: Constant term of the reduction by x^2->x+1 of the polynomial p(n,x)=1+x^(n+1)+x^(2n).
-; Submitted by Jon Maiga
+; Submitted by fzs600
 ; 3,4,8,17,40,98,247,632,1632,4237,11036,28802,75259,196796,514840,1347257,3526176,9230050,24161999,63252752,165591088,433512149,1134931828,2971261442,7778817075,20365132468,53316487592,139584180257,365435810392
 
-mov $3,1
-lpb $3
-  mov $2,2
-  sub $3,1
-  mov $7,$0
-  lpb $2
-    sub $2,1
-    add $6,2
-    lpb $0
-      sub $0,1
-      mov $5,$4
-      mov $4,$6
-      add $6,$5
-    lpe
-    mov $0,$7
-    div $7,30
-  lpe
+mov $1,-1
+lpb $0
+  sub $0,1
+  add $4,$1
+  sub $1,1
+  add $1,$4
+  sub $3,$4
+  add $4,1
+  add $5,2
+  add $5,$2
+  mov $2,$3
+  mov $3,$5
 lpe
-mov $0,$6
-div $0,2
-add $0,1
+mov $0,$2
+add $0,3

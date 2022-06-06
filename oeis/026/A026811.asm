@@ -4,8 +4,8 @@
 lpb $0
   sub $0,5
   mov $1,$0
-  mov $0,4
   max $1,0
   seq $1,1401 ; Number of partitions of n into at most 5 parts.
+  mov $0,4
 lpe
 mov $0,$1

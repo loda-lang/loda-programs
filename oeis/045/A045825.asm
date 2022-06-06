@@ -4,6 +4,6 @@
 
 mul $0,2
 add $0,2
-mov $2,$0
-seq $2,7331 ; Fourier coefficients of E_{infinity,4}.
-mov $0,$2
+mov $1,$0
+seq $1,7331 ; Fourier coefficients of E_{infinity,4}.
+mov $0,$1

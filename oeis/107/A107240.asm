@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,141583 ; Squares of tribonacci numbers A000213.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

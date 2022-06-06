@@ -1,10 +1,14 @@
 ; A098102: Numbers of the form 2^(p - 1) - 1 where p is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Dingo
 ; 1,3,15,63,1023,4095,65535,262143,4194303,268435455,1073741823,68719476735,1099511627775,4398046511103,70368744177663,4503599627370495,288230376151711743,1152921504606846975
 
-seq $0,40 ; The prime numbers.
-mov $2,2
-pow $2,$0
-mov $0,$2
-sub $0,2
+add $0,1
+sub $2,$0
+mov $0,0
+sub $0,$2
+seq $0,15919 ; Positive integers n such that 2^n == 2 (mod n).
+mov $1,2
+pow $1,$0
+mov $0,$1
 div $0,2
+sub $0,1

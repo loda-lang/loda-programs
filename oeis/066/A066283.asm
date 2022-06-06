@@ -1,5 +1,5 @@
 ; A066283: Number of 3-dimensional polyominoes (or polycubes) with n cells and symmetry group of order exactly 6.
-; Submitted by biodoc
+; Submitted by AXm 77
 ; 0,0,0,0,0,1,0,0,0,2,0,5,2,4
 
 mov $1,1
@@ -22,6 +22,4 @@ lpb $0
   mov $1,$6
 lpe
 mov $0,$5
-mod $0,10
-add $0,10
 mod $0,10
