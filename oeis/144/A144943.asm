@@ -6,9 +6,9 @@ seq $0,15995 ; a(n) = (tau(n^3)+2)/3.
 mov $2,4
 mul $2,$0
 sub $2,$0
+mov $1,$0
+cmp $1,1
 mov $3,$2
-mov $4,$0
-cmp $4,1
-add $3,$4
+add $3,$1
 mov $0,$3
 sub $0,4

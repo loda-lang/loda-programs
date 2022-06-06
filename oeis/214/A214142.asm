@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,242985 ; a(n) = 4^n + 2^(n+1).
+  sub $0,2
   add $1,$2
 lpe
 div $1,8

@@ -6,8 +6,8 @@ mov $2,1
 mov $3,$0
 mov $0,0
 lpb $3
-  mul $1,$0
   mul $2,$3
+  mul $1,$0
   add $1,$2
   sub $3,1
   max $3,1

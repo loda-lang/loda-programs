@@ -1,16 +1,15 @@
 ; A194005: Triangle of the coefficients of an (n+1)-th order differential equation associated with A103631.
-; Submitted by Stefano Spezia
+; Submitted by Fornax
 ; 1,1,1,1,2,1,1,3,2,1,1,4,3,3,1,1,5,4,6,3,1,1,6,5,10,6,4,1,1,7,6,15,10,10,4,1,1,8,7,21,15,20,10,5,1,1,9,8,28,21,35,20,15,5,1,1,10,9,36,28,56,35,35,15,6,1,1,11,10,45,36,84,56,70,35,21,6,1,1,12,11,55,45,120,84,126,70,56,21,7,1,1,13,12,66,55,165,120,210,126
 
 lpb $0
-  sub $0,1
-  add $1,1
-  mov $2,$1
-  trn $2,$0
-  trn $0,$1
-  add $1,$2
+  add $2,1
+  sub $0,$2
 lpe
-add $1,1
+mov $1,$0
 div $1,2
-bin $1,$2
-mov $0,$1
+sub $0,$2
+sub $2,$1
+add $0,$2
+bin $2,$0
+mov $0,$2

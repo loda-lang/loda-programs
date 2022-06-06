@@ -1,5 +1,5 @@
 ; A049447: Stirling numbers of second kind: 9th column of Stirling2 triangle A008277.
-; Submitted by PDW
+; Submitted by [AF] Kalianthys
 ; 1,45,1155,22275,359502,5135130,67128490,820784250,9528822303,106175395755,1144614626805,12011282644725,123272476465204,1241963303533920,12320068811796900,120622574326072500,1167921451092973005,11201516780955125625,106563273280541795575
 
 mov $1,1
@@ -10,8 +10,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,49434 ; Stirling numbers of second kind: 8th column of Stirling2 triangle A008277.
-  sub $0,$1
-  mul $1,10
+  mul $1,9
   add $1,$0
 lpe
 mov $0,$1

@@ -3,9 +3,9 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 sub $0,2
-mov $2,10
-max $2,$0
-mod $2,$0
+mov $1,10
+max $1,$0
+mod $1,$0
 mul $0,2
-trn $0,$2
+trn $0,$1
 add $0,4

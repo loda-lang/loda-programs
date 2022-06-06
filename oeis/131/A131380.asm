@@ -6,5 +6,5 @@ mov $1,$0
 div $1,3
 sub $1,$0
 gcd $0,3
-sub $0,$1
 sub $0,13
+sub $0,$1

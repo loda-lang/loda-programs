@@ -1,8 +1,9 @@
 ; A095805: Reduced numerators in Wolfram's iteration for sqrt(2).
-; Submitted by Christian Krause
+; Submitted by [AF] Kalianthys
 ; 0,1,1,5,11,11,45,45,181,181,181,181,181,181,11585,11585,11585,92681,185363,370727,741455,741455,741455,5931641,11863283,11863283,11863283,94906265,189812531,189812531,189812531,1518500249
 
 seq $0,95804 ; Values of s in Wolfram's iteration for sqrt(2).
 lpb $0
+  dif $0,2
   dif $0,2
 lpe

@@ -4,8 +4,8 @@
 
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
 lpb $0
-  add $2,1
   div $0,2
+  add $2,1
 lpe
 mov $1,$2
 cmp $1,0

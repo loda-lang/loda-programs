@@ -1,6 +1,21 @@
 ; A213976: a(n) = n-th term of A106750 reversed.
-; Submitted by Simon Strandgaard
+; Submitted by Sir Stooper
 ; 2,1,21,121,21121,12121121,2112112121121,121211212112112121121,2112112121121121211212112112121121,1212112121121121211212112112121121121211212112112121121,21121121211211212112121121121211211212112121121121211212112112121121121211212112112121121
 
-seq $0,106750 ; Define the "Fibonacci" morphism f: 1->12, 2->1 and let a(0) = 2; then a(n+1) = f(a(n)).
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+mov $1,1
+mov $3,10
+mov $4,10
+lpb $0
+  sub $0,1
+  mov $5,$1
+  mul $1,$3
+  mov $3,$4
+  mov $4,$2
+  mul $4,$1
+  add $4,$3
+  dif $4,2
+  mov $2,$3
+  mov $3,$5
+lpe
+mov $0,$4
+div $0,5

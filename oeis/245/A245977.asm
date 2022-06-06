@@ -1,18 +1,8 @@
 ; A245977: Limit-reverse of the infinite Fibonacci word A014675 = (s(0),s(1),...) = (2,1,2,2,1,2,1,2, ...) using initial block (s(2),s(3)) = (2,2).
-; Submitted by JayPi
+; Submitted by [AF] Kalianthys
 ; 2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1
 
-mov $2,4
+add $0,2
+seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+mod $0,2
 add $0,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  mul $3,2
-  add $3,$1
-  mod $3,2
-  add $3,2
-  add $1,1
-  mul $2,$3
-lpe
-mov $0,$3

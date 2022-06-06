@@ -1,68 +1,8 @@
 ; A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
-; Submitted by joe carnivore
+; Submitted by JayPi
 ; 2,5,7,10,13,15,18,20,23,26,28,31,34,36,39,41,44,47,49,52,54,57,60,62,65,68,70,73,75,78,81,83,86,89,91,94,96,99,102,104,107,109,112,115,117,120,123,125,128,130,133,136,138,141,143,146,149,151,154,157,159,162,164,167,170,172,175,178,180,183,185,188,191,193,196,198,201,204,206,209,212,214,217,219,222,225,227,230,233,235,238,240,243,246,248,251,253,256,259,261
 
-mov $5,8
-mov $15,$5
+mov $1,$0
+seq $1,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+add $0,$1
 add $0,1
-bin $4,$0
-add $2,1
-mul $10,$12
-mov $11,3
-add $10,1
-mov $12,-1
-mov $2,1
-mov $11,1
-add $3,26
-mul $3,4
-lpb $3
-  mov $13,1
-  mov $4,$1
-  add $2,$1
-  sub $3,1
-  mov $12,1
-  trn $9,1
-  add $5,$7
-  mov $4,1
-  mov $8,$0
-  sub $3,5
-  mov $9,$8
-  mov $4,$8
-  trn $8,$5
-  mov $11,1
-  add $12,1
-  mul $10,2
-  mov $5,1
-  add $1,$2
-  mul $6,9
-lpe
-mov $14,$1
-sub $10,1
-add $1,$2
-mov $10,1
-div $8,2
-mul $1,$0
-div $1,$2
-mov $0,$1
-add $9,$10
-add $0,2
-mod $0,2
-mov $0,$1
-add $11,$2
-add $7,2
-mul $5,425
-sub $0,4
-div $0,2
-add $0,2
-bin $11,2
-sub $0,14
-mul $0,2
-add $0,2
-sub $0,2
-sub $8,676
-div $0,2
-add $0,2
-add $0,70
-sub $0,1
-sub $0,57
-mov $0,$1

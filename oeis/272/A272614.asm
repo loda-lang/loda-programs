@@ -1,20 +1,18 @@
 ; A272614: Numbers whose binary digits, except for the first "1", are given by floor(((k-n)/n) mod 2) with 1<=k<=n.
-; Submitted by Jon Maiga
+; Submitted by TidalZelda
 ; 1,2,6,8,28,40,104,144,496,672,1632,2240,7872,11648,27520,33536,120576,175616,445952,629760,2014208,2701312,6453248,8712192,33353728,48881664,114548736,144949248,476561408,684687360,1787789312,2501836800,8510177280,11647451136,27590000640
 
-mov $2,2
 mov $4,$0
+mov $2,2
 lpb $2
   sub $2,1
-  add $0,$2
-  sub $0,1
   lpb $0
     sub $0,1
-    mul $1,2
     add $3,1
     mov $5,$4
     div $5,$3
     gcd $5,2
+    mul $1,2
     add $1,$5
   lpe
 lpe

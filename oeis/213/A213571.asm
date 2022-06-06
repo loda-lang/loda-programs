@@ -1,6 +1,24 @@
 ; A213571: Rectangular array:  (row n) = b**c, where b(h) = h, c(h) = (n-1+h)^2, n>=1, h>=1, and ** = convolution.
-; Submitted by Jamie Morken(w2)
+; Submitted by BarnardsStern
 ; 1,5,3,16,13,7,42,38,29,15,99,94,82,61,31,219,213,198,170,125,63,466,459,441,406,346,253,127,968,960,939,897,822,698,509,255,1981,1972,1948,1899,1809,1654,1402,1021,511,4017,4007,3980,3924,3819,3633,3318,2810,2045,1023,8100,8089,8059,7996,7876,7659,7281,6646,5626,4093,2047,16278,16266,16233,16163,16028,15780,15339,14577,13302,11258,8189,4095,32647,32634,32598,32521,32371,32092,31588,30699,29169,26614,22522,16381,8191,65399,65385,65346,65262,65097,64787,64220,63204,61419
 
-seq $0,130328 ; Triangle of differences between powers of 2, read by rows.
-seq $0,330072 ; a(n) is the sum of all integers whose binary representation is contained in the binary representation of n (with multiplicity).
+mov $3,2
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+pow $3,$0
+mul $3,2
+sub $3,1
+sub $0,$2
+sub $0,1
+dif $0,-1
+lpb $0
+  sub $0,1
+  add $1,$3
+  mul $1,2
+  add $3,1
+  add $4,$1
+lpe
+mov $0,$4
+div $0,2

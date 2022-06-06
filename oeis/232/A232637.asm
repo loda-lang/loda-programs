@@ -4,8 +4,8 @@
 
 mov $1,56
 lpb $1
+  div $1,9
   seq $0,69 ; Odious numbers: numbers with an odd number of 1's in their binary expansion.
   sub $0,1
-  div $1,9
 lpe
 add $0,1

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,51674 ; a(n) = prime(n)^prime(n).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

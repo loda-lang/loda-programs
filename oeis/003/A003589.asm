@@ -1,34 +1,8 @@
 ; A003589: a(n) has the property that the sequence b(n) = number of 2's between successive 3's is the same as the original sequence.
+; Submitted by PDW
 ; 2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2,2,3,2,2,2,3,2,2,3,2
 
-mov $2,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  mov $0,$2
-  add $0,$5
-  sub $0,1
-  mov $4,$0
-  add $0,3
-  mov $3,1
-  add $3,$4
-  add $3,$0
-  div $4,8
-  add $4,$3
-  mov $0,$4
-  div $0,7
-  mul $0,5
-  mov $6,$0
-  mov $7,$5
-  lpb $7
-    sub $7,1
-    mov $1,$0
-  lpe
-lpe
-lpb $2
-  mov $2,0
-  sub $1,$6
-lpe
-div $1,5
-add $1,2
-mov $0,$1
+seq $0,188590 ; [(n+1)*r] - [n*r], where r = 3/2 + sqrt(13)/2 and [...] denotes the floor function.
+mul $0,25
+sub $0,25
+div $0,25

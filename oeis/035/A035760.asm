@@ -9,9 +9,9 @@ lpb $0
   sub $0,2
   add $2,20
   bin $2,$0
-  add $0,1
   mov $3,23
   bin $3,$1
+  add $0,1
   add $1,1
   mul $3,2
   mul $3,$2

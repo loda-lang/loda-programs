@@ -1,24 +1,23 @@
 ; A265155: Integers which are unique starting points for the algorithm described in A090566.
-; Submitted by Jon Maiga
+; Submitted by [AF] Kalianthys
 ; 1,2,4,8,10,11,14,15,16,17,18,19,21,22,23
 
-mov $4,$0
-add $4,1
 mov $7,$0
+mov $4,$0
 lpb $4
-  mov $0,$7
   sub $4,1
+  mov $0,$7
   sub $0,$4
-  mov $9,2
   mov $10,0
   mov $11,$0
+  mov $9,2
   lpb $9
-    mov $0,$11
-    mov $2,0
     sub $9,1
+    mov $0,$11
     add $0,$9
     sub $0,1
     mov $1,1
+    mov $2,0
     mov $3,$0
     mul $3,4
     sub $3,6
@@ -50,3 +49,4 @@ lpb $4
   add $6,$0
 lpe
 mov $0,$6
+add $0,1

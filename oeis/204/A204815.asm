@@ -3,11 +3,11 @@
 
 pow $0,$0
 lpb $0
-  mov $2,$0
+  mov $1,$0
   mov $0,0
-  lpb $2
-    dif $2,5
+  lpb $1
+    dif $1,5
   lpe
-  mod $2,5
+  mod $1,5
 lpe
-mov $0,$2
+mov $0,$1

@@ -1,17 +1,6 @@
 ; A014021: Inverse of 12th cyclotomic polynomial.
-; Submitted by Jamie Morken(w2)
+; Submitted by PDW
 ; 1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0
 
-mov $4,1
-lpb $0
-  sub $0,1
-  sub $5,$4
-  mov $2,$4
-  add $2,$3
-  mov $3,$4
-  mov $4,$1
-  add $4,$5
-  add $4,1
-  mov $1,$2
-lpe
-mov $0,$4
+mul $0,2
+seq $0,14033 ; Inverse of 24th cyclotomic polynomial.

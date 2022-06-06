@@ -1,11 +1,9 @@
 ; A305393: First differences of A140102.
-; Submitted by Coleslaw
+; Submitted by [AF] Kalianthys
 ; 1,2,1,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,2,1,1,1,2,1,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,2,1,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,2,1,1,1,2,1,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,2
 
 seq $0,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
 seq $0,100892 ; a(n) = (2*n-1) XOR (2*n+1), bitwise.
-div $0,4
-add $0,2
-bin $0,3
-mod $0,10
+div $0,6
+mod $0,2
 add $0,1

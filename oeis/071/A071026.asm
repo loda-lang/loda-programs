@@ -4,9 +4,9 @@
 mov $2,1
 lpb $0
   mov $1,$0
-  sub $0,$2
   dif $1,$2
   bin $1,3
+  sub $0,$2
   add $2,1
 lpe
 add $1,1

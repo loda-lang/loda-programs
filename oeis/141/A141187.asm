@@ -5,11 +5,11 @@
 mul $0,2
 lpb $0
   sub $0,1
-  mov $2,$0
+  mov $1,$0
+  div $1,2
+  seq $1,68231 ; Primes congruent to 11 mod 12.
+  sub $1,3
   mov $0,1
-  div $2,2
-  seq $2,68231 ; Primes congruent to 11 mod 12.
-  sub $2,3
 lpe
-mov $0,$2
+mov $0,$1
 add $0,3

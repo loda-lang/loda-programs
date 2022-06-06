@@ -4,7 +4,7 @@
 
 add $0,6
 mov $1,$0
-add $0,36
 bin $1,6
+add $0,36
 mul $0,$1
 div $0,7

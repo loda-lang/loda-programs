@@ -1,5 +1,5 @@
 ; A146566: Numbers k such that k*sigma_0(k) is divisible by (k - sigma_0(k)).
-; Submitted by Dataman
+; Submitted by Drago75
 ; 3,4,6,8,12,18,24,36,40,60,84,156,180,600
 
 mov $1,1
@@ -19,7 +19,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-mul $0,2
-sub $0,4
-div $0,2
-add $0,3
+add $0,1

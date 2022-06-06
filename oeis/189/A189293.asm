@@ -1,26 +1,19 @@
 ; A189293: Positions of 0 in A189292; complement of A189294.
-; Submitted by BarnardsStern
+; Submitted by JayPi
 ; 3,5,7,10,11,12,17,18,19,20,21,28,29,30,31,33,34,35,40,42,44,47,48,49,50,51,54,57,59,61,68,69,70,72,73,74,76,77,79,80,82,83,84,85,86,87,89,94,99,103,107,112,116,117,119,120,121,122,123,124,126,127,129,130,132,133
 
-mov $4,1
-mov $1,1
 mov $2,$0
+add $0,1
+mov $1,1
 add $2,2
-pow $2,2
+pow $2,5
 lpb $2
   mov $3,$1
   seq $3,189292 ; Zero-one sequence based on the sequence (4n):  a(A008586(k))=a(k); a(A042968(k))=1-a(k), a(1)=0, a(2)=0, a(3)=1.
-  add $3,$4
-  div $3,2
-  gcd $3,2
+  cmp $3,0
   sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
 add $0,1

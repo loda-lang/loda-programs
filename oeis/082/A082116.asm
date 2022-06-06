@@ -4,10 +4,10 @@
 mov $2,$0
 mov $3,$0
 lpb $3
+  sub $3,1
   mul $2,3
   mov $1,$2
   mod $2,5
-  sub $3,1
 lpe
 div $1,3
 mov $0,$1

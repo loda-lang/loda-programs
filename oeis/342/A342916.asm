@@ -8,16 +8,16 @@ mov $8,$0
 lpb $0
   mov $3,$0
   lpb $3
-    mov $4,$0
     mov $6,$2
     cmp $6,0
     add $2,$6
+    mov $4,$0
     mod $4,$2
     cmp $4,0
     cmp $4,0
     mov $5,$2
-    add $2,1
     cmp $5,1
+    add $2,1
     max $4,$5
     sub $3,$4
     mov $7,$8

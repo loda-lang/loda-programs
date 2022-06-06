@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,61017 ; List in which n appears d(n) times, where d(n) [A000005] is the number of divisors of n.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

@@ -1,22 +1,20 @@
-; A108628: n-th term of the crystal ball sequence for A_{n+1} lattice for n>=0.
-; Submitted by Jamie Morken(w2)
+; A108628: n-th term of the crystal ball sequence for A_{n+1} lattice for n >= 0.
+; Submitted by jmorken
 ; 1,7,55,471,4251,39733,380731,3716695,36808723,368750757,3728940249,38003358693,389866749975,4022124746409,41697566691555,434124925278807,4536783726146499,47569453938399445,500266519237489357,5275183203229043221,55760274296452936741
 
 add $0,1
 lpb $0
   mov $1,$0
-  sub $0,1
   sub $4,1
+  sub $0,1
   mov $2,$4
   sub $2,$1
-  bin $2,$0
   mov $3,$4
   bin $3,$1
+  bin $2,$0
   mul $2,$3
   mul $3,$2
-  mul $3,2
   mul $5,-1
   add $5,$3
 lpe
-mov $0,$5
-div $0,2
+add $0,$5

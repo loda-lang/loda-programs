@@ -1,10 +1,8 @@
 ; A075909: Sixth column of triangle A075499.
-; Submitted by Christian Krause
+; Submitted by LCB001
 ; 1,84,4256,169344,5843712,183794688,5421678592,152720375808,4157366140928,110282217357312,2867778350481408,73424436820180992,1857023919127527424,46511918954689069056,1155904251854380335104
 
-mov $1,$0
-mov $0,2
-pow $0,$1
-seq $1,75511 ; Sixth column of triangle A075497.
-mul $1,$0
-mov $0,$1
+mov $1,4
+pow $1,$0
+seq $0,770 ; Stirling numbers of the second kind, S(n,6).
+mul $0,$1

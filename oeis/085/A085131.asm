@@ -1,6 +1,7 @@
 ; A085131: Multiples of 8 which are members of A002473. Or multiples of 8 with the largest prime divisor < 10.
-; Submitted by Gunnar Hjern
+; Submitted by pelpolaris
 ; 8,16,24,32,40,48,56,64,72,80,96,112,120,128,144,160,168,192,200,216,224,240,256,280,288,320,336,360,384,392,400,432,448,480,504,512,560,576,600,640,648,672,720,768,784,800,840,864,896,960,1000,1008,1024,1080,1120,1152,1176,1200,1280,1296,1344,1400,1440,1512,1536,1568,1600,1680,1728,1792,1800,1920,1944,1960,2000,2016,2048,2160,2240,2304,2352,2400,2520,2560,2592,2688,2744,2800,2880,3000,3024,3072,3136,3200,3240,3360,3456,3528,3584,3600
 
-seq $0,85127 ; Multiples of 4 which are members of A002473. Or multiples of 4 with the largest prime divisor < 10.
-mul $0,2
+seq $0,85128 ; Multiples of 5 which are members of A002473. Or multiples of 5 with the largest prime divisor <= 7.
+mul $0,16
+div $0,10

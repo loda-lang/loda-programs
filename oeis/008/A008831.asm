@@ -1,5 +1,5 @@
 ; A008831: Discrete logarithm of n to the base 2 modulo 13.
-; Submitted by Gunnar Hjern
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,4,2,9,5,11,3,8,10,7,6
 
 add $0,1
@@ -9,6 +9,7 @@ lpb $1
   sub $2,$0
   lpb $2
     mov $2,0
+    mul $0,2
     mov $1,3
   lpe
   mov $2,$0
@@ -18,7 +19,7 @@ lpb $1
   lpb $2
     mov $2,2
     add $0,7
-    sub $1,1
+    sub $1,12
   lpe
   sub $1,1
   add $3,1

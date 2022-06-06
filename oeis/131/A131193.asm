@@ -3,6 +3,6 @@
 
 mod $0,6
 mov $1,$0
-sub $0,5
 sub $1,1
+sub $0,5
 bin $0,$1

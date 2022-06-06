@@ -5,20 +5,18 @@
 add $0,6
 lpb $0
   sub $0,5
-  add $4,1
-  add $5,$3
   add $1,1
-  mov $2,$4
+  mov $2,1
   bin $2,$0
   mul $2,$0
   mov $3,$1
   mul $3,$2
-  trn $4,15
   add $0,4
   mul $1,2
-  mul $5,$1
+  mul $4,$1
+  add $4,$3
 lpe
 add $1,1
-mul $1,$5
+mul $1,$4
 mov $0,$1
 div $0,2500152480

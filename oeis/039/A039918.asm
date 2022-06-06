@@ -5,8 +5,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,796 ; Decimal expansion of Pi (or digits of Pi).
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

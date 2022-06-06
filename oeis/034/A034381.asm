@@ -1,9 +1,8 @@
 ; A034381: Number of labeled cyclic groups.
-; Submitted by Jon Maiga
+; Submitted by BarnardsStern
 ; 1,2,3,12,30,360,840,10080,60480,907200,3991680,119750400,518918400,14529715200,163459296000,2615348736000,22230464256000,1067062284288000,6758061133824000,304112751022080000
 
 mov $1,$0
 seq $0,58161 ; Number of labeled cyclic groups with a fixed identity.
-mov $2,$1
-mul $2,$0
-add $0,$2
+mul $1,$0
+add $0,$1

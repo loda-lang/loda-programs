@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,173455 ; Row sums of triangle A027751.
+  sub $0,1
   max $1,$2
   add $1,1
 lpe

@@ -1,8 +1,12 @@
 ; A165830: Totally multiplicative sequence with a(p) = 9.
-; Submitted by Jon Maiga
+; Submitted by PDW
 ; 1,9,9,81,9,81,9,729,81,81,9,729,9,81,81,6561,9,729,9,729,81,81,9,6561,81,81,729,729,9,729,9,59049,81,81,81,6561,9,81,81,6561,9,729,9,729,729,81,9,59049,81,729,81,729,9,6561,81,6561,81,81,9,6561,9,81,729,531441,81,729,9,729,81,729,9,59049,9,81,729,729,81,729,9,59049,6561,81,9,6561,81,81,81,6561,9,6561,81,729,81,81,81,531441,9,729,729,6561
 
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-mov $1,9
-pow $1,$0
+mov $1,1
+lpb $0
+  mul $1,9
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+lpe
 mov $0,$1

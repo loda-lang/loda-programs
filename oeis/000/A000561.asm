@@ -10,13 +10,13 @@ lpb $0
     add $4,$2
   lpe
   lpb $4
-    add $1,$2
     sub $4,1
+    add $1,$2
   lpe
 lpe
 lpb $3
-  add $1,2
   sub $3,1
+  add $1,2
 lpe
 add $1,6
 mov $0,$1

@@ -1,21 +1,8 @@
 ; A020829: Decimal expansion of 1/sqrt(72) = 1/(3*2^(3/2)) = sqrt(2)/12.
-; Submitted by Christian Krause
+; Submitted by Frank [RKN]
 ; 1,1,7,8,5,1,1,3,0,1,9,7,7,5,7,9,2,0,7,3,3,4,7,4,0,6,0,3,5,0,8,0,8,1,7,3,2,1,4,1,3,9,3,2,2,9,4,8,0,7,9,0,0,6,0,9,8,0,5,6,6,4,4,8,3,2,5,6,1,0,3,9,8,7,1,8,4,2,2,5,3,2,3,7,5,3,2,2,9,4,5,2,7,3,0,3,4,6,4,3
 
 add $0,1
-mov $1,1
-mov $3,$0
-mul $3,4
-lpb $3
-  mul $1,2
-  add $1,$2
-  add $2,$1
-  sub $3,1
-lpe
-mul $2,6
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
-mov $0,$1
+seq $0,11547 ; Decimal expansion of sqrt(2) truncated to n places.
+div $0,12
 mod $0,10

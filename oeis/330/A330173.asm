@@ -1,50 +1,105 @@
 ; A330173: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
-; Submitted by PDW
+; Submitted by [SG]KidDoesCrunch
 ; 4,9,15,19,25,30,34,40,45,51,55,60,66,70,76,81,87,91,96,102,106,112,117,121,127,132,138,142,148,153,157,163,168,174,178,183,189,193,199,204,208,214,219,225,229,235,240,244,250,255,261,265,270,276,280,286
 
-sub $6,2
+div $1,2
+mul $3,6
+mov $15,1
+add $0,$3
+sub $5,1
+mov $5,8
 add $0,1
-bin $4,$0
-mov $2,1
+mul $4,$2
+mov $5,1
+add $3,6
+add $9,1
 add $3,26
-div $4,$6
-mul $3,4
+mov $12,-88
 lpb $3
-  mov $8,$1
-  mov $8,2
-  add $4,2
-  sub $8,1
+  mul $4,21
+  mov $4,$1
   add $2,$1
-  max $7,1
-  mul $1,2
-  mul $4,$0
+  sub $3,1
+  add $2,$3
+  mul $5,2
+  mov $4,$9
   add $1,1
-  sub $3,3
-  sub $2,1
-  mov $7,1
-  mov $8,$6
-  mov $5,1
+  mov $8,$0
+  gcd $6,$10
+  mov $9,$8
+  mov $4,$8
+  mov $14,$9
+  sub $9,2
+  mod $12,2
+  mov $13,$10
+  mul $8,12
+  mul $1,2
+  div $6,3
   add $1,$2
+  sub $3,1
 lpe
-mov $10,0
 mov $7,$1
 add $1,$2
+add $3,1
 mul $1,$0
+add $9,1
 div $1,$2
+bin $0,2
+add $0,$0
 mov $0,$1
-mov $8,1
+sub $2,1
+add $10,1
+add $11,$9
+mul $2,2
 add $0,2
-mov $10,$1
-mov $8,1
-sub $7,2
+mod $7,2
+mov $14,10
+add $8,1
+mov $14,$4
+mod $0,2
 mov $0,$1
+add $1,1
+mov $2,1
 mul $0,3
-pow $2,2
-div $0,2
+sub $7,1
+add $0,3
+add $9,$2
+mov $8,$0
+mov $15,$5
+sub $3,$5
+add $8,1
+add $3,$10
+add $0,2
+add $1,$9
+add $1,$0
+add $0,2
+trn $9,$7
+div $4,2
 sub $0,1
-sub $0,2
+div $0,2
+mov $12,3
+add $0,3
+add $13,$6
+mul $4,$1
+add $4,1
+add $2,1
+sub $0,4
+div $8,2
+mov $12,$0
+bin $13,2
+mov $0,$1
+sub $0,4
 mul $0,2
 add $0,6
-sub $0,8
-div $0,2
-add $0,4
+add $6,1
+mov $0,$8
+sub $11,10
+mov $15,$7
+mov $0,$1
+sub $0,2
+mov $0,$12
+sub $0,2
+add $2,1
+mov $0,$12
+mov $0,$8
+sub $0,2

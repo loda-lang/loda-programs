@@ -5,13 +5,13 @@
 add $0,1
 mov $1,$0
 lpb $1
-  mov $2,$0
   mov $3,$1
   cmp $3,0
   mov $5,$1
   add $5,$3
-  div $2,$5
   mov $6,$1
+  mov $2,$0
+  div $2,$5
   lpb $2
     dif $2,$6
     add $4,34

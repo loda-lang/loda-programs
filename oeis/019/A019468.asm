@@ -1,12 +1,12 @@
 ; A019468: (n-2)-th Catalan number is congruent to 2n/3 mod n.
-; Submitted by vanos0512
+; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 9,12,15,27,30,33,81,84,87,117,120,123,243,246,249,279,282,285,333,336,339,351,354,357,729,732,735,765,768,771,819,822,825,837,840,843,981,984,987,999,1002,1005,1053,1056,1059,1089,1092,1095,2187
 
-mov $1,2
+add $0,1
 mov $2,$0
 pow $2,4
+add $2,11
 lpb $2
-  sub $2,1
   mov $3,$1
   seq $3,39969 ; An example of a d-perfect sequence: a(n) = Catalan(n) mod 3.
   cmp $3,2

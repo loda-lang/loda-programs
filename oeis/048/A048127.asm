@@ -1,8 +1,9 @@
 ; A048127: Becomes prime or 4 after exactly 5 iterations of f(x) = sum of prime factors of x.
-; Submitted by shiva
+; Submitted by Gunnar Hjern
 ; 62,69,74,94,106,116,123,133,169,178,188,190,201,206,228,238,244,254,259,267,286,291,292,305,321,327,340,344,365,366,370,381,387,395,403,404,408,411,413,438,444,446,453,459,465,471,472,474,482,483,484,496
 
-mov $2,14164
+mov $1,7
+mov $2,14155
 lpb $2
   mov $3,$1
   seq $3,2217 ; Starting with n, repeatedly calculate the sum of prime factors (with repetition) of the previous term, until reaching 0 or a fixed point: a(n) is the number of terms in the resulting sequence.

@@ -5,7 +5,7 @@
 mov $1,$0
 seq $0,6943 ; Rows of Sierpiński's triangle (Pascal's triangle mod 2).
 lpb $1
-  bin $0,-1
   mov $1,3
+  bin $0,-1
 lpe
 mul $0,10040
