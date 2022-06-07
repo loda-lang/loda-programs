@@ -1,8 +1,8 @@
 ; A043876: Numbers n such that number of runs in the base 4 representation of n is congruent to 9 mod 10.
-; Submitted by Fornax
+; Submitted by [AF] Kalianthys
 ; 69905,69906,69907,69912,69913,69915,69916,69917,69918,69921,69922,69923,69924,69926,69927,69932,69933,69934,69937,69938,69939,69940,69942,69943,69944,69945,69947,70020,70022,70023
 
-mov $1,1
+mov $1,5
 mov $2,$0
 add $2,11
 pow $2,2

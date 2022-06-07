@@ -1,9 +1,8 @@
 ; A117904: Number triangle [k<=n]*0^abs(L(C(n,2)/3) - L(C(k,2)/3)) where L(j/p) is the Legendre symbol of j and p.
-; Submitted by [SG-FC] hl
+; Submitted by vanos0512
 ; 1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0
 
 seq $0,70216 ; Triangle T(n, k) = n^2 + k^2, 1 <= k <= n, read by rows.
 mod $0,-3
+add $0,3
 mod $0,2
-bin $1,$0
-mov $0,$1

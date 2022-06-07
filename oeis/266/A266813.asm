@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,71046 ; Number of 0's in n-th row of triangle in A071031, cellular automaton "rule 62".
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

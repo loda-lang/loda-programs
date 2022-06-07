@@ -4,8 +4,8 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,233271 ; a(0)=0; thereafter a(n+1) = a(n) + 1 + number of 0's in binary representation of a(n), counted with A080791.
   mov $0,1
-  seq $2,233271 ; a(0)=0; thereafter a(n+1) = a(n) + 1 + number of 0's in binary representation of a(n), counted with A080791.
 lpe
-mov $0,$2
+mov $0,$1

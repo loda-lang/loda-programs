@@ -5,10 +5,10 @@ mov $2,$0
 mov $4,$0
 gcd $0,5
 lpb $2
-  add $0,6
   mov $2,7
+  add $0,6
 lpe
-pow $1,$5
+mov $1,1
 mod $1,$0
 add $1,4
 mov $3,$4

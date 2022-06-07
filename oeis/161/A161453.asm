@@ -8,12 +8,12 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  mul $3,2
+  mul $3,4
   seq $3,268389 ; a(n) = greatest k such that polynomial (X+1)^k divides the polynomial (in polynomial ring GF(2)[X]) that is encoded in the binary expansion of n. (See the comments for details).
   sub $3,2
   cmp $3,1
   sub $0,$3
-  add $1,4
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -21,4 +21,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,4
+div $0,2
