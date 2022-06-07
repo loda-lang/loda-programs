@@ -12,14 +12,12 @@ lpb $3
   add $7,$9
   add $2,$7
   mul $1,17
-  mov $10,$8
   add $1,$6
   add $1,$2
   div $1,16
   add $2,$1
   add $5,$2
   add $6,$5
-  add $8,1
   sub $8,$1
   sub $9,$8
   add $4,$5
@@ -33,7 +31,4 @@ div $2,$4
 mov $1,$5
 div $1,$2
 mov $0,$1
-add $3,1
-mod $0,10
-add $0,10
 mod $0,10

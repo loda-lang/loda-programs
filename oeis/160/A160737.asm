@@ -6,25 +6,20 @@ mov $1,1
 mov $2,1
 mov $4,1
 mov $6,$0
+sub $6,1
 mov $0,5
 mov $3,5
-mov $7,$2
-sub $6,1
-mul $5,2
-max $3,3
 lpb $3
   add $0,1
   mul $1,$6
-  mul $2,2
   mul $1,$3
   mul $1,$0
   sub $3,1
-  mov $7,3
   add $5,$4
   div $1,$5
+  mul $2,2
   add $2,$1
   add $4,2
 lpe
-add $1,3
 mov $0,$2
 div $0,8

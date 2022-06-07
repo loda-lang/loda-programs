@@ -5,7 +5,7 @@
 mov $1,$0
 seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 add $0,1
-seq $1,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+seq $1,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
 sub $1,$0
 mul $0,-1
 add $0,3

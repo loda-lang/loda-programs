@@ -4,9 +4,9 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,1
 lpb $1
+  mov $1,34
   mov $2,3
   sub $2,$0
   sub $0,2
-  mov $1,34
   add $1,$2
 lpe

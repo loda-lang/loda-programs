@@ -14,9 +14,9 @@ div $0,3
 add $0,1
 mov $2,$5
 mul $2,4
-add $0,$2
 mov $3,$5
 mul $3,$5
+add $0,$2
 mov $2,$3
 mul $2,23
 add $0,$2

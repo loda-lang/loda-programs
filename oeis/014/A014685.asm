@@ -6,14 +6,14 @@ max $1,$0
 mov $4,$0
 mov $3,2
 lpb $3
-  add $5,$0
   div $3,2
+  add $5,$0
   mov $0,$4
   add $0,$3
   seq $0,131378 ; Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
-  mov $4,$5
   mov $2,$3
   mul $2,$0
+  mov $4,$5
   add $1,$2
   mov $5,$0
 lpe

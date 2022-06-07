@@ -10,8 +10,8 @@ lpb $0
   sub $0,1
   sub $1,$2
   div $1,2
-  add $4,$3
   mul $2,2
+  add $4,$3
   add $4,1
   bin $3,$2
   add $3,$1

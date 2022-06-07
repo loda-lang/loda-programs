@@ -1,5 +1,5 @@
 ; A036746: Numbers with "long" representations in Roman notation: given by last n letters from ...MMMDCCCLXXXVIII.
-; Submitted by [AF>Occitania]franky82
+; Submitted by [AF] Kalianthys
 ; 1,2,3,8,18,28,38,88,188,288,388,888,1888,2888,3888
 
 mov $5,1
@@ -22,6 +22,4 @@ lpb $0
   add $5,$7
 lpe
 mov $0,$6
-sub $0,3
 div $0,2
-add $0,1

@@ -4,6 +4,6 @@
 
 add $0,1
 mov $1,$0
-add $0,2
 seq $1,1008 ; Numerators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+add $0,2
 gcd $0,$1

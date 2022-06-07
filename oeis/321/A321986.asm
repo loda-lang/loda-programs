@@ -5,7 +5,7 @@ mov $2,$0
 div $2,4
 sub $0,$2
 mov $1,$0
-bin $0,2
 sub $1,1
 div $1,3
+bin $0,2
 sub $0,$1

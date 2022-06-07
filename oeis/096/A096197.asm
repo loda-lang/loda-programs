@@ -6,9 +6,9 @@ lpb $0
   mul $0,2
   add $1,$0
   lpb $1
-    seq $0,173919 ; Numbers that are prime or one less than a prime.
     mov $1,1
     add $2,1
+    seq $0,173919 ; Numbers that are prime or one less than a prime.
     mod $0,$2
   lpe
   add $1,$0

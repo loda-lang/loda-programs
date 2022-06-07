@@ -1,8 +1,8 @@
 ; A044615: Numbers n such that string 5,7 occurs in the base 8 representation of n but not of n+1.
-; Submitted by BarnardsStern
+; Submitted by [SG]KidDoesCrunch
 ; 47,111,175,239,303,367,383,431,495,559,623,687,751,815,879,895,943,1007,1071,1135,1199,1263,1327,1391,1407,1455,1519,1583,1647,1711,1775,1839,1903,1919,1967,2031,2095,2159,2223,2287,2351
 
-mov $1,1
+mov $1,3
 mov $2,$0
 add $2,3
 pow $2,2

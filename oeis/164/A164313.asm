@@ -1,8 +1,6 @@
 ; A164313: LCM of all differences of odd primes up to prime(n).
-; Submitted by Simon Strandgaard
+; Submitted by gemini8
 ; 2,4,24,120,840,1680,5040,720720,720720,24504480,465585120,465585120,465585120,53542288800,160626866400,4658179125600,288807105787200,288807105787200,288807105787200,10685862914126400,10685862914126400
 
 seq $0,89038 ; Nonnegative numbers k such that 2k+5 is prime.
 seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
-div $0,2
-mul $0,2
