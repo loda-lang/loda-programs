@@ -1,0 +1,26 @@
+; A206703: Triangular array read by rows.  T(n,k) is the number of partial permutations (injective partial functions) of {1,2,...,n} that have exactly k elements in a cycle.  The k elements are not necessarily in the same cycle.  A fixed point is considered to be in a cycle.
+; Submitted by [AF] Kalianthys
+; 1,1,1,3,2,2,13,9,6,6,73,52,36,24,24,501,365,260,180,120,120,4051,3006,2190,1560,1080,720,720,37633,28357,21042,15330,10920,7560,5040,5040,394353,301064,226856,168336,122640,87360,60480,40320,40320,4596553,3549177,2709576,2041704,1515024,1103760,786240,544320,362880,362880,58941091,45965530,35491770,27095760,20417040,15150240,11037600,7862400,5443200,3628800,3628800,824073141,648352001,505620830,390409470,298053360,224587440,166652640,121413600,86486400,59875200,39916800,39916800,12470162233
+
+mov $3,3
+lpb $0
+  add $2,1
+  sub $0,$2
+  mul $3,$2
+lpe
+add $1,$3
+mul $0,-1
+add $0,$2
+lpb $0
+  sub $0,1
+  mov $1,$3
+  add $1,$5
+  add $4,1
+  mov $5,$1
+  div $1,$4
+  add $3,$1
+lpe
+mov $0,$1
+sub $0,3
+div $0,3
+add $0,1
