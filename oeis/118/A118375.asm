@@ -4,8 +4,8 @@
 
 add $0,3
 mov $1,$0
-bin $0,3
 div $1,2
 gcd $1,2
-add $0,$1
+bin $0,3
 sub $0,1
+add $0,$1

@@ -2,25 +2,25 @@
 ; Submitted by Jon Maiga
 ; 1,2,5,6,7,12,14,17,20,24
 
-mov $4,$0
 mov $7,$0
+mov $4,$0
 lpb $4
-  mov $0,$7
-  mov $1,0
   sub $4,1
+  mov $5,0
+  mov $0,$7
   sub $0,$4
   add $0,2
+  mov $1,0
   mov $2,1
   mov $3,$0
   mul $3,4
-  mov $5,0
   lpb $3
     add $5,$2
     add $5,$2
-    add $1,$5
     mov $8,$3
     cmp $8,0
     add $3,$8
+    add $1,$5
     mod $1,$3
     add $2,$1
     sub $1,5

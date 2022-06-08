@@ -3,9 +3,8 @@
 
 mul $0,5
 mov $1,$0
-add $0,2
 mul $0,2
-add $0,3
+add $0,7
 bin $0,3
 add $1,$0
 mov $0,$1

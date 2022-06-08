@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,212965 ; Number of triples (w,x,y) with all terms in {0,...,n} and such that w = max(w,x,y) - min(w,x,y).
   sub $0,1
-  seq $2,212965 ; Number of (w,x,y) with all terms in {0,...,n} and w=range{w,x,y}.
   add $1,$2
 lpe
 add $1,1

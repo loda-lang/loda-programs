@@ -7,6 +7,6 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,78616 ; a(n) = Sum_{k=0..n} A010815(k).
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

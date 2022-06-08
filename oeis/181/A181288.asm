@@ -4,19 +4,19 @@
 mov $2,1
 lpb $2
   sub $2,1
-  mov $3,$0
   mov $5,$0
+  mov $3,$0
   lpb $3
-    mov $0,$5
     sub $3,1
+    mov $8,0
+    mov $0,$5
     sub $0,$3
     mov $7,2
-    mov $8,0
     lpb $7
       sub $7,1
+      mov $4,12
       add $0,$7
       sub $0,1
-      mov $4,12
       lpb $0
         trn $0,5
         mul $4,6

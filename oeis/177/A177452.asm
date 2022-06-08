@@ -1,12 +1,12 @@
 ; A177452: Partial sums of A002055.
+; Submitted by PDW
 ; 1,10,66,366,1851,8858,40890,184098,813948,3549758,15317294,65537334,278489619,1176688494,4948173294,20723897214,86494746204,359915608314,1493718226314,6184858989714,25556291840484,105406847513658
 
+mov $1,1
 lpb $0
   mov $2,$0
+  seq $2,2055 ; Number of diagonal dissections of a convex n-gon into n-4 regions.
   sub $0,1
-  seq $2,257888 ; Number of nonintersecting (or self-avoiding) rook paths of length 2n+2 joining opposite corners of an n X n grid.
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
-div $0,4
-add $0,1
+mov $0,$1

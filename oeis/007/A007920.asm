@@ -1,6 +1,8 @@
 ; A007920: Smallest number k such that n + k is prime.
+; Submitted by PDW
 ; 2,1,0,0,1,0,1,0,3,2,1,0,1,0,3,2,1,0,1,0,3,2,1,0,5,4,3,2,1,0,1,0,5,4,3,2,1,0,3,2,1,0,1,0,3,2,1,0,5,4,3,2,1,0,5,4,3,2,1,0,1,0,5,4,3,2,1,0,3,2,1,0,1,0,5,4,3,2,1,0,3,2,1,0,5,4,3,2,1,0,7,6,5,4,3,2,1,0,3,2
 
 mov $1,$0
-seq $0,7918 ; Least prime >= n (version 1 of the "next prime" function).
+trn $0,1
+seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 sub $0,$1

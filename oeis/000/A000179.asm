@@ -6,7 +6,7 @@ pow $1,$0
 mov $2,$0
 seq $0,102761 ; Same as A000179, except that a(0) = 2.
 lpb $2
-  mov $1,$0
   mov $2,0
+  mov $1,$0
 lpe
 mov $0,$1

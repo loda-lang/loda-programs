@@ -13,12 +13,12 @@ add $1,3
 mov $2,$4
 sub $2,3
 mov $4,$1
-mul $1,2
 add $4,$2
+mul $1,2
 add $1,$4
 lpb $3
-  add $1,20
   sub $3,1
+  add $1,20
 lpe
 add $1,116
 mov $0,$1

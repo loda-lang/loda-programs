@@ -1,6 +1,14 @@
 ; A192396: Square array T(n,k) = floor(((k+1)^n-(1+(-1)^k)/2)/2) read by antidiagonals.
-; Submitted by Jon Maiga
+; Submitted by PDW
 ; 0,0,0,0,1,0,0,2,1,0,0,4,4,2,0,0,8,13,8,2,0,0,16,40,32,12,3,0,0,32,121,128,62,18,3,0,0,64,364,512,312,108,24,4,0,0,128,1093,2048,1562,648,171,32,4,0,0,256,3280,8192,7812,3888,1200,256,40,5,0
 
-seq $0,9998 ; Triangle in which j-th entry in i-th row is (j+1)^(i-j).
+mov $1,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,1
+mov $2,$1
+sub $2,$0
+pow $0,$2
 div $0,2
