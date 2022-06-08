@@ -4,8 +4,8 @@
 mov $4,$0
 mov $7,$0
 lpb $7
-  mov $0,$4
   sub $7,1
+  mov $0,$4
   sub $0,$7
   pow $0,2
   trn $3,$0

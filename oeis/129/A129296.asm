@@ -1,10 +1,7 @@
 ; A129296: Number of divisors of n^2 - 1 that are not greater than n.
-; Submitted by Michael Goetz
+; Submitted by [AF] Kalianthys
 ; 1,1,2,2,4,2,5,3,5,3,8,2,8,4,6,4,9,2,12,4,8,4,10,3,10,6,8,4,16,2,14,4,7,8,12,4,12,4,10,4,20,2,16,6,8,6,12,3,18,6,12,4,16,4,20,8,10,4,16,2,16,6,8,12,16,4,16,4,16,4,30,2,15,6,8,12,16,4,24,5,12,5,16,4,16,8,10,4,30,4,24,8,8,8,14,4,21,6,18,6
 
-sub $0,1
-mov $1,$0
-max $1,0
-seq $1,347191 ; Number of divisors of n^2-1.
-mov $0,$1
-div $0,2
+trn $0,1
+seq $0,66728 ; a(n) is the number of integers of the form (n+k+n*k)/(n-k) for k = 1,2,...,n-1.
+add $0,1

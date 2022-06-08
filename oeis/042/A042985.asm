@@ -5,10 +5,10 @@
 add $0,1
 lpb $0
   mov $2,$0
+  mul $4,2
   sub $0,1
   add $2,2
   bin $2,$0
-  mul $4,2
   mov $3,$4
   bin $3,$1
   add $1,1

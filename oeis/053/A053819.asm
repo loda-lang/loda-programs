@@ -9,8 +9,8 @@ lpb $0
   gcd $3,$0
   pow $3,$0
   mov $4,$0
-  sub $0,1
   div $4,$3
+  sub $0,1
   mov $3,$4
   pow $3,3
   add $1,$3

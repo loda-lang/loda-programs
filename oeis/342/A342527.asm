@@ -4,12 +4,12 @@
 
 lpb $0
   mov $2,$0
-  mod $0,2
   sub $2,1
-  mov $3,$2
+  mod $0,2
+  mov $1,$2
   max $2,0
   seq $2,152771 ; a(n) = sigma(n) - 2*d(n) + 1.
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

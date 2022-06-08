@@ -10,9 +10,9 @@ lpb $0
   gcd $3,$0
   pow $3,$0
   mov $4,$0
-  sub $0,1
   sub $4,1
   mod $4,$3
+  sub $0,1
   mov $3,$4
   mul $3,$1
   add $1,$3

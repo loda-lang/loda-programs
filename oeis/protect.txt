@@ -64,6 +64,7 @@ A106142: Semiprimes (mod 6).
 A106143: Semiprimes (mod 7).
 A106144: Semiprimes (mod 8).
 A106145: Semiprimes (mod 9).
+A107115: Three-digit numbers from the decimal expansion of Pi (version 3) -- but see comments.
 A109722: Sum of first 2n primes.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
