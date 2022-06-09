@@ -1,9 +1,19 @@
 ; A043855: Numbers n such that number of runs in the base 4 representation of n is congruent to 5 mod 8.
-; Submitted by PDW
+; Submitted by [AF>Amis des Lapins] Xe120
 ; 273,274,275,280,281,283,284,285,286,289,290,291,292,294,295,300,301,302,305,306,307,308,310,311,312,313,315,388,390,391,392,393,395,396,397,398,401,402,403,408,409,411,412,413,414
 
-seq $0,43872 ; Numbers n such that number of runs in the base 4 representation of n is congruent to 5 mod 10.
-mul $0,2
-sub $0,546
-div $0,2
-add $0,273
+mov $1,1
+mov $2,$0
+add $2,11
+pow $2,2
+bin $2,2
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,43556 ; Number of runs in base-4 representation of n.
+  cmp $3,5
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1

@@ -1,5 +1,5 @@
 ; A011375: Length of n-th term in A006960.
-; Submitted by Vester
+; Submitted by [SG]KidDoesCrunch
 ; 3,3,4,4,5,5,5,6,7,8,8,8,8,9,9,9,9,10,10,11,11,12,12,12,13,13,14,14,15,15,16,16,16,17,17,18,18,19,19,19,20,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29
 
 seq $0,6960 ; Reverse and Add! sequence starting with 196.
@@ -8,6 +8,4 @@ lpb $0
   add $1,2
 lpe
 mov $0,$1
-sub $0,6
 div $0,2
-add $0,3
