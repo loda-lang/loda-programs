@@ -1,0 +1,19 @@
+; A341232: Numerator of the expected fraction of guests without a napkin in Conway's napkin problem with n guests.
+; Submitted by Jason Jung
+; 0,0,1,11,39,473,19897,63683,5731597,22926439,280212089,20175270749,224810160067,6294684482461,1321883741325001,1208579420640469,68486167169628137,17258514126746312369,178860964586279976467,6053755724458706915971,3305350625554453976644453
+
+mov $1,1
+lpb $0
+  add $0,1
+  sub $2,$4
+  mul $2,2
+  add $4,$1
+  mul $1,$0
+  mul $1,2
+  mov $3,$2
+  sub $0,2
+lpe
+gcd $3,$1
+sub $5,$2
+div $5,$3
+mov $0,$5
