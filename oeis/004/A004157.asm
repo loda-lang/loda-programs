@@ -8,7 +8,7 @@ mov $1,$0
 mov $0,0
 lpb $1
   mov $2,$1
-  div $1,10
   mod $2,10
   add $0,$2
+  div $1,10
 lpe

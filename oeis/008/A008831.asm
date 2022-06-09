@@ -5,10 +5,12 @@
 mul $4,3
 mul $3,$0
 add $0,1
+sub $0,$2
 mov $1,250
-sub $1,14
+sub $1,26
 lpb $1
   mov $2,2
+  add $1,7
   sub $2,$0
   lpb $2
     mov $1,3
@@ -21,9 +23,9 @@ lpb $1
     mov $2,0
     add $0,7
     add $1,$0
-    sub $1,12
+    sub $1,11
   lpe
-  sub $1,8
+  sub $1,9
   add $3,1
 lpe
 mov $0,$3

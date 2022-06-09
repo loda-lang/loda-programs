@@ -15,32 +15,32 @@ lpb $4
   sub $4,1
   add $5,$1
 lpe
+mov $6,$5
 mov $3,16
-mov $6,$5
 lpb $3
-  add $0,$5
   sub $3,1
+  add $0,$5
 lpe
-mov $4,$1
 mov $5,0
+mov $4,$1
+lpb $4
+  sub $4,1
+  add $5,$6
+lpe
+mov $6,$5
+mov $3,36
+lpb $3
+  sub $3,1
+  add $0,$5
+lpe
+mov $5,0
+mov $4,$1
 lpb $4
   sub $4,1
   add $5,$6
 lpe
 mov $3,36
-mov $6,$5
 lpb $3
-  add $0,$5
   sub $3,1
-lpe
-mov $4,$1
-mov $5,0
-lpb $4
-  sub $4,1
-  add $5,$6
-lpe
-mov $3,36
-lpb $3
   add $0,$5
-  sub $3,1
 lpe
