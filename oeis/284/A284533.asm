@@ -1,8 +1,20 @@
 ; A284533: 0-limiting word of the morphism 0->1, 1->0101.
-; Submitted by [SG-FC] hl
+; Submitted by M0CZY
 ; 0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1
 
-mul $0,2
-seq $0,285140 ; Positions of 0 in A285139; complement of A285141.
-add $0,1
-mod $0,2
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,285208 ; 1-limiting word of the morphism 0->10, 1-> 0100.
+  pow $5,$0
+  sub $0,$3
+  add $1,2
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$5

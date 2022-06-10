@@ -1,7 +1,17 @@
 ; A145610: Denominator of the polynomial A_l(x) = Sum_{d=1..l-1} x^(l-d)/d for index l=2n+1 evaluated at x=1.
-; Submitted by Jon Maiga
+; Submitted by fzs600
 ; 2,12,20,280,2520,27720,360360,720720,4084080,15519504,5173168,356948592,8923714800,80313433200,2329089562800,144403552893600,13127595717600,13127595717600,485721041551200,485721041551200
 
-mul $0,2
+mov $1,1
 add $0,1
-seq $0,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+mul $0,2
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1

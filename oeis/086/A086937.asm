@@ -1,10 +1,6 @@
 ; A086937: Number of distinct zeros of x^2-x-1 mod prime(n).
-; Submitted by Jamie Morken(s1.)
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,1,0,2,0,0,2,0,2,2,0,2,0,0,0,2,2,0,2,0,2,0,2,0,2,0,0,2,0,0,2,0,2,2,2,0,0,0,0,2,2,2,0,0,2,2,0,0,2,0,2,2,2,0,0,2,2,0,2,0,0,0,2,0,0,2,0,0,2,0,2,0,0,2,0,2,0,2,2,2,2,2,0,2,0,2,0,2,0,0,2,0,2,2,0,2,2,0,2
 
-seq $0,40 ; The prime numbers.
-pow $0,2
-add $0,1
-mul $0,2
-mod $0,10
-div $0,2
+seq $0,138689 ; Numbers of the form 26+p^2 (where p is a prime).
+mod $0,5

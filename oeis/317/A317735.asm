@@ -8,8 +8,8 @@ trn $0,$2
 mov $2,0
 lpb $0
   mov $1,$0
-  mov $0,$2
   seq $1,109543 ; a(n) = a(n-1) + a(n-3) + a(n-5), with a(1..5) = 1.
+  mov $0,$2
   mov $2,$1
 lpe
 add $2,1

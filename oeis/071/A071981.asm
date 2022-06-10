@@ -1,6 +1,6 @@
 ; A071981: Parity of the digits of e in base 10.
-; Submitted by Fardringle
+; Submitted by PDW
 ; 0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,1,0,1,1,1,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,1,0,1,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,0,0,0,1,0,0,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,1,0,1,1,0,0,0,0,1
 
-seq $0,1113 ; Decimal expansion of e.
+seq $0,11543 ; Decimal expansion of e truncated to n places.
 mod $0,2

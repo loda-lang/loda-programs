@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  mov $1,$0
   gcd $3,2
+  mov $1,$0
   bin $1,$3
   mod $1,2
   mul $2,2

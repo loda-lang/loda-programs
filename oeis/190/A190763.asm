@@ -2,6 +2,21 @@
 ; Submitted by [AF] Kalianthys
 ; 3,10,17,20,27,34,44,51,58,61,68,75,85,92,99,102,109,116,119,126,133,143,150,157,160,167,174,184,191,198,201,208,215,225,232,242,249,256,259,266,273,283,290,297,300,307,314,324,331,338,341,348,355,358,365,372,382,389,396,399,406,413,423,430,437,440,447,454,464,471
 
-seq $0,190765 ; Positions of 2 in A190762.
-seq $0,137362 ; Positions at which the truncated square root of triangular numbers is unique.
-sub $0,4
+mov $1,2
+mov $2,$0
+mul $2,3
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,190762 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),2,1) and [ ]=floor.
+  cmp $3,0
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1

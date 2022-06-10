@@ -1,7 +1,21 @@
 ; A188467: [4r]-[nr]-[4r-nr], where r=(1+sqrt(5))/2 and [.]=floor.
-; Submitted by fuzzydice555
+; Submitted by Manuel Stenschke
 ; 1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1
 
-seq $0,110007 ; a(n)=n-floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*n)))))) where phi=(1+sqrt(5))/2.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mod $0,10
+mov $2,2
+lpb $0
+  mov $4,$3
+  add $4,$0
+  sub $1,$2
+  div $1,2
+  cmp $3,4
+  add $3,$1
+  mod $3,2
+  add $3,2
+  sub $0,$3
+  add $1,$2
+  mul $2,$3
+lpe
+gcd $4,2
+mov $0,$4
+sub $0,1

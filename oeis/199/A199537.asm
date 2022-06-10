@@ -21,7 +21,6 @@ lpb $0
   dif $1,$3
   mul $3,-1
 lpe
+max $4,3
 mov $0,$4
 sub $0,1
-trn $0,2
-add $0,2
