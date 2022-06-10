@@ -1,5 +1,5 @@
 ; A171730: Triangle of differences of Fibonacci numbers.
-; Submitted by Manuel Stenschke
+; Submitted by [AF] Kalianthys
 ; 1,2,1,3,2,1,5,4,3,2,8,7,6,5,3,13,12,11,10,8,5,21,20,19,18,16,13,8,34,33,32,31,29,26,21,13,55,54,53,52,50,47,42,34,21,89,88,87,86,84,81,76,68,55,34,144,143,142,141,139,136,131,123,110,89,55,233,232,231,230,228
 
 lpb $0
@@ -8,14 +8,16 @@ lpb $0
 lpe
 add $2,1
 sub $4,$0
+cmp $1,1
 add $4,$2
 mov $1,$4
+add $2,-1
 mov $0,$2
-sub $0,1
 lpb $0
   sub $0,1
   add $1,$3
   add $3,$4
+  mod $0,16
   mul $3,-1
   add $3,$1
   trn $4,1

@@ -4,6 +4,4 @@
 
 add $0,2
 seq $0,63776 ; Number of subsets of {1,2,...,n} which sum to 0 modulo n.
-div $0,2
-mul $0,2
 div $0,4

@@ -9,7 +9,7 @@ cmp $1,1
 mul $1,$2
 add $4,1
 mov $2,1
-dif $0,546
+dif $0,548
 seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
 mov $5,1
 pow $1,$0
