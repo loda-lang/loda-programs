@@ -1,5 +1,5 @@
 ; A028312: Odd numbers k such that {1..k-1} cannot be partitioned into disjoint sets I, J such that 2I == -J (mod k) and I, J are unions of cyclotomic cosets mod k.
-; Submitted by Saenger
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,9,11,15,19,21,27,33,39,43,45,51,55,57,59
 
 mov $1,1
@@ -25,7 +25,4 @@ lpb $0
   dif $1,$3
 lpe
 mov $0,$4
-sub $0,1
-div $0,2
-mul $0,2
-add $0,3
+add $0,1

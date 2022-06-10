@@ -4,6 +4,6 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-mov $2,6
-pow $2,$0
-mov $0,$2
+mov $1,6
+pow $1,$0
+mov $0,$1

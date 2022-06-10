@@ -1,5 +1,5 @@
 ; A020103: Ceiling of GAMMA(n+2/11)/GAMMA(2/11).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,1,2,7,33,200,1436,11742,107810,1097701,12274283,149523080,1970986053,27952165839,424364699555,6866992410975,117987415061287,2145225728387030,41149329880878478,830468293959547465
 
 mov $1,1
@@ -8,12 +8,13 @@ lpb $0
   mov $2,$0
   mul $2,12
   sub $2,10
+  mul $3,11
+  dif $0,27
   sub $0,1
   sub $2,$0
   mul $1,$2
-  mul $3,11
 lpe
-sub $3,4
+sub $1,1
 div $1,$3
 mov $0,$1
 add $0,1

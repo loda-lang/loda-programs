@@ -8,9 +8,9 @@ mov $3,$0
 mul $3,4
 lpb $3
   mul $2,$3
-  add $1,$2
   mov $5,$3
   cmp $5,0
+  add $1,$2
   add $3,$5
   div $2,$3
   add $2,$1

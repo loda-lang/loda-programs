@@ -5,6 +5,4 @@
 mov $1,$0
 seq $1,127170 ; Triangle read by rows: T(n,k) is the number of divisors of n that are divisible by k, with 1 <= k <= n.
 seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
-mul $0,4
 mul $0,$1
-div $0,4

@@ -5,8 +5,8 @@ mov $1,1
 add $1,$0
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,107078 ; Whether n has non-unitary prime divisors.
+  sub $0,1
   add $1,$2
 lpe
 mod $1,2

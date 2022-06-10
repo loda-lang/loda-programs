@@ -1,5 +1,5 @@
 ; A126728: Number of graphs on n nodes with edge chromatic number 2.
-; Submitted by Christian Krause
+; Submitted by Gunnar Hjern
 ; 0,0,1,3,5,10,15,26,37,58
 
 mov $7,$0
@@ -8,7 +8,6 @@ lpb $5
   sub $5,1
   mov $0,$7
   sub $0,$5
-  mov $9,0
   mov $10,$0
   mov $8,$0
   lpb $8
@@ -19,9 +18,9 @@ lpb $5
     mov $4,0
     lpb $0
       add $4,$2
-      mov $11,$0
-      cmp $11,0
-      add $0,$11
+      mov $6,$0
+      cmp $6,0
+      add $0,$6
       div $1,$0
       mov $3,$2
       lpb $3
@@ -36,6 +35,5 @@ lpb $5
     lpe
     add $9,$4
   lpe
-  add $6,$9
 lpe
-mov $0,$6
+mov $0,$9

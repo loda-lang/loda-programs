@@ -5,9 +5,9 @@
 lpb $0
   mov $2,$0
   seq $2,387 ; Rencontres numbers: number of permutations of [n] with exactly two fixed points.
-  mov $3,$2
+  mov $1,$2
   mul $2,$0
   mod $0,2
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,268411 ; Parity of number of runs of 1's in binary representation of n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

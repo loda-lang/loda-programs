@@ -5,9 +5,7 @@
 mov $1,$0
 mov $2,2
 lpb $2
-  sub $2,1
-  mov $0,$1
-  add $0,$2
+  mov $2,0
   dif $0,2
   trn $0,1
   seq $0,112848 ; Expansion of eta(q)*eta(q^2)*eta(q^18)^2/(eta(q^6)*eta(q^9)) in powers of q.

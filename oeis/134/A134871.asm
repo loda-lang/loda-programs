@@ -1,38 +1,8 @@
 ; A134871: a(1) = 1, a(n) = tau(n) + n - 2 for n > 1.
-; Submitted by Gunnar Hjern
+; Submitted by PDW
 ; 1,2,3,5,5,8,7,10,10,12,11,16,13,16,17,19,17,22,19,24,23,24,23,30,26,28,29,32,29,36,31,36,35,36,37,43,37,40,41,46,41,48,43,48,49,48,47,56,50,54,53,56,53,60,57,62,59,60,59,70,61,64,67,69,67,72,67,72,71,76,71,82,73,76,79,80,79,84,79,88,84,84,83,94,87,88,89,94,89,100,93,96,95,96,97,106,97,102,103,107
 
-mov $9,1
-mov $7,$6
-add $0,$2
-add $6,2
+mov $1,$0
+seq $1,70824 ; Number of divisors of n which are > 1 and < n (nontrivial divisors).
 add $0,1
-mov $5,$0
-add $3,1
-lpb $3
-  mov $1,$3
-  sub $3,1
-  add $2,7
-  sub $4,1
-  mov $0,$5
-  mov $6,1
-  mov $2,$0
-  mul $2,$1
-  seq $2,145154 ; Coefficients in expansion of Eisenstein series E_1.
-  sub $2,2
-  add $4,$2
-  sub $0,2
-lpe
-sub $1,$2
-mov $0,$4
-sub $4,$4
-mov $8,1
-add $0,1
-mul $0,2
-sub $0,8
-div $0,8
-add $5,$0
-add $0,1
-mov $3,1
-add $0,1
-mov $0,$5
+add $0,$1

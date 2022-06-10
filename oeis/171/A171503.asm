@@ -4,11 +4,11 @@
 
 lpb $0
   sub $0,1
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
   mov $0,0
-  max $2,0
-  seq $2,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
 lpe
-mov $0,$2
+mov $0,$1
 sub $0,1
 div $0,2

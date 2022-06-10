@@ -1,9 +1,10 @@
 ; A089809: Complement of A078588.
-; Submitted by Landjunge
+; Submitted by PDW
 ; 0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0
 
-mul $0,2
-add $0,1
+mul $0,4
+add $0,2
+div $0,2
 seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
-sub $0,1
+add $0,1
 mod $0,2

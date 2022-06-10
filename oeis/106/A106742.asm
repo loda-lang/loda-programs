@@ -7,10 +7,10 @@ lpb $0
   seq $2,306535 ; Number of permutations p of [2n] having no index i with |p(i)-i| = n.
   sub $2,$0
   add $3,1
-  sub $0,$3
   mov $4,$2
   min $4,1
-  add $5,$4
+  sub $0,$3
+  add $1,$4
 lpe
-mov $0,$5
+mov $0,$1
 add $0,1
