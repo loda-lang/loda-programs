@@ -3,7 +3,6 @@ A000095: Number of fixed points of GAMMA_0 (n) of type i.
 A000154: Erroneous version of A003713.
 A000381: Essentially the same as A001611.
 A000480: a(n) = floor(cos(n)).
-A000572: A Beatty sequence: [ n(e+1) ].
 A000783: Erroneous version of A007535.
 A000858: Duplicate of A003436.
 A001012: Erroneous version of A040082.
@@ -127,7 +126,6 @@ A021000: Duplicate of A020727.
 A021015: Duplicate of A010680.
 A021037: Duplicate of A010674.
 A022832: Duplicate of A008348.
-A022843: Beatty sequence for e: a(n) = floor(n*e).
 A022844: a(n) = floor(n*Pi)
 A022852: Integer nearest n * e, where e is the natural log base.
 A022853: a(n) = integer nearest n*Pi.
@@ -1362,7 +1360,6 @@ A131359: Erroneous version of A108808.
 A131510: Erroneous version of A079342.
 A131831: Duplicate of A100314
 A132149: Duplicate of A129235.
-A132222: Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
 A132430: Duplicate of A049537.
 A133006: Incorrect version of A001969.
 A133007: Incorrect version of A000069.
@@ -1713,11 +1710,8 @@ A274643: Erroneous version of A259698,
 A274942: Erroneous version of A129860.
 A275081: Duplicate of A097443.
 A275571: Incorrect duplicate of A004146.
-A276853: Beatty sequence for 2*e.
-A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265)
 A277723: a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265)
-A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279796: Erroneous duplicate of A285022.
 A282320: Erroneous version of A002854.
 A282498: a(n) = nearest integer to Pi*prime(n).

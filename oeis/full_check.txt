@@ -1,0 +1,6 @@
+A000572: A Beatty sequence: [ n(e+1) ].
+A022843: Beatty sequence for e: a(n) = floor(n*e).
+A132222: Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
+A276853: Beatty sequence for 2*e.
+A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
+A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
