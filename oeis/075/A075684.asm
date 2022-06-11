@@ -25,7 +25,7 @@ lpb $3
   sub $3,15
   mov $2,-2
   bin $2,$0
-  sub $3,13
+  sub $3,14
   div $2,2
   sub $0,$2
   max $1,$0

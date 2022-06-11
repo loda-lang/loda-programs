@@ -1,15 +1,15 @@
 ; A187478: Rank transform of the sequence floor(3(n-2)/2)); complement of A187479.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by [AF] Kalianthys
 ; 1,2,3,6,8,9,11,13,15,17,18,20,22,24,26,28,29,31,33,35,36,39,40,42,44,46,48,49,51,53,55,57,58,60,62,64,66,68,69,71,73,75,77,79,80,82,84,86,88,90,91,93,95,97,98,101,102,104,106,108,109,111,113,115,117,119,120
 
-mov $2,16
-add $0,2
+mov $2,64
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,$4
-  sub $1,14
-  div $1,8
+  div $1,2
   sub $1,$2
+  sub $1,7
+  div $1,4
   add $4,$3
   add $4,2
   bin $3,$2
@@ -20,7 +20,5 @@ lpb $0
   mul $3,2
   dif $1,$3
 lpe
-mov $0,$5
-sub $0,2
-div $0,2
-add $0,1
+div $4,2
+mov $0,$4
