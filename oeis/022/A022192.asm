@@ -6,22 +6,16 @@ lpb $0
   sub $0,1
   mul $2,2
   add $2,1
-  add $5,1
 lpe
 add $2,1
 mov $3,1
-mov $6,1
 mov $0,10
-dif $0,$1
 lpb $0
   sub $0,1
-  mul $4,$4
   mov $1,$3
   mul $2,2
   mul $3,$2
   sub $3,$1
 lpe
-mov $0,$3
-div $0,10414855105976475
 mov $0,$1
 div $0,10180699028325

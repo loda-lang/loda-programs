@@ -1,10 +1,10 @@
 ; A043686: a(n) = (1/2)*(n-th number whose base-2 representation has exactly 12 runs).
-; Submitted by Gunnar Hjern
+; Submitted by nenym
 ; 1365,2389,2645,2709,2725,2729,2730,2731,2733,2741,2773,2901,3413,4437,4693,4757,4773,4777,4778,4779,4781,4789,4821,4949,5205,5269,5285,5289,5290,5291,5293,5301,5333,5397,5413,5417
 
-mov $1,6
+mov $1,7
 mov $2,$0
-add $2,11
+add $2,10
 pow $2,2
 bin $2,2
 lpb $2
@@ -15,9 +15,12 @@ lpb $2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,2
+  add $1,1
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+mul $0,2
+sub $0,2730
 div $0,2
+add $0,1365

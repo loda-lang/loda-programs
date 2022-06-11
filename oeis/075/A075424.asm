@@ -7,15 +7,15 @@ lpb $3
   add $0,$3
   mov $4,2
   lpb $4
+    sub $4,1
     sub $0,1
     mov $2,$0
     max $2,0
     seq $2,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
     mov $3,0
-    sub $4,1
-    mov $5,$4
-    mul $5,$2
-    min $0,$5
+    mov $1,$4
+    mul $1,$2
+    min $0,$1
   lpe
 lpe
 mov $0,$2

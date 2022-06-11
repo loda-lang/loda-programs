@@ -8,16 +8,14 @@ lpb $0
 lpe
 add $2,1
 sub $4,$0
-cmp $1,1
 add $4,$2
 mov $1,$4
-add $2,-1
+sub $2,1
 mov $0,$2
 lpb $0
   sub $0,1
   add $1,$3
   add $3,$4
-  mod $0,16
   mul $3,-1
   add $3,$1
   trn $4,1

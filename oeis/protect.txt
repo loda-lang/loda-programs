@@ -39,6 +39,7 @@ A039713: a(n) = n-th prime modulo 15.
 A039714: a(n) = n-th prime modulo 16.
 A039715: Primes modulo 17.
 A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
+A049234: Number of divisors of prime(n) + 2.
 A051674: a(n) = prime(n)^prime(n).
 A060904: Largest power of 5 that divides n.
 A062727: Sum of the divisors of n^n (A000312).
@@ -64,7 +65,9 @@ A106142: Semiprimes (mod 6).
 A106143: Semiprimes (mod 7).
 A106144: Semiprimes (mod 8).
 A106145: Semiprimes (mod 9).
+A106146: Semiprimes (mod 10).
 A107115: Three-digit numbers from the decimal expansion of Pi (version 3) -- but see comments.
+A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 A109722: Sum of first 2n primes.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
