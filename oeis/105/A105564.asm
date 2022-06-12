@@ -1,22 +1,19 @@
 ; A105564: Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.
+; Submitted by Gunnar Hjern
 ; 0,0,0,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,7,7,7,7,8,8,8,8,8,9,9,9,9,10,10,10,10,10,11,11,11,11,11,12,12,12,12,13,13,13,13,13,14,14,14,14,14,15,15,15,15,16,16,16,16,16,17,17,17,17,17,18,18
 
+mov $2,2
 add $0,2523
-mov $3,2
 lpb $0
-  sub $0,1
-  mov $2,$0
-  mov $0,2
+  mul $2,2
   add $2,1
-  mul $3,2
-  add $3,1
-  mul $3,$2
-  mul $3,4
-  mov $4,$3
-  sub $4,4
-  div $4,93
-  add $4,2
-  mov $1,$4
+  mul $2,$0
+  mul $2,4
+  mov $0,2
+  mov $1,$2
+  sub $1,4
+  div $1,93
+  add $1,2
 lpe
-sub $1,544
 mov $0,$1
+sub $0,544

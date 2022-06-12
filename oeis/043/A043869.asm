@@ -6,7 +6,7 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  sub $2,8
+  sub $2,14
   mov $3,$1
   seq $3,43556 ; Number of runs in base-4 representation of n.
   cmp $3,2

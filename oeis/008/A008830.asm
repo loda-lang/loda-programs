@@ -2,13 +2,10 @@
 ; Submitted by TidalZelda
 ; 0,1,8,2,4,9,7,3,6,5
 
-cmp $4,3
-mul $3,2
 add $0,1
 mul $0,2
 mov $3,1
-mov $1,223
-add $1,1
+mov $1,224
 lpb $1
   add $1,1
   sub $1,$0

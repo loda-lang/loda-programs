@@ -11,8 +11,8 @@ lpb $0
   add $5,$2
   sub $2,$3
   add $3,$1
-  mul $1,2
   add $4,$2
+  mul $1,2
   mul $2,2
   sub $5,$3
 lpe

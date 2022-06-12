@@ -8,10 +8,10 @@ lpb $0
   add $1,$3
   max $5,$1
   add $5,$2
+  add $5,1
   mul $2,2
   add $2,1
   add $2,$4
-  add $5,1
   mov $3,$5
   mul $4,2
 lpe
