@@ -25,12 +25,14 @@ lpe
 mul $1,$0
 div $1,$2
 add $1,$0
+add $6,1
 sub $2,$4
 div $1,2
 add $0,5
 sub $2,7
 div $0,3
 mov $0,$1
+mul $9,2
 sub $0,6
 add $0,5
 mov $0,$1

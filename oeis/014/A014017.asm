@@ -6,8 +6,8 @@ lpb $0
 lpe
 lpb $0
   sub $1,$0
-  dif $0,4
   add $1,3
+  dif $0,4
 lpe
 pow $1,$0
 mov $0,$1

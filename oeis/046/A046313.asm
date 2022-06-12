@@ -1,21 +1,6 @@
 ; A046313: Numbers that are divisible by at least 10 primes (counted with multiplicity).
-; Submitted by fzs600
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1024,1536,2048,2304,2560,3072,3456,3584,3840,4096,4608,5120,5184,5376,5632,5760,6144,6400,6656,6912,7168,7680,7776,8064,8192,8448,8640,8704,8960,9216,9600,9728,9984,10240,10368,10752,11264,11520,11664,11776,12096,12288,12544,12672,12800,12960,13056,13312,13440,13824,14080,14336,14400,14592,14848,14976,15360,15552,15872,16000,16128,16384,16640,16896,17280,17408,17496,17664,17920,18144,18432,18816,18944,19008,19200,19440,19456,19584,19712,19968,20160,20480,20736,20992,21120,21504,21600,21760
 
-mov $1,2
-mov $2,200533921
-lpb $2
-  mov $3,$1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
-  div $3,7
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+seq $0,46307 ; Numbers that are divisible by at least 7 primes (counted with multiplicity).
 mul $0,8
-add $0,8

@@ -1,7 +1,6 @@
 ; A166480: Greater of twin primes, written in base 6.
-; Submitted by Cruncher Pete
+; Submitted by [SG]KidDoesCrunch
 ; 5,11,21,31,51,111,141,201,251,301,351,411,501,521,531,1021,1041,1131,1151,1241,1341,1541,2001,2051,2231,2351,2441,2511,2551,3021,3431,3451,3501,3551,4031,4421,4441,4511,4531,5021,5201,5411,5531,5551,10011
 
-seq $0,14574 ; Average of twin prime pairs.
+seq $0,6512 ; Greater of twin primes.
 seq $0,7092 ; Numbers in base 6.
-add $0,1

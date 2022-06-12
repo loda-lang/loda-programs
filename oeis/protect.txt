@@ -78,6 +78,7 @@ A129072: Numbers n such that (n-13)/12 is prime.
 A129073: Numbers n such that (n-8)/7 is prime.
 A129074: Numbers n such that (n-9)/8 is prime.
 A129075: Numbers n such that (n-4)/3 is prime.
+A130614: a(n) = p^(p-2), where p = prime(n).
 A131426: a(n) = 2*prime(n) - 3.
 A132227: a(n) = 3*prime(n) - 5.
 A135481: a(n) = 2^A007814(n+1) - 1.
@@ -86,6 +87,7 @@ A137521: Prime numbers concatenated with 45.
 A137807: Final digit of prime(n)^2.
 A137831: (Prime(n)^2 minus its last digit)/20.
 A139049: a(n) = prime(n) + 6.
+A139293: (2^(2p - 1)/8)-1, where p is prime.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140777: a(n) = 2*prime(n) - 4.
 A142342: a(n) = 10*prime(n).

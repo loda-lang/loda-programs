@@ -1,5 +1,5 @@
 ; A043595: Numbers whose base-4 representation has exactly 4 runs.
-; Submitted by kotenok2000
+; Submitted by BarnardsStern
 ; 68,70,71,72,73,75,76,77,78,97,98,99,100,102,103,108,109,110,113,114,115,116,118,119,120,121,123,132,134,135,136,137,139,140,141,142,145,146,147,152,153,155,156,157,158,177,178,179
 
 mov $2,$0
@@ -16,8 +16,4 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mul $1,2
 mov $0,$1
-sub $0,136
-div $0,2
-add $0,68
