@@ -8,8 +8,8 @@ mov $2,$0
 add $2,1
 lpb $0
   lpb $0
-    div $0,2
-    add $1,16
+    div $0,5
+    add $1,12
   lpe
   mov $0,$1
 lpe
@@ -21,7 +21,8 @@ lpb $0
   add $2,$1
 lpe
 mov $0,$2
-mul $0,10
-sub $0,10
+mul $0,5
+sub $0,5
 div $0,5
+mul $0,2
 add $0,5

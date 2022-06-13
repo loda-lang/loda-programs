@@ -5,9 +5,9 @@ add $0,1
 mov $2,$0
 mod $0,10
 sub $0,$2
-mov $1,$2
 mov $3,$2
 sub $3,$0
 sub $3,$2
+mov $1,$2
 add $1,$3
 mov $0,$1

@@ -11,8 +11,8 @@ lpb $0
   mul $3,$0
   sub $0,1
   lpb $3
-    add $1,6
     div $3,10
+    add $1,6
   lpe
 lpe
 div $1,6

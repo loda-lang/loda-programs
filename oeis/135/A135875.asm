@@ -4,11 +4,11 @@
 add $0,1
 mov $1,3
 mov $2,2
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
-  mov $5,$4
   mov $6,0
+  mov $5,$4
   lpb $5
     div $0,$2
     div $3,$2

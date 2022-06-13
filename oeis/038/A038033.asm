@@ -4,8 +4,8 @@
 
 add $0,2
 mov $1,$0
-add $0,1
 seq $1,274 ; Number of permutations of length n with 2 consecutive ascending pairs.
+add $0,1
 mul $0,$1
 div $0,3
 mul $0,6

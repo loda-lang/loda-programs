@@ -1,19 +1,7 @@
 ; A002677: Denominators of coefficients for central differences M_{3}'^(2*n+1).
-; Submitted by Jon Maiga
+; Submitted by GolfSierra
 ; 1,4,40,12096,604800,760320,217945728000,697426329600,16937496576000,30964207376793600,187333454629601280000,111407096483020800000,1814811575069725360128000000,10162944820390462016716800000
 
-add $0,1
 mul $0,2
-mov $1,1
-lpb $0
-  sub $0,1
-  mov $2,1
-  add $2,$0
-  add $2,1
-  mul $1,$2
-  mul $3,2
-  sub $3,2
-lpe
-gcd $3,$1
-div $1,$3
-mov $0,$1
+add $0,1
+seq $0,2679 ; Denominator of 2*Stirling_2(n,2)/n!.

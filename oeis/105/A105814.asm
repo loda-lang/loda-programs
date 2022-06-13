@@ -6,12 +6,10 @@ add $0,1
 mov $2,$0
 mov $3,$0
 lpb $3
-  mul $0,10
   div $3,10
+  mul $0,10
 lpe
-add $0,1
+mov $1,$2
+mul $1,$2
 add $0,$2
-mov $4,$2
-mul $4,$2
-add $0,$4
-sub $0,1
+add $0,$1

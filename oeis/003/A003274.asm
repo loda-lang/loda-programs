@@ -3,10 +3,10 @@
 
 lpb $0
   mov $1,$0
-  mov $0,1
   seq $1,69241 ; Number of Hamiltonian paths in the graph on n vertices {1,...,n}, with i adjacent to j iff |i-j| <= 2.
   mul $1,2
   sub $1,1
+  mov $0,1
 lpe
 add $1,1
 mov $0,$1

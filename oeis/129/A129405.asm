@@ -1,8 +1,9 @@
 ; A129405: Expansion of L(3, chi3) in base 2, where L(s, chi3) is the Dirichlet L-function for the non-principal character modulo 3.
-; Submitted by pascal768
+; Submitted by Gunnar Hjern
 ; 1,1,1,0,0,0,1,0,0,1,0,0,1,1,1,1,0,1,1,0,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,1,1,0,1,0,1,1,1,0,1,1,1
 
 add $0,1
+mov $2,1
 mov $3,$0
 mul $3,5
 lpb $3
@@ -10,7 +11,6 @@ lpb $3
   mul $5,2
   add $5,1
   mul $2,$5
-  add $2,$5
   mul $1,$3
   div $1,2
   add $1,$2

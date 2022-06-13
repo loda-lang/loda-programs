@@ -1,9 +1,6 @@
 ; A043592: Numbers whose base-3 representation has exactly 12 runs.
-; Submitted by PDW
+; Submitted by [SG]KidDoesCrunch
 ; 199290,199292,199293,199294,199306,199307,199308,199310,199317,199319,199320,199321,199324,199325,199329,199330,199432,199433,199437,199438,199441,199442,199443,199445,199452,199454,199455
 
 seq $0,43586 ; Numbers whose base-3 representation has exactly 6 runs.
-mul $0,2
-sub $0,546
-div $0,2
-add $0,199290
+add $0,199017

@@ -4,5 +4,5 @@
 
 mov $1,$0
 trn $0,1
-seq $0,52717 ; E.g.f. x*(1 - sqrt(1 - 4*x))/2 .
+seq $0,52717 ; Expansion of e.g.f. x*(1 - sqrt(1 - 4*x))/2.
 mul $0,$1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,6513 ; Limit of the image of n after 2k iterates of `(3x+1)/2' map as k grows.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

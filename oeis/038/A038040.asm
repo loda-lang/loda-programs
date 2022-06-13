@@ -1,18 +1,8 @@
 ; A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
-; Submitted by eclipse99
+; Submitted by fzs600
 ; 1,4,6,12,10,24,14,32,27,40,22,72,26,56,60,80,34,108,38,120,84,88,46,192,75,104,108,168,58,240,62,192,132,136,140,324,74,152,156,320,82,336,86,264,270,184,94,480,147,300,204,312,106,432,220,448,228,232,118,720,122,248,378,448,260,528,134,408,276,560,142,864,146,296,450,456,308,624,158,800,405,328,166,1008,340,344,348,704,178,1080,364,552,372,376,380,1152,194,588,594,900
 
-mov $2,1
-mov $3,$0
-add $3,1
-lpb $3
-  mov $1,$3
-  mul $2,$3
-  seq $2,145154 ; Coefficients in expansion of Eisenstein series E_1.
-  mov $3,0
-lpe
-mul $2,$1
-mov $0,$2
-sub $0,4
-div $0,4
-add $0,1
+seq $1,227501 ; Number of non-congruent solutions of x^2 - xy + y^2 == 1 (mod n).
+add $1,$0
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mul $0,$1

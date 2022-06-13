@@ -4,8 +4,8 @@
 lpb $0
   add $1,$0
   mov $2,$0
-  sub $0,1
   seq $2,244049 ; Sum of all proper divisors of all positive integers <= n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1
