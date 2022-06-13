@@ -10,9 +10,9 @@ lpb $3
   add $2,$3
   mov $3,$0
 lpe
+mov $1,$3
+pow $1,$0
 pow $2,$0
-mov $4,$3
-pow $4,$0
-div $2,$4
+div $2,$1
 mov $0,$2
 add $0,1

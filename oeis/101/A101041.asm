@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,101040 ; If n has one or two prime-factors then 1 else 0.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

@@ -1,8 +1,10 @@
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000572: A Beatty sequence: [ n(e+1) ].
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
+A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 A001956: Beatty sequence of (5+sqrt(13))/2.
 A001961: A Beatty sequence: floor(n * (sqrt(5) - 1)).
+A001962: A Beatty sequence: floor(n * (sqrt(5) + 3)).
 A001966: v-pile counts for the 4-Wythoff game with i=2.
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
@@ -10,6 +12,7 @@ A003511: A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
 A003512: A Beatty sequence: floor(n*(sqrt(3) + 2)).
 A003589: a(n) has the property that the sequence b(n) = number of 2's between successive 3's is the same as the original sequence.
 A003622: The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.
+A003623: Wythoff AB-numbers: floor(floor(n*phi^2)*phi), where phi = (1+sqrt(5))/2.
 A007067: Nearest integer to n*tau.
 A022342: Integers with "even" Zeckendorf expansions (do not end with ...+F_2 = ...+1) (the Fibonacci-even numbers); also, apart from first term, a(n) = Fibonacci successor to n-1.
 A022804: a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
@@ -43,3 +46,4 @@ A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A284396: Positions of 2 in A284394.
 A286927: Positions of 1 in A286925; complement of A286926.
 A317621: Numbers missing from A317619.
+A339661: Number of factorizations of n into distinct squarefree semiprimes.

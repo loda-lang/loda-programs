@@ -5,6 +5,6 @@
 seq $0,140105 ; Trailing zeros removed from n! in binary.
 lpb $0
   div $0,10
-  add $2,1
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$1

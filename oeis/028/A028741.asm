@@ -12,17 +12,16 @@ lpb $0
   mul $1,2
   mul $3,2
   add $3,1
-  add $6,4
   sub $6,$3
+  add $6,4
   trn $6,8
   add $6,3
   add $1,$6
   mov $5,$7
   add $5,19
-  mov $0,$5
-  add $7,20
   mul $7,2
-  sub $7,2
+  add $7,38
+  mov $0,$5
   add $0,$7
   div $0,10
   sub $0,1

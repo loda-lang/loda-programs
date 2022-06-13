@@ -1,5 +1,5 @@
 ; A060135: Sequence of adjacent transpositions (a[n] a[n]+1), which, when starting from the identity permutation and applied successively, produce a Hamiltonian circuit through all permutations of S_4, in such a way that S_{n-1} is always traversed before the rest of S_n. Furthermore, each subsequence from the first to the (n!-1)-th term is palindromic.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by GolfSierra
 ; 1,2,1,2,1,3,1,2,3,2,1,2,1,2,3,2,1,3,1,2,1,2,1
 
 mov $2,6
@@ -20,7 +20,6 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $1,12
-    mul $2,2
   lpe
 lpe
 mov $0,$1

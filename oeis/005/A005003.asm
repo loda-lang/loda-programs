@@ -6,7 +6,7 @@ mov $1,1
 mov $3,$0
 mov $2,$0
 lpb $2
-  sub $2,1
+  trn $2,1
   mov $0,$3
   sub $0,$2
   seq $0,58692 ; a(n) = B(n) - 1, where B(n) = Bell numbers, A000110.
