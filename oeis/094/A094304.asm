@@ -4,8 +4,8 @@
 
 add $0,1
 mov $1,$0
-cmp $0,1
 trn $1,2
+cmp $0,1
 add $0,$1
 lpb $1
   mul $0,$1

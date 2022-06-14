@@ -4,7 +4,6 @@
 
 mov $1,3
 mov $2,332202
-sub $2,$5
 lpb $2
   mov $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
@@ -17,7 +16,6 @@ lpb $2
   sub $2,18
   add $5,$1
   div $5,4
-  add $4,$4
   mov $6,$5
 lpe
 mov $0,$5

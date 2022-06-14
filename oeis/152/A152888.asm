@@ -1,5 +1,5 @@
 ; A152888: Partial sums of length of terms in A081368 where A081368(1) is set to 0.
-; Submitted by Christian Krause
+; Submitted by GolfSierra
 ; 0,2,5,9,14,21,28,36,45,55,66,77,90,104,119,135,152,170
 
 mov $5,$0
@@ -17,12 +17,11 @@ lpb $0
   sub $1,$2
   add $1,8
 lpe
-div $1,2
-sub $1,1
 mov $4,$3
 mul $4,$3
+div $1,2
 add $1,$3
 add $1,$4
 mov $0,$1
-sub $0,2
+sub $0,3
 div $0,3

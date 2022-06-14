@@ -6,10 +6,10 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-mul $1,2
-bin $1,$0
 mov $2,5
 pow $2,$0
+mul $1,2
+bin $1,$0
 mul $1,$2
 mod $1,3
 mov $0,$1

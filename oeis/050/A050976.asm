@@ -4,8 +4,8 @@
 
 mul $0,2
 add $0,3
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
   cmp $0,$5
   add $1,1

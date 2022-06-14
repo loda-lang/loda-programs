@@ -1,9 +1,8 @@
 ; A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
-; Submitted by PDW
+; Submitted by Arkhenia
 ; 2,4,5,7,7,10,9,12,12,14,13,18,15,18,19,21,19,24,21,26,25,26,25,32,28,30,31,34,31,38,33,38,37,38,39,45,39,42,43,48,43,50,45,50,51,50,49,58,52,56,55,58,55,62,59,64,61,62,61,72,63,66,69,71,69,74,69,74,73,78,73,84,75,78,81,82,81,86,81,90,86,86,85,96,89,90,91,96,91,102,95,98,97,98,99,108,99,104,105,109
 
 mov $1,$0
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $1,$0
-mov $0,$1
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+add $0,$1
 add $0,1

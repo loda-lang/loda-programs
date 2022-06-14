@@ -9,9 +9,9 @@ div $0,2
 mod $0,2
 mov $3,$6
 mul $3,7
-mov $4,6
 mov $5,8
 sub $5,$0
+mov $4,6
 mul $4,$5
 mul $4,4
 sub $4,$3

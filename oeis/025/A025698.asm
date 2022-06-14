@@ -1,23 +1,19 @@
 ; A025698: Index of 3^n within sequence of numbers of form 3^i*7^j.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,2,4,6,9,12,16,20,25,31,37,44,51,59,67,76,86,96,107,118,130,142,155,168,182,197,212,228,244,261,278,296,315,334,354,374,395,416,438,461,484,508,532,557,582,608,634,661,689,717,746,775,805,835,866,898,930,963,996
 
-mov $4,$0
+mov $1,1
+mov $2,$0
 mov $3,$0
 lpb $3
   sub $3,1
-  mov $0,$4
+  mov $0,$2
   sub $0,$3
-  mul $0,79
-  mov $2,$0
-  mov $0,35
-  lpb $0
-    mul $0,4
-    div $2,$0
-    add $2,1
-    mov $0,10
-  lpe
-  add $1,$2
+  mul $0,9
+  div $4,16
+  add $4,$0
+  div $4,16
+  add $4,1
+  add $1,$4
 lpe
 mov $0,$1
-add $0,1

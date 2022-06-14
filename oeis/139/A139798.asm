@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,55832 ; T(n,n-5), where T is the array in A055830.
+  sub $0,1
   add $1,$2
 lpe
 add $1,8

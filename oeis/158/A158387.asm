@@ -1,6 +1,12 @@
 ; A158387: a(n) = -1 if n is a square, 1 if n is not a square.
+; Submitted by [SG]KidDoesCrunch
 ; -1,1,1,-1,1,1,1,1,-1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1
 
-seq $0,49240 ; Smallest nonnegative value taken on by x^2 - ny^2 for an infinite number of integer pairs (x, y).
+lpb $0
+  sub $0,1
+  add $2,2
+  sub $0,$2
+lpe
+min $0,1
 mul $0,2
 sub $0,1

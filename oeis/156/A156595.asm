@@ -7,5 +7,4 @@ lpb $0
   sub $0,4
   dif $0,3
 lpe
-add $2,3
-mod $0,$2
+mod $0,3

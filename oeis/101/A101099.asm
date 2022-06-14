@@ -4,8 +4,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,101092 ; Second partial sums of fifth powers (A000584).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -8,11 +8,11 @@ lpb $0
     sub $0,1
     add $4,$2
   lpe
-  mov $2,$4
   mov $3,1
+  mov $2,$4
   lpb $2
-    add $1,3
     sub $2,1
+    add $1,3
     add $3,$1
   lpe
   add $1,$3
@@ -23,28 +23,28 @@ lpb $6
   sub $6,1
   add $9,$7
 lpe
-mov $5,3
 mov $8,$9
+mov $5,3
 lpb $5
-  add $1,$9
   sub $5,1
+  add $1,$9
 lpe
-mov $6,$7
 mov $9,0
+mov $6,$7
 lpb $6
   sub $6,1
   add $9,$8
 lpe
-mov $6,$7
 mov $8,$9
 mov $9,0
+mov $6,$7
 lpb $6
   sub $6,1
   add $9,$8
 lpe
 mov $5,1
 lpb $5
-  add $1,$9
   sub $5,1
+  add $1,$9
 lpe
 mov $0,$1

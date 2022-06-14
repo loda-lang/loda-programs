@@ -6,8 +6,8 @@ mov $1,1
 lpb $0
   mov $2,$0
   seq $2,60607 ; Number of iterations of phi(x) at prime(n) needed to reach 1.
+  sub $2,1
   sub $0,1
-  trn $2,1
   add $1,$2
 lpe
 mov $0,$1

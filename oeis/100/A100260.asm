@@ -10,9 +10,9 @@ lpb $0
     mov $1,$2
     div $1,2
   lpe
-  div $0,2
   mov $2,$1
   add $2,$1
+  div $0,2
   sub $1,63
 lpe
 mov $0,$2

@@ -1,4 +1,4 @@
-; A125875: Odd numbers n such that cos(2pi/n) is an algebraic number of a 13-smooth degree, but not 11-smooth.
+; A125875: Odd numbers k such that cos(2*Pi/k) is an algebraic number of a 13-smooth degree, but not 11-smooth.
 ; Submitted by [DPC] hansR
 ; 53,79,131,157,159,169,237,265,313,371,393,395,471,477,507,521,547,553,583,655,677,689,711,785,795,845,859,869,901,911,917,937,939,1007,1027,1093,1099,1113,1171,1179,1183,1185,1219,1249,1301,1325,1343
 

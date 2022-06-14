@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,66066 ; a(n) = prime(2*n) - 2*prime(n).
-sub $0,$1
 sub $0,1
+sub $0,$1

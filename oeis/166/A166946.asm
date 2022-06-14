@@ -5,8 +5,7 @@
 add $0,25
 seq $0,139764 ; Smallest term in Zeckendorf representation of n.
 add $0,2
-mov $1,4
 lpb $0
-  mov $0,$1
+  mov $0,4
 lpe
 sub $0,3

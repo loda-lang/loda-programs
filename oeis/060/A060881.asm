@@ -18,10 +18,10 @@ lpb $0
     sub $5,$0
   lpe
   add $2,1
-  mul $1,$2
   sub $5,2
   add $5,$0
   sub $0,1
+  mul $1,$2
 lpe
 mov $0,$5
 add $0,3

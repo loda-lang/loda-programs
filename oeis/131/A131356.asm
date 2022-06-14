@@ -1,8 +1,7 @@
 ; A131356: Numbers k such that p1=10k+9 and p2=p1+2 are twin primes (and p1^2 == p2^2 == 1 (mod 10)).
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by [SG]KidDoesCrunch
 ; 2,5,14,17,23,26,41,56,59,65,80,101,104,122,128,131,161,194,212,230,233,254,272,278,296,299,311,329,332,335,338,353,392,401,404,422,425,464,479,500,509,527,551,563,584,587,608,626,629,635,644,656,665,668,677
 
 seq $0,282326 ; Greater of twin primes congruent to 1 (mod 30).
-sub $0,30
 div $0,10
-add $0,2
+sub $0,1

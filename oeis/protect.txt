@@ -39,16 +39,25 @@ A039713: a(n) = n-th prime modulo 15.
 A039714: a(n) = n-th prime modulo 16.
 A039715: Primes modulo 17.
 A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
+A049001: a(n) = prime(n)^2 - 2.
 A049234: Number of divisors of prime(n) + 2.
 A051674: a(n) = prime(n)^prime(n).
+A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
+A061725: p^2 + 2 where p is a prime.
 A062727: Sum of the divisors of n^n (A000312).
 A068503: Highest power of 3 dividing prime(n)-1.
+A069262: a(n) = 4*prime(n)^2.
 A072003: 10's complement of final digit of n-th prime.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A074943: tau(n) (mod 3).
+A079704: a(n) = 2*prime(n)^2.
+A079705: 3p^2 where p runs through the primes.
 A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
 A084300: a(n) = phi(n) mod 6.
+A084920: a(n) = (prime(n)-1)*(prime(n)+1).
+A086801: a(n) = prime(n) - 3.
+A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A089241: Even numbers k such that k/2 - 1 is prime.
@@ -86,12 +95,23 @@ A135984: a(n) = 24(prime(n))+7.
 A137521: Prime numbers concatenated with 45.
 A137807: Final digit of prime(n)^2.
 A137831: (Prime(n)^2 minus its last digit)/20.
+A138689: Numbers of the form 26+p^2 (where p is a prime).
+A138690: Numbers of the form 56+p^2 (where p is a prime).
+A138691: Numbers of the form 68+p^2 (where p is a prime).
+A138693: Numbers of the form 110 + p^2. (where p is a prime).
 A139049: a(n) = prime(n) + 6.
+A139286: a(n) = 2^(2*prime(n) - 1).
+A139287: 2^(2p - 1) - 1, where p is prime.
+A139290: 2^(2p - 1)/4, where p is prime.
 A139293: (2^(2p - 1)/8)-1, where p is prime.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140777: a(n) = 2*prime(n) - 4.
 A142342: a(n) = 10*prime(n).
 A144769: a(n) = floor(prime(n)/3).
+A146109: Bell numbers (A000110) read mod 19.
+A146110: Bell numbers (A000110) read mod 20.
+A146116: Bell numbers (A000110) read mod 26.
+A146121: Bell numbers (A000110) read mod 31.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A166010: a(n) = prime(n)^2-4.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.

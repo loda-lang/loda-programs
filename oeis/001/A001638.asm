@@ -6,11 +6,11 @@ mov $1,$0
 bin $1,2
 gcd $1,2
 mov $2,$0
-seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 add $2,$1
 mod $2,2
 sub $2,8
 sub $2,$1
 mul $2,2
-sub $0,$2
+seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
 sub $0,18
+sub $0,$2
