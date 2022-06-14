@@ -1,5 +1,5 @@
 ; A162691: Strictly positive numbers n such that 24*n/(24+n) is an integer.
-; Submitted by GolfSierra
+; Submitted by [SG]KidDoesCrunch
 ; 8,12,24,40,48,72,120,168,264,552
 
 mov $2,8
@@ -20,7 +20,5 @@ lpb $0
   mov $1,72
 lpe
 mov $0,$2
-mul $0,8
-sub $0,64
-div $0,2
-add $0,8
+mul $0,4
+sub $0,24

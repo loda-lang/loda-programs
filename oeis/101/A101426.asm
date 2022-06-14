@@ -9,15 +9,14 @@ add $0,3
 mov $1,$3
 mod $1,2
 mov $3,$0
-add $3,1
 sub $3,$1
 mov $1,$3
-add $1,3
+add $1,4
 mov $2,$5
 mul $2,8
-add $1,$2
 mov $4,$5
 mul $4,$5
+add $1,$2
 mov $2,$4
 mul $2,2
 add $1,$2

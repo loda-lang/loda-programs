@@ -5,14 +5,14 @@
 mov $1,1
 mov $2,1
 lpb $0
-  mov $3,$2
   mov $6,1
+  mov $3,$2
   lpb $3
     sub $0,1
     add $2,1
     mov $4,$1
-    mul $1,4
     gcd $4,$2
+    mul $1,4
     mov $2,4
     cmp $4,1
     cmp $4,0

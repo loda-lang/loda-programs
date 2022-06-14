@@ -5,8 +5,8 @@
 lpb $0
   mov $3,$2
   bin $3,$0
-  sub $0,1
   pow $3,2
+  sub $0,1
   add $1,$3
   mul $1,3
   add $2,1

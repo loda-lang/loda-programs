@@ -5,8 +5,8 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   trn $0,1
   seq $0,133993 ; a(n) = a(n-1) + 3*a(n-2) - a(n-3) - 2*a(n-4), n > 3.
@@ -15,9 +15,9 @@ lpb $4
   mov $0,$5
   mov $3,$4
   mul $3,$5
-  add $6,$3
+  add $1,$3
 lpe
 min $2,1
 mul $2,$0
-mov $0,$6
+mov $0,$1
 sub $0,$2

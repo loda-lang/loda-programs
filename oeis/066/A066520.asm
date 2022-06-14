@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
+  seq $2,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
   sub $0,1
   div $0,2
   mul $0,2
-  seq $2,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
   add $3,$2
 lpe
 sub $1,$3

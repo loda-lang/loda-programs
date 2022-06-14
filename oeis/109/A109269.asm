@@ -9,8 +9,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,56929 ; Difference between n^2 and average of smallest prime greater than n^2 and largest prime less than n^2.
-  mul $3,4
-  bin $3,484
+  mul $3,-4
   trn $3,3
   min $3,1
   sub $0,$3

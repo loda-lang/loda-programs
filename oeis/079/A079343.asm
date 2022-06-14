@@ -5,8 +5,8 @@ add $0,1
 lpb $0
   mod $0,6
   mov $1,$0
-  cmp $0,1
   trn $1,3
+  cmp $0,1
 lpe
 sub $1,$0
 add $1,1

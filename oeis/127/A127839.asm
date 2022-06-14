@@ -5,18 +5,17 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
-  mov $2,0
   sub $5,1
+  mov $0,$3
   add $0,$5
   sub $0,1
-  add $2,$0
+  mov $2,$0
   max $2,0
   seq $2,103372 ; a(1) = a(2) = a(3) = a(4) = a(5) = 1 and for n>5: a(n) = a(n-4) + a(n-5).
   mov $0,$2
-  mov $6,$5
-  mul $6,$2
-  add $4,$6
+  mov $1,$5
+  mul $1,$2
+  add $4,$1
 lpe
 min $3,1
 mul $3,$0

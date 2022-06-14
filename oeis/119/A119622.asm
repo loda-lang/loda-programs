@@ -1,7 +1,13 @@
 ; A119622: Numbers n such that no group of order n is a Con-Cos group.
-; Submitted by Christian Krause
+; Submitted by PDW
 ; 4,12,16,18,20,24,28,30,32,36,40
 
-seq $0,56653 ; Composite numbers together with 1 but excluding 4.
-max $0,2
+add $0,3
+seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $0,2
+lpb $0
+  bin $0,4
+  add $0,1
+lpe
 mul $0,2
+add $0,2

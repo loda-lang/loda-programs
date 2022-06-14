@@ -8,11 +8,9 @@ mod $1,2
 mov $3,$0
 mul $0,$1
 trn $0,1
-add $0,2
-add $2,3
 sub $2,$1
+add $2,3
 div $2,2
 gcd $2,2
 add $0,$2
-sub $0,2
 add $0,$3
