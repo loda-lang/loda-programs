@@ -1,0 +1,12 @@
+; A100101: Bell(2n)*(2n-1)!!, where Bell are the Bell numbers A000110.
+; Submitted by PDW
+; 1,2,45,3045,434700,109596375,43800340815,25797179878470,21243510135522675,23503974546075598575,33865310276598741840900,61964234361152712204340725,141027420945032510510113517025
+
+mul $0,2
+mov $1,$0
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+sub $1,1
+lpb $1
+  mul $0,$1
+  sub $1,2
+lpe
