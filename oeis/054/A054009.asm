@@ -10,8 +10,8 @@ mov $4,1
 lpb $0
   mov $3,$2
   dif $3,$0
-  sub $0,1
   cmp $3,$2
+  sub $0,1
   sub $1,$3
   add $1,2
   cmp $3,0

@@ -4,24 +4,24 @@
 
 add $0,1
 pow $0,2
+mov $4,3
 mov $3,$0
 mul $3,3
-mov $4,3
 lpb $3
   add $0,$3
-  lpb $5
+  lpb $1
     mov $2,$0
     mod $2,$4
     cmp $2,0
-    add $3,$5
+    add $3,$1
     mov $4,10
-    sub $5,$2
+    sub $1,$2
   lpe
+  add $1,2
   mov $2,$0
   cmp $2,1
   cmp $2,0
   sub $3,$2
   add $4,2
-  add $5,2
 lpe
 mov $0,$4

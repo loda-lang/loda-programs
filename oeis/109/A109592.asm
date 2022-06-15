@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,183864 ; n+floor(sqrt(5*n/3)); complement of A183865.
+  sub $0,1
   add $1,$2
   sub $1,1
 lpe

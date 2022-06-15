@@ -3,10 +3,10 @@
 
 mov $2,$0
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $1,-1
 mul $2,2
-mov $3,-1
 lpb $2
   div $2,2
-  add $3,1
+  add $1,1
 lpe
-pow $0,$3
+pow $0,$1

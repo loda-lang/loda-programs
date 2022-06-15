@@ -10,9 +10,9 @@ lpb $0
   mov $3,$4
   sub $3,2
   bin $3,$1
+  add $3,$2
+  add $3,$2
   add $1,1
-  add $3,$2
-  add $3,$2
   mul $2,2
   add $2,$3
   add $4,1

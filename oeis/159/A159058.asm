@@ -4,7 +4,7 @@
 mov $1,$0
 mod $1,2
 mov $2,$0
-add $0,$1
 pow $2,2
+add $0,$1
 add $0,$2
 mod $0,8

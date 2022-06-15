@@ -1,9 +1,8 @@
 ; A074637: Numerator of 4 * H(n,4,3), a generalized harmonic number.
-; Submitted by Jamie Morken(w2)
+; Submitted by Gunnar Hjern
 ; 4,40,524,976,20084,491192,13935164,450160544,93250876,1249813672,55206526972,2657681947952,46167204272716,235410309457592,14140794103168588,14376406243883968,978062783205294796
 
 add $0,1
-mov $3,-1
 lpb $0
   mov $2,$0
   sub $0,1
@@ -14,8 +13,8 @@ lpb $0
   add $3,$1
   mul $1,$2
 lpe
-add $1,$3
+mov $4,$3
 gcd $3,$1
-div $1,$3
-mov $0,$1
+div $4,$3
+mov $0,$4
 mul $0,4

@@ -2,27 +2,27 @@
 ; Submitted by Jamie Morken(s3.)
 ; 0,2,4,6,8,10,12,14,16,22,26,32,36,40,44
 
-mov $6,$0
 mov $9,$0
+mov $6,$0
 lpb $6
-  mov $0,$9
   sub $6,1
+  mov $0,$9
   sub $0,$6
-  mov $10,$0
   mov $11,0
   mov $12,$0
+  mov $10,$0
   lpb $10
-    mov $0,$12
     sub $10,1
+    mov $0,$12
     sub $0,$10
-    mov $14,2
     mov $15,0
     mov $16,$0
+    mov $14,2
     lpb $14
-      mov $0,$16
+      sub $14,1
       mov $5,0
       mov $7,0
-      sub $14,1
+      mov $0,$16
       add $0,$14
       sub $0,1
       mov $1,2
@@ -30,13 +30,13 @@ lpb $6
       mov $3,$0
       mul $3,5
       lpb $3
+        add $7,1
         mul $2,$3
         div $2,$1
-        add $1,$2
-        sub $3,$2
-        sub $2,7
         sub $3,1
-        add $7,1
+        sub $3,$2
+        add $1,$2
+        sub $2,7
         mov $5,$7
         div $5,3
         mov $4,$5

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,4
   seq $2,187243 ; Number of ways of making change for n cents using coins of 1, 5, and 10 cents.
+  sub $0,4
   add $1,$2
 lpe
 add $1,1

@@ -7,10 +7,10 @@ lpb $0
   max $0,2
   mov $3,$2
   lpb $3
-    add $1,1
     dif $3,$0
     mul $3,2
     cmp $3,$2
+    add $1,1
     mod $2,1
     cmp $3,0
     mul $3,$0

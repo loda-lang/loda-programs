@@ -5,11 +5,10 @@
 bin $1,$0
 mov $3,1
 lpb $0
+  add $0,1
   mov $2,$0
-  add $2,1
   mod $2,3
   mul $2,$3
-  add $0,1
   div $0,3
   add $1,$2
   mul $3,10

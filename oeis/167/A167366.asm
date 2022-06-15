@@ -9,12 +9,12 @@ lpb $0
   sub $2,$0
 lpe
 bin $1,$0
-add $0,1
 mul $1,2
 mul $2,$1
+add $0,1
 sub $0,$2
-mod $1,4
 div $2,$0
+mod $1,4
 sub $1,$2
 mov $0,$1
 sub $0,1

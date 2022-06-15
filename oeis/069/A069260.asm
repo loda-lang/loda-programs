@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  div $0,10
   mod $2,10
   add $3,$4
   sub $4,$2
+  div $0,10
   mov $1,$4
   mul $1,$2
   mul $1,$3

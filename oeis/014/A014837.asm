@@ -5,5 +5,5 @@
 mov $1,$0
 add $0,2
 seq $0,131383 ; Total digital sum of n: sum of the digital sums of n for all the bases 1 to n (a 'digital sumorial').
-sub $0,$1
 sub $0,4
+sub $0,$1

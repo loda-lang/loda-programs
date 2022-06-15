@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   trn $0,3
-  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
   add $1,$2
 lpe
 mov $0,$1

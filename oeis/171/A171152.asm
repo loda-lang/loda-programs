@@ -1,23 +1,14 @@
 ; A171152: Partial sums of A118011.
+; Submitted by Simon Strandgaard
 ; 3,9,17,28,41,56,74,94,116,140,167,196,227,260,295,333,373,415,459,505,553,604,657,712,769,828,889,952,1018,1086,1156,1228,1302,1378,1456,1536,1619,1704,1791,1880,1971,2064,2159,2256,2355,2457,2561,2667,2775,2885,2997,3111
 
-mov $2,$0
-mov $4,$0
-lpb $2
-  add $1,$0
-  add $2,1
-  add $3,1
-  lpb $0
-    sub $0,1
-    add $1,$2
-  lpe
-  sub $2,$3
-  add $1,$2
-  sub $2,1
-lpe
-lpb $4
-  add $1,2
-  sub $4,1
-lpe
-add $1,3
-mov $0,$1
+add $0,2
+mov $1,$0
+sub $0,1
+sub $2,$0
+add $2,$1
+mov $3,$1
+mul $3,$1
+seq $0,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
+sub $0,$2
+add $0,$3

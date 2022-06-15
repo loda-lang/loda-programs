@@ -5,6 +5,6 @@
 mov $1,$0
 mov $0,2
 pow $0,$1
-seq $1,108735 ; Expansion of (1 + 12*x)^(1/2).
+seq $1,108735 ; Expansion of sqrt(1 + 12*x).
 mul $1,$0
 mov $0,$1

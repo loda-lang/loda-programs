@@ -4,8 +4,8 @@
 add $0,2
 lpb $0
   mov $2,$0
-  trn $0,4
   seq $2,103290 ; n*(n-1)*(n^2-n+4)/6.
+  trn $0,4
   add $1,$2
 lpe
 div $1,2
