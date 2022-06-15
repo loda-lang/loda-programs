@@ -4,5 +4,5 @@
 
 mov $1,$0
 add $1,3
-seq $1,97081 ; Sum C(n,4k)2^k, k = 0 . . n.
+seq $1,97081 ; a(n) = Sum_{k=0..n} C(n,4k)*2^k.
 mov $0,$1

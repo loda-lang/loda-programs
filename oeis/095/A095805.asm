@@ -5,5 +5,4 @@
 seq $0,95804 ; Values of s in Wolfram's iteration for sqrt(2).
 lpb $0
   dif $0,2
-  dif $0,2
 lpe

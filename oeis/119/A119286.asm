@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,56572 ; Fifth power of Fibonacci numbers A000045.
+  sub $0,1
   add $1,$2
   mul $1,-1
 lpe

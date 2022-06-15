@@ -2,6 +2,6 @@
 ; 0,0,2,6,48,240,2160,15120,161280,1451520,18144000,199584000,2874009600,37362124800,610248038400,9153720576000,167382319104000,2845499424768000,57621363351552000,1094805903679488000
 
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 div $1,2
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mul $0,$1

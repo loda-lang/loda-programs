@@ -5,11 +5,11 @@
 lpb $0
   sub $0,1
   mul $0,2
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,99938 ; Consider the sequence of circles C0, C1, C2, C3 ..., where C0 is a half-circle of radius 1. C1 is the largest circle that fits into C0 and has radius 1/2. C(n+1) is the largest circle that fits inside C0 but outside C(n), etc. Sequence gives the curvatures (reciprocals of the radii) of the circles.
   mod $0,2
-  max $2,0
-  seq $2,99938 ; Consider the sequence of circles C0, C1, C2, C3 ..., where C0 is a half-circle of radius 1. C1 is the largest circle that fits into C0 and has radius 1/2. C(n+1) is the largest circle that fits inside C0 but outside C(n), etc. Sequence gives the curvatures (reciprocals of the radii) of the circles.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,2
 div $0,4

@@ -4,8 +4,8 @@
 mov $1,1
 lpb $0
   add $1,$0
+  add $1,1
   trn $0,1
   seq $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
-  add $1,1
 lpe
 mov $0,$1

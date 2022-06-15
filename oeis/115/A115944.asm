@@ -1,20 +1,8 @@
 ; A115944: Number of partitions of n into distinct factorials.
-; Submitted by respawner
+; Submitted by Jason Jung
 ; 1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $2,1
-mov $3,1
-mov $6,1
-mov $1,$0
-lpb $1
-  sub $1,$6
-  add $2,1
-  mov $4,$3
-  mul $4,$2
-  mov $5,$0
-  mod $5,$4
-  div $5,$3
-  mov $3,$4
-  bin $6,$5
-lpe
-mov $0,$6
+seq $0,275735 ; Prime-factorization representations of "factorial base level polynomials": a(0) = 1; for n >= 1, a(n) = 2^A257511(n) * A003961(a(A257684(n))).
+sub $0,1
+seq $0,166635 ; Totally multiplicative sequence with a(p) = 5*(p-1) for prime p.
+mod $0,2

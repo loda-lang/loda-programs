@@ -5,11 +5,11 @@
 mov $2,$0
 mov $3,2
 lpb $3
+  div $3,2
   mov $0,$2
   seq $0,1223 ; Prime gaps: differences between consecutive primes.
   add $1,32
   add $1,$0
-  div $3,2
   add $2,$3
   add $2,1
 lpe

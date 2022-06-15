@@ -15,15 +15,15 @@ lpb $0
     cmp $4,0
     add $2,1
     sub $3,$4
-    cmp $6,3
   lpe
   mov $5,1
+  cmp $6,3
   lpb $0
     dif $0,$2
     sub $6,1
+    mul $6,$2
     sub $4,$6
     add $4,1
-    mul $5,$2
     add $5,$4
   lpe
   mul $1,$5

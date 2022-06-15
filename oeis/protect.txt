@@ -38,10 +38,13 @@ A039712: a(n) = n-th prime modulo 14.
 A039713: a(n) = n-th prime modulo 15.
 A039714: a(n) = n-th prime modulo 16.
 A039715: Primes modulo 17.
+A046151: a(n) = n*phi(n) - 1.
+A046152: a(n) = n*phi(n) + 1.
 A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
 A049001: a(n) = prime(n)^2 - 2.
 A049234: Number of divisors of prime(n) + 2.
 A051674: a(n) = prime(n)^prime(n).
+A052147: a(n) = prime(n) + 2.
 A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
 A061725: p^2 + 2 where p is a prime.
@@ -51,6 +54,8 @@ A069262: a(n) = 4*prime(n)^2.
 A072003: 10's complement of final digit of n-th prime.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A074943: tau(n) (mod 3).
+A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
+A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
 A079704: a(n) = 2*prime(n)^2.
 A079705: 3p^2 where p runs through the primes.
 A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
@@ -80,6 +85,7 @@ A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 A109722: Sum of first 2n primes.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
+A119411: Product of the first prime(n) primes.
 A129069: Numbers n such that (n-3)/2 is prime.
 A129070: Numbers n such that (n-5)/4 is prime.
 A129071: Numbers n such that (n-7)/6 is prime.
@@ -104,6 +110,7 @@ A139286: a(n) = 2^(2*prime(n) - 1).
 A139287: 2^(2p - 1) - 1, where p is prime.
 A139290: 2^(2p - 1)/4, where p is prime.
 A139293: (2^(2p - 1)/8)-1, where p is prime.
+A140475: 1 along with primes greater than 3.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140777: a(n) = 2*prime(n) - 4.
 A142342: a(n) = 10*prime(n).

@@ -5,8 +5,8 @@
 add $0,2
 bin $0,2
 lpb $0
+  add $1,3
   add $2,$0
-  add $3,3
-  trn $0,$3
+  trn $0,$1
 lpe
 mov $0,$2

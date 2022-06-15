@@ -5,9 +5,9 @@
 mov $2,$0
 trn $0,1
 seq $0,352167 ; a(n) is the sum of the prime factors of n (with multiplicity) that are less than n.
-mov $3,$0
-cmp $3,0
-add $0,$3
+mov $1,$0
+cmp $1,0
+add $0,$1
 lpb $0
   mov $0,$2
 lpe

@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  seq $2,1912 ; Numbers k such that 4*k^2 + 1 is prime.
   sub $0,1
-  seq $2,1912 ; Numbers n such that 4*n^2 + 1 is prime.
   add $1,$2
 lpe
 mov $0,$1

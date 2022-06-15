@@ -1,7 +1,12 @@
 ; A051109: Hyperinflation sequence for banknotes.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by fzs600
 ; 1,2,5,10,20,50,100,200,500,1000,2000,5000,10000,20000,50000,100000,200000,500000,1000000,2000000,5000000,10000000,20000000,50000000,100000000,200000000,500000000,1000000000,2000000000,5000000000
 
-add $0,1
-seq $0,4647 ; Powers of 2 written in base 8.
-div $0,2
+add $0,2
+mul $0,8
+div $0,6
+add $0,2
+mov $1,$0
+seq $1,194350 ; Numbers covering A000027: a(n)=(1, 1, 2, 5) * A011557(n)).
+mov $0,$1
+div $0,10

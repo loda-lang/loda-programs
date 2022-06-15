@@ -5,7 +5,7 @@
 mov $1,$0
 mov $3,2
 lpb $3
-  pow $3,$4
+  pow $3,0
   mov $0,$1
   trn $0,1
   seq $0,52219 ; Numbers whose sum of digits is 5.
