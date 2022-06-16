@@ -1,21 +1,7 @@
 ; A026232: a(n) = (1/3)*(s(n) + 1), where s = A026231.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 3,6,7,9,12,15,16,18,19,21,24,25,27,30,33,34,36,39,42,43,45,46,48,51,52,54,55,57,60,61,63,66,69,70,72,73,75,78,79,81,84,87,88,90,93,96,97,99,100,102,105,106,108,111,114,115,117,120,123
 
-mov $2,$0
-add $2,3
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
-  sub $0,$3
-  add $1,13
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-div $0,13
+add $0,1
+seq $0,26179 ; Numbers k such that A026177(j) < A026177(k) for all j < k.
 add $0,1

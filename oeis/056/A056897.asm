@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,56896 ; Smallest prime which can be written as k^2 + n for k >= 0.
-sub $0,$1
 sub $0,1
+sub $0,$1

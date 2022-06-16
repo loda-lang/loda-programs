@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,65359 ; Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

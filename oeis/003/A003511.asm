@@ -5,50 +5,42 @@
 mov $8,2
 mov $5,8
 add $0,1
-bin $4,$0
 mov $2,1
-add $2,1
 add $4,20
 add $3,26
-mov $14,2
-sub $3,14
-sub $15,$2
+mov $13,1
 div $1,$4
-pow $6,2
-sub $3,2
 add $7,$8
-sub $3,$2
+add $2,$10
+sub $5,$2
+sub $7,$10
 lpb $3
-  add $4,7
+  add $12,10
   mov $4,$1
+  add $3,1
   add $4,$0
   add $2,$1
-  sub $3,1
+  sub $3,3
   add $2,$1
-  mov $9,$7
   mul $4,$0
   mov $5,1
-  mov $13,1
+  sub $3,1
   add $1,$2
 lpe
-mov $15,2
 mul $1,$0
 div $1,$2
-div $15,$13
-mov $7,$5
-pow $13,$14
+mov $13,2
+mov $14,1
 mul $1,2
-add $13,1
+add $0,7
 div $2,$4
 mul $8,6
-mov $14,4
 sub $0,5
-div $9,2
-mov $16,5
-mod $2,$1
+sub $10,$4
 gcd $3,$6
 mov $7,2
 mov $3,$8
 mov $0,$1
 mul $0,2
+sub $13,$3
 div $0,4

@@ -4,12 +4,12 @@
 
 add $0,1
 mov $1,$0
+mov $2,$0
 div $0,2
-mov $2,$1
 add $1,4
 bin $1,$0
-add $0,4
 mul $1,20
+add $0,4
 add $2,3
 bin $2,$0
 add $0,1

@@ -1,5 +1,5 @@
 ; A124008: Number of permutations of n distinct letters (ABCD...) each of which appears thrice with n-4 fixed points.
-; Submitted by Skillz
+; Submitted by PDW
 ; 9,189,1431,5355,14310,31374,60354,105786,172935,267795,397089,568269
 
 add $0,1
@@ -15,8 +15,4 @@ lpb $0
   add $2,$5
 lpe
 mov $0,$2
-mul $0,2
-sub $0,2
-div $0,2
 mul $0,9
-add $0,9

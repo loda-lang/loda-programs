@@ -1,9 +1,8 @@
 ; A033684: 1 iff n is a square not divisible by 3.
-; Submitted by UBT - Mikeejones
+; Submitted by Gunnar Hjern
 ; 0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 seq $0,5928 ; G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
 div $0,3
-mod $0,2
-add $0,2
+add $0,10
 mod $0,2

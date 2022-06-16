@@ -7,7 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-add $0,1
 add $1,1
+add $0,1
 pow $0,$1
 div $0,$1

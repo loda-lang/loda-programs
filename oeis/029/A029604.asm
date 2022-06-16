@@ -1,15 +1,19 @@
 ; A029604: Odd numbers in the (2,3)-Pascal triangle A029600.
-; Submitted by PDW
+; Submitted by STE\/E
 ; 1,3,5,3,7,3,9,15,11,3,11,3,13,35,17,3,15,85,57,3,17,63,133,175,147,77,23,3,19,3,21,99,29,3,23,375,155,3,25,143,495,1155,605,187,35,3,27,3069,1925,3,29,195,4719,7293,5291,2717,41,3,31,1001,7007,15873,13013
 
 mov $2,7260
+add $2,$1
+mov $6,$5
 lpb $2
-  sub $2,1
+  sub $2,32
   mov $3,$1
-  seq $3,29600 ; Numbers in the (2,3)-Pascal triangle (by row).
+  seq $3,29602 ; Numbers in the (2,3)-Pascal triangle A029600 that are different from 2.
   add $3,1
   mov $5,$3
+  mul $6,4
   mul $3,338
+  add $6,$3
   gcd $3,4
   add $3,1
   cmp $3,5
@@ -20,8 +24,6 @@ lpb $2
   cmp $4,$0
   mul $2,$4
 lpe
+div $2,10
 mov $0,$5
-sub $0,2
-div $0,2
-mul $0,2
-add $0,1
+sub $0,1

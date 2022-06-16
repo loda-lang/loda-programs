@@ -6,12 +6,11 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  sub $0,1
-  mov $2,$3
   mov $5,$0
-  add $5,1
   max $5,0
   seq $5,26029 ; Number of (s(0), s(1), ..., s(2n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| = 1 for i = 1,2,....,n, s(0) = 3, s(2n) = 3. Also T(2n,n), where T is defined in A026022.
+  sub $0,1
+  mov $2,$3
   mul $2,$5
   add $1,$2
   mov $4,$5

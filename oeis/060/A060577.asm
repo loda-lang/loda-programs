@@ -4,7 +4,7 @@
 add $0,2
 mov $1,4
 div $1,$0
-bin $0,2
 mul $1,2
-add $0,$1
+bin $0,2
 sub $0,4
+add $0,$1
