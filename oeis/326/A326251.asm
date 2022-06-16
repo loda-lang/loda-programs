@@ -1,0 +1,11 @@
+; A326251: Number of digraphs with vertices {1..n} whose increasing edges are not crossing.
+; Submitted by [BAT] Svennemans
+; 1,2,16,512,49152,11534336,6039797760,6768868458496,15885743998107648,77083611222073409536,767126299049285413502976,15572324598183490228037091328,642316330843573124053884695740416,53681919993405760099480940765478125568
+
+mov $1,$0
+seq $1,217994 ; a(n) = 2^((2 + n + n^2)/2).
+seq $0,54726 ; Number of graphs with n nodes on a circle without crossing edges.
+mul $0,$1
+sub $0,2
+div $0,2
+add $0,1
