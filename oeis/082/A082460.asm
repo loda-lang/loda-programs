@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  trn $0,2
   add $1,$2
 lpe
 mov $0,$1

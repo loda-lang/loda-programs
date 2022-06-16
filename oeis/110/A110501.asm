@@ -5,5 +5,5 @@
 add $0,1
 seq $0,24255 ; a(0)=0, a(n) = n*E(2n-1) for n >= 1, where E(n) = A000111(n) are the Euler (or up-down) numbers.
 lpb $0
-  dif $0,2
+  dif $0,4
 lpe

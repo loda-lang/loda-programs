@@ -1,3 +1,4 @@
+A001248: Squares of primes.
 A001748: 3 * primes.
 A001749: Primes multiplied by 4.
 A001750: Primes multiplied by 5.
@@ -7,6 +8,7 @@ A005722: a(n) = (prime(n) - 1)^2.
 A006093: a(n) = prime(n) - 1.
 A006450: Prime-indexed primes: primes with prime subscripts.
 A006519: Highest power of 2 dividing n.
+A066872: p^2 + 1 as p runs through the primes.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 A007423: a(n) = mu(n) + 1, where mu is the Moebius function.
 A007652: Final digit of prime(n).
@@ -54,6 +56,7 @@ A069262: a(n) = 4*prime(n)^2.
 A072003: 10's complement of final digit of n-th prime.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A074943: tau(n) (mod 3).
+A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
 A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
 A079704: a(n) = 2*prime(n)^2.
@@ -62,6 +65,7 @@ A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
 A084300: a(n) = phi(n) mod 6.
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
 A086801: a(n) = prime(n) - 3.
+A086874: Seventh power of odd primes.
 A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).

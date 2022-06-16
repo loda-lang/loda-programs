@@ -4,7 +4,7 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  div $1,2
   seq $2,2088 ; Sum of totient function: a(n) = Sum_{k=1..n} phi(k), cf. A000010.
   add $0,$2
+  div $1,2
 lpe

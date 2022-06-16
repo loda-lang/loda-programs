@@ -1,23 +1,7 @@
 ; A052834: a(n) = Bell(n+1)-Bell(n)-1, n>0.
-; Submitted by eclipse99
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,2,9,36,150,673,3262,17006,94827,562594,3535026,23430839,163254884,1192059222,9097183601,72384727656,599211936354,5150665398897,45891416030314,423145657921378,4031845922290571,39645290116637022,401806863439720942,4192631462935194063
 
-mov $1,-1
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,60719 ; a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
-lpe
-min $3,1
-mul $3,$4
-sub $1,$3
-div $1,2
-mov $0,$1
+trn $0,1
+seq $0,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
+sub $0,1

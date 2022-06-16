@@ -6,10 +6,8 @@ add $0,2
 mov $1,$0
 mod $0,8
 trn $0,6
-add $0,1
 mul $0,2
-add $0,64
+sub $0,83
 mov $2,$1
 mul $2,64
 add $0,$2
-sub $0,149

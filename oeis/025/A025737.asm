@@ -1,42 +1,20 @@
 ; A025737: Index of 9^n within sequence of numbers of form 7^i*9^j.
+; Submitted by Simon Strandgaard
 ; 1,3,6,10,15,21,28,36,46,57,69,82,96,111,127,144,163,183,204,226,249,273,298,324,352,381,411,442,474,507,541,577,614,652,691,731,772,814,857,902,948,995,1043,1092,1142,1193,1245,1299,1354,1410,1467,1525,1584,1644
 
-mov $10,$0
+mov $1,1
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$10
-  sub $0,$2
-  mov $7,$0
-  mov $8,0
-  mov $9,$0
-  add $9,1
-  lpb $9
-    sub $9,1
-    mov $0,$7
-    sub $0,$9
-    mov $3,$0
-    mov $4,0
-    mov $5,2
-    lpb $5
-      sub $5,1
-      mov $0,$3
-      add $0,$5
-      sub $0,1
-      mul $0,4
-      div $0,31
-      mov $6,$5
-      mul $6,$0
-      add $4,$6
-    lpe
-    min $3,1
-    mul $3,$0
-    mov $0,$4
-    sub $0,$3
-    add $0,1
-    add $8,$0
-  lpe
-  add $1,$8
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $2,1
+  mov $0,$2
+  sub $0,$3
+  mul $0,9
+  div $4,16
+  add $4,$0
+  div $4,16
+  add $4,1
+  add $1,$4
 lpe
 mov $0,$1
-add $0,1

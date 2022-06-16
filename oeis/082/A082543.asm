@@ -3,8 +3,8 @@
 
 pow $0,2
 sub $0,93
-mov $2,$0
-div $2,13
-mov $0,$2
+mov $1,$0
+div $1,13
+mov $0,$1
 add $0,7
 mod $0,10

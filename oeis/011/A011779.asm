@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,144677 ; Related to enumeration of quantum states (see reference for precise definition).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

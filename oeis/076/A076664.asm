@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

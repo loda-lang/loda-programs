@@ -5,9 +5,9 @@
 mul $0,2
 add $0,1
 mov $3,5026
-mul $3,3
+add $3,2
 lpb $3
-  sub $3,64
+  sub $3,53
   mov $2,-2
   bin $2,$0
   div $2,2

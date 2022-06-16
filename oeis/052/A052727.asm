@@ -4,7 +4,7 @@
 
 mov $1,2
 pow $1,$0
-seq $0,182037 ; Expansion of 1 - (1 - 2x - x^2)^(1/2).
 mul $1,2
+seq $0,182037 ; Expansion of 1 - (1 - 2x - x^2)^(1/2).
 mul $0,$1
 div $0,4

@@ -11,9 +11,9 @@ lpb $5
   seq $0,40 ; The prime numbers.
   sub $0,1
   mov $2,$0
+  pow $2,$3
   mov $0,$3
   mov $1,$4
-  pow $2,$3
   add $4,$2
 lpe
 mov $0,$1
