@@ -7,7 +7,7 @@ mov $3,4
 bin $3,$0
 sub $0,1
 mov $1,$0
-seq $1,52699 ; E.g.f. (1+x^5-x^6)/(1-x).
+seq $1,52699 ; Expansion of e.g.f. (1+x^5-x^6)/(1-x).
 mov $2,$3
 cmp $2,0
 add $3,$2

@@ -3,9 +3,9 @@
 
 lpb $0
   bin $1,$0
-  pow $0,2
   sub $1,2
   add $2,10
+  pow $0,2
   sub $0,$2
   div $0,10
   mul $2,$1

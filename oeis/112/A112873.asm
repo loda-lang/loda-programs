@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,32378 ; Noncubes such that n is divisible by floor(n^(1/3)).
+  sub $0,1
   add $1,$2
 lpe
 add $1,2

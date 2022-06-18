@@ -4,7 +4,7 @@
 
 add $0,2
 mov $1,$0
-seq $0,40 ; The prime numbers.
 seq $1,70820 ; Difference between n-th prime and the value of commutator[phi,gpf] = commutator[A000010, A006530] at the same prime argument.
-sub $0,$1
+seq $0,40 ; The prime numbers.
 add $0,1
+sub $0,$1

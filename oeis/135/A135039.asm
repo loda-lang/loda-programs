@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  mov $0,0
   seq $2,66643 ; a(n) = floor(Pi*n^2).
-  add $3,$2
-  add $3,1
+  mov $0,0
+  add $1,$2
+  add $1,1
 lpe
-mov $0,$3
+mov $0,$1

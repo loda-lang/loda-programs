@@ -3,6 +3,6 @@
 
 mov $1,$0
 lpb $1
-  pow $0,2
   mod $1,10
+  pow $0,2
 lpe

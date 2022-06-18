@@ -4,8 +4,8 @@
 mov $2,$0
 lpb $0
   sub $2,7
-  mov $0,$2
   add $3,1
+  mov $0,$2
   div $0,$3
   mov $4,$2
   cmp $4,0

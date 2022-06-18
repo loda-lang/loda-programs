@@ -21,5 +21,4 @@ lpb $0
     add $1,$4
   lpe
 lpe
-mov $0,$1
-add $0,1
+add $0,$1

@@ -1,7 +1,6 @@
 ; A131378: Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
-; Submitted by misaki@med
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1
 
-seq $0,131377 ; Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
-add $0,1
-mod $0,2
+trn $0,1
+seq $0,71986 ; Parity of the prime-counting function pi(n).

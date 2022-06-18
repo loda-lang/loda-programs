@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,27608 ; Expansion of 1/((1-x)*(1-2x)^4).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

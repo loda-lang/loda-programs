@@ -5,9 +5,9 @@
 mul $0,3
 add $0,3
 sub $1,$0
-div $0,2
 mul $1,2
+div $0,2
+sub $0,6
 sub $0,$1
 div $1,9
 add $0,$1
-sub $0,6

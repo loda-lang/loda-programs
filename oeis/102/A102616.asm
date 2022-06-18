@@ -3,8 +3,8 @@
 
 mov $1,7
 lpb $1
+  div $1,2
   seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   sub $0,1
-  div $1,2
 lpe
 add $0,1

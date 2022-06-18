@@ -4,11 +4,11 @@
 
 mov $2,$0
 add $2,1
-mov $4,3
-lpb $4
+mov $1,3
+lpb $1
+  sub $1,1
   mov $0,$2
-  sub $4,1
-  add $0,$4
+  add $0,$1
   trn $0,1
   seq $0,138692 ; Numbers of the form 86+p^2 (where p is a prime).
   add $3,$0

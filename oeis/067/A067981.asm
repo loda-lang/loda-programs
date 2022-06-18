@@ -8,13 +8,13 @@ mov $3,$0
 lpb $0
   add $3,$2
   add $3,$0
-  sub $0,1
   add $3,4
-  add $4,$3
-  mov $2,$4
-  mov $4,$3
+  sub $0,1
+  add $1,$3
+  mov $2,$1
+  mov $1,$3
+  sub $1,13
   mov $3,0
-  sub $4,13
 lpe
 mov $0,$2
 sub $0,8

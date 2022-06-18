@@ -4,7 +4,6 @@
 
 mov $2,$0
 mov $1,2
-sub $1,$3
 lpb $1
   div $1,2
   mov $0,$2

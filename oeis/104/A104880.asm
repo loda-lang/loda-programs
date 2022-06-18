@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,104872 ; Diagonal sums of A004248.
   sub $0,1
-  seq $2,104872 ; Diagonal sums of a power triangle.
   add $1,$2
 lpe
 mov $0,$1

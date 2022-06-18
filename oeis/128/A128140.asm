@@ -4,8 +4,8 @@
 
 mov $2,98578
 lpb $2
-  sub $1,1
   mov $2,$0
+  sub $1,1
   add $0,$1
 lpe
 add $1,1

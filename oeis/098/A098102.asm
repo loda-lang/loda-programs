@@ -1,11 +1,8 @@
 ; A098102: Numbers of the form 2^(p - 1) - 1 where p is prime.
-; Submitted by Dingo
+; Submitted by http://kodeks.karelia.ru/
 ; 1,3,15,63,1023,4095,65535,262143,4194303,268435455,1073741823,68719476735,1099511627775,4398046511103,70368744177663,4503599627370495,288230376151711743,1152921504606846975
 
 add $0,1
-sub $2,$0
-mov $0,0
-sub $0,$2
 seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
 mov $1,2
 pow $1,$0

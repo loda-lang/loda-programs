@@ -1,26 +1,7 @@
 ; A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
-; Submitted by Michael Goetz
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,2,2,2,2,3,2,2,2,3,2,3,2,3,3,2,2,3,2,3,3,3,2,3,2,3,2,3,2,5,2,2,3,3,3,3,2,3,3,3,2,5,2,3,3,3,2,3,2,3,3,3,2,3,3,3,3,3,2,5,2,3,3,2,3,5,2,3,3,5,2,3,2,3,3,3,3,5,2,3,2,3,2,5,3,3,3,3,2,5,3,3,3,3,3,3,2,3,3,3
 
-mov $1,4
-mov $2,2
-add $0,1
-lpb $0
-  mov $3,$0
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-  lpe
-  add $1,1
-lpe
-bin $1,2
-mov $0,$1
-div $0,4
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $0,209726 ; 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
+sub $0,15

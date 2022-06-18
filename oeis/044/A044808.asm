@@ -1,5 +1,5 @@
 ; A044808: Numbers n such that string 9,5 occurs in the base 10 representation of n but not of n+1.
-; Submitted by zombie67 [MM]
+; Submitted by GolfSierra
 ; 95,195,295,395,495,595,695,795,895,959,995,1095,1195,1295,1395,1495,1595,1695,1795,1895,1959,1995,2095,2195,2295,2395,2495,2595,2695,2795,2895,2959,2995,3095,3195,3295,3395,3495,3595
 
 add $0,2
@@ -10,9 +10,8 @@ mul $0,2
 sub $1,1
 div $1,11
 add $0,$1
-add $0,1
 mul $0,8
 add $1,$0
 mov $0,$1
 mul $0,4
-sub $0,37
+sub $0,5

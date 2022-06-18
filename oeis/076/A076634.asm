@@ -3,14 +3,13 @@
 
 lpb $0
   add $3,$0
-  mov $0,3
   add $3,1
+  mov $0,3
   sub $0,$3
   mov $2,$0
-  div $0,10
-  sub $2,1
   mul $2,2
-  add $2,5
+  add $2,3
+  div $0,10
   mov $4,22
   add $4,$0
   mul $0,2

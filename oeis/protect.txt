@@ -62,6 +62,7 @@ A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
 A079704: a(n) = 2*prime(n)^2.
 A079705: 3p^2 where p runs through the primes.
 A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
+A083271: a(n) = n*tau(n) + 1.
 A084300: a(n) = phi(n) mod 6.
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
 A086801: a(n) = prime(n) - 3.
@@ -98,6 +99,7 @@ A129073: Numbers n such that (n-8)/7 is prime.
 A129074: Numbers n such that (n-9)/8 is prime.
 A129075: Numbers n such that (n-4)/3 is prime.
 A130614: a(n) = p^(p-2), where p = prime(n).
+A130718: 2*(prime(n)-2)!.
 A131426: a(n) = 2*prime(n) - 3.
 A132227: a(n) = 3*prime(n) - 5.
 A135481: a(n) = 2^A007814(n+1) - 1.

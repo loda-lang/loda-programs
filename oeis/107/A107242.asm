@@ -4,9 +4,9 @@
 
 lpb $0
   mov $1,$0
-  sub $0,1
   seq $1,1630 ; Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with a(0)=a(1)=0, a(2)=1, a(3)=2.
   pow $1,2
+  sub $0,1
   add $2,$1
 lpe
 mov $0,$2

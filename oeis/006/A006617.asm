@@ -5,8 +5,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,108872 ; Sums of ordinal references for a triangular table read by columns, top to bottom.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

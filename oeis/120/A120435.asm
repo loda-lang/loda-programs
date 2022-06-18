@@ -5,8 +5,6 @@
 mov $1,$0
 seq $1,75061 ; Triangle in A075059 read by rows.
 seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-mov $2,$0
-pow $2,2
-mul $0,$1
-div $0,$2
+div $1,$0
+mov $0,$1
 sub $0,1

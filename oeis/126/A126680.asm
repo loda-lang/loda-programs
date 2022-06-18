@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,453 ; Stirling numbers of the second kind, S(n,4).
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

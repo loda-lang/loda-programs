@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   add $3,2
+  sub $0,2
   bin $2,$3
   add $1,$2
 lpe

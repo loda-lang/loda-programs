@@ -5,7 +5,7 @@
 lpb $0
   mov $2,$0
   seq $2,164314 ; Largest prime factor of n^2 - 2.
-  add $3,$2
-  bin $0,$3
+  add $1,$2
+  bin $0,$1
 lpe
-mov $0,$3
+mov $0,$1
