@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   add $0,2
-  seq $0,52709 ; Expansion of (1-sqrt(1-4x-4x^2))/(2(1+x)).
+  seq $0,52709 ; Expansion of (1-sqrt(1-4*x-4*x^2))/(2*(1+x)).
   div $0,2
   mov $2,$3
   mul $2,$0

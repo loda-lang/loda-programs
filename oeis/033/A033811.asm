@@ -4,5 +4,5 @@
 add $0,1
 mov $1,$0
 seq $0,23537 ; a(n) = Lucas(n+4) - (3*n+7).
-sub $0,$1
 sub $0,1
+sub $0,$1

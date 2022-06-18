@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  seq $2,39983 ; An example of a d-perfect sequence.
   add $0,2
   mod $0,3
-  seq $2,39983 ; An example of a d-perfect sequence.
   add $1,$2
 lpe
 add $1,1

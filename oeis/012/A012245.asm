@@ -1,8 +1,13 @@
 ; A012245: Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
-; Submitted by Jamie Morken(s2)
+; Submitted by misaki@med
 ; 1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,212598 ; a(n) = n - m!, where m is the largest number such that m! <= n.
-mov $2,$0
-cmp $2,0
-mov $0,$2
+mov $1,2
+add $0,1
+lpb $0
+  dif $0,$1
+  add $2,1
+  min $2,1
+  add $1,$2
+lpe
+cmp $0,1

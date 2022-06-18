@@ -2,7 +2,12 @@
 ; Submitted by Gunnar Hjern
 ; 0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,5928 ; G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
-div $0,3
-add $0,10
+mov $1,$0
+add $1,17
+mod $1,3
+sub $1,2
+seq $0,2448 ; Expansion of Jacobi theta function theta_4(x).
+mul $0,$1
+div $0,4
+add $0,2
 mod $0,2

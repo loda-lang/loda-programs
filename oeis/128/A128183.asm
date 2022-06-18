@@ -2,19 +2,19 @@
 ; Submitted by Jamie Morken(w1)
 ; 1,2,7,20,54,140,352,864,2080,4928
 
-mov $4,2
 mov $5,$0
+mov $4,2
 lpb $4
-  mov $0,$5
   sub $4,1
+  mov $0,$5
   add $0,$4
   sub $0,1
   mov $7,$0
   mov $8,0
   mov $9,2
   lpb $9
-    mov $0,$7
     sub $9,1
+    mov $0,$7
     add $0,$9
     add $0,1
     mov $2,2
@@ -23,9 +23,9 @@ lpb $4
     add $0,1
     mul $0,$2
     div $0,8
-    mov $10,$9
-    mul $10,$0
-    add $8,$10
+    mov $1,$9
+    mul $1,$0
+    add $8,$1
   lpe
   min $7,1
   mul $7,$0

@@ -5,9 +5,9 @@
 add $0,1
 lpb $0
   mov $2,$0
+  seq $2,5010 ; a(n) = 9*2^n.
   trn $0,5
   div $1,2
-  seq $2,5010 ; a(n) = 9*2^n.
   add $1,$2
 lpe
 div $1,18

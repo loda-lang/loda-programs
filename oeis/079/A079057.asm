@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,58061 ; Number of prime factors (counted with multiplicity) of d(n), the number of divisors of n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

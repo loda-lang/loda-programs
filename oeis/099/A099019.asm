@@ -1,12 +1,6 @@
 ; A099019: Odd composite numbers n such that n-2 and n+2 are also composite.
-; Submitted by Gunnar Hjern
+; Submitted by PDW
 ; 93,117,119,121,123,143,145,185,187,203,205,207,215,217,219,245,247,287,289,297,299,301,303,321,323,325,327,341,343,363,393,405,413,415,425,427,453,471,473,475,483,495,513,515,517,527,529,531,533,535,537,551,553,581,583,623,625,627,635,637,665,667,669,687,695,697,705,713,715,723,747,765,777,779,781,783,791,793,801,803,805,815,817,833,835,843,845,847,849,867,869,871,873,891,893,895,897,899,901,903
 
-mov $2,$0
-seq $2,161945 ; Numbers n with property that three consecutive odd numbers {n,n+2,n+4} are all composite.
-mov $1,$2
-cmp $1,$2
-mul $1,-1
-add $2,$1
-mov $0,$2
-add $0,3
+seq $0,161945 ; Numbers n with property that three consecutive odd numbers {n,n+2,n+4} are all composite.
+add $0,2

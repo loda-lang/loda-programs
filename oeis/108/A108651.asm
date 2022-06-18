@@ -4,9 +4,9 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   trn $1,1
   seq $1,80193 ; 5-smooth numbers which are not 3-smooth.
+  mov $0,0
 lpe
 mov $0,$1
 div $0,5

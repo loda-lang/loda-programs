@@ -6,12 +6,12 @@ sub $0,1
 lpb $0
   trn $0,2
   trn $1,$0
-  trn $0,2
   add $1,1
+  trn $0,2
 lpe
 lpb $2
-  add $1,3
   sub $2,1
+  add $1,3
 lpe
 add $1,1
 mov $0,$1

@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
+  add $2,$3
   sub $0,2
   add $1,$0
   sub $2,2
-  add $2,$3
   div $2,2
   bin $2,$0
   add $3,$1

@@ -1,7 +1,6 @@
 ; A114619: 2*A079291 (twice squares of Pell numbers).
-; Submitted by zombie67 [MM]
+; Submitted by Armin Gips
 ; 0,2,8,50,288,1682,9800,57122,332928,1940450,11309768,65918162,384199200,2239277042,13051463048,76069501250,443365544448,2584123765442,15061377048200,87784138523762,511643454094368
 
-seq $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
-pow $0,2
+seq $0,79291 ; Squares of Pell numbers.
 mul $0,2

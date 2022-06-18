@@ -1,12 +1,12 @@
 ; A018614: Divisors of 728.
-; Submitted by planetclown
+; Submitted by PDW
 ; 1,2,4,7,8,13,14,26,28,52,56,91,104,182,364,728
 
 mov $2,1
 lpb $0
   mul $1,14
   mov $3,$2
-  add $3,1
+  add $2,2
   lpb $3
     add $2,1
     mov $4,$1

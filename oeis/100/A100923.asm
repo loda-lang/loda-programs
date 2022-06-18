@@ -1,6 +1,11 @@
 ; A100923: a(n) = 1 iff 6*n+1 and 6*n-1 are both prime numbers (0 otherwise).
-; Submitted by Simon Strandgaard
+; Submitted by misaki@med
 ; 1,1,1,0,1,0,1,0,0,1,0,1,0,0,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
 
-seq $0,135023 ; (NextPrime[6*n] - PreviousPrime[6*n])/2.
-cmp $0,1
+mul $0,2
+add $0,1
+mov $1,$0
+mul $1,3
+seq $1,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+bin $1,2
+mov $0,$1

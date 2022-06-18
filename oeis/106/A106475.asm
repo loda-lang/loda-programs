@@ -6,8 +6,8 @@ add $0,1
 mov $2,$0
 lpb $0
   sub $0,1
-  mov $3,$2
   add $4,2
+  mov $3,$2
   gcd $3,$4
   add $1,$3
 lpe

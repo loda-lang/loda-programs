@@ -7,6 +7,4 @@ mov $1,$0
 seq $1,22365 ; Fibonacci sequence beginning 0, 31.
 seq $0,56565 ; Fibonomial coefficients.
 mul $0,$1
-sub $0,651
 div $0,651
-add $0,1

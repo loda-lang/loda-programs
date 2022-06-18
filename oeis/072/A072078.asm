@@ -3,24 +3,24 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,$0
 mov $11,1
 mov $12,1
+mov $3,$0
 lpb $3
   mov $5,$4
   lpb $5
     add $6,1
     mov $7,$0
-    div $0,$2
     mod $7,$2
     cmp $7,0
+    div $0,$2
     sub $5,$7
     add $11,$12
   lpe
   mov $7,$2
-  add $2,1
   add $12,$6
+  add $2,1
   lpb $6,4
     mov $7,$0
     cmp $7,1

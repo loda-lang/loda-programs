@@ -7,6 +7,6 @@ lpb $0
   sub $0,1
   dif $0,3
 lpe
-mov $2,$0
-seq $2,35185 ; Number of divisors of n == 1 or 7 (mod 8) minus number of divisors of n == 3 or 5 (mod 8).
-mov $0,$2
+mov $1,$0
+seq $1,35185 ; Number of divisors of n == 1 or 7 (mod 8) minus number of divisors of n == 3 or 5 (mod 8).
+mov $0,$1

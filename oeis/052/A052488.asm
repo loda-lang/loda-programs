@@ -1,20 +1,10 @@
 ; A052488: a(n) = floor(n*H(n)) where H(n) is the n-th harmonic number, Sum_{k=1..n} 1/k (A001008/A002805).
-; Submitted by Jamie Morken(w4)
+; Submitted by PDW
 ; 1,3,5,8,11,14,18,21,25,29,33,37,41,45,49,54,58,62,67,71,76,81,85,90,95,100,105,109,114,119,124,129,134,140,145,150,155,160,165,171,176,181,187,192,197,203,208,214,219,224,230,235,241,247,252,258,263,269,275,280,286,292,297,303,309,315,320,326,332,338,344,349,355,361,367,373,379,385,391,397,403,409,415,421,427,433,439,445,451,457,463,469,475,481,487,494,500,506,512,518
 
-add $0,1
-mov $2,1
-mov $3,$0
-sub $3,1
-lpb $3
-  mov $4,$3
-  add $4,1
-  mul $2,$4
-  mul $1,$3
-  add $1,$2
-  sub $3,1
-lpe
-mul $1,$0
-div $1,$2
+mov $1,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+add $1,1
+seq $1,254 ; Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
+div $1,$0
 mov $0,$1
-add $0,1
