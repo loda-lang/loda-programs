@@ -74,9 +74,11 @@ A285970: Positions of 0 in A285969; complement of A285971.
 A286927: Positions of 1 in A286925; complement of A286926.
 A291208: Number of noncube divisors of n.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+A305847: Solution a() of the complementary equation a(n) + b(n) = 5*n, where a(1) = 1. See Comments.
 A317621: Numbers missing from A317619.
 A317440: Numbers missing from A317438.
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 A328820: Fourth digit after decimal point of square root of n.
 A329825: Beatty sequence for (3+sqrt(17))/4.
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
+A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
