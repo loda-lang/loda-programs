@@ -1,9 +1,8 @@
 ; A307421: Dirichlet g.f.: zeta(s) * zeta(3*s) / zeta(2*s).
-; Submitted by [AF] Kalianthys
+; Submitted by GolfSierra
 ; 1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,0,0
 
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $0,1
-mod $0,3
-add $0,1
+seq $0,62011 ; a(n) = 2*tau(n) = 2*A000005(n).
+pow $0,2
+div $0,3
 mod $0,2

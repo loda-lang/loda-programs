@@ -6,8 +6,8 @@ add $0,1
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $0,1
   mul $1,$2
   mov $2,$0
   mov $0,1

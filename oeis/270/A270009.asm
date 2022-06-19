@@ -8,21 +8,21 @@ lpb $3
   mov $5,$0
   mov $7,2
   lpb $7
+    sub $7,1
     sub $0,1
     mov $2,$0
     max $2,0
     seq $2,270006 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
     mov $4,$2
-    sub $7,1
     mov $6,$7
     mul $6,$2
-    add $8,$6
+    add $1,$6
   lpe
-  mov $0,1
   mov $3,0
   min $5,1
   mul $5,$4
-  mov $4,$8
+  mov $0,1
+  mov $4,$1
   sub $4,$5
 lpe
 mov $0,$4

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,1088 ; Product of totient function: a(n) = Product_{k=1..n} phi(k) (cf. A000010).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

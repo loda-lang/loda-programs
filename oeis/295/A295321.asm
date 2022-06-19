@@ -12,10 +12,10 @@ lpb $0
   trn $11,$0
   mov $8,$11
   cmp $8,0
-  add $6,$8
   mov $7,$3
   cmp $7,$0
   cmp $7,0
+  add $6,$8
   mul $6,$7
   mov $5,$6
   lpb $5
@@ -23,9 +23,9 @@ lpb $0
     mod $9,2
     mov $10,$6
     add $10,$3
+    div $6,2
     mul $9,$10
     add $4,$9
-    div $6,2
     mov $5,$6
   lpe
   add $1,$4

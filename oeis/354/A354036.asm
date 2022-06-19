@@ -1,10 +1,8 @@
 ; A354036: a(n) = 1 if n is odd and sigma(n^2) == 1 (mod 4), otherwise 0.
-; Submitted by Fornax
+; Submitted by STE\/E
 ; 1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0
 
 seq $0,166590 ; Totally multiplicative sequence with a(p) = p+2 for prime p.
-mul $0,-9
+mul $0,9
 div $0,6
-mod $0,2
-add $0,2
 mod $0,2

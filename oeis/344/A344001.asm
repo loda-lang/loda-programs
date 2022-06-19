@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,343999 ; a(n) = A011772(n) mod 2.
+  seq $3,343999 ; a(n) = A011772(n) mod 2, where A011772(n) is the smallest number m such that m(m+1)/2 is divisible by n.
   sub $0,$3
   mov $4,$0
   max $4,0

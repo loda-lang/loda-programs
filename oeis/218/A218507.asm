@@ -6,8 +6,8 @@ cmp $3,0
 add $0,$3
 lpb $0
   mov $2,$0
-  trn $0,5
   seq $2,1401 ; Number of partitions of n into at most 5 parts.
+  trn $0,5
   add $1,$2
 lpe
 mov $0,$1

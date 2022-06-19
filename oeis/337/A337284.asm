@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,203536 ; Number of nX2 0..2 arrays with every element neighboring horizontally or vertically both a 0 and a 1
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 div $1,4

@@ -7,11 +7,11 @@ mod $0,6
 add $0,10
 mov $2,$1
 mul $2,21
-add $0,$2
 mov $3,$1
 mul $3,$1
+add $0,$2
 mov $2,$3
 mul $2,10
-add $0,$2
 mul $3,$1
+add $0,$2
 add $0,$3

@@ -4,8 +4,7 @@
 mov $5,4
 clr $2,$0
 add $2,$0
-add $2,7
 sub $2,$5
 mov $1,$2
-add $1,49
+add $1,56
 mov $0,$1

@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $1,46645 ; a(n) = log_2(A046644(n)); also the 2-adic valuation of A046644(n).
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 add $0,$1

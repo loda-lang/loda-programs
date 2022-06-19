@@ -5,8 +5,8 @@
 mov $3,$0
 mov $4,2
 lpb $4
-  mov $0,$3
   sub $4,1
+  mov $0,$3
   add $0,$4
   trn $0,1
   seq $0,64415 ; a(1) = 0, a(n) = iter(n) if n is even, a(n) = iter(n)-1 if n is odd, where iter(n) = A003434(n) = smallest number of iterations of Euler totient function phi needed to reach 1.

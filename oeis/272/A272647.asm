@@ -3,9 +3,9 @@
 
 sub $0,3
 pow $0,2
-mov $2,$0
+mov $1,$0
+mod $1,7
 mov $0,3
-mod $2,7
-add $0,$2
+add $0,$1
 mod $0,5
 add $0,1

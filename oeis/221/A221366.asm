@@ -4,8 +4,8 @@
 lpb $0
   div $0,2
   mov $1,$0
-  mul $0,2
   seq $1,81078 ; a(n) = Lucas(4n) - 3, or Lucas(2n-1)*Lucas(2n+1).
+  mul $0,2
 lpe
 add $1,1
 mov $0,$1

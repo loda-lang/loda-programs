@@ -11,10 +11,10 @@ lpb $0
     mov $1,$2
     div $1,2
   lpe
-  div $0,2
   add $2,$1
-  mul $1,2
   mul $2,4
+  div $0,2
+  mul $1,2
 lpe
 mov $0,$2
 div $0,2

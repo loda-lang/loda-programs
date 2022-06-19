@@ -4,13 +4,13 @@
 
 lpb $0
   sub $0,1
-  mul $1,-1
   add $3,1
   add $2,$3
   trn $2,4
   mul $2,2
   add $4,1
   add $4,$2
+  mul $1,-1
   add $1,$4
   add $2,4
   add $2,$4

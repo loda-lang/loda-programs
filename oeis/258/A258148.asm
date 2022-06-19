@@ -19,12 +19,12 @@ lpb $3
   sub $3,1
 lpe
 sub $1,$2
-add $2,$1
-mul $1,5
 mov $4,10
 pow $4,$0
 mul $4,2
+add $2,$1
 div $2,$4
+mul $1,5
 div $1,$2
 div $1,$5
 mov $0,$1

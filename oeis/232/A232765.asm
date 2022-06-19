@@ -4,8 +4,8 @@
 lpb $0
   sub $0,1
   add $3,4
-  add $1,$3
   sub $1,4
+  add $1,$3
   trn $1,$2
   sub $3,3
   add $3,$1

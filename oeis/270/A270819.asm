@@ -6,8 +6,8 @@ mov $2,$0
 sub $0,1
 sub $2,2
 lpb $2
-  add $1,$3
   trn $2,8
+  add $1,$3
   max $3,$0
 lpe
 mov $0,$1

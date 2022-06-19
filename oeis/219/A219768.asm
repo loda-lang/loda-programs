@@ -7,9 +7,9 @@ lpb $0
   sub $0,1
   add $2,$5
   add $3,$2
+  add $4,$3
   mov $1,$3
   mul $1,2
-  add $4,$3
   add $1,$4
   add $4,4
   add $5,1

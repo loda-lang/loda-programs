@@ -1,6 +1,17 @@
 ; A354984: Numbers that are 3 * prime powers congruent to 1 (mod 3).
-; Submitted by Armin Gips
+; Submitted by AXm 77
 ; 12,21,39,48,57,75,93,111,129,147,183,192,201,219,237,291,309,327,363,381,417,453,471,489,507,543,579,597,633,669,687,723,768,813,831,849,867,921,939,993,1011,1029,1047,1083,1101,1119,1137,1191,1227,1263,1299,1317,1371,1389,1461,1497,1569,1587,1623,1641,1713
 
-seq $0,137827 ; Prime powers (A246655) congruent to 1 (mod 3).
+mov $2,$0
+pow $2,4
+lpb $2
+  sub $2,1
+  add $1,3
+  mov $3,$1
+  seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
+  sub $0,$3
+  sub $2,$0
+lpe
+mov $0,$1
 mul $0,3
+add $0,12

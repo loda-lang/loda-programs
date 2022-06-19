@@ -8,9 +8,9 @@ mov $3,12
 lpb $0
   mov $1,$2
   dif $1,$0
-  sub $0,1
   cmp $1,$2
   cmp $1,0
+  sub $0,1
   sub $2,4
   add $3,$1
 lpe

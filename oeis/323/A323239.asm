@@ -1,9 +1,12 @@
 ; A323239: a(n) = 1 if n is odd and squarefree, otherwise a(n) = 0.
+; Submitted by respawner
 ; 0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0
 
 mov $1,$0
-trn $1,1
-seq $1,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-dif $1,2
-sub $0,$1
-cmp $0,0
+sub $0,1
+mov $2,$0
+max $2,0
+seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+mul $2,$1
+mov $0,$2
+mod $0,2

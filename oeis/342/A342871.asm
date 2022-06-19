@@ -3,16 +3,14 @@
 
 add $0,1
 mov $2,$0
-mov $4,7
 lpb $0
-  mov $5,$2
-  lpb $5
-    add $1,$4
+  mov $4,$2
+  lpb $4
     mov $3,$0
     cmp $3,0
     add $0,$3
-    add $1,1
-    div $5,$0
+    add $1,8
+    div $4,$0
   lpe
   sub $0,1
 lpe

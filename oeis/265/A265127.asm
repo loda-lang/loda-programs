@@ -4,6 +4,6 @@
 
 mov $1,2
 pow $1,$0
-seq $0,40 ; The prime numbers.
 mul $1,2
+seq $0,40 ; The prime numbers.
 mul $0,$1

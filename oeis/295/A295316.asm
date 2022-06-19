@@ -1,13 +1,14 @@
 ; A295316: a(n) = 1 if there are no even exponents in the prime factorization of n, 0 otherwise.
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,0,0
 
 mov $1,1
-mov $2,2
+mov $2,1
 add $0,1
 lpb $0
+  add $2,1
   mov $3,$0
-  sub $3,3
+  sub $3,8
   lpb $3
     mov $4,$0
     mod $4,$2
@@ -19,7 +20,7 @@ lpb $0
   mov $5,0
   lpb $0
     dif $0,$2
-    add $5,3
+    add $5,1
   lpe
   mul $1,$5
 lpe

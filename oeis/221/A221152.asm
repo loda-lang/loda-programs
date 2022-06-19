@@ -13,12 +13,12 @@ lpb $5
   div $2,45
   mov $4,$5
   lpb $4
-    mov $1,$2
     sub $4,1
+    mov $1,$2
   lpe
 lpe
 lpb $3
-  sub $1,$2
   mov $3,0
+  sub $1,$2
 lpe
 mov $0,$1

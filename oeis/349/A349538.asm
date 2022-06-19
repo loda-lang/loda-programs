@@ -5,11 +5,11 @@
 mov $2,$0
 add $2,1
 lpb $2
-  mov $0,0
   sub $2,1
+  mov $0,0
   sub $0,$2
   pow $0,2
   seq $0,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
-  add $3,$0
+  add $1,$0
 lpe
-mov $0,$3
+mov $0,$1

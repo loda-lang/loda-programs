@@ -9,7 +9,7 @@ lpb $0
   add $2,2
 lpe
 lpb $2
-  add $1,1
   mov $2,6
+  add $1,1
 lpe
 mov $0,$1

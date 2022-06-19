@@ -4,7 +4,7 @@
 
 lpb $0
   sub $0,1
-  seq $2,4755 ; Binary expansion starts 11.
+  seq $1,4755 ; Binary expansion starts 11.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

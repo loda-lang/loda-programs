@@ -1,16 +1,10 @@
 ; A353478: a(n) = 1 if n is an even semiprime (2*prime), otherwise 0.
-; Submitted by [AF] Kalianthys
+; Submitted by PDW
 ; 0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 
-lpb $0
-  mov $2,$0
-  lpb $0
-    div $0,2
-    seq $0,61007 ; a(n) = -(n-1)! mod n.
-    gcd $3,$2
-    add $2,$3
-  lpe
-lpe
-add $1,$2
+dif $0,-2
+div $0,2
+mov $1,$0
+max $1,0
+seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $0,$1
-mod $0,2

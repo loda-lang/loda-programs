@@ -1,9 +1,7 @@
 ; A308865: a(n) = Sum_{k>=0} k^(2*n+1)/2^(k+1).
-; Submitted by Jamie Morken(w4)
+; Submitted by misaki@med
 ; 1,13,541,47293,7087261,1622632573,526858348381,230283190977853,130370767029135901,92801587319328411133,81124824998504073881821,85438451336745709294580413,106697365438475775825583498141,155897763918621623249276226253693,263478385263023690020893329044576861
 
 mul $0,2
 add $0,1
-seq $0,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
-mul $0,2
-sub $0,1
+seq $0,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].

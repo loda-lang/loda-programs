@@ -5,12 +5,12 @@
 add $0,34
 mov $2,1216
 lpb $2
-  seq $0,6005 ; The odd prime numbers together with 1.
   mod $2,7
+  seq $0,6005 ; The odd prime numbers together with 1.
 lpe
-mov $3,$0
-mul $3,2
-pow $3,2
-mov $0,$3
+mov $1,$0
+mul $1,2
+pow $1,2
+mov $0,$1
 div $0,4
 mul $0,70

@@ -5,7 +5,7 @@
 seq $0,269555 ; Expansion of (x^2 + 254*x - 7)/(x^3 - 99*x^2 + 99*x - 1).
 sub $0,1
 mul $0,2
-mov $2,6
-sub $2,$0
-div $2,2
-mov $0,$2
+mov $1,6
+sub $1,$0
+div $1,2
+mov $0,$1

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,226312 ; Sum_{k=0..n} k*binomial(n,k)^2*binomial(2*k,k).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

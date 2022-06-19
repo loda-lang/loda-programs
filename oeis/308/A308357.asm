@@ -2,18 +2,19 @@
 ; Submitted by Stefano Spezia
 ; 2,4,8,10,12,15,19,20,24,25
 
+mov $8,$0
 mov $6,$0
 add $6,1
-mov $8,$0
 lpb $6
-  mov $0,$8
-  mov $1,0
   sub $6,1
+  mov $0,$8
   sub $0,$6
+  mov $1,0
+  mov $5,1
   mov $3,$0
   mul $3,3
-  mov $5,1
   lpb $3
+    sub $3,1
     add $1,$5
     mul $1,4
     add $5,$1
@@ -21,7 +22,6 @@ lpb $6
     add $1,$5
     mul $1,2
     mov $2,40
-    sub $3,1
   lpe
   mov $1,1
   add $1,$5

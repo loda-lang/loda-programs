@@ -3,9 +3,8 @@
 
 mul $0,2
 pow $0,2
-add $0,3
 mul $0,38
-sub $0,1
+add $0,113
 mul $0,2
 mod $0,14
 sub $0,6

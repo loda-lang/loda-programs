@@ -7,7 +7,7 @@ trn $0,2
 add $0,1
 mov $2,$0
 cmp $2,2
-mov $3,$0
-cmp $3,1
-mov $0,$3
+mov $1,$0
+cmp $1,1
+mov $0,$1
 sub $0,$2

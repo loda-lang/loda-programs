@@ -139,6 +139,7 @@ A175225: a(n) = prime(n) + 10.
 A176406: Odd semiprimes minus 2.
 A179262: a(n) = 2*prime(n)^2 - 1.
 A182200: a(n) = prime(n)^2-3.
+A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A229787: Primes modulo 24.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).

@@ -7,9 +7,9 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-mul $1,3
 sub $2,1
 sub $0,$2
+mul $1,3
 add $1,$2
 sub $2,3
 sub $2,$1

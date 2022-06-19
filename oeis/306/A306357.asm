@@ -10,8 +10,8 @@ lpb $0
   cmp $2,1
   sub $4,1
   add $4,$2
-  add $2,$3
   mov $5,$4
+  add $2,$3
   mov $4,$2
   mov $2,$3
   add $3,$1

@@ -4,6 +4,6 @@
 
 seq $0,170648 ; Number of reduced words of length n in Coxeter group on 15 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
 mov $1,$0
-mul $0,2
 mod $1,6
+mul $0,2
 add $0,$1

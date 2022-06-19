@@ -5,26 +5,25 @@
 mov $1,1
 mov $2,1
 mov $3,$0
-mov $6,1
 lpb $3
+  sub $3,1
   add $2,1
-  sub $3,$6
+  mov $6,$0
+  mod $6,$2
+  cmp $6,0
   mov $5,-1
-  mov $7,$0
-  mod $7,$2
-  cmp $7,0
-  pow $5,$7
+  pow $5,$6
   mul $1,$5
   mov $4,$2
   pow $4,2
   mov $5,$2
-  pow $5,$7
-  mov $7,$0
+  pow $5,$6
+  mov $6,$0
+  mod $6,$4
   div $0,$5
   mod $0,4
-  mod $7,$4
-  cmp $7,0
-  cmp $7,0
-  mul $1,$7
+  cmp $6,0
+  cmp $6,0
+  mul $1,$6
 lpe
 mov $0,$1

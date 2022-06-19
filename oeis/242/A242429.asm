@@ -4,8 +4,8 @@
 
 mov $1,2
 pow $1,$0
-seq $0,144657 ; a(n) = Sum[Sum[(i+j)!/(i!*j!),{i,1,n}],{j,1,n}].
 mul $1,2
+seq $0,144657 ; a(n) = Sum[Sum[(i+j)!/(i!*j!),{i,1,n}],{j,1,n}].
 add $0,$1
 mul $1,2
 add $0,$1

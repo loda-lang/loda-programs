@@ -5,10 +5,10 @@
 mov $2,$0
 mov $3,$0
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,229110 ; Sum of non-divisors of n reduced modulo n.
-  add $4,$0
+  add $1,$0
 lpe
-mov $0,$4
+mov $0,$1

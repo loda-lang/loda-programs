@@ -1,12 +1,9 @@
 ; A323162: a(n) = 1 if both n and n-1 are composite, 0 otherwise.
+; Submitted by misaki@med
 ; 0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1
 
 div $0,2
 mul $0,2
-trn $0,2
-seq $0,171783 ; Third smallest divisor of smallest number having exactly n divisors.
-add $0,1
-mul $0,2
-seq $0,59995 ; Drop the final digit of n.
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 add $0,1
 mod $0,2

@@ -4,8 +4,8 @@
 mov $2,$0
 mov $3,$0
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   add $0,1
   seq $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.

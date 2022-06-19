@@ -4,10 +4,10 @@
 
 mov $1,3
 pow $1,$0
-add $0,3
 mul $1,6
 div $1,16
 mul $1,4
 add $1,1
+add $0,3
 mul $0,$1
 mul $0,12

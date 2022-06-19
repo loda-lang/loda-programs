@@ -3,11 +3,11 @@
 
 mov $1,$0
 add $1,$0
+mul $1,2
 mov $2,$0
 add $2,1
 mov $0,$2
 bin $0,3
-mul $1,2
 sub $2,$1
 trn $0,$2
 add $0,2

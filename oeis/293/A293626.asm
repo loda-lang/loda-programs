@@ -1,15 +1,14 @@
 ; A293626: Numbers of the form (2^(2p) + 1)/5, where p is a prime > 5.
-; Submitted by Dingo
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3277,838861,13421773,3435973837,54975581389,14073748835533,57646075230342349,922337203685477581,3777893186295716170957,967140655691703339764941,15474250491067253436239053,3961408125713216879677197517,16225927682921336339157801028813
 
-add $0,1
-sub $2,$0
-mov $0,3
-sub $0,$2
-seq $0,15919 ; Positive integers n such that 2^n == 2 (mod n).
+add $0,4
+seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
+sub $0,2
 mov $1,4
 pow $1,$0
 mov $0,$1
-div $0,245760
+mul $0,2
+div $0,30720
 mul $0,49152
 add $0,3277

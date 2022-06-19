@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,52245 ; Expansion of 10*x / ((1 - x) * (1 - 10*x)^2) in powers of x.
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 div $0,10
 mul $0,9

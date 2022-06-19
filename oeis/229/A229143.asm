@@ -1,5 +1,5 @@
 ; A229143: Expansion of (b(q^3) - b(q)) / 3 in powers of q where b() is a cubic AGM theta function.
-; Submitted by [DPC] hansR
+; Submitted by PDW
 ; 1,0,-3,1,0,0,2,0,0,0,0,-3,2,0,0,1,0,0,2,0,-6,0,0,0,1,0,0,2,0,0,2,0,0,0,0,0,2,0,-6,0,0,0,2,0,0,0,0,-3,3,0,0,2,0,0,0,0,-6,0,0,0,2,0,0,1,0,0,2,0,0,0,0,0,2,0,-3,2,0,0,2,0,0,0,0,-6,0,0,0,0,0,0,4,0,-6,0,0,0,2,0,0,1
 
 mov $1,1
@@ -11,5 +11,4 @@ lpb $0
 lpe
 seq $0,217219 ; Theta series of planar hexagonal lattice with respect to deep hole.
 mul $0,$1
-mul $0,2
-div $0,12
+div $0,6

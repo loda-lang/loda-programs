@@ -5,16 +5,16 @@
 add $0,1
 mov $1,$0
 lpb $1
-  mov $2,$0
   mov $6,$1
+  mov $2,$0
   lpb $2
     cmp $3,0
     add $6,$3
-    dif $2,$6
     cmp $3,0
     mov $4,$0
     div $4,$6
     mod $4,$6
+    dif $2,$6
     mul $2,$4
     add $5,$2
     mov $6,9349

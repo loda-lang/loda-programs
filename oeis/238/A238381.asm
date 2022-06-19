@@ -5,9 +5,8 @@
 add $0,1
 pow $0,2
 sub $0,1
-div $0,2
 mov $1,$0
-add $0,2
-div $0,3
-div $1,41
+div $1,82
+add $0,4
+div $0,6
 add $0,$1

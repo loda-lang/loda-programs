@@ -1,8 +1,8 @@
 ; A353672: a(n) = 1 if n is an even number with an even number of distinct prime factors, otherwise 0.
-; Submitted by vanos0512
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1
 
-seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-seq $0,82344 ; Denominator of sopfr(n)/n, where sopfr=A001414 is the sum of prime factors (with repetition).
-sub $0,1
+dif $0,-2
+max $0,0
+seq $0,8475 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).
 mod $0,2

@@ -1,9 +1,14 @@
 ; A139288: 2^(2p - 1)/2, where p is prime.
-; Submitted by Jamie Morken(l1)
+; Submitted by PDW
 ; 4,16,256,4096,1048576,16777216,4294967296,68719476736,17592186044416,72057594037927936,1152921504606846976,4722366482869645213696,1208925819614629174706176,19342813113834066795298816
 
-seq $0,40 ; The prime numbers.
+add $0,1
+sub $2,$0
+mov $0,0
+sub $0,$2
+seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
 sub $0,1
-mov $2,4
-pow $2,$0
-mov $0,$2
+mov $1,2
+pow $1,$0
+mov $0,$1
+pow $0,2

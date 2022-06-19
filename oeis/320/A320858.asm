@@ -5,8 +5,8 @@
 mov $1,$0
 mov $3,$0
 lpb $3
-  mov $0,$1
   sub $3,1
+  mov $0,$1
   sub $0,$3
   seq $0,40 ; The prime numbers.
   seq $0,118822 ; Numerators of the convergents of the 2-adic continued fraction of zero given by A118821.

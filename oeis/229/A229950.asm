@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,229951 ; Number of toothpicks added at n-th stage to the toothpick structure of A229950.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

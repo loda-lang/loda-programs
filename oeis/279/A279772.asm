@@ -1,9 +1,12 @@
 ; A279772: Numbers n such that the sum of digits of 2n equals 4.
-; Submitted by vanos0512
+; Submitted by Gunnar Hjern
 ; 2,11,20,56,65,101,110,155,200,506,515,551,560,605,650,1001,1010,1055,1100,1505,1550,2000,5006,5015,5051,5060,5105,5150,5501,5510,5555,5600,6005,6050,6500,10001,10010,10055,10100,10505,10550,11000,15005,15050,15500
 
+mov $4,2
 mov $1,2
+mov $6,4
 mov $2,10000
+sub $2,$4
 lpb $2
   mov $3,$1
   seq $3,4092 ; Sum of digits of even numbers.
@@ -14,6 +17,6 @@ lpb $2
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,5
 lpe
-mov $0,$1
+add $0,$1

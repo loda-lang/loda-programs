@@ -8,9 +8,9 @@ lpb $0
   add $2,1
   add $3,$0
   lpb $3
+    trn $3,2
     sub $0,1
     mul $1,$2
-    trn $3,2
   lpe
 lpe
 mov $0,$1

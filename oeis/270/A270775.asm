@@ -3,6 +3,6 @@
 
 seq $0,6093 ; a(n) = prime(n) - 1.
 mov $1,$0
-add $0,1
 pow $1,2
+add $0,1
 mul $0,$1

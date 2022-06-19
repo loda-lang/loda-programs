@@ -6,7 +6,7 @@ trn $0,2
 seq $0,82460 ; a(n) = pi(n) - a(n - 1) = A000720(n) - a(n - 1).
 mov $1,$0
 lpb $2
-  add $0,$1
   sub $2,1
+  add $0,$1
 lpe
 mul $0,2

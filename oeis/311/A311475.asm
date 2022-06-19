@@ -7,8 +7,8 @@ seq $1,313688 ; Coordination sequence Gal.6.151.5 where G.u.t.v denotes the coor
 mov $2,$0
 mul $0,6
 sub $0,1
-mod $0,$1
 add $2,1
 mul $2,3
+mod $0,$1
 add $0,$2
 sub $0,2

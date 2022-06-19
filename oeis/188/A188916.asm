@@ -6,6 +6,6 @@ pow $1,2
 mul $1,2
 div $1,4
 lpb $1
-  add $0,1
   div $1,4
+  add $0,1
 lpe

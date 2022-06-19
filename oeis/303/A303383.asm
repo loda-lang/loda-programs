@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,309335 ; a(n) = n^3 if n odd, 7*n^3/8 if n even.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

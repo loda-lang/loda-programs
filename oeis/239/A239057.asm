@@ -18,12 +18,12 @@ sub $0,3
 mov $7,$5
 mul $7,2
 add $0,$7
-mov $8,$5
-mul $8,$5
-mov $7,$8
+mov $1,$5
+mul $1,$5
+mov $7,$1
 mul $7,11
 add $0,$7
-mul $8,$5
-mov $7,$8
+mul $1,$5
+mov $7,$1
 mul $7,4
 add $0,$7
