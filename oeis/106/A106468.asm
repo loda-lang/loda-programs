@@ -1,7 +1,6 @@
 ; A106468: Absolute value of inverse of number triangle A106465.
-; Submitted by Jamie Morken(l1)
+; Submitted by [SG-FC] hl
 ; 1,1,1,1,0,1,1,1,1,1,0,0,1,0,1,0,0,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
 
 seq $0,106467 ; Inverse of number triangle A106465.
-add $0,2
-mod $0,2
+pow $0,2

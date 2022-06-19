@@ -1,15 +1,13 @@
 ; A145362: Lower triangular array, called S1hat(-1), related to partition number array A145361.
-; Submitted by [AF] Kalianthys
+; Submitted by Armin Gips
 ; 1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1
 
 lpb $0
   add $1,1
   sub $0,$1
 lpe
-add $1,1
-sub $0,$1
-add $1,2
-div $1,$0
-pow $1,$1
-mov $0,$1
-add $0,1
+mul $0,2
+sub $1,$0
+trn $1,1
+pow $0,$1
+mod $0,2

@@ -4,5 +4,5 @@
 
 mov $1,$0
 trn $0,1
-seq $0,52719 ; E.g.f. (1-2*x*sqrt(1-4*x)) *(1-sqrt(1-4*x))/4.
+seq $0,52719 ; Expansion of e.g.f. (1 - 2*x*sqrt(1-4*x))*(1 - sqrt(1-4*x))/4.
 mul $0,$1

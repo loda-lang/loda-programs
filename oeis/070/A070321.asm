@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   seq $2,336642 ; One less than the largest square dividing n: a(n) = A008833(n)-1.
-  mov $3,$2
-  min $3,1
-  sub $0,$3
+  mov $1,$2
+  min $1,1
+  sub $0,$1
 lpe
 add $0,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,129728 ; a(n) = 2*(n-1) + Fibonacci(n).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

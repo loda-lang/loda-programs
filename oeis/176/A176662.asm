@@ -5,17 +5,17 @@ mov $3,$0
 lpb $0
   add $2,$3
   add $2,$0
-  sub $0,1
   mov $5,$2
   add $5,3
+  sub $0,1
   mov $3,$5
   mov $4,$2
 lpe
-add $1,$5
-mov $2,3
 trn $4,3
+mov $2,3
 trn $2,$4
 add $0,$2
+add $1,$5
 add $1,$0
 sub $1,1
 mov $0,$1

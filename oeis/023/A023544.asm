@@ -1,16 +1,17 @@
 ; A023544: Convolution of natural numbers with A014306.
-; Submitted by Cruncher Pete
+; Submitted by Simon Strandgaard
 ; 0,1,3,5,8,12,17,23,30,37,45,54,64,75,87,100,114,129,145,161,178,196,215,235,256,278,301,325,350,376,403,431,460,490,520,551,583,616,650,685,721,758,796,835,875,916,958,1001,1045,1090,1136,1183
 
-mov $1,$0
-add $1,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  seq $0,14306 ; a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
-  add $3,$0
-  add $4,$3
+add $0,2
+lpb $0
+  sub $0,1
+  add $1,$4
+  add $1,2
+  add $2,$4
+  min $2,$0
+  add $3,1
+  mov $4,$1
+  add $5,$2
+  mov $1,$3
 lpe
-mov $0,$4
+mov $0,$5

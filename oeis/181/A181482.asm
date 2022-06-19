@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   mul $2,2
   seq $2,130151 ; Period 6: repeat [1, 1, 1, -1, -1, -1].
   add $3,$2
+  sub $0,1
   add $1,$3
   add $1,$2
 lpe

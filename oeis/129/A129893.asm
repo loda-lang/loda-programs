@@ -7,20 +7,20 @@ mov $2,$0
 mov $4,1
 lpb $0
   lpb $4
+    div $4,2
     mov $3,$2
     mov $5,$2
     cmp $5,0
     add $2,$5
     div $3,$2
     bin $2,2
-    div $4,2
     lpb $3
-      add $2,1
       trn $3,7
+      add $2,1
     lpe
   lpe
-  sub $0,1
   add $2,1
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

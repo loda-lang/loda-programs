@@ -7,9 +7,9 @@ lpb $0
   mov $3,$2
   cmp $3,0
   add $2,$3
-  mod $0,$2
   mov $4,$2
   min $4,1
+  mod $0,$2
   add $1,$4
 lpe
 mov $0,$1

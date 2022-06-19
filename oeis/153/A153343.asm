@@ -6,9 +6,9 @@ mov $2,4
 lpb $0
   mov $3,$2
   lpb $3
+    mov $3,1
     add $2,5
     max $1,$2
-    mov $3,1
     mov $4,$1
     gcd $4,$2
     cmp $4,1

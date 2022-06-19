@@ -4,9 +4,9 @@
 
 seq $0,72668 ; Numbers one less than composite numbers.
 sub $0,1
-mov $2,$0
-seq $2,46666 ; a(n) = n - (smallest prime dividing n).
-mul $2,2
-sub $2,$0
-mov $0,$2
+mov $1,$0
+seq $1,46666 ; a(n) = n - (smallest prime dividing n).
+mul $1,2
+sub $1,$0
+mov $0,$1
 sub $0,2

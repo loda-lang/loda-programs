@@ -4,6 +4,6 @@
 
 lpb $0
   sub $0,1
-  seq $2,196168 ; In binary representation of n: replace each 0 with 1, and each 1 with 10.
+  seq $1,196168 ; In binary representation of n: replace each 0 with 1, and each 1 with 10.
 lpe
-mov $0,$2
+mov $0,$1

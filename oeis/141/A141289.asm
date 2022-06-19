@@ -1,5 +1,5 @@
 ; A141289: Triangle read by rows, n-th row = (n-2)-th row appended to the beginning of (n-1)-th row, + n.
-; Submitted by Fornax
+; Submitted by misaki@med
 ; 1,1,2,1,1,2,3,1,2,1,1,2,3,4,1,1,2,3,1,2,1,1,2,3,4,5,1,2,1,1,2,3,4,1,1,2,3,1,2,1,1,2,3,4,5,6,1,1,2,3,1,2,1,1,2,3,4,5,1,2,1,1,2,3,4,1,1,2,3,1,2,1,1,2,3,4,5,6,7
 
 mov $2,-2
@@ -21,6 +21,4 @@ lpb $0
   div $3,2
 lpe
 mov $0,$4
-sub $0,76
 div $0,76
-add $0,1

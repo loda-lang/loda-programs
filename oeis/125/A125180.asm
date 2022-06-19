@@ -16,9 +16,9 @@ lpb $2
   cmp $4,$0
   add $6,$3
   lpb $6
+    trn $6,8
     mul $1,2
     mul $2,$4
-    trn $6,8
   lpe
   add $5,1
 lpe

@@ -1,11 +1,11 @@
-; A158948: Triangle read by rows, left border = natural numbers repeated (1, 1, 2, 2, 3, 3,...); all other columns = (1, 0, 1, 0, 1, 0,...).
+; A158948: Triangle read by rows, left border = natural numbers repeated (1, 1, 2, 2, 3, 3, ...); all other columns = (1, 0, 1, 0, 1, 0, ...).
 ; 1,1,1,2,0,1,2,1,0,1,3,0,1,0,1,3,1,0,1,0,1,4,0,1,0,1,0,1,4,1,0,1,0,1,0,1,5,0,1,0,1,0,1,0,1,5,1,0,1,0,1,0,1,0,1
 
-mov $3,2
 mov $5,$0
+mov $3,2
 lpb $3
-  mov $0,$5
   sub $3,1
+  mov $0,$5
   add $0,$3
   trn $0,1
   seq $0,4202 ; Skip 1, take 1, skip 2, take 2, skip 3, take 3, etc.

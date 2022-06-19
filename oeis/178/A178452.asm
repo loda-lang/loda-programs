@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,16029 ; a(1) = a(2) = 1, a(2n + 1) = 2*a(2n) and a(2n) = 2*a(2n - 1) + (-1)^n.
+  sub $0,2
   add $1,$2
   sub $1,1
 lpe

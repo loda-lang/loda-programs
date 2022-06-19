@@ -3,8 +3,8 @@
 
 lpb $0
   sub $0,5
-  mov $2,13
-  trn $2,$0
+  mov $1,13
+  trn $1,$0
   trn $0,13
-  add $0,$2
+  add $0,$1
 lpe

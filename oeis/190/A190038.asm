@@ -10,19 +10,19 @@ lpb $0
   mov $1,5
   trn $2,1
 lpe
-sub $1,$2
-sub $1,$2
 add $1,2
+sub $1,$2
+sub $1,$2
 trn $1,$2
 add $1,7
 mov $6,$3
 lpb $6
-  add $5,$3
   sub $6,1
+  add $5,$3
 lpe
 mov $4,4
 lpb $4
-  add $1,$5
   sub $4,1
+  add $1,$5
 lpe
 mov $0,$1

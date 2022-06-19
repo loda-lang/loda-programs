@@ -7,9 +7,9 @@ lpb $0
   mov $3,$2
   dif $3,$0
   mul $3,$0
-  sub $0,1
   cmp $3,$2
-  add $4,$3
-  mul $4,$2
+  sub $0,1
+  add $1,$3
+  mul $1,$2
 lpe
-mov $0,$4
+mov $0,$1

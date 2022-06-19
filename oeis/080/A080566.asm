@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,79000 ; a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

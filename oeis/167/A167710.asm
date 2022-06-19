@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   sub $0,1
-  mul $1,2
   add $3,1
+  mul $1,2
   add $1,$3
   mov $2,$4
   mul $2,3

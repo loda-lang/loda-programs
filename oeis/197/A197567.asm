@@ -1,12 +1,13 @@
 ; A197567: Partial sums of A197566 (sum of n-th digit of Pi and n-th digit of the Golden Ratio).
-; Submitted by Jason Jung
+; Submitted by Saenger
 ; 4,11,16,25,30,42,47,62,75,86,98,110,128,143,161,168,178,185,201,207,213,219,230,242,251,262,273,280,285,298,312,323,326,336,345,354,365,373,384,391,395,401,419,423,439,457,468,475,485,493,499,506,522,530,532,542,552,561,574,582,594,605,616,620,630,630,642,652,659,665,673,679,687,697,706,720,731,731,741,754,767,784,797,799,814,816,819,830,840,842,851,855,867,878,882,892,900,901,910,924
 
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,197566 ; Sum of the n-th digit of Pi and the n-th digit of the Golden Ratio.
   sub $0,1
+  mov $2,$0
+  max $2,0
+  seq $2,197566 ; Sum of the n-th digit of Pi and the n-th digit of the Golden Ratio.
   add $1,$2
 lpe
 mov $0,$1
-add $0,4

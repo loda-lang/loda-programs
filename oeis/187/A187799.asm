@@ -4,6 +4,6 @@
 
 add $0,1
 seq $0,242671 ; Decimal expansion of k2, a Diophantine approximation constant such that the area of the "critical parallelogram" (in this case a square) is 4*k2.
-sub $2,$0
-mov $0,$2
+sub $1,$0
+mov $0,$1
 add $0,9

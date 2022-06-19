@@ -7,17 +7,17 @@ mov $6,1
 lpb $0
   mov $3,1
   lpb $3
-    add $2,1
     mov $4,$1
     cmp $4,1
     cmp $4,0
+    add $2,1
     sub $3,$4
     mul $6,$2
   lpe
-  sub $0,1
   add $1,$6
   add $2,1
   mov $5,$1
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$5

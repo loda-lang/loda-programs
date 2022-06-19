@@ -9,8 +9,8 @@ mul $2,$0
 lpb $2
   mov $3,$2
   gcd $3,$0
-  sub $0,1
   cmp $3,$4
+  sub $0,1
   add $1,$3
   sub $2,1
   add $4,1

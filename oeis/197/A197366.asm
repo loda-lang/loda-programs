@@ -1,5 +1,5 @@
 ; A197366: Number of Abelian groups of order 2n which are isomorphic with at least one Galois Field GF(k).
-; Submitted by davidtgx
+; Submitted by shiva
 ; 1,2,1,2,1,2,0,3,1,2,1,2,0,1,1,4
 
 mov $2,2
@@ -19,5 +19,4 @@ lpb $0
   sub $4,1
 lpe
 mov $0,$3
-add $0,11
-mod $0,10
+add $0,1

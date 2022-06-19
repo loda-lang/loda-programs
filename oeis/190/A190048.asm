@@ -4,8 +4,8 @@
 lpb $0
   add $0,1
   mov $2,$0
-  sub $0,2
   seq $2,304993 ; a(n) = n*(n + 1)*(7*n + 5)/6.
+  sub $0,2
   add $1,$2
 lpe
 mul $1,2

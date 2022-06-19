@@ -1,16 +1,26 @@
 ; A192306: 1-sequence of reduction of (2n) by x^2 -> x+1.
-; Submitted by Jamie Morken(s4)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,4,10,26,56,116,228,436,814,1494,2704,4840,8584,15108,26418,45938,79496,136988,235180,402420,686550,1168174,1982880,3358416,5676816,9578116,16133338,27132746,45565784,76419524,128006004,214167220,357935614
 
-mov $3,1
 add $0,1
+mov $1,1
+mov $2,$0
+add $2,1
+lpb $0
+  lpb $0
+    div $0,5
+    add $1,12
+  lpe
+  mov $0,$1
+lpe
+sub $2,$0
 lpb $0
   sub $0,1
-  mov $2,$3
   add $2,$0
-  add $3,$1
-  mov $1,$2
+  add $1,$2
+  mul $2,-1
+  add $2,$1
 lpe
-mov $0,$3
+mov $0,$2
 sub $0,1
 mul $0,2

@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,85730 ; Euler's totient function applied to the sequence of prime powers.
   mov $3,1
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1
