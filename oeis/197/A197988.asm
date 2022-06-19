@@ -1,17 +1,17 @@
-; A197988: Number of isomorphism classes of nanocones with 3 pentagons and a symmetric boundary of length n
+; A197988: Number of isomorphism classes of nanocones with 3 pentagons and a symmetric boundary of length n.
 ; Submitted by Jamie Morken(l1)
 ; 1,3,5,12,18,31,44,67,88,124,157,207,255,323,387,476,560,671,778,915,1046,1212,1371,1567,1757,1987,2209,2476,2734,3039,3336,3683,4020,4412,4793,5231,5659,6147,6623,7164,7692,8287,8870,9523,10162,10876,11575,12351,13113,13955,14781,15692,16586,17567,18532,19587,20624,21756,22869,24079,25271,26563,27835,29212,30568,32031,33474,35027,36558,38204,39827,41567,43285,45123,46937
 
+mov $1,$0
 mov $2,$0
-mov $3,$0
+dif $2,2
 pow $0,3
 mul $0,2
 div $0,3
-add $3,1
-pow $3,2
-mul $3,2
-add $0,$3
+add $1,1
+pow $1,2
+mul $1,2
+add $0,$1
 div $0,6
-dif $2,2
 add $0,$2
 add $0,1

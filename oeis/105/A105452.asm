@@ -3,7 +3,6 @@
 
 mul $0,7
 mov $1,$0
+gcd $1,3
 add $0,6
-mov $2,$1
-gcd $2,3
-div $0,$2
+div $0,$1

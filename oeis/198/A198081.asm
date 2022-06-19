@@ -7,7 +7,7 @@ pow $1,2
 mul $1,2
 lpb $1
   sub $1,$0
-  add $0,2
   trn $1,1
+  add $0,2
 lpe
 div $0,2

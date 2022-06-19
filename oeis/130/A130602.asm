@@ -5,8 +5,8 @@
 mul $0,2
 seq $0,4737 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,1) for n >= 1.
 mul $0,2
-mov $2,10
-pow $2,$0
-mov $0,$2
+mov $1,10
+pow $1,$0
+mov $0,$1
 div $0,99
 mul $0,11

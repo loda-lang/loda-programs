@@ -120,7 +120,9 @@ A140475: 1 along with primes greater than 3.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140777: a(n) = 2*prime(n) - 4.
 A142342: a(n) = 10*prime(n).
+A143928: 2*p^2, for p an odd prime.
 A144769: a(n) = floor(prime(n)/3).
+A146102: Bell numbers (A000110) read mod 12.
 A146109: Bell numbers (A000110) read mod 19.
 A146110: Bell numbers (A000110) read mod 20.
 A146116: Bell numbers (A000110) read mod 26.
@@ -128,11 +130,15 @@ A146121: Bell numbers (A000110) read mod 31.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A166010: a(n) = prime(n)^2-4.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
+A172282: Squares of Bernoulli number denominators A027642.
 A175221: a(n) = prime(n) + 4.
 A175222: a(n) = prime(n) + 5.
 A175223: a(n) = prime(n) + 7.
 A175224: a(n) = prime(n) + 8.
 A175225: a(n) = prime(n) + 10.
+A176406: Odd semiprimes minus 2.
+A179262: a(n) = 2*prime(n)^2 - 1.
+A182200: a(n) = prime(n)^2-3.
 A217589: Bit reversed 16-bit numbers.
 A229787: Primes modulo 24.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).

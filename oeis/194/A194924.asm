@@ -12,9 +12,9 @@ lpb $0
   mov $3,$4
   bin $3,$0
   mul $3,$2
-  add $5,$3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1
 sub $0,2
 div $0,2
 add $0,1

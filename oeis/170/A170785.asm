@@ -3,10 +3,10 @@
 
 mov $2,2
 lpb $2
+  bin $2,2
   pow $0,3
   add $1,4
   mul $1,$0
-  bin $2,2
 lpe
 div $1,8
 mov $0,$1

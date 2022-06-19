@@ -1,5 +1,17 @@
 ; A114182: F(4n) - 2n - 1 where F(n) = Fibonacci numbers. Also, the floor of the log base phi of sequence A090162 (phi = (1+Sqrt(5))/2).
+; Submitted by PDW
 ; 0,16,137,978,6754,46355,317796,2178292,14930333,102334134,701408710,4807526951,32951280072,225851433688,1548008755889,10610209857690,72723460248106,498454011879227,3416454622906668,23416728348467644
 
-seq $0,99922 ; a(n) = F(4n) - 2n, where F(n) = Fibonacci numbers A000045.
+mov $2,$0
+add $2,1
+add $0,$2
+trn $2,$0
+lpb $0
+  sub $0,1
+  add $3,1
+  add $3,$2
+  add $2,$3
+  add $1,$2
+lpe
+mov $0,$1
 sub $0,1

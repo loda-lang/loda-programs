@@ -4,11 +4,10 @@
 
 lpb $0
   sub $0,1
-  pow $1,2
-  add $1,3
   add $2,1
+  pow $1,2
+  add $1,2
   sub $1,$2
-  sub $1,1
   add $2,$1
 lpe
 add $1,1

@@ -1,16 +1,11 @@
 ; A008679: Expansion of 1/((1-x^3)*(1-x^4)).
-; Submitted by Catchercradle
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,0,0,1,1,0,1,1,1,1,1,1,2,1,1,2,2,1,2,2,2,2,2,2,3,2,2,3,3,2,3,3,3,3,3,3,4,3,3,4,4,3,4,4,4,4,4,4,5,4,4,5,5,4,5,5,5,5,5,5,6,5,5,6,6,5,6,6,6,6,6,6,7,6,6,7,7,6,7,7,7,7,7,7,8,7,7,8,8,7,8,8,8,8,8,8,9,8,8,9
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $0,$1
-  mov $1,7
-  mov $2,$0
-  mul $2,3
-  max $2,0
-  seq $2,33183 ; a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
-  mod $0,2
-lpe
-mov $0,$2
+mov $1,59969536
+sub $1,$0
+div $1,4
+div $0,3
+add $1,$0
+mov $0,$1
+sub $0,14992383

@@ -2,12 +2,11 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,6,16,16,40,16,40,40,112,16,40,40,112,40,112,112,328,16,40,40,112,40,112,112,328,40,112,112,328,112,328,328,976,16,40,40,112,40,112,112,328,40,112,112,328,112,328
 
+mov $1,$0
 mov $3,2
-mov $5,$0
-gcd $3,2
 lpb $3
-  mov $0,$5
   sub $3,1
+  mov $0,$1
   add $0,$3
   trn $0,1
   seq $0,183126 ; Toothpick sequence with toothpicks connected by their endpoints.
@@ -15,7 +14,7 @@ lpb $3
   mul $2,$0
   add $4,$2
 lpe
-min $5,1
-mul $5,$0
+min $1,1
+mul $1,$0
 mov $0,$4
-sub $0,$5
+sub $0,$1

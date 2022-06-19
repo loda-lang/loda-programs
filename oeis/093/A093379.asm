@@ -4,7 +4,7 @@
 seq $0,254365 ; a(n) = 2^(n+2) + 3^n + 10.
 div $0,2
 add $0,3
-mov $2,1
-seq $2,74929 ; a(n)>0 such that p(n)*p(n+1)-a(n) is a maximal square.
-div $0,$2
+mov $1,1
+seq $1,74929 ; a(n)>0 such that p(n)*p(n+1)-a(n) is a maximal square.
+div $0,$1
 sub $0,1

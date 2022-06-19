@@ -6,5 +6,5 @@ mov $1,3
 mul $1,$0
 add $0,25
 seq $0,1959 ; u-pile numbers for the 3-Wythoff game with i=2.
-add $0,$1
 sub $0,32
+add $0,$1

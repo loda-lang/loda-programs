@@ -12,8 +12,8 @@ add $0,1
 add $1,1
 bin $1,$0
 mul $2,$0
-add $0,1
 mul $2,$1
+add $0,1
 mul $1,$0
 div $2,$0
 add $2,$1

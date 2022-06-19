@@ -1,23 +1,25 @@
 ; A098135: a(h) = d(h,j) = lcm( f(h,j,1) ... f(h,j,h) ), when j=3.
-; Submitted by pelpolaris
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,5,9,455,2618,315,271700,56751695,6930,3708514810,32152414840,135135,19749267715100,314645828225300,34918884,113543477411038675,473930651619825400,669278610,467655703593591713200
 
-add $0,1
+add $0,2
 mov $1,1
 mov $2,$0
 lpb $0
+  mov $3,$2
   add $2,1
-  mov $3,1
   lpb $3
     mov $3,0
-    add $2,2
+    add $2,1
     mov $4,$1
     gcd $4,$2
     div $1,$4
-    sub $2,3
+    sub $2,2
   lpe
+  sub $2,1
+  mul $4,$1
   sub $0,1
   mul $1,$2
-  add $2,3
+  add $2,4
 lpe
-mov $0,$1
+mov $0,$4

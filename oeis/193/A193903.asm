@@ -4,11 +4,8 @@
 
 seq $0,130328 ; Triangle of differences between powers of 2, read by rows.
 mov $1,$0
-mul $1,2
 gcd $0,2
 mul $0,$1
+sub $0,2
 div $0,2
-mul $0,3
-sub $0,6
-div $0,6
 add $0,1

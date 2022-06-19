@@ -4,7 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,5558 ; a(n) is the number of n-step walks on square lattice such that 0 <= y <= x at each step.
 mul $1,35
+seq $0,5558 ; a(n) is the number of n-step walks on square lattice such that 0 <= y <= x at each step.
 mul $0,$1
 div $0,35

@@ -4,9 +4,8 @@
 mov $2,$0
 mul $0,2
 mod $2,2
-mov $3,2
 lpb $2
-  mul $0,$3
+  mul $0,2
   mul $0,$2
   seq $0,173919 ; Numbers that are prime or one less than a prime.
   div $2,9

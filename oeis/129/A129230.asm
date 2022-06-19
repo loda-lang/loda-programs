@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,66096 ; Duplicate values in A060143.
+  trn $0,2
   add $1,$2
 lpe
 mov $0,$1

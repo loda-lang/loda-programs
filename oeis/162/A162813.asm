@@ -7,9 +7,9 @@ add $0,3
 mod $0,2
 dif $1,34
 lpb $1
+  sub $1,2
   add $0,1
   mul $0,3
-  sub $1,2
 lpe
 mul $0,2
 add $0,3

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,189036 ; a(n)= lcm(n,n')/gcd(n,n'), where n' is the arithmetic derivative of n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

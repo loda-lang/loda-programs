@@ -1,8 +1,8 @@
 ; A195507: Smallest integer m greater than n such that m (mod k) == n (mod k) for k = 1..n-1.
-; Submitted by Jon Maiga
+; Submitted by Jason Jung
 ; 2,3,5,10,17,66,67,428,849,2530,2531,27732,27733,360374,360375,360376,720737,12252258,12252259,232792580,232792581,232792582,232792583,5354228904,5354228905,26771144426,26771144427,80313433228,80313433229,2329089562830
 
-gcd $2,$0
-seq $0,75059 ; a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
-add $2,$0
-mov $0,$2
+mov $1,$0
+seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+add $0,$1
+add $0,1

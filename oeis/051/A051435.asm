@@ -1,12 +1,14 @@
 ; A051435: (Terms in A029613)/2.
-; Submitted by PDW
+; Submitted by ANCHULA-MARK
 ; 12,24,40,98,154,138,252,60,390,567,957,84,319,825,2112,403,1144,112,1547,6006,144,740,2660,7098,14560,23452,30030,884,3400,9758,21658,38012,53482,180,4284,13158,31416,59670,91494,114257,17442,44574,91086
 
-mov $2,7219
+mov $6,$5
+mov $2,7247
 sub $2,$0
-sub $2,$0
+sub $2,4
 lpb $2
-  sub $2,82
+  sub $2,43
+  add $2,$0
   mov $3,$1
   seq $3,29611 ; Numbers to the left of the central elements of the (2,3)-Pascal triangle A029600 that are different from 2.
   mov $5,$3

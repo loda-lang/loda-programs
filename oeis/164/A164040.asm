@@ -1,5 +1,5 @@
 ; A164040: 2*alpha^4*e^(Pi/(4*alpha))*(e/2)^(1/4), where alpha is the fine structure constant A003673.
-; Submitted by Simon Strandgaard
+; Submitted by PDW
 ; 3,3,8,2,0,2,3,5,4,0,0
 
 mov $2,1
@@ -18,7 +18,5 @@ lpb $1
   mul $2,$3
 lpe
 mov $0,$2
-sub $0,5
-mod $0,10
-add $0,10
+add $0,15
 mod $0,10

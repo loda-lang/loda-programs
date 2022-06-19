@@ -5,9 +5,9 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   mul $2,2
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1
