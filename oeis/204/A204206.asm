@@ -7,9 +7,9 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $2,$0
-  sub $0,1
   max $2,0
   seq $2,102363 ; Triangle read by rows, constructed by a Pascal-like rule with left edge = 2^k, right edge = 2^(k+1)-1 (k >= 0).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

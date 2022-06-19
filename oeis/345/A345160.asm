@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,1158 ; sigma_3(n): sum of cubes of divisors of n.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

@@ -6,9 +6,8 @@ mov $1,1
 mov $2,1
 mov $3,$0
 lpb $3
-  cmp $6,0
   mul $2,$3
-  add $5,$6
+  add $5,1
   mul $1,2
   mul $1,$3
   add $1,$2

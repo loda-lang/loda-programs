@@ -5,9 +5,9 @@ mul $0,2
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,38573 ; a(n) = 2^A000120(n) - 1.
   add $0,$2
+  sub $1,1
 lpe
 div $0,2
 add $0,1

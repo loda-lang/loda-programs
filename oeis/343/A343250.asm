@@ -5,18 +5,14 @@
 add $0,1
 mov $2,$0
 lpb $0
-  sub $3,1
-  mov $1,$0
   mov $3,$2
   dif $3,$0
   cmp $3,$2
   cmp $3,0
   mul $3,$0
   sub $0,1
-  mov $1,8
   dif $2,3
-  mul $1,4
-  mov $5,1
+  mov $1,32
   lpb $1
     pow $3,$1
     mod $1,1

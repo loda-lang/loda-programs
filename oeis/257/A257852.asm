@@ -1,12 +1,12 @@
 ; A257852: Array A read by upward antidiagonals in which the entry A(n,k) in row n and column k is defined by A(n,k) = (2^n*(6*k - 3 - 2*(-1)^n) - 1)/3, n,k >= 1.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 3,1,7,13,9,11,5,29,17,15,53,37,45,25,19,21,117,69,61,33,23,213,149,181,101,77,41,27,85,469,277,245,133,93,49,31,853,597,725,405,309,165,109,57,35,341,1877,1109,981,533,373,197,125,65,39
 
 lpb $0
   add $2,1
   sub $0,$2
 lpe
-add $2,3
+add $2,1
 sub $2,$0
 mov $3,$0
 mov $0,$2
@@ -19,4 +19,5 @@ lpb $0
   mov $1,1
 lpe
 mov $0,$3
-div $0,2
+mul $0,2
+add $0,1

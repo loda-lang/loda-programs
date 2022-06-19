@@ -6,7 +6,6 @@ lpb $0
   sub $0,$1
 lpe
 bin $1,$0
-sub $1,1
 mul $1,16
-add $1,1
+sub $1,15
 mov $0,$1

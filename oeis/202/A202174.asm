@@ -5,9 +5,7 @@ mul $0,111111111
 mov $2,$0
 add $0,1
 lpb $2
-  mov $1,1
   mov $2,9
+  mov $1,1
 lpe
-add $0,9
 sub $0,$1
-sub $0,9

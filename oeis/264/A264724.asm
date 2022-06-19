@@ -2,8 +2,8 @@
 ; Submitted by Jamie Morken(s2)
 ; 2,5,11,18,29,38,55,68,87,104,131,148,181,202,233,264,305,330,379,408,453,494,551,584,645,688,747,796,869,908,991,1040,1109,1172,1249,1308,1405,1462,1545,1616,1721,1776,1891,1956,2049,2138,2255,2320,2443,2520
 
-mov $2,$0
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,1
 pow $0,2
-seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $0,$2
+add $0,$1

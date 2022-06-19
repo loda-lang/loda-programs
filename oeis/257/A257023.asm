@@ -4,9 +4,9 @@
 lpb $0
   mov $2,$0
   seq $2,55087 ; Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
-  mov $0,$2
   mov $3,$2
   min $3,1
+  mov $0,$2
   add $1,$3
 lpe
 add $1,1

@@ -6,8 +6,8 @@ add $0,1
 mov $1,2
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,5725 ; Quadrinomial coefficients.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

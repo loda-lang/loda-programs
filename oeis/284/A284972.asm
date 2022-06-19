@@ -1,19 +1,6 @@
 ; A284972: Numbers with digits 4 and 8 only.
-; Submitted by Landjunge
+; Submitted by Simon Strandgaard
 ; 4,8,44,48,84,88,444,448,484,488,844,848,884,888,4444,4448,4484,4488,4844,4848,4884,4888,8444,8448,8484,8488,8844,8848,8884,8888,44444,44448,44484,44488,44844,44848,44884,44888,48444,48448,48484,48488,48844,48848
 
-mov $2,2
-add $0,1
-lpb $0
-  sub $0,1
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  div $0,2
-  add $1,$3
-  mul $2,10
-lpe
-add $0,$2
-div $0,9
-add $0,$1
+seq $0,284920 ; Numbers with digits 2 and 4 only.
 mul $0,2

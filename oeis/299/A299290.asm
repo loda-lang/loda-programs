@@ -4,9 +4,9 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,227541 ; a(n) = floor(13*n^2/4).
   add $0,$2
+  sub $1,1
 lpe
 mul $0,2
 add $0,1

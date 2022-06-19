@@ -9,15 +9,15 @@ lpb $0
   dif $3,$0
   mov $5,$3
   mul $3,$0
-  sub $0,1
   cmp $3,$2
   sub $3,$2
   max $4,7
   cmp $4,0
   sub $4,1
   mul $5,$4
-  add $5,1
   sub $5,$3
+  add $5,1
+  sub $0,1
   add $1,$5
 lpe
 mov $0,$1

@@ -13,6 +13,6 @@ lpb $0
   mul $3,2
   add $3,1
   mul $3,$2
-  add $5,$3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1

@@ -3,8 +3,8 @@
 
 mov $2,$0
 lpb $2
-  add $1,1
   sub $2,1
+  add $1,1
   div $2,$1
 lpe
 seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).

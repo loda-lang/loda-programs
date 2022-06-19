@@ -9,8 +9,8 @@ lpb $0
   pow $2,$1
   mov $3,$4
   bin $3,$1
-  mov $1,$0
   mul $3,$2
+  mov $1,$0
   mov $2,3
   pow $2,$0
   add $2,1

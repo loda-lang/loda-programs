@@ -5,14 +5,14 @@
 mov $3,$0
 lpb $3
   lpb $0
+    add $1,$0
+    add $1,1
     mov $2,$0
     seq $2,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
     mov $3,0
-    add $4,$0
     mov $0,$2
     sub $0,1
-    add $4,1
   lpe
 lpe
-mov $0,$4
+mov $0,$1
 add $0,1

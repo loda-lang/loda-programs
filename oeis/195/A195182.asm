@@ -3,13 +3,13 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,276860 ; First differences of the Beatty sequence A276853 for 2*e.
-  add $0,$2
   mov $3,$2
   min $3,1
-  add $0,$3
+  trn $0,2
   sub $0,6
+  add $0,$2
+  add $0,$3
   add $1,$3
 lpe
 mov $0,$1

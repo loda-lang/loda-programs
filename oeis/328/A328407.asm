@@ -3,9 +3,9 @@
 
 add $0,1
 pow $0,2
-trn $2,$0
+trn $1,$0
 lpb $0
-  add $2,$0
+  add $1,$0
   dif $0,4
 lpe
-add $0,$2
+add $0,$1

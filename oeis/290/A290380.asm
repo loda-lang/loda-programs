@@ -1,8 +1,25 @@
 ; A290380: Analog of Motzkin sums for Coxeter type D.
-; Submitted by Christian Krause
+; Submitted by Rhodan71
 ; 1,4,12,36,105,306,889,2584,7515,21880,63778,186132,543855,1590876,4658580,13655472,40065243,117654876,345786396,1017040380,2993498739,8816790906,25984489545,76625467128,226085062525,667415280376,1971209865654,5824651789852
 
 add $0,1
-mov $1,$0
-seq $0,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.
-mul $0,$1
+mov $1,1
+sub $2,$0
+add $2,1
+mov $3,1
+sub $0,1
+lpb $0
+  sub $0,1
+  sub $1,$3
+  add $2,1
+  add $4,1
+  add $5,$3
+  add $3,$1
+  mul $1,$2
+  add $1,$5
+  add $1,$5
+  div $1,$4
+  add $3,$1
+  add $3,$5
+lpe
+mov $0,$3

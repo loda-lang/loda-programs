@@ -1,14 +1,14 @@
 ; A283767: Numbers k such that U(k) is even, where U = A001950 = upper Wythoff sequence.
-; Submitted by mikey
+; Submitted by Gabriel Whigham
 ; 1,4,7,8,10,11,13,14,17,20,21,23,24,26,27,30,33,36,37,39,40,43,46,49,50,52,53,56,59,62,63,65,66,68,69,72,75,76,78,79,81,82,85,88,91,92,94,95,98,101,104,105,107,108,111,114,117,118,120,121,123,124,127,130,131,133,134,136,137,140,143,144,146,147,149,150,153,156,159,160,162,163,166,169,172,173,175,176,178,179,182,185,186,188,189,191,192,195,198,199
 
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  sub $2,1
   mov $3,$1
-  seq $3,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
-  add $3,1
+  seq $3,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
   add $3,$4
   gcd $3,2
   sub $0,$3
@@ -17,8 +17,5 @@ lpb $2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
-add $0,1

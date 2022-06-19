@@ -5,6 +5,7 @@
 mov $1,$0
 mov $3,$0
 mov $4,$0
+seq $4,40 ; The prime numbers.
 add $0,1
 seq $0,40 ; The prime numbers.
 seq $1,4216 ; a(n) = floor(log_10(n)).
@@ -14,5 +15,4 @@ pow $2,$1
 mul $0,$2
 add $0,1
 add $0,$3
-seq $4,40 ; The prime numbers.
 mod $0,$4

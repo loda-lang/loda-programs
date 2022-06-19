@@ -9,11 +9,11 @@ lpb $0
   min $0,$4
   mov $3,$2
   dif $3,$0
+  cmp $3,$2
   mod $0,2
   pow $0,$1
   mul $0,$4
   pow $0,3
-  cmp $3,$2
   sub $2,$4
   cmp $3,0
   mul $3,$0

@@ -4,14 +4,14 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  mul $0,2
   seq $1,182986 ; Zero together with the prime numbers (A000040).
+  mul $0,2
   mov $4,$1
   trn $4,$0
   mov $0,2
 lpe
-mov $1,$4
 mov $3,$2
 mul $3,2
+mov $1,$4
 add $1,$3
 mov $0,$1

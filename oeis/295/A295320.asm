@@ -12,10 +12,10 @@ lpb $0
   trn $11,$0
   mov $8,$11
   cmp $8,0
-  add $6,$8
   mov $7,$3
   cmp $7,$0
   cmp $7,0
+  add $6,$8
   mul $6,$7
   lpb $5,4
     mov $9,$0

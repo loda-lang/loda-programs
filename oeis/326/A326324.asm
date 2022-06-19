@@ -1,18 +1,23 @@
 ; A326324: a(n) = A_{5}(n) where A_{m}(x) are the Eulerian polynomials as defined in A326323.
-; Submitted by Simon Strandgaard
+; Submitted by [AF] Kalianthys
 ; 1,1,6,46,456,5656,84336,1467376,29175936,652606336,16219458816,443419545856,13224580002816,427278468668416,14867050125981696,554245056343668736,22039796215883268096,931198483176870608896,41658202699736550014976,1967160945260218035798016
 
-mov $2,$0
-mul $0,9
-lpb $0
-  mul $3,4
-  add $1,$3
-  div $1,5
-  mov $3,$0
-  mul $3,4
-  sub $3,8
-  pow $3,$2
-  sub $0,1
-lpe
-mov $0,$1
+mov $4,$0
 add $0,1
+lpb $0
+  sub $0,1
+  mul $2,-2
+  div $6,2
+  add $6,$2
+  mul $6,2
+  mov $2,$1
+  pow $2,$4
+  sub $2,$6
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,1
+  mul $5,-1
+  add $5,$3
+lpe
+mov $0,$5

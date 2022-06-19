@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  div $0,10
   mod $2,10
   pow $2,16
+  div $0,10
   lpb $0
     mod $0,8
   lpe

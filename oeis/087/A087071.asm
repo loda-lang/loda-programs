@@ -2,32 +2,32 @@
 ; Submitted by Christian Krause
 ; 0,0,0,0,0,0,0,3,1,15,39
 
-mov $5,2
 mov $7,$0
+mov $5,2
 lpb $5
-  mov $0,$7
   sub $5,1
+  mov $0,$7
   add $0,$5
   sub $0,1
-  mov $9,2
   mov $10,0
   mov $11,$0
+  mov $9,2
   lpb $9
-    mov $0,$11
     sub $9,1
+    mov $14,0
+    mov $0,$11
     add $0,$9
     sub $0,1
+    mov $1,$0
     mov $13,2
-    mov $14,0
-    mov $15,$0
     lpb $13
-      mov $0,$15
-      mov $4,0
       sub $13,1
+      mov $0,$1
       add $0,$13
       sub $0,1
       mov $2,$0
       bin $2,7
+      mov $4,0
       lpb $0
         mov $0,$2
         sub $0,1
@@ -39,10 +39,10 @@ lpb $5
       mul $12,$2
       add $14,$12
     lpe
-    min $15,1
-    mul $15,$0
+    min $1,1
+    mul $1,$0
     mov $0,$14
-    sub $0,$15
+    sub $0,$1
     mov $8,$9
     mul $8,$0
     add $10,$8

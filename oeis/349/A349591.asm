@@ -14,8 +14,8 @@ lpb $0
   add $1,1
   mul $3,$2
   div $3,$1
-  add $1,6
   add $3,$5
+  add $1,6
   add $4,8
   add $5,$3
 lpe

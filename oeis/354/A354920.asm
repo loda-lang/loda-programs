@@ -1,7 +1,6 @@
-; A354920: 
-; Submitted by Jason Jung
+; A354920: a(n) = A182665(n) mod 2, where A182665(n) is the greatest x < n such that n divides x*(x-1).
+; Submitted by gemini8
 ; 0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,0,0,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,0,0,1,0,1,1,0,0,0,1,0,1,0,1,1,0,0,1,1,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,1,0
 
 seq $0,182665 ; Greatest x < n such that n divides x*(x-1).
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mod $0,10
+mod $0,2

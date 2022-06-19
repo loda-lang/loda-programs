@@ -18,7 +18,6 @@ lpb $0
 lpe
 add $1,1
 mov $0,$1
-mov $4,$2
 lpb $0
-  mod $0,$4
+  mod $0,$2
 lpe

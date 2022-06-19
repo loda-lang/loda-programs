@@ -6,9 +6,9 @@ lpb $0
   sub $0,1
   add $2,2
   add $2,$0
-  gcd $3,3
-  add $3,$2
-  sub $3,2
+  gcd $1,3
+  sub $1,2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

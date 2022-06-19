@@ -8,9 +8,9 @@ lpb $0
   mov $4,$3
   mul $3,$1
   add $3,$2
+  max $3,2
   mul $2,$1
   sub $2,$4
-  max $3,2
 lpe
 mov $0,$3
 div $0,2

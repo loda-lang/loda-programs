@@ -1,5 +1,5 @@
 ; A245423: Number of nonnegative integers with property that their base 7/5 expansion (see A024642) has n digits.
-; Submitted by UBT - Mikeejones
+; Submitted by respawner
 ; 7,7,7,14,14,21,28,42,56,84,112,161,224,315,441,616,861,1204,1687,2366,3311,4634,6489,9086,12719,17808,24927,34902,48860,68404,95767,134071,187698,262780,367892,515046,721070,1009498,1413293,1978613,2770054,3878077
 
 mov $3,1
@@ -42,8 +42,9 @@ lpb $3
       mov $6,$7
     lpe
   lpe
-  mov $4,$6
-  div $4,2
-  mul $4,7
 lpe
-mov $0,$4
+mov $0,$6
+sub $0,2
+div $0,2
+mul $0,7
+add $0,7

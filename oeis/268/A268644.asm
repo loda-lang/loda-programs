@@ -8,6 +8,6 @@ bin $0,3
 add $0,$1
 div $0,8
 mul $0,3
+add $0,1
 add $1,2
 sub $0,$1
-add $0,1

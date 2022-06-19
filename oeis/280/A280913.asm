@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,10
   seq $2,271751 ; Period 10 zigzag sequence; repeat: [0, 1, 2, 3, 4, 5, 4, 3, 2, 1].
+  div $0,10
   add $1,$2
 lpe
 mov $0,$1

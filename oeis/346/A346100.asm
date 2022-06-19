@@ -1,8 +1,8 @@
 ; A346100: a(n) = A100995(gcd(n, A064989(A319626(A324886(n))))).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by kotenok2000
 ; 0,1,1,2,1,1,1,0,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,0,0,1,1,1,2,1,1,1,1,1,0,1,1,0,2,1,1,1,1,1,0,1,1,1,1,2,1,0,1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,0,1,0,1,0
 
 seq $0,346099 ; a(n) = gcd(n, A346098(n)).
 sub $0,1
-seq $0,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1

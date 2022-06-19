@@ -1,9 +1,13 @@
 ; A338735: a(n) = Bell(n) + n - 2 (cf. A000110).
-; Submitted by [AF>Le_Pommier] Jerome_C2005
+; Submitted by Gunnar Hjern
 ; 0,2,6,17,55,207,882,4146,21154,115983,678579,4213607,27644448,190899334,1382958558,10480142161,82864869819,682076806175,5832742205074,51724158235390,474869816156770,4506715738447343,44152005855084367,445958869294805311,4638590332229999376
 
 add $0,1
 mov $1,$0
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-add $0,$1
+mov $2,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
+div $1,$0
+add $2,$1
+mov $0,$2
 sub $0,2

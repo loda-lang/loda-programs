@@ -12,9 +12,9 @@ lpb $3
     cmp $3,$2
     cmp $3,0
     lpb $3
-      add $1,3
       mul $3,$0
       mod $3,5
+      add $1,3
     lpe
     sub $0,1
     add $1,$3

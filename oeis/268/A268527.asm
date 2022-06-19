@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,309074 ; a(0) = 1; a(2*n) = 4*a(n), a(2*n+1) = a(n).
+  sub $0,1
   add $1,$2
 lpe
 mul $1,4

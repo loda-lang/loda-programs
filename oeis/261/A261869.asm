@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,55615 ; a(n) = n*moebius(n) (cf. A008683).
+  seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
   mov $2,$3
   mul $2,$0
   add $1,$2

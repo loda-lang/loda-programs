@@ -7,9 +7,9 @@ mul $0,4
 mov $2,5
 mov $4,$1
 lpb $4
-  mov $0,1
-  mov $3,$2
   div $4,2
+  mov $3,$2
+  mov $0,1
   lpb $0
     sub $0,$4
   lpe

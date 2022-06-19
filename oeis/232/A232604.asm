@@ -10,8 +10,8 @@ lpb $0
   sub $4,1
   mov $3,$4
   bin $3,$1
-  add $1,1
   mul $3,$2
+  add $1,1
   div $4,2
   mul $5,2
   add $5,$3

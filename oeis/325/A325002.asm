@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  div $0,71061
   seq $2,199011 ; Triangle T(n,k), read by rows, given by (1,1,-1,1,0,0,0,0,0,0,0,...) DELTA (0,1,0,0,0,0,0,0,0,0,0,0,...) where DELTA is the operator defined in A084938.
   add $3,$2
+  div $0,71061
   add $1,$3
   trn $1,2
   mov $4,$2

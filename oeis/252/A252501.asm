@@ -8,7 +8,7 @@ lpb $0
   sub $0,$2
   add $1,2
 lpe
-bin $1,$0
 bin $2,$0
+bin $1,$0
 mul $1,$2
 mov $0,$1

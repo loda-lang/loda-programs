@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,246260 ; Characteristic function of A246261: a(n) = A000035(A048673(n)).
+  seq $2,246260 ; a(n) = 1 if A003961(n) is of the form 4k+1, otherwise a(n) = 0, (when A003961(n) is of the form 4k+3). [A003961 is fully multiplicative with a(p) = nextprime(p)].
   add $1,$2
 lpe
 mov $0,$1

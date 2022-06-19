@@ -4,14 +4,13 @@
 seq $0,175216 ; The first nonprimes after the primes.
 mov $2,28
 lpb $2
-  mov $1,$0
   sub $2,10
+  mov $1,$0
 lpe
 add $2,$1
-seq $1,13632 ; Difference between n and the next prime greater than n.
 div $2,2
+seq $1,13632 ; Difference between n and the next prime greater than n.
 add $1,$2
-sub $1,6
 mul $1,2
-add $1,5
+sub $1,7
 mov $0,$1

@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   trn $2,1
   seq $2,65958 ; a(n) = n^2*Product_{distinct primes p dividing n} (1+1/p^2).
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

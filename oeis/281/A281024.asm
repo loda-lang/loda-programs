@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,67392 ; Sum of numbers <= n which have common prime factors with n.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

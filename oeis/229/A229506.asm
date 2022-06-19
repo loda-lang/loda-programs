@@ -5,8 +5,8 @@
 mov $1,$0
 seq $0,268905 ; Number of 2 X n 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two exactly once.
 lpb $1
-  mul $0,3
   sub $1,1
+  mul $0,3
 lpe
 div $0,108
 mul $0,288

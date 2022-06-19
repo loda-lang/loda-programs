@@ -1,10 +1,8 @@
 ; A253165: a(n) = (-1)^n*2^(6*n+3)*(zeta(-2*n-1,1/2) - zeta(-2*n-1,1)), where zeta(a,z) is the generalized Riemann zeta function.
-; Submitted by [SG]ATA-Rolf
+; Submitted by [SG]KidDoesCrunch
 ; 1,8,256,17408,2031616,362283008,91620376576,31191159799808,13753735117275136,7625476699018231808,5192022022552652087296,4258996468871236847403008,4142655008190840426050093056,4714505177821257067736657297408,6206008749802659037752564348092416
 
-mov $1,$0
-mov $0,4
-pow $0,$1
-seq $1,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
-mul $1,$0
-mov $0,$1
+mov $1,4
+pow $1,$0
+seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+mul $0,$1

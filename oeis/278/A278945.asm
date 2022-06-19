@@ -10,8 +10,8 @@ lpb $0
   cmp $3,$2
   cmp $3,0
   mul $3,$0
-  sub $0,2
   bin $3,2
-  add $4,$3
+  sub $0,2
+  add $1,$3
 lpe
-mov $0,$4
+mov $0,$1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,6
   seq $2,8217 ; a(n) = floor(n/4)*floor((n+1)/4).
+  trn $0,6
   add $1,$2
 lpe
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A293449: Characteristic function for A056166, numbers that have no nonprime exponents present in their prime factorization n = p_1^e_1 * ... * p_k^e_k.
-; Submitted by Bok
+; Submitted by BarnardsStern
 ; 1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 
 mov $1,1
@@ -28,6 +28,6 @@ lpb $0
     add $5,$4
   lpe
   mul $1,$5
-  mod $1,2
 lpe
 mov $0,$1
+mod $0,2

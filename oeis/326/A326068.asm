@@ -5,7 +5,7 @@ mov $2,$0
 seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
 sub $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,$2
 sub $0,1
+sub $0,$2
 sub $1,$0
 mov $0,$1

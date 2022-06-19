@@ -6,12 +6,12 @@ mov $2,$0
 mov $3,1
 mov $4,$0
 lpb $4
-  mov $0,$2
-  sub $1,1
-  mul $3,$1
   sub $4,1
+  mov $0,$2
   sub $0,$4
   seq $0,262 ; Number of "sets of lists": number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset.
+  sub $1,1
+  mul $3,$1
   add $3,$0
 lpe
 mov $0,$3

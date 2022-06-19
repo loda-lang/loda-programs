@@ -12,9 +12,9 @@ lpb $0
   cmp $3,0
   mul $3,$0
   mul $3,$0
+  pow $3,2
   sub $0,3
   div $0,2
-  pow $3,2
   add $1,$3
   sub $2,2
 lpe

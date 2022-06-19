@@ -1,20 +1,23 @@
 ; A214884: a(n) = Sum_{k=0..n} (-1)^k*F(k)*F(k+2), where F=A000045 (Fibonacci numbers).
-; Submitted by Jamie Morken(s3)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,-2,1,-9,15,-50,118,-324,831,-2195,5725,-15012,39276,-102854,269245,-704925,1845483,-4831574,12649186,-33116040,86698875,-226980647,594243001,-1555748424,4073002200,-10663258250,27916772473,-73087059249,191344405191
 
-add $0,1
+add $0,2
 lpb $0
   sub $0,1
-  div $2,2
-  mov $1,$2
-  mov $2,$4
-  mul $2,2
-  sub $3,2
-  sub $4,$2
-  mul $4,2
-  add $4,$3
-  mov $3,$2
-  add $3,$1
+  sub $4,$1
+  mul $2,-1
+  add $3,1
+  sub $3,$4
+  mov $4,$2
+  sub $4,$5
+  add $2,1
+  mov $1,$5
+  add $1,$2
+  sub $1,$3
+  mov $2,$5
+  mov $3,1
+  mov $5,1
+  sub $5,$1
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

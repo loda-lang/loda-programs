@@ -7,15 +7,15 @@ mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
+  cmp $3,$2
+  add $3,1
   mov $4,$0
   sub $0,1
   max $0,2
-  cmp $3,$2
-  add $3,1
   cmp $4,0
   sub $4,1
-  mul $5,$4
-  add $5,1
-  sub $5,$3
+  mul $1,$4
+  sub $1,$3
+  add $1,1
 lpe
-mov $0,$5
+mov $0,$1

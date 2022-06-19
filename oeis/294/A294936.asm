@@ -7,9 +7,9 @@ mov $3,$0
 seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 div $3,$2
 lpb $3
-  mov $1,4
   div $3,5
   add $3,1
+  mov $1,4
 lpe
 div $1,4
 mov $0,$1
