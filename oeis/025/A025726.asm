@@ -1,19 +1,18 @@
 ; A025726: Index of 7^n within sequence of numbers of form 7^i*9^j.
-; Submitted by BarnardsStern
+; Submitted by Simon Strandgaard
 ; 1,2,4,7,11,16,22,29,37,45,54,64,75,87,100,114,129,145,161,178,196,215,235,256,278,301,325,349,374,400,427,455,484,514,545,576,608,641,675,710,746,783,821,860,899,939,980,1022,1065,1109,1154,1200,1247,1294,1342
 
 mov $2,$0
+add $2,1
 mov $3,$0
-add $1,1
+add $3,1
 lpb $3
   sub $3,1
-  mov $0,$2
-  sub $0,$3
-  mul $0,7
-  div $4,11
-  add $4,$0
-  div $4,8
-  add $4,1
-  add $1,$4
+  mov $1,$3
+  mul $1,10
+  div $1,13
+  add $1,$3
+  div $1,2
+  add $2,$1
 lpe
-mov $0,$1
+mov $0,$2

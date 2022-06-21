@@ -1,9 +1,12 @@
 ; A033683: a(n) = 1 if n is an odd square not divisible by 3, otherwise 0.
-; Submitted by amargo133
+; Submitted by owensse
 ; 0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-dif $0,-2
-max $0,0
-seq $0,217219 ; Theta series of planar hexagonal lattice with respect to deep hole.
-div $0,6
+mov $1,-1
+pow $1,$0
+add $1,3
+dif $0,2
+seq $0,89810 ; Expansion of Jacobi theta function theta_3(Pi/6, q) in powers of q.
+mul $0,$1
+div $0,2
 mod $0,2

@@ -15,6 +15,7 @@ A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
 A014692: a(n) = prime(n) - (n-1).
+A014803: Squares of even hexagonal pyramidal numbers.
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).

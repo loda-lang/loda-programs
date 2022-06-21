@@ -8,9 +8,9 @@ mov $0,8
 lpb $0
   div $0,4
   add $2,$1
-  bin $1,3
   dif $2,4
   add $2,1
+  bin $1,3
 lpe
 mov $0,$2
 div $0,2

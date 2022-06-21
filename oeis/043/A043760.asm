@@ -1,8 +1,8 @@
 ; A043760: Numbers n such that number of runs in the base 2 representation of n is congruent to 6 mod 9.
-; Submitted by Gunnar Hjern
+; Submitted by gemini8
 ; 42,74,82,84,86,90,106,138,146,148,150,154,162,164,166,168,172,174,178,180,182,186,202,210,212,214,218,234,266,274,276,278,282,290,292,294,296,300,302,306,308,310,314,322,324,326,328
 
-mov $1,6
+mov $1,12
 mov $2,$0
 add $2,11
 pow $2,2

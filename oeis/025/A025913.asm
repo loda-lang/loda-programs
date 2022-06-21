@@ -4,8 +4,8 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   add $0,$5
   trn $0,1
   seq $0,29122 ; Expansion of 1/((1-x)(1-x^7)(1-x^9)(1-x^11)).

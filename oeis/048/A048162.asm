@@ -5,9 +5,9 @@
 lpb $0
   add $0,$3
   mov $2,$1
+  seq $2,169985 ; Round phi^n to the nearest integer.
   add $1,$0
   sub $0,2
-  seq $2,169985 ; Round phi^n to the nearest integer.
   add $3,$2
 lpe
 mov $0,$3
