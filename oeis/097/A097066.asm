@@ -3,8 +3,8 @@
 
 pow $0,2
 mov $1,$0
-div $0,4
 mod $1,2
 mov $2,$1
 cmp $2,0
+div $0,4
 add $0,$2

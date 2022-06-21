@@ -4,9 +4,9 @@
 
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
 add $0,4
-mov $2,2
-add $2,$0
-mul $2,2
-mod $2,6
-sub $0,$2
+mov $1,2
+add $1,$0
+mul $1,2
+mod $1,6
+sub $0,$1
 sub $0,1

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,175406 ; The greatest integer k such that (1+1/n)^k <= 2.
+  mov $0,0
 lpe
 add $1,1
 mov $0,$1

@@ -6,15 +6,14 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $1,14
   mov $5,$0
   mov $7,2
-  mov $8,14
   lpb $7
     sub $7,1
     add $0,$7
     sub $0,1
     mov $2,$0
-    mul $0,$7
     max $2,0
     seq $2,118717 ; Sum of two consecutive semiprimes.
     mov $3,0
@@ -22,11 +21,12 @@ lpb $3
     add $4,10
     mov $6,$7
     mul $6,$2
-    add $8,$6
+    mul $0,$7
+    add $1,$6
   lpe
   min $5,1
   mul $5,$4
-  mov $4,$8
+  mov $4,$1
   sub $4,$5
 lpe
 mov $0,$4

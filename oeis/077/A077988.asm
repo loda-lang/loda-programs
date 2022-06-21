@@ -6,10 +6,10 @@ mov $4,1
 lpb $0
   sub $0,1
   mov $2,$3
-  mov $3,$5
-  mov $5,$4
+  mov $3,$1
+  mov $1,$4
+  mul $1,2
   mov $4,$2
-  mul $5,2
-  sub $4,$5
+  sub $4,$1
 lpe
 mov $0,$4

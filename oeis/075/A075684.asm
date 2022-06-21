@@ -4,8 +4,7 @@
 
 mul $0,2
 add $0,1
-mov $3,5026
-add $3,2
+mov $3,5028
 lpb $3
   sub $3,53
   mov $2,-2

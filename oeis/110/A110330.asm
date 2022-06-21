@@ -9,8 +9,8 @@ lpb $0
   sub $2,$0
 lpe
 bin $1,$0
-mov $0,-4
 dif $2,2
+mov $0,-4
 bin $0,$2
 pow $2,10
 add $2,1

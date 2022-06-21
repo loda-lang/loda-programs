@@ -3,7 +3,7 @@
 
 trn $0,1
 seq $0,75269 ; Product of Lucas numbers and inverted Lucas numbers: a(n)=A000032(n)*A075193(n).
-mov $1,1
 sub $2,$0
+mov $1,1
 add $1,$2
 mov $0,$1

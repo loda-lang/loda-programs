@@ -3,10 +3,10 @@
 
 lpb $0
   clr $2,$1
-  mov $1,1
   add $2,3
   add $3,$0
   div $0,3
+  mov $1,1
 lpe
 pow $2,$3
 mov $0,$2
