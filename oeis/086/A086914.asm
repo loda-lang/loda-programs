@@ -8,8 +8,6 @@ seq $0,122778 ; a(n) = Sum_{k=0..n} A(n,k)*n^k where A(n,k) are Eulerian numbers
 mov $2,$0
 gcd $2,$1
 pow $2,2
-mul $0,91
 mul $1,$0
 div $1,$2
 mov $0,$1
-div $0,91

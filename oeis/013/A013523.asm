@@ -7,6 +7,3 @@ seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
 seq $1,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
 gcd $1,$0
 div $0,$1
-mul $0,4
-div $0,8
-mul $0,2

@@ -5,16 +5,16 @@
 mov $6,$0
 mov $8,2
 lpb $8
-  mov $0,$6
-  mov $1,0
   sub $8,1
+  mov $0,$6
   add $0,$8
   sub $0,1
+  mov $1,0
   mov $2,$0
   mov $4,2
   lpb $4
-    mov $0,$2
     sub $4,1
+    mov $0,$2
     add $0,$4
     trn $0,1
     seq $0,25577 ; Expansion of (x/(1-x))*sqrt((1+x)/(1-3*x)).
@@ -26,9 +26,9 @@ lpb $8
   min $2,1
   mul $2,$5
   sub $1,$2
-  mov $0,$1
   mov $9,$8
   mul $9,$1
+  mov $0,$1
   add $7,$9
 lpe
 min $6,1

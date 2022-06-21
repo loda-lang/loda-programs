@@ -10,20 +10,20 @@ lpb $1
   mov $2,2
   sub $2,$0
   lpb $2
-    mov $1,3
     mov $2,0
+    mov $1,3
   lpe
+  mov $3,1
   mov $2,$0
   mod $2,2
   mul $2,20
-  mov $3,1
   lpb $2
-    add $0,3
     sub $2,1
+    add $0,3
   lpe
   lpb $3
-    div $0,2
     sub $3,1
+    div $0,2
   lpe
   sub $1,4
   add $4,1

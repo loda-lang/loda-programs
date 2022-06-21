@@ -8,10 +8,10 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $2,$5
   mov $4,$0
   max $4,0
   seq $4,26328 ; a(n) = number of (s(0), s(1), ..., s(n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, s(0) = 2, s(n) = 5. Also a(n) = T(n,n-3), where T is the array in A026323.
+  mov $2,$5
   mul $2,$4
   add $1,$2
 lpe

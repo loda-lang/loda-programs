@@ -5,9 +5,9 @@ add $0,1
 mov $2,$0
 pow $2,$0
 lpb $0
-  mov $3,$0
-  cmp $3,0
-  add $0,$3
+  mov $1,$0
+  cmp $1,0
+  add $0,$1
   div $2,$0
   sub $0,2
 lpe

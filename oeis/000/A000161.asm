@@ -1,20 +1,24 @@
 ; A000161: Number of partitions of n into 2 squares.
-; Submitted by Aurum
+; Submitted by gemini8
 ; 1,1,1,0,1,1,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,2,1,0,0,1,0,0,1,0,1,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,2,0,1,1,0,0,0,0,1,0,0,1,0,0,1,2,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,2,0,0,0,1,1,0,0,0,0,0,0,1,1,0
 
+mov $5,$0
+mov $2,6
+mov $3,$0
 mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,73092 ; Number of numbers of the form x^2 + y^2 (0 <= x <= y) less than or equal to n.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $0,$3
+  cmp $1,7
+  sub $0,$1
+  seq $0,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+  lpb $0
+    trn $0,9
+    add $2,2
+    mov $3,$2
+  lpe
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
+mov $0,$2
+div $0,2
+sub $0,3

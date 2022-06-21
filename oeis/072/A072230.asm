@@ -4,12 +4,12 @@
 mov $2,$0
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 sub $0,1
-mov $1,1
-add $1,$2
 mov $3,$2
 sub $3,2
 mul $3,$0
 add $3,2
+mov $1,1
+add $1,$2
 bin $1,$3
 mul $1,2
 mov $0,$1

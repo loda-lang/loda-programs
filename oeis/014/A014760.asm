@@ -1,8 +1,9 @@
 ; A014760: Squares of numbers in array formed from odd elements to the right of middle of rows of Pascal triangle that are not 1.
-; Submitted by misaki@med
+; Submitted by [SG]ATA-Rolf
 ; 9,25,225,1225,441,49,81,2025,27225,3025,121,245025,1656369,511225,169,9018009,1002001,8281,41409225,25050025,9018009,1863225,207025,11025,225,289,23409,938961,29241,361,23474025,414081801,35820225,441
 
 mov $2,1815
+bin $2,2
 lpb $2
   sub $2,6
   mov $3,$1
@@ -19,6 +20,3 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-div $0,4
-mul $0,4
-add $0,1

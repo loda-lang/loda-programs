@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,3
   div $2,2
   bin $2,2
+  sub $0,3
   add $1,$2
 lpe
 mov $0,$1

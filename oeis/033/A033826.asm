@@ -4,8 +4,8 @@
 
 mul $0,2
 mov $1,$0
-mov $0,65
 add $1,5
+mov $0,65
 div $0,$1
 sub $0,1
 mul $0,2

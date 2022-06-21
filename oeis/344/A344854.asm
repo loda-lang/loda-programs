@@ -1,0 +1,8 @@
+; A344854: The number of equilateral triangles with vertices from the vertices of the n-dimensional hypercube.
+; Submitted by Sir Stooper
+; 0,0,0,8,64,320,2240,17920,121856,831488,6215680,46069760,333639680,2468257792,18538397696,138630955008,1038902624256,7848847736832,59474614157312,451122104369152,3432752856694784,26200670667276288,200322520455315456,1534319564383322112
+
+mov $1,2
+pow $1,$0
+seq $0,344559 ; a(n) = (1/6) * 2^(-n) * n! * [x^n] Exp(2*x, 1)*(Exp(2*x, 3) - 1), where Exp(x, m) = Sum_{k>=0} (x^k / k!)^m.
+mul $0,$1

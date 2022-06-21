@@ -1,8 +1,8 @@
 ; A096484: Integer part of the square root of [2n-1]-th decimal repunit.
-; Submitted by Jamie Morken(w2)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,10,105,1054,10540,105409,1054092,10540925,105409255,1054092553,10540925533,105409255338,1054092553389,10540925533894,105409255338945,1054092553389459,10540925533894597,105409255338945977
 
-mov $1,$0
-mul $1,2
-seq $1,96483 ; Integer part of the square root of n-th decimal repunit.
-mov $0,$1
+add $0,$0
+add $0,1
+seq $0,17934 ; Powers of sqrt(10) rounded down.
+div $0,3

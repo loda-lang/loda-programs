@@ -1,27 +1,10 @@
 ; A008876: 3x+1 sequence starting at 81.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 81,244,122,61,184,92,46,23,70,35,106,53,160,80,40,20,10,5,16,8,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2
 
-add $0,1
-mov $1,$0
-mov $0,83
-lpb $1
-  mov $2,$0
-  mod $2,2
-  mov $3,1
-  sub $3,$2
-  mov $4,$0
-  lpb $2
-    sub $2,1
-    mul $0,3
-    sub $0,3
-  lpe
-  lpb $3
-    sub $3,1
-    add $0,2
-    div $0,2
-  lpe
-  sub $1,1
+mov $1,81
+lpb $0
+  sub $0,1
+  seq $1,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe
-mov $0,$4
-sub $0,2
+add $0,$1

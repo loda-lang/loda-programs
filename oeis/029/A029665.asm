@@ -1,10 +1,11 @@
 ; A029665: Even numbers to the left of the central elements of the (2,1)-Pascal triangle A029653.
-; Submitted by Dr Who Fan
+; Submitted by Arkhenia
 ; 2,2,2,2,2,16,2,2,36,2,2,64,140,196,2,204,336,2,100,540,714,2,1254,2,144,506,1210,2640,2,650,1716,2,196,2366,8008,2,2,256,1240,4200,10556,20384,30888,37180,2,1496,5440,14756,30940,51272,68068,2,324,6936
 
 mov $2,7259
+sub $2,1
 lpb $2
-  sub $2,16
+  sub $2,27
   sub $2,$1
   mov $3,$1
   seq $3,29662 ; Numbers to the left of the central numbers of the (2,1)-Pascal triangle A029653.
@@ -21,8 +22,3 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-div $0,2
-mul $0,4
-sub $0,4
-div $0,2
-add $0,2
