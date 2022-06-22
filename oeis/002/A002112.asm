@@ -8,6 +8,5 @@ pow $1,2
 add $0,1
 seq $0,436 ; Generalized Euler numbers c(3,n).
 div $0,$1
-div $0,80
-mul $0,30
-add $0,3
+div $0,8
+mul $0,3

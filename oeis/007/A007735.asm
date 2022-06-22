@@ -4,7 +4,7 @@
 
 mov $1,$0
 seq $0,277129 ; Largest m < n such that 2^m == 2^n (mod n).
-add $1,1
 sub $1,$0
+add $1,1
 dif $1,2
 mov $0,$1
