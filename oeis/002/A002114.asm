@@ -4,8 +4,8 @@
 
 mov $1,2
 pow $1,$0
+pow $1,2
 add $0,1
-mul $1,$1
 seq $0,436 ; Generalized Euler numbers c(3,n).
 div $0,$1
 sub $0,8

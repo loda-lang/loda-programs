@@ -1,7 +1,22 @@
 ; A011974: 2 followed by the numbers that are the sum of 2 successive primes.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Gunnar Hjern
 ; 2,5,8,12,18,24,30,36,42,52,60,68,78,84,90,100,112,120,128,138,144,152,162,172,186,198,204,210,216,222,240,258,268,276,288,300,308,320,330,340,352,360,372,384,390,396,410,434,450,456,462,472,480,492,508,520,532,540,548,558,564,576,600,618,624,630,648,668,684,696,702,712,726,740,752,762,772,786,798,810,828,840,852,864,872,882,892,906,918,924,930,946,966,978,990,1002,1012,1030,1044,1064
 
-seq $0,23523 ; a(n) = prime(n)*prime(n-1) + 1.
-sub $0,2
-seq $0,8472 ; Sum of the distinct primes dividing n.
+mov $1,2
+lpb $0
+  trn $0,1
+  seq $0,1043 ; Numbers that are the sum of 2 successive primes.
+  mov $1,$0
+  mov $0,0
+lpe
+mov $2,$1
+bin $1,$0
+mul $1,10
+lpb $1
+  mul $2,$1
+  sub $1,1
+lpe
+mov $0,$2
+sub $0,7257600
+div $0,3628800
+add $0,2
