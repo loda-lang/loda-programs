@@ -1,14 +1,6 @@
 ; A051456: (Terms in A029625)/2.
-; Submitted by planetclown
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 4,7,13,12,20,25,10,45,24,13,50,112,161,154,98,40,63,162,273,315,252,138,16,225,435,588,567,390,60,660,1023,1155,957,19,111,396,1683,2178,2112,825,319,84,130,507,3861,4290,1144,403,22,637,4004,8151,6006,1547
 
-lpb $0
-  sub $0,1
-  div $0,74
-  sub $0,1
-lpe
 seq $0,29625 ; Even numbers in (3,2)-Pascal triangle A029618 that are different from 2.
-mul $0,7
-sub $0,49
-div $0,14
-add $0,4
+div $0,2

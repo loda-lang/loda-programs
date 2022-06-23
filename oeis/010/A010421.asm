@@ -1,13 +1,11 @@
 ; A010421: Squares mod 60.
-; Submitted by GolfSierra
+; Submitted by shiva
 ; 0,1,4,9,16,21,24,25,36,40,45,49
 
 add $0,1
 mov $1,226
 mov $2,$0
-add $2,11
-pow $2,2
-bin $2,2
+pow $2,4
 lpb $2
   sub $2,$0
   mov $3,$1

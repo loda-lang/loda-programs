@@ -1,31 +1,13 @@
 ; A007664: Reve's puzzle: number of moves needed to solve the Towers of Hanoi puzzle with 4 pegs and n disks, according to the Frame-Stewart algorithm.
+; Submitted by ChelseaOilman
 ; 0,1,3,5,9,13,17,25,33,41,49,65,81,97,113,129,161,193,225,257,289,321,385,449,513,577,641,705,769,897,1025,1153,1281,1409,1537,1665,1793,2049,2305,2561,2817,3073,3329,3585,3841,4097,4609,5121,5633,6145,6657,7169,7681,8193,8705,9217,10241,11265,12289,13313,14337,15361,16385,17409,18433,19457,20481,22529,24577,26625,28673,30721,32769,34817,36865,38913,40961,43009,45057,49153,53249,57345,61441,65537,69633,73729,77825,81921,86017,90113,94209,98305,106497,114689,122881,131073,139265,147457,155649
 
-mov $4,$0
-mov $7,$0
-lpb $4
-  mov $0,$7
-  sub $4,1
-  sub $0,$4
-  lpb $2
-    add $0,1
-    seq $5,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-    mov $3,$5
-    mov $6,$0
-    mul $0,0
-    add $6,$5
-    sub $6,3
-    lpb $6
-      add $3,1
-      trn $6,$3
-    lpe
-    mov $2,$0
-    sub $3,1
-    mov $8,$5
-    mul $8,2
-  lpe
-  add $2,1
-  pow $8,$3
-  add $1,$8
+lpb $0
+  add $1,1
+  sub $0,$1
 lpe
-mov $0,$1
+lpb $1
+  mul $0,2
+  add $0,$1
+  sub $1,1
+lpe

@@ -4,6 +4,6 @@
 
 mul $0,2
 mov $1,$0
-seq $0,51846 ; Digits 1..n in strict descending order n..1 interpreted in base n+1.
 add $1,1
+seq $0,51846 ; Digits 1..n in strict descending order n..1 interpreted in base n+1.
 div $0,$1

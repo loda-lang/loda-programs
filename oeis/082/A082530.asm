@@ -4,10 +4,10 @@
 
 lpb $0
   sub $0,1
-  add $2,25
-  mul $2,5
-  dif $2,10
+  add $1,25
+  mul $1,5
+  dif $1,10
 lpe
-mov $0,$2
+mov $0,$1
 div $0,25
 add $0,1

@@ -8,11 +8,11 @@ lpb $3
   mov $5,1
   lpb $5
     mov $4,$0
-    div $0,$2
     mod $4,$2
+    cmp $4,0
+    div $0,$2
     sub $2,1
     mov $1,$2
-    cmp $4,0
     sub $5,$4
   lpe
   add $2,1

@@ -5,11 +5,11 @@
 add $0,2
 mov $2,2
 lpb $2
+  sub $2,1
   trn $0,1
   seq $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
   add $1,$0
   div $0,2
-  sub $2,1
 lpe
 mov $0,$1
 div $0,2

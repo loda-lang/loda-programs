@@ -1,10 +1,11 @@
 ; A026321: n-th nonnegative integer k satisfying |sin(k)| > |cos(k)| > |sin(k+1)|.
-; Submitted by [SG]ATA-Rolf
+; Submitted by Cruncher Pete
 ; 2,5,18,21,24,27,40,43,46,49,62,65,68,71,84,87,90,93,106,109,112,115,128,131,134,137,150,153,156,159,172,175,178,181,197,200,203,219,222,225,241,244,247,263,266,269,285,288,291,307
 
 mov $2,7261
 lpb $2
   sub $2,28
+  mul $1,$4
   mov $3,$1
   seq $3,246394 ; Nonnegative integers k satisfying cos(k) <= 0 and cos(k+1) >= 0.
   mov $5,$3

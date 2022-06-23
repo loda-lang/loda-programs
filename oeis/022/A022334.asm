@@ -1,35 +1,20 @@
 ; A022334: Index of 5^n within sequence of numbers of form 2^i * 5^j.
+; Submitted by Simon Strandgaard
 ; 1,4,9,16,26,38,52,69,88,109,133,159,187,218,251,286,324,364,406,451,498,547,599,653,709,768,829,892,958,1026,1096,1168,1243,1320,1399,1481,1565,1651,1740,1831,1924,2020,2118,2218,2321,2426,2533,2643,2755,2869,2986
 
-mov $1,3
 mov $2,$0
-mov $7,$0
-lpb $2
-  add $1,5
-  add $1,$2
-  add $1,1
-  add $5,1
-  lpb $5
-    sub $1,4
-    add $5,$0
-    add $0,$2
-    sub $2,2
-    sub $5,$1
-    trn $5,$3
-  lpe
-  trn $2,1
-  mov $3,5
+add $2,1
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $0,$3
+  mul $0,7
+  mov $1,$3
+  mul $1,16
+  div $1,7
+  add $1,$0
+  div $1,4
+  add $2,$1
 lpe
-add $0,1
-mov $6,$7
-mov $8,$7
-lpb $6
-  sub $6,1
-  add $9,$8
-lpe
-mov $4,1
-mov $8,$9
-lpb $4
-  add $0,$8
-  sub $4,1
-lpe
+mov $0,$2

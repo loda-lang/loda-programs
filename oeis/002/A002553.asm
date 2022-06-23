@@ -9,12 +9,11 @@ mov $3,1
 lpb $0
   mov $2,$0
   sub $0,1
-  mul $1,2
-  div $2,2
   mul $3,$0
   sub $0,1
-  mul $1,2
+  div $2,2
   mul $2,2
+  mul $1,4
   mul $1,$2
 lpe
 gcd $3,$1

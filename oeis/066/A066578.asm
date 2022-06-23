@@ -3,8 +3,8 @@
 
 add $0,1
 mov $1,$0
-pow $0,2
 seq $1,57147 ; a(n) = n times sum of digits of n.
+pow $0,2
 add $0,$1
 div $0,$1
 sub $0,1

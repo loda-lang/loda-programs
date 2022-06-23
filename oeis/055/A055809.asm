@@ -4,9 +4,9 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,264443 ; a(n) = n*(n + 5)*(n + 10)/6.
   add $1,3
+  mov $0,0
 lpe
 add $1,1
 mov $0,$1

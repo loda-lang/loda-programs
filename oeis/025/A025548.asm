@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   mul $2,2
   seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

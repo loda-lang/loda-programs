@@ -5,10 +5,10 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  mod $2,9
   add $1,$0
   mov $0,$1
   div $0,2
-  mod $2,9
 lpe
 add $0,$1
 seq $0,40 ; The prime numbers.
