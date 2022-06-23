@@ -1,20 +1,9 @@
 ; A088568: 3*n - 2*(partial sums of Kolakoski sequence A000002).
-; Submitted by JayPi
+; Submitted by GolfSierra
 ; 1,0,-1,0,1,0,1,0,-1,0,-1,-2,-1,0,-1,0,1,0,-1,0,-1,0,1,0,1,0,-1,0,1,0,1,2,1,2,1,0,1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,1,2,1,0,1,0,-1,0,1,0,1,0,-1,0,-1,-2,-1,0,-1,0,1,0,1,0,-1,0,-1,0,1,0,-1,0,-1,-2,-1,0,-1,0,-1,-2,-1,-2,-3,-2,-1,-2,-1,0,-1,-2
 
-mov $4,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  seq $0,78650 ; 2-A000002(n) where A000002 is the Kolakoski sequence.
-  mov $5,$0
-  mul $5,5
-  mov $3,$5
-  sub $3,2
-  div $3,2
-  add $1,$3
-lpe
+seq $0,294448 ; Discrepancy of the Kolakoski sequence A000002.
+mul $0,80
+sub $1,$0
 mov $0,$1
-add $0,1
+div $0,80

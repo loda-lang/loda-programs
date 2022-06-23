@@ -6,9 +6,9 @@ lpb $0
   mov $4,$2
   cmp $4,0
   add $2,$4
-  add $5,2
-  div $5,$2
-  pow $2,$5
+  add $1,2
+  div $1,$2
+  pow $2,$1
   lpb $0
     mul $2,$0
     mov $4,$3

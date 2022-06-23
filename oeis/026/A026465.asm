@@ -1,9 +1,9 @@
 ; A026465: Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).
-; Submitted by ChelseaOilman
+; Submitted by gemini8
 ; 1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,1,2,2,2,1,1,2,1,1,2,1,1
 
 mov $2,1
-add $0,1
+mov $3,1
 lpb $0
   sub $0,1
   add $2,1

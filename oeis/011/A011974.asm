@@ -9,14 +9,4 @@ lpb $0
   mov $1,$0
   mov $0,0
 lpe
-mov $2,$1
-bin $1,$0
-mul $1,10
-lpb $1
-  mul $2,$1
-  sub $1,1
-lpe
-mov $0,$2
-sub $0,7257600
-div $0,3628800
-add $0,2
+mov $0,$1

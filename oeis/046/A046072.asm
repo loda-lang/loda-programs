@@ -2,5 +2,5 @@
 ; Submitted by Jamie Morken(w1)
 ; 1,1,1,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,1,3,1,1,1,2,1,2,1,2,2,1,2,2,1,1,2,3,1,2,1,2,2,1,1,3,1,1,2,2,1,1,2,3,2,1,1,3,1,1,2,2,2,2,1,2,2,2,1,3,1,1,2,2,2,2,1,3,1,1,1,3,2,1,2,3,1,2,2,2,2,1,2,3,1,1,2,2
 
-seq $0,72273 ; Index of powers of 2 that equal the number of noncongruent roots to the congruence x^2=k (mod n) for (k,n)=1 and assuming solvability.
+seq $0,72273 ; Index of powers of 2 that equal the number of noncongruent roots to the congruence x^2 == k (mod n) for (k,n)=1 and assuming solvability.
 max $0,1

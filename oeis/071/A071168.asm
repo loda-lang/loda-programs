@@ -2,7 +2,7 @@
 ; Submitted by Jamie Morken(w1)
 ; 0,0,1,1,3,1,5,3,5,1,1,1,5,1,7,5,11,1,13,7,1,9,17,1,17,5,13,11,25,1,7,3,17,11,5,7,13,1,23,13,19,1,23,13,5,1,27,15,17,9,9,23,33,17,17,23,17,19,45,9,43,23,19,23,25,17,1,17,39,13,3,23,7,13,19,23,29,13,11,25,41,21,21,1,55,23,1,17,21,7,35,39,7,31,67,23,29,17,43,21
 
-mov $2,$0
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,40 ; The prime numbers.
-seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mod $0,$2
+mod $0,$1

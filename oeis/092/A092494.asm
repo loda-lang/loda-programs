@@ -2,7 +2,7 @@
 ; Submitted by Christian Krause
 ; 0,1,3,4,6,7,10,11,12,13,16,17,20,21,23,25,27,28,31,32,34,36,39,40,42,43,45,46,49,50,54,55,56,58,60,62,65,66,68,70,73,74,78,79,81,83,86,87,89,90,92,94,97,98,100,102,104,106,109,110,114,115,117,119,120,122,126,127,129,131,135,136,139,140,142,144,146,148,152,153,155,156,159,160,163,165,167,169,172,173,176,178,180,182,184,186,189,190,192,194
 
-mov $2,$0
+mov $1,$0
+seq $1,13939 ; Partial sums of sequence A001221 (number of distinct primes dividing n).
 seq $0,48865 ; a(n) is the number of primes in the reduced residue system mod n.
-seq $2,13939 ; Partial sums of sequence A001221 (number of distinct primes dividing n).
-add $0,$2
+add $0,$1

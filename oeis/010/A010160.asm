@@ -1,7 +1,9 @@
 ; A010160: Continued fraction for sqrt(88).
-; Submitted by Jon Maiga
+; Submitted by http://asterion.petrsu.ru/
 ; 9,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1
 
-seq $0,40616 ; Continued fraction for sqrt(642).
-seq $0,87509 ; Number of k such that (k*n) == 2 (mod 3) for 0 <= k <= n.
-add $0,1
+seq $0,10135 ; Continued fraction for sqrt(45).
+seq $0,133893 ; Numbers m such that binomial(m+3,m) mod 3 = 0.
+sub $0,4
+seq $0,38572 ; a(n) = n rotated one binary place to the right.
+sub $0,1

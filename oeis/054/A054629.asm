@@ -5,12 +5,12 @@
 lpb $0
   mov $2,$0
   seq $2,54617 ; a(n) = Sum_{d|n} phi(d)*10^(n/d).
-  mov $3,$0
-  cmp $3,0
-  add $0,$3
+  mov $1,$0
+  cmp $1,0
+  add $0,$1
   div $2,$0
-  mov $0,0
   mul $2,2
+  mov $0,0
 lpe
 mov $0,$2
 div $0,6

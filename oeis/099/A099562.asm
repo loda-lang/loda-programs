@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,5
   seq $2,17899 ; Expansion of 1/(1 -x^5 -x^6 -x^7 - ...).
+  sub $0,5
   add $1,$2
 lpe
 mov $0,$1

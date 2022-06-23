@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  seq $2,62249 ; a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
-  sub $2,1
+  seq $1,62249 ; a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
+  sub $1,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

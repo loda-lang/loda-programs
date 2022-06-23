@@ -51,11 +51,14 @@ A052147: a(n) = prime(n) + 2.
 A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
 A061725: p^2 + 2 where p is a prime.
+A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062727: Sum of the divisors of n^n (A000312).
+A062981: a(n) = n^phi(n).
 A068503: Highest power of 3 dividing prime(n)-1.
 A069262: a(n) = 4*prime(n)^2.
 A072003: 10's complement of final digit of n-th prime.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
+A074372: 1 + the sum of the distinct primes dividing n.
 A074943: tau(n) (mod 3).
 A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).

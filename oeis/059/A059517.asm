@@ -4,8 +4,8 @@
 
 mov $1,6
 pow $1,$0
-add $0,1
 add $1,4
+add $0,1
 mov $2,3
 pow $2,$0
 sub $1,$2

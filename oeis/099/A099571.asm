@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,54451 ; Third column of triangle A054450 (partial row sums of unsigned Chebyshev triangle A049310).
+  sub $0,2
   add $1,$2
 lpe
 add $1,1
