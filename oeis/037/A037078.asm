@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,3
   seq $2,153339 ; Number of zig-zag paths from top to bottom of a rectangle of width 5 with n rows whose color is that of the top right corner
+  trn $0,3
   add $1,$2
 lpe
 div $1,4

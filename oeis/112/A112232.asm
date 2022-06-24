@@ -4,12 +4,12 @@
 mov $2,$0
 lpb $0
   seq $0,230980 ; Number of primes <= n, starting at n=0.
-  mov $3,$4
+  mov $3,$1
   cmp $3,0
-  add $4,$3
-  add $4,$2
-  add $0,$4
+  add $1,$3
+  add $1,$2
+  add $0,$1
   div $0,2
-  mod $4,$4
+  mod $1,$1
 lpe
 add $0,1

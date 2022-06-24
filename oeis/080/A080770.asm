@@ -7,12 +7,12 @@ pow $1,2
 add $1,16
 mov $2,$0
 mul $2,34
-add $1,$2
 mov $3,$0
 mul $3,$0
+add $1,$2
 mov $2,$3
 mul $2,10
-add $1,$2
 mul $3,$0
+add $1,$2
 add $1,$3
 mov $0,$1

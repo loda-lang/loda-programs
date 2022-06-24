@@ -1,21 +1,7 @@
 ; A103872: a(n) = 3*trinomial(n+1,0) - trinomial(n+2,0).
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,2,2,6,12,30,72,182,464,1206,3170,8426,22596,61074,166194,454950,1251984,3461574,9611190,26787378,74916660,210178458,591347988,1668172842,4717282752,13369522250,37970114702,108045430902
 
-add $0,2
-mov $1,1
-mov $4,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $5,$1
-  add $1,1
-  mod $1,2
-  div $4,-1
-  mul $4,$3
-  div $4,$5
-  add $2,$4
-lpe
-mov $0,$2
 add $0,1
+seq $0,5043 ; Riordan numbers: a(n) = (n-1)*(2*a(n-1) + 3*a(n-2))/(n+1).
 mul $0,2

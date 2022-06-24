@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,14531 ; Form array in which n-th row is obtained by expanding (1+x+x^2)^n and taking the 2nd column from the center.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

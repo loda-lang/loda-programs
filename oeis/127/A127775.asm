@@ -5,7 +5,7 @@
 mul $0,2
 add $0,1
 lpb $0
-  add $2,2
-  sub $0,$2
+  add $1,2
+  sub $0,$1
 lpe
-bin $0,$2
+bin $0,$1

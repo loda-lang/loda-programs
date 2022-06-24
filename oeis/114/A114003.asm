@@ -1,10 +1,9 @@
 ; A114003: Rows sums of triangle A114002.
-; Submitted by [AF] Kalianthys
+; Submitted by PDW
 ; 1,3,3,5,3,7,3,7,5,7,3,11,3,7,7,9,3,11,3,11,7,7,3,15,5,7,7,11,3,15,3,11,7,7,7,17,3,7,7,15,3,15,3,11,11,7,3,19,5,11,7,11,3,15,7,15,7,7,3,23,3,7,11,13,7,15,3,11,7,15,3,23,3,7,11,11,7,15,3,19,9,7,3,23,7,7,7,15,3,23,7,11,7,7,7,23,3,11,11,17
 
 add $0,1
-mov $1,$0
-seq $1,145154 ; Coefficients in expansion of Eisenstein series E_1.
-mov $0,$1
-sub $0,2
+seq $0,145154 ; Coefficients in expansion of Eisenstein series E_1.
+sub $0,4
 div $0,2
+add $0,1

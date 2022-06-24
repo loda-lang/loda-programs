@@ -46,10 +46,12 @@ A046152: a(n) = n*phi(n) + 1.
 A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
 A049001: a(n) = prime(n)^2 - 2.
 A049234: Number of divisors of prime(n) + 2.
+A049559: a(n) = gcd(n - 1, phi(n)).
 A051674: a(n) = prime(n)^prime(n).
 A052147: a(n) = prime(n) + 2.
 A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
+A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
 A061725: p^2 + 2 where p is a prime.
 A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062727: Sum of the divisors of n^n (A000312).
@@ -95,6 +97,7 @@ A109722: Sum of first 2n primes.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
+A125137: a(n) = p^p + 1, where p = prime(n).
 A129069: Numbers n such that (n-3)/2 is prime.
 A129070: Numbers n such that (n-5)/4 is prime.
 A129071: Numbers n such that (n-7)/6 is prime.

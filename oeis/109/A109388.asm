@@ -4,18 +4,18 @@
 
 add $0,1
 mov $2,1
-mov $3,$0
 mov $4,1
-mov $5,1
+mov $1,1
+mov $3,$0
 lpb $3
   mul $2,$3
   div $2,$4
   sub $3,1
   max $3,1
   add $4,1
-  mul $5,2
-  trn $5,$2
-  add $5,$2
+  mul $1,2
+  trn $1,$2
+  add $1,$2
 lpe
-mov $0,$5
+mov $0,$1
 mul $0,2

@@ -3,8 +3,8 @@
 
 lpb $0
   sub $0,1
-  sub $2,4
-  add $0,$2
+  sub $1,4
+  add $0,$1
 lpe
 mod $0,2
 add $0,1

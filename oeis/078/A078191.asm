@@ -1,19 +1,18 @@
 ; A078191: a(n) = concatenation of n n times divided by n.
-; Submitted by Joe
+; Submitted by Jason Jung
 ; 1,11,111,1111,11111,111111,1111111,11111111,111111111,1010101010101010101,101010101010101010101,10101010101010101010101,1010101010101010101010101,101010101010101010101010101
 
 add $0,1
-mov $2,1
-mov $4,$0
+sub $2,$0
+mov $3,$0
 lpb $0
   add $2,$3
   lpb $2
     div $2,10
     mul $1,10
-    bin $3,$2
   lpe
-  add $1,$3
+  add $1,2
   sub $0,1
-  mul $3,$4
 lpe
 mov $0,$1
+div $0,2

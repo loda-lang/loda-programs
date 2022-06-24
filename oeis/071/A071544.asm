@@ -11,9 +11,9 @@ lpb $3
   lpb $1
     mov $2,$0
     mod $2,$4
-    sub $4,$0
     cmp $2,0
     add $3,$1
+    sub $4,$0
     sub $1,$2
   lpe
   add $1,1

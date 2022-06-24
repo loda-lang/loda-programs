@@ -9,8 +9,8 @@ lpb $0
   add $1,$3
   mod $1,2
   add $2,$3
-  add $3,$2
   add $4,$1
+  add $3,$2
   add $3,$4
   sub $3,3
 lpe
