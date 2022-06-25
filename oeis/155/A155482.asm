@@ -5,8 +5,8 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   add $0,$5
   trn $0,1
   seq $0,4601 ; Expansion of Pi in base 2 (or, binary expansion of Pi).

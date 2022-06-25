@@ -11,10 +11,10 @@ div $1,$0
 mul $3,$0
 mov $4,$5
 div $4,2
-mul $1,$4
-sub $1,$5
 mov $2,$3
 mul $2,2
+mul $1,$4
+sub $1,$5
 add $1,$2
 mov $0,$1
 mul $0,4

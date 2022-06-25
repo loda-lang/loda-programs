@@ -12,7 +12,7 @@ lpb $0
   dif $3,$0
   cmp $3,$2
   lpb $3,$0
-    sub $0,1
     cmp $3,0
+    sub $0,1
   lpe
 lpe

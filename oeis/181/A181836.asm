@@ -4,6 +4,7 @@
 
 mov $1,$0
 seq $1,195859 ; n^8-n
+trn $0,2
 seq $0,121566 ; a(n) is the denominator of Sum_{i=1..n} i!/(i^2).
 gcd $1,$0
 div $0,$1

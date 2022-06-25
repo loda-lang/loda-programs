@@ -3,4 +3,4 @@
 
 seq $0,40 ; The prime numbers.
 trn $0,4
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

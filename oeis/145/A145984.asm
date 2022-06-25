@@ -8,8 +8,8 @@ bin $1,$0
 mul $1,32
 lpb $0
   mul $1,$0
-  sub $0,1
   div $1,2
+  sub $0,1
 lpe
 div $1,32
 mov $0,$1

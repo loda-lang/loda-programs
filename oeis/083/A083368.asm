@@ -5,7 +5,7 @@
 lpb $0
   seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
   sub $0,1
-  add $2,1
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

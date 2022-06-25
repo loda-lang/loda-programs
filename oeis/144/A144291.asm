@@ -6,7 +6,7 @@ seq $0,171153 ; Numbers that are not in A169606.
 lpb $0
   mov $1,3
   add $1,$0
-  mov $0,5
   bin $1,2
+  mov $0,5
 lpe
 mov $0,$1

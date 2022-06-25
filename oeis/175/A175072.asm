@@ -1,7 +1,8 @@
 ; A175072: Natural numbers m with result 2 under iterations of {r mod (max prime p < r)} starting at r = m.
-; Submitted by Cruncher Pete
+; Submitted by GolfSierra
 ; 2,5,7,9,13,15,19,21,25,28,31,33,36,39,43,45,49,52,55,58,61,63,66,69,73,75,78,81,85,88,91,94,96,99,103,105,109,111,115,118,120,122,126,129,133,136,139,141,144,146,148,151
 
+mov $4,1
 mov $2,$0
 add $2,2
 pow $2,2

@@ -5,18 +5,18 @@
 mov $3,$0
 mov $4,$0
 lpb $4
-  mov $0,$3
   sub $4,1
+  mov $0,$3
   sub $0,$4
   mov $1,1
   add $1,$0
   add $0,1
   seq $0,132894 ; Number of (1,0) steps in all paths of length n with steps U=(1,1), D=(1,-1) and H=(1,0), starting at (0,0), staying weakly above the x-axis (i.e., in all length-n left factors of Motzkin paths).
   mov $2,$0
-  mul $0,91
   gcd $2,$1
-  mul $1,$0
   pow $2,2
+  mul $0,91
+  mul $1,$0
   div $1,$2
 lpe
 mov $0,$1

@@ -3,6 +3,6 @@
 
 seq $0,52648 ; Expansion of e.g.f. 5*x/(1-x).
 mul $0,2
-mov $2,$0
-cmp $2,0
-add $0,$2
+mov $1,$0
+cmp $1,0
+add $0,$1

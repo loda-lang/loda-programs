@@ -1,5 +1,5 @@
 ; A090967: Given the sequence of the sums of the divisors of the semiprimes, this is the subsequence where each sum is an even number.
-; Submitted by PDW
+; Submitted by nenym
 ; 4,6,8,10,10,14,12,16,14,20,16,22,18,26,18,22,32,20,34,24,40,28,24,22,44,46,26,50,24,34,36,56,30,26,62,64,42,28,70,36,46,30,74,48,38,76,30,52,82,32,86,34,44,58,92,48,34,100,64,36,50,104,66,106
 
 mov $2,7260
@@ -20,7 +20,3 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-sub $0,4
-div $0,2
-add $0,2
-mul $0,2

@@ -1,8 +1,8 @@
 ; A059426: First differences of A026273.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Bill F
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1
 
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-lpb $0
-  mov $0,2
-lpe
+seq $0,113324 ; Inverse integer permutation of A113321.
+add $0,1
+mod $0,2
+add $0,1

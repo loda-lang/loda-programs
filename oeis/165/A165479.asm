@@ -5,18 +5,18 @@ mov $4,$0
 mov $9,$0
 add $9,1
 lpb $9
-  mov $0,$4
   sub $9,1
-  sub $0,$9
   mov $2,2
+  mov $0,$4
+  sub $0,$9
   lpb $0
     sub $0,1
     gcd $0,2
     mov $5,$0
+    pow $5,$0
+    mov $6,$0
     trn $0,7
     mul $2,2
-    mov $6,$5
-    pow $5,$5
     add $7,1
     gcd $7,3
     seq $8,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).

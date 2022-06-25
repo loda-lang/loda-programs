@@ -1,17 +1,15 @@
 ; A137827: Prime powers (A246655) congruent to 1 (mod 3).
-; Submitted by Jamie Morken(w1)
+; Submitted by GolfSierra
 ; 4,7,13,16,19,25,31,37,43,49,61,64,67,73,79,97,103,109,121,127,139,151,157,163,169,181,193,199,211,223,229,241,256,271,277,283,289,307,313,331,337,343,349,361,367,373,379,397,409,421,433,439,457,463,487,499
 
 mov $2,$0
-add $2,$0
-pow $2,2
+pow $2,4
 lpb $2
   sub $2,1
+  add $1,3
   mov $3,$1
-  add $3,3
   seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   sub $0,$3
-  add $1,3
   sub $2,$0
 lpe
 mov $0,$1

@@ -1,34 +1,13 @@
 ; A140462: Turan's upper bound on the number of triangles of a simplicial complex of dimension two for which every minimal non-face has three vertices.
-; Submitted by Landjunge
+; Submitted by Simon Strandgaard
 ; 0,0,0,1,3,7,14,23,36,54,75,102,136,174,220,275,335,405,486,573,672,784,903,1036,1184,1340,1512,1701,1899,2115,2350,2595,2860,3146,3443,3762,4104,4458,4836,5239,5655,6097,6566,7049,7560,8100,8655,9240,9856,10488,11152,11849,12563,13311,14094,14895,15732,16606,17499,18430,19400,20390,21420,22491,23583,24717,25894,27093,28336,29624,30935,32292,33696,35124,36600,38125,39675,41275,42926,44603,46332,48114,49923,51786,53704,55650,57652,59711,61799,63945,66150,68385,70680,73036,75423,77872,80384,82928
 
-mov $6,$0
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$6
-  sub $0,$1
-  mov $3,$0
-  mov $5,$0
-  lpb $5
-    sub $5,1
-    mov $0,$3
-    sub $0,$5
-    mov $2,$0
-    mul $2,4
-    sub $2,3
-    mul $0,2
-    mov $7,$0
-    sub $7,2
-    div $7,3
-    lpb $0
-      div $2,3
-      mul $7,2
-      add $0,$7
-      sub $0,$2
-    lpe
-    add $4,$7
-  lpe
+mul $0,2
+lpb $0
+  sub $0,6
+  mov $2,$0
+  max $2,0
+  seq $2,23054 ; Simon Plouffe's conjectured extension of sequence A008368.
+  add $1,$2
 lpe
-mov $0,$4
-div $0,2
+mov $0,$1

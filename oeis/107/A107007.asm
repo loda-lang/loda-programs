@@ -5,8 +5,8 @@
 lpb $0
   trn $0,1
   mov $1,$0
-  mov $0,0
   seq $1,168539 ; Terms of A123239 which are prime in Z(i), Z(rho) and Z(sqrt(2)).
+  mov $0,0
 lpe
 div $1,4
 mov $0,$1

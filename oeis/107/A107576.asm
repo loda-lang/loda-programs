@@ -1,20 +1,8 @@
 ; A107576: a(n)=perimeter of n-th triangle listed at A107572.
-; Submitted by Simon Strandgaard
+; Submitted by [DPC] hansR
 ; 9,11,12,13,13,14,15,15,15,16,16,17,17,17,17,18,18,18,19,19,19,19,19,20,20,20,20,21,21,21,21,21,21,21,22,22,22,22,22,23,23,23,23,23,23,23,23,24,24,24,24,24,24,24,25,25,25,25,25,25,25,25,25,25,26,26,26,26,26,26
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  add $1,1
-  mov $3,$1
-  seq $3,5044 ; Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
+mov $1,$0
+seq $1,70083 ; Perimeters of integer triangles, sorted by perimeter, sides lexicographically ordered.
 mov $0,$1
-add $0,7
+add $0,6

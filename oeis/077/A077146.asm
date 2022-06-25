@@ -1,5 +1,5 @@
 ; A077146: Floor[ concatenation of next (n+1) numbers / concatenation of next n numbers].
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Ciceronian
 ; 23,19,173,14093,145,137,131,127,124,121,119,117,116453592,11416794012,1141,1132,1124,1116,1110,1104,1099,1094,1090,1086,1083,1079,1076,1073,1071,1068,1066,1064,1062,1060,1058,1057
 
 mov $4,$0
@@ -16,6 +16,5 @@ lpb $3
   mul $4,$3
   mov $5,$0
 lpe
-mov $3,$5
-div $1,$3
+div $1,$0
 mov $0,$1

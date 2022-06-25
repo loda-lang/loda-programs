@@ -4,8 +4,8 @@
 
 lpb $0
   mov $1,$0
-  sub $0,1
   seq $1,140756 ; Count up to k sequence with alternating signs (k always positive).
+  sub $0,1
   add $2,$1
 lpe
 mov $0,$2
