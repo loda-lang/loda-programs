@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,226804 ; Expansion of 1/((1-3x)(1-9x)(1-27x)(1-81x)).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -7,15 +7,15 @@ mov $2,1
 mov $3,$0
 mul $3,5
 lpb $3
-  mul $2,$3
   mov $5,$3
   mul $5,2
   add $5,1
+  mul $2,$3
   mul $2,$5
-  add $1,$2
   mov $4,$0
   cmp $4,0
   add $0,$4
+  add $1,$2
   div $1,$0
   div $2,$0
   sub $0,53

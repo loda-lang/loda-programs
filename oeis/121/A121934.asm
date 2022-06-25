@@ -1,6 +1,8 @@
 ; A121934: Smallest positive number m such that m == i (mod i+1) for all 1<=i<=n.
-; Submitted by Simon Strandgaard
+; Submitted by misaki@med
 ; 1,1,5,11,59,59,419,839,2519,2519,27719,27719,360359,360359,360359,720719,12252239,12252239,232792559,232792559,232792559,232792559,5354228879,5354228879,26771144399,26771144399,80313433199,80313433199
 
-seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
-max $0,1
+seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
+sub $0,3
+div $0,2
+add $0,1

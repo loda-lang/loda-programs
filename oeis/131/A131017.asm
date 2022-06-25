@@ -7,6 +7,6 @@ lpb $0
   mov $2,2
 lpe
 gcd $0,2
-mov $3,$2
-div $3,$0
-sub $0,$3
+mov $1,$2
+div $1,$0
+sub $0,$1

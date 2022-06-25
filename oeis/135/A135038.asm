@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,1505 ; a(n) = (4n+1)(4n+2)(4n+3).
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

@@ -1,4 +1,5 @@
 ; A106197: Analog of A094091 for S=4.
+; Submitted by Groo
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0
 
 pow $0,2
@@ -13,7 +14,6 @@ lpb $2
     trn $0,7
   lpe
   mov $2,$0
-  trn $0,9
 lpe
 lpb $4
   dif $4,6

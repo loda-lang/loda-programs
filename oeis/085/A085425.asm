@@ -3,13 +3,13 @@
 
 add $0,1
 mov $1,2
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
   lpb $4
-    add $1,1
     add $4,1
     dif $4,4
+    add $1,1
   lpe
   cmp $2,4
   cmp $2,0

@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,1
 mov $3,1
-mov $8,$0
 mov $9,1
+mov $8,$0
 lpb $8
   mov $5,$2
   lpb $5
@@ -25,10 +25,10 @@ lpb $8
   mod $5,$4
   sub $0,$5
   div $5,$3
-  mov $3,$4
   mov $7,$2
   pow $7,$5
   mul $1,$7
+  mov $3,$4
   mov $7,$0
   cmp $7,0
   sub $8,$9

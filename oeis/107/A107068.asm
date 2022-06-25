@@ -10,12 +10,12 @@ lpb $0
   mov $1,$4
   sub $1,1
   mov $4,$2
+  sub $4,$1
   mov $2,$3
   mov $3,$5
   sub $3,$2
-  add $2,1
-  sub $4,$1
   sub $1,$5
+  add $2,1
 lpe
 sub $1,$3
 mov $0,$1

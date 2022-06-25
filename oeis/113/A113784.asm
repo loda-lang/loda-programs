@@ -1,5 +1,5 @@
 ; A113784: Difference between semiprime(n) and semiprime(n+2).
-; Submitted by Jon Maiga
+; Submitted by [AF>Occitania]franky82
 ; 5,4,5,5,7,7,4,4,8,8,2,4,4,8,10,5,6,6,3,5,7,7,9,8,8,8,4,2,5,6,3,2,12,16,9,7,4,3,3,2,7,10,5,8,8,2,3,3,10,12,4,3,7,8,11,9,6,7,4,9,14,8,2,3,3,4,7,5,2,3,3,2,3,7,14,11,12,12,6,5,6,8,6,5,9,11,13,11,4,6,7,4,3,3,2,3,6,9
 
 mov $3,2
@@ -18,7 +18,6 @@ lpb $3
     seq $2,118717 ; Sum of two consecutive semiprimes.
     mov $3,0
     mov $4,$2
-    add $4,10
     mov $6,$7
     mul $6,$2
     mul $0,$7
@@ -30,4 +29,4 @@ lpb $3
   sub $4,$5
 lpe
 mov $0,$4
-sub $0,4
+sub $0,14

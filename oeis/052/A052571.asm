@@ -3,11 +3,10 @@
 
 add $0,1
 trn $0,3
-mov $2,$0
+mov $1,$0
 add $0,2
-mov $3,$2
 lpb $0
-  mul $3,$0
+  mul $1,$0
   sub $0,1
 lpe
-mov $0,$3
+mov $0,$1

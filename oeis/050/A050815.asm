@@ -4,8 +4,8 @@
 
 mov $2,$0
 lpb $0
-  mov $0,$2
   sub $1,1
+  mov $0,$2
   add $0,$1
   add $0,1
   seq $0,105564 ; Number of blocks of exactly 4 Fibonacci numbers having equal length <= n.

@@ -6,8 +6,8 @@ add $0,1
 seq $0,8952 ; Leading digit of 2^n.
 lpb $0
   trn $0,9
-  mov $1,5
   add $0,1
+  mov $1,5
 lpe
 mov $0,$1
 add $0,1

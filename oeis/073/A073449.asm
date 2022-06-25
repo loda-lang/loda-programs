@@ -6,9 +6,9 @@ add $0,1
 mov $3,$0
 mul $3,5
 lpb $3
-  add $2,988
   mov $4,$3
   cmp $4,0
+  add $2,988
   add $3,$4
   div $1,$3
   add $1,$2

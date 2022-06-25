@@ -1,15 +1,13 @@
 ; A037743: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 2,1,3,0.
-; Submitted by Jon Maiga
+; Submitted by PDW
 ; 2,21,213,2130,21302,213021,2130213,21302130,213021302,2130213021,21302130213,213021302130,2130213021302,21302130213021,213021302130213,2130213021302130,21302130213021302,213021302130213021,2130213021302130213,21302130213021302130
 
 mov $2,2
 lpb $0
   sub $0,1
-  sub $2,1
   add $1,$2
-  add $1,1
   mul $1,10
-  add $2,14
+  add $2,13
   bin $2,2
   mod $2,4
 lpe

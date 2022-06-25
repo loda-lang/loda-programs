@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   add $2,2
   seq $2,114 ; Number of cusps of principal congruence subgroup GAMMA^{hat}(n).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

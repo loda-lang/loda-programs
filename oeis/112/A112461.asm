@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,27804 ; a(n) = 14*(n+1)*binomial(n+4,8).
   sub $0,1
-  seq $2,27804 ; a(n) = 14*(n+1)*C(n+4,8).
   add $1,$2
 lpe
 div $1,14

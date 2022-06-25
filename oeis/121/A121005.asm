@@ -5,8 +5,8 @@
 mov $1,$0
 add $1,2
 mov $2,$0
-mov $0,5
 mul $2,3
+mov $0,5
 pow $0,$2
 gcd $1,$0
 div $0,$1

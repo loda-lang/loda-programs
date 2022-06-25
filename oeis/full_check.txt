@@ -65,6 +65,7 @@ A187975: Positions of 1 in the zero-one sequence given by s(n)=[nr+5r]-[nr]-[5r]
 A188039: Positions of 0 in A188038; complement of A188040.
 A189364: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=(1+sqrt(5))/2.
 A189458: a(n) = n+[nr/s]+[nt/s]; r=2, s=sqrt(2), t=1+sqrt(2).
+A189463: a(n) = [3*n*r] - 3*[n*r], where r=sqrt(5).
 A190080: a(n) = n + [n*r/s] + [n*t/s]; r=1, s=cos(Pi/5), t=sec(Pi/5).
 A190236: a(n) = [n*u + n*v] -[n*u] -[n*v], where u=1/2, v=(1+sqrt(5))/2, and []=floor.
 A190430: Positions of 2 in A190427.
@@ -79,6 +80,7 @@ A225687: a(n) = A030124(n) - n.
 A226123: Number of terms of the form 2^k in Collatz(3x+1) trajectory of n.
 A238248: Numbers m such that A072219(m) = 7.
 A244217: Numbers n less than twice the largest Catalan number that is less than or equal to n.
+A244339: Expansion of (-2 * a(q) + 3*a(q^2) + 2*a(q^4)) / 3 in powers of q where a() is a cubic AGM theta function.
 A259599: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,1) and midword sequence (a(n)); see Comments.
 A260188: Greatest primorial less than or equal to n.
 A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.
@@ -91,6 +93,7 @@ A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
 A283766: Numbers k such that L(k) is odd, where L = A000201 = lower Wythoff sequence.
 A283767: Numbers k such that U(k) is even, where U = A001950 = upper Wythoff sequence.
+A283768: Numbers k such that U(k) is odd, where U = A001950 = upper Wythoff sequence.
 A283769: Numbers k such that L(k) = 0 mod 3, where L = A000201 = lower Wythoff sequence.
 A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff sequence.
 A284396: Positions of 2 in A284394.
