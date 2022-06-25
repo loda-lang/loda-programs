@@ -1,22 +1,22 @@
 ; A001622: Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2.
-; Submitted by Simon Strandgaard
+; Submitted by PDW
 ; 1,6,1,8,0,3,3,9,8,8,7,4,9,8,9,4,8,4,8,2,0,4,5,8,6,8,3,4,3,6,5,6,3,8,1,1,7,7,2,0,3,0,9,1,7,9,8,0,5,7,6,2,8,6,2,1,3,5,4,4,8,6,2,2,7,0,5,2,6,0,4,6,2,8,1,8,9,0,2,4,4,9,7,0,7,2,0,7,2,0,4,1,8,9,3,9,1,1,3,7
 
 mov $1,1
 mov $3,$0
-mul $3,3
+mul $3,5
 lpb $3
   sub $3,1
-  add $1,$0
   add $1,$2
   add $2,$1
-  mul $2,2
-  mul $1,2
+  add $2,45
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-add $2,1
+mov $5,$2
+cmp $5,0
+add $2,$5
 div $1,$2
 mov $0,$1
 mod $0,10

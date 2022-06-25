@@ -9,8 +9,8 @@ lpb $0
   sub $2,$0
 lpe
 bin $1,$0
-mov $0,2
 div $2,$1
+mov $0,2
 pow $0,$2
 mul $1,$0
 sub $1,$2

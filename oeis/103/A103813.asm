@@ -4,8 +4,8 @@
 
 lpb $0
   mov $1,$0
-  sub $0,1
   seq $1,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
+  sub $0,1
   add $2,$1
 lpe
 mov $0,$2

@@ -15,10 +15,10 @@ lpb $2
   sub $0,$3
   add $1,49
   mov $3,$1
-  add $1,4
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,4
   mul $2,$4
 lpe
 mov $0,$1

@@ -3,10 +3,10 @@
 
 mov $2,13
 lpb $2
-  seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
-  add $3,6
-  add $0,$3
-  add $0,9
   div $2,8
+  add $1,6
+  seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
+  add $0,$1
+  add $0,9
 lpe
 mod $0,11

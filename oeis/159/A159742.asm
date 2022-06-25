@@ -4,8 +4,8 @@
 add $0,2
 mov $1,3
 add $1,$0
-cmp $0,2
 mov $2,2
 pow $2,$1
-add $0,$2
+cmp $0,2
 sub $0,20
+add $0,$2

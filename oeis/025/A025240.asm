@@ -6,23 +6,23 @@ mov $1,2
 mov $4,$0
 mov $5,$0
 lpb $5
-  mov $0,$4
   sub $5,1
+  mov $0,$4
   sub $0,$5
   mov $1,1
   mov $2,1
   mov $3,$0
   lpb $3
+    add $3,1
     mul $1,$0
     mul $1,2
-    add $3,1
     mul $2,$3
     sub $3,1
     mul $2,$3
-    add $1,$2
     sub $3,1
     max $3,1
     add $0,$3
+    add $1,$2
   lpe
   mul $1,$0
   div $1,$2

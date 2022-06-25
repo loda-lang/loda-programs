@@ -1,8 +1,6 @@
 ; A176570: a(n)=n-th semiprime if n-th semiprime odd and n-th semiprime/2 if n-th semiprime even.
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,3,9,5,7,15,21,11,25,13,33,17,35,19,39,23,49,51,55,57,29,31,65,69,37,77,41,85,43,87,91,93,47,95,53,111,115,59,119,121,61,123,129,133,67,141,71,143,145,73,155,79,159,161,83,169,177,89,183,185,187,97,201,101,203,205,103,209,213,107,215,217,109,219,221,113,235,237,247,249,253,127,259,131,265,267,137,139,287,289,291,295,149,299,301,151,303,305,309,157
 
 seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
-mov $1,$0
-dif $1,2
-mov $0,$1
+dif $0,2

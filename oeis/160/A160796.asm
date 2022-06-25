@@ -7,6 +7,6 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,160797 ; First differences of A160796.
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

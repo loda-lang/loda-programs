@@ -25,6 +25,7 @@ A033633: Primes modulo 19.
 A035116: a(n) = tau(n)^2, where tau(n) = A000005(n).
 A037168: a(n) = 2*prime(n) - 2.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
+A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
 A038500: Highest power of 3 dividing n.
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
@@ -47,6 +48,7 @@ A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
 A049001: a(n) = prime(n)^2 - 2.
 A049234: Number of divisors of prime(n) + 2.
 A049559: a(n) = gcd(n - 1, phi(n)).
+A051456: (Terms in A029625)/2.
 A051674: a(n) = prime(n)^prime(n).
 A052147: a(n) = prime(n) + 2.
 A060429: a(n) = 4*prime(n)^2+1.
@@ -138,6 +140,7 @@ A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the larges
 A166010: a(n) = prime(n)^2-4.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
 A172282: Squares of Bernoulli number denominators A027642.
+A174429: Collatz-Fibonacci numbers: a(1) = a(2) = 1; if n > 2, a(n) = a(C(n)) + a(C(C(n))), where  C(n) = A006370(n).
 A175221: a(n) = prime(n) + 4.
 A175222: a(n) = prime(n) + 5.
 A175223: a(n) = prime(n) + 7.

@@ -3,9 +3,9 @@
 
 mov $2,$0
 seq $0,186813 ; a(n) = n if n odd, a(2n) = 3n if n odd, a(4n) = 2n.
-mov $4,$0
-cmp $4,0
-add $0,$4
+mov $1,$0
+cmp $1,0
 mov $3,$2
 mul $3,4
+add $0,$1
 add $0,$3

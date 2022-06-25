@@ -7,6 +7,6 @@ seq $0,131713 ; Period 3: repeat [1, -2, 1].
 add $1,1
 div $1,2
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe

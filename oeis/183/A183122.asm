@@ -8,8 +8,8 @@ lpb $0
   max $2,1
   mul $3,2
   mov $4,$2
-  add $2,$3
   add $5,2
+  add $2,$3
   add $2,$5
   sub $3,$1
   mod $1,2

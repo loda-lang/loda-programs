@@ -1,20 +1,6 @@
 ; A037778: Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 3,1,0,2.
-; Submitted by Jon Maiga
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,31,310,3102,31023,310231,3102310,31023102,310231023,3102310231,31023102310,310231023102,3102310231023,31023102310231,310231023102310,3102310231023102,31023102310231023,310231023102310231,3102310231023102310,31023102310231023102
 
-mov $2,3
-add $0,1
-lpb $0
-  mov $3,$2
-  lpb $3
-    mod $3,5
-    sub $3,1
-    add $1,1
-    add $2,2
-  lpe
-  add $2,2
-  sub $0,1
-  mul $1,10
-lpe
-mov $0,$1
-div $0,10
+seq $0,37776 ; Base 8 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0,2.
+seq $0,7094 ; Numbers in base 8.

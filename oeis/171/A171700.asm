@@ -9,11 +9,11 @@ lpb $0
   sub $2,$0
 lpe
 bin $1,$0
-mov $0,2
 mov $3,$2
-div $2,2
-pow $0,$2
 mod $3,2
+div $2,2
+mov $0,2
+pow $0,$2
 mul $1,$3
 mul $1,$0
 mov $0,$1

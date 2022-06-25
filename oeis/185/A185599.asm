@@ -5,5 +5,5 @@
 add $0,2
 mov $1,$0
 seq $0,185597 ; a(n) = floor(n^(3/2) - n^(1/2)); complement of A185598.
-sub $0,$1
 sub $0,1
+sub $0,$1

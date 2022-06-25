@@ -5,8 +5,8 @@
 mov $2,$0
 seq $0,278990 ; Number of loopless linear chord diagrams with n chords.
 lpb $2
-  mul $0,$2
   sub $1,1
+  mul $0,$2
   div $0,$1
   sub $2,1
 lpe

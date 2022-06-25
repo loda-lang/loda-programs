@@ -1,14 +1,13 @@
 ; A048162: Expansion of (1 - x + 3*x^3 - 2*x^4 - 3*x^5)/(1 - 2*x + x^3).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,2,6,9,13,20,31,49,78,125,201,324,523,845,1366,2209,3573,5780,9351,15129,24478,39605,64081,103684,167763,271445,439206,710649,1149853,1860500,3010351,4870849,7881198,12752045,20633241,33385284
 
+trn $0,1
 lpb $0
-  add $0,$3
-  mov $2,$1
-  seq $2,169985 ; Round phi^n to the nearest integer.
-  add $1,$0
-  sub $0,2
-  add $3,$2
+  mov $1,$0
+  seq $1,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+  mov $0,1
 lpe
-mov $0,$3
+add $1,$0
+mov $0,$1
 add $0,1

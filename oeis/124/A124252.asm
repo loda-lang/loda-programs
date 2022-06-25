@@ -1,6 +1,26 @@
 ; A124252: 10 times A007623.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by STE\/E
 ; 0,10,100,110,200,210,1000,1010,1100,1110,1200,1210,2000,2010,2100,2110,2200,2210,3000,3010,3100,3110,3200,3210,10000,10010,10100,10110,10200,10210,11000,11010,11100,11110,11200,11210,12000,12010,12100,12110,12200
 
-seq $0,72001 ; Variant of the factorial base representation of n.
+mov $1,1
+mov $3,1
+add $0,1
+lpb $0
+  lpb $3
+    add $4,1
+    mov $2,2
+    sub $3,$4
+  lpe
+  mov $5,1
+  sub $0,1
+  lpb $0
+    dif $0,$2
+    add $2,1
+    mul $5,10
+  lpe
+  add $6,$1
+  mul $1,$5
+lpe
+mov $0,$6
 sub $0,1
+mul $0,10

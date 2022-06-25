@@ -1,12 +1,13 @@
 ; A173226: Partial sums of A000364.
-; Submitted by SP7LX
+; Submitted by LCB001
 ; 1,2,7,68,1453,51974,2754739,202115720,19593627865,2424473303306,372795661540831,69721670054678732,15584255833611765637,4102656765126735657998,1256362298168756601126283
 
 lpb $0
   mov $2,$0
-  seq $2,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  seq $2,11248 ; Twice A000364.
   sub $0,1
   add $1,$2
 lpe
+div $1,2
 add $1,1
 mov $0,$1
