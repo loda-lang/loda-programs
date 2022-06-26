@@ -7,10 +7,10 @@ lpb $4
   lpb $0
     trn $2,4
     trn $3,$0
-    mov $0,$2
-    sub $4,$3
-    mov $3,2
     sub $4,2
+    sub $4,$3
+    mov $0,$2
+    mov $3,2
   lpe
   add $1,1
   trn $4,5

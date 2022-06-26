@@ -1,9 +1,9 @@
 ; A122198: Permutation of natural numbers: a recursed variant of A122155.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 0,1,2,3,4,7,6,5,8,15,14,13,12,9,10,11,16,31,30,29,28,25,26,27,24,17,18,19,20,23,22,21,32,63,62,61,60,57,58,59,56,49,50,51,52,55,54,53,48,33,34,35,36,39,38,37,40,47,46,45,44,41,42,43,64,127,126,125,124,121
 
-mov $2,2
-mul $0,4
+mov $2,1
+mul $0,2
 lpb $0
   div $0,2
   mod $3,$2
@@ -17,4 +17,4 @@ lpb $0
   add $1,$3
 lpe
 mov $0,$1
-div $0,8
+div $0,2

@@ -5,8 +5,8 @@ mov $1,$0
 mul $0,2
 trn $0,2
 lpb $1
+  mov $1,1
   mod $0,3
   mul $0,5
-  mov $1,1
 lpe
 mod $0,6

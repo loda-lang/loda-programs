@@ -1,7 +1,10 @@
 ; A088816: Numbers of the form p^p - 2 where p is prime.
-; Submitted by Christian Krause
+; Submitted by Gunnar Hjern
 ; 2,25,3123,823541,285311670609,302875106592251,827240261886336764175,1978419655660313589123977,20880467999847912034355032910565,2567686153161211134561828214731016126483467
 
-seq $0,40 ; The prime numbers.
-pow $0,$0
+add $0,1
+seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
+mov $1,$0
+pow $1,$0
+mov $0,$1
 sub $0,2

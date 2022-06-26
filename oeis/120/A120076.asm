@@ -16,7 +16,6 @@ lpb $3
   add $1,$2
   sub $3,1
 lpe
-mul $1,$0
 gcd $2,$1
 div $1,$2
 mov $0,$1

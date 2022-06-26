@@ -1,5 +1,5 @@
 ; A018468: Divisors of 462.
-; Submitted by PDW
+; Submitted by Arkhenia
 ; 1,2,3,6,7,11,14,21,22,33,42,66,77,154,231,462
 
 mov $2,1815
@@ -20,6 +20,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-sub $0,2
 div $0,2
-add $0,1

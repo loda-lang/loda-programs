@@ -5,9 +5,9 @@
 mul $0,2
 add $0,1
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,89 ; Number of solutions to x^2 + 1 == 0 (mod n).
   mov $0,1
-  seq $2,89 ; Number of solutions to x^2 + 1 == 0 (mod n).
 lpe
-mov $0,$2
+mov $0,$1
 div $0,2

@@ -1,16 +1,11 @@
 ; A046992: a(n) = Sum_{k=1..n} pi(k) (cf. A000720).
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,1,3,5,8,11,15,19,23,27,32,37,43,49,55,61,68,75,83,91,99,107,116,125,134,143,152,161,171,181,192,203,214,225,236,247,259,271,283,295,308,321,335,349,363,377,392,407,422,437,452,467,483,499,515,531,547,563,580,597,615,633,651,669,687,705,724,743,762,781,801,821,842,863,884,905,926,947,969,991,1013,1035,1058,1081,1104,1127,1150,1173,1197,1221,1245,1269,1293,1317,1341,1365,1390,1415,1440,1465
 
-mov $3,$0
-lpb $3
-  sub $3,1
-  sub $0,$3
+lpb $0
   mov $2,$0
-  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $0,$3
-  add $1,$4
+  seq $2,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+  sub $0,1
   add $1,$2
-  add $4,$2
 lpe
 mov $0,$1
