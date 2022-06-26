@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,15919 ; Positive integers n such that 2^n == 2 (mod n).
+  seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
   add $3,$0
 lpe
 mov $0,$3

@@ -1,29 +1,6 @@
 ; A023836: Sum of exponents in prime-power factorization of C(4n,2n-2).
-; Submitted by Christian Krause
+; Submitted by PDW
 ; 0,3,4,6,6,8,8,11,11,12,11,14,13,16,13,17,14,18,15,19,20,21,21,23,23,22,22,24,22,27,22,29,26,28,27,31,29,31,31,31,31,32,32,35,34,35,32,39,34,37,35,38,37,40,37,41,40,42,40,43,43,44,43,46,43,45,42,46,45,48,43,50,46,48,50,50,50,52,48,51,52,51,51,54,52,56,52,59,54,58,57,59,60,60,59,62,58,62,60,63
 
-add $0,1
-mov $1,$0
-add $1,$0
-add $1,2
-mul $0,4
-bin $0,$1
-mov $1,1
-mov $2,2
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    add $1,2
-  lpe
-lpe
-mov $0,$1
-div $0,2
+mul $0,2
+seq $0,23818 ; Sum of exponents in prime-power factorization of C(2n,n-2).

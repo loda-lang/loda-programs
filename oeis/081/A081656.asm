@@ -4,8 +4,8 @@
 
 mov $2,2
 pow $2,$0
-mov $3,6
-pow $3,$0
-mul $3,2
-sub $3,$2
-mov $0,$3
+mov $1,6
+pow $1,$0
+mul $1,2
+sub $1,$2
+mov $0,$1

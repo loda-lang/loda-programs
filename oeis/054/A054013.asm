@@ -11,7 +11,7 @@ lpb $0
   cmp $3,0
   mul $3,$0
   sub $0,1
-  add $4,$3
+  add $1,$3
 lpe
-mod $4,$2
-mov $0,$4
+mod $1,$2
+mov $0,$1
