@@ -9,10 +9,10 @@ lpb $0
   lpb $3
     add $0,1
     mul $2,$5
+    mov $1,$2
+    cmp $1,0
+    add $2,$1
     mov $4,$3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mod $4,$2
     add $2,1
     div $3,2

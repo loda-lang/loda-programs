@@ -4,9 +4,9 @@
 
 mov $1,3
 pow $1,$0
+mul $1,2
 add $0,2
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mul $1,2
 mov $2,$1
 sub $2,$0
 mov $0,$2

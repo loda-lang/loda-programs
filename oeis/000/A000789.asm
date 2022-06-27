@@ -1,5 +1,5 @@
 ; A000789: Maximal order of a triangle-free cyclic graph with no independent set of size n.
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 2,5,8,13,16,21,26,35,38,45,48
 
 mov $5,$0
@@ -19,8 +19,7 @@ lpb $6
       mod $4,$2
       trn $0,$2
       add $2,1
-      cmp $4,0
-      cmp $4,0
+      min $4,1
       sub $3,$4
     lpe
     div $0,$2

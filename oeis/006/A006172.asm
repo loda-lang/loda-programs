@@ -10,8 +10,8 @@ lpb $0
   add $1,$4
   add $4,1
   max $5,$1
-  add $1,1
   add $5,$2
+  add $1,1
   mov $2,$3
   add $2,$4
   sub $5,$4
