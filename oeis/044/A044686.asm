@@ -1,5 +1,5 @@
 ; A044686: Numbers n such that string 6,0 occurs in the base 9 representation of n but not of n+1.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 54,135,216,297,378,459,494,540,621,702,783,864,945,1026,1107,1188,1223,1269,1350,1431,1512,1593,1674,1755,1836,1917,1952,1998,2079,2160,2241,2322,2403,2484,2565,2646,2681,2727,2808
 
 mov $4,$0
@@ -8,14 +8,10 @@ add $2,4
 lpb $2
   add $3,$2
   add $5,$3
-  lpb $5
-    mov $5,1
-    sub $3,3
-  lpe
   cmp $1,$5
   add $1,5
   mov $2,0
-  sub $3,6
+  sub $3,9
   lpb $3
     mul $1,8
     add $2,$3

@@ -3,6 +3,6 @@
 
 add $0,1
 mov $1,$0
-add $0,1
 seq $1,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
+add $0,1
 mul $0,$1

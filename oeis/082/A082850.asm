@@ -1,6 +1,19 @@
 ; A082850: Let S(0) = {}, S(n) = {S(n-1), S(n-1), n}; sequence gives S(infinity).
+; Submitted by STE\/E
 ; 1,1,2,1,1,2,3,1,1,2,1,1,2,3,4,1,1,2,1,1,2,3,1,1,2,1,1,2,3,4,5,1,1,2,1,1,2,3,1,1,2,1,1,2,3,4,1,1,2,1,1,2,3,1,1,2,1,1,2,3,4,5,6,1,1,2,1,1,2,3,1,1,2,1,1,2,3,4,1,1,2,1,1,2,3,1,1,2,1,1,2,3,4,5,1,1,2,1,1,2
 
-seq $0,182105 ; Number of elements merged by bottom-up merge sort.
-sub $0,1
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+add $0,1
+mov $1,$0
+lpb $1
+  mov $2,1
+  mov $3,1
+  lpb $1
+    sub $1,$2
+    mul $2,2
+    add $3,81
+  lpe
+lpe
+mov $0,$3
+sub $0,82
+div $0,81
+add $0,1

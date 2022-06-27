@@ -1,8 +1,12 @@
 ; A065619: Expansion of e.g.f. x * (tan(x) + sec(x)).
-; Submitted by [DPC] hansR
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,8,25,96,427,2176,12465,79360,555731,4245504,35135945,313155584,2990414715,30460116992,329655706465,3777576173568,45692713833379,581777702256640,7777794952988025,108932957168730112,1595024111042171723,24370173276164456448
 
 mov $1,$0
-add $1,1
-seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-mul $0,$1
+mov $2,1
+add $2,$1
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+seq $1,122045 ; Euler (or secant) numbers E(n).
+gcd $1,$0
+mul $2,$1
+mov $0,$2

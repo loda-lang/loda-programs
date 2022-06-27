@@ -1,7 +1,14 @@
 ; A093122: Jacobsthal(n)*Fibonacci(n+1).
-; Submitted by Christian Krause
+; Submitted by Dingo
 ; 0,1,2,9,25,88,273,903,2890,9405,30349,98352,318045,1029587,3331210,10781001,34886465,112897544,365339961,1182271695,3825900650,12380892261,40065380357,129654340704,419570185125,1357757761723
 
+mov $1,2
 add $0,1
-seq $0,93045 ; 2*Jacobsthal(n-1)*Fibonacci(n).
+pow $1,$0
+dif $1,2
+add $1,1
+div $1,3
+mul $1,2
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mul $0,$1
 div $0,2
