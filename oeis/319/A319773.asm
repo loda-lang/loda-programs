@@ -1,7 +1,10 @@
 ; A319773: Number of non-isomorphic intersecting set systems of weight n whose dual is also an intersecting set system.
-; Submitted by Jamie Morken(w4)
+; Submitted by PDW
 ; 1,1,0,1,0,0,2,1,2,4,5
 
+lpb $0
+  sub $0,11
+lpe
 add $0,1
 seq $0,40 ; The prime numbers.
 add $0,1

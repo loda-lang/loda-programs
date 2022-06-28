@@ -4,10 +4,10 @@
 sub $0,1
 lpb $0
   sub $0,2
-  mov $2,$0
+  mov $1,$0
+  gcd $1,3
+  sub $1,2
   bin $0,3
-  gcd $2,3
-  sub $2,2
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

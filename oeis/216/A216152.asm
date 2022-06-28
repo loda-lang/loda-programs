@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,216153 ; The partial products of a(n) are the distinct values of the exponential of the von Mangoldt function modified by restricting the divisors to prime divisors (A205957).
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

@@ -1,8 +1,7 @@
 ; A174554: Smallest k > 2 such that 2|k, 3|k+1, 4|k+2,..., n|k+n-2.
-; Submitted by BarnardsStern
+; Submitted by Arkhenia
 ; 4,8,14,62,62,422,842,2522,2522,27722,27722,360362,360362,360362,720722,12252242,12252242,232792562,232792562,232792562,232792562,5354228882,5354228882,26771144402,26771144402,80313433202,80313433202
 
 add $0,1
-seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
-div $0,2
-add $0,2
+seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
+add $0,3

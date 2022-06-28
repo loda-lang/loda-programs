@@ -8,9 +8,9 @@ lpb $0
   add $3,$1
   add $1,$3
   sub $3,$4
-  mov $2,$3
   mul $4,-1
   add $5,$4
+  mov $2,$3
   mov $3,$5
   add $4,$1
   add $5,$2

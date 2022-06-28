@@ -3,9 +3,9 @@
 
 lpb $0
   add $1,$0
+  mod $1,2
   add $0,$2
   div $0,2
-  mod $1,2
   cmp $2,0
 lpe
 mov $0,$1

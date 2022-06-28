@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,330175 ; a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(5) - 2, s = sqrt(5) - 1, t = sqrt(5).
-sub $0,$1
 sub $0,1
+sub $0,$1

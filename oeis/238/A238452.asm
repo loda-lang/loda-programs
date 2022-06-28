@@ -7,9 +7,9 @@ lpb $0
   sub $0,1
   mov $2,$4
   bin $2,$0
-  trn $0,1
   mov $3,$4
   bin $3,$1
+  trn $0,1
   add $1,1
   mul $3,$2
   div $3,$1

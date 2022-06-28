@@ -7,10 +7,10 @@ lpb $0
   add $2,5
   bin $2,$0
   mov $3,$0
+  add $3,2
   sub $0,1
   add $1,$2
   cmp $2,$1
-  add $3,2
   add $1,$3
 lpe
 mov $0,$1

@@ -6,9 +6,9 @@ sub $0,1
 lpb $2
   add $0,$2
   mov $1,$0
-  add $0,2
   trn $2,2
   mul $2,2
+  add $0,2
   add $1,$2
   cmp $2,4
 lpe

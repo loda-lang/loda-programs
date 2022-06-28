@@ -7,8 +7,8 @@ mov $2,1
 lpb $0
   mov $3,$2
   lpb $3
-    add $2,1
     div $3,2
+    add $2,1
     mov $4,$1
     gcd $4,$2
     cmp $4,1

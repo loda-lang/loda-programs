@@ -6,11 +6,11 @@ lpb $0
   lpb $0
     dif $0,7
   lpe
-  cmp $2,0
-  mul $2,$0
-  lpb $2
+  cmp $1,0
+  mul $1,$0
+  lpb $1
+    trn $1,7
     sub $0,1
-    trn $2,7
   lpe
 lpe
 add $0,1

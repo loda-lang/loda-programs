@@ -1,6 +1,23 @@
 ; A061838: Numbers k such that (k+3)^3 | k!.
-; Submitted by biodoc
+; Submitted by Armin Gips
 ; 9,15,17,21,24,25,27,29,32,33,37,39,41,42,45,46,47,49,51,52,53,57,60,61,62,63,65,67,69,72,73,74,75,77,78,81,82,85,87,88,89,92,93,95,96,97,99,101,102,105,107,109,111,112,113,114,116,117,118,121,122,123,125
 
-seq $0,61751 ; Numbers k such that k! is divisible by (k+1)^3.
-sub $0,2
+mov $1,10
+mov $2,$0
+add $2,7
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,71637 ; Largest exponent k >=0 such that (n+1)^k divides n!.
+  trn $3,2
+  min $3,1
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+sub $0,1

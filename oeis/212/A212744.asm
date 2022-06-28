@@ -5,8 +5,8 @@
 mov $2,$0
 mov $3,2
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   add $0,$3
   max $0,0
   seq $0,309335 ; a(n) = n^3 if n odd, 7*n^3/8 if n even.

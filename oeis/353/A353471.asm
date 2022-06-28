@@ -1,6 +1,19 @@
 ; A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
-; Submitted by Jamie Morken(w2)
+; Submitted by shiva
 ; 0,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
 
-seq $0,230594 ; Number of ways to write n as n = x*y, where x, y = noncomposite numbers (A008578),  1 <= x <= n, 1 <= y <= n.
-bin $0,2
+seq $0,226177 ; a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
+pow $0,2
+add $0,1
+mov $1,2
+mov $2,3
+mul $0,2
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+mod $0,2

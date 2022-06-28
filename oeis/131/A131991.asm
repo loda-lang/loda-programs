@@ -4,7 +4,7 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
+add $1,1
 pow $0,2
 add $0,1
-add $1,1
 mul $0,$1

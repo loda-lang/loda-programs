@@ -22,12 +22,11 @@ mov $4,10
 pow $4,$0
 mul $2,5
 pow $2,$5
-mul $2,6
+mul $2,12
 div $2,$4
 mul $2,9
 div $2,7
 pow $1,$5
 div $1,$2
 mov $0,$1
-div $0,2
 mod $0,10

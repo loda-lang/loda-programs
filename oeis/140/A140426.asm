@@ -6,7 +6,7 @@ div $0,3
 mov $1,$2
 div $1,2
 mov $3,$1
-mov $1,2
 sub $3,$0
+mov $1,2
 pow $1,$3
 mov $0,$1

@@ -1,4 +1,4 @@
-; A161910: Y-toothpick sequence starting at the corner of an infinite hexagon from which protudes a half toothpick with an angle = Pi/6.
+; A161910: Y-toothpick sequence starting at the corner of an infinite hexagon from which protrudes a half toothpick with an angle = Pi/6.
 ; Submitted by PDW
 ; 0,1,2,5,6,9,12,19,22,25,28,35,40,47,56,73
 

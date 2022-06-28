@@ -7,15 +7,14 @@ lpb $0
   sub $0,$2
   add $1,1
   mov $2,$1
-  add $1,1
   div $2,2
+  add $1,1
 lpe
-add $1,2
 div $1,2
-sub $1,2
+sub $1,1
 add $1,$0
-mul $0,2
 mov $2,$1
+mul $0,2
 bin $1,$0
 add $0,2
 add $2,2

@@ -9,9 +9,8 @@ lpb $1
   div $1,2
   mov $4,$0
   mod $4,2
-  add $4,1
   mul $4,2
-  dif $4,2
+  max $4,1
   div $0,2
   mul $2,$4
   mov $4,$2

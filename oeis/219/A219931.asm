@@ -7,6 +7,4 @@ seq $0,288443 ; a(n) = (2n + 1)*2^(2n + 1); numbers k such that v(k)*2^v(k) = k,
 seq $1,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
 gcd $1,$0
 div $0,$1
-sub $0,2
 div $0,2
-add $0,1

@@ -4,14 +4,14 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
-  mov $5,$4
   mov $6,0
+  mov $5,$4
   lpb $5
-    div $0,$2
     sub $5,1
+    div $0,$2
     mul $6,$2
     add $6,13
   lpe

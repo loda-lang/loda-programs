@@ -3,9 +3,9 @@
 
 add $0,4
 mov $1,$0
-bin $0,5
 mul $1,6
 sub $1,10
+bin $0,5
 mul $0,$1
 div $0,4
 mul $0,10

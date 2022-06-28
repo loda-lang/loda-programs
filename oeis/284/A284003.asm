@@ -1,7 +1,6 @@
 ; A284003: a(n) = A007913(A283477(n)) = A019565(A006068(n)).
-; Submitted by respawner
+; Submitted by DoctorNow
 ; 1,2,6,3,30,15,5,10,210,105,35,70,7,14,42,21,2310,1155,385,770,77,154,462,231,11,22,66,33,330,165,55,110,30030,15015,5005,10010,1001,2002,6006,3003,143,286,858,429,4290,2145,715,1430,13,26,78,39,390,195,65,130,2730,1365,455,910,91,182,546,273,510510,255255,85085,170170,17017,34034,102102,51051,2431,4862,14586,7293,72930,36465,12155,24310,221,442,1326,663,6630,3315,1105,2210,46410,23205,7735,15470,1547,3094,9282,4641,17,34,102,51
 
 seq $0,6068 ; a(n) is Gray-coded into n.
-seq $0,339809 ; a(n) = A019565(n) - 1.
-add $0,1
+seq $0,19565 ; The squarefree numbers ordered lexicographically by their prime factorization (with factors written in decreasing order). a(n) = Product_{k in I} prime(k+1), where I is the set of indices of nonzero binary digits in n = Sum_{k in I} 2^k.

@@ -4,8 +4,8 @@
 mul $0,2
 pow $0,2
 mov $1,$0
-sub $0,3
 sub $1,4
+sub $0,3
 mov $2,$0
 add $0,2
 pow $0,2

@@ -1,8 +1,19 @@
 ; A111876: Denominator of Sum_{k = 0..n} 1/((k+1)*(2*k+1)).
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,6,30,420,1260,13860,180180,72072,1225224,116396280,116396280,2677114440,13385572200,5736673800,166363540200,10314539492400,10314539492400,72201776446800,2671465728531600,2671465728531600
 
-mul $0,2
 add $0,1
-seq $0,58312 ; Denominator of the n-th alternating harmonic number, Sum_{k=1..n} (-1)^(k+1)/k.
-div $0,2
+lpb $0
+  mov $2,$0
+  mov $4,$0
+  sub $0,1
+  max $1,1
+  add $2,$0
+  mul $2,$4
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1

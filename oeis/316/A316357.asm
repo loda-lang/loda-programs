@@ -4,8 +4,7 @@
 add $0,1
 bin $0,2
 mul $0,10
-div $0,6
-add $0,1
-div $0,2
+add $0,6
+div $0,12
 mul $0,4
 add $0,1

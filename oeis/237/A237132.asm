@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,5013 ; a(n) = 3*a(n-2) - a(n-4), a(0)=0, a(1)=1, a(2)=1, a(3)=4. Alternates Fibonacci (A000045) and Lucas (A000032) sequences for even and odd n.
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,3

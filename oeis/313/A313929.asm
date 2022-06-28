@@ -6,6 +6,6 @@ seq $0,312685 ; Coordination sequence Gal.6.253.1 where G.u.t.v denotes the coor
 add $0,5
 div $0,2
 sub $0,2
-mov $3,$2
-mul $3,3
-add $0,$3
+mov $1,$2
+mul $1,3
+add $0,$1

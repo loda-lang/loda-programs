@@ -3,9 +3,8 @@
 
 mul $0,2
 bin $0,2
-add $0,1
 mul $0,2
-add $0,3
+add $0,5
 pow $0,2
 sub $0,25
 div $0,24

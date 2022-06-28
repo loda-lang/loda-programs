@@ -1,8 +1,7 @@
 ; A179229: a(n)=number of Abelian groups of order 2n which are not isomorphic to any Galois field GF(k) of that order.
-; Submitted by Saenger
+; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,1,0,0,1,2,1,0,0,1,1,1,0,3
 
-mov $1,1
 mov $2,2
 add $0,1
 lpb $0
@@ -22,4 +21,3 @@ lpb $0
   lpe
 lpe
 mov $0,$1
-sub $0,1

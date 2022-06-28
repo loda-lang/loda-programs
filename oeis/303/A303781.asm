@@ -4,6 +4,6 @@
 mov $2,$0
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 trn $2,$0
-add $3,$2
-add $3,1
-gcd $0,$3
+add $1,$2
+add $1,1
+gcd $0,$1

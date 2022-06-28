@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  seq $2,47237 ; Numbers that are congruent to {0, 1, 2, 4} mod 6.
-  add $2,1
+  seq $1,47237 ; Numbers that are congruent to {0, 1, 2, 4} mod 6.
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

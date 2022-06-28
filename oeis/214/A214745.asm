@@ -11,10 +11,10 @@ lpb $0
   add $2,2
   mov $3,$2
   dif $3,$0
-  sub $0,1
-  add $1,6
   cmp $3,$2
   cmp $3,0
+  sub $0,1
+  add $1,6
 lpe
 div $1,6
 mov $0,$1

@@ -5,9 +5,9 @@
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
 lpb $0
-  mov $2,$0
-  seq $2,151817 ; a(n) = 2*(2*n)!/n!.
-  div $0,$2
+  mov $1,$0
+  seq $1,151817 ; a(n) = 2*(2*n)!/n!.
+  div $0,$1
 lpe
-mov $0,$2
+mov $0,$1
 div $0,2

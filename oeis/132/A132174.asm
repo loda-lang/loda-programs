@@ -6,8 +6,8 @@ mov $2,$0
 trn $0,1
 seq $0,132175 ; Index of end of n-th generation of terms in A063882.
 lpb $2
-  gcd $1,$0
   mov $2,0
+  gcd $1,$0
 lpe
 mov $0,$1
 add $0,1

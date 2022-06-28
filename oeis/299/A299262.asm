@@ -12,20 +12,20 @@ add $8,1
 lpb $0
   mul $4,$8
   add $4,$0
-  trn $0,$4
   mov $8,2
   add $8,$4
   div $8,8
+  trn $0,$4
   sub $6,$8
   sub $6,2
 lpe
-sub $1,$6
-add $1,1
 mov $7,$5
 mul $7,$5
 mov $2,$7
 mul $2,2
-add $1,$2
 mul $7,$5
+mov $1,1
+sub $1,$6
+add $1,$2
 add $1,$7
 mov $0,$1

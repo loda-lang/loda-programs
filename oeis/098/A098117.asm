@@ -1,11 +1,12 @@
 ; A098117: a(n) = 5^(prime(n) - 1) + 5^prime(n) - 1.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 29,149,3749,93749,58593749,1464843749,915527343749,22888183593749,14305114746093749,223517417907714843749,5587935447692871093749,87311491370201110839843749,54569682106375694274902343749,1364242052659392356872558593749
 
-seq $0,40 ; The prime numbers.
-mov $2,5
-pow $2,$0
-mov $0,$2
-div $0,100
-mul $0,120
-add $0,29
+add $0,1
+seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
+sub $0,2
+mov $1,5
+pow $1,$0
+mov $0,$1
+mul $0,30
+sub $0,1

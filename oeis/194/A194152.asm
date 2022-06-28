@@ -6,6 +6,6 @@ add $0,1
 mul $0,2
 seq $0,198082 ; Ceiling(n*Sqrt(5)).
 add $0,4
-mov $3,$2
-mul $3,5
-add $0,$3
+mov $1,$2
+mul $1,5
+add $0,$1

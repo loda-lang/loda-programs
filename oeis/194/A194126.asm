@@ -4,8 +4,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
+  sub $0,1
   add $1,$2
 lpe
 sub $1,1

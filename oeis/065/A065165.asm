@@ -7,14 +7,12 @@ add $0,15
 mul $0,4
 mod $0,8
 mul $0,$2
-sub $0,12
-min $0,1
-add $2,1
+sub $0,5
+min $0,10
+add $2,3
 div $2,2
 mul $2,4
 sub $0,$2
-add $0,2
 div $0,2
 sub $1,$0
 mov $0,$1
-sub $0,1

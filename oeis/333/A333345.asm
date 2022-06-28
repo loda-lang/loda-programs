@@ -9,13 +9,13 @@ mul $3,4
 sub $3,$0
 sub $0,1
 lpb $3
-  mul $1,$3
-  mul $2,$3
-  add $1,$2
-  mul $2,9
   cmp $6,0
+  mul $2,$3
   add $5,$6
+  mul $1,$3
+  add $1,$2
   div $1,$5
+  mul $2,9
   div $2,$5
   add $2,$1
   sub $3,1

@@ -1,10 +1,11 @@
 ; A353681: a(n) = 1 if phi(sigma(n)) > phi(n), otherwise 0.
-; Submitted by [AF>Occitania]franky82
+; Submitted by GolfSierra
 ; 0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,0,1,0,0,0,1,0,1,0,1,1,1,0,1,0,1,0,1
 
 seq $0,353636 ; Difference between phi(sigma(n)) and phi(n).
-sub $0,1
-mov $1,309
-pow $1,$0
-mod $1,2
+lpb $0
+  mov $1,2
+  mov $0,0
+lpe
 mov $0,$1
+div $0,2

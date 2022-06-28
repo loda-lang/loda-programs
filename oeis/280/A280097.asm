@@ -1,8 +1,9 @@
 ; A280097: Sum of the divisors of 24*n - 1.
-; Submitted by Christian Krause
+; Submitted by http://kodeks.karelia.ru/
 ; 24,48,72,120,144,168,168,192,264,240,264,336,312,408,360,384,456,432,672,480,504,576,600,744,600,720,648,744,840,720,744,840,912,984,840,864,888,912,1296,1104,984,1080,1032,1272,1176,1104,1368,1152,1488,1320,1224,1320,1344,1824,1320
 
 mul $0,12
 add $0,11
-mul $0,2
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,5879 ; Theta series of D_4 lattice with respect to deep hole.
+div $0,192
+mul $0,24

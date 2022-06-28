@@ -1,8 +1,7 @@
 ; A295405: a(n) = 1 if n^2+1 is prime, 0 otherwise.
+; Submitted by Roadranner
 ; 1,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0
 
-seq $0,147810 ; Half the number of divisors of n^2+1.
-mov $1,1
-sub $1,$0
-cmp $1,0
-mov $0,$1
+add $0,1
+pow $0,2
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.

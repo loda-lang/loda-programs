@@ -1,8 +1,7 @@
 ; A334659: Dirichlet g.f.: 1 / zeta(s-3).
+; Submitted by Rhodan71
 ; 1,-8,-27,0,-125,216,-343,0,0,1000,-1331,0,-2197,2744,3375,0,-4913,0,-6859,0,9261,10648,-12167,0,0,17576,0,0,-24389,-27000,-29791,0,35937,39304,42875,0,-50653,54872,59319,0,-68921,-74088,-79507,0,0,97336,-103823,0,0,0,132651,0,-148877
 
-mov $1,$0
-add $0,1
+mod $0,56
+seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
 pow $0,3
-seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-mul $0,$1

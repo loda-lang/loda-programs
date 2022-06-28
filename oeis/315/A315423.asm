@@ -3,12 +3,12 @@
 
 mov $4,$0
 seq $0,281746 ; Nonnegative numbers k such that k == 0 (mod 3) or k == 0 (mod 5).
-mov $2,$0
 mov $3,$0
 cmp $3,0
+mov $2,$0
 add $2,$3
-mov $1,$2
 mov $5,$4
 mul $5,3
+mov $1,$2
 add $1,$5
 mov $0,$1

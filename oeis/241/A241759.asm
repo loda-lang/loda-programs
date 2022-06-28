@@ -1,13 +1,13 @@
 ; A241759: Number of partitions of n into distinct parts of the form 3^k - 2^k, cf. A001047.
-; Submitted by vanos0512
+; Submitted by Rhodan71
 ; 1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0
 
 mov $2,$0
-add $0,1
-pow $2,4
+pow $2,3
 lpb $2
+  sub $2,1
   mov $3,$1
-  seq $3,39968 ; An example of a d-perfect sequence.
+  seq $3,39966 ; a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
   cmp $3,0
   sub $0,$3
   add $1,1

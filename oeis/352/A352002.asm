@@ -2,8 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 4,9,35,217,2321,30043,510527,9699709,223092893,6469693259,200560490161,7420738134847,304250263527251,13082761331670073,614889782588491457,32589158477190044783,1922760350154212639129,117288381359406970983331,7858321551080267055879157,557940830126698960967415461
 
-mov $2,$0
+mov $1,$0
+seq $1,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+add $1,1
 seq $0,40 ; The prime numbers.
-seq $2,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-add $2,1
-mul $0,$2
+mul $0,$1

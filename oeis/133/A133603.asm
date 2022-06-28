@@ -8,8 +8,8 @@ mod $0,2
 mov $2,$0
 add $2,1
 lpb $2
-  mov $0,$3
   sub $2,1
+  mov $0,$3
   sub $0,$2
   mov $1,$0
   add $1,$0

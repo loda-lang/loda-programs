@@ -6,8 +6,8 @@ add $0,1
 mov $2,$0
 lpb $0
   sub $0,1
-  mov $3,$2
   add $4,1
+  mov $3,$2
   div $3,$4
   pow $3,$2
   add $1,$3

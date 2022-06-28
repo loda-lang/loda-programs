@@ -1,5 +1,5 @@
 ; A210222: Triangle of coefficients of polynomials v(n,x) jointly generated with A104698; see the Formula section.
-; Submitted by Cruncher Pete
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,2,2,3,6,2,4,12,10,2,5,20,28,14,2,6,30,60,52,18,2,7,42,110,140,84,22,2,8,56,182,310,276,124,26,2,9,72,280,602,726,484,172,30,2,10,90,408,1064,1638,1486,780,228,34,2,11,110,570,1752,3304,3850,2750
 
 mul $0,2
@@ -27,6 +27,4 @@ lpb $0
 lpe
 sub $3,$6
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

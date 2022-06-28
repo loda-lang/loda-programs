@@ -5,8 +5,8 @@
 sub $0,1
 mov $2,-2
 bin $2,$0
-mov $3,$2
+mov $1,$2
 dif $2,3
-add $3,$2
-mov $0,$3
+add $1,$2
+mov $0,$1
 div $0,2

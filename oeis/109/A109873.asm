@@ -7,9 +7,9 @@ mov $1,1
 mov $2,$0
 lpb $0
   sub $0,1
-  dif $1,$2
   mov $3,$2
   bin $3,$0
+  dif $1,$2
   mul $1,$3
 lpe
 mov $0,$1

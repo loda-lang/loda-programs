@@ -3,9 +3,9 @@
 
 add $0,6
 lpb $0
-  add $2,$0
+  add $1,$0
   gcd $0,2
   add $0,1
 lpe
-pow $0,$2
+pow $0,$1
 div $0,128

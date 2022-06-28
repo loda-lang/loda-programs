@@ -6,7 +6,7 @@ mov $1,1
 mov $3,$0
 mov $2,$0
 lpb $2
-  trn $2,1
+  sub $2,1
   mov $0,$3
   sub $0,$2
   seq $0,50141 ; a(n) = 2*floor((n+1)*phi) - 2*floor(n*phi) - 1 where phi = (1 + sqrt(5))/2 is the golden ratio.

@@ -4,8 +4,8 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   trn $0,1
   seq $0,287659 ; Positions of 1 in A287657; complement of A287658.

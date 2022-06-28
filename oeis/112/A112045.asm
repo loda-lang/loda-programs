@@ -8,13 +8,13 @@ lpb $0
     add $0,4
     mul $0,2
   lpe
-  mov $2,-2
-  gcd $2,$0
+  mov $1,-2
+  gcd $1,$0
   add $0,1
-  mul $2,$0
-  mul $0,$2
-  sub $2,8
-  add $0,$2
+  mul $1,$0
+  mul $0,$1
+  sub $1,8
+  add $0,$1
   div $0,2
 lpe
 seq $0,40 ; The prime numbers.

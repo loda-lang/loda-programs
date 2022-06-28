@@ -1,13 +1,10 @@
 ; A143357: Floor((n-1)!/[n(n+1)]).
+; Submitted by Arkhenia
 ; 0,0,0,0,0,2,12,70,448,3298,27490,255876,2631876,29652480,363242880,4807626352,68375130352,1040021719578,16848351857178,289631191449600,5266021662720000,100970241446066086,2036233202495666086
 
-mov $4,$0
-seq $4,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $2,1
-add $2,$0
-mov $3,1
-add $3,$2
-mul $2,$3
-mov $1,$4
-div $1,$2
-mov $0,$1
+mov $1,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+add $1,2
+bin $1,2
+div $0,2
+div $0,$1

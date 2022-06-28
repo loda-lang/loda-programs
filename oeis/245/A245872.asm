@@ -11,16 +11,16 @@ lpb $2
   gcd $2,2
   sub $2,1
 lpe
-add $1,10
 mov $3,$5
 mul $3,42
+add $1,10
 add $1,$3
 mov $4,$5
 mul $4,$5
 mov $3,$4
 mul $3,28
-add $1,$3
 mul $4,$5
+add $1,$3
 mov $3,$4
 mul $3,5
 add $1,$3

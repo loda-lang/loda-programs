@@ -4,8 +4,8 @@
 add $0,1
 pow $0,2
 mov $1,$0
-trn $0,2
 add $1,16
 div $1,2
-add $0,$1
+trn $0,2
 sub $0,6
+add $0,$1

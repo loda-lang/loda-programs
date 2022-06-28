@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,72211 ; a(n) = p-1 if n=p, p if n=p^e and e<>1, 1 otherwise; p a prime.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

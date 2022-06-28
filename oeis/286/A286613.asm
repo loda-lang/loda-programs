@@ -1,7 +1,7 @@
 ; A286613: a(n) = A046523(A244154(n)).
-; Submitted by Saenger
+; Submitted by dthonon
 ; 1,2,2,2,4,8,2,6,6,2,12,2,4,6,12,2,2,2,12,32,6,2,24,12,2,6,6,2,12,12,2,6,4,12,6,12,6,2,30,6,72,12,2,6,120,2,30,6,6,30,6,6,24,48,2,12,60,6,210,2,2,30,6,6,6,6,2,2,60,12,2,2,6,2,60,24,6,6,48,12,6,6,6,2,6,12,12,6,2,2,12,12,30,6,12,96,6,6,12,6
 
-seq $0,244154 ; Permutation of natural numbers: a(0) = 1, a(1) = 2, a(2n) = A254049(a(n)), a(2n+1) = 3*a(n)-1; composition of A048673 and A005940.
+seq $0,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
 sub $0,1
-seq $0,46523 ; Smallest number with same prime signature as n.
+seq $0,278224 ; a(n) = A046523(A048673(n)).

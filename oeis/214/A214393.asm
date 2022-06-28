@@ -8,6 +8,5 @@ mod $1,2
 mul $1,3
 add $1,$0
 mov $0,$1
-sub $0,3
 mul $0,4
-add $0,13
+add $0,1

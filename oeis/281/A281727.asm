@@ -4,9 +4,9 @@
 lpb $0
   pow $0,2
   mov $1,$0
-  mov $0,0
   seq $1,174737 ; a(n) = a(n-1) - a(n-2), with a(0)=2, a(1)=-1.
   sub $1,1
+  mov $0,0
 lpe
 add $1,1
 mov $0,$1

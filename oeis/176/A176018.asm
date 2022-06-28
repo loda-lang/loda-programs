@@ -4,6 +4,6 @@
 
 mov $1,$0
 add $1,1
-seq $1,460 ; Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2 of A173018)
+seq $1,460 ; Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2 of A173018).
 bin $1,3
 mov $0,$1

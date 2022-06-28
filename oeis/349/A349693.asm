@@ -10,13 +10,13 @@ lpb $0
   cmp $3,$2
   cmp $3,0
   mul $3,$0
-  sub $0,1
   mul $3,2
-  mov $4,$3
   mov $5,2
+  sub $0,1
+  mov $4,$3
   lpb $4
-    add $1,$5
     dif $4,2
+    add $1,$5
     add $5,2
   lpe
 lpe

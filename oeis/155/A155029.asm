@@ -1,8 +1,7 @@
 ; A155029: Complement to A051731 with the identity matrix A023531 included.
-; Submitted by Christian Krause
+; Submitted by Gunnar Hjern
 ; 1,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1
 
 seq $0,114002 ; Expansion of x^k(1+x^(k+1))/(1-x^(k+1)).
-trn $0,1
+div $0,-2
 add $0,1
-mod $0,2

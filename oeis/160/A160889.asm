@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    min $4,1
     mov $5,$2
     cmp $5,1
     add $2,1

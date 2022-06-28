@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,81039 ; 4th binomial transform of (1,3,0,0,0,0,0,.....).
   div $2,2
+  trn $0,2
   add $1,$2
 lpe
 mul $1,2

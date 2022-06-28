@@ -4,7 +4,7 @@
 
 add $0,3
 seq $0,262333 ; Number of (n+3) X (1+3) 0..1 arrays with each row and column divisible by 9, read as a binary number with top and left being the most significant bits.
-add $2,$0
-sub $2,1
-pow $2,3
-mov $0,$2
+add $1,$0
+sub $1,1
+pow $1,3
+mov $0,$1
