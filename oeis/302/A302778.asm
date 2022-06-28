@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,302777 ; a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

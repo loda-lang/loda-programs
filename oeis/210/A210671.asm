@@ -4,10 +4,10 @@
 
 lpb $0
   sub $0,2
-  mov $2,$0
+  mov $1,$0
+  max $1,0
+  seq $1,104722 ; Self-convolution of repeated Catalan numbers.
   mov $0,1
-  max $2,0
-  seq $2,104722 ; Self-convolution of repeated Catalan numbers.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

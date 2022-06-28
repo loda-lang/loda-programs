@@ -1,5 +1,5 @@
 ; A353047: Number of length n words on alphabet {0,1,2} that contain each of the subwords 01, 02, 10, 12, 20, and 21 as (not necessarily contiguous) subwords.
-; Submitted by [AF>Occitania]franky82
+; Submitted by Ralfy
 ; 12,108,600,2664,10404,37476,127920,420768,1348476,4242204,13169160,40490712,123635028,375623892,1137095520,3433306896,10347106860,31141984140,93639862200,281372571720,845074016772,2537235316548,7615933808400,22856659795584,68588501433564
 
 add $0,3
@@ -10,8 +10,7 @@ lpb $0
   add $1,$3
   mul $2,2
   add $2,$4
-  add $3,1
+  add $3,4
   mul $4,2
 lpe
 mov $0,$2
-mul $0,4

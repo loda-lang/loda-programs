@@ -4,10 +4,10 @@
 
 mov $3,$0
 lpb $3
+  sub $3,1
   mov $1,$2
   seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
   add $2,1
-  sub $3,1
   add $4,$1
 lpe
 mov $0,$4

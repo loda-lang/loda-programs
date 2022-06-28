@@ -4,8 +4,8 @@
 pow $0,2
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,26219 ; Position of n in A026218.
+  sub $0,2
   add $1,$2
   sub $1,2
 lpe

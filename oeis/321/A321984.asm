@@ -1,5 +1,5 @@
 ; A321984: Decimal expansion of number of kilograms (kg) in 1 international avoirdupois ounce (oz).
-; Submitted by DoctorNow
+; Submitted by [DPC] hansR
 ; 2,8,3,4,9,5,2,3,1,2,5
 
 mov $1,1
@@ -21,7 +21,6 @@ lpb $3
   mul $6,2
   mov $8,$4
   div $8,$7
-  max $8,2
   add $8,$0
   mov $1,$4
   mov $2,$6

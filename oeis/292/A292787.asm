@@ -5,8 +5,8 @@
 mov $1,2
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
+  mov $0,0
 lpe
 mov $0,$1
 add $0,1

@@ -4,6 +4,6 @@
 
 add $0,5
 seq $0,2424 ; Expansion of (1-4*x)^(9/2).
-sub $2,$0
-mov $0,$2
+sub $1,$0
+mov $0,$1
 div $0,2

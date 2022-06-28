@@ -1,10 +1,11 @@
 ; A337402: Decimal expansion of the length of third shortest diagonal in a regular 12-gon with unit edge length.
-; Submitted by PDW
+; Submitted by Gunnar Hjern
 ; 3,3,4,6,0,6,5,2,1,4,9,5,1,2,3,1,6,2,2,3,0,1,1,7,5,1,2,3,6,6,7,4,9,2,8,1,3,8,3,7,4,8,1,5,5,3,3,9,3,7,5,7,1,7,3,9,8,1,3,6,5,8,9,0,6,1,1,5,7,8,9,0,6,4,2,1,8,1,8,0,7,1,5,4,5,5,1
 
 max $0,1
+mov $5,-1
 mov $3,$0
-mul $3,3
+mul $3,2
 lpb $3
   sub $3,1
   add $5,$2
@@ -15,7 +16,6 @@ lpb $3
   add $5,$6
   add $5,$1
   add $5,$2
-  add $6,19
   add $2,$5
 lpe
 mov $4,10

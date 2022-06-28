@@ -6,8 +6,8 @@ mov $2,$0
 mov $3,$0
 add $3,1
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $1,$0

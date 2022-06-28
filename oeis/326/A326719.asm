@@ -1,11 +1,14 @@
 ; A326719: a(n) = n! * [x^n] (x * tanh(x) * sech(x)) / 2.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Gunnar Hjern
 ; 0,0,1,0,-10,0,183,0,-5540,0,252605,0,-16216590,0,1395526867,0,-155132097160,0,21643917078969,0,-3703711882375250,0,762837618324516911,0,-186174409962685042860,0,53131942620810610600693,0,-17531634979650818116555990,0
 
-mov $1,$0
-seq $0,122045 ; Euler (or secant) numbers E(n).
-mul $1,$0
-mul $1,12
-sub $2,$1
-mov $0,$2
-div $0,24
+add $0,1
+lpb $0
+  div $0,2
+  mov $1,$0
+  seq $1,28296 ; Expansion of e.g.f. Gudermannian(x) = 2*arctan(exp(x)) - Pi/2.
+  sub $2,$1
+  mul $0,2
+lpe
+mul $0,$2
+div $0,2

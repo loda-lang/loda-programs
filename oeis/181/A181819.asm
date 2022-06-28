@@ -1,5 +1,5 @@
 ; A181819: Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-; Submitted by Dingo
+; Submitted by Simon Strandgaard
 ; 1,2,2,3,2,4,2,5,3,4,2,6,2,4,4,7,2,6,2,6,4,4,2,10,3,4,5,6,2,8,2,11,4,4,4,9,2,4,4,10,2,8,2,6,6,4,2,14,3,6,4,6,2,10,4,10,4,4,2,12,2,4,6,13,4,8,2,6,4,8,2,15,2,4,6,6,4,8,2,14,7,4,2,12,4,4,4,10,2,12,4,6,4,4,4,22,2,6,6,9
 
 mov $1,1
@@ -12,8 +12,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    min $4,1
     add $2,1
     sub $3,$4
   lpe
@@ -29,8 +28,7 @@ lpb $0
       cmp $7,1
       sub $6,$7
     lpe
-    cmp $6,0
-    cmp $6,0
+    min $6,1
     sub $5,$6
   lpe
   add $4,1

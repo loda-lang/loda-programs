@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,112526 ; Characteristic function for powerful numbers.
+  sub $0,1
   add $1,$2
   mov $3,$1
   cmp $3,0

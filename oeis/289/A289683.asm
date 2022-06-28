@@ -1,20 +1,16 @@
 ; A289683: Mixing moments of the busy period of mean steady-state 1/2 in an M/M/1 waiting process.
-; Submitted by Christian Krause
+; Submitted by http://kodeks.karelia.ru/
 ; 1,1,3,18,171,2250,37935,780570,18967095,531545490,16877619675,598825908450,23479803807075,1008211866111450,47052981361160775,2371481399995958250,128370589834339227375,7427764736129937449250,457497972176819368669875
 
-sub $0,1
-mov $1,6
+mov $1,1
 mov $2,1
-mov $3,$0
-lpb $3
-  add $0,1
-  mul $1,$3
-  mul $1,$0
-  mul $2,$4
-  sub $3,1
-  add $4,2
-  div $1,$4
+sub $0,1
+lpb $0
   add $2,$1
-  div $2,2
+  add $1,$2
+  mul $1,$0
+  sub $0,1
+  mul $2,$0
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1

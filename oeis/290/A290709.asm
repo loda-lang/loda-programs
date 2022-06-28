@@ -6,13 +6,13 @@ add $0,1
 mov $2,2
 trn $2,$0
 sub $0,$2
-mov $1,$0
-pow $0,2
-mov $4,$1
+mov $4,$0
 cmp $4,0
+mov $1,$0
 add $1,$4
 mov $3,2
 pow $3,$1
+pow $0,2
 add $0,$3
 mul $0,3
 sub $0,2

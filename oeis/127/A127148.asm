@@ -13,7 +13,7 @@ mov $0,$3
 add $0,$2
 add $0,$2
 mul $0,8
-mov $5,$4
-mul $5,$4
-mul $5,$4
-add $0,$5
+mov $1,$4
+mul $1,$4
+mul $1,$4
+add $0,$1

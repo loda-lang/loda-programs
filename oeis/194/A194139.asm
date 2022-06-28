@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,286927 ; Positions of 1 in A286925; complement of A286926.
+  sub $0,1
   add $1,$2
 lpe
 div $1,2

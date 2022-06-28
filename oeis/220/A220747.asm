@@ -4,13 +4,13 @@
 
 mul $0,2
 add $0,1
+mov $1,25675
 mov $2,$0
-mov $3,25675
 lpb $0
   sub $0,1
   trn $0,2
-  mul $3,$2
+  mul $1,$2
   sub $2,2
 lpe
-mov $0,$3
+mov $0,$1
 div $0,25675

@@ -7,6 +7,6 @@ lpb $0
   div $0,2
   add $2,$0
   gcd $2,3
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

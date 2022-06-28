@@ -5,16 +5,16 @@
 mov $3,$0
 mov $5,$0
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   sub $0,$5
   sub $0,1
   sub $1,$0
   mov $2,$1
-  cmp $1,$0
   div $2,2
   sub $2,2
   bin $2,$0
+  cmp $1,$0
   mov $0,$2
   mod $0,2
   add $4,$0

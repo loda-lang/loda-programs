@@ -5,12 +5,12 @@
 add $0,1
 mov $1,$0
 lpb $1
-  mov $2,$0
   mov $3,2
   mov $4,$1
+  mov $2,$0
   lpb $2
-    mov $1,1
     dif $2,$4
+    mov $1,1
     mov $3,$0
     seq $3,244847 ; Decimal expansion of rho_c = (5-sqrt(5))/10, the asymptotic critical density for the hard hexagon model.
   lpe

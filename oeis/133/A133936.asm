@@ -3,30 +3,30 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,$0
+mov $3,$0
 lpb $3
   add $1,$4
   mov $5,$4
   lpb $5
-    mov $7,$0
+    mov $6,$0
+    mod $6,$2
+    cmp $6,0
     div $0,$2
     mov $3,1
-    mod $7,$2
-    cmp $7,0
-    sub $5,$7
+    sub $5,$6
   lpe
   add $2,1
-  mov $7,$0
-  cmp $7,1
-  cmp $7,0
-  sub $3,$7
+  mov $6,$0
+  cmp $6,1
+  cmp $6,0
+  sub $3,$6
 lpe
 lpb $5
-  lpb $7
+  lpb $6
+    div $6,6
     mov $1,0
-    mov $5,$6
-    div $7,6
+    mov $5,0
   lpe
 lpe
 mov $0,$1

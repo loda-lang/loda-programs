@@ -1,10 +1,7 @@
 ; A319410: Twice A032741.
-; Submitted by dthonon
+; Submitted by PDW
 ; 0,0,2,2,4,2,6,2,6,4,6,2,10,2,6,6,8,2,10,2,10,6,6,2,14,4,6,6,10,2,14,2,10,6,6,6,16,2,6,6,14,2,14,2,10,10,6,2,18,4,10,6,10,2,14,6,14,6,6,2,22,2,6,10,12,6,14,2,10,6,14,2,22,2,6,10,10,6,14,2,18,8,6,2,22,6,6,6,14,2,22,6,10,6,6,6,22,2,10,10
 
-mov $1,$0
-max $1,1
-seq $1,145154 ; Coefficients in expansion of Eisenstein series E_1.
-mov $0,$1
-sub $0,4
+seq $0,145154 ; Coefficients in expansion of Eisenstein series E_1.
+trn $0,4
 div $0,2

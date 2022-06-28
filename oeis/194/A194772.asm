@@ -6,9 +6,9 @@ lpb $0
   mov $2,$0
   seq $2,91596 ; Expansion of x(1-2x^2)/(1-x-2x^2)^2.
   add $3,$2
-  mov $4,$2
-  min $4,1
-  sub $0,$4
+  mov $1,$2
+  min $1,1
+  sub $0,$1
 lpe
 mov $0,$3
 mul $0,2

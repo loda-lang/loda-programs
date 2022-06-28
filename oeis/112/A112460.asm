@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,27791 ; a(n) = 5*(n+1)*binomial(n+3,6).
   sub $0,1
-  seq $2,27791 ; a(n) = 5*(n+1)*C(n+3,6).
   add $1,$2
 lpe
 div $1,5

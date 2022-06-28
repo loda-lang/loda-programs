@@ -1,27 +1,9 @@
 ; A353480: a(n) = 1 if n is an odd semiprime, otherwise 0.
-; Submitted by jmorken
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0
 
-mov $1,1
-mov $2,2
-mov $4,1
-add $0,1
-lpb $0
-  mul $1,$4
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  sub $4,3
-  div $0,$2
-  mod $2,2
-  add $2,1
-lpe
-mov $0,$1
-div $0,4
+mov $1,$0
+seq $1,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+sub $0,1
+mul $0,$1
 mod $0,2

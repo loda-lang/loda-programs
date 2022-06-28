@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,215044 ; a(n) = F(2*n)^5 with F=A000045 (Fibonacci numbers).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

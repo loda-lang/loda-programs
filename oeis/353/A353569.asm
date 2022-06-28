@@ -1,12 +1,11 @@
 ; A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Armin Gips
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 
-add $0,1
 lpb $0
   mov $1,$0
+  seq $1,107078 ; Whether n has non-unitary prime divisors.
   sub $0,1
-  seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  gcd $0,2
 lpe
 mov $0,$1
-mod $0,2

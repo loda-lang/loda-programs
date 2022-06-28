@@ -4,9 +4,9 @@
 lpb $0
   mov $2,$0
   seq $2,14817 ; a(n) = Sum_{k=1..n} floor(k^2/n).
-  add $1,$2
   pow $3,0
   sub $0,$3
+  add $1,$2
 lpe
 add $1,1
 mov $0,$1

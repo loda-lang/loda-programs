@@ -6,8 +6,8 @@ add $0,1
 lpb $0
   add $1,1
   mov $2,$0
-  trn $0,$1
   mul $2,$1
   bin $2,$1
+  trn $0,$1
 lpe
 mov $0,$2

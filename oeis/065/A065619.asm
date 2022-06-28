@@ -7,6 +7,5 @@ mov $2,1
 add $2,$1
 seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
 seq $1,122045 ; Euler (or secant) numbers E(n).
-gcd $1,$0
-mul $2,$1
-mov $0,$2
+gcd $0,$1
+mul $0,$2

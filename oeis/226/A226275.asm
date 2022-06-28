@@ -3,12 +3,12 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,58278 ; Expansion of (1 - x^2)/(1 - x - x^3).
   add $3,$2
-  mov $4,$3
-  cmp $4,0
-  add $3,$4
+  sub $0,1
+  mov $1,$3
+  cmp $1,0
+  add $3,$1
 lpe
 mov $0,$3
 add $0,1

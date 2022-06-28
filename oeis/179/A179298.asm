@@ -4,7 +4,7 @@
 
 add $0,1
 mov $1,$0
-pow $0,3
 bin $1,2
 pow $1,2
+pow $0,3
 sub $0,$1

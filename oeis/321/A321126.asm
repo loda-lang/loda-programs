@@ -1,10 +1,6 @@
 ; A321126: T(n,k) = max(n + k - 1, n + 1, k + 1), square array read by antidiagonals (n >= 0, k >= 0).
-; Submitted by Christian Krause
+; Submitted by [SG-FC] hl
 ; 1,2,2,3,2,3,4,3,3,4,5,4,3,4,5,6,5,4,4,5,6,7,6,5,5,5,6,7,8,7,6,6,6,6,7,8,9,8,7,7,7,7,7,8,9,10,9,8,8,8,8,8,8,9,10,11,10,9,9,9,9,9,9,9,10,11,12,11,10,10,10,10,10,10,10,10,11,12,13,12,11,11,11,11,11,11,11,11,11,12,13,14,13,12,12,12,12,12,12,12
 
 seq $0,131437 ; (A000012 * A131436) + (A131436 * A000012) - A000012.
 seq $0,57526 ; Number of applications of f to reduce n to 1, where f(k) is the integer among k/2,(k-1)/4, (k+1)/4.
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1

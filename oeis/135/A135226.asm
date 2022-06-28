@@ -8,8 +8,8 @@ lpb $0
   sub $0,$1
   bin $2,$0
 lpe
+max $2,1
 bin $1,$0
 mul $1,2
-max $2,1
 sub $1,$2
 mov $0,$1

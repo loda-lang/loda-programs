@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,11765 ; Period 4: repeat [0, 0, 0, 1].
+  div $0,2
   add $1,$2
 lpe
 mov $0,$1

@@ -4,12 +4,11 @@
 
 mov $5,$0
 mov $3,2
-gcd $3,$4
 lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  trn $0,0
+  max $0,0
   seq $0,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
   mov $2,$3
   mul $2,$0

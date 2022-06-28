@@ -6,5 +6,5 @@ lpb $0
   div $0,6
   sub $0,20
 lpe
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 add $0,2

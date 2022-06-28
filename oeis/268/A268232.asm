@@ -1,23 +1,22 @@
 ; A268232: Indices of 0's in A047999.
-; Submitted by DoctorNow
+; Submitted by PDW
 ; 4,11,12,13,17,18,22,24,26,37,38,39,40,41,42,43,47,48,49,50,51,52,56,58,59,60,61,62,64,70,71,72,73,79,80,81,83,84,85,87,88,89,93,94,97,98,101,102,106,108,110,112,114,116,118,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,155,156,157,158,159,160,161,162,163,164,165,166,167,168,172,174,175,176,177,178,179,180,181,182,183,184,185,186,188,194
 
-mov $1,2
-mov $2,$0
-add $2,2
-pow $2,2
+mov $2,52620516
 lpb $2
+  sub $2,64
   mov $3,$1
-  seq $3,119743 ; Triangle read by rows: row n gives number of matchings of size 0<=k<=n (edges) in the complete graph on 2*n >= 2 vertices.
-  gcd $3,2
+  seq $3,29602 ; Numbers in the (2,3)-Pascal triangle A029600 that are different from 2.
+  mul $3,338
+  gcd $3,4
+  add $3,1
+  cmp $3,5
   sub $0,$3
-  add $0,1
-  add $1,$4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
-add $0,1
+sub $0,2

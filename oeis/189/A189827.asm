@@ -5,11 +5,11 @@
 mov $1,$0
 mov $3,2
 lpb $3
+  sub $3,1
   mov $0,$1
   seq $0,334954 ; a(n) is 1 plus the number of divisors of n.
   add $1,2
   add $2,$0
-  sub $3,1
 lpe
 mov $0,$2
 sub $0,2

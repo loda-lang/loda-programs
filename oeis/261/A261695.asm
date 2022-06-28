@@ -5,8 +5,8 @@ lpb $0
   mov $1,$0
   min $0,1
   sub $1,$0
-  div $0,8
   seq $1,241717 ; The number of P-positions in the game of Nim with up to 3 piles, allowing for piles of zero, such that the number of objects in the largest pile is n.
+  div $0,8
 lpe
 mul $1,4
 mov $0,$1

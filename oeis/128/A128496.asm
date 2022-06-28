@@ -6,8 +6,8 @@ add $1,$0
 div $1,2
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+  trn $0,2
   add $1,$2
 lpe
 mov $0,$1

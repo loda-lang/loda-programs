@@ -6,8 +6,8 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $5,1
-  mov $3,$5
+  add $1,1
+  mov $3,$1
   seq $3,347950 ; Characteristic function of numbers that have middle divisors.
   sub $0,$3
   mov $4,$0
@@ -16,5 +16,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$5
+mov $0,$1
 add $0,1

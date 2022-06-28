@@ -3,6 +3,6 @@
 
 mov $1,6
 gcd $1,$0
-mul $0,6
 pow $1,2
+mul $0,6
 div $0,$1

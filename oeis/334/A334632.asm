@@ -7,19 +7,19 @@ mov $2,1
 mov $3,$0
 mul $3,2
 lpb $3
-  add $1,$2
   mov $5,$3
   mul $5,2
   bin $5,2
+  add $1,$2
   mul $2,$5
   mul $2,4
+  div $2,$0
   mul $5,$0
   mul $5,-1
   mov $4,$5
   cmp $4,0
   add $5,$4
   div $1,$5
-  div $2,$0
   sub $3,1
 lpe
 mov $6,10

@@ -5,8 +5,8 @@ mov $1,$0
 add $0,3
 lpb $1
   mov $2,$1
-  cmp $1,1
   seq $2,198400 ; 10^n-10*n.
   add $0,$2
+  cmp $1,1
 lpe
 sub $0,3

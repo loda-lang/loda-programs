@@ -7,5 +7,4 @@ mov $1,$0
 div $0,4
 cmp $0,0
 seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-add $1,$0
-mov $0,$1
+add $0,$1

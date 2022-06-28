@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,87624 ; a(n)=0 if n is prime, A001221(n) otherwise.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

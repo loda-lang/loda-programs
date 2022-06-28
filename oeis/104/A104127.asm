@@ -1,8 +1,10 @@
 ; A104127: (1+prime(n))^prime(n).
-; Submitted by Jamie Morken(w3)
+; Submitted by ChelseaOilman
 ; 9,64,7776,2097152,743008370688,793714773254144,2185911559738696531968,5242880000000000000000000,55572324035428505185378394701824,6863037736488300000000000000000000000000000
 
-seq $0,40 ; The prime numbers.
-mov $2,$0
 add $0,1
-pow $0,$2
+seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
+mov $1,$0
+add $1,1
+pow $1,$0
+mov $0,$1

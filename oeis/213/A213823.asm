@@ -5,10 +5,10 @@
 mul $0,3
 add $0,2
 mov $1,$0
-mul $0,4
 mul $1,4
 add $1,5
 bin $1,2
 sub $1,4
+mul $0,4
 mul $0,$1
 div $0,144

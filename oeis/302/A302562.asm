@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,92181 ; Figurate numbers based on the 24-cell (4-D polytope with Schlaefli symbol {3,4,3}).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

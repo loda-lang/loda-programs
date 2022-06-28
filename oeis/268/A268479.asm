@@ -2,19 +2,19 @@
 ; Submitted by Christian Krause
 ; 0,0,1,2,0,1,1,1,2,1,3,1,1,2
 
-mov $3,$0
+mov $1,$0
+add $1,8
+mov $2,$1
 pow $0,2
-add $3,8
-mov $2,$3
 lpb $0
   add $0,$2
-  mov $3,$1
+  mov $1,0
   lpb $0
-    add $3,$0
+    add $1,$0
     div $0,4
   lpe
 lpe
-lpb $3
-  mod $3,4
+lpb $1
+  mod $1,4
 lpe
-mov $0,$3
+mov $0,$1

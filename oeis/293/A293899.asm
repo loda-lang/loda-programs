@@ -14,10 +14,10 @@ lpb $0
   sub $3,$1
   cmp $4,0
   sub $4,1
-  mul $1,$4
   mul $5,$4
-  add $5,1
   sub $5,$3
+  add $5,1
+  mul $1,$4
   add $1,$5
 lpe
 mov $0,$1

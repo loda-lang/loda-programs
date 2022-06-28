@@ -1,9 +1,8 @@
 ; A245920: Limit-reverse of the (2,1)-version of the infinite Fibonacci word A014675 with first term as initial block.
-; Submitted by Christian Krause
+; Submitted by Roadranner
 ; 2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2
 
-seq $0,241422 ; Limit-reverse of the infinite Fibonacci word A003849 with first term as initial block.
-mov $2,$0
-cmp $2,0
-mov $0,$2
+add $0,100
+seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+mod $0,2
 add $0,1

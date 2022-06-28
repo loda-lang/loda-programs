@@ -5,7 +5,7 @@ mov $1,5
 pow $1,$0
 mov $2,$0
 lpb $2
-  sub $1,5
   sub $2,1
+  sub $1,5
 lpe
 mov $0,$1

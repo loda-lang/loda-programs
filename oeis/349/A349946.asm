@@ -4,13 +4,11 @@
 
 mov $2,$0
 mov $3,2
-add $3,$1
 lpb $3
-  mov $0,$2
   bin $3,2
+  mov $0,$2
   add $0,$3
   seq $0,349526 ; Modified lexicographic ordering of all pairs i,j with 1 <= i <= j; every pair i,j of positive integers occurs exactly once.
   add $1,$0
 lpe
-mov $2,1
 mov $0,$1

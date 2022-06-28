@@ -7,6 +7,6 @@ seq $0,6005 ; The odd prime numbers together with 1.
 mov $6,$3
 mov $7,2
 lpb $7,$6
-  max $0,2
   trn $7,3
+  max $0,2
 lpe

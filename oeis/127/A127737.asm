@@ -7,9 +7,9 @@ lpb $0
   min $2,$0
   mov $1,$2
   mul $1,$0
+  add $1,$2
   sub $0,$2
   trn $0,1
-  add $1,$2
 lpe
 add $1,1
 mov $0,$1

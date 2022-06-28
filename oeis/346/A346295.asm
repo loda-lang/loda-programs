@@ -1,10 +1,20 @@
 ; A346295: a(n) = Sum_{k=0..n} (2^k + 1) * (2^k + 2) / 2.
-; Submitted by PDW
+; Submitted by ChelseaOilman
 ; 3,9,24,69,222,783,2928,11313,44466,176307,702132,2802357,11197110,44763831,179006136,715926201,2863508154,11453639355,45813770940,183253510845,733010897598,2932037298879,11728136612544,46912521284289,187650034805442,750600038558403
 
-seq $0,243514 ; Number of length n+2 0..5 arrays with no three elements in a row with pattern aba or abb (with a!=b) and new values 0..5 introduced in 0..5 order.
-mul $0,2
-sub $0,6
-div $0,2
-mul $0,3
-add $0,3
+mov $2,-3
+mov $3,$0
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $2,2
+lpe
+sub $3,$2
+mov $1,$2
+pow $2,2
+add $1,$2
+div $1,3
+add $3,$1
+add $1,$3
+mov $0,$1
+sub $0,4

@@ -13,8 +13,8 @@ lpb $0
   lpb $3
     add $3,1
     lpb $3
-      add $1,2
       trn $3,4
+      add $1,2
     lpe
   lpe
 lpe

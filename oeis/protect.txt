@@ -51,6 +51,7 @@ A049559: a(n) = gcd(n - 1, phi(n)).
 A051456: (Terms in A029625)/2.
 A051674: a(n) = prime(n)^prime(n).
 A052147: a(n) = prime(n) + 2.
+A057902: a(n) = 5^prime(n).
 A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
 A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
@@ -113,7 +114,9 @@ A131426: a(n) = 2*prime(n) - 3.
 A132227: a(n) = 3*prime(n) - 5.
 A135481: a(n) = 2^A007814(n+1) - 1.
 A135984: a(n) = 24(prime(n))+7.
+A137290: Fibonacci(n) mod 30.
 A137521: Prime numbers concatenated with 45.
+A137664: a(n) = (p+1)^p - 1 where p = prime(n).
 A137807: Final digit of prime(n)^2.
 A137831: (Prime(n)^2 minus its last digit)/20.
 A138689: Numbers of the form 26+p^2 (where p is a prime).

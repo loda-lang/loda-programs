@@ -10,16 +10,16 @@ lpb $0
   add $3,1
   sub $6,$0
   sub $6,1
+  mov $1,$3
   mov $7,$3
-  mov $8,$3
   lpb $7
     mov $5,$6
     mod $5,2
     add $5,1
-    add $4,$5
     div $6,2
-    div $8,2
-    mov $7,$8
+    div $1,2
+    add $4,$5
+    mov $7,$1
   lpe
 lpe
 mov $0,$4

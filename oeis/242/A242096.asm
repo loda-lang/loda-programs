@@ -4,7 +4,7 @@
 lpb $0
   div $0,2
   mov $1,$0
-  mul $0,2
   seq $1,230980 ; Number of primes <= n, starting at n=0.
+  mul $0,2
 lpe
 mov $0,$1

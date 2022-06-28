@@ -1,16 +1,14 @@
 ; A135992: Positive Fibonacci numbers swapped in pairs.
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 1,1,3,2,8,5,21,13,55,34,144,89,377,233,987,610,2584,1597,6765,4181,17711,10946,46368,28657,121393,75025,317811,196418,832040,514229,2178309,1346269,5702887,3524578,14930352,9227465,39088169,24157817
 
 mov $1,1
-mov $2,1
+mul $0,2
+add $0,2
 lpb $0
-  sub $0,2
+  sub $0,4
   add $1,$2
   add $2,$1
 lpe
-lpb $0
-  sub $0,1
-  mov $2,$1
-lpe
-mov $0,$2
+mul $0,$2
+add $0,$1

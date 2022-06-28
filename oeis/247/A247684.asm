@@ -6,13 +6,13 @@ mov $2,2
 mov $3,$0
 mul $3,3
 lpb $3
-  mul $1,2
-  mul $1,$3
-  mul $2,-3
   mov $5,$3
   mul $5,2
   add $5,1
+  mul $2,-3
   mul $2,$5
+  mul $1,2
+  mul $1,$3
   add $1,$2
   cmp $4,0
   mov $5,$0

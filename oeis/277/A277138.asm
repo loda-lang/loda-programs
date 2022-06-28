@@ -5,7 +5,7 @@
 mov $1,$0
 sub $0,1
 gcd $0,2
+sub $0,2
 div $1,2
 seq $1,246394 ; Nonnegative integers k satisfying cos(k) <= 0 and cos(k+1) >= 0.
 add $0,$1
-sub $0,2

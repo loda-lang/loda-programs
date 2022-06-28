@@ -11,16 +11,16 @@ lpb $0
     sub $4,$3
     trn $4,1
   lpe
-  mul $0,2
   add $1,$2
+  mul $0,2
   lpb $0
     trn $0,3
     add $1,1
   lpe
 lpe
 lpb $5
-  add $1,1
   sub $5,1
+  add $1,1
 lpe
 add $1,2
 mov $0,$1

@@ -10,16 +10,16 @@ lpb $2
   sub $2,1
   mul $3,2
   add $3,1
-  sub $6,$4
+  sub $1,$4
+  add $1,1
   mov $4,$5
-  add $6,1
-  add $4,$6
+  add $4,$1
   sub $4,$3
   mov $5,1
-  gcd $6,2
-  add $6,1
-  sub $3,$6
-  mov $6,0
+  gcd $1,2
+  add $1,1
+  sub $3,$1
+  mov $1,0
 lpe
 mov $0,$3
 div $0,16

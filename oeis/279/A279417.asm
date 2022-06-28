@@ -11,9 +11,9 @@ lpb $0
   trn $1,$2
 lpe
 add $0,1
-gcd $1,$2
 add $3,1
 mul $3,$0
+gcd $1,$2
 add $1,$3
 mov $0,$1
 div $0,2

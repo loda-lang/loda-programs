@@ -1,9 +1,10 @@
 ; A137780: a(n) = 1 + 2^( prime(n + 1) - prime(n) ).
-; Submitted by Simon Strandgaard
+; Submitted by [DPC] hansR
 ; 3,5,5,17,5,17,5,17,65,5,65,17,5,17,65,65,5,65,17,5,65,17,65,257,17,5,17,5,17,16385,17,65,5,1025,5,65,65,17,65,65,5,1025,5,17,5,4097,4097,17,5,17,65,5,1025,65,65,65,5,65,17,5,1025,16385,17,5,17,16385,65,1025,5,17,65,257,65,65,17,65,257,17,257,1025,5,1025,5,65,17,65,257,17,5,17,4097,257,17,257,17,65,4097,5,262145,65
 
-seq $0,1223 ; Prime gaps: differences between consecutive primes.
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.
+mov $1,2
+pow $1,$0
+mov $0,$1
 add $0,1
-seq $0,48487 ; a(n) = T(4,n), array T given by A048483.
-div $0,10
-add $0,2

@@ -1,8 +1,7 @@
 ; A290648: a(n) is the smallest number of faces of the triangular lattice required to enclose an area consisting of exactly n faces.
-; Submitted by fzs600
+; Submitted by DoctorNow
 ; 6,12,14,16,18,19,18,20,22,23,22
 
-mov $1,2
 mov $2,2
 lpb $0
   div $3,2
@@ -16,4 +15,4 @@ lpb $0
   mov $2,0
 lpe
 mov $0,$1
-add $0,4
+add $0,6

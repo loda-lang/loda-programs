@@ -9,11 +9,11 @@ mov $3,$0
 mul $0,2
 lpb $2
   mov $4,$1
+  mov $1,3
   lpb $4
-    mov $1,3
-    sub $2,1
     sub $4,2
     trn $4,4
+    sub $2,1
   lpe
   sub $0,1
   trn $2,1

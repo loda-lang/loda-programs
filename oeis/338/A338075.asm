@@ -4,7 +4,6 @@
 
 mov $3,$0
 mov $5,2
-sub $5,$4
 lpb $5
   sub $5,1
   sub $0,$5
@@ -12,10 +11,10 @@ lpb $5
   add $1,$0
   mov $2,$0
   add $2,$1
-  bin $1,$0
   bin $2,$0
-  mov $0,$3
+  bin $1,$0
   mul $1,$2
+  mov $0,$3
   add $4,$1
 lpe
 mov $0,$4

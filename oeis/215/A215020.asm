@@ -1,7 +1,18 @@
 ; A215020: a(n) = log_2( A182105(n) ).
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,0,1,0,0,1,2,0,0,1,0,0,1,2,3,0,0,1,0,0,1,2,0,0,1,0,0,1,2,3,4,0,0,1,0,0,1,2,0,0,1,0,0,1,2,3,0,0,1,0,0,1,2,0,0,1,0,0,1,2,3,4,5,0,0,1,0,0,1,2,0,0,1,0,0,1,2,3,0,0,1,0,0,1,2,0,0,1,0,0,1,2,3,4,0,0,1,0,0,1
 
-seq $0,182105 ; Number of elements merged by bottom-up merge sort.
-sub $0,1
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $0,1
+add $0,1
+mov $1,$0
+lpb $1
+  mov $2,1
+  mov $3,1
+  lpb $1
+    sub $1,$2
+    mul $2,2
+    add $3,81
+  lpe
+lpe
+mov $0,$3
+sub $0,82
+div $0,81

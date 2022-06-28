@@ -3,11 +3,11 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,1749 ; Primes multiplied by 4.
+  add $3,$2
+  add $3,$2
+  sub $0,1
   add $1,$2
-  add $3,$2
-  add $3,$2
   add $1,$3
 lpe
 div $1,4

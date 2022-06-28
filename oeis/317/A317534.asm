@@ -1,8 +1,8 @@
 ; A317534: Numbers k such that the poset of factorizations of k, ordered by refinement, is not a lattice.
-; Submitted by ckaz
+; Submitted by eclipse99
 ; 24,32,40,48,54,56,60,64,72,80,84,88,90,96,104,108,112,120,126,128,132,135,136,140,144,150,152,156,160,162,168,176,180,184,189,192,198,200,204,208,216,220,224,228,232,234,240,243,248,250,252,256,260,264,270
 
-mov $1,20
+mov $1,23
 mov $2,$0
 add $2,7
 pow $2,2

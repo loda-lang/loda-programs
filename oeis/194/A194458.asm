@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,194459 ; Number of entries in the n-th row of Pascal's triangle not divisible by 5.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

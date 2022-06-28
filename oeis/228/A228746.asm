@@ -10,6 +10,4 @@ seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein se
 mul $0,$1
 sub $2,$0
 mov $0,$2
-sub $0,5
 div $0,5
-add $0,1

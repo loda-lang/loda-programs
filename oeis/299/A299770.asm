@@ -8,18 +8,18 @@ mov $2,1
 lpb $0
   mov $3,$0
   lpb $3
-    sub $1,$2
     pow $3,2
     cmp $4,3
     cmp $4,0
+    sub $1,$2
     sub $3,$4
   lpe
   div $0,2
   mov $4,$0
   lpb $3
-    mul $3,2
     mul $4,$2
     add $1,$4
+    mul $3,2
     div $3,10
   lpe
   mul $2,2

@@ -3,11 +3,11 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,257075 ; a(n) = (-1)^(n mod 3).
   add $3,$2
   mov $4,36
   mul $4,$3
+  sub $0,1
   add $1,$4
 lpe
 div $1,36

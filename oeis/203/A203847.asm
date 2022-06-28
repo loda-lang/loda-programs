@@ -1,10 +1,9 @@
 ; A203847: a(n) = tau(n)*Fibonacci(n), where tau(n) = A000005(n), the number of divisors of n.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,2,4,9,10,32,26,84,102,220,178,864,466,1508,2440,4935,3194,15504,8362,40590,43784,70844,57314,370944,225075,485572,785672,1906866,1028458,6656320,2692538,13069854,14098312,22811548,36909860,134373168,48315634,156352676,252983944,818673240,331160282,2143314368,866988874,4208452398,6809419020,7345247612,5942430146,48075269760,23336226147,75517614150,81460044296,197707680594,106632582346,690140570176,558335449780,1806811469736,1461741184648,2365146919516,1913444052082,18576105071040,5009461563922
 
-mov $2,$0
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $0,1
-seq $0,22093 ; Fibonacci sequence beginning 0, 10.
-seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mul $0,$2
-div $0,10
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+mul $0,$1

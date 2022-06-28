@@ -5,15 +5,15 @@
 add $0,1
 mov $1,1
 mov $2,1
-mov $3,$0
 mov $6,1
+mov $3,$0
 lpb $3
-  add $2,1
   sub $3,$6
-  add $5,3
+  add $2,1
   mov $7,$0
   mod $7,$2
   cmp $7,0
+  add $5,3
   pow $5,$7
   mul $1,$5
   mov $4,$2
@@ -21,10 +21,10 @@ lpb $3
   mov $5,$2
   pow $5,$7
   mov $7,$0
-  div $0,$5
   mod $7,$4
   cmp $7,0
   cmp $7,0
+  div $0,$5
   mul $1,$7
   mov $5,$0
   cmp $5,1

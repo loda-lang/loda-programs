@@ -5,6 +5,6 @@
 mov $1,$0
 seq $0,140230 ; Binomial transform of [1, 2, -3, -4, 5, 6, -7, -8, 9, 10, ...].
 lpb $1
-  div $0,2
   sub $1,2
+  div $0,2
 lpe

@@ -6,6 +6,6 @@ add $0,1
 seq $1,1221 ; Number of distinct primes dividing n (also called omega(n)).
 sub $1,1
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe

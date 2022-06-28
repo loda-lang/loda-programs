@@ -9,12 +9,12 @@ lpb $0
   sub $0,1
   mov $3,1
   cmp $3,$2
-  mov $2,1
   sub $3,$4
   add $5,1
   sub $5,$3
-  add $6,$5
-  add $4,$6
+  add $1,$5
+  mov $2,1
+  add $4,$1
 lpe
 mov $0,$4
 sub $0,1

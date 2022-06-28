@@ -12,9 +12,9 @@ lpb $0
   sub $3,1
   bin $3,$0
   mul $3,$2
-  mul $5,$4
-  add $5,$3
+  mul $1,$4
+  add $1,$3
 lpe
-sub $5,$3
-mov $0,$5
+sub $1,$3
+mov $0,$1
 add $0,1

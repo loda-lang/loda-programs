@@ -14,10 +14,10 @@ sub $3,1
 pow $3,2
 mov $1,$3
 add $1,5
-mov $2,$0
 mov $4,$0
 mul $4,19
 add $1,$4
+mov $2,$0
 mul $2,$0
 mov $4,$2
 mul $4,22
