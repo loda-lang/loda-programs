@@ -4,9 +4,9 @@
 
 mov $3,$0
 seq $0,287451 ; Start with 0 and repeatedly substitute 0->012, 1->201, 2->120.
-mov $1,1
 mov $2,$3
 mul $2,3
+mov $1,1
 add $1,$2
 add $1,$0
 mov $0,$1

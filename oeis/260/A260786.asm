@@ -1,10 +1,9 @@
 ; A260786: Twice the Euler or up/down numbers A000111.
-; Submitted by PDW
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,2,2,4,10,32,122,544,2770,15872,101042,707584,5405530,44736512,398721962,3807514624,38783024290,419730685952,4809759350882,58177770225664,740742376475050,9902996106248192,138697748786275802,2030847773013704704,31029068327114173810,493842960380415967232
 
 mov $1,$0
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
 seq $1,122045 ; Euler (or secant) numbers E(n).
-gcd $1,$0
-mov $0,$1
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$1
 mul $0,2

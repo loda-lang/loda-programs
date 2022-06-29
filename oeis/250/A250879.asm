@@ -8,35 +8,35 @@ mov $1,$0
 mul $0,5
 mul $1,2
 mul $1,$0
-mov $3,$1
 mov $4,$1
 mul $4,$0
+mov $3,$1
 add $3,$4
 mov $0,$3
 mov $2,1
 lpb $2
-  add $0,$5
   sub $2,1
+  add $0,$5
 lpe
 mov $8,$5
 lpb $8
-  add $7,$5
   sub $8,1
+  add $7,$5
 lpe
-mov $2,10
 mov $6,$7
+mov $2,10
 lpb $2
-  add $0,$7
   sub $2,1
+  add $0,$7
 lpe
 sub $5,1
 mov $8,$5
 lpb $8
-  add $7,$6
   sub $8,1
+  add $7,$6
 lpe
 mov $2,5
 lpb $2
-  add $0,$7
   sub $2,1
+  add $0,$7
 lpe

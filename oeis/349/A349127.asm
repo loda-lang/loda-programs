@@ -4,6 +4,6 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,349128 ; a(n) = phi(A064989(n)), where A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p, and phi is Euler totient function.
 cmp $1,1
+seq $0,349128 ; a(n) = phi(A064989(n)), where A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p, and phi is Euler totient function.
 mul $0,$1

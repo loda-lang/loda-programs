@@ -3,6 +3,6 @@
 
 sub $0,1
 mov $1,$0
-mul $0,2
 mod $1,2
+mul $0,2
 pow $0,$1

@@ -1,16 +1,15 @@
 ; A025774: Expansion of 1/((1-x)(1-x^4)(1-x^9)).
-; Submitted by Cruncher Pete
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,1,2,2,2,2,3,4,4,4,5,6,6,6,7,8,9,9,10,11,12,12,13,14,15,16,17,18,19,20,21,22,23,24,26,27,28,29,31,32,33,34,36,38,39,40,42,44,45,46,48,50,52,53,55,57,59,60,62
 
 mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
-  sub $3,1
-  cmp $3,2
   mov $2,$0
   max $2,0
   seq $2,25804 ; Expansion of 1/((1-x^2)(1-x^4)(1-x^9)).
+  sub $3,2
   add $1,$2
 lpe
 mov $0,$1

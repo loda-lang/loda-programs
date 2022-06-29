@@ -1,11 +1,10 @@
 ; A162171: Third column of A162170.
-; Submitted by PDW
+; Submitted by [SG-FC] hl
 ; 1,3,6,20,75,336,1708,9792,62325,436480,3334386,27595776,245951615,2348666880,23923317720,258910994432,2966901358185,35886973648896,456927138333790,6108665873694720,85555744482868275,1252729007440396288,19140289332506060676
 
 mov $1,$0
-add $1,1
 seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
-mul $0,$1
-add $1,1
-mul $0,$1
-div $0,2
+add $1,2
+bin $1,2
+mul $1,$0
+mov $0,$1

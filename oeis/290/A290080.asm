@@ -3,9 +3,9 @@
 
 seq $0,73093 ; Number of prime power divisors of n.
 mov $1,$0
-add $0,1
 sub $1,1
 seq $1,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+add $0,1
 lpb $0
   mod $0,3
   add $1,1

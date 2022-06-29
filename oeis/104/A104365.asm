@@ -1,14 +1,13 @@
 ; A104365: a(n) = A104350(n) + 1.
-; Submitted by Simon Strandgaard
+; Submitted by Gunnar Hjern
 ; 2,3,7,13,61,181,1261,2521,7561,37801,415801,1247401,16216201,113513401,567567001,1135134001,19297278001,57891834001,1099944846001,5499724230001,38498069610001,423478765710001,9740011611330001
 
 mov $1,1
-mov $2,$0
-lpb $2
-  sub $0,1
-  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  mul $1,$2
+lpb $0
   mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $0,1
+  mul $1,$2
 lpe
 mov $0,$1
 add $0,1

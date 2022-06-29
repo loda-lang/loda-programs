@@ -5,12 +5,12 @@
 mov $2,$0
 add $2,8
 mov $3,$0
-seq $0,21354 ; Expansion of 1/((1-x)(1-3x)(1-4x)(1-6x)).
 add $3,$2
-mov $4,$3
+seq $0,21354 ; Expansion of 1/((1-x)(1-3x)(1-4x)(1-6x)).
+mov $1,$3
 lpb $3
   mul $0,2
-  sub $4,2
-  mov $3,$4
+  sub $1,2
+  mov $3,$1
 lpe
 div $0,16

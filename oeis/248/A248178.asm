@@ -4,9 +4,9 @@
 mov $2,$0
 mov $3,$0
 mov $4,$0
+sub $4,3
 mul $0,2
 mov $1,1
-sub $4,3
 sub $1,$4
 sub $1,$0
 div $1,25

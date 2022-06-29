@@ -5,13 +5,13 @@
 mov $2,$0
 mov $3,2
 lpb $3
-  mov $0,$2
-  add $1,$4
   sub $3,1
+  mov $0,$2
   add $0,$3
   max $0,0
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
+  add $1,$4
   mov $4,$0
 lpe
 mul $1,$0

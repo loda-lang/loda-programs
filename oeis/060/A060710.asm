@@ -9,14 +9,14 @@ lpb $0
   dif $3,$0
   cmp $3,$2
   cmp $3,0
-  add $1,$3
   mov $4,2
   gcd $4,$0
   sub $0,1
+  add $1,$3
   lpb $4
-    add $1,$3
     add $4,2
     mod $4,3
+    add $1,$3
   lpe
 lpe
 mov $0,$1

@@ -4,8 +4,8 @@
 mul $0,4
 mov $1,1
 add $1,$0
-trn $0,3
 add $1,3
 bin $1,3
+trn $0,3
 mul $0,$1
 div $0,4

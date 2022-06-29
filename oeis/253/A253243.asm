@@ -9,7 +9,7 @@ lpb $0
   dif $0,3
   mov $1,2
 lpe
-seq $0,217219 ; Theta series of planar hexagonal lattice with respect to deep hole.
+seq $0,217219 ; Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
 mul $0,$1
 sub $2,$0
 mov $0,$2

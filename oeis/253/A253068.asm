@@ -6,8 +6,7 @@ mov $1,-2
 pow $1,$0
 mul $1,2
 bin $1,2
-div $1,4
-sub $1,34
-div $1,18
+sub $1,136
+div $1,72
 add $1,1
 mov $0,$1

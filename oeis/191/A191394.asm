@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
+  sub $0,2
   add $1,$2
 lpe
 div $1,2

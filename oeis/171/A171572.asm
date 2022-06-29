@@ -1,17 +1,14 @@
 ; A171572: a(n) = 0+1+2+...+n in lunar arithmetic in base 5 written in base 10.
-; Submitted by Christian Krause
+; Submitted by [SG]KidDoesCrunch
 ; 0,1,2,3,4,9,9,9,9,9,14,14,14,14,14,19,19,19,19,19,24,24,24,24,24,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74,74
 
-mov $2,2
-mov $3,1
+mov $1,1
 lpb $0
   mov $2,$0
+  min $2,4
+  mul $2,$1
   div $0,5
-  add $2,1
-  mul $2,2
-  mul $2,$3
-  mul $3,5
+  add $1,$2
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1
 sub $0,1

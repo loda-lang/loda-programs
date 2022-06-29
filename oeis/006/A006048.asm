@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,6047 ; Number of entries in n-th row of Pascal's triangle not divisible by 3.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1
