@@ -8,11 +8,11 @@ lpb $0
   gcd $2,$1
   bin $2,$1
   mov $3,$0
-  sub $0,1
   bin $3,$1
-  add $1,$2
   mul $3,$2
   add $4,$3
+  sub $0,1
+  add $1,$2
   mul $3,$0
   add $3,$4
   add $4,$3

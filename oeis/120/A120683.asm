@@ -23,8 +23,8 @@ lpe
 mov $1,$5
 mul $1,2
 mov $4,10
-add $2,$5
 pow $4,$0
+add $2,$5
 add $2,8
 div $2,$4
 div $1,$2

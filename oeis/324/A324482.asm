@@ -8,6 +8,5 @@ seq $1,68397 ; a(n) = Lucas(n) + (-1)^n + 1.
 mul $1,2
 div $1,4
 div $1,$0
-mul $1,$0
-mov $0,$1
+mul $0,$1
 mul $0,2

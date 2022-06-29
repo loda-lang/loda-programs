@@ -1,5 +1,5 @@
 ; A267295: Circulant Ramsey numbers RC_2(3,n) of the second kind.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by amargo133
 ; 3,6,9,14,17,22,27,36,39,46,49
 
 mov $5,$0
@@ -17,7 +17,6 @@ lpb $6
     lpb $3
       mov $4,$0
       mod $4,$2
-      min $4,1
       sub $0,$2
       add $2,1
       sub $3,$4

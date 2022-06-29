@@ -2,7 +2,7 @@
 ; 1,0,0,0,0,3,14,78,497,3628,29990,277200,2834328,31770514,387459072,5108103000,72397196844,1097800704000,17735107218083,304112751022080,5516784599040000,105559797875432727,2124765080865042873,44881973505008640000,992717442773183102976
 
 mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 add $1,1
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 div $0,$1
 div $0,$1

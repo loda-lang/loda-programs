@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,100484 ; The primes doubled.
+  sub $0,1
   add $1,$2
   mul $1,2
 lpe

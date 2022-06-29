@@ -1,12 +1,12 @@
 ; A308722: Number of edges in the smallest possible regular graceful graph of valence n.
-; Submitted by bcavnaugh
+; Submitted by Simon Strandgaard
 ; 0,1,3,6,12,20,27,35,48,63,75,99,108
 
 mov $1,$0
-mul $0,3
 mov $2,$0
+mul $2,9
+mul $0,3
 lpb $0
-  mul $2,3
   mov $0,$2
   sub $0,9
   sub $2,10

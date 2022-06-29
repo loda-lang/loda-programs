@@ -7,5 +7,4 @@ mov $1,$0
 seq $0,270222 ; Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 131", based on the 5-celled von Neumann neighborhood.
 add $1,2
 bin $1,2
-mul $1,$0
-mov $0,$1
+mul $0,$1

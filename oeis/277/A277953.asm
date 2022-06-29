@@ -3,11 +3,11 @@
 
 lpb $0
   sub $0,2
-  mov $2,$0
-  max $2,0
-  seq $2,266508 ; Binary representation of the n-th iteration of the "Rule 28" elementary cellular automaton starting with a single ON (black) cell.
-  trn $0,$2
+  mov $1,$0
+  max $1,0
+  seq $1,266508 ; Binary representation of the n-th iteration of the "Rule 28" elementary cellular automaton starting with a single ON (black) cell.
+  trn $0,$1
 lpe
-mov $0,$2
+mov $0,$1
 mul $0,10
 add $0,1

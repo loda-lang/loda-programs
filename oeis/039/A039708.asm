@@ -11,8 +11,7 @@ lpb $2
   mov $3,$0
   bin $3,2
   trn $3,$1
-  cmp $3,0
-  cmp $3,0
+  min $3,1
   sub $2,$3
 lpe
 mov $0,$2

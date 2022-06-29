@@ -1,4 +1,5 @@
 ; A221672: Length of shortest non-constant arithmetic progression (AP) containing n squares.
+; Submitted by Simon Strandgaard
 ; 1,2,3,5,8,13,16,23,27,36,41,52
 
 add $0,1
@@ -14,6 +15,6 @@ lpb $0
     sub $0,1
     add $1,$2
   lpe
-  add $1,$3
 lpe
+add $1,$3
 mov $0,$1

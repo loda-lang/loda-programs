@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,26274 ; Greatest k such that s(k) = n, where s = A026272.
+  seq $3,26275 ; Sum of numbers between the two n's in A026272.
   mod $3,3
   div $3,2
   sub $0,$3

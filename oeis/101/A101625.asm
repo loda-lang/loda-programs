@@ -5,11 +5,11 @@
 mov $2,$0
 lpb $0
   sub $0,1
-  mul $1,2
   mov $3,$2
-  add $2,1
   bin $3,$0
   mod $3,2
+  mul $1,2
   add $1,$3
+  add $2,1
 lpe
 mov $0,$1

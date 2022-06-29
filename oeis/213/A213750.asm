@@ -11,10 +11,9 @@ lpe
 sub $2,1
 add $1,$2
 bin $1,2
-add $2,2
 add $2,$0
 mul $2,2
-add $2,1
+add $2,5
 mul $1,$2
 mov $0,$1
 div $0,3

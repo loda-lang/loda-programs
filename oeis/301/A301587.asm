@@ -1,13 +1,15 @@
 ; A301587: Positive integers m such that whenever n is in the range of the Euler totient function, so is m*n.
+; Submitted by Simon Strandgaard
 ; 1,2,4,6,8,12,16,18,20,24
 
-mul $0,2
-mov $4,1
+mov $1,$0
 lpb $0
-  mov $2,$0
   sub $0,2
-  seq $2,127973 ; a(2n)=A060632(n); a(2n+1)=A048896(n)/2.
-  add $3,$2
-  mov $4,$3
+  mov $2,$0
+  max $2,0
+  seq $2,47404 ; Numbers that are congruent to {1, 2, 3, 6} mod 8.
+  mov $0,1
+  add $1,$2
 lpe
-mov $0,$4
+mov $0,$1
+add $0,1

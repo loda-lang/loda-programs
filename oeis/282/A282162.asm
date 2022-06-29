@@ -1,10 +1,10 @@
 ; A282162: Difference sequence of the upper Wythoff sequence, A001950, with 2 prepended.
-; Submitted by Jamie Morken(w4)
+; Submitted by [DPC] hansR
 ; 2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2
 
-mov $1,$0
-seq $1,114986 ; Characteristic function of (A000201 prefixed with 0).
-add $0,$1
-mod $1,$0
-mov $0,$1
-add $0,2
+seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
+min $0,1
+max $0,0
+add $0,15
+div $0,4
+sub $0,1

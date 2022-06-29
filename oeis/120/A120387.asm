@@ -4,12 +4,12 @@
 
 add $0,1
 mov $2,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  mul $2,$3
-  max $3,1
-  add $0,$3
+mov $1,$0
+lpb $1
+  sub $1,1
+  mul $2,$1
+  max $1,1
+  add $0,$1
 lpe
 mod $2,$0
 mov $0,$2

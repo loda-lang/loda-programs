@@ -4,7 +4,7 @@
 
 mov $1,$0
 seq $1,63655 ; Smallest semiperimeter of integral rectangle with area n.
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,133156 ; Irregular triangle read by rows: coefficients of U(n,x), Chebyshev polynomials of the second kind with exponents in decreasing order.
 gcd $0,2
 mul $0,$1
 div $0,2

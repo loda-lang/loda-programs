@@ -1,8 +1,24 @@
 ; A286015: Sum of largest parts of all partitions of n into consecutive parts.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,2,5,4,8,9,11,8,18,14,17,17,20,19,34,16,26,31,29,26,46,29,35,33,45,34,58,35,44,58,47,32,70,44,70,57,56,49,82,50,62,78,65,53,114,59,71,65,84,76,106,62,80,98,106,67,118,74,89,106,92,79,153,64,124,118,101,80,142,118,107,109,110,94,183,89,142,138,119,98,179,104,125,142,160,109,178,101,134,192,166,107,190,119,178,129,146,141,231,138
 
-mov $1,$0
-seq $1,86670 ; Sum of floor(d/2) where d is a divisor of n.
-seq $0,593 ; Sum of odd divisors of n.
-add $0,$1
+add $0,1
+mov $2,$0
+lpb $0
+  add $4,1
+  min $0,$4
+  mov $3,$2
+  dif $3,$0
+  mov $0,$3
+  add $0,$4
+  sub $0,1
+  mul $3,$4
+  cmp $3,$2
+  mul $3,$0
+  mul $3,2
+  sub $2,$4
+  mov $0,$2
+  add $1,$3
+lpe
+mov $0,$1
+div $0,2
