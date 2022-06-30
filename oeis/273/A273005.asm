@@ -7,9 +7,9 @@ mov $1,$2
 sub $1,1
 lpb $0
   mov $2,$0
-  div $0,10
   mod $2,10
   add $2,1
+  div $0,10
   add $1,$2
 lpe
 mov $0,$1

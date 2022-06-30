@@ -1,18 +1,17 @@
-; A138269: a(n+1) is the Hankel transform of C(n)+C(n+2), where C(n)=A000108(n).
-; Submitted by Christian Krause
+; A138269: a(n+1) is the Hankel transform of C(n)+C(n+2), where C(n) = A000108(n).
+; Submitted by [DPC] hansR
 ; 1,3,12,53,231,1000,4329,18747,81188,351597,1522639,6594000,28556241,123666803,535556412,2319302053,10044062391,43497219000,188370799289,815766130347,3532789487188,15299239691997
 
+mov $3,1
+add $0,1
 lpb $0
   sub $0,1
+  add $1,$2
+  sub $4,$2
+  add $4,$1
   add $2,$3
-  add $2,11
-  sub $4,$3
-  add $3,$1
-  add $4,$2
-  add $1,$4
-  add $3,$1
-  add $2,$3
+  add $1,$2
+  add $4,$1
+  add $3,$4
 lpe
 mov $0,$2
-div $0,11
-add $0,1

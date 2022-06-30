@@ -3,5 +3,5 @@
 
 mov $1,$0
 seq $0,112929 ; Number of squarefree integers less than the n-th prime.
-sub $0,$1
 sub $0,1
+sub $0,$1

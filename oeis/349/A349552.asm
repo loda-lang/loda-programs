@@ -1,9 +1,8 @@
 ; A349552: a(n) is the number of halving partitions of n (see Comments for definition).
-; Submitted by Jamie Morken(w2)
+; Submitted by Vato
 ; 1,1,1,1,2,1,2,1,2,2,3,1,3,2,2,1
 
 lpb $0
-  mov $2,$1
   lpb $0
     dif $0,2
     add $1,10

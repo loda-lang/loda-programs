@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,131377 ; Starting with 1, the sequence a(n) changes from 1 to 0 or back when the next number n is a prime.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

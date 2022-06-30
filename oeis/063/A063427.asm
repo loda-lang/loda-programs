@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,63718 ; a(n) is the smallest divisor of n^2 that is greater than n.
-sub $0,$1
 sub $0,2
+sub $0,$1

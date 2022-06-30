@@ -1,21 +1,9 @@
 ; A007306: Denominators of Farey tree fractions (i.e., the Stern-Brocot subtree in the range [0,1]).
-; Submitted by Christian Krause
+; Submitted by Jason Jung
 ; 1,1,2,3,3,4,5,5,4,5,7,8,7,7,8,7,5,6,9,11,10,11,13,12,9,9,12,13,11,10,11,9,6,7,11,14,13,15,18,17,13,14,19,21,18,17,19,16,11,11,16,19,17,18,21,19,14,13,17,18,15,13,14,11,7,8,13,17,16,19,23,22,17,19,26,29,25,24,27,23,16,17,25,30,27,29,34,31,23,22,29,31,26,23,25,20,13,13,20,25
 
-mul $0,4
-sub $0,5
-mov $1,1
-lpb $0
-  sub $0,1
-  div $0,2
-  sub $2,$3
-  mov $3,6
-  add $3,$0
-  div $3,2
-  mod $3,2
-  mov $4,$2
-  add $2,$1
-  mul $3,$4
-  add $1,$3
-lpe
-mov $0,$1
+trn $0,1
+mov $1,$0
+add $1,1
+add $0,$1
+seq $0,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).

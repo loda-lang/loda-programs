@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,282079 ; Number of n-element subsets of [n+2] having an even sum.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

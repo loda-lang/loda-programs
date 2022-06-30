@@ -1,18 +1,17 @@
 ; A261795: First differences of A261793.
-; Submitted by arkiss
+; Submitted by Dingo
 ; 2,1,1,1,1,1,1,1,2,3,2,2,2,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,3,2,2,2,2,2,2,2,2,3,3,3,2,4,2,2
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,261793 ; Successively add the smallest number that is not a substring in decimal representation.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
+add $0,1
+mov $1,1
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$1
+  seq $0,261794 ; a(n) is the smallest nonzero number that is not a substring of n in decimal representation.
+  add $1,$0
 lpe
-sub $1,$5
-mov $0,$1
+mul $0,2
+sub $0,2
+div $0,2
+add $0,1

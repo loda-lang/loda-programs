@@ -1,10 +1,10 @@
 ; A006928: a(n) = length of (n+1)st run, with initial terms 1, 2.
-; Submitted by Armin Gips
+; Submitted by [SG]KidDoesCrunch
 ; 1,2,1,1,2,1,2,2,1,2,2,1,1,2,1,1,2,2,1,2,1,1,2,1,2,2,1,1,2,1,1,2,1,2,2,1,2,2,1,1,2,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,1,2,1,2,2,1,2,2,1,1,2,1,1,2,1,2,2,1,2,1,1,2,2,1,2,2,1,1,2,1,2,2,1,2,2,1,1,2,1,1,2,2,1
 
-mov $1,$0
-lpb $1
-  mul $1,0
-  seq $0,157686 ; a(n) = A157684(n) - A157685(n).
+lpb $0
+  add $0,1
+  seq $0,49705 ; a(n)=3-k(n), where k=A000002=Kolakoski sequence; also the sequence of runlengths of a is k.
+  mod $0,2
 lpe
 add $0,1

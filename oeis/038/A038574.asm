@@ -5,10 +5,10 @@
 seq $0,7089 ; Numbers in base 3.
 seq $0,4186 ; Arrange digits of n in decreasing order.
 lpb $0
-  mul $1,3
   mov $2,$0
-  div $0,10
   mod $2,10
+  div $0,10
+  mul $1,3
   add $1,$2
 lpe
 mov $0,$1

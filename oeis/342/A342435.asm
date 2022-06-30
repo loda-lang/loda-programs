@@ -4,9 +4,9 @@
 
 mov $3,$0
 lpb $3
+  sub $3,1
   mov $2,$0
   add $2,1
-  sub $3,1
   gcd $2,$3
   mov $4,$2
   sub $4,2

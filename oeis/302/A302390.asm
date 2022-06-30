@@ -3,12 +3,12 @@
 
 mov $4,$0
 mov $6,$0
-bin $0,3
 mod $6,2
 mov $1,$6
 mov $5,2
+bin $0,3
 lpb $0
-  cmp $0,$3
+  cmp $0,0
   mov $2,$1
   mul $2,2
   mov $1,$2
@@ -17,7 +17,7 @@ lpb $0
 lpe
 add $1,$5
 add $1,11
-mov $7,$4
-mul $7,6
-add $1,$7
+mov $3,$4
+mul $3,6
+add $1,$3
 mov $0,$1

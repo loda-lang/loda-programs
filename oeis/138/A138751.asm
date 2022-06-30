@@ -1,6 +1,6 @@
 ; A138751: a(n) = nextprime( p(n)/2 if p(n)=2 (mod 3), 2p(n) else ) = A007918( A138750( A000040( n ))).
-; Submitted by mmonnin
+; Submitted by Opolis
 ; 2,7,3,17,7,29,11,41,13,17,67,79,23,89,29,29,31,127,137,37,149,163,43,47,197,53,211,59,223,59,257,67,71,281,79,307,317,331,89,89,97,367,97,389,101,401,431,449,127,461,127,127,487,127,131,137,137,547,557,149
 
-seq $0,40 ; The prime numbers.
+seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,138757 ; A007918(A138750(n)) = least prime > n/2 if n=2 (mod 3), > 2n otherwise.

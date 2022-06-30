@@ -4,8 +4,8 @@
 
 mov $1,4
 pow $1,$0
-add $0,2
 max $1,5
+add $0,2
 mov $2,2
 pow $2,$0
 add $1,$2

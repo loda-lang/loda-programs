@@ -4,10 +4,10 @@
 mul $0,5
 lpb $0
   mov $2,$0
-  div $0,10
   seq $2,70690 ; a(n) = n^7 mod 5.
   mov $3,$2
   min $3,1
+  div $0,10
   add $1,$3
 lpe
 mov $0,$1

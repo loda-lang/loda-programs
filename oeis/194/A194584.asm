@@ -1,16 +1,10 @@
 ; A194584: Differences of A035336.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Skivelitis2
 ; 5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3
 
-mov $1,1
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-pow $0,2
-div $0,3
-lpb $0
-  mul $0,2
-  div $0,5
-  cmp $1,0
-lpe
-mov $0,$1
+add $0,1
+seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
+min $0,1
+max $0,0
 mul $0,2
 add $0,3

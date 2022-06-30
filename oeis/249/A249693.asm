@@ -1,8 +1,7 @@
 ; A249693: a(4n) = 3*n+1, a(2n+1) = 3*n+2, a(4n+2) = 3*n.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,2,0,5,4,8,3,11,7,14,6,17,10,20,9,23,13,26,12,29,16,32,15,35,19,38,18,41,22,44,21,47,25,50,24,53,28,56,27,59,31,62,30,65,34,68,33,71,37,74,36,77,40,80,39,83,43,86,42,89,46,92,45,95,49,98,48,101,52,104,51,107,55,110,54,113,58,116,57,119,61,122,60,125,64,128,63,131,67,134,66,137,70,140,69,143,73,146,72,149
 
 add $0,1
-seq $0,65172 ; Inverse permutation to A065171.
-seq $0,351412 ; a(1) = 1, a(2) = 2, a(3) = 3. Then if n is even a(n) is the least positive integer not yet in the sequence, otherwise if n is odd a(n) = a(n-1) + a(n-3).
-sub $0,3
+seq $0,74306 ; Inverse of permutation in A074305.
+sub $0,1
