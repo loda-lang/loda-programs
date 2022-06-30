@@ -2,20 +2,11 @@
 ; Submitted by Simon Strandgaard
 ; 1,4,7,16,19,36,39,64,67,100
 
-lpb $0
-  add $2,1
-  sub $0,$2
-  add $1,4
-  mov $2,1
-lpe
-mul $0,2
+sub $2,$0
+add $0,1
 pow $0,2
-pow $1,2
-add $1,$0
-mov $2,$0
-mul $2,2
-sub $2,1
-add $2,$1
-mov $0,$2
-div $0,4
+mov $1,-2
+bin $1,$2
+sub $0,$1
+add $0,$2
 add $0,1

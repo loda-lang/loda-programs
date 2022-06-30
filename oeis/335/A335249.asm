@@ -1,8 +1,8 @@
 ; A335249: Perimeters of isosceles Heronian triangles whose largest two side lengths are equal.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by misaki@med
 ; 36,50,64,72,98,100,108,128,144,150,162,180,192,196,200,216,242,250,252,256,288,294,300,320,324,338,350,360,384,392,396,400,432,448,450,468,484,486,490,500,504,512,540,550,576,578,588,600,612,640,648,650,676,684,686,700
 
-mov $1,1
+mov $1,16
 mov $2,$0
 add $2,7
 pow $2,2

@@ -3,8 +3,8 @@
 
 seq $0,127920 ; 1/6 of product of three numbers: n-th prime, previous and following number.
 mov $1,$0
-gcd $0,2
 mul $1,2
+gcd $0,2
 mul $0,$1
 div $0,2
 mul $0,6

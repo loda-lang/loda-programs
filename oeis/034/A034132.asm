@@ -5,30 +5,25 @@
 mov $5,$0
 mul $0,10
 mov $3,$0
-mov $0,43071
-mov $1,$3
-sub $1,4
-mov $6,$1
-add $0,2
-mov $1,3
-add $6,54
+add $3,50
+mov $0,43073
 lpb $0
   mov $0,6
-  sub $6,4
-  bin $6,2
-  mul $6,2
-  add $1,$6
+  sub $3,4
+  bin $3,2
+  mul $3,2
+  add $1,$3
   div $1,125
 lpe
-add $1,2
 mov $2,$5
 mul $2,13
+add $1,2
 add $1,$2
 mov $4,$5
 mul $4,$5
 mov $2,$4
 mul $2,7
-add $1,$2
 mul $4,$5
+add $1,$2
 add $1,$4
 mov $0,$1

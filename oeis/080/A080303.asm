@@ -8,10 +8,8 @@ max $1,1
 lpb $1
   div $1,2
   mov $4,$0
-  add $4,1
   mod $4,2
-  mul $4,4
-  max $4,1
+  gcd $4,4
   div $0,2
   mul $2,$4
   mov $4,$2

@@ -1,22 +1,12 @@
 ; A026226: Numbers k such that A026136(k) = A026166(k).
-; Submitted by Jamie Morken(w3)
+; Submitted by arona40
 ; 1,7,16,19,25,34,43,46,52,55,61,70,73,79,88,97,100,106,115,124,127,133,136,142,151,154,160,163,169,178,181,187,196,205,208,214,217,223,232,235,241,250,259,262,268,277,286,289,295,298
 
-mov $2,$0
-add $2,3
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
-  sub $0,$3
-  add $1,13
-  mov $4,$0
-  max $4,1
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  seq $0,26179 ; Numbers k such that A026177(j) < A026177(k) for all j < k.
+  mov $1,$0
+  mov $0,0
 lpe
 mov $0,$1
-div $0,13
 mul $0,3
 add $0,1

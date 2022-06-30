@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -4,8 +4,8 @@
 
 lpb $0
   gcd $0,20165
-  mov $2,20165
+  mov $1,20165
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1
 mod $0,2

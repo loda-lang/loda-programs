@@ -10,9 +10,9 @@ lpb $3
   mov $4,$3
   cmp $4,0
   add $3,$4
-  div $1,$3
   div $2,-1
   mul $2,$3
+  div $1,$3
   add $1,$2
   div $1,$0
   div $2,$0

@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   div $2,2
-  seq $2,5585 ; 5-dimensional pyramidal numbers: n(n+1)(n+2)(n+3)(2n+3)/5!.
+  seq $2,5585 ; 5-dimensional pyramidal numbers: a(n) = n*(n+1)*(n+2)*(n+3)*(2n+3)/5!.
   mul $2,2
+  sub $0,1
   add $1,$2
 lpe
 mul $1,8

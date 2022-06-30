@@ -3,10 +3,9 @@
 
 mul $0,3
 add $0,1
-mov $1,6
 lpb $0
   dif $0,2
 lpe
-div $0,$1
+div $0,6
 add $0,1
 mod $0,2

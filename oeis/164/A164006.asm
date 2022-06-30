@@ -24,18 +24,18 @@ lpb $2
   lpe
   mov $7,8
   lpb $5
-    trn $0,8
     trn $5,$7
     mul $5,2
+    trn $0,8
     mov $7,3
   lpe
   add $2,$0
 lpe
-mov $1,$5
 mov $6,$9
 mul $6,4
-add $1,$6
 mov $10,$9
 mul $10,$9
+mov $1,$5
+add $1,$6
 add $1,$10
 mov $0,$1

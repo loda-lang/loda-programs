@@ -4,8 +4,8 @@
 pow $0,4
 mov $1,8
 mul $1,$0
-mov $0,1
 mod $1,14
 sub $1,3
+mov $0,1
 sub $0,$1
 div $0,2

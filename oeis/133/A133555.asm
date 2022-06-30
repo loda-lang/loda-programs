@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,113709 ; a(n) is the composite between p(n) and p(n+1), where p(n) is the n-th prime, which is divisible by (p(n+1)-p(n)).
-sub $0,$1
 sub $0,3
+sub $0,$1

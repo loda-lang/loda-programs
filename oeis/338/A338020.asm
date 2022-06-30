@@ -5,14 +5,14 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   max $0,0
   seq $0,66643 ; a(n) = floor(Pi*n^2).
-  mov $5,$4
-  mul $5,$0
-  add $3,$5
+  mov $1,$4
+  mul $1,$0
+  add $3,$1
 lpe
 min $2,1
 mul $2,$0

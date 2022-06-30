@@ -4,8 +4,8 @@
 mul $0,17
 mov $1,$0
 lpb $1
-  mul $0,8
   trn $1,6
   mod $1,4
+  mul $0,8
 lpe
 div $0,272

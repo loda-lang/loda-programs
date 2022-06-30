@@ -1,5 +1,5 @@
 ; A193561: Augmentation of the triangle A004736.  See Comments.
-; Submitted by BarnardsStern
+; Submitted by Simon Strandgaard
 ; 1,2,1,6,6,3,24,36,30,15,120,240,270,210,105,720,1800,2520,2520,1890,945,5040,15120,25200,30240,28350,20790,10395,40320,141120,272160,378000,415800,374220,270270,135135,362880,1451520,3175200,4989600
 
 mov $1,72
@@ -14,14 +14,12 @@ lpe
 add $3,$0
 lpb $0
   sub $3,1
-  dif $1,$0
   div $1,2
+  dif $1,$0
   mul $1,$3
   sub $4,$1
   sub $0,1
   mov $1,$4
 lpe
 mov $0,$1
-sub $0,72
 div $0,72
-add $0,1

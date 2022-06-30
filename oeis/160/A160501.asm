@@ -7,15 +7,15 @@ lpb $3
   add $0,$3
   mov $5,2
   lpb $5
+    sub $5,1
     sub $0,1
     mov $2,$0
     max $2,0
     seq $2,62481 ; a(n) = n^prime(n).
     mov $3,0
-    mov $6,3
-    mul $6,$2
-    add $4,$6
-    sub $5,1
+    mov $1,3
+    mul $1,$2
+    add $4,$1
   lpe
 lpe
 mov $0,$4

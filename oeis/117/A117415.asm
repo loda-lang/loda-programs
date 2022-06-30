@@ -1,9 +1,6 @@
 ; A117415: E.g.f. (x*tan(x)-x^2)/8 (even powers only).
-; Submitted by [SG]ATA-Rolf
+; Submitted by Jim Weng
 ; 0,0,1,12,272,9920,530688,39144448,3807514624,472197021696,72722212782080,13616619646091264,3046271659520557056,802494810618175946752,245880605613803859607552,86696940704285991905525760,34855851028500677184683245568
 
-mov $1,$0
-trn $1,1
-seq $1,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
-mul $0,$1
+seq $0,24255 ; a(0)=0, a(n) = n*E(2n-1) for n >= 1, where E(n) = A000111(n) are the Euler (or up-down) numbers.
 div $0,4

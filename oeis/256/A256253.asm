@@ -4,7 +4,6 @@
 
 mov $5,$0
 mov $3,2
-gcd $3,$4
 lpb $3
   sub $3,1
   mov $0,$5

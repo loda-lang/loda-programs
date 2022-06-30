@@ -6,15 +6,15 @@ mov $1,1
 mov $3,$0
 mul $3,3
 lpb $3
-  add $1,$5
+  sub $3,1
   mul $6,2
-  add $1,$6
   sub $1,4
+  add $1,$5
+  add $1,$6
   add $1,$2
   add $2,$1
-  mul $1,2
   mul $2,2
-  sub $3,1
+  mul $1,2
   add $6,$1
   mul $6,2
   add $6,$5
