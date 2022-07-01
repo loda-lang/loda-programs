@@ -4,35 +4,29 @@
 
 mov $1,1
 mov $2,1
-mov $3,16
 mov $4,$0
-mul $3,$1
 add $4,3
-add $3,1
-sub $3,1
 mov $7,10
-sub $3,$1
 pow $7,$4
+mov $3,15
 lpb $3
-  mov $4,$2
-  pow $4,2
-  mul $4,19
+  sub $3,1
   mov $5,$1
   pow $5,2
-  mul $4,3
+  mov $4,$2
+  pow $4,2
+  mul $4,57
   add $4,$5
   mov $6,$1
-  mov $1,$4
   mul $6,$2
   mul $6,2
-  mov $2,$6
-  mov $9,$4
   mov $8,$4
   div $8,$7
   max $8,2
+  mov $1,$4
   div $1,$8
+  mov $2,$6
   div $2,$8
-  sub $3,1
 lpe
 div $2,100
 mov $0,$2

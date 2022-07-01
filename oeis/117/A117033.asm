@@ -7,11 +7,11 @@ mov $2,1
 mov $3,$0
 mul $3,5
 lpb $3
-  mul $1,2
   mov $5,$3
   mul $5,2
   add $5,1
   mul $2,$5
+  mul $1,2
   add $1,$2
   mul $1,2
   mul $5,$0

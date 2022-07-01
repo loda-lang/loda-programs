@@ -1,9 +1,7 @@
 ; A038492: Sums of 2 distinct powers of 12.
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 13,145,156,1729,1740,1872,20737,20748,20880,22464,248833,248844,248976,250560,269568,2985985,2985996,2986128,2987712,3006720,3234816,35831809,35831820,35831952,35833536,35852544,36080640,38817792,429981697,429981708,429981840,429983424,430002432,430230528
 
 seq $0,84468 ; Odd numbers with exactly 3 ones in binary expansion.
 seq $0,97258 ; Numbers whose set of base 12 digits is {0,B}, where B base 12 = 11 base 10.
-sub $0,1727
 div $0,132
-add $0,13

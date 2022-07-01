@@ -8,10 +8,10 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $2,$5
   mov $4,$0
   max $4,0
   seq $4,329697 ; a(n) is the number of iterations needed to reach a power of 2 starting at n and using the map k -> k-(k/p), where p is the largest prime factor of k.
+  mov $2,$5
   mul $2,$4
   add $1,$2
 lpe

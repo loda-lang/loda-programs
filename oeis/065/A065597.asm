@@ -8,10 +8,10 @@ lpb $0
   mov $4,$3
   mov $3,$2
   mov $2,$1
+  sub $2,1
   mul $1,$3
   mul $1,2
   sub $1,$4
   max $1,1
-  sub $2,1
 lpe
 mov $0,$1

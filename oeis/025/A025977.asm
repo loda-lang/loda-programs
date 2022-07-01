@@ -5,6 +5,6 @@
 mov $1,$0
 seq $0,21074 ; Expansion of 1/((1-x)(1-2x)(1-4x)(1-5x)).
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe

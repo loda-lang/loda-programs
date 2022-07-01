@@ -4,6 +4,6 @@
 
 seq $0,269551 ; Expansion of (3*x^2 + 258*x - 5)/(x^3 - 99*x^2 + 99*x - 1).
 sub $0,1
-mov $2,3
-sub $2,$0
-mov $0,$2
+mov $1,3
+sub $1,$0
+mov $0,$1

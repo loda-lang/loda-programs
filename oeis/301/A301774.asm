@@ -1,20 +1,11 @@
 ; A301774: Number of chordless cycles in the (2n+1)-prism graph.
-; Submitted by Christian Krause
+; Submitted by Gunnar Hjern
 ; 2,12,30,74,200,522,1362,3572,9350,24474,64080,167762,439202,1149852,3010350,7881194,20633240,54018522,141422322,370248452,969323030,2537720634,6643838880,17393796002,45537549122,119218851372,312119004990,817138163594,2139295485800
 
-mul $0,2
-add $0,2
-lpb $0
-  sub $0,1
-  add $3,2
-  sub $3,$4
-  mov $4,$2
-  add $2,$1
-  add $5,$4
-  mov $1,$3
-  mov $3,$5
-  add $4,1
-lpe
-add $5,1
-mov $0,$5
+add $0,1
+mov $1,$0
+add $1,$0
+mov $0,$1
+seq $0,7039 ; Number of cyclic binary n-bit strings with no alternating substring of length > 2.
+div $0,2
 mul $0,2

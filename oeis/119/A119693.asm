@@ -1,6 +1,10 @@
 ; A119693: a(n) = binomial(2*n,n) * Fibonacci(n)/2.
-; Submitted by Jamie Morken(l1)
+; Submitted by ChUcK
 ; 0,1,3,20,105,630,3696,22308,135135,826540,5080790,31391724,194699232,1211669900,7561979100,47310843600,296633172465,1863384566670,11725074807600,73889273973900,466265883733650,2945885346810120
 
-seq $0,119692 ; a(n) = binomial(2*n,n) * Fibonacci(n).
+mov $1,$0
+mul $0,2
+bin $0,$1
+seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mul $0,$1
 div $0,2

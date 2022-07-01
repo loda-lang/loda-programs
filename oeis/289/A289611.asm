@@ -1,7 +1,10 @@
 ; A289611: Related to number of mesh patterns of length 2 that avoid the pattern 321.
-; Submitted by fzs600
+; Submitted by Skivelitis2
 ; 1,1,1,3,9,32,113,393,1361,4728,16533
 
+lpb $0
+  mov $0,16
+lpe
 lpb $0
   mov $1,$0
   seq $1,289610 ; Related to number of mesh patterns of length 2 that avoid the pattern 321.

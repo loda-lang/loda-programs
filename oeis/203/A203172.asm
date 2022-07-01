@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   mul $2,2
   trn $2,1
   seq $2,56571 ; Fourth power of Fibonacci numbers A000045.
+  sub $0,1
   add $1,$2
   mul $1,-1
 lpe

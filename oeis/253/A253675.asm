@@ -8,6 +8,3 @@ mul $0,2
 add $0,$1
 seq $0,129445 ; Numbers k > 0 such that k^2 is a centered triangular number.
 pow $0,2
-div $0,6
-mul $0,6
-add $0,1
