@@ -31,7 +31,7 @@ fi
 seqs=$(cat $asinfo | grep "_${author}_" | cut -f1)
 
 for s in $seqs; do
-  p=oeis/${s:1:3}/${s}.asm
+  p=../oeis/${s:1:3}/${s}.asm
   if [ -f ${lodaroot}/$p ]; then
     d=$(head -n 1 ${lodaroot}/$p | cut -f2 -d':')
     if [ $links = true ]; then
