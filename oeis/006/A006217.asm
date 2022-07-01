@@ -1,0 +1,10 @@
+; A006217: Number of down-up permutations of n+5 starting with 5.
+; Submitted by [SG]KidDoesCrunch
+; 5,16,56,224,1024,5296,30656,196544,1383424,10608976,88057856,786632864,7525556224,76768604656,831846342656,9541952653184,115516079079424,1471865234248336,19689636672045056,275914012819601504
+
+add $0,1
+mov $1,$0
+seq $1,1250 ; Number of alternating permutations of order n.
+seq $0,292758 ; E.g.f.: (tan x + sec x)^3.
+mul $0,2
+sub $0,$1

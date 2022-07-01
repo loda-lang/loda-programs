@@ -4,7 +4,7 @@
 
 seq $0,45309 ; Primes congruent to {0, 2} mod 3.
 mul $0,2
-add $2,$0
-bin $2,2
-mov $0,$2
+add $1,$0
+bin $1,2
+mov $0,$1
 div $0,3

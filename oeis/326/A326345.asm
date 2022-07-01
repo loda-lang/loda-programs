@@ -1,11 +1,10 @@
 ; A326345: a(n) is the number of arm movements when expressing n in flag semaphore, counting the movement of each arm separately.
-; Submitted by Jamie Morken(l1)
+; Submitted by Fardringle
 ; 6,6,6,6,5,5,6,6,6,5,7,6,7
 
 lpb $0
   mod $0,2
-  mul $0,15
-  add $0,15
+  add $0,12
 lpe
 mov $1,1
 lpb $0

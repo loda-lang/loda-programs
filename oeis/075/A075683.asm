@@ -1,5 +1,5 @@
 ; A075683: 2nd differences of A075681.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]KidDoesCrunch
 ; 2,17,20,22,25,28,31,34,37,40
 
 mov $2,$0
@@ -11,13 +11,11 @@ lpb $0
   add $1,2
   lpb $1
     add $2,$1
-    cmp $4,0
     trn $1,8
   lpe
-  add $3,$4
   lpb $0
     mod $0,5
-    sub $2,$3
+    sub $2,1
   lpe
   div $0,5
 lpe

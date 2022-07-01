@@ -4,8 +4,8 @@
 lpb $0
   add $1,1
   mov $2,$0
-  dif $0,2
   bin $2,2
+  dif $0,2
 lpe
 trn $1,$2
 mov $0,$1

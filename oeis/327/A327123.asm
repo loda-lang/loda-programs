@@ -10,7 +10,7 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,56594 ; Periodic sequence 1,0,-1,0,...; expansion of 1/(1 + x^2).
+  seq $0,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).
   add $3,$0
 lpe
 mov $0,$3

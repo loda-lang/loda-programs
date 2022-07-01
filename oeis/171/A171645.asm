@@ -6,9 +6,9 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $1,$0
-  mov $0,0
   max $1,0
   seq $1,57602 ; a(1)=2, a(n+1) is the smallest integer > a(n) such that the smallest prime factor of a(n+1) is the largest prime factor of a(n).
+  mov $0,0
 lpe
 mov $0,$1
 mul $0,2

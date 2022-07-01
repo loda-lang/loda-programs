@@ -4,6 +4,5 @@
 
 div $0,2
 add $0,1
-mod $0,72
 seq $0,6954 ; Denominators of Bernoulli numbers B_0, B_1, B_2, B_4, B_6, ...
 div $0,2

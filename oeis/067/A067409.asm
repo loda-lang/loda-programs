@@ -4,11 +4,11 @@
 mov $2,1
 lpb $0
   sub $0,1
-  add $3,$2
+  add $1,$2
+  mul $1,81
   mov $2,5
-  mul $3,81
 lpe
-mov $0,$3
+mov $0,$1
 div $0,81
 mul $0,16
 add $0,1

@@ -4,23 +4,23 @@
 
 mov $2,$0
 add $2,3
-mul $2,2
-mov $4,1073741824
+mul $2,10
+mov $4,357913941
 add $0,1
 lpb $2
   sub $2,1
-  mov $3,$1
   seq $3,32615 ; a(n) = floor(n/Pi).
-  add $3,7
   pow $3,$0
   add $3,$4
   gcd $3,2
   sub $0,$3
   add $0,1
+  bin $3,0
+  add $3,$1
   add $1,$4
   mov $4,$0
   max $4,0
   cmp $4,$0
 lpe
 mov $0,$1
-sub $0,1073741826
+sub $0,357913944
