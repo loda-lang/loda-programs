@@ -7,6 +7,8 @@ for cmd in cat date git gnuplot grep seq; do
   fi
 done
 
+pushd .. > /dev/null
+
 if [ ! -f counts.dat ]; then
   echo "Counting programs"
   for commit in $(git rev-list main); do
@@ -37,3 +39,5 @@ EOF
 gnuplot counts.gp
 # rm counts.gp
 # rm counts.dat
+
+popd > /dev/null

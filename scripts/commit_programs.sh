@@ -2,6 +2,8 @@
 
 # set -euox pipefail
 
+pushd .. > /dev/null
+
 # add programs
 echo "adding programs"
 files=
@@ -96,3 +98,5 @@ git pull -X theirs
 git fetch upstream
 git merge -X theirs -m "merge upstream" upstream/main
 git push
+
+popd .. > /dev/null
