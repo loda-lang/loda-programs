@@ -40,4 +40,4 @@ fi
 git pull -X theirs
 git push
 
-popd .. > /dev/null
+popd > /dev/null
