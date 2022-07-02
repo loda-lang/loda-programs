@@ -4,8 +4,8 @@
 pow $0,2
 div $0,2
 mov $2,$0
-mov $0,6
 sub $2,5
+mov $0,6
 div $0,$2
 sub $1,$0
 add $1,10

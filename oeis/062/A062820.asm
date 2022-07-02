@@ -5,7 +5,7 @@
 mov $1,2
 lpb $0
   mov $2,$0
-  seq $2,62007 ; mu(n)* prime(n).
+  seq $2,62007 ; a(n) = mu(n)*prime(n).
   sub $0,1
   add $1,$2
 lpe

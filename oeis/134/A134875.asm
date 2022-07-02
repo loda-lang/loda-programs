@@ -4,8 +4,8 @@
 lpb $0
   mov $2,$0
   seq $2,63655 ; Smallest semiperimeter of integral rectangle with area n.
-  add $3,$2
-  sub $3,1
-  mov $0,$3
+  add $1,$2
+  sub $1,1
+  mov $0,$1
 lpe
 add $0,1

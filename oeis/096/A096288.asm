@@ -9,6 +9,6 @@ lpb $0
   mul $2,4
   sub $2,$0
   seq $2,65363 ; Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

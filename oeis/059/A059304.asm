@@ -5,6 +5,6 @@ mov $1,$0
 mul $0,2
 bin $0,$1
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe

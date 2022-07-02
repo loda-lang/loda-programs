@@ -3,8 +3,8 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,38718 ; Number of permutations P of {1,2,...,n} such that P(1)=1 and |P^-1(i+1)-P^-1(i)| equals 1 or 2 for i=1,2,...,n-1.
+  mov $0,0
 lpe
 add $1,1
 mov $0,$1

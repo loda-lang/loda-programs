@@ -1,22 +1,16 @@
 ; A336337: Total number of records over all length n ternary words (words on alphabet {0,1,2}).
-; Submitted by Jamie Morken(s2)
+; Submitted by Merlin2331
 ; 0,3,12,41,132,413,1272,3881,11772,35573,107232,322721,970212,2914733,8752392,26273561,78853452,236625893,710008752,2130288401,6391389492,19175217053,57527748312,172587439241,517770706332,1553328896213,4660020243072,13980127838081
 
-mov $1,3
+mov $1,1
 lpb $0
   sub $0,1
-  trn $2,2
-  add $3,$2
-  add $3,$1
-  add $1,$3
-  add $2,1
-  sub $3,$2
-  mul $2,2
-  add $2,1
-  trn $3,3
-  add $3,$1
+  add $2,2
+  add $2,$1
+  add $3,1
   mov $1,$3
-  mov $3,0
+  add $1,$2
+  add $1,$2
+  mul $3,2
 lpe
-mov $0,$1
-sub $0,3
+mov $0,$2

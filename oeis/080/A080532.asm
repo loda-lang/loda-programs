@@ -3,11 +3,11 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,70469 ; a(n) = n^2 mod 47.
   mov $3,$2
   bin $3,7
   min $3,1
+  sub $0,1
   add $1,$3
 lpe
 mul $1,4

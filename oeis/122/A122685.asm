@@ -8,8 +8,8 @@ mov $2,1
 lpb $3
   sub $3,1
   max $3,1
-  add $4,$0
+  add $1,$0
   gcd $0,2
-  mul $2,$4
+  mul $2,$1
 lpe
 mov $0,$2

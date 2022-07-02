@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   trn $2,1
   seq $2,64412 ; At stage 1, start with a unit equilateral equiangular triangle. At each successive stage add 3*(n-1) new triangles around outside with edge-to-edge contacts. Sequence gives number of triangles (regardless of size) at n-th stage.
-  add $3,$2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

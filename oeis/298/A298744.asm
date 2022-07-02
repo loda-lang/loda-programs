@@ -7,17 +7,17 @@ pow $2,$0
 mov $3,$0
 mul $3,4
 lpb $3
+  sub $3,1
   add $6,$2
   div $6,3
   mul $6,2
   add $1,$6
   sub $1,$5
-  sub $2,4
   add $2,$1
   add $5,$1
   mul $1,2
+  sub $2,4
   mul $2,2
-  sub $3,1
   add $5,$2
   add $6,$5
 lpe

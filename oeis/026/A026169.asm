@@ -5,8 +5,8 @@
 lpb $0
   trn $0,1
   seq $0,26139 ; a(n) = s(k), where k is the n-th number such that s(j) < s(k) for all j < k, where s = A026136. Also a(n) = 2*t(n) - 1, where t = A026138.
-  mov $2,$0
-  mov $0,$1
+  mov $1,$0
+  mov $0,0
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

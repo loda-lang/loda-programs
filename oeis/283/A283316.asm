@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,4
   bin $2,3
+  div $0,4
   add $1,$2
 lpe
 mod $1,2

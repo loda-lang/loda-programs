@@ -5,7 +5,7 @@
 lpb $0
   seq $0,47994 ; Unitary totient (or unitary phi) function uphi(n).
   sub $0,1
-  add $2,2
+  add $1,2
 lpe
-mov $0,$2
+mov $0,$1
 div $0,2

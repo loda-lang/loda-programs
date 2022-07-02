@@ -8,19 +8,14 @@ add $0,1
 div $0,2
 lpb $0
   sub $0,1
-  trn $1,$0
   add $2,2
-  mov $5,$1
-  cmp $5,0
-  mul $5,$0
-  mov $3,$1
-  add $3,$5
-  add $4,$0
-  lpb $4
+  mov $3,$0
+  add $1,$0
+  lpb $1
     add $2,$0
     sub $3,5
     div $3,2
-    mov $4,$3
+    mov $1,$3
   lpe
 lpe
 mov $0,$2

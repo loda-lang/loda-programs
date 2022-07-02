@@ -2,15 +2,15 @@
 ; Submitted by Jamie Morken(m3)
 ; 0,0,0,0,0,1,1,1,1,0,3,2
 
-mov $2,$0
+mov $1,$0
 lpb $0
   lpb $0
-    mul $2,$0
+    mul $1,$0
     dif $0,9
   lpe
   mod $0,5
 lpe
 add $0,3
-div $2,$0
-mov $0,$2
+div $1,$0
+mov $0,$1
 mod $0,10

@@ -5,6 +5,6 @@ mov $1,$0
 div $0,4
 mul $0,2
 gcd $1,2
-add $1,$0
 sub $1,2
+add $1,$0
 mov $0,$1

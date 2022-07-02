@@ -1,8 +1,15 @@
 ; A104220: a(n) = Fibonacci[n]+1-Mod[Fibonacci[n],2]
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by den777
 ; 1,1,1,3,3,5,9,13,21,35,55,89,145,233,377,611,987,1597,2585,4181,6765,10947,17711,28657,46369,75025,121393,196419,317811,514229,832041,1346269,2178309,3524579,5702887,9227465,14930353,24157817,39088169
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-div $0,2
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $2,$3
+  add $3,$1
+  mov $1,$2
+lpe
+div $2,2
+mov $0,$2
 mul $0,2
 add $0,1

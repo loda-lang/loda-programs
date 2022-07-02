@@ -9,14 +9,10 @@ gcd $2,2
 lpb $2
   sub $2,1
   mov $0,$3
-  sub $3,1
   sub $0,$2
   mul $1,$0
-  pow $2,2
   seq $0,122045 ; Euler (or secant) numbers E(n).
   gcd $0,0
   add $1,$0
-  sub $4,$2
 lpe
-mov $4,6
 mov $0,$1

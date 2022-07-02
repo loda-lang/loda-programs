@@ -1,5 +1,5 @@
 ; A130711: Number of compositions of n such that the smallest part divides every part.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Pheidologeton
 ; 1,2,4,8,14,32,57,123,239,493,970,1997,3953,8017,16024,32281,64550,129742,259561,520606,1041871,2087177,4176594,8362063,16730862,33483361,66987710,134029333,268117646,536373213,1072909785,2146169660
 
 add $0,1
@@ -21,6 +21,4 @@ lpb $0
   add $5,$2
 lpe
 mov $0,$2
-sub $0,3
 div $0,3
-add $0,1

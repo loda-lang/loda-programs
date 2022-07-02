@@ -8,9 +8,9 @@ mov $3,$0
 lpb $3
   sub $3,1
   lpb $1
-    mov $3,1
     mov $2,10
     pow $2,$1
+    mov $3,1
     mov $4,$2
     div $4,$0
     mod $2,$0

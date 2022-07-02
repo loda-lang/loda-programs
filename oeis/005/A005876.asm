@@ -1,8 +1,19 @@
 ; A005876: Theta series of cubic lattice with respect to edge.
-; Submitted by Gunnar Hjern
+; Submitted by fzs600
 ; 2,8,10,8,16,16,10,24,16,8,32,24,18,24,16,24,32,32,16,32,34,16,48,16,16,56,32,24,32,40,26,48,48,16,32,32,32,56,48,24,64,32,26,56,16,40,64,64,16,40,48,32,80,32,32,64,50,40,48,48,48,56,48,16,64,72,32,88,32,24,80,64,34,72,64,32,64,48,32,40,80,56,96,40,32,112,32,56,64,32,42,80,96,40,64,80,32,88,48,24
 
-seq $0,246954 ; Expansion of phi(-x) * psi(-x)^2 in powers of x where phi(), psi() are Ramanujan theta functions.
-gcd $1,$0
-mov $0,$1
+mov $3,3
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,104794 ; Expansion of theta_4(q)^2 in powers of q.
+  add $1,$2
+  mov $3,2
+  add $3,$4
+  add $4,2
+lpe
+gcd $5,$1
+mov $0,$5
 mul $0,2

@@ -160,6 +160,7 @@ A175223: a(n) = prime(n) + 7.
 A175224: a(n) = prime(n) + 8.
 A175225: a(n) = prime(n) + 10.
 A176406: Odd semiprimes minus 2.
+A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent B_1.
 A179262: a(n) = 2*prime(n)^2 - 1.
 A182200: a(n) = prime(n)^2-3.
 A193916: Mirror of the triangle A193915.
@@ -168,6 +169,7 @@ A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A229787: Primes modulo 24.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
+A239050: a(n) = 4*sigma(n).
 A240068: Number of prime Lipschitz quaternions having norm prime(n).
 A242119: Primes modulo 18.
 A242120: Primes modulo 20.

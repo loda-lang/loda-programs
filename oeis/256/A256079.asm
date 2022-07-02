@@ -5,8 +5,8 @@ mov $1,10
 add $1,$0
 mov $2,10
 lpb $2
-  mov $1,$0
   mov $2,$0
+  mov $1,$0
 lpe
 add $1,1
 mov $0,$1

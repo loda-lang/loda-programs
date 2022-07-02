@@ -1,5 +1,5 @@
 ; A173490: Even abundant numbers (even numbers n whose sum of divisors exceeds 2n).
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by owensse
 ; 12,18,20,24,30,36,40,42,48,54,56,60,66,70,72,78,80,84,88,90,96,100,102,104,108,112,114,120,126,132,138,140,144,150,156,160,162,168,174,176,180,186,192,196,198,200,204,208,210,216,220,222,224,228,234,240,246,252,258,260,264,270,272,276,280,282,288,294,300,304,306,308,312,318,320,324,330,336,340,342,348,350,352,354,360,364,366,368,372,378,380,384,390,392,396,400,402,408,414,416
 
 seq $0,316100 ; Numbers k such that k is deficient but k+1 is abundant, that is, a deficient number followed by an abundant number.

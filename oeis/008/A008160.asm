@@ -5,11 +5,10 @@
 pow $0,2
 mul $0,2
 mov $1,$0
-add $1,$0
 sub $0,1
 mul $0,2
 div $0,3
-mul $1,4
+mul $1,8
 div $1,5
 sub $1,$0
 mov $0,$1

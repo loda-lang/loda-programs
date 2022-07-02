@@ -8,10 +8,10 @@ lpb $0
   sub $0,1
   add $1,$3
   max $3,3
+  sub $3,1
   sub $3,$1
   add $1,$2
   add $2,1
-  sub $3,1
   add $1,$3
   sub $1,$2
   sub $2,$3

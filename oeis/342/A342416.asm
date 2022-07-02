@@ -3,6 +3,6 @@
 ; 1,1,1,1,1,1,1,1,2,1,1,2,1,3,8,1,1,1,1,4,2,1,1,1,2,3,1,2,1,1,1,1,2,1,12,2,1,3,8,1,1,1,1,2,1,1,1,2,2,1,4,4,1,1,8,1,2,1,1,2,1,3,1,1,6,1,1,4,2,1,1,1,1,3,1,2,6,1,1,2,2,1,1,2,2,3,8,5,1,1,4,2,2,1,24,1,1,1,5,2
 
 mov $1,$0
+seq $1,342001 ; Arithmetic derivative without its inherited divisor; the arithmetic derivative of n divided by A003557(n), which is a common divisor of both n and A003415(n).
 seq $0,173557 ; a(n) = Product_{primes p dividing n} (p-1).
-seq $1,342001 ; Arithmetic derivative of n divided by {n / the largest squarefree divisor of n}: a(n) = A003415(n) / A003557(n).
 gcd $0,$1

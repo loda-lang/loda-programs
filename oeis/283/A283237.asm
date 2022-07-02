@@ -4,4 +4,4 @@
 
 mul $0,3
 add $0,2
-seq $0,1157 ; sigma_2(n): sum of squares of divisors of n.
+seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.

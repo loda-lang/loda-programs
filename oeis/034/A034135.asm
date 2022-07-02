@@ -8,9 +8,8 @@ lpb $0
   sub $0,1
   add $2,10
 lpe
-mov $3,$2
-pow $3,3
-add $1,$3
+mov $1,$2
+pow $1,3
 add $0,$1
 div $0,1000
 add $0,1

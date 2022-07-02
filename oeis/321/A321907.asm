@@ -5,10 +5,10 @@
 mov $4,$0
 mov $6,2
 lpb $6
-  mov $0,$4
-  mov $1,0
   sub $6,1
+  mov $0,$4
   add $0,$6
+  mov $1,0
   mov $2,1
   mov $3,1
   lpb $0
@@ -22,9 +22,9 @@ lpb $6
     mul $3,$1
     add $2,$3
   lpe
-  mov $0,$2
   mov $7,$6
   mul $7,$2
+  mov $0,$2
   add $5,$7
 lpe
 min $4,1

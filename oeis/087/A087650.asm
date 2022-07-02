@@ -4,21 +4,17 @@
 
 mov $3,$0
 mov $4,2
-mul $1,$4
-sub $4,$1
-sub $1,$5
 lpb $4
-  mov $0,$3
   sub $4,1
+  mov $0,$3
   add $0,$4
   trn $0,1
   seq $0,173109 ; Row sums of triangle A173108.
   mov $2,$4
   mul $2,$0
-  add $5,$2
-  add $3,$1
+  add $1,$2
 lpe
 min $3,1
 mul $3,$0
-mov $0,$5
+mov $0,$1
 sub $0,$3

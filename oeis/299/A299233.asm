@@ -6,5 +6,5 @@ mov $1,$0
 seq $1,80543 ; In binary representation: keep the first digit and rotate left the others twice.
 div $1,4
 mul $0,2
-sub $0,$1
 add $0,1
+sub $0,$1

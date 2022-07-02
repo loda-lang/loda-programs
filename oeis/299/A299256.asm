@@ -4,8 +4,6 @@
 
 mov $2,$0
 mov $3,$0
-mul $0,2
-sub $0,$2
 lpb $0
   mul $2,$0
   sub $2,6

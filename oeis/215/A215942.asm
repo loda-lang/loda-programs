@@ -6,6 +6,7 @@ mul $0,6
 mov $1,1
 mov $2,$0
 lpb $0
+  sub $3,2
   add $3,$1
   mov $1,$2
   dif $1,$0
@@ -13,7 +14,6 @@ lpb $0
   cmp $1,0
   mul $1,$0
   sub $0,1
-  sub $3,2
 lpe
 add $1,$3
 mov $0,$1

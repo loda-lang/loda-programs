@@ -4,6 +4,6 @@
 
 mov $1,$0
 seq $1,79858 ; E.g.f. 1/(cos(2*x) - sin(2*x)).
-seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
 dif $1,2
+seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
 mul $0,$1

@@ -6,8 +6,8 @@ mov $2,$0
 mov $3,$0
 add $3,1
 lpb $3
-  mov $0,$2
   sub $3,1
+  mov $0,$2
   sub $0,$3
   seq $0,64405 ; Number of even entries (A048967) minus the number of odd entries (A001316) in row n of Pascal's triangle (A007318).
   add $1,$0

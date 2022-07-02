@@ -3,7 +3,7 @@
 
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 lpb $0
-  mov $2,$0
+  mov $1,$0
   div $0,7
 lpe
-mov $0,$2
+mov $0,$1

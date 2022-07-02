@@ -4,11 +4,11 @@
 
 mov $1,$0
 add $1,1
-mov $0,$1
 mov $2,10
 pow $2,$1
-mul $0,$2
+mov $0,$1
 gcd $1,$2
+mul $0,$2
 div $0,$1
 mul $0,9
 div $0,90

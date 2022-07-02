@@ -1,8 +1,6 @@
 ; A074941: a(n) = sigma(n) mod 3.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by [AF>Amis des Lapins] Phil1966
 ; 1,0,1,1,0,0,2,0,1,0,0,1,2,0,0,1,0,0,2,0,2,0,0,0,1,0,1,2,0,0,2,0,0,0,0,1,2,0,2,0,0,0,2,0,0,0,0,1,0,0,0,2,0,0,0,0,2,0,0,0,2,0,2,1,0,0,2,0,0,0,0,0,2,0,1,2,0,0,2,0,1,0,0,2,0,0,0,0,0,0,1,0,2,0,0,0,2,0,0,1
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-add $1,$0
-mod $1,3
-mov $0,$1
+mod $0,3
