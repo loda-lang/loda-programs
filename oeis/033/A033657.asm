@@ -4,11 +4,11 @@
 
 mov $2,$0
 lpb $2
+  sub $2,1
   mov $0,$1
   add $0,23
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $1,$0
-  sub $2,1
 lpe
 mov $0,$1
 add $0,23

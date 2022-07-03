@@ -8,12 +8,12 @@ mov $2,1
 add $2,$0
 mov $3,1
 lpb $3
+  div $3,9
   max $4,$0
   mul $4,$2
   add $1,$4
   add $1,1
   mul $1,$2
-  div $3,9
 lpe
 sub $1,21
 div $1,6

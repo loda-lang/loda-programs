@@ -9,8 +9,8 @@ lpb $0
   mov $1,$4
   add $3,3
   add $3,$2
-  mov $2,1
   add $4,3
+  mov $2,1
   add $2,$4
   mul $3,3
   add $3,$0

@@ -11,8 +11,8 @@ lpb $0
   add $4,$3
   add $3,$4
   add $3,1
-  add $1,$3
   add $4,$2
+  add $1,$3
   add $3,$4
   sub $4,$3
   sub $2,$4

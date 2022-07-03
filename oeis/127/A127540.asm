@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,71738 ; Expansion of (1+x^3*C^4)*C, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
-  add $3,$2
+  trn $0,2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

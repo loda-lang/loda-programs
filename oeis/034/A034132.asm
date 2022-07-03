@@ -1,29 +1,9 @@
 ; A034132: Decimal part of cube root of a(n) starts with 6: first term of runs.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 18,47,98,176,288,439,637,885,1192,1561,2001,2516,3113,3797,4575,5452,6435,7530,8742,10078,11544,13145,14887,16778,18822,21025,23394,25935,28653,31555,34646,37934,41422,45119,49028,53158,57513,62100,66924
 
-mov $5,$0
-mul $0,10
-mov $3,$0
-add $3,50
-mov $0,43073
-lpb $0
-  mov $0,6
-  sub $3,4
-  bin $3,2
-  mul $3,2
-  add $1,$3
-  div $1,125
-lpe
-mov $2,$5
-mul $2,13
-add $1,2
-add $1,$2
-mov $4,$5
-mul $4,$5
-mov $2,$4
-mul $2,7
-mul $4,$5
-add $1,$2
-add $1,$4
-mov $0,$1
+mul $0,5
+add $0,13
+pow $0,3
+div $0,125
+add $0,1

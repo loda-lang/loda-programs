@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,6864 ; Number of Hamiltonian cycles in P_4 X P_n.
+  sub $0,1
   add $1,$2
   add $1,$2
 lpe

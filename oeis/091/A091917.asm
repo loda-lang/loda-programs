@@ -12,11 +12,11 @@ max $1,0
 add $1,2
 add $1,$0
 div $1,-1
-add $0,$1
 mov $2,$1
-add $1,1
-bin $1,$0
 trn $2,-3
 mul $2,-1
+add $0,$1
+add $1,1
+bin $1,$0
 add $1,$2
 mov $0,$1

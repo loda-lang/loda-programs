@@ -1,34 +1,8 @@
 ; A161946: Odd part of sum of unitary divisors of n.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,3,1,5,3,3,1,9,5,9,3,5,7,3,3,17,9,15,5,15,1,9,3,9,13,21,7,5,15,9,1,33,3,27,3,25,19,15,7,27,21,3,11,15,15,9,3,17,25,39,9,35,27,21,9,9,5,45,15,15,31,3,5,65,21,9,17,45,3,9,9,45,37,57,13,25,3,21,5,51,41,63,21,5,27,33,15,27,45,45,7,15,1,9,15,33,49,75,15,65
 
-mov $1,1
-add $0,1
+seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
 lpb $0
-  mov $3,$0
-  lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $2,1
-    max $4,$5
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-  lpe
-  add $5,1
-  mul $1,$5
+  dif $0,2
 lpe
-lpb $1
-  dif $1,2
-lpe
-mov $0,$1

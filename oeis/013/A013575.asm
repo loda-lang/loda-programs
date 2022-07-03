@@ -4,8 +4,8 @@
 mul $0,2
 add $0,1
 mov $1,$0
-mul $0,3
 div $1,3
 cmp $1,1
+mul $0,3
 add $0,$1
 add $0,3

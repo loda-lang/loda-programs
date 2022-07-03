@@ -6,15 +6,15 @@ mov $2,1
 mov $3,$0
 mul $3,4
 lpb $3
-  mul $2,$3
-  mov $4,$5
+  mov $4,$1
   cmp $4,0
-  add $5,$4
-  div $2,$5
+  add $1,$4
+  mul $2,$3
+  div $2,$1
   sub $3,1
-  add $5,1
-  lpb $5
-    mod $5,5
+  add $1,1
+  lpb $1
+    mod $1,5
   lpe
 lpe
 mov $0,$2

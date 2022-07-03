@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,4718 ; The Danish composer Per Nørgård's "infinity sequence", invented in an attempt to unify in a perfect way repetition and variation: a(2n) = -a(n), a(2n+1) = a(n) + 1, a(0) = 0.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

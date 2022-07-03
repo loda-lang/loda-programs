@@ -7,7 +7,7 @@ add $1,1
 lpb $1
   sub $1,1
   mov $0,$2
-  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $2,$1
   add $3,$0
 lpe

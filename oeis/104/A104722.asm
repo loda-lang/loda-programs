@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   div $2,2
   seq $2,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

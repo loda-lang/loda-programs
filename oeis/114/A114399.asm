@@ -17,5 +17,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mul $1,$1
+pow $1,2
 mov $0,$1

@@ -5,7 +5,7 @@
 add $0,1
 seq $0,189604 ; Number of n X 3 array permutations with each element not moving, or moving one space E, S or NW.
 sub $0,2
-mov $2,2
-add $2,$0
-pow $2,2
-mov $0,$2
+mov $1,2
+add $1,$0
+pow $1,2
+mov $0,$1

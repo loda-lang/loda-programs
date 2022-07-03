@@ -9,8 +9,8 @@ lpb $5
   mov $0,$3
   add $0,$5
   trn $0,1
-  mov $3,$0
   pow $1,$0
+  mov $3,$0
   div $0,2
   seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
   mul $0,2

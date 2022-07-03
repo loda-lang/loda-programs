@@ -5,7 +5,4 @@
 add $0,5
 seq $0,213 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=a(1)=a(2)=1.
 div $0,2
-mul $0,3
-sub $0,12
-div $0,3
-add $0,5
+add $0,1

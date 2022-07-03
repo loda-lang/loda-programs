@@ -6,9 +6,9 @@ mov $2,1
 mov $3,$0
 add $0,1
 lpb $3
+  add $3,1
   mov $0,$2
   sub $2,$1
-  add $3,1
   mul $2,$3
   add $1,$2
   mod $2,$0
