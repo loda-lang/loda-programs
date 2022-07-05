@@ -1,0 +1,8 @@
+; A274473: Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 22", based on the 5-celled von Neumann neighborhood.
+; Submitted by Jason Jung
+; 1,3,1,3,1,3,17,51,1,3,17,51,257,771,4369,13107,1,3,17,51,257,771,4369,13107,65537,196611,1114129,3342387,16843009,50529027,286331153,858993459,1,3,17,51,257,771,4369,13107,65537,196611,1114129,3342387,16843009,50529027,286331153,858993459,4294967297,12884901891,73014444049,219043332147,1103806595329,3311419785987,18764712120593,56294136361779,281479271743489,844437815230467,4785147619639313,14355442858917939,72340172838076673,217020518514230019,1229782938247303441,3689348814741910323,1,3,17,51
+
+seq $0,274224 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 22", based on the 5-celled von Neumann neighborhood.
+lpb $0
+  dif $0,2
+lpe
