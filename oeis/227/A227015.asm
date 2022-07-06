@@ -8,15 +8,15 @@ mul $2,2
 bin $2,2
 sub $2,1
 div $2,4
-mov $1,$2
 mov $3,$0
 mul $3,5
+mov $1,$2
 add $1,$3
 mov $5,$0
 mul $5,$0
 mov $3,$5
 mul $3,2
-add $1,$3
 mul $5,$0
+add $1,$3
 add $1,$5
 mov $0,$1

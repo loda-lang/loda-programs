@@ -7,8 +7,8 @@ lpb $0
   sub $1,$2
   mov $3,$4
   mov $4,$2
-  add $2,$3
   add $5,1
+  add $2,$3
   add $2,$5
   sub $3,$1
   mov $5,$3

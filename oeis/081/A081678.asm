@@ -7,9 +7,9 @@ lpb $0
   sub $0,1
   div $1,2
   add $3,$2
-  mul $2,6
   mul $3,3
   add $3,$1
+  mul $2,6
   mul $1,10
   add $1,$2
 lpe

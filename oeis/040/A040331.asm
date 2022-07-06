@@ -1,7 +1,9 @@
 ; A040331: Continued fraction for sqrt(350).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 18,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2,2,2,1,36,1,2
 
-seq $0,10135 ; Continued fraction for sqrt(45).
-seq $0,133893 ; Numbers m such that binomial(m+3,m) mod 3 = 0.
-sub $0,6
+seq $0,40912 ; Continued fraction for sqrt(943).
+sub $1,$0
+div $1,5
+mul $1,2
+add $0,$1

@@ -5,13 +5,13 @@
 add $0,1
 mov $2,$0
 lpb $0
-  mov $1,$2
   mov $3,$2
   dif $3,$0
-  sub $0,1
-  pow $1,$4
   cmp $3,$2
   cmp $3,0
+  sub $0,1
+  mov $1,$2
+  pow $1,$4
   add $4,$3
 lpe
 add $4,1

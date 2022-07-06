@@ -14,7 +14,7 @@ div $0,142
 cmp $2,$0
 mul $2,$1
 mul $1,2
-sub $1,$2
 add $1,1
+sub $1,$2
 mov $0,$1
 div $0,2

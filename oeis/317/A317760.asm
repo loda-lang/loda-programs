@@ -4,9 +4,9 @@
 
 lpb $0
   mov $1,$0
-  mov $0,$2
   seq $1,301786 ; Number of nX4 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
   add $1,3
+  mov $0,0
 lpe
 mov $0,$1
 add $0,8

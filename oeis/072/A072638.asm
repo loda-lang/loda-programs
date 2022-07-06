@@ -4,7 +4,7 @@
 
 lpb $0
   sub $0,1
-  add $2,2
-  bin $2,2
+  add $1,2
+  bin $1,2
 lpe
-mov $0,$2
+mov $0,$1

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
+  seq $2,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
   sub $0,1
-  seq $2,55615 ; a(n) = n*moebius(n) (cf. A008683).
   add $1,$2
 lpe
 add $1,1

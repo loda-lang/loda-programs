@@ -13,7 +13,7 @@ lpb $2
   add $3,$4
   pow $3,2
   sub $2,$4
-  mov $1,$2
 lpe
+mov $1,$2
 add $1,$3
 mov $0,$1

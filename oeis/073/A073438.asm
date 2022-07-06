@@ -4,6 +4,6 @@
 
 add $0,2
 mov $1,$0
-sub $0,1
 seq $1,230980 ; Number of primes <= n, starting at n=0.
+sub $0,1
 mod $0,$1

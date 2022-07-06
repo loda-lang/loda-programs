@@ -1,18 +1,12 @@
 ; A054431: Array read by antidiagonals: T(x, y) tells whether (x, y) are coprime (1) or not (0).
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,1,0
 
 lpb $0
   add $1,1
   sub $0,$1
 lpe
-add $3,$1
 add $1,2
 add $0,1
 gcd $0,$1
-mov $2,$1
-sub $2,$0
-div $3,$2
-mov $0,$3
-add $0,1
-mod $0,2
+cmp $0,1

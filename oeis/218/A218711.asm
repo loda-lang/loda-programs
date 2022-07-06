@@ -1,18 +1,18 @@
 ; A218711: Number of nonnegative solutions to x^2 + y^2 + z^2 < n^2.
-; Submitted by BarnardsStern
+; Submitted by PDW
 ; 0,1,8,23,51,90,157,230,341,471,639,835,1063,1340,1671,2022,2443,2893,3428,4004,4653,5359,6133,6977,7907,8886,9991,11152,12428,13724,15192,16683,18358,20072,21932,23880,25941,28117,30397,32822,35376,38013,40840,43765,46880,50090,53448,56911,60583,64379
 
+mov $3,4
 pow $0,2
-mov $3,$0
-mov $1,2
-lpb $1
-  sub $1,1
-  add $0,$1
-  sub $0,1
+add $0,3
+lpb $0
+  sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,606 ; Number of nonnegative solutions to x^2 + y^2 + z^2 <= n.
+  seq $2,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.
+  add $1,$2
+  mov $3,1
+  add $3,$4
+  add $4,2
 lpe
-min $3,1
-mul $3,$2
-mov $0,$3
+mov $0,$1

@@ -9,7 +9,7 @@ lpb $0
   max $2,0
   seq $2,47404 ; Numbers that are congruent to {1, 2, 3, 6} mod 8.
   mov $0,1
-  add $1,$2
 lpe
+add $1,$2
 mov $0,$1
 add $0,1

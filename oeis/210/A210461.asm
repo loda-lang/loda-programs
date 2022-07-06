@@ -7,7 +7,7 @@ mov $2,-1
 sub $2,$0
 mov $0,0
 sub $0,$2
-seq $0,15919 ; Positive integers n such that 2^n == 2 (mod n).
+seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
 mov $1,9
 pow $1,$0
 mov $0,$1

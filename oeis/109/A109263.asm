@@ -4,8 +4,8 @@
 
 seq $0,165201 ; Expansion of 1/(1-x*c(x)^3), c(x) the g.f. of A000108.
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,66628 ; a(n) = n - the largest Fibonacci number <= n.
   mov $0,0
-  seq $2,66628 ; a(n) = n - the largest Fibonacci number <= n.
 lpe
-mov $0,$2
+mov $0,$1

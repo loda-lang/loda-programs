@@ -1,4 +1,4 @@
-; A086483: Bit that is two places to left of least significant bit in binary expansion of n.
+; A086483: Bit that is two places to left of least significant 1-bit in the binary expansion of n.
 ; 0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,0,0,1,1,0,1,0,0,1,0,1,1,1,1,0,0,0,0,0,1,0,1,1,0,1,0,0,1,1,1,0,0,0,0,1,1,0,1,1,0,1,0,1,1,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,1,1,0,0,0,1,1,0,1,0,0,1,0,1,1,1,1,0,0,0,0
 
 lpb $0

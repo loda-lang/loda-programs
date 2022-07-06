@@ -7,8 +7,8 @@ add $1,1
 mov $3,-2
 add $3,$0
 bin $0,3
-mov $2,$1
 add $3,$0
+mov $2,$1
 mul $2,$3
 mul $0,$2
 mul $0,9

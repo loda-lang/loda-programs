@@ -7,6 +7,6 @@ seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 add $1,1
 div $1,2
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe

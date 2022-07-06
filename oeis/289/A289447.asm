@@ -8,8 +8,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,114495 ; Number of returns to the x-axis in all hill-free Dyck paths of semilength n (a Dyck path is said to be hill-free if it has no peaks at level 1).
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 mul $0,3
 add $0,1

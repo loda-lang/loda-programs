@@ -3,10 +3,10 @@
 
 mov $2,$0
 lpb $0
-  mov $0,$2
   add $3,1
   mov $1,$3
   pow $1,3
+  mov $0,$2
   trn $0,$1
 lpe
 mov $0,$1

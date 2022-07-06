@@ -1,9 +1,29 @@
 ; A073184: Number of cubefree divisors of n.
+; Submitted by Simon Strandgaard
 ; 1,2,2,3,2,4,2,3,3,4,2,6,2,4,4,3,2,6,2,6,4,4,2,6,3,4,3,6,2,8,2,3,4,4,4,9,2,4,4,6,2,8,2,6,6,4,2,6,3,6,4,6,2,6,4,6,4,4,2,12,2,4,6,3,4,8,2,6,4,8,2,9,2,4,6,6,4,8,2,6,3,4,2,12,4,4,4,6,2,12,4,6,4,4,4,6,2,6,6,9
 
+mov $1,4
+mov $2,2
+add $0,1
 lpb $0
-  mov $1,$0
-  seq $1,62378 ; n divided by largest cubefree factor of n.
-  div $0,$1
+  mov $3,$0
+  sub $3,1
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+    div $4,2
+    add $4,2
+    div $5,4
+    add $5,$4
+  lpe
+  mul $1,$5
 lpe
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $0,$1
+div $0,4

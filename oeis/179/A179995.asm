@@ -6,9 +6,8 @@ add $0,1
 lpb $0
   mov $2,$0
   pow $2,5
-  mov $3,4
-  add $3,$1
-  div $3,3
+  mov $3,2
+  gcd $3,$1
   bin $3,$1
   mul $3,$2
   sub $0,1

@@ -4,7 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,288807 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 510", based on the 5-celled von Neumann neighborhood.
 add $1,1
+seq $0,288807 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 510", based on the 5-celled von Neumann neighborhood.
 mul $0,$1
 div $0,2

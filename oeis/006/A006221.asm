@@ -9,8 +9,8 @@ mov $3,$0
 mul $3,$0
 mov $2,$3
 mul $2,42
-add $1,$2
 mul $3,$0
+add $1,$2
 mov $2,$3
 mul $2,33
 add $1,$2

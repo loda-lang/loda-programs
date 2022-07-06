@@ -1,15 +1,16 @@
 ; A131899: A002260 + A131821 - A000012.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,3,3,2,5,4,2,3,7,5,2,3,4,9,6,2,3,4,5,11,7,2,3,4,5,6,13,8,2,3,4,5,6,7,15,9,2,3,4,5,6,7,8,17,10,2,3,4,5,6,7,8,9,19
 
 lpb $0
-  mov $1,$0
   add $2,1
   sub $0,$2
-  mod $1,$2
-  cmp $1,0
-  mul $1,$2
 lpe
-add $1,1
-add $1,$0
-mov $0,$1
+mov $1,$2
+bin $1,$0
+sub $1,1
+add $3,$2
+mul $3,$1
+trn $2,$3
+add $0,$2
+add $0,1

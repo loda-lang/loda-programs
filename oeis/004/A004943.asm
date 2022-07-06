@@ -5,12 +5,12 @@ mov $2,$0
 add $0,3
 mov $5,$0
 lpb $5
-  add $3,5
   sub $5,1
+  add $3,5
 lpe
-add $3,2
 mov $4,5
 add $5,1
+add $3,2
 lpb $3
   lpb $3
     sub $3,1
@@ -20,15 +20,15 @@ lpb $3
     add $5,5
   lpe
   lpb $5
-    add $3,5
     sub $5,1
+    add $3,5
   lpe
   add $3,5
 lpe
 mov $1,$5
 lpb $2
-  add $1,47
   sub $2,1
+  add $1,47
 lpe
 sub $1,1
 mov $0,$1

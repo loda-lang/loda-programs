@@ -14,9 +14,9 @@ lpb $3
   div $2,$0
   sub $3,1
 lpe
-div $2,5
 mov $4,10
 pow $4,$0
+div $2,5
 div $2,$4
 mul $2,6
 div $1,$2

@@ -3,9 +3,9 @@
 
 mov $3,$0
 lpb $3
-  mov $0,1
   add $2,2
   sub $3,$2
+  mov $0,1
   trn $0,$3
 lpe
 pow $1,$0

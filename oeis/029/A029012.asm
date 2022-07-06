@@ -11,7 +11,7 @@ lpb $2
   add $0,10
   div $0,20
   add $1,$0
-  sub $2,1
-  trn $2,6
+  sub $2,7
+  max $2,3
 lpe
 mov $0,$1

@@ -4,9 +4,9 @@
 
 mov $2,4
 lpb $2
-  seq $3,325974 ; Arithmetic mean of {sum of non-unitary divisors} and {sum of nonsquarefree divisors}: a(n) = (1/2)*(A048146(n) + A162296(n)).
-  add $2,$3
-  mov $3,$0
-  add $0,1
   sub $2,1
+  seq $1,325974 ; Arithmetic mean of {sum of non-unitary divisors} and {sum of nonsquarefree divisors}: a(n) = (1/2)*(A048146(n) + A162296(n)).
+  add $2,$1
+  mov $1,$0
+  add $0,1
 lpe

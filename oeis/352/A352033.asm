@@ -1,20 +1,19 @@
 ; A352033: Sum of the 5th powers of the odd proper divisors of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,244,1,1,244,3126,1,244,1,16808,3369,1,1,59293,1,3126,17051,161052,1,244,3126,371294,59293,16808,1,762744,1,1,161295,1419858,19933,59293,1,2476100,371537,3126,1,4101152,1,161052,821793,6436344,1,244,16808,9768751
 
 add $0,1
-mov $2,$0
-mul $0,2
+mov $1,1
+mov $4,$0
 lpb $0
-  sub $0,1
-  mov $3,$2
-  div $3,$0
-  max $3,2
-  mul $3,$0
-  cmp $3,$2
-  mul $3,$0
+  sub $0,2
+  mov $2,$4
+  gcd $2,$1
+  div $2,$1
+  mov $3,$1
   pow $3,5
-  sub $0,1
-  add $1,$3
+  mul $3,$2
+  add $5,$3
+  add $1,2
 lpe
-mov $0,$1
+mov $0,$5

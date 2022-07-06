@@ -5,8 +5,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,97861 ; Number of humps in all Motzkin paths of length n. (A hump is an upstep followed by 0 or more flatsteps followed by a downstep.)
+  sub $0,2
   add $1,$2
 lpe
 mov $0,$1

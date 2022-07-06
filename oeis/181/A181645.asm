@@ -11,8 +11,8 @@ lpb $3
   seq $0,59365 ; Another version of the Catalan triangle: T(r,s) = binomial(2*r-s-1,r-1) - binomial(2*r-s-1,r), r>=0, 0 <= s <= r.
   mov $2,$3
   mul $2,$0
-  add $1,$2
   cmp $4,$5
+  add $1,$2
   cmp $1,$5
   mov $3,1
   mov $5,$0

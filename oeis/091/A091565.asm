@@ -6,7 +6,7 @@ lpb $0
   sub $0,2
   mov $1,$0
   max $1,0
-  seq $1,25249 ; (1/2)*s(n+3), where s = A025248.
+  seq $1,25249 ; a(n) = (1/2)*s(n+3), where s = A025248.
   mov $0,0
 lpe
 mov $0,$1

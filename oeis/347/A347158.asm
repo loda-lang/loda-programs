@@ -1,5 +1,5 @@
 ; A347158: Sum of 4th powers of distinct prime divisors of n that are < sqrt(n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,16,0,16,0,16,0,97,0,16,81,16,0,97,0,16,81,16,0,97,0,16,81,16,0,722,0,16,81,16,625,97,0,16,81,641,0,97,0,16,706,16,0,97,0,641,81,16,0,97,625,2417,81,16,0,722,0,16,2482,16,625,97,0,16,81,3042
 
 add $0,1
@@ -14,10 +14,9 @@ lpb $0
   mod $0,2
   pow $0,$1
   mul $0,$4
-  pow $0,3
+  pow $0,4
   sub $2,$4
   cmp $3,0
-  mul $3,$4
   mul $3,$0
   mov $0,$2
   add $1,$3

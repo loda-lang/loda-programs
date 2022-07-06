@@ -3,10 +3,10 @@
 
 lpb $0
   max $1,$0
+  add $1,2
   sub $0,5
   mod $0,6
   cmp $0,0
-  add $1,2
 lpe
 div $1,3
 add $1,1

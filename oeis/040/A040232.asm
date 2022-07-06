@@ -1,17 +1,7 @@
 ; A040232: Continued fraction for sqrt(248).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 15,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1
 
-mov $2,$0
-gcd $2,4
-mov $1,4
-pow $1,$2
-lpb $0
-  mov $0,1
-  mul $1,2
-lpe
-mov $2,$1
-mul $2,2
-div $2,35
-mov $0,$2
+seq $0,40855 ; Continued fraction for sqrt(885).
+div $0,2
 add $0,1

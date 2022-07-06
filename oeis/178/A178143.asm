@@ -10,9 +10,9 @@ sub $0,1
 bin $1,3
 div $1,$0
 mov $0,$1
+mov $1,0
 mod $0,10
 seq $0,243502 ; Permutation of even numbers: a(n) = 2 * A064216(n).
-mov $1,0
 lpb $0
   add $1,$0
   div $0,10

@@ -1,7 +1,10 @@
 ; A284413: Exponent of 3 in 2^n + 1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Simon Strandgaard
 ; 1,0,2,0,1,0,1,0,3,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,1,0,4,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,1,0,3,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,1,0,3,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,1,0,5,0,1,0,1,0,2,0,1,0,1,0,2,0,1,0,1,0,3,0
 
-seq $0,126646 ; a(n) = 2^(n+1) - 1.
-seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
-seq $0,292251 ; The 3-adic valuation of A048673(n).
+mov $1,-1
+pow $1,$0
+add $1,1
+seq $0,72078 ; Number of 3-smooth divisors of n.
+mul $0,$1
+div $0,2

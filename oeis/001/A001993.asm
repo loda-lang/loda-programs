@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,213506 ; Number of nonisomorphic 2-generator p-groups of class at most 2 and order p^n.
+  sub $0,2
   add $1,$2
 lpe
 add $1,1

@@ -7,8 +7,8 @@ add $1,1
 mov $2,2
 lpb $2
   sub $2,1
-  mov $0,$1
   pow $2,$1
+  mov $0,$1
   sub $0,$2
   div $0,2
   seq $0,78986 ; Chebyshev T(n,19) polynomial.

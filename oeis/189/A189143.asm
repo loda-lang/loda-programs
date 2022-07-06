@@ -1,16 +1,20 @@
 ; A189143: Positions of 1 in A189141; complement of A189142.
-; Submitted by trigggl
+; Submitted by PDW
 ; 1,2,3,5,8,10,11,12,15,19,21,22,25,26,27,29,30,31,34,35,37,40,46,47,48,51,54,55,57,58,60,62,63,67,68,69,72,73,74,77,79,81,84,87,88,90,94,95,97,100,101,102,103,105,108,109,111,112,113,115,116,119,121,122,123,126,127,129,130
 
-add $0,1
-mov $3,$0
-pow $3,2
-lpb $3
-  mov $1,$2
-  seq $1,189141 ; Zero-one sequence based on the primes:  a(A000040(k))=a(k); a(A002808(k))=1-a(k), a(1)=0.
-  sub $0,$1
-  add $2,1
-  sub $3,$0
+mov $2,$0
+mul $2,2
+add $2,135
+lpb $2
+  mov $3,$1
+  seq $3,189141 ; Zero-one sequence based on the primes:  a(A000040(k))=a(k); a(A002808(k))=1-a(k), a(1)=0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,2
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

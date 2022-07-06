@@ -1,17 +1,16 @@
 ; A128078: A002260 * A128064.
-; Submitted by Michael Goetz
+; Submitted by Simon Strandgaard
 ; 1,-1,4,-1,-2,9,-1,-2,-3,16,-1,-2,-3,-4,25,-1,-2,-3,-4,-5,36,-1,-2,-3,-4,-5,-6,49,-1,-2,-3,-4,-5,-6,-7,64
 
-add $0,1
-mov $2,$0
 lpb $0
-  add $1,1
-  mov $3,$1
-  cmp $3,$2
-  mul $3,$2
-  mul $3,$0
-  sub $2,$1
-  mov $0,$2
-  sub $3,$2
+  add $2,1
+  sub $0,$2
 lpe
-mov $0,$3
+mov $1,$0
+add $1,1
+mul $1,-1
+div $2,$1
+cmp $2,0
+add $2,1
+pow $1,$2
+mov $0,$1

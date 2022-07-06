@@ -3,10 +3,10 @@
 
 mov $1,$0
 lpb $1
-  mov $1,$0
-  add $2,1
   add $3,1
+  add $2,1
   add $2,$3
+  mov $1,$0
   trn $1,$2
 lpe
 bin $0,$3

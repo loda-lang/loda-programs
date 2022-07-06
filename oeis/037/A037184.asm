@@ -4,8 +4,8 @@
 
 add $0,2
 mov $1,$0
-add $0,1
 seq $1,105927 ; Let d(n) = A000166(n); then a(n) = ( (n^2+n-1)*d(n) + (-1)^(n-1)*(n-1) )/2.
+add $0,1
 mul $0,$1
 div $0,3
 mul $0,3

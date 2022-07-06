@@ -1,30 +1,7 @@
 ; A112299: Expansion of x * (1 - x) * (1 - x^2) * (1 - x^3) / (1 - x^8) in powers of x.
-; Submitted by Jamie Morken(s2)
+; Submitted by Simon Strandgaard
 ; 1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,1,-1,0,1,-1,-1,0
 
-add $0,1
-mov $1,1
-mov $2,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $2,1
-  mov $6,$0
-  mod $6,$2
-  cmp $6,0
-  mov $5,-1
-  pow $5,$6
-  mul $1,$5
-  mov $4,$2
-  pow $4,2
-  mov $5,$2
-  pow $5,$6
-  mov $6,$0
-  mod $6,$4
-  div $0,$5
-  mod $0,4
-  cmp $6,0
-  cmp $6,0
-  mul $1,$6
-lpe
-mov $0,$1
+seq $0,119972 ; Flag n when the first difference of the decimal encoding of the Gray code is negative.
+dif $0,-2
+mod $0,2

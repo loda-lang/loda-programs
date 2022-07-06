@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,36681 ; T(n+2,2) with T as in A036355.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

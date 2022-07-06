@@ -1,16 +1,8 @@
 ; A106459: Expansion of f(-x, -x^3) in powers of x where f(,) is Ramanujan's general theta function.
-; Submitted by AXm 77
+; Submitted by Simon Strandgaard
 ; 1,-1,0,-1,0,0,1,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,$1
-bin $1,$0
-add $0,1
-bin $0,2
-mov $2,-1
-bin $2,$0
-mul $1,$2
-mov $0,$1
+mov $1,-1
+pow $1,$0
+seq $0,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+mul $0,$1

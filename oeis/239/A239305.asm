@@ -6,9 +6,9 @@ sub $3,$0
 lpb $0
   sub $0,1
   add $3,1
-  add $5,$2
+  add $1,$2
   mov $2,$3
-  mov $3,$5
+  mov $3,$1
   max $4,1
   mul $4,2
   add $2,$4

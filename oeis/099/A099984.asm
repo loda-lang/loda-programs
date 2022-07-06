@@ -3,8 +3,8 @@
 
 mul $0,2
 lpb $0
-  mov $2,$0
-  seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
-  div $0,$2
+  mov $1,$0
+  seq $1,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
+  div $0,$1
 lpe
 add $0,1

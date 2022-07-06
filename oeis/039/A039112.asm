@@ -8,14 +8,14 @@ lpb $2
   add $1,2
   add $3,1
   lpb $3
+    trn $3,3
     add $0,9
     sub $1,1
     sub $1,$0
-    trn $3,3
   lpe
   lpb $1
-    add $0,2
     trn $1,8
+    add $0,2
     mov $2,1
   lpe
 lpe

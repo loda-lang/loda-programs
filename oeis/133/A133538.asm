@@ -4,14 +4,14 @@
 
 add $0,1
 mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  sub $0,$5
+mov $1,2
+lpb $1
+  sub $1,1
+  sub $0,$1
   seq $0,40 ; The prime numbers.
   mov $2,$0
-  mov $0,$3
   pow $2,7
+  mov $0,$3
   mov $3,5
   add $4,$2
 lpe

@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $1,7
-seq $1,56594 ; Periodic sequence 1,0,-1,0,...; expansion of 1/(1 + x^2).
+seq $1,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).
 add $0,1
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 sub $0,$1

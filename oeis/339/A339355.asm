@@ -5,11 +5,11 @@
 mov $2,1
 lpb $2
   sub $2,1
+  mov $1,$0
   mov $7,$0
-  mov $11,$0
   lpb $7
-    mov $0,$11
     sub $7,1
+    mov $0,$1
     sub $0,$7
     mov $9,2
     lpb $9
@@ -25,8 +25,8 @@ lpb $2
       bin $4,2
       mov $10,$9
       lpb $10
-        mov $8,$4
         sub $10,1
+        mov $8,$4
       lpe
     lpe
     mov $5,$8

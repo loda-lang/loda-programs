@@ -5,31 +5,30 @@ mov $3,$0
 mov $5,$0
 add $5,1
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   sub $0,$5
-  mov $2,2
   mov $8,$0
+  mov $2,2
   lpb $2
-    mov $0,$8
     sub $2,1
+    mov $0,$8
     add $0,$2
     sub $0,1
     mov $7,$0
-    div $0,8
-    add $0,2
-    div $0,2
-    mov $4,$2
+    add $0,16
+    div $0,16
     add $7,$0
     div $7,2
+    mov $4,$2
     lpb $4
       sub $4,1
       mov $6,$7
     lpe
   lpe
   lpb $8
-    sub $6,$7
     mov $8,0
+    sub $6,$7
   lpe
   mov $7,$6
   add $7,1

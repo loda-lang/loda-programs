@@ -4,7 +4,7 @@
 
 mov $1,4
 pow $1,$0
-seq $0,34661 ; Sum of n-th powers of divisors of 18.
 mov $2,1
 add $2,$1
+seq $0,34661 ; Sum of n-th powers of divisors of 18.
 mul $0,$2

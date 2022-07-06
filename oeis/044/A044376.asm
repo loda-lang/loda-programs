@@ -7,17 +7,14 @@ mov $5,10
 mov $6,1
 add $6,$0
 mov $0,6
-mov $1,$6
-mov $3,1
 lpb $0
-  mov $0,$1
+  mov $0,$6
   gcd $0,10
-  add $7,4
-  add $5,$7
+  add $3,4
+  add $5,$3
 lpe
-add $5,$3
 mov $1,$5
-add $1,29
+add $1,30
 mov $2,$4
 mul $2,100
 add $1,$2

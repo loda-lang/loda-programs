@@ -9,11 +9,11 @@ lpb $0
   add $1,1
   add $2,1
   bin $2,$0
-  add $0,1
   mov $3,5
   bin $3,$1
-  mov $1,2
   mul $3,$2
+  add $0,1
+  mov $1,2
   add $4,1
   add $4,$3
 lpe

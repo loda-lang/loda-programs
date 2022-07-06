@@ -8,8 +8,8 @@ lpb $0
 lpe
 bin $1,$0
 mov $2,$0
-mov $0,2
 trn $2,1
+mov $0,2
 pow $0,$2
 mul $0,2
 sub $0,1
