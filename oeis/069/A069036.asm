@@ -1,0 +1,9 @@
+; A069036: Smallest multiple of 2 with digit sum 2^n.
+; Submitted by Gunnar Hjern
+; 10,2,4,8,88,6998,29999998,399999999999998,59999999999999999999999999998,999999999999999999999999999999999999999999999999999999998
+
+mov $1,2
+pow $1,$0
+seq $1,205960 ; Smallest odd number with digit sum equal to n.
+mov $0,$1
+sub $0,1
