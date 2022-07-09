@@ -1,0 +1,10 @@
+; A277002: Numerators of an asymptotic series for the Gamma function (odd power series).
+; Submitted by LCB001
+; -1,7,-31,127,-511,1414477,-8191,118518239,-5749691557,91546277357,-23273283019,1982765468311237,-22076500342261,455371239541065869,-925118910976041358111,16555640865486520478399,-1302480594081611886641,904185845619475242495834469891
+
+add $0,1
+mov $1,$0
+seq $0,1896 ; Numerators of cosecant numbers -2*(2^(2*n - 1) - 1)*Bernoulli(2*n); also of Bernoulli(2*n, 1/2) and Bernoulli(2*n, 1/4).
+seq $1,99252 ; Bisection of A005043.
+gcd $1,$0
+div $0,$1
