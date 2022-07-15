@@ -1,0 +1,22 @@
+; A285064: Row sums of Sheffer triangle S2[4,1] = A285061.
+; Submitted by ArsenEverlast
+; 1,5,41,429,5329,75989,1215481,21453693,412820385,8579772325,191166679497,4538638641997,114238219541617,3035305413035125,84819458105387417,2484842038066995485,76101249873390595905,2430497813260105226053,80769536433102942870377,2787318255464814752951533
+
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  seq $0,56857 ; Triangle read by rows: T(n,c) = number of successive equalities in set partitions of n.
+  mul $1,2
+  add $1,$0
+  mul $1,2
+lpe
+mov $0,$1
+mul $0,2
+add $0,1
