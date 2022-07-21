@@ -8,6 +8,7 @@ A001961: A Beatty sequence: floor(n * (sqrt(5) - 1)).
 A001962: A Beatty sequence: floor(n * (sqrt(5) + 3)).
 A001963: Winning positions in the u-pile of the 4-Wythoff game with i=1.
 A001966: v-pile counts for the 4-Wythoff game with i=2.
+A001968: v-pile positions of the 4-Wythoff game with i=3.
 A002251: Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
@@ -19,13 +20,19 @@ A003622: The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5)
 A003623: Wythoff AB-numbers: floor(floor(n*phi^2)*phi), where phi = (1+sqrt(5))/2.
 A003754: Numbers with no adjacent 0's in binary expansion.
 A004016: Theta series of planar hexagonal lattice A_2.
+A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A005206: Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
 A005379: The male of a pair of recurrences.
 A005928: G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
+A007066: a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
 A007067: Nearest integer to n*tau.
+A007916: Numbers that are not perfect powers.
+A007948: Largest cubefree number dividing n.
 A019594: Conway's "para-budding" sequence.
+A022164: First column of spectral array W(sqrt(5)-1).
 A022303: The sequence a of 1's and 2's starting with (1,2,1) such that a(n) is the length of the (n+2)nd run of a.
 A022342: Integers with "even" Zeckendorf expansions (do not end with ...+F_2 = ...+1) (the Fibonacci-even numbers); also, apart from first term, a(n) = Fibonacci successor to n-1.
+A022413: Kim-sums: "Kimberling sums" K_n + K_2.
 A022804: a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
 A022843: Beatty sequence for e: a(n) = floor(n*e).
 A023690: Numbers with exactly 8 ones in binary expansion.
@@ -36,30 +43,45 @@ A030124: Complement (and also first differences) of Hofstadter's sequence A00522
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
 A035143: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -47.
+A035162: Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
+A035187: Sum over divisors d of n of Kronecker symbol (5|d).
 A035199: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
+A035337: Third column of Wythoff array.
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
 A050508: Golden rectangle numbers: n * A007067(n).
+A053723: Number of 5-core partitions of n.
 A061704: Number of cubes dividing n.
 A065331: Largest 3-smooth divisor of n.
 A069213: a(n) = n-th positive integer relatively prime to n.
+A069623: Number of perfect powers <= n.
 A071187: Smallest prime factor of number of divisors of n.
 A072292: Number of proper powers b^d <= n (b > 1, d > 1).
 A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.
+A075802: Characteristic function of perfect powers, A001597.
 A077655: Number of consecutive successors of n having the same number of prime factors as n (counted with multiplicity).
 A079578: Least coprime to n, greater than n+1.
+A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
 A080755: a(n) = ceiling(n*(1+1/sqrt(2))).
+A081129: Differences of Beatty sequence for cube root of 3.
 A081477: Complement of A086377.
 A082389: a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
 A082447: a(n) = the number k such that s(k)=0 where s(0)=n and s(i)=s(i-1)-(s(i-1) modulo i).
+A085003: Partial sums of A085002.
 A086377: a(1)=1; a(n)=a(n-1)+2 if n is in the sequence; a(n)=a(n-1)+2 if n and (n-1) are not in the sequence; a(n)=a(n-1)+3 if n is not in the sequence but (n-1) is in the sequence.
+A087560: Smallest m > n such that gcd(m, n^2) = n.
+A088462: a(1)=1, a(n) = ceiling((n - a(a(n-1)))/2).
 A089090: a(n) is the smallest composite number coprime to n.
+A089809: Complement of A078588.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
 A096309: a(1)=1; for n > 1, a(n) is the number of levels in the "stacked" prime number factorization of n (prime number factorization of the exponents if necessary and so on ...).
 A096936: Half of number of integer solutions to the equation x^2 + 3y^2 = n.
 A098021: Positions of 0's in the zero-one sequence [nr+2r]-[nr]-[2r], where r=sqrt(2) and [ ]=floor; see A187967.
 A099267: Numbers generated by the golden sieve.
+A101345: a(n) = Knuth's Fibonacci (or circle) product "2 o n".
+A101436: Number of exponents in prime factorization of n which are primes.
+A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
 A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
