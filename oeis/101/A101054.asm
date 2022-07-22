@@ -10,7 +10,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mul $1,$0
-  seq $0,101053 ; a(n) = n!*Sum_{k=0..n} Bell(k)/k! (cf. A000110).
+  seq $0,101053 ; a(n) = n! * Sum_{k=0..n} Bell(k)/k! (cf. A000110).
   add $1,$0
 lpe
 mov $0,$1

@@ -10,11 +10,11 @@ lpb $0
   mul $3,$0
   cmp $3,$2
   mul $3,$0
-  mul $3,2
   sub $0,1
   dif $1,-1
   add $1,$3
 lpe
 gcd $2,$1
 dif $1,$2
+mul $1,2
 mov $0,$1

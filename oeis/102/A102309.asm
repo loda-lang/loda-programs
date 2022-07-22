@@ -1,12 +1,8 @@
 ; A102309: a(n) = Sum_{d divides n} moebius(d) * C(n/d,2).
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 0,0,1,3,5,10,11,21,22,33,34,55,46,78,69,92,92,136,105,171,140,186,175,253,188,290,246,315,282,406,284,465,376,470,424,564,426,666,531,660,568,820,570,903,710,852,781,1081,760,1155,890,1136,996,1378,963,1420,1140,1422,1246,1711,1144,1830,1425,1710,1520,1992,1430,2211,1712,2090,1716,2485,1716,2628,2034,2380,2142,2850,2004,3081,2288,2889,2500,3403,2292,3424,2751,3332,2860,3916,2580,3996,3146,3810,3289,4284,3056,4656,3507,4290
 
 trn $0,1
-mov $2,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $1,$2
-seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
-sub $1,$0
-mov $0,$1
-div $0,2
+cmp $1,$0
+seq $0,326419 ; a(n) is the number of distinct Horadam sequences of period n.
+sub $0,$1
