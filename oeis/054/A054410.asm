@@ -8,33 +8,33 @@ mov $4,$0
 mov $0,$2
 lpb $0
   sub $0,1
-  trn $1,$0
   sub $2,1
   add $3,$2
   sub $3,1
+  trn $1,$0
   add $1,$3
 lpe
 add $1,1
 mov $7,$4
 lpb $7
-  add $6,$4
   sub $7,1
+  add $6,$4
 lpe
 mov $5,$6
 mov $8,4
 lpb $8
-  add $1,$6
   sub $8,1
+  add $1,$6
 lpe
 mov $6,0
 mov $7,$4
 lpb $7
-  add $6,$5
   sub $7,1
+  add $6,$5
 lpe
 mov $8,2
 lpb $8
-  add $1,$6
   sub $8,1
+  add $1,$6
 lpe
 mov $0,$1

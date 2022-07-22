@@ -9,6 +9,7 @@ mul $3,6
 sub $3,$0
 lpb $3
   lpb $3
+    sub $3,2
     mul $1,$0
     sub $2,2
     mul $2,2
@@ -16,7 +17,6 @@ lpb $3
     add $1,$2
     add $2,$1
     div $1,$0
-    sub $3,2
   lpe
   div $0,2
   mod $2,$1

@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,1401 ; Number of partitions of n into at most 5 parts.
   mul $2,2
+  sub $0,1
   add $1,$2
 lpe
 div $1,2

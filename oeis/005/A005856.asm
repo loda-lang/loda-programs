@@ -1,4 +1,5 @@
 ; A005856: The coding-theoretic function A(n,10,8).
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,2,3,4,6,9,12,17,21
 
 mov $2,$0
@@ -17,7 +18,6 @@ lpb $0
       sub $1,$3
       add $1,$0
     lpe
-    trn $2,8
   lpe
 lpe
 mov $0,$1

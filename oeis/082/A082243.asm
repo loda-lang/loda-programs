@@ -3,9 +3,7 @@
 ; 864,2275278,3285379,4295480,5305581,6315682,7325783,8335884,9345985,10356086
 
 mov $1,$0
-seq $0,38572 ; a(n) = n rotated one binary place to the right.
 seq $1,82242 ; Multiples of 4 that are the concatenation of 4 consecutive natural numbers.
-add $0,4
 mov $0,$1
 sub $0,3456
 div $0,4

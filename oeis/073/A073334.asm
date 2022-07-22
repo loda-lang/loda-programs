@@ -1,6 +1,6 @@
 ; A073334: The so-called "rhythmic infinity system" of Danish composer Per Nørgård [Noergaard].
+; Submitted by Simon Strandgaard
 ; 3,5,8,5,8,13,8,5,8,13,21,13,8,13,8,5,8,13,21,13,21,34,21,13,8,13,21,13,8,13,8,5,8,13,21,13,21,34,21,13,21,34,55,34,21,34,21,13,8,13,21,13,21,34,21,13,8,13,21,13,8,13,8,5,8,13,21,13,21,34,21,13,21,34,55,34,21,34,21,13,21,34,55,34,55,89,55,34,21,34,55,34,21,34,21,13,8,13,21,13
 
 seq $0,136004 ; a(n) = A005811(n) + 4.
-seq $0,22091 ; Fibonacci sequence beginning 0, 8.
-div $0,8
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.

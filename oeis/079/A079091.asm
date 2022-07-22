@@ -8,11 +8,11 @@ lpb $3
   sub $3,1
   add $0,$3
   sub $0,1
-  mov $2,99
   mov $4,$0
   max $4,0
   seq $4,210934 ; Sum of prime factors of prime(n)+1 (counted with multiplicity).
   mul $4,12
+  mov $2,99
   mul $2,$4
   add $1,$2
 lpe

@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  seq $2,33885 ; a(n) = 3*n - sum of divisors of n.
-  sub $2,1
+  seq $1,33885 ; a(n) = 3*n - sum of divisors of n.
+  sub $1,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

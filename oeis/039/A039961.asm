@@ -10,9 +10,9 @@ lpe
 mov $1,-1
 bin $1,$0
 mul $2,-1
+sub $2,1
 add $2,$0
 div $0,2
-sub $2,1
 bin $2,$0
 mul $1,$2
 mov $0,$1

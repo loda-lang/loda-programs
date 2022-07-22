@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,8643 ; Molien series for group of 4 X 4 upper triangular matrices over GF(2).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

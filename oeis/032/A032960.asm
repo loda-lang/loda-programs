@@ -4,22 +4,21 @@
 mov $2,$0
 sub $0,5
 lpb $0
-  mov $3,8
-  add $5,6
-  lpb $5
-    add $4,$3
-    sub $5,1
+  add $3,6
+  lpb $3
+    sub $3,1
+    add $4,8
   lpe
-  add $6,$4
-  lpb $6
+  add $1,$4
+  lpb $1
+    mov $1,5
     mov $0,1
     add $0,$4
-    mov $6,5
   lpe
 lpe
 trn $0,4
 lpb $2
-  add $0,1
   sub $2,1
+  add $0,1
 lpe
 add $0,1

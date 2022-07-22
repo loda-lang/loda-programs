@@ -6,7 +6,6 @@ mov $2,7261
 lpb $2
   sub $2,37
   mov $3,$1
-  sub $3,$4
   seq $3,1113 ; Decimal expansion of e.
   mov $5,$3
   mul $3,338

@@ -4,6 +4,6 @@
 
 seq $0,846 ; C(3n,n) - C(2n,n).
 mul $0,6
-mov $2,$0
-cmp $2,0
-add $0,$2
+mov $1,$0
+cmp $1,0
+add $0,$1

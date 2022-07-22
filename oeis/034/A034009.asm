@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,45889 ; Partial sums of A045618.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

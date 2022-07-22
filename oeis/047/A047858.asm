@@ -1,14 +1,14 @@
 ; A047858: Array T read by diagonals; n-th difference of (T(k,n),T(k,n-1),...,T(k,0)) is k+n, for n=1,2,3,...; k=0,1,2,...
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 1,2,1,5,3,1,13,8,4,1,33,20,11,5,1,81,48,27,14,6,1,193,112,63,34,17,7,1,449,256,143,78,41,20,8,1,1025,576,319,174,93,48,23,9,1,2305,1280,703,382,205,108,55,26,10,1,5121,2816,1535,830
 
 lpb $0
   add $1,1
   sub $0,$1
   mov $2,$1
-  sub $2,$0
 lpe
 add $1,$0
+sub $2,$0
 mov $0,2
 pow $0,$2
 sub $0,1

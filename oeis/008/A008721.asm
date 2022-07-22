@@ -5,11 +5,11 @@ add $0,1
 lpb $0
   mov $2,-2
   bin $2,$0
-  add $3,1
-  mov $4,$2
-  sub $4,$0
+  mov $1,$2
+  sub $1,$0
   trn $0,7
-  sub $3,$4
+  add $3,1
+  sub $3,$1
 lpe
 mov $0,$3
 div $0,4

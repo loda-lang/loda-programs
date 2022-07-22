@@ -1,17 +1,10 @@
 ; A096736: a(1) = 2; for n>1: a(n) = integer part of x-value when y=0 in (y-tau(n))/(x-1)=(1-tau(n))/(n-1), tau=A000005.
+; Submitted by Simon Strandgaard
 ; 2,3,5,5,9,7,13,10,13,13,21,14,25,18,19,19,33,21,37,23,27,29,45,27,37,34,35,33,57,34,61,38,43,45,46,40,73,50,51,45,81,47,85,52,53,61,93,53,73,59,67,62,105,61,73,63,75,77,117,65,121,82,75,74,86,75,133,81,91,79,141,78,145,98,89,91,102,89,157,88,101,109,165,91,113,114,115,100,177,98,121,110,123,125,126,104,193,117,118,112
 
 mov $1,$0
-seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $2,$0
-mov $4,$1
-sub $4,1
-mov $3,$4
-cmp $3,0
-add $4,$3
-div $0,$4
-mov $3,$0
-cmp $3,0
-add $0,$3
-add $0,1
-add $0,$2
+sub $1,1
+trn $0,1
+seq $0,131755 ; a(n) = floor of the average of distances between consecutive positive divisors of n. Also, a(n) = floor((n-1)/(d(n)-1)), where d(n) = A000005(n).
+add $0,2
+add $0,$1

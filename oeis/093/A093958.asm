@@ -1,23 +1,7 @@
 ; A093958: A091844(n) - 4.
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1
 
-mov $5,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  trn $0,1
-  seq $0,966 ; n! never ends in this many 0's.
-  max $5,$2
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
-mod $0,2
+trn $0,1
+seq $0,80066 ; First differences of A000966 (number of zeros that n! will never end in).
+mod $0,3

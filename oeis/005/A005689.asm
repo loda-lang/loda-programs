@@ -4,9 +4,9 @@
 
 lpb $0
   mov $2,$0
-  trn $0,4
   add $2,1
   add $3,2
+  trn $0,4
   bin $2,$3
   add $1,$2
 lpe

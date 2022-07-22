@@ -3,7 +3,7 @@
 
 mov $1,$0
 seq $0,298861 ; Rank of n-th prime when all the primes and twice-primes are jointly ranked.
+sub $0,1
 sub $0,$1
 cmp $1,1
 add $0,$1
-sub $0,1

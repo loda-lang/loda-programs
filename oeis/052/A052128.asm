@@ -1,23 +1,10 @@
 ; A052128: Largest factor of n that is coprime to a larger factor of n.
-; Submitted by respawner
+; Submitted by PDW
 ; 1,1,1,1,1,2,1,1,1,2,1,3,1,2,3,1,1,2,1,4,3,2,1,3,1,2,1,4,1,5,1,1,3,2,5,4,1,2,3,5,1,6,1,4,5,2,1,3,1,2,3,4,1,2,5,7,3,2,1,5,1,2,7,1,5,6,1,4,3,7,1,8,1,2,3,4,7,6,1,5,1,2,1,7,5,2,3,8,1,9,7,4,3,2,5,3,1,2,9,4
 
-add $0,1
 mov $2,$0
-lpb $0
-  mov $3,$2
-  dif $3,$0
-  mov $4,$3
-  add $0,$1
-  cmp $3,$2
-  cmp $3,0
-  mul $3,$0
-  pow $3,$4
-  gcd $3,$2
-  sub $1,$3
-  max $3,$4
-  mov $5,$0
-  sub $0,1
-  add $1,$3
-lpe
-mov $0,$5
+add $2,1
+seq $0,354933 ; a(n) = n / the largest factor of n that is coprime to a larger factor of n.
+mov $1,$0
+mov $0,$2
+div $0,$1

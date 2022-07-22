@@ -3,7 +3,7 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,2
-mov $2,$0
+mov $1,$0
 seq $0,279521 ; Maximum number of single-direction edges in leveled binary trees with n nodes.
-sub $2,$0
-sub $0,$2
+sub $1,$0
+sub $0,$1

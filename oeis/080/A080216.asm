@@ -8,10 +8,10 @@ mov $3,$0
 lpb $3
   mov $5,$0
   lpb $5
+    mul $5,0
     mov $4,$0
     bin $4,$2
     mod $4,$2
-    mul $5,0
   lpe
   trn $1,$4
   add $1,$4

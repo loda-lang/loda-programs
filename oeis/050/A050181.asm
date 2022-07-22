@@ -7,20 +7,22 @@ lpb $0
   sub $0,1
   mov $6,3
   pow $6,$0
+  div $6,3
   mul $2,2
   add $2,$0
   bin $2,$0
   mov $3,$4
   bin $3,$1
-  sub $0,2
-  max $0,1
+  sub $0,1
+  trn $0,1
   add $1,1
   mul $3,$2
   mul $3,$6
   div $3,$1
   add $4,2
+  max $5,256
   add $5,$3
   mov $2,$1
 lpe
 mov $0,$5
-div $0,3
+sub $0,256

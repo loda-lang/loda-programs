@@ -5,8 +5,8 @@
 mov $2,$0
 lpb $0
   add $1,1
-  gcd $0,$1
   sub $2,1
+  gcd $0,$1
   mul $0,$2
 lpe
 add $1,1

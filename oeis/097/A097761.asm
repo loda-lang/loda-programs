@@ -1,17 +1,17 @@
 ; A097761: Inverse of binomial transform of Whitney triangle.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard
 ; 1,-2,1,4,-4,1,-10,13,-6,1,28,-42,26,-8,1,-84,138,-102,43,-10,1,264,-462,385,-198,64,-12,1,-858,1573,-1430,845,-338,89,-14,1,2860,-5434,5278,-3458,1610,-530,118,-16,1,-9724,19006,-19448,13804,-7208,2788,-782,151,-18,1,33592
 
 lpb $0
   add $1,1
   sub $0,$1
-  add $2,1
 lpe
 sub $1,1
+mov $2,1
+add $2,$0
 sub $0,$1
 max $1,0
 add $1,2
-add $1,$0
 add $1,$2
 div $1,-1
 mov $2,$1

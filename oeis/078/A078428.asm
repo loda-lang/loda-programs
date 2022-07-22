@@ -1,22 +1,15 @@
 ; A078428: Partial sums of A035187.
-; Submitted by ckrause
+; Submitted by Simon Strandgaard
 ; 1,1,1,2,3,3,3,3,4,4,6,6,6,6,6,7,7,7,9,10,10,10,10,10,11,11,11,11,13,13,15,15,15,15,15,16,16,16,16,16,18,18,18,20,21,21,21,21,22,22,22,22,22,22,24,24,24,24,26,26,28,28,28,29,29,29,29,29,29,29,31,31,31,31,31,33
 
-mov $4,$0
-mov $1,$0
-lpb $1
-  sub $1,1
-  mov $0,$4
-  sub $0,$1
-  seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
-  mod $0,5
-  add $0,2
-  mov $3,$0
-  mul $3,3
-  mov $0,$3
-  sub $0,6
-  div $0,3
-  add $2,$0
+lpb $0
+  mov $2,$0
+  add $3,1
+  sub $0,1
+  div $2,$3
+  mul $2,3
+  seq $2,10891 ; Inverse of 5th cyclotomic polynomial.
+  add $1,$2
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

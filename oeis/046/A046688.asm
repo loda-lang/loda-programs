@@ -1,5 +1,5 @@
 ; A046688: Antidiagonals of square array in which k-th row (k>0) is an arithmetic progression of difference 2^(k-1).
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,1,1,3,3,1,1,4,5,5,1,1,5,7,9,9,1,1,6,9,13,17,17,1,1,7,11,17,25,33,33,1,1,8,13,21,33,49,65,65,1,1,9,15,25,41,65,97,129,129,1,1,10,17,29,49,81,129,193,257,257,1,1,11,19,33,57,97,161,257,385,513,513,1,1,12,21,37,65,113,193,321,513,769,1025,1025,1,1,13,23,41,73,129,225,385,641
 
 lpb $0
@@ -7,10 +7,9 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-mov $2,$1
-sub $0,1
-mov $1,2
-pow $1,$0
-mul $2,$1
+mov $2,2
+pow $2,$0
 mov $0,$2
+div $0,2
+mul $0,$1
 add $0,1

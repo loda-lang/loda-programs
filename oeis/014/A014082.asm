@@ -1,12 +1,12 @@
 ; A014082: Number of occurrences of '111' in binary expansion of n.
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,0,0,0,0,1,1,2,3,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,1,1,1,1,2,2,3,4,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,0,0,0,0,1,1,2,3,0,0,0,0
 
 lpb $0
   mov $2,$0
-  seq $2,244413 ; Exponent of highest power of 8 dividing n.
-  mov $3,$2
-  min $3,1
+  mod $2,8
+  div $2,7
   div $0,2
-  add $1,$3
+  add $1,$2
 lpe
 mov $0,$1

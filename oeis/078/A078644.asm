@@ -1,11 +1,10 @@
 ; A078644: a(n) = tau(2*n^2)/2.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 1,2,3,3,3,6,3,4,5,6,3,9,3,6,9,5,3,10,3,9,9,6,3,12,5,6,7,9,3,18,3,6,9,6,9,15,3,6,9,12,3,18,3,9,15,6,3,15,5,10,9,9,3,14,9,12,9,6,3,27,3,6,15,7,9,18,3,9,9,18,3,20,3,6,15,9,9,18,3,15,9,6,3,27,9,6,9,12,3,30,9,9,9,6,9,18,3,10,15,15
 
 add $0,1
 mov $1,$0
-mul $1,2
-mul $1,$0
-seq $1,145154 ; Coefficients in expansion of Eisenstein series E_1.
+pow $1,2
+sub $1,1
+seq $1,174273 ; Inverse Moebius transform of A035263.
 mov $0,$1
-div $0,8

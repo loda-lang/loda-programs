@@ -6,14 +6,14 @@ mov $10,$0
 mov $12,$0
 add $12,1
 lpb $12
-  mov $0,$10
   sub $12,1
+  mov $0,$10
   sub $0,$12
   mov $1,1
   mov $2,0
   lpb $0
-    sub $0,$2
     sub $0,1
+    sub $0,$2
     add $2,1
     mul $1,$2
   lpe

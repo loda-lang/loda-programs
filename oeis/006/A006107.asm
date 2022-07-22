@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,6106 ; Gaussian binomial coefficient [ n,3 ] for q = 4.
-  add $3,$2
-  mul $3,4
+  sub $0,1
+  add $1,$2
+  mul $1,4
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,22232 ; Gaussian binomial coefficients [ n,3 ] for q = 7.
-  add $3,$2
-  mul $3,7
+  sub $0,1
+  add $1,$2
+  mul $1,7
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

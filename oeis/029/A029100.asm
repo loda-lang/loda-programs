@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25779 ; Expansion of 1/((1-x)*(1-x^5)*(1-x^9)).
+  seq $2,187243 ; Number of ways of making change for n cents using coins of 1, 5, and 10 cents.
   add $1,$2
-  mov $3,7
+  mov $3,6
 lpe
 mov $0,$1

@@ -6,6 +6,5 @@ seq $0,323211 ; Level 1 of Pascal's pyramid. T(n, k) triangle read by rows for n
 mov $1,$0
 sub $1,1
 gcd $1,4
-mov $2,4
-div $2,$1
-mov $0,$2
+mov $0,4
+div $0,$1

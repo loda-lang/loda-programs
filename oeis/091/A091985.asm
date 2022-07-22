@@ -9,10 +9,10 @@ lpb $0
   sub $0,$2
   max $0,1
   sub $0,1
+  add $1,2
   sub $2,1
-  add $3,2
-  add $2,$3
-  cmp $3,1
+  add $2,$1
+  cmp $1,1
 lpe
 mov $0,$2
 sub $0,1

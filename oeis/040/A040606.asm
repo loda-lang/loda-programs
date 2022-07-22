@@ -4,9 +4,9 @@
 
 seq $0,40281 ; Continued fraction for sqrt(299).
 mov $1,$0
-mov $0,8
-mov $2,$1
+mov $2,$0
 div $2,7
+mov $0,8
 sub $0,$2
 div $0,3
 add $0,7

@@ -5,9 +5,9 @@
 seq $0,138840 ; Concatenation of initial and final digits of n-th prime.
 lpb $0
   mov $2,$0
+  mod $2,10
   div $0,10
   add $0,$1
-  mod $2,10
   add $1,$2
 lpe
 sub $2,$0

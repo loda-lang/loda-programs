@@ -5,9 +5,9 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,225822 ; Lesser of adjacent odd numbers with different parity of binary weight and both isolated from odd numbers of same parity of binary weight.
   add $0,$2
+  sub $1,1
 lpe
 mul $0,2
 div $0,16

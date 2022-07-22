@@ -10,7 +10,7 @@ lpb $2
   add $1,3
   mov $3,$0
   bin $3,2
-  trn $3,$1
+  sub $3,$1
   min $3,1
   sub $2,$3
 lpe

@@ -6,11 +6,11 @@ mov $4,$0
 mov $6,$0
 add $6,1
 lpb $6
-  mov $0,$4
   mov $1,0
   mov $2,0
   sub $6,1
   min $6,2
+  mov $0,$4
   sub $0,$6
   lpb $0
     sub $0,1

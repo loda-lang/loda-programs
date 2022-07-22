@@ -6,20 +6,20 @@ mul $0,2
 add $0,3
 div $0,2
 sub $4,$0
-seq $0,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
-add $2,$0
 pow $4,2
 add $4,1
+seq $0,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
+add $2,$0
 mul $2,$4
-mov $1,$2
 mov $6,$3
 mul $6,2
+mov $1,$2
 add $1,$6
 mov $5,$3
 mul $5,$3
 mov $6,$5
 mul $6,2
-add $1,$6
 mul $5,$3
+add $1,$6
 add $1,$5
 mov $0,$1

@@ -2,13 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,4,6,9,12,20,24,30,35,44,50
 
-add $0,2
 mov $2,1
+add $0,2
 lpb $0
   mov $3,$0
   lpb $3
-    sub $1,1
     sub $3,2
+    sub $1,1
     add $1,$3
   lpe
   div $0,2

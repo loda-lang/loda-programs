@@ -1,15 +1,16 @@
 ; A025839: Expansion of 1/((1-x^3)(1-x^5)(1-x^11)).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,0,1,1,0,1,1,1,2,1,1,2,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,6,5,6,7,6,7,7,7,8,8,8,9,9,9,10,10,10,11,11,11,12,12,13,13,13,14,14,15,15,15,16,16,17,18,17,18,19
 
-add $0,2
+mov $3,3
+add $0,3
 lpb $0
-  sub $0,2
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8676 ; Expansion of 1/((1-x^3)*(1-x^5)).
+  mul $2,2
+  seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
   add $1,$2
-  mov $3,9
+  mov $3,11
 lpe
 mov $0,$1

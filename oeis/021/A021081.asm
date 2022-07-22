@@ -6,8 +6,8 @@ lpb $0
   mod $0,6
   add $0,3
   add $1,$0
-  cmp $0,3
   pow $1,3
+  cmp $0,3
 lpe
 sub $1,4
 mod $1,10

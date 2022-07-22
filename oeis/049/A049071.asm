@@ -5,6 +5,6 @@ sub $0,1
 mod $0,2
 mov $1,5
 gcd $1,$0
-sub $1,2
 sub $1,$0
+sub $1,2
 mov $0,$1

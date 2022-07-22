@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,26743 ; a(n) = Sum_{j=0..n} T(n,j), T given by A026736.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

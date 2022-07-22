@@ -4,8 +4,8 @@
 
 mov $1,5
 pow $1,$0
-mul $0,2
 bin $1,2
+mul $0,2
 mov $2,10
 pow $2,$0
 sub $2,$1

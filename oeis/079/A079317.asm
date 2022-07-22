@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,162349 ; First differences of A160412.
+  trn $0,2
   add $1,$2
 lpe
 div $1,9

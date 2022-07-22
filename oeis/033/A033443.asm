@@ -4,8 +4,8 @@
 mov $2,$0
 lpb $0
   sub $0,1
-  add $1,$0
   trn $2,11
+  add $1,$0
   sub $1,$2
 lpe
 mov $0,$1

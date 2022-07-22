@@ -11,8 +11,8 @@ lpb $1
   lpb $1
     add $1,1
     mul $1,$0
-    sub $0,3
     mul $1,100
+    sub $0,3
     gcd $0,$1
     mod $1,3
   lpe

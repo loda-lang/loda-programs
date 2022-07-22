@@ -18,9 +18,9 @@ lpb $6
       mod $4,$2
       cmp $4,0
       cmp $4,0
-      mov $9,$8
-      cmp $9,0
-      add $8,$9
+      mov $1,$8
+      cmp $1,0
+      add $8,$1
       div $2,$8
       add $2,1
       sub $3,$4

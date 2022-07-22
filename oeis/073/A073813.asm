@@ -3,7 +3,7 @@
 
 lpb $0
   mov $1,$0
-  mov $0,0
   seq $1,56608 ; Least prime factor of the n-th composite number.
+  mov $0,0
 lpe
 mov $0,$1

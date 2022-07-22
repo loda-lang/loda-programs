@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,60192 ; Union_i p(4i+2), p(4i+3), where p(k) = k-th prime.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

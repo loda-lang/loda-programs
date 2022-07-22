@@ -12,8 +12,8 @@ mov $5,$2
 trn $5,3
 add $5,8
 div $5,8
-mov $1,$5
 mov $3,$4
 mul $3,2
+mov $1,$5
 add $1,$3
 mov $0,$1

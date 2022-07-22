@@ -5,19 +5,19 @@
 mov $3,$0
 mov $5,4
 lpb $5
-  mov $0,$3
   sub $5,1
+  mov $0,$3
   add $0,$5
-  add $0,1
   mov $2,$0
+  sub $2,1
+  add $0,1
   mul $0,2
-  sub $2,2
   bin $0,$2
   mul $0,2
-  sub $0,$6
-  mov $6,$5
-  mul $6,$0
-  add $4,$6
+  sub $0,$1
+  mov $1,$5
+  mul $1,$0
+  add $4,$1
 lpe
 mov $0,$4
 div $0,2

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,80776 ; Oscillating sequence which rises to 2^(k-1) in k-th segment (k>=1) then falls back to 0.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

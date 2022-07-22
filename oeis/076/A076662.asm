@@ -1,8 +1,7 @@
 ; A076662: First differences of A007066.
-; Submitted by [AF>Amis des Lapins] Phil1966
+; Submitted by Simon Strandgaard
 ; 3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2
 
-mov $1,$0
-seq $1,114986 ; Characteristic function of (A000201 prefixed with 0).
-mov $0,$1
+add $0,1
+seq $0,189479 ; Fixed point starting with 0 of the morphism 0->01, 1->101.
 add $0,2

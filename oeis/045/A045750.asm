@@ -3,15 +3,15 @@
 
 mov $2,1
 lpb $2
-  mov $1,$0
   sub $2,1
+  mov $1,$0
   mov $4,2
   lpb $4
+    sub $4,1
     mov $0,$1
     trn $0,1
     seq $0,187571 ; Complement of A187570.
     mov $3,$0
-    sub $4,1
   lpe
   min $1,1
   mul $1,$3

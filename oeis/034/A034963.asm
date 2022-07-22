@@ -4,8 +4,7 @@
 
 sub $0,1
 mov $2,$0
-mov $3,3
-add $3,1
+mov $3,4
 lpb $3
   sub $3,1
   mov $0,$2
@@ -15,6 +14,5 @@ lpb $3
   seq $0,86801 ; a(n) = prime(n) - 3.
   add $1,$0
 lpe
-add $0,9
 mov $0,$1
 add $0,12

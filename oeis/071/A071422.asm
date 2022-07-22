@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,67342 ; Sum of decimal digits of sum of divisors of n.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

@@ -9,8 +9,8 @@ lpb $3
   add $2,$3
   sub $3,1
 lpe
-mov $4,10
-pow $4,$0
-div $2,$4
+mov $1,10
+pow $1,$0
+div $2,$1
 mov $0,$2
 mod $0,10

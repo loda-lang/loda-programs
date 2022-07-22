@@ -7,6 +7,5 @@ lpb $1
   add $0,1
   trn $1,$0
 lpe
-sub $0,7
 mul $0,4
-add $0,207
+add $0,179

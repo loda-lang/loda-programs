@@ -8,8 +8,8 @@ mul $3,2
 lpb $3
   mul $1,$3
   sub $3,1
-  mul $1,$3
   mul $2,$3
+  mul $1,$3
   add $1,$2
   add $2,$1
   div $2,2

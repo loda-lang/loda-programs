@@ -1,15 +1,8 @@
 ; A040565: Continued fraction for sqrt(590).
-; Submitted by [TA]crashtech
+; Submitted by Simon Strandgaard
 ; 24,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4
 
-seq $0,40685 ; Continued fraction for sqrt(712).
-sub $0,3
-mul $0,2
 mov $1,$0
-add $1,3
-mul $0,2
-mod $0,10
+seq $1,10149 ; Continued fraction for sqrt(70).
+seq $0,40258 ; Continued fraction for sqrt(275).
 add $0,$1
-div $0,2
-sub $1,$0
-mov $0,$1

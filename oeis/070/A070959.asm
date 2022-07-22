@@ -7,19 +7,19 @@ mov $1,$0
 lpb $1
   mul $0,$1
   add $0,1
-  mov $2,$0
   sub $6,$0
+  mov $2,$0
   lpb $2
     div $4,$6
     max $4,0
     seq $4,175753 ; Numbers with 46 divisors.
     mov $5,$0
     seq $5,77116 ; n^3 - A065733(n).
-    mul $4,$5
     mov $7,$0
     cmp $7,0
     add $0,$7
     mod $2,$0
+    mul $4,$5
     div $0,98090
     add $3,$4
   lpe

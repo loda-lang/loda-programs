@@ -3,10 +3,10 @@
 
 mov $1,$0
 lpb $1
-  mov $2,$0
-  add $0,1
-  seq $2,69513 ; Characteristic function of the prime powers p^k, k >= 1.
-  add $1,$2
   sub $1,1
+  mov $2,$0
+  seq $2,69513 ; Characteristic function of the prime powers p^k, k >= 1.
+  add $0,1
+  add $1,$2
 lpe
 add $0,1

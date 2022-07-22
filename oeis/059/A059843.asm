@@ -4,19 +4,19 @@
 
 mov $2,$0
 sub $0,1
-add $2,2
 mov $4,$0
+add $2,2
 lpb $2
-  add $4,$1
-  add $1,2
   sub $2,1
+  add $4,$1
   add $4,2
+  add $1,2
   mov $3,$4
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   lpb $3
+    div $3,4
     sub $1,$0
     mul $2,0
-    div $3,4
   lpe
   sub $4,1
 lpe

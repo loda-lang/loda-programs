@@ -6,11 +6,11 @@ sub $0,1
 mov $2,$0
 mov $3,4
 lpb $3
+  sub $3,2
   mov $0,$2
   add $0,1
   seq $0,90340 ; Difference between the sums of the prime factors, including multiplicity, of n and those of n + 1.
   add $1,$0
   add $2,1
-  sub $3,2
 lpe
 mov $0,$1

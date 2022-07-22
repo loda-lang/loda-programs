@@ -12,7 +12,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,25474 ; Exponent of n-th prime power (A000961).
+    seq $2,25474 ; Exponent of the n-th prime power A000961(n).
     mov $4,$2
     mov $6,$7
     mul $6,$2

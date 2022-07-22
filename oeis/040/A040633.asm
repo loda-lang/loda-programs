@@ -1,11 +1,10 @@
 ; A040633: Continued fraction for sqrt(659).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 25,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2
 
-seq $0,10144 ; Continued fraction for sqrt(59).
-seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
+seq $0,10179 ; Continued fraction for sqrt(114).
 mov $1,$0
-mul $1,12
-div $1,15
+div $0,8
+mul $0,15
+add $1,$0
 mov $0,$1
-sub $0,6

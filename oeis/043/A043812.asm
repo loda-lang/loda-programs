@@ -7,7 +7,6 @@ add $2,11
 pow $2,2
 add $0,1
 mov $1,$0
-div $1,2
 bin $2,2
 lpb $2
   mov $3,$1

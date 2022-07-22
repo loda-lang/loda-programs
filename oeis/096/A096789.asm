@@ -5,17 +5,17 @@ mov $2,2
 mov $3,$0
 mul $3,5
 lpb $3
-  mul $2,$3
-  add $1,$2
   mov $7,$3
   cmp $7,0
+  mul $2,$3
   add $3,$7
-  div $1,$3
   mov $5,$4
   div $5,3
   mov $7,$5
   cmp $7,0
   add $5,$7
+  add $1,$2
+  div $1,$3
   div $1,$5
   div $2,$5
   sub $3,1

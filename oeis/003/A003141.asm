@@ -1,19 +1,18 @@
 ; A003141: Minimal number of arcs whose reversal yields a transitive tournament.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,0,1,1,3,4,7,8,12,15,20,22,28
 
-mov $4,1
-mov $5,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $5,$4
-  mov $1,$4
-  mul $1,$3
-  div $1,$5
-  add $2,$1
-  sub $3,1
-  add $4,2
-  mov $5,1
+mov $5,$0
+mov $2,$0
+lpb $2
+  sub $2,2
+  mov $0,$5
+  sub $0,$2
+  mov $4,$2
+  div $4,$0
+  mov $3,$5
+  sub $3,$0
+  sub $3,$4
+  add $1,$3
 lpe
-mov $0,$2
+mov $0,$1

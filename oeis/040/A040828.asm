@@ -1,14 +1,9 @@
 ; A040828: Continued fraction for sqrt(858).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 29,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3,58,3,2,3
 
-seq $0,40304 ; Continued fraction for sqrt(322).
-dif $0,8
-mov $1,$0
-div $1,3
-add $1,1
-mul $1,2
-mov $2,$0
-add $2,$1
-dif $2,$1
-mov $0,$2
+mov $1,-1
+pow $1,$0
+seq $0,40855 ; Continued fraction for sqrt(885).
+add $0,1
+sub $0,$1

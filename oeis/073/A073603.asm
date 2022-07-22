@@ -8,5 +8,5 @@ seq $1,23515 ; a(n) = prime(n)*prime(n-1) - 1.
 add $1,1
 seq $0,58077 ; Binomial coefficients formed from consecutive primes: a(n) = binomial( prime(n+1), prime(n) ).
 sub $0,1
-mul $0,$0
+pow $0,2
 mod $0,$1

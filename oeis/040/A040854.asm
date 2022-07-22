@@ -1,20 +1,10 @@
 ; A040854: Continued fraction for sqrt(884).
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 29,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1,58,1,2,1,2,1,2,1
 
-mov $1,1
-add $0,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  seq $1,40855 ; Continued fraction for sqrt(885).
-  mul $1,$2
-  add $1,$4
-  mul $3,$2
-  mod $3,56
-  add $3,1
-lpe
-div $1,$2
-mov $0,$1
+mov $1,$0
+seq $1,10194 ; Continued fraction for sqrt(135).
+gcd $0,2
+mul $0,$1
+mul $0,4
+div $0,3

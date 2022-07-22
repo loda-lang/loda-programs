@@ -4,9 +4,9 @@
 
 lpb $0
   sub $0,1
+  cmp $2,2
   add $3,1
   mul $1,$3
-  cmp $2,2
   add $1,$2
   add $2,2
 lpe

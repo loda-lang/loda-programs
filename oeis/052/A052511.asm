@@ -1,9 +1,9 @@
 ; A052511: Prime(n) - 1 - A006218(n).
 ; 0,-1,-1,-2,0,-2,0,-2,-1,1,1,1,3,1,1,2,6,2,6,4,2,4,6,4,9,9,7,5,5,1,13,11,13,11,17,10,14,16,16,14,18,12,20,16,14,12,22,24,25,21,21,21,21,23,25,23,25,23,27,19,19,25,33,30,28,24,36,36,42,36,38,32,38,40,40,38,40,40,42,40,45,43,51,41,43,43,45,45,47,37,37,43,47,47,51,43,47,53,49,58
 
-mov $2,$0
+mov $1,$0
 seq $0,40 ; The prime numbers.
 sub $0,1
-add $2,1
-seq $2,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
-sub $0,$2
+add $1,1
+seq $1,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
+sub $0,$1

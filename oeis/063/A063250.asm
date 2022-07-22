@@ -4,7 +4,6 @@
 
 lpb $0
   mov $1,$0
-  mul $0,2
   seq $1,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
   bin $0,380
 lpe

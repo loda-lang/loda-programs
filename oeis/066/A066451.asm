@@ -1,26 +1,18 @@
 ; A066451: a(n) is the number of integers k > 0 such that (n*k+1)/(k^2+1) is an integer.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,1,2,1,2,1,3,1,2,1,2,2,3,1,2,1,3,1,2,1,3,2,3,1,2,1,3,1,2,1,3,2,3,1,2,1,3,2,2,1,2,2,4,1,2,1,3,1,2,1,2,2,3,1,3,1,5,1,2,1,2,2,3,1,2,1,3,1,2,1,2,3,4,1,2,1,3,1,2,2,2,2,4,1,2,1,3,1,3,1,3,2,3,1,2,1,3,1,2,1
 
-add $0,1
-mov $3,1
-mov $4,1
 mov $2,$0
 lpb $2
-  sub $0,1
-  add $3,$5
   add $3,2
   add $4,$3
   mov $5,$0
-  mul $5,2
   mod $5,$4
   cmp $5,0
+  sub $0,1
   add $1,$5
+  sub $2,$3
   sub $4,1
-  trn $5,$4
-  cmp $5,0
-  mul $5,2
-  sub $2,$5
 lpe
 mov $0,$1
 add $0,1

@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,5773 ; Number of directed animals of size n (or directed n-ominoes in standard position).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

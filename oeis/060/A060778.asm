@@ -4,12 +4,10 @@
 
 mov $4,$0
 mov $3,2
-sub $3,$1
 lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  max $5,1
   seq $0,62011 ; a(n) = 2*tau(n) = 2*A000005(n).
   mov $2,$3
   mul $2,$0

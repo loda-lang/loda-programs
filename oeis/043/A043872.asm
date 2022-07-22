@@ -1,5 +1,6 @@
 ; A043872: Numbers n such that number of runs in the base 4 representation of n is congruent to 5 mod 10.
-; Submitted by Groo
+; Submitted by Christian Krause
 ; 273,274,275,280,281,283,284,285,286,289,290,291,292,294,295,300,301,302,305,306,307,308,310,311,312,313,315,388,390,391,392,393,395,396,397,398,401,402,403,408,409,411,412,413,414,433,434,435,436,438,439,440,441,443,452,454,455,456,457,459,460,461,462,465,466,467,472,473,475,476,477,478,481,482,483,484,486,487,492,493,494,529,530,531,536,537,539,540,541,542,545,546,547,548,550,551,556,557,558,561
 
-seq $0,43832 ; Numbers n such that number of runs in the base 4 representation of n is congruent to 0 mod 5.
+seq $0,43598 ; Numbers whose base-4 representation has exactly 7 runs.
+sub $0,4096

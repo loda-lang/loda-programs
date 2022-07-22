@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,77916 ; Expansion of (1-x)^(-1)/(1 + 2*x - 2*x^2 - x^3).
+  sub $0,2
   add $1,$2
 lpe
 div $0,2

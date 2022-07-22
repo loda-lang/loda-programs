@@ -10,8 +10,8 @@ lpb $2
   gcd $3,$0
   bin $3,$2
   cmp $3,1
-  add $1,$3
   mov $4,$2
+  add $1,$3
   sub $2,1
 lpe
 mov $0,$1

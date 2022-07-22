@@ -1,5 +1,5 @@
 ; A043641: Numbers whose base-10 representation has exactly 5 runs.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 10101,10102,10103,10104,10105,10106,10107,10108,10109,10120,10121,10123,10124,10125,10126,10127,10128,10129,10130,10131,10132,10134,10135,10136,10137,10138,10139,10140,10141,10142
 
 mov $1,1
@@ -19,6 +19,5 @@ lpb $0
   sub $2,4
   mov $1,$2
 lpe
-add $1,$0
-mov $0,$1
+add $0,$1
 add $0,10100

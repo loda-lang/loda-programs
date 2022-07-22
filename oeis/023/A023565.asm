@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,23533 ; a(n) = 1 if n is of the form m(m+1)(m+2)/6, and 0 otherwise.
   add $0,$3
   trn $0,3
+  seq $2,14306 ; a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
+  cmp $2,0
   add $1,$2
   sub $3,1
 lpe

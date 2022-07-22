@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,33676 ; Largest divisor of n <= sqrt(n).
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

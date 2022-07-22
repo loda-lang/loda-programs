@@ -2,11 +2,11 @@
 ; Submitted by Christian Krause
 ; 1,14,84,410,1820,7648,31008,122584,475600,1818656,6874560,25742624,95645888,353032960,1295729664,4732541824,17211685120,62362187264,225201546240,810825419264,2911520685056,10429433085952
 
-mov $2,$0
+mov $1,$0
+seq $1,20727 ; Pisot sequence P(2,7): a(0)=2, a(1)=7, thereafter a(n+1) is the nearest integer to a(n)^2/a(n-1).
 mul $0,3
-seq $2,20727 ; Pisot sequence P(2,7): a(0)=2, a(1)=7, thereafter a(n+1) is the nearest integer to a(n)^2/a(n-1).
-mul $0,$2
-add $0,$2
+mul $0,$1
+add $0,$1
 sub $0,1
 div $0,2
 add $0,1
