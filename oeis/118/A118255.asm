@@ -4,11 +4,11 @@
 
 mov $2,$0
 mov $3,1
-mov $4,$0
-lpb $4
+mov $1,$0
+lpb $1
+  sub $1,1
   mov $0,$2
-  sub $4,1
-  sub $0,$4
+  sub $0,$1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,1
   mul $3,2

@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,51872 ; 20-gonal (or icosagonal) numbers: a(n) = n*(9*n-8).
   add $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

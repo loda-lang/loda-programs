@@ -3,9 +3,9 @@
 
 mov $2,$0
 div $0,8
-mov $1,56
 mov $3,1
 add $3,$0
+mov $1,56
 mul $1,$3
 add $1,$2
 mov $0,$1

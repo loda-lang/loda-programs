@@ -3,6 +3,6 @@
 
 mov $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-sub $0,$1
 add $0,1
+sub $0,$1
 pow $0,$1

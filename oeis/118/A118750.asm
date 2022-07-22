@@ -5,8 +5,8 @@
 mov $1,2
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,118749 ; Largest prime <= 3*n.
+  sub $0,1
   mul $1,$2
 lpe
 mov $0,$1

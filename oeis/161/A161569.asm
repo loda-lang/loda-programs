@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

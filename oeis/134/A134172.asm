@@ -4,7 +4,7 @@
 mov $1,$0
 mod $1,4
 lpb $1
-  mul $0,3
   mov $1,1
+  mul $0,3
 lpe
 div $0,4

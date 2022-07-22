@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   mov $3,$0
   lpb $3
-    div $3,9
+    div $3,10
     mov $4,$0
     min $4,1
     mov $2,3

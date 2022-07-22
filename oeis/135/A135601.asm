@@ -8,7 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,257587 ; If n = abcd... in decimal, a(n) = a^2-b^2+c^2-d^2+...
+  seq $3,257587 ; If n = abcd... in decimal, a(n) = a^2 - b^2 + c^2 - d^2 + ...
   trn $3,3
   min $3,1
   sub $0,$3

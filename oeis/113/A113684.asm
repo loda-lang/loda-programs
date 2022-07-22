@@ -3,5 +3,5 @@
 
 mov $1,$0
 seq $0,23610 ; Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
-sub $0,$1
 sub $0,1
+sub $0,$1

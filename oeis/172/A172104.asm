@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,167021 ; a(n) = 1 iff 6n+1 is prime.
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

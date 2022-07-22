@@ -4,7 +4,7 @@
 
 mov $1,$0
 trn $0,1
-seq $0,98894 ; Values of n such that {s(1),...,s(n)} is a palindrome, where {s(1),s(2),...} is the fixed-point of the substitutions 0->1 and 1->110.
+seq $0,98894 ; Values of k such that {s(1),...,s(k)} is a palindrome, where {s(1),s(2),...} is the fixed point of the substitutions 0->1 and 1->110.
 min $1,1
 mul $1,2
 add $0,$1

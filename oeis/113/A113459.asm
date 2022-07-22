@@ -3,9 +3,9 @@
 
 mov $1,1600
 lpb $1
-  add $0,1
   mod $1,8
   sub $1,12
+  add $0,1
   gcd $1,$0
   mul $1,4
 lpe

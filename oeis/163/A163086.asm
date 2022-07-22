@@ -5,8 +5,8 @@
 mov $1,4
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,163085 ; Product of first n swinging factorials (A056040).
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

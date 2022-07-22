@@ -5,9 +5,9 @@
 add $0,2
 mov $1,2
 pow $1,$0
-bin $0,2
 sub $1,2
 div $1,2
+bin $0,2
 gcd $0,$1
 div $1,$0
 mov $0,$1

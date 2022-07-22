@@ -4,6 +4,3 @@
 
 seq $0,267805 ; Decimal representation of the n-th iteration of the "Rule 214" elementary cellular automaton starting with a single ON (black) cell.
 seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-div $0,2
-mul $0,2
-add $0,1

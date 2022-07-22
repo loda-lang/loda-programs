@@ -10,14 +10,11 @@ mov $1,1
 sub $2,$0
 mul $2,-1
 mov $3,1
-mul $0,3
-add $0,2
 lpb $0
-  sub $0,2
   add $4,1
   mul $1,$2
   mul $1,$0
-  mul $1,-3
+  mul $1,-9
   div $1,$4
   div $1,$4
   add $3,$1

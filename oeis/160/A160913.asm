@@ -3,9 +3,9 @@
 ; 255,32385,278715,2072640,4980405,35396805,35000535,132648960,203183235,632511435,496922835,2265395520,1333405965,4445067945,5443582665,8489533440,6539772585,25804270845,12663182955,40480731840,38255584755
 
 mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 seq $0,69092 ; Jordan function J_7(n).
 mul $0,2
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 div $0,$1
 div $0,2
 mul $0,255

@@ -1,16 +1,14 @@
 ; A128417: Number triangle T(n,k)=2^(n-k)*C(2n,n-k).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,4,1,24,8,1,160,60,12,1,1120,448,112,16,1,8064,3360,960,180,20,1,59136,25344,7920,1760,264,24,1,439296,192192,64064,16016,2912,364,28,1,3294720,1464320
 
 lpb $0
   add $1,1
+  add $2,2
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
 lpe
+sub $1,$0
+bin $2,$1
 mov $0,2
-pow $0,$2
-mul $1,2
-bin $1,$2
-mul $1,$0
-mov $0,$1
+pow $0,$1
+mul $0,$2

@@ -6,7 +6,6 @@ seq $0,261300 ; Concatenate successive run lengths of 0's in the binary expansio
 seq $0,54055 ; Largest digit of n.
 add $0,1
 mov $1,1
-bin $1,$2
 lpb $1
   div $0,3
   add $1,$0

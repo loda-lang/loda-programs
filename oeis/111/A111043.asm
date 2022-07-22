@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,296184 ; Decimal expansion of 2 + phi, with the golden section phi from A001622.
   pow $2,2
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

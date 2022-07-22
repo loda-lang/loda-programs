@@ -4,16 +4,16 @@
 
 add $0,1
 mov $3,$0
-mov $5,$0
-add $5,1
-lpb $5
-  sub $5,1
-  sub $0,$5
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  sub $0,$1
   seq $0,40 ; The prime numbers.
   mov $2,$0
-  mov $0,$3
   pow $2,$3
   sub $2,$4
+  mov $0,$3
   add $4,$2
 lpe
 mov $0,$2

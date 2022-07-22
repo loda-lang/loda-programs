@@ -12,8 +12,8 @@ mov $3,$0
 mul $3,$0
 mov $4,$3
 mul $4,5
-add $1,$4
 mul $3,$0
+add $1,$4
 add $1,$3
 add $1,$0
 mov $0,$1

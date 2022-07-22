@@ -4,10 +4,10 @@
 sub $1,$0
 lpb $0
   max $2,$0
+  div $2,6
   sub $0,5
   add $1,1
   max $1,0
-  div $2,6
 lpe
 trn $1,$2
 mul $1,2

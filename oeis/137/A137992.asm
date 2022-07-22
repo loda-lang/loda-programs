@@ -6,7 +6,7 @@ mov $2,$0
 add $2,$0
 add $2,1
 bin $2,$0
-sub $3,$2
-mod $3,3
-mov $0,$3
+sub $1,$2
+mod $1,3
+mov $0,$1
 add $0,2

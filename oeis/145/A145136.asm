@@ -5,10 +5,10 @@
 mov $3,6
 lpb $0
   mov $2,$0
-  sub $0,3
-  trn $0,1
   add $2,$3
   add $3,1
+  sub $0,3
+  trn $0,1
   bin $2,$3
   add $1,$2
 lpe

@@ -4,22 +4,22 @@
 
 mov $2,1
 mov $3,$0
-mov $0,2
 mov $4,1
+mov $0,2
 lpb $3
-  mul $1,$3
   mul $4,$3
+  mul $1,$3
   add $1,$4
   mul $1,$0
   mul $0,2
   sub $0,1
-  mul $2,-1
   cmp $4,0
   add $5,$4
   mov $6,$5
   cmp $6,0
   add $5,$6
   div $1,$5
+  mul $2,-1
   add $2,$1
   sub $3,1
   div $4,$5

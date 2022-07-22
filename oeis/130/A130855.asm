@@ -3,9 +3,9 @@
 
 lpb $0
   sub $1,$0
-  mod $1,2
   add $2,1
   trn $0,$2
+  mod $1,2
   bin $1,2
   add $1,$2
 lpe

@@ -1,24 +1,20 @@
 ; A165621: Riordan array (c(x^2)*(1+xc(x^2)), xc(x^2)).
-; Submitted by dthonon
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,2,2,1,1,2,3,3,1,1,5,5,4,4,1,1,5,9,9,5,5,1,1,14,14,14,14,6,6,1,1,14,28,28,20,20,7,7,1,1,42,42,48,48,27,27,8,8,1,1,42,90,90,75,75,35,35,9,9,1,1
 
 lpb $0
   add $2,1
   sub $0,$2
-  mov $1,$2
 lpe
-sub $1,$0
-sub $2,1
-mov $0,$1
-sub $0,$2
-mov $2,-2
-sub $2,$1
+dif $0,-1
 add $0,$2
-div $2,2
+div $0,2
 mov $1,$2
 bin $1,$0
+mul $1,2
 add $2,1
-bin $2,$0
-add $2,$1
-gcd $3,$2
+add $3,$2
+bin $3,$0
+mul $3,-1
+add $3,$1
 mov $0,$3

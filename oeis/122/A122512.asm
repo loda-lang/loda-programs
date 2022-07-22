@@ -8,8 +8,8 @@ lpb $0
   add $2,$1
   add $4,1
   add $3,$4
-  add $1,$3
   add $4,$2
+  add $1,$3
   sub $2,$4
   add $3,$4
   sub $4,$3

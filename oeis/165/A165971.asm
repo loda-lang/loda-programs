@@ -5,15 +5,15 @@
 add $0,1
 mov $1,$0
 lpb $1
-  mov $2,$0
   mov $4,$1
+  mov $2,$0
   lpb $2
-    sub $0,2
     dif $2,$1
+    sub $0,2
     mov $5,$0
-    mov $0,1
     max $5,0
     seq $5,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
+    mov $0,1
   lpe
   cmp $3,0
   add $5,$3

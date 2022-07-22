@@ -4,8 +4,8 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-mov $2,2
-pow $2,$0
-bin $2,2
-mov $0,$2
+mov $1,2
+pow $1,$0
+bin $1,2
+mov $0,$1
 mul $0,2

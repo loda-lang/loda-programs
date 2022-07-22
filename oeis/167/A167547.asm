@@ -6,6 +6,5 @@ mov $1,$0
 bin $1,2
 add $1,1
 mul $0,$1
-sub $0,1
 mul $0,14
-add $0,6
+sub $0,8

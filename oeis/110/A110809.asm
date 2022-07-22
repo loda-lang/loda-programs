@@ -5,9 +5,9 @@
 mov $2,3
 mov $3,$0
 lpb $3
-  cmp $4,0
-  add $2,$4
-  bin $2,2
   sub $3,1
+  cmp $1,0
+  add $2,$1
+  bin $2,2
 lpe
 mov $0,$2

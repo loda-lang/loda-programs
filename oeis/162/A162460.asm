@@ -17,15 +17,15 @@ lpb $3
     seq $2,161762 ; Sum of all numbers from Fibonacci(n-1) to Fibonacci(n).
     mov $3,0
     mov $4,$2
-    trn $7,$8
+    trn $7,$1
     mov $6,$7
     mul $6,$2
-    add $8,$6
+    add $1,$6
   lpe
-  mov $0,1
   min $5,1
   mul $5,$4
-  mov $4,$8
+  mov $0,1
+  mov $4,$1
   sub $4,$5
 lpe
 mov $0,$4

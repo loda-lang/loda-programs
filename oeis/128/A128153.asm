@@ -2,17 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 1,9,20,37,58,85,116,153,194,241,292,349,410
 
-mov $1,$0
+mov $1,1
+add $1,$0
 mov $2,$0
-mul $0,5
-lpb $0
-  mul $1,$0
-  sub $1,1
-  div $1,2
-  add $1,2
-  gcd $0,3
-lpe
-mul $2,4
-mov $0,$1
+cmp $2,0
 add $0,$2
-add $0,1
+pow $1,2
+mul $1,5
+div $1,2
+sub $1,$0
+mov $0,$1

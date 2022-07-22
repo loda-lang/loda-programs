@@ -1,16 +1,16 @@
 ; A131781: 2*A046854 - A000012 (signed by columns + - + -, ...).
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,3,1,1,3,1,3,3,3,1,1,5,5,3,1,3,5,7,7,3,1,1,7,11,9,9,3,1,3,7,13,19,11,11,3,1,1,9,19,21,29,13,13,3,1,3,9,21,39,31,41,15,15,3,1
 
 lpb $0
   mov $1,$0
   add $2,1
   sub $0,$2
-  div $1,2
 lpe
-bin $1,$0
 add $2,$0
 mod $2,2
+div $1,2
+bin $1,$0
 add $1,$2
 mov $0,$1
 mul $0,2

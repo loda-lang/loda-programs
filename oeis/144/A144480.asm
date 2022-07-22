@@ -1,15 +1,14 @@
 ; A144480: T(n,k) = binomial(n, k)*min(k + 1, n - k + 1), triangle read by rows (n >= 0, 0 <= k <= n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,4,1,1,6,6,1,1,8,18,8,1,1,10,30,30,10,1,1,12,45,80,45,12,1,1,14,63,140,140,63,14,1,1,16,84,224,350,224,84,16,1,1,18,108,336,630,630,336,108,18,1,1,20,135,480,1050,1512,1050,480,135,20,1
 
 lpb $0
   add $1,1
   sub $0,$1
   mov $2,$1
-  sub $2,$0
 lpe
 bin $1,$0
+sub $2,$0
 min $0,$2
 add $0,1
-mul $1,$0
-mov $0,$1
+mul $0,$1

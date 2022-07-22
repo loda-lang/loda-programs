@@ -7,6 +7,6 @@ mov $1,-1
 pow $1,$0
 add $1,3
 dif $0,2
-seq $0,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of lattice Z^4.
+seq $0,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
 mul $0,$1
 div $0,16

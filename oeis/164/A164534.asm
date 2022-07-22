@@ -8,11 +8,4 @@ sub $1,$0
 seq $0,85434 ; n-th even number not a power of 2 whose largest and smallest factors do not add or subtract to a twin prime.
 mul $0,$1
 div $0,2
-add $0,2
-add $1,1
-sub $2,$0
-mul $0,2
-add $0,1
-sub $0,5
-div $0,2
 add $0,1

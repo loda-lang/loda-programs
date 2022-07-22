@@ -8,10 +8,10 @@ lpb $0
   dif $1,2
   sub $2,4
   add $3,$1
-  mul $1,$2
   mul $3,$0
   mul $3,$0
   sub $0,1
+  mul $1,$2
   add $1,$3
   sub $3,$1
 lpe

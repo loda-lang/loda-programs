@@ -1,20 +1,21 @@
 ; A111923: Denominator of x(n) = Sum_{k=1..n} ((odd part of k)/(k^5)).
-; Submitted by http://asterion.petrsu.ru/
+; Submitted by Arkhenia
 ; 1,32,2592,82944,51840000,17280000,41489280000,1327656960000,322620641280000,322620641280000,4723488808980480000,4723488808980480000,134907563873291489280000,134907563873291489280000
 
+mov $1,18
 add $0,1
 lpb $0
+  mov $2,$0
   mov $4,$0
   gcd $4,256
-  mov $2,$0
+  sub $0,1
   pow $2,4
   mul $2,$4
-  sub $0,1
-  max $1,1
   mul $3,$2
   add $3,$1
   mul $1,$2
 lpe
 gcd $3,$1
-div $1,$3
-mov $0,$1
+mov $4,$1
+div $4,$3
+mov $0,$4

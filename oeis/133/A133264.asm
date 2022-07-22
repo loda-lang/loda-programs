@@ -3,5 +3,5 @@
 
 mul $0,3
 add $0,1
-seq $0,51596 ; Numerical values or Gematriahs of Hebrew letters {aleph, bet, ..., tav}.
+seq $0,51596 ; Numerical values or Gematriot of Hebrew letters {aleph, bet, ..., tav}.
 sub $0,1

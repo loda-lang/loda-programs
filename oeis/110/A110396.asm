@@ -5,8 +5,8 @@
 mov $1,4
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

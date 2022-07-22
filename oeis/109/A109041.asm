@@ -5,17 +5,14 @@
 mov $5,$0
 sub $5,1
 mov $3,2
-sub $3,$4
 lpb $3
   sub $3,1
-  mov $7,1
   mov $0,$5
   add $0,$3
   seq $0,132000 ; Expansion of (1/3) * b(q) * b(q^2) * c(q)^2 / c(q^2) in powers of q where b(), c() are cubic AGM functions.
   mul $5,2
   add $5,2
   mov $2,$3
-  pow $4,$3
   mul $2,$0
   add $1,$2
   mov $4,$0

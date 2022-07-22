@@ -5,9 +5,9 @@
 add $0,3
 mov $2,$0
 seq $0,324151 ; a(n) = (2/((n+1)*(n+2)))*multinomial(3*n;n,n,n).
-mov $1,$0
 add $2,1
 add $2,$0
+mov $1,$0
 gcd $1,$2
 mul $1,2
 div $2,$1

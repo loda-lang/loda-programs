@@ -1,26 +1,25 @@
 ; A108477: A symmetric number triangle based on 2^n.
-; Submitted by Ciceronian
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,13,1,1,41,41,1,1,85,321,85,1,1,145,1289,1289,145,1,1,221,3649,8989,3649,221,1,1,313,8361,40081,40081,8361,313,1,1,421,16641,134245,265729,134245,16641,421,1,1,545,29961,369305,1256465,1256465,369305
 
-mul $0,2
 lpb $0
-  add $2,2
+  add $2,1
   sub $0,$2
 lpe
 mov $1,1
 sub $2,$0
-mul $2,2
-add $2,1
+mul $2,-2
 mov $3,1
+mul $0,2
 lpb $0
-  sub $0,1
-  add $1,$5
-  mul $1,$2
-  sub $2,1
   add $4,1
+  mul $1,-2
+  mul $1,$2
+  mul $1,$0
   div $1,$4
-  add $1,$5
-  mov $5,$3
+  div $1,$4
   add $3,$1
+  sub $0,1
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$3

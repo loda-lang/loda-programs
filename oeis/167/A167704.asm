@@ -4,9 +4,9 @@
 
 seq $0,164316 ; Number of binary strings of length n with no substrings equal to 000, 001, or 010.
 add $0,4
-mov $2,1
-add $2,$0
-mul $2,16
-mod $2,6
-sub $0,$2
+mov $1,1
+add $1,$0
+mul $1,16
+mod $1,6
+sub $0,$1
 div $0,3

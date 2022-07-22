@@ -5,11 +5,9 @@
 mov $1,$0
 mov $0,1015
 lpb $1
-  add $0,1
   sub $1,1
+  add $0,1
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  mod $1,$0
   add $0,4
 lpe
-sub $0,1015
-add $0,1016
+add $0,1
