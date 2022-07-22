@@ -1,4 +1,4 @@
-; A106147: A Levy dragon -Heighway's dragon two state 4-symbol substitution : q=1 state Levy dragon : q=0 state Heighway's dragon: Characteristic Polynomial:x^4-4*x^3+6*x^2-4*x.
+; A106147: Image of 1 under the repeated morphism 1 -> 21, 2 -> 32, 3 -> 43, 4 -> 14.
 ; Submitted by Bill F
 ; 1,4,4,3,4,3,3,2,4,3,3,2,3,2,2,1,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,4,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,4,3,2,2,1,2,1,1,4,2,1,1,4,1,4,4,3,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,4,3,2,2,1,2,1,1,4,2,1,1,4,1,4,4,3,3,2,2,1
 
