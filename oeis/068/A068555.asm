@@ -10,7 +10,7 @@ mul $0,4
 mul $2,2
 sub $2,$0
 add $0,$2
-mov $1,2
+mov $1,1
 sub $2,$0
 lpb $0
   sub $0,2
@@ -21,4 +21,3 @@ lpb $0
   add $2,2
 lpe
 gcd $0,$1
-div $0,2

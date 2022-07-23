@@ -1,10 +1,8 @@
 ; A194584: Differences of A035336.
-; Submitted by Skivelitis2
+; Submitted by Christian Krause
 ; 5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3
 
-add $0,1
-seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
-min $0,1
-max $0,0
+seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+mod $0,2
 mul $0,2
 add $0,3

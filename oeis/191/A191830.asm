@@ -1,24 +1,18 @@
 ; A191830: Expansion of x^2*(2-3*x)/(1-x-x^2)^2.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,2,1,4,5,10,16,28,47,80,135,228,384,646,1085,1820,3049,5102,8528,14240,23755,39592,65931,109704,182400,303050,503161,834868,1384397,2294290,3800080,6290788,10408679,17213696,28454415,47014380,77647104,128186062
 
-mov $5,$0
-sub $5,1
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  max $0,0
-  seq $0,1629 ; Self-convolution of Fibonacci numbers.
+mov $3,1
+mov $4,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $5,$1
+  add $1,$3
+  add $3,$4
+  add $4,$2
   mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $4,$0
+  mov $3,$5
 lpe
-sub $1,$4
-mul $1,2
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+div $0,4
+gcd $0,$2

@@ -5,5 +5,5 @@
 add $0,1
 mov $1,-1
 pow $1,$0
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 sub $0,$1

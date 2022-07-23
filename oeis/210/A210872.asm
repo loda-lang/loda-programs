@@ -9,17 +9,16 @@ lpb $0
   sub $0,$2
 lpe
 sub $2,$0
-add $2,1
 mul $2,2
 mov $0,$2
-sub $0,1
 lpb $0
-  sub $0,1
   bin $3,$0
   sub $4,1
+  sub $0,1
   add $1,$3
   mov $3,$4
   div $3,2
   sub $3,1
 lpe
 mov $0,$1
+add $0,1

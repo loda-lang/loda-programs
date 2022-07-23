@@ -5,8 +5,8 @@
 mov $1,2
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,76080 ; a(n) = A076079(n)/n.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

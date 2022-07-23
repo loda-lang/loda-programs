@@ -1,9 +1,9 @@
 ; A229764: Nim sequence of MARK: the game on n counters in which the legal moves are to remove 1 counter or to halve the number of counters and round down.
+; Submitted by Simon Strandgaard
 ; 0,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,0,1,0,2
 
-seq $0,317189 ; A morphic sequence related to the ternary Thue-Morse sequence.
-mul $0,2
-mov $1,95
-sub $1,$0
-mod $1,3
-mov $0,$1
+mov $1,$0
+min $1,1
+trn $0,1
+seq $0,36578 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+mul $0,$1

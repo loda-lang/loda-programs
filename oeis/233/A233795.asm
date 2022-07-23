@@ -14,7 +14,7 @@ lpe
 sub $4,$0
 sub $4,1
 lpb $4
-  add $3,1
   sub $4,1
+  add $3,1
 lpe
 mov $0,$3

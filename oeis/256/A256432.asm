@@ -1,15 +1,12 @@
 ; A256432: Characteristic function of octahedral numbers.
-; Submitted by Coleslaw
+; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 
-mov $1,1
 lpb $0
   sub $0,1
-  mov $3,$0
-  add $5,4
-  add $4,$5
-  trn $0,$4
+  sub $0,$1
+  add $2,4
+  add $1,$2
 lpe
-add $2,$3
-trn $1,$2
-mov $0,$1
+bin $3,$0
+mov $0,$3

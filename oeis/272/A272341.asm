@@ -2,11 +2,11 @@
 ; Submitted by Jon Maiga
 ; 0,1,2,3,5,6,8,9,12,15
 
-sub $3,$0
+sub $1,$0
 lpb $0
   add $2,$0
   sub $0,4
-  div $3,3
+  div $1,3
 lpe
-sub $2,$3
+sub $2,$1
 mov $0,$2

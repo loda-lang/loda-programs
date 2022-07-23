@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,34729 ; a(n) = Sum_{ k, k|n } 2^(k-1).
+  sub $0,1
   add $1,$2
 lpe
 add $1,1

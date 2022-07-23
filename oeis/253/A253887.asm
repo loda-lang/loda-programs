@@ -3,9 +3,8 @@
 
 mul $0,4
 lpb $0
-  sub $0,1
   mul $0,2
-  sub $0,6
+  sub $0,8
   dif $0,6
 lpe
 div $0,6

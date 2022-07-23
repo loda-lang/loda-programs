@@ -1,5 +1,5 @@
 ; A276087: a(n) = A276086(A276086(n)).
 ; 2,3,6,5,30,125,18,45,150,7,1050,343,1250,2625,7350,16807,1650,847,43218,3465,27731550,3195731,1183724850,435930295269007,17794411250,7105308412125,3782866198615350,2709490941157,6237907125450,161696170950365051,10,75,750,175,294,12005,126,2205,51450,11,565950,1331,21008750,9904125,6225450,161051,1002614947950,190333,1844766,472661332605,7357350,224939,1654954951650,11381363136448019,643987936192851250,424028420324383875,372263911869199350,26239020329095717,24980878650,2593207962059,1750,5145
 
-seq $0,276086 ; Prime product form of primorial base expansion of n: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-seq $0,276086 ; Prime product form of primorial base expansion of n: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.

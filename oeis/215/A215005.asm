@@ -4,6 +4,6 @@
 
 mov $1,$0
 div $1,2
-seq $0,66629 ; a(n) = 2*Fibonacci(n+2) + ((-1)^n - 3)/2.
 add $1,1
+seq $0,66629 ; a(n) = 2*Fibonacci(n+2) + ((-1)^n - 3)/2.
 sub $0,$1

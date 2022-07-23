@@ -4,8 +4,8 @@
 mov $2,$0
 mov $5,2
 lpb $5
-  mov $0,$2
   sub $5,1
+  mov $0,$2
   add $0,$5
   max $0,0
   seq $0,51201 ; Sum of elements of the set { [ n/k ] : 1 <= k <= n }.

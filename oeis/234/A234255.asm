@@ -1,11 +1,11 @@
 ; A234255: Decimal expansion of -B(12) = 691/2730, 13th Bernoulli number without sign.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,2,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3,1,1,3,5,5,3
 
 mov $1,$0
 lpb $0
+  gcd $0,2
   sub $0,1
-  dif $0,3
   mul $1,2
 lpe
 sub $1,1

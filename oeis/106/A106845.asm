@@ -8,9 +8,9 @@ mul $0,3
 mov $4,$1
 bin $4,4
 mul $4,$0
-mov $1,$4
 mov $3,$2
 mul $3,$2
 mul $3,$2
+mov $1,$4
 add $1,$3
 mov $0,$1

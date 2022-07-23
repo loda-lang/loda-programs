@@ -5,20 +5,20 @@
 mov $7,$0
 mov $9,2
 lpb $9
-  mov $0,$7
+  sub $9,1
   mov $1,0
   mov $5,0
   mov $6,0
-  sub $9,1
+  mov $0,$7
   add $0,$9
   mov $3,$0
   mul $3,4
   lpb $3
+    sub $3,6
     add $6,25
     add $1,$6
     add $2,$1
     mov $1,$5
-    sub $3,6
     add $5,$2
     add $2,$1
   lpe

@@ -5,12 +5,12 @@
 mov $1,$0
 mov $2,7776
 lpb $2
-  mov $3,$1
-  add $1,59
   div $2,2
+  mov $3,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $4,$3
   cmp $4,0
+  add $1,59
   mul $2,$4
 lpe
 mov $0,$1

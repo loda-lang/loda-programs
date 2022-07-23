@@ -6,6 +6,6 @@ mul $0,2
 mul $0,$1
 div $0,8
 lpb $1
-  add $0,1
   trn $1,3
+  add $0,1
 lpe

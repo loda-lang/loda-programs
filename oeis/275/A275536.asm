@@ -4,13 +4,12 @@
 
 add $0,1
 lpb $0
-  mul $0,2
+  mul $1,10
   lpb $0
     dif $0,2
-    sub $1,1
+    add $1,1
   lpe
   div $0,2
-  mul $1,10
+  add $1,1
 lpe
-gcd $0,$1
-div $0,10
+add $0,$1

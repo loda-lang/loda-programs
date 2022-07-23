@@ -1,17 +1,8 @@
 ; A260118: Expansion of f(-x, -x^5) * psi(x^4) in powers of x where psi(), f() are Ramanujan theta functions.
-; Submitted by GolfSierra
+; Submitted by Simon Strandgaard
 ; 1,-1,0,0,1,-2,0,0,1,-1,0,0,2,-1,0,0,1,-1,0,0,2,-1,0,0,1,-2,0,0,1,-1,0,0,1,-2,0,0,0,-1,0,0,3,-1,0,0,1,-3,0,0,1,0,0,0,1,0,0,0,2,-1,0,0,2,-2,0,0,1,-2,0,0,2,-1,0,0,0,-1,0,0,1,-1,0,0,2,-1,0,0,1,-2,0,0,0,-3,0,0,1,-1,0,0,2,-1,0,0
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,89802 ; Expansion of q^(-1/3) * (theta_4(q^3) - theta_4(q^(1/3))) / 2 in powers of q.
-  add $1,$2
-  add $3,$4
-  add $3,1
-  mov $4,3
-lpe
-mov $0,$1
+mov $1,-1
+pow $1,$0
+seq $0,128582 ; Expansion of f(x^4, x^12) * f(x, x^5) in powers of x where f(, ) is Ramanujan's general theta function.
+mul $0,$1

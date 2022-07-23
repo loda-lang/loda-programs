@@ -4,10 +4,10 @@
 
 mov $2,$0
 lpb $0
-  add $3,$0
-  mul $0,2
   seq $2,184616 ; Negated negative parts of the nonadjacent forms
   mul $2,2
-  add $3,$2
-  sub $0,$3
+  add $1,$0
+  add $1,$2
+  mul $0,2
+  sub $0,$1
 lpe

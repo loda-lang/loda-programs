@@ -1,24 +1,16 @@
 ; A257510: Number of nonleading zeros in factorial base representation of n (A007623).
+; Submitted by Simon Strandgaard
 ; 0,1,0,1,0,2,1,1,0,1,0,2,1,1,0,1,0,2,1,1,0,1,0,3,2,2,1,2,1,2,1,1,0,1,0,2,1,1,0,1,0,2,1,1,0,1,0,3,2,2,1,2,1,2,1,1,0,1,0,2,1,1,0,1,0,2,1,1,0,1,0,3,2,2,1,2,1,2,1,1,0,1,0,2,1,1,0,1,0,2,1,1,0,1,0,3,2,2,1,2
 
 add $0,1
+mov $1,$0
 mov $2,2
-mov $4,$0
-mov $3,$0
-lpb $3
-  mov $5,$4
-  lpb $5
-    mov $5,0
-    mov $6,$0
-    mod $6,$2
-    cmp $6,0
-    div $0,$2
-  lpe
-  add $1,$6
+lpb $0
+  div $0,$2
+  mod $1,$2
+  cmp $1,0
+  add $3,$1
+  mov $1,$0
   add $2,1
-  mov $6,$0
-  cmp $6,0
-  cmp $6,0
-  sub $3,$6
 lpe
-mov $0,$1
+mov $0,$3

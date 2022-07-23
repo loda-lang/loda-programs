@@ -4,6 +4,6 @@
 pow $0,2
 mul $0,9
 sub $0,1
-mov $2,$0
-bin $2,2
-gcd $0,$2
+mov $1,$0
+bin $1,2
+gcd $0,$1

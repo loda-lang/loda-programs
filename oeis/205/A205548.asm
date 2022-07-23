@@ -1,16 +1,17 @@
 ; A205548: Symmetric matrix by antidiagonals:  C(max(i+1,j+1),min(i+1,j+1)), i>=1, j>=1.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,3,3,6,1,6,10,4,4,10,15,10,1,10,15,21,20,5,5,20,21,28,35,15,1,15,35,28,36,56,35,6,6,35,56,36,45,84,70,21,1,21,70,84,45,55,120,126,56,7,7,56,126,120,55,66,165,210,126,28,1,28,126,210,165,66,78,220
 
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
 lpe
-min $0,$2
-add $1,2
 sub $1,$0
+add $1,2
+mov $2,$1
 add $0,2
+max $1,$0
+add $0,$2
+sub $0,$1
 bin $1,$0
 mov $0,$1

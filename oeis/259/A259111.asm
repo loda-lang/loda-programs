@@ -1,28 +1,24 @@
 ; A259111: a(n) = least number k > 1 such that 1^k + 2^k + ... + k^k == n (mod k).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,4,2,8,2,3,2,16,2,4,2,3,2,4,2,32,2,3,2,5,2,4,2,3,2,4,2,7,2,3,2,64,2,4,2,3,2,4,2,5,2,3,2,8,2,4,2,3,2,4,2,8,2,3,2,7,2,4,2,3,2,4,2,128,2,3,2,8,2,4,2,3,2,4,2,8,2,3,2,5,2,4,2,3,2,4,2,11,2,3,2,8,2,4,2,3,2,4,2,5
 
 add $0,1
-lpb $0
-  mov $3,$0
-  mul $3,2
-  lpb $3
-    mov $1,$2
-    cmp $1,0
-    add $2,$1
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $0,$2
-    add $2,1
-    max $4,$5
-    sub $3,$4
+mov $3,$0
+mul $3,6
+lpb $3
+  sub $3,1
+  add $4,1
+  add $5,$4
+  mov $2,$0
+  mod $2,$4
+  lpb $1
+    cmp $2,0
+    add $3,$1
+    sub $1,$2
   lpe
-  lpb $0
-    cmp $0,5
-  lpe
+  add $1,1
+  sub $0,$1
+  add $5,$1
 lpe
-mov $0,$2
+div $5,$4
+mov $0,$5

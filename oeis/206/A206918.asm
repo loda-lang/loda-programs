@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,206917 ; Sum of binary palindromes in the half-open interval [2^(n-1), 2^n).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

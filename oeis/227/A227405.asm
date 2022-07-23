@@ -7,7 +7,7 @@ mov $2,$0
 div $2,3
 pow $2,5
 mul $0,2
-seq $1,165863 ; Totally multiplicative sequence with a(p) = 42.
+seq $1,43563 ; Number of runs in base-11 representation of n.
 lpb $2
   sub $0,$1
   sub $2,$1

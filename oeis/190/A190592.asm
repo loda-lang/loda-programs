@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,3
   mod $2,3
+  div $0,3
   trn $1,$2
   add $1,$2
 lpe

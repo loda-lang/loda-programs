@@ -9,17 +9,17 @@ lpb $0
   mov $4,0
   mov $9,$2
   sub $9,$0
-  mov $6,$9
   mov $7,$9
   mov $8,$0
+  mov $6,$9
   lpb $6
     mov $3,$8
     mod $3,2
     mov $5,$7
     mod $5,2
+    div $7,2
     mul $3,$5
     add $4,$3
-    div $7,2
     mov $6,$7
     sub $8,1
     div $8,2

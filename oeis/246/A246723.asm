@@ -4,6 +4,6 @@
 
 add $0,1
 seq $0,10480 ; Decimal expansion of square root of 24.
-sub $2,$0
-mov $0,$2
+sub $1,$0
+mov $0,$1
 add $0,9

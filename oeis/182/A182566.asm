@@ -1,5 +1,5 @@
 ; A182566: Decimal expansion of Madelung constant (negated) for zinc sulfide ZnS.
-; Submitted by Orange Kid
+; Submitted by Simon Strandgaard
 ; 1,6,3,8,0,5,5,0,5,3,3
 
 mul $0,2
@@ -10,6 +10,7 @@ mov $4,-1
 mov $5,1
 mov $6,1
 lpb $0
+  dif $0,13
   sub $0,2
   add $3,$1
   add $1,$5

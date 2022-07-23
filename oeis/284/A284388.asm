@@ -1,20 +1,8 @@
 ; A284388: 0-limiting word of the morphism 0 -> 1, 1 -> 001.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,0,0,1,0
 
-mov $2,1
-lpb $0
-  sub $0,1
-  add $2,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  gcd $3,4
-  div $2,2
-  mul $2,2
-  mul $2,$3
-  mul $3,2
-lpe
-mov $0,$3
-div $0,6
+trn $0,1
+seq $0,26465 ; Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).
+pow $0,2
+div $0,4

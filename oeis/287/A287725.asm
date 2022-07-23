@@ -1,9 +1,9 @@
 ; A287725: {0->1, 1->011}-transform of the infinite Fibonacci word A003849.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Simon Strandgaard
 ; 1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1
 
 mov $2,4
-add $0,3
+add $0,1
 lpb $0
   sub $0,5
   sub $1,$2
@@ -17,6 +17,5 @@ lpb $0
   mul $3,2
   add $0,$3
 lpe
-mov $0,$3
-sub $0,2
+gcd $0,2
 div $0,2

@@ -7,9 +7,7 @@ mov $3,$0
 add $3,3
 add $3,$0
 bin $3,5
-mov $1,7
-add $1,9
-pow $1,5
+mov $1,1048576
 lpb $1
   mov $1,2
   mov $0,3

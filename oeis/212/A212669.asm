@@ -13,8 +13,8 @@ mul $0,2
 lpb $0
   mov $0,1
   sub $1,9
-  add $1,$2
 lpe
+add $1,$2
 sub $1,8
 div $1,2
 mul $1,2

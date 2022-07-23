@@ -1,6 +1,9 @@
 ; A180662: The Golden Triangle: T(n,k) = A001654(k) for n>=0 and 0<=k<=n.
-; Submitted by Jamie Morken(s1)
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,1,2,0,1,2,6,0,1,2,6,15,0,1,2,6,15,40,0,1,2,6,15,40,104,0,1,2,6,15,40,104,273,0,1,2,6,15,40,104,273,714,0,1,2,6,15,40,104,273,714,1870,0,1,2,6,15,40,104,273,714,1870,4895,0,1,2,6,15,40,104,273,714,1870,4895,12816,0,1,2,6,15,40,104,273,714,1870,4895,12816,33552,0,1,2,6,15,40,104,273,714
 
-seq $0,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
 seq $0,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).

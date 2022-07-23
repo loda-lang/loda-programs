@@ -6,15 +6,15 @@ mov $2,1
 mov $3,$0
 mul $3,2
 lpb $3
-  mul $1,$0
   mul $2,$3
+  mul $1,$0
   add $1,$2
-  mul $2,2
   mov $4,$0
   cmp $4,0
   mov $5,$0
   add $5,$4
   div $1,$5
+  mul $2,2
   div $2,$5
   sub $3,1
   max $3,1

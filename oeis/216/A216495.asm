@@ -5,10 +5,10 @@
 mov $2,$0
 sub $0,4
 div $0,3
-mov $3,$0
+mov $1,$0
+min $1,1
 mov $0,$2
 add $0,4
-min $3,1
-add $0,$3
+add $0,$1
 mul $0,2
 seq $0,173919 ; Numbers that are prime or one less than a prime.

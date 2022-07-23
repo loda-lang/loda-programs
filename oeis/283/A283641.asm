@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
+  gcd $2,2
   sub $0,1
   mul $1,10
-  gcd $2,2
   add $1,$2
   trn $1,2
   add $1,1

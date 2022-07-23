@@ -10,13 +10,13 @@ lpb $0
   sub $1,1
   cmp $2,$4
   add $2,$0
+  div $2,2
   add $5,$3
   mov $3,$0
   sub $3,2
   bin $3,$1
-  add $1,2
-  div $2,2
   mul $3,$2
+  add $1,2
   add $5,$3
 lpe
 mov $0,$5

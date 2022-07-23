@@ -8,11 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,10
   seq $2,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
   add $1,$2
   mov $3,1
   add $3,$4
+  mul $3,10
   add $4,2
 lpe
 mov $0,$1

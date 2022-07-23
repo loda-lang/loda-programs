@@ -3,8 +3,8 @@
 
 mov $1,-2
 mul $1,$0
-seq $0,235796 ; 2*n - 1 - sigma(n).
 cmp $1,0
-sub $0,$1
-sub $0,$1
+seq $0,235796 ; 2*n - 1 - sigma(n).
 add $0,3
+sub $0,$1
+sub $0,$1

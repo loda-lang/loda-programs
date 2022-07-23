@@ -4,6 +4,6 @@
 
 lpb $0
   sub $0,1
-  seq $2,233272 ; a(n) = n + 1 + number of nonleading zeros in binary representation of n (A080791).
+  seq $1,233272 ; a(n) = n + 1 + number of nonleading zeros in binary representation of n (A080791).
 lpe
-mov $0,$2
+mov $0,$1

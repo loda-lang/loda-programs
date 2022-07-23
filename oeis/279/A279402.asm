@@ -1,5 +1,5 @@
 ; A279402: Domination number for queens' graph on an n X n toroidal board.
-; Submitted by Vato
+; Submitted by Simon Strandgaard
 ; 1,1,1,2,3,3,4,4,5,5,5,6,7,7,5
 
 mov $2,1
@@ -15,9 +15,7 @@ lpb $0
     add $2,1
     sub $3,$1
   lpe
-  lpb $0
-    dif $0,$2
-  lpe
+  dif $0,$2
   trn $0,3
 lpe
 mov $0,$1

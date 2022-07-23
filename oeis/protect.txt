@@ -60,6 +60,7 @@ A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
 A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
 A061725: p^2 + 2 where p is a prime.
+A062011: a(n) = 2*tau(n) = 2*A000005(n).
 A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).

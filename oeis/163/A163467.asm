@@ -6,8 +6,8 @@ mov $1,2
 lpb $1
   div $1,2
   mov $3,$2
-  max $2,$0
   div $3,2
+  max $2,$0
 lpe
 mov $1,1
 lpb $3

@@ -11,7 +11,6 @@ lpb $0
   mod $1,$1
   add $1,$2
 lpe
-sub $1,3
 mul $1,4
-add $1,13
+add $1,1
 mov $0,$1

@@ -6,10 +6,10 @@ cmp $1,$0
 mov $3,1
 lpb $0
   mov $2,$0
-  div $0,8
   add $2,9
   mod $2,8
   mul $2,$3
+  div $0,8
   add $1,$2
   mul $3,8
 lpe

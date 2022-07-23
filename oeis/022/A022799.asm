@@ -4,6 +4,7 @@
 
 mov $1,$0
 seq $1,1690 ; Non-Fibonacci numbers.
-add $0,2
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+add $0,1
+seq $0,128588 ; A007318 * A128587.
+div $0,2
 add $0,$1

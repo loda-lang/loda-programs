@@ -7,13 +7,13 @@ lpb $0
   seq $2,127948 ; Triangle, A004736 * A127899.
   mov $3,$0
   add $3,$2
-  div $0,$3
   mov $4,$2
   sub $4,1
   min $4,1
   add $4,1
-  add $5,$4
-  mul $0,$5
+  add $1,$4
+  div $0,$3
+  mul $0,$1
 lpe
-mov $0,$5
+mov $0,$1
 mul $0,2

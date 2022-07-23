@@ -5,9 +5,9 @@
 sub $0,1
 lpb $0
   sub $0,2
-  mov $2,$0
-  max $2,0
-  seq $2,89742 ; Number of subwords UHH...HD in all peakless Motzkin paths of length n+3, where U=(1,1), D=(1,-1) and H=(1,0).
-  div $0,$2
+  mov $1,$0
+  max $1,0
+  seq $1,89742 ; Number of subwords UHH...HD in all peakless Motzkin paths of length n+3, where U=(1,1), D=(1,-1) and H=(1,0).
+  div $0,$1
 lpe
-mov $0,$2
+mov $0,$1

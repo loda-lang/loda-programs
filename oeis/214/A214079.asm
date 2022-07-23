@@ -1,19 +1,8 @@
 ; A214079: a(n) = ceiling( n^(1/3) )!.
-; Submitted by fzs600
+; Submitted by Simon Strandgaard
 ; 1,1,2,2,2,2,2,2,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120
 
-mov $3,1
-mov $6,1
-mov $5,$0
-lpb $5
-  sub $5,$6
-  add $1,1
-  add $2,1
-  mov $4,$3
-  mul $4,$2
-  sub $6,1
-  add $6,$1
-  add $1,5
-  mov $3,$4
-lpe
-mov $0,$3
+trn $0,1
+seq $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+add $0,1
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).

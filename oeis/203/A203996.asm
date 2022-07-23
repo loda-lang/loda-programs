@@ -1,17 +1,15 @@
 ; A203996: Symmetric matrix based on f(i,j)=min{i(j+1),j(i+1)}, by antidiagonals.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,3,3,4,6,4,5,8,8,5,6,10,12,10,6,7,12,15,15,12,7,8,14,18,20,18,14,8,9,16,21,24,24,21,16,9,10,18,24,28,30,28,24,18,10,11,20,27,32,35,35,32,27,20,11,12,22,30,36,40,42,40,36,30,22,12,13,24,33,40,45,48
 
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
 lpe
-min $0,$2
-add $1,2
 sub $1,$0
+add $1,2
 mov $2,$1
-mul $2,$0
-add $2,$1
-mov $0,$2
+add $0,2
+max $1,$0
+mul $0,$2
+sub $0,$1

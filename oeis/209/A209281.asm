@@ -8,9 +8,9 @@ lpb $0
   mul $2,2
   mod $2,4
   mul $2,$3
-  sub $3,$2
   div $0,2
   add $1,$2
+  sub $3,$2
   add $3,1
 lpe
 mov $0,$1

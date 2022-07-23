@@ -4,8 +4,8 @@
 
 mov $3,1
 lpb $0
-  mul $1,3
   sub $0,1
+  mul $1,3
   mov $2,$3
   add $2,$3
   sub $3,$1

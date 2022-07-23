@@ -1,5 +1,5 @@
 ; A260452: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (2,1,3) and midword sequence (a(n)); see Comments.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 2,1,3,2,3,1,2,1,2,1,3,2,3,1,2,3,2,1,3,2,3,1,2,1,2,1,3,2,3,1,2,2,2,1,3,2,3,1,2,1,2,1,3,2,3,1,2,3,2,1,3,2,3,1,2,1,2,1,3,2,3,1,2,3,2,1,3,2,3,1,2,1,2,1,3,2,3,1,2,3,2,1,3,2,3,1,2,1,2,1,3,2,3,1,2,2,2,1,3,2
 
 lpb $0
@@ -7,10 +7,9 @@ lpb $0
   sub $0,2
 lpe
 add $0,36
-seq $0,9578 ; E.g.f. sinh(log(1+x))/exp(x). Unsigned sequence gives degrees of (finite by nilpotent) representations of Braid groups.
+seq $0,83392 ; Alternating partial sums of A000217.
 div $0,2
 add $0,1
 mod $0,2
-mul $0,9
 add $0,12
 mod $0,10

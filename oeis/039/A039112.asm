@@ -10,8 +10,8 @@ lpb $1
   lpb $2
     trn $2,3
     add $0,11
-    sub $1,$0
   lpe
+  sub $1,$0
   lpb $1
     sub $1,8
     add $0,2

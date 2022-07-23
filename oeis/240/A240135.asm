@@ -5,7 +5,7 @@
 mov $1,$0
 seq $0,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
 lpb $1
-  mul $0,2
   sub $1,1
+  mul $0,2
 lpe
 div $0,4

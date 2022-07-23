@@ -3,9 +3,9 @@
 
 add $0,1
 mul $0,3
-mov $2,$0
+mov $1,$0
+pow $1,2
 sub $0,2
-pow $2,2
-mul $0,$2
+mul $0,$1
 div $0,9
 mul $0,16

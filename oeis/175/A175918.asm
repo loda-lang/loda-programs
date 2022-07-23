@@ -4,18 +4,19 @@
 
 mov $4,1
 mov $5,$0
-seq $5,264618 ; Working in binary, write n followed by 0 then n-reversed (including leading zeros); show result in base 10.
+seq $0,264618 ; Working in binary, write n followed by 0 then n-reversed (including leading zeros); show result in base 10.
 mov $2,$5
 seq $2,70939 ; Length of binary representation of n.
 lpb $2
-  sub $2,2
+  sub $2,1
   mov $3,$0
+  sub $3,1
   mod $3,2
   mov $6,$5
+  add $6,1
   mod $6,2
   div $0,2
   add $3,$6
-  sub $3,2
   cmp $3,0
   cmp $3,0
   mul $3,$4

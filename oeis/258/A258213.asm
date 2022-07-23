@@ -8,11 +8,9 @@ sub $0,1
 lpb $0
   mov $3,$2
   lpb $3
-    sub $4,$7
     mov $6,1
     add $6,$4
     sub $2,2
-    sub $4,1
     sub $3,$0
     sub $3,$6
   lpe

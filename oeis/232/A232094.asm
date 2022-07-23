@@ -7,11 +7,10 @@ lpb $4
   sub $4,1
   mov $5,$0
   lpb $3,10
+    mov $3,$4
     mov $2,$5
     seq $2,60130 ; Number of nonzero digits in factorial base representation (A007623) of n; minimum number of transpositions needed to compose each permutation in the lists A060117 & A060118.
-    mov $3,$4
     sub $5,$0
-    cmp $0,1
   lpe
   add $0,$4
 lpe

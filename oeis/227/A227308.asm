@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  mul $0,2
   seq $2,195311 ; Row sums of A195310.
+  mul $0,2
   cmp $0,$2
-  add $3,$2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1

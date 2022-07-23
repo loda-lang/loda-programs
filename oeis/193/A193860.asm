@@ -1,22 +1,21 @@
 ; A193860: Triangular array:  the fission of ((2x+1)^n) by (q(n,x)), where q(n,x)=x^n+x^(n-1)+...+x+1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Simon Strandgaard
 ; 1,1,5,1,7,19,1,9,33,65,1,11,51,131,211,1,13,73,233,473,665,1,15,99,379,939,1611,2059,1,17,129,577,1697,3489,5281,6305,1,19,163,835,2851,6883,12259,16867,19171,1,21,201,1161,4521,12585,26025,41385,52905
 
+mov $3,1
 lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,3
+mov $1,1
 add $2,1
 lpb $0
   sub $0,1
-  mul $1,2
   mul $1,$2
   sub $2,1
   add $4,1
+  mul $1,2
   div $1,$4
   add $3,$1
 lpe
-mov $0,$3
-div $0,3
-add $0,1
+add $0,$3

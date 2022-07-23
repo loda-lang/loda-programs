@@ -1,14 +1,11 @@
 ; A267133: a(n) = (1/n)(2/n)(3/n)...((n-1)/n) where (k/n) is the Kronecker symbol, n >= 1.
+; Submitted by Simon Strandgaard
 ; 1,1,-1,0,1,0,-1,0,0,0,-1,0,1,0,0,0,1,0,-1,0,0,0,-1,0,0,0,0,0,1,0,-1,0,0,0,0,0,1,0,0,0,1,0,-1,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,-1,0,1,0,0,0,0,0,-1,0,0,0,-1,0,1,0,0,0,0,0,-1,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
-mov $1,1
-lpb $0
-  mov $1,$0
-  div $1,4
-  mul $1,4
-  add $1,1
-  sub $1,$0
-  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$0
-lpe
-mov $0,$1
+mov $1,$0
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+div $1,2
+mod $1,2
+mul $1,$0
+mul $1,2
+sub $0,$1

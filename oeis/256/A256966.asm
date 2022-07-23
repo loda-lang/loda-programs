@@ -1,8 +1,8 @@
 ; A256966: Partial sums of A072649.
+; Submitted by Simon Strandgaard
 ; 1,3,6,9,13,17,21,26,31,36,41,46,52,58,64,70,76,82,88,94,101,108,115,122,129,136,143,150,157,164,171,178,185,193,201,209,217,225,233,241,249,257,265,273,281,289,297,305,313,321,329,337
 
 add $0,1
 mov $1,$0
-seq $1,130235 ; Partial sums of the 'lower' Fibonacci Inverse A130233.
-sub $1,$0
-mov $0,$1
+seq $0,130235 ; Partial sums of the 'lower' Fibonacci Inverse A130233.
+sub $0,$1

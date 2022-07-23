@@ -2,8 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,0,0,0,0,0,0,0,0,1,1,14
 
+mov $1,$0
 lpb $0
-  mov $1,$0
   add $1,1
   add $2,1
   mul $2,5

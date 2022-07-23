@@ -1,16 +1,14 @@
 ; A177991: Triangle read by rows, A070909 * A177990
-; Submitted by Jim1348
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,3,1,2,1,1,1,3,1,2,1,1,1,1,4,1,3,1,2,1,1,1,4,1,3,1,2,1,1,1,1,5,1,4,1,3,1,2,1,1,1,5,1,4,1,3,1,2,1,1,1
 
 lpb $0
   add $1,1
   sub $0,$1
-  add $2,1
 lpe
-sub $2,$0
-add $1,$2
-mod $1,2
-mul $2,$1
-mov $0,$2
-div $0,2
-add $0,1
+sub $1,$0
+mod $0,2
+div $1,2
+add $1,$0
+bin $1,$0
+mov $0,$1

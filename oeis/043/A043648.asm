@@ -8,12 +8,11 @@ mov $3,$0
 lpb $3
   mov $3,9
   lpb $2
-    mov $4,10
-    add $1,1
     sub $2,5
     trn $2,6
+    add $1,1
   lpe
-  add $1,$4
+  add $1,10
 lpe
 add $1,14763
 mov $0,$1

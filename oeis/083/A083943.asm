@@ -5,6 +5,6 @@ lpb $0
   sub $0,2
   mov $2,2
   pow $2,$0
-  add $3,$2
+  add $1,$2
 lpe
-sub $0,$3
+sub $0,$1

@@ -1,4 +1,4 @@
-; A217219: Theta series of planar hexagonal lattice with respect to deep hole.
+; A217219: Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
 ; Submitted by Jamie Morken(m4)
 ; 0,6,0,0,6,0,0,12,0,0,0,0,0,12,0,0,6,0,0,12,0,0,0,0,0,6,0,0,12,0,0,12,0,0,0,0,0,12,0,0,0,0,0,12,0,0,0,0,0,18,0,0,12,0,0,0,0,0,0,0,0,12,0,0,6,0,0,12,0,0,0,0,0,12,0,0,12,0,0,12,0,0,0,0,0,0,0,0,0,0,0,24,0,0,0,0,0,12,0,0
 

@@ -3,9 +3,9 @@
 
 lpb $0
   dif $0,2
-  mov $2,100
+  mov $1,100
 lpe
+add $1,3
 trn $0,1
 add $0,3
-add $2,3
-div $0,$2
+div $0,$1

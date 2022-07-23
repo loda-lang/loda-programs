@@ -3,9 +3,9 @@
 
 mov $1,$0
 lpb $1
+  mov $1,1
   max $0,3
   mul $0,2
-  mov $1,1
 lpe
 add $0,$1
 mul $0,4

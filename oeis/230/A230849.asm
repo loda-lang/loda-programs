@@ -5,8 +5,8 @@
 mov $6,$0
 mov $8,2
 lpb $8
-  mov $0,$6
   sub $8,1
+  mov $0,$6
   add $0,$8
   sub $0,1
   max $0,2
@@ -14,9 +14,9 @@ lpb $8
   sub $0,4
   div $0,2
   mov $2,6
+  mov $4,$0
   mov $3,$0
   pow $3,5
-  mov $4,$0
   lpb $3
     mov $1,$2
     seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
@@ -25,6 +25,7 @@ lpb $8
     sub $3,$0
   lpe
   pow $2,$0
+  div $5,2
   mov $0,$2
   mul $0,2
   sub $0,5
@@ -32,9 +33,8 @@ lpb $8
   add $0,7
   sub $0,$4
   mul $0,2
-  div $5,2
-  add $0,$5
   sub $0,15
+  add $0,$5
   mov $9,$8
   mul $9,$0
   add $7,$9

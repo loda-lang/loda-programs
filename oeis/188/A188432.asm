@@ -1,10 +1,11 @@
 ; A188432: Fixed point of the morphism 0->001, 1->01.
-; Submitted by Bunteck
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
 
-seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
 add $0,1
-min $0,1
-max $0,0
-add $0,1
-mod $0,2
+lpb $0
+  mov $1,$0
+  seq $1,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
+  mov $0,1
+lpe
+mov $0,$1

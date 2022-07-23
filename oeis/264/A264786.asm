@@ -9,11 +9,11 @@ lpb $0
   dif $3,$0
   cmp $3,$2
   trn $4,$3
+  add $4,1
   cmp $3,0
   mul $3,$0
-  sub $0,1
-  add $4,1
   pow $3,$4
+  sub $0,1
   add $1,$3
 lpe
 add $1,1

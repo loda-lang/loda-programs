@@ -4,7 +4,7 @@
 mul $0,2
 add $0,1
 lpb $0
-  sub $2,2
-  add $0,$2
+  sub $1,2
+  add $0,$1
 lpe
 mul $0,2
