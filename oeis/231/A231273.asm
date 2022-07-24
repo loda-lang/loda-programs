@@ -1,8 +1,0 @@
-; A231273: Numerator of zeta(4n)/(zeta(2n) * Pi^(2n)).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
-; 1,1,1,691,3617,174611,236364091,3392780147,7709321041217,26315271553053477373,261082718496449122051,2530297234481911294093,5609403368997817686249127547,61628132164268458257532691681,354198989901889536240773677094747
-
-mul $0,2
-mod $0,29
-trn $0,1
-seq $0,276594 ; Numerator of the rational part of the sum of reciprocals of even powers of even numbers, i.e., Sum_{k>=1} 1/(2*k)^(2*n).
