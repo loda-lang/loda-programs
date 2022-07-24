@@ -1,21 +1,10 @@
 ; A055562: a(n) = least number greater than a(n-1) not the sum of an earlier pair of consecutive terms, a(0) = 2.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 2,3,4,6,8,9,11,12,13,15,16,18,19,21,22,24,26,27,29,30,32,33,35,36,38,39,41,42,44,45,47,48,49,51,52,54,55,57,58,60,61,63,64,66,67,69,70,72,73,75,76,78,79,81,82,84,85,87,88,90,91,93,94,96,98,99,101,102,104,105,107,108,110,111,113,114,116,117,119,120,122,123,125,126,128,129,131,132,134,135,137,138,140,141,143,144,146,147,149,150
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,3
-  lpb $0
-    mov $3,$0
-    div $0,4
-  lpe
-  mov $1,1
-  pow $3,$3
-lpe
-mov $2,$4
-mul $2,3
-add $1,3
-add $1,$2
-div $1,2
-mov $0,$1
+mov $1,$0
+seq $1,275973 ; A binary sequence due to Harold Jeffreys.
+mul $0,3
+sub $0,$1
+div $0,2
+add $0,2

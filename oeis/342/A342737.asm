@@ -5,6 +5,5 @@ add $0,4
 bin $0,2
 sub $0,1
 bin $0,2
-sub $0,10
 mul $0,2
-add $0,19
+sub $0,1

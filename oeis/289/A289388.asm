@@ -9,8 +9,8 @@ lpb $0
   sub $1,2
   mov $3,$4
   bin $3,$1
-  add $1,7
   sub $3,$2
+  add $1,7
   mov $2,$3
 lpe
 mov $0,$3

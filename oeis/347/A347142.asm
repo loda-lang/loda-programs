@@ -1,23 +1,19 @@
 ; A347142: Sum of 4th powers of divisors of n that are < sqrt(n).
-; Submitted by ML1
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,17,1,17,1,17,1,98,1,17,82,17,1,98,1,273,82,17,1,354,1,17,82,273,1,723,1,273,82,17,626,354,1,17,82,898,1,1394,1,273,707,17,1,1650,1,642,82,273,1,1394,626,2674,82,17,1,2275,1,17,2483,273,626
 
+mov $1,1
 add $0,1
-mov $2,$0
 lpb $0
-  mov $3,$2
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
-  dif $3,$0
-  lpb $3
-    div $3,$0
-    cmp $3,0
-    mul $3,$0
-    min $0,99
-  lpe
-  sub $0,1
+  sub $0,$1
+  add $2,1
+  mov $3,$0
+  gcd $3,$1
+  div $3,$1
+  mul $3,$2
   pow $3,4
-  add $1,$3
+  add $4,$3
+  sub $0,$1
+  add $1,1
 lpe
-mov $0,$1
+mov $0,$4

@@ -8,9 +8,9 @@ lpb $0
   sub $4,1
   mov $2,$4
   sub $2,$1
-  mul $1,2
   bin $2,$0
   mul $2,10
+  mul $1,2
   mov $3,$4
   bin $3,$1
   add $1,1

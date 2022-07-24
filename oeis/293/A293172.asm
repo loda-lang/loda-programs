@@ -1,19 +1,15 @@
 ; A293172: Triangle read by rows: T(n,k) = number of colored weighted Motzkin paths ending at (n,k).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,6,1,40,10,1,280,84,14,1,2016,672,144,18,1,14784,5280,1320,220,22,1,109824,41184,11440,2288,312,26,1,823680,320320,96096,21840,3640,420,30,1,6223360,2489344,792064,198016,38080,5440,544,34,1,47297536,19348992,6449664,1736448,372096,62016,7752
 
 lpb $0
   add $1,1
+  add $2,2
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
 lpe
+sub $1,$0
+add $2,1
+bin $2,$1
 mov $0,2
-pow $0,$2
-mul $0,2
-mul $1,2
-add $1,1
-bin $1,$2
-mul $1,$0
-mov $0,$1
-div $0,2
+pow $0,$1
+mul $0,$2

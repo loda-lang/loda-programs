@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,98388 ; a(n) = floor(log_2(prime(n))).
-  add $3,1
-  add $3,$2
+  add $1,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

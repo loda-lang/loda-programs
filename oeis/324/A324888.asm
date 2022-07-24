@@ -4,4 +4,4 @@
 
 seq $0,324886 ; a(n) = A276086(A108951(n)).
 sub $0,1
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

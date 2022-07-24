@@ -6,13 +6,13 @@ gcd $1,7
 add $1,35
 mov $2,$0
 mul $2,38
-add $1,$2
 mov $3,$0
 mul $3,$0
+add $1,$2
 mov $2,$3
 mul $2,32
-add $1,$2
 mul $3,$0
+add $1,$2
 mov $2,$3
 mul $2,8
 add $1,$2

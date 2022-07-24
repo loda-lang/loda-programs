@@ -6,9 +6,9 @@ sub $0,1
 mov $2,$0
 mov $3,3
 lpb $3
+  sub $3,1
   mov $0,$2
   add $0,1
-  sub $3,1
   add $0,$3
   max $0,0
   seq $0,31215 ; Even-indexed primes: a(n) = prime(2n).

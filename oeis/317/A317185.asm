@@ -1,11 +1,12 @@
 ; A317185: Number of edges in a minimum gossip graph on n nodes.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 0,1,2,4,5,6,7,12,9,13,11,18
 
 add $0,1
 mov $4,2
 mov $1,$0
 lpb $1
+  dif $1,13
   add $4,2
   mov $5,$1
   mov $2,$0

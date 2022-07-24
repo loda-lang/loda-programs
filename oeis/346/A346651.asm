@@ -1,16 +1,15 @@
 ; A346651: a(n) is the number of divisors of A139245(n) ending with 2.
-; Submitted by biodoc
+; Submitted by Simon Strandgaard
 ; 1,2,2,2,3,2,2,3,2,2,3,3,2,4,2,2,3,2,3,4,2,2,3,2,3,5,2,3,3,2,2,4,3,2,3,4,2,4,2,3,3,2,2,5,3,2,6,2,2,4,2,3,3,3,2,4,2,4,3,3,3,5,2,2,3,2,2,7,4,2,4,2,2,4,3,3,3,2,3,6,2,3,3,4,2,4,2,2,5,2
 
+mul $0,5
+add $0,1
 lpb $0
-  mov $3,$0
-  sub $0,1
-  add $2,6
-  add $3,$0
-  mod $3,$2
-  cmp $3,1
+  mov $3,$2
+  gcd $3,$0
+  cmp $3,$0
+  trn $0,5
   add $1,$3
-  sub $2,1
+  sub $2,10
 lpe
 mov $0,$1
-add $0,1

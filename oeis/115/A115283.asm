@@ -1,37 +1,15 @@
 ; A115283: Diagonal sums of correlation triangle for 3-2*0^n.
+; Submitted by Simon Strandgaard
 ; 1,3,6,13,18,27,37,48,60,76,90,108,127,147,168,193,216,243,271,300,330,364,396,432,469,507,546,589,630,675,721,768,816,868,918,972,1027,1083,1140,1201,1260,1323,1387,1452,1518,1588,1656,1728,1801
 
-mov $7,$0
-mov $6,$0
-add $6,1
-lpb $6
-  sub $6,1
-  mov $0,$7
-  sub $0,$6
-  add $0,20
-  mov $3,$0
-  mov $4,$0
-  mov $5,0
+add $0,3
+lpb $0
+  sub $0,3
   mov $2,$0
-  lpb $2
-    lpb $4
-      sub $4,$3
-      add $5,3
-    lpe
-    lpb $5
-      mov $5,$3
-      sub $2,1
-      mul $3,2
-    lpe
-    sub $2,1
-    trn $2,1
-    gcd $4,$3
-    mul $4,2
-  lpe
-  mov $8,$5
-  sub $8,46
-  div $8,2
-  add $8,1
-  add $1,$8
+  mul $2,2
+  trn $2,1
+  seq $2,56527 ; Numbers where iterated sum of digits of square settles down to a cyclic pattern (in fact 13, 16, 13, 16, ...).
+  sub $2,1
+  add $1,$2
 lpe
 mov $0,$1

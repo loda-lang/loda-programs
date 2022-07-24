@@ -8,9 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  seq $2,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
+  mul $2,4
+  seq $2,8618 ; Expansion of 1/((1-x^2)(1-x^9)).
   add $1,$2
-  mov $3,9
+  mov $3,10
 lpe
 mov $0,$1

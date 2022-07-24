@@ -1,17 +1,7 @@
 ; A323651: Number of elements added at n-th stage to the toothpick structure of A323650.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,2,4,8,4,8,12,24,4,8,12,24,12,24,36,72,4,8,12,24,12,24,36,72,12,24,36,72,36,72,108,216,4,8,12,24,12,24,36,72,12,24,36,72,36,72,108,216,12,24,36,72,36,72,108,216,36,72,108,216,108,216,324,648,4,8,12,24,12,24,36,72,12,24,36,72,36,72,108,216
 
-mov $1,2
-mov $2,1
-mov $3,1
-lpb $0
-  mov $2,$0
-  mul $2,2
-  mod $2,4
-  mul $2,$3
-  div $0,2
-  add $1,$2
-  mov $3,$1
-lpe
-mov $0,$2
+seq $0,323642 ; Row n of triangle A323641 when n -> infinity.
+mul $0,4
+div $0,3

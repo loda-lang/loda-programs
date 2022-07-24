@@ -11,10 +11,10 @@ lpe
 dif $0,2
 add $3,1
 lpb $3
-  mov $4,10
-  pow $4,$0
-  sub $0,1
-  add $2,$4
   trn $3,8
+  mov $1,10
+  pow $1,$0
+  sub $0,1
+  add $2,$1
 lpe
 mov $0,$2

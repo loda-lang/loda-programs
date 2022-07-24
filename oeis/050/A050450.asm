@@ -14,10 +14,9 @@ lpb $2
   pow $3,2
   mul $3,$5
   mov $5,$0
+  sub $5,$4
   add $5,1
-  trn $5,$4
-  cmp $5,0
-  cmp $5,0
+  min $5,1
   add $1,$3
   sub $2,$5
 lpe

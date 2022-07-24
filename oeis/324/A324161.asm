@@ -3,10 +3,10 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,321243 ; a(n) is the product of n and all its decimal digits individually except the leftmost digit.
   mov $3,$2
   min $3,1
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

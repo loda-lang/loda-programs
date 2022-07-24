@@ -1,8 +1,21 @@
 ; A317203: Fixed under the morphism 1 -> 132, 2 -> 1, 3 -> 3, starting with 31.
+; Submitted by Simon Strandgaard
 ; 3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1,3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1,3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1,3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1,3,1,3,2,3,1,3,1,3,2,3,1,3,2,3,1
 
-add $0,2
-seq $0,108103 ; Fixed point of the square of the morphism: 1->3, 2->1, 3->121, starting with 1.
-sub $1,$0
-mov $0,$1
-add $0,4
+mov $5,$0
+gcd $5,2
+seq $0,267860 ; An infinite ternary 3-Fibonacci sequence (replace each 00 factor of the Fibonacci word with 020).
+add $0,9
+mod $0,5
+mov $3,$5
+sub $3,2
+add $4,$0
+add $1,$3
+bin $1,2
+mov $2,$1
+lpb $2
+  trn $2,5
+  add $4,2
+lpe
+mov $0,$4
+sub $0,1

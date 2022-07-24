@@ -5,7 +5,7 @@ mov $1,$0
 mul $1,$0
 mov $2,$0
 trn $0,1
-bin $1,$0
 pow $2,$0
+bin $1,$0
 mul $1,$2
 mov $0,$1

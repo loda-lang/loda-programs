@@ -4,10 +4,10 @@
 mul $0,6
 add $0,1
 div $0,5
-mov $3,1
-lpb $3
+mov $1,1
+lpb $1
+  trn $1,8
   mov $2,-2
-  trn $3,8
 lpe
 bin $2,$0
 div $2,2

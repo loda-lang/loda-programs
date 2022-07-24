@@ -6,6 +6,6 @@ mov $1,$0
 mod $0,4
 gcd $0,3
 lpb $1
-  mul $0,2
   sub $1,2
+  mul $0,2
 lpe

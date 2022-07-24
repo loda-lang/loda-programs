@@ -167,10 +167,15 @@ A244217: Numbers n less than twice the largest Catalan number that is less than 
 A244339: Expansion of (-2 * a(q) + 3*a(q^2) + 2*a(q^4)) / 3 in powers of q where a() is a cubic AGM theta function.
 A247648: Numbers whose binary expansion begins and ends with 1 and does not contain two adjacent zeros.
 A248469: Floor((2*n^2)/e).
+A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
 A259599: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,1) and midword sequence (a(n)); see Comments.
 A260188: Greatest primorial less than or equal to n.
+A260390: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0) and midword sequence (a(n)); see Comments.
 A260391: Positions of 0 in the infinite palindromic word at A260390.
+A260392: Positions of 1 in the infinite palindromic word at A260390.
+A260943: Expansion of psi(-x^2) * chi(x^3) * f(x^6) in powers of x where psi(), chi(), f() are Ramanujan theta functions.
 A262726: Expansion of phi(-x) * psi(x^6) in powers of x where phi(), psi() are Ramanujan theta functions.
+A262774: Expansion of psi(x^2) * phi(-x^3) in powers of x where phi(), psi() are Ramanujan theta functions.
 A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A276084: a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
@@ -189,33 +194,58 @@ A283772: Numbers k such that U(k) = 0 mod 3, where U = A001950 = upper Wythoff s
 A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff sequence.
 A284396: Positions of 2 in A284394.
 A284621: Positions of 0 in A284620.
+A285075: Positions of 1 in A285073; complement of A285074.
+A285258: 1-limiting word of the morphism 0->10, 1-> 0110.
 A285259: Positions of 0 in A285258; complement of A285260.
+A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
 A285708: a(n) = n / A285707(n).
 A285970: Positions of 0 in A285969; complement of A285971.
 A286690: Positions of 1 in A286688; complement of A286689.
 A286904: Positions of 0 in A286903; complement of A286905.
 A286927: Positions of 1 in A286925; complement of A286926.
 A286988: Positions of 0 in A286987; complement of A286989.
+A287174: 2-limiting word of the morphism 0->10, 1->20, 2->0.
+A287791: Positions of 0 in A287790; complement of A287792.
 A288695: Positions of 0 in A288694; complement of A288696.
+A288709: Positions of 1's in A288707; complement of A288708.
+A288999: Positions of 1 in A288997; complement of A288998.
 A291208: Number of noncube divisors of n.
+A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2 (golden ratio).
+A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
+A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+A297155: a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
 A305490: Fixed point of the morphism 0->120, 1->110, 2->100.
 A305847: Solution a() of the complementary equation a(n) + b(n) = 5*n, where a(1) = 1. See Comments.
 A305848: Solution b() of the complementary equation a(n) + b(n) = 5n, where a(1) = 1. See Comments.
 A308898: Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
+A302253: Positions of 3 in A190436.
+A317108: Numbers missing from A317106.
 A317621: Numbers missing from A317619.
+A317622: Numbers missing from A317620.
 A317440: Numbers missing from A317438.
+A319432: The first differences (A129761) of the tribonacci representation numbers (A003714 or A014417) consists of runs of 1's separated by the terms of the present sequence.
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
+A321371: n + [n*r/s] + [n*t/s], where r = 1, s = cos(2*Pi/5), t = sec(2*Pi/5).
 A323100: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = -1 in Clifford algebra Cl(p,q)(R).
+A323346: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = 1 (including e = 1) in Clifford algebra Cl(p,q)(R).
 A327203: Positions of 0's in {A327202(n) : n > 0}.
 A327204: Positions of 1's in {A327202(n) : n > 0}.
+A327207: Positions of 1's in {A327205(n) : n > 0}.
 A327257: Positions of 0's in {A327256(n) : n > 0}.
 A328820: Fourth digit after decimal point of square root of n.
+A328901: Triangle T(n, k) read by rows: T(n, k) is the numerator of the rational Catalan number defined as binomial(n + k, n)/(n + k) for n > 0 and T(0, 0) = 1.
+A329030: The least missing nonzero digit in the primorial base expansion of A276086(n).
 A329825: Beatty sequence for (3+sqrt(17))/4.
+A330175: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(5) - 2, s = sqrt(5) - 1, t = sqrt(5).
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
+A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
+A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).
+A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.
 A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
+A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.

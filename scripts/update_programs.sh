@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# set -euox pipefail
-
 pushd .. > /dev/null
 
-# update programs
-echo "updating programs"
+echo "Finding updated programs"
 files=
 update_all="n"
 while read -r s f; do
@@ -13,6 +10,7 @@ while read -r s f; do
   files="$files $f"
   fi
 done < <(git status --porcelain)
+
 num_updated=0
 for f in $files; do
   clear
@@ -33,11 +31,14 @@ for f in $files; do
     git checkout -- $f
   fi
 done
-if (( num_updated > 0 )); then
-  git commit -m "updated $num_updated programs"
-fi
 
-git pull -X theirs
-git push
+if (( num_updated > 0 )); then
+  read -p "Commit $num_updated updated programs? (Y/n) " a
+  if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
+    git commit -m "updated $num_updated programs"
+    git pull -X theirs
+    git push
+  fi
+fi
 
 popd > /dev/null

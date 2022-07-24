@@ -2,34 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,-1,3,-1,-2,-1,4,0,-2,-1,-3,-1,-2,1,5,-1,0,-1,-3,1,-2,-1,-4,0,-2,0,-3,-1,2,-1,6,1,-2,1,0,-1,-2,1,-4,-1,2,-1,-3,0,-2,-1,-5,0,0,1,-3,-1,0,1,-4,1,-2,-1,3,-1,-2,0,7,1,2,-1,-3,1,2,-1,0,-1,-2,0,-3,1,2,-1,-5,0,-2,-1,3,1,-2,1,-4,-1,0,1,-3,1,-2,1,-6,-1,0,0,0
 
-mov $1,1
-add $0,1
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $2,1
-    max $4,$5
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    sub $4,$6
-    mul $4,$2
-    mul $4,-1
-    add $4,1
-    sub $5,1
-    add $5,$2
-    div $5,$4
-  lpe
-  mul $1,$5
-lpe
-mov $0,$1
+mov $1,$0
+seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $0,209635 ; Möbius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
+mul $0,$1

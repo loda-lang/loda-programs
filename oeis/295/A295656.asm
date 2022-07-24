@@ -3,9 +3,9 @@
 ; 1,1,1,1,4,5,11,1,16,1,19,11,23,25,13,1,16,34,7,19,39,41,7,23,47,7,5,53,9,7,57,1,4,11,67,10,71,73,37,13,79,27,41,85,43,11,89,47,5,97,49,101,17,13,35,109,11,56,113,29,117,119,15,1,32,65,131,67,45,137,23,142,143,145,73,149,25,19,153,79,159,23,27,165,83,14,169,173,29,88,177,15,181,61,23,95,191,193,97,197
 
 mov $1,$0
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 seq $1,283208 ; Minimal exponent integer sequence associated with Vietoris sequence.
 mov $2,$1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $1,1
 gcd $1,$0
 div $2,$1

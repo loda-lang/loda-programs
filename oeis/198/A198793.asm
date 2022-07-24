@@ -1,16 +1,15 @@
 ; A198793: Triangle T(n,k), read by rows, given by (1,0,0,1,0,0,0,0,0,0,0,...) DELTA (0,1,1,0,0,0,0,0,0,0,0,...) where DELTA is the operator defined in A084938.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,0,1,1,0,1,2,2,0,1,3,6,4,0,1,4,12,16,8,0,1,5,20,40,40,16,0,1,6,30,80,120,96,32,0,1,7,42,140,280,336,224,64,0,1,8,56,224,560,896,896,512,128,0,1,9,72,336,1008,2016,2688,2304,1152,256,0
 
 lpb $0
   add $1,1
   sub $0,$1
 lpe
+mov $2,2
+pow $2,$0
 sub $1,1
 bin $1,$0
-mov $2,$0
-mov $0,2
-pow $0,$2
-mul $1,$0
+mul $1,$2
 dif $1,2
 mov $0,$1

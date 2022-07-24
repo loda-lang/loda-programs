@@ -1,17 +1,16 @@
 ; A342748: a(n) = sum of digits in the n-th word in A341334.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,1,1,0,2,2,1,1,3,1,3,2,0,2,4,2,2,4,2,3,1,1,3,5,1,3,3,3,5,3,1,4,2,3,2,4,2,6,2,0,4,4,2,4,6,4,4,2,2,5,3,2,4,3,4,5,3,2,7,3,3,1,5,1,5,3,1,5,7,3,5,5,5,3,3,1,6,4,3,3,5,3,4,5,3,6
 
 add $0,2
 lpb $0
   mul $0,2
   sub $0,1
+  add $1,1
   lpb $0
     dif $0,3
   lpe
   div $0,3
-  add $1,10
 lpe
-div $1,10
-mov $0,$1
+add $0,$1
 sub $0,1

@@ -1,16 +1,16 @@
 ; A352427: a(n) is the number of trailing 0's in the minimal representation of n in terms of the positive Pell numbers (A317204).
-; Submitted by Dataman
+; Submitted by Simon Strandgaard
 ; 0,1,0,1,2,0,1,0,1,2,0,3,0,1,0,1,2,0,1,0,1,2,0,3,0,1,0,1,4,0,1,0,1,2,0,1,0,1,2,0,3,0,1,0,1,2,0,1,0,1,2,0,3,0,1,0,1,4,0,1,0,1,2,0,1,0,1,2,0,5,0,1,0,1,2,0,1,0,1,2,0,3,0,1,0,1,2,0,1,0,1,2,0,3,0,1,0,1,4,0
 
 add $0,1
 lpb $0
   mov $3,$0
   lpb $3
+    div $3,16
     mov $4,$0
     cmp $4,0
     cmp $4,0
     mov $2,3
-    sub $3,$4
   lpe
   mov $5,1
   lpb $0
@@ -24,6 +24,6 @@ lpb $0
     add $5,$4
   lpe
 lpe
-mov $0,$1
+add $0,$1
 sub $0,13
 div $0,10

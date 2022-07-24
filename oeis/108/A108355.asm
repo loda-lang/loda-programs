@@ -1,34 +1,15 @@
 ; A108355: Expansion of (1+2x^2)/((1-x)^2(1+x^2)^2).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,4,4,6,8,7,6,9,12,10,8,12,16,13,10,15,20,16,12,18,24,19,14,21,28,22,16,24,32,25,18,27,36,28,20,30,40,31,22,33,44,34,24,36,48,37,26,39,52,40,28,42,56,43,30,45,60,46,32,48,64,49,34,51,68,52,36,54,72,55
 
-mov $2,$0
-mov $8,6
+add $0,3
 lpb $0
-  sub $0,1
-  mov $3,$2
-  sub $3,$0
-  sub $3,1
-  mov $6,0
-  cmp $8,0
-  mov $5,$3
-  add $5,$8
-  mov $7,$0
-  mov $4,$5
-  lpb $4
-    mov $9,$7
-    mod $9,2
-    mov $10,$5
-    mod $10,2
-    div $5,2
-    mod $5,2
-    mul $9,$10
-    mov $4,$5
-    add $6,$9
-    div $7,2
-  lpe
-  cmp $6,0
-  add $1,$6
+  sub $0,2
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,211010 ; Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
+  add $1,$2
+  mov $3,2
 lpe
 mov $0,$1
-add $0,1

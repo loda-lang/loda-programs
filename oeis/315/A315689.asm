@@ -9,6 +9,6 @@ add $3,$0
 div $3,3
 mov $0,$3
 add $0,2
-mov $4,$2
-mul $4,4
-add $0,$4
+mov $1,$2
+mul $1,4
+add $0,$1

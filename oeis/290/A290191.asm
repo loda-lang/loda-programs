@@ -6,8 +6,8 @@ mov $1,10
 pow $1,$0
 div $1,9
 mul $1,10
+add $1,1
 mov $2,$0
 mod $2,2
 sub $1,$2
-add $1,1
 mov $0,$1

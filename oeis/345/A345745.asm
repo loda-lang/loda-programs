@@ -6,10 +6,10 @@ mov $1,$0
 mov $3,$0
 lpb $3
   sub $3,1
-  add $4,1
   mov $2,$1
   seq $2,107078 ; Whether n has non-unitary prime divisors.
   mul $2,$0
+  add $4,1
   add $4,$2
   sub $1,1
 lpe

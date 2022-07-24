@@ -7,11 +7,11 @@ lpb $0
   mov $3,$2
   dif $3,$0
   cmp $3,$2
-  mov $2,64
   cmp $3,0
   mul $3,$0
   sub $0,1
   add $1,$3
+  mov $2,64
 lpe
 mov $0,$1
 add $0,32

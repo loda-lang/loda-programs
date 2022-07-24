@@ -1,37 +1,17 @@
 ; A176848: Number of compositions of n into floor(j/3) kinds of j's for all j>=1.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,1,1,3,4,5,10,15,21,36,56,83,134,210,320,505,791,1221,1911,2988,4639,7240,11305,17595,27436,42806,66691,103968,162144,252720,393965,614285,957581,1492791,2327396,3628273,5656274,8818275,13747425,21431700,33411976,52088551,81204526,126596778,197361904,307682405
 
-mov $6,$0
-mov $8,2
-lpb $8
-  sub $8,1
-  mov $1,356
-  mov $2,0
-  mov $3,0
-  mov $4,0
-  mov $0,$6
-  add $0,$8
+mov $2,1
+lpb $0
   sub $0,1
-  lpb $0
-    sub $0,1
-    sub $3,$4
-    mov $5,$4
-    add $1,$3
-    sub $3,$4
-    mov $4,$2
-    add $4,$1
-    add $5,$4
-    mov $2,$3
-    mov $3,$5
-  lpe
-  mov $9,$8
-  mul $9,$1
-  mov $0,$1
-  add $7,$9
+  add $4,$2
+  mov $5,$6
+  add $5,$4
+  add $6,$2
+  mov $2,$1
+  mov $4,$1
+  mov $1,$3
+  mov $3,$5
 lpe
-min $6,1
-mul $6,$0
-mov $0,$7
-sub $0,$6
-div $0,356
+add $0,$2

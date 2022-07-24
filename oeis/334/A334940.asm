@@ -5,14 +5,14 @@
 mov $2,$0
 mov $4,$0
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
   seq $1,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $1,1
   cmp $1,1
+  seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mul $0,$1
   add $3,$0
 lpe

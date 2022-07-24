@@ -4,5 +4,4 @@
 
 seq $0,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
 seq $0,54054 ; Smallest digit of n.
-max $0,1
-sub $0,1
+trn $0,1

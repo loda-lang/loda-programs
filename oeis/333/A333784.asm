@@ -1,9 +1,8 @@
 ; A333784: a(n) = sigma(n) - A332994(n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,3,0,0,0,5,0,9,0,7,5,0,0,12,0,15,7,11,0,21,0,13,0,21,0,33,0,0,11,17,7,36,0,19,13,35,0,45,0,33,20,23,0,45,0,30,17,39,0,39,11,49,19,29,0,89,0,31,28,0,13,69,0,51,23,61,0,84,0,37,30,57,11,81,0,75,0,41,0,121,17,43,29,77,0,117,13,69,31,47,19,93,0,56,44,90
 
 mov $1,$0
-seq $0,332994 ; a(1) = 1, for n > 1, a(n) = n + a(A052126(n)).
-seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $1,$0
-mov $0,$1
+seq $1,332994 ; a(1) = 1, for n > 1, a(n) = n + a(A052126(n)).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $0,$1

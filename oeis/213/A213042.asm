@@ -1,11 +1,14 @@
 ; A213042: Convolution of (1,0,2,0,3,0,...) and (1,0,0,2,0,0,3,0,0,...); i.e., (A027656(n)) and (A175676(n+2)).
+; Submitted by Simon Strandgaard
 ; 1,0,2,2,3,4,7,6,11,12,15,18,24,24,33,36,42,48,58,60,74,80,90,100,115,120,140,150,165,180,201,210,237,252,273,294,322,336,371,392,420,448,484,504,548,576,612,648,693,720,774,810,855,900,955,990,1055
 
-add $0,1
+mul $0,2
+add $0,4
 lpb $0
+  sub $0,4
   mov $2,$0
-  seq $2,114209 ; Number of permutations of [n] having exactly two fixed points and avoiding the patterns 123 and 231.
-  trn $0,3
+  max $2,0
+  seq $2,25828 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^6)).
   add $1,$2
 lpe
 mov $0,$1

@@ -3,11 +3,11 @@
 
 add $0,1
 div $0,2
-sub $2,$0
-sub $2,$0
-sub $2,$0
-gcd $2,2
-mul $2,3
-add $0,$2
+sub $1,$0
+sub $1,$0
+sub $1,$0
+gcd $1,2
+mul $1,3
+add $0,$1
 sub $0,3
 div $0,2

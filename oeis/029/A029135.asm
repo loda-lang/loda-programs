@@ -7,9 +7,10 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
+  div $2,2
   max $2,0
-  seq $2,25793 ; Expansion of 1/((1-x)(1-x^10)(1-x^11)).
+  seq $2,25776 ; Expansion of 1/((1-x)(1-x^5)(1-x^6)).
   add $1,$2
-  mov $3,12
+  mov $3,11
 lpe
 mov $0,$1

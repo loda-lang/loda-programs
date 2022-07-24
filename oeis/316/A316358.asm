@@ -6,22 +6,22 @@ mov $6,$0
 mov $8,$0
 add $8,1
 lpb $8
-  mov $0,$6
   sub $8,1
+  mov $0,$6
   sub $0,$8
   mov $3,$0
   mov $5,$0
+  mul $5,2
   seq $0,316316 ; Coordination sequence for tetravalent node in chamfered version of square grid.
   sub $0,1
   mov $4,$0
   div $4,4
   add $4,1
-  mov $1,$4
   mov $2,$3
   trn $2,$4
   mul $2,3
+  mov $1,$4
   add $1,$2
-  mul $5,2
   add $1,$5
   add $7,$1
 lpe

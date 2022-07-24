@@ -4,8 +4,7 @@
 
 div $0,2
 lpb $0
-  mov $2,$3
-  sub $2,5
+  mov $2,-5
   bin $2,$0
   sub $0,1
   add $1,$2

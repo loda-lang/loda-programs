@@ -1,12 +1,10 @@
 ; A333871: Sum of the iterated absolute Möbius divisor function (A173557).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,1,3,1,5,3,9,1,3,5,15,3,15,9,9,1,17,3,21,5,15,15,37,3,5,15,3,9,37,9,39,1,25,17,27,3,39,21,27,5,45,15,57,15,9,37,83,3,9,5,33,15,67,3,45,9,39,37,95,9,69,39,15,1,51,25,91,17,59,27,97,3,75,39,9,21,69,27,105,5,3,45,127,15,65,57,65,15,103,9,75,37,69,83,75,3,99,9,25,5
 
 lpb $0
-  mov $2,$0
-  seq $2,173557 ; a(n) = Product_{primes p dividing n} (p-1).
-  add $3,$2
-  sub $2,1
-  mov $0,$2
+  seq $0,173557 ; a(n) = Product_{primes p dividing n} (p-1).
+  add $1,$0
+  sub $0,1
 lpe
-mov $0,$3
+mov $0,$1

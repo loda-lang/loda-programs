@@ -4,4 +4,4 @@
 
 seq $0,350389 ; a(n) is the largest unitary divisor of n that is an exponentially odd number (A268335).
 sub $0,1
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

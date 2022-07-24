@@ -8,8 +8,8 @@ lpb $0
   pow $3,$0
   gcd $3,$0
   mov $4,$0
-  sub $0,1
   div $4,$3
+  sub $0,1
   add $1,$4
 lpe
 mov $0,$1

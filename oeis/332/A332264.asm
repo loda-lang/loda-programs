@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,334136 ; a(n) = (n-1)*sigma(n) where sigma is the sum of divisors A000203.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

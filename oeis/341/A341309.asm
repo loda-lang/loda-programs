@@ -1,22 +1,20 @@
 ; A341309: Sum of odd divisors of n that are <= A003056(n).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,4,1,1,4,1,1,4,1,1,9,1,1,4,1,6,4,1,1,4,6,1,4,8,1,9,1,1,4,1,13,4,1,1,4,6,1,11,1,1,18,1,1,4,8,6,4,1,1,13,6,8,4,1,1,9,1,1,20,1,6,15,1,1,4,13,1,13,1,1,9,1,19,4,1,6,13,1,1,11,6,1,4,12,1,18,21
 
+mov $1,1
 add $0,1
-mov $2,$0
 lpb $0
-  add $4,1
-  min $0,$4
-  mov $3,$2
-  dif $3,$0
-  cmp $3,$2
-  mod $0,2
-  mul $0,$4
-  sub $2,$4
-  cmp $3,0
-  mul $3,$0
-  mov $0,$2
-  add $1,$3
+  add $0,1
+  sub $0,$1
+  add $2,1
+  mov $3,$0
+  gcd $3,$1
+  div $3,$1
+  mul $3,$2
+  add $4,$3
+  sub $0,$1
+  add $1,2
+  add $2,1
 lpe
-mov $0,$1
-add $0,1
+mov $0,$4

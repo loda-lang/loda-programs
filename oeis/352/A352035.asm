@@ -1,20 +1,21 @@
 ; A352035: Sum of the 7th powers of the odd proper divisors of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,2188,1,1,2188,78126,1,2188,1,823544,80313,1,1,4785157,1,78126,825731,19487172,1,2188,78126,62748518,4785157,823544,1,170939688,1,1,19489359,410338674,901669,4785157,1,893871740,62750705,78126,1,1801914272,1
 
 add $0,1
-mov $2,$0
-mul $0,2
+mov $1,1
+mov $4,$0
+add $0,1
 lpb $0
-  sub $0,1
-  mov $3,$2
-  div $3,$0
-  max $3,2
-  mul $3,$0
-  cmp $3,$2
-  mul $3,$0
-  pow $3,7
-  sub $0,1
-  add $1,$3
+  sub $0,3
+  mov $2,$4
+  gcd $2,$1
+  mul $2,2
+  trn $2,$1
+  mov $3,$1
+  pow $3,6
+  mul $3,$2
+  add $5,$3
+  add $1,2
 lpe
-mov $0,$1
+mov $0,$5

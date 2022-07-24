@@ -9,7 +9,7 @@ sub $0,3
 mov $1,$2
 add $1,$2
 mul $1,$0
-add $0,4
 add $2,$1
+add $0,4
 mul $0,$2
 div $0,6

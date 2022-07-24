@@ -1,18 +1,16 @@
 ; A181650: Inverse of number triangle A070909.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard
 ; 1,-1,1,-1,0,1,0,0,-1,1,0,0,-1,0,1,0,0,0,0,-1,1,0,0,0,0,-1,0,1,0,0,0,0,0,0,-1,1,0,0,0,0,0,0,-1,0,1,0,0,0,0,0,0,0,0,-1,1,0,0,0,0,0,0,0,0,-1,0,1
 
 lpb $0
   add $1,1
   sub $0,$1
 lpe
-sub $0,$1
-gcd $1,2
+sub $1,$0
+mod $0,2
+sub $0,2
 add $1,1
+div $1,2
 add $1,$0
-mul $0,2
-div $1,-1
-bin $1,-2
-mov $2,$1
-bin $2,$0
-mov $0,$2
+bin $1,$0
+mov $0,$1

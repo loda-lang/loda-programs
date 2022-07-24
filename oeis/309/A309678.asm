@@ -7,10 +7,10 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $0,$3
-  sub $3,1
   div $0,4
   seq $0,189376 ; Expansion of 1/((1-x)^5*(x^3+x^2+x+1)^2).
   add $1,$0
+  sub $3,1
 lpe
 mov $0,$1
 add $0,1

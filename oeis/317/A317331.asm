@@ -5,11 +5,11 @@
 mul $0,2
 add $0,1
 mov $2,$0
-seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
-mov $1,$0
 mul $2,2
 add $2,3
 mul $2,2
+seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
+mov $1,$0
 add $1,$2
 mov $0,$1
 div $0,2

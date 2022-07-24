@@ -1,7 +1,14 @@
 ; A177228: A combinatorial differential triangle sequence:q=3;t=1/q;f(t,n)=d^n/dt^n*(t/(1+t); c(t.n,m)=(1/(1+t)*f(n,t)/(f(t,m)*f(t,(n-m))
+; Submitted by Simon Strandgaard
 ; 3,3,3,3,-2,3,3,-3,-3,3,3,-4,-6,-4,3,3,-5,-10,-10,-5,3,3,-6,-15,-20,-15,-6,3,3,-7,-21,-35,-35,-21,-7,3,3,-8,-28,-56,-70,-56,-28,-8,3,3,-9,-36,-84,-126,-126,-84,-36,-9,3,3,-10,-45,-120,-210,-252,-210,-120,-45,-10
 
-seq $0,173741 ; T(n,k) = binomial(n,k) + 4 for 1 <= k <= n - 1, n >= 2, and T(n,0) = T(n,n) = 1 for n >= 0, triangle read by rows.
-sub $1,$0
-add $1,4
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+bin $1,$0
+mov $2,1
+div $2,$1
+mul $2,4
+sub $2,$1
+mov $0,$2

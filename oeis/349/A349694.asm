@@ -1,5 +1,5 @@
 ; A349694: Dirichlet convolution of the squarefree kernel function (A007947) with itself.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,4,6,8,10,24,14,12,15,40,22,48,26,56,60,16,34,60,38,80,84,88,46,72,35,104,24,112,58,240,62,20,132,136,140,120,74,152,156,120,82,336,86,176,150,184,94,96,63,140,204,208,106,96,220,168,228,232,118,480
 
 mov $1,1
@@ -7,6 +7,7 @@ mov $2,1
 add $0,1
 lpb $0
   mov $3,$0
+  sub $3,1
   lpb $3
     mov $4,$0
     mod $4,$2

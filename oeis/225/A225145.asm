@@ -1,5 +1,5 @@
 ; A225145: Square array read by downwards antidiagonals: T(n,k) = 1 if k mod (n+1) > 0, T(n,k) = 0 if k mod (n+1) = 0.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 1,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1
 
 lpb $0
@@ -7,9 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 add $0,2
-add $1,2
+add $1,3
 mod $1,$0
-sub $0,$1
-cmp $0,1
-add $0,1
-mod $0,2
+min $1,1
+mov $0,$1

@@ -2,80 +2,18 @@
 ; Submitted by Fornax
 ; 1,2,4,4,6,5,7,6,8,6,9,7,9,7,10,8,10,7,11,9,11,7,11,10,12,8,11,9,13,9,13,9,11,9,14,12,12,7,13,11,15,9,13,11,13,9,13,12,16,10,13,9,13,11,17,13,13,7,15,13,15,9,14,14,16,11,13,9,15,11,19,13,15,9,13,13,15,11,17,14,16,8
 
-mov $20,3
-mul $5,2
-add $6,2
-gcd $4,2
-add $10,10
-mov $19,1
-mov $13,$9
-mov $5,$0
-add $4,2
-mov $19,$0
-add $3,1
-add $3,2
-add $0,1
+mov $4,4
+mov $1,$0
+mov $3,3
 lpb $3
-  mov $20,1
-  mul $6,$12
   sub $3,1
-  add $7,2
-  mul $11,2
-  mov $11,$3
-  mov $8,$10
-  mov $0,$5
-  mov $6,1
-  mov $7,2
-  add $9,$13
-  mul $9,$8
-  add $14,1
-  add $9,6
-  add $5,1
-  mov $17,1
-  mov $16,$1
+  mov $0,$1
+  add $1,1
   mov $2,$0
-  mov $16,$8
   seq $2,145154 ; Coefficients in expansion of Eisenstein series E_1.
   add $4,$2
-  add $8,3
 lpe
-mov $0,$4
-add $7,6
-add $1,2
-mov $9,2
-sub $0,2
-mov $5,$6
-add $3,2
-div $7,2
-sub $0,2
-mul $13,$0
-mul $2,$6
-mul $5,$4
-div $0,2
-add $13,1
-mov $19,2
-mov $19,2
-div $19,2
-sub $0,4
-div $0,4
-add $0,1
-mov $20,1
-mov $0,$4
-mov $18,1
-pow $7,2
-mov $16,6
-div $0,2
-sub $14,1
-mov $0,$2
-mul $15,2
-sub $0,8
-div $0,4
 mov $0,$4
 sub $0,17
 div $0,4
-div $6,2
-add $0,3
-sub $0,1
-sub $0,2
-add $0,3
-sub $0,2
+add $0,1

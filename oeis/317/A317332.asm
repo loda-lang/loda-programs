@@ -4,7 +4,7 @@
 
 seq $0,317331 ; Indices m for which A058304(m) = 1.
 mov $1,$0
-mul $0,2
 mod $1,2
-sub $0,$1
+mul $0,2
 add $0,1
+sub $0,$1

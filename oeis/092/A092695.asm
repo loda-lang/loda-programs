@@ -1,35 +1,15 @@
 ; A092695: Number of positive integers less than or equal to n which are not divisible by the primes 2,3,5,7.
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,1,1,1,1,1,1,2,2,3,3,3,3,4,4,5,5,5,5,6,6,6,6,6,6,7,7,8,8,8,8,8,8,9,9,9,9,10,10,11,11,11,11,12,12,12,12,12,12,13,13,13,13,13,13,14,14,15,15,15,15,15,15,16,16,16,16,17,17,18,18,18,18,18,18,19,19,19,19,20,20,20,20,20,20,21,21,21,21,21,21,21,21,22,22,22
 
-mov $13,$0
-add $13,1
-lpb $13
-  sub $13,1
-  mov $1,0
-  mov $10,0
-  mov $0,0
-  sub $0,$13
-  mov $2,261241
-  lpb $2
-    gcd $0,40320
-    mov $2,$0
-    mov $4,$0
-    mov $5,$0
-    sub $5,$0
-    add $5,1
-    mul $5,$0
-    add $10,2
-    lpb $0,8
-      lpb $4
-        div $4,3
-        sub $1,$5
-        add $1,1
-        add $10,$5
-      lpe
-    lpe
-  lpe
-  mov $1,$10
-  sub $1,2
-  add $12,$1
+lpb $0
+  mov $2,$0
+  dif $2,2
+  dif $2,5
+  dif $2,7
+  dif $2,3
+  cmp $2,$0
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$12
+mov $0,$1

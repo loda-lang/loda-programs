@@ -4,9 +4,9 @@
 
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 pow $0,2
-mov $2,1
-add $2,$0
-mul $0,$2
-sub $0,$2
+mov $1,1
+add $1,$0
+mul $0,$1
+sub $0,$1
 seq $0,64097 ; A quasi-logarithm defined inductively by a(1) = 0 and a(p) = 1 + a(p-1) if p is prime and a(n*m) = a(n) + a(m) if m,n > 1.
 div $0,4

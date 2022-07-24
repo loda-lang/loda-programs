@@ -3,8 +3,7 @@
 
 add $0,1
 bin $0,2
-add $0,1
 mul $0,28
-add $0,2
+add $0,30
 div $0,5
 sub $0,5

@@ -4,5 +4,4 @@
 
 seq $0,324895 ; Largest proper divisor of A276086(n); a(0) = 1.
 sub $0,1
-seq $0,336551 ; a(n) = A003557(n) - 1.
-add $0,1
+seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

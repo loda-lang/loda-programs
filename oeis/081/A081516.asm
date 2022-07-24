@@ -5,8 +5,8 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  mov $0,1
   seq $1,75402 ; Smallest number such that a(n) + T(n) is a prime, where T(n) is the n-th triangular number.
+  mov $0,1
 lpe
 add $1,$2
 mov $0,$1

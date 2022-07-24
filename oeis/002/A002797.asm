@@ -11,8 +11,8 @@ sub $4,3
 sub $5,1
 mov $2,3
 add $2,$0
+mov $0,$2
 lpb $0
-  mov $0,$2
   add $0,2
   div $4,2
   pow $5,2

@@ -1,5 +1,5 @@
 ; A316189: Decimal expansion of Sum(1/p + 1/q) as (p, q) runs through the twin m^2 + 1 primes.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Christian Krause
 ; 3,5,7,7,4,5,1,4,7,1,4,1,3
 
 add $0,2
@@ -23,7 +23,6 @@ lpb $0
 lpe
 add $6,$2
 mov $0,$6
-sub $0,16
 div $0,16
-add $0,3
+add $0,2
 mod $0,10

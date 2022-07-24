@@ -1,20 +1,19 @@
 ; A352032: Sum of the 4th powers of the odd proper divisors of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,82,1,1,82,626,1,82,1,2402,707,1,1,6643,1,626,2483,14642,1,82,626,28562,6643,2402,1,51332,1,1,14723,83522,3027,6643,1,130322,28643,626,1,196964,1,14642,57893,279842,1,82,2402,391251,83603,28562,1,538084,15267
 
 add $0,1
-mov $2,$0
-mul $0,2
+mov $1,1
+mov $4,$0
 lpb $0
-  sub $0,1
-  mov $3,$2
-  div $3,$0
-  max $3,2
-  mul $3,$0
-  cmp $3,$2
-  mul $3,$0
+  sub $0,2
+  mov $2,$4
+  gcd $2,$1
+  div $2,$1
+  mov $3,$1
   pow $3,4
-  sub $0,1
-  add $1,$3
+  mul $3,$2
+  add $5,$3
+  add $1,2
 lpe
-mov $0,$1
+mov $0,$5

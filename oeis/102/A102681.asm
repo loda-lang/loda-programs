@@ -6,8 +6,8 @@ lpb $0
   mov $2,$0
   mod $2,10
   lpb $2
-    add $1,5
     mod $2,8
+    add $1,5
   lpe
   div $0,10
 lpe

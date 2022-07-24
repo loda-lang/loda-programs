@@ -4,15 +4,11 @@
 
 lpb $0
   div $0,54
-  dif $0,2
   sub $0,1
-  mod $0,2
 lpe
 seq $0,19565 ; The squarefree numbers ordered lexicographically by their prime factorization (with factors written in decreasing order). a(n) = Product_{k in I} prime(k+1), where I is the set of indices of nonzero binary digits in n = Sum_{k in I} 2^k.
 mul $0,7
 pow $0,2
 sub $0,49
-bin $1,5
 div $0,49
-mov $3,4
 add $0,1

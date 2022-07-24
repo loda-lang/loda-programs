@@ -1,20 +1,19 @@
 ; A352031: Sum of the cubes of the odd proper divisors of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,28,1,1,28,126,1,28,1,344,153,1,1,757,1,126,371,1332,1,28,126,2198,757,344,1,3528,1,1,1359,4914,469,757,1,6860,2225,126,1,9632,1,1332,4257,12168,1,28,344,15751,4941,2198,1,20440,1457,344,6887,24390,1,3528,1
 
 add $0,1
-mov $2,$0
-mul $0,2
+mov $1,1
+mov $4,$0
 lpb $0
-  sub $0,1
-  mov $3,$2
-  div $3,$0
-  max $3,2
-  mul $3,$0
-  cmp $3,$2
-  mul $3,$0
+  sub $0,2
+  mov $2,$4
+  gcd $2,$1
+  div $2,$1
+  mov $3,$1
   pow $3,3
-  sub $0,1
-  add $1,$3
+  mul $3,$2
+  add $5,$3
+  add $1,2
 lpe
-mov $0,$1
+mov $0,$5

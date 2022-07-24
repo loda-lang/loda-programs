@@ -7,9 +7,10 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
+  mul $2,2
   max $2,0
-  seq $2,8677 ; Expansion of 1/((1-x^3)*(1-x^5)*(1-x^7)).
+  seq $2,25878 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^9)).
   add $1,$2
-  mov $3,9
+  mov $3,14
 lpe
 mov $0,$1

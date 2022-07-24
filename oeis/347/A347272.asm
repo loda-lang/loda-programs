@@ -1,24 +1,11 @@
 ; A347272: Main diagonal of the square array A347270.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,5,4,2,8,26,4,52,1,16,2,1,16,8,2,4,8,4,1,4,1,4,4,4,1,155,1,4,2,395,2,1,2,1,2,1,4,4,4,668,1,4,1,4,2,425,1,1,4,2,4,2,850,425,1,1,2,2,4,2,4858,2429,1,4,2,1,2,1,4,2308,4,3644,1,1,2,1,1,4,4,4,1732,866,2,1,4,2,4,4,1,4,2,1,106,53,2,488,1,4,2
 
-add $0,1
 mov $1,$0
-lpb $1
-  mov $2,$0
-  mod $2,2
-  mov $3,1
-  sub $3,$2
-  mov $4,$0
-  lpb $2
-    sub $2,1
-    mul $0,3
-    add $0,1
-  lpe
-  lpb $3
-    sub $3,1
-    div $0,2
-  lpe
-  sub $1,1
+add $1,1
+lpb $0
+  sub $0,1
+  seq $1,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe
-mov $0,$4
+add $0,$1
