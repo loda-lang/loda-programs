@@ -10,6 +10,5 @@ lpb $2
   trn $1,$2
   add $0,2
   sub $0,$1
-  trn $2,1
-  add $2,1
+  max $2,1
 lpe

@@ -10,9 +10,7 @@ add $1,1
 mov $2,$0
 sub $2,$1
 sub $1,$2
-mul $1,$0
+mul $0,$1
 pow $2,4
-mov $0,$2
-gcd $0,$1
-div $1,$0
-mov $0,$1
+gcd $2,$0
+div $0,$2

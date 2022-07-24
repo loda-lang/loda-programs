@@ -6,11 +6,11 @@ mov $2,1
 lpb $0
   lpb $3
     add $2,1
-    mov $4,165
-    gcd $4,$2
-    cmp $4,1
-    cmp $4,0
-    sub $3,$4
+    mov $1,165
+    gcd $1,$2
+    cmp $1,1
+    cmp $1,0
+    sub $3,$1
   lpe
   sub $0,1
   add $2,1
