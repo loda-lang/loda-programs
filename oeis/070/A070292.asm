@@ -6,7 +6,7 @@ mov $1,1
 add $1,$0
 mov $2,12
 gcd $2,$1
-mul $1,12
 pow $2,2
+mul $1,12
 div $1,$2
 mov $0,$1

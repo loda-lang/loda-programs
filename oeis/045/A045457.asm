@@ -5,8 +5,8 @@ lpb $0
   mov $2,$0
   seq $2,108137 ; Primes p such that p + 6^k is composite for all k >= 0.
   div $0,$2
-  add $3,$2
-  sub $3,5
+  add $1,$2
+  sub $1,5
 lpe
-mov $0,$3
+mov $0,$1
 add $0,5

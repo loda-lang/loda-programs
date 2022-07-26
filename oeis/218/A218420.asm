@@ -1,7 +1,24 @@
 ; A218420: Hilltop maps: number of n X 2 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal, vertical or antidiagonal neighbor in a random 0..1 n X 2 array.
-; Submitted by Christian Krause
+; Submitted by fix
 ; 3,13,49,191,737,2849,11011,42557,164481,635711,2456993,9496161,36702211,141852301,548252401,2118969471,8189716289,31652864193,122336815619,472825977597,1827449929601,7063007117695,27298186799297,105506194473793,407776426844163,1576036507800461,6091306192324657,23542608908492607,90991064431570209,351676139147157729,1359211562344801539,5253288084008265277,20303708751546420993,78472869272587588287,303293909857902252385,1172216545789369009825,4530561233049956061187,17510403824400011474701
 
 mul $0,2
+add $0,5
+lpb $0
+  sub $0,1
+  add $3,$8
+  mov $4,$2
+  mov $2,$1
+  add $6,$3
+  mov $7,$6
+  add $7,1
+  add $7,$4
+  mov $1,$3
+  mov $3,$8
+  mov $8,$5
+  add $5,$7
+  bin $6,$5
+lpe
+mov $0,$4
+mul $0,2
 add $0,1
-seq $0,218199 ; Hilltop maps: number of n X 1 binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or vertical neighbor in a random 0..2 n X 1 array

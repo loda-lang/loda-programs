@@ -4,7 +4,7 @@
 
 seq $0,288 ; Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) with a(0) = a(1) = a(2) = a(3) = 1.
 lpb $0
-  mov $2,$0
+  mov $1,$0
   div $0,10
 lpe
-mov $0,$2
+mov $0,$1

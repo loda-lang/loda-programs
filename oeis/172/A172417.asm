@@ -1,5 +1,11 @@
 ; A172417: n*Catalan number(n) triangle.
+; Submitted by nenym
 ; 1,2,2,5,5,5,14,14,14,14,42,42,42,42,42,132,132,132,132,132,132,429,429,429,429,429,429,429,1430,1430,1430,1430,1430,1430,1430,1430,4862,4862,4862,4862,4862,4862,4862,4862,4862,16796,16796,16796,16796,16796
 
-seq $0,111650 ; 2n appears n times (n>0).
-seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,1
+seq $1,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $0,$1

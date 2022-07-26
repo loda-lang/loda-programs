@@ -1,17 +1,8 @@
 ; A100429: Bisection of Kolakoski sequence A000002.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by pututu
 ; 2,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,2,1,2,2,1,1,2,1,2,2,1,2,2,1,2,1,1,2,2,1,1,2,1,2,1,1,2,2,1,2,1,2,2,1,1,2,2,1,2,1,1,2,1,1,2,1,1,2,1,2,2,1,2,2,1,1,2,1,2,2,1,1,2,1,2,1,1,2,2,1,1,2,1,1,2,2,1,2,1,1,2,2
 
-mov $2,2
-mul $0,2
-add $0,2
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  add $3,2
-  mul $2,$3
-lpe
-mov $0,$3
+mov $1,$0
+add $1,$0
+seq $1,78880 ; The sequence starting with 2 that equals its own run length sequence.
+mov $0,$1

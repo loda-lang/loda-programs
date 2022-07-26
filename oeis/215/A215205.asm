@@ -5,16 +5,13 @@
 mov $2,-2
 bin $2,$0
 div $2,2
-mov $1,3
-add $1,2
+mov $1,5
 lpb $1
   trn $1,7
   mov $0,$2
   dif $0,2
-  mov $4,3
   mov $3,1
   add $3,$0
-  mul $0,$4
   mul $2,2
   add $2,$3
 lpe

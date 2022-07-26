@@ -4,7 +4,7 @@
 
 lpb $0
   sub $0,1
-  seq $2,3188 ; Decimal equivalent of Gray code for n.
-  add $2,1
+  seq $1,3188 ; Decimal equivalent of Gray code for n.
+  add $1,1
 lpe
-mov $0,$2
+mov $0,$1

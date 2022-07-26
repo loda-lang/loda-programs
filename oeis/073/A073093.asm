@@ -1,12 +1,19 @@
 ; A073093: Number of prime power divisors of n.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Roadranner
 ; 1,2,2,3,2,3,2,4,3,3,2,4,2,3,3,5,2,4,2,4,3,3,2,5,3,3,4,4,2,4,2,6,3,3,3,5,2,3,3,5,2,4,2,4,4,3,2,6,3,4,3,4,2,5,3,5,3,3,2,5,2,3,4,7,3,4,2,4,3,4,2,6,2,3,4,4,3,4,2,6,5,3,2,5,3,3,3,5,2,5,3,4,3,3,3,7,2,4,4,5
 
-mov $1,1
+mov $2,2
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
   div $0,$2
-  add $1,1
+  add $1,4
 lpe
 mov $0,$1
+div $0,4

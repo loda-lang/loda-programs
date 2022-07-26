@@ -44,6 +44,7 @@ A030124: Complement (and also first differences) of Hofstadter's sequence A00522
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
 A035143: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -47.
+A035159: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -31.
 A035162: Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
 A035187: Sum over divisors d of n of Kronecker symbol (5|d).
 A035199: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
@@ -149,6 +150,7 @@ A190456: Positions of 4 in A190451.
 A190547: Positions of 2 in A190544.
 A190550: Positions of 0 in A190549.
 A190554: Positions of 4 in A190549.
+A190562: Positions of 0 in A190561.
 A191329: (Lower Wythoff sequence mod 2)+(Upper Wythoff sequence mod 2).
 A194148: Sum_{j=1..n} floor(j*(1/2 + sqrt(2))); n-th partial sum of Beatty sequence for 1/2 + sqrt(2).
 A195127: a(n) = 2*n - floor(n*r/5), where r = (1 + sqrt(5))/2.
@@ -186,6 +188,7 @@ A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
+A279934: Positive integers k such that {(k-1)*r} > 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
 A283766: Numbers k such that L(k) is odd, where L = A000201 = lower Wythoff sequence.
 A283767: Numbers k such that U(k) is even, where U = A001950 = upper Wythoff sequence.
 A283768: Numbers k such that U(k) is odd, where U = A001950 = upper Wythoff sequence.
@@ -200,8 +203,10 @@ A285259: Positions of 0 in A285258; complement of A285260.
 A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
 A285708: a(n) = n / A285707(n).
 A285970: Positions of 0 in A285969; complement of A285971.
+A286666: Positions of 0 in A286665; complement of A286667.
 A286690: Positions of 1 in A286688; complement of A286689.
 A286904: Positions of 0 in A286903; complement of A286905.
+A286923: Positions of 0 in A286922; complement of A286924.
 A286927: Positions of 1 in A286925; complement of A286926.
 A286988: Positions of 0 in A286987; complement of A286989.
 A287174: 2-limiting word of the morphism 0->10, 1->20, 2->0.

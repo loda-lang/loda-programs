@@ -1,5 +1,5 @@
 ; A110729: Factorial terms of Digital factorial (A110728).
-; Submitted by GolfSierra
+; Submitted by William Michael Kanar
 ; 1,1,2,6,24,720,5040,362880,39916800,479001600,6227020800,87178291200
 
 mov $2,2
@@ -21,6 +21,4 @@ lpb $0
   mov $3,$4
 lpe
 mov $0,$2
-sub $0,2
 div $0,2
-add $0,1

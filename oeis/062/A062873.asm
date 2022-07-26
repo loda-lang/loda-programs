@@ -1,11 +1,10 @@
 ; A062873: Nearest integer to arithmetic mean of n! and n^n.
-; Submitted by Jamie Morken(s2)
+; Submitted by BorderlineNeutrino
 ; 1,1,3,17,140,1623,23688,414292,8408768,193891685,5001814400,142675793706,4458289724928,151440666806527,5556047001924608,218947599027613688,9223382498249719808,413620308786882430089,19673207238835121651712,989209888652706998977990,52428801216451004088320000
 
 mov $1,$0
 pow $1,$0
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-add $1,1
-add $1,$0
-div $1,2
-mov $0,$1
+add $0,1
+add $0,$1
+div $0,2

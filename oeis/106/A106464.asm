@@ -9,9 +9,9 @@ lpb $0
   add $3,1
   gcd $0,$3
   add $1,$0
-  mov $0,2
   max $2,$3
   sub $2,1
+  mov $0,2
   mul $0,$2
   dif $0,2
 lpe

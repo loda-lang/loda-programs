@@ -4,5 +4,5 @@
 
 mov $1,$0
 add $1,1
-seq $0,77373 ; Fibonacci numbers whose external digits as well as internal digits form a Fibonacci number.
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 mod $0,$1

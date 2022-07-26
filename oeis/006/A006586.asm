@@ -2,6 +2,14 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,4,6,8,10,14,15,18,22,24,27,31,33,37,40,44,47,51,53,57,63,65,68,73,75,81,85,87,91,97,100,104,108,112,115,121,125,129,134,136,142,146,148,156,160,164,166,173,176,180,188,190,194,200,202,208,214,218,223,227
 
+mov $2,2
 mul $0,2
-add $0,3
-seq $0,248517 ; Number of odd divisors > 1 in the numbers 1 through n, counted with multiplicity.
+add $0,2
+lpb $0
+  mov $3,$0
+  div $3,$2
+  sub $0,$2
+  add $1,$3
+  add $2,1
+lpe
+mov $0,$1

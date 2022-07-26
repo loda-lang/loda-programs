@@ -1,8 +1,6 @@
 ; A156257: Digit of runs of length 2 in the Kolakoski sequence A000002: a(n) = A000002(A078649(n)).
-; Submitted by amazing
+; Submitted by Stony666
 ; 2,1,2,2,1,1,2,1,2,1,1,2,2,1,2,1,1,2,2,1,2,2,1,1,2,1,2,2,1,2,2,1,1,2,1,2,2,1,1,2,1,1,2,1,1,2,2,1,2,1,2,2,1,1,2,2,1,2,1,1,2,1,2,1,1,2,1,2,2,1,2,2,1,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,2
 
 seq $0,13948 ; Positions of 2's in Kolakoski sequence (A000002).
-add $0,1
-mod $0,2
-add $0,1
+gcd $0,2

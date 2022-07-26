@@ -7,10 +7,10 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $2,$5
   mov $3,$0
   pow $3,2
-  seq $3,2024 ; n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+  seq $3,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
+  mov $2,$5
   mul $2,$3
   add $1,$2
   mov $6,$3

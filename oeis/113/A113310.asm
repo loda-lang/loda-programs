@@ -9,12 +9,12 @@ lpe
 add $2,2
 sub $2,$0
 mov $4,$0
+sub $4,2
 mov $0,$2
 lpb $0
   sub $0,2
   mov $3,$4
-  mul $3,-1
-  add $3,2
+  dif $3,-1
   bin $3,$0
   add $1,$3
 lpe
