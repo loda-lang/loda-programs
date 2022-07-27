@@ -1,9 +1,8 @@
 ; A092152: Sign of A092673(n).
-; Submitted by Jon Maiga
+; Submitted by vonboedefeldt
 ; 1,-1,-1,1,-1,1,-1,0,0,1,-1,-1,-1,1,1,0,-1,0,-1,-1,1,1,-1,0,0,1,0,-1,-1,-1,-1,0,1,1,1,0,-1,1,1,0,-1,-1,-1,-1,0,1,-1,0,0,0,1,-1,-1,0,1,0,1,1,-1,1,-1,1,0,0,1,-1,-1,-1,1,-1,-1,0,-1,1,0,-1,1,-1,-1,0,0,1,-1,1,1,1,1,0,-1,0,1,-1,1,1,1,0,-1,0,0,0
 
-seq $0,126690 ; Multiplicative function defined for prime powers by a(p^k) = p + p^2 + p^3 + ... + p^(k-1) - 1 (k >= 1).
-mov $1,2
-div $1,$0
-div $1,2
+seq $0,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
+add $1,$0
+dif $1,2
 mov $0,$1

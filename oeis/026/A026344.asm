@@ -1,9 +1,8 @@
 ; A026344: a(n) = greatest k such that s(k) = n, where s = A026342.
-; Submitted by [AF] Kalianthys
+; Submitted by Gunnar Hjern
 ; 2,5,6,11,12,14,15,20,24,26,27,29,32,33,35,38,42,45,47,51,54,56,59,60,62,65,66,69,72,74,75,78,80,83,86,87,92,95,96,101,102,105,107,110,114,116,119,122,123,126,128,132,134,135,137,140
 
 seq $0,26343 ; Least k such that s(k) = n, where s = A026342.
 mul $0,6
-sub $0,1
+add $0,3
 div $0,4
-add $0,1

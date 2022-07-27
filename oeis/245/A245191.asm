@@ -1,8 +1,8 @@
 ; A245191: Successive states of one-sided one-dimensional cellular automaton using Rule 90, starting with a single ON cell, converted to decimal.
-; Submitted by Jamie Morken(w3)
+; Submitted by pututu
 ; 1,2,5,8,20,34,85,128,320,544,1360,2056,5140,8738,21845,32768,81920,139264,348160,526336,1315840,2236928,5592320,8388736,20971840,35652128,89130320,134744072,336860180,572662306,1431655765,2147483648,5368709120,9126805504,22817013760,34493956096,86234890240,146599313408,366498283520,549764202496,1374410506240,2336497860608,5841244651520,8830587502592,22076468756480,37529996886016,93824992215040,140737488388096,351843720970240,598134325649408,1495335814123520,2260595907233792,5651489768084480
 
 add $0,1
-seq $0,38183 ; One-dimensional cellular automaton 'sigma-minus' (Rule 90): 000,001,010,011,100,101,110,111 -> 0,1,0,1,1,0,1,0.
-seq $0,344259 ; For any number n with binary expansion (b(1), ..., b(k)), the binary expansion of a(n) is (b(1), ..., b(ceiling(k/2))).
+mul $0,2
+seq $0,288807 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 510", based on the 5-celled von Neumann neighborhood.
 div $0,2

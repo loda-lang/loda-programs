@@ -7,8 +7,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,5052 ; 10*3^n.
-  add $3,$2
-  div $0,$3
+  add $1,$2
+  div $0,$1
   div $2,7
 lpe
 mov $0,$2

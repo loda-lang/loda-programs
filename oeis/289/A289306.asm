@@ -10,8 +10,8 @@ lpb $0
   max $0,1
   mov $3,$4
   bin $3,$1
-  add $1,5
   sub $3,$2
+  add $1,5
   mov $2,$4
   add $2,$3
 lpe

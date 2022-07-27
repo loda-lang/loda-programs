@@ -1,16 +1,19 @@
 ; A255258: Expansion of q^2 * phi(q) * psi(q^16) in powers of q where phi(), psi() are Ramanujan theta functions.
-; Submitted by emoga
+; Submitted by Vester
 ; 1,2,0,0,2,0,0,0,0,2,0,0,0,0,0,0,3,2,0,0,2,0,0,0,0,4,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,2,0,0,0,0,0,0,1,4,0,0,4,0,0,0,0,2,0,0,0,0,0,0,4,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,6,0,0
 
-add $0,2
-mov $1,23
-sub $1,$0
-seq $0,33715 ; Number of integer solutions (x, y) to the equation x^2 + 2y^2 = n.
-bin $1,2
-lpb $1
-  mod $1,2
-  sub $1,11
-  mod $1,2
-  mul $0,$1
+mov $1,3
+mov $3,3
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
+  add $1,$2
+  add $3,$4
+  add $3,13
+  mov $4,3
 lpe
-div $0,2
+mov $0,$1
+sub $0,3

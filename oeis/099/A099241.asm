@@ -12,9 +12,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,99239 ; Square array read by antidiagonals associated with sections of 1/(1-x-x^k).
-  mul $0,10
+  mul $0,2
   add $1,$0
 lpe
 mov $0,$1
-div $0,10
+mul $0,2
+div $0,4
 add $0,1

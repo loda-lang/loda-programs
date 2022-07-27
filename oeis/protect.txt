@@ -6,6 +6,7 @@ A001750: Primes multiplied by 5.
 A002659: a(n) = 2*sigma(n) - 1.
 A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1->12, 2->1, take limit; or, start with S(0)=2, S(1)=1, and for n>1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
+A003972: Moebius transform of A003961; a(n) = phi(A003961(n)), where A003961 shifts the prime factorization of n one step towards the larger primes.
 A004399: Fibonacci(n+2) plus n-th prime.
 A005722: a(n) = (prime(n) - 1)^2.
 A006093: a(n) = prime(n) - 1.
@@ -87,11 +88,14 @@ A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A089241: Even numbers k such that k/2 - 1 is prime.
+A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
 A098823: a(n) = 16*(8*prime(n) + 7).
+A099585: Remove all 3s from prime(n) - 1.
 A099817: Bisection of A000796 (decimal expansion of Pi).
 A099822: Bisection of A005117.
 A100484: The primes doubled.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
+A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
 A106139: Semiprimes (mod 3).
@@ -102,6 +106,7 @@ A106143: Semiprimes (mod 7).
 A106144: Semiprimes (mod 8).
 A106145: Semiprimes (mod 9).
 A106146: Semiprimes (mod 10).
+A106350: Semiprimes indexed by primes.
 A107115: Three-digit numbers from the decimal expansion of Pi (version 3) -- but see comments.
 A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 A109722: Sum of first 2n primes.
@@ -109,6 +114,7 @@ A109763: Primes repeated.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
+A121239: Decimal expansion of 10-e.
 A125137: a(n) = p^p + 1, where p = prime(n).
 A129069: Numbers n such that (n-3)/2 is prime.
 A129070: Numbers n such that (n-5)/4 is prime.

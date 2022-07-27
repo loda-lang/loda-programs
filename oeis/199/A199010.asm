@@ -1,24 +1,13 @@
 ; A199010: Arises in enumeration of Ehrhart polynomials for triangles.
-; Submitted by Xenization
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,2,1,1,2,2,1,1,1,3,1,1,3,1,1,1,2
 
-add $0,1
-lpb $0
-  mov $1,$0
-  mov $6,$3
-  trn $7,$5
-  sub $0,1
-  add $1,$0
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  mul $2,5
-  mov $3,5
-  mul $3,$2
-  sub $3,$5
-  sub $4,1
-  mov $5,$6
+mov $1,$0
+lpb $1
+  mov $2,$1
+  mul $2,2
+  seq $2,216278 ; Number of solutions to the equation x^2+2y^2 = n with x and y > 0.
+  mov $1,1
 lpe
-mov $0,$7
-div $0,25
+mov $0,$2
 add $0,1

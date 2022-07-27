@@ -1,7 +1,24 @@
 ; A173176: Greater twin primes in A172240.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 7,13,19,31,43,61,73,103,109,139,151,181,193,199,229,241,271,283,313,349,421,433,463,523,571,601,619,643,661,811,823,829,859,883,1021,1033,1051,1063,1093,1153,1231,1279,1291,1303,1321,1429,1453,1483,1489,1609,1621,1669,1699,1723,1789,1873,1879,1933,1951,1999
 
-seq $0,116958 ; Numbers k such that 2*k + 5 and 2*k + 7 are twin primes.
-mul $0,2
+mov $4,1
+mov $2,$0
+pow $2,2
+lpb $2
+  add $1,3
+  mov $3,$1
+  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
+  div $3,2
+  add $3,$4
+  sub $0,$3
+  add $0,1
+  add $1,3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
 add $0,7

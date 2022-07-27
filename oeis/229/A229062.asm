@@ -1,5 +1,5 @@
 ; A229062: 1 if n is representable as sum of two nonnegative squares, otherwise 0.
-; Submitted by zombie67 [MM]
+; Submitted by Ciceronian
 ; 1,1,1,0,1,1,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,1,0
 
 mov $1,4
@@ -23,7 +23,5 @@ lpb $0
   mul $1,$5
 lpe
 mov $0,$1
-sub $0,4
 div $0,4
-add $0,1
 mod $0,2

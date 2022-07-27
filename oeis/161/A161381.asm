@@ -7,9 +7,9 @@ lpb $0
   sub $0,$1
 lpe
 bin $1,$0
+mul $0,2
 lpb $0
   mul $1,$0
-  mul $1,2
-  sub $0,1
+  sub $0,2
 lpe
 mov $0,$1

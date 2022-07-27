@@ -5,8 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   seq $2,23900 ; Dirichlet inverse of Euler totient function (A000010).
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

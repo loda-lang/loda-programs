@@ -1,7 +1,9 @@
 ; A296135: {0->01}-transform of the Fibonacci word A003849.
-; Submitted by Christian Krause
+; Submitted by Orange Kid
 ; 0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1
 
-add $0,1
-seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
-mod $0,2
+seq $0,139764 ; Smallest term in Zeckendorf representation of n.
+lpb $0
+  mov $0,2
+lpe
+sub $0,1

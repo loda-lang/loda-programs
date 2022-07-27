@@ -4,6 +4,4 @@
 
 add $0,1
 seq $0,14085 ; Number of primes between n^2 and (n+1)^2.
-mov $1,$0
-sub $1,1
-mov $0,$1
+sub $0,1

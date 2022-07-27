@@ -1,11 +1,11 @@
 ; A028744: Nonsquares mod 31.
-; Submitted by Jamie Morken(w4)
+; Submitted by Ragnarsdad
 ; 3,6,11,12,13,15,17,21,22,23,24,26,27,29,30
 
-mov $1,2
+mov $4,3
+mov $1,3
 mov $2,$0
-add $2,2
-pow $2,2
+pow $2,5
 lpb $2
   mov $3,$1
   seq $3,70614 ; a(n) = n^5 mod 31.

@@ -1,20 +1,8 @@
 ; A095002: a(n) = 9*a(n-1) - 9*a(n-2) + a(n-3); given a(1) = 1, a(2) = 3, a(3) = 19.
-; Submitted by [AF] Kalianthys
+; Submitted by Roadranner
 ; 1,3,19,145,1137,8947,70435,554529,4365793,34371811,270608691,2130497713,16773373009,132056486355,1039678517827,8185371656257,64443294732225,507360986201539,3994444594880083,31448195772839121,247591121587832881,1949280776929823923
 
-mov $2,1
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  add $3,$4
-  add $3,$2
-  mul $2,6
-  sub $4,4
-  add $4,$2
-  mov $2,$4
-  sub $2,$1
-  add $2,$3
-  mov $3,$1
-lpe
-mov $0,$2
+seq $0,253654 ; Indices of pentagonal numbers (A000326) which are also centered pentagonal numbers (A005891).
+div $0,5
+mul $0,2
+add $0,1

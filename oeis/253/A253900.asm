@@ -2,15 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,2,3,3,2,4,4,2,4,4,3,6,4,2,4,8,4,4,4,2,6,6,3,6,4,4,8,4,2,6,12,4,4,4,2,6,12,4,5,5,4,8,4,4,8,8,4,6,6,2,8,8,2,4,4,4,12,12,6,6,8,4,4,4,4,16,8,2,4,8,8,12,6,2,6,12,4,4,8,4,8,8,3,9,6,6,12,4,2,4,8,8,16,8,2,8,8,2,4
 
-mul $0,2
 add $0,1
-lpb $0
-  add $2,$0
-  mov $3,$2
-  dif $3,$0
-  cmp $3,$2
-  cmp $3,0
-  sub $0,2
-  add $1,$3
-lpe
-add $0,$1
+pow $0,2
+sub $0,1
+seq $0,78703 ; Number of ways of subtracting twice a triangular number from a perfect square to obtain the integer n.

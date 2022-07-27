@@ -1,13 +1,20 @@
 ; A165188: Interleaving of A014125 and zero followed by A014125.
-; Submitted by Simon Strandgaard
+; Submitted by respawner
 ; 1,0,3,1,6,3,11,6,18,11,27,18,39,27,54,39,72,54,94,72,120,94,150,120,185,150,225,185,270,225,321,270,378,321,441,378,511,441,588,511,672,588,764,672,864,764,972,864,1089,972,1215,1089,1350,1215,1495,1350
 
-add $0,6
+add $0,3
 lpb $0
-  sub $0,6
-  mov $2,$0
-  max $2,0
-  seq $2,8795 ; Molien series for 3-dimensional representation of dihedral group D_6 of order 6.
-  add $1,$2
+  sub $0,1
+  sub $2,1
+  add $4,$2
+  sub $5,$4
+  trn $2,$3
+  mov $3,$0
+  mod $3,3
+  add $3,1
+  div $3,3
+  mul $3,$5
+  sub $0,1
+  add $1,$3
 lpe
 mov $0,$1

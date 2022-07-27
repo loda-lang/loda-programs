@@ -1,12 +1,8 @@
 ; A204425: Infinite matrix: f(i,j)=(2i+j+1 mod 3), by antidiagonals.
+; Submitted by Orange Kid
 ; 1,2,0,0,1,2,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0
 
-seq $0,204427 ; Infinite matrix: f(i,j)=(2i+j+2 mod 3), read by antidiagonals.
-sub $0,2
-mov $1,2
-pow $1,$0
-sub $0,$1
-mul $0,2
-sub $1,$0
-sub $1,2
-mov $0,$1
+seq $0,131421 ; Triangle read by rows (n>=1, 1<=k<=n): T(n,k) = 2*(n+k) - 3.
+add $0,1
+mul $0,56
+mod $0,3

@@ -1,12 +1,13 @@
 ; A262518: Even bisection of A155043.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by dkester788
 ; 0,1,2,2,3,3,3,4,5,4,5,5,6,6,6,6,7,7,10,8,8,8,9,9,9,10,10,10,10,11,10,12,19,12,13,13,11,14,14,14,14,15,12,16,15,15,17,16,13,18,19,17,14,18,14,18,18,19,19,20,15,21,21,20,16,22,16,23,17,23,17,24,24,25,25,24,25,26,25,27,26,26,28,27,26,27,28,28,28,29,27,29,29,30,30,30,30,31,39,31
 
 mul $0,2
 lpb $0
-  trn $0,1
-  seq $0,62968 ; n + 1 - d(n), where d(n) is the number of divisors function.
-  sub $0,1
   add $1,1
+  mov $2,$0
+  trn $2,1
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $0,$2
 lpe
 mov $0,$1

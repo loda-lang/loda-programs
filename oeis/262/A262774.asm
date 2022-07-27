@@ -4,6 +4,6 @@
 
 mov $1,-1
 pow $1,$0
-mul $0,4
-seq $0,113447 ; Expansion of i * theta_2(i * q^3)^3 / (4 * theta_2(i * q)) in powers of q^2.
+mul $0,2
+seq $0,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
 mul $0,$1

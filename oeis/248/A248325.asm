@@ -1,5 +1,5 @@
 ; A248325: Square array read by antidiagonals downwards: super Patalan numbers of order 4.
-; Submitted by PDW
+; Submitted by Ragnarsdad
 ; 1,4,12,40,24,168,480,160,224,2464,6240,1440,1120,2464,36960,84864,14976,8064,9856,29568,561792,1188096,169728,69888,59136,98560,374528,8614144,16972800,2036736,678912,439296,506880,1070080,4922368,132903936,246105600,25459200,7128576,3734016,3294720,4815360
 
 lpb $0
@@ -7,20 +7,19 @@ lpb $0
   sub $0,$2
 lpe
 mul $0,4
+add $0,1
 mul $2,2
 sub $2,$0
 add $0,$2
-mov $1,2
-sub $2,1
+mov $1,1
 sub $2,$0
 lpb $0
   sub $0,2
   add $2,2
   add $3,1
-  mul $1,4
   mul $1,$2
   div $1,$3
+  mul $1,4
   add $2,2
 lpe
 gcd $0,$1
-div $0,2

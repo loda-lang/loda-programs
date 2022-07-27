@@ -1,23 +1,19 @@
 ; A230435: Triangle by rows, A001047 convolved with A000079.
-; Submitted by Fardringle
+; Submitted by Coleslaw
 ; 1,2,5,4,10,19,8,20,38,65,16,40,76,130,211,32,80,152,260,422,665,64,160,304,520,844,1330,2059,128,320,608,1040,1688,2660,4118,6305,256,640,1216,2080,3376,5320,8236,12610,19171
 
+mov $3,3
 lpb $0
   add $2,1
   sub $0,$2
+  mul $3,2
 lpe
-sub $2,$0
-add $0,1
+add $1,$3
 lpb $0
   sub $0,1
-  add $2,1
-  mov $1,2
-  pow $1,$2
-  add $1,$3
-  mul $3,2
+  div $3,2
+  mul $3,3
   add $3,$1
 lpe
 mov $0,$3
-sub $0,2
-div $0,2
-add $0,1
+div $0,3

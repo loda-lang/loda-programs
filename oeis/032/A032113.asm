@@ -1,9 +1,9 @@
 ; A032113: "BIJ" (reversible, indistinct, labeled) transform of 3,3,3,3...
-; Submitted by misaki@med
+; Submitted by GolfSierra
 ; 3,12,111,1524,26463,551892,13428831,373435284,11682749343,406099317972,15527879299551,647709987649044,29269219898465823,1424381697080564052,74268532877694770271,4130589424345479558804
 
 add $0,1
-seq $0,32183 ; "CIJ" (necklace, indistinct, labeled) transform of 3,3,3,3...
-div $0,72
+seq $0,201354 ; Expansion of e.g.f.: exp(x) / (4 - 3*exp(x)).
+div $0,24
 mul $0,9
 add $0,3

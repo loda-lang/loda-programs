@@ -1,8 +1,7 @@
 ; A182895: Number of (1,0)-steps at level 0 in all weighted lattice paths in L_n.
-; Submitted by Jon Maiga
+; Submitted by Orange Kid
 ; 0,1,3,7,19,50,130,341,893,2337,6119,16020,41940,109801,287463,752587,1970299,5158310,13504630,35355581,92562113,242330757,634430159,1660959720,4348449000,11384387281,29804712843,78029751247,204284540899
 
-mul $0,2
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-add $0,1
+seq $0,2878 ; Bisection of Lucas sequence: a(n) = L(2*n+1).
+add $0,2
 div $0,4
