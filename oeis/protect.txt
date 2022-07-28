@@ -66,6 +66,7 @@ A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).
 A068503: Highest power of 3 dividing prime(n)-1.
+A069177: Maximal power of 2 that divides Phi(n), or the size of the Sylow 2-subgroup of the group of units mod n.
 A069262: a(n) = 4*prime(n)^2.
 A071986: Parity of the prime-counting function pi(n).
 A072003: 10's complement of final digit of n-th prime.

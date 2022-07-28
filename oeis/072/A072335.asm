@@ -5,11 +5,3 @@
 add $0,2
 seq $0,3500 ; a(n) = 4*a(n-1) - a(n-2) with a(0) = 2, a(1) = 4.
 div $0,12
-mov $1,3
-mul $1,$0
-add $1,2
-add $1,$0
-mov $0,$1
-sub $0,6
-div $0,4
-add $0,1

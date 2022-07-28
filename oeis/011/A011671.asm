@@ -1,26 +1,28 @@
 ; A011671: A binary m-sequence: expansion of reciprocal of x^6+x^5+x^4+x^2+1.
-; Submitted by Groo
+; Submitted by nenym
 ; 0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1
 
+pow $0,3
+mod $0,21
 lpb $0
-  sub $0,1
-  sub $3,$4
-  sub $3,$1
-  add $4,1
-  mov $5,$1
-  mov $6,$4
-  add $8,$1
-  add $1,1
-  add $1,$8
-  add $2,$5
-  add $2,$3
-  mov $4,$2
-  mov $8,$3
-  add $2,$7
-  mov $3,$5
-  mov $7,$6
+  mov $1,1
+  mov $2,1
+  lpb $0
+    add $1,1
+    sub $0,$1
+  lpe
 lpe
-mov $0,$4
-mod $0,2
-add $0,2
-mod $0,2
+seq $0,14313 ; Numbers with exactly 5 ones in binary expansion.
+mov $1,$0
+mul $1,47
+div $1,11
+gcd $2,$1
+div $1,$2
+mov $0,$1
+lpb $1
+  mov $1,1
+  mod $0,10
+  add $1,$0
+  mov $0,$1
+lpe
+div $0,3

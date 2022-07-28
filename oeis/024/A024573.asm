@@ -9,9 +9,9 @@ mul $3,3
 sub $3,$0
 lpb $3
   lpb $3
+    mul $2,$3
     mul $1,$0
     mul $1,-1
-    mul $2,$3
     add $1,$2
     div $1,$0
     add $2,6

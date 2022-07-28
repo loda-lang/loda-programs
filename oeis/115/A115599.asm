@@ -5,6 +5,5 @@
 mov $1,$0
 seq $1,273187 ; a(n) is the third number in a triple consisting of 3 numbers, which when squared are part of a right diagonal of magic square of squares.
 mov $0,$1
-sub $0,99
+add $0,1
 div $0,50
-add $0,2

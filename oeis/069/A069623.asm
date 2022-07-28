@@ -1,6 +1,13 @@
 ; A069623: Number of perfect powers <= n.
-; Submitted by Odd-Rod
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,2,2,2,2,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,7,7,7,7,7,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,13
 
 add $0,1
-seq $0,76411 ; Number of perfect powers < n.
+lpb $0
+  mov $2,$0
+  trn $2,1
+  seq $2,75802 ; Characteristic function of perfect powers, A001597.
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1

@@ -1,7 +1,8 @@
 ; A065201: Numbers having a non-maximal prime-factor with exponent greater than 1.
-; Submitted by Fardringle
+; Submitted by pututu
 ; 12,20,24,28,36,40,44,45,48,52,56,60,63,68,72,76,80,84,88,90,92,96,99,100,104,108,112,116,117,120,124,126,132,135,136,140,144,148,152,153,156,160,164,168,171,172,175,176,180,184,188,189,192,196,198,200
 
+mov $1,8
 mov $2,$0
 add $2,14
 pow $2,2

@@ -1,10 +1,9 @@
 ; A112498: Third column of second-order Eulerian triangle A008517 divided by 2.
-; Submitted by Jamie Morken(w1)
+; Submitted by chordtoll
 ; 3,29,164,726,2805,9975,33630,109424,347519,1085313,3349848,10253994,31203945,94561643,285716018,861472836,2593592883,7800176565,23441423340,70410252350,211411111133,634610819679,1904620987014
 
-mov $1,$0
 mov $3,1
-add $0,1
+mov $1,$0
 add $1,3
 lpb $1
   sub $1,1
@@ -17,4 +16,4 @@ lpb $1
   add $2,$1
   add $2,$1
 lpe
-add $0,2
+add $0,3

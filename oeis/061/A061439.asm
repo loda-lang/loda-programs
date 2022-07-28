@@ -1,9 +1,9 @@
 ; A061439: Largest number whose cube has n digits.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Fardringle
 ; 2,4,9,21,46,99,215,464,999,2154,4641,9999,21544,46415,99999,215443,464158,999999,2154434,4641588,9999999,21544346,46415888,99999999,215443469,464158883,999999999,2154434690,4641588833,9999999999
 
-add $0,1
 mov $1,$0
-seq $1,18005 ; Smallest number whose cube has n digits.
-mov $0,$1
+mov $0,1
+add $0,$1
+seq $0,18005 ; Smallest number whose cube has n digits.
 sub $0,1

@@ -1,13 +1,7 @@
 ; A023590: Greatest prime divisor of 2*prime(n)+1.
-; Submitted by Christian Krause
+; Submitted by Stony666
 ; 5,7,11,5,23,3,7,13,47,59,7,5,83,29,19,107,17,41,5,13,7,53,167,179,13,29,23,43,73,227,17,263,11,31,23,101,7,109,67,347,359,11,383,43,79,19,47,149,13,17,467,479,23,503,103,31,11,181,37,563,7,587,41,89,19,127,17,5,139,233,101,719,7,83,23,59,41,53,73,13,839,281,863,17,293,887,31,61,71,103,17,137,13,983,37,53,1019,149,349,19
 
+seq $0,40 ; The prime numbers.
 mul $0,2
-max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-lpb $0
-  mov $1,$0
-  seq $1,90368 ; a(1) = 1; for n>1, smallest divisor > 1 of 2n-1.
-  div $0,$1
-lpe
-mov $0,$1
+seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

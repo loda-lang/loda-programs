@@ -1,14 +1,11 @@
 ; A078442: a(p) = a(n) + 1 if p is the n-th prime, prime(n); a(n)=0 if n is not prime.
-; Submitted by Fardringle
+; Submitted by Ragnarsdad
 ; 0,1,2,0,3,0,1,0,0,0,4,0,1,0,0,0,2,0,1,0,0,0,1,0,0,0,0,0,1,0,5,0,0,0,0,0,1,0,0,0,2,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,3,0,1,0,0,0,0,0,2,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
 lpb $0
-  mov $2,$0
-  seq $2,49084 ; a(n) = pi(n) if n is prime, otherwise 0.
-  gcd $4,1
-  mov $3,$2
-  sub $3,$4
-  mov $0,$3
-  add $1,$4
+  seq $0,49084 ; a(n) = pi(n) if n is prime, otherwise 0.
+  sub $0,1
+  add $1,169
 lpe
 mov $0,$1
+div $0,169

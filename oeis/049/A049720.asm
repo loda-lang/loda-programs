@@ -1,26 +1,7 @@
 ; A049720: a(n)=T(n,1), array T as in A048149.
-; Submitted by [AF] Kalianthys
+; Submitted by Stony666
 ; 3,4,8,13,19,28,37,48,62,75,92,108,127,150,170,195,218,247,277,304,337,369,406,441,475,518,559,604,646,689,740,786,841,890,945,1001,1052,1115,1173,1236,1299,1360,1428,1497,1568,1638,1707
 
-mov $3,$0
-mov $4,$0
-mul $4,$0
-mov $5,2
-lpb $5
-  mov $0,$4
-  add $0,1
-  lpb $0
-    sub $0,1
-    add $2,2
-    add $2,$0
-    max $1,$2
-    sub $2,$0
-    div $1,$2
-    mod $1,2
-    add $3,$1
-    bin $5,2
-  lpe
-  mul $4,$5
-lpe
-mov $0,$3
+pow $0,2
 add $0,1
+seq $0,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.

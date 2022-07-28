@@ -1,7 +1,28 @@
 ; A010055: 1 if n is a prime power p^k (k >= 0), otherwise 0.
-; Submitted by Conan
+; Submitted by Stony666
 ; 1,1,1,1,1,0,1,1,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
-seq $0,183093 ; a(1) = 0; thereafter, a(n) = number of divisors d of n such that if d = Product_(i) (p_i^e_i) then all e_i <= 1.
-div $0,2
-cmp $0,0
+add $0,1
+mov $1,$0
+sub $1,$0
+mov $2,2
+lpb $0
+  mov $3,$0
+  sub $3,3
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    min $4,1
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    sub $0,$1
+    dif $0,$2
+  lpe
+  mov $1,1
+  cmp $0,1
+lpe
+mov $0,$3
+add $0,3
+mod $0,2
