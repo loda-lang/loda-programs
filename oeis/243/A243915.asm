@@ -1,9 +1,11 @@
 ; A243915: a(n) = sigma(omega(n)).
-; Submitted by fzs600
+; Submitted by NeoGen
 ; 1,1,1,1,3,1,1,1,3,1,3,1,3,3,1,1,3,1,3,3,3,1,3,1,3,1,3,1,4,1,1,3,3,3,3,1,3,3,3,1,4,1,3,3,3,1,3,1,3,3,3,1,3,3,3,3,3,1,4,1,3,3,1,3,4,1,3,3,4,1,3,1,3,3,3,3,4,1,3,1,3,1,4,3,3,3,3,1,4,3,3,3,3,3,3,1,3,3,3,1
 
 add $0,1
 seq $0,83399 ; Number of divisors of n that are not divisors of other divisors of n.
-sub $0,1
-seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+pow $0,2
+mul $0,80
+sub $0,80
+div $0,320
 add $0,1

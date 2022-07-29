@@ -1,27 +1,22 @@
 ; A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
-; Submitted by owensse
+; Submitted by x8CdHfMQ4f
 ; 1,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
 
-mov $2,2
-mov $5,1
 add $0,1
-lpb $0
+mov $2,2
+mov $4,$0
+mov $3,$0
+lpb $3
   mov $3,$0
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
+  mov $5,$4
+  lpb $5
+    mov $1,$0
+    mod $1,$2
+    cmp $1,0
+    div $0,$2
+    sub $3,1
+    sub $5,$1
   lpe
-  sub $1,2
-  lpb $0
-    dif $0,$2
-  lpe
-  mov $5,$1
-  div $5,$2
-  mul $5,-1
   add $2,1
 lpe
-mov $0,$5
+cmp $0,1

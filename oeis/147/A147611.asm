@@ -4,10 +4,10 @@
 
 mov $5,$0
 lpb $5
+  sub $5,1
   sub $3,1
   mov $1,$3
   bin $1,2
-  sub $5,1
   mov $2,$5
   bin $2,2
   mul $1,$2

@@ -1,20 +1,8 @@
 ; A057022: a(n) = floor((sum of divisors of n) / (number of divisors of n)), or floor(sigma_1(n)/sigma_0(n)).
-; Submitted by Christian Krause
+; Submitted by Fardringle
 ; 1,1,2,2,3,3,4,3,4,4,6,4,7,6,6,6,9,6,10,7,8,9,12,7,10,10,10,9,15,9,16,10,12,13,12,10,19,15,14,11,21,12,22,14,13,18,24,12,19,15,18,16,27,15,18,15,20,22,30,14,31,24,17,18,21,18,34,21,24,18,36,16,37,28,20,23,24,21,40,18,24,31,42,18,27,33,30,22,45,19,28,28,32,36,30,21,49,28,26,24
 
-add $0,1
-mov $2,$0
-mov $4,1
-lpb $0
-  mov $3,$2
-  dif $3,$0
-  cmp $3,$2
-  cmp $3,0
-  add $4,$3
-  mul $3,$0
-  sub $0,1
-  add $1,$3
-lpe
-add $1,1
-div $1,$4
-mov $0,$1
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+div $0,$1

@@ -4,8 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  sub $1,1
   seq $2,290255 ; Number of 0's following directly the first 1 in the binary representation of n.
   add $0,$2
+  sub $1,1
 lpe
 add $0,1

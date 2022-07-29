@@ -47,9 +47,11 @@ A039712: a(n) = n-th prime modulo 14.
 A039713: a(n) = n-th prime modulo 15.
 A039714: a(n) = n-th prime modulo 16.
 A039715: Primes modulo 17.
+A040040: Average of twin prime pairs (A014574), divided by 2. Equivalently, 2*a(n)-1 and 2*a(n)+1 are primes.
 A046151: a(n) = n*phi(n) - 1.
 A046152: a(n) = n*phi(n) + 1.
 A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
+A048974: Odd numbers that are the sum of 2 primes.
 A049001: a(n) = prime(n)^2 - 2.
 A049234: Number of divisors of prime(n) + 2.
 A049559: a(n) = gcd(n - 1, phi(n)).
@@ -63,6 +65,7 @@ A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
 A061725: p^2 + 2 where p is a prime.
 A062011: a(n) = 2*tau(n) = 2*A000005(n).
 A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
+A062312: Nonprime numbers squared.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).
 A068503: Highest power of 3 dividing prime(n)-1.
@@ -70,15 +73,19 @@ A069177: Maximal power of 2 that divides Phi(n), or the size of the Sylow 2-subg
 A069262: a(n) = 4*prime(n)^2.
 A071986: Parity of the prime-counting function pi(n).
 A072003: 10's complement of final digit of n-th prime.
+A072055: a(n) = 2*prime(n)+1.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A074372: 1 + the sum of the distinct primes dividing n.
 A074943: tau(n) (mod 3).
 A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
 A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
+A076821: Squares of the differences between consecutive primes.
+A078574: Number of divisors of the average of n-th twin prime pair.
 A079704: a(n) = 2*prime(n)^2.
 A079705: 3p^2 where p runs through the primes.
 A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
+A081667: a(n) = Fibonacci(binomial(n+2,2)).
 A083271: a(n) = n*tau(n) + 1.
 A084300: a(n) = phi(n) mod 6.
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
@@ -89,6 +96,7 @@ A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A089241: Even numbers k such that k/2 - 1 is prime.
+A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
 A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
 A098823: a(n) = 16*(8*prime(n) + 7).
 A099585: Remove all 3s from prime(n) - 1.
@@ -98,6 +106,7 @@ A100484: The primes doubled.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
+A105825: a(n) = sigma(n) (mod 5).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
 A106139: Semiprimes (mod 3).
 A106140: Semiprimes (mod 4).
@@ -110,6 +119,7 @@ A106146: Semiprimes (mod 10).
 A106350: Semiprimes indexed by primes.
 A107115: Three-digit numbers from the decimal expansion of Pi (version 3) -- but see comments.
 A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
+A108605: Semiprimes with prime sum of factors: twice the lesser of the twin prime pairs.
 A109722: Sum of first 2n primes.
 A109763: Primes repeated.
 A113935: a(n) = prime(n) + 3.
@@ -117,6 +127,7 @@ A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
 A121239: Decimal expansion of 10-e.
 A125137: a(n) = p^p + 1, where p = prime(n).
+A127884: a(n) = floor(Fibonacci(n)/n).
 A129069: Numbers n such that (n-3)/2 is prime.
 A129070: Numbers n such that (n-5)/4 is prime.
 A129071: Numbers n such that (n-7)/6 is prime.
@@ -128,6 +139,7 @@ A130614: a(n) = p^(p-2), where p = prime(n).
 A130718: 2*(prime(n)-2)!.
 A131426: a(n) = 2*prime(n) - 3.
 A132227: a(n) = 3*prime(n) - 5.
+A133037: Squares of members of the Padovan sequence A000931.
 A135481: a(n) = 2^A007814(n+1) - 1.
 A135984: a(n) = 24(prime(n))+7.
 A137264: Prime number gaps read modulo 3.
@@ -145,6 +157,7 @@ A139286: a(n) = 2^(2*prime(n) - 1).
 A139287: 2^(2p - 1) - 1, where p is prime.
 A139290: 2^(2p - 1)/4, where p is prime.
 A139293: (2^(2p - 1)/8)-1, where p is prime.
+A140353: a(n) = prime(n) + 9.
 A140475: 1 along with primes greater than 3.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140777: a(n) = 2*prime(n) - 4.
@@ -169,7 +182,10 @@ A175224: a(n) = prime(n) + 8.
 A175225: a(n) = prime(n) + 10.
 A176406: Odd semiprimes minus 2.
 A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent B_1.
+A177882: Trisection of A001317.
+A178064: Number of 0's in binary representation of n-th semiprime.
 A179262: a(n) = 2*prime(n)^2 - 1.
+A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
 A182200: a(n) = prime(n)^2-3.
 A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
@@ -189,8 +205,12 @@ A272027: a(n) = 3*sigma(n).
 A272470: 7 times the primes.
 A274535: a(n) = 5*sigma(n).
 A274536: a(n) = 6 * sigma(n).
+A278568: Twice odd prime powers.
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).
+A306695: a(n) = gcd(n, psi(n)).
 A319089: a(n) = tau(n)^3, where tau is A000005.
 A319528: a(n) = 8 * sigma(n).
 A326122: a(n) = 10 * sigma(n).
+A330410: a(n) = 6*prime(n) - 1.
 A336551: a(n) = A003557(n) - 1.
+A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.

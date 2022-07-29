@@ -1,6 +1,11 @@
 ; A007424: a(n) = 1 if n is squarefree, otherwise 2.
-; Submitted by [TA]crashtech
+; Submitted by Dr Who Fan
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,2,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,2,2
 
-seq $0,46951 ; a(n) is the number of squares dividing n.
-min $0,2
+mov $1,$0
+seq $1,5361 ; Product of exponents of prime factorization of n.
+cmp $1,1
+mov $0,$1
+add $0,1
+mod $0,2
+add $0,1

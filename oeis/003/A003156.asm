@@ -1,9 +1,8 @@
 ; A003156: A self-generating sequence (see Comments for definition).
-; Submitted by Christian Krause
+; Submitted by dkester788
 ; 1,4,5,6,9,12,15,16,17,20,21,22,25,26,27,30,33,36,37,38,41,44,47,48,49,52,55,58,59,60,63,64,65,68,69,70,73,76,79,80,81,84,85,86,89,90,91,94,97,100,101,102,105,106,107,110,111,112,115,118,121,122,123,126,129,132,133,134,137,140,143,144,145,148,149,150,153,154,155,158,161,164,165,166,169,172,175,176,177,180,183,186,187,188,191,192,193,196,197,198
 
-add $0,1
 mov $1,$0
-seq $0,171947 ; P-positions for game of UpMark.
+seq $0,36554 ; Numbers whose binary representation ends in an odd number of zeros.
 sub $0,1
 sub $0,$1

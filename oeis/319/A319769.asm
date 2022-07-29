@@ -1,5 +1,5 @@
 ; A319769: Number of non-isomorphic intersecting set multipartitions (multisets of sets) of weight n whose dual is also an intersecting set multipartition.
-; Submitted by Jamie Morken(w3)
+; Submitted by William Michael Kanar
 ; 1,1,2,3,5,7,12,16,26,38,61
 
 mov $1,1
@@ -19,5 +19,5 @@ lpb $0
   mod $5,$1
   mov $7,$6
 lpe
+add $5,1
 mov $0,$5
-add $0,1

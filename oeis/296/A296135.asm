@@ -1,9 +1,8 @@
 ; A296135: {0->01}-transform of the Fibonacci word A003849.
-; Submitted by Orange Kid
+; Submitted by arkiss
 ; 0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1
 
 seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-lpb $0
-  mov $0,2
-lpe
-sub $0,1
+cmp $0,1
+add $0,1
+mod $0,2

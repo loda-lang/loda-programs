@@ -1,36 +1,9 @@
 ; A306695: a(n) = gcd(n, psi(n)).
-; Submitted by Christian Krause
+; Submitted by Stony666
 ; 1,1,1,2,1,6,1,4,3,2,1,12,1,2,3,8,1,18,1,4,1,2,1,24,5,2,9,4,1,6,1,16,3,2,1,36,1,2,1,8,1,6,1,4,9,2,1,48,7,10,3,4,1,54,1,8,1,2,1,12,1,2,3,32,1,6,1,4,3,2,1,72,1,2,15,4,1,6,1,16,27,2,1,12,1,2,3,8,1,18,7,4,1,2,5,96,1,14,9,20
 
+mov $1,$0
 add $0,1
-mov $1,1
-mov $8,$0
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $2,1
-    max $4,$5
-    sub $3,$4
-    mov $7,$8
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-  lpe
-  dif $5,$2
-  add $2,1
-  mul $1,$5
-  mul $1,$2
-lpe
-gcd $7,$1
-mov $0,$7
+seq $1,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+gcd $1,$0
+mov $0,$1

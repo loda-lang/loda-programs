@@ -1,5 +1,5 @@
 ; A178598: a(n) is the smallest integer such that the geometric mean of the first n terms is >= n.
-; Submitted by jmorken
+; Submitted by shiva
 ; 1,4,7,10,12,14,18,20,23,26,29,31,34,36,40,42,45,47,50,53,56,59,61,64,66,69,72,75,78,80,83,85,89,91,93,97,99,102,105,107,110,113,115,119,121,123,127,129,132,134,137,140,143,145,149,150,154,156,159,162,165,167
 
 mov $1,1
@@ -15,5 +15,5 @@ lpb $0
   add $2,1
   mov $3,$2
 lpe
+add $4,1
 mov $0,$4
-add $0,1

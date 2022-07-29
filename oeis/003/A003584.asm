@@ -1,5 +1,5 @@
 ; A003584: Unicursal (i.e., possessing an Eulerian path) planar rooted maps with n edges.
-; Submitted by pututu
+; Submitted by GolfSierra
 ; 1,2,9,52,336,2304,16368,118976,878592,6562816,49447424,375072768,2860343296,21909012480,168425533440,1298753372160,10041201131520,77809145610240,604138825973760,4698956908462080,36604934482821120
 
 mov $1,$0
@@ -22,6 +22,4 @@ lpb $0
   add $5,$3
 lpe
 mov $0,$5
-sub $0,2
 div $0,2
-add $0,1

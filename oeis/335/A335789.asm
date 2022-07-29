@@ -8,9 +8,9 @@ mul $2,32400
 sub $2,2
 mul $2,2
 lpb $2
-  add $1,3
   sub $2,32
   trn $2,1
+  add $1,3
 lpe
 sub $1,5892
 div $1,3

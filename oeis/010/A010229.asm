@@ -1,6 +1,7 @@
 ; A010229: Continued fraction for sqrt(187).
+; Submitted by Simon Strandgaard
 ; 13,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13,2,1,26,1,2,13
 
-seq $0,10144 ; Continued fraction for sqrt(59).
-seq $0,188190 ; Positions of 0 in A188189; complement of A188191.
-sub $0,2
+seq $0,10179 ; Continued fraction for sqrt(114).
+mul $0,4
+div $0,3

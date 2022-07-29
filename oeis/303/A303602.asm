@@ -1,9 +1,10 @@
 ; A303602: a(n) = Sum_{k = 0..n} k*binomial(2*n+1, k).
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,3,25,154,837,4246,20618,97140,447661,2028478,9070110,40122028,175913250,765561564,3310623412,14238676712,60949133949,259809601870,1103420316566,4670886541308,19714134528598,82985455688276,348481959315660,1460179866076504,6106070639175122
 
 mul $0,2
 mov $1,$0
-seq $1,307768 ; Number of n-step random walks on a line starting from the origin and returning to it at least once.
-add $0,1
+add $1,1
+seq $0,45621 ; a(n) = 2^n - binomial(n, floor(n/2)).
 mul $0,$1
 div $0,2

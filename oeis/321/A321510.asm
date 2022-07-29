@@ -1,15 +1,11 @@
 ; A321510: Primes p for which there exists a prime q < p such that 3*q == 1 (mod p).
-; Submitted by Jason Jung
+; Submitted by Odd-Rod
 ; 5,7,19,43,61,79,109,151,163,223,271,349,421,439,523,601,613,631,673,691,811,853,919,991,1009,1051,1063,1153,1213,1231,1279,1321,1429,1531,1549,1663,1693,1789,1801,1873,1933,1951,2113,2143,2179,2221,2239,2503,2539,2683,2791,2833,2851
 
 cmp $1,$0
 trn $0,1
-seq $0,255607 ; Numbers n such that both 4*n+1 and 6*n+1 are primes.
-add $0,1
-sub $1,$0
+seq $0,104163 ; Primes p such that (2p+1)/3 is prime.
+div $0,2
 sub $0,$1
 mul $0,2
-add $1,$0
-mov $0,$1
-mul $0,2
-sub $0,5
+add $0,1

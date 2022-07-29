@@ -1,22 +1,8 @@
 ; A165829: Totally multiplicative sequence with a(p) = 8.
-; Submitted by Simon Strandgaard
+; Submitted by LCB001
 ; 1,8,8,64,8,64,8,512,64,64,8,512,8,64,64,4096,8,512,8,512,64,64,8,4096,64,64,512,512,8,512,8,32768,64,64,64,4096,8,64,64,4096,8,512,8,512,512,64,8,32768,64,512,64,512,8,4096,64,4096,64,64,8,4096,8,64,512,262144,64,512,8,512,64,512,8,32768,8,64,512,512,64,512,8,32768,4096,64,8,4096,64,64,64,4096,8,4096,64,512,64,64,64,262144,8,512,512,4096
 
-mov $1,1
-mov $2,2
-mov $4,1
-add $0,1
-lpb $0
-  mul $1,$4
-  mov $3,$0
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $4,8
-  div $0,$2
-lpe
-add $0,$1
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+mov $1,8
+pow $1,$0
+mov $0,$1

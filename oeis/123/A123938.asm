@@ -1,5 +1,5 @@
 ; A123938: Ramsey number r(K_{2,2}, K_{2,n}).
-; Submitted by BarnardsStern
+; Submitted by owensse
 ; 4,6,8,9,11,12,14,15,16,17,18,20,22
 
 mov $2,1
@@ -18,6 +18,5 @@ lpb $0
   add $2,1
 lpe
 mov $0,$4
-sub $0,8
 div $0,3
-add $0,4
+add $0,2

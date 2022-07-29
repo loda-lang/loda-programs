@@ -1,7 +1,8 @@
 ; A302697: Odd numbers whose prime indices are relatively prime. Heinz numbers of integer partitions with no 1's and with relatively prime parts.
-; Submitted by Gunnar Hjern
+; Submitted by William Michael Kanar
 ; 15,33,35,45,51,55,69,75,77,85,93,95,99,105,119,123,135,141,143,145,153,155,161,165,175,177,187,195,201,205,207,209,215,217,219,221,225,231,245,249,253,255,265,275,279,285,287,291,295,297,309,315,323,327,329
 
+mov $1,2
 mov $2,$0
 add $2,11
 pow $2,2

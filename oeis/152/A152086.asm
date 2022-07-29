@@ -3,13 +3,13 @@
 ; 1,3,8,21,52,126,296,685,1556,3498,7768
 
 add $0,1
-mov $3,$0
+mov $1,$0
 seq $0,152548 ; Sum of squared terms in rows of triangle A152547: a(n) = Sum_{k=0..C(n,[n/2])-1} A152547(n,k)^2.
 mul $0,-1
 mov $2,2
-pow $2,$3
+pow $2,$1
 add $0,$2
-add $3,1
-mul $2,$3
+add $1,1
+mul $2,$1
 add $0,$2
 div $0,2

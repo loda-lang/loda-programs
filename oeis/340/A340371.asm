@@ -1,10 +1,22 @@
 ; A340371: a(n) = 1 if the odd part of n is noncomposite, 0 otherwise.
+; Submitted by Jason Jung
 ; 1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,0,0,1,1,0,1,1,0,1,1,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,0,1,1,0,0,0
 
+mov $2,2
+add $0,1
 lpb $0
-  mul $0,2
-  sub $0,2
-  dif $0,4
+  mov $3,$0
+  sub $3,8
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    add $2,1
+    sub $3,$1
+  lpe
+  lpb $0
+    dif $0,$2
+  lpe
 lpe
-seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
-cmp $0,1
+mov $0,$2
+add $0,1
+mod $0,2

@@ -1,8 +1,8 @@
 ; A338595: Denominators of resistance values < 1 ohm that can be obtained from a network of exactly 5 one-ohm resistors, but not from any network with fewer than 5 one-ohm resistors. Numerators are in A338580.
+; Submitted by arkiss
 ; 5,7,8,7,7,8,7,5,6,7
 
-mul $0,3
-mov $2,$0
+mul $0,6
 lpb $0
   add $2,$0
   mov $3,$2

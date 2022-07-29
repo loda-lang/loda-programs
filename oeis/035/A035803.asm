@@ -1,5 +1,5 @@
 ; A035803: Coordination sequence for lattice D*_36 (with edges defined by l_1 norm = 1).
-; Submitted by Jamie Morken(w1)
+; Submitted by STE\/E
 ; 1,72,2592,62232,1121472,16186536,194986080,2017132920,18300435840,147972367880,1080041397408,7190430174936,44042615547456,250012542410856,1323529602867936,6569619630522168,30721376739859200
 
 add $0,2
@@ -8,11 +8,11 @@ lpb $0
   sub $0,2
   add $2,33
   bin $2,$0
-  add $0,1
   mov $3,36
   bin $3,$1
-  add $1,1
   mul $3,$2
   add $4,$3
+  add $0,1
+  add $1,1
 lpe
 mov $0,$4

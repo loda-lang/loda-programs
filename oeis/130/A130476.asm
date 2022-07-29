@@ -1,5 +1,5 @@
 ; A130476: Row sums of triangle A130461.
-; Submitted by dkester788
+; Submitted by arkiss
 ; 1,2,3,5,8,15,28,61,132,325,790,2133,5680,16501
 
 mov $1,1
@@ -16,7 +16,3 @@ lpb $2
   add $1,$0
 lpe
 mov $0,$1
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1

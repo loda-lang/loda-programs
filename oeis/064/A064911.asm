@@ -1,21 +1,6 @@
 ; A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
-; Submitted by vonboedefeldt
+; Submitted by nenym
 ; 0,0,0,1,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0
 
-mov $2,2
-add $0,1
-lpb $0
-  add $1,10
-  div $1,2
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  div $0,$2
-lpe
-mov $0,$1
-sub $0,1
-mod $0,2
+seq $0,73093 ; Number of prime power divisors of n.
+cmp $0,3

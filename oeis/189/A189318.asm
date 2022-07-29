@@ -1,7 +1,15 @@
 ; A189318: Expansion of 5*(1-2*x)/(1-3*x-2*x^2+4*x^3)
-; Submitted by Jason Jung
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 5,5,25,65,225,705,2305,7425,24065,77825,251905,815105,2637825,8536065,27623425,89391105,289275905,936116225,3029336065,9803137025,31723618305,102659784705,332214042625,1075067224065,3478990618625,11258250133505
 
-seq $0,14335 ; Exponential convolution of Fibonacci numbers with themselves (divided by 2).
-mul $0,20
-add $0,5
+mov $3,2
+lpb $0
+  sub $0,1
+  mov $2,$3
+  mul $2,5
+  add $3,$1
+  add $1,$2
+lpe
+mov $0,$3
+mul $0,2
+add $0,1

@@ -7,12 +7,12 @@ mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
-  sub $0,1
   cmp $3,$2
-  mul $2,2
   sub $3,$1
-  mov $1,$0
   add $3,2
+  sub $0,1
+  mov $1,$0
+  mul $2,2
   trn $4,3
   add $4,4
   sub $4,$3

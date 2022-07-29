@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,23531 ; a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.
   add $0,$3
   trn $0,3
+  seq $2,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
+  cmp $2,0
   add $1,$2
   sub $3,1
 lpe

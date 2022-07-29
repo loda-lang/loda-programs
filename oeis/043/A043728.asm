@@ -1,8 +1,8 @@
 ; A043728: Numbers n such that number of runs in the base 2 representation of n is congruent to 0 mod 5.
-; Submitted by Dacicus Geometricus
+; Submitted by Orange Kid
 ; 21,37,41,43,45,53,69,73,75,77,81,83,87,89,91,93,101,105,107,109,117,133,137,139,141,145,147,151,153,155,157,161,163,167,175,177,179,183,185,187,189,197,201,203,205,209,211,215,217
 
-mov $1,5
+mov $1,21
 mov $2,$0
 add $2,11
 pow $2,2
@@ -13,10 +13,10 @@ lpb $2
   mul $3,5
   cmp $3,5
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,2
   mul $2,$4
   sub $2,1
 lpe

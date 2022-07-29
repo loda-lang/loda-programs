@@ -4,5 +4,4 @@
 
 mul $0,2
 seq $0,136485 ; Number of unit square lattice cells enclosed by origin centered circle of diameter n.
-div $0,4
-mul $0,2
+div $0,2

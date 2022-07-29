@@ -4,8 +4,7 @@
 
 mov $2,$0
 add $2,2
-mul $2,3
-pow $2,2
+pow $2,4
 lpb $2
   mov $3,$1
   seq $3,225693 ; Alternating sum of digits of n.

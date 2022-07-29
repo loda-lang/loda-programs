@@ -1,5 +1,7 @@
 ; A043739: Number of runs in the base 2 representation of n is congruent to 0 mod 7.
-; Submitted by Fardringle
+; Submitted by Christian Krause
 ; 85,149,165,169,171,173,181,213,277,293,297,299,301,309,325,329,331,333,337,339,343,345,347,349,357,361,363,365,373,405,421,425,427,429,437,469,533,549,553,555,557,565,581,585,587,589,593,595,599,601,603,605,613,617,619,621,629,645,649,651,653,657,659,663,665,667,669,673,675,679,687,689,691,695,697,699,701,709,713,715,717,721,723,727,729,731,733,741,745,747,749,757,789,805,809,811,813,821,837,841
 
-seq $0,43761 ; Number of runs in the base 2 representation of n is congruent to 7 mod 9.
+mov $1,$0
+seq $1,43574 ; Numbers whose base-2 representation has exactly 7 runs.
+mov $0,$1

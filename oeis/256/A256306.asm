@@ -6,10 +6,10 @@ bin $2,$0
 mov $3,1
 lpb $0
   mov $2,$0
-  div $0,6
   add $2,7
   mod $2,6
   mul $2,$3
+  div $0,6
   add $1,$2
   mov $2,$1
   mul $3,10

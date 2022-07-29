@@ -1,8 +1,13 @@
 ; A095345: a(n) is the length of the n-th run in A095346.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1
 
-seq $0,108103 ; Fixed point of the square of the morphism: 1->3, 2->1, 3->121, starting with 1.
-div $0,3
-mul $0,2
+lpb $0
+  trn $0,1
+  seq $0,95346 ; a(n) is the length of the n-th run of A095345.
+  sub $0,1
+  mov $1,$0
+  mov $0,1
+lpe
+mov $0,$1
 add $0,1

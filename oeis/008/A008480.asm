@@ -1,5 +1,5 @@
 ; A008480: Number of ordered prime factorizations of n.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by pututu
 ; 1,1,1,1,1,2,1,1,1,2,1,3,1,2,2,1,1,3,1,3,2,2,1,4,1,2,1,3,1,6,1,1,2,2,2,6,1,2,2,4,1,6,1,3,3,2,1,5,1,3,2,3,1,4,2,4,2,2,1,12,1,2,3,1,2,6,1,3,2,6,1,10,1,2,3,3,2,6,1,5,1,2,1,12,2,2,2,4,1,12,2,3,2,2,2,6,1,3,3,6
 
 mov $1,1
@@ -8,7 +8,6 @@ lpb $0
   mov $3,$0
   lpb $3
     cmp $6,0
-    trn $7,1
     add $2,$6
     mov $4,$0
     mod $4,$2

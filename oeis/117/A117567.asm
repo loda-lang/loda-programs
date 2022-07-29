@@ -1,9 +1,13 @@
 ; A117567: Riordan array ((1+x^2)/(1-x^3),x).
-; Submitted by Jamie Morken(s2)
+; Submitted by pututu
 ; 1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1
 
-dif $0,19
-seq $0,212012 ; Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
-mod $0,3
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+mod $1,3
+mov $0,$1
 add $0,1
 mod $0,2

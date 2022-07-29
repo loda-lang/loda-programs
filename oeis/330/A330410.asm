@@ -1,23 +1,7 @@
 ; A330410: a(n) = 6*prime(n) - 1.
-; Submitted by Gunnar Hjern
+; Submitted by Coleslaw
 ; 11,17,29,41,65,77,101,113,137,173,185,221,245,257,281,317,353,365,401,425,437,473,497,533,581,605,617,641,653,677,761,785,821,833,893,905,941,977,1001,1037,1073,1085,1145,1157,1181,1193,1265,1337,1361,1373,1397,1433,1445
 
-sub $0,3
-mov $2,8
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,2
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
-lpe
-sub $4,$0
-mul $4,2
-mov $0,$2
-sub $0,$4
-sub $0,1
-max $0,2
+seq $0,40 ; The prime numbers.
 mul $0,6
 sub $0,1

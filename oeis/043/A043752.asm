@@ -1,8 +1,8 @@
 ; A043752: Numbers n such that number of runs in the base 2 representation of n is congruent to 6 mod 8.
-; Submitted by UBT - Mikeejones
+; Submitted by nenym
 ; 42,74,82,84,86,90,106,138,146,148,150,154,162,164,166,168,172,174,178,180,182,186,202,210,212,214,218,234,266,274,276,278,282,290,292,294,296,300,302,306,308,310,314,322,324,326,328
 
-mov $1,18
+mov $1,19
 mov $2,$0
 add $2,11
 pow $2,2
@@ -16,7 +16,7 @@ lpb $2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,1
+  add $1,$4
   mul $2,$4
   sub $2,1
 lpe

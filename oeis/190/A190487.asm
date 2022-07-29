@@ -1,10 +1,10 @@
 ; A190487: a(n) = [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(2),3,0) and []=floor.
-; Submitted by Cruncher Pete
+; Submitted by pututu
 ; 1,2,0,1,0,1,2,0,2,0,1,2,1,2,0,1,0,1,2,0,2,0,1,2,1,2,0,1,0,1,2,0,2,0,1,2,0,2,0,1,2,1,2,0,1,0,1,2,0,2,0,1,2,1,2,0,1,0,1,2,0,2,0,1,2,1,2,0,1,2,1,2,0,1,0,1,2,0,2,0,1,2,1,2,0,1,0,1,2,0,2,0,1,2,1,2,0,1,0,1
 
 add $0,1
-mul $0,3
-seq $0,188039 ; Positions of 0 in A188038; complement of A188040.
-mul $0,2
-add $0,8
-mod $0,3
+mov $1,$0
+mul $1,3
+seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mod $1,3
+mov $0,$1

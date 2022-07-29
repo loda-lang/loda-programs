@@ -1,4 +1,4 @@
-; A167231: Append three digits, each increasing by one modulo 10 from the last digit the of the positive integers. 0 -> 123, 1 -> 1234 2 -> 2345, ... , 9 -> 9012, 10 ->10123, etc.
+; A167231: Append three digits, each increasing by one modulo 10 from the last digit the of the nonnegative integers. 0 -> 123, 1 -> 1234 2 -> 2345, ... , 9 -> 9012, 10 -> 10123, etc.
 ; Submitted by [SG]FX
 ; 123,1234,2345,3456,4567,5678,6789,7890,8901,9012,10123,11234,12345,13456,14567,15678,16789,17890,18901,19012,20123,21234,22345,23456,24567,25678,26789,27890,28901,29012,30123,31234,32345,33456,34567,35678,36789,37890,38901
 

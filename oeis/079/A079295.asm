@@ -1,9 +1,12 @@
 ; A079295: (D(p)-6)/(12p) where D(p) denotes the denominator of the 2p-th Bernoulli number and p runs through the primes.
-; Submitted by http://asterion.petrsu.ru/
+; Submitted by Stony666
 ; 1,1,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0
 
 seq $0,40 ; The prime numbers.
-seq $0,193773 ; Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
-mov $1,1
-div $1,$0
-mov $0,$1
+sub $0,1
+seq $0,67849 ; a(n) = max{k: f(n),...,f^k(n) are prime}, where f(m) = 2m+1 and f^k denotes composition of f with itself k times.
+add $0,1
+lpb $0
+  mov $0,2
+lpe
+sub $0,1

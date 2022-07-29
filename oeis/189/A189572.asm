@@ -1,5 +1,9 @@
 ; A189572: Fixed point of the morphism 0->01, 1->001.
+; Submitted by Roadranner
 ; 0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0
 
-seq $0,270226 ; a(n) is the number of terms in the n-th block of consecutive integers of A136119.
-div $0,3
+cmp $1,$0
+trn $0,1
+seq $0,1030 ; Fixed under 1 -> 21, 2 -> 211.
+sub $0,1
+sub $0,$1

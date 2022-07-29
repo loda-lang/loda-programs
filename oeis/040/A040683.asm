@@ -1,16 +1,6 @@
 ; A040683: Continued fraction for sqrt(710).
-; Submitted by Jamie Morken(s3.)
+; Submitted by Simon Strandgaard
 ; 26,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1,52,1,1,1,4,1,1,1
 
-mov $1,126
-mov $2,$0
-dif $2,2
-lpb $0
-  mov $0,0
-  mov $1,4
-  gcd $1,$2
-  pow $1,4
-lpe
-div $1,5
-mov $0,$1
-add $0,1
+dif $0,2
+seq $0,40693 ; Continued fraction for sqrt(720).

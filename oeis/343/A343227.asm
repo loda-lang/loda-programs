@@ -4,6 +4,7 @@
 
 mov $1,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $1,211991 ; Difference between the arithmetic derivative of n and the sum of proper divisors of n.
+add $1,1
+seq $1,129283 ; (Arithmetic derivative of n) + n.
 gcd $1,$0
 div $0,$1

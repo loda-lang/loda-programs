@@ -1,8 +1,22 @@
 ; A348044: The nearest common ancestor of n and n^2 in the Doudna tree (A005940).
-; Submitted by Jon Maiga
+; Submitted by arkiss
 ; 1,2,2,4,2,2,2,8,4,2,2,2,2,2,2,16,2,4,2,2,2,2,2,2,4,2,8,2,2,2,2,32,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,4,4,2,2,2,8,2,2,2,2,2,2,2,2,2,64,2,2,2,2,2,2,2,4,2,2,4,2,2,2,2,2,16,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,2,4
 
-seq $0,71178 ; Exponent of the largest prime factor of n.
-mov $1,2
-pow $1,$0
+mov $1,1
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    min $1,1
+    add $2,1
+    sub $3,$1
+  lpe
+  lpb $0
+    dif $0,$2
+    mul $1,2
+  lpe
+lpe
 mov $0,$1

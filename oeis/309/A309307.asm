@@ -1,7 +1,14 @@
 ; A309307: Number of unitary divisors of n (excluding 1).
-; Submitted by PDW
+; Submitted by ChelseaOilman
 ; 0,1,1,1,1,3,1,1,1,3,1,3,1,3,3,1,1,3,1,3,3,3,1,3,1,3,1,3,1,7,1,1,3,3,3,3,1,3,3,3,1,7,1,3,3,3,1,3,1,3,3,3,1,3,3,3,3,3,1,7,1,3,3,1,3,7,1,3,3,7,1,3,1,3,3,3,3,7,1,3,1,3,1,7,3,3,3,3,1,7,3,3,3,3,3,3,1,3,3,3
 
-seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $0,1
+mov $1,3
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+add $0,1
+lpb $0
+  sub $0,1
+  add $1,1
+  mul $1,2
+lpe
+mov $0,$1
+div $0,10

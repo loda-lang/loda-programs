@@ -1,6 +1,10 @@
 ; A153726: Initial digit of Catalan number A000108(n).
+; Submitted by Orange Kid
 ; 1,1,2,5,1,4,1,4,1,4,1,5,2,7,2,9,3,1,4,1,6,2,9,3,1,4,1,6,2,1,3,1,5,2,8,3,1,4,1,6,2,1,3,1,5,2,8,3,1,5,1,7,2,1,4,1,6,2,1,4,1,6,2,9,3,1,5,2,8,3,1,5,2,7,3,1,4,1,7,2,1,4,1,6,2,1,4,1,6,2,1,3,1,6,2,9,3,1,5,2
 
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-mod $0,10
+lpb $0
+  mov $1,$0
+  div $0,10
+lpe
+mov $0,$1

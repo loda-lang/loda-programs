@@ -1,5 +1,5 @@
 ; A354227: Odd numbers whose Collatz trajectory contains exactly 12 odd numbers.
-; Submitted by shiva
+; Submitted by vonboedefeldt
 ; 39,79,153,157,305,307,315,317,611,613,629,631,647,683,687,1221,1229,1241,1257,1261,1265,1269,1295,1353,1367,1369,1375,1505,2445,2453,2481,2483,2489,2507,2515,2517,2521,2525,2531,2545,2589,2593,2633,2705,2707,2733
 
 mov $1,25
@@ -19,7 +19,6 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,58
 div $0,3
 mul $0,2
-add $0,39
+add $0,1

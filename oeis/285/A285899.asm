@@ -1,30 +1,17 @@
 ; A285899: Total number of parts in all partitions of all positive integers <= n into consecutive parts.
+; Submitted by Saenger
 ; 1,2,5,6,9,13,16,17,23,28,31,35,38,43,54,55,58,66,69,75,87,92,95,99,107,112,124,132,135,148,151,152,164,169,184,196,199,204,216,222,225,240,243,252,278,283,286,290,300,310,322,331,334,351,369,377,389,394,397,414,417,422,450,451,469,488,491,500,512,529
 
-mov $6,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$6
-  sub $0,$4
-  add $0,1
-  mov $1,0
-  mov $2,$0
-  mov $7,0
-  lpb $0
-    add $7,1
-    min $0,$7
-    mov $3,$2
-    dif $3,$0
-    cmp $3,$2
-    cmp $3,0
-    mul $3,$0
-    sub $2,$7
-    mov $0,$2
-    add $1,$3
-  lpe
+mov $1,1
+add $0,1
+lpb $0
+  add $2,2
+  mov $3,$0
+  div $3,$1
+  mul $3,$2
+  add $4,$3
+  sub $0,$1
   add $1,1
-  add $5,$1
 lpe
-mov $0,$5
+mov $0,$4
+div $0,2

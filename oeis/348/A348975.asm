@@ -7,5 +7,5 @@ seq $1,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
 sub $1,$0
 add $0,1
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-add $0,$1
 sub $0,1
+add $0,$1

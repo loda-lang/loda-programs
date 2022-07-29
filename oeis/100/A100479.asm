@@ -1,6 +1,7 @@
 ; A100479: Prime(2n-1) + prime(2n).
-; Submitted by ChUcK
+; Submitted by Orange Kid
 ; 5,12,24,36,52,68,84,100,120,138,152,172,198,210,222,258,276,300,320,340,360,384,396,434,456,472,492,520,540,558,576,618,630,668,696,712,740,762,786,810,840,864,882,906,924,946,978,1002,1030,1064,1104,1132
 
 mul $0,2
-seq $0,1043 ; Numbers that are the sum of 2 successive primes.
+seq $0,40 ; The prime numbers.
+seq $0,13634 ; a(n) = nextprime(n) + n.

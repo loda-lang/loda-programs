@@ -1,26 +1,9 @@
 ; A213492: Number of (w,x,y) with all terms in {0,...,n} and w != min(|w-x|,|x-y|,|y-w|).
+; Submitted by Simon Strandgaard
 ; 0,4,18,48,98,178,290,442,640,890,1196,1568,2008,2524,3122,3808,4586,5466,6450,7546,8760,10098,11564,13168,14912,16804,18850,21056,23426,25970,28690,31594,34688,37978,41468,45168,49080,53212,57570
 
 mov $1,$0
-mov $2,$0
-mov $5,$0
-lpb $1
-  sub $1,1
-  mov $3,$0
-  mov $0,1
-  mul $3,$2
-  add $2,$3
-  mov $3,$1
-  trn $3,2
-  mov $1,$3
-  sub $2,$3
-  div $2,2
-lpe
-mul $2,2
-add $1,$2
-mov $0,$1
-mov $4,$5
-mul $4,$5
-add $0,$4
-mul $4,$5
-add $0,$4
+seq $1,213495 ; Number of (w,x,y) with all terms in {0,...,n} and w = min(|w-x|,|x-y|,|y-w|).
+add $0,1
+pow $0,3
+sub $0,$1

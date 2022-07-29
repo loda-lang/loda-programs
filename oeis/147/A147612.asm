@@ -1,7 +1,17 @@
 ; A147612: If n is a Jacobsthal number then 1 else 0.
+; Submitted by x8CdHfMQ4f
 ; 1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mul $0,3
-seq $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
-div $0,3
-cmp $0,0
+mov $1,$0
+add $1,14
+mod $1,4
+mul $0,6
+add $0,$1
+div $0,4
+sub $0,1
+mov $2,2
+mul $2,$0
+add $2,1
+bin $2,$0
+mov $0,$2
+mod $0,2

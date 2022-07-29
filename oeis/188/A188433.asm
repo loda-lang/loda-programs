@@ -4,8 +4,8 @@
 
 mov $1,$0
 lpb $1
-  seq $0,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
   mov $1,2
+  seq $0,188009 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=2, [ ]=floor.
 lpe
 add $0,1
 mod $0,2

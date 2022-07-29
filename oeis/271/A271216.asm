@@ -1,18 +1,9 @@
 ; A271216: a(n) = 2^n floor(n/2)!
-; Submitted by PDW
+; Submitted by Stony666
 ; 1,2,4,8,32,64,384,768,6144,12288,122880,245760,2949120,5898240,82575360,165150720,2642411520,5284823040,95126814720,190253629440,3805072588800
 
-mov $2,1
-mov $3,1
-lpb $0
-  sub $0,1
-  sub $3,$1
-  add $1,$3
-  mul $3,-1
-  add $3,$1
-  mul $3,$2
-  mul $1,2
-  add $2,1
-lpe
-gcd $3,$1
-mov $0,$3
+mov $1,2
+pow $1,$0
+div $0,2
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mul $0,$1

@@ -1,23 +1,18 @@
 ; A332845: a(n) = (-1)^omega(n) * Sum_{k=1..n} (-1)^omega(n/gcd(n, k)), where omega = A001221.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,0,1,2,3,0,5,6,7,0,9,2,11,0,3,14,15,0,17,6,5,0,21,6,23,0,25,10,27,0,29,30,9,0,15,14,35,0,11,18,39,0,41,18,21,0,45,14,47,0,15,22,51,0,27,30,17,0,57,6,59,0,35,62,33,0,65,30,21,0,69,42,71
 
 mov $1,1
+mov $2,2
 add $0,1
 lpb $0
   mov $3,$0
+  sub $3,1
   lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
+    min $4,1
     add $2,1
-    max $4,$5
     sub $3,$4
   lpe
   mov $5,1
@@ -28,4 +23,4 @@ lpb $0
   sub $5,2
   mul $1,$5
 lpe
-mov $0,$1
+mul $0,$1

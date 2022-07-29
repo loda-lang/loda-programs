@@ -1,5 +1,5 @@
 ; A350292: Triangle read by rows: the n-th row gives the saturated vertex Turán numbers for the cube graph Q_n.
-; Submitted by ckaz
+; Submitted by Jason Jung
 ; 1,2,1,6,3,1,12,8,4,1,24,20,10,5,1
 
 lpb $0
@@ -21,6 +21,4 @@ div $1,$0
 mul $1,$3
 add $3,$1
 mov $0,$3
-sub $0,4
 div $0,4
-add $0,1

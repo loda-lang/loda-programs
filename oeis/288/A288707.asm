@@ -1,8 +1,11 @@
 ; A288707: 0-limiting word of the mapping 00->1000, 10->00, starting with 00.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
 
-trn $0,1
-seq $0,108103 ; Fixed point of the square of the morphism: 1->3, 2->1, 3->121, starting with 1.
-sub $0,1
-mod $0,2
+mov $1,-1
+pow $1,$0
+add $1,1
+dif $0,2
+seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
+mul $0,$1
+div $0,2

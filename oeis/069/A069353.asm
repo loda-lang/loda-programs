@@ -1,6 +1,7 @@
 ; A069353: Numbers of form 2^i*3^j - 1 with i, j >= 0.
-; Submitted by vonboedefeldt
+; Submitted by Odd-Rod
 ; 0,1,2,3,5,7,8,11,15,17,23,26,31,35,47,53,63,71,80,95,107,127,143,161,191,215,242,255,287,323,383,431,485,511,575,647,728,767,863,971,1023,1151,1295,1457,1535,1727,1943,2047,2186
 
-seq $0,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
+seq $0,33845 ; Numbers n of the form 2^i*3^j, i and j >= 1.
+div $0,6
 sub $0,1

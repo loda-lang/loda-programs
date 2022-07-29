@@ -1,6 +1,20 @@
 ; A125021: Even numbers with a unique partition as the sum of 2 squares x^2 + y^2.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by arkiss
 ; 0,2,4,8,10,16,18,20,26,32,34,36,40,52,58,64,68,72,74,80,82,90,98,104,106,116,122,128,136,144,146,148,160,162,164,178,180,194,196,202,208,212,218,226,232,234,242,244,256,272,274,288,292,296,298,306,314,320,324,328,346,356,360,362,386,388,392,394,404,416,424,436,452,458,464,466,468,482,484,488,490,512,514,522,538,544,548,554,562,576,584,586,592,596,612,626,628,634,640,648
 
-seq $0,125022 ; Numbers with a unique partition as the sum of 2 squares x^2 + y^2.
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,161 ; Number of partitions of n into 2 squares.
+  cmp $3,1
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
 mul $0,2
