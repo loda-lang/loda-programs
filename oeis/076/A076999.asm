@@ -1,0 +1,13 @@
+; A076999: a(1) = 1, a(n+1) is the largest Fibonacci number <= n*a(n).
+; Submitted by Orange Kid
+; 1,1,2,5,13,55,233,1597,10946,75025,514229,3524578,39088169,433494437,4807526976,53316291173,591286729879,6557470319842,117669030460994,2111485077978050,37889062373143906,679891637638612258
+
+add $0,1
+lpb $0
+  sub $0,1
+  mul $2,$1
+  trn $2,1
+  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
+  add $1,1
+lpe
+mov $0,$2

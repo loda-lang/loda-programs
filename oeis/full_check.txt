@@ -1,6 +1,7 @@
 A000161: Number of partitions of n into 2 squares.
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000572: A Beatty sequence: [ n(e+1) ].
+A001222: Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 A001956: Beatty sequence of (5+sqrt(13))/2.
