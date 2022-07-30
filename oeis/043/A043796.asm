@@ -5,8 +5,7 @@
 mov $2,$0
 add $0,1
 mov $1,91
-mul $2,2
-pow $2,2
+pow $2,6
 lpb $2
   mov $3,$1
   seq $3,43555 ; Number of runs in base-3 representation of n.

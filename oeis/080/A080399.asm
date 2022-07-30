@@ -4,4 +4,5 @@
 
 seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
 sub $0,1
-seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+seq $0,76618 ; Least x>1 such that x^d == 1 (mod d) for each divisor d of n.
+sub $0,1

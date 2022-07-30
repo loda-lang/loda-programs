@@ -1,15 +1,10 @@
 ; A180144: Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 - 2*x^2)/(1 - 4*x + x^2 + 2*x^3).
-; Submitted by Arkhenia
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,4,13,46,163,580,2065,7354,26191,93280,332221,1183222,4214107,15008764,53454505,190381042,678052135,2414918488,8600859733,30632416174,109098967987,388561736308,1383883144897,4928772907306
 
-mov $1,1
-mov $2,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mul $1,2
-  sub $2,1
-  mul $2,-1
-  add $2,$1
-lpe
-mov $0,$2
+mov $1,$0
+seq $1,7483 ; a(n) = 3*a(n-1) + 2*a(n-2), with a(0)=1, a(1)=5.
+mov $0,$1
+div $0,4
+mul $0,3
+add $0,1

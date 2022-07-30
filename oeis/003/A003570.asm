@@ -1,10 +1,23 @@
 ; A003570: a(n) = least positive number m such that 8^m == +1 or -1 mod 2n + 1, with a(0) = 0 by convention.
-; Submitted by Fornax
+; Submitted by pututu
 ; 0,1,2,1,1,5,2,4,4,3,2,11,10,3,14,5,5,4,6,4,10,7,4,23,7,8,26,20,3,29,10,2,2,11,22,35,3,20,10,13,9,41,8,28,11,4,10,12,8,5,50,17,4,53,6,12,14,44,4,8,55,20,50,7,7,65,6,12,34,23,46,20,14,14,74,5,8,20,26,52,11,27,20,83
 
-pow $1,$0
-gcd $1,2
-seq $0,3558 ; Least number m > 0 such that 2^m == +-1 (mod 2n + 1).
-dif $0,3
-sub $0,2
-add $0,$1
+mul $0,2
+add $0,1
+mov $1,1
+mov $3,$0
+lpb $3
+  sub $3,2
+  lpb $1
+    mov $2,8
+    pow $2,$1
+    add $2,2
+    mod $2,$0
+    dif $2,3
+    mul $2,$1
+    gcd $3,12
+    sub $1,$2
+  lpe
+  add $1,1
+lpe
+mov $0,$2

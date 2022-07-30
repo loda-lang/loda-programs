@@ -2,9 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,3,5,14,139,537963,1005095210669462420559310863604
 
-sub $0,1
 mov $1,1
 mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $2,$5

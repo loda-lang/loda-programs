@@ -13,6 +13,7 @@ lpb $0
     add $2,1
     sub $3,$1
   lpe
+  pow $2,4
   lpb $0
     dif $0,$2
   lpe

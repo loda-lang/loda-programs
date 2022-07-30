@@ -4,6 +4,5 @@
 
 mov $1,$0
 seq $0,39701 ; a(n) = n-th prime modulo 3.
-add $1,$0
-mov $0,$1
+add $0,$1
 mod $0,10

@@ -1,10 +1,10 @@
 ; A143278: Convolution of A006352 and A010815.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,-25,-49,0,0,121,0,169,0,0,0,0,-289,0,0,-361,0,0,0,0,0,0,529,0,0,0,625,0,0,0,0,0,0,0,0,-841,0,0,0,0,-961,0,0,0,0,0,0,0,0,0,0,1225,0,0,0,0,0,1369,0,0,0,0,0,0,0,0,0,0,0,0,-1681,0,0,0,0,0,0,-1849,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-seq $0,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
-mul $1,3
-mul $1,$0
-mul $1,8
-add $0,$1
+seq $0,116916 ; Expansion of q^(-1/8) * (eta(q)^3 + 3 * eta(q^9)^3) in powers of q^3.
+gcd $1,$0
+pow $1,2
+mod $0,3
+mul $0,$1
+dif $0,-2

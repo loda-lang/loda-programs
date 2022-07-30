@@ -4,7 +4,7 @@
 
 mov $1,26
 mov $2,$0
-add $2,24
+add $2,23
 lpb $2
   mov $3,$1
   seq $3,43557 ; Number of runs in base-5 representation of n.

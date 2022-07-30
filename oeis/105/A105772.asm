@@ -1,17 +1,21 @@
 ; A105772: Numbers k such that 7*k + 2 is prime.
-; Submitted by [AF] Kalianthys
+; Submitted by William Michael Kanar
 ; 0,3,5,11,15,21,23,27,33,45,47,51,53,57,63,65,71,77,81,93,101,107,117,123,125,131,135,147,155,161,167,173,183,185,195,197,201,203,207,213,221,231,251,255,257,267,273,285,287,291,293,297,305,311,315,317,333,335,341,345,351,353,363,365,383,387,393,395,405,407,411,423,431,437,441,455,461,465,467,471,473,495,513,515,525,527,531,533,537,543,561,563,573,575,587,591,593,621,623,627
 
 add $0,1
 mov $2,1
-mov $1,$0
-pow $1,5
-lpb $1
-  mov $3,$2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  sub $1,$0
-  add $2,7
+mov $4,7
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,14
+  sub $0,$1
+  add $2,$4
+  trn $4,$3
+  sub $3,$0
 lpe
 mov $0,$2
-div $0,7
+mul $0,4
+div $0,28

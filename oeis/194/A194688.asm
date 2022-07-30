@@ -1,5 +1,5 @@
 ; A194688: First differences of A036554 (numbers whose binary representation ends in an odd number of zeros).
-; Submitted by Stony666
+; Submitted by Orange Kid
 ; 4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4
 
 mov $2,2
@@ -13,8 +13,7 @@ lpb $0
   bin $3,$2
   add $3,$1
   gcd $3,4
+  mul $1,2
   mul $2,$3
-  div $3,2
 lpe
-mul $3,2
 mov $0,$3

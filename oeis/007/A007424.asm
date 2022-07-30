@@ -1,11 +1,9 @@
 ; A007424: a(n) = 1 if n is squarefree, otherwise 2.
-; Submitted by Dr Who Fan
+; Submitted by Conan
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,2,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,2,2
 
-mov $1,$0
-seq $1,5361 ; Product of exponents of prime factorization of n.
-cmp $1,1
+seq $0,5361 ; Product of exponents of prime factorization of n.
+mov $1,1
+mod $1,$0
 mov $0,$1
-add $0,1
-mod $0,2
 add $0,1

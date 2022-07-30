@@ -1,9 +1,7 @@
 ; A195573: Hypotenuses of primitive Pythagorean triples in A195571 and A195572.
-; Submitted by Orange Kid
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,41,61,101,4181,6221,10301,426421,634481,1050601,43490761,64710841,107151001,4435631201,6599871301,10928351501,452390891741,673122161861,1114584702101,46139435326381,68651860638521,113676711262801
 
 seq $0,257765 ; Positive integers whose square is the sum of 26 consecutive squares.
 dif $0,5
-sub $0,39
 div $0,39
-add $0,1

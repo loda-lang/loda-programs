@@ -5,7 +5,6 @@
 add $0,1
 mov $1,8
 mov $2,$0
-add $2,2
 pow $2,4
 lpb $2
   sub $5,1
@@ -22,8 +21,6 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,24
-div $0,4
-mul $0,2
-div $0,4
+sub $0,23
+div $0,8
 add $0,2

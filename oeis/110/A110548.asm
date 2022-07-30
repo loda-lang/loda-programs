@@ -1,4 +1,5 @@
 ; A110548: One of the three ordered sets of positive integers that solves the minimal magic die puzzle.
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,25,43
 
 mov $2,$0
@@ -12,9 +13,9 @@ lpb $0
   mov $4,$5
   mov $5,$3
   mov $6,1
-  add $6,$4
-  add $6,2
 lpe
+add $6,$4
+add $6,2
 mov $1,4
 add $1,$6
 add $1,$3

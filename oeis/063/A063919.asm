@@ -4,7 +4,7 @@
 
 mov $2,$0
 seq $2,34460 ; a(n) = usigma(n) - n, where usigma(n) = sum of unitary divisors of n (A034448).
-mov $3,$2
-cmp $3,0
-add $2,$3
+mov $1,$2
+cmp $1,0
+add $2,$1
 mov $0,$2

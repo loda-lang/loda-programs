@@ -5,6 +5,5 @@
 add $0,49
 seq $0,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
 seq $0,145850 ; a(n) = A145818(2n-1).
-div $0,16
-mul $0,2
+div $0,8
 sub $0,518827

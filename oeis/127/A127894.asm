@@ -10,8 +10,8 @@ lpe
 sub $2,1
 sub $0,$2
 mul $1,2
-sub $2,$0
 sub $2,2
+sub $2,$0
 sub $2,$1
 add $0,$2
 mov $1,$2

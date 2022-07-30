@@ -6,9 +6,9 @@ mul $1,$0
 mul $1,44
 lpb $0
   lpb $1
-    div $0,2
     sub $1,480
-    gcd $1,$2
+    gcd $1,0
+    div $0,2
   lpe
 lpe
 div $1,8

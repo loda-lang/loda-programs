@@ -1,19 +1,11 @@
 ; A138929: Twice the prime powers A000961.
-; Submitted by Simon Strandgaard
+; Submitted by Orange Kid
 ; 2,4,6,8,10,14,16,18,22,26,32,34,38,46,50,54,58,62,64,74,82,86,94,98,106,118,122,128,134,142,146,158,162,166,178,194,202,206,214,218,226,242,250,254,256,262,274,278,298,302,314,326,334,338,346,358,362,382
 
-mov $2,2
-mov $3,$0
-sub $0,1
-pow $3,5
-lpb $3
-  mov $1,$2
-  seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
-  sub $0,$1
-  add $2,1
-  sub $3,$0
+mov $1,1
+lpb $0
+  sub $0,1
+  seq $1,15 ; Smallest prime power >= n.
 lpe
-pow $2,$0
-mov $0,$2
+mov $0,$1
 mul $0,2
-add $0,2

@@ -122,6 +122,7 @@ A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 A108605: Semiprimes with prime sum of factors: twice the lesser of the twin prime pairs.
 A109722: Sum of first 2n primes.
 A109763: Primes repeated.
+A110833: a(n) = (prime(n)+1)^2.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
@@ -148,6 +149,7 @@ A137521: Prime numbers concatenated with 45.
 A137664: a(n) = (p+1)^p - 1 where p = prime(n).
 A137807: Final digit of prime(n)^2.
 A137831: (Prime(n)^2 minus its last digit)/20.
+A138636: a(n) = 6 * prime(n).
 A138689: Numbers of the form 26+p^2 (where p is a prime).
 A138690: Numbers of the form 56+p^2 (where p is a prime).
 A138691: Numbers of the form 68+p^2 (where p is a prime).
