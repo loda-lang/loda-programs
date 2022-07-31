@@ -9,17 +9,17 @@ add $6,$0
 cmp $0,1
 div $0,2
 add $0,1
-mov $2,4
 mov $5,$0
 add $5,$4
+mov $2,4
 pow $2,$5
 mov $3,3
 pow $3,$6
 lpb $0
   cmp $0,$2
-  mov $1,$2
   add $5,$3
   sub $5,1
+  mov $1,$2
   add $1,$5
 lpe
 sub $1,1

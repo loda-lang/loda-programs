@@ -3,17 +3,17 @@
 
 add $0,1
 mov $2,2
-mov $3,$0
 mov $4,$0
 mov $8,1
+mov $3,$0
 lpb $3
   mov $5,$4
   lpb $5
     add $6,1
     mov $7,$0
-    div $0,$2
     mod $7,$2
     cmp $7,0
+    div $0,$2
     sub $5,$7
     mov $8,2
     add $8,$6

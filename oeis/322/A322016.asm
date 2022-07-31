@@ -12,7 +12,7 @@ mov $1,$0
 add $0,1
 mod $0,2
 lpb $1
-  add $0,$2
   sub $1,1
+  add $0,$2
 lpe
 sub $0,1

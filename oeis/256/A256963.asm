@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,5210 ; a(n) = |a(n-1) + 2a(n-2) - n|.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

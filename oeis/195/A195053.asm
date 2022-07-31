@@ -4,6 +4,7 @@
 
 mul $0,72
 add $0,68
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-div $0,4
+seq $0,131576 ; Number of ways to represent n as a sum of an even number of consecutive integers.
+add $0,1
+div $0,2
 mod $0,2

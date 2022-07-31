@@ -1,17 +1,9 @@
 ; A279340: First differences of A055938.
-; Submitted by vanos0512
+; Submitted by Orange Kid
 ; 3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1
 
-add $0,2
-mov $1,$0
-lpb $1
-  mov $2,1
-  lpb $1
-    sub $1,$2
-    mul $2,2
-  lpe
-lpe
-cmp $2,2
-mov $0,$2
+add $0,1
+seq $0,308188 ; Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {1,2}.
+mod $0,2
 mul $0,2
 add $0,1

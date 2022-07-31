@@ -1,5 +1,5 @@
 ; A092597: Natural numbers n for which sum of decimal digits is not smaller than n/3.
-; Submitted by Jon Maiga
+; Submitted by pututu
 ; 1,2,3,4,5,6,7,8,9,14,15,16,17,18,19,28,29
 
 mov $4,$0
@@ -11,7 +11,6 @@ mul $3,4
 lpb $3
   sub $3,25
   add $1,$2
-  min $1,7
   mul $1,2
   div $2,5
   add $4,$1

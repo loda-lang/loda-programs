@@ -10,10 +10,9 @@ lpb $0
   sub $0,3
   mov $2,$4
   gcd $2,$1
-  mul $2,2
-  trn $2,$1
+  div $2,$1
   mov $3,$1
-  pow $3,2
+  pow $3,3
   mul $3,$2
   add $5,$3
   add $1,2

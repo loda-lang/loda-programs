@@ -1,38 +1,9 @@
 ; A268967: Number of n X 4 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two not more than once.
-; Submitted by Jamie Morken(w3)
+; Submitted by Jason Jung
 ; 60,912,11664,136080,1504656,16061328,167226768,1709114256,17218688400,171498136464,1692252695952,16569199473552,161173122151824,1559011041375120,15007175850454416,143849270956794768,1373705633335498128,13074910452538590096,124078231845519273360,1174340426563721122704,11087790898659919066512,104458661624217132258192,982144846444454936259984,9217455644438601139766160,86360469037893970678732176,807874535482564779896120208,7546543646616754413152857488,70399948265013832265165697936
 
 mul $0,2
-mov $5,$0
-mov $7,2
-lpb $7
-  sub $7,1
-  mov $0,$5
-  add $0,$7
-  mov $2,$0
-  add $2,$7
-  mov $3,$0
-  mov $4,6
-  lpb $0
-    sub $0,1
-    mul $4,$2
-    add $4,$3
-    mov $2,1
-    add $3,$4
-    mov $4,2
-    add $4,$3
-  lpe
-  add $3,1
-  mov $6,$3
-  mov $8,$7
-  lpb $8
-    sub $8,1
-    mov $1,$3
-  lpe
-lpe
-lpb $5
-  mov $5,0
-  sub $1,$6
-lpe
+mov $1,$0
+add $1,1
+seq $1,268972 ; Number of 2 X n 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two not more than once.
 mov $0,$1
-mul $0,4

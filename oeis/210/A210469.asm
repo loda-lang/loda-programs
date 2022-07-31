@@ -1,23 +1,12 @@
 ; A210469: a(n) = n - primepi(2n).
+; Submitted by PDW
 ; 0,0,0,0,1,1,1,2,2,2,3,3,4,5,5,5,6,7,7,8,8,8,9,9,10,11,11,12,13,13,13,14,15,15,16,16,16,17,18,18,19,19,20,21,21,22,23,24,24,25,25,25,26,26,26,27,27,28,29,30,31,32,33,33,34,34,35,36,36,36,37,38,39,40,40,40,41,42,42,43,44,44,45,45,46,47,47,48,49,49,49,50,51,52,53,53,53,54,54,54
 
-mov $5,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$5
-  sub $0,$2
-  mul $0,2
-  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mov $4,$0
-  sub $4,2
-  bin $4,2
-  pow $4,2
-  sub $4,4
-  pow $4,2
-  mov $3,$4
-  mul $3,3
-  div $3,48
-  add $1,$3
+lpb $0
+  mov $2,$0
+  mul $2,2
+  seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,1
+  add $1,$2
 lpe
 mov $0,$1

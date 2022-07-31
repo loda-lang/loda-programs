@@ -1,18 +1,11 @@
 ; A350661: a(1) = 1; a(n) = a(A007947(n) - 1) + n.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,3,6,5,10,16,23,9,12,22,33,22,35,49,64,17,34,28,47,32,53,75,98,34,30,56,30,63,92,122,153,33,66,100,135,46,83,121,160,52,93,135,178,97,94,140,187,58,65,62,113,82,135,64,119,91,148,206,265,152,213,275,95,65
 
-mov $3,$0
-lpb $3
-  lpb $0
-    add $1,$0
-    add $1,1
-    mov $2,$0
-    seq $2,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-    mov $3,0
-    mov $0,$2
-    sub $0,1
-  lpe
-lpe
-mov $0,$1
+mov $1,$0
 add $0,1
+lpb $1
+  seq $1,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  add $0,$1
+  sub $1,1
+lpe

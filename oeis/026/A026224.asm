@@ -1,23 +1,8 @@
 ; A026224: Numbers n such that t(n) = s(n) + 1, where s = A026136, t = A026142.
-; Submitted by Jamie Morken(w3)
+; Submitted by Simon Strandgaard
 ; 2,4,10,13,22,28,31,37,40,49,58,64,67,76,82,85,91,94,103,109,112,118,121,130,139,145,148,157,166,172,175,184,190,193,199,202,211,220,226,229,238,244,247,253,256,265,271,274,280,283
 
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  mul $3,2
-  seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
-  sub $0,$3
-  add $1,13
-  mov $4,$0
-  max $4,1
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-div $0,13
-mul $0,3
+seq $0,26228 ; Numbers k such that A026166(k) = A026136(k) - 1.
+sub $0,2
+trn $0,1
 add $0,2
-sub $0,$4

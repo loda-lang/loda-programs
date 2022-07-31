@@ -1,30 +1,7 @@
 ; A138714: Add 1, modulo 10, to the decimal expansion of e, A001113.
-; Submitted by Gunnar Hjern
+; Submitted by GolfSierra
 ; 3,8,2,9,3,9,2,9,3,9,5,6,0,1,5,6,3,4,6,4,7,1,3,9,8,5,8,2,4,6,3,7,7,3,5,0,8,8,6,8,3,5,8,1,0,4,7,0,0,0,6,0,6,8,5,0,7,7,0,7,8,7,3,8,8,3,5,1,8,7,7,4,1,4,6,4,6,5,8,6,0,5,6,8,2,4,9,3,2,8,9,6,3,6,2,7,7,5,3,8
 
-add $0,1
-mov $3,$0
-mul $3,5
-lpb $3
-  add $2,56
-  mul $2,$3
-  cmp $4,1
-  add $4,1
-  mov $5,$3
-  div $5,3
-  add $5,$4
-  mul $1,2
-  add $1,$2
-  div $1,$5
-  div $1,2
-  div $2,$5
-  sub $3,1
-lpe
-mov $6,10
-pow $6,$0
-mul $2,5
-div $2,$6
-div $1,$2
-mov $0,$1
+seq $0,1113 ; Decimal expansion of e.
 add $0,1
 mod $0,10

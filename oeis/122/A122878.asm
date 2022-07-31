@@ -1,7 +1,13 @@
 ; A122878: Periodic sequence of period 21 related to a simple scheduling problem.
+; Submitted by Fardringle
 ; 12,12,12,12,13,13,13,23,23,23,23,12,12,12,13,13,13,13,23,23,23,12,12,12,12,13,13,13,23,23,23,23,12,12,12,13,13,13,13,23,23,23,12,12,12,12,13,13,13,23,23,23,23,12,12,12,13,13,13,13,23,23,23,12,12,12,12,13,13
 
-seq $0,122879 ; Periodic sequence of period 21.
-pow $0,2
-seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-sub $0,1971
+mul $0,2
+div $0,7
+mod $0,3
+add $0,1
+mov $1,10
+pow $1,$0
+mov $0,$1
+div $0,90
+add $0,12

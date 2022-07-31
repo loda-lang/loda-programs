@@ -1,9 +1,7 @@
 ; A095003: a(n) = 9*a(n-1) - 9*a(n-2) + a(n-3).
-; Submitted by Gunnar Hjern
+; Submitted by arkiss
 ; 1,6,45,352,2769,21798,171613,1351104,10637217,83746630,659335821,5190939936,40868183665,321754529382,2533168051389,19943589881728,157015551002433,1236180818137734,9732430994099437,76623267134657760,603253706083162641,4749406381530643366
 
-mov $1,$0
-seq $1,77243 ; Bisection (odd part) of Chebyshev sequence with Diophantine property.
-mov $0,$1
+seq $0,77243 ; Bisection (odd part) of Chebyshev sequence with Diophantine property.
 div $0,3
 add $0,1

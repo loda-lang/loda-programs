@@ -1,8 +1,6 @@
 ; A057667: Primes q of form q = 10p + 3, where p is an odd prime.
-; Submitted by Gunnar Hjern
+; Submitted by STE\/E
 ; 53,73,113,173,193,233,293,313,373,433,593,613,673,733,1013,1033,1093,1373,1493,1733,1913,1933,1973,1993,2113,2273,2293,2333,2393,2633,2693,2713,2833,3313,3373,3533,3593,3673,3733,3793,3833,4013,4093,4493
 
 add $0,1
-seq $0,23238 ; Primes p such that 10*p + 3 is also prime.
-mul $0,10
-add $0,3
+seq $0,55782 ; Primes q of the form q = 10p + 3, where p is also prime.

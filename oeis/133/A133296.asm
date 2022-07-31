@@ -1,6 +1,6 @@
 ; A133296: Smallest number whose sum of digits is 2n.
+; Submitted by pututu
 ; 0,2,4,6,8,19,39,59,79,99,299,499,699,899,1999,3999,5999,7999,9999,29999,49999,69999,89999,199999,399999,599999,799999,999999,2999999,4999999,6999999,8999999,19999999,39999999,59999999,79999999,99999999
 
 mul $0,2
-seq $0,71061 ; Abjad values of the Arabic letters in the traditional order for abjad calculations.
-sub $0,1
+seq $0,51885 ; Smallest number whose sum of digits is n.

@@ -1,12 +1,10 @@
 ; A353670: a(n) = 1 if the odd part of n is a prime, otherwise 0.
-; Submitted by [SG]FX
+; Submitted by respawner
 ; 0,0,1,0,1,1,1,0,0,1,1,1,1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,1,1,0,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1,0,1,1,0,0,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,0,1,1,0,0,0
 
+add $0,1
 lpb $0
-  sub $0,1
-  mul $0,2
-  dif $0,4
+  dif $0,2
 lpe
-mov $1,$0
-seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mov $0,$1
+sub $0,1
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

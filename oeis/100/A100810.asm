@@ -2,14 +2,8 @@
 ; Submitted by Orange Kid
 ; 1,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1
 
-seq $0,1223 ; Prime gaps: differences between consecutive primes.
-sub $0,1
-mov $1,1
-sub $1,$0
-mov $3,$1
-cmp $3,0
-pow $1,0
-add $2,$1
-add $2,$3
-mov $0,$2
+seq $0,40 ; The prime numbers.
+add $0,1
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+add $0,1
 mod $0,2

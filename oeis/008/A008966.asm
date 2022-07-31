@@ -1,8 +1,6 @@
 ; A008966: a(n) = 1 if n is squarefree, otherwise 0.
-; Submitted by Stony666
+; Submitted by Orange Kid
 ; 1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
 
-mov $1,$0
-seq $1,5361 ; Product of exponents of prime factorization of n.
-cmp $1,1
-mov $0,$1
+seq $0,5361 ; Product of exponents of prime factorization of n.
+cmp $0,1

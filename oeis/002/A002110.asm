@@ -1,28 +1,18 @@
-; A002110 o=0: Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
-; Coded manually 2021-02-24 by Antti Karttunen, https://github.com/karttu
-; With 64-bit implementation this is even in theory good only up to n=15, as A002110(15) = 614889782588491410 is the greatest primorial < 2^64.
-; With 64-bit ints this version allows only computing up to A002110(14) = 13082761331670030 because the overflow kludge is now commented out.
+; A002110: Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+; Submitted by nenym
+; 1,2,6,30,210,2310,30030,510510,9699690,223092870,6469693230,200560490130,7420738134810,304250263527210,13082761331670030,614889782588491410,32589158477190044730,1922760350154212639070,117288381359406970983270,7858321551080267055879090,557940830126698960967415390,40729680599249024150621323470,3217644767340672907899084554130,267064515689275851355624017992790,23768741896345550770650537601358310,2305567963945518424753102147331756070,232862364358497360900063316880507363070
 
-mov $1,1 ;  Initialize the result-register, the primorials are constructed to this
-mov $2,1 ;  Last prime found so far, this one from the beginning of the 20th century (A008578)
-lpb $0 ;  Loop from n to 1, to find the n-th primorial, we start from the "zeroth" one, A002110(0)=1.
-  mov $3,$2 ;  Set search-limit for "find-next-prime loop" below, this should be enough by Bertrand's postulate.
-  lpb $3 ;  (Bertrand is a great friend of all LODA-coders!). Start the inner loop.
-    add $2,1 ;  First increment the prime past previous
-    mov $4,$1 ;  And make temp. copy of it
-    gcd $4,$2 ;  Take the greatest common divisor with the primorial constructed so far
-    cmp $4,1 ;  $4 is now 1 if $2 was coprime to all previous primes, thus a new prime
-    cmp $4,0 ;  ... and now $4 is zero if a new prime was found, otherwise 1
-    sub $3,$4 ;  Thus we will fall out from loop if a new prime was found.
-  lpe
-  add $2,1 ;  Has to increment again, because the results of the last iteration of the inner loop were lost (is there a better way to do this?)
-  ;  The following four instructions are just a kludge so that we could obtain that term A002110(15) without throwing an overflow:
-  ;  Now commented out for program cleanliness, and for the eventual migration to bignum-implementation of LODA.
-  ; mov $3,$0
-  ; cmp $3,0
-  ; cmp $3,0
-  ; mul $2,$3 ;; namely, if the $0 had come to zero, then this would force to multiply by zero instead, to avoid an overflow
-  mul $1,$2 ;  Update the primorial
-  sub $0,1 ;  and decrement the main loop counter.
+mov $1,3
+seq $0,40 ; The prime numbers.
+sub $0,1
+lpb $0
+  sub $0,1
+  div $0,2
+  mul $0,2
+  trn $0,1
+  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mul $1,$0
+  sub $0,1
 lpe
 mov $0,$1
+div $0,3

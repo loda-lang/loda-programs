@@ -6,6 +6,7 @@ mov $1,1
 mov $2,1
 mov $3,1
 mov $6,1
+sub $0,1
 lpb $0
   sub $0,1
   sub $6,$2
@@ -18,4 +19,4 @@ lpb $0
   mov $1,$3
   mov $3,$4
 lpe
-mov $0,$6
+mov $0,$2

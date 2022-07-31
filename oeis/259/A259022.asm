@@ -1,21 +1,10 @@
 ; A259022: Period 9 sequence [ 1, -1, -1, 1, 0, -1, 1, 1, -1, ...].
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1
 
-mov $2,$0
-mov $3,$0
-add $3,3
-add $3,$0
-bin $3,5
-mov $1,1048576
-lpb $1
-  mov $1,2
-  mov $0,3
-  add $2,$3
-  mul $2,2
-  mod $2,6
-  mul $2,2
-lpe
-sub $0,$2
+mul $0,4
 add $0,1
-div $0,4
+seq $0,277544 ; a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
+mul $0,2
+mod $0,3
+dif $0,-2

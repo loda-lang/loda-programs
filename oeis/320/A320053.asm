@@ -9,9 +9,9 @@ lpb $0
   div $0,2
   sub $1,$0
   add $2,$1
-  mul $1,$0
-  trn $0,1
-  div $1,2
   div $2,2
+  mul $1,$0
+  div $1,2
+  trn $0,1
 lpe
 mov $0,$2

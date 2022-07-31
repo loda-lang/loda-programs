@@ -1,9 +1,9 @@
 ; A325100: Heinz numbers of strict integer partitions with no binary carries.
-; Submitted by Stony666
+; Submitted by vonboedefeldt
 ; 1,2,3,5,6,7,11,13,14,17,19,21,23,26,29,31,33,35,37,38,41,42,43,47,53,57,58,59,61,67,69,71,73,74,79,83,86,89,95,97,101,103,106,107,109,111,113,114,122,123,127,131,133,137,139,142,149,151,157,158,159
 
+mov $4,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1

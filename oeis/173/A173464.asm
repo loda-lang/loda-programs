@@ -1,5 +1,5 @@
 ; A173464: When regarded as a triangle, the rows of A162797 converge to this sequence.
-; Submitted by Orange Kid
+; Submitted by William Michael Kanar
 ; 1,5,5,17,5,17,21,49,5,17,21,49,21,53,81,129,5,17,21,49,21,53,81,129,21,53,81,133,81,165,289,321
 
 mov $3,$0
@@ -16,7 +16,3 @@ lpb $2
   add $1,$0
 lpe
 mov $0,$1
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
