@@ -1,6 +1,9 @@
 ; A039978: An example of a d-perfect sequence.
-; Submitted by Christian Krause
+; Submitted by nenym
 ; 1,0,2,2,1,1,0,1,1,2,1,0,0,2,2,1,2,0,0,1,2,2,0,0,1,0,2,2,1,0,0,2,2,1,2,2,0,2,1,1,0,0,2,0,1,1,2,0,0,1,1,2,1,1,0,1,2,2,0,0,1,0,0,2,0,1,1,2,2,0,2,1,1,0,2,2,1,1,0,1,1,2,1,0,0,2,2,1,2,2,0,2,1,1,0,0,2,0,1,1
 
-seq $0,174347 ; Expansion of (1 - 2*x - sqrt(1 - 8*x + 8*x^2))/(2*x*(1-x)).
+seq $0,151282 ; Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0) and consisting of n steps taken from {(-1, -1), (-1, 0), (0, 1), (1, 1)}.
 mod $0,3
+mov $1,2
+sub $1,$0
+mov $0,$1

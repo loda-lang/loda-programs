@@ -1,21 +1,7 @@
 ; A104248: Lengths of successive runs of 1's in the Thue-Morse sequence A010060.
-; Submitted by Orange Kid
+; Submitted by shiva
 ; 2,1,2,1,2,1,1,2,2,1,2,1,2,2,1,1,2,1,2,1,2,1,1,2,2,1,1,2,1,2,1,2,2,1,2,1,2,1,1,2,2,1,2,1,2,2,1,1,2,1,2,1,2,2,1,2,1,2,1,1,2,2,1,1,2,1,2,1,2,1,1,2,2,1,2,1,2,2,1,1,2,1,2,1,2,1,1,2,2,1,1,2,1,2,1,2,2,1,2,1
 
-mov $2,2
 mul $0,2
-add $0,2
-lpb $0
-  sub $0,1
-  dif $1,$3
-  sub $1,$2
-  div $1,2
-  sub $1,1
-  bin $3,$2
-  add $3,$1
-  gcd $3,4
-  mul $1,2
-  mul $2,$3
-lpe
-mov $0,$3
-div $0,2
+add $0,1
+seq $0,26465 ; Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).

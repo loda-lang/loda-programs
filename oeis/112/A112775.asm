@@ -1,21 +1,23 @@
 ; A112775: Numbers n such that 6n+1 is semiprime.
-; Submitted by zombie67 [MM]
+; Submitted by Fardringle
 ; 4,8,9,14,15,19,20,22,24,28,31,34,36,39,41,42,43,44,48,49,50,53,59,60,65,67,69,71,74,75,78,80,82,84,85,86,88,89,92,93,94,97,98,108,109,111,113,114,116,117,120,124,127,130,132,133,136,139,140,144,145,148,149,150,152,157,158,159,160,162,163,164,167,171,176,180,183,185,189,190,191,193,194,196,198,199,201,203,207,209,210,211,212,214,219,222,223,224,225,226
 
-mov $1,12
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  cmp $3,2
   sub $0,$3
-  add $1,6
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,6
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+sub $0,24
 div $0,6
+add $0,4

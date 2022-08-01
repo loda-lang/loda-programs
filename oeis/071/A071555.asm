@@ -1,9 +1,10 @@
 ; A071555: Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 3<=i<=n.
-; Submitted by Ragnarsdad
+; Submitted by Gunnar Hjern
 ; 6,36,386,5006,85086,1616616,37182146,1078282206,33426748356,1236789689136,50708377254536,2180460221945006,102481630431415236,5431526412865007456,320460058359035439846,19548063559901161830546
 
-add $0,2
-seq $0,57588 ; Kummer numbers: -1 + product of first n consecutive primes.
-sub $0,29
-div $0,6
+add $0,1
+seq $0,71554 ; Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 2<=i<=n.
+mul $0,63
+sub $0,1008
+div $0,189
 add $0,6

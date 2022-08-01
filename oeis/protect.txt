@@ -24,6 +24,7 @@ A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A023589: Number of distinct prime divisors of 2*p(n)+1.
+A026945: A bisection of the Motzkin numbers A001006.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031377: a(n) = prime(3n-2).
@@ -108,12 +109,14 @@ A098823: a(n) = 16*(8*prime(n) + 7).
 A099585: Remove all 3s from prime(n) - 1.
 A099817: Bisection of A000796 (decimal expansion of Pi).
 A099822: Bisection of A005117.
+A099923: Fourth powers of Lucas numbers A000032.
 A100484: The primes doubled.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
 A105825: a(n) = sigma(n) (mod 5).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
+A106138: Semiprimes (mod 2).
 A106139: Semiprimes (mod 3).
 A106140: Semiprimes (mod 4).
 A106141: Semiprimes (mod 5).

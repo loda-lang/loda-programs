@@ -1,10 +1,10 @@
 ; A028734: Nonsquares mod 21.
-; Submitted by respawner
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,3,5,6,8,10,11,12,13,14,17,19,20
 
 mov $4,21
 mov $2,$0
-add $2,2
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
@@ -22,5 +22,6 @@ lpb $2
   add $4,3
 lpe
 mov $0,$1
+sub $0,26
 div $0,3
-sub $0,6
+add $0,2

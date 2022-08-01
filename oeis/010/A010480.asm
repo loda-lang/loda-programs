@@ -1,26 +1,18 @@
 ; A010480: Decimal expansion of square root of 24.
-; Submitted by Jon Maiga
+; Submitted by William Michael Kanar
 ; 4,8,9,8,9,7,9,4,8,5,5,6,6,3,5,6,1,9,6,3,9,4,5,6,8,1,4,9,4,1,1,7,8,2,7,8,3,9,3,1,8,9,4,9,6,1,3,1,3,3,4,0,2,5,6,8,6,5,3,8,5,1,3,4,5,0,1,9,2,0,7,5,4,9,1,4,6,3,0,0,5,3,0,7,9,7,1,8,8,6,6,2,0,9,2,8,0,4,6,9
 
-mov $3,$0
-mul $3,3
-lpb $3
-  add $6,$2
-  add $1,$6
-  add $2,307
-  add $1,$2
+mov $2,$0
+mul $2,2
+mov $0,10
+pow $0,$2
+mul $0,12
+mov $1,$0
+lpb $0
   mov $2,$1
-  mul $2,2
-  sub $3,1
-  add $5,$2
+  add $2,$1
+  div $2,$0
+  add $0,$2
+  div $0,2
 lpe
-mov $1,$5
-mov $4,10
-pow $4,$0
-mul $4,4
-div $2,$4
-add $2,1
-div $1,$2
-mov $0,$1
-add $0,$4
 mod $0,10

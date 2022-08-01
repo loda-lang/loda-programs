@@ -1,21 +1,9 @@
 ; A103528: Sum_{k = 1..n-1 such that n == k (mod 2^k)} 2^(k-1).
-; Submitted by Jamie Morken(w2)
+; Submitted by Orange Kid
 ; 0,0,1,0,1,2,1,0,1,2,5,0,1,2,1,0,1,2,5,8,1,2,1,0,1,2,5,0,1,2,1,0,1,2,5,8,17,2,1,0,1,2,5,0,1,2,1,0,1,2,5,8,1,2,1,0,1,2,5,0,1,2,1,0,1,2,5,8,17,34,1,0,1,2,5,0,1,2,1,0,1,2,5,8,1,2,1,0,1,2,5,0,1,2,1,0,1,2,5,8
 
-add $0,2
-mov $4,1
-mov $2,$0
-lpb $2
-  sub $2,3
-  mul $4,2
-  sub $0,2
-  mov $5,$0
-  mod $5,$4
-  cmp $5,0
-  add $0,1
-  mov $3,$4
-  mul $3,$5
-  add $1,$3
-lpe
+mov $1,$0
+seq $0,105033 ; Read binary numbers downwards to the right.
+sub $1,$0
 mov $0,$1
 div $0,2

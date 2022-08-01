@@ -5,6 +5,4 @@
 mov $1,$0
 add $1,2
 seq $0,91733 ; a(n) is the least m > 1 such that m^3 = 1 (mod n).
-mul $0,2
 dif $0,$1
-div $0,2

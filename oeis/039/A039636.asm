@@ -6,8 +6,7 @@ lpb $0
   seq $0,66560 ; Smallest composite number divisible by n.
   div $0,2
   sub $0,1
-  add $1,4
+  add $1,1
 lpe
 mov $0,$1
-div $0,4
 add $0,1

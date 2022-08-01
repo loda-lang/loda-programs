@@ -11,7 +11,7 @@ lpb $2
   seq $3,107016 ; Number of odd terms in Zeckendorf representation of n.
   cmp $3,0
   sub $0,$3
-  add $1,1
+  add $1,2
   sub $2,$0
 lpe
 mov $0,$1

@@ -1,14 +1,14 @@
 ; A043592: Numbers whose base-3 representation has exactly 12 runs.
-; Submitted by Orange Kid
+; Submitted by Yeti
 ; 199290,199292,199293,199294,199306,199307,199308,199310,199317,199319,199320,199321,199324,199325,199329,199330,199432,199433,199437,199438,199441,199442,199443,199445,199452,199454,199455
 
 mov $1,$0
-add $1,42
 mul $1,4
-mov $2,$0
+add $1,131
+mov $2,$1
 add $0,1
-add $2,11
-pow $2,4
+add $1,36
+bin $2,2
 lpb $2
   mov $3,$1
   seq $3,43555 ; Number of runs in base-3 representation of n.
