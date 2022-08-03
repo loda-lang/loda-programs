@@ -5,7 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,7956 ; Product of proper divisors of n.
+  seq $2,7956 ; Product of the proper divisors of n.
   sub $0,1
   mul $1,$2
 lpe

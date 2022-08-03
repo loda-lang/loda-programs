@@ -1,9 +1,9 @@
 ; A054775: Positive multiples of 6 which are not the midpoint of a pair of twin primes.
-; Submitted by Jamie Morken(w2)
+; Submitted by respawner
 ; 24,36,48,54,66,78,84,90,96,114,120,126,132,144,156,162,168,174,186,204,210,216,222,234,246,252,258,264,276,288,294,300,306,318,324,330,336,342,354,360,366,372,378,384,390,396,402,408,414,426,438,444,450,456,468,474
 
+mov $1,2
 mov $2,$0
-add $2,2
 mul $2,2
 lpb $2
   add $1,1

@@ -1,7 +1,9 @@
 ; A010173: Continued fraction for sqrt(107).
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 10,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9
 
 seq $0,10124 ; Continued fraction for sqrt(19).
-seq $0,133893 ; Numbers m such that binomial(m+3,m) mod 3 = 0.
-sub $0,6
+mov $1,$0
+div $0,3
+mul $0,6
+add $0,$1

@@ -9,6 +9,8 @@ A001956: Beatty sequence of (5+sqrt(13))/2.
 A001961: A Beatty sequence: floor(n * (sqrt(5) - 1)).
 A001962: A Beatty sequence: floor(n * (sqrt(5) + 3)).
 A001963: Winning positions in the u-pile of the 4-Wythoff game with i=1.
+A001964: v-pile positions of the 4-Wythoff game with i=1.
+A001965: u-pile count for the 4-Wythoff game with i=2.
 A001966: v-pile counts for the 4-Wythoff game with i=2.
 A001967: u-pile positions for the 4-Wythoff game with i=3.
 A001968: v-pile positions of the 4-Wythoff game with i=3.
@@ -32,6 +34,7 @@ A007067: Nearest integer to n*tau.
 A007916: Numbers that are not perfect powers.
 A007948: Largest cubefree number dividing n.
 A010051: Characteristic function of primes: 1 if n is prime, else 0.
+A019446: a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
 A019594: Conway's "para-budding" sequence.
 A022164: First column of spectral array W(sqrt(5)-1).
 A022303: The sequence a of 1's and 2's starting with (1,2,1) such that a(n) is the length of the (n+2)nd run of a.
@@ -55,6 +58,9 @@ A035199: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m
 A035337: Third column of Wythoff array.
 A036349: Numbers whose sum of prime factors (taken with multiplicity) is even.
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
+A042986: Primes congruent to {0, 1, 2, 3} mod 5.
+A042987: Primes congruent to {2, 3, 5, 7} mod 8.
+A042999: Primes congruent to {2, 3, 5} (mod 8).
 A050508: Golden rectangle numbers: n * A007067(n).
 A053723: Number of 5-core partitions of n.
 A061704: Number of cubes dividing n.

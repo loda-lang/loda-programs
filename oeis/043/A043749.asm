@@ -1,9 +1,9 @@
 ; A043749: Numbers n such that number of runs in the base 2 representation of n is congruent to 3 mod 8.
-; Submitted by Stony666
+; Submitted by gingavasalata
 ; 5,9,11,13,17,19,23,25,27,29,33,35,39,47,49,51,55,57,59,61,65,67,71,79,95,97,99,103,111,113,115,119,121,123,125,129,131,135,143,159,191,193,195,199,207,223,225,227,231,239,241,243,247
 
-mov $1,3
-mov $2,70
+mov $1,1
+mov $2,71
 add $2,$0
 lpb $2
   mov $3,$1
@@ -11,11 +11,10 @@ lpb $2
   mul $3,5
   cmp $3,5
   sub $0,$3
-  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,2
+  sub $2,$4
 lpe
 mov $0,$1

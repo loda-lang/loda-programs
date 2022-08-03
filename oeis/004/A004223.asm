@@ -5,10 +5,10 @@
 add $0,1
 pow $0,2
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,194129 ; Number of digits in n^100.
   pow $0,0
   div $0,2
-  seq $2,194129 ; Number of digits in n^100.
 lpe
-div $2,2
-mov $0,$2
+div $1,2
+mov $0,$1

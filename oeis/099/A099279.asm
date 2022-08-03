@@ -1,15 +1,14 @@
 ; A099279: Squares of A001076 (generalized Fibonacci).
-; Submitted by Simon Strandgaard
+; Submitted by Penguin
 ; 0,1,16,289,5184,93025,1669264,29953729,537497856,9645007681,173072640400,3105662519521,55728852710976,1000013686278049,17944517500293904,322001301319012225,5778078906241926144
 
-mov $2,1
+mov $1,1
 lpb $0
   sub $0,1
-  mov $1,$3
-  mul $1,4
-  add $2,$1
-  mul $3,-1
-  add $3,$2
+  mov $2,$3
+  mul $3,4
+  add $3,$1
+  mov $1,$2
 lpe
 pow $3,2
 mov $0,$3

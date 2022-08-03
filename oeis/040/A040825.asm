@@ -1,15 +1,8 @@
 ; A040825: Continued fraction for sqrt(855).
+; Submitted by Simon Strandgaard
 ; 29,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4,58,4,6,4
 
-seq $0,40204 ; Continued fraction for sqrt(219).
-lpb $0
-  add $2,1
-  gcd $2,$0
-  add $0,$2
-  add $1,$0
-  sub $1,2
-  div $0,2
-  mul $2,9
-lpe
-add $1,4
-mov $0,$1
+seq $0,10197 ; Continued fraction for sqrt(138).
+mul $0,18
+add $0,10
+div $0,7

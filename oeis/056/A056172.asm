@@ -1,9 +1,7 @@
 ; A056172: Number of non-unitary prime divisors of n!.
-; Submitted by Ragnarsdad
+; Submitted by Olde16
 ; 0,0,0,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,6,6,6,6,6,6,6,6,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,13,13,13,13,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15
 
-add $0,1
-mov $1,$0
-div $1,2
-seq $1,230980 ; Number of primes <= n, starting at n=0.
-mov $0,$1
+sub $0,1
+div $0,2
+seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
