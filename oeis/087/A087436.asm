@@ -1,23 +1,13 @@
 ; A087436: Number of odd prime factors of n, counted with repetitions.
-; Submitted by zombie67 [MM]
+; Submitted by trigggl
 ; 0,0,1,0,1,1,1,0,2,1,1,1,1,1,2,0,1,2,1,1,2,1,1,1,2,1,3,1,1,2,1,0,2,1,2,2,1,1,2,1,1,2,1,1,3,1,1,1,2,2,2,1,1,3,2,1,2,1,1,2,1,1,3,0,2,2,1,1,2,2,1,2,1,1,3,1,2,2,1,1,4,1,1,2,2,1,2,1,1,3,2,1,2,1,2,1,1,2,3,2
 
-mov $2,3
-add $0,1
 lpb $0
-  mov $3,$0
-  sub $3,4
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,2
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    add $1,1
-  lpe
+  mov $1,$0
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  mul $0,2
+  div $0,$1
+  add $2,5
 lpe
-mov $0,$1
+mov $0,$2
+div $0,5

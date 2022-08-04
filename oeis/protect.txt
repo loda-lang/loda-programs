@@ -11,6 +11,7 @@ A003972: Moebius transform of A003961; a(n) = phi(A003961(n)), where A003961 shi
 A004397: a(n) = prime(n) + Fibonacci(n).
 A004399: Fibonacci(n+2) plus n-th prime.
 A005097: (Odd primes - 1)/2.
+A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
 A005722: a(n) = (prime(n) - 1)^2.
 A006093: a(n) = prime(n) - 1.
 A006450: Prime-indexed primes: primes with prime subscripts.
@@ -125,6 +126,7 @@ A099991: a(n) = Moebius(2n).
 A100005: Bisection of A001414.
 A100484: The primes doubled.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
+A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
 A105825: a(n) = sigma(n) (mod 5).

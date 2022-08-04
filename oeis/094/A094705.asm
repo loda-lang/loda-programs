@@ -1,16 +1,9 @@
 ; A094705: Convolution of Jacobsthal(n) and 3^n.
-; Submitted by Jamie Morken(w2)
+; Submitted by Penguin
 ; 0,1,4,15,50,161,504,1555,4750,14421,43604,131495,395850,1190281,3576304,10739835,32241350,96767741,290390604,871346575,2614389250,7843866801,23532998504,70601791715,211810967550,635444087461,1906354632004,5719108635255,17157415384250
 
-mov $2,1
-add $1,1
-lpb $0
-  sub $0,1
-  mul $2,2
-  mov $3,$1
-  mul $4,3
-  add $4,$1
-  mov $1,$2
-  sub $1,$3
-lpe
-mov $0,$4
+add $0,2
+mov $1,$0
+seq $1,101052 ; Number of preferential arrangements of n labeled elements when only k <= 3 ranks are allowed.
+mov $0,$1
+div $0,12

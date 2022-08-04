@@ -1,23 +1,22 @@
 ; A005090: Number of primes == 2 mod 3 dividing n.
-; Submitted by Jamie Morken(w4)
+; Submitted by Skivelitis2
 ; 0,1,0,1,1,1,0,1,0,2,1,1,0,1,1,1,1,1,0,2,0,2,1,1,1,1,0,1,1,2,0,1,1,2,1,1,0,1,0,2,1,1,0,2,1,2,1,1,0,2,1,1,1,1,2,1,0,2,1,2,0,1,0,1,1,2,0,2,1,2,1,1,0,1,1,1,1,1,0,2,0,2,1,1,2,1,1,2,1,2,0,2,0,2,1,1,0,1,1,2
 
 mov $2,2
 add $0,1
 lpb $0
   mov $3,$0
-  sub $3,3
+  sub $3,4
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    min $4,3
     add $2,3
     sub $3,$4
   lpe
-  add $1,1
   lpb $0
     dif $0,$2
   lpe
+  add $1,1
 lpe
 mov $0,$1

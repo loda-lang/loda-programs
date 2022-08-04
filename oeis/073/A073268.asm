@@ -5,8 +5,8 @@
 pow $5,$0
 lpb $0
   mov $2,$0
-  sub $2,1
   add $2,$0
+  sub $2,1
   bin $2,$0
   mod $2,2
   mov $3,$4

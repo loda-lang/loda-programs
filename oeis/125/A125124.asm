@@ -1,5 +1,5 @@
 ; A125124: Decimal expansion of the flattening (inverse) of the World Geodetic System 1984 ellipsoid, second upgrade.
-; Submitted by CFJH
+; Submitted by gemini8
 ; 2,9,8,2,5,7,2,2,3,5,6,3
 
 mov $1,-7
@@ -17,7 +17,5 @@ lpb $0
   add $4,2
 lpe
 mov $0,$1
-add $0,7
-mod $0,10
-add $0,10
+add $0,17
 mod $0,10

@@ -10,9 +10,9 @@ mov $0,8
 lpb $0
   dif $0,2
   div $0,2
-  add $2,$1
   mod $3,4
   add $0,$3
+  add $2,$1
   pow $2,$0
 lpe
 mov $0,$2

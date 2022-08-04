@@ -1,7 +1,11 @@
 ; A010140: Continued fraction for sqrt(54).
-; Submitted by Jon Maiga
+; Submitted by Skivelitis2
 ; 7,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6
 
 seq $0,10124 ; Continued fraction for sqrt(19).
-seq $0,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
-sub $0,3
+mov $1,$0
+mul $1,2
+div $0,3
+mul $0,6
+add $0,$1
+div $0,2

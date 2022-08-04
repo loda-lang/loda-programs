@@ -16,12 +16,12 @@ lpb $3
   add $5,$2
   add $6,$5
 lpe
-mul $1,2
-mov $2,$6
 mov $4,10
 pow $4,$0
+mov $2,$6
 div $2,$4
 add $2,1
+mul $1,2
 div $1,$2
 mov $0,$1
 mod $0,10

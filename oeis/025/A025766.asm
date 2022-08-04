@@ -7,9 +7,8 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  mul $2,2
-  seq $2,8621 ; Expansion of 1/((1-x)*(1-x^4)).
+  div $2,2
+  add $1,1
   add $1,$2
   mov $3,11
 lpe
