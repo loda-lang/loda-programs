@@ -5,14 +5,10 @@
 seq $0,75526 ; a(n) = A008578(n+2) - A008578(n+1).
 add $1,$0
 add $1,$0
-mov $3,7
 mov $0,$1
-mul $1,2
-mov $2,$0
 lpb $0
   sub $0,8
-  add $0,$2
-  add $3,$1
+  add $0,$1
+  mov $2,1
 lpe
-mov $0,$3
-div $0,12
+mov $0,$2

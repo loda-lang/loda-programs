@@ -1,11 +1,9 @@
 ; A040250: Continued fraction for sqrt(267).
-; Submitted by Orange Kid
+; Submitted by Penguin
 ; 16,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1
 
-seq $0,40354 ; Continued fraction for sqrt(374).
-add $1,$0
-div $1,3
-lpb $1
-  trn $1,8
-  sub $0,3
-lpe
+seq $0,10124 ; Continued fraction for sqrt(19).
+mov $1,$0
+div $0,3
+mul $0,12
+add $0,$1

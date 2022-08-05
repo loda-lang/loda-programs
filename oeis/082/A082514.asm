@@ -1,8 +1,8 @@
 ; A082514: a(n) = pi(n) + tau(n).
 ; 1,3,4,5,5,7,6,8,7,8,7,11,8,10,10,11,9,13,10,14,12,12,11,17,12,13,13,15,12,18,13,17,15,15,15,20,14,16,16,20,15,21,16,20,20,18,17,25,18,21,19,21,18,24,20,24,20,20,19,29,20,22,24,25,22,26,21,25,23,27,22,32,23,25
 
-mov $2,$0
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 add $0,1
 seq $0,230980 ; Number of primes <= n, starting at n=0.
-seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $0,$2
+add $0,$1

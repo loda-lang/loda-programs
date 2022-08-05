@@ -9,11 +9,11 @@ sub $0,$2
 mul $2,3
 lpb $0
   sub $2,2
-  mov $0,$2
   add $3,2
+  mov $0,$2
   div $0,$3
   sub $0,$3
-  mov $4,$0
+  mov $1,$0
 lpe
-mov $0,$4
+mov $0,$1
 add $0,1

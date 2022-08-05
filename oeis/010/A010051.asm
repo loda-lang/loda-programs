@@ -17,8 +17,9 @@ lpb $0
   mov $1,1
   div $0,$2
   pow $0,2
+  mul $2,72
 lpe
+cmp $4,0
+cmp $4,0
 mov $0,$1
-cmp $4,0
-cmp $4,0
 mul $0,$4

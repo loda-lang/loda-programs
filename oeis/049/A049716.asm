@@ -1,10 +1,14 @@
 ; A049716: a(n) = 2*n + 1 - prevprime(2*n + 1).
-; Submitted by STE\/E
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,2,2,2,4,2,2,4,2,2,4,2,4,6,2,2,4,6,2,4,2,2,4,2,4,6,2,4,6,2,2,4,6,2,4,2,2,4,6,2,4,2,4,6,2,4,6,8,2,4,2,2,4,2,2,4,2,4,6,8,10,12,14,2,4,2,4,6,2,2,4,6,8,10,2,2,4,6,2,4,6,2,4,2,4,6,2,4,6,2,2,4,6,8,10,2,2,4,2,2
 
 mul $0,2
-mov $1,$0
-add $1,3
-seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-sub $1,$0
+add $0,1
+lpb $0
+  add $1,1
+  mov $2,$0
+  seq $2,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  sub $0,$2
+lpe
 mov $0,$1
+add $0,1
