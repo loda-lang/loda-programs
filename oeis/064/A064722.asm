@@ -1,11 +1,11 @@
 ; A064722: a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-; Submitted by ChelseaOilman
+; Submitted by Penguin
 ; 0,0,0,1,0,1,0,1,2,3,0,1,0,1,2,3,0,1,0,1,2,3,0,1,2,3,4,5,0,1,0,1,2,3,4,5,0,1,2,3,0,1,0,1,2,3,0,1,2,3,4,5,0,1,2,3,4,5,0,1,0,1,2,3,4,5,0,1,2,3,0,1,0,1,2,3,4,5,0,1,2,3,0,1,2,3,4,5,0,1,2,3,4,5,6,7,0,1,2,3
 
 lpb $0
-  add $1,1
-  mov $2,$0
-  seq $2,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
-  sub $0,$2
+  mov $1,$0
+  seq $1,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,$1
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$2

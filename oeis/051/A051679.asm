@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,48967 ; Number of even entries in row n of Pascal's triangle (A007318).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

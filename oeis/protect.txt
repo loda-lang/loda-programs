@@ -23,6 +23,7 @@ A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008864: a(n) = prime(n) + 1.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
+A014690: a(n) = n + prime(n+1).
 A014692: a(n) = prime(n) - (n-1).
 A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
@@ -34,6 +35,8 @@ A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031377: a(n) = prime(3n-2).
 A031392: a(n) = prime(5*n-4).
+A031915: a(n) = prime(8*n - 7).
+A031919: a(n) = prime(10*n-8).
 A031920: a(n) = prime(10*n-9).
 A031974: 1 repeated prime(n) times.
 A033633: Primes modulo 19.
@@ -89,10 +92,12 @@ A071986: Parity of the prime-counting function pi(n).
 A072003: 10's complement of final digit of n-th prime.
 A072055: a(n) = 2*prime(n)+1.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
+A073256: a(n) = phi(n-th composite number).
 A074372: 1 + the sum of the distinct primes dividing n.
 A074943: tau(n) (mod 3).
 A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
+A075730: Squares of odd semiprimes A046315, odd numbers divisible by exactly 2 primes (counted with multiplicity).
 A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
 A076821: Squares of the differences between consecutive primes.
 A078574: Number of divisors of the average of n-th twin prime pair.

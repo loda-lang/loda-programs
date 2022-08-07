@@ -4,8 +4,8 @@
 mov $1,$0
 add $0,5
 bin $0,3
+sub $0,7
 mov $2,$1
 max $2,1
 mul $2,2
 sub $0,$2
-sub $0,7

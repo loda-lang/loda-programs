@@ -1,7 +1,9 @@
 ; A040261: Continued fraction for sqrt(278).
+; Submitted by Simon Strandgaard
 ; 16,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2,16,2,1,32,1,2
 
-seq $0,10144 ; Continued fraction for sqrt(59).
-seq $0,90771 ; Numbers that are congruent to {1, 9} mod 10.
-sub $0,7
-div $0,2
+sub $1,$0
+gcd $1,2
+mul $0,2
+seq $0,10149 ; Continued fraction for sqrt(70).
+mul $0,$1

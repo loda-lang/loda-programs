@@ -10,8 +10,8 @@ lpb $0
   mul $1,$0
   add $1,$3
   mul $2,$0
-  max $0,1
   mov $4,$2
+  max $0,1
   add $2,$3
   mov $3,$1
 lpe

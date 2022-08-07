@@ -1,9 +1,14 @@
 ; A052626: (2^n+2)*n!.
-; Submitted by Stony666
+; Submitted by [AF>Libristes] ElGuillermo
 ; 3,4,12,60,432,4080,47520,655200,10402560,186520320,3723148800,81829440000,1962948556800,51024208435200,1428503479603200,42852489039360000,1371237803679744000,46621373950255104000
 
-mov $1,2
-pow $1,$0
-add $1,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mul $0,$1
+mov $2,2
+pow $2,$0
+add $2,1
+mov $1,1
+add $1,$2
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $0,$1
