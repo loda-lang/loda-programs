@@ -20,9 +20,9 @@ div $0,8 ; source=parameter 2
 ; value: 6,8,10,12,14,16
 
 ; parameter 2
-; number of unique values: 11
-; value: 2,3,4,5,6,7,8,10,12,14,16
+; number of unique values: 10
+; value: 2,4,5,6,7,8,10,12,14,16
 
 ; programs with this pattern
-; number of programs: 18
-; program id: 5124,24892,24897,24899,59325,87505,89033,90614,92022,102338,102700,105133,111367,167055,167056,167057,186297,230076
+; number of programs: 17
+; program id: 5124,24897,24899,59325,87505,89033,90614,92022,102338,102700,105133,111367,167055,167056,167057,186297,230076

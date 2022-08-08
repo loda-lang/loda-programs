@@ -20,21 +20,21 @@ mul $0,2
 add $0,35 ; source=parameter 3
 
 ; parameter 0
-; number of unique values: 10
-; value: 8,10,11,12,14,15,16,17,18,20
+; number of unique values: 9
+; value: 8,11,12,14,15,16,17,18,20
 
 ; parameter 1
-; number of unique values: 8
-; value: 7,10,12,16,17,19,22,24
+; number of unique values: 7
+; value: 10,12,16,17,19,22,24
 
 ; parameter 2
 ; number of unique values: 8
 ; value: 32,41,43,47,49,53,59,61
 
 ; parameter 3
-; number of unique values: 8
-; value: 15,21,25,33,35,39,45,49
+; number of unique values: 7
+; value: 21,25,33,35,39,45,49
 
 ; programs with this pattern
-; number of programs: 19
-; program id: 142219,142232,142233,142275,142356,142369,142420,142452,142540,142542,142546,142733,142737,142745,142753,142802,142818,142950,142951
+; number of programs: 15
+; program id: 142219,142233,142275,142356,142420,142540,142542,142733,142737,142745,142753,142802,142818,142950,142951

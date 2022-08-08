@@ -1,9 +1,9 @@
 mov $4,2
 lpb $4
+  mov $4,1
   mov $1,4 ; source=parameter 0
   mov $2,5 ; source=parameter 1
   mov $3,8
-  mov $4,1
   lpb $0
     sub $0,1
     div $3,$2
@@ -29,4 +29,4 @@ mov $0,$1
 
 ; programs with this pattern
 ; number of programs: 15
-; program id: 10919,10925,18920,19492,20728,20748,22029,22031,22032,22034,22035,22036,22038,22039,278681
+; program id: 10919,10925,18920,19492,20728,20748,22031,22032,22034,22035,22036,22037,22038,22039,278681

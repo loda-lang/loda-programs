@@ -1,5 +1,5 @@
-add $0,1 ; source=parameter 0
 mov $3,1
+add $0,1 ; source=parameter 0
 lpb $0
   sub $0,1
   add $2,$3
@@ -17,16 +17,16 @@ div $0,6 ; source=parameter 3
 
 ; parameter 1
 ; number of unique values: 9
-; value: 2,3,4,5,6,8,11,15,22
+; value: 2,3,4,5,6,7,8,11,12
 
 ; parameter 2
-; number of unique values: 18
-; value: 3,6,8,10,12,14,20,30,38,40,44,46,48,52,54,56,60,62
+; number of unique values: 13
+; value: 3,6,8,12,14,16,20,24,28,38,44,48,60
 
 ; parameter 3
-; number of unique values: 18
-; value: 3,6,8,10,12,14,20,30,38,40,44,46,48,52,54,56,60,62
+; number of unique values: 13
+; value: 3,6,8,12,14,16,20,24,28,38,44,48,60
 
 ; programs with this pattern
-; number of programs: 35
-; program id: 41015,41017,41027,41049,41063,41087,41183,41423,41425,41429,41431,41449,41687,41763,41945,41967,42015,42107,42109,42111,42115,42119,42303,42307,42407,42409,42515,42519,42743,42745,42747,42749,42769,42863,136211
+; number of programs: 22
+; program id: 41015,41017,41023,41027,41063,41065,41071,41083,41097,41115,41119,41189,41269,41275,41279,41287,41367,41687,41945,42119,42747,136211
