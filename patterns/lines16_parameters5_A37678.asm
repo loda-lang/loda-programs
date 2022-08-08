@@ -1,18 +1,18 @@
-add $0,1
 mov $2,1 ; source=parameter 0
+add $0,1
 lpb $0
   mov $3,$2
   lpb $3
-    add $2,2 ; source=parameter 1
     mod $3,5
     sub $3,1
-    add $4,1
+    add $1,1
+    add $2,2 ; source=parameter 1
   lpe
-  sub $0,1
   add $2,2 ; source=parameter 2
-  mul $4,8 ; source=parameter 3
+  sub $0,1
+  mul $1,8 ; source=parameter 3
 lpe
-mov $0,$4
+mov $0,$1
 div $0,8 ; source=parameter 4
 
 ; parameter 0
@@ -36,5 +36,5 @@ div $0,8 ; source=parameter 4
 ; value: 5,6,7,8,9,10
 
 ; programs with this pattern
-; number of programs: 22
-; program id: 37678,37679,37680,37710,37711,37713,37714,37717,37719,37720,37722,37755,37756,37757,37776,37777,37778,37787,37788,37789,37790,37791
+; number of programs: 23
+; program id: 37678,37679,37680,37710,37711,37712,37713,37714,37715,37717,37718,37719,37720,37721,37755,37756,37776,37777,37787,37788,37789,37790,37791
