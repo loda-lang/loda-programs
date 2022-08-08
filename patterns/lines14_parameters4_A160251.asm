@@ -18,8 +18,8 @@ div $0,1682 ; source=parameter 3
 ; value: 18,1682
 
 ; parameter 1
-; number of unique values: 20
-; value: 7,16,18,20,22,24,26,28,30,32,36,38,40,42,44,48,50,52,54,56
+; number of unique values: 17
+; value: 7,16,18,20,22,26,28,30,32,36,40,42,44,48,50,52,54
 
 ; parameter 2
 ; number of unique values: 2
@@ -30,5 +30,5 @@ div $0,1682 ; source=parameter 3
 ; value: 18,1682
 
 ; programs with this pattern
-; number of programs: 20
-; program id: 160251,160252,160253,160259,160260,160261,160263,160269,160270,160280,160281,160282,160283,160284,160286,160287,160288,160289,160290,160292
+; number of programs: 17
+; program id: 160251,160252,160253,160259,160261,160263,160269,160270,160280,160282,160283,160284,160286,160287,160288,160289,160292

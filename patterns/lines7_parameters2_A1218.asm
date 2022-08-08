@@ -11,9 +11,9 @@ mov $0,$1
 ; value: 2,3,4,5,6,7,8,9
 
 ; parameter 1
-; number of unique values: 7
-; value: 17,19,100,109,179,181,1000
+; number of unique values: 9
+; value: 17,19,26,37,100,109,179,181,1000
 
 ; programs with this pattern
-; number of programs: 15
-; program id: 1218,1311,14392,14393,36119,36120,36141,36153,36154,70342,70371,70394,70407,126605,187532
+; number of programs: 17
+; program id: 1218,1311,14392,14393,36119,36120,36124,36141,36153,36154,70342,70371,70394,70407,126605,167425,187532

@@ -12,8 +12,8 @@ add $0,3 ; source=parameter 3
 ; value: 10,11
 
 ; parameter 1
-; number of unique values: 4
-; value: 11,15,17,26
+; number of unique values: 5
+; value: 6,11,15,17,26
 
 ; parameter 2
 ; number of unique values: 9
@@ -25,4 +25,4 @@ add $0,3 ; source=parameter 3
 
 ; programs with this pattern
 ; number of programs: 23
-; program id: 40077,40094,40099,40137,40143,40214,40215,40219,40255,40311,40317,40384,40389,40425,40557,40563,40567,40604,40609,40707,40874,40875,40881
+; program id: 40077,40094,40099,40137,40143,40214,40215,40219,40311,40317,40384,40389,40425,40557,40563,40567,40604,40609,40707,40874,40875,40881,40884
