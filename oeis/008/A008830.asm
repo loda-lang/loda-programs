@@ -1,10 +1,10 @@
 ; A008830: Discrete logarithm of n to the base 2 modulo 11.
-; Submitted by arkiss
+; Submitted by William Michael Kanar
 ; 0,1,8,2,4,9,7,3,6,5
 
 add $0,1
 mul $0,2
-mov $1,70
+mov $1,68
 sub $1,$0
 lpb $1
   add $1,2

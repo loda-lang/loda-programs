@@ -5,25 +5,25 @@
 mov $7,$0
 mov $9,2
 lpb $9
-  mov $0,$7
+  sub $9,1
   mov $1,0
   mov $2,0
+  mov $4,1
   mov $5,0
-  sub $9,1
+  mov $0,$7
   add $0,$9
   sub $0,1
   mov $3,$0
-  mov $4,1
   lpb $3
-    mul $1,$3
     mul $4,$3
-    add $1,$4
     mul $1,$3
+    add $1,$4
     cmp $4,0
     add $5,$4
     mov $6,$5
     cmp $6,0
     add $5,$6
+    mul $1,$3
     div $1,$5
     div $1,$5
     add $2,$1

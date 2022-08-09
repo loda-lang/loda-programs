@@ -4,7 +4,7 @@
 
 mov $3,$0
 mul $3,6
-add $3,154
+add $3,152
 lpb $3
   sub $3,1
   add $6,$2

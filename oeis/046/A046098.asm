@@ -1,4 +1,4 @@
-; A046098: Numbers n such that central binomial coefficient C(n, floor[n/2]) is squarefree.
+; A046098: Numbers n such that central binomial coefficient C(n, floor(n/2)) is squarefree.
 ; Submitted by vanos0512
 ; 0,1,2,3,4,5,7,8,11,17,19,23,71
 

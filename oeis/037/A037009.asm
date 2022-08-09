@@ -2,14 +2,14 @@
 ; Submitted by Jamie Morken(l1)
 ; 0,0,0,0,9,11,15,18,22,25
 
-mov $4,$0
 mov $7,$0
+mov $4,$0
 lpb $4
-  mov $0,$7
-  mov $2,0
   sub $4,1
+  mov $0,$7
   sub $0,$4
   mov $1,1
+  mov $2,0
   mov $3,$0
   mul $3,4
   div $3,8

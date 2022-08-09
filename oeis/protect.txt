@@ -35,6 +35,7 @@ A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031377: a(n) = prime(3n-2).
 A031392: a(n) = prime(5*n-4).
+A031908: a(n) = prime(8*n - 5).
 A031915: a(n) = prime(8*n - 7).
 A031919: a(n) = prime(10*n-8).
 A031920: a(n) = prime(10*n-9).

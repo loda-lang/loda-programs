@@ -1,11 +1,11 @@
 ; A010051: Characteristic function of primes: 1 if n is prime, else 0.
-; Submitted by Penguin
+; Submitted by Christian Krause
 ; 0,1,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
 mov $2,2
-mov $4,$0
 add $0,1
 lpb $0
+  mov $4,$1
   mov $3,$0
   div $3,3
   lpb $3
@@ -19,7 +19,4 @@ lpb $0
   pow $0,2
   mul $2,72
 lpe
-cmp $4,0
-cmp $4,0
-mov $0,$1
-mul $0,$4
+mov $0,$4

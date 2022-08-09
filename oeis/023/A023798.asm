@@ -5,11 +5,11 @@
 mov $2,$0
 add $2,1
 lpb $2
+  sub $2,1
   mov $0,$1
   div $0,2
   seq $0,136692 ; Final nonzero digit of n! in base 5.
   add $1,$0
-  sub $2,1
 lpe
 mov $0,$1
 sub $0,1
