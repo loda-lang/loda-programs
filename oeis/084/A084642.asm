@@ -3,6 +3,6 @@
 
 sub $0,1
 mov $1,$0
-cmp $0,0
 gcd $1,2
+cmp $0,0
 add $0,$1

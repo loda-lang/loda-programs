@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  div $0,13
   mod $2,13
+  div $0,13
   add $1,$2
 lpe
 mov $0,$1

@@ -1,27 +1,9 @@
 ; A020797: Decimal expansion of 1/sqrt(40).
-; Submitted by Jon Maiga
+; Submitted by Skivelitis2
 ; 1,5,8,1,1,3,8,8,3,0,0,8,4,1,8,9,6,6,5,9,9,9,4,4,6,7,7,2,2,1,6,3,5,9,2,6,6,8,5,9,7,7,7,5,6,9,6,6,2,6,0,8,4,1,3,4,2,8,7,5,2,4,2,6,3,9,6,2,9,7,2,1,9,3,1,9,6,1,9,1,1,0,6,7,2,1,2,4,0,5,4,1,8,9,6,5,0,1,4,7
 
-mov $1,1
-mov $2,1
-mov $3,$0
-mul $3,4
-lpb $3
-  div $1,3
-  mul $1,$3
-  mul $1,2
-  mul $2,$3
-  mov $5,$0
-  max $5,1
-  add $1,$2
-  div $1,$5
-  div $2,$5
-  add $2,$1
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
-mod $1,10
-mov $0,$1
+mul $0,2
+seq $0,49416 ; Largest number whose square has n digits.
+mul $0,2
+div $0,4
+mod $0,10

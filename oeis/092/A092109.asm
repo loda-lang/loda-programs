@@ -4,7 +4,7 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,115334 ; Numbers n such that 3+2n and 3+4n are primes.
+seq $0,115334 ; Numbers d > 0 such that 3+2d and 3+4d are primes.
 sub $0,$1
 mul $0,4
 add $0,3

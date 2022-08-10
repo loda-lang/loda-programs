@@ -1,11 +1,10 @@
 ; A085385: Binomial transform of hexagonal pyramidal numbers A002412.
-; Submitted by Christian Krause
+; Submitted by Penguin
 ; 0,1,9,46,184,640,2032,6048,17152,46848,124160,321024,813056,2023424,4960256,12001280,28704768,67960832,159449088,371064832,857210880,1967128576,4486856704,10177478656,22968008704,51589939200,115376914432
 
 mov $1,2
 pow $1,$0
-mul $1,2
 seq $0,101986 ; Maximum sum of products of successive pairs in a permutation of order n+1.
 mul $0,4
 mul $0,$1
-div $0,32
+div $0,16

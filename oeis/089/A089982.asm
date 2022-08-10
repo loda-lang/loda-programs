@@ -1,23 +1,20 @@
 ; A089982: Triangular numbers that can be expressed as the sum of 2 positive triangular numbers.
-; Submitted by Jamie Morken(w1)
+; Submitted by pelpolaris
 ; 6,21,36,55,66,91,120,136,171,210,231,276,351,378,406,496,561,666,703,741,820,861,946,990,1035,1081,1176,1225,1326,1378,1431,1485,1540,1596,1653,1711,1770,1891,1953,2016,2080,2211,2278,2346,2556,2701,2775,2850,2926,3003,3081,3240,3321,3486,3741,3916,4005,4186,4278,4371,4465,4560,4656,4851,5151,5356,5565,5671,5778,5886,6216,6328,6441,6555,6786,6903,7021,7140,7260,7381,7626,7750,7875,8001,8128,8256,8385,8646,8778,8911,9045,9316,9591,9870,10011,10153,10296,10585,10731,10878
 
-add $0,1
 mov $2,$0
-mul $2,5
+mov $3,2
+add $0,1
+add $2,4
+pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  gcd $3,2
-  add $5,4
+  max $3,$4
+  mul $3,2
+  seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
   sub $0,$3
-  add $0,1
-  add $1,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,2
+  sub $2,$0
+  add $4,$1
 lpe
-mov $0,$1
-div $0,4
+mov $0,$4
+div $0,2

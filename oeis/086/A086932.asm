@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $1,1
-seq $1,40754 ; Continued fraction for sqrt(782).
-mod $1,3
+gcd $1,4
+mod $1,4
 seq $0,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2)=1, H(p) = p-1 if p=1 (mod 4) and H(p) = p+1 if p=3 (mod 4).
 mul $0,$1

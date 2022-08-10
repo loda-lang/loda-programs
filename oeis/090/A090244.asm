@@ -6,12 +6,9 @@ mov $1,1
 mov $2,1
 lpb $0
   sub $0,2
+  add $2,$1
   add $1,$2
-  add $2,$1
-  mul $1,-1
+  mul $2,-1
 lpe
-lpb $0
-  bin $0,3
-  add $2,$1
-lpe
-gcd $0,$2
+mul $0,$2
+add $0,$1

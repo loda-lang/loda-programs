@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,25810 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^10)) in powers of x.
-  sub $0,8
-  trn $0,3
+  trn $0,11
   add $1,$2
 lpe
 mov $0,$1
