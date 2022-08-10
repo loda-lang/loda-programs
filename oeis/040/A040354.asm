@@ -1,7 +1,8 @@
 ; A040354: Continued fraction for sqrt(374).
-; Submitted by Christian Krause
+; Submitted by William Michael Kanar
 ; 19,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1,18,1,2,38,2,1
 
-seq $0,10140 ; Continued fraction for sqrt(54).
-seq $0,133893 ; Numbers m such that binomial(m+3,m) mod 3 = 0.
-sub $0,6
+seq $0,40774 ; Continued fraction for sqrt(803).
+mul $0,2
+add $0,2
+div $0,3

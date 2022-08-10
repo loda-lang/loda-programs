@@ -1,17 +1,16 @@
 ; A065896: Number of composites <= 2*n.
-; Submitted by Jamie Morken(l1)
+; Submitted by respawner
 ; 0,1,2,3,5,6,7,9,10,11,13,14,16,18,19,20,22,24,25,27,28,29,31,32,34,36,37,39,41,42,43,45,47,48,50,51,52,54,56,57,59,60,62,64,65,67,69,71,72,74,75,76,78,79,80,82,83,85,87,89,91,93,95,96,98,99,101,103,104,105,107,109,111,113,114,115,117,119,120,122,124,125,127,128,130,132,133,135,137,138,139,141,143,145,147,148,149,151,152,153
 
 mov $1,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$1
-  sub $0,$3
-  mul $0,2
-  seq $0,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
-  add $0,17
-  mod $0,4
-  add $2,$0
+lpb $0
+  mov $2,$0
+  mul $2,2
+  seq $2,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$2
+bin $2,0
+add $1,$2
+mov $0,$1
+sub $0,1

@@ -34,6 +34,7 @@ A026945: A bisection of the Motzkin numbers A001006.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031377: a(n) = prime(3n-2).
+A031389: a(n) = prime(8*n-3).
 A031392: a(n) = prime(5*n-4).
 A031908: a(n) = prime(8*n - 5).
 A031915: a(n) = prime(8*n - 7).
@@ -74,9 +75,12 @@ A051456: (Terms in A029625)/2.
 A051674: a(n) = prime(n)^prime(n).
 A052147: a(n) = prime(n) + 2.
 A054526: Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
+A055003: a(n) = prime(prime(n)-1).
 A057902: a(n) = 5^prime(n).
+A059591: Squarefree part of n^2+1.
 A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
+A061397: Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
 A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
 A061725: p^2 + 2 where p is a prime.
 A062011: a(n) = 2*tau(n) = 2*A000005(n).
@@ -89,12 +93,15 @@ A068096: a(n) = F(L(n)) where F(n) = n-th Fibonacci number and L(n) = n-th Lucas
 A068503: Highest power of 3 dividing prime(n)-1.
 A069177: Maximal power of 2 that divides Phi(n), or the size of the Sylow 2-subgroup of the group of units mod n.
 A069262: a(n) = 4*prime(n)^2.
+A071981: Parity of the digits of e in base 10.
 A071986: Parity of the prime-counting function pi(n).
 A072003: 10's complement of final digit of n-th prime.
 A072055: a(n) = 2*prime(n)+1.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
+A073123: a(n) is the largest number such that pi(a(n)) = prime(n).
 A073256: a(n) = phi(n-th composite number).
 A074372: 1 + the sum of the distinct primes dividing n.
+A074400: Sum of the even divisors of 2n.
 A074943: tau(n) (mod 3).
 A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).

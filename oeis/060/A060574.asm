@@ -5,8 +5,8 @@
 add $0,256
 lpb $0
   mov $2,$0
-  div $0,2
   seq $2,131719 ; Period 6: repeat [0, 1, 1, 1, 1, 0].
+  div $0,2
   mul $0,$2
   add $1,$2
 lpe

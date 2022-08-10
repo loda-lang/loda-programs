@@ -5,8 +5,7 @@
 mov $2,$0
 mov $0,1
 add $0,$2
-mov $1,$0
-mul $2,$0
+add $2,1
 lpb $2
   max $2,1
   mov $1,$0
