@@ -1,15 +1,23 @@
 ; A119690: n! mod n*(n+1)/2.
-; Submitted by Stony666
+; Submitted by Christian Krause
 ; 0,2,0,4,0,6,0,0,0,10,0,12,0,0,0,16,0,18,0,0,0,22,0,0,0,0,0,28,0,30,0,0,0,0,0,36,0,0,0,40,0,42,0,0,0,46,0,0,0,0,0,52,0,0,0,0,0,58,0,60,0,0,0,0,0,66,0,0,0,70,0,72,0,0,0,0,0,78,0,0,0,82,0,0,0,0,0,88,0,0,0,0,0,0
 
-dif $0,-2
 add $0,1
-mov $1,$0
-max $1,0
-seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-add $0,2
-mul $1,$0
-trn $1,2
-mov $0,$1
-div $0,2
-mul $0,2
+mov $2,2
+mov $4,$0
+add $0,1
+lpb $0
+  mov $3,$0
+  div $3,3
+  lpb $3
+    mov $5,$4
+    mov $1,$0
+    mod $1,$2
+    add $2,1
+    sub $3,$1
+  lpe
+  div $0,$2
+  pow $0,2
+  mul $2,72
+lpe
+mov $0,$5

@@ -1,8 +1,6 @@
 ; A141620: First differences of A120070.
-; Submitted by Gunnar Hjern
+; Submitted by Skivelitis2
 ; 5,-3,10,-3,-5,17,-3,-5,-7,26,-3,-5,-7,-9,37,-3,-5,-7,-9,-11,50,-3,-5,-7,-9,-11,-13,65,-3,-5,-7,-9,-11,-13,-15,82,-3,-5,-7,-9,-11,-13,-15,-17,101,-3,-5,-7,-9,-11,-13,-15,-17,-19,122,-3,-5,-7,-9,-11,-13,-15,-17,-19,-21
 
 add $0,1
-mov $1,$0
-seq $1,133128 ; Triangle of first differences of A120070 with a leftmost column of A002522.
-mov $0,$1
+seq $0,133128 ; Triangle of first differences of A120070 with a leftmost column of A002522.

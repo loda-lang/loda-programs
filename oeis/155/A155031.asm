@@ -5,7 +5,7 @@
 seq $0,114002 ; Expansion of x^k(1+x^(k+1))/(1-x^(k+1)).
 mul $0,2
 bin $0,2
-mov $2,$0
-cmp $2,0
-sub $0,$2
+mov $1,$0
+cmp $1,0
+sub $0,$1
 mod $0,2

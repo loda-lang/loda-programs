@@ -12,9 +12,9 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    mod $2,$1
     cmp $4,1
     cmp $4,0
+    mod $2,$1
     sub $3,$4
   lpe
   sub $0,1

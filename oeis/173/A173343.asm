@@ -1,20 +1,10 @@
 ; A173343: a(n+4) = a(n+3) - 2*a(n+2) - a(n+1) - a(n)
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,0,-5,-8,0,21,34,0,-89,-144,0,377,610,0,-1597,-2584,0,6765,10946,0,-28657,-46368,0,121393,196418,0,-514229,-832040,0,2178309,3524578,0,-9227465,-14930352,0,39088169,63245986,0,-165580141,-267914296,0
 
-lpb $0
-  sub $0,1
-  sub $3,$4
-  add $1,$3
-  add $1,$3
-  sub $3,$1
-  add $4,1
-  mov $5,$4
-  mov $4,$2
-  sub $4,$1
-  add $5,$4
-  mov $2,$3
-  mov $3,$5
-lpe
-add $5,1
-mov $0,$5
+mov $1,$0
+add $1,2
+seq $1,253198 ; a(n) = a(n-1) + a(n-2) - (-1)^(a(n-1) + a(n-2))) with a(0)=0, a(1)=1.
+seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
+mul $0,$1
+div $0,2

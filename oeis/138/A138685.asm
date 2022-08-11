@@ -1,22 +1,20 @@
 ; A138685: Numbers n such that there is no prime of the form 2n + p^2 for any prime p.
-; Submitted by Jamie Morken(w4)
+; Submitted by Seth
 ; 13,28,34,43,55,58,67,73,76,88,97,100,103,106,118,133,139,145,148,157,160,163,166,178,181,184,193,199,202,208,214,223,232,238,244,253,259,262,265,268,271,283,286,298,301,307,310,313,328,331,340,343,349,352,358,361,364,370,373,379,385,388,391,397,403,412,418,421,430,433,442,445,448,454,457,463,475,478,490,493,496,499,508,514,517,523,529,532,535,538,553,556,559,562,565,568,574,580,583,595
 
-mov $1,10
+mov $1,18
 mov $2,$0
-add $2,2
-pow $2,2
+add $0,1
+add $2,4
+pow $2,4
 lpb $2
-  add $1,6
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  sub $2,$4
+  sub $1,1
+  max $3,$1
+  mul $3,2
+  seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,$3
+  add $1,4
+  sub $2,$0
 lpe
 mov $0,$1
-div $0,2
-sub $0,1
+sub $0,5

@@ -1,12 +1,11 @@
 ; A175078: Number of iterations of {r mod (max prime p < r)} needed to reach 1 or 2 starting at r = n.
-; Submitted by Cruncher Pete
+; Submitted by Penguin
 ; 0,0,1,1,1,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,2,2,1,1,1,1,2,2,2,2,1,1,2,2,1,1,1,1,2,2,1,1,2,2,2,2,1,1,2,2,2,2,1,1,1,1,2,2,2,2,1,1,2,2,1,1,1,1,2,2,2,2,1,1,2,2,1,1,2,2,2,2,1,1,2,2,2,2,2,2,1,1,2
 
 lpb $0
+  trn $0,1
+  seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+  max $0,1
   add $1,1
-  mov $2,$0
-  max $2,2
-  seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
-  sub $0,$2
 lpe
 mov $0,$1

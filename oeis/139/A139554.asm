@@ -1,6 +1,8 @@
 ; A139554: a(n) = lcm(1..floor(n/4)).
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,1,2,2,2,2,6,6,6,6,12,12,12,12,60,60,60,60,60,60,60,60,420,420,420,420,840,840,840,840,2520,2520,2520,2520,2520,2520,2520,2520,27720,27720,27720,27720,27720,27720,27720,27720,360360,360360
 
+trn $0,4
 div $0,4
-seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
+add $0,1

@@ -12,16 +12,16 @@ lpb $6
     mov $3,$2
     dif $3,$0
     mul $3,2
+    cmp $3,$2
+    sub $3,$1
     mov $4,$0
     sub $0,1
-    cmp $3,$2
     add $2,$4
-    sub $3,$1
     cmp $4,0
     sub $4,1
     mul $5,$4
-    add $5,1
     sub $5,$3
+    add $5,1
     add $1,$5
   lpe
   trn $6,4

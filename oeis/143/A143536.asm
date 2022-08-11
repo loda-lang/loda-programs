@@ -1,12 +1,11 @@
 ; A143536: Triangle read by rows, T(n,k) = 1 if n is prime, 0 otherwise.
-; Submitted by Sphynx
+; Submitted by NeoGen
 ; 0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0
 
 lpb $0
   add $2,1
   sub $0,$2
 lpe
-seq $2,166260 ; a(n) = A089026(n) - 1.
 mov $1,$2
-min $1,1
+seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A014553: Maximal multiplicative persistence (or length) of any n-digit number.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,4,5,6,7,7,8,9,9,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
 
 mov $1,4
@@ -15,6 +15,4 @@ lpb $0
   add $1,$4
 lpe
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

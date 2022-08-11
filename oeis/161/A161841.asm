@@ -1,13 +1,13 @@
 ; A161841: Number of factors, with repetition, in all distinct pairs (a <= b) such that a*b = n.
-; Submitted by SystemViper
+; Submitted by eclipse99
 ; 2,2,2,4,2,4,2,4,4,4,2,6,2,4,4,6,2,6,2,6,4,4,2,8,4,4,4,6,2,8,2,6,4,4,4,10,2,4,4,8,2,8,2,6,6,4,2,10,4,6,4,6,2,8,4,8,4,4,2,12,2,4,6,8,4,8,2,6,4,8,2,12,2,4,6,6,4,8,2,10,6,4,2,12,4,4,4,8,2,12,4,6,4,4,4,12,2,6,6,10
 
 add $0,1
+mov $3,-1
 mov $2,$0
 lpb $2
-  add $2,1
   add $3,2
-  sub $4,1
+  add $4,1
   mov $5,$0
   mod $5,$4
   cmp $5,0

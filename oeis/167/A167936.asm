@@ -5,7 +5,7 @@
 mov $2,$0
 mov $0,2
 pow $0,$2
-mov $1,3
 div $2,2
+mov $1,3
 pow $1,$2
 sub $0,$1

@@ -2,15 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,0,1,2,2,3,4,6,7,8,10,12,14,16,19,21,24,27,30
 
-mov $2,$0
-add $2,13
-pow $0,2
-mul $0,2
-add $0,1
-add $0,$2
 mov $1,$0
-lpb $0
-  mov $0,1
-  div $1,25
-lpe
-mov $0,$1
+pow $1,2
+add $1,7
+mul $1,2
+add $0,$1
+div $0,25

@@ -1,17 +1,12 @@
 ; A134402: Triangle read by rows, for n > 0, n zeros followed by n.
-; Submitted by GolfSierra
+; Submitted by Simon Strandgaard
 ; 1,0,1,0,0,2,0,0,0,3,0,0,0,0,4,0,0,0,0,0,5,0,0,0,0,0,0,6,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0
 
 lpb $0
   add $1,1
   sub $0,$1
 lpe
-sub $1,1
-sub $0,$1
-bin $2,$0
-mul $2,-1
-max $1,0
-add $1,$0
-bin $1,$0
-add $1,$2
-mov $0,$1
+bin $0,$1
+trn $1,1
+add $1,1
+mul $0,$1

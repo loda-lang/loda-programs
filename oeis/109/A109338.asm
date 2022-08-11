@@ -2,8 +2,13 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,2,4,4,2,1
 
-seq $0,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
-add $0,1
-mul $0,3
-div $0,20
-add $0,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
+mul $1,$0
+add $1,1
+div $1,3
+mov $0,2
+pow $0,$1

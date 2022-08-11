@@ -1,8 +1,10 @@
 ; A103729: Column k=2 sequence of array A103728.
-; Submitted by Simon Strandgaard
+; Submitted by NeoGen
 ; 1,5,13,41,61,113,145,221,365,421,613,761,841,1013,1301,1625,1741,2113,2381,2521,2965,3281,3785,4513,4901,5101,5513,5725,6161,7813,8321,9113,9385,10805,11101,12013,12961,13613,14621,15665,16021
 
-seq $0,5097 ; (Odd primes - 1)/2.
-bin $0,2
-mul $0,4
+add $0,1
+seq $0,6005 ; The odd prime numbers together with 1.
+sub $0,2
+pow $0,2
+div $0,2
 add $0,1

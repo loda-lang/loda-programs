@@ -1,10 +1,22 @@
 ; A180665: Golden Triangle sums: a(n)=a(n-2)+A001654(n) with a(0)=0 and a(1)=1.
+; Submitted by Jason Jung
 ; 0,1,2,7,17,47,121,320,835,2190,5730,15006,39282,102847,269252,704917,1845491,4831565,12649195,33116030,86698885,226980636,594243012,1555748412,4073002212,10663258237,27916772486,73087059235
 
+mul $0,2
+add $0,4
 lpb $0
-  mov $2,$0
-  seq $2,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
-  trn $0,2
-  add $1,$2
+  sub $0,2
+  add $2,$1
+  add $2,$3
+  mov $5,$1
+  add $5,$2
+  mov $1,$4
+  add $1,$3
+  add $2,1
+  mov $3,$4
+  mov $4,$2
+  mov $2,$3
+  mov $3,$5
 lpe
-mov $0,$1
+mov $0,$5
+div $0,3

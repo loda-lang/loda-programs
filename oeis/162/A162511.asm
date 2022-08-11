@@ -1,12 +1,29 @@
 ; A162511: Multiplicative function with a(p^e)=(-1)^(e-1)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,-1,1,1,1,1,-1,1,1,-1,1,1,1,-1,1,-1,1,-1,1,1,1,1,-1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,1,1,-1,-1,-1,1,-1,1,1,1,1,1,1,1,-1,1,1,-1,-1,1,1,1,-1,1,1,1,-1,1,1,-1,-1,1,1,1,-1,-1,1,1,-1,1,1,1,1,1,-1,1,-1,1,1,1,1,1,-1,-1,1
 
-seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
-gcd $0,2
-sub $2,$0
-sub $1,$2
-sub $1,3
-div $1,2
-mul $1,2
-add $1,1
+mov $1,1
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $3,1
+  lpb $3
+    mov $6,$2
+    cmp $6,0
+    add $2,$6
+    mov $4,$0
+    mod $4,$2
+    mov $5,$2
+    cmp $5,1
+    add $2,1
+    max $4,$5
+    sub $3,$4
+  lpe
+  mov $5,-1
+  lpb $0
+    dif $0,$2
+    mul $5,-1
+  lpe
+  mul $1,$5
+lpe
 mov $0,$1

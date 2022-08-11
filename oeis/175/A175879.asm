@@ -7,9 +7,9 @@ lpb $0
   max $0,1
   mov $3,$2
   div $3,$0
+  mod $3,2
   sub $0,1
   mul $1,2
-  mod $3,2
   add $1,$3
 lpe
 mov $0,$1

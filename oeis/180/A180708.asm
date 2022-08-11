@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  seq $2,144613 ; a(n) = sigma(3*n) = A000203(3*n).
-  sub $2,1
+  seq $1,144613 ; a(n) = sigma(3*n) = A000203(3*n).
+  sub $1,1
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1

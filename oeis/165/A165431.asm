@@ -13,8 +13,8 @@ lpb $0
   sub $3,$0
   sub $3,$0
   bin $3,$1
-  add $1,1
   mul $3,$2
+  add $1,1
   mul $5,-2
   add $5,$3
 lpe

@@ -3,9 +3,9 @@
 
 seq $0,18917 ; Define the generalized Pisot sequence T(a(0),a(1)) by: a(n+2) is the greatest integer such that a(n+2)/a(n+1) < a(n+1)/a(n). This is T(3,5).
 mov $1,$0
-div $0,$0
 mov $2,6
-div $2,$1
+div $2,$0
+div $0,$0
 add $0,$2
 add $0,$1
 sub $0,5

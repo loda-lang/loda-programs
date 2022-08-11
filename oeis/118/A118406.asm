@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   trn $0,1
   mov $2,$0
-  seq $2,100088 ; Expansion of (1-x^2)/((1-2x)(1+x^2)).
+  seq $2,100088 ; Expansion of (1-x^2)/((1-2*x)*(1+x^2)).
   add $1,$2
 lpe
 add $1,1

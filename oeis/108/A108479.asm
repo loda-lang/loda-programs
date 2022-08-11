@@ -1,6 +1,18 @@
 ; A108479: Diagonal sums of number triangle A086645.
-; Submitted by Jon Maiga
+; Submitted by William Michael Kanar
 ; 1,1,2,7,17,44,117,305,798,2091,5473,14328,37513,98209,257114,673135,1762289,4613732,12078909,31622993,82790070,216747219,567451585,1485607536,3889371025,10182505537,26658145586,69791931223,182717648081
 
+add $0,1
 mul $0,2
-seq $0,94686 ; A Fibonacci convolution.
+lpb $0
+  sub $0,1
+  add $1,$5
+  add $2,$4
+  mov $3,$6
+  mov $6,$4
+  mov $4,$2
+  mov $2,$1
+  mov $1,1
+  add $5,$3
+lpe
+mov $0,$2

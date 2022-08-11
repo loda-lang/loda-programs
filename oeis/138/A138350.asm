@@ -1,10 +1,8 @@
 ; A138350: Moment sequence of tr(A^2) in USp(4).
-; Submitted by Jon Maiga
+; Submitted by pututu
 ; 1,-1,3,-6,20,-50,175,-490,1764,-5292,19404,-60984,226512,-736164,2760615,-9202050,34763300,-118195220,449141836,-1551580888,5924217936,-20734762776,79483257308,-281248448936,1081724803600,-3863302870000,14901311070000,-53644719852000
 
 mov $1,-1
 pow $1,$0
-mul $1,35
 seq $0,5558 ; a(n) is the number of n-step walks on square lattice such that 0 <= y <= x at each step.
 mul $0,$1
-div $0,35

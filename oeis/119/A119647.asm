@@ -1,11 +1,9 @@
 ; A119647: Fixed point of the morphism 1->{1,2}, 2->{1,3}, 3->{1}.
-; Submitted by Orange Kid
+; Submitted by Odd-Rod
 ; 1,2,1,3,1,2,1,1,2,1,3,1,2,1,2,1,3,1,2,1,1,2,1,3,1,2,1,3,1,2,1,1,2,1,3,1,2,1,2,1,3,1,2,1,1,2,1,3,1,2,1,1,2,1,3,1,2,1,2,1,3,1,2,1,1,2,1,3,1,2,1,3,1,2,1,1,2,1,3,1,2,1,2,1,3,1,2,1,1,2,1,3,1,2,1,2,1,3,1,2
 
-seq $0,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
-lpb $0
-  add $1,$0
-  add $0,$1
-  mod $0,4
-lpe
-add $0,1
+seq $0,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n >= 0, S(n+3) = S(n+2) S(n+1) S(n).
+mov $1,36
+add $1,$0
+mov $0,$1
+sub $0,35

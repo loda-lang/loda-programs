@@ -1,9 +1,13 @@
 ; A155040: A symmetric (1,-1)-triangle.
-; Submitted by Jamie Morken(s2)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,1,-1,1,1,-1,-1,1,1,-1,1,-1,1,1,-1,1,1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,1
 
-seq $0,157454 ; Triangle read by rows: T(n, m) = min(2*m - 1, 2*(n - m) + 1).
-div $0,2
-mov $1,-1
-pow $1,$0
-mov $0,$1
+lpb $0
+  add $1,1
+  sub $0,$1
+  mov $2,$1
+  sub $2,$0
+lpe
+min $2,$0
+mov $0,-1
+pow $0,$2

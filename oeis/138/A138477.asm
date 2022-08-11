@@ -1,15 +1,20 @@
 ; A138477: Mix A084175 and 2*A084175.
-; Submitted by Christian Krause
+; Submitted by Orange Kid
 ; 0,0,1,2,3,6,15,30,55,110,231,462,903,1806,3655,7310,14535,29070,58311,116622,232903,465806,932295,1864590,3727815,7455630,14913991,29827982,59650503
 
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
+lpb $0
   sub $0,1
-  seq $0,138495 ; First differences of A138477.
-  add $1,$0
+  add $1,$5
+  mul $4,2
+  sub $3,$4
+  mov $4,$2
+  mov $2,$3
+  add $2,$1
+  add $2,1
+  mul $2,2
+  add $5,$4
+  mov $1,$3
+  mov $3,$5
 lpe
-mov $0,$1
+mov $0,$3
+div $0,2

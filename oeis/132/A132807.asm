@@ -4,6 +4,6 @@
 
 mov $1,2
 pow $1,$0
-seq $0,120304 ; Catalan number minus 2, or ((2n)!/(n!*(n+1)!) - 2).
+seq $0,120304 ; Catalan numbers minus 2.
 add $0,$1
 add $0,1

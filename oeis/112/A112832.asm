@@ -1,8 +1,7 @@
 ; A112832: Number of non-intersecting cycle systems in a particular directed graph.
-; Submitted by GolfSierra
+; Submitted by owensse
 ; 1,2,5,17,61,226,841,3137,11705,43682,163021,608401,2270581,8473922,31625105,118026497,440480881,1643897026,6135107221,22896531857,85451020205,318907548962,1190179175641,4441809153601,16577057438761
 
-add $0,1
-seq $0,3500 ; a(n) = 4*a(n-1) - a(n-2) with a(0) = 2, a(1) = 4.
-div $0,12
+seq $0,102206 ; a(0) = 3, a(1) = 8, a(n+2) = 4*a(n+1) - a(n) - 2.
+div $0,6
 add $0,1
