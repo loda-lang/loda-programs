@@ -1,7 +1,16 @@
 ; A339265: Expansion of Product_{n >= 1} (1 - x^(2*n))*(1 - x^(2*n-1))*(1 - x^(2*n+1)).
+; Submitted by Simon Strandgaard
 ; 1,-1,-1,-1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1
 
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-mov $1,-1
-pow $1,$0
-mov $0,$1
+lpb $0
+  sub $0,$1
+  add $1,4
+  sub $0,$1
+lpe
+mul $0,2
+sub $0,1
+sub $1,$0
+mov $2,$1
+add $2,$1
+add $0,$2
+mod $0,2

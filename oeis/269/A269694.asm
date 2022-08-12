@@ -1,6 +1,16 @@
 ; A269694: Product of first n nonzero Jacobsthal numbers (A001045).
-; Submitted by Jamie Morken(s2)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,3,15,165,3465,148995,12664575,2165642325,738484032825,504384594419475,688484971382583375,1880252456845835197125,10268058666835106011499625,112158004817839862963610403875
 
-seq $0,15013 ; q-factorial numbers for q=-2.
-gcd $0,$0
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $4,2
+  mul $2,$4
+  add $2,1
+  mul $1,$2
+  trn $4,3
+lpe
+gcd $3,$1
+mov $0,$3

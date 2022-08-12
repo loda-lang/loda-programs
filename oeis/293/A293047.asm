@@ -1,16 +1,15 @@
 ; A293047: Number of odd permutations on {1,2,...,n} with exactly 2 weak excedances.
-; Submitted by Cruncher Pete
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,0,0,3,4,15,26,63,120,255,502,1023,2036,4095,8178,16383,32752,65535,131054,262143,524268,1048575,2097130,4194303,8388584,16777215,33554406,67108863,134217700,268435455,536870882,1073741823,2147483616,4294967295,8589934558
 
 mov $3,$0
+sub $3,1
+mov $1,2
+pow $1,$3
 mov $2,$0
-add $2,1
-lpb $2
-  mov $0,$3
-  sub $0,$2
-  mov $1,$3
-  bin $1,$0
-  sub $2,2
-  add $4,$1
-lpe
-mov $0,$4
+mod $2,2
+sub $2,1
+mul $2,$3
+add $2,$1
+mov $0,$2
+sub $0,1

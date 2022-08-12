@@ -4,12 +4,12 @@
 
 mov $3,$0
 lpb $3
-  mul $1,2
+  sub $3,1
   mov $2,$0
   add $2,1
-  sub $3,1
   gcd $2,$3
   min $2,2
+  mul $1,2
   add $1,$2
 lpe
 mov $0,$1

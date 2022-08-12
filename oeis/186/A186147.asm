@@ -11,22 +11,22 @@ lpb $8
   lpb $2
     mov $5,2
     lpb $5
-      pow $2,3
       div $5,10
+      pow $2,3
     lpe
     mov $6,$2
     mov $2,1
     lpb $6
+      add $6,1
       add $5,2
       mov $4,$5
-      add $6,$2
       trn $6,$5
     lpe
   lpe
   mov $7,$8
   lpb $7
-    mov $1,$4
     sub $7,1
+    mov $1,$4
   lpe
 lpe
 trn $1,2

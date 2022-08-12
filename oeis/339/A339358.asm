@@ -5,24 +5,24 @@
 mov $3,1
 lpb $3
   sub $3,1
-  mov $4,$0
   mov $6,$0
+  mov $4,$0
   lpb $4
-    mov $0,$6
     sub $4,1
-    sub $0,$4
     mov $5,0
-    mov $8,2
-    lpb $8
-      sub $8,1
-      add $0,$8
+    mov $0,$6
+    sub $0,$4
+    mov $1,2
+    lpb $1
+      sub $1,1
+      add $0,$1
       trn $0,1
       div $0,2
       seq $0,27790 ; a(n) = 10*(n+1)*binomial(n+3,5)/3.
       add $5,$0
-      mul $0,0
-      mov $7,$8
+      mov $7,$1
       mul $7,$5
+      mul $0,0
       add $2,$7
     lpe
   lpe

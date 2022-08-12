@@ -1,5 +1,5 @@
 ; A261795: First differences of A261793.
-; Submitted by Dingo
+; Submitted by Penguin
 ; 2,1,1,1,1,1,1,1,2,3,2,2,2,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,3,2,2,2,2,2,2,2,2,3,3,3,2,4,2,2
 
 add $0,1
@@ -11,7 +11,3 @@ lpb $2
   seq $0,261794 ; a(n) is the smallest nonzero number that is not a substring of n in decimal representation.
   add $1,$0
 lpe
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1

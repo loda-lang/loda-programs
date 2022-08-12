@@ -9,7 +9,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   add $0,2
-  seq $0,198081 ; Ceiling(n*Sqrt(3)).
+  seq $0,198081 ; a(n) = ceiling(n*sqrt(3)).
   mul $1,-2
   add $1,$0
   mul $1,2

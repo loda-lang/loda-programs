@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,75495 ; a(n) = Sum_{i=0..floor(n/2)} (-1)^(i+floor(n/2))*S(2i+e), where S(n) are inverted tribonacci numbers (A075298).
+  seq $3,75495 ; Convolution of A075298 with A056594.
   min $3,1
   cmp $3,1
   sub $0,$3

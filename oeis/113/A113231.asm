@@ -11,8 +11,8 @@ lpb $0
   sub $4,1
   mov $3,$4
   bin $3,$1
-  mov $1,2
   pow $3,$2
+  mov $1,2
   add $5,$3
 lpe
 mov $0,$5

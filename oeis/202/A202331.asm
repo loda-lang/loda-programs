@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,202330 ; Number of (n+1) X 4 binary arrays with consecutive windows of two bits considered as a binary number nondecreasing in every row and column.
   sub $2,2
+  sub $0,1
   add $1,$2
 lpe
 add $1,49

@@ -10,9 +10,8 @@ lpb $0
 lpe
 bin $2,$0
 add $1,$2
-div $1,2
 add $1,1
 pow $1,2
-div $1,2
+div $1,8
 add $1,1
 add $0,$1

@@ -7,6 +7,6 @@ lpb $0
 lpe
 add $0,1
 lpb $1
-  mul $0,4
   div $1,4
+  mul $0,4
 lpe

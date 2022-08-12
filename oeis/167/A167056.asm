@@ -1,25 +1,17 @@
 ; A167056: Numbers n such that 12*n + 7 is prime.
-; Submitted by vonboedefeldt
+; Submitted by Jason Jung
 ; 0,1,2,3,5,6,8,10,11,12,13,16,17,18,22,23,25,27,30,31,36,38,40,41,43,45,47,50,51,52,53,57,60,61,62,65,67,68,71,73,75,76,80,82,86,87,88,90,93,97,102,106,107,108,110,116,118,120,121,122,123,127,128,130,131,135,138,141,143,145,146,148,152,155,156,162,165,166,167,173,177,178,181,183,186,187,190,192,195,197,198,205,208,211,212,220,221,222,223,225
 
-mov $2,$0
-add $2,2
-pow $2,4
-lpb $2
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  mov $5,$1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $1,12
-  mul $2,$4
-  sub $2,1
-  add $5,1
-  add $5,$1
+mov $1,3
+mov $2,6
+mov $3,$0
+pow $3,5
+lpb $3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,12
+  sub $0,$1
+  mov $1,$2
+  sub $3,$0
 lpe
-mov $0,$1
-sub $0,24
+mov $0,$2
 div $0,12
-add $0,1

@@ -8,13 +8,12 @@ trn $2,1
 mul $0,2
 add $0,$1
 add $0,$2
-mul $1,2
 sub $1,2
+mul $1,2
 lpb $1
-  sub $0,2
   add $0,$1
-  trn $1,12
+  trn $1,10
   sub $0,$1
-  trn $1,6
+  trn $1,8
 lpe
 add $0,1

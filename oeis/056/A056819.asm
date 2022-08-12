@@ -12,7 +12,7 @@ lpb $3
     lpb $5
       dif $5,$3
     lpe
-    cmp $6,0
+    cmp $6,2
     cmp $6,0
     mov $1,$2
     sub $1,1
@@ -20,7 +20,6 @@ lpb $3
   pow $1,$6
   add $2,1
   sub $3,1
-  add $6,$5
   mul $0,$1
   mov $1,1
 lpe

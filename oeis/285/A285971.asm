@@ -1,12 +1,11 @@
 ; A285971: Positions of 0 in A285969; complement of A285970.
-; Submitted by Jon Maiga
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,6,8,11,14,18,21,24,26,30,32,35,38,41,43,47,50,54,56,59,62,66,69,72,74,78,81,85,87,90,93,96,98,102,104,107,110,114,117,120,122,126,128,131,134,137,139,143,146,150,152,155,158,161,163,167,169,172,175,179,182,185,187,191,194,198,200,203,206,210,213,216,218,222,224,227,230,233,235,239,242,246,248,251,254,258,261,264,266,270,273,277,279,282,285,288,290,294,296,299
 
 mov $1,$0
-mov $2,$0
-seq $0,72939 ; Define a sequence c depending on n as follows: c(1)=1 and c(2)=n; c(k+2) = (c(k+1) + c(k))/2 if c(k+1) and c(k) have the same parity; otherwise c(k+2) = abs(c(k+1) - 2*c(k)); sequence gives values of n such that lim_{k->oo} c(k) = infinity.
+seq $0,79523 ; Utterly odd numbers: numbers whose binary representation ends in an odd number of ones.
+mul $1,3
 add $1,$0
 div $1,2
-add $1,$2
 mov $0,$1
-add $0,1
+add $0,2

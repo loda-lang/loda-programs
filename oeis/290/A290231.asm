@@ -1,14 +1,13 @@
 ; A290231: Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 771", based on the 5-celled von Neumann neighborhood.
-; Submitted by biodoc
+; Submitted by Coleslaw
 ; 1,3,5,15,27,63,87,255,495,1023,1887,4095,7103,16383,21887,65535,130815,262143,521727,1048575,2079743,4194303,8214527,16777215,32501759,67108863,123691007,268435455,465289215,1073741823,1431666687,4294967295,8589869055,17179869183,34359083007,68719476735,137434497023,274877906943,549711249407,1099511627775,2198753771519,4398046511103,8793398181887,17592186044415,35166047174655,70368744177663,140554239213567,281474976710655,561850425016319,1125899906842623,2240804529635327,4503599627370495
 
 mov $1,$0
 seq $0,285774 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 84", based on the 5-celled von Neumann neighborhood.
 div $0,2
 mul $0,-1
-sub $0,1
 mov $2,2
 pow $2,$1
 add $0,$2
 mul $0,2
-add $0,1
+sub $0,1

@@ -1,10 +1,10 @@
 ; A271491: Arises in enumeration of locally convex functions.
-; Submitted by Jon Maiga
+; Submitted by pelpolaris
 ; 1,3,9,16,20,21,21,21,21,21,21,21
 
+mov $6,2
 mov $8,$0
 mov $4,$0
-add $4,1
 lpb $4
   sub $4,1
   mov $7,0
@@ -32,3 +32,4 @@ lpb $4
   add $6,$2
 lpe
 mov $0,$6
+sub $0,1

@@ -2,15 +2,15 @@
 ; Submitted by Jamie Morken(w4)
 ; 1,2,1,2,1,3,1,1,2,1,1,1,1,1,1,1,1,1,1
 
-add $0,1
 mov $1,1
 mov $2,1
+add $0,1
 lpb $0
   mov $3,$0
   lpb $3
-    add $2,1
     div $3,2
     bin $3,4
+    add $2,1
   lpe
   mov $4,1
   lpb $0

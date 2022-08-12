@@ -1,37 +1,12 @@
 ; A253629: Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,1,4,2,6,4,8,4,12,6,12,8,14,8,24,8,18,12,20,12,32,12,24,16,30,14,36,16,30,24,32,16,48,18,48,24,38,20,56,24,42,32,44,24,72,24,48,32,56,30,72,28,54,36,72,32,80,30,60,48,62,32,96,32,84,48,68,36,96,48,72,48,74,38,120,40,96,56,80,48,108,42,84,64,108,44,120,48,90,72,112,48,128,48,120,64,98,56,144,60
 
-mov $1,1
-mov $2,2
+mov $1,-1
+pow $1,$0
+add $1,2
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+mul $0,$1
+sub $0,2
+div $0,3
 add $0,1
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $2,1
-    max $4,$5
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-  lpe
-  dif $5,$2
-  mul $1,$5
-  add $2,1
-  lpb $2
-    mul $1,$2
-    mod $2,4
-  lpe
-lpe
-mov $0,$1

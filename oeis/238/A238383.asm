@@ -1,36 +1,17 @@
 ; A238383: Row sums of triangle in A139040.
-; Submitted by pututu
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,8,11,14,18,22,28,34,43,52,65,78,97,116,144,172,213,254,314,374,462,550,679,808,997,1186,1463,1740,2146,2552,3147,3742,4614,5486,6764,8042,9915,11788,14533,17278,21301,25324,31220,37116,45757
 
-mov $8,$0
-mov $5,$0
-add $5,1
-lpb $5
-  sub $5,1
-  mov $0,$8
-  sub $0,$5
-  add $7,1
-  lpb $7
-    sub $7,1
-    mul $0,2
-    mov $2,$0
-    mov $3,1
-    mov $4,1
-    mov $0,0
-    add $2,2
-    lpb $2
-      lpb $4
-        mov $6,$0
-        mov $0,$4
-        mov $4,0
-      lpe
-      trn $2,4
-      mov $4,$3
-      sub $4,$6
-      add $3,$0
-    lpe
-    mov $0,2
-  lpe
-  add $1,$4
+lpb $0
+  sub $0,1
+  mov $2,1
+  add $2,$3
+  sub $2,$0
+  max $2,1
+  mov $3,$1
+  mov $1,$4
+  add $4,$2
+  mov $2,$4
 lpe
-mov $0,$1
+mov $0,$2
+add $0,1

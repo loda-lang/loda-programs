@@ -1,4 +1,4 @@
-; A241458: Number of simple connected graphs g on n nodes with |Aut(g)| = 10
+; A241458: Number of simple connected graphs g on n nodes with |Aut(g)| = 10.
 ; Submitted by Jamie Morken(w3)
 ; 0,0,0,0,1,1,1,3,13,123
 

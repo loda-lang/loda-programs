@@ -23,6 +23,7 @@ A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008864: a(n) = prime(n) + 1.
+A014683: In the sequence of positive integers add 1 to each prime number.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
 A014690: a(n) = n + prime(n+1).
 A014692: a(n) = prime(n) - (n-1).
@@ -32,6 +33,7 @@ A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A023589: Number of distinct prime divisors of 2*p(n)+1.
 A023590: Greatest prime divisor of 2*prime(n)+1.
 A026945: A bisection of the Motzkin numbers A001006.
+A030078: Cubes of primes.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031377: a(n) = prime(3n-2).
@@ -92,6 +94,7 @@ A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062312: Nonprime numbers squared.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).
+A063439: a(n) = phi(n)^phi(n).
 A066872: p^2 + 1 as p runs through the primes.
 A068096: a(n) = F(L(n)) where F(n) = n-th Fibonacci number and L(n) = n-th Lucas number.
 A068503: Highest power of 3 dividing prime(n)-1.
@@ -135,8 +138,10 @@ A086801: a(n) = prime(n) - 3.
 A086874: Seventh power of odd primes.
 A086995: Number of 1's in binary representation of n-th decimal digit in expansion of Pi.
 A088308: 2 followed by list of composite numbers mod 10.
+A088377: (Smallest prime-factor of n)^2.
 A088580: a(n) = 1 + sigma(n).
 A088673: n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
+A088707: Semiprimes + 1.
 A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
@@ -153,6 +158,7 @@ A099817: Bisection of A000796 (decimal expansion of Pi).
 A099822: Bisection of A005117.
 A099836: Bisection of A000961.
 A099923: Fourth powers of Lucas numbers A000032.
+A099980: Bisection of A001358.
 A099990: a(n) = Moebius(2n+1).
 A099991: a(n) = Moebius(2n).
 A100005: Bisection of A001414.
@@ -238,6 +244,7 @@ A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the larges
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
 A166010: a(n) = prime(n)^2-4.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
+A172190: a(n) = 2*prime(n)^3.
 A172282: Squares of Bernoulli number denominators A027642.
 A174429: Collatz-Fibonacci numbers: a(1) = a(2) = 1; if n > 2, a(n) = a(C(n)) + a(C(C(n))), where  C(n) = A006370(n).
 A175221: a(n) = prime(n) + 4.
@@ -245,6 +252,7 @@ A175222: a(n) = prime(n) + 5.
 A175223: a(n) = prime(n) + 7.
 A175224: a(n) = prime(n) + 8.
 A175225: a(n) = prime(n) + 10.
+A175247: Primes (A000040) with noncomposite (A008578) subscripts.
 A176406: Odd semiprimes minus 2.
 A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent B_1.
 A177882: Trisection of A001317.
@@ -254,6 +262,7 @@ A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
 A182200: a(n) = prime(n)^2-3.
 A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
+A195459: a(n) = phi(3*n)/2.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A229787: Primes modulo 24.
@@ -264,6 +273,7 @@ A242119: Primes modulo 18.
 A242120: Primes modulo 20.
 A242122: Primes modulo 22.
 A242125: Primes modulo 27.
+A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
 A265538: Largest base-7 palindrome m <= n, written in base 7.
 A268354: Highest power of 7 dividing n.
@@ -274,6 +284,7 @@ A274536: a(n) = 6 * sigma(n).
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).
+A299919: Motzkin numbers (A001006) mod 4.
 A306695: a(n) = gcd(n, psi(n)).
 A319089: a(n) = tau(n)^3, where tau is A000005.
 A319528: a(n) = 8 * sigma(n).

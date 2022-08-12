@@ -1,4 +1,4 @@
-; A355751: Positive numbers k such that the centered cube number k^3 + (k+1)^3 is equal to the difference of two positive cubes: a(n) = 27*t^3 * (27*t^6 + 1) /4 with t = 2*n-1.
+; A355751: Positive numbers k such that the centered cube number k^3 + (k+1)^3 is equal to the difference of two positive cubes and to A352759(n).
 ; Submitted by shiva
 ; 4,121,562,1543,3280,5989,9886,15187,22108,30865,41674,54751,70312,88573,109750,134059,161716,192937,227938,266935,310144,357781,410062,467203,529420,596929,669946,748687,833368,924205,1021414,1125211,1235812,1353433
 

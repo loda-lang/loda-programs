@@ -1,9 +1,8 @@
 ; A301773: Number of odd chordless cycles in the 2n-Moebius ladder graph.
-; Submitted by trigggl
+; Submitted by Elzeard BOUFFIER
 ; 0,4,8,16,48,124,320,844,2208,5776,15128,39604,103680,271444,710648,1860496,4870848,12752044,33385280,87403804,228826128,599074576,1568397608,4106118244,10749957120,28143753124,73681302248,192900153616,505019158608,1322157322204
 
-seq $0,240926 ; a(n) = 2 + L(2*n) = 2 + A005248(n), n >= 0, with the Lucas numbers (A000032).
-add $0,3
+seq $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
+add $0,1
 div $0,4
-sub $0,1
 mul $0,4

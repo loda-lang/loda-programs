@@ -1,22 +1,18 @@
 ; A046954: Numbers k such that 6*k + 1 is nonprime.
-; Submitted by Jamie Morken(w2)
+; Submitted by stoneageman
 ; 0,4,8,9,14,15,19,20,22,24,28,29,31,34,36,39,41,42,43,44,48,49,50,53,54,57,59,60,64,65,67,69,71,74,75,78,79,80,82,84,85,86,88,89,92,93,94,97,98,99,104,106,108,109,111,113,114,116,117,119,120,124,127,129,130,132,133,134,136,139,140,141,144,145,148,149,150,152,154,155,157,158,159,160,162,163,164,167,169,171,174,176,179,180,183,184,185,189,190,191
 
 mov $2,$0
-add $2,2
-pow $2,2
+add $0,1
+add $2,4
+pow $2,4
 lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,6
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+  max $3,$1
+  mul $3,2
+  seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,$3
+  add $1,3
+  sub $2,$0
 lpe
 mov $0,$1
-sub $0,6
-div $0,6
+div $0,3

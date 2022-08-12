@@ -5,7 +5,5 @@
 mul $0,2
 add $0,5
 seq $0,107857 ; a(n) = floor[(phi + n mod 2)*a(n-1)], a(1)=1.
-mul $0,132
-sub $0,1452
-div $0,11
-add $0,126
+mul $0,12
+sub $0,6

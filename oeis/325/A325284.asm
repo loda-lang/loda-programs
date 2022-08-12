@@ -1,7 +1,8 @@
 ; A325284: Numbers whose prime indices form an initial interval with a single hole: (1, 2, ..., x, x + 2, ..., m - 1, m), where x can be 0 but must be less than m - 1.
-; Submitted by Stony666
+; Submitted by NeoGen
 ; 3,9,10,15,20,27,40,42,45,50,70,75,80,81,84,100,105,126,135,140,160,168,200,225,243,250,252,280,294,315,320,330,336,350,375,378,400,405,462,490,500,504,525,560,588,640,660,672,675,700,729,735,756,770,800
 
+mov $1,2
 mov $2,$0
 add $2,2
 pow $2,2

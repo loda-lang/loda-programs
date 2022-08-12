@@ -1,8 +1,8 @@
 ; A212793: Characteristic function of cubefree numbers, A004709.
-; Submitted by arkiss
+; Submitted by Pavel_Kirpichenko
 ; 1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1
 
-mov $1,$0
-seq $1,189021 ; Apostol's second order Möbius (or Moebius) function mu_2(n).
-pow $1,2
+seq $0,62378 ; n divided by largest cubefree factor of n.
+mov $1,1
+div $1,$0
 mov $0,$1

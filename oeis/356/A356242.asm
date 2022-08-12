@@ -1,5 +1,5 @@
 ; A356242: a(n) is the number of Fermat numbers dividing n, counted with multiplicity.
-; Submitted by Jason Jung
+; Submitted by vonboedefeldt
 ; 0,0,1,0,1,1,0,0,2,1,0,1,0,0,2,0,1,2,0,1,1,0,0,1,2,0,3,0,0,2,0,0,1,1,1,2,0,0,1,1,0,1,0,0,3,0,0,1,0,2,2,0,0,3,1,0,1,0,0,2,0,0,2,0,1,1,0,1,1,1,0,2,0,0,3,0,0,1,0,1,4,0,0,1,2,0,1,0,0,3,0,0,1,0,1,1,0,0,2,2
 
 add $0,1
@@ -19,6 +19,7 @@ lpb $0
     mul $2,2
     add $2,1
     sub $2,$4
+    mul $4,2
     max $4,$5
     sub $3,$4
   lpe

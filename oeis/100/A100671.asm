@@ -1,23 +1,21 @@
 ; A100671: A Graham-Pollak-like sequence with multiplier 3 instead of 2.
-; Submitted by WTBroughton
+; Submitted by chordtoll
 ; 1,2,4,7,12,21,37,64,111,193,335,581,1007,1745,3023,5236,9069,15708,27207,47124,81622,141374,244867,424122,734601,1272367,2203805,3817103,6611417,11451311,19834253,34353934,59502759,103061802,178508278,309185407,535524834
 
 mov $1,8
-add $0,2
+add $0,1
 lpb $0
   sub $0,1
-  add $1,$5
+  add $1,$2
   add $1,$3
   max $4,7
-  add $5,$1
-  mov $2,$4
-  add $2,1
+  add $2,$1
   mov $3,$4
   mul $3,$1
-  div $3,$5
+  div $3,$2
   sub $4,5
   add $4,$3
-  mov $3,$5
+  mov $3,$2
 lpe
-mov $0,$2
-sub $0,9
+mov $0,$4
+sub $0,8

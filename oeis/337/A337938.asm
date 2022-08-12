@@ -9,7 +9,7 @@ lpb $2
   mov $2,1
   mov $0,$1
   seq $0,38760 ; a(n) = n - floor(sqrt(n)) * ceiling(sqrt(n)).
-  mov $1,1
+  mov $1,0
   gcd $3,$0
 lpe
 mov $0,$3

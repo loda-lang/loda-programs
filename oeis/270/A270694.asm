@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,4126 ; a(n) = n*(7*n^2 - 1)/6.
+  sub $0,1
   add $1,$2
   mul $1,-1
 lpe

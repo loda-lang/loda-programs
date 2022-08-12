@@ -1,7 +1,19 @@
 ; A191488: A companion to Gould’s sequence A001316.
-; Submitted by Jon Maiga
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 4,6,8,10,8,12,16,18,8,12,16,20,16,24,32,34,8,12,16,20,16,24,32,36,16,24,32,40,32,48,64,66,8,12,16,20,16,24,32,36,16,24,32,40,32,48,64,68,16,24,32,40,32,48,64,72,32,48,64,80,64,96,128
 
-mul $0,2
-add $0,2
-seq $0,105321 ; Convolution of binomial(1,n) and Gould's sequence A001316.
+mov $2,3
+lpb $0
+  lpb $0
+    dif $0,2
+    mov $1,3
+  lpe
+  div $0,2
+  add $2,$1
+  mul $2,2
+  add $2,3
+lpe
+mov $0,$2
+sub $0,3
+div $0,3
+add $0,4

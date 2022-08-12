@@ -1,15 +1,8 @@
 ; A085002: a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
-; Submitted by pelpolaris
+; Submitted by stoneageman
 ; 1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1
 
-mov $2,$0
-add $0,1
-mov $1,$0
-pow $1,2
-lpb $1
-  add $2,2
-  trn $1,$2
-lpe
-add $0,$2
-div $0,2
+max $1,$0
+seq $0,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+add $0,$1
 mod $0,2

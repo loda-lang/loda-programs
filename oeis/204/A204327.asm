@@ -1,8 +1,16 @@
 ; A204327:  a(n) = Pell(n^2).
-; Submitted by Christian Krause
+; Submitted by Stony666
 ; 1,12,985,470832,1311738121,21300003689580,2015874949414289041,1111984844349868137938112,3575077977948634627394046618865,66992092050551637663438906713182313772,7316660981177400006023755031791634132229378601
 
+mov $4,1
 add $0,1
 pow $0,2
-seq $0,163271 ; Numerators of fractions in a 'zero-transform' approximation of sqrt(2) by means of a(n) = (a(n-1) + c)/(a(n-1) + 1) with c=2 and a(1)=0.
-div $0,2
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $1,$4
+  add $4,$2
+  add $4,$2
+  add $2,$1
+lpe
+mov $0,$2

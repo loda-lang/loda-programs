@@ -1,8 +1,8 @@
 ; A355681: The "coarser" of 2 representations of the Cantor middle thirds set viewed from a quarter point that lies at a(0) (the third 1 in the data).
-; Submitted by GolfSierra
+; Submitted by eclipse99
 ; -1,1,0,0,-1,1,0,0,0,0,0,0,-1,1,0,0,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,1,0,0,-1,1,0,0,0,0,0,0,-1,1,0,0,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $2,-2
+mov $2,-1
 lpb $0
   sub $0,1
   mov $1,$0
@@ -16,4 +16,3 @@ lpb $0
   sub $2,$1
 lpe
 mov $0,$2
-div $0,2

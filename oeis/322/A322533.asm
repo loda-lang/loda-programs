@@ -1,35 +1,21 @@
 ; A322533: Position of 1/3^n in the sequence of all numbers 1/2^m, 1/3^m, 2/3^m arranged in decreasing order.
-; Submitted by Jon Maiga
+; Submitted by GolfSierra
 ; 3,7,10,14,17,21,25,28,32,35,39,43,46,50,53,57,60,64,68,71,75,78,82,86,89,93,96,100,103,107,111,114,118,121,125,129,132,136,139,143,146,150,154,157,161,164,168,172,175,179,182,186,190,193,197,200,204,207,211,215,218,222,225,229,233,236,240,243,247,250,254,258,261,265,268,272,276,279,283,286,290,293,297,301,304,308,311,315,319,322,326,329,333,336,340,344,347,351,354,358
 
-mov $5,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$5
-  sub $0,$3
-  mov $6,$0
-  mov $7,0
-  mov $8,2
-  lpb $8
-    sub $8,1
-    mov $0,$6
-    add $0,$8
-    seq $0,122437 ; Allowable values of the "dropping time" of the Collatz (3x+1) iteration.
-    mov $2,5
-    mul $2,$0
-    mov $0,$2
-    div $0,5
-    mov $1,$8
-    mul $1,$0
-    add $7,$1
-  lpe
-  min $6,1
-  mul $6,$0
-  mov $0,$7
-  sub $0,$6
-  add $0,1
-  add $4,$0
+mov $1,1
+mov $2,2
+lpb $0
+  sub $0,1
+  add $2,$1
+  div $1,$2
+  mul $2,12
 lpe
-mov $0,$4
+gcd $1,2
+lpb $2
+  div $2,2
+  add $1,2
+lpe
+mov $0,$1
+sub $0,5
+div $0,2
 add $0,3

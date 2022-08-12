@@ -7,6 +7,7 @@ add $0,1
 lpb $0
   add $2,1
   mov $3,$0
+  sub $3,1
   lpb $3
     mov $4,$0
     mod $4,$2
@@ -22,8 +23,8 @@ lpb $0
     add $6,1
   lpe
   mov $5,$4
-  mul $5,5
-  sub $5,11
+  mul $5,-1
+  sub $5,5
   add $5,$6
   bin $5,$6
   mul $1,$5

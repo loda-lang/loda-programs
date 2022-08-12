@@ -1,7 +1,7 @@
 ; A349273: Number of odd divisors of prime(n) - 1.
-; Submitted by Christian Krause
+; Submitted by [SG-FC] hl
 ; 1,1,1,2,2,2,1,3,2,2,4,3,2,4,2,2,2,4,4,4,3,4,2,2,2,3,4,2,4,2,6,4,2,4,2,6,4,5,2,2,2,6,4,2,3,6,8,4,2,4,2,4,4,4,1,2,2,8,4,4,4,2,6,4,4,2,8,4,2,4,2,2,4,4,8,2,2,6,3,4,4,8,4,4,4,4,2,4,4,8,2,2,6,6,4
 
-seq $0,40976 ; a(n) = prime(n) - 2.
-div $0,2
-seq $0,1227 ; Number of odd divisors of n.
+seq $0,6093 ; a(n) = prime(n) - 1.
+seq $0,69283 ; a(n) = -1 + number of odd divisors of n.
+add $0,1

@@ -1,23 +1,18 @@
 ; A233775: Number of vertices in the n-th row of the Sierpinski gasket (cf. A047999).
+; Submitted by trigggl
 ; 1,2,3,4,5,4,6,8,9,4,6,8,10,8,12,16,17,4,6,8,10,8,12,16,18,8,12,16,20,16,24,32,33,4,6,8,10,8,12,16,18,8,12,16,20,16,24,32,34,8,12,16,20,16,24,32,36,16,24,32,40,32,48,64,65,4,6,8,10,8,12,16,18,8,12,16,20,16,24,32,34,8,12,16,20,16,24,32,36,16,24,32,40,32,48,64,66,8,12,16
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  sub $0,1
-  mul $0,2
-  max $0,0
-  seq $0,267700 ; "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+mov $1,1
+lpb $0
+  mul $2,2
+  lpb $0
+    dif $0,2
+    mul $1,2
+  lpe
+  max $1,1
+  add $2,$1
+  div $0,2
+  mul $1,-2
 lpe
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
-div $0,2
+add $0,$2
 add $0,1

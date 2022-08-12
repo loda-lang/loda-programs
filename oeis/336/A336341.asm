@@ -1,13 +1,15 @@
 ; A336341: a(n) = (1/2)A336339(n).
-; Submitted by gemini8
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,6,9,12,13,14,16,17,18,21,24,25,26,30,34,35,37,38,39,42,43,44,49,50,52,53,55,56,64,65,69,75,79,80,81,84,85,86,90,96,99,106,107,108,109,110,111,114,117,118,119,121,122,123,124,125,129,130,131,135
 
-mov $1,5
-mul $0,2
+mov $1,1
+add $0,1
 lpb $0
   sub $0,1
+  add $1,1
   seq $1,96457 ; If n is prime replace n with the next prime.
 lpe
 mov $0,$1
+sub $0,5
 div $0,2
-add $0,1
+add $0,3

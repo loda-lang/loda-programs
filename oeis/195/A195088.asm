@@ -1,12 +1,13 @@
 ; A195088: Numbers k such that (number of prime factors of k counted with multiplicity) less (number of distinct prime factors of k) = 4.
-; Submitted by Penguin
+; Submitted by Skivelitis2
 ; 32,96,144,160,216,224,243,324,352,400,416,480,486,544,608,672,720,736,784,928,992,1000,1008,1056,1080,1120,1184,1200,1215,1248,1312,1376,1504,1512,1584,1620,1632,1696,1701,1760,1800,1824,1872,1888,1936,1952,2025,2080,2144,2208,2268,2272,2336,2352,2376,2430,2448,2464,2500,2528,2656,2673,2700,2704,2720,2736,2744,2784,2800,2808,2848,2912,2976,3000,3040,3104,3125,3159,3232,3296,3312,3360,3375,3402,3424,3488,3528,3552,3564,3616,3672,3680,3808,3920,3936,3969,4050,4064,4104,4128
 
 mov $2,$0
-add $0,1
 add $2,11
 pow $2,2
 bin $2,2
+add $0,1
+mov $1,9
 lpb $2
   mov $3,$1
   seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
@@ -17,7 +18,4 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,2
-sub $0,254
-div $0,2
-add $0,128
+add $0,1

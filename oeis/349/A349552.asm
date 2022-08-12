@@ -1,16 +1,11 @@
 ; A349552: a(n) is the number of halving partitions of n (see Comments for definition).
-; Submitted by Vato
+; Submitted by Armin Gips
 ; 1,1,1,1,2,1,2,1,2,2,3,1,3,2,2,1
 
+mov $1,2
 lpb $0
-  lpb $0
-    dif $0,2
-    add $1,10
-    add $1,$2
-  lpe
-  div $0,2
-  add $2,$1
+  seq $0,243109 ; a(n) is the largest number smaller than n and having the same Hamming weight as n, or n if no such number exist.
+  add $1,1
 lpe
-mov $0,$2
-div $0,20
-add $0,1
+div $1,2
+mov $0,$1

@@ -1,5 +1,5 @@
 ; A295910: Number of (not necessarily maximum) cliques in the n X n white bishop graph.
-; Submitted by tosi
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 4,9,30,61,160,301,718,1305,3000,5377,12190,21733,49024,87237,196446,349345,786232,1397881,3145486,5592141,12582624,22369309,50331310,89478121,201326200,357913521,805305918,1431655285,3221224960,5726622517,12884901310,22906491633
 
 mov $8,1
@@ -23,6 +23,5 @@ lpb $0
   mod $7,3
 lpe
 mov $0,$5
-sub $0,6
 div $0,2
-add $0,4
+add $0,1

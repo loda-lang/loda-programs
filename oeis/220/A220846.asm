@@ -4,6 +4,6 @@
 
 mov $1,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $1,7956 ; Product of proper divisors of n.
+seq $1,7956 ; Product of the proper divisors of n.
 mul $1,$0
 mov $0,$1

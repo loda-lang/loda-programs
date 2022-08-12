@@ -1,8 +1,8 @@
 ; A308874: Composite numbers that are neither squares nor oblongs.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by vonboedefeldt
 ; 8,10,14,15,18,21,22,24,26,27,28,32,33,34,35,38,39,40,44,45,46,48,50,51,52,54,55,57,58,60,62,63,65,66,68,69,70,74,75,76,77,78,80,82,84,85,86,87,88,91,92,93,94,95,96,98,99,102,104,105,106,108,111,112,114
 
-mov $1,1
+mov $1,7
 mov $2,$0
 add $2,7
 pow $2,2

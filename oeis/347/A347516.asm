@@ -13,8 +13,8 @@ lpb $0
   cmp $3,$2
   lpb $3
     mul $3,0
-    add $4,1
+    add $1,1
   lpe
   sub $0,1
 lpe
-mov $0,$4
+mov $0,$1

@@ -4,7 +4,4 @@
 
 seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
 seq $0,232560 ; Inverse permutation of the sequence of positive integers at A232559.
-mul $0,81
-sub $0,162
-div $0,81
-add $0,1
+sub $0,1

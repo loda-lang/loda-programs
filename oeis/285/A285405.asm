@@ -4,6 +4,5 @@
 
 add $0,260
 seq $0,285127 ; Positions of 1 in A285125; complement of A285126.
-sub $0,985
 div $0,2
-add $0,1
+sub $0,491

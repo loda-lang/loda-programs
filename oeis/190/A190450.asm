@@ -1,7 +1,8 @@
 ; A190450: Positions of 4 in A190445.
-; Submitted by Skillz
+; Submitted by pututu
 ; 3,8,16,21,29,37,42,50,55,58,63,71,76,84,92,97,105,110,118,126,131,139,144,147,152,160,165,173,181,186,194,199,207,215,220,228,236,241,249,254,262,270,275,283,288,291,296,304,309,317,325,330,338,343,351,359,364,372,377,380,385,393,398,406
 
 seq $0,190249 ; Positions of 0 in A190248.
-seq $0,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
 sub $0,1
+seq $0,4956 ; a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
+add $0,1

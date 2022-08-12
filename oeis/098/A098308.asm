@@ -1,18 +1,17 @@
 ; A098308: Unsigned member r=-8 of the family of Chebyshev sequences S_r(n) defined in A092184.
-; Submitted by zombie67 [MM]
+; Submitted by [SG-FC] hl
 ; 0,1,8,81,800,7921,78408,776161,7683200,76055841,752875208,7452696241,73774087200,730288175761,7229107670408,71560788528321,708378777612800,7012226987599681,69413891098384008,687126683996240401
 
-mov $3,1
 lpb $0
   sub $0,1
-  mov $1,$2
-  add $3,$4
-  add $3,$2
-  mul $2,8
-  add $4,$2
-  mov $2,$4
-  sub $2,$1
-  add $2,$3
-  mov $3,$1
+  sub $2,1
+  mul $3,8
+  sub $3,$2
+  mov $5,$4
+  add $1,$3
+  mov $2,$3
+  add $4,$1
+  add $5,$4
+  mov $3,$5
 lpe
 mov $0,$2

@@ -1,8 +1,20 @@
 ; A344055: a(n) = 2^n * n! * [x^n](exp(2*x) * BesselI(1, x)).
-; Submitted by Jon Maiga
+; Submitted by Ciceronian
 ; 0,1,8,51,304,1770,10224,58947,340064,1964862,11374000,65966318,383289504,2230877428,13005037920,75923905635,443837331648,2597761611894,15221636471088,89283411393018,524194439193120,3080311943546124,18115458433730592,106618075368243534
 
-mov $1,$0
-trn $0,1
-seq $0,5572 ; Number of walks on cubic lattice starting and finishing on the xy plane and never going below it.
-mul $0,$1
+mul $0,2
+mov $1,1
+mov $2,$0
+mov $3,1
+lpb $0
+  sub $0,2
+  add $1,$5
+  add $4,1
+  add $5,$3
+  mul $1,$2
+  div $1,$4
+  mov $2,$0
+  mul $3,3
+  add $3,$1
+lpe
+mov $0,$5

@@ -1,8 +1,12 @@
 ; A185018: Inverse to sequence matrix for natural numbers.
+; Submitted by Penguin
 ; 1,-2,1,1,-2,1,0,1,-2,1,0,0,1,-2,1,0,0,0,1,-2,1,0,0,0,0,1,-2,1,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,0,1,-2,1,0,0,0,0,0,0,0,0,0,0,1,-2,1
 
-seq $0,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
-add $1,$0
-sub $1,3
-bin $1,$0
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $1,$0
 mov $0,$1
+sub $0,3
+bin $0,$1

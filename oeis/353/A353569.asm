@@ -1,9 +1,9 @@
 ; A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
-; Submitted by Simon Strandgaard
+; Submitted by Jason Jung
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 
 mov $1,$0
-seq $1,107078 ; Whether n has non-unitary prime divisors.
-add $0,3
+seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+gcd $0,$1
+sub $0,1
 mod $0,2
-mul $0,$1

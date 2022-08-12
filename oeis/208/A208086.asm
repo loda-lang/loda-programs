@@ -1,19 +1,23 @@
 ; A208086: Number of 4 X (n+1) 0..1 arrays with every 2 X 2 subblock having the same number of equal edges as its horizontal neighbors and a different number from its vertical neighbors, and new values 0..1 introduced in row major order.
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 24,56,134,344,888,2318,6056,15848,41478,108584,284264,744206,1948344,5100824,13354118,34961528,91530456,239629838,627359048,1642447304,4299982854,11257501256,29472520904,77160061454,202007663448,528862928888,1384581123206,3624880440728,9490060198968,24845300156174,65045840269544,170292220652456,445830821687814,1167200244410984,3055769911545128,8000109490224398,20944558559128056,54833566187159768,143556140002351238,375834853819893944,983948421457330584,2576010410552097806,6744082810198962824
 
-mov $1,3
-mov $2,2
-lpb $0
-  sub $0,2
-  add $2,$1
-  add $1,$2
-lpe
-lpb $0
-  trn $0,$1
-  add $1,$2
-lpe
-pow $1,2
-mov $0,$1
+mov $2,1
+mov $3,-3
 mul $0,2
 add $0,6
+lpb $0
+  sub $0,1
+  add $3,2
+  sub $3,$4
+  mov $4,$2
+  mov $2,$3
+  add $2,$1
+  add $5,$4
+  mov $1,$3
+  mov $3,$5
+lpe
+mov $0,$5
+div $0,2
+add $0,4
+mul $0,2

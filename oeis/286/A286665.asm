@@ -1,11 +1,25 @@
 ; A286665: {0->01}-transform of the Pell word, A171588.
-; Submitted by Christian Krause
+; Submitted by gemini8
 ; 0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0
 
-mov $1,$0
-add $1,3
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
 add $0,2
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,$1
+lpb $0
+  add $3,1
+  lpb $3
+    div $3,69
+    mov $4,$3
+    cmp $4,0
+  lpe
+  mov $2,1
+  lpb $0
+    sub $0,$4
+    mov $1,$4
+    mov $4,$2
+    mul $4,2
+    sub $4,$1
+    add $2,$4
+  lpe
+lpe
+mov $0,$2
+add $0,1
 mod $0,2

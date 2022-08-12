@@ -1,6 +1,22 @@
 ; A193773: Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
-; Submitted by vanos0512
+; Submitted by Groo
 ; 1,1,1,1,2,1,1,2,1,1,2,1,2,2,1,1,2,2,1,2,1,1,3,1,2,2,1,2,2,1,1,3,2,1,2,1,1,3,2,1,3,1,2,2,1,2,2,2,1,3,1,1,4,1,1,2,1,2,3,2,2,2,2,1,2,1,2,4,1,1,2,2,2,3,1,1,3,2,1,2,2,1,4,1,2,3,1,3,2,1,1,2,2,2,4,1,1,4,1,1
 
-mul $0,2
-seq $0,38548 ; Number of divisors of n that are at most sqrt(n).
+add $0,1
+mov $2,$0
+lpb $0
+  add $4,1
+  min $0,$4
+  mov $3,$2
+  dif $3,$0
+  cmp $3,$2
+  cmp $3,0
+  sub $2,$4
+  add $4,1
+  mov $0,$2
+  add $1,$3
+  sub $2,$4
+  add $2,1
+lpe
+mov $0,$1
+add $0,1

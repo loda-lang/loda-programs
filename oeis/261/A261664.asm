@@ -5,9 +5,9 @@
 lpb $0
   sub $0,1
   add $4,$1
+  add $5,$2
   add $1,$3
   div $1,2
-  add $5,$2
   mov $2,$3
   mov $3,$5
   max $4,1

@@ -1,6 +1,7 @@
 ; A355448: a(n) = 1 if the number of divisors of n^2 is coprime to 6, otherwise 0.
-; Submitted by [SG]ATA-Rolf
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 
-seq $0,307424 ; Dirichlet g.f.: zeta(3*s) / zeta(2*s).
-pow $0,2
+seq $0,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+mod $0,3
+dif $0,2

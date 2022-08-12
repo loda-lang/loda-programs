@@ -1,6 +1,16 @@
 ; A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
-; Submitted by PDW
+; Submitted by [SG-FC] hl
 ; 0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1
 
-seq $0,353526 ; The smallest prime not dividing n, reduced modulo 4.
-div $0,3
+mov $1,2
+add $0,1
+pow $0,144
+lpb $0
+  dif $0,$1
+  add $1,1
+  sub $2,$1
+lpe
+mov $0,$2
+mod $0,2
+add $0,2
+mod $0,2

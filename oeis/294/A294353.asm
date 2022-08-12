@@ -5,7 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,86331 ; E.g.f.: exp(x)/(1 + LambertW(-x)).
+  seq $2,86331 ; Expansion of e.g.f. exp(x)/(1 + LambertW(-x)).
   sub $0,1
   mul $1,$2
   mov $2,$0

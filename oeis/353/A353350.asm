@@ -1,8 +1,14 @@
 ; A353350: a(n) = 1 if A048675(n) is a multiple of 3, otherwise 0.
-; Submitted by Orange Kid
+; Submitted by Stony666
 ; 1,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0
 
-seq $0,322821 ; a(1) = 0; for n > 1, a(n) = A000265(A048675(n)).
-seq $0,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+mov $1,1
+seq $0,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
+mod $0,3
 add $0,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+mov $0,$1
 mod $0,2

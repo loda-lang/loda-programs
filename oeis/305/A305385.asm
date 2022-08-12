@@ -1,8 +1,7 @@
 ; A305385: Indicator function of A140100.
-; Submitted by Sphynx
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1
 
 seq $0,305386 ; Indicator function of A140101.
-sub $1,$0
-mov $0,$1
 add $0,1
+mod $0,2

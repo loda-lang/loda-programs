@@ -5,7 +5,7 @@ lpb $0
   sub $0,1
   mul $0,2
   dif $0,4
-  add $2,2
+  add $1,2
 lpe
-sub $0,$2
+sub $0,$1
 div $0,2

@@ -6,8 +6,8 @@ mov $1,4086
 mov $2,$0
 lpb $2
   lpb $2
-    mul $1,2
     dif $2,3
+    mul $1,2
   lpe
   add $0,$1
   mul $1,2

@@ -1,17 +1,15 @@
 ; A351362: Number of ways the numbers from 1..n do not divide the numbers from n..2n-1.
-; Submitted by Simon Strandgaard
+; Submitted by Orange Kid
 ; 0,1,4,8,14,22,32,42,57,72,88,108,129,151,177,203,232,262,295,329,367,405,443,487,532,577,627,675,727,783,839,895,956,1018,1082,1148,1217,1285,1357,1431,1506,1586,1664,1746,1832,1914,2002,2092,2186,2277,2374,2472,2568,2672
 
-mov $1,-1
-mov $2,2
-mov $3,$0
-lpb $3
-  sub $3,1
-  sub $1,2
-  mul $2,$3
-  div $2,$1
-  add $4,$0
-  add $4,$2
-  mov $2,2
+mov $3,1
+lpb $0
+  sub $0,1
+  div $1,$3
+  add $2,$3
+  sub $2,$1
+  mov $1,$0
+  mul $1,2
+  add $3,2
 lpe
-mov $0,$4
+add $0,$2

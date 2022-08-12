@@ -1,9 +1,8 @@
 ; A243338: Number of simple connected graphs with n nodes that are trees and not integral.
-; Submitted by [AF] Kalianthys
+; Submitted by LCB001
 ; 0,0,1,2,2,5,10,23,47,105
 
 mov $5,1
-add $0,2
 lpb $0
   sub $0,1
   mov $7,$6
@@ -21,5 +20,5 @@ lpb $0
   add $5,$7
   sub $5,3
 lpe
-mov $0,$4
+mov $0,$1
 div $0,2

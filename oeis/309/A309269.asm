@@ -5,18 +5,18 @@
 mov $3,$0
 mov $5,2
 lpb $5
-  mov $0,$3
-  mov $2,0
   sub $5,1
+  mov $2,0
+  mov $0,$3
   add $0,$5
   add $0,1
   lpb $0
     sub $0,1
     seq $2,15 ; Smallest prime power >= n.
   lpe
-  mov $6,$5
-  mul $6,$2
-  add $4,$6
+  mov $1,$5
+  mul $1,$2
+  add $4,$1
 lpe
 add $2,$4
 mov $0,$2

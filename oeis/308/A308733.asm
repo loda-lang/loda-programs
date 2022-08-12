@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,2
   seq $2,340761 ; Number of partitions of n into 4 parts whose 'middle' two parts have the same parity.
+  sub $0,2
   add $1,$2
 lpe
 mov $0,$1

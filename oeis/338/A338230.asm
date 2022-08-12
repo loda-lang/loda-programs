@@ -1,12 +1,15 @@
 ; A338230: Number of ternary strings of length n that contain at least two 0's and at most one 1.
-; Submitted by emoga
+; Submitted by Penguin
 ; 0,0,1,7,27,81,213,519,1207,2725,6033,13179,28515,61257,130861,278287,589551,1244877,2621097,5504643,11533915,24116785,50331141,104857047,218103207,452984181,939523393,1946156299,4026531027,8321498265,17179868253,35433479199,73014442975,150323854237
 
-mov $1,$0
-cmp $1,0
-add $0,$1
-mov $2,15
 sub $2,$0
-seq $0,339032 ; Expansion of (4*x^5 - 9*x^4 + 17*x^3 - 15*x^2 + 6*x - 1)/((2*x - 1)^2*(x - 1)^3).
-sub $0,15
-add $0,$2
+add $2,1
+add $0,2
+mul $2,$0
+add $2,1
+seq $0,49610 ; a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
+add $0,1
+mov $1,$2
+add $1,$0
+mov $0,$1
+sub $0,5

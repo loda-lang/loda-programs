@@ -6,8 +6,8 @@ mov $1,1
 mov $2,$0
 mov $4,$0
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   sub $0,$4
   seq $0,127245 ; Row sums of a signed Thue-Morse related triangle.
   add $2,1

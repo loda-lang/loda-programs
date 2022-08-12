@@ -1,4 +1,4 @@
-; A210576: Natural numbers that cannot be expressed as sum of one or more nontrivial binomial coefficients.
+; A210576: Positive integers that cannot be expressed as sum of one or more nontrivial binomial coefficients.
 ; Submitted by Cruncher Pete
 ; 1,2,3,4,5,7,8,9,11,13,14,17,19,23,29
 

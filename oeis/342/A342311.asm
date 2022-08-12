@@ -9,8 +9,8 @@ lpb $0
   sub $2,$0
   trn $0,$1
 lpe
-mul $1,2
 add $2,2
+mul $1,2
 bin $1,$2
 mul $2,$1
 mov $0,$2

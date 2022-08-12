@@ -8,13 +8,13 @@ lpb $0
 lpe
 mov $1,$2
 bin $1,$0
+sub $2,1
 sub $2,$0
+mov $3,$1
 mov $0,$2
-mov $2,-1
 lpb $0
-  trn $0,2
-  add $0,1
-  mul $1,$2
-  sub $2,1
+  mul $3,$0
+  mul $3,-1
+  sub $0,1
 lpe
-mov $0,$1
+mov $0,$3
