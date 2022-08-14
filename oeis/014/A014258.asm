@@ -1,13 +1,13 @@
 ; A014258: Iccanobif numbers: add previous two terms and reverse the sum.
-; Submitted by ckrause
+; Submitted by WTBroughton
 ; 0,1,1,2,3,5,8,31,93,421,415,638,3501,9314,51821,53116,739401,715297,8964541,8389769,1345371,415379,570671,50689,63126,518311,734185,6942521,6076767,88291031,89776349,83760871,22735371,242694601,279924562,361916225,787048146,1734698411,7556471252,3669611929,18138062211,4147670812,32033758222,43092418163,58367162157,23085954101,85261135418,915980743801,9129781421001,20846126754001,20057180957992,39911770330904,69888215986995,998713689997901,6984895091068601,2056601878063897,8942319696941409
 
 mov $1,1
 lpb $0
   sub $0,1
   mov $3,$2
+  seq $1,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
   mov $2,$1
   add $1,$3
-  seq $1,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
 lpe
 mov $0,$2

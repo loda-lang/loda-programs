@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,87429 ; a(n) = if gpf(n) < gpf(n+1) then 1 else 0, where gpf=A006530 (greatest prime factor).
+  seq $3,87429 ; a(n) = 1 if gpf(n) < gpf(n+1), otherwise 0, where gpf = A006530 (greatest prime factor).
   sub $0,$3
   add $1,1
   mov $4,$0

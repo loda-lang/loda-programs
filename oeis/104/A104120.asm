@@ -1,11 +1,8 @@
 ; A104120: (Prime(n + 1) - Prime(n))/2 (mod 2).
-; Submitted by zombie67 [MM]
+; Submitted by andrew
 ; 1,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,1,1,1
 
+seq $0,99909 ; (prime(n)*(prime(n+1)-1) + (prime(n)-1)*prime(n+1)) / 2.
+seq $0,191002 ; Completely multiplicative function with a(prime(k)) = prime(k)*prime(k+1).
 add $0,1
-seq $0,40 ; The prime numbers.
-add $0,1
-seq $0,13632 ; Difference between n and the next prime greater than n.
-div $0,2
-add $0,3
 mod $0,2

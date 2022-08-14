@@ -8,11 +8,10 @@ add $2,4
 pow $2,4
 lpb $2
   max $3,$1
-  mul $3,2
   seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
   sub $0,$3
-  add $1,3
+  add $1,6
   sub $2,$0
 lpe
 mov $0,$1
-div $0,3
+div $0,6

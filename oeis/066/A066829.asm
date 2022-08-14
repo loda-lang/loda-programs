@@ -1,21 +1,10 @@
 ; A066829: Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
-; Submitted by Stony666
+; Submitted by owensse
 ; 0,1,1,0,1,0,1,1,0,0,1,1,1,0,0,0,1,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,0,1,1,0,1,0,1,1,0,0,0,0,0,1,0,1,0,1,0,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0
 
-mov $2,2
-add $0,1
+mov $1,$0
+seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
 lpb $0
-  sub $1,9
-  mov $3,$0
-  div $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  div $0,$2
+  mov $0,$1
 lpe
-mov $0,$1
 mod $0,2
-add $0,1

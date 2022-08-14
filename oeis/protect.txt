@@ -30,6 +30,8 @@ A014692: a(n) = prime(n) - (n-1).
 A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
+A023507: a(n) = sum of distinct prime divisors of prime(n) - 1.
+A023517: Greatest prime divisor of p(n)*p(n-1) - 1.
 A023589: Number of distinct prime divisors of 2*p(n)+1.
 A023590: Greatest prime divisor of 2*prime(n)+1.
 A026945: A bisection of the Motzkin numbers A001006.
@@ -39,6 +41,7 @@ A031369: a(n) = prime(3n-1).
 A031377: a(n) = prime(3n-2).
 A031389: a(n) = prime(8*n-3).
 A031392: a(n) = prime(5*n-4).
+A031906: a(n) = prime(6*n - 5).
 A031908: a(n) = prime(8*n - 5).
 A031915: a(n) = prime(8*n - 7).
 A031919: a(n) = prime(10*n-8).

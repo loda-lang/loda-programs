@@ -6,8 +6,8 @@ mov $1,$0
 lpb $0
   sub $1,1
   mov $2,$0
-  mov $0,$1
   seq $2,25225 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
+  mov $0,$1
   add $3,$2
   mul $3,2
   dif $3,-1

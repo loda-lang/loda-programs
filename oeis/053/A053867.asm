@@ -1,9 +1,11 @@
 ; A053867: Parity of sum of divisors of n less than n.
-; Submitted by Penguin
+; Submitted by STE\/E
 ; 0,1,1,1,1,0,1,1,0,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,0,0,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1
 
 mov $1,$0
-seq $1,1227 ; Number of odd divisors of n.
-sub $0,$1
+add $1,1
+add $0,1
+seq $0,69283 ; a(n) = -1 + number of odd divisors of n.
+add $0,$1
 add $0,1
 mod $0,2

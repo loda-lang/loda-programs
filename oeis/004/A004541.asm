@@ -1,40 +1,38 @@
 ; A004541: Expansion of sqrt(2) in base 4.
-; Submitted by Jon Maiga
+; Submitted by Jason Jung
 ; 1,1,2,2,2,0,0,2,1,3,2,1,2,1,2,1,3,3,3,0,3,2,3,3,0,3,0,2,1,0,0,2,0,2,3,0,2,3,3,2,3,0,1,0,3,1,2,1,2,3,2,2,2,2,1,1,1,1,3,3,1,0,3,3,2,0,3,2,2,3,1,3,2,3,0,0,1,1,3,1,1,0,1,0,2,1,3,1,3,1,1,0,0,2,1,2,1,3,1,2
 
 mov $1,1
 mov $2,1
-mov $3,$0
-add $3,2
 mov $4,$0
 add $4,2
 mul $4,2
 mov $7,10
 pow $7,$4
-mov $9,10
+mov $3,$0
+add $3,2
 lpb $3
+  sub $3,1
   mov $4,$2
   pow $4,2
   mul $4,2
   mov $5,$1
   pow $5,2
-  add $4,$5
   mov $6,$1
-  mov $1,$4
   mul $6,$2
   mul $6,2
-  mov $2,$6
+  add $4,$5
   mov $8,$4
   div $8,$7
   max $8,1
+  mov $1,$4
   div $1,$8
+  mov $2,$6
   div $2,$8
-  sub $3,1
 lpe
-sub $9,6
-mov $3,$9
+mov $3,4
 pow $3,$0
 div $2,$3
 div $1,$2
-mod $1,$9
+mod $1,4
 mov $0,$1

@@ -1,26 +1,17 @@
 ; A093515: Numbers k such that either k or k-1 is a prime.
-; Submitted by Jamie Morken(l1)
+; Submitted by BarnardsStern
 ; 2,3,4,5,6,7,8,11,12,13,14,17,18,19,20,23,24,29,30,31,32,37,38,41,42,43,44,47,48,53,54,59,60,61,62,67,68,71,72,73,74,79,80,83,84,89,90,97,98,101,102,103,104,107,108,109,110,113,114,127,128,131,132,137,138,139,140,149,150,151,152,157,158,163,164,167,168,173,174,179,180,181,182,191,192,193,194,197,198,199,200,211,212,223,224,227,228,229,230,233
 
-mov $5,$0
-sub $0,5
+mov $2,$0
+sub $0,1
 div $0,2
-mov $2,8
-mov $4,$0
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,2
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
-lpe
-sub $4,$0
-mov $0,$2
+seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
 mul $0,2
-div $0,4
-sub $0,$4
-mul $0,2
-sub $0,6
-add $0,$5
+add $0,1
+add $0,$2
+mov $1,1
+sub $1,$0
+div $1,$0
+add $1,1
+add $1,$0
+mov $0,$1
