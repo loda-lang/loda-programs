@@ -11,14 +11,30 @@ while read -r s f; do
   fi
 done < <(git status --porcelain)
 
+if [ -z "$LODA_HOME" ]; then
+  LODA_HOME=$HOME/loda
+fi
+
 num_updated=0
 for f in $files; do
+  fname=$(basename -- $f)
+  anumber="${fname%.*}"
   clear
   if git diff -U1000 --exit-code -- $f; then
     echo "Already staged: $f"
     continue
   elif [ "$update_all" != "y" ]; then
-    read -p "Update program? (Y)es, (n)o, (c)heck, (a)ll: " a
+    echo
+    usage=$(cat $LODA_HOME/stats/call_graph.csv | grep ,${anumber} | wc -l)
+    if (( usage >= 100 )); then
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!   HIGH USAGE WARNING   !!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    fi
+    if (( usage > 0 )); then
+	echo "Used by $usage other programs."
+    fi
+    read -p "Update program for ${anumber}? (Y)es, (n)o, (c)heck, (a)ll: " a
   else
     a="y"
   fi
@@ -30,7 +46,7 @@ for f in $files; do
     loda check -b $f
     echo
     git diff -- $f
-    read -p "Update program? (Y)es, (n)o: " a
+    read -p "Update program for ${number}? (Y)es, (n)o: " a
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git add $f

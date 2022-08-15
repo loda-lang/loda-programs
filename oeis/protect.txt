@@ -85,6 +85,7 @@ A052147: a(n) = prime(n) + 2.
 A054526: Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
 A055003: a(n) = prime(prime(n)-1).
 A056798: Prime powers with even nonnegative exponents.
+A057901: a(n) = 3^prime(n).
 A057902: a(n) = 5^prime(n).
 A059591: Squarefree part of n^2+1.
 A060429: a(n) = 4*prime(n)^2+1.

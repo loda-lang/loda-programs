@@ -1,15 +1,14 @@
 ; A025878: Expansion of 1/((1-x^5)(1-x^6)(1-x^9)).
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by stoneageman
 ; 1,0,0,0,0,1,1,0,0,1,1,1,1,0,1,2,1,1,2,1,2,2,1,2,3,2,2,3,2,3,4,2,3,4,3,4,5,3,4,5,4,5,6,4,5,7,5,6,7,5,7,8,6,7,9,7,8,9,7,9,11,8,9,11,9,11,12,9,11,13,11,12,14,11,13,15
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
-  sub $0,$3
   mov $2,$0
-  max $2,0
+  trn $2,1
   seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
-  mov $3,6
+  sub $0,8
+  trn $0,1
   add $1,$2
 lpe
 mov $0,$1
