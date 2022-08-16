@@ -1,5 +1,5 @@
 ; A341400: Number of nonnegative solutions to (x_1)^2 + (x_2)^2 + ... + (x_5)^2 <= n.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Skivelitis2
 ; 1,6,16,26,36,57,87,107,122,157,207,247,277,322,392,452,482,537,637,717,773,863,973,1053,1113,1203,1343,1473,1553,1668,1858,1998,2053,2173,2373,2543,2673,2818,3018,3218,3338,3483,3753,3973,4113,4344,4634,4834,4944,5139,5449
 
 mov $3,3
@@ -8,10 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,224213 ; Number of nonnegative solutions to x^2 + y^2 + z^2 + u^2 <= n.
-  add $1,$2
+  seq $2,38671 ; Number of nonnegative solutions of x1^2 + x2^2 + ... + x5^2 = n.
   mov $3,1
-  add $3,$4
-  add $4,2
+  add $1,$2
 lpe
 mov $0,$1

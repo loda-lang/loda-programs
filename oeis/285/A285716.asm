@@ -1,7 +1,9 @@
 ; A285716: a(n) = A080791(A245611(n)).
-; Submitted by Penguin
+; Submitted by Skivelitis2
 ; 0,0,0,0,1,0,0,1,0,0,1,0,1,2,0,0,1,1,0,1,0,0,2,0,1,1,0,1,1,0,0,2,1,0,1,0,0,2,1,0,3,0,1,1,0,1,1,1,0,2,0,0,2,0,0,1,0,1,2,1,1,1,2,0,1,0,1,3,0,0,1,1,1,2,0,0,2,1,0,1,1,0,2,0,1,2,0,2,1,0,0,1,1,1,3,0,0,2,0,0
 
-mul $0,2
-seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+mov $1,$0
+seq $1,91304 ; a(n) = Omega(2n-1) (number of prime factors of the n-th odd number, counted with multiplicity).
+max $1,1
+mov $0,$1
 sub $0,1

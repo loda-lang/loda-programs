@@ -1,5 +1,5 @@
 ; A034444: a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-; Submitted by respawner
+; Submitted by stoneageman
 ; 1,2,2,2,2,4,2,2,2,4,2,4,2,4,4,2,2,4,2,4,4,4,2,4,2,4,2,4,2,8,2,2,4,4,4,4,2,4,4,4,2,8,2,4,4,4,2,4,2,4,4,4,2,4,4,4,4,4,2,8,2,4,4,2,4,8,2,4,4,8,2,4,2,4,4,4,4,8,2,4,2,4,2,8,4,4,4,4,2,8,4,4,4,4,4,4,2,4,4,4
 
 mov $1,4
@@ -7,7 +7,7 @@ mov $2,2
 add $0,1
 lpb $0
   mov $3,$0
-  sub $3,1
+  sub $3,5
   lpb $3
     mov $4,$0
     mod $4,$2
@@ -21,6 +21,4 @@ lpb $0
   mul $1,2
 lpe
 mov $0,$1
-sub $0,8
 div $0,8
-add $0,1

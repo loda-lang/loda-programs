@@ -1,18 +1,9 @@
 ; A075553: Numerators in the Maclaurin series for arctan(1+x).
-; Submitted by Penguin
+; Submitted by Simon Strandgaard
 ; 0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1,0,-1,1,-1,0,1,-1,1
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  sub $3,$2
-  div $3,2
-  add $4,$2
-  mul $2,-2
-  add $4,$2
-  mov $2,$4
-  mov $4,$3
-  mov $3,$1
-lpe
-mov $0,$1
+mov $1,-1
+pow $1,$0
+add $0,2
+seq $0,46980 ; Numerators of Taylor series for exp(x)*cos(x).
+mul $0,$1

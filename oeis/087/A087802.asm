@@ -1,6 +1,6 @@
 ; A087802: a(n) = Sum_{d|n, d nonprime} mu(d), where mu = A008683.
-; Submitted by Fardringle
+; Submitted by LeChat51X
 ; 1,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,2,1,2,2,2,1,2,1,2,1,2,1,3,1,1,2,2,2,2,1,2,2,2,1,3,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,3,1,2,2,1,2,3,1,2,2,3,1,2,1,2,2,2,2,3,1,2,1,2,1,3,2,2,2,2,1,3,2,2,2,2,2,2,1,2,2,2
 
-max $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+max $0,1

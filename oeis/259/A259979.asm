@@ -1,10 +1,27 @@
 ; A259979: Numbers that are both 1 + square of a prime and twice a prime.
-; Submitted by chordtoll
+; Submitted by stoneageman
 ; 10,26,122,362,842,3482,3722,5042,6242,10202,17162,19322,32762,39602,73442,121802,143642,167282,201602,212522,271442,323762,326042,398162,410882,436922,546122,564002,674042,776162,863042,982082,1062962,1079522,1104602,1142762,1190282,1274642,1324802,1371242,1394762,1852322,2070722,2128682,2217122,2247002,2343962,2920682,3031082,3279722,3352562,3613802,3798602,4669922,5013122,5148362,5202962,5480282,5527202,5669162,5707322,6046682,6446522,6497402,6713282,6806882,7070282,7134242,7349522,7392962
 
-seq $0,85712 ; Semiprimes n such that lpf(n)^spf(n)+1 is also semiprime, where lpf(n) is larger prime factor of n and spf(n) is smaller prime factor of n.
-pow $0,2
-mul $0,4
-sub $0,144
-div $0,16
-add $0,10
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  max $3,$5
+  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  add $6,10
+  sub $0,$3
+  add $1,2
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  add $5,$1
+  add $1,$6
+  mul $2,$4
+  sub $2,1
+  add $5,$1
+  add $6,2
+lpe
+mov $0,$1
+div $0,12
+mul $0,8
+add $0,2

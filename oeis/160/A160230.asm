@@ -8,6 +8,7 @@ seq $5,72400 ; (Factors of 4 removed from n) modulo 8.
 add $0,1
 max $2,$0
 seq $2,70939 ; Length of binary representation of n.
+sub $2,1
 lpb $2
   sub $2,1
   mov $3,$0

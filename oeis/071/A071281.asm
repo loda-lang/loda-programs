@@ -6,8 +6,6 @@ mov $2,-2
 bin $2,$0
 div $2,2
 mov $1,3
-mov $5,2
-add $1,$3
 lpb $1
   mov $3,$1
   cmp $3,0

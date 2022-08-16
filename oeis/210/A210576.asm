@@ -1,5 +1,5 @@
 ; A210576: Positive integers that cannot be expressed as sum of one or more nontrivial binomial coefficients.
-; Submitted by Cruncher Pete
+; Submitted by stoneageman
 ; 1,2,3,4,5,7,8,9,11,13,14,17,19,23,29
 
 mov $2,$0
@@ -20,6 +20,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
 div $0,6
-sub $0,2
+sub $0,1

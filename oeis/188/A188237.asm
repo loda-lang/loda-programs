@@ -1,15 +1,11 @@
 ; A188237: Number of nondecreasing arrangements of 4 numbers in -(n+2)..(n+2) with sum zero and not more than two numbers equal.
-; Submitted by Jamie Morken(s3)
+; Submitted by Simon Strandgaard
 ; 15,30,52,81,121,172,234,311,403,510,636,781,945,1132,1342,1575,1835,2122,2436,2781,3157,3564,4006,4483,4995,5546,6136,6765,7437,8152,8910,9715,10567,11466,12416,13417,14469,15576,16738,17955,19231,20566,21960,23417,24937,26520,28170,29887,31671,33526,35452,37449,39521,41668,43890,46191,48571,51030,53572,56197,58905,61700,64582,67551,70611,73762,77004,80341,83773,87300,90926,94651,98475,102402,106432,110565,114805,119152,123606,128171,132847,137634,142536,147553,152685,157936,163306,168795
 
 add $0,2
-lpb $0
-  mov $2,$0
-  seq $2,183859 ; a(n) = n - 1 + ceiling((n^2)/3); complement of A183858.
-  mul $2,2
-  sub $2,$0
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
-add $0,2
+mov $1,$0
+seq $0,241526 ; Number of different positions in which a square with side length k, 1 <= k <= n - floor(n/3), can be placed within a bi-symmetric triangle of 1 X 1 squares of height n.
+mul $0,3
+add $0,1
+sub $0,$1
+div $0,3

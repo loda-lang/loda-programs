@@ -22,30 +22,39 @@ for f in $files; do
   clear
   if git diff -U1000 --exit-code -- $f; then
     echo "Already staged: $f"
+    ((num_updated++))
     continue
   elif [ "$update_all" != "y" ]; then
     echo
     usage=$(cat $LODA_HOME/stats/call_graph.csv | grep ,${anumber} | wc -l)
+    full_check=$(cat $LODA_HOME/programs/oeis/full_check.txt | grep ${anumber}: | wc -l)
+    num_terms=$(cat $LODA_HOME/oeis/b/${anumber:1:3}/b${anumber:1}.txt | grep . | wc -l)
+    echo "$num_terms known sequence terms."
+    if (( usage > 0 )); then
+	echo "$usage other programs using this program."
+    fi
+    if (( full_check > 0 )); then
+	echo "Full check enabled."
+    fi
     if (( usage >= 100 )); then
+	echo
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	echo "!!!   HIGH USAGE WARNING   !!!"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo
     fi
-    if (( usage > 0 )); then
-	echo "Used by $usage other programs."
-    fi
-    read -p "Update program for ${anumber}? (Y)es, (n)o, (c)heck, (a)ll: " a
+    read -p "Update program? (Y)es, (n)o, (c)heck, all: " a
   else
     a="y"
   fi
-  if [ "$a" = "a" ]; then
+  if [ "$a" = "all" ]; then
     a="y"
     update_all="y"
   fi
   if [ "$a" = "c" ] || [ "$a" = "C" ]; then
     loda check -b $f
     echo
-    git diff -- $f
+    git diff -U1000 -- $f
     read -p "Update program for ${number}? (Y)es, (n)o: " a
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then

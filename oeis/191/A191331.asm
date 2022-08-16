@@ -1,21 +1,7 @@
 ; A191331: Positions of 2 in A191329.
-; Submitted by Christian Krause
+; Submitted by NeoGen
 ; 2,6,12,16,18,22,28,32,34,38,42,44,48,54,58,60,64,70,74,80,84,86,90,96,100,102,106,110,112,116,122,126,128,132,138,142,148,152,154,158,164,168,170,174,180,184,190,194,196,200,206,210,212,216,220,222,226,232,236,238,242,248,252,258,262,264,268,274,278,280,284,288
 
-mov $1,1
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,85002 ; a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-add $0,1
+seq $0,279934 ; Positive integers k such that {(k-1)*r} > 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
+mul $0,2
+sub $0,2

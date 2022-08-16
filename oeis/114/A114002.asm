@@ -1,8 +1,6 @@
 ; A114002: Expansion of x^k(1+x^(k+1))/(1-x^(k+1)).
-; Submitted by Simon Strandgaard
+; Submitted by WTBroughton
 ; 1,2,1,2,0,1,2,2,0,1,2,0,0,0,1,2,2,2,0,0,1,2,0,0,0,0,0,1,2,2,0,2,0,0,0,1,2,0,2,0,0,0,0,0,1,2,2,0,0,2,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,1,2,2,2,2,0,2,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,1,2,2,0,0,0,0,2,0,0
 
-mov $1,$0
-add $1,1
-seq $0,134576 ; A127733 * A051731.
-div $0,$1
+seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
+min $0,2

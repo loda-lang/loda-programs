@@ -1,20 +1,18 @@
 ; A232164: Number of Weyl group elements, not containing an s_r factor, which contribute nonzero terms to Kostant's weight multiplicity formula when computing the multiplicity of the zero-weight in the adjoint representation for the Lie algebra of type C and rank n.
-; Submitted by Simon Strandgaard
+; Submitted by Jason Jung
 ; 0,1,1,2,6,12,25,57,124,268,588,1285,2801,6118,13362,29168,63685,139057,303608,662888,1447352,3160121,6899745,15064810,32892270,71816436,156802881,342360937,747505396,1632091412,3563482500,7780451037,16987713169,37090703118,80983251898,176817545560,386060619981,842918624353,1840415132912,4018333162768,8773564788720,19156061974577,41825041384513,91320130888018,199386922984982,435338240001116,950510597034665,2075329736878745,4531241976901740,9893441744885596,21601183529458236,47163680941927797
 
+mov $2,1
 lpb $0
   sub $0,1
-  add $4,1
-  sub $4,$1
-  sub $4,$5
-  add $4,$2
-  mov $1,$5
-  add $2,$3
-  mov $5,$4
+  sub $3,$4
   mov $4,$2
-  add $4,$1
   mov $2,$3
-  add $3,$1
+  add $2,$1
+  add $3,$5
   add $5,$4
+  mov $1,$3
+  add $2,$3
+  mov $3,$5
 lpe
 mov $0,$5

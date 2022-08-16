@@ -3,8 +3,8 @@
 
 lpb $0
   trn $0,2
-  trn $1,1
   add $2,4
+  trn $1,1
   add $1,$2
 lpe
 trn $1,2

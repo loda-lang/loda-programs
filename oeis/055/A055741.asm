@@ -5,7 +5,7 @@
 mov $1,1
 mov $2,$0
 add $2,7
-pow $2,2
+pow $2,3
 lpb $2
   mov $3,$1
   seq $3,55736 ; Difference between number of prime factors of n and of phi(n).

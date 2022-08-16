@@ -1,4 +1,4 @@
-; A135572: A number n is included if the largest prime-power dividing n is a square.
+; A135572: Numbers k such that the largest prime-power dividing k is a square.
 ; Submitted by mmonnin
 ; 1,4,9,12,16,18,25,36,45,48,49,50,63,64,72,75,80,81,90,98,100,112,121,126,144,147,150,162,169,175,176,180,192,196,200,208,225,240,242,245,252,256,275,289,294,300,315,320,324,325,336,338,350,360,361,363,392
 

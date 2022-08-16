@@ -9,7 +9,7 @@ lpb $0
   mul $0,2
   mov $4,$1
   trn $4,$0
-  mov $0,2
+  mov $0,0
 lpe
 mov $3,$2
 mul $3,2

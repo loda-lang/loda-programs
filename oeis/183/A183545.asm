@@ -1,12 +1,8 @@
 ; A183545: Ordering of the numbers in the tree A183543; complement of A183544.
-; Submitted by Gunnar Hjern
+; Submitted by pelpolaris
 ; 3,6,10,11,17,18,19,28,29,30,31,32,46,47,48,49,50,51,52,53,75,76,77,78,79,80,81,82,83,84,85,86,87,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,198,199,200
 
-mov $2,$0
-seq $2,354415 ; First differences of A354414.
-mov $1,1
-sub $1,$2
-mov $3,$0
-sub $3,$1
-mov $0,$3
-add $0,1
+mov $1,$0
+seq $0,354415 ; First differences of A354414.
+add $1,$0
+mov $0,$1

@@ -7,9 +7,9 @@ add $0,5
 add $0,$1
 mov $2,66096
 lpb $2
-  div $0,7
-  mul $0,4
   mov $2,1
   add $2,$1
+  div $0,7
+  mul $0,4
   sub $0,$2
 lpe

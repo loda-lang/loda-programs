@@ -9,10 +9,10 @@ lpb $0
   max $0,2
   mov $3,$2
   dif $3,$0
-  sub $0,2
   cmp $3,$2
   cmp $3,0
   sub $3,2
+  sub $0,2
   add $1,$3
 lpe
 mov $0,$1

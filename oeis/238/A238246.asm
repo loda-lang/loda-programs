@@ -1,22 +1,6 @@
 ; A238246: Numbers m such that A072219(m) = 3.
-; Submitted by Daniel
+; Submitted by Penguin
 ; 3,5,6,7,9,10,12,13,14,15,17,18,20,24,25,26,28,29,30,31,33,34,36,40,48,49,50,52,56,57,58,60,61,62,63,65,66,68,72,80,96,97,98,100,104,112,113,114,116,120,121,122,124,125,126,127,129,130,132,136,144,160,192,193,194,196,200,208,224,225,226,228,232,240,241,242,244,248,249,250,252,253,254,255,257,258,260,264,272,288,320,384,385,386,388,392,400,416,448,449
 
-mov $1,2
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,87116 ; Number of maximal groups of consecutive zeros in binary representation of n.
-  cmp $3,1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $1,1
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+seq $0,43687 ; a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 3 runs.
 add $0,1

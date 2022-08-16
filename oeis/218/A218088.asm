@@ -1,20 +1,7 @@
 ; A218088: a(n) is the largest term in period of continued fraction expansion of square root of n!.
-; Submitted by Jamie Morken(w4)
+; Submitted by nenym
 ; 2,4,8,20,52,140,400,1204,3808,12634,43772,157822,590518,2287070,9148286,37719354,160029668,697553152,3119552536,14295585636,67052240164,321571247090,1575370942644,7876854713228,40164235888490,208699491618146,1104333907134456,5947020092025820,32573170543389910
 
-mov $1,1
 add $0,2
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
-mov $0,$1
-lpb $0
-  add $2,$1
-  div $2,$0
-  add $0,1
-  add $0,$2
-  div $0,2
-lpe
+seq $0,55226 ; a(n) = floor(sqrt(n!)).
 mul $0,2
-sub $0,2

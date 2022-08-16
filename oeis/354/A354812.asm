@@ -1,22 +1,16 @@
 ; A354812: Positions of +2's in A346242.
-; Submitted by PDW
+; Submitted by stoneageman
 ; 132,156,204,228,276,348,372,444,492,516,564,636,708,732,804,852,876,948,996,1068,1164,1212,1236,1284,1308,1356,1524,1572,1644,1668,1788,1812,1884,1956,2004,2076,2148,2172,2292,2316,2364,2388,2532,2676,2724,2748,2796,2868,2892,3012,3084,3156,3228,3252,3324,3372
 
-mov $1,1
-mov $2,12
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,2
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
-lpe
-sub $4,$0
-mov $0,$2
+add $0,4
+seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,2
-div $0,4
-sub $0,$4
-mul $0,24
-sub $0,12
+lpb $0
+  add $1,35
+  pow $1,$0
+  mov $2,$0
+  trn $0,$1
+lpe
+mov $0,$2
+div $0,2
+mul $0,12

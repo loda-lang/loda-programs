@@ -4,9 +4,9 @@
 
 mov $1,-3
 pow $1,$0
+add $1,1
 mov $2,$0
 trn $0,1
-add $1,1
 add $2,$0
 mov $0,2
 pow $0,$2

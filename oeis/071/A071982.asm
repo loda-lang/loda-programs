@@ -1,6 +1,6 @@
 ; A071982: Parity of the decimal digits of sqrt(2).
-; Submitted by stoneageman
+; Submitted by WTBroughton
 ; 1,0,1,0,0,1,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,1,1,0
 
-seq $0,114761 ; a(n) = (floor(sqrt(2)*10^n))^2.
+seq $0,11547 ; Decimal expansion of sqrt(2) truncated to n places.
 mod $0,2

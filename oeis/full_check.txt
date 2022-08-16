@@ -54,6 +54,7 @@ A026274: Greatest k such that s(k) = n, where s = A026272.
 A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
+A033207: Primes of form x^2+7*y^2.
 A033687: Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
@@ -66,6 +67,7 @@ A035336: a(n) = 2*floor(n*phi) + n - 1, where phi = (1+sqrt(5))/2.
 A035337: Third column of Wythoff array.
 A036349: Numbers whose sum of prime factors (taken with multiplicity) is even.
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
+A038609: Numbers that are the sum of 2 different primes.
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
 A042987: Primes congruent to {2, 3, 5, 7} mod 8.
 A042999: Primes congruent to {2, 3, 5} (mod 8).
@@ -86,6 +88,7 @@ A046337: Odd numbers with an even number of prime factors (counted with multipli
 A050508: Golden rectangle numbers: n * A007067(n).
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
+A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is different from {largest m such that m! divides k}; numbers k which are either odd multiples of 12 or the largest m such that (m-1)! divides k is a composite number > 5.
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
 A065331: Largest 3-smooth divisor of n.
@@ -128,10 +131,13 @@ A101345: a(n) = Knuth's Fibonacci (or circle) product "2 o n".
 A101436: Number of exponents in prime factorization of n which are primes.
 A102261: a(n) = A002144(n) - A002145(n).
 A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
+A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci representation. Also list of binary vectors not containing 00.
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
 A107145: Primes of the form x^2 + 40y^2.
 A109768: a(n) = gcd(3^n-2,2^n-3).
+A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A113063: Associated with theta series of hexagonal net with respect to a node.
+A113852: Numbers whose prime factors are raised to the seventh power.
 A114562: The first occurrence of n in A111701.
 A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
@@ -163,6 +169,7 @@ A165513: Trapezoidal numbers.
 A174897: a(n) = characteristic function of numbers k such that A007955(m) = k has solution for some m, where A007955(m) = product of divisors of m.
 A174898: a(n) = characteristic function of numbers k such that A007955(m) = k has no solution for any m, where A007955(m) = product of divisors of m.
 A179247: Numbers that have 7 terms in their Zeckendorf representation.
+A179249: Numbers that have 9 terms in their Zeckendorf representation.
 A180122: First of three "least, sum, least" self-generating sequences.
 A184485: Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
 A184514: Lower s-Wythoff sequence, where s(n)=4n-1.  Complement of A184515.
@@ -233,12 +240,14 @@ A235224: a(0) = 0, and for n > 0, a(n) = largest k such that A002110(k-1) <= n, 
 A238248: Numbers m such that A072219(m) = 7.
 A238392: Triangle read by rows: each row is an initial segment of the terms of A000123 followed by its reflection.
 A241915: After a(1)=1, numbers 1 .. A061395(n), followed by numbers 1 .. A061395(n+1), etc.
+A243348: Difference between the n-th squarefree number and n: a(n) = A005117(n) - n.
 A244217: Numbers n less than twice the largest Catalan number that is less than or equal to n.
 A244339: Expansion of (-2 * a(q) + 3*a(q^2) + 2*a(q^4)) / 3 in powers of q where a() is a cubic AGM theta function.
 A247648: Numbers whose binary expansion begins and ends with 1 and does not contain two adjacent zeros.
 A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
+A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.
 A259599: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,1) and midword sequence (a(n)); see Comments.
 A260188: Greatest primorial less than or equal to n.
 A260390: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0) and midword sequence (a(n)); see Comments.
@@ -346,6 +355,7 @@ A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.
 A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
+A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
 A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
 A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.

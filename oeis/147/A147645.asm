@@ -1,5 +1,5 @@
 ; A147645: Number of distinct Mersenne primes dividing n.
-; Submitted by Seth
+; Submitted by Penguin
 ; 0,0,1,0,0,1,1,0,1,0,0,1,0,1,1,0,0,1,0,0,2,0,0,1,0,0,1,1,0,1,1,0,1,0,1,1,0,0,1,0,0,2,0,0,1,0,0,1,1,0,1,0,0,1,0,1,1,0,0,1,0,1,2,0,0,1,0,0,1,1,0,1,0,0,1,0,1,1,0,0,1,0,0,2,0,0,1,0,0,1,1,0,2,0,0,1,0,1,1,0
 
 mov $2,3
@@ -12,20 +12,14 @@ lpb $0
     mod $4,$2
     cmp $4,0
     cmp $4,0
-    mul $4,2
-    mov $5,$2
-    cmp $5,1
+    mul $4,7
     mul $2,2
     add $2,1
-    max $4,$5
     sub $3,$4
   lpe
+  add $1,1
   lpb $0
     dif $0,$2
-  lpe
-  lpb $2
-    mod $2,2
-    add $1,1
   lpe
 lpe
 mov $0,$1

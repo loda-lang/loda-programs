@@ -1,10 +1,8 @@
 ; A141105: Upper Even Swappage of Upper Wythoff Sequence.
-; Submitted by GolfSierra
+; Submitted by Gibson Praise
 ; 2,6,8,10,14,16,18,20,24,26,28,32,34,36,40,42,44,48,50,52,54,58,60,62,66,68,70,74,76,78,82,84,86,90,92,94,96,100,102,104,108,110,112,116,118,120,124,126,128,130,134,136,138,142,144,146,150,152,154,158,160,162,164,168,170,172,176,178,180,184,186,188,192,194,196,198,202,204,206,210,212,214,218,220,222,226,228,230,234,236,238,240,244,246,248,252,254,256,260,262
 
-mov $1,$0
-seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
-add $0,$1
+seq $0,3622 ; The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.
 div $0,2
+add $0,1
 mul $0,2
-add $0,2

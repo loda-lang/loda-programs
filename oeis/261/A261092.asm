@@ -1,5 +1,5 @@
 ; A261092: First differences of A261093; characteristic function for A219640.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Gibson Praise
 ; 1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,0,0,0,1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,0,0,0,0,1,1,1,0,1,1,0,1,1,1,0,0
 
 lpb $0
@@ -9,9 +9,7 @@ lpb $0
 lpe
 lpb $0
   dif $0,$0
-  div $0,2
-  bin $1,$0
-  gcd $0,$1
+  mov $1,1
 lpe
 mov $0,$1
 add $0,1

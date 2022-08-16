@@ -1,5 +1,5 @@
 ; A319642: Number of non-isomorphic weight-n antichains of distinct multisets whose dual is a chain of (not necessarily distinct) multisets.
-; Submitted by Simon Strandgaard
+; Submitted by stoneageman
 ; 1,1,2,3,6,9,16,25,42,66,108
 
 mov $1,1
@@ -20,4 +20,4 @@ lpb $0
   mov $3,$5
   add $3,1
 lpe
-gcd $0,$2
+mov $0,$2

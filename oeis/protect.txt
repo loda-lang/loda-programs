@@ -57,6 +57,7 @@ A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
 A038500: Highest power of 3 dividing n.
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
+A039649: a(n) = phi(n)+1.
 A039701: a(n) = n-th prime modulo 3.
 A039702: a(n) = n-th prime modulo 4.
 A039703: a(n) = n-th prime modulo 5.
@@ -119,6 +120,7 @@ A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
 A075155: Cubes of Lucas numbers.
 A075730: Squares of odd semiprimes A046315, odd numbers divisible by exactly 2 primes (counted with multiplicity).
+A075818: Even numbers with exactly 3 prime factors (counted with multiplicity).
 A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
 A076821: Squares of the differences between consecutive primes.
 A078574: Number of divisors of the average of n-th twin prime pair.
@@ -134,6 +136,7 @@ A081865: a(n) = sigma_7(2n-1).
 A081866: a(n)=sigma_9(2n-1).
 A083271: a(n) = n*tau(n) + 1.
 A083542: a(n) = phi(n+1)*phi(n), product of totients of two consecutive integers.
+A083681: Sum of divisors of semiprimes.
 A084300: a(n) = phi(n) mod 6.
 A084311: a(n) = gcd(prime(n)-1,n-1).
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
@@ -154,6 +157,7 @@ A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0
 A092771: Prime(prime(n))^2-1.
 A092772: (Prime(prime(n))^2-1)/24.
 A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
+A098640: 2^p + 1 where p is prime.
 A098823: a(n) = 16*(8*prime(n) + 7).
 A099250: Bisection of Motzkin numbers A001006.
 A099251: Bisection of Motzkin sums (A005043).
@@ -198,6 +202,7 @@ A124669: Product of successive primes minus 2.
 A125137: a(n) = p^p + 1, where p = prime(n).
 A127114: n! in base 7.
 A127884: a(n) = floor(Fibonacci(n)/n).
+A128973: Triangle formed by reading A038622 mod 2.
 A129069: Numbers n such that (n-3)/2 is prime.
 A129070: Numbers n such that (n-5)/4 is prime.
 A129071: Numbers n such that (n-7)/6 is prime.
@@ -235,6 +240,7 @@ A140475: 1 along with primes greater than 3.
 A140670: a(n) = 1 if n is odd; otherwise, a(n) = 2^k - 1 where 2^k is the largest power of 2 that divides n.
 A140777: a(n) = 2*prime(n) - 4.
 A140853: a(n) = prime(prime(n) - 1) - 1, where prime(n) is the n-th prime.
+A141421: First bisection of A091137.
 A142342: a(n) = 10*prime(n).
 A143928: 2*p^2, for p an odd prime.
 A144769: a(n) = floor(prime(n)/3).
@@ -244,6 +250,7 @@ A146109: Bell numbers (A000110) read mod 19.
 A146110: Bell numbers (A000110) read mod 20.
 A146116: Bell numbers (A000110) read mod 26.
 A146121: Bell numbers (A000110) read mod 31.
+A151549: a(n) = (A151548(n)-1)/2.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
 A166010: a(n) = prime(n)^2-4.
@@ -262,8 +269,12 @@ A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent
 A177882: Trisection of A001317.
 A178064: Number of 0's in binary representation of n-th semiprime.
 A179262: a(n) = 2*prime(n)^2 - 1.
+A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
+A181932: A003136(n) mod 2.
 A182200: a(n) = prime(n)^2-3.
+A185322: a(n) = ceiling(prime(n)/10).
+A186621: Semiprimes - 1.
 A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
@@ -277,6 +288,7 @@ A242119: Primes modulo 18.
 A242120: Primes modulo 20.
 A242122: Primes modulo 22.
 A242125: Primes modulo 27.
+A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
 A265538: Largest base-7 palindrome m <= n, written in base 7.
@@ -296,3 +308,5 @@ A326122: a(n) = 10 * sigma(n).
 A330410: a(n) = 6*prime(n) - 1.
 A336551: a(n) = A003557(n) - 1.
 A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.
+A356533: a(n) = sigma_2(n)^2.
+A356534: a(n) = sigma_3(n)^2.

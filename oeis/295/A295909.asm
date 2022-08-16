@@ -1,5 +1,5 @@
 ; A295909: Number of (not necessarily maximum) cliques in the n X n black bishop graph.
-; Submitted by shiva
+; Submitted by William Michael Kanar
 ; 2,4,14,30,82,160,386,718,1646,3000,6742,12190,27194,49024,109082,196446,436726,786232,1747406,3145486,6990242,12582624,27961714,50331310,111847742,201326200,447392006,805305918,1789569226,3221224960,7158278282,12884901310
 
 mov $2,1
@@ -23,6 +23,5 @@ lpb $0
   mod $7,3
 lpe
 mov $0,$5
-sub $0,6
 div $0,2
-add $0,4
+add $0,1

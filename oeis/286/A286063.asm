@@ -1,10 +1,12 @@
 ; A286063: Fixed point of the mapping 00->001, 1->100, starting with 00.
-; Submitted by Jamie Morken(w1)
+; Submitted by pelpolaris
 ; 0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0
 
-mul $0,4
-add $0,1
-mul $0,2
-div $0,3
-seq $0,115384 ; Partial sums of Thue-Morse numbers A010060.
-mod $0,2
+mov $2,2
+sub $2,$0
+seq $0,214210 ; Trebled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0,0 and 1 with 1,1,1.
+add $2,$0
+mov $1,3
+gcd $1,$2
+mov $0,$1
+div $0,2

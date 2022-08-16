@@ -1,5 +1,5 @@
 ; A162994: The third left hand column of triangle A162990
-; Submitted by Jamie Morken(s3)
+; Submitted by BarnardsStern
 ; 64,1600,57600,2822400,180633600,14631321600,1463132160000,177038991360000,25493614755840000,4308420893736960000,844450495172444160000,190001361413799936000000
 
 add $0,3
@@ -9,8 +9,6 @@ lpb $1
   mul $0,$1
   sub $1,1
 lpe
-div $0,2
 pow $0,2
-mul $0,2
-div $0,288
-mul $0,64
+div $0,36
+mul $0,4

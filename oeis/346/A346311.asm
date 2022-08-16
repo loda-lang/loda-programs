@@ -2,9 +2,9 @@
 ; Submitted by Jon Maiga
 ; 0,0,0,1,2,4,6,8,12,16,20,26
 
-mov $1,$0
 mov $2,$0
 sub $2,2
+mov $1,$0
 mul $1,$2
 div $1,3
 trn $2,2
