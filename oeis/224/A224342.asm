@@ -1,8 +1,8 @@
 ; A224342: Apparently solves the identity: find sequence B that represents the numbers of ordered compositions of n using the terms of A, and vice versa.
-; Submitted by Gibson Praise
+; Submitted by WTBroughton
 ; 1,2,3,6,10,18,32,57,101,179,318,564,1002,1778,3157,5604,9949,17661,31352,55657
 
-add $0,1
+add $0,2
 lpb $0
   sub $0,1
   mov $7,$6
@@ -20,5 +20,4 @@ lpb $0
   mov $8,$5
   add $5,$7
 lpe
-mov $0,$4
-add $0,1
+mov $0,$6

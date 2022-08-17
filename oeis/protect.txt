@@ -4,6 +4,7 @@ A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime 
 A001748: 3 * primes.
 A001749: Primes multiplied by 4.
 A001750: Primes multiplied by 5.
+A002062: a(n) = Fibonacci(n) + n.
 A002659: a(n) = 2*sigma(n) - 1.
 A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1->12, 2->1, take limit; or, start with S(0)=2, S(1)=1, and for n>1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
@@ -23,6 +24,7 @@ A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008864: a(n) = prime(n) + 1.
+A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
 A014683: In the sequence of positive integers add 1 to each prime number.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
 A014690: a(n) = n + prime(n+1).

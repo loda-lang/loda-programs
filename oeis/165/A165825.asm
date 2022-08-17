@@ -1,22 +1,14 @@
 ; A165825: Totally multiplicative sequence with a(p) = 4.
-; Submitted by vonboedefeldt
+; Submitted by LCB001
 ; 1,4,4,16,4,16,4,64,16,16,4,64,4,16,16,256,4,64,4,64,16,16,4,256,16,16,64,64,4,64,4,1024,16,16,16,256,4,16,16,256,4,64,4,64,64,16,4,1024,16,64,16,64,4,256,16,256,16,16,4,256,4,16,64,4096,16,64,4,64,16,64,4,1024,4,16,64,64,16,64,4,1024,256,16,4,256,16,16,16,256,4,256,16,64,16,16,16,4096,4,64,64,256
 
-mov $1,10
-mov $2,2
-add $0,1
+mov $1,$0
+seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
 lpb $0
-  mul $1,2
-  mov $3,$0
-  div $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  div $0,$2
+  add $1,1
+  sub $0,$1
 lpe
-pow $1,2
-mov $0,$1
-div $0,400
+mov $2,2
+pow $2,$0
+pow $2,2
+mov $0,$2

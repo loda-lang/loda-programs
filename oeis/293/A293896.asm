@@ -1,12 +1,12 @@
 ; A293896: Number of proper divisors of the form 3k+2.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Jason Jung
 ; 0,0,0,1,0,1,0,1,0,2,0,1,0,1,1,2,0,1,0,2,0,2,0,2,1,1,0,2,0,2,0,2,1,2,1,1,0,1,0,4,0,2,0,2,1,2,0,2,0,2,1,2,0,1,2,3,0,2,0,3,0,1,0,3,1,2,0,2,1,4,0,2,0,1,1,2,1,2,0,4,0,2,0,2,2,1,1,4,0,2,0,2,0,2,1,3,0,2,1,4
 
 add $0,1
 mov $1,2
 mov $4,$0
 lpb $0
-  sub $0,3
+  sub $0,4
   mov $2,$4
   gcd $2,$1
   div $2,$1

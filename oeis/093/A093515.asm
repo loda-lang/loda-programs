@@ -1,6 +1,12 @@
 ; A093515: Numbers k such that either k or k-1 is a prime.
-; Submitted by owensse
+; Submitted by stoneageman
 ; 2,3,4,5,6,7,8,11,12,13,14,17,18,19,20,23,24,29,30,31,32,37,38,41,42,43,44,47,48,53,54,59,60,61,62,67,68,71,72,73,74,79,80,83,84,89,90,97,98,101,102,103,104,107,108,109,110,113,114,127,128,131,132,137,138,139,140,149,150,151,152,157,158,163,164,167,168,173,174,179,180,181,182,191,192,193,194,197,198,199,200,211,212,223,224,227,228,229,230,233
 
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+mov $1,$0
+sub $0,1
+div $0,2
+seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
+mul $0,2
+add $0,1
+add $0,$1
 add $0,1

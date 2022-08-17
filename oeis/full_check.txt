@@ -88,6 +88,7 @@ A046337: Odd numbers with an even number of prime factors (counted with multipli
 A050508: Golden rectangle numbers: n * A007067(n).
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
+A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
 A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is different from {largest m such that m! divides k}; numbers k which are either odd multiples of 12 or the largest m such that (m-1)! divides k is a composite number > 5.
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
@@ -113,6 +114,7 @@ A081477: Complement of A086377.
 A082061: Greatest common prime-divisor of n and phi(n)=A000010(n); a(n)=1 if no common prime-divisor exists.
 A082389: a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
 A082447: a(n) = the number k such that s(k)=0 where s(0)=n and s(i)=s(i-1)-(s(i-1) modulo i).
+A083399: Number of divisors of n that are not divisors of other divisors of n.
 A085002: a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
 A085003: Partial sums of A085002.
 A085263: Number of ways to write n as the sum of a squarefree number (A005117) and a positive square (A000290).
@@ -122,6 +124,7 @@ A088462: a(1)=1, a(n) = ceiling((n - a(a(n-1)))/2).
 A089090: a(n) is the smallest composite number coprime to n.
 A089809: Complement of A078588.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
+A091393: a(n) = Product_{ p | n } (1 + Legendre(-3,p) ).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
 A096309: a(1)=1; for n > 1, a(n) is the number of levels in the "stacked" prime number factorization of n (prime number factorization of the exponents if necessary and so on ...).
 A096936: Half of number of integer solutions to the equation x^2 + 3y^2 = n.
@@ -157,6 +160,7 @@ A137803: a(n) = floor(n*(sqrt(2) + 1/2)).
 A138026: Where A121561(n) = 3.
 A140099: A Beatty sequence: a(n) = [n*(1+t)], where t = tribonacci constant (A058265); complement of A140098.
 A140868: a(n) = floor(floor(n*alpha)*alpha) where alpha = 1+sqrt(2) = A014176.
+A141105: Upper Even Swappage of Upper Wythoff Sequence.
 A141123: Primes of the form -x^2+2*x*y+2*y^2 (as well as of the form 3*x^2+6*x*y+2*y^2).
 A141172: Primes of the form 2*x^2+2*x*y-3*y^2 (as well as of the form 2*x^2+6*x*y+y^2).
 A141785: Primes of the form -x^2 + 5*x*y + 5*y^2 (as well as of the form 9*x^2 + 15*x*y + 5*y^2).
@@ -260,6 +264,7 @@ A262726: Expansion of phi(-x) * psi(x^6) in powers of x where phi(), psi() are R
 A262774: Expansion of psi(x^2) * phi(-x^3) in powers of x where phi(), psi() are Ramanujan theta functions.
 A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.
 A265673: Area A under the trajectory of each odd number in the "3x+1" problem.
+A268335: Exponentially odd numbers.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A272550: Lexicographically earliest increasing sequence of primes such that odd-indexed terms have final digit 1 and even-indexed terms have final digit 9.
 A276084: a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
@@ -309,6 +314,7 @@ A288999: Positions of 1 in A288997; complement of A288998.
 A291208: Number of noncube divisors of n.
 A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
+A293484: The number of 7th powers in the multiplicative group modulo n.
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 A296908: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) < #(peaks); see Comments.

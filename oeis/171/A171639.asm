@@ -6,8 +6,8 @@ lpb $0
   trn $0,1
   seq $0,64799 ; Sum of n-th prime number and n-th composite number.
   sub $0,2
-  mov $2,$0
+  mov $1,$0
   mov $0,0
 lpe
-mov $0,$2
+mov $0,$1
 add $0,2

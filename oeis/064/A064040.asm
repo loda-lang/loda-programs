@@ -4,4 +4,8 @@
 
 seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
 sub $0,1
-seq $0,24619 ; Numbers that are not powers of primes p^k (k >= 0); complement of A000961.
+seq $0,80765 ; Integers m such that m+1 divides lcm(1 through m).
+mul $0,2
+sub $0,10
+div $0,2
+add $0,6
