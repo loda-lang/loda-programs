@@ -1,7 +1,0 @@
-; A125130: Successive sums of consecutive primes that form a triangular grid.
-; Submitted by biodoc
-; 2,10,41,129,328,712,1371,2427,4028,6338,9523,13887,19580,26940,36227,47721,61910,79168,99685,124211,153178,186914,225831,271061,322858,382038,448869,524451,608914,704204,810459,927883,1057828,1201162
-
-seq $0,96 ; a(n) = n*(n+3)/2.
-seq $0,237589 ; Sum of first n odd noncomposite numbers.
-add $0,1

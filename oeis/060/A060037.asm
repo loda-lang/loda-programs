@@ -9,7 +9,7 @@ lpb $0
   mov $2,$1
   div $2,2
 lpe
+add $1,2
 add $0,1
 pow $0,2
-add $1,2
 mod $0,$1

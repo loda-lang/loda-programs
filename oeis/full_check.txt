@@ -126,6 +126,7 @@ A089809: Complement of A078588.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
 A091393: a(n) = Product_{ p | n } (1 + Legendre(-3,p) ).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
+A095098: Fib001 numbers: those k for which the Zeckendorf expansion A014417(k) ends with two zeros and a final one.
 A096309: a(1)=1; for n > 1, a(n) is the number of levels in the "stacked" prime number factorization of n (prime number factorization of the exponents if necessary and so on ...).
 A096936: Half of number of integer solutions to the equation x^2 + 3y^2 = n.
 A098021: Positions of 0's in the zero-one sequence [nr+2r]-[nr]-[2r], where r=sqrt(2) and [ ]=floor; see A187967.
@@ -136,6 +137,7 @@ A102261: a(n) = A002144(n) - A002145(n).
 A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
 A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci representation. Also list of binary vectors not containing 00.
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
+A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 otherwise.
 A107145: Primes of the form x^2 + 40y^2.
 A109768: a(n) = gcd(3^n-2,2^n-3).
 A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
@@ -245,6 +247,7 @@ A238248: Numbers m such that A072219(m) = 7.
 A238392: Triangle read by rows: each row is an initial segment of the terms of A000123 followed by its reflection.
 A241915: After a(1)=1, numbers 1 .. A061395(n), followed by numbers 1 .. A061395(n+1), etc.
 A243348: Difference between the n-th squarefree number and n: a(n) = A005117(n) - n.
+A243349: Difference between the n-th squarefree number and the index of its largest prime factor.
 A244217: Numbers n less than twice the largest Catalan number that is less than or equal to n.
 A244339: Expansion of (-2 * a(q) + 3*a(q^2) + 2*a(q^4)) / 3 in powers of q where a() is a cubic AGM theta function.
 A247648: Numbers whose binary expansion begins and ends with 1 and does not contain two adjacent zeros.
@@ -252,6 +255,7 @@ A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
 A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.
+A258703: a(n) = floor(n/sqrt(2) - 1/2).
 A259599: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,1) and midword sequence (a(n)); see Comments.
 A260188: Greatest primorial less than or equal to n.
 A260390: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0) and midword sequence (a(n)); see Comments.
@@ -334,6 +338,7 @@ A319432: The first differences (A129761) of the tribonacci representation number
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 A321371: n + [n*r/s] + [n*t/s], where r = 1, s = cos(2*Pi/5), t = sec(2*Pi/5).
 A323100: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = -1 in Clifford algebra Cl(p,q)(R).
+A323239: a(n) = 1 if n is odd and squarefree, otherwise a(n) = 0.
 A323346: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = 1 (including e = 1) in Clifford algebra Cl(p,q)(R).
 A323554: Irregular table read by rows: T(n,k) = (2*k+1)^(-1/5) mod 2^n, 0 <= k <= 2^(n-1) - 1.
 A324534: The smallest common prime factor of sigma(n) and A276086(n), or 1 if no such prime exists.
@@ -342,6 +347,7 @@ A327204: Positions of 1's in {A327202(n) : n > 0}.
 A327207: Positions of 1's in {A327205(n) : n > 0}.
 A327257: Positions of 0's in {A327256(n) : n > 0}.
 A327829: Squarefree numbers with a prime number of prime factors.
+A328308: a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
 A328616: Number of digits in primorial base expansion of n that are maximal possible in their positions.
 A328819: Third digit after decimal point of square root of n.
 A328820: Fourth digit after decimal point of square root of n.

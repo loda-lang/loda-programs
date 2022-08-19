@@ -1,9 +1,7 @@
 ; A056979: Number of blocks of {1, 0, 1} in binary expansion of n.
-; Submitted by Jamie Morken(w4)
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,2,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,1,2,2,1,2,1,1,0,0,0,0,1,2,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,1,1,1,1,2,3,2,2,1,1,2,2,1,2,1,1,0,0,0,0,0
 
-mov $1,$0
-mul $1,2
-add $1,1
-seq $1,292342 ; Number of singletons in the integer partition having viabin number n.
-mov $0,$1
+mul $0,4
+add $0,3
+seq $0,290260 ; a(n) = number of isolated 0's in the binary representation of n.

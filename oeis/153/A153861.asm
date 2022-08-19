@@ -5,9 +5,9 @@
 lpb $0
   add $1,1
   mov $2,$0
-  trn $0,$1
   mod $2,$1
   add $2,1
+  trn $0,$1
 lpe
 bin $1,$2
 mov $0,$1

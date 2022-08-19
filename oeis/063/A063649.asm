@@ -1,10 +1,9 @@
 ; A063649: Largest b such that 1/n=1/c+1/b has integer solutions with c>b.
-; Submitted by Christian Krause
+; Submitted by andrew
 ; 3,4,6,6,10,8,12,12,15,12,21,14,21,24,24,18,30,20,36,30,33,24,42,30,39,36,44,30,55,32,48,44,51,60,63,38,57,52,72,42,78,44,66,72,69,48,84,56,75,68,78,54,90,80,105,76,87,60,110,62,93,112,96,90,110,68,102,92,120,72,136,74,111,120,114,126,130,80,144,108,123,84,156,110,129,116,152,90,171,140,138,124,141,120,168,98,147,180,180,102
 
 mov $1,$0
-mul $1,2
-seq $0,63428 ; a(n) is the smallest positive integer of the form n*k/(n+k).
-sub $1,$0
+seq $1,63717 ; a(n) is the greatest divisor of n^2 that is less than n.
+add $0,2
+add $1,$0
 mov $0,$1
-add $0,4

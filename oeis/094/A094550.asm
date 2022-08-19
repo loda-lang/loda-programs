@@ -1,23 +1,23 @@
 ; A094550: Numbers n such that there are integers a < b with a+(a+1)+...+(n-1) = (n+1)+(n+2)+...+b.
-; Submitted by Jamie Morken(w4)
+; Submitted by [SG-FC] hl
 ; 4,6,9,11,14,15,16,17,19,21,22,23,24,25,26,29,30,31,32,34,35,36,38,39,40,41,43,44,46,48,49,50,51,52,53,54,56,57,59,61,64,66,68,69,70,71,72,74,76,77,79,81,82,83,84,86,87,89,91,93,94,95,96,97,98,99,100,101,104,106,107,108,109,110,111,113,114,116,117,119,121,122,123,124,126,127,129,131,133,134,136,137,138,139,141,143,144,145,146,147
 
-mov $1,6
 mov $2,$0
-add $2,2
-pow $2,2
+mov $4,2
+add $0,1
+mov $1,2
+add $2,4
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,2
-  mov $3,$1
-  pow $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+  max $3,$4
+  mul $3,2
+  seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  sub $0,$3
+  add $1,4
+  sub $2,$0
+  add $4,$1
 lpe
 mov $0,$1
-div $0,2
+sub $0,14
+div $0,4
+add $0,4

@@ -1,21 +1,20 @@
 ; A354343: Number of distinct sums of n complex 6th power roots of unity.
-; Submitted by NeoGen
+; Submitted by Gibson Praise
 ; 1,6,19,37,61,91,127,169,217,271,331,397,469,547,631,721,817,919,1027,1141,1261,1387,1519,1657,1801,1951,2107,2269,2437,2611,2791,2977,3169,3367,3571,3781,3997,4219,4447,4681,4921,5167,5419,5677,5941,6211,6487,6769,7057,7351,7651,7957
 
-mov $4,$0
-mov $2,2
-lpb $2
-  sub $2,1
-  mov $0,$4
-  add $0,$2
-  pow $0,3
-  trn $0,2
-  add $0,1
-  mov $1,$2
-  mul $1,$0
-  add $3,$1
+mov $1,1
+mov $4,1
+lpb $0
+  sub $0,1
+  add $2,1
+  sub $3,$4
+  add $5,5
+  add $5,$2
+  mov $2,$4
+  add $4,$3
+  div $1,2
+  mul $1,2
+  add $1,$5
+  mov $3,0
 lpe
-min $4,1
-mul $4,$0
-mov $0,$3
-sub $0,$4
+mov $0,$1

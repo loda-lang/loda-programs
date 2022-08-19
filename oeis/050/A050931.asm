@@ -1,17 +1,19 @@
 ; A050931: Numbers having a prime factor congruent to 1 mod 6.
-; Submitted by emoga
+; Submitted by vanos0512
 ; 7,13,14,19,21,26,28,31,35,37,38,39,42,43,49,52,56,57,61,62,63,65,67,70,73,74,76,77,78,79,84,86,91,93,95,97,98,103,104,105,109,111,112,114,117,119,122,124,126,127,129,130,133,134,139,140,143,146,147,148,151,152,154,155,156,157,158,161,163,168,169,171,172,175,181,182,183,185,186,189,190,193,194,195,196,199,201,203,206,208,209,210,211,215,217,218,219,221,222,223
 
-mov $1,4
+mov $1,9
 mov $2,$0
-add $2,2
+add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,5088 ; Number of primes = 1 mod 3 dividing n.
-  min $3,1
+  seq $3,318675 ; Sum of squarefree divisors of n that have an odd number of prime factors.
+  sub $3,2
+  mod $3,3
+  mod $3,2
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,4 +21,6 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+sub $0,13
+div $0,2
+add $0,7

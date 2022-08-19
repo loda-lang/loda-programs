@@ -5,11 +5,11 @@
 mov $2,$0
 mov $3,$0
 lpb $3
+  sub $3,1
   mov $0,$2
   seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mul $1,$0
   add $1,$0
-  sub $3,1
 lpe
 mov $0,$1
 add $0,1

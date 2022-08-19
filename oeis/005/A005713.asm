@@ -13,7 +13,5 @@ add $1,$2
 sub $2,10
 div $2,$1
 mov $0,$2
-add $0,1
-mod $0,2
-add $0,2
+add $0,7
 mod $0,2

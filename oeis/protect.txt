@@ -155,6 +155,7 @@ A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A089241: Even numbers k such that k/2 - 1 is prime.
+A089250: Add 2 (mod 10) to each decimal digit of Pi.
 A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
 A092771: Prime(prime(n))^2-1.
 A092772: (Prime(prime(n))^2-1)/24.

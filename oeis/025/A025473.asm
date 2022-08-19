@@ -1,6 +1,6 @@
 ; A025473: a(1) = 1; for n > 1, a(n) = prime root of n-th prime power (A000961).
-; Submitted by Christian Krause
+; Submitted by Jason Jung
 ; 1,2,3,2,5,7,2,3,11,13,2,17,19,23,5,3,29,31,2,37,41,43,47,7,53,59,61,2,67,71,73,79,3,83,89,97,101,103,107,109,113,11,5,127,2,131,137,139,149,151,157,163,167,13,173,179,181,191,193,197,199,211,223,227,229,233,239,241,3,251,2,257,263,269,271,277,281,283,17,293,307,311,313,317,331,337,7,347,349,353,359,19,367,373,379,383,389,397,401,409
 
 seq $0,181062 ; Prime powers minus 1.
-seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

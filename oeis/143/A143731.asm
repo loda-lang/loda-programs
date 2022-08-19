@@ -1,8 +1,8 @@
 ; A143731: Characteristic function of numbers with at least two distinct prime factors (A024619).
-; Submitted by Elzeard BOUFFIER
+; Submitted by Christian Krause
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1
 
-mov $1,1
+mov $1,-1
 mov $2,2
 add $0,1
 lpb $0
@@ -22,4 +22,3 @@ lpb $0
 lpe
 mov $0,$1
 add $0,1
-mod $0,2

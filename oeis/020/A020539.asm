@@ -4,9 +4,3 @@
 
 seq $0,79 ; Powers of 2: a(n) = 2^n.
 seq $0,243131 ; 16*n^5 - 20*n^3 + 5*n.
-mov $1,$0
-add $1,1
-mov $0,$1
-mul $0,2
-sub $0,2
-div $0,2

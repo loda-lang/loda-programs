@@ -4,7 +4,9 @@
 
 mov $1,2
 mov $5,-1
-mov $2,7260
+mov $2,$0
+add $2,4
+pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1

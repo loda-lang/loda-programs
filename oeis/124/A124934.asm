@@ -1,17 +1,18 @@
 ; A124934: Numbers of the form 4mn - m - n, where m, n are positive integers.
-; Submitted by Jamie Morken(w3)
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,5,8,11,12,14,17,19,20,23,26,29,30,32,33,35,38,40,41,44,47,50,52,53,54,56,59,61,62,63,65,68,71,74,75,77,80,82,83,85,86,89,90,92,95,96,98,101,103,104,107,109,110,113,116,117,118,119,122,124,125,128,129,131,132,134,137,138,140,143,145,146,147,149,151,152,155,158,159,161,162,164,166,167,170,173,176,178,179,180,182,184,185,187,188,191,194,195,197,200
 
-mov $1,1
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,106602 ; Number of primitive positive solutions to 8n+2=x^2+y^2.
-  cmp $3,0
+  mul $3,2
+  seq $3,133205 ; Fully multiplicative with a(p) = p*(p+1)/2 for prime p.
+  gcd $3,2
   sub $0,$3
+  add $0,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,4 +20,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+div $0,2

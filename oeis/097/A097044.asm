@@ -4,8 +4,8 @@
 
 add $0,1
 lpb $0
-  add $2,$0
+  add $1,$0
   seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 lpe
-mov $0,$2
+mov $0,$1
 add $0,1
