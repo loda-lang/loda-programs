@@ -35,6 +35,7 @@ A007067: Nearest integer to n*tau.
 A007424: a(n) = 1 if n is squarefree, otherwise 2.
 A007916: Numbers that are not perfect powers.
 A007948: Largest cubefree number dividing n.
+A008966: a(n) = 1 if n is squarefree, otherwise 0.
 A010051: Characteristic function of primes: 1 if n is prime, else 0.
 A010055: 1 if n is a prime power p^k (k >= 0), otherwise 0.
 A019446: a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
@@ -54,6 +55,7 @@ A026274: Greatest k such that s(k) = n, where s = A026272.
 A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
+A033203: Primes p congruent to {1, 2, 3} (mod 8); or primes p of form x^2 + 2*y^2; or primes p such that x^2 = -2 has a solution mod p.
 A033207: Primes of form x^2+7*y^2.
 A033687: Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
@@ -80,9 +82,11 @@ A045373: Primes congruent to {0, 1, 2, 4} mod 7.
 A045377: Primes congruent to {0, 2, 6} mod 7.
 A045397: Primes congruent to {0, 3, 4, 5} mod 7.
 A045419: Primes congruent to {1, 3, 7} mod 8.
+A045439: Primes congruent to {0, 4, 5, 6} mod 7.
 A045442: Primes congruent to {1, 5, 7} mod 8.
 A045459: Primes congruent to {0, 1, 4, 6} mod 7.
 A045460: Primes congruent to {0, 4, 6} mod 7.
+A045461: Primes congruent to {0, 1, 4} mod 7.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
 A050508: Golden rectangle numbers: n * A007067(n).
@@ -139,6 +143,7 @@ A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci r
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
 A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 otherwise.
 A107145: Primes of the form x^2 + 40y^2.
+A108029: Numbers n such that 149*k + 151 is prime.
 A109768: a(n) = gcd(3^n-2,2^n-3).
 A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A113063: Associated with theta series of hexagonal net with respect to a node.
@@ -196,6 +201,7 @@ A188012: Positions of 0 in A188011; complement of A188013.
 A188017: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 A188039: Positions of 0 in A188038; complement of A188040.
 A189364: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=(1+sqrt(5))/2.
+A189368: a(n) = n + [n*r/s] + [n*t/s]; r=2, s=sqrt(2), t=sqrt(3).
 A189370: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=sqrt(5).
 A189458: a(n) = n+[nr/s]+[nt/s]; r=2, s=sqrt(2), t=1+sqrt(2).
 A189460: n+[ns/r]+[nt/r]; r=2, s=sqrt(5), t=1+sqrt(5).
@@ -226,6 +232,7 @@ A190550: Positions of 0 in A190549.
 A190554: Positions of 4 in A190549.
 A190562: Positions of 0 in A190561.
 A190564: Positions of 2 in A190561.
+A190706: Positions of 1 in A190704.
 A191329: (Lower Wythoff sequence mod 2)+(Upper Wythoff sequence mod 2).
 A194148: Sum_{j=1..n} floor(j*(1/2 + sqrt(2))); n-th partial sum of Beatty sequence for 1/2 + sqrt(2).
 A195127: a(n) = 2*n - floor(n*r/5), where r = (1 + sqrt(5))/2.
@@ -359,6 +366,7 @@ A333842: G.f.: Sum_{k>=1} k * x^(prime(k)^2) / (1 - x^(prime(k)^2)).
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A340346: The largest divisor of n that is a term of A055932 (numbers divisible by all primes smaller than their largest prime factor).
+A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).
@@ -368,6 +376,7 @@ A353525: a(n) = 1 if the number of trailing zeros in primorial base representati
 A353526: The smallest prime not dividing n, reduced modulo 4.
 A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
 A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
+A353631: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for odd numbers.
 A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
 A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.

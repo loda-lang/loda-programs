@@ -1,7 +1,7 @@
 ; A086377: a(1)=1; a(n)=a(n-1)+2 if n is in the sequence; a(n)=a(n-1)+2 if n and (n-1) are not in the sequence; a(n)=a(n-1)+3 if n is not in the sequence but (n-1) is in the sequence.
-; Submitted by Skivelitis2
+; Submitted by PhilTheNet
 ; 1,4,6,8,11,13,16,18,21,23,25,28,30,33,35,37,40,42,45,47,49,52,54,57,59,62,64,66,69,71,74,76,78,81,83,86,88,91,93,95,98,100,103,105,107,110,112,115,117,120,122,124,127,129,132,134,136,139,141,144,146,148,151,153,156,158,161,163,165,168,170,173,175,177,180,182,185,187,190,192,194,197,199,202,204,206,209,211,214,216,218,221,223,226,228,231,233,235,238,240
 
-add $0,1
-seq $0,64437 ; a(1)=1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
-sub $0,2
+mov $1,$0
+seq $0,1954 ; a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
+sub $0,$1

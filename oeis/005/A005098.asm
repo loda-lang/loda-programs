@@ -1,17 +1,25 @@
 ; A005098: Numbers n such that 4n + 1 is prime.
-; Submitted by Christian Krause
+; Submitted by Gibson Praise
 ; 1,3,4,7,9,10,13,15,18,22,24,25,27,28,34,37,39,43,45,48,49,57,58,60,64,67,69,70,73,78,79,84,87,88,93,97,99,100,102,105,108,112,114,115,127,130,135,139,142,144,148,150,153,154,160,163,165,168,169,175,177,183,189,190,192,193,199,202,205,207,213,214,219,220,232,234,235,238,244,249,252,253,255,258,262,265,267,273,274,277,279,282,288,295,298,300,303,304,307,309
 
-add $0,1
-mov $3,$0
-pow $3,5
-lpb $3
-  add $2,4
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  sub $3,$0
+mov $2,$0
+add $2,6
+pow $2,3
+lpb $2
+  mul $6,4
+  cmp $1,0
+  mov $3,$6
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,18
+  add $5,1
+  add $5,$1
+  mov $6,$5
+  sub $6,2
 lpe
-mov $0,$2
-div $0,4
-add $0,1
+mov $0,$5
+sub $0,2

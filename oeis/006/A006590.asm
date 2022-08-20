@@ -1,9 +1,7 @@
 ; A006590: a(n) = Sum_{k=1..n} ceiling(n/k).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Ralfy
 ; 1,3,6,9,13,16,21,24,29,33,38,41,48,51,56,61,67,70,77,80,87,92,97,100,109,113,118,123,130,133,142,145,152,157,162,167,177,180,185,190,199,202,211,214,221,228,233,236,247,251,258,263,270,273,282,287,296,301,306,309,322,325,330,337,345,350,359,362,369,374,383,386,399,402,407,414,421,426,435,438,449,455,460,463,476,481,486,491,500,503,516,521,528,533,538,543,556,559,566,573
 
 mov $1,$0
-seq $1,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
-add $1,$0
-mov $0,$1
-add $0,1
+seq $1,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+add $0,$1

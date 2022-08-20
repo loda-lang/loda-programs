@@ -3,7 +3,7 @@
 
 mul $0,2
 add $0,1
-mov $2,$0
+mov $1,$0
 seq $0,295012 ; a(n) = sigma(12n - 1)/12, where sigma = sum of divisors (A000203).
-sub $0,$2
+sub $0,$1
 div $0,2
