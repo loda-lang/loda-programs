@@ -1,9 +1,12 @@
 ; A284772: Fixed point of the morphism 0 -> 01, 1 -> 0010.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Skivelitis2
 ; 0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1
 
+mov $1,$0
+mul $1,6
 mul $0,2
-seq $0,284853 ; Positions of 1 in A284851; complement of A284852.
+seq $0,26368 ; a(n) = greatest k such that s(k) = n, where s = A026366.
+sub $0,$1
+sub $0,3
 div $0,2
-add $0,3
 mod $0,2

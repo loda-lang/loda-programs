@@ -1,15 +1,14 @@
 ; A070667: Smallest m in range 2..n-1 such that m^2 == 1 mod n, or 1 if no such number exists.
-; Submitted by Athlici
+; Submitted by Jason Jung
 ; 1,1,2,3,4,5,6,3,8,9,10,5,12,13,4,7,16,17,18,9,8,21,22,5,24,25,26,13,28,11,30,15,10,33,6,17,36,37,14,9,40,13,42,21,19,45,46,7,48,49,16,25,52,53,21,13,20,57,58,11,60,61,8,31,14,23,66,33,22,29,70,17,72,73,26,37,34,25,78,9,80,81,82,13,16,85,28,21,88,19,27,45,32,93,39,17,96,97,10,49
 
 lpb $0
-  add $0,$3
+  add $0,$1
   add $1,1
   mov $2,$0
   seq $2,215653 ; a(n) = smallest positive m such that m^2=1+k*n with positive k.
-  mov $0,$1
-  add $3,$1
+  mov $0,1
 lpe
-sub $2,$3
+sub $2,$1
 mov $0,$2
 add $0,1

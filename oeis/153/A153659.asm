@@ -10,6 +10,6 @@ lpb $0
   mov $1,$0
   seq $1,343879 ; Number of pairs (d1, d2) of divisors of n such that d1<d2, d1|n, d2|n, d1|d2 and d1 + d2 <= n.
   add $1,1
-  mul $0,2
+  mov $0,0
 lpe
 mov $0,$1

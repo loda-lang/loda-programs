@@ -1,9 +1,22 @@
 ; A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
-; Submitted by Raul Prisacariu
+; Submitted by 2mdPUbG3fhUMEpz6FJkmzwC9PME8
 ; 0,0,0,1,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0
 
-mov $1,$0
-seq $1,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
-sub $1,1
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    mul $1,3
+    add $2,1
+    sub $3,$1
+  lpe
+  add $4,1
+  dif $0,$2
+  max $0,$2
+lpe
+mov $1,$4
 cmp $1,1
 mov $0,$1

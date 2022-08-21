@@ -179,6 +179,7 @@ A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
+A104638: Number of odd digits in n-th prime.
 A105825: a(n) = sigma(n) (mod 5).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
 A106138: Semiprimes (mod 2).

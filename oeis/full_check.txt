@@ -96,7 +96,9 @@ A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (
 A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is different from {largest m such that m! divides k}; numbers k which are either odd multiples of 12 or the largest m such that (m-1)! divides k is a composite number > 5.
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
+A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065331: Largest 3-smooth divisor of n.
+A068068: Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
 A069213: a(n) = n-th positive integer relatively prime to n.
 A069513: Characteristic function of the prime powers p^k, k >= 1.
 A069623: Number of perfect powers <= n.
@@ -279,6 +281,7 @@ A268335: Exponentially odd numbers.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A272550: Lexicographically earliest increasing sequence of primes such that odd-indexed terms have final digit 1 and even-indexed terms have final digit 9.
 A276084: a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
+A276150: Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.
 A276151: n minus the greatest primorial number (A002110) which divides n: a(n) = n - A053589(n).
 A276618: Transpose of table A099884.
 A276781: a(n) = 1+n-(nearest power of prime <= n); for n > 1, a(n) = minimal b such that the numbers binomial(n,k) for b <= k <= n-b have a common divisor greater than 1.
@@ -363,6 +366,7 @@ A329030: The least missing nonzero digit in the primorial base expansion of A276
 A329825: Beatty sequence for (3+sqrt(17))/4.
 A330175: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(5) - 2, s = sqrt(5) - 1, t = sqrt(5).
 A333842: G.f.: Sum_{k>=1} k * x^(prime(k)^2) / (1 - x^(prime(k)^2)).
+A336356: Characteristic function of A336359, numbers k for which A001222(A000203(k)) < A001222(k).
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A340346: The largest divisor of n that is a term of A055932 (numbers divisible by all primes smaller than their largest prime factor).

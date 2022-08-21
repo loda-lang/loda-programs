@@ -1,9 +1,9 @@
 ; A288213: Fixed point of the mapping 00->0010, 1->011, starting with 00.
-; Submitted by WTBroughton
+; Submitted by Bigos2
 ; 0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0
 
 mul $0,2
-seq $0,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
-div $0,2
+seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+div $0,4
 add $0,1
 mod $0,2

@@ -4,9 +4,9 @@
 
 mov $2,$0
 seq $0,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).
-mov $1,$0
 add $2,1
 add $2,$0
+mov $1,$0
 gcd $1,$2
 div $2,$1
 mov $0,$2

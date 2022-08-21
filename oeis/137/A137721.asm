@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,137794 ; Characteristic function of numbers having no prime gaps in their factorization.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1
