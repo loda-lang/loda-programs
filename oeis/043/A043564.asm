@@ -3,9 +3,9 @@
 
 mov $2,$0
 lpb $2
+  mov $2,12
   gcd $0,78
   add $1,1
-  mov $2,12
   sub $2,$0
 lpe
 add $1,1

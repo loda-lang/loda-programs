@@ -4,5 +4,5 @@
 
 mov $1,$0
 seq $0,330185 ; a(n) = n + floor(ns/r) + floor(nt/r), where r = tau - 1/2, s = tau, t = tau + 1/2, tau = golden ratio = (1+sqrt(5))/2.
-sub $0,$1
 sub $0,1
+sub $0,$1

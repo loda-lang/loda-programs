@@ -1,10 +1,9 @@
 ; A272532: Single bit representation of the sum of two sinusoids with periods 2 and 2*sqrt(2).
-; Submitted by Jason Jung
+; Submitted by Skivelitis2
 ; 1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1
 
-mov $1,$0
-seq $1,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
-div $1,2
-add $1,$0
-mov $0,$1
+gcd $1,$0
+seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+div $0,4
+add $0,$1
 mod $0,2

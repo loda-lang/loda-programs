@@ -1,31 +1,8 @@
 ; A206787: Sum of the odd squarefree divisors of n.
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 1,1,4,1,6,4,8,1,4,6,12,4,14,8,24,1,18,4,20,6,32,12,24,4,6,14,4,8,30,24,32,1,48,18,48,4,38,20,56,6,42,32,44,12,24,24,48,4,8,6,72,14,54,4,72,8,80,30,60,24,62,32,32,1,84,48,68,18,96,48,72,4,74,38,24,20,96,56,80,6,4,42,84,32,108,44,120,12,90,24,112,24,128,48,120,4,98,8,48,6
 
-mov $1,1
+mul $0,2
 add $0,1
-lpb $0
-  div $2,$1
-  mov $3,$0
-  lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    max $4,$5
-    add $2,$4
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-  lpe
-  add $2,1
-  mul $1,$2
-lpe
-mov $0,$1
+seq $0,48250 ; Sum of the squarefree divisors of n.
+div $0,3

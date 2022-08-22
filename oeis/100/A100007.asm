@@ -1,5 +1,5 @@
 ; A100007: Number of unitary divisors of 2n-1 (d such that d divides 2n-1, GCD(d,(2n-1)/d)=1). Bisection of A034444.
-; Submitted by Gibson Praise
+; Submitted by vanos0512
 ; 1,2,2,2,2,2,2,4,2,2,4,2,2,2,2,2,4,4,2,4,2,2,4,2,2,4,2,4,4,2,2,4,4,2,4,2,2,4,4,2,2,2,4,4,2,4,4,4,2,4,2,2,8,2,2,4,2,4,4,4,2,4,2,2,4,2,4,4,2,2,4,4,4,4,2,2,4,4,2,4,4,2,8,2,2,4,2,4,4,2,2,4,4,4,4,2,2,8,2,2
 
 mov $1,4
@@ -8,11 +8,11 @@ mul $0,2
 add $0,1
 lpb $0
   mov $3,$0
+  div $3,7
   lpb $3
     mov $4,$0
     mod $4,$2
-    mul $4,3
-    add $2,1
+    add $2,2
     sub $3,$4
   lpe
   div $0,$2

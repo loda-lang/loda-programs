@@ -5,7 +5,7 @@ You can use it to mine programs that calculate integer sequences from the [On-Li
 
 This repository contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using [loda-cpp](https://github.com/loda-lang/loda-cpp), but there are also a few hand-written programs.
 
-There are currently more than :star: **65,000 programs** :star: available! You can find lists with descriptions and links here:
+There are currently more than :star: **90,000 programs** :star: available! You can find lists with descriptions and links here:
 
 * [A000001-A049999](https://loda-lang.org/list0)
 * [A050000-A099999](https://loda-lang.org/list1)

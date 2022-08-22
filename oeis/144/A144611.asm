@@ -1,9 +1,10 @@
 ; A144611: Sturmian word of slope 2-sqrt(2).
-; Submitted by Gunnar Hjern
+; Submitted by stoneageman
 ; 0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1
 
-add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-sub $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+lpb $0
+  trn $0,1
+  seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+  add $0,3
+lpe
 mod $0,2

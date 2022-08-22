@@ -1,5 +1,9 @@
 ; A213714: Inverse function for injection A005187.
+; Submitted by shiva
 ; 0,1,0,2,3,0,0,4,5,0,6,7,0,0,0,8,9,0,10,11,0,0,12,13,0,14,15,0,0,0,0,16,17,0,18,19,0,0,20,21,0,22,23,0,0,0,24,25,0,26,27,0,0,28,29,0,30,31,0,0,0,0,0,32,33,0,34,35,0,0,36,37,0,38,39,0,0,0,40,41,0,42,43,0,0,44,45,0,46,47,0,0,0,0,48,49,0,50,51,0
 
-seq $0,213724 ; Largest natural number x such that x=n+A000120(x), or zero if no such number exists.
+seq $0,108918 ; Reversed binary words in reversed lexicographic order.
+add $1,$0
+mod $0,2
+mul $0,$1
 div $0,2

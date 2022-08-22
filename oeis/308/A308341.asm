@@ -4,7 +4,9 @@
 
 mov $1,-2
 mov $6,-4
-mov $2,262144
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   max $3,$5
   add $3,$5

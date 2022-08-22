@@ -1,13 +1,14 @@
 ; A267051: Binary representation of the n-th iteration of the "Rule 92" elementary cellular automaton starting with a single ON (black) cell.
+; Submitted by amazing
 ; 1,11,111,1011,10111,101011,1010111,10101011,101010111,1010101011,10101010111,101010101011,1010101010111,10101010101011,101010101010111,1010101010101011,10101010101010111,101010101010101011,1010101010101010111,10101010101010101011,101010101010101010111,1010101010101010101011,10101010101010101010111,101010101010101010101011,1010101010101010101010111,10101010101010101010101011,101010101010101010101010111,1010101010101010101010101011,10101010101010101010101010111,101010101010101010101010101011
 
 lpb $0
+  sub $0,1
   mov $1,$0
-  seq $1,284351 ; Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
-  add $1,10
-  mov $0,0
+  max $1,0
+  seq $1,266508 ; Binary representation of the n-th iteration of the "Rule 28" elementary cellular automaton starting with a single ON (black) cell.
+  trn $0,$1
 lpe
 mov $0,$1
-div $0,11
 mul $0,10
 add $0,1
