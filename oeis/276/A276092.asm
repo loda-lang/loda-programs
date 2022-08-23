@@ -7,7 +7,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,36878 ; Integers of the form p^(p-1), where p is prime.
+  seq $2,36878 ; a(n) = p^(p-1) where p = prime(n).
   mul $1,$2
 lpe
 mov $0,$1

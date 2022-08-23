@@ -1,6 +1,21 @@
 ; A206037: Values of the difference d for 3 primes in arithmetic progression with the minimal start sequence {3 + j*d}, j = 0 to 2.
-; Submitted by arkiss
+; Submitted by nenym
 ; 2,4,8,10,14,20,28,34,38,40,50,64,68,80,94,98,104,110,124,134,154,164,178,188,190,208,220,230,238,248,260,280,308,314,328,344,370,418,428,430,440,454,458,484,518,544,560,574,584,610,614,628,638,640,644,650,658,698,724,740,748,754,770,784,808,860,878,904,934,938,964,974,988,1018,1030,1048,1088,1100,1120,1168,1184,1190,1198,1210,1228,1274,1288,1294,1358,1364,1420,1424,1450,1468,1480,1484,1508,1540,1580,1594
 
-seq $0,115334 ; Numbers d > 0 such that 3+2d and 3+4d are primes.
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,88420 ; Number of primes in arithmetic progression starting with 3 and with d = 2n.
+  cmp $3,3
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
 mul $0,2
+add $0,2

@@ -1,16 +1,6 @@
 ; A099774: Number of divisors of 2*n-1.
-; Submitted by Odd-Rod
+; Submitted by zelandonii
 ; 1,2,2,2,3,2,2,4,2,2,4,2,3,4,2,2,4,4,2,4,2,2,6,2,3,4,2,4,4,2,2,6,4,2,4,2,2,6,4,2,5,2,4,4,2,4,4,4,2,6,2,2,8,2,2,4,2,4,6,4,3,4,4,2,4,2,4,8,2,2,4,4,4,6,2,2,6,4,2,4,4,2,8,2,3,6,2,6,4,2,2,4,4,4,8,2,2,8,2,2
 
-mov $1,2
 mul $0,2
-lpb $0
-  mov $3,$0
-  gcd $3,$1
-  div $3,$1
-  sub $0,$1
-  add $1,1
-  add $2,$3
-lpe
-mov $0,$2
-add $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

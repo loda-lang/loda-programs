@@ -1,8 +1,21 @@
 ; A069276: 15-almost primes (generalization of semiprimes).
-; Submitted by William Michael Kanar
+; Submitted by GolfSierra
 ; 32768,49152,73728,81920,110592,114688,122880,165888,172032,180224,184320,204800,212992,248832,258048,270336,276480,278528,286720,307200,311296,319488,373248,376832,387072,401408,405504,414720,417792,430080,450560,460800,466944,475136,479232,507904,512000,532480,559872,565248,580608,602112,606208,608256,622080,626688,630784,645120,671744,675840,691200,696320,700416,704512,712704,716800,718848,745472,761856,768000,770048,778240,798720,839808,847872,868352,870912,903168,909312,912384,933120,940032
 
-seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
-sub $0,1
-seq $0,46310 ; Numbers that are divisible by exactly 8 primes counting multiplicity.
-mul $0,128
+add $0,1
+mov $1,133
+mov $2,$0
+add $2,8
+pow $2,4
+lpb $2
+  mov $3,$1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $3,5
+  cmp $3,5
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
+mul $0,32
+add $0,32

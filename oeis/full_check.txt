@@ -310,6 +310,7 @@ A285129: Positions of 0 in A285128; complement of A285130.
 A285256: Positions of 0 in A285255; complement of A285257.
 A285258: 1-limiting word of the morphism 0->10, 1-> 0110.
 A285259: Positions of 0 in A285258; complement of A285260.
+A285260: Positions of 1 in A285258; complement of A285259.
 A285401: Positions of 0 in A285177; complement of A285402.
 A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
 A285708: a(n) = n / A285707(n).

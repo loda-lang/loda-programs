@@ -1,10 +1,8 @@
 ; A179802: Digital root of A179545.
-; Submitted by Penguin
+; Submitted by shiva
 ; 3,9,3,9,3,9,3,9,3,3,9,9,3,9,3,3,3,9,9,3,9,9,3,3,9,3,9,3,9,3,9,3,3,9,3,9,9,9,3,3,3,9,3,9,3,9,9,9,3,9,3,3,9,3,3,3,3,9,9,3,9,3,9,3,9,3,9,9,3,9,3,3,9,9,9,3,3,9,3,9,3,9,3,9,9,3,3,9,3,9,3,3,9,3,9,3,3,3,9,9
 
-seq $0,6005 ; The odd prime numbers together with 1.
-lpb $0
-  add $0,2
-  mod $0,6
-lpe
-mul $0,3
+seq $0,306190 ; a(n) = p^2 - p - 1 where p = prime(n), the n-th prime.
+mod $0,3
+mul $0,6
+sub $0,3

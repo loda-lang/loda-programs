@@ -5,7 +5,7 @@
 add $0,1
 mov $1,3
 mov $2,$0
-pow $2,3
+pow $2,6
 lpb $2
   mov $3,$1
   seq $3,156660 ; Characteristic function of Sophie Germain primes.
@@ -14,6 +14,5 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-sub $0,3
 div $0,2
-add $0,2
+add $0,1

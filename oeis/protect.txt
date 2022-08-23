@@ -91,6 +91,7 @@ A056798: Prime powers with even nonnegative exponents.
 A057901: a(n) = 3^prime(n).
 A057902: a(n) = 5^prime(n).
 A059591: Squarefree part of n^2+1.
+A060418: Largest decimal digit in n-th prime.
 A060429: a(n) = 4*prime(n)^2+1.
 A060904: Largest power of 5 that divides n.
 A061397: Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
@@ -220,6 +221,7 @@ A131426: a(n) = 2*prime(n) - 3.
 A132227: a(n) = 3*prime(n) - 5.
 A133037: Squares of members of the Padovan sequence A000931.
 A133053: Squares of Motzkin numbers.
+A135282: Largest k such that 2^k appears in the trajectory of the Collatz 3x+1 sequence started at n.
 A135481: a(n) = 2^A007814(n+1) - 1.
 A135984: a(n) = 24(prime(n))+7.
 A137264: Prime number gaps read modulo 3.

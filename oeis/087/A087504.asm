@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,4
   seq $2,144110 ; Period 6: repeat [2, 2, 2, 1, 1, 1].
+  sub $0,4
   add $1,$2
 lpe
 add $1,1

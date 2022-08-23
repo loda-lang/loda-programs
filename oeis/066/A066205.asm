@@ -5,8 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,31368 ; Odd-indexed primes: a(n) = prime(2n-1).
+  sub $0,1
   mul $1,$2
 lpe
 mul $1,2

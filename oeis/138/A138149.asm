@@ -1,5 +1,19 @@
 ; A138149: n-th run has length n-th prime, with values 0 and 1 only, starting with 1.
+; Submitted by Solo Man
 ; 1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-seq $0,83375 ; n appears prime(n) times.
+mul $0,2
+sub $0,2
+mov $1,2
+mov $3,4
+lpb $0
+  sub $0,1
+  sub $0,$1
+  trn $0,$3
+  add $1,1
+  add $2,5
+  mov $3,$2
+lpe
+sub $1,1
+mov $0,$1
 mod $0,2

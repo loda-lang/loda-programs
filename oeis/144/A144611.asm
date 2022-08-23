@@ -1,10 +1,12 @@
 ; A144611: Sturmian word of slope 2-sqrt(2).
-; Submitted by stoneageman
+; Submitted by Skivelitis2
 ; 0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1
 
 lpb $0
-  trn $0,1
-  seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
-  add $0,3
+  pow $1,$2
+  mov $2,$0
+  seq $2,188037 ; a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
+  mov $0,0
+  sub $0,$2
 lpe
-mod $0,2
+mov $0,$1
