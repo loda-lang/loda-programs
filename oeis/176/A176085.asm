@@ -7,9 +7,9 @@ add $0,1
 lpb $0
   sub $0,2
   mov $3,$2
-  add $2,1
   add $3,$0
   bin $3,$0
   add $1,$3
+  add $2,1
 lpe
 mov $0,$1

@@ -4,7 +4,6 @@
 
 mov $4,1
 sub $0,1
-mov $1,5
 mov $2,8
 mov $3,$0
 pow $3,5

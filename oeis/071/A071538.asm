@@ -1,25 +1,15 @@
 ; A071538: Number of twin prime pairs (p, p+2) with p <= n.
+; Submitted by GolfSierra
 ; 0,0,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 
-mov $6,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $4,0
-  mov $0,$6
-  sub $0,$3
-  lpb $0
-    mov $5,$0
-    seq $5,45965 ; a(1)=2; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+1}^e_i.
-    seq $2,17778 ; Binomial coefficients C(62,n).
-    lpb $2
-      mov $2,0
-      mov $0,-5
-      add $0,$5
-      add $0,1
-      add $4,1
-    lpe
-  lpe
-  add $1,$4
+mov $4,$0
+mov $1,$0
+lpb $1
+  sub $1,2
+  mov $0,$4
+  sub $0,$1
+  mov $3,$0
+  seq $3,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2

@@ -1,20 +1,20 @@
 ; A195091: Numbers k such that (number of prime factors of k counted with multiplicity) less (number of distinct prime factors of k) = 7.
-; Submitted by Gibson Praise
+; Submitted by Athlici
 ; 256,768,1152,1280,1728,1792,2592,2816,3200,3328,3840,3888,4352,4864,5376,5760,5832,5888,6272,6561,7424,7936,8000,8064,8448,8640,8748,8960,9472,9600,9984,10496,11008,12032,12096,12672,12960,13056,13122,13568,14080,14400,14592,14976,15104,15488,15616,16640,17152,17664,18144,18176,18688,18816,19008,19440,19584,19712,20000,20224,21248,21600,21632,21760,21888,21952,22272,22400,22464,22784,23296,23808,24000,24320,24832,25856,26368,26496,26880,27216,27392,27904,28224,28416,28512,28928,29160,29376
 
 add $0,1
-mov $1,143
+mov $1,149
 mov $2,$0
 add $2,8
 pow $2,4
 lpb $2
-  mov $3,$1
   seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   sub $3,2
   cmp $3,5
   sub $0,$3
   add $1,1
   sub $2,$0
+  add $3,$1
 lpe
 mov $0,$1
 add $0,1

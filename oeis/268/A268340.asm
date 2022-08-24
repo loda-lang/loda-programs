@@ -1,10 +1,14 @@
 ; A268340: Characteristic function of the prime powers p^k, k >= 2.
-; Submitted by Stony666
+; Submitted by vanos0512
 ; 0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,100995 ; If n is a prime power p^m, m >= 1, then m, otherwise 0.
-mov $1,1
-bin $1,$0
+lpb $0
+  add $0,$3
+  mov $2,$0
+  seq $2,87624 ; a(n)=0 if n is prime, A001221(n) otherwise.
+  mov $3,2
+  add $1,$2
+  sub $0,1
+  bin $0,$1
+lpe
 mov $0,$1
-add $0,1
-mod $0,2

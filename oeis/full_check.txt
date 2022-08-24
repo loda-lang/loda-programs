@@ -3,6 +3,7 @@ A000161: Number of partitions of n into 2 squares.
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000572: A Beatty sequence: [ n(e+1) ].
 A001132: Primes == +-1 (mod 8).
+A001221: Number of distinct primes dividing n (also called omega(n)).
 A001222: Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
@@ -368,6 +369,7 @@ A329030: The least missing nonzero digit in the primorial base expansion of A276
 A329825: Beatty sequence for (3+sqrt(17))/4.
 A330175: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(5) - 2, s = sqrt(5) - 1, t = sqrt(5).
 A333842: G.f.: Sum_{k>=1} k * x^(prime(k)^2) / (1 - x^(prime(k)^2)).
+A335858: Nonnegative integers ordered by binary length and then lexicographically by run lengths (considering least significant runs first).
 A336356: Characteristic function of A336359, numbers k for which A001222(A000203(k)) < A001222(k).
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
