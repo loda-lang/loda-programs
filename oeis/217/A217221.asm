@@ -1,10 +1,14 @@
 ; A217221: Theta series of Kagome net with respect to a deep hole.
-; Submitted by Skivelitis2
+; Submitted by Groo
 ; 0,6,0,6,0,0,0,12,0,6,0,0,0,12,0,0,0,0,0,12,0,12,0,0,0,6,0,6,0,0,0,12,0,0,0,0,0,12,0,12,0,0,0,12,0,0,0,0,0,18,0,0,0,0,0,0,0,12,0,0,0,12,0,12,0,0,0,12,0,0,0,0,0,12,0,6,0,0,0,12,0,6,0,0,0,0,0,0,0,0,0,24,0,12,0,0,0,12,0,0
 
-mov $1,-1
-pow $1,$0
-bin $1,2
-seq $0,253626 ; Expansion of psi(q^2) * f(q, q^2)^2 / f(q, q^5) in powers of q where psi(), f() are Ramanujan theta functions.
-mul $0,$1
+mov $2,$0
+trn $0,1
+seq $0,244375 ; Expansion of (a(q) + 3*a(q^2) - 4*a(q^4)) / 6 in powers of q where a() is a cubic AGM theta function.
+mod $2,2
+lpb $2
+  mov $2,0
+  gcd $1,$0
+lpe
+mov $0,$1
 mul $0,6

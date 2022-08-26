@@ -1,31 +1,24 @@
-; A028233 o=1: If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
-; Coded manually 2021-02-27 by Antti Karttunen, https://github.com/karttu
-; Note that A028233(n) = A020639(n)^A067029(n), A028234(n) = n/A028233(n).
-; Code after register renumbering $2 -> $1 as suggested by minimalizer. (Cf. code of A028234)
+; A028233: If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
+; Submitted by eclipse99
+; 1,2,3,4,5,2,7,8,9,2,11,4,13,2,3,16,17,2,19,4,3,2,23,8,25,2,27,4,29,2,31,32,3,2,5,4,37,2,3,8,41,2,43,4,9,2,47,16,49,2,3,4,53,2,5,8,3,2,59,4,61,2,9,64,5,2,67,4,3,2,71,8,73,2,3,4,7,2,79,16,81,2,83,4,5,2,3,8,89,2,7,4,3,2,5,32,97,2,9,4
 
-add $0,1 ; Add one, because A067029 is offset=1 sequence.
-mov $1,2 ; This is the smallest prime-divisor encountered so far.
-mov $3,$0
-lpb $3
-  mov $4,$0
-  mod $4,$1
-  add $1,1
-  cmp $4,0
-  cmp $4,0
-  sub $3,$4 ; Subtract one if $1 if $2 did not divide n, otherwise zero, and fall out of the loop.
-lpe
-; Now for $0 > 0, we have lpf = A020639(n) in $1. 
-; Then follows the final loop, where we divide every instance of that $1 out of n. 
-; Note that for n=1, $1 is erroneously 3, but valuation(1,3) = 0, which is just what we want!
-; Now an innovation: Use $0 itself as a loop register, and just make sure that div is effectively no-op when $1 does not divide $0 anymore
+mov $1,$0
+mov $2,2
+add $0,1
 lpb $0
-  mov $4,$0
-  mod $4,$1
-  cmp $4,0
-  pow $1,$4 ; we divide either with $1 (if it still divides $0) or with 1 if it does not. (it doesn't matter if $1 is ruined, because then we have finished anyways!)
-  div $0,$1
-  add $2,1
+  mov $3,$0
+  sub $3,14
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+  lpe
+  div $1,$0
+  mul $2,$0
 lpe
-pow $1,$2
-; The result is now in $1.
 mov $0,$1
+add $0,1

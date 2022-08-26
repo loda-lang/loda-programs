@@ -1,8 +1,7 @@
 ; A068426: Expansion of log(2) in base 2.
-; Submitted by arkiss
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,0,1,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,0,0,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0,0,1,1,0,1,0,1,0,1,1,1,1,0,0,1,0,0,1,1,1,1,0,0,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,0
 
 add $0,1
-seq $0,293363 ; Least integer k such that k/2^n > log 2.
-add $0,1
+seq $0,293362 ; Greatest integer k such that k/2^n < log 2.
 mod $0,2

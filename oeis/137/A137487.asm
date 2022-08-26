@@ -7,7 +7,7 @@ add $2,11
 pow $2,2
 bin $2,2
 add $0,1
-mov $1,141
+mov $1,143
 lpb $2
   mov $3,$1
   seq $3,38548 ; Number of divisors of n that are at most sqrt(n).

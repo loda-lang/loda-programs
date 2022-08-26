@@ -9,7 +9,7 @@ lpb $2
   pow $3,2
   seq $3,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
   sub $0,$3
-  max $1,2
+  max $1,5
   mov $3,$1
   div $3,2
   mov $4,$0

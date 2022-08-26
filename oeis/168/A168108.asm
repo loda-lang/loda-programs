@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,168099 ; a(n) = number of natural numbers m such that n - 9 <= m <= n + 9.
+  sub $0,1
   add $1,$2
 lpe
 add $1,45

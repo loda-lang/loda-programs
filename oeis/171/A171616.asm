@@ -11,5 +11,5 @@ mov $0,$1
 bin $0,$2
 sub $1,$2
 add $1,1
-seq $1,957 ; Fine's sequence (or Fine numbers): number of relations of valence >= 1 on an n-set; also number of ordered rooted trees with n edges having root of even degree.
+seq $1,957 ; Fine's sequence (or Fine numbers): number of relations of valence >= 1 on an n-set; also number of ordered rooted trees with n nodes having root of even degree.
 mul $0,$1
