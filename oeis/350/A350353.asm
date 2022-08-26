@@ -2,7 +2,9 @@
 ; Submitted by biodoc
 ; 30,36,42,60,66,70,72,78,84,90,100,102,105,108,110,114,120,126,130,132,138,140,144,150,154,156,165,168,170,174,180,182,186,190,195,196,198,200,204,210,216,220,222,225,228,230,231,234,238,240,246,252,255,258
 
-mov $2,14161
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   mov $3,$1
   seq $3,343943 ; Number of distinct possible alternating sums of permutations of the multiset of prime factors of n.

@@ -1,24 +1,12 @@
 ; A287523: Fixed point starting with 1 of the morphism 0->01, 1->101.
-; Submitted by Jason Jung
+; Submitted by fix
 ; 1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1
 
-mov $1,1
-mul $0,2
-add $0,2
+sub $0,1
+mov $1,$0
+trn $0,1
+seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
 lpb $0
-  sub $0,1
-  add $1,$5
-  add $4,1
-  add $5,$1
-  mov $3,$4
-  mul $3,2
-  mul $3,$1
-  div $3,$5
-  mod $3,2
-  add $4,1
-  sub $4,$2
-  add $4,$3
-  cmp $2,0
-  max $5,3
+  mul $0,$1
 lpe
-mov $0,$3
+mod $0,2

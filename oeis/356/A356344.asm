@@ -53,9 +53,9 @@ lpb $2
             mod $0,8
             div $0,18
           lpe
-          mov $0,$1
           mov $11,$10
           mul $11,$1
+          mov $0,$1
           add $9,$11
         lpe
         min $8,1

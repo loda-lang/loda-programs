@@ -1,17 +1,6 @@
 ; A322533: Position of 1/3^n in the sequence of all numbers 1/2^m, 1/3^m, 2/3^m arranged in decreasing order.
-; Submitted by Jason Jung
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 3,7,10,14,17,21,25,28,32,35,39,43,46,50,53,57,60,64,68,71,75,78,82,86,89,93,96,100,103,107,111,114,118,121,125,129,132,136,139,143,146,150,154,157,161,164,168,172,175,179,182,186,190,193,197,200,204,207,211,215,218,222,225,229,233,236,240,243,247,250,254,258,261,265,268,272,276,279,283,286,290,293,297,301,304,308,311,315,319,322,326,329,333,336,340,344,347,351,354,358
 
-mov $1,1
-mov $2,2
-lpb $0
-  sub $0,1
-  add $2,$1
-  div $1,$2
-  mul $2,12
-lpe
-lpb $2
-  div $2,2
-  add $0,1
-lpe
-add $0,1
+seq $0,322534 ; Position of 2/3^n in the sequence of all numbers 1/2^m, 1/3^m, 2/3^m arranged in decreasing order.
+add $0,2

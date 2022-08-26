@@ -1,22 +1,7 @@
 ; A337238: Number k such that k and k+1 are both digitally balanced numbers in base 2 (A031443).
-; Submitted by Cruncher Pete
+; Submitted by Skivelitis2
 ; 9,37,41,49,141,149,153,165,169,177,197,201,209,225,541,557,565,569,589,597,601,613,617,625,653,661,665,677,681,689,709,713,721,737,781,789,793,805,809,817,837,841,849,865,901,905,913,929,961,2109,2141,2157,2165,2169,2205,2221,2229,2233,2253,2261,2265,2277,2281,2289,2333,2349,2357,2361,2381,2389,2393,2405,2409,2417,2445,2453,2457,2469,2473,2481,2501,2505,2513,2529,2589,2605,2613,2617,2637,2645,2649,2661,2665,2673,2701,2709,2713,2725,2729,2737
 
-mov $2,$0
-add $2,3
-pow $2,2
-lpb $2
-  add $1,2
-  mov $3,$1
-  seq $3,337319 ; a(n) = Sum_{i = 1..floor(log_2(n))+1} g(frac(n/2^i)), where g(t) = [0 if t = 0, -1 if 0 < t < 1/2, 1 if t >= 1/2], and where frac(x) denotes the fractional part.
-  cmp $3,1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-mul $0,2
-add $0,5
+seq $0,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
+mul $0,4
+add $0,1

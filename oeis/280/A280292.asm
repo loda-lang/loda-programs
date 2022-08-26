@@ -1,5 +1,22 @@
 ; A280292: a(n) = sopfr(n) - sopf(n).
+; Submitted by Jason Jung
 ; 0,0,0,2,0,0,0,4,3,0,0,2,0,0,0,6,0,3,0,2,0,0,0,4,5,0,6,2,0,0,0,8,0,0,0,5,0,0,0,4,0,0,0,2,3,0,0,6,7,5,0,2,0,6,0,4,0,0,0,2,0,0,3,10,0,0,0,2,0,0,0,7,0,0,5,2,0,0,0,6,9,0,0,2,0,0,0,4,0,3,0,2,0,0,0,8,0,7,3,7
 
-seq $0,336551 ; a(n) = A003557(n) - 1.
-seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  div $3,2
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
+  div $0,$2
+  lpb $0
+    dif $0,$2
+    add $1,$2
+  lpe
+lpe
+mov $0,$1

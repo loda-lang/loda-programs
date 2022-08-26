@@ -5,9 +5,9 @@ mov $6,$0
 mov $8,$0
 add $8,1
 lpb $8
-  mov $0,$6
-  mov $4,0
   sub $8,1
+  mov $4,0
+  mov $0,$6
   sub $0,$8
   mul $0,2
   lpb $0,2
@@ -16,9 +16,9 @@ lpb $8
     sub $4,1
     mul $4,2
     lpb $4
-      mul $1,2
       pow $4,2
       mod $4,9
+      mul $1,2
     lpe
     lpb $0
       mov $0,1

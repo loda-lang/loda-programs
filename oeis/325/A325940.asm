@@ -13,8 +13,8 @@ lpb $0
   gcd $3,$4
   cmp $4,0
   sub $4,1
-  mul $5,$4
-  add $5,1
-  sub $5,$3
+  mul $1,$4
+  sub $1,$3
+  add $1,1
 lpe
-mov $0,$5
+mov $0,$1

@@ -1,12 +1,9 @@
 ; A276867: First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-; Submitted by GolfSierra
+; Submitted by ChelseaOilman
 ; 3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3
 
 mov $1,$0
-trn $0,1
-seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
-lpb $0
-  mul $0,$1
-lpe
-mod $0,2
+seq $1,114986 ; Characteristic function of (A000201 prefixed with 0).
+min $1,$0
+mov $0,$1
 add $0,3
