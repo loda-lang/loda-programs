@@ -5,12 +5,12 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   sub $0,1
   add $3,$1
   mul $3,$0
   sub $0,1
   mul $1,2
-  add $2,1
   mul $1,$2
   div $1,2
 lpe

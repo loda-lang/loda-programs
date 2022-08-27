@@ -1,6 +1,0 @@
-; A332646: Numbers m with a divisor d such that d^tau(d) = m.
-; Submitted by zombie67 [MM]
-; 1,4,9,25,49,64,121,169,289,361,529,729,841,961,1296,1369,1681,1849,2209,2809,3481,3721,4096,4489,5041,5329,6241,6889,7921,9409,10000,10201,10609,11449,11881,12769,15625,16129,17161,18769,19321,22201,22801,24649,26569
-
-seq $0,174895 ; a(n) = possible values of A007955(m) in increasing order, where A007955(m) = product of divisors of m.
-pow $0,2

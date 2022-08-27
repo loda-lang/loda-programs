@@ -168,6 +168,7 @@ A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) 
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
 A130063: Primes p such that p divides 3^((p+1)/2) - 2^((p+1)/2) - 1.
 A130245: Number of Lucas numbers (A000032) <= n.
+A131853: Numbers m such that z(m)=(0,0) with z as defined in A131851.
 A131856: Numbers m such that z(m)=(0,1) with z as defined in A131851.
 A131860: Numbers m such that z(m)=(1,1) with z as defined in A131851.
 A132222: Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
@@ -313,6 +314,7 @@ A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff 
 A284394: {101->2}-transform of the infinite Fibonacci word A003849.
 A284396: Positions of 2 in A284394.
 A284621: Positions of 0 in A284620.
+A284624: Positions of 1 in A284749.
 A285075: Positions of 1 in A285073; complement of A285074.
 A285127: Positions of 1 in A285125; complement of A285126.
 A285129: Positions of 0 in A285128; complement of A285130.
@@ -332,6 +334,7 @@ A286923: Positions of 0 in A286922; complement of A286924.
 A286927: Positions of 1 in A286925; complement of A286926.
 A286988: Positions of 0 in A286987; complement of A286989.
 A287001: Positions of 2 in A286998.
+A287114: Positions of 1 in A287112.
 A287174: 2-limiting word of the morphism 0->10, 1->20, 2->0.
 A287658: Positions of 0 in A287657; complement of A287659.
 A287791: Positions of 0 in A287790; complement of A287792.

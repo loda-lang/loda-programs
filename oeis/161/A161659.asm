@@ -4,7 +4,7 @@
 
 add $0,1
 mov $1,$0
-seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 div $0,$1
 mul $0,$1
 add $0,$1

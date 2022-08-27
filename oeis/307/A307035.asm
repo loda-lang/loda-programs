@@ -3,7 +3,7 @@
 ; 1,1,2,3,12,20,60,84,672,1512,5040,7920,47520,56160,157248,393120,6289920,8225280,37013760,41368320,275788800,579156480,1820206080,2203407360,26440888320,73446912000,173601792000,585906048000,3281073868800,4137006182400,20685030912000,22111584768000,707570712576000,1667845251072000,4362056810496000,10178132557824000,91603193020416000,109332843282432000,244391061454848000,433238699851776000,5776515998023680000,6401004214026240000,26884217698910208000,28195642952515584000,177229755701526528000
 
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $2,-1
-add $2,$0
-seq $2,319626 ; Primorial deflation of n (numerator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the numerator of g(n).
-mov $0,$2
+mov $1,-1
+add $1,$0
+seq $1,319626 ; Primorial deflation of n (numerator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the numerator of g(n).
+mov $0,$1

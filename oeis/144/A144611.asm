@@ -1,12 +1,11 @@
 ; A144611: Sturmian word of slope 2-sqrt(2).
-; Submitted by Skivelitis2
+; Submitted by mkferrysr
 ; 0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1
 
 lpb $0
-  pow $1,$2
-  mov $2,$0
-  seq $2,188037 ; a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
-  mov $0,0
-  sub $0,$2
+  mov $1,$0
+  seq $1,188037 ; a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
+  add $2,1
+  mul $0,$1
 lpe
-mov $0,$1
+mov $0,$2
