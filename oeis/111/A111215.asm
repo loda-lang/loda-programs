@@ -1,17 +1,7 @@
 ; A111215: Numbers k such that 4k + 5 is prime.
-; Submitted by [SG]ATA-Rolf
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,2,3,6,8,9,12,14,17,21,23,24,26,27,33,36,38,42,44,47,48,56,57,59,63,66,68,69,72,77,78,83,86,87,92,96,98,99,101,104,107,111,113,114,126,129,134,138,141,143,147,149,152,153,159,162,164,167,168,174,176,182,188,189,191,192,198,201,204,206,212,213,218,219,231,233,234,237,243,248,251,252,254,257,261,264,266,272,273,276,278,281,287,294,297,299,302,303,306,308
 
-add $0,2
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,4
-  sub $2,$0
-lpe
-mov $0,$1
-sub $0,4
+seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
 div $0,4
+sub $0,1

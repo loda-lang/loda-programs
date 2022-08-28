@@ -1,22 +1,20 @@
 ; A055494: Numbers k such that k^2 - k + 1 is prime.
-; Submitted by Jason Jung
+; Submitted by Gibson Praise
 ; 2,3,4,6,7,9,13,15,16,18,21,22,25,28,34,39,42,51,55,58,60,63,67,70,72,76,78,79,81,90,91,100,102,106,111,112,118,120,132,139,142,144,148,151,154,156,162,163,165,168,169,174,177,189,190,193,195,204,207,210,216,219,232,237,246,247,267,273,279,280,288,289,291,294,310,315,330,333,337,343,345,349,352,358,370,379,382,384,393,396,399,403,405,406,415,417,427,435,436,448
 
-mov $5,-1
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $3,$1
-  mul $3,$5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,1
+add $0,1
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  sub $1,2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,2
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$4
+div $0,2
+add $0,1

@@ -2,7 +2,7 @@
 ; Submitted by vanos0512
 ; 510,642,710,742,782,795,862,935,1177,1207,1219
 
-mov $2,14163
+mov $2,4096
 lpb $2
   mov $3,$1
   seq $3,175432 ; a(n) = the greatest number k such that sigma(n) = m^k for any m >= 1 (sigma = A000203).

@@ -1,5 +1,5 @@
 ; A061902: Number of digits in n-th term of A061482.
-; Submitted by William Michael Kanar
+; Submitted by Skivelitis2
 ; 1,1,1,2,3,5,9,17,34,68,135,270,539,1078,2156,4311,8621,17242,34484,68967,137934,275867
 
 mov $2,2
@@ -18,5 +18,5 @@ lpb $0
   mul $2,$3
   sub $3,$4
 lpe
+add $4,1
 mov $0,$4
-add $0,1
