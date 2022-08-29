@@ -12,13 +12,13 @@ sub $0,1 ; source=parameter 3
 ; value: 2,3,4,6,8
 
 ; parameter 2
-; number of unique values: 12
-; value: 2,3,4,5,6,7,8,10,11,24,720,40320
+; number of unique values: 13
+; value: 2,3,4,5,6,7,8,10,11,14,24,720,40320
 
 ; parameter 3
-; number of unique values: 11
-; value: 1,2,3,5,6,7,9,10,41,1591,133589
+; number of unique values: 14
+; value: 1,2,3,4,5,6,7,9,10,41,43,169,1591,133589
 
 ; programs with this pattern
-; number of programs: 17
-; program id: 69756,78371,108766,117560,126420,127227,127228,133694,155769,166144,166146,166147,166150,166151,166154,180919,182409
+; number of programs: 20
+; program id: 69756,78371,108766,117560,126420,127227,127228,133694,155769,166137,166144,166146,166147,166150,166151,166154,180919,182409,212325,298078
