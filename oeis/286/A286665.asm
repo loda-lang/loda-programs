@@ -1,7 +1,22 @@
 ; A286665: {0->01}-transform of the Pell word, A171588.
-; Submitted by Skivelitis2
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0
 
 add $0,1
-seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
-cmp $0,0
+lpb $0
+  mov $2,1
+  mov $3,1
+  mov $4,1
+  lpb $0
+    sub $0,$4
+    mov $1,$4
+    div $2,$3
+    mov $4,$3
+    mul $4,2
+    sub $4,$1
+    add $3,$4
+  lpe
+lpe
+mov $0,$2
+add $0,1
+mod $0,2

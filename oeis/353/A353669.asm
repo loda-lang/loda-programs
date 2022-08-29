@@ -1,10 +1,14 @@
 ; A353669: a(n) = 1 if n is a nonsquare that has an even number of prime factors with multiplicity, otherwise 0.
-; Submitted by shiva
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,1,1,1,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0
 
-mov $1,$0
-seq $0,73093 ; Number of prime power divisors of n.
-seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $1,$0
+seq $0,71321 ; Alternating sum of all prime factors of n; primes nondecreasing, starting with the least prime factor: A020639(n).
+cmp $1,$0
+sub $1,1
+lpb $0
+  mov $0,1
+  add $1,1
+lpe
 mov $0,$1
+add $0,2
 mod $0,2

@@ -7,6 +7,5 @@ trn $0,1
 seq $0,171688 ; Twin primes > 3.
 sub $0,1
 pow $0,2
-div $0,2
-mul $0,4
+mul $0,2
 sub $0,2

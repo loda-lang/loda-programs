@@ -1,24 +1,20 @@
 ; A136799: Last term in a sequence of at least 3 consecutive composite integers.
-; Submitted by respawner
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 10,16,22,28,36,40,46,52,58,66,70,78,82,88,96,100,106,112,126,130,136,148,156,162,166,172,178,190,196,210,222,226,232,238,250,256,262,268,276,280,292,306,310,316,330,336,346,352,358,366,372,378,382,388,396,400,408,418,430,438,442,448,456,460,466,478,486,490,498,502,508,520,540,546,556,562,568,576,586,592,598,606,612,616,630,640,646,652,658,672,676,682,690,700,708,718,726,732,738,742
 
-add $0,1
-mov $1,5
+add $0,3
+mov $1,2
 mov $2,$0
-pow $2,2
-add $2,1
+pow $2,4
 lpb $2
-  mov $5,1
-  add $5,$1
-  add $3,$5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$3
   add $1,2
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
+add $1,4
 mov $0,$1
-add $0,1
+div $0,2
+mul $0,2
+sub $0,4

@@ -4,7 +4,7 @@
 
 mov $2,$0
 add $0,1
-mov $1,355
+mov $1,361
 add $2,9
 pow $2,4
 lpb $2

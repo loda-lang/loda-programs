@@ -1,10 +1,11 @@
 ; A286728: Positions of 1 in A286063; complement of A286727.
-; Submitted by Orange Kid
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 3,4,7,12,13,18,21,22,25,30,33,34,39,40,43,48,49,54,57,58,63,64,67,72,75,76,79,84,85,90,93,94,97,102,105,106,111,112,115,120,123,124,127,132,133,138,141,142,147,148,151,156,157,162,165,166,169,174,177,178,183,184,187,192,193,198,201,202,207,208,211,216,219,220,223,228,229,234,237,238,243,244,247,252,253,258,261,262,265,270,273,274,279,280,283,288,291,292,295,300
 
 mov $1,$0
-seq $1,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
-mul $1,2
-mul $0,3
-add $0,3
-sub $0,$1
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+gcd $0,2
+add $0,$1
+mul $0,2
+sub $0,1
+add $0,$1

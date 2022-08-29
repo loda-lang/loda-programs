@@ -1,11 +1,26 @@
 ; A187967: [nr+kr]-[nr]-[kr], where r=sqrt(2), k=2, [ ]=floor.
-; Submitted by Christian Krause
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1
 
-mov $1,$0
-add $1,3
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
 add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,$1
+lpb $0
+  mov $3,$0
+  lpb $3
+    div $3,466
+    mov $2,3
+  lpe
+  mov $4,1
+  mov $5,1
+  lpb $0
+    sub $0,$4
+    mov $1,$4
+    add $2,10
+    mov $4,$5
+    mul $4,2
+    sub $4,$1
+    add $5,$4
+  lpe
+lpe
+mov $0,$2
+div $0,12
 mod $0,2

@@ -8,10 +8,9 @@ lpb $0
   sub $0,1
   add $1,$3
   sub $2,$3
-  mul $2,2
+  mul $2,-1
   sub $3,$1
   add $1,$3
-  div $2,-2
   add $1,$2
   sub $2,$1
   add $3,$2
