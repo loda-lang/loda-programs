@@ -10,7 +10,7 @@ lpb $3
   add $0,$3
   trn $0,1
   seq $0,181062 ; Prime powers minus 1.
-  seq $0,56793 ; Number of divisors of lcm(1,...,n).
+  seq $0,56793 ; Number of divisors of lcm(1..n).
   mov $2,$3
   mul $2,$0
   add $4,$2

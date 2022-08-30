@@ -9,6 +9,6 @@ lpb $0
   div $0,2
   mov $1,$0
   seq $1,63659 ; The number of integers m in [1..n] for which gcd(m,n) is not divisible by a square greater than 1.
-  mul $0,2
+  div $0,199
 lpe
 mov $0,$1

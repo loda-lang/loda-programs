@@ -1,6 +1,18 @@
 ; A188037: a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by v11
 ; 0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0
 
-trn $0,1
-seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+lpb $0
+  mov $2,1
+  mov $3,1
+  lpb $0
+    sub $0,$3
+    mov $1,$3
+    mov $3,$2
+    mul $3,2
+    sub $3,$1
+    add $2,$3
+  lpe
+lpe
+mov $0,$2
+mod $0,2

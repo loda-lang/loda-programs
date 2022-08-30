@@ -1,6 +1,20 @@
 ; A006337: An "eta-sequence": a(n) = floor( (n+1)*sqrt(2) ) - floor( n*sqrt(2) ).
-; Submitted by Bazooka_CZ
+; Submitted by v11
 ; 1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1
 
-seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+add $0,1
+lpb $0
+  mov $2,1
+  mov $3,1
+  lpb $0
+    sub $0,$3
+    mov $1,$3
+    mov $3,$2
+    mul $3,2
+    sub $3,$1
+    add $2,$3
+  lpe
+lpe
+mov $0,$2
+mod $0,2
 add $0,1

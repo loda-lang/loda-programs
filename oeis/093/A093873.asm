@@ -1,19 +1,19 @@
 ; A093873: Numerators in Kepler's tree of harmonic fractions.
-; Submitted by Christian Krause
+; Submitted by Autofuzzy
 ; 1,1,1,1,2,1,2,1,3,2,3,1,3,2,3,1,4,3,4,2,5,3,5,1,4,3,4,2,5,3,5,1,5,4,5,3,7,4,7,2,7,5,7,3,8,5,8,1,5,4,5,3,7,4,7,2,7,5,7,3,8,5,8,1,6,5,6,4,9,5,9,3,10,7,10,4,11,7,11,2,9,7,9,5,12,7,12,3,11,8,11,5,13,8,13,1,6,5,6,4
 
 mov $2,2
-mul $0,2
+add $0,1
 lpb $0
-  div $0,2
-  sub $0,1
+  sub $2,$3
   add $3,$0
   mod $3,2
-  mov $4,$2
-  sub $4,$1
+  mul $3,$2
+  div $0,2
   add $2,$1
-  mul $3,$4
   add $1,$3
 lpe
 mov $0,$2
+sub $0,2
 div $0,2
+add $0,1

@@ -1,10 +1,18 @@
 ; A097069: Positive integers n such that 2n - 9 is prime.
-; Submitted by Jason Jung
+; Submitted by Athlici
 ; 6,7,8,10,11,13,14,16,19,20,23,25,26,28,31,34,35,38,40,41,44,46,49,53,55,56,58,59,61,68,70,73,74,79,80,83,86,88,91,94,95,100,101,103,104,110,116,118,119,121,124,125,130,133,136,139,140,143,145,146,151,158,160,161,163,170,173,178,179,181,184,188,191,194,196,199,203,205,209,214,215,220,221,224,226,229,233,235,236,238,244,248,250,254,256,259,265,266,275,278
 
-mov $1,$0
-seq $1,273801 ; Numbers n for which n = (x - phi(x)) * (y - phi(y)), where n = x + y and x - phi(x) is the Euler cototient function of x.
+mov $3,127
+mov $1,2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,2
+  sub $2,$0
+lpe
 mov $0,$1
-mul $0,2
-div $0,16
-add $0,4
+div $0,2
+add $0,5

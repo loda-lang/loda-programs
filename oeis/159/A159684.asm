@@ -1,22 +1,18 @@
 ; A159684: Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
-; Submitted by Skivelitis2
+; Submitted by [SG-FC] hl
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0
 
 add $0,1
 lpb $0
-  add $3,1
-  lpb $3
-    div $3,77
-    mov $4,1
-  lpe
   mov $2,1
+  mov $3,1
   lpb $0
-    sub $0,$4
-    mov $1,$4
-    mov $4,$2
-    mul $4,2
-    sub $4,$1
-    add $2,$4
+    sub $0,$3
+    mov $1,$3
+    mov $3,$2
+    mul $3,2
+    sub $3,$1
+    add $2,$3
   lpe
 lpe
 mov $0,$2

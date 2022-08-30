@@ -1,7 +1,19 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-; Submitted by Jason Jung
+; Submitted by rythm.ance
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
 
-trn $0,1
-seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+lpb $0
+  mov $2,1
+  mov $3,1
+  lpb $0
+    sub $0,$2
+    mov $1,$2
+    mov $2,$3
+    mul $2,2
+    sub $2,$1
+    add $3,$2
+  lpe
+lpe
+mov $0,$3
+mod $0,2
 add $0,3

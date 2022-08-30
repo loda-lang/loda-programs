@@ -1,5 +1,5 @@
 ; A129252: Smallest prime factor p of n such that p^p is a divisor of n, a(n)=1 if no such factor exists.
-; Submitted by boboviz
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,3,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,3,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,3,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2
 
 lpb $0
@@ -8,7 +8,6 @@ lpb $0
 lpe
 sub $0,1
 mod $0,2
-mov $1,1
+mov $1,2
 add $1,$0
 mov $0,$1
-add $0,1

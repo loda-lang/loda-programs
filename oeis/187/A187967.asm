@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   mov $3,$0
   lpb $3
-    div $3,466
+    div $3,470
     mov $2,3
   lpe
   mov $4,1
