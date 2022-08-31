@@ -2,38 +2,38 @@
 ; Submitted by Christian Krause
 ; 0,1,2,6,11,18,25,35,45,58,71,87,103
 
-mov $4,$0
 mov $6,$0
+mov $4,$0
 lpb $4
-  mov $0,$6
   sub $4,1
+  mov $0,$6
   sub $0,$4
+  mov $1,0
   mov $2,$0
   add $0,1
   div $0,2
-  mov $1,0
   lpb $0
     sub $0,1
     mov $3,$2
-    mul $2,40
     sub $3,$0
     sub $3,1
     mov $7,0
-    cmp $8,0
     mov $13,$0
     mul $13,2
+    mul $2,40
+    cmp $8,0
     mul $8,$13
-    add $10,$13
-    add $11,$8
     mov $12,$3
     cmp $12,$13
+    add $11,$8
     mul $11,$12
+    add $10,$13
     lpb $10
       add $1,2
       mov $9,$13
       mod $9,2
-      add $7,$9
       div $11,2
+      add $7,$9
       mov $10,$11
       div $13,2
     lpe

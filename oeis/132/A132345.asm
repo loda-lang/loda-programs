@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

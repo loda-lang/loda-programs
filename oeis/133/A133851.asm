@@ -3,8 +3,8 @@
 
 lpb $0
   dif $0,3
-  add $2,2
-  mul $0,$2
+  add $1,2
+  mul $0,$1
 lpe
-pow $2,$0
-mov $0,$2
+pow $1,$0
+mov $0,$1
