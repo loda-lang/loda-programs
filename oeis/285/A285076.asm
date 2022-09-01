@@ -1,22 +1,11 @@
 ; A285076: 1-limiting word of the morphism 0->10, 1-> 010.
-; Submitted by mikey
+; Submitted by ChelseaOilman
 ; 1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1
 
-mov $2,4
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,4
-  mul $1,2
-  bin $3,$2
-  add $3,$1
-  gcd $3,4
-  sub $1,3
-  mul $2,$3
-  div $3,2
-  sub $3,2
-  mul $3,-1
-lpe
-mov $0,$3
+mov $1,$0
+trn $0,1
+sub $1,$0
+seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+mul $0,$1
 add $0,1
 mod $0,2

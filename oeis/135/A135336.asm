@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,957 ; Fine's sequence (or Fine numbers): number of relations of valence >= 1 on an n-set; also number of ordered rooted trees with n edges having root of even degree.
+  seq $2,957 ; Fine's sequence (or Fine numbers): number of relations of valence >= 1 on an n-set; also number of ordered rooted trees with n nodes having root of even degree.
   sub $0,1
   add $1,$2
 lpe

@@ -121,6 +121,7 @@ A075802: Characteristic function of perfect powers, A001597.
 A077655: Number of consecutive successors of n having the same number of prime factors as n (counted with multiplicity).
 A078175: Numbers with an integer arithmetic mean of all prime factors.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.
+A079093: Squarefree kernel of (prime(n)+1)*(prime(n+1)+1)/4.
 A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
@@ -172,6 +173,7 @@ A116512: a(n) = number of positive integers each of which is <= n and is divisib
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
 A120891: Number of primitive Pythagorean triangles with odd leg 2n-1.
 A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) = p^j > 1. (a(1) = 0.)
+A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
 A129761: First differences of Fibbinary numbers (A003714).
 A130063: Primes p such that p divides 3^((p+1)/2) - 2^((p+1)/2) - 1.

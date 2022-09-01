@@ -1,8 +1,9 @@
 ; A024711: a(n) = residue mod 2 of n-th term of A024702.
-; Submitted by Jason Jung
+; Submitted by Landjunge
 ; 1,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,0,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,1,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,0,1,1,1,1
 
 add $0,1
-seq $0,6254 ; Numbers k such that 2k-1 is prime.
-bin $0,2
+seq $0,97363 ; Positive integers n such that 2n-13 is prime.
+div $0,2
+sub $0,3
 mod $0,2

@@ -1,11 +1,10 @@
 ; A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by DoctorNow
 ; 0,1,1,0,1,0,1,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
 mov $1,$0
-seq $1,87802 ; a(n) = Sum_{d|n, d nonprime} mu(d), where mu = A008683.
-mov $2,1
-div $2,$1
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-mul $0,$2
+seq $1,69513 ; Characteristic function of the prime powers p^k, k >= 1.
+seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+mul $1,$0
+mov $0,$1
 mod $0,2
