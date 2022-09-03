@@ -1,16 +1,17 @@
 ; A059325: Numbers n such that 6n + 5 is prime.
-; Submitted by Jamie Morken(w4)
+; Submitted by vanos0512
 ; 0,1,2,3,4,6,7,8,9,11,13,14,16,17,18,21,22,24,27,28,29,31,32,37,38,39,41,42,43,44,46,48,51,52,57,58,59,63,64,66,69,71,73,74,76,77,79,81,83,84,86,92,93,94,97,98,99,102,106,107,108,109,112,113,116,119,123,126,128,132,134,136,137,139,142,143,146,147,151,154,156,157,158,161,162,163,168,169,171,174,176,181,182,183,184,191,193,196,197,198
 
-mov $2,4
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,6
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
+add $0,2
+mov $1,-2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,6
+  sub $2,$0
 lpe
-mov $0,$2
+mov $0,$1
 div $0,6

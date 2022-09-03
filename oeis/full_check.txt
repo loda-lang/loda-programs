@@ -28,6 +28,7 @@ A003623: Wythoff AB-numbers: floor(floor(n*phi^2)*phi), where phi = (1+sqrt(5))/
 A003754: Numbers with no adjacent 0's in binary expansion.
 A004016: Theta series of planar hexagonal lattice A_2.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
+A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
 A005206: Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
 A005361: Product of exponents of prime factorization of n.
 A005379: The male of a pair of recurrences.
@@ -105,12 +106,14 @@ A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is diff
 A056671: 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
+A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065331: Largest 3-smooth divisor of n.
 A068068: Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
 A069213: a(n) = n-th positive integer relatively prime to n.
 A069513: Characteristic function of the prime powers p^k, k >= 1.
 A069623: Number of perfect powers <= n.
+A070321: Greatest squarefree number <= n.
 A071178: Exponent of the largest prime factor of n.
 A071187: Smallest prime factor of number of divisors of n.
 A071222: Smallest k such that gcd(n,k) = gcd(n+1,k+1).
@@ -159,6 +162,7 @@ A103205: Write numbers in decimal under each other, then read diagonals in upwar
 A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci representation. Also list of binary vectors not containing 00.
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
 A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 otherwise.
+A107078: Whether n has non-unitary prime divisors.
 A107145: Primes of the form x^2 + 40y^2.
 A108029: Numbers n such that 149*k + 151 is prime.
 A109768: a(n) = gcd(3^n-2,2^n-3).
@@ -314,6 +318,7 @@ A276854: Beatty sequence for 1 + sqrt(5).
 A276855: Beatty sequence for (3 + golden ratio).
 A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
+A278569: Numbers of the form p^i*q^j*r^k where p,q,r are distinct odd primes and i,j,k >= 1.
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
 A279934: Positive integers k such that {(k-1)*r} > 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
@@ -416,6 +421,7 @@ A353526: The smallest prime not dividing n, reduced modulo 4.
 A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
 A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
 A353631: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for odd numbers.
+A353800: a(n) = 1 if n is a power of prime with an even exponent, otherwise 0.
 A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
 A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.

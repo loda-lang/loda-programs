@@ -4,7 +4,7 @@
 
 mul $0,2
 mov $1,$0
-seq $0,40 ; The prime numbers.
 add $1,2
 seq $1,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
 add $0,$1

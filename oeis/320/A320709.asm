@@ -5,20 +5,23 @@
 mov $2,$0
 add $2,11
 pow $2,3
+mov $4,7
 add $0,1
-mov $1,1118
+mov $1,1121
 lpb $2
   mov $3,$1
   seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
-  add $4,1
   add $1,$3
   add $1,2
   sub $3,3
   div $3,2
   sub $3,4
   cmp $3,4
+  add $4,4
   sub $0,$3
   sub $2,$0
 lpe
 mov $0,$4
-add $0,187
+sub $0,15
+div $0,4
+add $0,189

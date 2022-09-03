@@ -1,28 +1,12 @@
 ; A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
-; Submitted by Penguin
+; Submitted by vanos0512
 ; 1,3,5,8,11,15,19,23,28,33,38,44,50,56,62,69,76,83,90,98,106,114,122,131,140,149,158,167,177,187,197,207,217,228,239,250,261,272,284,296,308,320,332,344,357,370,383,396,409,422,436,450,464,478,492,506,521,536,551,566,581,596,612,628,644,660,676,692,708,725,742,759,776,793,810,827,845,863,881,899,917,935,953,972,991,1010,1029,1048,1067,1086,1106,1126,1146,1166,1186,1206,1226,1246,1267,1288
 
-mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $5,0
-  mov $0,$3
-  sub $0,$1
-  mov $6,$0
-  mov $4,$0
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $0,$6
-    sub $0,$4
-    trn $0,1
-    seq $0,88517 ; First differences of Golomb's sequence.
-    seq $0,41140 ; Numerators of continued fraction convergents to sqrt(79).
-    sub $0,8
-    add $5,$0
-  lpe
-  add $2,$5
+lpb $0
+  mov $2,$0
+  seq $2,1462 ; Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$2
+add $1,1
+mov $0,$1

@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,9832 ; E.g.f. tanh(x)*exp(x).
+  seq $2,9832 ; Expansion of e.g.f. tanh(x)*exp(x).
   sub $0,1
   add $1,$2
 lpe
