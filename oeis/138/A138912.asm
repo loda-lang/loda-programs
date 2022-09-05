@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,52506 ; E.g.f.: exp(x*exp(x)-x).
+  seq $0,52506 ; Expansion of e.g.f. exp(x*exp(x)-x).
   mov $4,$3
   mul $4,$0
   add $2,$4

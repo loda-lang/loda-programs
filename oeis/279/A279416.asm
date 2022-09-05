@@ -1,5 +1,5 @@
 ; A279416: Triangle read by rows: T(n,k), n >= k >= 1, is the number of grid points below the diagonal of an n X k grid.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,0,1,0,2,3,0,3,5,6,0,4,6,9,10,0,5,8,11,14,15,0,6,9,12,16,20,21,0,7,11,15,19,23,27,28,0,8,12,17,20,26,30,35,36,0,9,14,18,24,29,33,39,44,45,0,10,15,21,26,30,37,43,48,54,55,0,11,17,23,29,35,41,47,53,59,65,66,0,12,18,24,30,38,42,51,56,63,70,77,78,0,13,20,27,34,41,48,55,62
 
 mov $2,$0
@@ -7,13 +7,11 @@ lpb $0
   add $3,1
   sub $2,$3
   mov $0,$2
-  add $1,$3
-  trn $1,$2
 lpe
-add $0,1
+gcd $1,$3
 gcd $1,$2
-add $3,1
+add $0,1
 mul $3,$0
 sub $3,$1
-mov $0,$3
+add $0,$3
 div $0,2

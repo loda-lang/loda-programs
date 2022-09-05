@@ -4,9 +4,7 @@
 
 seq $0,71321 ; Alternating sum of all prime factors of n; primes nondecreasing, starting with the least prime factor: A020639(n).
 lpb $0
-  mod $0,7
-  trn $0,4
-  add $0,1
+  mov $0,1
 lpe
 sub $0,1
 pow $0,2

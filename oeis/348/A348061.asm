@@ -11,15 +11,14 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    min $4,1
     mov $5,$2
     cmp $5,1
     add $2,1
     max $4,$5
     sub $3,$4
+    add $4,1
   lpe
-  add $4,1
   mov $5,1
   mov $6,2
   lpb $0

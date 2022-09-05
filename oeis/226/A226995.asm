@@ -1,34 +1,17 @@
 ; A226995: Number of lattice paths from (0,0) to (n,n) consisting of steps U=(1,1), H=(1,0) and S=(0,1) such that the first step leaving the diagonal (if any) is an H step and the last step joining the diagonal (if any) is a S step.
-; Submitted by Christian Krause
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,6,23,103,504,2588,13661,73373,398814,2186818,12072275,67004451,373532596,2089994360,11730304377,66012996217,372350924666,2104523577534,11916013288271,67576932913951,383781666337072,2182362613988116,12424357722805333,70807597833553813,403929047092864214,2306295570943864698,13178894448018501131,75365070074099588443,431284956059074469484,2469676715230209974768,14150709939519429162481,81126234516099761097201,465343539722816334126578,2670552466129631434596982,15333124248431308536818055
 
-mov $4,$0
-mov $6,$0
-add $6,1
-lpb $6
-  sub $6,1
-  mov $0,$4
-  sub $0,$6
-  mov $1,1
-  mov $2,1
-  mov $3,$0
-  lpb $3
-    mul $2,$3
-    mul $2,$3
-    mul $1,2
-    mul $1,$0
-    add $1,$2
-    sub $3,1
-    max $3,1
-    add $0,$3
-  lpe
-  mul $1,$0
-  div $1,$2
-  mov $0,$1
-  mul $0,2
-  add $0,1
-  mul $0,$6
-  add $5,$0
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  add $4,$2
+  mov $0,$3
+  sub $0,$1
+  seq $0,1850 ; Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
+  add $2,$0
 lpe
-mov $0,$5
+mov $0,$4
 add $0,1

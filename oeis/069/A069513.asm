@@ -1,30 +1,15 @@
 ; A069513: Characteristic function of the prime powers p^k, k >= 1.
-; Submitted by jp557
+; Submitted by vaughan
 ; 0,1,1,1,1,0,1,1,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
-mov $2,2
-add $0,1
-lpb $0
-  mov $3,$0
-  div $3,3
-  lpb $3
-    mov $5,$2
-    cmp $5,0
-    add $2,$5
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  cmp $5,0
-  add $2,$5
-  div $0,$2
-  lpb $0
-    dif $0,$2
-  lpe
-  add $1,1
-  bin $2,$0
-lpe
-mov $0,$1
-sub $0,1
+seq $0,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
+mov $2,$0
+sub $0,2
+mov $1,$0
+cmp $1,0
+add $0,$1
+div $2,$0
+min $2,1
+add $2,1
+mov $0,$2
+div $0,2

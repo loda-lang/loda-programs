@@ -1,12 +1,7 @@
 ; A200244: a(n)=1 iff binary weight of n-th prime is even.
-; Submitted by Landjunge
+; Submitted by swezy
 ; 0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,1,1,0,1,0
 
-seq $0,40 ; The prime numbers.
-lpb $0
-  add $1,$0
-  div $0,2
-lpe
-add $1,1
-add $0,$1
+seq $0,14499 ; Number of 1's in binary representation of n-th prime.
+add $0,1
 mod $0,2

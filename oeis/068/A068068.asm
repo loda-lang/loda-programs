@@ -4,8 +4,5 @@
 
 mul $0,2
 add $0,1
-seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-mov $1,2
-pow $1,$0
-mov $0,$1
+seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
 div $0,2

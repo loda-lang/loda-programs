@@ -1,14 +1,13 @@
 ; A125117: First differences of A034887.
-; Submitted by Roadranner
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1
 
-add $0,1
-seq $0,8952 ; Leading digit of 2^n.
-lpb $0
-  trn $0,9
-  add $0,1
-  mov $1,5
-lpe
+mov $2,1
+add $2,$0
+mov $3,$2
+seq $3,8952 ; Leading digit of 2^n.
+mov $1,-1
+div $1,$3
 mov $0,$1
-add $0,1
+add $0,2
 mod $0,2

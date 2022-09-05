@@ -1,20 +1,13 @@
 ; A244226: Length of runs in A244221 (Greedy Catalan Base, A014418, reduced modulo 2).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Landjunge
 ; 1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1
 
 lpb $0,$0
-  sub $1,2
-  mov $3,$0
   lpb $0
-    mod $0,6
-    mul $0,$1
+    dif $0,4
+    mov $2,1
   lpe
-  mov $7,$0
-  dif $0,4
+  mod $0,3
 lpe
-mov $26,$3
-cmp $26,0
-add $3,$26
-div $7,$3
-mov $0,$7
+mov $0,$2
 add $0,1

@@ -9,7 +9,7 @@ lpb $5
   sub $5,1
   add $0,$5
   mov $4,$0
-  seq $4,55773 ; a(n) = product(p in P_n) where P_n = {p prime, n/2 < p <= n }.
+  seq $4,55773 ; a(n) = Product_{p in P_n} where P_n = {p prime, n/2 < p <= n }.
   mov $2,$5
   mul $2,$4
   mov $0,5

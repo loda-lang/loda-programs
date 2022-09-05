@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   seq $2,305800 ; Filter sequence for a(prime) = constant sequences.
   add $3,$2
-  add $4,$3
-  mov $0,$4
+  add $1,$3
+  mov $0,$1
 lpe
 add $0,1
