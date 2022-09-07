@@ -1,35 +1,24 @@
 ; A072079: Sum of 3-smooth divisors of n.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,3,4,7,1,12,1,15,13,3,1,28,1,3,4,31,1,39,1,7,4,3,1,60,1,3,40,7,1,12,1,63,4,3,1,91,1,3,4,15,1,12,1,7,13,3,1,124,1,3,4,7,1,120,1,15,4,3,1,28,1,3,13,127,1,12,1,7,4,3,1,195,1,3,4,7,1,12,1,31,121,3,1,28,1,3,4,15,1,39,1,7,4,3,1,252,1,3,13,7
 
 mov $1,1
+mov $2,2
+mov $3,1
+mov $4,1
 add $0,1
 lpb $0
-  mov $3,$0
   lpb $3
-    mov $7,$2
-    cmp $7,0
-    add $2,$7
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
     add $2,1
-    mul $4,$3
-    max $4,$5
     sub $3,$4
   lpe
   mov $5,1
   lpb $0
-    mov $6,$2
-    lpb $6
-      trn $6,5
-      dif $0,$2
-      mul $5,$2
-    lpe
-    add $5,1
+    dif $0,$2
+    mul $5,$2
+    add $5,$4
   lpe
   mul $1,$5
 lpe

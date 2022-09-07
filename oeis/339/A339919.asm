@@ -5,11 +5,11 @@
 mov $2,$0
 mul $2,3
 lpb $0
-  max $0,1
+  sub $0,1
+  max $0,2
   mov $3,$2
   div $3,$0
   mod $3,3
-  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

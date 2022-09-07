@@ -3,7 +3,7 @@
 ; 0,0,3,0,5,0,5,0,9,0,15,6,15,6,9,0,17,0,27,10,17,0,27,10,27,10,17,0,27,10,17,0,33,0,51,18,45,12,63,30,45,12,63,30,33,0,51,18,51,18,33,0,63,30,45,12,63,30,45,12,51,18,33,0,65,0,99,34,85,20,119,54,65,0,99,34,85,20,119,54,85,20,119,54,65,0,99,34,85,20,119,54,65,0,99,34,99,34,65,0
 
 mov $2,$0
-seq $2,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+seq $2,48701 ; List of binary palindromes of even length (written in base 10).
 mov $4,4
 lpb $0
   mov $3,$0

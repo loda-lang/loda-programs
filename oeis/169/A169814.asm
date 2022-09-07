@@ -4,7 +4,7 @@
 
 mov $2,$0
 seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mov $4,4
+mov $4,1
 add $0,1
 lpb $0
   mov $3,$0
@@ -17,4 +17,3 @@ lpb $0
   mul $4,2
 lpe
 mov $0,$1
-div $0,4

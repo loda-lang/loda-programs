@@ -8,6 +8,6 @@ lpb $0
   mov $2,$0
   seq $2,330492 ; a(n) = sum of second differences of the sorted divisors of n.
   sub $0,$2
-  add $3,1
+  add $1,1
 lpe
-mov $0,$3
+mov $0,$1

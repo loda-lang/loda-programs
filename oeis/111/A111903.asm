@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   mul $2,2
   seq $2,93967 ; a(n) = n * Pell(n).
-  add $3,$2
+  trn $0,2
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

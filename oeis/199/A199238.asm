@@ -3,9 +3,9 @@
 
 mul $0,2
 add $0,2
+mov $1,$0
+seq $1,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
 mov $2,1
-mov $3,$0
-seq $3,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
-sub $2,$3
+sub $2,$1
 mod $0,$2
 div $0,2

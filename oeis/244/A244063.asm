@@ -3,8 +3,5 @@
 ; 0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0
 
 add $0,1
-seq $0,345079 ; Consider the coefficients in the expansion of the n-th cyclotomic polynomial. a(n) is the difference between the extremes.
-mul $0,2
-sub $0,8
-div $0,3
-add $0,2
+seq $0,230799 ; The number of distinct nonzero coefficients in the n-th cyclotomic polynomial.
+sub $0,1

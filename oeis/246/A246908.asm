@@ -4,5 +4,6 @@
 
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $0,246456 ; a(n) = sigma(n + sigma(n)).
+add $0,$1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,$1

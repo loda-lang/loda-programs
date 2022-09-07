@@ -10,10 +10,11 @@ lpb $3
   mul $4,2
   add $4,1
   mul $1,$3
+  div $2,2
   mul $2,4
   mul $2,$4
   sub $3,1
-  mul $1,4
+  mul $1,2
   add $1,$2
   sub $2,4
   div $2,2

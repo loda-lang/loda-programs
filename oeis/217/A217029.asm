@@ -11,7 +11,6 @@ add $1,1
 mov $2,$1
 add $0,1
 max $1,$0
-add $0,$2
-gcd $0,$1
+gcd $0,$2
 div $1,$0
 mov $0,$1

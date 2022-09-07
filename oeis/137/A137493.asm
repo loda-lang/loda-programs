@@ -4,11 +4,10 @@
 
 mov $2,$0
 add $2,1
-add $2,$0
 add $0,1
 mov $1,370
 add $1,$2
-add $1,6
+add $1,2
 add $2,9
 pow $2,4
 lpb $2

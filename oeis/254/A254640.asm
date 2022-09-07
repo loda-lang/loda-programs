@@ -4,8 +4,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,101093 ; Second partial sums of sixth powers (A001014).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

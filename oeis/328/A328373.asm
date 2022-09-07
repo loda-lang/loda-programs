@@ -21,12 +21,10 @@ lpb $0
   mov $5,1
   lpb $0
     dif $0,$2
-    sub $6,1
-    mul $6,$2
-    add $6,1
-    mul $4,-1
-    add $4,1
     sub $4,$6
+    mul $4,$2
+    add $4,1
+    mul $5,-1
     add $5,$4
   lpe
   mul $1,$5
