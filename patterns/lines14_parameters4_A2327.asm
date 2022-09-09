@@ -12,23 +12,3 @@ lpb $3
   sub $3,$0
 lpe
 add $0,$2
-
-; parameter 0
-; number of unique values: 4
-; value: 2,4,6,8
-
-; parameter 1
-; number of unique values: 5
-; value: 2,4,6,8,12
-
-; parameter 2
-; number of unique values: 2
-; value: 10051,10055
-
-; parameter 3
-; number of unique values: 7
-; value: 2,3,4,6,8,12,16
-
-; programs with this pattern
-; number of programs: 18
-; program id: 2327,2383,66436,76727,90684,90686,90687,90698,91272,98828,99007,133322,133323,171838,176616,201712,229080,269787

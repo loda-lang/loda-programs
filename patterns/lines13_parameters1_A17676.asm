@@ -11,11 +11,3 @@ lpe
 gcd $1,$4
 div $4,$1
 mov $0,$4
-
-; parameter 0
-; number of unique values: 16
-; value: 6,7,8,9,10,11,13,14,15,16,17,18,19,20,21,23
-
-; programs with this pattern
-; number of programs: 16
-; program id: 17676,17678,17680,17682,17684,17686,17690,17692,17694,17696,17698,17700,17702,17704,17706,17710

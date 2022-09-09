@@ -9,15 +9,3 @@ lpb $3
   div $1,$2
 lpe
 mov $0,$1
-
-; parameter 0
-; number of unique values: 12
-; value: 2,3,6,10,14,18,22,26,30,38,42,46
-
-; parameter 1
-; number of unique values: 3
-; value: 4,8,9
-
-; programs with this pattern
-; number of programs: 15
-; program id: 2421,2422,2423,2424,4981,4982,4983,4984,4987,4988,20923,20925,20929,20931,20933

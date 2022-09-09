@@ -17,19 +17,3 @@ lpe
 mov $0,$4
 mul $0,2
 add $0,1
-
-; parameter 0
-; number of unique values: 15
-; value: 10,12,13,16,17,19,24,25,27,34,38,45,47,49,66
-
-; parameter 1
-; number of unique values: 2
-; value: 2,4
-
-; parameter 2
-; number of unique values: 10
-; value: 37,39,41,43,47,53,57,59,61,63
-
-; programs with this pattern
-; number of programs: 21
-; program id: 142121,142123,142168,142207,142230,142282,142381,142390,142395,142546,142565,142569,142686,142742,142752,142754,142759,142819,142823,142836,142907

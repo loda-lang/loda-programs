@@ -3,15 +3,3 @@ pow $1,$0
 mul $0,2 ; source=parameter 0
 seq $0,194349 ; source=parameter 1
 mul $0,$1
-
-; parameter 0
-; number of unique values: 3
-; value: 2,3,5
-
-; parameter 1
-; number of unique values: 20
-; value: 122,593,2019,2325,8441,13170,13174,33762,35178,50456,50457,52922,96975,117000,117886,178766,194349,228304,253626,258587
-
-; programs with this pattern
-; number of programs: 20
-; program id: 12022,13108,13179,50983,89803,102059,113419,117413,121613,123858,125095,132973,204342,219233,226192,227696,228443,262774,274663,279947

@@ -15,11 +15,3 @@ lpb $0
   add $5,$3
 lpe
 mov $0,$5
-
-; parameter 0
-; number of unique values: 15
-; value: 5,6,7,8,10,12,13,14,15,17,18,19,21,22,25
-
-; programs with this pattern
-; number of programs: 15
-; program id: 157053,157054,157055,157056,157058,157060,157061,157062,157063,157065,157066,157067,157069,157070,157073

@@ -13,23 +13,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-
-; parameter 0
-; number of unique values: 3
-; value: 2,4,6
-
-; parameter 1
-; number of unique values: 18
-; value: 161,14082,51802,55949,55951,55953,55955,55957,55959,65715,65717,93101,102681,105023,139354,214323,328573,331044
-
-; parameter 2
-; number of unique values: 2
-; value: 0,1
-
-; parameter 3
-; number of unique values: 3
-; value: 1,4,7
-
-; programs with this pattern
-; number of programs: 18
-; program id: 3726,14192,29803,29952,29953,29954,29955,35059,35061,51803,61823,102470,104235,125022,126684,202259,214653,328574

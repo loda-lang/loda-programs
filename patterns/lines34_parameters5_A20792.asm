@@ -32,27 +32,3 @@ pow $3,$0
 div $2,$3
 mov $0,$2
 mod $0,10
-
-; parameter 0
-; number of unique values: 2
-; value: 1,3
-
-; parameter 1
-; number of unique values: 2
-; value: 1,5
-
-; parameter 2
-; number of unique values: 4
-; value: 5,6,7,8
-
-; parameter 3
-; number of unique values: 2
-; value: 1,2
-
-; parameter 4
-; number of unique values: 15
-; value: 35,37,42,43,44,46,51,63,66,68,69,70,71,74,89
-
-; programs with this pattern
-; number of programs: 15
-; program id: 20792,20794,20799,20800,20801,20803,20808,20820,20823,20825,20826,20827,20828,20831,20846

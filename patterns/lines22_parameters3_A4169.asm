@@ -20,19 +20,3 @@ lpb $2
 lpe
 mov $0,$1
 add $0,1 ; source=parameter 2
-
-; parameter 0
-; number of unique values: 17
-; value: 53575,56924,64547,67815,69897,70668,82068,86892,87267,109848,136107,161606,306354,329376,330749,341997,348948
-
-; parameter 1
-; number of unique values: 2
-; value: 1,2
-
-; parameter 2
-; number of unique values: 2
-; value: 1,2
-
-; programs with this pattern
-; number of programs: 18
-; program id: 4169,38109,48108,66498,69059,69900,80257,87270,104210,161769,165513,201462,226025,248500,258614,268388,272475,327929
