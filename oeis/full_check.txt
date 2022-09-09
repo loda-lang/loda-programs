@@ -18,6 +18,7 @@ A001966: v-pile counts for the 4-Wythoff game with i=2.
 A001967: u-pile positions for the 4-Wythoff game with i=3.
 A001968: v-pile positions of the 4-Wythoff game with i=3.
 A002251: Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
+A002324: Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
 A003153: a(n) = integer nearest n*(1+sqrt(2)).
@@ -123,6 +124,7 @@ A071187: Smallest prime factor of number of divisors of n.
 A071222: Smallest k such that gcd(n,k) = gcd(n+1,k+1).
 A072292: Number of proper powers b^d <= n (b > 1, d > 1).
 A073093: Number of prime power divisors of n.
+A074939: Even numbers such that base 3 representation contains no 2.
 A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.
 A075802: Characteristic function of perfect powers, A001597.
 A077655: Number of consecutive successors of n having the same number of prime factors as n (counted with multiplicity).
