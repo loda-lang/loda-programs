@@ -55,7 +55,7 @@ for f in $files; do
     loda check -b $f
     echo
     git diff -U1000 -- $f
-    read -p "Update program for ${number}? (Y)es, (n)o: " a
+    read -p "Update program? (Y)es, (n)o: " a
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git add $f

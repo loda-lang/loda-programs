@@ -4,7 +4,7 @@
 
 mov $1,$0
 trn $0,1
-seq $0,52506 ; E.g.f.: exp(x*exp(x)-x).
+seq $0,52506 ; Expansion of e.g.f. exp(x*exp(x)-x).
 mul $0,$1
 div $0,2
 mul $0,2

@@ -1,19 +1,18 @@
 ; A279495: Number of tetrahedral numbers dividing n.
-; Submitted by pelpolaris
+; Submitted by Simon Strandgaard
 ; 1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,1,1,4,1,1,1,2,1,1,1,2,1,2,1,2,1,1,2,2,1,1,1,4,1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,3,1,1,1,4,1,1,1,2,1,1,1,2,1,3,1,2,1,1,1,2,1,1,1,4,1,1,1,3,1,1,1,2,1,2,1,2,1,1,1,2,1,1,1,4
 
 add $0,1
-mov $1,$0
-lpb $1
-  mov $4,$1
-  mov $2,$0
-  lpb $2
-    bin $4,3
-    dif $2,$4
-    add $3,1
-    mov $4,1
-  lpe
-  sub $1,1
+mov $2,$0
+lpb $0
+  sub $0,1
+  mov $3,$2
+  dif $3,$4
+  cmp $3,$2
+  cmp $3,0
+  mov $4,-4
+  bin $4,$0
+  add $1,$3
 lpe
-mov $0,$3
-add $0,1
+add $1,1
+mov $0,$1

@@ -24,6 +24,6 @@ lpb $0
   mul $5,$2
   add $5,1
   mul $1,$5
-  add $2,1
+  add $2,2
 lpe
 mul $0,$1

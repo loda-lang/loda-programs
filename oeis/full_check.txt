@@ -292,6 +292,7 @@ A238392: Triangle read by rows: each row is an initial segment of the terms of A
 A241915: After a(1)=1, numbers 1 .. A061395(n), followed by numbers 1 .. A061395(n+1), etc.
 A243348: Difference between the n-th squarefree number and n: a(n) = A005117(n) - n.
 A243349: Difference between the n-th squarefree number and the index of its largest prime factor.
+A243915: a(n) = sigma(omega(n)).
 A244063: Number of prime factors (with multiplicity) of the number of distinct prime factors of n; i.e., Omega(omega(n)).
 A244217: Numbers n less than twice the largest Catalan number that is less than or equal to n.
 A244339: Expansion of (-2 * a(q) + 3*a(q^2) + 2*a(q^4)) / 3 in powers of q where a() is a cubic AGM theta function.
@@ -327,6 +328,7 @@ A276854: Beatty sequence for 1 + sqrt(5).
 A276855: Beatty sequence for (3 + golden ratio).
 A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
+A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
 A278569: Numbers of the form p^i*q^j*r^k where p,q,r are distinct odd primes and i,j,k >= 1.
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
@@ -443,4 +445,5 @@ A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
 A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.
 A354031: a(n) = 1 if n > 1 and n is a power of a Pythagorean prime (prime of the form 4m+1), otherwise 0.
+A354353: a(n) = 1 if n is either a a squarefree composite or a power of squarefree composite, otherwise 0.
 A355037: a(n) is the product of the digits of n in primorial base.

@@ -27,9 +27,9 @@ lpb $0
     mul $4,$2
     add $4,1
     mod $4,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $7,$2
+    pow $7,3
+    mul $5,$7
     add $5,$4
   lpe
   mul $1,$5

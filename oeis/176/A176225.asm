@@ -6,14 +6,12 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-mov $2,$1
-sub $2,$0
-mov $3,3
-pow $3,$0
+sub $1,$0
+mov $2,3
+pow $2,$0
 mov $0,3
-pow $0,$2
-mov $1,$3
-sub $1,1
-mul $1,$0
-sub $3,$1
-mov $0,$3
+pow $0,$1
+sub $0,1
+mul $2,$0
+sub $0,$2
+add $0,1

@@ -1,6 +1,24 @@
 ; A047920: Triangular array formed from successive differences of factorial numbers.
-; Submitted by Jason Jung
+; Submitted by Landjunge
 ; 1,1,0,2,1,1,6,4,3,2,24,18,14,11,9,120,96,78,64,53,44,720,600,504,426,362,309,265,5040,4320,3720,3216,2790,2428,2119,1854,40320,35280,30960,27240,24024,21234,18806,16687,14833,362880,322560,287280,256320,229080,205056,183822,165016,148329,133496,3628800,3265920,2943360,2656080,2399760,2170680,1965624,1781802,1616786,1468457,1334961,39916800,36288000,33022080,30078720,27422640,25022880,22852200,20886576,19104774,17487988,16019531,14684570,479001600,439084800,402796800,369774720,339696000
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,68106 ; Euler's difference table: triangle read by rows, formed by starting with factorial numbers (A000142) and repeatedly taking differences. T(n,n) = n!, T(n,k) = T(n,k+1) - T(n-1,k).
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+mov $1,1
+sub $2,$0
+mov $3,1
+mov $5,$0
+add $0,$2
+mov $2,$5
+lpb $0
+  sub $4,1
+  mul $1,$2
+  div $1,$4
+  mul $3,$0
+  add $3,$1
+  sub $0,1
+  sub $2,1
+lpe
+mov $0,$3

@@ -2,10 +2,7 @@
 ; Submitted by Simon Strandgaard
 ; 0,2,2,4,2,10,2,8,6,14,2,20,2,18,16,16,2,30,2,28,20,26,2,40,10,30,18,36,2,64,2,32,28,38,24,60,2,42,32,56,2,84,2,52,48,50,2,80,14,70,40,60,2,90,32,72,44,62,2,128,2,66,60,64,36,124,2,76,52,120,2,120,2,78,80,84,36,144,2,112,54,86,2,168,44,90,64,104,2,192,40,100,68,98,48,160,2,126,84,140
 
-mov $2,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-add $1,$2
-seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
-div $1,$0
-sub $1,$0
-mov $0,$1
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+sub $0,$1

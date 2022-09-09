@@ -5,18 +5,10 @@
 mul $0,2
 mov $2,-6
 bin $2,$0
-add $0,1
 mov $1,$2
 mul $1,16
-mov $2,$0
+add $0,$1
+sub $0,16
+div $0,2
 mul $0,2
-lpb $0
-  mov $0,1
-  sub $1,9
-lpe
-add $1,$2
-sub $1,8
-div $1,2
-mul $1,2
-add $1,18
-mov $0,$1
+add $0,18

@@ -1,19 +1,7 @@
 ; A206424: The number of 1's in row n of Pascal's Triangle (mod 3)
-; Submitted by Landjunge
+; Submitted by Simon Strandgaard
 ; 1,2,2,2,4,4,2,4,5,2,4,4,4,8,8,4,8,10,2,4,5,4,8,10,5,10,14,2,4,4,4,8,8,4,8,10,4,8,8,8,16,16,8,16,20,4,8,10,8,16,20,10,20,28,2,4,5,4,8,10,5,10,14,4,8,10,8,16,20,10,20,28,5,10,14,10,20,28,14,28,41,2,4,4,4,8,8,4,8,10,4,8,8,8,16,16,8,16,20,4
 
-mov $4,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mov $3,$4
-  bin $3,$0
-  sub $3,1
-  gcd $3,3
-  div $3,2
-  add $1,$3
-lpe
-mov $0,$1
-add $0,1
+seq $0,6047 ; Number of entries in n-th row of Pascal's triangle not divisible by 3.
+seq $0,285326 ; a(0) = 0, for n > 0, a(n) = n + A006519(n).
+div $0,2

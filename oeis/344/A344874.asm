@@ -1,8 +1,10 @@
 ; A344874: a(n) = A047994(n) - A011772(n).
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 0,-2,0,-4,0,-1,0,-8,0,0,0,-2,0,-1,3,-16,0,0,0,-3,6,-1,0,-1,0,0,0,11,0,-7,0,-32,9,0,10,16,0,-1,12,13,0,-8,0,-2,23,-1,0,-2,0,0,15,-3,0,-1,30,-6,18,0,0,9,0,-1,21,-64,23,9,0,32,21,4,0,-7,0,0,24,-2,39,12,0,-4,0,0,0,-12,30,-1,27,38,0,-3,59,43,30,-1,53,-1,0,0,36,48
 
 mov $1,$0
-seq $1,11772 ; Smallest number m such that m(m+1)/2 is divisible by n.
+mul $1,2
+add $1,1
+seq $1,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
 seq $0,47994 ; Unitary totient (or unitary phi) function uphi(n).
 sub $0,$1
