@@ -21,11 +21,9 @@ lpb $0
     dif $0,$2
     add $4,1
     sub $4,$6
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $7,$2
+    pow $7,5
+    mul $5,$7
     add $5,$4
     add $5,1
     mov $6,1

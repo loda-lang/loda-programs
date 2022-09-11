@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,3
-  seq $3,198263 ; Ceiling(n*sqrt(8)).
+  seq $3,198263 ; a(n) = ceiling(n*sqrt(8)).
   add $3,2
   mod $3,3
   div $3,2

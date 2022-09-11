@@ -22,11 +22,11 @@ lpb $2
     sub $4,2
     mov $3,$4
     mul $3,4
+    mov $13,$0
+    mul $13,3
     mov $5,2
     trn $5,$0
-    add $5,$0
-    add $5,$0
-    add $5,$0
+    add $5,$13
     lpb $0
       mul $0,0
       mul $5,2
