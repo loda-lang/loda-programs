@@ -5,11 +5,11 @@
 mov $1,2
 pow $1,$0
 add $1,12
+mov $2,$1
+mul $2,3
 seq $0,209726 ; 1/4 the number of (n+1) X 8 0..2 arrays with every 2 X 2 subblock having distinct clockwise edge differences.
 mul $0,$1
-add $0,$1
-add $0,$1
-add $0,$1
+add $0,$2
 mul $0,3
 sub $0,741
 div $0,3

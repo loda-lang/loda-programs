@@ -5,8 +5,8 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   max $0,0
   seq $0,48093 ; Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= sqrt(n).

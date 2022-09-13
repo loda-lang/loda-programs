@@ -5,8 +5,7 @@ mov $1,$0
 mul $0,7
 mul $0,$1
 sub $0,$1
-div $0,6
-add $0,6
-div $0,3
+add $0,36
+div $0,18
 sub $0,1
 add $0,$1

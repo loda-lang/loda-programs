@@ -119,6 +119,7 @@ A068068: Number of odd unitary divisors of n. d is a unitary divisor of n if d d
 A069213: a(n) = n-th positive integer relatively prime to n.
 A069513: Characteristic function of the prime powers p^k, k >= 1.
 A069623: Number of perfect powers <= n.
+A069812: a(n) = Sum_{k=1..n} (bigomega(k)-omega(k)).
 A070321: Greatest squarefree number <= n.
 A071178: Exponent of the largest prime factor of n.
 A071187: Smallest prime factor of number of divisors of n.
@@ -134,6 +135,7 @@ A078687: Number of x>=0 such that prime(n)-2^x is prime.
 A079093: Squarefree kernel of (prime(n)+1)*(prime(n+1)+1)/4.
 A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
+A080081: Beatty sequence for (3+sqrt(13))/2.
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
 A080755: a(n) = ceiling(n*(1+1/sqrt(2))).
 A081129: Differences of Beatty sequence for cube root of 3.
@@ -172,6 +174,7 @@ A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 othe
 A107078: Whether n has non-unitary prime divisors.
 A107145: Primes of the form x^2 + 40y^2.
 A108029: Numbers n such that 149*k + 151 is prime.
+A109512: Integers which are not the sum of n and A001462(n).
 A109768: a(n) = gcd(3^n-2,2^n-3).
 A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A111701: Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
@@ -254,6 +257,7 @@ A190236: a(n) = [n*u + n*v] -[n*u] -[n*v], where u=1/2, v=(1+sqrt(5))/2, and []=
 A190238: Positions of 1 in A190236; complement of A190237.
 A190336: a(n) = n + [n*r/s] + [n*t/s];  r=2, s=sqrt(2), t=1/s.
 A190337: a(n) = n + [n*r/t] + [n*s/t];  r=2, s=sqrt(2), t=1/s.
+A190427: a(n) = [(b*n+c)*r] - b*[n*r] - [c*r], where (r,b,c)=(golden ratio,2,1) and []=floor.
 A190428: Positions of 0 in A190427.
 A190429: Positions of 1 in A190427.
 A190430: Positions of 2 in A190427.

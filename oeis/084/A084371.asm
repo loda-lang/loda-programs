@@ -5,5 +5,4 @@
 mov $1,$0
 seq $1,1694 ; Powerful numbers, definition (1): if a prime p divides n then p^2 must also divide n (also called squareful, square full, square-full or 2-powerful numbers).
 seq $0,99788 ; a(n) = Product_{i=1..2n} prime(i).
-gcd $1,$0
-mov $0,$1
+gcd $0,$1

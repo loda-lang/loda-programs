@@ -1,6 +1,7 @@
 ; A129968: a(n) = sum of digits of A061909(n).
-; Submitted by vanos0512
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,3,1,2,3,4,2,3,4,3,4,1,2,3,4,2,3,4,5,3,4,5,4,2,3,4,3,4,5,4,5,3,4,4,5,1,2,3,4,2,3,4,5,3,4,5,4,5,2,3,4,5,3,4,5,6,4,5,6,5,3,4,5,4,5,6,5,4,5,2,3,4,3,4,5,4,5,6,3,4,5,4,5,5,6,4,5,6,5,6,3,4,4,5,4,5,5,6,1
 
-seq $0,129971 ; a(n) = A129968(n)^2.
-seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+add $0,1
+seq $0,61909 ; Skinny numbers: numbers n such that there are no carries when n is squared by "long multiplication".
+mod $0,9

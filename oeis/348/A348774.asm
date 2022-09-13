@@ -4,6 +4,5 @@
 
 mul $0,2
 seq $0,40 ; The prime numbers.
+dif $0,2
 add $0,1
-div $0,2
-mul $0,2

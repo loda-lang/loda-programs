@@ -2,7 +2,9 @@
 ; Submitted by Jason Jung
 ; 393,422,614,674,692,886,889,934,993,1006,1270,1285,1502,1522,1524,1542,1726,1822,2018,2217,2326,2386,2402,2474,2545,2654,2733,2734,2761,2858,2876,3005,3022,3039,3054,3147,3193,3261,3453,3507,3512,3518,3589
 
-mov $2,14164
+mov $2,$0
+add $2,8
+pow $2,4
 lpb $2
   mov $3,$1
   seq $3,2217 ; Starting with n, repeatedly calculate the sum of prime factors (with repetition) of the previous term, until reaching 0 or a fixed point: a(n) is the number of terms in the resulting sequence.

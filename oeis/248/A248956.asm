@@ -8,9 +8,12 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,52816 ; G.f.: (1+x)*Product_{m>0} (1 + x^m).
+  div $2,2
+  seq $2,70 ; a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
   add $1,$2
-  mov $3,2
+  mov $3,1
+  add $3,$4
+  add $4,1
 lpe
 mov $0,$1
 mul $0,2

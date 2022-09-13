@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,68720 ; Arithmetic derivative of squares: a(n) = 2*n*A003415(n).
+  sub $0,1
   add $1,$2
 lpe
 div $1,2

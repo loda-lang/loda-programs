@@ -5,18 +5,18 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  mov $0,$2
   sub $4,1
+  mov $0,$2
   add $0,$4
   trn $0,1
   add $0,1
   mov $1,2
   pow $1,$0
-  seq $0,159288 ; Expansion of (1+x+x^2)/(1-x^2-2*x^3).
+  seq $0,159288 ; Expansion of (1 + x + x^2)/(1 - x^2 - 2*x^3).
   sub $1,$0
-  mov $0,$1
   mov $5,$4
   mul $5,$1
+  mov $0,$1
   add $3,$5
 lpe
 min $2,1
