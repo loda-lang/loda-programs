@@ -1,0 +1,16 @@
+; A352516: Number of excedances (parts above the diagonal) of the n-th composition in standard order.
+; Submitted by kotenok2000
+; 0,0,1,0,1,1,0,0,1,1,1,1,1,0,0,0,1,1,1,1,2,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,2,2,2,2,1,1,1
+
+lpb $0
+  mov $1,1
+  div $2,10
+  lpb $0
+    dif $0,2
+    add $2,$1
+    mul $1,10
+  lpe
+  div $0,2
+lpe
+mov $0,$2
+mod $0,10
