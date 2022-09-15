@@ -1,0 +1,16 @@
+; A216144: Square root of smallest square greater than the product of first n primes.
+; Submitted by [AF>Le_Pommier] Jerome_C2005
+; 2,3,6,15,49,174,715,3115,14937,80435,447840,2724104,17442772,114379900,784149082,5708691486,43849291331,342473913400,2803269796342,23620771158595,201815957246322,1793779464521956,16342108667160302,154171144824008980,1518409682511777987
+
+seq $0,88860 ; Twice the primorials (first definition), 2*A002110(n).
+mov $1,$0
+div $1,2
+mul $0,4
+div $0,5
+lpb $0
+  div $2,$0
+  add $0,$2
+  div $0,2
+  mov $2,$1
+lpe
+add $0,1
