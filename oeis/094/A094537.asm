@@ -1,0 +1,10 @@
+; A094537: A094536/2.
+; Submitted by Science United
+; 0,0,1,2,5,10,22,44,91,182,370,740,1490,2980,5980,11960,23957,47914,95902,191804,383750,767500,1535284,3070568,6141694,12283388,24567892,49135784,98273780,196547560,393099544,786199088,1572406987,3144813974
+
+trn $0,1
+mov $1,2
+pow $1,$0
+seq $0,45690 ; Number of binary words of length n (beginning with 0) whose autocorrelation function is the indicator of a singleton.
+sub $1,$0
+mov $0,$1
