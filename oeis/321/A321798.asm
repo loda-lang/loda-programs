@@ -12,9 +12,9 @@ lpb $5
   bin $1,$0
   mov $2,$3
   sub $2,1
-  add $2,$5
-  add $2,$5
-  add $2,$5
+  mov $6,$5
+  mul $6,3
+  add $2,$6
   bin $2,$0
   add $0,1
   mul $1,$2

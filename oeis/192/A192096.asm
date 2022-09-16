@@ -1,18 +1,8 @@
 ; A192096: Maximum number of tatami tilings of any m-by-m square region with exactly n horizontal dimers and m monomers.
-; Submitted by zeekec
+; Submitted by Jim1348
 ; 2,4,6,12,18,28,44,64,92,132,186,256,352,476,638,852,1124,1472,1920,2484,3196,4096,5216,6612,8350,10496,13140,16396,20380,25244,31178,38380,47104,57660,70380,85684,104068,126080,152396,183808,221208,265664,318432,380928,454834,542116,644992,766080,908420,1075456,1271220,1500364,1768178,2080804,2445312,2869740,3363364,3936832,4602240,5373492,6266496,7299300,8492576,9869908,11458020,13287424,15392824,17813504,20594176,23785572,27445046,31637676,36437152,41926652,48200320,55364544,63539200,72859684
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
-  mov $3,1
-  add $3,$4
-  add $1,$2
-  add $4,1
-lpe
-mov $0,$1
+seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
+sub $0,1
+seq $0,22567 ; Expansion of Product_{m>=1} (1+x^m)^2.
 mul $0,2

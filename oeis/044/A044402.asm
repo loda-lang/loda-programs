@@ -10,7 +10,7 @@ div $0,11
 mul $0,7
 sub $1,3
 div $1,11
-add $0,$1
-add $0,$1
-add $0,$1
+mov $2,$1
+mul $2,3
+add $0,$2
 mul $0,10

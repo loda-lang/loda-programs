@@ -4,8 +4,8 @@
 
 lpb $0
   sub $0,1
-  seq $2,230300 ; a(n) = n + wt(n-1), where wt() = A000120() is the binary weight.
+  seq $1,230300 ; a(n) = n + wt(n-1), where wt() = A000120() is the binary weight.
 lpe
-mov $0,$2
+mov $0,$1
 mul $0,2
 add $0,1

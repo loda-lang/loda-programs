@@ -103,6 +103,7 @@ A045461: Primes congruent to {0, 1, 4} mod 7.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
 A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
+A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
 A053669: Smallest prime not dividing n.
@@ -185,6 +186,7 @@ A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
 A116512: a(n) = number of positive integers each of which is <= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
+A120007: Mobius transform of sum of prime factors of n with multiplicity (A001414).
 A120891: Number of primitive Pythagorean triangles with odd leg 2n-1.
 A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) = p^j > 1. (a(1) = 0.)
 A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
@@ -434,6 +436,7 @@ A333842: G.f.: Sum_{k>=1} k * x^(prime(k)^2) / (1 - x^(prime(k)^2)).
 A335858: Nonnegative integers ordered by binary length and then lexicographically by run lengths (considering least significant runs first).
 A336101: Numbers divisible by exactly one odd prime.
 A336356: Characteristic function of A336359, numbers k for which A001222(A000203(k)) < A001222(k).
+A338064: Numbers k such that the Enots Wolley sequence A336957(k) is even.
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A340346: The largest divisor of n that is a term of A055932 (numbers divisible by all primes smaller than their largest prime factor).

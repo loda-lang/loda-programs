@@ -10,13 +10,12 @@ lpb $0
   add $3,$1
   mul $1,$2
   mul $1,$2
-  mul $3,$0
-  mul $3,$0
-  mul $3,$0
-  mul $3,$0
+  mov $4,$0
+  pow $4,4
   sub $0,1
   mul $1,$2
   mul $1,$2
+  mul $3,$4
 lpe
 add $1,$3
 gcd $3,$1

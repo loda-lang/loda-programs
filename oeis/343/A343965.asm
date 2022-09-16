@@ -4,10 +4,10 @@
 
 lpb $0
   mov $2,$0
-  mov $0,0
-  mov $1,2
   seq $2,131594 ; Decimal expansion of sqrt(2)/3, the volume of a regular octahedron with edge length 1.
   add $3,$2
+  mov $0,0
+  mov $1,2
   add $1,$3
 lpe
 mov $0,$1

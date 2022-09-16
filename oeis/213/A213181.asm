@@ -4,7 +4,8 @@
 
 add $0,1
 dif $0,2
-mov $1,270
+mov $1,$0
+pow $1,2
 lpb $1
   mov $2,2
   sub $2,$0

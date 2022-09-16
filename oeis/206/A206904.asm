@@ -4,7 +4,7 @@
 
 add $0,1
 mov $1,$0
-seq $1,198081 ; Ceiling(n*Sqrt(3)).
+seq $1,198081 ; a(n) = ceiling(n*sqrt(3)).
 add $1,$0
 div $0,3
 sub $0,1

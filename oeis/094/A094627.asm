@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,70199 ; Number of palindromes of length <= n.
+  sub $0,1
   add $1,$2
   add $1,1
 lpe

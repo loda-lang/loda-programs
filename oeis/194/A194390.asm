@@ -3,9 +3,8 @@
 
 add $0,1
 mov $1,$0
-mov $2,7
 lpb $1
-  add $0,$2
-  sub $1,$2
+  sub $1,7
+  add $0,7
 lpe
 mul $0,2

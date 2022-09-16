@@ -1,4 +1,4 @@
-; A135874: Multiply the positive divisors n in order (starting at 1). a(n) is the smallest such partial product that is >= n.
+; A135874: Multiply the positive divisors of n in order (starting at 1). a(n) is the smallest such partial product that is >= n.
 ; 1,2,3,8,5,6,7,8,27,10,11,24,13,14,15,64,17,36,19,40,21,22,23,24,125,26,27,56,29,30,31,64,33,34,35,144,37,38,39,40,41,252,43,88,135,46,47,144,343,100,51,104,53,324,55,56,57,58,59,120,61,62,189,64,65,396,67,136,69,70,71,144,73,74,225,152,77,468,79,320,729,82,83,144,85,86,87,704,89,180,91,184,93,94,95,144,97,196,297,400
 
 add $0,1

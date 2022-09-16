@@ -4,7 +4,5 @@
 
 trn $0,1
 mod $0,3
-add $0,1
 mul $0,27
-sub $0,7
 mod $0,10

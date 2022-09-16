@@ -23,9 +23,9 @@ lpb $0
   mov $5,1
   lpb $0
     dif $0,$2
-    add $4,$6
-    add $4,$6
-    add $4,$6
+    mov $7,$6
+    mul $7,3
+    add $4,$7
     add $4,1
     mul $5,$2
     add $5,$4
