@@ -448,6 +448,7 @@ A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).
 A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.
+A353527: The smallest prime not dividing 2*n, reduced modulo 4.
 A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
 A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
 A353631: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for odd numbers.

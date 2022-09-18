@@ -5,7 +5,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1 ; source=parameter 0
-  seq $0,38589 ; source=parameter 1
+  seq $0,712 ; source=parameter 1
   mov $2,$3
   mul $2,$0
   add $1,$2

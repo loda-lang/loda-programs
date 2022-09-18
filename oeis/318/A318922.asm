@@ -1,6 +1,6 @@
 ; A318922: Apply Lenormand's transformation k -> A318921(k) to the Fibonacci numbers.
-; Submitted by DoctorNow
+; Submitted by Simon Strandgaard
 ; 0,0,0,0,1,0,0,1,0,0,7,2,0,6,14,4,31,39,4,0,11,8,7,1020,32,0,228,1016,109,249,160,7,112,3708,3099,340,13208,12526,192,3596,8957,999,4178060,746,879,13296,15855,16920,29184,227952,124264,16192,984121,77442,1952,16359,4967,1044,16371,2032038,286856,3488,2073342,8288332,691207,504715,274964,399327,113,25404400,283399,2197724,6799856,31604452,485656,1880211960,17166593,26788224,530322740,5792543,346013966,25009660,448115,34160132,863548664,452939714,3553296,2096544,1883250955,10137169917,34095265564
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 seq $0,318921 ; In binary expansion of n, delete one symbol from each run. Set a(n)=0 if the result is the empty string.

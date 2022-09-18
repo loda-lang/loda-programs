@@ -14,14 +14,13 @@ lpb $0
     trn $4,1
     mov $7,$4
     seq $7,46897 ; Sum of divisors of n that are not divisible by 4.
-    mul $7,3
     mov $9,10
     add $9,$5
     mul $7,$$9
     add $5,1
     add $6,$7
   lpe
-  mul $6,6
+  mul $6,18
   div $6,$2
   mov $9,10
   add $9,$2

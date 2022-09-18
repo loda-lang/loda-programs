@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,4
   seq $2,100047 ; A Chebyshev transform of the Fibonacci numbers.
+  trn $0,4
   add $1,$2
 lpe
 mov $0,$1
