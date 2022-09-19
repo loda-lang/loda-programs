@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,179941 ; Number of times n appears in a 100 X 100 multiplication table.
+    seq $7,5
     sub $7,1
     mod $7,2
     mov $9,10

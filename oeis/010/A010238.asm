@@ -2,14 +2,14 @@
 ; Submitted by Christian Krause
 ; 1,1,2,2,2,4,4,7,12,18
 
+mov $6,$0
 mov $4,$0
 add $4,1
-mov $6,$0
 lpb $4
-  mov $0,$6
-  mov $1,0
   sub $4,1
+  mov $0,$6
   sub $0,$4
+  mov $1,0
   mov $2,$0
   sub $2,2
   mov $8,0

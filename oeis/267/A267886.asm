@@ -8,10 +8,10 @@ mov $3,$2
 lpb $0
   mul $0,2
   add $2,$0
-  mov $0,2
-  mov $1,0
   add $2,$3
   div $2,2
+  mov $0,2
+  mov $1,0
   mov $3,2
 lpe
 pow $3,$2

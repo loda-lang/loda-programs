@@ -8,10 +8,10 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $2,$5
   mov $4,$0
   max $4,0
   seq $4,958 ; Number of ordered rooted trees with n edges having root of odd degree.
+  mov $2,$5
   mul $2,$4
   add $1,$2
 lpe

@@ -1,11 +1,12 @@
 ; A117339: a(n)=a(n-1)+a(n-2); if a(n) is not prime divide a(n) by its largest prime factor.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,1,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3,5,4,3,7,2,3
 
 mov $1,2
 mov $5,-1
 lpb $0
   sub $0,1
+  dif $0,13
   mul $3,10
   mod $3,7
   mov $2,$3

@@ -4,8 +4,8 @@
 
 mul $0,2
 lpb $0
-  mov $2,$0
+  mov $1,$0
+  seq $1,211006 ; Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
   mod $0,2
-  seq $2,211006 ; Pair (n,p) where n is the sum of adjacent nonprimes and p is the sum of adjacent primes.
 lpe
-mov $0,$2
+mov $0,$1

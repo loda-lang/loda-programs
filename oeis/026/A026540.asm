@@ -5,10 +5,9 @@
 mov $4,3
 add $0,2
 lpb $0
-  mov $2,$0
-  add $2,$4
   sub $0,2
-  sub $2,2
+  mov $2,$4
+  add $2,$0
   div $2,2
   bin $2,$0
   mov $3,$4
