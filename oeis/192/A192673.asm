@@ -1,0 +1,13 @@
+; A192673:  Floor-Sqrt transform of large Schroder numbers (A006318).
+; Submitted by respawner
+; 1,1,2,4,9,19,42,92,203,453,1018,2300,5224,11919,27301,62750,144662,334392,774802,1799089,4185524,9754468,22769099,53225213,124585182,291975928,685044632,1608962053,3782645385,8901012965,20962890607,49409138924,116543063346,275086432485
+
+seq $0,6318 ; Large Schröder numbers (or large Schroeder numbers, or big Schroeder numbers).
+mov $1,$0
+mul $0,4
+lpb $0
+  div $2,$0
+  add $0,$2
+  div $0,2
+  mov $2,$1
+lpe
