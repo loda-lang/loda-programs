@@ -12,15 +12,11 @@ lpb $0
   mul $2,$6
   mov $3,$4
   bin $3,$1
+  mul $3,$2
   trn $0,1
   add $1,1
-  mul $3,$2
-  mul $3,$1
-  div $3,$1
-  add $4,2
-  max $5,256
-  add $5,$3
   mov $2,$1
+  add $4,2
+  add $5,$3
 lpe
 mov $0,$5
-sub $0,256

@@ -8,12 +8,10 @@ mov $2,$0
 add $2,2
 sub $0,1
 bin $1,$0
-mul $1,6
 mul $1,$2
+mul $1,3
 add $0,1
 add $2,3
 bin $2,$0
-mul $2,2
 add $2,$1
 mov $0,$2
-div $0,2

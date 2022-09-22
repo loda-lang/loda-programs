@@ -9,10 +9,9 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
-  add $1,$2
-  mov $3,1
-  add $3,$4
   add $4,1
+  add $1,$2
+  mov $3,$4
 lpe
 mov $0,$1
 mul $0,2

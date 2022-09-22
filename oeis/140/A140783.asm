@@ -5,8 +5,8 @@
 seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
 lpb $0
   mov $2,$0
-  div $0,10
   mod $2,10
+  div $0,10
   add $1,$2
 lpe
 mov $0,$1

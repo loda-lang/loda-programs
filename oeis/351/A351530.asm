@@ -1,22 +1,16 @@
 ; A351530: The number of quinary strings of length n containing 00.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,0,1,9,65,421,2569,15085,86241,483429,2669305,14564061,78699089,421880725,2246459881,11894065549,62665617345,328756309701,1718275598809,8951067087165,46492068009521,240846026714869,1244719810538185,6419100507215341
 
-mov $1,1
+mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
-  dif $3,2
-  mul $1,2
+  mov $3,$2
+  mov $2,$1
   add $1,$3
-  mul $1,2
-  sub $3,$4
-  mov $4,$2
-  sub $2,$3
-  mul $2,2
-  mov $3,$1
-  mul $4,2
-  add $4,$1
-  add $4,$2
+  mul $1,4
+  add $1,$4
+  mul $4,5
 lpe
-mov $0,$2
-div $0,4
+mov $0,$1

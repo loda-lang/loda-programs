@@ -13,8 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,5
-    cmp $7,2
+    seq $7,10051
     mov $9,10
     add $9,$5
     mov $12,1

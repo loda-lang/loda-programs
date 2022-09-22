@@ -2,32 +2,32 @@
 ; Submitted by Jamie Morken(s3.)
 ; 1,2,3,4,6,9,10,11,12,16,18
 
+mov $8,$0
 mov $4,$0
 add $4,1
-mov $8,$0
 lpb $4
-  mov $0,$8
   sub $4,1
+  mov $0,$8
   sub $0,$4
-  mov $11,2
   mov $12,0
   mov $13,$0
+  mov $11,2
   lpb $11
-    mov $0,$13
+    sub $11,1
     mov $7,0
     mov $10,0
-    sub $11,1
+    mov $0,$13
     add $0,$11
     sub $0,3
     mov $2,1
     mov $3,$0
     mul $3,5
     lpb $3
-      mul $2,$3
-      add $1,$2
       sub $7,17
+      mul $2,$3
       mov $5,$7
       div $5,3
+      add $1,$2
       div $1,$5
       add $10,$0
       mov $0,$1

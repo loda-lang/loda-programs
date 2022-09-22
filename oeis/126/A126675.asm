@@ -5,9 +5,9 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  sub $0,1
   add $2,1
   seq $2,254 ; Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
+  sub $0,1
   mul $1,$2
   mov $2,$0
 lpe

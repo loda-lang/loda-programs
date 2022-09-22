@@ -7,7 +7,7 @@ lpb $0
   add $2,5
   mul $3,2
 lpe
-mov $1,$2
 trn $3,$2
+mov $1,$2
 add $1,$3
 mov $0,$1

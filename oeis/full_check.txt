@@ -103,6 +103,7 @@ A045461: Primes congruent to {0, 1, 4} mod 7.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
 A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
+A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
@@ -390,6 +391,7 @@ A291208: Number of noncube divisors of n.
 A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293484: The number of 7th powers in the multiplicative group modulo n.
+A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 A296908: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) < #(peaks); see Comments.
@@ -444,6 +446,7 @@ A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of wh
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).
+A348741: Odd numbers k for which A161942(k) < k, where A161942 is the odd part of sigma.
 A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).
 A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.

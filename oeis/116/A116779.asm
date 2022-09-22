@@ -1,16 +1,15 @@
 ; A116779: Number of permutations of length n which avoid the patterns 2143, 2341, 3214.
-; Submitted by Jamie Morken(s4)
+; Submitted by Simon Strandgaard
 ; 1,2,6,21,72,237,761,2415,7626,24034,75689,238298,750179,2361533,7433917,23401274,73664906,231889749,729965584,2297858029,7233425149,22770092131,71677951146,225634953382,710276052265,2235877300106
 
-mov $3,1
+mov $1,1
 lpb $0
   sub $0,1
-  add $1,$3
-  add $2,2
-  add $4,$1
-  sub $3,1
+  add $3,1
+  add $4,$3
+  add $1,$4
+  add $2,$4
   add $3,$2
-  add $3,$4
+  add $2,2
 lpe
-mov $0,$4
-add $0,1
+mov $0,$1

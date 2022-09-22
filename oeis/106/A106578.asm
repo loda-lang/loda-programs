@@ -9,7 +9,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,46098 ; Numbers n such that central binomial coefficient C(n, floor[n/2]) is squarefree.
+  seq $0,46098 ; Numbers n such that central binomial coefficient C(n, floor(n/2)) is squarefree.
   mov $2,$3
   mul $2,$0
   add $1,$2
