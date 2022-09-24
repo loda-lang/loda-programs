@@ -1,0 +1,17 @@
+; A266910: Number of size 2 subsets of S_n that generate a transitive subgroup of S_n.
+; Submitted by Science United
+; 1,12,210,5520,206760,10473120,688821840,57039171840,5805880778880,712594633766400,103804864923513600,17709509301413529600,3498328696524626764800,792308057159314683187200,203965258080479292004608000,59229266937652347633377280000,19270409372174365076286590976000
+
+add $0,1
+mov $1,$0
+add $0,1
+seq $0,233824 ; A recurrent sequence in Panaitopol's formula for pi(x), where pi(x) is the number of primes <= x.
+sub $0,1
+lpb $1
+  mul $0,$1
+  sub $1,1
+lpe
+mul $0,2
+sub $0,4
+div $0,4
+add $0,1
