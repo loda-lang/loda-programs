@@ -1,18 +1,16 @@
 ; A116819: Number of permutations of length n which avoid the patterns 2431, 4123, 4231.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,2,6,21,76,274,978,3463,12201,42869,150415,527426,1848905,6480722,22715293,79617891,279063942,978133274,3428414441,12016810218,42119714480,147632440224,517461749617,1813738775801,6357278456431
 
+mov $3,1
+mov $4,1
 lpb $0
   sub $0,1
-  mov $3,$1
-  sub $3,$4
-  sub $3,1
   mul $1,3
-  add $1,$5
-  sub $2,$3
-  add $4,$1
-  add $4,$2
-  add $5,$2
+  add $1,$2
+  add $2,$4
+  add $3,$4
+  add $4,$3
+  add $3,$1
 lpe
-mov $0,$4
-add $0,1
+mov $0,$3

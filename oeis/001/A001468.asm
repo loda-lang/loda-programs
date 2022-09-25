@@ -1,21 +1,11 @@
 ; A001468: There are a(n) 2's between successive 1's.
-; Submitted by ML1
+; Submitted by [AF>EDLS] Jakez Sulli
 ; 1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1
 
-mov $4,$0
-mov $2,2
-lpb $2
-  sub $2,1
-  mov $0,$4
-  add $0,$2
-  trn $0,1
-  seq $0,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
-  mov $1,$2
-  mul $1,$0
-  add $3,$1
-lpe
-min $4,1
-mul $4,$0
-mov $0,$3
-sub $0,$4
-add $0,1
+mov $1,$0
+trn $0,1
+seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+min $1,1
+add $1,1
+mul $0,$1
+div $0,2

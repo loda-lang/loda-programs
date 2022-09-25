@@ -1,33 +1,25 @@
 ; A135874: Multiply the positive divisors of n in order (starting at 1). a(n) is the smallest such partial product that is >= n.
+; Submitted by Simon Strandgaard
 ; 1,2,3,8,5,6,7,8,27,10,11,24,13,14,15,64,17,36,19,40,21,22,23,24,125,26,27,56,29,30,31,64,33,34,35,144,37,38,39,40,41,252,43,88,135,46,47,144,343,100,51,104,53,324,55,56,57,58,59,120,61,62,189,64,65,396,67,136,69,70,71,144,73,74,225,152,77,468,79,320,729,82,83,144,85,86,87,704,89,180,91,184,93,94,95,144,97,196,297,400
 
-add $0,1
-mov $1,1
-mov $2,2
-mov $4,$0
-mov $3,$0
-lpb $3
-  mov $5,$4
-  sub $5,$1
-  lpb $5
-    add $6,1
-    mov $7,$0
-    mod $7,$2
-    cmp $7,0
-    div $0,$2
-    sub $5,$7
+mov $1,2
+add $1,$0
+mov $2,1
+mov $5,2
+lpb $0
+  mov $3,$2
+  mul $3,$0
+  lpb $3
+    add $2,1
+    mov $4,$1
+    mod $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
   lpe
-  cmp $6,0
-  cmp $6,0
-  mov $7,$2
-  pow $7,$6
-  mov $0,$4
-  mul $1,$7
   add $2,1
-  div $6,2
-  mov $7,$4
-  cmp $7,1
-  cmp $7,0
-  sub $3,$7
+  mul $5,$2
+  div $0,$2
 lpe
-mov $0,$1
+mov $0,$5
+div $0,2

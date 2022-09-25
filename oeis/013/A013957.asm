@@ -18,15 +18,9 @@ lpb $0
   mov $5,1
   lpb $0
     dif $0,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $6,$2
+    pow $6,9
+    mul $5,$6
     add $5,1
   lpe
   mul $1,$5

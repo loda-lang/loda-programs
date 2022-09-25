@@ -18,9 +18,8 @@ lpb $0
     dif $0,$2
     add $6,1
   lpe
-  mov $5,6
+  mov $5,8
   add $5,$6
-  add $5,2
   bin $5,$6
   mul $1,$5
   div $6,-51

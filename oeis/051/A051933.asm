@@ -5,7 +5,7 @@
 mov $2,$0
 seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 mov $4,1
-seq $0,25581 ; Triangle T(n, k) = n-k, 0 <= k <= n.
+seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 add $0,$2
 mov $5,$0
 min $0,$2

@@ -5,8 +5,8 @@
 add $0,1
 mov $1,$0
 lpb $0
+  mov $0,1
   seq $1,81688 ; 0 followed by A030124 - 1.
   add $1,1
-  mov $0,1
 lpe
 mov $0,$1

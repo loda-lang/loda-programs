@@ -9,7 +9,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $5,$4
-    seq $5,5
+    seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
     add $1,$5
     trn $4,$0
   lpe

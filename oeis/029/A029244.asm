@@ -6,8 +6,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,25826 ; Expansion of 1/((1-x^2)(1-x^10)(1-x^11)).
-  sub $0,2
+  seq $2,25827 ; Expansion of 1/((1-x^2)(1-x^11)(1-x^12)).
   trn $0,10
   add $1,$2
 lpe

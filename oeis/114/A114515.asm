@@ -5,15 +5,15 @@
 add $0,2
 lpb $0
   mov $2,$0
+  sub $2,3
   sub $0,2
   add $2,$4
   add $2,$0
-  sub $2,3
   bin $2,$0
   mov $3,$4
   mul $3,$2
   add $4,2
-  add $5,$3
+  add $1,$3
 lpe
-mov $0,$5
+mov $0,$1
 div $0,2

@@ -1,4 +1,4 @@
-; A116445: Triangle, row sums = Fibonacci numbers convolved with themselves.
+; A116445: Array read by antidiagonals: the binomial transform of the sequence (1,2,..n,0,0,0..) in row n.
 ; Submitted by GolfSierra
 ; 1,1,1,1,3,1,1,3,5,1,1,3,8,7,1,1,3,8,16,9,1,1,3,8,20,27,11,1,1,3,8,20,43,41,13,1,1,3,8,20,48,81,58,15,1,1,3,8,20,48,106,138,78,17,1,1,3,8,20,48,112,213,218,101,19,1
 

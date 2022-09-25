@@ -8,14 +8,13 @@ mov $4,$0
 add $0,1
 lpb $0
   sub $0,2
-  mov $2,$4
-  gcd $2,$1
-  mul $2,2
-  trn $2,$1
-  mov $3,$1
+  mov $3,$4
+  mod $3,$1
+  cmp $3,0
+  mul $3,$1
   pow $3,6
-  mul $3,$2
-  add $5,$3
+  mul $3,$1
   add $1,2
+  add $2,$3
 lpe
-mov $0,$5
+mov $0,$2

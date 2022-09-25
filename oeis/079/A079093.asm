@@ -6,5 +6,4 @@ mov $1,$0
 seq $1,79079 ; a(n) = (prime(n)+1)*(prime(n+1)+1)/4.
 add $0,1
 seq $0,99788 ; a(n) = Product_{i=1..2n} prime(i).
-gcd $1,$0
-mov $0,$1
+gcd $0,$1

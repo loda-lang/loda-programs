@@ -4,7 +4,9 @@
 
 mov $6,2
 mov $1,-1
-mov $2,332202
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   mov $3,$6
   dif $3,2

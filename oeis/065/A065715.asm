@@ -8,8 +8,7 @@ pow $0,$1
 lpb $0
   mov $2,$0
   mod $2,10
-  bin $2,2
-  cmp $2,6
+  cmp $2,4
   div $0,10
   add $3,$2
 lpe

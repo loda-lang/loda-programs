@@ -1,22 +1,7 @@
 ; A286044: {011->0}-transform of the Thue-Morse word A010060.
-; Submitted by Stony666
+; Submitted by [AF>Libristes] nico8313
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0
 
-mov $2,2
-add $0,2
-lpb $0
-  sub $0,1
-  add $4,$3
-  dif $1,$3
-  sub $1,$2
-  div $1,2
-  sub $1,1
-  bin $3,$2
-  add $3,$1
-  gcd $3,4
-  mul $2,$3
-  div $3,2
-lpe
-sub $4,1
-mov $0,$4
+seq $0,3159 ; Numbers n whose binary representation ends in an even number of zeros.
+sub $0,1
 mod $0,2

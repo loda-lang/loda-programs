@@ -3,7 +3,8 @@
 
 mov $1,$0
 mov $3,2
-mov $2,2110
+mov $2,$0
+add $2,4
 lpb $2
   max $0,0
   seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
