@@ -16,14 +16,13 @@ lpb $0
     add $9,$5
     mov $7,$4
     seq $7,300786 ; L.g.f.: log(Product_{k>=1} (1 + k*x^k)) = Sum_{n>=1} a(n)*x^n/n.
-    mul $7,2
     mul $7,$$9
     add $5,1
     add $6,$7
   lpe
   mov $9,10
   add $9,$2
-  mul $6,12
+  mul $6,24
   div $6,$2
   mul $6,-1
   mov $3,$6

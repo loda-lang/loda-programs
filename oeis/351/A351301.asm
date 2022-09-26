@@ -16,13 +16,11 @@ lpb $0
     sub $3,$4
   lpe
   mov $5,1
-  mov $6,2
+  div $6,2
   lpb $0
     dif $0,$2
-    div $4,2
-    add $4,1
+    gcd $4,1
     sub $4,$6
-    pow $4,2
     mov $7,$2
     pow $7,6
     mul $5,$7

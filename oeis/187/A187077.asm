@@ -1,19 +1,15 @@
 ; A187077: Number of row-convex polyplets with n cells.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard
 ; 1,4,18,83,385,1788,8305,38575,179170,832189,3865253,17952864,83385309,387298083,1798875698,8355202169,38807241321,180247221864,837190686169,3888482927823,18060759310562,83886449530197,389625723579965
 
-mov $1,3
-add $0,1
+mov $3,1
 lpb $0
   sub $0,1
-  add $1,$4
+  add $1,$2
+  add $2,$4
   add $4,$3
-  sub $4,$2
-  add $2,$1
-  sub $3,$2
-  mul $1,2
-  sub $2,$1
-  add $4,$1
+  add $3,$4
+  mul $3,2
+  add $3,$1
 lpe
-mov $0,$1
-div $0,6
+mov $0,$3

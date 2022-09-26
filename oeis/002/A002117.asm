@@ -17,9 +17,9 @@ lpb $3
   add $2,4
   mul $2,-1
   mul $2,$5
-  mul $1,$3
-  mul $1,$3
-  mul $1,$3
+  mov $6,$3
+  pow $6,3
+  mul $1,$6
   add $1,$2
   div $1,$5
   div $1,2
