@@ -7,8 +7,8 @@ lpb $2
   mov $2,$0
 lpe
 lpb $2
-  mov $1,2
   mov $2,1
+  mov $1,2
 lpe
 trn $0,2
 seq $0,8937 ; a(n) = Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.

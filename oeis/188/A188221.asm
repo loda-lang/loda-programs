@@ -1,10 +1,7 @@
 ; A188221: [nr+kr]-[nr]-[kr], where r=sqrt(5), k=1, [ ]=floor.
-; Submitted by misaki@med
+; Submitted by [AF>Occitania]franky82
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0
 
 mul $0,2
 seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-sub $0,1
-mov $1,$0
-cmp $1,1
-mov $0,$1
+cmp $0,2

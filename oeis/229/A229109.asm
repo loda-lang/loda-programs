@@ -1,7 +1,24 @@
 ; A229109: a(n) = n plus the number of its distinct prime factors.
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 1,3,4,5,6,8,8,9,10,12,12,14,14,16,17,17,18,20,20,22,23,24,24,26,26,28,28,30,30,33,32,33,35,36,37,38,38,40,41,42,42,45,44,46,47,48,48,50,50,52,53,54,54,56,57,58,59,60,60,63,62,64,65,65,67,69,68,70,71,73,72,74,74,76,77,78,79,81,80,82,82,84,84,87,87,88,89,90,90,93,93,94,95,96,97,98,98,100,101,102
 
+add $0,1
 mov $1,$0
-seq $1,83399 ; Number of divisors of n that are not divisors of other divisors of n.
-add $0,$1
+mov $2,2
+lpb $0
+  mov $3,$0
+  div $3,3
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
+  div $0,$2
+  lpb $0
+    dif $0,$2
+  lpe
+  add $1,1
+lpe
+mov $0,$1
+sub $0,1

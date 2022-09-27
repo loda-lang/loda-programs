@@ -5,4 +5,4 @@
 seq $0,214971 ; Integers k for which the base-phi representation of k includes 1.
 add $0,2
 div $0,5
-seq $0,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+seq $0,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).

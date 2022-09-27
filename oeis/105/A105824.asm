@@ -1,6 +1,8 @@
 ; A105824: a(n) = sigma(n) mod 4.
-; Submitted by Jamie Morken(w3)
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,0,3,2,0,0,3,1,2,0,0,2,0,0,3,2,3,0,2,0,0,0,0,3,2,0,0,2,0,0,3,0,2,0,3,2,0,0,2,2,0,0,0,2,0,0,0,1,1,0,2,2,0,0,0,0,2,0,0,2,0,0,3,0,0,0,2,0,0,0,3,2,2,0,0,0,0,0,2,1,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,3,0,1
 
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-mod $0,4
+seq $0,46897 ; Sum of divisors of n that are not divisible by 4.
+lpb $0
+  mod $0,4
+lpe

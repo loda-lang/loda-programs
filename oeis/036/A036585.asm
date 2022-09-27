@@ -1,6 +1,17 @@
 ; A036585: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-; Submitted by Simon Strandgaard
+; Submitted by Jim1348
 ; 3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,3,1,2,3,1,3,2,1,2,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,3,1,2,3,1,3,2,1,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,2,3,2,1,3
 
-seq $0,29883 ; First differences of Thue-Morse sequence A001285.
+mov $1,1
+mov $2,1
+lpb $0
+  mul $2,-1
+  lpb $0
+    dif $0,2
+    mul $1,0
+  lpe
+  div $0,2
+  add $2,$1
+lpe
+add $0,$2
 add $0,2

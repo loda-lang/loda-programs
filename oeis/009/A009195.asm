@@ -1,9 +1,8 @@
 ; A009195: a(n) = gcd(n, phi(n)).
-; Submitted by nenym
+; Submitted by [AF>Libristes]Maeda
 ; 1,1,1,2,1,2,1,4,3,2,1,4,1,2,1,8,1,6,1,4,3,2,1,8,5,2,9,4,1,2,1,16,1,2,1,12,1,2,3,8,1,6,1,4,3,2,1,16,7,10,1,4,1,18,5,8,3,2,1,4,1,2,9,32,1,2,1,4,1,2,1,24,1,2,5,4,1,6,1,16,27,2,1,12,1,2,1,8,1,6,1,4,3,2,1,32,1,14,3,20
 
-mov $1,1
-add $1,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-gcd $1,$0
-mov $0,$1
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+add $0,1
+gcd $0,$1
