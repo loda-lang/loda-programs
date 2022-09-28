@@ -1,5 +1,5 @@
 ; A117535: Number of ways of writing n as a sum of powers of 3, each power being used at most 4 times.
-; Submitted by ChelseaOilman
+; Submitted by damotbe
 ; 1,1,1,2,2,1,2,2,1,3,3,2,4,4,2,3,3,1,3,3,2,4,4,2,3,3,1,4,4,3,6,6,3,5,5,2,6,6,4,8,8,4,6,6,2,5,5,3,6,6,3,4,4,1,4,4,3,6,6,3,5,5,2,6,6,4,8,8,4,6,6,2,5,5,3,6,6,3,4,4,1,5,5,4,8,8,4,7,7,3,9,9,6,12,12,6,9,9,3,8
 
 mov $2,1
@@ -9,7 +9,6 @@ lpb $0
   sub $0,1
   mov $5,0
   mov $6,0
-  mov $4,$2
   add $4,6
   lpb $4
     sub $4,1
@@ -29,6 +28,7 @@ lpb $0
   add $9,$2
   mov $$9,$3
   add $2,1
+  add $4,$2
   mov $8,$3
 lpe
 mov $0,$8

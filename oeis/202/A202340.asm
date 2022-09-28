@@ -1,16 +1,20 @@
 ; A202340: Number of times n occurs in Hofstadter H-sequence A005374.
-; Submitted by Aurum
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,1,2,2,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,1
 
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $3,$1
-  seq $3,48730 ; Differences between A008589 (multiples of 7) and A048727, a(n) = ((n*7)-Xmult(n,7)).
-  cmp $3,0
-  sub $0,$3
+mov $2,2
+lpb $0
+  sub $0,1
+  sub $1,$2
   add $1,1
-  sub $2,$0
+  div $1,4
+  bin $3,$2
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
+  dif $1,$3
+  bin $3,2
 lpe
-sub $0,$3
+mov $0,$3
 add $0,1

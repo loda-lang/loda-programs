@@ -182,6 +182,7 @@ A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
+A102781: Number of positive even numbers less than the n-th prime.
 A104638: Number of odd digits in n-th prime.
 A105825: a(n) = sigma(n) (mod 5).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
@@ -260,6 +261,7 @@ A146116: Bell numbers (A000110) read mod 26.
 A146121: Bell numbers (A000110) read mod 31.
 A151549: a(n) = (A151548(n)-1)/2.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
+A160594: Indices of primes congruent to 1 modulo 12.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
 A166010: a(n) = prime(n)^2-4.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
@@ -309,6 +311,8 @@ A274536: a(n) = 6 * sigma(n).
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).
+A299473: a(n) = 3*p(n), where p(n) is the number of partitions of n.
+A299474: a(n) = 4*p(n), where p(n) is the number of partitions of n.
 A299919: Motzkin numbers (A001006) mod 4.
 A306695: a(n) = gcd(n, psi(n)).
 A319089: a(n) = tau(n)^3, where tau is A000005.

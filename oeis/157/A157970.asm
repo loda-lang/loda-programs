@@ -1,8 +1,9 @@
 ; A157970: Evil twin locations: first members of pairs of consecutive evil numbers.
-; Submitted by Athlici
+; Submitted by fpar
 ; 5,9,17,23,29,33,39,45,53,57,65,71,77,85,89,95,101,105,113,119,125,129,135,141,149,153,159,165,169,177,183,189,197,201,209,215,221,225,231,237,245,249,257,263,269,277,281,287,293,297,305,311,317,325,329,337,343,349,353,359,365,373,377,383,389,393,401,407,413,417,423,429,437,441,449,455,461,469,473,479,485,489,497,503,509,513,519,525,533,537,543,549,553,561,567,573,581,585,593,599
 
 mul $0,2
 add $0,1
-seq $0,36554 ; Numbers whose binary representation ends in an odd number of zeros.
-sub $0,1
+seq $0,121539 ; Numbers whose binary expansion ends in an even number of 1's.
+mul $0,2
+add $0,1

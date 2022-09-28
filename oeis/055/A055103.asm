@@ -19,13 +19,12 @@ lpb $0
     add $9,$5
     mul $7,$$9
     add $5,1
-    add $6,$7
+    sub $6,$7
   lpe
   div $6,$2
   mov $9,10
   add $9,$2
   mov $3,$6
-  div $3,-1
   mov $$9,$3
   add $2,1
 lpe

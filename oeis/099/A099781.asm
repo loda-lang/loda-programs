@@ -5,19 +5,15 @@
 add $0,1
 lpb $0
   sub $0,1
-  mov $6,2
-  pow $6,$0
+  mov $3,2
+  pow $3,$0
+  pow $3,2
   add $2,$0
   bin $2,$0
-  mul $2,$6
-  mov $3,$4
-  bin $3,$1
+  mul $2,$3
+  add $4,$2
   trn $0,2
   add $1,2
-  mul $3,$2
-  mul $3,$6
-  add $4,2
-  add $5,$3
   mov $2,$1
 lpe
-mov $0,$5
+mov $0,$4

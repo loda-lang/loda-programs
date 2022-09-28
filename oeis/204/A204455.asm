@@ -1,24 +1,14 @@
 ; A204455: Squarefree product of all odd primes dividing n, and 1 if n is a power of 2: A099985/2.
-; Submitted by gingavasalata
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,3,1,5,3,7,1,3,5,11,3,13,7,15,1,17,3,19,5,21,11,23,3,5,13,3,7,29,15,31,1,33,17,35,3,37,19,39,5,41,21,43,11,15,23,47,3,7,5,51,13,53,3,55,7,57,29,59,15,61,31,21,1,65,33,67,17,69,35,71,3,73,37,15,19,77,39,79,5,3,41,83,21,85,43,87,11,89,15,91,23,93,47,95,3,97,7,33,5
 
-mov $1,1
-mov $2,3
-add $0,1
-lpb $0
-  mov $3,$0
-  sub $3,4
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,2
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-  lpe
-  mul $1,$2
-lpe
+seq $0,99985 ; a(n) = rad(2n), where rad = A007947.
+mov $1,$0
+mod $0,4
+mul $0,2
+add $1,1
+add $1,$0
 mov $0,$1
+sub $0,7
+div $0,2
+add $0,1

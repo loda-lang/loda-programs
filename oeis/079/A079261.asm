@@ -1,9 +1,10 @@
 ; A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
-; Submitted by Simon Strandgaard
+; Submitted by damotbe
 ; 0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,171228 ; n^(p-n) where p is smallest prime > n.
-max $1,$0
-mod $1,4
+mov $1,$0
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 div $1,2
+mod $1,2
+mul $1,$0
 mov $0,$1

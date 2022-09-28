@@ -1,7 +1,9 @@
 ; A248056: Positions of 0,0 in the Thue-Morse sequence (A010060).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by fpar
 ; 6,10,18,24,30,34,40,46,54,58,66,72,78,86,90,96,102,106,114,120,126,130,136,142,150,154,160,166,170,178,184,190,198,202,210,216,222,226,232,238,246,250,258,264,270,278,282,288,294,298,306,312,318,326,330,338,344,350,354,360,366,374,378,384,390,394,402,408,414,418,424,430,438,442,450,456,462,470,474,480,486,490,498,504,510,514,520,526,534,538,544,550,554,562,568,574,582,586,594,600
 
 mul $0,2
 add $0,1
-seq $0,36554 ; Numbers whose binary representation ends in an odd number of zeros.
+seq $0,121539 ; Numbers whose binary expansion ends in an even number of 1's.
+add $0,1
+mul $0,2

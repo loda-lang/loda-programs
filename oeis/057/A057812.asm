@@ -1,21 +1,21 @@
 ; A057812: pi(n) is odd.
-; Submitted by Jamie Morken(w2)
+; Submitted by Jim1348
 ; 2,5,6,11,12,17,18,23,24,25,26,27,28,31,32,33,34,35,36,41,42,47,48,49,50,51,52,59,60,67,68,69,70,73,74,75,76,77,78,83,84,85,86,87,88,97,98,99,100,103,104,105,106,109,110,111,112,127,128,129,130,137,138,149,150,157,158,159,160,161,162,167,168,169,170,171,172,179,180,191,192,197,198,211,212,213,214,215,216,217,218,219,220,221,222,227,228,233,234,235
 
-mov $1,1
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,71986 ; Parity of the prime-counting function pi(n).
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,96457 ; If n is prime replace n with the next prime.
 lpe
-mov $0,$1
+mov $2,80
+seq $0,48700 ; Binary palindromes of odd length (written in base 10).
 add $0,1
+lpb $0
+  sub $0,1
+  add $2,$1
+  div $1,$2
+  mul $2,28
+lpe
+mov $0,$2
+div $0,784
+sub $0,80

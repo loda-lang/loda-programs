@@ -1,9 +1,8 @@
 ; A288213: Fixed point of the mapping 00->0010, 1->011, starting with 00.
-; Submitted by Bigos2
+; Submitted by damotbe
 ; 0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0
 
-mul $0,2
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
-div $0,4
-add $0,1
+mov $1,$0
+seq $0,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+add $0,$1
 mod $0,2
