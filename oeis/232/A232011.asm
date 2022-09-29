@@ -1,7 +1,27 @@
 ; A232011: Numbers n such that (3n)^2 + 2 is prime.
-; Submitted by Christian Krause
+; Submitted by Jim1348
 ; 1,3,5,7,11,13,15,19,27,33,35,37,39,41,49,57,73,75,79,81,83,85,91,99,101,103,107,115,117,121,123,125,129,139,141,143,147,149,151,159,167,171,183,185,187,191,201,203,217,225,227,233,237,251,259,269,273,279,289,295,299,301,303,311,319,323,327,337,345,357,371,377,381,393,403,405,407,411,413,415,437,443,457,475,479,499,503,513,521,533,537,539,541,545,555,559,561,579,583,601
 
-seq $0,129389 ; Numbers n such that the mean of 5 consecutive squares starting with n^2 is prime.
-div $0,3
+mov $5,1
+mov $1,1
+mov $2,$0
+add $2,6
+pow $2,3
+lpb $2
+  mov $3,$6
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,8
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,18
+  add $5,$1
+  add $1,10
+  mov $6,$5
+lpe
+mov $0,$1
+div $0,36
+mul $0,2
 add $0,1

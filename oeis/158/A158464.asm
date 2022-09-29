@@ -1,5 +1,5 @@
 ; A158464: Number of distinct squares in row n of Pascal's triangle.
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,1,2,1,1,1,1,3,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,3,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 mov $2,1
@@ -26,5 +26,5 @@ lpb $0
   mov $$9,$3
   add $2,1
 lpe
-mov $0,$3
-add $0,1
+add $6,1
+mov $0,$6

@@ -5,12 +5,12 @@
 mov $3,$0
 seq $0,3451 ; Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals up to rotation.
 mul $0,2
-mov $4,$3
-mul $4,$3
-mov $2,$4
+mov $1,$3
+mul $1,$3
+mov $2,$1
 mul $2,2
+sub $1,1
+mul $1,$3
 add $0,$2
-sub $4,1
-mul $4,$3
-add $0,$4
+add $0,$1
 div $0,4

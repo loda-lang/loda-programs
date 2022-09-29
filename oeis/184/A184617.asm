@@ -1,6 +1,20 @@
 ; A184617: With nonadjacent forms: A184615(n) + A184616(n).
-; Submitted by Opolis
+; Submitted by [AF>WildWildWest]Sebastien
 ; 0,1,2,5,4,5,10,9,8,9,10,21,20,21,18,17,16,17,18,21,20,21,42,41,40,41,42,37,36,37,34,33,32,33,34,37,36,37,42,41,40,41,42,85,84,85,82,81,80,81,82,85,84,85,74,73,72,73,74,69,68,69,66,65,64,65,66,69,68,69,74,73,72,73,74,85,84,85,82,81,80,81,82,85,84,85,170,169,168,169,170,165,164,165,162,161,160,161,162,165
 
-seq $0,178729 ; a(n) = n XOR 3n, where XOR is bitwise XOR.
+mov $4,1
+mov $2,$0
+mul $2,2
+seq $2,6368 ; The "amusical permutation" of the nonnegative numbers: a(2n)=3n, a(4n+1)=3n+1, a(4n-1)=3n-1.
+lpb $2
+  mov $3,$0
+  add $3,$2
+  mod $3,2
+  mul $3,$4
+  div $0,2
+  add $1,$3
+  div $2,2
+  mul $4,2
+lpe
+mov $0,$1
 div $0,2

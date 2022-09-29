@@ -8,7 +8,6 @@ lpb $0
   mov $2,$4
   sub $2,$6
   bin $2,$0
-  mul $2,2
   sub $4,$0
   mov $3,$4
   bin $3,$1
@@ -22,4 +21,3 @@ lpb $0
   add $6,1
 lpe
 mov $0,$5
-div $0,2

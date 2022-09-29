@@ -1,4 +1,4 @@
-; A035614: Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n.
+; A035614: Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
 ; Submitted by eclipse99
 ; 0,1,2,0,3,0,1,4,0,1,2,0,5,0,1,2,0,3,0,1,6,0,1,2,0,3,0,1,4,0,1,2,0,7,0,1,2,0,3,0,1,4,0,1,2,0,5,0,1,2,0,3,0,1,8,0,1,2,0,3,0,1,4,0,1,2,0,5,0,1,2,0,3,0,1,6,0,1,2,0,3,0,1,4,0,1,2,0,9,0,1,2,0,3,0,1,4,0,1,2
 

@@ -1,24 +1,15 @@
 ; A278755: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 65", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard
 ; 1,0,3,8,7,48,15,224,31,960,63,3968,127,16128,255,65024,511,261120,1023,1046528,2047,4190208,4095,16769024,8191,67092480,16383,268402688,32767,1073676288,65535,4294836224,131071,17179607040,262143,68718952448,524287,274876858368,1048575,1099509530624,2097151,4398042316800,4194303,17592177655808,8388607,70368727400448,16777215,281474943156224,33554431,1125899839733760,67108863,4503599493152768,134217727,18014398241046528,268435455,72057593501057024,536870911,288230375077969920,1073741823
 
-mov $1,1
-mov $2,1
-lpb $0
-  sub $1,1
-  mov $3,$2
-  lpb $3
-    add $5,$2
-    mov $1,1
-    mov $2,$5
-    gcd $4,$5
-    cmp $4,1
-    cmp $4,0
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
-  mov $4,6
-lpe
-mov $0,$1
+add $0,1
+mov $2,2
+gcd $2,$0
+add $0,1
+div $0,2
+mov $1,2
+pow $1,$0
+sub $1,$2
+pow $2,$0
+mul $2,$1
+mov $0,$2

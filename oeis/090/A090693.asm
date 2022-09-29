@@ -1,24 +1,17 @@
 ; A090693: Positive numbers n such that n^2 - 2n + 2 is a prime.
-; Submitted by PDW
+; Submitted by Science United
 ; 2,3,5,7,11,15,17,21,25,27,37,41,55,57,67,75,85,91,95,111,117,121,125,127,131,135,147,151,157,161,171,177,181,185,205,207,211,225,231,237,241,251,257,261,265,271,281,285,301,307,315,327,341,351,385,387,397,401,407,421,431,437,441,445,465,467,471,475,491,497,537,545,557,571,577,585,595,635,637,645,647,655,675,681,687,691,697,701,705,715,717,741,751,761,765,781,785,817,827,861
 
-sub $0,3
-mov $2,8
-mov $3,$0
-pow $3,5
-lpb $3
-  pow $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,2
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
+mov $1,2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  mul $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,2
+  sub $2,$0
 lpe
-sub $4,$0
-mov $0,$2
-mul $0,2
-div $0,4
-sub $0,$4
-mul $0,2
-sub $0,1
-max $0,2
+add $1,$0
+mov $0,$1

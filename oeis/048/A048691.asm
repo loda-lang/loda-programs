@@ -1,24 +1,10 @@
 ; A048691: a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
-; Submitted by damotbe
+; Submitted by shiva
 ; 1,3,3,5,3,9,3,7,5,9,3,15,3,9,9,9,3,15,3,15,9,9,3,21,5,9,7,15,3,27,3,11,9,9,9,25,3,9,9,21,3,27,3,15,15,9,3,27,5,15,9,15,3,21,9,21,9,9,3,45,3,9,15,13,9,27,3,15,9,27,3,35,3,9,15,15,9,27,3,27,9,9,3,45,9,9,9,21,3,45,9,15,9,9,9,33,3,15,15,25
 
-mov $1,1
-mov $2,2
-add $0,1
-pow $0,2
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    add $5,1
-  lpe
-  mul $1,$5
-lpe
+mov $1,$0
+seq $1,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
 mov $0,$1
+div $0,3
+mul $0,2
+add $0,1

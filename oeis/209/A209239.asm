@@ -1,19 +1,20 @@
 ; A209239: Number of length n words on {0,1,2} with no four consecutive 0's.
-; Submitted by Christian Krause
+; Submitted by [AF] Hydrosaure
 ; 1,3,9,27,80,238,708,2106,6264,18632,55420,164844,490320,1458432,4338032,12903256,38380080,114159600,339561936,1010009744,3004222720,8935908000,26579404800,79059090528,235157252096,699463310848
 
-mov $2,1
-add $0,2
+mov $1,1
+mov $3,2
+mov $5,3
 lpb $0
   sub $0,1
-  add $5,$1
-  mov $1,$3
-  sub $3,$4
   mov $4,$2
-  mul $5,2
-  add $5,$2
-  mov $2,$3
+  add $4,$3
+  mul $4,2
+  mov $2,$1
+  add $5,$4
+  mov $1,$3
   mov $3,$5
+  mov $5,$4
 lpe
-mov $0,$3
-div $0,2
+add $1,$2
+mov $0,$1
