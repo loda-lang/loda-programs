@@ -1,25 +1,18 @@
 ; A089593: Numbers k such that k^2 + 2k + 2 is prime.
-; Submitted by ChelseaOilman
+; Submitted by [AF>Libristes]Maeda
 ; 0,1,3,5,9,13,15,19,23,25,35,39,53,55,65,73,83,89,93,109,115,119,123,125,129,133,145,149,155,159,169,175,179,183,203,205,209,223,229,235,239,249,255,259,263,269,279,283,299,305,313,325,339,349,383,385,395,399,405,419,429,435,439,443,463,465,469,473,489,495,535,543,555,569,575,583,593,633,635,643,645,653,673,679,685,689,695,699,703,713,715,739,749,759,763,779,783,815,825,859
 
-sub $0,3
-mov $2,8
-mov $3,$0
-pow $3,5
-lpb $3
-  pow $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,2
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
+mov $1,2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  mul $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,2
+  sub $2,$0
 lpe
-sub $4,$0
-mov $0,$2
-mul $0,2
-div $0,4
-sub $0,$4
-mul $0,2
-sub $0,1
-max $0,2
+add $1,$0
+mov $0,$1
 sub $0,2

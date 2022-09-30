@@ -3,9 +3,9 @@
 
 lpb $0
   mov $2,$0
-  sub $0,1
   seq $2,253943 ; a(n) = 3*binomial(n+1,6).
   pow $2,2
+  sub $0,1
   add $1,$2
 lpe
 div $1,9

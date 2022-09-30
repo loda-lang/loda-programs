@@ -1,27 +1,23 @@
 ; A176686: Numbers n such that n^2-1 are products of 3 distinct primes.
-; Submitted by Sphynx
+; Submitted by misaki@med
 ; 14,16,20,22,32,36,38,40,52,54,58,66,68,70,78,84,88,90,96,110,112,114,128,130,132,140,156,158,162,178,182,200,210,212,222,234,238,250,252,258,264,268,292,294,306,308,310,318,330,336,338,354,366,372,378,380,382,390,396,402,408,410,418,438,444,448,450,468,480,486,488,490,492,498,500,502,504,510,520,542,546,558,564,572,578,588,592,598,612,630,632,648,654,672,678,682,684,690,700,702
 
+mov $1,4
 mov $2,$0
-add $2,4
+add $2,15
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,90885 ; Sum of the squares of the exponents in the prime factorization of n.
-  cmp $3,3
+  pow $3,2
+  sub $3,2
+  seq $3,293227 ; a(n) is the number of proper divisors of n that are squarefree.
+  cmp $3,7
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,1
-  add $5,$4
-  add $1,1
-  add $1,$5
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$5
-sub $0,64
-div $0,2
-add $0,34
+mov $0,$1

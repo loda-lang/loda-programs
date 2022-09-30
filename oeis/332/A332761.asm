@@ -6,7 +6,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,72273 ; Index of powers of 2 that equal the number of noncongruent roots to the congruence x^2=k (mod n) for (k,n)=1 and assuming solvability.
+  seq $1,72273 ; Index of powers of 2 that equal the number of noncongruent roots to the congruence x^2 == k (mod n) for (k,n)=1 and assuming solvability.
   mov $2,1
   mul $0,0
 lpe

@@ -1,6 +1,11 @@
 ; A064722: a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-; Submitted by damotbe
+; Submitted by Mads Nissen
 ; 0,0,0,1,0,1,0,1,2,3,0,1,0,1,2,3,0,1,0,1,2,3,0,1,2,3,4,5,0,1,0,1,2,3,4,5,0,1,2,3,0,1,0,1,2,3,0,1,2,3,4,5,0,1,2,3,4,5,0,1,0,1,2,3,4,5,0,1,2,3,0,1,0,1,2,3,4,5,0,1,2,3,0,1,2,3,4,5,0,1,2,3,4,5,6,7,0,1,2,3
 
-seq $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
-sub $0,1
+lpb $0
+  add $1,1
+  mov $2,$0
+  seq $2,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  sub $0,$2
+lpe
+mov $0,$1

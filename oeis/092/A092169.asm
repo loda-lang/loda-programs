@@ -7,9 +7,9 @@ seq $0,92674 ; Derived from a(n)=binomial(n+1,2) - sum{i=1,n-1,a(i)*floor(n/i)} 
 mul $0,-4
 mov $2,$1
 mul $2,2
+pow $1,2
 add $0,$2
 div $0,2
-pow $1,2
 add $0,$2
 add $0,$1
 div $0,2

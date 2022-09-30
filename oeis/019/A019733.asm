@@ -5,9 +5,9 @@
 add $0,1
 mul $0,2
 seq $0,11545 ; Decimal expansion of Pi truncated to n places.
-mul $0,2
 mov $1,$0
-div $0,19
+mul $1,2
+div $0,11
 lpb $0
   div $2,$0
   add $2,1

@@ -1,6 +1,19 @@
 ; A245188: Trajectory of 1 under repeated applications of the morphism 0->12, 1->13, 2->20, 3->21.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,3,2,1,2,0,1,3,2,0,1,2,1,3,2,1,2,0,1,2,1,3,2,0,1,3,2,1,2,0,1,3,2,0,1,2,1,3,2,0,1,3,2,1,2,0,1,2,1,3,2,1,2,0,1,3,2,0,1,2,1,3,2,1,2,0,1,2,1,3,2,0,1,3,2,1,2,0,1,2,1,3,2,1,2,0,1,3,2,0,1,2,1,3,2,0,1,3,2,1
 
-seq $0,5681 ; A squarefree quaternary sequence.
-sub $0,1
+mov $1,1
+mov $2,1
+lpb $0
+  mul $2,-1
+  lpb $0
+    dif $0,2
+    mul $1,0
+  lpe
+  div $0,2
+  sub $2,7
+  add $2,$1
+lpe
+add $0,$2
+add $0,10
+mod $0,10
