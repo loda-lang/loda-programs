@@ -3,8 +3,8 @@
 
 sub $0,1
 dif $0,2
-mov $2,1
-add $2,$0
-mod $2,2
-trn $0,$2
+mov $1,1
+add $1,$0
+mod $1,2
+trn $0,$1
 add $0,1

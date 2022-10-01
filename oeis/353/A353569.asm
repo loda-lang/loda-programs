@@ -1,6 +1,10 @@
 ; A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
-; Submitted by Penguin
+; Submitted by damotbe
 ; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 
-seq $0,348030 ; a(n) = A003968(n) - n, where A003968 is multiplicative with a(p^e) = p*(p+1)^(e-1).
+mov $1,1
+add $1,$0
+seq $0,107078 ; Whether n has non-unitary prime divisors.
+mul $1,$0
+mov $0,$1
 mod $0,2

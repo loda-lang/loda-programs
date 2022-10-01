@@ -282,6 +282,7 @@ A175223: a(n) = prime(n) + 7.
 A175224: a(n) = prime(n) + 8.
 A175225: a(n) = prime(n) + 10.
 A175247: Primes (A000040) with noncomposite (A008578) subscripts.
+A175548: Binary weight of sigma(n).
 A176406: Odd semiprimes minus 2.
 A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent B_1.
 A177882: Trisection of A001317.

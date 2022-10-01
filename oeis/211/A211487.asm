@@ -1,14 +1,17 @@
 ; A211487: Characteristic sequence of numbers n having a primitive root modulo n.
-; Submitted by STE\/E
+; Submitted by damotbe
 ; 0,1,1,1,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0
 
-mov $1,$0
-lpb $1
-  mov $2,$1
-  seq $2,72273 ; Index of powers of 2 that equal the number of noncongruent roots to the congruence x^2 == k (mod n) for (k,n)=1 and assuming solvability.
-  pow $2,$1
-  mov $3,5
-  mov $1,$2
+mov $2,$0
+lpb $2
+  sub $2,$0
+  seq $0,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
+  div $0,3
+  lpb $0
+    sub $0,1
+    sub $2,2
+  lpe
+  mov $1,2
 lpe
-mov $0,$3
-div $0,5
+mov $0,$1
+div $0,2

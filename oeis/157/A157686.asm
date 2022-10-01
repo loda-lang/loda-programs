@@ -1,7 +1,6 @@
 ; A157686: a(n) = A157684(n) - A157685(n).
-; Submitted by amazing
+; Submitted by fpar
 ; 1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0
 
-add $0,1
-seq $0,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
+seq $0,78880 ; The sequence starting with 2 that equals its own run length sequence.
 sub $0,1

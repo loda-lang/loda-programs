@@ -5,6 +5,4 @@
 seq $0,11547 ; Decimal expansion of sqrt(2) truncated to n places.
 mul $0,2
 pow $0,2
-sub $0,4
 div $0,4
-add $0,1

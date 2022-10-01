@@ -1,8 +1,8 @@
 ; A335909: Parity of A323173: a(n) = A000035(A323173(n)).
-; Submitted by LeonsDev
+; Submitted by fpar
 ; 1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0
 
-seq $0,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
+seq $0,322865 ; a(n) = A000265(A122111(n)).
 sub $0,1
-seq $0,593 ; Sum of odd divisors of n.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mod $0,2

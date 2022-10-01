@@ -1,6 +1,22 @@
 ; A267366: Binary representation of the middle column of the "Rule 126" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Christian Krause
+; Submitted by [AF] Hydrosaure
 ; 1,11,110,1101,11010,110100,1101000,11010001,110100010,1101000100,11010001000,110100010000,1101000100000,11010001000000,110100010000000,1101000100000001,11010001000000010,110100010000000100,1101000100000001000,11010001000000010000,110100010000000100000,1101000100000001000000,11010001000000010000000,110100010000000100000000,1101000100000001000000000,11010001000000010000000000,110100010000000100000000000,1101000100000001000000000000,11010001000000010000000000000,110100010000000100000000000000
 
-seq $0,267367 ; Decimal representation of the middle column of the "Rule 126" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  add $0,1
+  add $3,2
+  mod $3,$0
+  mov $0,4
+  trn $0,$3
+  mov $5,$0
+  div $5,4
+  mul $1,10
+  add $1,$5
+lpe
+mov $0,$1

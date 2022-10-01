@@ -1,8 +1,5 @@
 ; A289001: Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-; Submitted by damotbe
+; Submitted by Olaf
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
-add $0,2
-seq $0,36693 ; Number of Gaussian integers z = a + bi satisfying n-1 < |z| <= n.
-div $0,4
-mod $0,2
+seq $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.

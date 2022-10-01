@@ -1,6 +1,15 @@
 ; A118824: 2-adic continued fraction of zero, where a(n) = -2 if n is odd, A006519(n/2) otherwise.
-; Submitted by Jon Maiga
+; Submitted by damotbe
 ; -2,1,-2,2,-2,1,-2,4,-2,1,-2,2,-2,1,-2,8,-2,1,-2,2,-2,1,-2,4,-2,1,-2,2,-2,1,-2,16,-2,1,-2,2,-2,1,-2,4,-2,1,-2,2,-2,1,-2,8,-2,1,-2,2,-2,1,-2,4,-2,1,-2,2,-2,1,-2,32,-2,1,-2,2,-2,1,-2,4,-2,1,-2,2,-2,1,-2,8,-2,1,-2,2,-2,1,-2,4,-2,1,-2,2,-2,1,-2,16,-2,1,-2,2
 
-seq $0,118821 ; 2-adic continued fraction of zero, where a(n) = 2 if n is odd, -A006519(n/2) otherwise.
-mul $0,-1
+mov $1,-4
+add $0,1
+lpb $0
+  mov $1,1
+  lpb $0
+    dif $0,2
+    mul $1,2
+  lpe
+lpe
+mov $0,$1
+div $0,2

@@ -1,9 +1,14 @@
 ; A171588: The Pell word: Fixed point of the morphism 0->001, 1->0.
-; Submitted by damotbe
+; Submitted by [AF>WildWildWest]Sebastien
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
 add $0,1
-seq $0,77770 ; Number of ordered pairs of integers (x,y) with n^2 < x^2 + y^2 < (n+1)^2; number of lattice points between circles of radii n and n+1.
-div $0,4
-sub $0,1
+lpb $0
+  mov $1,$0
+  seq $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
+  sub $1,$0
+  mod $0,$1
+lpe
+mov $0,$1
+add $0,1
 mod $0,2

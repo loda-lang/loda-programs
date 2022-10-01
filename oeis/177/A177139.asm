@@ -1,7 +1,25 @@
 ; A177139: Numbers n such that (3*n-4, 3*n-2) is a twin prime pair.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [AF>Amis des Lapins] Xe120
 ; 3,5,7,11,15,21,25,35,37,47,51,61,65,67,77,81,91,95,105,117,141,145,155,175,191,201,207,215,221,271,275,277,287,295,341,345,351,355,365,385,411,427,431,435,441,477,485,495,497,537,541,557,567,575,597,625,627,645,651,667,677,695,697,705,711,715,747,757,771,781,795,851,865,887,897,905,911,931,935,991,1001,1041,1057,1085,1087,1101,1111,1121,1125,1131,1155,1157,1177,1181,1187,1195,1225,1257,1275,1285
 
-seq $0,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+mov $2,$0
+add $2,8
+pow $2,3
+mov $5,4
+sub $0,1
+lpb $2
+  mov $3,$1
+  seq $3,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  add $5,6
+  mov $1,$5
+  mul $2,$4
+  sub $2,18
+lpe
+mov $0,$5
+div $0,6
 mul $0,2
-add $0,1
+add $0,3

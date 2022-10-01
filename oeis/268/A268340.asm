@@ -1,14 +1,8 @@
 ; A268340: Characteristic function of the prime powers p^k, k >= 2.
-; Submitted by vanos0512
+; Submitted by Ralfy
 ; 0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-lpb $0
-  add $0,$3
-  mov $2,$0
-  seq $2,87624 ; a(n)=0 if n is prime, A001221(n) otherwise.
-  mov $3,2
-  add $1,$2
-  sub $0,1
-  bin $0,$1
-lpe
+seq $0,73184 ; Number of cubefree divisors of n.
+mov $1,$0
+cmp $1,3
 mov $0,$1

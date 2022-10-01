@@ -1,5 +1,5 @@
 ; A100675: a(1) = 1; for n >= 1, a(n+1) = Sum_{k=1..n} gcd(k, a(n)).
-; Submitted by damotbe
+; Submitted by [AF] Hydrosaure
 ; 1,1,2,4,8,9,10,14,18,27,22,26,18,37,14,40,56,59,18,64,56,73,22,64,68,65,70,92,78,105,126,148,64,113,34,100,140,199,38,112,170,157,42,196,154,181,46,136,168,309,82,116,132,271,54,244,112,285,254,88,238,227,62,184,226,97,66,316,136,297,294,354,238,295,188,194,114,333,250,286,328,241,82,244,228,461,86,256,324,519,150,526,138,407,246,354,298,145,258,372
 
 mov $2,1
@@ -11,7 +11,7 @@ lpb $0
   lpb $4
     mov $10,$3
     mov $7,$4
-    seq $7,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+    seq $7,169 ; Number of labeled rooted trees with n nodes: n^(n-1).
     mul $7,$$9
     gcd $7,$4
     sub $4,1

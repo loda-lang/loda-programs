@@ -1,23 +1,15 @@
 ; A282417: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 469", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,2,3,12,7,56,15,240,31,992,63,4032,127,16256,255,65280,511,261632,1023,1047552,2047,4192256,4095,16773120,8191,67100672,16383,268419072,32767,1073709056,65535,4294901760,131071,17179738112,262143,68719214592,524287,274877382656,1048575,1099510579200,2097151,4398044413952,4194303,17592181850112,8388607,70368735789056,16777215,281474959933440,33554431,1125899873288192,67108863,4503599560261632,134217727,18014398375264256,268435455,72057593769492480,536870911,288230375614840832,1073741823
 
-mov $1,1
-mov $2,1
-lpb $0
-  mov $3,$2
-  lpb $3
-    add $5,$2
-    mov $1,1
-    mov $2,$5
-    gcd $4,$5
-    cmp $4,1
-    cmp $4,0
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
-  mov $4,6
-lpe
-mov $0,$1
+add $0,1
+mov $2,2
+gcd $2,$0
+add $0,1
+div $0,2
+mov $1,2
+pow $1,$0
+sub $1,1
+pow $2,$0
+mul $2,$1
+mov $0,$2

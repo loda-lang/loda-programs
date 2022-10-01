@@ -1,19 +1,17 @@
 ; A218134: Norm of coefficients in the expansion of 1/(1 - 2*x - i*x^2), where i is the imaginary unit.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 1,4,17,80,369,1700,7841,36160,166753,768996,3546289,16354000,75417809,347795396,1603886913,7396455680,34109360321,157298104900,725393076049,3345209499600,15426707209777,71141522037604,328074947492321,1512944453384000,6977067089461281
 
-mov $3,1
+mov $2,1
 add $0,1
 lpb $0
   sub $0,1
   add $1,$2
-  sub $2,$1
-  sub $4,$2
   add $2,$3
   add $2,$3
-  add $1,$2
   add $4,$1
+  add $1,$2
+  add $3,$4
   add $3,$4
 lpe
-mov $0,$1
-div $0,2
+mov $0,$4

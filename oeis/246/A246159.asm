@@ -1,8 +1,16 @@
 ; A246159: Inverse function to the injection A048724.
-; Submitted by Simon Strandgaard
+; Submitted by Charlie Hartono Youtube ???
 ; 0,0,0,1,0,3,2,0,0,7,6,0,4,0,0,5,0,15,14,0,12,0,0,13,8,0,0,9,0,11,10,0,0,31,30,0,28,0,0,29,24,0,0,25,0,27,26,0,16,0,0,17,0,19,18,0,0,23,22,0,20,0,0,21,0,63,62,0,60,0,0,61,56,0,0,57,0,59,58,0,48,0,0,49,0,51,50,0,0,55,54,0,52,0,0,53,32,0,0,33
 
-mul $0,2
-add $0,1
-seq $0,246160 ; Inverse function to the injection A065621.
-div $0,2
+mov $1,1
+lpb $0
+  lpb $0
+    dif $0,2
+    mul $1,2
+  lpe
+  sub $2,$1
+  div $0,2
+  mul $1,-2
+lpe
+max $3,$2
+mov $0,$3
