@@ -1,6 +1,16 @@
 ; A085002: a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
-; Submitted by Landjunge
+; Submitted by shift
 ; 1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1
 
-seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+max $2,$0
+seq $2,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
+sub $0,1
+mov $1,-1
+max $1,$0
+add $1,$0
+add $1,$0
+add $2,$1
+mov $0,$2
+mod $0,2
+add $0,2
 mod $0,2

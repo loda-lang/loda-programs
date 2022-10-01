@@ -1,14 +1,6 @@
 ; A085983: Number of 9's in decimal expansion of prime(n).
+; Submitted by damotbe
 ; 0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,1,2,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,1,0,1,1,0,0,0,1,0,1,0,0,0,0,1,0,1,2,0,1,0,0,0
 
-mov $1,2
-seq $0,6005 ; The odd prime numbers together with 1.
-lpb $0
-  mov $2,$0
-  mod $2,10
-  cmp $2,9
-  div $0,10
-  add $1,$2
-lpe
-sub $1,2
-mov $0,$1
+seq $0,40 ; The prime numbers.
+seq $0,102683 ; Number of digits 9 in decimal representation of n.

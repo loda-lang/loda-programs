@@ -1,12 +1,7 @@
 ; A033684: 1 iff n is a square not divisible by 3.
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-mod $1,3
-mul $1,3
-seq $0,2448 ; Expansion of Jacobi theta function theta_4(x).
-mul $0,$1
-div $0,4
-add $0,2
+seq $0,128128 ; Expansion of chi(-q^3) / chi^3(-q) in powers of q where chi() is a Ramanujan theta function.
+div $0,3
 mod $0,2

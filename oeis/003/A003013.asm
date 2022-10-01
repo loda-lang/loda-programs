@@ -5,9 +5,9 @@
 mov $1,2
 pow $1,$0
 mov $2,$0
+trn $2,1
 bin $0,2
 mul $0,$1
-trn $2,1
 add $0,$2
 add $0,$2
 div $0,2

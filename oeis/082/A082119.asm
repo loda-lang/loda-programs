@@ -1,19 +1,18 @@
 ; A082119: Smallest positive difference between d and n/d for any divisor d of n.
-; Submitted by Penguin
+; Submitted by [AF>Libristes] alain65
 ; 1,2,3,4,1,6,2,8,3,10,1,12,5,2,6,16,3,18,1,4,9,22,2,24,11,6,3,28,1,30,4,8,15,2,5,36,17,10,3,40,1,42,7,4,21,46,2,48,5,14,9,52,3,6,1,16,27,58,4,60,29,2,12,8,5,66,13,20,3,70,1,72,35,10,15,4,7,78,2,24,39,82,5,12,41,26,3,88,1,6,19,28,45,14,4,96,7,2,15,100
 
 mov $2,2
 lpb $0
-  mov $3,$2
+  add $3,1
   lpb $3
     lpb $0
       add $2,2
       sub $0,$2
       mov $1,$0
-      cmp $1,0
+      mov $3,0
     lpe
     sub $3,$1
-    mul $1,32
   lpe
   sub $0,1
   add $2,1
