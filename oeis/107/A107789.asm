@@ -1,13 +1,13 @@
 ; A107789: Trajectory of 2 under evenly many applications of the morphism 1 -> 2, 2 -> 114, 3 -> 4, 4 -> 233.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,2,2,3,3,2,2,2,3,3,2,2,2,3,3,2,3,3,2,3,3,2,2,2,3,3,2,2,2,3,3,2,2,2,3,3,2,3,3,2,3,3,2,2,2,3,3,2,2,2,3,3,2,2,2,3,3,2,3,3,2,3,3,2,2,2,3,3,2,3,3,2,3,3,2,2,2,3,3,2,3,3,2,3,3,2,2,2,3,3,2,2,2,3,3,2,2,2,3,3
 
+mov $1,1
 mov $2,$0
 pow $2,2
 add $2,12
 lpb $2
   mov $3,$1
-  add $3,1
   seq $3,254048 ; a(n) = A126760(A007494(n)).
   gcd $3,2
   sub $0,$3

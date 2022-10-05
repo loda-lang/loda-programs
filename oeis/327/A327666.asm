@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,162511 ; Multiplicative function with a(p^e)=(-1)^(e-1)
+  seq $2,162511 ; Multiplicative function with a(p^e) = (-1)^(e-1).
   sub $0,1
   add $1,$2
 lpe

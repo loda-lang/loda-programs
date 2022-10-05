@@ -1,20 +1,8 @@
 ; A096033: Difference between leg and hypotenuse in primitive Pythagorean triangles.
-; Submitted by zombie67 [MM]
+; Submitted by Ralfy
 ; 1,2,8,9,18,25,32,49,50,72,81,98,121,128,162,169,200,225,242,288,289,338,361,392,441,450,512,529,578,625,648,722,729,800,841,882,961,968,1058,1089,1152,1225,1250,1352,1369,1458,1521,1568,1681,1682,1800,1849,1922,2025,2048,2178,2209,2312,2401,2450,2592,2601,2738,2809,2888,3025,3042,3200,3249,3362,3481,3528,3698,3721,3872,3969,4050,4225,4232,4418,4489,4608,4761,4802,5000,5041,5202,5329,5408,5618,5625,5832,5929,6050,6241,6272,6498,6561,6728,6889
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,214304 ; Expansion of phi(q) + phi(q^2) - phi(q^4) in powers of q where phi() is a Ramanujan theta function.
-  cmp $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
+seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
+sub $0,2
+seq $0,88827 ; Even numbers with odd abundance: even squares or two times squares.
+div $0,2

@@ -1,9 +1,8 @@
 ; A214057: Least m>0 such that 2^n-1+m and n-m have a common divisor > 1.
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,1,4,1,3,1,8,1,10,1,3,1,14,1,16,1,3,1,5,1,2,1,3,1,26,1,28,1,3,1,4,1,6,1,2,1,15,1,5,1,2,1,5,1,17,1,3,1,50,1,8,1,2,1,56,1,58,1,3,1,2,1,6,1,3,1,31,1,70,1,3,1,4,1,6,1,3,1,5,1,2,1,3,1,86,1,88,1,3,1,16,1,94,1,3,1,98,1,5
 
 add $0,1
-mov $1,5
 mov $2,2
 pow $2,$0
 lpb $0
@@ -16,4 +15,4 @@ lpb $0
   add $2,1
 lpe
 mov $0,$1
-sub $0,4
+add $0,1

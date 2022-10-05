@@ -1,15 +1,17 @@
 ; A036497: Number of partitions of n into distinct primes (counting 1 as a prime).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>EDLS]zOU
 ; 1,1,1,2,1,2,2,2,3,2,3,3,3,4,4,4,5,5,6,7,7,8,8,9,10,10,11,11,11,13,13,15,16,16,18,18,20,22,22,24,25,26,29,30,32,33,34,37,39,41,44,45,47,51,53,57,59,61,64,67,72,76,79,82,86,89,95,100,103,108,112,118,125,131,137,141,147,154,161,170,176,182,189,198,208,217,225,233,241,252,266,276,287,297,306,320,334,348,361,371
 
+mov $3,3
 add $0,3
 lpb $0
-  sub $0,3
   sub $0,$3
   mov $2,$0
   max $2,0
   seq $2,586 ; Number of partitions of n into distinct primes.
+  sub $4,1
   add $1,$2
-  sub $3,2
+  mov $3,2
+  add $3,$4
 lpe
 mov $0,$1

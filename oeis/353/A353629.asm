@@ -1,6 +1,12 @@
 ; A353629: a(n) = 1 if n is a product of an even number of distinct primes, otherwise 0.
-; Submitted by [AF] Hydrosaure
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0
 
-seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-max $0,0
+seq $0,158210 ; Number omega(n) of distinct primes dividing n multiplied by -1 when n is squarefree (thus Omega(n) = omega(n)).
+sub $0,1
+lpb $0
+  mov $0,0
+lpe
+mod $0,2
+add $0,2
+mod $0,2

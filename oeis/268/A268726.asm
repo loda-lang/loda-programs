@@ -5,7 +5,7 @@
 seq $0,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
 lpb $0
   add $0,1
-  add $1,1
   dif $0,2
+  add $1,1
 lpe
 mov $0,$1

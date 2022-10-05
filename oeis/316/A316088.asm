@@ -9,11 +9,11 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    seq $7,578 ; The cubes: a(n) = n^3.
     mov $9,10
     add $9,$5
     mov $10,3
     sub $4,1
-    seq $7,578 ; The cubes: a(n) = n^3.
     mul $7,$$9
     add $5,1
     add $6,$7

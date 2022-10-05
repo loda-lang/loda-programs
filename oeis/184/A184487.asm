@@ -4,5 +4,5 @@
 
 add $0,1
 mul $0,4
-seq $0,3622 ; The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.
+seq $0,3622 ; The Wythoff compound sequence AA: a(n) = floor(n*phi^2) - 1, where phi = (1+sqrt(5))/2.
 div $0,2

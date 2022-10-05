@@ -1,18 +1,18 @@
 ; A225950: Triangle for odd legs of primitive Pythagorean triangles.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>PlusCitoyen] Davlabedave
 ; 3,0,5,15,0,7,0,21,0,9,35,0,0,0,11,0,45,0,33,0,13,63,0,55,0,39,0,15,0,77,0,65,0,0,0,17,99,0,91,0,0,0,51,0,19,0,117,0,105,0,85,0,57,0,21,143,0,0,0,119,0,95,0,0,0,23,0,165,0,153,0,133,0,105,0,69,0,25,195,0,187,0,171,0,0,0,115,0,75,0,27,0,221,0,209,0,0,0,161,0
 
 lpb $0
   add $1,1
   sub $0,$1
 lpe
-add $0,1
 add $1,2
+add $0,1
 mov $2,$0
 add $0,$1
 sub $1,$2
-mov $2,$1
 mul $1,$0
+mul $2,2
 add $0,$2
 gcd $0,$1
 pow $0,$1

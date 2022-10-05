@@ -1,14 +1,7 @@
 ; A286922: {0->01}-transform of the Sturmian word A080764.
-; Submitted by Christian Krause
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0
 
-mov $3,1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  seq $1,188295 ; [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
-  add $3,$2
-lpe
-mov $0,$1
+add $0,1
+seq $0,286908 ; Positions of 0 in A286907; complement of A286909.
+mod $0,2

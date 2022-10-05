@@ -2,7 +2,9 @@
 ; Submitted by Penguin
 ; 6,8,13,15,29,41,55,71,97,99,127,244,251,449,4801,8749
 
-mov $2,14161
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   mov $3,$1
   seq $3,76605 ; Largest prime divisor of n^2 - 1.

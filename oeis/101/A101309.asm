@@ -1,5 +1,5 @@
 ; A101309: Matrix logarithm of A047999 (Pascal's triangle mod 2).
-; Submitted by Johnbodlis team
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0
 
 lpb $0
@@ -9,10 +9,9 @@ lpe
 mov $2,$1
 sub $2,$0
 bin $1,$0
-mov $0,$2
-mul $2,2
-bin $2,$0
-mul $1,$2
-div $1,2
-mov $0,$1
+mov $0,2
+mul $0,$2
+bin $0,$2
+div $0,2
+mul $0,$1
 mod $0,2

@@ -1,5 +1,5 @@
 ; A274162: Number of real integers in n-th generation of tree T(3i) defined in Comments.
-; Submitted by den777
+; Submitted by Marthium
 ; 1,1,1,2,3,5,8,13,21,34,55,89,144,234,379,615,997,1617,2622,4252,6895,11181
 
 mov $1,-1
@@ -16,5 +16,5 @@ lpb $0
   add $6,$4
   add $4,$1
 lpe
+add $5,1
 mov $0,$5
-add $0,1

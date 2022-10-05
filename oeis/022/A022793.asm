@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,198263 ; Ceiling(n*sqrt(8)).
+  seq $2,198263 ; a(n) = ceiling(n*sqrt(8)).
   sub $0,1
   add $1,$2
 lpe

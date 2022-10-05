@@ -1,25 +1,17 @@
 ; A168026: Noncomposite numbers in the southwestern ray of the Ulam spiral as oriented on the March 1964 cover of Scientific American.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Libristes]Maeda
 ; 1,7,43,73,157,211,421,601,1483,2551,2971,3907,4423,6163,6481,8191,12211,19183,22651,26407,27061,28393,31153,35533,37057,37831,42643,47743,55933,60763,71023,74257,77563,83233,84391,98911,110557,113233,117307,118681,121453,143263,154057,158803,162007,163621,171811,173473,181903,188791,208393,227053,250501,262657,268843,281431,292141,307471,314161,320923,327757,339307,341641,375157,390001,392503,412807,415381,446893,471283,485113,519121,527803,530713,581407,590593,612307,628057,637603,660157
 
-mov $1,4
-mov $6,1
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $3,$6
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,8
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,18
-  sub $5,6
-  add $5,$1
-  mov $6,$5
+mov $4,6
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,$4
+  add $4,8
+  sub $0,$1
+  sub $3,$0
 lpe
-mov $0,$5
+mov $0,$2
 add $0,1

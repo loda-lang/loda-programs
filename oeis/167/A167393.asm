@@ -1,7 +1,8 @@
 ; A167393: Characteristic function of the range of A000009.
-; Submitted by [AF>Amis de la mer] Qingdan
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,1,1,1,1,1,0,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 
+mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2

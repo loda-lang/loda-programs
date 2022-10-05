@@ -1,6 +1,26 @@
 ; A189479: Fixed point starting with 0 of the morphism 0->01, 1->101.
-; Submitted by damotbe
+; Submitted by [AF>Libristes] ElGuillermo
 ; 0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1
 
-seq $0,60142 ; Ordered set S defined by these rules: 0 is in S and if x is in S then 2x+1 and 4x are in S.
-mod $0,2
+mov $7,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  sub $4,$6
+  mov $0,$7
+  sub $0,$3
+  mov $1,0
+  mov $5,2
+  sub $5,$0
+  add $0,$4
+  lpb $0
+    mov $0,0
+    cmp $1,0
+    add $2,$1
+    mov $5,1
+    add $5,$2
+  lpe
+  mov $6,$5
+  sub $6,1
+lpe
+mov $0,$1

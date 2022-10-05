@@ -1,9 +1,22 @@
 ; A284772: Fixed point of the morphism 0 -> 01, 1 -> 0010.
-; Submitted by Athlici
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1
 
-mul $0,2
-seq $0,284853 ; Positions of 1 in A284851; complement of A284852.
-div $0,2
-sub $0,1
-mod $0,2
+mov $2,-2
+add $0,2
+lpb $0
+  sub $0,1
+  add $4,5
+  gcd $3,$4
+  mov $4,74
+  add $4,$3
+  sub $1,$2
+  add $1,1
+  div $1,2
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
+lpe
+mov $0,$4
+sub $0,75

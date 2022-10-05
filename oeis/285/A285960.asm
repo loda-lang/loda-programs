@@ -1,9 +1,16 @@
 ; A285960: {01->1}-transform of the Thue-Morse word A010060.
-; Submitted by Science United
+; Submitted by Landjunge
 ; 1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0
 
+mov $2,2
 mul $0,2
-add $0,1
-seq $0,121539 ; Numbers whose binary expansion ends in an even number of 1's.
+lpb $0
+  sub $0,1
+  mov $1,$2
+  seq $1,39963 ; The period-doubling sequence A035263 repeated.
+  cmp $1,0
+  sub $0,$1
+  add $2,2
+lpe
 add $0,1
 mod $0,2

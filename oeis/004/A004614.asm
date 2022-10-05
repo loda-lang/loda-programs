@@ -1,13 +1,13 @@
 ; A004614: Numbers that are divisible only by primes congruent to 3 mod 4.
-; Submitted by PDW
+; Submitted by [AF] Kalianthys
 ; 1,3,7,9,11,19,21,23,27,31,33,43,47,49,57,59,63,67,69,71,77,79,81,83,93,99,103,107,121,127,129,131,133,139,141,147,151,161,163,167,171,177,179,189,191,199,201,207,209,211,213,217,223,227,231,237,239,243,249,251,253,263,271,279,283,297,301,307,309,311,321,329,331,341,343,347,359,361,363,367,379,381,383,387,393,399,413,417,419,423,431,437,439,441,443,453,463,467,469,473
 
 mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,324891 ; a(n) = sigma(A170818(n)), where A170818(n) is the part of n composed of prime factors of form 4k+1.
-  cmp $3,1
+  seq $3,46080 ; a(n) is the number of integer-sided right triangles with hypotenuse n.
+  cmp $3,0
   sub $0,$3
   add $1,2
   mov $4,$0

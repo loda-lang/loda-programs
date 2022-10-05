@@ -40,10 +40,14 @@ A023589: Number of distinct prime divisors of 2*p(n)+1.
 A023590: Greatest prime divisor of 2*prime(n)+1.
 A026945: A bisection of the Motzkin numbers A001006.
 A030078: Cubes of primes.
+A031336: a(n) = prime(3*n).
 A031359: Bisection of A001615.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
+A031370: a(n) = prime(4n-1).
 A031377: a(n) = prime(3n-2).
+A031379: a(n) = prime(5*n - 2).
+A031381: a(n) = prime(7*n - 2).
 A031385: a(n) = prime(4*n-3).
 A031389: a(n) = prime(8*n-3).
 A031392: a(n) = prime(5*n-4).
@@ -51,8 +55,10 @@ A031906: a(n) = prime(6*n - 5).
 A031908: a(n) = prime(8*n - 5).
 A031911: a(n) = prime(7*n - 6).
 A031915: a(n) = prime(8*n - 7).
+A031918: a(n) = prime(9*n-8).
 A031919: a(n) = prime(10*n-8).
 A031920: a(n) = prime(10*n-9).
+A031937: Upper prime of a difference of 18 between consecutive primes.
 A031974: 1 repeated prime(n) times.
 A033633: Primes modulo 19.
 A034785: a(n) = 2^(n-th prime).

@@ -5,5 +5,5 @@
 mul $0,2
 trn $0,1
 seq $0,171688 ; Twin primes > 3.
-div $0,2
-mul $0,8
+mul $0,4
+sub $0,4

@@ -1,12 +1,6 @@
 ; A088175: Primes such that the next two primes are a twin prime pair.
-; Submitted by PDW
+; Submitted by LM
 ; 2,3,7,13,23,37,53,67,97,103,131,139,173,181,193,223,233,263,277,307,337,409,421,457,509,563,593,613,631,653,797,811,823,853,877,1013,1021,1039,1051,1087,1129,1223,1259,1283,1297,1307,1423,1447,1471,1483,1601,1613,1663,1693,1709,1783,1867,1873,1913,1933,1993,2017,2069,2083,2099,2113,2137,2221,2251,2297,2333,2377,2543,2579,2647,2683,2707,2719,2777,2797,2963,2971,3109,3163,3229,3253,3271,3323,3347,3361,3373,3457,3463,3517,3533,3547,3571,3659,3761,3803
 
-mul $0,2
-trn $0,1
-seq $0,171688 ; Twin primes > 3.
-sub $0,5
-div $0,2
-mul $0,2
-trn $0,1
-seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+seq $0,144834 ; Numbers n such that the two numbers n+1 and n+3 are both prime.
+seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

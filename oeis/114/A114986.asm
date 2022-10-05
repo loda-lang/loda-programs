@@ -1,7 +1,8 @@
 ; A114986: Characteristic function of (A000201 prefixed with 0).
-; Submitted by vanos0512
+; Submitted by Science United
 ; 1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0
 
 trn $0,1
-seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
-div $0,2
+seq $0,316825 ; Fibonacci word A003849 with its initial term changed to 2.
+add $0,1
+mod $0,2

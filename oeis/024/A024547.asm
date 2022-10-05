@@ -9,12 +9,12 @@ mul $3,3
 sub $3,$0
 lpb $3
   lpb $3
+    sub $3,2
     mul $1,$0
     add $2,$1
     add $2,$1
     add $1,$2
     div $1,$0
-    sub $3,2
   lpe
   mod $2,$1
 lpe

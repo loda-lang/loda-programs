@@ -1,6 +1,7 @@
 ; A056170: Number of non-unitary prime divisors of n.
-; Submitted by Jon Maiga
+; Submitted by Landjunge
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,2,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,2,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,1,2
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+seq $0,73184 ; Number of cubefree divisors of n.
+pow $0,2
+seq $0,37800 ; Number of occurrences of 01 in the binary expansion of n.

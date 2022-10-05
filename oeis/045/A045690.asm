@@ -1,29 +1,9 @@
 ; A045690: Number of binary words of length n (beginning with 0) whose autocorrelation function is the indicator of a singleton.
-; Submitted by Dingo
+; Submitted by damotbe
 ; 1,1,2,3,6,10,20,37,74,142,284,558,1116,2212,4424,8811,17622,35170,70340,140538,281076,561868,1123736,2246914,4493828,8986540,17973080,35943948,71887896,143771368,287542736,575076661,1150153322,2300289022,4600578044,9201120918,18402241836,36804413332,73608826664,147217512790,294435025580,588869770084,1177739540168,2355478518468,4710957036936,9421912950136,18843825900272,37687649553630,75375299107260,150750593720692,301501187441384,603002365896228,1206004731792456,2412009445611832
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  mov $5,$4
-  mov $6,0
-  lpb $4
-    sub $4,1
-    mov $9,10
-    add $9,$5
-    mov $7,2
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,2
-  add $9,1
-  mov $3,$6
-  add $3,2
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$6
+add $0,1
+seq $0,3000 ; Number of bifix-free (or primary, or unbordered) words of length n over a two-letter alphabet.
+sub $0,2
 div $0,2
 add $0,1

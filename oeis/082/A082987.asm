@@ -1,17 +1,14 @@
 ; A082987: a(n)=sum(k=0,n,3^k*F(k)) where F(k) is the k-th Fibonacci number.
-; Submitted by Saenger
+; Submitted by Simon Strandgaard
 ; 0,3,12,66,309,1524,7356,35787,173568,842790,4090485,19856568,96384072,467861331,2271040644,11023873914,53510987541,259747827852,1260842371428,6120257564955,29708354037720,144207380197758
 
-mov $1,1
 mov $2,1
 lpb $0
   sub $0,1
-  mov $3,$1
-  mul $3,3
-  mov $1,$2
-  add $2,$3
   mul $2,3
+  mul $1,-3
+  add $1,$2
+  add $2,1
+  add $2,$1
 lpe
-mov $0,$2
-div $0,11
-mul $0,3
+mov $0,$1

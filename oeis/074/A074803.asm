@@ -1,8 +1,22 @@
 ; A074803: Kolakoski-(4,2) sequence: a(n) is length of n-th run.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by NOSNHOP
 ; 4,4,4,4,2,2,2,2,4,4,4,4,2,2,2,2,4,4,2,2,4,4,2,2,4,4,4,4,2,2,2,2,4,4,4,4,2,2,2,2,4,4,2,2,4,4,2,2,4,4,4,4,2,2,2,2,4,4,2,2,4,4,4,4,2,2,2,2,4,4,2,2,4,4,4,4,2,2,2,2,4,4,4,4,2,2,2,2,4,4,2,2,4,4,2,2,4,4,4,4
 
-div $0,2
-seq $0,285345 ; Fixed point of the morphism 0 -> 10, 1 -> 1100.
+mov $2,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  sub $1,2
+  div $1,2
+  add $3,$1
+  mod $3,2
+  gcd $3,4
+  div $2,2
+  mul $2,4
+  mul $2,$3
+lpe
+mov $0,$3
+div $0,3
 mul $0,2
 add $0,2

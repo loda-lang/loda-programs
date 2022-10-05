@@ -12,9 +12,8 @@ sub $0,1
 sub $2,$0
 cmp $3,$0
 mul $3,2
-sub $3,1
-sub $0,1
 sub $3,$0
+sub $0,1
 pow $3,$0
 add $0,2
 pow $0,$2

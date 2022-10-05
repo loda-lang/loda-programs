@@ -5,9 +5,9 @@
 mov $3,7
 lpb $0
   mov $2,$0
-  trn $0,3
   add $2,$3
   add $3,1
+  trn $0,3
   bin $2,$3
   add $1,$2
 lpe

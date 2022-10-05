@@ -1,5 +1,5 @@
 ; A033761: Product t2(q^d); d | 2, where t2 = theta2(q)/(2*q^(1/4)).
-; Submitted by Simon Strandgaard
+; Submitted by [AF] Kalianthys
 ; 1,1,1,2,0,1,2,1,1,1,1,0,3,1,0,2,1,1,1,0,1,3,1,2,0,0,1,2,1,0,3,1,0,2,1,1,2,0,1,0,2,1,2,1,0,3,0,1,3,0,0,2,1,0,0,1,2,4,1,1,0,1,1,1,0,1,3,1,1,0,1,1,2,1,0,3,0,1,4,0,1,0,1,0,2,1,1,2,0,0,2,2,1,3,0,0,2,2,1,0
 
 mov $3,3
@@ -9,9 +9,8 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
-  add $1,$2
-  mov $3,2
-  add $3,$4
   add $4,2
+  add $1,$2
+  mov $3,$4
 lpe
 mov $0,$1

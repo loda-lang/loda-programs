@@ -1,15 +1,12 @@
 ; A085002: a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
-; Submitted by shift
+; Submitted by [AF>EDLS]zOU
 ; 1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1
 
-max $2,$0
-seq $2,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
-sub $0,1
-mov $1,-1
-max $1,$0
-add $1,$0
-add $1,$0
-add $2,$1
+mov $1,$0
+seq $0,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
+mov $2,1
+add $2,$0
+sub $2,$1
 mov $0,$2
 mod $0,2
 add $0,2

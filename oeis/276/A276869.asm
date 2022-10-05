@@ -6,11 +6,10 @@ lpb $0
   mov $1,$0
   seq $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
   sub $1,$0
-  mul $2,$0
-  mov $3,1
   mod $0,$1
   add $0,$2
-  add $2,21
+  sub $2,$1
+  add $3,1
 lpe
 mov $0,$3
 add $0,2

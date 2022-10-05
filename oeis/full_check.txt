@@ -70,6 +70,7 @@ A030124: Complement (and also first differences) of Hofstadter's sequence A00522
 A033203: Primes p congruent to {1, 2, 3} (mod 8); or primes p of form x^2 + 2*y^2; or primes p such that x^2 = -2 has a solution mod p.
 A033207: Primes of form x^2+7*y^2.
 A033212: Primes congruent to 1 or 19 (mod 30).
+A033684: 1 iff n is a square not divisible by 3.
 A033687: Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
@@ -111,6 +112,7 @@ A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime fa
 A049345: n written in primorial base.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
+A051903: Maximal exponent in prime factorization of n.
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
 A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
@@ -190,6 +192,7 @@ A114562: The first occurrence of n in A111701.
 A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
 A116512: a(n) = number of positive integers each of which is <= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
+A118480: (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
 A120007: Mobius transform of sum of prime factors of n with multiplicity (A001414).
 A120891: Number of primitive Pythagorean triangles with odd leg 2n-1.
@@ -224,6 +227,7 @@ A158919: Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor
 A162510: Dirichlet inverse of A076479.
 A165265: Concatenate the number of 1's and number of 0's in the binary expansion of n.
 A165513: Trapezoidal numbers.
+A166011: Least common multiple of prime(n)-3 and prime(n)+3.
 A171798: a(n) = base-10 concatenation XYZ, where X = number of bits in binary expansion of n, Y = number of 0's, Z = number of 1's.
 A174897: a(n) = characteristic function of numbers k such that A007955(m) = k has solution for some m, where A007955(m) = product of divisors of m.
 A174898: a(n) = characteristic function of numbers k such that A007955(m) = k has no solution for any m, where A007955(m) = product of divisors of m.
@@ -297,6 +301,7 @@ A195172: a(n) = 4*n - floor(2*n*r), where r=(1+sqrt(5))/2 (the golden ratio).
 A195173: a(n) = 5*n - floor(2n*r), where r=(1+sqrt(5))/2 (the golden ratio).
 A195175: a(n) = 8*n - floor(4*n*r), where r=(1+sqrt(5))/2 (the golden ratio.)
 A196224: Numbers n such that n^2 + n is not of the form x^2 + y^2 + z^2.
+A197878: a(n) = floor(2*(1 + sqrt(2))*n).
 A197879: Parity of floor(n*sqrt(8)).
 A202276: Number of integers k <= n such that sigma(x) = k has no solution, sigma = A000203.
 A205866: Positions of multiples of 8 in A204922 (differences of Fibonacci numbers).
@@ -320,6 +325,7 @@ A243915: a(n) = sigma(omega(n)).
 A244063: Number of prime factors (with multiplicity) of the number of distinct prime factors of n; i.e., Omega(omega(n)).
 A244217: Numbers n less than twice the largest Catalan number that is less than or equal to n.
 A244339: Expansion of (-2 * a(q) + 3*a(q^2) + 2*a(q^4)) / 3 in powers of q where a() is a cubic AGM theta function.
+A246716: Positive numbers that are not the product of (exactly) two distinct primes.
 A247648: Numbers whose binary expansion begins and ends with 1 and does not contain two adjacent zeros.
 A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
@@ -354,6 +360,7 @@ A276855: Beatty sequence for (3 + golden ratio).
 A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
+A277904: Irregular table: row n (n >= 0) is obtained by listing numbers 0 .. A018819(n)-1.
 A278569: Numbers of the form p^i*q^j*r^k where p,q,r are distinct odd primes and i,j,k >= 1.
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.

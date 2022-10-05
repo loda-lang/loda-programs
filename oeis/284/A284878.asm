@@ -1,10 +1,9 @@
 ; A284878: Fixed point of the morphism 0 -> 01, 1 -> 0110.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,1,0
 
 mov $1,$0
 div $0,2
 seq $0,284880 ; Positions of 1 in A284878; complement of A284879.
-add $1,$0
-mov $0,$1
+add $0,$1
 mod $0,2

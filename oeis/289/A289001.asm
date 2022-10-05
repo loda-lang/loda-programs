@@ -1,5 +1,16 @@
 ; A289001: Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
-; Submitted by Olaf
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
-seq $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
+add $0,1
+lpb $0
+  mov $1,$0
+  seq $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
+  sub $1,$0
+  mod $0,$1
+  add $0,$2
+  mov $2,$1
+lpe
+mov $0,$1
+add $0,1
+mod $0,2

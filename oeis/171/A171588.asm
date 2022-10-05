@@ -1,5 +1,5 @@
 ; A171588: The Pell word: Fixed point of the morphism 0->001, 1->0.
-; Submitted by [AF>WildWildWest]Sebastien
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
 add $0,1
@@ -8,6 +8,8 @@ lpb $0
   seq $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
   sub $1,$0
   mod $0,$1
+  add $0,$2
+  sub $2,$1
 lpe
 mov $0,$1
 add $0,1

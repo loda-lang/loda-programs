@@ -1,7 +1,8 @@
 ; A074939: Even numbers such that base 3 representation contains no 2.
-; Submitted by [AF] Kalianthys
+; Submitted by damotbe
 ; 0,4,10,12,28,30,36,40,82,84,90,94,108,112,118,120,244,246,252,256,270,274,280,282,324,328,334,336,352,354,360,364,730,732,738,742,756,760,766,768,810,814,820,822,838,840,846,850,972,976,982,984,1000,1002,1008,1012,1054,1056,1062,1066,1080,1084,1090,1092,2188,2190,2196,2200,2214,2218,2224,2226,2268,2272,2278,2280,2296,2298,2304,2308,2430,2434,2440,2442,2458,2460,2466,2470,2512,2514,2520,2524,2538,2542,2548,2550,2916,2920,2926,2928
 
-seq $0,125592 ; Evil numbers (A001969) multiplied by 2.
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
-div $0,3
+seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
+sub $0,1
+seq $0,83094 ; Numbers k such that Sum_{j=0..k} (binomial(k,j) mod 3) is odd.
+div $0,2

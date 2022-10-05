@@ -6,7 +6,7 @@ mov $2,$0
 add $2,3
 pow $2,2
 add $0,1
-mov $1,4
+mov $1,6
 lpb $2
   mov $3,$1
   seq $3,69897 ; Integer quotient of the largest and the smallest prime factors of n, with a(1) = 1.
