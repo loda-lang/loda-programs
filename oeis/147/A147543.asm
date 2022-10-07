@@ -1,0 +1,27 @@
+; A147543: Vertex counting using a vector matrix Markov with characteristic polynomial: 30 - 31 x + 10 x^2 - x^3.
+; Submitted by QuentinVR
+; 6,25,105,455,2045,9495,45205,219055,1074045,5305895,26335205,131090655,653692045,3263166295,16299929205,81451898255,407116166045,2035150690695,10174462707205,50868440641855,254330583216045
+
+mov $1,1
+mov $2,1
+mov $4,1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $3,$1
+  mul $3,3
+  add $3,$2
+  add $3,24
+  mul $4,2
+  mul $1,4
+  add $2,$1
+  mul $2,5
+  add $2,$4
+  sub $1,$4
+  div $1,4
+lpe
+mov $0,$3
+mul $0,2
+sub $0,44
+div $0,10
+add $0,6
