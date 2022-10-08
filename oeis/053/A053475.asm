@@ -4,8 +4,8 @@
 
 lpb $0
   seq $0,51953 ; Cototient(n) := n - phi(n).
-  add $1,1
   sub $0,1
+  add $1,1
 lpe
 mov $0,$1
 add $0,2

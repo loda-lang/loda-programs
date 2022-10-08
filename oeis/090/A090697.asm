@@ -1,20 +1,20 @@
 ; A090697: Numbers n such that n^2/2 - 1 is a prime.
-; Submitted by [AF] Kalianthys
+; Submitted by USTL-FIL (Lille Fr)
 ; 4,6,8,12,14,16,20,22,26,30,34,36,42,44,48,50,56,68,72,76,78,82,84,86,90,92,98,100,104,112,118,124,126,128,138,146,152,160,162,170,174,182,184,190,196,204,216,218,224,226,230,236,250,252,254,264,268,274,280,282,286,306,308,310,314,316,320,328,330,342,344,356,358,362,366,370,372,376,384,392,394,398,400,408,412,422,428,440,456,462,464,474,476,484,490,496,498,502,512,518
 
-mov $4,6
-add $0,1
-mov $2,6
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,4
-  sub $0,$1
-  add $2,$4
-  sub $3,$0
-lpe
-mov $0,$4
 add $0,2
-div $0,2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$4
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,4
+  sub $2,$0
+  add $4,2
+  add $4,$1
+lpe
+mov $0,$1
+div $0,4
+add $0,1
+mul $0,2

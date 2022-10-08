@@ -1,21 +1,6 @@
 ; A278291: Numbers n such that n-1 has the same number of prime factors as n (with multiplicity).
-; Submitted by Jamie Morken(w4)
+; Submitted by ChelseaOilman
 ; 3,10,15,22,26,28,34,35,39,45,58,76,86,87,94,95,99,117,119,122,123,125,134,136,142,143,146,148,154,159,165,171,172,175,178,202,203,206,214,215,218,219,231,245,246,254,285,286,297,299,302,303,327,333,335,351,357,362,370,376,382,388,394,395,426,429,430,435,436,446,447,454,460,475,482,502,507,508,515,527,531,538,543,549,554,556,566,575,585,596,603,604,605,606,610,621,623,628,634,635
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  add $1,1
-  mov $3,$1
-  seq $3,76191 ; First differences of A001222.
-  cmp $3,0
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-add $0,3
+seq $0,45920 ; Numbers n such that factorizations of n and n+1 have the same number of primes (including multiplicities).
+add $0,1

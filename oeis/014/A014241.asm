@@ -4,7 +4,6 @@
 
 mov $1,$0
 seq $1,1690 ; Non-Fibonacci numbers.
-add $0,1
-seq $0,128588 ; A007318 * A128587.
-div $0,2
+add $0,2
+seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 sub $0,$1

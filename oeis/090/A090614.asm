@@ -1,16 +1,17 @@
 ; A090614: Numbers n such that 14n+3 is prime.
-; Submitted by Jamie Morken(w4)
+; Submitted by damotbe
 ; 0,1,2,4,5,7,11,14,16,17,19,20,22,25,26,29,34,37,40,41,44,46,47,55,56,59,61,67,70,71,74,79,80,82,85,89,91,92,94,97,104,106,110,112,115,116,119,121,125,130,134,136,139,149,152,160,167,170,172,176,182,184,185,187,190,191,194,199,200,206,211,212,214,217,220,226,227,229,232,236,242,245,247,251,254,260,262,266,269,271,275,277,280,286,287,289,292,295,301,302
 
-mov $2,2
-mov $3,$0
-pow $3,5
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,14
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
+add $0,1
+mov $1,2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,14
+  sub $2,$0
 lpe
-mov $0,$2
+mov $0,$1
 div $0,14

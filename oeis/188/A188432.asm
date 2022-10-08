@@ -1,7 +1,7 @@
 ; A188432: Fixed point of the morphism 0->001, 1->01.
-; Submitted by shiva
+; Submitted by Ralfy
 ; 0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
 
 trn $0,1
-seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+seq $0,316825 ; Fibonacci word A003849 with its initial term changed to 2.
 mod $0,2

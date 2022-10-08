@@ -1,31 +1,8 @@
 ; A182704: Row sums of triangle A182700.
-; Submitted by respawner
+; Submitted by ChelseaOilman
 ; 0,2,8,21,48,95,180,315,536,873,1390,2145,3264,4849,7112,10260,14640,20604,28746,39653,54280,73626,99176,132549,176112,232400,305032,398034,516880,667725,858870,1099601,1402240,1780779,2253282,2840460,3568788,4468490,5577830,6940830,8612320,10655531,13148730,16182018,19866044,24328575,29724878,36234509,44074560,53495505,64798550,78331614,94510156,113814002,136813806,164167575,196654528,235172994,280781596,334700038,398360940,473412094,561782620,665690067,787720896,930845305,1098518322,1294701702
 
-mov $2,1
-mov $10,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-    add $7,1
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mul $5,$6
-mov $0,$5
+mov $1,$0
+seq $0,216053 ; a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
+sub $0,1
+mul $0,$1

@@ -9,7 +9,3 @@ bin $1,2
 pow $0,2
 seq $0,593 ; Sum of odd divisors of n.
 mul $0,$1
-mul $0,8
-sub $0,8
-div $0,8
-add $0,1

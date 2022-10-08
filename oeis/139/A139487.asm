@@ -1,17 +1,17 @@
 ; A139487: Numbers k such that 8k + 7 is prime.
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Libristes] nico8313
 ; 0,2,3,5,8,9,12,15,18,20,23,24,27,29,32,33,38,44,45,47,53,54,57,59,60,62,74,75,78,80,89,90,92,93,102,104,107,110,113,114,120,122,123,128,129,132,135,137,143,152,153,159,162,164,165,170,174,177,179,180,183,185,188,192,194,195,197,200,207,219,222,227,228,230,233,234,243,249,254,257,260,263,267,275,279,285,288,293,297,299,302,305,312,317,318,323,330,332,333,335
 
-mov $2,6
-mov $3,$0
-pow $3,5
-add $3,3
-lpb $3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,8
-  sub $0,$1
-  mov $1,$2
-  sub $3,$0
+add $0,2
+mov $1,-2
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,8
+  sub $2,$0
 lpe
-mov $0,$2
+mov $0,$1
 div $0,8

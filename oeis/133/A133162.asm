@@ -1,11 +1,8 @@
 ; A133162: Trajectory of 1 under the morphism 1 -> {1,1,2,1}, 2 -> {2}.
-; Submitted by pututu
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1
 
-lpb $0
-  mov $1,$2
-  seq $1,60236 ; If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
-  sub $0,$1
-  add $2,1
-lpe
+seq $0,49320 ; Non-primitive Chacon sequence: fixed under 0->0010, 1->1.
+mul $0,10
+div $0,6
 add $0,1

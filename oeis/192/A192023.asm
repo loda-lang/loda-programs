@@ -1,9 +1,43 @@
 ; A192023: The Wiener index of the comb-shaped graph |_|_|...|_| with 2n (n>=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
-; Submitted by PDW
+; Submitted by [AF] Hydrosaure
 ; 1,10,31,68,125,206,315,456,633,850,1111,1420,1781,2198,2675,3216,3825,4506,5263,6100,7021,8030,9131,10328,11625,13026,14535,16156,17893,19750,21731,23840,26081,28458,30975,33636,36445,39406,42523,45800,49241,52850,56631,60588,64725,69046,73555,78256,83153,88250,93551,99060,104781,110718,116875,123256,129865,136706,143783,151100,158661,166470,174531,182848,191425,200266,209375,218756,228413,238350,248571,259080,269881,280978,292375,304076,316085,328406,341043,354000,367281,380890,394831,409108
 
+mov $3,$0
 mov $1,$0
-mul $1,2
-seq $0,143941 ; The Wiener index of a chain of n triangles (i.e., joined like VVV..VV; here V is a triangle!).
-sub $0,2
-sub $0,$1
+add $1,1
+lpb $1
+  sub $1,1
+  mov $6,0
+  mov $0,$3
+  sub $0,$1
+  mov $7,$0
+  mov $5,$0
+  add $5,1
+  lpb $5
+    sub $5,1
+    mov $0,$7
+    sub $0,$5
+    mov $9,0
+    mov $10,$0
+    mov $8,$0
+    add $8,1
+    lpb $8
+      sub $8,1
+      mov $0,$10
+      sub $0,$8
+      mov $4,$0
+      mul $0,2
+      add $0,1
+      mov $11,$4
+      cmp $11,0
+      add $4,$11
+      div $0,$4
+      mul $0,3
+      sub $0,2
+      add $9,$0
+    lpe
+    add $6,$9
+  lpe
+  add $2,$6
+lpe
+mov $0,$2

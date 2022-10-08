@@ -21,16 +21,16 @@ lpb $0
   mov $11,$9
   add $11,$6
   mul $11,$4
-  mov $10,$11
   mov $12,$0
+  mov $10,$11
   lpb $10
     mov $7,$12
     mod $7,2
     mov $8,$11
     mod $8,2
     mul $7,$8
-    add $5,$7
     div $11,2
+    add $5,$7
     mov $10,$11
     div $12,2
   lpe

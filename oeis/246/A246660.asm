@@ -1,27 +1,20 @@
 ; A246660: Run Length Transform of factorials.
-; Submitted by Jamie Morken(s3)
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,2,1,1,2,6,1,1,1,2,2,2,6,24,1,1,1,2,1,1,2,6,2,2,2,4,6,6,24,120,1,1,1,2,1,1,2,6,1,1,1,2,2,2,6,24,2,2,2,4,2,2,4,12,6,6,6,12,24,24,120,720,1,1,1,2,1,1,2,6,1,1,1,2,2,2,6,24,1,1,1,2,1,1,2,6,2,2,2,4,6,6,24,120,2,2,2,4
 
-mov $1,1
+mov $2,2
 mov $3,1
-mov $6,1
-mov $8,$0
-lpb $8
-  sub $8,$6
-  mul $2,$5
-  add $2,1
-  mov $4,$3
-  mul $4,2
-  mov $5,$0
-  mod $5,$4
-  sub $0,$5
-  div $5,$3
-  mov $7,$2
-  pow $7,$5
-  mul $1,$7
-  mov $3,$4
-  mov $7,$0
-  cmp $7,0
-  sub $6,$7
+lpb $0
+  lpb $0
+    dif $0,2
+    div $1,4
+    mov $3,1
+  lpe
+  div $1,$2
+  add $3,$1
+  div $0,2
+  mul $2,$3
+  mov $1,$2
 lpe
-mov $0,$1
+mov $0,$2
+div $0,2

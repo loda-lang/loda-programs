@@ -1,8 +1,10 @@
 ; A322821: a(1) = 0; for n > 1, a(n) = A000265(A048675(n)).
-; Submitted by STE\/E
+; Submitted by Time_Traveler
 ; 0,1,1,1,1,3,1,3,1,5,1,1,1,9,3,1,1,5,1,3,5,17,1,5,1,33,3,5,1,7,1,5,9,65,3,3,1,129,17,7,1,11,1,9,1,257,1,3,1,9,33,17,1,7,5,11,65,513,1,1,1,1025,3,3,9,19,1,33,129,13,1,7,1,2049,5,65,3,35,1,1,1,4097,1,3,17,8193,257,19,1,9,5,129,513,16385,33,7,1,17,5,5
 
-seq $0,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
+seq $0,181821 ; a(n) = smallest integer with factorization as Product p(i)^e(i) such that Product p(e(i)) = n.
+sub $0,1
+seq $0,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
 lpb $0
   dif $0,2
 lpe

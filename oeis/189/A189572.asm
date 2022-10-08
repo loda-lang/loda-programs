@@ -1,9 +1,6 @@
 ; A189572: Fixed point of the morphism 0->01, 1->001.
-; Submitted by Roadranner
+; Submitted by Science United
 ; 0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0
 
-cmp $1,$0
-trn $0,1
-seq $0,1030 ; Fixed under 1 -> 21, 2 -> 211.
-sub $0,1
-sub $0,$1
+add $0,794
+seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).

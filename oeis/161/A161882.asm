@@ -1,5 +1,5 @@
 ; A161882: Smallest k such that n^2 = a_1^2+...+a_k^2 and all a_i are positive integers less than n.
-; Submitted by mikey
+; Submitted by Simon Strandgaard
 ; 4,3,4,2,3,3,4,3,2,3,3,2,3,2,4,2,3,3,2,3,3,3,3,2,2,3,3,2,2,3,4,3,2,2,3,2,3,2,2,2,3,3,3,2,3,3,3,3,2,2,2,2,3,2,3,3,2,3,2,2,3,3,4,2,3,3,2,3,2,3,3,2,2,2,3,3,2,3,2,3,2,3,3,2,3,2,3,2,2,2,3,3,3,2,3,2,3,3,2,2
 
 mov $1,1
@@ -27,8 +27,8 @@ lpb $0
   lpb $0
     sub $2,1
     dif $0,$2
-    mul $5,$3
   lpe
+  mul $5,$3
   gcd $3,$1
   dif $5,$3
   div $5,$6

@@ -22,8 +22,7 @@ mov $4,10
 pow $4,$0
 div $2,$4
 div $1,$2
-mov $0,$1
+add $4,$1
+mov $0,$4
 sub $0,1
-mod $0,10
-add $0,10
 mod $0,10

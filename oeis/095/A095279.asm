@@ -8,7 +8,7 @@ add $2,2
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n.
+  seq $3,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
   add $3,$4
   div $3,2
   gcd $3,2

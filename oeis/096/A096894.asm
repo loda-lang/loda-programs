@@ -5,7 +5,7 @@
 mul $0,2
 add $0,2
 mov $1,$0
-seq $1,52128 ; Largest factor of n that is coprime to a larger factor of n.
+seq $1,52128 ; a(1) = 1; for n > 1, a(n) is the largest divisor of n that is coprime to a larger divisor of n.
 pow $1,2
 sub $0,$1
 div $0,2

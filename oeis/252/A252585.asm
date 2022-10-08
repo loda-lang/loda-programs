@@ -6,18 +6,15 @@ lpb $0
   mov $3,$0
   mul $3,2
   mod $3,4
-  add $3,1
   add $3,$2
   mul $3,20
   sub $0,1
-  sub $1,5
+  add $1,15
   add $1,$3
   add $2,$1
 lpe
-mul $2,10
-mov $0,$2
-add $0,$1
-add $2,$0
-mov $0,$2
+mul $2,20
+add $1,$2
+mov $0,$1
 div $0,5
 add $0,3

@@ -1,24 +1,23 @@
 ; A271223: Digits of one of the two 3-adic integers sqrt(-2).
-; Submitted by Science United
+; Submitted by owensse
 ; 1,1,2,0,0,2,0,1,0,0,0,2,1,2,0,1,0,1,1,0,2,2,0,1,1,1,2,2,2,0,0,0,2,1,0,1,2,0,2,2,0,2,0,1,2,0,1,2,2,2,1,0,2,0,1,2,0,2,0,0,1,1,2,1,0,1,2,1,1,2,0,2,1,1,2,0,0,1,1,2,2,0,1,1,1,1,1,1,0,1,1,0,1,2,2,0,1,1,2,2
 
 mov $1,1
-mov $4,2
 add $0,1
 lpb $0
   sub $0,1
   mov $2,$1
   mul $2,2
-  pow $4,3
-  add $4,1
+  add $4,2
   mov $5,$1
   add $1,$2
-  mov $3,4
+  add $3,1
+  pow $3,2
   add $3,$4
   mod $3,$1
+  mov $4,$3
   mov $2,1
   add $2,$3
-  div $3,$5
-  mov $4,$2
+  div $2,$5
 lpe
-mov $0,$3
+mov $0,$2

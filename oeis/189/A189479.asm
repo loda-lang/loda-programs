@@ -1,26 +1,13 @@
 ; A189479: Fixed point starting with 0 of the morphism 0->01, 1->101.
-; Submitted by [AF>Libristes] ElGuillermo
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1
 
-mov $7,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  sub $4,$6
-  mov $0,$7
-  sub $0,$3
-  mov $1,0
-  mov $5,2
-  sub $5,$0
-  add $0,$4
-  lpb $0
-    mov $0,0
-    cmp $1,0
-    add $2,$1
-    mov $5,1
-    add $5,$2
-  lpe
-  mov $6,$5
-  sub $6,1
-lpe
-mov $0,$1
+mov $1,$0
+sub $0,1
+trn $0,1
+seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+min $1,1
+add $1,1
+mul $0,$1
+div $0,2
+sub $0,1

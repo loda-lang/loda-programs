@@ -64,12 +64,14 @@ A033633: Primes modulo 19.
 A034785: a(n) = 2^(n-th prime).
 A035011: A006318(n) - 1.
 A035116: a(n) = tau(n)^2, where tau(n) = A000005(n).
+A036689: Product of a prime and the previous number.
 A037168: a(n) = 2*prime(n) - 2.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
 A038500: Highest power of 3 dividing n.
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
+A039643: Number of steps to fixed point of "k -> k/2 or (k-1)/2 until result is prime", starting with prime(n)+1.
 A039649: a(n) = phi(n)+1.
 A039701: a(n) = n-th prime modulo 3.
 A039702: a(n) = n-th prime modulo 4.
@@ -274,6 +276,7 @@ A146110: Bell numbers (A000110) read mod 20.
 A146116: Bell numbers (A000110) read mod 26.
 A146121: Bell numbers (A000110) read mod 31.
 A151549: a(n) = (A151548(n)-1)/2.
+A153481: a(n) = prime(n)^3 - 2.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
@@ -300,6 +303,7 @@ A181932: A003136(n) mod 2.
 A182200: a(n) = prime(n)^2-3.
 A185322: a(n) = ceiling(prime(n)/10).
 A186621: Semiprimes - 1.
+A193462: Sum of the distinct prime divisors of n^2+1.
 A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
@@ -315,6 +319,7 @@ A242120: Primes modulo 20.
 A242122: Primes modulo 22.
 A242125: Primes modulo 27.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
+A244735: a(n) = (prime(n) mod 5) mod 2.
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
 A265538: Largest base-7 palindrome m <= n, written in base 7.
