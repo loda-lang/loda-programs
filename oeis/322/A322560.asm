@@ -1,0 +1,25 @@
+; A322560: One of the two successive approximations up to 17^n for 17-adic integer sqrt(2). This is the 11 (mod 17) case (except for n = 0).
+; Submitted by USTL-FIL (Lille Fr)
+; 0,11,45,623,39927,958658,17996942,66272080,886949426,63668766395,1723899037353,3739892937802,38011789245435,2951122975394240,111901481337359547,1795679746931368837,27557487210519710974,708814173469855869708,2363294697242529398062
+
+mov $1,1
+mov $3,3
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  mul $2,2
+  pow $4,6
+  div $4,$1
+  mul $4,$2
+  add $1,$2
+  mul $1,5
+  add $1,$2
+  add $3,$4
+  mod $3,$1
+  mov $2,1
+  add $2,$3
+  mov $4,$2
+lpe
+sub $1,$4
+mov $0,$1
