@@ -1,0 +1,10 @@
+; A096441: Number of palindromic and unimodal compositions of n. Equivalently, the number of orbits under conjugation of even nilpotent n X n matrices.
+; Submitted by [AF] Kalianthys
+; 1,2,2,4,3,7,5,11,8,17,12,26,18,37,27,54,38,76,54,106,76,145,104,199,142,266,192,357,256,472,340,621,448,809,585,1053,760,1354,982,1740,1260,2218,1610,2818,2048,3559,2590,4485,3264,5616,4097,7018,5120,8728,6378,10826,7917,13373,9792,16484,12076,20236,14848,24793,18200,30275,22250,36886,27130,44810,32992,54329,40026,65683,48446,79265,58499,95419,70488,114650,84756,137447,101698,164496,121792,196445,145578,234221,173682,278720,206848,331143,245920,392722,291874,465061,345856,549781,409174,649019
+
+add $0,1
+mov $1,$0
+seq $0,35363 ; Number of partitions of n into even parts.
+seq $1,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+add $1,$0
+mov $0,$1
