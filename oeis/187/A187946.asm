@@ -1,16 +1,12 @@
 ; A187946: [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=5, [ ]=floor.
-; Submitted by Skillz
+; Submitted by Landjunge
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 
-lpb $0
-  lpb $0
-    seq $0,194029 ; Natural fractal sequence of the Fibonacci sequence (1, 2, 3, 5, 8, ...).
-    sub $0,2
-  lpe
-  sub $0,2
-  mov $1,$0
-lpe
-lpb $1
-  mov $1,1
-lpe
+seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+mov $1,-4
+add $1,$0
+add $1,$0
+max $1,$0
+sub $1,$0
 mov $0,$1
+mod $0,2

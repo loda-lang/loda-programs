@@ -6,11 +6,8 @@ lpb $0
   trn $0,1
   seq $0,33845 ; Numbers n of the form 2^i*3^j, i and j >= 1.
   sub $0,1
-  mul $0,2
   mov $1,$0
   mov $0,0
 lpe
 mov $0,$1
-mul $0,2
-div $0,4
 add $0,1

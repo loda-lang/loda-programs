@@ -1,11 +1,11 @@
 ; A001468: There are a(n) 2's between successive 1's.
-; Submitted by damotbe
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1
 
-lpb $0
-  mov $1,$0
-  seq $1,114986 ; Characteristic function of (A000201 prefixed with 0).
-  sub $0,$1
-lpe
-mov $0,$1
-add $0,1
+mov $1,$0
+trn $0,1
+seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+min $1,1
+add $1,1
+mul $0,$1
+div $0,2

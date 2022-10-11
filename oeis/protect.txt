@@ -183,6 +183,7 @@ A098823: a(n) = 16*(8*prime(n) + 7).
 A099250: Bisection of Motzkin numbers A001006.
 A099251: Bisection of Motzkin sums (A005043).
 A099585: Remove all 3s from prime(n) - 1.
+A099777: Number of divisors of 2n.
 A099817: Bisection of A000796 (decimal expansion of Pi).
 A099822: Bisection of A005117.
 A099836: Bisection of A000961.
@@ -296,6 +297,7 @@ A176406: Odd semiprimes minus 2.
 A176546: Bernoulli numerators A000367 with an additional 1 inserted to represent B_1.
 A177882: Trisection of A001317.
 A178064: Number of 0's in binary representation of n-th semiprime.
+A178743: a(n) = A000041(n) mod 10.
 A179262: a(n) = 2*prime(n)^2 - 1.
 A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
@@ -339,6 +341,7 @@ A319089: a(n) = tau(n)^3, where tau is A000005.
 A319528: a(n) = 8 * sigma(n).
 A326122: a(n) = 10 * sigma(n).
 A330410: a(n) = 6*prime(n) - 1.
+A333169: a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
 A336551: a(n) = A003557(n) - 1.
 A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.
 A356533: a(n) = sigma_2(n)^2.

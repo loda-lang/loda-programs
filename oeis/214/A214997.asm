@@ -4,6 +4,4 @@
 
 add $0,2
 seq $0,52543 ; Expansion of (1-x)/(1 - 3*x - 2*x^2 + 2*x^3).
-sub $0,8
-div $0,2
-add $0,4
+dif $0,2

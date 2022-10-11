@@ -1,21 +1,24 @@
 ; A246590: Even numbers whose odd part is of the form 4m+3; Numbers missing from A241816.
-; Submitted by Jon Maiga
+; Submitted by [AF>France>Sale-caractere] Antares
 ; 6,12,14,22,24,28,30,38,44,46,48,54,56,60,62,70,76,78,86,88,92,94,96,102,108,110,112,118,120,124,126,134,140,142,150,152,156,158,166,172,174,176,182,184,188,190,192,198,204,206,214,216,220,222,224,230,236,238,240,246,248,252,254,262,268,270,278,280,284,286,294,300,302,304,310,312,316,318,326,332,334,342,344,348,350,352,358,364,366,368,374,376,380,382,384,390,396,398,406,408
 
+add $0,2
+mov $1,1
 mov $2,$0
-add $0,1
-add $2,2
-pow $2,2
+sub $0,1
+pow $2,4
 lpb $2
+  add $1,2
   mov $3,$1
-  seq $3,89013 ; a(n) = (A088567(8n) mod 2).
+  seq $3,89312 ; Write n in binary; a(n) = number represented by rightmost block of 1's.
+  sub $3,1
+  cmp $3,0
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
+sub $0,7
+div $0,3
 mul $0,2
+add $0,6

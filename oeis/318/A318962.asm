@@ -1,21 +1,19 @@
 ; A318962: Digits of one of the two 2-adic integers sqrt(-7) that ends in 01.
-; Submitted by chr80
+; Submitted by ChelseaOilman
 ; 1,0,1,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,0,0,1,1,0,0,0,0,1,0,1,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,0,1,1,1,1
 
 mov $1,1
-mov $2,2
-mov $3,$0
-mov $0,6
-lpb $3
-  sub $3,1
-  add $4,1
-  sub $0,4
-  mul $1,$0
-  div $1,$4
-  div $2,2
-  mul $2,-1
-  add $2,$1
+lpb $0
+  sub $0,1
+  mul $1,2
+  pow $3,2
+  add $3,1
+  mod $3,$1
+  mov $2,1
+  add $2,$3
+  mov $4,$2
 lpe
-mov $0,$2
-gcd $0,2
-div $0,2
+sub $1,$3
+max $1,$4
+mov $0,$1
+mod $0,2

@@ -1,34 +1,7 @@
 ; A320074: Number of length n primitive (=aperiodic or period n) 9-ary words which are earlier in lexicographic order than any other word derived by cyclic shifts of the alphabet.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF] Kalianthys
 ; 1,8,80,720,6560,58960,531440,4782240,43046640,387413920,3486784400,31380999840,282429536480,2541865296880,22876792448320,205891127311680,1853020188851840,16677181656560880,150094635296999120,1350851717285570880,12157665459056397280,109418989128025574800,984770902183611232880,8862938119621115254080,79766443076872509856800,717897987691570159233760,6461081889226673255885520,58149737003037517824561120,523347633027360537213511520,4710128697246221957741675840,42391158275216203514294433200
 
 add $0,1
-mov $2,$0
-mov $6,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    sub $4,$0
-    trn $5,1
-    mul $7,$11
-    cmp $7,$8
-    sub $7,2
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    mov $5,$4
-    add $6,$7
-  lpe
-  sub $6,$3
-  mov $9,10
-  sub $9,1
-  add $9,$2
-  mul $1,9
-  add $1,$6
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$1
+seq $0,218126 ; Number of 9-ary sequences with primitive period n.
+div $0,9

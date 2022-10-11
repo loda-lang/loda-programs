@@ -1,9 +1,19 @@
 ; A020639: Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-; Submitted by Penguin
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,2,5,2,7,2,3,2,11,2,13,2,3,2,17,2,19,2,3,2,23,2,5,2,3,2,29,2,31,2,3,2,5,2,37,2,3,2,41,2,43,2,3,2,47,2,7,2,3,2,53,2,5,2,3,2,59,2,61,2,3,2,5,2,67,2,3,2,71,2,73,2,3,2,7,2,79,2,3,2,83,2,5,2,3,2,89,2,7,2,3,2,5,2,97,2,3,2
 
-mov $1,$0
-seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
-add $1,1
-div $1,$0
-mov $0,$1
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    mul $1,3
+    add $2,1
+    sub $3,$1
+  lpe
+  dif $0,$2
+  bin $0,$3
+  max $0,$2
+lpe

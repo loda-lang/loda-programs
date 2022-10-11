@@ -4,6 +4,7 @@
 
 mov $2,$0
 lpb $0
+  sub $2,1
   mov $3,$1
   seq $3,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
   sub $0,$3
@@ -11,7 +12,6 @@ lpb $0
   mov $4,$0
   max $4,1
   cmp $4,$0
-  sub $2,1
-  mul $2,$4
 lpe
+mul $2,$4
 mov $0,$2

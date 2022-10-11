@@ -11,7 +11,7 @@ lpb $5
   mul $3,$0
   mov $4,$0
   max $4,0
-  seq $4,26325 ; Number of (s(0), s(1), ..., s(n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, s(0) = 2, s(n) = 2. Also T(n,n), where T is the array in A026323.
+  seq $4,26325 ; Number of paths in the plane x >= 0 and y >= -2, from (0,0) to (n,0), and consisting of steps U = (1,1), D = (1,-1) and H = (1,0).
   mov $2,$5
   mul $2,$4
   add $1,$2

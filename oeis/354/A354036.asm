@@ -1,10 +1,10 @@
 ; A354036: a(n) = 1 if n is odd and sigma(n^2) == 1 (mod 4), otherwise 0.
-; Submitted by Christian Krause
+; Submitted by Landjunge
 ; 1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0
 
 mov $1,$0
-seq $1,97022 ; a(n) = (sigma(2n^2)-3)/6.
 gcd $1,2
-gcd $1,$0
-mov $0,$1
-div $0,2
+seq $0,256452 ; Number of integer solutions to n^2 = x^2 + y^2 with x>0, y>=0.
+div $0,$1
+add $0,1
+mod $0,2

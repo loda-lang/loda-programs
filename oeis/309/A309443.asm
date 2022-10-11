@@ -1,11 +1,25 @@
 ; A309443: Coefficients in 5-adic expansion of 4^(1/3).
-; Submitted by [AF>Amis de la mer] Qingdan
+; Submitted by [AF>Libristes] erik
 ; 4,1,2,4,4,3,3,4,0,4,2,1,1,1,4,2,2,3,3,2,3,4,2,3,2,0,3,4,2,1,4,3,3,3,4,4,0,3,2,0,0,2,4,2,3,4,4,1,4,4,1,3,1,2,2,0,3,0,1,1,3,2,0,0,0,1,2,1,4,2,1,0,4,0,2,1,4,0,0,3,1,0,4,1,2,4,2,0,1,4,4,4,1,4,1,2,4,0,4,3
 
-mov $1,5
-pow $1,$0
+mov $1,1
 add $0,1
-seq $0,309444 ; The successive approximations up to 5^n for 5-adic integer 4^(1/3).
-add $0,$1
-div $0,$1
-sub $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  add $2,$1
+  mul $2,2
+  add $3,1
+  pow $3,6
+  add $4,7
+  mov $5,$1
+  add $1,$2
+  add $3,$4
+  mod $3,$1
+  mov $2,1
+  add $2,$3
+  mov $4,$2
+  sub $4,24
+lpe
+div $2,$5
+mov $0,$2

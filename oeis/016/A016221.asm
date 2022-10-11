@@ -1,16 +1,12 @@
 ; A016221: Inverse of 2212th cyclotomic polynomial.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF] Kalianthys
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,1
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,15661 ; Inverse of 1652nd cyclotomic polynomial.
-  sub $0,$1
-  add $1,$0
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $1,$2
+  seq $1,15661 ; Inverse of 1652nd cyclotomic polynomial.
 lpe
 mov $0,$1

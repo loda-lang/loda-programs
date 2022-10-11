@@ -1,18 +1,19 @@
 ; A106690: Numbers k such that 11*k - 97 is prime.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by [AF>Libristes]Maeda
 ; 9,10,16,18,24,28,30,34,46,48,58,60,64,70,76,78,84,94,106,108,118,120,126,136,144,148,150,154,156,160,178,186,190,198,210,226,228,234,238,240,246,256,258,268,274,276,286,294,298,300,310,324,328,330,340,346,354,360,364,366,384,396,408,414,420,424,438,444,448,456,468,484,498,514,520,526,528,538,540,550,568,570,574,598,604,606,616,618,630,636,664,666,694,696,700,706,708,714,720,724
 
-mov $2,12
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,11
-  sub $3,$0
+mov $1,2
+mov $3,11
+mov $2,$0
+pow $2,4
+lpb $2
+  sub $1,1
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,12
+  sub $2,$0
 lpe
-pow $2,$0
-mov $0,$2
+mov $0,$1
 div $0,11
 add $0,9

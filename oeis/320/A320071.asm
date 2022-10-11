@@ -1,34 +1,9 @@
 ; A320071: Number of length n primitive (=aperiodic or period n) 6-ary words which are earlier in lexicographic order than any other word derived by cyclic shifts of the alphabet.
-; Submitted by Science United
+; Submitted by [AF>Libristes] erik
 ; 1,5,35,210,1295,7735,46655,279720,1679580,10076395,60466175,362789070,2176782335,13060647355,78364162765,470184704640,2821109907455,16926657757380,101559956668415,609359729932590,3656158440016285,21936950579911675,131621703842267135,789730222690526040,4738381338321615600,28430288027752919035,170581728179576528640,1023490369064408555310,6140942214464815497215,36845653286710518735065,221073919720733357899775,1326443518323929962414080,7958661109946400823925725,47751966659675584196444155
 
 add $0,1
-mov $2,$0
-mov $6,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    sub $4,$0
-    trn $5,1
-    mul $7,$11
-    cmp $7,$8
-    sub $7,2
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    mov $5,$4
-    add $6,$7
-  lpe
-  sub $6,$3
-  mov $9,10
-  sub $9,1
-  add $9,$2
-  mul $1,6
-  add $1,$6
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$1
+seq $0,54721 ; Number of 6-ary sequences with primitive period n.
+sub $0,6
+div $0,6
+add $0,1

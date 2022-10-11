@@ -1,9 +1,25 @@
 ; A322092: Digits of one of the two 13-adic integers sqrt(-3).
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 7,9,0,6,2,5,8,8,3,4,3,10,4,7,0,9,7,8,12,6,7,11,10,6,7,3,8,3,11,11,8,6,1,9,11,0,7,10,10,6,9,1,1,4,8,7,2,2,5,3,7,5,5,5,4,12,11,12,5,5,12,3,0,2,4,11,6,11,10,2,10,3,5,10,11,2,1,8,9,7,6,9,8,9,4,3,7,1,5,4,8,6,2,1,10,1,2,7,11,5
 
-pow $1,$0
-seq $0,322091 ; Digits of one of the two 13-adic integers sqrt(-3).
-sub $1,$0
-mov $0,$1
-add $0,12
+mov $1,-1
+mov $3,3
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  mul $2,12
+  add $4,2
+  mov $5,$1
+  add $1,$2
+  add $3,1
+  pow $3,2
+  add $3,$4
+  mod $3,$1
+  add $3,$1
+  mov $2,1
+  add $2,$3
+  mov $4,$2
+  div $2,$5
+lpe
+mov $0,$2

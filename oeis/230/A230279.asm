@@ -1,26 +1,18 @@
 ; A230279: Number of nonnegative integer solutions to the equation x^2 - 16*y^2 = n.
-; Submitted by Spot T
+; Submitted by Simon Strandgaard
 ; 1,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,1,0,0,0,0,0,0,1,2,0,0,1,0,0,0,0,2,0,0,0,0,0,0,1,2,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,3,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,2
 
-add $0,2
-mov $2,$0
+mov $1,1
+mov $2,1
+add $0,1
 lpb $0
-  add $4,2
-  min $0,$4
-  mov $3,$2
-  dif $3,$0
-  mov $0,$3
-  mod $0,4
-  mod $0,3
-  mod $0,2
-  mul $0,94
-  mul $3,$4
-  cmp $3,$2
-  mul $3,$0
-  add $2,1
-  sub $2,$4
-  mov $0,$2
-  add $1,$3
+  sub $0,$2
+  add $1,7
+  add $2,2
+  mov $3,$0
+  gcd $3,$1
+  div $3,$1
+  add $4,$3
+  add $1,1
 lpe
-mov $0,$1
-div $0,94
+mov $0,$4

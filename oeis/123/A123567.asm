@@ -1,39 +1,20 @@
 ; A123567: Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by arkiss
 ; 3,5,7,11,13,17,19,25,29,33,35,41,43,47,51,59,61,67,69,75,79,83,85,93,97,101,107,113,115,121,123,133,137,141,145,153,155,159,163,171,173,179,181,187,193,197,199,209,213,219,223,229,231,239,243,251,255,259,261,269,271,275,281,293,297,303,305,311,315,321,323,333,335,339,345,351,355,361,363,373,381,385,387,395,399,403,407,415,417,425,429,435,439,443,447,459,461,467,473,481
 
-mov $9,$0
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $7,0
-  mov $0,$9
-  sub $0,$5
-  mov $6,$0
-  mov $8,$0
-  lpb $8
-    sub $8,1
-    mov $1,0
-    mov $2,2
-    mov $0,$6
-    sub $0,$8
-    add $0,1
-    lpb $0
-      mov $3,$0
-      lpb $3
-        mov $4,$0
-        mod $4,$2
-        add $2,1
-        sub $3,$4
-      lpe
-      div $0,$2
-      add $1,1
-    lpe
-    mov $0,$1
-    sub $0,1
-    add $7,$0
+mov $2,$0
+lpb $2
+  mov $2,0
+  mov $3,$0
+  mov $1,$0
+  lpb $1
+    sub $1,1
+    mov $0,$3
+    sub $0,$1
+    seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+    add $4,$0
   lpe
 lpe
-mov $0,$7
+mov $0,$4
 mul $0,2
 add $0,3

@@ -1,16 +1,5 @@
 ; A015885: Inverse of 1876th cyclotomic polynomial.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by SirSexington
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,1
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,15661 ; Inverse of 1652nd cyclotomic polynomial.
-  sub $0,$1
-  add $1,$0
-lpe
-mov $0,$1
+seq $0,15717 ; Inverse of 1708th cyclotomic polynomial.

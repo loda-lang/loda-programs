@@ -1,10 +1,10 @@
 ; A129251: Number of distinct prime factors p of n such that p^p is a divisor of n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
 
 mov $1,$0
 seq $1,342023 ; a(n) = 1 if there is a prime p such that p^p divides n, otherwise 0.
-trn $0,1
+mul $0,$1
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 mul $1,$0

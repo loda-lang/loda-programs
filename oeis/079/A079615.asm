@@ -1,6 +1,13 @@
 ; A079615: Product of all distinct prime factors of all composite numbers between n-th prime and next prime.
-; Submitted by Acheron-494
+; Submitted by Landjunge
 ; 2,6,30,6,210,6,2310,2730,30,39270,7410,42,7590,46410,1272810,30,930930,82110,6,21111090,1230,48969690,1738215570,2310,102,144690,6,85470,29594505363092670,16770,49990710,138,7849357706190,30,300690390,20223210,1122990,37916970,351764490,30,733629525258630,6,264810,66,184884688691132430,80668407061353381270,23730,114,1540770,10166899470,30,3671659601610,114707670,16500690570,13870951710,30,1608617010,904890,282,5798192799308910,2902834702748446636170,7375830,78,2604630,1256143203038729975970
 
-seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
-seq $0,76978 ; Product of the distinct primes dividing the product of composite numbers between consecutive primes.
+add $0,1
+mov $1,$0
+mov $0,3
+add $0,$1
+div $0,3
+seq $0,99788 ; a(n) = Product_{i=1..2n} prime(i).
+seq $1,61214 ; Product of composite numbers between the n-th and (n+1)st primes.
+gcd $1,$0
+mov $0,$1

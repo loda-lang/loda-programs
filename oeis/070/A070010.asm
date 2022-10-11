@@ -1,16 +1,9 @@
 ; A070010: GCD of consecutive values of sum-of-proper divisors.
-; Submitted by PDW
+; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,1,4,1,1,1,1,1,3,1,1,1,1,11,1,1,1,6,2,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,4,1,1,1,23,1,1,1,1,3,1,1,5,25,1,1,1,1,3,1
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,173455 ; Row sums of triangle A027751.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  gcd $0,$1
-lpe
+mov $1,$0
+add $1,1
+seq $1,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
+seq $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
+gcd $0,$1

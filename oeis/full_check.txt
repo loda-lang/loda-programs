@@ -113,6 +113,7 @@ A049345: n written in primorial base.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
 A051903: Maximal exponent in prime factorization of n.
+A052223: Numbers whose sum of digits is 9.
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
 A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
@@ -143,6 +144,7 @@ A077655: Number of consecutive successors of n having the same number of prime f
 A078175: Numbers with an integer arithmetic mean of all prime factors.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.
 A079093: Squarefree kernel of (prime(n)+1)*(prime(n+1)+1)/4.
+A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
 A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
 A080081: Beatty sequence for (3+sqrt(13))/2.
@@ -355,6 +357,7 @@ A265673: Area A under the trajectory of each odd number in the "3x+1" problem.
 A268335: Exponentially odd numbers.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A272550: Lexicographically earliest increasing sequence of primes such that odd-indexed terms have final digit 1 and even-indexed terms have final digit 9.
+A274036: a(n) is the thickness of n (see Comments section for definition).
 A276084: a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
 A276150: Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.
 A276151: n minus the greatest primorial number (A002110) which divides n: a(n) = n - A053589(n).
@@ -440,6 +443,7 @@ A317440: Numbers missing from A317438.
 A319432: The first differences (A129761) of the tribonacci representation numbers (A003714 or A014417) consists of runs of 1's separated by the terms of the present sequence.
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 A319434: Take Golomb's sequence A001462 and shorten all the runs by 1.
+A319988: a(n) = 1 if n is divisible by the square of its largest prime factor, 0 otherwise.
 A320895: a(n) = Sum_{k=1..n} k^3 * tau(k), where tau is A000005.
 A321371: n + [n*r/s] + [n*t/s], where r = 1, s = cos(2*Pi/5), t = sec(2*Pi/5).
 A322319: a(n) = lcm(A003557(n), A048250(n)).
@@ -454,6 +458,7 @@ A327203: Positions of 0's in {A327202(n) : n > 0}.
 A327204: Positions of 1's in {A327202(n) : n > 0}.
 A327207: Positions of 1's in {A327205(n) : n > 0}.
 A327257: Positions of 0's in {A327256(n) : n > 0}.
+A327300: Positions of 1's in {A327298(n) : n > 0}.
 A327829: Squarefree numbers with a prime number of prime factors.
 A328308: a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
 A328616: Number of digits in primorial base expansion of n that are maximal possible in their positions.
@@ -477,8 +482,10 @@ A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of wh
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).
+A348498: a(n) = gcd(A003415(n), A347130(n)) / A003557(n), where A003415 is the arithmetic derivative and A347130 is its Dirichlet convolution with the identity function.
 A348741: Odd numbers k for which A161942(k) < k, where A161942 is the odd part of sigma.
 A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).
+A350389: a(n) is the largest unitary divisor of n that is an exponentially odd number (A268335).
 A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.

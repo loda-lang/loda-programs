@@ -1,6 +1,15 @@
 ; A156874: Number of Sophie Germain primes <= n.
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,1,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10
 
-add $0,1
-mul $0,2
-seq $0,156875 ; Number of safe primes <= n.
+mov $3,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,1
+  seq $0,156660 ; Characteristic function of Sophie Germain primes.
+  add $2,$0
+lpe
+mov $0,$2

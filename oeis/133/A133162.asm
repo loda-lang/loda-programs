@@ -1,8 +1,6 @@
 ; A133162: Trajectory of 1 under the morphism 1 -> {1,1,2,1}, 2 -> {2}.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by [AF] Kalianthys
 ; 1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1
 
 seq $0,49320 ; Non-primitive Chacon sequence: fixed under 0->0010, 1->1.
-mul $0,10
-div $0,6
 add $0,1

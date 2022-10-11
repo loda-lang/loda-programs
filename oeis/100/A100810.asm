@@ -4,6 +4,7 @@
 
 seq $0,40 ; The prime numbers.
 add $0,1
-seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+sub $1,$0
+mov $0,$1
 add $0,1
-mod $0,2

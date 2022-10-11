@@ -8,7 +8,7 @@ add $2,1
 lpb $2
   sub $2,1
   mov $0,$1
-  seq $0,4799 ; Self convolution of Lucas numbers.
+  seq $0,4799 ; Self-convolution of Lucas numbers.
   add $1,1
   mov $3,$5
   add $3,$0

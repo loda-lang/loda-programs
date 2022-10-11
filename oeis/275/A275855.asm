@@ -1,12 +1,8 @@
 ; A275855: Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
-; Submitted by Stony666
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0
 
-lpb $0
-  trn $0,1
-  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
-  sub $0,1
-lpe
-lpb $0
-  pow $0,0
-lpe
+trn $0,1
+seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+add $0,1
+mod $0,2

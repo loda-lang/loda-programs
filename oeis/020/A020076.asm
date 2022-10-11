@@ -16,8 +16,8 @@ lpb $0
     seq $7,144827 ; Partial products of successive terms of A017029; a(0)=1.
     mov $9,10
     add $9,$5
-    mov $2,1
     mul $7,$$9
+    sub $2,2
     add $4,$0
     add $5,1
     add $6,$7
