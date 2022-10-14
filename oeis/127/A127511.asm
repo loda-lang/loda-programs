@@ -3,8 +3,7 @@
 
 mov $1,$0
 seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-lpb $0
-  sub $0,1
-  mul $1,2
-lpe
+mov $2,2
+pow $2,$0
+mul $1,$2
 mov $0,$1

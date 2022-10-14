@@ -4,8 +4,8 @@
 
 lpb $0
   mov $2,$0
-  mov $0,0
   seq $2,49680 ; a(n) = (L(n) + L(2*n))/2, where L = A000032 (the Lucas sequence).
+  mov $0,0
   mov $1,$2
   add $1,$2
   sub $1,2

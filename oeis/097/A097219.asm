@@ -4,10 +4,10 @@
 
 mov $1,$0
 seq $1,290501 ; Hypotenuses for which there exist exactly 11 distinct integer triangles.
+trn $0,41
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 mul $1,$0
 sub $2,$1
 mov $0,$2
-div $0,48828125
-mul $0,15625
+div $0,3125

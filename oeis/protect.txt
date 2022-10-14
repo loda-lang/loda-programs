@@ -311,6 +311,7 @@ A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
+A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).
 A229787: Primes modulo 24.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
 A234645: Sum of the divisors of n^3+1.

@@ -1,11 +1,15 @@
 ; A099584: Exponent of 3 in factorization of prime(n) - 1.
+; Submitted by Landjunge
 ; 0,0,0,1,0,1,0,2,0,0,1,2,0,1,0,0,0,1,1,0,2,1,0,0,1,0,1,0,3,0,2,0,0,1,0,1,1,4,0,0,0,2,0,1,0,2,1,1,0,1,0,0,1,0,0,0,0,3,1,0,1,0,2,0,1,0,1,1,0,1,0,0,1,1,3,0,0,2,0,1,0,1,0,3,1,0,0,1,0,1,0,0,5,0,1,0,0,0,2,3
 
-seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,1
+seq $0,40 ; The prime numbers.
+add $2,$0
+sub $0,2
+mul $0,$2
+add $0,1
 lpb $0
   dif $0,3
   add $1,5
 lpe
-div $1,5
 mov $0,$1
+div $0,10

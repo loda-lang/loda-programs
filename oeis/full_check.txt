@@ -140,6 +140,7 @@ A073093: Number of prime power divisors of n.
 A074939: Even numbers such that base 3 representation contains no 2.
 A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.
 A075802: Characteristic function of perfect powers, A001597.
+A076558: a(n) = r * min(e_1, ..., e_r), where n = p_1^e_1 . .... p_r^e_r is the canonical prime factorization of n, a(1) = 0.
 A077655: Number of consecutive successors of n having the same number of prime factors as n (counted with multiplicity).
 A078175: Numbers with an integer arithmetic mean of all prime factors.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.
@@ -338,6 +339,7 @@ A247648: Numbers whose binary expansion begins and ends with 1 and does not cont
 A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
+A256757: Number of iterations of A007733 required to reach 1.
 A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.
 A258703: a(n) = floor(n/sqrt(2) - 1/2).
 A259599: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,1) and midword sequence (a(n)); see Comments.
@@ -368,6 +370,7 @@ A276854: Beatty sequence for 1 + sqrt(5).
 A276855: Beatty sequence for (3 + golden ratio).
 A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
+A277052: a(n) = n+floor(n/(2/sqrt(Pi)-1)).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
 A277904: Irregular table: row n (n >= 0) is obtained by listing numbers 0 .. A018819(n)-1.
 A278569: Numbers of the form p^i*q^j*r^k where p,q,r are distinct odd primes and i,j,k >= 1.
@@ -486,6 +489,7 @@ A348498: a(n) = gcd(A003415(n), A347130(n)) / A003557(n), where A003415 is the a
 A348741: Odd numbers k for which A161942(k) < k, where A161942 is the odd part of sigma.
 A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).
 A350389: a(n) is the largest unitary divisor of n that is an exponentially odd number (A268335).
+A350390: a(n) is the largest exponentially odd divisor of n.
 A353471: a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
 A353525: a(n) = 1 if the number of trailing zeros in primorial base representation of n is odd, otherwise 0.
 A353526: The smallest prime not dividing n, reduced modulo 4.

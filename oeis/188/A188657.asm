@@ -9,8 +9,8 @@ mul $3,4
 mov $7,3
 lpb $7
   lpb $3
-    mul $1,$3
     mul $2,$3
+    mul $1,$3
     add $1,$2
     cmp $7,0
     cmp $8,0
@@ -18,8 +18,8 @@ lpb $7
     div $1,$5
     div $2,$5
     add $2,$1
-    mul $1,3
     mul $2,4
+    mul $1,3
     sub $3,2
   lpe
 lpe

@@ -5,9 +5,8 @@
 seq $0,40 ; The prime numbers.
 bin $0,2
 add $1,$0
-mov $2,6
 lpb $1
   add $1,$0
-  mov $0,$2
   trn $1,3
+  mov $0,6
 lpe

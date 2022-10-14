@@ -1,8 +1,11 @@
 ; A166624: Totally multiplicative sequence with a(p) = 3p for prime p.
-; Submitted by Skivelitis2
+; Submitted by Simon Strandgaard
 ; 1,6,9,36,15,54,21,216,81,90,33,324,39,126,135,1296,51,486,57,540,189,198,69,1944,225,234,729,756,87,810,93,7776,297,306,315,2916,111,342,351,3240,123,1134,129,1188,1215,414,141,11664,441,1350,459,1404,159,4374,495,4536,513,522,177,4860,183,558,1701,46656,585,1782,201,1836,621,1890,213,17496,219,666,2025,2052,693,2106,237,19440,6561,738,249,6804,765,774,783,7128,267,7290,819,2484,837,846,855,69984,291,2646,2673,8100
 
-mov $1,$0
-add $1,1
-seq $0,165824 ; Totally multiplicative sequence with a(p) = 3.
-mul $0,$1
+mov $2,$0
+add $2,1
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+mov $1,3
+pow $1,$0
+mul $1,$2
+mov $0,$1

@@ -1,9 +1,9 @@
 ; A072815: Sum of proper divisors of 6n + 1.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard
 ; 0,1,1,1,6,1,1,1,8,17,1,1,1,1,23,21,1,1,1,29,12,1,27,1,35,1,1,1,14,73,1,29,1,1,47,1,39,1,1,53,1,33,35,45,59,1,1,1,18,65,51,1,1,41,109,1,1,57,1,77,20,1,1,1,191,41,1,45,1,89,1,69,1,1,95,53,1,1,75,145,51,1,47,1,107,81,59,1,24,113,1,1,87,57,119,1,1,65,51,269
 
 mul $0,6
 mov $1,$0
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,46897 ; Sum of divisors of n that are not divisible by 4.
 sub $0,1
 sub $0,$1

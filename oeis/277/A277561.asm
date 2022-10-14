@@ -1,7 +1,16 @@
 ; A277561: a(n) = Sum_{k=0..n} ({binomial(n+2k,2k)*binomial(n,k)} mod 2).
+; Submitted by [AF>Libristes] nico8313
 ; 1,2,2,2,2,4,2,2,2,4,4,4,2,4,2,2,2,4,4,4,4,8,4,4,2,4,4,4,2,4,2,2,2,4,4,4,4,8,4,4,4,8,8,8,4,8,4,4,2,4,4,4,4,8,4,4,2,4,4,4,2,4,2,2,2,4,4,4,4,8,4,4,4,8,8,8,4,8,4,4,4,8,8,8,8,16,8,8,4,8,8,8,4,8,4,4,2,4,4,4
 
-seq $0,69010 ; Number of runs of 1's in the binary representation of n.
-mov $1,2
-pow $1,$0
-mov $0,$1
+mov $2,1
+lpb $0
+  lpb $0
+    dif $0,2
+    mov $1,$2
+  lpe
+  add $2,$1
+  max $2,2
+  div $0,2
+  mov $1,0
+lpe
+mov $0,$2
