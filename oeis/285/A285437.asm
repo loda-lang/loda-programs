@@ -8,7 +8,6 @@ mul $0,2
 seq $0,133179 ; A modular binomial sum transform of 2^n .
 add $1,1
 div $1,2
-lpb $1
-  sub $1,1
-  mul $0,2
-lpe
+mov $2,2
+pow $2,$1
+mul $0,$2

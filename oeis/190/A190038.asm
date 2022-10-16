@@ -16,13 +16,9 @@ sub $1,$2
 trn $1,$2
 add $1,7
 mov $6,$3
-lpb $6
-  sub $6,1
-  add $5,$3
-lpe
-mov $4,4
-lpb $4
-  sub $4,1
-  add $1,$5
-lpe
+mul $6,$3
+add $5,$6
+mov $4,$5
+mul $4,4
+add $1,$4
 mov $0,$1

@@ -5,9 +5,8 @@ mov $1,$0
 mul $0,2
 bin $0,3
 mul $0,5
-lpb $1
-  sub $1,1
-  add $0,8
-lpe
+mov $2,8
+mul $2,$1
+add $0,$2
 div $0,2
 add $0,1

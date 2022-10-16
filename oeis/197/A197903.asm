@@ -9,43 +9,20 @@ mov $3,$0
 trn $0,$1
 add $1,$0
 add $1,12
-mov $2,11
-lpb $2
-  sub $2,1
-  add $1,$3
-lpe
-mov $6,$3
-lpb $6
-  sub $6,1
-  add $5,$3
-lpe
-mov $4,$5
-mov $2,10
-lpb $2
-  sub $2,1
-  add $1,$5
-lpe
-mov $5,0
-mov $6,$3
-lpb $6
-  sub $6,1
-  add $5,$4
-lpe
-mov $4,$5
-mov $2,4
-lpb $2
-  sub $2,1
-  add $1,$5
-lpe
-mov $5,0
-mov $6,$3
-lpb $6
-  sub $6,1
-  add $5,$4
-lpe
-mov $2,1
-lpb $2
-  sub $2,1
-  add $1,$5
-lpe
+mov $8,$3
+mul $8,11
+mov $7,$3
+mul $7,$3
+mov $4,$7
+mul $4,10
+add $1,$8
+add $1,$4
+mov $6,$7
+mul $6,$3
+mov $5,$6
+mul $5,4
+mov $2,$6
+mul $2,$3
+add $1,$5
+add $1,$2
 mov $0,$1

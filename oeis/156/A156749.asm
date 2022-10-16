@@ -7,9 +7,9 @@ mul $1,2
 add $1,2
 lpb $1
   mov $2,$1
+  seq $2,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
+  add $0,$2
   sub $1,1
   div $1,2
   mul $1,2
-  seq $2,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
-  add $0,$2
 lpe

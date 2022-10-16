@@ -22,43 +22,23 @@ add $4,19
 mov $1,2
 add $1,$4
 add $1,2
-mov $2,8
-lpb $2
-  sub $2,1
-  add $1,$7
-lpe
-mov $10,$7
-lpb $10
-  sub $10,1
-  add $9,$7
-lpe
-mov $8,$9
-mov $2,13
-lpb $2
-  sub $2,1
-  add $1,$9
-lpe
-mov $9,0
-mov $10,$7
-lpb $10
-  sub $10,1
-  add $9,$8
-lpe
-mov $8,$9
-mov $2,46
-lpb $2
-  sub $2,1
-  add $1,$9
-lpe
-mov $9,0
-mov $10,$7
-lpb $10
-  sub $10,1
-  add $9,$8
-lpe
-mov $2,35
-lpb $2
-  sub $2,1
-  add $1,$9
-lpe
+mov $12,$7
+mul $12,8
+mov $14,$7
+mul $14,$7
+add $9,$14
+mov $10,$9
+mul $10,13
+add $1,$12
+add $1,$10
+mov $13,$9
+mul $13,$7
+mov $11,$13
+mul $11,46
+mov $8,$13
+mul $8,$7
+mov $2,$8
+mul $2,35
+add $1,$11
+add $1,$2
 mov $0,$1
