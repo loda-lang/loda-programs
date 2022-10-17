@@ -1,0 +1,17 @@
+; A043839: Numbers n such that number of runs in the base 4 representation of n is congruent to 2 mod 6.
+; Submitted by USTL-FIL (Lille Fr)
+; 4,6,7,8,9,11,12,13,14,16,20,22,23,26,31,32,37,40,41,43,47,48,53,58,60,61,62,64,80,84,86,87,90,95,106,127,128,149,160,165,168,169,171,175,191,192,213,234,240,245,250,252,253,254,256
+
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  seq $0,43834 ; Numbers n such that number of runs in the base 4 representation of n is congruent to 2 mod 5.
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
+lpe
+mov $0,$2
