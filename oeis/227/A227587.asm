@@ -1,9 +1,11 @@
 ; A227587: Expansion of (phi(-q^3)^2 / (phi(-q) * phi(-q^9)))^2 in powers of q where phi() is a Ramanujan theta function.
-; Submitted by damotbe
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,4,12,24,44,72,120,192,300,456,680,1008,1464,2104,2976,4176,5804,7992,10920,14800,19944,26688,35504,46944,61752,80828,105288,136536,176288,226728,290448,370720,471468,597600,755032,950976,1194216,1495352,1867344,2325648,2889064,3580056,4425792,5458736,6717744,8249328,10108896,12362688,15089208,18381988,22351764,27130032,32872200,39761928,48016056,57890080,69685152,83754912,100515208,120453552,144141840,172249304,205558656,244984512,291594156,346632624,411549408,488032080,578042136,683858880
 
 cmp $1,$0
-seq $0,212484 ; Expansion of c(q^2) * b(q^6) / (b(q) * c(q) * b(q^3) * c(q^3))^(1/2) in powers of q where b(), c() are cubic AGM theta functions.
+mul $0,2
+trn $0,1
+seq $0,233693 ; Expansion of q * psi(-q) * chi(-q^6) * psi(-q^9) / (phi(-q) * phi(-q^18)) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
 add $0,1
 sub $1,$0
 mul $1,3

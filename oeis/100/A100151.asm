@@ -17,32 +17,19 @@ add $3,$2
 add $0,$3
 trn $4,$0
 add $4,$2
+mov $11,$5
+mul $11,3
+mov $9,$5
+mul $9,$5
+add $7,$9
+mov $10,$7
+mul $10,26
 mov $1,$4
-mov $9,3
-lpb $9
-  sub $9,1
-  add $1,$5
-lpe
-mov $8,$5
-lpb $8
-  sub $8,1
-  add $7,$5
-lpe
-mov $6,$7
-mov $9,26
-lpb $9
-  sub $9,1
-  add $1,$7
-lpe
-mov $7,0
-mov $8,$5
-lpb $8
-  sub $8,1
-  add $7,$6
-lpe
-mov $9,18
-lpb $9
-  sub $9,1
-  add $1,$7
-lpe
+add $1,$11
+add $1,$10
+mov $8,$7
+mul $8,$5
+mov $6,$8
+mul $6,18
+add $1,$6
 mov $0,$1

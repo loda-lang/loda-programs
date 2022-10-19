@@ -11,7 +11,6 @@ lpb $3
   seq $0,4082 ; Numbers k such that sin(k-1) <= 0 and sin(k) > 0.
   mov $1,$2
   mov $2,$0
-  mul $4,$3
 lpe
 sub $1,$2
 mov $0,$1

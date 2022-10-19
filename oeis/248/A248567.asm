@@ -20,16 +20,16 @@ lpb $2
     mul $5,2
   lpe
   mov $4,$2
-  add $5,$3
   trn $6,8
   add $6,8
-  lpb $6
-    sub $6,1
-    add $5,$3
-  lpe
+  mov $9,-1
+  mov $10,$3
+  mul $10,$6
+  add $5,$3
+  add $5,$10
+  min $6,0
   mov $1,1
   sub $2,1
-  mov $9,-1
   lpb $5
     div $5,2
     add $9,1

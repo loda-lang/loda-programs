@@ -9,56 +9,29 @@ lpb $0
   add $1,$0
   sub $0,1
 lpe
+mov $8,$5
+mul $8,118
+mov $10,$5
+mul $10,$5
+add $4,$10
+mov $12,$4
+mul $12,148
 sub $1,79
-mov $2,118
-lpb $2
-  sub $2,1
-  add $1,$5
-lpe
-mov $3,$5
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $6,$4
-mov $2,148
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$5
-lpb $3
-  sub $3,1
-  add $4,$6
-lpe
-mov $6,$4
-mov $2,85
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$5
-lpb $3
-  sub $3,1
-  add $4,$6
-lpe
-mov $6,$4
-mov $2,25
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$5
-lpb $3
-  sub $3,1
-  add $4,$6
-lpe
-mov $2,3
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
+add $1,$8
+add $1,$12
+mov $9,$4
+mul $9,$5
+mov $6,$9
+mul $6,85
+mov $11,$9
+mul $11,$5
+mov $7,$11
+mul $7,25
+add $1,$6
+add $1,$7
+mov $3,$11
+mul $3,$5
+mov $2,$3
+mul $2,3
+add $1,$2
 mov $0,$1

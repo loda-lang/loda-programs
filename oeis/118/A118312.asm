@@ -13,12 +13,8 @@ add $0,$1
 mul $0,4
 add $0,1
 mov $4,$3
-lpb $4
-  sub $4,1
-  add $5,$3
-lpe
-mov $2,7
-lpb $2
-  sub $2,1
-  add $0,$5
-lpe
+mul $4,$3
+add $5,$4
+mov $2,$5
+mul $2,7
+add $0,$2

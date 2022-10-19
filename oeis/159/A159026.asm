@@ -15,11 +15,10 @@ trn $2,2
 add $3,$4
 add $0,$3
 sub $0,$2
+mov $6,8
+mul $6,$5
 mov $1,3
 add $1,$0
-lpb $5
-  sub $5,1
-  add $1,8
-lpe
+add $1,$6
 mov $0,$1
 add $0,86

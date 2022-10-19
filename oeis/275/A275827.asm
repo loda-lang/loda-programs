@@ -4,9 +4,8 @@
 
 mov $1,$0
 seq $1,24482 ; a(n) = (1/2)*(binomial(2n, n) - binomial(2n-2, n-1)).
-lpb $0
-  sub $0,1
-  mul $1,2
-lpe
+mov $2,2
+pow $2,$0
+mul $1,$2
 mov $0,$1
 div $0,2

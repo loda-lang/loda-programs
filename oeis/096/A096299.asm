@@ -4,9 +4,16 @@
 
 mov $1,$0
 seq $1,110382 ; Numbers which are sum of distinct unary numbers (containing only ones), i.e., numbers which are sum of distinct numbers of the form (10^k - 1)/9.
-trn $0,41
+sub $0,3
+div $0,3
+trn $0,12
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
-sub $0,1
+sub $0,4
 mul $1,$0
 sub $2,$1
 mov $0,$2
+div $0,4
+mul $0,2
+sub $0,2
+div $0,2
+add $0,1

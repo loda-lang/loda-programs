@@ -3,7 +3,7 @@
 
 mul $0,6
 dif $0,4
-mov $2,2
-gcd $2,$0
-mul $0,$2
+mov $1,2
+gcd $1,$0
+mul $0,$1
 div $0,3

@@ -14,11 +14,10 @@ mov $2,$4
 sub $2,3
 mov $4,$1
 add $4,$2
+mov $5,20
+mul $5,$3
 mul $1,2
 add $1,$4
-lpb $3
-  sub $3,1
-  add $1,20
-lpe
+add $1,$5
 mov $0,$1
 add $0,125

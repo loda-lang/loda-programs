@@ -14,7 +14,7 @@ lpb $3
   add $7,$9
   sub $7,$10
   add $2,$7
-  mov $1,5
+  mul $1,15
   add $1,$6
   add $1,$2
   div $1,14
@@ -31,12 +31,9 @@ lpb $3
   add $4,$11
   add $12,$10
   sub $12,$14
-  add $15,$13
-  sub $4,$15
   sub $7,$8
   sub $7,$12
   add $7,$1
-  add $15,1
 lpe
 mov $4,10
 pow $4,$0

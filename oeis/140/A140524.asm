@@ -7,6 +7,6 @@ mov $1,$0
 mod $0,2
 add $1,$0
 add $1,13
-add $0,$1
 sub $0,14
+add $0,$1
 add $0,$2

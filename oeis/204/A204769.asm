@@ -12,14 +12,12 @@ lpb $2
   trn $2,2
   add $0,11
 lpe
-lpb $0
-  sub $0,1
-  add $1,3
-lpe
+mov $5,3
+mul $5,$0
+add $1,$5
 add $1,5
-lpb $3
-  sub $3,1
-  add $1,59
-lpe
+mov $4,59
+mul $4,$3
+add $1,$4
 mov $0,$1
 sub $0,31

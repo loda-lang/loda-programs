@@ -20,8 +20,7 @@ lpb $0
   sub $2,1
   add $4,1
   div $1,$4
-  mod $3,3
-  add $3,$1
+  mov $3,$1
   div $1,2
   mul $5,-1
   add $5,$1

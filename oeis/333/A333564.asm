@@ -4,9 +4,8 @@
 
 mov $1,$0
 seq $1,14300 ; Number of nodes of odd outdegree in all ordered rooted (planar) trees with n edges.
-lpb $0
-  sub $0,1
-  mul $1,2
-lpe
+mov $2,2
+pow $2,$0
+mul $1,$2
 mov $0,$1
 mul $0,2

@@ -23,9 +23,6 @@ lpb $0
   mov $3,3
   mov $6,3
 lpe
-lpb $2
-  sub $2,1
-  add $1,1
-lpe
+add $1,$2
 add $1,4855534
 mov $0,$1
