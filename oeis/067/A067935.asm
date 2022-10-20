@@ -1,0 +1,24 @@
+; A067935: Let rep(n) be the n-th repunit number, sequence gives values of n such that : rep(n)==rep(2) (mod n).
+; Submitted by Science United
+; 1,2,4,5,10,14,20,22,25,26,34,38,44,46,50,58,62,74,82,86,94,100,106,110,118,122,134,140,142,146,158,166,178,182,185,194,202,206,214,218,220,226,254,260,262,274,278,298,302,308,314,326,334,346,350,358,362,380,382,386,394,398,422,446,454,458,466,478,482,502,514,518,526,538,542,550,554,562,566,572,586,614,622,626,634,650,662,674,694,698,706,718,730,734,740,746,758,766,770,778
+
+mov $1,1
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $3,$1
+  sub $3,1
+  seq $3,290111 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 643", based on the 5-celled von Neumann neighborhood.
+  sub $3,1
+  mod $3,$1
+  min $3,1
+  sub $0,1
+  add $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
