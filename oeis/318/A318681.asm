@@ -1,11 +1,14 @@
 ; A318681: a(n) = n * A299149(n).
-; Submitted by [BAT] Svennemans
+; Submitted by Simon Strandgaard
 ; 1,2,9,12,25,18,49,40,243,50,121,108,169,98,225,560,289,486,361,300,441,242,529,360,1875,338,3645,588,841,450,961,2016,1089,578,1225,2916,1369,722,1521,1000,1681,882,1849,1452,6075,1058,2209,5040,7203,3750,2601,2028,2809,7290,3025,1960,3249,1682,3481,2700,3721,1922,11907,14784,4225,2178,4489,3468,4761,2450,5041,9720,5329,2738,16875,4332,5929,3042,6241,14000,229635,3362,6889,5292,7225,3698,7569,4840,7921,12150,8281,6348,8649,4418,9025,18144,9409,14406,29403,22500
 
 mov $1,$0
 mov $2,1
 add $2,$0
-seq $0,46643 ; From square root of Riemann zeta function: form Dirichlet series Sum b_n/n^s whose square is zeta function; sequence gives numerator of b_n.
+seq $0,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
+lpb $0
+  dif $0,2
+lpe
 seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 mul $1,$0
 mul $1,$2

@@ -1,11 +1,24 @@
 ; A317760: Number of nX4 0..1 arrays with every element unequal to 0, 1 or 2 horizontally, vertically or antidiagonally adjacent elements, with upper left element zero.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 8,20,28,43,72,127,232,432,813,1539,2922,5557,10577,20141,38362,73076,139212,265212,505263,962600,1833903,3493880,6656412,12681561,24160471,46029702,87694221,167072053,318300013,606414406,1155320200,2201076948,4193417324,7989156803,15220671240,28997907887,55245833032,105252491992,200523486805,382030562891,727831703458,1386640337237,2641780257337,5033030368909,9588759180114,18268179580684,34803917683564,66307246476012,126326322663015,240672636034344,458521363676799,873559389269464
 
 lpb $0
   mov $1,$0
-  seq $1,301786 ; Number of nX4 0..1 arrays with every element equal to 0 or 1 horizontally or antidiagonally adjacent elements, with upper left element zero.
   add $1,3
+  lpb $1
+    sub $1,1
+    add $3,3
+    mov $6,$5
+    add $6,$3
+    add $2,$4
+    mov $5,$3
+    add $5,$2
+    mov $3,$4
+    mov $4,$6
+  lpe
+  mov $1,$2
+  div $1,3
+  add $1,5
   mov $0,0
 lpe
 mov $0,$1

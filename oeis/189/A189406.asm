@@ -4,8 +4,8 @@
 mov $3,$0
 seq $0,180122 ; First of three "least, sum, least" self-generating sequences.
 mov $1,$0
-mul $0,2
 sub $1,1
+mul $0,2
 add $0,$1
 div $0,2
 add $0,4

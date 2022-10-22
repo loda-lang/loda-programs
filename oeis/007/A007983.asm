@@ -4,8 +4,11 @@
 
 add $0,1
 lpb $0
+  mov $3,$0
+  add $3,6
   mov $2,$0
-  seq $2,160138 ; a(n) = number of solutions to the system: x + y + z + w = n, -2x - y + z + 2w = 5 with nonnegative x, y, z, w.
+  mul $2,$3
+  div $2,12
   sub $0,2
   sub $1,1
   add $1,$2

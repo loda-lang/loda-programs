@@ -6,8 +6,21 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
-  seq $2,70031 ; Expansion of (1+x*C)*C^3, where C = (1-sqrt(1-4*x))/(2*x) is g.f. for Catalan numbers, A000108.
+  mov $4,-1
+  sub $4,$2
+  mov $2,$4
+  add $2,$4
+  sub $2,1
+  mov $3,$4
+  bin $3,$2
+  add $2,1
+  add $4,2
+  bin $4,$2
+  mul $4,2
+  add $4,$3
+  mov $5,0
+  gcd $5,$4
   add $0,1
-  add $1,$2
+  add $1,$5
 lpe
 mov $0,$1

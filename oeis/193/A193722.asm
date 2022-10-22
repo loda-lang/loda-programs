@@ -12,10 +12,9 @@ bin $1,$0
 add $3,$2
 bin $3,$0
 mul $3,2
+mov $4,3
+pow $4,$0
 add $3,$1
-lpb $0
-  sub $0,1
-  mul $3,3
-lpe
+mul $3,$4
 mov $0,$3
 div $0,3

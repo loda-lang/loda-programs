@@ -1,17 +1,20 @@
 ; A089229: Neither primes nor square numbers.
-; Submitted by damotbe
+; Submitted by Simon Strandgaard
 ; 6,8,10,12,14,15,18,20,21,22,24,26,27,28,30,32,33,34,35,38,39,40,42,44,45,46,48,50,51,52,54,55,56,57,58,60,62,63,65,66,68,69,70,72,74,75,76,77,78,80,82,84,85,86,87,88,90,91,92,93,94,95,96,98,99,102,104,105,106,108,110,111,112,114,115,116,117,118,119,120,122,123,124,125,126,128,129,130,132,133,134,135,136,138,140,141,142,143,145,146
 
-mov $1,1
 mov $2,$0
-add $2,7
+add $0,1
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
-  mod $3,$1
-  min $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,2
+  trn $3,1
+  add $3,$4
+  gcd $3,2
   sub $0,$3
+  add $0,1
   add $1,1
   mov $4,$0
   max $4,0

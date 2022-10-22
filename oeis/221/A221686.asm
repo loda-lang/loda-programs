@@ -9,13 +9,11 @@ mov $3,4
 trn $3,$4
 mov $2,$0
 mul $2,93
-mov $5,$0
-mul $5,$0
 mov $1,6
 bin $1,$3
 mul $1,2
 add $1,$2
-mov $0,$5
+pow $0,2
 mul $0,153
 add $0,$1
 add $0,34

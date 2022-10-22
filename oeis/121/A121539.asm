@@ -5,7 +5,12 @@
 lpb $0
   sub $0,1
   mov $1,$2
-  seq $1,39963 ; The period-doubling sequence A035263 repeated.
+  div $1,2
+  add $1,1
+  lpb $1
+    dif $1,4
+  lpe
+  mod $1,2
   cmp $1,0
   sub $0,$1
   add $2,2

@@ -14,20 +14,12 @@ lpb $0
   trn $0,$3
   mov $3,8
 lpe
-add $1,5
-mov $2,6
-lpb $2
-  sub $2,1
-  add $1,$6
-lpe
 mov $4,$6
-lpb $4
-  sub $4,1
-  add $5,$6
-lpe
-mov $2,1
-lpb $2
-  sub $2,1
-  add $1,$5
-lpe
+mul $4,6
+mov $2,$6
+mul $2,$6
+add $5,$2
+add $1,5
+add $1,$4
+add $1,$5
 mov $0,$1

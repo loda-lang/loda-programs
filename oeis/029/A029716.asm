@@ -1,15 +1,12 @@
 ; A029716: Partial sums of Kempner numbers A002034.
-; Submitted by Penguin
+; Submitted by Simon Strandgaard
 ; 1,3,6,10,15,18,25,29,35,40,51,55,68,75,80,86,103,109,128,133,140,151,174,178,188,201,210,217,246,251,282,290,301,318,325,331,368,387,400,405,446,453,496,507,513,536,583,589,603,613,630,643,696,705,716,723,742,771,830,835,896,927,934,942,955,966,1033,1050,1073,1080,1151,1157,1230,1267,1277,1296,1307,1320,1399,1405,1414,1455,1538,1545,1562,1605,1634,1645,1734,1740,1753,1776,1807,1854,1873,1881,1978,1992,2003,2013
 
-mov $1,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$1
-  sub $0,$3
-  seq $0,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
-  add $2,$0
+lpb $0
+  mov $2,$0
+  seq $2,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$2
-add $0,1
+add $1,1
+mov $0,$1

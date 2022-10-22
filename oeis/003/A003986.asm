@@ -10,7 +10,13 @@ mov $5,$0
 max $5,$2
 min $0,$2
 mov $2,$5
-seq $2,70939 ; Length of binary representation of n.
+div $2,2
+lpb $2
+  div $2,2
+  add $7,1
+lpe
+add $7,1
+mov $2,$7
 lpb $2
   sub $2,1
   mov $3,$0

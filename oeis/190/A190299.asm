@@ -1,5 +1,5 @@
 ; A190299: Squarefree semiprimes of the form 4k+1.
-; Submitted by zombie67 [MM]
+; Submitted by Simon Strandgaard
 ; 21,33,57,65,69,77,85,93,129,133,141,145,161,177,185,201,205,209,213,217,221,237,249,253,265,301,305,309,321,329,341,365,377,381,393,413,417,437,445,453,469,473,481,485,489,493,497,501,505,517,533,537,545,553,565,573,581,589,597,629,633,649,669,681,685,689,697,713,717,721,737,745,749,753,781,785,789,793,813,817,849,865,869,889,893,901,905,913,917,921,933,949,965,973,985,989,993,1037,1041,1057
 
 mov $2,$0
@@ -8,7 +8,11 @@ pow $2,2
 lpb $2
   add $1,4
   mov $3,$1
-  seq $3,280710 ; Characteristic function of squarefree semiprimes.
+  seq $3,73184 ; Number of cubefree divisors of n.
+  seq $3,198081 ; a(n) = ceiling(n*sqrt(3)).
+  seq $3,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
+  add $3,2
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

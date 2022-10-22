@@ -1,12 +1,18 @@
 ; A124761: Number of falls for compositions in standard order.
-; Submitted by HipsterDuRocher
+; Submitted by brucemoreg
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,0,0,1,1,1,0,2,1,1,0,1,0,1,1,2,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,0,0,1,1,1,1,2,1,1,0,1,1,2,1,2,1,1,0,1,1,1,0,1,1,1,1,2,1,2,1,2,1,1,0,1,1,1
 
-mov $1,1
-mov $2,$0
-lpb $2
-  seq $2,124766 ; Number of monotonically increasing runs for compositions in standard order.
-  mul $1,$2
+lpb $0
+  mov $2,26
+  lpb $0
+    dif $0,2
+    sub $2,3
+  lpe
+  min $1,$2
+  cmp $1,$2
+  sub $2,3
+  add $3,$1
+  div $0,2
+  mov $1,$2
 lpe
-mov $0,$1
-sub $0,1
+mov $0,$3

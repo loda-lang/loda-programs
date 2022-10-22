@@ -1,14 +1,21 @@
 ; A078750: Least m not less than 2*n such that m + n = m OR n (logical 'or', bitwise).
-; Submitted by vaughan
+; Submitted by Simon Strandgaard
 ; 2,4,8,8,10,16,16,16,18,20,32,32,32,32,32,32,34,36,40,40,42,64,64,64,64,64,64,64,64,64,64,64,66,68,72,72,74,80,80,80,82,84,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,130,132,136,136,138,144,144,144,146,148,160,160,160,160,160,160,162,164,168,168,170,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256
 
 mov $1,$0
 mov $2,$0
 mul $0,0
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,85357 ; Common residues of binomial(3n,n)/(2n+1) modulo 2: relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
+  add $1,1
+  add $3,2
+  add $3,$1
+  lpb $3
+    add $3,1
+    dif $3,2
+    dif $3,2
+  lpe
+  mod $3,2
   sub $0,$3
   bin $4,2
   cmp $4,$0

@@ -5,7 +5,10 @@
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,57038 ; Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057038(n)=i(2n).
+  mul $2,2
+  add $2,1
+  seq $2,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
+  add $2,1
   mov $3,$2
   mod $3,2
   sub $0,$2

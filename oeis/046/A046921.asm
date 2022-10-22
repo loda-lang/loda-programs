@@ -6,11 +6,25 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
+  mov $6,0
   mov $2,$0
-  max $2,0
   mul $2,2
-  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $1,$2
+  add $2,1
+  lpb $2
+    gcd $6,2
+    mov $7,$2
+    div $7,3
+    lpb $7
+      mov $5,$2
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    div $2,$6
+    pow $2,2
+    mov $6,1
+  lpe
+  add $1,$6
   mov $3,1
   add $3,$4
   add $4,2

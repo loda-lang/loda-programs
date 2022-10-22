@@ -5,9 +5,9 @@
 lpb $0
   mov $2,$0
   add $2,2
-  seq $2,70824 ; Number of divisors of n which are > 1 and < n (nontrivial divisors).
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $0,$2
-  sub $0,1
+  sub $0,3
   add $1,1
 lpe
 mov $0,$1

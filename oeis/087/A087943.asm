@@ -1,5 +1,5 @@
 ; A087943: Numbers n such that 3 divides sigma(n).
-; Submitted by vanos0512
+; Submitted by Simon Strandgaard
 ; 2,5,6,8,10,11,14,15,17,18,20,22,23,24,26,29,30,32,33,34,35,38,40,41,42,44,45,46,47,49,50,51,53,54,55,56,58,59,60,62,65,66,68,69,70,71,72,74,77,78,80,82,83,85,86,87,88,89,90,92,94,95,96,98,99,101,102,104,105,106,107,110,113,114,115,116,118,119,120,122,123,125,126,128,130,131,132,134,135,136,137,138,140,141,142,143,145,146,147,149
 
 mov $1,1
@@ -8,7 +8,8 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,324293 ; a(n) = A002487(sigma(n)).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
   add $3,1
   mod $3,2
   sub $0,$3

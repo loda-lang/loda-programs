@@ -1,12 +1,28 @@
 ; A231458: Number of (n+1) X (2+1) 0..3 arrays with no element unequal to a strict majority of its horizontal, diagonal and antidiagonal neighbors, with values 0..3 introduced in row major order.
-; Submitted by emoga
+; Submitted by Simon Strandgaard
 ; 7,8,15,20,32,56,111,230,501,1108,2494,5646,12867,29400,67363,154548,355012,816044,1876871,4318210,9937849,22874740,52659602,121237426,279141179,642732036,1479959127,3407837396,7847200520,18069880640,41610135903,95817599486,220644482589,508091578132,1170015798406,2694275602422,6204298839795,14287086558864,32899919832235,75761077174644,174460671091180,401743634700788,925125214479863,2130355417173466,4905729925709857,11296794340918324,26013981146832794,59904359362060762,137946295023817067
 
 mov $1,$0
 lpb $0
   mov $1,$0
-  seq $1,231337 ; Number of (n+1) X (1+1) 0..3 arrays with no element unequal to a strict majority of its horizontal and vertical neighbors, with values 0..3 introduced in row major order.
-  add $1,1
+  lpb $1
+    sub $1,1
+    add $2,$3
+    add $5,$2
+    add $5,1
+    add $2,$4
+    sub $4,$3
+    add $6,$3
+    mov $3,$4
+    mov $4,$6
+    sub $4,$2
+    sub $3,$2
+    add $3,$5
+    add $2,$3
+    mul $6,2
+  lpe
+  mov $1,$5
+  add $1,4
   mod $0,2
 lpe
 mov $0,$1

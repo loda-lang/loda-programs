@@ -7,9 +7,13 @@ add $0,3
 lpb $0
   sub $0,1
   sub $0,$3
+  mov $5,1
   mov $2,$0
-  max $2,0
-  seq $2,73424 ; Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
+  lpb $2
+    add $5,1
+    sub $2,$5
+  lpe
+  cmp $2,1
   add $4,1
   add $1,$2
   mov $3,$4

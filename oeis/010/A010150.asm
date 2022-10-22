@@ -1,8 +1,12 @@
 ; A010150: Continued fraction for sqrt(71).
-; Submitted by taurec
+; Submitted by Simon Strandgaard
 ; 8,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1,7,1,2,2,16,2,2,1
 
-seq $0,10163 ; Continued fraction for sqrt(92).
+mov $2,$0
+seq $2,193682 ; Period 8: repeat [0, 1, 2, 3, 0, 3, 2, 1].
+seq $0,40329 ; Continued fraction for sqrt(348).
+add $0,$2
+div $0,2
 mov $1,$0
 mul $1,2
 div $0,4
