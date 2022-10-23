@@ -1,0 +1,13 @@
+; A284482: Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 950", based on the 5-celled von Neumann neighborhood.
+; Submitted by Landjunge
+; 1,3,5,15,29,63,125,247,509,1023,2045,4087,8189,16383,32765,65527,131069,262143,524285,1048567,2097149,4194303,8388605,16777207,33554429,67108863,134217725,268435447,536870909,1073741823,2147483645,4294967287,8589934589,17179869183,34359738365,68719476727,137438953469,274877906943,549755813885,1099511627767,2199023255549,4398046511103,8796093022205,17592186044407,35184372088829,70368744177663,140737488355325,281474976710647,562949953421309,1125899906842623,2251799813685245,4503599627370487
+
+seq $0,284481 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 950", based on the 5-celled von Neumann neighborhood.
+lpb $0
+  mov $2,$0
+  mod $2,2
+  div $0,2
+  mul $1,2
+  add $1,$2
+lpe
+mov $0,$1

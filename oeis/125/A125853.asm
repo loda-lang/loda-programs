@@ -1,0 +1,20 @@
+; A125853: Squared radii of circles centered at a grid point in a square lattice hitting exactly 4 points. Indices k such that A004018(k)=4.
+; Submitted by Science United
+; 1,2,4,8,9,16,18,32,36,49,64,72,81,98,121,128,144,162,196,242,256,288,324,361,392,441,484,512,529,576,648,722,729,784,882,961,968,1024,1058,1089,1152,1296,1444,1458,1568,1764,1849,1922,1936,2048,2116,2178,2209,2304,2401,2592,2888,2916,3136,3249,3481,3528,3698,3844,3872,3969,4096,4232,4356,4418,4489,4608,4761,4802,5041,5184,5776,5832,5929,6241,6272,6498,6561,6889,6962,7056,7396,7688,7744,7938,8192,8464,8649,8712,8836,8978,9216,9522,9604,9801
+
+mov $2,$0
+add $2,3
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,354199 ; a(n) = 1 if in the prime factorization of n there is no prime factor of form 4k+1 and any prime factor of form 4k+3 occurs with an even multiplicity, otherwise 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1
