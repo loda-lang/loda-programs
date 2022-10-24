@@ -1,0 +1,19 @@
+; A241169: Steffensen's bracket function [n,3].
+; Submitted by USTL-FIL (Lille Fr)
+; 0,0,0,1,14,145,1450,15421,180894,2359225,34072850,540848341,9363767974,175619185105,3547113529050,76761061273261,1771884886830254,43456922321543785,1128511554354422050,30933862439582514181,892562598747547111734,27041608332832948251265,858281473267724898703850
+
+mov $2,$0
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  seq $0,102232 ; Number of preferential arrangements of n labeled elements when at least k=three ranks are required.
+  mul $1,$0
+  add $3,$1
+lpe
+mov $0,$3
+div $0,6
