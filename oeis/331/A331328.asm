@@ -1,0 +1,20 @@
+; A331328: Evaluation of the Little-Schröder polynomials at 1/2 and normalized with 2^n.
+; Submitted by brucemoreg
+; 1,3,21,171,1509,13995,134277,1320651,13237221,134682219,1387100229,14430764043,151415596197,1600364733867,17022016484613,182055719885643,1956671540189541,21121180251536619,228880429935661509,2488986535173458571,27152943714786745893
+
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  seq $0,172094 ; The Riordan square of the little Schröder numbers A001003.
+  mul $1,2
+  add $1,$0
+lpe
+mov $0,$1
