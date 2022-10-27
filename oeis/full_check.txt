@@ -267,6 +267,7 @@ A188012: Positions of 0 in A188011; complement of A188013.
 A188017: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 A188039: Positions of 0 in A188038; complement of A188040.
 A188383: Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
+A189021: Apostol's second order Möbius (or Moebius) function mu_2(n).
 A189364: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=(1+sqrt(5))/2.
 A189368: a(n) = n + [n*r/s] + [n*t/s]; r=2, s=sqrt(2), t=sqrt(3).
 A189370: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=sqrt(5).
@@ -435,6 +436,7 @@ A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2
 A293484: The number of 7th powers in the multiplicative group modulo n.
 A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
+A295879: Multiplicative with a(p) = 1, a(p^e) = prime(e-1) if e > 1.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 A296908: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) < #(peaks); see Comments.
 A296923: Primes p such that Legendre(-5,p) = -1.
@@ -455,8 +457,10 @@ A317440: Numbers missing from A317438.
 A319432: The first differences (A129761) of the tribonacci representation numbers (A003714 or A014417) consists of runs of 1's separated by the terms of the present sequence.
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 A319434: Take Golomb's sequence A001462 and shorten all the runs by 1.
+A319710: a(n) = 1 if n is divisible by the square of its smallest prime factor, 0 otherwise.
 A319988: a(n) = 1 if n is divisible by the square of its largest prime factor, 0 otherwise.
 A320895: a(n) = Sum_{k=1..n} k^3 * tau(k), where tau is A000005.
+A321020: A hybrid of Kolakoski's sequence A000002 and Golomb's sequence A001462: if A001462(n) is odd replace it with 1, if even with 2.
 A321371: n + [n*r/s] + [n*t/s], where r = 1, s = cos(2*Pi/5), t = sec(2*Pi/5).
 A322319: a(n) = lcm(A003557(n), A048250(n)).
 A323100: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = -1 in Clifford algebra Cl(p,q)(R).

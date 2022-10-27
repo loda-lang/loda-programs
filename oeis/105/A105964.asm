@@ -7,10 +7,12 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
   add $2,2
   mod $2,$3
-  seq $2,14033 ; Inverse of 24th cyclotomic polynomial.
+  lpb $2
+    sub $2,4
+  lpe
+  cmp $2,0
   add $1,$2
   mov $3,6
 lpe

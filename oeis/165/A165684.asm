@@ -7,8 +7,8 @@ lpb $0
   mov $2,$0
   seq $2,25795 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)).
   sub $2,1
-  add $0,1
   trn $0,8
+  add $0,1
   add $1,$2
 lpe
 mov $0,$1

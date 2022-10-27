@@ -1,6 +1,7 @@
 ; A259343: A001116(n) + 1.
 ; Submitted by Simon Strandgaard
 ; 1,3,7,13,25,41,73,127,241,273
+; Formula: a(n) = 2*(((n*((2^n)/12)+n)%196+n^2)/2)+1
 
 mov $2,2
 pow $2,$0

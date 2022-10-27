@@ -1,5 +1,5 @@
 ; A183423: Ordering of the numbers in tree A183421; complement of A183422.
-; Submitted by Athlici
+; Submitted by Simon Strandgaard
 ; 1,3,5,7,8,10,11,13,15,17,19,21,23,24,26,28,29,31,33,35,37,39,41,43,45,47,48,50,52,54,55,57,59,61,63,65,67,69,71,73,75,77,79,80,82,84,86,88,89,91,93,95,97,98,99,101,103,105,107,108,109,111,113,115,117,118,120,122,124,126,128,129,131,133,135,137,139,140,142,143,145,147,149,151,152,154,155,157,159,161,163,164,166,167,168,170,172,174,176,177
 
 mov $2,$0
@@ -8,9 +8,14 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,257022 ; Trace of n in the quarter-sum representation of n.
-  sub $3,1
+  lpb $3
+    mov $5,$3
+    seq $3,122197 ; Fractal sequence: count up to successive integers twice.
+    sub $3,1
+  lpe
+  mov $3,$5
   add $3,$4
+  sub $3,1
   cmp $3,1
   gcd $3,2
   sub $0,$3

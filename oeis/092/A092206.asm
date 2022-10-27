@@ -8,7 +8,13 @@ pow $2,5
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,256232 ; Multiplicative with a(2^e) = 1-e, a(3^e) = 1, a(p^e) = e+1 if p>3.
+  lpb $3
+    mul $3,2
+    add $3,2
+    dif $3,6
+    sub $3,1
+  lpe
+  seq $3,48272 ; Number of odd divisors of n minus number of even divisors of n.
   gcd $3,2
   sub $0,$3
   add $0,1

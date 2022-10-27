@@ -1,45 +1,23 @@
 ; A061525: Surround numbers of an n X 2 rectangle when n is odd.
 ; Submitted by Jamie Morken(l1)
 ; 83,361,951,1997,3667,6153,9671,14461,20787,28937,39223,51981,67571,86377,108807,135293,166291,202281,243767,291277,345363,406601,475591,552957,639347,735433,841911,959501,1088947,1231017,1386503,1556221
+; Formula: a(n) = 18*n*n^2+164*n+95*n^2+(n^2)^2+83
 
+mov $7,$0
+mul $7,164
+mov $6,$0
+mul $6,$0
+mov $3,$6
+mul $3,95
 mov $1,83
-mov $2,164
-lpb $2
-  sub $2,1
-  add $1,$0
-lpe
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $4,$0
-lpe
-mov $5,$4
-mov $2,95
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $5,$4
-mov $2,18
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
-mov $4,0
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $4,$5
-lpe
-mov $2,1
-lpb $2
-  sub $2,1
-  add $1,$4
-lpe
+add $1,$7
+add $1,$3
+mov $5,$6
+mul $5,$0
+mov $4,$5
+mul $4,18
+mov $2,$5
+mul $2,$0
+add $1,$4
+add $1,$2
 mov $0,$1

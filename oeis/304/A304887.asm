@@ -1,5 +1,6 @@
 ; A304887: Number of non-isomorphic blobs of weight n.
 ; 1,1,1,1,1,1,3,3,8,14
+; Formula: a(n) = (binomial(2*((2*binomial(n,2))/23+1),2)+1)/2
 
 bin $0,2
 mul $0,2

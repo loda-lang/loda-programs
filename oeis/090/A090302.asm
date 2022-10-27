@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+  mov $4,$2
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,1
+  mul $2,$4
   mov $3,1
   add $3,$1
   add $3,$2

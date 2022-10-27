@@ -14,10 +14,8 @@ lpb $0
   add $4,$5
   add $1,$4
 lpe
-add $1,5
-lpb $3
-  sub $3,1
-  add $1,3
-lpe
-sub $1,10
+mov $6,3
+mul $6,$3
+sub $1,5
+add $1,$6
 mov $0,$1

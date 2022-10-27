@@ -6,7 +6,6 @@ lpb $0
   div $0,2
 lpe
 gcd $1,2
-sub $1,2
 mul $1,2
-add $1,1
+sub $1,3
 mov $0,$1

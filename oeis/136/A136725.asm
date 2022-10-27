@@ -1,5 +1,6 @@
 ; A136725: Primitive dimensions of Hadamard matrices.
 ; 1,2,12,20,28,36,44,52,60,68,76,84,92,100
+; Formula: a(n) = max(8*n-max(2-2*(n-1),0)-5,0)+1
 
 mov $1,$0
 mul $0,8

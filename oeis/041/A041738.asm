@@ -8,9 +8,12 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  mov $1,$3
-  mul $1,2
-  seq $1,10178 ; Continued fraction for sqrt(113).
+  mov $5,$3
+  mul $5,4
+  add $5,1
+  div $5,3
+  seq $5,10177 ; Continued fraction for sqrt(112).
+  mov $1,$5
   sub $1,1
   seq $1,128309 ; 2*A000069(n).
   div $1,2

@@ -1,26 +1,25 @@
 ; A081754: Numbers n such that the number of noncongruent solutions to x^(2^m) == 1 (mod n) is the same for any m>=1.
-; Submitted by Vato
+; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,7,8,9,11,12,14,18,19,21,22,23,24,27,28,31,33,36,38,42,43,44,46,47,49,54,56,57,59,62,63,66,67,69,71,72,76,77,79,81,83,84,86,88,92,93,94,98,99,103,107,108,114,118,121,124,126,127,129,131,132,133,134,138,139,141,142,147,151,152,154,158,161,162,163,166,167,168,171,172,177,179,184,186,188,189,191,196,198,199,201,206,207,209,211,213
 
+mov $1,-1
 mov $2,$0
-add $2,2
-pow $2,2
+pow $2,3
 lpb $2
+  add $1,3
   mov $3,$1
-  seq $3,46073 ; Number of squares in multiplicative group modulo n.
-  add $3,$4
-  gcd $3,2
+  seq $3,72436 ; Remove prime factors of form 4*k+3.
+  dif $3,4
+  dif $3,2
+  cmp $3,1
   sub $0,$3
-  add $0,1
-  add $1,$4
-  add $1,5
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,$4
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-div $0,7
+add $0,1
+div $0,3
 add $0,1

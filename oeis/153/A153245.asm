@@ -1,5 +1,5 @@
 ; A153245: Numbers n>1 such that 6*n-7 is not prime.
-; Submitted by Saenger
+; Submitted by Simon Strandgaard
 ; 7,12,14,17,21,22,25,27,28,32,35,36,37,38,42,47,49,51,52,55,56,57,58,62,63,64,67,69,70,72,74,77,80,82,84,87,89,90,91,92,93,97,98,102,103,105,106,107,112,113,116,117,119,120,122,123,124,126,127,129,131,132,133,135,137,140,142,143,146,147,150,151,152,154,155,157,161,162,166,167,168,169,172,174,175,177,179,180,181,182,187,188,189,190,191,192,194,196,197,201
 
 mov $1,10
@@ -8,12 +8,14 @@ add $0,1
 add $2,4
 pow $2,4
 lpb $2
-  max $3,$1
-  seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  cmp $3,0
   sub $0,$3
   add $1,6
   sub $2,$0
 lpe
 mov $0,$1
+add $0,4
 div $0,6
-add $0,2
+add $0,1

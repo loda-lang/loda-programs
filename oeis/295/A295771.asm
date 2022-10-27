@@ -1,5 +1,6 @@
 ; A295771: a(n) is the minimum size of a planar additive basis for the square [0,n]^2.
 ; 1,3,4,7,8,11,12,14,16,19,20,23,24,26
+; Formula: a(n) = max(n-binomial(-n,n-(-n)-1)%2-(-n)-1,0)+1
 
 sub $1,$0
 sub $0,$1

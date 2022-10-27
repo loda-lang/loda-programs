@@ -4,10 +4,10 @@
 
 add $0,1
 lpb $0
-  add $2,1
   seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
   mul $0,-1
   trn $1,$0
+  add $2,1
   add $0,$1
 lpe
 sub $2,$1

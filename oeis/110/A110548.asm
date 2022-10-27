@@ -16,12 +16,8 @@ lpb $0
 lpe
 add $6,$4
 add $6,2
-mov $1,4
+mov $1,-2
 add $1,$6
 add $1,$3
-lpb $2
-  sub $2,1
-  add $1,1
-lpe
-sub $1,6
+add $1,$2
 mov $0,$1

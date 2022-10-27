@@ -1,6 +1,7 @@
 ; A313849: Coordination sequence Gal.5.309.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 ; Submitted by stoneageman
 ; 1,5,10,16,20,27,31,38,42,49,53,60,64,70,75,80,85,90,96,100,107,111,118,122,129,133,140,144,150,155,160,165,170,176,180,187,191,198,202,209,213,220,224,230,235,240,245,250,256,260
+; Formula: a(n) = max((16*n+1)/3-((4*(((5808*n+5)/10)^5+1))/3)%3,0)+1
 
 mov $1,$0
 mul $1,5808

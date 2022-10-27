@@ -20,9 +20,6 @@ lpb $4
     sub $1,3
   lpe
 lpe
-lpb $6
-  sub $6,1
-  add $1,1
-lpe
+add $1,$6
 add $1,1
 mov $0,$1
