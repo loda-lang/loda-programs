@@ -1,0 +1,19 @@
+; A161526: Number of reduced words of length n in the Weyl group A_26.
+; Submitted by Jim1348
+; 1,26,350,3249,23373,138853,708903,3196324,12981645,48206991,165596757,531131433,1602738098,4579020513,12451908378,32375259017,80796089046,194191143975,450825834354,1013569936833,2211876507387,4694809541046
+
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  seq $0,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+  mov $1,26
+  add $1,$4
+  bin $1,$4
+  mul $1,$0
+  add $3,$1
+lpe
+mov $0,$3
