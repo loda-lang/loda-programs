@@ -1,0 +1,22 @@
+; A161877: Number of reduced words of length n in the Weyl group B_17.
+; Submitted by USTL-FIL (Lille Fr)
+; 1,17,152,952,4691,19363,69615,223839,656013,1777469,4501652,10749780,24374702,52784014,109694031,219658751,425310726,798645126,1458198681,2594648969,4508216638,7662325662,12759298116,20845464260,33454989519
+
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  seq $0,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+  pow $1,0
+  mul $1,16
+  add $1,$4
+  bin $1,$4
+  mul $1,$0
+  sub $2,1
+  add $3,$1
+  trn $4,1
+lpe
+mov $0,$3
