@@ -5,11 +5,10 @@
 mov $2,$0
 mov $1,1
 lpb $1
-  bin $2,$1
+  sub $1,1
   mov $0,$2
   trn $0,1
   seq $0,163747 ; Expansion of e.g.f. 2*exp(x)*(1-exp(x))/(1+exp(2*x)).
-  sub $1,1
 lpe
 mul $2,$0
 mov $0,0

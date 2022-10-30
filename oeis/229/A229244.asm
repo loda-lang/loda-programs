@@ -4,9 +4,9 @@
 
 trn $0,1
 mul $0,2
-mov $2,$0
+mov $1,$0
+add $1,2
 div $0,2
 seq $0,277876 ; a(n) = n!/(m*(n-m)) with m = floor(n/2).
-add $2,2
-mul $0,$2
+mul $0,$1
 div $0,4

@@ -14,31 +14,18 @@ lpe
 sub $2,$1
 mov $1,$2
 add $1,50
-mov $7,62
-lpb $7
-  sub $7,1
-  add $1,$3
-lpe
-mov $6,$3
-lpb $6
-  sub $6,1
-  add $5,$3
-lpe
-mov $4,$5
-mov $7,30
-lpb $7
-  sub $7,1
-  add $1,$5
-lpe
-mov $5,0
-mov $6,$3
-lpb $6
-  sub $6,1
-  add $5,$4
-lpe
-mov $7,6
-lpb $7
-  sub $7,1
-  add $1,$5
-lpe
+mov $9,$3
+mul $9,62
+mov $7,$3
+mul $7,$3
+add $5,$7
+mov $8,$5
+mul $8,30
+add $1,$9
+add $1,$8
+mov $6,$5
+mul $6,$3
+mov $4,$6
+mul $4,6
+add $1,$4
 mov $0,$1

@@ -13,19 +13,18 @@ lpb $2
     add $0,$7
     mov $3,$0
     sub $4,1
-    mov $12,2
-    lpb $12
-      sub $12,1
+    mov $1,2
+    lpb $1
+      sub $1,1
       sub $3,1
       mov $0,$3
-      add $0,$12
+      add $0,$1
       trn $0,1
       seq $0,108626 ; Antidiagonal sums of square array A108625, in which row n equals the crystal ball sequence for A_n lattice.
       mul $0,32
-      mov $1,$3
       add $10,$0
       add $6,$10
-      mov $11,$12
+      mov $11,$1
       mul $11,$6
       add $9,$11
     lpe
@@ -33,12 +32,10 @@ lpb $2
     mul $3,$0
     mov $0,$9
     sub $0,$3
-    add $1,5
     mov $5,$7
     mul $5,$0
     add $8,$5
   lpe
-  sub $4,$1
 lpe
 mov $0,$8
 div $0,64

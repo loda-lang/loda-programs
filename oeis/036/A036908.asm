@@ -6,7 +6,7 @@ mov $1,1
 mov $3,$0
 mov $2,$0
 lpb $2
-  trn $2,1
+  sub $2,1
   mov $0,$3
   sub $0,$2
   seq $0,292440 ; Expansion of (1 - x + sqrt(1 - 2*x - 3*x^2))/2 in powers of x.

@@ -1,7 +1,20 @@
 ; A284723: Smallest odd prime that is relatively prime to n.
-; Submitted by ChelseaOilman
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3
 
-mul $0,2
+mov $2,2
 add $0,1
-seq $0,53669 ; Smallest prime not dividing n.
+lpb $0
+  add $2,1
+  sub $1,2
+  add $1,$2
+  lpb $0
+    dif $0,$2
+  lpe
+  add $1,4
+  add $2,1
+lpe
+mov $0,$1
+div $0,5
+mul $0,2
+add $0,3

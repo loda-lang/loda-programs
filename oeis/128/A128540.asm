@@ -12,6 +12,5 @@ lpb $1
   mov $2,$0
   max $2,0
   seq $2,127647 ; Triangle read by rows: row n consists of n-1 zeros followed by Fibonacci(n).
-  bin $0,$1
 lpe
 mov $0,$2

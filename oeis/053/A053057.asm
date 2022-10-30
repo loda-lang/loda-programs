@@ -1,25 +1,12 @@
 ; A053057: Squares whose digit sum is also a square.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Athlici
 ; 0,1,4,9,36,81,100,121,144,169,196,225,324,400,441,484,529,900,961,1521,1681,2025,2304,2601,3364,3481,3600,4489,4624,5776,5929,7225,7396,8100,8836,9025,10000,10201,10404,10609,10816,11025,12100,12321,12544,12769,14400,14641,14884,16900,17161,19321,19600,21904,22500,24649,24964,27556,30625,30976,32400,33856,34225,37249,37636,40000,40401,40804,41209,44100,44521,44944,48400,48841,52441,52900,56644,57121,61009,61504,62001,65536,66049,69696,70225,70756,75076,75625,80089,80656,85264,90000,90601,91204
 
-mov $2,$0
-pow $2,2
-lpb $2
-  add $3,1
-  pow $3,2
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  sub $3,1
-  seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
-  cmp $3,1
-  mov $5,$1
-  sub $0,$3
-  add $1,1
-  mov $3,$5
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  mov $1,$0
+  trn $1,1
+  seq $1,61910 ; Positive numbers n such that sum of digits of n^2 is a square.
+  pow $1,2
+  mov $0,0
 lpe
 mov $0,$1
-pow $0,2

@@ -6,7 +6,6 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,66075 ; Number of solutions x to prime(n) = sigma(x) - 1, where prime(n) is the n-th prime.
   add $1,$2
 lpe

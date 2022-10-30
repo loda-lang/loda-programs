@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  trn $2,1
+  sub $2,1
   mul $2,2
   seq $2,2865 ; Number of partitions of n that do not contain 1 as a part.
   sub $0,1

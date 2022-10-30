@@ -6,7 +6,6 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,958 ; Number of ordered rooted trees with n edges having root of odd degree.
   add $1,$2
 lpe

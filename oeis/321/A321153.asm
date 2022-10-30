@@ -1,6 +1,7 @@
 ; A321153: Possible total numbers of pips when rolling two dice in backgammon.
 ; Submitted by Simon Strandgaard
 ; 3,4,5,6,7,8,9,10,11,12,16,20,24
+; Formula: a(n) = 3*max((n+1)-10,0)+n+3
 
 mov $1,$0
 add $0,1

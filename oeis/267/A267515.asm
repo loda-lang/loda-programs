@@ -6,7 +6,7 @@ mov $1,1
 mov $3,$0
 mov $2,$0
 lpb $2
-  trn $2,1
+  sub $2,1
   mov $0,$3
   sub $0,$2
   seq $0,267513 ; Middle column of the "Rule 137" elementary cellular automaton starting with a single ON (black) cell.

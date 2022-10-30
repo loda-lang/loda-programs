@@ -1,6 +1,7 @@
 ; A303977: Number of inequivalent solutions to problem discussed in A286874.
 ; Submitted by Jon Maiga
 ; 1,1,1,1,1,1,1,2,4,1,5,2
+; Formula: a(n) = ((binomial(n,3)*(n%3))/30+1)%10
 
 mov $1,$0
 bin $1,3

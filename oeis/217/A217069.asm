@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,217053 ; a(n) = 3*a(n-1) + 24*a(n-2) + a(n-3), with a(0) = 2, a(1) = 5, and a(2) = 62.
   add $1,$2
 lpe

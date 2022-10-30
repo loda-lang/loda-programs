@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,98388 ; a(n) = floor(log_2(prime(n))).
   add $1,1
   add $1,$2

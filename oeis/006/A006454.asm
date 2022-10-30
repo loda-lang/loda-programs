@@ -5,7 +5,6 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,143609 ; Numerators of the upper principal and intermediate convergents to 2^(1/2).
   add $1,$2
 lpe

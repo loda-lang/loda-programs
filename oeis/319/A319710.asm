@@ -12,9 +12,10 @@ lpb $0
     add $2,1
     sub $3,$4
   lpe
-  mov $1,10
   pow $2,2
-  dif $0,$2
+  lpb $0
+    dif $0,$2
+    mov $1,1
+  lpe
 lpe
 mov $0,$1
-div $0,10

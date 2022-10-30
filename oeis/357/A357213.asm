@@ -7,9 +7,10 @@ lpb $0
   sub $0,$1
 lpe
 sub $0,1
+mov $2,$0
+max $2,0
+mov $3,2
+pow $3,$2
 sub $1,$0
-lpb $0
-  sub $0,1
-  mul $1,2
-lpe
+mul $1,$3
 mov $0,$1

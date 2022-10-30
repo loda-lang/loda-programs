@@ -10,11 +10,11 @@ mov $1,$2
 bin $1,$0
 min $2,1
 sub $2,$0
-mov $0,$2
-lpb $0
-  sub $0,1
-  mul $1,2
-lpe
+mov $3,$2
+max $3,0
+mov $4,2
+pow $4,$3
+mul $1,$4
 mov $0,$1
 mul $0,2
 sub $0,1

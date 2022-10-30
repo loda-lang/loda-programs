@@ -6,8 +6,7 @@ mov $1,$0
 add $1,$0
 add $0,1
 seq $0,197271 ; a(n) = 10/((3*n+1)*(3*n+2))*binomial(4*n,n).
-lpb $1
-  sub $1,1
-  mul $0,2
-lpe
+mov $2,2
+pow $2,$1
+mul $0,$2
 div $0,2

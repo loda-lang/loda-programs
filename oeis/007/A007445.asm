@@ -13,7 +13,6 @@ lpb $5
   seq $4,333644 ; a(n) = Sum_{k=1..n} floor(n/k) * prime(k).
   mov $2,$5
   mul $2,$4
-  mul $0,$5
   add $1,10
   add $1,$2
 lpe
