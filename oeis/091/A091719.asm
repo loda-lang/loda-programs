@@ -11,7 +11,6 @@ lpb $3
   mov $2,$0
   seq $2,299474 ; a(n) = 4*p(n), where p(n) is the number of partitions of n.
   mov $4,2
-  bin $0,$3
   gcd $1,$2
 lpe
 mov $0,$1

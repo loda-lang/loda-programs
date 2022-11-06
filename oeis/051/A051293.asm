@@ -6,7 +6,6 @@ add $0,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,82550 ; Number of sets of distinct positive integers whose arithmetic mean is an integer, the largest integer of the set being n.
   add $1,$2
 lpe

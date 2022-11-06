@@ -20,10 +20,9 @@ lpb $2
     max $4,$5
   lpe
   dif $4,2
-  div $4,7
-  sub $4,3
+  sub $4,31
   mov $3,$4
-  div $3,2
+  div $3,10
   cmp $3,2
   sub $0,$3
   add $1,1

@@ -1,11 +1,6 @@
 ; A015297: Inverse of 1288th cyclotomic polynomial.
-; Submitted by ChelseaOilman
+; Submitted by Landjunge
 ; 1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,-1,0,0,0
 
-mov $1,-1
-pow $1,$0
-add $1,1
 dif $0,2
 seq $0,14653 ; Inverse of 644th cyclotomic polynomial.
-mul $0,$1
-div $0,2

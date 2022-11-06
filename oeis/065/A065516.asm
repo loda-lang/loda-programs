@@ -9,7 +9,6 @@ lpb $3
   mov $0,$2
   add $0,$3
   seq $0,88707 ; Semiprimes + 1.
-  sub $0,1
   add $1,$4
   gcd $2,$1
   mov $4,$0

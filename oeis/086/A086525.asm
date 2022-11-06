@@ -7,7 +7,6 @@ sub $0,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,285358 ; Fixed point of the morphism 0 -> 10, 1 -> 1101.
   add $1,$2
 lpe

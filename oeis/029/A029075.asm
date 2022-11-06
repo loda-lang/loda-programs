@@ -6,7 +6,6 @@ add $0,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,25869 ; Expansion of 1/((1-x^4)(1-x^7)(1-x^10)).
   add $1,$2
 lpe

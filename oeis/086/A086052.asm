@@ -6,7 +6,6 @@ add $0,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,46306 ; Numbers that are divisible by exactly 6 primes with multiplicity.
   add $1,$2
 lpe

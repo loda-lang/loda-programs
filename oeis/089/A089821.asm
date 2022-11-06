@@ -11,8 +11,7 @@ mov $2,$0
 sub $2,2
 mov $3,$1
 sub $3,$2
-lpb $3
-  sub $3,1
-  mul $0,2
-lpe
+mov $4,2
+pow $4,$3
+mul $0,$4
 mul $0,2

@@ -25,6 +25,7 @@ A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
 A003153: a(n) = integer nearest n*(1+sqrt(2)).
 A003511: A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
 A003512: A Beatty sequence: floor(n*(sqrt(3) + 2)).
+A003557: n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 A003589: a(n) has the property that the sequence b(n) = number of 2's between successive 3's is the same as the original sequence.
 A003622: The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.
 A003623: Wythoff AB-numbers: floor(floor(n*phi^2)*phi), where phi = (1+sqrt(5))/2.
@@ -113,6 +114,7 @@ A049345: n written in primorial base.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
 A051903: Maximal exponent in prime factorization of n.
+A051904: Minimal exponent in prime factorization of n.
 A052223: Numbers whose sum of digits is 9.
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
@@ -259,6 +261,7 @@ A184623: a(n) = floor((n-h)*s+h), where s=2+sqrt(2) and h=-1/3; complement of A1
 A184625: a(n) = floor((n-h)*s +h), where s=2+sqrt(2) and h=-1/4; complement of A184624.
 A184734: a(n)=floor(nr+h), where r=(1+sqrt(5))/2, h=1/3; complement of A184735.
 A184748: a(n) = floor(n*r + h), where r = 4 - sqrt(5), h = -1/2. Also, complement of A184749.
+A184778: Numbers k such that 2k + floor(k*sqrt(2)) is prime.
 A185102: a(n) is the recursion depth of repeatedly factoring n and then the exponents in its prime product factorization, until 1 is reached.
 A186221: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and squares.  Complement of A186222.
 A187330: a(n) = floor((4-sqrt(5))*n); complement of A187339.
@@ -268,6 +271,7 @@ A187975: Positions of 1 in the zero-one sequence given by s(n)=[nr+5r]-[nr]-[5r]
 A188012: Positions of 0 in A188011; complement of A188013.
 A188017: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 A188039: Positions of 0 in A188038; complement of A188040.
+A188302: Positions of 1 in A188300; complement of A188301.
 A188383: Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
 A189021: Apostol's second order Möbius (or Moebius) function mu_2(n).
 A189364: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=(1+sqrt(5))/2.
@@ -310,6 +314,7 @@ A190564: Positions of 2 in A190561.
 A190706: Positions of 1 in A190704.
 A190707: Positions of 2 in A190704.
 A191329: (Lower Wythoff sequence mod 2)+(Upper Wythoff sequence mod 2).
+A193510: Number of even divisors of Omega(n).
 A194148: Sum_{j=1..n} floor(j*(1/2 + sqrt(2))); n-th partial sum of Beatty sequence for 1/2 + sqrt(2).
 A195127: a(n) = 2*n - floor(n*r/5), where r = (1 + sqrt(5))/2.
 A195172: a(n) = 4*n - floor(2*n*r), where r=(1+sqrt(5))/2 (the golden ratio).
@@ -390,6 +395,7 @@ A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio =
 A279934: Positive integers k such that {(k-1)*r} > 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
 A281188: Number of refactorable numbers m such that tau(m) = n, or 0 if there are infinitely many such numbers.
 A283234: 2*A001950.
+A283765: Numbers k such that L(k) is even, where L = A000201 = lower Wythoff sequence.
 A283766: Numbers k such that L(k) is odd, where L = A000201 = lower Wythoff sequence.
 A283767: Numbers k such that U(k) is even, where U = A001950 = upper Wythoff sequence.
 A283768: Numbers k such that U(k) is odd, where U = A001950 = upper Wythoff sequence.
@@ -433,6 +439,7 @@ A288713: Positions of 1 in A288711; complement of A288712.
 A288999: Positions of 1 in A288997; complement of A288998.
 A289142: Numbers such that the sum of prime factors (taken with multiplicity) is divisible by 3.
 A290499: Hypotenuses for which there exist exactly 8 distinct integer triangles.
+A290500: Hypotenuses for which there exist exactly 9 distinct integer triangles.
 A291208: Number of noncube divisors of n.
 A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
@@ -477,7 +484,9 @@ A327203: Positions of 0's in {A327202(n) : n > 0}.
 A327204: Positions of 1's in {A327202(n) : n > 0}.
 A327207: Positions of 1's in {A327205(n) : n > 0}.
 A327257: Positions of 0's in {A327256(n) : n > 0}.
+A327299: Positions of 0's in {A327298(n) : n > 0}.
 A327300: Positions of 1's in {A327298(n) : n > 0}.
+A327527: Number of uniform divisors of n.
 A327829: Squarefree numbers with a prime number of prime factors.
 A328308: a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
 A328616: Number of digits in primorial base expansion of n that are maximal possible in their positions.
@@ -514,6 +523,7 @@ A353526: The smallest prime not dividing n, reduced modulo 4.
 A353527: The smallest prime not dividing 2*n, reduced modulo 4.
 A353529: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 4m+3, otherwise a(n) = 0.
 A353569: a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
+A353629: a(n) = 1 if n is a product of an even number of distinct primes, otherwise 0.
 A353631: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for odd numbers.
 A353800: a(n) = 1 if n is a power of prime with an even exponent, otherwise 0.
 A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
