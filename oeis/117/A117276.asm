@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,1935 ; Number of partitions with no even part repeated; partitions of n in which no parts are multiples of 4.
   add $1,$2
 lpe

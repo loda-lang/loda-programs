@@ -6,7 +6,6 @@ mov $1,2
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,196274 ; Half of the gaps A067970 between odd nonprimes A014076.
   add $1,$2
 lpe

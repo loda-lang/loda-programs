@@ -10,7 +10,6 @@ lpb $0
   max $2,0
   seq $2,151568 ; a(0)=1, a(1)=1; a(2^i+j)=2*a(j)+a(j+1) for 0 <= j < 2^i.
   add $1,$2
-  div $3,2
   sub $3,2
 lpe
 mov $0,$1

@@ -5,7 +5,5 @@
 seq $0,126424 ; Numbers k for which k^4-k-1 is prime.
 mov $1,$0
 pow $0,4
-sub $0,$1
-div $0,2
-mul $0,2
 sub $0,1
+sub $0,$1

@@ -15,10 +15,6 @@ lpb $0
   sub $2,$1
 lpe
 trn $1,3
-add $1,4
-lpb $3
-  sub $3,1
-  add $1,1
-lpe
-sub $1,3
+add $1,1
+add $1,$3
 mov $0,$1

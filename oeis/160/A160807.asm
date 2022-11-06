@@ -4,7 +4,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,130665 ; a(n) = Sum_{k=0..n} 3^wt(k), where wt() = A000120().
   add $1,$2
 lpe

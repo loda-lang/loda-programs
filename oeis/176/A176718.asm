@@ -6,7 +6,6 @@ add $0,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,4207 ; a(0) = 1, a(n) = sum of digits of all previous terms.
   add $1,$2
 lpe

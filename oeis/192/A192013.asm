@@ -1,20 +1,11 @@
 ; A192013: a(n) = Sum_{d|n} Kronecker(-6, d).
-; Submitted by Science United
+; Submitted by damotbe
 ; 1,1,1,1,2,1,2,1,1,2,2,1,0,2,2,1,0,1,0,2,2,2,0,1,3,0,1,2,2,2,2,1,2,0,4,1,0,0,0,2,0,2,0,2,2,0,0,1,3,3,0,0,2,1,4,2,0,2,2,2,0,2,2,1,0,2,0,0,0,4,0,1,2,0,3,0,4,0,2,2,1,0,2,2,0,0,2,2,0,2,0,0,2,0,0,1,2,3,2,3
 
-mov $2,1
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  mov $1,$2
-  gcd $1,$4
-  bin $1,$2
-  add $2,1
-  add $0,18
-  seq $0,322796 ; a(n) = Kronecker symbol (6/n).
-  mul $1,$0
-  add $3,$1
+add $0,1
+lpb $0
+  dif $0,3
+  dif $0,2
 lpe
-mov $0,$3
+div $0,2
+seq $0,129402 ; Expansion of phi(x^3) * psi(x^4) + x * phi(x) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.

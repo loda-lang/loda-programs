@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,63691 ; Number of solutions to x^2 + y^2 + z^2 = n in positive integers.
   add $1,$2
 lpe

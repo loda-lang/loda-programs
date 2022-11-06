@@ -20,9 +20,8 @@ mul $1,2
 add $1,$4
 add $1,$0
 mul $1,2
-lpb $5
-  sub $5,1
-  add $1,26
-lpe
+mov $6,26
+mul $6,$5
+add $1,$6
 mov $0,$1
 add $0,8

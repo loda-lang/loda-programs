@@ -14,7 +14,6 @@ lpb $4
     mov $3,$0
     mov $5,$0
     cmp $5,0
-    sub $10,$9
     add $0,$5
     mul $3,4
     sub $3,1

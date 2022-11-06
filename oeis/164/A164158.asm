@@ -6,7 +6,6 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,164141 ; Number of binary strings of length n with equal numbers of 001 and 010 substrings.
   add $1,$2
 lpe
