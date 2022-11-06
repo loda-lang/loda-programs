@@ -12,7 +12,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,$1
+  sub $0,1
   seq $0,323599 ; Dirichlet convolution of the identity function with omega.
   mul $1,$0
   add $3,$1

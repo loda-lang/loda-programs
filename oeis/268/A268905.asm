@@ -4,9 +4,7 @@
 lpb $0
   sub $0,1
   mov $1,$0
-  max $1,0
   seq $1,268622 ; Number of n X 2 0..2 arrays with some element plus some horizontally or vertically adjacent neighbor totalling two no more than once.
-  div $0,$1
 lpe
 mul $1,4
 mov $0,$1

@@ -9,8 +9,8 @@ lpb $0
   sub $0,$2
 lpe
 mov $1,3
-add $0,$2
 add $0,1
+add $0,$2
 lpb $0
   sub $0,1
   add $5,$3
@@ -30,6 +30,4 @@ lpb $0
   add $5,$1
 lpe
 mov $0,$6
-sub $0,3
 div $0,3
-add $0,1

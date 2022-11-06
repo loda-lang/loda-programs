@@ -19,10 +19,9 @@ lpb $5
     seq $7,230980 ; Number of primes <= n, starting at n=0.
     add $6,$7
   lpe
-  mov $4,$6
-  mul $0,$5
   mov $2,$5
   mul $2,$6
+  mov $4,$6
   add $1,$2
   max $3,$1
 lpe

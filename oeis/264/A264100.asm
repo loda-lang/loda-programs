@@ -4,7 +4,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,257644 ; First differences of A264100.
   add $1,$2
 lpe

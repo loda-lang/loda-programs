@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,337749 ; a(n) = n! * Sum_{k=0..floor(n/2)} (-1)^k / (n-2*k)!.
   add $1,$2
 lpe

@@ -1,5 +1,5 @@
 ; A343732: Numbers k at which tau(k^k) is a prime power, where tau is the number-of-divisors function A000005.
-; Submitted by damotbe
+; Submitted by UBT - Mikeejones
 ; 2,3,4,6,7,8,9,10,15,22,26,30,31,36,42,46,58,66,70,78,82,102,106,121,127,130,138,166,178,190,210,222,226,238,255,262,282,310,330,346,358,366,382,418,430,438,441,442,462,466,478,498,502,511,546,562,570,586,598,606,618,642,646,658,682,690,718,742,786,822,826,838,858,862,886,900,906,910,946,966,970,982,1000,1018,1023,1030,1038,1086,1089,1090,1102,1122,1162,1186,1222,1230,1258,1282,1290,1302
 
 mov $2,$0
@@ -10,7 +10,7 @@ lpb $2
   add $3,1
   seq $3,62319 ; Number of divisors of n^n, or of A000312(n).
   sub $3,1
-  seq $3,24361 ; Number of primitive Pythagorean triangles with leg n.
+  seq $3,325938 ; a(n) = omega(n)^tau(n), where omega=A001221 and tau=A000005.
   cmp $3,1
   sub $0,$3
   add $1,1

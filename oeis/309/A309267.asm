@@ -10,7 +10,6 @@ lpb $0
   max $2,0
   seq $2,219 ; Number of planar partitions (or plane partitions) of n.
   div $3,2
-  mul $0,$3
   add $1,$2
 lpe
 mov $0,$1

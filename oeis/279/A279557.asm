@@ -6,7 +6,6 @@ mov $1,1
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,99376 ; An inverse Chebyshev transform of x^3.
   add $1,$2
 lpe

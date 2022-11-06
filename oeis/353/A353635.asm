@@ -12,7 +12,6 @@ lpb $3
   seq $0,5383 ; Primes p such that (p+1)/2 is prime.
   mov $2,$3
   mul $2,$0
-  mul $4,$3
   mul $1,2
   add $1,2
   add $1,$2

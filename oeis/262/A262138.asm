@@ -10,7 +10,6 @@ lpb $5
   seq $0,134735 ; Primes followed by the difference from the next prime.
   sub $4,$3
   add $1,2
-  bin $1,$5
   add $2,$4
   mov $3,$2
   add $3,$0

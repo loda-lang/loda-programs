@@ -1,6 +1,7 @@
 ; A249546: Speed of light in km/h.
 ; Submitted by fzs600
 ; 1,0,7,9,2,5,2,8,4,8,8
+; Formula: a(n) = ((2*binomial(2*(n+24),n+1)*(n+1)-2^(2*(n+1)))/8)%10
 
 add $0,1
 mov $2,$0

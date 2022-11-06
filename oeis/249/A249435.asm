@@ -1,17 +1,12 @@
 ; A249435: a(1) = 0, after which one less than prime powers p^m with exponent m >= 2.
-; Submitted by Science United
+; Submitted by PDW
 ; 0,3,7,8,15,24,26,31,48,63,80,120,124,127,168,242,255,288,342,360,511,528,624,728,840,960,1023,1330,1368,1680,1848,2047,2186,2196,2208,2400,2808,3124,3480,3720,4095,4488,4912,5040,5328,6240,6560,6858,6888,7920,8191,9408,10200,10608,11448,11880,12166,12768,14640,15624,16128,16383,16806,17160,18768,19320,19682,22200,22800,24388,24648,26568,27888,28560,29790,29928,32040,32760,32767,36480,37248,38808,39600,44520,49728,50652,51528,52440,54288,57120,58080,59048,63000,65535,66048,68920,69168,72360
 
-mov $1,2
-mov $2,$0
-pow $2,6
-lpb $2
-  mov $3,$1
-  seq $3,293227 ; a(n) is the number of proper divisors of n that are squarefree.
-  cmp $3,2
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+mov $1,1
+lpb $0
+  sub $0,1
+  mov $1,$0
+  seq $1,134612 ; Nonprime numbers such that the root mean cube of their prime factors is a prime (where the root mean cube of c and d is ((c^3+d^3)/2)^(1/3)).
 lpe
-mul $1,$0
 mov $0,$1
+sub $0,1
