@@ -12,9 +12,9 @@ lpb $3
   mul $2,$4
   pow $4,2
   mul $2,$4
-  mul $1,$3
-  mul $1,$3
-  mul $1,$3
+  mov $5,$3
+  pow $5,3
+  mul $1,$5
   add $1,$2
   div $1,$4
   div $2,$4

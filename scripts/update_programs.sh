@@ -2,6 +2,21 @@
 
 pushd .. > /dev/null
 
+# parse options
+commit_staged="n"
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -c|--commit-staged)
+      commit_staged="y"
+      shift # past argument
+      ;;
+    *)
+      echo "Unknown option $1"
+      exit 1
+      ;;
+  esac
+done
+
 echo "Finding updated programs"
 files=
 update_all="n"
@@ -19,12 +34,19 @@ num_updated=0
 for f in $files; do
   fname=$(basename -- $f)
   anumber="${fname%.*}"
-  clear
+  if [ "$commit_staged" != "y" ]; then
+    clear
+  fi
   if git diff -U1000 --exit-code -- $f; then
     echo "Already staged: $f"
     ((num_updated++))
     continue
-  elif [ "$update_all" != "y" ]; then
+  fi
+  if [ "$commit_staged" = "y" ]; then
+    echo "Skipping unstaged: $f"
+    continue
+  fi
+  if [ "$update_all" != "y" ]; then
     echo
     usage=$(cat $LODA_HOME/stats/call_graph.csv | grep ,${anumber} | wc -l)
     full_check=$(cat $LODA_HOME/programs/oeis/full_check.txt | grep ${anumber}: | wc -l)
@@ -60,13 +82,20 @@ for f in $files; do
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git add $f
     ((num_updated++))
-  else
+  elif [ "$a" = "n" ] || [ "$a" = "N" ]; then
     git checkout -- $f
+  else
+    echo "Invalid answer. Stopping!"
+    exit 1
   fi
 done
 
-if (( num_updated > 0 )); then
-  read -p "Commit $num_updated updated programs? (Y/n) " a
+if (( num_updated >= 100 )); then
+  if [ "$commit_staged" = "y" ]; then
+    a="y"
+  else
+    read -p "Commit $num_updated updated programs? (Y/n) " a
+  fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git commit -m "updated $num_updated programs"
     git pull -X theirs

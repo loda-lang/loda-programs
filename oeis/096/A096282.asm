@@ -10,6 +10,5 @@ lpb $3
   add $0,$3
   seq $0,96281 ; Sums of successive twin primes of order 1.
   add $1,$0
-  mul $2,$3
 lpe
 mov $0,$1

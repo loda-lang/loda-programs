@@ -1,18 +1,6 @@
 ; A014198: Number of integer solutions to x^2 + y^2 <= n excluding (0,0).
-; Submitted by Science United
+; Submitted by Christian Krause
 ; 0,4,8,8,12,20,20,20,24,28,36,36,36,44,44,44,48,56,60,60,68,68,68,68,68,80,88,88,88,96,96,96,100,100,108,108,112,120,120,120,128,136,136,136,136,144,144,144,144,148,160,160,168,176,176,176,176,176,184,184,184,192,192,192,196,212,212,212,220,220,220,220,224,232,240,240,240,240,240,240,248,252,260,260,260,276,276,276,276,284,292,292,292,292,292,292,292,300,304,304
 
-mov $3,3
-mov $4,-1
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-  add $4,2
-  add $1,$2
-  mov $3,$4
-lpe
-mov $0,$1
-mul $0,4
+seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
+sub $0,1

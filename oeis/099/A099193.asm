@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,1848 ; Crystal ball sequence for 6-dimensional cubic lattice.
   add $1,$2
 lpe

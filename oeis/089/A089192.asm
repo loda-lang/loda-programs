@@ -1,20 +1,13 @@
 ; A089192: Numbers n such that 2n - 7 is a prime.
-; Submitted by [AF>Libristes] erik
+; Submitted by damotbe
 ; 5,6,7,9,10,12,13,15,18,19,22,24,25,27,30,33,34,37,39,40,43,45,48,52,54,55,57,58,60,67,69,72,73,78,79,82,85,87,90,93,94,99,100,102,103,109,115,117,118,120,123,124,129,132,135,138,139,142,144,145,150,157,159,160,162,169,172,177,178,180,183,187,190,193,195,198,202,204,208,213,214,219,220,223,225,228,232,234,235,237,243,247,249,253,255,258,264,265,274,277
 
-sub $0,2
-mov $1,8
-mov $3,27
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,2
-  sub $2,$0
+mov $1,4
+lpb $0
+  sub $0,1
+  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
 lpe
-div $1,2
-add $1,$0
 mov $0,$1
-add $0,3
+sub $0,3
+div $0,2
+add $0,5

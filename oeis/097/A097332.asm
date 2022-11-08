@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.
   add $1,$2
 lpe

@@ -1,5 +1,5 @@
 ; A062087: Squarefree numbers with all prime digits.
-; Submitted by Simon Strandgaard
+; Submitted by Landjunge
 ; 2,3,5,7,22,23,33,35,37,53,55,57,73,77,222,223,227,233,235,237,253,255,257,273,277,322,323,327,335,337,353,355,357,373,377,523,527,533,535,537,553,555,557,573,577,723,727,733,737,753,755,757,773,777,2222,2227,2233,2235,2237,2253,2255,2257,2273,2323,2327,2333,2335,2337,2353,2355,2357,2373,2377,2522,2533,2537,2553,2555,2557,2573,2577,2722,2723,2733,2735,2737,2753,2755,2757,2773,2777,3223,3227,3233,3235,3237,3253,3255,3257,3273
 
 mov $2,$0
@@ -11,7 +11,7 @@ lpb $2
   seq $3,46034 ; Numbers whose digits are primes.
   sub $3,1
   mov $5,$3
-  seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
+  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   cmp $3,1
   sub $0,$3
   add $1,1

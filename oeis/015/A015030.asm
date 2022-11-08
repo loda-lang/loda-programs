@@ -11,7 +11,6 @@ lpb $3
   mov $2,$0
   max $2,0
   seq $2,6098 ; Gaussian binomial coefficient [ 2n,n ] for q=2.
-  bin $0,$3
   gcd $1,$2
 lpe
 mov $0,$1

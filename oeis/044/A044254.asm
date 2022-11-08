@@ -23,9 +23,8 @@ lpb $2
   lpe
   trn $2,1
 lpe
-lpb $4
-  sub $4,1
-  add $1,81
-lpe
+mov $6,81
+mul $6,$4
+add $1,$6
 mov $0,$1
 add $0,80

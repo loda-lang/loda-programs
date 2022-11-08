@@ -1,6 +1,7 @@
 ; A063541: Least number of empty triangles determined by n points in the plane.
 ; Submitted by Simon Strandgaard
 ; 1,3,7,13,21,31,43,58,75,94,114
+; Formula: a(n) = n^2+max(((n^2+2*n)-11)/22,1)+n
 
 mov $1,$0
 pow $0,2
