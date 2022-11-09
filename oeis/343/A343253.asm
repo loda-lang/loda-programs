@@ -4,16 +4,6 @@
 
 add $0,1
 mov $2,$0
-lpb $0
-  mov $1,1
-  mov $2,1
-  lpb $0
-    add $2,1
-    sub $0,$2
-    mul $1,7
-  lpe
-  mov $0,$1
-lpe
 sub $0,3
 lpb $0
   dif $2,11

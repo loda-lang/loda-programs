@@ -9,6 +9,7 @@ A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with 
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+A001954: a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
 A001956: Beatty sequence of (5+sqrt(13))/2.
 A001961: A Beatty sequence: floor(n * (sqrt(5) - 1)).
 A001962: A Beatty sequence: floor(n * (sqrt(5) + 3)).
@@ -447,6 +448,7 @@ A293484: The number of 7th powers in the multiplicative group modulo n.
 A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 A295879: Multiplicative with a(p) = 1, a(p^e) = prime(e-1) if e > 1.
+A296767: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(rises) < #(falls); see Comments.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 A296908: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) < #(peaks); see Comments.
 A296923: Primes p such that Legendre(-5,p) = -1.

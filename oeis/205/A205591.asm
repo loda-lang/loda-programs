@@ -5,7 +5,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,205592 ; a(2) = 1, a(3k) = a(3k+1) = a(2k), a(3k+2) = 2a(2k+1) for k >= 1.
   add $1,$2
 lpe

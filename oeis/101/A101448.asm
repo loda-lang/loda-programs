@@ -1,18 +1,13 @@
 ; A101448: Nonnegative numbers k such that 2k + 11 is prime.
-; Submitted by Landjunge
+; Submitted by damotbe
 ; 0,1,3,4,6,9,10,13,15,16,18,21,24,25,28,30,31,34,36,39,43,45,46,48,49,51,58,60,63,64,69,70,73,76,78,81,84,85,90,91,93,94,100,106,108,109,111,114,115,120,123,126,129,130,133,135,136,141,148,150,151,153,160,163,168,169,171,174,178,181,184,186,189,193,195,199,204,205,210,211,214,216,219,223,225,226,228,234,238,240,244,246,249,255,256,265,268,273,276,279
 
-mov $1,12
-mov $2,$0
-pow $2,4
-lpb $2
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,2
-  sub $2,$0
-  mov $3,$1
+mov $1,4
+add $0,3
+lpb $0
+  sub $0,1
+  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
 lpe
-div $1,2
-add $1,$0
 mov $0,$1
-sub $0,6
+sub $0,11
+div $0,2

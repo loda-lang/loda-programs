@@ -1,6 +1,23 @@
 ; A171021: In the sequence of prime numbers, replace all the '4' digits with '2' and vice versa.
-; Submitted by Fardringle
+; Submitted by Kotenok2000
 ; 4,3,5,7,11,13,17,19,43,49,31,37,21,23,27,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,147,131,137,139,129,151,157,163,167,173,179,181,191,193,197,199,411,443,447,449,433,439,421,451,457,463,469,471,477,481,483,493,307,311,313,317,331,337,327,329,353,359,367,373,379,383,389,397,201,209,219,241,231,233,239,223,229,257,261,263,267,279,287,291,299,503,509,541,543,521
 
 seq $0,40 ; The prime numbers.
-seq $0,222228 ; In the number n, replace all (decimal) digits '2' with '4' and vice versa.
+mov $1,$0
+mov $4,1
+lpb $0
+  mov $2,$0
+  add $2,6
+  mod $2,10
+  mov $3,$2
+  sub $3,9
+  div $0,10
+  gcd $2,8
+  div $2,8
+  mul $2,$4
+  dif $2,$3
+  mul $2,2
+  mul $4,10
+  sub $1,$2
+lpe
+mov $0,$1

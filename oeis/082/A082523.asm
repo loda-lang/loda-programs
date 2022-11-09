@@ -1,7 +1,10 @@
 ; A082523: Number of times k^2 + (n-k)^2 is a square for 1 <= k <= n-1.
-; Submitted by gemini8
+; Submitted by damotbe
 ; 0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,2,0,0,0,2,0,2,0,0,0,0,2,0,0,2,0,0,2,2,0,0,0,0,0,2,2,0,0,0,2,2,0,4,0,2,0,0,0,0,2,0,0,0,0,0,2,2,0,0,0,0,2,2,2,2,0,2,0,0,0,2,0,2,0,0,2,0,2,2,0,0,0,2,0,2,2,2,2,0,0,2,4,0,0,0
 
-add $0,1
-seq $0,331671 ; Number of Pythagorean triangles with sum of legs n.
+add $0,2
+pow $0,2
+sub $0,1
+seq $0,259829 ; a(n) = (-1)^floor(n/2) * A035185(n).
+div $0,2
 mul $0,2

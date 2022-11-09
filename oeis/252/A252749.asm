@@ -4,7 +4,6 @@
 lpb $0
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,252748 ; a(n) = A003961(n) - 2*n.
   add $1,$2
 lpe

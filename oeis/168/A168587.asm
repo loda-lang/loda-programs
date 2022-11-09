@@ -1,6 +1,7 @@
 ; A168587: Smallest digit sum of an n-digit prime with only digits 0 add 1 (or 0, if no such prime exists).
 ; Submitted by Jon Maiga
 ; 0,2,2,0,4,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+; Formula: a(n) = (binomial(8*(3*n+2),binomial(3*n+2,2))+4)%10
 
 mul $0,3
 add $0,2

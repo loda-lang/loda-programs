@@ -1,22 +1,11 @@
 ; A089026: a(n) = n if n is a prime, otherwise a(n) = 1.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by damotbe
 ; 1,2,3,1,5,1,7,1,1,1,11,1,13,1,1,1,17,1,19,1,1,1,23,1,1,1,1,1,29,1,31,1,1,1,1,1,37,1,1,1,41,1,43,1,1,1,47,1,1,1,1,1,53,1,1,1,1,1,59,1,61,1,1,1,1,1,67,1,1,1,71,1,73,1,1,1,1,1,79,1,1,1,83,1,1,1,1,1,89,1,1,1,1,1,1,1,97,1,1,1
 
-mov $2,2
-mov $4,1
-add $0,1
 lpb $0
-  mov $4,$0
-  mov $3,$0
-  div $3,3
-  lpb $3
-    mov $1,$0
-    mod $1,$2
-    add $2,1
-    sub $3,$1
-  lpe
-  div $0,$2
-  pow $0,2
-  mov $2,1
+  mov $1,$0
+  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,1
 lpe
-mov $0,$4
+mov $0,$1
+add $0,1

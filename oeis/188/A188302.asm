@@ -1,33 +1,8 @@
 ; A188302: Positions of 1 in A188300; complement of A188301.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 10,17,27,34,44,51,58,68,75,85,92,99,109,116,126,133,143,150,157,167,174,184,191,198,208,215,225,232,242,249,256,266,273,283,290,297,307,314,324,331,338,348,355,365,372,382,389,396,406,413,423,430,437,447,454,464,471,481,488,495,505,512,522,529,536,546,553,563,570,577,587,594,604,611,621,628,635,645,652,662,669,676,686,693,703,710,720,727,734,744,751,761,768,775,785,792,802,809,819,826
 
-mov $6,$0
 mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$6
-  sub $0,$1
-  mov $2,$0
-  mov $3,0
-  mov $4,2
-  lpb $4
-    sub $4,1
-    mov $0,$2
-    add $0,$4
-    trn $0,1
-    seq $0,87057 ; Smallest number whose square is larger than 2*n^2.
-    mov $5,$4
-    mul $5,$0
-    add $3,$5
-  lpe
-  min $2,1
-  mul $2,$0
-  mov $0,$3
-  sub $0,$2
-  mul $0,3
-  add $0,4
-  add $7,$0
-lpe
-mov $0,$7
+seq $1,188383 ; Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
+mov $0,$1
+add $0,3

@@ -23,7 +23,6 @@ lpb $3
   lpe
   min $5,1
   mul $5,$4
-  div $0,2
   mov $4,$1
   sub $4,$5
 lpe

@@ -1,20 +1,20 @@
 ; A006337: An "eta-sequence": a(n) = floor( (n+1)*sqrt(2) ) - floor( n*sqrt(2) ).
-; Submitted by v11
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1
 
+mov $2,2
 add $0,1
 lpb $0
-  mov $2,1
-  mov $3,1
-  lpb $0
-    sub $0,$3
-    mov $1,$3
-    mov $3,$2
-    mul $3,2
-    sub $3,$1
-    add $2,$3
-  lpe
+  sub $0,1
+  mul $2,4
+  sub $1,$2
+  add $1,1
+  div $1,4
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
 lpe
-mov $0,$2
-mod $0,2
+mov $0,$3
+div $0,2
 add $0,1

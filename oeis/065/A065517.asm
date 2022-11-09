@@ -1,9 +1,12 @@
 ; A065517: Numerator of n/(sum of the digits of n).
-; Submitted by Jamie Morken(w1)
+; Submitted by PaoloNasca
 ; 1,1,1,1,1,1,1,1,1,10,11,4,13,14,5,16,17,2,19,10,7,11,23,4,25,13,3,14,29,10,31,32,11,34,35,4,37,38,13,10,41,7,43,11,5,23,47,4,49,10,17,52,53,6,11,56,19,58,59,10,61,31,7,32,65,11,67,34,23,10,71,8,73,74,25,76,11,26,79,10,9,41,83,7,85,43,29,11,89,10,91,92,31,94,95,32,97,98,11,100
 
-mov $1,$0
-add $1,1
-seq $0,66750 ; Greatest common divisor of n and its digit sum.
-div $1,$0
+mov $1,1
+add $1,$0
+add $0,1
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+mov $2,$0
+gcd $2,$1
+div $1,$2
 mov $0,$1

@@ -1,15 +1,7 @@
 ; A101266: First differences of A101402.
-; Submitted by [AF] Kalianthys
+; Submitted by LM
 ; 1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,1,0,1,0
 
 add $0,1
-mov $1,$0
-lpb $1
-  sub $1,2
-  mov $2,1
-  lpb $1
-    sub $1,$2
-    mul $2,2
-  lpe
-lpe
-mov $0,$1
+seq $0,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
+sub $0,1

@@ -6,21 +6,18 @@ mov $2,1
 add $0,1
 lpb $0
   sub $0,1
-  mov $1,$5
   mov $4,$2
-  add $4,1
   lpb $4
-    sub $4,1
     gcd $4,$0
     mov $3,$4
-    trn $3,1
+    sub $3,1
     seq $3,302110 ; Let d be the list of A000005(n) = tau(n) divisors of n. Then a(n) is the largest k such that Sum_{i=1..#d-k} d_i > n.
     add $3,2
-    seq $3,345378 ; Number of terms m <= n, where m is a term in A006497.
+    seq $3,345379 ; Number of terms m <= n, where m is a term in the bisection of Lucas numbers (A005248).
     cmp $3,2
     cmp $3,0
     sub $4,$0
-    add $5,$3
+    add $1,$3
   lpe
   add $2,1
 lpe

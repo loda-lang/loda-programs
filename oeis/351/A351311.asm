@@ -1,6 +1,28 @@
 ; A351311: Sum of the 6th powers of the square divisors of n.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 1,1,1,4097,1,1,1,4097,531442,1,1,4097,1,1,1,16781313,1,531442,1,4097,1,1,1,4097,244140626,1,531442,4097,1,1,1,16781313,1,1,1,2177317874,1,1,1,4097,1,1,1,4097,531442,1,1,16781313,13841287202,244140626,1,4097,1,531442,1,4097,1,1,1,4097,1,1,531442,68736258049,1,1,1,4097,1,1,1,2177317874,1,1,244140626,4097,1,1,1,16781313,282430067923,1,1,4097,1,1,1,4097,1,531442,1,4097,1,1,1,16781313,1,13841287202,531442,1000244144722
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,13960 ; a(n) = sigma_12(n), the sum of the 12th powers of the divisors of n.
+add $0,1
+mov $3,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  pow $6,3
+  mul $6,$5
+  pow $6,2
+  add $1,$6
+  mov $5,$0
+  add $5,1
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
+lpe
+mov $0,$1
+add $0,1

@@ -1,10 +1,12 @@
 ; A033684: 1 iff n is a square not divisible by 3.
-; Submitted by [AF] Kalianthys
+; Submitted by Christian Krause
 ; 0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-lpb $0
-  dif $0,4
-lpe
-seq $0,282213 ; Coefficients in q-expansion of (E_2^3*E_4 - 3*E_2^2*E_6 + 3*E_2*E_4^2 - E_4*E_6)/3456, where E_2, E_4, E_6 are the Eisenstein series shown in A006352, A004009, A013973, respectively.
-mod $0,9
+mov $1,$0
+mod $1,3
+seq $0,104794 ; Expansion of theta_4(q)^2 in powers of q.
+mul $0,$1
+div $0,4
+mod $0,2
+add $0,2
 mod $0,2

@@ -1,5 +1,5 @@
 ; A256915: Length of the enhanced squares representation of n.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by damotbe
 ; 1,1,1,1,1,2,2,2,3,1,2,2,2,2,3,3,1,2,2,2,2,3,3,3,4,1,2,2,2,2,3,3,3,4,2,3,1,2,2,2,2,3,3,3,4,2,3,3,3,1,2,2,2,2,3,3,3,4,2,3,3,3,3,4,1,2,2,2,2,3,3,3,4,2,3,3,3,3,4,4,2,1,2,2,2,2,3,3,3,4,2,3,3,3,3,4,4,2,3,3
 
 add $0,1
@@ -19,6 +19,4 @@ lpb $1
 lpe
 max $4,2
 mov $0,$4
-sub $0,2
 div $0,2
-add $0,1

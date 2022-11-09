@@ -1,16 +1,26 @@
 ; A005884: Theta series of f.c.c. lattice with respect to edge.
-; Submitted by PDW
+; Submitted by damotbe
 ; 2,4,4,8,6,4,12,8,8,12,8,8,14,16,4,16,16,8,20,8,8,20,20,16,18,8,12,24,16,12,20,24,8,28,16,8,32,20,16,16,18,20,24,24,16,24,24,8,40,20,12,40,16,12,20,24,16,40,36,16,22,24,24,32,16,12,40,32,24,28,16,24,40,28,12,24,40,16,52,24,16,44,16,24,30,36,20,40,32,12,36,24,24,56,32,16,40,32,20,40
 
 mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
+  mov $5,0
+  mov $7,3
+  mov $8,0
   mov $2,$0
-  max $2,0
-  seq $2,33761 ; Product t2(q^d); d | 2, where t2 = theta2(q)/(2*q^(1/4)).
-  sub $4,1
-  add $1,$2
+  add $2,3
+  lpb $2
+    sub $2,$7
+    mov $6,$2
+    max $6,0
+    seq $6,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+    add $8,1
+    add $5,$6
+    mov $7,$8
+  lpe
+  add $1,$5
   mov $3,2
   add $3,$4
   add $4,2

@@ -1,11 +1,10 @@
 ; A353567: Number of divisors d of n such that d is a multiple of its prime shadow A181819(d).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,2,1,2,1,2,1,2,2,2,1,3,1,2,1,2,1,4,1,2,1,2,1,3,1,2,2,2,1,2,1,2,1,2,1,6,1,2,1,3,1,2,1,2,2,2,1,3,1,2,1,2,1,4,1,2,1,2,1,4,1,2,2,2,1,2,1,2,1,2,1,6,1,2,1,2,1,2,1,3,2,2,1,4,1,2,1,2,1,4,1,2,1,2,1,3,1,2,2,2
 
 mov $2,$0
 add $2,1
 mov $4,$0
-add $4,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -19,3 +18,4 @@ lpb $4
   add $3,$1
 lpe
 mov $0,$3
+add $0,1
