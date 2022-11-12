@@ -4,9 +4,9 @@
 
 mov $2,$0
 add $2,2
-pow $2,2
+pow $2,3
 lpb $2
-  sub $2,2
+  sub $2,1
   mov $3,$1
   seq $3,46034 ; Numbers whose digits are primes.
   sub $3,1

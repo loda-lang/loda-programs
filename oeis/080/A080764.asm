@@ -1,15 +1,8 @@
 ; A080764: First differences of A049472, floor(n/sqrt(2)).
-; Submitted by damotbe
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1
 
 add $0,1
-lpb $0
-  mov $1,$0
-  seq $1,82532 ; a(n) = n^2 - 2*floor(n/sqrt(2))^2.
-  sub $1,$0
-  mov $3,1
-  mod $0,$1
-  add $0,$2
-  sub $2,$1
-lpe
-mov $0,$3
+seq $0,77770 ; Number of ordered pairs of integers (x,y) with n^2 < x^2 + y^2 < (n+1)^2; number of lattice points between circles of radii n and n+1.
+div $0,4
+mod $0,2

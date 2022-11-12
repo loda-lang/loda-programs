@@ -1,9 +1,10 @@
 ; A066578: a(n) = floor(n/(sum of digits of n)).
-; Submitted by PaoloNasca
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,1,1,1,1,1,1,10,5,4,3,2,2,2,2,2,1,10,7,5,4,4,3,3,3,2,2,10,7,6,5,4,4,4,3,3,3,10,8,7,6,5,5,4,4,4,3,10,8,7,6,6,5,5,4,4,4,10,8,7,7,6,5,5,5,4,4,10,8,8,7,6,6,5,5,5,4,10,9,8,7,7,6,6,5,5,5,10,9,8,7,7,6,6,6,5,5,100
 
+mov $1,1
+add $1,$0
 add $0,1
-mov $1,$0
-seq $1,57147 ; a(n) = n times sum of digits of n.
-pow $0,2
-div $0,$1
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+div $1,$0
+mov $0,$1

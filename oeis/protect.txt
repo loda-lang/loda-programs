@@ -1,3 +1,4 @@
+A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 A001248: Squares of primes.
 A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
@@ -10,7 +11,10 @@ A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphis
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 A003972: Moebius transform of A003961; a(n) = phi(A003961(n)), where A003961 shifts the prime factorization of n one step towards the larger primes.
 A004085: Sum of digits of Euler totient function of n.
+A004087: Primes written backwards.
+A004091: Fibonacci numbers written backwards.
 A004397: a(n) = prime(n) + Fibonacci(n).
+A004398: a(n) = Fibonacci(n+1) + prime(n).
 A004399: Fibonacci(n+2) plus n-th prime.
 A005097: (Odd primes - 1)/2.
 A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
@@ -26,6 +30,7 @@ A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008864: a(n) = prime(n) + 1.
 A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
+A014303: a(n) = prime(n)*(prime(n+1)-1)/2.
 A014683: In the sequence of positive integers add 1 to each prime number.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
 A014690: a(n) = n + prime(n+1).
@@ -34,6 +39,7 @@ A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A020908: Number of terms in Zeckendorf representation of 2^n.
+A022797: n-th prime + n-th nonprime.
 A023507: a(n) = sum of distinct prime divisors of prime(n) - 1.
 A023517: Greatest prime divisor of p(n)*p(n-1) - 1.
 A023589: Number of distinct prime divisors of 2*p(n)+1.
@@ -46,9 +52,11 @@ A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031370: a(n) = prime(4n-1).
 A031377: a(n) = prime(3n-2).
+A031378: a(n) = prime(4*n - 2).
 A031379: a(n) = prime(5*n - 2).
 A031381: a(n) = prime(7*n - 2).
 A031385: a(n) = prime(4*n-3).
+A031386: a(n) = prime(5*n-3).
 A031389: a(n) = prime(8*n-3).
 A031392: a(n) = prime(5*n-4).
 A031906: a(n) = prime(6*n - 5).
@@ -117,6 +125,7 @@ A062312: Nonprime numbers squared.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).
 A063439: a(n) = phi(n)^phi(n).
+A065313: a(n) = Pi(n*Pi(n)).
 A066872: p^2 + 1 as p runs through the primes.
 A068096: a(n) = F(L(n)) where F(n) = n-th Fibonacci number and L(n) = n-th Lucas number.
 A068503: Highest power of 3 dividing prime(n)-1.
@@ -158,6 +167,9 @@ A083681: Sum of divisors of semiprimes.
 A084300: a(n) = phi(n) mod 6.
 A084311: a(n) = gcd(prime(n)-1,n-1).
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
+A085975: Number of 1's in decimal expansion of prime(n).
+A085977: Number of 3's in decimal expansion of prime(n).
+A085983: Number of 9's in decimal expansion of prime(n).
 A086665: Difference between sum of divisors of n and integer log of n, i.e., A000203(n) - A001414(n).
 A086801: a(n) = prime(n) - 3.
 A086874: Seventh power of odd primes.

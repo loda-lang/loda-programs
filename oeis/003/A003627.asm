@@ -16,7 +16,7 @@ lpb $3
     lpb $6
       mov $4,$1
       mod $4,$5
-      add $5,1
+      add $5,2
       sub $6,$4
     lpe
     div $1,$5
@@ -29,6 +29,4 @@ lpb $3
 lpe
 pow $2,$0
 mov $0,$2
-div $0,3
-mul $0,3
-add $0,2
+add $0,1

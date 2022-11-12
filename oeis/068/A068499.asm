@@ -1,17 +1,15 @@
 ; A068499: Numbers m such that m! reduced modulo (m+1) is not zero.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by shiva
 ; 1,2,3,4,6,10,12,16,18,22,28,30,36,40,42,46,52,58,60,66,70,72,78,82,88,96,100,102,106,108,112,126,130,136,138,148,150,156,162,166,172,178,180,190,192,196,198,210,222,226,228,232,238,240,250,256,262,268,270,276,280,282,292,306,310,312,316,330,336,346,348,352,358,366,372,378,382,388,396,400,408,418,420,430,432,438,442,448,456,460,462,466,478,486,490,498,502,508,520,522
 
-sub $0,2
-mov $1,4
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,2
-  sub $2,$0
+add $0,3
+lpb $0
+  sub $0,3
+  mov $1,$0
+  max $1,0
+  seq $1,161344 ; Numbers k with A033676(k)=2, where A033676 is the largest divisor <= sqrt(k).
+  mov $0,1
 lpe
-add $0,$1
+mov $0,$1
+div $0,2
 sub $0,1

@@ -23,11 +23,9 @@ lpb $0
   mov $5,1
   lpb $0
     dif $0,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $7,$2
+    pow $7,5
+    mul $5,$7
     add $5,1
   lpe
   mod $5,11

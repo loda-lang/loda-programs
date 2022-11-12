@@ -1,6 +1,6 @@
 ; A071982: Parity of the decimal digits of sqrt(2).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by damotbe
 ; 1,0,1,0,0,1,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,1,1,0
 
-seq $0,11547 ; Decimal expansion of sqrt(2) truncated to n places.
+seq $0,2193 ; Decimal expansion of square root of 2.
 mod $0,2

@@ -10,6 +10,7 @@ lpb $2
   seq $3,127423 ; a(1) = 1; for n > 1, a(n) = n concatenated with n - 1.
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $5,1
   sub $0,$3
   add $1,1
   mov $4,$0
@@ -18,4 +19,4 @@ lpb $2
   mul $2,$4
   trn $2,1
 lpe
-mov $0,$1
+mov $0,$5

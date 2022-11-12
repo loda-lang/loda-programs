@@ -96,6 +96,7 @@ A045312: Primes congruent to {2, 3, 5, 6} (mod 7).
 A045329: Primes congruent to {0, 2, 3, 6} (mod 7).
 A045333: Primes congruent to {0, 2, 3} mod 7.
 A045352: Primes congruent to {1, 2, 5, 7} mod 8.
+A045355: Primes congruent to {2, 5, 7} mod 8.
 A045358: Primes congruent to {0, 1, 2, 5} mod 7.
 A045373: Primes congruent to {0, 1, 2, 4} mod 7.
 A045377: Primes congruent to {0, 2, 6} mod 7.
@@ -333,6 +334,7 @@ A215247: A Beatty sequence: a(n) = floor((n-1/2)*(2 + 2*sqrt(2))).
 A215390: Primes congruent to {1, 2} mod 11.
 A217220: Theta series of Kagome net with respect to an atom.
 A217287: Length of chain of consecutive integers starting with n, where each new integer in the chain has a prime factor which no previous member in the chain has.
+A224731: b(n+1) - b(n) + n where b(n) = A095114(n).
 A225687: a(n) = A030124(n) - n.
 A226123: Number of terms of the form 2^k in Collatz(3x+1) trajectory of n.
 A232324: n(n+1)/2 modulo sigma(n).
@@ -441,6 +443,7 @@ A288999: Positions of 1 in A288997; complement of A288998.
 A289142: Numbers such that the sum of prime factors (taken with multiplicity) is divisible by 3.
 A290499: Hypotenuses for which there exist exactly 8 distinct integer triangles.
 A290500: Hypotenuses for which there exist exactly 9 distinct integer triangles.
+A290739: a(n) = 0 unless n = 3j^2+2j or 3j^2+4j+1 for some j>=0, in which case a(n) = (-1)^(j+1).
 A291208: Number of noncube divisors of n.
 A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).

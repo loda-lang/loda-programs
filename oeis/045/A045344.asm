@@ -5,7 +5,8 @@
 add $0,1
 lpb $0
   sub $0,1
+  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
   add $1,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $0,$1
+sub $0,1

@@ -1,17 +1,17 @@
 ; A007774: Numbers that are divisible by exactly 2 different primes; numbers n with omega(n) = A001221(n) = 2.
-; Submitted by [AF] Kalianthys
+; Submitted by Kotenok2000
 ; 6,10,12,14,15,18,20,21,22,24,26,28,33,34,35,36,38,39,40,44,45,46,48,50,51,52,54,55,56,57,58,62,63,65,68,69,72,74,75,76,77,80,82,85,86,87,88,91,92,93,94,95,96,98,99,100,104,106,108,111,112,115,116,117,118,119,122,123,124,129,133,134,135,136,141,142,143,144,145,146,147,148,152,153,155,158,159,160,161,162,164,166,171,172,175,176,177,178,183,184
 
 mov $2,$0
-add $2,3
+add $2,4
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
-  sub $3,1
-  cmp $3,2
+  seq $3,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
+  add $3,$4
+  cmp $3,3
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,4 +19,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,2
+add $0,1

@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,7954 ; Product of decimal digits of n.
-  seq $3,342001 ; Arithmetic derivative without its inherited divisor; the arithmetic derivative of n divided by A003557(n), which is a common divisor of both n and A003415(n).
+  seq $3,51953 ; Cototient(n) := n - phi(n).
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -1,15 +1,15 @@
 ; A016351: 187th cyclotomic polynomial.
-; Submitted by Sergey Kovalchuk
+; Submitted by Kotenok2000
 ; 1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,1,-1,0,0,0,1,-1,0,0,0,0,1,-1,0,0,0,1,0,-1,0,0,0,1,-1,0,0,0,1,0,-1,0,0,0,1,0,-1,0,0,1,0,-1,0,0,0,1,0,-1,0,0,1,0,0,-1,0,0,1,0,-1,0,0,1,0,0,-1,0,0,1,0,0,-1,0,1,0,0,-1,0,0,1,0,0,-1,0,1
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
-  sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,14026 ; Inverse of 17th cyclotomic polynomial.
-  add $1,$2
-  mov $3,8
+  sub $2,1
+  sub $3,$2
+  mod $3,17
+  pow $3,$3
+  trn $0,11
+  add $1,$3
 lpe
 mov $0,$1
