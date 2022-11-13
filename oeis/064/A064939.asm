@@ -23,10 +23,9 @@ lpb $0
     dif $0,$2
   lpe
   add $7,10
-  lpb $2
-    sub $2,1
-    add $1,$7
-  lpe
+  mov $8,$7
+  mul $8,$2
+  add $1,$8
 lpe
 mov $0,$1
 div $0,10

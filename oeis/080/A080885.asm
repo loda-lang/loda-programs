@@ -1,6 +1,7 @@
 ; A080885: Boolean AND of (0,1) versions of Thue-Morse word (A010060) and Fibonacci word (A003849).
 ; Submitted by ChelseaOilman
 ; 0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+; Formula: a(n) = A003849(n)-A010059(n^A003849(n))
 
 mov $1,$0
 seq $1,3849 ; The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).

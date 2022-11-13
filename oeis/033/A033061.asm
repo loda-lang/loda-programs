@@ -21,8 +21,5 @@ lpb $0
 lpe
 add $0,$3
 trn $0,8
-lpb $1
-  sub $1,1
-  add $0,1
-lpe
+add $0,$1
 add $0,1

@@ -1,5 +1,5 @@
 ; A098905: Odd numbers whose number of distinct prime factors is positive and even.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by Kotenok2000
 ; 15,21,33,35,39,45,51,55,57,63,65,69,75,77,85,87,91,93,95,99,111,115,117,119,123,129,133,135,141,143,145,147,153,155,159,161,171,175,177,183,185,187,189,201,203,205,207,209,213,215,217,219,221,225,235,237,245,247,249,253,259,261,265,267,275,279,287,291,295,297,299,301,303,305,309,319,321,323,325,327,329,333,335,339,341,351,355,363,365,369,371,375,377,381,387,391,393,395,403,405
 
 mov $1,8
@@ -9,7 +9,9 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,92248 ; Parity of number of distinct primes dividing n (function omega(n)) parity of A001221.
+  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  sub $3,1
+  mod $3,3
   cmp $3,0
   sub $0,$3
   mov $4,$0

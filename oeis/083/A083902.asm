@@ -1,4 +1,4 @@
-; A083902: Number of divisors of n with largest digit <= 7 (base 10).
+; A083902: Number of divisors of n with the largest digit of the divisor <= 7 (base 10).
 ; Submitted by Landjunge
 ; 1,2,2,3,2,4,2,3,2,4,2,6,2,4,4,4,2,4,1,6,4,4,2,7,3,4,3,5,1,8,2,5,4,4,4,7,2,2,3,7,2,8,2,6,5,4,2,8,2,6,4,6,2,6,4,6,3,2,1,12,2,4,5,6,4,8,2,5,3,8,2,9,2,4,6,4,4,6,1,8,3,3,1,10,3,3,2,6,1,9,3,5,3,3,2,9,1,4,4,9
 

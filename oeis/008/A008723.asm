@@ -1,31 +1,15 @@
 ; A008723: Molien series for 3-dimensional group [2,11] = *2 2 11.
+; Submitted by Kotenok2000
 ; 1,0,2,0,3,0,4,0,5,0,6,1,7,2,8,3,9,4,10,5,11,6,13,7,15,8,17,9,19,10,21,11,23,13,25,15,27,17,29,19,31,21,33,23,36,25,39,27,42,29,45,31,48,33,51,36,54,39,57,42,60,45,63,48,66,51,70,54,74,57,78,60,82,63,86,66,90,70,94,74,98,78,102,82,106,86,110,90,115,94,120,98,125,102,130,106,135,110,140,115
 
-mov $5,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $2,17
-  mov $0,$5
-  add $0,$4
-  sub $0,1
-  lpb $0
-    mov $6,$0
-    max $6,0
-    seq $6,25766 ; Expansion of 1/((1-x)(1-x^2)(1-x^11)).
-    sub $0,2
-    add $2,$6
-  lpe
-  mov $6,$2
-  sub $6,16
-  mov $3,$4
-  lpb $3
-    sub $3,1
-    mov $1,$6
-  lpe
-lpe
-lpb $5
-  mov $5,0
-  sub $1,$6
+mov $3,3
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,27656 ; Expansion of 1/(1-x^2)^2 (included only for completeness - the policy is always to omit the zeros from such sequences).
+  add $1,$2
+  mov $3,11
 lpe
 mov $0,$1

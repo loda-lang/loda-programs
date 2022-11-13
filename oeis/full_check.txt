@@ -256,6 +256,7 @@ A183094: a(n) = number of powerful divisors d (excluding 1) of n.
 A184485: Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
 A184514: Lower s-Wythoff sequence, where s(n)=4n-1.  Complement of A184515.
 A184516: Lower s-Wythoff sequence, where s=4n-2.  Complement of A184517.
+A184517: Upper s-Wythoff sequence, where s=4n-2.  Complement of A184516.
 A184523: Upper s-Wythoff sequence, where s=5n.  Complement of A184522.
 A184581: a(n) = floor((n + 1/4)*(2 + sqrt(2))).
 A184582: floor[(n+1/5)r] where r=(1+sqrt(5))/2; complement of A184583.

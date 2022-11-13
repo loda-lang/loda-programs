@@ -8,13 +8,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3
-  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,2
   mul $2,$4
   sub $2,1
 lpe

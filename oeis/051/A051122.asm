@@ -8,7 +8,7 @@ mov $5,$0
 seq $5,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
 sub $0,1
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mov $2,$5
+mov $2,$0
 seq $2,70939 ; Length of binary representation of n.
 lpb $2
   sub $2,1
