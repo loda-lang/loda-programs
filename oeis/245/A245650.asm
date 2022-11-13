@@ -8,8 +8,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,245071 ; a(n) = 12n - prime(n).
-  sub $3,1
   mov $5,$3
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
@@ -20,4 +20,3 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
-add $0,1

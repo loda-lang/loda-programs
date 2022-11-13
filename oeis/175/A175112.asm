@@ -9,33 +9,17 @@ lpb $0
   add $1,$0
   trn $0,1
 lpe
-mov $3,$4
-lpb $3
-  sub $3,1
-  add $6,$4
-lpe
+mov $8,$4
+mul $8,$4
+add $6,$8
 mov $5,$6
-mov $2,40
-lpb $2
-  sub $2,1
-  add $1,$6
-lpe
-mov $6,0
-mov $3,$4
-lpb $3
-  sub $3,1
-  add $6,$5
-lpe
-mov $5,$6
-mov $6,0
-mov $3,$4
-lpb $3
-  sub $3,1
-  add $6,$5
-lpe
-mov $2,80
-lpb $2
-  sub $2,1
-  add $1,$6
-lpe
+mul $5,40
+mov $7,$6
+mul $7,$4
+mov $3,$7
+mul $3,$4
+mov $2,$3
+mul $2,80
+add $1,$5
+add $1,$2
 mov $0,$1

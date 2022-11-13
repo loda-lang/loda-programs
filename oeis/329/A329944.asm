@@ -13,7 +13,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
-    seq $7,10051
+    seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     cmp $7,0
     mov $9,10
     add $9,$5

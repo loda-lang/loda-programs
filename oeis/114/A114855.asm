@@ -1,16 +1,30 @@
 ; A114855: Expansion of q^(-1/3) * (eta(q) * eta(q^4))^2 / eta(q^2) in powers of q.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,-2,0,0,0,4,0,0,-5,0,0,0,0,0,0,0,7,0,0,0,0,-8,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,-11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,-14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,-17,0,0,0
 
 mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
+  mov $5,0
+  mov $7,3
+  mov $8,0
   mov $2,$0
-  max $2,0
-  seq $2,2107 ; Expansion of Product_{k>=1} (1 - x^k)^2.
+  mul $2,2
+  add $2,3
+  lpb $2
+    sub $2,$7
+    mov $6,$2
+    max $6,0
+    seq $6,116916 ; Expansion of q^(-1/8) * (eta(q)^3 + 3 * eta(q^9)^3) in powers of q^3.
+    mod $6,3
+    dif $6,-2
+    add $8,1
+    add $5,$6
+    mov $7,$8
+  lpe
   add $4,2
-  add $1,$2
+  add $1,$5
   mov $3,$4
 lpe
 mov $0,$1

@@ -1,15 +1,17 @@
 ; A184775: Numbers k such that floor(k*sqrt(2)) is prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Landjunge
 ; 2,4,5,8,14,21,22,29,31,38,42,48,52,56,59,63,69,72,73,76,80,90,93,97,106,107,123,127,128,137,140,141,158,161,162,165,169,171,178,182,186,192,196,199,220,222,239,246,247,250,254,260,264,268,271,281,284,298,305,311,318,326,328,339,345,353,356,360,369,370,383,387,394,403,404,420,424,425,434,438,455,458,462,466,468,476,479,483,489,496,502,509,519,523,526,544,547,557,564,574
 
+mov $1,2
 mov $2,$0
-add $2,2
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
   seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-  cmp $3,1
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  cmp $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

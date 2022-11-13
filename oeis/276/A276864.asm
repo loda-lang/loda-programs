@@ -1,19 +1,19 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-; Submitted by rythm.ance
+; Submitted by Ralfy
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
 
+mov $2,2
 lpb $0
-  mov $2,1
-  mov $3,1
-  lpb $0
-    sub $0,$2
-    mov $1,$2
-    mov $2,$3
-    mul $2,2
-    sub $2,$1
-    add $3,$2
-  lpe
+  sub $0,1
+  mul $2,4
+  sub $1,$2
+  add $1,1
+  div $1,4
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
 lpe
 mov $0,$3
-mod $0,2
+div $0,2
 add $0,3

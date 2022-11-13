@@ -13,7 +13,6 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  mul $1,2
   mov $5,$0
   seq $5,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mov $7,2
@@ -37,4 +36,3 @@ lpb $4
   add $3,$1
 lpe
 mov $0,$3
-div $0,2

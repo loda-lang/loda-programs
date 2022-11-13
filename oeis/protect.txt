@@ -289,11 +289,18 @@ A146110: Bell numbers (A000110) read mod 20.
 A146116: Bell numbers (A000110) read mod 26.
 A146121: Bell numbers (A000110) read mod 31.
 A151549: a(n) = (A151548(n)-1)/2.
+A153480: a(n) = 2*prime(n)^2 - 4.
 A153481: a(n) = prime(n)^3 - 2.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
 A166010: a(n) = prime(n)^2-4.
+A171018: In the sequence of prime numbers, replace all the '3' digits with '2' and vice versa.
+A171035: In the sequence of prime numbers, replace all the '7' digits with '1' and vice versa.
+A171038: In the sequence of prime numbers, replace all the '7' digits with '4' and vice versa.
+A171039: In the sequence of prime numbers, replace all the '7' digits with '5' and vice versa.
+A171050: In the sequence of prime numbers, replace all the '9' digits with '1' and vice versa.
+A171055: In the sequence of prime numbers, replace all the '9' digits with '6' and vice versa.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
 A172190: a(n) = 2*prime(n)^3.
 A172282: Squares of Bernoulli number denominators A027642.
@@ -313,6 +320,7 @@ A178743: a(n) = A000041(n) mod 10.
 A179262: a(n) = 2*prime(n)^2 - 1.
 A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
+A181062: Prime powers minus 1.
 A181932: A003136(n) mod 2.
 A182200: a(n) = prime(n)^2-3.
 A185322: a(n) = ceiling(prime(n)/10).
@@ -335,6 +343,7 @@ A242122: Primes modulo 22.
 A242125: Primes modulo 27.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
 A244735: a(n) = (prime(n) mod 5) mod 2.
+A259547: a(n) = n^4*Fibonacci(n).
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
 A265538: Largest base-7 palindrome m <= n, written in base 7.
@@ -343,6 +352,7 @@ A272027: a(n) = 3*sigma(n).
 A272470: 7 times the primes.
 A274535: a(n) = 5*sigma(n).
 A274536: a(n) = 6 * sigma(n).
+A278227: Least number with the prime signature of prime(n)-1.
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).
@@ -352,6 +362,7 @@ A299919: Motzkin numbers (A001006) mod 4.
 A306695: a(n) = gcd(n, psi(n)).
 A319089: a(n) = tau(n)^3, where tau is A000005.
 A319528: a(n) = 8 * sigma(n).
+A323902: a(n) = A002487(A156552(n)).
 A326122: a(n) = 10 * sigma(n).
 A330410: a(n) = 6*prime(n) - 1.
 A333169: a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).

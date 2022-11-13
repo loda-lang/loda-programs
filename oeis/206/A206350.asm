@@ -8,7 +8,6 @@ lpb $0
   mov $1,$0
   max $1,0
   seq $1,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
-  mov $0,0
 lpe
 mov $0,$1
 div $0,4

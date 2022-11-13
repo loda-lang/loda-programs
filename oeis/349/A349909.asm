@@ -6,7 +6,6 @@ mov $1,$0
 mov $4,$0
 lpb $4
   sub $4,1
-  mov $2,2
   mov $0,$1
   sub $0,$4
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
@@ -14,10 +13,10 @@ lpb $4
   mod $0,2
   add $0,2
   mul $0,2
-  lpb $0
-    sub $0,1
-    add $2,5
-  lpe
+  mov $5,5
+  mul $5,$0
+  mov $2,2
+  add $2,$5
   mov $0,$2
   div $0,32
   add $3,$0

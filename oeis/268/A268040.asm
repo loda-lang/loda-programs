@@ -1,5 +1,5 @@
 ; A268040: Array y AND NOT x, read by antidiagonals.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 0,0,1,0,0,2,0,1,2,3,0,0,0,2,4,0,1,0,1,4,5,0,0,2,0,4,4,6,0,1,2,3,4,5,6,7,0,0,0,2,0,4,4,6,8,0,1,0,1,0,1,4,5,8,9,0,0,2,0,0,0,2,4,8,8,10,0,1,2,3,0,1,2,3,8,9,10,11,0,0,0,2,4,0,0,2,8,8,8,10,12,0,1,0,1,4,5,0,1,8
 
 mov $2,$0
@@ -11,7 +11,13 @@ mov $5,$0
 max $5,$2
 min $0,$2
 mov $2,$5
-seq $2,70939 ; Length of binary representation of n.
+div $2,2
+lpb $2
+  div $2,2
+  add $7,1
+lpe
+add $7,1
+mov $2,$7
 lpb $2
   sub $2,1
   mov $3,$0

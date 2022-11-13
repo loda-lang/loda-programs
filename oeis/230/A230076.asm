@@ -1,8 +1,17 @@
 ; A230076: a(n) = (A007521(n)-1)/4.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by damotbe
 ; 1,3,7,9,13,15,25,27,37,39,43,45,49,57,67,69,73,79,87,93,97,99,105,115,127,135,139,153,163,165,169,175,177,183,189,193,199,205,207,213,219,235,249,253,255,265,267,273,277,279,295,303,307
 
-seq $0,7521 ; Primes of the form 8k + 5.
-div $0,8
-mul $0,2
 add $0,1
+mov $1,4
+mov $2,$0
+pow $2,4
+lpb $2
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,8
+  sub $2,$0
+lpe
+mov $0,$1
+div $0,4

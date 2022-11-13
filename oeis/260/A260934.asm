@@ -1,5 +1,5 @@
 ; A260934: Sum of evil divisors of n. For evil numbers see A001969.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,0,3,0,5,9,0,0,12,15,0,21,0,0,23,0,17,36,0,35,3,0,23,45,5,0,39,0,29,69,0,0,36,51,5,84,0,0,42,75,0,9,43,0,77,69,0,93,0,15,71,0,53,117,5,0,60,87,0,161,0,0,75,0,70,108,0,119,26,15,71,180,0,0,98,0,77,126,0,155,39,0,83,21,107,129,32,0,89,231,0,161,3,0,100,189,0,0,144,35
 
 mov $2,$0
@@ -12,8 +12,8 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,102391 ; Evil numbers in evil places.
   mul $1,$0
+  seq $1,102391 ; Evil numbers in evil places.
   add $3,$1
 lpe
 mov $0,$3

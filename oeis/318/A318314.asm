@@ -1,6 +1,7 @@
 ; A318314: Denominators of the sequence whose Dirichlet convolution with itself yields A068068, number of odd unitary divisors of n.
 ; Submitted by Vato
 ; 1,2,1,8,1,2,1,16,2,2,1,8,1,2,1,128,1,4,1,8,1,2,1,16,2,2,2,8,1,2,1,256,1,2,1,16,1,2,1,16,1,2,1,8,2,2,1,128,2,4,1,8,1,4,1,16,1,2,1,8,1,2,2,1024,1,2,1,8,1,2,1,32,1,2,2,8,1,2,1,128,8,2,1,8,1,2,1,16,1,4,1,8,1,2,1,256,1,4,2,16
+; Formula: a(n) = (2^(A001511(n)+A317946(n)))/2
 
 mov $1,$0
 seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.

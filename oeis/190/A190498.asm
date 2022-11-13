@@ -8,9 +8,9 @@ pow $2,2
 add $2,6
 lpb $2
   mov $3,$1
-  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  seq $3,22804 ; a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
   mod $3,3
-  div $3,2
+  mod $3,2
   sub $0,$3
   add $1,3
   mov $4,$0

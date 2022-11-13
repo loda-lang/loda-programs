@@ -4,7 +4,7 @@
 
 mov $2,1
 mov $10,1
-add $0,$2
+add $0,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -15,9 +15,9 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+    seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+    add $7,2
     cmp $7,2
-    cmp $7,$8
     mov $9,10
     add $9,$5
     sub $4,$0

@@ -1,5 +1,5 @@
 ; A261445: Expansion of f(x, x^3) * f(x, x^2)^3 in powers of x where f(, ) is Ramanujan's general theta function.
-; Submitted by emoga
+; Submitted by Simon Strandgaard
 ; 1,4,9,14,16,18,21,28,36,38,40,36,43,52,54,62,56,72,74,72,81,64,88,90,98,100,72,110,112,126,133,104,126,108,136,144,112,148,144,158,144,144,183,172,180,182,152,162,194,196,198,160,216,216,180,224,189,230,232,234,242,172,252,288,256,252,208,268,252,278,280,216,273,292,324,252,248,306,314,316,324,294,288,342,338,360,288,350,352,288,343,296,360,374,392,378,288,388,396,398
 
 mul $0,4
@@ -8,11 +8,25 @@ add $1,1
 mov $2,$0
 lpb $2
   sub $2,1
+  mov $7,0
   mov $0,$1
   gcd $0,$2
-  sub $0,1
-  seq $0,35194 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 12.
-  add $3,$0
+  mov $4,0
+  mov $5,$0
+  add $0,1
+  lpb $0
+    sub $0,1
+    mov $6,$5
+    dif $6,$0
+    cmp $6,$5
+    cmp $6,0
+    sub $7,$4
+    sub $0,1
+    add $6,$7
+    add $4,$6
+  lpe
+  add $4,1
+  add $3,$4
 lpe
 mov $0,$3
 add $0,1

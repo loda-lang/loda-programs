@@ -1,18 +1,25 @@
 ; A294091: Numbers k such that (k - 1)/2 is prime that are not congruent to -1 mod 8.
-; Submitted by Christian Krause
+; Submitted by shiva
 ; 5,11,27,35,59,75,83,107,123,147,179,195,203,219,227,275,299,315,347,363,387,395,459,467,483,515,539,555,563,587,627,635,675,699,707,747,779,795,803,819,843,867,899,915,923,1019,1043,1083,1115,1139,1155,1187,1203,1227,1235,1283,1307,1323,1347,1355,1403,1419,1467,1515,1523,1539,1547,1595,1619,1643,1659,1707,1715,1755,1763,1859,1875,1883,1907,1955,1995,2019,2027,2043,2067,2099,2123,2139,2187,2195,2219,2235,2259,2307,2363,2387,2403,2427,2435,2459
 
-mov $2,4
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,4
-  sub $3,$0
+mov $2,$0
+pow $2,2
+lpb $2
+  add $4,2
+  add $1,1
+  mul $3,8
+  seq $3,115517 ; The mode of the bits of n (using 1 if bimodal).
+  add $3,$1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  cmp $3,1
+  sub $0,$3
+  add $1,$4
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-pow $2,$0
-mov $0,$2
+mov $0,$1
 mul $0,2
-add $0,3
+add $0,5

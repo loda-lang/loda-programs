@@ -1,5 +1,5 @@
 ; A122258: Number of Pierpont primes <= n.
-; Submitted by Science United
+; Submitted by Kotenok2000
 ; 0,1,2,2,3,3,4,4,4,4,4,4,5,5,5,5,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10
 
 mov $5,$0
@@ -13,9 +13,8 @@ lpb $1
   mov $2,$3
   lpb $2
     seq $3,336040 ; Characteristic function of refactorable numbers (A033950).
-    mov $0,$3
     mul $2,$3
-    mov $3,$2
+    mov $0,$2
     mod $2,5
   lpe
   sub $0,1

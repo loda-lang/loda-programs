@@ -4,7 +4,3 @@
 
 seq $0,115977 ; Expansion of elliptic modular function lambda in powers of the nome q.
 gcd $0,$0
-sub $0,16
-div $0,16
-add $0,1
-mul $0,16

@@ -1,6 +1,7 @@
 ; A353307: a(n) = 1 if A156552(n) == 1 (mod 3), otherwise 0.
-; Submitted by Landjunge
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,0,1,0,0,1,0,0,1,0,0,0,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0
 
-seq $0,329903 ; a(n) = A156552(n) mod 3.
-mod $0,2
+seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
+mod $0,3
+cmp $0,1

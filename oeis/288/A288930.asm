@@ -3,7 +3,7 @@
 ; 2,3,6,9,10,15,16,19,24,25,28,31,32,39,40,43,46,47,52,53,56,63,64,67,70,71,76,77,80,85,86,89,92,93,102,103,106,109,110,115,116,119,124,125,128,131,132,139,140,143,146,147,152,153,156,165,166,169,172,173,178,179,182,187,188,191,194,195,202,203,206,209,210,215,216,219,226,227,230,233,234,239,240,243,248,249,252,255,256,267,268,271,274,275,280,281,284,289,290,293
 
 mov $1,$0
-seq $1,7895 ; Number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+seq $1,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
 mov $2,$0
 sub $0,$1
 mul $0,2

@@ -1,15 +1,17 @@
 ; A323239: a(n) = 1 if n is odd and squarefree, otherwise a(n) = 0.
-; Submitted by [SG]ATA-Rolf
+; Submitted by Ralfy
 ; 0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0
 
-add $0,1
-mov $2,2
-max $2,$0
+sub $1,$0
+mov $2,-1
 add $2,$0
-sub $2,3
-max $0,$2
-seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-mov $1,$2
-mul $1,$0
+lpb $2
+  max $2,6
+  seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  mul $2,$0
+  add $1,$0
+lpe
 mov $0,$1
+mod $0,2
+add $0,2
 mod $0,2
