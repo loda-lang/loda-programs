@@ -13,11 +13,10 @@ lpb $0
   add $2,$3
   add $3,$0
 lpe
+mov $5,3
+mul $5,$4
 trn $1,1
-add $1,$3
-lpb $4
-  sub $4,1
-  add $1,3
-lpe
 sub $1,6
+add $1,$3
+add $1,$5
 mov $0,$1

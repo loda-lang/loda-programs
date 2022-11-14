@@ -1,17 +1,17 @@
 ; A014311: Numbers with exactly 3 ones in binary expansion.
-; Submitted by LG@BOINC
+; Submitted by Kotenok2000
 ; 7,11,13,14,19,21,22,25,26,28,35,37,38,41,42,44,49,50,52,56,67,69,70,73,74,76,81,82,84,88,97,98,100,104,112,131,133,134,137,138,140,145,146,148,152,161,162,164,168,176,193,194,196,200,208,224,259,261,262,265,266,268,273,274,276,280,289,290,292,296,304,321,322,324,328,336,352,385,386,388,392,400,416,448,515,517,518,521,522,524,529,530,532,536,545,546,548,552,560,577
 
 mov $2,$0
-add $2,3
+add $2,4
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,88512 ; Number of partitions of n into two parts whose xor-sum is n.
-  sub $3,1
-  cmp $3,2
+  seq $3,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
+  sub $3,2
+  cmp $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,5 +19,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,2
 add $0,1

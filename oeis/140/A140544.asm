@@ -8,7 +8,6 @@ lpb $0
   max $1,0
   seq $1,108976 ; Numbers n such that 17*n + 19 is prime.
   add $1,1
-  mov $0,0
 lpe
 mov $0,$1
 mul $0,17

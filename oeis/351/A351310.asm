@@ -1,6 +1,27 @@
 ; A351310: Sum of the 5th powers of the square divisors of n.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 1,1,1,1025,1,1,1,1025,59050,1,1,1025,1,1,1,1049601,1,59050,1,1025,1,1,1,1025,9765626,1,59050,1025,1,1,1,1049601,1,1,1,60526250,1,1,1,1025,1,1,1,1025,59050,1,1,1049601,282475250,9765626,1,1025,1,59050,1,1025,1,1,1,1025,1,1,59050,1074791425,1,1,1,1025,1,1,1,60526250,1,1,9765626,1025,1,1,1,1049601,3486843451,1,1,1025,1,1,1,1025,1,59050,1,1025,1,1,1,1049601,1,282475250,59050,10009766650
 
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-seq $0,13958 ; a(n) = sigma_10(n), the sum of the 10th powers of the divisors of n.
+add $0,1
+mov $1,1
+mov $3,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  pow $6,5
+  mul $6,$5
+  add $1,$6
+  mov $5,$0
+  add $5,2
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
+lpe
+mov $0,$1

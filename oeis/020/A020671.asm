@@ -1,12 +1,27 @@
 ; A020671: Numbers of form x^2 + 8 y^2.
-; Submitted by Catchercradle
+; Submitted by Kotenok2000
 ; 0,1,4,8,9,12,16,17,24,25,32,33,36,41,44,48,49,57,64,68,72,73,76,81,88,89,96,97,100,108,113,121,128,129,132,136,137,144,152,153,164,169,172,176,177,192,193,196,200,201,204,209,216,225,228,233,236,241,249,256,257,264,268,272,281,288,289,292,297,300,304,313,321,324,328,332,337,344,352,353,356,361,369,384,388,392,393,396,400,401,408,409,417,425,428,432,433,441,449,452
 
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,0
+  mov $7,3
+  mov $8,0
   mov $3,$1
-  seq $3,226225 ; Expansion of phi(q) * phi(q^8) in powers of q where phi() is a Ramanujan theta function.
+  add $3,3
+  lpb $3
+    sub $3,$7
+    mov $6,$3
+    max $6,0
+    seq $6,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+    add $5,$6
+    mov $7,1
+    add $7,$8
+    mul $7,8
+    add $8,2
+  lpe
+  mov $3,$5
   min $3,1
   sub $0,$3
   add $1,1

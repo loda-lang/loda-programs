@@ -17,10 +17,9 @@ lpb $0
   add $2,$4
   add $3,3
 lpe
+mov $6,2
+mul $6,$5
 add $1,$2
-lpb $5
-  sub $5,1
-  add $1,2
-lpe
+add $1,$6
 sub $1,2
 mov $0,$1

@@ -215,6 +215,7 @@ A102781: Number of positive even numbers less than the n-th prime.
 A104638: Number of odd digits in n-th prime.
 A105825: a(n) = sigma(n) (mod 5).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
+A106044: Difference between n-th prime and next larger perfect square.
 A106138: Semiprimes (mod 2).
 A106139: Semiprimes (mod 3).
 A106140: Semiprimes (mod 4).
@@ -363,6 +364,7 @@ A306695: a(n) = gcd(n, psi(n)).
 A319089: a(n) = tau(n)^3, where tau is A000005.
 A319528: a(n) = 8 * sigma(n).
 A323902: a(n) = A002487(A156552(n)).
+A324868: Binary weight of A324398(n).
 A326122: a(n) = 10 * sigma(n).
 A330410: a(n) = 6*prime(n) - 1.
 A333169: a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).

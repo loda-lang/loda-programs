@@ -1,11 +1,11 @@
 ; A353558: a(n) = 1 if n is an odd number with an odd number of prime factors (counted with multiplicity), otherwise 0.
-; Submitted by Simon Strandgaard
+; Submitted by LM
 ; 0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0
 
-mov $2,$0
+seq $0,68720 ; Arithmetic derivative of squares: a(n) = 2*n*A003415(n).
 lpb $0
-  dif $0,2
-  mov $1,$2
+  sub $0,1
+  add $1,$0
 lpe
-seq $1,66829 ; Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
 mov $0,$1
+mod $0,2

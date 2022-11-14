@@ -1,6 +1,7 @@
 ; A186681: Total number of n-digit numbers requiring 17 positive biquadrates in their representation as sum of biquadrates.
 ; Submitted by Jon Maiga
 ; 0,3,30,30,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = 2*binomial(6,2*n-2)+binomial(1,2*n-2)
 
 mul $0,2
 mov $2,$0
