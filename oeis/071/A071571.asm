@@ -1,0 +1,14 @@
+; A071571: Smallest number whose square has exactly 2n+1 divisors.
+; Submitted by Landjunge
+; 1,2,4,8,6,32,64,12,256,512,24,2048,36,30,16384,32768,96,72,262144,192,1048576,2097152,60,8388608,216,768,67108864,288,1536,536870912,1073741824,120,576,8589934592,6144,34359738368,68719476736,180,864
+
+mul $0,2
+seq $0,37019 ; Let n = p_1*p_2*...*p_k be the prime factorization of n, with the primes sorted in descending order. Then a(n) = 2^(p_1 - 1)*3^(p_2 - 1)*...*A000040(k)^(p_k - 1).
+mov $1,$0
+add $0,2
+lpb $0
+  div $2,$0
+  add $0,$2
+  div $0,2
+  mov $2,$1
+lpe
