@@ -1,0 +1,13 @@
+; A129332: Third column of PE^4.
+; Submitted by USTL-FIL (Lille Fr)
+; 0,0,1,12,120,1160,11340,113988,1185968,12802896,143475300,1668342060,20111265768,251047344600,3241258872124,43230289541460,594927620980320,8438127851537312,123214473695309652,1850390947982126268
+; Formula: a(n) = (4*A078944(max(n-2,0))*binomial(n,2))/4
+
+mov $1,$0
+bin $1,2
+sub $0,1
+trn $0,1
+seq $0,78944 ; First column of A078939, the fourth power of lower triangular matrix A056857.
+mul $0,4
+mul $0,$1
+div $0,4

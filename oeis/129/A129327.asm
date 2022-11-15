@@ -1,0 +1,9 @@
+; A129327: Second column of PE^3.
+; Submitted by Science United
+; 0,1,6,36,228,1545,11196,86457,708504,6136830,55976430,535904259,5369146272,56145107577,611336534802,6916529431620,81152874393168,985767316792449,12376996566040980,160399065135692073
+; Formula: a(n) = n*A027710(max(n-1,0))
+
+mov $1,$0
+trn $0,1
+seq $0,27710 ; Number of ways of placing n labeled balls into n unlabeled (but 3-colored) boxes.
+mul $0,$1

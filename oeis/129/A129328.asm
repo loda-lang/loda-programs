@@ -1,0 +1,11 @@
+; A129328: Third column of PE^3.
+; Submitted by ChelseaOilman
+; 0,0,1,9,72,570,4635,39186,345828,3188268,30684150,307870365,3215425554,34899450768,393015753039,4585024011015,55332235452960,689799432341928,8871905851132041,117581467377389310,1603990651356920730
+; Formula: a(n) = A027710(max(n-2,0))*binomial(n,2)
+
+mov $1,$0
+bin $1,2
+sub $0,1
+trn $0,1
+seq $0,27710 ; Number of ways of placing n labeled balls into n unlabeled (but 3-colored) boxes.
+mul $0,$1
