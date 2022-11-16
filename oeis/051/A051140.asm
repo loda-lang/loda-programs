@@ -1,0 +1,11 @@
+; A051140: a(n) = (A000110(n) - A000994(n+2))/2.
+; Submitted by F14Claude
+; 0,0,0,0,1,8,47,259,1437,8208,48659,300553,1937958,13052028,91784452,673328720,5146726651,40934788112,338292605257,2900716040495,25769979503573,236876549095324,2249873611378525,22053647698650293,222832106687369092
+; Formula: a(n) = (A000110(n)-A000994(n+2))/2
+
+mov $1,$0
+add $1,2
+seq $1,994 ; Shifts 2 places left under binomial transform.
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+sub $0,$1
+div $0,2
