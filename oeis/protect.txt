@@ -125,6 +125,7 @@ A062312: Nonprime numbers squared.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).
 A063439: a(n) = phi(n)^phi(n).
+A065073: n-th prime + sum of digits of n-th prime.
 A065313: a(n) = Pi(n*Pi(n)).
 A066872: p^2 + 1 as p runs through the primes.
 A068096: a(n) = F(L(n)) where F(n) = n-th Fibonacci number and L(n) = n-th Lucas number.

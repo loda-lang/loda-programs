@@ -10,8 +10,7 @@ lpb $0
   mul $1,$2
 lpe
 add $2,$0
-lpb $0
-  sub $0,1
-  add $1,$2
-lpe
+mov $3,$2
+mul $3,$0
+add $1,$3
 mov $0,$1

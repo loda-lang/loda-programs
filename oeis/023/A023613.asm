@@ -8,7 +8,6 @@ mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  mov $3,$5
   mov $5,$4
   mov $0,$1
   sub $0,$2
@@ -16,6 +15,6 @@ lpb $2
   cmp $0,0
   add $3,$0
   add $4,$3
+  mov $3,$5
 lpe
-max $5,$4
-mov $0,$5
+mov $0,$4

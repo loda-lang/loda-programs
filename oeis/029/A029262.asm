@@ -5,9 +5,17 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25830 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^8)).
-  trn $0,9
-  add $1,$2
+  mov $3,0
+  add $0,2
+  lpb $2
+    mov $4,$2
+    trn $4,1
+    seq $4,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
+    trn $2,8
+    add $3,$4
+  lpe
+  sub $0,4
+  trn $0,7
+  add $1,$3
 lpe
 mov $0,$1

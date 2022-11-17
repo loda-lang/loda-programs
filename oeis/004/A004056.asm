@@ -1,6 +1,7 @@
 ; A004056: The coding-theoretic function A(n,14,12).
 ; Submitted by Orange Kid
 ; 1,1,1,1,1,1,1,2,2,3,4,4,6,8,13
+; Formula: a(n) = (3*(A096750(n+2)/12+5)-4)/4-1
 
 add $0,2
 seq $0,96750 ; Expansion of (1-x+x^2)/(1-2x+2x^2-x^3-x^4).

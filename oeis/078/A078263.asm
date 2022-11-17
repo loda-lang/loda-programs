@@ -1,6 +1,7 @@
 ; A078263: Product of the forward and reverse concatenations of 1 to n.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,252,39483,5332114,670592745,80779853376,9449772114007,1082152022374638,121932631112635269,135650052221140070110,1371589685334334871208531,14951973660666886818972704952
+; Formula: a(n) = A007908(n)*A000422(n)
 
 mov $1,$0
 seq $1,422 ; Concatenation of numbers from n down to 1.

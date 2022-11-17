@@ -389,6 +389,7 @@ A276854: Beatty sequence for 1 + sqrt(5).
 A276855: Beatty sequence for (3 + golden ratio).
 A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
+A277022: Primorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
 A277052: a(n) = n+floor(n/(2/sqrt(Pi)-1)).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
 A277723: a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).
