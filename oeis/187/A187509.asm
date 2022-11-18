@@ -20,9 +20,8 @@ lpb $0
   add $4,$3
   mov $3,5
 lpe
+mov $6,2
+mul $6,$5
 trn $1,10
-lpb $5
-  sub $5,1
-  add $1,2
-lpe
+add $1,$6
 mov $0,$1

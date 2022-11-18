@@ -1,6 +1,7 @@
 ; A163103: Decimal expansion of the astronomical unit (measured in meters).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,9,5,9,7,8,7,0,7,0,0
+; Formula: a(n) = (A069904(n)+A124353(n)+5)%10
 
 mov $1,$0
 seq $1,69904 ; Number of prime factors of n-th triangular number (with multiplicity).

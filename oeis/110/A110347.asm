@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $0,1
-seq $0,47749 ; If n = 2m then a(n) = binomial(3m,m)/(2m+1); if n=2m+1 then a(n) = binomial(3m+1,m+1)/(2m+1).
+seq $0,47749 ; If n = 2*m then a(n) = binomial(3*m, m)/(2*m+1), if n=2*m+1 then a(n) = binomial(3*m+1, m+1)/(2*m+1).
 add $1,2
 lpb $1
   mul $0,$1

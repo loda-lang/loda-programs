@@ -1,6 +1,7 @@
 ; A210251: Residues modulo 100 of odd squares.
 ; Submitted by eclipse99
 ; 1,9,21,25,29,41,49,61,69,81,89
+; Formula: a(n) = 4*(((10*(n+2)-6)/11+2*((10*(n+2)-6)/11+(10*(n+2)+4)/11+7)+3)/2)-47
 
 add $0,2
 mul $0,10

@@ -8,7 +8,6 @@ lpb $0
   max $1,0
   seq $1,108978 ; Numbers k such that 29*k + 31 is prime.
   add $1,1
-  mov $0,0
 lpe
 mov $0,$1
 mul $0,29

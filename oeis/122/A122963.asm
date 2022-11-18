@@ -1,6 +1,7 @@
 ; A122963: Triangular numbers with semiprime indices.
 ; Submitted by nenym
 ; 10,21,45,55,105,120,231,253,325,351,561,595,630,741,780,1081,1225,1326,1540,1653,1711,1953,2145,2415,2775,3003,3403,3655,3741,3828,4186,4371,4465,4560,5671,6216,6670,7021,7140,7381,7503,7626,8385,8911,9045,10011
+; Formula: a(n) = binomial(A001358(n)+1,2)
 
 seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
 add $0,1

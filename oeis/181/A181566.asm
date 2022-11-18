@@ -1,6 +1,7 @@
 ; A181566: Expected number of elements needed to identify an abelian group of order n by testing the order of random elements.
 ; Submitted by Simon Strandgaard
 ; 0,0,2,0,0,0,4,3,0,0,3,0,0,0
+; Formula: a(n) = A071325(n+1)*(A344259(n+1)+1)
 
 add $0,1
 mov $1,$0

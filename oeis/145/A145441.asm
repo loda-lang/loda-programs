@@ -1,5 +1,6 @@
 ; A145441: Exponents of multipliers 10^a(n) of SI prefixes, in increasing order.
 ; 1,2,3,6,9,12,15,18,21,24
+; Formula: a(n) = 2*max((n+1)-3,0)+n+1
 
 add $0,1
 mov $1,$0
