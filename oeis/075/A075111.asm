@@ -1,20 +1,23 @@
 ; A075111: a(n)=Sum((-1)^(i+Floor(n/2))T(2i+e),(i=0,..,Floor(n/2))), where T(n) are tribonacci numbers (A000073) and e=(1/2)(1-(-1)^n).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,1,1,3,6,10,18,34,63,115,211,389,716,1316,2420,4452,8189,15061,27701,50951,93714,172366,317030,583110,1072507,1972647,3628263,6673417,12274328,22576008,41523752,76374088,140473849,258371689
 
-mov $2,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$2
-  add $0,$4
-  trn $0,1
-  seq $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
-  div $0,2
+mov $2,1
+lpb $0
+  sub $0,1
+  add $3,$2
+  mov $5,$1
+  mov $6,$4
+  add $6,$8
+  mov $8,$4
+  mov $1,$3
+  add $2,$6
   mov $3,$4
-  mul $3,$0
-  add $1,$3
-  mov $5,$0
+  mov $4,$5
+  add $5,$2
+  mov $2,$3
+  add $2,$7
+  mov $3,$5
+  mov $7,$6
 lpe
-sub $1,$5
 mov $0,$1

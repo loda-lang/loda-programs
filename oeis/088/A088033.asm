@@ -1,6 +1,7 @@
 ; A088033: Even squares k such that k-1 is divisible by a square.
 ; Submitted by Science United
 ; 64,100,576,676,784,1936,2116,2304,2500,3844,4096,5476,5776,6400,6724,9604,10000,13456,13924,14400,14884,15376,15876,17956,18496,21316,21904,23104,23716,28224,28900,29584,30276,30976,35344,36100,42436,43264
+; Formula: a(n) = A088034(n)^2
 
 seq $0,88034 ; Even numbers k such that k^2-1 is divisible by a square.
 pow $0,2

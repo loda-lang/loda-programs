@@ -12,7 +12,7 @@ lpb $2
   seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $0,$3
   mov $4,$0
-  max $4,0
+  max $4,1
   cmp $4,$0
   add $5,2
   add $1,$0

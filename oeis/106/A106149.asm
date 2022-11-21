@@ -1,5 +1,6 @@
 ; A106149: Number of prime factors with multiplicity of the difference between consecutive primes.
 ; 0,1,1,2,1,2,1,2,2,1,2,2,1,2,2,2,1,2,2,1,2,2,2,3,2,1,2,1,2,2,2,2,1,2,1,2,2,2,2,2,1,2,1,2,1,3,3,2,1,2,2,1,2,2,2,2,1,2,2,1,2,2,2,1,2,2,2,2,1,2,2,3,2,2,2,2,3,2,3,2,1
+; Formula: a(n) = A001222(A064722(2*(A000040(n+1)/2)-1))
 
 add $0,1
 seq $0,40 ; The prime numbers.

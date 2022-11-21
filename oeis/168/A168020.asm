@@ -17,7 +17,8 @@ mov $0,$2
 sub $0,1
 lpb $0
   mov $1,$0
-  seq $1,299474 ; a(n) = 4*p(n), where p(n) is the number of partitions of n.
+  seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $1,4
   div $0,$1
 lpe
 mov $0,$1

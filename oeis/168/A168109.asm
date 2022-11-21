@@ -17,9 +17,8 @@ lpb $0
   add $1,$2
   trn $2,1
 lpe
-lpb $5
-  sub $5,1
-  add $1,9
-lpe
+mov $6,9
+mul $6,$5
+add $1,$6
 mov $0,$1
 add $0,37

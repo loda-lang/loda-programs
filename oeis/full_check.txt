@@ -538,4 +538,5 @@ A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.
 A354031: a(n) = 1 if n > 1 and n is a power of a Pythagorean prime (prime of the form 4m+1), otherwise 0.
 A354353: a(n) = 1 if n is either a a squarefree composite or a power of squarefree composite, otherwise 0.
+A354819: a(n) = 1 if n is a nonprime squarefree number, otherwise 0.
 A355037: a(n) is the product of the digits of n in primorial base.

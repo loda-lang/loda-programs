@@ -1,6 +1,7 @@
 ; A066283: Number of 3-dimensional polyominoes (or polycubes) with n cells and symmetry group of order exactly 6.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,0,0,0,2,0,5,2,4
+; Formula: a(n) = (A324659(n)*A108918(n))/35
 
 mov $1,$0
 seq $1,108918 ; Reversed binary words in reversed lexicographic order.

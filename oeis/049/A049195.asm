@@ -9,7 +9,9 @@ add $2,11
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,343910 ; a(n) = mu(phi(n)), where mu is the Möbius function and phi is the Euler totient function.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $3,1
+  seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   cmp $3,0
   sub $0,$3
   add $1,1

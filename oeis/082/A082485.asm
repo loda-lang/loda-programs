@@ -16,19 +16,11 @@ trn $1,$0
 add $1,$2
 mul $1,2
 add $1,3
-mov $3,7
-lpb $3
-  sub $3,1
-  add $1,$7
-lpe
 mov $6,$7
-lpb $6
-  sub $6,1
-  add $5,$7
-lpe
-mov $3,1
-lpb $3
-  sub $3,1
-  add $1,$5
-lpe
+mul $6,7
+mov $3,$7
+mul $3,$7
+add $5,$3
+add $1,$6
+add $1,$5
 mov $0,$1

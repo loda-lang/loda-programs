@@ -1,5 +1,5 @@
 ; A003985: Triangle with subscripts (1,1),(2,1),(1,2),(3,1),(2,2),(1,3), etc. in which entry (i,j) is i AND j.
-; Submitted by Ciceronian
+; Submitted by Kotenok2000
 ; 1,0,0,1,2,1,0,2,2,0,1,0,3,0,1,0,0,0,0,0,0,1,2,1,4,1,2,1,0,2,2,4,4,2,2,0,1,0,3,4,5,4,3,0,1,0,0,0,4,4,4,4,0,0,0,1,2,1,0,5,6,5,0,1,2,1,0,2,2,0,0,6,6,0,0,2,2,0,1,0,3,0,1,0,7,0,1,0,3,0,1,0,0,0,0,0,0,0,0,0
 
 mov $2,$0
@@ -7,7 +7,12 @@ seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists t
 add $2,1
 mov $4,1
 max $5,$2
-seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
+lpb $0
+  add $7,1
+  sub $0,$7
+lpe
+sub $7,$0
+mov $0,$7
 add $0,1
 lpb $2
   sub $2,1

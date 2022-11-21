@@ -1,6 +1,7 @@
 ; A074592: Smallest prime factors of numbers that are not prime powers.
 ; Submitted by nenym
 ; 2,2,2,2,3,2,2,3,2,2,2,2,2,3,2,5,2,2,3,2,2,2,3,2,2,2,3,2,2,5,2,3,2,2,2,3,5,2,2,3,2,2,2,3,2,7,2,2,2,2,5,2,3,2,2,7,2,3,2,5,2,2,3,2,2,2,3,2,2,2,3,2,2,5,2,3,2,7,2,2,3,2,2,3,2,2,7,2,3,2,2,2,3,2,11,2,5,2,3,2
+; Formula: a(n) = A063918(A084365(n)-1)
 
 seq $0,84365 ; Squarefree kernel of numbers that are not prime powers.
 sub $0,1

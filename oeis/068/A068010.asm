@@ -1,9 +1,10 @@
 ; A068010: Number of subsets of {1,2,3,...,n} that sum to 0 mod 3.
 ; Submitted by Jon Maiga
 ; 1,1,2,4,6,12,24,44,88,176,344,688,1376,2736,5472,10944,21856,43712,87424,174784,349568,699136,1398144,2796288,5592576,11184896,22369792,44739584,89478656,178957312,357914624,715828224,1431656448,2863312896,5726623744,11453247488,22906494976,45812985856,91625971712,183251943424,366503878656,733007757312,1466015514624,2932031012864,5864062025728,11728124051456,23456248070144,46912496140288,93824992280576,187649984495616,375299968991232,750599937982464,1501199875833856,3002399751667712
+; Formula: a(n) = (2^n+A060547(n))/3
 
 mov $1,2
 pow $1,$0
-seq $0,60547 ; a(n) is the number of patterns, invariant under 120 degree rotations, that may appear in a top-down equilateral triangular arrangement of closely packed black and white cells satisfying the local matching rule of Pascal's triangle modulo 2, where n is the number of cells in each edge of the arrangement.
+seq $0,60547 ; a(n) is the number of patterns, invariant under 120-degree rotations, that may appear in a top-down equilateral triangular arrangement of closely packed black and white cells satisfying the local matching rule of Pascal's triangle modulo 2, where n is the number of cells in each edge of the arrangement.
 add $0,$1
 div $0,3

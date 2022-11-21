@@ -1,6 +1,7 @@
 ; A112609: Number of representations of n as a sum of three times a triangular number and four times a triangular number.
 ; Submitted by nenym
 ; 1,0,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,0,0,1,0,0,2,0,0,1,1,0,0,0,0,0,1,0,2,1,0,1,0,0,0,2,0,0,0,0,1,0,0,1,1,0,1,0,0,2,0,0,0,1,0,2,1,0,0,0,0,1,0,0,1,0,0,0,0,0,2,1,0,2,1,0,1,0,0,1,0,0,1,0,0,0
+; Formula: a(n) = A033762(4*n+3)/2
 
 mul $0,4
 add $0,3

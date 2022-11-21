@@ -1,6 +1,7 @@
 ; A143425: Triangle read by rows A051731 * A130123, 1<=k<=n.
 ; Submitted by Christian Krause
 ; 1,1,2,1,0,4,1,2,0,8,1,0,0,0,16,1,2,4,0,0,32,1,0,0,0,0,0,64,1,2,0,8,0,0,0,128,1,0,4,0,0,0,0,0,256,1,2,0,0,16,0,0,0,0,512,1,0,0,0,0,0,0,0,0,0,1024,1,2,4,8,0,32,0,0,0,0,0,2048
+; Formula: a(n) = 2^(A127093(n)-1)
 
 seq $0,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
 sub $0,1
