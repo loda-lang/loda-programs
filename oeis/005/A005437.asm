@@ -1,0 +1,11 @@
+; A005437: Column of Kempner tableau.
+; Submitted by gera
+; 1,1,1,2,4,14,46,224,1024,6320,36976,275792,1965664,17180144,144361456,1446351104,13997185024,158116017920,1731678144256,21771730437632,266182076161024,3686171162253824,49763143319190016,752594181757712384
+; Formula: a(n) = A008280(((n+1)^2)/2)
+
+add $0,1
+pow $0,2
+mov $1,$0
+div $1,2
+seq $1,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+mov $0,$1
