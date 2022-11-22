@@ -1,6 +1,7 @@
 ; A173483: a(n) = the largest (n+1)-digit number ending in n zeros that is divisible by n, else 0.
 ; Submitted by PDW
 ; 90,900,9000,90000,900000,9000000,70000000,900000000,9000000000,90000000000,0,9000000000000,0,700000000000000,9000000000000000,90000000000000000,0,9000000000000000000,0,900000000000000000000
+; Formula: a(n) = 10*(10^(n+1)-(10^(n+1)-1)%A173478(n)-1)
 
 mov $2,$0
 seq $2,173478 ; a(n) = the smallest number ending in n-1 zeros divisible by n.

@@ -9,7 +9,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
-  seq $0,46163 ; Reduced denominators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
+  seq $0,46163 ; Reduced denominators of (n-1)^2/(n^2 + n + 1).
   sub $0,1
   mov $2,$3
   mul $2,$0

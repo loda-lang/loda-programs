@@ -22,13 +22,12 @@ lpb $3
   add $7,$1
 lpe
 mov $1,$5
-add $1,15
-mul $1,2
+add $1,16
+mul $1,4
 mov $4,10
 pow $4,$0
 add $2,10
 div $2,$4
-div $2,2
 div $1,$2
 mov $0,$1
 mod $0,10

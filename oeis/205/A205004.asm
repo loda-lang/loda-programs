@@ -1,6 +1,7 @@
 ; A205004: Least k(k+1)/2 such that n divides k(k+1)/2-j(j+1)/2 for some j<k.
 ; Submitted by jlbrown
 ; 3,3,6,10,6,15,10,36,10,21,21,15,28,15,21,136,45,21,55,21,36,28,78,45,28,36,28,66,120,36,136,528,36,55,36,78,190,66,45,55,231,45,253,45,55,91,300,153,55,78,66,55,378,55,91,66,78,136,465,66
+; Formula: a(n) = (4*A138799(A205006(n)-2)-4)/4+A205006(n)+1
 
 seq $0,205006 ; a(n) = s(k)-s(j), where (s(k),s(j)) is the least pair of distinct triangular numbers for which n divides their difference.
 add $1,$0

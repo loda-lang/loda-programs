@@ -1,5 +1,5 @@
 ; A175242: a(n) = the number of divisors of n that are palindromes when written in binary.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,2,1,2,2,2,1,3,2,1,2,1,2,4,1,2,3,1,2,4,1,1,2,2,1,4,2,1,4,2,1,3,2,3,3,1,1,2,2,1,4,1,1,6,1,1,2,2,2,4,1,1,4,2,2,2,1,1,4,1,2,6,1,3,3,1,2,2,3,1,3,2,1,4,1,2,2,1,2,4,1,1,4,4,1,2,1,1,6,2,1,4,1,2,2,1,2,5,2
 
 mov $2,$0
@@ -17,8 +17,4 @@ lpb $4
   mul $1,$0
   add $3,$1
 lpe
-mul $3,2
 mov $0,$3
-sub $0,6
-div $0,2
-add $0,3

@@ -1,13 +1,12 @@
 ; A096647: Number of partitions of an n-set with even number of even blocks.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,1,2,8,27,97,443,2095,10440,58194,340375,2097933,13847485,95504749,690495874,5245040408,41428115543,340899165549,2917641580783,25857170687507,237421321934176,2253720620740362,22073206655954547,222987346441156585,2319379362420267753,24814199204060811913,272868933627872626114,3080250304510265720392,35669339964846719098883,423383124806722113882761,5146615675251098085449907,64032411745442269790870791,814802939096743368412732760,10597441247118532042323739714,140800723548392789573214295743
-; Formula: a(n) = A000110(max(n-1,0)+1)-A096648(max(n-1,0))
+; Formula: a(n) = (A000110(max(n-1,0)+1)+A014182(max(n-1,0)))/2
 
 trn $0,1
 mov $1,$0
-add $1,1
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-seq $0,96648 ; Number of partitions of an n-set with odd number of even blocks.
-mov $2,$1
-sub $2,$0
-mov $0,$2
+seq $1,14182 ; Expansion of e.g.f. exp(1-x-exp(-x)).
+add $0,1
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+add $0,$1
+div $0,2

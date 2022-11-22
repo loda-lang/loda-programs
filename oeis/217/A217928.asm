@@ -16,8 +16,8 @@ lpb $2
     add $4,$5
   lpe
   min $4,1
-  lpb $4
-    sub $4,1
-    add $0,$2
-  lpe
+  mov $6,$2
+  mul $6,$4
+  add $0,$6
+  min $4,0
 lpe

@@ -1,11 +1,13 @@
 ; A051449: Number of fibered rational knots with n crossings.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,1,2,3,4,7,10,16,25,40,62,101,159,257,410,663,1062,1719,2764,4472,7209,11664,18828,30465,49221,79641,128746,208315,336872,545071,881638,1426520,2307665,3733880,6040746,9774133,15813587,25586921,41398418,66984047,108379082,175361039,283734648,459092304,742818097,1201904928,1944708696,3146604769,5091290281,8237880721,13329133490,21566991027,34896063820,56463017335,91358982946,147821939584,239180763625,387002605000,626183111510,1013185557605,1639368253095,2652553553585,4291921133546
+; Formula: a(n) = (A324969(n+2)/2+A324969((n+2)/2)+1)/2
 
-add $0,1
 mov $1,$0
-seq $1,201864 ; ((F(n-1)+F(n-2))-1)/2 if F(n) is odd, otherwise ((F(n-1)+F(n-2))-2)/2, where F(n)=A000045(n) is the n-th Fibonacci number.
-add $0,1
+add $1,2
+seq $1,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+div $1,2
+add $0,2
 div $0,2
 seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 add $0,$1

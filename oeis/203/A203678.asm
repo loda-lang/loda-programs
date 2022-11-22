@@ -7,10 +7,9 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $0
-  mul $3,$0
-  mul $3,$0
-  mul $3,$0
-  mul $3,$0
+  mov $4,$0
+  pow $4,4
+  mul $3,$4
   add $3,$1
   sub $0,1
   max $1,$3

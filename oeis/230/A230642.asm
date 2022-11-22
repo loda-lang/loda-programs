@@ -1,10 +1,11 @@
 ; A230642: Number of integers m such that m + (sum of digits in base-3 representation of m) = n.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,0,1,0,2,0,1,0,2,0,2,0,2,0,2,0,1,0,2,0,2,0,2,0,2,0,1,0,3,0,2,0,3,0,1,0,2,0,2,0,2,0,2,0,1,0,2,0,2,0,2,0,2,0,1,0,3,0,2,0,3,0,1,0,2,0,2,0,2,0,2,0,1,0,2,0,2,0,2,0,2,0,2,0,3,0,3,0,2,0,2,0,2,0,2,0,2,0,1,0
 
 mov $4,$0
 mov $2,$0
-add $2,1
+add $2,3
+div $2,2
 lpb $2
   sub $2,1
   mov $0,$4
