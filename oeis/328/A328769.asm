@@ -1,23 +1,9 @@
 ; A328769: The second primorial based variant of arithmetic derivative: a(p) = A034386(p) for p prime, a(u*v) = a(u)*v + u*a(v), with a(0) = a(1) = 0.
-; Submitted by jlbrown
+; Submitted by Roadranner
 ; 0,0,2,6,8,30,18,210,24,36,70,2310,48,30030,434,120,64,510510,90,9699690,160,672,4642,223092870,120,300,60086,162,896,6469693230,270,200560490130,160,6996,1021054,1260,216,7420738134810,19399418,90168,360,304250263527210,1386,13082761331670030,9328,450,446185786,614889782588491410,288,2940,650,1531632,120224,32589158477190044730,378,11880,1848,29099184,12939386518,1922760350154212639070,600,117288381359406970983270,401120980322,2142,384,150540,14058,7858321551080267055879090,2042176,669278748
+; Formula: a(n) = n*A276085(max(n-1,0))
 
-mov $2,2
-pow $0,$0
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $3,$2
-  sub $3,1
-  seq $3,66838 ; Product of primes < n that do not divide n.
-  lpb $0
-    dif $0,$2
-    add $1,$3
-  lpe
-lpe
-mov $0,$1
+mov $1,$0
+trn $0,1
+seq $0,276085 ; Primorial base log-function: a(1) = 0, a(n) = (e1*A002110(i1-1) + ... + ez*A002110(iz-1)) for n = prime(i1)^e1 * ... * prime(iz)^ez, where prime(k) is the k-th prime, A000040(k) and A002110(k) (the k-th primorial) is the product of first k primes.
+mul $0,$1

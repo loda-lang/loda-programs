@@ -1,5 +1,5 @@
 ; A327169: Number of distinct k such that A000005(k)*A000010(k) is equal to n.
-; Submitted by Xenon
+; Submitted by Kotenok2000
 ; 1,1,0,1,0,1,0,2,0,0,0,1,0,0,0,2,0,1,0,1,0,0,0,3,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,4,0,0,0,0
 
 mov $4,$0
@@ -9,7 +9,10 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,79535 ; a(n) = phi(n)*d(n) - n.
+  mov $5,$0
+  seq $0,62355 ; a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
+  sub $0,1
+  sub $0,$5
   cmp $0,$2
   sub $0,1
   gcd $0,3

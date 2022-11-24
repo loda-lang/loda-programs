@@ -4,11 +4,12 @@
 
 mov $1,1
 mov $2,$0
-mul $2,4
+add $2,2
+pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,105673 ; One-half of theta series of square lattice (or half the number of ways of writing n > 0 as a sum of 2 squares), without the constant term, which is 1/2.
+  seq $3,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
   cmp $3,0
   sub $0,$3
   add $1,1

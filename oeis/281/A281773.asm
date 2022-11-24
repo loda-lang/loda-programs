@@ -13,11 +13,11 @@ lpb $0
   add $5,2
   add $6,5
   sub $6,$3
-  trn $3,4
   trn $6,$5
+  mul $6,2
+  trn $3,4
   trn $5,$2
   sub $2,6
-  mul $6,2
 lpe
 sub $1,$6
 trn $1,1

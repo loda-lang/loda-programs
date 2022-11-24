@@ -1,6 +1,7 @@
 ; A070263: Triangle T(n,k), n>=0, 1 <= k <= 2^n, read by rows, giving minimal distance-sum of any set of k binary vectors of length n.
 ; Submitted by Simon Strandgaard
 ; 0,0,1,0,1,4,8,0,1,4,8,16,25,36,48,0,1,4,8,16,25,36,48,68,89,112,136,164,193,224,256,0,1,4,8,16,25,36,48,68,89,112,136,164,193,224,256,304,353
+; Formula: a(n) = A022560(A062050(n)-1)
 
 seq $0,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
 sub $0,1

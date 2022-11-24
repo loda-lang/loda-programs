@@ -1,7 +1,8 @@
 ; A260684: Irregular triangular array read by rows.  Row n gives the primes in the prime factorization of n! that have exponent of 1.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 2,2,3,3,3,5,5,5,7,5,7,5,7,7,7,11,7,11,7,11,13,11,13,11,13,11,13,11,13,17,11,13,17,11,13,17,19,11,13,17,19,11,13,17,19,13,17,19,13,17,19,23,13,17,19,23,13,17,19,23,17,19,23,17,19,23,17,19,23,17,19,23,29,17,19,23,29,17,19,23,29,31,17,19,23,29,31,17,19,23,29,31,19,23,29,31,19,23,29,31
 
+mov $1,1
 mov $2,$0
 add $2,2
 pow $2,2

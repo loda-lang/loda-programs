@@ -1,34 +1,20 @@
 ; A354263: Expansion of e.g.f. 1/(1 + 3 * log(1-x)).
-; Submitted by Leviathan
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,3,21,222,3132,55242,1169262,28873800,814870584,25871762016,912684973968,35416732159872,1499286521185776,68757945743286576,3395829155786528976,179693346163010491008,10142543588881013369856,608262031900883147262336
 
-mov $2,1
-add $2,1
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mul $6,$4
-    mov $9,10
-    add $9,$5
-    mov $11,1
-    sub $4,1
-    mov $7,2
-    div $7,2
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    mul $7,3
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  seq $0,343709 ; a(n) = 1 + 3 * Sum_{k=0..n-1} binomial(n,k) * (n-k-1)! * a(k).
+  mul $1,$0
+  mul $3,-1
+  add $3,$1
 lpe
 mov $0,$3

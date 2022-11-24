@@ -1,12 +1,12 @@
 ; A336064: Numbers divisible by the maximal exponent in their prime factorization (A051903).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 2,3,4,5,6,7,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,26,27,28,29,30,31,33,34,35,36,37,38,39,41,42,43,44,46,47,48,50,51,52,53,54,55,57,58,59,60,61,62,65,66,67,68,69,70,71,72,73,74,76,77,78,79,80,82,83,84,85,86,87,89,90,91,92,93,94,95,97,98,100,101,102,103,105,106,107,108,109,110,111,112,113,114,115,116,118
 
 mov $1,1
+mov $6,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $6,$1
   add $6,1
   mov $3,$1
   seq $3,51903 ; Maximal exponent in prime factorization of n.

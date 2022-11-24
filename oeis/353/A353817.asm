@@ -1,6 +1,7 @@
 ; A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 ; Submitted by DoctorNow
 ; 0,1,1,0,1,0,1,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+; Formula: a(n) = (A086436(n)*A069513(n))%2
 
 mov $1,$0
 seq $1,69513 ; Characteristic function of the prime powers p^k, k >= 1.

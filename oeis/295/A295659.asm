@@ -1,6 +1,7 @@
 ; A295659: Number of exponents larger than 2 in the prime factorization of n.
 ; Submitted by GolfSierra
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+; Formula: a(n) = (((A328400(n)+2)/4+A328400(n))-1)%2
 
 seq $0,328400 ; Smallest number with the same set of distinct prime exponents as n.
 mov $1,$0

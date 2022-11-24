@@ -1,5 +1,5 @@
 ; A034470: Prime numbers using only the curved digits 0, 2, 3, 5, 6, 8 and 9.
-; Submitted by Stony666
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,5,23,29,53,59,83,89,223,229,233,239,263,269,283,293,353,359,383,389,503,509,523,563,569,593,599,653,659,683,809,823,829,839,853,859,863,883,929,953,983,2003,2029,2039,2053,2063,2069,2083,2089,2099,2203,2239,2269,2293,2309,2333,2339,2383,2389,2393,2399,2503,2539,2593,2609,2633,2659,2663,2683,2689,2693,2699,2803,2833,2903,2909,2939,2953,2963,2969,2999,3023,3083,3089,3203,3209,3229,3253,3259,3299,3323,3329,3359,3389,3529,3533,3539,3559,3583
 
 mov $1,1
@@ -12,8 +12,7 @@ lpb $2
   seq $3,28374 ; Curved numbers: numbers that have only curved digits (0, 2, 3, 5, 6, 8, 9).
   mov $5,$3
   sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  mul $3,2
+  seq $3,337174 ; Number of pairs of divisors of n (d1,d2) such that d1 <= d2 and d1*d2 >= n.
   cmp $3,2
   sub $0,$3
   add $1,1

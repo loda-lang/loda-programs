@@ -7,7 +7,7 @@ add $0,4
 mov $2,$0
 add $0,$1
 bin $0,$2
-add $1,2
 dif $2,2
+add $1,2
 bin $1,$2
 sub $0,$1

@@ -6,15 +6,16 @@ mov $2,1
 add $2,1
 lpb $0
   sub $0,1
-  mov $5,1
+  mov $5,0
   mov $6,0
   mov $4,$2
   lpb $4
     sub $4,1
     mov $9,10
     add $9,$5
+    add $9,1
     mov $11,1
-    mov $7,3
+    mov $7,2
     div $7,2
     add $7,$0
     add $7,$4

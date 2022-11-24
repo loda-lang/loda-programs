@@ -1,4 +1,4 @@
-; A156877: Number of numbers <= n that are safe primes and also Sophie Germain primes.
+; A156877: Number of primes <= n that are safe primes and also Sophie Germain primes.
 ; Submitted by Science United
 ; 0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
 

@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,25813 ; Expansion of 1/((1-x^2)(1-x^6)(1-x^7)).
-  sub $0,1
-  trn $0,8
+  trn $0,9
   add $1,$2
 lpe
 mov $0,$1

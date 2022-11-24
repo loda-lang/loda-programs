@@ -1,7 +1,14 @@
 ; A118830: 2-adic continued fraction of zero, where a(n) = -1 if n is odd, 2*A006519(n/2) otherwise.
-; Submitted by Jon Maiga
+; Submitted by Christian Krause
 ; -1,2,-1,4,-1,2,-1,8,-1,2,-1,4,-1,2,-1,16,-1,2,-1,4,-1,2,-1,8,-1,2,-1,4,-1,2,-1,32,-1,2,-1,4,-1,2,-1,8,-1,2,-1,4,-1,2,-1,16,-1,2,-1,4,-1,2,-1,8,-1,2,-1,4,-1,2,-1,64,-1,2,-1,4,-1,2,-1,8,-1,2,-1,4,-1,2,-1,16,-1,2,-1,4,-1,2,-1,8,-1,2,-1,4,-1,2,-1,32,-1,2,-1,4
-; Formula: a(n) = -A118827(n)
 
-seq $0,118827 ; 2-adic continued fraction of zero, where a(n) = 1 if n is odd, otherwise -2*A006519(n/2).
-mul $0,-1
+mov $1,-1
+add $0,1
+lpb $0
+  pow $1,2
+  lpb $0
+    dif $0,2
+    mul $1,2
+  lpe
+lpe
+mov $0,$1

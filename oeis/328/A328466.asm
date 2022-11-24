@@ -1,11 +1,11 @@
 ; A328466: Row 3 of A328464: a(n) = A276156(8n - 4) / 6.
-; Submitted by Science United
+; Submitted by ATS
 ; 1,6,36,41,386,391,421,426,5006,5011,5041,5046,5391,5396,5426,5431,85086,85091,85121,85126,85471,85476,85506,85511,90091,90096,90126,90131,90476,90481,90511,90516,1616616,1616621,1616651,1616656,1617001,1617006,1617036,1617041,1621621,1621626,1621656,1621661,1622006,1622011,1622041,1622046,1701701,1701706,1701736,1701741,1702086,1702091,1702121,1702126,1706706,1706711,1706741,1706746,1707091,1707096,1707126,1707131,37182146,37182151,37182181,37182186,37182531,37182536,37182566,37182571,37187151
-; Formula: a(n) = (A328462(4*n+3)-9)/6+1
+; Formula: a(n) = A276085(A332382(4*n)-1)/6+1
 
 mul $0,4
-add $0,3
-seq $0,328462 ; Numbers obtained by reinterpreting base-2 representation of odd numbers in primorial base.
-sub $0,9
+seq $0,332382 ; If n = Sum (2^e_k) then a(n) = Product (prime(e_k + 2)).
+sub $0,1
+seq $0,276085 ; Primorial base log-function: a(1) = 0, a(n) = (e1*A002110(i1-1) + ... + ez*A002110(iz-1)) for n = prime(i1)^e1 * ... * prime(iz)^ez, where prime(k) is the k-th prime, A000040(k) and A002110(k) (the k-th primorial) is the product of first k primes.
 div $0,6
 add $0,1

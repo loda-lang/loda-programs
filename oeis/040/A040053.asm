@@ -1,6 +1,7 @@
 ; A040053: a(n) is 1 if and only if Ramanujan's tau(n) > 0.
 ; Submitted by Science United
 ; 1,0,1,0,1,0,0,1,0,0,1,0,0,1,1,1,0,1,1,0,0,0,1,1,0,1,0,1,1,0,0,0,1,1,0,1,0,0,0,1,1,1,0,0,0,0,1,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,1,1,0,0,0,1,1,1,1,0,0,1,0,1,1,1,0,1,1,0,0,0,1,0,1,1,0,1
+; Formula: a(n) = max(2*A000594(n)-1,0)%2
 
 seq $0,594 ; Ramanujan's tau function (or Ramanujan numbers, or tau numbers).
 mul $0,2

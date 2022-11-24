@@ -1,6 +1,7 @@
 ; A098013: Differences between consecutive primes that are twice primes.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 4,4,4,6,6,4,4,6,6,6,4,6,4,6,4,4,4,14,4,6,10,6,6,4,6,6,10,4,4,4,6,10,6,6,6,6,4,10,14,4,4,14,6,10,4,6,6,6,4,6,4,10,10,6,4,6,4,4,4,4,6,6,10,6,6,6,10,6,6,6,6,4,10,4,6,6,4,6,10,10,6,6,4,6,4,4,14,10,10,4,10,14,4,4,14,4,4,4,10,4
+; Formula: a(n) = A013632(A058620(n)+3)+3
 
 seq $0,58620 ; Lesser of two consecutive primes whose difference divided by two is a prime: ( prime(next prime after n) - prime(n) )/2 is prime.
 add $0,3

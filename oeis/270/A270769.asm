@@ -1,22 +1,24 @@
 ; A270769: Total sum of the sizes of all blocks with minimal element 6 in all set partitions of {1,2,...,n}.
-; Submitted by misaki@med
+; Submitted by Christian Krause
 ; 52,307,1845,11437,73561,492112,3426532,24825947,187018111,1463322425,11878759787,99919924444,869876263976,7828394233551,72744595145117,697213288063149,6885160707939613,69986707107451700,731580664064312728,7857203170378852079,86629852442639879223,979750249581438147929,11357540800912953924271,134854236413782117438360,1638938784173077433743516,20375129103663904082096859,258948446202561723224301749,3362409239844896821279228797,44583432491466949486150410513,603330066130851286914369086296
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  add $0,1
-  seq $0,191099 ; 5th differences of Bell numbers.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
-lpe
+mov $4,$0
+min $0,0
+mov $2,$4
 add $2,1
-mul $1,$0
-add $1,$2
-mov $0,$1
-sub $0,1
+lpb $2
+  sub $2,1
+  max $0,6
+  mov $1,$4
+  sub $1,$2
+  mov $3,$1
+  add $3,$2
+  bin $3,$1
+  add $1,$0
+  sub $1,1
+  seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $3,$1
+  add $5,$3
+  add $6,$5
+lpe
+mov $0,$6

@@ -1,6 +1,7 @@
 ; A170770: Expansion of ( phi(q) * phi(q^63) + phi(-q) * phi(-q^63) + 4 * q^16 * psi(q^2) * psi(q^126) ) / 2 in powers of q^2 where phi(), psi() are Ramanujan theta functions.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,0,2,0,0,0,0,0,4,2,0,2,0,0,2,0,0,0,4,0,0,0,0,2,0,0,0,0,0,2,0,0,6,0,0,0,6,0,0,0,0,0,0,0,6,0,0,0,0,0,2,0,0,2,0,0,4,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,8,0,4,0,0,2,0,0,0,2,0,0,0,0,4,0,0,0,0,0,6,0,0,0,0,0,2,4
+; Formula: a(n) = (A002652(n)*((n+17)%3))/2
 
 mov $1,$0
 add $1,17

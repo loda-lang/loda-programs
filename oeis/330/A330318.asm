@@ -1,17 +1,13 @@
 ; A330318: a(n) = Sum_{i=0..n} r(i)*r(i+1)/4, where r(n) = A004018(n) is the number of ways of writing n as a sum of two squares.
-; Submitted by Gunnar Hjern
+; Submitted by Kotenok2000
 ; 1,5,5,5,13,13,13,13,17,25,25,25,25,25,25,25,33,41,41,41,41,41,41,41,41,65,65,65,65,65,65,65,65,65,65,65,73,73,73,73,89,89,89,89,89,89,89,89,89,101,101,101,117,117,117,117,117,117,117,117,117,117
 
-mov $1,$0
-add $1,2
-lpb $1
-  sub $1,1
-  mov $0,0
-  sub $0,$1
-  add $0,1
-  bin $0,2
-  seq $0,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
-  add $2,$0
+add $0,1
+lpb $0
+  mov $2,$0
+  trn $2,1
+  seq $2,330316 ; a(n) = r(n)*r(n+1)/4, where r(n) = A004018(n) is the number of ways of writing n as a sum of two squares.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$2
-sub $0,1
+mov $0,$1

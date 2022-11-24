@@ -5,8 +5,8 @@
 mov $2,10
 lpb $0
   seq $0,124758 ; Product of the parts of the compositions in standard order.
+  sub $0,1
   mod $2,3
   add $1,$2
-  sub $0,1
 lpe
 mov $0,$1

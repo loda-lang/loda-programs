@@ -1,6 +1,7 @@
 ; A028925: Maximal number of pairs of minimal vectors in an n-dimensional lattice.
 ; Submitted by Simon Strandgaard
 ; 0,1,3,6,12,20,36,63,120,136
+; Formula: a(n) = ((n*((2^n)/12)+n)%196+n^2)/2
 
 mov $2,2
 pow $2,$0
