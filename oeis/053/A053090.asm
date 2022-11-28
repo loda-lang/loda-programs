@@ -4,10 +4,13 @@
 
 add $0,3
 lpb $0
-  sub $0,3
   mov $2,$0
-  max $2,0
-  seq $2,8795 ; Molien series for 3-dimensional representation of dihedral group D_6 of order 6.
-  add $1,$2
+  sub $2,2
+  mov $3,-2
+  bin $3,$2
+  div $3,2
+  bin $3,2
+  sub $0,3
+  add $1,$3
 lpe
 mov $0,$1

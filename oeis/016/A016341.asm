@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,14032 ; Inverse of 23rd cyclotomic polynomial.
-  sub $0,1
-  trn $0,6
+  trn $0,7
   add $1,$2
 lpe
 mov $0,$1

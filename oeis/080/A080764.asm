@@ -1,8 +1,8 @@
 ; A080764: First differences of A049472, floor(n/sqrt(2)).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Christian Krause
 ; 1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1
+; Formula: a(n) = (A289001(n)+1)%2
 
+seq $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 add $0,1
-seq $0,77770 ; Number of ordered pairs of integers (x,y) with n^2 < x^2 + y^2 < (n+1)^2; number of lattice points between circles of radii n and n+1.
-div $0,4
 mod $0,2

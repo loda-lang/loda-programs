@@ -1,30 +1,15 @@
 ; A032664: Digit '1' concatenated with a(n) is a prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,3,7,9,13,27,31,37,39,49,51,57,63,67,73,79,81,91,93,97,99,103,109,117,123,129,151,153,163,171,181,187,193,201,213,217,223,229,231,237,249,259,277,279,283,289,291,297,301,303,307,319,321,327,361,367,373,381,399,409,423,427,429,433,439,447,451,453,459,471,481,483,487,489,493,499,511,523,531,543,549,553,559,567,571,579,583,597,601,607,609,613,619,621,627,637,657,663,667,669
+; Formula: a(n) = A166733(b(n-2)), a(1) = 3, a(0) = 1, b(n) = b(n-1)+1, b(1) = 2, b(0) = 1
 
-mov $2,$0
-sub $0,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  mov $5,$3
-  mov $6,$3
-  seq $3,40297 ; Continued fraction for sqrt(315).
-  lpb $5
-    div $5,10
-    mul $3,10
-  lpe
-  add $1,2
-  add $3,$6
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  trn $2,1
-lpe
-mov $0,$1
+mov $1,1
 add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  mov $1,$3
+  seq $1,166733 ; Numbers n with the property that the concatenation of the trivial divisors of n (i.e., 1 and n) is a prime.
+  add $3,1
+lpe
+mov $0,$2

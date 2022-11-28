@@ -1,15 +1,15 @@
 ; A069059: Numbers k such that k and sigma(k) are not relatively prime.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 6,10,12,14,15,18,20,22,24,26,28,30,33,34,38,40,42,44,45,46,48,51,52,54,56,58,60,62,66,68,69,70,72,74,76,78,80,82,84,86,87,88,90,91,92,94,95,96,99,102,104,105,106,108,110,112,114,116,117,118,120,122,123,124,126,130,132,134,135,136,138,140,141,142,145,146,147,148,150,152,153,154,156,158,159,160,162,164,165,166,168,170,172,174,176,177,178,180,182,184
 
-mov $1,3
+mov $1,4
 mov $2,$0
 add $0,1
 add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,82068 ; Smallest common prime-divisor of n and sigma(n) = A000203(n); a(n)=1 if no common prime-divisor exists.
+  seq $3,9194 ; a(n) = gcd(n, sigma(n)).
   sub $3,1
   add $3,$4
   cmp $3,1

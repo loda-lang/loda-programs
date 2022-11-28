@@ -3,9 +3,10 @@
 [LODA](https://loda-lang.org) is an assembly language, a computational model and a tool for mining integer sequences.
 You can use it to mine programs that calculate integer sequences from the [On-Line Encyclopedia of Integer Sequences®](http://oeis.org/) (OEIS®).
 
-This repository contains programs that generate integer sequences from the OEIS. The vast majority of these programs has been automatically generated using [loda-cpp](https://github.com/loda-lang/loda-cpp), but there are also a few hand-written programs.
+This repository contains programs that compute integer sequences from the OEIS. The majority of these programs has been
+generated (or "mined") using [loda-cpp](https://github.com/loda-lang/loda-cpp) and [loda-rust](https://github.com/loda-lang/loda-rust).
 
-There are currently more than :star: **90,000 programs** :star: available! You can find lists with descriptions and links here:
+There are currently more than :star: **100,000 programs** :star: available! You can find lists with descriptions and links here:
 
 * [A000001-A049999](https://loda-lang.org/list0)
 * [A050000-A099999](https://loda-lang.org/list1)
@@ -27,3 +28,11 @@ If you want to receive updates on new miner findings, you can follow the [commit
 * [loda-lang.org](https://loda-lang.org): Main home page of LODA.
 * [loda-lang/loda-cpp](https://github.com/loda-lang/loda-cpp): Interpreter and miner written in C++.
 * [loda-lang/loda-rust](https://github.com/loda-lang/loda-rust): Interpreter and web interface written in Rust.
+
+## License
+
+The programs in this repository are published under the 
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+Integer sequences names/descriptions are made available by the
+[OEIS](https://oeis.org/) under the 
+[Creative Commons Attribution Non-Commercial 3.0 license](https://creativecommons.org/licenses/by-nc/3.0/).

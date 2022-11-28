@@ -1,9 +1,20 @@
 ; A073093: Number of prime power divisors of n.
-; Submitted by Gibson Praise
+; Submitted by Christian Krause
 ; 1,2,2,3,2,3,2,4,3,3,2,4,2,3,3,5,2,4,2,4,3,3,2,5,3,3,4,4,2,4,2,6,3,3,3,5,2,3,3,5,2,4,2,4,4,3,2,6,3,4,3,4,2,5,3,5,3,3,2,5,2,3,4,7,3,4,2,4,3,4,2,6,2,3,4,4,3,4,2,6,5,3,2,5,3,3,3,5,2,5,3,4,3,3,3,7,2,4,4,5
-; Formula: a(n) = min(n,1)+A086436(n)
 
-mov $1,$0
-min $1,1
-seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
-add $0,$1
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  div $3,2
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
+  div $0,$2
+  add $1,7
+lpe
+mov $0,$1
+div $0,7

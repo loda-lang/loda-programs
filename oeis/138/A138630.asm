@@ -1,5 +1,5 @@
 ; A138630: Nonnegative integers k such that 17*k+7 is prime.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard
 ; 0,2,6,12,18,20,26,36,38,48,50,62,66,68,72,80,92,102,110,116,122,132,150,152,156,158,170,176,180,186,188,192,198,200,230,236,270,278,282,288,290,296,300,306,318,332,342,348,366,368,386,390,402,410,416,428,432,440,446,452,456,458,468,480,486,506,510,516,540,542,548,552,566,570,578,582,590,596,608,618,638,650,656,662,666,696,702,708,722,732,738,746,750,752,758,768,780,806,816,818
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$1
   add $2,34
   sub $3,$0

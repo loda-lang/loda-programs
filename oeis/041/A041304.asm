@@ -8,8 +8,15 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  mov $6,$3
+  gcd $6,2
   mov $1,$3
-  seq $1,10182 ; Continued fraction for sqrt(117).
+  seq $1,40475 ; Continued fraction for sqrt(498).
+  div $1,4
+  mul $1,$6
+  add $1,$6
+  sub $1,1
+  seq $1,144330 ; Triangle read by rows, A144328 * A000012
   gcd $5,$1
   add $5,2
   div $5,5

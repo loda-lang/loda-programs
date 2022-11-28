@@ -1,6 +1,7 @@
 ; A078461: a(n) = 0 if n is divisible by the square of odd prime, a(n) = 1 if n is an odd squarefree number, a(n) = 2 otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,2,1,2,1,2,1,2,0,2,1,2,1,2,1,2,1,0,1,2,1,2,1,2,0,2,0,2,1,2,1,2,1,2,1,0,1,2,1,2,1,2,1,2,0,2,1,2,0,0,1,2,1,0,1,2,1,2,1,2,1,2,0,2,1,2,1,2,1,2,1,0,1,2,0,2,1,2,1,2,0,2,1,2,1,2,1,2,1,0,1,2,1,2,1,2,1,0,0,0
+; Formula: a(n) = A001511(n^4)*A209635(n)^2
 
 mov $1,$0
 pow $1,4

@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,3159 ; Numbers n whose binary representation ends in an even number of zeros.
+  seq $2,121539 ; Numbers whose binary expansion ends in an even number of 1's.
+  add $2,1
   sub $0,1
   add $1,$2
 lpe

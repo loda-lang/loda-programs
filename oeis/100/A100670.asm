@@ -1,5 +1,6 @@
 ; A100670: Number of two-card Baccarat hands of point n.
 ; 210,128,132,128,132,128,132,128,132,128
+; Formula: a(n) = 2*((40-(n-1))%(2*((n-1)%2)-(40-(n-1))))+128
 
 sub $0,1
 mov $1,40

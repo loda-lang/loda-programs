@@ -4,12 +4,12 @@
 
 mov $1,1
 mov $2,$0
-add $2,2
-pow $2,2
+mul $2,4
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
+  seq $3,113446 ; Expansion of (phi(q)^2 - phi(q^3)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
+  max $3,0
   cmp $3,0
   sub $0,$3
   add $1,1

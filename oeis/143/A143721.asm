@@ -1,5 +1,5 @@
 ; A143721: Aliquot sequence starting at 38.
-; Submitted by arkiss
+; Submitted by Kotenok2000
 ; 38,22,14,10,8,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,$0
@@ -7,6 +7,10 @@ mov $0,38
 lpb $1
   sub $1,1
   trn $0,1
-  seq $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
+  mov $2,$0
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,$2
+  mul $0,2
+  sub $0,1
   div $0,2
 lpe

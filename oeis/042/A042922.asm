@@ -9,7 +9,8 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40961 ; Continued fraction for sqrt(993).
+  seq $1,40484 ; Continued fraction for sqrt(507).
+  seq $1,7093 ; Numbers in base 7.
   mul $1,$2
   add $1,$4
   add $3,1
