@@ -1,4 +1,4 @@
-; A168258: Triangle read by rows, A097806 * A111967 as infinite lower triangular matrices.
+; A168258: Triangle read by rows, A101688 * A000012 as infinite lower triangular matrices.
 ; Submitted by Christian Krause
 ; 1,1,1,2,2,1,2,2,2,1,3,3,3,2,1,3,3,3,3,2,1,4,4,4,4,3,2,1,4,4,4,4,4,3,2,1,5,5,5,5,5,4,3,2,1,5,5,5,5,5,5,4,3,2,1,6,6,6,6,6,6,5,4,3,2,1,6,6,6,6,6,6,6,5,4,3,2,1
 

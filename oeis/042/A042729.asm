@@ -9,7 +9,13 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40864 ; Continued fraction for sqrt(894).
+  seq $1,40304 ; Continued fraction for sqrt(322).
+  dif $1,4
+  mov $5,$1
+  add $1,4
+  div $1,6
+  mul $1,4
+  add $1,$5
   mul $1,$2
   add $1,$4
 lpe

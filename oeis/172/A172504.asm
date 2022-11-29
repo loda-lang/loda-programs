@@ -1,6 +1,7 @@
 ; A172504: a(n) = denominator of fraction a/b, where gcd(a, b) = 1, whose decimal representation has the form (n).(n)(n)(n)... with period (n).
 ; Submitted by Jamie Morken(l1)
 ; 9,9,3,9,9,3,9,9,1,99,9,33,99,99,33,99,99,11,99,99,33,9,99,33,99,99,11
+; Formula: a(n) = (A089186(n)+n)/gcd(A089186(n)-1,A089186(n)+n)
 
 mov $2,$0
 seq $0,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).

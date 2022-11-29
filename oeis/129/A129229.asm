@@ -8,7 +8,7 @@ lpb $4
   mov $0,$1
   add $0,$4
   trn $0,1
-  seq $0,129230 ; a(n)=Floor(n*r)+Floor((n-2)*r)+Floor((n-4)*r)+...+Floor(k*r), where r = golden mean = (1 + sqrt(5))/2 and k=0 if n is even, k=1 if n is odd.
+  seq $0,129230 ; a(n) = floor(n*r) + floor((n-2)*r) + floor((n-4)*r) + ... + floor(k*r), where r = golden ratio = (1 + sqrt(5))/2 and k = n mod 2.
   mov $3,$4
   mul $3,$0
   add $2,$3

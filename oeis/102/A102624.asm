@@ -1,5 +1,5 @@
 ; A102624: Numbers k such that the number k23 is prime.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,2,5,8,11,12,14,15,17,18,24,30,33,36,38,39,44,45,47,50,53,56,59,63,68,75,77,78,81,84,86,89,93,96,99,102,107,114,119,123,128,129,135,137,143,144,147,149,158,159,162,168,171,176,179,182,185,194,200,201,203,210,213,215,221,236,240,242,246,249,254,255,264,267,278,281,287,290,291,294,297,302,303,311,312,317,323,324,330,332,336,339,341,350,353,354,359,365,369,371
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$1
   add $2,100
   sub $3,$0

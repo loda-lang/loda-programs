@@ -1,28 +1,29 @@
 ; A169811: a(n) = n XOR n*(n+1)/2.
-; Coded manually 2021-03-30 by Simon Strandgaard, https://github.com/neoneye
-; 0,0,1,5,14,10,19,27,44,36,61,73,66,86,103,119,152,136,185,173,198,242,235,259,308,348,325,353,394,430,463,495,560,528,625,597,702,666,707,811,796,884,941,921,1010,1062,1047,1095,1192,1272,1225,1309,1366,1442,1531
+; Submitted by Kotenok2000
+; 0,0,1,5,14,10,19,27,44,36,61,73,66,86,103,119,152,136,185,173,198,242,235,259,308,348,325,353,394,430,463,495,560,528,625,597,702,666,707,811,796,884,941,921,1010,1062,1047,1095,1192,1272,1225,1309,1366,1442,1531,1587,1540,1612,1685,1745,1818,1886,1951,2015,2144,2080,2273,2213,2414,2346,2547,2491,2572,2756,2717,2921,2850,3062,3143,3095,3320,3240,3353,3533,3494,3602,3787,3747,3860,4092,4005,4097,4330,4430,4399,4495,4688,4848,4753,4917
 
 mov $5,$0
 add $5,1
 mul $5,$0
-div $5,2
-; Now $5 holds n*(n+1)/2.
-; Determine the number of times to loop
 mov $2,$5
-seq $2,70939 ; Length of binary representation of n*(n+1)/2.
-mov $4,1 ; Inital scale factor
+div $5,2
+div $2,4
 lpb $2
-  ; Do xor with the lowest bit
+  div $2,2
+  add $6,1
+lpe
+mov $4,1
+add $6,1
+mov $2,$6
+lpb $2
+  sub $2,1
   mov $3,$0
   add $3,$5
   mod $3,2
-  ; Now $3 holds the bitwise xor with $0 and $5
-  ; Scale up the bit, and add to result
   mul $3,$4
+  mul $4,2
+  div $5,2
+  div $0,2
   add $1,$3
-  div $0,2 ; Remove the lowest bit from n
-  div $5,2 ; Remove the lowest bit from n*(n+1)/2
-  mul $4,2 ; Double the scale factor. Example: 1,2,4,8,16,32
-  sub $2,1
 lpe
 mov $0,$1

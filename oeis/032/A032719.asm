@@ -10,8 +10,7 @@ lpb $2
   add $3,1
   mov $5,$3
   mov $6,$3
-  seq $3,40297 ; Continued fraction for sqrt(315).
-  add $3,1
+  mov $3,2
   lpb $5
     div $5,10
     mul $3,10
