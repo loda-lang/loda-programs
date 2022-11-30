@@ -11,12 +11,12 @@ lpb $4
   sub $0,$4
   mov $1,$0
   gcd $1,$4
-  bin $1,$0
-  mov $5,$0
   sub $0,1
-  seq $0,245656 ; Characteristic function of arithmetic numbers, cf. A003601.
-  mul $0,$5
-  mul $1,$0
+  bin $1,$0
+  seq $0,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
+  mov $5,1
+  cmp $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

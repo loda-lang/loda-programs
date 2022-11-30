@@ -4,14 +4,14 @@
 
 mov $1,4
 mov $2,$0
-add $2,11
+add $2,4
 pow $2,2
 lpb $2
-  mov $3,$1
   seq $3,34178 ; Number of solutions to n = a^2 - b^2, a > b >= 0.
   cmp $3,2
   sub $0,$3
   add $1,1
+  mov $3,$1
   mov $4,$0
   max $4,0
   cmp $4,$0

@@ -8,7 +8,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,295309 ; Characteristic function for A295307: a(n) = 1 if n > phi(sigma(n)), 0 otherwise.
+  seq $3,295301 ; a(n) = n - phi(sigma(n)), where phi = A000010 and sigma = A000203.
+  mul $3,2
+  trn $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

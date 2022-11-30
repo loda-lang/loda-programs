@@ -7,7 +7,9 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$6
-  seq $3,107078 ; Whether n has non-unitary prime divisors.
+  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,2
   mov $4,$0

@@ -6,10 +6,9 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  mov $3,$2
-  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
-  add $3,1
-  add $1,$3
+  seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $2,1
+  add $1,$2
 lpe
 add $1,1
 mov $0,$1

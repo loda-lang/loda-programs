@@ -11,7 +11,8 @@ lpb $2
   div $5,2
   mod $5,2
   mov $3,$1
-  seq $3,101615 ; Number of representations of n as a sum of the Jacobsthal numbers A078008 (2 is allowed twice as a part).
+  div $3,2
+  seq $3,26465 ; Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).
   add $3,$5
   div $3,2
   sub $0,$3

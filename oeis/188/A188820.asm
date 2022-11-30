@@ -27,19 +27,13 @@ sub $3,$4
 add $1,$3
 add $1,$2
 sub $1,4
-mov $6,71
-lpb $6
-  sub $6,1
-  add $1,$5
-lpe
+mov $9,$5
+mul $9,71
 mov $8,$5
-lpb $8
-  sub $8,1
-  add $7,$5
-lpe
-mov $6,64
-lpb $6
-  sub $6,1
-  add $1,$7
-lpe
+mul $8,$5
+add $7,$8
+mov $6,$7
+mul $6,64
+add $1,$9
+add $1,$6
 mov $0,$1

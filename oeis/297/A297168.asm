@@ -13,6 +13,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  pow $0,$1
   sub $0,1
   seq $0,297112 ; Möbius transform of A156552.
   mul $1,$0

@@ -5,10 +5,8 @@
 lpb $0
   mov $2,$0
   seq $2,65387 ; a(n) = sigma(n) + phi(n).
-  mul $2,6005
   sub $0,1
   add $1,$2
 lpe
+add $1,2
 mov $0,$1
-div $0,6005
-add $0,2

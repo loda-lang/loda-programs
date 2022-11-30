@@ -1,5 +1,5 @@
 ; A139528: Numbers n such that numbers 24n+11 are primes.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 0,2,3,4,5,7,9,10,14,17,18,19,20,23,24,27,28,34,39,40,42,45,48,49,52,53,54,59,60,62,63,65,67,69,74,75,79,80,82,83,84,87,93,94,97,100,102,105,107,112,117,118,122,123,125,128,133,135,137,138,139,140,144,145,147,152,157,158,160,163,164,167,170,172,175,177,178,185,188,189,193,195,199,205,208,210,212,214,215,224,228,229,230,235,243,244,247,249,250,255
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$1
   add $2,24
   sub $3,$0

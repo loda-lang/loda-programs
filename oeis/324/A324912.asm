@@ -1,12 +1,7 @@
 ; A324912: Binary weight of A324911(n).
-; Submitted by fzs600
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,2,1,1,1,3,2,1,1,2,1,1,1,4,1,2,1,2,1,1,1,3,2,1,3,2,1,1,1,5,1,1,1,2,1,1,1,3,1,1,1,2,2,1,1,4,2,2,1,2,1,3,1,3,1,1,1,2,1,1,2,6,1,1,1,2,1,1,1,3,1,1,2,2,1,1,1,4,4,1,1,2,1,1,1,3,1,2,1,2,1,1,1,5,1,2,2,2
-; Formula: a(n) = A066301(n)*(A264668(n)-1)^2+1
+; Formula: a(n) = A000120(A324910(n))
 
-mov $1,$0
-seq $1,66301 ; a(n) = 0 if n is squarefree, otherwise 1 + a(n/rad(n)) where rad = A007947 (squarefree kernel).
-seq $0,264668 ; a(n) = A264600(n) - A061486(n).
-sub $0,1
-mul $1,$0
-mul $0,$1
-add $0,1
+seq $0,324910 ; Multiplicative with a(p^e) = (2^e)-1.
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).

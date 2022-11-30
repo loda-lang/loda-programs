@@ -1,6 +1,7 @@
 ; A341822: Length of the longest 2-increasing sequence of positive integer triples with entries <= n.
 ; Submitted by DoctorNow
 ; 1,2,4,8,10,14,17,21,27,30,35
+; Formula: a(n) = A000093(n+1)-A106002(n+1)
 
 mov $1,$0
 add $1,1

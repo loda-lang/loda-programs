@@ -1,10 +1,11 @@
 ; A036431: a(n) = number of positive integers b which, when added to the number of their divisors, tau(b), gives n.
-; Submitted by arkiss
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,0,1,1,0,2,0,1,1,0,2,1,1,1,0,0,2,2,0,2,0,0,1,2,2,0,1,0,1,2,1,1,1,0,0,1,3,2,0,0,1,2,0,2,0,0,1,1,3,1,1,0,0,2,1,0,2,1,0,2,2,1,1,0,1,0,0,3,0,1,1,2,2,1,0,0,2,0,0,3,1,0,1,1,3,0,0,1,2,2,0,0,0,1,2,1,2,2,0
 
 mov $4,$0
 mov $2,$0
-add $2,1
+add $2,3
+div $2,2
 lpb $2
   sub $2,1
   mov $0,$4

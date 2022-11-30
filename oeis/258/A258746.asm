@@ -7,6 +7,14 @@ add $0,1
 seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
 seq $0,154438 ; Permutation of nonnegative integers: A059893-conjugate of A154436.
 sub $0,1
-seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
-seq $0,6068 ; a(n) is Gray-coded into n.
+mov $1,$0
+lpb $1
+  mul $0,2
+  sub $0,$1
+  sub $1,1
+  div $1,2
+  sub $0,$1
+lpe
+add $0,1
 div $0,2
+seq $0,6068 ; a(n) is Gray-coded into n.

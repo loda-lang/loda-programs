@@ -1,5 +1,5 @@
 ; A334158: Number of Goldbach partitions (p,q) of 2n such that primes p and q can be written as the sum of two primes.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,0,0,0,1,1,1,0,1,1,0,1,2,0,0,1,0,1,2,0,0,1,0,1,2,0,0,1,0,0,2,0,1,1,0,0,2,0,1,2,0,0,2,0,0,2,0,0,0,0,0,2,0,1,1,0,1,3,0,0,3,0,0,1,0,0,2,0,0,1,0,1,3,0,0,2,0,1,2,0,0,2,0,0,3,0,0,1,0,0,3,0,1,1,0,0,2,0,1,3
 
 mov $2,1
@@ -14,7 +14,10 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,253900 ; a(n) is the number of squares of the form x^2 + x + n^2 for 0 <= x <= n^2.
+    add $7,1
+    pow $7,2
+    sub $7,1
+    seq $7,78703 ; Number of ways of subtracting twice a triangular number from a perfect square to obtain the integer n.
     cmp $7,2
     mov $9,10
     add $9,$5

@@ -1,4 +1,4 @@
-; A124839: Inverse binomial transform of the Mobius sequence mu(n), A008683.
+; A124839: Inverse binomial transform of the Moebius sequence {mu(k), k >= 1}, A008683.
 ; Submitted by Simon Strandgaard
 ; 1,-2,2,-1,-2,10,-30,76,-173,363,-717,1363,-2551,4797,-9189,18015,-36008,72725,-146930,294423,-581758,1130231,-2158552,4061201,-7557522,13983585,-25872679,48115364,-90273986,171186911
 

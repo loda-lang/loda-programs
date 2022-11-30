@@ -1,6 +1,7 @@
 ; A212344: Sequence of coefficients of x^(n-3) in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
 ; Submitted by Christian Krause
 ; 5,5,10,25,70,210,660,2145,7150,24310,83980,293930,1040060,3714500,13372200,48474225,176788350,648223950,2388193500,8836315950,32820602100,122331335100,457412818200,1715298068250,6449520736620,24309732007260,91836765360760
+; Formula: a(n) = 5*A000108(n)
 
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 mul $0,5

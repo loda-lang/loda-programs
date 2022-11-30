@@ -1,6 +1,7 @@
 ; A243129: a(n) = sigma(d(d(d(n)))), where d(n) is the number of divisors of n.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,4,3,4,3,3,3,4,3,3,3,4,3,4,3,4,3,3,3,3,3,3,3,4,3,4,3,4,4,3,3,4,3,4,3,4,3,4,3,4,3,3,3,7,3,3,4,3,3,4,3,4,3,4,3,7,3,3,4,4,3,4,3,4,3,3,3,7,3,3,3,4,3,7,3,4,3,3,3,7,3,4,4,3
+; Formula: a(n) = 2*A036450(n)-4%A036450(n)-1
 
 seq $0,36450 ; a(n) = d(d(d(n))), the 3rd iterate of the number-of-divisors function with an initial value of n.
 mov $1,4

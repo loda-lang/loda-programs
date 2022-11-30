@@ -1,6 +1,7 @@
 ; A055668: Number of inequivalent Eisenstein-Jacobi primes of norm n.
 ; Submitted by Gunnar Hjern
 ; 0,0,0,1,1,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+; Formula: a(n) = (A135461(n)*A004016(n))/6
 
 mov $1,$0
 seq $1,4016 ; Theta series of planar hexagonal lattice A_2.

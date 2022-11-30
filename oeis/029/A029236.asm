@@ -5,9 +5,20 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25823 ; Expansion of 1/((1-x^2)(1-x^9)(1-x^10)).
-  trn $0,8
-  add $1,$2
+  add $0,4
+  lpb $2
+    mov $4,$2
+    add $4,1
+    mul $4,4
+    div $4,9
+    sub $4,1
+    mov $1,$2
+    sub $1,1
+    div $1,2
+    sub $1,$4
+    trn $2,10
+    add $3,$1
+  lpe
+  trn $0,12
 lpe
-mov $0,$1
+mov $0,$3

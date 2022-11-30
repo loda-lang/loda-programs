@@ -6,7 +6,9 @@ mov $2,1
 lpb $0
   sub $0,1
   mov $3,$2
-  seq $1,172170 ; 1 followed by the duplicated entries of A090368.
+  sub $1,1
+  div $1,2
+  seq $1,90368 ; a(1) = 1; for n > 1, smallest divisor > 1 of 2n-1.
   mov $2,$1
   add $1,$3
   add $1,$4

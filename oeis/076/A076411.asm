@@ -1,11 +1,11 @@
 ; A076411: Number of perfect powers < n.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,1,1,2,2,2,2,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,7,7,7,7,7,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12
 
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,327503 ; Number of steps to reach a fixed point starting with n and repeatedly taking the quotient by the maximum divisor that is 1 or not a perfect power (A327501, A327502).
+  seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   cmp $2,1
   add $2,1
   mod $2,2

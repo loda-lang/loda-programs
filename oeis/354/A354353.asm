@@ -1,4 +1,4 @@
-; A354353: a(n) = 1 if n is either a a squarefree composite or a power of squarefree composite, otherwise 0.
+; A354353: a(n) = 1 if n is either a squarefree composite or a power of squarefree composite, otherwise 0.
 ; Submitted by Landjunge
 ; 0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,1,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0,1
 

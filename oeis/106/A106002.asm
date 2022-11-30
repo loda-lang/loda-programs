@@ -2,16 +2,15 @@
 ; Submitted by Kotenok2000
 ; 0,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1
 
-mov $1,$0
-seq $1,40 ; The prime numbers.
+add $0,2
 mov $2,$0
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,1
-  mul $2,$4
-  add $2,$3
+  max $3,$1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,2
+  sub $2,$0
 lpe
+cmp $4,$3
 mov $0,$4
