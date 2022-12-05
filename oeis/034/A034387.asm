@@ -1,10 +1,13 @@
 ; A034387: Sum of primes <= n.
-; Submitted by Coleslaw
+; Submitted by Christian Krause
 ; 0,2,5,5,10,10,17,17,17,17,28,28,41,41,41,41,58,58,77,77,77,77,100,100,100,100,100,100,129,129,160,160,160,160,160,160,197,197,197,197,238,238,281,281,281,281,328,328,328,328,328,328,381,381,381,381,381,381,440,440,501,501,501,501,501,501,568,568,568,568,639,639,712,712,712,712,712,712,791,791,791,791,874,874,874,874,874,874,963,963,963,963,963,963,963,963,1060,1060,1060,1060
 
 lpb $0
+  mov $3,$0
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $2,$0
-  seq $2,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+  add $2,1
+  mul $2,$3
   sub $0,1
   add $1,$2
 lpe

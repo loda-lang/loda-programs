@@ -1,6 +1,7 @@
 ; A357771: Number of 2n-step closed paths on quasi-regular rhombic (rhombille) lattice starting from a degree-6 node.
 ; Submitted by PaoloNasca
 ; 1,6,60,744,10224,148896,2250816,34922880,552386304,8867756544,144044098560,2362292213760,39049785446400,649843233546240,10876273137008640
+; Formula: a(n) = A002893(n)*2^n
 
 mov $1,$0
 mov $0,2

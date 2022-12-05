@@ -7,7 +7,7 @@ mov $1,1
 mov $2,$0
 add $2,1
 lpb $2
-  seq $2,88140 ; a(n) = 1 if n is an odd prime otherwise a(n) = n.
+  seq $2,88140 ; Duplicate of A005451 (for n >= 3).
   sub $0,1
   mul $1,$2
   mov $2,$0

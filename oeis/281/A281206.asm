@@ -1,11 +1,29 @@
 ; A281206: Number of 2 X n 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 0,2,14,28,52,94,166,290,502,864,1480,2526,4298,7294,12350,20868,35196,59262,99630,167258,280422,469576,785424,1312318,2190482,3652854,6086126,10131820,16853572,28013854,46531510,77237906,128126038,212413104,351944920,582812958,964618586,1595747182,2638542110,4360781268,7203991692,11895933246,19635753534,32398675658,53437246662,88105728664,145215599136,239263757950,394094411042,648915653094,1068182602190,1757828277436,2891913439828,4756374299614,7820822881990,12856364906498,21128890655926
 
 mov $2,$0
 lpb $0
+  mov $3,1
   mov $1,$0
-  seq $1,134508 ; Row sums of triangle A134507.
+  add $1,1
+  lpb $1
+    sub $1,1
+    sub $5,$6
+    mov $7,$3
+    add $8,1
+    add $3,$5
+    add $4,$5
+    add $4,$6
+    mov $5,$6
+    mov $6,$4
+    add $7,$4
+    mov $4,$5
+    add $4,$9
+    mov $5,$7
+    mov $9,$8
+  lpe
+  mov $1,$5
   mov $0,1
 lpe
 add $1,$2

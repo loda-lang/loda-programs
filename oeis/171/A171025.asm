@@ -1,6 +1,23 @@
 ; A171025: In the sequence of prime numbers, replace all the '5' digits with '2' and vice versa.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 5,3,2,7,11,13,17,19,53,59,31,37,41,43,47,23,29,61,67,71,73,79,83,89,97,101,103,107,109,113,157,131,137,139,149,121,127,163,167,173,179,181,191,193,197,199,511,553,557,559,533,539,541,521,527,563,569,571,577,581,583,593,307,311,313,317,331,337,347,349,323,329,367,373,379,383,389,397,401,409,419,451,431,433,439,443,449,427,461,463,467,479,487,491,499,203,209,251,253,241
 
 seq $0,40 ; The prime numbers.
-seq $0,222229 ; In the number n, replace all (decimal) digits '2' with '5' and vice versa.
+mov $1,$0
+mov $4,3
+lpb $0
+  mov $2,$0
+  mul $2,27
+  add $2,4
+  mod $2,10
+  mov $3,$2
+  mod $3,2
+  sub $3,1
+  div $0,10
+  div $2,8
+  mul $2,$4
+  dif $2,$3
+  mul $4,10
+  sub $1,$2
+lpe
+mov $0,$1

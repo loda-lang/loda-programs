@@ -1,13 +1,17 @@
 ; A010177: Continued fraction for sqrt(112).
-; Submitted by GolfSierra
+; Submitted by Christian Krause
 ; 10,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2
+; Formula: a(n) = 6*(A010125(b(n-2)+1)/4)+A010125(b(n-2)+1), a(1) = 1, a(0) = 10, b(n) = b(n-1)+1, b(0) = 1
 
-seq $0,40151 ; Continued fraction for sqrt(164).
-sub $0,1
-seq $0,144330 ; Triangle read by rows, A144328 * A000012
-mov $1,$0
+add $0,1
 lpb $0
-  bin $1,7
-  add $1,3
-  sub $0,$1
+  sub $0,1
+  mov $1,$3
+  seq $1,10125 ; Continued fraction for sqrt(21).
+  mov $2,$1
+  div $1,4
+  mul $1,6
+  add $1,$2
+  add $3,1
 lpe
+mov $0,$1

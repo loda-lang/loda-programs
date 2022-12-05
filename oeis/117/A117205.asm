@@ -1,19 +1,26 @@
 ; A117205: Odd squarefree positive integers k such that (k+1)/2 is also squarefree.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 1,3,5,11,13,19,21,29,33,37,41,43,51,57,59,61,65,67,69,73,77,83,85,91,93,101,105,109,113,115,123,129,131,133,137,139,141,145,155,157,163,165,173,177,181,185,187,193,201,203,205,209,211,213,217,219,221,227,229,235,237,253,257,259,265,267,273,277,281,283,285,291,301,307,309,313,317,321,329,331,339,345,347,353,355,357,365,371,373,379,381,385,389,393,397,401,403,409,411,417
 
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,175608 ; Characteristic function of squarefree triangular integers: 1 if n(n+1)/2 is squarefree else 0.
+  max $3,$5
+  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$3
-  add $1,2
+  max $1,1
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
   sub $2,1
+  add $5,$1
+  add $5,3
+  add $1,3
+  add $6,12
 lpe
-mov $0,$1
-add $0,1
+mov $0,$6
+sub $0,6
+div $0,6
+add $0,2

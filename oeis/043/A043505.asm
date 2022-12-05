@@ -5,12 +5,19 @@
 add $0,2
 mov $2,$0
 sub $0,1
-mov $1,1
 pow $2,4
 lpb $2
+  mov $4,6
   mov $3,$1
-  seq $3,316865 ; Number of times 4 appears in decimal expansion of n.
-  sub $3,1
+  lpb $3
+    mov $5,$3
+    mod $5,10
+    cmp $5,4
+    div $3,10
+    add $4,$5
+  lpe
+  mov $3,$4
+  sub $3,7
   cmp $3,0
   sub $0,$3
   add $1,1

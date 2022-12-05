@@ -1,7 +1,27 @@
 ; A089942: Inverse binomial matrix applied to A039599.
-; Submitted by Josemi
+; Submitted by Christian Krause
 ; 1,0,1,1,1,1,1,3,2,1,3,6,6,3,1,6,15,15,10,4,1,15,36,40,29,15,5,1,36,91,105,84,49,21,6,1,91,232,280,238,154,76,28,7,1,232,603,750,672,468,258,111,36,8,1,603,1585,2025,1890,1398,837,405,155,45,9,1,1585,4213,5500,5313,4125,2640,1397,605,209,55,10,1,4213,11298,15026,14938,12078,8162,4642,2211,869,274,66,11,1,11298,30537,41262,42042,35178,24882,15015,7722,3354
-; Formula: a(n) = A071947(A061579(n))
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,71947 ; Triangle read by rows of numbers of paths in a lattice satisfying certain conditions.
+mov $3,3
+mov $5,3
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+mul $0,-1
+add $0,$2
+lpb $0
+  sub $0,1
+  add $3,$5
+  mov $1,$3
+  sub $1,$5
+  mul $1,$2
+  sub $2,1
+  add $4,1
+  div $1,$4
+  add $3,$1
+  mul $5,-1
+  add $5,$1
+lpe
+mov $0,$5
+div $0,3

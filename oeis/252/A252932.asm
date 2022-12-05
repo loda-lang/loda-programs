@@ -12,10 +12,9 @@ lpb $0
   add $1,$2
   add $2,$0
 lpe
+mov $4,3
+mul $4,$3
 trn $1,1
-lpb $3
-  sub $3,1
-  add $1,3
-lpe
+add $1,$4
 add $1,2
 mov $0,$1

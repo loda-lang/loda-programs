@@ -1,25 +1,7 @@
 ; A239708: Numbers of the form m = 2^i + 2^j, where i > j >= 0, such that m - 1 is prime.
-; Submitted by Landjunge
+; Submitted by Christian Krause
 ; 3,6,12,18,20,24,48,68,72,80,132,192,258,264,272,384,1032,1040,1088,1152,1280,2064,2112,4100,4112,4128,4160,5120,6144,8448,16448,20480,32772,32784,32832,33024,33792,65538,65540,65544,65552,65600,66048,73728,81920,262148,262152,262272,262400,263168,266240,294912,524352,528384,786432,1048584,1048704,1049600,1114112,1310720,2101248,4194320,4194560,4195328,8388624,8454144,16785408,16842752,17825792,18874368,67108880,67141632,134479872,138412032,268435460,268435464,268435712,272629760,1073741828
+; Formula: a(n) = A239712(n)+1
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,99628 ; Numbers m where m-th Catalan number A000108(m) = binomial(2m,m)/(m+1) is divisible by 2 but not by 4, i.e., where A048881(m) = 1.
-  mov $5,$3
-  add $5,2
-  sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-lpe
-mov $0,$5
-sub $0,1
+seq $0,239712 ; Primes of the form m = 2^i + 2^j - 1, where i > j >= 0.
+add $0,1

@@ -9,7 +9,11 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40748 ; Continued fraction for sqrt(776).
+  seq $1,40204 ; Continued fraction for sqrt(219).
+  mul $1,22
+  sub $1,340
+  div $1,11
+  add $1,29
   mul $1,$2
   add $1,$4
   add $3,1

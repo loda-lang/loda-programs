@@ -10,7 +10,11 @@ lpb $0
   mov $2,$1
   mov $1,$3
   seq $1,40431 ; Continued fraction for sqrt(453).
-  seq $1,153141 ; Permutation of nonnegative integers: A059893-conjugate of A153151.
+  mul $1,2
+  seq $1,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
+  sub $1,2
+  seq $1,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
+  div $1,2
   mul $1,$2
   add $1,$4
   add $3,1

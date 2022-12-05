@@ -1,12 +1,14 @@
 ; A182082: Number of pairs, (x,y), with x >= y, whose LCM does not exceed n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 1,3,5,8,10,15,17,21,24,29,31,39,41,46,51,56,58,66,68,76,81,86,88,99,102,107,111,119,121,135,137,143,148,153,158,171,173,178,183,194,196,210,212,220,228,233,235,249,252,260,265,273,275,286,291,302,307,312,314,337,339,344,352,359,364,378,380,388,393,407,409,427,429,434,442,450,455,469,471,485,490,495,497,520,525,530,535,546,548,571,576,584,589,594,599,616,618,626,634,647
 
+mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,18892 ; Number of ways to write 1/n as a sum of exactly 2 unit fractions.
+  seq $2,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $2,3
+  add $2,1
   sub $0,1
   add $1,$2
 lpe
 mov $0,$1
-add $0,1

@@ -5,8 +5,10 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,27656 ; Expansion of 1/(1-x^2)^2 (included only for completeness - the policy is always to omit the zeros from such sequences).
+  add $2,1
+  mov $3,$2
+  dif $3,2
+  sub $2,$3
   trn $0,11
   add $1,$2
 lpe

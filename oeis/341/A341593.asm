@@ -1,6 +1,7 @@
 ; A341593: Number of superior prime-power divisors of n.
 ; Submitted by [AF>EDLS]zOU
 ; 0,1,1,2,1,1,1,2,2,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,2,1,2,1,1,0,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,2,1,1,1,1,1,0,1,1,1,4,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,3,1,1,0,1,1,1
+; Formula: a(n) = A001222(n)-A341677(n)
 
 mov $1,$0
 seq $1,341677 ; Number of strictly inferior prime-power divisors of n.

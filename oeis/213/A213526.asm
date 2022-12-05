@@ -1,10 +1,10 @@
 ; A213526: a(n) = 3*n AND n, where AND is the bitwise AND operator.
-; Submitted by Jamie Morken(s3)
+; Submitted by Kotenok2000
 ; 0,1,2,1,4,5,2,5,8,9,10,1,4,5,10,13,16,17,18,17,20,21,2,5,8,9,10,17,20,21,26,29,32,33,34,33,36,37,34,37,40,41,42,1,4,5,10,13,16,17,18,17,20,21,34,37,40,41,42,49,52,53,58,61,64,65,66,65,68,69,66,69,72,73,74,65,68,69,74,77,80,81,82,81,84,85,2,5,8,9,10,17,20,21,26,29,32,33,34,33
 
 mov $2,$0
+seq $2,184616 ; Negated negative parts of the nonadjacent forms
 lpb $0
-  seq $2,184616 ; Negated negative parts of the nonadjacent forms
   mul $2,2
   add $1,$0
   add $1,$2

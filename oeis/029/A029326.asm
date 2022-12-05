@@ -7,8 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   seq $2,8682 ; Expansion of 1/((1-x^4)*(1-x^5)*(1-x^6)).
-  add $0,1
-  trn $0,8
+  trn $0,7
   add $1,$2
 lpe
 mov $0,$1

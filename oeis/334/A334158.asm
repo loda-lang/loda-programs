@@ -9,6 +9,7 @@ lpb $0
   mov $5,0
   mov $6,0
   mov $4,$2
+  gcd $4,$3
   add $4,1
   lpb $4
     sub $4,1

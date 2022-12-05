@@ -1,17 +1,17 @@
 ; A201817: Numbers k such that 90*k + 67 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Christian Krause
 ; 0,1,3,6,8,9,10,13,14,17,19,20,23,29,30,31,33,35,36,42,44,47,50,51,56,57,61,62,63,64,66,69,70,72,73,76,77,79,83,85,90,94,96,98,100,101,103,107,108,110,117,118,120,121,122,125,127,128,129,133,138,139,141,147,149,150,156,157,161,163,164,168,169,174,175,176,178,180,182,188,189,190,191,196,199,204,205,208,213,215,216,217,218,219,220,222,226,231,232,237
 
 add $0,1
-mov $1,66
+mov $2,66
 mov $3,$0
 pow $3,5
 lpb $3
-  mov $2,$1
-  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$2
-  add $1,90
+  mov $1,$2
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$1
+  add $2,90
   sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 div $0,90

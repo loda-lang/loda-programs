@@ -12,10 +12,19 @@ mov $2,$1
 add $2,1
 lpb $2
   sub $2,1
+  mov $5,0
   mov $1,$4
   sub $1,$2
   add $1,$0
-  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $3,$1
+  add $1,1
+  mov $6,$1
+  lpb $6
+    sub $6,1
+    mov $7,$6
+    gcd $7,$1
+    cmp $7,1
+    add $5,$7
+  lpe
+  add $3,$5
 lpe
 mov $0,$3

@@ -12,10 +12,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  mov $5,$0
+  mul $1,$0
   sub $0,1
   seq $0,7955 ; Product of divisors of n.
-  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

@@ -1,26 +1,24 @@
 ; A039725: Even abundant numbers divided by 2.
-; Submitted by Kotenok2000
+; Submitted by Christian Krause
 ; 6,9,10,12,15,18,20,21,24,27,28,30,33,35,36,39,40,42,44,45,48,50,51,52,54,56,57,60,63,66,69,70,72,75,78,80,81,84,87,88,90,93,96,98,99,100,102,104,105,108,110,111,112,114,117,120,123,126,129,130,132,135,136,138,140,141,144,147,150,152,153,154,156,159,160,162,165,168,170,171,174,175,176,177,180,182,183,184,186,189,190,192,195,196,198,200,201,204,207,208
 
-mov $1,3
+mov $1,1
 mov $2,$0
-add $2,7
-pow $2,2
+add $2,6
+pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,281626 ; a(n) = (sum of trivial divisors of n) - (sum of nontrivial divisors of n).
-  mul $3,-4
-  add $3,4
-  trn $3,3
-  min $3,1
-  sub $0,$3
   add $1,2
+  mov $3,$1
+  seq $3,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
+  sub $0,$3
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,18
+  add $1,$4
+  sub $1,1
 lpe
 mov $0,$1
-add $0,1
+add $0,3
 div $0,2

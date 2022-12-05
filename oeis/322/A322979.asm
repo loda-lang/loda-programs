@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  mul $0,$1
   sub $0,$1
   seq $0,9191 ; a(n) = gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
   mul $1,$0

@@ -9,7 +9,15 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $1,$3
-  seq $1,40693 ; Continued fraction for sqrt(720).
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $5,$1
+  add $5,3
+  div $5,5
+  mul $5,21
+  add $1,$5
+  sub $1,23
   dif $1,2
   mul $1,$2
   add $1,$4

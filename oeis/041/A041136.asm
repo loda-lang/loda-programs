@@ -11,8 +11,9 @@ lpb $0
   mov $6,$3
   gcd $6,2
   mov $1,$3
-  seq $1,40475 ; Continued fraction for sqrt(498).
-  div $1,4
+  seq $1,10144 ; Continued fraction for sqrt(59).
+  mul $1,16
+  div $1,20
   mul $1,$6
   add $1,$6
   sub $1,1

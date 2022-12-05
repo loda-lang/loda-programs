@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,55642 ; Number of digits in decimal expansion of n.
+  seq $3,55642 ; Number of digits in the decimal expansion of n.
   add $3,$4
   gcd $3,2
   sub $0,$3

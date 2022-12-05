@@ -1,5 +1,6 @@
 ; A127112: n! in base 4.
 ; 1,1,2,12,120,1320,23100,1032300,21312000,1120212000,31311330000,2120101110000,130203033300000,11303022030300000,1101030032302200000,103001313131311200000
+; Formula: a(n) = A007090(A000142(n))
 
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 seq $0,7090 ; Numbers in base 4.

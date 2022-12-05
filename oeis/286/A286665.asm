@@ -1,19 +1,12 @@
 ; A286665: {0->01}-transform of the Pell word, A171588.
-; Submitted by Athlici
+; Submitted by Kotenok2000
 ; 0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0
+; Formula: a(n) = (A001951(n+3)+A001951(n+2))%2
 
+add $0,2
+mov $1,$0
+seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
 add $0,1
-mov $1,1
-mov $2,$0
-lpb $2
-  lpb $0
-    mov $1,$0
-    seq $1,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
-    mul $2,$1
-    mul $0,$2
-    trn $0,8
-  lpe
-lpe
-mov $0,$1
-add $0,1
+seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,$1
 mod $0,2

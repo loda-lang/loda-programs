@@ -14,7 +14,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,252742 ; Characteristic function of A246282: if A003961(n) > 2*n, then a(n) = 1, otherwise 0 (when A003961(n) < 2*n) [where A003961(n) shifts the prime factorization of n one step towards larger primes].
+  seq $0,252748 ; a(n) = A003961(n) - 2*n.
+  max $0,0
+  mod $0,2
   mul $1,$0
   add $3,$1
 lpe

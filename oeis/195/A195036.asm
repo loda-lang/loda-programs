@@ -12,20 +12,14 @@ lpb $0
   add $1,$2
   add $2,3
 lpe
-sub $1,7
-mov $3,2
-lpb $3
-  sub $3,1
-  add $1,$4
-lpe
+mov $7,$4
+mul $7,2
 mov $5,$4
-lpb $5
-  sub $5,1
-  add $6,$4
-lpe
-mov $3,2
-lpb $3
-  sub $3,1
-  add $1,$6
-lpe
+mul $5,$4
+add $6,$5
+mov $3,$6
+mul $3,2
+sub $1,7
+add $1,$7
+add $1,$3
 mov $0,$1

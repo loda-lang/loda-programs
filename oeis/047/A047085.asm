@@ -1,5 +1,6 @@
-; A047085: T(2n,n), array T as in A047080.
+; A047085: a(n) = T(2*n, n), array T as in A047080.
 ; Submitted by Simon Strandgaard
 ; 1,1,3,9,27,83,259,817,2599,8323,26797,86659,281287,915907,2990383,9786369,32092959,105435607,346950321,1143342603,3772698725,12463525229,41218894577,136451431723,452116980643,1499282161375,4975631425581,16524213199923,54913514061867
+; Formula: a(n) = A171155(n)
 
 seq $0,171155 ; For two strings of length n, this is the number of pairwise alignments that do not have an insertion adjacent to a deletion.

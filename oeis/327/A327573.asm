@@ -6,10 +6,6 @@ lpb $0
   mov $2,$0
   seq $2,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
   gcd $2,256
-  mul $2,2
-  sub $2,2
-  div $2,2
-  add $2,1
   sub $0,1
   add $1,$2
 lpe

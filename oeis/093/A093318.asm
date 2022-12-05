@@ -1,18 +1,9 @@
 ; A093318: d(n) = number of positive divisors k of n where mu(k) = 1 and mu(n/k) = -1.
 ; Submitted by Kotenok2000
 ; 0,1,1,0,1,0,1,0,0,0,1,1,1,0,0,0,1,1,1,1,0,0,1,0,0,0,0,1,1,4,1,0,0,0,0,0,1,0,0,0,1,4,1,1,1,0,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,1,0,0,4,1,1,0,4,1,0,1,0,1,1,0,4,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0
+; Formula: a(n) = max(-A007427(n),0)/2
 
-mov $1,$0
-add $1,1
-mov $2,$0
-lpb $2
-  gcd $2,$1
-  sub $2,1
-  mov $0,$1
-  gcd $0,$2
-  sub $0,1
-  seq $0,7427 ; Moebius transform applied twice to sequence 1,0,0,0,....
-lpe
-trn $2,$0
-mov $0,$2
+seq $0,7427 ; Moebius transform applied twice to sequence 1,0,0,0,....
+trn $1,$0
+mov $0,$1
 div $0,2

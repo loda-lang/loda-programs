@@ -6,9 +6,14 @@ mov $1,$0
 sub $1,1
 lpb $1
   sub $1,1
+  mov $4,$0
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $2,$0
-  seq $2,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
-  add $3,$2
+  sub $2,$4
+  add $2,3
+  mul $4,$2
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,1
+  add $3,$4
 lpe
 mov $0,$3

@@ -8,7 +8,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,55642 ; Number of digits in decimal expansion of n.
+  seq $5,55642 ; Number of digits in the decimal expansion of n.
   mov $3,$1
   seq $3,120354 ; a(n) = 11*3^n.
   mov $6,$3

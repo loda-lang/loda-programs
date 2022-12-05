@@ -1,6 +1,7 @@
 ; A164279: Triangle of 2^n terms per row, a Petoukhov sequence generated from (3,2).
 ; Submitted by PDW
 ; 1,3,2,9,6,4,6,27,18,12,18,12,8,12,18,81,54,36,54,36,24,36,54,36,24,16,24,36,24,36,54
+; Formula: a(n) = A176893(A154436(n+1))/3
 
 add $0,1
 seq $0,154436 ; Permutation of nonnegative integers induced by Lamplighter group generating wreath recursion, variant 1: a = s(a,b), b = (a,b), starting from the state a.

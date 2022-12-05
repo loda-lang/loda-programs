@@ -1,20 +1,17 @@
 ; A098904: Even numbers whose number of distinct prime factors is odd.
-; Submitted by Jamie Morken(w2)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 2,4,8,16,30,32,42,60,64,66,70,78,84,90,102,110,114,120,126,128,130,132,138,140,150,154,156,168,170,174,180,182,186,190,198,204,220,222,228,230,234,238,240,246,252,256,258,260,264,266,270,276,280,282,286,290,294,300,306,308,310,312,318,322,336,340,342,348,350,354,360,364,366,370,372,374,378,380,396,402,406,408,410,414,418,426,430,434,438,440,442,444,450,456,460,468,470,474,476,480
 
-mov $1,-1
+add $0,1
+mov $1,1
 mov $2,$0
-pow $2,2
+pow $2,4
 lpb $2
-  add $1,2
   mov $3,$1
   seq $3,92248 ; Parity of number of distinct primes dividing n (function omega(n)) parity of A001221.
   sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,2
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,3
+add $0,1

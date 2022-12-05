@@ -252,6 +252,7 @@ A174897: a(n) = characteristic function of numbers k such that A007955(m) = k ha
 A174898: a(n) = characteristic function of numbers k such that A007955(m) = k has no solution for any m, where A007955(m) = product of divisors of m.
 A179247: Numbers that have 7 terms in their Zeckendorf representation.
 A179249: Numbers that have 9 terms in their Zeckendorf representation.
+A179250: Numbers that have 10 terms in their Zeckendorf representation.
 A179942: Number of times n appears in a 1000 x 1000 multiplication table.
 A180122: First of three "least, sum, least" self-generating sequences.
 A180824: Number of distinct solutions of sum{i=1..1}(x(2i-1)*x(2i)) = 1 (mod n), with x() only in 2..n-2
@@ -458,6 +459,7 @@ A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2
 A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293484: The number of 7th powers in the multiplicative group modulo n.
 A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
+A294926: Number of proper divisors of n that are deficient (A005100).
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
 A295879: Multiplicative with a(p) = 1, a(p^e) = prime(e-1) if e > 1.
 A296767: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(rises) < #(falls); see Comments.
@@ -547,3 +549,4 @@ A354031: a(n) = 1 if n > 1 and n is a power of a Pythagorean prime (prime of the
 A354353: a(n) = 1 if n is either a a squarefree composite or a power of squarefree composite, otherwise 0.
 A354819: a(n) = 1 if n is a nonprime squarefree number, otherwise 0.
 A355037: a(n) is the product of the digits of n in primorial base.
+A356159: Sum of the prime indices of the smallest number that has the same prime signature as n.

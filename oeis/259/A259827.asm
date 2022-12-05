@@ -1,5 +1,5 @@
 ; A259827: Expansion of phi(x) * f(-x^12)^3 / f(-x^4) in powers of x where phi(), f() are Ramanujan theta functions.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,2,0,0,3,2,0,0,4,6,0,0,4,2,0,0,4,8,0,0,7,2,0,0,8,10,0,0,4,4,0,0,5,10,0,0,8,4,0,0,12,10,0,0,8,6,0,0,4,14,0,0,12,2,0,0,8,14,0,0,8,4,0,0,9,18,0,0,12,6,0,0,16,14,0,0,4,4,0,0,12,12,0,0,15,8,0,0,8,22,0,0,8,6,0,0,8,16,0,0
 
 mov $3,3
@@ -12,10 +12,9 @@ lpb $0
   mod $5,2
   add $5,1
   add $1,$2
-  mov $3,2
+  mov $3,1
   add $3,$4
   mul $3,$5
-  dif $3,2
-  add $4,2
+  add $4,1
 lpe
 mov $0,$1

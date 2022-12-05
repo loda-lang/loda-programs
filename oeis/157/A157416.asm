@@ -1,6 +1,7 @@
 ; A157416: Length of maximal uncrossed cycle of knight moves on n X n board.
 ; Submitted by Christian Krause
 ; 0,0,0,4,8,12,24,32,42,54
+; Formula: a(n) = 2*((n*((n/6-1)+n))/3)
 
 mov $1,$0
 div $1,6

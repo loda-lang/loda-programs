@@ -9,7 +9,18 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $1,$3
-  seq $1,10219 ; Continued fraction for sqrt(175).
+  seq $1,40685 ; Continued fraction for sqrt(712).
+  sub $1,3
+  mov $5,$1
+  mul $5,2
+  div $5,5
+  mul $1,4
+  mod $1,10
+  add $1,$5
+  div $1,2
+  mul $5,2
+  sub $5,$1
+  mov $1,$5
   mul $1,$2
   add $1,$4
 lpe

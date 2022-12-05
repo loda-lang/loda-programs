@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,81045 ; 10th binomial transform of (1,9,0,0,0,0,0,.....).
+  seq $4,81045 ; 10th binomial transform of (1,9,0,0,0,0,0,...).
   mov $2,$3
   mul $2,$4
   add $1,$2

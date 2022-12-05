@@ -8,8 +8,10 @@ lpb $0
   mov $4,$2
   mov $2,$1
   add $3,1
-  mov $1,$3
-  seq $1,10208 ; Continued fraction for sqrt(159).
+  mov $5,$3
+  seq $5,40139 ; Continued fraction for sqrt(152).
+  seq $1,330025 ; a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
+  gcd $1,$5
   mul $1,$2
   add $1,$4
 lpe
