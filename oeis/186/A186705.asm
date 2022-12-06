@@ -1,6 +1,7 @@
 ; A186705: The maximum number of occurrences of the same distance among n points in the plane.
 ; Submitted by Simon Strandgaard
 ; 0,1,3,5,7,9,12,14,18,20,23,27,30,33
+; Formula: a(n) = ((2*((A029102(n+1)-1)/2)+A130252(n+1))-1)/2
 
 mov $1,$0
 add $1,1

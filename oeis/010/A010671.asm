@@ -1,6 +1,7 @@
 ; A010671: Maximal size of binary code of length n correcting 4 unidirectional errors.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,2,2,2,2,6,8
+; Formula: a(n) = (n*A029103(n)-4)/16+A029103(n)
 
 mov $1,$0
 seq $1,29103 ; Expansion of 1/((1-x)(1-x^5)(1-x^10)(1-x^11)).

@@ -18,13 +18,13 @@ lpb $0
     add $7,$0
     add $7,$4
     bin $7,$0
-    mul $7,2
     add $8,1
     mod $8,4
     mod $8,3
     mul $7,$$9
     div $8,2
     mul $7,$8
+    mul $7,2
     add $5,1
     add $6,$7
   lpe

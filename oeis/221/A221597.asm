@@ -23,19 +23,13 @@ add $1,$0
 add $1,$4
 add $1,$4
 add $1,16
-mov $5,39
-lpb $5
-  sub $5,1
-  add $1,$6
-lpe
+mov $9,$6
+mul $9,39
 mov $7,$6
-lpb $7
-  sub $7,1
-  add $8,$6
-lpe
-mov $5,54
-lpb $5
-  sub $5,1
-  add $1,$8
-lpe
+mul $7,$6
+add $8,$7
+mov $5,$8
+mul $5,54
+add $1,$9
+add $1,$5
 mov $0,$1

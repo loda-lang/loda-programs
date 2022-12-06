@@ -1,7 +1,13 @@
 ; A284541: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 974", based on the 5-celled von Neumann neighborhood.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,11,111,1011,10111,101011,1000111,11011011,111110111,1111101011,11111000111,111111011011,1111111110111,11111111101011,111111111000111,1111111111011011,11111111111110111,111111111111101011,1111111111111000111,11111111111111011011,111111111111111110111,1111111111111111101011,11111111111111111000111,111111111111111111011011,1111111111111111111110111,11111111111111111111101011,111111111111111111111000111,1111111111111111111111011011,11111111111111111111111110111,111111111111111111111111101011
-; Formula: a(n) = A004086(A284540(n))
 
-seq $0,284540 ; Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 974", based on the 5-celled von Neumann neighborhood.
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+seq $0,284542 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 974", based on the 5-celled von Neumann neighborhood.
+lpb $0
+  mov $2,$0
+  mod $2,2
+  div $0,2
+  mul $1,10
+  add $1,$2
+lpe
+mov $0,$1

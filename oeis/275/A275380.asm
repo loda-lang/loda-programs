@@ -1,5 +1,6 @@
 ; A275380: Number of odd prime factors (with multiplicity) of generalized Fermat number 7^(2^n) + 1.
 ; 0,2,1,2,2,3,3,5,3,6
+; Formula: a(n) = ((n-(binomial(-2,n-4)-2)/2-4)/2+2)%10
 
 sub $0,4
 mov $1,-2

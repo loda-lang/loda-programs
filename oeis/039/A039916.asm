@@ -1,6 +1,7 @@
 ; A039916: Concatenation of the decimal digits of Pi-3.
 ; Submitted by Jon Maiga
 ; 1,14,141,1415,14159,141592,1415926,14159265,141592653,1415926535,14159265358,141592653589,1415926535897,14159265358979,141592653589793,1415926535897932,14159265358979323,141592653589793238
+; Formula: a(n) = A004086(A254898(n))
 
 seq $0,254898 ; Read the first n decimal digits of Pi-3 backwards.
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
