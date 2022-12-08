@@ -1,5 +1,5 @@
 ; A209291: Sum of the refactorable numbers less than or equal to n.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,3,3,3,3,3,3,11,20,20,20,32,32,32,32,32,32,50,50,50,50,50,50,74,74,74,74,74,74,74,74,74,74,74,74,110,110,110,110,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,206,206,206,206,266,266,266,266,266,266,266,266,266,266,266,266,338,338,338,338,338,338,338,338,418,418,418,418,502,502,502,502,590,590,590,590,590,590,590,590,686,686,686,686,686
 
 mov $2,$0
@@ -9,8 +9,13 @@ lpb $4
   mov $0,$2
   sub $2,1
   mov $3,$0
-  seq $0,336040 ; Characteristic function of refactorable numbers (A033950).
-  mul $3,$0
+  mov $5,1
+  add $5,$0
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $5,$0
+  bin $5,$0
+  mul $3,$5
+  mov $0,$5
   add $0,$3
   add $1,$0
 lpe

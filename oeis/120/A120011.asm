@@ -1,23 +1,9 @@
 ; A120011: Decimal expansion of sqrt(3)/4.
-; Submitted by dthonon
+; Submitted by Stony666
 ; 4,3,3,0,1,2,7,0,1,8,9,2,2,1,9,3,2,3,3,8,1,8,6,1,5,8,5,3,7,6,4,6,8,0,9,1,7,3,5,7,0,1,3,1,3,4,5,2,5,9,5,1,5,7,0,1,3,9,5,1,7,4,4,8,6,2,9,8,3,2,5,4,2,2,7,2,0,0,0,0,9,2,7,0,2,8,6,5,4,6,6,8,9,3,1,2,1,4,3,9
+; Formula: a(n) = (A011549(n+1)/4)%10
 
-mov $1,1
-mov $2,2
-mov $3,$0
-mul $3,4
-add $3,1
-lpb $3
-  sub $3,1
-  add $1,$2
-  add $2,$1
-  add $1,$2
-lpe
-mov $4,10
-pow $4,$0
-mul $2,2
-div $2,$4
-mul $1,5
-div $1,$2
-mov $0,$1
+add $0,1
+seq $0,11549 ; Decimal expansion of sqrt(3) truncated to n places.
+div $0,4
 mod $0,10

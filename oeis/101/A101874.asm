@@ -1,9 +1,10 @@
 ; A101874: Number of Abelian groups of order 4n+3.
-; Submitted by Fardringle
+; Submitted by Landjunge
 ; 1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,3,1,1,2,1,1,1,1,1,2,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,7,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,3,1,3,1,1,2,1,1,3,1,1,2,1,1,1
+; Formula: a(n) = A181819(A003557(4*n+2)-1)
 
 mul $0,4
 add $0,2
-seq $0,351655 ; Dirichlet g.f.: Product_{p prime} 1 / (1 - p^(-s) - p^(-2*s) - p^(-3*s)).
-div $0,2
-add $0,1
+seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+sub $0,1
+seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).

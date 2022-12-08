@@ -1,5 +1,5 @@
 ; A285797: Number of ways to write n as an ordered sum of two numbers that are the product of an odd number of distinct primes.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,0,0,0,1,2,1,2,2,2,3,0,2,2,3,2,4,0,4,2,4,2,5,0,6,2,5,0,4,0,6,2,6,4,7,2,8,2,3,2,6,2,8,4,8,4,7,4,10,6,8,0,6,4,10,4,6,0,7,4,13,6,5,2,10,2,12,2,6,4,10,6,16,10,9,4,10,6,14,4,10,6,9,10,17,8,9,2,8,10,18,6,8,2,9,6,16,6,6,4
 
 mov $2,$0
@@ -30,4 +30,4 @@ lpb $0
   mov $$9,$3
   add $2,1
 lpe
-mov $0,$6
+mov $0,$3

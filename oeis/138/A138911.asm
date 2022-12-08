@@ -11,7 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,52506 ; E.g.f.: exp(x*exp(x)-x).
+    seq $2,52506 ; Expansion of e.g.f. exp(x*exp(x)-x).
     mov $3,0
     add $4,$2
   lpe

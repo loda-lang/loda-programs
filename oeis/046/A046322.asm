@@ -1,13 +1,24 @@
 ; A046322: Odd numbers divisible by exactly 9 primes (counted with multiplicity).
-; Submitted by William Michael Kanar
+; Submitted by USTL-FIL (Lille Fr)
 ; 19683,32805,45927,54675,72171,76545,85293,91125,107163,111537,120285,124659,127575,142155,150903,151875,168399,178605,185895,190269,199017,200475,203391,207765,212625,236925,242757,250047,251505,253125,260253,264627,269001,280665,282123,290871,297675,308367,309825,312741,317115,331695,334125,338985,346275,347733,352107,354375,369603,387099,392931,394875,400221,404595,408969,416745,419175,421875,433755,439587,441045,443961,448335,457083,464373,465831,467775,470205,474579,478953,483327,484785
-; Formula: a(n) = 27*(-(A046319(n)*(A264668(n)-1)))
 
-mov $1,$0
-seq $1,46319 ; Odd numbers divisible by exactly 6 primes (counted with multiplicity).
-seq $0,264668 ; a(n) = A264600(n) - A061486(n).
-sub $0,1
-mul $1,$0
-sub $2,$1
-mov $0,$2
-mul $0,27
+mov $2,$0
+add $0,1
+mov $1,612
+add $2,9
+pow $2,4
+lpb $2
+  mov $3,$1
+  seq $3,91304 ; a(n) = Omega(2n-1) (number of prime factors of the n-th odd number, counted with multiplicity).
+  sub $3,2
+  cmp $3,5
+  sub $0,$3
+  mul $3,8
+  add $1,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
+mul $0,6
+add $0,3
+mul $0,3

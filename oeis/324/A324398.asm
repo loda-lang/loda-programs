@@ -1,23 +1,8 @@
 ; A324398: a(1) = 0; for n > 1, a(n) = A318458(A156552(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,0,0,1,0,1,0,1,6,0,0,1,0,1,8,9,0,1,0,1,16,1,0,1,0,1,10,1,0,1,0,1,0,1,20,9,0,1,66,1,0,1,0,1,6,1,0,1,0,0,2,1,0,1,36,1,258,1,0,1,0,1,6,41,0,1,0,1,0,1,0,17,0,1,16,1,32,1,0,1,10,1,0,1,132,1,1026,1,0,33,72,1,0,1,256,25,0,0,66,17
 
-mov $3,$0
-add $3,1
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $0,$3
-  sub $0,$5
-  mov $2,$0
-  gcd $2,$5
-  bin $2,$0
-  sub $0,1
-  seq $0,297112 ; Möbius transform of A156552.
-  mul $2,$0
-  add $4,$2
-lpe
-mov $0,$4
+seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
 mul $0,2
 sub $0,1
 lpb $0

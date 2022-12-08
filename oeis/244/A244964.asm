@@ -1,11 +1,10 @@
 ; A244964: Number of distinct generalized pentagonal numbers dividing n.
-; Submitted by Simon Strandgaard
+; Submitted by Stony666
 ; 1,2,1,2,2,2,2,2,1,3,1,3,1,3,3,2,1,2,1,3,2,3,1,3,2,3,1,3,1,4,1,2,1,2,4,3,1,2,1,4,1,3,1,3,3,2,1,3,2,3,2,3,1,2,2,3,2,2,1,5,1,2,2,2,2,3,1,2,1,6,1,3,1,2,3,2,3,3,1,4,1,2,1,4,2,2,1,3,1,4,2,3,1,2,2,3,1,3,1,4
 
 mov $2,$0
 add $2,1
 mov $4,$0
-add $4,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -18,3 +17,4 @@ lpb $4
   add $3,$1
 lpe
 mov $0,$3
+add $0,1

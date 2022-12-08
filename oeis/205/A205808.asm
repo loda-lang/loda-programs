@@ -1,12 +1,9 @@
 ; A205808: G.f.: Sum_{n=-oo..oo} q^(9*n^2 + 2*n).
-; Submitted by Frank [RKN]
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = A089801(3*n)
 
-mul $0,4
-sub $0,2
-mul $0,9
 mov $1,$0
-add $1,23
-div $1,2
-seq $1,93709 ; Characteristic function of squares or twice squares.
+mul $1,3
+seq $1,89801 ; a(n) = 0 unless n = 3j^2+2j or 3j^2+4j+1 for some j>=0, in which case a(n) = 1.
 mov $0,$1

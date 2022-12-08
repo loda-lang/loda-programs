@@ -10,11 +10,11 @@ lpb $0
   max $6,1
   mov $4,$2
   lpb $4
-    mov $9,10
-    add $9,$5
     mov $8,$4
     mod $8,2
     mul $8,3
+    mov $9,10
+    add $9,$5
     sub $4,1
     mov $7,1
     add $7,$0

@@ -30,11 +30,13 @@ A007088: The binary numbers (or binary words, or binary vectors, or binary expan
 A007423: a(n) = mu(n) + 1, where mu is the Moebius function.
 A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+A008331: a(n) = phi(prime(n)+1).
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008864: a(n) = prime(n) + 1.
 A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
 A014303: a(n) = prime(n)*(prime(n+1)-1)/2.
 A014683: In the sequence of positive integers add 1 to each prime number.
+A014688: a(n) = n-th prime + n.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
 A014690: a(n) = n + prime(n+1).
 A014692: a(n) = prime(n) - (n-1).
@@ -50,6 +52,7 @@ A023590: Greatest prime divisor of 2*prime(n)+1.
 A026945: A bisection of the Motzkin numbers A001006.
 A030078: Cubes of primes.
 A031336: a(n) = prime(3*n).
+A031339: a(n) = prime(6*n).
 A031340: a(n) = prime(7*n).
 A031359: Bisection of A001615.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
@@ -263,6 +266,7 @@ A130718: 2*(prime(n)-2)!.
 A131426: a(n) = 2*prime(n) - 3.
 A132227: a(n) = 3*prime(n) - 5.
 A133037: Squares of members of the Padovan sequence A000931.
+A133042: Cubes of partition numbers.
 A133053: Squares of Motzkin numbers.
 A135282: Largest k such that 2^k appears in the trajectory of the Collatz 3x+1 sequence started at n.
 A135481: a(n) = 2^A007814(n+1) - 1.

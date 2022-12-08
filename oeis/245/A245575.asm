@@ -1,5 +1,5 @@
 ; A245575: Number of ways of writing n as the sum of two quarter-squares (cf. A002620).
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,3,2,3,2,4,2,3,2,4,2,3,4,2,2,4,2,5,0,4,4,4,0,3,4,4,2,2,4,2,4,5,0,4,0,6,4,2,2,3,2,6,2,2,4,4,0,4,2,5,4,2,2,2,4,4,2,6,0,3,4,4,0,2,6,4,2,4,2,2,0,7,4,4,0,6,0,4,2,2,6,2,2,5,4,2,2,2,2,4,4,6,2,4,0,2,4,3,2
 
 add $0,1
@@ -20,8 +20,8 @@ lpb $0
     cmp $7,$8
     mov $9,10
     add $9,$5
-    sub $4,$0
     mul $7,$$9
+    gcd $4,$0
     add $5,1
     add $6,$7
   lpe

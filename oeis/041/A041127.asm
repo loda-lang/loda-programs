@@ -12,8 +12,6 @@ lpb $0
   dif $2,8
   mul $2,16
 lpe
-mul $2,2
 mov $0,$2
-sub $0,32
+mul $0,2
 div $0,32
-add $0,1

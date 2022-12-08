@@ -8,7 +8,6 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
   seq $3,127473 ; a(n) = phi(n)^2.
   dif $3,2
   gcd $3,4
@@ -16,6 +15,7 @@ lpb $2
   cmp $3,5
   sub $0,$3
   add $1,1
+  mov $3,$1
   mov $4,$0
   max $4,0
   cmp $4,$0

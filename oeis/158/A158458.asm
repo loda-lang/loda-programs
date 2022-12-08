@@ -7,10 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,64800 ; n plus the number of its prime factors: a(n) = n + A001222(n).
-  sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  seq $3,222312 ; a(n) = n + A001222(n) - 1.
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
   mov $4,$0
@@ -19,5 +17,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
+add $1,$4
 mov $0,$1
-add $0,1

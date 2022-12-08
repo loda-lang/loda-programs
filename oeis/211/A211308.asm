@@ -6,7 +6,6 @@ mov $3,$0
 bin $3,2
 add $3,$0
 add $3,$0
-mov $1,2
 mov $2,$0
 lpb $2
   sub $2,1
@@ -39,4 +38,4 @@ lpb $2
   add $1,$9
 lpe
 mov $0,$1
-sub $0,1
+add $0,1

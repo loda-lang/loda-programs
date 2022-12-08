@@ -1,8 +1,10 @@
 ; A188432: Fixed point of the morphism 0->001, 1->01.
-; Submitted by damotbe
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
+; Formula: a(n) = A284394(3*max(n,1)+1)%2
 
-trn $0,1
-seq $0,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+max $0,1
+mul $0,3
 add $0,1
+seq $0,284394 ; {101->2}-transform of the infinite Fibonacci word A003849.
 mod $0,2

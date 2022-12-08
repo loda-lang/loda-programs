@@ -1,6 +1,7 @@
 ; A181836: The product of primes <= n that are strongly prime to n.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,1,1,3,1,5,15,35,7,21,35,385,165,143,1001,15015,5005,85085,51051,46189,20995,440895,1616615,7436429,1716099,2860165,5311735,15935205,7436429,215656441,3234846615
+; Formula: a(n) = A121566(max(n-2,0))/gcd(A195859(n),A121566(max(n-2,0)))
 
 mov $1,$0
 seq $1,195859 ; n^8-n

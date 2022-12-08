@@ -1,5 +1,5 @@
 ; A088420: Number of primes in arithmetic progression starting with 3 and with d = 2n.
-; Submitted by Kotenok2000
+; Submitted by Athlici
 ; 3,3,1,3,3,1,3,2,1,3,1,1,2,3,1,1,3,1,3,3,1,2,1,1,3,1,1,2,2,1,1,3,1,3,2,1,1,2,1,3,1,1,2,1,1,1,3,1,3,2,1,3,2,1,3,1,1,1,1,1,1,3,1,2,1,1,3,2,1,1,1,1,2,2,1,1,3,1,1,2,1,3,1,1,2,1,1,2,3,1,1,1,1,3,3,1,2,2,1,1
 
 mov $2,$0
@@ -18,7 +18,7 @@ lpb $3
     lpb $6
       mov $4,$1
       mod $4,$5
-      add $5,1
+      add $5,2
       sub $6,$4
     lpe
     div $1,$5

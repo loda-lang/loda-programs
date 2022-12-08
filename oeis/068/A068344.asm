@@ -1,10 +1,18 @@
 ; A068344: Square array read by antidiagonals of T(n,k) = sign(n-k).
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,-1,1,-1,0,1,-1,-1,1,1,-1,-1,0,1,1,-1,-1,-1,1,1,1,-1,-1,-1,0,1,1,1,-1,-1,-1,-1,1,1,1,1,-1,-1,-1,-1,0,1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,-1,-1,-1,0,1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,0,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,1,1
 
 lpb $0
+  mov $4,1
   mov $2,$0
-  seq $2,119900 ; Triangle read by rows: T(n,k) is the number of binary words of length n with k strictly increasing runs, for 0<=k<=n.
+  mul $2,2
+  lpb $2
+    sub $2,$4
+    add $4,1
+    sub $2,$4
+  lpe
+  bin $4,$2
+  mov $2,$4
   sub $2,1
   add $3,1
   mod $0,$3

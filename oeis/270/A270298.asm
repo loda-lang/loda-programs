@@ -1,25 +1,10 @@
 ; A270298: Numbers which are representable as a sum of eight but no fewer consecutive nonnegative integers.
-; Submitted by Vato
+; Submitted by USTL-FIL (Lille Fr)
 ; 44,52,68,76,92,116,124,148,164,172,188,212,236,244,268,284,292,316,332,356,388,404,412,428,436,452,484,508,524,548,556,572,596,604,628,652,668,676,692,716,724,748,764,772,788,796,836,844,884,892,908,916,932,956,964,988,1004,1012,1028,1052,1076,1084,1108,1124,1132,1156,1172,1196,1228,1244,1252,1268,1276,1292,1324,1348,1364,1388,1396,1412,1436,1444,1468,1492,1508,1516,1532,1556,1564,1588,1604,1612,1628,1636,1676,1684,1724,1732,1748,1756
+; Formula: a(n) = 4*A008364(n+1)
 
-mov $1,12
-mov $2,$0
-pow $2,2
-add $2,12
-lpb $2
-  mov $3,$1
-  seq $3,214962 ; a(n) is the least m > 0 such that Fibonacci(n-m) divides Fibonacci(2n+2m).
-  add $3,1
-  gcd $3,2
-  sub $0,$3
-  add $0,1
-  add $1,4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
+mov $1,$0
+add $1,1
 mov $0,$1
-mul $0,2
-add $0,4
+seq $0,8364 ; 11-rough numbers: not divisible by 2, 3, 5 or 7.
+mul $0,4

@@ -13,7 +13,11 @@ lpb $0
   lpb $2
     mov $5,$2
     trn $5,1
-    seq $5,25834 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^12)).
+    seq $5,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
+    mov $6,$5
+    pow $5,2
+    add $5,$6
+    div $5,2
     trn $2,10
     add $4,$5
   lpe

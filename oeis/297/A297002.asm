@@ -1,5 +1,5 @@
 ; A297002: Completely multiplicative with a(prime(k)) = prime(2 * k) (where prime(k) denotes the k-th prime).
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,3,7,9,13,21,19,27,49,39,29,63,37,57,91,81,43,147,53,117,133,87,61,189,169,111,343,171,71,273,79,243,203,129,247,441,89,159,259,351,101,399,107,261,637,183,113,567,361,507,301,333,131,1029,377,513,371,213,139,819,151,237,931,729,481,609,163,387,427,741,173,1323,181,267,1183,477,551,777,193,1053,2401,303,199,1197,559,321,497,783,223,1911,703,549,553,339,689,1701,229,1083,1421,1521
 
 mov $1,1
@@ -16,7 +16,10 @@ lpb $0
   lpe
   mov $3,$2
   sub $3,1
-  seq $3,73881 ; a(n) = smallest number m (obviously prime) such that pi(m) = 2*pi(n).
+  seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+  mul $3,2
+  sub $3,1
+  seq $3,6005 ; The odd prime numbers together with 1.
   lpb $0
     dif $0,$2
     mul $1,$3

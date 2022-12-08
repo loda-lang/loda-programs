@@ -1,6 +1,28 @@
 ; A030458: Primes formed by concatenating n with n+1.
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 23,67,89,1213,3637,4243,5051,5657,6263,6869,7879,8081,9091,9293,9697,102103,108109,120121,126127,138139,150151,156157,180181,186187,188189,192193,200201,216217,242243,246247,252253,270271,276277,278279,300301,308309,312313,318319,330331,338339,342343,350351,362363,368369,378379,390391,402403,410411,416417,420421,426427,428429,432433,438439,440441,446447,450451,452453,456457,470471,476477,482483,500501,506507,516517,522523,530531,540541,546547,552553,560561,566567,572573,576577,600601,602603
 
-seq $0,30457 ; Numbers k such that k concatenated with k+1 is prime.
-seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
+mov $2,$0
+add $2,5
+pow $2,2
+lpb $2
+  add $3,$1
+  add $3,1
+  mov $1,$3
+  mov $5,$3
+  lpb $5
+    div $5,10
+    mul $3,10
+  lpe
+  add $3,$1
+  mov $6,$3
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$6
+add $0,1

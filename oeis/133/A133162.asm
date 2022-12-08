@@ -1,6 +1,13 @@
 ; A133162: Trajectory of 1 under the morphism 1 -> {1,1,2,1}, 2 -> {2}.
-; Submitted by [AF] Kalianthys
+; Submitted by Stony666
 ; 1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1
 
-seq $0,49320 ; Non-primitive Chacon sequence: fixed under 0->0010, 1->1.
+mov $2,1
+lpb $0
+  sub $0,1
+  mov $1,$2
+  seq $1,189640 ; Fixed point of the morphism 0->001, 1->101.
+  sub $0,$1
+  add $2,1
+lpe
 add $0,1

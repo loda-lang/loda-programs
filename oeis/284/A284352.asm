@@ -1,8 +1,26 @@
 ; A284352: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
-; Submitted by Orange Kid
+; Submitted by Landjunge
 ; 1,10,111,1011,11111,101111,1111111,10111111,111111111,1011111111,11111111111,101111111111,1111111111111,10111111111111,111111111111111,1011111111111111,11111111111111111,101111111111111111,1111111111111111111,10111111111111111111,111111111111111111111,1011111111111111111111,11111111111111111111111,101111111111111111111111,1111111111111111111111111,10111111111111111111111111,111111111111111111111111111,1011111111111111111111111111,11111111111111111111111111111,101111111111111111111111111111
 
+mov $2,$0
 add $0,1
-seq $0,290660 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-div $0,10
+lpb $0
+  sub $0,1
+  mul $1,10
+  mov $3,$2
+  sub $3,$0
+  mov $4,0
+  mov $5,$3
+  mov $6,$3
+  lpb $6
+    pow $5,2
+    sub $5,1
+    mov $4,1
+    add $4,$0
+    mov $6,$5
+  lpe
+  mod $4,2
+  cmp $4,0
+  add $1,$4
+lpe
+mov $0,$1

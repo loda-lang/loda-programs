@@ -1,8 +1,13 @@
 ; A222067: Decimal expansion of 1/(8*sqrt(3)).
-; Submitted by Jamie Morken(s4)
+; Submitted by USTL-FIL (Lille Fr)
 ; 7,2,1,6,8,7,8,3,6,4,8,7,0,3,2,2,0,5,6,3,6,4,3,5,9,7,5,6,2,7,4,4,6,8,1,9,5,5,9,5,0,2,1,8,9,0,8,7,6,5,8,5,9,5,0,2,3,2,5,2,9,0,8,1,0,4,9,7,2,0,9,0,3,7,8,6,6,6,6,8,2,1,1,7,1,4,4,2,4,4,4,8,2,1,8,6,9,0,6,5
+; Formula: a(n) = (2*((A011549(n+2)/24)%10)-2)/2+1
 
 add $0,2
 seq $0,11549 ; Decimal expansion of sqrt(3) truncated to n places.
 div $0,24
 mod $0,10
+mul $0,2
+sub $0,2
+div $0,2
+add $0,1

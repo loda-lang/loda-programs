@@ -1,17 +1,12 @@
 ; A183137: [1/s]+[2/s]+...+[n/s], where s=(golden ratio)^2 and []=floor.
-; Submitted by Penguin
+; Submitted by rajab
 ; 0,0,1,2,3,5,7,10,13,16,20,24,28,33,38,44,50,56,63,70,78,86,94,103,112,121,131,141,152,163,174,186,198,210,223,236,250,264,278,293,308,324,340,356,373,390,407,425,443,462,481,500,520,540,561,582,603,625
 
-mov $1,$0
-add $1,1
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  seq $0,66096 ; Duplicate values in A060143.
-  add $3,$1
-  sub $3,$0
+add $0,1
+lpb $0
+  mov $2,$0
+  seq $2,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

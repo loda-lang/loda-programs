@@ -13,7 +13,7 @@ lpb $2
   lpb $3
     gcd $5,3
     mov $6,$3
-    div $6,4
+    div $6,5
     lpb $6
       mov $4,$3
       mod $4,$5

@@ -1,21 +1,13 @@
 ; A123324: Number of integer-sided triangles with all sides <= n and sides relatively prime.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,2,5,9,17,24,39,53,74,94,129,155,203,242,294,346,426,483,582,658,760,855,998,1098,1258,1390,1561,1711,1935,2083,2338,2538,2788,3012,3312,3534,3894,4173,4521,4817,5257,5551,6034,6404,6848,7255,7830,8222,8831,9291,9883,10399,11127,11622,12362,12950,13688,14332,15231,15815,16775,17510,18392,19176,20208,20938,22093,22973,24051,24927,26222,27098,28466,29510,30730,31828,33298,34318,35917,37085,38570,39850,41613,42777,44537,45944,47652,49112,51136,52444,54496,56102,58052,59731,61927,63479,65879,67664
 
-mov $3,$0
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $0,$3
-  sub $0,$5
-  mov $2,$0
-  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  mul $0,2
-  mov $1,$2
-  seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
-  add $1,$0
-  add $4,$1
-lpe
-mov $0,$4
-div $0,4
 add $0,1
+lpb $0
+  mov $2,$0
+  trn $2,1
+  seq $2,123323 ; Number of integer-sided triangles with maximum side n, with sides relatively prime.
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1

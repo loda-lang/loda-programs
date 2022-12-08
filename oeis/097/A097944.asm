@@ -1,11 +1,10 @@
 ; A097944: Number of digits in n-th prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+; Formula: a(n) = A055642(A173919(2*n))
 
-seq $0,6005 ; The odd prime numbers together with 1.
+mul $0,2
+seq $0,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$0
-lpb $1
-  div $1,10
-  add $2,1
-lpe
-mov $0,$2
+seq $1,55642 ; Number of digits in the decimal expansion of n.
+mov $0,$1

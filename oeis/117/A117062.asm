@@ -1,15 +1,22 @@
 ; A117062: Hexagonal numbers for which the sum of the digits is also a hexagonal number.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,6,15,231,276,780,861,1653,1770,2850,3003,4371,4560,5995,6216,6441,11175,14028,17205,17578,20301,20706,24090,24531,24976,28203,32640,33153,36856,37401,43071,47278,52975,54946,56953,67528,69751,76636,80601,83845,88831,91378,93961,96580,99235,102831,103740,111156,112101,118828,127765,166753,173755,184528,188191,191890,195625,200661,201930,212226,213531,218791,222778,224115,234955,239086,247456,251695,255970,264628,282376,286903,291466,296065,302253,303810,316410,318003,329266,332520,339076
 
 mov $5,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,0
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  lpb $3
+    mov $7,$3
+    mod $7,10
+    div $3,10
+    add $6,$7
+  lpe
+  mov $3,$6
   trn $3,1
-  seq $3,124732 ; Triangle P*M, where P is the Pascal triangle written as an infinite lower triangular matrix and M is the infinite bidiagonal matrix with (1,2,1,2,...) in the main diagonal and (2,1,2,1,...) in the subdiagonal.
+  seq $3,104583 ; Triangle read by rows: T(i,j) is the (i,j)-entry (1 <= j <= i) of the product A*B of the matrices A = [1; 3,1; 5,3,1; 7,5,3,1; ...]; B = [1; 1,2; 1,2,1; 1,2,1,2; ...] (both infinite lower triangular matrices).
   cmp $3,1
   sub $0,$3
   add $1,$5

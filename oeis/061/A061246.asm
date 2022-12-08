@@ -6,7 +6,6 @@ mov $1,1
 mov $2,$0
 add $2,2
 pow $2,2
-mul $2,2
 lpb $2
   mov $3,$1
   seq $3,46030 ; Digits are squares.
@@ -14,7 +13,7 @@ lpb $2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -22,7 +21,4 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
-mul $0,2
-sub $0,20
-div $0,2
-add $0,11
+add $0,1

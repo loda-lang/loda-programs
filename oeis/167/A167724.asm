@@ -7,9 +7,10 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,3
+  add $3,5
   pow $3,2
   mov $5,$3
+  bin $5,$4
   mov $6,$3
   seq $3,40297 ; Continued fraction for sqrt(315).
   mul $3,5

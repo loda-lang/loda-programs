@@ -1,4 +1,4 @@
-; A099555: Triangle, read by rows, where T(n,k) = (n-[k/2])^k and [k/2] is the integer floor of k/2, for 2n>=k>=0.
+; A099555: Triangle, read by rows, where T(n,k) = (n-floor(k/2))^k for k = 0..2*n.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,2,1,1,1,3,4,8,1,1,1,4,9,27,16,32,1,1,1,5,16,64,81,243,64,128,1,1,1,6,25,125,256,1024,729,2187,256,512,1,1,1,7,36,216,625,3125,4096,16384,6561,19683,1024,2048,1,1,1,8,49,343,1296,7776,15625,78125,65536
 

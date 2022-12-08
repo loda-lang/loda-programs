@@ -1,9 +1,14 @@
 ; A278597: One half of A278481.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,2,2,3,2,2,3,3,2,2,3,3,3,2,2,3,3,3,3,2,2,3,3,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3
 
 lpb $0
-  seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  lpb $0
+    add $1,1
+    sub $0,$1
+  lpe
+  bin $1,$0
+  mov $0,$1
   pow $0,2
 lpe
 lpb $0

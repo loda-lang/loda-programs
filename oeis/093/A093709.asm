@@ -1,8 +1,13 @@
 ; A093709: Characteristic function of squares or twice squares.
-; Submitted by damotbe
+; Submitted by ChelseaOilman
 ; 1,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = A001227(max(n-1,0))%2
+; Formula: a(n) = ((A054844(max(n-1,0))-2)/2+1)%2
 
-trn $0,1
-seq $0,1227 ; Number of odd divisors of n.
+mov $1,$0
+trn $1,1
+seq $1,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+mov $0,$1
+sub $0,2
+div $0,2
+add $0,1
 mod $0,2

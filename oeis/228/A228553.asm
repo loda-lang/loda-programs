@@ -1,5 +1,5 @@
 ; A228553: Sum of the products formed by multiplying together the smaller and larger parts of each Goldbach partition of 2n.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Kotenok2000
 ; 0,4,9,15,46,35,82,94,142,142,263,357,371,302,591,334,780,980,578,821,1340,785,1356,1987,1512,1353,2677,1421,2320,4242,1955,2803,4362,1574,4021,5298,4177,4159,6731,4132,5593,9808,4873,5260,13161,4572,7373,11129,5835,9650,14392,8347,9818,14512,10334,12465,20390,10346,12858,28932,10492,12551,28934,9165,19431,28059,17006,14939,25924,23133,24616,36349,22470,18119,48552,12708,27448,43633,19793,32320,42710,20543,26186,59915,36953,30858,54523,33249,34315,76234,30386,35968,69305,28079,47720,67429,38199
 
 add $0,1
@@ -16,7 +16,8 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+    seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+    mul $7,$4
     mov $9,10
     add $9,$5
     sub $4,$0
