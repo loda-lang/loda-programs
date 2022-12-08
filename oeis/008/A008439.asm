@@ -9,10 +9,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  add $2,1
+  seq $2,2131 ; Sum of divisors d of n such that n/d is odd.
   add $1,$2
-  sub $1,1
   mov $3,2
   add $3,$4
   add $4,2

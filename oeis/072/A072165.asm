@@ -1,9 +1,8 @@
 ; A072165: Values of Moebius function of the products of two (not necessarily distinct) primes (semiprimes or 2-almost primes, A001358).
-; Submitted by Orange Kid
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (A010055(A186621(n))+1)%2
+; Formula: a(n) = A067029(A186621(n))%2
 
 seq $0,186621 ; Semiprimes - 1.
-seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
-add $0,1
+seq $0,67029 ; Exponent of least prime factor in prime factorization of n, a(1)=0.
 mod $0,2

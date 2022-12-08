@@ -1,14 +1,17 @@
 ; A018366: Divisors of 272.
-; Submitted by Jamie Morken(s3)
+; Submitted by Science United
 ; 1,2,4,8,16,17,34,68,136,272
 
-add $0,1
+mov $1,1
 lpb $0
-  mov $2,$0
-  seq $2,5010 ; a(n) = 9*2^n.
-  trn $0,5
-  div $1,2
+  sub $0,1
+  add $2,1
+  div $2,$1
+  add $2,$1
   add $1,$2
+  gcd $1,31
+  mul $2,2
 lpe
-div $1,18
-mov $0,$1
+mov $0,$2
+div $0,4
+add $0,1

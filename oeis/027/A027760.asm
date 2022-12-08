@@ -1,18 +1,25 @@
 ; A027760: Denominator of Sum_{p prime, p-1 divides n} 1/p.
-; Submitted by Skillz
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,6,2,30,2,42,2,30,2,66,2,2730,2,6,2,510,2,798,2,330,2,138,2,2730,2,6,2,870,2,14322,2,510,2,6,2,1919190,2,6,2,13530,2,1806,2,690,2,282,2,46410,2,66,2,1590,2,798,2,870,2,354,2,56786730,2,6,2,510,2,64722,2,30,2,4686,2,140100870,2,6,2,30,2,3318,2,230010,2,498,2,3404310,2,6,2,61410,2,272118,2,1410,2,6,2,4501770,2,6,2,33330
 
-mov $4,$0
+mov $2,$0
+add $2,1
 mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  gcd $1,$4
+  bin $1,$0
+  seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  mul $0,$3
+  mul $1,$0
+  max $3,$1
 lpe
-div $1,$5
-mov $0,$1
+mov $0,$3
+mul $0,5
+sub $0,10
+div $0,5
+add $0,2

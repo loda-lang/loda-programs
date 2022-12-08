@@ -1,21 +1,23 @@
 ; A024897: Numbers k such that 5*k + 4 is prime.
-; Submitted by DoctorNow
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,5,11,15,17,21,27,29,35,39,45,47,53,69,71,75,77,81,83,87,89,95,99,101,113,119,123,131,141,143,147,153,161,165,167,171,183,185,201,203,207,209,213,221,225,245,249,251,255,257,263,279,281,285,287,291,297,299,309,311,315,321,323,333,339,341,351,357,375,377,389,395,399,405,407,413,417,419,425,435,447,453,461,467,477,479,491,507,509,515,521,531,537,539,543,545,549,557,563,575
 
-add $0,1
-mov $1,-2
-mov $3,11
 mov $2,$0
-pow $2,4
+add $2,6
+pow $2,3
 lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mov $3,$1
+  trn $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,10
-  sub $2,$0
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,18
+  add $5,1
+  mov $1,$5
+  mul $1,5
 lpe
-mov $0,$1
-sub $0,10
-div $0,10
-mul $0,2
-add $0,3
+mov $0,$5
+sub $0,1

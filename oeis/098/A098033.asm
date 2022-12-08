@@ -1,13 +1,16 @@
 ; A098033: Parity of p*(p+1)/2 for n-th prime p.
-; Submitted by LM
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,0,1,0,0,1,1,1,1,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1
 
-mov $1,2
+mov $1,-1
+add $0,1
 lpb $0
   sub $0,1
-  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
   add $1,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
-div $1,2
 mov $0,$1
+sub $0,3
+div $0,2
+add $0,2
 mod $0,2

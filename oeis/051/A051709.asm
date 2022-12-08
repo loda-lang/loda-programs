@@ -1,10 +1,10 @@
 ; A051709: a(n) = sigma(n) + phi(n) - 2n.
-; Submitted by Jamie Morken(s2)
+; Submitted by Science United
 ; 0,0,0,1,0,2,0,3,1,2,0,8,0,2,2,7,0,9,0,10,2,2,0,20,1,2,4,12,0,20,0,15,2,2,2,31,0,2,2,26,0,24,0,16,12,2,0,44,1,13,2,18,0,30,2,32,2,2,0,64,0,2,14,31,2,32,0,22,2,28,0,75,0,2,14,24,2,36,0,58,13,2,0,80,2,2,2,44,0,78,2,28,2,2,2,92,0,17,18,57
+; Formula: a(n) = 2*(-n)+(A065387(n)-2)
 
-mov $1,$0
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-seq $1,237588 ; Sigma(n) - 2n + 1.
-add $1,$0
-mov $0,$1
-sub $0,1
+sub $1,$0
+mul $1,2
+seq $0,65387 ; a(n) = sigma(n) + phi(n).
+sub $0,2
+add $0,$1

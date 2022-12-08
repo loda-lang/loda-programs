@@ -1,11 +1,10 @@
 ; A049716: a(n) = 2*n + 1 - prevprime(2*n + 1).
-; Submitted by ProfBuzz
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,2,4,2,2,4,2,2,4,2,4,6,2,2,4,6,2,4,2,2,4,2,4,6,2,4,6,2,2,4,6,2,4,2,2,4,6,2,4,2,4,6,2,4,6,8,2,4,2,2,4,2,2,4,2,4,6,8,10,12,14,2,4,2,4,6,2,2,4,6,8,10,2,2,4,6,2,4,6,2,4,2,4,6,2,4,6,2,2,4,6,8,10,2,2,4,2,2
-; Formula: a(n) = (7030*A308050(2*n)-14060)/7030+1
+; Formula: a(n) = A308050(2*n)-1
 
-mul $0,2
-seq $0,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
-mul $0,7030
-sub $0,14060
-div $0,7030
-add $0,1
+mov $1,$0
+mul $1,2
+seq $1,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
+mov $0,$1
+sub $0,1

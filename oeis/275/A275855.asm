@@ -1,5 +1,5 @@
 ; A275855: Platinum mean sequence: fixed point of the morphism 0 -> 0001, 1 -> 001.
-; Submitted by damotbe
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0
 
 lpb $0
@@ -8,13 +8,6 @@ lpb $0
   sub $0,1
 lpe
 lpb $0
-  sub $0,1
-  add $1,$0
-  min $0,4
+  add $0,1
+  div $0,2
 lpe
-lpb $1
-  sub $0,1
-  mov $1,$0
-  div $1,$0
-lpe
-mov $0,$1

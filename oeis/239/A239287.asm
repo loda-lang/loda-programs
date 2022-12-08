@@ -1,8 +1,19 @@
 ; A239287: Triangle T(n,k), 0 <= k <= n, read by rows: T(n,k) = floor(n/2) - min(k,n-k).
-; Submitted by Gunnar Hjern
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,1,0,1,1,0,0,1,2,1,0,1,2,2,1,0,0,1,2,3,2,1,0,1,2,3,3,2,1,0,0,1,2,3,4,3,2,1,0,1,2,3,4,4,3,2,1,0,0,1,2,3,4,5,4,3,2,1,0,1,2,3,4,5,5,4,3,2,1,0,0,1,2,3,4,5,6,5,4,3,2,1,0,1,2,3,4,5,6,6,5,4,3,2,1,0,0,1
-; Formula: a(n) = gcd(A114327(n),A114327(n))/2
 
-seq $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
-gcd $0,$0
+mov $1,1
+mul $0,2
+lpb $0
+  sub $0,$1
+  add $1,1
+  sub $0,$1
+lpe
+add $1,2
 div $0,2
+add $0,1
+lpb $0
+  sub $0,$1
+  gcd $0,$0
+lpe
+sub $0,1

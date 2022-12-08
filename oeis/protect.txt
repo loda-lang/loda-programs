@@ -1,7 +1,9 @@
 A000065: -1 + number of partitions of n.
+A001247: Squares of Bell numbers.
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 A001248: Squares of primes.
+A001348: Mersenne numbers: 2^p - 1, where p is prime.
 A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
 A001748: 3 * primes.
 A001749: Primes multiplied by 4.
@@ -48,10 +50,12 @@ A023590: Greatest prime divisor of 2*prime(n)+1.
 A026945: A bisection of the Motzkin numbers A001006.
 A030078: Cubes of primes.
 A031336: a(n) = prime(3*n).
+A031340: a(n) = prime(7*n).
 A031359: Bisection of A001615.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031370: a(n) = prime(4n-1).
+A031374: a(n) = prime(8*n - 1).
 A031377: a(n) = prime(3n-2).
 A031378: a(n) = prime(4*n - 2).
 A031379: a(n) = prime(5*n - 2).
@@ -63,6 +67,7 @@ A031392: a(n) = prime(5*n-4).
 A031906: a(n) = prime(6*n - 5).
 A031908: a(n) = prime(8*n - 5).
 A031911: a(n) = prime(7*n - 6).
+A031914: a(n) = prime(10*n - 6).
 A031915: a(n) = prime(8*n - 7).
 A031918: a(n) = prime(9*n-8).
 A031919: a(n) = prime(10*n-8).
@@ -128,6 +133,7 @@ A062981: a(n) = n^phi(n).
 A063439: a(n) = phi(n)^phi(n).
 A065073: n-th prime + sum of digits of n-th prime.
 A065313: a(n) = Pi(n*Pi(n)).
+A065995: a(n) = prime(prime(n) + n).
 A066872: p^2 + 1 as p runs through the primes.
 A068096: a(n) = F(L(n)) where F(n) = n-th Fibonacci number and L(n) = n-th Lucas number.
 A068503: Highest power of 3 dividing prime(n)-1.

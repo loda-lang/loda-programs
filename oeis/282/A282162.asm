@@ -1,11 +1,9 @@
 ; A282162: Difference sequence of the upper Wythoff sequence, A001950, with 2 prepended.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2
+; Formula: a(n) = A284394(3*n+1)+1
 
-lpb $0
-  mov $1,$0
-  seq $1,114986 ; Characteristic function of (A000201 prefixed with 0).
-  sub $0,1
-lpe
-mov $0,$1
-add $0,2
+mul $0,3
+add $0,1
+seq $0,284394 ; {101->2}-transform of the infinite Fibonacci word A003849.
+add $0,1

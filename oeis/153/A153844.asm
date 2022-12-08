@@ -1,6 +1,7 @@
 ; A153844: First Sunday in n-th month of 365-day year starting on Friday
 ; Submitted by PDW
 ; 3,7,7,4,2,6,4,1,5,3,7,5
+; Formula: a(n) = (A153841(n%16)+17)%7+1
 
 mod $0,16
 seq $0,153841 ; First Sunday in n-th month of 365-day year starting on Tuesday

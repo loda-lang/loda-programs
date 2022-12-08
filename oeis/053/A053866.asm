@@ -1,11 +1,7 @@
 ; A053866: Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
-; Submitted by Christian Krause
+; Submitted by Stony666
 ; 1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+; Formula: a(n) = A001157(n)%2
 
-lpb $0
-  sub $0,1
-  mul $0,2
-  dif $0,4
-lpe
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
 mod $0,2

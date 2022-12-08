@@ -1,16 +1,11 @@
 ; A213729: Sequence A179016 reduced modulo 2.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,0,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,0,0,0,1,0,1,1,0,0,1,1,1,0,1,1,0,1,0,0,0,0,1,1,0,1,1,1,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,0,0,0,0,1,1,0,1,1,1,1,1,1,0,0,1,0,1
 
-mov $2,$0
-pow $2,3
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,213719 ; Characteristic function for A179016.
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+lpb $0
+  seq $0,179016 ; The infinite trunk of binary beanstalk: The only infinite sequence such that a(n-1) = a(n) - number of 1's in binary representation of a(n).
+  mov $1,$0
+  mul $0,0
 lpe
 mov $0,$1
 mod $0,2

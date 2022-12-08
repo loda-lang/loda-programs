@@ -1,22 +1,23 @@
 ; A036349: Numbers whose sum of prime factors (taken with multiplicity) is even.
-; Submitted by PDW
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,4,8,9,15,16,18,21,25,30,32,33,35,36,39,42,49,50,51,55,57,60,64,65,66,69,70,72,77,78,81,84,85,87,91,93,95,98,100,102,110,111,114,115,119,120,121,123,128,129,130,132,133,135,138,140,141,143,144,145,154,155,156,159,161,162,168,169,170,174,177,182,183,185,186,187,189,190,196,200,201,203,204,205,209,213,215,217,219,220,221,222,225,228,230,235,237,238,240
 
 mov $2,$0
-pow $2,2
+add $2,6
+pow $2,3
 lpb $2
+  sub $2,60
   mov $3,$1
-  seq $3,166660 ; Totally multiplicative sequence with a(p) = 2p+1 for prime p.
-  sub $3,1
+  seq $3,23889 ; Sum of the prime power divisors of n (not including 1).
+  mul $3,338
   gcd $3,4
-  cmp $3,4
+  add $3,1
+  cmp $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
-add $0,1

@@ -1,9 +1,11 @@
 ; A097944: Number of digits in n-th prime.
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
-seq $0,40 ; The prime numbers.
-lpb $0
-  div $0,10
-  add $1,1
+seq $0,6005 ; The odd prime numbers together with 1.
+mov $1,$0
+lpb $1
+  div $1,10
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$2

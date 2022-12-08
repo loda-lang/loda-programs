@@ -1,21 +1,7 @@
 ; A108852: Number of Fibonacci numbers <= n.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Landjunge
 ; 1,3,4,5,5,6,6,6,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12
+; Formula: a(n) = A130233(n)+1
 
+seq $0,130233 ; a(n) is the maximal k such that Fibonacci(k) <= n (the "lower" Fibonacci Inverse).
 add $0,1
-mov $3,$0
-mul $3,6
-lpb $3
-  lpb $1
-    add $3,$1
-    sub $1,$0
-  lpe
-  mov $1,1
-  add $1,$5
-  add $4,2
-  mov $5,$2
-  add $2,$1
-  sub $3,1
-lpe
-mov $0,$4
-div $0,2

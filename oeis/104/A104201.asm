@@ -1,8 +1,12 @@
 ; A104201: Sums of straddle primes.
-; Submitted by ckrause
+; Submitted by USTL-FIL (Lille Fr)
 ; 8,12,18,18,18,24,30,30,30,36,42,42,42,52,52,52,52,52,60,68,68,68,68,68,78,78,78,84,90,90,90,100,100,100,100,100,112,112,112,112,112,120,128,128,128,128,128,138,138,138,144,152,152,152,152,152,162,162,162,172,172,172,172,172,186,186,186,186,186,186,186,198,198,198,204,210,210,210,216,222,222,222,240,240,240,240,240,240,240,240,240,240,240,240,240,258,258,258,268,268
-; Formula: a(n) = A011974(A073169(n)-1)
+; Formula: a(n) = (A069102(A073169(n))-2)+2
 
-seq $0,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
-sub $0,1
-seq $0,11974 ; 2 followed by the numbers that are the sum of 2 successive primes.
+mov $2,$0
+seq $2,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
+seq $2,69102 ; a(1) = 1; a(2) = 1; a(n) = Prime[n-1] + Prime[n-2] if n > 2.
+sub $2,2
+add $1,$2
+mov $0,$1
+add $0,2

@@ -1,23 +1,14 @@
 ; A178476: Permutations of 123456: Numbers having each of the decimal digits 1,...,6 exactly once, and no other digit.
-; Submitted by Science United
+; Submitted by Landjunge
 ; 123456,123465,123546,123564,123645,123654,124356,124365,124536,124563,124635,124653,125346,125364,125436,125463,125634,125643,126345,126354,126435,126453,126534,126543,132456,132465,132546,132564,132645,132654,134256,134265,134526,134562,134625,134652,135246,135264,135426,135462,135624,135642,136245,136254,136425,136452,136524,136542,142356,142365,142536,142563,142635,142653,143256,143265,143526,143562,143625,143652,145236,145263,145326,145362,145623,145632,146235,146253,146325,146352,146523
+; Formula: a(n) = (17*(A050278(n)+2)-17398765447)/17+123456
 
-mov $1,1212
-mov $2,$0
+seq $0,50278 ; Pandigital numbers: numbers containing the digits 0-9. Version 1: each digit appears exactly once.
 add $0,1
-add $2,12
-pow $2,4
-lpb $2
-  sub $2,$0
-  mov $3,$1
-  seq $3,261794 ; a(n) is the smallest nonzero number that is not a substring of n in decimal representation.
-  sub $3,1
-  cmp $3,5
-  sub $0,$3
-  add $1,1
-lpe
+mov $1,1
+add $1,$0
+mul $1,17
 mov $0,$1
-sub $0,12346
-div $0,9
-mul $0,9
+sub $0,17398765447
+div $0,17
 add $0,123456

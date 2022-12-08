@@ -1,11 +1,8 @@
 ; A001468: There are a(n) 2's between successive 1's.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1
+; Formula: a(n) = A284394(3*n+1)
 
-lpb $0
-  mov $1,$0
-  seq $1,114986 ; Characteristic function of (A000201 prefixed with 0).
-  sub $0,$1
-lpe
-mov $0,$1
+mul $0,3
 add $0,1
+seq $0,284394 ; {101->2}-transform of the infinite Fibonacci word A003849.

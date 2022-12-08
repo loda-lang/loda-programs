@@ -15,7 +15,8 @@ lpb $0
     sub $2,$7
     mov $6,$2
     max $6,0
-    seq $6,113446 ; Expansion of (phi(q)^2 - phi(q^3)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
+    seq $6,25480 ; a(2n) = n, a(2n+1) = a(n).
+    seq $6,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
     add $5,$6
     mov $7,2
     add $7,$8

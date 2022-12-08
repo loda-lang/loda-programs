@@ -9,7 +9,10 @@ lpb $1
   sub $1,1
   mov $0,$2
   sub $0,$1
-  seq $0,34460 ; a(n) = usigma(n) - n, where usigma(n) = sum of unitary divisors of n (A034448).
+  mov $3,$0
+  seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  sub $0,1
+  sub $0,$3
   sub $2,1
   add $2,$0
 lpe

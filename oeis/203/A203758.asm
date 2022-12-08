@@ -6,16 +6,14 @@ add $0,1
 mov $2,$0
 mov $3,1
 lpb $0
-  mul $3,$0
-  mul $3,$0
-  mul $3,$0
-  mul $3,$0
-  add $3,$1
+  mov $4,$0
+  pow $4,4
   sub $0,1
+  mul $3,$4
+  add $3,$1
+  mov $5,$2
+  pow $5,4
   max $1,$3
-  mul $1,$2
-  mul $1,$2
-  mul $1,$2
-  mul $1,$2
+  mul $1,$5
 lpe
 mov $0,$3

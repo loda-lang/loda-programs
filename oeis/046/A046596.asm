@@ -1,12 +1,12 @@
 ; A046596: Denominators of the 1/4-Pascal triangle (by row), excluding 2's.
-; Submitted by damotbe
+; Submitted by Science United
 ; 1,1,1,1,4,1,1,4,4,1,1,4,4,1,1,4,4,4,4,1,1,4,1,1,4,1,1,4,4,4,4,1,1,4,4,1,4,4,1,1,4,4,4,4,4,4,4,4,1,1,4,1,1,1,1,1,1,4,1,1,4,4,1,1,1,1,4,4,1,1,4,4,1,1,1,4,4,1,1,4,4,4,4,4,4,4,4,1,1,4,1,1,4,1,1,1,4,1,1,4
 
 mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
-  sub $2,16
+  sub $2,17
   mov $3,$1
   seq $3,46569 ; Denominators of the 1/4-Pascal triangle (by row).
   mov $5,$3
@@ -22,7 +22,3 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
