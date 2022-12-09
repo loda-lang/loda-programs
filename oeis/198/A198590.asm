@@ -1,23 +1,26 @@
 ; A198590: Odd numbers producing 7 odd numbers in the Collatz iteration.
-; Submitted by Landjunge
+; Submitted by USTL-FIL (Lille Fr)
 ; 9,19,37,77,81,149,163,309,321,325,331,597,625,643,653,663,713,715,1237,1251,1285,1301,1313,1325,1339,1425,1427,1431,1433,2389,2501,2573,2577,2613,2625,2627,2653,2679,2695,2851,2853,2861,2865,2867,4949,5005,5141,5155,5205,5233,5251,5253,5301,5357,5391,5701,5707,5709,5725,5729,5731,5733,9557,10005,10293,10309,10315,10453,10467,10501,10509,10513,10609,10613,10713,10717,10781,10785,11405,11413,11415,11445,11457,11459,11461,11469,19797,20021,20565,20593,20621,20631,20821,20933,21005,21009,21013
 
+mov $1,1
 mov $2,$0
-add $2,6
+add $2,3
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,171870 ; For odd numbers x, a(x) is the number of complex numbers z in the zx + 1 problem giving the same number of iterations as the 3x + 1 problem requires to reach 1.
-  add $3,1
-  cmp $3,6
+  seq $3,78719 ; Number of odd terms among n, f(n), f(f(n)), ...., 1 for the Collatz function (that is, until reaching "1" for the first time), or -1 if 1 is never reached.
+  sub $3,6
+  cmp $3,0
   sub $0,$3
-  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,3
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+sub $0,13
+div $0,3
 mul $0,2
-add $0,1
+add $0,9

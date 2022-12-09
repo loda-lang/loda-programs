@@ -1,8 +1,8 @@
 ; A080764: First differences of A049472, floor(n/sqrt(2)).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>HFR>RR] liegeus
 ; 1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1
+; Formula: a(n) = (A171588(n)+1)%2
 
 seq $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
-mov $1,$0
-cmp $1,0
-mov $0,$1
+add $0,1
+mod $0,2

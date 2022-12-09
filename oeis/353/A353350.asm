@@ -1,17 +1,8 @@
 ; A353350: a(n) = 1 if A048675(n) is a multiple of 3, otherwise 0.
-; Submitted by NOSNHOP
+; Submitted by Stony666
 ; 1,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0
 
-lpb $0
-  seq $0,195017 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} c_k*((-1)^(k-1)).
-  mod $0,3
-  dif $0,-2
-lpe
-mov $2,$0
-lpb $2
-  mov $2,1
-lpe
-add $1,$2
-add $1,1
+seq $0,332813 ; a(n) = A048675(n) mod 3.
+mov $1,$0
+cmp $1,0
 mov $0,$1
-mod $0,2

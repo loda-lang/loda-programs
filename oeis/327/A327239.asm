@@ -1,19 +1,12 @@
 ; A327239: For n >= 1, a(n) = b(n+1) - b(n) where b is A013947.
-; Submitted by biodoc
+; Submitted by Science United
 ; 3,1,2,3,3,1,2,1,3,2,1,2,3,1,2,1,2,3,3,1,2,3,2,1,2,1,3,3,1,2,3,3,1,2,1,2,3,2,1,3,3,1,2,3,3,1,2,1,3,2,1,2,3,3,1,2,1,2,3,1,2,1,3,2,1,2,1,3,3,1,2,3,2,1,3,3,2,1,2,1,3,3,1,2,3
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,13947 ; Positions of 1's in Kolakoski sequence (A000002).
-  mov $2,$3
-  mul $2,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  seq $2,78929 ; Least k > 0 such that A000002(n+k) = A000002(n).
   add $1,$2
-  mul $4,$3
-  mov $5,$0
 lpe
-sub $1,$5
-mov $0,$1
+mov $0,$2

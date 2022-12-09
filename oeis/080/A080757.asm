@@ -1,12 +1,21 @@
 ; A080757: First differences of Beatty sequence A022838(n) = floor(n sqrt(3)).
-; Submitted by Fardringle
+; Submitted by Science United
 ; 1,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,1,2,2
 
-lpb $0
-  trn $0,1
-  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
-  sub $0,1
-  mov $1,1
-lpe
-mov $0,$1
+mov $2,2
 add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  add $1,1
+  div $1,2
+  sub $3,$2
+  add $3,$1
+  add $3,$1
+  gcd $3,4
+  mul $2,2
+  add $1,$2
+  mul $2,$3
+lpe
+mov $0,$3
+div $0,2

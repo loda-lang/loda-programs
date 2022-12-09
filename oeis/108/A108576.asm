@@ -1,9 +1,9 @@
 ; A108576: Number of 3 X 3 magic squares (with distinct positive entries) having all entries < n.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by arkiss
 ; 0,0,0,0,0,0,0,0,0,8,16,40,64,96,128,184,240,320,400,504,608,744,880,1056,1232,1440,1648,1904,2160,2464,2768,3120,3472,3880,4288,4760,5232,5760,6288,6888,7488,8160,8832,9576,10320,11144,11968,12880,13792,14784,15776,16864,17952,19136,20320,21600,22880,24264,25648,27144,28640,30240,31840,33560,35280,37120,38960,40920,42880,44968,47056,49280,51504,53856,56208,58704,61200,63840,66480,69264,72048,74984,77920,81016,84112,87360,90608,94024,97440,101024,104608,108360,112112,116040,119968,124080,128192
 
 mov $3,$0
-sub $0,6
+sub $0,2
 mov $2,$0
 lpb $2
   sub $2,1
@@ -12,7 +12,8 @@ lpb $2
   add $0,1
   div $0,2
   sub $0,1
-  seq $0,108578 ; Number of 3 X 3 magic squares with magic sum 3n.
+  seq $0,108579 ; Number of symmetry classes of 3 X 3 magic squares (with distinct positive entries) having magic sum 3n.
   add $1,$0
 lpe
 mov $0,$1
+mul $0,8

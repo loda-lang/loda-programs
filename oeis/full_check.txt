@@ -465,6 +465,7 @@ A293484: The number of 7th powers in the multiplicative group modulo n.
 A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 A294926: Number of proper divisors of n that are deficient (A005100).
 A294936: Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
+A295316: a(n) = 1 if there are no even exponents in the prime factorization of n, 0 otherwise.
 A295879: Multiplicative with a(p) = 1, a(p^e) = prime(e-1) if e > 1.
 A296767: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(rises) < #(falls); see Comments.
 A296906: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.

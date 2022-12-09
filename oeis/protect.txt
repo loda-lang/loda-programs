@@ -1,8 +1,10 @@
 A000065: -1 + number of partitions of n.
-A001247: Squares of Bell numbers.
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
+A001247: Squares of Bell numbers.
 A001248: Squares of primes.
+A001255: Squares of partition numbers.
+A001317: Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.
 A001348: Mersenne numbers: 2^p - 1, where p is prime.
 A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
 A001748: 3 * primes.

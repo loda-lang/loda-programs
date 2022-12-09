@@ -4,7 +4,7 @@
 
 mov $2,$0
 add $0,1
-mov $1,616
+mov $1,825
 add $2,9
 pow $2,4
 lpb $2
@@ -19,7 +19,5 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,18
-sub $0,19674
-div $0,9
-add $0,2187
+mul $0,2
+add $0,1

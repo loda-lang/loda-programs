@@ -1,5 +1,5 @@
 ; A164901: a(1)=1, a(2) = 2. For n >=3, a(n) = the smallest integer > a(n-1) that is coprime to every sum of any two distinct earlier terms of this sequence.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,2,4,7,13,19,29,37,43,53,59,67,73,79,89,97,103,109,127,137,149,157,163,173,179,191,197,211,223,229,239,251,257,263,269,277,283,293,307,313,331,337,347,353,359,367,373,379,389,397,409,419,431,439,449,457,463,479,487,499,509,521,541,547,557,563,569,577,587,593,599,607,613,619,631,641,647,653,659,673,683,691,701,709,719,727,733,739,751,757,769,787,797,809,821,827,839,853,859,877
 
 sub $0,2
@@ -11,10 +11,8 @@ lpb $0
   add $3,5
   seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
 lpe
-mov $0,$3
-sub $0,2
+add $2,1
 mov $1,$2
 mul $1,2
-max $1,$0
-add $1,2
+max $1,$3
 mov $0,$1

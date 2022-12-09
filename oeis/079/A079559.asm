@@ -1,20 +1,7 @@
 ; A079559: Number of partitions of n into distinct parts of the form 2^j-1, j=1,2,....
-; Submitted by DominoTree
+; Submitted by [AF>HFR>RR] liegeus
 ; 1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0
+; Formula: a(n) = A108918(n)%2
 
-mov $2,4
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  gcd $3,4
-  mul $2,$3
-  div $3,2
-lpe
-mov $0,$1
-add $0,1
-mod $0,2
-add $0,2
+seq $0,108918 ; Reversed binary words in reversed lexicographic order.
 mod $0,2

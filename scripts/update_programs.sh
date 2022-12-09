@@ -65,7 +65,7 @@ for f in $files; do
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	echo
     fi
-    read -p "Update program? (Y)es, (n)o, (c)heck, all: " a
+    read -p "Update program? (Y)es, (n)o, (c)heck, c(o)mpare, all: " a
   else
     a="y"
   fi
@@ -77,6 +77,25 @@ for f in $files; do
     loda check -b $f
     echo
     git diff -U1000 -- $f
+    read -p "Update program? (Y)es, (n)o: " a
+  fi
+  if [ "$a" = "o" ] || [ "$a" = "O" ]; then
+    cp $f /tmp/updated_prog.asm
+    git checkout -- $f
+    cp $f /tmp/orig_prog.asm
+    cp /tmp/updated_prog.asm $f
+    num_terms=100
+    loda eval -b -s -t $num_terms /tmp/orig_prog.asm > /tmp/orig_eval.out
+    loda eval -b -s -t $num_terms $f > /tmp/updated_eval.out
+    readarray orig_arr < /tmp/orig_eval.out
+    readarray updated_arr < /tmp/updated_eval.out
+    echo
+    echo "Index OldSteps NewSteps"
+    for i in $(seq $num_terms); do
+      updated_steps=$(echo "${updated_arr[$i]}" | awk '{print $2}')
+      echo ${orig_arr[$i]} $updated_steps
+    done
+    git diff -- $f
     read -p "Update program? (Y)es, (n)o: " a
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then

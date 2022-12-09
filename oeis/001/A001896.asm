@@ -1,10 +1,10 @@
 ; A001896: Numerators of cosecant numbers -2*(2^(2*n - 1) - 1)*Bernoulli(2*n); also of Bernoulli(2*n, 1/2) and Bernoulli(2*n, 1/4).
 ; Submitted by [SG]KidDoesCrunch
 ; 1,-1,7,-31,127,-2555,1414477,-57337,118518239,-5749691557,91546277357,-1792042792463,1982765468311237,-286994504449393,3187598676787461083,-4625594554880206790555,16555640865486520478399,-22142170099387402072897
+; Formula: a(n) = A157779(2*n)
 
-lpb $0
-  sub $0,1
-  add $1,2
-lpe
+mov $2,2
+mul $2,$0
+mov $1,$2
 seq $1,157779 ; Numerator of Bernoulli(n, 1/2).
 mov $0,$1

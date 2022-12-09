@@ -1,9 +1,11 @@
 ; A002586: Smallest prime factor of 2^n + 1.
-; Submitted by Jon Maiga
+; Submitted by ChelseaOilman
 ; 3,5,3,17,3,5,3,257,3,5,3,17,3,5,3,65537,3,5,3,17,3,5,3,97,3,5,3,17,3,5,3,641,3,5,3,17,3,5,3,257,3,5,3,17,3,5,3,193,3,5,3,17,3,5,3,257,3,5,3,17,3,5,3,274177,3,5,3,17,3,5,3,97,3,5,3,17,3,5,3,65537,3,5,3,17,3,5,3,257,3,5,3,17,3,5,3,641,3,5,3,17
+; Formula: a(n) = A090368((2^(n+1))/2)
 
 add $0,1
 mov $1,2
 pow $1,$0
 mov $0,$1
-seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+div $0,2
+seq $0,90368 ; a(1) = 1; for n > 1, smallest divisor > 1 of 2n-1.

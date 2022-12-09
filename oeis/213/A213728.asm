@@ -1,23 +1,10 @@
 ; A213728: Binary complement of A213729.
-; Submitted by Landjunge
+; Submitted by Science United
 ; 1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1,0,0,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,0,0,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0
+; Formula: a(n) = ((A179016(n)-3)%2+2)%2
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,213719 ; Characteristic function for A179016.
-  add $3,$4
-  sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-add $0,1
+seq $0,179016 ; The infinite trunk of binary beanstalk: The only infinite sequence such that a(n-1) = a(n) - number of 1's in binary representation of a(n).
+sub $0,3
+mod $0,2
+add $0,2
 mod $0,2

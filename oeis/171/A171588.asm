@@ -1,14 +1,18 @@
 ; A171588: The Pell word: Fixed point of the morphism 0->001, 1->0.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
 
-add $0,3
+mov $2,1
+add $0,1
 lpb $0
-  sub $0,1
-  seq $0,36693 ; Number of Gaussian integers z = a + bi satisfying n-1 < |z| <= n.
-  bin $0,2
-  div $0,2
-  mod $0,2
-  add $0,1
+  mov $3,$1
+  seq $3,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+  sub $0,$3
+  add $1,1
+  mov $2,$0
+  max $2,1
+  cmp $2,$0
 lpe
-sub $0,1
+mov $0,$2
+add $0,1
+mod $0,2

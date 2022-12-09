@@ -1,9 +1,12 @@
 ; A009195: a(n) = gcd(n, phi(n)).
-; Submitted by [AF>Libristes]Maeda
+; Submitted by [AF>HFR>RR] liegeus
 ; 1,1,1,2,1,2,1,4,3,2,1,4,1,2,1,8,1,6,1,4,3,2,1,8,5,2,9,4,1,2,1,16,1,2,1,12,1,2,3,8,1,6,1,4,3,2,1,16,7,10,1,4,1,18,5,8,3,2,1,4,1,2,9,32,1,2,1,4,1,2,1,24,1,2,5,4,1,6,1,16,27,2,1,12,1,2,1,8,1,6,1,4,3,2,1,32,1,14,3,20
-; Formula: a(n) = gcd(n+1,A000010(n))
+; Formula: a(n) = gcd(n-A109606(n),n+1)
 
+mov $2,$0
+seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 mov $1,$0
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+sub $1,$2
 add $0,1
-gcd $0,$1
+gcd $1,$0
+mov $0,$1

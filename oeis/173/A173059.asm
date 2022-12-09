@@ -1,26 +1,15 @@
 ; A173059: Nonnegative numbers n such that 2*n + 17 is prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by ChelseaOilman
 ; 0,1,3,6,7,10,12,13,15,18,21,22,25,27,28,31,33,36,40,42,43,45,46,48,55,57,60,61,66,67,70,73,75,78,81,82,87,88,90,91,97,103,105,106,108,111,112,117,120,123,126,127,130,132,133,138,145,147,148,150,157,160,165,166,168,171,175,178,181,183,186,190,192,196,201,202,207,208,211,213,216,220,222,223,225,231,235,237,241,243,246,252,253,262,265,270,273,276,277,280
 
-mov $2,$0
-add $2,1
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,11
-  mov $5,$3
-  mov $3,4
-  add $3,$5
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $1,2
-  mul $2,$4
-  trn $2,1
+mov $1,4
+add $0,4
+lpb $0
+  sub $0,1
+  add $1,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $0,$1
-sub $0,2
+add $0,1
 div $0,2
+sub $0,9

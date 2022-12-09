@@ -1,9 +1,10 @@
 ; A067989: Row sums of triangle A067979; also of triangle A067990.
 ; Submitted by Jim1348
 ; 1,9,34,95,240,553,1212,2547,5195,10340,20184,38766,73451,137565,255080,468877,855288,1549583,2790510,4997895,8907481,15804634,27928464,49169100,86268325,150882993,263124862
+; Formula: a(n) = (A004799(n)*(n+2))/2
 
 mov $1,$0
-seq $1,4799 ; Self convolution of Lucas numbers.
+seq $1,4799 ; Self-convolution of Lucas numbers.
 add $0,2
 mul $0,$1
 div $0,2
