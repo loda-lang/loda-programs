@@ -1,17 +1,16 @@
 ; A054101: T(n,n-1), array T as in A054098.
-; Submitted by Christian Krause
+; Submitted by ChelseaOilman
 ; 1,3,3,11,33,145,747,4607,32873,266969,2431611,24554191,272289633,3289836257,43017800315,605289111695,9119314568457,146474344313977,2498617856687403
 
 mov $1,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $1,$4
-  mul $2,-1
-  add $2,$1
-  add $4,1
-  mul $1,$4
+lpb $0
+  sub $0,1
+  add $2,1
+  sub $3,$1
+  mul $3,-1
+  add $1,1
+  mul $1,$2
 lpe
-mov $0,$2
+mov $0,$3
 mul $0,2
 add $0,1

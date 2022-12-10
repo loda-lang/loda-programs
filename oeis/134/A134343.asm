@@ -8,15 +8,15 @@ lpb $0
   sub $0,$3
   mov $2,$0
   seq $2,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
-  mov $4,$0
-  mul $4,2
-  bin $4,2
-  lpb $4
-    sub $4,11
-    mod $4,2
+  mov $1,$0
+  mul $1,2
+  bin $1,2
+  lpb $1
+    sub $1,11
+    mod $1,2
     div $2,-1
   lpe
-  add $1,$2
+  mov $0,1
   mov $3,0
 lpe
-mov $0,$1
+mov $0,$2

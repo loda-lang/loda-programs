@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   mul $2,2
-  seq $2,25881 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^12)).
+  seq $2,25881 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^12)).
   trn $0,10
   add $1,$2
 lpe
