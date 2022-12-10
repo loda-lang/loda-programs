@@ -1,17 +1,18 @@
 ; A188037: a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Landjunge
 ; 0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0
 
-mov $1,$0
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-mov $2,$0
-mul $2,$0
-lpb $2
-  sub $2,$0
-  add $0,1
-  sub $2,$0
+mov $2,2
+lpb $0
+  sub $0,1
+  mul $2,4
+  sub $1,$2
+  add $1,1
+  div $1,4
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
 lpe
-add $0,$1
-sub $0,1
-mod $0,2
+mov $0,$3
+div $0,2

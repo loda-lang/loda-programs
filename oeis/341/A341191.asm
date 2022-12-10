@@ -1,5 +1,5 @@
 ; A341191: Number of ways to write n as an ordered sum of 2 nonzero decimal palindromes.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,2,3,4,5,6,7,8,9,8,9,8,7,6,5,4,3,2,2,0,1,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,0,3,2,2,2,2,2,2,2,2,2,0,4,2,2,2,2,2,2,2,2,2,0,5,2,2,2,2,2,2,2,2,2,0,6,2,2,2,2,2,2,2,2,2,0,7,2,2,2,2,2,2,2,2,2,0,8,2,2
 
 add $0,1
@@ -20,8 +20,8 @@ lpb $0
     cmp $7,$8
     mov $9,10
     add $9,$5
-    sub $4,$0
     mul $7,$$9
+    gcd $4,$0
     add $5,1
     add $6,$7
   lpe

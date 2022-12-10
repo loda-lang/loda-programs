@@ -1,7 +1,16 @@
 ; A010182: Continued fraction for sqrt(117).
-; Submitted by Jamie Morken(w4)
+; Submitted by Ralfy
 ; 10,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2,4,1,20,1,4,2
+; Formula: a(n) = A144330((gcd(n,2)*((16*A010144(n))/20)+gcd(n,2))-1)
 
-seq $0,40151 ; Continued fraction for sqrt(164).
-sub $0,1
-seq $0,144330 ; Triangle read by rows, A144328 * A000012
+mov $2,$0
+gcd $2,2
+mov $1,$0
+seq $1,10144 ; Continued fraction for sqrt(59).
+mul $1,16
+div $1,20
+mul $1,$2
+add $1,$2
+sub $1,1
+seq $1,144330 ; Triangle read by rows, A144328 * A000012
+mov $0,$1

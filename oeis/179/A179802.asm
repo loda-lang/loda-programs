@@ -1,20 +1,14 @@
 ; A179802: Digital root of A179545.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Stony666
 ; 3,9,3,9,3,9,3,9,3,3,9,9,3,9,3,3,3,9,9,3,9,9,3,3,9,3,9,3,9,3,9,3,3,9,3,9,9,9,3,3,3,9,3,9,3,9,9,9,3,9,3,3,9,3,3,3,3,9,9,3,9,3,9,3,9,3,9,9,3,9,3,3,9,9,9,3,3,9,3,9,3,9,3,9,9,3,3,9,3,9,3,3,9,3,9,3,3,3,9,9
+; Formula: a(n) = (4*A053188(2*(A000040(n)%3+1)^2)+5)%10
 
 seq $0,40 ; The prime numbers.
+mod $0,3
 add $0,1
-mov $1,$0
-mul $1,$0
-lpb $0
-  lpb $1
-    mov $2,$1
-    cmp $2,0
-    add $1,$2
-    add $0,1
-    div $0,$1
-    trn $1,3
-  lpe
-lpe
-mul $0,6
-add $0,3
+pow $0,2
+mul $0,2
+seq $0,53188 ; Distance from n to nearest square.
+mul $0,4
+add $0,5
+mod $0,10

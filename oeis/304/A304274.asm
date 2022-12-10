@@ -1,5 +1,6 @@
 ; A304274: The concatenation of the first n elements is the largest positive even number with n digits when written in base 3/2.
 ; 2,1,2,2,1,1,1,2,2,1,2,1,1,2,2,1,2,1,2,1,1,2,2,1,2,1,1,2,1,2,1,1,1,1,1,2,2,1,2,1,1,1,1,1,1,1,2,1,2,2,2,2,2,1,1,2,2,1,2,1,2,2,1,2,1,2,1,1,2,1,1,2,2,2,2,1,2,2,1,2,2,2,2,2,2,1,2,1,1,1,1,1,2,2,1,2,2,1,2,1
+; Formula: a(n) = (b(n)+1)%2+1, b(n) = 3*(b(n-1)/2)+3, b(0) = 0
 
 lpb $0
   sub $0,1

@@ -13,6 +13,6 @@ lpb $0
     mod $0,$2
   lpe
   add $1,$0
-  mul $2,21
+  mul $2,-1
 lpe
 mov $0,$1

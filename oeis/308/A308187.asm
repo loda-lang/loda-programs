@@ -1,19 +1,8 @@
 ; A308187: Fixed point (beginning with a) of the morphism a -> aab, b -> b, over the alphabet {a,b} = {0,1}.
-; Submitted by [SG]FX
+; Submitted by 2mdPUbG3fhUMEpz6FJkmzwC9PME8
 ; 0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,1,0,0,1,0,0,1
+; Formula: a(n) = (A108918(n)-1)%2
 
-mov $2,4
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  gcd $3,4
-  mul $2,$3
-  div $3,2
-lpe
-mov $0,$1
-mod $0,2
-add $0,2
+seq $0,108918 ; Reversed binary words in reversed lexicographic order.
+sub $0,1
 mod $0,2
