@@ -95,7 +95,7 @@ for f in $files; do
       updated_steps=$(echo "${updated_arr[$i]}" | awk '{print $2}')
       echo ${orig_arr[$i]} $updated_steps
     done
-    git diff -- $f
+    git diff -U1000 -- $f
     read -p "Update program? (Y)es, (n)o: " a
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then

@@ -1,17 +1,9 @@
 ; A007605: Sum of digits of n-th prime.
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by Stony666
 ; 2,3,5,7,2,4,8,10,5,11,4,10,5,7,11,8,14,7,13,8,10,16,11,17,16,2,4,8,10,5,10,5,11,13,14,7,13,10,14,11,17,10,11,13,17,19,4,7,11,13,8,14,7,8,14,11,17,10,16,11,13,14,10,5,7,11,7,13,14,16,11,17,16,13,19,14,20,19,5,13,14,7,8,10,16,11,17,16,11,13,17,20,19,14,22,8,14,8,10,10
+; Formula: a(n) = A007953(A173919(max(2*n,1)))
 
-mov $1,2
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$1
-lpb $0
-  mov $3,$0
-  mod $3,10
-  div $0,10
-  add $2,$3
-lpe
-mov $0,$2
+mul $0,2
+max $0,1
+seq $0,173919 ; Numbers that are prime or one less than a prime.
+seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).

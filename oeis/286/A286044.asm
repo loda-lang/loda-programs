@@ -1,7 +1,17 @@
 ; A286044: {011->0}-transform of the Thue-Morse word A010060.
-; Submitted by damotbe
+; Submitted by Ralfy
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0
-; Formula: a(n) = A121539(n)%2
 
-seq $0,121539 ; Numbers whose binary expansion ends in an even number of 1's.
-mod $0,2
+lpb $0
+  sub $0,1
+  mov $1,$2
+  add $1,2
+  lpb $1
+    dif $1,4
+  lpe
+  mod $1,2
+  cmp $1,0
+  sub $0,$1
+  add $2,1
+lpe
+mov $0,$1

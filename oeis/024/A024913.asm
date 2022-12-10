@@ -5,7 +5,7 @@
 mov $1,2
 mov $3,11
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
   mov $5,0
   max $3,$1

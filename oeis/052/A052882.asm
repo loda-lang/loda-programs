@@ -1,14 +1,31 @@
 ; A052882: A simple grammar: rooted ordered set partitions.
-; Submitted by Jamie Morken(w3)
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,9,52,375,3246,32781,378344,4912515,70872610,1124723193,19471590876,365190378735,7376016877334,159620144556645,3684531055645648,90366129593683035,2346673806524446218,64325158601880061137,1856031746386568222660,56231443721132068265415,1784746149967089625400062,59221421655473378844516669,2050522832081897023069929912,73956978026853636816266221875,2774131501400370171465170951666,108060095515792549297125443555241,4365137389721405450979734335103404,182629299883551914972032844124704415
 
-mov $2,$0
-mov $1,2
-lpb $1
-  sub $1,1
-  mov $0,$2
-  trn $0,1
-  seq $0,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $5,2
+  max $6,1
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mul $7,$1
+    add $7,1
+    add $7,$0
+    add $7,$4
+    bin $7,$0
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  sub $6,$3
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-mul $2,$0
-mov $0,$2
+mov $0,$7

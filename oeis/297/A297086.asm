@@ -1,6 +1,12 @@
 ; A297086: a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
-; Submitted by Ragnarsdad
+; Submitted by Stony666
 ; 1,1,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0
 
-seq $0,9195 ; a(n) = gcd(n, phi(n)).
-cmp $0,1
+mov $2,$0
+seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+mov $1,$0
+sub $1,$2
+add $0,1
+gcd $1,$0
+cmp $1,1
+mov $0,$1

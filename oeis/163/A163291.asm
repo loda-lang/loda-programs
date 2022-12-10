@@ -1,10 +1,11 @@
 ; A163291: Number of digits of n-th prime written in base 4.
-; Submitted by Simon Strandgaard
+; Submitted by [SG]FX
 ; 1,1,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 
-seq $0,40 ; The prime numbers.
+seq $0,6005 ; The odd prime numbers together with 1.
 lpb $0
   div $0,4
-  add $1,1
+  add $1,3
 lpe
 mov $0,$1
+div $0,3

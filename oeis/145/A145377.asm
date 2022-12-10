@@ -1,8 +1,11 @@
 ; A145377: a(n) = A002324(n) mod 2.
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 
-seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-mov $1,3
-mod $1,$0
-cmp $1,0
-mov $0,$1
+add $0,1
+lpb $0
+  dif $0,3
+lpe
+sub $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mod $0,2

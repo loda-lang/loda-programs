@@ -1,5 +1,5 @@
 ; A081334: sigma(2*n^2) modulo 4.
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by Ralfy
 ; 3,3,3,3,1,3,3,3,3,1,3,3,1,3,1,3,1,3,3,1,3,3,3,3,3,1,3,3,1,1,3,3,3,1,1,3,1,3,1,1,1,3,3,3,1,3,3,3,3,3,1,1,1,3,1,3,3,1,3,1,1,3,3,3,3,3,3,1,3,1,3,3,1,1,3,3,3,1,3,1,3,1,3,3,3,3,1,3,1,1,1,3,3,3,1,3,1,3,3,3
 
 seq $0,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
@@ -11,8 +11,7 @@ sub $1,$0
 add $0,1
 dif $1,2
 bin $1,$0
-mov $2,3
+mov $2,1
 add $2,$1
 add $1,$2
 mov $0,$1
-sub $0,2

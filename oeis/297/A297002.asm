@@ -15,11 +15,9 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
+  gcd $3,$0
   sub $3,1
-  seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-  mul $3,2
-  sub $3,1
-  seq $3,6005 ; The odd prime numbers together with 1.
+  seq $3,73881 ; a(n) = smallest number m (obviously prime) such that pi(m) = 2*pi(n).
   lpb $0
     dif $0,$2
     mul $1,$3

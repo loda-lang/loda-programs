@@ -1,10 +1,11 @@
 ; A014189: Inverse of 180th cyclotomic polynomial.
-; Submitted by [AF>PlusCitoyen] Davlabedave
+; Submitted by Ralfy
 ; 1,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,1,0,0,0
+; Formula: a(n) = A014069(gcd((n+1)/3,n))
 
 mov $1,$0
-mul $1,2
 add $1,1
 div $1,3
-seq $1,14129 ; Inverse of 120th cyclotomic polynomial.
+gcd $1,$0
+seq $1,14069 ; Inverse of 60th cyclotomic polynomial.
 mov $0,$1

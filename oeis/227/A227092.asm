@@ -7,11 +7,11 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  mov $3,$1
   seq $3,53828 ; Sum of digits of (n written in base 7).
   cmp $3,7
   sub $0,$3
   add $1,1
+  add $3,$1
   mov $4,$0
   max $4,0
   cmp $4,$0

@@ -5,5 +5,5 @@
 
 seq $0,5101 ; Abundant numbers (sum of divisors of m exceeds 2m).
 sub $0,1
-seq $0,48050 ; Chowla's function: sum of divisors of n except 1 and n.
+seq $0,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
 add $0,1

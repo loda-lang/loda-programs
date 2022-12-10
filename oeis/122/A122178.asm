@@ -10,7 +10,7 @@ lpb $0
 lpe
 mov $0,$1
 bin $0,2
-add $0,$1
 sub $0,1
+add $0,$1
 add $0,$2
 bin $0,$2

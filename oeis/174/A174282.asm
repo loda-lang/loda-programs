@@ -5,10 +5,9 @@
 seq $0,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
 add $0,1
 dif $0,-2
-add $2,$0
+add $1,$0
 add $0,2
-bin $2,$0
-mov $1,$2
-add $1,65
+bin $1,$0
 mov $0,$1
+add $0,67
 mod $0,2

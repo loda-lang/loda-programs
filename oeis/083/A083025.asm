@@ -1,8 +1,34 @@
 ; A083025: Number of primes congruent to 1 modulo 4 dividing n (with multiplicity).
-; Submitted by Laurent Cheylat
+; Submitted by Ralfy
 ; 0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,0,0,0,2,1,0,0,1,1,0,0,0,1,1,0,1,0,1,1,1,0,0,0,1,0,0,0,0,2,1,1,1,0,1,0,0,1,0,1,1,0,0,0,2,0,0,1,0,1,0,0,1,1,2,0,0,1,0,1,0,1,0,0,2,0,1,0,1,1,1,0,0,0,1,0,1,0,0,2
-; Formula: a(n) = A001222(A286361(n)-1)
 
-seq $0,286361 ; Least number with the same prime signature as {the largest divisor of n with only prime factors of the form 4k+1} has: a(n) = A046523(A170818(n)).
-sub $0,1
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $6,$2
+    cmp $6,0
+    add $2,$6
+    mov $4,$0
+    mod $4,$2
+    cmp $4,0
+    cmp $4,0
+    mov $5,$2
+    cmp $5,1
+    add $2,2
+    max $4,$5
+    sub $3,$4
+  lpe
+  mov $3,$2
+  add $3,1
+  lpb $0
+    dif $0,$2
+    sub $2,2
+  lpe
+  lpb $3
+    mod $3,4
+    add $1,$3
+  lpe
+lpe
+mov $0,$1
+div $0,2

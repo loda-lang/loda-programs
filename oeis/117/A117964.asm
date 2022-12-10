@@ -1,5 +1,11 @@
 ; A117964: A117963 mod 2.
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-seq $0,4483 ; Tersum n + 2.
-seq $0,88917 ; Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
+div $0,2
+seq $0,25225 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
+lpb $0
+  mod $0,6
+lpe
+div $0,2
+mod $0,2

@@ -4,7 +4,7 @@
 
 lpb $0
   mov $1,$0
-  seq $1,301774 ; Number of chordless cycles in the (2n+1)-prism graph.
+  seq $1,301774 ; Number of odd chordless cycles in the (2n+1)-prism graph.
   min $0,0
 lpe
 mov $0,$1

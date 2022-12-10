@@ -1,19 +1,20 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-; Submitted by Ralfy
+; Submitted by Hugo1979
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
 
-mov $2,2
-lpb $0
-  sub $0,1
-  mul $2,4
-  sub $1,$2
-  add $1,1
-  div $1,4
-  add $3,$1
-  gcd $3,4
-  mul $2,$3
-  div $3,2
+mov $1,$0
+seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+mov $2,$0
+mul $2,$0
+lpb $2
+  sub $2,$0
+  add $0,1
+  sub $2,$0
 lpe
-mov $0,$3
-div $0,2
+add $1,7
+add $0,1
+add $0,$1
+add $0,1
+mod $0,2
 add $0,3

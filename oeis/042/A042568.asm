@@ -10,14 +10,10 @@ lpb $0
   mov $2,$1
   mov $1,$3
   seq $1,10225 ; Continued fraction for sqrt(183).
-  mul $1,90
-  div $1,72
-  add $1,2
-  seq $1,298468 ; Solution (aa(n)) of the system of 3 complementary equations in Comments.
-  div $1,2
-  sub $1,3
-  mul $1,7
-  div $1,5
+  mov $5,$1
+  div $1,4
+  mul $1,5
+  add $1,$5
   mul $1,$2
   add $1,$4
   add $3,1
