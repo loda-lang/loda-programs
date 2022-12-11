@@ -1,6 +1,7 @@
 ; A319084: Numbers k such that the denominator of the Bernoulli polynomial B_k(x) is the squarefree kernel of k+1.
 ; Submitted by [AF>Libristes] alain65
 ; 0,1,3,5,9,11,27,29,35,59
+; Formula: a(n) = A159477(A334156(n+1)/2)-2
 
 add $0,1
 seq $0,334156 ; Triangle read by rows: T(n,m) is the number of length n decorated permutations avoiding the word 0^m = 0...0 of m 0's, where 1 <= m <= n.

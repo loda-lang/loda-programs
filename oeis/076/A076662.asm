@@ -1,9 +1,10 @@
 ; A076662: First differences of A007066.
-; Submitted by Science United
+; Submitted by ladmo
 ; 3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,3,2,3,2,3,3,2,3,2,3,3,2
-; Formula: a(n) = A035612(max(n-1,0))%2+2
+; Formula: a(n) = A284394(3*max(n,1)+1)+1
 
-trn $0,1
-seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
-mod $0,2
-add $0,2
+max $0,1
+mul $0,3
+add $0,1
+seq $0,284394 ; {101->2}-transform of the infinite Fibonacci word A003849.
+add $0,1

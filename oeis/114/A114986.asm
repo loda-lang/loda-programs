@@ -1,8 +1,10 @@
 ; A114986: Characteristic function of (A000201 prefixed with 0).
-; Submitted by Stony666
+; Submitted by ladmo
 ; 1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0
-; Formula: a(n) = A035612(max(n-1,0))%2
+; Formula: a(n) = A284394(3*max(n,1)+1)-1
 
-trn $0,1
-seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
-mod $0,2
+max $0,1
+mul $0,3
+add $0,1
+seq $0,284394 ; {101->2}-transform of the infinite Fibonacci word A003849.
+sub $0,1

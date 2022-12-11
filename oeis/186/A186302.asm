@@ -1,10 +1,7 @@
 ; A186302: a(n) = ( A007522(n)-1 )/2.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Ralfy
 ; 3,11,15,23,35,39,51,63,75,83,95,99,111,119,131,135,155,179,183,191,215,219,231,239,243,251,299,303,315,323,359,363,371,375,411,419,431,443,455,459,483,491,495,515,519,531,543,551
-; Formula: a(n) = 4*A153766(n)-5
+; Formula: a(n) = A007522(n)/2
 
-mov $1,$0
-seq $1,153766 ; Numbers n such that 8n-9 is prime.
-mov $0,$1
-mul $0,4
-sub $0,5
+seq $0,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
+div $0,2

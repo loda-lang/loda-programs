@@ -1,10 +1,7 @@
 ; A153045: Numbers k such that 2*k-11 is not a prime.
-; Submitted by Landjunge
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 10,13,16,18,19,22,23,25,28,30,31,33,34,37,38,40,43,44,46,48,49,51,52,53,55,58,61,63,64,65,66,67,68,70,72,73,76,77,78,79,82,83,85,86,88,90,91,93,94,97,98,99,100,103,106,107,108,109,110,112,113,114,115,116,118,121,123,124,127,128,129,130,132,133,135,136,138,139,142,143,145,148,149,150,151,153,154,155,156,157,158,160,163,165,166,167,168,169,170,172
-; Formula: a(n) = A008508(n)+n+7
+; Formula: a(n) = A153238(n)+7
 
-mov $1,$0
-seq $0,8508 ; Number of odd primes less than n-th odd composite number.
-add $1,$0
-mov $0,$1
+seq $0,153238 ; Numbers k such that 2*k + 3 is composite.
 add $0,7

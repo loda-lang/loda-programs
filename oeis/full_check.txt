@@ -249,6 +249,7 @@ A147648: Number of distinct even superperfect numbers dividing n.
 A152738: a(n) = floor((n^2)/phi).
 A158378: a(1) = 0, a(n) = gcd(A051904(n), A051903(n)) for n >= 2.
 A158919: Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).
+A160007: Deficient numbers more than 1 unit away from their predecessors.
 A162510: Dirichlet inverse of A076479.
 A165265: Concatenate the number of 1's and number of 0's in the binary expansion of n.
 A165513: Trapezoidal numbers.
@@ -305,6 +306,7 @@ A190008: a(n) = n + [n*r/t] + [n*s/t];  r=1, s=sin(Pi/3), t=csc(Pi/3).
 A190080: a(n) = n + [n*r/s] + [n*t/s]; r=1, s=cos(Pi/5), t=sec(Pi/5).
 A190236: a(n) = [n*u + n*v] -[n*u] -[n*v], where u=1/2, v=(1+sqrt(5))/2, and []=floor.
 A190238: Positions of 1 in A190236; complement of A190237.
+A190329: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=1/s.
 A190336: a(n) = n + [n*r/s] + [n*t/s];  r=2, s=sqrt(2), t=1/s.
 A190337: a(n) = n + [n*r/t] + [n*s/t];  r=2, s=sqrt(2), t=1/s.
 A190427: a(n) = [(b*n+c)*r] - b*[n*r] - [c*r], where (r,b,c)=(golden ratio,2,1) and []=floor.
@@ -353,6 +355,7 @@ A225687: a(n) = A030124(n) - n.
 A226123: Number of terms of the form 2^k in Collatz(3x+1) trajectory of n.
 A232324: n(n+1)/2 modulo sigma(n).
 A232437: Numbers whose square is expressible in only one way as x^2+xy+y^2, with x and y > 0.
+A232742: Numbers n for which the largest m such that (m-1)! divides n is a composite.
 A233269: a(n) = A055881(A001109(n)).
 A235224: a(0) = 0, and for n > 0, a(n) = largest k such that A002110(k-1) <= n, where A002110(k) gives the k-th primorial number.
 A238248: Numbers m such that A072219(m) = 7.

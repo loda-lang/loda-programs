@@ -1,10 +1,13 @@
 ; A059129: A hierarchical sequence (W2{2}* - see A059126).
-; Submitted by fpar
+; Submitted by Austin Lepri
 ; 1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,4,5,4,1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,5,6,5,1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,4,5,4,1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,6,7,6,1,2,1,2
 
-seq $0,59149 ; A hierarchical sequence (W'2{2}* - see A059126).
+seq $0,99470 ; A sequence generated from the Quadrifoil.
+gcd $0,256
 lpb $0
-  div $0,2
-  add $1,1
+  dif $0,2
+  add $1,3
 lpe
 mov $0,$1
+div $0,3
+add $0,1

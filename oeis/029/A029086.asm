@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,25877 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^8)).
+  seq $2,25877 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^8)).
   sub $0,1
   add $1,$2
 lpe

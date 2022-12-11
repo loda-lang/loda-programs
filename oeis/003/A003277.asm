@@ -1,5 +1,5 @@
 ; A003277: Cyclic numbers: k such that k and phi(k) are relatively prime; also k such that there is just one group of order k, i.e., A000001(n) = 1.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,3,5,7,11,13,15,17,19,23,29,31,33,35,37,41,43,47,51,53,59,61,65,67,69,71,73,77,79,83,85,87,89,91,95,97,101,103,107,109,113,115,119,123,127,131,133,137,139,141,143,145,149,151,157,159,161,163,167,173,177,179,181,185,187,191,193,197,199,209,211,213,215,217,221,223,227,229,233,235,239,241,247,249,251,255,257,259,263,265,267,269,271,277,281,283,287,293,295
 
 mov $2,$0
@@ -8,7 +8,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,121048 ; a(n) = n + phi(n), for Euler totient function phi(n).
+  seq $3,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
   gcd $3,$5
   cmp $3,1
   sub $0,$3

@@ -3,8 +3,8 @@
 
 lpb $0
   mov $2,$0
-  trn $0,2
   seq $2,23001 ; a(n) = (8^n - 1)/7.
+  trn $0,2
   add $1,$2
 lpe
 mov $0,$1
