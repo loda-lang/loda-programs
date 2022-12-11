@@ -354,6 +354,10 @@ A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
 A234645: Sum of the divisors of n^3+1.
 A239050: a(n) = 4*sigma(n).
 A240068: Number of prime Lipschitz quaternions having norm prime(n).
+A241676: 2^p - 3 where p is prime.
+A241677: 2^p + 5 where p is prime.
+A241679: 2^p + 7 where p is prime.
+A241680: 2^p + 11 where p is prime.
 A242119: Primes modulo 18.
 A242120: Primes modulo 20.
 A242122: Primes modulo 22.

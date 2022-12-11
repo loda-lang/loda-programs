@@ -1,21 +1,20 @@
 ; A097509: a(n) is the number of times that n occurs as floor(k * sqrt(2)) - k.
-; Submitted by Athlici
+; Submitted by Landjunge
 ; 3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,2,3,2,3,2,3,2
 
 mov $2,2
-add $0,1
+mov $3,2
 lpb $0
   sub $0,1
+  mul $2,4
   sub $1,$2
   add $1,1
   div $1,4
-  mul $1,2
   add $3,$1
   gcd $3,4
-  mov $4,$3
   mul $2,$3
-  div $3,$2
+  div $3,2
 lpe
-mov $0,$4
-div $0,4
+mov $0,$3
+div $0,2
 add $0,2

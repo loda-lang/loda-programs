@@ -15,6 +15,7 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
+  gcd $3,$0
   sub $3,1
   seq $3,40 ; The prime numbers.
   lpb $0

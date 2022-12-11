@@ -1,36 +1,20 @@
 ; A188590: [(n+1)*r] - [n*r], where r = 3/2 + sqrt(13)/2 and [...] denotes the floor function.
+; Submitted by Stony666
 ; 3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,3,4,3,3,4,3,3,4,3,3,4,3
 
-mov $3,$0
-mov $6,2
-lpb $6
-  sub $6,1
-  mov $0,$3
-  add $0,$6
+mov $2,1
+add $0,2
+lpb $0
   sub $0,1
-  mov $5,$0
-  mul $5,10
-  add $5,2
-  mul $0,$5
-  lpb $0
-    add $5,$0
-    add $0,5
-    sub $5,$0
-    mov $0,4
-    mov $2,$5
-    div $2,11
-    add $2,2
-  lpe
-  div $2,3
-  mov $4,$6
-  lpb $4
-    sub $4,1
-    mov $1,$2
-  lpe
-lpe
-lpb $3
-  mov $3,0
   sub $1,$2
+  add $1,1
+  div $1,2
+  div $3,2
+  add $3,$1
+  gcd $3,4
+  dif $1,2
+  mul $2,8
 lpe
-add $1,3
-mov $0,$1
+mov $0,$3
+div $0,3
+add $0,3

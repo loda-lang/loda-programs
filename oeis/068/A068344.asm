@@ -1,22 +1,9 @@
 ; A068344: Square array read by antidiagonals of T(n,k) = sign(n-k).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Landjunge
 ; 0,-1,1,-1,0,1,-1,-1,1,1,-1,-1,0,1,1,-1,-1,-1,1,1,1,-1,-1,-1,0,1,1,1,-1,-1,-1,-1,1,1,1,1,-1,-1,-1,-1,0,1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,-1,-1,-1,0,1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,0,1,1,1,1,1,1,-1,-1,-1,-1,-1,-1,-1,1,1
+; Formula: a(n) = min(max(A127948(n),0)-1,1)
 
-lpb $0
-  mov $4,1
-  mov $2,$0
-  mul $2,2
-  lpb $2
-    sub $2,$4
-    add $4,1
-    sub $2,$4
-  lpe
-  bin $4,$2
-  mov $2,$4
-  sub $2,1
-  add $3,1
-  mod $0,$3
-lpe
-mov $1,$2
-min $1,1
-mov $0,$1
+seq $0,127948 ; Triangle, A004736 * A127899.
+max $0,0
+sub $0,1
+min $0,1

@@ -1,5 +1,5 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by [AF>HFR>RR] liegeus
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
 
 mov $2,2
