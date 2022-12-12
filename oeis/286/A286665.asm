@@ -1,21 +1,8 @@
 ; A286665: {0->01}-transform of the Pell word, A171588.
-; Submitted by Fardringle
+; Submitted by rajab
 ; 0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0
+; Formula: a(n) = A276864(n+2)%2
 
-mov $2,2
 add $0,2
-lpb $0
-  sub $0,1
-  mul $2,4
-  sub $1,$2
-  add $1,1
-  div $1,4
-  add $3,$1
-  gcd $3,4
-  mul $2,$3
-  div $3,2
-lpe
-mov $0,$3
-div $0,2
-add $0,3
+seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 mod $0,2

@@ -60,6 +60,7 @@ A022164: First column of spectral array W(sqrt(5)-1).
 A022303: The sequence a of 1's and 2's starting with (1,2,1) such that a(n) is the length of the (n+2)nd run of a.
 A022342: Integers with "even" Zeckendorf expansions (do not end with ...+F_2 = ...+1) (the Fibonacci-even numbers); also, apart from first term, a(n) = Fibonacci successor to n-1.
 A022413: Kim-sums: "Kimberling sums" K_n + K_2.
+A022426: Solution a( ) of the complementary equation a(n) = b(n-1) + b(n-2), where a(0) = 2, a(1) = 3; see Comments.
 A022804: a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
 A022843: Beatty sequence for e: a(n) = floor(n*e).
 A022844: a(n) = floor(n*Pi).
@@ -223,6 +224,7 @@ A120007: Mobius transform of sum of prime factors of n with multiplicity (A00141
 A120891: Number of primitive Pythagorean triangles with odd leg 2n-1.
 A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) = p^j > 1. (a(1) = 0.)
 A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
+A124218: a(n) is the m-th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n, d(n) is the number of positive divisors of n and m = phi(n) if phi(n)|d(n), else m = d(n) mod phi(n).
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
 A129252: Smallest prime factor p of n such that p^p is a divisor of n, a(n)=1 if no such factor exists.
 A129761: First differences of Fibbinary numbers (A003714).
@@ -529,6 +531,7 @@ A336101: Numbers divisible by exactly one odd prime.
 A336356: Characteristic function of A336359, numbers k for which A001222(A000203(k)) < A001222(k).
 A336551: a(n) = A003557(n) - 1.
 A337686: a(n) is the least multiplier k such that n*k has twice as many divisors as n.
+A338062: Numbers k such that the Enots Wolley sequence A336957(k) is odd.
 A338064: Numbers k such that the Enots Wolley sequence A336957(k) is even.
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.

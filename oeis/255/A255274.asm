@@ -1,5 +1,5 @@
 ; A255274: From Goldbach conjecture: Consider the pairs (2n-+1, 3), (2n-1, 5), (2n-3, 7), ..., (3, 2n+1) of odd numbers having sum 2n+4; a(n) is the index of the first pair of primes (p, q) on the list.
-; Submitted by sjmielh
+; Submitted by Stony666
 ; 1,1,1,2,1,1,2,1,1,2,1,2,3,1,1,2,3,1,2,1,1,2,1,2,3,1,2,3,1,1,2,3,1,2,1,1,2,3,1,2,1,2,3,1,2,3,9,1,2,1,1,2,1,1,2,1,2,3,6,5,6,9,1,2,1,2,3,1,1,2,3,5,5,1,1,2,3,1,2,3,1,2,1,2,3,1,2,3,1,1,2,3,5,5,1,1,2,1,1,2
 
 mov $2,1
@@ -10,6 +10,8 @@ lpb $0
   mov $5,2
   mov $6,0
   mov $12,1
+  add $13,$7
+  mov $15,$7
   mov $4,$2
   lpb $4
     sub $4,1

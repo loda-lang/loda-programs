@@ -4,16 +4,15 @@
 
 add $0,1
 lpb $0
-  mov $3,0
   mov $2,$0
   lpb $2
-    mov $4,$2
-    trn $4,1
-    seq $4,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
-    trn $2,5
-    add $3,$4
+    mov $1,$2
+    trn $1,1
+    mul $1,4
+    seq $1,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+    trn $2,7
+    add $3,$1
   lpe
-  trn $0,7
-  add $1,$3
+  trn $0,8
 lpe
-mov $0,$1
+mov $0,$3

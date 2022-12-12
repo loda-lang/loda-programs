@@ -1,10 +1,10 @@
 ; A279340: First differences of A055938.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Landjunge
 ; 3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1
-; Formula: a(n) = 2*(A108918(n+1)%2)+1
+; Formula: a(n) = 2*(A182105(n+1)%2)+1
 
 add $0,1
-seq $0,108918 ; Reversed binary words in reversed lexicographic order.
+seq $0,182105 ; Number of elements merged by bottom-up merge sort.
 mod $0,2
 mul $0,2
 add $0,1
