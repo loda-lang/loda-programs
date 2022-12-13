@@ -1,5 +1,6 @@
 ; A068398: Number of digits in (2^n)*(n!).
 ; 1,1,1,2,3,4,5,6,8,9,10,11,13,14,16,17,19,20,22,23,25,27,28,30,32,33,35,37,38,40,42,44,46,47,49,51,53,55,57,59,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,103,105,107,109,111,113,115,117,120
+; Formula: a(n) = A055642(A000165(n))
 
 seq $0,165 ; Double factorial of even numbers: (2n)!! = 2^n*n!.
-seq $0,55642 ; Number of digits in decimal expansion of n.
+seq $0,55642 ; Number of digits in the decimal expansion of n.

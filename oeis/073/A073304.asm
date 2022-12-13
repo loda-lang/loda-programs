@@ -1,6 +1,7 @@
 ; A073304: Remaining days in non-leap year at end of n-th month.
 ; Submitted by [SG]KidDoesCrunch
 ; 365,334,306,275,245,214,184,153,122,92,61,31,0
+; Formula: a(n) = (338-((97*(10*n+12)+834)/34+2*((10*n+12)/11)))+87
 
 mul $0,10
 add $0,12

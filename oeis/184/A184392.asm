@@ -1,5 +1,5 @@
 ; A184392: a(n) is the product of palindromic divisors of n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 1,2,3,8,5,36,7,64,27,10,11,144,1,14,15,64,1,324,1,40,21,484,1,1152,5,2,27,56,1,180,1,64,1089,2,35,1296,1,2,3,320,1,252,1,85184,135,2,1,1152,7,10,3,8,1,324,3025,448,3,2,1,720,1,2,189,64,5,18974736,1,8,3,70,1,10368,1,2,15,8,5929,36,1,320,27,2,1,1008,5,2,3,59969536,1,1620,7,8,3,2,5,1152,1,14,970299,40
 
 mov $2,$0
@@ -14,7 +14,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $1,$0
-  seq $0,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
+  mov $5,$1
+  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  cmp $0,$5
   mul $0,$3
   mul $1,$0
   max $3,$1

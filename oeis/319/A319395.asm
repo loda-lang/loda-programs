@@ -1,5 +1,5 @@
 ; A319395: Number of partitions of n into exactly two positive Fibonacci numbers.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,1,1,2,1,2,1,1,1,2,1,0,1,1,1,2,0,1,0,0,1,1,1,1,0,2,0,0,1,0,0,0,0,1,1,1,1,0,1,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,1,0,0
 
 mov $2,1
@@ -14,7 +14,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,58978 ; Minimal number of (non-consecutive) Fibonacci numbers needed to get n by addition and subtraction.
+    seq $7,192687 ; Male-female differences: a(n) = A005378(n) - A005379(n).
     sub $7,1
     cmp $7,0
     mov $9,10

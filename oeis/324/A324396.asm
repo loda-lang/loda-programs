@@ -1,5 +1,5 @@
 ; A324396: a(1) = 0; for n > 1, a(n) = A009194(A156552(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,1,1,1,1,1,1,6,1,1,1,1,1,2,3,1,1,1,1,3,3,1,1,4,1,2,1,1,1,1,1,2,1,2,1,1,1,6,1,1,1,1,1,2,1,1,1,12,1,2,1,1,1,1,1,6,1,1,1,1,3,2,1,2,3,1,1,2,1,1,1,1,1,2,1,10,1,1,1,6,1,1,1,12,5,6,15,1,3,3,1,2,3,4,5,1,1,2,3
 
 seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
@@ -9,6 +9,6 @@ lpb $0
   div $0,2
   mov $1,$0
   seq $1,9194 ; a(n) = gcd(n, sigma(n)).
-  mul $0,2
+  mul $0,0
 lpe
 mov $0,$1

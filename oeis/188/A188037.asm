@@ -1,9 +1,7 @@
 ; A188037: a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
 ; Submitted by Stony666
 ; 0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0
-; Formula: a(n) = A276864(max(0,n))-3
+; Formula: a(n) = A276864(n)-3
 
-max $1,$0
-seq $1,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-mov $0,$1
+seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
 sub $0,3

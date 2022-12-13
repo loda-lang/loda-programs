@@ -1,18 +1,12 @@
 ; A010234: Continued fraction for sqrt(192).
-; Submitted by Jon Maiga
+; Submitted by ChelseaOilman
 ; 13,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1
-; Formula: a(n) = max(18*((2*((42*gcd(n,262156))%13)-4)/5)-(2*((42*gcd(n,262156))%13)-2),0)/2+1
+; Formula: a(n) = (A040668(n^2)-2)/2+1
 
-gcd $0,262156
-mul $0,42
-mod $0,13
-mul $0,2
+pow $0,2
 mov $1,$0
-sub $0,2
-sub $1,4
-div $1,5
-mul $1,18
-trn $1,$0
+seq $1,40668 ; Continued fraction for sqrt(695).
 mov $0,$1
+sub $0,2
 div $0,2
 add $0,1

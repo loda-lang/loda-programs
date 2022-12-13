@@ -1,6 +1,7 @@
 ; A272417: Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 469", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jon Maiga
 ; 1,8,44,204,876,3628,14764,59564,239276,959148,3840684,15370924,61500076,246033068,984197804,3936922284
+; Formula: a(n) = (b(n)^2)/33+1, b(n) = 2*(b(n-1)+3), b(0) = 5
 
 mov $1,5
 lpb $0

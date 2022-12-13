@@ -1,6 +1,7 @@
 ; A278554: Number of distinct blocks of length n (a.k.a. subword complexity) of the characteristic sequence of the squarefree numbers A008966.
 ; Submitted by fzs600
 ; 1,2,4,8,15,29,55,101,175,323,583
+; Formula: a(n) = 2^n-A274627(n)
 
 mov $1,2
 pow $1,$0

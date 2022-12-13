@@ -1,22 +1,7 @@
 ; A277916: Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 4", based on the 5-celled von Neumann neighborhood.
-; Submitted by damotbe
+; Submitted by Stony666
 ; 1,10,100,1010,10000,101000,1000100,10101010,100000000,1010000000,10001000000,101010100000,1000000010000,10100000101000,100010001000100,1010101010101010,10000000000000000,101000000000000000,1000100000000000000,10101010000000000000,100000001000000000000,1010000010100000000000,10001000100010000000000,101010101010101000000000,1000000000000000100000000,10100000000000001010000000,100010000000000010001000000,1010101000000000101010100000,10000000100000001000000010000,101000001010000010100000101000
+; Formula: a(n) = A288805(2*n)
 
-mov $5,$0
-add $5,1
-lpb $5
-  sub $5,1
-  mov $1,$3
-  add $1,$5
-  mul $1,2
-  bin $1,$3
-  mul $4,$0
-  add $4,$1
-  mod $4,2
-  mul $0,2
-  add $2,$4
-  mul $2,10
-  add $3,1
-lpe
-mov $0,$2
-div $0,10
+mul $0,2
+seq $0,288805 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 510", based on the 5-celled von Neumann neighborhood.

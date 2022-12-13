@@ -1,19 +1,21 @@
 ; A006337: An "eta-sequence": a(n) = floor( (n+1)*sqrt(2) ) - floor( n*sqrt(2) ).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by ChelseaOilman
 ; 1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1
 
+mov $2,9
 add $0,1
-mov $1,$0
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-mov $2,$0
-mul $2,$0
-lpb $2
-  sub $2,$0
-  add $0,1
-  sub $2,$0
+lpb $0
+  sub $0,1
+  div $2,2
+  sub $1,$2
+  add $1,1
+  div $1,2
+  add $3,$1
+  mul $3,2
+  gcd $3,4
+  mul $2,2
+  mul $2,$3
 lpe
-add $0,$1
-add $0,3
-mod $0,2
+mov $0,$3
+div $0,4
 add $0,1

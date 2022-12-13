@@ -1,16 +1,19 @@
 ; A112711: Partial sums of Catalan numbers A000108 multiplied by powers of -4.
-; Submitted by Jamie Morken(s4)
+; Submitted by Stony666
 ; 1,-3,29,-291,3293,-39715,500957,-6527779,87188701,-1187355427,16424527069,-230141827875,3259720426717,-46595454638883,671319066305757,-9738441487391523,142121594825368797,-2085158937761782563,30737922595101500637,-455043684091275090723
 
-mov $1,$0
+mov $1,2
 lpb $0
-  sub $1,1
-  mov $2,$0
-  seq $2,25225 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
-  mov $0,$1
-  add $3,$2
-  mul $3,2
-  dif $3,-1
+  sub $0,1
+  add $2,1
+  mul $1,4
+  mul $1,$2
+  mul $1,-1
+  add $2,1
+  add $4,$2
+  mul $1,$2
+  div $1,$4
+  add $3,$1
 lpe
 mov $0,$3
 div $0,2

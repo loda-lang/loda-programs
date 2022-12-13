@@ -1,5 +1,5 @@
 ; A046926: Number of ways to express n as p+2q; p, q primes.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,0,0,1,1,1,2,0,2,1,2,0,2,1,4,0,2,0,3,0,3,1,3,0,4,1,4,0,2,0,5,0,3,1,4,0,4,1,5,0,4,0,6,0,4,1,4,0,7,0,5,0,3,0,7,0,3,1,3,0,7,1,7,0,5,0,7,0,4,0,4,0,8,1,7,0,5,0,8,0,4,1,7,0,8,1,7,0,4,0,11,0,5,1,6,0,9,0
 
 mov $2,1
@@ -20,9 +20,9 @@ lpb $0
     mov $9,10
     add $9,$5
     min $10,$0
-    sub $4,$0
-    trn $4,1
+    sub $4,1
     mul $7,$$9
+    gcd $4,$10
     add $5,1
     add $6,$7
   lpe

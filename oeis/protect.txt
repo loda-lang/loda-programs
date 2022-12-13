@@ -71,6 +71,7 @@ A031389: a(n) = prime(8*n-3).
 A031392: a(n) = prime(5*n-4).
 A031906: a(n) = prime(6*n - 5).
 A031908: a(n) = prime(8*n - 5).
+A031910: a(n) = prime(10*n - 5).
 A031911: a(n) = prime(7*n - 6).
 A031914: a(n) = prime(10*n - 6).
 A031915: a(n) = prime(8*n - 7).

@@ -4,8 +4,12 @@
 
 lpb $0
   trn $0,1
+  mov $3,$0
+  dif $3,2
   mov $2,$0
-  seq $2,126120 ; Catalan numbers (A000108) interpolated with 0's.
+  bin $2,$3
+  add $3,1
+  div $2,$3
   add $1,$2
 lpe
 add $1,1

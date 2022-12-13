@@ -1,21 +1,26 @@
 ; A031448: Numbers whose base-2 representation has one fewer 0's than 1's.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Stony666
 ; 1,5,6,19,21,22,25,26,28,71,75,77,78,83,85,86,89,90,92,99,101,102,105,106,108,113,114,116,120,271,279,283,285,286,295,299,301,302,307,309,310,313,314,316,327,331,333,334,339,341,342,345,346,348,355,357,358,361,362,364,369,370,372,376,391,395,397,398,403,405,406,409,410,412,419,421,422,425,426,428,433,434,436,440,451,453,454,457,458,460,465,466,468,472,481,482,484,488,496,1055
 
+add $0,2
 mov $2,$0
-add $2,3
-pow $2,2
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,2
+  mov $4,0
   mov $3,$1
-  seq $3,337319 ; a(n) = Sum_{i = 1..floor(log_2(n))+1} g(frac(n/2^i)), where g(t) = [0 if t = 0, -1 if 0 < t < 1/2, 1 if t >= 1/2], and where frac(x) denotes the fractional part.
-  cmp $3,2
+  lpb $3
+    lpb $3
+      dif $3,2
+      add $4,1
+    lpe
+    div $3,2
+    sub $4,1
+  lpe
+  add $3,$4
+  cmp $3,0
   sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+  add $1,2
+  sub $2,$0
 lpe
 mov $0,$1
 div $0,2

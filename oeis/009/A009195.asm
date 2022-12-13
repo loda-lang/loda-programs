@@ -1,12 +1,11 @@
 ; A009195: a(n) = gcd(n, phi(n)).
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,2,1,2,1,4,3,2,1,4,1,2,1,8,1,6,1,4,3,2,1,8,5,2,9,4,1,2,1,16,1,2,1,12,1,2,3,8,1,6,1,4,3,2,1,16,7,10,1,4,1,18,5,8,3,2,1,4,1,2,9,32,1,2,1,4,1,2,1,24,1,2,5,4,1,6,1,16,27,2,1,12,1,2,1,8,1,6,1,4,3,2,1,32,1,14,3,20
-; Formula: a(n) = gcd(n-A109606(n),n+1)
+; Formula: a(n) = gcd(n+1,A055034(n))
 
 mov $2,$0
-seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+seq $2,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
 mov $1,$0
-sub $1,$2
-add $0,1
-gcd $1,$0
+add $1,1
+gcd $1,$2
 mov $0,$1

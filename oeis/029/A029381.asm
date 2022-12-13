@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,25876 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^7)).
+  seq $2,25876 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^7)).
   sub $0,3
   trn $0,8
   add $1,$2

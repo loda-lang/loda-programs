@@ -1,6 +1,7 @@
 ; A328101: Column immediately right of the middle column of rule-30 1-D cellular automaton, when started from a lone 1 cell.
 ; Submitted by Merlin2331
 ; 1,0,1,0,1,0,0,1,0,1,1,1,1,0,0,0,0,1,1,0,1,1,0,1,0,0,1,1,0,0,0,1,1,0,1,0,0,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,1,0,0,1,1,1,1,0,0,1,0,0,0,0,1,1
+; Formula: a(n) = (A110240(n+1)/(2^n))%2
 
 mov $1,2
 pow $1,$0

@@ -91,11 +91,13 @@ A035337: Third column of Wythoff array.
 A036349: Numbers whose sum of prime factors (taken with multiplicity) is even.
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
 A037126: Triangle T(n,k) = prime(k) for k = 1..n.
+A037813: Number of i such that d(i)<=d(i-1), where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.
 A038451: Sums of 9 distinct powers of 10.
 A038452: Sums of 10 distinct powers of 10.
 A038461: Sums of 10 distinct powers of 2.
 A038462: Sums of 11 distinct powers of 2.
 A038609: Numbers that are the sum of 2 different primes.
+A039010: Numbers whose base-5 representation has the same number of 1's and 2's.
 A039014: Numbers whose base-5 representation has the same number of 2's and 4's.
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
 A042987: Primes congruent to {2, 3, 5, 7} mod 8.
@@ -128,6 +130,7 @@ A051904: Minimal exponent in prime factorization of n.
 A052223: Numbers whose sum of digits is 9.
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
+A054703: Number of distinct powers of 2 modulo n.
 A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
 A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is different from {largest m such that m! divides k}; numbers k which are either odd multiples of 12 or the largest m such that (m-1)! divides k is a composite number > 5.
 A056624: Number of unitary square divisors of n.
@@ -207,6 +210,7 @@ A107078: Whether n has non-unitary prime divisors.
 A107145: Primes of the form x^2 + 40y^2.
 A107436: a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.
 A108029: Numbers n such that 149*k + 151 is prime.
+A108342: Numbers n such that 1009*n - 997 is prime.
 A109512: Integers which are not the sum of n and A001462(n).
 A109768: a(n) = gcd(3^n-2,2^n-3).
 A110661: Triangle read by rows: T(n,k) = total number of divisors of k, k+1, ..., n (1 <= k <= n).
@@ -238,6 +242,7 @@ A132240: Primes congruent to {1, 29} mod 30.
 A133827: Number of solutions to x + 7 * y = 2 * n in triangular numbers.
 A134080: Expansion of (f(-q^5)^5 / f(-q) + f(q^5)^5 / f(q)) / 2 in powers of q^2 where f() is a Ramanujan theta function.
 A134860: Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
+A135600: Angled numbers with an internal digit as the vertex.
 A137803: a(n) = floor(n*(sqrt(2) + 1/2)).
 A138026: Where A121561(n) = 3.
 A140099: A Beatty sequence: a(n) = [n*(1+t)], where t = tribonacci constant (A058265); complement of A140098.

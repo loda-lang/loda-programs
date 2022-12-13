@@ -1,9 +1,13 @@
 ; A088835: a(n) = lcm(A020639(n), A006530(n)).
-; Submitted by DoctorNow
+; Submitted by Kotenok2000
 ; 1,2,3,2,5,6,7,2,3,10,11,6,13,14,15,2,17,6,19,10,21,22,23,6,5,26,3,14,29,10,31,2,33,34,35,6,37,38,39,10,41,14,43,22,15,46,47,6,7,10,51,26,53,6,55,14,57,58,59,10,61,62,21,2,65,22,67,34,69,14,71,6,73,74,15,38,77,26,79,10,3,82,83,14,85,86,87,22,89,10,91,46,93,94,95,6,97,14,33,10
+; Formula: a(n) = (A073752(n)*(n+1))/(A073752(n)^2)
 
-seq $0,66048 ; Product of smallest and greatest prime factors of n.
-sub $0,1
 mov $1,$0
-seq $1,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) is the smallest possible choice for m.
+add $1,1
+seq $0,73752 ; Greatest common divisor of n/spf(n) and n/gpf(n) where spf(n) is the smallest and gpf(n) is the greatest prime factor of n (see A020639, A006530).
+mov $2,$0
+pow $2,2
+mul $1,$0
+div $1,$2
 mov $0,$1

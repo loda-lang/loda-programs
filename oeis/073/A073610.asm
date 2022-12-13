@@ -1,5 +1,5 @@
 ; A073610: Number of primes of the form n-p where p is a prime.
-; Submitted by Science United
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,1,2,1,2,2,2,3,0,2,2,3,2,4,0,4,2,4,2,5,0,6,2,5,0,4,0,6,2,4,2,7,0,8,0,3,2,6,0,8,2,6,2,7,0,10,2,8,0,6,0,10,2,6,0,7,0,12,2,5,2,10,0,12,0,4,2,10,0,12,2,9,2,10,0,14,0,8,2,9,0,16,2,9,0,8,0,18,2,8,0,9,0,14,0,6,2,12
 
 mov $2,$0
@@ -19,8 +19,8 @@ lpb $0
     mov $9,10
     add $9,$5
     min $10,$0
-    sub $4,$0
     mul $7,$$9
+    gcd $4,$0
     add $5,1
     add $6,$7
   lpe
