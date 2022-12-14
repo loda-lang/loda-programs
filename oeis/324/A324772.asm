@@ -1,17 +1,22 @@
 ; A324772: The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0
 
-mov $1,$0
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mov $2,2
 add $0,1
-mov $2,$0
-mul $2,$0
-lpb $2
-  sub $2,$0
-  add $0,1
-  sub $2,$0
+lpb $0
+  sub $0,1
+  sub $1,$2
+  sub $1,2
+  div $1,2
+  add $3,$1
+  mod $3,2
+  gcd $3,4
+  div $2,2
+  mul $2,2
+  mul $2,$3
+  add $3,1
 lpe
-mul $0,$1
-add $0,$1
+mov $0,$3
+sub $0,1
 mod $0,2

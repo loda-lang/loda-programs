@@ -80,6 +80,7 @@ A031919: a(n) = prime(10*n-8).
 A031920: a(n) = prime(10*n-9).
 A031937: Upper prime of a difference of 18 between consecutive primes.
 A031974: 1 repeated prime(n) times.
+A033192: a(n) = binomial(Fibonacci(n) + 1, 2).
 A033633: Primes modulo 19.
 A034785: a(n) = 2^(n-th prime).
 A035011: A006318(n) - 1.
@@ -134,6 +135,7 @@ A061725: p^2 + 2 where p is a prime.
 A062011: a(n) = 2*tau(n) = 2*A000005(n).
 A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062312: Nonprime numbers squared.
+A062355: a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
 A062727: Sum of the divisors of n^n (A000312).
 A062981: a(n) = n^phi(n).
 A063439: a(n) = phi(n)^phi(n).
@@ -229,6 +231,7 @@ A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
 A102781: Number of positive even numbers less than the n-th prime.
 A104638: Number of odd digits in n-th prime.
+A105555: Let d = number of divisors of n; a(n) = d-th prime.
 A105825: a(n) = sigma(n) (mod 5).
 A105853: a(n) = sigma(n) (mod 10), i.e., unit's digit of sigma(n).
 A106044: Difference between n-th prime and next larger perfect square.
@@ -347,6 +350,7 @@ A193462: Sum of the distinct prime divisors of n^2+1.
 A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
+A200905: a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).

@@ -1,15 +1,12 @@
 ; A100820: Number of odd numbers between prime(n) and prime(n+1).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,1,0,1,0,1,2,0,2,1,0,1,2,2,0,2,1,0,2,1,2,3,1,0,1,0,1,6,1,2,0,4,0,2,2,1,2,2,0,4,0,1,0,5,5,1,0,1,2,0,4,2,2,2,0,2,1,0,4,6,1,0,1,6,2,4,0,1,2,3,2,2,1,2,3,1,3,4,0,4,0,2,1,2,3,1,0,1,5,3,1,3,1,2,5,0,8,2
+; Formula: a(n) = A064722(2*(A006005(n+1)/2)-1)/2
 
 add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$1
-  seq $2,105161 ; Difference between n and the second-smallest prime larger than n.
-  sub $2,1
-  add $1,$2
-lpe
-mov $0,$2
-sub $0,2
+seq $0,6005 ; The odd prime numbers together with 1.
+div $0,2
+mul $0,2
+sub $0,1
+seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 div $0,2

@@ -11,4 +11,4 @@ lpb $0
   sub $0,10
 lpe
 seq $0,1348 ; Mersenne numbers: 2^p - 1, where p is prime.
-seq $0,55642 ; Number of digits in decimal expansion of n.
+seq $0,55642 ; Number of digits in the decimal expansion of n.

@@ -1,11 +1,10 @@
 ; A132194: a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
-; Submitted by Athlici
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,1,1,1,0,0
-; Formula: a(n) = ((max(A006005(n)-5,0)%3)/2+1)%2
 
-seq $0,6005 ; The odd prime numbers together with 1.
-trn $0,5
-mod $0,3
-div $0,2
-add $0,1
+mov $$0,1
+seq $0,273960 ; a(n) = (-1)^n*prime(n).
+div $0,3
+mod $0,2
+add $0,2
 mod $0,2

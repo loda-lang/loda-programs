@@ -23,8 +23,8 @@ lpb $0
     bin $7,$0
     mul $7,$$9
     div $8,-1
-    mul $7,$8
     add $5,1
+    mul $7,$8
     add $6,$7
   lpe
   sub $6,$3

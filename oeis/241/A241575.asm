@@ -1,6 +1,9 @@
 ; A241575: Sturmian expansion of 1/2 in base sqrt(2)-1.
+; Submitted by shiva
 ; 0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0
-; Formula: a(n) = A285073(n+36)
+; Formula: a(n) = (A276864(n+35)-1)%2
 
-add $0,36
-seq $0,285073 ; 0-limiting word of the morphism 0->10, 1-> 010.
+add $0,35
+seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+sub $0,1
+mod $0,2

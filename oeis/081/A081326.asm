@@ -1,5 +1,5 @@
 ; A081326: Number of partitions of n into two 3-smooth numbers.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,1,2,2,2,2,2,2,3,2,3,2,2,2,2,2,3,2,3,2,2,0,3,2,2,2,3,1,3,1,2,3,2,2,4,1,2,2,3,1,2,1,2,2,0,0,3,1,2,2,2,0,3,1,3,2,1,1,3,0,1,2,2,1,3,1,2,0,2,0,4,2,1,2,2,0,2,0,3,2,2,1,3,1,1,1,2,1,3,1,0,1,0,0,3,2,1,3,2
 
 mov $2,1
@@ -15,7 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,186099 ; Sum of divisors of n congruent to 1 or 5 mod 6.
+    seq $7,65333 ; Characteristic function of 3-smooth numbers, i.e., numbers of the form 2^i*3^j (i, j >= 0).
     sub $7,1
     cmp $7,0
     mov $9,10

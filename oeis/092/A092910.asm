@@ -1,29 +1,16 @@
 ; A092910: a(n) is the (3n+2)-th component of the continued fraction for sum(k>=0,2^(-k!)).
-; Submitted by Simon Strandgaard
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,4,3,3,2,3,4,3,2,4,3,2,3,3,4,3,2,4,3,3,2,3,4,2,3,4,3,2,3,3,4,3,2,4,3,3,2,3,4,3,2,4,3,2,3,3,4,2,3,4,3,3,2,3,4,2,3,4,3,2,3,3,4,3,2,4,3,3,2,3,4,3,2,4,3,2,3,3,4,3,2,4,3,3,2,3,4,2,3,4,3,2,3,3,4,2,3,4,3,3
+; Formula: a(n) = (A088435(max((n+1)-2,0))*((n+1)-max((n+1)-2,0))-((n+1)-max((n+1)-2,0)))/2+2
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mov $2,$4
-  trn $2,1
-  bin $2,$0
-  mov $4,$1
-  mul $4,2
-  mov $3,$4
-  sub $3,$0
-  bin $3,$1
-  add $1,1
-  mul $3,$2
-  div $3,$1
-  mod $3,2
-  mul $3,2
-  add $4,2
-  div $4,2
-  div $5,-1
-  add $5,$3
-lpe
-mov $0,$5
-sub $0,2
+add $0,1
+mov $1,$0
+trn $0,2
+sub $1,$0
+seq $0,88435 ; 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k>=1,1/3^(2^k)).
+mul $0,$1
+mov $2,$0
+sub $2,$1
+mov $0,$2
 div $0,2
-add $0,4
+add $0,2

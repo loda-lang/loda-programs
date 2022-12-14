@@ -3,6 +3,7 @@ A000010: Euler totient function phi(n): count numbers <= n and prime to n.
 A000161: Number of partitions of n into 2 squares.
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000572: A Beatty sequence: [ n(e+1) ].
+A000865: Numbers beginning with letter 'o' in English.
 A001132: Primes == +-1 (mod 8).
 A001221: Number of distinct primes dividing n (also called omega(n)).
 A001222: Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
@@ -349,6 +350,7 @@ A196224: Numbers n such that n^2 + n is not of the form x^2 + y^2 + z^2.
 A197878: a(n) = floor(2*(1 + sqrt(2))*n).
 A197879: Parity of floor(n*sqrt(8)).
 A202276: Number of integers k <= n such that sigma(x) = k has no solution, sigma = A000203.
+A204987: Least k such that n divides 2^k - 2^j for some j satisfying 1 <= j < k.
 A205866: Positions of multiples of 8 in A204922 (differences of Fibonacci numbers).
 A214971: Integers k for which the base-phi representation of k includes 1.
 A214990: Second nearest integer to n*r, where r = (1+ sqrt(5))/2, the golden ratio.
@@ -462,6 +464,7 @@ A287174: 2-limiting word of the morphism 0->10, 1->20, 2->0.
 A287658: Positions of 0 in A287657; complement of A287659.
 A287774: Positions of 0 in A287773; complement of A287777.
 A287791: Positions of 0 in A287790; complement of A287792.
+A288213: Fixed point of the mapping 00->0010, 1->011, starting with 00.
 A288695: Positions of 0 in A288694; complement of A288696.
 A288709: Positions of 1's in A288707; complement of A288708.
 A288713: Positions of 1 in A288711; complement of A288712.

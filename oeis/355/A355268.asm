@@ -1,17 +1,12 @@
 ; A355268: a(n) = n! * [x^n] -exp(x^2)/(x - 1).
-; Submitted by shiva
+; Submitted by Coleslaw
 ; 1,1,4,12,60,300,1920,13440,109200,982800,9858240,108440640,1301952960,16925388480,236972736000,3554591040000,56873975558400,966857584492800,17403454164096000,330665629117824000,6613313252799052800,138879578308780108800,3055350750951750451200
+; Formula: a(n) = (28*A334156((n^2)/2)-28)/28+1
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  mul $1,$0
-  mul $1,2
-  add $4,$2
-  mul $4,$0
-  add $1,$4
-  add $2,$3
-  mov $3,$1
-lpe
-mov $0,$2
+pow $0,2
+div $0,2
+seq $0,334156 ; Triangle read by rows: T(n,m) is the number of length n decorated permutations avoiding the word 0^m = 0...0 of m 0's, where 1 <= m <= n.
+mul $0,28
+sub $0,28
+div $0,28
+add $0,1
