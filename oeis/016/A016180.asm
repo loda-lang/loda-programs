@@ -1,9 +1,22 @@
 ; A016180: Inverse of 2171st cyclotomic polynomial.
-; Submitted by Armin Gips
+; Submitted by NeoGen
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (A297043(n+1)+1)%2
 
+mov $1,1
+mov $2,1
+sub $0,1
+mul $0,2
+lpb $0
+  sub $0,1
+  sub $1,2
+  add $2,3
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+lpe
+add $4,$3
+mul $3,$1
+gcd $3,$1
+div $4,$3
+mov $0,$4
 add $0,1
-seq $0,297043 ; Number of pieces in the list d(m), d(m-1), ..., d(0) of base-15 digits of n; see Comments.
-add $0,1
-mod $0,2

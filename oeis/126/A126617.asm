@@ -1,19 +1,20 @@
 ; A126617: a(n) = Sum_{i=0..n} (-2)^(n-i)*B(i)*binomial(n,i) where B(n) = Bell numbers A000110(n).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,-1,2,-3,7,-10,31,-21,204,307,2811,12100,74053,432211,2768858,18473441,129941283,956187814,7351696139,58897405759,490681196604,4242903803727,38014084430983,352341755256348,3373662303816313,33326335433122711,339232538387804530,3554240046200340341,38290061308242126191,423738383918932930134,4812744130226651609671,56054092780342454501891,668961247910328665725132,8174367016934705578916475,102203646503283939750725955,1306636219302286376354717332,17070723437726933453823052893
 
-mov $1,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$0
 mov $2,$0
+add $2,1
 lpb $2
   sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,56860 ; Triangle T(n,k) = number of element-subset partitions of {1..n} with n-k+1 equalities (n >= 1, 1 <= k <= n).
-  mul $1,-2
-  add $1,$0
+  mov $1,$0
+  sub $1,$2
+  mov $3,$1
+  add $3,$2
+  bin $3,$1
+  seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $3,$1
+  mul $4,2
+  dif $4,-1
+  add $4,$3
 lpe
-mov $0,$1
+mov $0,$4
