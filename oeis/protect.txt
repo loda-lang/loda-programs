@@ -303,6 +303,8 @@ A141421: First bisection of A091137.
 A142342: a(n) = 10*prime(n).
 A143928: 2*p^2, for p an odd prime.
 A144769: a(n) = floor(prime(n)/3).
+A146094: Bell numbers (A000110) mod 4.
+A146098: Bell numbers (A000110) read mod 8.
 A146100: Bell numbers (A000110) read mod 10.
 A146102: Bell numbers (A000110) read mod 12.
 A146109: Bell numbers (A000110) read mod 19.
@@ -314,6 +316,7 @@ A153480: a(n) = 2*prime(n)^2 - 4.
 A153481: a(n) = prime(n)^3 - 2.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
+A162143: a(n) = A007304(n)^2.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
 A166010: a(n) = prime(n)^2-4.
 A171018: In the sequence of prime numbers, replace all the '3' digits with '2' and vice versa.
@@ -355,6 +358,7 @@ A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).
 A229787: Primes modulo 24.
+A231620: a(n) = A000930(n^2), where A000930 is Narayana's cows sequence.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
 A234645: Sum of the divisors of n^3+1.
 A239050: a(n) = 4*sigma(n).

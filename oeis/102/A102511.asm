@@ -1,13 +1,9 @@
 ; A102511: Sum(A008683(A102510(k)): k<=n).
-; Submitted by Kotenok2000
+; Submitted by Dingo
 ; 1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,1,1
+; Formula: a(n) = (A107079(n+1)-1)%2
 
-lpb $0
-  mov $2,$0
-  seq $2,162510 ; Dirichlet inverse of A076479.
-  sub $0,1
-  add $1,$2
-lpe
-add $1,1
-mod $1,2
-mov $0,$1
+add $0,1
+seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
+sub $0,1
+mod $0,2

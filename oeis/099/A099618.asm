@@ -1,9 +1,11 @@
 ; A099618: a(n) = 1 if the n-th prime == 1 mod 6, otherwise a(n) = 0.
-; Submitted by jlbrown
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,1,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,1,0,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,0,1,0,1,0,0,0,1,1
-; Formula: a(n) = (max(A006005(n)-5,0)%3)/2
 
-seq $0,6005 ; The odd prime numbers together with 1.
-trn $0,5
-mod $0,3
-div $0,2
+mov $$0,1
+seq $0,273960 ; a(n) = (-1)^n*prime(n).
+div $0,3
+sub $0,1
+mod $0,2
+add $0,2
+mod $0,2

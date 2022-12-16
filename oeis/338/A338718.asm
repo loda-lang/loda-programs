@@ -1,17 +1,18 @@
 ; A338718: Define b(1)=1 and for n>1, b(n)=n/b(n-1); then a(n) = floor(b(n)).
-; Submitted by Christian Krause
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,1,2,1,3,2,3,2,4,2,4,2,4,3,5,3,5,3,5,3,5,3,6,4,6,4,6,4,6,4,7,4,7,4,7,4,7,5,7,5,8,5,8,5,8,5,8,5,8,5,9,5,9,5,9,6,9,6,9,6,9,6,10,6,10,6,10,6,10,6,10,6,10,6,10,7,11,7,11,7,11,7,11,7,11,7,11,7,11
 
 mov $1,1
 mov $2,1
-add $0,1
+mov $3,1
+mov $4,1
 lpb $0
-  mul $1,$0
-  add $3,$0
-  sub $3,1
-  sub $0,2
-  mul $2,$3
-  trn $3,$1
+  sub $0,1
+  add $2,1
+  mov $4,$1
+  mov $1,$3
+  mul $1,$2
+  mov $3,$4
 lpe
-div $1,$2
+div $1,$4
 mov $0,$1

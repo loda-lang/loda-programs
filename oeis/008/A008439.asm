@@ -9,7 +9,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,2131 ; Sum of divisors d of n such that n/d is odd.
+  seq $2,593 ; Sum of odd divisors of n.
   add $1,$2
   mov $3,2
   add $3,$4

@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,132364 ; Expansion of 1/(1-x^2*c(x)), c(x) the g.f. of A000108 .
+  seq $1,132364 ; Expansion of 1/(1-x^2*c(x)), c(x) the g.f. of A000108.
   add $1,$4
   mul $1,2
   add $3,1

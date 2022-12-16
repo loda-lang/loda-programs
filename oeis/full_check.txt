@@ -194,6 +194,7 @@ A095080: Fibeven primes, i.e., primes p whose Zeckendorf-expansion A014417(p) en
 A095098: Fib001 numbers: those k for which the Zeckendorf expansion A014417(k) ends with two zeros and a final one.
 A096299: List of strings in lexicographic order with property that for the 2^(m-1) strings of length m, the first entry is 1, the second distinct entry (reading from left to right) is 2, the third distinct entry is 3, etc.
 A096309: a(1)=1; for n > 1, a(n) is the number of levels in the "stacked" prime number factorization of n (prime number factorization of the exponents if necessary and so on ...).
+A096334: Triangle read by rows: T(n,k) = prime(n)#/prime(k)#, 0<=k<=n.
 A096936: Half of number of integer solutions to the equation x^2 + 3y^2 = n.
 A097272: Least integer with same "mod 2 prime signature" as n.
 A098012: Triangle read by rows in which the k-th term in row n (n >= 1, k = 1..n) is Product_{i=0..k-1} prime(n-i).

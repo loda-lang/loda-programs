@@ -1,10 +1,7 @@
 ; A190669: a(n) = [(b*n+c)*r] - b*[n*r] - [c*r], where (r,b,c)=(sqrt(3),2,0) and [ ] = floor.
-; Submitted by Bazooka_CZ
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0
-; Formula: a(n) = (A180122(2*n+1)+1)%2
+; Formula: a(n) = A194028(n)%2
 
-mul $0,2
-add $0,1
-seq $0,180122 ; First of three "least, sum, least" self-generating sequences.
-add $0,1
+seq $0,194028 ; Beatty sequence for sqrt(12).
 mod $0,2

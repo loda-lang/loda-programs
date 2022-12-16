@@ -1,6 +1,7 @@
 ; A269110: Numbers of unit circles packed in a triangle of smallest area admitting an equilateral triangle solution.
 ; Submitted by Jon Maiga
 ; 1,3,5,6,9,10,14,15,20,21
+; Formula: a(n) = (min(n,1)-(-n))+binomial((-n)/2,2)+1
 
 sub $1,$0
 min $0,1

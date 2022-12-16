@@ -1,20 +1,7 @@
 ; A146094: Bell numbers (A000110) mod 4.
-; Submitted by Christian Krause
+; Submitted by arkiss
 ; 1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1,3,0,3,1,0,3,3,2,1,1,2,1
+; Formula: a(n) = (288*(A000110(n)%4+A000015(196))-56736)/288
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $4,$1
-  add $1,$3
-  add $1,$2
-  mod $1,4
-  add $5,$4
-  add $5,$2
-  mov $2,$3
-  mov $3,$5
-  add $4,3
-  add $2,$4
-  add $4,$2
-lpe
-mov $0,$1
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+mod $0,4
