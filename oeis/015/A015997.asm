@@ -1,12 +1,14 @@
 ; A015997: Inverse of 1988th cyclotomic polynomial.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Simon Strandgaard (M1)
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = (2*A015003((n+1)/2)*gcd((n+1)-1,2))/4
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $2,1
-  mov $1,$2
-  seq $1,15661 ; Inverse of 1652nd cyclotomic polynomial.
-lpe
-mov $0,$1
+add $0,1
+mov $1,$0
+sub $0,1
+gcd $0,2
+mul $0,2
+div $1,2
+seq $1,15003 ; Inverse of 994th cyclotomic polynomial.
+mul $0,$1
+div $0,4

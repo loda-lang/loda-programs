@@ -109,7 +109,7 @@ for f in $files; do
   fi
 done
 
-if (( num_updated >= 100 )); then
+if (( num_updated >= 50 )); then
   if [ "$commit_staged" = "y" ]; then
     a="y"
   else

@@ -1,6 +1,7 @@
 ; A090374: Number of rooted planar 4-constellations with n quadrangles: rooted planar maps with bicolored faces having n black quadrangular faces and an arbitrary number of white faces of degrees multiple to 4.
 ; Submitted by stoneageman
 ; 1,10,160,3200,72960,1813504,47923200,1325629440,37991219200,1120005652480,33789432561664,1039157228994560,32480974549811200,1029463445864448000,33023079530417356800,1070513886720329515008,35026358912891580579840,1155516042520241436098560
+; Formula: a(n) = (A197271(n+1)*2^(2*n))/2
 
 mov $1,$0
 add $1,$0
