@@ -15,32 +15,19 @@ lpb $2
   add $1,$4
   sub $2,1
 lpe
+mov $11,$7
+mul $11,5
+mov $8,$7
+mul $8,$7
+add $9,$8
+mov $10,$9
+mul $10,30
 sub $1,3
-mov $3,5
-lpb $3
-  sub $3,1
-  add $1,$7
-lpe
-mov $6,$7
-lpb $6
-  sub $6,1
-  add $9,$7
-lpe
-mov $8,$9
-mov $3,30
-lpb $3
-  sub $3,1
-  add $1,$9
-lpe
-mov $9,0
-mov $6,$7
-lpb $6
-  sub $6,1
-  add $9,$8
-lpe
-mov $3,26
-lpb $3
-  sub $3,1
-  add $1,$9
-lpe
+add $1,$11
+add $1,$10
+mov $6,$9
+mul $6,$7
+mov $3,$6
+mul $3,26
+add $1,$3
 mov $0,$1

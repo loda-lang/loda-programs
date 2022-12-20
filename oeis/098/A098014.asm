@@ -1,6 +1,7 @@
 ; A098014: A098013/2.
 ; Submitted by stoneageman
 ; 2,2,2,3,3,2,2,3,3,3,2,3,2,3,2,2,2,7,2,3,5,3,3,2,3,3,5,2,2,2,3,5,3,3,3,3,2,5,7,2,2,7,3,5,2,3,3,3,2,3,2,5,5,3,2,3,2,2,2,2,3,3,5,3,3,3,5,3,3,3,3,2,5,2,3,3,2,3,5,5,3,3,2,3,2,2,7,5,5,2,5,7,2,2,7,2,2,2,5,2
+; Formula: a(n) = A013632(A058620(n)+3)/2+2
 
 seq $0,58620 ; Lesser of two consecutive primes whose difference divided by two is a prime: ( prime(next prime after n) - prime(n) )/2 is prime.
 add $0,3

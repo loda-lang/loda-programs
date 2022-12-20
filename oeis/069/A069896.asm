@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,48050 ; Chowla's function: sum of divisors of n except 1 and n.
+  seq $2,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
   bin $0,$3
   gcd $1,$2
 lpe

@@ -1,6 +1,7 @@
 ; A077811: Euler's totient of numbers containing in their decimal representation only the digits 0 and 1.
 ; Submitted by Fardringle
 ; 1,4,10,40,100,40,72,400,720,400,672,400,732,288,1000,4000,9792,2880,6440,4000,5184,2688,10110,4000,6912,2928,7920,2880,10432,4000,10800,40000,90900,39168,59904,28800,65520,25760,86040,40000,66560,20736
+; Formula: a(n) = A109606(A007088(n+1)-1)+1
 
 add $0,1
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.

@@ -10,8 +10,10 @@ lpb $0
   mov $2,$1
   mov $1,$3
   seq $1,10126 ; Continued fraction for sqrt(22).
-  seq $1,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
-  sub $1,3
+  mov $5,$1
+  div $5,3
+  mul $5,3
+  add $1,$5
   mul $1,$2
   add $1,$4
   add $3,1

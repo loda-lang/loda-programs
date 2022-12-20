@@ -14,6 +14,7 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
+  gcd $3,$0
   sub $3,1
   seq $3,324867 ; a(n) = A156552(n) XOR A324865(n), where XOR is bitwise-xor, A003987.
   lpb $0

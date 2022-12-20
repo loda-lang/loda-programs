@@ -5,9 +5,17 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25806 ; Expansion of 1/((1-x^2)(1-x^5)(1-x^6)).
+  lpb $2
+    mov $1,$2
+    add $1,1
+    mov $4,$1
+    mul $1,2
+    div $1,5
+    div $4,2
+    sub $4,$1
+    trn $2,6
+    add $3,$4
+  lpe
   trn $0,12
-  add $1,$2
 lpe
-mov $0,$1
+mov $0,$3

@@ -1,4 +1,4 @@
-; A358188: allocated for Wolfdieter Lang
+; A358188: Decimal expansion of the positive real root r of x^4 - 2*x^3 - 1.
 ; Submitted by Science United
 ; 2,1,0,6,9,1,9,3,4,0,3,7,6,2,1,7,2,1,7,0,9,7,1,0,6,1,2,9,5,3,7,9,7,3,0,4,6,6,2,9,2,7,6,5,4,4,0,9,2,8,1,4,9,3,8,3,6,7,3,5,4,6,6,4,4,1,4,2,2,4,2,7,2,9,4,2,3,7
 

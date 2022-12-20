@@ -1,9 +1,11 @@
 ; A230106: Number of m such that m + (product of nonzero digits of m) equals n.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,1,0,1,0,1,0,1,0,1,1,2,0,2,0,2,0,2,0,1,0,2,1,1,0,2,0,1,1,0,0,1,1,1,1,0,0,2,0,0,1,1,0,2,1,1,1,0,0,2,0,0,0,1,2,1,0,1,0,1,0,2,0,0,1,2,1,1,0,1,0,0,0,2,1,0,1,1,0,2,1,0,0,0,1,2,0,2,1,0,0,1,0,1,1,0,0,2,1
 
 mov $4,$0
 mov $2,$0
+add $2,2
+div $2,2
 lpb $2
   sub $2,1
   mov $0,$4

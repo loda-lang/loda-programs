@@ -1,6 +1,7 @@
 ; A249051: The smallest integer > 1 of exactly n consecutive integers divisible respectively by the first n natural numbers (A000027), or 0 if no such number exists.
 ; Submitted by ChelseaOilman
 ; 2,3,7,13,0,61,421,841,0,2521,0,27721,0,0,360361,720721,0,12252241,0,0,0,232792561,0,5354228881,0,26771144401,0,80313433201,0,2329089562801,72201776446801,0,0,0,0,144403552893601,0,0,0,5342931457063201,0
+; Formula: a(n) = (A328449(n+1)+1)/A001221(n+1)
 
 add $0,1
 mov $1,$0
