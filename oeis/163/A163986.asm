@@ -1,0 +1,13 @@
+; A163986: Sum of all repeated parts of all partitions of n.
+; Submitted by Science United
+; 0,0,2,4,13,26,55,92,161,253,401,595,901,1288,1863,2611,3665,5016,6895,9273,12501,16591,22001,28820,37753,48901,63285,81217,104049,132328,168061,212041,267105,334654,418473,520836,647101,800496,988495,1216138,1493441,1827822,2233225,2720138,3307613,4010941,4855577,5863345,7069009,8502628,10211201
+; Formula: a(n) = n*A000041(n)-(A163985(n)-1)-1
+
+mov $1,$0
+seq $1,163985 ; Sum of all isolated parts of all partitions of n.
+sub $1,1
+mov $2,$0
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $0,$2
+sub $0,$1
+sub $0,1
