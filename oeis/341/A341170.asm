@@ -1,0 +1,21 @@
+; A341170: Numbers that when divided by the sum of their digits leave 3 as remainder.
+; Submitted by Simon Strandgaard (M1)
+; 15,23,31,33,35,39,47,51,52,59,73,75,78,94,103,105,107,113,115,123,141,146,147,163,168,183,185,203,211,213,219,231,241,245,251,253,255,258,259,291,303,304,321,323,327,328,343,344,348,363,377,393,411,430,433,435,437,438,443,445
+
+mov $2,$0
+add $2,4
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,70635 ; a(n) = n mod (sum of digits of n).
+  cmp $3,3
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1

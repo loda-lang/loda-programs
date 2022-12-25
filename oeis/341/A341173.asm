@@ -1,0 +1,23 @@
+; A341173: Numbers that when divided by the sum of their digits leave 6 as remainder.
+; Submitted by Simon Strandgaard (M1)
+; 34,46,58,62,66,83,96,134,136,138,160,174,175,182,186,206,223,226,246,276,278,281,282,292,316,318,350,354,356,358,366,380,390,406,409,412,422,426,456,462,482,489,526,534,546,570,584,591,595,601,606,608,636,642,643,646,678,681,686,688
+
+mov $2,$0
+add $2,8
+pow $2,2
+add $0,6
+mov $1,16
+lpb $2
+  mov $3,$1
+  seq $3,70635 ; a(n) = n mod (sum of digits of n).
+  cmp $3,6
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,6
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1
