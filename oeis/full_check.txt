@@ -524,6 +524,7 @@ A327207: Positions of 1's in {A327205(n) : n > 0}.
 A327257: Positions of 0's in {A327256(n) : n > 0}.
 A327299: Positions of 0's in {A327298(n) : n > 0}.
 A327300: Positions of 1's in {A327298(n) : n > 0}.
+A327301: Positions of 2's in {A327298(n) : n > 0}.
 A327527: Number of uniform divisors of n.
 A327829: Squarefree numbers with a prime number of prime factors.
 A328308: a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.

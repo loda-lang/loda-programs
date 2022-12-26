@@ -8,8 +8,17 @@ lpb $0
   mov $4,$2
   mov $2,$1
   add $3,1
-  mov $1,$3
-  seq $1,10135 ; Continued fraction for sqrt(45).
+  mov $5,$3
+  gcd $5,6
+  lpb $1
+    mov $1,$5
+    sub $1,1
+    mul $5,2
+    trn $5,6
+    add $5,2
+  lpe
+  sub $1,1
+  add $1,$5
   mul $1,$2
   add $1,$4
 lpe

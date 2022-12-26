@@ -1,9 +1,10 @@
 ; A112967: Sum(Omega(i)*Omega(j): i+j=n), with Omega=A001222.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,0,0,1,2,5,6,10,10,17,18,26,24,33,30,41,38,52,46,64,54,71,62,87,70,91,80,106,90,116,100,130,112,139,120,163,130,161,144,185,152,190,162,208,172,205,178,244,186,232,208,262,212,267,218,291,246,287,248,329,252,311,274,347,276,352,292,376,312,370,310,430,324,395,348,432,342,434,358,474,388,451,380,513,396,477,422,531,424,529,430,546,462,529,452,617,472,556,506,615
 
-mov $2,$0
+mov $2,1
 mov $10,1
+add $0,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -12,19 +13,17 @@ lpb $0
   add $4,1
   lpb $4
     sub $4,1
-    max $4,2
     mov $7,$4
-    div $7,2
-    seq $7,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+    trn $7,1
+    seq $7,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
     mov $9,10
     add $9,$5
     min $10,$0
-    sub $4,$0
     mul $7,$$9
+    gcd $4,$10
     add $5,1
     add $6,$7
   lpe
-  mov $9,10
   add $9,$2
   mov $3,$6
   mov $$9,$3

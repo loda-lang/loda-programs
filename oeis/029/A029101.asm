@@ -5,10 +5,18 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25780 ; Expansion of 1/((1-x)(1-x^5)(1-x^11)).
-  sub $0,1
-  trn $0,8
-  add $1,$2
+  lpb $2
+    mov $1,$2
+    mul $1,2
+    mov $4,$1
+    mul $1,2
+    div $1,5
+    div $4,2
+    sub $4,$1
+    trn $2,9
+    add $3,$4
+  lpe
+  sub $0,4
+  trn $0,7
 lpe
-mov $0,$1
+mov $0,$3

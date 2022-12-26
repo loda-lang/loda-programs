@@ -9,7 +9,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   max $0,0
-  seq $0,5370 ; a(n) = Fibonacci(Fibonacci(n+1)+1).
+  seq $0,5370 ; a(n) = Fibonacci(Fibonacci(n+1) + 1).
   add $1,$2
   mov $2,$0
 lpe

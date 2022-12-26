@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25879 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^10)).
+  seq $2,25879 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^10)).
   add $1,$2
   mov $3,9
 lpe

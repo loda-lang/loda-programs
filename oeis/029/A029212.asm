@@ -5,8 +5,13 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
+  add $2,1
+  mov $3,$2
+  mul $2,2
+  div $2,5
+  div $3,2
+  sub $3,$2
+  mov $2,$3
   add $2,1
   bin $2,2
   trn $0,12
