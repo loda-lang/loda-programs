@@ -1,5 +1,6 @@
 ; A115562: a(n) = number of distinct squarefree ternary (cyclic) sequences uniquely containing every possible length-n substring.
 ; 2,3,0,6,0,0,0,0,0,0
+; Formula: a(n) = binomial(n*n^2+2,n^n)%10
 
 mov $1,$0
 mov $2,$0

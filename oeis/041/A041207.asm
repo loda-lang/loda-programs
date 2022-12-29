@@ -8,8 +8,16 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  mov $1,$3
-  seq $1,10126 ; Continued fraction for sqrt(22).
+  mov $6,6
+  gcd $6,$3
+  lpb $1
+    mov $1,0
+    mul $6,4
+    div $6,3
+    add $6,2
+  lpe
+  mov $1,$6
+  sub $1,2
   mov $5,$1
   div $1,3
   mul $1,6

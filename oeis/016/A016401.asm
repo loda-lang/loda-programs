@@ -1,5 +1,5 @@
 ; A016401: 403rd cyclotomic polynomial.
-; Submitted by PDW
+; Submitted by Kotenok2000
 ; 1,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,1,-1,0,0,0,0,0,0,1,-1,0,0,0,1,-1,0,0,0,0,0,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,1,-1,0,0,0,1,-1,0,0,0,1,-1,0,1,-1,1,-1,0,1,-1,0,0
 
 add $0,3
@@ -8,8 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,14040 ; Inverse of 31st cyclotomic polynomial.
+  seq $2,14022 ; Inverse of 13th cyclotomic polynomial.
   add $1,$2
-  mov $3,10
+  mov $3,28
 lpe
 mov $0,$1

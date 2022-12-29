@@ -6,9 +6,8 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+mov $2,5
+pow $2,$0
 bin $1,$0
-lpb $0
-  sub $0,1
-  mul $1,5
-lpe
+mul $1,$2
 mov $0,$1

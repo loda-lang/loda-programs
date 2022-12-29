@@ -1,5 +1,5 @@
 ; A085252: Number of ways to write n as sum of two powerful numbers (A001694).
-; Submitted by Landjunge
+; Submitted by Kotenok2000
 ; 0,1,0,0,1,0,0,1,1,1,0,1,1,0,0,1,2,1,0,1,0,0,0,1,1,1,0,1,1,0,1,1,2,1,1,2,1,0,0,2,2,0,1,1,1,0,0,1,0,2,0,2,1,1,0,0,2,1,1,0,1,0,1,1,2,0,0,2,0,0,0,2,2,1,0,2,0,0,0,2,2,1,0,0,2,0,0,1,2,1,1,0,0,0,0,1,2,1,1,1
 
 mov $2,1
@@ -15,9 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,92261 ; Sum of unitary, squarefree divisors of n, including 1.
-    sub $7,1
-    cmp $7,0
+    seq $7,112526 ; Characteristic function for powerful numbers.
     mov $9,10
     add $9,$5
     min $10,$0

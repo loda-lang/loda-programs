@@ -1,20 +1,14 @@
 ; A071089: Remainder when sum of first n primes is divided by n-th prime.
+; Submitted by Kotenok2000
 ; 0,2,0,3,6,2,7,1,8,13,5,12,33,23,46,10,27,13,32,0,55,1,44,73,90,50,28,87,63,11,69,17,70,42,41,11,72,139,75,146,44,8,9,164,88,48,7,201,121,79,224,92,46,57,170,26,145,95,216,112,58,71,293,185,129,13,255,81,128,68,297,111,222,30,211,79,264,389,253,382,32,381,21,380,158,6,221,366,210,130,433,420,92,415,79,410,152,145,57,329
 
-mov $2,$0
-add $2,1
-pow $2,2
-lpb $2
-  sub $2,1
-  add $1,$0
-  mov $3,$5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  add $5,1
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+  add $1,$2
 lpe
-mod $1,$5
 mov $0,$1
+add $0,2
+mod $0,$2

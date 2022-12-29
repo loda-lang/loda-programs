@@ -1,23 +1,18 @@
 ; A124981: Odd numbers that are not the sum of 2 squares.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 3,7,11,15,19,21,23,27,31,33,35,39,43,47,51,55,57,59,63,67,69,71,75,77,79,83,87,91,93,95,99,103,105,107,111,115,119,123,127,129,131,133,135,139,141,143,147,151,155,159,161,163,165,167,171,175,177,179,183,187,189,191,195,199,201,203,207,209,211,213,215,217,219,223,227,231,235,237,239,243,247,249,251,253,255,259,263,267,271,273,275,279,283,285,287,291,295,297,299,301
 
-mov $1,1
+add $0,1
+mov $1,2
 mov $2,$0
-mul $2,4
+pow $2,4
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,113446 ; Expansion of (phi(q)^2 - phi(q^3)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
-  max $3,0
+  seq $3,113652 ; Expansion of (1 - theta_4(q)^2) / 4 in powers of q.
   cmp $3,0
   sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,2
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,2
+add $0,1
