@@ -1,16 +1,18 @@
 ; A166037: Numbers that are the sum of 2 successive nonprimes A141468.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,5,10,14,17,19,22,26,29,31,34,38,41,43,46,49,51,53,55,58,62,65,67,69,71,74,77,79,82,86,89,91,94,97,99,101,103,106,109,111,113,115,118,122,125,127,129,131,134,137,139,142,146,149,151,153,155,158,161,163,166,169,171,173,175,178,181,183,185,187,189,191,194,197,199,202,206,209,211,214,218,221,223,226,229,231,233,235,237,239,241,243,245,247,249,251,254,257,259,262
 
-mov $2,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$2
-  add $0,$3
-  max $0,0
-  seq $0,176100 ; Even numbers that are not semiprimes, or, twice the nonprimes.
-  add $1,$0
+mov $3,3
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  mul $4,$1
+  add $1,$2
+  mov $3,1
+  add $3,$4
+  add $4,1
 lpe
 mov $0,$1
-div $0,2

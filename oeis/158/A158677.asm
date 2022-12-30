@@ -1,11 +1,11 @@
 ; A158677: Period 6: repeat [3, 4, 0, 5, 6, 3].
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5,6,3,3,4,0,5
 
 mod $0,6
 lpb $0
   mov $2,$0
-  seq $2,6094 ; Products of 2 successive primes.
+  seq $2,90368 ; a(1) = 1; for n > 1, smallest divisor > 1 of 2n-1.
   sub $2,2
   mod $0,2
   mov $1,$2
