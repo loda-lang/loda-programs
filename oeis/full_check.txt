@@ -215,6 +215,7 @@ A108029: Numbers n such that 149*k + 151 is prime.
 A108342: Numbers n such that 1009*n - 997 is prime.
 A109512: Integers which are not the sum of n and A001462(n).
 A109768: a(n) = gcd(3^n-2,2^n-3).
+A110382: Numbers which are sum of distinct unary numbers (containing only ones), i.e., numbers which are sum of distinct numbers of the form (10^k - 1)/9.
 A110661: Triangle read by rows: T(n,k) = total number of divisors of k, k+1, ..., n (1 <= k <= n).
 A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A111701: Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
@@ -498,6 +499,7 @@ A308898: Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
 A302253: Positions of 3 in A190436.
 A307743: a(n) = Sum_{k=1..n} A307742(k).
 A317047: Numbers k such that both k and k + 1 are deficient.
+A317048: Numbers k such that both k and k + 2 are consecutive deficient numbers.
 A317108: Numbers missing from A317106.
 A317621: Numbers missing from A317619.
 A317622: Numbers missing from A317620.
