@@ -11,7 +11,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,2121 ; source=parameter 3
+    seq $7,47654 ; source=parameter 3
     mov $9,10
     add $9,$5
     min $10,$0

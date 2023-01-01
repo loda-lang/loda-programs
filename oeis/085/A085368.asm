@@ -1,19 +1,24 @@
 ; A085368: Sum of numerators and denominators of convergents to 1/e.
-; Submitted by Jamie Morken(w1)
+; Submitted by Kotenok2000
 ; 3,4,11,15,26,119,145,264,1729,1993,3722,31769,35491,67260,708091,775351,1483442,18576655,20060097,38636752,560974625,599611377,1160586002,19168987409,20329573411,39498560820,731303668171,770802228991,1502105897162,30812920172231
 
 mov $1,2
-mov $2,2
-add $0,1
+mov $2,1
+add $0,2
 lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  add $3,1
   mov $1,$3
-  seq $1,3417 ; Continued fraction for e.
+  mul $1,2
+  mov $5,5
+  sub $5,$1
+  dif $5,3
+  add $1,$5
+  sub $1,2
+  div $1,2
   mul $1,$2
   add $1,$4
-  add $3,1
 lpe
 mov $0,$1
-div $0,2

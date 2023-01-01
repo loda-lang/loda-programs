@@ -1,6 +1,7 @@
 ; A121152: Dimension of the space spanned by the symmetric functions L_lambda of Gessel and Reutenauer, where lambda ranges over all partitions of n.
 ; Submitted by den777
 ; 1,1,2,3,4,6,10,13,19,26,38,52,70,91,123,161
+; Formula: a(n) = -A352457(max(n-1,0))+A000041(max(n-1,0)+1)
 
 trn $0,1
 mov $1,$0

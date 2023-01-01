@@ -1,5 +1,5 @@
 ; A035180: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -10.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,0,1,1,0,2,1,1,1,2,0,2,2,0,1,0,1,2,1,0,2,2,0,1,2,0,2,0,0,0,1,0,0,2,1,2,2,0,1,2,0,0,2,1,2,2,0,3,1,0,2,2,0,2,2,0,0,2,0,0,0,2,1,2,0,0,0,0,2,0,1,0,2,0,2,4,0,0,1,1,2,0,0,0,0,0,2,2,1,4,2,0,2,2,0,0,3,2,1
 
 mov $2,$0
@@ -15,9 +15,8 @@ lpb $4
   bin $1,$0
   mov $5,$0
   seq $5,188510 ; Expansion of x*(1 + x^2)/(1 + x^4) in powers of x.
-  mul $0,2
-  pow $0,2
-  seq $0,253262 ; Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
+  mul $0,$1
+  seq $0,100047 ; A Chebyshev transform of the Fibonacci numbers.
   mul $0,$5
   mul $1,$0
   add $3,$1

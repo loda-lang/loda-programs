@@ -1,12 +1,17 @@
 ; A036605: a(n) = a(n-2) + 2*a(n-3) + a(n-4).
-; Submitted by Jamie Morken(s2)
+; Submitted by Christian Krause
 ; 1,4,4,7,13,19,31,52,82,133,217,349,565,916,1480,2395,3877,6271,10147,16420,26566,42985,69553,112537,182089,294628,476716,771343,1248061,2019403,3267463,5286868,8554330,13841197,22395529,36236725
+; Formula: a(n) = 3*(b(n)/2)+1, b(n) = b(n-1)+b(n-2), b(1) = 2, b(0) = 1
 
-add $0,1
-min $0,36
-seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
-sub $0,5
-mul $0,2
-div $0,4
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,1
+  mov $3,$1
+  mov $1,$2
+  add $2,$3
+lpe
+div $2,2
+mov $0,$2
 mul $0,3
-sub $0,2
+add $0,1

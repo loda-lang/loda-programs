@@ -1,5 +1,5 @@
 ; A083899: Number of divisors of n with largest digit <= 4 (base 10).
-; Submitted by Science United
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,2,3,1,3,1,3,2,3,2,5,2,3,2,3,1,3,1,5,3,4,2,6,1,3,2,4,1,5,2,4,4,3,1,5,1,2,3,6,2,6,2,6,2,3,1,6,1,3,2,4,1,3,2,4,2,2,1,8,1,3,3,4,2,6,1,4,3,4,1,6,1,2,2,3,2,4,1,6,2,3,1,8,1,3,2,6,1,5,2,4,3,2,1,7,1,3,4,6
 
 mov $2,$0
@@ -10,16 +10,17 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  gcd $1,$4
+  gcd $0,$4
   bin $1,$0
   seq $0,54055 ; Largest digit of n.
-  sub $0,1
-  max $0,3
+  add $0,2
+  max $0,6
   mul $1,$0
-  bin $1,3
-  mul $1,2
-  cmp $1,2
+  cmp $1,6
   add $3,$1
 lpe
+mul $3,2
 mov $0,$3
-add $0,1
+sub $0,2
+div $0,2
+add $0,2

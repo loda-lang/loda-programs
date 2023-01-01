@@ -14,8 +14,8 @@ lpb $1
     mov $3,$0
     max $3,0
     seq $3,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
+    sub $0,$1
   lpe
-  sub $0,$1
   div $1,$3
 lpe
 mov $0,$3

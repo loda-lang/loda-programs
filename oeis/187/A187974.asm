@@ -1,24 +1,16 @@
 ; A187974: Positions of 1 in A187972; complement of A187973.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,4,6,7,9,11,12,13,14,16,18,19,21,23,24,25,26,28,30,31,33,35,36,38,40,41,42,43,45,47,48,50,52,53,54,55,57,59,60,62,64,65,67,69,70,71,72,74,76,77,79,81,82,83,84,86,88,89,91,93,94,95,96,98,100,101,103,105,106,108,110,111,112,113,115,117,118,120,122,123,124,125,127,129,130,132,134,135,137,139,140,141,142,144,146,147,149,151,152
 
-add $0,1
-mov $1,1
 mov $2,$0
-pow $2,4
+pow $2,2
 lpb $2
-  mov $4,$1
-  seq $4,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   mov $3,$1
-  add $3,4
-  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  add $3,$4
-  add $3,1
-  seq $3,77431 ; n repeated in decimal representation, but separated by enough zeros that the square has the pattern (n^2)(2n^2)(n^2).
-  mod $3,2
-  cmp $3,0
-  sub $0,$3
+  seq $3,187973 ; Positions of 0 in A187972; complement of A187974.
+  sub $3,1
+  add $0,1
   add $1,1
+  add $2,$3
   sub $2,$0
 lpe
-mov $0,$1
+add $0,1
