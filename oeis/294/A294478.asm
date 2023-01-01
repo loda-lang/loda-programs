@@ -17,7 +17,7 @@ lpb $0
     add $2,$7
     gcd $7,$2
     cmp $7,$$9
-    add $5,3
+    add $5,8
     add $6,1
     add $6,$7
   lpe

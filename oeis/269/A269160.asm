@@ -4,18 +4,16 @@
 
 mov $2,$0
 mov $4,1
-mov $5,$0
-seq $5,213064 ; Bitwise AND of 2n with the one's-complement of n.
-add $0,$5
-mul $0,2
+mul $0,4
 lpb $0
   mov $3,$0
+  dif $3,2
   add $3,$2
   mod $3,2
   mul $3,$4
+  mul $4,2
   div $0,2
   add $1,$3
   div $2,2
-  mul $4,2
 lpe
 mov $0,$1

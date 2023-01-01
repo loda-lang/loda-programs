@@ -1,6 +1,7 @@
 ; A353212: Hadwiger number of the n-path complement graph.
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,3,4,5,6,7,7,8,9,10,10,11
+; Formula: a(n) = ((a(n-5)+1)/2+2)%2+a(n-2)+1, a(4) = 3, a(3) = 2, a(2) = 2, a(1) = 1, a(0) = 1
 
 mov $1,1
 lpb $0

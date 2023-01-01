@@ -9,16 +9,13 @@ lpb $2
     add $3,$1
     add $1,3
   lpe
-  lpb $1
-    sub $1,1
-    add $0,1
-  lpe
+  add $0,$1
+  min $1,0
   sub $2,1
 lpe
 add $0,$3
 add $0,$3
-lpb $4
-  sub $4,1
-  add $0,1071
-lpe
+mov $5,1071
+mul $5,$4
+add $0,$5
 add $0,1029

@@ -1,6 +1,7 @@
 ; A228720: Number of partitions in the first n compositions of j, according with the ordering of A228525, if 1<=n<=2^(j-1).
 ; Submitted by LeonsDev
 ; 1,2,2,3,3,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,7,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15
+; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A326956(n), b(0) = 0
 
 lpb $0
   mov $2,$0

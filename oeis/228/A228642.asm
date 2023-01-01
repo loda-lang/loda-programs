@@ -1,6 +1,7 @@
 ; A228642: Squares of primes mod 100.
 ; Submitted by Skillz
 ; 1,4,9,21,25,29,41,49,61,69,81,89
+; Formula: a(n) = ((A210251(max(n-1,0))+n)/A210251(max(n-1,0)))^2+A210251(max(n-1,0))-1
 
 mov $1,$0
 trn $0,1

@@ -1,23 +1,16 @@
 ; A287028: {0->101, 1->010}-transform of the Sturmian word A080764.
-; Submitted by mmonnin
+; Submitted by Kotenok2000
 ; 0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1
 
+add $0,1
 mov $2,$0
-add $2,2
+pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,187969 ; a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=3, [ ]=floor.
-  add $3,1
-  add $3,$4
-  gcd $3,2
-  sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  sub $0,1
-  mul $2,$4
-  sub $2,1
+  seq $3,286991 ; Positions of 0 in A286990; complement of A286992.
+  bin $3,$0
+  add $1,1
+  add $2,$3
+  sub $2,$0
 lpe
-add $0,1
+mov $0,$3

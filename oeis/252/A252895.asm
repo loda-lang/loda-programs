@@ -7,8 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
-  mod $3,2
+  seq $3,353519 ; a(n) = 1 if n has an odd number of square divisors, otherwise 0.
   sub $0,$3
   add $1,1
   sub $2,$0

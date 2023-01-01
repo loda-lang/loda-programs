@@ -7,10 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,1704 ; a(n) = n concatenated with n + 1.
+  add $3,1
+  seq $3,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
   sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   cmp $3,0
   sub $0,$3
   add $1,1

@@ -1,6 +1,7 @@
 ; A247397: Numbers n such that when n unit-diameter circles are arranged non-overlapping in the plane, and those circles are then enclosed in a rectangle, the area of the rectangle must be at least n.
 ; Submitted by Christian Krause
 ; 1,2,3,4,5,6,7,8,9,10,12,13
+; Formula: a(n) = ((((2*n+5)/8-6)+n+5)/11+n+6)-5
 
 mov $1,$0
 add $0,5

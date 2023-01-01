@@ -1,6 +1,7 @@
 ; A204114: Symmetric matrix based on f(i,j) = gcd(L(i), L(j)), where L=A000032 (Lucas numbers), by antidiagonals.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,3,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,3,1,7,1,3,1,1,1,2,1,1,2,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,4,1,1,18,1,1,4,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,29,1,1,1,1,1,1,1,1,2,1,1,2,1
+; Formula: a(n) = gcd(A104765(n),A108035(n))
 
 mov $1,$0
 seq $1,108035 ; Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n times.

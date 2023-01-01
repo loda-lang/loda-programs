@@ -1,6 +1,7 @@
 ; A327477: Number of subsets of {1..n} containing n whose mean is not an element.
 ; Submitted by aendgraend
 ; 0,0,1,2,6,12,26,54,112,226,460,930,1876,3780,7606,15288,30720,61680,123786,248346,498072,998636,2001826,4011942,8039072
+; Formula: a(n) = (2^max(n-1,0)-A096010(max(n-1,0)))+1
 
 trn $0,1
 mov $1,2

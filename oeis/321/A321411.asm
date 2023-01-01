@@ -1,6 +1,7 @@
 ; A321411: Number of non-isomorphic self-dual multiset partitions of weight n with no singletons, with aperiodic parts whose sizes are relatively prime.
 ; Submitted by Ralfy
 ; 1,0,0,0,0,1,0,4,6,16,25
+; Formula: a(n) = ((((n-3)*((n-3)/2)+n-3)/2-2*((n-3)/3))^2)/4
 
 sub $0,3
 mov $2,$0

@@ -12,6 +12,6 @@ lpb $0
   mov $1,$0
   seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $1,$2
-  mul $0,2
+  mul $0,0
 lpe
 mov $0,$1

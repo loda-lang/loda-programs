@@ -1,6 +1,7 @@
 ; A351564: a(n) = 1 if all the exponents in the prime factorization of n are distinct, and 0 otherwise.
 ; Submitted by fpar
 ; 1,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,0,1,0,1,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,1,1,1,1,0
+; Formula: a(n) = binomial(1,A003557(A181819(n)-1))
 
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 sub $0,1
