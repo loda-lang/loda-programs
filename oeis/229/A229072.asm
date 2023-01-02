@@ -1,0 +1,28 @@
+; A229072: Lexicographically earliest sequence of distinct natural numbers such that, for any number n in the sequence, the positions of the 1's in the binary representation of n are in the sequence, whereas the positions of the 0's are not.
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; 1,4,9,18,36,72,144,289,578,1156,2312,4624,9248,18496,36992,73984,147969,295938,591876,1183752,2367504,4735008,9470016,18940032,37880064,75760128,151520256,303040512,606081024,1212162048,2424324096,4848648192,9697296384,19394592768,38789185537,77578371074,155156742148,310313484296,620626968592,1241253937184,2482507874368,4965015748736,9930031497472,19860062994944,39720125989888,79440251979776,158880503959552,317761007919104,635522015838208,1271044031676416,2542088063352832,5084176126705664
+
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $5,0
+  add $6,$3
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $3,1
+    gcd $7,$2
+    cmp $7,$$9
+    add $3,1
+    add $5,2
+    add $6,$7
+  lpe
+  add $6,1
+  add $3,$6
+  mov $$9,$3
+lpe
+mov $0,$3
+add $0,1

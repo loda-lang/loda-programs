@@ -1,0 +1,9 @@
+; A272207: Number of solutions to the congruence y^2 == x^3 + x^2 + 4*x + 4 (mod p) as p runs through the primes.
+; Submitted by Science United
+; 2,5,6,5,11,11,23,23,17,23,35,35,35,53,53,59,47,59,65,83,71,71,77,95,95,95,89,113,107,119,125,131,119,143,155,131,179,173,149,179,191,191,203,167,179,191,227,233,233,215,239,263,227,251,263,281,251,251,251,275,269,323,305,299,335,323,323,335,377,359,335,335,389,347,407,377,395,395,431,443,383,395,395,431,431,437,443,431,431,449,497,503,461,491,503,521,503,527,509,527
+; Formula: a(n) = -A273163(n)+A000040(n)
+
+mov $1,$0
+seq $1,273163 ; P-defects p - N(p) of the congruence y^2 == x^3 + x^2 + 4*x + 4 (mod p) for primes p, where N(p) is the number of solutions given for p = prime(n) by A272207(n).
+seq $0,40 ; The prime numbers.
+sub $0,$1
