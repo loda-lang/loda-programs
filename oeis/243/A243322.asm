@@ -1,6 +1,6 @@
 ; A243322: Number of simple connected graphs with n nodes that are distance regular and Eulerian.
 ; 1,0,1,1,2,2,2,3,4,4
-; Formula: a(n) = (n-(2*n^2-2)%3)/2
+; Formula: a(n) = (-((2*n^2-2)%3)+n)/2
 
 mov $1,$0
 mul $1,2

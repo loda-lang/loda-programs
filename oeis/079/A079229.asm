@@ -1,7 +1,7 @@
 ; A079229: Least k>0 such that rad(n+k) > rad(n), where rad is the squarefree kernel (A007947).
 ; Submitted by amazing
 ; 1,1,2,1,1,1,3,1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,3,2,1,3,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,3,2,1,1,4,1,1,1,2,1,2,1,2,1,1,1,2,1,1,3,2,1,1,1,2,1,1,1,2,1,1,3,1,1,1,1,3,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,4,1,2,1
-; Formula: a(n) = A079228(n)-n-1
+; Formula: a(n) = -n+A079228(n)-1
 
 mov $1,$0
 seq $0,79228 ; Least number > n with greater squarefree kernel than that of n.

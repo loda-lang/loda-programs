@@ -1,3 +1,5 @@
+A000004: The zero sequence.
+A000012: The simplest sequence of positive numbers: the all 1's sequence.
 A000065: -1 + number of partitions of n.
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
@@ -202,6 +204,7 @@ A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
 A089241: Even numbers k such that k/2 - 1 is prime.
 A089250: Add 2 (mod 10) to each decimal digit of Pi.
+A090076: a(n) = prime(n)*prime(n+2).
 A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
 A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
@@ -251,6 +254,8 @@ A108605: Semiprimes with prime sum of factors: twice the lesser of the twin prim
 A109722: Sum of first 2n primes.
 A109763: Primes repeated.
 A110833: a(n) = (prime(n)+1)^2.
+A111741: Distance between k*(n-th prime) and next prime, k=9 case.
+A111742: Distance between k*(n-th prime) and next prime, k=10 case.
 A113935: a(n) = prime(n) + 3.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
@@ -354,6 +359,7 @@ A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
 A200905: a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
+A215848: Primes > 3.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).

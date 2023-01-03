@@ -1,6 +1,7 @@
 ; A016329: 126th cyclotomic polynomial.
 ; Submitted by zombie67 [MM]
 ; 1,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,-1,0,0,-1,0,0,0,0,0,1,0,0,1
+; Formula: a(n) = A011638(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
