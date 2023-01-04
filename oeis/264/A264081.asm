@@ -1,6 +1,7 @@
 ; A264081: The sum of the 2 X 2 idempotent matrices over Z/nZ is congruent to {{a(n),0}, {0,a(n)}} (mod n).
 ; Submitted by Loda
 ; 0,0,1,1,1,2,1,1,1,8,1,2,1,8,14,1,1,8,1,16,7,8,1,14,1,8,1,26,1,22,1,1,14,8,18,26,1,8,1,8,1,14,1,26,5,8,1
+; Formula: a(n) = (A226756(n)/2)%(n+1)
 
 mov $1,$0
 add $1,1

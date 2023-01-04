@@ -1,6 +1,7 @@
 ; A102690: Number of n-expodigital numbers (i.e., numbers m such that m^n has exactly n decimal digits).
 ; Submitted by Jamie Morken(s3)
 ; 10,6,5,4,3,3,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = (-3*n+n+37)/((3*n+9)/2)+1
 
 mov $1,3
 mul $1,$0

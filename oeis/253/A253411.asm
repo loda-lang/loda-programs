@@ -7,6 +7,6 @@ mov $1,$0
 mod $1,2
 mul $0,2
 add $0,$1
-seq $0,129557 ; Numbers k>0 such that k^2 is a centered pentagonal number (A005891).
+seq $0,129557 ; Numbers k > 0 such that k^2 is a centered pentagonal number (A005891).
 div $0,2
 add $0,1
