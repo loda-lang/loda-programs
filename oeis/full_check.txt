@@ -138,6 +138,7 @@ A056624: Number of unitary square divisors of n.
 A056671: 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
+A063574: Number of steps to reach an integer == 1 (mod 4) when iterating the map n -> 3n/2 if n even or (3n+1)/2 if n odd.
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065331: Largest 3-smooth divisor of n.
