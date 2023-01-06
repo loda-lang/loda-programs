@@ -1,0 +1,12 @@
+; A359423: The least common multiple of the arithmetic derivative and the primorial base exp-function.
+; Submitted by Science United
+; 0,0,3,6,36,18,5,10,60,30,315,90,400,50,225,600,7200,450,2625,250,3000,750,14625,2250,27500,1250,1875,33750,180000,11250,217,14,1680,42,1197,252,420,70,105,1680,21420,630,7175,350,8400,13650,1575,3150,14000,1750,7875,10500,63000,15750,354375,70000,1207500,288750,1220625,78750,4508,98,1617,4998,28224,882,14945,490,17640,19110,130095,4410,191100,2450,47775,80850,176400,22050,434875,12250,3234000,661500,2370375,110250,3797500,673750,275625,2940000,1102500,551250,42189,6860,32928,34986,3087,24696
+
+mov $1,$0
+seq $1,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+add $2,$0
+gcd $0,$1
+dif $2,$0
+mul $1,$2
+mov $0,$1
