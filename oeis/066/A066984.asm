@@ -1,12 +1,19 @@
 ; A066984: a(n) = gcd(prime(n+1) - 1, prime(n) + 1).
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 1,4,6,2,12,2,18,2,4,30,4,2,42,2,4,2,60,2,2,72,2,2,4,6,2,102,2,108,2,6,2,4,138,4,150,4,2,2,4,2,180,2,192,2,198,10,2,2,228,2,2,240,2,4,2,4,270,4,2,282,4,6,2,312,2,6,4,2,348,2,2,6,4,2,2,4,6,2,6,2,420,2,432,2,2,4,6,2,462,2,2,6,2,6,2,4,10,522,4,2
 
-mov $1,$0
-seq $0,40 ; The prime numbers.
 add $0,1
-add $1,1
-seq $1,40 ; The prime numbers.
+seq $0,40 ; The prime numbers.
+mov $1,$0
+div $0,2
+mul $0,2
+lpb $0
+  sub $0,1
+  mov $2,$0
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $0,$2
+lpe
+add $0,1
 sub $1,1
 gcd $1,$0
 mov $0,$1

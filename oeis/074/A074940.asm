@@ -1,16 +1,17 @@
 ; A074940: Numbers having at least one 2 in their ternary representation.
-; Submitted by Jason Jung
+; Submitted by Science United
 ; 2,5,6,7,8,11,14,15,16,17,18,19,20,21,22,23,24,25,26,29,32,33,34,35,38,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,83,86,87,88,89,92,95,96,97,98,99,100,101,102,103,104,105,106,107,110,113,114,115,116,119,122,123,124,125,126,127,128,129,130,131
 
-lpb $0
-  sub $0,1
-  mov $1,$2
-  div $1,3
-  seq $1,39968 ; An example of a d-perfect sequence.
-  cmp $1,0
-  mul $1,2
-  sub $0,$1
-  add $2,3
+mov $2,$0
+pow $2,2
+lpb $2
+  add $1,2
+  mov $3,$1
+  seq $3,96304 ; Numbers k such that 3k does not divide (6k-4)!/((3k-2)!*(3k-1)!).
+  sub $3,1
+  add $0,2
+  add $1,1
+  add $2,$3
+  sub $2,$0
 lpe
-add $0,$2
 add $0,2

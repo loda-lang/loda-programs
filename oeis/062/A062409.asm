@@ -1,5 +1,5 @@
 ; A062409: Numbers k such that floor(e*k) is prime.
-; Submitted by ATS
+; Submitted by pututu
 ; 1,2,5,7,11,16,22,25,27,33,36,38,47,55,58,60,64,66,86,88,89,97,99,100,102,108,113,122,124,128,130,141,155,163,172,192,205,216,227,228,236,258,261,270,272,280,283,303,305,309,314,325,334,342,345,356,367,373,375,386,387,400,406,408,411,428,431,437,439,442,448,450,453,470,472,475,481,486,501,503,515,525,526,534,537,545,548,556,568,570,578,581,589,592,612,614,623,629,634,643
 
 mov $2,$0
@@ -7,15 +7,16 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,22843 ; Beatty sequence for e: a(n) = floor(n*e).
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-  cmp $3,1
+  seq $3,121384 ; a(n) = ceiling(n*e).
+  trn $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  trn $2,1
 lpe
 mov $0,$1
+sub $0,1

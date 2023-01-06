@@ -1,9 +1,18 @@
 ; A079921: Solution to the Dancing School Problem with n girls and n+2 boys: f(n,2).
-; Submitted by Gibson Praise
+; Submitted by ChelseaOilman
 ; 3,7,14,26,46,79,133,221,364,596,972,1581,2567,4163,6746,10926,17690,28635,46345,75001,121368,196392,317784,514201,832011,1346239,2178278,3524546,5702854,9227431,14930317,24157781,39088132,63245948,102334116,165580101
+; Formula: a(n) = b(n)/2+3, b(n) = -(c(n-1)/(-1))+b(n-1)+n+7, b(2) = 22, b(1) = 8, b(0) = 0, c(n) = c(n-1)/(-1)-(c(n-1)/(-1))+b(n-1)+n+4, c(2) = 14, c(1) = 5, c(0) = 0
 
-add $0,3
-mov $1,$0
-seq $0,192760 ; Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
-sub $0,$1
+lpb $0
+  sub $0,1
+  div $3,-1
+  sub $2,$3
+  add $2,$1
+  add $2,5
+  add $3,$2
+  add $1,1
+  add $2,3
+lpe
+mov $0,$2
 div $0,2
+add $0,3

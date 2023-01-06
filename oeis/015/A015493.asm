@@ -1,12 +1,8 @@
 ; A015493: Inverse of 1484th cyclotomic polynomial.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -(A016221(n)*(A264668(n)-1))
+; Formula: a(n) = A015997(A296891(n)-1)
 
-mov $1,$0
-seq $1,16221 ; Inverse of 2212th cyclotomic polynomial.
-seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+seq $0,296891 ; Numbers n whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
 sub $0,1
-mul $1,$0
-sub $2,$1
-mov $0,$2
+seq $0,15997 ; Inverse of 1988th cyclotomic polynomial.

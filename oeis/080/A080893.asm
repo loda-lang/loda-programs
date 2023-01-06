@@ -1,11 +1,18 @@
 ; A080893: E.g.f. exp(x*C(x)) = exp((1-sqrt(1-4*x))/2), where C(x) is the g.f. of the Catalan numbers A000108.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by Science United
 ; 1,1,3,19,193,2721,49171,1084483,28245729,848456353,28875761731,1098127402131,46150226651233,2124008553358849,106246577894593683,5739439214861417731,332993721039856822081,20651350143685984386753
-; Formula: a(n) = A001517(max(min(61,n-1),0))
+; Formula: a(n) = b(n-1), a(2) = 3, a(1) = 1, a(0) = 1, b(n) = 2*b(n-1)*(2*n-1)+b(n-2), b(2) = 19, b(1) = 3, b(0) = 1
 
-sub $0,1
-mov $1,61
-min $1,$0
-max $1,0
-seq $1,1517 ; Bessel polynomials y_n(x) (see A001498) evaluated at 2.
-mov $0,$1
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $4,$3
+  add $1,1
+  mov $3,$2
+  mul $2,2
+  mul $2,$1
+  add $2,$4
+  add $1,1
+lpe
+mov $0,$3

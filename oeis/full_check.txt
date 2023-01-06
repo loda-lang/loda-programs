@@ -353,6 +353,7 @@ A196224: Numbers n such that n^2 + n is not of the form x^2 + y^2 + z^2.
 A197878: a(n) = floor(2*(1 + sqrt(2))*n).
 A197879: Parity of floor(n*sqrt(8)).
 A202276: Number of integers k <= n such that sigma(x) = k has no solution, sigma = A000203.
+A202822: Numbers of the form 3*(x^2 + xy + y^2 + x + y) + 1 where x and y are integers.
 A204987: Least k such that n divides 2^k - 2^j for some j satisfying 1 <= j < k.
 A205866: Positions of multiples of 8 in A204922 (differences of Fibonacci numbers).
 A214971: Integers k for which the base-phi representation of k includes 1.

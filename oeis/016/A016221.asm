@@ -1,12 +1,8 @@
 ; A016221: Inverse of 2212th cyclotomic polynomial.
-; Submitted by Dr. Berthold Schaefer
+; Submitted by Science United
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = A015997(A296888(n)-1)
 
-mov $2,$0
-mov $1,2
-lpb $1
-  div $1,2
-  mov $0,$2
-  seq $0,16053 ; Inverse of 2044th cyclotomic polynomial.
-  mul $2,$1
-lpe
+seq $0,296888 ; Numbers n whose base-12 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+sub $0,1
+seq $0,15997 ; Inverse of 1988th cyclotomic polynomial.

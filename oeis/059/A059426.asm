@@ -1,8 +1,19 @@
 ; A059426: First differences of A026273.
-; Submitted by Skivelitis2
+; Submitted by NeoGen
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1
-; Formula: a(n) = gcd(A139764(n)^(-1),2)
 
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-pow $0,-1
-gcd $0,2
+mov $2,2
+add $0,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  add $1,1
+  div $1,2
+  mov $3,$1
+  gcd $3,4
+  dif $1,2
+  mul $2,2
+lpe
+mov $0,$3
+div $0,3
+add $0,1

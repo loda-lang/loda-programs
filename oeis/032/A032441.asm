@@ -1,9 +1,16 @@
 ; A032441: a(n) = Sum_{i=0..2} binomial(Fibonacci(n),i).
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,4,7,16,37,92,232,596,1541,4006,10441,27262,71254,186356,487579,1276004,3339821,8742472,22885996,59912932,156848617,410626154,1075018897,2814412826,7368190922,19290113572,50502074767,132215989336,346145696821,906220783316
-; Formula: a(n) = binomial(A000045(n)+1,2)+1
+; Formula: a(n) = b(n)+binomial(c(n),2)+1, b(n) = d(n-1), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = d(n-1), c(2) = 1, c(1) = 1, c(0) = 0, d(n) = d(n-1)+d(n-2), d(2) = 2, d(1) = 1, d(0) = 1
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $0,1
-bin $0,2
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $2,$3
+  add $3,$1
+  mov $1,$2
+lpe
+bin $2,2
+add $1,$2
+mov $0,$1
 add $0,1
