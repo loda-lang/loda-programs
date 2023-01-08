@@ -8,11 +8,11 @@ lpb $2
   sub $3,5 ; source=parameter 4
   cmp $3,2 ; source=parameter 5
   sub $0,$3
-  add $1,1
+  add $1,1 ; source=parameter 6
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1 ; source=parameter 6
+  sub $2,1 ; source=parameter 7
 lpe
 mov $0,$1

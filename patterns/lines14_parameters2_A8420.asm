@@ -2,9 +2,9 @@ add $0,2
 lpb $0
   mov $2,$0
   sub $0,2
-  add $2,13 ; source=parameter 0
+  add $2,7 ; source=parameter 0
   bin $2,$0
-  mov $3,16 ; source=parameter 1
+  mov $3,10 ; source=parameter 1
   bin $3,$1
   mul $3,$2
   add $0,1

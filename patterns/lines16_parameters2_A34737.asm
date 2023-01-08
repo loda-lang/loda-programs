@@ -9,7 +9,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,7953 ; source=parameter 1
+  seq $0,54599 ; source=parameter 1
   mul $1,$0
   add $3,$1
 lpe

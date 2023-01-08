@@ -1,8 +1,8 @@
+mov $1,1 ; source=parameter 0
 lpb $0
   mov $2,$0
-  seq $2,8 ; source=parameter 0
-  sub $0,1 ; source=parameter 1
+  seq $2,8 ; source=parameter 1
+  sub $0,1 ; source=parameter 2
   add $1,$2
 lpe
-add $1,1 ; source=parameter 2
 mov $0,$1

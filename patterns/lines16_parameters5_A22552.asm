@@ -3,7 +3,7 @@ add $2,10 ; source=parameter 0
 pow $2,2 ; source=parameter 1
 lpb $2
   mov $3,$1
-  seq $3,54054 ; source=parameter 2
+  seq $3,274274 ; source=parameter 2
   cmp $3,0 ; source=parameter 3
   sub $0,$3
   add $1,1 ; source=parameter 4

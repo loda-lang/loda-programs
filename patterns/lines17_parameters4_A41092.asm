@@ -12,6 +12,6 @@ lpb $0
   add $1,$5
   mul $1,$2
   add $1,$4
-  add $3,1
+  add $3,1 ; source=parameter 3
 lpe
 mov $0,$1
