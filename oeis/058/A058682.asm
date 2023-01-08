@@ -1,9 +1,13 @@
 ; A058682: a(n) = p(0) + p(1) + ... + p(n) - n - 1, where p = partition numbers, A000041.
-; Submitted by [AF] Kalianthys
+; Submitted by [SG]FX
 ; 0,0,1,3,7,13,23,37,58,87,128,183,259,359,493,668,898,1194,1578,2067,2693,3484,4485,5739,7313,9270,11705,14714,18431,22995,28598,35439,43787,53929,66238,81120,99096,120732,146746,177930,215267,259849,313022,376282,451456,540589,646146,770899,918171,1091695,1295920,1535862,1817450,2147380,2533534,2984809,3511631,4125784,4841003,5672822,6639288,7760792,9060947,10566445,12308074,14320631,16644150,19323838,22411572,25965916,30053883,34751087,40143869,46329557,53419056,61537319,70826409,81446271
-; Formula: a(n) = -n+A216053(n)-2
+; Formula: a(n) = a(n-1)+A000041(n)-1, a(0) = 0
 
-sub $1,$0
-seq $0,216053 ; a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
-sub $0,2
-add $0,$1
+lpb $0
+  mov $2,$0
+  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $2,1
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1

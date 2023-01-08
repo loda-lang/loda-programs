@@ -11,10 +11,12 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+  seq $0,166012 ; a(n) = 2*(A000045(n)-(n mod 2)) + 1 + (n mod 2).
+  div $0,2
+  add $0,$4
   add $3,$0
-  add $4,$3
+  mov $4,$0
 lpe
-add $4,$3
-add $4,$3
-mov $0,$4
+add $0,$4
+add $3,$0
+mov $0,$3

@@ -1,7 +1,7 @@
 ; A034166: Maximum length of 'zig-zag' self avoiding walk on an n X n lattice from a corner to opposite one.
 ; Submitted by Christian Krause
 ; 0,2,4,10,12,26,36,46,60,82,100,118,140
-; Formula: a(n) = 2*((n^2+(2*(gcd(A353109(n),5)/2)-3))/2)
+; Formula: a(n) = 2*((n^2+2*(gcd(A353109(n),5)/2)-3)/2)
 
 mov $1,$0
 pow $1,2

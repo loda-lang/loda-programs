@@ -1,10 +1,15 @@
 ; A090178: a(1) = 2; for n > 1, a(n) = n + prime(n-1).
-; Submitted by Jason Jung
+; Submitted by 2mdPUbG3fhUMEpz6FJkmzwC9PME8
 ; 2,4,6,9,12,17,20,25,28,33,40,43,50,55,58,63,70,77,80,87,92,95,102,107,114,123,128,131,136,139,144,159,164,171,174,185,188,195,202,207,214,221,224,235,238,243,246,259,272,277,280,285,292,295,306,313,320,327
-; Formula: a(n) = A015919(n)+n+1
+; Formula: a(n) = b(n)+n+1, b(n) = A159477(b(n-1)), b(1) = 2, b(0) = 1
 
-mov $1,$0
-seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
-add $1,$0
-mov $0,$1
+mov $2,1
 add $0,1
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $2,1
+lpe
+add $2,$1
+mov $0,$2
+sub $0,1

@@ -72,6 +72,7 @@ A031377: a(n) = prime(3n-2).
 A031378: a(n) = prime(4*n - 2).
 A031379: a(n) = prime(5*n - 2).
 A031381: a(n) = prime(7*n - 2).
+A031384: a(n) = prime(10*n - 2).
 A031385: a(n) = prime(4*n-3).
 A031386: a(n) = prime(5*n-3).
 A031389: a(n) = prime(8*n-3).
@@ -126,12 +127,14 @@ A048974: Odd numbers that are the sum of 2 primes.
 A049001: a(n) = prime(n)^2 - 2.
 A049234: Number of divisors of prime(n) + 2.
 A049559: a(n) = gcd(n - 1, phi(n)).
+A050997: Fifth powers of primes.
 A051456: (Terms in A029625)/2.
 A051674: a(n) = prime(n)^prime(n).
 A052147: a(n) = prime(n) + 2.
 A054526: Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
 A055003: a(n) = prime(prime(n)-1).
 A056798: Prime powers with even nonnegative exponents.
+A057048: a(n) = A017911(n+1) = round(sqrt(2)^(n+1)).
 A057901: a(n) = 3^prime(n).
 A057902: a(n) = 5^prime(n).
 A059591: Squarefree part of n^2+1.
@@ -173,12 +176,14 @@ A073256: a(n) = phi(n-th composite number).
 A074367: (p^2-5)/4 for odd primes p.
 A074372: 1 + the sum of the distinct primes dividing n.
 A074400: Sum of the even divisors of 2n.
+A074462: Average digit (rounded up) in the decimal expansion of prime(n).
 A074943: tau(n) (mod 3).
 A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).
 A075155: Cubes of Lucas numbers.
 A075730: Squares of odd semiprimes A046315, odd numbers divisible by exactly 2 primes (counted with multiplicity).
 A075818: Even numbers with exactly 3 prime factors (counted with multiplicity).
+A075892: Average of squares of successive primes: a(n) = (prime(n+1)^2 + prime(n)^2)/2, with n >= 2.
 A076787: Pisumprimes: prime(k), where k is the sum of the first n digits of Pi.
 A076821: Squares of the differences between consecutive primes.
 A077063: Squarefree kernel of prime(n) - 1.
@@ -191,6 +196,7 @@ A079696: Numbers one more than composite numbers.
 A079704: a(n) = 2*prime(n)^2.
 A079705: 3p^2 where p runs through the primes.
 A080847: a(n) = mu(n)+2, where mu is the Moebius function (A008683).
+A081399: Bigomega of the n-th Catalan number: a(n) = A001222(A000108(n)).
 A081667: a(n) = Fibonacci(binomial(n+2,2)).
 A081689: A005228 - 1.
 A081865: a(n) = sigma_7(2n-1).
@@ -218,6 +224,7 @@ A088707: Semiprimes + 1.
 A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
+A089103: a(n) = Mod[n+Prime[n],10]
 A089241: Even numbers k such that k/2 - 1 is prime.
 A089250: Add 2 (mod 10) to each decimal digit of Pi.
 A090076: a(n) = prime(n)*prime(n+2).

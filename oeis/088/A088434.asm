@@ -1,6 +1,7 @@
 ; A088434: Number of ways to write n as n = u*v*w with 1 <= u < v < w.
 ; Submitted by William Michael Kanar
 ; 0,0,0,0,0,1,0,1,0,1,0,2,0,1,1,1,0,2,0,2,1,1,0,4,0,1,1,2,0,4,0,2,1,1,1,4,0,1,1,4,0,4,0,2,2,1,0,6,0,2,1,2,0,4,1,4,1,1,0,8,0,1,2,3,1,4,0,2,1,4,0,8,0,1,2,2,1,4,0,6,1,1,0,8,1,1,1,4,0,8,1,2,1,1,1,9,0,2,2,4
+; Formula: a(n) = A007425(n)/3-((A007425(n)/3+A046951(n))/2)
 
 mov $1,$0
 seq $1,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.

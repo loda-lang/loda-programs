@@ -1,9 +1,33 @@
 ; A081362: Expansion of q^(1/24) * eta(q) / eta(q^2) in powers of q.
-; Submitted by GolfSierra
+; Submitted by Science United
 ; 1,-1,0,-1,1,-1,1,-1,2,-2,2,-2,3,-3,3,-4,5,-5,5,-6,7,-8,8,-9,11,-12,12,-14,16,-17,18,-20,23,-25,26,-29,33,-35,37,-41,46,-49,52,-57,63,-68,72,-78,87,-93,98,-107,117,-125,133,-144,157,-168,178,-192,209,-223,236,-255,276,-294,312,-335,361,-385,408,-437,471,-501,530,-568,609,-647,686,-732,784,-833,881,-939,1004,-1065,1126,-1199,1279,-1355,1433,-1523,1621,-1717,1814,-1925,2048,-2166,2286,-2425
-; Formula: a(n) = A000700(n)*(-1)^n
 
-mov $1,-1
-pow $1,$0
-seq $0,700 ; Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
-mul $0,$1
+mov $2,1
+mov $3,1
+mov $10,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  add $2,1
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    add $6,$7
+    mov $9,10
+    add $9,$5
+    mov $7,$4
+    seq $7,46897 ; Sum of divisors of n that are not divisible by 4.
+    mul $7,-2
+    mul $7,$$9
+    add $5,1
+  lpe
+  mov $9,10
+  add $9,$2
+  div $6,$2
+  div $6,3
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+mov $0,$3

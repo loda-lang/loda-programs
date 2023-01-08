@@ -1,15 +1,9 @@
 ; A060254: Primes which are the sum of two consecutive composite numbers.
-; Submitted by Landjunge
+; Submitted by HipsterDuRocher
 ; 17,19,29,31,41,43,53,67,71,79,89,97,101,103,109,113,127,131,137,139,149,151,163,173,181,191,197,199,211,223,229,233,239,241,251,257,269,271,281,283,293,307,311,317,331,337,349,353,367,373,379,389,401,409,419,431,433,439,443,449,461,463,487,491,499,509,521,523,547,557,569,571,577,593,599,601,607,617,619,631,641,643,647,653,659,677,683,691,701,709,727,739,743,751,761,769,773,787,797,809
+; Formula: a(n) = A167915(n+1)
 
-add $0,2
-lpb $0
-  sub $0,1
-  mov $1,$2
-  seq $1,167915 ; Primes which are the sums of two consecutive nonprimes (A141468).
-  div $1,2
-  add $2,1
-lpe
-mov $0,$1
-mul $0,2
 add $0,1
+mov $1,$0
+seq $1,167915 ; Primes which are the sums of two consecutive nonprimes (A141468).
+mov $0,$1
