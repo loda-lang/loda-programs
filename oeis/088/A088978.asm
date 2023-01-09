@@ -1,6 +1,7 @@
 ; A088978: Number of Pythagorean triangles having the n-th prime prime(n) as one of their sides.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,2,1,1,2,2,1,1,2,1,2,2,1,1,2,1,2,1,1,2,1,1,2,2,2,1,1,2,2,1,1,2,1,2,1,2,1,1,2,1,2,1,2,2,1,1,1,1,2,2,1,2,1,2,1,2,1,2,2,1,2,1,1,2,2,1,2,1,2,2,1,1,2,1,1,2,2,2,2,1,2,1,2,1,1,2,2,2,1,1,1,1,1,1,1,2,2,1,2
+; Formula: a(n) = (b(n)/2-1)%2+1, b(n) = A159477(b(n-1)+1), b(0) = 0
 
 lpb $0
   sub $0,1

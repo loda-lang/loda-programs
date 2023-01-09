@@ -8,7 +8,13 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,145377 ; a(n) = A002324(n) mod 2.
+  add $3,1
+  lpb $3
+    dif $3,3
+  lpe
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

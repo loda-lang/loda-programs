@@ -1177,6 +1177,7 @@ A100590: Duplicate of A096218.
 A100623: Erroneous version of A005649.
 A100653: Erroneous version of A002208.
 A100654: Erroneous version of A002209.
+A100726: Prime numbers whose binary representations are split into a maximum of 7 runs.
 A100815: Erroneous version of A010050.
 A100816: Erroneous version of A010050.
 A100991: Duplicate of A075821.

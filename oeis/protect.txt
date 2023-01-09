@@ -23,6 +23,7 @@ A004091: Fibonacci numbers written backwards.
 A004397: a(n) = prime(n) + Fibonacci(n).
 A004398: a(n) = Fibonacci(n+1) + prime(n).
 A004399: Fibonacci(n+2) plus n-th prime.
+A004649: Prime(n) mod (n-1).
 A005097: (Odd primes - 1)/2.
 A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
 A005722: a(n) = (prime(n) - 1)^2.
@@ -58,11 +59,14 @@ A023589: Number of distinct prime divisors of 2*p(n)+1.
 A023590: Greatest prime divisor of 2*prime(n)+1.
 A024701: a(n) = (-1 + prime(n+1)^2)/4.
 A026945: A bisection of the Motzkin numbers A001006.
+A028334: Differences between consecutive odd primes, divided by 2.
+A030004: (prime(n)-1)(prime(n)-3)(prime(n)-5)/48.
 A030078: Cubes of primes.
 A030514: a(n) = prime(n)^4.
 A031336: a(n) = prime(3*n).
 A031339: a(n) = prime(6*n).
 A031340: a(n) = prime(7*n).
+A031343: a(n) = prime(10*n).
 A031359: Bisection of A001615.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
@@ -224,6 +228,7 @@ A088707: Semiprimes + 1.
 A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
 A088838: Numerator of the quotient sigma(3n)/sigma(n).
+A089034: a(n) = (prime(n)^4 - 1) / 240.
 A089103: a(n) = Mod[n+Prime[n],10]
 A089241: Even numbers k such that k/2 - 1 is prime.
 A089250: Add 2 (mod 10) to each decimal digit of Pi.
@@ -233,6 +238,7 @@ A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
 A092772: (Prime(prime(n))^2-1)/24.
 A095116: a(n) = prime(n) + n - 1.
+A096197: a(n) = (1+prime(n)) mod n.
 A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
 A098640: 2^p + 1 where p is prime.
 A098823: a(n) = 16*(8*prime(n) + 7).
@@ -258,6 +264,7 @@ A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102704: Numbers k such that k999 is prime.
+A102770: (p*q - 1)/2 where p and q are consecutive odd primes.
 A102781: Number of positive even numbers less than the n-th prime.
 A104638: Number of odd digits in n-th prime.
 A105555: Let d = number of divisors of n; a(n) = d-th prime.
@@ -283,6 +290,8 @@ A110833: a(n) = (prime(n)+1)^2.
 A111741: Distance between k*(n-th prime) and next prime, k=9 case.
 A111742: Distance between k*(n-th prime) and next prime, k=10 case.
 A113935: a(n) = prime(n) + 3.
+A117495: Product of a prime number p and the number of primes smaller than p.
+A117961: Hexagonal numbers with prime indices.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
 A121239: Decimal expansion of 10-e.

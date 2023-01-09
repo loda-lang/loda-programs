@@ -1,13 +1,16 @@
 ; A097338: Positive integers n such that 2n-11 is prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by USTL-FIL (Lille Fr)
 ; 7,8,9,11,12,14,15,17,20,21,24,26,27,29,32,35,36,39,41,42,45,47,50,54,56,57,59,60,62,69,71,74,75,80,81,84,87,89,92,95,96,101,102,104,105,111,117,119,120,122,125,126,131,134,137,140,141,144,146,147,152,159,161,162,164,171,174,179,180,182,185,189,192,195,197,200,204,206,210,215,216,221,222,225,227,230,234,236,237,239,245,249,251,255,257,260,266,267,276,279
-; Formula: a(n) = (A173919(2*n+2)-5)/2+8
+; Formula: a(n) = (A159477(c(n))*(min(b(n),0)+10)-20)/20+7, b(n) = n-1, b(1) = 0, b(0) = 0, c(n) = A159477(c(n-1)), c(1) = 3, c(0) = 2
 
-add $0,1
-mov $1,$0
-mul $1,2
-seq $1,173919 ; Numbers that are prime or one less than a prime.
-mov $0,$1
-sub $0,5
-div $0,2
-add $0,8
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $0,10
+mul $0,$1
+sub $0,20
+div $0,20
+add $0,7

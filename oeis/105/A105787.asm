@@ -1,7 +1,24 @@
 ; A105787: a(1) = 1; a(m) = maximum numerator possible with a continued fraction [b(1);b(2),b(3),...b(m-1)], where (b(1),b(2),b(3),...b(m-1)) is a permutation of (a(1),a(2),a(3),...a(m-1)).
-; Submitted by Jason Jung
+; Submitted by mmonnin
 ; 1,1,2,5,28,795,632167,399635138154,159708243647367169100509,25506723088926795724936617220833650734525459594,650592922735191299575059973922272937442761432150679274453311138653498403940208837571053997389
-; Formula: a(n) = A110497(n+1)
+; Formula: a(n) = a(n-1)^2+a(n-1)+b(n-1), a(4) = 28, a(3) = 5, a(2) = 2, a(1) = 1, a(0) = 1, b(n) = (a(n-3)^2+a(n-3)+b(n-3))*((a(n-3)^2+a(n-3)+b(n-3))^2+a(n-3)^2+a(n-3)+b(n-2)+b(n-3))-((a(n-3)^2+a(n-3)+b(n-3))^2+a(n-3)^2+a(n-3)+b(n-2)+b(n-3))^2-(a(n-3)^2+a(n-3)+b(n-3))^2-a(n-3)^2-a(n-3)-b(n-1)-b(n-2)-b(n-3)+a(n-3), b(4) = -17, b(3) = -2, b(2) = -1, b(1) = 0, b(0) = 0
 
-add $0,1
-seq $0,110497 ; a(1) = 1; a(m) = maximum denominator possible with a continued fraction [b(1);b(2),b(3),...,b(m-1)], where (b(1),b(2),b(3),...,b(m-1)) is a permutation of (a(1),a(2),a(3),...,a(m-1)).
+mov $1,1
+mov $4,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $5,$1
+  mov $6,$1
+  mul $6,$1
+  add $1,$3
+  add $1,$6
+  mov $3,$4
+  mov $4,$2
+  mov $2,$3
+  mul $3,$5
+  add $3,$4
+  sub $3,$1
+  mov $4,$5
+lpe
+mov $0,$1

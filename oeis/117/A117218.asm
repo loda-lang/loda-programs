@@ -8,7 +8,7 @@ lpb $2
   mov $3,$1
   pow $3,2
   mov $5,$3
-  seq $5,55642 ; Number of digits in decimal expansion of n.
+  seq $5,55642 ; Number of digits in the decimal expansion of n.
   mod $3,$5
   cmp $3,0
   sub $0,$3

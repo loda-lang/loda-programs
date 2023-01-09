@@ -1,7 +1,9 @@
 ; A110226: 1 + sum of first n 4-almost primes.
-; Submitted by [AF] Kalianthys
+; Submitted by ChelseaOilman
 ; 1,17,41,77,117,171,227,287,368,452,540,630,730,834,960,1092,1227,1363,1503,1653,1805,1961,2145,2334,2530,2728,2932,3142,3362,3587,3815,4047,4281,4529,4779,5039,5315,5609,5905,6202,6508,6816,7131,7459,7789,8129
+; Formula: a(n) = a(n-1)+A014613(max(n-1,0)), a(0) = 1
 
+mov $1,1
 lpb $0
   sub $0,1
   mov $2,$0
@@ -9,5 +11,4 @@ lpb $0
   seq $2,14613 ; Numbers that are products of 4 primes.
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

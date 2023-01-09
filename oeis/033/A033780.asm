@@ -1,5 +1,5 @@
 ; A033780: Product t2(q^d); d | 21, where t2 = theta2(q)/(2*q^(1/4)).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by pututu
 ; 1,1,0,2,1,0,2,1,1,2,4,1,1,3,0,2,2,2,2,3,1,4,4,0,7,4,2,4,5,1,6,11,1,4,4,2,6,5,4,6,8,1,6,6,1,14,8,3,6,6,0,10,15,2,8,6,2,8,8,2,9,10,2,8,6,3,22,9,1,10,8,4,12,23,4,12,14,0,10,12,7,12,12,4,12,13,2,26,12,4,12,16,5,10,28,1,15,11,6,12
 
 mov $2,1
@@ -14,12 +14,13 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,35162 ; Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
+    seq $7,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
     mov $9,10
     add $9,$5
     sub $4,$0
     add $4,1
     mul $7,$$9
+    sub $4,4
     trn $4,3
     add $5,1
     add $6,$7

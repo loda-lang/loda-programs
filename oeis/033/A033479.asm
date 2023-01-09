@@ -1,17 +1,11 @@
 ; A033479: 3x+1 sequence beginning at 9.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 9,28,14,7,22,11,34,17,52,26,13,40,20,10,5,16,8,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2
+; Formula: a(n) = A006370(a(n-1)), a(0) = 9
 
-mov $1,$0
-mov $0,9
-lpb $1
-  mov $2,$0
-  dif $0,2
-  mod $2,2
-  lpb $2
-    sub $2,1
-    mul $0,3
-    add $0,1
-  lpe
-  sub $1,1
+mov $1,9
+lpb $0
+  sub $0,1
+  seq $1,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe
+mov $0,$1

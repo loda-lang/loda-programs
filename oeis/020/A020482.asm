@@ -2,34 +2,20 @@
 ; Submitted by Science United
 ; 2,3,5,7,7,11,13,13,17,19,19,23,23,23,29,31,31,31,37,37,41,43,43,47,47,47,53,53,53,59,61,61,61,67,67,71,73,73,73,79,79,83,83,83,89,89,89,79,97,97,101,103,103,107,109,109,113,113,113,109,113,113,109,127,127,131,131,131,137,139,139,139,137,139,149,151,151,151,157,157,157,163,163,167,167,167,173,173,173,179,181,181,181,179,181,191,193,193,197,199
 
-mov $2,1
-add $0,1
+add $0,2
 mul $0,2
-lpb $0
-  sub $0,1
-  mov $5,2
-  mov $6,0
-  mov $12,1
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $7,$4
-    seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-    mul $7,$4
-    mov $9,10
-    add $9,$5
-    add $4,$6
-    sub $4,$0
-    mul $7,$$9
-    max $4,1
-    add $5,1
-    add $6,$7
-  lpe
-  mov $3,$6
-  mov $9,10
-  add $9,$2
-  mov $$9,$3
-  add $2,1
+mov $1,$0
+mov $0,0
+sub $1,1
+lpb $1
+  sub $1,1
+  add $1,$3
+  mov $2,$0
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $2,$1
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $0,1
+  add $3,$2
 lpe
-mov $0,$4
+mov $0,$1
 add $0,1
