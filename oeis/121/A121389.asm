@@ -1,10 +1,15 @@
 ; A121389: a(n) = 10^Fibonacci(n) - 1.
-; Submitted by stoneageman
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,9,9,99,999,99999,99999999,9999999999999,999999999999999999999,9999999999999999999999999999999999,9999999999999999999999999999999999999999999999999999999
-; Formula: a(n) = 10^A000045(n)-1
+; Formula: a(n) = b(n)-1, b(n) = b(n-2)*b(n-1), b(1) = 10, b(0) = 1
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mov $1,10
-pow $1,$0
+mov $1,1
+mov $3,10
+lpb $0
+  sub $0,1
+  mov $2,$1
+  mul $1,$3
+  mov $3,$2
+lpe
 mov $0,$1
 sub $0,1

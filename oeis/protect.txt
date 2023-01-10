@@ -63,9 +63,12 @@ A028334: Differences between consecutive odd primes, divided by 2.
 A030004: (prime(n)-1)(prime(n)-3)(prime(n)-5)/48.
 A030078: Cubes of primes.
 A030514: a(n) = prime(n)^4.
+A030629: Numbers with 11 divisors.
 A031336: a(n) = prime(3*n).
+A031338: a(n) = prime(5*n).
 A031339: a(n) = prime(6*n).
 A031340: a(n) = prime(7*n).
+A031342: a(n) = prime(9*n).
 A031343: a(n) = prime(10*n).
 A031359: Bisection of A001615.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
@@ -81,6 +84,7 @@ A031385: a(n) = prime(4*n-3).
 A031386: a(n) = prime(5*n-3).
 A031389: a(n) = prime(8*n-3).
 A031392: a(n) = prime(5*n-4).
+A031394: a(n) = prime(7*n - 4).
 A031906: a(n) = prime(6*n - 5).
 A031908: a(n) = prime(8*n - 5).
 A031910: a(n) = prime(10*n - 5).
@@ -93,6 +97,7 @@ A031920: a(n) = prime(10*n-9).
 A031937: Upper prime of a difference of 18 between consecutive primes.
 A031974: 1 repeated prime(n) times.
 A033192: a(n) = binomial(Fibonacci(n) + 1, 2).
+A033286: a(n) = n * prime(n).
 A033633: Primes modulo 19.
 A034785: a(n) = 2^(n-th prime).
 A034953: Triangular numbers (A000217) with prime indices.
@@ -177,6 +182,7 @@ A072205: a(n) = (p^2 - p + 2)/2 for p = prime(n); number of squares modulo p^2.
 A072677: a(n) = prime(prime(n)+1) where prime(k) is the k-th prime.
 A073123: a(n) is the largest number such that pi(a(n)) = prime(n).
 A073256: a(n) = phi(n-th composite number).
+A073521: The set of 16 consecutive primes with the property that they form a 4 X 4 magic square with the smallest magic constant (258).
 A074367: (p^2-5)/4 for odd primes p.
 A074372: 1 + the sum of the distinct primes dividing n.
 A074400: Sum of the even divisors of 2n.
@@ -294,9 +300,11 @@ A117495: Product of a prime number p and the number of primes smaller than p.
 A117961: Hexagonal numbers with prime indices.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
+A119959: p^2-p+1 central polygonal numbers with prime indices A002061(prime(n)).
 A121239: Decimal expansion of 10-e.
 A124669: Product of successive primes minus 2.
 A125137: a(n) = p^p + 1, where p = prime(n).
+A126996: a(n) = binomial(prime(3+n), prime(3)).
 A127114: n! in base 7.
 A127884: a(n) = floor(Fibonacci(n)/n).
 A128973: Triangle formed by reading A038622 mod 2.

@@ -91,9 +91,17 @@ for f in $files; do
     readarray updated_arr < /tmp/updated_eval.out
     echo
     echo "Index OldSteps NewSteps"
-    for i in $(seq $num_terms); do
-      updated_steps=$(echo "${updated_arr[$i]}" | awk '{print $2}')
-      echo ${orig_arr[$i]} $updated_steps
+    count=$((num_terms-1))
+    for i in $(seq $count); do
+      ori=$(echo "${orig_arr[$i]}" | awk '{print $2}')
+      upd=$(echo "${updated_arr[$i]}" | awk '{print $2}')
+      if [ "$ori" -lt "$upd" ]; then
+        echo "$i: $ori < $upd"
+      elif [ "$ori" -gt "$upd" ]; then
+        echo "$i: $ori > $upd"
+      else
+        echo "$i: $ori = $upd"
+      fi
     done
     git diff -U1000 -- $f
     read -p "Update program? (Y)es, (n)o: " a

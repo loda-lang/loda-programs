@@ -1,10 +1,16 @@
 ; A023620: Convolution of Lucas numbers and odd numbers.
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 1,6,18,41,82,152,269,462,778,1293,2130,3488,5689,9254,15026,24369,39490,63960,103557,167630,271306,439061,710498,1149696,1860337,3010182,4870674,7881017,12751858,20633048,33385085,54018318,87403594,141422109,228825906
-; Formula: a(n) = A033811(n)-2*n-2
+; Formula: a(n) = 3*n+a(n-1)+b(n-1)+1, a(2) = 18, a(1) = 6, a(0) = 1, b(n) = b(n-1)/(-1)+3*n+a(n-1)+b(n-1)+1, b(2) = 13, b(1) = 5, b(0) = 1
 
-mov $1,$0
-add $1,$0
-seq $0,33811 ; Convolution of natural numbers n >= 1 with Lucas numbers L(k)(A000032) for k >= 2.
-sub $0,2
-sub $0,$1
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  add $1,$2
+  add $1,$3
+  add $2,2
+  div $3,-1
+  add $3,$1
+lpe
+mov $0,$1
