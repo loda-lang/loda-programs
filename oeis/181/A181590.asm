@@ -5,11 +5,11 @@
 add $0,1
 lpb $0
   mul $0,2
+  mov $3,10
+  pow $3,$0
+  min $0,0
   cmp $2,0
-  lpb $0
-    sub $0,1
-    mul $2,10
-  lpe
+  mul $2,$3
 lpe
 mov $1,1
 lpb $2

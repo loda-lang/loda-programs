@@ -1,17 +1,19 @@
 ; A137704: Hankel transform of aerated factorial numbers.
-; Submitted by Stony666
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,2,8,96,3456,497664,286654464,825564856320,11888133931008000,1027134771639091200000,532466665617704878080000000,1932215036193527461576704000000000
+; Formula: a(n) = a(n-1)*(b(n-1)*(c(n-1)/2)+b(n-1)), a(3) = 2, a(2) = 1, a(1) = 1, a(0) = 1, b(n) = b(n-1)*((n-1)/2)+b(n-1), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = n, c(3) = 3, c(2) = 2, c(1) = 1, c(0) = 0
 
 mov $1,1
-mov $2,1
-add $0,1
+mov $4,1
 lpb $0
   sub $0,1
+  div $3,2
+  mul $3,$1
+  add $1,$3
+  mov $3,$4
+  mul $3,$1
+  mov $4,$3
   add $2,1
   mov $3,$2
-  div $2,2
-  pow $2,$0
-  mul $1,$2
-  mov $2,$3
 lpe
-mov $0,$1
+mov $0,$4

@@ -1,7 +1,7 @@
 ; A187794: Sum of the perfect divisors of n.
 ; Submitted by Science United
 ; 0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,28,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,28,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0,0,34,0,0,0,0,0,6,0,0,0,0,0,6,0,0,0,0
-; Formula: a(n) = (A264668(n)-1)+A325470(n)
+; Formula: a(n) = A264668(n)+A325470(n)-1
 
 mov $1,$0
 seq $1,325470 ; a(n) is the sum of divisors d of n such that d divides sigma(d).

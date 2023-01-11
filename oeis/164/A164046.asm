@@ -1,36 +1,11 @@
 ; A164046: A001445 written in base 2.
-; Submitted by Jamie Morken(s4)
+; Submitted by ChelseaOilman
 ; 11,101,1010,10010,100100,1000100,10001000,100001000,1000010000,10000010000,100000100000,1000000100000,10000001000000,100000001000000,1000000010000000,10000000010000000,100000000100000000,1000000000100000000,10000000001000000000,100000000001000000000,1000000000010000000000,10000000000010000000000,100000000000100000000000,1000000000000100000000000,10000000000001000000000000,100000000000001000000000000,1000000000000010000000000000,10000000000000010000000000000,100000000000000100000000000000
+; Formula: a(n) = (A007088(A005418(n+3))-110)/10+11
 
-mov $2,$0
-add $0,1
-lpb $0
-  sub $0,1
-  add $1,1
-  mul $1,10
-  mov $3,$2
-  sub $3,$0
-  mov $4,$3
-  cmp $4,$0
-  cmp $4,0
-  mov $5,0
-  mov $9,$3
-  trn $9,$0
-  mov $6,$9
-  cmp $6,0
-  add $7,$6
-  mul $7,$4
-  mov $8,$7
-  lpb $8
-    mov $5,3
-    div $7,2
-    mov $8,$7
-  lpe
-  cmp $5,0
-  add $1,$5
-lpe
-mov $0,$1
-sub $0,11
+add $0,3
+seq $0,5418 ; Number of (n-1)-bead black-white reversible strings; also binary grids; also row sums of Losanitsch's triangle A034851; also number of caterpillar graphs on n+2 vertices.
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+sub $0,110
 div $0,10
-mul $0,9
 add $0,11

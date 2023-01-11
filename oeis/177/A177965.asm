@@ -1,16 +1,14 @@
 ; A177965: Indices m for which A177961(m) - m = 1.
-; Submitted by vaughan
+; Submitted by ChelseaOilman
 ; 1,4,7,10,16,19,22,31,34,37,40,49,52,55,64,70,76,79,82,91,97,100,106,112,115,121,136,139,142,154,157,166,169,175,184,187,190,199,205,211,217,220,229,232,244,250,262,271,274,286,289,301,304,307,310,316,322,331,337,346,355,364,367,370,376,379,385,394,406,412,415,427,430,439,442,454,460,469,484,496,499,505,511,517,520,526,532,535,544,547,559,562,565,577,586,601,607,616,619,625
+; Formula: a(n) = b(n)/2+1, b(n) = A123365(n), b(1) = 7, b(0) = 1
 
-mov $3,3
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,6
-  sub $2,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$2
+  seq $1,123365 ; Values of k such that A046530(k) = (k+2)/3, where A046530(k) is the number of distinct residues of cubes mod k.
+  add $2,1
 lpe
 mov $0,$1
 div $0,2

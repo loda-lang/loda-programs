@@ -1,23 +1,22 @@
 ; A002513: Number of "cubic partitions" of n: expansion of Product_{k>0} 1/((1-x^(2k))^2*(1-x^(2k-1))) in powers of x.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Fardringle
 ; 1,1,3,4,9,12,23,31,54,73,118,159,246,329,489,651,940,1242,1751,2298,3177,4142,5630,7293,9776,12584,16659,21320,27922,35532,46092,58342,75039,94503,120615,151173,191611,239060,301086,374026,468342,579408,721638,889287,1102113,1353106,1669226,2042115,2508429,3058417,3741741,4547438,5542532,6715224,8155720,9852187,11925654,14365645,17334077,20824152,25051940,30017836,36009468,43039918,51491111,61396797,73263043,87155938,103744575,123144047,146237151,173211615,205229935,242585315,286805676
 
 mov $2,1
 mov $10,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,1
   mov $5,0
   mov $6,0
   mov $4,$2
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,113184 ; Absolute difference between sum of odd divisors of n and sum of even divisors of n.
+    seq $7,215947 ; Difference between the sum of the even divisors and the sum of the odd divisors of 2n.
     mov $9,10
     add $9,$5
     mul $7,$$9
-    mul $7,2
     add $5,1
     add $6,$7
   lpe
@@ -27,7 +26,5 @@ lpb $0
   mov $3,$6
   mov $$9,$3
   add $2,1
-  mov $8,$3
 lpe
-mov $0,$8
-max $0,1
+mov $0,$7

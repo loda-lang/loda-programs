@@ -1,6 +1,7 @@
 ; A158863: Maximal excess of a 3-normalized Hadamard matrix of order 4n.
 ; Submitted by Christian Krause
 ; 4,8,36,32,76,72,124,128,180,200,244,288,316
+; Formula: a(n) = 8*n*gcd(n,2)+4*(n/2)*((gcd(n,2)+n)/gcd(n,2))-4*n+4
 
 mov $3,$0
 mov $5,$0

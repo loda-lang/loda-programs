@@ -1,31 +1,33 @@
 ; A135003: Decimal expansion of 3/e.
-; Submitted by Jamie Morken(m4)
+; Submitted by Science United
 ; 1,1,0,3,6,3,8,3,2,3,5,1,4,3,2,6,9,6,4,7,8,6,5,7,1,3,1,0,4,8,4,3,8,2,6,0,2,3,3,7,4,3,3,3,9,3,0,9,5,3,0,3,5,0,3,5,2,3,5,1,0,4,0,5,0,9,2,3,8,4,4,8,7,2,3,4,6,9,9,4,1,0,0,7,1,4,4,1,8,2,3,0,3,7,7,5,8,9,3,1
 
-mov $1,1
-mov $5,1
+add $0,1
 mov $3,$0
-mul $3,4
+mul $3,5
 lpb $3
-  mul $3,$0
-  mul $1,$3
-  add $1,$3
-  mov $6,$0
-  cmp $6,0
-  add $0,$6
+  mov $5,$3
+  mul $5,2
+  sub $2,1
+  mul $2,$5
+  add $1,$2
+  add $1,$2
   div $1,$0
-  add $2,$1
-  div $3,$0
+  mul $1,2
+  div $2,$0
   sub $3,1
-  mov $5,3
 lpe
-mul $1,$5
+mul $2,$5
+sub $0,1
+sub $1,$2
 mov $4,10
 pow $4,$0
-cmp $5,0
-cmp $5,0
+mul $4,6
+add $2,$1
 div $2,$4
-add $2,$5
 div $1,$2
-mod $1,10
-mov $0,$1
+add $1,3
+sub $4,$1
+mov $0,$4
+add $0,2
+mod $0,10

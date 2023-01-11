@@ -17,6 +17,11 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+# colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # no color
+
 echo "Finding updated programs"
 files=
 update_all="n"
@@ -96,9 +101,9 @@ for f in $files; do
       ori=$(echo "${orig_arr[$i]}" | awk '{print $2}')
       upd=$(echo "${updated_arr[$i]}" | awk '{print $2}')
       if [ "$ori" -lt "$upd" ]; then
-        echo "$i: $ori < $upd"
+        echo -e "${RED}${i}: ${ori} < ${upd}${NC}"
       elif [ "$ori" -gt "$upd" ]; then
-        echo "$i: $ori > $upd"
+        echo -e "${GREEN}${i}: ${ori} > ${upd}${NC}"
       else
         echo "$i: $ori = $upd"
       fi

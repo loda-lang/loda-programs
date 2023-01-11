@@ -1,16 +1,23 @@
 ; A007704: a(n+2) = (a(n) - 1)*a(n+1) + 1.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by ChelseaOilman
 ; 2,3,4,9,28,225,6076,1361025,8268226876,11253255215681025,93044467205527772332546876,1047053135870867396062743192203958743681025
-; Formula: a(n) = b(n)+1, b(n) = b(n-2)*b(n-1)+b(n-2), b(1) = 2, b(0) = 1
 
-mov $1,1
-mov $2,1
+mov $3,1
+add $0,2
 lpb $0
   sub $0,1
-  mov $3,$2
+  add $2,$4
   mul $2,$1
-  add $2,$1
-  mov $1,$3
+  mov $1,3
+  sub $1,$3
+  add $1,$2
+  div $3,2
+  mov $4,$2
+  sub $4,$1
+  add $4,1
+  max $1,$3
+  cmp $2,1
+  mov $3,$1
+  add $3,2
 lpe
-add $2,1
-mov $0,$2
+mov $0,$1

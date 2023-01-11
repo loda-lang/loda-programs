@@ -1,11 +1,21 @@
 ; A005673: F(n+1)-2^[ (n+1)/2 ] -2^[ n/2 ] +1.
-; Submitted by Simon Strandgaard
+; Submitted by ChelseaOilman
 ; 0,0,0,0,1,2,6,11,24,42,81,138,250,419,732,1214,2073,3414,5742,9411,15664,25586,42273,68882,113202,184131,301428,489654,799273,1297118,2112774
-; Formula: a(n) = (A324969(n+2)+1)-A164090(n)
+; Formula: a(n) = b(n)/4, b(n) = 2*b(n-1)+2*c(n-1), b(4) = 4, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = e(n-1), c(4) = 0, c(3) = 2, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 2*b(n-2)+2*c(n-2)+2*e(n-2)-c(n-2)-d(n-1)-d(n-2)-2*e(n-2)+c(n-2)+d(n-2)+e(n-2)-2, d(4) = 2, d(3) = -2, d(2) = 0, d(1) = -2, d(0) = 0, e(n) = -d(n-1)-e(n-1)+c(n-1)+e(n-1), e(4) = 4, e(3) = 0, e(2) = 2, e(1) = 0, e(0) = 0
 
-mov $1,$0
-seq $1,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
-add $0,2
-seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
-add $0,1
-sub $0,$1
+lpb $0
+  sub $0,1
+  add $1,$3
+  add $4,$5
+  sub $3,$4
+  mov $4,$2
+  add $4,$1
+  mul $1,2
+  mov $2,$3
+  mov $3,$5
+  add $4,$2
+  sub $4,2
+  add $5,$2
+lpe
+mov $0,$1
+div $0,4

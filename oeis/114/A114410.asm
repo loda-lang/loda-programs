@@ -1,12 +1,13 @@
 ; A114410: Cumulative sum of double primorials (A079078).
-; Submitted by Simon Strandgaard
+; Submitted by Ciceronian
 ; 1,3,6,16,37,147,420,2290,7477,50487,200910,1534220,7099871,61765581,301088574,2870376944,15554495573,167142509403,940873745772,11097270672382,66032188454581,807449164097111,5147307668890832
+; Formula: a(n) = a(n-1)+A079078(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,79078 ; a(0) = 1, a(1) = 2; for n > 1, a(n) = prime(n)*a(n-2).
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

@@ -8,14 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  add $2,1
-  seq $2,4020 ; Theta series of square lattice with respect to edge.
-  mul $2,2
-  div $2,8
+  seq $2,8442 ; Expansion of Jacobi theta constant (theta_2(2z))^2/4.
+  sub $4,1
   add $1,$2
+  mov $3,2
   add $3,$4
-  add $3,1
-  mov $4,3
+  add $4,2
 lpe
 mov $0,$1

@@ -78,6 +78,7 @@ A031374: a(n) = prime(8*n - 1).
 A031377: a(n) = prime(3n-2).
 A031378: a(n) = prime(4*n - 2).
 A031379: a(n) = prime(5*n - 2).
+A031380: a(n) = prime(6*n - 2).
 A031381: a(n) = prime(7*n - 2).
 A031384: a(n) = prime(10*n - 2).
 A031385: a(n) = prime(4*n-3).
@@ -214,6 +215,7 @@ A081866: a(n)=sigma_9(2n-1).
 A083271: a(n) = n*tau(n) + 1.
 A083542: a(n) = phi(n+1)*phi(n), product of totients of two consecutive integers.
 A083681: Sum of divisors of semiprimes.
+A083786: Composite numbers mod 10.
 A084300: a(n) = phi(n) mod 6.
 A084311: a(n) = gcd(prime(n)-1,n-1).
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
@@ -244,6 +246,7 @@ A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
 A092772: (Prime(prime(n))^2-1)/24.
 A095116: a(n) = prime(n) + n - 1.
+A095901: A004001 (mod 2).
 A096197: a(n) = (1+prime(n)) mod n.
 A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
 A098640: 2^p + 1 where p is prime.
@@ -252,6 +255,7 @@ A099250: Bisection of Motzkin numbers A001006.
 A099251: Bisection of Motzkin sums (A005043).
 A099366: Squares of A005668(n) (generalized Fibonacci).
 A099585: Remove all 3s from prime(n) - 1.
+A099618: a(n) = 1 if the n-th prime == 1 mod 6, otherwise a(n) = 0.
 A099777: Number of divisors of 2n.
 A099817: Bisection of A000796 (decimal expansion of Pi).
 A099822: Bisection of A005117.
@@ -329,14 +333,21 @@ A137264: Prime number gaps read modulo 3.
 A137290: Fibonacci(n) mod 30.
 A137521: Prime numbers concatenated with 45.
 A137664: a(n) = (p+1)^p - 1 where p = prime(n).
+A137727: Final digit of prime(n)*prime(n+1).
 A137807: Final digit of prime(n)^2.
 A137831: (Prime(n)^2 minus its last digit)/20.
+A138418: a(n) = ((n-th prime)^4-(n-th prime)^2)/2.
+A138419: a(n) = (prime(n)^4 - prime(n)^2)/3.
+A138422: a(n) = (prime(n)^4 - prime(n)^2)/12.
+A138439: a(n) = ((n-th prime)^5-(n-th prime)^4)/2.
 A138636: a(n) = 6 * prime(n).
 A138689: Numbers of the form 26+p^2 (where p is a prime).
 A138690: Numbers of the form 56+p^2 (where p is a prime).
 A138691: Numbers of the form 68+p^2 (where p is a prime).
+A138692: Numbers of the form 86+p^2 (where p is a prime).
 A138693: Numbers of the form 110 + p^2. (where p is a prime).
 A138714: Add 1, modulo 10, to the decimal expansion of e, A001113.
+A138929: Twice the prime powers A000961.
 A139049: a(n) = prime(n) + 6.
 A139286: a(n) = 2^(2*prime(n) - 1).
 A139287: 2^(2p - 1) - 1, where p is prime.
@@ -360,14 +371,19 @@ A146110: Bell numbers (A000110) read mod 20.
 A146116: Bell numbers (A000110) read mod 26.
 A146121: Bell numbers (A000110) read mod 31.
 A151549: a(n) = (A151548(n)-1)/2.
+A152241: Products of cubes of 2 successive primes.
 A153480: a(n) = 2*prime(n)^2 - 4.
 A153481: a(n) = prime(n)^3 - 2.
+A153482: a(n) = prime(n)^4 - 8.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
 A162143: a(n) = A007304(n)^2.
+A164028: The n-th composite minus 3.
 A165163: Sequence is obtained from Catalan numbers (A000108) by taking the factorial of each digit and adding them up.
 A166010: a(n) = prime(n)^2-4.
+A166496: Prime plus the next composite.
 A171018: In the sequence of prime numbers, replace all the '3' digits with '2' and vice versa.
+A171031: In the sequence of prime numbers, replace all the '6' digits with '3' and vice versa.
 A171035: In the sequence of prime numbers, replace all the '7' digits with '1' and vice versa.
 A171038: In the sequence of prime numbers, replace all the '7' digits with '4' and vice versa.
 A171039: In the sequence of prime numbers, replace all the '7' digits with '5' and vice versa.
@@ -375,8 +391,10 @@ A171050: In the sequence of prime numbers, replace all the '9' digits with '1' a
 A171055: In the sequence of prime numbers, replace all the '9' digits with '6' and vice versa.
 A171977: a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
 A172190: a(n) = 2*prime(n)^3.
+A172191: a(n) = 2*prime(n)^4.
 A172282: Squares of Bernoulli number denominators A027642.
 A174429: Collatz-Fibonacci numbers: a(1) = a(2) = 1; if n > 2, a(n) = a(C(n)) + a(C(C(n))), where  C(n) = A006370(n).
+A175216: The first nonprimes after the primes.
 A175221: a(n) = prime(n) + 4.
 A175222: a(n) = prime(n) + 5.
 A175223: a(n) = prime(n) + 7.
@@ -393,9 +411,11 @@ A179262: a(n) = 2*prime(n)^2 - 1.
 A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
 A181062: Prime powers minus 1.
+A181923: Nonprimes (A018252) mod 2.
 A181932: A003136(n) mod 2.
 A182200: a(n) = prime(n)^2-3.
 A185322: a(n) = ceiling(prime(n)/10).
+A186190: First digit of tribonacci sequence A000213.
 A186621: Semiprimes - 1.
 A193462: Sum of the distinct prime divisors of n^2+1.
 A193916: Mirror of the triangle A193915.

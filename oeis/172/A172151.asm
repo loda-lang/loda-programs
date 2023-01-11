@@ -1,5 +1,5 @@
 ; A172151: Number of partitions of n into two nonsquares.
-; Submitted by Landjunge
+; Submitted by Kotenok2000
 ; 0,0,0,0,1,1,1,1,2,2,3,2,3,4,4,4,5,5,5,5,7,6,7,7,8,9,9,8,9,10,10,10,11,11,13,12,13,13,13,13,15,15,15,15,16,17,17,17,18,18,19,18,20,20,20,20,21,21,23,22,23,24,24,24,25,26,25,25,27,26,27,27,28,29,30,29,30,30,31,31,33,32,33,32,33,35,34,34,35,36,37,36,37,37,38,38,39,40,40,40
 
 mov $2,1
@@ -14,9 +14,9 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-    gcd $7,2
-    cmp $7,2
+    seq $7,158387 ; a(n) = -1 if n is a square, 1 if n is not a square.
+    sub $7,1
+    cmp $7,0
     mov $9,10
     add $9,$5
     min $10,$0

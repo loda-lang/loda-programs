@@ -7,7 +7,6 @@ lpb $0
   sub $0,$1
   mov $1,0
   mov $2,$0
-  max $2,0
-  seq $2,187969 ; a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=3, [ ]=floor.
 lpe
+seq $2,187969 ; a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=3, [ ]=floor.
 mov $0,$2

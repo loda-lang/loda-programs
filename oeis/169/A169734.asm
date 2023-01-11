@@ -1,18 +1,14 @@
 ; A169734: a(1) = 1000; for n>1, a(n) = a(n-1) + digitsum(a(n-1)).
-; Submitted by Skivelitis2
+; Submitted by ChelseaOilman
 ; 1000,1001,1003,1007,1015,1022,1027,1037,1048,1061,1069,1085,1099,1118,1129,1142,1150,1157,1171,1181,1192,1205,1213,1220,1225,1235,1246,1259,1276,1292,1306,1316,1327,1340,1348,1364,1378,1397,1417,1430,1438,1454
+; Formula: a(n) = c(n)+1000, b(n) = b(n-1)+A007953(b(n-1)+1)+1, b(1) = 2, b(0) = 0, c(n) = b(n-1)+1, c(1) = 1, c(0) = 0
 
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$1
-  lpb $0
-    mov $2,$0
-    mod $2,10
-    div $0,10
-    add $1,$2
-  lpe
+lpb $0
+  sub $0,1
   add $1,1
+  mov $2,$1
+  seq $1,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  add $1,$2
 lpe
-mov $0,$1
+mov $0,$2
 add $0,1000

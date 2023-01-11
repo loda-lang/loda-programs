@@ -1,9 +1,19 @@
-; A133953: A second integer solution:d=2;h=1; A 4 X 4 vector Markov of a game matrix MA and an anti- game matrix MB such that game_valueMa+game_ValueMB =0 and the score is the sum of the vector out put of the Markov: MA={{0,1},{1,d}}; MB={{1/h,0},(2 - d + 1/h + h),h}}; Characteristic Polynomial is: -1 + 4 x^2 - 4 x^3 + x^4.
+; A133953: Expansion of 2*x*(1+x)*(1-2*x)/((1-x)^2*(1-2*x-x^2)).
+; Submitted by Science United
 ; 2,6,12,24,50,110,252,592,1410,3382,8140,19624,47346,114270,275836,665888,1607554,3880934,9369356,22619576,54608434,131836366,318281084,768398448,1855077890,4478554134,10812186060,26102926152,63018038258
-; Formula: a(n) = 2*n+A078057(n)+1
+; Formula: a(n) = 2*b(n)+2, b(n) = b(n-1)+c(n-2)+d(n-2)+3, b(3) = 11, b(2) = 5, b(1) = 2, b(0) = 0, c(n) = 2*c(n-2)+2*d(n-2)+c(n-1)+4, c(3) = 15, c(2) = 5, c(1) = 1, c(0) = 0, d(n) = c(n-1)+d(n-1)+2, d(3) = 12, d(2) = 5, d(1) = 2, d(0) = 0
 
-mov $1,$0
-seq $1,78057 ; Expansion of (1+x)/(1-2*x-x^2).
+lpb $0
+  sub $0,1
+  add $4,$2
+  add $4,1
+  add $1,$3
+  add $1,2
+  mov $2,$3
+  add $2,$4
+  mov $3,$4
+  add $4,1
+lpe
+mov $0,$1
 mul $0,2
-add $0,$1
-add $0,1
+add $0,2

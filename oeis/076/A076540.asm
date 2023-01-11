@@ -1,25 +1,14 @@
 ; A076540: Number of branches in all ordered trees with n edges.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,3,11,41,154,582,2211,8437,32318,124202,478686,1849498,7161556,27784460,107980515,420300045,1638238710,6393535170,24980504010,97704407790,382509199020,1498824792660,5877754713870,23067328421826,90590960500524,356002519839652
+; Formula: a(n) = binomial(2*n,n+2)+binomial(2*n+1,n+1)
 
-mov $3,$0
-add $0,1
-mov $5,$0
-lpb $5
-  sub $5,1
-  mov $0,$3
-  sub $0,$5
-  mov $1,$3
-  bin $1,$0
-  mul $1,2
-  div $0,2
-  mov $2,$0
-  add $2,1
-  add $2,$0
-  bin $2,$0
-  mul $1,$2
-  mul $4,2
-  add $4,$1
-lpe
-mov $0,$4
-div $0,2
+mov $1,$0
+mul $1,2
+mov $2,1
+add $2,$0
+add $0,$2
+bin $0,$2
+add $2,1
+bin $1,$2
+add $0,$1
