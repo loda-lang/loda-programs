@@ -1,8 +1,24 @@
 ; A008966: a(n) = 1 if n is squarefree, otherwise 0.
 ; Submitted by Science United
 ; 1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,0,0
-; Formula: a(n) = binomial(0,A046660(n))
 
-seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+mov $3,2
+add $0,1
+lpb $0
+  mov $4,$0
+  lpb $4
+    mov $5,$0
+    mod $5,$3
+    mul $5,4
+    add $3,1
+    sub $4,$5
+  lpe
+  sub $2,1
+  lpb $0
+    dif $0,$3
+    add $2,1
+  lpe
+lpe
+mov $0,$2
 bin $1,$0
 mov $0,$1

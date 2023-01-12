@@ -1,8 +1,27 @@
 ; A019739: Decimal expansion of e/2.
-; Submitted by PDW
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,3,5,9,1,4,0,9,1,4,2,2,9,5,2,2,6,1,7,6,8,0,1,4,3,7,3,5,6,7,6,3,3,1,2,4,8,8,7,8,6,2,3,5,4,6,8,4,9,9,7,9,7,8,7,4,8,3,4,8,3,8,1,3,8,6,2,0,3,8,3,1,5,1,7,6,7,7,3,7,9,7,2,8,5,6,9,1,0,8,9,2,6,2,5,8,3,2,1,3
-; Formula: a(n) = (A011543(n)/2)%10
 
-seq $0,11543 ; Decimal expansion of e truncated to n places.
-div $0,2
+add $0,1
+mov $3,$0
+mul $3,5
+lpb $3
+  add $2,56
+  mul $2,$3
+  mov $5,$3
+  div $5,3
+  add $5,1
+  add $1,$2
+  div $1,$5
+  div $2,$5
+  sub $3,1
+lpe
+mov $4,10
+pow $4,$0
+mul $2,5
+div $2,$4
+mul $2,2
+div $1,2
+div $1,$2
+mov $0,$1
 mod $0,10

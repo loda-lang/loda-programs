@@ -13,6 +13,7 @@ lpb $2
   cmp $3,2
   sub $0,$3
   add $1,1
+  add $1,$3
   mov $4,$0
   max $4,0
   cmp $4,$0

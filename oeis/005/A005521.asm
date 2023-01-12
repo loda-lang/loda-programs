@@ -1,12 +1,13 @@
 ; A005521: 1 + (sum of first n odd primes - n)/2.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,4,7,12,18,26,35,46,60,75,93,113,134,157,183,212,242,275,310,346,385,426,470,518,568,619,672,726,782,845,910,978,1047,1121,1196,1274,1355,1438,1524,1613,1703,1798
+; Formula: a(n) = a(n-1)+A102781(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,102781 ; Number of positive even numbers less than the n-th prime.
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

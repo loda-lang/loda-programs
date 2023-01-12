@@ -1,22 +1,21 @@
 ; A023408: If any power of 2 ends with k 5's and 6's, they must be the first k terms of this sequence in reverse order.
-; Submitted by Cruncher Pete
+; Submitted by Science United
 ; 6,5,6,6,6,5,6,6,6,6,5,6,6,6,5,6,5,5,6,5,5,5,5,6,5,5,6,6,5,6,6,6,5,6,6,6,6,6,6,5,6,6,5,6,5,6,6,5,5,5,6,5,6,5,6,6,5,5,6,5,6,5,6,6,6,5,6,6,6,5,6,6,5,5,5,6,5,5,5,5,5,6,6,6,6,5,6,5,6,5,5,6,6,5,5,6,6,5,6,6
+; Formula: a(n) = (b(n-1)/2+c(n-1)+d(n-1))%2+5, a(3) = 6, a(2) = 6, a(1) = 5, a(0) = 6, b(n) = b(n-1)/2+c(n-1)*((b(n-1)/2+c(n-1)+d(n-1))%2+5), b(3) = 832, b(2) = 164, b(1) = 28, b(0) = 6, c(n) = 5*c(n-1), c(3) = 625, c(2) = 125, c(1) = 25, c(0) = 5, d(n) = 2*c(n-1)*((b(n-1)/2+c(n-1)+d(n-1))%2+5), d(3) = 1500, d(2) = 300, d(1) = 50, d(0) = 12
 
 mov $2,1
 add $0,1
 lpb $0
   sub $0,1
-  mul $0,2
   div $1,2
-  mov $3,$0
   add $3,$1
+  add $3,$2
   mod $3,2
-  add $3,3
+  add $3,5
+  mov $4,$3
   mul $3,$2
-  div $0,2
   add $1,$3
   mul $2,5
+  mul $3,2
 lpe
-mod $3,2
-mov $0,$3
-add $0,5
+mov $0,$4
