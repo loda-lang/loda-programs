@@ -7,9 +7,9 @@ mov $3,$0
 mul $3,3
 lpb $3
   sub $3,1
-  add $5,$2
-  add $5,$2
-  add $5,$2
+  mov $6,$2
+  mul $6,3
+  add $5,$6
   add $1,$5
   add $2,$1
   mul $1,2

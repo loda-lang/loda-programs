@@ -17,14 +17,8 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-# colors
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-NC='\033[0m' # no color
-
 echo "Finding updated programs"
 files=
-update_all="n"
 while read -r s f; do
   if [[ $f == oeis/* ]] && [[ $s == "M" ]]; then
   files="$files $f"
@@ -35,54 +29,43 @@ if [ -z "$LODA_HOME" ]; then
   LODA_HOME=$HOME/loda
 fi
 
+# number of updated programs
 num_updated=0
-for f in $files; do
+
+# colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # no color
+
+function update_program {
+  f=$1
   fname=$(basename -- $f)
   anumber="${fname%.*}"
-  if [ "$commit_staged" != "y" ]; then
-    clear
-  fi
   if git diff -U1000 --exit-code -- $f; then
-    echo "Already staged: $f"
-    ((num_updated++))
-    continue
+    cat "$f"
   fi
-  if [ "$commit_staged" = "y" ]; then
-    echo "Skipping unstaged: $f"
-    continue
+  echo
+  usage=$(cat $LODA_HOME/stats/call_graph.csv | grep ,${anumber} | wc -l)
+  full_check=$(cat $LODA_HOME/programs/oeis/full_check.txt | grep ${anumber}: | wc -l)
+  num_terms=$(cat $LODA_HOME/oeis/b/${anumber:1:3}/b${anumber:1}.txt | grep . | wc -l)
+  echo "$num_terms known sequence terms."
+  if (( usage > 0 )); then
+    echo "$usage other programs using this program."
   fi
-  if [ "$update_all" != "y" ]; then
+  if (( full_check > 0 )); then
+    echo "Full check enabled."
+  fi
+  if (( usage >= 100 )); then
     echo
-    usage=$(cat $LODA_HOME/stats/call_graph.csv | grep ,${anumber} | wc -l)
-    full_check=$(cat $LODA_HOME/programs/oeis/full_check.txt | grep ${anumber}: | wc -l)
-    num_terms=$(cat $LODA_HOME/oeis/b/${anumber:1:3}/b${anumber:1}.txt | grep . | wc -l)
-    echo "$num_terms known sequence terms."
-    if (( usage > 0 )); then
-	echo "$usage other programs using this program."
-    fi
-    if (( full_check > 0 )); then
-	echo "Full check enabled."
-    fi
-    if (( usage >= 100 )); then
-	echo
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!   HIGH USAGE WARNING   !!!"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo
-    fi
-    read -p "Update program? (Y)es, (n)o, (c)heck, c(o)mpare, all: " a
-  else
-    a="y"
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    echo "!!!   HIGH USAGE WARNING   !!!"
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    echo
   fi
-  if [ "$a" = "all" ]; then
-    a="y"
-    update_all="y"
-  fi
+  read -p "Update program? (Y)es, (n)o, (c)heck, c(o)mpare, (e)dit, (r)evert, (u)nfold: " a
   if [ "$a" = "c" ] || [ "$a" = "C" ]; then
     loda check -b $f
-    echo
-    git diff -U1000 -- $f
-    read -p "Update program? (Y)es, (n)o: " a
+    update_program "$f"
   fi
   if [ "$a" = "o" ] || [ "$a" = "O" ]; then
     cp $f /tmp/updated_prog.asm
@@ -95,7 +78,6 @@ for f in $files; do
     readarray orig_arr < /tmp/orig_eval.out
     readarray updated_arr < /tmp/updated_eval.out
     echo
-    echo "Index OldSteps NewSteps"
     count=$((num_terms-1))
     for i in $(seq $count); do
       ori=$(echo "${orig_arr[$i]}" | awk '{print $2}')
@@ -108,18 +90,44 @@ for f in $files; do
         echo "$i: $ori = $upd"
       fi
     done
-    git diff -U1000 -- $f
-    read -p "Update program? (Y)es, (n)o: " a
+    update_program "$f"
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then
     git add $f
     ((num_updated++))
   elif [ "$a" = "n" ] || [ "$a" = "N" ]; then
-    git checkout -- $f
+    git checkout -- "$f"
+  elif [ "$a" = "e" ] || [ "$a" = "E" ]; then
+    mcedit "$f"
+    update_program "$f"
+  elif [ "$a" = "r" ] || [ "$a" = "R" ]; then
+    git checkout -- "$f"
+    update_program "$f"
+  elif [ "$a" = "u" ] || [ "$a" = "U" ]; then
+    if loda unfold "$f" > /tmp/unfolded.asm; then
+      cp /tmp/unfolded.asm "$f"
+    fi
+    update_program "$f"
   else
     echo "Invalid answer. Stopping!"
     exit 1
   fi
+}
+
+for f in $files; do
+  if [ "$commit_staged" != "y" ]; then
+    clear
+  fi
+  if git diff -U1000 --exit-code -- $f > /dev/null; then
+    echo "Already staged: $f"
+    ((num_updated++))
+    continue
+  fi
+  if [ "$commit_staged" = "y" ]; then
+    echo "Skipping unstaged: $f"
+    continue
+  fi
+  update_program "$f"
 done
 
 if (( num_updated >= 50 )); then

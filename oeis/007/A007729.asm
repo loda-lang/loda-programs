@@ -4,4 +4,10 @@
 ; Formula: a(n) = A174868(n+1)
 
 add $0,1
-seq $0,174868 ; Partial sums of Stern's diatomic series A002487.
+lpb $0
+  mov $2,$0
+  seq $2,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1

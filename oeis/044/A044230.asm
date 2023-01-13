@@ -1,6 +1,7 @@
 ; A044230: Numbers n such that string 5,3 occurs in the base 8 representation of n but not of n-1.
 ; Submitted by Saenger
 ; 43,107,171,235,299,344,363,427,491,555,619,683,747,811,856,875,939,1003,1067,1131,1195,1259,1323,1368,1387,1451,1515,1579,1643,1707,1771,1835,1880,1899,1963,2027,2091,2155,2219,2283,2347
+; Formula: a(n) = 4*((A044630(n+2)+1)%4)+A044630(n+2)-159
 
 add $0,2
 seq $0,44630 ; Numbers n such that string 7,6 occurs in the base 8 representation of n but not of n+1.

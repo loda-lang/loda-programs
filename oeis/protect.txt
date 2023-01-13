@@ -64,6 +64,7 @@ A030004: (prime(n)-1)(prime(n)-3)(prime(n)-5)/48.
 A030078: Cubes of primes.
 A030514: a(n) = prime(n)^4.
 A030629: Numbers with 11 divisors.
+A031215: Even-indexed primes: a(n) = prime(2n).
 A031336: a(n) = prime(3*n).
 A031338: a(n) = prime(5*n).
 A031339: a(n) = prime(6*n).
@@ -111,6 +112,7 @@ A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest pow
 A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
 A038500: Highest power of 3 dividing n.
+A038702: Prime(n)^2 mod prime(n-1).
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
 A039643: Number of steps to fixed point of "k -> k/2 or (k-1)/2 until result is prime", starting with prime(n)+1.
 A039649: a(n) = phi(n)+1.
@@ -132,6 +134,7 @@ A040051: Parity of partition function A000041.
 A040976: a(n) = prime(n) - 2.
 A046151: a(n) = n*phi(n) - 1.
 A046152: a(n) = n*phi(n) + 1.
+A046975: Partial sums of digits of decimal expansion of e.
 A048199: Distance of primes to next odd multiple of 5 (where n mod 10 = 5),
 A048974: Odd numbers that are the sum of 2 primes.
 A049001: a(n) = prime(n)^2 - 2.

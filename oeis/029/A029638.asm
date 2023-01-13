@@ -1,7 +1,7 @@
 ; A029638: Numbers in the (1,2)-Pascal triangle A029635 that are different from 1.
 ; Submitted by shift
 ; 2,2,3,2,4,5,2,5,9,7,2,6,14,16,9,2,7,20,30,25,11,2,8,27,50,55,36,13,2,9,35,77,105,91,49,15,2,10,44,112,182,196,140,64,17,2,11,54,156,294,378,336,204,81,19,2,12,65,210,450,672,714,540,285,100,21,2,13,77,275,660,1122
-; Formula: a(n) = (A097207(n)-1)+binomial(0,A097207(n)-1)+1
+; Formula: a(n) = binomial(0,A097207(n)-1)+A097207(n)
 
 seq $0,97207 ; Triangle read by rows: T(n,k) = binomial(n,k) + 2*binomial(n,k-1).
 sub $0,1
