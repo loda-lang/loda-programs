@@ -1,20 +1,23 @@
 ; A164944: Decimal value of the concatenation of first n even numbers in binary.
-; Submitted by Christian Krause
+; Submitted by Athlici
 ; 2,20,166,2664,42634,682156,10914510,349264336,11176458770,357646680660,11444693781142,366230200996568,11719366431890202,375019725820486492,12000631226255567774,768040398480356337568,49154585502742805604386
+; Formula: a(n) = 2*d(n), b(n) = b(n-1)*((n+1)/b(n-1))+b(n-1), b(4) = 8, b(3) = 8, b(2) = 4, b(1) = 4, b(0) = 2, c(n) = n+2, c(4) = 6, c(3) = 5, c(2) = 4, c(1) = 3, c(0) = 2, d(n) = 2*d(n-1)*((b(n-2)*(c(n-2)/b(n-2))+b(n-2))*((n+1)/(b(n-2)*(c(n-2)/b(n-2))+b(n-2)))+b(n-2)*(c(n-2)/b(n-2))+b(n-2))+n+1, d(4) = 21317, d(3) = 1332, d(2) = 83, d(1) = 10, d(0) = 1
 
-add $0,1
+mov $1,1
+add $0,2
 lpb $0
-  mov $3,2
-  mul $3,$0
-  mov $2,$1
-  lpb $2
-    div $2,2
-    mul $3,2
-  lpe
-  lpb $3
-    sub $0,1
-    add $1,$3
-    mov $3,0
-  lpe
+  sub $0,1
+  div $3,$1
+  mul $3,$1
+  mul $4,2
+  add $1,$3
+  mov $3,$4
+  mul $3,$1
+  mov $4,$2
+  add $4,$3
+  add $5,1
+  mov $2,$5
+  mov $3,$5
 lpe
-mov $0,$1
+mov $0,$4
+mul $0,2

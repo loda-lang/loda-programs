@@ -6,7 +6,26 @@ add $0,1
 mov $1,$0
 pow $1,2
 sub $1,1
-seq $1,740 ; Number of 2n-bead balanced binary necklaces of fundamental period 2n, equivalent to reversed complement; also Dirichlet convolution of b_n=2^(n-1) with mu(n); also number of components of Mandelbrot set corresponding to Julia sets with an attractive n-cycle.
+mov $2,1
+add $2,$1
+mov $4,$2
+sub $2,1
+mov $5,$2
+bin $5,2
+add $5,$2
+add $5,$4
+lpb $4
+  sub $4,1
+  mov $2,$5
+  sub $2,$4
+  sub $2,1
+  seq $2,143424 ; Triangle read by rows, A054525 * A130123, 1<=k<=n.
+  add $3,$2
+lpe
+mov $2,$3
+mul $2,2
+mov $1,$2
+div $1,2
 div $1,$0
 mov $0,$1
 mul $0,2

@@ -4,7 +4,25 @@
 
 mov $1,$0
 div $1,2
-seq $0,190488 ; Positions of 0 in A190487.
+mov $3,$0
+add $3,3
+pow $3,2
+lpb $3
+  add $2,1
+  mov $4,$2
+  seq $4,24539 ; a(n) = [ 1/{n*sqrt(2)} ], where {x} := x - [ x ].
+  sub $4,1
+  min $4,2
+  cmp $4,2
+  sub $0,$4
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,2
 mul $0,3
 sub $0,$1
 sub $0,9

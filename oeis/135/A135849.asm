@@ -1,6 +1,17 @@
 ; A135849: a(n) is the ratio of the sum of the bends (curvatures) of the circles in the n-th generation of an Apollonian packing to the sum of the bends in the initial four-circle configuration.
-; Submitted by Skillz
+; Submitted by ChelseaOilman
 ; 1,5,39,297,2259,17181,130671,993825,7558587,57487221,437222007,3325314393,25290849123,192350849805,1462934251071,11126421459153,84622568920011,643601286982629,4894942589100999,37228736851860105,283145067047577843,2153474325825042429,16378359405457605903,124566452266185719937,947396539913112941787,7205472962506346374485,54801594080311432170519,416796333754972418240697,3169965887798845049414019,24109338101125843140590061,183364807145610209976478431,1394590442861504150390057265
+; Formula: a(n) = 4*a(n-1)+2*a(n-1)+b(n-1)+c(n-1), a(2) = 39, a(1) = 5, a(0) = 1, b(n) = 4*a(n-1)+b(n-1), b(2) = 24, b(1) = 4, b(0) = 0, c(n) = 4*a(n-1)+2*a(n-1)+b(n-1)+c(n-1), c(2) = 39, c(1) = 5, c(0) = -1
 
-seq $0,331211 ; Number of green nodes in n-th power graph W exponentiation of a cycle graph with 7 blue nodes and one green node.
-dif $0,3
+mov $1,1
+mov $3,-1
+lpb $0
+  sub $0,1
+  mul $1,2
+  add $2,$1
+  add $2,$1
+  add $3,$1
+  add $3,$2
+  mov $1,$3
+lpe
+mov $0,$1

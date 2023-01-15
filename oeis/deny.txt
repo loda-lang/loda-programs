@@ -1339,6 +1339,7 @@ A135043: Duplicate of A054966.
 A135279: Erroneous version of A005097.
 A135460: Erroneous version of A005251.
 A135584: Duplicate of A124013.
+A135683: Duplicate of A005451.
 A135995: Erroneous version of A046850 found on the Internet.
 A136434: Duplicate of A121670.
 A137175: Duplicate of A032589.

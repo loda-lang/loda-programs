@@ -1,6 +1,17 @@
 ; A178982: Partial sums of floor(Fibonacci(n)/2).
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,1,2,4,8,14,24,41,68,112,184,300,488,793,1286,2084,3376,5466,8848,14321,23176,37504,60688,98200,158896,257105,416010,673124,1089144,1762278,2851432,4613721,7465164,12078896,19544072,31622980
-; Formula: a(n) = A192953(n)/6
+; Formula: a(n) = b(n-3)/2+a(n-1), a(3) = 1, a(2) = 0, a(1) = 0, a(0) = 0, b(n) = b(n-1)+b(n-2), b(3) = 8, b(2) = 5, b(1) = 3, b(0) = 2
 
-seq $0,192953 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
-div $0,6
+mov $1,2
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $5,$1
+  add $1,$3
+  div $2,2
+  add $4,$2
+  mov $2,$3
+  mov $3,$5
+lpe
+mov $0,$4

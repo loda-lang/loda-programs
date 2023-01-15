@@ -1,9 +1,15 @@
 ; A102511: Sum(A008683(A102510(k)): k<=n).
 ; Submitted by Dingo
 ; 1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,1,1
-; Formula: a(n) = (A107079(n+1)-1)%2
 
 add $0,1
-seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
+mov $1,1
+lpb $0
+  trn $0,1
+  mov $2,$0
+  seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  add $1,$2
+lpe
+mov $0,$1
 sub $0,1
 mod $0,2

@@ -1,6 +1,7 @@
 ; A188793: Start with 1 and 5, then repeatedly adjoin the smallest number that is greater than the last term and not equal to the sum of a subset of the existing terms.
 ; Submitted by Christian Krause
 ; 1,5,7,9,11,29,31,89,91,269,271,809,811,2429,2431,7289,7291,21869,21871,65609,65611,196829,196831,590489,590491,1771469,1771471,5314409,5314411,15943229,15943231,47829689,47829691,143489069,143489071,430467209,430467211
+; Formula: a(n) = 2*b(n)+1, b(n) = 2*b(n-2)*(b(n-3)%2)+b(n-1)+1, b(2) = 3, b(1) = 2, b(0) = 0
 
 mov $3,1
 lpb $0

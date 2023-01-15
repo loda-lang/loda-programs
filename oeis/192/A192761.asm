@@ -1,11 +1,19 @@
 ; A192761: Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
 ; Submitted by JayPi
 ; 0,1,5,11,22,40,70,119,199,329,540,882,1436,2333,3785,6135,9938,16092,26050,42163,68235,110421,178680,289126,467832,756985,1224845,1981859,3206734,5188624,8395390,13584047,21979471,35563553,57543060,93106650
-; Formula: a(n) = (-(n+1)+A022318(n+1))-3
 
 add $0,1
 sub $1,$0
-seq $0,22318 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 4.
+mov $4,3
+lpb $0
+  sub $0,1
+  mov $2,$4
+  add $4,$3
+  add $4,2
+  mov $3,$2
+lpe
+add $2,1
+mov $0,$2
 add $1,$0
 mov $0,$1
 sub $0,3

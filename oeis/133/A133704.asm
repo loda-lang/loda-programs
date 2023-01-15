@@ -1,6 +1,7 @@
 ; A133704: A051731 * a diagonalized matrix of A133696.
 ; Submitted by PDW
 ; 1,1,-3,1,0,-3,1,-3,0,-1,1,0,0,0,-3,1,-3,-3,0,0,1,1,0,0,0,0,0,-3,1,-3,0,-1,0,0,0,-1,1,0,-3,0,0,0,0,0,-1,1,-3,0,0,-3,0,0,0,0,1
+; Formula: a(n) = 2*A054527(n)*A051731(n)-A051731(n)
 
 mov $1,$0
 seq $1,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).

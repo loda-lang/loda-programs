@@ -1,22 +1,14 @@
 ; A099800: Bisection of A002110.
-; Submitted by nenym
+; Submitted by Athlici
 ; 2,30,2310,510510,223092870,200560490130,304250263527210,614889782588491410,1922760350154212639070,7858321551080267055879090,40729680599249024150621323470,267064515689275851355624017992790
 
 mov $1,2
-mov $2,2
+mov $2,1
 mul $0,2
+add $0,1
 lpb $0
-  add $3,3
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    cmp $4,1
-    cmp $4,0
-    sub $3,$4
-  lpe
-  add $2,1
   sub $0,1
-  mul $1,$2
+  mul $2,$1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
-mov $0,$1
+mov $0,$2

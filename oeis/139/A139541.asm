@@ -1,18 +1,18 @@
 ; A139541: There are 4*n players who wish to play bridge at n tables. Each player must have another player as partner and each pair of partners must have another pair as opponents. The choice of partners and opponents can be made in exactly a(n)=(4*n)!/(n!*8^n) different ways.
-; Submitted by Jamie Morken(s2)
+; Submitted by [VENETO] sabayonino
 ; 1,3,315,155925,212837625,618718975875,3287253918823875,28845653137679503125,388983632561608099640625,7637693625347175036443671875,209402646126143497974176151796875,7752714167528210725497923667975703125,377130780679409810741846496828678078515625,23561245522946127926096859889371662955263671875,1854387828883474998423453357592996732894027294921875,180852881787518666171244135605972192368955799991845703125,21545546365992461256978827607146285193490811320428554150390625
+; Formula: a(n) = (4*n-1)*((a(n-1)*(4*n-3)*(4*n-2))/2), a(1) = 3, a(0) = 1
 
-mov $2,1
-mov $3,$0
-mul $3,4
-lpb $3
-  mul $2,$3
-  lpb $3
-    bin $3,$0
-  lpe
-  sub $3,1
+mov $1,1
+mov $2,-1
+lpb $0
+  sub $0,1
+  add $2,2
+  mul $1,$2
+  add $2,1
+  mul $1,$2
+  div $1,2
+  add $2,1
+  mul $1,$2
 lpe
-mov $1,8
-pow $1,$0
-div $2,$1
-mov $0,$2
+mov $0,$1

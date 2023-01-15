@@ -1,8 +1,17 @@
 ; A157686: a(n) = A157684(n) - A157685(n).
-; Submitted by yannlieb
+; Submitted by Steve Dodd
 ; 1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0
-; Formula: a(n) = A000002(n+1)-1
+; Formula: a(n) = (d(n)+1)%2, b(n) = b(n-1)/2+c(n-1), b(2) = 5, b(1) = 2, b(0) = 0, c(n) = gcd(b(n-1)/2+d(n-1),2)*c(n-1), c(2) = 4, c(1) = 4, c(0) = 2, d(n) = gcd(b(n-1)/2+d(n-1),2), d(2) = 1, d(1) = 2, d(0) = 0
 
+mov $2,2
+lpb $0
+  sub $0,1
+  div $1,2
+  add $3,$1
+  gcd $3,2
+  add $1,$2
+  mul $2,$3
+lpe
+mov $0,$3
 add $0,1
-seq $0,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
-sub $0,1
+mod $0,2

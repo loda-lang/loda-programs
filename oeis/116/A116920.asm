@@ -1,9 +1,13 @@
 ; A116920: a(0)=1. a(n) = A020639(a(n-1)) + n.
-; Submitted by Simon Strandgaard
+; Submitted by amazing
 ; 1,2,4,5,9,8,8,9,11,20,12,13,25,18,16,17,33,20,20,21,23,44,24,25,29,54,28,29,57,32,32,33,35,38,36,37,73,110,40,41,81,44,44,45,47,92,48,49,55,54,52,53,105,56,56,57,59,116,60,61,121,72,64,65,69,68,68,69,71,140,72,73,145,78,76,77,83,160,80,81,83,164,84,85,89,174,88,89,177,92,92,93,95,98,96,97,193,290,100,101
+; Formula: a(n) = b(n)+1, b(n) = A020639(b(n-1))+n-1, b(1) = 1, b(0) = 0
 
-mov $1,$0
-trn $0,1
-seq $0,132850 ; a(0)=1; a(n) = the smallest prime dividing (n+a(n-1)), for n>=1.
-add $1,$0
-mov $0,$1
+lpb $0
+  sub $0,1
+  seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  sub $2,$1
+  sub $1,1
+lpe
+mov $0,$2
+add $0,1

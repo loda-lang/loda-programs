@@ -4,6 +4,14 @@
 
 add $0,2
 mov $1,$0
-seq $1,101052 ; Number of preferential arrangements of n labeled elements when only k <= 3 ranks are allowed.
+mov $3,$1
+add $1,1
+mov $4,2
+pow $4,$1
+mov $2,3
+pow $2,$3
+sub $2,$4
+mov $1,$2
+add $1,2
 mov $0,$1
 div $0,12

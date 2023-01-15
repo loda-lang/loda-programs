@@ -1,8 +1,17 @@
 ; A174554: Smallest k > 2 such that 2|k, 3|k+1, 4|k+2,..., n|k+n-2.
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 4,8,14,62,62,422,842,2522,2522,27722,27722,360362,360362,360362,720722,12252242,12252242,232792562,232792562,232792562,232792562,5354228882,5354228882,26771144402,26771144402,80313433202,80313433202
-; Formula: a(n) = A070198(n+1)+3
+; Formula: a(n) = b(n)/c(n)+2, b(n) = b(n-1)*(n+2), b(2) = 24, b(1) = 6, b(0) = 2, c(n) = gcd(c(n-1)*(n+2),b(n-1)), c(2) = 2, c(1) = 1, c(0) = 1
 
-add $0,1
-seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
-add $0,3
+mov $1,1
+add $0,2
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  gcd $3,$1
+  mul $1,$2
+lpe
+div $1,$3
+mov $0,$1
+add $0,2

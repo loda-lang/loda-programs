@@ -1,5 +1,5 @@
 ; A105150: Approximation to leading digit of n-th Fibonacci number.
-; Submitted by Simon Strandgaard
+; Submitted by x8CdHfMQ4f
 ; 0,1,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3,5,8,1,2,3
 
 mov $1,1
@@ -9,8 +9,7 @@ lpb $0
   add $1,$2
   add $2,$1
 lpe
-lpb $0
-  trn $0,$1
-  add $2,$1
-lpe
-add $0,$2
+mov $3,$1
+mul $3,$0
+add $2,$3
+mov $0,$2

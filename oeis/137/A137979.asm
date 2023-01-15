@@ -1,7 +1,10 @@
 ; A137979: Highest coefficient occurring in the factorization of x^n - 1 over the reals.
-; Submitted by ChelseaOilman
+; Submitted by zioriga
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-dif $0,4
+lpb $0
+  dif $0,3
+lpe
+dif $0,2
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 add $0,1

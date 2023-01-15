@@ -14,8 +14,10 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
+  gcd $3,$0
   sub $3,1
-  seq $3,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
+  seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  sub $3,1
   lpb $0
     dif $0,$2
     add $1,$3

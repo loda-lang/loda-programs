@@ -4,5 +4,20 @@
 
 mov $1,$0
 add $1,1
-seq $0,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+mul $0,2
+add $0,1
+mov $3,6
+mov $4,11
+lpb $4
+  sub $4,1
+  add $3,$2
+  mul $2,2
+  add $2,$3
+lpe
+mul $2,$0
+div $2,$3
+mov $0,$2
+add $0,1
+div $0,2
+add $0,1
 mod $0,$1

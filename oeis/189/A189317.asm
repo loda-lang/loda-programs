@@ -1,8 +1,17 @@
 ; A189317: Expansion of 5*(1-6*x+x^2)/(1-10*x+5*x^2)
-; Submitted by Ragnarsdad
+; Submitted by Odd-Rod
 ; 5,20,180,1700,16100,152500,1444500,13682500,129602500,1227612500,11628112500,110143062500,1043290062500,9882185312500,93605402812500,886643101562500,8398404001562500,79550824507812500,753516225070312500,7137408128164062500
+; Formula: a(n) = 5*max(b(n),1), b(n) = 4*d(n-1), b(2) = 36, b(1) = 4, b(0) = 0, c(n) = 4*d(n-1)+c(n-1), c(2) = 40, c(1) = 4, c(0) = 0, d(n) = 8*d(n-1)+c(n-1)+d(n-1), d(2) = 85, d(1) = 9, d(0) = 1
 
-mul $0,2
-trn $0,1
-seq $0,212500 ; a(n) is the difference between multiples of 5 with even and odd digit sum in base 4 in interval [0,4^n).
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,4
+  add $2,$1
+  add $3,$2
+  add $3,$1
+lpe
+max $1,1
+mov $0,$1
 mul $0,5

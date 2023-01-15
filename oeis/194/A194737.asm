@@ -4,7 +4,14 @@
 
 mov $1,$0
 add $1,2
-seq $0,194138 ; a(n) = Sum_{j=1..n} floor(j*(1+sqrt(2))), n-th partial sum of Beatty sequence for 1+sqrt(2).
+lpb $0
+  mov $3,$0
+  seq $3,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  sub $0,1
+  add $2,$3
+lpe
+add $2,2
+mov $0,$2
 sub $0,1
 mul $0,2
 mod $0,$1

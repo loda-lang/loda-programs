@@ -8,7 +8,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,337177 ; Sum of the divisors d of n such that d is not equal to n/d.
   gcd $3,$5
   cmp $3,1
   sub $0,$3

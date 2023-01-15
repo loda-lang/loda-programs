@@ -1,6 +1,7 @@
-; A134186: A 3 person 9 X 9 Markov approach to a zero sum game where: Sum[game_value(MAi),{i,1,3}]=0 and two of the games are minimal Pisot vector Markovs and the third is a negative Fibonacci: Characteristic Polynomial: -1 + 3 x^2 + 3 x^3 - 4 x^4 - 5 x^5 + x^6 + 4 x^7 - x^9; MA1={{0,1,0},{,0,0,1},{1,1,0}};Det=1 ;gv=-1/4; MA2={{0,1,1},{1,0,0},{0,1,0}};Det=1;gv=-1/4 MA2={{0,0,1},{0,1,0},{1,0,-1}};Det=-1;gv=1/2.
+; A134186: Expansion of -x*(5*x^4+5*x^3-7*x-4)/((x^2-x-1)*(x^3+x^2-1)).
 ; Submitted by damotbe
 ; 4,3,5,4,7,7,12,11,23,16,45,21,90,19,187,-14,405,-149,912,-587,2127,-1882,5111,-5533,12578,-15549,31521,-42574,80051,-114735,205238,-306127,529707,-811536,1373431,-2142327,3572244,-5639743,9311113,-14819542,24304609,-38893711,63503588,-101992905
+; Formula: a(n) = b(n)+3, b(n) = -b(n-1)+b(n-2)+c(n-2)+d(n-2)+1, b(5) = 4, b(4) = 4, b(3) = 1, b(2) = 2, b(1) = 0, b(0) = 1, c(n) = c(n-1)+d(n-1), c(5) = 8, c(4) = 6, c(3) = 2, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = -d(n-1)+d(n-2)+d(n-3)+max(d(n-1),2), d(5) = 4, d(4) = 2, d(3) = 4, d(2) = 0, d(1) = 2, d(0) = 0
 
 mov $1,1
 lpb $0

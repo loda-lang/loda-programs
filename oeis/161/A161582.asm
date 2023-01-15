@@ -1,8 +1,16 @@
 ; A161582: The list of the k values in the common solutions to the 2 equations 5*k+1=A^2, 9*k+1=B^2.
 ; Submitted by Jon Maiga
 ; 0,7,336,15792,741895,34853280,1637362272,76921173511,3613657792752,169764995085840,7975341111241735,374671267233275712,17601574218852716736,826899317018844410887,38846666325666834594960,1824966417989322381552240
-; Formula: a(n) = (A049685(n)^2)/5
 
-seq $0,49685 ; a(n) = L(4*n+2)/3, where L=A000032 (the Lucas sequence).
+mov $2,1
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $2,$1
+lpe
+pow $2,2
+mov $0,$2
+mul $0,5
+div $0,3
 pow $0,2
 div $0,5

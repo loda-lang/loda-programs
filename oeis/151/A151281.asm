@@ -4,6 +4,20 @@
 
 mov $1,3
 pow $1,$0
-seq $0,126087 ; Expansion of c(2x^2)/(1-xc(2x^2)), where c(x) = (1-sqrt(1-4x))/(2x) is the g.f. of the Catalan numbers (A000108).
+mov $3,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mul $3,-2
+  mov $0,$3
+  sub $2,1
+  mul $3,$4
+  div $3,$2
+  add $5,$3
+  sub $3,$0
+  sub $4,1
+lpe
+mov $0,$5
+add $0,1
 add $0,$1
 div $0,2

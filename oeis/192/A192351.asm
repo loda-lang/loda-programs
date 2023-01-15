@@ -4,6 +4,19 @@
 
 mov $1,2
 pow $1,$0
-seq $0,192422 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined below in Comments.
+mov $2,1
+mov $3,2
+lpb $0
+  sub $0,1
+  mov $7,$5
+  mov $5,$2
+  add $5,$3
+  mov $6,$2
+  add $2,$4
+  add $2,$7
+  mov $3,$7
+  mov $4,$6
+lpe
+mov $0,$4
 mul $0,$1
 div $0,2

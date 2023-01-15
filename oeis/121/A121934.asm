@@ -1,9 +1,20 @@
 ; A121934: Smallest positive number m such that m == i (mod i+1) for all 1<=i<=n.
-; Submitted by Orange Kid
+; Submitted by Tae Hyun Kim
 ; 1,1,5,11,59,59,419,839,2519,2519,27719,27719,360359,360359,360359,720719,12252239,12252239,232792559,232792559,232792559,232792559,5354228879,5354228879,26771144399,26771144399,80313433199,80313433199
-; Formula: a(n) = (A051426(n)-3)/2+1
+; Formula: a(n) = 2*((b(n)/c(n)-2)/2)+1, b(n) = b(n-1)*(n+1), b(2) = 6, b(1) = 2, b(0) = 1, c(n) = gcd(c(n-1)*(n+1),b(n-1)), c(2) = 1, c(1) = 1, c(0) = 1
 
-seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
-sub $0,3
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  gcd $3,$1
+  mul $1,$2
+lpe
+div $1,$3
+mov $0,$1
+sub $0,2
 div $0,2
+mul $0,2
 add $0,1

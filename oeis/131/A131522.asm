@@ -1,4 +1,4 @@
-; A131522: Triangular sequence from coefficients of polynomials of a type gives by a geometric average of two consecutive dihedral group elliptical invariants: p(x,n)=(x^n - 1)*(x^(n + 1) - 1): associate with B_n as odd SO(2*n+1) group.
+; A131522: Expansions of p(x,n)=(x^n - 1)*(x^(n + 1) - 1) for n >= 1, triangle read by rows.
 ; Submitted by [SG-FC] hl
 ; 1,-1,-1,1,1,0,-1,-1,0,1,1,0,0,-1,-1,0,0,1,1,0,0,0,-1,-1,0,0,0,1,1,0,0,0,0,-1,-1,0,0,0,0,1,1,0,0,0,0,0,-1,-1,0,0,0,0,0,1,1,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,-1,-1,0
 

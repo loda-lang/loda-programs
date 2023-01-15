@@ -4,7 +4,18 @@
 
 add $0,1
 mov $1,$0
-seq $1,1803 ; Numerators in expansion of (1 - x)^(-3/2).
+mov $3,1
+mov $4,2
+lpb $1
+  sub $1,1
+  gcd $2,$4
+  dif $3,$2
+  add $4,1
+  mov $2,$3
+  mul $3,$4
+  add $4,1
+lpe
+mov $1,$3
 gcd $0,$1
 div $1,$0
 mov $0,$1

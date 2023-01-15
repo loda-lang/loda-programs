@@ -1,39 +1,31 @@
 ; A020774: Decimal expansion of 1/sqrt(17).
-; Submitted by [TA]crashtech
+; Submitted by Fardringle
 ; 2,4,2,5,3,5,6,2,5,0,3,6,3,3,2,9,7,3,5,1,8,9,0,6,4,6,2,1,1,6,1,2,2,1,7,7,9,4,9,8,3,5,2,4,8,5,5,1,3,8,9,4,3,7,3,1,7,5,6,6,6,8,0,7,7,0,2,9,1,4,3,2,1,3,7,5,0,7,1,5,2,5,6,3,9,9,1,9,7,9,4,5,9,4,5,2,0,1,7,4
 
-mov $1,1
+add $0,1
+mov $2,1
 mov $3,$0
-mov $4,$0
-add $0,5
-mov $2,2
-add $4,3
-mul $4,2
-mov $7,10
-pow $7,$4
-add $3,6
+mul $3,2
 lpb $3
+  mul $1,$3
+  mul $1,2
+  mov $5,$3
+  mul $5,2
+  mul $2,4
+  mul $2,$5
   sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,68
-  mov $5,$1
-  pow $5,2
-  add $4,$5
+  sub $1,$6
+  add $1,$2
+  div $1,$0
+  mul $2,-4
+  div $2,$0
   mov $6,$1
-  mul $6,$2
-  mul $6,2
-  mov $1,$4
-  div $4,2
-  mov $8,$4
-  div $8,$7
-  max $8,2
-  div $1,$8
-  mov $2,$6
-  div $2,$8
 lpe
-mov $3,10
-pow $3,$0
-div $2,$3
-mov $0,$2
+sub $3,1
+mov $4,10
+pow $4,$0
+mul $2,$3
+div $2,$4
+div $1,$2
+mov $0,$1
 mod $0,10

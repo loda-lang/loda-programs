@@ -4,7 +4,15 @@
 mov $2,$0
 add $0,1
 mul $0,2
-seq $0,198082 ; Ceiling(n*Sqrt(5)).
+mul $0,2
+mov $3,$0
+pow $3,2
+lpb $3
+  sub $3,$0
+  trn $3,1
+  add $0,2
+lpe
+div $0,2
 add $0,4
 mov $1,$2
 mul $1,5
