@@ -1,14 +1,17 @@
 ; A240465: Inverse of 76th cyclotomic polynomial.
-; Submitted by Odd-Rod
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (4*A014047((n+1)/2)*gcd((n+1)-1,2))/8
 
-add $0,1
 mov $1,$0
-sub $0,1
 gcd $0,2
 mul $0,4
 div $1,2
-seq $1,14047 ; Inverse of 38th cyclotomic polynomial.
+mov $2,-1
+pow $2,$1
+sub $3,$1
+mod $3,19
+pow $3,$3
+mov $1,$3
+mul $1,$2
 mul $0,$1
 div $0,8

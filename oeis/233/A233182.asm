@@ -7,9 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-  sub $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,358769 ; a(n) = 1 if n is of the form p * m^2, where p is a prime and m is a natural number >= 1, otherwise 0.
   cmp $3,0
   sub $0,$3
   add $1,1

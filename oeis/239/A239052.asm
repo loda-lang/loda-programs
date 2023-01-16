@@ -1,7 +1,8 @@
 ; A239052: Sum of divisors of 4*n-2.
-; Submitted by vanos0512
+; Submitted by pututu
 ; 3,12,18,24,39,36,42,72,54,60,96,72,93,120,90,96,144,144,114,168,126,132,234,144,171,216,162,216,240,180,186,312,252,204,288,216,222,372,288,240,363,252,324,360,270,336,384,360,294,468,306,312,576
+; Formula: a(n) = 3*A000593(2*n)
 
 mul $0,2
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,593 ; Sum of odd divisors of n.
 mul $0,3

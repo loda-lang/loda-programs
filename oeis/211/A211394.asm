@@ -4,6 +4,13 @@
 
 add $0,1
 mov $1,$0
-seq $0,274093 ; a(0)=0; thereafter (-1)^n*n appears n times.
+lpb $0
+  pow $2,0
+  sub $2,3
+  bin $2,$3
+  add $3,1
+  trn $0,$3
+lpe
+sub $0,$2
 add $0,$1
 add $0,1

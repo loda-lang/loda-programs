@@ -4,7 +4,14 @@
 
 mov $1,$0
 mul $0,2
-seq $0,31876 ; a(n) = Sum_{k=0..n} floor(k^(1/3)).
+lpb $0
+  add $2,$0
+  add $4,6
+  add $3,$4
+  sub $0,$3
+  trn $0,1
+lpe
+mov $0,$2
 add $0,1
 add $0,$1
 mul $0,2

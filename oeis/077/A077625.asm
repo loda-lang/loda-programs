@@ -6,6 +6,18 @@ add $0,1
 mov $1,1
 bin $1,$0
 sub $0,$1
-seq $0,17912 ; Powers of sqrt(2) rounded up.
+mov $4,$0
+mov $0,2
+pow $0,$4
+mov $2,$0
+sub $2,1
+lpb $0
+  max $0,1
+  div $3,$0
+  add $0,$3
+  div $0,2
+  mov $3,$2
+lpe
+add $0,1
 sub $0,1
 mul $0,2

@@ -2,7 +2,23 @@
 ; Submitted by Jamie Morken(w4)
 ; 106,206,306,406,506,606,706,806,906,1006,1060,1106,1206,1306,1406,1506,1606,1706,1806,1906,2006,2060,2106,2206,2306,2406,2506,2606,2706,2806,2906,3006,3060,3106,3206,3306,3406,3506
 
-seq $0,44337 ; Numbers n such that string 0,5 occurs in the base 10 representation of n but not of n-1.
+mul $0,10
+add $0,12
+mov $3,$0
+add $0,9
+div $0,11
+mul $0,22
+sub $3,3
+div $3,11
+add $3,3
+mul $3,14
+add $0,$3
+add $0,$3
+sub $0,8
+mul $0,4
+div $0,10
+sub $0,18
+mul $0,5
 div $0,2
 mul $0,2
 mov $2,$0

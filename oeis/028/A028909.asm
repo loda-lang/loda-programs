@@ -4,5 +4,25 @@
 
 mov $1,2
 pow $1,$0
-seq $1,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+mov $2,$1
+mov $1,0
+mov $3,9
+lpb $3
+  mov $7,10
+  sub $7,$3
+  mov $4,$2
+  lpb $4
+    mov $6,$4
+    mod $6,10
+    cmp $6,$7
+    div $4,10
+    add $5,$6
+  lpe
+  lpb $5
+    sub $5,1
+    mul $1,10
+    add $1,$7
+  lpe
+  sub $3,1
+lpe
 mov $0,$1

@@ -1,11 +1,17 @@
 ; A223211: 3 X 3 X 3 triangular graph coloring a rectangular array: number of n X 1 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
-; Submitted by pututu
+; Submitted by USTL-FIL (Lille Fr)
 ; 6,18,60,192,624,2016,6528,21120,68352,221184,715776,2316288,7495680,24256512,78495744,254017536,822018048,2660106240,8608284672,27856994304,90147127296,291722231808,944032972800,3054954872832,9886041636864,31991902765056,103527972077568,335023555215360,1084158998740992,3508412218343424,11353460431650816,36740569736675328,118894981199953920,384752241346609152,1245084407493033984,4029177780372504576,13038693190717145088,42194097502924308480,136542967768717197312,441862325549131628544
-; Formula: a(n) = 3*A000045(n+3)*2^n
+; Formula: a(n) = 6*b(n), b(n) = 4*b(n-2)+2*b(n-1), b(1) = 3, b(0) = 1
 
-mov $1,2
-pow $1,$0
-add $0,3
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-mul $0,$1
-mul $0,3
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,1
+  mul $2,2
+  mov $3,$1
+  mov $1,$2
+  mul $1,2
+  add $2,$3
+lpe
+mov $0,$2
+mul $0,6

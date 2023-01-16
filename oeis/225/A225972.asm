@@ -5,4 +5,9 @@
 pow $0,2
 add $0,1
 div $0,2
-seq $0,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
+lpb $0
+  add $2,1
+  sub $0,$2
+  add $1,$0
+lpe
+mov $0,$1

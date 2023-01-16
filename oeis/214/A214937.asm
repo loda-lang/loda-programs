@@ -1,23 +1,7 @@
 ; A214937: Square numbers that can be expressed as sums of a positive square number and a positive triangular number.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Orange Kid
 ; 4,16,25,49,64,81,100,121,169,196,256,289,361,400,484,529,576,625,676,729,784,841,900,961,1024,1156,1225,1369,1444,1521,1600,1681,1764,1849,1936,2025,2116,2209,2401,2500,2704,2809,2916,3025,3136,3249,3364,3481,3600,3721,3844,3969,4096,4225,4489,4624,4761,4900,5041,5184,5329,5476,5625,5776,5929,6241,6400,6724,6889,7056,7225,7396,7569,7744,7921,8100,8281,8464,8836,9025,9216,9409,9604,9801,10000,10201,10609,10816,11025,11236,11449,11664,11881,12100,12321,12544,12769,13225,13456,13689
+; Formula: a(n) = A215069(n)^2
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  pow $3,2
-  mul $3,2
-  seq $3,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
-  add $4,2
-  sub $0,$3
-  mov $1,$0
-  max $1,0
-  cmp $1,$0
-  mul $2,$1
-  sub $2,1
-  mov $3,$4
-lpe
-pow $3,2
-mov $0,$3
-div $0,4
+seq $0,215069 ; Natural numbers that when squared can be expressed as sums of a positive square number and a positive triangular number
+pow $0,2

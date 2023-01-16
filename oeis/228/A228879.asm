@@ -1,6 +1,17 @@
 ; A228879: a(n+2) = 3*a(n), starting 4,7.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 4,7,12,21,36,63,108,189,324,567,972,1701,2916,5103,8748,15309,26244,45927,78732,137781,236196,413343,708588,1240029,2125764,3720087,6377292,11160261,19131876,33480783,57395628,100442349,172186884,301327047,516560652
+; Formula: a(n) = b(n)+4, b(n) = 2*c(n-1)+b(n-1)+3, b(1) = 3, b(0) = 0, c(n) = 3*(c(n-1)/(-1))+2*c(n-1)+b(n-1)+1, c(1) = 1, c(0) = 0
 
-seq $0,90993 ; Number of meaningful differential operations of the n-th order on the space R^8.
-div $0,2
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $1,$2
+  add $1,1
+  div $2,-1
+  mul $2,3
+  add $2,$1
+  add $1,2
+lpe
+mov $0,$1
+add $0,4

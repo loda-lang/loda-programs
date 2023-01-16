@@ -6,6 +6,13 @@ mov $1,$0
 mul $1,2
 add $1,1
 mod $1,3
-seq $0,118658 ; a(n) = 2*F(n-1) = L(n) - F(n), where F(n) and L(n) are Fibonacci and Lucas numbers respectively.
+mov $2,2
+lpb $0
+  sub $0,1
+  mov $3,$4
+  add $4,$2
+  mov $2,$3
+lpe
+mov $0,$2
 sub $0,2
 add $0,$1

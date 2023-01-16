@@ -1,10 +1,13 @@
 ; A242096: a(n) = (n mod 2) * pi( ceiling(n/2)-1 ), where pi is the prime counting function (A000720).
+; Submitted by Kotenok2000
 ; 0,0,0,0,0,1,0,2,0,2,0,3,0,3,0,4,0,4,0,4,0,4,0,5,0,5,0,6,0,6,0,6,0,6,0,7,0,7,0,8,0,8,0,8,0,8,0,9,0,9,0,9,0,9,0,9,0,9,0,10,0,10,0,11,0,11,0,11,0,11,0,11,0,11,0,12,0,12,0,12,0,12,0,13,0,13,0,14,0,14,0,14,0,14,0,15,0,15,0,15
 
 lpb $0
-  div $0,2
-  mov $1,$0
-  seq $1,230980 ; Number of primes <= n, starting at n=0.
-  mul $0,2
+  dif $0,-2
+  sub $0,2
+  mov $2,$0
+  max $2,0
+  seq $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  add $1,$2
 lpe
 mov $0,$1

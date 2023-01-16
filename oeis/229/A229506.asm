@@ -4,7 +4,21 @@
 
 mov $1,3
 pow $1,$0
-seq $0,268905 ; Number of 2 X n 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two exactly once.
+mov $3,6
+mov $5,4
+lpb $0
+  sub $0,1
+  sub $4,$3
+  mov $2,$3
+  sub $2,$4
+  mul $3,4
+  add $5,$3
+  mov $3,$5
+  add $3,$4
+  mul $4,2
+lpe
+mov $0,$2
+mul $0,3
 mul $0,$1
 div $0,108
 mul $0,288

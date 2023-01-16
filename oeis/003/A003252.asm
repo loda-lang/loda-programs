@@ -4,7 +4,18 @@
 
 add $0,1
 mov $1,$0
-seq $0,247429 ; A247427(n) for n in A003249; A247427(n) - 1 for other n.
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,247430 ; Complement of A247429.
+  sub $4,1
+  add $0,1
+  add $2,1
+  add $3,$4
+  sub $3,$0
+lpe
+add $0,1
 sub $0,3
 add $1,$0
 mov $0,$1

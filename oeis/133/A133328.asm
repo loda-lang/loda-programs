@@ -6,5 +6,19 @@ mov $1,$0
 mod $1,2
 mul $0,6
 add $0,$1
-seq $0,276599 ; Values of n such that n^2 + 5 is a triangular number (A000217).
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $4,$0
+  add $4,$0
+  mod $4,4
+  mul $4,$3
+  add $2,6
+  add $2,$4
+  add $3,$2
+lpe
+add $3,$2
+mov $0,$3
+div $0,4
+add $0,1
 div $0,5

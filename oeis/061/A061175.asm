@@ -4,7 +4,27 @@
 
 mul $0,2
 add $0,1
-seq $0,60932 ; Fifth convolution of Lucas numbers A000032(n+1), n >= 0.
+mov $1,3
+mov $3,3
+mov $5,3
+lpb $0
+  sub $0,1
+  add $4,1
+  add $5,$3
+  add $2,$1
+  mul $2,-2
+  add $3,$5
+  mov $1,$3
+  sub $1,$5
+  sub $1,$2
+  mul $1,5
+  div $1,$4
+  add $3,$1
+  mul $5,-1
+  add $5,$1
+lpe
+mov $0,$3
+div $0,3
 sub $0,18
 div $0,2
 add $0,9

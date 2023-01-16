@@ -4,7 +4,13 @@
 
 add $0,1
 mov $1,$0
-seq $0,180101 ; a(0)=0, a(1)=1; thereafter a(n) = largest prime factor of sum of all previous terms.
+lpb $0
+  mov $2,$0
+  trn $2,2
+  seq $2,76272 ; Largest prime factor of A076271(n): A006530(A076271(n)).
+  mov $0,0
+lpe
+mov $0,$2
 sub $1,$0
 mov $0,$1
 add $0,1

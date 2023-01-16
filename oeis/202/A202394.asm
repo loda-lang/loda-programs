@@ -4,5 +4,8 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,204850 ; Expansion of f(x)^3 - 9 * x * f(x^9)^3 in powers of x where f() is a Ramanujan theta function.
+mov $2,$0
+seq $2,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+seq $0,57079 ; Periodic sequence: repeat [1,2,1,-1,-2,-1]; expansion of (1+x)/(1-x+x^2).
+mul $0,$2
 mul $0,$1

@@ -5,7 +5,17 @@
 add $0,1
 mov $1,$0
 mod $1,2
-seq $0,61534 ; Expansion of (1-x^2)/(1-3*x-x^2+x^3).
+mov $3,1
+mov $5,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  add $3,$2
+  mov $4,$5
+  mov $5,$3
+  add $3,$4
+lpe
+mov $0,$3
 sub $0,$1
 sub $0,1
 div $0,2

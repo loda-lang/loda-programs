@@ -4,6 +4,18 @@
 
 mov $1,$0
 add $1,3
-seq $1,230800 ; Number of n X 2 0..3 arrays x(i,j) with each element horizontally or vertically next to at least one element with value (x(i,j)+1) mod 4 and at least one element with value (x(i,j)-1) mod 4, and upper left element zero.
+mov $5,1
+lpb $1
+  sub $1,1
+  add $3,$2
+  add $4,$5
+  sub $5,$2
+  mov $2,$5
+  mov $5,$3
+  mov $3,$2
+  add $3,$4
+  mul $4,3
+lpe
+mov $1,$3
 mov $0,$1
 div $0,2

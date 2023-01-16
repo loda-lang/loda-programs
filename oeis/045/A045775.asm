@@ -4,7 +4,25 @@
 
 mov $1,$0
 mul $1,2
-seq $0,45774 ; Extension of Beatty sequence; complement of A045775.
+mov $3,4
+lpb $0
+  sub $0,1
+  mul $3,4
+  sub $2,$3
+  add $2,1
+  div $2,2
+  add $5,$4
+  add $5,2
+  add $4,$2
+  gcd $4,4
+  mul $3,2
+  mul $3,$4
+  mul $3,2
+  div $4,2
+  dif $2,$4
+lpe
+mov $0,$5
+div $0,2
 mul $0,3
 add $1,$0
 mov $0,$1

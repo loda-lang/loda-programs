@@ -4,4 +4,19 @@
 
 mul $0,2
 add $0,1
-seq $0,217450 ; Number of n X 1 arrays of the minimum value of corresponding elements and their horizontal and vertical neighbors in a random 0..2 n X 1 array.
+lpb $0
+  sub $0,1
+  add $4,$1
+  add $4,$1
+  add $4,3
+  trn $5,2
+  add $5,$2
+  add $1,$3
+  mov $2,$3
+  add $2,$4
+  mov $3,$5
+  sub $3,$1
+lpe
+mov $0,$5
+mul $0,2
+add $0,3

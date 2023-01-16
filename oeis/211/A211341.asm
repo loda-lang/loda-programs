@@ -4,5 +4,9 @@
 
 add $0,1
 mov $1,$0
-seq $0,63709 ; Remainder when n^n is divided by n!.
+mov $2,$0
+pow $2,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mod $2,$0
+mov $0,$2
 div $0,$1

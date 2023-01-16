@@ -5,6 +5,9 @@
 mov $1,$0
 bin $1,2
 div $1,3
-seq $0,238410 ; a(n) = floor((3(n-1)^2 + 1)/2).
+pow $0,2
+mul $0,3
+add $0,1
+div $0,2
 mul $0,$1
 div $0,2

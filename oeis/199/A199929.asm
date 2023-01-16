@@ -4,4 +4,18 @@
 
 mul $0,3
 add $0,2
-seq $0,199802 ; G.f.:  1/(1-2*x+2*x^2-x^3+x^4).
+mov $2,1
+mov $3,1
+mov $5,1
+lpb $0
+  sub $0,1
+  sub $3,$4
+  mov $4,$2
+  sub $5,$1
+  add $5,$2
+  add $1,$5
+  mov $2,$3
+  add $2,$4
+  mov $3,$5
+lpe
+mov $0,$3

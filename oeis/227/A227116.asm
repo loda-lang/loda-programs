@@ -1,10 +1,17 @@
 ; A227116: Given an equilateral triangular grid with side n, containing n(n+1)/2 points, a(n) is the minimal number of points to be removed from the grid, so that, if 3 of the remaining points are chosen, they do not form an equilateral triangle with sides parallel to the grid.
 ; Submitted by Simon Strandgaard
 ; 0,1,2,4,7,9,14,18,23,29,36,44,52,61,71
-; Formula: a(n) = (n^2+(2*n+(-4)*A227308(n))/2+2*n)/2+1
 
 mov $1,$0
-seq $0,227308 ; Given an equilateral triangular grid with side n consisting of n(n+1)/2 points, a(n) is the maximum number of points that can be painted so that, if any 3 of the painted ones are chosen, they do not form an equilateral triangle with sides parallel to the grid.
+lpb $0
+  mov $3,$0
+  seq $3,195311 ; Row sums of A195310.
+  mul $0,2
+  cmp $0,$3
+  add $2,$3
+lpe
+mov $0,$2
+add $0,1
 mul $0,-4
 add $0,$1
 add $0,$1

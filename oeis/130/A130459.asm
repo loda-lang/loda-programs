@@ -10,9 +10,8 @@ sub $1,$0
 min $1,1
 mul $1,6
 add $1,3
-lpb $0
-  sub $0,1
-  mul $1,2
-lpe
+mov $2,2
+pow $2,$0
+mul $1,$2
 mov $0,$1
 div $0,3

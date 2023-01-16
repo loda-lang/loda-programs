@@ -4,7 +4,13 @@
 
 mul $0,2
 mov $1,$0
-seq $1,276886 ; Sums-complement of the Beatty sequence for 2 + phi.
+mov $2,$1
+add $1,1
+pow $2,2
+lpb $2
+  sub $2,$1
+  add $1,2
+lpe
 mul $0,4
 sub $0,$1
 add $0,1

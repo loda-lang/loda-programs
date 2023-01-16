@@ -4,6 +4,15 @@
 
 mov $1,$0
 pow $1,4
-seq $0,212573 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x|>|x-y|+|y-z|.
+lpb $0
+  mov $3,$0
+  sub $3,2
+  mov $0,$3
+  max $3,0
+  seq $3,7904 ; Crystal ball sequence for diamond.
+  add $2,$3
+lpe
+mul $2,2
+mov $0,$2
 sub $1,$0
 mov $0,$1
