@@ -5,5 +5,20 @@
 mov $1,-1
 pow $1,$0
 mul $0,2
-seq $0,35183 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -5.
+mov $3,$0
+add $3,1
+mov $4,1
+mov $5,$0
+lpb $5
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
+  mov $2,$0
+  gcd $2,$5
+  bin $2,$0
+  seq $0,226162 ; a(n) = Kronecker Symbol (-5/n), n >= 0.
+  mul $2,$0
+  add $4,$2
+lpe
+mov $0,$4
 mul $0,$1

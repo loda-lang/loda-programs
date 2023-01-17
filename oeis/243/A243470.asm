@@ -1,17 +1,26 @@
 ; A243470: Numerators of the rational convergents to the periodic continued fraction 1/(2 + 1/(7 + 1/(2 + 1/(7 + ...)))).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,7,15,112,239,1785,3809,28448,60705,453383,967471,7225680,15418831,115157497,245733825,1835294272,3916322369,29249550855,62415424079,466157519408,994730462895,7429270759673,15853271982241,118402174635360,252657621252961,1887005523406087
 
-mov $3,1
+mov $1,1
 add $0,1
 lpb $0
   sub $0,1
-  add $2,$3
-  mov $3,$1
-  mov $1,$2
-  dif $2,2
-  dif $2,7
-  mul $2,14
+  mov $4,$2
+  mov $2,$1
+  mov $1,$3
+  dif $1,2
+  sub $1,1
+  mod $1,2
+  mul $1,11
+  add $1,2
+  pow $1,2
+  div $1,17
+  mul $1,4
+  div $1,3
+  add $1,2
+  mul $1,$2
+  add $1,$4
+  sub $3,2
 lpe
-dif $1,2
-mov $0,$1
+mov $0,$2

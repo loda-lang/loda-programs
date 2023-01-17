@@ -8,10 +8,8 @@ add $3,1
 mov $2,$3
 lpb $2
   sub $2,1
-  mov $0,$3
-  sub $0,$2
   mov $1,729
-  sub $1,$0
+  sub $1,$3
   seq $1,189727 ; Fixed point of the morphism 0->011, 1->110.
   add $1,$3
 lpe

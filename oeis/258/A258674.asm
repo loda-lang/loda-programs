@@ -5,7 +5,19 @@
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,185790 ; Number of (n+1) X 2 binary arrays with no 2 X 2 subblock sum equal to any horizontal or vertical neighbor 2 X 2 subblock sum.
+add $0,2
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mov $2,$4
+  div $2,2
+  seq $2,205219 ; Number of (n+1)X2 0..1 arrays with the number of equal 2X2 subblock diagonal pairs and equal antidiagonal pairs differing from each horizontal or vertical neighbor, and new values 0..1 introduced in row major order
+  mul $3,$2
+  add $4,1
+lpe
+mov $0,$3
+div $0,16
+mul $0,4
 mul $1,$0
 mov $0,$1
 mul $0,4

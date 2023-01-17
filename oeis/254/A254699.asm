@@ -4,7 +4,16 @@
 
 add $0,1
 mov $1,$0
-seq $1,172123 ; Number of ways to place 2 nonattacking bishops on an n X n board.
+lpb $1
+  add $4,$1
+  add $4,$1
+  sub $1,1
+  add $3,$4
+  add $3,$4
+  add $2,$3
+  sub $4,1
+lpe
+mov $1,$2
 mul $1,5
 add $0,$1
 add $0,1

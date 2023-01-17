@@ -5,7 +5,15 @@
 mov $2,$0
 add $2,1
 add $0,1
-seq $0,14409 ; Number of inequivalent ways (mod D_4) a pair of checkers can be placed on an n X n board.
+mov $4,1
+add $4,$0
+pow $4,3
+pow $0,2
+div $0,2
+add $4,$0
+pow $0,2
+add $0,$4
+div $0,4
 mov $3,$2
 bin $3,2
 mov $1,$0

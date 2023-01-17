@@ -15,9 +15,7 @@ sub $2,1
 add $3,$2
 bin $3,$0
 add $3,$1
-mov $0,$2
-lpb $0
-  sub $0,1
-  mul $3,3
-lpe
+mov $4,3
+pow $4,$2
+mul $3,$4
 mov $0,$3

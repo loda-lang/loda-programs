@@ -445,6 +445,7 @@ A284394: {101->2}-transform of the infinite Fibonacci word A003849.
 A284396: Positions of 2 in A284394.
 A284621: Positions of 0 in A284620.
 A284624: Positions of 1 in A284749.
+A284723: Smallest odd prime that is relatively prime to n.
 A285075: Positions of 1 in A285073; complement of A285074.
 A285126: Positions of 0 in A285125; complement of A285127.
 A285127: Positions of 1 in A285125; complement of A285126.

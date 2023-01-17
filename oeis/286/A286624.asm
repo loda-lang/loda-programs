@@ -1,8 +1,15 @@
 ; A286624: a(n) = (prime(1+n)*prime(n)) + prime(n) + 1.
-; Submitted by Jamie Morken(s1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 9,19,41,85,155,235,341,457,691,929,1179,1555,1805,2065,2539,3181,3659,4149,4825,5255,5841,6637,7471,8723,9895,10505,11125,11771,12427,14465,16765,18079,19181,20851,22649,23859,25749,27385,29059,31141,32579,34753,37055,38215,39401,42189,47265,50845,52211,53587,55921,57839,60733,64759,67849,71011,73169,75339,78115,79805,83203,90245,95785,97655,99535,105245,111879,117277,121451,123547,127081,132113,137259,141741,145537,149371,154823,159595,164411,171781,176819,181873,187055,190521,194917,199351
+; Formula: a(n) = A159477(b(n))*b(n)+b(n)+1, b(n) = A159477(b(n-1)), b(0) = 2
 
-seq $0,40 ; The prime numbers.
-sub $0,1
-seq $0,341528 ; a(n) = n * sigma(A003961(n)), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of the divisors of n.
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mul $1,$0
 add $0,1
+add $0,$1

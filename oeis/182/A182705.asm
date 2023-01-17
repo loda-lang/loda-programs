@@ -4,6 +4,14 @@
 
 mov $1,$0
 add $1,1
-seq $0,216053 ; a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
+mov $2,1
+lpb $0
+  mov $3,$0
+  seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $0,1
+  add $2,$3
+lpe
+add $2,1
+mov $0,$2
 sub $0,1
 mul $0,$1

@@ -6,6 +6,11 @@ mov $2,$0
 mul $2,2
 add $2,1
 gcd $1,$2
-seq $0,276593 ; Denominator of the rational part of the sum of reciprocals of even powers of odd numbers, i.e., Sum_{k>=1} 1/(2*k-1)^(2*n).
+mov $3,$0
+seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
+seq $3,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+gcd $3,$0
+div $0,$3
+mul $0,4
 div $0,$1
 div $0,8

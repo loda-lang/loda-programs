@@ -1,12 +1,13 @@
 ; A274629: Partial sums of A274628.
-; Submitted by [AF>Amis des Lapins] Ceclo
+; Submitted by ChelseaOilman
 ; 1,5,12,25,40,66,91,130,170,224,273,352,415,503,591,703,796,936,1045,1204,1346,1516,1659,1883,2051,2267,2469,2724,2923,3227,3446,3754,4022,4338,4612,5016,5297,5667,6005,6443,6766,7250,7595,8076,8509,8993,9382,9993
+; Formula: a(n) = a(n-1)+A274628(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,274628 ; Nathanson's orphan-counting function h(n).
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

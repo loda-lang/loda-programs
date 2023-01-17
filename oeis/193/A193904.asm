@@ -10,13 +10,12 @@ lpe
 pow $3,$0
 mul $3,2
 sub $3,1
-add $1,$3
 sub $0,$2
 dif $0,-1
-lpb $0
-  sub $0,1
-  mul $1,4
-lpe
+mov $4,4
+pow $4,$0
+add $1,$3
+mul $1,$4
 mov $0,$1
 sub $0,2
 div $0,2

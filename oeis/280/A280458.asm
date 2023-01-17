@@ -1,13 +1,16 @@
 ; A280458: Partial products of A023896.
-; Submitted by Jamie Morken(w3)
+; Submitted by Pavel_Kirpichenko
 ; 1,1,3,12,120,720,15120,241920,6531840,130636800,7185024000,172440576000,13450364928000,564915326976000,33894919618560000,2169274855587840000,295021380359946240000,15931154539437096960000,2724227426243743580160000,217938194099499486412800000
+; Formula: a(n) = A023896(n)*a(n-1), a(1) = 1, a(0) = 1
 
 mov $1,1
-mov $2,$0
-lpb $2
-  seq $2,23896 ; Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
+add $0,1
+lpb $0
   sub $0,1
+  mov $2,$1
+  mov $1,$3
+  seq $1,23896 ; Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
   mul $1,$2
-  mov $2,$0
+  add $3,1
 lpe
 mov $0,$1

@@ -5,7 +5,23 @@
 mov $1,5
 pow $1,$0
 add $0,1
-seq $0,290568 ; The successive approximations up to 5^n for 5-adic integer 3^(1/3).
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  pow $5,3
+  add $5,1
+  mul $5,2
+  mul $2,5
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  add $4,4
+  mov $5,$3
+lpe
+sub $2,$3
+mov $0,$2
 add $0,$1
 div $0,$1
 sub $0,1

@@ -3,5 +3,14 @@
 
 mov $1,$0
 min $1,1
-seq $0,49697 ; a(n)=T(n,n+1), array T as in A049695.
+mov $2,1
+mul $0,2
+lpb $0
+  mov $3,$0
+  div $3,2
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,1
+  add $2,$3
+lpe
+mov $0,$2
 add $0,$1

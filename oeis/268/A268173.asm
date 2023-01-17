@@ -4,7 +4,13 @@
 
 mov $1,$0
 mod $1,2
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+mov $2,1
+lpb $0
+  add $2,2
+  trn $0,$2
+lpe
+div $2,2
+mov $0,$2
 mul $1,$0
 div $0,2
 sub $0,$1

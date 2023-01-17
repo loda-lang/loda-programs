@@ -4,8 +4,15 @@
 
 mov $1,-1
 pow $1,$0
+pow $0,$1
 add $1,1
 dif $0,2
-seq $0,30205 ; Expansion of q^(-1/2) * eta(q)^2 * eta(q^5)^2 in power of q.
+mov $2,$0
+seq $0,159817 ; Coefficients of L-series for elliptic curve "80b2": y^2 = x^3 - x^2 - x.
+lpb $2
+  sub $2,11
+  mod $2,2
+  div $0,-1
+lpe
 mul $0,$1
 div $0,2

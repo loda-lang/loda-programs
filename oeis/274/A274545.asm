@@ -6,6 +6,15 @@ mov $1,$0
 add $1,1
 div $0,2
 add $0,$1
-seq $0,84703 ; Squares k such that 2*k+1 is also a square.
+mov $3,2
+lpb $0
+  sub $0,1
+  mov $2,$4
+  mul $2,4
+  add $3,$2
+  add $4,$3
+lpe
+pow $4,2
+mov $0,$4
 div $0,5
 add $0,1

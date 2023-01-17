@@ -4,6 +4,11 @@
 
 trn $0,1
 mul $0,2
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
+lpb $0
+  mov $1,$0
+  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
+  sub $0,$1
+lpe
+add $0,1
 cmp $0,2
 add $0,3

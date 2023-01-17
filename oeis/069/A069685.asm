@@ -5,5 +5,17 @@
 mov $1,$0
 add $1,1
 mul $0,2
-seq $0,58312 ; Denominator of the n-th alternating harmonic number, Sum_{k=1..n} (-1)^(k+1)/k.
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $3,1
+  mul $4,$3
+  mul $4,-1
+  add $4,$2
+  mul $2,$3
+lpe
+gcd $4,$2
+div $2,$4
+mov $0,$2
 mul $0,$1

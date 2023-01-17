@@ -5,6 +5,19 @@
 mov $1,$0
 add $1,4
 bin $1,2
-seq $0,14531 ; Form array in which n-th row is obtained by expanding (1+x+x^2)^n and taking the 2nd column from the center.
+add $0,2
+lpb $0
+  mov $3,$0
+  add $3,$5
+  add $5,2
+  sub $0,2
+  bin $3,$0
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  add $6,$4
+lpe
+mov $0,$6
 mul $0,$1
 div $0,6

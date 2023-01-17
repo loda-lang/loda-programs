@@ -4,5 +4,18 @@
 
 mov $1,$0
 trn $0,1
-seq $0,667 ; Boustrophedon transform of all-1's sequence.
+mov $4,$0
+bin $4,2
+add $4,$0
+add $4,$0
+mov $3,$0
+lpb $3
+  mov $0,$4
+  sub $0,$3
+  seq $0,109449 ; Triangle read by rows, T(n,k) = binomial(n,k)*A000111(n-k), 0 <= k <= n.
+  add $2,$0
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1
 mul $0,$1

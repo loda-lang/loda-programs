@@ -4,5 +4,11 @@
 
 mul $0,2
 add $0,55
-seq $0,22844 ; a(n) = floor(n*Pi).
+mov $1,97
+mul $1,$0
+div $1,113
+mul $0,4
+max $0,1
+sub $0,1
+sub $0,$1
 sub $0,168

@@ -5,6 +5,20 @@
 sub $0,2
 mov $1,$0
 trn $1,1
-seq $1,1910 ; a(n) = n*a(n-1) + (n-5)*a(n-2).
+mov $2,1
+lpb $1
+  sub $1,1
+  mul $4,$3
+  mov $5,$2
+  mul $2,2
+  add $2,$4
+  add $3,1
+  div $4,$2
+  sub $4,$5
+  mul $4,-1
+  add $4,$2
+  add $2,$4
+lpe
+mov $1,$5
 mov $0,$1
 mul $0,120

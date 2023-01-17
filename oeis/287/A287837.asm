@@ -1,17 +1,17 @@
 ; A287837: Number of words over the alphabet {0,1,...,10} such that no two consecutive terms have distance 7.
-; Submitted by Jamie Morken(s1.)
+; Submitted by NeoGen
 ; 1,11,113,1163,11969,123179,1267697,13046507,134268161,1381821131,14221015793,146355621323,1506219260609,15501259470059,159531252482417,1641816303234347,16896756789790721,173893016807610251,1789620438445474673,18417883434877577483
+; Formula: a(n) = 7*a(n-1)+3*a(n-1)+3*a(n-2), a(1) = 11, a(0) = 1
 
 mov $1,1
 mov $3,1
-add $0,1
 lpb $0
   sub $0,1
-  add $2,$3
-  mov $3,$1
+  mov $2,$3
+  mul $2,3
+  add $1,$2
+  mul $3,7
+  add $3,$1
   mov $1,$2
-  mul $1,3
-  mul $2,10
 lpe
-mov $0,$2
-div $0,10
+mov $0,$3

@@ -36,6 +36,7 @@ A007088: The binary numbers (or binary words, or binary vectors, or binary expan
 A007423: a(n) = mu(n) + 1, where mu is the Moebius function.
 A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+A008328: Number of divisors of prime(n)-1.
 A008331: a(n) = phi(prime(n)+1).
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008837: a(n) = p*(p-1)/2 for p = prime(n).
@@ -457,6 +458,8 @@ A274536: a(n) = 6 * sigma(n).
 A278227: Least number with the prime signature of prime(n)-1.
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
+A287922: a(n) = prime(1)^2 + prime(n)^2.
+A287925: a(n) = prime(1)^4 + prime(n)^4
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).
 A299473: a(n) = 3*p(n), where p(n) is the number of partitions of n.
 A299474: a(n) = 4*p(n), where p(n) is the number of partitions of n.

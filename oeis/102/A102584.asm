@@ -4,5 +4,14 @@
 
 mul $0,2
 add $0,3
-seq $0,93101 ; Cancellation factor in reducing Sum_{k=0...n} 1/k! to lowest terms.
+mov $3,5
+lpb $0
+  mov $1,$0
+  sub $0,1
+  add $2,$3
+  mul $3,$1
+lpe
+gcd $2,$3
+mov $0,$2
+div $0,5
 div $0,2

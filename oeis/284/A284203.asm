@@ -1,12 +1,12 @@
 ; A284203: Number of twin prime (A001097) divisors of n.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,1,0,1,1,1,0,1,1,1,1,1,1,2,0,1,1,1,1,2,1,0,1,1,1,1,1,1,2,1,0,2,1,2,1,0,1,2,1,1,2,1,1,2,0,0,1,1,1,2,1,0,1,2,1,2,1,1,2,1,1,2,0,2,2,0,1,1,2,1,1,1,0,2,1,2,2,0,1,1,1,0,2,2,1,2,1,0,2,2,0,2,0,2,1,0,1,2,1
 
 mov $2,$0
 add $2,1
 mov $4,$0
 lpb $4
-  sub $4,1
+  sub $4,2
   mov $0,$2
   sub $0,$4
   mov $1,$0

@@ -6,7 +6,16 @@ mov $1,$0
 add $0,4
 bin $0,$1
 mul $0,5
-seq $1,5460 ; a(n) = (3*n+4)*(n+3)!/24.
+mov $2,$1
+mul $1,2
+add $2,3
+lpb $2
+  add $1,$2
+  mul $1,$2
+  sub $2,1
+lpe
+div $1,24
+add $1,1
 mul $0,$1
 div $0,5
 mul $0,4

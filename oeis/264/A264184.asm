@@ -4,4 +4,16 @@
 
 mul $0,3
 add $0,2
-seq $0,31923 ; Let r and s be consecutive Fibonacci numbers. Sequence is r^4, r^3 s, r^2 s^2, and r s^3.
+add $0,1
+mov $1,1
+mov $2,$0
+lpb $2
+  div $2,2
+  add $2,2
+  seq $2,6498 ; a(n) = a(n-1) + a(n-3) + a(n-4), a(0) = a(1) = a(2) = 1, a(3) = 2.
+  sub $0,1
+  mul $1,$2
+  mov $2,$0
+  mov $0,2
+lpe
+mov $0,$1

@@ -4,6 +4,15 @@
 
 add $0,1
 mov $1,$0
-seq $0,10797 ; n!.(n+1)!.(n+2)! / 2!.3!.
+mov $3,1
+lpb $0
+  mov $2,$0
+  add $2,3
+  bin $2,3
+  sub $0,1
+  mul $3,6
+  mul $3,$2
+lpe
+mov $0,$3
 mul $0,$1
 div $0,24

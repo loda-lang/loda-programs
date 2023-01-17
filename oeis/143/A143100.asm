@@ -4,6 +4,13 @@
 
 mov $1,2
 pow $1,$0
-seq $0,57079 ; Periodic sequence: repeat [1,2,1,-1,-2,-1]; expansion of (1+x)/(1-x+x^2).
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  sub $3,$2
+lpe
+mov $0,$2
 sub $0,1
 add $0,$1

@@ -4,5 +4,18 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,289260 ; Coefficients in the expansion of 1/([r]-[2r]x+[3r]x^2-...); [ ]=floor, r=8/5.
+add $0,1
+lpb $0
+  sub $0,1
+  sub $4,$5
+  mov $5,$3
+  add $2,2
+  add $2,$3
+  mov $3,$4
+  mov $4,$2
+  sub $4,1
+  add $2,$5
+  max $5,1
+lpe
+mov $0,$4
 mul $0,$1

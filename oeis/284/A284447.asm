@@ -7,4 +7,5 @@ mod $1,2
 add $0,$1
 trn $0,1
 add $0,$1
-seq $0,332769 ; Permutation of the positive integers: a(n) = A258996(A054429(n)) = A054429(A258996(n)).
+seq $0,284460 ; Permutation of the positive integers: this permutation transforms the enumeration system of positive irreducible fractions A245327/A245328 into the enumeration system A002487/A002487' (Calkin-Wilf), and A020651/A020650 (Yu-Ting inverted) into A162911/A162912(Drib).
+seq $0,153154 ; Permutation of natural numbers: A059893-conjugate of A006068.

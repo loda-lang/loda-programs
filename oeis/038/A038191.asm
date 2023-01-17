@@ -4,7 +4,17 @@
 
 mov $1,$0
 pow $1,2
-seq $0,353109 ; Array read by antidiagonals: A(n, k) is the digital root of n*k with n >= 0 and k >= 0.
+lpb $0
+  add $2,$3
+  trn $2,$0
+  mul $2,$0
+  add $3,1
+  trn $0,$3
+lpe
+mov $0,$2
+sub $0,1
+mod $0,9
+add $0,1
 gcd $0,5
 div $0,2
 mul $0,2

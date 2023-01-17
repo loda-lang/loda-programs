@@ -4,5 +4,6 @@
 
 mov $1,$0
 add $1,1
-seq $0,138793 ; a(n) = concatenation of reversed digits of natural numbers from n down to 1.
+seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
+seq $0,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
 mod $0,$1

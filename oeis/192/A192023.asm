@@ -1,13 +1,16 @@
 ; A192023: The Wiener index of the comb-shaped graph |_|_|...|_| with 2n (n>=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,10,31,68,125,206,315,456,633,850,1111,1420,1781,2198,2675,3216,3825,4506,5263,6100,7021,8030,9131,10328,11625,13026,14535,16156,17893,19750,21731,23840,26081,28458,30975,33636,36445,39406,42523,45800,49241,52850,56631,60588,64725,69046,73555,78256,83153,88250,93551,99060,104781,110718,116875,123256,129865,136706,143783,151100,158661,166470,174531,182848,191425,200266,209375,218756,228413,238350,248571,259080,269881,280978,292375,304076,316085,328406,341043,354000,367281,380890,394831,409108
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A059993(n), b(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = 2*n*(n+3)+b(n-1)+1, b(0) = 0
 
 lpb $0
   mov $2,$0
-  seq $2,59993 ; Pinwheel numbers: a(n) = 2*n^2 + 6*n + 1.
+  add $2,3
+  mul $2,$0
+  mul $2,2
+  add $2,1
   sub $0,1
   add $1,$2
 lpe
+add $1,1
 mov $0,$1
-add $0,1

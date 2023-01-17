@@ -4,6 +4,14 @@
 
 mov $1,$0
 mul $1,2
-seq $0,18804 ; Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
+add $0,1
+mov $3,$0
+lpb $3
+  mov $4,$3
+  gcd $4,$0
+  add $2,$4
+  sub $3,1
+lpe
+mov $0,$2
 sub $0,1
 sub $0,$1

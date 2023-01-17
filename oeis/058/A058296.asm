@@ -3,5 +3,12 @@
 
 mul $0,2
 trn $0,1
-seq $0,1043 ; Numbers that are the sum of 2 successive primes.
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $0,$1
 div $0,2

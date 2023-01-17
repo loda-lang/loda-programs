@@ -4,6 +4,31 @@
 
 mov $1,1
 trn $1,$0
-seq $0,86246 ; Expansion of (1 + x - sqrt(1 - 2*x - 3*x^2)) / 2 in powers of x.
+pow $2,$0
+mov $3,$0
+sub $3,2
+mov $4,1
+mov $7,2
+mov $6,$3
+lpb $6
+  mul $4,$6
+  sub $6,1
+  add $8,$7
+  mul $4,$6
+  div $4,$8
+  sub $5,1
+  add $5,$4
+  sub $6,1
+  add $7,2
+lpe
+mov $3,$5
+div $0,2
+add $0,$3
+mul $0,2
+cmp $2,$0
+add $0,$2
+add $0,57
+div $0,2
+sub $0,28
 sub $1,$0
 mov $0,$1

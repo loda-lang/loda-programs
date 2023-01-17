@@ -1,7 +1,7 @@
 ; A046671: Nim-values G(3,n) for Sylver coinage.
 ; Submitted by Jon Maiga
 ; 2,3,1,4,6,1,7,8,1,9,11,1,12
-; Formula: a(n) = A314026(A117909(n-n/25))/4+1
+; Formula: a(n) = A314026(A117909(-(n/25)+n))/4+1
 
 mov $1,$0
 div $1,25

@@ -1,11 +1,16 @@
 ; A291463: a(n) is the product of n-th prime number with the distance to the next prime.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 2,6,10,28,22,52,34,76,138,58,186,148,82,172,282,318,118,366,268,142,438,316,498,712,388,202,412,214,436,1582,508,786,274,1390,298,906,942,652,1002,1038,358,1810,382,772,394,2388,2532,892,454,916,1398,478,2410,1506,1542,1578,538,1626,1108,562,2830,4102,1228,622,1252,4438,1986,3370,694,1396,2118,2872,2202,2238,1516,2298,3112,1588,3208,4090,838,4210,862,2598,1756,2658,3592,1828,922,1852,5604,3832,1948,3928,1996,3018,6108,1042,9414,3246
-; Formula: a(n) = A000040(n)*(A006005(n+1)-A000040(n))
+; Formula: a(n) = (b(n)+1)*(-b(n)+A159477(b(n)))-A159477(b(n))+b(n), b(n) = A159477(b(n-1)), b(0) = 2
 
-mov $1,$0
-seq $1,40 ; The prime numbers.
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+sub $1,$0
 add $0,1
-seq $0,6005 ; The odd prime numbers together with 1.
-sub $0,$1
 mul $0,$1
+sub $0,$1

@@ -1,17 +1,15 @@
 ; A284604: Quadratic recurrence: a(n+2) = a(n+1)^2 + a(n)^2 + 1, with a(0) = a(1) = 1.
-; Submitted by [BAT] Svennemans
+; Submitted by [AF>Amis des Lapins] Ceclo
 ; 1,1,3,11,131,17283,298719251,89233191216703091,7962562414716697755180182566955283,63402400208259008611705446682872670539115181497111590988296570564371
-; Formula: a(n) = b(n)+1, b(n) = (b(n-1)+1)^2-c(n-1)+b(n-1), b(1) = 0, b(0) = 0, c(n) = -c(n-1)+b(n-1), c(1) = -1, c(0) = 1
+; Formula: a(n) = a(n-1)^2+a(n-2)^2+1, a(1) = 1, a(0) = 1
 
-mov $2,1
+mov $1,1
 lpb $0
   sub $0,1
-  add $1,1
-  mul $2,-1
-  sub $2,1
-  add $2,$1
   pow $1,2
-  add $1,$2
+  mov $2,$1
+  add $2,1
+  add $1,$3
+  mov $3,$2
 lpe
-add $1,1
 mov $0,$1

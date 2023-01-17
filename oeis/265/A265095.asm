@@ -1,7 +1,9 @@
 ; A265095: a(n) = Sum_{k=0..n} q(k)^k, where q(k) = partition numbers into distinct parts (A000009).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 1,2,3,11,27,270,4366,82491,1762107,135979835,10135979835,753144350523,130499482241148,20953464347912316,6242774737775732860,2960555481288609431503,1211886375095917784137679,719537152598665509899534287,851154233276178632011679465423
+; Formula: a(n) = A347587(n)^n+a(n-1), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,347587 ; Number of partitions of n into at most 5 distinct parts.
@@ -10,4 +12,3 @@ lpb $0
   add $1,$2
 lpe
 mov $0,$1
-add $0,1

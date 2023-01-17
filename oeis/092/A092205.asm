@@ -1,5 +1,6 @@
 ; A092205: Number of units in the imaginary quadratic field Q(sqrt(-n)).
 ; 4,2,6,4,2,2,2,2,4,2,2,6,2,2,2,4,2,2,2,2,2,2,2,2,4,2,6,2,2,2,2,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,6,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,6,2,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4
+; Formula: a(n) = 2*A000045(A127648(A000040(A007913(n)-1)))+2
 
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 sub $0,1
