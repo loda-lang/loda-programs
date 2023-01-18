@@ -7,7 +7,6 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,28
-  mul $1,$4
   mov $3,$1
   seq $3,246394 ; Nonnegative integers k satisfying cos(k) <= 0 and cos(k+1) >= 0.
   mov $5,$3

@@ -4,7 +4,10 @@
 
 mov $2,$0
 add $2,1
-seq $0,106315 ; Harmonic residue of n.
+mov $3,$0
+seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,94471 ; a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+mod $0,$3
 mov $1,$0
 gcd $1,$2
 mov $0,$1

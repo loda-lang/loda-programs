@@ -5,5 +5,12 @@
 mov $1,3
 pow $1,$0
 add $0,2
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  add $2,$4
+  mov $4,$3
+lpe
+mov $0,$2
 mul $0,$1

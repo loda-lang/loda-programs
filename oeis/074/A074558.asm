@@ -4,6 +4,12 @@
 
 mov $1,3
 pow $1,$0
-seq $0,74523 ; a(n) = 1^n + 7^n + 8^n.
+mov $3,8
+pow $3,$0
+mov $2,7
+pow $2,$0
+add $2,$3
+mov $0,$2
+add $0,1
 sub $0,1
 add $0,$1

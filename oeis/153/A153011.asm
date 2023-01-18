@@ -4,5 +4,9 @@
 
 mov $1,$0
 mul $1,2
-seq $0,255385 ; a(n) = sigma(n) + phi(n) - tau(n).
+mov $2,$0
+seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,158901 ; A051731 * (1, 1, 2, 3, 4, 5, ...).
+sub $0,1
+add $0,$2
 sub $0,$1

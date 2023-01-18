@@ -1,12 +1,13 @@
 ; A301725: Partial sums of A301724.
-; Submitted by Simon Strandgaard
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,7,17,33,56,83,114,152,196,244,298,358,422,492,569,650,735,827,925,1027,1135,1249,1367,1491,1622,1757,1896,2042,2194,2350,2512,2680,2852,3030,3215,3404,3597,3797,4003,4213,4429,4651,4877,5109,5348,5591,5838,6092,6352
+; Formula: a(n) = a(n-1)+A301724(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,301724 ; Coordination sequence for node of type V1 in "kra" 2-D tiling (or net).
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

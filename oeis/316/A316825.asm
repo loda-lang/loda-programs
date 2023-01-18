@@ -1,18 +1,22 @@
 ; A316825: Fibonacci word A003849 with its initial term changed to 2.
-; Submitted by Ragnarsdad
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1
+; Formula: a(n) = (b(n)+1)%2+1, b(n) = (-c(n-1)+b(n-1))/(2*((-c(n-1)+b(n-1)+d(n-1))%2)+4), b(2) = -16, b(1) = -1, b(0) = 0, c(n) = 2*c(n-1)*(2*((-c(n-1)+b(n-1)+d(n-1))%2)+4), c(2) = 128, c(1) = 32, c(0) = 4, d(n) = 2*((-c(n-1)+b(n-1)+d(n-1))%2)+4, d(2) = 2, d(1) = 4, d(0) = 2
 
-mov $1,$0
-mov $3,$0
-cmp $3,0
-add $0,$3
-div $1,$0
-sub $1,1
-sub $0,1
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-mov $2,$0
-add $2,$0
-add $1,$2
-mov $2,2
-div $2,$1
-mov $0,$2
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  add $3,$1
+  mod $3,2
+  add $3,2
+  mul $3,2
+  div $1,$3
+  mul $2,2
+  mul $2,$3
+lpe
+mov $0,$1
+add $0,1
+mod $0,2
+add $0,1

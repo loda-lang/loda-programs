@@ -4,7 +4,17 @@
 
 mov $2,$0
 add $2,1
-seq $0,51713 ; Denominator of b(n)-b(n+1), where b(n) = n/((n+1)(n+2)) = A026741/A045896.
+add $0,3
+mov $3,$0
+mul $3,2
+mul $3,$0
+sub $3,2
+mul $3,$0
+div $3,2
+sub $0,3
+gcd $0,$3
+div $3,$0
+mov $0,$3
 mov $1,$0
 gcd $1,$2
 div $0,$1

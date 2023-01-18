@@ -4,4 +4,4 @@
 
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 sub $0,1
-seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).

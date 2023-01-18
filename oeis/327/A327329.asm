@@ -8,7 +8,16 @@ mul $2,$0
 div $2,2
 mov $1,$0
 mul $1,$0
-seq $0,244048 ; Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
+lpb $0
+  sub $0,2
+  add $4,1
+  mov $5,$0
+  add $5,$4
+  div $5,$4
+  mul $5,$4
+  add $3,$5
+lpe
+mov $0,$3
 sub $0,$2
 add $0,$1
 mul $0,2

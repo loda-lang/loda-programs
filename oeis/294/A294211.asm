@@ -4,5 +4,10 @@
 
 mov $1,$0
 add $1,1
-seq $0,294100 ; Number of partitions of n into two squarefree parts or two nonsquarefree positive integer parts.
+mov $2,1
+add $2,$0
+seq $0,294101 ; Number of partitions of n into two parts such that one is squarefree and the other is nonsquarefree.
+div $2,2
+sub $2,$0
+mov $0,$2
 mul $0,$1

@@ -8,6 +8,11 @@ add $1,3
 mul $1,$0
 div $1,2
 sub $0,1
-seq $0,6463 ; Convolve natural numbers with characteristic function of triangular numbers.
+lpb $0
+  add $3,1
+  sub $0,$3
+  add $2,$0
+lpe
+mov $0,$2
 sub $0,1
 add $0,$1

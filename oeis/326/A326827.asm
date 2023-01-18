@@ -4,7 +4,10 @@
 
 mul $0,2
 add $0,1
-seq $0,93160 ; Expansion of q^(-1/2) * (eta(q^4) / eta(q))^4 in powers of q.
+mul $0,2
+add $0,1
+seq $0,208933 ; Expansion of phi(q^4) / phi(-q) in powers of q where phi() is a Ramanujan theta function.
+div $0,2
 sub $0,4
 div $0,4
 add $0,1

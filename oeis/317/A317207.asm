@@ -4,5 +4,6 @@
 
 sub $0,1
 max $0,1
-seq $0,278042 ; Number of 0's in tribonacci representation of n (cf. A278038).
+seq $0,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
+seq $0,23416 ; Number of 0's in binary expansion of n.
 add $0,1

@@ -5,5 +5,20 @@
 mul $0,2
 mov $1,$0
 add $1,1
-seq $1,99196 ; Figurate numbers based on the 9-dimensional regular convex polytope called the 9-dimensional cross-polytope, or 9-dimensional hyperoctahedron, which is represented by the Schlaefli symbol {3, 3, 3, 3, 3, 3, 3, 4}. It is the dual of the 9-dimensional hypercube.
+mov $2,$1
+add $2,1
+lpb $2
+  sub $2,1
+  mov $4,8
+  add $4,$2
+  bin $4,$2
+  mov $5,9
+  bin $5,$3
+  mul $5,$4
+  add $3,1
+  add $6,$5
+lpe
+mov $2,$6
+mul $1,$2
+div $1,18
 mov $0,$1

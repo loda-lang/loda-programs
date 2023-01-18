@@ -4,6 +4,14 @@
 
 mov $1,$0
 add $1,1
-seq $0,131491 ; 2*prime(n)!.
+seq $0,6005 ; The odd prime numbers together with 1.
+mov $3,$0
+lpb $0
+  sub $0,2
+  add $2,$0
+  mul $3,$2
+lpe
+mov $0,$3
+mul $0,4
 div $0,$1
 div $0,2

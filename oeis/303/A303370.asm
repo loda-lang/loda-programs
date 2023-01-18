@@ -1,18 +1,15 @@
 ; A303370: Least integer k such that (k+1)^k >= n.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 0,0,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
 
-sub $0,1
-mov $2,9
+mov $2,$0
+pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,178922 ; a(n) = (n+1)^n - n^(n-1) for n > 0, a(0) = 1.
-  sub $0,$3
+  seq $3,172165 ; A simple sequence a(n) = n + n^(n-1).
+  add $0,1
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $2,$3
+  sub $2,$0
 lpe
 mov $0,$1

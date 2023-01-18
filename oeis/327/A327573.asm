@@ -1,13 +1,13 @@
 ; A327573: Partial sums of the number of infinitary divisors function: a(n) = Sum_{k=1..n} id(k), where id is A037445.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,3,5,7,9,13,15,19,21,25,27,31,33,37,41,43,45,49,51,55,59,63,65,73,75,79,83,87,89,97,99,103,107,111,115,119,121,125,129,137,139,147,149,153,157,161,163,167,169,173,177,181,183,191,195,203,207,211,213,221,223,227,231,235,239,247,249,253,257,265,267,275,277,281,285,289,293,301,303,307,309,313,315,323,327,331,335,343,345,353,357,361,365,369,373,381,383,387,391,395
+; Formula: a(n) = a(n-1)+A037445(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
-  gcd $2,256
+  seq $2,37445 ; Number of infinitary divisors (or i-divisors) of n.
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

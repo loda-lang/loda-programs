@@ -5,5 +5,10 @@
 mov $1,-1
 pow $1,$0
 mul $0,2
-seq $0,2325 ; Glaisher's J numbers.
+add $0,1
+lpb $0
+  dif $0,2
+lpe
+div $0,2
+seq $0,113411 ; Excess of number of divisors of 2n+1 of form 8k+1, 8k+3 over those of form 8k+5, 8k+7.
 mul $0,$1

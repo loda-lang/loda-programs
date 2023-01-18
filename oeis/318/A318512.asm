@@ -5,7 +5,18 @@
 mov $2,$0
 add $2,1
 pow $2,2
-seq $0,46644 ; From square root of Riemann zeta function: form Dirichlet series Sum b_n/n^s whose square is zeta function; sequence gives denominator of b_n.
+add $0,1
+pow $0,2
+sub $0,1
+seq $0,112624 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = Product_{p|n} b(p,n)!.
+lpb $0
+  dif $0,2
+  add $4,1
+lpe
+mov $0,$4
+mov $3,2
+pow $3,$0
+mov $0,$3
 mov $1,$0
 gcd $1,$2
 div $0,$1

@@ -3,4 +3,17 @@
 
 mul $0,2
 add $0,2
-seq $0,76051 ; Sum of product of odd numbers <= n and the product of even numbers <= n.
+mov $1,1
+mov $2,1
+mov $3,1
+mov $4,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $4,$1
+  mov $1,$3
+  mul $1,$2
+  mov $3,$4
+lpe
+mov $0,$4
+add $0,$1

@@ -1,12 +1,13 @@
 ; A303665: Expansion of 1/((1 - x)*(1 - Sum_{k>=1} x^prime(k))).
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,3,4,7,9,15,21,31,47,67,102,148,220,325,477,709,1041,1542,2274,3355,4959,7311,10804,15940,23535,34747,51281,75723,111762,165005,243578,359567,530831,783585,1156799,1707662,2520913,3721467,5493674,8110012,11972133,17673686
+; Formula: a(n) = a(n-1)+A023360(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,78465 ; Primonacci numbers: a(n)=a(n-2)+a(n-3)+a(n-5)+a(n-7)+a(n-11)+...+a(n-p(k))+... until n > p(k), where p(k) is the k-th prime. a(1)=a(2)=1.
-  sub $0,2
+  seq $2,23360 ; Number of compositions of n into prime parts.
+  sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

@@ -4,5 +4,18 @@
 
 mov $1,2
 pow $1,$0
-seq $0,277458 ; E.g.f.: -1/(1-LambertW(-x)).
+mov $2,1
+mov $4,-1
+mov $5,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$0
+  mov $4,$3
+  add $4,$5
+  mov $5,$3
+  mul $5,$2
+  add $3,$4
+lpe
+mov $0,$4
 mul $0,$1

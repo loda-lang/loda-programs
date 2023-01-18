@@ -5,5 +5,21 @@
 mov $1,$0
 mul $0,2
 trn $0,1
-seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
+mov $3,$0
+add $3,1
+mov $4,2
+mov $5,$0
+lpb $5
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
+  mov $2,$0
+  gcd $2,$5
+  bin $2,$0
+  seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  mul $0,$4
+  mul $2,$0
+  max $4,$2
+lpe
+mov $0,$4
 mul $0,$1

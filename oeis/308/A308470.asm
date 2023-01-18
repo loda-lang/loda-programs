@@ -4,7 +4,9 @@
 
 mov $1,$0
 add $1,1
-seq $1,466 ; a(n) = 4*n^2 - 1.
+pow $1,2
+mul $1,4
+sub $1,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 gcd $0,$1
 div $0,2

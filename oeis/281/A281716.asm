@@ -4,5 +4,16 @@
 
 mov $1,2
 pow $1,$0
-seq $0,52933 ; Expansion of (1-x^2)/(1 - x - 3*x^2 + 2*x^4).
+mov $6,1
+lpb $0
+  sub $0,1
+  mov $5,$3
+  mov $3,$6
+  mul $3,2
+  add $6,$2
+  mov $2,$4
+  mov $4,$6
+  add $6,$5
+lpe
+mov $0,$6
 add $0,$1

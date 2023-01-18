@@ -5,6 +5,21 @@
 mov $1,-1
 pow $1,$0
 div $0,2
-seq $0,71696 ; Greater members of twin prime pairs of form (4*k+1,4*k+3), k>0.
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,100923 ; a(n) = 1 iff 6*n+1 and 6*n-1 are both prime numbers (0 otherwise).
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+mul $0,6
+add $0,7
 sub $0,1
 sub $0,$1

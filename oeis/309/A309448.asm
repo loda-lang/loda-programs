@@ -5,5 +5,23 @@
 mov $1,7
 pow $1,$0
 add $0,1
-seq $0,309453 ; The successive approximations up to 7^n for 7-adic integer 5^(1/5).
+mov $2,1
+mov $4,-1
+mov $5,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,2
+  pow $5,5
+  add $5,2
+  mul $2,5
+  add $2,$3
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  sub $4,7
+  mov $5,$3
+lpe
+mov $0,$3
 div $0,$1

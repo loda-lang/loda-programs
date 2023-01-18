@@ -3,6 +3,10 @@
 
 mov $1,1
 add $1,$0
-seq $0,38802 ; Factor 2n+1 = (2^m1)*(3^m2)*(5^m3)*...; a(n) = number of initial zero exponents.
+add $0,1
+mul $0,2
+seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+seq $0,230980 ; Number of primes <= n, starting at n=0.
+sub $0,1
 sub $1,$0
 mov $0,$1

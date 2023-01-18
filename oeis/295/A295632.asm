@@ -1,5 +1,6 @@
 ; A295632: Write 1/Product_{n > 1}(1 - 1/n^s) in the form Product_{n > 1}(1 + a(n)/n^s).
 ; 1,1,2,1,1,1,1,2,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1
+; Formula: a(n) = ((A020639(A052409(n+1))^4)%44-5)%10
 
 add $0,1
 seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).

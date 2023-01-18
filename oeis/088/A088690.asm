@@ -4,6 +4,21 @@
 
 add $0,1
 mov $1,$0
-seq $1,52885 ; E.g.f. A(x) is inverse to F(x) = x*exp(-x)/(1+x).
+mov $3,6
+lpb $1
+  sub $1,1
+  mov $2,$4
+  mul $2,$1
+  add $3,$4
+  add $4,$3
+  add $5,1
+  mod $3,$4
+  mul $3,$1
+  mul $4,$5
+  add $4,$3
+  mov $3,$2
+lpe
+mov $1,$4
+div $1,6
 div $1,$0
 mov $0,$1

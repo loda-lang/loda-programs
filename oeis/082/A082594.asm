@@ -5,6 +5,22 @@
 mov $1,-1
 pow $1,$0
 add $0,1
-seq $0,30016 ; Inverse binomial transform of {1, primes}.
+mov $3,$0
+mov $5,$0
+add $5,1
+lpb $5
+  sub $5,1
+  mov $4,$2
+  mov $0,$3
+  sub $0,$5
+  mov $2,$0
+  add $2,$5
+  bin $2,$0
+  seq $0,112773 ; 3 together with primes multiplied by 3.
+  mul $2,$0
+  sub $2,$4
+lpe
+mov $0,$2
+div $0,3
 mul $0,$1
 add $0,1

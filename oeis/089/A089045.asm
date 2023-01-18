@@ -4,5 +4,16 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,29883 ; First differences of Thue-Morse sequence A001285.
+mov $2,1
+mov $3,1
+lpb $0
+  mul $3,-1
+  lpb $0
+    dif $0,2
+    mul $2,0
+  lpe
+  div $0,2
+  add $3,$2
+lpe
+add $0,$3
 mul $0,$1

@@ -1,6 +1,7 @@
 ; A328316: Iterates of A276086 starting from 0.
 ; Submitted by amargo133
 ; 0,1,2,3,6,5,18,125,43218,258413198822535882125
+; Formula: a(n) = A276086(a(n-1)), a(0) = 0
 
 lpb $0
   sub $0,1

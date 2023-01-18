@@ -10,7 +10,5 @@ lpb $1
   dif $1,4
 lpe
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mul $1,2
 mov $0,$1
-div $0,2
 mod $0,2

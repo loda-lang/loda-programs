@@ -466,9 +466,11 @@ A299474: a(n) = 4*p(n), where p(n) is the number of partitions of n.
 A299919: Motzkin numbers (A001006) mod 4.
 A306695: a(n) = gcd(n, psi(n)).
 A319089: a(n) = tau(n)^3, where tau is A000005.
+A319527: a(n) = 7 * sigma(n).
 A319528: a(n) = 8 * sigma(n).
 A323902: a(n) = A002487(A156552(n)).
 A324868: Binary weight of A324398(n).
+A325299: a(n) = 9 * sigma(n).
 A326122: a(n) = 10 * sigma(n).
 A330410: a(n) = 6*prime(n) - 1.
 A333169: a(n) = phi(n^2 + 1), where phi is the Euler totient function (A000010).
