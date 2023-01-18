@@ -1,0 +1,15 @@
+; A191997: Denominators of partial products of a Hardy-Littlewood constant.
+; Submitted by Science United
+; 1,2,32,128,512,8192,2097152,226492416,301989888,536870912,32212254720,8349416423424,4453022092492800,1122161567308185600,2294196982052290560,12235717237612216320,16314289650149621760,58731442740538638336000,51166832915557261718323200
+; Formula: a(n) = ((A062271(max(n-1,0))+2)*(min(n,1)+1)-6)/4+1
+
+mov $1,$0
+trn $0,1
+seq $0,62271 ; Denominators in partial products of the twin prime constant.
+add $0,2
+min $1,1
+add $1,1
+mul $0,$1
+sub $0,6
+div $0,4
+add $0,1
