@@ -47,6 +47,7 @@ A006530: Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 A007066: a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
 A007067: Nearest integer to n*tau.
 A007424: a(n) = 1 if n is squarefree, otherwise 2.
+A007457: Number of (j,k): j+k=n, (j,n)=(k,n)=1, j,k squarefree.
 A007916: Numbers that are not perfect powers.
 A007948: Largest cubefree number dividing n.
 A008966: a(n) = 1 if n is squarefree, otherwise 0.
@@ -556,6 +557,7 @@ A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A340346: The largest divisor of n that is a term of A055932 (numbers divisible by all primes smaller than their largest prime factor).
 A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
+A341996: a(n) = 1 if there is at least one such prime p that p^p divides the arithmetic derivative of n, A003415(n); a(0) = a(1) = 0 by convention.
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).

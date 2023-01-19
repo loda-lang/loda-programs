@@ -4,7 +4,17 @@
 
 mul $0,2
 mov $1,$0
-seq $1,188298 ; Positions of 0 in A188297; complement of A188299.
+mov $2,$1
+div $1,2
+mov $3,$1
+mul $3,$1
+lpb $3
+  sub $3,$1
+  add $1,1
+  sub $3,$1
+lpe
+add $1,1
+add $1,$2
 pow $1,2
 add $1,3
 div $1,2

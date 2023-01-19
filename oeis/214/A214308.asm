@@ -6,5 +6,10 @@ add $0,2
 mov $1,$0
 bin $1,2
 sub $0,1
-seq $0,56342 ; Number of bracelets of length n using exactly two different colored beads.
+mov $2,$0
+seq $2,56357 ; Number of bracelet structures using exactly two different colored beads.
+seq $0,7147 ; Number of self-dual 2-colored necklaces with 2n beads.
+add $2,$0
+mov $0,$2
+sub $0,1
 mul $0,$1

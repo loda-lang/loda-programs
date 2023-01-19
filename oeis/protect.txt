@@ -37,6 +37,7 @@ A007423: a(n) = mu(n) + 1, where mu is the Moebius function.
 A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A008328: Number of divisors of prime(n)-1.
+A008329: Number of divisors of p+1, p prime.
 A008331: a(n) = phi(prime(n)+1).
 A008335: Number of primes dividing p+1 as p runs through the primes.
 A008837: a(n) = p*(p-1)/2 for p = prime(n).

@@ -5,6 +5,25 @@
 mov $1,$0
 mul $0,2
 add $0,1
-seq $1,47924 ; a(n) = B_{A_n+1}+1, where A_n = floor(n*phi) = A000201(n), B_n = floor(n*phi^2) = A001950(n) and phi is the golden ratio.
+mov $3,2
+mov $5,10
+lpb $1
+  sub $1,1
+  sub $2,$3
+  sub $2,6
+  div $2,4
+  add $5,$4
+  add $5,3
+  mul $3,2
+  bin $4,$3
+  add $4,$2
+  gcd $4,4
+  mul $3,$4
+  div $4,2
+  mul $4,2
+  dif $2,$4
+lpe
+mov $1,$5
+sub $1,7
 mod $1,$0
 mov $0,$1

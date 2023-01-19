@@ -4,5 +4,9 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,92043 ; Numerator of n!/n^2.
+mov $2,$0
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+add $2,1
+gcd $2,$0
+div $0,$2
 mul $0,$1

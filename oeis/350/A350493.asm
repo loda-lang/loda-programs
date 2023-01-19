@@ -4,5 +4,6 @@
 
 mov $1,$0
 add $1,1
-seq $0,65730 ; Largest square <= n-th prime.
+seq $0,6 ; Integer part of square root of n-th prime.
+pow $0,2
 mod $0,$1

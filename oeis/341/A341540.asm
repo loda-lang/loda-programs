@@ -4,7 +4,24 @@
 
 mov $1,2
 pow $1,$0
-seq $0,341538 ; One of the two successive approximations up to 2^n for 2-adic integer sqrt(17). This is the 1 (mod 4) case.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $5,1
+  mov $3,$2
+  mul $3,2
+  sub $3,2
+  pow $4,2
+  add $4,$5
+  mod $4,$2
+  mul $4,2
+  mul $2,2
+  add $3,$4
+  mov $5,$3
+lpe
+mov $0,$4
+mul $0,4
+add $0,1
 sub $0,1
 div $0,$1
 add $0,1

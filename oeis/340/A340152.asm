@@ -1,17 +1,16 @@
 ; A340152: Numbers k such that k and k+1 are both cubefree numbers (A004709).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,2,3,4,5,6,9,10,11,12,13,14,17,18,19,20,21,22,25,28,29,30,33,34,35,36,37,38,41,42,43,44,45,46,49,50,51,52,57,58,59,60,61,62,65,66,67,68,69,70,73,74,75,76,77,78,82,83,84,85,86,89,90,91,92,93,94,97,98,99,100,101,102,105,106,109,110,113,114,115,116,117,118,121,122,123,126,129,130,131,132,133,137,138,139,140,141,142,145,146
 
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,190867 ; Count of the 3-full divisors of n.
-  cmp $3,1
-  add $5,2
+  seq $3,334572 ; Let x(n, k) be the exponent of prime(k) in the factorization of n, then a(n) = Max_{k} abs(x(n,k)- x(n-1,k)).
+  sub $3,1
+  div $3,2
+  cmp $3,0
   sub $0,$3
-  add $1,$5
   add $1,1
   mov $4,$0
   max $4,0
@@ -19,6 +18,5 @@ lpb $2
   mul $2,$4
   sub $2,1
 lpe
-mov $0,$5
-div $0,2
+mov $0,$1
 add $0,1

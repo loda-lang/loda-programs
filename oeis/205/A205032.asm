@@ -4,5 +4,31 @@
 
 mov $1,$0
 add $1,1
-seq $0,205031 ; s(k)-s(j), where (s(k),s(j)) is the least pair of oblong numbers for which n divides their difference.
+add $0,1
+dif $0,2
+sub $0,1
+mov $2,$0
+lpb $0
+  add $4,1
+  sub $0,$4
+lpe
+add $4,2
+mov $6,1
+add $0,1
+add $5,$0
+mov $0,$4
+lpb $0
+  sub $0,2
+  mul $6,2
+  bin $5,$0
+  mul $5,$6
+  cmp $6,$4
+  add $3,$5
+  bin $4,$3
+lpe
+mov $0,$6
+add $0,1
+mul $2,$0
+add $0,$2
+mul $0,2
 div $0,$1

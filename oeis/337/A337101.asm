@@ -4,4 +4,6 @@
 
 mul $0,2
 add $0,1
-seq $0,64727 ; Number of pairs x,y such that 0 < x <= y < n and x+y = n and x*y = kn for some k.
+seq $0,8833 ; Largest square dividing n.
+div $0,4
+seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.

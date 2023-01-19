@@ -3,7 +3,12 @@
 ; 0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0
 
 mul $0,2
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
+lpb $0
+  mov $2,$0
+  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
+  sub $0,$2
+lpe
+add $0,1
 pow $0,2
 div $0,3
 lpb $0

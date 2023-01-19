@@ -4,4 +4,17 @@
 
 mul $0,2
 trn $0,1
-seq $0,53298 ; Partial sums of A027964.
+add $0,3
+lpb $0
+  sub $0,1
+  add $2,$4
+  add $6,$7
+  add $6,1
+  add $1,3
+  add $3,$5
+  add $5,$2
+  mov $7,$4
+  add $7,$1
+  mov $4,$6
+lpe
+mov $0,$3

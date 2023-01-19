@@ -4,7 +4,12 @@
 
 mov $2,$0
 add $2,1
-seq $0,351546 ; a(n) is the largest unitary divisor of sigma(n) coprime with A003961(n), where A003961 is fully multiplicative with a(p) = nextprime(p), and sigma is the sum of divisors function.
+mov $3,$0
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+pow $3,40
+gcd $3,$0
+div $0,$3
 mov $1,$0
 gcd $1,$2
 mov $0,$1

@@ -8,7 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$2
   lpb $0
-    seq $0,2083 ; Narayana-Zidek-Capell numbers: a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).
+    seq $0,2083 ; Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).
     sub $2,1
     add $3,$0
     lpb $0

@@ -4,7 +4,24 @@
 
 mov $1,$0
 div $0,2
-seq $0,286905 ; Positions of 1 in A286903; complement of A286904.
+mov $2,$0
+mul $2,5
+add $0,1
+mov $3,1
+mov $5,12
+lpb $5
+  sub $5,1
+  add $4,$3
+  mul $3,2
+  add $3,$4
+lpe
+mul $3,$0
+div $3,$4
+add $3,$0
+mov $0,$3
+mul $0,2
+sub $0,5
+sub $0,$2
 add $0,2
 add $0,$1
 add $0,$1

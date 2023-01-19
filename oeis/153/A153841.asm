@@ -1,6 +1,7 @@
 ; A153841: First Sunday in n-th month of 365-day year starting on Tuesday
 ; Submitted by [SG]KidDoesCrunch
 ; 6,3,3,7,5,2,7,4,1,6,3,1
+; Formula: a(n) = (41^((48*((36*n)/27)-80)/18)-((48*((36*n)/27)-80)/18)+2)%10
 
 mul $0,36
 div $0,27

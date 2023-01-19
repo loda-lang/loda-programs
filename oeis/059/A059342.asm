@@ -1,6 +1,7 @@
 ; A059342: Triangle giving denominators of coefficients of Euler polynomials, highest powers first.
 ; Submitted by [AF] Kalianthys
 ; 1,1,2,1,1,1,1,2,1,4,1,1,1,1,1,1,2,1,2,1,2,1,1,1,1,1,1,1,1,2,1,4,1,2,1,8,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,4,1,1,1,4,1,2,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,1
+; Formula: a(n) = A002260(n)/gcd(A002260(n),A085881(n))
 
 mov $1,$0
 seq $1,85881 ; Triangle T(n,k) read by rows: multiply row n of Pascal's triangle (A007318) by A001147(n).

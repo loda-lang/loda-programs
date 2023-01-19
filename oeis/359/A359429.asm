@@ -1,13 +1,8 @@
-; A359429: allocated for Antti Karttunen
-; Submitted by arkiss
+; A359429: a(n) = 1 if n is cubefree, but not squarefree, otherwise 0.
+; Submitted by Orange Kid
 ; 0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1
+; Formula: a(n) = A008218(A046523(n))%2
 
-mov $1,5
-seq $0,72411 ; LCM of exponents in prime factorization of n, a(1) = 1.
-lpb $0
-  div $1,$0
-  add $0,$1
-  div $0,2
-  add $1,1
-lpe
-sub $0,1
+seq $0,46523 ; Smallest number with same prime signature as n.
+seq $0,8218 ; Floor(n/4)*floor((n+1)/4)*floor((n+2)/4).
+mod $0,2

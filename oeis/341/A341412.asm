@@ -4,5 +4,14 @@
 
 add $0,1
 mov $1,$0
-seq $0,1553 ; a(n) = 1^n + 2^n + ... + 6^n.
+mov $4,4
+mov $3,6
+lpb $3
+  add $2,$4
+  mov $4,$3
+  pow $4,$0
+  sub $3,1
+lpe
+mov $0,$2
+sub $0,3
 mod $0,$1

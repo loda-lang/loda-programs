@@ -4,5 +4,8 @@
 
 mul $0,3
 add $0,2
-seq $0,294387 ; Expansion of chi(q^3) / chi^3(q) in powers of q where chi() is a Ramanujan theta function.
+mov $1,-1
+pow $1,$0
+seq $0,128128 ; Expansion of chi(-q^3) / chi^3(-q) in powers of q where chi() is a Ramanujan theta function.
+mul $0,$1
 div $0,6

@@ -6,4 +6,15 @@ mov $1,$0
 mod $1,2
 mul $0,2
 add $0,$1
-seq $0,121937 ; a(n) = least m >= 2 such that (n mod m) > (n+2 mod m).
+mov $2,2
+lpb $0
+  add $2,1
+  mov $3,$0
+  mod $3,$2
+  mov $4,2
+  trn $4,$3
+  sub $0,1
+  add $0,$4
+lpe
+mov $0,$2
+add $0,1

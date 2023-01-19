@@ -1,10 +1,26 @@
 ; A343576: Number of permutations of [n] without fixed points and all cycles equal length.
 ; Submitted by LCB001
 ; 1,0,1,2,9,24,175,720,6405,42560,436401,3628800,48073795,479001600,7116730335,88966701824,1474541093025,20922789888000,400160588853025,6402373705728000,133991603578884051,2457732174030848000,55735573291977790575,1124000727777607680000
-; Formula: a(n) = 0^n+(A005225(max(n-1,0))-1)
 
 pow $1,$0
 trn $0,1
-seq $0,5225 ; Number of permutations of length n with equal cycles.
+add $0,1
+mov $2,1
+mov $5,$0
+lpb $0
+  sub $0,1
+  mov $3,$5
+  gcd $3,$2
+  bin $3,$2
+  mov $4,$2
+  pow $4,$2
+  mul $4,$3
+  mul $6,$5
+  mul $6,$2
+  add $6,$4
+  add $2,1
+lpe
+div $6,$4
+mov $0,$6
 sub $0,1
 add $0,$1

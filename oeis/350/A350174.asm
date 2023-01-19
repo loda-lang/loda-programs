@@ -1,19 +1,22 @@
 ; A350174: For k = 0, 1, 2, 3, ... write k prime(k+1) times.
-; Submitted by ckrause
+; Submitted by Science United
 ; 0,0,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 
-mov $2,$0
-lpb $2
-  add $1,1
-  mov $3,$1
-  seq $3,82500 ; a(n) = ceiling(n/2) if n is odd, or prime(n/2) otherwise.
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+mov $1,1
+mov $2,1
+lpb $0
+  mov $3,$2
+  lpb $3
+    add $2,1
+    mov $4,$1
+    gcd $4,$2
+    cmp $4,1
+    cmp $4,0
+    sub $3,$4
+  lpe
+  add $2,1
+  add $5,1
+  sub $0,$2
+  mul $1,$2
 lpe
-mov $0,$1
-div $0,2
+mov $0,$5

@@ -4,4 +4,12 @@
 
 mul $0,2
 trn $0,2
-seq $0,76973 ; Starting with 2, largest prime divisor of the sum of all previous terms.
+mov $1,1
+mov $2,2
+lpb $0
+  sub $0,1
+  mov $2,$1
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  add $1,$2
+lpe
+mov $0,$2

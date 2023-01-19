@@ -1,6 +1,7 @@
 ; A267513: Middle column of the "Rule 137" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0
+; Formula: a(n) = binomial(b(n),c(n))%2, b(n) = A161903(b(n-1)), b(1) = 3, b(0) = 1, c(n) = 7, c(1) = 7, c(0) = 0
 
 mov $1,1
 lpb $0

@@ -2,7 +2,21 @@
 ; Submitted by [AF] Kalianthys
 ; 3,3,3,30,330,303000,33003300000,3030000030300000000000,3300330000000000330033000000000000000000000,30300000303000000000000000000000303000003030000000000000000000000000000000000000000000
 
-seq $0,79 ; Powers of 2: a(n) = 2^n.
+mov $1,2
+pow $1,$0
+mov $0,$1
 div $0,3
-seq $0,288805 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 510", based on the 5-celled von Neumann neighborhood.
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  trn $0,1
+  mov $4,$5
+  bin $4,$2
+  mod $4,2
+  add $2,1
+  mul $3,10
+  add $3,$4
+lpe
+mov $0,$3
 mul $0,3

@@ -1,16 +1,18 @@
 ; A358682: Numbers k such that 8*k^2 + 8*k - 7 is a square.
-; Submitted by Science United
+; Submitted by ChelseaOilman
 ; 1,7,43,253,1477,8611,50191,292537,1705033,9937663,57920947,337588021,1967607181,11468055067,66840723223,389576284273,2270616982417,13234125610231,77134136678971,449570694463597,2620290030102613,15272169486152083,89012726886809887,518804191834707241
-; Formula: a(n) = 6*((A350921(n+1)/gcd(A001221(n+1),A350921(n+1))-3)/8)+1
+; Formula: a(n) = 6*(b(n)/16)+1, b(n) = 4*c(n-1)+b(n-1), b(1) = 20, b(0) = 4, c(n) = 4*c(n-1)+b(n-1)+c(n-1), c(1) = 24, c(0) = 4
 
-add $0,1
-mov $1,$0
-seq $1,350921 ; a(0) = 3, a(1) = 3, and a(n) = 6*a(n-1) - a(n-2) - 4 for n >= 2.
-seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-gcd $0,$1
-div $1,$0
-mov $0,$1
-sub $0,3
-div $0,8
+mov $2,4
+mov $3,4
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,4
+  add $2,$1
+  add $3,$2
+lpe
+mov $0,$2
+div $0,16
 mul $0,6
 add $0,1

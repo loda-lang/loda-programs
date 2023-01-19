@@ -4,7 +4,12 @@
 
 mov $2,$0
 add $2,1
-seq $0,52423 ; Highest common factor of nonzero digits of n.
+add $0,1
+lpb $0
+  gcd $3,$0
+  div $0,10
+lpe
+mov $0,$3
 mov $1,$0
 mov $0,$2
 div $0,$1

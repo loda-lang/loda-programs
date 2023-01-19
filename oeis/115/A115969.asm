@@ -15,9 +15,9 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,33877 ; Triangular array read by rows associated with Schroeder numbers: T(1,k) = 1; T(n,k) = 0 if k < n; T(n,k) = T(n,k-1) + T(n-1,k-1) + T(n-1,k).
-  add $4,$1
-  add $4,$1
-  add $4,$1
+  mov $5,$1
+  mul $5,3
+  add $4,$5
   add $1,$0
   sub $1,$4
 lpe

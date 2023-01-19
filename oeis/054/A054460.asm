@@ -4,7 +4,18 @@
 
 mov $1,$0
 add $0,3
-seq $0,74084 ; Coefficient of q^1 in nu(n), where nu(0)=1, nu(1)=b and, for n>=2, nu(n)=b*nu(n-1)+lambda*(1+q+q^2+...+q^(n-2))*nu(n-2) with (b,lambda)=(2,1).
+mov $2,-2
+lpb $0
+  sub $0,1
+  add $2,1
+  add $2,$4
+  add $2,$0
+  mov $3,$4
+  add $4,$2
+  mov $2,$3
+lpe
+mov $0,$3
+div $0,2
 mul $1,$0
 add $0,$1
 div $0,2

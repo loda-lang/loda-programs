@@ -2,7 +2,9 @@
 ; Submitted by mmonnin
 ; 4,6,9,10,14,15,21,25,35,49
 
-mov $2,14161
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   mov $3,$1
   seq $3,54576 ; Largest proper factor of the largest proper factor of n.

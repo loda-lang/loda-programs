@@ -1,7 +1,25 @@
 ; A359124: Concatenate the decimal numbers 1,2,3,...,n, then add 1.
-; Submitted by BlackGoose05
+; Submitted by estatic707
 ; 2,13,124,1235,12346,123457,1234568,12345679,123456790,12345678911,1234567891012,123456789101113,12345678910111214,1234567891011121315,123456789101112131416,12345678910111213141517,1234567891011121314151618,123456789101112131415161719,12345678910111213141516171820
-; Formula: a(n) = A007908(n)+1
 
-seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
+mov $1,1
+add $0,2
+lpb $0
+  sub $0,1
+  div $3,$1
+  mul $3,$1
+  mul $3,9
+  max $5,1
+  add $1,$3
+  mov $3,$4
+  mul $3,$1
+  mov $4,$2
+  add $4,$3
+  cmp $6,2
+  add $6,1
+  mov $2,$5
+  mov $3,$5
+  add $5,$6
+lpe
+mov $0,$4
 add $0,1

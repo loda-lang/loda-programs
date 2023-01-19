@@ -5,14 +5,14 @@
 pow $1,$0
 add $0,6
 mov $2,$0
-mov $4,$2
+mov $4,$0
 dif $4,2
 dif $4,2
 add $4,1
 mod $4,3
-mov $5,$2
-mov $7,$5
-mov $9,$5
+mov $7,$0
+mov $9,$0
+mov $5,$0
 lpb $5
   add $10,8
   trn $5,$10
@@ -20,9 +20,7 @@ lpb $5
   sub $5,4
 lpe
 mul $9,4
-trn $5,1
 add $5,$9
-add $5,1
 mov $8,$5
 div $8,14
 mul $5,2
@@ -34,14 +32,12 @@ mul $7,2
 add $7,1
 div $7,3
 add $5,$7
-mov $6,$2
+mov $6,$0
 mul $6,3
 mul $2,7
 sub $2,1
 mod $2,$5
 add $2,$6
-add $2,1
-sub $2,1
 add $2,$4
 mov $3,$0
 mul $3,3
@@ -49,6 +45,5 @@ mul $0,7
 sub $0,1
 mod $0,$2
 add $0,$3
-add $0,1
-sub $0,31
 add $0,$1
+sub $0,30

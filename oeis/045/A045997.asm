@@ -4,7 +4,11 @@
 
 add $0,1
 trn $0,2
-seq $0,53025 ; Number of iterations of A000005 required to reach 2 when started at n!.
+mul $0,2
+seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
+sub $0,1
+seq $0,36459 ; Number of iterations required to reach stationary value when repeatedly applying d, the number of divisors function (A000005).
+add $0,1
 mul $0,8
 sub $0,8
 div $0,8

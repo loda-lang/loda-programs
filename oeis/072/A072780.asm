@@ -5,5 +5,8 @@
 mov $1,$0
 add $1,1
 pow $1,2
-seq $0,72779 ; a(n) = sigma_2(n) + phi(n) * sigma(n).
+mov $2,$0
+seq $2,62354 ; a(n) = sigma(n)*phi(n).
+seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+add $0,$2
 mod $0,$1

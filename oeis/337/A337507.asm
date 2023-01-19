@@ -5,7 +5,21 @@
 gcd $1,$0
 trn $0,2
 add $1,$0
-seq $0,5649 ; Expansion of e.g.f. (2 - e^x)^(-2).
+mov $4,2
+lpb $4
+  sub $4,1
+  add $0,$4
+  sub $0,1
+  mov $5,$0
+  seq $5,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
+  add $0,2
+  mov $3,$4
+  mul $3,$5
+  add $2,$3
+lpe
+add $5,$2
+mov $0,$5
+sub $0,1
 mul $0,$1
 mul $0,2
 div $0,4

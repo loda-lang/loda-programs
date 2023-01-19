@@ -3,4 +3,9 @@
 
 add $0,2
 div $0,4
-seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
+mov $1,1
+lpb $0
+  add $1,1
+  trn $0,$1
+lpe
+mov $0,$1

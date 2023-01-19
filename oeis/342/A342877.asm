@@ -3,7 +3,11 @@
 ; 1,1,1,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,1,0,0,0,1,0,1,1,1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,1,0,1,1,0,1,1,0,1,0,1,0,1,1,0,0,0,1,1,0,1,0,1,1,0,1,1,1
 
 add $0,1
-seq $0,62357 ; a(n) = n*p(n+1)-(n+1)*p(n) = n*d(n)-p(n), where p(n) is the n-th prime and d(n) is the n-th prime-difference, A001223(n).
+mov $1,$0
+seq $0,40 ; The prime numbers.
+seq $1,141042 ; Product of n and the n-th gap between primes: a(n) = n*A001223(n).
+sub $1,$0
+mov $0,$1
 mod $0,2
 add $0,1
 div $0,2

@@ -1,12 +1,30 @@
 ; A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
-; Submitted by pelpolaris
+; Submitted by [SG]FX
 ; 0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1
-; Formula: a(n) = (binomial(1,max(A113446(n),0))+1)%2
 
-seq $0,113446 ; Expansion of (phi(q)^2 - phi(q^3)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
-max $0,0
-mov $1,1
-bin $1,$0
-mov $0,$1
 add $0,1
-mod $0,2
+mov $5,$0
+lpb $0
+  add $7,1
+  min $0,$7
+  mov $6,$5
+  dif $6,$0
+  add $0,$6
+  mod $0,2
+  mul $0,2
+  sub $0,1
+  mul $6,$7
+  cmp $6,$5
+  mul $6,$0
+  sub $4,$6
+  sub $5,$7
+  mov $0,$5
+lpe
+mov $0,$4
+mov $1,$0
+cmp $1,0
+mov $2,$0
+add $2,$1
+mov $3,1
+mod $3,$2
+mov $0,$3

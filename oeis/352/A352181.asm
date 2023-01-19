@@ -1,8 +1,17 @@
 ; A352181: a(n) = A200993(n)/2.
-; Submitted by Simon Strandgaard
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,5,495,48510,4753490,465793515,45643010985,4472549283020,438264186724980,42945417749765025,4208212675290247475,412361896760694487530,40407257669872769530470,3959498889750770719498535,387990483937905657741325965,38019107927025003687930446040
-; Formula: a(n) = binomial(A253475(n),2)/3
+; Formula: a(n) = 5*((c(n)^2)/80), b(n) = 8*c(n-1)+b(n-1), b(1) = 8, b(0) = 0, c(n) = 8*c(n-1)+b(n-1)+c(n-1), c(1) = 9, c(0) = 1
 
-seq $0,253475 ; Indices of centered square numbers (A001844) which are also centered hexagonal numbers (A003215).
-bin $0,2
-div $0,3
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,8
+  add $2,$1
+  add $3,$2
+lpe
+pow $3,2
+mov $0,$3
+div $0,80
+mul $0,5

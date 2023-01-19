@@ -4,7 +4,18 @@
 
 add $0,1
 mov $1,$0
-seq $1,279683 ; Number of move operations required to sort all permutations of [n] by MTF sort.
+mov $3,1
+lpb $1
+  add $4,$5
+  add $5,$3
+  mul $3,$1
+  sub $1,1
+  mov $2,$4
+  mul $4,$1
+  mul $4,2
+  mul $5,$1
+lpe
+mov $1,$2
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 gcd $0,$1
 div $1,$0

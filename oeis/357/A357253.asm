@@ -4,7 +4,16 @@
 
 mul $0,2
 add $0,1
-seq $0,81259 ; a(n) is the smallest k such that C(3n,n) divides k!.
+lpb $0
+  mov $2,$0
+  sub $0,1
+  add $1,2
+  gcd $2,$1
+  cmp $2,1
+  add $1,$2
+lpe
+add $1,2
+mov $0,$1
 mul $0,6
 sub $0,30
 div $0,12

@@ -1,9 +1,20 @@
 ; A339051: Even bisection of the infinite Fibonacci word A096270.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by pututu
 ; 0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0
-; Formula: a(n) = A059426(2*max(n-1,0))/2
 
-trn $0,1
+mov $1,1
 mul $0,2
-seq $0,59426 ; First differences of A026273.
-div $0,2
+add $0,2
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $4,1
+  add $2,$1
+  mov $3,$4
+  mul $3,2
+  mul $3,$1
+  div $3,$2
+  mod $3,2
+  add $4,$3
+lpe
+mov $0,$3

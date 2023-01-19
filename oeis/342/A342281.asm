@@ -4,4 +4,10 @@
 
 mul $0,2
 add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mov $1,$0
+mul $1,$0
+lpb $1
+  sub $1,$0
+  add $0,1
+  sub $1,$0
+lpe

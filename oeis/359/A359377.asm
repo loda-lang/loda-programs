@@ -1,7 +1,22 @@
 ; A359377: a(n) = 1 if 3*n is squarefree, otherwise 0.
-; Submitted by pututu
+; Submitted by estatic707
 ; 1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,0
-; Formula: a(n) = gcd(A156277(n),A156277(n))
 
-seq $0,156277 ; Dirichlet inverse of A011655, characteristic function of numbers that are not multiples of 3; Numbers appearing at every third row in the third column of A156241.
-gcd $0,$0
+mov $3,1
+max $3,$0
+lpb $3
+  lpb $0
+    add $1,$0
+    mov $4,$3
+    cmp $4,0
+    mov $2,$3
+    add $2,$4
+    seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+    mod $3,$2
+    add $0,$1
+    mod $0,6
+  lpe
+  sub $0,2
+lpe
+mov $0,$3
+mod $0,2

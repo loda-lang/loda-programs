@@ -5,6 +5,13 @@
 mov $1,$0
 mov $0,2
 pow $0,$1
-seq $1,2057 ; Fourth convolution of Catalan numbers: 4*binomial(2n+3,n)/(n+4).
+add $1,2
+mov $2,$1
+mov $3,$1
+sub $3,2
+mul $1,2
+bin $1,$3
+mul $1,2
+div $1,$2
 mul $1,$0
 mov $0,$1

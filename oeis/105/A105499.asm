@@ -1,9 +1,18 @@
 ; A105499: Trajectory of 1 under the morphism 1->{2,1,2}, 2->{1,3,1}, 3->{3,2,3}.
 ; Submitted by Jamie Morken(w3)
 ; 2,1,2,3,2,3,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,3,2,3,2,1,2,3,2,3,1,3,1,3,2,3,2,1,2,3,2,3,2,1,2,3,2,3,1,3,1,3,2,3,2,1,2,3,2,3,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,3,2,3,2,1,2,1,3,1,2,1,2,1,3,1,3,2,3,1,3,1,3,2,3,1
-; Formula: a(n) = ((16*(A289813(n)+5))%6)/2+1
 
-seq $0,289813 ; A binary encoding of the ones in ternary representation of n (see Comments for precise definition).
+mov $3,1
+lpb $0
+  mov $4,$0
+  div $0,3
+  add $4,$0
+  mod $4,2
+  mul $4,$3
+  add $2,$4
+  mul $3,2
+lpe
+mov $0,$2
 add $0,4
 mov $1,1
 add $1,$0

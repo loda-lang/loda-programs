@@ -4,6 +4,17 @@
 
 mov $1,$0
 trn $1,1
-seq $1,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+mov $3,$1
+lpb $1
+  add $4,1
+  mov $1,$3
+  div $1,$4
+  sub $1,$4
+  add $2,$1
+lpe
+mul $2,2
+add $4,$2
+mov $1,$4
+add $1,1
 min $0,1
 add $0,$1

@@ -4,5 +4,33 @@
 
 mul $0,6
 add $0,4
-seq $0,124815 ; Expansion of q * psi(q)^2 * psi(-q^3)^2 * phi(-q^6) / phi(-q^2) in powers of q where phi(), psi() are Ramanujan theta functions.
+mul $0,2
+mov $1,$0
+add $1,2
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $7,0
+  mov $0,$1
+  gcd $0,$2
+  mov $4,0
+  mov $5,$0
+  add $0,1
+  lpb $0
+    sub $0,1
+    mov $6,$5
+    dif $6,$0
+    cmp $6,$5
+    cmp $6,0
+    sub $7,$4
+    sub $0,1
+    add $6,$7
+    add $4,$6
+  lpe
+  sub $2,1
+  add $4,1
+  add $3,$4
+lpe
+mov $0,$3
+add $0,1
 div $0,4
