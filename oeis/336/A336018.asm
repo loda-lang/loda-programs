@@ -4,7 +4,14 @@
 
 mov $2,$0
 add $2,1
-seq $0,326299 ; a(n) = floor(n*log_2(n)).
+add $0,1
+pow $0,$0
+lpb $0
+  div $0,2
+  add $3,1
+lpe
+sub $3,1
+mov $0,$3
 mov $1,$0
 mod $1,$2
 mov $0,$1

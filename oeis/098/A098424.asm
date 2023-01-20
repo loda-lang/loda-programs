@@ -8,7 +8,8 @@ lpb $4
   mov $0,$6
   sub $0,$4
   mov $3,$0
-  seq $0,45966 ; a(1)=3; if n = Product p_i^e_i, n > 1, then a(n) = Product p_{i+2}^e_i.
+  seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $2,3
   add $2,$3
   mov $5,4

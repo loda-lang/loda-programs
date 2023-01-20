@@ -1,9 +1,22 @@
 ; A106693: 3 symbols taken seven at a time symmetrically.
 ; Submitted by Fornax
 ; 1,1,3,2,3,1,1,1,1,3,2,3,1,1,3,3,2,1,2,3,3,2,2,1,3,1,2,2,3,3,2,1,2,3,3,1,1,3,2,3,1,1,1,1,3,2,3,1,1,1,1,3,2,3,1,1,1,1,3,2,3,1,1,3,3,2,1,2,3,3,2,2,1,3,1,2,2,3,3,2,1,2,3,3,1,1,3,2,3,1,1,1,1,3,2,3,1,1,3,3
-; Formula: a(n) = gcd(0,A322240(n)%7)/2+1
 
-seq $0,322240 ; a(n) = A084605(n)^2, the square of the central coefficient in (1 + x + 4*x^2)^n.
+mov $2,1
+mov $4,1
+lpb $0
+  mul $2,$0
+  add $3,1
+  sub $0,1
+  mul $2,$0
+  div $2,$3
+  div $2,$3
+  mul $2,4
+  add $4,$2
+  sub $0,1
+lpe
+mov $0,$4
+pow $0,2
 mod $0,7
 gcd $1,$0
 div $1,2

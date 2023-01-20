@@ -1,6 +1,7 @@
 ; A010381: Squares mod 19.
 ; Submitted by Christian Krause
 ; 0,1,4,5,6,7,9,11,16,17
+; Formula: a(n) = b(n)/2, b(n) = b(n-1)+A056113(n), b(0) = 0
 
 lpb $0
   mov $2,$0

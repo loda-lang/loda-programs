@@ -7,6 +7,20 @@ mul $1,4
 trn $0,1
 sub $1,$0
 mul $0,2
-seq $0,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+sub $2,$0
+add $0,1
+mov $4,6
+mov $5,10
+lpb $5
+  sub $5,1
+  add $4,$3
+  add $3,$4
+lpe
+mul $3,$0
+div $3,$4
+mov $0,$3
+add $0,2
+sub $0,2
+add $0,$2
 sub $0,1
 add $0,$1

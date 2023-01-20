@@ -8,7 +8,10 @@ div $0,2
 sub $4,$0
 pow $4,2
 add $4,1
-seq $0,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
+add $0,2
+mov $7,$0
+div $0,2
+gcd $0,$7
 add $2,$0
 mul $2,$4
 mov $6,$3

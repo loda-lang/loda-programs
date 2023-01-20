@@ -4,6 +4,13 @@
 
 add $0,1
 mov $1,$0
-seq $0,146076 ; Sum of even divisors of n.
+lpb $0
+  div $0,2
+  mov $2,$0
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $0,2
+lpe
+mul $2,2
+mov $0,$2
 max $0,$1
 div $0,2

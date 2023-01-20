@@ -5,5 +5,22 @@
 mov $1,$0
 mul $0,2
 bin $0,$1
-seq $1,26000 ; a(n) = T(2n, n), where T is the Delannoy triangle (A008288).
+mov $5,$1
+mul $5,2
+add $1,2
+lpb $1
+  mov $3,$1
+  add $3,$5
+  sub $1,2
+  sub $3,2
+  bin $3,$1
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,2
+  add $6,$4
+lpe
+mov $1,$6
+mul $1,2
+sub $1,1
 mul $0,$1

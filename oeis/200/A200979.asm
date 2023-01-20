@@ -6,7 +6,16 @@ mod $0,36
 mov $1,1
 add $1,$0
 add $1,2
-seq $0,55315 ; Number of labeled trees with n nodes and 3 leaves.
+mov $2,$0
+add $0,4
+bin $0,4
+add $2,2
+lpb $2
+  mul $0,$2
+  sub $2,1
+lpe
+div $0,2
+mul $0,4
 mul $0,4
 mul $0,$1
 div $0,48

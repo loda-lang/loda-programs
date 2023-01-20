@@ -4,7 +4,28 @@
 
 add $0,2
 mov $1,$0
-seq $1,263636 ; Numbers n such that A263635(n)=2.
+mov $3,$1
+add $3,4
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,346073 ; a(n) = 1 + Sum_{k=0..n-4} a(k) * a(n-k-4).
+  sub $4,3
+  trn $5,$2
+  sub $5,$2
+  add $4,$5
+  gcd $4,2
+  sub $1,$4
+  add $1,1
+  add $2,1
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+  sub $3,1
+lpe
+mov $1,$2
+add $1,4
 mov $0,$1
 div $0,4
 sub $0,1

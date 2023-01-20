@@ -6,4 +6,14 @@ mul $0,4
 add $0,5
 div $0,3
 sub $0,1
-seq $0,34178 ; Number of solutions to n = a^2 - b^2, a > b >= 0.
+add $0,2
+lpb $0
+  add $1,2
+  mov $3,$0
+  gcd $3,$1
+  div $3,$1
+  add $0,1
+  sub $0,$1
+  add $2,$3
+lpe
+mov $0,$2

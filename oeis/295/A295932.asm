@@ -1,6 +1,7 @@
-; A295932: Number of (not necessarily maximum) cliques in the n-Sierpinski carpet graph.
+; A295932: Number of (not necessarily maximal) cliques in the n-Sierpinski carpet graph.
 ; Submitted by Jon Maiga
 ; 17,153,1289,10521,84809,680409,5449097,43610265,348934601,2791634265,22333546505,178669789209,1429362565193,11434913276121,91479344472713,731834870572953,5854679308957385,46837435504780377,374699487137606921,2997595906398947097,23980767279085851977
+; Formula: a(n) = 8*b(n)+8*c(n)+9, b(n) = 8*b(n-1)+8*c(n-1)+7, b(1) = 15, b(0) = 0, c(n) = 3*c(n-1), c(1) = 3, c(0) = 1
 
 mov $2,1
 lpb $0

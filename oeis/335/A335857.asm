@@ -7,7 +7,12 @@ add $0,1
 mov $1,1
 add $1,$0
 add $1,4
-seq $0,107398 ; a(n) = binomial(n+7, 7) * binomial(n+9, 7).
+mov $2,$0
+add $2,7
+bin $2,$0
+add $0,9
+bin $0,7
+mul $0,$2
 mul $1,$0
 mov $0,$1
 div $0,5760

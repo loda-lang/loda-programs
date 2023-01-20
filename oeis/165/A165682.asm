@@ -6,9 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,5915 ; Hexagonal prism numbers: a(n) = (n + 1)*(3*n^2 + 3*n + 1).
-  sub $3,1
+  mov $5,6
+  mul $5,$1
+  add $5,4
+  pow $5,3
+  div $5,72
+  mov $3,$5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,2
   sub $0,$3

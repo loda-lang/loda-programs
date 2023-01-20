@@ -8,7 +8,12 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,62839 ; a(n) = floor((prime(n-1)+prime(n+1))/2).
+  add $3,1
+  mov $6,$3
+  seq $6,156037 ; Largest nonprime < n-th prime.
+  seq $3,158611 ; 0, 1 and the primes.
+  add $3,$6
+  add $3,1
   gcd $3,$5
   cmp $3,1
   sub $0,$3

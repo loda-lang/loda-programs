@@ -4,6 +4,8 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,38791 ; An intermediate sequence for nonisomorphic circulant p^2-tournaments, indexed by odd primes p.
+seq $0,5097 ; (Odd primes - 1)/2.
+seq $0,300668 ; a(n) = A000016(2*n).
+mul $0,2
 sub $0,1
 sub $0,$1

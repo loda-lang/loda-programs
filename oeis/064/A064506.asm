@@ -3,4 +3,9 @@
 
 add $0,2
 bin $0,2
-seq $0,259361 ; n occurs 2n+2 times.
+lpb $0
+  add $1,2
+  sub $0,$1
+lpe
+div $1,2
+mov $0,$1

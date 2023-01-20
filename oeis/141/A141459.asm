@@ -1,9 +1,27 @@
 ; A141459: a(n) = Product_{p-1 divides n} p, where p is an odd prime.
 ; Submitted by Egon Olsen
 ; 1,1,3,1,15,1,21,1,15,1,33,1,1365,1,3,1,255,1,399,1,165,1,69,1,1365,1,3,1,435,1,7161,1,255,1,3,1,959595,1,3,1,6765,1,903,1,345,1,141,1,23205,1,33,1,795,1,399,1,435,1,177,1,28393365,1,3,1,255,1,32361,1,15,1,2343,1,70050435,1,3,1,15,1,1659,1,115005,1,249,1,1702155,1,3,1,30705,1,136059,1,705,1,3,1,2250885,1,3,1
-; Formula: a(n) = (A176289(n)-1)/2+1
 
-seq $0,176289 ; Denominators of the rational sequence with e.g.f. (x/2)*(1+exp(-x))/(1-exp(-x)).
+mov $3,$0
+sub $0,1
+mov $4,2
+mov $5,$0
+lpb $5
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
+  mov $1,$0
+  mov $2,$0
+  gcd $2,$5
+  bin $2,$0
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $0,$1
+  add $0,1
+  mul $0,$4
+  mul $2,$0
+  max $4,$2
+lpe
+mov $0,$4
 sub $0,1
 div $0,2
 add $0,1

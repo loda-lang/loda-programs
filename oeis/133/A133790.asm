@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,4,9,8,25,1,49,16,27,1,121,1,169,1,1,32,289,1,361,1,1,1,529,1,125,1,81,1,841,1,961,64,1,1,1,1,1369,1,1,1,1681,1,1849,1,1,1,2209,1,343,1,1,1,2809,1,1,1,1,1,3481,1,3721,1,1,128,1,1,4489,1,1,1,5041,1,5329,1,1,1
 
-seq $0,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
+max $1,$0
+seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
+mul $0,$1
+add $0,1
 sub $0,1
 seq $0,285109 ; a(n) = n multiplied by its smallest prime factor; a(1) = 1.

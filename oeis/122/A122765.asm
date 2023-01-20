@@ -1,4 +1,4 @@
-; A122765: Triangle read by rows, based on the coefficients of derivatives of the polynomials in A130777. Let p(k, x) = x*p(k - 1, x) - p(k - 2, x). Then T(k,x) = dp(k,x)/dx.
+; A122765: Triangle read by rows: Let p(k, x) = x*p(k-1, x) - p(k-2, x). Then T(k,x) = dp(k,x)/dx.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,-1,2,-2,-2,3,2,-6,-3,4,3,6,-12,-4,5,-3,12,12,-20,-5,6,-4,-12,30,20,-30,-6,7,4,-20,-30,60,30,-42,-7,8,5,20,-60,-60,105,42,-56,-8,9,-5,30,60,-140,-105,168,56,-72,-9,10
 

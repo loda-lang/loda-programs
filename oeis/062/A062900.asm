@@ -7,7 +7,10 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,84340 ; 8*n digit-reversed mod 8.
+  add $3,2
+  mul $3,8
+  seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  mod $3,8
   add $3,$4
   pow $3,$0
   cmp $3,1

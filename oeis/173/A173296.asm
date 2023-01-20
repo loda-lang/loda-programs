@@ -4,5 +4,24 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,77595 ; Numerator of integral from 0 to 1 of (1 + x^2)^n, in lowest terms.
+mov $2,1
+mul $0,2
+lpb $0
+  mov $3,$0
+  add $3,1
+  mul $4,$3
+  add $4,$2
+  add $5,6
+  mod $3,44
+  mul $2,$0
+  div $2,2
+  mul $2,6
+  mul $2,$3
+  mul $4,$5
+  sub $0,2
+lpe
+add $2,$4
+gcd $4,$2
+div $2,$4
+mov $0,$2
 mul $0,$1

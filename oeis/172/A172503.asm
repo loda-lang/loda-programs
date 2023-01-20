@@ -4,7 +4,16 @@
 
 mov $2,$0
 add $2,1
-seq $0,89186 ; Decreases from 9 * 10^k down to 1, restarting at 9 * 10^(k+1).
+mov $3,$0
+sub $4,$0
+mov $0,1
+add $3,1
+lpb $3
+  div $3,10
+  mul $0,10
+lpe
+add $0,$4
+sub $0,1
 mov $1,$0
 sub $1,1
 gcd $1,$2

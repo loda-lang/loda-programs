@@ -4,7 +4,10 @@
 
 mov $1,$0
 mod $1,2
-seq $0,83365 ; Expansion of psi(x) / phi(x) in powers of x where phi(), psi() are Ramanujan theta functions.
+mov $2,-1
+pow $2,$0
+seq $0,1935 ; Number of partitions with no even part repeated; partitions of n in which no parts are multiples of 4.
+mul $0,$2
 mul $1,$0
 div $0,2
 sub $0,$1

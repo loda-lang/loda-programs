@@ -9,6 +9,13 @@ lpb $0
   mul $1,4
   mov $2,$0
   max $2,0
-  seq $2,11643 ; 84th cyclotomic polynomial.
+  mov $3,$2
+  div $3,2
+  add $3,$2
+  mov $4,-1
+  pow $4,$3
+  seq $3,11638 ; 63rd cyclotomic polynomial.
+  mul $3,$4
+  mov $2,$3
 lpe
 mov $0,$2

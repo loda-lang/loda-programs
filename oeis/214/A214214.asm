@@ -4,7 +4,16 @@
 
 mov $1,$0
 trn $0,1
-seq $0,6165 ; a(1) = a(2) = 1; thereafter a(2n+1) = a(n+1) + a(n), a(2n) = 2a(n).
+mov $2,1
+lpb $0
+  add $0,$2
+  mul $2,2
+  sub $0,$2
+  trn $0,$2
+  add $0,$2
+lpe
+max $2,$0
+mov $0,$2
 add $0,$1
 mul $0,2
 sub $0,1

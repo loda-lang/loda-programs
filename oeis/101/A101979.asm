@@ -5,9 +5,14 @@
 mov $1,3
 lpb $0
   mov $2,$0
-  seq $2,121238 ; a(n) = (-1)^(1+n+A088585(n)).
+  lpb $2
+    dif $2,2
+  lpe
+  div $2,2
+  mov $3,-1
+  pow $3,$2
   sub $0,2
-  add $1,$2
+  add $1,$3
 lpe
 sub $1,3
 add $1,$0

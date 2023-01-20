@@ -6,5 +6,24 @@ mov $1,-1
 pow $1,$0
 mul $0,2
 add $0,1
-seq $0,51138 ; Divisibility sequence associated with elliptic curve y^2 + y = x^3 - x and point (1, 0).
+mul $0,2
+mov $2,1
+mov $3,-1
+mov $4,1
+mov $5,1
+lpb $0
+  sub $0,1
+  mov $6,$3
+  pow $6,2
+  mov $7,$4
+  mul $7,$2
+  add $7,$6
+  div $7,$5
+  mov $8,$5
+  mov $5,$4
+  mov $4,$3
+  mov $3,$2
+  mov $2,$7
+lpe
+mov $0,$8
 mul $0,$1

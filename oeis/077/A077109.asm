@@ -4,5 +4,13 @@
 
 pow $0,2
 sub $1,$0
-seq $0,48763 ; Smallest cube >= n.
+mov $3,$0
+lpb $0
+  add $4,1
+  mov $2,$4
+  pow $2,3
+  mov $0,$3
+  trn $0,$2
+lpe
+mov $0,$2
 add $0,$1
