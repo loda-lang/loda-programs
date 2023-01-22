@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,123865 ; a(n) = n^4 - 1.
+  pow $3,4
+  sub $3,1
   mul $3,3
   trn $3,2
   mov $5,$3

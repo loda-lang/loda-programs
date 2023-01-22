@@ -8,7 +8,9 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $0,$1
-  seq $0,266733 ; a(n) = 21*binomial(n+6,7).
+  add $0,6
+  bin $0,7
+  mul $0,21
   add $1,1
   mov $3,$5
   add $3,$0

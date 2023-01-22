@@ -8,7 +8,9 @@ pow $2,3
 lpb $2
   sub $2,31
   mov $3,$1
-  seq $3,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
+  max $3,4
+  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  div $3,2
   mov $5,$3
   add $5,2
   mul $3,338

@@ -7,7 +7,9 @@ lpb $0
   sub $0,$1
   mov $2,$0
   max $2,0
-  seq $2,336407 ; a(n) is the number of composites < n-th odd composite.
+  mov $3,$2
+  seq $2,153238 ; Numbers k such that 2*k + 3 is composite.
+  add $2,$3
   mov $1,$2
 lpe
 mov $0,$2

@@ -4,9 +4,27 @@
 
 mov $1,$0
 cmp $1,0
+mov $5,1
+mov $6,1
 add $0,$1
-sub $0,1
-seq $0,90992 ; Number of meaningful differential operations of the n-th order on the space R^7.
+add $0,2
+lpb $0
+  sub $0,1
+  add $6,1
+  mov $7,$3
+  add $7,$4
+  add $3,$5
+  mov $5,$6
+  mov $6,$4
+  add $6,$3
+  mov $4,$3
+  add $5,$7
+  sub $5,$3
+lpe
+mov $0,$6
+mul $0,2
+add $0,2
+div $0,2
 mov $2,$1
 add $2,$0
 pow $2,2

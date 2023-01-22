@@ -12,8 +12,10 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
-  seq $0,48 ; Number of n-bead necklaces with beads of 2 colors and primitive period n, when turning over is not allowed but the two colors can be interchanged.
+  add $5,1
+  sub $0,2
+  seq $0,195095 ; G.f.: Sum_{n>=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+  div $0,$5
   mul $1,$0
   add $3,$1
 lpe

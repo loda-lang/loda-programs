@@ -7,6 +7,13 @@ add $0,2
 div $0,2
 mul $0,8
 sub $0,3
-seq $0,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+lpb $0
+  sub $0,1
+  add $2,1
+  add $3,6
+  add $4,$3
+  trn $0,$4
+lpe
+mov $0,$2
 add $0,1
 add $0,$1

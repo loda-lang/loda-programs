@@ -10,7 +10,8 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,14306 ; a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
+  seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  min $0,1
   add $3,$0
   add $4,$3
   mov $3,$5

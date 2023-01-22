@@ -7,8 +7,11 @@ add $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,61602 ; Sum of factorials of the digits of n.
-  sub $3,1
+  trn $3,1
+  mov $5,$3
+  seq $3,241404 ; Sum of n and the sum of the factorials of its digits.
+  sub $3,$5
+  sub $3,2
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,2
   sub $0,$3

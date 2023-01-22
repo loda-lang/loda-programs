@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,6
   mov $3,$1
-  seq $3,179475 ; a(n) = A042997(n) mod 7.
+  seq $3,42997 ; Primes congruent to {2, 3, 4, 5, 6} (mod 7).
+  mod $3,7
   cmp $3,2
   sub $0,$3
   add $1,1

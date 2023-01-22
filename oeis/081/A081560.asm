@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$2
   sub $4,1
-  seq $0,81559 ; Expansion of e.g.f.: exp(cosh(2*x)-1), even powers only.
+  mov $5,4
+  pow $5,$0
+  seq $0,5046 ; Number of partitions of a 2n-set into even blocks.
+  mul $0,$5
   bin $1,$4
   mul $1,$0
   add $3,$1

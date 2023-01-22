@@ -6,9 +6,12 @@ mul $0,2
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,74065 ; Numerators a(n) of fractions slowly converging to sqrt(3): let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < sqrt(3), then a(n+1) = a(n) + 1, else a(n+1)= a(n).
+  add $2,1
+  mov $3,45
+  mul $3,$2
+  div $3,71
   sub $0,2
-  add $1,$2
+  add $1,$3
 lpe
 add $1,$0
 mov $0,$1

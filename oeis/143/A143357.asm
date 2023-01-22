@@ -1,11 +1,15 @@
 ; A143357: Floor((n-1)!/[n(n+1)]).
 ; Submitted by Arkhenia
 ; 0,0,0,0,0,2,12,70,448,3298,27490,255876,2631876,29652480,363242880,4807626352,68375130352,1040021719578,16848351857178,289631191449600,5266021662720000,100970241446066086,2036233202495666086
-; Formula: a(n) = (A000142(n)/2)/binomial(n+2,2)
 
 mov $1,$0
 add $1,2
 bin $1,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+lpe
+mov $0,$2
 div $0,2
 div $0,$1

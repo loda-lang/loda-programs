@@ -6,7 +6,9 @@ mov $1,$0
 lpb $1
   sub $1,1
   mov $2,$0
-  seq $2,69513 ; Characteristic function of the prime powers p^k, k >= 1.
+  seq $2,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $2,1
+  mod $2,2
   add $3,$2
   add $0,1
 lpe

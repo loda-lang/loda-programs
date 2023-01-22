@@ -4,5 +4,9 @@
 
 mov $1,$0
 pow $1,10
-seq $0,61037 ; Numerator of 1/4 - 1/n^2.
+add $0,2
+pow $0,2
+sub $0,4
+dif $0,4
+dif $0,4
 gcd $0,$1

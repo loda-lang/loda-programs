@@ -1,9 +1,12 @@
 ; A349264: Generalized Euler numbers, a(n) = n!*[x^n](sec(4*x)*(sin(4*x) + 1)).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,4,16,128,1280,16384,249856,4456448,90767360,2080374784,52975108096,1483911200768,45344872202240,1501108249821184,53515555843342336,2044143848640217088,83285910482761809920,3605459138582973251584,165262072909347030040576,7995891855149741436305408
-; Formula: a(n) = A000111(n)*4^n
+; Formula: a(n) = gcd(A155585(n),A122045(n))*4^n
 
 mov $1,4
 pow $1,$0
-seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+mov $2,$0
+seq $2,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$2
 mul $0,$1

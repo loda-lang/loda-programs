@@ -4,8 +4,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,175253 ; a(n) = characteristic function of numbers k such that A000203(m) = k has no solution for any m, where A000203(m) = sum of divisors of m.
+  seq $2,54973 ; Number of numbers whose divisors sum to n.
+  cmp $3,$2
   sub $0,1
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

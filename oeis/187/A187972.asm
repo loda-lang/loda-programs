@@ -1,10 +1,19 @@
 ; A187972: a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=4, [ ]=floor.
 ; Submitted by [AF] Hydrosaure
 ; 1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1
-; Formula: a(n) = A188044(n+4)
 
 mov $1,$0
 add $1,4
 mov $2,$1
-seq $2,188044 ; a(n) = [n*r] - [k*r] - [n*r-k*r], where r=sqrt(2), k=4, [ ]=floor.
-mov $0,$2
+lpb $2
+  mov $3,$2
+  seq $3,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+  add $4,$3
+  mul $4,$3
+  add $2,3
+  mul $2,$4
+  trn $2,8
+lpe
+add $3,1
+mod $3,2
+mov $0,$3

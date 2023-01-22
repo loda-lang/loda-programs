@@ -4,8 +4,11 @@
 
 mov $1,1
 lpb $0
+  max $4,$0
+  seq $4,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mov $2,$0
-  seq $2,306694 ; a(n) is the denominator of log(A014963(n))/log(n) if n > 1 and a(1) = 1.
+  mul $2,$4
+  seq $2,5361 ; Product of exponents of prime factorization of n.
   mul $3,$2
   add $3,$1
   sub $0,1

@@ -3,7 +3,14 @@
 
 mov $1,2
 pow $1,$0
-seq $1,59721 ; Mean of first six positive powers of n, i.e., (n + n^2 + n^3 + n^4 + n^5 + n^6)/6.
+mov $3,$1
+mov $2,10
+lpb $2
+  sub $2,2
+  add $1,1
+  mul $1,$3
+lpe
+div $1,6
 mov $0,$1
 mul $0,6
 add $0,1

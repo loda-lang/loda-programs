@@ -5,9 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,298298 ; Numbers k such that b(k+1) = b(k) + 2, where b = A298296.
-  sub $3,1
+  mov $4,$1
+  add $4,2
+  seq $4,298295 ; Solution a( ) of the complementary equation a(n) = a(0)*b(n) + a(1)*b(n-1), where a(0) = 1, a(1) = 2, b(0) = 3, b(1) = 4, b(2) = 5, and (b(n)) is the increasing sequence of positive integers not in (a(n)). See Comments.
+  sub $4,$1
+  mov $3,$4
+  sub $3,4
   add $0,1
   add $1,1
   add $2,$3

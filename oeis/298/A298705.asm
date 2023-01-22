@@ -1,6 +1,7 @@
 ; A298705: Numbers from the 15-theorem for universal Hermitian lattices.
 ; Submitted by Jamie Morken(s4)
 ; 1,2,3,5,6,7,10,13,14,15
+; Formula: a(n) = (2*b(n))/3+1, b(n) = b(n-1)+A001316(n/2), b(0) = 1
 
 add $0,1
 lpb $0

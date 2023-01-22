@@ -1,10 +1,31 @@
-; A278741: Odd numbers n such that tau(n-1) is a prime.
+; A278741: Odd numbers k such that tau(k-1) is a prime.
 ; Submitted by shiva
 ; 3,5,17,65,1025,4097,65537,262145,4194305,268435457,1073741825,68719476737,1099511627777,4398046511105,70368744177665,4503599627370497,288230376151711745,1152921504606846977,73786976294838206465,1180591620717411303425,4722366482869645213697
-; Formula: a(n) = (2^A015919(n+1))/2+1
 
 add $0,1
-seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $6,$2
+  add $6,1
+  mov $7,2
+  pow $7,$6
+  sub $7,2
+  gcd $6,$7
+  mov $4,$2
+  div $4,$6
+  add $4,1
+  cmp $4,1
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1
 mov $1,2
 pow $1,$0
 mov $0,$1

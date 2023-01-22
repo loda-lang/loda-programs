@@ -4,10 +4,17 @@
 
 add $0,5
 lpb $0
+  mov $4,$0
+  div $4,2
   mov $2,$0
-  add $2,3
-  seq $2,24165 ; Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that c - b > b - a.
+  div $2,3
+  mov $3,$4
+  mov $4,$2
+  mul $4,2
+  sub $3,$4
+  pow $3,2
+  div $3,4
   sub $0,9
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

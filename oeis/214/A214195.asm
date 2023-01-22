@@ -7,7 +7,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,158210 ; Number omega(n) of distinct primes dividing n multiplied by -1 when n is squarefree (thus Omega(n) = omega(n)).
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   gcd $3,3
   sub $3,1
   cmp $3,2

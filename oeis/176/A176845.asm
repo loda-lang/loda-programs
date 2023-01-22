@@ -6,8 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,176852 ; Complement to A176845.
-  sub $3,1
+  seq $3,136799 ; Last term in a sequence of at least 3 consecutive composite integers.
+  sub $3,3
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
+  mul $3,2
+  sub $3,2
   add $0,1
   add $1,1
   add $2,$3

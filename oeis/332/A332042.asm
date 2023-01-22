@@ -9,7 +9,10 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,306927 ; a(n) = A001615(n) - n.
+  mov $5,$0
+  seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  sub $0,1
+  sub $0,$5
   cmp $0,$2
   sub $0,1
   gcd $0,3

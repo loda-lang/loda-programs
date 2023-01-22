@@ -8,7 +8,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,54868 ; Sum of bits of sum of bits of n: a(n) = wt(wt(n)).
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   gcd $3,2
   sub $0,$3
   add $0,1

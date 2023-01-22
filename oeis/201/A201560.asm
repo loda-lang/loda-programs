@@ -4,5 +4,13 @@
 
 mov $1,$0
 add $1,1
-seq $0,120490 ; 1 + Sum[ k^(n-1), {k,1,n}].
+mov $3,$0
+lpb $0
+  mov $4,$0
+  pow $4,$3
+  sub $0,1
+  sub $2,$4
+  sub $4,$2
+lpe
+mov $0,$4
 mod $0,$1

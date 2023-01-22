@@ -1,12 +1,20 @@
 ; A158681: Wiener indexes of the complete binary trees with n levels, root being at level 0.
 ; Submitted by Christian Krause
 ; 4,48,368,2304,12864,66816,330496,1579008,7353344,33583104,151056384,671219712,2953068544,12885491712,55835820032,240520790016,1030797656064,4398058045440,18691721789440,79164887531520,334251639701504,1407375101657088,5910974963908608
-; Formula: a(n) = 4*A045618(n)*2^n
 
 mov $1,$0
 mov $0,2
 pow $0,$1
-seq $1,45618 ; Partial sums of A000337(n+4), n >= 0.
+add $1,1
+lpb $1
+  add $2,$1
+  sub $2,1
+  mul $2,2
+  sub $1,1
+  add $3,1
+lpe
+add $2,$3
+mov $1,$2
 mul $1,$0
 mov $0,$1
 mul $0,4

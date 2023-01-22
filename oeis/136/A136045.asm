@@ -1,10 +1,26 @@
 ; A136045: Bisection of A138546.
 ; Submitted by Jamie Morken(w2)
 ; 1,4,42,660,12810,281736,6727644,170316432,4504487130,123255492360,3465702008340,99645553785960,2918768920720380,86852063374902000,2619552500788984200,79939673971478231760
-; Formula: a(n) = A086618(n)*binomial(2*n,n)
 
 mov $1,$0
 mul $0,2
 bin $0,$1
-seq $1,86618 ; a(n) = Sum{k=0..n} binomial(n,k)^2*C(k), where C() = A000108() are the Catalan numbers.
+mov $4,$1
+mov $6,$1
+lpb $6
+  mov $1,$6
+  add $1,1
+  mov $2,$4
+  bin $2,$6
+  pow $2,2
+  mov $3,$6
+  add $3,$6
+  bin $3,$6
+  sub $6,1
+  mul $2,$3
+  div $2,$1
+  add $5,$2
+lpe
+mov $1,$5
+add $1,1
 mul $0,$1

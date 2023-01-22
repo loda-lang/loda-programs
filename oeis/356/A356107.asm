@@ -7,7 +7,7 @@ mul $0,85
 div $0,47
 mov $1,$0
 mul $1,4
-trn $0,1
+sub $0,1
 sub $1,$0
 sub $1,$0
 sub $2,$0
@@ -22,8 +22,6 @@ lpe
 mul $3,$0
 div $3,$4
 mov $0,$3
-add $0,2
-sub $0,2
 add $0,$2
 add $0,$1
 sub $0,3

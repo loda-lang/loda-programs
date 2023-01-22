@@ -1,7 +1,24 @@
 ; A004936: Numerator of (binomial(2*n-2,n-1)/n!)^2.
 ; Submitted by Christian Krause
 ; 1,1,1,25,49,49,121,20449,20449,5909761,17631601,17631601,55190041,55190041,55190041,46414824481,154341336769,154341336769,427538329,585299972401,585299972401,983889253606081,3438962627443561,3438962627443561,7596668444022826249
-; Formula: a(n) = A144186(n)^2
 
-seq $0,144186 ; Numerators of series expansion of the e.g.f. for the Catalan numbers.
+mov $2,$0
+add $2,1
+mov $3,4
+mul $0,2
+sub $0,1
+lpb $0
+  add $4,1
+  add $5,$3
+  mul $5,$0
+  sub $0,1
+  mul $3,$4
+lpe
+pow $5,2
+gcd $5,$3
+div $3,$5
+mov $1,$3
+gcd $1,$2
+mov $0,$3
+div $0,$1
 pow $0,2

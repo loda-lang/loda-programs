@@ -9,7 +9,8 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
-  seq $2,135401 ; a(n) = number of permutations (p(1),p(2),p(3),...,p(n)) of (1,2,3,...n) each of which is its own inverse and is such that p(k) = n + 1 - p(n+1-k) for all k in the range 1 <= k <= n.
+  div $2,2
+  seq $2,898 ; a(n) = 2*(a(n-1) + (n-1)*a(n-2)) for n >= 2 with a(0) = 1.
   mul $1,$2
 lpe
 mov $0,$1

@@ -23,5 +23,5 @@ lpb $0
   mul $2,$6
 lpe
 mul $0,$2
-sub $0,1
 sub $0,$1
+sub $0,1

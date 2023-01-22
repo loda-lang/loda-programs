@@ -7,5 +7,25 @@ trn $0,1
 mov $1,$0
 mod $1,2
 div $0,2
-seq $0,43687 ; a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 3 runs.
+mov $2,2
+mov $3,$0
+pow $3,2
+mul $3,2
+lpb $3
+  mov $6,$2
+  gcd $6,2
+  mov $4,$2
+  seq $4,37800 ; Number of occurrences of 01 in the binary expansion of n.
+  sub $4,1
+  add $4,$6
+  cmp $4,1
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
 mul $0,$1

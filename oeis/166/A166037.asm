@@ -8,7 +8,13 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  mov $5,$2
+  mul $5,-2
+  add $2,1
+  div $5,$2
+  sub $2,$5
+  seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $2,1
   mul $4,$1
   add $1,$2
   mov $3,1

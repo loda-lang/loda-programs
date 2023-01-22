@@ -6,9 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,76360 ; a(n) = commutator[sigma,tau](n) = d0(d1(w)) - d1(d0(w)), where d0()=number of, d1()=sum of divisors of n.
+  seq $3,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
   sub $3,1
+  sub $3,$5
   bin $3,$2
   cmp $3,0
   sub $0,$3

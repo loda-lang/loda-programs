@@ -7,7 +7,12 @@ mov $5,2
 lpb $5
   sub $5,1
   mov $0,$2
-  seq $0,182778 ; Beatty sequence for 3 + sqrt(3).
+  mul $0,2
+  add $0,1
+  mov $6,$0
+  seq $6,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
+  add $0,$6
+  add $0,1
   sub $4,$3
   sub $4,$1
   mul $4,2

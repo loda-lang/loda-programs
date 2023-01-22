@@ -5,6 +5,19 @@
 mov $1,$0
 add $1,1
 mul $1,2
+mov $2,1
+mov $3,1
+mov $4,2
 add $0,$1
-seq $0,335840 ; Expansion of x*(1+2*x)/((1-2*x)*(1-x+4*x^2)).
+lpb $0
+  sub $0,1
+  sub $4,$2
+  mul $4,4
+  add $4,3
+  mul $3,2
+  add $3,1
+  add $2,$4
+  sub $2,$3
+lpe
+mov $0,$2
 div $0,9

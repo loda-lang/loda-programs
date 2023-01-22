@@ -4,4 +4,19 @@
 
 mul $0,4
 add $0,2
-seq $0,330045 ; Expansion of e.g.f. exp(x) / (1 - x^4).
+mov $1,1
+mov $3,$0
+lpb $3
+  mov $0,$3
+  sub $0,2
+  bin $0,2
+  mul $0,2
+  mul $1,$3
+  sub $3,1
+  mul $1,$3
+  mul $1,$0
+  add $2,$1
+  sub $3,3
+lpe
+mov $0,$2
+add $0,1

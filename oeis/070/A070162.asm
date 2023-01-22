@@ -7,8 +7,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $5,1
   mov $3,$1
-  seq $3,219428 ; a(n) = n - 1 - phi(n).
+  sub $3,$5
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

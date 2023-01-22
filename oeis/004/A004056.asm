@@ -1,10 +1,22 @@
 ; A004056: The coding-theoretic function A(n,14,12).
 ; Submitted by Orange Kid
 ; 1,1,1,1,1,1,1,2,2,3,4,4,6,8,13
-; Formula: a(n) = (3*(A096750(n+2)/12+5)-4)/4-1
+; Formula: a(n) = (3*(c(n)/12)+11)/4-1, b(n) = b(n-1)+c(n-1), b(3) = 7, b(2) = 5, b(1) = 4, b(0) = 3, c(n) = -c(n-2)+b(n-3)+c(n-1), c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 1
 
-add $0,2
-seq $0,96750 ; Expansion of (1-x+x^2)/(1-2x+2x^2-x^3-x^4).
+mov $2,2
+mov $4,1
+mov $5,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $6,$2
+  add $2,$5
+  sub $4,$5
+  add $5,$3
+  mov $3,$4
+  mov $4,$6
+lpe
+mov $0,$5
 div $0,12
 add $0,5
 mov $1,3

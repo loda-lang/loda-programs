@@ -4,5 +4,19 @@
 
 mov $1,2
 pow $1,$0
-seq $0,293313 ; Greatest integer k such that k/2^n < (1+sqrt(5))/2 (the golden ratio).
+mov $2,1
+mov $3,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mul $2,2
+  add $2,$3
+  add $3,$2
+  mul $2,2
+lpe
+mov $5,2
+pow $5,$0
+div $3,$5
+div $2,$3
+mov $0,$2
 add $0,$1

@@ -7,7 +7,8 @@ pow $2,2
 lpb $2
   add $1,4
   mov $3,$1
-  seq $3,337319 ; a(n) = Sum_{i = 1..floor(log_2(n))+1} g(frac(n/2^i)), where g(t) = [0 if t = 0, -1 if 0 < t < 1/2, 1 if t >= 1/2], and where frac(x) denotes the fractional part.
+  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   bin $3,2
   cmp $3,0
   sub $0,$3

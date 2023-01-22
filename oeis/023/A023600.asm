@@ -8,7 +8,13 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,23596 ; Convolution of A023532 and Fibonacci numbers.
+  mov $4,$2
+  seq $2,23557 ; Convolution of A023531 and Fibonacci numbers.
+  add $4,3
+  seq $4,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  sub $4,$2
+  mov $2,$4
+  sub $2,1
   add $1,$2
   sub $3,2
 lpe

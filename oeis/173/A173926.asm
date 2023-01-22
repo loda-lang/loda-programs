@@ -10,7 +10,9 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,2
-  seq $0,54270 ; Largest prime below prime(n)^2 (A001248).
+  seq $0,40 ; The prime numbers.
+  sub $0,2
+  seq $0,53001 ; Largest prime < n^2.
   mov $2,$3
   mul $2,$0
   add $4,$2

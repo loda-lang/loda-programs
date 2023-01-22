@@ -5,8 +5,11 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,187243 ; Number of ways of making change for n cents using coins of 1, 5, and 10 cents.
+  sub $2,1
+  div $2,5
+  add $2,2
+  pow $2,2
+  div $2,4
   trn $0,11
   add $1,$2
 lpe

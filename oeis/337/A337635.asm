@@ -6,7 +6,9 @@ mov $2,$0
 add $2,8
 lpb $2
   mov $3,$1
-  seq $3,337288 ; Numbers k such that k is in A095096 and k+1 is in A020899.
+  mul $3,2
+  seq $3,95279 ; Partial sums of A095276.
+  sub $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

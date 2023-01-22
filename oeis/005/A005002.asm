@@ -9,7 +9,10 @@ lpb $2
   trn $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,60719 ; a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).
+  add $0,1
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $0,2
+  sub $0,1
   add $1,1
   mul $1,2
   add $1,$0

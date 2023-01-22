@@ -1,10 +1,22 @@
 ; A176493: A091137(n)/(n+1).
 ; Submitted by Jamie Morken(l1)
 ; 1,1,4,6,144,240,8640,15120,403200,725760,43545600,79833600,201180672000,373621248000,2092278988800,3923023104000,1883051089920000,3556874280960000,2688996956405760000,5109094217170944000,1605715325396582400000,3065456530302566400000
-; Formula: a(n) = A091137(n)/gcd(0,n+1)
 
 mov $2,$0
 add $2,1
 gcd $1,$2
-seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
+mov $3,1
+mov $5,$0
+lpb $5
+  sub $5,1
+  mov $6,$4
+  add $6,2
+  add $4,1
+  mov $7,$0
+  div $7,$4
+  pow $6,$7
+  dif $3,$6
+  mul $3,$6
+lpe
+mov $0,$3
 div $0,$1

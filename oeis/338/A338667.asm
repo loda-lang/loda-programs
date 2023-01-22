@@ -8,7 +8,8 @@ mul $2,2
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,25455 ; a(n) is the number of partitions of n into 2 positive cubes.
+  seq $3,280618 ; Expansion of (Sum_{k>=1} x^(k^3))^2.
+  dif $3,2
   mod $3,2
   sub $0,$3
   add $1,1

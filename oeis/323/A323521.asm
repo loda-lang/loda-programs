@@ -9,7 +9,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,323305 ; Number of divisors of the number of prime factors of n counted with multiplicity.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $5,$3
+  mod $5,2
+  add $5,2
+  div $3,$5
+  add $3,1
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -3,8 +3,13 @@
 
 lpb $0
   mov $2,$0
-  trn $2,2
-  seq $2,49611 ; a(n) = T(n,2), array T as in A049600.
+  add $2,1
+  mov $3,2
+  pow $3,$2
+  bin $2,2
+  sub $2,2
+  mul $2,$3
+  div $2,64
   sub $0,2
   add $1,$2
 lpe

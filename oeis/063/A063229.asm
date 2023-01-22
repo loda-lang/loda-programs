@@ -4,6 +4,13 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,63111 ; Dimension of the space of weight 2n cusp forms for Gamma_0( 43 ).
-add $0,1
+mov $2,$0
+mul $2,22
+div $2,3
+mov $3,$0
+cmp $3,0
+add $0,$3
+mod $0,3
+add $0,$2
 sub $0,$1
+add $0,3

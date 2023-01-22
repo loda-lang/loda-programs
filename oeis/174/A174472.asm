@@ -13,8 +13,11 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,100879 ; a(n) = n^sigma(n).
-  mul $1,$0
+  mov $5,$0
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $5,1
+  pow $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,186305 ; n^((p-1)/2) (mod p) for p = 29.
+  pow $3,14
+  mod $3,29
   gcd $3,2
   sub $0,$3
   add $0,1

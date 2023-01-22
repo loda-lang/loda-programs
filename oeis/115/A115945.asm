@@ -7,7 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,115944 ; Number of partitions of n into distinct factorials.
+  seq $3,276008 ; Substitute ones for all nonzero digits in factorial base representation of n: a(n) = A059590(A275727(n)).
+  mov $6,$1
+  sub $6,$3
+  mov $5,$6
+  cmp $5,0
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

@@ -4,6 +4,25 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,247100 ; The number of ways to write an n-bit binary string and then define each run of ones as an element in an equivalence relation.
+mov $3,$0
+mov $5,$0
+add $5,1
+lpb $5
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
+  mov $2,$0
+  add $2,$5
+  bin $2,$0
+  add $0,1
+  div $0,2
+  mov $6,$0
+  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $6,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
+  div $6,$0
+  mul $2,$6
+  add $4,$2
+lpe
+mov $0,$4
 mul $0,2
 sub $0,$1

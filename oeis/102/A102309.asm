@@ -4,5 +4,11 @@
 
 trn $0,1
 cmp $1,$0
-seq $0,326419 ; a(n) is the number of distinct Horadam sequences of period n.
+mov $2,$0
+seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+trn $0,3
+add $0,2
+mul $0,$2
+div $0,2
 sub $0,$1

@@ -7,7 +7,8 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,189816 ; a(3*k-2)=0, a(3*k-1)=1-a(k), a(3*k)=1-a(k); k>0, a(1)=0.
+  seq $3,215879 ; Written in base 3, n ends in a(n) consecutive nonzero digits.
+  mod $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

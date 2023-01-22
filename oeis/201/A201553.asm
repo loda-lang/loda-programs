@@ -4,8 +4,16 @@
 mov $1,1
 mul $0,2
 lpb $0
+  mov $3,11
+  mul $3,$0
   mov $2,$0
-  seq $2,70302 ; Number of 3 X 3 X 3 magic cubes with sum 3n.
+  add $2,1
+  mul $2,$3
+  add $2,7
+  pow $2,2
+  div $2,264
+  mul $2,6
+  add $2,1
   sub $0,1
   add $1,$2
 lpe

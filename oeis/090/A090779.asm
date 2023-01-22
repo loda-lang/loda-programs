@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,358714 ; a(n) = phi(n)^3.
+  mov $5,$3
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  pow $5,3
+  mov $3,$5
   mod $3,$1
   min $3,1
   sub $0,1

@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,40 ; The prime numbers.
   mov $3,$1
-  seq $3,245071 ; a(n) = 12n - prime(n).
+  mul $3,12
+  add $3,12
+  sub $3,$6
   mov $5,$3
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

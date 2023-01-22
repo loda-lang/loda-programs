@@ -83,6 +83,7 @@ A033684: 1 iff n is a square not divisible by 3.
 A033687: Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
+A034683: Unitary abundant numbers: numbers k such that usigma(k) > 2*k.
 A035143: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -47.
 A035159: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -31.
 A035162: Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
@@ -577,6 +578,7 @@ A353629: a(n) = 1 if n is a product of an even number of distinct primes, otherw
 A353631: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for odd numbers.
 A353800: a(n) = 1 if n is a power of prime with an even exponent, otherwise 0.
 A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
+A353816: a(n) = 1 if n is a number of the form x^2 + xy + y^2, otherwise 0.
 A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
 A354029: a(n) = 1 if either n or n/2 is a prime power of the form 4m+3, otherwise 0.
 A354031: a(n) = 1 if n > 1 and n is a power of a Pythagorean prime (prime of the form 4m+1), otherwise 0.
@@ -585,3 +587,4 @@ A354819: a(n) = 1 if n is a nonprime squarefree number, otherwise 0.
 A355037: a(n) is the product of the digits of n in primorial base.
 A356159: Sum of the prime indices of the smallest number that has the same prime signature as n.
 A358847: a(n) = 1 if A053669(6*n) [the smallest prime not dividing 6*n] is of the form 6m-1, otherwise a(n) = 0.
+A359550: Multiplicative with a(p^e) = 1 if p > e, otherwise 0.

@@ -3,10 +3,12 @@
 
 mov $1,1
 lpb $0
-  sub $0,1
   mov $1,$0
-  max $1,0
-  seq $1,120478 ; Binomial(n+6,5)-binomial(n,5).
+  pow $1,2
+  add $1,8
+  bin $1,2
+  div $1,2
+  sub $1,12
   mov $0,0
 lpe
 mov $0,$1

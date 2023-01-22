@@ -5,7 +5,9 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,5722 ; a(n) = (prime(n) - 1)^2.
+  seq $2,40 ; The prime numbers.
+  sub $2,1
+  pow $2,2
   mul $3,$2
   add $3,$1
   sub $0,1

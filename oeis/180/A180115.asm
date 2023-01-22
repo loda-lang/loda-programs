@@ -10,7 +10,14 @@ add $2,1
 lpb $2
   sub $2,1
   mov $0,$1
-  seq $0,283351 ; Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 619", based on the 5-celled von Neumann neighborhood.
-  add $3,$0
+  sub $0,1
+  div $0,2
+  mov $4,10
+  pow $4,$0
+  pow $4,2
+  div $4,99
+  mul $4,110
+  add $4,1
+  add $3,$4
 lpe
 mov $0,$3

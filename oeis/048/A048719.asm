@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,277825 ; a(n) = A048725(A065621(n)) = A048720(A065621(n),5).
+  seq $3,65621 ; Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
+  seq $3,48725 ; a(n) = Xmult(n,5) or rule90(n,1).
   max $5,$3
   div $3,$5
   sub $0,$3

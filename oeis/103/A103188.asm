@@ -7,7 +7,27 @@ add $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,44403 ; Numbers n such that string 7,1 occurs in the base 10 representation of n but not of n-1.
+  add $3,1
+  mul $3,10
+  mov $5,$3
+  add $3,7
+  div $3,11
+  mul $3,7
+  add $3,8
+  add $5,8
+  div $5,11
+  mul $5,5
+  add $3,$5
+  mul $3,3
+  div $3,2
+  mov $5,$3
+  add $5,$3
+  add $3,$5
+  add $3,$5
+  mul $3,10
+  sub $3,1498
+  div $3,9
+  add $3,71
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

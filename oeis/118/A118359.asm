@@ -6,13 +6,19 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,9
   mov $3,$1
-  seq $3,72680 ; Difference between (least prime >= n) and (largest prime <= n).
+  add $3,10
+  mov $6,$3
+  seq $6,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+  sub $6,$3
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$3
+  mov $3,$6
+  sub $3,1
   cmp $3,6
   sub $0,$3
+  add $1,6
   add $1,$5
-  sub $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0

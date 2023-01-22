@@ -7,7 +7,21 @@ pow $2,2
 add $2,6
 lpb $2
   mov $3,$1
-  seq $3,40040 ; Average of twin prime pairs (A014574), divided by 2. Equivalently, 2*a(n)-1 and 2*a(n)+1 are primes.
+  mul $3,2
+  trn $3,1
+  mov $6,$3
+  sub $3,1
+  gcd $3,2
+  div $6,2
+  seq $6,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $6,1
+  mul $6,3
+  add $6,$3
+  mov $3,$6
+  mul $3,2
+  add $3,3
+  mul $3,4
+  div $3,8
   sub $3,1
   mov $5,$3
   seq $3,349343 ; Dirichlet inverse of A193356, which is defined as n if n is odd, 0 if n is even.

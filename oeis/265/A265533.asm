@@ -4,10 +4,12 @@
 
 mov $2,$0
 lpb $2
-  mov $3,$2
-  seq $3,55951 ; n - reversal of base 5 digits of n (written in base 10).
-  cmp $3,0
+  mov $4,$2
+  seq $4,30104 ; Base 5 reversal of n (written in base 10).
   mov $1,$0
+  mov $3,$2
+  sub $3,$4
+  cmp $3,0
   sub $0,$3
   cmp $1,$0
   mul $2,$1

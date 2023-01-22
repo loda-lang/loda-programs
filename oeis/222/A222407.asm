@@ -1,9 +1,9 @@
 ; A222407: Digital roots of tribonacci numbers A000073.
 ; Submitted by Jon Maiga
 ; 0,0,1,1,2,4,7,4,6,8,9,5,4,9,9,4,4,8,7,1,7,6,5,9,2,7,9,9,7,7,5,1,4,1,6,2,9,8,1,9,9,1,1,2,4,7,4,6,8,9,5,4,9,9,4,4,8,7,1,7,6,5,9,2,7,9,9,7,7,5,1,4,1,6,2,9,8,1,9,9,1,1,2,4,7,4,6,8,9,5,4,9,9,4,4,8,7,1,7,6
-; Formula: a(n) = (A230724(n)-1)%9+1
+; Formula: a(n) = (A000073(n)-1)%9+1
 
-seq $0,230724 ; Digital sum of tribonacci numbers with a(0)=a(1)=0, a(2)=1.
+seq $0,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
 sub $0,1
 mod $0,9
 add $0,1

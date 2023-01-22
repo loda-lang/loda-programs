@@ -4,5 +4,19 @@
 
 add $0,1
 mov $1,$0
-seq $1,25755 ; 10th-order Patalan numbers (generalization of Catalan numbers).
-mul $0,$1
+mul $1,2
+mov $2,1
+mov $3,1
+mov $5,-1
+mov $4,$1
+lpb $4
+  sub $4,2
+  mul $2,$3
+  mul $2,$5
+  mov $5,$3
+  sub $6,1
+  div $2,$6
+  sub $3,10
+  sub $5,$3
+lpe
+mul $0,$2

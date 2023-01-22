@@ -5,7 +5,14 @@
 mov $2,4
 lpb $2
   sub $2,1
-  seq $1,325974 ; Arithmetic mean of {sum of non-unitary divisors} and {sum of nonsquarefree divisors}: a(n) = (1/2)*(A048146(n) + A162296(n)).
+  mov $4,$1
+  seq $4,48250 ; Sum of the squarefree divisors of n.
+  mov $3,$1
+  seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  add $3,$4
+  div $3,2
+  seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $1,$3
   add $2,$1
   mov $1,$0
   add $0,1

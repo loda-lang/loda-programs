@@ -4,10 +4,12 @@
 
 mov $1,$0
 add $1,1
-seq $1,33486 ; a(n) = n*(n + 1)*(n + 2)*(n + 3)/2.
+sub $4,$1
+bin $4,4
+mul $4,12
 mov $2,$0
 lpb $2
-  mov $0,$1
+  mov $0,$4
   gcd $0,$2
   mul $0,2
   sub $0,1

@@ -12,7 +12,16 @@ lpb $4
   mov $1,$0
   add $1,$2
   sub $4,1
-  seq $0,151410 ; Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0), ending on the vertical axis and consisting of 2 n steps taken from {(-1, 0), (1, -1), (1, 0), (1, 1)}.
+  mov $6,$0
+  add $6,1
+  mov $5,$0
+  mul $5,2
+  bin $5,$0
+  div $5,$6
+  add $0,1
+  seq $0,25565 ; a(n) = T(n,n-1), where T is array defined in A025564.
+  div $0,2
+  mul $0,$5
   bin $1,$4
   mul $1,$0
   add $3,$1

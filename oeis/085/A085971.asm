@@ -8,7 +8,10 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,268340 ; Characteristic function of the prime powers p^k, k >= 2.
+  seq $3,73184 ; Number of cubefree divisors of n.
+  mov $4,$3
+  cmp $4,3
+  mov $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

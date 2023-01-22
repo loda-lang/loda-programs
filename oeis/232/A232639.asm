@@ -5,7 +5,16 @@
 sub $0,1
 lpb $0
   trn $0,1
-  seq $0,232641 ; Inverse permutation of the sequence of positive integers at A232640.
+  mov $2,$0
+  add $2,1
+  seq $2,232560 ; Inverse permutation of the sequence of positive integers at A232559.
+  div $0,2
+  seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $0,1
+  mul $2,$0
+  sub $3,$2
+  mov $0,$3
+  sub $0,1
   mov $1,$0
   mov $0,0
 lpe

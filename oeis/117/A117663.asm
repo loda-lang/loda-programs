@@ -9,7 +9,10 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,60584 ; Compare ultimate and penultimate digits of n base 3, i.e., 0 if n mod 3 = floor(n/3) mod 3, 1 otherwise; also 0 if (n mod 9) is a multiple of 4, 1 otherwise.
+  mul $1,7
+  div $1,-3
+  pow $1,2
+  mod $1,3
   add $4,5
   sub $0,$1
   add $2,$4

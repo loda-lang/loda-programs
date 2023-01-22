@@ -6,6 +6,27 @@ mov $1,-1
 pow $1,$0
 add $1,3
 dif $0,2
-seq $0,97057 ; Number of integer solutions to a^2 + b^2 + 2*c^2 + 2*d^2 = n.
+mov $2,-1
+pow $2,$0
+add $2,3
+dif $0,2
+mov $3,$0
+mov $5,2
+lpb $5
+  sub $5,1
+  mov $0,$3
+  add $0,$5
+  trn $0,1
+  seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
+  mov $4,$5
+  mul $4,$0
+  add $6,$4
+lpe
+min $3,1
+mul $3,$0
+mov $0,$6
+sub $0,$3
+mul $0,$2
+div $0,4
 mul $0,$1
 div $0,4

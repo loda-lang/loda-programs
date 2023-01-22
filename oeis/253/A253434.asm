@@ -10,7 +10,11 @@ mov $1,$0
 div $1,$3
 add $1,2
 mov $2,$1
-seq $3,89143 ; a(n) = 9*2^n - 6.
+mov $5,2
+pow $5,$3
+mul $5,9
+sub $5,6
+mov $3,$5
 lpb $1
   mov $1,4
   add $1,$2

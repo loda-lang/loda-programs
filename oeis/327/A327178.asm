@@ -7,8 +7,15 @@ add $0,1
 add $2,10
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   mov $3,$1
-  seq $3,327177 ; a(n) = [(2n+1)r] - [(n+1)r] - [nr], where [ ] = floor and r = sqrt(2).
+  add $3,1
+  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  add $3,$5
+  add $3,1
+  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

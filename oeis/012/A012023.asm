@@ -1,9 +1,23 @@
 ; A012023: Expansion of e.g.f. cos(sin(arctan(x))) (even powers).
 ; Submitted by Christian Krause
 ; 1,-1,13,-421,25369,-2449801,346065061,-67243537453,17192488230961,-5593309059948049,2255588021494237501,-1103994926592923677621,644587811150505183179593,-442516027690815793746696601
-; Formula: a(n) = A081442(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,81442 ; Expansion of e.g.f.: cosh(x/sqrt(1-x^2)) (even powers).
+mul $0,2
+mov $2,1
+mov $4,$0
+lpb $4
+  sub $0,2
+  mul $2,$4
+  sub $4,1
+  add $5,2
+  mul $2,$4
+  div $2,$5
+  mul $2,$0
+  add $3,$2
+  sub $4,1
+lpe
+mov $0,$3
+add $0,1
 mul $0,$1

@@ -1,7 +1,11 @@
 ; A040961: Continued fraction for sqrt(993).
 ; Submitted by Jon Maiga
 ; 31,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1
-; Formula: a(n) = A007093(A040484(n))
+; Formula: a(n) = A007093((7*((90*A010225(n))/72))/5)
 
-seq $0,40484 ; Continued fraction for sqrt(507).
+seq $0,10225 ; Continued fraction for sqrt(183).
+mul $0,90
+div $0,72
+mul $0,7
+div $0,5
 seq $0,7093 ; Numbers in base 7.
