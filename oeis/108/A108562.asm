@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  mul $6,2
   mov $3,$1
-  seq $3,108568 ; a(n) = prime(n) + prime(n+1) - 2n - 1.
+  seq $3,1043 ; Numbers that are the sum of 2 successive primes.
+  sub $3,3
+  sub $3,$6
   mov $5,$3
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

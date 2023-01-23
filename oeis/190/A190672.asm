@@ -6,8 +6,16 @@ mov $6,$0
 mov $5,2
 lpb $5
   sub $5,1
+  mov $7,$6
+  mul $7,2
+  add $7,1
+  mov $8,$7
+  seq $8,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
+  mov $7,$8
+  sub $7,1
   mov $0,$6
-  seq $0,180123 ; Second of three "least, sum, least" self-generating sequences.
+  add $0,$7
+  add $0,1
   sub $1,1
   sub $4,$3
   sub $4,$1

@@ -4,8 +4,13 @@
 
 add $0,1
 lpb $0
+  mov $3,$0
+  seq $3,173714 ; Floor(Lucas(n+1)/2), Lucas(n) = A000032(n).
   mov $2,$0
-  seq $2,7040 ; Number of (marked) cyclic n-bit binary strings containing no runs of length > 2.
+  mod $2,3
+  div $2,2
+  add $2,$3
+  mul $2,2
   sub $0,$1
   trn $0,1
   add $1,$2

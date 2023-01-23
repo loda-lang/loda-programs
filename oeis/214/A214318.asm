@@ -20,9 +20,8 @@ lpb $0
   mul $4,$5
   sub $5,$6
 lpe
-mov $0,$6
 mov $2,2
 pow $2,$1
-sub $2,$0
+sub $2,$6
 mov $0,$2
 sub $0,2

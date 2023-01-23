@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,31924 ; Primes followed by a gap of 6, i.e., next prime is p + 6.
+  seq $0,31925 ; Upper prime of a difference of 6 between consecutive primes.
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -15,7 +15,8 @@ lpb $4
   bin $1,$0
   pow $0,$1
   sub $0,1
-  seq $0,253141 ; If n is a prime power, then a(n) = lambda(tau(n)) = A014963(A000005(n)); otherwise, a(n) = 1.
+  seq $0,100995 ; If n is a prime power p^m, m >= 1, then m, otherwise 0.
+  seq $0,99635 ; a(n) = gcd(sum of all prime factors of n, n).
   mul $0,$3
   mul $1,$0
   max $3,$1

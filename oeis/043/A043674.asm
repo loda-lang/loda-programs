@@ -1,6 +1,17 @@
 ; A043674: Numbers whose base-15 representation has exactly 7 runs.
 ; 11441476,11441477,11441478,11441479,11441480,11441481,11441482,11441483,11441484,11441485,11441486,11441487,11441488,11441489,11441505,11441506,11441508,11441509,11441510,11441511,11441512
-; Formula: a(n) = A043672(n)+11390625
 
-seq $0,43672 ; Numbers whose base-15 representation has exactly 5 runs.
-add $0,11390625
+mov $2,$0
+lpb $0
+  sub $0,7
+  add $3,7
+  mov $1,1
+  add $1,$3
+  trn $0,$1
+  add $0,13
+  add $1,7
+  mov $3,1
+lpe
+add $1,$2
+mov $0,$1
+add $0,11441476

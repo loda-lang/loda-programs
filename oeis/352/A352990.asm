@@ -7,7 +7,13 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,352996 ; a(n) = n*(n+1)/2 mod (sum (with multiplicity) of prime factors of n).
+  add $3,1
+  mov $5,$3
+  seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
+  add $5,2
+  bin $5,2
+  mod $5,$3
+  mov $3,$5
   sub $3,1
   cmp $3,0
   sub $0,$3

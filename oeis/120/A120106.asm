@@ -10,7 +10,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,120114 ; a(n) = lcm(1, ..., 2n+4)/lcm(1, ..., 2n+2).
+  mul $0,2
+  seq $0,328202 ; a(n) is the greatest common divisor of all the numbers in row n of Pascal's triangle excluding 1 and n.
   mul $1,$0
   add $1,1
 lpe

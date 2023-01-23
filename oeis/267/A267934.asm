@@ -1,7 +1,23 @@
 ; A267934: Binary representation of the n-th iteration of the "Rule 249" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Christian Krause
 ; 1,1,11011,1111111,111111111,11111111111,1111111111111,111111111111111,11111111111111111,1111111111111111111,111111111111111111111,11111111111111111111111,1111111111111111111111111,111111111111111111111111111,11111111111111111111111111111,1111111111111111111111111111111,111111111111111111111111111111111,11111111111111111111111111111111111,1111111111111111111111111111111111111,111111111111111111111111111111111111111,11111111111111111111111111111111111111111
-; Formula: a(n) = A007088(A267935(n))
 
-seq $0,267935 ; Decimal representation of the n-th iteration of the "Rule 249" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,4
+pow $1,$0
+mov $2,34
+div $2,$1
+mov $4,1
+sub $1,1
+trn $1,$2
+mov $0,$1
+mul $0,2
+add $0,1
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

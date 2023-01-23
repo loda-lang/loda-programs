@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,200648 ; Length of Stolarsky representation of n.
+  trn $3,1
+  seq $3,112310 ; Number of terms in lazy Fibonacci representation of n.
+  add $3,1
   gcd $3,2
   sub $0,$3
   add $0,1

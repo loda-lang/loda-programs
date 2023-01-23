@@ -7,7 +7,19 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,277095 ; Numbers k such that sin(k) < 0 and sin(k+2) > 0.
+  add $3,4
+  mov $5,$3
+  div $5,2
+  mul $5,4
+  add $5,3
+  mov $6,97
+  mul $6,$5
+  div $6,113
+  mul $5,4
+  sub $5,1
+  sub $5,$6
+  div $5,2
+  add $3,$5
   gcd $3,2
   sub $0,$3
   add $0,1

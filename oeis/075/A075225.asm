@@ -1,6 +1,7 @@
 ; A075225: Expansion of 2-AGM(1,1-8x) (where AGM denotes the arithmetic-geometric mean).
 ; Submitted by Science United
 ; 1,4,4,16,84,496,3120,20416,137300,942384,6572336,46432960,331580272,2389352256,17351364160,126851634432,932823545428,6895102385072,51199649648048,381738099675840,2856639909232112,21447771308542784
+; Formula: a(n) = gcd(0,A060691(n))
 
 seq $0,60691 ; Expansion of AGM(1,1-8x) (where AGM denotes the arithmetic-geometric mean).
 gcd $1,$0

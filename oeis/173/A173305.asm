@@ -1,4 +1,4 @@
-; A173305: Triangle by columns, A000009 in every column shifted down twice for k>0.
+; A173305: Triangle by columns, A000009 in every column shifted down twice for k > 0.
 ; Submitted by http://kodeks.karelia.ru/
 ; 1,1,1,1,2,1,2,1,1,3,2,1,4,2,1,1,5,3,2,1,6,4,2,1,1,8,5,3,2,1,10,6,4,2,1,1,12,8,5,3,2,1,15,10,6,4,2,1,1,18,12,8,5,3,2,1,22,15,10,6,4,2,1,1,27,18,12,8,5,3,2,1,32,22,15,10,6,4,2,1,1
 ; Formula: a(n) = A287998(A082375(n))

@@ -6,8 +6,14 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  seq $5,40 ; The prime numbers.
   mov $3,$1
-  seq $3,73272 ; A000040(n+1) - A073271(n).
+  seq $3,90076 ; a(n) = prime(n)*prime(n+2).
+  div $3,$5
+  sub $5,$3
+  mov $3,$5
   sub $3,1
   bin $3,$2
   cmp $3,0

@@ -7,5 +7,11 @@ mul $1,2
 dif $1,3
 add $1,1
 div $1,3
-seq $1,35363 ; Number of partitions of n into even parts.
+mov $2,-1
+pow $2,$1
+add $2,1
+dif $1,2
+seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $1,$2
+div $1,2
 mov $0,$1

@@ -1,9 +1,25 @@
 ; A121455: Expansion of q*(phi(-q)psi(q^4))^2 in powers of q where phi(), psi() are Ramanujan theta functions.
 ; Submitted by Jamie Morken(l1)
 ; 1,-4,4,0,6,-16,8,0,13,-24,12,0,14,-32,24,0,18,-52,20,0,32,-48,24,0,31,-56,40,0,30,-96,32,0,48,-72,48,0,38,-80,56,0,42,-128,44,0,78,-96,48,0,57,-124,72,0,54,-160,72,0,80,-120,60,0,62,-128,104,0,84,-192,68,0,96,-192,72,0,74,-152,124,0,96,-224,80,0,121,-168,84,0,108,-176,120,0,90,-312,112,0,128,-192,120,0,98,-228,156,0
-; Formula: a(n) = A133657(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,133657 ; Expansion of q * (phi(q) * psi(q^4))^2 in powers of q where phi(), psi() are Ramanujan theta functions.
+add $0,1
+mov $3,$0
+add $3,$0
+lpb $0
+  mul $0,2
+  mov $4,$3
+  dif $4,$0
+  cmp $4,$3
+  cmp $4,0
+  mul $4,$0
+  sub $0,3
+  div $0,2
+  add $2,$4
+  sub $3,2
+lpe
+mul $4,$2
+mov $0,$4
+div $0,4
 mul $0,$1

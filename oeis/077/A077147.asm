@@ -1,9 +1,24 @@
 ; A077147: Floor[{concatenation 123 ... up to n}/n].
 ; Submitted by Jamie Morken(l1)
 ; 1,6,41,308,2469,20576,176366,1543209,13717421,1234567891,112233444637,10288065758426,949667608470093,88183420786508665,8230452606740808761,771604931881950821344,72621640647713018479506
-; Formula: a(n) = A007908(n)/(n+1)
 
 mov $1,$0
 add $1,1
-seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
+mov $2,1
+add $0,2
+lpb $0
+  sub $0,1
+  div $4,$2
+  mul $4,$2
+  mul $4,9
+  add $2,$4
+  mov $4,$5
+  mul $4,$2
+  mov $5,$3
+  add $5,$4
+  add $6,1
+  mov $3,$6
+  mov $4,$6
+lpe
+mov $0,$5
 div $0,$1

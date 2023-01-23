@@ -8,8 +8,12 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  seq $0,51023 ; Middle column of rule-30 1-D cellular automaton, from a lone 1 cell.
   add $5,$2
+  mov $6,2
+  pow $6,$0
+  seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
+  div $0,$6
+  mod $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

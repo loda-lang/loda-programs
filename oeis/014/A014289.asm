@@ -10,7 +10,12 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,15493 ; Inverse of 1484th cyclotomic polynomial.
+  mov $5,$2
+  seq $5,50519 ; Increments of arithmetic progression of at least 6 terms having the same value of phi in A050518.
+  mov $2,$5
+  div $2,30
+  sub $2,1
+  seq $2,15997 ; Inverse of 1988th cyclotomic polynomial.
   mul $4,6
   add $4,52
   add $1,$2

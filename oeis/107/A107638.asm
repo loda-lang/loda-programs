@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  seq $3,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
+  add $3,1
   mov $5,$3
   sub $3,1
   seq $3,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.

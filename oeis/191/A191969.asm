@@ -8,8 +8,11 @@ add $2,3
 pow $2,2
 lpb $2
   add $1,$4
+  mov $7,$1
+  add $7,1
   mov $3,$1
-  seq $3,108775 ; a(n) = floor(sigma(n)/n).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $3,$7
   cmp $3,1
   sub $5,2
   sub $0,$3

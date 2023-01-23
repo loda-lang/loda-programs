@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,114338 ; Number of divisors of n!! (double factorial = A006882(n)).
+  seq $3,6882 ; Double factorials n!!: a(n) = n*a(n-2) for n > 1, a(0) = a(1) = 1.
+  seq $3,319410 ; Twice A032741.
+  div $3,2
+  add $3,1
   mod $3,$1
   min $3,1
   sub $0,1

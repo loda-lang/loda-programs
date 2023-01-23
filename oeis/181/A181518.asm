@@ -7,7 +7,8 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,278257 ; Least number with the prime signature of A005187(n).
+  seq $3,283208 ; Minimal exponent integer sequence associated with Vietoris sequence.
+  seq $3,46523 ; Smallest number with same prime signature as n.
   cmp $3,2
   sub $0,$3
   add $1,1

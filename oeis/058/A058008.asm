@@ -7,8 +7,11 @@ add $0,1
 add $2,2
 pow $2,5
 lpb $2
+  add $4,1
   mov $3,$1
-  seq $3,99905 ; a(n) = binomial(2n-1, n-1) mod n.
+  add $3,$4
+  bin $3,$4
+  mod $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

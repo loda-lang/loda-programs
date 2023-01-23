@@ -8,6 +8,12 @@ lpb $1
   add $1,1
   div $1,2
   mul $1,2
-  seq $1,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
+  mov $2,$1
+  div $1,4
+  mul $1,4
+  add $1,1
+  sub $1,$2
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$2
 lpe
 mov $0,$1

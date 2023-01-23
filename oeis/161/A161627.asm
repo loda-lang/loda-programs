@@ -4,8 +4,25 @@
 
 mov $2,$0
 mod $2,4
+mov $4,10
 div $0,4
-seq $0,72939 ; Define a sequence c depending on n as follows: c(1)=1 and c(2)=n; c(k+2) = (c(k+1) + c(k))/2 if c(k+1) and c(k) have the same parity; otherwise c(k+2) = abs(c(k+1) - 2*c(k)); sequence gives values of n such that lim_{k->oo} c(k) = infinity.
+add $0,1
+lpb $0
+  sub $0,1
+  add $6,$5
+  add $6,2
+  sub $3,$4
+  div $3,2
+  mov $5,1
+  add $5,$3
+  gcd $5,4
+  div $3,$5
+  mul $4,4
+lpe
+mov $0,$6
+div $0,3
+mul $0,2
+add $0,3
 mov $1,-1
 add $1,$0
 mul $1,4

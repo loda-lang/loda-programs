@@ -6,7 +6,10 @@ mov $2,$0
 add $2,156
 lpb $2
   mov $3,$1
-  seq $3,294448 ; Discrepancy of the Kolakoski sequence A000002.
+  seq $3,74286 ; Partial sum of the Kolakoski sequence (A000002) minus n.
+  mul $3,2
+  sub $3,1
+  sub $3,$1
   cmp $3,1
   sub $0,$3
   add $1,1

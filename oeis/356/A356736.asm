@@ -7,7 +7,12 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,356733 ; Number of neighborless parts in the integer partition with Heinz number n.
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
+  seq $3,277937 ; Number of runs of 1's of length 1 in the binary expansion of n.
   cmp $3,0
   sub $0,$3
   add $1,1

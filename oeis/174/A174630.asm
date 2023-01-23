@@ -1,6 +1,7 @@
 ; A174630: A weight function for the case N = 24 and k = 6 in Butler-Graham shuffling.
 ; Submitted by fix
 ; 0,1,4,5,6,7,1,2,5,6,7,8,1,2,3,4,7,8,2,3,4,5,8,9
+; Formula: a(n) = ((9*((2*(n/2)-(n/14)+1)/3)+2)/4+n)%10
 
 mov $1,$0
 div $1,14

@@ -7,6 +7,14 @@ mul $1,2
 add $1,3
 add $1,$0
 div $1,7
-seq $0,226720 ; Complement of A122437.
-sub $0,1
+mov $3,$0
+add $3,1
+mov $2,2
+pow $2,$3
+lpb $2
+  div $2,3
+  add $3,1
+lpe
+mov $0,$3
 add $0,$1
+sub $0,1

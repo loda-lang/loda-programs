@@ -9,7 +9,10 @@ lpb $3
   div $3,2
   mov $0,$2
   add $0,$3
-  seq $0,73177 ; (n-th digit of Pi) times (n-th digit of e).
+  mov $4,$0
+  seq $4,796 ; Decimal expansion of Pi (or digits of Pi).
+  seq $0,1113 ; Decimal expansion of e.
+  mul $0,$4
   add $1,$0
   mul $2,$3
 lpe

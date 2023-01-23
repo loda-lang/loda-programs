@@ -4,5 +4,13 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,257179 ; Expansion of (1 + x^5) / ((1 - x) * (1 + x^4)) in powers of x.
+mov $2,$0
+lpb $2
+  gcd $2,2
+  div $0,2
+  gcd $2,$0
+  add $3,1
+lpe
+bin $2,$3
+mov $0,$2
 mul $0,$1

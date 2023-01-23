@@ -8,8 +8,11 @@ add $2,6
 pow $2,3
 lpb $2
   add $3,$1
-  seq $3,33880 ; Abundance of n, or (sum of divisors of n) - 2n.
+  mov $5,$3
   add $1,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$5
+  sub $3,$5
   div $3,$1
   sub $0,$3
   mov $4,$0

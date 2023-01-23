@@ -5,10 +5,15 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  seq $1,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
-  div $2,$1
+  seq $1,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
+  sub $3,$0
+  add $3,$1
+  add $1,$3
+  mov $3,3
+  sub $3,$1
+  div $2,$3
   bin $2,2
   mov $0,$2
-  add $2,$1
+  add $2,$3
 lpe
 mov $0,$2

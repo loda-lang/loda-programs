@@ -7,8 +7,12 @@ mov $2,$0
 lpb $2
   pow $2,0
   mov $0,$1
-  seq $0,65423 ; Number of ordered length 2 compositions of n with at least one even summand.
-  seq $0,101296 ; n has the a(n)-th distinct prime signature.
+  add $0,1
+  dif $0,2
+  sub $0,1
+  seq $0,46523 ; Smallest number with same prime signature as n.
+  sub $0,1
+  seq $0,85089 ; Number of distinct prime signatures arising up to n.
   mov $1,0
 lpe
 add $0,1

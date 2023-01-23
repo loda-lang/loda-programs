@@ -7,7 +7,7 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$4
-  seq $0,180018 ; Difference of sums of digits of n in decimal and in binary representation.
+  seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mov $2,$3
   mul $2,$0
   mul $4,2

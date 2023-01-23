@@ -1,6 +1,7 @@
 ; A332426: Number of unordered pairs of non-selfintersecting paths with nodes that cover all vertices of a convex n-gon.
 ; Submitted by Christian Krause
 ; 0,3,30,210,1260,6944,36288,182880,897600,4316928,20427264,95373824,440294400,2013020160,9126248448,41069371392,183607050240,816037560320,3607758766080,15874168848384,69544044134400,303465064562688
+; Formula: a(n) = (binomial(n+3,2)*binomial(2^n,2))/2
 
 mov $1,2
 pow $1,$0

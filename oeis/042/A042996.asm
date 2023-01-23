@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  dif $5,2
   mov $3,$1
-  seq $3,42970 ; a(n) = binomial(n, floor(n/2)) mod n.
+  bin $3,$5
+  mod $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

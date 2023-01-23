@@ -6,6 +6,20 @@ mov $1,$0
 div $1,2
 mov $2,2
 pow $2,$1
-seq $0,96010 ; Number of different cycles computed with the generalized 3x+1 problem using C=2, B=Cn+m, A=C^m.
+add $0,1
+mov $4,$0
+lpb $0
+  mul $5,$0
+  mov $6,$4
+  gcd $6,$5
+  sub $0,1
+  mov $5,2
+  pow $5,$6
+  add $3,$5
+lpe
+mul $4,$6
+div $3,$4
+mov $0,$3
+div $0,2
 sub $0,$2
 div $0,2

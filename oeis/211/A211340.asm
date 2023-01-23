@@ -5,7 +5,9 @@
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,36703 ; a(n)=number of Gaussian integers z=a+bi satisfying n-1<|z|<=n, a>=0, 0<=b<=a.
+  seq $2,36693 ; Number of Gaussian integers z = a + bi satisfying n-1 < |z| <= n.
+  div $2,8
+  add $2,1
   sub $0,1
   sub $1,1
   add $1,$2
