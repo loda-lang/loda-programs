@@ -7,7 +7,10 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,328386 ; a(n) = A276086(n) mod n.
+  add $3,1
+  mov $4,$3
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  mod $3,$4
   cmp $3,0
   sub $0,$3
   add $1,2

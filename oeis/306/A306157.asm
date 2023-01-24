@@ -8,7 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   add $2,1
-  seq $2,27376 ; Number of ternary irreducible monic polynomials of degree n; dimensions of free Lie algebras.
+  mov $4,$2
+  seq $2,54718 ; Number of ternary sequences with primitive period n.
+  dif $2,$4
   mov $3,1
   add $3,$0
   dif $3,2

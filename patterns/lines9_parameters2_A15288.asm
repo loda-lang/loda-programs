@@ -5,5 +5,5 @@ lpb $0
   add $1,$2
   mul $1,-3 ; source=parameter 1
 lpe
-add $1,1 ; source=parameter 2
+add $1,1
 mov $0,$1

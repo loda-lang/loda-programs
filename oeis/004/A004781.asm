@@ -1,15 +1,14 @@
 ; A004781: Binary expansion contains 3 adjacent 1's.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 7,14,15,23,28,29,30,31,39,46,47,55,56,57,58,59,60,61,62,63,71,78,79,87,92,93,94,95,103,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,135,142,143,151,156,157,158,159,167,174,175,183,184,185,186,187,188,189,190,191,199,206,207,215,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248
 
 mov $1,2
 mov $2,$0
-add $2,7
+add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,38374 ; Length of longest contiguous block of 1's in binary expansion of n.
-  trn $3,2
+  seq $3,14082 ; Number of occurrences of '111' in binary expansion of n.
   min $3,1
   sub $0,$3
   add $1,1
@@ -20,4 +19,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1

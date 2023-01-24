@@ -7,13 +7,19 @@ mov $5,2
 lpb $5
   sub $5,1
   add $0,$5
-  sub $0,1
   mov $4,$0
-  max $4,0
-  seq $4,125130 ; Successive sums of consecutive primes that form a triangular grid.
+  add $4,1
+  bin $4,2
+  seq $4,40 ; The prime numbers.
+  sub $4,2
+  mov $6,$4
+  seq $6,34387 ; Sum of primes <= n.
+  add $7,$6
+  sub $0,1
   mul $0,$5
   mov $2,$5
-  mul $2,$4
+  mul $2,$7
+  mov $4,$7
   add $1,$2
 lpe
 min $3,1

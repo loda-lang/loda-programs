@@ -1,9 +1,12 @@
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,10 ; source=parameter 0
+  mul $3,$2
+  add $3,$1
   sub $0,1
-  add $1,$2
+  mul $1,$2
 lpe
-mul $1,2 ; source=parameter 1
-add $1,1 ; source=parameter 2
+gcd $3,$1
+div $1,$3
 mov $0,$1

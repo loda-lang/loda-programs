@@ -4,7 +4,14 @@
 pow $0,2
 lpb $0
   mov $2,$0
-  seq $2,26219 ; Position of n in A026218.
+  mul $2,2
+  add $2,1
+  mov $3,$2
+  mod $2,4
+  div $3,$2
+  mul $3,2
+  add $2,$3
+  div $2,2
   sub $0,2
   add $1,$2
   sub $1,2

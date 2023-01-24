@@ -445,6 +445,7 @@ A242119: Primes modulo 18.
 A242120: Primes modulo 20.
 A242122: Primes modulo 22.
 A242125: Primes modulo 27.
+A242126: Primes modulo 28.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
 A244735: a(n) = (prime(n) mod 5) mod 2.
 A259547: a(n) = n^4*Fibonacci(n).

@@ -9,7 +9,9 @@ lpb $2
   add $5,$1
   mov $3,$1
   add $3,1
-  seq $3,219641 ; a(n) = n minus (number of 1's in Zeckendorf expansion of n).
+  mov $6,$3
+  seq $6,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+  sub $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

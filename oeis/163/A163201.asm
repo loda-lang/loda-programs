@@ -5,7 +5,8 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  seq $2,56570 ; Third power of Fibonacci numbers (A000045).
+  seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  pow $2,3
   sub $0,2
   add $1,$2
   mul $1,-1

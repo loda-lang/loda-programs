@@ -1,7 +1,11 @@
 ; A273910: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 614", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Simon Strandgaard
 ; 1,11,101,1011,10001,110111,1000101,11011011,100000001,1100000111,10100010101,101101101011,1000000010001,11000001110111,101000101000101,1011011011011011,10000000000000001,110000000000000111,1010000000000010101,10110000000001101011,100010000000100010001,1101110000011101110111,10001010001010001000101,110110110110110111011011,1000000000000000100000001,11000000000000011100000111,101000000000001010100010101,1011000000000110101101101011,10001000000010001000000010001,110111000001110111000001110111
-; Formula: a(n) = A004086(A273912(n))
+; Formula: a(n) = A004086(10*A007088(A038185(n)/2)+1)
 
-seq $0,273912 ; Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 614", based on the 5-celled von Neumann neighborhood.
+seq $0,38185 ; One-dimensional cellular automaton 'sigma' (Rule 150).
+div $0,2
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mul $0,10
+add $0,1
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).

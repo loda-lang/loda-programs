@@ -1,4 +1,4 @@
-; A359471: allocated for Antti Karttunen
+; A359471: a(n) = 1 if the product of exponents in the prime factorization of n is less than 3, otherwise 0.
 ; Submitted by pututu
 ; 1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0
 

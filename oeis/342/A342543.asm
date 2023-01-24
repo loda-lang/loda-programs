@@ -10,8 +10,11 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,284438 ; a(n) = phi(n)^n.
-  add $3,$0
+  mov $4,$0
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $0,1
+  pow $4,$0
+  add $3,$4
 lpe
 mov $0,$3
 add $0,1

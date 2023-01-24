@@ -1,12 +1,13 @@
 ; A208251: Number of refactorable numbers less than or equal to n.
+; Submitted by Kotenok2000
 ; 1,2,2,2,2,2,2,3,4,4,4,5,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,15,15,15,15,16,16,16,16,16
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A336040(n), b(0) = 0
 
+mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,336040 ; Characteristic function of refactorable numbers (A033950).
+  seq $2,54008 ; n read modulo (number of divisors of n).
+  cmp $2,0
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

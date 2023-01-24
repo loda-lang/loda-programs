@@ -13,9 +13,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,2
-  seq $0,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
+  seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mul $1,$0
-  mod $1,2
   add $3,$1
 lpe
 mov $0,$3

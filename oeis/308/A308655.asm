@@ -4,10 +4,11 @@
 
 lpb $0
   mov $2,$0
-  add $2,1
-  seq $2,54541 ; Sum of first n terms equals n-th prime.
+  seq $2,1223 ; Prime gaps: differences between consecutive primes.
+  trn $3,$0
+  add $3,$2
   sub $0,1
-  add $1,$2
+  add $1,$3
   mul $1,-1
 lpe
 mul $1,2

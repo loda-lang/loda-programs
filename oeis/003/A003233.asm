@@ -6,8 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,3234 ; Numbers k such that A003231(A001950(k)) = A001950(A003231(k)) - 1.
-  sub $3,1
+  seq $3,3250 ; The number m such that A001950(m) = A003231(A003234(n)).
+  mul $3,6
+  sub $3,$1
+  sub $3,24
+  div $3,8
+  add $3,2
   add $0,1
   add $1,1
   add $2,$3

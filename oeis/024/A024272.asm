@@ -4,7 +4,18 @@
 
 mov $2,2
 mul $2,$0
-mov $1,$2
-seq $1,9739 ; E.g.f. tan(x)*exp(x).
+mov $4,$2
+lpb $4
+  sub $4,1
+  mov $1,$2
+  sub $1,$4
+  mov $3,$1
+  add $3,$4
+  bin $3,$1
+  seq $1,350972 ; E.g.f. = tan(x).
+  mul $3,$1
+  add $5,$3
+lpe
+mov $1,$5
 dif $1,2
 mov $0,$1

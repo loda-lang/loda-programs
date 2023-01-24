@@ -9,7 +9,9 @@ pow $2,3
 lpb $2
   sub $2,9
   mov $3,$1
-  seq $3,59344 ; Triangle read by rows: row n consists of the nonzero coefficients of the expansion of 2^n x^n in terms of Hermite polynomials with decreasing subscripts.
+  seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+  sub $3,1
+  seq $3,113025 ; Triangle of integer coefficients of polynomials P(n,x) of degree n, and falling powers of x, arising in diagonal Padé approximation of exp(x).
   mov $5,$3
   mul $3,2
   gcd $3,4

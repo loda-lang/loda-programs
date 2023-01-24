@@ -105,6 +105,7 @@ A039014: Numbers whose base-5 representation has the same number of 2's and 4's.
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
 A042987: Primes congruent to {2, 3, 5, 7} mod 8.
 A042999: Primes congruent to {2, 3, 5} (mod 8).
+A045252: Numbers whose base-5 expansion contains exactly one 1 and one 4.
 A045312: Primes congruent to {2, 3, 5, 6} (mod 7).
 A045329: Primes congruent to {0, 2, 3, 6} (mod 7).
 A045333: Primes congruent to {0, 2, 3} mod 7.

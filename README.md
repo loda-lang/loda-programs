@@ -5,7 +5,7 @@ You can use it to mine programs that calculate integer sequences from the [On-Li
 
 This repository contains programs that compute integer sequences from the OEIS. The majority of these programs has been
 generated (or "mined") using [loda-cpp](https://github.com/loda-lang/loda-cpp) and [loda-rust](https://github.com/loda-lang/loda-rust).
-You can find an overview of the programs and complete lists at [loda-lang.org/programs](https://loda-lang.org/programs).
+You can find an overview of the programs and complete lists at [loda-lang.org](https://programs.loda-lang.org).
 
 For updates on new miner findings, you can check the [latest commits](https://github.com/loda-lang/loda-programs/commits/main)
 or subscribe to the [@lodaminer](https://twitter.com/lodaminer) channel on Twitter.

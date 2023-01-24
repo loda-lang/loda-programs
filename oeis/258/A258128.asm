@@ -7,7 +7,24 @@ add $0,1
 mul $0,4
 add $1,1
 mod $1,2
+mov $2,1
 add $0,$1
-seq $0,217975 ; 2*n^2 - 7 is a square.
+lpb $0
+  sub $0,1
+  add $3,$2
+  add $3,$2
+  add $2,$4
+  sub $2,$3
+  sub $2,$3
+  add $2,4
+  add $5,$3
+  add $5,$3
+  sub $3,2
+  add $4,$5
+lpe
+mov $0,$4
+div $0,4
+add $0,1
+mul $0,2
 pow $0,2
 div $0,3

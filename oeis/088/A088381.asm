@@ -9,7 +9,8 @@ pow $2,2
 lpb $2
   add $6,1
   mov $3,$1
-  seq $3,214081 ; a(n) = floor( n^(1/3) )!.
+  seq $3,48766 ; Integer part of cube root of n. Or, number of cubes <= n. Or, n appears 3n^2 + 3n + 1 times.
+  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   mov $5,$3
   gcd $5,$6
   mov $3,$5

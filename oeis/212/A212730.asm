@@ -5,5 +5,24 @@
 mov $1,$0
 mul $1,2
 add $1,1
-seq $1,55217 ; a(n) = sum of the first n coefficients of (1+x+x^2)^n.
-mov $0,$1
+mov $2,$1
+mov $5,1
+mov $7,$1
+add $7,2
+add $1,1
+lpb $1
+  sub $1,1
+  sub $3,$7
+  bin $3,$1
+  sub $5,1
+  sub $1,1
+  mov $4,$5
+  sub $4,1
+  bin $4,$2
+  mul $4,$3
+  add $6,$4
+  sub $7,1
+  sub $2,3
+  cmp $3,3
+lpe
+mov $0,$6

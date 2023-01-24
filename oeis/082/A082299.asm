@@ -4,7 +4,12 @@
 
 mov $2,$0
 add $2,1
-seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-mov $1,$0
+lpb $0
+  mov $4,$0
+  seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$4
+  add $3,$4
+lpe
+mov $1,$3
 gcd $1,$2
 mov $0,$1
