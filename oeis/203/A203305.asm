@@ -1,0 +1,16 @@
+; A203305: Vandermonde determinant of the first n terms of (1,3,7,15,31,...).
+; Submitted by USTL-FIL (Lille Fr)
+; 1,2,48,64512,20808990720,6658450862270054400,8590449816558320728896700416000,180165778137909187135292776823951671626301440000,246665746050863452218796304775365273357060390005370386894553088000000
+
+mov $1,7
+mov $2,$0
+lpb $2
+  seq $2,28365 ; Order of general affine group over GF(2), AGL(n,2).
+  sub $0,1
+  mul $1,$2
+  mov $2,$0
+lpe
+mov $0,$1
+sub $0,7
+div $0,7
+add $0,1

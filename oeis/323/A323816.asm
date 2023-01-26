@@ -1,0 +1,20 @@
+; A323816: Number of set-systems covering n vertices with no singletons.
+; Submitted by USTL-FIL (Lille Fr)
+; 1,0,1,12,1993,67098768,144115187673233113,1329227995784915871895000745158568460,226156424291633194186662080095093570015284114833799899660370362545578585265,13093562431584567480052758787310396608866568184172259157933165472384535185616662811714455670555936669882690894380054874795516570115197913247805188347136
+
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  seq $0,16031 ; De Bruijn's sequence: 2^(2^(n-1) - n): number of ways of arranging 2^n bits in circle so all 2^n consecutive strings of length n are distinct.
+  mul $1,$0
+  mul $3,-1
+  add $3,$1
+lpe
+mov $0,$3

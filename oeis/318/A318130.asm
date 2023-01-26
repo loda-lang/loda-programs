@@ -1,0 +1,11 @@
+; A318130: Number of sets of subsets of {1,...,n} with intersection {}.
+; Submitted by USTL-FIL (Lille Fr)
+; 2,3,11,219,64595,4294642035,18446744047940725979,340282366920938463334247399005993378251,115792089237316195423570985008687907850547725730273056332267095982282337798563
+; Formula: a(n) = A003465(n)*min(n,1)+A003465(n)+1
+
+mov $1,$0
+seq $0,3465 ; Number of ways to cover an n-set.
+min $1,1
+mul $1,$0
+add $0,$1
+add $0,1

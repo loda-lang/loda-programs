@@ -1,0 +1,7 @@
+; A113511: Product of first A000217(n) = n(n+1)/2 primes.
+; Submitted by [AF>Libristes] Dudumomo
+; 1,2,30,30030,6469693230,614889782588491410,40729680599249024150621323470,2566376117594999414479597815340071648394470,225319534991831177328890236228992001350685163362356544091910
+; Formula: a(n) = A002110(A054632(n))
+
+seq $0,54632 ; Partial sums of A007376.
+seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
