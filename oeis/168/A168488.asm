@@ -1,0 +1,7 @@
+; A168488: Hankel transform of Genocchi medians.
+; Submitted by [AF>Libristes] Dudumomo
+; 1,1,16,20736,6879707136,1426576071720960000,383375999244747512217600000000,247370021455402476126653493805056000000000000
+; Formula: a(n) = A055209(n)^2
+
+seq $0,55209 ; a(n) = Product_{i=0..n} i!^2.
+pow $0,2

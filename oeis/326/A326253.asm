@@ -1,0 +1,16 @@
+; A326253: Number of sequences of distinct ordered pairs of positive integers up to n.
+; Submitted by Luca
+; 1,2,65,986410,56874039553217,42163840398198058854693626,1011182700521015817607065606491025592595137,1653481537585545171449931620186035466059689728986775126016505970
+
+mov $1,1
+mov $2,1
+mov $3,1
+pow $0,2
+lpb $0
+  sub $0,1
+  add $3,$1
+  mul $2,$0
+  add $2,$3
+  mov $1,$2
+lpe
+mov $0,$2
