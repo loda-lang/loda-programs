@@ -1,6 +1,7 @@
 ; A036746: Numbers with "long" representations in Roman notation: given by last n letters from ...MMMDCCCLXXXVIII.
 ; Submitted by [AF] Kalianthys
 ; 1,2,3,8,18,28,38,88,188,288,388,888,1888,2888,3888
+; Formula: a(n) = d(n)/2, b(n) = -d(n-1)+b(n-1)+c(n-1), b(5) = 20, b(4) = 20, b(3) = 10, b(2) = 2, b(1) = 2, b(0) = 2, c(n) = c(n-1)^0+4*b(n-4)+4*c(n-4)+4*d(n-4)+2*c(n-3)+2*d(n-4)-c(n-3)-d(n-4)+2*(-2*b(n-4))+2*(-2*c(n-4))-2*d(n-4)-4*d(n-4)+c(n-2)+max(10*b(n-4)+10*c(n-4)-10*d(n-4)-2,0)+1, c(5) = 57, c(4) = 37, c(3) = 27, c(2) = 15, c(1) = 5, c(0) = 3, d(n) = -d(n-1)+b(n-1)+c(n-1)+d(n-1), d(5) = 57, d(4) = 37, d(3) = 17, d(2) = 7, d(1) = 5, d(0) = 3
 
 mov $5,1
 add $0,2

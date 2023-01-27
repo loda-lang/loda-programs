@@ -8,7 +8,10 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,352167 ; a(n) is the sum of the prime factors of n (with multiplicity) that are less than n.
+  seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
+  add $3,1
+  trn $3,2
+  seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   add $3,$4
   gcd $3,2
   sub $0,$3

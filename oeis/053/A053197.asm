@@ -6,8 +6,13 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
+  mov $4,$0
+  seq $4,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
   mov $2,$0
-  seq $2,357456 ; Number of partitions of n into two or more odd parts.
+  seq $2,40001 ; 1 followed by {1, 2} repeated.
+  add $4,$2
+  mov $2,$4
+  sub $2,2
   mul $3,0
   add $3,$0
   dif $3,2

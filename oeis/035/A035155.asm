@@ -14,7 +14,8 @@ lpb $4
   bin $1,$0
   mov $5,$0
   mul $5,2
-  seq $5,100047 ; A Chebyshev transform of the Fibonacci numbers.
+  pow $5,2
+  seq $5,253262 ; Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
   mod $0,7
   seq $0,11584 ; Legendre symbol (n,17).
   mul $0,$5

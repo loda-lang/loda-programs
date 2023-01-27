@@ -4,5 +4,10 @@
 
 mov $1,5
 pow $1,$0
-seq $1,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
-mov $0,$1
+lpb $1
+  seq $3,87172 ; Greatest Fibonacci number that does not exceed n.
+  sub $1,$3
+  add $2,1
+  mov $3,$1
+lpe
+mov $0,$2

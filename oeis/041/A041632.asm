@@ -9,7 +9,15 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40316 ; Continued fraction for sqrt(335).
+  dif $1,2
+  pow $1,4
+  mov $5,$1
+  trn $5,4
+  sub $5,4
+  gcd $1,$5
+  mul $1,3
+  div $1,2
+  mul $1,3
   mul $1,$2
   add $1,$4
   add $3,1

@@ -10,8 +10,13 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,919 ; a(n) = 4^n - C(4,3)*3^n + C(4,2)*2^n - C(4,1).
-  add $3,$0
+  mov $4,4
+  pow $4,$0
+  seq $0,210448 ; Total number of different letters summed over all ternary words of length n.
+  sub $4,$0
+  div $4,6
+  mul $4,24
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

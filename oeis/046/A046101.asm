@@ -9,7 +9,17 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,307430 ; Dirichlet g.f.: zeta(s) / zeta(4*s).
+  seq $3,8833 ; Largest square dividing n.
+  seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  sub $3,1
+  seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
+  add $3,4
+  bin $3,2
+  sub $3,8
+  mov $5,56
+  div $5,$3
+  div $5,11
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   mov $4,$0

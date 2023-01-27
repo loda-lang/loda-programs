@@ -7,8 +7,19 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,20922 ; Expansion of 1/(1-4*x)^(11/2).
+  add $2,1
+  mov $4,$2
+  mov $5,7
+  add $5,$2
+  mov $6,$2
+  add $6,$5
+  bin $6,$2
+  bin $5,4
+  mul $5,$6
+  mov $2,$5
+  div $2,35
+  mul $2,$4
+  div $2,18
   add $1,$2
   sub $3,2
 lpe

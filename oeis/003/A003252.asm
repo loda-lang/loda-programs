@@ -7,16 +7,16 @@ mov $1,$0
 mov $3,$0
 pow $3,2
 lpb $3
+  mov $5,$2
+  seq $5,242094 ; Complement of A003249.
   mov $4,$2
-  seq $4,247430 ; Complement of A247429.
-  sub $4,1
+  add $4,$5
   add $0,1
   add $2,1
   add $3,$4
   sub $3,$0
 lpe
-add $0,1
-sub $0,3
+sub $0,2
 add $1,$0
 mov $0,$1
 add $0,2

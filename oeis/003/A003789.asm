@@ -1,10 +1,21 @@
 ; A003789: Order of universal Chevalley group A_n (5).
 ; Submitted by zogoon
 ; 1,120,372000,29016000000,56653740000000000,2766118855500000000000000,3376566710423156250000000000000000,103044374585338670859375000000000000000000000
-; Formula: a(n) = (6*A053292(n+1)-24)/24+1
+; Formula: a(n) = (6*b(n)-24)/24+1, b(n) = b(n-1)*(c(n-1)+1)*(4*c(n-1)+c(n-1)+4), b(1) = 480, b(0) = 4, c(n) = 4*c(n-1)+c(n-1)+4, c(1) = 24, c(0) = 4
 
+mov $1,1
 add $0,1
-seq $0,53292 ; Number of nonsingular n X n matrices over GF(5).
+lpb $0
+  sub $0,1
+  mov $3,1
+  add $3,$2
+  mov $4,4
+  mul $4,$3
+  add $2,$4
+  mul $1,$2
+  mul $1,$3
+lpe
+mov $0,$1
 mul $0,6
 sub $0,24
 div $0,24

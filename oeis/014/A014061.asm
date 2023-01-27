@@ -6,6 +6,12 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,14035 ; Inverse of 26th cyclotomic polynomial.
+mov $2,-1
+pow $2,$0
+sub $3,$0
+mod $3,13
+pow $3,$3
+mov $0,$3
+mul $0,$2
 mul $0,$1
 div $0,2

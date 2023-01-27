@@ -6,8 +6,10 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,168046 ; Characteristic function of zerofree numbers in decimal representation.
+  mov $6,$1
+  seq $6,98736 ; a(n) = product of n and all its digits.
+  min $6,1
+  mov $3,$6
   mul $3,$1
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

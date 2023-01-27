@@ -8,7 +8,15 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,30648 ; Dimensions of multiples of minimal representation of complex Lie algebra E6.
+  mov $7,$0
+  add $7,8
+  mov $6,4
+  sub $6,$7
+  bin $6,8
+  bin $7,$0
+  mul $6,$7
+  mov $0,$6
+  div $0,165
   mov $2,$3
   mul $2,$0
   add $1,$2

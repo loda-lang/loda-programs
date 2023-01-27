@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+  mul $0,2
+  add $0,1
+  seq $0,350972 ; E.g.f. = tan(x).
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -7,5 +7,8 @@ add $1,1
 dif $1,2
 dif $1,2
 sub $1,1
-seq $1,89692 ; a(n) = phi(2n)/2^omega(n).
+mov $2,$1
+gcd $2,2
+seq $1,70306 ; a(n) = 2*phi(n)/2^omega(n).
+div $1,$2
 mov $0,$1

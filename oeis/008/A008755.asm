@@ -7,8 +7,10 @@ lpb $0
   sub $0,3
   mov $2,$0
   div $2,2
-  max $2,0
-  seq $2,4279 ; 1, 3, 5 and the even numbers.
+  mov $3,$2
+  trn $3,5
+  add $3,1
+  add $2,$3
   add $1,$2
 lpe
 mov $0,$1

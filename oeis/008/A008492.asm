@@ -8,8 +8,12 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,8503 ; 9-dimensional centered tetrahedral numbers.
+  sub $0,1
+  mov $5,$0
+  bin $5,10
+  add $0,10
+  bin $0,10
+  sub $0,$5
   mov $2,$3
   mul $2,$0
   add $4,$2

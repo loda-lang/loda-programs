@@ -6,7 +6,8 @@ mov $2,7261
 lpb $2
   sub $2,56
   mov $3,$1
-  seq $3,29655 ; Numbers in the (2,1)-Pascal triangle A029653 that are different from 2.
+  trn $3,1
+  seq $3,110813 ; A triangle of pyramidal numbers.
   mov $5,$3
   mul $3,338
   gcd $3,4

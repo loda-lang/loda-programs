@@ -1,8 +1,21 @@
 ; A005723: Quadrinomial coefficients.
 ; Submitted by Jamie Morken(l1)
 ; 1,12,155,2128,30276,440484,6506786,97181760,1463609356,22187304112,338118529539,5175023913008,79492847013100,1224838471521240,18922450356489780,293003808610433280,4546150487318508156,70662280030419277200,1100069396653853657564
-; Formula: a(n) = A005190(2*n+1)
 
 mul $0,2
 add $0,1
-seq $0,5190 ; Central quadrinomial coefficients: largest coefficient of (1 + x + x^2 + x^3)^n.
+sub $1,$0
+div $1,2
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$4
+  bin $2,$0
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,2
+  add $5,$3
+lpe
+mov $0,$5

@@ -13,7 +13,8 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,48149 ; Array T read by diagonals: T(i,j) = number of pairs (h,k) with h^2+k^2 <= i^2+j^2, h>=0, k >= 0.
+  seq $0,48147 ; Array T read by diagonals; T(i,j) = i^2 + j^2.
+  seq $0,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.
   add $1,$0
   trn $2,1
 lpe

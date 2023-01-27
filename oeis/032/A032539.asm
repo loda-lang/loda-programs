@@ -3,5 +3,14 @@
 
 add $0,1
 mov $1,$0
-seq $0,7090 ; Numbers in base 4.
+mov $4,1
+lpb $0
+  mov $3,$0
+  mod $3,4
+  mul $3,$4
+  div $0,4
+  add $2,$3
+  mul $4,10
+lpe
+mov $0,$2
 div $0,$1

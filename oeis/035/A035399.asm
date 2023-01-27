@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,129129 ; An irregular triangular array of natural numbers read by rows, with shape sequence A000041(n) related to sequence A060850.
+  seq $3,114994 ; Numbers whose binary representation has monotonically decreasing sizes of groups of zeros (including zero-length groups between adjacent ones).
+  seq $3,333219 ; Heinz number of the n-th composition in standard order.
   sub $3,1
   seq $3,48105 ; Number of non-unitary divisors of n.
   cmp $3,0

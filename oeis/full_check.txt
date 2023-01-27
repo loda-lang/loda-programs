@@ -34,6 +34,7 @@ A003622: The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5)
 A003623: Wythoff AB-numbers: floor(floor(n*phi^2)*phi), where phi = (1+sqrt(5))/2.
 A003754: Numbers with no adjacent 0's in binary expansion.
 A004016: Theta series of planar hexagonal lattice A_2.
+A004641: Fixed under 0 -> 10, 1 -> 100.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
@@ -237,6 +238,7 @@ A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) 
 A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
 A124218: a(n) is the m-th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n, d(n) is the number of positive divisors of n and m = phi(n) if phi(n)|d(n), else m = d(n) mod phi(n).
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
+A128703: Numbers of the form 5^k*p, where 1 <= k <= 5 and p is a prime different from 5.
 A129252: Smallest prime factor p of n such that p^p is a divisor of n, a(n)=1 if no such factor exists.
 A129761: First differences of Fibbinary numbers (A003714).
 A130063: Primes p such that p divides 3^((p+1)/2) - 2^((p+1)/2) - 1.

@@ -1,21 +1,18 @@
 ; A018587: Divisors of 676.
-; Submitted by davidBAM
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,4,13,26,52,169,338,676
 
+mov $1,1
 add $0,1
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $3,8
-  seq $3,157729 ; a(n) = Fibonacci(n) + 5.
-  pow $3,2
-  add $4,1
-  add $5,1
-  gcd $3,$5
-  div $3,$4
-  sub $0,$3
-  add $1,1
-  sub $2,$3
-  sub $2,$0
+lpb $0
+  sub $0,1
+  add $2,$1
+  dif $2,3
+  mul $2,3
+  mov $1,$2
+  dif $2,12
 lpe
 mov $0,$1
+sub $0,3
+div $0,3
+add $0,1

@@ -7,8 +7,13 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,16
+  mov $5,$1
+  seq $5,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   mov $3,$1
-  seq $3,91954 ; Number of odd proper divisors of n. That is, the number of odd divisors of n that are less than n.
+  mod $3,2
+  sub $3,1
+  add $3,$5
+  div $3,2
   mul $3,338
   gcd $3,4
   add $3,1

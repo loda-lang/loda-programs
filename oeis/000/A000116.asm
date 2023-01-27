@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,45654 ; Number of 2n-bead balanced binary strings, rotationally equivalent to complement.
+  seq $0,129342 ; a(2n) = a(n) + 2^(2n), a(2n+1) = 2^(2n+1).
   add $3,$0
 lpe
 div $3,$1

@@ -4,8 +4,12 @@
 
 mov $2,16
 lpb $2
-  mov $3,$1
-  seq $3,116471 ; Values 2*(n -+ 1)^2 sorted.
+  mov $3,1
+  sub $3,$1
+  div $3,2
+  add $3,$1
+  pow $3,2
+  mul $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

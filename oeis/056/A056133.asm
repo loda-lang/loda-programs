@@ -7,7 +7,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,262397 ; a(n) = floor(A261327(n)/9).
+  pow $3,2
+  dif $3,4
+  div $3,9
   sub $0,$3
   add $1,2
   sub $2,$0

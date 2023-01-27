@@ -6,9 +6,12 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
+  mov $5,$0
+  add $5,6
   mov $2,$0
-  max $2,0
-  seq $2,1399 ; a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.
+  mul $2,$5
+  div $2,12
+  add $2,1
   add $3,$4
   add $3,14
   add $1,$2
