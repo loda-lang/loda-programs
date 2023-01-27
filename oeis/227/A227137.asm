@@ -1,0 +1,15 @@
+; A227137: Positive solutions of the Pell equation x^2 - 89*y^2 = -1. Solutions x = 500*a(n).
+; Submitted by USTL-FIL (Lille Fr)
+; 1,1000003,1000005000005,1000007000014000007,1000009000027000030000009,1000011000044000077000055000011,1000013000065000156000182000091000013,1000015000090000275000450000378000140000015,1000017000119000442000935001122000714000204000017
+; Formula: a(n) = 2*b(n)-5, b(n) = b(n-1)+A227110(n), b(0) = 3
+
+mov $1,3
+lpb $0
+  mov $2,$0
+  seq $2,227110 ; Nonnegative solutions of the Pell equation x^2 - 89*y^2 = +1. Solutions x = a(n).
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1
+mul $0,2
+sub $0,5
