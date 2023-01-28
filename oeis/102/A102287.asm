@@ -8,7 +8,11 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,59606 ; Expansion of (1/2)*(exp(2*x)-1)*exp(exp(x)-1).
+  mov $4,$0
+  seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  seq $0,138378 ; Number of embedded coalitions in an n-person game.
+  sub $0,$4
+  div $0,2
   sub $0,$1
   mov $1,$0
 lpe

@@ -7,7 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,37943 ; Smallest Fibonacci number that has n as a factor, divided by n.
+  seq $3,47930 ; Smallest positive Fibonacci number divisible by n.
   add $3,1
   mod $3,2
   sub $0,$3

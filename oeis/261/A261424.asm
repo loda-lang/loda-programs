@@ -3,8 +3,10 @@
 
 mov $1,$0
 lpb $1
+  mov $3,$1
+  seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $2,$1
-  seq $2,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
+  cmp $2,$3
   sub $1,1
   add $1,$2
 lpe

@@ -5,7 +5,23 @@
 mov $1,$0
 trn $0,1
 mov $2,$0
-seq $0,179182 ; Natural numbers n such that n+1 or 2n+1 is prime.
+mov $3,2
+mov $4,$0
+mul $4,10
+lpb $4
+  mov $5,$3
+  seq $5,56563 ; Number of primes which are the difference between two triangular numbers, where the larger is the n-th triangular number.
+  min $5,1
+  sub $0,$5
+  add $3,1
+  mov $6,$0
+  max $6,0
+  cmp $6,$0
+  mul $4,$6
+  sub $4,1
+lpe
+mov $0,$3
+sub $0,1
 mul $0,2
 sub $0,$2
 add $0,$1

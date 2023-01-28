@@ -7,8 +7,13 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,6
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  seq $3,326419 ; a(n) is the number of distinct Horadam sequences of period n.
+  seq $3,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  sub $3,1
+  mul $3,$5
+  div $3,2
   mod $3,6
   add $3,3
   cmp $3,5

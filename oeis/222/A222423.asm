@@ -1,11 +1,24 @@
 ; A222423: Sum of (n AND k) for k = 0, 1, 2, ..., n, where AND is the bitwise AND operator.
 ; Submitted by Jon Maiga
 ; 0,1,2,6,4,11,18,28,8,21,34,50,60,79,98,120,16,41,66,94,116,147,178,212,216,253,290,330,364,407,450,496,32,81,130,182,228,283,338,396,424,485,546,610,668,735,802,872,816,889,962,1038,1108,1187,1266,1348,1400,1485,1570,1658,1740,1831,1922,2016,64,161,258,358,452,555,658,764,840,949,1058,1170,1276,1391,1506,1624,1616,1737,1858,1982,2100,2227,2354,2484,2584,2717,2850,2986,3116,3255,3394,3536,3168,3313,3458,3606
-; Formula: a(n) = (2*n+A241718(n))/8
 
 mov $1,2
 mul $1,$0
-seq $0,241718 ; The number of P-positions in the game of Nim with up to 4 piles, allowing for piles of zero, such that the number of objects in the largest pile is n.
+mul $0,2
+mov $2,$0
+add $2,1
+lpb $2
+  add $4,4
+  pow $4,12
+  gcd $4,$2
+  sub $2,$4
+  mul $4,$2
+  add $3,$4
+lpe
+mov $2,$3
+div $2,2
+mov $0,$2
+mul $0,6
 add $1,$0
 mov $0,$1
 div $0,8

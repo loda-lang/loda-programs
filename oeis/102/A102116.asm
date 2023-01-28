@@ -1,6 +1,7 @@
 ; A102116: Iccanobirt numbers (6 of 15): a(n) = R(a(n-1)) + R(a(n-2)) + a(n-3), where R is the digit reversal function A004086.
 ; Submitted by Landjunge
 ; 0,0,1,1,2,4,7,13,42,62,63,104,499,1458,9639,18409,101308,903221,943819,1141966,8512981,9527388,11871383,55668051,62931854,72771964,148399704,517843422,705114520,398159926,1173206822,3621090124,6895084900,5478914071,5420094855,14184183890,20901962457,90685153898,179446253401,215089766037,925705779381,1094091741442,2840539178467,11015897034764,55485890942935,103508528887933,404729632698520,421170953675640,175981124886461,615994412959215,1098818589364727,7963580197574878,16675392182001813
+; Formula: a(n) = b(n-1), a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 0, b(n) = b(n-3)+A004086(b(n-1))+A004086(b(n-2)), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1
 
 mov $1,1
 sub $0,1
@@ -8,7 +9,7 @@ lpb $0
   sub $0,1
   mov $3,$2
   mov $2,$1
-  seq $1,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
+  seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $3,$1
   add $1,$4
   mov $4,$3

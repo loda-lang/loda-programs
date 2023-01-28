@@ -6,8 +6,11 @@ add $0,2
 lpb $0
   add $1,1
   mov $2,$0
-  seq $2,151842 ; a(3n)=n, a(3n+1)=2n+1, a(3n+2)=n+1.
-  sub $0,$2
+  div $2,3
+  mov $3,$0
+  sub $3,$2
+  dif $3,2
+  sub $0,$3
 lpe
 mov $0,$1
 sub $0,1

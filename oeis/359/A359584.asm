@@ -6,8 +6,10 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,359583 ; Parity of A329697.
+  mov $5,$1
+  seq $5,329697 ; a(n) is the number of iterations needed to reach a power of 2 starting at n and using the map k -> k-(k/p), where p is the largest prime factor of k.
+  mov $3,$5
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

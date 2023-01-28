@@ -6,8 +6,13 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,53167 ; Smallest 4th power divisible by n.
+  mov $6,$1
+  seq $6,190 ; Number of solutions to x^4 == 0 (mod n).
+  mov $5,$1
+  add $5,1
+  div $5,$6
+  pow $5,4
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

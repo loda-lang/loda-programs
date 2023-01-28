@@ -4,7 +4,23 @@
 
 mov $1,$0
 add $1,1
-seq $0,76726 ; a(n) = Sum_{k>=0} k^n/2^k.
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  add $7,$3
+  mov $3,$2
+  pow $3,$5
+  add $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  mul $6,-1
+  add $6,$4
+  add $2,1
+lpe
+mov $0,$6
+mul $0,2
 mul $0,$1
 add $1,1
 mul $0,$1

@@ -6,5 +6,12 @@ mov $2,$0
 pow $2,2
 add $0,$2
 mov $1,$0
-seq $1,278223 ; Least number with the same prime signature as the n-th odd number: a(n) = A046523(2n-1).
+mul $1,2
+mov $3,2
+lpb $3
+  sub $3,1
+  add $1,$3
+  trn $1,1
+  seq $1,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+lpe
 mov $0,$1

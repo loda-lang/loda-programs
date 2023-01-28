@@ -7,8 +7,12 @@ mov $2,$0
 pow $2,2
 mul $2,2
 lpb $2
+  mov $5,$1
+  gcd $5,2
   mov $3,$1
-  seq $3,87116 ; Number of maximal groups of consecutive zeros in binary representation of n.
+  seq $3,37800 ; Number of occurrences of 01 in the binary expansion of n.
+  sub $3,1
+  add $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

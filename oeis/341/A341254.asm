@@ -6,5 +6,8 @@ mov $1,2
 lpb $1
   div $1,2
   add $0,$1
-  seq $0,58066 ; a(n) = floor(n*t), t = 1 + sqrt(5)/2.
+  mov $2,36
+  mul $2,$0
+  div $2,17
+  mov $0,$2
 lpe

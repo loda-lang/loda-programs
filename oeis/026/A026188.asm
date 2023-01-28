@@ -8,7 +8,13 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
-  seq $3,26136 ; Lexicographically earliest permutation of the positive integers such that |a(n)-n| = [a(n)/2].
+  mul $3,2
+  mov $6,$3
+  seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
+  gcd $3,3
+  div $6,$3
+  add $6,1
+  mov $3,$6
   mul $3,2
   mov $5,$3
   mul $3,2

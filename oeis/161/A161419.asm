@@ -1,8 +1,18 @@
 ; A161419: First differences of A161418.
-; Submitted by Fardringle
+; Submitted by TankbusterGames
 ; 0,0,0,6,0,6,0,12,6
-; Formula: a(n) = 6*A048881(A192685(n))
 
-seq $0,192685 ;  Floor-Sqrt transform of numbers of A051286.
-seq $0,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+mov $2,6
+lpb $0
+  mov $3,$0
+  mod $3,2
+  mul $3,$2
+  add $1,$3
+  add $2,$1
+  div $0,2
+  sub $0,1
+lpe
+mov $0,$2
+div $0,6
+sub $0,1
 mul $0,6

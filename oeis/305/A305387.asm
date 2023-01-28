@@ -3,8 +3,22 @@
 ; 1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1
 
 add $0,1
+mov $3,2
 mov $1,$0
-seq $1,59832 ; A ternary tribonacci triangle: form the triangle as follows: start with 3 single values: 1, 2, 3. Each succeeding row is a concatenation of the previous 3 rows.
+add $1,1
+lpb $1
+  sub $1,1
+  max $1,$4
+  sub $2,$3
+  add $2,1
+  div $2,2
+  mul $4,$2
+  gcd $4,4
+  mul $3,$4
+  mul $3,$4
+  div $4,2
+lpe
+add $1,1
 cmp $1,1
 mov $0,$1
 add $0,1

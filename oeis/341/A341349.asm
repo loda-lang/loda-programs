@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,341345 ; a(n) = A048673(n) mod 3.
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  add $3,1
+  mod $3,6
+  div $3,2
   sub $0,$3
   add $1,2
   mov $4,$0

@@ -6,8 +6,16 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,3
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  mov $5,$1
+  seq $5,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
+  mul $5,$6
   mov $3,$1
-  seq $3,56140 ; a(n) = n^2 - previousprime(n)*nextprime(n), for n>2.
+  add $3,3
+  pow $3,2
+  sub $3,$5
   mul $3,-9
   trn $3,3
   min $3,1

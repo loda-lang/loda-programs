@@ -7,8 +7,10 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,16
+  mov $6,$1
+  seq $6,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $3,$1
-  seq $3,56964 ; a(n) = n + reversal of digits of n.
+  add $3,$6
   mov $5,$3
   mul $3,338
   gcd $3,4

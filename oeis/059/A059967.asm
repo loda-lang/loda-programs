@@ -1,7 +1,13 @@
 ; A059967: Number of 9-ary trees.
 ; Submitted by Jon Maiga
 ; 1,9,117,1785,29799,527085,9706503,184138713,3573805950,70625252863,1416298046436,28748759731965,589546754316126,12195537924351375,254184908607118800,5332692942907262361,112524941404978156215
-; Formula: a(n) = A062994(n+1)
+; Formula: a(n) = binomial(-n-2,8*n+8)/(8*n+9)
 
 add $0,1
-seq $0,62994 ; Eighth column of triangle A062993 (without leading zeros). A Pfaff-Fuss or 9-Raney sequence.
+sub $1,$0
+mul $0,8
+sub $1,1
+bin $1,$0
+add $0,1
+div $1,$0
+mov $0,$1

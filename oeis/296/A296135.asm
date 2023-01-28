@@ -1,12 +1,19 @@
 ; A296135: {0->01}-transform of the Fibonacci word A003849.
-; Submitted by Penguin
+; Submitted by Cruncher Pete
 ; 0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1
 
-lpb $0
-  mov $1,$0
-  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$1
-lpe
+mov $2,4
 add $0,1
-pow $0,-1
-cmp $0,0
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  mul $3,0
+  add $3,$1
+  gcd $3,4
+  dif $1,$3
+  mul $2,$3
+lpe
+mov $0,$3
+sub $0,2
+div $0,2

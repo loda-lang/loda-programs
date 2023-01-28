@@ -6,5 +6,28 @@ mov $1,$0
 add $1,1
 gcd $1,4
 mod $1,4
-seq $0,64355 ; Number of subsets of {1,2,..n} that sum to 1 mod n.
+mov $2,$0
+add $2,1
+mov $5,$0
+mov $7,2
+lpb $7
+  sub $7,1
+  add $0,$7
+  sub $0,1
+  mov $6,$0
+  max $6,0
+  seq $6,237500 ; Number of binary strings of length 2n which contain the ones' complement of each of their two halves.
+  mov $4,$7
+  mul $4,$6
+  add $3,$4
+lpe
+min $5,1
+mul $5,$6
+sub $3,$5
+mov $0,$3
+sub $0,2
+div $0,2
+add $0,1
+div $0,$2
+mul $0,2
 mul $0,$1

@@ -4,6 +4,23 @@
 
 mov $1,3
 pow $1,$0
-seq $0,25230 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 3.
+mov $2,3
+mov $3,1
+mov $6,-2
+mul $0,2
+mov $4,$0
+lpb $4
+  sub $4,2
+  mul $2,2
+  mul $2,$5
+  mul $2,2
+  mul $3,4
+  sub $6,2
+  sub $2,$3
+  div $2,$6
+  add $3,$2
+  sub $5,4
+lpe
+mov $0,$2
 mul $0,$1
 div $0,3

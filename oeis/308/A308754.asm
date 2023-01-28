@@ -4,5 +4,11 @@
 
 mul $0,2
 add $0,2
-seq $0,82460 ; a(n) = pi(n) - a(n - 1) = A000720(n) - a(n - 1).
+lpb $0
+  mov $1,$0
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,$1
+  sub $0,2
+lpe
+mov $0,$2
 sub $0,1

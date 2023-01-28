@@ -7,8 +7,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mov $3,$1
-  seq $3,344616 ; Alternating sum of the integer partition with Heinz number n.
+  seq $3,346697 ; Sum of the odd-indexed parts (odd bisection) of the multiset of prime indices of n.
+  sub $5,$3
+  sub $3,$5
+  gcd $3,0
   cmp $3,2
   sub $0,$3
   add $1,1

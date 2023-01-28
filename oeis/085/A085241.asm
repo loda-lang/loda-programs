@@ -10,7 +10,8 @@ lpb $3
   add $0,$3
   add $0,1
   mov $4,$0
-  seq $4,85239 ; Sort the numbers 2^i and 3^j. Then a(n) is the base of the n-th term. Set a(1)=1.
+  seq $4,6899 ; Numbers of the form 2^i or 3^j.
+  mod $4,2
   mov $2,$3
   mul $2,$4
   add $1,$2

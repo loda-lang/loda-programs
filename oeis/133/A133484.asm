@@ -1,9 +1,24 @@
 ; A133484: A way of splitting the numbers from 1 to 16 into two groups so that the numbers in each group have the same sum, the same sum of squares and the same sum of cubes.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by TankbusterGames
 ; 2,3,5,8,9,12,14,15
-; Formula: a(n) = (A128309(n)-2)/2+2
+; Formula: a(n) = e(n)+2, b(n) = (2*c(n-1)+2*d(n-1)-c(n-1)-e(n-1)+b(n-1))%3, b(4) = 0, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = -c(n-1)+c(n-1)+d(n-1), c(4) = 8, c(3) = 3, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = (2*c(n-1)+2*d(n-1)-c(n-1)-e(n-1)+b(n-1))%3+(f(n-1)*e(n-1)-c(n-1)-d(n-1)+c(n-1))/3+e(n-1)+1, d(4) = 20, d(3) = 8, d(2) = 3, d(1) = 1, d(0) = 0, e(n) = (2*c(n-1)+2*d(n-1)-c(n-1)-e(n-1)+b(n-1))%3+e(n-1)+1, e(4) = 7, e(3) = 6, e(2) = 3, e(1) = 1, e(0) = 0, f(n) = (2*c(n-1)+2*d(n-1)-c(n-1)-e(n-1)+b(n-1))%3+(f(n-1)*e(n-1)-c(n-1)-d(n-1)+c(n-1))/3+e(n-1)+1, f(4) = 20, f(3) = 8, f(2) = 3, f(1) = 1, f(0) = 0
 
-seq $0,128309 ; 2*A000069(n).
-sub $0,2
-div $0,2
+lpb $0
+  sub $0,1
+  add $3,$2
+  sub $1,$4
+  add $1,$3
+  sub $3,$2
+  add $1,$3
+  mod $1,3
+  mov $2,$3
+  mul $5,$4
+  sub $5,$3
+  add $4,1
+  add $4,$1
+  div $5,3
+  add $5,$4
+  mov $3,$5
+lpe
+mov $0,$4
 add $0,2

@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,78171 ; a(n)=A055086[A000040(n)].
+  seq $3,6005 ; The odd prime numbers together with 1.
+  seq $3,55086 ; n appears 1+[n/2] times.
   add $3,$4
   gcd $3,2
   sub $0,$3

@@ -8,7 +8,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,359370 ; a(n) = 1 if n is not a multiple of 4 and has an even number of prime factors (with multiplicity), otherwise a(n) = 0.
+  seq $3,347235 ; Dirichlet convolution of Euler phi with A342001, where A342001(n) = A003415(n) / A003557(n).
+  add $3,1
+  mod $3,2
   add $3,$4
   sub $0,$3
   add $0,1

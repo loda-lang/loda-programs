@@ -1,7 +1,7 @@
 ; A227085: Number of n X 2 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically increasing rows and columns, for some larger (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
 ; Submitted by Christian Krause
 ; 4,12,29,62,122,225,393,655,1048,1618,2421,3524,5006,6959,9489,12717,16780,21832,28045,35610,44738,55661,68633,83931,101856,122734,146917,174784,206742,243227,284705,331673,384660,444228,510973,585526,668554,760761,862889,975719,1100072,1236810,1386837,1551100,1730590,1926343,2139441,2371013,2622236,2894336,3188589,3506322,3848914,4217797,4614457,5040435,5497328,5986790,6510533,7070328,7668006,8305459,8984641,9707569,10476324,11293052,12159965,13079342,14053530,15084945,16176073,17329471
-; Formula: a(n) = (n+2)^2+(A027928((n+2)-1)-(((n+2)-1)+n+2))
+; Formula: a(n) = (n+2)^2-2*n+binomial(n+4,5)+binomial(n+3,3)+n-1
 
 add $0,2
 mov $1,$0
@@ -10,6 +10,14 @@ mov $2,$0
 add $2,$1
 mov $3,$1
 mul $3,$1
-seq $0,27928 ; a(n) = T(n, 2*n-5), T given by A027926.
+mov $4,$0
+add $4,3
+mov $5,$4
+bin $5,5
+add $0,2
+bin $0,3
+sub $0,2
+add $0,$5
+add $0,$4
 sub $0,$2
 add $0,$3

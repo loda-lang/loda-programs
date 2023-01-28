@@ -7,8 +7,14 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $5,$0
-  max $5,0
-  seq $5,71356 ; Expansion of (1 - 2*x - sqrt(1 - 4*x - 4*x^2))/(4*x^2).
+  add $5,2
+  seq $5,25227 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ... + a(n-1)*a(1) for n >= 3.
+  mov $8,$5
+  mul $8,2
+  add $7,$8
+  mov $5,$7
+  div $5,4
+  sub $7,1
   sub $0,1
   mov $2,$3
   mul $2,$5

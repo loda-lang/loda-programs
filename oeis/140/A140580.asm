@@ -1,8 +1,13 @@
 ; A140580: a(n) = (n^2)/A048671(n), = n*A014963(n) = A140579 * [1, 2, 3, ...].
 ; 1,4,9,8,25,6,49,16,27,10,121,12,169,14,15,32,289,18,361,20,21,22,529,24,125,26,81,28,841,30,961,64,33,34,35,36,1369,38,39,40,1681,42,1849,44,45,46,2209,48,343,50,51,52,2809,54,55,56,57,58,3481,60,3721,62,63
-; Formula: a(n) = A133936(n)+n+1
+; Formula: a(n) = max(-n+A285109(n*A010055(max(0,n)))-1,0)+n+1
 
-mov $1,$0
-seq $1,133936 ; Number of times prime powers occur in the columns of tables A133232 and A133233.
-add $0,$1
+max $1,$0
+seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
+mov $2,$0
+mul $2,$1
+seq $2,285109 ; a(n) = n multiplied by its smallest prime factor; a(1) = 1.
+sub $2,1
+trn $2,$0
+add $0,$2
 add $0,1

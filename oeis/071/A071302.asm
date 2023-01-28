@@ -5,9 +5,14 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,318609 ; a(1) = 2, a(2) = 4, a(3) = 6; for n > 3, a(n) = 3*a(n-1) - 3*a(n-2) + 9*a(n-3).
+  mov $3,3
+  pow $3,$2
+  div $2,2
+  mov $4,-3
+  pow $4,$2
+  add $3,$4
   sub $0,1
-  mul $1,$2
+  mul $1,$3
   mov $2,$0
 lpe
 mov $0,$1

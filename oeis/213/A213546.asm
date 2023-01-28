@@ -3,4 +3,11 @@
 
 mul $0,2
 add $0,1
-seq $0,337173 ; a(n) = Sum_{k=1..floor(n/2)} k^2 * (n-k)^2.
+lpb $0
+  add $2,$0
+  trn $0,2
+  mov $1,$2
+  mul $1,$2
+  add $3,$1
+lpe
+mov $0,$3

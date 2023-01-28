@@ -5,6 +5,16 @@
 add $0,1
 mov $1,$0
 gcd $1,2
+mov $4,-1
+mov $5,3
 dif $0,2
-seq $0,1608 ; Perrin sequence (or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.
+lpb $0
+  sub $0,1
+  mov $2,$5
+  mov $5,$3
+  mov $3,$2
+  add $3,$4
+  mov $4,$2
+lpe
+mov $0,$5
 pow $0,$1

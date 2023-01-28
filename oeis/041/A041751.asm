@@ -9,7 +9,29 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $1,$3
-  seq $1,40375 ; Continued fraction for sqrt(395).
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $7,$1
+  div $7,5
+  mul $7,12
+  add $1,$7
+  sub $1,2
+  dif $1,8
+  add $1,1
+  mov $6,$1
+  mul $6,3
+  div $6,2
+  mul $1,3
+  add $1,$6
+  sub $1,9
+  div $1,4
+  add $1,1
+  mov $5,$1
+  cmp $1,2
+  mul $1,4
+  add $5,$1
+  mov $1,$5
   mul $1,$2
   add $1,$4
 lpe

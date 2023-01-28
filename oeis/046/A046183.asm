@@ -7,7 +7,17 @@ add $1,5
 mod $1,2
 mul $0,2
 add $0,$1
-seq $0,129445 ; Numbers k > 0 such that k^2 is a centered triangular number.
+mov $3,1
+mov $4,11
+lpb $0
+  sub $0,1
+  cmp $4,$2
+  add $2,$3
+  mul $4,$2
+  add $4,$2
+  add $3,$4
+lpe
+mov $0,$3
 pow $0,2
 mul $0,2
 div $0,6

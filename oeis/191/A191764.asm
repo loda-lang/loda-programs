@@ -1,8 +1,23 @@
 ; A191764: Integers that do not have a partition into a sum of an odd square and two (not necessarily distinct) triangular numbers.
 ; Submitted by Jamie Morken(w4)
 ; 6,42,72,156,210,342,420,702,930,1056,1332,1806,1980,2352,2550,2970,3192,3906,4692,5256,5550,6162,7140,7482,8190,8556,9312,9702,10506,12210,13110,13572,14520,16512,17556,18090,19182,19740,20880,21462,23256,24492,25122,26406,28392,30450,31152,33306,34782,35532,37830,39402,40200,41820,44310,45156,46872,49506,50400,52212,53130,57840,58806,60762,63756,64770,67860,71022,73170,74256,77562,79806,80940,83232,87912,90300,93942,95172,97656,98910,102720,106602,109230,113232,114582,117306,118680,121452
-; Formula: a(n) = (A157075(n)^2)/16
 
-seq $0,157075 ; Positive integers n for which the Diophantine equation x^2 + y^2 = n^2/2 has relatively prime solutions.
+mov $2,3
+pow $2,$0
+lpb $2
+  add $1,4
+  mov $3,$1
+  seq $3,5082 ; Sum of primes = 3 mod 4 dividing n.
+  cmp $3,0
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,5
+mul $0,2
 pow $0,2
 div $0,16

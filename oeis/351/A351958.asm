@@ -6,7 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,329040 ; Number of distinct primorials in the greedy sum of primorials adding to A108951(n).
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  sub $3,1
+  seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+  sub $3,1
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   cmp $3,1
   sub $0,$3
   add $1,1

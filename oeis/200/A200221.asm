@@ -14,7 +14,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,70824 ; Number of divisors of n which are > 1 and < n (nontrivial divisors).
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $0,2
   mul $1,$0
   add $3,$1
 lpe

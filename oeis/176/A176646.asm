@@ -3,7 +3,14 @@
 
 lpb $0
   mov $2,$0
-  seq $2,228317 ; The hyper-Wiener index of the triangular graph T(n) (n >= 1).
+  add $2,1
+  mov $3,$2
+  mul $3,6
+  sub $3,10
+  bin $2,3
+  mul $2,$3
+  div $2,8
+  mul $2,3
   sub $0,2
   add $1,$2
 lpe

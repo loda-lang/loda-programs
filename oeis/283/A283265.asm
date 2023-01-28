@@ -9,9 +9,15 @@ lpb $4
   sub $4,1
   mov $5,$3
   trn $5,2
-  seq $5,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
+  mov $7,$5
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $5,3
+  sub $5,$7
+  mul $7,$5
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $0,$6
-  sub $0,$5
+  sub $0,$7
+  mov $5,$7
   sub $5,3
   cmp $6,$0
   add $3,2

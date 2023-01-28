@@ -13,7 +13,37 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $2,1
-  seq $0,138349 ; Moment sequence of tr(A) in USp(4).
+  mov $5,-1
+  pow $5,$0
+  add $5,1
+  dif $0,2
+  mov $6,$0
+  add $6,2
+  mov $7,$0
+  mul $7,2
+  add $7,1
+  mov $8,$0
+  add $8,1
+  mov $9,$6
+  mov $10,$6
+  add $10,1
+  add $0,1
+  mul $6,2
+  bin $6,$9
+  div $6,$10
+  mov $11,$8
+  mov $12,$8
+  add $12,1
+  mul $8,2
+  bin $8,$11
+  div $8,$12
+  sub $6,$8
+  mul $6,$8
+  div $6,$7
+  div $6,$0
+  mov $0,$6
+  mul $0,$5
+  div $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

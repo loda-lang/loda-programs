@@ -7,7 +7,10 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,252735 ; a(1) = 0; for n > 1: a(2n) = a(n), a(2n+1) =  1 + a(A064989(n)).
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $3,1
+  seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  trn $3,2
   add $3,$4
   gcd $3,2
   sub $0,$3

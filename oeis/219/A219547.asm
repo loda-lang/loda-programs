@@ -8,7 +8,14 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,169987 ; Expansion of Product_{i=0..m-1} (1 + x^(2*i+1)) for m=4.
+  mul $3,2
+  mov $5,$3
+  add $3,2
+  sub $5,$3
+  mul $5,3
+  dif $3,$5
+  gcd $3,$5
+  sub $3,1
   cmp $3,1
   sub $0,$3
   mov $4,$0

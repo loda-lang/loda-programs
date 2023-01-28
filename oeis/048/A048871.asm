@@ -9,7 +9,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,110751 ; Numbers n such that n and its digital reversal have the same prime divisors.
+  mov $5,$2
+  seq $5,342826 ; Numbers k such that d(1)^0 + d(2)^1 + ... + d(p)^(p-1) = d(1)^(p-1) + d(2)^(p-2) + ... + d(p)^0, where d(i), i=1..p, are the digits of k.
+  sub $6,$5
+  mov $2,$6
   pow $2,2
   mod $4,2
   add $4,1

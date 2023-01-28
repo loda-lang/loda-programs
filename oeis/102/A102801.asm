@@ -8,7 +8,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,25125 ; a(n) = s(1)*s(n) + s(2)*s(n-1) + ... + s(k)*s(n-k+1), where k = floor(n/2), s = A023533.
+  add $3,1
+  mov $5,$3
+  seq $5,23670 ; Convolution of A023533 with itself.
+  mov $3,$5
+  sub $3,17
+  div $3,2
+  add $3,8
   min $3,1
   sub $0,$3
   add $1,1

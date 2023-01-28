@@ -8,7 +8,12 @@ pow $2,2
 lpb $2
   sub $2,5
   mov $3,$1
-  seq $3,19586 ; Vertical para-Fibonacci sequence: takes value i on later (i.e., b_j, j >= 2) terms of i-th Fibonacci sequence defined by b_0 = i, b_1 = [ tau(i+1) ].
+  seq $3,348853 ; Delete any least significant 0's from the Zeckendorf representation of n, leaving its "odd" part.
+  add $6,$3
+  div $6,6
+  add $3,$6
+  sub $3,1
+  div $3,3
   mov $5,$3
   add $1,1
   cmp $3,0

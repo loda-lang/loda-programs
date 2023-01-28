@@ -6,8 +6,14 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $5,$6
   mov $3,$1
-  seq $3,67292 ; a(n)=prime(n)-n*tau(n) where tau(n) is the number of divisors of n.
+  seq $3,40 ; The prime numbers.
+  sub $3,$5
   mul $3,-4
   trn $3,3
   min $3,1

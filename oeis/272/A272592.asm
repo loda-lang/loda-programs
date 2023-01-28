@@ -8,7 +8,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,193139 ; Number of symmetric satins of order n.
+  add $3,2
+  seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
+  div $3,2
   cmp $3,1
   sub $0,$3
   add $1,1

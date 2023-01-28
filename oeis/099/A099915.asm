@@ -1,9 +1,16 @@
 ; A099915: Expansion of (1+4x)/((1-x)(1-10x)).
-; Submitted by Jamie Morken(m1)
+; Submitted by The Chaser
 ; 1,15,155,1555,15555,155555,1555555,15555555,155555555,1555555555,15555555555,155555555555,1555555555555,15555555555555,155555555555555,1555555555555555,15555555555555555,155555555555555555
-; Formula: a(n) = 7*(A000042(n)/5)+1
+; Formula: a(n) = (b(n)-37)/25+1, b(n) = 10*b(n-1)+8, b(0) = 38
 
-seq $0,42 ; Unary representation of natural numbers.
-div $0,5
-mul $0,7
+mov $1,3
+add $0,1
+lpb $0
+  sub $0,1
+  mul $1,10
+  add $1,8
+lpe
+mov $0,$1
+sub $0,37
+div $0,25
 add $0,1

@@ -7,9 +7,14 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
-  max $2,0
   mul $2,5
-  seq $2,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
+  mov $4,59969536
+  sub $4,$2
+  div $4,4
+  div $2,3
+  add $4,$2
+  mov $2,$4
+  sub $2,14992383
   add $1,$2
   mov $3,1
 lpe

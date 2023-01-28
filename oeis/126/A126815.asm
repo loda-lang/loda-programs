@@ -5,7 +5,17 @@
 mul $0,2
 add $0,2
 mov $1,$0
-seq $1,7331 ; Fourier coefficients of E_{infinity,4}.
+lpb $1
+  mov $4,$3
+  gcd $4,$1
+  cmp $4,$1
+  mul $4,$1
+  pow $4,3
+  sub $1,2
+  add $2,$4
+  sub $3,1
+lpe
+add $1,$2
 mod $1,256
 mov $0,$1
 div $0,8

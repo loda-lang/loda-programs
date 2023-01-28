@@ -4,7 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,180598 ; Digital root of 8n.
+  mul $2,8
+  sub $2,1
+  mod $2,9
+  add $2,1
   sub $0,1
   mul $1,10
   add $1,$2

@@ -6,9 +6,17 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $8,$0
+  mul $8,4
+  add $8,1
   mov $5,$0
-  max $5,0
-  seq $5,118969 ; a(n) = 2*binomial(5*n+1,n)/(4*n+2).
+  add $5,$8
+  bin $5,$8
+  mul $5,12
+  mov $7,$8
+  add $7,1
+  div $5,$7
+  div $5,6
   sub $0,1
   mov $2,$3
   mul $2,$5

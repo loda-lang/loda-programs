@@ -5,4 +5,6 @@ mul $0,4
 mov $1,$0
 cmp $1,0
 add $0,$1
-seq $0,117444 ; Period 5: Repeat [0, 1, 2, -2, -1].
+add $0,2
+mod $0,5
+sub $0,2

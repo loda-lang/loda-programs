@@ -7,7 +7,17 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,59966 ; a(n) = (1/n) * Sum_{ d divides n } mu(n/d) * (2^d - 1).
+  mov $3,$2
+  add $3,1
+  mov $4,1
+  add $4,$2
+  seq $4,27375 ; Number of aperiodic binary strings of length n; also number of binary sequences with primitive period n.
+  mov $2,$4
+  div $2,2
+  mul $2,2
+  div $2,$3
+  cmp $3,1
+  sub $2,$3
   add $1,$2
 lpe
 mov $0,$1

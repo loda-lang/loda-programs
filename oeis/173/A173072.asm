@@ -4,5 +4,10 @@
 
 mov $1,$0
 mul $1,2
-seq $0,40 ; The prime numbers.
+mov $2,2
+lpb $0
+  sub $0,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$2
 sub $0,$1

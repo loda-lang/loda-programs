@@ -6,8 +6,11 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,196792 ; a(n)=T(10,n), array T given by A047848.
+  mov $5,13
+  pow $5,$1
+  div $5,12
+  add $5,1
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

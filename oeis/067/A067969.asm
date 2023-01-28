@@ -10,7 +10,19 @@ lpb $3
   add $0,3
   add $0,$3
   div $0,2
-  seq $0,69038 ; Expansion of x*(1+x)^4/(1-x)^6.
+  mov $4,$0
+  pow $4,2
+  mov $6,4
+  mul $6,$4
+  add $4,5
+  mul $4,$6
+  add $4,6
+  mov $5,9
+  trn $5,$4
+  gcd $5,$4
+  div $5,3
+  mul $0,$5
+  div $0,10
   add $1,$0
 lpe
 mov $0,$1

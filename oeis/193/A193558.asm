@@ -8,7 +8,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,2496 ; Primes of the form k^2 + 1.
+  seq $0,5574 ; Numbers k such that k^2 + 1 is prime.
+  pow $0,2
   mul $0,16
   add $1,$2
   mov $2,$0

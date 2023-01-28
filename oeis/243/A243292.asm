@@ -9,8 +9,16 @@ add $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,76737 ; Let u(1)=u(2)=u(3)=2, u(n)=(1+u(n-1)u(n-2))/u(n-3); then a(n) is the numerator of u(n).
   sub $3,1
+  mov $5,2
+  pow $5,$3
+  add $5,1
+  mul $5,2
+  dif $5,3
+  sub $5,3
+  div $5,2
+  mov $3,$5
+  add $3,1
   mod $3,$1
   min $3,1
   sub $0,1

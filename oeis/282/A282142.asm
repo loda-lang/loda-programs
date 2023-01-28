@@ -1,8 +1,22 @@
 ; A282142: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 553", based on the 5-celled von Neumann neighborhood.
 ; 1,0,100,0,10100,0,1010100,0,101010100,0,10101010100,0,1010101010100,0,101010101010100,0,10101010101010100,0,1010101010101010100,0,101010101010101010100,0,10101010101010101010100,0,1010101010101010101010100,0,101010101010101010101010100,0,10101010101010101010101010100,0,1010101010101010101010101010100,0,101010101010101010101010101010100,0,10101010101010101010101010101010100,0,1010101010101010101010101010101010100,0,101010101010101010101010101010101010100,0
-; Formula: a(n) = A007088(A287197(n+1))/11
 
 add $0,1
-seq $0,287197 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 259", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,-2
+pow $2,$0
+mov $1,-5
+trn $1,$2
+sub $1,$2
+add $1,1
+mov $4,1
+mov $0,$1
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3
 div $0,11

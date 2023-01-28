@@ -7,9 +7,8 @@ lpb $0
   sub $0,3
   pow $1,2
   add $1,1
-  mov $2,$0
-  max $2,0
-  seq $2,240348 ; Inverse of 53rd cyclotomic polynomial.
+  sub $2,$0
+  pow $2,$2
   sub $1,$2
 lpe
 mov $0,$1

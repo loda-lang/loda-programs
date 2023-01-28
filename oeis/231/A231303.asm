@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,17272 ; a(n) = (10*n)^4.
+  mul $2,10
+  pow $2,4
   trn $0,2
   add $1,$2
 lpe

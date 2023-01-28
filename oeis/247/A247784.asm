@@ -6,8 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,247780 ; Numbers k such that A247778(k+1) - A247778(k) = 2.
+  seq $3,247785 ; Numbers k such that A247784(k+1) = A247784(k).
   sub $3,1
+  sub $3,$1
   add $1,1
   add $2,$3
   sub $2,$0

@@ -7,8 +7,14 @@ pow $2,2
 lpb $2
   mov $5,1
   add $5,$1
-  mov $3,$1
-  seq $3,2477 ; Wonderful Demlo numbers: a(n) = ((10^n - 1)/9)^2.
+  mov $6,10
+  pow $6,$1
+  mul $6,5
+  bin $6,2
+  div $6,405
+  mul $6,40
+  add $6,1
+  mov $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

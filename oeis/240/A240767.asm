@@ -1,27 +1,16 @@
 ; A240767: Numbers n such that n^k + (n-1)^k + ... + 3^k + 2^k is prime for some natural number k.
-; Submitted by Science United
+; Submitted by TankbusterGames
 ; 2,3,4,7,8,11,12,16
 
-add $0,3
+mov $1,$0
+mov $3,2
 lpb $0
-  sub $0,3
-  trn $3,1
-  sub $0,$3
+  sub $0,1
+  div $0,2
   mov $2,$0
-  lpb $2
-    mov $1,$2
-    sub $1,1
-    mov $5,2
-    gcd $5,$1
-    mul $1,4
-    add $1,$5
-    add $1,2
-    div $1,2
-    sub $1,1
-    trn $2,6
-    add $4,$1
-  lpe
-  mov $3,9
+  mul $2,$3
+  add $1,$2
+  mov $3,1
 lpe
-mov $0,$4
+mov $0,$1
 add $0,2

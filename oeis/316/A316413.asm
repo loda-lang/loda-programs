@@ -6,7 +6,15 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,326568 ; Denominator of the average of the multiset of prime indices of n.
+  add $3,1
+  mov $7,$3
+  seq $7,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
+  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mov $5,$7
+  gcd $5,$3
+  mov $6,$3
+  div $6,$5
+  mov $3,$6
   cmp $3,1
   sub $0,$3
   add $1,1

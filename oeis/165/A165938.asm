@@ -5,5 +5,14 @@
 add $0,1
 pow $0,2
 sub $0,1
-seq $0,78057 ; Expansion of (1+x)/(1-2*x-x^2).
+mov $1,1
+mov $2,1
+lpb $0
+  sub $0,1
+  add $1,$2
+  mov $3,$1
+  add $1,$2
+  mov $2,$3
+lpe
+mov $0,$1
 mul $0,2

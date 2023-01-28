@@ -1,15 +1,16 @@
 ; A213681: a(n) = a(n-1)^2/2 - 4 with a(0) = 6.
-; Submitted by Fardringle
+; Submitted by TankbusterGames
 ; 6,14,94,4414,9741694,47450300994814,1125765532249223239027447294,633674016800188444301553476967536472012841942973961214
-; Formula: a(n) = 8*b(n)-2, b(n) = 2*binomial(2*b(n-1),2), b(0) = 1
 
 mov $1,1
 lpb $0
   sub $0,1
+  dif $0,10
   mul $1,2
   bin $1,2
   mul $1,2
 lpe
 mov $0,$1
-mul $0,8
-sub $0,2
+mul $0,4
+sub $0,1
+mul $0,2

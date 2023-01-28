@@ -26,7 +26,6 @@ lpb $3
   sub $0,$3
   trn $3,6
 lpe
-sub $0,4
+sub $0,5
 add $0,$4
-sub $0,1
 sub $0,$2

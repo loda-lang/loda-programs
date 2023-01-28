@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,137804 ; a(n) = floor(n*(4*sqrt(2)+9)/7).
+  seq $3,292641 ; Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
+  sub $3,1
+  sub $3,$1
   mov $5,$3
   sub $3,1
   seq $3,80764 ; First differences of A049472, floor(n/sqrt(2)).

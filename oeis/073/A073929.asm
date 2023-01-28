@@ -6,5 +6,26 @@ mov $1,$0
 cmp $1,1
 trn $0,1
 add $0,2
-seq $0,2251 ; Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
+mov $2,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$2
+  add $0,$4
+  sub $0,1
+  mov $6,$0
+  seq $6,1961 ; A Beatty sequence: floor(n * (sqrt(5) - 1)).
+  div $6,2
+  add $0,1
+  mul $0,2
+  mul $0,$6
+  div $0,2
+  mov $3,$4
+  mul $3,$0
+  add $5,$3
+lpe
+min $2,1
+mul $2,$0
+mov $0,$5
+sub $0,$2
 add $0,$1

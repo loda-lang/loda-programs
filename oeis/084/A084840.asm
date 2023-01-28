@@ -12,8 +12,16 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  mov $5,$0
+  seq $5,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
   sub $0,1
-  seq $0,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
+  mul $0,2
+  sub $0,$5
+  mul $0,2
+  mov $4,$0
+  add $4,1
+  div $0,$4
+  mod $0,2
   add $1,$0
 lpe
 mov $0,$1

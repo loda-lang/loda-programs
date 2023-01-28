@@ -1,7 +1,18 @@
 ; A069659: Largest n-digit perfect power.
 ; Submitted by Jamie Morken(w4)
 ; 9,81,961,9801,99856,998001,9998244,99980001,999950884,9999800001,99999515529,999998000001,9999995824729,99999980000001,999999961946176,9999999800000001,99999999989350756,999999998000000001
-; Formula: a(n) = A049416(n)^2
 
-seq $0,49416 ; Largest number whose square has n digits.
+add $0,1
+mov $2,$0
+mov $0,10
+pow $0,$2
+mov $1,$0
+lpb $0
+  add $2,$1
+  div $2,$0
+  add $2,1
+  add $0,$2
+  div $0,2
+lpe
+sub $0,1
 pow $0,2

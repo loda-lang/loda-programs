@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,42968 ; Numbers not divisible by 4.
+  mul $2,4
+  div $2,3
+  add $2,1
   trn $0,4
   add $1,$2
 lpe

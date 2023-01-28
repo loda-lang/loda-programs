@@ -7,7 +7,9 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,249036 ; a(1)=1, a(2)=2; thereafter a(n) = a(n-1-(number of even terms so far)) + a(n-1-(number of odd terms so far)).
+  seq $0,88720 ; Unique monotone sequence satisfying a(a(a(n))) = 2n.
+  sub $0,1
+  div $0,2
   gcd $0,2
   mov $5,$0
   mul $5,2

@@ -4,7 +4,13 @@
 
 mov $1,4
 pow $1,$0
-seq $0,284354 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
+mov $2,2
+pow $2,$0
+gcd $0,2
+add $0,2
+mul $0,$2
+div $0,2
+sub $0,1
 dif $0,2
 add $0,$1
 add $0,1

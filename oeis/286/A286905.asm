@@ -4,6 +4,19 @@
 
 mov $1,$0
 mul $1,5
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+add $0,1
+mov $2,1
+mov $4,12
+lpb $4
+  sub $4,1
+  add $3,$2
+  mul $2,2
+  add $2,$3
+lpe
+mul $2,$0
+div $2,$3
+add $2,$0
+mov $0,$2
+mul $0,2
 sub $0,5
 sub $0,$1

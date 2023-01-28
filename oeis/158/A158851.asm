@@ -4,6 +4,14 @@
 
 mov $1,$0
 add $1,2
+mov $2,1
 add $0,1
-seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+lpb $0
+  mov $3,$2
+  gcd $3,$0
+  mul $2,$0
+  div $2,$3
+  sub $0,1
+lpe
+mov $0,$2
 mod $0,$1

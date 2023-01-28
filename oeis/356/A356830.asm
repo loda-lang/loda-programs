@@ -1,11 +1,33 @@
 ; A356830: Number of vertex cuts in the n-prism graph.
 ; Submitted by Fardringle
 ; 0,2,12,88,520,2654,12376,54612,232788,970538,3988644,16239088,65709280,264814166,1064414128,4271035692,17118683052,68563527650,274481537148,1098506723080,4395504614584,17585769696206,70352578566664,281434319454084,1125797816327940
-; Formula: a(n) = 2*(n+5)+(A356829(n)-10)
 
 mov $1,$0
 add $1,5
 mul $1,2
-seq $0,356829 ; Number of vertex cuts in the n-Möbius ladder.
-sub $0,10
+mov $2,$0
+add $2,1
+mul $2,2
+add $0,1
+mov $4,1
+mov $6,$0
+mov $7,-1
+lpb $0
+  sub $0,1
+  add $7,$4
+  add $7,$4
+  add $7,$6
+  mov $8,1
+  add $8,$5
+  add $4,$6
+  add $4,$8
+  mov $5,$6
+  add $5,$7
+lpe
+mov $3,2
+pow $3,$2
+mov $0,$5
+mul $0,-1
+sub $0,11
+add $0,$3
 add $0,$1

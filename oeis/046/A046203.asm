@@ -5,8 +5,14 @@
 mov $2,1815
 lpb $2
   sub $2,8
+  mov $6,$1
+  mod $6,-2
   mov $3,$1
-  seq $3,46205 ; In Leibniz's Harmonic Triangle, write numerator first and then denominator of each element.
+  mul $3,$6
+  div $3,2
+  seq $3,132751 ; Triangle T(n, k) = 2/Beta(n-k+1, k) - 1, read by rows.
+  div $3,2
+  add $3,1
   mov $5,$3
   mul $3,338
   gcd $3,4

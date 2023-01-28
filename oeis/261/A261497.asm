@@ -10,8 +10,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,359108 ; a(n) = A128899(2*n, n) = 2*binomial(4*n - 1, 3*n) for n >= 1 and a(0) = 1.
-  add $3,$0
+  mov $4,$0
+  mul $4,4
+  bin $4,$0
+  dif $4,2
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

@@ -10,8 +10,14 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,267816 ; Decimal representation of the n-th iteration of the "Rule 221" elementary cellular automaton starting with a single ON (black) cell.
-  add $3,$0
+  mov $4,2
+  pow $4,$0
+  bin $4,2
+  mul $4,6
+  sub $4,2
+  div $4,3
+  mul $4,2
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

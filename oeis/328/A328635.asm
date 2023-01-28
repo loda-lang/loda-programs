@@ -8,7 +8,8 @@ mul $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,328578 ; Index of the least prime not dividing A276086(A276086(n)): a(n) = A257993(A276087(n)).
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  seq $3,328570 ; Index of the least significant zero digit in the primorial base expansion of n, when the rightmost digit is in the position 1.
   cmp $3,5
   sub $0,$3
   add $1,1

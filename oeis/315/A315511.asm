@@ -3,8 +3,12 @@
 
 mov $2,$0
 mul $2,2
-mov $0,$2
-seq $0,191276 ; Numbers that are congruent to {0, 1, 4, 5, 7, 9, 11} mod 12.
+mul $0,72
+add $0,43
+div $0,28
+mul $0,8
+div $0,6
+sub $0,1
 add $2,$0
 mov $1,$2
 cmp $1,0

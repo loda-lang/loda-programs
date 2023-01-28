@@ -23,6 +23,5 @@ lpb $0
   lpe
   mul $2,$6
 lpe
-mov $0,$2
-trn $1,$0
+trn $1,$2
 mov $0,$1

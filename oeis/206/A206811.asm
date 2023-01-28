@@ -14,10 +14,9 @@ lpb $0
   sub $0,3
   add $3,$4
 lpe
-mov $0,$3
 mov $1,1
 add $1,$2
 add $1,4
-mul $1,$0
+mul $1,$3
 mov $0,$1
 div $0,2

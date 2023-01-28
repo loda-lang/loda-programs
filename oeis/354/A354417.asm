@@ -4,8 +4,14 @@
 
 mov $1,1
 lpb $0
+  mov $4,$0
+  min $4,1
   mov $2,$0
-  seq $2,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
+  trn $2,1
+  seq $2,144338 ; Squarefree numbers > 1.
+  add $4,$2
+  mov $2,$4
+  sub $2,1
   mul $3,$2
   add $3,$1
   sub $0,1

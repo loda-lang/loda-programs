@@ -8,7 +8,15 @@ lpb $2
   sub $2,1
   add $0,$2
   trn $0,1
-  seq $0,57889 ; Bit-reverse of n, including as many leading as trailing zeros.
+  mov $3,$0
+  seq $3,70939 ; Length of binary representation of n.
+  seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+  mov $4,$0
+  seq $4,70939 ; Length of binary representation of n.
+  sub $3,$4
+  mov $5,2
+  pow $5,$3
+  mul $0,$5
 lpe
 min $1,1
 add $0,1

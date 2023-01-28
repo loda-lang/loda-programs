@@ -1,23 +1,23 @@
 ; A023405: If any power of 2 ends with k 4's and 9's, they must be the first k terms of this sequence in reverse order.
-; Submitted by emoga
+; Submitted by The Chaser
 ; 4,4,9,4,9,9,4,9,4,9,4,4,9,9,4,9,4,9,9,9,4,4,4,4,9,4,4,4,4,9,9,9,9,4,9,4,4,9,9,4,4,9,9,4,9,4,4,9,4,9,4,9,4,4,4,4,4,4,9,9,9,9,4,9,4,4,4,9,9,4,4,9,4,4,9,9,4,4,9,9,9,4,9,9,9,9,9,9,4,4,9,4,4,9,9,9,9,9,9,4
+; Formula: a(n) = e(n)+2, b(n) = b(n-1)/2+5*c(n-2)*(5*((b(n-1)/2)%2)+4), b(3) = 618, b(2) = 236, b(1) = 22, b(0) = 4, c(n) = 5*c(n-1), c(3) = 625, c(2) = 125, c(1) = 25, c(0) = 5, d(n) = 0, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = 5*((b(n-1)/2+d(n-1))%2)+2, e(3) = 2, e(2) = 7, e(1) = 2, e(0) = 2
 
-mov $1,6
-mov $2,3
-add $0,2
+mov $2,1
+add $0,1
 lpb $0
   sub $0,1
-  mul $0,2
   div $1,2
-  mov $3,$0
   add $3,$1
   mod $3,2
-  add $3,3
+  mul $3,5
+  add $3,2
+  mov $4,$3
+  add $3,2
   mul $3,$2
-  div $0,2
   add $1,$3
   mul $2,5
+  mov $3,0
 lpe
-mov $0,$3
-add $0,4
-mod $0,10
+mov $0,$4
+add $0,2

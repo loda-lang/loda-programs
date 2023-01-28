@@ -4,5 +4,18 @@
 mov $1,$0
 cmp $1,2
 cmp $1,0
-seq $0,282004 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,2
+  mov $3,$4
+  mul $3,2
+  add $3,1
+  add $4,$2
+  mov $2,$3
+lpe
+sub $4,1
+mov $0,$2
+mod $0,$4
+add $0,1
 mul $0,$1

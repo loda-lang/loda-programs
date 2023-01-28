@@ -4,8 +4,13 @@
 
 mov $1,$0
 mul $1,2
+mov $2,1
 pow $0,3
-seq $0,1650 ; k appears k times (k odd).
+lpb $0
+  add $2,2
+  trn $0,$2
+lpe
+mov $0,$2
 sub $0,$1
 div $0,2
 add $0,1

@@ -3,8 +3,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,257075 ; a(n) = (-1)^(n mod 3).
-  add $3,$2
+  mod $2,3
+  mov $5,-1
+  bin $5,$2
+  add $3,$5
   mov $4,36
   mul $4,$3
   sub $0,1

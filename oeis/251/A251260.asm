@@ -9,7 +9,10 @@ lpb $2
   mov $0,$1
   sub $0,$2
   dif $0,2
-  seq $0,253186 ; Number of connected unlabeled loopless multigraphs with 3 vertices and n edges.
+  mov $4,$0
+  add $4,6
+  mul $0,$4
+  div $0,12
   add $0,1
   add $3,$0
 lpe

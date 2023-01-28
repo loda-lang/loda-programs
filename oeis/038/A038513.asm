@@ -7,13 +7,20 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
-  mov $5,$1
-  seq $5,21355 ; Decimal expansion of 1/351.
+  mov $6,$1
+  mul $6,2
+  mod $6,3
+  mov $5,$6
+  add $5,8
+  mod $5,10
   div $5,2
   mov $3,$1
   add $3,4
-  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mov $7,$3
+  seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$7
   sub $3,$5
+  add $3,1
   cmp $3,0
   sub $0,$3
   add $1,4

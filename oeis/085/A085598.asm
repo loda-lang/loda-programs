@@ -6,8 +6,13 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  trn $6,2
   mov $3,$1
-  seq $3,164029 ; a(n) = nonprime(n) + (-1)^(nonprime(n)).
+  mul $3,2
+  sub $3,$6
+  trn $3,1
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

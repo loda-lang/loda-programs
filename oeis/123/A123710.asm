@@ -5,7 +5,24 @@
 mov $1,$0
 cmp $1,1
 trn $0,1
-seq $0,134612 ; Nonprime numbers such that the root mean cube of their prime factors is a prime (where the root mean cube of c and d is ((c^3+d^3)/2)^(1/3)).
+mov $3,$0
+add $3,6
+pow $3,3
+lpb $3
+  mov $4,$2
+  seq $4,73184 ; Number of cubefree divisors of n.
+  sub $4,1
+  cmp $4,2
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1
 add $0,$1
 add $1,$0
 mov $0,$1

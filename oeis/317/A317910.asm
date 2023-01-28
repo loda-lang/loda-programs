@@ -4,5 +4,16 @@
 
 mov $1,$0
 add $1,1
-seq $0,36469 ; Partial sums of A000009 (partitions into distinct parts).
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,25065 ; Number of palindromic partitions of n.
+  add $5,1
+  add $2,$3
+  mov $4,$5
+lpe
+mov $0,$2
 sub $0,$1

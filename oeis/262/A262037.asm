@@ -3,7 +3,13 @@
 
 mul $0,10
 max $1,$0
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-sub $1,$0
+lpb $0
+  mov $3,$0
+  mod $3,10
+  div $0,10
+  mul $2,10
+  add $2,$3
+lpe
+sub $1,$2
 div $1,9
 mov $0,$1

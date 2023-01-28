@@ -10,7 +10,9 @@ lpb $4
   sub $0,$4
   mov $1,$4
   bin $1,$0
-  seq $0,26375 ; a(n) = Sum_{k=0..n} binomial(n,k)*binomial(2*k,k).
+  seq $0,242586 ; Expansion of 1/(2*sqrt(1-x))*(1/sqrt(1-x)+1/(sqrt(1-5*x))).
+  mul $0,2
+  sub $0,1
   mul $1,$0
   add $3,$1
 lpe

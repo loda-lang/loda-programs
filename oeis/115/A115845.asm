@@ -7,8 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,169958 ; a(n) = binomial(9*n, n).
+  mov $5,9
+  mul $5,$1
+  bin $5,$1
+  mov $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

@@ -5,7 +5,20 @@
 add $0,2
 mov $1,38
 sub $1,$0
-seq $0,210677 ; a(n)=a(n-1)+a(n-2)+n+1, a(0)=a(1)=1.
+mov $4,1
+mov $5,1
+lpb $0
+  sub $0,1
+  add $4,1
+  add $6,$4
+  sub $6,$3
+  sub $3,1
+  mov $4,1
+  div $5,-1
+  add $5,$6
+  add $6,$5
+lpe
+mov $0,$5
 sub $0,112
 mov $2,$1
 mul $2,3

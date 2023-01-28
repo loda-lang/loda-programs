@@ -5,7 +5,20 @@
 mov $1,$0
 add $0,2
 add $1,$0
-seq $1,327998 ; a(n) = (n!/floor(n/2)!^2)^2.
-seq $0,121566 ; a(n) is the denominator of Sum_{i=1..n} i!/(i^2).
-gcd $1,$0
+mov $2,$1
+div $2,2
+bin $1,$2
+mov $4,1
+lpb $0
+  mul $3,$0
+  mul $3,$0
+  add $3,$4
+  mov $5,$0
+  sub $0,1
+  mul $4,$5
+lpe
+gcd $3,$4
+div $4,$3
+gcd $1,$4
+mov $0,$4
 div $0,$1

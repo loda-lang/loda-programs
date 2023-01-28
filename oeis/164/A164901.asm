@@ -9,7 +9,12 @@ mov $3,1
 lpb $0
   sub $0,1
   add $3,5
-  seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
+  mov $4,$3
+  cmp $4,0
+  add $4,$3
+  seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $5,$4
+  mov $3,$5
 lpe
 add $2,1
 mov $1,$2

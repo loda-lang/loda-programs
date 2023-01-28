@@ -1,11 +1,17 @@
 ; A294083: a(n) is the n-th nonprime number raised to the n-th prime number.
 ; Submitted by Science United
 ; 1,64,7776,2097152,31381059609,10000000000000,2218611106740436992,5976303958948914397184,1122274146401882171630859375,83076749736557242056487941267521536,819308872942260126404286866009182175232,1374389534720000000000000000000000000000000000000
-; Formula: a(n) = A018252(n)^A000040(n)
+; Formula: a(n) = (A122825(-((-2*n)/(n+1))+n+1)-1)^A000040(n)
 
+mov $3,$0
+mul $3,-2
 mov $1,$0
-seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+add $1,1
+div $3,$1
 seq $0,40 ; The prime numbers.
+sub $1,$3
+seq $1,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $1,1
 mov $2,$1
 pow $2,$0
 mov $0,$2

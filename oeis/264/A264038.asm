@@ -4,8 +4,18 @@
 
 mov $1,$0
 add $1,1
+mov $3,1
+mov $6,1
 add $0,1
-seq $0,98600 ; a(n) = Fibonacci(n-1) + Fibonacci(n+1) - (-1)^n.
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mul $6,-1
+  add $3,$5
+  sub $3,$6
+  mov $5,$4
+lpe
+mov $0,$3
 mul $0,-1
 mov $2,2
 pow $2,$1

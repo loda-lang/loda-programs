@@ -11,10 +11,15 @@ lpb $5
   add $3,$5
   mov $4,$0
   add $4,$3
-  seq $4,163982 ; Real part of the coefficient [x^n] of the expansion of (1+i)/(1-i*exp(x)) - 1 multiplied by 2*n!, where i is the imaginary unit.
+  mov $6,$4
+  seq $6,122045 ; Euler (or secant) numbers E(n).
+  seq $4,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  add $4,$6
+  sub $7,$4
   add $0,2
   mov $2,$5
-  mul $2,$4
+  mul $2,$7
+  mov $4,$7
   add $1,$2
 lpe
 min $3,1

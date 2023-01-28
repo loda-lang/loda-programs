@@ -8,7 +8,12 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,37445 ; Number of infinitary divisors (or i-divisors) of n.
+  seq $3,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
+  gcd $3,256
+  mul $3,2
+  sub $3,2
+  div $3,2
+  add $3,1
   cmp $3,4
   sub $0,$3
   add $1,1

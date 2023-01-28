@@ -1,13 +1,19 @@
 ; A130291: Number of quadratic residues (including 0) modulo the n-th prime.
 ; Submitted by Science United
 ; 2,2,3,4,6,7,9,10,12,15,16,19,21,22,24,27,30,31,34,36,37,40,42,45,49,51,52,54,55,57,64,66,69,70,75,76,79,82,84,87,90,91,96,97,99,100,106,112,114,115,117,120,121,126,129,132,135,136,139,141,142,147,154,156,157,159,166,169,174,175,177,180,184,187,190,192,195,199,201,205,210,211,216,217,220,222,225,229,231,232,234,240,244,246,250,252,255,261,262,271
-; Formula: a(n) = (A173919(2*max(n-1,0)+2)+1)/2
 
 trn $0,1
 mul $0,2
-add $0,2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
-add $1,1
-mov $0,$1
+mov $2,4
+mov $3,$0
+pow $3,4
+lpb $3
+  max $1,$2
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $1,2
+  sub $0,$1
+  add $2,2
+  sub $3,$0
+lpe
+add $0,$2
 div $0,2

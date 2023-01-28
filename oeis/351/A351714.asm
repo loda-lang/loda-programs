@@ -7,8 +7,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
+  mov $6,$3
+  seq $6,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+  add $6,$3
   mov $5,$3
-  seq $5,116543 ; Number of terms in greedy representation of n in terms of the Lucas numbers.
+  add $5,$6
+  add $5,2
+  div $5,5
+  seq $5,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
   mod $3,$5
   cmp $3,0
   sub $0,$3

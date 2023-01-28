@@ -1,4 +1,4 @@
-; A089154: A palindromic matrix version of the alternating matrix sequence at the X^3 level 3 X 3: BAAB.
+; A089154: Expansion of 2*x*(x+2) / ((x-1)*(x^2+6*x-1)).
 ; Submitted by Jamie Morken(s4)
 ; 4,30,190,1176,7252,44694,275422,1697232,10458820,64450158,397159774,2447408808,15081612628,92937084582,572704120126,3529161805344,21747674952196,134015211518526,825838944063358,5089048875898680
 ; Formula: a(n) = 6*a(n-1)+a(n-2)+6, a(1) = 30, a(0) = 4

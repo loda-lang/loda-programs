@@ -4,5 +4,15 @@
 
 add $0,1
 mov $1,$0
-seq $0,336951 ; E.g.f.: 1 / (1 - x * exp(3*x)).
+mov $4,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $3,$0
+  mul $3,3
+  pow $3,$2
+  mul $4,$2
+  add $4,$3
+lpe
+mov $0,$4
 div $0,$1

@@ -4,7 +4,15 @@
 
 add $0,1
 mov $1,$0
-seq $0,77113 ; Number of integer cubes <= n^2.
-sub $1,$0
+pow $0,2
+lpb $0
+  sub $0,1
+  add $2,6
+  add $3,$2
+  trn $0,$3
+lpe
+div $2,6
+add $2,1
+sub $1,$2
 mov $0,$1
 add $0,1

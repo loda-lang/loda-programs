@@ -6,8 +6,14 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,21227 ; Decimal expansion of 1/223.
+  mov $5,10
+  pow $5,$1
+  div $5,3
+  mul $5,120
+  add $5,36
+  mov $3,$5
+  div $3,892
+  mod $3,10
   cmp $3,0
   sub $0,$3
   add $1,1

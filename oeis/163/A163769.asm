@@ -7,8 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,129069 ; Numbers n such that (n-3)/2 is prime.
-  sub $3,1
+  seq $3,40 ; The prime numbers.
+  mul $3,2
+  add $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   cmp $3,0

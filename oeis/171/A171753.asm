@@ -4,6 +4,16 @@
 
 mov $1,3
 pow $1,$0
-seq $0,83878 ; a(0)=1, a(1)=3, a(n)=6a(n-1)-7a(n-2), n>=2.
+mov $2,1
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $3,$4
+  mul $4,4
+  add $4,$2
+  mul $2,2
+  add $2,$3
+lpe
+mov $0,$2
 add $0,$1
 div $0,2

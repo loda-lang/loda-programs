@@ -8,7 +8,7 @@ mov $3,-2
 bin $3,$0
 sub $2,$3
 dif $3,$2
-trn $0,$3
+sub $0,$3
 mov $1,10
 pow $1,$0
 mov $0,$1

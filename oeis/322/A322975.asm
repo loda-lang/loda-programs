@@ -13,7 +13,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,2
-  seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $0,105700 ; a(n)=1 if n is a prime, 2 if n is a semiprime, otherwise 0.
   mov $5,1
   cmp $5,$0
   mul $1,$5

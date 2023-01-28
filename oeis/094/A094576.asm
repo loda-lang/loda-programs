@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,93527 ; Denominators of even raw moments in the distribution of line lengths for lines picked at random in the unit disk.
+  add $3,1
+  mov $5,$3
+  mul $3,2
+  bin $3,$5
+  gcd $3,$5
+  div $5,$3
+  mov $3,$5
   dif $3,3
   dif $3,2
   cmp $3,1

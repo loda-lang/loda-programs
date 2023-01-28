@@ -12,8 +12,10 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  mov $5,$0
   sub $0,1
-  seq $0,7956 ; Product of the proper divisors of n.
+  seq $0,7955 ; Product of divisors of n.
+  div $0,$5
   mul $1,$0
   add $3,$1
 lpe

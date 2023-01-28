@@ -1,10 +1,10 @@
 ; A359474: a(n) = 1 if the product of exponents in the prime factorization of n is 2, otherwise 0.
-; Submitted by Science United
+; Submitted by Kotenok2000
 ; 0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0
 
 seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 sub $0,1
-seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+seq $0,73093 ; Number of prime power divisors of n.
 sub $0,2
 mov $3,-1
 mul $3,$0

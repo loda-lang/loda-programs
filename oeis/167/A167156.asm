@@ -6,6 +6,19 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,145393 ; Number of inequivalent sublattices of index n in square lattice, where two sublattices are considered equivalent if one can be rotated or reflected to give the other, with that rotation or reflection preserving the parent square lattice.
+add $0,1
+lpb $0
+  mov $4,$3
+  gcd $4,$0
+  cmp $4,$0
+  add $0,2
+  mul $4,$0
+  add $4,2
+  div $4,4
+  sub $0,3
+  add $2,$4
+  sub $3,1
+lpe
+add $0,$2
 mul $0,$1
 div $0,2

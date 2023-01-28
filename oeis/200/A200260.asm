@@ -8,7 +8,10 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $1,$2
-  seq $1,200263 ; a(n) = 1 iff n-th prime has an odd digit sum.
+  mul $1,2
+  seq $1,173919 ; Numbers that are prime or one less than a prime.
+  seq $1,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  mod $1,2
   sub $0,$1
   add $2,1
   sub $3,$0

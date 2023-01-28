@@ -8,8 +8,11 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  max $0,0
-  seq $0,46163 ; Reduced denominators of (n-1)^2/(n^2 + n + 1).
+  mov $6,$0
+  add $6,3
+  mul $0,$6
+  add $0,3
+  dif $0,3
   sub $0,1
   mov $2,$3
   mul $2,$0

@@ -1,15 +1,13 @@
 ; A232806: a(n) = a(n-1)^2/2 + 5/2,  a(0) = 1.
-; Submitted by NeoGen
+; Submitted by TankbusterGames
 ; 1,3,7,27,367,67347,2267809207,2571479299676984427,3306252894333617140505030630200259167
-; Formula: a(n) = 2*b(n)-1, b(n) = 2*binomial(b(n-1),2)+2, b(0) = 1
+; Formula: a(n) = (a(n-1)^2)/2+3, a(0) = 1
 
 mov $1,1
 lpb $0
   sub $0,1
-  bin $1,2
-  add $1,1
-  mul $1,2
+  pow $1,2
+  div $1,2
+  add $1,3
 lpe
 mov $0,$1
-mul $0,2
-sub $0,1

@@ -7,8 +7,15 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,122857 ; Expansion of (phi(q)^2 + phi(q^3)^2) / 2 in powers of q where phi() is a Ramanujan theta function.
+  trn $2,1
+  mov $5,$2
+  seq $2,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $2,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
+  gcd $2,$2
+  mul $2,2
+  sub $2,1
+  sub $2,$5
+  add $2,$0
   sub $4,1
   add $1,$2
   mov $3,2

@@ -9,7 +9,14 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,35444 ; Number of partitions of n into parts 4k.
+  dif $2,2
+  mov $4,-1
+  pow $4,$2
+  add $4,1
+  dif $2,2
+  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $2,$4
+  div $2,2
   add $1,$2
   add $3,3
 lpe

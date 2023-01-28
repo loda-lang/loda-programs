@@ -7,7 +7,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,278043 ; Number of 1's in tribonacci representation of n (cf. A278038).
+  seq $3,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $5,$3
   gcd $5,$1
   div $3,$5

@@ -9,7 +9,8 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,243949 ; Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
+  seq $2,1850 ; Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
+  pow $2,2
   add $1,5
   add $1,$2
 lpe

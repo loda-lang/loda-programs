@@ -5,8 +5,12 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $1,$0
-  max $1,0
-  seq $1,75101 ; Numerator of 2^n/n.
+  add $1,1
+  mov $2,2
+  pow $2,$1
+  gcd $1,$2
+  div $2,$1
   mov $0,1
+  mov $1,$2
 lpe
 mov $0,$1

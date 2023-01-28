@@ -1,7 +1,38 @@
 ; A044341: Numbers n such that string 0,9 occurs in the base 10 representation of n but not of n-1.
 ; Submitted by Christian Krause
 ; 109,209,309,409,509,609,709,809,909,1009,1090,1109,1209,1309,1409,1509,1609,1709,1809,1909,2009,2090,2109,2209,2309,2409,2509,2609,2709,2809,2909,3009,3090,3109,3209,3309,3409,3509
-; Formula: a(n) = A044721(n)+1
+; Formula: a(n) = (20*((2*((5*((112*((10*n+9)/11)+88*((10*n+21)/11)+304)/10)-90)/2))%4)^2+6*((2*((5*((112*((10*n+9)/11)+88*((10*n+21)/11)+304)/10)-90)/2))%4)^2+6*((5*((112*((10*n+9)/11)+88*((10*n+21)/11)+304)/10)-90)/2)+13)/3+1
 
-seq $0,44721 ; Numbers n such that string 0,8 occurs in the base 10 representation of n but not of n+1.
+mul $0,10
+add $0,12
+mov $3,$0
+add $0,9
+div $0,11
+mul $0,22
+sub $3,3
+div $3,11
+add $3,3
+mul $3,14
+add $0,$3
+add $0,$3
+sub $0,8
+mul $0,4
+div $0,10
+sub $0,18
+mul $0,5
+div $0,2
+mul $0,2
+mov $2,$0
+add $2,5
+mod $0,4
+pow $0,2
+mul $0,2
+mov $1,$2
+add $1,$0
+mul $0,10
+mul $1,3
+sub $1,2
+add $1,$0
+mov $0,$1
+div $0,3
 add $0,1

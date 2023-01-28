@@ -7,10 +7,18 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $4,$0
+  sub $4,2
   sub $0,1
+  mov $6,$0
+  div $6,3
+  mov $5,$0
+  div $5,5
+  add $5,$6
   mov $2,$0
-  max $2,0
-  seq $2,8651 ; Molien series of binary icosahedral group.
+  div $2,2
+  add $2,$5
+  sub $2,$4
   add $1,$2
 lpe
 mov $0,$1

@@ -1,10 +1,23 @@
 ; A276785: Number of binary strings of length n containing the substring 11011.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,4,12,31,75,175,399,894,1975,4313,9330,20026,42704,90558,191117,401654,841016,1755249,3652663,7581369,15698735,32438224,66897295,137718495,283056086,580906268,1190538424,2436854280,4982012329,10174319500,20756971236,42306806495,86153127395
-; Formula: a(n) = 2^n-A210021(n)
 
 mov $1,2
 pow $1,$0
-seq $0,210021 ; Number of binary words of length n containing no subword 11011.
-sub $1,$0
+mov $2,1
+mov $3,1
+mov $4,1
+mov $6,1
+lpb $0
+  sub $0,1
+  add $2,$4
+  mov $5,$7
+  add $5,$2
+  mov $7,$3
+  add $3,$6
+  mov $6,$2
+  mov $2,$4
+  mov $4,$5
+lpe
+sub $1,$4
 mov $0,$1

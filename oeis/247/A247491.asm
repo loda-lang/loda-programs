@@ -11,7 +11,14 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,16098 ; Number of crossing set partitions of {1,2,...,n}.
+  mov $6,$0
+  add $6,1
+  mov $5,$0
+  mul $5,2
+  bin $5,$0
+  div $5,$6
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  sub $0,$5
   mul $1,$0
   mul $3,-1
   add $3,$1

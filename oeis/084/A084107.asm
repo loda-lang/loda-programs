@@ -1,11 +1,17 @@
 ; A084107: A014486-encoding of "Complete Binary Trees".
-; Submitted by Stony666
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,2,50,14642,1016674610,4489135110542145842,83940259113354708787282267381662562610,28755706180189132304920279902696353117047700481289459579932708798287463397682
+; Formula: a(n) = c(n)/4, b(n) = b(n-1)^2, b(1) = 4, b(0) = 2, c(n) = ((b(n-1)^2+c(n-1))/2)*b(n-1)^2+c(n-1), c(1) = 8, c(0) = 0
 
-mov $1,$0
+mov $2,2
 lpb $0
-  sub $1,1
-  mov $0,$1
-  seq $2,80310 ; Rewrite 0->100 in the binary expansion of n (but leaving single zero as zero) and append 10 to the right.
+  sub $0,1
+  pow $2,2
+  mov $1,$3
+  add $1,$2
+  div $1,2
+  mul $1,$2
+  add $3,$1
 lpe
-mov $0,$2
+mov $0,$3
+div $0,4

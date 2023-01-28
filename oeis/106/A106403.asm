@@ -1,24 +1,17 @@
 ; A106403: Primitive exponents of the Weyl group W(E_8).
-; Submitted by Dingo
+; Submitted by TankbusterGames
 ; 3,15,23,27,35,39,47,59
 
-mov $2,$0
-add $2,8
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,57237 ; Maximum k <= n such that 1, 2, ..., k are all relatively prime to n.
-  sub $3,4
-  cmp $3,2
-  sub $0,$3
+mov $1,$0
+lpb $0
+  add $1,$0
+  sub $0,1
+  div $0,2
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $1,$0
+  sub $0,1
+  div $0,2
 lpe
 mov $0,$1
-div $0,14
 mul $0,4
 add $0,3

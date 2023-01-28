@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,212356 ; Number of terms of the cycle index polynomial Z(D_n) for the dihedral group D_n.
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  min $2,$0
+  add $2,1
   mov $3,$2
   min $3,1
   trn $0,2

@@ -1,13 +1,13 @@
 ; A198959: a(1) = 2, a(n+1) = a(n)^2 - n.
-; Submitted by [AF>Amis des Lapins] Ceclo
+; Submitted by TankbusterGames
 ; 2,3,7,46,2112,4460539,19896408170515,395867058087736049315365218,156710727679038987453730700439845485538142584724187516
+; Formula: a(n) = a(n-1)^2-n, a(1) = 3, a(0) = 2
 
 mov $1,2
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $2,1
+lpb $0
+  sub $0,1
+  sub $2,1
   pow $1,2
-  sub $1,$2
+  add $1,$2
 lpe
 mov $0,$1

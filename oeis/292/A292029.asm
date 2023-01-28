@@ -1,11 +1,21 @@
 ; A292029: Wiener index of the n-folded cube graph.
 ; Submitted by Simon Strandgaard
 ; 1,6,40,200,1056,4928,23808,107136,494080,2173952,9744384,42225664,185679872,795770880,3451518976,14668955648,62970789888,265876668416,1132226150400,4755349831680,20120910954496,84141991264256,354160151101440,1475667296256000,6184144161734656
-; Formula: a(n) = (A130783(n+1)*2^(n+1))/2
+; Formula: a(n) = ((((n+2)*(2^(n+1)-binomial(n+1,(n+1)/2)))/2)*2^(n+1))/2
 
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,130783 ; Maximum value of the n-th difference of a permutation of 0..n.
+mov $2,$0
+add $2,1
+mov $4,$0
+div $0,2
+mov $3,2
+pow $3,$4
+bin $4,$0
+sub $3,$4
+mov $0,$3
+mul $0,$2
+div $0,2
 mul $0,$1
 div $0,2

@@ -1,6 +1,32 @@
 ; A261197: Cubes of the successive terms of the decimal expansion of Pi.
 ; 27,1,64,1,125,729,8,216,125,27,125,512,729,343,729,27,8,27,512,64,216,8,216,64,27,27,512,27,8,343,729,125,0,8,512,512,64,1,729,343,1,216,729,27,729,729,27,343,125,1,0,125,512,8,0,729,343,64,729,64,64
-; Formula: a(n) = A000796(n)^3
 
-seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
+mov $1,1
+mov $2,1
+mov $3,$0
+mul $3,5
+sub $3,1
+lpb $3
+  mov $5,$3
+  mul $5,2
+  add $5,1
+  mul $2,$5
+  mov $5,$0
+  add $5,1
+  mul $1,$3
+  add $1,$2
+  div $1,$5
+  add $1,$0
+  sub $1,2
+  div $2,$5
+  sub $3,1
+lpe
+mov $4,10
+pow $4,$0
+div $2,$4
+mul $1,2
+div $1,$2
+add $1,$4
+mov $0,$1
+mod $0,10
 pow $0,3

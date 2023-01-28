@@ -4,5 +4,23 @@
 
 mov $1,2
 pow $1,$0
-seq $0,6720 ; Somos-4 sequence: a(0)=a(1)=a(2)=a(3)=1; for n >= 4, a(n) = (a(n-1) * a(n-3) + a(n-2)^2) / a(n-4).
+mov $2,1
+mov $3,1
+mov $4,1
+mov $5,1
+sub $0,3
+lpb $0
+  sub $0,1
+  mov $6,$3
+  pow $6,2
+  mov $7,$4
+  mul $7,$2
+  add $7,$6
+  div $7,$5
+  mov $5,$4
+  mov $4,$3
+  mov $3,$2
+  mov $2,$7
+lpe
+mov $0,$2
 mul $0,$1

@@ -13,7 +13,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,62758 ; Product of squares of divisors of n.
+  mov $5,$0
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $0,1
+  pow $0,$5
   mul $1,$0
   add $3,$1
 lpe

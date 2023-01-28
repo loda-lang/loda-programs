@@ -8,7 +8,13 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,141468 ; Zero together with the nonprime numbers A018252.
+  mov $4,$0
+  trn $4,2
+  mul $0,2
+  sub $0,$4
+  sub $0,1
+  seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $0,1
   add $3,$0
 lpe
 mov $0,$3

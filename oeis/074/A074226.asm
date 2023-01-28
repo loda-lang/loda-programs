@@ -7,7 +7,13 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,91338 ; a(n) = (3/n), where (k/n) is the Kronecker symbol.
+  add $3,1
+  mov $4,$3
+  seq $3,121238 ; a(n) = (-1)^(1+n+A088585(n)).
+  mul $4,$3
+  mov $3,$4
+  mod $3,3
+  dif $3,-2
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -10,7 +10,10 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,348507 ; a(n) = A003959(n) - n, where A003959 is multiplicative with a(p^e) = (p+1)^e.
+  mov $4,$0
+  seq $0,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
+  sub $0,1
+  sub $0,$4
   add $3,$0
 lpe
 mov $0,$3

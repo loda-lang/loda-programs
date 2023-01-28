@@ -9,8 +9,16 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
+  mov $5,$0
+  cmp $5,1
   sub $0,1
-  seq $0,120007 ; Mobius transform of sum of prime factors of n with multiplicity (A001414).
-  add $3,$0
+  mov $4,$0
+  seq $4,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $4,$5
+  add $4,1
+  mod $4,2
+  seq $0,214606 ; a(n) = gcd(n, 2^n - 2).
+  mul $4,$0
+  add $3,$4
 lpe
 mov $0,$3

@@ -5,8 +5,6 @@
 mov $1,$0
 sub $0,1
 trn $0,1
-mul $0,2
-div $0,2
 lpb $0
   mov $3,$0
   seq $3,87172 ; Greatest Fibonacci number that does not exceed n.

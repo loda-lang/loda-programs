@@ -7,9 +7,19 @@ add $0,1
 lpb $0
   div $0,2
   gcd $1,$0
-  seq $1,345365 ; a(n) = (2*n)!*Pi^(-2*n)*PolyLog(2*n, 1)*Clausen(2*n - 1)/2, where Clausen(n) = A160014(n, 1).
+  add $1,1
+  mov $3,$1
+  add $3,$1
+  sub $3,1
+  seq $3,350972 ; E.g.f. = tan(x).
+  mul $3,$1
+  mov $4,$3
+  mul $1,2
+  seq $1,96773 ; a(n+2) = 4*a(n) + 1; a(1) = 0, a(2) = 3.
+  gcd $3,$1
+  div $4,$3
   mul $0,2
-  add $2,$1
+  add $2,$4
 lpe
 mov $0,$2
 mul $0,2

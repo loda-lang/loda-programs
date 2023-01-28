@@ -6,7 +6,14 @@ sub $0,1
 lpb $0
   mov $1,$0
   max $1,0
-  seq $1,267622 ; Binary representation of the n-th iteration of the "Rule 187" elementary cellular automaton starting with a single ON (black) cell.
+  mul $1,2
+  mov $2,10
+  pow $2,$1
+  mov $1,$2
+  mul $1,2
+  div $2,45
+  add $1,$2
+  div $1,2
   div $0,$1
 lpe
 mov $0,$1

@@ -5,8 +5,11 @@
 add $0,1
 lpb $0
   div $0,2
+  mov $3,-4
+  pow $3,$0
   mov $1,$0
-  seq $1,28296 ; Expansion of e.g.f. Gudermannian(x) = 2*arctan(exp(x)) - Pi/2.
+  seq $1,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+  div $1,$3
   sub $2,$1
   mul $0,2
 lpe

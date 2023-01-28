@@ -9,8 +9,17 @@ lpb $2
   sub $2,1
   mov $3,$1
   mul $3,2
-  seq $3,323072 ; a(n) = n/A323071(n) = n/gcd(n, 1+A060681(n)).
-  sub $3,1
+  mov $6,$3
+  add $6,1
+  mov $5,$3
+  seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  mov $8,$3
+  add $8,1
+  div $8,$5
+  mov $7,$3
+  mod $7,$8
+  gcd $6,$7
+  div $3,$6
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3

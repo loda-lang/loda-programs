@@ -4,6 +4,23 @@
 
 mov $1,2
 pow $1,$0
-seq $0,192421 ; Constant term of the reduction by x^2->x+1 of the polynomial p(n,x) defined below in Comments.
+mov $2,2
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,2
+  sub $4,$2
+  add $2,$4
+  dif $2,2
+  mul $4,2
+  sub $4,$5
+  mov $5,$3
+  add $6,$3
+  mov $3,$4
+  mov $4,$6
+  add $4,2
+  add $6,$3
+lpe
+mov $0,$2
 mul $0,$1
 div $0,2
