@@ -8,7 +8,18 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
-  seq $2,69039 ; Expansion of x(1+x)^5/(1-x)^7.
-  add $1,$2
+  pow $2,2
+  mov $6,$2
+  pow $6,2
+  add $6,11
+  mov $5,10
+  add $5,$2
+  mul $5,$6
+  mul $5,2
+  mov $4,$2
+  add $4,$5
+  sub $4,207
+  div $4,45
+  add $1,$4
 lpe
 mov $0,$1

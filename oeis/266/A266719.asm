@@ -1,10 +1,10 @@
 ; A266719: Middle column of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
+; Submitted by Cruncher Pete
 ; 1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
-; Formula: a(n) = (binomial(-1,n-3)+1)/2
+; Formula: a(n) = ((2*n-5)/2+3)%2
 
-sub $0,3
-mov $1,-1
-bin $1,$0
-add $1,1
-div $1,2
-mov $0,$1
+mul $0,2
+sub $0,5
+div $0,2
+add $0,3
+mod $0,2

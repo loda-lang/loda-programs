@@ -9,7 +9,9 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  seq $0,85238 ; Sort the numbers 2^i and 3^j. Then a(n) is the exponent of the n-th term.
+  seq $0,6899 ; Numbers of the form 2^i or 3^j.
+  sub $0,1
+  seq $0,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   mov $2,$3
   mul $2,$0
   add $1,$2

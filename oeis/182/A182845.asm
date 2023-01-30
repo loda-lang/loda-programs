@@ -8,7 +8,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,58696 ; Number of ways to partition 2n into positive integers.
+  mul $0,2
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   mov $2,$3
   mul $2,$0
   add $1,$2

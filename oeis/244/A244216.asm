@@ -8,7 +8,18 @@ add $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,99364 ; An inverse Chebyshev transform of (1-x)^2.
+  div $3,2
+  add $3,1
+  mov $6,$3
+  mov $7,$3
+  add $7,1
+  mul $3,2
+  bin $3,$6
+  div $3,$7
+  mov $5,$1
+  mod $5,2
+  seq $5,133480 ; Left 3-step factorial (n,-3)!: a(n) = (-1)^n * A008544(n).
+  mul $3,$5
   sub $0,$3
   mov $4,$0
   max $4,0

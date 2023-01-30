@@ -5,7 +5,21 @@
 mov $1,3
 pow $1,$0
 div $1,2
-seq $0,126566 ; a(0)=1; a(1)=2; a(2)=5; a(3)=14; for n>3: a(n) = 8*a(n-1)-20*a(n-2)+16*a(n-3)-a(n-4).
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,$4
+  sub $4,$5
+  mov $3,$5
+  sub $3,$4
+  mov $4,$6
+  add $5,$2
+  add $5,$3
+  mul $6,4
+  add $6,$3
+  add $6,2
+lpe
+mov $0,$5
 add $0,$1
 mul $0,2
 div $0,4

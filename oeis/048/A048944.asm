@@ -6,8 +6,11 @@ mov $2,$0
 pow $2,2
 add $2,6
 lpb $2
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,238952 ; The size (the number of arcs) in the transitive closure of divisor lattice D(n).
+  seq $3,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+  sub $3,$5
   add $3,1
   mod $3,3
   mod $3,2

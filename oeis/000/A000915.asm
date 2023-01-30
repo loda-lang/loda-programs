@@ -10,8 +10,14 @@ lpb $4
   sub $0,$4
   mov $3,$0
   add $3,1
-  mov $0,$3
-  seq $0,90448 ; Fourth column (m=3) of triangle A090447.
+  add $0,3
+  mov $7,$0
+  mul $7,$0
+  add $0,$7
+  sub $7,1
+  mul $7,$0
+  mul $0,$7
+  div $0,12
   mov $2,2
   mul $2,$3
   mul $2,$0

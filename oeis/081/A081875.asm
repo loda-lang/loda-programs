@@ -9,8 +9,10 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,88218 ; Total number of leaves in all rooted ordered trees with n edges.
-  add $3,$0
+  sub $5,$0
+  bin $5,$0
+  gcd $4,$5
+  add $3,$4
 lpe
 mov $0,$3
 add $0,1

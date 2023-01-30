@@ -7,7 +7,15 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,24916 ; a(n) = Sum_{k=1..n} k*floor(n/k); also Sum_{k=1..n} sigma(k) where sigma(n) = sum of divisors of n (A000203).
+  add $3,1
+  mov $6,$1
+  mul $6,$3
+  div $6,2
+  mov $5,$3
+  mul $5,$3
+  seq $3,244048 ; Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
+  sub $3,$6
+  add $3,$5
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

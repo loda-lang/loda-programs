@@ -8,8 +8,12 @@ lpb $3
   sub $3,1
   mov $0,$4
   add $0,$3
-  trn $0,1
-  seq $0,8500 ; 6-dimensional centered tetrahedral numbers.
+  sub $0,1
+  mov $5,$0
+  bin $5,7
+  add $0,7
+  bin $0,7
+  sub $0,$5
   mov $2,$3
   mul $2,$0
   add $1,$2

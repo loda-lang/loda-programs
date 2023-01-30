@@ -9,8 +9,19 @@ lpb $3
   add $0,$3
   sub $0,1
   mov $2,$0
-  max $2,0
-  seq $2,54735 ; Sums of twin prime pairs.
+  mul $2,2
+  trn $2,1
+  mov $4,$2
+  sub $2,1
+  gcd $2,2
+  div $4,2
+  seq $4,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $4,1
+  mul $4,3
+  add $4,$2
+  mov $2,$4
+  add $2,1
+  mul $2,4
   bin $0,$3
   gcd $1,$2
 lpe

@@ -1,10 +1,19 @@
 ; A074290: Difference between Kolakoski(n)=A000002(n) and 1 (n odd) or 2 (n even).
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,1,-1,0,0,0,0,1,-1,1,0,0,-1,1,-1,0,0,1,-1,1,-1,0,0,0,0,1,-1,0,0,0,-1,1,-1,1,0,0,0,1,-1,0,0,0,0,1,-1,1,-1,0,0,0,-1,1,0,0,0,1,-1,0,0,0,0,1,-1,1,0,0,-1,1,-1,0,0,0,0,1,-1,1,-1,0,0,1,-1,1,0,0,-1,1,-1,1,0,0,0,1,-1,0,0,0,-1,1,0
-; Formula: a(n) = A000002(n)-(n%2+1)
 
 mov $1,$0
 mod $1,2
 add $1,1
-seq $0,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
+mov $3,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $2,$3
+  div $2,2
+  add $4,$2
+  gcd $4,2
+  mul $3,$4
+lpe
+mov $0,$4
 sub $0,$1

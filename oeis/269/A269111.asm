@@ -1,12 +1,16 @@
 ; A269111: a(n) = length of the repeating part of row n of A288097.
+; Submitted by Cruncher Pete
 ; 2,3,2,2,3,2,2,3,2,2,2,2,2,2
 
+mov $1,1
 lpb $0
-  pow $0,2
-  sub $0,1
-  mov $1,$0
-  cmp $1,0
-  div $0,10
+  mov $2,$0
+  mul $2,2
+  mod $2,6
+  mul $2,$1
+  div $0,9
+  mul $1,9
 lpe
-add $1,2
-mov $0,$1
+cmp $2,2
+mov $0,$2
+add $0,2

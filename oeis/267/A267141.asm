@@ -1,7 +1,18 @@
 ; A267141: Number of weeks in n! seconds, for n >= 10.
+; Submitted by Cruncher Pete
 ; 6,66,792,10296,144144,2162160,34594560,588107520,10585935360,201132771840,4022655436800,84475764172800,1858466811801600,42744736671436800,1025873680114483200,25646842002862080000,666817892074414080000
+; Formula: a(n) = 6*((b(n)-10)/10)+6, b(n) = b(n-1)*(n+10), b(1) = 110, b(0) = 10
 
-add $0,10
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-div $0,3628800
+mov $1,1
+mov $2,9
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $1,$2
+lpe
+mov $0,$1
+sub $0,10
+div $0,10
 mul $0,6
+add $0,6

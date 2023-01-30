@@ -1,6 +1,8 @@
 ; A064525: Smallest Fibonacci number with a prime number of decimal digits.
 ; Submitted by Simon Strandgaard
 ; 13,144,10946,1346269,12586269025,1548008755920,14472334024676221,1100087778366101931,10284720757613717413913,11825896447871834976429068427,1454489111232772683678306641953
+; Formula: a(n) = A072351(A000040(n)-1)
 
-seq $0,6093 ; a(n) = prime(n) - 1.
+seq $0,40 ; The prime numbers.
+sub $0,1
 seq $0,72351 ; Smallest n-digit Fibonacci number.

@@ -10,7 +10,10 @@ lpb $3
   add $0,$3
   trn $0,1
   add $0,1
-  seq $0,11965 ; Second differences of Bell numbers.
+  mov $5,$0
+  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  seq $0,33452 ; "STIRLING" transform of squares A000290.
+  add $0,$5
   mov $4,$3
   mul $4,$0
   add $2,$4

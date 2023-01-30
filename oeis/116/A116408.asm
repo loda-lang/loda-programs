@@ -12,8 +12,13 @@ lpb $4
   mov $1,$0
   sub $1,$2
   bin $1,$0
-  seq $0,116400 ; E.g.f. Bessel_I(2,2x)+Bessel_I(3,2x)+Bessel_I(4,2x).
-  mul $1,$0
+  div $0,2
+  mov $5,$0
+  add $0,2
+  sub $5,1
+  add $5,$0
+  bin $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

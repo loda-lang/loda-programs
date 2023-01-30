@@ -9,7 +9,9 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,92248 ; Parity of number of distinct primes dividing n (function omega(n)) parity of A001221.
+  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  sub $3,1
+  mod $3,3
   cmp $3,0
   sub $0,$3
   mov $4,$0

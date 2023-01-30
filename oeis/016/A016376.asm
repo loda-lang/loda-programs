@@ -5,10 +5,12 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,14032 ; Inverse of 23rd cyclotomic polynomial.
+  sub $2,1
+  sub $3,$2
+  mod $3,23
+  pow $3,$3
   sub $0,7
   trn $0,6
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

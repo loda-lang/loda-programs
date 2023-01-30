@@ -6,8 +6,12 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
+  mov $4,$1
+  seq $4,4159 ; Sum of digits of n^2.
   mov $3,$1
-  seq $3,69912 ; a(n) = A067552(n)/9 where A067552(n) = SumOfDigits(n)^2 - SumOfDigits(n^2), with SumOfDigits = A007953.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  pow $3,2
+  sub $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

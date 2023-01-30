@@ -1,8 +1,25 @@
 ; A297925: Even numbers k such that k - 5 is prime but k - 3 is not prime.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Cruncher Pete
 ; 12,18,24,28,36,42,48,52,58,66,72,78,84,88,94,102,108,114,118,132,136,144,156,162,168,172,178,186,198,204,216,228,234,238,246,256,262,268,276,282,288,298,312,318,322,336,342,354,358,364,372,378,384,388,394,402,406,414,426,438,444,448,454,462,468,472,484,492,496,504,508,514,528,546,552,562,568,576,582,592,598,606,612,618,624,636,648,652,658,666,678,682,688,696,706,714,724,732,738,744
-; Formula: a(n) = A064989(A136799(n))+5
 
-seq $0,136799 ; Last term in a sequence of at least 3 consecutive composite integers.
-seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+mov $2,$0
+add $2,10
+pow $2,2
+lpb $2
+  seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
+  add $1,$3
+  add $1,2
+  add $3,2
+  mul $3,2
+  min $3,7
+  mod $3,2
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,2
+  mov $3,$1
+lpe
+mov $0,$3
 add $0,5

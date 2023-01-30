@@ -4,8 +4,13 @@
 
 max $0,1
 add $0,1
-seq $0,53524 ; a(n) = (6^n - (-2)^n)/8.
-div $0,4
+mov $2,-2
+pow $2,$0
+mov $1,6
+pow $1,$0
+sub $1,$2
+mov $0,$1
+div $0,32
 lpb $0
   dif $0,2
 lpe

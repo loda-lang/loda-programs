@@ -7,10 +7,17 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
+  mov $6,$1
+  add $6,3
+  seq $6,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $6,2
+  seq $6,69859 ; (Largest prime factor of n) modulo (smallest prime factor of n).
   mov $3,$1
-  seq $3,161986 ; a(n) = k+r where k is composite(n) and r is (largest prime divisor of k) mod (smallest prime divisor of k).
-  mov $5,$3
+  seq $3,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+  add $6,$3
+  mov $5,$6
   add $5,2
+  mov $3,$6
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

@@ -1,13 +1,24 @@
 ; A319617: Number of Integer solutions to w^2 + x^2 + y^2 + z^2 < n^2; number of lattice points inside a 4-sphere of radius n.
 ; Submitted by Jamie Morken(w2)
 ; 0,1,65,321,1257,2873,6265,11377,20161,31665,48945,71401,102041,139481,188753,247329,323697,409457,516121,640393,789161,955793,1153025,1376305,1637929,1921049,2252889,2615673,3033665,3483633,3990753,4547945,5173145,5840393,6589945,7395921,8287297,9238001,10281977,11402457,12633145,13929377
-; Formula: a(n) = n^2-max(n^2-1,0)+A046895(max(n^2-1,0))-1
 
 pow $0,2
 mov $1,$0
 trn $0,1
 mov $2,$0
-seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
-sub $0,1
+mov $3,1
+mov $6,$0
+lpb $0
+  sub $0,1
+  mov $4,$6
+  div $4,$3
+  mod $4,4
+  mov $5,$3
+  mul $5,$4
+  add $3,1
+  add $7,$5
+lpe
+mov $0,$7
+mul $0,8
 sub $0,$2
 add $0,$1

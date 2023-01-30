@@ -7,8 +7,13 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,33715 ; Number of integer solutions (x, y) to the equation x^2 + 2y^2 = n.
+  trn $2,1
+  mov $5,$2
+  seq $2,2325 ; Glaisher's J numbers.
+  mul $2,2
+  sub $2,1
+  sub $2,$5
+  add $2,$0
   sub $4,1
   add $1,$2
   mov $3,2

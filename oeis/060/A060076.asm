@@ -11,7 +11,10 @@ lpb $5
   sub $0,1
   mov $4,$0
   add $4,$5
-  seq $4,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  mov $6,4
+  pow $6,$4
+  seq $4,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+  div $4,$6
   add $0,1
   mov $2,$5
   mul $2,$4

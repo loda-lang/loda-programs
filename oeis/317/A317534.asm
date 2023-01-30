@@ -8,7 +8,9 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,76526 ; a(n) = r * max(e_1, ..., e_r), where n = p_1^e_1 . .... p_r^e_r is the canonical prime factorization of n, a(1) = 0.
+  seq $3,46523 ; Smallest number with same prime signature as n.
+  sub $3,1
+  seq $3,335603 ; a(n) = p*q where p is the sequential number (or PrimePi, A000720) of the largest prime divisor of n, and q is the maximal exponent in the canonical representation of n (A051903).
   trn $3,4
   min $3,1
   sub $0,$3

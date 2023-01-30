@@ -15,8 +15,7 @@ lpb $2
   sub $2,1
 lpe
 div $0,2
-mul $0,4
-mul $0,4
+mul $0,16
 mul $0,$1
 div $0,48
 mul $0,24

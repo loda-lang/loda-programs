@@ -6,11 +6,13 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,337509 ; Number of partitions of n into two distinct parts (s,t), such that (t-s) | n, and where n/(t-s) <= s < t.
+  add $3,2
+  dif $3,2
+  seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+  trn $3,1
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0

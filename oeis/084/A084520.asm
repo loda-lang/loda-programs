@@ -5,8 +5,18 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  mul $4,2
+  trn $4,1
+  mov $5,$1
+  trn $5,2
+  add $4,$5
   mov $3,$1
-  seq $3,84525 ; Partial sums of A084526.
+  sub $3,6
+  trn $3,11
+  add $3,$5
+  trn $3,3
+  add $3,$4
   add $1,1
   add $2,$3
   sub $2,$0

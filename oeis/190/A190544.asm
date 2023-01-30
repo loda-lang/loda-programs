@@ -7,6 +7,20 @@ mov $1,$0
 mul $1,3
 add $0,$1
 mul $0,2
+mov $3,$0
+mov $5,6
 sub $0,1
-seq $0,70098 ; Number of integer triangles with perimeter n which are acute and isosceles.
+mov $2,11
+lpb $2
+  sub $2,1
+  add $5,$4
+  mul $4,2
+  add $4,$5
+lpe
+mul $4,$3
+div $4,$5
+mov $3,$4
+add $3,945
+add $0,$3
+div $0,2
 mod $0,4

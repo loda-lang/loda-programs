@@ -13,7 +13,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,2
-  seq $0,7875 ; Number of ways of writing n as p*q, with p <= q, gcd(p, q) = 1.
+  max $0,4
+  seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

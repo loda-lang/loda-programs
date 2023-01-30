@@ -4,5 +4,22 @@
 
 mul $0,2
 add $0,1
-trn $0,3
-seq $0,104629 ; Expansion of (1-2*x-sqrt(1-4*x))/(x^2 * (1+2*x+sqrt(1-4*x))).
+mov $1,2
+pow $1,$0
+mov $3,3
+mov $4,$0
+lpb $4
+  sub $4,1
+  mul $3,-4
+  mov $0,$3
+  sub $2,2
+  mul $3,$4
+  div $3,$2
+  add $5,$3
+  sub $3,$0
+lpe
+mov $0,$5
+div $0,12
+mul $0,2
+add $0,2
+div $0,$1

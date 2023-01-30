@@ -1,14 +1,20 @@
 ; A194584: Differences of A035336.
-; Submitted by Penguin
+; Submitted by Cruncher Pete
 ; 5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3
 
-lpb $0
-  mov $1,$0
-  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$1
-lpe
+mov $2,4
 add $0,1
-pow $0,2
-div $0,3
-gcd $0,3
-add $0,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  add $1,1
+  div $1,2
+  add $1,1
+  mul $3,0
+  add $3,$1
+  gcd $3,4
+  dif $1,$3
+  mul $2,$3
+lpe
+mov $0,$3
+add $0,1

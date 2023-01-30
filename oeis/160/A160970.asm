@@ -9,7 +9,9 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,124174 ; Sophie Germain triangular numbers tr: 2*tr+1 is also a triangular number.
+  seq $0,77443 ; Numbers k such that (k^2 - 7)/2 is a square.
+  pow $0,2
+  div $0,16
   sub $1,1
   mov $2,$3
   mul $2,$0

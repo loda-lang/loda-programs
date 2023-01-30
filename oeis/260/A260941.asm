@@ -8,6 +8,18 @@ mod $1,3
 dif $1,2
 mul $1,6
 sub $1,4
-seq $0,112606 ; Number of representations of n as a sum of six times a square and a triangular number.
+mov $4,3
+mul $0,4
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+  add $2,$3
+  add $4,$5
+  mov $5,3
+lpe
+mov $0,$2
 mul $0,$1
 div $0,2

@@ -8,7 +8,8 @@ mul $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,184861 ; Numbers m such that prime(m) is of the form floor(nr+h), where r=(1+sqrt(5))/2 and h=1/2; complement of A184864.
+  seq $3,184859 ; Primes of the form floor(kr+h), where r=(1+sqrt(5))/2 and h=1/2.
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
   sub $3,1
   add $0,1
   add $1,1

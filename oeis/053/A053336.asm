@@ -4,7 +4,25 @@
 
 mov $1,$0
 add $1,1
-seq $0,35014 ; a(n) contains n digits (either '3' or '4') and is divisible by 2^n.
+mov $3,2
+pow $3,$0
+mov $5,1
+add $0,1
+lpb $0
+  sub $0,1
+  div $4,2
+  mov $6,$4
+  add $6,$5
+  mod $6,2
+  add $6,3
+  mul $6,$5
+  add $4,$6
+  mul $5,5
+lpe
+mov $0,$4
+div $0,2
+mul $0,$3
+mul $0,2
 mov $2,10
 pow $2,$1
 sub $2,$0

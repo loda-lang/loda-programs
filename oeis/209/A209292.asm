@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,109824 ; a(n) is the number of consecutive integers starting with n summing up to a semiprime.
+  seq $3,109823 ; a(n) is the minimal b >= n such that sum of consecutive integers from n to b is a semiprime.
+  sub $3,$1
   trn $3,2
   min $3,1
   sub $0,$3

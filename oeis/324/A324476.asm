@@ -1,6 +1,7 @@
 ; A324476: Packing numbers for n-tripods.
 ; Submitted by Simon Strandgaard
 ; 1,2,5,8,11,14,19,23,28,32,38
+; Formula: a(n) = ((n+2)*((n+36)/2+n-2)-36)/9+1
 
 mov $1,$0
 sub $1,2

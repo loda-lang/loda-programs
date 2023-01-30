@@ -6,14 +6,34 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $7,$0
+  mul $7,2
+  sub $7,1
+  mov $6,1
+  add $6,$7
+  bin $6,$0
+  mov $8,$0
+  sub $8,3
+  bin $7,$8
+  mul $7,2
+  sub $6,$7
+  div $6,2
+  mov $10,4
+  mul $10,$0
+  add $10,3
+  div $10,2
+  mov $9,$10
+  bin $9,$0
   mov $5,$0
-  max $5,0
-  seq $5,33434 ; Third differences of Catalan numbers A000108.
+  sub $5,3
+  bin $10,$5
+  sub $9,$10
+  add $6,$9
   sub $0,1
   mov $2,$3
-  mul $2,$5
+  mul $2,$6
   add $1,$2
-  mov $4,$5
+  mov $4,$6
 lpe
 sub $1,$4
 mov $0,$1

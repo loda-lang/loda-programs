@@ -4,6 +4,17 @@
 
 mov $1,$0
 mul $1,2
-seq $1,87816 ; a(n) = a(a(n-1)) + a(n - 1 - a(n-1)) with a(1) = a(2) = 1.
+add $1,1
+mov $3,$1
+add $1,4
+lpb $3
+  sub $3,1
+  mov $4,$2
+  seq $4,293959 ; Construct a triangle T(n,k) (0 <= k <= n) of strings of integers, where T(0,0) = {0}, T(n,n) = {n}, and otherwise T(n,k) is the concatenation of T(n-1,k-1) and T(n-1,k). The sequence is obtained by reading across the rows of the triangle, concatenating the successive strings.
+  cmp $4,0
+  sub $1,$4
+  add $2,1
+lpe
+sub $1,3
 sub $0,$1
 add $0,1

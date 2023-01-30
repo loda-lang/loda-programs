@@ -6,8 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,100587 ; Number of nonempty subsets of divisors of n.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,2
+  pow $5,$3
   add $1,1
+  mov $3,$5
   div $3,$1
   min $3,1
   sub $0,$3

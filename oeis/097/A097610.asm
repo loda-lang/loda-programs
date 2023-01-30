@@ -10,5 +10,9 @@ mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
-seq $1,126120 ; Catalan numbers (A000108) interpolated with 0's.
+mov $3,$1
+dif $3,2
+bin $1,$3
+add $3,1
+div $1,$3
 mul $0,$1

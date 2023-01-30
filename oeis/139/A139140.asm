@@ -8,7 +8,8 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,253769 ; Sum of number of divisors of all positive integers <= prime(n).
+  seq $0,40 ; The prime numbers.
+  seq $0,6218 ; a(n) = Sum_{k=1..n} floor(n/k); also Sum_{k=1..n} d(k), where d = number of divisors (A000005); also number of solutions to x*y = z with 1 <= x,y,z <= n.
   mov $2,$3
   mul $2,$0
   add $1,$2

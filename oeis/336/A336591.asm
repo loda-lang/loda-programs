@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,345305 ; a(n) = n * Sum_{p|n, p prime} gcd(p,n/p) / p.
   mov $3,$1
-  seq $3,56623 ; Largest unitary square divisor of n: if n=LLgggf (see A056192) and a(n) = LL, then its complementary divisor n/LL = gggf and gcd(L^2, n/LL) = 1.
+  add $3,1
+  gcd $3,$5
+  sub $3,1
+  seq $3,56192 ; a(n) = n divided by its characteristic cube divisor A056191.
   cmp $3,1
   sub $0,$3
   add $1,1

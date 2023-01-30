@@ -6,9 +6,12 @@ mov $1,3
 add $0,3
 lpb $0
   sub $0,$1
+  mov $3,15
+  add $3,$0
+  div $3,16
   mov $2,$0
-  max $2,0
-  seq $2,43705 ; Numbers whose base-16 representation has an even number of runs.
+  add $2,$3
+  add $2,16
   pow $1,$2
 lpe
 mov $0,$2

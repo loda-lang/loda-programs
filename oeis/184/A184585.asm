@@ -4,8 +4,16 @@
 
 mul $0,2
 mov $1,$0
+add $1,1
+mov $3,$0
 mul $0,2
-seq $1,283233 ; 2*A000201.
+mov $2,$1
+pow $2,2
+lpb $2
+  add $3,2
+  trn $2,$3
+lpe
+add $1,$3
 div $1,2
 add $1,$0
 mov $0,$1

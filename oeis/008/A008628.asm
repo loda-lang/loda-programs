@@ -8,7 +8,12 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8771 ; Expansion of (1+x^10)/((1-x)*(1-x^2)*(1-x^3)*(1-x^4)).
+  mov $5,$2
+  seq $2,8763 ; Expansion of g.f.: x^4/((1-x)*(1-x^2)^2*(1-x^3)).
+  add $2,$5
+  mov $4,$2
+  cmp $4,0
+  add $2,$4
   add $1,$2
   mov $3,2
 lpe

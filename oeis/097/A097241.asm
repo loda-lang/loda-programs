@@ -7,8 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
+  mov $6,$1
+  seq $6,46933 ; Number of composites between successive primes.
   mov $3,$1
-  seq $3,97240 ; a(n) = (n+1)*prime(n) + n*prime(n+1).
+  seq $3,152117 ; a(n) = n*(n-th prime) + (n+1)*((n+1)-th prime).
+  sub $3,1
+  sub $3,$6
   mov $5,$3
   add $5,2
   sub $3,1

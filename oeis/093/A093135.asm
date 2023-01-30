@@ -1,9 +1,18 @@
 ; A093135: Expansion of (1-8*x)/((1-x)*(1-10*x)).
-; Submitted by Jamie Morken(m1)
+; Submitted by Cruncher Pete
 ; 1,3,23,223,2223,22223,222223,2222223,22222223,222222223,2222222223,22222222223,222222222223,2222222222223,22222222222223,222222222222223,2222222222222223,22222222222222223,222222222222222223
-; Formula: a(n) = 2*(A000042(n)/10)+1
+; Formula: a(n) = b(n)/16+1, b(n) = 4*c(n-1)+4, b(1) = 36, b(0) = 4, c(n) = 8*c(n-1)+2*c(n-1)+8, c(1) = 88, c(0) = 8
 
-seq $0,42 ; Unary representation of natural numbers.
-div $0,10
-mul $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,1
+  add $3,$2
+  mov $1,4
+  mul $1,$3
+  add $2,$1
+  mul $2,2
+lpe
+mov $0,$1
+div $0,16
 add $0,1

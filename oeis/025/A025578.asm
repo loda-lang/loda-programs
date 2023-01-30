@@ -9,7 +9,12 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,168051 ; Expansion of (1+x+sqrt(1-2x-3x^2))/2.
+  mov $4,$0
+  seq $4,217526 ; From the enumeration of involutions avoiding the pattern 4321.
+  div $0,2
+  add $0,$4
+  mul $0,2
+  dif $0,-2
   mul $1,3
   add $1,$0
 lpe

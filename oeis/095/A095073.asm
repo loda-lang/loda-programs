@@ -8,7 +8,9 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,337238 ; Number k such that k and k+1 are both digitally balanced numbers in base 2 (A031443).
+  seq $3,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
+  mul $3,4
+  add $3,1
   mov $5,$3
   seq $3,38548 ; Number of divisors of n that are at most sqrt(n).
   cmp $3,2

@@ -1,10 +1,15 @@
 ; A020550: 4th Fibonacci polynomial evaluated at x=n!.
 ; 3,3,12,228,13872,1728240,373249440,128024074080,65548320848640,47784725840597760,47784725839879257600,63601470092869711833600,109903340320478725054003200,241457638684091756851366041600
-; Formula: a(n) = A000142(n)^3+2*A000142(n)
+; Formula: a(n) = b(n)^3+2*b(n), b(n) = n*b(n-1), b(0) = 1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mov $1,$0
+mov $3,1
+lpb $0
+  mul $3,$0
+  sub $0,1
+lpe
+mov $1,$3
 pow $1,3
+mov $0,$3
 mul $0,2
 mov $2,$0
 add $2,$1

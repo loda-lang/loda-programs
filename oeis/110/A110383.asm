@@ -1,14 +1,20 @@
 ; A110383: Integers with mutual residues of 10.
-; Submitted by gemini8
+; Submitted by Cruncher Pete
 ; 11,21,241,55681,3099816961,9608865160705105921,92330289676612360941221747472778199041,8524882391767151111154918892947398067446166736305624023874497267723631329281
-; Formula: a(n) = b(n)+10, b(n) = b(n-1)*(b(n-1)+10), b(0) = 1
 
-mov $1,1
+mov $2,1
+mov $4,1
 lpb $0
   sub $0,1
-  mov $2,$1
-  add $2,10
-  mul $1,$2
+  dif $0,7
+  add $4,$2
+  mov $1,$4
+  add $1,9
+  mov $3,$4
+  mov $4,$2
+  mul $4,-1
+  add $4,$3
+  mul $2,$1
 lpe
-mov $0,$1
+mov $0,$2
 add $0,10

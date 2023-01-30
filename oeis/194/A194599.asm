@@ -1,10 +1,9 @@
 ; A194599: Units' digits of the nonzero hexagonal numbers.
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0,1,6,5,8,5,6,1,0,3,0
-; Formula: a(n) = (7*(n+2)^2-7)%10
+; Formula: a(n) = binomial(2*n+2,2)%10
 
+mul $0,2
 add $0,2
-pow $0,2
-sub $0,1
-mul $0,7
+bin $0,2
 mod $0,10

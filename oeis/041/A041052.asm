@@ -9,7 +9,14 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,10130 ; Continued fraction for sqrt(32).
+  dif $1,2
+  sub $1,1
+  mod $1,2
+  mul $1,11
+  add $1,2
+  pow $1,2
+  div $1,17
+  add $1,1
   mul $1,$2
   add $1,$4
   add $3,1

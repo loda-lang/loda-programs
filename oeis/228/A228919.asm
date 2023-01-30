@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,228926 ; Sum(m^(n+1), m=1...n-1) modulo n.
+  add $3,1
+  mov $5,$3
+  seq $3,121706 ; a(n) = Sum_{k=1..n-1} k^n.
+  mod $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

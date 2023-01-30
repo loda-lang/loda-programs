@@ -9,7 +9,8 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,61568 ; Number of primes <= sum of first n primes.
+  seq $0,237589 ; Sum of first n odd noncomposite numbers.
+  seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $2,$3
   mul $2,$0
   add $4,$2

@@ -11,7 +11,9 @@ lpb $4
   add $1,$5
   mov $2,$0
   max $2,0
-  seq $2,51027 ; a(n) = sigma(sigma(n)) = sum of the divisors of the sum of the divisors of n.
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $2,1
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$2
 lpe
 min $3,1

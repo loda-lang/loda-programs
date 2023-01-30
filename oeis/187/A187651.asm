@@ -12,8 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,7820 ; Stirling numbers of second kind S(2n,n).
-  mul $1,$0
+  mov $5,$0
+  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  mul $5,2
+  seq $5,344397 ; a(n) = Stirling2(n, floor(n/2)) * floor(n/2)!.
+  div $5,$0
+  mul $1,$5
   mul $3,-1
   add $3,$1
 lpe

@@ -1,8 +1,14 @@
 ; A070750: 0 if n-th prime is even, 1 if n-th prime is == 1 mod 4, and -1 if n-th prime is == 3 mod 4.
 ; Submitted by Jamie Morken(l1)
 ; 0,-1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,-1,1,-1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,-1,1,1,-1,-1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,1,-1,1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,1
+; Formula: a(n) = (3*b(n)+3)%4-1, b(n) = A159477(b(n-1)), b(0) = 2
 
-seq $0,40 ; The prime numbers.
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$1
 add $0,1
 mul $0,3
 mod $0,4

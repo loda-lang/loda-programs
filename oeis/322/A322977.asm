@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  bin $0,$1
   sub $0,1
   seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   mov $5,1

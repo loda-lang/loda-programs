@@ -1,11 +1,10 @@
 ; A304685: a(n) = A000699(n) (mod 3).
-; Submitted by Jamie Morken(s2)
+; Submitted by Cruncher Pete
 ; 1,1,1,0,2,1,0,0,1,0,0,0,0,1,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = binomial(2*(52122-n),n)%3
+; Formula: a(n) = A000309(n)%3
 
-mov $1,52122
-sub $1,$0
-mul $1,2
-bin $1,$0
-mod $1,3
-mov $0,$1
+mov $1,$0
+seq $1,309 ; Number of rooted planar bridgeless cubic maps with 2n nodes.
+mov $2,$1
+mod $2,3
+mov $0,$2

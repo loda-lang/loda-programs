@@ -1,11 +1,20 @@
 ; A075917: Fourth column of triangle A075501.
 ; Submitted by Jon Maiga
 ; 1,60,2340,75600,2204496,60419520,1591202880,40800672000,1027086863616,25522067450880,628349082117120,15366613964083200,373968813041012736,9068526888588656640,219326169845571010560
-; Formula: a(n) = A000453(n)*6^n
 
 mov $1,$0
 mov $0,6
 pow $0,$1
-seq $1,453 ; Stirling numbers of the second kind, S(n,4).
+add $1,2
+lpb $1
+  sub $1,1
+  add $3,1
+  mul $4,2
+  add $4,$2
+  mul $2,4
+  add $2,$3
+  mul $3,3
+lpe
+mov $1,$4
 mul $1,$0
 mov $0,$1

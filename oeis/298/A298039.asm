@@ -1,9 +1,15 @@
 ; A298039: Partial sums of A298038.
-; Submitted by gemini8
+; Submitted by Cruncher Pete
 ; 1,7,31,49,97,127,199,241
-; Formula: a(n) = 2*A186515(n)^2-1
+; Formula: a(n) = 6*b(n)+1, b(n) = n*gcd(n,2)+b(n-1), b(0) = 0
 
-seq $0,186515 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=4+5j^2.  Complement of A186516.
-pow $0,2
-mul $0,2
-sub $0,1
+lpb $0
+  mov $1,$0
+  gcd $1,2
+  mul $1,$0
+  add $2,$1
+  sub $0,1
+lpe
+mov $0,$2
+mul $0,6
+add $0,1
