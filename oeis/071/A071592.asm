@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
+  seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   trn $3,1
   seq $3,107078 ; Whether n has non-unitary prime divisors.
   sub $0,$3

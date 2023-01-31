@@ -1,12 +1,17 @@
 ; A046898: Partial sums of A046897.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,8,11,17,29,37,40,53,71,83,95,109,133,157,160,178,217,237,255,287,323,347,359,390,432,472,496,526,598,630,633,681,735,783,822,860,920,976,994,1036,1132,1176,1212,1290,1362,1410,1422,1479,1572
-; Formula: a(n) = a(n-1)+A046897(n), a(0) = 1
+; Formula: a(n) = A000593(n)*binomial(2*(-1)^n,2)+a(n-1), a(0) = 1
 
 mov $1,1
 lpb $0
+  mov $3,-1
+  pow $3,$0
+  mul $3,2
+  bin $3,2
   mov $2,$0
-  seq $2,46897 ; Sum of divisors of n that are not divisible by 4.
+  seq $2,593 ; Sum of odd divisors of n.
+  mul $2,$3
   sub $0,1
   add $1,$2
 lpe

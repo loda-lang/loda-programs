@@ -7,7 +7,13 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  seq $0,141468 ; Zero together with the nonprime numbers A018252.
+  mov $4,$0
+  trn $4,2
+  mul $0,2
+  sub $0,$4
+  sub $0,1
+  seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $0,1
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $1,$0
 lpe

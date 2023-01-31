@@ -1,19 +1,21 @@
 ; A018566: Divisors of 642.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Cruncher Pete
 ; 1,2,3,6,107,214,321,642
 
 mov $1,1
-mov $3,1
+mov $2,1
 lpb $0
-  sub $0,1
-  add $1,$2
-  mul $2,94
-  add $2,$1
-  dif $2,2
-  add $2,$3
-  mov $1,$2
-  dif $2,6
-  mod $2,$1
-  mov $3,$1
+  add $1,1
+  mov $3,$0
+  sub $3,1
+  mod $3,2
+  mul $3,$1
+  div $4,2
+  div $0,2
+  mul $2,$1
+  dif $2,$3
+  add $5,206
+  add $1,$4
+  mov $4,$5
 lpe
-mov $0,$1
+mov $0,$2

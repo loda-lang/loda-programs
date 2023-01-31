@@ -1,6 +1,19 @@
 ; A080343: a(n) = round(sqrt(2*n)) - floor(sqrt(2*n)).
+; Submitted by Cruncher Pete
 ; 0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0
 
-mul $0,8
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
-mod $0,2
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+add $2,2
+sub $2,$0
+mov $3,$0
+mov $0,$2
+lpb $0
+  add $3,1
+  mov $0,$3
+  mov $1,1
+  mod $1,$3
+lpe
+mov $0,$1

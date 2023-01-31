@@ -5,9 +5,11 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,14040 ; Inverse of 31st cyclotomic polynomial.
+  sub $2,1
+  sub $3,$2
+  mod $3,31
+  pow $3,$3
   trn $0,11
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

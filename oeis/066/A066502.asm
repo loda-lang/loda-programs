@@ -9,7 +9,10 @@ lpb $2
   sub $2,18
   mov $3,$1
   add $3,1
-  seq $3,322321 ; a(n) = lcm(A003557(n), A173557(n)).
+  mov $5,$3
+  seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  seq $3,173557 ; a(n) = Product_{primes p dividing n} (p-1).
+  mul $3,$5
   mod $3,7
   dif $3,2
   gcd $3,4

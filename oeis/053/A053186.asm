@@ -1,9 +1,9 @@
 ; A053186: Square excess of n: difference between n and largest square <= n.
-; Submitted by Simon Strandgaard
+; Submitted by Cruncher Pete
 ; 0,0,1,2,0,1,2,3,4,0,1,2,3,4,5,6,0,1,2,3,4,5,6,7,8,0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
 
+mov $1,1
 lpb $0
-  add $1,1
   sub $0,$1
-  add $1,1
+  add $1,2
 lpe

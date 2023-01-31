@@ -1,13 +1,22 @@
 ; A050141: a(n) = 2*floor((n+1)*phi) - 2*floor(n*phi) - 1 where phi = (1 + sqrt(5))/2 is the golden ratio.
-; Submitted by Penguin
+; Submitted by Cruncher Pete
 ; 3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3
+; Formula: a(n) = 2*(d(n)/3)+1, b(n) = ((b(n-1)/2-c(n-1))/2)/gcd((b(n-1)/2-c(n-1))/2+1,4), b(2) = -21, b(1) = -20, b(0) = -1, c(n) = 4*c(n-1), c(2) = 640, c(1) = 160, c(0) = 40, d(n) = gcd((b(n-1)/2-c(n-1))/2+1,4), d(2) = 4, d(1) = 1, d(0) = 4
 
-lpb $0
-  mov $1,$0
-  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$1
-lpe
+mov $2,10
 add $0,1
-pow $0,2
+lpb $0
+  sub $0,1
+  div $1,2
+  sub $1,$2
+  div $1,2
+  mov $3,1
+  add $3,$1
+  gcd $3,4
+  div $1,$3
+  mul $2,4
+lpe
+mov $0,$3
 div $0,3
-gcd $0,3
+mul $0,2
+add $0,1
