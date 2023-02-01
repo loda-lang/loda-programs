@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,101257 ; Remainder when the least divisor of n greater than or equal to the square root of n (A033677(n)) is divided by the greatest divisor of n less than or equal to the square root of n (A033676(n)).
+  seq $3,33677 ; Smallest divisor of n >= sqrt(n).
+  div $5,$3
+  mod $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

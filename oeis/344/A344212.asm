@@ -6,5 +6,15 @@ mov $1,$0
 mul $1,2
 mov $0,$1
 trn $0,1
-seq $0,83377 ; a(n) = the largest integer whose square has n digits and first digit 1.
+mov $3,$0
+mov $0,10
+pow $0,$3
+mov $2,$0
+mul $2,2
+lpb $0
+  mov $3,$2
+  div $3,$0
+  add $0,$3
+  div $0,2
+lpe
 mod $0,10

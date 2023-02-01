@@ -4,7 +4,6 @@
 
 mov $1,2
 mov $3,2
-mod $0,72
 lpb $0
   mul $3,2
   mov $2,$0

@@ -13,7 +13,19 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,164658 ; Numerators of coefficients of integrated Chebyshev polynomials T(n,x) (in increasing order of powers of x).
+  mov $6,$0
+  seq $6,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
+  mov $4,$0
+  seq $4,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+  mul $4,$6
+  sub $4,2
+  div $4,2
+  add $4,1
+  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $5,$0
+  gcd $5,$4
+  mov $0,$4
+  div $0,$5
   add $1,$0
 lpe
 mov $0,$1

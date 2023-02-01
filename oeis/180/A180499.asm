@@ -1,10 +1,26 @@
 ; A180499: n^3 + n-th cubefree number.
 ; Submitted by zombie67 [MM]
 ; 2,10,30,68,130,222,350,521,739,1011,1343,1741,2211,2759,3392,4114,4932,5852,6880,8022,9284,10673,12193,13852,15654,17606,19714,21985,24423,27035,29827,32805,35975,39343,42916,46698,50696,54916,59364,64046,68968,74137,79557,85235,91177,97389,103878,110649,117707,125059,132711,140669,148939,157527,166440,175682,185260,195180,205448,216070,227052,238401,250121,262219,274701,287573,300841,314511,328591,343083,357995,373333,389103,405311,421964,439066,456624,474644,493132,512094,531536,551465,571885
-; Formula: a(n) = (n+1)^3+A004709(n)
 
 mov $1,$0
-seq $1,4709 ; Cubefree numbers: numbers that are not divisible by any cube > 1.
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $4,1
+  seq $4,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
+  cmp $4,1
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+  sub $3,1
+lpe
+mov $1,$2
+add $1,1
 add $0,1
 pow $0,3
 add $0,$1

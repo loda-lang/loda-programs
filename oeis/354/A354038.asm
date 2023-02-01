@@ -7,7 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,354037 ; a(n) = 1 if sigma(n)-n is a multiple of 4, otherwise 0.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  sub $3,$1
+  dif $3,2
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

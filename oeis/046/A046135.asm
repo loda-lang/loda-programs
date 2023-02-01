@@ -7,8 +7,19 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,6512 ; Greater of twin primes.
-  add $3,4
+  mul $3,2
+  trn $3,1
+  mov $6,$3
+  sub $3,1
+  gcd $3,2
+  div $6,2
+  seq $6,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $6,1
+  mul $6,3
+  add $6,$3
+  mov $3,$6
+  mul $3,2
+  add $3,7
   mov $5,$3
   add $3,5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

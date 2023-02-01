@@ -5,7 +5,10 @@
 lpb $0
   add $1,1
   mov $2,$0
-  seq $2,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
-  sub $0,$2
+  seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  sub $2,1
+  mov $3,$2
+  cmp $3,0
+  sub $0,$3
 lpe
 mov $0,$1

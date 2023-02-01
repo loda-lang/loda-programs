@@ -6,8 +6,13 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
   mov $3,$1
-  seq $3,358759 ; a(n) = 1 if A358669(n) == 3 (mod 4), otherwise 0.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  mul $3,$5
+  bin $3,3
+  mod $3,2
   sub $0,$3
   add $1,2
   mov $4,$0

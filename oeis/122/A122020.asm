@@ -4,5 +4,22 @@
 
 add $0,1
 mov $1,$0
-seq $0,122778 ; a(n) = Sum_{k=0..n} A(n,k)*n^k where A(n,k) are Eulerian numbers.
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mul $3,$5
+  add $7,$3
+  mov $3,$2
+  pow $3,$5
+  add $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  sub $7,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+mov $0,$6
 mul $0,$1

@@ -7,7 +7,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,104714 ; Greatest common divisor of a Fibonacci number and its index.
+  seq $3,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  gcd $3,$1
   cmp $3,1
   sub $0,$3
   add $1,1

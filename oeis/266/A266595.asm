@@ -7,8 +7,17 @@ lpb $4
   sub $4,1
   mov $0,$3
   add $0,$4
-  trn $0,1
-  seq $0,266596 ; Total number of OFF (white) cells after n iterations of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
+  sub $0,1
+  mov $6,$0
+  mul $6,2
+  mov $7,$0
+  sub $7,1
+  gcd $0,2
+  pow $0,2
+  add $0,$7
+  div $7,2
+  mul $0,$7
+  add $0,$6
   mov $5,$4
   mul $5,$0
   add $1,$5

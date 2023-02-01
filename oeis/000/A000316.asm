@@ -1,11 +1,28 @@
 ; A000316: Two decks each have n kinds of cards, 2 of each kind. The first deck is laid out in order. The second deck is shuffled and laid out next to the first. A match occurs if a card from the second deck is next to a card of the same kind from the first deck. a(n) is the number of ways of achieving no matches.
 ; Submitted by Jon Maiga
 ; 1,0,4,80,4752,440192,59245120,10930514688,2649865335040,817154768973824,312426715251262464,145060238642780180480,80403174342119992692736,52443098500204184915312640,39764049487996490505336537088,34682827460037289770300511551488,34481711815373944713908353608253440,38763950489402607111545346661592072192,48926988847171320377206784443239006208000,68897404487661881983409926995660158618566656,107628689046847936708066194737937294023795408896,185568097817750690934754244693433438441933992099840
-; Formula: a(n) = A000459(n)*2^n
 
 mov $1,$0
+mov $5,$0
 mov $0,2
 pow $0,$1
-seq $1,459 ; Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no fixed points.
+mov $3,$1
+add $3,1
+lpb $3
+  sub $3,1
+  mov $1,$5
+  sub $1,$3
+  mul $1,2
+  sub $4,$2
+  mov $6,$1
+  mul $6,$4
+  mov $4,0
+  sub $4,$6
+  div $4,2
+  add $4,1
+  add $2,$4
+  mul $2,$1
+lpe
+mov $1,$4
 mul $1,$0
 mov $0,$1

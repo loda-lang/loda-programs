@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  div $0,2
+  div $0,5
   sub $2,$0
   max $3,10
   sub $3,1

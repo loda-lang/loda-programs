@@ -1,9 +1,24 @@
 ; A355162: a(n) = exp(-1) * Sum_{k>=0} (4*k + 2)^n / k!.
 ; Submitted by Groo
 ; 1,6,52,568,7312,107360,1760576,31760256,623137024,13179872768,298391335936,7189153167360,183428957442048,4935794590572544,139571328018628608,4134634425826115584,127966201403431518208,4127825849826169716736,138477447400991610896384,4822002684952714247929856
-; Formula: a(n) = A126390(n)*2^n
 
 mov $1,2
 pow $1,$0
-seq $0,126390 ; a(n) = Sum_{i=0..n} 2^i*B(i)*binomial(n,i) where B(n) = Bell numbers A000110(n).
+mov $4,$0
+bin $4,2
+add $4,$0
+add $4,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  dif $4,$0
+  sub $0,1
+  seq $0,56857 ; Triangle read by rows: T(n,c) = number of successive equalities in set partitions of n.
+  add $2,$0
+  mul $2,2
+lpe
+mov $0,$2
+add $0,1
 mul $0,$1

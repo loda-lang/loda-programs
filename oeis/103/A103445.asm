@@ -12,7 +12,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,103444 ; Triangle read by rows: T(n,k) is number of unitary divisors of C(n,k), 0<=k<=n.
+  seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  sub $0,1
+  seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   add $1,$0
 lpe
 mov $0,$1

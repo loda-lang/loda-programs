@@ -7,8 +7,15 @@ add $2,14
 pow $2,2
 lpb $2
   sub $2,7
+  mov $6,$1
+  seq $6,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
+  div $6,2
   mov $3,$1
-  seq $3,290448 ; Triangle read by rows: T(n,k) = (Eulerian(n+1,k)-binomial(n,k))/2, for 0 <= k <= n.
+  seq $3,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  sub $3,1
+  sub $6,$3
+  mov $3,$6
+  div $3,2
   mov $5,$3
   add $1,1
   cmp $3,0

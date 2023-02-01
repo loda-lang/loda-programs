@@ -10,8 +10,11 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).
-  add $3,$0
+  gcd $0,4
+  sub $0,3
+  mov $4,1
+  div $4,$0
+  add $3,$4
 lpe
 mov $0,$3
 add $0,1

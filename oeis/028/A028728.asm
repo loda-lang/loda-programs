@@ -7,8 +7,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   bin $3,2
-  seq $3,115334 ; Numbers d > 0 such that 3+2d and 3+4d are primes.
-  sub $3,1
+  add $3,1
+  seq $3,92109 ; Primes p such that p+3 is a semiprime.
+  sub $3,7
+  div $3,4
   add $0,1
   add $1,1
   add $2,$3

@@ -8,8 +8,19 @@ lpb $0
   sub $0,1
   mov $2,$1
   mov $1,$3
-  trn $1,$0
-  seq $1,250426 ; Number of (n+1)X(2+1) 0..1 arrays with nondecreasing sum of every two consecutive values in every row and column.
+  sub $1,$0
+  add $1,1
+  mov $4,$1
+  add $1,3
+  pow $1,2
+  div $1,4
+  add $4,5
+  pow $4,2
+  div $4,2
+  mul $4,$1
+  mul $4,$1
+  mov $1,$4
+  div $1,8
   mul $2,$1
   add $3,1
 lpe

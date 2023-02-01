@@ -7,7 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,73168 ; a(n) = A007821(n) - A022449(n).
+  seq $3,40 ; The prime numbers.
+  mov $7,$3
+  seq $7,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  mov $6,$1
+  add $6,1
+  seq $6,7821 ; Primes p such that pi(p) is not prime.
+  sub $6,$7
+  mov $3,$6
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

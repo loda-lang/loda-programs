@@ -4,6 +4,16 @@
 
 trn $0,1
 mov $1,$0
-seq $0,152771 ; a(n) = sigma(n) - 2*d(n) + 1.
+lpb $0
+  add $0,1
+  mov $4,$3
+  gcd $4,$0
+  cmp $4,$0
+  sub $0,2
+  mul $4,$0
+  add $2,$4
+  sub $3,1
+lpe
+mov $0,$2
 add $0,$1
 add $0,1

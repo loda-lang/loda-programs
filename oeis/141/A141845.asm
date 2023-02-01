@@ -9,7 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,330002 ; Beatty sequence for x, where 1/x + 1/(x+1)^2 = 1.
+  mul $0,5
+  div $0,4
+  add $0,1
   sub $0,$1
   mul $1,6
   add $1,$0

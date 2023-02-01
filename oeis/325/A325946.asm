@@ -4,9 +4,16 @@
 
 mul $0,2
 add $0,1
-mul $0,2
 mov $1,$0
-seq $1,202306 ; Floor(sqrt(7*n)).
+mul $0,2
+mul $1,14
+lpb $1
+  sub $1,1
+  add $3,2
+  trn $1,$3
+lpe
+div $3,2
+mov $1,$3
 sub $1,$0
 mov $2,1
 sub $2,$1

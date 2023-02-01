@@ -1,15 +1,22 @@
 ; A097454: a(n) = (number of nonprimes <= n) - (number of primes <= n).
-; Submitted by Skillz
+; Submitted by Kotenok2000
 ; 1,0,-1,0,-1,0,-1,0,1,2,1,2,1,2,3,4,3,4,3,4,5,6,5,6,7,8,9,10,9,10,9,10,11,12,13,14,13,14,15,16,15,16,15,16,17,18,17,18,19,20,21,22,21,22,23,24,25,26,25,26,25,26,27,28,29,30,29,30,31,32,31,32,31,32,33,34,35,36,35,36,37,38,37,38,39,40,41,42,41,42,43,44,45
+; Formula: a(n) = c(n)+1, b(n) = 2*b(n-1)-n-2, b(2) = -10, b(1) = -3, b(0) = 0, c(n) = -2*binomial(gcd(b(n-1),n+1),n+1)+c(n-1)+1, c(2) = -2, c(1) = -1, c(0) = 0
 
-mov $1,$0
-lpb $1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $1,1
-  add $2,$3
+mov $1,2
+lpb $0
+  sub $0,1
+  mov $2,$4
+  gcd $2,$1
+  bin $2,$1
+  mul $4,2
+  sub $4,1
+  sub $4,$1
+  add $1,1
+  mov $3,-2
+  mul $3,$2
+  add $5,1
+  add $5,$3
 lpe
-mov $1,$2
-mul $1,2
-sub $1,1
-sub $0,$1
+add $5,1
+mov $0,$5

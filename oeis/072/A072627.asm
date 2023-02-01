@@ -12,8 +12,8 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,2
-  seq $0,351247 ; a(n) = n^7 * Sum_{p|n, p prime} 1/p^7.
+  sub $0,$1
+  seq $0,105700 ; a(n)=1 if n is a prime, 2 if n is a semiprime, otherwise 0.
   mov $5,1
   cmp $5,$0
   mul $1,$5

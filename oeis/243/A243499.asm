@@ -1,24 +1,17 @@
 ; A243499: Product of parts of integer partitions as enumerated in the table A125106.
-; Submitted by Jon Maiga
+; Submitted by Cruncher Pete
 ; 1,1,2,1,3,2,4,1,4,3,6,2,9,4,8,1,5,4,8,3,12,6,12,2,16,9,18,4,27,8,16,1,6,5,10,4,15,8,16,3,20,12,24,6,36,12,24,2,25,16,32,9,48,18,36,4,64,27,54,8,81,16,32,1,7,6,12,5,18,10,20,4,24,15,30,8,45,16,32,3,30,20,40,12,60,24,48,6,80,36,72,12,108,24,48,2,36,25,50,16
 
 mov $1,1
+mov $2,1
 lpb $0
   mov $3,$0
-  lpb $3
-    mov $3,1
-    cmp $6,0
-    add $2,$6
-    mov $5,$2
-    add $2,1
-    max $4,$5
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    add $5,1
-  lpe
+  sub $3,1
+  mod $3,2
+  add $1,$3
+  mul $3,$1
   div $0,2
-  mul $1,$5
+  mul $2,$1
+  dif $2,$3
 lpe
-mov $0,$1
+mov $0,$2

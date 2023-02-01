@@ -6,6 +6,18 @@ mov $1,$0
 add $1,4
 div $1,3
 sub $1,$0
-seq $0,182771 ; Beatty sequence for (6+sqrt(3))/3.
+add $0,1
+mov $2,$0
+mov $4,$0
+mul $4,$0
+lpb $4
+  add $4,$3
+  add $2,2
+  sub $3,3
+  add $4,$3
+lpe
+mul $0,3
+add $0,$2
+div $0,2
 sub $0,2
 add $0,$1

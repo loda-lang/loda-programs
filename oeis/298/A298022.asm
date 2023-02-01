@@ -8,10 +8,28 @@ lpb $4
   sub $4,1
   mov $0,$3
   add $0,$4
-  trn $0,1
-  seq $0,298023 ; Partial sums of A298022.
+  sub $0,1
+  mov $9,$0
+  sub $0,1
+  mov $10,$0
+  mul $10,$0
+  div $10,3
+  mov $11,$0
+  trn $11,3
+  mul $11,2
+  mov $7,$11
+  add $7,$10
+  mov $5,$7
+  add $5,1
+  mov $8,$9
+  mul $8,$9
+  mov $6,$8
+  mul $6,2
+  add $5,$9
+  add $5,$6
+  mov $0,$5
   mov $2,$4
-  mul $2,$0
+  mul $2,$5
   add $1,$2
 lpe
 min $3,1

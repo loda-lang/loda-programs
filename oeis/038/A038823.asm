@@ -8,10 +8,9 @@ lpb $2
   sub $2,1
   mov $0,$4
   add $0,$2
-  trn $0,1
-  add $0,1
   mul $0,1000
-  seq $0,84360 ; Number of partitions of n into pair of parts whose difference is a prime.
+  trn $0,2
+  seq $0,82460 ; a(n) = pi(n) - a(n - 1) = A000720(n) - a(n - 1).
   add $0,1
   mov $1,$2
   mul $1,$0

@@ -8,7 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,52343 ; Number of ways to write n as the unordered sum of two triangular numbers (zero allowed).
+  mov $6,$2
+  mul $6,4
+  add $6,1
+  mov $2,$6
+  seq $2,161 ; Number of partitions of n into 2 squares.
   add $4,$5
   add $1,$2
   mov $3,2

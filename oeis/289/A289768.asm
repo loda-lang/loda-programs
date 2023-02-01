@@ -4,7 +4,9 @@
 
 lpb $0
   sub $0,2
-  seq $1,99896 ; A permutation of the natural numbers where a(n) = n XOR [n/2] XOR [n/4].
+  add $1,1
+  seq $1,48727 ; a(n) = Xmult(n,7) or rule150(n,1).
+  div $1,4
   mul $1,2
 lpe
 mov $0,$1

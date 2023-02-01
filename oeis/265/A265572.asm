@@ -5,8 +5,10 @@
 mov $2,$0
 lpb $2
   sub $2,1
+  mov $4,$1
+  seq $4,30108 ; Base 9 reversal of n (written in base 10).
   mov $3,$1
-  seq $3,55959 ; n - reversal of base 9 digits of n (written in base 10).
+  sub $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

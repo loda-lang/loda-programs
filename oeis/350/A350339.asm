@@ -14,7 +14,13 @@ lpb $4
   bin $1,$0
   mov $5,$0
   sub $0,1
-  seq $0,340369 ; a(n) = 1 if n has at most 3 prime factors when counted with multiplicity, 0 otherwise.
+  mov $7,$0
+  seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $0,$7
+  add $0,1
+  trn $0,3
+  bin $6,$0
+  mov $0,$6
   mul $0,$5
   mul $1,$0
   add $3,$1

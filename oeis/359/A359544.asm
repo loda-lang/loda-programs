@@ -8,7 +8,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,359542 ; Inverse Möbius transform of A341999, which is the characteristic function of numbers that will never reach zero when iterated with the arithmetic derivative.
+  mov $5,$3
+  seq $3,359541 ; Inverse Möbius transform of A328308, which is the characteristic function of numbers that eventually reach zero when iterated with the arithmetic derivative.
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,$3
+  mov $3,$5
   min $3,1
   sub $0,1
   add $0,$3

@@ -7,6 +7,28 @@ pow $1,$0
 add $1,1
 mul $0,81
 dif $0,2
-seq $0,14039 ; Inverse of 30th cyclotomic polynomial.
+mul $0,7
+div $0,5
+mov $2,-1
+pow $2,$0
+lpb $0
+  add $3,21
+  add $6,21
+  mod $0,$3
+  mov $5,4
+  add $5,$0
+  div $0,10
+lpe
+sub $4,$5
+div $4,4
+add $0,1
+mul $0,$4
+mul $0,2
+gcd $6,2
+mul $6,2
+sub $0,$6
+add $0,6
+div $0,2
+mul $0,$2
 mul $0,$1
 div $0,2

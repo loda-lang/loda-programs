@@ -1,5 +1,5 @@
 ; A330316: a(n) = r(n)*r(n+1)/4, where r(n) = A004018(n) is the number of ways of writing n as a sum of two squares.
-; Submitted by Jon Maiga
+; Submitted by Kotenok2000
 ; 1,4,0,0,8,0,0,0,4,8,0,0,0,0,0,0,8,8,0,0,0,0,0,0,0,24,0,0,0,0,0,0,0,0,0,0,8,0,0,0,16,0,0,0,0,0,0,0,0,12,0,0,16,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,8,16,0,0,0,0,0,0,8,8,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,8,0,0
 
 add $0,1
@@ -21,7 +21,7 @@ pow $5,$4
 mul $5,2
 mov $6,-2
 bin $6,$4
-div $6,2
+div $6,$5
 sub $4,$6
 seq $4,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
 mul $4,$5

@@ -6,8 +6,8 @@ mov $1,-1
 pow $1,$0
 add $0,1
 mov $3,$0
-trn $0,1
-add $0,$3
+mul $0,2
+sub $0,1
 seq $0,350972 ; E.g.f. = tan(x).
 mul $0,$3
 lpb $0

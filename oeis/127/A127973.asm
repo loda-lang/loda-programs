@@ -3,4 +3,11 @@
 
 add $0,2
 dif $0,2
-seq $0,60632 ; a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
+div $0,2
+mov $1,$0
+lpb $1
+  div $0,2
+  sub $1,$0
+lpe
+mov $0,2
+pow $0,$1

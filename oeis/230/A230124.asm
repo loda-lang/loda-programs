@@ -7,8 +7,11 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  mov $6,$1
+  seq $6,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  sub $6,1
   mov $5,$1
-  seq $5,326128 ; a(n) = n - A007913(n), where A007913 gives the squarefree part of n.
+  sub $5,$6
   add $1,1
   add $3,1
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).

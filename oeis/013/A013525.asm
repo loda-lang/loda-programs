@@ -4,5 +4,27 @@
 
 mov $1,4
 pow $1,$0
-seq $0,819 ; E.g.f.: cos(x)^2 / cos(2x) = Sum_{n >= 0} a(n) * x^(2n) / (2n)!.
+mul $0,2
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  div $7,2
+  add $7,$3
+  mul $7,2
+  add $8,1
+  mov $3,$2
+  add $3,$8
+  pow $3,$5
+  sub $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+gcd $6,$0
+dif $6,2
+mov $0,$6
 div $0,$1

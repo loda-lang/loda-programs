@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,1041 ; a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
+  seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+  mul $0,12
   mul $1,$0
   mul $3,-1
   add $3,$1

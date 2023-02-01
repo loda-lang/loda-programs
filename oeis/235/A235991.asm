@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,165560 ; The arithmetic derivative of n, modulo 2.
+  trn $3,1
+  seq $3,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

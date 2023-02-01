@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,158416 ; Expansion of (1+x-x^3)/(1-x^2)^2.
+  add $3,2
+  mov $4,$3
+  div $3,2
+  gcd $3,$4
   sub $0,$3
   add $1,1
   sub $2,$0

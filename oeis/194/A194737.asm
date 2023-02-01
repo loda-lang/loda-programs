@@ -6,12 +6,12 @@ mov $1,$0
 add $1,2
 lpb $0
   mov $3,$0
-  seq $3,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  seq $3,80754 ; a(n) = ceiling(n*(1+sqrt(2))).
+  sub $3,1
   sub $0,1
   add $2,$3
 lpe
-add $2,2
 mov $0,$2
-sub $0,1
+add $0,1
 mul $0,2
 mod $0,$1

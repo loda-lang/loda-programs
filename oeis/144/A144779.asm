@@ -1,16 +1,23 @@
 ; A144779: Variant of Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(1) = 5.
-; Submitted by TankbusterGames
+; Submitted by Cruncher Pete
 ; 5,21,421,176821,31265489221,977530816197201697621,955566496615167328821993756200407115362021,913107329453384594090655605142589591944556891901674138343716072975722193082773842421
-; Formula: a(n) = (a(n-1)+1)*(b(n-1)+1)+3, a(1) = 21, a(0) = 5, b(n) = (a(n-1)+1)*(b(n-1)+1), b(1) = 18, b(0) = 2
 
-mov $1,1
-add $0,1
+mov $2,1
+mov $4,1
 lpb $0
   sub $0,1
-  add $2,1
-  add $1,1
-  mul $1,$2
-  mov $2,$1
-  add $2,3
+  dif $0,7
+  add $4,$2
+  mov $1,$4
+  mul $1,2
+  sub $1,1
+  mov $3,$4
+  mov $4,$2
+  mul $4,-1
+  add $4,$3
+  add $2,2
+  mul $2,$1
 lpe
 mov $0,$2
+mul $0,2
+add $0,3

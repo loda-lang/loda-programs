@@ -1,5 +1,15 @@
 ; A132637: Composite number C(n) raised to power C(n).
 ; 256,46656,16777216,387420489,10000000000,8916100448256,11112006825558016,437893890380859375,18446744073709551616,39346408075296537575424,104857600000000000000000000,5842587018385982521381124421,341427877364219557396646723584
+; Formula: a(n) = (b(n)-1)^(b(n)-1), b(n) = b(n-1)+c(n-1)+1, b(1) = 7, b(0) = 5, c(n) = A080339(b(n-1)+c(n-1)), c(1) = 1, c(0) = 1
 
-seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+add $0,3
+lpb $0
+  sub $0,1
+  add $1,$2
+  mov $2,$1
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $1,1
+lpe
+mov $0,$1
+sub $0,1
 pow $0,$0
