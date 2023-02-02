@@ -1,11 +1,22 @@
 ; A081239: #{(i,j): mu(i)*mu(j) = 0, 1<=i,j<=n}, where mu=A008683 (Moebius function).
 ; Submitted by planetclown
 ; 0,0,0,7,9,11,13,28,45,51,57,80,88,96,104,135,145,180,192,231,245,259,273,320,369,387,440,495,517,539,561,624,648,672,696,767,793,819,845,924,952,980,1008,1095,1184,1216,1248,1343,1440,1539,1577,1680,1720,1827,1869,1980,2024,2068,2112,2231,2277,2323,2448,2575,2625,2675,2725,2860,2912,2964,3016,3159,3213,3267,3416,3567,3625,3683,3741,3900,4061,4123,4185,4352,4416,4480,4544,4719,4785,4964,5032,5215,5285,5355,5425,5616,5688,5883,6080,6279
-; Formula: a(n) = A294234(2*n+2)*(2*n-A294234(2*n+2)+2)
 
 add $0,1
 mul $0,2
 mov $1,$0
-seq $0,294234 ; Number of partitions of n into two parts such that the smaller part is nonsquarefree.
-sub $1,$0
+div $0,2
+sub $0,1
+lpb $0
+  mov $3,$0
+  seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  mul $3,2
+  max $3,1
+  sub $3,1
+  mod $3,2
+  sub $0,1
+  add $2,$3
+lpe
+sub $1,$2
+mov $0,$2
 mul $0,$1

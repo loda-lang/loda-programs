@@ -1,10 +1,9 @@
 ; A359792: a(n) = (-1)^A003415(n), where A003415 is the arithmetic derivative of n.
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,-1,-1,1,-1,-1,-1,1,1,-1,-1,1,-1,-1,1,1,-1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,-1,-1,1,1,-1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,-1,-1,1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,-1,1,1,-1,-1,1,1,-1,1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,1
-; Formula: a(n) = binomial(-1,A003415(n+1))
+; Formula: a(n) = (-1)^A322079(n)
 
-add $0,1
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
 mov $1,-1
-bin $1,$0
+pow $1,$0
 mov $0,$1

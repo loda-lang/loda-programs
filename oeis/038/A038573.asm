@@ -1,19 +1,7 @@
 ; A038573: a(n) = 2^A000120(n) - 1.
-; Submitted by Cruncher Pete
+; Submitted by kpmonaghan
 ; 0,1,1,3,1,3,3,7,1,3,3,7,3,7,7,15,1,3,3,7,3,7,7,15,3,7,7,15,7,15,15,31,1,3,3,7,3,7,7,15,3,7,7,15,7,15,15,31,3,7,7,15,7,15,15,31,7,15,15,31,15,31,31,63,1,3,3,7,3,7,7,15,3,7,7,15,7,15,15,31,3,7,7,15,7,15,15,31,7,15,15,31,15,31,31,63,3,7,7,15
+; Formula: a(n) = A001316(n)-1
 
-mov $1,1
-mov $2,1
-lpb $0
-  add $1,1
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
-  div $0,2
-  mul $2,$1
-  dif $2,$3
-  sub $1,1
-lpe
-mov $0,$2
+seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
 sub $0,1

@@ -10,7 +10,10 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,25441 ; Number of partitions of n into 2 distinct nonzero squares.
+  sub $3,1
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $3,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
+  div $3,2
   sub $3,1
   cmp $3,2
   sub $0,$3

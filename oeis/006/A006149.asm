@@ -10,8 +10,19 @@ lpb $1
   mov $0,$3
   sub $0,$1
   add $0,2
+  mov $5,$0
+  mul $5,2
+  bin $5,$0
+  mul $5,280
+  mov $6,$0
+  add $6,4
+  bin $6,4
+  div $5,$6
+  div $5,8
   mov $2,$0
-  seq $2,7272 ; Super ballot numbers: 60(2n)!/(n!(n+3)!).
+  add $2,4
+  mul $2,$5
+  div $2,14
   mul $4,$2
 lpe
 mov $0,$4

@@ -3,7 +3,15 @@
 
 lpb $0
   mov $2,$0
-  seq $2,210978 ; A186029 and positive terms of A001106 interleaved.
+  add $2,9
+  mov $3,$0
+  sub $3,1
+  mul $3,5
+  add $2,$0
+  add $2,$3
+  div $2,2
+  bin $2,2
+  div $2,7
   sub $0,2
   add $1,$2
   add $1,1

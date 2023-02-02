@@ -10,8 +10,15 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,68551 ; a(n) = 4^n - binomial(2*n,n).
-  add $3,$0
+  mov $5,$0
+  add $5,$0
+  bin $5,$0
+  mov $4,4
+  pow $4,$0
+  sub $4,$5
+  div $4,2
+  mul $4,2
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

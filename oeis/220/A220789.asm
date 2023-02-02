@@ -9,8 +9,11 @@ add $0,1
 mov $1,1
 lpb $2
   mov $3,$1
-  seq $3,224489 ; Smallest k such that k*2*p(n)^2-1 is prime.
+  seq $3,40 ; The prime numbers.
+  pow $3,2
   sub $3,1
+  seq $3,196660 ; Smallest k>0 such that k*n+(n-1) is prime.
+  div $3,2
   add $3,$4
   cmp $3,1
   gcd $3,2

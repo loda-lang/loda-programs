@@ -5,8 +5,11 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,25527 ; a(n) = n!/lcm{1,2,...,n} = (n-1)!/lcm{C(n-1,0), C(n-1,1), ..., C(n-1,n-1)}.
   mov $3,$1
-  seq $3,110566 ; a(n) = lcm{1,2,...,n}/denominator of harmonic number H(n).
+  seq $3,56612 ; a(n) = gcd(n!, n!*(1 + 1/2 + 1/3 + ... + 1/n)).
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

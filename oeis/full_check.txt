@@ -171,6 +171,7 @@ A077655: Number of consecutive successors of n having the same number of prime f
 A078175: Numbers with an integer arithmetic mean of all prime factors.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.
 A079093: Squarefree kernel of (prime(n)+1)*(prime(n+1)+1)/4.
+A079131: Primes such that iterated sum-of-digits (A038194) is odd.
 A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
 A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).

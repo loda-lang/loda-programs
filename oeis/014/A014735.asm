@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,14732 ; Squares of numbers in triangle of Eulerian numbers that are not 1.
+  seq $3,14449 ; Numbers in the triangle of Eulerian numbers (A008292) that are not 1.
+  pow $3,2
   sub $3,1
   mov $5,$3
   seq $3,270010 ; Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 7", based on the 5-celled von Neumann neighborhood.

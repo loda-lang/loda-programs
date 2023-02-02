@@ -193,6 +193,7 @@ A074367: (p^2-5)/4 for odd primes p.
 A074372: 1 + the sum of the distinct primes dividing n.
 A074400: Sum of the even divisors of 2n.
 A074462: Average digit (rounded up) in the decimal expansion of prime(n).
+A074850: Partial products of successive digits in the decimal expansion of Pi.
 A074943: tau(n) (mod 3).
 A074985: Squares of semiprimes (A001358).
 A075059: a(n) = 1 + lcm(1, 2, ..., n) = 1 + A003418(n).

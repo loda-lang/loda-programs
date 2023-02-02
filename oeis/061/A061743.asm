@@ -8,8 +8,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  mod $5,2
   mov $3,$1
-  seq $3,255361 ; Number of ways n can be represented as x*y+x+y where x>=y>1.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,1
+  div $3,2
+  sub $3,$5
   min $3,1
   sub $0,$3
   add $1,1

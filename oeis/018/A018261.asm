@@ -1,11 +1,17 @@
 ; A018261: Divisors of 48.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,8,12,16,24,48
-; Formula: a(n) = A164090(n/9+n+1)/2
 
 mov $1,$0
 div $0,9
 add $0,1
 add $0,$1
-seq $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
+mov $2,$0
+mod $0,2
+lpb $2
+  sub $2,2
+  mul $0,2
+  add $0,2
+lpe
+add $0,2
 div $0,2

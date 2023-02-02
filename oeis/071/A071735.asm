@@ -7,8 +7,17 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,782 ; a(n) = 2*Catalan(n) - Catalan(n-1).
+  sub $0,1
+  mov $5,$0
+  mul $5,2
+  mov $6,$0
+  mov $0,1
+  add $0,$5
+  bin $0,$6
+  add $6,2
+  bin $5,$6
+  mul $5,2
+  sub $0,$5
   mov $2,$3
   mul $2,$0
   add $4,$2

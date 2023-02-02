@@ -9,7 +9,10 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,282671 ; Twice composite numbers.
+  add $0,3
+  seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  mul $0,2
+  sub $0,2
   add $3,$0
   add $4,$3
 lpe

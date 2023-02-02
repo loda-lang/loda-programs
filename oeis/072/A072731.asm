@@ -1,9 +1,21 @@
 ; A072731: Difference of numbers of composite and prime numbers <= n.
-; Submitted by biodoc
+; Submitted by NeoGen
 ; 0,-1,-2,-1,-2,-1,-2,-1,0,1,0,1,0,1,2,3,2,3,2,3,4,5,4,5,6,7,8,9,8,9,8,9,10,11,12,13,12,13,14,15,14,15,14,15,16,17,16,17,18,19,20,21,20,21,22,23,24,25,24,25,24,25,26,27,28,29,28,29,30,31,30,31,30,31,32,33,34
-; Formula: a(n) = -2*A000720(n)+n
+; Formula: a(n) = -2*binomial(gcd(b(n-1),n+1),n+1)+a(n-1)+1, a(2) = -2, a(1) = -1, a(0) = 0, b(n) = 2*b(n-1)-n-2, b(2) = -10, b(1) = -3, b(0) = 0
 
-mov $1,$0
-seq $1,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-mul $1,2
-sub $0,$1
+mov $1,2
+lpb $0
+  sub $0,1
+  mov $2,$4
+  gcd $2,$1
+  bin $2,$1
+  mul $4,2
+  sub $4,1
+  sub $4,$1
+  add $1,1
+  mov $3,-2
+  mul $3,$2
+  add $5,1
+  add $5,$3
+lpe
+mov $0,$5

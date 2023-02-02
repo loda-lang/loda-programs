@@ -8,7 +8,10 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,92674 ; Derived from a(n)=binomial(n+1,2) - sum{i=1,n-1,a(i)*floor(n/i)} (see A000010) - this is the value of the constant term.
+  mov $6,$5
+  seq $6,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $5,$6
   sub $0,1
   mov $2,$3
   mul $2,$5

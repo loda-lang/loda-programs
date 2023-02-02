@@ -5,12 +5,16 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,96304 ; Numbers k such that 3k does not divide (6k-4)!/((3k-2)!*(3k-1)!).
+  add $3,3
+  mov $4,$3
+  div $3,6
+  seq $3,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+  mul $3,3
   sub $3,1
+  add $3,$4
   add $0,2
-  add $1,1
+  add $1,3
   add $2,$3
   sub $2,$0
 lpe

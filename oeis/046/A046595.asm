@@ -8,8 +8,14 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,16
-  mov $3,$1
-  seq $3,46569 ; Denominators of the 1/4-Pascal triangle (by row).
+  mov $7,2
+  max $7,$1
+  seq $7,323231 ; A(n, k) = [x^k] (1/(1-x) + x/(1-x)^n), square array read by descending antidiagonals for n, k >= 0.
+  mov $6,$7
+  sub $6,1
+  gcd $6,4
+  mov $3,4
+  div $3,$6
   mov $5,$3
   mul $3,338
   gcd $3,4

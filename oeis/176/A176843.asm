@@ -5,7 +5,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,343911 ; a(n) = Omega(phi(n)), where Omega is the number of prime factors of n with multiplicity and phi is the Euler totient function.
+  seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $0,$2
   add $1,1
 lpe

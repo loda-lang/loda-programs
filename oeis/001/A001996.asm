@@ -8,8 +8,8 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,8636 ; Number of partitions of n into at most 7 parts.
+  add $0,6
+  seq $0,26813 ; Number of partitions of n in which the greatest part is 7.
   mov $4,$3
   mul $4,$0
   add $2,$4

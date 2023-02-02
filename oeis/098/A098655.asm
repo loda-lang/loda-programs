@@ -7,7 +7,14 @@ add $2,10
 add $0,2
 mov $1,$0
 add $1,$2
-seq $0,52552 ; a(2*n+1) = 1, a(2*n) = 2*a(2*n-2) - 1.
+sub $3,$0
+add $0,2
+div $0,2
+gcd $3,2
+pow $3,$0
+div $3,2
+add $3,1
+mov $0,$3
 lpb $1
   sub $1,2
   mul $0,2

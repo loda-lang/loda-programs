@@ -8,8 +8,14 @@ mov $1,$0
 mov $2,$0
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,202238 ; Characteristic function of positive integers not prime and not a power of 2.
+  mov $5,$1
+  seq $5,191558 ; a(n) = 0 if n prime, otherwise n.
+  mov $4,$1
+  add $4,$5
+  bin $4,$1
+  mov $3,$4
+  sub $3,1
+  mod $3,2
   add $1,1
   add $2,$3
 lpe

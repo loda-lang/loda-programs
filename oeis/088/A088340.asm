@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,94969 ; a(n) = floor(5^n/2^n).
+  mov $7,4
+  pow $7,$1
+  mov $6,10
+  pow $6,$1
+  div $6,$7
+  mov $3,$6
   add $3,1
   add $3,$4
   gcd $3,2
