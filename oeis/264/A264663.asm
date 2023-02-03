@@ -1,6 +1,19 @@
 ; A264663: Catalan numbers written in base 2.
 ; 1,1,10,101,1110,101010,10000100,110101101,10110010110,1001011111110,100000110011100,1110010110100010,110010110010001100,10110101010111110100,1010001100111100001000,100100111110111001111101,10000110111000001111100110,111101110100011100011110110,11100011110000011000000101100
-; Formula: a(n) = A007088(A000108(n))
 
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,$0
+mov $2,$0
+add $2,1
+mov $4,1
+mul $0,2
+bin $0,$1
+div $0,$2
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

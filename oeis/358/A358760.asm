@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,358750 ; a(n) = 1 if A349905(n) is a multiple of 4, otherwise 0. Here A349905(n) is the arithmetic derivative applied to the prime shifted n.
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  dif $3,2
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

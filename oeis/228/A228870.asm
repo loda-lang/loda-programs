@@ -8,7 +8,11 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,225821 ; a(n) = Product_{p | p is prime and p, p-1 both divide n}.
+  sub $3,1
+  seq $3,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
+  mov $5,$3
+  gcd $5,$1
+  mov $3,$5
   trn $3,2
   min $3,1
   sub $0,$3

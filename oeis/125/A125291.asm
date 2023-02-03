@@ -5,7 +5,9 @@
 lpb $0
   add $0,1
   mov $1,$0
-  seq $0,300222 ; In ternary (base-3) representation of n, replace 1's with 0's.
+  mov $2,$0
+  seq $2,244042 ; In ternary representation of n, replace 2's with 0's.
+  sub $0,$2
   sub $0,1
 lpe
 mov $0,$1

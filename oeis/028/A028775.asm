@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,70614 ; a(n) = n^5 mod 31.
+  pow $3,5
+  mod $3,31
   add $3,1
   gcd $3,2
   sub $0,$3

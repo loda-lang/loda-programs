@@ -13,7 +13,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,62981 ; a(n) = n^phi(n).
+  mov $5,$0
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $0,1
+  pow $0,$5
   mul $1,$0
   add $3,$1
 lpe

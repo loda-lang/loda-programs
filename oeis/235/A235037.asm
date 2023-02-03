@@ -5,7 +5,13 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,59289 ; a(n) = 1 + (binomial(2n,n) mod n).
+  add $2,1
+  mov $3,2
+  mul $3,$2
+  bin $3,$2
+  mod $3,$2
+  add $3,1
+  mov $2,$3
   cmp $2,1
   sub $0,1
   add $1,$2

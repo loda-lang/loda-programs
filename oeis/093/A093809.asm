@@ -4,7 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,134591 ; a(n) is n reflected in n-th prime: distance between a(n) and prime(n) equals distance between prime(n) and n.
+  seq $2,40 ; The prime numbers.
+  mul $2,2
+  sub $2,1
+  sub $2,$0
   add $3,$2
   sub $0,1
   add $1,$3

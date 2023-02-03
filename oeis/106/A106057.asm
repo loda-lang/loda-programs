@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,23200 ; Primes p such that p + 4 is also prime.
+  trn $3,1
+  mov $6,$1
+  sub $6,$3
+  seq $3,29710 ; Primes such that next prime is 4 greater.
+  sub $3,3
+  mul $3,$6
+  add $3,3
   mul $3,4
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

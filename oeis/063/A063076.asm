@@ -8,12 +8,15 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,11757 ; a(n) = prime(n^2).
+  mov $6,$0
+  add $6,2
+  mul $6,$0
+  seq $6,40 ; The prime numbers.
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
   mul $4,$3
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1

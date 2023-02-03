@@ -4,7 +4,19 @@
 
 mov $1,$0
 trn $0,1
-seq $0,8965 ; Number of necklaces of sets of beads containing a total of n beads.
+add $0,1
+mov $4,$0
+lpb $0
+  mov $6,$4
+  gcd $6,$0
+  sub $0,1
+  mov $5,2
+  pow $5,$6
+  add $3,$5
+lpe
+div $3,$4
+mov $0,$3
+sub $0,1
 cmp $1,0
 cmp $1,0
 mul $0,$1

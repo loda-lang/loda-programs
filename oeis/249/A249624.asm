@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,13634 ; a(n) = nextprime(n) + n.
+  cmp $6,0
+  add $6,$1
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $5,$6
+  mov $3,$5
+  add $3,$1
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

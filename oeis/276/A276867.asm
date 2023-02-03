@@ -1,9 +1,22 @@
 ; A276867: First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-; Submitted by Egon Olsen
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3
-; Formula: a(n) = A284394(3*n+1)+2
+; Formula: a(n) = (d(n)-2)/2+3, b(n) = (-c(n-1)+b(n-1))/(2*((-c(n-1)+b(n-1)+d(n-1))%2)+4), b(2) = -16, b(1) = -1, b(0) = 0, c(n) = 2*c(n-1)*(2*((-c(n-1)+b(n-1)+d(n-1))%2)+4), c(2) = 128, c(1) = 32, c(0) = 4, d(n) = 2*((-c(n-1)+b(n-1)+d(n-1))%2)+4, d(2) = 2, d(1) = 4, d(0) = 2
 
-mul $0,3
+mov $2,1
 add $0,1
-seq $0,284394 ; {101->2}-transform of the infinite Fibonacci word A003849.
-add $0,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  add $3,$1
+  mod $3,2
+  add $3,2
+  mul $3,2
+  div $1,$3
+  mul $2,2
+  mul $2,$3
+lpe
+mov $0,$3
+sub $0,2
+div $0,2
+add $0,3

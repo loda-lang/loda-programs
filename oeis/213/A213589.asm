@@ -4,7 +4,22 @@
 
 mov $1,$0
 add $0,2
-seq $1,4798 ; Convolution of Fibonacci numbers 1,2,3,5,... with themselves.
+add $1,2
+lpb $1
+  sub $1,1
+  mov $3,$2
+  add $3,1
+  add $2,$4
+  sub $4,$5
+  mov $5,$3
+  add $5,$2
+  add $6,$3
+  mov $3,$4
+  mov $4,$6
+  add $6,$3
+lpe
+mov $1,$5
+sub $1,1
 mul $1,$0
 mov $0,$1
 div $0,2

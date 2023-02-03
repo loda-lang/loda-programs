@@ -6,6 +6,14 @@ add $0,1
 mov $1,$0
 pow $0,3
 mul $0,$1
-seq $1,212578 ; Number of (w,x,y,z) with all terms in {1,...,n} and |w-x| = 2*|x-y| - |y-z|.
-sub $0,$1
+mov $3,$1
+mov $4,$1
+mul $1,2
+lpb $3
+  sub $3,1
+  trn $1,4
+  add $2,$4
+  add $4,$1
+lpe
+sub $0,$2
 div $0,2

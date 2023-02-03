@@ -1,10 +1,11 @@
 ; A033481: 3x+1 sequence beginning at 21.
-; Submitted by Simon Strandgaard
+; Submitted by pututu
 ; 21,64,32,16,8,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2
+; Formula: a(n) = A006370(a(n-1)), a(0) = 21
 
 mov $1,21
 lpb $0
   sub $0,1
   seq $1,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe
-add $0,$1
+mov $0,$1

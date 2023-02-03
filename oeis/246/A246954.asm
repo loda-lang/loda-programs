@@ -8,7 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,104794 ; Expansion of theta_4(q)^2 in powers of q.
+  mov $5,-1
+  pow $5,$2
+  mul $2,4
+  seq $2,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  mul $2,$5
   add $4,2
   add $1,$2
   mov $3,$4

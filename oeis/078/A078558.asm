@@ -1,7 +1,11 @@
 ; A078558: GCD of sigma(p#) and phi(p#) where p# = A002110(n) is the product of the first n primes.
-; Submitted by PDW
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,8,48,96,1152,9216,1658880,3317760,92897280,2786918400,100329062400,802632499200,370816214630400,741632429260800,2966529717043200,29665297170432000,355983566045184000,2135901396271104000,4271802792542208000,307569801063038976000,9227094031891169280000,129179316446476369920000,5167172657859054796800000,496048575154469260492800000,1984194300617877041971200000,2631041642619304957653811200000,5262083285238609915307622400000,31256774714317342896927277056000000
-; Formula: a(n) = A126865(A057588(n))
+; Formula: a(n) = gcd(A005867(n+1),A339360(n+1))
 
-seq $0,57588 ; Kummer numbers: -1 + product of first n consecutive primes.
-seq $0,126865 ; a(n) = gcd(Product_{p|n} (p+1)^b(p,n), Product_{p|n} (p-1)^b(p,n)), where the products are over the distinct primes, p, that divide n and p^b(p,n) is the highest power of p dividing n.
+add $0,1
+mov $1,$0
+seq $1,5867 ; a(0) = 1; for n > 0, a(n) = (prime(n)-1)*a(n-1).
+seq $0,339360 ; Sum of all squarefree numbers with greatest prime factor prime(n).
+gcd $1,$0
+mov $0,$1

@@ -1,28 +1,29 @@
 ; A096173: Numbers k such that k^3+1 is an odd semiprime.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Skillz
 ; 2,4,6,16,18,22,28,42,58,60,70,72,78,100,102,106,112,148,156,162,190,210,232,280,310,330,352,358,382,396,448,456,490,568,606,672,756,786,820,826,828,856,858,876,928,970,982,1008,1012,1030,1068,1092,1108,1150,1192,1222,1276,1282,1296,1318,1360,1366,1422,1428,1450,1488,1530,1548,1582,1612,1666,1696,1708,1758,1810,1932,1978,2016,2080,2086,2130,2160,2202,2206,2242,2310,2340,2346,2388,2398,2410,2436,2466,2472,2542,2556,2590,2608,2730,2788
 
-mov $1,-2
-mov $6,-4
-mov $2,$0
-add $2,2
+mov $2,24
+add $2,$0
 pow $2,2
 lpb $2
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  add $6,10
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $3,1
+  mov $6,$1
+  mul $6,$3
+  add $6,2
+  add $5,$1
+  bin $5,$6
+  mul $5,2
+  mov $3,$5
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,$1
-  add $1,$6
-  add $1,$6
   mul $2,$4
-  sub $2,1
-  add $5,$1
-  add $6,2
+  trn $2,1
 lpe
-mov $0,$6
-div $0,6
-add $0,1
+mov $0,$1
+sub $0,1

@@ -10,12 +10,8 @@ lpb $0
   seq $4,19309 ; Number of "bifix-free" words of length n over a four-letter alphabet.
   add $3,$4
 lpe
-add $3,2
-dif $3,2
 mov $0,$3
-sub $0,1
-mul $0,2
-mul $0,-1
+mul $0,-2
 mov $2,2
 pow $2,$1
 add $0,$2

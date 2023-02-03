@@ -10,7 +10,19 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,92266 ; Expansion of (1+4x)/AGM(1+4x,1-4x) where AGM denotes the arithmetic-geometric mean.
+  mov $6,1
+  add $6,$0
+  div $0,2
+  mov $4,2
+  pow $4,$6
+  mod $4,6
+  mov $5,$0
+  mul $5,2
+  bin $5,$0
+  mul $4,$5
+  pow $4,2
+  mov $0,$4
+  div $0,4
   add $3,$0
 lpe
 div $3,$1

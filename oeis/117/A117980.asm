@@ -1,10 +1,16 @@
 ; A117980: Legendre-binomial transform of (-1)^n for p=3.
 ; Submitted by Stony666
 ; 1,0,3,0,0,0,3,0,9,0,0,0,0,0,0,0,0,0,3,0,9,0,0,0,9,0,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,9,0,0,0,9,0,27,0,0,0,0,0,0,0,0,0,9,0,27,0,0,0,27,0,81,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A006047(n)*(A006047(n)%2)
 
-seq $0,6047 ; Number of entries in n-th row of Pascal's triangle not divisible by 3.
-mov $1,$0
+mov $2,1
+lpb $0
+  mov $3,$0
+  mod $3,3
+  add $3,1
+  div $0,3
+  mul $2,$3
+lpe
+mov $1,$2
 mod $1,2
-mul $1,$0
+mul $1,$2
 mov $0,$1

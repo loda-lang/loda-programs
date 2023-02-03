@@ -1,7 +1,9 @@
 ; A036015: Number of partitions of n into parts not of form 4k+2, 8k, 8k+1 or 8k-1.
 ; Submitted by Spawn
 ; 1,0,0,1,1,1,1,1,2,2,2,3,4,4,4,6,7,7,8,10,12,13,14,17,21,22,24,29,33,36,40,46,53,58,63,73,83,90,99,113,127,138,152,171,191,209,228,255,285,309,338,377,416,453,495,547,603,656,714,787,865,938,1020,1121,1226,1329,1444,1579,1723,1867,2023,2206,2403,2597,2811,3060,3321,3587,3878,4207,4560,4919,5307,5748,6218,6697,7217,7802,8422,9061,9754,10522,11340,12189,13100,14110,15187,16299,17499,18822
-; Formula: a(n) = gcd(A259774(n),A259774(n))
+; Formula: a(n) = gcd(A029838(2*n+1),A029838(2*n+1))
 
-seq $0,259774 ; Expansion of f(x, x^7) / f(x, x^3) in powers of x where f(, ) is Ramanujan's general theta function.
+mul $0,2
+add $0,1
+seq $0,29838 ; Expansion of square root of q times normalized Hauptmodul for Gamma(4) in powers of q^8.
 gcd $0,$0

@@ -7,8 +7,12 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,65565 ; a(n) = floor((5/4)^n).
+  mov $6,20
+  pow $6,$1
+  mov $5,25
+  pow $5,$1
+  div $5,$6
+  mov $3,$5
   mod $3,5
   dif $3,2
   gcd $3,4

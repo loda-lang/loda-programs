@@ -12,8 +12,16 @@ lpb $0
   pow $0,2
   div $0,$2
   max $2,0
-  seq $2,61007 ; a(n) = -(n-1)! mod n.
-  mov $4,$2
+  mov $6,$2
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $2,1
+  mov $7,$6
+  sub $7,2
+  mul $7,$2
+  add $7,2
+  mov $5,2
+  bin $5,$7
+  mov $4,$5
   min $4,1
   add $1,$4
 lpe

@@ -13,8 +13,11 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,359581 ; a(n) = (-1)^A329697(n).
-  mul $1,$0
+  mov $6,$0
+  seq $6,329697 ; a(n) is the number of iterations needed to reach a power of 2 starting at n and using the map k -> k-(k/p), where p is the largest prime factor of k.
+  mov $5,-1
+  pow $5,$6
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

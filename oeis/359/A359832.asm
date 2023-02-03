@@ -1,15 +1,17 @@
-; A359832: allocated for Antti Karttunen
-; Submitted by ThrasherX-17
+; A359832: a(n) = 1 if the 2-adic valuation of n is either 0 or odd, otherwise 0.
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0
 
-add $0,1
+mov $2,$0
+mul $0,2
+add $0,2
 lpb $0
-  mov $1,1
-  lpb $0
-    dif $0,2
-    add $1,1
-  lpe
+  dif $0,2
+  add $1,1
 lpe
-mov $0,$1
-add $0,1
+add $2,$1
+mov $1,$2
+mul $2,2
+add $2,$1
+mov $0,$2
 mod $0,2

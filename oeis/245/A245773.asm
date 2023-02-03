@@ -14,7 +14,15 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,127573 ; Triangle T(n, k) = k*sigma(k) if k divides n, else 0.
+  mov $6,$0
+  seq $6,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
+  mov $5,$0
+  pow $5,$6
+  seq $5,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
+  mul $5,$6
+  seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
+  mul $0,$5
   add $1,$0
 lpe
 sub $0,$4

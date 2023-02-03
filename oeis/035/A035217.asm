@@ -12,8 +12,12 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  mov $6,$0
+  seq $6,121238 ; a(n) = (-1)^(1+n+A088585(n)).
   mov $5,$0
-  seq $5,226162 ; a(n) = Kronecker Symbol (-5/n), n >= 0.
+  mul $5,2
+  seq $5,100047 ; A Chebyshev transform of the Fibonacci numbers.
+  mul $5,$6
   mod $0,7
   seq $0,11584 ; Legendre symbol (n,17).
   mul $0,$5

@@ -5,5 +5,10 @@
 mov $1,8
 lpb $1
   div $1,6
-  seq $0,2412 ; Hexagonal pyramidal numbers, or greengrocer's numbers.
+  mov $2,$0
+  mul $2,4
+  bin $2,2
+  add $0,1
+  mul $0,$2
+  div $0,12
 lpe

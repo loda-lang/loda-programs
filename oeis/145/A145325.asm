@@ -1,9 +1,22 @@
 ; A145325: Least k such that f(n,k) is not a prime, where f(n,1)=2n+1 and f(n,k)=f(f(n,k-1)) for k>=2.
 ; Submitted by Christian Krause
 ; 3,5,2,1,4,2,1,2,2,1,3,1,1,3,2,1,1,2,1,4,2,1,2,1,1,3,1,1,2,2,1,1,2,1,2,2,1,1,2,1,3,1,1,5,1,1,1,2,1,2,2,1,2,2,1,3,1,1,1,1,1,1,2,1,3,1,1,2,2,1,1,1,1,2,2,1,1,2,1,1,2,1,2,1,1,3,1,1,4,2,1,1,1,1,3,2,1,2,2,1
-; Formula: a(n) = (8*((A067849(n)-1)/4)+(A067849(n)-1)+2)%10
 
-seq $0,67849 ; a(n) = max{k: f(n),...,f^k(n) are prime}, where f(m) = 2m+1 and f^k denotes composition of f with itself k times.
+mov $2,$0
+add $2,1
+mul $2,2
+mov $3,$0
+add $3,4
+lpb $3
+  mov $4,$2
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $5,1
+  mul $2,2
+  add $2,2
+  mul $3,$4
+  sub $3,1
+lpe
+mov $0,$5
 sub $0,1
 mov $1,$0
 div $0,4

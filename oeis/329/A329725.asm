@@ -8,7 +8,11 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,63543 ; a(n) = n - product of nonzero digits of n.
+  mov $4,1
+  add $4,$0
+  seq $4,51801 ; Product of the nonzero digits of n.
+  add $0,1
+  sub $0,$4
   div $1,-1
   add $1,$0
 lpe

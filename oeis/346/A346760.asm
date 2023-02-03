@@ -10,8 +10,13 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
+  mov $5,$0
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$0
-  seq $4,741 ; Number of compositions of n into 3 ordered relatively prime parts.
+  seq $4,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  trn $4,3
+  mul $4,$5
+  div $4,2
   mul $0,$4
   add $0,$4
   add $3,$0

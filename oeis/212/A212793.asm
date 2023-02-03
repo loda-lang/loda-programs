@@ -1,39 +1,18 @@
 ; A212793: Characteristic function of cubefree numbers, A004709.
-; Submitted by Stony666
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1
+; Formula: a(n) = binomial(8,(A000188(A003557(n)-1)+1)^(2*A000188(A003557(n)-1)+1)-3)/51
 
-mov $2,1
-add $0,1
-lpb $0
-  add $3,1
-  sub $7,1
-  mov $4,$0
-  sub $4,1
-  lpb $4
-    mov $5,$0
-    mod $5,$3
-    mov $6,$3
-    cmp $6,1
-    add $3,1
-    max $5,$6
-    sub $4,$5
-  lpe
-  lpb $0
-    dif $0,$3
-    mov $5,5
-    add $7,1
-  lpe
-  mov $6,$5
-  sub $6,6
-  mul $6,2
-  add $6,$7
-  bin $6,$7
-  mul $2,$6
-  div $7,-51
-lpe
-mov $0,$2
-add $0,1
+seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+sub $0,1
+seq $0,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
 mov $1,1
 add $1,$0
+add $0,$1
+pow $1,$0
+sub $1,3
 mov $0,$1
-mod $0,2
+mov $1,8
+bin $1,$0
+mov $0,$1
+div $0,51

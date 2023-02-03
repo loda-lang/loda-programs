@@ -4,6 +4,14 @@
 
 mov $1,$0
 trn $0,1
-seq $0,1260 ; Number of permutations of length n with 4 consecutive ascending pairs.
+lpb $0
+  mov $2,$0
+  sub $0,2
+  seq $2,387 ; Rencontres numbers: number of permutations of [n] with exactly two fixed points.
+  mul $2,$0
+  mov $0,0
+lpe
+mov $0,$2
+div $0,12
 mul $0,$1
 div $0,5

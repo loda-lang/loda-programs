@@ -3,7 +3,16 @@
 
 add $0,1
 mov $1,$0
-seq $0,61647 ; Beginning at the well for the topograph of a positive definite quadratic form with values 1, 1, 1 at a superbase (i.e., 1, 1 and 1 are the vonorms of the superbase), these numbers indicate the labels of the edges of the topograph on a path of greatest ascent.
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  cmp $4,$2
+  add $2,$3
+  add $4,$2
+  add $3,$4
+lpe
+mov $0,$3
 sub $0,$1
 sub $0,$1
 div $0,4

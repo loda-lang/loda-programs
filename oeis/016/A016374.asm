@@ -7,9 +7,9 @@ lpb $0
   sub $0,3
   mul $3,2
   sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,240329 ; Inverse of 41st cyclotomic polynomial.
+  sub $2,$0
+  mod $2,41
+  pow $2,$2
   add $1,$2
   mov $3,2
 lpe

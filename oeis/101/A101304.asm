@@ -1,12 +1,17 @@
 ; A101304: a(n) = 2^(prime(n) + 1) + 1.
-; Submitted by stoneageman
+; Submitted by [AF>Libristes] Dudumomo
 ; 9,17,65,257,4097,16385,262145,1048577,16777217,1073741825,4294967297,274877906945,4398046511105,17592186044417,281474976710657,18014398509481985,1152921504606846977,4611686018427387905,295147905179352825857,4722366482869645213697
-; Formula: a(n) = 2*2^max(A006005(n),2)+1
+; Formula: a(n) = 2*2^b(n)+1, b(n) = A159477(b(n-1)), b(0) = 2
 
-seq $0,6005 ; The odd prime numbers together with 1.
-max $0,2
-mov $1,2
-pow $1,$0
+mov $3,2
+lpb $0
+  sub $0,1
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $2,2
+pow $2,$3
+mov $1,3
+add $1,$2
 mov $0,$1
 mul $0,2
-add $0,1
+sub $0,5

@@ -7,7 +7,11 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,260446 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1,0) and midword sequence (a(n)); see Comments.
+  seq $3,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  add $3,7
+  dif $3,4
+  sub $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

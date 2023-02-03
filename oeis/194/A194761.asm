@@ -7,9 +7,12 @@ add $1,2
 mov $2,$0
 lpb $0
   mov $3,$0
-  seq $3,329833 ; Beatty sequence for (5+sqrt(73))/8.
+  add $3,1
+  mov $4,22
+  mul $4,$3
+  div $4,13
   sub $0,1
-  add $2,$3
+  add $2,$4
 lpe
 mov $0,$2
 add $0,2

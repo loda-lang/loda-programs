@@ -7,7 +7,11 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
+  mov $5,$0
+  seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $0,$5
+  add $0,1
+  cmp $0,4
   seq $0,120518 ; a(n) = min{j : A120507(j) = n}.
   mov $3,$0
   sub $3,1

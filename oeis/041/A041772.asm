@@ -8,8 +8,26 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  mov $7,-1
+  pow $7,$3
+  add $7,2
   mov $1,$3
-  seq $1,40386 ; Continued fraction for sqrt(407).
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  mul $1,$7
+  mul $1,2
+  sub $1,1
+  div $1,3
+  mov $6,$1
+  add $6,13
+  dif $6,2
+  div $6,2
+  mov $1,$6
+  sub $1,2
+  seq $1,24639 ; n written in fractional base 7/2.
+  mov $5,$1
+  cmp $1,4
+  add $5,$1
+  mov $1,$5
   mul $1,$2
   add $1,$4
   add $3,1

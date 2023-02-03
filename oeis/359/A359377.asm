@@ -1,22 +1,36 @@
 ; A359377: a(n) = 1 if 3*n is squarefree, otherwise 0.
-; Submitted by estatic707
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,0
 
-mov $3,1
-max $3,$0
-lpb $3
-  lpb $0
-    add $1,$0
-    mov $4,$3
-    cmp $4,0
-    mov $2,$3
-    add $2,$4
-    seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-    mod $3,$2
-    add $0,$1
-    mod $0,6
+mov $1,1
+mov $2,2
+mov $4,1
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
   lpe
-  sub $0,2
+  mov $5,1
+  mov $6,2
+  lpb $0
+    dif $0,$2
+    mul $5,$2
+    sub $5,$4
+    sub $6,1
+    mul $6,$2
+    mul $4,$2
+    cmp $4,3
+    sub $4,$6
+    add $5,$4
+    mov $6,1
+  lpe
+  mul $1,$5
 lpe
-mov $0,$3
+mov $0,$1
+mod $0,2
+add $0,2
 mod $0,2

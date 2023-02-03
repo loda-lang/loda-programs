@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,89631 ; a(n) = (Product_{p is a prime factor of n} p)) mod (Product_{p is a prime factor of n} p-1).
+  seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+  sub $3,1
+  seq $3,68494 ; a(n) = n mod phi(n).
   trn $3,1
   add $4,1
   mov $5,1

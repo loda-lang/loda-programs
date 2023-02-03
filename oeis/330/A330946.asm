@@ -6,8 +6,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,257994 ; Number of prime parts in the partition having Heinz number n.
   mov $3,$1
-  seq $3,330944 ; Number of nonprime prime indices of n.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,2

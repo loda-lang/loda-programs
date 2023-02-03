@@ -3,6 +3,10 @@
 
 mov $1,-2
 bin $1,$0
-seq $0,40976 ; a(n) = prime(n) - 2.
-add $0,2
+mov $2,2
+lpb $0
+  sub $0,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$2
 sub $0,$1

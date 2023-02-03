@@ -1,10 +1,9 @@
 ; A059648: a(n) = [[(k^2)*n]-(k*[k*n])], where k = sqrt(2) and [] is the floor function.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0
-; Formula: a(n) = A138330(max(n-1,0))-1
+; Formula: a(n) = A289001(max(2*n-2,0))
 
-mov $1,$0
-trn $1,1
-seq $1,138330 ; Beatty discrepancy (defined in A138253) giving the closeness of the pair (A136497,A136498) to the Beatty pair (A001951,A001952).
-mov $0,$1
 sub $0,1
+mul $0,2
+max $0,0
+seq $0,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.

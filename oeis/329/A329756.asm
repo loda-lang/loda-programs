@@ -5,5 +5,8 @@
 mov $1,8
 lpb $1
   div $1,6
-  seq $0,2413 ; Heptagonal (or 7-gonal) pyramidal numbers: a(n) = n*(n+1)*(5*n-2)/6.
+  mov $2,$0
+  bin $2,3
+  pow $0,3
+  sub $0,$2
 lpe

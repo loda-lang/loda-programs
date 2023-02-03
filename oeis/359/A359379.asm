@@ -1,17 +1,9 @@
 ; A359379: a(n) = 1 if n is either a multiple of 4, or an odd multiple of 3, otherwise 0.
-; Submitted by Mads Nissen
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1
-; Formula: a(n) = (((((n^2+2)/2+74)/3-n)*((n^2+2)/2+73))/2)%2
+; Formula: a(n) = (gcd(n+30,12)/2)%2
 
-sub $1,$0
-pow $0,2
-add $0,2
-div $0,2
-add $0,73
-mov $2,1
-add $2,$0
-div $2,3
-add $1,$2
-mul $0,$1
+add $0,30
+gcd $0,12
 div $0,2
 mod $0,2

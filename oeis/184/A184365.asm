@@ -4,5 +4,17 @@
 
 sub $1,$0
 add $1,1
-seq $0,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+mul $0,3
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+sub $0,1
+bin $0,$2
+mul $2,2
+add $2,1
+mul $2,$0
+mov $0,$2
+mod $0,3
+dif $0,-2
 mul $0,$1

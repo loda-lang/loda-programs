@@ -4,7 +4,16 @@
 
 add $0,1
 mov $1,$0
-seq $0,4988 ; a(n) = (3^n/n!) * Product_{k=0..n-1} (3*k + 2).
-mul $1,$0
+mov $2,1
+mov $4,$0
+mov $0,3
+lpb $4
+  sub $4,1
+  sub $0,9
+  sub $3,1
+  mul $2,$0
+  div $2,$3
+lpe
+mul $1,$2
 mov $0,$1
 div $0,6

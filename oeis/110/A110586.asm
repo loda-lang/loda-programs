@@ -1,24 +1,33 @@
 ; A110586: Squares of the form 6p+7 for p prime (A110015) that are squares of a prime.
-; Submitted by ChelseaOilman
+; Submitted by USTL-FIL (Lille Fr)
 ; 25,49,121,289,361,841,1369,1849,2209,2809,3721,5041,5329,6241,7921,9409,10201,11449,11881,16129,29929,36481,39601,49729,58081,63001,69169,73441,78961,100489,134689,151321,157609,187489,192721,196249,201601,208849,212521,229441,273529,292681,323761,332929,344569,375769,398161,418609,434281,458329,466489,477481,491401,546121,573049,657721,674041,703921,727609,829921,844561,966289,982081,994009,1038361,1181569,1229881,1247689,1261129,1329409,1352569,1371241,1394761,1495729,1515361,1585081,1630729
 
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,11
+pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,84922 ; a(n) = (prime(n)-1)*(prime(n)+1)/6.
-  sub $3,2
-  mov $5,$3
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,1
+  sub $6,1
+  add $6,$3
+  mov $3,$6
+  add $3,$1
+  sub $3,1
+  sub $7,1
+  div $7,3
+  mul $7,2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  add $1,2
+  pow $3,0
   mov $4,$0
   max $4,0
   cmp $4,$0
+  mov $7,$5
   mul $2,$4
-  trn $2,1
+  sub $2,17
+  add $5,$1
 lpe
-mov $0,$5
-mul $0,6
-add $0,13
+mov $0,$7
+mul $0,4
+add $0,1

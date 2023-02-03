@@ -1,6 +1,9 @@
 ; A283710: The smallest square referenced in A124809.
 ; Submitted by Conan
 ; 25,25,25,289,841,25,25,25,169,25,25,169,25,1369,25,25,25,25,25,25,25,25,25,25,169,25,289,25,25,25,25,25,25,289,25,25,25,25,1681,25,25,25,169,25,25,169,25,25,25,25,25,2809,25,10201,25,25,289,25,25,25,169,25,25,169,25,289,25,25,25,25,25,25,25,25,25,25,25,169,25,25,169,5329,25,25,841,25,25,289,25,25,25,25,25,25,289,25,169,25,25,25
+; Formula: a(n) = A249739(A124809(n)-1)^2
 
-seq $0,283711 ; Square root of the smallest square referenced in A124809 (Numbers of the form (square + 1) that are not squarefree).
+seq $0,124809 ; Numbers of the form (square + 1) that are not squarefree.
+sub $0,1
+seq $0,249739 ; The smallest prime whose square divides n, 1 if n is squarefree.
 pow $0,2

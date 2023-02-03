@@ -8,7 +8,8 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,108782 ; Difference between n and the largest number with the same digit set as n.
+  seq $1,4186 ; Arrange digits of n in decreasing order.
+  sub $1,$2
   add $2,$0
   sub $3,$1
 lpe

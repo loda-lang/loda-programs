@@ -12,7 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,345071 ; Sums of two consecutive odd-indexed primes.
+  mul $0,2
+  mov $5,$0
+  add $5,2
+  seq $5,40 ; The prime numbers.
+  seq $0,40 ; The prime numbers.
+  add $0,$5
   mul $1,$0
   add $3,$1
 lpe

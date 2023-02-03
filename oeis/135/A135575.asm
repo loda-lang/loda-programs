@@ -8,7 +8,13 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,135574 ; A024495 but with terms swapped in pairs.
+  mov $7,-1
+  pow $7,$5
+  add $7,$5
+  add $7,1
+  mov $5,$7
+  seq $5,86953 ; Binomial transform of (-1)^mod(n,3) (A257075).
+  div $5,2
   sub $0,1
   mov $2,$3
   mul $2,$5

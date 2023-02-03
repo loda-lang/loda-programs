@@ -1,7 +1,20 @@
 ; A238908: Number of (n+1) X (3+1) 0..2 arrays with no element equal to all horizontal neighbors or equal to all vertical neighbors, and new values 0..2 introduced in row major order.
 ; Submitted by Skivelitis2
 ; 54,486,17496,408726,10789686,274834944,7073353350,181499433750,4661259221016,119679993219366,3073064486445414,78906460267708416,2026077840987433686,52023421931028414534,1335801507196609225944,34299270055897770119094,880699693329714473020566,22613657338534171484911104,580649117942144535598659366,14909282154596845106538092406,382824476203321944215168310936,9829754246217288936830471713350,252397833863223215436649415474886,6480799513668539272165160858517504,166406984139249694519119367745539446
+; Formula: a(n) = 6*(3*c(n))^2, b(n) = 2*d(n-1)+b(n-1), b(2) = 6, b(1) = 0, b(0) = 0, c(n) = 3*c(n-1)+2*d(n-1)+b(n-1)+d(n-1), c(2) = 18, c(1) = 3, c(0) = 1, d(n) = 3*c(n-1), d(2) = 9, d(1) = 3, d(0) = 0
 
-seq $0,238906 ; Number of (n+1) X (1+1) 0..2 arrays with no element equal to all horizontal neighbors or equal to all vertical neighbors, and new values 0..2 introduced in row major order.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $1,$4
+  add $1,$4
+  mul $2,3
+  mov $3,$2
+  add $4,$1
+  add $2,$4
+  mov $4,$3
+lpe
+mov $0,$2
+mul $0,3
 pow $0,2
 mul $0,6

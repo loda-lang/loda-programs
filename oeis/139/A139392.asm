@@ -8,8 +8,14 @@ add $2,2
 pow $2,2
 lpb $2
   add $1,2
-  mov $3,$1
-  seq $3,297086 ; a(n) = 1 if gcd(n, phi(n)) == 1 otherwise 0.
+  mov $6,$1
+  seq $6,62570 ; a(n) = phi(2*n).
+  mov $5,$1
+  add $5,1
+  gcd $5,$6
+  mov $6,1
+  div $6,$5
+  mov $3,$6
   cmp $3,0
   sub $0,$3
   mov $4,$0

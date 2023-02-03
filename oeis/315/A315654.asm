@@ -5,4 +5,8 @@ mul $0,4
 mov $1,$0
 cmp $1,0
 add $0,$1
-seq $0,47326 ; Numbers that are congruent to {0, 1, 2, 5, 6} mod 7.
+mov $2,$0
+add $0,2
+div $0,5
+mul $0,2
+add $0,$2

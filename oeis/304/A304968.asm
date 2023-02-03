@@ -10,7 +10,10 @@ lpb $2
   mov $3,$1
   add $3,$2
   bin $3,$1
-  seq $1,134958 ; Number of hypertrees with n labeled vertices: analog of A030019 when edges of size 1 are allowed (with no two equal edges).
+  mov $5,2
+  pow $5,$1
+  seq $1,30019 ; Number of labeled spanning trees in the complete hypergraph on n vertices (all hyperedges having cardinality 2 or greater).
+  mul $1,$5
   mul $3,$1
   sub $4,1
   add $4,$3

@@ -1,24 +1,29 @@
 ; A091180: Primes of the form 3*p - 2 such that p is a prime.
-; Submitted by PDW
+; Submitted by Skillz
 ; 7,13,19,31,37,67,109,127,139,157,181,199,211,307,337,379,409,487,499,541,571,577,631,751,769,787,811,829,877,919,937,991,1009,1039,1117,1201,1291,1297,1327,1381,1399,1459,1471,1567,1621,1669,1759,1777,1801,2017,2029,2179,2251,2269,2281,2389,2467,2557,2647,2659,2719,2731,2857,2971,3037,3061,3181,3187,3259,3271,3307,3457,3511,3541,3559,3637,3691,3709,3847,3889,3907,3919,4099,4297,4339,4357,4441,4447,4567,4591,4657,4789,4801,4861,4909,4969,4987,4999,5077,5167
 
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
-  max $3,$5
-  mul $3,4
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  mov $3,$1
+  add $3,2
+  mul $3,6
+  mov $5,$3
+  sub $5,6
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $5,2
+  add $1,1
+  mov $3,$5
+  mul $3,$1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  cmp $3,1
   sub $0,$3
-  add $1,4
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
   sub $2,1
-  add $5,1
-  add $5,$1
-  add $1,2
 lpe
 mov $0,$1
-add $0,1
+mul $0,6
+add $0,7

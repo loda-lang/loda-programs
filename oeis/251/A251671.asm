@@ -12,8 +12,13 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,326555 ; a(n) = (2^n + 3^n)^n for n>= 0.
-  mul $1,$0
+  mov $6,3
+  pow $6,$0
+  mov $5,2
+  pow $5,$0
+  add $5,$6
+  pow $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

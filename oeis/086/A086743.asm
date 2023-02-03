@@ -6,7 +6,14 @@ mov $2,2
 lpb $0
   sub $0,1
   mov $1,$2
-  seq $1,39965 ; An example of a d-perfect sequence.
+  mul $1,2
+  bin $1,$2
+  mul $1,3
+  mov $3,$2
+  add $3,1
+  div $1,$3
+  div $1,3
+  mod $1,6
   cmp $1,0
   add $1,1
   sub $0,$1

@@ -5,10 +5,19 @@
 mul $0,2
 add $0,4
 lpb $0
-  sub $0,4
   mov $2,$0
-  max $2,0
-  seq $2,25828 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^6)).
-  add $1,$2
+  add $2,5
+  mov $4,$2
+  div $4,2
+  mov $5,$2
+  div $5,3
+  sub $0,4
+  mov $3,$4
+  mov $4,$5
+  mul $4,2
+  sub $3,$4
+  pow $3,2
+  div $3,4
+  add $1,$3
 lpe
 mov $0,$1

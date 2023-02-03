@@ -8,7 +8,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,190248 ; a(n) = [nu+nv+nw]-[nu]-[nv]-[nw], where u=(1+sqrt(5))/2, v=u^2, w=u^3, []=floor.
+  add $3,1
+  mul $3,4
+  seq $3,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
+  mod $3,4
+  add $3,1
+  div $3,2
   add $3,$4
   div $3,2
   sub $0,$3

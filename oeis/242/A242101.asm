@@ -4,8 +4,12 @@
 
 add $0,1
 lpb $0
+  mov $2,$0
+  seq $2,700 ; Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
   mov $1,$0
-  seq $1,46682 ; Number of cycle types of conjugacy classes of all even permutations of n elements.
+  seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+  add $1,$2
+  div $1,2
   mul $1,2
   sub $1,1
   mov $0,1

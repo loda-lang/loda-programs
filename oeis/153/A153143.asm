@@ -1,13 +1,14 @@
 ; A153143: Nonnegative numbers n such that 2n + 19 is prime.
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,2,5,6,9,11,12,14,17,20,21,24,26,27,30,32,35,39,41,42,44,45,47,54,56,59,60,65,66,69,72,74,77,80,81,86,87,89,90,96,102,104,105,107,110,111,116,119,122,125,126,129,131,132,137,144,146,147,149,156,159,164,165,167,170,174,177,180,182,185,189,191,195,200,201,206,207,210,212,215,219,221,222,224,230,234,236,240,242,245,251,252,261,264,269,272,275,276,279,284
-; Formula: a(n) = (A173919(2*n+14)+1)/2-10
+; Formula: a(n) = (b(n)-19)/2, b(n) = A151800(b(n-1)+1), b(0) = 19
 
-mul $0,2
-add $0,14
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-mov $1,$0
-add $1,1
+add $0,7
+lpb $0
+  sub $0,1
+  add $1,1
+  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
+lpe
 mov $0,$1
+sub $0,19
 div $0,2
-sub $0,10

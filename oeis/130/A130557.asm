@@ -5,7 +5,12 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,6414 ; Number of nonseparable toroidal tree-rooted maps with n + 2 edges and n + 1 vertices.
+  add $2,2
+  mov $4,$2
+  pow $2,2
+  bin $2,2
+  mul $2,$4
+  div $2,12
   mul $3,$2
   add $3,$1
   sub $0,1

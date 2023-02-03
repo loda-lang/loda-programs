@@ -9,7 +9,9 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,121361 ; Expansion of f(x^1, x^5) * psi(x^2) in powers of x where psi(), f() are Ramanujan theta functions.
+  mul $3,6
+  add $3,3
+  seq $3,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
   cmp $3,0
   sub $0,$3
   mov $4,$0

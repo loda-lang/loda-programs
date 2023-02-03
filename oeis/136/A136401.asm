@@ -4,6 +4,12 @@
 
 mov $1,2
 pow $1,$0
-seq $0,77966 ; Expansion of 1/(1+2*x^2).
+sub $3,$0
+add $0,2
+sub $2,$0
+sub $2,$3
+dif $3,$2
+pow $2,$3
+mov $0,$2
 add $0,$1
 div $0,6

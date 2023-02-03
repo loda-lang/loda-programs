@@ -6,10 +6,9 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,8
-  seq $3,128251 ; n^4 - 1 divided by its largest fourth power divisor.
   add $4,1
   add $5,1
+  mov $3,9999
   gcd $3,$5
   div $3,$4
   sub $0,$3

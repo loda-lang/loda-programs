@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,48989 ; Numbers n such that pi(n) is prime.
+  seq $3,48989 ; Numbers k such that pi(k) is prime.
   sub $3,1
   add $0,1
   add $1,1

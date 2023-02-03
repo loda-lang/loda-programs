@@ -1,25 +1,27 @@
 ; A067755: Even legs of Pythagorean triangles whose other leg and hypotenuse are both prime.
-; Submitted by Skivelitis2
+; Submitted by Skillz
 ; 4,12,60,180,420,1740,1860,2520,3120,5100,8580,9660,16380,19800,36720,60900,71820,83640,100800,106260,135720,161880,163020,199080,205440,218460,273060,282000,337020,388080,431520,491040,531480,539760,552300,571380,595140,637320,662400,685620,697380,926160,1035360,1064340,1108560,1123500,1171980,1460340,1515540,1639860,1676280,1806900,1899300,2334960,2506560,2574180,2601480,2740140,2763600,2834580,2853660,3023340,3223260,3248700,3356640,3403440,3535140,3567120,3674760,3696480,3723720,3729180
 
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,3
 lpb $2
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  add $6,10
-  sub $0,$3
+  add $5,$1
+  sub $6,1
+  mov $3,$6
+  add $3,$1
+  mul $3,2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
   add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,$1
-  add $1,$6
+  mov $7,$5
   mul $2,$4
-  sub $2,1
+  sub $2,17
   add $5,$1
-  add $6,2
 lpe
-mov $0,$1
-div $0,3
+mov $0,$7

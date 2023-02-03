@@ -4,6 +4,19 @@
 
 mov $1,$0
 sub $1,3
-trn $0,2
-seq $0,268586 ; Expansion of (x^3*(3*x - 2))/(2*x - 1)^3.
+mov $3,$0
+add $3,3
+sub $0,2
+mov $4,2
+pow $4,$0
+mul $4,$3
+sub $0,1
+mul $0,$4
+sub $0,$4
+lpb $0
+  mov $2,$0
+  mod $0,4
+lpe
+div $2,32
+mov $0,$2
 mul $0,$1

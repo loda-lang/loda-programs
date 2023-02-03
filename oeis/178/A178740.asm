@@ -10,7 +10,13 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,303707 ; Number of factorizations of n using elements of A007916 (numbers that are not perfect powers).
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $4,$1
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $4,$3
+  mov $3,$4
+  mul $3,14
+  div $3,12
   sub $3,6
   mul $3,2
   cmp $3,2

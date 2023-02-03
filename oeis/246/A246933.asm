@@ -5,5 +5,17 @@
 mul $0,-2
 mov $1,1
 sub $1,$0
-seq $1,31341 ; a(n) = prime(8*n).
+mul $1,8
+mov $3,18
+mov $4,$1
+pow $4,5
+lpb $4
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,2
+  sub $1,$2
+  mov $2,$3
+  sub $4,$1
+lpe
+mov $1,$3
+add $1,1
 mov $0,$1

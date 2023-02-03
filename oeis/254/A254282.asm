@@ -5,6 +5,19 @@
 mov $1,$0
 mov $0,3
 pow $0,$1
-seq $1,97188 ; G.f. A(x) satisfies A057083(x*A(x)) = A(x) and so equals the ratio of the g.f.s of any two adjacent diagonals of triangle A097186.
+mov $2,$1
+add $2,1
+mov $3,1
+mov $5,$1
+mov $1,3
+lpb $5
+  sub $5,1
+  sub $1,9
+  sub $4,1
+  mul $3,$1
+  div $3,$4
+lpe
+mov $1,$3
+div $1,$2
 mul $1,$0
 mov $0,$1

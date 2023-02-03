@@ -10,7 +10,13 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mul $1,$0
-  seq $0,346838 ; a(n) = (PolyLog(-n, -i) - exp(i*Pi*n)*PolyLog(-n, i)) * i / exp(i*Pi*n/2).
+  mov $4,-1
+  pow $4,$0
+  mov $5,$0
+  seq $5,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$5
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1

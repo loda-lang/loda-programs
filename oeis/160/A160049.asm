@@ -4,7 +4,17 @@
 
 mov $2,$0
 add $2,1
-seq $0,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+mov $3,1
+lpb $0
+  sub $0,1
+  add $4,1
+  mul $5,$4
+  add $5,$3
+  mul $3,$4
+lpe
+gcd $5,$3
+div $3,$5
+mov $0,$3
 dif $0,2
 mov $1,$0
 gcd $1,$2

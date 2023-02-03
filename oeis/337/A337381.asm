@@ -7,8 +7,17 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  sub $5,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,337383 ; a(n) = 1 if sigma(A003961(n)) >= 2*sigma(n), 0 otherwise, where A003961 is the prime shift towards larger primes.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $5,$3
+  cmp $5,1
+  mov $3,$5
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

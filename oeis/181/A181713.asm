@@ -6,8 +6,21 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
+  mov $5,$1
+  add $5,1
+  mul $5,3
+  mov $6,$5
+  seq $6,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+  add $5,$6
+  mul $5,2
+  sub $5,1
+  mov $4,$5
+  div $4,2
+  mod $4,3
+  sub $4,1
   mov $3,$1
-  seq $3,181712 ; Floor(3*n*tau)-Floor(2*n*tau)-Floor(n*tau), where tau=(1+sqrt(5))/2, the golden ratio.
+  seq $3,89809 ; Complement of A078588.
+  add $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

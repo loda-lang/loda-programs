@@ -7,8 +7,11 @@ add $0,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,145987 ; Duplicate of A068811.
-  sub $3,1
+  seq $3,68811 ; Numbers k such that k and its 10's complement (10^d-k, where d is the number of digits in k) are both primes
+  mul $3,5
+  sub $3,15
+  div $3,5
+  add $3,2
   add $1,1
   add $2,$3
   sub $2,$0

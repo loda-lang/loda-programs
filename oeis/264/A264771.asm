@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  seq $3,264724 ; a(n) = n^2 + phi(n).
+  add $3,1
+  pow $3,2
+  add $3,$6
   mov $5,$3
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

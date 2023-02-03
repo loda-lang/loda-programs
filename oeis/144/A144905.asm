@@ -6,5 +6,18 @@ mov $2,$0
 cmp $2,0
 mov $1,$0
 add $1,$2
-seq $0,105749 ; Number of ways to use the elements of {1,...,k}, 0 <= k <= 2n, once each to form a sequence of n sets, each having 1 or 2 elements.
+mov $3,1
+mov $4,1
+mov $5,$0
+lpb $5
+  mul $4,$5
+  mul $3,$0
+  add $3,$4
+  sub $5,1
+  max $5,1
+  add $0,$5
+lpe
+mul $3,$0
+add $4,$3
+mov $0,$4
 div $0,$1

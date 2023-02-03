@@ -4,5 +4,16 @@
 
 add $0,1
 mul $0,4
-seq $0,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
+mov $2,1
+mov $3,2
+lpb $0
+  sub $0,1
+  gcd $1,$3
+  dif $2,$1
+  mov $1,$2
+  mul $2,$3
+  add $3,1
+lpe
+mov $0,$2
+mul $0,2
 div $0,120

@@ -1,10 +1,15 @@
 ; A145312: Coefficients in expansion of E''_4(q), where E_4 is the Eisenstein series in A004009.
 ; Submitted by Jon Maiga
 ; 4320,40320,210240,604800,1814400,3467520,7862400,13080960,24494400,35164800,64753920,82293120,135233280,177811200,269625600,320785920,500346720,563068800,838857600,970905600,1329229440,1477681920,2170022400,2268144000,3085992000
+; Formula: a(n) = 1440*(((n+1)*(240*A001158(n+1)*(n+1)+240*A001158(n+1))-4320)/1440)+4320
 
 add $0,1
 mov $1,$0
-seq $0,145094 ; Coefficients in expansion of Eisenstein series q*E'_4.
+mov $2,$0
+seq $2,1158 ; sigma_3(n): sum of cubes of divisors of n.
+mul $0,$2
+add $0,$2
+mul $0,240
 mul $0,$1
 sub $0,4320
 div $0,1440

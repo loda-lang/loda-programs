@@ -101,6 +101,7 @@ A038451: Sums of 9 distinct powers of 10.
 A038452: Sums of 10 distinct powers of 10.
 A038461: Sums of 10 distinct powers of 2.
 A038462: Sums of 11 distinct powers of 2.
+A038573: a(n) = 2^A000120(n) - 1.
 A038609: Numbers that are the sum of 2 different primes.
 A039010: Numbers whose base-5 representation has the same number of 1's and 2's.
 A039014: Numbers whose base-5 representation has the same number of 2's and 4's.
@@ -517,6 +518,7 @@ A317108: Numbers missing from A317106.
 A317621: Numbers missing from A317619.
 A317622: Numbers missing from A317620.
 A317440: Numbers missing from A317438.
+A318622: Number of irreducible factors in the factorization of the n-th cyclotomic polynomial over GF(2) (counted with multiplicity).
 A319432: The first differences (A129761) of the tribonacci representation numbers (A003714 or A014417) consists of runs of 1's separated by the terms of the present sequence.
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.
 A319434: Take Golomb's sequence A001462 and shorten all the runs by 1.

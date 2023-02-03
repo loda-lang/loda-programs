@@ -7,14 +7,22 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,32
-  mov $3,$1
-  seq $3,46073 ; Number of squares in multiplicative group modulo n.
-  mov $5,$3
+  mov $6,$1
+  add $6,1
+  dif $6,2
+  dif $6,2
+  sub $6,1
+  mov $7,$6
+  gcd $7,2
+  seq $6,70306 ; a(n) = 2*phi(n)/2^omega(n).
+  div $6,$7
+  mov $3,$6
   mul $3,338
   add $3,2
   gcd $3,4
   add $3,1
   cmp $3,5
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

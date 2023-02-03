@@ -9,9 +9,18 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,260181 ; Numbers whose last digit is prime.
-  mov $5,$3
+  mod $3,4
+  mov $7,$1
+  mul $7,2
+  mov $6,2
+  trn $6,$3
+  add $6,$7
+  mov $8,$1
+  div $8,2
+  add $8,$6
+  mov $5,$8
   sub $5,1
+  mov $3,$8
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

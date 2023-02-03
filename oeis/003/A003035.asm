@@ -1,7 +1,7 @@
 ; A003035: Maximal number of 3-tree rows in n-tree orchard problem.
 ; Submitted by Christian Krause
 ; 0,0,1,1,2,4,6,7,10,12,16,19,22,26
-; Formula: a(n) = (7*((n^2)/2+5)-n)/22-1
+; Formula: a(n) = (7*((n^2)/2)-n+35)/22-1
 
 mov $1,$0
 mul $1,$0

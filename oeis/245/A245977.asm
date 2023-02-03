@@ -1,13 +1,21 @@
 ; A245977: Limit-reverse of the infinite Fibonacci word A014675 = (s(0),s(1),...) = (2,1,2,2,1,2,1,2, ...) using initial block (s(2),s(3)) = (2,2).
-; Submitted by damotbe
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1
+; Formula: a(n) = d(n)/3+1, b(n) = ((b(n-1)/2-c(n-1))/2)/gcd((b(n-1)/2-c(n-1))/2+1,4), b(2) = -1300, b(1) = -81, b(0) = -21, c(n) = 4*c(n-1), c(2) = 10240, c(1) = 2560, c(0) = 640, d(n) = gcd((b(n-1)/2-c(n-1))/2+1,4), d(2) = 1, d(1) = 4, d(0) = 4
 
+mov $2,10
+add $0,3
 lpb $0
-  mov $2,$0
-  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$2
+  sub $0,1
+  div $1,2
+  sub $1,$2
+  div $1,2
+  mov $3,1
+  add $3,$1
+  gcd $3,4
+  div $1,$3
+  mul $2,4
 lpe
-mov $1,1
-bin $1,$0
-mov $0,$1
+mov $0,$3
+div $0,3
 add $0,1

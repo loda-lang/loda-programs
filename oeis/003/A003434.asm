@@ -4,6 +4,10 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,32358 ; Number of iterations of phi(n) needed to reach 2.
+mov $2,$0
 add $0,1
+seq $0,64415 ; a(1) = 0, a(n) = iter(n) if n is even, a(n) = iter(n)-1 if n is odd, where iter(n) = A003434(n) = smallest number of iterations of Euler totient function phi needed to reach 1.
+mod $2,2
+add $2,$0
+mov $0,$2
 sub $0,$1

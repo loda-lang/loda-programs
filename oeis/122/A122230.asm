@@ -1,7 +1,22 @@
 ; A122230: a(n) = A007088(A122229(n)).
 ; Submitted by Christian Krause
 ; 0,10,1100,111000,11100100,1110011000,111001100100,11100110011000,1110011001100100,111001100110011000,11100110011001100100,1110011001100110011000,111001100110011001100100
-; Formula: a(n) = A007088(A122229(n))
 
-seq $0,122229 ; a(n) = A014486(A122228(n)).
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,4
+pow $1,$0
+mul $1,6
+div $1,20
+mul $1,6
+div $1,4
+mul $1,2
+mov $3,1
+mov $0,$1
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2

@@ -8,7 +8,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,78627 ; Write n in binary; repeatedly sum the "digits" until reaching 1; a(n) = 1 + number of steps required.
+  add $3,1
+  seq $3,180094 ; Number of steps to reach 0 or 1, starting with n and applying the map k -> (number of 1's in binary expansion of k) repeatedly.
+  add $3,1
   div $3,2
   add $3,$4
   gcd $3,2

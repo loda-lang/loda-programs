@@ -5,5 +5,20 @@
 mov $1,$0
 trn $0,1
 sub $1,$0
-seq $0,33949 ; Positive integers that do not have a primitive root.
+add $0,3
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,354108 ; a(n) = 1 if n is neither an odd prime power nor twice an odd prime power, otherwise 0.
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1
 mul $0,$1

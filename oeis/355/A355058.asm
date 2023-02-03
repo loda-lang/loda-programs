@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  seq $3,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $3,3
+  mul $3,2
+  add $3,1
   mod $3,3
   gcd $3,4
   add $3,1

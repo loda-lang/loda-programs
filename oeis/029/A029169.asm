@@ -5,8 +5,14 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25801 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^12)).
+  add $2,1
+  mov $3,$2
+  div $3,3
+  div $2,2
+  sub $2,$3
+  add $2,1
+  pow $2,2
+  div $2,4
   trn $0,10
   add $1,$2
 lpe

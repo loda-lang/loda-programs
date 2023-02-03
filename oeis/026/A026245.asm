@@ -8,7 +8,8 @@ pow $2,3
 lpb $2
   sub $2,29
   mov $3,$1
-  seq $3,19444 ; a_1, a_2, ..., is a permutation of the positive integers such that the average of each initial segment is an integer, using the greedy algorithm to define a_n.
+  seq $3,2251 ; Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
+  add $3,1
   mov $5,$3
   mul $3,338
   gcd $3,4

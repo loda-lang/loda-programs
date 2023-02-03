@@ -6,10 +6,14 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  add $4,1
   mov $3,$1
   add $3,1
-  seq $3,29858 ; a(n) = (3^n - 3)/2.
+  add $4,1
+  mov $5,3
+  pow $5,$3
+  div $5,2
+  mul $5,3
+  mov $3,$5
   gcd $3,$4
   cmp $3,1
   sub $0,$3

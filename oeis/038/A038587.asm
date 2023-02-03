@@ -11,7 +11,8 @@ lpb $2
   mov $4,$0
   mul $0,2
   add $0,$4
-  seq $0,84301 ; a(n) = sigma(n) mod 6.
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $0,6
   add $1,$0
 lpe
 mov $0,$1

@@ -4,6 +4,15 @@
 
 mov $1,$0
 gcd $1,2
-seq $0,3149 ; a(n) = Sum_{k=0..n} k!(n-k)!.
-sub $0,1
+mov $2,1
+lpb $0
+  add $3,1
+  add $4,$2
+  mul $4,$0
+  sub $0,1
+  mul $2,$3
+lpe
+add $2,$4
+mov $0,$2
 add $0,$1
+sub $0,1

@@ -8,7 +8,16 @@ pow $2,3
 lpb $2
   sub $2,6
   mov $3,$1
-  seq $3,326956 ; Characteristic function of A228354.
+  seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+  sub $3,1
+  seq $3,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
+  sub $3,1
+  seq $3,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
+  sub $3,1
+  seq $3,319627 ; Primorial deflation of n (denominator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the denominator of g(n).
+  mov $5,1
+  div $5,$3
+  mov $3,$5
   gcd $3,4
   add $3,1
   cmp $3,5

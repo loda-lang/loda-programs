@@ -4,7 +4,10 @@
 
 lpb $0
   mul $0,2
-  seq $0,20908 ; Number of terms in Zeckendorf representation of 2^n.
+  mov $2,2
+  pow $2,$0
+  mov $0,$2
+  seq $0,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
   sub $0,1
   mul $0,2
   mov $1,$0

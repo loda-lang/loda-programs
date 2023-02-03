@@ -11,6 +11,7 @@ add $1,$0
 add $1,$2
 lpb $2
   sub $2,1
+  div $2,7
   mov $0,$1
   sub $0,1
   seq $0,108087 ; Array, read by antidiagonals, where A(n,k) = exp(-1)*Sum_{i>=0} (i+k)^n/i!.

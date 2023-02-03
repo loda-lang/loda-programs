@@ -8,7 +8,10 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,71228 ; a(n) = n*(n-th composite number).
+  mov $5,$0
+  add $5,1
+  seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+  mul $0,$5
   mov $2,$3
   mul $2,$0
   add $4,$2

@@ -1,7 +1,28 @@
 ; A186243: Numbers n such that 6n-5 and 6n-1 are both primes.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by davidBAM
 ; 2,3,4,7,8,12,14,17,18,19,22,28,33,38,39,47,52,53,59,64,67,74,77,78,82,84,103,108,113,124,127,129,138,143,144,147,148,152,157,162,169,182,183,203,214,217,218,238,239,242,248,249,259,262,264,267,269,278,283,298,312,313,333,334,348,357,368,374,379,383,392,397,399,407,413,424,437,444,448,449,452,459,467,473,477,493,504,507,514,528,532,537,543,554,558,577,578,589,603,613
-; Formula: a(n) = A056956(n)+1
 
-seq $0,56956 ; Numbers n such that 6n+1 and 6n+5 are both primes.
-add $0,1
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,2
+  mul $3,6
+  mov $6,$3
+  sub $6,6
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,1
+  mov $5,$3
+  sub $5,$6
+  sub $5,1
+  mul $6,$5
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$6
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,2

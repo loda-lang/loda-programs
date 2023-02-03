@@ -7,10 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $1,1
   add $3,1
   add $3,$4
-  seq $3,115517 ; The mode of the bits of n (using 1 if bimodal).
+  seq $3,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+  add $3,3044713024868432726596
+  mov $5,3044713024868432726596
+  div $5,$3
+  add $1,1
+  mov $3,$5
   add $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

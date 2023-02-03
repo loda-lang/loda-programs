@@ -10,8 +10,12 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
+  mov $5,$0
+  seq $5,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
+  mul $5,2
   mov $4,$0
-  seq $4,325596 ; a(n) = Sum_{d|n} mu(n/d) * (-1)^(d + 1) * d.
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $4,$5
   mul $0,$4
   add $0,$4
   add $3,$0

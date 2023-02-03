@@ -1,11 +1,18 @@
 ; A210323: Number of 2-divided words of length n over a 3-letter alphabet.
 ; Submitted by [SG]KidDoesCrunch
 ; 0,3,16,57,192,599,1872,5727,17488,53115,161040,487073,1471680,4441167,13392272,40355877,121543680,365895947,1101089808,3312442185,9962240928,29954639751,90049997136,270661616363,813397065024,2444101696683,7343167947040,22059763982001,66263812628160
-; Formula: a(n) = 3^(n+1)-A001867(n+1)
 
 add $0,1
 mov $1,3
 pow $1,$0
-seq $0,1867 ; Number of n-bead necklaces with 3 colors.
-sub $1,$0
+lpb $0
+  mov $3,$0
+  seq $3,54610 ; a(n) = Sum_{d|n} phi(d)*3^(n/d).
+  mov $2,$0
+  cmp $2,0
+  add $0,$2
+  div $3,$0
+  mov $0,0
+lpe
+sub $1,$3
 mov $0,$1

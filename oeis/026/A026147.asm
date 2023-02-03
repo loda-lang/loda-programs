@@ -1,11 +1,7 @@
 ; A026147: a(n) = position of n-th 1 in A001285 or A010059 (Thue-Morse sequence).
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,4,6,7,10,11,13,16,18,19,21,24,25,28,30,31,34,35,37,40,41,44,46,47,49,52,54,55,58,59,61,64,66,67,69,72,73,76,78,79,81,84,86,87,90,91,93,96,97,100,102,103,106,107,109,112,114,115,117,120,121,124,126,127,130,131,133,136,137,140,142,143,145,148,150,151,154,155,157,160,161,164,166,167,170,171,173,176,178,179,181,184,185,188,190,191,193,196,198,199
-; Formula: a(n) = 2*n+gcd(A000120(n)-9,2)
+; Formula: a(n) = A001969(n)+1
 
-mov $1,$0
-mul $1,2
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-sub $0,9
-gcd $0,2
-add $0,$1
+seq $0,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
+add $0,1

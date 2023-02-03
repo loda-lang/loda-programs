@@ -4,6 +4,21 @@
 
 mov $2,3
 mul $2,$0
+mov $5,3
 mov $1,$2
-seq $1,226860 ; Expansion of psi(-x) * phi(-x^6) in powers of x where phi(), psi() are Ramanujan theta functions.
-mov $0,$1
+add $1,3
+lpb $1
+  sub $1,$5
+  mov $4,$1
+  max $4,0
+  mul $4,3
+  seq $4,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mod $4,3
+  dif $4,-2
+  add $6,1
+  add $3,$4
+  mov $5,$6
+  dif $5,2
+  mul $5,2
+lpe
+mov $0,$3

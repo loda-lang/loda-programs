@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,111426 ; Difference between largest and smallest prime factor of the n-th composite number.
+  add $3,3
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $3,2
+  seq $3,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   cmp $3,1
   sub $0,$3

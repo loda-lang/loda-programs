@@ -2,23 +2,28 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 11,43,67,107,163,179,211,331,347,379,443,491,499,547,571,659,683,739,827,883,907,947,1019,1051,1163,1171,1187,1283,1451,1499,1523,1579,1619,1667,1723,1747,1787,2003,2011,2027,2083,2179,2251,2339,2347,2459,2531,2683,2699,2731,2843,2851,2963,3011,3019,3067,3187,3203,3259,3299,3347,3371,3467,3539,3571,3691,3739,3803,3851,3907,3931,4019,4027,4099,4139,4211,4243,4363,4523,4547,4603,4643,4691,5051,5107,5147,5387,5419,5443,5483,5531,5651,5779,5867,5923,5987,6043,6091,6203,6211
 
+mov $1,1
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,45339 ; Primes congruent to {2, 3} mod 8.
-  sub $3,1
-  mov $5,$3
-  seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
-  cmp $3,0
+  mul $5,0
+  add $5,$1
+  add $5,$1
+  mul $5,2
+  add $5,6
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $3,$1
+  seq $3,11657 ; A binary m-sequence: expansion of reciprocal of x^3 + x + 1 (mod 2, shifted by 2 initial 0's).
   sub $0,$3
-  add $1,1
+  add $1,2
+  mov $3,$5
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  trn $2,1
+  sub $2,17
 lpe
-mov $0,$5
-add $0,1
+mov $0,$1
+mul $0,4
+sub $0,1

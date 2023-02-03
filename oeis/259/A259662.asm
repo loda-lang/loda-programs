@@ -1,31 +1,13 @@
 ; A259662: Expansion of phi(-q^3) / phi(-q)^3 in powers of q where phi() is a Ramanujan theta function.
-; Submitted by ChelseaOilman
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,6,24,78,222,576,1392,3180,6936,14550,29520,58176,111750,209820,385968,696960,1237470,2163456,3728904,6343068,10658880,17708412,29108880,47373696,76378992,122058870,193435248,304134558,474609180,735374016,1131698448,1730375436,2629442328,3972078720,5966391744,8913467520,13246985454,19588948860,28827800688,42227527404,61579521360,89413257600,129287624160,186192528060,267100847424,381724790976,543549415392,771240957696,1090560756102,1536959466162,2159084435928,3023509925376,4221101121420
+; Formula: a(n) = (3*A132974(2*n)-3)/3+1
 
-mov $2,1
-mov $8,1
-mov $10,1
-lpb $0
-  sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,113660 ; Expansion of phi(x)^3 / phi(x^3) where phi() is a Ramanujan theta function.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    div $6,-1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-  mov $8,$3
-lpe
-mov $0,$8
+mul $0,2
+seq $0,132974 ; Expansion of psi(-q^3) / psi(-q)^3 in powers of q where psi() is a Ramanujan theta function.
+mov $1,3
+mul $1,$0
+mov $0,$1
+sub $0,3
+div $0,3
+add $0,1

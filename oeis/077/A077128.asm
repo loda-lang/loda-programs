@@ -6,5 +6,23 @@ add $0,1
 mov $1,$0
 cmp $1,2
 mul $1,2
-seq $0,65383 ; a(n) = smallest prime >= n*(n + 1)/2.
+add $0,1
+bin $0,2
+sub $0,1
+mov $2,$0
+cmp $2,0
+add $2,$0
+mov $4,$2
+mov $5,$2
+lpb $5
+  sub $5,1
+  mov $6,$4
+  seq $6,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $4,1
+  add $5,$6
+lpe
+mov $2,$4
+add $2,1
+add $3,$2
+mov $0,$3
 add $0,$1

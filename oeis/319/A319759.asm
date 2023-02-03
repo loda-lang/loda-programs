@@ -1,6 +1,7 @@
 ; A319759: Number of non-isomorphic intersecting multiset partitions of weight n with empty intersection.
 ; Submitted by [AF] Kalianthys
 ; 1,0,0,0,0,0,1,2,13,49,199
+; Formula: a(n) = (9*((c(n)^2-121)/8)+135)/9, b(n) = 2*b(n-1)+c(n-1), b(1) = 19, b(0) = 8, c(n) = 2*((b(n-1)+c(n-1))/236), c(1) = 0, c(0) = 3
 
 mov $1,8
 mov $2,3

@@ -6,8 +6,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $1,1
+  mov $5,$1
+  seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $5,1
   mov $3,$1
-  seq $3,353817 ; a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
+  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mul $5,$3
+  mov $3,$5
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

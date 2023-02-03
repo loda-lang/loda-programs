@@ -5,12 +5,15 @@
 add $0,38
 mov $4,2
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,190248 ; a(n) = [nu+nv+nw]-[nu]-[nv]-[nw], where u=(1+sqrt(5))/2, v=u^2, w=u^3, []=floor.
-  div $3,2
+  add $3,1
+  mul $3,4
+  seq $3,60143 ; a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
+  mod $3,4
+  add $3,1
+  div $3,4
   sub $0,$3
   add $1,$4
   mov $4,$0
@@ -20,5 +23,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
-sub $0,153
+sub $0,152

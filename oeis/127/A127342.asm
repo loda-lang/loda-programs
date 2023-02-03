@@ -1,9 +1,11 @@
 ; A127342: Product of 10 consecutive primes.
 ; Submitted by Simon Strandgaard
 ; 6469693230,100280245065,1236789689135,10141675450907,62298863484143,266186053068611,1085220062510491,3766351981654057,12091972151626183,35224440615606707,86239147714071593,203079283326684719
+; Formula: a(n) = (7*A046327(n+1)*A000040(n))/7
 
 mov $1,$0
-seq $1,272470 ; 7 times the primes.
+seq $1,40 ; The prime numbers.
+mul $1,7
 add $0,1
 seq $0,46327 ; Numbers that are the product of 9 successive primes.
 mul $0,$1

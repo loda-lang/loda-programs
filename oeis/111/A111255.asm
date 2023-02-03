@@ -7,8 +7,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,156037 ; Largest nonprime < n-th prime.
   mov $3,$1
-  seq $3,48448 ; a(n) = prime(n-1) + prime(n+1) (assuming prime(i) = 0 for i < 1).
+  seq $3,158611 ; 0, 1 and the primes.
+  add $3,$6
+  add $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

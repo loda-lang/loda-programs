@@ -6,8 +6,18 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  add $7,1
+  mov $5,$1
+  seq $5,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  mov $6,$5
+  pow $6,7
+  gcd $6,$7
+  mov $5,$6
+  sub $5,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,351568 ; Sum of the divisors of the largest unitary divisor of n that is a square.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $3,$5
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

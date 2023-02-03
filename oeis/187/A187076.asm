@@ -4,5 +4,18 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,727 ; Expansion of Product_{k >= 1} (1 - x^k)^4.
+mov $4,3
+add $0,3
+lpb $0
+  dif $4,2
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,80332 ; G.f.: Product_{n>0} (1 - x^n)^3 * (1 - x^(2*n - 1))^2 = Sum_{n in Z} (6*n + 1) * x^(n*(3*n + 1)/2).
+  add $2,$3
+  mov $4,2
+  add $4,$5
+  add $5,2
+lpe
+mov $0,$2
 mul $0,$1

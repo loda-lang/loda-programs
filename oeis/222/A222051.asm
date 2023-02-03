@@ -1,10 +1,26 @@
 ; A222051: Central terms in rows of triangle A220178.
 ; Submitted by BarnardsStern
 ; 1,6,150,4200,131670,4360356,149885736,5287716720,190170736470,6941694002100,256393942704900,9561265547652000,359399657792284200,13600394660797333200,517621830467456905200,19798076590576557847200,760517744810283004728150,29325625363665142395552900
-; Formula: a(n) = A222052(n)*binomial(2*n,n)
 
 mov $1,$0
 mul $0,2
 bin $0,$1
-seq $1,222052 ; a(n) = A222051(n)/binomial(2*n,n), the central terms in rows of triangle A220178 divided by the central binomial coefficients.
-mul $0,$1
+mul $1,2
+mov $2,1
+mov $3,$1
+mov $4,1
+lpb $1
+  sub $1,2
+  add $2,$6
+  mul $2,$3
+  add $3,1
+  add $5,1
+  mov $6,$4
+  add $6,$4
+  div $2,$5
+  add $2,$4
+  add $2,$4
+  mul $4,-1
+  add $4,$2
+lpe
+mul $0,$4

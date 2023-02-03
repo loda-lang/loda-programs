@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,24898 ; Positive integers k such that 6*k - 1 is prime.
+  add $0,1
+  seq $0,3627 ; Primes of the form 3n-1.
+  mul $0,15
+  div $0,90
   mov $2,$3
   mul $2,$0
   add $1,$2
