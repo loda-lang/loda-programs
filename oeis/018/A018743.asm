@@ -6,10 +6,9 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,13
-  seq $3,229446 ; Number of 3 X n 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
   add $4,1
   add $5,1
+  mov $3,957
   gcd $3,$5
   div $3,$4
   sub $0,$3

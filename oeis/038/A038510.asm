@@ -8,7 +8,16 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,281680 ; a(0)=1; for n > 0, if 2n+1 is prime, then a(n)=1, otherwise a(n) = (2n+1)/(largest proper divisor of 2n+1).
+  mul $3,2
+  mov $5,$3
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  add $5,1
+  cmp $5,$3
+  mul $5,$3
+  sub $3,$5
+  div $3,2
+  mul $3,2
+  add $3,1
   trn $3,6
   min $3,1
   sub $0,$3

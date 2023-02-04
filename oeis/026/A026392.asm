@@ -7,6 +7,23 @@ sub $0,1
 gcd $0,2
 div $1,2
 add $1,1
-seq $1,85362 ; a(0)=1; for n>0, a(n) = 2*5^(n-1) - (1/2)*Sum_{i=1..n-1} a(i)*a(n-i).
+mov $4,$1
+mov $5,2
+mul $1,0
+add $1,2
+mov $2,1
+lpb $4
+  sub $4,1
+  add $6,$5
+  add $1,4
+  add $3,$2
+  mul $2,$4
+  mul $2,$1
+  div $2,$6
+  add $3,$2
+  add $5,2
+lpe
+mov $1,$3
+add $1,1
 mul $0,$1
 div $0,2

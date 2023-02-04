@@ -77,6 +77,7 @@ A026274: Greatest k such that s(k) = n, where s = A026272.
 A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
+A032668: Digit '5' concatenated with a(n) is a prime.
 A033203: Primes p congruent to {1, 2, 3} (mod 8); or primes p of form x^2 + 2*y^2; or primes p such that x^2 = -2 has a solution mod p.
 A033207: Primes of form x^2+7*y^2.
 A033212: Primes congruent to 1 or 19 (mod 30).
@@ -255,6 +256,7 @@ A132240: Primes congruent to {1, 29} mod 30.
 A133827: Number of solutions to x + 7 * y = 2 * n in triangular numbers.
 A134080: Expansion of (f(-q^5)^5 / f(-q) + f(q^5)^5 / f(q)) / 2 in powers of q^2 where f() is a Ramanujan theta function.
 A134860: Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
+A135124: Numbers such that the digital sums in base 2, base 4 and base 8 are all equal.
 A135600: Angled numbers with an internal digit as the vertex.
 A137803: a(n) = floor(n*(sqrt(2) + 1/2)).
 A138026: Where A121561(n) = 3.

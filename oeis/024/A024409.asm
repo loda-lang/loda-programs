@@ -8,7 +8,10 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,31358 ; Number of coincidence site lattices of index 4n+1 in lattice Z^2.
+  mul $3,4
+  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
+  seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+  div $3,4
   trn $3,3
   mod $3,2
   sub $0,$3

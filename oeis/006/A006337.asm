@@ -1,8 +1,18 @@
 ; A006337: An "eta-sequence": a(n) = floor( (n+1)*sqrt(2) ) - floor( n*sqrt(2) ).
-; Submitted by Science United
+; Submitted by pututu
 ; 1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1
-; Formula: a(n) = A276864(n+1)-2
+; Formula: a(n) = gcd((-c(n-1)+b(n-1))/4+binomial(a(n-1),c(n-1)),2), a(2) = 1, a(1) = 2, a(0) = 1, b(n) = (-c(n-1)+b(n-1))/4, b(2) = -25, b(1) = -6, b(0) = -3, c(n) = 2*gcd((-c(n-1)+b(n-1))/4+binomial(a(n-1),c(n-1)),2)*c(n-1), c(2) = 192, c(1) = 96, c(0) = 24
 
-add $0,1
-seq $0,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-sub $0,2
+mov $2,3
+add $0,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,4
+  bin $3,$2
+  add $3,$1
+  gcd $3,2
+  mul $2,2
+  mul $2,$3
+lpe
+mov $0,$3

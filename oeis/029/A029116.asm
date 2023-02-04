@@ -7,9 +7,10 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
-  div $2,2
-  max $2,0
-  seq $2,86159 ; Number of partitions of n into the first three triangular numbers, 1, 3 and 6.
+  div $2,6
+  add $2,2
+  pow $2,2
+  div $2,4
   add $1,$2
   mov $3,8
 lpe

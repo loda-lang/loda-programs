@@ -1,5 +1,15 @@
 ; A004152: Sum of digits of n!.
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,6,6,3,9,9,9,27,27,36,27,27,45,45,63,63,54,45,54,63,72,99,81,72,81,108,90,126,117,135,108,144,144,144,171,153,108,189,189,144,189,180,216,207,216,225,234,225,216,198,279,279,261,279,333,270,288,324,288,315,306,333,324,351,351,369,342,351,459,423,432,315,378,432,441,432,423,441,450,486,477,486,477,414,495,495,531,549,585,594,540,513,549,585,648,648,639,648
+; Formula: a(n) = A007953(b(n)+1)-1, b(n) = n*b(n-1), b(0) = 1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+mov $1,1
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $2,$1
+add $2,1
+seq $2,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+mov $0,$2
+sub $0,1

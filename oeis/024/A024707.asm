@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,51834 ; Fibonacci(Pn-1) mod Pn, where Pn is the n-th prime.
+  seq $3,40 ; The prime numbers.
+  pow $3,2
+  mul $3,2
+  seq $3,10874 ; a(n) = n mod 5.
   gcd $3,2
   sub $0,$3
   add $0,1

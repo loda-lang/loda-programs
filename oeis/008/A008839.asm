@@ -10,7 +10,8 @@ sub $2,2
 lpb $2
   sub $2,4
   mov $3,$1
-  seq $3,168046 ; Characteristic function of zerofree numbers in decimal representation.
+  seq $3,98736 ; a(n) = product of n and all its digits.
+  min $3,1
   add $5,1
   sub $0,$3
   mul $1,5

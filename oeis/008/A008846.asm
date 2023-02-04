@@ -5,9 +5,26 @@
 mov $2,3
 pow $2,$0
 lpb $2
-  add $1,4
   mov $3,$1
-  seq $3,5082 ; Sum of primes = 3 mod 4 dividing n.
+  mov $5,0
+  mov $6,3
+  add $1,4
+  add $3,5
+  lpb $3
+    mov $7,$3
+    sub $7,5
+    lpb $7
+      mov $8,$3
+      mod $8,$6
+      add $6,4
+      sub $7,$8
+    lpe
+    lpb $3
+      dif $3,$6
+    lpe
+    add $5,$6
+  lpe
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   mov $4,$0

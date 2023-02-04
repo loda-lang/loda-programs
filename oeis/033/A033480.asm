@@ -1,11 +1,11 @@
 ; A033480: 3x + 1 sequence beginning at 15.
-; Submitted by Simon Strandgaard
+; Submitted by Tom Hennigan
 ; 15,46,23,70,35,106,53,160,80,40,20,10,5,16,8,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4
-; Formula: a(n) = c(n)+min(b(n),0), b(n) = n-1, b(1) = 0, b(0) = 0, c(n) = A006370(c(n-1)), c(1) = 46, c(0) = 15
+; Formula: a(n) = A006370(a(n-1)), a(0) = 15
 
 mov $1,15
 lpb $0
   sub $0,1
   seq $1,6370 ; The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
 lpe
-add $0,$1
+mov $0,$1

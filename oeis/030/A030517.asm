@@ -9,7 +9,14 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,1447 ; a(n) = (5^n + 5^floor(n/2))/2.
+  mov $4,5
+  pow $4,$0
+  div $0,2
+  mov $5,5
+  pow $5,$0
+  add $4,$5
+  mov $0,$4
+  div $0,2
   sub $0,$1
   mul $1,0
   add $1,$0

@@ -1,7 +1,10 @@
 ; A000006: Integer part of square root of n-th prime.
-; Submitted by ChelseaOilman
+; Submitted by stoneageman
 ; 1,1,2,2,3,3,4,4,4,5,5,6,6,6,6,7,7,7,8,8,8,8,9,9,9,10,10,10,10,10,11,11,11,11,12,12,12,12,12,13,13,13,13,13,14,14,14,14,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,18,18,18,18,18,18,19,19,19,19,19,19,20,20,20,20,20,20,20,21,21,21,21,21,21,21,22,22,22,22,22,22,22,23
-; Formula: a(n) = A000196(A006005(n))
+; Formula: a(n) = (A001650(A000040(n))-2)/2+1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+seq $0,40 ; The prime numbers.
+seq $0,1650 ; k appears k times (k odd).
+sub $0,2
+div $0,2
+add $0,1

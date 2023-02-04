@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,35167 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -23.
+  seq $3,13959 ; a(n) = sigma_11(n), the sum of the 11th powers of the divisors of n.
+  mod $3,23
   min $3,1
   sub $0,$3
   add $1,1

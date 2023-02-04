@@ -1,26 +1,25 @@
 ; A023212: Primes p such that 4*p+1 is also prime.
-; Submitted by ChelseaOilman
+; Submitted by pututu
 ; 3,7,13,37,43,67,73,79,97,127,139,163,193,199,277,307,373,409,433,487,499,577,619,673,709,727,739,853,883,919,997,1033,1039,1063,1087,1093,1123,1129,1297,1327,1423,1429,1453,1543,1549,1567,1579,1597,1663,1753,1777,1879,1987,2017,2029,2143,2293,2383,2437,2647,2677,2683,2713,2767,2803,2887,2953,3037,3049,3067,3109,3163,3229,3259,3307,3457,3469,3499,3637,3739,3769,3793,3853,3907,3943,4057,4273,4297,4447,4519,4567,4603,4729,4759,4789,4987,4993,4999,5119,5179
 
 mov $2,$0
-add $0,6
-mov $1,1
-add $2,9
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  add $1,2
-  mov $3,$1
-  seq $3,69904 ; Number of prime factors of n-th triangular number (with multiplicity).
-  cmp $3,3
-  sub $0,$3
-  add $1,6
+  add $3,4
+  mov $1,$5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
   mov $4,$0
-  max $4,6
+  max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,17
+  add $5,1
 lpe
-mov $0,$1
-sub $0,9
+mov $0,$3
+sub $0,8
 div $0,4
 add $0,3

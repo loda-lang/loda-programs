@@ -1,10 +1,11 @@
 ; A010163: Continued fraction for sqrt(92).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Libristes] Dudumomo
 ; 9,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2
-; Formula: a(n) = (A040329(n)+A193682(n))/2
+; Formula: a(n) = (A266313(n)%4+A040329(n))/2
 
 mov $1,$0
-seq $1,193682 ; Period 8: repeat [0, 1, 2, 3, 0, 3, 2, 1].
+seq $1,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+mod $1,4
 seq $0,40329 ; Continued fraction for sqrt(348).
 add $0,$1
 div $0,2

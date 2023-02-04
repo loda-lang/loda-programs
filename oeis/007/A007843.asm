@@ -1,9 +1,26 @@
 ; A007843: Least positive integer k for which 2^n divides k!.
-; Submitted by Penguin
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,4,4,6,8,8,8,10,12,12,14,16,16,16,16,18,20,20,22,24,24,24,26,28,28,30,32,32,32,32,32,34,36,36,38,40,40,40,42,44,44,46,48,48,48,48,50,52,52,54,56,56,56,58,60,60,62,64,64,64,64,64,64,66,68,68,70,72,72,72,74,76,76,78,80,80,80,80,82,84,84,86,88,88,88,90,92,92,94,96,96,96,96,96,98,100,100,102,104
-; Formula: a(n) = A100661(max(n-1,0))+n
+; Formula: a(n) = e(n)/2+1, b(n) = (-c(n-1)+b(n-1)-6)/4, b(3) = -82, b(2) = -67, b(1) = -6, b(0) = -2, c(n) = max(c(n-1),4)*gcd((-c(n-1)+b(n-1)-6)/4+d(n-1)+e(n-1)+binomial(d(n-1),max(c(n-1),4)),4)^2, c(3) = 4096, c(2) = 256, c(1) = 256, c(0) = 16, d(n) = 2*(gcd((-c(n-1)+b(n-1)-6)/4+d(n-1)+e(n-1)+binomial(d(n-1),max(c(n-1),4)),4)/2), d(3) = 4, d(2) = 0, d(1) = 4, d(0) = 2, e(n) = d(n-1)+e(n-1), e(3) = 6, e(2) = 6, e(1) = 2, e(0) = 0
 
-mov $1,$0
-trn $0,1
-seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
-add $0,$1
+mov $2,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  sub $1,6
+  div $1,4
+  max $2,4
+  add $4,$3
+  bin $3,$2
+  add $3,$1
+  add $3,$4
+  gcd $3,4
+  mul $2,$3
+  mul $2,$3
+  div $3,2
+  mul $3,2
+lpe
+mov $0,$4
+div $0,2
+add $0,1

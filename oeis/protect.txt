@@ -65,6 +65,7 @@ A028334: Differences between consecutive odd primes, divided by 2.
 A030004: (prime(n)-1)(prime(n)-3)(prime(n)-5)/48.
 A030078: Cubes of primes.
 A030514: a(n) = prime(n)^4.
+A030516: Numbers with 7 divisors. 6th powers of primes.
 A030629: Numbers with 11 divisors.
 A031215: Even-indexed primes: a(n) = prime(2n).
 A031336: a(n) = prime(3*n).
