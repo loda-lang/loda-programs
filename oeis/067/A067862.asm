@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,175435 ; (Digit sum of 3^n) mod n.
+  add $3,1
+  mov $4,$3
+  seq $3,4166 ; Sum of digits of 3^n.
+  mod $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

@@ -1,8 +1,18 @@
 ; A010166: Continued fraction for sqrt(95).
-; Submitted by pututu
+; Submitted by Ralfy
 ; 9,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1
-; Formula: a(n) = A040693(n)/3+1
+; Formula: a(n) = b(n)-2, b(n) = A040052(n)/3+A040052(n)+2, b(1) = 3, b(0) = 11
 
-seq $0,40693 ; Continued fraction for sqrt(720).
-div $0,3
 add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  seq $1,40052 ; Continued fraction for sqrt(60).
+  mov $2,$1
+  div $1,3
+  add $1,$2
+  add $1,2
+  add $3,1
+lpe
+mov $0,$1
+sub $0,2

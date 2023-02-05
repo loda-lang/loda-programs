@@ -1,11 +1,12 @@
 ; A072452: a(n) = reversal(a(n-1)+n) for n>0, a(0) = 0.
 ; Submitted by Jamie Morken(w1)
 ; 0,1,3,6,1,6,21,82,9,81,19,3,51,46,6,12,82,99,711,37,75,69,19,24,84,901,729,657,586,516,645,676,807,48,28,36,27,46,48,78,811,258,3,64,801,648,496,345,393,244,492,345,793,648,207,262,813,78,631,96,651,217,972,5301,5635,75,141,802,78,741,118,981,3501,4753,7284,9537,3169,6423,1056,5311,1935,6102,4816,9984,86001,68068,45186,37254,24373,26442,23562,35632,42753,64824,81946,14028,42141,83224,22338,73422
+; Formula: a(n) = A004086(a(n-1)+n), a(1) = 1, a(0) = 0
 
 lpb $0
   sub $0,1
   add $2,1
   add $1,$2
-  seq $1,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
+  seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
 lpe
 mov $0,$1

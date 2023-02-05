@@ -1,7 +1,15 @@
 ; A005869: Theta series of b.c.c. lattice with respect to short edge.
-; Submitted by Science United
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,6,6,8,12,6,12,18,6,14,18,12,18,18,12,12,30,18,14,24,6,30,30,12,24,24,18,24,30,12,26,42,24,12,30,18,24,48,18,36,24,18,36,30,24,26,48,18,30,48,12,36,54,12,24,30,36,48,42,30,24,54,18,26,36,30,54,54,18,24,54,30,48,42,24,30,60,30,24,60,18,48,66,24,56,30,30,60,36,24,24,72,30,54,72,24,36,60,30,24
-; Formula: a(n) = A005886(n)/2
+; Formula: a(n) = 2*b(n), b(n) = A008443(n), b(1) = 3, b(0) = 1
 
-seq $0,5886 ; Theta series of f.c.c. lattice with respect to tetrahedral hole.
-div $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  seq $1,8443 ; Number of ordered ways of writing n as the sum of 3 triangular numbers.
+  mov $2,$1
+  add $3,1
+lpe
+mov $0,$2
+mul $0,2

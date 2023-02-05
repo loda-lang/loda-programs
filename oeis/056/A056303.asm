@@ -9,7 +9,11 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,64355 ; Number of subsets of {1,2,..n} that sum to 1 mod n.
+  mov $4,$0
+  add $4,1
+  seq $0,195095 ; G.f.: Sum_{n>=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+  div $0,$4
+  mul $0,2
   mov $2,$0
   bin $3,2
 lpe

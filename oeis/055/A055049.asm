@@ -1,7 +1,29 @@
 ; A055049: Numbers of the form 5^(2*i+1)*(5*j+-2).
 ; Submitted by Science United
 ; 10,15,35,40,60,65,85,90,110,115,135,140,160,165,185,190,210,215,235,240,250,260,265,285,290,310,315,335,340,360,365,375,385,390,410,415,435,440,460,465,485,490,510,515,535,540,560,565,585,590,610,615,635,640,660,665,685,690,710,715,735,740,760,765,785,790,810,815,835,840,860,865,875,885,890,910,915,935,940,960,965,985,990,1000,1010,1015,1035,1040,1060,1065,1085,1090,1110,1115,1135,1140,1160,1165,1185,1190
-; Formula: a(n) = 5*A233998(n)
 
-seq $0,233998 ; Values of n such that numbers of the form x^2+n*y^2 for some integers x, y cannot have prime factor of 5 raised to an odd power.
+mov $2,$0
+add $0,1
+add $2,3
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+  seq $3,253262 ; Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
+  sub $3,1
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,$4
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+sub $0,5
+div $0,2
+add $0,3
 mul $0,5

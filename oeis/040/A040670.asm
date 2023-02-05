@@ -1,13 +1,15 @@
 ; A040670: Continued fraction for sqrt(697).
-; Submitted by PDW
+; Submitted by USTL-FIL (Lille Fr)
 ; 26,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2
-; Formula: a(n) = (4*A040954(n)+A040954(n))/6+1
+; Formula: a(n) = 2*b(n), b(n) = A010225(2*n), b(1) = 1, b(0) = 13
 
-seq $0,40954 ; Continued fraction for sqrt(986).
-mov $1,$0
-mul $1,4
-mov $2,$0
-add $2,$1
-mov $0,$2
-div $0,6
 add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  mov $2,$1
+  add $3,2
+lpe
+mov $0,$2
+mul $0,2

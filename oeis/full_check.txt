@@ -42,6 +42,7 @@ A005206: Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
 A005361: Product of exponents of prime factorization of n.
 A005379: The male of a pair of recurrences.
 A005614: The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
 A005882: Theta series of planar hexagonal lattice (A2) with respect to deep hole.
 A005928: G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
 A006530: Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
@@ -399,6 +400,7 @@ A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
 A256757: Number of iterations of A007733 required to reach 1.
+A257091: a(n) = log_5 (A256693(n)).
 A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.
 A258703: a(n) = floor(n/sqrt(2) - 1/2).
 A259599: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,1) and midword sequence (a(n)); see Comments.
@@ -596,5 +598,6 @@ A354819: a(n) = 1 if n is a nonprime squarefree number, otherwise 0.
 A355037: a(n) is the product of the digits of n in primorial base.
 A356159: Sum of the prime indices of the smallest number that has the same prime signature as n.
 A358847: a(n) = 1 if A053669(6*n) [the smallest prime not dividing 6*n] is of the form 6m-1, otherwise a(n) = 0.
+A359098: Numbers with exactly four nonzero decimal digits and not ending with 0.
 A359550: Multiplicative with a(p^e) = 1 if p > e, otherwise 0.
 A359551: Dirichlet inverse of A359550, which is multiplicative sequence with a(p^e) = 1 if e < p, otherwise 0.

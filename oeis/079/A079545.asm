@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,229062 ; 1 if n is representable as sum of two nonnegative squares, otherwise 0.
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  mov $5,$3
+  cmp $5,0
+  mov $3,$5
+  add $3,1
+  mod $3,2
   mul $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

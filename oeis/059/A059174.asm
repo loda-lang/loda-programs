@@ -8,7 +8,8 @@ lpb $4
   mov $0,$5
   add $0,$4
   trn $0,1
-  seq $0,8859 ; a(n) = Sum_{k=0..6} C(n,k).
+  seq $0,115567 ; a(n) = C(n,6) + C(n,5) + C(n,4) + C(n,3) + C(n,2) + C(n,1).
+  add $0,1
   mov $2,$0
   add $2,$0
   sub $2,1

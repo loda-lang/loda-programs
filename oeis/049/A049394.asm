@@ -4,6 +4,18 @@
 
 add $0,1
 mov $1,$0
-seq $0,34688 ; Expansion of (1-25*x)^(-1/5), related to quintic factorial numbers A008548.
+mul $0,2
+mov $2,1
+mov $3,-1
+mov $4,$0
+lpb $4
+  sub $4,2
+  sub $5,1
+  mul $2,$3
+  mul $2,5
+  div $2,$5
+  sub $3,5
+lpe
+mov $0,$2
 mul $0,$1
 div $0,5

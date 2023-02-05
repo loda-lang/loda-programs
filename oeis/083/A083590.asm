@@ -3,8 +3,9 @@
 
 add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,216491 ; a(n) = 12*5^n.
+  mov $2,5
+  pow $2,$0
+  mul $2,12
   trn $0,5
   add $1,$2
 lpe

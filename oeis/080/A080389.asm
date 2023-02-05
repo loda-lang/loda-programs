@@ -8,8 +8,10 @@ pow $2,2
 lpb $2
   mov $5,1
   add $5,$1
+  mov $6,$1
+  div $6,2
   mov $3,$1
-  seq $3,57977 ; GCD of consecutive central binomial coefficients: a(n) = gcd(A001405(n+1), A001405(n)).
+  bin $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

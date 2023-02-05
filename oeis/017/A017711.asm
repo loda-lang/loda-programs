@@ -18,7 +18,7 @@ lpb $0
   add $3,$5
 lpe
 add $3,1
-mov $0,$3
-mov $1,$0
+mov $1,$3
 gcd $1,$2
+mov $0,$3
 div $0,$1

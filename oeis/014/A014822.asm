@@ -6,8 +6,15 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,290191 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 673", based on the 5-celled von Neumann neighborhood.
+  mov $5,10
+  pow $5,$1
+  div $5,9
+  mul $5,10
+  add $5,1
+  mov $6,$1
+  mod $6,2
+  sub $5,$6
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

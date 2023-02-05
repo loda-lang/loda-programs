@@ -1,10 +1,29 @@
 ; A073719: a(n) = floor(prime(2^n)/composite(2^n)).
 ; Submitted by Simon Strandgaard
 ; 0,0,1,2,2,3,4,5,5,6,7,8,8,9,10,11,12,12,13,14,15,15,16,17,18,18,19,20,20,21,22,23,23,24,25,26,26,27,28,28
-; Formula: a(n) = (2*A310441(n)-(16*n)/7)/10
+; Formula: a(n) = (36*n+2*((2*((450*n-4)/7)-1)/5)-((16*n)/7)-4*(((2*((450*n-4)/7)-1)/5+18*n-2*(((2*((450*n-4)/7)-1)/5+18*n+2)/3)+2)/3)-4*(((2*((450*n-4)/7)-1)/5+18*n+2)/3)+2)/10
 
 mov $1,$0
-seq $0,310441 ; Coordination sequence Gal.4.77.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+mov $4,$0
+mul $4,18
+mul $0,450
+sub $0,4
+div $0,7
+mul $0,2
+sub $0,1
+div $0,5
+add $0,1
+add $0,$4
+mov $3,$0
+add $3,1
+div $3,3
+mul $3,2
+sub $0,$3
+mov $2,$0
+add $2,1
+div $2,3
+mul $2,2
+sub $0,$2
 mul $0,2
 mul $1,16
 div $1,7

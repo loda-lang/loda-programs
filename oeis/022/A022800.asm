@@ -6,9 +6,13 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
-  seq $1,23486 ; a(n) = b(n) + d(n), where b(n) = (n-th Fibonacci number > 2) and d(n) = (n-th non-Fibonacci number).
-  sub $1,3
+  mov $2,$1
+  seq $2,1690 ; Non-Fibonacci numbers.
   mov $0,0
+  add $1,4
+  seq $1,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+  sub $1,3
+  add $1,$2
 lpe
 mov $0,$1
 add $0,3

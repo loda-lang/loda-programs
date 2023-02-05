@@ -4,8 +4,25 @@
 
 mov $1,3
 lpb $0
+  mov $3,$0
+  min $3,1
   mov $2,$0
-  seq $2,77800 ; List of twin primes {p, p+2}.
+  trn $2,2
+  mov $4,$2
+  sub $2,1
+  gcd $2,2
+  div $4,2
+  seq $4,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $4,1
+  mul $4,3
+  add $4,$2
+  mov $2,$4
+  mul $2,2
+  add $2,3
+  add $2,$3
+  add $3,$2
+  mov $2,$3
+  sub $2,2
   sub $0,1
   dif $1,$2
   mul $1,$2

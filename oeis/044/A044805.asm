@@ -1,10 +1,25 @@
 ; A044805: Numbers n such that string 9,2 occurs in the base 10 representation of n but not of n+1.
 ; Submitted by Jamie Morken(l1)
 ; 92,192,292,392,492,592,692,792,892,929,992,1092,1192,1292,1392,1492,1592,1692,1792,1892,1929,1992,2092,2192,2292,2392,2492,2592,2692,2792,2892,2929,2992,3092,3192,3292,3392,3492,3592
-; Formula: a(n) = 4*((2*A044337(n+1))%4)+A044337(n+1)-121
+; Formula: a(n) = 5*((112*((10*n+19)/11)+88*((10*n+31)/11)+304)/10)+4*((10*((112*((10*n+19)/11)+88*((10*n+31)/11)+304)/10)-180)%4)-211
 
-add $0,1
-seq $0,44337 ; Numbers n such that string 0,5 occurs in the base 10 representation of n but not of n-1.
+mul $0,10
+add $0,22
+mov $2,$0
+add $0,9
+div $0,11
+mul $0,22
+sub $2,3
+div $2,11
+add $2,3
+mul $2,14
+add $0,$2
+add $0,$2
+sub $0,8
+mul $0,4
+div $0,10
+sub $0,18
+mul $0,5
 mov $1,$0
 mul $0,2
 mod $0,4

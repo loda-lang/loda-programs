@@ -6,6 +6,19 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,16363 ; 238th cyclotomic polynomial.
+mov $2,-1
+pow $2,$0
+mov $5,3
+add $0,3
+lpb $0
+  sub $0,$5
+  sub $4,$0
+  mod $4,17
+  pow $4,$4
+  add $3,$4
+  mov $5,7
+lpe
+mov $0,$3
+mul $0,$2
 mul $0,$1
 div $0,2

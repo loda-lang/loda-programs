@@ -9,7 +9,14 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40285 ; Continued fraction for sqrt(303).
+  seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  seq $1,40304 ; Continued fraction for sqrt(322).
+  dif $1,4
+  mov $5,$1
+  mul $1,2
+  seq $1,1158 ; sigma_3(n): sum of cubes of divisors of n.
+  mod $1,9
+  add $1,$5
   mul $1,$2
   add $1,$4
   add $3,1

@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,1749 ; Primes multiplied by 4.
+  seq $2,40 ; The prime numbers.
+  mul $2,4
   add $3,$2
   add $3,$2
   sub $0,1

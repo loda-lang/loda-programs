@@ -14,7 +14,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,278075 ; Coefficients of the signed Fubini polynomials in ascending order, F_n(x) = Sum_{k=0..n} (-1)^n*Stirling2(n,k)*k!*(-x)^k.
+  mov $4,$0
+  seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
+  mul $0,$4
   pow $0,2
   add $1,$0
 lpe

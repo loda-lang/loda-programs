@@ -1,16 +1,22 @@
 ; A010189: Continued fraction for sqrt(128).
-; Submitted by Ralfy
+; Submitted by pututu
 ; 11,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3,22,3,5,3
 
-mul $0,2
-mov $2,$0
-seq $2,193682 ; Period 8: repeat [0, 1, 2, 3, 0, 3, 2, 1].
-seq $0,40329 ; Continued fraction for sqrt(348).
-add $0,$2
-dif $0,2
-mov $1,$0
-add $0,100
-div $0,4
-add $1,$0
-mov $0,$1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,2
+  mov $2,$1
+  seq $2,10873 ; a(n) = n mod 4.
+  seq $1,40329 ; Continued fraction for sqrt(348).
+  add $1,$2
+  dif $1,2
+  mov $4,$1
+  add $1,100
+  div $1,4
+  add $3,1
+  add $4,$1
+lpe
+mov $0,$4
 sub $0,25

@@ -9,7 +9,26 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40262 ; Continued fraction for sqrt(279).
+  mul $1,3
+  mov $7,$1
+  seq $7,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
+  mod $7,4
+  seq $1,40329 ; Continued fraction for sqrt(348).
+  add $1,$7
+  div $1,2
+  mov $6,$1
+  div $1,8
+  add $1,$6
+  gcd $5,$1
+  add $5,1
+  mul $5,8
+  dif $5,$1
+  div $5,5
+  mul $5,5
+  mov $1,$5
+  sub $1,10
+  div $1,5
+  add $1,1
   mul $1,$2
   add $1,$4
   add $3,1

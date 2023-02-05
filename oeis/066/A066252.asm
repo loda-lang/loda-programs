@@ -6,6 +6,16 @@ mov $1,2
 lpb $1
   sub $1,1
   add $0,$1
-  trn $0,1
-  seq $0,66248 ; a(n) = if n+1 is prime then A049084(n+1)*2 else A066246(n+1)*2 - 1.
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $2,1
+  seq $2,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  mul $2,2
+  sub $2,1
+  seq $0,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+  mul $0,2
+  sub $2,$0
+  max $2,$0
+  mov $0,$2
+  sub $0,1
 lpe

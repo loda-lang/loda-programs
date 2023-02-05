@@ -5,9 +5,16 @@
 mov $1,1
 add $1,$0
 add $0,1
-seq $0,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
-mov $2,$0
+lpb $0
+  mov $4,$0
+  mod $4,10
+  div $0,10
+  mul $3,10
+  add $3,$4
+lpe
+mov $2,$3
 gcd $2,$1
+mov $0,$3
 mul $0,91
 mul $1,$0
 div $1,$2

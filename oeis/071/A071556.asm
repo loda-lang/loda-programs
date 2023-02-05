@@ -1,10 +1,18 @@
 ; A071556: Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 4<=i<=n.
-; Submitted by Jamie Morken(s2)
+; Submitted by USTL-FIL (Lille Fr)
 ; 8,78,1002,17018,323324,7436430,215656442,6685349672,247357937828,10141675450908,436092044389002,20496326086283048,1086305282573001492,64092011671807087970,3909612711980232366110,261944051702675568529304
-; Formula: a(n) = (8*A071554(n+2))/120+1
+; Formula: a(n) = b(n)+1, b(n) = A000040(n+3)*b(n-1), b(1) = 77, b(0) = 7
 
-add $0,2
-seq $0,71554 ; Smallest x > 1 such that x^prime(n) == 1 mod(prime(i)) 2<=i<=n.
-mul $0,8
-div $0,120
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  mov $1,$3
+  add $1,3
+  seq $1,40 ; The prime numbers.
+  mul $1,$2
+  add $3,1
+lpe
+mov $0,$1
 add $0,1

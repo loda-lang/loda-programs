@@ -10,7 +10,8 @@ add $0,1
 mov $1,2
 lpb $2
   mov $3,$1
-  seq $3,32615 ; a(n) = floor(n/Pi).
+  mul $3,7
+  div $3,22
   gcd $3,2
   sub $0,$3
   add $0,1

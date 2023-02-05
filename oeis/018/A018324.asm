@@ -6,8 +6,9 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,18255 ; Divisors of 30.
+  mov $6,$1
+  seq $6,18727 ; Divisors of 930.
+  mov $3,$6
   sub $3,1
   mov $5,$3
   seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.

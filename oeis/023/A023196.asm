@@ -8,9 +8,16 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,160413 ; a(n) = A160411(n+1)/4.
+  add $3,1
+  mul $3,2
+  dif $3,4
+  mov $5,$3
   sub $3,1
-  seq $3,294936 ; Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $3,$5
+  cmp $3,1
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,2
   mov $4,$0

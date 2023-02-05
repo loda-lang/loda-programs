@@ -7,8 +7,11 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $4,$0
-  max $4,0
-  seq $4,64340 ; Generalized Catalan numbers C(2,2; n).
+  trn $4,1
+  mov $5,2
+  pow $5,$4
+  seq $4,115197 ; Convolution of generalized Catalan numbers A064062 (called C(n;2)).
+  mul $4,$5
   sub $0,1
   mov $2,$3
   mul $2,$4

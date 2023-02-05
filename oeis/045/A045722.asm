@@ -3,9 +3,16 @@
 
 mov $2,$0
 add $2,2
-seq $0,6013 ; a(n) = binomial(3*n+1,n)/(n+1).
+mov $3,$0
+mul $3,2
+mov $4,$0
+add $0,1
+add $3,$0
+bin $3,$4
+div $3,$0
+mov $0,$3
 mul $0,$2
-add $1,$0
+mov $1,$0
 lpb $1
   mov $1,2
   mul $0,2

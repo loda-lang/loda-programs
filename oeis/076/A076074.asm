@@ -4,10 +4,19 @@
 
 mov $1,$0
 sub $1,1
+mov $2,1
 mov $0,$1
-max $0,0
-seq $0,6005 ; The odd prime numbers together with 1.
-bin $1,$0
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $3,$2
+  cmp $3,0
+  add $3,$2
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $4,$3
+  mov $2,$4
+lpe
+bin $1,$2
 pow $1,2
-add $1,$0
+add $1,$2
 mov $0,$1

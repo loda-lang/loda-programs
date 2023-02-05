@@ -1,16 +1,17 @@
 ; A016413: 451st cyclotomic polynomial.
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,1,-1,0,1,-1,0,1,-1,0,0,0,1,-1,0,1,-1,0,1
 
 add $0,3
 lpb $0
   sub $0,3
+  pow $3,2
   mul $3,2
   sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,240329 ; Inverse of 41st cyclotomic polynomial.
+  sub $2,$0
+  mod $2,41
+  pow $2,$2
   add $1,$2
-  mov $3,4
+  mov $3,2
 lpe
 mov $0,$1

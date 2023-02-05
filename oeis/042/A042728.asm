@@ -9,7 +9,20 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40864 ; Continued fraction for sqrt(894).
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $6,$1
+  div $6,5
+  mul $6,12
+  add $1,$6
+  sub $1,2
+  dif $1,4
+  mov $5,$1
+  add $1,4
+  div $1,6
+  mul $1,4
+  add $1,$5
   mul $1,$2
   add $1,$4
   add $3,1

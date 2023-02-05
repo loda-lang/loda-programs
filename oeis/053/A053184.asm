@@ -1,27 +1,28 @@
 ; A053184: Primes p such that p^2+p-1 is prime.
-; Submitted by nenym
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,5,11,13,19,31,41,53,59,83,89,101,103,131,149,163,181,191,193,199,233,241,263,281,331,349,373,401,419,431,433,449,461,463,499,541,569,571,659,673,683,691,709,739,743,761,769,809,863,881,941,1013,1039,1051,1061,1069,1093,1171,1193,1229,1231,1259,1303,1319,1409,1423,1483,1489,1493,1511,1549,1579,1621,1663,1669,1693,1699,1759,1801,1831,1871,1901,1949,1993,2003,2011,2063,2069,2131,2153,2221,2243,2333,2411,2521,2543,2549,2551,2593
 
-mov $1,1
+mov $6,4
+mov $1,4
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  add $6,3
-  sub $0,$3
+  add $3,1
+  mov $5,$6
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,4
-  add $1,$6
-  add $1,1
   mul $2,$4
-  sub $2,1
-  add $5,$1
-  add $1,$6
+  sub $2,17
+  add $6,$1
 lpe
-mov $0,$6
-div $0,3
-add $0,1
+mov $0,$1
+sub $0,4
+div $0,2
+add $0,2

@@ -5,6 +5,16 @@
 mov $1,$0
 mov $0,7
 pow $0,$1
-seq $1,453 ; Stirling numbers of the second kind, S(n,4).
+add $1,2
+lpb $1
+  sub $1,1
+  add $3,1
+  mul $4,2
+  add $4,$2
+  mul $2,4
+  add $2,$3
+  mul $3,3
+lpe
+mov $1,$4
 mul $1,$0
 mov $0,$1

@@ -1,9 +1,24 @@
 ; A040565: Continued fraction for sqrt(590).
 ; Submitted by Simon Strandgaard
 ; 24,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4,2,3,48,3,2,4
-; Formula: a(n) = A010149(n)+A040258(n)
 
+mov $4,2
+trn $4,$0
+add $4,6
 mov $1,$0
-seq $1,10149 ; Continued fraction for sqrt(70).
-seq $0,40258 ; Continued fraction for sqrt(275).
-add $0,$1
+gcd $1,$4
+sub $1,3
+mov $3,3
+pow $3,$1
+mov $1,$3
+add $1,1
+mod $1,10
+sub $2,$0
+sub $2,$1
+gcd $2,2
+mul $2,$1
+seq $0,10225 ; Continued fraction for sqrt(183).
+dif $0,4
+mul $0,90
+div $0,72
+add $0,$2

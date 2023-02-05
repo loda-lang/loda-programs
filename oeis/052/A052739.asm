@@ -4,7 +4,20 @@
 
 mov $1,2
 pow $1,$0
-seq $0,182037 ; Expansion of 1 - (1 - 2x - x^2)^(1/2).
+mov $2,28
+lpb $0
+  add $4,$2
+  mov $3,$4
+  add $4,$2
+  mov $2,$0
+  sub $2,1
+  mul $4,$2
+  sub $0,1
+  mul $2,$3
+  sub $2,$3
+lpe
+mov $0,$3
+div $0,28
 dif $1,$0
 mul $0,$1
 div $0,4

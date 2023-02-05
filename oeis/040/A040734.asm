@@ -16,7 +16,6 @@ lpb $5
   mov $5,5
   mul $5,$4
   sub $6,1
-  bin $6,$4
 lpe
 mov $0,$6
 gcd $0,$2

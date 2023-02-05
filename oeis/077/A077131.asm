@@ -1,12 +1,17 @@
 ; A077131: Sum of odd-indexed primes.
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,7,18,35,58,89,130,177,236,303,376,459,556,659,768,895,1032,1181,1338,1505,1684,1875,2072,2283,2510,2743,2984,3241,3510,3787,4070,4377,4690,5021,5368,5721,6088,6467,6856,7257,7676,8107,8546,8995,9456,9923,10410
+; Formula: a(n) = a(n-1)+A000040(2*n), a(1) = 7, a(0) = 2
 
-mul $0,2
+mov $1,2
+mov $3,1
 lpb $0
-  mov $2,$0
-  seq $2,6005 ; The odd prime numbers together with 1.
-  sub $0,2
+  sub $0,1
+  mov $2,$1
+  add $3,1
+  mov $1,$3
+  seq $1,40 ; The prime numbers.
   add $1,$2
+  add $3,1
 lpe
-add $1,2
 mov $0,$1

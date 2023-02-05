@@ -28,6 +28,7 @@ A005097: (Odd primes - 1)/2.
 A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
 A005722: a(n) = (prime(n) - 1)^2.
 A006093: a(n) = prime(n) - 1.
+A006094: Products of 2 successive primes.
 A006308: Coefficients of period polynomials.
 A006450: Prime-indexed primes: primes with prime subscripts.
 A006519: Highest power of 2 dividing n.
@@ -157,6 +158,7 @@ A059591: Squarefree part of n^2+1.
 A059786: Smallest prime after 2*(n-th prime).
 A060418: Largest decimal digit in n-th prime.
 A060429: a(n) = 4*prime(n)^2+1.
+A060497: a(n) = binomial(2^n, prime(n)).
 A060800: a(n) = p^2 + p + 1 where p runs through the primes.
 A060904: Largest power of 5 that divides n.
 A061397: Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
@@ -210,6 +212,7 @@ A078574: Number of divisors of the average of n-th twin prime pair.
 A078584: a(n) = prime(2n) - prime(2n-1).
 A078650: 2-A000002(n) where A000002 is the Kolakoski sequence.
 A078724: a(n) = prime(n*(n+1)/2+3).
+A079395: a(n) = prime(n)^11.
 A079696: Numbers one more than composite numbers.
 A079704: a(n) = 2*prime(n)^2.
 A079705: 3p^2 where p runs through the primes.

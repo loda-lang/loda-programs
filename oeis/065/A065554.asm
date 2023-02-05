@@ -8,8 +8,12 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,170827 ; Sum of digits after the decimal point in the decimal expansion of (3/2)^n.
+  mov $6,10
+  pow $6,$1
+  mov $5,15
+  pow $5,$1
+  mod $5,$6
+  mov $3,$5
   mod $3,3
   gcd $3,4
   add $3,1

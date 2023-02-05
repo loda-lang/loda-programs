@@ -6,8 +6,10 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,30102 ; Base-3 reversal of n (written in base 10).
   mov $3,$1
-  seq $3,55947 ; n - reversal of base 3 digits of n (written in base 10).
+  sub $3,$5
   cmp $3,0
   sub $0,$3
   add $1,3

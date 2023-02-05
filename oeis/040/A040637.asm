@@ -1,19 +1,14 @@
 ; A040637: Continued fraction for sqrt(663).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by stoneageman
 ; 25,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1
+; Formula: a(n) = (A040370(n)%2+4*A040370(n)-5)/3+1
 
-gcd $0,262156
-mul $0,42
-mod $0,13
-mov $2,$0
-div $2,5
-mul $2,12
-add $0,$2
-sub $0,2
-dif $0,8
-add $0,1
-mov $1,$0
-mul $1,3
-div $1,2
+seq $0,40370 ; Continued fraction for sqrt(390).
+add $1,$0
+mod $1,2
+mul $0,4
+add $1,$0
 mov $0,$1
-sub $0,2
+sub $0,5
+div $0,3
+add $0,1

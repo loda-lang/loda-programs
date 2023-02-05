@@ -13,8 +13,13 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,174996 ; Triangle read by rows: R(n,k)=(prime(n)-1) mod prime(k).
+  mov $4,$0
+  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  seq $0,5145 ; n copies of n-th prime.
+  mov $5,$0
+  sub $5,1
+  mod $5,$4
   add $1,1
-  add $1,$0
+  add $1,$5
 lpe
 mov $0,$1

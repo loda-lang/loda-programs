@@ -5,8 +5,14 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
+  sub $2,1
+  mov $3,59969536
+  sub $3,$2
+  div $3,4
+  div $2,3
+  add $3,$2
+  mov $2,$3
+  sub $2,14992383
   sub $0,8
   trn $0,3
   add $1,$2

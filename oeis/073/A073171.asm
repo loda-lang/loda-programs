@@ -4,4 +4,17 @@
 
 add $0,1
 pow $0,2
-seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mov $1,$0
+mul $1,-2
+div $1,$0
+mov $2,1
+sub $0,$1
+lpb $0
+  sub $0,1
+  add $2,$3
+  mov $3,$2
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $2,1
+lpe
+mov $0,$2
+sub $0,1

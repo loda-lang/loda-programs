@@ -1,6 +1,24 @@
 ; A043680: Numbers whose base-16 representation has exactly 7 runs.
 ; 16843009,16843010,16843011,16843012,16843013,16843014,16843015,16843016,16843017,16843018,16843019,16843020,16843021,16843022,16843023,16843040,16843041,16843043,16843044,16843045,16843046
-; Formula: a(n) = A043678(n)+16777216
 
-seq $0,43678 ; Numbers whose base-16 representation has exactly 5 runs.
-add $0,16777216
+mov $1,2
+mov $2,3
+mov $4,6
+mov $5,$0
+sub $0,11
+lpb $0
+  add $2,3
+  mov $3,5
+  add $3,$2
+  trn $4,$0
+  mov $0,3
+  mov $1,1
+  trn $1,$4
+  add $1,6
+  mov $4,$3
+  add $4,1
+  add $1,$4
+lpe
+add $1,$5
+mov $0,$1
+add $0,16843007

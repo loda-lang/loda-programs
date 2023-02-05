@@ -13,7 +13,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,127638 ; A054525 * A127640, where A127640 = infinite lower triangular matrix with the sequence of primes in the main diagonal and the rest zeros.
+  mov $4,$0
+  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1
