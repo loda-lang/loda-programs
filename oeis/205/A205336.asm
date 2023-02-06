@@ -1,0 +1,30 @@
+; A205336: Number of length n+1 nonnegative integer arrays starting and ending with 0 with adjacent elements unequal but differing by no more than 3.
+; Submitted by ArvaroilLaido [Toscana]
+; 0,3,6,35,138,689,3272,16522,83792,434749,2278888,12093271,64741330,349470487,1899418046,10387322922,57111322368,315523027610,1750681516380,9751416039535,54507046599094,305650440453943,1718956630038438,9693209009913658,54794959143735984,310457570693809237,1762705520682665544,10027857107877385345,57151686288411033894,326279642607630891545,1865707051569388661592,10684308742180810054918,61271675090362129009048,351842023188483741065950,2022914958249315372328220,11644465032923181133034754
+
+mov $2,1
+mov $10,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    mov $7,$4
+    seq $7,117813 ; Consider 1-D random walk with jumps up to the third neighbor, i.e., set of possible jumps is {-3,-2,-1,+1,+2,+3}. Sequence gives number of paths of length n ending at origin.
+    mov $9,10
+    add $9,$5
+    sub $4,1
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,$2
+  mov $9,10
+  add $9,$2
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+mov $0,$3
