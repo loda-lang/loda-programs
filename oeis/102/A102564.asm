@@ -6,7 +6,20 @@ mov $1,$0
 cmp $1,0
 mov $2,$0
 div $2,2
-seq $0,102395 ; A mod 2 related Jacobsthal sequence.
+mov $4,$0
+lpb $4
+  div $0,2
+  sub $4,$0
+lpe
+mov $0,2
+pow $0,$4
+add $0,4
+mov $3,1
+add $3,$0
+mul $3,16
+mod $3,6
+sub $0,$3
+div $0,3
 sub $2,$0
 add $2,$1
 mov $0,$2

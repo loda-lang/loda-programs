@@ -21,9 +21,8 @@ add $4,2
 add $1,$4
 sub $1,$2
 trn $1,$2
-lpb $6
-  sub $6,1
-  add $1,2
-lpe
+mov $7,2
+mul $7,$6
+add $1,$7
 add $1,1
 mov $0,$1

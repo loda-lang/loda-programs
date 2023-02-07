@@ -13,7 +13,17 @@ lpb $4
   mov $1,$0
   sub $1,$2
   bin $1,$0
-  seq $0,5817 ; a(n) = C(floor(n/2 + 1/2))*C(floor(n/2 + 1)) where C(i) = Catalan numbers A000108.
+  mov $6,$0
+  mov $7,$0
+  div $0,2
+  add $6,1
+  bin $6,$0
+  bin $7,$0
+  add $0,2
+  bin $0,2
+  mul $6,$7
+  div $6,$0
+  mov $0,$6
   trn $0,$5
   mul $1,$0
   mul $3,2

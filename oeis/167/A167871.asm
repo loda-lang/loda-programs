@@ -9,7 +9,10 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,2897 ; a(n) = binomial(2n,n)^3.
+  mov $4,$0
+  mul $0,2
+  bin $0,$4
+  pow $0,3
   mul $1,64
   add $1,$0
 lpe

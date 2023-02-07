@@ -5,10 +5,12 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,14026 ; Inverse of 17th cyclotomic polynomial.
+  sub $2,1
+  sub $3,$2
+  mod $3,17
+  pow $3,$3
   sub $0,18
   trn $0,5
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

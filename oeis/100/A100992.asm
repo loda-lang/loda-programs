@@ -7,8 +7,11 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,2752 ; a(n) = Fibonacci(n-1) mod n.
+  seq $3,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+  mod $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

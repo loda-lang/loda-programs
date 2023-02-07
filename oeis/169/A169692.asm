@@ -8,7 +8,8 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,227355 ; Product of run lengths in Zeckendorf representation of n.
+  seq $3,3714 ; Fibbinary numbers: if n = F(i1) + F(i2) + ... + F(ik) is the Zeckendorf representation of n (i.e., write n in Fibonacci number system) then a(n) = 2^(i1 - 2) + 2^(i2 - 2) + ... + 2^(ik - 2). Also numbers whose binary representation contains no two adjacent 1's.
+  seq $3,227350 ; Product of lengths of runs of 0-bits in binary representation of n, or 1 if no nonleading zeros present.
   trn $3,2
   min $3,1
   sub $0,$3

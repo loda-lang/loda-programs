@@ -7,7 +7,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,99475 ; Number of divisors d of n such that d+2 is also a divisor of n.
+  mul $3,2
+  add $3,1
+  seq $3,179952 ; Add 1 to all the divisors of n. a(n)=number of perfect squares in the set.
   cmp $3,0
   sub $0,$3
   add $1,1

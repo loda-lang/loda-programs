@@ -1,9 +1,19 @@
 ; A107622: Primes plus alternately 2 and 3.
 ; 4,6,7,10,13,16,19,22,25,32,33,40,43,46,49,56,61,64,69,74,75,82,85,92,99,104,105,110,111,116,129,134,139,142,151,154,159,166,169,176,181,184,193,196,199,202,213,226,229,232,235,242,243,254,259,266,271,274,279
-; Formula: a(n) = max(A006005(n)-gcd(7142,n),0)+4
 
 mov $1,7142
 gcd $1,$0
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mov $3,$2
+  cmp $3,0
+  add $3,$2
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $4,$3
+  mov $2,$4
+lpe
+mov $0,$2
 trn $0,$1
 add $0,4

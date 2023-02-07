@@ -5,8 +5,13 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,8649 ; Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
+  sub $2,1
+  div $2,3
+  mov $3,$2
+  bin $2,2
+  div $2,3
+  add $2,$3
+  add $2,1
   sub $0,2
   trn $0,8
   add $1,$2

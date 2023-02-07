@@ -5,7 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,57334 ; In A000120, replace each entry k with the k-th prime and replace 0 with 1.
+  seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   div $0,2
   mul $1,$2
 lpe

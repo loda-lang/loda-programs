@@ -11,7 +11,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,77011 ; Triangle in which the n-th row contains all possible products of n-1 of the first n primes in ascending order.
+  seq $0,78971 ; Numbers n such that C(4n,n)/(3n+1) (A002293) is not divisible by 4.
+  seq $0,253563 ; Permutation of natural numbers: a(0) = 1, a(1) = 2; after which, a(2n) = A253560(a(n)), a(2n+1) = A253550(a(n)).
   pow $0,2
   add $1,$0
 lpe

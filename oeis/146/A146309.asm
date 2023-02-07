@@ -6,9 +6,15 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
   mov $3,$1
-  seq $3,146307 ; a(n) = denominator of (n-6)/(2n) = denominator of (n+6)/(2n).
-  sub $3,1
+  add $3,$6
+  mov $5,1
+  add $5,$3
+  sub $6,6
+  gcd $6,$5
+  div $3,$6
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,2
   sub $0,$3

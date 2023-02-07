@@ -6,6 +6,8 @@ mov $1,$0
 lpb $0
   mov $0,$1
   trn $0,1
-  seq $0,233932 ; Irregular table read by rows: T(n,k) is the binary representation of n shifted right k times and incremented if the last bit shifted away was set.
+  seq $0,120385 ; If a(n-1) = 1 then largest value so far + 1, otherwise floor(a(n-1)/2); or table T(n,k) with T(n,0) = n, T(n,k+1) = floor(T(n,k)/2).
+  add $0,1
+  div $0,2
 lpe
 mod $0,2

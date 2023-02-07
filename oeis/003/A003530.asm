@@ -6,7 +6,10 @@ add $0,1
 mov $2,$0
 pow $2,8
 lpb $2
-  seq $3,197905 ; Ceiling((n+1/n)^6).
+  mov $5,$3
+  add $5,2
+  pow $5,6
+  mov $3,$5
   mul $3,16
   pow $3,2
   sub $3,1

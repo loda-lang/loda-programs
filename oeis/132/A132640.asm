@@ -1,7 +1,26 @@
 ; A132640: Number of trees with n unlabeled nodes T(n) raised to power T(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,4,27,46656,285311670611,20880467999847912034355032910567,3877924263464448622666648186154330754898344901344205917642325627886496385062863
-; Formula: a(n) = A199142(n)^A199142(n)
+; Formula: a(n) = c(n)^c(n), b(n) = 2*b(n-1)+2*c(n-1)+2*d(n-1)-b(n-1)-d(n-1)-2*c(n-1)+e(n-1)-1, b(4) = 4, b(3) = 1, b(2) = 0, b(1) = -1, b(0) = 0, c(n) = -b(n-1)-d(n-1)-2*c(n-1)+b(n-1)+c(n-1)+d(n-1)+e(n-1)+1, c(4) = 3, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = -b(n-1)-c(n-1)-d(n-1)+c(n-1)+f(n-1)-2, d(4) = -1, d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = b(n-1)+c(n-1)+e(n-1)+1, e(4) = 8, e(3) = 4, e(2) = 2, e(1) = 1, e(0) = 0, f(n) = 2*c(n-1)+2*f(n-1)-4, f(4) = 4, f(3) = 2, f(2) = 2, f(1) = 2, f(0) = 3
 
-seq $0,199142 ; Number of n X 1 0..3 arrays with values 0..3 introduced in row major order and each element equal to one or two horizontal and vertical neighbors.
-pow $0,$0
+mov $5,3
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $4,$1
+  add $4,1
+  add $1,$3
+  sub $3,$2
+  sub $5,2
+  add $5,$2
+  mov $2,$3
+  mov $3,$5
+  sub $3,$1
+  sub $2,$1
+  add $2,$4
+  sub $1,2
+  add $1,$2
+  mul $5,2
+lpe
+mov $0,$2
+pow $0,$2

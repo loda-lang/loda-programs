@@ -6,7 +6,24 @@ mov $2,$0
 mod $2,2
 add $0,1
 div $0,2
-seq $0,171696 ; Nonnegative numbers k such that neither 6*k+-1 is prime.
+mov $4,$0
+add $4,7
+pow $4,2
+lpb $4
+  mov $5,$3
+  seq $5,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
+  trn $5,6
+  min $5,1
+  sub $0,$5
+  add $3,6
+  mov $6,$0
+  max $6,1
+  cmp $6,$0
+  mul $4,$6
+  sub $4,1
+lpe
+mov $0,$3
+div $0,6
 add $1,$0
 sub $1,$2
 mul $1,2

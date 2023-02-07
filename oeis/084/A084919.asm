@@ -8,8 +8,11 @@ lpb $4
   sub $4,1
   mov $0,$2
   add $0,$4
-  max $0,0
-  seq $0,48093 ; Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are <= sqrt(n).
+  add $0,1
+  mov $6,$0
+  seq $6,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  bin $0,$6
+  sub $0,1
   mov $3,$0
   mov $5,$4
   mul $5,$0

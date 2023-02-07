@@ -8,7 +8,12 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,72608 ; Parity of remainder Mod[p(n),n]=A004648(n).
+  mov $6,$0
+  add $6,1
+  mul $0,2
+  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  mod $0,$6
+  mod $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

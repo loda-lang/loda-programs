@@ -6,11 +6,14 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,227314 ; Number of prime factors, with multiplicity, of sum of first n composite numbers.
+  add $3,2
+  seq $3,53767 ; Sum of first n composite numbers.
+  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0

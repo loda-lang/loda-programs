@@ -13,7 +13,9 @@ lpb $4
   gcd $1,$4
   cmp $1,1
   sub $0,$1
-  seq $0,204418 ; Periodic sequence 1,0,1,..., arranged in a triangle.
+  mod $0,3
+  add $0,11
+  mod $0,2
   mul $1,$0
   add $3,$1
 lpe

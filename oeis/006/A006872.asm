@@ -7,7 +7,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,353636 ; Difference between phi(sigma(n)) and phi(n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $4,$1
+  seq $4,62401 ; a(n) = phi(sigma(n)).
+  sub $4,$3
+  mov $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

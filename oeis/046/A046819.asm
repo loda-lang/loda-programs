@@ -3,4 +3,11 @@
 
 mul $0,3
 add $0,2
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+mov $1,$0
+lpb $0
+  div $0,2
+  mod $1,2
+  add $2,$1
+  mov $1,$0
+lpe
+mov $0,$2

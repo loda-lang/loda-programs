@@ -7,9 +7,24 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
+  mov $8,$3
+  gcd $8,2
   mov $2,$1
-  mov $1,$3
-  seq $1,40543 ; Continued fraction for sqrt(567).
+  mov $7,$3
+  seq $7,10144 ; Continued fraction for sqrt(59).
+  mul $7,16
+  div $7,20
+  mul $7,$8
+  add $7,$8
+  sub $7,1
+  seq $7,144330 ; Triangle read by rows, A144328 * A000012
+  mov $1,$7
+  seq $1,24639 ; n written in fractional base 7/2.
+  add $1,2
+  mov $6,$1
+  cmp $1,4
+  sub $1,2
+  add $1,$6
   dif $1,4
   mov $5,$1
   add $1,4

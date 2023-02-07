@@ -9,7 +9,13 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,159631 ; Dimension of space of modular forms of weight 1/2, level 4*n and trivial character.
+  mov $5,$2
+  mul $2,0
+  sub $2,1
+  seq $5,46951 ; a(n) is the number of squares dividing n.
+  add $5,1
+  add $5,$2
+  mov $2,$5
   cmp $2,1
   add $1,$2
   mov $3,2

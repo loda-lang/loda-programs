@@ -1,9 +1,21 @@
 ; A010208: Continued fraction for sqrt(159).
 ; Submitted by Simon Strandgaard
 ; 12,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1,1,1,24,1,1,1,1,3,1,1
-; Formula: a(n) = gcd(A330025(n),A040139(n))
 
 mov $1,$0
-seq $1,40139 ; Continued fraction for sqrt(152).
-seq $0,330025 ; a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
+pow $1,4
+mov $2,$1
+trn $2,4
+sub $2,4
+gcd $1,$2
+mul $1,3
+mov $4,$0
+lpb $4
+  div $4,5
+  add $3,$4
+  mov $4,5
+  mul $4,$3
+  sub $5,1
+lpe
+mov $0,$5
 gcd $0,$1

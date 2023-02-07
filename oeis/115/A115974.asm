@@ -4,6 +4,8 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,167872 ; A sequence of moments connected with Feynman numbers (A000698): Half the number of Feynman diagrams of order 2(n+1), for the electron self-energy in quantum electrodynamics (QED), i.e., all proper diagrams including Furry vanishing diagrams (those that vanish in 4-dimensional QED because of Furry theorem).
+seq $0,355722 ; Row 2 of table A355721.
+mul $0,6
+div $0,4
 mul $0,2
 sub $0,$1

@@ -1,7 +1,20 @@
 ; A115792: A dihedial D1 elliptical transform on A000073.
 ; 0,0,1,1,2,3,6,11,20,37,69,126,232,426,784,1442,2652,4878,8973,16503,30354,55829,102686,188869,347384
-; Formula: a(n) = A301657(max(n-1,0))/4
+; Formula: a(n) = c(n)/4, b(n) = c(n-1)+max(b(n-1)-2,0), b(3) = 6, b(2) = 4, b(1) = 3, b(0) = 0, c(n) = -c(n-2)+c(n-2)+max(c(n-2)+max(b(n-2)-2,0)-2,0)+max(b(n-2)-2,0)+3, c(3) = 6, c(2) = 4, c(1) = 3, c(0) = 3
 
-trn $0,1
-seq $0,301657 ; Number of nX3 0..1 arrays with every element equal to 0, 1 or 4 horizontally or vertically adjacent elements, with upper left element zero.
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,1
+  trn $1,1
+  sub $3,$4
+  add $3,$1
+  add $3,2
+  mov $4,$2
+  add $1,$2
+  mov $2,$3
+  add $2,1
+  mov $3,$1
+lpe
+mov $0,$2
 div $0,4

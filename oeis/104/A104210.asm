@@ -7,10 +7,14 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  add $6,1
   mov $3,$1
-  seq $3,330749 ; a(n) = gcd(n, A064989(n)), where A064989 is fully multiplicative with a(2) = 1 and a(prime(k)) = prime(k-1) for odd primes.
-  sub $3,1
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   add $3,$4
+  sub $3,1
   cmp $3,1
   gcd $3,2
   sub $0,$3

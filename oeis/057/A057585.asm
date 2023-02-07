@@ -8,7 +8,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,284778 ; Number of self-avoiding planar walks of length n+1 starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.
+  sub $0,1
+  seq $0,220589 ; Number of simple skew-merged permutations with n elements.
+  div $0,2
   sub $0,$1
   mul $1,4
   add $1,$0

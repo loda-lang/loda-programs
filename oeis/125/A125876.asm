@@ -8,7 +8,17 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,126289 ; a(1) = 1, a(2) = 1, a(n) = n * LargestPrimeFactor(n-1) / LargestPrimeFactor(n).
+  sub $3,1
+  mov $5,1
+  add $5,$3
+  add $5,1
+  seq $3,245486 ; Product of the greatest prime factor of n and the greatest prime factor of n+1.
+  mov $6,$3
+  gcd $6,$5
+  pow $6,2
+  mul $5,$3
+  div $5,$6
+  mov $3,$5
   sub $3,6
   cmp $3,7
   sub $0,$3

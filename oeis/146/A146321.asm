@@ -12,7 +12,15 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,70366 ; a(n) = 5^n mod 9.
+  mov $5,5
+  pow $5,$0
+  mul $5,2
+  mod $5,18
+  mov $6,$5
+  sub $6,2
+  div $6,2
+  mov $0,$6
+  add $0,1
   mul $1,$0
   mul $3,-1
   add $3,$1

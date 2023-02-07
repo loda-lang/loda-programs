@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,45468 ; Primes congruent to {1, 4} mod 5.
+  add $3,1
+  seq $3,38872 ; Primes congruent to {0, 1, 4} mod 5.
   mov $5,$3
   seq $3,40893 ; Continued fraction for sqrt(924).
   bin $3,2

@@ -4,7 +4,32 @@
 
 mov $1,$0
 mul $1,2
-seq $0,86169 ; Sum of the first n twin prime pairs.
+mov $2,$0
+mov $3,$0
+add $3,8
+pow $3,3
+lpb $3
+  max $6,2
+  mov $4,$6
+  mul $4,2
+  mov $7,$4
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,3
+  sub $4,$7
+  mul $7,$4
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  mov $5,$0
+  max $5,1
+  cmp $5,$0
+  add $6,3
+  add $2,$0
+  mul $3,$5
+  sub $3,18
+lpe
+mov $0,$2
+mul $0,12
+add $0,8
 add $0,$1
 div $0,2
 add $0,1

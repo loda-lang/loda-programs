@@ -10,7 +10,9 @@ lpb $5
   mov $0,$7
   add $0,$5
   sub $0,1
-  seq $0,79705 ; 3p^2 where p runs through the primes.
+  seq $0,40 ; The prime numbers.
+  pow $0,2
+  mul $0,3
   add $2,$6
   mov $3,$2
   add $3,$0

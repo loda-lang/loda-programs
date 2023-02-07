@@ -9,7 +9,16 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  seq $0,38529 ; n-th prime - n-th composite.
+  mov $4,$0
+  add $4,1
+  mov $5,$4
+  mul $5,-2
+  div $5,$4
+  sub $4,$5
+  seq $4,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $4,1
+  seq $0,40 ; The prime numbers.
+  sub $0,$4
   add $1,$0
 lpe
 mov $0,$1

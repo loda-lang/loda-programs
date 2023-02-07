@@ -10,7 +10,10 @@ lpb $5
   mov $0,$7
   add $0,$5
   sub $0,1
-  seq $0,175708 ; n-th semiprime minus n.
+  mov $8,$0
+  seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
+  sub $0,1
+  sub $0,$8
   add $2,$6
   mov $3,$2
   add $3,$0

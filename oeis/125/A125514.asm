@@ -4,5 +4,12 @@
 
 mov $1,$0
 add $1,$0
-seq $1,34896 ; Number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
+cmp $2,$1
+trn $1,1
+seq $1,113262 ; One quarter of the number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
+add $1,1
+sub $2,$1
+mul $2,3
+sub $1,$2
+sub $1,4
 mov $0,$1

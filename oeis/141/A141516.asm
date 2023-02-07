@@ -13,7 +13,10 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $0,$2
-  seq $0,141425 ; Period 6: repeat [1, 2, 4, 5, 7, 8].
+  mod $0,6
+  mul $0,3
+  div $0,2
+  add $0,1
   mul $1,$0
   mul $3,-1
   add $3,$1

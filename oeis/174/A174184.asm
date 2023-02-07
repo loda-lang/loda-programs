@@ -5,9 +5,10 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,174008 ; n-th prime plus n-th even nonnegative nonprime.
-  sub $3,1
+  mov $5,$1
+  seq $5,176628 ; a(n) = prime(n) - n*(-1)^prime(n).
+  add $5,$1
+  mov $3,$5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3

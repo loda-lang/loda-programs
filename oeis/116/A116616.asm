@@ -8,7 +8,9 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,160592 ; Indices of primes congruent to 7 modulo 12.
+  seq $3,68229 ; Primes congruent to 7 (mod 12).
+  sub $3,3
+  seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   add $3,1
   mov $5,$3
   mul $3,338

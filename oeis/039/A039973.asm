@@ -1,8 +1,21 @@
 ; A039973: An example of a d-perfect sequence: a(2*n) = 0, a(2*n-1) = A039965(n).
 ; Submitted by Orange Kid
 ; 1,0,2,0,2,0,1,0,2,0,0,0,0,0,0,0,2,0,1,0,2,0,2,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,2,0,2,0,1,0,2,0,0,0,0,0,0,0,2,0,1,0,2,0,2,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A126087(n+1)%3
 
 add $0,1
-seq $0,126087 ; Expansion of c(2*x^2)/(1-x*c(2*x^2)), where c(x) = (1-sqrt(1-4*x))/(2*x) is the g.f. of the Catalan numbers (A000108).
+mov $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mul $2,-2
+  mov $0,$2
+  sub $1,1
+  mul $2,$3
+  div $2,$1
+  add $4,$2
+  sub $2,$0
+  sub $3,1
+lpe
+mov $0,$4
+add $0,1
 mod $0,3

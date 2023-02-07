@@ -5,6 +5,11 @@ mov $1,$0
 add $1,13
 mod $1,2
 mul $1,2
-seq $0,95190 ; Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
-add $0,3
+lpb $0
+  div $0,2
+  add $2,$0
+lpe
+mod $2,2
+mov $0,$2
 sub $0,$1
+add $0,3

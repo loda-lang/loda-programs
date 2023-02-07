@@ -4,7 +4,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  seq $2,236398 ; Period 4: repeat 1,1,2,1.
+  gcd $2,4
+  mod $2,3
   add $0,$2
   dif $1,2
 lpe

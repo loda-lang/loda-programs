@@ -4,7 +4,16 @@
 
 mov $1,3
 pow $1,$0
-seq $0,257285 ; a(n) = 4*5^n - 3*4^n.
+mov $2,1
+mov $4,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $2,$4
+  mul $2,4
+  mul $4,5
+lpe
+mov $0,$2
 mul $0,3
 add $0,$1
 mul $0,2

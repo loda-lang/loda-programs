@@ -1,9 +1,27 @@
 ; A097631: Number of unrooted directed trees on n nodes with a green root.
 ; Submitted by Jamie Morken(l1)
 ; 0,1,5,58,907,19046,496869,15578130,570573623,23929861102,1131235173433,59529368839898,3451899685313523,218712237867226182,15034642075916533997,1114519318895861250082,88631119148029975177327,7526795487859400166772958,679859967684397018073935617
-; Formula: a(n) = A097628(n)/(n+1)
 
 mov $1,$0
 add $1,1
-seq $0,97628 ; Number of rooted directed trees on n nodes with a green root.
+mov $2,1
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,-1
+  sub $3,$2
+  pow $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  mul $6,2
+  add $2,1
+  add $4,$6
+  mul $6,$5
+  add $6,$4
+lpe
+sub $7,$4
+mov $0,$7
+div $0,2
 div $0,$1

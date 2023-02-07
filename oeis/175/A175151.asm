@@ -4,8 +4,15 @@
 
 add $0,1
 lpb $0
+  mov $4,$0
+  cmp $4,0
+  mov $3,$0
+  add $3,$4
   mov $2,$0
-  seq $2,60072 ; a(n) = (n^(n-1) - 1)/(n-1) for n>1, a(1) = 0.
+  add $2,1
+  pow $2,$3
+  sub $2,1
+  div $2,$3
   sub $0,1
   add $1,$2
 lpe

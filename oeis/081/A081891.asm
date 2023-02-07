@@ -12,7 +12,17 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,81685 ; A sum of decreasing powers.
+  mov $5,2
+  pow $5,$0
+  mul $5,4
+  mov $6,6
+  pow $6,$0
+  mul $6,2
+  seq $0,1553 ; a(n) = 1^n + 2^n + ... + 6^n.
+  sub $6,$0
+  mov $0,$6
+  add $0,$5
+  add $0,1
   mul $1,$0
   add $3,$1
   mul $3,4

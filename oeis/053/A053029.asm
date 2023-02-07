@@ -8,8 +8,8 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,213648 ; The minimum number of 1's in the relation n*[n,1,1,...,1,n] = [x,...,x] between simple continued fractions.
   add $3,1
+  seq $3,1177 ; Fibonacci entry points: a(n) = least k >= 1 such that n divides Fibonacci number F_k (=A000045(k)).
   mod $3,2
   sub $0,$3
   add $1,1

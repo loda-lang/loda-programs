@@ -7,8 +7,14 @@ mov $2,$0
 add $2,1
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $6,$5
   mov $3,$1
-  seq $3,327816 ; Number of irreducible factors in the factorization of the n-th cyclotomic polynomial over GF(8) (counted with multiplicity).
+  seq $3,7739 ; Period of repeating digits of 1/n in base 8.
+  gcd $5,$3
+  div $6,$5
+  mov $3,$6
   cmp $3,1
   sub $0,$3
   add $1,2

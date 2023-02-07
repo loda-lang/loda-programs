@@ -1,12 +1,20 @@
 ; A123740: Characteristic sequence for Wythoff AB-numbers A003623.
-; Submitted by Skivelitis2
+; Submitted by Aflatoxin
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
+; Formula: a(n) = d(n)-1, b(n) = (-c(n-1)+b(n-1))/4-1, b(2) = -15, b(1) = -8, b(0) = -4, c(n) = 2*gcd((-c(n-1)+b(n-1))/4+binomial(d(n-1),c(n-1)),2)*c(n-1), c(2) = 192, c(1) = 48, c(0) = 24, d(n) = gcd((-c(n-1)+b(n-1))/4+binomial(d(n-1),c(n-1)),2), d(2) = 2, d(1) = 1, d(0) = 1
 
-trn $0,1
+mov $2,3
+add $0,2
 lpb $0
-  mov $1,$0
-  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$1
+  sub $0,1
+  sub $1,$2
+  div $1,4
+  bin $3,$2
+  add $3,$1
+  gcd $3,2
+  sub $1,1
+  mul $2,2
+  mul $2,$3
 lpe
-add $0,1
-cmp $0,2
+mov $0,$3
+sub $0,1

@@ -4,6 +4,22 @@
 
 mov $1,$0
 add $1,2
-seq $0,45741 ; Number of edges in all noncrossing connected graphs on n nodes on a circle.
+mov $5,$0
+add $5,1
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $0,1
+  sub $3,1
+  add $3,$5
+  bin $3,$0
+  mov $4,$5
+  mul $4,3
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  add $6,$4
+lpe
+mov $0,$6
 mul $0,2
 dif $0,$1

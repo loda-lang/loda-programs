@@ -1,8 +1,21 @@
 ; A043656: Numbers whose base-12 representation has exactly 7 runs.
 ; 3006865,3006866,3006867,3006868,3006869,3006870,3006871,3006872,3006873,3006874,3006875,3006888,3006889,3006891,3006892,3006893,3006894,3006895,3006896,3006897,3006898,3006899,3006900,3006901
-; Formula: a(n) = A043652(n)+3006720
 
-seq $0,43652 ; Numbers whose base-12 representation has exactly 3 runs.
-add $1,$0
+mov $5,$0
+lpb $0
+  sub $0,1
+  div $0,12
+  mov $2,2
+  mov $3,6
+  add $3,$0
+  mov $0,10
+  mov $4,2
+  add $4,$3
+  add $4,2
+lpe
+add $2,$4
+add $2,145
+add $2,$5
+add $1,$2
 add $1,3006720
 mov $0,$1

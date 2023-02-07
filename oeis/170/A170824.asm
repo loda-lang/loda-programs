@@ -4,7 +4,15 @@
 
 mov $2,$0
 add $2,1
-seq $0,121940 ; Product of the first n primes of the form 6k+1.
-mov $1,$0
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mov $3,$5
+  seq $3,2476 ; Primes of the form 6m + 1.
+  mul $3,$4
+  add $5,1
+lpe
+mov $1,$3
 gcd $1,$2
 mov $0,$1

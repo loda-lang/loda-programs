@@ -8,7 +8,13 @@ lpb $0
   mov $2,$0
   mul $2,2
   trn $2,1
-  seq $2,8617 ; Expansion of 1/((1-x^2)(1-x^7)).
+  mov $3,2
+  gcd $3,$2
+  div $2,7
+  add $2,$3
+  add $2,2
+  div $2,2
+  sub $2,1
   add $1,$2
 lpe
 mov $0,$1

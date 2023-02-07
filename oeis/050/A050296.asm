@@ -7,9 +7,13 @@ mov $1,$0
 add $1,1
 lpb $1
   sub $1,1
+  add $6,1
   mov $0,$4
   sub $0,$1
-  seq $0,65331 ; Largest 3-smooth divisor of n.
+  mul $0,743008370688
+  mov $5,$0
+  gcd $5,$6
+  mov $0,$5
   sub $0,1
   seq $0,71521 ; Number of 3-smooth numbers <= n.
   mov $3,$0

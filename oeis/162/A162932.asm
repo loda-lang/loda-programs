@@ -10,12 +10,13 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,4
-  seq $0,165652 ; Number of disconnected 2-regular graphs on n vertices.
+  mov $6,$0
+  seq $6,8483 ; Number of partitions of n into parts >= 3.
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
   mul $4,$3
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1

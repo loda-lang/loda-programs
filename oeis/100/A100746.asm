@@ -7,7 +7,12 @@ lpb $0
   sub $0,1
   trn $0,$1
   add $2,1
-  seq $2,100735 ; Inverse modulo 2 binomial transform of 2^n.
+  div $2,2
+  mov $3,4
+  pow $3,$2
+  sub $3,1
+  mov $2,$3
+  seq $2,91732 ; Iphi(n): infinitary analog of Euler's phi function.
   add $1,$2
 lpe
 mov $0,$2

@@ -6,8 +6,10 @@ mov $2,$0
 mov $1,$0
 lpb $1
   div $1,31
-  mov $3,$2
-  seq $3,254048 ; a(n) = A126760(A007494(n)).
+  mov $4,$2
+  seq $4,126759 ; a(0) = 1; a(2n) = a(n); a(3n) = a(n); otherwise write n = 6i+j, where j = 1 or 5 and set a(n) = 2i+2 if j = 1, otherwise a(n) = 2i+3.
+  mov $3,$4
+  sub $3,1
   mov $0,$2
   mul $0,$3
   sub $0,1

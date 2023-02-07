@@ -7,8 +7,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  mov $5,$1
+  seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  mul $5,$6
   mov $3,$1
-  seq $3,120454 ; a(n) = ceiling(GPF(n)/LPF(n)) where GPF is greatest prime factor, LPF is least prime factor.
+  div $3,$5
+  add $3,1
   cmp $3,2
   sub $0,$3
   add $1,1

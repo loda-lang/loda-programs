@@ -6,8 +6,17 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
+  mov $7,$1
+  seq $7,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $7,1
+  seq $7,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $7,1
+  seq $7,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
+  seq $7,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
   mov $3,$1
-  seq $3,356228 ; Greatest size of a gapless submultiset of the prime indices of n.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $3,1
+  add $3,$7
   cmp $3,3
   sub $5,2
   add $6,2

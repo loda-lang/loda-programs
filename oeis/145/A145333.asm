@@ -1,11 +1,19 @@
 ; A145333: Numbers n such that there exists x in N : (x+43)^3-x^3=n^2.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by stoneageman
 ; 12943,436295587,14707524224827,495790641182622583,16713102499558683048103,563398684764332564368929547,18992169646692548245317931981267,640226038226607116585334922719581023,21582019729626756253399091999559144304063
-; Formula: a(n) = 7396*(A145335(n)/4)+5547
 
-mov $1,$0
-seq $1,145335 ; Numbers n such that there exists x in N : (x+1)^3-x^3=43*n^2.
-div $1,4
-mov $0,$1
-mul $0,7396
-add $0,5547
+mov $3,1
+mul $0,2
+lpb $0
+  sub $0,1
+  cmp $2,4
+  add $2,$3
+  mov $3,$1
+  mov $1,$2
+  dif $2,2
+  dif $2,6
+  mul $2,636
+  add $3,$2
+lpe
+mov $0,$3
+mul $0,12943

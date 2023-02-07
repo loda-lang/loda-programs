@@ -9,8 +9,10 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  add $0,1
-  seq $0,348196 ; Number of primes of the form 4k+1 < n^2.
+  add $0,2
+  pow $0,2
+  sub $0,1
+  seq $0,66339 ; Number of primes p of the form 4m+1 with p <= n.
   mov $4,$3
   mul $4,$0
   add $2,$4

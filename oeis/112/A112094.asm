@@ -5,7 +5,24 @@
 mov $1,$0
 trn $0,1
 mov $2,$0
-seq $0,130550 ; Denominators of partial sums for a series for 2*Zeta(2)/3 = (Pi^2)/9.
+mov $3,1
+mul $0,2
+add $0,1
+lpb $0
+  mov $4,$0
+  sub $0,1
+  add $5,$3
+  mul $5,$0
+  mul $5,$0
+  sub $0,1
+  mul $3,4
+  mul $3,$4
+  add $4,1
+  mul $3,$4
+lpe
+gcd $5,$3
+div $3,$5
+mov $0,$3
 dif $0,3
 mul $0,2
 sub $0,1

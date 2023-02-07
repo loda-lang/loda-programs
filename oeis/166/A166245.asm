@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $5,1
   mov $3,$1
-  seq $3,87262 ; Integer quotient of largest and initial values in 3x+1 iteration, started at n.
+  seq $3,25586 ; Largest value in '3x+1' trajectory of n.
+  div $3,$5
+  mul $3,2
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

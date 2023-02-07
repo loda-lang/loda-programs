@@ -7,6 +7,10 @@ mov $0,96
 lpb $1
   sub $1,1
   trn $0,1
-  seq $0,294015 ; Sum of the even divisors of 2n, minus the (n-1)st odd number.
+  mov $2,$0
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,$2
+  mul $0,2
+  sub $0,1
   div $0,2
 lpe

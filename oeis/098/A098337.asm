@@ -4,5 +4,19 @@
 
 mov $1,2
 pow $1,$0
-seq $0,98331 ; Expansion of 1/sqrt(1 - 2*x + 5*x^2).
+mov $2,1
+mov $5,1
+mov $4,$0
+lpb $4
+  mul $2,$4
+  sub $4,1
+  sub $5,2
+  add $6,$5
+  mul $2,$4
+  div $2,$6
+  add $3,$2
+  sub $4,1
+lpe
+mov $0,$3
+add $0,1
 mul $0,$1

@@ -7,9 +7,21 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  mov $2,$1
   mov $6,$3
-  seq $6,193682 ; Period 8: repeat [0, 1, 2, 3, 0, 3, 2, 1].
+  add $6,1
+  mov $8,2
+  gcd $8,$6
+  mov $2,$1
+  add $6,1
+  div $6,2
+  mov $7,4
+  pow $7,$6
+  sub $7,$8
+  pow $8,$6
+  mul $8,$7
+  mov $6,$8
+  sub $6,3
+  mod $6,10
   mov $1,$3
   seq $1,40329 ; Continued fraction for sqrt(348).
   add $1,$6

@@ -1,7 +1,21 @@
 ; A122725: a(n) = A000670(n)^2.
 ; Submitted by TheKillerChicken
 ; 1,1,9,169,5625,292681,21930489,2236627849,297935847225,50229268482121,10454564139438969,2632936466960600329,789136169944454084025,277579719258755165321161,113238180214596650771616249,53030348046942317338336489609,28256184698070300360908567636025
-; Formula: a(n) = A000670(n)^2
 
-seq $0,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  add $6,$2
+  mov $2,$1
+  pow $2,$4
+  add $2,$6
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,1
+  mul $5,-1
+  add $5,$3
+lpe
+mov $0,$5
 pow $0,2

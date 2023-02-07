@@ -4,10 +4,21 @@
 
 mul $0,2
 lpb $0
-  sub $0,6
   mov $2,$0
-  max $2,0
-  seq $2,23054 ; Simon Plouffe's conjectured extension of sequence A008368.
-  add $1,$2
+  mov $4,$0
+  sub $4,5
+  sub $0,6
+  sub $2,4
+  div $2,2
+  mov $3,$4
+  add $3,$4
+  add $3,$2
+  mul $3,$2
+  mov $4,7776
+  add $4,$2
+  add $3,$4
+  sub $3,7773
+  div $3,6
+  add $1,$3
 lpe
 mov $0,$1

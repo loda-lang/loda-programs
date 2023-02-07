@@ -7,7 +7,8 @@ lpb $2
   sub $5,8
   add $6,3
   max $3,$5
-  seq $3,193432 ; Number of divisors of n^2 + 1.
+  pow $3,2
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,$3
   mov $4,$0
   max $4,0

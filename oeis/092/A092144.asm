@@ -1,11 +1,15 @@
 ; A092144: A092143(n!)/n!.
 ; Submitted by Jon Maiga
 ; 1,1,1,2,2,12,12,96,288,2880,2880,414720,414720,5806080,87091200,5573836800,5573836800,1805923123200,1805923123200,722369249280000
+; Formula: a(n) = a(n-1)*(A007955(n)/(n+1)), a(0) = 1
 
 mov $1,1
 lpb $0
+  mov $3,$0
+  add $3,1
   mov $2,$0
-  seq $2,7956 ; Product of the proper divisors of n.
+  seq $2,7955 ; Product of divisors of n.
+  div $2,$3
   sub $0,1
   mul $1,$2
 lpe

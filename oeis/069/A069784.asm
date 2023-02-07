@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,69783 ; a(n) = gcd(d(n!^3), d(n!)) = A069780(n!), where d() is the number of divisors function.
+  mul $3,2
+  seq $3,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
+  sub $3,1
+  seq $3,69780 ; a(n) = gcd(d(n^3), d(n)).
   seq $3,342921 ; a(n) = A003415(A019565(n)).
   cmp $3,1
   sub $0,$3

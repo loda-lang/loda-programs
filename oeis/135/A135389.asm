@@ -1,7 +1,7 @@
 ; A135389: Number of walks of length 2*n+2 from origin to (1,1) in a square lattice.
 ; Submitted by Jon Maiga
 ; 2,24,300,3920,52920,731808,10306296,147232800,2127513960,31031617760,456164781072,6749962774464,100445874620000,1502052155856000,22557604697766000,340044833169460800,5143178101688094600
-; Formula: a(n) = 2*binomial(2*n+1,n)*binomial(2*(n+1),n)
+; Formula: a(n) = 2*binomial(2*n+1,n)*binomial(2*n+2,n)
 
 mov $1,$0
 mov $2,1

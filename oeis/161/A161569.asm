@@ -1,9 +1,19 @@
 ; A161569: Sum of first n nonprimes minus their indices.
 ; 0,2,5,9,13,17,22,28,34,40,47,55,63,71,80,89,98,107,116,126,137,148,159,170,181,193,205,217,230,244,258,272,287,302,317,332,347,363,379,395,411,427,444,462,480,498,516,534,553,572,591,611,632
+; Formula: a(n) = -n+a(n-1)+A122825(-((-2*n)/(n+1))+n+1)-2, a(0) = 0
 
 lpb $0
+  mov $3,$0
+  add $3,1
+  mov $4,$0
+  mul $4,-2
   mov $2,$0
-  seq $2,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
+  add $2,1
+  div $4,$2
+  sub $2,$4
+  seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $2,1
+  sub $2,$3
   sub $0,1
   add $1,$2
 lpe

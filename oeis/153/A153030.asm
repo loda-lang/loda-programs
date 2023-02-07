@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,81737 ; a(n) = (n-1)*10 + n-th decimal digit of Pi=3.14159...
+  seq $3,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
+  add $3,9
   gcd $3,2
   sub $0,$3
   add $0,1

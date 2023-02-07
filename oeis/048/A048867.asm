@@ -6,8 +6,12 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,48865 ; a(n) is the number of primes in the reduced residue system mod n.
+  mul $5,2
   mov $3,$1
-  seq $3,48866 ; Difference between number of nonprimes and primes in reduced residue system of n.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $3,$5
   mul $3,4
   trn $3,3
   min $3,1

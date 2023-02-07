@@ -4,4 +4,18 @@
 
 mul $0,2
 add $0,1
-seq $0,78649 ; Numbers n such that A000002(n)=A000002(n+1) where A000002 is the Kolakoski sequence.
+mov $1,1
+mov $2,$0
+pow $2,4
+add $2,11
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,156728 ; a(n) = abs(A054354(n)).
+  cmp $3,0
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
+add $0,1

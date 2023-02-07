@@ -5,7 +5,8 @@
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,27377 ; Number of irreducible polynomials of degree n over GF(4); dimensions of free Lie algebras.
+  seq $2,54719 ; Number of 4-ary sequences with primitive period n.
+  dif $2,$0
   sub $0,1
   add $1,$2
 lpe

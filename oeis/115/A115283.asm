@@ -8,8 +8,13 @@ lpb $0
   mov $2,$0
   mul $2,2
   trn $2,1
-  seq $2,56527 ; Numbers where iterated sum of digits of square settles down to a cyclic pattern (in fact 13, 16, 13, 16, ...).
-  sub $2,1
+  mov $3,$2
+  div $3,4
+  mul $3,2
+  add $2,$3
+  mul $2,3
+  add $2,3
+  div $2,2
   add $1,$2
 lpe
 mov $0,$1

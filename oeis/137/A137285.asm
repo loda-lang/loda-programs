@@ -22,7 +22,10 @@ lpb $4
   mov $2,$0
   add $2,$1
   add $0,3
-  seq $0,260786 ; Twice the Euler or up/down numbers A000111.
+  mov $7,$0
+  seq $7,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$7
   mov $1,$0
   mov $3,2
   add $3,$2

@@ -6,8 +6,13 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,40 ; The prime numbers.
   mov $3,$1
-  seq $3,127489 ; a(n) is the coefficient of the linear term in the polynomial (x-prime(n))*(x-prime(n+1))*(x-prime(n+2))*(x-prime(n+3))*(x-prime(n+4)).
+  add $3,1
+  seq $3,46302 ; Product of 4 successive primes.
+  mul $3,$6
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

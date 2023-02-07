@@ -5,5 +5,8 @@
 mov $1,8
 lpb $1
   div $1,6
-  seq $0,6368 ; The "amusical permutation" of the nonnegative numbers: a(2n)=3n, a(4n+1)=3n+1, a(4n-1)=3n-1.
+  mul $0,3
+  add $0,1
+  dif $0,2
+  div $0,2
 lpe

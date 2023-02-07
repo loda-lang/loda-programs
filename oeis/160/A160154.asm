@@ -5,8 +5,11 @@ mov $1,$0
 add $0,3
 lpb $1
   mov $2,$1
-  seq $2,198400 ; 10^n-10*n.
-  add $0,$2
+  mul $2,10
+  mov $3,10
+  pow $3,$1
+  sub $3,$2
+  add $0,$3
   cmp $1,1
 lpe
 sub $0,3

@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,7955 ; Product of divisors of n.
   mov $3,$1
-  seq $3,324507 ; a(n) = denominator of Product_{d|n} (d/tau(d)) where tau(k) = the number of divisors of k (A000005).
+  seq $3,211776 ; a(n) = Product_{d | n} tau(d).
+  gcd $5,$3
+  div $3,$5
   seq $3,342921 ; a(n) = A003415(A019565(n)).
   cmp $3,1
   sub $0,$3

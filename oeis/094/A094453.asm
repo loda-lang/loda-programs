@@ -8,8 +8,12 @@ lpb $2
   sub $2,1
   add $2,$4
   mov $3,$1
-  add $3,1
-  seq $3,131381 ; a(n) = binomial(2*n,n) mod (n+2), with n>=1.
+  add $3,2
+  mov $5,$3
+  mul $3,2
+  bin $3,$5
+  add $5,2
+  mod $3,$5
   min $3,1
   sub $0,$3
   add $1,1

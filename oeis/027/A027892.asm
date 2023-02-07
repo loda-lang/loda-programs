@@ -6,8 +6,10 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  add $3,1
-  seq $3,13715 ; a(n) = 10^(2n+1).
+  add $3,3
+  mov $6,10
+  pow $6,$3
+  mov $3,$6
   pow $3,2
   add $3,$4
   add $4,1

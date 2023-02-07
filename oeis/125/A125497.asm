@@ -7,7 +7,11 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$6
-  seq $3,10059 ; Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+  seq $3,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mov $8,$3
+  add $8,1
+  mov $3,$8
+  mod $3,2
   add $7,6
   sub $0,$3
   mov $4,$0

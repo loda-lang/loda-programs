@@ -9,7 +9,11 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $4,40 ; The prime numbers.
+  add $7,$4
+  seq $7,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $7,$4
+  mov $4,$7
   sub $4,3
   mul $4,12
   mov $2,$3

@@ -4,7 +4,19 @@
 
 add $0,1
 mov $1,$0
-seq $0,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
+add $0,1
+mov $2,$0
+mov $3,$0
+mul $0,2
+pow $2,2
+lpb $2
+  sub $2,$0
+  add $3,1
+  add $0,1
+  sub $2,$0
+lpe
+mov $0,$3
+div $0,2
 mul $0,2
 add $0,$1
 mul $0,$1

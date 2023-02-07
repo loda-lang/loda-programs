@@ -1,5 +1,22 @@
 ; A140397: a(n) = floor(3*phi*n) - 3*floor(phi*n) where phi = (1+sqrt(5))/2.
+; Submitted by Ralfy
 ; 1,0,2,1,0,2,0,2,1,0,2,1,0,1,0,2,1,0,2,1,2,1,0,2,1,0,2,0,2,1,0,2,1,0,1,0,2,1,0,2,1,2,1,0,2,1,0,1,0,2,1,0,2,1,2,1,0,2,1,0,2,0,2,1,0,2,1,0,1,0,2,1,0,2,1,2,1,0,2,1,0,2,0,2,1,0,2,1,0,1,0,2,1,0,2,0,2,1,0
 
-seq $0,292639 ; Rank of (3+r)*n when all the numbers (3-r)*j and (3+r)*k, where r = sqrt(5), j>=1, k>=1, are jointly ranked.
-mod $0,3
+mov $1,1
+mul $0,2
+add $0,2
+lpb $0
+  sub $0,1
+  add $1,$5
+  add $4,1
+  add $5,$1
+  mov $3,$4
+  mul $3,$1
+  div $3,$5
+  add $4,1
+  sub $4,$2
+  cmp $2,0
+  add $5,1
+lpe
+mod $3,3
+mov $0,$3

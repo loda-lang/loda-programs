@@ -6,9 +6,13 @@ mov $1,3
 add $0,3
 lpb $0
   sub $0,$1
+  mov $3,$0
+  add $3,13
+  div $3,14
   mov $2,$0
-  max $2,0
-  seq $2,43663 ; Numbers whose base-14 representation has exactly 2 runs.
+  add $2,11
+  add $2,$3
+  add $2,3
   pow $1,$2
 lpe
 mov $0,$2

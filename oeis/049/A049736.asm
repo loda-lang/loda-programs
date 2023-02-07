@@ -13,7 +13,8 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,49735 ; Array T(i,j) is the number of lattice points (x,y) in circle with radius (0,0)-to-(i,j), read by antidiagonals.
+  seq $0,48147 ; Array T read by diagonals; T(i,j) = i^2 + j^2.
+  seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
   add $1,$0
 lpe
 mov $0,$1

@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,117929 ; Number of partitions of n into 2 distinct primes.
+  add $3,1
+  seq $3,347739 ; Number of compositions (ordered partitions) of n into at most 2 prime parts.
+  div $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

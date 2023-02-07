@@ -4,8 +4,11 @@
 
 add $0,1
 lpb $0
+  mov $3,$0
+  mod $3,3
   mov $2,$0
-  seq $2,47240 ; Numbers that are congruent to {0, 1, 2} mod 6.
+  mul $2,2
+  sub $2,$3
   sub $0,1
   trn $0,1
   add $1,$2

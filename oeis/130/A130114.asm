@@ -14,7 +14,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,37019 ; Let n = p_1*p_2*...*p_k be the prime factorization of n, with the primes sorted in descending order. Then a(n) = 2^(p_1 - 1)*3^(p_2 - 1)*...*A000040(k)^(p_k - 1).
+  seq $0,290641 ; Multiplicative with a(p^e) = prime(p-1)^e.
+  sub $0,1
+  seq $0,181821 ; a(n) = smallest integer with factorization as Product p(i)^e(i) such that Product p(e(i)) = n.
   mul $1,$0
   add $3,$1
 lpe

@@ -1,27 +1,25 @@
 ; A174786: Numbers n congruent to 3 (mod 6) such that n+2 and n+8 are primes.
-; Submitted by Coleslaw
+; Submitted by pututu
 ; 3,9,15,21,39,45,51,81,99,105,129,165,171,189,225,231,249,255,261,309,345,351,381,441,459,501,555,561,585,591,639,645,651,675,819,855,879,939,945,969,975,1011,1089,1095,1101,1179,1185,1215,1221,1275,1281,1299,1359,1365,1425,1431,1479,1485,1491,1551,1599,1605,1611,1869,1899,1905,1971,1995,2061,2079,2205,2235,2265,2331,2349,2391,2409,2415,2439,2541,2655,2685,2691,2835,2895,2901,2955,2961,3081,3201,3249,3321,3405,3459,3525,3531,3615,3669,3759,3795
 
-mov $5,-2
+mov $3,4
+mov $1,4
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  max $3,$5
-  mul $3,4
-  add $3,2
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$3
-  add $1,16
+  add $3,6
+  mov $5,$1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  add $1,6
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
-  add $5,$1
-  sub $5,1
-  add $1,2
+  sub $2,17
 lpe
 mov $0,$1
-div $0,3
-sub $0,3
+sub $0,1

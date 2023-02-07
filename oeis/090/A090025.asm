@@ -8,7 +8,12 @@ lpb $0
   mov $3,$0
   sub $3,1
   div $3,2
-  seq $3,7438 ; Moebius transform of triangular numbers.
+  mov $4,$3
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $3,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  add $3,1
+  mul $3,$4
+  div $3,2
   sub $0,1
   add $2,$3
 lpe

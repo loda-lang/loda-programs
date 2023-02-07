@@ -8,10 +8,16 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,578 ; The cubes: a(n) = n^3.
+  pow $3,3
   sub $3,1
   mov $5,$3
-  seq $3,294936 ; Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
+  mov $6,$3
+  add $6,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $3,$6
+  cmp $3,1
+  add $3,1
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

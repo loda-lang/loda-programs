@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,101296 ; n has the a(n)-th distinct prime signature.
+  seq $3,46523 ; Smallest number with same prime signature as n.
+  sub $3,1
+  seq $3,85089 ; Number of distinct prime signatures arising up to n.
   sub $3,$4
   dif $3,3
   dif $3,2

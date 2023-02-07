@@ -10,11 +10,9 @@ lpb $3
   mov $7,2
   lpb $7
     sub $7,1
-    sub $0,1
     mov $2,$0
-    max $2,0
-    mov $8,$2
-    add $2,1
+    sub $0,1
+    mov $8,$0
     pow $8,2
     lpb $8
       mov $9,$5

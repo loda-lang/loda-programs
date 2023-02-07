@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,122895 ; Characteristic function of natural numbers with number of divisors equal to a Fibonacci number.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $3,66628 ; a(n) = n - the largest Fibonacci number <= n.
+  bin $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   mov $4,$0

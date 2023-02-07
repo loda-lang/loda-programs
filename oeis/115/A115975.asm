@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,174892 ; a(n) = A074206(n) - A174889(n).
+  seq $3,2033 ; Number of perfect partitions of n.
+  sub $3,1
   seq $3,163771 ; Triangle interpolating the swinging factorial (A056040) restricted to even indices with its binomial inverse. Same as interpolating the central trinomial coefficients (A002426) with the central binomial coefficients (A000984).
   mod $3,2
   sub $0,$3

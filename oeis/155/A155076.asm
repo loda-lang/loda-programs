@@ -2,7 +2,19 @@
 ; Submitted by Simon Strandgaard
 ; 1,-1,1,-1,0,1,-1,-1,0,1,-1,-1,0,0,1,-1,-1,-1,0,0,1,-1,-1,-1,0,0,0,1,-1,-1,-1,-1,0,0,0,1,-1,-1,-1,-1,0,0,0,0,1,-1,-1,-1,-1,-1,0,0,0,0,1,-1,-1,-1,-1,-1,0,0,0,0,0,1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,1,-1,-1,-1,-1,-1,-1,0
 
-seq $0,168313 ; Triangle read by rows, retain 1's as rightmost diagonal of A101688 and replace all other 1's with 2's.
+mov $3,1
+mul $0,2
+add $0,1
+lpb $0
+  add $0,2
+  add $3,1
+  trn $0,$3
+  mov $2,2
+  trn $2,$0
+  sub $0,$3
+  trn $0,1
+lpe
+mov $0,$2
 mul $0,2
 bin $0,2
 mov $1,$0

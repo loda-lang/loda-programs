@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,145834 ; a(n) = difference between the n-th composite number and the sum of its prime factors with repetition.
+  add $3,3
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $3,2
+  seq $3,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
   trn $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

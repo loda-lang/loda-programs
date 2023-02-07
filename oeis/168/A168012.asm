@@ -9,7 +9,18 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,168013 ; a(n) = Sum of all divisors of all numbers < (n+1)^2.
+  add $0,2
+  pow $0,2
+  sub $0,2
+  mov $6,$0
+  add $0,1
+  mul $6,$0
+  div $6,2
+  mov $5,$0
+  mul $5,$0
+  seq $0,244048 ; Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
+  sub $0,$6
+  add $0,$5
   mov $4,$3
   mul $4,$0
   add $2,$4

@@ -5,7 +5,12 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,39914 ; Smallest k>1 such that k(p-1)-1 is divisible by p^2, p=n-th prime.
+  seq $2,40 ; The prime numbers.
+  mov $4,$2
+  bin $4,2
+  mul $4,2
+  mov $2,$4
+  sub $2,1
   mul $3,$2
   add $3,$1
   sub $0,1

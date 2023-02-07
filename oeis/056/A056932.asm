@@ -9,7 +9,19 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,244879 ; Number of magic labelings of the cycle-of-loops graph LOOP X C_6 having magic sum n, where LOOP is the 1-vertex, 1-loop-edge graph.
+  mul $0,2
+  add $0,3
+  pow $0,2
+  mov $6,$0
+  div $0,2
+  add $0,1
+  mov $5,1
+  add $5,$6
+  pow $5,2
+  sub $5,$0
+  mul $0,$5
+  add $0,$6
+  div $0,480
   add $3,$0
   add $4,$3
 lpe

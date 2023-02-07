@@ -9,8 +9,19 @@ add $0,2
 lpb $0
   sub $0,1
   sub $2,2
+  mov $5,$1
+  sub $5,1
+  mov $6,$1
+  cmp $6,0
   mov $3,$1
-  seq $3,125266 ; Number of repetitions in A007918.
+  add $3,$6
+  sub $3,$5
+  max $5,0
+  seq $5,40 ; The prime numbers.
+  seq $5,13632 ; Difference between n and the next prime greater than n.
+  sub $3,1
+  add $3,$5
+  add $3,$6
   sub $0,$3
   add $1,1
   mov $4,$0

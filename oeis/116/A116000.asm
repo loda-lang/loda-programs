@@ -6,9 +6,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,67349 ; Number of divisors of sigma(n)+phi(n).
-  sub $3,4
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,$5
+  seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+  sub $3,3
   div $3,2
   cmp $3,0
   sub $0,$3

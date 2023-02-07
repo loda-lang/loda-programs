@@ -6,7 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,115069 ; a(n) = 3^b(n), where b(n) is #{primes p=1 mod 3 dividing n}.
+  seq $3,115070 ; a(n) = phi(n)/3^b(n), where b(n) is #{primes p=1 mod 3 dividing n}.
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  div $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,2

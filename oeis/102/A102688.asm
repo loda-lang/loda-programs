@@ -4,5 +4,17 @@
 
 mov $1,2
 pow $1,$0
-seq $0,34738 ; Dirichlet convolution of b_n = 2^(n-1) with phi(n).
+mov $3,$0
+add $3,1
+lpb $0
+  sub $0,1
+  mov $5,$3
+  gcd $5,$0
+  mov $4,2
+  pow $4,$5
+  add $2,$4
+lpe
+mov $0,$2
+div $0,2
+add $0,1
 add $0,$1

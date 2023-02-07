@@ -6,7 +6,13 @@ mov $2,$0
 mul $2,20
 lpb $2
   mov $3,$1
-  seq $3,199238 ; n mod (number of ones in binary representation of n).
+  mul $3,2
+  add $3,2
+  mov $5,$3
+  seq $5,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
+  mov $6,1
+  sub $6,$5
+  mod $3,$6
   cmp $3,0
   sub $0,$3
   add $1,2
