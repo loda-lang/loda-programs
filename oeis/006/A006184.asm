@@ -6,7 +6,11 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,216778 ; Number of derangements on n elements with an even number of cycles.
+  mov $4,$2
+  seq $2,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
+  add $2,1
+  sub $2,$4
+  div $2,2
   mov $3,$1
   add $1,$2
 lpe

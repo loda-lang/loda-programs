@@ -10,8 +10,8 @@ lpb $3
   add $0,$3
   trn $0,1
   add $0,1
-  seq $0,6093 ; a(n) = prime(n) - 1.
-  sub $0,1
+  seq $0,40 ; The prime numbers.
+  sub $0,2
   seq $0,123567 ; Recursive sum of 2*Omega(n), where Omega(n) is the sequence A001222.
   div $0,2
   sub $0,1

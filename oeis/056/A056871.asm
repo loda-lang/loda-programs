@@ -5,8 +5,12 @@
 mov $1,$0
 add $1,1
 lpb $1
+  mov $3,$1
+  seq $3,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
   mov $2,$1
-  seq $2,218004 ; Number of equivalence classes of compositions of n where two compositions a,b are considered equivalent if the summands of a can be permuted into the summands of b with an even number of transpositions.
+  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $2,1
+  add $2,$3
   add $0,$2
   sub $1,1
 lpe

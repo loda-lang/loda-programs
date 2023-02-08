@@ -9,7 +9,15 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40200 ; Continued fraction for sqrt(215).
+  dif $1,2
+  mov $5,$1
+  cmp $1,0
+  sub $5,$1
+  gcd $5,2
+  add $5,12
+  add $1,$5
+  mul $1,$5
+  sub $1,168
   mul $1,$2
   add $1,$4
   add $3,1

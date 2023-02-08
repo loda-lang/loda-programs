@@ -8,7 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,175192 ; a(n) = characteristic function of numbers k such that A000203(m) = k has solution, where A000203(m) = sums of divisors of m.
+  seq $3,54973 ; Number of numbers whose divisors sum to n.
   cmp $3,0
   sub $0,$3
   add $1,2

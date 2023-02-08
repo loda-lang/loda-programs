@@ -1,10 +1,16 @@
 ; A049716: a(n) = 2*n + 1 - prevprime(2*n + 1).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,2,4,2,2,4,2,2,4,2,4,6,2,2,4,6,2,4,2,2,4,2,4,6,2,4,6,2,2,4,6,2,4,2,2,4,6,2,4,2,4,6,2,4,6,8,2,4,2,2,4,2,2,4,2,4,6,8,10,12,14,2,4,2,4,6,2,2,4,6,8,10,2,2,4,6,2,4,6,2,4,2,4,6,2,4,6,2,2,4,6,8,10,2,2,4,2,2
-; Formula: a(n) = A308050(2*n)-1
 
 mov $1,$0
 mul $1,2
-seq $1,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
-mov $0,$1
-sub $0,1
+add $1,2
+lpb $1
+  sub $1,1
+  add $2,1
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,$3
+lpe
+mov $0,$2
+add $0,1

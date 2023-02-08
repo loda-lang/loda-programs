@@ -8,7 +8,7 @@ lpb $0
   mov $1,$3
   mul $1,2
   mov $2,$1
-  seq $2,10873 ; a(n) = n mod 4.
+  mod $2,4
   seq $1,40329 ; Continued fraction for sqrt(348).
   add $1,$2
   dif $1,2

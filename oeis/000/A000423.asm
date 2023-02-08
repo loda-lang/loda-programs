@@ -7,7 +7,8 @@ mov $1,$0
 sub $0,2
 lpb $0
   trn $0,1
-  seq $0,33845 ; Numbers n of the form 2^i*3^j, i and j >= 1.
+  seq $0,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
+  mul $0,6
   sub $0,1
   mov $1,$0
   mov $0,0

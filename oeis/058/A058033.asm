@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,54850 ; Binary logarithm of n-th primorial, rounded down to an integer.
+  seq $0,61720 ; First differences of sequence of primorials.
+  seq $0,70941 ; Length of binary representation of 2n+1.
+  sub $0,1
+  max $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

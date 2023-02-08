@@ -1,10 +1,17 @@
 ; A083461: Palindromes arising in A083457.
 ; Submitted by Christian Krause
 ; 0,3,7,9999,242,999999,9999999,99999999,999999999,9999999999,99999999999,999999999999,9999999999999,99999999999999,999999999999999,9999999999999999,99999999999999999,999999999999999999
-; Formula: a(n) = A083457(n)^(n+1)-1
 
 mov $1,$0
 add $1,1
-seq $0,83457 ; Smallest nontrivial k such that k^n - 1 is a palindrome (k >1 for n>1).
+mov $3,3
+dif $0,2
+mov $2,$0
+lpb $2
+  mov $2,2
+  pow $3,2
+  mov $0,$3
+lpe
+add $0,1
 pow $0,$1
 sub $0,1

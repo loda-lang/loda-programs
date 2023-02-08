@@ -1,11 +1,36 @@
 ; A014034: Inverse of 25th cyclotomic polynomial.
 ; Submitted by M0CZY
 ; 1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A014129((24*n+1)/5)
 
 mov $1,$0
 mul $1,24
 add $1,1
 div $1,5
-seq $1,14129 ; Inverse of 120th cyclotomic polynomial.
+dif $1,2
+mov $2,-1
+pow $2,$1
+add $2,1
+dif $1,2
+mul $1,7
+div $1,5
+lpb $1
+  add $3,21
+  add $4,21
+  mod $1,$4
+  mov $6,4
+  add $6,$1
+  div $1,10
+lpe
+sub $5,$6
+div $5,4
+add $1,1
+mul $1,$5
+mul $1,2
+gcd $3,2
+mul $3,2
+sub $1,$3
+add $1,6
+div $1,2
+mul $1,$2
+div $1,2
 mov $0,$1

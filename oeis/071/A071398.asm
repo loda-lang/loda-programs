@@ -3,4 +3,12 @@
 
 pow $0,2
 mul $0,5
-seq $0,22847 ; Integer nearest n*sqrt(3).
+pow $0,2
+mul $0,3
+lpb $0
+  sub $0,1
+  sub $0,$1
+  add $1,1
+  trn $0,$1
+lpe
+mov $0,$1

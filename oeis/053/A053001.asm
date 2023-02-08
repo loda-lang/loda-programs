@@ -6,4 +6,13 @@ add $0,2
 pow $0,2
 sub $0,5
 div $0,2
-seq $0,60265 ; Largest prime less than 2n.
+add $0,2
+lpb $0
+  sub $0,1
+  mov $1,$0
+  add $1,$0
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $0,$1
+lpe
+mul $0,2
+sub $0,1

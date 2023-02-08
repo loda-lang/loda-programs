@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,38445 ; Sums of 3 distinct powers of 10.
+  seq $3,14311 ; Numbers with exactly 3 ones in binary expansion.
+  seq $3,169964 ; Numbers whose decimal expansion contains only 0's and 5's.
+  div $3,5
   sub $3,1
   mov $5,$3
   seq $3,48146 ; Sum of non-unitary divisors of n.

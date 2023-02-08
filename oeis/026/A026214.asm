@@ -4,7 +4,15 @@
 
 mul $0,3
 div $0,2
-mul $0,2
-add $0,4
-seq $0,26136 ; Lexicographically earliest permutation of the positive integers such that |a(n)-n| = [a(n)/2].
+add $0,2
+mul $0,4
+mov $1,$0
+lpb $0
+  dif $0,3
+lpe
+mod $0,3
+div $0,2
+gcd $0,3
+div $1,$0
+mov $0,$1
 div $0,4

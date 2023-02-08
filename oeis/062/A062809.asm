@@ -3,7 +3,13 @@
 
 sub $1,$0
 add $0,1
-seq $0,3101 ; a(n) = Sum_{k = 1..n} (n - k + 1)^k.
-add $1,$0
+lpb $0
+  add $4,1
+  mov $3,$4
+  pow $3,$0
+  sub $0,1
+  add $2,$3
+lpe
+add $1,$2
 sub $1,1
 mov $0,$1

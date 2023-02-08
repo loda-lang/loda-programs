@@ -1,10 +1,14 @@
 ; A052573: (1+3^n)*n!.
 ; Submitted by Gunnar Hjern
 ; 2,4,20,168,1968,29280,525600,11027520,264579840,7142929920,214280640000,7071181286400,254561568307200,9927888709939200,416971151460864000,18763699200390144000,900657519773147136000
-; Formula: a(n) = A000142(n)*3^n+A000142(n)
 
 mov $1,3
 pow $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mul $1,$0
+mov $2,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+lpe
+mul $1,$2
+mov $0,$2
 add $0,$1

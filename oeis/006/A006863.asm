@@ -4,8 +4,14 @@
 
 lpb $0
   trn $0,1
-  seq $0,6953 ; a(n) = denominator of Bernoulli(2n)/(2n).
-  mul $0,2
+  mov $2,$0
+  mul $2,2
+  add $2,1
+  seq $2,350972 ; E.g.f. = tan(x).
+  seq $0,115490 ; Number of monic irreducible polynomials of degree 4 in GF(2^n)[x].
+  gcd $2,$0
+  div $0,$2
+  mul $0,8
   sub $0,1
   mov $1,$0
   mov $0,0

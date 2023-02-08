@@ -7,12 +7,28 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
+  mov $8,2
+  trn $8,$3
+  add $8,6
   mov $2,$1
   mov $5,$3
-  seq $5,10149 ; Continued fraction for sqrt(70).
+  gcd $5,$8
+  sub $5,3
+  mov $7,3
+  pow $7,$5
+  mov $5,$7
+  add $5,1
+  mod $5,10
+  sub $6,$3
+  sub $6,$5
+  gcd $6,2
+  mul $6,$5
   mov $1,$3
-  seq $1,40258 ; Continued fraction for sqrt(275).
-  add $1,$5
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  dif $1,4
+  mul $1,90
+  div $1,72
+  add $1,$6
   mul $1,$2
   add $1,$4
   add $3,1

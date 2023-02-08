@@ -10,7 +10,8 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,343911 ; a(n) = Omega(phi(n)), where Omega is the number of prime factors of n with multiplicity and phi is the Euler totient function.
+  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,2
   sub $0,$3
   add $1,1

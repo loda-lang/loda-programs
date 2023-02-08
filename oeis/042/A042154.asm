@@ -8,8 +8,26 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  mov $9,2
+  trn $9,$3
+  add $9,6
   mov $1,$3
-  seq $1,40577 ; Continued fraction for sqrt(602).
+  gcd $1,$9
+  sub $1,3
+  mov $8,3
+  pow $8,$1
+  mov $1,$8
+  add $1,1
+  mod $1,10
+  mul $1,2
+  mov $7,8
+  div $7,$1
+  mov $6,$7
+  cmp $6,0
+  mov $5,$7
+  add $5,$6
+  mul $1,3
+  div $1,$5
   mul $1,$2
   add $1,$4
   add $3,1

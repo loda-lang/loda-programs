@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,112929 ; Number of squarefree integers less than the n-th prime.
+  seq $0,40 ; The prime numbers.
+  sub $0,1
+  seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
   mov $2,$3
   mul $2,$0
   add $1,$2

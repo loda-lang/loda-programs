@@ -1,8 +1,10 @@
 ; A061019: Negate primes in factorization of n.
 ; 1,-2,-3,4,-5,6,-7,-8,9,10,-11,-12,-13,14,15,16,-17,-18,-19,-20,21,22,-23,24,25,26,-27,-28,-29,-30,-31,-32,33,34,35,36,-37,38,39,40,-41,-42,-43,-44,-45,46,-47,-48,49,-50,51,-52,-53,54,55,56,57,58,-59,60,-61,62,-63,64,65,-66,-67,-68,69,-70
-; Formula: a(n) = A008836(n)*(n+1)
+; Formula: a(n) = (n+1)*(-1)^A001222(n)
 
 mov $1,$0
-seq $1,8836 ; Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
+seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+mov $2,-1
+pow $2,$1
 add $0,1
-mul $0,$1
+mul $0,$2

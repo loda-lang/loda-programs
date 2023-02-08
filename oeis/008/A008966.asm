@@ -19,6 +19,5 @@ lpb $0
     add $2,1
   lpe
 lpe
-mov $0,$2
-bin $1,$0
+bin $1,$2
 mov $0,$1

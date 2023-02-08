@@ -7,7 +7,12 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,72548 ; a(n) = sigma(n) mod PrimePi(n).
+  add $3,1
+  mov $4,$3
+  seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+  seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $4,$3
+  mov $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

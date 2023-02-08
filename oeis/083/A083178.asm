@@ -4,7 +4,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,300402 ; Smallest integer i such that TREE(i) >= n.
+  min $2,4
+  div $2,2
+  add $2,1
   sub $0,$2
   add $1,$2
   mul $1,10

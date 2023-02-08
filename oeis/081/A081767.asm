@@ -7,10 +7,17 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,93526 ; Numerators of even raw moments in the distribution of line lengths for lines picked at random in the unit disk.
+  add $3,2
+  mov $6,$3
+  mov $7,1
+  add $7,$3
+  add $3,$7
+  mul $6,$3
+  bin $3,$7
   add $4,1
   add $5,1
+  gcd $6,$3
+  div $3,$6
   gcd $3,$5
   div $3,$4
   sub $0,$3

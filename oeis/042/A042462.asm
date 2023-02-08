@@ -11,7 +11,9 @@ lpb $0
   gcd $8,2
   mov $2,$1
   mov $7,$3
-  seq $7,10144 ; Continued fraction for sqrt(59).
+  seq $7,10126 ; Continued fraction for sqrt(22).
+  seq $7,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
+  sub $7,3
   mul $7,16
   div $7,20
   mul $7,$8

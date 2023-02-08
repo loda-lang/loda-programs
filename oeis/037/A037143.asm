@@ -8,7 +8,10 @@ lpb $2
   sub $2,1
   mov $3,$1
   div $3,2
-  seq $3,33273 ; Number of nonprime divisors of n.
+  mov $6,$3
+  seq $6,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,$6
   mov $4,$3
   add $5,1
   gcd $3,$5

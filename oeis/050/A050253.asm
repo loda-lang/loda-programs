@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,91561 ; Expansion of (1-2x-sqrt(1-4x+4x^2-4x^3))/(2x^2).
+  add $0,1
+  seq $0,152225 ; Number of Dyck paths of semilength n with no peaks at height 0 (mod 3) and no valleys at height 2 (mod 3).
   mul $1,$0
   mul $3,-1
   add $3,$1

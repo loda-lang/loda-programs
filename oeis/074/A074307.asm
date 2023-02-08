@@ -5,5 +5,16 @@
 mov $1,10
 lpb $1
   div $1,6
-  seq $0,74305 ; a(3m) = 2m, a(3m+1) = 4m+3, a(3m+2) = 4m+1.
+  add $0,1
+  mul $0,2
+  mov $2,$0
+  mul $0,2
+  mod $0,3
+  sub $2,1
+  div $2,3
+  dif $2,2
+  add $0,$2
+  add $2,$0
+  mov $0,$2
+  sub $0,1
 lpe

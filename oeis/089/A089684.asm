@@ -6,8 +6,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  seq $3,62356 ; a(n) = floor(n/phi(n)).
+  add $3,1
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -7,7 +7,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,171758 ; Binary expansion of numbers in A171757.
+  mul $3,2
+  sub $3,1
+  seq $3,123001 ; Binary numbers that start 10...
   mod $3,$1
   div $3,2
   min $3,1
