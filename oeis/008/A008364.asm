@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,165743 ; The greatest common divisor of n and 210.
+  add $3,1
+  gcd $3,210
   sub $3,1
   cmp $3,0
   sub $0,$3

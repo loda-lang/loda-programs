@@ -5,8 +5,14 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $5,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
+  max $5,0
   mov $3,$1
-  seq $3,134013 ; Expansion of q * phi(q) * psi(q^8) in powers of q where phi(), psi() are Ramanujan theta functions.
+  add $3,1
+  mod $3,4
+  mul $3,$5
   min $3,1
   sub $0,$3
   add $1,1

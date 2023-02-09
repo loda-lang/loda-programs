@@ -23,6 +23,7 @@ A001967: u-pile positions for the 4-Wythoff game with i=3.
 A001968: v-pile positions of the 4-Wythoff game with i=3.
 A002251: Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
 A002324: Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+A003136: Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
 A003153: a(n) = integer nearest n*(1+sqrt(2)).
@@ -179,6 +180,7 @@ A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form
 A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
 A080081: Beatty sequence for (3+sqrt(13))/2.
+A080463: Sum of the two numbers formed by alternate digits of n.
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
 A080755: a(n) = ceiling(n*(1+1/sqrt(2))).
 A081129: Differences of Beatty sequence for cube root of 3.
@@ -570,6 +572,7 @@ A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A340346: The largest divisor of n that is a term of A055932 (numbers divisible by all primes smaller than their largest prime factor).
 A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
 A341996: a(n) = 1 if there is at least one such prime p that p^p divides the arithmetic derivative of n, A003415(n); a(0) = a(1) = 0 by convention.
+A342023: a(n) = 1 if there is a prime p such that p^p divides n, otherwise 0.
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).

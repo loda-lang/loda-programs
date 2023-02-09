@@ -1,6 +1,6 @@
 ; A046052: Number of prime factors of Fermat number F(n).
 ; 1,1,1,1,1,2,2,2,2,3,4,5
-; Formula: a(n) = max((2*((n^2-1)/12))/3-1,0)+binomial(2,(2*((n^2-1)/12))/3)
+; Formula: a(n) = binomial(2,(2*((n^2-1)/12))/3)+max((2*((n^2-1)/12))/3-1,0)
 
 pow $0,2
 sub $0,1

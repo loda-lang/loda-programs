@@ -1,9 +1,26 @@
 ; A002473: 7-smooth numbers: positive numbers whose prime divisors are all <= 7.
 ; Submitted by AXm 77
 ; 1,2,3,4,5,6,7,8,9,10,12,14,15,16,18,20,21,24,25,27,28,30,32,35,36,40,42,45,48,49,50,54,56,60,63,64,70,72,75,80,81,84,90,96,98,100,105,108,112,120,125,126,128,135,140,144,147,150,160,162,168,175,180,189,192,196,200,210,216,224,225,240,243,245,250,252,256,270,280,288,294,300,315,320,324,336,343,350,360,375,378,384,392,400,405,420,432,441,448,450
-; Formula: a(n) = (-((A085127(n)-2)/2)+A085127(n)-3)/2+1
 
-seq $0,85127 ; Multiples of 4 which are members of A002473. Or multiples of 4 with the largest prime divisor < 10.
+mov $3,$0
+add $3,3
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  cmp $4,7
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+add $2,1
+mov $0,$2
+div $0,7
+mul $0,4
 mov $1,$0
 sub $0,2
 div $0,2

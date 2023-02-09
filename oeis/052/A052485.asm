@@ -7,7 +7,8 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,112526 ; Characteristic function for powerful numbers.
+  seq $3,73184 ; Number of cubefree divisors of n.
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

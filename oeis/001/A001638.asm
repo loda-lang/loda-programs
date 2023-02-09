@@ -10,8 +10,16 @@ add $2,$1
 mod $2,2
 sub $2,8
 sub $2,$1
-seq $0,1612 ; a(n) = a(n-1) + a(n-2) - 1 for n > 1, a(0)=3, a(1)=2.
-sub $0,18
+mov $3,2
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $5,$3
+  mov $3,$4
+  add $4,$5
+lpe
+mov $0,$3
+sub $0,17
 mul $2,2
 add $2,1
 sub $0,$2

@@ -8,7 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8622 ; Expansion of 1/((1-x^4)*(1-x^6)*(1-x^7)).
+  mul $2,2
+  seq $2,25911 ; Expansion of 1/((1-x^7)(1-x^8)(1-x^12)).
   add $1,$2
   mov $3,7
 lpe

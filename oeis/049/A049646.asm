@@ -10,7 +10,8 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,49644 ; T(n,n), array T given by A049639.
+  div $2,2
+  seq $2,49691 ; a(n)=T(n,n), array T as in A049687. Also a(n)=T(2n,2n), array T given by A049639.
   add $1,$2
 lpe
 mov $0,$1

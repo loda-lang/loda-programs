@@ -1,9 +1,17 @@
 ; A014063: Inverse of 54th cyclotomic polynomial.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A014036(n)*(-1)^n
+; Formula: a(n) = ((binomial(n+6,n)*binomial(n+11,11)+1)%3-1)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,14036 ; Inverse of 27th cyclotomic polynomial.
+mov $2,$0
+add $2,6
+bin $2,$0
+add $0,11
+bin $0,11
+mul $0,$2
+add $0,1
+mod $0,3
+sub $0,1
 mul $0,$1

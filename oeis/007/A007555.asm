@@ -12,7 +12,11 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,131178 ; Non-plane increasing unary binary (0-1-2) trees where the nodes of outdegree 1 come in 2 colors.
+  mov $5,2
+  pow $5,$0
+  add $0,1
+  seq $0,80795 ; Number of minimax trees on n nodes.
+  div $0,$5
   mul $1,$0
   mul $3,-1
   add $3,$1

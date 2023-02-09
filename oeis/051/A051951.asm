@@ -8,7 +8,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,341062 ; Sequence whose partial sums give A000005.
+  trn $0,1
+  seq $0,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
   mov $2,$3
   mul $2,$0
   add $1,$2
