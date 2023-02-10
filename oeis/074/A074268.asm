@@ -7,9 +7,18 @@ add $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,72230 ; a(n) = n! (mod n^2), that is, n factorial modulo n^2.
-  mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $3,1
+  mov $7,$1
+  mul $7,$3
+  add $7,2
+  mov $6,1
+  add $6,$1
+  bin $6,$7
+  mul $6,2
+  mov $3,$6
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

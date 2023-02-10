@@ -8,7 +8,12 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,182736 ; Sum of parts in all partitions of 2n that do not contain 1 as a part.
+  mov $6,$0
+  mul $0,2
+  trn $0,1
+  seq $0,117298 ; Number of partitions of n with unique smallest part and unique largest part.
+  mul $0,$6
+  mul $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

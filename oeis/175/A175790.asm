@@ -4,5 +4,22 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,177825 ; Expansion of 1/((1 + x^3 - x^4)*(1 - x)).
+add $0,2
+lpb $0
+  sub $0,1
+  add $5,1
+  mov $8,$7
+  add $3,1
+  mov $7,$5
+  sub $2,$4
+  mov $5,$3
+  mov $3,$2
+  mov $2,$4
+  sub $2,1
+  mov $4,$7
+  add $8,$5
+  sub $8,1
+  add $6,$8
+lpe
+mov $0,$6
 mul $0,$1

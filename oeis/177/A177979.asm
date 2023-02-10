@@ -4,5 +4,6 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,2314 ; Minimal integer square root of -1 modulo p, where p is the n-th prime of the form 4k+1.
+seq $0,152680 ; a(n) = 4*A005098(n) = A002144(n) - 1.
+seq $0,70669 ; Smallest m in range 2..n-1 such that m^4 == 1 mod n, or 1 if no such number exists.
 sub $0,$1

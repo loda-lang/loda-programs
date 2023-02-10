@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,2326 ; Multiplicative order of 2 mod 2n+1.
+  mul $3,2
+  mov $6,$3
+  seq $6,277129 ; Largest m < n such that 2^m == 2^n (mod n).
+  sub $3,$6
   max $5,$3
   div $3,$5
   sub $0,$3

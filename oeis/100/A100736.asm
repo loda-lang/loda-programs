@@ -1,7 +1,10 @@
 ; A100736: Inverse modulo 2 binomial transform of 3^n.
 ; Submitted by Jamie Morken(w2)
 ; 1,2,8,16,80,160,640,1280,6560,13120,52480,104960,524800,1049600,4198400,8396800,43046720,86093440,344373760,688747520,3443737600,6887475200,27549900800,55099801600,282386483200,564772966400
-; Formula: a(n) = A091732(A024023(n))
+; Formula: a(n) = A091732(3^n-1)
 
-seq $0,24023 ; a(n) = 3^n - 1.
+mov $1,3
+pow $1,$0
+sub $1,1
+mov $0,$1
 seq $0,91732 ; Iphi(n): infinitary analog of Euler's phi function.

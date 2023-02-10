@@ -1,8 +1,16 @@
 ; A110388: a(n) = F(n)*F(n+1) mod 9, where F(n) = n-th Fibonacci number.
 ; Submitted by PDW
 ; 1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6,4,5,3,3,7,8,0,0,1,2,6,6
-; Formula: a(n) = A001654(n+1)%9
+; Formula: a(n) = (c(n)*b(n))%9, b(n) = c(n-1), b(1) = 1, b(0) = 1, c(n) = c(n-1)+c(n-2), c(1) = 2, c(0) = 1
 
+mov $3,1
 add $0,1
-seq $0,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+lpb $0
+  sub $0,1
+  mov $2,$3
+  add $3,$1
+  mov $1,$2
+lpe
+mul $1,$3
+mov $0,$1
 mod $0,9

@@ -1,9 +1,11 @@
 ; A094815: (prime(prime(n)))^n.
 ; Submitted by Christian Krause
 ; 3,25,1331,83521,28629151,4750104241,2488651484819,406067677556641,186940255267540403,236736367459211723401,138624799340320978519423,224282727500720205065439601,193682063179592517160024627139
-; Formula: a(n) = A006450(n)^(n+1)
+; Formula: a(n) = A000040(A000040(n)-1)^(n+1)
 
 mov $1,$0
 add $1,1
-seq $0,6450 ; Prime-indexed primes: primes with prime subscripts.
+seq $0,40 ; The prime numbers.
+sub $0,1
+seq $0,40 ; The prime numbers.
 pow $0,$1

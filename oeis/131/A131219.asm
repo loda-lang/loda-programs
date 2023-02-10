@@ -1,4 +1,4 @@
-; A131219: Algorithm for a triangular sequence of the product of a modulo 2 Pascal's triangle with an Hadamard-Silvester Gray code binary triangular sequence.
+; A131219: a(n,m) = (binomial(n,m) mod 2)*Gray_Code(n,m).
 ; Submitted by stoneageman
 ; 1,1,1,1,0,1,1,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0
 

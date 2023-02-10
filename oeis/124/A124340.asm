@@ -10,8 +10,12 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,35185 ; Number of divisors of n == 1 or 7 (mod 8) minus number of divisors of n == 3 or 5 (mod 8).
-  add $3,$0
+  mov $5,$0
+  seq $5,259829 ; a(n) = (-1)^floor(n/2) * A035185(n).
+  mov $4,$0
+  cmp $4,$5
+  gcd $5,$4
+  add $3,$5
 lpe
 mov $0,$3
 add $0,1

@@ -4,7 +4,12 @@
 
 lpb $0
   mov $2,$0
-  seq $2,291268 ; The arithmetic function v_3(n,2).
+  add $2,2
+  mov $3,3
+  gcd $3,$2
+  div $2,2
+  div $2,$3
+  mul $2,$3
   sub $0,$2
   sub $0,1
   add $1,1

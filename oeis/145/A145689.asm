@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,259036 ; Smallest divisor of n^2+1 >= sqrt(n^2+1).
+  pow $3,2
+  seq $3,33677 ; Smallest divisor of n >= sqrt(n).
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

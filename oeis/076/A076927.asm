@@ -1,10 +1,12 @@
 ; A076927: a(n) = A076926(n)/n.
 ; Submitted by Jamie Morken(w1)
 ; 2,3,10,105,462,5005,72930,4849845,74364290,646969323,18232771830,1236789689135,23403866425170,934482952262145,40992652172566094,16294579238595022365,113103550009071331710,19548063559901161830545
-; Formula: a(n) = A002110(n+1)/gcd(n+1,A002110(n+1))
+; Formula: a(n) = (A102476(n+2)/4)/gcd(n+1,A102476(n+2)/4)
 
 add $0,1
 mov $1,$0
-seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+add $0,1
+seq $0,102476 ; Least modulus with 2^n square roots of 1.
+div $0,4
 gcd $1,$0
 div $0,$1

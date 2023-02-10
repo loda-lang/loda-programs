@@ -7,8 +7,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  seq $5,15919 ; Positive integers k such that 2^k == 2 (mod k).
   mov $3,$1
-  seq $3,242424 ; Bulgarian solitaire operation on partition list A112798: a(1) = 1, a(n) = A000040(A001222(n)) * A064989(n).
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mul $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

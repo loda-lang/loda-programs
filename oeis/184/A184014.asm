@@ -7,7 +7,11 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,184015 ; n-1+ceiling(n^2/e); complement of A184014.
+  add $3,1
+  mov $4,$3
+  mul $4,$3
+  seq $4,32634 ; a(n) = floor(n/e).
+  add $3,$4
   sub $3,1
   add $0,1
   add $1,1

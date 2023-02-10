@@ -12,7 +12,9 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,138068 ; Triangle read by rows: row n lists the digits of A135634(n), the palindromic number formed from the reflected decimal expansion of e.
+  seq $0,3983 ; Array read by antidiagonals with T(n,k) = min(n,k).
+  sub $0,1
+  seq $0,1113 ; Decimal expansion of e.
   add $1,$0
   mul $1,10
 lpe

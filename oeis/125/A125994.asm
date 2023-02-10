@@ -5,7 +5,18 @@
 mov $2,$0
 mod $2,4
 div $0,4
-seq $0,145850 ; a(n) = A145818(2n-1).
+mov $3,$0
+mov $5,1
+lpb $0
+  mov $4,$0
+  mul $4,$5
+  div $0,2
+  add $3,$4
+  mul $5,4
+lpe
+mov $0,$3
+mul $0,8
+add $0,1
 add $1,$0
 mul $1,4
 add $1,$2

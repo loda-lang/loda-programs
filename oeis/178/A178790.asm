@@ -4,5 +4,19 @@
 
 mov $1,$0
 add $1,1
-seq $0,189766 ; Trace of the inverse of the n-th order Hilbert matrix.
+mov $3,$0
+add $3,1
+mov $4,$0
+bin $4,2
+add $4,$0
+add $4,$3
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  sub $0,1
+  seq $0,348419 ; Triangular table read by rows: T(n,k) is the k-th entry of the main diagonal of the inverse Hilbert matrix of order n.
+  add $2,$0
+lpe
+mov $0,$2
 dif $0,$1

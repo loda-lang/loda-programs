@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,100484 ; The primes doubled.
+  seq $2,40 ; The prime numbers.
+  mul $2,2
   sub $0,1
   add $1,$2
   mul $1,10

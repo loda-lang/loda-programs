@@ -1,10 +1,27 @@
 ; A151251: Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0) and consisting of n steps taken from {(-1, -1, 0), (0, 0, 1), (0, 1, 0), (1, 1, 0), (1, 1, 1)}
 ; Submitted by GolfSierra
 ; 1,4,18,84,400,1928,9368,45776,224608,1105536,5454784,26966272,133518464,661936512,3285120384,16318182656,81118238208,403499984896,2008203312128,9999508994048,49811499909120,248220669087744,1237327213948928,6169546670055424,30770185224601600,153498159158099968
-; Formula: a(n) = (5^n+A151090(n))/2
 
 mov $1,5
 pow $1,$0
-seq $0,151090 ; Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0) and consisting of n steps taken from {(-1, -1, -1), (-1, -1, 0), (0, 0, 1), (0, 1, 0), (1, 1, 1)}.
+mul $0,2
+mov $2,1
+mov $3,$0
+mov $4,1
+mov $7,1
+lpb $0
+  sub $0,2
+  add $2,$6
+  add $5,1
+  mov $6,$4
+  add $6,$4
+  mov $4,$2
+  mul $2,$3
+  div $2,$5
+  mov $3,$0
+  add $4,$2
+  add $7,$2
+lpe
+mov $0,$7
 add $0,$1
 div $0,2

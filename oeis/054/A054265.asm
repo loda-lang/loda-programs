@@ -1,16 +1,16 @@
 ; A054265: Sum of composite numbers between successive primes.
-; Submitted by Stony666
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,4,6,27,12,45,18,63,130,30,170,117,42,135,250,280,60,320,207,72,380,243,430,651,297,102,315,108,333,1560,387,670,138,1296,150,770,800,495,850,880,180,1674,192,585,198,2255,2387,675,228,693,1180,240,2214,1270,1300,1330,270,1370,837,282,2592,3900,927,312,945,4212,1670,3078,348,1053,1780,2541,1850,1880,1143,1930,2751,1197,2835,3726,420,3834,432,2180,1323,2230,3171,1377,462,1395,5203,3381,1467,3465,1503,2530,5665,522,9044,2720
 
-seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
+seq $1,40 ; The prime numbers.
 mov $2,$0
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $4,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,$1
+  add $4,1
   add $1,1
   add $2,$3
 lpe

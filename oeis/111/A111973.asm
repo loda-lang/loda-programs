@@ -7,6 +7,21 @@ mov $1,-1
 pow $1,$0
 add $1,3
 dif $0,2
-seq $0,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
+mov $2,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$2
+  add $0,$4
+  trn $0,1
+  seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
+  mov $3,$4
+  mul $3,$0
+  add $5,$3
+lpe
+min $2,1
+mul $2,$0
+mov $0,$5
+sub $0,$2
 mul $0,$1
 div $0,16

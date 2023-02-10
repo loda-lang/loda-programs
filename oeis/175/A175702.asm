@@ -13,7 +13,11 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,181432 ; Symmetric square array T(n,k) read by antidiagonals. T(n,k)=A008836(n)*A008836(k).
-  add $1,$0
+  seq $0,89913 ; Table T(n,k) = lcm(n,k)/gcd(n,k) = n*k/gcd(n,k)^2 read by antidiagonals (n >= 1, k >= 1).
+  sub $0,1
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $4,-1
+  pow $4,$0
+  add $1,$4
 lpe
 mov $0,$1

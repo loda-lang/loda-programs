@@ -8,7 +8,10 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,68211 ; Largest prime factor of Euler totient function phi(n).
+  add $3,2
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $3,1
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $3,2
   sub $3,1
   cmp $3,5

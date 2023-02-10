@@ -4,5 +4,23 @@
 
 mov $1,$0
 add $1,1
-seq $0,121681 ; a(n) = A121680(n)/(n+1) = [x^n] (1 + x*(1+x)^(n+1) )^(n+1) / (n+1).
+mov $4,$0
+mov $6,$0
+lpb $6
+  sub $6,1
+  mov $0,$4
+  sub $0,$6
+  mov $2,$4
+  bin $2,$0
+  mov $3,$4
+  add $3,1
+  mul $3,$6
+  bin $3,$0
+  add $0,1
+  mul $2,$3
+  div $2,$0
+  add $5,$2
+lpe
+mov $0,$5
+add $0,1
 mul $0,$1

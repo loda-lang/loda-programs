@@ -13,7 +13,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,272214 ; Square array read by antidiagonals upwards in which T(n,k) is the product of the n-th prime and the sum of the divisors of k, n >= 1, k >= 1.
+  mov $4,$0
+  seq $4,104887 ; Triangle T(n,k) = (n-k+1)-th prime, read by rows.
+  seq $0,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1

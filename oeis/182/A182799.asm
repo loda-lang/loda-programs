@@ -6,8 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,182800 ; Positions of composites in A167171.
-  sub $3,1
+  seq $3,6881 ; Squarefree semiprimes: Numbers that are the product of two distinct primes.
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
+  add $3,$1
   add $0,1
   add $1,1
   add $2,$3

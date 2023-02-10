@@ -8,6 +8,22 @@ gcd $0,2
 mul $0,2
 div $1,2
 add $1,1
-seq $1,5773 ; Number of directed animals of size n (or directed n-ominoes in standard position).
+mov $5,$1
+add $1,2
+lpb $1
+  mov $3,$1
+  add $3,$5
+  sub $1,2
+  div $3,2
+  bin $3,$1
+  mov $4,$5
+  sub $4,1
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  add $6,$4
+lpe
+mov $1,$6
+div $1,2
 mul $0,$1
 div $0,2

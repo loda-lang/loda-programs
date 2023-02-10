@@ -4,7 +4,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,62821 ; Number of divisors of totient of n.
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $2,1
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,$2
   add $1,2
 lpe

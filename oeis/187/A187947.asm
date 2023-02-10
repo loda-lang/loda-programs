@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,187946 ; [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=5, [ ]=floor.
+  seq $3,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+  mov $5,-4
+  add $5,$3
+  add $5,$3
+  max $5,$3
+  sub $5,$3
+  mov $3,$5
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -1,11 +1,28 @@
 ; A108546: Lexicographically earliest permutation of primes such that for n>1 forms 4*k+1 and 4*k+3 alternate.
 ; Submitted by Jon Maiga
 ; 2,3,5,7,13,11,17,19,29,23,37,31,41,43,53,47,61,59,73,67,89,71,97,79,101,83,109,103,113,107,137,127,149,131,157,139,173,151,181,163,193,167,197,179,229,191,233,199,241,211,257,223,269,227,277,239,281,251,293,263,313,271,317,283,337,307,349,311,353,331,373,347,389,359,397,367,401,379,409,383,421,419,433,431,449,439,457,443,461,463,509,467,521,479,541,487,557,491,569,499
-; Formula: a(n) = min(n,1)+A111745(max(n-1,0))-1
 
 mov $1,$0
 min $1,1
 trn $0,1
-seq $0,111745 ; a(2k-1) = k-th prime congruent to 3 mod 4, a(2k) = k-th prime congruent to 1 mod 4.
-sub $0,1
+mov $2,1
+sub $2,$0
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  mul $4,2
+  max $4,0
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+mul $0,2
 add $0,$1

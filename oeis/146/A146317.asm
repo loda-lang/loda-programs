@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,158038 ; Difference between n-th prime and next cube.
+  seq $3,40 ; The prime numbers.
+  seq $3,333884 ; Difference between smallest cube > n and n.
   mov $5,$3
   mul $3,2
   sub $3,1

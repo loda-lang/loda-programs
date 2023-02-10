@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,61501 ; a(1) = 1, a(n+1) = (a(n) + n) mod 10.
+  add $0,11
+  bin $0,2
+  sub $0,54
+  mod $0,10
   mov $2,$3
   mul $2,$0
   add $1,$2

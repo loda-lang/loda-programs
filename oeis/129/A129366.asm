@@ -1,11 +1,23 @@
 ; A129366: a(n) = Sum_{k=0..floor(n/2)} C(n-k), where C(n) = A000108(n).
 ; Submitted by Jon Maiga
 ; 1,1,3,7,21,61,193,617,2047,6895,23691,82435,290447,1033215,3707655,13402071,48759741,178403101,656041801,2423300129,8987420549,33453670773,124936234413,467995789277,1757899936601
-; Formula: a(n) = 2*b(n)+1, b(n) = b(n-1)+A000150(n), b(0) = 0
 
 lpb $0
+  mov $3,$0
+  trn $3,1
+  mov $4,$3
+  dif $4,2
+  bin $3,$4
+  add $4,1
+  div $3,$4
+  mov $5,$0
+  add $5,1
   mov $2,$0
-  seq $2,150 ; Number of dissections of an n-gon, rooted at an exterior edge, asymmetric with respect to that edge.
+  mul $2,2
+  bin $2,$0
+  div $2,$5
+  sub $2,$3
+  div $2,2
   sub $0,1
   add $1,$2
 lpe

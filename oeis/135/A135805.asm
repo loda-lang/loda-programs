@@ -4,7 +4,23 @@
 
 mov $1,$0
 add $1,3
-seq $0,134515 ; Third column (k=2) of triangle A134832 (circular succession numbers).
+add $0,1
+mov $2,1
+add $2,$0
+mov $4,$0
+lpb $4
+  cmp $5,0
+  add $6,$5
+  mul $2,$4
+  div $2,$6
+  mul $3,-1
+  add $3,$2
+  mul $2,$6
+  sub $4,1
+  div $5,$6
+lpe
+mov $0,$3
+div $0,2
 mul $0,$1
 add $1,1
 mul $0,$1

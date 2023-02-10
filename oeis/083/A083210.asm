@@ -5,8 +5,26 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $8,1
+  mov $6,$1
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $6,$8
+  add $6,1
+  mod $6,2
+  seq $5,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $5,1
+  mul $6,$5
+  sub $7,$6
+  mov $5,$7
+  sub $5,4
+  div $5,2
+  add $5,2
+  mul $5,2
   mov $3,$1
-  seq $3,103977 ; Let d_1 ... d_k be the divisors of n. Then a(n) = min_{ e_1 = +-1, ... e_k = +-1 } | Sum_i e_i d_i |.
+  seq $3,33880 ; Abundance of n, or (sum of divisors of n) - 2n.
+  sub $3,1
+  gcd $3,$5
+  sub $3,1
   min $3,1
   sub $0,$3
   add $1,1

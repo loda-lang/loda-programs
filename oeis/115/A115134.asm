@@ -1,8 +1,29 @@
 ; A115134: Third diagonal sequence of triangle A115127.
 ; Submitted by Fardringle
 ; 10,30,95,311,1043,3564,12363,43420,154088,551684,1990326,7228417,26405725,96961560,357688755,1324982160,4926502020,18379785300,68783559810,258141170430,971310800694,3663524817768,13848466284350
-; Formula: a(n) = A276986(A153894(n))+1
 
-seq $0,153894 ; a(n) = 5*2^n - 1.
-seq $0,276986 ; Numbers n for which there is a permutation p of (1,2,3,...,n) such that k+p(k) is a Catalan number for 1<=k<=n.
+mov $1,2
+pow $1,$0
+mul $1,5
+sub $1,1
+mov $3,2
+mov $0,$1
+add $0,1
+lpb $0
+  mov $2,$0
+  div $2,2
+  sub $0,$2
+  bin $2,$0
+  mov $4,$5
+  add $4,2
+  bin $4,$3
+  mul $4,6
+  add $3,1
+  mul $4,$2
+  div $4,$3
+  add $5,2
+  add $6,$4
+lpe
+mov $0,$6
+div $0,2
 add $0,1

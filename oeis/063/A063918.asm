@@ -4,9 +4,14 @@
 mov $1,$0
 mov $2,$0
 cmp $2,0
-seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+lpb $0
+  mov $3,$0
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$3
+lpe
 add $1,1
-cmp $1,$0
-mul $1,$0
+cmp $1,$3
+mul $1,$3
+mov $0,$3
 sub $0,$1
 add $0,$2

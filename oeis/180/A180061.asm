@@ -7,8 +7,16 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,180060 ; 2^(2^n mod n) mod n.
+  mov $5,$1
+  add $5,1
+  mov $6,2
+  pow $6,$5
+  mov $3,$6
+  mod $3,$5
+  mov $6,2
+  pow $6,$3
+  mod $6,$5
+  mov $3,$6
   cmp $3,4
   sub $0,$3
   add $1,1

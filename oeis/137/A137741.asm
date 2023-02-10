@@ -7,7 +7,22 @@ lpb $2
   mov $2,0
   mov $1,$0
   trn $1,1
-  seq $1,188838 ; Number of n X 4 binary arrays without the pattern 0 1 diagonally or vertically.
+  mov $5,$1
+  cmp $5,0
+  mov $4,$1
+  add $4,$5
+  mov $6,$1
+  seq $1,34858 ; a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15.
+  add $1,$4
+  add $3,$1
+  add $3,8
+  mov $7,$6
+  mul $7,7
+  mov $8,$6
+  mul $8,$6
+  add $3,$7
+  add $3,$8
+  mov $1,$3
 lpe
 sub $1,$0
 mov $0,$1

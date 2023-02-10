@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,195507 ; Smallest integer m greater than n such that m (mod k) == n (mod k) for k = 1..n-1.
+  mov $6,$0
+  seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
+  add $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

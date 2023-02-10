@@ -9,8 +9,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,68639 ; a(0) = 0, a(n) = a(n-1) + (-1)^p(n) for n >= 1, where p(n) = highest power of 2 dividing n.
-  add $1,$2
+  mov $4,$2
+  seq $4,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
+  sub $2,$4
+  sub $4,$2
+  add $1,$4
   mov $3,$0
   add $3,1
 lpe

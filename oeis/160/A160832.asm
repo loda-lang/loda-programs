@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,143377 ; Expansion of q^(-1/6) * eta(q)^2 * eta(q^4) / eta(q^2) in powers of q.
+  mov $5,-1
+  pow $5,$2
+  seq $2,143380 ; Expansion of q^(-1/6) * eta(q^2)^5 / (eta(q)^2 * eta(q^4)) in powers of q.
+  mul $2,$5
   add $4,1
   add $1,$2
   mov $3,$4

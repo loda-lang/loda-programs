@@ -6,9 +6,23 @@ mov $1,1
 mov $2,$0
 add $2,3
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,5044 ; Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
+  sub $3,1
+  mov $5,$1
+  div $5,2
+  add $5,2
+  pow $5,2
+  add $5,2
+  add $5,$1
+  sub $6,$3
+  add $1,1
+  gcd $3,2
+  pow $3,3
+  add $3,6
+  div $3,6
+  mul $3,$6
+  add $3,$5
+  div $3,12
   sub $0,$3
   mov $4,$0
   max $4,0

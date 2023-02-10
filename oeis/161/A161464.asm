@@ -8,7 +8,10 @@ add $2,1
 lpb $2
   sub $2,1
   mov $0,$3
-  seq $0,7605 ; Sum of digits of n-th prime.
+  mul $0,2
+  max $0,1
+  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $1,$0
   add $3,1
 lpe

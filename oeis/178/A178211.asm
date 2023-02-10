@@ -1,10 +1,22 @@
 ; A178211: prime(n)^2 mod n.
 ; 0,1,1,1,1,1,2,1,7,1,4,1,4,1,4,9,13,13,5,1,16,15,12,1,9,9,25,25,20,19,9,9,25,9,11,13,7,7,4,9,20,1,17,25,19,41,12,1,30,41,25,25,46,37,49,9,28,13,29,1,57,41,1,17,14,37,16,9,4,1,4,1,4,9,16
-; Formula: a(n) = (A173919(2*n)^2)%(n+1)
 
 mov $1,$0
 add $1,1
 mul $0,2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+sub $0,2
+mov $2,4
+mov $3,$0
+pow $3,4
+lpb $3
+  max $4,$2
+  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $4,2
+  sub $0,$4
+  add $2,2
+  sub $3,$0
+lpe
+add $0,$2
+sub $0,1
 pow $0,2
 mod $0,$1

@@ -9,7 +9,13 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,1
-  seq $0,293688 ; Partial sums of A002251.
+  mov $6,$0
+  seq $6,1961 ; A Beatty sequence: floor(n * (sqrt(5) - 1)).
+  div $6,2
+  add $0,1
+  mul $0,2
+  mul $0,$6
+  div $0,2
   mov $3,$4
   mul $3,$0
   add $5,$3

@@ -7,7 +7,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,80398 ; Largest squarefree number dividing sum of divisors of n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   mov $4,$3
   add $5,1
   gcd $3,$5

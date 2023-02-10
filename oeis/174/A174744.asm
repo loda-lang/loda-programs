@@ -1,6 +1,25 @@
 ; A174744: (2^p-1)^2 where p is prime.
 ; 9,49,961,16129,4190209,67092481,17179607041,274876858369,70368727400449,288230375077969921,4611686014132420609,18889465931203702947841,4835703278454118652313601,77371252455318674995150849,19807040628565802923409276929
-; Formula: a(n) = A001348(n)^2
 
-seq $0,1348 ; Mersenne numbers: 2^p - 1, where p is prime.
+mov $2,$0
+mul $2,2
+max $2,1
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  max $5,$3
+  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $5,2
+  sub $2,$5
+  add $3,2
+  sub $4,$2
+lpe
+add $2,$3
+sub $2,1
+mov $1,2
+pow $1,$2
+mov $0,$1
+sub $0,1
 pow $0,2

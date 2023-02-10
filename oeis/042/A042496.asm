@@ -9,9 +9,21 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40204 ; Continued fraction for sqrt(219).
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $5,$1
+  div $5,5
+  mul $5,12
+  add $1,$5
+  sub $1,2
+  dif $1,4
+  add $1,3
+  seq $1,36693 ; Number of Gaussian integers z = a + bi satisfying n-1 < |z| <= n.
+  add $1,4
+  div $1,8
   mul $1,22
-  sub $1,340
+  sub $1,384
   div $1,11
   add $1,29
   mul $1,$2

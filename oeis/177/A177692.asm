@@ -5,7 +5,8 @@
 mov $2,$0
 lpb $2
   mov $3,$1
-  seq $3,75526 ; a(n) = A008578(n+2) - A008578(n+1).
+  trn $3,1
+  seq $3,1223 ; Prime gaps: differences between consecutive primes.
   sub $0,$3
   add $1,2
   mov $4,$0

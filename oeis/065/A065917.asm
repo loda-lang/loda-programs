@@ -4,5 +4,11 @@
 
 mul $0,2
 add $0,1
-seq $0,60735 ; a(1)=1, a(2)=2; thereafter, a(n) is the smallest number m not yet in the sequence such that every prime that divides a(n-1) also divides m.
+lpb $0
+  sub $0,1
+  add $1,1
+  seq $1,343045 ; a(0) = 0 and for any n > 0, a(n) = A343044(a(n-1), n).
+lpe
+mov $0,$1
+add $0,1
 div $0,2

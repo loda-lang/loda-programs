@@ -9,8 +9,7 @@ lpb $3
   mov $0,$2
   add $0,$3
   max $0,0
-  seq $0,88707 ; Semiprimes + 1.
-  sub $0,1
+  seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
   add $1,$4
   mov $4,$0
 lpe

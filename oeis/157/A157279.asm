@@ -4,5 +4,13 @@
 
 add $0,1
 mov $1,$0
-seq $0,214080 ; a(n) = (floor(sqrt(n)))!
+mov $2,1
+lpb $0
+  add $3,1
+  sub $0,$3
+  sub $0,$3
+  trn $0,1
+  mul $2,$3
+lpe
+mov $0,$2
 mod $0,$1

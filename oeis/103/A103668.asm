@@ -10,7 +10,8 @@ lpb $3
   add $0,$3
   trn $0,1
   add $0,1
-  seq $0,40976 ; a(n) = prime(n) - 2.
+  seq $0,40 ; The prime numbers.
+  sub $0,2
   seq $0,72000 ; Number of semiprimes (A001358) <= n.
   mov $2,$3
   mul $2,$0

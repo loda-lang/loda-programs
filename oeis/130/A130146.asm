@@ -5,8 +5,11 @@
 mov $2,$0
 lpb $2
   add $1,2
-  mov $3,$1
-  seq $3,186704 ; The minimum number of distinct distances determined by n points in the Euclidean plane.
+  mov $3,10
+  sub $3,$1
+  div $3,-2
+  add $3,5
+  mod $3,10
   sub $0,$3
   mov $4,$0
   max $4,0

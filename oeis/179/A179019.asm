@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,109678 ; Sequence and first differences include all square numbers exactly once.
+  add $3,2
+  mul $3,2
+  bin $3,3
+  div $3,4
   mul $3,6
   sub $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

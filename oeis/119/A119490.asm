@@ -6,7 +6,8 @@ mov $1,1
 mov $2,$0
 lpb $2
   trn $2,1
-  seq $2,49614 ; n! divided by its squarefree kernel.
+  seq $2,33312 ; a(n) = n! - 1.
+  seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   add $2,1
   sub $0,1
   mul $1,$2

@@ -7,7 +7,9 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$6
-  seq $3,101605 ; a(n) = 1 if n is a product of exactly 3 (not necessarily distinct) primes, otherwise 0.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $3,2
+  cmp $3,1
   add $7,6
   sub $0,$3
   mov $4,$0

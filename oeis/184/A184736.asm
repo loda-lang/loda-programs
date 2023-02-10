@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  add $4,1
+  seq $4,63957 ; Numbers not of the form round(m*sqrt(2)) for any integer m, i.e., complement of A022846.
   mov $3,$1
-  seq $3,184737 ; floor(n*s+h-h*s), where s=-1+2^(3/2), h=-1/2; complement of A184736.
+  add $3,$4
+  div $3,2
   sub $3,1
   add $0,1
   add $1,1

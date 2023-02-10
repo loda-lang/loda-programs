@@ -7,7 +7,17 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,152083 ; Number of occurrences of "I" in all Roman numerals of numbers from 1 to n
+  mul $3,6
+  add $3,8
+  add $3,$1
+  div $3,5
+  mov $6,$1
+  mul $6,2
+  add $6,2
+  mod $6,10
+  div $6,5
+  mul $6,2
+  add $3,$6
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

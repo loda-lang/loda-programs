@@ -7,8 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,134860 ; Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.
+  mov $6,$1
+  add $6,1
+  seq $6,188012 ; Positions of 0 in A188011; complement of A188013.
+  mov $3,$6
+  sub $3,4
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

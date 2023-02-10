@@ -1,7 +1,9 @@
 ; A107796: First differences of indices of 3's in A305389.
 ; Submitted by shiva
 ; 2,3,1,3,2,3,2,3,1,3,2,3,3,2,3,1,3,2,3,1,3,2,3,3,2,3,1,3,2,3,2,3,1,3,2,3,3,2,3,1,3,2,3,2,3,1,3,2,3,3,2,3,1,3,2,3,1,3,2,3,3,2,3,1,3,2,3,2,3,1,3,2,3,3,2,3,1,3,2,3,3,2,3,1,3,2,3,2,3,1,3,2,3,3,2,3,1,3,2,3
-; Formula: a(n) = A107793(n)-2
+; Formula: a(n) = A080843(n+52)/(-1)+3
 
-seq $0,107793 ; Differences between successive indices of 1's in the ternary tribonacci sequence A305390.
-sub $0,2
+add $0,52
+seq $0,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n >= 0, S(n+3) = S(n+2) S(n+1) S(n).
+div $0,-1
+add $0,3

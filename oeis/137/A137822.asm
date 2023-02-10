@@ -6,10 +6,17 @@ mov $4,2
 lpb $4
   sub $4,1
   add $0,$4
-  sub $0,1
   mov $5,$0
-  max $5,0
-  seq $5,137821 ; Numbers k such that Sum_{j=1..2k} Catalan(j) == 0 (mod 3).
+  mov $7,$0
+  sub $0,1
+  div $5,4
+  seq $5,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+  mul $5,2
+  add $5,$7
+  mul $5,9
+  div $5,6
+  mul $5,6
+  div $5,4
   mov $3,$4
   mul $3,$5
   add $1,$3

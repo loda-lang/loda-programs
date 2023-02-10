@@ -7,9 +7,14 @@ mov $2,$0
 add $2,8
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,34836 ; Number of ways to write n as n = x*y*z with 1 <= x <= y <= z.
-  sub $3,4
+  mov $5,$1
+  seq $5,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+  div $5,3
+  sub $5,1
+  seq $3,46951 ; a(n) is the number of squares dividing n.
+  add $3,$5
+  div $3,2
+  sub $3,3
   cmp $3,2
   sub $0,$3
   add $1,1

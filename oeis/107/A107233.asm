@@ -1,9 +1,17 @@
 ; A107233: An inverse Chebyshev transform of n^3.
 ; Submitted by Christian Krause
 ; 0,1,8,30,96,270,720,1820,4480,10710,25200,58212,133056,300300,672672,1492920,3294720,7220070,15752880,34179860,73902400,159074916,341429088,730122120,1557593856,3312591100,7030805600,14883258600,31451414400
-; Formula: a(n) = n*A152548(max(n-1,0))
+; Formula: a(n) = n*binomial(n-1,n/2)*(2*(n/2)+n)
 
 mov $1,$0
-trn $0,1
-seq $0,152548 ; Sum of squared terms in rows of triangle A152547: a(n) = Sum_{k=0..C(n,[n/2])-1} A152547(n,k)^2.
+sub $0,1
+mov $2,$0
+mov $3,1
+add $3,$0
+mov $0,$3
+div $0,2
+bin $2,$0
+add $3,$0
+add $0,$3
+mul $0,$2
 mul $0,$1

@@ -1,15 +1,18 @@
 ; A040670: Continued fraction for sqrt(697).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 26,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2
-; Formula: a(n) = 2*b(n), b(n) = A010225(2*n), b(1) = 1, b(0) = 13
+; Formula: a(n) = 18*(A010125(2*n)/3)+2*A010125(2*n), a(1) = 2, a(0) = 26
 
 add $0,1
 lpb $0
   sub $0,1
   mov $1,$3
-  seq $1,10225 ; Continued fraction for sqrt(183).
+  seq $1,10125 ; Continued fraction for sqrt(21).
   mov $2,$1
+  div $1,3
+  mul $1,18
+  add $1,$2
+  add $1,$2
   add $3,2
 lpe
-mov $0,$2
-mul $0,2
+mov $0,$1

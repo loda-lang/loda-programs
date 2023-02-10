@@ -8,4 +8,12 @@ lpb $0
 lpe
 mul $0,-1
 add $0,$1
-seq $0,34008 ; a(n) = floor(2^|n-1|/2). Or: 1, 0, followed by powers of 2.
+mov $3,2
+add $3,$0
+mod $3,3
+add $3,1
+mov $2,2
+pow $2,$0
+add $2,$3
+div $2,4
+mov $0,$2

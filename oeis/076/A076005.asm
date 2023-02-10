@@ -11,7 +11,16 @@ lpb $3
   sub $3,1
   mov $0,$4
   sub $0,$3
-  seq $0,453 ; Stirling numbers of the second kind, S(n,4).
+  add $0,3
+  mov $5,4
+  pow $5,$0
+  seq $0,210448 ; Total number of different letters summed over all ternary words of length n.
+  sub $5,$0
+  div $5,2
+  mov $0,$5
+  sub $0,3
+  div $0,3
+  add $0,1
   mul $2,5
   add $2,$0
 lpe

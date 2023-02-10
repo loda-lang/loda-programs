@@ -7,7 +7,9 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,184804 ; Numbers m such that prime(m) is of the form floor(k*sqrt(5)); complement of A184807.
+  seq $3,184802 ; Primes of the form floor(k*sqrt(5)).
+  sub $3,1
+  seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   sub $3,1
   add $0,1
   add $1,1

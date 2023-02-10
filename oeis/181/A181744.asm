@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,176835 ; Number of positive integers k for which k^2 - n*k is a square.
+  add $3,1
+  dif $3,2
+  sub $3,1
+  seq $3,46079 ; Number of Pythagorean triangles with leg n.
+  add $3,1
   cmp $3,2
   sub $0,$3
   add $1,1

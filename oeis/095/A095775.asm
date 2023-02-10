@@ -7,8 +7,17 @@ mov $2,$0
 add $2,14
 pow $2,2
 lpb $2
+  mov $5,1
+  add $5,$1
   mov $3,$1
-  seq $3,71993 ; a(n) = 3*n - 2* A003159(n).
+  add $3,1
+  mov $6,$3
+  seq $3,171947 ; P-positions for game of UpMark.
+  sub $3,1
+  sub $3,$6
+  sub $3,$5
+  sub $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

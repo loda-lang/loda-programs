@@ -1,8 +1,12 @@
 ; A126836: Ramanujan numbers (A000594) read mod 7.
 ; Submitted by Jon Maiga
 ; 1,4,0,5,0,0,0,4,2,0,1,0,0,0,0,3,0,1,0,0,0,4,4,0,4,0,0,0,2,0,0,3,0,0,0,3,4,0,0,0,0,0,2,5,0,2,0,0,0,2,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,2,1,0,2,0,0,0,0,4,0,4,0,0,0,0,1,0,4,0,0,0,6,0,0,0,0,0,0,2,6
-; Formula: a(n) = (A145094(n)%14)/2
+; Formula: a(n) = ((240*n*A001158(n)+240*A001158(n))%14)/2
 
-seq $0,145094 ; Coefficients in expansion of Eisenstein series q*E'_4.
+mov $1,$0
+seq $1,1158 ; sigma_3(n): sum of cubes of divisors of n.
+mul $0,$1
+add $0,$1
+mul $0,240
 mod $0,14
 div $0,2

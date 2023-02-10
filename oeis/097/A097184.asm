@@ -4,5 +4,16 @@
 
 mov $1,$0
 add $1,1
-seq $0,97183 ; Main diagonal of triangle A097181, in which the n-th row polynomial R_n(y) is formed from the initial (n+1) terms of g.f. A097182(y)^(n+1), where R_n(1/2) = 8^n for all n>=0.
+mov $2,1
+mov $4,$0
+mov $0,1
+lpb $4
+  sub $4,1
+  sub $0,8
+  sub $3,1
+  mul $2,2
+  mul $2,$0
+  div $2,$3
+lpe
+mov $0,$2
 div $0,$1

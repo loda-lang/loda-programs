@@ -9,7 +9,10 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,46080 ; a(n) is the number of integer-sided right triangles with hypotenuse n.
+  seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+  sub $3,1
+  seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  div $3,2
   sub $3,1
   cmp $3,6
   sub $0,$3

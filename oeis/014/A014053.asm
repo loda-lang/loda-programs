@@ -6,6 +6,13 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,14031 ; Inverse of 22nd cyclotomic polynomial.
+mov $2,$0
+mov $0,-1
+bin $0,$2
+mod $2,11
+mov $3,1
+sub $3,$2
+sub $3,$2
+div $0,$3
 mul $0,$1
 div $0,2

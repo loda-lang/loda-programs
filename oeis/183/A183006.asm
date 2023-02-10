@@ -10,7 +10,12 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,183009 ; a(n) = 24*n*p(n) = 24*n*A000041(n).
+  add $4,1
+  mov $6,$4
+  seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $6,$4
+  mov $4,$6
+  mul $4,24
   mov $2,$5
   mul $2,$4
   add $1,$2

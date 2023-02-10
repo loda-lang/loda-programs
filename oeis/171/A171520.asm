@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,33286 ; a(n) = n * prime(n).
+  seq $3,40 ; The prime numbers.
+  mov $4,$1
+  mul $4,$3
+  add $3,$4
   sub $3,1
   add $0,1
   add $1,1

@@ -1,7 +1,22 @@
 ; A177018: a(n) is the smallest integer >= a(n-1) such that a(n) + A067076(n) + n-1 is an odd prime.
 ; Submitted by Christian Krause
 ; 3,3,3,4,4,5,5,6,8,8,10,11,11,12,14,16,16,18,19,19,21,22,24,27,28,28,29,29,30,36,37,39,39,43,43,45,47,48,50,52,52,56,56,57,57,62,67,68,68,69,71,71,75,77,79,81,81,83,84,84,88,94,95,95,96,102,104,108,108,109,111,114,116,118,119,121,124,125,128,132,132,136,136,138,139,141,144,145,145,146,151,154,155,158,159,161,166,166,174,176
-; Formula: a(n) = A008507(n)+3
 
-seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
-add $0,3
+sub $0,2
+mov $2,8
+mov $4,$0
+mov $3,$0
+pow $3,5
+lpb $3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,2
+  sub $0,$1
+  mov $1,$2
+  sub $3,$0
+lpe
+sub $4,$0
+mul $4,2
+mov $0,$2
+sub $0,$4
+div $0,2
+sub $0,1

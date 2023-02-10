@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,33287 ; First differences of A033286.
+  add $3,1
+  seq $3,90942 ; n-th arithmetic mean = prime(n).
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

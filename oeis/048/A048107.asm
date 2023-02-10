@@ -6,9 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,359471 ; a(n) = 1 if the product of exponents in the prime factorization of n is less than 3, otherwise 0.
-  sub $0,$3
+  seq $3,112624 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = Product_{p|n} b(p,n)!.
+  add $5,$3
+  mov $6,2
+  max $6,$5
+  cmp $6,2
+  sub $0,$6
   add $1,1
   mov $4,$0
   max $4,0

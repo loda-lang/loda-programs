@@ -6,6 +6,15 @@ mov $1,2
 lpb $1
   sub $1,1
   add $0,$1
-  trn $0,1
-  seq $0,113321 ; Lexicographically earliest permutation of the natural numbers such that all positive differences between succeeding terms occur exactly once.
+  mov $3,$0
+  dif $3,2
+  div $0,2
+  mov $2,$0
+  add $2,1
+  div $2,7
+  sub $2,1
+  mul $0,2
+  sub $0,$2
+  div $0,3
+  add $0,$3
 lpe

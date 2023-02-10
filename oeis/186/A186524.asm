@@ -9,7 +9,10 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,14689 ; a(n) = prime(n)-n, the number of nonprimes less than prime(n).
+  mov $5,$3
+  seq $3,40 ; The prime numbers.
+  sub $3,1
+  sub $3,$5
   mod $3,7
   dif $3,2
   gcd $3,4
