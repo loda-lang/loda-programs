@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,175432 ; a(n) = the greatest number k such that sigma(n) = m^k for any m >= 1 (sigma = A000203).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  max $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

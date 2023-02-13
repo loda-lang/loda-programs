@@ -7,7 +7,11 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,204187 ; a(n) = Sum_{m=1..n-1} m^(n-1) modulo n.
+  add $3,1
+  mov $5,$1
+  seq $5,76015 ; Sum of the (n-1)-th powers of the first n integers.
+  mod $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

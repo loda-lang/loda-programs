@@ -9,7 +9,13 @@ lpb $2
   sub $2,1
   add $1,$4
   max $3,$1
-  seq $3,53867 ; Parity of sum of divisors of n less than n.
+  mov $5,$3
+  seq $5,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+  mod $3,2
+  sub $3,1
+  add $3,$5
+  div $3,2
+  mod $3,2
   sub $0,$3
   sub $2,$0
   mov $4,$0

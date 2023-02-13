@@ -8,7 +8,9 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,326038 ; Square root of the largest square dividing the sum of divisors of n: a(n) = A000188(sigma(n)).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
   cmp $3,1
   sub $0,$3
   mov $4,$0

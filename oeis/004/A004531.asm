@@ -1,5 +1,5 @@
 ; A004531: Number of integer solutions to x^2 + 4 * y^2 = n.
-; Submitted by Jamie Morken(l1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,0,0,4,4,0,0,4,2,0,0,0,4,0,0,4,4,0,0,8,0,0,0,0,6,0,0,0,4,0,0,4,0,0,0,4,4,0,0,8,4,0,0,0,4,0,0,0,2,0,0,8,4,0,0,0,0,0,0,0,4,0,0,4,8,0,0,8,0,0,0,4,4,0,0,0,0,0,0,8,2,0,0,0,8,0,0,0,4,0,0,0,0,0,0,0,4,0,0
 
 mov $1,$0
@@ -18,7 +18,7 @@ pow $5,$4
 mul $5,2
 mov $6,-2
 bin $6,$4
-div $6,2
+div $6,$5
 sub $4,$6
 seq $4,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
 mul $4,$5

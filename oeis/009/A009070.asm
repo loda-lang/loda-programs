@@ -5,8 +5,14 @@
 mov $2,$0
 add $2,2
 lpb $2
+  mov $5,$1
+  seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+  sub $5,1
+  seq $5,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  div $5,2
   mov $3,$1
-  seq $3,46081 ; Number of integer-sided right triangles with n as a hypotenuse or leg.
+  seq $3,46079 ; Number of Pythagorean triangles with leg n.
+  add $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

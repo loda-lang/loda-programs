@@ -11,7 +11,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,240801 ; Triangle read by rows: T(n,k) (n>=2, 0 <= k <= n-2) = number of possible topologies with n given vertices and n-k-2 Steiner points.
+  mov $4,$0
+  seq $4,193229 ; A double factorial triangle.
+  seq $0,209518 ; Triangle by rows, reversal of A104712.
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1

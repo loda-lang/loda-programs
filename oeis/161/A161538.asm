@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,161537 ; a(n) = n-th composite + n.
+  add $3,3
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  add $3,$1
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

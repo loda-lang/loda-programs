@@ -8,7 +8,9 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,240665 ; Least k such that 10^k == -1 (mod prime(n)), or 0 if no such k exists.
+  seq $3,40 ; The prime numbers.
+  sub $3,1
+  seq $3,69531 ; Smallest positive k such that 10^k + 1 is divisible by n, or 0 if no such number exists.
   mov $5,$3
   cmp $3,0
   cmp $3,0

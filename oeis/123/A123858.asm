@@ -4,6 +4,20 @@
 
 mov $1,-1
 pow $1,$0
+mov $4,3
 mul $0,2
-seq $0,117886 ; Expansion of q^(-2/3)eta(q)eta(q^10)^2/eta(q^5) in powers of q.
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  mul $3,3
+  seq $3,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mod $3,3
+  dif $3,-2
+  add $5,5
+  add $2,$3
+  mov $4,$5
+lpe
+mov $0,$2
 mul $0,$1

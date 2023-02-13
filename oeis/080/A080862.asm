@@ -9,7 +9,10 @@ add $0,6
 mov $1,16
 lpb $2
   mov $3,$1
-  seq $3,61357 ; Number of 0<k<n such that n-k and n+k are both primes.
+  add $3,1
+  mul $3,2
+  seq $3,347739 ; Number of compositions (ordered partitions) of n into at most 2 prime parts.
+  div $3,2
   cmp $3,6
   sub $0,$3
   add $1,1

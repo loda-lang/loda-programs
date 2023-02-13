@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,230388 ; a(n) = binomial(11*n+1,n)/(11*n+1).
+  mul $3,10
+  sub $5,1
+  sub $5,$1
+  bin $5,$3
+  add $3,1
+  div $5,$3
+  mov $3,$5
   add $3,1
   gcd $3,2
   sub $0,$3

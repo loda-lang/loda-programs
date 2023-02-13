@@ -4,7 +4,18 @@
 
 mov $2,$0
 add $2,2
-seq $0,130072 ; a(n) = 5^n - 3^n - 2^n.
+mov $3,2
+mov $4,1
+lpb $0
+  sub $0,1
+  mul $5,5
+  add $5,$3
+  mul $3,2
+  add $3,$4
+  mul $4,3
+lpe
+mov $0,$5
+mul $0,6
 mov $1,$0
 gcd $1,$2
 mov $0,$2

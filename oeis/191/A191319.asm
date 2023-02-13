@@ -3,9 +3,17 @@
 
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,100071 ; a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).
+  sub $2,1
+  mov $4,2
+  add $4,$2
+  div $4,2
+  mov $5,$2
+  bin $5,$4
+  mul $5,2
+  mov $3,$4
+  mul $3,$5
+  div $3,2
   sub $0,2
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

@@ -7,9 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,347248 ; Numbers k such that the greatest prime factor of A000593(k) [the sum of odd divisors of k] is less than the greatest prime factor of k itself.
-  mov $5,$3
+  add $3,1
+  mov $6,$3
+  seq $6,122132 ; Squarefree numbers multiplied by binary powers.
+  mov $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

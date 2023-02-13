@@ -4,5 +4,14 @@
 
 mov $1,$0
 min $1,1
-seq $0,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,3
+  add $2,$3
+  mov $3,$2
+  mul $2,2
+lpe
+mul $0,$3
+add $0,$2
 add $0,$1

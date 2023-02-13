@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,6
   mov $3,$1
-  seq $3,14720 ; Squares of elements to right of central element in Pascal triangle (by row) that are not 1.
+  seq $3,14411 ; Triangular array formed from elements to right of middle of rows of Pascal's triangle that are not 1.
+  pow $3,2
   mov $5,$3
   add $3,1
   gcd $3,4

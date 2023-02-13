@@ -4,7 +4,15 @@
 
 mov $2,$0
 add $2,1
-seq $0,168674 ; a(n) = 2*A001610(n).
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mov $3,$5
+  add $3,4
+  add $5,$4
+  add $5,2
+lpe
+mov $0,$3
 dif $0,2
 mov $1,$0
 gcd $1,$2

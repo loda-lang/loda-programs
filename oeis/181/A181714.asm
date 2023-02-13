@@ -7,8 +7,12 @@ mov $1,2
 mov $2,$0
 mul $2,$0
 lpb $2
+  mov $4,$1
+  seq $4,140397 ; a(n) = floor(3*phi*n) - 3*floor(phi*n) where phi = (1+sqrt(5))/2.
+  sub $4,1
   mov $3,$1
-  seq $3,181712 ; Floor(3*n*tau)-Floor(2*n*tau)-Floor(n*tau), where tau=(1+sqrt(5))/2, the golden ratio.
+  seq $3,89809 ; Complement of A078588.
+  add $3,$4
   sub $0,$3
   add $1,1
   sub $2,$0

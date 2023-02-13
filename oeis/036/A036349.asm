@@ -6,7 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,356163 ; a(n) = 1 if sum of prime factors of n (taken with multiplicity) is even, otherwise 0.
+  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

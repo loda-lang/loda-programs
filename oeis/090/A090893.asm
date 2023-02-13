@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,83054 ; a(n) = floor(sqrt(3)*n) - 3*floor(n/sqrt(3)).
+  mul $3,2
+  add $3,1
+  mov $5,$3
+  seq $5,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
+  add $3,$5
+  add $3,1
+  mod $3,-3
   add $3,$4
   pow $3,$0
   cmp $3,1

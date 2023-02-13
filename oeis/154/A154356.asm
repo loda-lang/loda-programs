@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  mul $6,25
+  sub $6,14
   mov $3,$1
-  seq $3,154357 ; a(n) = 25*n^2 - 14*n + 2.
+  mul $3,$6
+  add $3,2
   mov $5,$3
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -1,10 +1,25 @@
 ; A044781: Numbers n such that string 6,8 occurs in the base 10 representation of n but not of n+1.
 ; Submitted by Jamie Morken(w2)
 ; 68,168,268,368,468,568,668,689,768,868,968,1068,1168,1268,1368,1468,1568,1668,1689,1768,1868,1968,2068,2168,2268,2368,2468,2568,2668,2689,2768,2868,2968,3068,3168,3268,3368,3468,3568
+; Formula: a(n) = 8*((5*((112*((10*n+39)/11)+88*((10*n+51)/11)+304)/10)-144)%4)+5*((112*((10*n+39)/11)+88*((10*n+51)/11)+304)/10)-451
 
-add $0,3
-seq $0,44337 ; Numbers n such that string 0,5 occurs in the base 10 representation of n but not of n-1.
-sub $0,54
+mul $0,10
+add $0,42
+mov $3,$0
+add $0,9
+div $0,11
+mul $0,22
+sub $3,3
+div $3,11
+add $3,3
+mul $3,14
+add $0,$3
+add $0,$3
+sub $0,8
+mul $0,4
+div $0,10
+mul $0,5
+sub $0,144
 mov $2,$0
 mod $0,4
 mul $0,8

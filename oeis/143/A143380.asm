@@ -8,7 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,133079 ; Expansion of f(x)^3 - 3 * x * f(x^9)^3 in powers of x^3 where f() is a Ramanujan theta function.
+  mul $2,3
+  mov $5,-1
+  pow $5,$2
+  seq $2,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mul $2,$5
   mod $2,3
   dif $2,-2
   add $4,1

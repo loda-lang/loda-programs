@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,83795 ; Numbers n such that n and n-1 have the same number of divisors. Numbers not included in A083794.
+  seq $3,5237 ; Numbers n such that n and n+1 have the same number of divisors.
+  add $3,1
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

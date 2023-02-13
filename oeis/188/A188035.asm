@@ -7,7 +7,9 @@ pow $2,2
 add $2,6
 lpb $2
   mov $3,$1
-  seq $3,188034 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=12, [ ]=floor.
+  seq $3,83368 ; A Fibbinary system represents a number as a sum of distinct Fibonacci numbers (instead of distinct powers of two). Using representations without adjacent zeros, a(n) = the highest bit-position which changes going from n-1 to n.
+  seq $3,109381 ; Maximum digit of n^2 written in factorial base.
+  div $3,2
   add $3,1
   mod $3,3
   mod $3,2

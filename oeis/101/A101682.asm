@@ -1,12 +1,24 @@
 ; A101682: Expansion of 2 - exp(-1 + sqrt(1-4x)).
 ; Submitted by Jamie Morken(l1)
 ; 1,2,0,8,80,1152,21056,467840,12248064,369313280,12605643776,480491716608,20231074672640,932551401807872,46708494389084160,2525988902617776128,146694190329387352064,9105143756032486932480
-; Formula: a(n) = 2*A272261(max(n-1,0))-max(n-1,0)+n-1
 
 mov $1,$0
 trn $0,1
 mov $2,$0
-seq $0,272261 ; Number of one-to-one functions f from [n] to [2n] where f(x) may not be equal to x or to 2n+1-x.
+mov $3,1
+mul $0,2
+lpb $0
+  sub $0,2
+  add $3,$4
+  mul $3,2
+  mul $4,2
+  mov $5,$4
+  mov $4,$3
+  mov $3,$0
+  mul $3,$4
+  add $3,$5
+lpe
+mov $0,$3
 mul $0,2
 sub $0,1
 sub $0,$2

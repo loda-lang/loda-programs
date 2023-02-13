@@ -4,6 +4,17 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,32198 ; "CIK" (necklace, indistinct, unlabeled) transform of 1,2,3,4,...
-add $0,1
+mov $2,$0
+add $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$2
+  gcd $0,$3
+  seq $0,4146 ; Alternate Lucas numbers - 2.
+  add $4,$0
+lpe
+div $4,$2
+mov $0,$4
 sub $0,$1
+add $0,2

@@ -1,9 +1,15 @@
 ; A040193: Continued fraction for sqrt(208).
 ; Submitted by Christian Krause
 ; 14,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2,1,2,2,28,2,2
-; Formula: a(n) = max(4/A040788(n),A040788(n))/2
 
-seq $0,40788 ; Continued fraction for sqrt(817).
+seq $0,10225 ; Continued fraction for sqrt(183).
+dif $0,4
+mul $0,90
+div $0,72
+add $0,4
+mul $0,9
+div $0,5
+sub $0,8
 mov $1,4
 div $1,$0
 max $1,$0

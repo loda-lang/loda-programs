@@ -1,4 +1,4 @@
-; A045306: Numbers n with property that in base 5 representation the numbers of 3's and 4's are 3 and 2, respectively.
+; A045306: Numbers whose base-5 representation contains exactly three 3's and two 4's.
 ; Submitted by damotbe
 ; 2349,2369,2373,2469,2473,2493,2969,2973,2993,3093,5474,5494,5498,5594,5598,5618,6094,6098,6118,6218,8599,8619,8623,8719,8723,8743,9219,9223,9243,9343,9849,9869,9873,9969,9973,9993
 

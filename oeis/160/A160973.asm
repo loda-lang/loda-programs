@@ -3,6 +3,16 @@
 
 trn $0,3
 mul $0,2
-add $0,8
-seq $0,321014 ; Number of divisors of n which are greater than 3.
+add $0,9
+mov $2,$0
+div $0,4
+lpb $0
+  mov $3,$2
+  dif $3,$0
+  mul $3,$0
+  cmp $3,$2
+  sub $0,1
+  add $1,$3
+lpe
+mov $0,$1
 sub $0,1

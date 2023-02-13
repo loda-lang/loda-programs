@@ -8,7 +8,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,127473 ; a(n) = phi(n)^2.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  pow $3,2
   add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

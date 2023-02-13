@@ -5,5 +5,23 @@
 cmp $1,$0
 mul $1,5
 trn $0,1
-seq $0,14663 ; Primes p such that multiplicative order of 2 modulo p is odd.
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,65091 ; Odd primes.
+  mov $6,$4
+  sub $4,1
+  seq $4,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.
+  cmp $4,0
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  trn $3,1
+lpe
+mov $0,$6
 sub $0,$1

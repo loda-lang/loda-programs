@@ -13,10 +13,9 @@ lpb $2
   trn $0,1
   add $0,2
   seq $0,56016 ; a(n) = -2*a(n - 1) -a(n - 2) -a(n - 3), a(0) = a(1) = a(2) = 1.
-  lpb $0
-    sub $0,1
-    add $1,1
-  lpe
+  mov $4,$0
+  max $4,0
+  add $1,$4
 lpe
 mov $0,$1
 add $0,1

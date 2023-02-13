@@ -1,7 +1,22 @@
 ; A152988: Sum of proper divisors minus the number of proper divisors of Catalan number A000108(n).
 ; Submitted by [SG]FX
 ; 0,0,0,0,7,47,193,236,1579,4195,18461,62143,275781,1131909,7434169,10522660,72469339,268486155,1442237845,4284330539,18146555293,62021099893,248289236937,798007352239,2832660377605,11922780595861,31433485275113,106604151031901,642103086842665,2017261245334937,7885589413115377,8856515791196644,111199141914728059,565752167949395803,2074931435590186549,4309680019281080947,20870785992656628621,75522357875891494629,399643896633795936425,1227199083643390406075,5856203870494024436717
-; Formula: a(n) = A152770(A141364(n))
+; Formula: a(n) = -(binomial(2*n,n)/(n+1))-A000005(binomial(2*n,n)/(n+1)-1)+A000203(binomial(2*n,n)/(n+1)-1)+1
 
-seq $0,141364 ; a(n)=C(n)-1+0^n where C(n)=A000108(n).
-seq $0,152770 ; Sum of proper divisors minus the number of proper divisors of n: a(n) = sigma(n) - n - d(n) + 1.
+mov $3,$0
+add $3,$0
+mov $1,$3
+bin $1,$0
+mov $2,$0
+add $2,1
+div $1,$2
+sub $1,1
+mov $4,$1
+seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $0,$1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+sub $0,1
+sub $4,$1
+sub $4,$0
+mov $0,$4
+sub $0,1

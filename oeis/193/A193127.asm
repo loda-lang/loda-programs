@@ -3,4 +3,14 @@
 
 add $0,1
 mul $0,2
-seq $0,169630 ; a(n) = n times the square of Fibonacci(n).
+mov $4,1
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $3,$2
+  add $2,$4
+  mov $4,$3
+lpe
+mov $1,$2
+pow $1,2
+mul $0,$1

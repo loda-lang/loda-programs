@@ -5,6 +5,27 @@
 mov $1,$0
 div $1,2
 add $0,4
-seq $0,85811 ; Number of partitions of n including 3, but not 1.
+mov $2,$0
+sub $0,2
+sub $2,$0
+mov $5,$0
+mov $7,2
+lpb $7
+  sub $7,1
+  add $0,$7
+  sub $0,1
+  mov $6,$0
+  max $6,0
+  seq $6,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $4,$7
+  mul $4,$6
+  add $3,$4
+lpe
+min $5,1
+mul $5,$6
+sub $3,$5
+mov $0,$3
+mul $0,$2
+div $0,2
 sub $0,1
 sub $0,$1

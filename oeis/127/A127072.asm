@@ -6,8 +6,12 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,1047 ; a(n) = 3^n - 2^n.
+  mov $6,2
+  pow $6,$1
+  mov $5,3
+  pow $5,$1
+  sub $5,$6
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

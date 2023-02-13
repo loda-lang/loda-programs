@@ -6,6 +6,7 @@ mov $1,$0
 add $1,1
 dif $1,2
 sub $1,1
-seq $1,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
+seq $1,8833 ; Largest square dividing n.
+seq $1,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 div $0,$1
 add $0,1

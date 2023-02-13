@@ -6,8 +6,12 @@ mov $4,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,2379 ; a(n) = floor(3^n / 2^n).
+  mov $6,6
+  pow $6,$1
+  mov $5,9
+  pow $5,$1
+  div $5,$6
+  mov $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

@@ -1,26 +1,17 @@
 ; A075694: a(1)=1, then "jump over next prime": a(n) = 2 nextprime(a(n-1))-a(n-1).
-; Submitted by [AF] Kalianthys
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,3,7,15,19,27,31,43,51,55,63,71,75,83,95,99,103,111,115,139,159,167,179,183,199,223,231,235,243,259,267,271,283,303,311,315,319,343,351,355,363,371,375,383,395,399,403,415,423,439,447,451,463,471,487,495,503,515,527,555,559,567,571,583,591,595,603,611,615,619,643,651,655,663,683,699,703,715,723,731,735,743,759,763,775,799,819,823,831,847,859,867,887,927,931,943,951,955,979,987
 
-mov $2,$0
-sub $0,1
-pow $2,2
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $5,1
-  mul $2,$4
-  lpb $3
-    div $3,3
-    add $5,$1
-    mov $1,$3
-  lpe
-  add $1,$4
+mov $1,1
+lpb $0
+  sub $0,1
+  mov $3,$1
+  cmp $3,0
+  add $3,$1
+  mov $2,$3
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  sub $2,$1
+  add $1,$2
+  add $1,$2
 lpe
-mov $0,$5
+mov $0,$1

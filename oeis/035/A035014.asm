@@ -4,6 +4,20 @@
 
 mov $1,2
 pow $1,$0
-seq $0,50620 ; Quotients arising from sequence A035014.
+mov $3,1
+add $0,1
+lpb $0
+  sub $0,1
+  div $2,2
+  mov $4,$2
+  add $4,$3
+  mod $4,2
+  add $4,3
+  mul $4,$3
+  add $2,$4
+  mul $3,5
+lpe
+mov $0,$2
+div $0,2
 mul $0,$1
 mul $0,2

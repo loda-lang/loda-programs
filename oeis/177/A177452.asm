@@ -1,11 +1,17 @@
 ; A177452: Partial sums of A002055.
 ; Submitted by PDW
 ; 1,10,66,366,1851,8858,40890,184098,813948,3549758,15317294,65537334,278489619,1176688494,4948173294,20723897214,86494746204,359915608314,1493718226314,6184858989714,25556291840484,105406847513658
+; Formula: a(n) = (binomial(2*n+4,n)*(2*n+4))/4+a(n-1), a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,2055 ; Number of diagonal dissections of a convex n-gon into n-4 regions.
+  add $2,2
+  mul $2,2
+  mov $3,$2
+  bin $2,$0
+  mul $2,$3
+  div $2,4
   sub $0,1
   add $1,$2
 lpe

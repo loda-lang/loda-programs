@@ -1,7 +1,11 @@
 ; A186749: a(n) = phi(n - phi(n) + 3).
 ; 2,2,2,4,2,6,2,6,2,6,2,10,2,10,4,10,2,8,2,8,4,8,2,18,4,16,4,18,2,20,2,18,8,12,6,18,2,22,6,18,2,20,2,18,8,18,2,24,4,20,10,30,2,24,6,24,8,20,2,46,2,24,8,24,8,42,2,24,12,42,2,32,2,40,18,42,8,36,2,32,8,24,2,36,8,46,16,32,2,44,10,32,12,32,12,66,2,58,12,36
+; Formula: a(n) = A000010(max(-A109606(n)+n-1,0)+3)
 
-seq $0,16035 ; a(n) = Sum_{j|n, 1 < j < n} phi(j). Also a(n) = n - phi(n) - 1 for n > 1.
+mov $2,$0
+seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+sub $0,$2
+trn $0,1
 mov $1,3
 add $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

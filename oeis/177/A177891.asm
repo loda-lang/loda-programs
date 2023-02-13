@@ -7,8 +7,9 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,173455 ; Row sums of triangle A027751.
-  sub $3,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$1
+  trn $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1
   cmp $3,1

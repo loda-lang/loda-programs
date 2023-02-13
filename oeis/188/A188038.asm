@@ -7,8 +7,12 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
-  seq $1,191406 ; A001951(n)+A001951(n+2).
+  mov $2,$1
+  add $2,2
+  seq $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   mov $0,0
+  seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  add $1,$2
 lpe
 mod $1,2
 mov $0,$1

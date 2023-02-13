@@ -5,8 +5,10 @@
 mul $0,2
 add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,2279 ; a(n) = 5*(10^n - 1)/9.
+  mov $2,10
+  pow $2,$0
+  div $2,9
+  mul $2,5
   sub $0,2
   add $1,$2
 lpe

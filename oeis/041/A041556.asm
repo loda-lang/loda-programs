@@ -9,7 +9,15 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,40278 ; Continued fraction for sqrt(296).
+  seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  seq $1,40304 ; Continued fraction for sqrt(322).
+  dif $1,4
+  mov $6,$3
+  mod $6,2
+  mul $6,3
+  mov $5,$6
+  add $5,$1
+  mov $1,$5
   mul $1,$2
   add $1,$4
   add $3,1

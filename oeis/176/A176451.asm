@@ -9,7 +9,8 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,186621 ; Semiprimes - 1.
+  seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
+  sub $0,1
   seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $2,$3
   mul $2,$0

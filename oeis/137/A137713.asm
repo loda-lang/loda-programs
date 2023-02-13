@@ -12,7 +12,13 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,257628 ; Expansion of 1 - f(-x) in powers of x where f() is a Ramanujan theta function.
+  bin $6,$0
+  sub $6,1
+  mul $0,3
+  seq $0,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mod $0,3
+  dif $0,-2
+  mul $0,$6
   add $3,$0
   add $4,$3
 lpe

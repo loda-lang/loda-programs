@@ -8,8 +8,11 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,29638 ; Numbers in the (1,2)-Pascal triangle A029635 that are different from 1.
-  add $3,1
+  seq $3,97207 ; Triangle read by rows: T(n,k) = binomial(n,k) + 2*binomial(n,k-1).
+  sub $3,1
+  bin $6,$3
+  add $3,$6
+  add $3,2
   mov $5,$3
   mul $3,338
   gcd $3,4

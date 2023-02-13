@@ -7,9 +7,12 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,157474 ; a(n) = 16n^2 + n.
-  sub $3,1
+  mov $5,16
+  mul $5,$1
+  add $5,33
+  mul $5,$1
+  mov $3,$5
+  add $3,16
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1
   cmp $3,1

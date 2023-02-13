@@ -10,7 +10,11 @@ lpb $2
   sub $0,1
   mov $1,$0
   max $1,0
-  seq $1,26350 ; a(n) = a(m) if a(m) has already occurred exactly once and n = a(m)+m-1, else a(n) = least positive integer that has not yet occurred.
+  seq $1,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
+  mul $1,9
+  gcd $1,0
+  div $1,9
+  add $1,1
 lpe
 min $3,1
 mul $3,$1

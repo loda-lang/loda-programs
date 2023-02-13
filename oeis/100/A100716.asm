@@ -4,12 +4,18 @@
 
 mov $2,$0
 add $2,2
-pow $2,2
 lpb $2
   add $1,1
-  mov $3,$1
-  seq $3,342023 ; a(n) = 1 if there is a prime p such that p^p divides n, otherwise 0.
-  sub $0,$3
+  mov $7,$1
+  seq $7,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
+  bin $7,2
+  mov $5,$7
+  mod $5,2
+  div $3,6
+  sub $3,1
+  mul $5,$3
+  sub $6,$5
+  sub $0,$6
   mov $4,$0
   max $4,0
   cmp $4,$0

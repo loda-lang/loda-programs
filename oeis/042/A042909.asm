@@ -8,8 +8,13 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  mov $1,$3
-  seq $1,40954 ; Continued fraction for sqrt(986).
+  mov $5,$3
+  gcd $5,3
+  add $5,13
+  cmp $1,0
+  add $1,$5
+  pow $1,2
+  sub $1,194
   mul $1,$2
   add $1,$4
   add $3,1

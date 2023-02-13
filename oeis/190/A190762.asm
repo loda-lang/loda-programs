@@ -1,11 +1,13 @@
 ; A190762: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),2,1) and [ ]=floor.
 ; Submitted by Kotenok2000
 ; 2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,1,2,1,1,2,2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,0,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,1,2,1,1,2,2,1,0,2,1,1,2,1,1,0,2,1,1,2,1,1,0,2
-; Formula: a(n) = (-(A286927(n)/4)-A286927(n)/4)+(A001954(n+1)-1)
+; Formula: a(n) = A286927(2*n+2)/4-2*(A286927(n)/4)-1
 
 mov $1,$0
 add $1,1
-seq $1,1954 ; a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
+mul $1,2
+seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
+div $1,4
 sub $1,1
 seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
 div $0,4

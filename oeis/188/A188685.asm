@@ -9,7 +9,13 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
+  mov $5,$0
+  mul $5,2
+  add $0,$5
+  bin $0,$5
+  mov $6,$5
+  add $6,1
+  div $0,$6
   mov $1,$0
   mul $1,$0
   div $4,-1

@@ -1,17 +1,18 @@
 ; A019302: Binomial transform of Thue-Morse sequence A010060.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,3,6,11,20,36,64,115,216,430,892,1872,3888,7920,15840,31315,61744,122418,245348,497650,1019032,2096680,4312224,8826320,17925376,36070128,71915616,142239056,279671360,548106816,1073741824,2108053075,4156070496,8237865610,16420961812,32901816582,66196537608,133566329640,269934734400,545814915474,1103275396944,2227950980500,4492944819432,9045855530096,18180279375072,36471971352608,73034715317440,145995345531280,291366422766336,580636293287648,1155650907461056,2297828630546096,4565625909782720
 
-mov $1,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $2,$1
-  seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-  mod $2,2
-  mul $2,$0
-  bin $2,$1
-  add $4,$2
-  sub $1,1
+mov $2,$0
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  seq $0,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$4
+mov $0,$3

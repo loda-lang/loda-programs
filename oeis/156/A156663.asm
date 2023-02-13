@@ -7,5 +7,11 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-seq $1,77957 ; Powers of 2 alternating with zeros.
-mov $0,$1
+mov $2,$1
+gcd $2,2
+sub $3,$1
+mod $3,2
+div $1,2
+pow $2,$1
+add $2,$3
+mov $0,$2

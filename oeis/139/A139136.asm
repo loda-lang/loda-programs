@@ -4,5 +4,26 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,122792 ; Expansion of eta(q^2)^2/(eta(q)eta(q^3)) in powers of q.
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  add $5,1
+  mov $6,$3
+  mul $6,2
+  add $6,1
+  div $6,3
+  mov $7,-1
+  pow $7,$6
+  add $7,1
+  dif $6,2
+  seq $6,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $6,$7
+  div $6,2
+  add $2,$6
+  mov $4,$5
+lpe
+mov $0,$2
 mul $0,$1

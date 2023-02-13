@@ -1,6 +1,16 @@
 ; A068548: Coefficients of (-x^(2n-6)) in Chebyshev polynomial of degree 2n.
 ; 1,32,400,3584,26880,180224,1118208,6553600,36765696,199229440,1049624576,5402263552,27262976000,135291469824,661693399040,3195455668224,15260018802688,72155450572800,338168545017856
-; Formula: a(n) = A001794(2*n)
+; Formula: a(n) = (((2*n+1)*(2*n+2)+binomial(2*n+2,3))*2^(2*n+1))/4
 
 mul $0,2
-seq $0,1794 ; Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n >= 0.
+add $0,1
+mov $1,$0
+mov $0,2
+pow $0,$1
+mov $2,1
+add $2,$1
+mul $1,$2
+bin $2,3
+add $2,$1
+mul $0,$2
+div $0,4

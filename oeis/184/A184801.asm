@@ -1,8 +1,10 @@
 ; A184801: Numbers m such that prime(m) is of the form floor(ks), where s=(3+sqrt(3))/2; complement of A184778.
 ; Submitted by Athlici
 ; 1,4,5,9,12,15,17,18,21,24,25,26,30,31,33,34,35,36,38,39,41,43,49,50,53,55,57,60,61,62,63,66,67,69,72,74,76,78,80,82,87,89,90,93,95,96,100,103,106,108,113,114,115,116,117,119,124,127,128,130,134,135,137,138,139,140,141,142,143,146,150,151,154,158,160,162,163,165,167,171,173,174,180,183,184,186,188,193,195,197,198,200,203,204,206,209,210,212,213,217
-; Formula: a(n) = A036234(A184799(n)-2)
+; Formula: a(n) = A036234(A054406(A184800(n)-1)-2)
 
-seq $0,184799 ; Primes of the form floor(k*s), where s=(3+sqrt(3))/2.
+seq $0,184800 ; Numbers k such that floor(k*s) is prime, where s = (3 + sqrt(3))/2.
+sub $0,1
+seq $0,54406 ; Beatty sequence for (3+sqrt 3)/2; complement of A022838.
 sub $0,2
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.

@@ -4,5 +4,16 @@
 
 add $0,2
 pow $0,2
-sub $0,2
-seq $0,183003 ; a(n) = A183002(n)/2.
+sub $0,1
+mov $2,$0
+mov $3,1
+lpb $0
+  add $3,1
+  mov $0,$2
+  div $0,$3
+  sub $0,$3
+  add $1,$0
+lpe
+add $3,$1
+mov $0,$3
+sub $0,1

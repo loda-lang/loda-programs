@@ -4,10 +4,22 @@
 
 lpb $0
   mov $1,$0
-  trn $1,1
-  seq $1,153370 ; Number of zig-zag paths from top to bottom of a rectangle of width 11 with n rows whose color is not that of the top right corner.
-  sub $1,3
+  sub $1,1
+  mov $2,$1
   mov $0,0
+  sub $1,1
+  gcd $1,2
+  mul $1,2
+  div $2,2
+  add $2,1
+  mov $3,2
+  pow $3,$2
+  seq $2,102091 ; Number of perfect matchings in the C_{2n} X P_3 graph (C_{2n} is the cycle graph on 2n vertices and P_3 is the path graph on 3 vertices).
+  add $2,$3
+  div $2,6
+  mul $1,$2
+  div $1,2
+  sub $1,3
 lpe
 mov $0,$1
 mul $0,2

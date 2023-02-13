@@ -5,6 +5,15 @@
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,1644 ; a(n) = a(n-1) + a(n-2) + a(n-3), a(0)=3, a(1)=1, a(2)=3.
-mul $1,$0
+mov $2,1
+mov $3,3
+lpb $0
+  sub $0,1
+  add $2,$4
+  mov $5,$3
+  mov $3,$2
+  mov $2,$4
+  add $4,$5
+lpe
+mul $1,$3
 mov $0,$1

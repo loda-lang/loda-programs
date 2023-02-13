@@ -1,8 +1,21 @@
 ; A171523: a(n) = n*(n-th nonprime number).
 ; 1,8,18,32,45,60,84,112,135,160,198,240,273,308,360,400,442,486,532,600,672,726,782,840,900,988,1053,1120,1218,1320,1395,1472,1584,1666,1750,1836,1924,2052,2145,2240,2337,2436,2580,2728,2835,2944,3055,3168,3332
-; Formula: a(n) = n*A018252(n)+A018252(n)
 
+mov $2,$0
+mul $2,-2
 mov $1,$0
-seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+add $1,1
+div $2,$1
+mov $3,1
+sub $1,$2
+lpb $1
+  sub $1,1
+  add $3,$4
+  mov $4,$3
+  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $3,1
+lpe
+mov $1,$3
+sub $1,1
 mul $0,$1
 add $0,$1

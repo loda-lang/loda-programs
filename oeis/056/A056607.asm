@@ -1,6 +1,7 @@
 ; A056607: a(n) is the n-th primorial divided by squarefree kernel of corresponding central binomial coefficient.
 ; Submitted by [AF] Kalianthys
 ; 2,3,10,35,231,3003,14586,138567,5311735,154040315,434113615,16062203755,354604036745,15247973580035,286661903304658,7596540437573437,79093391614735197,4824696888498847017
+; Formula: a(n) = A002110(n+1)/A048633(n)
 
 mov $1,$0
 seq $0,48633 ; Largest squarefree number dividing n-th central binomial coefficient C(n,[ n/2 ]).

@@ -8,7 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,73252 ; Coefficients of replicable function number "48g".
+  seq $2,22597 ; Expansion of Product_{m >= 1} (1 + q^m)^(-2).
+  gcd $2,$2
   add $4,2
   add $1,$2
   mov $3,$4

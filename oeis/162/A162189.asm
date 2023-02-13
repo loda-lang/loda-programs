@@ -9,7 +9,11 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,161911 ; a(n) is the n-th difference between consecutive primes minus the number of divisors of n.
+  mov $4,$3
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $3,1
+  seq $3,75526 ; a(n) = A008578(n+2) - A008578(n+1).
+  sub $3,$4
   bin $3,$1
   gcd $3,$2
   bin $3,$2

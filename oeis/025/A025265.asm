@@ -5,5 +5,24 @@
 mov $1,1
 cmp $1,$0
 trn $0,1
-seq $0,152225 ; Number of Dyck paths of semilength n with no peaks at height 0 (mod 3) and no valleys at height 2 (mod 3).
+pow $6,$0
+lpb $0
+  sub $0,1
+  mov $7,2
+  pow $7,$0
+  mul $3,2
+  add $3,$0
+  bin $3,$0
+  mov $4,$5
+  bin $4,$2
+  trn $0,2
+  add $2,1
+  mul $4,$3
+  mul $4,$7
+  div $4,$2
+  add $5,2
+  add $6,$4
+  mov $3,$2
+lpe
+mov $0,$6
 sub $0,$1

@@ -7,7 +7,15 @@ lpb $0
   sub $0,1
   mov $3,$2
   mov $2,$1
-  seq $1,40300 ; Continued fraction for sqrt(318).
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $4,$1
+  div $4,5
+  mul $4,12
+  add $1,$4
+  sub $1,2
+  dif $1,4
   mul $1,$2
   add $1,$3
 lpe

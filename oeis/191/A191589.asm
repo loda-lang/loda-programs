@@ -8,7 +8,13 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,160827 ; a(n) = 3*n^4 + 12*n^3 + 30*n^2 + 36*n + 17.
+  add $3,1
+  pow $3,2
+  mov $6,$3
+  add $3,4
+  mul $3,$6
+  mul $3,3
+  add $3,2
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

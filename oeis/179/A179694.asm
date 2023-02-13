@@ -7,8 +7,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $5,2
   mov $3,$1
-  seq $3,343879 ; Number of pairs (d1, d2) of divisors of n such that d1<d2, d1|n, d2|n, d1|d2 and d1 + d2 <= n.
+  seq $3,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+  add $3,1
+  sub $3,$5
   cmp $3,7
   sub $0,$3
   add $1,1

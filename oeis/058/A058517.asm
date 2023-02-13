@@ -7,7 +7,9 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,350957 ; Number of ways to write 2*n as 3^i (i >= 0) plus a prime.
+  mul $3,2
+  add $3,1
+  seq $3,282432 ; Number of primes of the form n - 3^k.
   cmp $3,0
   sub $0,$3
   add $1,1

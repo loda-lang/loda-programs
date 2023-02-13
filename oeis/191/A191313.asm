@@ -1,13 +1,12 @@
 ; A191313: Sum of the abscissae of the first returns to the horizontal axis (assumed to be 0 if there are no such returns) in all dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0) steps at positive heights).
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,2,5,15,30,71,134,296,551,1188,2211,4720,8815,18722,35105,74307,139842,295223,557366,1174031,2222606,4672473,8866776,18607461,35384676,74139407,141248270,295524297,563959752,1178389423,2252131246,4700155088,8995122383,18751860084,35931729267,74829035284,143548512019,298660097390,573538004333,1192217082630,2291728710405,4759880903176,9157927414279,19006069918346,36598255962761,75899343415392,146268087593055,303129377789932,584604354500587,1210759611140774,2336659517983397,4836418598142696
+; Formula: a(n) = a(n-1)+A226881(n), a(0) = 0
 
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,226881 ; Number of n-length binary words w with #(w,0) >= #(w,1) >= 1, where #(w,x) gives the number of digits x in w.
-  add $1,$0
+lpb $0
+  mov $2,$0
+  seq $2,226881 ; Number of n-length binary words w with #(w,0) >= #(w,1) >= 1, where #(w,x) gives the number of digits x in w.
+  sub $0,1
+  add $1,$2
 lpe
 mov $0,$1

@@ -1,9 +1,26 @@
 ; A085126: Multiples of 3 which are members of A002473. Or multiples of 3 with the largest prime divisor < 10.
 ; Submitted by AXm 77
 ; 3,6,9,12,15,18,21,24,27,30,36,42,45,48,54,60,63,72,75,81,84,90,96,105,108,120,126,135,144,147,150,162,168,180,189,192,210,216,225,240,243,252,270,288,294,300,315,324,336,360,375,378,384,405,420,432,441,450,480,486,504,525,540,567,576,588,600,630,648,672,675,720,729,735,750,756,768,810,840,864,882,900,945,960,972,1008,1029,1050,1080,1125,1134,1152,1176,1200,1215,1260,1296,1323,1344,1350
-; Formula: a(n) = A085127(n)-(A085127(n)-2)/4-1
 
-seq $0,85127 ; Multiples of 4 which are members of A002473. Or multiples of 4 with the largest prime divisor < 10.
+mov $3,$0
+add $3,3
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  cmp $4,7
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+add $2,1
+mov $0,$2
+div $0,7
+mul $0,4
 mov $1,$0
 sub $0,2
 div $0,4

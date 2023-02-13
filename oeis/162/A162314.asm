@@ -1,11 +1,26 @@
 ; A162314: Row sums of A162313.
 ; Submitted by Christian Krause
 ; 1,4,24,208,2400,34624,599424,12107008,279467520,7257355264,209403009024,6646303019008,230126121738240,8632047179874304,348695526455476224,15091839203924574208,696733490476660162560
-; Formula: a(n) = A000629(n)*2^n
 
 mov $1,$0
+mov $5,$0
 mov $0,2
 pow $0,$1
-seq $1,629 ; Number of necklaces of partitions of n+1 labeled beads.
+add $1,1
+lpb $1
+  sub $1,1
+  add $7,$3
+  mov $3,$2
+  add $3,1
+  pow $3,$5
+  add $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+mov $1,$6
 mul $1,$0
 mov $0,$1

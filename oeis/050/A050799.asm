@@ -9,7 +9,13 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,229062 ; 1 if n is representable as sum of two nonnegative squares, otherwise 0.
+  mul $1,4
+  seq $1,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  mov $5,$1
+  cmp $5,0
+  mov $1,$5
+  add $1,1
+  mod $1,2
   add $4,2
   sub $0,$1
   add $2,$4

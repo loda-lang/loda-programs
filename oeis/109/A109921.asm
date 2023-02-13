@@ -12,7 +12,8 @@ lpb $3
   cmp $6,0
   add $0,$6
   max $0,0
-  seq $0,147846 ; Triangular numbers n*(n+1)/2 with n or n+1 prime.
+  seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
+  bin $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -1,8 +1,13 @@
 ; A020544: Second Bernoulli polynomial evaluated at x=n! (multiplied by 6).
 ; 1,1,13,181,3313,85681,3106081,152379361,9753972481,790089189121,79009114867201,9560105293939201,1376655193941350401,232654728224433715201,45600326738788914892801,10260073516337350497792001,2626578820184244778524672001
-; Formula: a(n) = 12*binomial(A000142(n),2)+1
+; Formula: a(n) = 12*binomial(b(n),2)+1, b(n) = n*b(n-1), b(0) = 1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $1,1
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $0,$1
 bin $0,2
 mul $0,12
 add $0,1

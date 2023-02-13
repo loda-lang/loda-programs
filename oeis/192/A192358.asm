@@ -15,8 +15,11 @@ lpb $4
   add $1,$4
   bin $1,$0
   max $4,1
-  seq $0,3665 ; a(n) = 2^(n-1)*( 2^n + (-1)^n ).
-  mul $1,$0
+  mov $6,-2
+  pow $6,$0
+  add $6,1
+  bin $6,2
+  mul $1,$6
   sub $1,$5
   add $3,$1
 lpe

@@ -9,14 +9,19 @@ lpb $4
   mov $0,$6
   add $0,$4
   trn $0,1
-  seq $3,191188 ; a(n) = floor(8*n*Pi) - 2*floor(4*n*Pi).
+  add $3,3
+  mod $3,2
   add $3,1
   sub $0,$3
   add $0,2
   mul $0,2
   mov $1,$0
   add $1,2
-  seq $1,240077 ; Number of partitions of n such that m(greatest part) <= m(1), where m = multiplicity.
+  mov $7,$1
+  seq $7,117298 ; Number of partitions of n with unique smallest part and unique largest part.
+  seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+  add $1,1
+  sub $1,$7
   add $0,1
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   sub $0,$1

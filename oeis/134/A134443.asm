@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,7248 ; McKay-Thompson series of class 4C for the Monster group.
+  mul $0,2
+  seq $0,29845 ; Expansion of 16/lambda(z) in powers of nome q = exp(Pi*i*z).
   mul $1,$0
   mul $3,2
   add $3,$1

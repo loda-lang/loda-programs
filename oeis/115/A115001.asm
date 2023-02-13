@@ -4,8 +4,9 @@
 
 lpb $0
   mov $2,$0
-  add $2,2
-  seq $2,114 ; Number of cusps of principal congruence subgroup GAMMA^{hat}(n).
+  add $2,3
+  seq $2,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
+  dif $2,2
   sub $0,1
   add $1,$2
 lpe

@@ -6,9 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  mov $5,$1
+  seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   add $1,1
-  seq $3,76369 ; n + mu(n), where mu is the Moebius-function (A008683).
-  sub $3,1
+  add $3,$5
   add $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

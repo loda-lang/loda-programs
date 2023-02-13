@@ -7,8 +7,19 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,75520 ; 4*prime(n) + (prime(n) mod 4).
-  sub $3,1
+  seq $3,6005 ; The odd prime numbers together with 1.
+  sub $3,2
+  max $8,$3
+  add $8,1
+  mul $3,2
+  mov $6,$3
+  add $6,4
+  mov $7,$8
+  sub $7,$3
+  mod $7,4
+  add $3,$7
+  add $3,$6
+  add $3,6
   mov $5,$3
   div $5,4
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

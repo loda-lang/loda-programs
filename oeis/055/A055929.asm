@@ -1,6 +1,7 @@
 ; A055929: EulerPhi of the factorial of prime(n).
 ; Submitted by Christian Krause
 ; 1,2,32,1152,8294400,1194393600,64210599936000,20804234379264000,4229084764616785920000,1396531754239566739931136000000,1256878578815610065938022400000000
+; Formula: a(n) = A048855(A000040(n))
 
 seq $0,40 ; The prime numbers.
 seq $0,48855 ; Number of integers up to n! relatively prime to n!.

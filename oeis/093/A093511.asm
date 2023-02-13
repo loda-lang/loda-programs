@@ -5,7 +5,25 @@
 mov $1,$0
 trn $0,2
 sub $1,$0
-seq $0,99049 ; Numbers n such that n-1 and n+1 are both prime or both composite.
+mov $2,3
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,102291 ; Total number of prime parts in all compositions of n.
+  gcd $4,2
+  sub $0,$4
+  add $0,1
+  add $2,$5
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+sub $0,1
 mul $0,$1
 div $0,2
 add $0,1

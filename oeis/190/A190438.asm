@@ -7,14 +7,17 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,26275 ; Sum of numbers between the two n's in A026272.
+  add $3,3
+  mov $5,$3
+  mul $5,2
+  seq $3,26353 ; a(n) = sum of the numbers between the two n's in A026350.
+  sub $3,$5
   mul $3,2
   mod $3,3
   div $3,2
   sub $0,$3
-  add $1,1
+  add $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0

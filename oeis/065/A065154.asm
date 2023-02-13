@@ -6,8 +6,20 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $7,$1
+  seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $7,1
+  mov $6,$1
+  seq $6,53470 ; a(n) is the cototient of n (A051953) iterated twice.
+  add $7,$6
+  mov $6,$7
+  sub $6,1
+  mov $5,$1
+  sub $5,$6
+  add $5,1
   mov $3,$1
-  seq $3,65152 ; Cototient(totient(n)) - totient(cototient(n)).
+  seq $3,70556 ; a(n) = cototient(totient(n)).
+  sub $3,$5
   add $3,$2
   bin $3,$2
   cmp $3,0

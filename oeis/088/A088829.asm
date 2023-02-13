@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,53866 ; Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
+  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  seq $3,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
   gcd $3,2
   sub $0,$3
   add $0,1

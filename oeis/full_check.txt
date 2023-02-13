@@ -128,6 +128,7 @@ A045442: Primes congruent to {1, 5, 7} mod 8.
 A045459: Primes congruent to {0, 1, 4, 6} mod 7.
 A045460: Primes congruent to {0, 4, 6} mod 7.
 A045461: Primes congruent to {0, 1, 4} mod 7.
+A045833: Expansion of eta(q^9)^3 / eta(q^3) in powers of q.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
 A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
@@ -422,6 +423,7 @@ A262774: Expansion of psi(x^2) * phi(-x^3) in powers of x where phi(), psi() are
 A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.
 A265673: Area A under the trajectory of each odd number in the "3x+1" problem.
 A268335: Exponentially odd numbers.
+A270248: Even Löschian numbers.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A272550: Lexicographically earliest increasing sequence of primes such that odd-indexed terms have final digit 1 and even-indexed terms have final digit 9.
 A274036: a(n) is the thickness of n (see Comments section for definition).
