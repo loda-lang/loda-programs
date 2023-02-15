@@ -1,10 +1,24 @@
 ; A081691: From P-positions in a certain game.
 ; Submitted by Jamie Morken(w4)
 ; 0,2,6,11,20,38,71,136,265,523,1036,2061,4110,8207,16400,32785,65554,131092,262165,524310,1048599,2097176,4194329,8388634,16777243,33554460,67108893,134217758,268435487,536870944,1073741857,2147483682
-; Formula: a(n) = 2^n+(A081690(n)-1)
 
 mov $1,2
 pow $1,$0
-seq $0,81690 ; From P-positions in a certain game.
-sub $0,1
+mov $2,$0
+mov $3,2
+add $3,$0
+add $3,$0
+add $0,$3
+mov $3,0
+mov $4,3
+sub $0,7
+lpb $0
+  sub $0,1
+  add $3,1
+  mul $4,2
+  trn $0,$4
+lpe
+add $2,$3
+mov $0,$2
 add $0,$1
+sub $0,1

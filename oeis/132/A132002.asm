@@ -4,5 +4,18 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,98151 ; Number of partitions of 2n prime to 3 with all odd parts occurring with even multiplicities. There is no restriction on the even parts.
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $4,1
+  add $4,$5
+  dif $4,2
+  add $5,1
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,$1

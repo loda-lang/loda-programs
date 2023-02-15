@@ -1,10 +1,29 @@
 ; A203408: Numbers which are both heptagonal and decagonal.
 ; Submitted by arkiss
 ; 1,540,2887450,1123674201,6004054625647,2336525434757970,12484603034492528512,4858482201068079159687,25960009135002449017962445,10102543266574986692211140472,53980256514964477791853933850326,21006844571867038996088473395797925
-; Formula: a(n) = binomial(5*A203409(n)-1,2)/5
 
-seq $0,203409 ; Indices of heptagonal numbers that are also decagonal.
+mov $2,1
+add $0,1
+lpb $0
+  mov $3,$0
+  mov $4,$1
+  mul $0,2
+  sub $0,1
+  div $0,2
+  add $2,$1
+  mod $3,2
+  mul $3,6
+  add $3,2
+  mul $3,$2
+  add $1,$3
+  add $2,2
+  add $4,$2
+lpe
+mul $4,$3
+mov $0,$4
+sub $0,24
+div $0,24
 mul $0,5
-sub $0,1
+add $0,4
 bin $0,2
 div $0,5

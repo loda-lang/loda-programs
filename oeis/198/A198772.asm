@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,88534 ; Number of representations of n by the quadratic form x^2 + xy + y^2 with 0 <= x <= y.
+  trn $3,1
+  seq $3,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+  mov $5,$3
+  mod $3,2
+  add $5,$3
+  mov $3,$5
+  div $3,2
   sub $3,1
   cmp $3,0
   sub $0,$3

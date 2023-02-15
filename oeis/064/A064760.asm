@@ -1,9 +1,24 @@
 ; A064760: Variant of A002034 with initial term 0.
 ; Submitted by Simon Strandgaard
 ; 0,2,3,4,5,3,7,4,6,5,11,4,13,7,5,6,17,6,19,5,7,11,23,4,10,13,9,7,29,5,31,8,11,17,7,6,37,19,13,5,41,7,43,11,6,23,47,6,14,10,17,13,53,9,11,7,19,29,59,5,61,31,7,8,13,11,67,17,23,7,71,6,73,37,10,19,11,13,79,6,9
-; Formula: a(n) = A002034(n)*min(n,1)
 
 mov $1,$0
 min $1,1
-seq $0,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
+add $0,1
+mov $3,2
+mov $5,$0
+mov $6,1
+mov $4,$0
+lpb $4
+  cmp $0,$6
+  mov $2,$3
+  add $3,1
+  mul $6,$2
+  mod $6,$5
+  mov $2,$0
+  cmp $2,0
+  sub $4,$2
+lpe
+mov $0,$3
+sub $0,1
 mul $0,$1

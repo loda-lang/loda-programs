@@ -1,12 +1,16 @@
 ; A194150: Sum{floor(j*(3+sqrt(5)) : 1<=j<=n}; n-th partial sum of Beatty sequence for (3+sqrt(5).
 ; Submitted by Simon Strandgaard
 ; 5,15,30,50,76,107,143,184,231,283,340,402,470,543,621,704,793,887,986,1090,1199,1314,1434,1559,1689,1825,1966,2112,2263,2420,2582,2749,2921,3099,3282,3470,3663,3861,4065,4274,4488,4707,4932,5162,5397
+; Formula: a(n) = (110*n+110)/34+2*n+a(n-1)+2, a(0) = 5
 
 add $0,1
 lpb $0
   mov $2,$0
   mul $2,2
-  seq $2,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
+  mov $3,$2
+  mul $2,55
+  div $2,34
+  add $2,$3
   sub $0,1
   add $1,$2
 lpe

@@ -8,7 +8,12 @@ pow $2,2
 lpb $2
   add $5,1
   mov $3,$1
-  seq $3,15126 ; Least k such that phi(k) = phi(n).
+  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  seq $3,61026 ; Smallest number m such that phi(m) is divisible by n, where phi = Euler totient function A000010.
+  mul $3,2
+  sub $3,2
+  div $3,2
+  add $3,1
   div $3,$5
   sub $3,1
   gcd $3,2

@@ -8,7 +8,8 @@ lpb $3
   mov $2,$0
   add $2,1
   max $2,0
-  seq $2,199986 ; Numbers with digital product = 2.
+  seq $2,44990 ; Numbers n with property that in base 3 representation the numbers of 0's and 2's are 0 and 1, respectively.
+  seq $2,7089 ; Numbers in base 3.
   sub $0,1
   div $1,2
   add $1,$2

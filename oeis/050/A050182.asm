@@ -1,11 +1,18 @@
 ; A050182: a(n) = T(2*n+4, n), array T as in A051168 (a count of Lyndon words).
 ; Submitted by Jon Maiga
 ; 0,1,3,12,40,143,497,1768,6288,22610,81686,297160,1086384,3991995,14732005,54587280,202995232,757398510,2834502346,10637507400,40023606896,150946230006,570534474698,2160865067312,8199711007200
-; Formula: a(n) = (A051197(n)/(n+2))/2
 
 mov $1,$0
+add $1,4
+mov $2,$0
+mov $3,$1
 add $0,2
-seq $1,51197 ; T(2n+4,n), array T as in A050186; a count of aperiodic binary words.
+add $1,$2
+bin $1,$3
+dif $3,2
+add $2,2
+bin $2,$3
+sub $1,$2
 div $1,$0
 mov $0,$1
 div $0,2

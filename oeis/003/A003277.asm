@@ -8,7 +8,8 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
+  seq $3,62570 ; a(n) = phi(2*n).
+  dif $3,2
   gcd $3,$5
   cmp $3,1
   sub $0,$3

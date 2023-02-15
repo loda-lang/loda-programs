@@ -4,7 +4,18 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,161582 ; The list of the k values in the common solutions to the 2 equations 5*k+1=A^2, 9*k+1=B^2.
+mov $3,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  add $3,$2
+lpe
+pow $3,2
+mov $0,$3
+mul $0,5
+div $0,3
+pow $0,2
+div $0,5
 mul $0,$1
 div $0,7
 mul $0,9

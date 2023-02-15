@@ -7,8 +7,23 @@ add $2,14
 pow $2,2
 lpb $2
   sub $2,7
+  mov $7,$1
+  add $7,1
+  mov $8,$1
+  add $8,2
+  mov $6,$7
+  mul $6,-2
+  div $6,$7
+  sub $7,$6
+  seq $7,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $7,1
+  sub $7,$8
   mov $3,$1
-  seq $3,64799 ; Sum of n-th prime number and n-th composite number.
+  seq $3,40976 ; a(n) = prime(n) - 2.
+  add $3,$7
+  add $3,3
+  add $3,$1
+  add $3,1
   mov $5,$3
   add $1,1
   mod $3,2

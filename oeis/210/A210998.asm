@@ -7,8 +7,14 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$1
+  mul $5,$6
   mov $3,$1
-  seq $3,63084 ; a(n) = pi(n-1)*n - pi(n)*(n-1), where pi() = A000720().
+  add $3,1
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
+  sub $3,$5
   trn $3,1
   add $3,$4
   gcd $3,2

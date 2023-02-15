@@ -4,5 +4,17 @@
 
 mov $1,$0
 add $1,1
-seq $0,275121 ; a(n) is the smallest multiple of n that is a practical number.
+mov $2,$0
+add $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $4,$2
+  sub $4,1
+  seq $4,322860 ; If n is practical (in A005153), a(n) = 1, otherwise a(n) = 0.
+  add $2,$0
+  add $2,1
+  add $3,$4
+lpe
+mov $0,$2
 dif $0,$1

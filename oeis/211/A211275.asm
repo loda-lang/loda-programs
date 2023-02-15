@@ -4,5 +4,18 @@
 
 add $0,1
 div $0,2
-seq $0,132106 ; a(n) = 1 + floor(sqrt(n)) + Sum_{i=1..n} floor(n/i).
+mov $2,$0
+mov $3,1
+lpb $0
+  add $3,1
+  mov $0,$2
+  div $0,$3
+  sub $0,$3
+  add $1,$0
+lpe
+add $3,$2
+add $3,$1
+mov $0,$3
+mul $0,2
+sub $0,1
 div $0,2

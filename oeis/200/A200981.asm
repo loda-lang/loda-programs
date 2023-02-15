@@ -6,8 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $5,1
+  sub $5,$1
+  sub $5,$1
   mov $3,$1
-  seq $3,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
+  bin $3,2
+  sub $3,$5
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

@@ -4,8 +4,11 @@
 
 mov $1,1
 lpb $0
+  mov $3,$0
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $2,$0
-  seq $2,54008 ; n read modulo (number of divisors of n).
+  add $2,1
+  mod $2,$3
   cmp $2,0
   sub $0,1
   add $1,$2

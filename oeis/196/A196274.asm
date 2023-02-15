@@ -9,8 +9,8 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,53726 ; "Flag numbers": number of dots that can be arranged in successive rows of K, K-1, K, K-1, K, ..., K-1, K (assuming there is a total of L > 1 rows of size K > 1).
-  sub $0,1
+  seq $0,153238 ; Numbers k such that 2*k + 3 is composite.
+  add $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2

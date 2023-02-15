@@ -5,8 +5,10 @@
 mov $1,1
 lpb $0
   trn $0,1
+  mov $3,$0
+  seq $3,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   mov $2,$0
-  seq $2,178225 ; Characteristic function of A006995 (binary palindromes).
+  cmp $2,$3
   add $1,$2
 lpe
 mov $0,$1

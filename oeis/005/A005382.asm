@@ -1,29 +1,25 @@
 ; A005382: Primes p such that 2p-1 is also prime.
-; Submitted by Stony666
+; Submitted by Christian Krause
 ; 2,3,7,19,31,37,79,97,139,157,199,211,229,271,307,331,337,367,379,439,499,547,577,601,607,619,661,691,727,811,829,877,937,967,997,1009,1069,1171,1237,1279,1297,1399,1429,1459,1531,1609,1627,1657,1759,1867,2011,2029,2089,2131,2137,2179,2221,2281,2311,2467,2539,2551,2557,2617,2707,2719,2791,2851,3019,3037,3061,3067,3109,3169,3181,3187,3319,3331,3391,3499,3529,3607,3697,3709,3739,3769,3877,3967,4027,4051,4111,4159,4177,4231,4261,4339,4357,4447,4507,4567
 
-cmp $1,$0
-trn $0,1
-mov $3,$0
-add $3,2
-pow $3,2
-lpb $3
-  max $4,$6
-  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$4
-  add $2,6
-  mov $5,$0
-  max $5,0
-  cmp $5,$0
-  mul $3,$5
-  sub $3,1
-  add $6,$2
-  add $2,2
-  add $6,$2
+mov $2,$0
+mul $2,3
+pow $2,2
+lpb $2
+  add $1,1
+  mov $5,$1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $5,2
+  mov $3,$5
+  mul $3,$1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  cmp $3,1
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
-mov $0,$2
-sub $0,8
-div $0,8
-sub $1,$0
-sub $0,$1
-add $0,3
+mov $0,$1
+add $0,2

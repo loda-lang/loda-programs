@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,80649 ; Sum of prime factors of sigma(n).
+  add $3,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,8472 ; Sum of the distinct primes dividing n.
   cmp $3,5
   sub $0,$3
   add $1,1

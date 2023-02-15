@@ -1,14 +1,19 @@
 ; A199855: Inverse permutation of A210521.
-; Submitted by Jamie Morken(w4)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,4,2,5,3,6,11,7,12,8,13,9,14,10,15,22,16,23,17,24,18,25,19,26,20,27,21,28,37,29,38,30,39,31,40,32,41,33,42,34,43,35,44,36,45,56,46,57,47,58,48,59,49,60,50,61,51,62,52,63,53,64,54,65,55,66,79,67,80,68,81,69,82,70,83,71,84,72,85,73,86,74,87,75,88,76,89,77,90,78,91,106,92,107,93,108,94,109,95,110
 
-mov $1,1
+mov $3,-1
 lpb $0
-  sub $0,1
-  mov $3,$2
-  mov $2,$1
-  seq $1,286016 ; Signed continued fraction expansion with all signs negative of tanh(1).
-  sub $1,1
-  add $1,$3
+  add $2,1
+  sub $0,$2
+  add $2,3
 lpe
+bin $3,$0
+add $2,$3
+pow $2,2
+div $2,4
+add $2,$0
+add $1,$2
+div $1,2
 mov $0,$1
+add $0,1

@@ -4,5 +4,17 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,30203 ; Expansion of q^(-1/6) * eta(q) * eta(q^3) in powers of q.
+mov $4,3
+add $0,3
+lpb $0
+  dif $4,2
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,89812 ; Expansion of Jacobi theta function q^(-1/8) * (theta_2(q^(1/2)) - 3 * theta_2(q^(9/2))) / 2 in powers of q.
+  add $5,1
+  add $2,$3
+  mov $4,$5
+lpe
+mov $0,$2
 mul $0,$1

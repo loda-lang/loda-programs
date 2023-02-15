@@ -8,7 +8,8 @@ pow $2,3
 lpb $2
   sub $2,60
   mov $3,$1
-  seq $3,207536 ; Triangle of coefficients of polynomials u(n,x) jointly generated with A105070; see Formula section.
+  seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
+  seq $3,123519 ; Triangle read by rows: T(n,k) number of tilings of a 2n X 3 grid by dominoes, 2k of which are in a vertical position (0<=k<=n).
   mov $5,$3
   mul $3,338
   gcd $3,4

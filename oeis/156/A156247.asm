@@ -1,11 +1,13 @@
 ; A156247: a(n)=sum(k=1,n,A000002(2*k))
 ; Submitted by tosi
 ; 2,3,5,7,8,10,11,12,14,15,16,18,20,21,23,24,25,27,29,30,32,34,35,36,38,39,41,43,44,46,48,49,51,52,53,55,57,58,59,61,62,64,65,66,68,70,71,73,74,76,78,79,80,82,84,85,87,88,89,91,92,93,95,96,97,99,100,102,104,105
-; Formula: a(n) = b(n)+2, b(n) = b(n-1)+A100429(n), b(0) = 0
+; Formula: a(n) = b(n)+2, b(n) = b(n-1)+A000002(2*n+1), b(0) = 0
 
 lpb $0
   mov $2,$0
-  seq $2,100429 ; Bisection of Kolakoski sequence A000002.
+  mul $2,2
+  add $2,1
+  seq $2,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
   sub $0,1
   add $1,$2
 lpe

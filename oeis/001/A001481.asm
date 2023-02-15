@@ -1,15 +1,20 @@
 ; A001481: Numbers that are the sum of 2 squares.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,2,4,5,8,9,10,13,16,17,18,20,25,26,29,32,34,36,37,40,41,45,49,50,52,53,58,61,64,65,68,72,73,74,80,81,82,85,89,90,97,98,100,101,104,106,109,113,116,117,121,122,125,128,130,136,137,144,145,146,148,149,153,157,160,162,164,169,170,173,178,180,181,185,193,194,196,197,200,202,205,208,212,218,221,225,226,229,232,233,234,241,242,244,245,250,256,257,260
 
-mov $1,1
 mov $2,$0
+pow $2,2
 lpb $2
-  sub $2,1
   mov $3,$1
-  seq $3,70176 ; Let s(n) be smallest number >= n which is a sum of two squares (A001481); sequence gives s(n) - n.
-  add $1,$3
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  min $3,1
+  sub $0,$3
   add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-sub $0,1

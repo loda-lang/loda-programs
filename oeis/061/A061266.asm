@@ -8,7 +8,12 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,185595 ; a(n) = floor(n^(3/2)) - floor(n^(1/2)); complement of A185596.
+  add $0,1
+  mov $7,$0
+  seq $0,93 ; a(n) = floor(n^(3/2)).
+  sub $6,$0
+  div $6,$7
+  add $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

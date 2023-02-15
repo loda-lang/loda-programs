@@ -9,7 +9,9 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $3,$0
-  seq $3,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $3,$0
+  add $3,1
   add $1,1
   mul $1,$3
 lpe

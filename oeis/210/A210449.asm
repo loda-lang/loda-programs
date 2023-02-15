@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,8440 ; Expansion of Jacobi theta constant theta_2^6 /(64q^(3/2)).
+  mul $3,2
+  add $3,1
+  seq $3,122854 ; Expansion of phi(q)^2*psi(q)^4 in powers of q where phi(),psi() are Ramanujan theta functions.
+  div $3,8
   add $3,1
   gcd $3,2
   sub $0,$3

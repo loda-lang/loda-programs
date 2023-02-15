@@ -4,7 +4,11 @@
 
 mul $0,2
 mov $1,$0
-seq $0,189640 ; Fixed point of the morphism 0->001, 1->101.
+lpb $0
+  dif $0,3
+lpe
+mod $0,3
+div $0,2
 gcd $0,3
 div $1,$0
 add $1,1

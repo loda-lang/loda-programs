@@ -8,10 +8,15 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,54851 ; a(n) = 2^(n-7)*binomial(n,7). Number of 7D hypercubes in an n-dimensional hypercube.
+  sub $0,1
+  mov $6,-8
+  bin $6,$0
+  mov $5,-2
+  pow $5,$0
+  mul $5,$6
+  mov $0,$5
   mov $2,$3
-  mul $2,$0
+  mul $2,$5
   add $4,$2
 lpe
 min $1,1

@@ -8,8 +8,15 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  cmp $5,0
+  cmp $5,0
+  sub $5,3
   mov $1,$3
-  seq $1,10131 ; Continued fraction for sqrt(33).
+  gcd $1,4
+  add $1,$5
+  add $1,1
+  pow $1,2
+  add $1,1
   mul $1,$2
   add $1,$4
   add $3,1

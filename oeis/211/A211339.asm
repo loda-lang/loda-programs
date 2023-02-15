@@ -5,7 +5,16 @@
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,25426 ; Number of partitions of n into 2 nonzero squares.
+  mov $5,$2
+  seq $5,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
+  add $3,$5
+  div $3,2
+  add $4,$3
+  gcd $5,2
+  mul $5,-1
+  add $5,$4
+  mov $2,$5
+  add $2,2
   sub $0,1
   add $1,$2
 lpe

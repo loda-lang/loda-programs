@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,3
-  seq $3,276729 ; Number of nonprime digits in the decimal expansion of n.
+  mov $5,$3
+  seq $5,193238 ; Number of prime digits in decimal representation of n.
+  seq $3,55642 ; Number of digits in the decimal expansion of n.
+  sub $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

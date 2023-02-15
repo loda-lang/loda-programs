@@ -4,5 +4,5 @@
 ; Formula: a(n) = A155650(A000040(n))-2
 
 seq $0,40 ; The prime numbers.
-seq $0,155650 ; 7^n - 6^n + 1.
+seq $0,155650 ; a(n) = 7^n - 6^n + 1.
 sub $0,2

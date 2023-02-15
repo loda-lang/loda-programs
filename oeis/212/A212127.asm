@@ -6,7 +6,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,345059 ; a(n) = A129283(n) / gcd(sigma(n), A129283(n)), where A129283(n) is the sum of n and its arithmetic derivative.
+  add $3,1
+  mov $6,$3
+  seq $6,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  add $3,$6
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  gcd $5,$3
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -5,7 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,6093 ; a(n) = prime(n) - 1.
+  seq $2,40 ; The prime numbers.
+  sub $2,1
   mul $3,$2
   add $3,$1
   sub $0,1

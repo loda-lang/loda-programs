@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $3,40 ; The prime numbers.
+  add $6,$3
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$3
+  mov $3,$6
   sub $3,1
   mov $5,$3
   seq $3,48146 ; Sum of non-unitary divisors of n.

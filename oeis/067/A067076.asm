@@ -1,23 +1,37 @@
 ; A067076: Numbers k such that 2*k + 3 is a prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,2,4,5,7,8,10,13,14,17,19,20,22,25,28,29,32,34,35,38,40,43,47,49,50,52,53,55,62,64,67,68,73,74,77,80,82,85,88,89,94,95,97,98,104,110,112,113,115,118,119,124,127,130,133,134,137,139,140,145,152,154,155,157,164,167,172,173,175,178,182,185,188,190,193,197,199,203,208,209,214,215,218,220,223,227,229,230,232,238,242,244,248,250,253,259,260,269,272
 
-add $0,1
-mov $1,$0
-mul $1,2
-sub $1,2
-mov $2,4
-mov $3,$1
-pow $3,4
+sub $0,2
+mov $2,8
+mov $3,$0
+pow $3,5
 lpb $3
-  max $4,$2
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  sub $1,$4
+  mov $6,0
+  add $1,1
+  lpb $1
+    gcd $6,2
+    mov $7,$1
+    div $7,3
+    lpb $7
+      mov $5,$1
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    add $1,1
+    div $1,$6
+    pow $1,2
+    mov $6,1
+  lpe
   add $2,2
-  sub $3,$1
+  sub $0,$6
+  mov $1,$2
+  sub $3,$0
 lpe
-add $1,$2
-mov $0,$1
-sub $0,4
-div $0,2
+sub $4,$0
+mov $0,$2
+mul $0,2
+div $0,4
+sub $0,2
+sub $0,$4

@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   add $1,12
   mov $3,$1
-  seq $3,105673 ; One-half of theta series of square lattice (or half the number of ways of writing n > 0 as a sum of 2 squares), without the constant term, which is 1/2.
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $3,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
   cmp $3,0
   sub $0,$3
   mov $4,$0

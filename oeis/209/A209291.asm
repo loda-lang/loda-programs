@@ -1,14 +1,18 @@
 ; A209291: Sum of the refactorable numbers less than or equal to n.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,3,3,3,3,3,3,11,20,20,20,32,32,32,32,32,32,50,50,50,50,50,50,74,74,74,74,74,74,74,74,74,74,74,74,110,110,110,110,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,150,206,206,206,206,266,266,266,266,266,266,266,266,266,266,266,266,338,338,338,338,338,338,338,338,418,418,418,418,502,502,502,502,590,590,590,590,590,590,590,590,686,686,686,686,686
-; Formula: a(n) = b(n)+1, b(n) = A336040(n)*(n+1)+b(n-1), b(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = binomial(gcd(n+1,A000005(n)),A000005(n))*(n+1)+b(n-1), b(0) = 0
 
 lpb $0
   mov $3,$0
-  seq $3,336040 ; Characteristic function of refactorable numbers (A033950).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $4,1
+  add $4,$0
+  gcd $4,$3
+  bin $4,$3
   mov $2,$0
   add $2,1
-  mul $2,$3
+  mul $2,$4
   sub $0,1
   add $1,$2
 lpe

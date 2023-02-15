@@ -8,7 +8,8 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65 ; -1 + number of partitions of n.
+  seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $3,1
   add $4,$3
   add $1,1
   add $2,$3

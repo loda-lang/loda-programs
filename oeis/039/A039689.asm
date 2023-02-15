@@ -9,7 +9,8 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,296079 ; a(n) = 1 if 1+phi(n) is prime, 0 otherwise, where phi = A000010, Euler totient function.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   cmp $3,0
   sub $0,$3
   mov $4,$0
