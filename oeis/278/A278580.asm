@@ -8,8 +8,10 @@ sub $0,1
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,11586 ; Legendre symbol (n,23).
-  sub $3,1
+  pow $3,11
+  add $3,1
+  mod $3,23
+  sub $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

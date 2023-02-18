@@ -6,8 +6,12 @@ mov $2,$0
 mul $2,1682
 lpb $2
   mov $3,$1
-  seq $3,76512 ; Denominator of cototient(n)/totient(n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $6,$1
+  add $6,1
+  gcd $6,$3
   add $1,$4
+  div $3,$6
   mov $5,$1
   gcd $5,$3
   div $3,$5

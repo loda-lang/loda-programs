@@ -10,7 +10,11 @@ lpb $3
   add $0,$3
   trn $0,1
   add $0,1
-  seq $0,183011 ; (24n - 1)p(n): traces of partition class polynomials, with a(0) = -1.
+  mov $5,$0
+  mul $5,24
+  sub $5,1
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $0,$5
   mov $4,$3
   mul $4,$0
   add $2,$4

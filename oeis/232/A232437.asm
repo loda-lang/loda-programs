@@ -6,8 +6,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  add $6,1
   mov $3,$1
-  seq $3,248909 ; Completely multiplicative with a(p) = p if p = 6k+1 and a(p) = 1 otherwise.
+  add $3,1
+  seq $3,80171 ; a(n)=na(n-1)-(n-1)^2a(n-2), a(0)=1, a(1)=1.
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mul $3,2

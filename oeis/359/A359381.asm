@@ -8,7 +8,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,359170 ; a(n) = 1 if n is not a multiple of 3 and has an even number of prime factors (with multiplicity), otherwise a(n) = 0.
+  seq $3,359378 ; Dirichlet inverse of A359377, where A359377(n) = 1 if 3*n is squarefree, otherwise 0.
+  max $3,0
+  seq $3,228555 ; y-values in the solution to the Pell equation x^2 - 85*y^2 = -1.
+  div $3,23432976
   sub $0,$3
   add $1,2
   mov $4,$0

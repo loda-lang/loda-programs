@@ -6,9 +6,19 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,299150 ; Denominators of the positive solution to n = Sum_{d|n} a(d) * a(n/d).
+  add $3,2
+  pow $3,2
+  sub $3,1
+  seq $3,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+  mov $5,$1
+  mov $6,2
+  pow $6,$3
+  add $1,1
+  add $5,2
+  gcd $5,$6
+  mov $3,$6
+  div $3,$5
   cmp $3,2
   sub $0,$3
   mov $4,$0

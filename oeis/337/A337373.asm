@@ -8,7 +8,9 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,349573 ; a(n) = A048673(n) - n, where A048673(n) = (A003961(n)+1) / 2, and A003961(n) shifts the prime factorization of n one step towards larger primes.
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  div $3,2
+  sub $3,$1
   mul $3,2
   trn $3,3
   div $3,$1

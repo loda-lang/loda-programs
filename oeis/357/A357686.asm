@@ -7,9 +7,17 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,48250 ; Sum of the squarefree divisors of n.
   mov $3,$1
-  seq $3,325977 ; a(n) = (1/2)*(A034460(n) + A325313(n)).
-  trn $3,3
+  seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  add $3,$6
+  div $3,2
+  max $5,$1
+  mul $5,-1
+  add $5,$3
+  mov $3,$5
+  sub $3,3
   div $3,$1
   sub $0,$3
   add $1,1

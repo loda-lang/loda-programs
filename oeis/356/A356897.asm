@@ -8,7 +8,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,356898 ; a(n) is the number of trailing 1's in the maximal tribonacci representation of n (A352103).
+  seq $3,3796 ; Numbers with no 3 adjacent 0's in binary expansion.
+  seq $3,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
   add $3,$4
   gcd $3,2
   sub $0,$3

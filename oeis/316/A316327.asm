@@ -1,16 +1,13 @@
 ; A316327: First differences of indices of 1's in A305389.
-; Submitted by Penguin
+; Submitted by [AF>Libristes] Dudumomo
 ; 5,4,5,5,4,5,3,5,4,5,4,5,3,5,4,5,5,4,5,3,5,4,5,5,4,5,3,5,4,5,4,5,3,5,4,5,5,4,5,3,5,4,5,3,5,4,5,5,4,5,3,5,4,5,4,5,3,5,4,5,5,4,5,3,5,4,5,4,5,3,5,4,5,5,4,5,3,5,4,5,3,5,4,5,5,4,5,3,5,4,5,4,5,3,5,4,5,5,4,5
+; Formula: a(n) = (6*A276789(n+28)-12)/6+3
 
-mov $4,$0
-mov $3,3
-lpb $3
-  div $3,2
-  mov $0,$4
-  seq $0,119647 ; Fixed point of the morphism 1->{1,2}, 2->{1,3}, 3->{1}.
-  mov $2,$0
-  add $4,28
-lpe
-sub $1,$2
+mov $1,28
+add $1,$0
+seq $1,276789 ; First differences of A003145.
+mul $1,6
 mov $0,$1
-add $0,6
+sub $0,12
+div $0,6
+add $0,3

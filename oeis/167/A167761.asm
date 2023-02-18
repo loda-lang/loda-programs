@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $1,1
-seq $1,1223 ; Prime gaps: differences between consecutive primes.
+seq $1,40 ; The prime numbers.
+seq $1,13632 ; Difference between n and the next prime greater than n.
 dif $1,2
 pow $0,$1

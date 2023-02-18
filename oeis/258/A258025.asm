@@ -8,7 +8,13 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,107599 ; a(n) = 0,1,2 (resp.) if (1/2)[prime(n-1)+prime(n+1)] is less than, equal to or greater than prime(n) (resp.).
+  seq $3,36263 ; Second differences of primes.
+  mov $4,$3
+  cmp $3,0
+  gcd $3,$4
+  div $4,$3
+  mov $3,$4
+  add $3,1
   cmp $3,2
   sub $0,$3
   add $1,1

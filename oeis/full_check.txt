@@ -107,6 +107,7 @@ A038461: Sums of 10 distinct powers of 2.
 A038462: Sums of 11 distinct powers of 2.
 A038573: a(n) = 2^A000120(n) - 1.
 A038609: Numbers that are the sum of 2 different primes.
+A039007: Numbers whose base-5 representation has the same number of 0's and 1's.
 A039010: Numbers whose base-5 representation has the same number of 1's and 2's.
 A039014: Numbers whose base-5 representation has the same number of 2's and 4's.
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
@@ -449,6 +450,7 @@ A278569: Numbers of the form p^i*q^j*r^k where p,q,r are distinct odd primes and
 A279607: Beatty sequence for e/2; i.e., a(n) = floor(n*e/2).
 A279933: Positive integers k such that {(k-1)*r} < 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
 A279934: Positive integers k such that {(k-1)*r} > 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
+A280619: Integers m such that sigma(m) - eulerphi(m) <= 4*sqrt(m).
 A281188: Number of refactorable numbers m such that tau(m) = n, or 0 if there are infinitely many such numbers.
 A283234: 2*A001950.
 A283765: Numbers k such that L(k) is even, where L = A000201 = lower Wythoff sequence.

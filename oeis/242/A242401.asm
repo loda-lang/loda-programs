@@ -7,8 +7,10 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,5214 ; Triangular numbers together with squares (excluding 0).
-  sub $3,1
+  add $3,1
+  seq $3,54057 ; Numbers of form 41+n^2+n or 41+2*n^2.
+  div $3,2
+  sub $3,21
   add $0,1
   add $1,1
   add $2,$3

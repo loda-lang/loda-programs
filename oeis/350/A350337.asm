@@ -14,7 +14,11 @@ lpb $4
   bin $1,$0
   mov $5,$0
   sub $0,1
-  seq $0,101040 ; If n has one or two prime-factors then 1 else 0.
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  sub $0,1
+  mov $6,1
+  bin $6,$0
+  mov $0,$6
   mul $0,$5
   mul $1,$0
   add $3,$1

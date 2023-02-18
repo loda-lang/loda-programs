@@ -4,9 +4,11 @@
 
 lpb $0
   trn $0,1
-  seq $0,183545 ; Ordering of the numbers in the tree A183543; complement of A183544.
-  mov $1,$0
+  mov $2,$0
+  seq $0,354415 ; First differences of A354414.
+  add $2,$0
   mov $0,0
+  mov $1,$2
 lpe
 mov $0,$1
 add $0,1

@@ -7,8 +7,15 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
   mov $3,$1
-  seq $3,355582 ; a(n) is the largest 5-smooth divisor of n.
+  add $3,6
+  pow $3,11
+  mul $3,743008370688
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

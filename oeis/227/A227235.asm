@@ -9,8 +9,16 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,216886 ; Primes p such that x^59 = 2 has a solution mod p.
-  sub $0,1
+  seq $0,40 ; The prime numbers.
+  add $0,1
+  mov $4,25
+  pow $4,$0
+  min $4,72
+  mul $0,$4
+  mul $0,8
+  sub $0,1728
+  div $0,576
+  add $0,1
   add $0,$2
   bin $0,$2
   add $1,$0

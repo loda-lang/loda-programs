@@ -9,7 +9,9 @@ lpb $2
   mov $0,$1
   add $0,$2
   max $0,0
-  seq $0,33192 ; a(n) = binomial(Fibonacci(n) + 1, 2).
+  seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  add $0,1
+  bin $0,2
   add $3,$0
 lpe
 mov $0,$3

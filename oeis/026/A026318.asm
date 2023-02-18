@@ -7,7 +7,15 @@ lpb $2
   sub $2,28
   add $1,1
   mov $3,$1
-  seq $3,246394 ; Nonnegative integers k satisfying cos(k) <= 0 and cos(k+1) >= 0.
+  mul $3,4
+  add $3,3
+  mov $6,97
+  mul $6,$3
+  div $6,113
+  mul $3,4
+  sub $3,1
+  sub $3,$6
+  div $3,2
   mov $5,$3
   mul $3,338
   max $3,$2

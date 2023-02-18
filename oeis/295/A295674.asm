@@ -4,6 +4,17 @@
 
 mov $1,$0
 add $1,1
-seq $1,56594 ; Period 4: repeat [1,0,-1,0]; expansion of 1/(1 + x^2).
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-add $0,$1
+gcd $1,4
+sub $1,3
+mov $2,1
+div $2,$1
+mov $3,1
+mov $5,3
+lpb $0
+  sub $0,1
+  add $5,$4
+  mov $4,$3
+  mov $3,$5
+lpe
+mov $0,$3
+add $0,$2

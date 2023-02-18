@@ -6,7 +6,22 @@ mov $2,$0
 mul $2,$0
 lpb $2
   mov $3,$1
-  seq $3,286054 ; Positions of 1 in A286052; complement of A286053.
+  add $3,1
+  mov $5,$3
+  div $3,2
+  mov $7,$3
+  seq $3,171947 ; P-positions for game of UpMark.
+  sub $3,$7
+  mul $3,-1
+  sub $5,$3
+  mov $6,$5
+  sub $6,1
+  mul $6,4
+  mov $4,-1
+  pow $4,$5
+  add $4,$6
+  mov $3,$4
+  div $3,2
   sub $3,1
   add $0,1
   add $1,1

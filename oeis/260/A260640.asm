@@ -5,9 +5,13 @@
 mov $2,$0
 mul $2,10
 lpb $2
-  div $4,2
   mov $3,$1
-  seq $3,260636 ; a(n) = binomial(3n, n) mod n.
+  add $3,1
+  div $4,2
+  mov $5,$3
+  mul $3,3
+  bin $3,$5
+  mod $3,$5
   cmp $3,$4
   sub $0,$3
   add $1,1

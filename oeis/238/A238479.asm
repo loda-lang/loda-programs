@@ -10,7 +10,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
+  sub $0,1
   seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
   mov $4,$3
   mul $4,$0

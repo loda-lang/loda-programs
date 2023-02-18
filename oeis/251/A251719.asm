@@ -6,8 +6,13 @@ mov $2,$0
 add $0,1
 pow $2,2
 lpb $2
+  sub $4,$1
   mov $3,$1
-  seq $3,250473 ; Length of the maximal prefix of noncomposite numbers on row n of A249821.
+  seq $3,40 ; The prime numbers.
+  pow $3,2
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
+  add $3,1
+  add $3,$4
   add $1,1
   add $2,$3
   sub $2,$0

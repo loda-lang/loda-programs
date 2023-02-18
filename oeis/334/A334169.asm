@@ -5,7 +5,8 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,43569 ; Numbers whose base-2 representation has exactly 2 runs.
+  seq $1,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
+  sub $1,1
   mul $0,0
 lpe
 add $1,2

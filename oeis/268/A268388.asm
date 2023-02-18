@@ -7,11 +7,17 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $5,1
+  mod $5,2
   mov $3,$1
-  seq $3,302777 ; a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.
+  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mul $5,$3
+  mov $3,$5
+  seq $3,209229 ; Characteristic function of powers of 2, cf. A000079.
   sub $3,1
   add $3,$4
-  cmp $3,1
   gcd $3,2
   sub $0,$3
   add $0,1

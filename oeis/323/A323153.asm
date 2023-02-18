@@ -2,7 +2,11 @@
 ; Submitted by William Michael Kanar
 ; 0,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
 
+mov $2,$0
+add $2,1
 mov $1,$0
-seq $1,243473 ; a(n) = numerator(sigma(n)/n) - denominator(sigma(n)/n) where sigma(n) = sum of divisors of n.
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $1,$2
+dif $1,$2
 cmp $1,1
 mov $0,$1

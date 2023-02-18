@@ -7,8 +7,19 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,249860 ; a(n) = Least common multiple of n + 3 and n - 3.
-  max $5,$3
+  add $3,1
+  mov $7,$3
+  add $3,3
+  mov $6,3
+  sub $6,$7
+  mov $7,$6
+  mul $6,$3
+  add $3,$7
+  gcd $3,$6
+  gcd $6,$6
+  div $6,$3
+  max $5,$6
+  mov $3,$6
   div $3,$5
   sub $0,$3
   add $1,1

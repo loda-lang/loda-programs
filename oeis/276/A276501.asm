@@ -8,7 +8,8 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,182577 ; Number of ones in Zeckendorf representation of n!
+  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $3,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
   add $1,1
   add $2,$3
   sub $2,$0

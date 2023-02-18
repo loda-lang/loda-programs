@@ -10,7 +10,10 @@ mov $4,6
 add $0,1
 lpb $2
   mov $3,$1
-  seq $3,353748 ; a(n) = phi(n) - A064989(n), where phi is Euler totient function, and A064989 shifts the prime factorization one step towards lower primes.
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $5,$1
+  sub $5,$3
+  mov $3,$5
   sub $3,2
   cmp $3,1
   gcd $3,2

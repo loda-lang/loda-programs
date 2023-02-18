@@ -7,8 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,296084 ; a(1) = 0 and for n > 1, a(n) = 1 if tau(n)-1 divides sigma(n)-1, 0 otherwise. Here tau = A000005, sigma = A000203.
-  sub $0,$3
+  seq $3,296082 ; a(1) = 0; for n > 1, a(n) = A032741(n) / gcd(A039653(n),A032741(n)).
+  sub $3,1
+  sub $5,$3
+  cmp $5,0
+  sub $0,$5
   add $1,1
   mov $4,$0
   max $4,0

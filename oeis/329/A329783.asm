@@ -8,7 +8,11 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,40509 ; Continued fraction for sqrt(533).
+  seq $3,10158 ; Continued fraction for sqrt(85).
+  mov $6,$3
+  div $3,4
+  mul $3,7
+  add $3,$6
   mov $4,$3
   add $5,1
   gcd $3,$5

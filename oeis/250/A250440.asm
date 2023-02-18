@@ -8,9 +8,14 @@ lpb $0
   sub $0,1
   mov $2,$1
   mov $1,$3
-  trn $1,$0
+  sub $1,$0
   add $1,8
-  seq $1,331574 ; a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.
+  mov $4,$1
+  div $1,2
+  sub $4,$1
+  bin $4,3
+  bin $1,3
+  mul $1,$4
   pow $1,2
   mul $2,$1
   add $3,1

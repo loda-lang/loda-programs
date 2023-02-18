@@ -12,8 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,240560 ; a(n) = 2^n*E(n,1/2) + 2^(n+1)*E(n+1,0), where E(n,x) the Euler polynomials.
-  mul $1,$0
+  mov $5,$0
+  add $0,1
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  seq $5,122045 ; Euler (or secant) numbers E(n).
+  sub $5,$0
+  mul $1,$5
   sub $1,$3
 lpe
 mov $0,$1

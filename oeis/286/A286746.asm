@@ -1,11 +1,22 @@
 ; A286746: {00->null}-transform of the infinite Fibonacci word A003849.
 ; Submitted by Jamie Morken(w1)
 ; 0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1
-; Formula: a(n) = A230603(max(n-1,0))%(n+1)
 
+mov $3,2
 mov $1,$0
-trn $1,1
-seq $1,230603 ; Generalized Fibonacci word. Binary complement of A221150.
-add $0,1
-mod $1,$0
+add $1,2
+lpb $1
+  sub $1,2
+  sub $2,$3
+  div $2,2
+  cmp $4,4
+  add $4,$2
+  mod $4,2
+  add $4,2
+  sub $1,$4
+  add $2,$3
+  mul $3,$4
+lpe
+pow $1,$1
+mod $1,2
 mov $0,$1

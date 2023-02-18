@@ -3,8 +3,12 @@
 ; 1,1,1,2,1,2,1,2,2,2,1,2,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,3,1,3,2,2,2,3,1,2,2,2,1,3,1,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,1,3,1,2,2,2,2,3,1,2,2,3,1,3,1,2,2,2,2,3,1,2,2,2,1,3,2,2,2,2,1,3,2,2,2,2,2,3,1,2,2,3
 
 lpb $0
-  seq $0,55212 ; Number of composite divisors of n.
+  mov $2,$0
+  seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $2,1
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
+  sub $0,$2
   add $1,1
 lpe
 mov $0,$1

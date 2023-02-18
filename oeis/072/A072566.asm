@@ -8,7 +8,9 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
-  seq $3,48050 ; Chowla's function: sum of divisors of n except 1 and n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$1
+  trn $3,2
   add $3,$4
   mul $3,2
   mov $5,$3

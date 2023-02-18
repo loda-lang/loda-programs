@@ -5,5 +5,15 @@
 add $0,2
 mov $1,4
 pow $1,$0
-seq $0,126473 ; Number of strings over a 5 symbol alphabet with adjacent symbols differing by three or less.
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  mul $3,3
+  add $3,$2
+  mov $4,$2
+  mov $2,$3
+  add $3,$4
+lpe
+mov $0,$3
 add $0,$1

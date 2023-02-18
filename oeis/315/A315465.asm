@@ -8,5 +8,14 @@ add $1,$0
 mul $0,10
 add $0,3
 div $0,12
-seq $0,163812 ; Expansion of (1 - x^5) * (1 - x^6) / ((1 - x) * (1 - x^10)) in powers of x.
+lpb $0
+  sub $3,$0
+  mul $0,2
+  mod $0,5
+lpe
+sub $0,1
+trn $2,$0
+sub $2,1
+bin $2,$3
+mov $0,$2
 add $0,$1

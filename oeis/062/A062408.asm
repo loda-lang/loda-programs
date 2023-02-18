@@ -6,8 +6,13 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
+  mov $5,97
+  mul $5,$1
+  div $5,113
   mov $3,$1
-  seq $3,22844 ; a(n) = floor(n*Pi).
+  mul $3,4
+  sub $3,1
+  sub $3,$5
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

@@ -6,9 +6,14 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $7,$0
+  mul $7,3
   mov $5,$0
-  max $5,0
-  seq $5,2293 ; Number of dissections of a polygon: binomial(4*n, n)/(3*n + 1).
+  add $5,$7
+  bin $5,$7
+  mov $8,$7
+  add $8,1
+  div $5,$8
   sub $0,1
   mov $2,$3
   mul $2,$5

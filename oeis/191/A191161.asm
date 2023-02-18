@@ -9,8 +9,13 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
+  mov $4,$0
+  add $4,1
+  seq $0,74206 ; Kalmár's [Kalmar's] problem: number of ordered factorizations of n.
+  mul $0,2
+  dif $0,$4
+  mul $0,2
   sub $0,1
-  seq $0,253249 ; Number of nonempty chains in the divides relation on the divisors of n.
   add $3,$0
 lpe
 mov $0,$3

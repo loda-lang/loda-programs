@@ -1,9 +1,25 @@
 ; A252764: Number of length n primitive (=aperiodic or period n) n-ary words.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,2,24,240,3120,46410,823536,16773120,387419760,9999899910,285311670600,8916097441680,302875106592240,11112006720144330,437893890380096640,18446744069414584320,827240261886336764160,39346408075098144278664,1978419655660313589123960,104857599999989759999840400,5842587018385982519580026640,341427877364218973078345311794,20880467999847912034355032910544,1333735776850284087928623961804800,88817841970012523233890533437500000,6156119580207157308315521415196466550
-; Formula: a(n) = A075147(n)*(n+1)
 
-mov $1,$0
-seq $1,75147 ; Number of Lyndon words (aperiodic necklaces) with n beads of n colors.
+mov $3,1
+add $3,$0
+mov $5,$3
+sub $3,1
+mov $1,$3
+bin $1,2
+add $1,$3
+add $1,$5
+lpb $5
+  sub $5,1
+  mov $3,$1
+  sub $3,$5
+  sub $3,1
+  mov $2,$3
+  seq $2,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  seq $3,76112 ; Triangle (read by rows) in which the n-th row contains first n terms of n geometric progression with first term 1 and common ratio (n-1).
+  mul $3,$2
+  add $4,$3
+lpe
 add $0,1
-mul $0,$1
+mul $0,$4

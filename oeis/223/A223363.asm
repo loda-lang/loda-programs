@@ -5,8 +5,17 @@
 mov $1,2
 pow $1,$0
 mul $1,2
+mov $2,-2
+mov $3,1
 add $0,2
-seq $0,84128 ; a(n) = 4*a(n-1) + 4*a(n-2), a(0)=1, a(1)=2.
+lpb $0
+  sub $0,1
+  mul $3,4
+  mov $4,$2
+  mov $2,$3
+  add $3,$4
+lpe
+mov $0,$3
 add $0,$1
 div $0,2
 mul $0,3

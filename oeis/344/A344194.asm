@@ -10,8 +10,11 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,236284 ; a(n) = tau(n)^n, where tau(n) = A000005(n) = the number of divisors of n.
-  add $3,$0
+  mov $4,$0
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $0,1
+  pow $4,$0
+  add $3,$4
 lpe
 mov $0,$3
 add $0,1

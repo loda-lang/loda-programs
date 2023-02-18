@@ -14,7 +14,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,176147 ; a(n) = n^sopf(n), where sopf(n) is the sum of the distinct primes dividing n (A008472).
+  mov $5,$0
+  seq $5,8472 ; Sum of the distinct primes dividing n.
+  add $0,1
+  pow $0,$5
   mul $1,$0
   add $3,$1
 lpe

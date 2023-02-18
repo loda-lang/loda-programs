@@ -1,7 +1,22 @@
 ; A329712: The number of rooted chains in the lattice of (0, 1) matrices of order n.
 ; Submitted by Stony666
 ; 1,2,150,14174522,10631309363962710,213394730876951551651166996282,288398561903310939256721956218813835167026180310,55313586130829865212025793302979452922870356482030868613037427298852922
-; Formula: a(n) = A000629(n^2)
 
 pow $0,2
-seq $0,629 ; Number of necklaces of partitions of n+1 labeled beads.
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  add $6,$2
+  mov $2,$1
+  add $2,1
+  pow $2,$4
+  add $2,$6
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,1
+  mul $5,-1
+  add $5,$3
+lpe
+mov $0,$5

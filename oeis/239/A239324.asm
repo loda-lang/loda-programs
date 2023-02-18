@@ -1,12 +1,19 @@
 ; A239324: Partial sums of A090431.
 ; Submitted by BarnardsStern
 ; 0,-1,-2,-4,-7,-4,-2,-3,-5,-1,-11,-13,-20,-21,-23,-28,-29,-35,-33,-36,-42,-49,-61,-67,-78,-87,-81,-76,-74,-73,-75,-81,-81,-86,-92,-98,-96,-99,-98,-100,-107,-119,-123,-127,-132,-140,-149,-142,-137,-135,-143,-145,-152,-151,-150,-154,-154,-159,-156,-158,-163,-169,-175,-176,-171,-167,-166,-160,-159,-158,-167,-170,-178,-184,-186,-193,-194,-200,-204,-193,-198,-203,-200,-197,-195,-198,-195,-197,-197,-191,-195,-202,-211,-218,-219,-227,-220,-218,-209,-201
-; Formula: a(n) = a(n-1)+A090431(max(n-1,0)), a(0) = 0
+; Formula: a(n) = -A007953(A173919(max(2*n-2,1)))+a(n-1)+A007953(n), a(0) = 0
 
 lpb $0
-  trn $0,1
+  sub $0,1
+  mov $3,$0
+  mul $3,2
+  max $3,1
+  seq $3,173919 ; Numbers that are prime or one less than a prime.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mov $2,$0
-  seq $2,90431 ; Difference between sums of digits of n and n-th prime.
+  add $2,1
+  seq $2,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  sub $2,$3
   add $1,$2
 lpe
 mov $0,$1

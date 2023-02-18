@@ -6,8 +6,15 @@ mov $2,7259
 lpb $2
   sub $2,16
   sub $2,$1
+  mov $5,$1
+  seq $5,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+  div $5,3
   mov $3,$1
-  seq $3,88434 ; Number of ways to write n as n = u*v*w with 1 <= u < v < w.
+  seq $3,46951 ; a(n) is the number of squares dividing n.
+  add $3,$5
+  div $3,2
+  sub $5,$3
+  mov $3,$5
   mul $3,338
   gcd $3,4
   add $3,1

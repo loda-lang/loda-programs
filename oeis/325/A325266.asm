@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mov $3,$1
-  seq $3,174725 ; a(n) = (A002033(n-1) + A008683(n))/2.
+  add $3,1
+  seq $3,74206 ; Kalmár's [Kalmar's] problem: number of ordered factorizations of n.
+  add $3,$5
+  div $3,2
   seq $3,163771 ; Triangle interpolating the swinging factorial (A056040) restricted to even indices with its binomial inverse. Same as interpolating the central trinomial coefficients (A002426) with the central binomial coefficients (A000984).
   mod $3,2
   sub $0,$3

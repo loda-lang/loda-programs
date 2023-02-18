@@ -9,9 +9,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,119620 ; Number of partitions of floor(3n/2) into n parts each from {1,2,...,n}.
+  mov $4,$0
+  div $4,2
+  seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
   add $1,1
   mul $3,2
-  add $3,$0
+  add $3,$4
 lpe
 mov $0,$3

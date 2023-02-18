@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,15518 ; a(n) = 2*a(n-1) + 3*a(n-2), with a(0)=0, a(1)=1.
+  mov $5,3
+  pow $5,$3
+  div $5,4
+  mov $3,$5
   mod $3,$1
   min $3,1
   sub $0,1

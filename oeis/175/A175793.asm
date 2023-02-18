@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,71981 ; Parity of the digits of e in base 10.
+  seq $2,1113 ; Decimal expansion of e.
+  mod $2,2
   sub $0,1
   add $1,1
   sub $1,$2

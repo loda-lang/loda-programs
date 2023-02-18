@@ -4,6 +4,29 @@
 
 mov $1,$0
 add $1,6
-seq $1,224949 ; Leap years having 53 Thursdays and Fridays.
+mov $2,$1
+mul $2,4
+mov $3,2
+mov $4,$1
+add $4,7
+pow $4,2
+lpb $4
+  mov $5,$3
+  seq $5,87810 ; First differences of A029931.
+  add $5,1
+  mod $5,2
+  sub $1,$5
+  add $3,1
+  mov $6,$1
+  max $6,0
+  cmp $6,$1
+  mul $4,$6
+  sub $4,1
+lpe
+mov $1,$3
+div $1,16
+mul $1,3
+add $1,$2
+mul $1,4
 mov $0,$1
-sub $0,8
+add $0,1596

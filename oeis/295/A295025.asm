@@ -1,7 +1,26 @@
 ; A295025: Cubes whose largest digit is 5.
 ; Submitted by ChelseaOilman
 ; 125,512,125000,405224,512000,531441,1225043,5000211,5545233,13312053,43243551,54010152,102503232,115501303,125000000,221445125,320013504,400315553,405224000,512000000,531441000,1204550144,1225043000,2053225511,2253243231,2543302125
-; Formula: a(n) = A294665(n)^3
 
-seq $0,294665 ; Numbers n such that the largest digit of n^3 is 5.
+mov $2,$0
+add $0,1
+add $2,7
+pow $2,3
+lpb $2
+  mov $3,$1
+  pow $3,3
+  seq $3,54055 ; Largest digit of n.
+  cmp $3,5
+  add $3,$4
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
 pow $0,3

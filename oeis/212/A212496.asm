@@ -4,9 +4,11 @@
 
 lpb $0
   mov $2,$0
-  seq $2,8836 ; Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
+  seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $4,-1
+  pow $4,$2
   sub $0,1
-  add $1,$2
+  add $1,$4
   mul $1,-1
 lpe
 add $1,1

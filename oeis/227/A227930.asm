@@ -7,8 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,248104 ; Positions of 0,1,0 in the Thue-Morse sequence (A010060).
-  sub $3,1
+  seq $3,108269 ; Numbers of the form (2*m - 1)*4^k where m >= 1, k >= 1.
+  mov $6,2
+  gcd $6,$1
+  add $6,$3
+  mov $3,$6
+  sub $3,3
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -6,8 +6,16 @@ add $0,2
 mov $1,2
 dif $1,$0
 pow $1,$0
-seq $0,1607 ; a(n) = -a(n-1) - 2*a(n-2).
-sub $1,$0
+mov $2,1
+lpb $0
+  sub $0,1
+  sub $2,$3
+  add $3,$2
+  sub $2,$3
+  add $3,$2
+  mul $2,2
+lpe
+sub $1,$3
 sub $1,2
 div $1,2
 add $1,2

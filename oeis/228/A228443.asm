@@ -5,5 +5,23 @@
 mov $1,-1
 pow $1,$0
 mul $0,2
-seq $0,50457 ; a(n) = Sum_{ d divides n, d==1 mod 4} d - Sum_{ d divides n, d==3 mod 4} d.
+add $0,1
+mov $5,$0
+div $0,2
+add $0,1
+lpb $0
+  mov $2,$0
+  sub $0,1
+  add $2,$0
+  mov $3,$5
+  gcd $3,$2
+  bin $3,$2
+  mov $4,$2
+  mul $4,$3
+  sub $4,$6
+  mul $4,2
+  add $6,$4
+lpe
+mov $0,$6
+div $0,2
 mul $0,$1

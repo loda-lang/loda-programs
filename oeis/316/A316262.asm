@@ -11,7 +11,8 @@ lpb $2
   add $3,1
   mov $5,$3
   sub $3,1
-  seq $3,5206 ; Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
+  seq $3,1961 ; A Beatty sequence: floor(n * (sqrt(5) - 1)).
+  div $3,2
   gcd $3,$5
   add $3,$4
   sub $3,1

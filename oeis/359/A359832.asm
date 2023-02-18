@@ -2,16 +2,10 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0
 
-mov $2,$0
-mul $0,2
-add $0,2
-lpb $0
-  dif $0,2
-  add $1,1
-lpe
-add $2,$1
-mov $1,$2
-mul $2,2
-add $2,$1
-mov $0,$2
+seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+add $1,$0
+mov $2,$1
+cmp $2,0
+add $1,$2
+mov $0,$1
 mod $0,2

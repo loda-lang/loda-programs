@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,58984 ; Number of partitions of n in which number of parts is not 2.
+  mov $6,$0
+  div $6,2
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

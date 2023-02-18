@@ -7,8 +7,10 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,53167 ; Smallest 4th power divisible by n.
+  mov $5,$1
+  seq $5,53166 ; Smallest positive integer for which n divides a(n)^4.
+  pow $5,4
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

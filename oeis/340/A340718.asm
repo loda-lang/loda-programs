@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,342122 ; a(n) is the remainder when the binary reverse of n is divided by n.
+  add $3,1
+  mov $6,$3
+  seq $3,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+  mod $3,$6
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -7,9 +7,14 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   add $5,1
+  mov $6,$3
+  seq $6,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   add $1,1
-  seq $3,83345 ; Numerator of r(n) = Sum(e/p: n=Product(p^e)).
+  gcd $3,$6
+  div $6,$3
+  mov $3,$6
   div $3,$5
   sub $0,$3
   mov $4,$0

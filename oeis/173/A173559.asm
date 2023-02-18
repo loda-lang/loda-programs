@@ -13,8 +13,11 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $0,$2
-  seq $0,143025 ; Period length 4: repeat [1, 8, 2, 8].
-  mul $1,$0
+  pow $0,2
+  gcd $0,8
+  mov $5,8
+  div $5,$0
+  mul $1,$5
   mul $3,-1
   add $3,$1
 lpe

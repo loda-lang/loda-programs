@@ -9,8 +9,11 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,160651 ; a(n) is the number of triangular nonnegative integers that are each equal to n(n+1)/2 - m(m+1)/2, for some m's where 0 <= m <= n.
-  div $3,2
+  mul $3,2
+  add $3,1
+  pow $3,2
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  div $3,4
   add $3,3
   cmp $3,5
   sub $3,1

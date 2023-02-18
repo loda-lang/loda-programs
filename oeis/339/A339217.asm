@@ -4,7 +4,15 @@
 
 mul $0,2
 mov $1,$0
-seq $1,54519 ; Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
+lpb $1
+  add $3,1
+  mov $1,$0
+  div $1,$3
+  sub $1,$3
+  add $2,$1
+lpe
+mul $2,2
+add $3,$2
+mov $1,$3
 sub $1,$0
 mov $0,$1
-sub $0,1

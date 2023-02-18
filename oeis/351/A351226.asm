@@ -9,7 +9,8 @@ mul $2,2
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,351225 ; a(n) = A276086(n) - n, where A276086 is the primorial base exp-function.
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  sub $3,$1
   max $3,0
   cmp $3,0
   sub $0,$3

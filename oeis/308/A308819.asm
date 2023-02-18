@@ -1,17 +1,14 @@
 ; A308819: Product of prime powers <= n.
-; Submitted by STE\/E
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,2,6,24,120,120,840,6720,60480,60480,665280,665280,8648640,8648640,8648640,138378240,2352430080,2352430080,44696171520,44696171520,44696171520,44696171520,1028011944960,1028011944960,25700298624000,25700298624000,693908062848000
-; Formula: a(n) = c(n)/2, b(n) = A100994(n)*b(n-1), b(2) = 12, b(1) = 4, b(0) = 2, c(n) = b(n-1), c(2) = 4, c(1) = 2, c(0) = 2
+; Formula: a(n) = A100994(max(n-1,0))*a(n-1), a(0) = 1
 
-mov $1,2
-add $0,1
+mov $1,1
 lpb $0
   sub $0,1
-  mov $2,$1
-  mov $1,$3
-  seq $1,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
+  mov $2,$0
+  max $2,0
+  seq $2,100994 ; If n is a prime power p^m, m >= 1, then n, otherwise 1.
   mul $1,$2
-  add $3,1
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1

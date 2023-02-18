@@ -12,7 +12,9 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,255238 ; Triangle T(n, m) of numbers of points of a square lattice covered by a circular disk of radius n (centered at any lattice point taken as origin)  with ordinate y = m in the first quadrant.
+  seq $0,335821 ; Triangular array T(n, k) = n^2 - k^2, read by rows.
+  seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  add $0,1
   mod $0,2
   add $1,$0
 lpe

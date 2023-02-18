@@ -10,7 +10,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,72861 ; a(n) = sigma(n)^2.
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  pow $0,2
   mov $2,$3
   mul $2,$0
   div $4,2

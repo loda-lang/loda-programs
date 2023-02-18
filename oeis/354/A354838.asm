@@ -4,6 +4,15 @@
 
 add $0,1
 mov $1,$0
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-gcd $1,$0
+mov $3,1
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+gcd $1,$2
+mov $0,$2
 div $0,$1

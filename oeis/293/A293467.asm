@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,81360 ; Expansion of q^(-1/24) (m (1-m) / 16)^(1/24) in powers of q, where m = k^2 is the parameter and q is the nome for Jacobian elliptic functions.
+  mov $5,-1
+  pow $5,$0
+  seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

@@ -13,7 +13,10 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,48855 ; Number of integers up to n! relatively prime to n!.
+  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  sub $0,1
+  seq $0,39649 ; a(n) = phi(n)+1.
+  sub $0,1
   mul $1,$0
   add $3,$1
 lpe

@@ -8,7 +8,10 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,219086 ; a(n) = floor((n + 1/2)^4).
+  mul $3,2
+  add $3,1
+  pow $3,4
+  div $3,16
   add $1,1
   add $2,$3
   sub $2,$0

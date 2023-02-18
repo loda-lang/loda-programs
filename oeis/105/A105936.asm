@@ -8,7 +8,13 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,78444 ; Floor of geometric mean of consecutive primes.
+  seq $3,40 ; The prime numbers.
+  add $6,$3
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$3
+  mov $3,$6
+  sub $3,1
+  div $3,2
   mov $5,$3
   seq $3,38548 ; Number of divisors of n that are at most sqrt(n).
   cmp $3,2

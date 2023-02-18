@@ -4,7 +4,9 @@
 
 lpb $0
   mov $1,$0
-  seq $1,56170 ; Number of non-unitary prime divisors of n.
+  seq $1,73184 ; Number of cubefree divisors of n.
+  pow $1,2
+  seq $1,37800 ; Number of occurrences of 01 in the binary expansion of n.
   mul $0,$1
   sub $0,1
 lpe

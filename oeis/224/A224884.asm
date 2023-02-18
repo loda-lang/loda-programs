@@ -5,7 +5,20 @@
 mov $1,$0
 add $1,1
 mod $1,2
-seq $0,206300 ; Expand the real root of y^3 - y + x in powers of x, then multiply coefficient of x^n by -4^n to get integers.
+mov $2,1
+mov $4,$0
+sub $0,1
+lpb $4
+  sub $4,1
+  add $3,2
+  add $0,2
+  mul $2,2
+  mul $2,$0
+  mul $2,2
+  div $2,$3
+lpe
+div $2,$0
+mov $0,$2
 mul $0,2
 mul $1,$0
 mul $1,2

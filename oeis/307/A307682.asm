@@ -8,7 +8,11 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,183093 ; a(1) = 0; thereafter, a(n) = number of divisors d of n such that if d = Product_(i) (p_i^e_i) then all e_i <= 1.
+  seq $3,5361 ; Product of exponents of prime factorization of n.
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,$3
+  mov $3,$5
   sub $3,3
   cmp $3,2
   sub $0,$3

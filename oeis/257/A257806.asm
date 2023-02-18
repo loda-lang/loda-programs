@@ -1,9 +1,14 @@
 ; A257806: a(n) = A257808(n) - A257807(n).
 ; Submitted by Jamie Morken(w3)
 ; 0,-1,0,1,0,1,2,1,2,1,2,3,2,3,4,5,6,5,4,5,6,5,6,5,4,3,4,3,4,5,4,5,6,7,6,5,6,7,6,7,8,7,6,7,8,9,10,11,12,11,12,13,12,11,10,9,10,9,10,11,10,11,12,13,12,11,12,13,12,13,12,13,14,13,12,11,10,9,10,11,12,11,10,9,10,11,12,13,14,15,14,15,16,15,16,15,14,15,16,17
-; Formula: a(n) = -2*A257807(n)+n
 
 mov $1,$0
-seq $1,257807 ; a(n) = number of odd numbers in range 0 .. n of A233271, the infinite trunk of inverted binary beanstalk.
+lpb $1
+  mov $3,$1
+  seq $3,257800 ; Sequence A233271 reduced modulo 2: a(n) = A000035(A233271(n)); the parity of each term in the infinite trunk of inverted binary beanstalk.
+  sub $1,1
+  add $2,$3
+lpe
+mov $1,$2
 mul $1,2
 sub $0,$1

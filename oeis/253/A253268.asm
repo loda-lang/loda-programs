@@ -12,7 +12,8 @@ lpb $1
   sub $0,$1
   add $0,1
   mov $2,$0
-  seq $2,100399 ; a(n) = Fibonacci(n)^n.
+  seq $2,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+  pow $2,$0
   mul $4,$2
 lpe
 mov $0,$4

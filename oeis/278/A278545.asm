@@ -13,7 +13,6 @@ lpe
 lpb $0
   mov $0,2
 lpe
-add $0,1
-add $0,1
+add $0,2
 bin $0,2
 add $0,2

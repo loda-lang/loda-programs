@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,349163 ; a(n) = A064989(gcd(sigma(n), A003961(n))), where A003961 shifts the prime factorization of n one step towards larger primes, while A064989 shifts it back towards smaller primes, and sigma is the sum of divisors function.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $5,$1
+  add $5,1
+  gcd $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

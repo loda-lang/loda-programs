@@ -9,7 +9,11 @@ lpb $2
   mov $3,$1
   mul $3,2
   add $3,1
-  seq $3,276075 ; a(1) = 0, a(n) = (e1*i1! + e2*i2! + ... + ez*iz!) for n = prime(i1)^e1 * prime(i2)^e2 * ... * prime(iz)^ez, where prime(k) is the k-th prime, A000040(k).
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+  sub $3,1
+  seq $3,112623 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = sum_{p|n} b(p,n)!.
   mod $3,3
   mod $3,2
   sub $0,$3

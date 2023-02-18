@@ -7,7 +7,8 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,168036 ; Difference between n' and n, where n' is the arithmetic derivative of n (A003415).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  sub $3,$1
   trn $3,1
   cmp $3,0
   sub $0,$3

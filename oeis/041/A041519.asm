@@ -8,8 +8,17 @@ lpb $0
   add $3,1
   mov $4,$2
   mov $2,$1
+  mov $5,$3
+  div $5,2
+  gcd $5,2
+  bin $5,2
   mov $1,$3
-  seq $1,40259 ; Continued fraction for sqrt(276).
+  add $1,$5
+  div $1,2
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  dif $1,4
+  mul $1,90
+  div $1,72
   mul $1,$2
   add $1,$4
 lpe

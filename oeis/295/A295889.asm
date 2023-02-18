@@ -1,5 +1,12 @@
 ; A295889: a(n) = 1 if binary weights of n and 3n have the same parity, 0 otherwise.
 ; 1,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,0,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,1,0,1,0,0,1,0,0,1
 
-seq $0,295890 ; a(n) = 1 if binary weights of n and 3n have different parity, 0 otherwise; a(n) = A010060(n) XOR A010060(3n).
+lpb $0
+  add $1,$0
+  mod $1,2
+  add $0,1
+  dif $0,2
+  div $0,2
+lpe
+mov $0,$1
 cmp $0,0

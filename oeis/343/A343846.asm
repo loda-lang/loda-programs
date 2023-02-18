@@ -1,11 +1,15 @@
 ; A343846: a(n) = binomial(2*n, n)*2^n*|Euler(n, 1/2) - Euler(n, 0)|.
 ; Submitted by Arkhenia
 ; 0,2,6,40,350,4032,56364,933504,17824950,385848320,9334057876,249576198144,7308698191340,232643283353600,7997684730384600,295306112919306240,11655857682806336550,489743069731226910720,21824608434847162167300,1028154317960939805081600
+; Formula: a(n) = 2*((gcd(A155585(n),A122045(n))*binomial(2*n,n))/2)
 
 mov $1,$0
 mul $0,2
 bin $0,$1
-seq $1,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+mov $2,$1
+seq $2,122045 ; Euler (or secant) numbers E(n).
+seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $1,$2
 mul $0,$1
 div $0,2
 mul $0,2

@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,78070 ; Expansion of (1-x)/(1 + 2*x + 2*x^2 + x^3).
+  seq $2,108946 ; a(2n) = A001570(n), a(2n+1) = -A007654(n+1).
+  mov $4,$2
+  mod $4,9
+  mov $2,$4
   mod $2,2
   add $1,$2
   mov $3,5

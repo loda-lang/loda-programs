@@ -6,14 +6,17 @@ mov $5,$0
 mov $3,2
 lpb $3
   sub $3,1
-  mov $0,$5
   add $0,$3
-  trn $0,1
-  seq $0,110164 ; Expansion of (1-x^2)/(1+2x).
+  sub $0,1
+  mov $6,-2
+  pow $6,$0
+  mov $7,$6
+  div $7,4
+  sub $6,$7
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
-  mov $4,$0
+  mov $4,$6
 lpe
 min $5,1
 mul $5,$4

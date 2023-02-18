@@ -3,7 +3,14 @@
 
 mov $1,1
 sub $1,$0
-seq $0,47384 ; Numbers that are congruent to {0, 1, 5} mod 7.
+mov $4,$0
+add $0,1
+div $0,3
+mul $0,3
+add $0,$4
+mov $3,$0
+div $3,6
+add $0,$3
 dif $0,6
 mov $2,$1
 cmp $2,0

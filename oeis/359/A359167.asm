@@ -6,8 +6,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $3,$1
-  seq $3,359166 ; a(n) = lambda(n) * lambda(sigma(n)), where lambda is Liouville's lambda, and sigma is the sum of divisors function.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $3,$5
+  sub $3,1
+  seq $3,8836 ; Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -1,6 +1,7 @@
 ; A225817: Moebius function applied to divisors of n, table read by rows.
 ; Submitted by pututu
 ; 1,1,-1,1,-1,1,-1,0,1,-1,1,-1,-1,1,1,-1,1,-1,0,0,1,-1,0,1,-1,-1,1,1,-1,1,-1,-1,0,1,0,1,-1,1,-1,-1,1,1,-1,-1,1,1,-1,0,0,0,1,-1,1,-1,-1,1,0,0,1,-1,1,-1,0,-1,1,0,1,-1,-1,1,1,-1,-1,1,1,-1,1,-1,-1,0,1,0,0,0,1,-1,0,1,-1,-1,1,1,-1,0,0,1,-1,0,-1,1
+; Formula: a(n) = A008683(A027750(n)-1)
 
 seq $0,27750 ; Triangle read by rows in which row n lists the divisors of n.
 sub $0,1

@@ -9,7 +9,11 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  seq $0,260786 ; Twice the Euler or up/down numbers A000111.
+  mov $5,$0
+  seq $5,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$5
+  mul $0,2
   mov $4,$3
   mul $4,$0
   add $2,$4

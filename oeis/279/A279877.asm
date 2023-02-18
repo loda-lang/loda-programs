@@ -5,6 +5,17 @@
 mov $1,$0
 cmp $1,2
 gcd $1,2
-seq $0,282415 ; Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 469", based on the 5-celled von Neumann neighborhood.
-sub $0,2
+mov $4,$0
+dif $0,2
+mul $4,4
+add $4,1
+lpb $4
+  trn $4,8
+  mov $2,10
+  pow $2,$0
+  sub $0,1
+  add $3,$2
+lpe
+mov $0,$3
 add $0,$1
+sub $0,2

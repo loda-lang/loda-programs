@@ -8,7 +8,13 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,96727 ; Expansion of eta(q)^8 / eta(q^2)^4 in powers of q.
+  mov $5,-1
+  pow $5,$2
+  mul $5,10
+  add $5,5
+  seq $2,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
+  mul $2,$5
+  div $2,15
   add $1,$2
   mov $3,2
   add $3,$4

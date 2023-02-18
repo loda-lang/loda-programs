@@ -10,9 +10,12 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,284492 ; Positions of 1 in A284490; complement of A284491.
+  mov $6,$4
+  seq $6,285144 ; Positions of 1 in A285142; complement of A285143.
+  sub $6,$4
   mov $2,$5
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
   add $1,$2
 lpe
 min $3,1

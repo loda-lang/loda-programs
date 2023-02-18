@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   add $1,1
-  seq $0,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+  mul $0,3
+  seq $0,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mod $0,3
+  dif $0,-2
   add $1,$4
   bin $1,$4
   mul $1,$0

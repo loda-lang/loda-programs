@@ -13,7 +13,14 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,225700 ; Denominators of coefficients arising from q-expansion of Integrate[eta[q^4]^8/eta[q^2]^4, q]/q where eta is the Dedekind eta function.
+  mul $0,2
+  mov $7,$0
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $6,$0
+  add $6,2
+  gcd $6,$7
+  add $0,2
+  div $0,$6
   mov $5,1
   cmp $5,$0
   mul $1,$5

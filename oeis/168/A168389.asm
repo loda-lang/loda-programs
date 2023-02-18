@@ -6,7 +6,12 @@ mov $2,$0
 add $0,1
 lpb $2
   mov $3,$1
-  seq $3,106149 ; Number of prime factors with multiplicity of the difference between consecutive primes.
+  add $3,1
+  seq $3,40 ; The prime numbers.
+  div $3,2
+  mul $3,2
+  sub $3,1
+  seq $3,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   sub $3,1
   add $3,$4
   cmp $3,1

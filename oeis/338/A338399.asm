@@ -14,7 +14,13 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,346838 ; a(n) = (PolyLog(-n, -i) - exp(i*Pi*n)*PolyLog(-n, i)) * i / exp(i*Pi*n/2).
+  mov $7,-1
+  pow $7,$0
+  mov $8,$0
+  seq $8,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$8
+  mul $0,$7
   mul $1,$0
   add $3,$5
   add $3,$1

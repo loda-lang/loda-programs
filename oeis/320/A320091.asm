@@ -1,12 +1,14 @@
 ; A320091: Number of primitive (=aperiodic) 7-ary words with length less than or equal to n which are earlier in lexicographic order than any other word derived by cyclic shifts of the alphabet.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,7,55,391,2791,19543,137191,960391,6725143,47076343,329551591,2306861191,16148148391,113037041143,791260111543,5538820797943,38771751367543,271402259573191,1899815857483639,13298711002502839,93090977299997143,651636841100805895,4561457889683793943,31930205227786560343,223511436608352972343,1564580056258476585943,10952060393906225126791,76664422757343616255591,536650959302083577232391,3756556715114585040629191,26295897005806843128492439,184071279040647902182025239,1288498953284568548204849143
-; Formula: a(n) = a(n-1)+A320072(n), a(0) = 1
+; Formula: a(n) = A218124(n+1)/7+a(n-1), a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,320072 ; Number of length n primitive (=aperiodic or period n) 7-ary words which are earlier in lexicographic order than any other word derived by cyclic shifts of the alphabet.
+  add $2,1
+  seq $2,218124 ; Number of 7-ary sequences with primitive period n.
+  div $2,7
   sub $0,1
   add $1,$2
 lpe

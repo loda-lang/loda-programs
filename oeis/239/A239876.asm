@@ -9,7 +9,16 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  seq $0,229110 ; Sum of non-divisors of n reduced modulo n.
+  mov $4,$0
+  add $4,1
+  mov $5,$0
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $5,1
+  sub $5,$0
+  sub $5,$0
+  bin $0,2
+  sub $0,$5
+  mod $0,$4
   add $1,$0
 lpe
 mov $0,$1

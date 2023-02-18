@@ -14,7 +14,10 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
-  seq $0,54024 ; Sum of the divisors of n reduced modulo n.
+  mov $5,$0
+  add $5,1
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $0,$5
   mul $1,$0
   add $3,$1
 lpe

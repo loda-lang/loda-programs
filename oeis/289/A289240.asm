@@ -5,9 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  min $4,1
   mov $3,$1
-  seq $3,289241 ; Positions of 1 in A289239; complement of A289240.
-  sub $3,1
+  trn $3,1
+  seq $3,289013 ; Positions of 1 in A289011; complement of A289012.
+  mul $3,$4
+  add $3,2
   add $0,1
   add $1,1
   add $2,$3

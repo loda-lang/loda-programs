@@ -12,8 +12,12 @@ lpb $3
   add $0,1
   mov $4,$0
   add $4,$0
-  seq $0,286751 ; Positions of 1 in A286749; complement of A286750.
-  sub $0,1
+  add $0,1
+  mov $6,$0
+  seq $6,189663 ; Partial sums of A189661.
+  mul $6,2
+  add $0,$6
+  sub $0,3
   mov $2,$4
   sub $2,$0
   add $1,$2

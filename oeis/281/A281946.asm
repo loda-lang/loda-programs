@@ -5,7 +5,13 @@
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,1296 ; 4-dimensional pyramidal numbers: a(n) = (3*n+1)*binomial(n+2, 3)/4. Also Stirling2(n+2, n).
+  add $2,2
+  mov $5,$2
+  mul $5,6
+  sub $5,10
+  bin $2,3
+  mul $2,$5
+  div $2,8
   mov $3,$2
   min $3,1
   add $4,1

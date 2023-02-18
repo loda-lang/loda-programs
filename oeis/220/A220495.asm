@@ -8,7 +8,12 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,220494 ; Number of toothpicks and D-toothpicks after n-th stage in the structure of the D-toothpick "wide" triangle of the first kind.
+  seq $0,151566 ; Leftist toothpicks (see Comments for definition).
+  mul $0,2
+  mov $6,$0
+  cmp $6,0
+  add $0,$6
+  sub $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2

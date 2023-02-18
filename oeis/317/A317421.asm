@@ -13,7 +13,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,272470 ; 7 times the primes.
+  seq $0,40 ; The prime numbers.
+  mul $0,7
   mul $1,$0
   mul $3,$5
   add $3,$1

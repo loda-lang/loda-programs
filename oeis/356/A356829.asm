@@ -5,7 +5,23 @@
 mov $1,$0
 add $1,1
 mul $1,2
-seq $0,286185 ; Number of connected induced (non-null) subgraphs of the Möbius ladder graph with 2n nodes.
+add $0,1
+mov $3,1
+mov $5,$0
+mov $6,-1
+lpb $0
+  sub $0,1
+  add $6,$3
+  add $6,$3
+  add $6,$5
+  mov $7,1
+  add $7,$4
+  add $3,$5
+  add $3,$7
+  mov $4,$5
+  add $4,$6
+lpe
+mov $0,$4
 mul $0,-1
 sub $0,1
 mov $2,2

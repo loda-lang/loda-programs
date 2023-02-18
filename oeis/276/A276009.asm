@@ -1,8 +1,25 @@
 ; A276009: Decrement each nonzero digit by one in factorial base representation of n: a(n) = n - A276008(n).
 ; Submitted by pelpolaris
 ; 0,0,0,0,2,2,0,0,0,0,2,2,6,6,6,6,8,8,12,12,12,12,14,14,0,0,0,0,2,2,0,0,0,0,2,2,6,6,6,6,8,8,12,12,12,12,14,14,24,24,24,24,26,26,24,24,24,24,26,26,30,30,30,30,32,32,36,36,36,36,38,38,48,48,48,48,50,50,48,48,48,48,50,50,54,54,54,54,56,56,60,60,60,60,62,62,72,72,72,72
-; Formula: a(n) = n-A276008(n)
 
 mov $1,$0
-seq $1,276008 ; Substitute ones for all nonzero digits in factorial base representation of n: a(n) = A059590(A275727(n)).
-sub $0,$1
+mov $3,1
+mov $4,1
+mov $7,1
+mov $9,$0
+lpb $9
+  sub $9,$7
+  add $3,1
+  mov $5,$4
+  mul $5,$3
+  mov $6,$1
+  mod $6,$5
+  sub $1,$6
+  min $6,$4
+  add $2,$6
+  mov $4,$5
+  mov $8,$1
+  cmp $8,0
+  sub $7,$8
+lpe
+sub $0,$2

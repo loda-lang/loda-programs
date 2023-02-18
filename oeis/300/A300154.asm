@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,8615 ; a(n) = floor(n/2) - floor(n/3).
+  mov $5,$3
+  div $5,3
+  div $3,2
+  sub $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

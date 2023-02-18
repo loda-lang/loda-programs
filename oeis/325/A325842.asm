@@ -13,7 +13,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,22848 ; Integer nearest nx, where x = sqrt(5).
+  pow $0,2
+  mul $0,5
+  seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
   mul $1,$0
   mul $3,-1
   add $3,$1

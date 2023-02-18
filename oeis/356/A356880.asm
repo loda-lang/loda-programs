@@ -1,8 +1,14 @@
 ; A356880: Squares that can be expressed as the sum of two powers of two (2^x + 2^y).
 ; Submitted by arkiss
 ; 4,9,16,36,64,144,256,576,1024,2304,4096,9216,16384,36864,65536,147456,262144,589824,1048576,2359296,4194304,9437184,16777216,37748736,67108864,150994944,268435456,603979776,1073741824,2415919104,4294967296,9663676416,17179869184
-; Formula: a(n) = A190787(n+1)/2
 
-add $0,1
-seq $0,190787 ; Odd powers of 2 and 9 times odd powers of 2, sorted.
+mov $1,1
+add $0,2
+lpb $0
+  sub $0,2
+  mul $1,2
+lpe
+add $0,2
+mul $0,$1
 div $0,2
+pow $0,2

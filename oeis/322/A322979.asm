@@ -14,7 +14,10 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
-  seq $0,9191 ; a(n) = gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
+  mov $5,1
+  add $5,$0
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $0,$5
   mul $1,$0
   add $3,$1
 lpe

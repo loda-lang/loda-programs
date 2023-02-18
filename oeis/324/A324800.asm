@@ -4,8 +4,12 @@
 
 mov $1,1
 lpb $0
+  mov $4,$0
+  seq $4,40 ; The prime numbers.
+  seq $4,13632 ; Difference between n and the next prime greater than n.
   mov $2,$0
-  seq $2,141042 ; Product of n and the n-th gap between primes: a(n) = n*A001223(n).
+  mul $2,$4
+  add $2,$4
   mul $3,$2
   add $3,$1
   sub $0,1

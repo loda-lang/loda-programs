@@ -4,5 +4,19 @@
 
 add $0,1
 mov $1,$0
-seq $0,52871 ; E.g.f.: -LambertW(x/(-1+x)).
+mov $5,$0
+sub $5,1
+lpb $0
+  sub $0,1
+  pow $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mov $3,1
+  add $3,$2
+  mul $6,$2
+  add $6,$4
+lpe
+mov $0,$6
 div $0,$1

@@ -1,8 +1,16 @@
 ; A285543: Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 35", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jon Maiga
 ; 1,3,6,15,28,63,120,255,496,1023,2016,4095,8128,16383,32640,65535,130816,262143,523776,1048575,2096128,4194303,8386560,16777215,33550336,67108863,134209536,268435455,536854528,1073741823,2147450880,4294967295,8589869056,17179869183,34359607296,68719476735,137438691328,274877906943,549755289600,1099511627775,2199022206976,4398046511103,8796090925056,17592186044415,35184367894528,70368744177663,140737479966720,281474976710655,562949936644096,1125899906842623,2251799780130816,4503599627370495
-; Formula: a(n) = A290234(n+1)/2
+; Formula: a(n) = ((2^((n+2)/gcd(2,n+2))-1)*gcd(2,n+2)^((n+2)/gcd(2,n+2)))/2
 
-add $0,1
-seq $0,290234 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 773", based on the 5-celled von Neumann neighborhood.
+add $0,2
+mov $2,2
+gcd $2,$0
+div $0,$2
+mov $1,2
+pow $1,$0
+sub $1,1
+pow $2,$0
+mul $2,$1
+mov $0,$2
 div $0,2

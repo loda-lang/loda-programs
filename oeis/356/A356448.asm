@@ -6,9 +6,19 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $5,$1
   mov $3,$1
-  seq $3,228498 ; a(n) = sigma(n^2) + phi(n^2) - 2n^2.
+  add $3,1
+  pow $3,2
+  sub $3,1
+  add $5,$1
+  sub $6,$3
+  mul $6,2
+  mov $7,$3
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $3,2
+  add $3,$7
+  add $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

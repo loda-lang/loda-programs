@@ -8,5 +8,14 @@ mov $2,1
 add $2,$1
 pow $1,2
 add $2,$1
-seq $0,20514 ; a(n) = 1^n + 2^n + 4^n + 8^n + 16^n.
+mov $4,2
+pow $4,$0
+mov $5,2047
+lpb $5
+  div $5,8
+  add $3,1
+  mul $3,$4
+lpe
+mov $0,$3
+add $0,1
 mul $0,$2

@@ -14,9 +14,17 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,7004 ; a(n) = (3*n)! / ((n+1)*(n!)^3).
+  mov $6,$0
+  add $6,$0
+  mov $7,$0
+  add $7,$6
+  bin $7,$0
+  bin $6,$0
+  add $0,1
+  div $6,$0
+  mul $6,$7
   mul $1,$5
-  mul $1,$0
+  mul $1,$6
   sub $1,$3
 lpe
 mov $0,$1

@@ -6,8 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,$1
+  add $5,2
+  gcd $5,$6
   mov $3,$1
-  seq $3,339966 ; a(n) = (n+1) / gcd(sigma(n),n+1).
+  add $3,2
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

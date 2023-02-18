@@ -7,5 +7,12 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-seq $1,115140 ; O.g.f. inverse of Catalan A000108 o.g.f.
+mov $2,$1
+mul $1,2
+sub $1,1
+mov $3,1
+sub $3,$2
+sub $3,$2
+bin $1,$2
+div $1,$3
 mov $0,$1

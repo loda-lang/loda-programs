@@ -1,7 +1,7 @@
 ; A351632: Number of copies of the star graph S(2,1,1,1) contained in the n-dimensional hypercube graph.
 ; Submitted by Skivelitis2
 ; 0,0,0,192,2560,19200,107520,501760,2064384,7741440,27033600,89210880,281149440,852819968,2504785920,7156531200,19964887040,54546923520,146314100736,386106654720,1004116377600,2577232035840,6536738897920,16401272143872,40748502220800
-; Formula: a(n) = 64*((n*2^n*binomial(n,2)^2-n*binomial(n,2)*2^n)/48)
+; Formula: a(n) = 64*((-n*binomial(n,2)*2^n+n*2^n*binomial(n,2)^2)/48)
 
 mov $1,2
 pow $1,$0

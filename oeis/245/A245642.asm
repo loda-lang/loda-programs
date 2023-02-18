@@ -13,7 +13,12 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,2372 ; Goldbach conjecture: number of decompositions of 2n into ordered sums of two odd primes.
+  mov $5,$0
+  bin $5,2
+  add $0,1
+  mul $0,2
+  seq $0,347739 ; Number of compositions (ordered partitions) of n into at most 2 prime parts.
+  min $0,$5
   mul $1,$0
   add $3,$1
 lpe

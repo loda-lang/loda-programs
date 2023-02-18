@@ -4,6 +4,21 @@
 
 mov $1,$0
 add $1,1
-seq $0,294513 ; Denominators of the partial sums of the reciprocals of twice the pentagonal numbers.
+add $0,1
+lpb $0
+  mov $3,$0
+  mov $5,$0
+  sub $0,1
+  max $2,1
+  mul $3,2
+  add $3,$0
+  mul $3,$5
+  mul $4,$3
+  add $4,$2
+  mul $2,$3
+lpe
+gcd $4,$2
+div $2,$4
+mov $0,$2
 mul $0,$1
 div $0,2

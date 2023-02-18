@@ -10,9 +10,16 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,60073 ; a(n) = (n^(n-1)-1)/(n-1)^2.
+  add $4,1
+  mov $6,1
+  add $6,$4
+  pow $6,$4
+  sub $6,1
+  div $6,$4
+  div $6,$4
   mov $2,$3
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
   add $1,$2
 lpe
 min $5,1

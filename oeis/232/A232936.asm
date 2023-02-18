@@ -1,11 +1,31 @@
 ; A232936: Number of n X 3 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, vertically or antidiagonally.
 ; Submitted by zioriga
 ; 12,26,84,252,774,2360,7212,22024,67272,205466,627562,1916768,5854418,17881234,54614930,166811210,509494028,1556155380,4752989126,14517127208,44339883148,135427981664,413639750856,1263386202642,3858779756370,11785929889856,35997945500610,109949074224514,335819135084346,1025697508452986,3132803550882916,9568569687984620,29225428401986630,89263671910357048,272639395163775692,832726664772624536,2543409758544946568,7768375234661185386,23727067014566059322,72469942826887996832,221346052173590410450
-; Formula: a(n) = 2*(0^n+A105262(n+2))
 
 pow $1,$0
 add $0,2
-seq $0,105262 ; a(n)=number of tilings of a 4 X n rectangle using tiles that are either 1 X 1 squares or trominoes (here by a tromino we mean a 2 X 2 square with the upper right 1 X 1 square removed; no rotations allowed).
+lpb $0
+  sub $0,1
+  add $3,$5
+  sub $3,$6
+  mov $6,$2
+  add $6,$3
+  add $2,$4
+  add $2,2
+  mov $7,$5
+  add $7,$2
+  mov $4,$5
+  add $4,$6
+  mov $5,$3
+  mov $3,$8
+  mov $6,$5
+  sub $6,$7
+  mov $8,$7
+  add $5,$2
+lpe
+mov $0,$4
+div $0,2
+add $0,1
 add $1,$0
 mov $0,$1
 mul $0,2

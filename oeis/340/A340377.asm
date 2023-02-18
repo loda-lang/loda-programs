@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,291759 ; Binary encoding of 2-digits in ternary representation of A048673(n).
+  seq $3,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
+  seq $3,289814 ; A binary encoding of the twos in ternary representation of n (see Comments for precise definition).
   max $3,1
   cmp $3,1
   sub $0,$3

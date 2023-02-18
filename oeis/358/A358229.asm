@@ -8,7 +8,12 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
-  seq $3,358227 ; Parity of A328382(n), where A328382(n) = A276086(n) mod A003415(n), with A003415 the arithmetic derivative and A276086 the primorial base exp-function.
+  add $3,2
+  mov $5,$3
+  seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  mod $3,$5
+  mod $3,2
   gcd $3,4
   add $3,1
   cmp $3,5

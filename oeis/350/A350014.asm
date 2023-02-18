@@ -7,7 +7,12 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,355448 ; a(n) = 1 if the number of divisors of n^2 is coprime to 6, otherwise 0.
+  seq $3,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $3,3
+  mul $3,2
+  add $3,1
+  mod $3,3
+  dif $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

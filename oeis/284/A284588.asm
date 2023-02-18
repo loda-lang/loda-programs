@@ -7,7 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,285208 ; 1-limiting word of the morphism 0->10, 1-> 0100.
+  mul $3,2
+  add $3,138
+  seq $3,284853 ; Positions of 1 in A284851; complement of A284852.
+  div $3,2
+  add $3,1
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

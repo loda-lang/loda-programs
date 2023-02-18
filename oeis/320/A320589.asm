@@ -13,7 +13,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
+  dif $0,4
+  mul $0,2
+  seq $0,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
   mul $1,$0
   mul $3,-1
   add $3,$1

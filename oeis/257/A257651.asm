@@ -10,7 +10,8 @@ lpb $0
   max $2,0
   mul $2,3
   add $2,1
-  seq $2,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+  mul $2,4
+  seq $2,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   sub $4,1
   mod $5,2
   add $5,1

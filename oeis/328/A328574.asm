@@ -5,8 +5,11 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,328572 ; Primorial base expansion of n converted into its prime product form, but with 1 subtracted from all nonzero digits: a(n) = A003557(A276086(n)).
   mov $3,$1
-  seq $3,328573 ; a(n) = A328475(n) / A328572(n).
+  seq $3,328475 ; Convert the primorial base expansion of n into its prime product form, then divide by the largest primorial which divides that product: a(n) = A111701(A276086(n)).
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

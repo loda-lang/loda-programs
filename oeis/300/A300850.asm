@@ -3,7 +3,13 @@
 
 lpb $0
   mov $1,$0
-  seq $1,51133 ; a(n) = binomial(2n,n)*n*(2n+1)/2.
+  add $1,1
+  mov $2,$1
+  mul $1,2
+  bin $1,$2
+  bin $2,2
+  mul $1,$2
+  div $1,2
   mul $1,$0
   mod $0,2
 lpe

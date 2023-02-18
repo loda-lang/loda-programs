@@ -8,8 +8,18 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,144834 ; Numbers n such that the two numbers n+1 and n+3 are both prime.
   mul $3,2
+  sub $3,1
+  mov $6,$3
+  sub $3,1
+  gcd $3,2
+  div $6,2
+  seq $6,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $6,1
+  mul $6,3
+  add $6,$3
+  mov $3,$6
+  mul $3,4
   mov $5,$3
   add $5,2
   add $3,2

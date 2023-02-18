@@ -5,7 +5,17 @@
 mul $0,25
 div $0,2
 add $0,1
-seq $0,116916 ; Expansion of q^(-1/8) * (eta(q)^3 + 3 * eta(q^9)^3) in powers of q^3.
+mul $0,3
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+sub $0,1
+bin $0,$1
+mul $1,2
+add $1,1
+mul $1,$0
+mov $0,$1
 mul $0,2
 mod $0,3
 dif $0,-2

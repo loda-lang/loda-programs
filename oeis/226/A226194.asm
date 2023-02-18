@@ -4,5 +4,26 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,53692 ; Number of self-conjugate 4-core partitions of n.
+mul $0,8
+add $0,5
+mov $3,$0
+lpb $0
+  add $5,1
+  min $0,$5
+  mov $4,$3
+  dif $4,$0
+  add $0,$4
+  mod $0,2
+  mul $0,2
+  sub $0,1
+  mul $4,$5
+  cmp $4,$3
+  mul $4,$0
+  sub $2,$4
+  sub $3,$5
+  mov $0,$3
+lpe
+mov $0,$2
+mul $0,4
+div $0,8
 mul $0,$1

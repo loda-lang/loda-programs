@@ -10,7 +10,13 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,58254 ; a(n) = lcm{prime(i)-1, i=1..n}.
+  add $4,1
+  seq $4,102476 ; Least modulus with 2^n square roots of 1.
+  add $4,1
+  div $4,4
+  sub $4,1
+  seq $4,96226 ; a(n) is the least exponent k > 1 such that m^k is congruent to m modulo n for all natural numbers m, or a(n) = 1 if no such k exists.
+  sub $4,1
   mov $2,$3
   mul $2,$4
   add $1,$2

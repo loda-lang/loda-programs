@@ -6,8 +6,14 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   mov $3,$1
-  seq $3,79068 ; Largest prime less than greatest prime factor of n but not dividing n, or 1 if no such prime exists.
+  seq $3,125903 ; a(n) = product of the first n primes which are coprime to n.
+  gcd $5,$3
+  mov $3,$5
+  sub $3,1
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,1
   add $3,$4
   cmp $3,1

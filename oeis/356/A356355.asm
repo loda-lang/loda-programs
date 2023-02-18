@@ -7,7 +7,12 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,343943 ; Number of distinct possible alternating sums of permutations of the multiset of prime factors of n.
+  seq $3,73184 ; Number of cubefree divisors of n.
+  mov $6,2
+  add $6,$3
+  add $6,2
+  div $6,4
+  mov $3,$6
   sub $3,9
   cmp $3,0
   sub $5,6

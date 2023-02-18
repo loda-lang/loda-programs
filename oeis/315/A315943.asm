@@ -4,7 +4,19 @@
 
 sub $1,$0
 mul $1,2
-seq $0,301720 ; Coordination sequence for node of type V1 in "krb" 2-D tiling (or net).
+cmp $2,$0
+mov $4,$0
+mul $4,$0
+mod $4,3
+mov $3,$0
+mul $3,$4
+add $3,46078
+div $3,3
+sub $3,15359
+mul $0,2
+sub $0,$3
+mul $0,3
+add $0,$2
 mul $0,4
 div $0,3
 add $0,$1

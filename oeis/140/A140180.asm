@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,93868 ; Smallest prime that differs from a multiple of n by unity.
+  mov $5,$3
+  seq $5,34694 ; Smallest prime == 1 (mod n).
+  seq $3,38700 ; Smallest prime == -1 (mod n).
+  min $3,$5
   sub $3,1
   mod $3,$1
   min $3,1

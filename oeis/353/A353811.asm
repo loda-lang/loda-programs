@@ -1,6 +1,7 @@
 ; A353811: a(n) = 1 if sigma(n) is odd, and has an odd number of prime factors (with multiplicity), otherwise 0. Here sigma is the sum of divisors function.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+; Formula: a(n) = A001222(A000203(n)^A000203(n)-1)%2
 
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 pow $0,$0

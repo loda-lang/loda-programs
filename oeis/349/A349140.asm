@@ -1,9 +1,12 @@
 ; A349140: a(n) = Sum_{d|n} d * A348507(n/d), where A348507(n) = A003959(n) - n, where A003959 is fully multiplicative with a(p) = (p+1).
 ; Submitted by Jamie Morken(l1)
 ; 0,1,1,7,1,11,1,33,10,15,1,61,1,19,17,131,1,77,1,89,21,27,1,263,16,31,67,117,1,145,1,473,29,39,25,379,1,43,33,395,1,189,1,173,137,51,1,997,22,155,41,201,1,443,33,527,45,63,1,743,1,67,177,1611,37,277,1,257,53,265,1,1541,1,79,187,285,37,321,1,1521,376,87,1,987,45,91,65,791,1,955,41,341,69,99,49,3503,1,257,257,829
-; Formula: a(n) = -A038040(n)+A349170(n)
+; Formula: a(n) = -A000005(n)*(n+1)+A349170(n)
 
+mov $2,$0
+add $2,1
 mov $1,$0
-seq $1,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mul $1,$2
 seq $0,349170 ; a(n) = Sum_{d|n} d * A003959(n/d), where A003959 is fully multiplicative with a(p) = (p+1).
 sub $0,$1

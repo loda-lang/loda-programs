@@ -7,7 +7,8 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,332814 ; a(n) is -1, 0, or +1 such that a(n) == A156552(n) (mod 3).
+  seq $3,156552 ; Unary-encoded compressed factorization of natural numbers.
+  mod $3,3
   cmp $3,0
   sub $0,$3
   add $1,1

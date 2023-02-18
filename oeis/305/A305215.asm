@@ -9,7 +9,8 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,181062 ; Prime powers minus 1.
+  seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
+  sub $0,1
   seq $0,56793 ; Number of divisors of lcm(1..n).
   mov $2,$3
   mul $2,$0

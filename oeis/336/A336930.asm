@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,336848 ; a(n) = A003973(n) / A336846(n).
+  seq $3,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  seq $3,99378 ; Denominators of the harmonic means of the divisors of the positive integers.
   add $3,$4
   gcd $3,2
   sub $0,$3

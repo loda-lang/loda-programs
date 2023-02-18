@@ -6,7 +6,8 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
-  seq $1,45542 ; Sub-perfect powers: perfect powers (squares, cubes etc.) minus 1.
+  seq $1,216765 ; Perfect powers (squares, cubes, etc.) plus 1.
+  sub $1,2
   mov $0,0
 lpe
 mov $0,$1

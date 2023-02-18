@@ -13,7 +13,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,160656 ; The odd prime numbers together with 0: p - (-1)^p - 1 where p = n-th prime.
+  seq $0,40 ; The prime numbers.
   mul $1,$0
   add $3,$1
 lpe

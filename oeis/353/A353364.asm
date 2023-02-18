@@ -13,7 +13,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,332814 ; a(n) is -1, 0, or +1 such that a(n) == A156552(n) (mod 3).
+  seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
+  mod $0,3
+  dif $0,-2
   mul $1,$0
   add $3,$1
 lpe

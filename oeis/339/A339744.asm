@@ -6,8 +6,11 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,338790 ; a(n) = rad(n)^2 - sigma(n), where rad(n) is the squarefree kernel of n (A007947) and sigma(n) is the sum of divisors of n (A000203).
+  seq $3,78615 ; a(n) = rad(n)^2, where rad is the squarefree kernel of n (A007947).
+  sub $3,$5
   mul $3,-4
   trn $3,3
   min $3,1

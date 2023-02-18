@@ -7,7 +7,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,348689 ; a(n) = sigma(n) + sigma(n+1) - sigma(n+2), where sigma is the sum of divisors.
+  add $3,2
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,$1
+  seq $5,92403 ; a(n) = sigma(n) + sigma(n+1).
+  sub $5,$3
+  mov $3,$5
   mul $3,20
   trn $3,3
   min $3,1

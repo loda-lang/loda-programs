@@ -9,9 +9,14 @@ pow $2,2
 bin $2,2
 lpb $2
   mov $3,$1
-  seq $3,83721 ; Number of primes greater than the greatest prime factor of n but not greater than n.
+  seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+  sub $3,1
+  sub $3,$1
+  mov $4,$1
+  seq $4,243291 ; Difference between n and the index of its largest prime factor: a(n) = n - A061395(n).
+  mod $4,$3
   add $1,1
-  add $2,$3
+  add $2,$4
   sub $2,$0
 lpe
 mov $0,$1

@@ -9,8 +9,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   div $0,3
-  seq $0,7601 ; Positions where A007600 increases.
+  mov $4,$0
+  min $4,1
+  seq $0,792 ; a(n) = max{(n - i)*a(i) : i < n}; a(0) = 1.
   sub $0,1
+  add $0,$4
   add $1,1
   add $3,$0
 lpe

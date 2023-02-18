@@ -4,7 +4,19 @@
 
 mov $1,$0
 mul $1,8
+mov $2,$1
+add $2,12
 add $1,11
-seq $1,358 ; Number of binary necklaces of length n with no subsequence 00, excluding the necklace "0".
-mov $0,$1
+mov $3,$1
+lpb $3
+  sub $3,1
+  mov $1,$2
+  gcd $1,$3
+  sub $1,1
+  seq $1,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+  add $4,$1
+lpe
+div $4,$2
+add $4,1
+mov $0,$4
 mul $0,2

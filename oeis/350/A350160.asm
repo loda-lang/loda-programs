@@ -8,7 +8,7 @@ add $2,9
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,306577 ; Last odd number reached by n before 1 through Collatz iteration, where a(n) = 1 when no other odd number is reached, or -1 if 1 is never reached.
+  seq $3,238192 ; In the Collatz (3x+1) iteration of n, the last odd number before 1, or 0 if there is no such number.
   div $3,8
   dif $3,2
   mod $3,2

@@ -7,8 +7,13 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  sub $5,1
+  seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $3,$1
-  seq $3,243055 ; Difference between the indices of the smallest and the largest prime dividing n: If n = p_i * ... * p_k, where p_i <= ... <= p_k, where p_h = A000040(h), then a(n) = (k-i), a(1) = 0 by convention.
+  seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $3,$5
   pow $3,2
   trn $3,3
   min $3,1

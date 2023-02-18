@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,57449 ; Product of differences between consecutive positive divisors of n.
+  seq $3,34729 ; a(n) = Sum_{ k, k|n } 2^(k-1).
+  seq $3,124758 ; Product of the parts of the compositions in standard order.
   gcd $3,2
   sub $0,$3
   add $0,1

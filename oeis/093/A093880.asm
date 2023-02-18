@@ -7,9 +7,20 @@ mov $2,1
 mov $3,$0
 lpb $0
   sub $0,1
+  mov $5,$3
+  seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $5,1
+  mod $5,2
   mov $1,$3
-  seq $1,20500 ; Cyclotomic polynomials at x=1.
-  mul $2,$1
+  seq $1,214606 ; a(n) = gcd(n, 2^n - 2).
+  sub $1,1
+  mul $5,$1
+  mov $1,$5
+  add $1,1
+  mov $4,$3
+  min $4,1
+  mul $4,$1
+  mul $2,$4
   add $3,1
 lpe
 mov $0,$2

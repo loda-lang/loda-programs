@@ -8,7 +8,10 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,327168 ; Number of common divisors of n and A276086(n), with a(0) = 1.
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  gcd $3,$1
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,1
   add $3,$4
   cmp $3,1

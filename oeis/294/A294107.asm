@@ -5,5 +5,20 @@
 mov $1,$0
 cmp $1,3
 add $1,1
-seq $0,55679 ; Number of distinct prime factors of phi(n!).
+mov $5,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$5
+  sub $0,$3
+  mov $4,$0
+  div $0,2
+  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,1
+  mul $4,$0
+  div $4,2
+  mod $4,2
+  add $2,$4
+lpe
+mov $0,$2
 mul $0,$1

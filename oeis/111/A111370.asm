@@ -1,7 +1,8 @@
 ; A111370: Number of partitions of (6*n + 1).
 ; Submitted by Nuadormrac
 ; 15,101,490,1958,6842,21637,63261,173525,451276,1121505,2679689,6185689,13848650,30167357,64112359,133230930,271248950,541946240,1064144451,2056148051,3913864295,7346629512,13610949895,24908858009,45060624582
+; Formula: a(n) = A000041(6*n+7)
 
-add $0,1
-mul $0,2
-seq $0,111295 ; Number of partitions of 3n+1.
+mul $0,6
+add $0,7
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).

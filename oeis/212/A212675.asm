@@ -4,6 +4,20 @@
 
 mov $1,$0
 pow $1,4
-seq $0,212568 ; Number of (w,x,y,z) with all terms in {1,...,n} and  w<|x-y|+|y-z|.
+lpb $0
+  sub $0,2
+  mov $4,$0
+  bin $4,2
+  mov $5,1
+  add $5,$0
+  mov $3,$0
+  add $3,$5
+  mul $3,$5
+  add $3,$4
+  mul $3,$5
+  add $2,$3
+lpe
+mov $0,$2
+mul $0,2
 sub $1,$0
 mov $0,$1

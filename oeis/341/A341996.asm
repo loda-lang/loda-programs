@@ -8,7 +8,10 @@ sub $2,1
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,341997 ; a(n) = A327936(A003415(n)).
+  add $3,2
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  sub $3,1
+  seq $3,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
   cmp $3,1
   add $1,1
 lpe

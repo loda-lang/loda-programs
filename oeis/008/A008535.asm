@@ -7,8 +7,19 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,222410 ; Partial sums of A008534, or crystal ball sequence for {A_6}* lattice.
+  pow $2,2
+  mov $5,2
+  add $5,$2
+  add $5,$0
+  mov $4,$5
+  mul $4,$5
+  add $4,2
+  add $5,1
+  mul $4,$5
+  mov $2,$4
+  div $2,72
+  mul $2,14
+  add $2,1
   add $1,$2
   div $3,2
 lpe

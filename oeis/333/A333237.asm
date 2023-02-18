@@ -7,8 +7,14 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,333236 ; Largest digit in the decimal expansion of 1/n.
+  mov $6,1
+  add $6,$1
+  mov $5,10
+  pow $5,$1
+  div $5,$6
+  mov $3,$5
+  seq $3,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+  mod $3,10
   trn $3,8
   sub $0,$3
   add $1,1

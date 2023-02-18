@@ -7,8 +7,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mov $3,$1
-  seq $3,344478 ; Number of unitary prime divisors p of n such that n/p is squarefree.
+  mul $3,$5
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

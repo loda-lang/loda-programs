@@ -9,7 +9,9 @@ pow $2,4
 lpb $2
   sub $2,14
   mov $3,$1
-  seq $3,193138 ; Number of square satins of order n.
+  add $3,2
+  seq $3,89 ; Number of solutions to x^2 + 1 == 0 (mod n).
+  div $3,2
   cmp $3,2
   sub $0,$3
   mov $4,$0

@@ -4,8 +4,20 @@
 
 pow $1,$0
 add $0,2
-seq $0,256911 ; Number of terms in the enhanced triangular-number representation of n.
-sub $0,1
+lpb $0
+  mov $3,$0
+  seq $3,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
+  sub $0,$3
+  mov $4,$0
+  cmp $4,0
+  add $0,$4
+  mov $5,$3
+  min $5,1
+  mod $5,$0
+  mov $0,$3
+  add $2,$5
+lpe
 sub $1,2
 gcd $1,4
+mov $0,$2
 add $0,$1

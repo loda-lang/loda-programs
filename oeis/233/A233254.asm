@@ -5,7 +5,25 @@
 mov $1,8
 pow $1,$0
 pow $1,2
-seq $0,233153 ; Number of n X 6 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally or antidiagonally.
+mov $3,1
+mul $0,2
+add $0,2
+lpb $0
+  sub $0,1
+  mul $2,4
+  add $3,$5
+  mov $6,$2
+  add $6,$3
+  add $2,$4
+  add $2,1
+  mov $4,$5
+  add $4,$6
+  sub $4,$2
+  mov $5,$3
+  add $5,$2
+lpe
+mov $0,$5
+mul $0,12
 add $0,6
 mul $0,$1
 dif $0,2

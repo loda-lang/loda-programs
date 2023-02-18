@@ -6,8 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,286728 ; Positions of 1 in A286063; complement of A286727.
-  sub $3,1
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  gcd $3,2
+  add $3,$1
+  mul $3,2
+  sub $3,2
+  add $3,$1
   add $0,1
   add $1,1
   add $2,$3

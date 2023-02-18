@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,336839 ; Denominator of the arithmetic mean of the divisors of A003961(n).
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  sub $3,1
+  seq $3,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
   cmp $3,1
   sub $0,$3
   add $1,1

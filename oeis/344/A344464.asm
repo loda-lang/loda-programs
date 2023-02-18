@@ -13,7 +13,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,133032 ; a(n) = n^p(n), where p(n) is the partition number of n.
+  mov $5,$0
+  seq $5,41 ; a(n) is the number of partitions of n (the partition numbers).
+  pow $0,$5
   mul $1,$0
   add $3,$1
 lpe

@@ -14,7 +14,12 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,324529 ; a(n) = lcm(sigma(n), pod(n)) where sigma(k) = the sum of divisors of k (A000203) and pod(n) = the product of divisors of k (A007955).
+  mov $5,$0
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $5,6
+  seq $0,244668 ; Numerators of (product of divisors of n / sum of divisors of n).
+  mul $0,$5
+  div $0,6
   mul $1,$0
   add $3,$1
 lpe

@@ -7,8 +7,11 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,18
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,54024 ; Sum of the divisors of n reduced modulo n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $3,$5
   mod $3,3
   gcd $3,4
   add $3,1

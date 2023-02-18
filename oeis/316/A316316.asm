@@ -7,8 +7,12 @@ lpb $2
   sub $2,1
   mov $0,$1
   add $0,$2
-  trn $0,1
-  seq $0,316357 ; Partial sums of A316316.
+  bin $0,2
+  mul $0,10
+  add $0,6
+  div $0,12
+  mul $0,4
+  add $0,1
   mov $4,$2
   mul $4,$0
   add $3,$4

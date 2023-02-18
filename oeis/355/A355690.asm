@@ -1,4 +1,4 @@
-; A355690: Dirichlet inverse of A152822, characteristic function of numbers not congruent to 2 mod 4.
+; A355690: Dirichlet inverse of A152822, where A152822 is the characteristic function of numbers not congruent to 2 mod 4.
 ; Submitted by GolfSierra
 ; 1,0,-1,-1,-1,0,-1,-1,0,0,-1,1,-1,0,1,0,-1,0,-1,1,1,0,-1,1,0,0,0,1,-1,0,-1,1,1,0,1,0,-1,0,1,1,-1,0,-1,1,0,0,-1,0,0,0,1,1,-1,0,1,1,1,0,-1,-1,-1,0,0,1,1,0,-1,1,1,0,-1,0,-1,0,0,1,1,0,-1,0,0,0,-1,-1,1,0,1,1,-1,0,1,1,1,0,1,-1,-1,0,0,0
 

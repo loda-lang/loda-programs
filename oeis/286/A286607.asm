@@ -8,7 +8,10 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,286604 ; a(n) = n mod sum of digits of n in factorial base.
+  add $3,1
+  mov $5,$3
+  seq $5,34968 ; Minimal number of factorials that add to n.
+  mod $3,$5
   mul $3,4
   trn $3,3
   min $3,1

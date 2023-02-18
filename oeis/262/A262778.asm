@@ -1,11 +1,21 @@
 ; A262778: a(n) = 10^n + prime(n).
 ; Submitted by Jamie Morken(s1)
 ; 12,103,1005,10007,100011,1000013,10000017,100000019,1000000023,10000000029,100000000031,1000000000037,10000000000041,100000000000043,1000000000000047,10000000000000053,100000000000000059,1000000000000000061
-; Formula: a(n) = 10^(n+1)+max(A006005(n),2)
 
 mov $3,$0
 add $3,1
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $4,1
+lpb $0
+  sub $0,1
+  add $4,1
+  mov $5,$4
+  cmp $5,0
+  add $5,$4
+  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$5
+  mov $4,$6
+lpe
+mov $0,$4
 max $0,2
 mov $1,10
 pow $1,$3

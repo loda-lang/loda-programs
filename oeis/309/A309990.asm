@@ -4,8 +4,26 @@
 
 mov $1,17
 pow $1,$0
+mov $2,1
 add $0,1
-seq $0,286878 ; One of the two successive approximations up to 17^n for 17-adic integer sqrt(-1). Here the 13 (mod 17) case (except for n=0).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  add $3,$2
+  mul $3,8
+  add $5,1
+  add $2,$3
+  add $4,1
+  pow $4,2
+  mul $4,2
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  mov $5,$3
+lpe
+sub $2,$3
+mov $0,$2
 add $0,$1
 div $0,$1
 sub $0,1

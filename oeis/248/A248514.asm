@@ -3,7 +3,9 @@
 
 lpb $0
   mov $1,$0
-  seq $1,1285 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and 2's.
+  seq $1,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mod $1,2
+  add $1,1
   div $0,$1
 lpe
 div $0,2

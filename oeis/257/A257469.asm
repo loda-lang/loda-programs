@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+  mul $2,3
+  seq $2,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+  mod $2,3
+  dif $2,-2
   add $4,6
   add $1,$2
   mov $3,$4

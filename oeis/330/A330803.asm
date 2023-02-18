@@ -12,7 +12,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,80245 ; Inverse of coordination sequence array A113413.
+  gcd $4,$0
+  seq $4,80247 ; Formal inverse of triangle A080246. Unsigned version of A080245.
+  seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
+  mul $0,$4
   add $1,$0
   mul $1,2
 lpe

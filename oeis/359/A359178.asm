@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353507 ; Product of multiplicities of the prime exponents (signature) of n; a(1) = 0.
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

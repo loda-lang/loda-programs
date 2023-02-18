@@ -7,8 +7,17 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $5,2
   mov $3,$1
-  seq $3,82895 ; Closest number to sigma(n) = A000203(n) which is divisible by n.
+  add $3,1
+  add $5,$3
+  mul $3,2
+  div $5,$3
+  mul $5,$3
+  mov $3,$5
+  div $3,2
   sub $3,3
   mod $3,2
   sub $0,$3

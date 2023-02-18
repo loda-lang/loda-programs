@@ -16,7 +16,12 @@ lpb $4
   bin $0,$1
   mul $1,$0
   sub $0,1
-  seq $0,336040 ; Characteristic function of refactorable numbers (A033950).
+  mov $5,1
+  add $5,$0
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $5,$0
+  bin $5,$0
+  mov $0,$5
   mul $0,$3
   mul $1,$0
   max $3,$1

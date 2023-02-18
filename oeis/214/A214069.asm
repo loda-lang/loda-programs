@@ -1,9 +1,9 @@
 ; A214069: Least m>0 such that prime(n)+m and n-m are relatively prime.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 2,1,2,1,2,1,2,1,2,2,6,1,2,1,2,2,2,1,2,1,2,1,2,1,2,1,4,2,4,1,2,1,2,1,2,1,2,1,2,2,2,1,2,1,2,2,6,1,2,1,2,2,6,1,2,2,2,1,4,1,2,1,2,2,4,1,2,1,2,1,2,1,2,1,2,2,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,2,4,1,2,1,2,1
 
 mov $1,$0
-seq $1,6005 ; The odd prime numbers together with 1.
+seq $1,40 ; The prime numbers.
 add $0,1
 lpb $0
   add $3,9

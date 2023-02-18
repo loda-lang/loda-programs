@@ -6,9 +6,12 @@ mov $2,$0
 pow $2,2
 add $2,180
 lpb $2
+  mov $4,$1
+  seq $4,204987 ; Least k such that n divides 2^k - 2^j for some j satisfying 1 <= j < k.
   mov $3,$1
-  seq $3,54703 ; Number of distinct powers of 2 modulo n.
-  sub $3,1
+  mod $3,2
+  sub $3,2
+  add $3,$4
   add $1,1
   add $2,$3
   sub $2,$0

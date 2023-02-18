@@ -7,5 +7,10 @@ add $1,1
 dif $1,2
 dif $1,2
 sub $1,1
-seq $1,55035 ; Degree of minimal polynomial of sin(Pi/n) over the rationals.
+mov $2,$1
+trn $2,1
+seq $1,62570 ; a(n) = phi(2*n).
+add $2,$1
+gcd $2,4
+div $1,$2
 mov $0,$1

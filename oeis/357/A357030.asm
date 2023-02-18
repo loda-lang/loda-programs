@@ -5,7 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,283001 ; a(n) = (A004186(n) - n)/9.
+  seq $2,4186 ; Arrange digits of n in decreasing order.
+  sub $2,$0
   cmp $2,0
   sub $0,1
   add $1,$2

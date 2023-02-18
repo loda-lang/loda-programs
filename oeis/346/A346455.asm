@@ -7,8 +7,10 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,76479 ; a(n) = mu(rad(n)), where mu is the Moebius-function (A008683) and rad is the radical or squarefree kernel (A007947).
-  sub $0,$3
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  mov $5,-1
+  pow $5,$3
+  sub $0,$5
   add $1,1
   mov $4,$0
   max $4,0

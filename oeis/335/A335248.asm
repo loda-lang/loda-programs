@@ -8,7 +8,12 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,309395 ; Number of integer-sided triangles with sides a,b,c, max(a,b) < c, a + c = n that are right triangles.
+  mul $3,2
+  add $3,1
+  seq $3,8833 ; Largest square dividing n.
+  seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  sub $3,1
+  div $3,2
   min $3,1
   sub $0,$3
   add $1,1

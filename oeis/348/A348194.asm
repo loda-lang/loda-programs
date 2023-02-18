@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,348193 ; (Number of primes == 3 mod 4 less than n^2) - (number of primes == 1 mod 4 less than n^2).
+  add $0,1
+  pow $0,2
+  sub $0,1
+  seq $0,66520 ; Number of primes of the form 4m+3 <= n minus number of primes of the form 4m+1 <= n.
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -6,5 +6,14 @@ mov $1,$0
 cmp $1,0
 mul $1,2
 add $0,$1
+mov $3,$0
+mov $4,$0
 sub $0,1
-seq $0,53222 ; First differences of sigma(n).
+seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $3,1
+sub $3,$4
+mov $2,$0
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $2,$3
+sub $0,$2
+add $0,2

@@ -12,7 +12,16 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $0,1
-  seq $0,139262 ; Total number of two-element anti-chains over all ordered trees on n edges.
+  mov $6,$0
+  mul $6,2
+  bin $6,$0
+  mov $5,4
+  pow $5,$0
+  sub $5,$6
+  mul $6,$0
+  sub $6,$5
+  mov $0,$6
+  div $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

@@ -9,8 +9,8 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
-  seq $0,18892 ; Number of ways to write 1/n as a sum of exactly 2 unit fractions.
-  sub $0,1
+  seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $0,3
   mov $2,$3
   mul $2,$0
   add $1,$2

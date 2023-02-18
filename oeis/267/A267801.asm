@@ -1,10 +1,25 @@
 ; A267801: Binary representation of the n-th iteration of the "Rule 213" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,11,10011,1110011,111110011,11111110011,1111111110011,111111111110011,11111111111110011,1111111111111110011,111111111111111110011,11111111111111111110011,1111111111111111111110011,111111111111111111111110011,11111111111111111111111110011,1111111111111111111111111110011,111111111111111111111111111110011,11111111111111111111111111111110011,1111111111111111111111111111111110011,111111111111111111111111111111111110011,11111111111111111111111111111111111110011
-; Formula: a(n) = 10*A007088(A267802(n)/2)+1
 
-seq $0,267802 ; Decimal representation of the n-th iteration of the "Rule 213" elementary cellular automaton starting with a single ON (black) cell.
+mov $1,4
+pow $1,$0
+mov $2,6
+mod $2,$1
+sub $1,$2
+mul $1,2
+sub $1,1
+mov $4,1
+mov $0,$1
 div $0,2
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3
 mul $0,10
 add $0,1

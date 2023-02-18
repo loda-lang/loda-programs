@@ -1,11 +1,13 @@
 ; A259373: a(n) = Product_{k=0..n} p(k)^k, where p(k) is the partition function A000041.
 ; Submitted by Nuadormrac
 ; 1,1,4,108,67500,1134472500,2009787236572500,343390991123754492187500,18843880602308850038793150000000000,370904101895245095313565571450000000000000000000,6335115544513765517772271190776403515352524800000000000000000000
+; Formula: a(n) = a(n-1)*A000041(n)^n, a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,133018 ; Partition number of n, raised to power n.
+  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+  pow $2,$0
   sub $0,1
   mul $1,$2
 lpe

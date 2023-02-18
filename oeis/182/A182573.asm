@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,179246 ; Numbers that have 6 terms in their Zeckendorf representation.
+  seq $3,23688 ; Numbers with exactly 6 ones in binary expansion.
+  seq $3,48680 ; Nonnegative integers A001477 expanded with rewrite 0->0, 01->1, then interpreted as Zeckendorffian expansions (as numbers of Fibonacci number system).
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

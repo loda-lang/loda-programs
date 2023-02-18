@@ -12,8 +12,13 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,188164 ; Number of palindromic structures of length n.
-  mul $1,$0
+  add $0,1
+  div $0,2
+  mov $5,$0
+  seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $5,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
+  div $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

@@ -5,7 +5,13 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,249066 ; a(n) is the number of new prime distinct divisors of n^2+1 not already present in m^2+1 for all m < n.
+  seq $2,120294 ; Numerator of determinant of n X n matrix with elements M[j,j] = (i+j)/(i+j-1).
+  div $2,2
+  mov $3,$2
+  cmp $3,0
+  mov $2,$3
+  add $2,1
+  mod $2,2
   sub $0,1
   add $1,$2
 lpe

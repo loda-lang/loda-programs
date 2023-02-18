@@ -3,7 +3,21 @@
 
 mov $1,$0
 cmp $1,1
+mov $2,1
+mov $3,1
+mov $4,1
+mov $6,1
 max $0,1
-seq $0,164394 ; Number of binary strings of length n with no substrings equal to 0001 or 0100.
-sub $0,1
+lpb $0
+  sub $0,1
+  mov $5,$6
+  mov $6,$3
+  add $3,$5
+  mov $7,$3
+  add $3,$2
+  mov $2,$4
+  mov $4,$5
+lpe
+mov $0,$7
 add $0,$1
+sub $0,1

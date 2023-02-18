@@ -4,7 +4,34 @@
 
 mov $2,$0
 mov $3,$0
-seq $0,176289 ; Denominators of the rational sequence with e.g.f. (x/2)*(1+exp(-x))/(1-exp(-x)).
+sub $0,1
+mov $4,$0
+gcd $4,2
+add $0,1
+mov $7,$0
+mov $8,2
+mov $9,$0
+lpb $9
+  sub $9,2
+  mov $0,$7
+  sub $0,$9
+  mov $5,$0
+  mov $6,$0
+  gcd $6,$9
+  bin $6,$0
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $0,$5
+  add $0,1
+  mul $0,$8
+  mul $6,$0
+  max $8,$6
+lpe
+mov $0,$8
+sub $0,1
+div $0,2
+add $0,1
+mul $0,2
+div $0,$4
 add $1,$2
 cmp $1,1
 add $1,$0

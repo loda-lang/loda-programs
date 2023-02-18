@@ -4,9 +4,20 @@
 
 mul $0,2
 mov $1,$0
-seq $1,85537 ; a(n) = n^4 - n^3.
-sub $0,1
-trn $0,2
-seq $0,121566 ; a(n) is the denominator of Sum_{i=1..n} i!/(i^2).
-gcd $1,$0
+sub $1,1
+mul $1,$0
+mov $3,1
+sub $0,3
+lpb $0
+  mul $2,$0
+  mul $2,$0
+  add $2,$3
+  mov $4,$0
+  sub $0,1
+  mul $3,$4
+lpe
+gcd $2,$3
+div $3,$2
+gcd $1,$3
+mov $0,$3
 div $0,$1

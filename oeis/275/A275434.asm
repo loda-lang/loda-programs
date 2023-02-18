@@ -7,8 +7,16 @@ lpb $4
   sub $4,1
   mov $0,$2
   add $0,$4
-  trn $0,2
-  seq $0,140960 ; a(n) = (2*(-1)^n - 2^(n+1) + 3*n*2^n)/9.
+  sub $0,3
+  mov $6,2
+  pow $6,$0
+  mul $0,$6
+  add $6,1
+  div $6,3
+  add $6,$0
+  mov $0,$6
+  div $0,3
+  mul $0,2
   mov $3,$4
   mul $3,$0
   add $1,$3

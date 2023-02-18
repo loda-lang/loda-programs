@@ -4,12 +4,11 @@
 
 add $0,2
 mov $1,$0
+div $1,2
 sub $0,1
 gcd $0,2
-div $1,2
-add $1,1
 mov $6,$1
-add $6,1
+add $6,2
 lpb $6
   sub $6,1
   mov $2,$4
@@ -24,6 +23,5 @@ lpb $6
   add $4,1
   add $5,$2
 lpe
-mov $1,$2
-mul $0,$1
+mul $0,$2
 div $0,2

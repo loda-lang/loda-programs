@@ -4,8 +4,27 @@
 
 mov $1,13
 pow $1,$0
+mov $2,1
+mov $5,-4
 add $0,1
-seq $0,324084 ; One of the four successive approximations up to 13^n for 13-adic integer 3^(1/4).This is the 11 (mod 13) case (except for n = 0).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,12
+  sub $5,7
+  add $2,$3
+  add $4,$2
+  pow $4,4
+  mul $4,2
+  add $4,$5
+  mod $4,$2
+  mov $6,$2
+  sub $6,$4
+  mov $3,1
+  add $3,$4
+  mov $5,$3
+lpe
+mov $0,$6
 add $0,$1
 div $0,$1
 sub $0,1

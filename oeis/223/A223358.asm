@@ -1,11 +1,27 @@
 ; A223358: Rolling cube footprints: number of 3 X n 0..5 arrays starting with 0 where 0..5 label faces of a cube and every array movement to a horizontal or antidiagonal neighbor moves across a corresponding cube edge.
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 36,1024,36864,1327104,48365568,1764753408,64399343616,2350085308416,85760296353792,3129600934674432,114206719453691904,4167679858509348864,152088734250301390848,5550086348122858979328,202536095940875781144576,7391032785075305296429056,269716691122580111870656512,9842615448413565396883341312,359180881472852361555889618944,13107380481517158091434517069824,478320066432161221378226811568128,17455057955652252619425454277787648,636977349722773468440605139230785536
-; Formula: a(n) = 4*((A233156(n)*8^n)/3)
 
 mov $1,8
 pow $1,$0
-seq $0,233156 ; Number of 3 X n 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally or antidiagonally.
+mov $2,7
+mov $3,20
+mov $4,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  add $3,$4
+  sub $2,$3
+  max $2,2
+  sub $2,$3
+  mul $2,-1
+  add $3,$2
+  mul $2,2
+  add $4,$3
+lpe
+mov $0,$2
+mul $0,3
+add $0,6
 mul $0,$1
 div $0,3
 mul $0,4

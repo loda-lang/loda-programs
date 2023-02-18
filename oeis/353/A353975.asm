@@ -14,7 +14,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $1,$0
-  seq $0,165560 ; The arithmetic derivative of n, modulo 2.
+  sub $0,1
+  seq $0,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
+  mod $0,2
   mul $0,$3
   mul $1,$0
   max $3,$1

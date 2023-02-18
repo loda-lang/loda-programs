@@ -10,7 +10,8 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,97988 ; a(n) = Sum_{d dividing n} tau(d)^3 = (Sum_{d dividing n} tau(d))^2.
+  seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+  pow $0,2
   add $3,$0
 lpe
 mov $0,$3

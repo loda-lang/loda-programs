@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,335909 ; Parity of A323173: a(n) = A000035(A323173(n)).
+  seq $3,322865 ; a(n) = A000265(A122111(n)).
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mod $3,2
   add $5,2
   sub $0,$3
   add $1,$5

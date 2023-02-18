@@ -1,8 +1,23 @@
 ; A267947: Number of n X 2 0..2 arrays with every repeated value in every row and column one larger mod 3 than the previous repeated value, and upper left element zero.
 ; Submitted by Jamie Morken(w2)
 ; 3,27,192,1323,8427,52272,312987,1839267,10603200,60345675,339437307,1892440368,10469566875,57562540083,314803596288,1714050117387,9297584295627,50273174113200,271095016843803,1458482479179075,7831022890554048,41975611311282507,224667542882703387,1200984403675714992,6413034928394931483,34212427990038277587,182370123266948205312,971450550017917775883,5171611636294407368427,27517224939098293457712,146348181845379579653787,778037048170006851923427,4134911019028389587755200
-; Formula: a(n) = 3*A267946(n)^2
+; Formula: a(n) = 3*((b(n)+1)/3)^2, b(n) = 6*c(n-2)+3*b(n-2)+b(n-1)+3, b(2) = 23, b(1) = 8, b(0) = 2, c(n) = 2*c(n-1), c(2) = 4, c(1) = 2, c(0) = 1
 
-seq $0,267946 ; Number of n X 1 0..2 arrays with every repeated value in every row and column one larger mod 3 than the previous repeated value, and upper left element zero.
+mov $1,2
+mov $2,1
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  add $3,$4
+  mul $3,3
+  mov $4,$1
+  add $4,1
+  add $1,$3
+  mul $2,2
+lpe
+mov $0,$1
+add $0,1
+div $0,3
 pow $0,2
 mul $0,3

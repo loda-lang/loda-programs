@@ -1,9 +1,22 @@
 ; A267913: Number of 2 X n 0..2 arrays with every repeated value in every row unequal to the previous repeated value, and in every column equal to the previous repeated value, and new values introduced in row-major sequential order.
 ; Submitted by stoneageman
 ; 2,14,96,726,5046,35574,242406,1653750,11113926,74553750,496532454,3300259254,21854907654,144501754326,953526151206,6285325782006,41384363469126,272296902013974,1790471038255206,11767947840324150,77315730800250246,507827083733784150,3334759421908103334,21894728618089926774,143732446552346839494,943462950121360920726,6192395742431501940966,40641044176754571196086,266715994840443572313606,1750315461739227131241174,11486038155967097965812006,75372659237006518412719350,494594521711186155782621766
-; Formula: a(n) = (A269461(n)^2+4)/6
+; Formula: a(n) = ((3*d(n))^2+4)/6, b(n) = 4*b(n-2)+2*c(n-2)+b(n-1), b(2) = 22, b(1) = 8, b(0) = 3, c(n) = 2*c(n-1), c(2) = 4, c(1) = 2, c(0) = 1, d(n) = b(n-1), d(2) = 8, d(1) = 3, d(0) = 1
 
-seq $0,269461 ; Number of length-n 0..2 arrays with no repeated value equal to the previous repeated value.
+mov $1,3
+mov $2,1
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $4,4
+  mul $2,2
+  add $3,$4
+  mov $4,$1
+  add $1,$3
+lpe
+mov $0,$4
+mul $0,3
 pow $0,2
 add $0,4
 div $0,6

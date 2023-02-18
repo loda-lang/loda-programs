@@ -7,7 +7,19 @@ mod $1,2
 mul $0,2
 add $0,$1
 add $0,1
-seq $0,133217 ; Indices of decagonal numbers (A001107) that are also triangular (A000217).
+lpb $0
+  sub $4,2
+  sub $4,$0
+  add $4,$3
+  sub $0,1
+  trn $4,$0
+  mov $2,$4
+  mul $2,16
+  add $3,1
+  add $3,$2
+  add $4,$3
+lpe
+mov $0,$4
 mul $0,72
 sub $0,72
 div $0,54

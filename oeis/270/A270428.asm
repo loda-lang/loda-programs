@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,355825 ; a(n) = 1 if all exponents in prime factorization of n have an odd binary weight, otherwise 0.
+  seq $3,112622 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = product_{p|n} b(p,n)^b(p,n).
+  sub $3,1
+  seq $3,213852 ; Least m>0 such that n+1+m and n-m are relatively prime.
+  sub $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

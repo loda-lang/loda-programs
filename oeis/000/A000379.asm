@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,46645 ; a(n) = log_2(A046644(n)); also the 2-adic valuation of A046644(n).
+  add $3,1
+  pow $3,2
+  sub $3,1
+  seq $3,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
   mod $3,2
   cmp $3,0
   sub $0,$3

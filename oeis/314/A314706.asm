@@ -5,8 +5,8 @@
 mov $1,$0
 add $1,1
 div $1,3
+mov $3,$0
 mov $2,$0
-mov $3,$2
 lpb $2
   add $4,7
   trn $2,$4

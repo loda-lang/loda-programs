@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,72670 ; Number of ways to write n as i*j + i + j, 0 < i <= j.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,1
+  div $3,2
   cmp $3,1
   sub $0,$3
   add $1,1

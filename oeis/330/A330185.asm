@@ -6,7 +6,9 @@ mul $0,2
 mov $1,$0
 lpb $0
   mov $2,$0
-  seq $2,285685 ; Characteristic sequence of the Beatty sequence, A022839, of sqrt(5).
+  mul $2,2
+  seq $2,308898 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
+  div $2,2
   sub $0,1
   add $1,$2
 lpe

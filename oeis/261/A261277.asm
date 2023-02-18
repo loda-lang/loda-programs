@@ -1,9 +1,12 @@
 ; A261277: Expansion of q^(-1/2) * (eta(q^3)^8 + 4 * eta(q^6)^8)^(1/2) in powers of q.
 ; Submitted by Science United
 ; 1,2,-2,0,-2,4,-2,-4,2,-4,0,-8,-1,2,6,8,8,0,6,-4,-6,4,4,0,-7,4,-2,-8,-8,4,-2,0,4,-4,-16,8,10,-2,0,-8,-2,-4,-4,12,-6,0,16,8,2,-8,-18,16,0,-12,-2,12,18,16,4,0,5,-12,12,-8,8,-4,0,-4,-6,-12,0,-8,-12,-14,14,-16,-4,-16,-2,-4,0,12,-16,24,-9,8,6,0,8,12,6,-4,-12,8,0,0,2,8,-18,16
-; Formula: a(n) = A159819(n)*A057079(n)
+; Formula: a(n) = A057079(n)*A030188(n)*(-1)^n
 
+mov $2,-1
+pow $2,$0
 mov $1,$0
-seq $1,159819 ; Coefficients of L-series for elliptic curve "48a4": y^2 = x^3 + x^2 + x.
+seq $1,30188 ; Expansion of q^(-1/2) * eta(q) * eta(q^2) * eta(q^3) * eta(q^6) in powers of q.
+mul $1,$2
 seq $0,57079 ; Periodic sequence: repeat [1,2,1,-1,-2,-1]; expansion of (1+x)/(1-x+x^2).
 mul $0,$1

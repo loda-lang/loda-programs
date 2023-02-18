@@ -1,9 +1,17 @@
 ; A133089: Expansion of f(x)^3 in powers of x where f() is a Ramanujan theta function.
 ; Submitted by Christian Krause
 ; 1,3,0,-5,0,0,-7,0,0,0,9,0,0,0,0,11,0,0,0,0,0,-13,0,0,0,0,0,0,-15,0,0,0,0,0,0,0,17,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,-21,0,0,0,0,0,0,0,0,0,0,-23,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,27,0,0,0,0,0,0,0,0
-; Formula: a(n) = A010816(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+sub $0,1
+bin $0,$2
+mul $2,2
+add $2,1
+mul $2,$0
+mov $0,$2
 mul $0,$1

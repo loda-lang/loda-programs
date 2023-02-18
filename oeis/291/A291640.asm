@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,333206 ; a(n) is the least decimal digit of n^3.
+  pow $3,3
+  seq $3,54054 ; Smallest digit of n.
   cmp $3,1
   sub $0,$3
   add $1,1

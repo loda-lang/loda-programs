@@ -8,8 +8,11 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  max $0,0
-  seq $0,140472 ; a(n) = a(n - a(n-1)) + a(floor(n/2)).
+  mov $5,2
+  pow $5,$0
+  gcd $5,$0
+  add $0,$5
+  div $0,2
   mov $2,$3
   mul $2,$0
   add $4,$2

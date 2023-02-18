@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,358224 ; Parity of A328386(n), where A328386(n) = A276086(n) mod n, and A276086 is the primorial base exp-function.
+  add $3,1
+  mov $5,$3
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  mod $3,$5
+  mod $3,2
   seq $3,83315 ; (2*5^n-(4^n-2^n))/2.
   cmp $3,1
   sub $0,$3

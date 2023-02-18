@@ -9,7 +9,11 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,336315 ; The number of divisors in the conjugated prime factorization of n: a(n) = A000005(A122111(n)).
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   gcd $3,4
   add $3,1
   cmp $3,5

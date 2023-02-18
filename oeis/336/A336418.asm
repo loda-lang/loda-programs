@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,184389 ; a(n) = Sum_{k=1..tau(n)} k, where tau is the number of divisors of n (A000005).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $3,-1
+  bin $3,2
   gcd $3,10
   cmp $3,1
   sub $0,$3

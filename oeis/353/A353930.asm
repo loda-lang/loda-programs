@@ -1,10 +1,18 @@
 ; A353930: Smallest number whose binary expansion has n distinct run-sums.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,11,183,5871,375775,48099263,12313411455,6304466665215,6455773865180671,13221424875890015231,54154956291645502388223,443637401941159955564326911,7268555193403964711965932118015,238176016577461115681699663643131903,15609103422420491677315869156516292427775
-; Formula: a(n) = max(-n+A215203(n)-1,0)+n+1
 
 mov $1,$0
-seq $0,215203 ; a(0) = 0, a(n) = a(n - 1)*2^(n + 1) + 2^n - 1. That is, add one 0 and n 1's to the binary representation of previous term.
+mov $2,1
+mov $3,2
+lpb $0
+  sub $0,1
+  mul $3,2
+  mul $2,$3
+  sub $2,1
+lpe
+mov $0,$2
+div $0,2
 sub $0,$1
 trn $0,1
 add $0,$1

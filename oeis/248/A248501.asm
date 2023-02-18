@@ -9,7 +9,7 @@ lpb $2
   add $4,1
   mov $3,$1
   add $3,1
-  seq $3,54900 ; (n) = floor(n/16) + floor(n/256) + floor(n/4096) + floor(n/65536) + ....
+  div $3,16
   gcd $3,$4
   cmp $3,1
   sub $0,$3

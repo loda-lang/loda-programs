@@ -1,7 +1,20 @@
 ; A265379: Binary representation of the n-th iteration of the "Rule 158" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jon Maiga
 ; 1,111,11101,1110011,111011101,11100110011,1110111011101,111001100110011,11101110111011101,1110011001100110011,111011101110111011101,11100110011001100110011,1110111011101110111011101,111001100110011001100110011,11101110111011101110111011101,1110011001100110011001100110011,111011101110111011101110111011101,11100110011001100110011001100110011,1110111011101110111011101110111011101,111001100110011001100110011001100110011,11101110111011101110111011101110111011101
-; Formula: a(n) = A007088(A118171(n))
+; Formula: a(n) = A007088(A030101((4*((((2^n)^2+6)*(n%2+11))/3))/10-9))
 
-seq $0,118171 ; Decimal representation of n-th iteration of the Rule 158 elementary cellular automaton starting with a single black cell.
+mov $1,2
+pow $1,$0
+pow $1,2
+add $1,6
+mov $2,$0
+mod $2,2
+add $2,11
+mul $1,$2
+mov $0,$1
+div $0,3
+mul $0,4
+div $0,10
+sub $0,9
+seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
 seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.

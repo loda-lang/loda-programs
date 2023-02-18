@@ -8,6 +8,13 @@ mod $1,3
 dif $1,2
 mul $1,6
 sub $1,4
-seq $0,123330 ; Expansion of eta(q^2) * eta(q^3)^6 / (eta(q)^2 * eta(q^6)^3) in powers of q.
+mov $2,$0
+trn $0,1
+mov $3,$0
+seq $0,123331 ; Expansion of (c(q)^2/(3c(q^2))-1)/2 in powers of q where c(q) is a cubic AGM function.
+mul $0,2
+sub $0,1
+sub $0,$3
+add $0,$2
 mul $0,$1
 div $0,2

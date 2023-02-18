@@ -5,5 +5,13 @@
 mov $1,-1
 pow $1,$0
 add $1,2
-seq $0,82500 ; a(n) = ceiling(n/2) if n is odd, or prime(n/2) otherwise.
+add $0,2
+lpb $0
+  mov $3,$0
+  seq $3,130008 ; Noncomposite numbers sandwiched between 1's.
+  sub $0,2
+  div $0,$3
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,$1

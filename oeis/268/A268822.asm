@@ -8,7 +8,14 @@ lpb $2
   sub $2,1
   add $0,$2
   trn $0,1
-  seq $0,268718 ; Permutation of natural numbers: a(0) = 0, a(n) = 1 + A003188(A006068(n)-1), where A003188 is binary Gray code and A006068 is its inverse.
+  mov $3,$0
+  seq $0,6068 ; a(n) is Gray-coded into n.
+  trn $0,1
+  seq $0,3188 ; Decimal equivalent of Gray code for n.
+  add $0,1
+  cmp $3,0
+  cmp $3,0
+  mul $0,$3
 lpe
 min $1,1
 add $0,1

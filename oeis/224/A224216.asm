@@ -15,10 +15,10 @@ lpb $0
   add $2,$3
   mov $4,$5
 lpe
-mov $0,$2
 div $1,2
 mod $1,2
-mul $1,$0
+mul $1,$2
 mul $1,2
+mov $0,$2
 sub $0,$1
 div $0,2

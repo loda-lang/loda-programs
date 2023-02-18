@@ -8,9 +8,17 @@ lpb $0
   sub $0,1
   mov $2,$1
   mov $1,$3
-  trn $1,$0
-  seq $1,6111 ; Gaussian binomial coefficient [ n,2 ] for q=5.
-  mul $2,$1
+  sub $1,$0
+  add $1,2
+  mov $4,5
+  pow $4,$1
+  sub $4,3
+  pow $4,2
+  sub $4,484
+  div $4,480
+  add $4,1
+  mov $1,$4
+  mul $2,$4
   add $3,1
 lpe
 mov $0,$2

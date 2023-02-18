@@ -10,7 +10,10 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,351843 ; a(n) = sigma(n) * sopf(n).
+  mov $4,$0
+  seq $4,8472 ; Sum of the distinct primes dividing n.
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $0,$4
   add $3,$0
 lpe
 div $3,$1

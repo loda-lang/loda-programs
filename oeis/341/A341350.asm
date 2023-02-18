@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,341346 ; a(n) = A048673(2n-1) mod 3.
+  mul $3,2
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  mod $3,3
+  mod $3,2
   cmp $3,0
   sub $0,$3
   mov $4,$0

@@ -1,11 +1,23 @@
 ; A347121: a(n) = A347136(n) - 2*n.
 ; Submitted by PDW
 ; -1,1,2,11,2,28,4,49,31,40,2,128,4,62,66,179,2,209,4,188,102,76,6,472,59,98,218,286,2,420,6,601,126,112,146,859,4,134,162,700,2,636,4,368,498,168,6,1592,149,445,186,466,6,1252,178,1058,222,184,2,1704,6,216,756,1931,230,828,4,548,278,940,2,3041,6,242,722,646,278,1044,4,2372,1279,256,6,2568,262,278,306,1384,8,2760,358,804,358,312,314,5128,4,1039,978,1871
-; Formula: a(n) = -2*n+A347136(n)-2
 
 mov $1,$0
 mul $1,2
 add $1,4
-seq $0,347136 ; a(n) = Sum_{d|n} d * A003961(n/d), where A003961 shifts the prime factorization of its argument one step towards larger primes.
-add $0,2
+mov $2,$0
+add $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$2
+  gcd $0,$3
+  sub $0,1
+  seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  sub $0,1
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $4,$0
+lpe
+mov $0,$4
 sub $0,$1
+add $0,3

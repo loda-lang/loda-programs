@@ -4,7 +4,15 @@
 
 trn $0,2
 mov $1,$0
+add $1,4
+mov $2,$0
+mov $3,$1
 add $0,2
-seq $1,51197 ; T(2n+4,n), array T as in A050186; a count of aperiodic binary words.
+add $1,$2
+bin $1,$3
+dif $3,2
+add $2,2
+bin $2,$3
+sub $1,$2
 div $1,$0
 mov $0,$1

@@ -3,5 +3,14 @@
 
 add $0,1
 dif $0,2
-seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+mov $2,$0
+lpb $0
+  mov $3,$2
+  dif $3,$0
+  cmp $3,$2
+  cmp $3,0
+  sub $0,1
+  add $1,$3
+lpe
+mov $0,$1
 trn $0,1

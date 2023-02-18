@@ -1,8 +1,21 @@
 ; A133216: Integers that are simultaneously triangular (A000217) and decagonal (A001107).
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,10,1540,11935,1777555,13773376,2051297326,15894464365,2367195337045,18342198104230,2731741367653000,21166880717817451,3152427171076225351,24426562006163234620,3637898223680596402450,28188231388231654934425,4198131397700237172202345
-; Formula: a(n) = binomial(A133218(n)+1,2)
 
-seq $0,133218 ; Indices of triangular numbers (A000217) that are also decagonal (A001107).
+mov $3,$0
+mod $3,2
+mul $3,2
+lpb $0
+  sub $0,1
+  add $1,1
+  add $2,$3
+  mul $2,$1
+  add $4,$2
+  add $1,$4
+  mov $2,0
+  mov $3,4
+lpe
+mov $0,$4
+div $0,2
 add $0,1
 bin $0,2

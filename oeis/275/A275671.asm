@@ -9,7 +9,9 @@ pow $2,2
 lpb $2
   mul $4,2
   mov $3,$1
-  seq $3,283486 ; Number of k such that sigma(k) = 2n where sigma(m) = A000203(m) is the sum of the divisors of m.
+  mul $3,2
+  add $3,1
+  seq $3,54973 ; Number of numbers whose divisors sum to n.
   sub $3,1
   add $3,$4
   cmp $3,1

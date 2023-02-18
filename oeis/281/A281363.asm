@@ -5,8 +5,21 @@
 add $0,1
 mov $1,$0
 pow $1,2
+mul $1,4
 sub $1,1
-seq $1,3574 ; Order of 4 mod 4n-1.
-gcd $0,$1
+mov $5,$1
+mov $4,$1
+lpb $4
+  cmp $1,$6
+  add $2,1
+  mov $3,$1
+  cmp $3,0
+  sub $4,$3
+  sub $6,3
+  mul $6,4
+  mod $6,$5
+lpe
+gcd $0,$2
+mov $1,$2
 div $1,$0
 mov $0,$1

@@ -1,12 +1,15 @@
 ; A342210: Product of first n secant numbers.
 ; Submitted by titidestroy
 ; 1,1,5,305,422425,21341333425,57680609034420125,11499262801779458886142625,222988094279253104602162884889680625,536259535797497315015541102040111384540146030625,198615081477022654229416746174491677406536175668963818424203125
-; Formula: a(n) = A000364(n)*a(n-1), a(0) = 1
+; Formula: a(n) = a(n-1)*(A002436(n)/(4^n)), a(0) = 1
 
 mov $1,1
 lpb $0
+  mov $3,4
+  pow $3,$0
   mov $2,$0
-  seq $2,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  seq $2,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+  div $2,$3
   sub $0,1
   mul $1,$2
 lpe

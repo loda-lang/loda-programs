@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,259748 ; a(n) = (Sum_{0<x<y<n} x*y) mod n.
+  add $3,1
+  gcd $5,$3
+  add $5,1
+  pow $5,35
+  bin $5,4
+  mod $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

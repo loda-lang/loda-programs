@@ -7,7 +7,9 @@ add $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,61725 ; p^2 + 2 where p is a prime.
+  seq $3,40 ; The prime numbers.
+  pow $3,2
+  add $3,2
   mov $5,$3
   add $5,$0
   sub $5,4

@@ -10,7 +10,16 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mov $4,$0
+  dif $4,$0
+  add $4,1
+  trn $0,1
+  seq $0,40 ; The prime numbers.
+  mul $4,$0
+  mov $0,$4
+  sub $0,2
+  div $0,2
+  add $0,1
   add $3,$0
 lpe
 mov $0,$3

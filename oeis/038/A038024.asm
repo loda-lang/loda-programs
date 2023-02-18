@@ -9,7 +9,8 @@ lpb $3
   mov $0,$1
   add $0,$3
   max $0,1
-  seq $0,27423 ; Number of divisors of n!.
+  seq $0,33312 ; a(n) = n! - 1.
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $2,$3
   mul $2,$0
   add $4,$2

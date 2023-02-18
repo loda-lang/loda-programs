@@ -9,7 +9,15 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,3517 ; Number of permutations of [n+1] with exactly 1 increasing subsequence of length 3.
+  mov $5,$0
+  add $5,5
+  add $0,$5
+  bin $0,$5
+  mul $0,12
+  mov $6,$5
+  add $6,1
+  div $0,$6
+  div $0,2
   add $3,$0
   add $4,$3
 lpe

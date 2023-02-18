@@ -1,33 +1,21 @@
 ; A284674: 0-limiting word of the morphism 0->1, 1-> 0111.
-; Submitted by Jamie Morken(w1)
+; Submitted by [AF>Libristes] ElGuillermo
 ; 0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0
 
-mov $4,$0
-mov $7,2
-lpb $7
-  sub $7,1
-  mov $0,$4
-  add $0,$7
-  mov $3,$0
+mov $2,2
+mov $4,1
+add $0,1
+lpb $0
   sub $0,1
-  lpb $3
-    sub $3,1
-    add $1,1
-    add $2,$1
-    mov $5,$1
-    add $5,$2
-    mul $1,2
-    add $1,$5
-    div $1,3
-  lpe
-  mul $1,$0
-  div $1,$2
-  mov $0,$1
-  mov $6,$7
-  mul $6,$1
-  add $8,$6
+  sub $0,$3
+  sub $1,$2
+  add $1,2
+  div $1,2
+  add $3,$1
+  gcd $3,4
+  cmp $4,$0
+  mul $2,2
+  mul $2,$3
+  div $3,4
 lpe
-min $4,1
-mul $4,$0
-mov $0,$8
-sub $0,$4
+mov $0,$4

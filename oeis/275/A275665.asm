@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,99635 ; a(n) = gcd(sum of all prime factors of n, n).
+  seq $3,8472 ; Sum of the distinct primes dividing n.
+  mov $5,1
+  add $5,$1
+  gcd $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

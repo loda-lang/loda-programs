@@ -9,8 +9,10 @@ lpb $4
   mov $0,$3
   add $0,$4
   trn $0,1
-  add $0,1
-  seq $0,6252 ; Expansion of e.g.f. 1/(1 - log(1+x)).
+  add $0,2
+  mov $5,$0
+  seq $0,108125 ; Expansion of e.g.f.: x/(1 - log(1+x)).
+  div $0,$5
   mov $2,$4
   mul $2,$0
   add $1,$2

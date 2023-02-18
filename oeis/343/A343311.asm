@@ -7,8 +7,11 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  seq $3,98189 ; Sum of unitary divisors minus Euler phi: a(n) = A034448(n) - A000010(n).
+  seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  sub $3,$5
   trn $3,6
   min $3,1
   sub $0,$3

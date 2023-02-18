@@ -5,4 +5,45 @@
 max $1,$0
 trn $1,4
 add $0,$1
-seq $0,171821 ; 2 together with twin primes.
+cmp $2,$0
+trn $0,1
+mov $3,$0
+min $3,1
+trn $0,1
+mov $4,$0
+div $4,2
+sub $0,1
+gcd $0,2
+mov $5,4
+mov $6,$4
+sub $4,1
+add $6,4
+pow $6,3
+lpb $6
+  mov $9,$7
+  seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $7,3
+  sub $7,$9
+  mul $9,$7
+  seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $4,$9
+  mov $8,$4
+  max $8,0
+  cmp $8,$4
+  add $5,6
+  mul $6,$8
+  sub $6,18
+  mov $7,$5
+lpe
+mov $4,$5
+div $4,6
+mul $4,3
+add $4,$0
+mov $0,$4
+mul $0,2
+add $0,3
+add $0,$3
+add $3,$0
+mov $0,$3
+sub $0,$2
+sub $0,2

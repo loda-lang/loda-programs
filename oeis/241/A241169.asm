@@ -11,7 +11,16 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,102232 ; Number of preferential arrangements of n labeled elements when at least k=three ranks are required.
+  mov $5,2
+  pow $5,$0
+  mov $6,$0
+  seq $6,299404 ; a(n) = 1 + Sum_{m >= 1} (m + 1)^n/2^(m - 1).
+  mov $0,$6
+  mul $0,2
+  add $0,2
+  div $0,16
+  add $0,1
+  sub $0,$5
   mul $1,$0
   add $3,$1
 lpe

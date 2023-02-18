@@ -4,9 +4,22 @@
 
 add $0,2
 mov $1,$0
+mov $2,2
 mov $0,2
 pow $0,$1
-seq $1,91000 ; Number of closed walks of length n on the Petersen graph.
+lpb $1
+  sub $1,1
+  add $2,$4
+  mov $3,$4
+  mov $4,$2
+  mul $4,2
+  sub $4,2
+  sub $4,$3
+  mul $3,3
+  mov $2,$3
+lpe
+div $2,2
+mov $1,$2
 mul $1,$0
 mov $0,$1
 mul $0,10

@@ -7,8 +7,11 @@ mov $2,$0
 sub $0,1
 pow $2,4
 lpb $2
+  mov $4,$1
+  seq $4,237271 ; Number of parts in the symmetric representation of sigma(n).
   mov $3,$1
-  seq $3,243982 ; Number of divisors of n minus the number of parts in the symmetric representation of sigma(n).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,$4
   cmp $3,0
   sub $0,$3
   add $1,2

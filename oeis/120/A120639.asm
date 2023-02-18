@@ -7,7 +7,15 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,168224 ; Where record values occur in A168223.
+  mul $3,2
+  add $3,1
+  mov $5,$3
+  mul $3,2
+  sub $3,3
+  gcd $5,3
+  add $5,$3
+  mov $3,$5
+  sub $3,1
   mul $3,$1
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

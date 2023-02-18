@@ -4,8 +4,22 @@
 
 lpb $0
   trn $0,1
-  seq $0,64799 ; Sum of n-th prime number and n-th composite number.
-  sub $0,2
+  mov $2,$0
+  mov $3,$0
+  add $3,1
+  mov $4,$0
+  add $4,2
+  mov $5,$3
+  mul $5,-2
+  div $5,$3
+  sub $3,$5
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $3,1
+  sub $3,$4
+  seq $0,40976 ; a(n) = prime(n) - 2.
+  add $0,$3
+  add $0,2
+  add $0,$2
   mov $1,$0
   mov $0,0
 lpe

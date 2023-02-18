@@ -4,7 +4,13 @@
 
 lpb $0
   trn $0,1
-  seq $0,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
+  mov $3,$0
+  seq $0,33677 ; Smallest divisor of n >= sqrt(n).
+  div $3,$0
+  sub $3,$0
+  sub $2,$3
+  mov $0,$2
+  sub $0,1
   add $1,1
 lpe
 mov $0,$1

@@ -8,7 +8,11 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,219093 ; Denominator of the least reduced fraction b/c > 1 using divisors b and c of n.
+  seq $3,63717 ; a(n) is the greatest divisor of n^2 that is less than n.
+  mov $5,$1
+  add $5,2
+  gcd $5,$3
+  div $3,$5
   sub $3,1
   min $3,1
   sub $0,$3

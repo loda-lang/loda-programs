@@ -7,7 +7,17 @@ mul $0,2
 add $0,2
 add $1,1
 mod $1,2
+mov $2,261241
 add $0,$1
-seq $0,77260 ; Triangular numbers that are 1/5 of a triangular number.
-div $0,18
+mul $0,3
+add $0,1
+lpb $0
+  sub $0,2
+  add $3,$2
+  add $2,$3
+lpe
+div $2,261241
+mov $0,$2
+pow $0,2
+div $0,144
 mul $0,81

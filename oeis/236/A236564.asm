@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,201125 ; Differences between odd powers of 2 and the next smaller square
+  seq $0,201125 ; Differences between odd powers of 2 and the next smaller square.
   mov $2,$3
   mul $2,$0
   div $1,2

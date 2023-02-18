@@ -7,7 +7,15 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,63934 ; Numbers which are either prime or the average of consecutive odd primes.
+  add $3,1
+  mov $4,$3
+  div $4,2
+  sub $3,$4
+  seq $3,40 ; The prime numbers.
+  seq $4,40 ; The prime numbers.
+  add $4,$3
+  mov $3,$4
+  div $3,2
   sub $3,1
   add $0,1
   add $1,1

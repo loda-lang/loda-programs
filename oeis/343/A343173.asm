@@ -9,8 +9,8 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,2
-  seq $0,34947 ; Jacobi (or Kronecker) symbol (-1/n).
+  sub $0,1
+  seq $0,121238 ; a(n) = (-1)^(1+n+A088585(n)).
   mov $2,$3
   mul $2,$0
   add $4,$2

@@ -14,7 +14,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,332825 ; a(n) = A019565(phi(n)).
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $0,19565 ; The squarefree numbers ordered lexicographically by their prime factorization (with factors written in decreasing order). a(n) = Product_{k in I} prime(k+1), where I is the set of indices of nonzero binary digits in n = Sum_{k in I} 2^k.
   mul $0,$3
   mul $1,$0
   max $3,$1

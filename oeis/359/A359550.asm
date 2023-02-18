@@ -1,9 +1,9 @@
 ; A359550: Multiplicative with a(p^e) = 1 if p > e, otherwise 0.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Mads Nissen
 ; 1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0
 
-seq $0,347398 ; Expansion of g.f. Sum_{k>=1} k^k * x^(k^k)/(1 - x^(k^k)).
-div $0,2
+seq $0,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
+bin $0,2
 mov $1,$0
 cmp $1,0
 mov $0,$1

@@ -14,7 +14,13 @@ lpb $4
   bin $1,$0
   sub $4,1
   sub $0,1
-  seq $0,291784 ; a(n) = (psi(n) + phi(n))/2.
+  mov $5,$0
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $5,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
+  div $5,$0
+  add $5,$0
+  mov $0,$5
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

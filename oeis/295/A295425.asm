@@ -9,7 +9,9 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,63962 ; Number of distinct prime divisors of n that are <= sqrt(n).
+  seq $3,72499 ; Product of divisors of n which are <= n^(1/2).
+  sub $3,1
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   gcd $3,4
   add $3,1
   cmp $3,5

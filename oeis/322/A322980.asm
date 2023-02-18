@@ -2,5 +2,8 @@
 ; Submitted by [AF] Kalianthys
 ; 1,0,1,1,1,0,1,0,0,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1
 
-seq $0,9191 ; a(n) = gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
+mov $1,1
+add $1,$0
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+gcd $0,$1
 cmp $0,1

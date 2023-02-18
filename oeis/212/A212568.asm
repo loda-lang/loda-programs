@@ -4,9 +4,15 @@
 
 lpb $0
   sub $0,2
+  mov $3,$0
+  bin $3,2
+  mov $4,1
+  add $4,$0
   mov $2,$0
-  max $2,0
-  seq $2,6564 ; Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
+  add $2,$4
+  mul $2,$4
+  add $2,$3
+  mul $2,$4
   add $1,$2
 lpe
 mov $0,$1

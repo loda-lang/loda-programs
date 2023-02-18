@@ -1,23 +1,12 @@
 ; A113652: Expansion of (1 - theta_4(q)^2) / 4 in powers of q.
-; Submitted by damotbe
+; Submitted by Christian Krause
 ; 1,-1,0,-1,2,0,0,-1,1,-2,0,0,2,0,0,-1,2,-1,0,-2,0,0,0,0,3,-2,0,0,2,0,0,-1,0,-2,0,-1,2,0,0,-2,2,0,0,0,2,0,0,0,1,-3,0,-2,2,0,0,0,0,-2,0,0,2,0,0,-1,4,0,0,-2,0,0,0,-1,2,-2,0,0,0,0,0,-2,1,-2,0,0,4,0,0,0,2,-2,0,0,0,0,0,0,2,-1,0,-3
+; Formula: a(n) = (A004531(4*n+4)*(-1)^n)/4
 
+mov $1,-1
+pow $1,$0
 add $0,1
-mov $2,$0
-lpb $0
-  add $4,1
-  min $0,$4
-  mov $3,$2
-  dif $3,$0
-  add $0,$3
-  mod $0,2
-  mul $0,2
-  sub $0,1
-  mul $3,$4
-  cmp $3,$2
-  mul $3,$0
-  sub $1,$3
-  sub $2,$4
-  mov $0,$2
-lpe
-mov $0,$1
+mul $0,4
+seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+mul $0,$1
+div $0,4

@@ -1,21 +1,19 @@
 ; A239141: Number of strict partitions of n having standard deviation <= 1.
-; Submitted by Cruncher Pete
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2
+; Formula: a(n) = b(n-1)/a(n-1)-c(n-1)+a(n-1), a(3) = 2, a(2) = 2, a(1) = 1, a(0) = 1, b(n) = a(n-1), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = b(n-2)/a(n-2)-c(n-1)+c(n-1), c(3) = 1, c(2) = 0, c(1) = 0, c(0) = 0
 
+mov $1,1
 lpb $0
   sub $0,1
-  sub $1,$4
-  cmp $1,1
-  mov $4,$6
-  add $5,$3
-  sub $3,1
-  add $3,$1
-  mov $6,$2
-  add $1,$5
-  sub $2,$3
-  bin $3,2
-  mul $3,$2
-  sub $5,$1
+  add $2,$4
+  div $3,$1
+  mul $4,-1
+  mov $5,$1
+  add $1,$3
+  add $1,$4
+  add $4,$2
+  mov $2,$3
+  mov $3,$5
 lpe
-mov $0,$6
-add $0,1
+mov $0,$1

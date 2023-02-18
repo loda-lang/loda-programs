@@ -7,7 +7,9 @@ mov $2,$0
 mul $2,90
 lpb $2
   mov $3,$1
-  seq $3,51027 ; a(n) = sigma(sigma(n)) = sum of the divisors of the sum of the divisors of n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $3,$4
   gcd $3,2
   sub $0,$3

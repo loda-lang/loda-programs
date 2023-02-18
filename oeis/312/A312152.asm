@@ -25,14 +25,11 @@ lpb $0
   sub $6,1
 lpe
 mul $5,5
-trn $0,1
 add $0,$5
-add $0,1
 mul $0,4
 add $0,1
 div $0,3
+sub $0,36
 sub $0,$4
-sub $0,9
 sub $0,$3
-sub $0,27
 add $0,$1

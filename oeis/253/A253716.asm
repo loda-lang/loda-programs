@@ -4,6 +4,18 @@
 
 mov $1,$0
 mod $1,2
+mov $4,1
 mul $0,2
 add $0,$1
-seq $0,253880 ; Triangular numbers (A000217) that are also centered heptagonal numbers (A069099).
+mul $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  add $3,$4
+  mov $4,$2
+  mov $2,$3
+  dif $3,7
+  mul $3,21
+  add $4,$3
+lpe
+mov $0,$2

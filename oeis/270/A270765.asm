@@ -9,7 +9,11 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,5493 ; 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
+  add $0,3
+  bin $0,2
+  sub $0,2
+  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  seq $0,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
   mov $4,$3
   mul $4,$0
   add $2,$4

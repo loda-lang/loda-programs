@@ -4,9 +4,17 @@
 
 add $0,2
 lpb $0
-  add $0,1
   mov $2,$0
-  seq $2,330492 ; a(n) = sum of second differences of the sorted divisors of n.
+  add $2,2
+  mov $3,$2
+  seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  add $3,1
+  div $3,$2
+  sub $3,1
+  sub $2,2
+  mul $2,$3
+  add $2,$3
+  add $0,1
   sub $0,$2
   add $1,1
 lpe

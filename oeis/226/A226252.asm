@@ -8,7 +8,12 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8440 ; Expansion of Jacobi theta constant theta_2^6 /(64q^(3/2)).
+  mul $2,2
+  add $2,1
+  mul $2,2
+  seq $2,2173 ; a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.
+  gcd $2,$2
+  div $2,8
   sub $4,1
   add $1,$2
   mov $3,2

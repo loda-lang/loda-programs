@@ -1,9 +1,11 @@
 ; A007517: a(n) = phi(n) * (sigma(n) - n).
 ; Submitted by Jamie Morken(w4)
 ; 0,1,2,6,4,12,6,28,24,32,10,64,12,60,72,120,16,126,18,176,132,140,22,288,120,192,234,336,28,336,30,496,300,320,312,660,36,396,408,800,40,648,42,800,792,572,46,1216,336,860,672,1104,52,1188,680,1536,828,896,58,1728,60,1020,1476,2016,912,1560,66,1856,1188,1776,70,2952,72,1440,1960,2304,1140,2160,78,3392,2160,1760,82,3360,1472,1932,1848,3680,88,3456,1512,3344,2100,2300,1800,4992,96,3066,3420,4680
-; Formula: a(n) = A001065(n)*A000010(n)
+; Formula: a(n) = A000010(n)*(-n+A000203(n)-1)
 
 mov $1,$0
-seq $1,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $1,1
+sub $1,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,$1

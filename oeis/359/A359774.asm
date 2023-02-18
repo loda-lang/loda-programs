@@ -10,7 +10,17 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,358777 ; Dirichlet inverse of A353557, the characteristic function of odd numbers with an even number of prime factors (counted with multiplicity).
+  mov $4,$0
+  mov $5,$0
+  seq $5,359411 ; a(n) is the number of divisors of n that are both infinitary and exponential.
+  seq $0,345222 ; Number of divisors of n with a prime number of divisors.
+  mov $6,$5
+  add $6,$0
+  mov $0,$6
+  sub $0,1
+  gcd $4,$0
+  mov $0,$4
+  add $0,1
   add $3,$0
 lpe
 mov $0,$3

@@ -5,7 +5,10 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,49820 ; a(n) = n - d(n), where d(n) is the number of divisors of n (A000005).
+  mov $3,$2
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $2,$3
+  add $2,1
   sub $0,1
   max $0,3
   mul $1,$2

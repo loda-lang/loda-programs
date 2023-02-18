@@ -7,8 +7,10 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,343938 ; Twice the number of prime factors of n minus the sum of prime indices of n, both counted with multiplicity.
+  mov $5,$1
+  seq $5,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
+  sub $5,$3
+  sub $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

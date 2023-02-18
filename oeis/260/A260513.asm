@@ -8,8 +8,10 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,198833 ; The number of inequivalent ways to color the vertices of a regular octahedron using at most n colors.
+  add $0,1
+  bin $0,2
+  add $0,2
+  bin $0,3
   mov $2,$3
   mul $2,$0
   add $4,$2

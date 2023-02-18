@@ -1,11 +1,13 @@
 ; A319857: Difference between 4^n and the product of primes less than or equal to n.
 ; Submitted by Christian Krause
 ; 0,3,14,58,250,994,4066,16174,65326,261934,1048366,4191994,16774906,67078834,268405426,1073711794,4294937266,17179358674,68718966226,274868207254,1099501928086,4398036811414,17592176344726,70368521084794,281474753617786,1125899683749754,4503599404277626
-; Formula: a(n) = 2^(2*n)-A300951(2*n)
+; Formula: a(n) = 2^(2*n)-A083907(max((2*n)/2-1,0))
 
 mul $0,2
 mov $1,2
 pow $1,$0
-seq $0,300951 ; a(n) = Product_{j=1..floor(n/2)} p(j) where p(j) = j if j is prime else 1.
+div $0,2
+trn $0,1
+seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
 sub $1,$0
 mov $0,$1

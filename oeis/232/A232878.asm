@@ -5,5 +5,32 @@
 mov $1,-1
 pow $1,$0
 div $0,2
-seq $0,154670 ; Averages of twin prime pairs k such that k*2 and k/2 are squares.
+mov $2,5
+mov $3,$0
+add $3,4
+pow $3,3
+lpb $3
+  div $4,2
+  mul $4,$2
+  mov $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,3
+  sub $4,$6
+  mul $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$6
+  mov $4,$2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  add $2,3
+  mul $3,$5
+  sub $3,18
+lpe
+mov $0,$4
+div $0,6
+add $0,1
+mul $0,6
+pow $0,2
+div $0,2
 sub $0,$1

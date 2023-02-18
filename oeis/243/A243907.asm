@@ -8,7 +8,8 @@ mul $2,22
 lpb $2
   mov $3,$1
   mul $3,2
-  seq $3,70824 ; Number of divisors of n which are > 1 and < n (nontrivial divisors).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,2
   trn $3,2
   min $3,1
   sub $0,$3

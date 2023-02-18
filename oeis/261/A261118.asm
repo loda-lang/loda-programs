@@ -6,7 +6,6 @@ mul $0,4
 add $0,1
 lpb $0
   dif $0,3
-  dif $0,2
 lpe
 div $0,2
 mov $2,$0

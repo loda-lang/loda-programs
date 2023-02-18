@@ -7,9 +7,15 @@ lpb $0
   sub $0,3
   mov $1,$0
   mul $1,2
-  max $1,0
+  add $1,20639
   sub $1,$0
-  seq $1,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+  mov $2,$1
+  div $2,6
+  sub $3,$2
   mod $0,2
+  add $1,1
+  div $1,5
+  sub $1,688
+  add $1,$3
 lpe
 mov $0,$1

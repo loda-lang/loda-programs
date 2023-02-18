@@ -10,7 +10,12 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $5,$0
-  seq $0,303590 ; Floor(n*beta)-1, where 1/alpha+1/beta=1, alpha being the number with continued fraction expansion [1;1,2,3,4,5,...] (A247844).
+  mov $6,$0
+  mul $6,2
+  seq $0,22838 ; Beatty sequence for sqrt(3); complement of A054406.
+  div $0,4
+  add $0,1
+  add $0,$6
   sub $0,$5
   cmp $0,$2
   sub $0,1

@@ -7,8 +7,14 @@ add $2,3
 pow $2,2
 lpb $2
   add $1,2
+  mov $5,$1
+  mul $5,-2
+  div $5,$1
   mov $3,$1
-  seq $3,181923 ; Nonprimes (A018252) mod 2.
+  sub $3,$5
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $3,1
+  mod $3,2
   cmp $3,0
   sub $0,$3
   mov $4,$0

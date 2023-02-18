@@ -8,8 +8,12 @@ add $2,7
 pow $2,2
 lpb $2
   add $1,1
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,343654 ; Number of pairwise coprime sets of divisors > 1 of n.
+  seq $3,15995 ; a(n) = (tau(n^3)+2)/3.
+  add $3,$5
+  div $3,2
   trn $3,3
   mod $3,2
   sub $0,$3

@@ -8,8 +8,9 @@ sub $0,1
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,101266 ; First differences of A101402.
-  sub $3,1
+  add $3,1
+  seq $3,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
+  sub $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

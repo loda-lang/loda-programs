@@ -8,7 +8,13 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
+  mov $4,$0
+  min $4,1
+  sub $0,1
+  seq $0,144338 ; Squarefree numbers > 1.
+  add $4,$0
+  mov $0,$4
+  sub $0,1
   gcd $0,2
   sub $0,1
   add $2,$0

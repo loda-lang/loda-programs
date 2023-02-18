@@ -1,6 +1,27 @@
 ; A287191: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 253", based on the 5-celled von Neumann neighborhood.
 ; 1,1,0,111,11000,11111,1100000,1111111,110000000,111111111,11000000000,11111111111,1100000000000,1111111111111,110000000000000,111111111111111,11000000000000000,11111111111111111,1100000000000000000,1111111111111111111,110000000000000000000,111111111111111111111,11000000000000000000000,11111111111111111111111,1100000000000000000000000,1111111111111111111111111,110000000000000000000000000,111111111111111111111111111,11000000000000000000000000000,11111111111111111111111111111
-; Formula: a(n) = A007088(A287193(n))
 
-seq $0,287193 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 253", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,$0
+cmp $1,2
+cmp $1,0
+mov $3,2
+pow $3,$0
+mov $5,1
+gcd $0,2
+add $0,1
+mul $0,$3
+div $0,3
+mov $2,$0
+mul $0,2
+add $0,$2
+div $0,2
+mul $0,$1
+lpb $0
+  mov $6,$0
+  mod $6,2
+  mul $6,$5
+  div $0,2
+  add $4,$6
+  mul $5,10
+lpe
+mov $0,$4

@@ -4,5 +4,19 @@
 
 mov $1,$0
 add $1,1
-seq $0,4997 ; a(n) = (6^n/n!) * Product_{k=0..n-1} (6*k + 7).
+mov $2,1
+mov $4,$0
+mul $4,2
+lpb $4
+  add $5,1
+  mov $3,$2
+  mul $2,$4
+  mul $2,3
+  add $2,$3
+  mul $2,3
+  div $2,$5
+  mul $2,2
+  sub $4,2
+lpe
+mov $0,$2
 dif $0,$1

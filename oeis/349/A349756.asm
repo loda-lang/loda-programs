@@ -5,9 +5,15 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $6,1
   mov $3,$1
-  seq $3,355946 ; a(n) = 1 if the odd part of sigma(k) divides A003961(k), otherwise 0, where A003961 is fully multiplicative with a(p) = nextprime(p), and sigma is the sum of divisors function.
-  sub $0,$3
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $5,$3
+  gcd $5,$6
+  cmp $5,$3
+  sub $0,$5
   add $1,1
   mov $4,$0
   max $4,0

@@ -9,7 +9,7 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,129451 ; Expansion of f(-x, -x^3) f(-x, x^2) in powers of x where f(, ) is Ramanujan's general theta function.
+  seq $3,97195 ; Expansion of s(12)^3*s(18)^2/(s(6)^2*s(36)), where s(k) := subs(q=q^k, eta(q)) and eta(q) is Dedekind's function, cf. A010815. Then replace q^6 with q.
   cmp $3,0
   sub $0,$3
   mov $4,$0

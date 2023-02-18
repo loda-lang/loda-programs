@@ -1,4 +1,4 @@
-; A045241: Numbers n with property that in base 5 representation the numbers of 1's and 3's are 2 and 1, respectively.
+; A045241: Numbers whose base-5 representation contains exactly two 1's and one 3.
 ; Submitted by NeoGen
 ; 33,41,81,133,141,153,163,165,167,169,173,183,191,201,205,207,209,211,221,233,241,283,291,331,381,401,405,407,409,411,421,431,481,533,541,581,633,641,653,663,665,667,669,673,683,691
 

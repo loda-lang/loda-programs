@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   mov $3,$1
-  seq $3,76332 ; Rad(n)+n/rad(n), where rad(n) is the squarefree kernel of n = A007947(n).
+  div $3,$5
+  add $3,$5
+  add $3,1
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   cmp $3,1
   sub $0,$3

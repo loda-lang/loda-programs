@@ -7,8 +7,10 @@ mov $2,$0
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $4,$2
+  seq $4,276008 ; Substitute ones for all nonzero digits in factorial base representation of n: a(n) = A059590(A275727(n)).
   mov $1,$2
-  seq $1,276009 ; Decrement each nonzero digit by one in factorial base representation of n: a(n) = n - A276008(n).
+  sub $1,$4
   add $2,$0
   sub $3,$1
 lpe

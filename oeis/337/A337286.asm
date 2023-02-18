@@ -7,7 +7,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,337281 ; a(n) = n*T(n), where T(n) = A000073(n) = n-th tribonacci number.
+  mov $5,$0
+  seq $5,73 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with a(0) = a(1) = 0 and a(2) = 1.
+  mul $0,$5
   mov $4,$0
   mul $4,$0
   add $1,$4

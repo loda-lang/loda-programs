@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,342003 ; Maximal exponent in the prime factorization of the arithmetic derivative of n: a(n) = A051903(A003415(n)).
+  add $3,2
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  sub $3,1
+  seq $3,51903 ; Maximal exponent in prime factorization of n.
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -4,7 +4,11 @@
 
 lpb $0
   mov $2,$0
-  seq $2,257680 ; Characteristic function for A256450: 1 if there is at least one 1-digit present in the factorial representation of n (A007623), otherwise 0.
+  seq $2,257511 ; Number of 1's in factorial base representation of n (A007623).
+  pow $3,$2
+  mov $2,$3
+  add $2,1
+  mod $2,2
   sub $0,1
   add $1,$2
 lpe

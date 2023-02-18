@@ -4,7 +4,10 @@
 
 add $0,1
 lpb $0
-  seq $0,213724 ; Largest natural number x such that x = n + A000120(x), or zero if no such number exists.
+  seq $0,108918 ; Reversed binary words in reversed lexicographic order.
+  add $2,$0
+  mod $0,2
+  mul $0,$2
   trn $0,3
   div $0,2
   add $1,1

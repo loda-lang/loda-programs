@@ -4,9 +4,21 @@
 
 mov $1,$0
 mod $1,2
+mov $2,1
 mul $0,2
 add $0,$1
-seq $0,202637 ; x-values in the solution to x^2 - 7*y^2 = -3.
+lpb $0
+  sub $0,1
+  cmp $4,$2
+  add $2,2
+  add $2,$3
+  mul $4,3
+  mul $4,$2
+  add $4,$2
+  add $3,$4
+lpe
+mov $0,$3
+add $0,2
 mul $0,2
 pow $0,2
 div $0,32

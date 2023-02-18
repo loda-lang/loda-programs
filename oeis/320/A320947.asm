@@ -5,7 +5,18 @@
 mov $1,$0
 pow $1,2
 add $1,2
+mov $2,2
+mov $4,1
 add $0,1
-seq $0,29907 ; a(n+1) = a(n) + a(n-1) + Fibonacci(n), with a(0) = 0 and a(1) = 1.
+lpb $0
+  sub $0,1
+  mov $6,$2
+  add $2,$4
+  add $4,$5
+  add $5,$3
+  mov $3,$4
+  mov $4,$6
+lpe
+mov $0,$3
 mul $0,2
 dif $0,$1

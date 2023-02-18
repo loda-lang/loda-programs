@@ -8,7 +8,8 @@ bin $3,$0
 sub $0,1
 mov $1,$0
 trn $1,1
-seq $1,1223 ; Prime gaps: differences between consecutive primes.
+seq $1,40 ; The prime numbers.
+seq $1,13632 ; Difference between n and the next prime greater than n.
 mov $2,$3
 cmp $2,0
 add $3,$2

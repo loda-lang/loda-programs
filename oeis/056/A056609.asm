@@ -10,9 +10,13 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,56606 ; Squarefree kernel of lcm(binomial(n,0), ..., binomial(n,n)).
+  mov $4,$2
+  seq $4,345466 ; a(n) = Product_{k=1..n} binomial(n, floor(n/k)).
+  seq $2,99788 ; a(n) = Product_{i=1..2n} prime(i).
+  gcd $4,$2
   bin $0,$3
-  gcd $1,$2
+  gcd $1,$4
+  mov $2,$4
 lpe
 div $2,$1
 mov $0,$2

@@ -7,7 +7,8 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,337346 ; Number of proper divisors d of n for which A003961(d) > 2*d.
+  seq $3,337345 ; Number of divisors d of n for which A003961(d) > 2*d.
+  trn $3,1
   min $3,1
   sub $0,$3
   add $1,1

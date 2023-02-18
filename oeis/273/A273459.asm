@@ -1,8 +1,27 @@
 ; A273459: Even numbers such that the sum of the odd divisors is a prime p and the sum of the even divisors is 2p.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 18,50,578,1458,3362,4802,6962,10082,15842,20402,31250,34322,55778,57122,59858,167042,171698,293378,559682,916658,982802,1062882,1104098,1158242,1195058,1367858,1407842,1414562,1468898,1659842,2380562,2406818,2705138,2789522,2846498,2962178,3770258,4072658,4422338,4860962,5011778,5841362,6559442,6822818,6837602,7457522,7785458,9065282,9653618,10333058,10662962,10941842,11625842,14183138,14894882,15557042,17487698,17629922,18132242,18495362,19531250,19681538,20749682,21138002,23215298,23791202
-; Formula: a(n) = 2*A193070(n)^2
 
-seq $0,193070 ; Odd numbers N for which sigma(N^2) is prime.
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,3
+  pow $3,2
+  sub $3,1
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$3
+  add $1,2
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,3
 pow $0,2
 mul $0,2

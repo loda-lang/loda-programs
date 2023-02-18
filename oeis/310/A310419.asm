@@ -5,8 +5,12 @@
 mov $2,$0
 mul $2,5
 mov $0,$2
-seq $0,188510 ; Expansion of x*(1 + x^2)/(1 + x^4) in powers of x.
-add $2,$0
+sub $0,1
+mod $0,8
+sub $0,3
+mod $0,2
+sub $3,$0
+add $2,$3
 mov $1,$2
 cmp $1,0
 add $2,$1

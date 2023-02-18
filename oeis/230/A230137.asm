@@ -5,8 +5,14 @@ lpb $0
   mov $3,$0
   sub $0,1
   mov $2,$0
-  max $2,0
-  seq $2,261681 ; a(n) = 2^n + binomial(n, floor(n/2)) - 1.
+  div $2,2
+  mov $5,$0
+  bin $5,$2
+  mov $4,2
+  pow $4,$0
+  add $4,$5
+  sub $4,1
+  mov $2,$4
   mul $2,$3
   mov $0,0
   mov $1,$3

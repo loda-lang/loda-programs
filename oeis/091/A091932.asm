@@ -9,7 +9,9 @@ lpb $2
   mov $5,$1
   div $5,2
   mov $3,$1
-  seq $3,118952 ; Characteristic function of numbers that can be written as p+2^k, where p is prime and p less than 2^k (A118957).
+  seq $3,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
+  trn $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $3,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

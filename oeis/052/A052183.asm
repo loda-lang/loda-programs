@@ -1,8 +1,15 @@
 ; A052183: A second-order recursive sequence.
 ; 2,3,12,60,330,1911,11424,69768,432630,2713425,17168580,109390320,700939512,4512458580,29164264320,189120846288,1229917589262,8018580361365,52392620853300,342991368096300,2249282417749290
+; Formula: a(n) = (n+2)*(binomial(2*n+n,2*n)/(2*n+1))
 
 mov $1,$0
+mov $2,$0
+mul $2,2
 add $0,2
-seq $1,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
+add $1,$2
+bin $1,$2
+mov $3,$2
+add $3,1
+div $1,$3
 mul $1,$0
 mov $0,$1

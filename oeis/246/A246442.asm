@@ -8,13 +8,18 @@ pow $2,3
 lpb $2
   sub $2,33
   mov $3,$1
-  seq $3,108589 ; Floor(n*Pi/(Pi-2)).
-  mov $5,$3
+  add $3,1
+  mov $6,$3
+  mul $6,3872
+  div $6,1032
+  sub $6,$3
+  mov $3,$6
   sub $3,$1
   mul $3,338
   gcd $3,4
   add $3,1
   cmp $3,5
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

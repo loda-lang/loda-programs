@@ -5,5 +5,21 @@
 mov $1,$0
 cmp $1,0
 add $0,$1
-seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
+mov $4,$0
+mov $6,2
+lpb $6
+  sub $6,1
+  add $0,$6
+  sub $0,1
+  mov $5,$0
+  max $5,0
+  seq $5,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $3,$6
+  mul $3,$5
+  add $2,$3
+lpe
+min $4,1
+mul $4,$5
+sub $2,$4
+mov $0,$2
 add $0,1

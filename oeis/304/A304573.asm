@@ -13,8 +13,11 @@ lpb $4
   gcd $1,$4
   cmp $1,1
   sub $0,1
-  seq $0,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
-  mul $1,$0
+  seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  sub $0,1
+  mov $5,$0
+  cmp $5,0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

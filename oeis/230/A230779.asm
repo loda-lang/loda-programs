@@ -8,7 +8,9 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,121450 ; Expansion of (theta_4(q^3)^2 - theta_4(q)^2)/4 in powers of q.
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $3,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
+  mul $3,-1
   add $3,3
   cmp $3,1
   sub $0,$3

@@ -7,8 +7,14 @@ mov $2,$0
 sub $0,1
 pow $2,4
 lpb $2
+  mov $4,$1
+  seq $4,266265 ; Product of products of divisors of divisors of n.
   mov $3,$1
-  seq $3,323761 ; Denominator of Product_{d|n} (pod(d)/tau(d)) where pod(k) = the product of the divisors of k and tau(k) = the number of the divisors of k.
+  seq $3,211776 ; a(n) = Product_{d | n} tau(d).
+  gcd $4,$3
+  mov $5,$3
+  div $5,$4
+  mov $3,$5
   sub $3,1
   cmp $3,0
   sub $0,$3

@@ -4,7 +4,9 @@
 
 lpb $0
   mov $2,$1
-  seq $2,38548 ; Number of divisors of n that are at most sqrt(n).
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $2,1
+  div $2,2
   sub $0,$2
   add $1,1
 lpe

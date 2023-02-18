@@ -5,7 +5,14 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,216153 ; The partial products of a(n) are the distinct values of the exponential of the von Mangoldt function modified by restricting the divisors to prime divisors (A205957).
+  mov $3,$2
+  mul $3,-2
+  add $2,1
+  div $3,$2
+  sub $2,$3
+  seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $2,2
+  seq $2,205959 ; a(n) = n^omega(n)/rad(n).
   sub $0,1
   mul $1,$2
   mov $2,$0

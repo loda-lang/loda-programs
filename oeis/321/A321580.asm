@@ -7,7 +7,10 @@ pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,321512 ; Characteristic function of the reverse in the shuffle (perfect faro shuffle with cut): 1 if the sequence of shuffles of n cards contains the reverse of the original order of cards, 0 if not.
+  add $3,1
+  mov $4,$3
+  seq $3,327649 ; Maximum value of powers of 2 mod n.
+  div $3,$4
   sub $0,$3
   add $1,1
   sub $2,$0

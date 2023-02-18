@@ -7,7 +7,16 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,354987 ; a(n) = A344005(n) / gcd(A047994(n), A344005(n)).
+  add $3,1
+  dif $3,2
+  sub $3,1
+  mov $5,$3
+  mul $5,2
+  add $5,1
+  seq $5,47994 ; Unitary totient (or unitary phi) function uphi(n).
+  seq $3,11772 ; Smallest number m such that m(m+1)/2 is divisible by n.
+  gcd $5,$3
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,2

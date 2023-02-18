@@ -4,8 +4,13 @@
 
 mov $1,1
 lpb $0
+  gcd $3,$0
+  mul $3,2
+  add $3,2
+  div $3,5
   mov $2,$0
-  seq $2,301712 ; Coordination sequence for node of type V1 in "usm" 2-D tiling (or net).
+  seq $2,315061 ; Coordination sequence Gal.5.130.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+  add $2,$3
   sub $0,1
   add $1,$2
 lpe

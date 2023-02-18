@@ -1,8 +1,22 @@
 ; A268094: Number of 2 X n 0..2 arrays with every repeated value in every row not one larger and in every column one larger mod 3 than the previous repeated value, and upper left element zero.
 ; Submitted by Christian Krause
 ; 3,27,243,2028,16428,129792,1009200,7756992,59140800,448278528,3383655168,25462705152,191189978112,1433272320000,10732091092992,80291457712128,600321157939200,4486422252748800,33517530883227648,250344535896096768,1869505884184117248,13959148871759167488,104219649917013983232,778054393093945294848,5808287641065266085888,43358078570691645407232,323653308093944863653888,2415913436022395149221888,18033346059025373869375488,134606676306494993939300352,1004739487279419902184652800
-; Formula: a(n) = 3*A268093(n)^2
+; Formula: a(n) = 3*d(n)^2, b(n) = b(n-1)+c(n-1)+d(n-1), b(3) = 20, b(2) = 7, b(1) = 2, b(0) = 1, c(n) = 2*c(n-1)+2*c(n-2), c(3) = 12, c(2) = 4, c(1) = 2, c(0) = 0, d(n) = 2*c(n-1)+b(n-1)+d(n-1)+e(n-1), d(3) = 26, d(2) = 9, d(1) = 3, d(0) = 1, e(n) = c(n-1), e(3) = 4, e(2) = 2, e(1) = 0, e(0) = 1
 
-seq $0,268093 ; Number of 1 X n 0..2 arrays with every repeated value in every row not one larger and in every column one larger mod 3 than the previous repeated value, and upper left element zero.
+mov $1,1
+mov $3,1
+mov $4,1
+lpb $0
+  sub $0,1
+  add $1,$3
+  add $1,$2
+  mov $3,$4
+  add $3,$2
+  mov $4,$2
+  mov $2,$3
+  mul $2,2
+  add $3,$1
+lpe
+mov $0,$3
 pow $0,2
 mul $0,3

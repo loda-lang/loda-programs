@@ -13,7 +13,14 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,22853 ; a(n) = integer nearest n*Pi.
+  add $0,53
+  mov $5,97
+  mul $5,$0
+  div $5,113
+  add $5,1
+  mul $0,4
+  sub $0,166
+  sub $0,$5
   mul $1,$0
   mul $3,-1
   add $3,$1

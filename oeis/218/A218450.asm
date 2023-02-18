@@ -6,7 +6,8 @@ add $0,1
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,70614 ; a(n) = n^5 mod 31.
+  pow $2,5
+  mod $2,31
   mov $3,$2
   cmp $3,1
   add $3,1

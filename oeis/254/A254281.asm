@@ -1,6 +1,7 @@
 ; A254281: Decimal expansion of deuteron mass in u.
 ; Submitted by Jamie Morken(w2)
 ; 2,0,1,3,5,5,3,2,1,2
+; Formula: a(n) = (c(n)+2)%10, b(n) = b(n-1)+c(n-1)+d(n-1), b(3) = 23, b(2) = 15, b(1) = 0, b(0) = 0, c(n) = (2*e(n-1)+b(n-1))/10+8, c(3) = 11, c(2) = 9, c(1) = 8, c(0) = 0, d(n) = -b(n-1)-c(n-1)-d(n-1)+d(n-1)+7, d(3) = -17, d(2) = -1, d(1) = 7, d(0) = 0, e(n) = 2*((2*e(n-1)+b(n-1))/10)+8, e(3) = 14, e(2) = 10, e(1) = 8, e(0) = 0
 
 lpb $0
   sub $0,1

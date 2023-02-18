@@ -9,8 +9,10 @@ lpb $0
   sub $0,$1
   mov $1,4
   mov $2,$0
-  max $2,0
-  seq $2,64267 ; Clavis terminorum in Julian calendar for a year with Golden Number n.
+  add $2,4
+  mul $2,49
+  mod $2,30
+  add $2,10
 lpe
 mov $0,$2
 sub $0,11

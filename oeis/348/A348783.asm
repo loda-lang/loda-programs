@@ -6,7 +6,10 @@ mov $1,-1
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,135655 ; Divisors of 33550336 (the 5th perfect number), written in base 2.
+  mov $4,2
+  pow $4,$2
+  mov $2,$4
+  seq $2,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
   mov $3,$2
   mul $3,2
   add $3,1

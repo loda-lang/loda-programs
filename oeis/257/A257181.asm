@@ -4,6 +4,13 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,164116 ; Expansion of (1 - x) * (1 - x^4) / (1 - x^5) in powers of x.
+pow $0,2
+add $0,1
+mul $0,2
+lpb $0
+  add $0,1
+  mod $0,5
+lpe
+sub $0,1
 dif $1,$0
 mul $0,$1

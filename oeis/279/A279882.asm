@@ -1,12 +1,17 @@
 ; A279882: a(n) = 2^(prime(n) + 1) - 1.
-; Submitted by shiva
+; Submitted by davidBAM
 ; 7,15,63,255,4095,16383,262143,1048575,16777215,1073741823,4294967295,274877906943,4398046511103,17592186044415,281474976710655,18014398509481983,1152921504606846975,4611686018427387903,295147905179352825855,4722366482869645213695
-; Formula: a(n) = 2*2^A015919(n+1)-1
+; Formula: a(n) = 2*2^b(n)-1, b(n) = A159477(b(n-1)), b(0) = 2
 
-add $0,1
-seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
+mov $3,2
+lpb $0
+  sub $0,1
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $2,2
+pow $2,$3
 mov $1,2
-pow $1,$0
-mul $1,2
+add $1,$2
 mov $0,$1
-sub $0,1
+mul $0,2
+sub $0,5

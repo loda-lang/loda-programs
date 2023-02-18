@@ -9,9 +9,9 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,181062 ; Prime powers minus 1.
+  seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
   mul $0,2
-  add $0,1
+  sub $0,1
   mov $4,$3
   mul $4,$0
   add $2,$4
