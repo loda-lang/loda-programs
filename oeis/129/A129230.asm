@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,66096 ; Duplicate values in A060143.
+  mul $2,55
+  div $2,34
   trn $0,2
   add $1,$2
 lpe

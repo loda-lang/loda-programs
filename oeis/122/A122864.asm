@@ -8,6 +8,7 @@ mod $1,3
 dif $1,2
 mul $1,6
 sub $1,4
-seq $0,113446 ; Expansion of (phi(q)^2 - phi(q^3)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
+seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+seq $0,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
 mul $0,$1
 div $0,2

@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,7605 ; Sum of digits of n-th prime.
+  mul $3,2
+  max $3,1
+  seq $3,173919 ; Numbers that are prime or one less than a prime.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,2

@@ -7,8 +7,11 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,70321 ; Greatest squarefree number <= n.
   mov $3,$1
-  seq $3,76260 ; a(n) = 0 if n is a squarefree number, otherwise the distance between the two nearest squarefree numbers around n: A067535(n)-A070321(n).
+  seq $3,67535 ; Smallest squarefree number >= n.
+  mod $3,$5
   cmp $3,2
   sub $0,$3
   add $1,1

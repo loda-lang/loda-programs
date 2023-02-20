@@ -6,9 +6,16 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,194451 ; Partition numbers of positive integers and positive integers interleaved.
-  sub $3,1
+  mov $6,$1
+  div $6,2
+  add $6,1
+  seq $6,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $7,1
+  add $7,$6
+  mov $6,$7
+  sub $6,$3
+  sub $6,2
+  add $3,$6
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   cmp $3,0

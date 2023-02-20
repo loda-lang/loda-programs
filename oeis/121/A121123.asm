@@ -1,11 +1,19 @@
 ; A121123: Unbranched a-4-catapolynonagons (see Brunvoll reference for precise definition).
 ; Submitted by Christian Krause
 ; 1,3,12,63,342,1998,11772,70308,420552,2521368,15120432,90710928,544218912,3265243488,19591180992,117546666048,705278316672,4231667380608,25389994205952,152339950119168,914039640248832,5484237750793728,32905426141965312,197432556307596288
-; Formula: a(n) = (6^n+A164560(n))/4+1
 
 mov $1,6
 pow $1,$0
-seq $0,164560 ; Partial sums of A164532.
+mov $2,1
+lpb $0
+  sub $0,1
+  gcd $3,2
+  add $3,1
+  mul $2,$3
+lpe
+mov $0,$2
+mul $0,2
+sub $0,1
 add $0,$1
 div $0,4
 add $0,1

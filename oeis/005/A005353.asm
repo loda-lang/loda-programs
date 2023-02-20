@@ -34,6 +34,5 @@ lpb $0
   lpe
   mul $2,$6
 lpe
-mov $0,$2
-sub $1,$0
+sub $1,$2
 mov $0,$1

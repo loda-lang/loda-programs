@@ -1,10 +1,21 @@
 ; A203627: Numbers which are both 9-gonal (nonagonal) and 10-gonal (decagonal).
 ; Submitted by Ralfy
 ; 1,1212751,977965238701,788633124418157851,635955328796073362530201,512835649051022518566661395751,413551693065406705688396809494274501,333488912390817262631483541451235285166451,268926125929366270527488184087670639619302551601
-; Formula: a(n) = ((A041662(6*n)/2)^2-81)/56+1
 
+mov $1,1
 mul $0,6
-seq $0,41662 ; Numerators of continued fraction convergents to sqrt(350).
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$2
+  mov $2,$1
+  mov $1,$3
+  seq $1,40331 ; Continued fraction for sqrt(350).
+  mul $1,$2
+  add $1,$4
+  add $3,1
+lpe
+mov $0,$1
 div $0,2
 pow $0,2
 sub $0,81

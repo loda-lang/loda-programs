@@ -3,7 +3,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,11861 ; a(n) = floor(n(n-1)/8).
+  bin $2,2
+  div $2,4
   sub $0,2
   add $1,$2
 lpe

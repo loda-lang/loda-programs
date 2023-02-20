@@ -4,6 +4,19 @@
 
 mov $1,-1
 pow $1,$0
+mov $5,1
 mul $0,2
-seq $0,194349 ; E.g.f.: -log( sqrt(1-x^2) - x ).
+mov $4,$0
+lpb $4
+  sub $3,1
+  mul $5,$4
+  mul $2,2
+  mul $2,$4
+  sub $2,$5
+  mul $2,$4
+  div $2,$3
+  sub $4,1
+  add $5,$2
+lpe
+mov $0,$5
 mul $0,$1

@@ -8,7 +8,13 @@ lpb $3
   mov $2,$0
   add $2,1
   max $2,0
-  seq $2,284238 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 833", based on the 5-celled von Neumann neighborhood.
+  seq $2,283709 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
+  add $2,2
+  div $2,3
+  dif $2,2
+  mov $4,2
+  min $4,$2
+  mul $2,$4
   sub $0,1
   div $1,8
   sub $1,1

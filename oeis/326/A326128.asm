@@ -1,8 +1,29 @@
 ; A326128: a(n) = n - A007913(n), where A007913 gives the squarefree part of n.
 ; 0,0,0,3,0,0,0,6,8,0,0,9,0,0,0,15,0,16,0,15,0,0,0,18,24,0,24,21,0,0,0,30,0,0,0,35,0,0,0,30,0,0,0,33,40,0,0,45,48,48,0,39,0,48,0,42,0,0,0,45,0,0,56,63,0,0,0,51,0,0,0,70,0,0,72,57,0,0,0,75,80,0,0,63,0,0,0,66,0,80,0,69,0,0,0,90,0,96,88,99
-; Formula: a(n) = -A007913(n)+n+1
 
 mov $1,$0
-seq $1,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+add $1,1
+mov $2,1
+mov $4,1
+mov $5,1
+mov $3,$1
+lpb $3
+  add $4,2
+  add $5,$4
+  mov $6,$1
+  mod $6,$5
+  cmp $6,0
+  mov $7,$5
+  sub $7,$2
+  mul $7,$6
+  add $2,$7
+  mov $6,$1
+  add $6,1
+  trn $6,$5
+  cmp $6,0
+  cmp $6,0
+  sub $3,$6
+lpe
+div $1,$2
 sub $1,1
 sub $0,$1

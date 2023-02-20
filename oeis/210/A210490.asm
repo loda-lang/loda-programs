@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,51144 ; Nonsquarefree nonsquares: each entry has a square factor but is not a perfect square itself.
+  seq $3,51144 ; Nonsquarefree nonsquares: each term has a square factor but is not a perfect square itself.
   sub $3,1
   add $0,1
   add $1,1

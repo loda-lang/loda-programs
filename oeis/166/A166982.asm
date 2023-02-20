@@ -7,7 +7,8 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,2033 ; Number of perfect partitions of n.
+  add $3,1
+  seq $3,74206 ; Kalmár's [Kalmar's] problem: number of ordered factorizations of n.
   sub $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   cmp $3,0

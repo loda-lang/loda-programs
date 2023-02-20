@@ -6,6 +6,21 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,6477 ; Number of partitions of n with at least 1 odd and 1 even part.
+trn $0,1
+mov $2,$0
+add $2,1
+mov $3,$2
+mov $4,-1
+pow $4,$2
+add $4,1
+dif $2,2
+seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $2,$4
+div $2,2
+seq $3,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+add $3,$2
+add $0,1
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+sub $0,$3
 mul $0,$1
 div $0,2

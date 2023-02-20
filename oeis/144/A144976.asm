@@ -7,7 +7,8 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,324912 ; Binary weight of A324911(n).
+  seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $5,$1
   add $5,1
   gcd $5,$3

@@ -2,7 +2,18 @@
 ; Submitted by Jamie Morken(w3)
 ; 3,2,0,-2,4,2,-2,-4,2,-4,4,-2,4,2,-2,2,-4,4,-2,4,2,-4,2,-4,-2,4,2,-2,-4,2,-2,4,-2,-4,-4,4,-2,2,-2,2,-4,4,4,2,-2,-4,4,2,-2,-4,2,-4,4,4,-2,2,-4,4,-2,4,2,2,-2,4,2,-2,4,-2,-2,-4,2
 
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $1,1
+lpb $0
+  sub $0,1
+  add $1,1
+  mov $2,$1
+  cmp $2,0
+  add $2,$1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $3,$2
+  mov $1,$3
+lpe
+mov $0,$1
 max $0,2
 mul $0,-1
 mod $0,10

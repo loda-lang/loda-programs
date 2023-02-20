@@ -7,8 +7,14 @@ add $2,3
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,58043 ; a(n) = nextprime(n^2) - prevprime(n^2).
-  sub $3,4
+  add $3,2
+  pow $3,2
+  sub $3,5
+  div $3,2
+  seq $3,60265 ; Largest prime less than 2n.
+  add $3,1
+  seq $3,13632 ; Difference between n and the next prime greater than n.
+  sub $3,3
   cmp $3,0
   sub $0,$3
   add $1,1

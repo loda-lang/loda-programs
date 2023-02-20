@@ -1,10 +1,23 @@
 ; A129971: a(n) = A129968(n)^2.
 ; Submitted by [AF>Libristes]Maeda
 ; 1,4,9,1,4,9,16,4,9,16,9,16,1,4,9,16,4,9,16,25,9,16,25,16,4,9,16,9,16,25,16,25,9,16,16,25,1,4,9,16,4,9,16,25,9,16,25,16,25,4,9,16,25,9,16,25,36,16,25,36,25,9,16,25,16,25,36,25,16,25,4,9,16,9,16,25,16,25,36,9,16,25,16,25,25,36,16,25,36,25,36,9,16,16,25,16,25,25,36,1
-; Formula: a(n) = (A061909(n+1)%9)^2
 
-add $0,1
-seq $0,61909 ; Skinny numbers: numbers n such that there are no carries when n is squared by "long multiplication".
+add $0,2
+mov $3,$0
+pow $3,4
+lpb $3
+  mov $5,$2
+  seq $5,4159 ; Sum of digits of n^2.
+  mov $4,$2
+  seq $4,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  pow $4,2
+  sub $4,$5
+  cmp $4,0
+  sub $0,$4
+  add $2,1
+  sub $3,$0
+lpe
+mov $0,$2
 mod $0,9
 mov $1,$0
 pow $1,2

@@ -1,9 +1,21 @@
 ; A044413: Numbers n such that string 8,1 occurs in the base 10 representation of n but not of n-1.
 ; Submitted by Jamie Morken(l1)
 ; 81,181,281,381,481,581,681,781,810,881,981,1081,1181,1281,1381,1481,1581,1681,1781,1810,1881,1981,2081,2181,2281,2381,2481,2581,2681,2781,2810,2881,2981,3081,3181,3281,3381,3481,3581
+; Formula: a(n) = (10*n+29)/11+72*((10*n+29)/11)+27*((10*n+41)/11)-((144*((10*n+29)/11)+54*((10*n+41)/11)+2*((10*n+29)/11)+152)%4)-144
 
-add $0,2
-seq $0,44335 ; Numbers n such that string 0,3 occurs in the base 10 representation of n but not of n-1.
+mul $0,10
+add $0,32
+mov $2,$0
+add $0,9
+div $0,11
+mul $0,27
+sub $0,143
+sub $2,3
+div $2,11
+add $2,3
+add $0,$2
+mul $2,72
+add $0,$2
 mov $1,$0
 mul $0,2
 mod $0,4
