@@ -6,8 +6,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,49417 ; a(n) = isigma(n): sum of infinitary divisors of n.
   mov $3,$1
-  seq $3,348271 ; a(n) is the sum of noninfinitary divisors of n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$5
   min $3,1
   sub $0,$3
   add $1,1

@@ -7,8 +7,12 @@ add $2,11
 pow $2,2
 lpb $2
   add $1,1
+  mov $5,$1
+  seq $5,180122 ; First of three "least, sum, least" self-generating sequences.
   mov $3,$1
-  seq $3,190224 ; a(n) = [n*u + n*v] - [n*u] - [n*v], where u=sin(Pi/3), v=cos(Pi/3), and []=floor.
+  add $3,$5
+  mul $3,$5
+  mod $3,2
   add $3,1
   cmp $3,1
   sub $0,$3

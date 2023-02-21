@@ -154,6 +154,7 @@ A063574: Number of steps to reach an integer == 1 (mod 4) when iterating the map
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065331: Largest 3-smooth divisor of n.
+A066911: Sum of primes < n that do not divide n.
 A067132: Number of elements in the largest set of divisors of n which are in geometric progression.
 A068068: Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
 A069213: a(n) = n-th positive integer relatively prime to n.

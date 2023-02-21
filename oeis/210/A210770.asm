@@ -4,9 +4,13 @@
 
 add $0,1
 mov $1,$0
-seq $1,275973 ; A binary sequence due to Harold Jeffreys.
+lpb $1
+  mov $2,$1
+  div $1,4
+lpe
+div $2,2
 mul $0,3
 dif $0,2
-sub $0,$1
+sub $0,$2
 div $0,2
-add $0,$1
+add $0,$2

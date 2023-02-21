@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353476 ; a(n) = 1 if n is a semiprime of the form p * q, where p and q are (not necessarily distinct) primes with p <= q < p^2, otherwise 0.
+  seq $3,280363 ; a(n) = floor(log_p(n)) where p = A020639(n), i.e., the least prime factor of n.
+  cmp $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

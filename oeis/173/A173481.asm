@@ -5,9 +5,11 @@
 mov $1,1
 add $1,$0
 add $0,1
-seq $0,178500 ; a(n) = 10^n * signum(n).
-mov $2,$0
+mov $3,10
+pow $3,$0
+mov $2,$3
 gcd $2,$1
+mov $0,$3
 mul $0,91
 mul $1,$0
 dif $1,5

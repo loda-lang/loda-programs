@@ -1,6 +1,7 @@
 ; A059712: Number of stacked directed animals on the square lattice.
 ; Submitted by ChelseaOilman
 ; 1,2,6,19,63,213,729,2513,8703,30232,105236,366849,1280131,4470354,15619386,54595869,190891131,667590414,2335121082,8168950665,28580354769,100000811433,349918126509,1224476796543,4285005630969
+; Formula: a(n) = (A001006(n)+A059738(n))/2
 
 mov $1,$0
 seq $1,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.

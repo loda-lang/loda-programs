@@ -1,11 +1,20 @@
 ; A291361: The arithmetic function u(n,2,6).
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 7,2,3,2,5,2,7,2,3,2,7,2,7,2,3,2,7,2,7,2,3,2,7,2,5,2,3,2,7,2,7,2,3,2,5,2,7,2,3,2,7,2,7,2,3,2,7,2,7,2,3,2,7,2,5,2,3,2,7,2,7,2,3,2,5,2,7,2,3,2,7,2,7,2,3,2,7,2,7,2,3,2,7,2,5,2,3,2,7,2,7,2,3,2,5,2,7,2,3,2
 
-mul $0,7
-add $0,6
+mov $2,1
+mov $3,5
+add $0,1
 lpb $0
-  mov $1,$0
-  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  div $0,$1
+  add $2,1
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    cmp $1,0
+    cmp $1,0
+    add $2,1
+    sub $3,$1
+  lpe
+  mov $0,0
 lpe
-mov $0,$1
+mov $0,$2

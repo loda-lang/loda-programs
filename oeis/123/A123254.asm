@@ -7,8 +7,22 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$0
+mov $3,-1
+pow $3,$1
 sub $0,$1
-seq $1,105523 ; Expansion of 1-x*c(-x^2) where c(x) is the g.f. of A000108.
+add $1,1
+mov $5,-1
+sub $5,$1
+div $5,2
+add $1,$5
+mov $4,$5
+bin $4,$1
+add $5,1
+bin $5,$1
+mul $5,2
+sub $5,$4
+mov $1,$5
+mul $1,$3
 sub $0,1
 bin $0,$2
 mul $0,$1

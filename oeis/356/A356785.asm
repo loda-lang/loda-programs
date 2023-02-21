@@ -4,5 +4,20 @@
 
 mov $1,$0
 add $1,1
-seq $0,97174 ; Total number of red nodes among tricolored labeled trees on n nodes.
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,-1
+  sub $3,$2
+  pow $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $4,$6
+  add $2,1
+  mul $6,$5
+  add $6,$4
+lpe
+mov $0,$6
 dif $0,$1

@@ -1,14 +1,13 @@
 ; A278110: a(n) = Product_{k=1..A056811(n)} A000040(k)^A278109(n,k).
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,2,2,2,2,4,12,12,12,24,24,24,24,48,48,144,144,288,288,288,288,576,2880,2880,8640,17280,17280,17280,17280,34560,34560,34560,34560,207360,207360,207360,207360,414720,414720,414720,414720,829440,2488320,2488320,2488320,4976640,34836480,174182400,174182400,348364800,348364800,1045094400,1045094400,2090188800,2090188800,2090188800,2090188800,4180377600,4180377600,4180377600,12541132800,25082265600,25082265600,25082265600,25082265600,50164531200,50164531200,50164531200,50164531200,300987187200
+; Formula: a(n) = A071773(n)*a(n-1), a(0) = 1
 
 mov $1,1
-mov $2,$0
-lpb $2
-  seq $2,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
-  seq $2,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
+lpb $0
+  mov $2,$0
+  seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
   sub $0,1
   mul $1,$2
-  mov $2,$0
 lpe
 mov $0,$1

@@ -4,5 +4,24 @@
 
 mul $0,4
 add $0,2
-seq $0,184738 ; floor(nr+h), where r=-1+sqrt(5), h=1/2; complement of A184735.
+mov $2,$0
+mov $4,$0
+add $0,3
+add $0,$2
+lpb $0
+  mul $0,11
+  sub $4,4
+  sub $4,$0
+  sub $0,$4
+  div $0,$4
+  pow $0,2
+  div $0,3
+  mov $1,$4
+  sub $1,12
+  mov $3,-89
+lpe
+div $1,$3
+add $1,1
+add $2,$1
+mov $0,$2
 div $0,4

@@ -13,7 +13,7 @@ lpb $5
   add $0,$5
   sub $0,1
   div $0,3
-  seq $0,272100
+  seq $0,272100 ; Integers n that are the sum of three nonzero squares while n*(n+1) is not.
   mov $6,$0
   mov $4,$5
   lpb $4
@@ -31,9 +31,8 @@ mul $0,$2
 mul $0,2
 sub $0,1
 div $0,3
-add $0,1
 mov $1,$0
-add $1,12
+add $1,13
 dif $1,2
 div $1,2
 mov $0,$1

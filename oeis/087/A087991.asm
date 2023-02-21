@@ -10,7 +10,10 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,88001 ; a(n) is the sum of non-palindromic divisors of n.
+  mov $4,$0
+  seq $4,88000 ; a(n) is the sum of the palindromic divisors of n.
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,$4
   add $3,$0
 lpe
 div $3,$1

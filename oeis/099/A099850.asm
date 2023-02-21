@@ -7,7 +7,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,4648 ; a(n) = prime(n) mod n.
+  mov $4,$0
+  add $4,1
+  mul $0,2
+  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  mod $0,$4
   add $3,$0
 lpe
 mov $0,$3

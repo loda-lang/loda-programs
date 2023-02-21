@@ -8,7 +8,9 @@ add $2,180
 lpb $2
   add $2,1
   mov $3,$1
-  seq $3,213715 ; a(n) = position of A179016(n) in A005187.
+  add $3,1
+  seq $3,179016 ; The infinite trunk of binary beanstalk: The only infinite sequence such that a(n-1) = a(n) - number of 1's in binary representation of a(n).
+  div $3,2
   sub $3,1
   add $0,1
   add $1,1

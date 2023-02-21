@@ -8,7 +8,24 @@ mov $1,$0
 add $1,$2
 mul $1,2
 add $1,$2
-seq $0,305490 ; Fixed point of the morphism 0->120, 1->110, 2->100.
+mul $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,$3
+  add $4,$0
+  bin $4,$0
+  mov $6,$5
+  mul $6,2
+  add $6,4
+  add $3,1
+  mov $5,$4
+  pow $5,2
+  mul $5,$4
+  mul $5,$6
+  mod $5,3
+lpe
+mov $0,$5
 sub $0,$1
 sub $1,$0
 div $1,3

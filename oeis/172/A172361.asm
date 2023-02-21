@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,133053 ; Squares of Motzkin numbers.
+  seq $0,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.
+  pow $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1
