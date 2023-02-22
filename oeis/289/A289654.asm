@@ -2,8 +2,15 @@
 ; Submitted by Jamie Morken(w3)
 ; 1,1,1,3,13,40,130,427,1428,4860,16794
 
-seq $0,289652 ; Catalan numbers - 2 (A120304) with first three terms changed to 1,1,1.
+mov $2,$0
+mov $3,$0
+add $3,1
+mul $0,2
+bin $0,$2
+div $0,$3
+trn $0,3
 mov $1,$0
-sub $1,12
+sub $1,11
 cmp $1,0
+add $0,1
 add $0,$1

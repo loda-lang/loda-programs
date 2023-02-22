@@ -7,10 +7,13 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $2,$0
+  max $2,0
+  mov $4,$2
   sub $0,$1
   sub $0,1
-  max $2,0
-  seq $2,33286 ; a(n) = n * prime(n).
+  seq $2,40 ; The prime numbers.
+  mul $4,$2
+  add $2,$4
   add $1,$2
 lpe
 mov $0,$1

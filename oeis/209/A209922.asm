@@ -8,7 +8,17 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,81334 ; sigma(2*n^2) modulo 4.
+  seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+  sub $3,1
+  seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  mov $5,$3
+  div $3,2
+  sub $5,$3
+  add $3,1
+  dif $5,2
+  bin $5,$3
+  add $5,1
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

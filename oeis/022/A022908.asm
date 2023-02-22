@@ -5,6 +5,10 @@
 cmp $1,$0
 mul $1,2
 trn $0,1
-seq $0,22905 ; a(n) = M(n) + m(n) for n >= 2, where M(n) = max{ a(i) + a(n-i): i = 1..n-1 }, m(n) = min{ a(i) + a(n-i): i = 1..n-1 }.
+mul $0,2
 add $0,1
+seq $0,123 ; Number of binary partitions: number of partitions of 2n into powers of 2.
+div $0,4
+mul $0,3
+add $0,2
 sub $0,$1

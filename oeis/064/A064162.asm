@@ -8,7 +8,16 @@ lpb $2
   sub $2,1
   mov $3,$6
   trn $3,1
-  seq $3,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
+  mov $8,$3
+  add $8,1
+  seq $8,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+  mul $3,2
+  sub $3,$8
+  mul $3,2
+  mov $7,$3
+  add $7,1
+  div $3,$7
+  mod $3,2
   mul $0,$4
   sub $0,$3
   mov $1,$6

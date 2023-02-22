@@ -14,7 +14,9 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,80396 ; Largest squarefree numbers dividing the binomial coefficients C(n,k) read by row, 0<=k<=n. Squarefree kernel of Pascal triangle.
+  seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  sub $0,1
+  seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   add $1,$0
 lpe
 mov $0,$1

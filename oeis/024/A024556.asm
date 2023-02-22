@@ -9,7 +9,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,4
-  seq $3,106743 ; a(n) = -1 iff n is prime, a(n) = 1 iff n is not squarefree, otherwise (n is nonprime and squarefree) a(n) = 0.
+  seq $3,226177 ; a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
+  add $3,1
+  mov $5,1
+  div $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   add $1,2

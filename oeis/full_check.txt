@@ -612,3 +612,4 @@ A358847: a(n) = 1 if A053669(6*n) [the smallest prime not dividing 6*n] is of th
 A359098: Numbers with exactly four nonzero decimal digits and not ending with 0.
 A359550: Multiplicative with a(p^e) = 1 if p > e, otherwise 0.
 A359551: Dirichlet inverse of A359550, which is multiplicative sequence with a(p^e) = 1 if e < p, otherwise 0.
+A360158: a(n) is the number of unitary divisors of n that are odd squares minus the number of unitary divisors of n that are even squares.

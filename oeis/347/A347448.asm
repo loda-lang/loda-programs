@@ -7,7 +7,7 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$4
-  seq $0,65 ; -1 + number of partitions of n.
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   mov $2,$3
   mul $2,$0
   div $4,2

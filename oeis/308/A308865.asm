@@ -4,6 +4,19 @@
 
 mul $0,2
 add $0,1
-seq $0,76726 ; a(n) = Sum_{k>=0} k^n/2^k.
-mul $0,192326400
-div $0,384652800
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  add $6,$2
+  mov $2,$1
+  pow $2,$4
+  add $2,$6
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  mul $5,-1
+  add $5,$3
+  add $1,1
+lpe
+mov $0,$5

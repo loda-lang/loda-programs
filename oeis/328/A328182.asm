@@ -1,9 +1,23 @@
 ; A328182: Expansion of e.g.f. 1 / (2 - exp(3*x)).
 ; Submitted by Jamie Morken(w3)
 ; 1,3,27,351,6075,131463,3413907,103429791,3581223435,139498558263,6037616347587,287444492409231,14929010774254395,839982382565841063,50897213545996785267,3304312091004451756671,228821504027595115886955,16836102104577636004291863,1311625494765417347634022947
-; Formula: a(n) = A000670(n)*3^n
 
 mov $1,3
 pow $1,$0
-seq $0,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  add $7,$3
+  mov $3,$2
+  pow $3,$5
+  add $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+mov $0,$6
 mul $0,$1

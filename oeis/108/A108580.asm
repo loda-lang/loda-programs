@@ -8,8 +8,11 @@ mov $2,$0
 mul $2,2
 pow $2,4
 lpb $2
+  mov $4,$1
+  seq $4,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $3,$1
-  seq $3,180018 ; Difference of sums of digits of n in decimal and in binary representation.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  sub $3,$4
   add $3,1
   max $3,0
   cmp $3,0

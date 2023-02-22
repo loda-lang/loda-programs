@@ -5,5 +5,15 @@
 mov $1,10
 lpb $1
   div $1,6
-  seq $0,74306 ; Inverse of permutation in A074305.
+  mov $2,$0
+  add $2,1
+  gcd $2,4
+  sub $2,3
+  mov $3,1
+  div $3,$2
+  mul $0,3
+  add $0,1
+  dif $0,2
+  div $0,2
+  sub $0,$3
 lpe
