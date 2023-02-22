@@ -1,0 +1,9 @@
+; A153640: Primes made up of a nonprime number of only nonprime digits.
+; Submitted by SirSexington
+; 1009,1019,1049,1061,1069,1091,1109,1181,1409,1481,1489,1499,1601,1609,1619,1669,1699,1801,1811,1861,1889,1901,1949,1999,4001,4019,4049,4091,4099,4111,4409,4441,4481,4649,4691,4801,4861,4889,4909,4919,4969,4999,6011
+; Formula: a(n) = A034844(n+30)
+
+add $0,30
+mov $1,$0
+seq $1,34844 ; Primes with only nonprime decimal digits.
+mov $0,$1
