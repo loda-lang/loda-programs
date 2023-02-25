@@ -5,9 +5,19 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,$1
   add $1,1
   mov $3,$1
-  seq $3,33684 ; 1 iff n is a square not divisible by 3.
+  div $3,3
+  add $5,$3
+  mov $3,$4
+  mul $4,$5
+  sub $3,$4
+  mod $3,2
+  add $3,2
+  mod $3,2
   add $0,$3
   sub $0,1
   add $1,3

@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,88388 ; Exponent of the largest prime power factor of n, a(1)=0.
+  seq $3,34699 ; Largest prime power factor of n.
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

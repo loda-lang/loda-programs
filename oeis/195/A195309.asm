@@ -5,7 +5,9 @@
 add $0,2
 mov $1,$0
 pow $1,2
-sub $1,1
-seq $1,6368 ; The "amusical permutation" of the nonnegative numbers: a(2n)=3n, a(4n+1)=3n+1, a(4n-1)=3n-1.
+mul $1,3
+sub $1,2
+dif $1,2
+div $1,2
 mul $0,$1
 div $0,4

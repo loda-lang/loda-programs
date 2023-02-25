@@ -5,9 +5,15 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
   mul $2,2
-  seq $2,33182 ; Number of pairs (p,q) such that 5*p + 6*q = n.
+  add $2,20637
+  mov $3,$2
+  div $3,6
+  sub $4,$3
+  add $2,1
+  div $2,5
+  sub $2,688
+  add $2,$4
   trn $0,9
   add $1,$2
 lpe

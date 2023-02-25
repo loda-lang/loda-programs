@@ -5,6 +5,32 @@
 mov $1,$0
 add $1,4
 bin $1,2
-seq $0,114240 ; a(n) = (n+1)(n+2)^2*(n+3)(7n^2 + 23n + 20)/240.
+mov $2,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$2
+  add $0,$4
+  mov $6,$0
+  add $6,2
+  add $0,3
+  mov $7,$0
+  bin $7,4
+  sub $0,2
+  mul $0,3
+  bin $0,2
+  mul $0,$7
+  mul $0,2
+  div $0,30
+  mul $0,$6
+  div $0,3
+  mov $3,$4
+  mul $3,$0
+  add $5,$3
+lpe
+min $2,1
+mul $2,$0
+mov $0,$5
+sub $0,$2
 mul $0,$1
 div $0,6

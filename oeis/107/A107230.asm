@@ -10,5 +10,7 @@ mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
-seq $1,1405 ; a(n) = binomial(n, floor(n/2)).
+mov $3,$1
+div $3,2
+bin $1,$3
 mul $0,$1

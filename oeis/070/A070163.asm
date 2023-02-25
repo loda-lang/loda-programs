@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,290599 ; Number of numbers from 1 to A002808(n) - 1 that are non-coprime to A002808(n).
+  add $3,3
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $3,2
+  add $6,$3
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $6,$3
+  mov $3,$6
   sub $3,1
   mov $5,$3
   mul $5,2

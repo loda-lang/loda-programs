@@ -1,4 +1,4 @@
-; A045228: Numbers n with property that in base 5 representation the numbers of 1's and 2's are 2 and 3, respectively.
+; A045228: Numbers whose base-5 representation contains exactly two 1's and three 2's.
 ; Submitted by ChelseaOilman
 ; 812,912,932,936,1412,1432,1436,1532,1536,1556,3312,3412,3432,3436,3812,4012,4052,4060,4063,4064,4067,4072,4087,4112,4187,4312,4412,4432,4436,4512,4552,4560,4563,4564,4567,4572,4587
 

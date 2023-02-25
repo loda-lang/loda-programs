@@ -13,7 +13,12 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,11584 ; Legendre symbol (n,17).
+  pow $0,8
+  add $0,1
+  mod $0,17
+  mul $0,2
+  sub $0,2
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

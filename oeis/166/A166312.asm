@@ -9,5 +9,3 @@ lpb $0
   div $1,2
   sub $0,$1
 lpe
-add $0,1
-sub $0,1

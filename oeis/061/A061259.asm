@@ -13,7 +13,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,66186 ; Sum of all parts of all partitions of n.
+  mov $5,$0
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

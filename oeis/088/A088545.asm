@@ -1,13 +1,18 @@
-; A088545: Quotient Fib(5n)/(5*Fib(n)), where Fib(n) = A000045(n).
+; A088545: Quotient Fibonacci(5*n)/(5*Fibonacci(n)), where Fibonacci(n) = A000045(n).
 ; Submitted by Simon Strandgaard
 ; 1,11,61,451,3001,20801,141961,974611,6675901,45768251,313671601,2150012161,14736206161,101003973851,692290189501,4745031073651,32522917584361,222915417520961,1527884938291801,10472279325329251,71778069881360701,491974211042344811,3372041404278257761
-; Formula: a(n) = (2*binomial(n%2+A005248(n+1),2))/5
 
 mov $1,$0
+mov $2,2
+mov $3,1
 add $0,1
-seq $0,5248 ; Bisection of Lucas numbers: a(n) = L(2*n) = A000032(2*n).
+lpb $0
+  sub $0,1
+  add $2,$3
+  add $3,$2
+lpe
 mod $1,2
-add $1,$0
+add $1,$2
 bin $1,2
 mov $0,$1
 mul $0,2

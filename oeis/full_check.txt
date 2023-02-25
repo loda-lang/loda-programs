@@ -175,6 +175,7 @@ A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is th
 A075802: Characteristic function of perfect powers, A001597.
 A076156: Numbers n such that Omega(n+1) = Omega(n)+1, where Omega(m) (A001222) denotes the number of prime factors of m, counting multiplicity.
 A076558: a(n) = r * min(e_1, ..., e_r), where n = p_1^e_1 . .... p_r^e_r is the canonical prime factorization of n, a(1) = 0.
+A077546: Primes of the form floor(n*Pi).
 A077655: Number of consecutive successors of n having the same number of prime factors as n (counted with multiplicity).
 A078175: Numbers with an integer arithmetic mean of all prime factors.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.

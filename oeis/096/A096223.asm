@@ -14,7 +14,11 @@ lpb $4
   gcd $1,$4
   cmp $1,1
   sub $0,$1
-  seq $0,183008 ; a(n) = 24*p(n) = 24*A000041(n).
+  mov $5,$0
+  add $5,1
+  seq $5,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mov $0,$5
+  mul $0,24
   mul $1,$0
   add $3,$1
 lpe

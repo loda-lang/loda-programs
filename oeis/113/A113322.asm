@@ -8,7 +8,18 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,113321 ; Lexicographically earliest permutation of the natural numbers such that all positive differences between succeeding terms occur exactly once.
+  add $0,1
+  mov $6,$0
+  dif $6,2
+  div $0,2
+  mov $5,$0
+  add $5,1
+  div $5,7
+  sub $5,1
+  mul $0,2
+  sub $0,$5
+  div $0,3
+  add $0,$6
   add $1,$2
   mov $2,$0
 lpe

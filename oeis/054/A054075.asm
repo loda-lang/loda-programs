@@ -5,7 +5,19 @@
 mov $1,-1
 mul $1,$0
 bin $1,2
-seq $0,54072 ; Position of n in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
+mov $3,$0
+add $3,2
+lpb $0
+  mov $5,$0
+  seq $5,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  sub $0,1
+  add $4,$5
+lpe
+add $4,2
+mov $0,$4
+mul $0,2
+sub $0,1
+mod $0,$3
 mov $2,$0
 add $2,$1
 mov $0,$2

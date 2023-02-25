@@ -7,7 +7,13 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,59966 ; a(n) = (1/n) * Sum_{ d divides n } mu(n/d) * (2^d - 1).
+  mov $3,$2
+  add $3,1
+  seq $2,740 ; Number of 2n-bead balanced binary necklaces of fundamental period 2n, equivalent to reversed complement; also Dirichlet convolution of b_n=2^(n-1) with mu(n); also number of components of Mandelbrot set corresponding to Julia sets with an attractive n-cycle.
+  mul $2,2
+  div $2,$3
+  cmp $3,1
+  sub $2,$3
   add $1,$2
 lpe
 mov $0,$1

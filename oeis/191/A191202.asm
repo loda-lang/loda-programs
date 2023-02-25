@@ -8,7 +8,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,191188 ; a(n) = floor(8*n*Pi) - 2*floor(4*n*Pi).
+  add $3,1
+  mul $3,8
+  mov $5,97
+  mul $5,$3
+  div $5,113
+  sub $3,$5
+  sub $3,1
+  mod $3,2
   add $3,1
   sub $0,$3
   add $0,1

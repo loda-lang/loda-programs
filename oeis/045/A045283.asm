@@ -1,4 +1,4 @@
-; A045283: Numbers n with property that in base 5 representation the numbers of 2's and 4's are 1 and 2, respectively.
+; A045283: Numbers whose base-5 representation contains exactly one 2 and two 4's.
 ; Submitted by Landjunge
 ; 74,114,122,199,239,247,274,299,349,354,359,369,370,371,373,449,489,497,514,522,539,547,554,559,569,570,571,573,589,597,602,607,610,611,613,617,699,739,747,824,864,872,899,924,974,979
 

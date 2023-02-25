@@ -10,8 +10,12 @@ add $0,1
 mov $1,1
 lpb $2
   mov $3,$1
-  seq $3,183095 ; a(n) = number of divisors d of n which are either 1 or of the form Product_(i) (p_i^e_i) where the e_i are <= 1.
-  sub $3,22
+  seq $3,5361 ; Product of exponents of prime factorization of n.
+  mov $4,$1
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $4,$3
+  mov $3,$4
+  sub $3,21
   cmp $3,5
   sub $0,$3
   add $1,1

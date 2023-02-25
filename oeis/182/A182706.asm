@@ -4,5 +4,14 @@
 
 add $0,1
 mov $1,$0
-seq $0,182704 ; Row sums of triangle A182700.
+mov $2,$0
+mov $3,1
+lpb $0
+  mov $4,$0
+  seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $0,1
+  add $3,$4
+lpe
+mov $0,$3
+mul $0,$2
 sub $0,$1

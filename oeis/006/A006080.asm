@@ -4,7 +4,21 @@
 
 mov $1,2
 pow $1,$0
-seq $0,123611 ; Row sums of triangle A123610.
+bin $4,$0
+mov $2,$0
+add $2,$4
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$2
+  gcd $0,$3
+  mov $5,$0
+  add $5,$0
+  bin $5,$0
+  add $4,$5
+lpe
+div $4,$2
+mov $0,$4
 add $0,$1
 sub $0,3
 div $0,4

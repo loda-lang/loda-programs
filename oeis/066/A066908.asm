@@ -3,6 +3,14 @@
 
 pow $0,$0
 mov $1,$0
-seq $0,48764 ; Largest factorial <= n.
+mov $3,$0
+mov $0,1
+mov $2,1
+lpb $3
+  add $3,$0
+  add $2,1
+  mul $0,$2
+  sub $3,$0
+lpe
 trn $1,$0
 mov $0,$1

@@ -1,4 +1,4 @@
-; A045222: Numbers n with property that in base 5 representation the numbers of 1's and 2's are 1 and 1, respectively.
+; A045222: Numbers whose base-5 representation contains exactly one 1 and one 2.
 ; Submitted by Science United
 ; 7,11,27,35,38,39,42,47,51,55,58,59,66,71,82,86,107,111,127,135,138,139,142,147,175,178,179,190,193,194,195,198,199,202,210,213,214,217,222,227,235,238,239,242,247,251,255,258,259,266
 

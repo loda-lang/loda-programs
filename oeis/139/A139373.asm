@@ -7,8 +7,13 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
   mov $3,$1
-  seq $3,65359 ; Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
+  sub $3,$5
+  sub $5,$3
+  sub $5,$3
+  mov $3,$5
   mul $3,4
   trn $3,3
   min $3,1

@@ -7,7 +7,7 @@ mov $1,2
 lpb $1
   div $1,2
   mov $0,$2
-  seq $0,31505 ; Upper prime of a difference of 4 between primes.
+  seq $0,31505 ; Upper prime of a difference of 4 between consecutive primes.
 lpe
 sub $0,11
 div $0,2

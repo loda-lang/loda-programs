@@ -4,8 +4,23 @@
 
 sub $1,$0
 lpb $0
-  mov $2,$0
-  seq $2,182555 ; G.f.: (3-4*x-sqrt(1-4*x^2))/(2*(1-2*x)^2).
+  mov $6,1
+  add $6,$0
+  mov $2,$6
+  div $2,2
+  mov $5,$0
+  bin $5,$2
+  add $6,$2
+  add $2,$6
+  mul $2,$5
+  mul $2,-1
+  mov $3,$0
+  add $3,3
+  mov $4,2
+  pow $4,$0
+  mul $4,$3
+  add $2,$4
+  div $2,2
   sub $0,1
   add $1,$2
 lpe
