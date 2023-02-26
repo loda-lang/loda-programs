@@ -1,6 +1,7 @@
 ; A355001: Smallest common prime factor of A003961(n) and A276086(n), or 1 if they are coprime, where A003961 is fully multiplicative with a(p) = nextprime(p), and A276086 is primorial base exp-function.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,1,3,1,5,1,3,5,3,1,5,1,3,5,3,1,5,1,3,5,3,1,5,1,3,5,3,1,7,1,3,1,3,7,5,1,3,5,3,1,5,1,3,5,3,1,5,1,3,5,3,1,5,7,3,5,3,1,7,1,3,1,3,7,5,1,3,5,3,1,5,1,3,5,3,1,5,1,3,5,3,1,5,7,3,5,3,1,7,1,3,1,3,7,5,1,3,5,3
+; Formula: a(n) = A020639(gcd(A283980(n),A276086(n+1))-1)
 
 mov $1,$0
 add $1,1

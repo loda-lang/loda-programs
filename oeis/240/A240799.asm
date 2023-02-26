@@ -1,11 +1,32 @@
 ; A240799: Total number of occurrences of the pattern 1=2<3 in all preferential arrangements (or ordered partitions) of n elements.
 ; Submitted by Jamie Morken(w1)
 ; 0,0,1,20,310,4660,72485,1193080,20938764,392485560,7850724915,167242351100,3785057708146,90775554103052,2301045251519105,61499717442074800,1729026306941190680,51022485837639054768,1577126907722325214959,50967150013960792511700,1718949328935162101668030,60404295645739961052603620,2208188701199549728091539261,83857970199945829136956644520,3303766770198009727859478731300,134860812212622119458812704045800,5697210276818325598116045659877675,248804891504077470891622181694531180
-; Formula: a(n) = (A240796(max(n-1,0))*(n+1))/3
 
 mov $1,$0
 add $1,1
-trn $0,1
-seq $0,240796 ; Total number of occurrences of the pattern 1<2 in all preferential arrangements (or ordered partitions) of n elements.
+mov $2,$0
+sub $2,2
+sub $0,1
+mov $5,2
+lpb $5
+  sub $5,1
+  add $2,$5
+  mov $7,$2
+  add $7,1
+  max $7,0
+  seq $7,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
+  sub $2,1
+  mov $4,$5
+  mul $4,$7
+  add $3,$4
+  mov $6,$7
+  mov $8,5
+lpe
+min $8,1
+mul $8,$6
+sub $3,$8
+add $0,1
+bin $0,2
+mul $0,$3
 mul $0,$1
 div $0,3

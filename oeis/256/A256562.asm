@@ -4,8 +4,11 @@
 
 mov $1,1
 lpb $0
+  mov $3,$0
+  add $3,1
   mov $2,$0
-  seq $2,108775 ; a(n) = floor(sigma(n)/n).
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $2,$3
   cmp $2,1
   sub $0,1
   add $1,$2

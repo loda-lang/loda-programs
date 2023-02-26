@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,158523 ; Moebius transform of negate primes in factorization of n.
+  seq $3,158523 ; Moebius transform of negated primes in factorization of n.
   add $3,2
   div $3,2
   gcd $3,2

@@ -3,8 +3,11 @@
 
 lpb $0
   mov $2,$0
-  trn $2,2
-  seq $2,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
+  sub $2,2
+  mov $3,-2
+  bin $3,$2
+  div $3,2
+  sub $2,$3
   div $2,2
   sub $0,3
   add $1,$2

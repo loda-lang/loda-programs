@@ -9,7 +9,8 @@ lpb $2
   mov $3,$1
   add $3,$1
   add $3,1
-  seq $3,320642 ; Number of 1's in the base-(-2) expansion of -n.
+  seq $3,5352 ; Base -2 representation of -n reinterpreted as binary.
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $4,$3
   add $5,1
   gcd $3,$5

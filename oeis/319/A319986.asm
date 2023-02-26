@@ -1,5 +1,5 @@
 ; A319986: Fully multiplicative with a(p^e) = prime(p mod 6)^e.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,3,5,9,11,15,2,27,25,33,11,45,2,6,55,81,11,75,2,99,10,33,11,135,121,6,125,18,11,165,2,243,55,33,22,225,2,6,10,297,11,30,2,99,275,33,11,405,4,363,55,18,11,375,121,54,10,33,11,495,2,6,50,729,22,165,2,99,55,66,11,675,2,6,605,18,22,30,2,891,625,33,11,90,121,6,55,297,11,825,4,99,10,33,22,1215,2,12,275,1089
 
 mov $1,1
@@ -20,7 +20,7 @@ lpb $0
   sub $3,1
   lpb $3
     sub $3,1
-    seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+    seq $5,29620 ; Numbers in (3,2)-Pascal triangle A029618 that are different from 2.
   lpe
   lpb $0
     dif $0,$2

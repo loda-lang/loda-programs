@@ -10,7 +10,8 @@ add $0,1
 mov $1,112
 lpb $2
   mov $3,$1
-  seq $3,91304 ; a(n) = Omega(2n-1) (number of prime factors of the n-th odd number, counted with multiplicity).
+  mul $3,2
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,5
   sub $0,$3
   add $1,1

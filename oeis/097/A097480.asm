@@ -1,14 +1,39 @@
 ; A097480: Positive integers n such that 2n-15 is prime.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 9,10,11,13,14,16,17,19,22,23,26,28,29,31,34,37,38,41,43,44,47,49,52,56,58,59,61,62,64,71,73,76,77,82,83,86,89,91,94,97,98,103,104,106,107,113,119,121,122,124,127,128,133,136,139,142,143,146,148,149,154,161,163,164,166,173,176,181,182,184,187,191,194,197,199,202,206,208,212,217,218,223,224,227,229,232,236,238,239,241,247,251,253,257,259,262,268,269,278,281
-; Formula: a(n) = (b(n)-3)/2+9, b(n) = A159477(b(n-1)), b(0) = 3
 
-mov $1,3
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+sub $0,2
+mov $2,8
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $6,0
+  add $1,1
+  lpb $1
+    gcd $6,2
+    mov $7,$1
+    div $7,3
+    lpb $7
+      mov $5,$1
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    add $1,1
+    div $1,$6
+    pow $1,2
+    mov $6,1
+  lpe
+  add $2,2
+  sub $0,$6
+  mov $1,$2
+  sub $3,$0
 lpe
-mov $0,$1
-sub $0,3
-div $0,2
-add $0,9
+add $2,2
+sub $4,$0
+mov $0,$2
+add $0,6
+mul $0,2
+div $0,4
+add $0,3
+sub $0,$4

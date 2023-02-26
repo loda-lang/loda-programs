@@ -1,8 +1,11 @@
 ; A014709: The regular paper-folding (or dragon curve) sequence.
-; Submitted by Cruncher Pete
+; Submitted by Christian Krause
 ; 1,1,2,1,1,2,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,2,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,2,2,2,1,1,2,1,1,2,2,2,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,2,2,2,1,1,2,2,1,2,2,2,1,1,2,1
-; Formula: a(n) = A025480(n)%2+1
 
-seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+add $0,1
+lpb $0
+  dif $0,2
+lpe
+div $0,2
 mod $0,2
 add $0,1

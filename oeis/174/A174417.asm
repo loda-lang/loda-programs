@@ -1,7 +1,25 @@
 ; A174417: Nonprimes that contain digits 0 and 1 only.
-; Submitted by Science United
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,10,100,110,111,1000,1001,1010,1011,1100,1101,1110,1111,10000,10001,10010,10011,10100,10101,10110,11000,11001,11010,11011,11100,11101,11110,11111,100000,100001,100010,100011,100100,100101,100110,100111,101000,101001,101010,101011,101100,101101,101110,110000,110001,110010,110011,110100,110101,110110,110111,111000,111001,111010,111011,111100,111101,111110,111111,1000000,1000001,1000010,1000011,1000100,1000101,1000110,1000111,1001000,1001001,1001010,1001011,1001100,1001101,1001110,1001111,1010000
-; Formula: a(n) = A007088(A174416(n))
 
-seq $0,174416 ; Numbers whose binary expansion is a decimal nonprime.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+  sub $3,1
+  mov $5,$3
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  cmp $3,0
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$5
+add $0,1

@@ -6,7 +6,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353682 ; a(n) = 1 if phi(sigma(n)) >= phi(n), otherwise 0.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $6,$1
+  seq $6,62401 ; a(n) = phi(sigma(n)).
+  sub $6,$3
+  mov $5,3
+  pow $5,$6
+  mov $3,$5
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

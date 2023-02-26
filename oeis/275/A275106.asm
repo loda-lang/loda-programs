@@ -11,7 +11,12 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
-  seq $0,257628 ; Expansion of 1 - f(-x) in powers of x where f() is a Ramanujan theta function.
+  bin $6,$0
+  sub $6,1
+  seq $0,116916 ; Expansion of q^(-1/8) * (eta(q)^3 + 3 * eta(q^9)^3) in powers of q^3.
+  mod $0,3
+  dif $0,-2
+  mul $0,$6
   mov $4,1
   add $4,$0
   div $5,2

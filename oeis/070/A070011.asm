@@ -8,7 +8,14 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,88530 ; Denominator of Bigomega(n)/Omega(n).
+  add $3,1
+  mov $5,$3
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  seq $5,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  gcd $5,$3
+  mov $6,$3
+  div $6,$5
+  mov $3,$6
   cmp $3,1
   gcd $3,2
   sub $0,$3

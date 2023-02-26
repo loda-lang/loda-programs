@@ -15,7 +15,10 @@ lpb $4
   bin $1,$0
   bin $0,$1
   sub $0,1
-  seq $0,9205 ; a(n) = gcd(d(n), sigma(n)).
+  mov $5,$0
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $0,$5
   mul $0,$3
   mul $1,$0
   max $3,$1

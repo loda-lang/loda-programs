@@ -4,7 +4,15 @@
 
 lpb $0
   mov $2,$0
-  seq $2,8764 ; Number of 3 X 3 symmetric stochastic matrices under row and column permutations.
+  add $2,3
+  mov $3,$2
+  pow $3,2
+  pow $2,3
+  div $2,3
+  mul $2,2
+  add $2,$3
+  add $2,24
+  div $2,48
   sub $0,2
   sub $1,1
   add $1,$2

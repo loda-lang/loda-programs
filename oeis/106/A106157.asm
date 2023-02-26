@@ -3,9 +3,12 @@
 
 lpb $0
   sub $0,2
-  mov $2,$0
-  max $2,0
-  seq $2,167030 ; a(n) = (2^n - (-1)^n - 3)/3.
+  mov $2,2
+  pow $2,$0
+  add $2,4
+  mul $2,2
+  div $2,6
+  sub $2,2
   add $1,$2
 lpe
 sub $1,1

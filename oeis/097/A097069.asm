@@ -1,24 +1,38 @@
 ; A097069: Positive integers n such that 2n - 9 is prime.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 6,7,8,10,11,13,14,16,19,20,23,25,26,28,31,34,35,38,40,41,44,46,49,53,55,56,58,59,61,68,70,73,74,79,80,83,86,88,91,94,95,100,101,103,104,110,116,118,119,121,124,125,130,133,136,139,140,143,145,146,151,158,160,161,163,170,173,178,179,181,184,188,191,194,196,199,203,205,209,214,215,220,221,224,226,229,233,235,236,238,244,248,250,254,256,259,265,266,275,278
 
-add $0,1
-mov $1,$0
-mul $1,2
-sub $1,2
-mov $2,4
-mov $3,$1
-pow $3,4
+sub $0,2
+mov $2,8
+mov $3,$0
+pow $3,5
 lpb $3
-  max $4,$2
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  sub $1,$4
+  mov $6,0
+  add $1,1
+  lpb $1
+    gcd $6,2
+    mov $7,$1
+    div $7,3
+    lpb $7
+      mov $5,$1
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    add $1,1
+    div $1,$6
+    pow $1,2
+    mov $6,1
+  lpe
   add $2,2
-  sub $3,$1
+  sub $0,$6
+  mov $1,$2
+  sub $3,$0
 lpe
-add $1,$2
-mov $0,$1
-sub $0,6
-div $0,2
-add $0,7
+add $2,2
+sub $4,$0
+mov $0,$2
+add $0,6
+mul $0,2
+div $0,4
+sub $0,$4

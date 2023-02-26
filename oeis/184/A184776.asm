@@ -6,8 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,184779 ; Numbers m such that prime(m) is of the form 2k + floor(k*sqrt(2)); complement of A184776.
-  sub $3,1
+  seq $3,184778 ; Numbers k such that 2k + floor(k*sqrt(2)) is prime.
+  seq $3,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
+  mul $3,2
+  sub $3,6
+  seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  sub $3,2
   add $0,1
   add $1,1
   add $2,$3

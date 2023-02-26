@@ -7,9 +7,18 @@ pow $2,$0
 add $2,$0
 pow $2,2
 lpb $2
-  add $1,4
   mov $3,$1
-  seq $3,100923 ; a(n) = 1 iff 6*n+1 and 6*n-1 are both prime numbers (0 otherwise).
+  add $3,5
+  mul $3,6
+  mov $6,$3
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,4
+  mov $5,$3
+  sub $5,$6
+  sub $5,1
+  mul $6,$5
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $3,$6
   mul $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

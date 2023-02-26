@@ -8,10 +8,20 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,35377 ; Number of partitions of n into parts 6k or 6k+3.
+  mov $6,$2
+  mul $6,2
+  add $6,1
+  div $6,3
+  mov $7,-1
+  pow $7,$6
+  add $7,1
+  dif $6,2
+  seq $6,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $6,$7
+  div $6,2
   mod $5,2
   add $5,1
-  add $1,$2
+  add $1,$6
   mov $3,1
   add $3,$4
   mul $3,$5

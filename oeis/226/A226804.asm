@@ -4,5 +4,18 @@
 
 mov $1,3
 pow $1,$0
-seq $0,6101 ; Gaussian binomial coefficient [ n,3 ] for q=3.
+add $0,2
+lpb $0
+  sub $0,1
+  add $3,2
+  mul $3,3
+  mov $4,$2
+  div $4,$3
+  gcd $2,2
+  add $2,$3
+  mul $2,$3
+lpe
+mul $2,$4
+mov $0,$2
+div $0,1248
 mul $0,$1

@@ -8,4 +8,9 @@ add $0,1
 mul $0,$1
 sub $0,1
 div $0,2
-seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+lpb $0
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+lpe
+mov $0,$2

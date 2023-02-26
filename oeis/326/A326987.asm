@@ -8,7 +8,12 @@ lpb $0
   sub $0,$3
   mov $2,$0
   add $2,1
-  seq $2,69283 ; a(n) = -1 + number of odd divisors of n.
+  mov $4,$2
+  trn $4,1
+  seq $4,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+  mov $2,$4
+  sub $2,2
+  div $2,2
   mov $3,1
   add $3,$0
   dif $3,2

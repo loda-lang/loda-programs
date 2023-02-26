@@ -5,10 +5,14 @@
 mov $1,1
 lpb $0
   sub $0,1
-  mov $1,$0
-  max $1,0
-  seq $1,303611 ; a(n) = (-1 - (-2)^(n-2)) mod 2^n.
-  max $1,5
+  mov $3,-2
+  pow $3,$0
   mov $0,1
+  gcd $2,$3
+  add $3,$2
+  add $2,$3
+  sub $2,1
+  mov $1,$2
+  max $1,5
 lpe
 mov $0,$1

@@ -8,8 +8,16 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,307271 ; Partial sums of A307201.
+  sub $0,1
+  mul $0,5
+  mov $5,$0
+  add $0,3
+  div $0,4
+  sub $5,$0
+  mul $0,$5
+  div $0,5
+  mul $0,3
+  add $0,1
   mov $4,$3
   mul $4,$0
   add $2,$4

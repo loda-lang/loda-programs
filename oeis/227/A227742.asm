@@ -6,7 +6,9 @@ mov $1,1
 mul $0,2
 lpb $0
   mov $2,$0
-  seq $2,72339 ; Any number n can be written (in two ways, one with m even and one with m odd) in the form n = 2^k_1 - 2^k_2 + 2^k_3 - ... + 2^k_m where the signs alternate and k_1 > k_2 > k_3 > ... >k_m >= 0; sequence gives minimal value of m.
+  seq $2,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $2,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  add $2,1
   sub $0,1
   add $1,$2
 lpe

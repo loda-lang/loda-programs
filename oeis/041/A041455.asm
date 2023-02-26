@@ -10,7 +10,13 @@ lpb $0
   mov $2,$1
   mov $1,$3
   mul $1,3
-  seq $1,40335 ; Continued fraction for sqrt(354).
+  sub $6,$1
+  gcd $6,2
+  mul $1,2
+  seq $1,10158 ; Continued fraction for sqrt(85).
+  gcd $1,18
+  mul $6,$1
+  mov $1,$6
   mul $1,2
   mov $5,$1
   dif $5,4

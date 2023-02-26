@@ -4,9 +4,14 @@
 
 add $0,1
 lpb $0
+  mov $3,$0
+  add $3,10
   mov $2,$0
-  trn $2,3
-  seq $2,25777 ; Expansion of 1/((1-x)*(1-x^5)*(1-x^7)).
+  sub $2,3
+  mul $2,2
+  mul $2,$3
+  div $2,140
+  add $2,1
   trn $0,8
   add $1,$2
 lpe

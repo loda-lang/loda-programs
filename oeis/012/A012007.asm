@@ -4,6 +4,30 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+mov $2,4
+pow $2,$0
+mul $0,2
+mov $6,$0
+add $0,1
+lpb $0
+  sub $0,1
+  div $8,2
+  add $8,$4
+  mul $8,2
+  add $9,1
+  mov $4,$3
+  add $4,$9
+  pow $4,$6
+  sub $4,$8
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  add $3,1
+  mul $7,-1
+  add $7,$5
+lpe
+gcd $7,$0
+mov $0,$7
+div $0,$2
 add $0,$1
 div $0,2

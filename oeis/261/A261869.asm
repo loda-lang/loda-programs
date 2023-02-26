@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
+  mov $6,$0
+  seq $6,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  add $0,1
+  mul $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

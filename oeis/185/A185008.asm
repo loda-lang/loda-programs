@@ -4,5 +4,14 @@
 
 mul $0,10
 mov $1,$0
-seq $1,106325 ; Smallest semiprime not less than n.
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  sub $3,1
+  seq $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  add $3,$2
+  mov $2,$1
+  add $1,1
+lpe
 mov $0,$1

@@ -4,6 +4,7 @@
 mov $1,$0
 lpb $1
   mov $0,$1
-  seq $0,61205 ; a(n) = n times R(n) where R(n) (A004086) is the digit reversal of n.
+  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  mul $0,$1
   mod $1,10
 lpe

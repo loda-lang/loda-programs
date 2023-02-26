@@ -6,12 +6,13 @@ add $0,6
 lpb $0
   add $1,$0
   mov $2,$0
-  seq $2,137264 ; Prime number gaps read modulo 3.
+  seq $2,40 ; The prime numbers.
+  seq $2,13632 ; Difference between n and the next prime greater than n.
+  mod $2,3
   sub $0,1
   mul $1,$2
   min $1,1
   add $3,$1
 lpe
 mov $0,$3
-add $0,1
-sub $0,6
+sub $0,5

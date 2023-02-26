@@ -8,7 +8,8 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,111133 ; Number of partitions of n into at least two distinct parts.
+  seq $3,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  sub $3,1
   add $1,1
   add $2,$3
   sub $2,$0

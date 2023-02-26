@@ -7,8 +7,12 @@ add $2,4
 pow $2,2
 lpb $2
   add $4,1
+  mov $7,$1
+  seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $6,$1
-  seq $6,228947 ; a(n) = sigma(n) - phi(n) - n.
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $6,$7
+  sub $6,$1
   mov $5,$1
   mul $5,$6
   mov $3,$1

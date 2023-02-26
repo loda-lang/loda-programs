@@ -9,7 +9,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+  mov $5,$0
+  seq $5,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$5
   mov $2,$3
   mul $2,$0
   add $1,$2
