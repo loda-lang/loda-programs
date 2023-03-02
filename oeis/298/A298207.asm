@@ -5,8 +5,10 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mov $5,$1
+  seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$5
+  add $3,1
   dif $3,3
   cmp $3,1
   sub $0,$3

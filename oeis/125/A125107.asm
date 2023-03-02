@@ -1,9 +1,15 @@
 ; A125107: Subtract compositions (A011782) from Catalan numbers (A000108).
 ; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,1,6,26,100,365,1302,4606,16284,57762,205964,738804,2666248,9678461,35324902,129579254,477507628,1767001046,6563596132,24465218444,91480466488,343055419346,1289895758716,4861929624236,18367319517720
+; Formula: a(n) = (2*(binomial(2*n,n)/(n+1))-2^n)/2
 
 mov $1,2
 pow $1,$0
-seq $0,262543 ; Number of rooted asymmetrical polyenoids of type U_n* having n edges.
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
+mul $0,2
 sub $0,$1
 div $0,2

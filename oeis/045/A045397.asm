@@ -8,7 +8,16 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,47372 ; Numbers that are congruent to {1, 2, 3, 5} mod 7.
+  mul $3,7
+  add $3,7
+  mov $6,$3
+  div $6,2
+  sub $3,$6
+  div $3,2
+  mod $6,2
+  add $6,$3
+  mov $3,$6
+  sub $3,2
   mul $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

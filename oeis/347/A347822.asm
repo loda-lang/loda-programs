@@ -15,7 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,351114 ; Characteristic function of balanced numbers.
+    seq $7,351114 ; Characteristic function of balanced numbers: a(n) = 1 if phi(n) divides sigma(n), otherwise 0.
     mov $9,10
     add $9,$5
     min $10,$0

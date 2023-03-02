@@ -7,7 +7,8 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,105827 ; a(n) = sigma(n) (mod 8).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $3,8
   sub $3,2
   cmp $3,0
   sub $0,$3

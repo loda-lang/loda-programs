@@ -7,9 +7,36 @@ mul $0,8
 lpb $0
   sub $0,1
   mov $4,$2
+  mov $6,$3
+  add $6,1
+  mov $8,2
+  gcd $8,$6
   mov $2,$1
+  add $6,1
+  div $6,2
+  mov $7,4
+  pow $7,$6
+  sub $7,$8
+  pow $8,$6
+  mul $8,$7
+  mov $6,$8
+  sub $6,3
+  mod $6,10
   mov $1,$3
-  seq $1,10150 ; Continued fraction for sqrt(71).
+  seq $1,40329 ; Continued fraction for sqrt(348).
+  add $1,$6
+  div $1,2
+  mov $5,$1
+  mul $5,2
+  div $1,4
+  mul $1,7
+  add $1,$5
+  dif $1,2
+  sub $1,2
+  div $1,2
+  cmp $5,2
+  add $1,$5
+  add $1,1
   mul $1,$2
   add $1,$4
   add $3,1

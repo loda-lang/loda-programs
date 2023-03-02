@@ -5,7 +5,20 @@
 mov $2,$0
 add $2,1
 pow $2,$2
-seq $0,13963 ; a(n) = sigma_15(n), the sum of the 15th powers of the divisors of n.
-mov $1,$0
+add $0,1
+mov $4,$0
+lpb $0
+  mov $5,$4
+  dif $5,$0
+  cmp $5,$4
+  cmp $5,0
+  mul $5,$0
+  pow $5,15
+  sub $0,1
+  add $3,$5
+lpe
+add $3,1
+mov $1,$3
 gcd $1,$2
+mov $0,$3
 div $0,$1

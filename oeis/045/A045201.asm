@@ -1,4 +1,4 @@
-; A045201: Numbers n with property that in base 5 representation the numbers of 0's and 3's are 3 and 2, respectively.
+; A045201: Numbers whose base-5 representation contains exactly three 0's and two 3's.
 ; Submitted by Science United
 ; 1878,1890,1950,2250,3143,3203,3215,3503,3515,3575,5003,5015,5075,5375,6268,6328,6340,6628,6640,6700,8128,8140,8200,8500,9383,9388,9391,9392,9394,9398,9403,9415,9428,9440,9451,9452
 

@@ -1,7 +1,18 @@
 ; A103931: Denominators of squares of harmonic numbers A001008/A002805.
 ; Submitted by Jon Maiga
 ; 1,4,36,144,3600,400,19600,78400,6350400,6350400,768398400,768398400,129859329600,129859329600,129859329600,519437318400,150117385017600,16679709446400,6021375110150400,240855004406016,26761667156224
-; Formula: a(n) = A002805(n)^2
+; Formula: a(n) = (b(n)/gcd(c(n),b(n)))^2, b(n) = b(n-1)*(n+1), b(2) = 6, b(1) = 2, b(0) = 1, c(n) = c(n-1)*(n+1)+b(n-1), c(2) = 11, c(1) = 3, c(0) = 1
 
-seq $0,2805 ; Denominators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1
 pow $0,2

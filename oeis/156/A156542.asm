@@ -11,7 +11,12 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   bin $0,$4
-  seq $0,156660 ; Characteristic function of Sophie Germain primes.
-  add $3,$0
+  mov $5,$0
+  add $5,$0
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  mul $5,$0
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,$5
 lpe
 mov $0,$3

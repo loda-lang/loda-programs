@@ -9,7 +9,9 @@ lpb $2
   sub $2,6
   add $1,3
   mov $3,$1
-  seq $3,175462 ; Number of divisors of integers of form 5 + 8n.
+  mul $3,8
+  add $3,4
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,2
   sub $0,$3
   mov $4,$0

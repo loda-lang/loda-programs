@@ -8,7 +8,14 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,68508 ; a(n) = round((a(n-1) + a(n-2))/a(n-3)) starting with a(1)=a(2)=a(3)=1.
+  mov $6,$0
+  div $6,2
+  mod $6,4
+  mod $0,2
+  add $0,$6
+  pow $0,$6
+  div $0,2
+  mod $0,10
   mov $2,$3
   mul $2,$0
   add $1,$2

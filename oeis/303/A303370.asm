@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,1
+  add $4,$1
+  pow $4,$1
   mov $3,$1
-  seq $3,172165 ; A simple sequence a(n) = n + n^(n-1).
+  add $3,$4
+  add $3,1
   add $0,1
   add $1,1
   add $2,$3

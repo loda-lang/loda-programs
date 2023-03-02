@@ -4,6 +4,16 @@
 
 mov $1,$0
 add $1,2
-seq $0,244038 ; a(n) = 4^n*binomial(3*n/2,n).
+mov $2,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  add $3,2
+  add $0,2
+  mul $2,4
+  mul $2,$0
+  div $2,$3
+lpe
+mov $0,$2
 mul $0,2
 dif $0,$1

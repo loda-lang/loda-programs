@@ -8,13 +8,19 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,6632 ; a(n) = 3*binomial(4*n-1,n-1)/(4*n-1).
+  mov $8,$5
+  add $5,1
+  mov $7,$5
+  add $7,$8
+  mul $7,2
+  bin $7,$8
+  div $7,$5
   sub $0,1
   mov $2,$3
-  mul $2,$5
+  mul $2,$7
   mov $6,5
   add $1,$2
-  mov $4,$5
+  mov $4,$7
   mul $4,3
 lpe
 min $6,1

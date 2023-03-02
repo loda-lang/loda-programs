@@ -2,6 +2,13 @@
 ; 0,0,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0
 
 mov $1,$0
-seq $1,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-cmp $0,$1
+lpb $1
+  mov $3,$1
+  mod $3,2
+  div $1,2
+  add $2,$3
+  mul $2,2
+lpe
+div $2,2
+cmp $0,$2
 cmp $0,0

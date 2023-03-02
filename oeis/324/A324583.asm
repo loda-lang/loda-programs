@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,356162 ; a(n) = 1 if n and A276086(n) are coprime, otherwise 0, where A276086 is primorial base exp-function.
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  gcd $3,$1
+  cmp $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

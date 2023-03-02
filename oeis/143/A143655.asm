@@ -6,10 +6,12 @@ mov $2,$0
 seq $2,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
 cmp $2,1
 mov $1,$0
-seq $1,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
-mul $1,4
 mul $1,$2
-div $1,4
+lpb $1
+  add $3,1
+  sub $1,$3
+lpe
+seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
 bin $1,4
 mul $0,$1
 add $0,1

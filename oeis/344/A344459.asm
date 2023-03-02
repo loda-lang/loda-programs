@@ -14,8 +14,11 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,176029 ; a(n)= n^Omega(n).
-  mul $1,$0
+  mov $5,$0
+  add $5,1
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  pow $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

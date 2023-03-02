@@ -4,7 +4,11 @@
 mov $1,-2
 mul $1,$0
 cmp $1,0
-seq $0,235796 ; 2*n - 1 - sigma(n).
+mov $2,$0
+add $2,1
+seq $2,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+mul $0,2
 add $0,3
+sub $0,$2
 sub $0,$1
 sub $0,$1

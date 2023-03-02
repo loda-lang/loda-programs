@@ -5,7 +5,21 @@
 mov $1,2
 pow $1,$0
 mul $1,5
-seq $0,147977 ; a(n) = 6^n-5^n-4^n-3^n-2^n-1.
+mov $2,6
+pow $2,$0
+mul $2,2
+mov $5,4
+mov $4,6
+lpb $4
+  add $3,$5
+  mov $5,$4
+  pow $5,$0
+  sub $4,1
+lpe
+mov $0,$3
+sub $0,3
+sub $2,$0
+mov $0,$2
 add $0,$1
 div $0,2
 add $0,1

@@ -3,9 +3,11 @@
 
 mov $1,2
 lpb $0
-  mov $1,$0
-  seq $1,323211 ; Level 1 of Pascal's pyramid. T(n, k) triangle read by rows for n >= 0 and 0 <= k <= n.
+  mov $2,2
+  max $2,$0
+  seq $2,323231 ; A(n, k) = [x^k] (1/(1-x) + x/(1-x)^n), square array read by descending antidiagonals for n, k >= 0.
   mov $0,0
+  mov $1,$2
 lpe
 sub $1,1
 mov $0,$1

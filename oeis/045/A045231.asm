@@ -1,4 +1,4 @@
-; A045231: Numbers n with property that in base 5 representation the numbers of 1's and 2's are 3 and 2, respectively.
+; A045231: Numbers whose base-5 representation contains exactly three 1's and two 2's.
 ; Submitted by Landjunge
 ; 787,807,811,907,911,931,1407,1411,1431,1531,3287,3307,3311,3407,3411,3431,3787,3807,3811,3887,3927,3935,3938,3939,3942,3947,3962,3987,4007,4011,4027,4035,4038,4039,4042,4047,4051,4055
 

@@ -1,15 +1,22 @@
 ; A091034: Fourth column (k=5) of array A090438 ((4,2)-Stirling2) divided by 24.
 ; Submitted by Jamie Morken(s4)
 ; 1,280,70560,19958400,6659452800,2644408166400,1244905998336000,689322235650048000,444916954745303040000,331767548149023866880000,283424276847308960563200000,275246422218908346286080000000
-; Formula: a(n) = (24*((4*A055315(2*(n%36+1))*(n%36+1))/48)-1440)/1440+1
 
 mod $0,36
 mov $1,1
 add $1,$0
 add $0,1
 mul $0,2
-seq $0,55315 ; Number of labeled trees with n nodes and 3 leaves.
-mul $0,4
+mov $2,$0
+add $0,4
+bin $0,4
+add $2,2
+lpb $2
+  mul $0,$2
+  sub $2,1
+lpe
+div $0,2
+mul $0,16
 mul $0,$1
 div $0,48
 mul $0,24

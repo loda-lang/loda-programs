@@ -4,7 +4,10 @@
 
 pow $1,$0
 gcd $1,2
-seq $0,238410 ; a(n) = floor((3(n-1)^2 + 1)/2).
+pow $0,2
+mul $0,3
+add $0,1
+div $0,2
 dif $0,3
 mul $0,2
 add $0,$1

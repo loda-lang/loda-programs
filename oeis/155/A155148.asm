@@ -8,20 +8,15 @@ sub $0,1
 mul $3,5
 lpb $3
   mul $2,$3
-  mov $7,$0
-  cmp $7,0
   add $1,$2
-  mov $5,$0
-  add $5,$7
-  div $2,$5
   sub $3,1
   add $4,1
 lpe
 mov $6,10
 pow $6,$0
-mov $7,$6
-cmp $7,0
-add $6,$7
+mov $5,$6
+cmp $5,0
+add $6,$5
 div $1,$2
 add $1,$6
 lpb $4

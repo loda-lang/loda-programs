@@ -5,8 +5,15 @@
 mov $2,$0
 lpb $0
   add $0,2
+  mov $5,$1
+  seq $5,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
   mov $3,$1
-  seq $3,276864 ; First differences of the Beatty sequence A001952 for 2 + sqrt(2).
+  add $3,1
+  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  add $3,1
+  add $3,$5
+  mod $3,2
+  add $3,3
   sub $0,$3
   add $1,1
   max $4,1

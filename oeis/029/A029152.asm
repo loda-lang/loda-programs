@@ -7,9 +7,18 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
   mul $2,2
-  seq $2,25834 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^12)).
+  mov $5,59969536
+  sub $5,$2
+  div $5,4
+  div $2,3
+  add $5,$2
+  mov $2,$5
+  sub $2,14992383
+  mov $4,$2
+  pow $2,2
+  add $2,$4
+  div $2,2
   add $1,$2
   mov $3,9
 lpe

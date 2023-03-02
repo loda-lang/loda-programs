@@ -15,11 +15,11 @@ lpb $5
   seq $4,189007 ; Number of ON cells after n generations of the 2D cellular automaton described in the comments.
   mov $6,$4
 lpe
+mov $2,4
+mul $2,$1
 sub $3,$6
 mov $0,$3
 mul $0,-1
-mov $2,4
-mul $2,$1
 add $0,4
 div $0,2
 add $0,$2

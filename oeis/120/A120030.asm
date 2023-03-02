@@ -5,5 +5,18 @@
 dif $0,2
 mov $1,-1
 pow $1,$0
-seq $0,138504 ; Expansion of (eta(q^2)^9 / (eta(q)^2 * eta(q^4)^4))^2 in powers of q.
+lpb $0
+  trn $0,1
+  mov $4,-1
+  pow $4,$0
+  mov $3,$0
+  seq $3,2173 ; a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.
+  mul $3,$4
+  mul $3,4
+  sub $3,1
+  mov $0,0
+lpe
+add $2,$3
+mov $0,$2
+add $0,1
 mul $0,$1

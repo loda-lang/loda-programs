@@ -4,7 +4,17 @@
 
 mov $3,$0
 mod $3,4
-seq $0,40329 ; Continued fraction for sqrt(348).
+mov $4,$0
+mov $5,10
+gcd $0,8
+lpb $4
+  mov $4,3
+  add $0,6
+  mov $5,7
+lpe
+mul $0,$5
+trn $0,63
+add $0,1
 add $0,$3
 mov $2,$0
 mul $0,0

@@ -9,7 +9,8 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,$3
-  seq $0,1223 ; Prime gaps: differences between consecutive primes.
+  seq $0,40 ; The prime numbers.
+  seq $0,13632 ; Difference between n and the next prime greater than n.
   mov $2,$3
   mul $2,$0
   add $1,$2

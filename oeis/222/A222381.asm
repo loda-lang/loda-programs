@@ -1,8 +1,29 @@
 ; A222381: Sum of neighbor maps: number of n X 2 binary arrays indicating the locations of corresponding elements equal to the sum mod 3 of their horizontal and antidiagonal neighbors in a random 0..2 n X 2 array.
 ; Submitted by Stony666
 ; 2,16,64,232,1024,4096,16224,65536,262144,1047680,4194304,16777216,67104256,268435456,1073741824,4294944768,17179869184,68719476736,274877800448,1099511627776,4398046511104,17592185552896,70368744177664,281474976710656,1125899904614400,4503599627370496,18014398509481984,72057594027966464,288230376151711744,1152921504606846976,4611686018383347712,18446744073709551616,73786976294838206464,295147905179159887872,1180591620717411303424,4722366482869645213696,18889465931477741993984
-; Formula: a(n) = A220172(2*n+1)
 
 mul $0,2
 add $0,1
-seq $0,220172 ; Sum of neighbor maps: number of n X 1 binary arrays indicating the locations of corresponding elements equal to the sum mod 3 of their horizontal, vertical and antidiagonal neighbors in a random 0..2 n X 1 array.
+mov $1,$0
+mul $1,2
+add $1,1
+mov $2,$1
+mov $5,$1
+add $5,2
+add $1,1
+lpb $1
+  sub $1,2
+  sub $3,$5
+  mul $6,2
+  add $6,2
+  bin $4,$2
+  mul $4,$3
+  sub $5,1
+  add $6,$4
+  sub $2,3
+  cmp $3,3
+lpe
+mov $0,$6
+sub $0,2
+div $0,2
+add $0,2

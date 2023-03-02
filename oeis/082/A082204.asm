@@ -1,13 +1,14 @@
 ; A082204: Begin with a 1, then place the smallest (as far as possible distinct) digits, such that, beginning from the n-th term, n terms form a palindrome.
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 1,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3
 
+mov $3,1
 lpb $0
-  cmp $1,2
-  add $1,1
-  sub $0,$1
-  mul $1,2
+  sub $0,1
+  cmp $1,1
+  mov $2,$3
+  mov $3,$1
+  add $1,$2
 lpe
-add $1,2
 mov $0,$1
-div $0,2
+add $0,1

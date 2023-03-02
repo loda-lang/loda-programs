@@ -5,8 +5,10 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
-  seq $3,51953 ; Cototient(n) := n - phi(n).
+  sub $3,$5
   trn $3,1
   seq $3,104583 ; Triangle read by rows: T(i,j) is the (i,j)-entry (1 <= j <= i) of the product A*B of the matrices A = [1; 3,1; 5,3,1; 7,5,3,1; ...]; B = [1; 1,2; 1,2,1; 1,2,1,2; ...] (both infinite lower triangular matrices).
   cmp $3,1

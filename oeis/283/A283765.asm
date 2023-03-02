@@ -1,22 +1,18 @@
 ; A283765: Numbers k such that L(k) is even, where L = A000201 = lower Wythoff sequence.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 3,4,5,8,9,10,14,15,19,20,24,25,26,29,30,31,35,36,40,41,45,46,47,50,51,52,55,56,57,61,62,66,67,68,71,72,73,76,77,78,82,83,87,88,89,92,93,94,97,98,99,103,104,108,109,113,114,115,118,119,120,124,125,129,130,134,135,136,139,140,141,144,145,146,150,151,155,156,157,160,161,162,165,166,167,171,172,176,177,178,181,182,183,186,187,188,192,193,197,198
 
-mov $1,2
+add $0,1
+mov $1,1
 mov $2,$0
-pow $2,2
+pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
-  add $3,1
-  mod $3,2
+  seq $3,85002 ; a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
+  cmp $3,0
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
 add $0,1

@@ -4,8 +4,17 @@
 
 mov $1,$0
 mod $1,2
+mov $2,1
 mul $0,2
 add $0,$1
-seq $0,103772 ; Larger of two sides in a (k,k,k-1)-integer-sided triangle with integer area.
+lpb $0
+  sub $0,1
+  add $3,$2
+  add $3,$2
+  add $2,$3
+lpe
+pow $2,2
+mov $0,$2
+mul $0,2
 div $0,224
 mul $0,63

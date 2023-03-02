@@ -5,9 +5,12 @@
 mov $1,7
 mov $2,$0
 lpb $2
-  seq $2,30432 ; Primes of form 10n+7.
+  add $2,1
+  seq $2,45380 ; Primes congruent to 2 mod 5.
+  mul $2,-1
+  sub $3,$2
   sub $0,1
-  mul $1,$2
+  mul $1,$3
   mov $2,$0
 lpe
 mov $0,$1

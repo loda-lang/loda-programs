@@ -13,7 +13,9 @@ lpb $4
   bin $1,$0
   mul $0,3
   div $0,2
-  seq $0,14591 ; a(n) = floor(n^2/12 + 5/4).
+  pow $0,2
+  add $0,16
+  div $0,12
   sub $0,1
   mul $1,$0
   mul $3,-1

@@ -5,7 +5,13 @@
 mov $1,$0
 add $1,2
 mov $2,$1
-seq $0,129132 ; Partial sums of A051903.
+lpb $0
+  mov $4,$0
+  seq $4,51903 ; Maximal exponent in prime factorization of n.
+  sub $0,1
+  add $3,$4
+lpe
+mov $0,$3
 add $0,1
 gcd $1,$0
 dif $2,$1

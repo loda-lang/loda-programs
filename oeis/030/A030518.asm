@@ -8,7 +8,16 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,240437 ; Number of non-palindromic n-tuples of 5 distinct elements.
+  mov $6,$0
+  div $0,2
+  mov $5,5
+  pow $5,$0
+  mov $4,5
+  pow $4,$6
+  sub $4,$5
+  div $4,4
+  mul $4,20
+  mov $0,$4
   sub $0,$1
   mov $1,$0
 lpe

@@ -7,10 +7,10 @@ mul $1,8
 add $1,5
 div $1,11
 mov $2,$0
-mov $5,$2
+mov $5,$0
 add $5,1
-mov $6,$2
-mov $8,$6
+mov $8,$0
+mov $6,$0
 mul $6,2
 lpb $6
   sub $6,13
@@ -23,7 +23,7 @@ mul $8,4
 trn $6,1
 add $6,$8
 add $6,1
-add $6,$2
+add $6,$0
 mov $7,$6
 mul $7,2
 add $7,$6

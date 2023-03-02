@@ -7,7 +7,10 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,358846 ; a(n) = 1 if A276086(6*n) == 5 (mod 6), otherwise 0, where A276086 is the primorial base exp-function.
+  mul $3,6
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  mod $3,6
+  div $3,4
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -7,7 +7,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,2
   sub $0,$3
   add $1,2

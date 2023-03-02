@@ -5,7 +5,13 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
+  mov $3,$2
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  sub $3,$2
+  sub $3,$2
+  bin $2,2
+  sub $2,$3
   sub $0,1
   max $0,1
   mul $1,$2

@@ -4,5 +4,13 @@
 
 add $0,1
 mov $1,$0
-seq $0,340632 ; a(n) in binary is a run of 1-bits from the most significant 1-bit of n down to the least significant 1-bit of n, inclusive.
+mov $2,1
+mov $3,$0
+lpb $0
+  div $0,2
+  mul $2,2
+lpe
+gcd $3,$2
+sub $2,$3
+mov $0,$2
 mod $0,$1

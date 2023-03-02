@@ -10,7 +10,9 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,10553 ; a(n) = tau(tau(n)).
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $4,1
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $2,$5
   mul $2,$4
   add $1,$2

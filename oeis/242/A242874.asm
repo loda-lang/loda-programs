@@ -7,6 +7,22 @@ add $1,17
 mod $1,3
 mul $1,3
 sub $1,2
-seq $0,8653 ; Theta series of direct sum of 2 copies of hexagonal lattice.
+mov $3,$0
+mov $5,1
+lpb $0
+  dif $3,3
+  mov $4,$3
+  dif $4,$0
+  cmp $4,$3
+  cmp $4,0
+  mul $4,$0
+  mov $5,12
+  sub $0,1
+  add $2,$4
+lpe
+add $2,1
+gcd $4,$2
+mul $4,$5
+mov $0,$4
 mul $0,$1
 div $0,4

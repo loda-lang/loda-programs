@@ -1,6 +1,7 @@
 ; A112607: Number of representations of n as a sum of a triangular number and twelve times a triangular number.
 ; Submitted by Jamie Morken(s3)
 ; 1,1,0,1,0,0,1,0,0,0,1,0,1,1,0,2,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,0,0,2,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,0,0,1,0,2,0,0,0,0,0,0,1,0,1,1,0,0,0,0,2,1,0,1,0,0,3,0,0,1,1,0,0,0,0,1,0,0,1,2,0,1,0,0,0,0,0,0
+; Formula: a(n) = A123331(8*n+12)/2
 
 mul $0,4
 add $0,6

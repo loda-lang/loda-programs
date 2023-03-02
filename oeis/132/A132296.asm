@@ -13,7 +13,13 @@ lpb $3
   lpb $0
     lpb $1
       mov $1,$0
-      seq $1,48763 ; Smallest cube >= n.
+      lpb $1
+        add $6,1
+        mov $5,$6
+        pow $5,3
+        trn $1,$5
+      lpe
+      mov $1,$5
       sub $1,$0
       mov $0,0
     lpe

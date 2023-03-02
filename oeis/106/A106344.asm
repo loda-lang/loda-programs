@@ -1,5 +1,19 @@
 ; A106344: Triangle read by rows: T(n,k) = binomial(k,n-k) mod 2.
+; Submitted by Cruncher Pete
 ; 1,0,1,0,1,1,0,0,0,1,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0
 
-seq $0,26729 ; Square array of binomial coefficients T(n,k) = binomial(n,k), n >= 0, k >= 0, read by antidiagonals.
+mov $2,1
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+add $2,1
+sub $0,$2
+add $2,$0
+sub $2,1
+add $0,$2
+mov $1,$2
+bin $1,$0
+mov $0,$1
+add $0,2
 mod $0,2

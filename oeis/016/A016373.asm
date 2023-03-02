@@ -5,5 +5,16 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,16335 ; 143rd cyclotomic polynomial.
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $3,1
+  mov $4,0
+  sub $4,$3
+  mod $4,13
+  pow $4,$4
+  trn $0,11
+  add $2,$4
+lpe
+mov $0,$2
 mul $0,$1

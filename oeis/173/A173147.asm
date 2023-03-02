@@ -6,8 +6,12 @@ mov $1,7
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,40 ; The prime numbers.
   mov $3,$1
-  seq $3,99210 ; a(n)=(P(n)*P(n+2))^5 with P(i)=i-th prime.
+  add $3,2
+  seq $3,40 ; The prime numbers.
+  mul $3,$5
   mod $3,3
   div $3,2
   sub $0,$3

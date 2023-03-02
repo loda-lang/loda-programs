@@ -8,7 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   add $2,1
-  seq $2,131764 ; Inverse Euler transform of central binomial coefficients A000984.
+  mov $4,$2
+  seq $2,54719 ; Number of 4-ary sequences with primitive period n.
+  mul $4,2
+  gcd $4,$2
+  div $2,$4
   mov $3,1
   add $3,$0
   dif $3,2

@@ -4,10 +4,14 @@
 
 add $0,4
 lpb $0
-  sub $0,4
   mov $2,$0
-  max $2,0
-  seq $2,8804 ; Expansion of 1/((1-x)^2*(1-x^2)*(1-x^4)).
+  add $2,1
+  bin $2,3
+  sub $0,4
+  mov $3,$0
+  dif $3,2
+  sub $2,$3
+  div $2,8
   add $1,$2
 lpe
 mov $0,$1

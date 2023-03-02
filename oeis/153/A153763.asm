@@ -1,19 +1,34 @@
 ; A153763: Numbers k >= 0 such that 8*k+9 is not prime.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,2,3,5,6,7,9,12,14,15,17,18,19,20,21,22,24,25,26,27,30,32,33,35,36,37,39,40,42,44,45,46,47,48,51,52,54,57,58,59,60,61,62,63,65,66,67,68,69,72,75,77,78,80,81,82,84,85,86,87,88,89,90,91,92,93,96,97,98,99,101,102,103,104,105,107,108,110,111,112,113,114,117,119,120,122,123,124,126,127,129,131,132,133,134,135,137,138,139,141
 
 add $0,1
-mov $1,8
+mov $1,4
 mov $2,$0
-pow $2,4
+pow $2,3
 lpb $2
+  mov $5,0
   max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  cmp $3,0
-  sub $0,$3
+  add $3,5
+  lpb $3
+    gcd $5,3
+    mov $6,$3
+    div $6,6
+    lpb $6
+      mov $4,$3
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    gcd $5,$3
+    div $3,$5
+    mov $5,1
+  lpe
+  sub $0,$5
   add $1,8
   sub $2,$0
 lpe
-sub $1,1
 mov $0,$1
+sub $0,12
 div $0,8
+add $0,1

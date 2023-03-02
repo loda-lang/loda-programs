@@ -6,6 +6,20 @@ mov $2,$0
 cmp $2,0
 mov $1,$0
 add $1,$2
-seq $0,331726 ; E.g.f.: -LambertW(-x/(1 - x)) / (1 - x).
+mov $3,1
+mov $6,$0
+lpb $0
+  sub $0,1
+  mov $4,$3
+  pow $4,$3
+  div $4,$3
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  mul $7,$3
+  add $7,$5
+  add $3,1
+lpe
+mov $0,$7
 add $0,$2
 div $0,$1

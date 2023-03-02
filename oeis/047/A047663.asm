@@ -8,7 +8,18 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
-  seq $2,35600 ; Number of points of L1 norm 6 in cubic lattice Z^n.
+  pow $2,2
+  mov $4,$2
+  pow $4,2
+  add $4,11
+  mov $5,10
+  add $5,$2
+  mul $5,$4
+  mul $5,2
+  add $2,$5
+  sub $2,220
+  div $2,45
+  mul $2,2
   add $1,$2
 lpe
 mov $0,$1

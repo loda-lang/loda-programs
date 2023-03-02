@@ -8,8 +8,11 @@ pow $2,2
 lpb $2
   sub $2,7
   add $1,1
+  mov $6,$1
+  seq $6,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
   mov $3,$1
-  seq $3,86800 ; Triangle read by rows in which row n lists differences between prime(n) and prime(k) for 1 <= k <= n.
+  seq $3,5145 ; n copies of n-th prime.
+  sub $3,$6
   mov $5,$3
   cmp $3,0
   cmp $3,0
