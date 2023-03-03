@@ -1,7 +1,19 @@
 ; A014188: Fourth powers of palindromes.
 ; Submitted by LM
 ; 0,1,16,81,256,625,1296,2401,4096,6561,14641,234256,1185921,3748096,9150625,18974736,35153041,59969536,96059601,104060401,151807041,214358881,294499921,395254161,519885601,671898241
-; Formula: a(n) = A014186(n)^2
 
-seq $0,14186 ; Squares of palindromes.
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  seq $0,2113 ; Palindromes in base 10.
+  mov $4,$3
+  mul $4,$0
+  pow $2,2
+  add $2,$4
+lpe
+mov $0,$2
 pow $0,2

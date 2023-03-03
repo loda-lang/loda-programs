@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  mod $6,4
+  trn $6,1
+  sub $6,$1
   mov $3,$1
-  seq $3,47456 ; Numbers that are congruent to {0, 2, 3, 4} mod 8.
+  sub $3,$6
   trn $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
