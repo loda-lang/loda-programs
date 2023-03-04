@@ -9,8 +9,25 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  mov $5,1
+  sub $5,$3
+  mov $7,2
+  trn $7,$3
+  add $7,6
   mov $1,$3
-  seq $1,40216 ; Continued fraction for sqrt(232).
+  gcd $1,$7
+  sub $1,3
+  mov $6,3
+  pow $6,$1
+  mov $1,$6
+  mod $1,10
+  gcd $5,2
+  add $5,$1
+  mov $1,$5
+  seq $1,141912 ; Primes congruent to 8 mod 23.
+  sub $1,307
+  div $1,46
+  add $1,3
   mul $1,$2
   add $1,$4
   add $3,1

@@ -6,8 +6,12 @@ mov $2,$0
 mov $5,2
 lpb $5
   sub $5,1
+  gcd $6,$2
   mov $0,$2
-  seq $0,182769 ; Beatty sequence for (4 + sqrt(2))/2.
+  seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $0,4
+  add $0,$6
+  add $0,1
   sub $1,1
   sub $4,$3
   sub $4,$1

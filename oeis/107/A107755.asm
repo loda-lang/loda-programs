@@ -4,8 +4,16 @@
 
 add $0,1
 mov $1,$0
+mov $4,1
 div $0,4
-seq $0,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
+lpb $0
+  mov $3,$0
+  mul $3,$4
+  div $0,2
+  add $2,$3
+  mul $4,3
+lpe
+mov $0,$2
 mul $0,2
 add $0,$1
 mul $0,9

@@ -1,8 +1,9 @@
 ; A322825: A variant of A322827.
 ; Submitted by Gunnar Hjern
 ; 1,2,6,4,36,30,18,8,216,450,210,900,108,150,54,16,1296,6750,7350,13500,44100,2310,22050,27000,648,2250,1470,4500,324,750,162,32,7776,101250,257250,202500,1543500,177870,771750,405000,9261000,2668050,30030,5336100,4630500,889350,2315250,810000,3888,33750,51450,67500,308700,25410,154350,135000,1944,11250,10290,22500,972,3750,486,64,46656,1518750,9003750,3037500,54022500,13695990,27011250,6075000,324135000,205439850,4294290,410879700,162067500,68479950,81033750,12150000,1944810000,3081597750
-; Formula: a(n) = A304660(A243353(n)-1)
+; Formula: a(n) = A304660(A005940(A003188(n))-1)
 
-seq $0,243353 ; Permutation of natural numbers which maps between the partitions as encoded in A227739 (binary based system, zero-based) to A112798 (prime-index based system, one-based).
+seq $0,3188 ; Decimal equivalent of Gray code for n.
+seq $0,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
 sub $0,1
 seq $0,304660 ; A run-length describing inverse to A181819. The multiplicity of prime(k) in a(n) is the k-th smallest prime index of n, which is A112798(n,k).

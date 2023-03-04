@@ -1,12 +1,21 @@
 ; A353743: Least number with run-sum trajectory of length k; a(0) = 1.
 ; Submitted by Solidair79
 ; 1,2,4,12,84,1596,84588,11081028,3446199708,2477817590052,4011586678294188,14726534696017964148,120183249654202605411828,2146833388573021140471483564,83453854313999050793547980583372,7011542477899258250521520684673165324
-; Formula: a(n) = 2*A325782(max(n-1,0))-max(n-1,0)+n-1
 
 mov $2,$0
 trn $0,1
 mov $1,$0
-seq $0,325782 ; Heinz numbers of strict perfect integer partitions.
+mov $3,1
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mov $3,$5
+  seq $3,40 ; The prime numbers.
+  mul $3,$4
+  mul $5,2
+  add $5,1
+lpe
+mov $0,$3
 mul $0,2
 sub $0,1
 sub $0,$1

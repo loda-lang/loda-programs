@@ -6,14 +6,21 @@ mov $4,$0
 mov $3,2
 lpb $3
   div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,178486 ; (A178476(n)-3)/9.
+  mov $7,$4
+  seq $7,178475 ; Permutations of 12345: Numbers having each of the decimal digits 1,...,5 exactly once, and no other digit.
+  mov $6,$4
+  seq $6,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $6,1
+  mul $7,$6
+  sub $8,$7
+  mov $6,$8
+  sub $6,12345
+  div $6,9
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
   mul $4,$3
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1

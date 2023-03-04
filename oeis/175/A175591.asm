@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,33882 ; Abundancy of the abundant or perfect numbers: m = sigma(n)-2n for n such that m >= 0.
+  seq $3,317048 ; Numbers k such that both k and k + 2 are consecutive deficient numbers.
+  mov $6,$3
+  seq $3,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
+  sub $3,$6
   mov $5,$3
   add $1,1
   mod $3,2

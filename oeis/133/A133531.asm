@@ -9,7 +9,9 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
-  seq $0,153482 ; a(n) = prime(n)^4 - 8.
+  seq $0,40 ; The prime numbers.
+  pow $0,4
+  sub $0,8
   mov $2,$3
   cmp $2,$3
   mov $4,$0

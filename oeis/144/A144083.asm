@@ -1,4 +1,4 @@
-; A144083: Triangle read by rows, partial sums from the right an A010892 subsequences decrescendo triangle
+; A144083: Triangle read by rows: partial sums from the right of an A010892 subsequences decrescendo triangle.
 ; 1,2,1,2,2,1,1,2,2,1,0,1,2,2,1,0,0,1,2,2,1,1,0,0,1,2,2,1,2,1,0,0,1,2,2,1,2,2,1,0,0,1,2,2,1,1,2,2,1,0,0,1,2,2,1,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,2,2,1
 
 lpb $0

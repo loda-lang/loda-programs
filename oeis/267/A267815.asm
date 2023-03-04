@@ -1,9 +1,24 @@
 ; A267815: Binary representation of the n-th iteration of the "Rule 221" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Christian Krause
 ; 1,11,10111,1101111,111011111,11110111111,1111101111111,111111011111111,11111110111111111,1111111101111111111,111111111011111111111,11111111110111111111111,1111111111101111111111111,111111111111011111111111111,11111111111110111111111111111,1111111111111101111111111111111,111111111111111011111111111111111,11111111111111110111111111111111111,1111111111111111101111111111111111111,111111111111111111011111111111111111111,11111111111111111110111111111111111111111
-; Formula: a(n) = A007088(A269911(n))/10+1
 
-seq $0,269911 ; Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 3", based on the 5-celled von Neumann neighborhood.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,2
+pow $1,$0
+bin $1,2
+mul $1,6
+sub $1,2
+div $1,3
+mul $1,4
+mov $3,1
+mov $0,$1
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2
 div $0,10
 add $0,1

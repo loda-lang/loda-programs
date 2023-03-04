@@ -1,8 +1,25 @@
 ; A340400: a(n) is the greatest Fibonacci number < 2^(n+1).
 ; Submitted by taurec
 ; 1,3,5,13,21,55,89,233,377,987,1597,2584,6765,10946,28657,46368,121393,196418,514229,832040,1346269,3524578,5702887,14930352,24157817,63245986,102334155,267914296,433494437,701408733,1836311903,2971215073,7778742049,12586269025
-; Formula: a(n) = A087172(A285543(n)-1)
 
-seq $0,285543 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 35", based on the 5-celled von Neumann neighborhood.
+add $0,2
+mov $2,2
+gcd $2,$0
+div $0,$2
+mov $1,2
+pow $1,$0
+sub $1,1
+pow $2,$0
+mul $2,$1
+mov $0,$2
+div $0,2
 sub $0,1
-seq $0,87172 ; Greatest Fibonacci number that does not exceed n.
+mov $4,$0
+mov $0,1
+mov $3,1
+lpb $4
+  add $0,$3
+  sub $3,$0
+  gcd $3,0
+  trn $4,$3
+lpe

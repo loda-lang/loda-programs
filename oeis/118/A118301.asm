@@ -1,6 +1,7 @@
 ; A118301: Number of partitions of n into distinct parts with largest part congruent to n modulo 2.
 ; Submitted by [AF>Amis des Lapins] Ceclo
 ; 1,1,1,1,2,2,2,3,4,5,6,7,9,11,13,16,19,23,27,32,38,44,52,61,71,83,96,111,128,148,170,195,224,256,293,334,380,432,491,557,630,713,805,908,1024,1152,1295,1455,1632,1829,2049,2291,2560,2859,3189,3554,3958,4404
+; Formula: a(n) = (A000009(n+1)+A199918(n+1))/2
 
 add $0,1
 mov $1,$0

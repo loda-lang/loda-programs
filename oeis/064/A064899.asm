@@ -8,9 +8,15 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
+  mov $6,$1
+  add $6,1
+  mov $5,$1
+  seq $5,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  mov $7,$1
+  mod $7,$5
+  gcd $6,$7
   mov $3,$1
-  seq $3,323072 ; a(n) = n/A323071(n) = n/gcd(n, 1+A060681(n)).
-  sub $3,1
+  div $3,$6
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3

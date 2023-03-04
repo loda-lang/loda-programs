@@ -7,7 +7,12 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,137794 ; Characteristic function of numbers having no prime gaps in their factorization.
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
+  seq $3,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
   sub $0,$3
   mov $4,$0
   max $4,0

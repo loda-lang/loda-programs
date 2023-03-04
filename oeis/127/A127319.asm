@@ -4,5 +4,12 @@
 
 add $0,1
 mov $1,$0
-seq $0,128936 ; a(n) = binomial(n, sum_digits_n).
+mov $2,$0
+lpb $2
+  mov $4,$2
+  mod $4,10
+  div $2,10
+  add $3,$4
+lpe
+bin $0,$3
 mod $0,$1

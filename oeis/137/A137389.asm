@@ -1,9 +1,10 @@
 ; A137389: a(n) = 2^prime(n) + 2^prime(n+1).
 ; Submitted by mmonnin
 ; 12,40,160,2176,10240,139264,655360,8912896,545259520,2684354560,139586437120,2336462209024,10995116277760,149533581377536,9147936743096320,585467951558164480,2882303761517117440,149879795598890106880,2508757194024499019776,11805916207174113034240
-; Formula: a(n) = 2*A328337(A124669(n)+1)
+; Formula: a(n) = 2*A328337(A013636(A000040(n))-1)
 
-seq $0,124669 ; Product of successive primes minus 2.
-add $0,1
+seq $0,40 ; The prime numbers.
+seq $0,13636 ; n*nextprime(n).
+sub $0,1
 seq $0,328337 ; The number whose binary indices are the nontrivial divisors of n (greater than 1 and less than n).
 mul $0,2

@@ -1,14 +1,43 @@
 ; A094343: List of pairs of primes (p, q) with q - p = 4.
 ; Submitted by Fardringle
 ; 3,7,7,11,13,17,19,23,37,41,43,47,67,71,79,83,97,101,103,107,109,113,127,131,163,167,193,197,223,227,229,233,277,281,307,311,313,317,349,353,379,383,397,401,439,443,457,461,463,467,487,491,499,503,613,617,643,647,673,677,739,743,757,761,769,773,823,827,853,857,859,863,877,881,883,887,907,911,937,941,967,971,1009,1013,1087,1091,1093,1097,1213,1217,1279,1283,1297,1301,1303,1307,1423,1427,1429,1433
-; Formula: a(n) = 2*A088762(n/2)-4*((n+1)%2)+3
 
 mov $1,$0
 add $1,1
 mod $1,2
 mul $1,2
 div $0,2
-seq $0,88762 ; Numbers n such that (2n-1, 2n+3) is a cousin prime pair.
+mov $2,$0
+trn $0,1
+sub $2,$0
+mov $4,$0
+pow $4,2
+lpb $4
+  mov $5,$3
+  add $5,2
+  mul $5,6
+  mov $8,$5
+  sub $8,6
+  seq $8,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,1
+  mov $7,$5
+  sub $7,$8
+  sub $7,1
+  mul $8,$7
+  seq $8,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$8
+  mov $6,$0
+  max $6,0
+  cmp $6,$0
+  mul $4,$6
+  sub $4,1
+lpe
+mov $0,$3
+mul $0,6
+add $0,4
+mul $0,$2
+div $0,2
+add $0,2
 sub $0,$1
 mul $0,2
 add $0,3

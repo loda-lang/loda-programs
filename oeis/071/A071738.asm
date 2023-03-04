@@ -1,6 +1,15 @@
 ; A071738: Expansion of (1+x^3*C^4)*C, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
 ; Submitted by Simon Strandgaard
 ; 1,1,2,6,19,62,207,704,2431,8502,30056,107236,385662,1396652,5088865,18642420,68624295,253706790,941630580,3507232740,13105289370,49114150020,184560753390,695267483664,2625197720454,9933364416572
+; Formula: a(n) = -binomial((4*max(n-1,0))/2,max(n-1,0)-3)+binomial((4*max(n-1,0))/2,max(n-1,0))
 
 trn $0,1
-seq $0,26012 ; Second differences of Catalan numbers A000108.
+mov $2,4
+mul $2,$0
+div $2,2
+mov $1,$2
+bin $1,$0
+sub $0,3
+bin $2,$0
+sub $1,$2
+mov $0,$1

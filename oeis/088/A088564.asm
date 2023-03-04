@@ -6,7 +6,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,6996 ; C(2n,n) mod 3.
+  seq $2,6996 ; a(n) = C(2n,n) mod 3.
   sub $0,1
   add $1,$2
 lpe

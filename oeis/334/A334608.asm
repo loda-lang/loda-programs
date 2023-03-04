@@ -7,8 +7,14 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $5,$0
-  max $5,0
-  seq $5,69271 ; a(n) = binomial(4*n+1,n)*2/(3*n+2).
+  mul $5,2
+  add $5,1
+  mov $7,$5
+  div $7,2
+  mov $8,$5
+  mul $5,2
+  bin $5,$7
+  div $5,$8
   sub $0,1
   mov $2,$3
   mul $2,$5

@@ -6,8 +6,11 @@ lpb $0
   mov $2,$0
   mov $3,-1
   pow $3,$0
+  mov $5,2
+  pow $5,$0
   sub $0,1
-  seq $2,327550 ; Number of compositions of partitions of 2n with exactly n compositions.
+  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $2,$5
   mul $2,$3
   mov $4,0
   sub $4,$2

@@ -7,10 +7,13 @@ add $0,1
 add $2,3
 pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,139717 ; If k is the smallest divisor of n that is >= sqrt(n) then a(n) = k^2 - n.
+  mov $4,$1
+  seq $4,33677 ; Smallest divisor of n >= sqrt(n).
+  pow $4,2
+  sub $4,$1
+  mov $3,$4
   sub $3,$1
-  max $3,0
+  trn $3,1
   cmp $3,0
   sub $0,$3
   add $1,1

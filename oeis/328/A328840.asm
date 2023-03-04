@@ -7,7 +7,9 @@ pow $2,2
 add $2,12
 lpb $2
   mov $3,$1
-  seq $3,328835 ; Prime shadow of primorial base exp-function: a(n) = A181819(A276086(n)).
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  sub $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   add $3,1
   gcd $3,2
   sub $0,$3

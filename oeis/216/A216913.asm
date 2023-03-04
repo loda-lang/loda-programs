@@ -6,7 +6,9 @@ mul $0,3
 add $0,2
 lpb $0
   mov $1,$0
-  seq $1,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
+  seq $1,8833 ; Largest square dividing n.
+  sub $1,1
+  seq $1,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   div $0,$1
 lpe
 div $0,3

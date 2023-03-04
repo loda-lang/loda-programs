@@ -4,9 +4,14 @@
 
 mov $2,$0
 lpb $2
-  mov $1,$0
   mov $3,$0
-  seq $3,33879 ; Deficiency of n, or 2n - (sum of divisors of n).
+  add $3,1
+  mov $5,$3
+  seq $5,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+  mov $1,$0
+  mul $3,2
+  sub $3,1
+  sub $3,$5
   sub $0,$3
   mov $4,$0
   max $4,0

@@ -11,8 +11,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,124212 ; E.g.f.: exp(x)/sqrt(2-exp(2*x)).
-  mul $1,$0
+  mov $5,$0
+  mov $0,2
+  pow $0,$5
+  seq $5,14307 ; Expansion of the e.g.f. sqrt(exp(x) / (2 - exp(x))).
+  mul $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

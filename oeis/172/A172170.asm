@@ -3,4 +3,13 @@
 
 sub $0,1
 div $0,2
-seq $0,90368 ; a(1) = 1; for n>1, smallest divisor > 1 of 2n-1.
+lpb $0
+  add $1,1
+  mov $2,$0
+  gcd $2,$1
+  sub $0,1
+  mul $0,$2
+  add $1,1
+lpe
+add $1,1
+mov $0,$1

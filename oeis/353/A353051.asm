@@ -6,6 +6,9 @@ add $0,1
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,352167 ; a(n) is the sum of the prime factors of n (with multiplicity) that are less than n.
+  seq $1,191558 ; a(n) = 0 if n prime, otherwise n.
+  add $1,1
+  trn $1,2
+  seq $1,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   sub $0,$1
 lpe

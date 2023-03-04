@@ -6,6 +6,23 @@ mov $1,$0
 mov $0,2
 pow $0,$1
 add $1,1
-seq $1,171682 ; Number of compositions of n with the smallest part in the first position.
+mov $4,$1
+mov $6,2
+lpb $6
+  sub $6,1
+  add $1,$6
+  sub $1,1
+  mov $5,$1
+  max $5,0
+  seq $5,97939 ; Sum of the smallest parts of all compositions of n.
+  mul $1,$6
+  mov $3,$6
+  mul $3,$5
+  add $2,$3
+lpe
+min $4,1
+mul $4,$5
+sub $2,$4
+mov $1,$2
 sub $1,$0
 mov $0,$1

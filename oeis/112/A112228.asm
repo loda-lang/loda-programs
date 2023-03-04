@@ -5,7 +5,8 @@
 mov $1,3
 mov $2,$0
 lpb $2
-  seq $2,186621 ; Semiprimes - 1.
+  seq $2,1358 ; Semiprimes (or biprimes): products of two primes.
+  sub $2,1
   sub $0,1
   mul $1,$2
   mov $2,$0

@@ -6,7 +6,6 @@ lpb $0
   dif $0,2
   add $1,1
 lpe
-add $1,3
 mov $0,$1
-add $0,2
+add $0,5
 mod $0,4

@@ -8,7 +8,8 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,88379 ; (Smallest prime-factor of n)^4.
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  pow $3,4
   sub $3,$1
   max $3,0
   cmp $3,0

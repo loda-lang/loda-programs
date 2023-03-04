@@ -9,7 +9,14 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,350071 ; a(n) = gcd(sigma(n^2), A003961(n^2)), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of divisors function.
+  add $3,1
+  pow $3,2
+  sub $3,1
+  mov $5,$3
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  gcd $5,$3
+  mov $3,$5
   mod $3,3
   gcd $3,4
   add $3,1

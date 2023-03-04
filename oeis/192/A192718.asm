@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,259774 ; Expansion of f(x, x^7) / f(x, x^3) in powers of x where f(, ) is Ramanujan's general theta function.
+  mul $3,2
+  add $3,1
+  seq $3,29838 ; Expansion of square root of q times normalized Hauptmodul for Gamma(4) in powers of q^8.
   add $3,$4
   gcd $3,2
   sub $0,$3

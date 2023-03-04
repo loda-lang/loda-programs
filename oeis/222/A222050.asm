@@ -5,5 +5,23 @@
 mov $1,$0
 mul $1,2
 add $1,1
-seq $0,222052 ; a(n) = A222051(n)/binomial(2*n,n), the central terms in rows of triangle A220178 divided by the central binomial coefficients.
+mul $0,2
+mov $2,1
+mov $3,$0
+mov $4,1
+lpb $0
+  sub $0,2
+  add $2,$6
+  mul $2,$3
+  add $3,1
+  add $5,1
+  mov $6,$4
+  add $6,$4
+  div $2,$5
+  add $2,$4
+  add $2,$4
+  mul $4,-1
+  add $4,$2
+lpe
+mov $0,$4
 div $0,$1

@@ -5,7 +5,8 @@
 mov $1,2
 mov $2,$0
 lpb $2
-  seq $2,101987 ; Product of nonzero digits of n-th prime.
+  seq $2,40 ; The prime numbers.
+  seq $2,51801 ; Product of the nonzero digits of n.
   sub $0,1
   mul $1,$2
   mov $2,$0

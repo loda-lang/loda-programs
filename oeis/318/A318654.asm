@@ -7,8 +7,15 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  pow $5,2
+  sub $5,1
+  seq $5,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
   mov $3,$1
-  seq $3,318655 ; The 2-adic valuation of A318649, the numerators of "Dirichlet Square Root" of squares.
+  seq $3,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  mul $3,2
+  trn $3,$5
   min $3,1
   sub $0,$3
   add $1,1

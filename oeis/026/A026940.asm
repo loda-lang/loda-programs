@@ -1,9 +1,22 @@
 ; A026940: a(n) = Sum_{k=0..n-1} T(n,k) * T(n,k+1), with T given by A026300.
 ; Submitted by Simon Strandgaard
 ; 1,6,38,256,1805,13162,98469,751656,5831451,45847770,364498596,2925337352,23668977163,192859753310,1581188102590,13034447714688,107971181472779,898274382703314,7502546644142842,62884859093960160,528788663216036559,4459599092506030110
-; Formula: a(n) = A002026(2*(n+1))/2
 
-add $0,1
 mul $0,2
-seq $0,2026 ; Generalized ballot numbers (first differences of Motzkin numbers).
+add $0,5
+lpb $0
+  mov $3,$0
+  add $3,$5
+  sub $3,3
+  sub $0,2
+  bin $3,$0
+  mov $4,$5
+  bin $4,$2
+  add $2,1
+  mul $4,$3
+  div $4,$2
+  add $5,2
+  add $1,$4
+lpe
+mov $0,$1
 div $0,2

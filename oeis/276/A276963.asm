@@ -8,7 +8,9 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,172191 ; a(n) = 2*prime(n)^4.
+  seq $5,40 ; The prime numbers.
+  pow $5,4
+  mul $5,2
   sub $0,1
   mov $2,$3
   mul $2,$5

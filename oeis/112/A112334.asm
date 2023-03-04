@@ -13,10 +13,9 @@ sub $3,$0
 add $0,$3
 sub $3,2
 bin $3,$0
-mov $0,$3
-mov $2,$0
+mov $2,$3
 mul $2,2
-mov $1,$0
+mov $1,$3
 add $1,$2
 sub $1,1
 mov $0,$1

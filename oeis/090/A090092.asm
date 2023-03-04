@@ -1,7 +1,17 @@
 ; A090092: a(n) is the smallest composite number coprime to n, n+1 and n+2.
 ; Submitted by Jamie Morken(l1)
 ; 25,25,49,49,121,25,25,49,49,49,25,25,121,121,49,25,25,49,121,169,25,25,49,49,49,25,25,121,49,49,25,25,169,121,121,25,25,49,49,121,25,25,49,49,49,25,25,121,121,49,25,25,49,169,169,25,25,49,49,49,25,25,121,49,49,25
-; Formula: a(n) = A053671(n)^2
 
-seq $0,53671 ; Least number coprime to n, n+1 and n+2.
+mov $1,2
+add $0,2
+pow $0,2
+bin $0,2
+pow $0,10
+lpb $0
+  add $1,4
+  dif $0,$1
+lpe
+mov $0,$1
+div $0,2
+add $0,2
 pow $0,2

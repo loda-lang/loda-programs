@@ -5,8 +5,11 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,336466 ; Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
   mov $3,$1
-  seq $3,349911 ; Dirichlet inverse of A336466, which is fully multiplicative with a(p) = oddpart(p-1).
+  seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mul $3,$5
   gcd $3,10
   cmp $3,1
   sub $0,$3

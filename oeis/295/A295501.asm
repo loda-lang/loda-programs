@@ -1,10 +1,14 @@
 ; A295501: a(n) = phi(4^n-1), where phi is Euler's totient function (A000010).
 ; Submitted by arkiss
 ; 2,8,36,128,600,1728,10584,32768,139968,480000,2640704,6635520,44717400,132765696,534600000,2147483648,11452896600,26121388032,183250539864,473702400000,2427720325632,8834232287232,45914084232320,109586090557440,656100000000000
+; Formula: a(n) = (A062570(48*2^(2*n)-13)-24)/12+2
 
 mul $0,2
-seq $0,226264 ; Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
-sub $0,1
+mov $1,2
+pow $1,$0
+mul $1,48
+mov $0,$1
+sub $0,13
 seq $0,62570 ; a(n) = phi(2*n).
 sub $0,24
 div $0,12

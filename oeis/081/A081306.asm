@@ -5,8 +5,14 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  mov $5,$1
+  seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  mul $5,$6
   mov $3,$1
-  seq $3,69897 ; Integer quotient of the largest and the smallest prime factors of n, with a(1) = 1.
+  add $3,1
+  div $3,$5
   cmp $3,$4
   add $3,$4
   gcd $3,2

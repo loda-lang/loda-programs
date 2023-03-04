@@ -10,7 +10,6 @@ lpb $0
   seq $2,76272 ; Largest prime factor of A076271(n): A006530(A076271(n)).
   mov $0,0
 lpe
-mov $0,$2
-sub $1,$0
+sub $1,$2
 mov $0,$1
 add $0,1

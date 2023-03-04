@@ -10,7 +10,9 @@ lpb $1
   mov $0,$2
   add $0,$1
   sub $0,1
-  seq $0,138692 ; Numbers of the form 86+p^2 (where p is a prime).
+  seq $0,40 ; The prime numbers.
+  pow $0,2
+  add $0,86
   add $3,$0
 lpe
 mov $0,$3

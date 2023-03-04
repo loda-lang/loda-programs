@@ -1,11 +1,25 @@
 ; A044401: Numbers n such that string 6,9 occurs in the base 10 representation of n but not of n-1.
 ; Submitted by Jamie Morken(w2)
 ; 69,169,269,369,469,569,669,690,769,869,969,1069,1169,1269,1369,1469,1569,1669,1690,1769,1869,1969,2069,2169,2269,2369,2469,2569,2669,2690,2769,2869,2969,3069,3169,3269,3369,3469,3569
-; Formula: a(n) = 8*((A044337(n+3)-54)%4)+A044337(n+3)-360
+; Formula: a(n) = 8*((5*((112*((10*n+39)/11)+88*((10*n+51)/11)+304)/10)-144)%4)+5*((112*((10*n+39)/11)+88*((10*n+51)/11)+304)/10)-450
 
-add $0,3
-seq $0,44337 ; Numbers n such that string 0,5 occurs in the base 10 representation of n but not of n-1.
-sub $0,54
+mul $0,10
+add $0,42
+mov $3,$0
+add $0,9
+div $0,11
+mul $0,22
+sub $3,3
+div $3,11
+add $3,3
+mul $3,14
+add $0,$3
+add $0,$3
+sub $0,8
+mul $0,4
+div $0,10
+mul $0,5
+sub $0,144
 mov $2,$0
 mod $0,4
 mul $0,8

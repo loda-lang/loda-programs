@@ -1,8 +1,9 @@
 ; A015717: Inverse of 1708th cyclotomic polynomial.
 ; Submitted by Science United
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A015997(A296888(n)-1)
+; Formula: a(n) = A015997(A285250(2*n)/4)
 
-seq $0,296888 ; Numbers n whose base-12 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
-sub $0,1
+mul $0,2
+seq $0,285250 ; Positions of 0 in A285249; complement of A285251.
+div $0,4
 seq $0,15997 ; Inverse of 1988th cyclotomic polynomial.
