@@ -242,6 +242,7 @@ A110382: Numbers which are sum of distinct unary numbers (containing only ones),
 A110661: Triangle read by rows: T(n,k) = total number of divisors of k, k+1, ..., n (1 <= k <= n).
 A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A111701: Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
+A111972: a(n) = Max(omega(k): 1<=k<=n), where omega(n) = A001221(n), the number of distinct prime factors of n.
 A113063: Associated with theta series of hexagonal net with respect to a node.
 A113852: Numbers whose prime factors are raised to the seventh power.
 A114562: The first occurrence of n in A111701.

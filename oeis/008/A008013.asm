@@ -5,9 +5,13 @@ mov $1,1
 mov $4,$0
 lpb $0
   mov $1,$0
-  seq $1,8363 ; a(n) = floor(n/5)*ceiling(n/5).
+  add $1,4
+  div $1,5
   add $3,2
+  mov $6,$0
+  div $6,5
   mov $0,0
+  mul $1,$6
   mul $1,$3
   add $1,2
 lpe
