@@ -1,0 +1,12 @@
+; A351454: Lexicographically earliest infinite sequence such that a(i) = a(j) => A006530(i) = A006530(j), A329697(i) = A329697(j) and A331410(i) = A331410(j) for all i, j >= 1.
+; Submitted by [AF>Amis des Lapins] Ceclo
+; 1,2,3,2,4,3,5,2,6,4,7,3,8,5,9,2,10,6,11,4,12,7,13,3,14,8,15,5,16,9,17,2,18,10,19,6,20,11,21,4,22,12,23,7,24,13,25,3,26,14,27,8,28,15,29,5,30,16,31,9,32,17,33,2,34,18,35,10,36,19,37,6,38,20,39,11,40,21,41,4,42,22,43,12,44,23,45,7,46,24,47,13,48,25,49,3,50,26,51,14
+; Formula: a(n) = -A351460(n)*(A264668(n)-1)
+
+mov $1,$0
+seq $1,351460 ; Lexicographically earliest infinite sequence such that a(i) = a(j) => A006530(i) = A006530(j), A206787(i) = A206787(j) and A336651(i) = A336651(j) for all i, j >= 1.
+seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+sub $0,1
+mul $1,$0
+sub $2,$1
+mov $0,$2
