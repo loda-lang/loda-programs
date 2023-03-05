@@ -6,8 +6,13 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  add $3,1
-  seq $3,169600 ; Numbers that are congruent to {4, 25} mod 31.
+  add $6,2
+  div $6,2
+  add $3,7
+  add $3,$6
+  mul $3,10
+  sub $3,56
+  add $3,$6
   pow $3,2
   add $3,20
   add $4,1

@@ -1,13 +1,12 @@
 ; A043529: Number of distinct base-2 digits of n.
-; Submitted by Cruncher Pete
+; Submitted by [AF>Amis des Lapins] Ceclo
 ; 1,1,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
-; Formula: a(n) = (binomial(2*n+2,n+1)/2+1)%2+1
+; Formula: a(n) = (binomial(2*n+1,n+1)-1)%2+1
 
-add $0,1
-mov $1,$0
-mul $0,2
+mov $1,1
+add $1,$0
+add $0,$1
 bin $0,$1
-div $0,2
-add $0,1
+sub $0,1
 mod $0,2
 add $0,1

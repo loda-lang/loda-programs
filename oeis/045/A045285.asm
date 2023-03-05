@@ -1,4 +1,4 @@
-; A045285: Numbers n with property that in base 5 representation the numbers of 2's and 4's are 2 and 0, respectively.
+; A045285: Numbers whose base-5 representation contains exactly two 2's and no 4's.
 ; Submitted by [SG]KidDoesCrunch
 ; 12,37,52,57,60,61,63,67,87,137,162,177,182,185,186,188,192,212,252,257,260,261,263,267,277,282,285,286,288,292,300,301,303,305,306,308,315,316,318,327,332,335,336,338,342,387,412,427
 ; Formula: a(n) = A020654(A023715(n))

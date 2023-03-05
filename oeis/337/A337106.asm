@@ -1,7 +1,8 @@
 ; A337106: Number of nontrivial divisors of n!.
 ; Submitted by PDW
 ; 0,0,0,2,6,14,28,58,94,158,268,538,790,1582,2590,4030,5374,10750,14686,29374,41038,60798,95998,191998,242878,340030,532222,677374,917278,1834558,2332798,4665598,5529598,7864318,12165118,16422910,19595518,39191038,60466174
-; Formula: a(n) = max(A027423(n)-2,0)
+; Formula: a(n) = max(A000005(A033312(n))-2,0)
 
-seq $0,27423 ; Number of divisors of n!.
+seq $0,33312 ; a(n) = n! - 1.
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 trn $0,2
