@@ -11,7 +11,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,102715 ; Triangle read by rows: T(n,k) is phi(binomial(n,k)), where phi is Euler's totient function (0 <= k <= n).
+  seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  sub $0,1
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $1,$0
 lpe
 mov $0,$1

@@ -21,8 +21,7 @@ lpb $3
   mov $4,$7
   mul $4,2
   add $4,3
-  mul $4,4
-  div $4,8
+  div $4,2
   sub $4,1
   mov $6,$4
   seq $4,48146 ; Sum of non-unitary divisors of n.

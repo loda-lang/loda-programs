@@ -4,8 +4,22 @@
 
 add $0,1
 mov $1,$0
+mul $1,2
+mov $5,2
 add $0,1
 bin $0,2
-seq $1,59231 ; Number of different lattice paths running from (0,0) to (n,0) using steps from S = {(k,k) or (k,-k): k positive integer} that never go below the x-axis.
+mov $2,1
+mov $3,1
+mov $4,$1
+lpb $4
+  mul $2,$4
+  sub $4,2
+  add $6,$5
+  mul $2,$4
+  div $2,$6
+  add $3,$2
+  add $5,2
+lpe
+mov $1,$3
 mul $1,$0
 mov $0,$1

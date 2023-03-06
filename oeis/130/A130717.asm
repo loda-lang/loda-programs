@@ -8,10 +8,17 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  max $0,0
-  seq $0,130507 ; First differences of A130845.
+  mov $5,-2
+  bin $5,$0
+  div $5,2
+  sub $0,$5
+  mod $0,2
+  add $5,$0
+  pow $5,$0
+  div $5,2
+  mov $0,$5
   mov $2,$3
-  mul $2,$0
+  mul $2,$5
   add $4,$2
 lpe
 min $1,1

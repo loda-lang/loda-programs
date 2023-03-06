@@ -4,5 +4,14 @@
 
 mul $0,2
 add $0,46
-seq $0,26356 ; a(n) = floor((n-1)*phi) + n + 1, n > 0, where phi = (1+sqrt(5))/2.
-sub $0,118
+mov $2,6
+mov $3,8
+lpb $3
+  sub $3,1
+  add $2,$1
+  add $1,$2
+lpe
+mul $1,$0
+div $1,$2
+add $0,$1
+sub $0,116

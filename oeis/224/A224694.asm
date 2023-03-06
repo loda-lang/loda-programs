@@ -6,8 +6,13 @@ mov $2,$0
 pow $2,4
 lpb $2
   sub $2,1
+  mov $5,$1
+  seq $5,169810 ; a(n) = n XOR n^2.
+  mov $4,$1
+  pow $4,2
+  sub $4,$5
   mov $3,$1
-  seq $3,213541 ; a(n) = n AND n^2, where AND is the bitwise AND operator.
+  add $3,$4
   cmp $3,0
   sub $0,$3
   add $1,2

@@ -4,5 +4,25 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,144419 ; Primes of the form prime(k) - 2*k (terms can be repeated).
+mov $2,1
+mov $3,$0
+add $3,2
+pow $3,2
+mul $3,2
+lpb $3
+  mov $4,$2
+  seq $4,179437 ; a(n) = |2n - prime(n)|.
+  sub $4,1
+  mov $6,$4
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  trn $3,1
+lpe
+mov $0,$6
 sub $0,$1
+add $0,1

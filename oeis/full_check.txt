@@ -285,6 +285,7 @@ A141172: Primes of the form 2*x^2+2*x*y-3*y^2 (as well as of the form 2*x^2+6*x*
 A141785: Primes of the form -x^2 + 5*x*y + 5*y^2 (as well as of the form 9*x^2 + 15*x*y + 5*y^2).
 A147645: Number of distinct Mersenne primes dividing n.
 A147648: Number of distinct even superperfect numbers dividing n.
+A151774: Characteristic function of numbers with binary weight 2 (A018900).
 A152738: a(n) = floor((n^2)/phi).
 A158378: a(1) = 0, a(n) = gcd(A051904(n), A051903(n)) for n >= 2.
 A158919: Beatty sequence for the tribonacci constant tau (A058265): a(n) = floor(n*tau).

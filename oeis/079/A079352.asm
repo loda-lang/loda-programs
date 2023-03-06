@@ -7,7 +7,9 @@ mov $2,$0
 lpb $2
   add $2,1
   mul $2,2
-  seq $2,329614 ; Smallest prime factor of the number of divisors of A108951(n).
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $2,1
+  seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   sub $0,1
   mul $1,$2
   mov $2,$0

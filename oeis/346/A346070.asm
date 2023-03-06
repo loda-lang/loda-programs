@@ -1,7 +1,11 @@
 ; A346070: Symbolic code for the corner turns in the Lévy dragon curve.
+; Submitted by estatic707
 ; 0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,1,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,2,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,0,0,1,0,2,0,1,0,3,0,1,0,2,0,1,0,1,0,1,0,2
 
-seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+add $0,1
 lpb $0
-  mod $0,4
+  dif $0,2
+  add $1,1
 lpe
+mov $0,$1
+mod $0,4

@@ -6,8 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $1,1
+  mov $5,$1
+  seq $5,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   mov $3,$1
-  seq $3,92510 ; Difference between smallest semiperimeter (see A063655) and its integer log (see A001414).
+  seq $3,63655 ; Smallest semiperimeter of integral rectangle with area n.
+  sub $3,$5
   cmp $3,1
   sub $0,$3
   mov $4,$0

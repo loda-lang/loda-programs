@@ -8,7 +8,12 @@ pow $2,3
 lpb $2
   sub $2,18
   mov $3,$1
-  seq $3,342926 ; a(n) = A003415(sigma(n)) - n, where A003415 is the arithmetic derivative, and sigma is the sum of divisors of n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  mov $5,-1
+  sub $5,$1
+  add $5,$3
+  mov $3,$5
   mod $3,3
   gcd $3,4
   add $3,1

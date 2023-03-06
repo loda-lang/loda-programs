@@ -4,6 +4,12 @@
 
 add $0,2
 pow $0,2
-seq $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
-add $0,3
+mov $1,$0
+mod $0,2
+lpb $1
+  sub $1,2
+  mul $0,2
+  add $0,2
+lpe
+add $0,5
 div $0,2
