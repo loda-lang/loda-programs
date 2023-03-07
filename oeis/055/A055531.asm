@@ -6,5 +6,19 @@ mov $1,$0
 add $1,1
 mov $0,1
 add $0,$1
-seq $0,1831 ; Number of labeled graded partially ordered sets with n elements of height at most 1.
-sub $0,1
+mov $5,$0
+lpb $0
+  sub $0,1
+  pow $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mov $3,2
+  pow $3,$0
+  sub $3,1
+  add $6,$4
+lpe
+div $6,2
+mov $0,$6
+mul $0,2

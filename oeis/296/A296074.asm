@@ -1,10 +1,13 @@
 ; A296074: Sum of deficiencies of the proper divisors of n.
 ; Submitted by [AF] Kalianthys
 ; 0,1,1,2,1,4,1,3,3,6,1,5,1,8,7,4,1,9,1,9,9,12,1,2,5,14,8,13,1,16,1,5,13,18,11,3,1,20,15,8,1,24,1,21,18,24,1,-9,7,27,19,25,1,20,15,14,21,30,1,-1,1,32,24,6,17,40,1,33,25,40,1,-27,1,38,32,37,17,48,1,-1,22,42,1,9,21,44,31,26,1,18,19,45,33,48,23,-36,1,53,36,33
-; Formula: a(n) = (A237588(n)+A296075(n))-1
+; Formula: a(n) = -2*n+A000203(n)+A296075(n)-2
 
 mov $1,$0
-seq $1,237588 ; Sigma(n) - 2n + 1.
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $1,1
+sub $1,$0
+sub $1,$0
 seq $0,296075 ; Sum of deficiencies of divisors of n.
 add $1,$0
 mov $0,$1

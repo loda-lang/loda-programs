@@ -7,8 +7,11 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,6
-  mov $3,$1
-  seq $3,280710 ; Characteristic function of squarefree semiprimes.
+  mov $5,$1
+  seq $5,73184 ; Number of cubefree divisors of n.
+  div $5,2
+  cmp $5,2
+  mov $3,$5
   gcd $3,4
   add $3,1
   cmp $3,5

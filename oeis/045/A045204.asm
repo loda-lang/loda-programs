@@ -1,4 +1,4 @@
-; A045204: Numbers n with property that in base 5 representation the numbers of 0's and 4's are 0 and 2, respectively.
+; A045204: Numbers whose base-5 representation contains no 0's and exactly two 4's.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 24,49,74,99,109,114,119,121,122,123,174,199,224,234,239,244,246,247,248,299,324,349,359,364,369,371,372,373,424,449,474,484,489,494,496,497,498,534,539,544,546,547,548,559,564,569
 

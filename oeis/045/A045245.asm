@@ -1,4 +1,4 @@
-; A045245: Numbers n with property that in base 5 representation the numbers of 1's and 3's are 3 and 1, respectively.
+; A045245: Numbers whose base-5 representation contains exactly three 1's and one 3.
 ; Submitted by Ralfy
 ; 158,166,206,406,658,666,706,758,766,778,788,790,792,794,798,808,816,826,830,832,834,836,846,858,866,908,916,956,1006,1026,1030,1032,1034,1036,1046,1056,1106,1158,1166,1206,1408,1416
 

@@ -1,8 +1,20 @@
 ; A285685: Characteristic sequence of the Beatty sequence, A022839, of sqrt(5).
 ; Submitted by [AF] Kalianthys
 ; 0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1
-; Formula: a(n) = A308898(2*n)/2
 
+mov $2,2
 mul $0,2
-seq $0,308898 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
+add $0,3
+lpb $0
+  sub $0,2
+  sub $1,$2
+  div $1,2
+  cmp $3,4
+  add $3,$1
+  mod $3,2
+  add $3,2
+  sub $0,$3
+  add $1,$2
+  mul $2,$3
+lpe
 div $0,2

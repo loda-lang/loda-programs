@@ -1,17 +1,17 @@
 ; A317108: Numbers missing from A317106.
-; Submitted by artemis8
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120,122,124,126,128,130,132,134,136,138,140,142,144,146,148,150,152,154,156,158,160,162,164,166,168,170,172,174,176,178,180,182,184,186,188,190,192,194,196,198,200
 
+mov $1,1
 mov $2,$0
-add $2,2
+add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,195538 ; Denominators a(n) of Pythagorean approximations b(n)/a(n) to sqrt(8).
-  gcd $3,2
+  seq $3,355742 ; Number of ways to choose a sequence of prime-power divisors, one of each prime index of n. Product of bigomega over the prime indices of n, with multiplicity.
+  min $3,1
   sub $0,$3
-  add $0,1
-  add $1,$4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -19,4 +19,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1

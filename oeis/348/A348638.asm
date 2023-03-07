@@ -1,15 +1,13 @@
 ; A348638: Minimal order of a graph containing as induced subgraphs isomorphic copies of all trees on n unlabeled nodes.
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,5,7,9,11,13
-; Formula: a(n) = a(n-1)+2, a(2) = 3, a(1) = 2, a(0) = 1
 
-mov $3,1
+mov $1,$0
 lpb $0
-  sub $0,1
-  mov $1,$2
-  add $1,1
-  mov $2,$4
-  add $3,$1
-  mov $4,1
+  dif $0,10
+  div $1,2
 lpe
-mov $0,$3
+trn $0,2
+add $1,$0
+mov $0,$1
+add $0,1

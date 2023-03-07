@@ -9,7 +9,13 @@ lpb $3
   mov $0,$4
   add $0,$3
   max $0,0
-  seq $0,51442 ; a(n) = n^(n+1)+(n+1)^n.
+  mov $6,$0
+  add $6,1
+  mov $7,$0
+  pow $0,$6
+  pow $6,$7
+  add $6,$0
+  mov $0,$6
   sub $0,1
   mov $2,$3
   mul $2,$0

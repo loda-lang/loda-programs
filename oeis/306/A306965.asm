@@ -6,8 +6,9 @@ mov $1,-1
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,10926 ; Binomial coefficients C(10,n).
-  mov $3,$2
+  mov $4,10
+  bin $4,$2
+  mov $3,$4
   mul $3,2
   add $3,1
   div $0,10

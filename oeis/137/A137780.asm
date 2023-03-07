@@ -1,20 +1,11 @@
 ; A137780: a(n) = 1 + 2^( prime(n + 1) - prime(n) ).
-; Submitted by Landjunge
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,5,5,17,5,17,5,17,65,5,65,17,5,17,65,65,5,65,17,5,65,17,65,257,17,5,17,5,17,16385,17,65,5,1025,5,65,65,17,65,65,5,1025,5,17,5,4097,4097,17,5,17,65,5,1025,65,65,65,5,65,17,5,1025,16385,17,5,17,16385,65,1025,5,17,65,257,65,65,17,65,257,17,257,1025,5,1025,5,65,17,65,257,17,5,17,4097,257,17,257,17,65,4097,5,262145,65
+; Formula: a(n) = 2^A013632(A000040(n))+1
 
-seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0
-mov $2,$0
-div $0,$0
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  add $4,1
-  add $1,$0
-  add $2,$3
-lpe
-mov $0,$4
-mul $0,2
-add $0,3
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.
+mov $1,2
+pow $1,$0
+mov $0,$1
+add $0,1
