@@ -4,7 +4,7 @@
 
 lpb $0
   mov $0,5
-  seq $0,139 ; a(n) = 2*(3*n)!/((2*n+1)!*((n+1)!)).
+  seq $0,139 ; a(n) = 2*(3*n)! / ((2*n+1)!*(n+1)!).
 lpe
 seq $0,37449 ; Discriminant of quadratic field Q(sqrt(n)).
 mov $1,2

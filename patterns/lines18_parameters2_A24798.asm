@@ -1,9 +1,9 @@
 mov $2,$0
 add $2,2
-pow $2,2
+pow $2,2 ; source=parameter 0
 lpb $2
   mov $3,$1
-  seq $3,408 ; source=parameter 0
+  seq $3,408 ; source=parameter 1
   gcd $3,2
   sub $0,$3
   add $0,1

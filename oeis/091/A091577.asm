@@ -1,7 +1,7 @@
 ; A091577: Poincaré series [or Poincare series] of the preprojective algebra of a Dynkin diagram of type E_6.
 ; Submitted by Simon Strandgaard
 ; 6,10,14,18,20,20,20,18,14,10,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = 2*((max(9-(n-2),0)*((n-max(9-(n-2),0)-2)+15))/7)
+; Formula: a(n) = 2*((max(-n+11,0)*(-max(-n+11,0)+n+13))/7)
 
 sub $0,2
 mov $2,9

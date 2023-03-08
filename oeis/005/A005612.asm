@@ -5,6 +5,20 @@
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,5840 ; Expansion of (1-x)*e^x/(2-e^x).
-mul $1,$0
+mov $4,$0
+mov $6,2
+lpb $6
+  sub $6,1
+  add $0,$6
+  sub $0,1
+  mov $5,$0
+  max $5,0
+  seq $5,629 ; Number of necklaces of partitions of n+1 labeled beads.
+  mov $3,$6
+  mul $3,$5
+  add $2,$3
+lpe
+mul $4,$5
+sub $2,$4
+mul $1,$2
 mov $0,$1

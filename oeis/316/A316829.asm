@@ -1,11 +1,14 @@
 ; A316829: Image of 0 under repeated application of the morphism 0 -> 0,1,0, 1 -> 1,1,1.
-; Submitted by Cruncher Pete
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-mov $1,$0
-lpb $1
-  mod $1,2
+mov $2,1
+lpb $0
+  mov $1,$0
+  add $1,1
   div $0,3
-  gcd $1,$0
+  mul $2,$1
 lpe
-mov $0,$1
+mov $0,$2
+add $0,1
+mod $0,2

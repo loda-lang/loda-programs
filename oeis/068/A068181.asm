@@ -1,5 +1,15 @@
 ; A068181: a(n)=-1/b(2n) where 1/(e^y-e^(y/3))= sum(i=-1,inf,b(i)*y^i).
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,18,1944,524880,264539520,214277011200,254561089305600,416971064282572800,900657498850357248000,2480410751833883860992000,8483004771271882804592640000,35272333838948488701496197120000
 
-mul $0,6
-seq $0,7661 ; Triple factorial numbers a(n) = n!!!, defined by a(n) = n*a(n-3), a(0) = a(1) = 1, a(2) = 2. Sometimes written n!3.
+mov $1,3
+mul $0,2
+lpb $0
+  sub $0,1
+  add $2,3
+  mul $1,$2
+lpe
+mov $0,$1
+sub $0,3
+div $0,3
+add $0,1

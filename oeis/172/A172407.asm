@@ -6,7 +6,11 @@ mov $1,4
 add $0,3
 lpb $0
   sub $0,1
-  seq $1,151800 ; Least prime > n (version 2 of the "next prime" function).
+  mov $2,$1
+  cmp $2,0
+  add $2,$1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  mov $1,$2
 lpe
 mov $0,$1
 sub $0,3

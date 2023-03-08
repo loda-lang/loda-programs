@@ -4,7 +4,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+  add $2,1
+  seq $2,102476 ; Least modulus with 2^n square roots of 1.
+  div $2,4
   mul $2,2
   sub $0,1
   add $1,$2

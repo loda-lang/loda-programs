@@ -1,10 +1,22 @@
 ; A004648: a(n) = prime(n) mod n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,3,1,1,3,3,5,9,9,1,2,1,2,5,8,7,10,11,10,13,14,17,22,23,22,23,22,23,3,3,5,3,9,7,9,11,11,13,15,13,19,17,17,15,23,31,31,29,29,31,29,35,37,39,41,39,41,41,39,45,55,55,53,53,63,65,2,69,69,71,2,3,4,3,4,7,6,9,14,11,16,13,14,13,14,17,16,13,12,19,22,21,24,23,24,31,28,41
-; Formula: a(n) = A173919(2*n)%(n+1)
 
 mov $1,$0
 add $1,1
 mul $0,2
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+sub $0,2
+mov $2,4
+mov $3,$0
+pow $3,4
+lpb $3
+  max $4,$2
+  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $4,2
+  sub $0,$4
+  add $2,2
+  sub $3,$0
+lpe
+sub $0,1
+add $0,$2
 mod $0,$1

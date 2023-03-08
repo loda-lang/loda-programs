@@ -6,7 +6,7 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,23961 ; source=parameter 1
+  seq $3,31312 ; source=parameter 1
   cmp $3,2 ; source=parameter 2
   sub $0,$3
   add $1,1

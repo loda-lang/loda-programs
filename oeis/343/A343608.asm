@@ -8,8 +8,7 @@ lpb $3
   mov $0,$2
   sub $0,$3
   sub $0,1
-  mul $0,2
-  div $0,10
+  div $0,5
   bin $0,2
   add $1,$0
 lpe

@@ -1,8 +1,14 @@
 ; A134374: a(n) = ((2n+1)!)^2.
-; Submitted by Jon Maiga
+; Submitted by Groo
 ; 1,36,14400,25401600,131681894400,1593350922240000,38775788043632640000,1710012252724199424000000,126513546505547170185216000000,14797530453474819213543604224000000
 
+mov $1,1
 mul $0,2
-add $0,1
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-pow $0,2
+lpb $0
+  mov $2,$0
+  add $2,1
+  pow $2,2
+  sub $0,1
+  mul $1,$2
+lpe
+mov $0,$1

@@ -8,8 +8,17 @@ mov $1,$0
 add $1,$2
 pow $0,2
 div $0,$1
+mov $3,1
+mov $5,3
 max $1,0
-seq $1,1609 ; a(1) = a(2) = 1, a(3) = 4; thereafter a(n) = a(n-1) + a(n-3).
+lpb $1
+  sub $1,1
+  mov $6,$4
+  mov $4,$5
+  mov $5,$3
+  add $3,$6
+lpe
+add $1,$3
 sub $1,$0
 mov $2,$1
 cmp $2,0

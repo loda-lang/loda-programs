@@ -8,7 +8,9 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,265412 ; Partial sums of A265411.
+  add $0,1
+  seq $0,265413 ; Positions of records in A265410: a(0) = 1; for n >= 1, a(n) = 1 + A265412(n-1).
+  sub $0,1
   mov $2,$3
   mul $2,$0
   add $4,$2

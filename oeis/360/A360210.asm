@@ -6,8 +6,18 @@ mov $2,$0
 pow $2,2
 add $2,180
 lpb $2
+  mov $5,$1
+  mul $5,2
   mov $3,$1
-  seq $3,52183 ; A second-order recursive sequence.
+  add $3,2
+  mov $4,$1
+  add $4,$5
+  bin $4,$5
+  mov $6,$5
+  add $6,1
+  div $4,$6
+  mul $4,$3
+  mov $3,$4
   sub $3,1
   add $0,1
   add $1,1

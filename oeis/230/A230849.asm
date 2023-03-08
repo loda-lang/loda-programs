@@ -4,5 +4,6 @@
 
 mul $0,-1
 dif $0,-2
-max $0,0
-seq $0,75526 ; a(n) = A008578(n+2) - A008578(n+1).
+trn $0,1
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.

@@ -1,10 +1,32 @@
 ; A177139: Numbers n such that (3*n-4, 3*n-2) is a twin prime pair.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 3,5,7,11,15,21,25,35,37,47,51,61,65,67,77,81,91,95,105,117,141,145,155,175,191,201,207,215,221,271,275,277,287,295,341,345,351,355,365,385,411,427,431,435,441,477,485,495,497,537,541,557,567,575,597,625,627,645,651,667,677,695,697,705,711,715,747,757,771,781,795,851,865,887,897,905,911,931,935,991,1001,1041,1057,1085,1087,1101,1111,1121,1125,1131,1155,1157,1177,1181,1187,1195,1225,1257,1275,1285
-; Formula: a(n) = 2*A002822(n)+1
 
 mov $1,$0
-seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+sub $1,1
+mov $2,4
+mov $3,$0
+add $3,4
+pow $3,3
+lpb $3
+  mov $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,3
+  sub $4,$6
+  mul $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$6
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  add $2,6
+  mul $3,$5
+  sub $3,18
+  mov $4,$2
+lpe
+mov $1,$2
+div $1,6
+add $1,1
 mov $0,$1
 mul $0,2
 add $0,1

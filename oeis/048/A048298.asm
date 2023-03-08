@@ -1,8 +1,9 @@
-; A048298: a(n) = n if n=2^i with i=0,1,2,3,...; else a(n) = 0.
+; A048298: a(n) = n if n=2^i for i >= 0, otherwise a(n) = 0.
+; Submitted by stoneageman
 ; 0,1,2,0,4,0,0,0,8,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = n*A209229(n)
 
 mov $1,$0
-add $1,$0
-seq $0,209229 ; Characteristic function of powers of 2, cf. A000079.
-mul $0,$1
-div $0,2
+seq $1,209229 ; Characteristic function of powers of 2, cf. A000079.
+mul $1,$0
+mov $0,$1

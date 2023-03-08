@@ -8,8 +8,18 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,107915 ; a(n) = binomial(n+4,4)*binomial(n+5,4)*binomial(n+6,4)/75.
+  mov $6,$0
+  add $6,5
+  sub $0,1
+  mov $5,4
+  sub $5,$6
+  bin $5,4
+  bin $6,$0
+  mul $6,5
+  add $5,$6
+  mul $5,$6
+  mov $0,$5
+  div $0,50
   mov $2,$3
   mul $2,$0
   add $4,$2

@@ -8,7 +8,8 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  seq $3,127473 ; a(n) = phi(n)^2.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  pow $3,2
   dif $3,2
   gcd $3,4
   add $3,1

@@ -6,6 +6,5 @@ lpb $0
   trn $0,$1
 lpe
 pow $1,2
-mul $1,2
-div $1,8
+div $1,4
 mov $0,$1

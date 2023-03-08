@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,182860 ; Number of distinct prime signatures represented among the unitary divisors of n.
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+  add $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3

@@ -8,7 +8,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,127345 ; a(n) = pq + pr + qr with p = prime(n), q = prime(n+1), and r = prime(n+2).
+  seq $3,46301 ; Product of 3 successive primes.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

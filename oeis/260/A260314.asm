@@ -8,7 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,107635 ; McKay-Thompson series of class 32a for the Monster group.
+  seq $2,22598 ; Expansion of Product_{m>=1} (1+q^m)^(-3).
+  gcd $2,$2
   add $4,1
   add $1,$2
   mov $3,$4

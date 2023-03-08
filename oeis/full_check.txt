@@ -113,6 +113,9 @@ A038609: Numbers that are the sum of 2 different primes.
 A039007: Numbers whose base-5 representation has the same number of 0's and 1's.
 A039010: Numbers whose base-5 representation has the same number of 1's and 2's.
 A039014: Numbers whose base-5 representation has the same number of 2's and 4's.
+A040008: Continued fraction for sqrt(12).
+A040032: Continued fraction for sqrt(39).
+A040074: Continued fraction for sqrt(84).
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
 A042987: Primes congruent to {2, 3, 5, 7} mod 8.
 A042999: Primes congruent to {2, 3, 5} (mod 8).
@@ -473,6 +476,7 @@ A283766: Numbers k such that L(k) is odd, where L = A000201 = lower Wythoff sequ
 A283767: Numbers k such that U(k) is even, where U = A001950 = upper Wythoff sequence.
 A283768: Numbers k such that U(k) is odd, where U = A001950 = upper Wythoff sequence.
 A283769: Numbers k such that L(k) = 0 mod 3, where L = A000201 = lower Wythoff sequence.
+A283770: Numbers k such that L(k) = 1 mod 3, where L = A000201 = lower Wythoff sequence.
 A283772: Numbers k such that U(k) = 0 mod 3, where U = A001950 = upper Wythoff sequence.
 A283773: Numbers k such that U(k) = 1 mod 3, where U = A001950 = upper Wythoff sequence.
 A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff sequence.
@@ -493,6 +497,7 @@ A285260: Positions of 1 in A285258; complement of A285259.
 A285326: a(0) = 0, for n > 0, a(n) = n + A006519(n).
 A285401: Positions of 0 in A285177; complement of A285402.
 A285405: Positions of 1 in A285403; complement of A285404.
+A285422: Positions of 0 in A285421; complement of A285423.
 A285682: Positions of 1 in A285680.
 A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
 A285708: a(n) = n / A285707(n).
@@ -560,6 +565,7 @@ A322319: a(n) = lcm(A003557(n), A048250(n)).
 A323100: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = -1 in Clifford algebra Cl(p,q)(R).
 A323239: a(n) = 1 if n is odd and squarefree, otherwise a(n) = 0.
 A323346: Square array read by ascending antidiagonals: T(p,q) is the number of bases e such that e^2 = 1 (including e = 1) in Clifford algebra Cl(p,q)(R).
+A323467: Smallest number in row n of A323465.
 A323554: Irregular table read by rows: T(n,k) = (2*k+1)^(-1/5) mod 2^n, 0 <= k <= 2^(n-1) - 1.
 A324534: The smallest common prime factor of sigma(n) and A276086(n), or 1 if no such prime exists.
 A325645: "Sloping quinary numbers": write numbers in quinary under each other (right-justified), read diagonals in upward direction, convert to decimal.
