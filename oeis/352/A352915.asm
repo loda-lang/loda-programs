@@ -1,0 +1,30 @@
+; A352915: Moebius transform of odd primes.
+; Submitted by rboden
+; 3,2,4,6,10,8,16,12,22,16,34,18,40,26,36,36,58,28,68,36,56,44,86,44,88,58,78,56,110,48,128,78,98,86,122,66,160,94,126,94,178,76,190,108,124,120,220,94,210,114,174,132,248,112,216,148,196,162,278,96
+
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  mov $4,$0
+  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $5,0
+  lpb $0
+    add $5,1
+    sub $0,$5
+  lpe
+  seq $0,175753 ; Numbers with 46 divisors.
+  mul $0,$4
+  add $1,$0
+lpe
+mov $0,$1
+sub $0,8388608
+div $0,4194304
+add $0,2
