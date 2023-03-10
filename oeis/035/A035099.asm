@@ -4,6 +4,9 @@
 
 mov $1,$0
 cmp $1,1
-seq $1,109064 ; Expansion of eta(q)^5 / eta(q^5) in powers of q.
+mov $2,-1
+pow $2,$1
+seq $1,138506 ; Expansion of f(q)^5 / f(q^5) in powers of q where f() is a Ramanujan theta function.
+mul $1,$2
 seq $0,45479 ; McKay-Thompson series of class 2B for the Monster group with a(0) = -8.
 mul $0,$1

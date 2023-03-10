@@ -14,7 +14,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   bin $0,$1
-  seq $0,178225 ; Characteristic function of A006995 (binary palindromes).
+  mov $5,$0
+  seq $5,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+  cmp $0,$5
   mul $1,$0
   add $3,$1
 lpe

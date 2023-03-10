@@ -1,10 +1,10 @@
 ; A266246: Middle column of the "Rule 9" elementary cellular automaton starting with a single ON (black) cell.
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
-; Formula: a(n) = (binomial(-1,n-5)+1)/2
+; Formula: a(n) = (max(10*n,43)+n)%2
 
-sub $0,5
-mov $1,-1
-bin $1,$0
-add $1,1
-div $1,2
-mov $0,$1
+mov $1,$0
+mul $0,10
+max $0,43
+add $0,$1
+mod $0,2

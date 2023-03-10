@@ -9,7 +9,8 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,123365 ; Values of k such that A046530(k) = (k+2)/3, where A046530(k) is the number of distinct residues of cubes mod k.
+  seq $0,177965 ; Indices m for which A177961(m) - m = 1.
+  mul $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,358751 ; a(n) = 1 if bigomega(n) == 1 (mod 4), otherwise 0.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  add $3,2
+  bin $3,3
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,21 +1,7 @@
 ; A053866: Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
-; Submitted by smetchewit
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+; Formula: a(n) = A001227(n)%2
 
-mov $4,0
-mov $1,0
-add $0,1
-lpb $0
-  mov $2,$0
-  sub $0,1
-  sub $0,$1
-  mov $3,-1
-  bin $3,$1
-  add $1,1
-  gcd $2,$1
-  mul $3,$2
-  div $3,$1
-  add $4,$3
-lpe
-mov $0,$4
+seq $0,1227 ; Number of odd divisors of n.
 mod $0,2

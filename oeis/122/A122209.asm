@@ -1,10 +1,18 @@
 ; A122209: Sum of squares of the first n^2 primes = A024450[n^2].
 ; Submitted by Science United
 ; 4,87,1556,13275,65796,239087,710844,1789395,4083404,8384727,16156884,29194283,50363460,82888311,132264452,204330315,306450780,450504551,647579748,913503459,1262033828,1725350295,2318488092,3072687971
-; Formula: a(n) = A024450(n*(n+2))
 
 mov $1,$0
 add $0,2
 mul $1,$0
-seq $1,24450 ; Sum of squares of the first n primes.
-mov $0,$1
+add $1,1
+lpb $1
+  trn $1,1
+  mov $3,$1
+  seq $3,40 ; The prime numbers.
+  pow $3,2
+  mul $3,2
+  add $2,$3
+lpe
+div $2,2
+mov $0,$2

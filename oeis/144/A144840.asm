@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,6512 ; Greater of twin primes.
+  mul $3,2
+  trn $3,1
+  seq $3,171688 ; Twin primes > 3.
   trn $3,10
   sub $3,2
   mov $5,$3

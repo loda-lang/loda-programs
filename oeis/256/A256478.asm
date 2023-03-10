@@ -4,6 +4,11 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,257248 ; a(1) = 0; and for n > 1, if A079559(n) = 1, then a(n) = 1 + a(A213714(n)-1), otherwise a(n) = a(A234017(n)).
-add $0,1
+lpb $0
+  seq $0,254112 ; Row index of n in A254105: If A234017(n) = 0, then a(n) = A213714(n), otherwise a(n) = a(A234017(n)).
+  sub $0,2
+  add $2,1
+lpe
+mov $0,$2
 sub $0,$1
+add $0,1

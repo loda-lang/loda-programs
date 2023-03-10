@@ -1,24 +1,11 @@
 ; A104278: Numbers n such that 2n+1 and 2n-1 are not primes.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by USTL-FIL (Lille Fr)
 ; 13,17,25,28,32,38,43,46,47,58,59,60,61,62,67,71,72,73,77,80,85,88,92,93,94,101,102,103,104,107,108,109,110,118,122,123,124,127,130,133,137,143,144,145,148,149,150,151,152,160,161,162,163,164,167,170,171,172,178,181,182,185,188,193,196,197,202,203,206,207,208,212,213,214,218,223,226,227,235,236,237,238,241,242,247,248,253,256,257,258,259,263,264,265,266,267,268,269,272,275
+; Formula: a(n) = (A061673(n)-26)/2+13
 
-mov $1,25
-mov $2,$0
-add $2,7
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
-  trn $3,5
-  min $3,1
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
+mov $1,$0
+seq $1,61673 ; Even numbers k such that k+1 and k-1 are both composite.
 mov $0,$1
-add $0,1
+sub $0,26
 div $0,2
+add $0,13

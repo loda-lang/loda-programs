@@ -6,8 +6,10 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,173490 ; Even abundant numbers (even numbers n whose sum of divisors exceeds 2n).
+  mov $6,$1
+  seq $6,39725 ; Even abundant numbers divided by 2.
+  mov $3,$6
+  mul $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

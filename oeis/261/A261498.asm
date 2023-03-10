@@ -11,8 +11,10 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,1449 ; Binomial coefficients binomial(5n,n).
-  add $3,$0
+  mov $4,5
+  mul $4,$0
+  bin $4,$0
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

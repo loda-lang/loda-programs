@@ -6,9 +6,12 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,286530 ; a(n) = d(n+d(n)) - d(n), where d(n) is the number of divisors of n (A000005).
+  seq $3,286529 ; a(n) = d(n+d(n)), where d(n) is the number of divisors of n (A000005).
   sub $3,1
+  sub $3,$5
   bin $3,$2
   cmp $3,0
   sub $0,$3

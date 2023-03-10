@@ -8,7 +8,9 @@ lpb $2
   sub $2,1
   mov $3,$1
   div $3,2
-  seq $3,277906 ; Least number with same prime signature as phi(n): a(n) = A046523(A000010(n)).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $3,1
+  seq $3,46523 ; Smallest number with same prime signature as n.
   mov $4,$3
   add $5,1
   gcd $3,$5

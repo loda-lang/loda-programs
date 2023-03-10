@@ -10,9 +10,16 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,285388 ; a(n) = numerator of ((1/n) * Sum_{k=0..n^2-1} binomial(2k,k)/4^k).
+  add $2,1
+  mov $4,$2
+  pow $4,2
+  sub $4,1
+  seq $4,1803 ; Numerators in expansion of (1 - x)^(-3/2).
+  gcd $2,$4
+  div $4,$2
   bin $0,$3
-  gcd $1,$2
+  gcd $1,$4
+  mov $2,$4
 lpe
 div $2,$1
 mov $0,$2

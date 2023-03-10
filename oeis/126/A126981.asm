@@ -1,7 +1,16 @@
 ; A126981: Largest perfect square less than 2*10^n.
 ; Submitted by Jamie Morken(w4)
 ; 1,16,196,1936,19881,199809,1999396,19998784,199996164,1999967841,19999899241,199999467369,1999998409369,19999991458225,199999982358225,1999999950806881,19999999932878736,199999999552824025
-; Formula: a(n) = A083377(n)^2
 
-seq $0,83377 ; a(n) = the largest integer whose square has n digits and first digit 1.
+mov $2,$0
+mov $0,10
+pow $0,$2
+mov $1,$0
+mul $1,2
+lpb $0
+  mov $2,$1
+  div $2,$0
+  add $0,$2
+  div $0,2
+lpe
 pow $0,2

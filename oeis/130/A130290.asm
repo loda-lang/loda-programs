@@ -1,14 +1,38 @@
 ; A130290: Number of nonzero quadratic residues modulo the n-th prime.
-; Submitted by Cruncher Pete
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,3,5,6,8,9,11,14,15,18,20,21,23,26,29,30,33,35,36,39,41,44,48,50,51,53,54,56,63,65,68,69,74,75,78,81,83,86,89,90,95,96,98,99,105,111,113,114,116,119,120,125,128,131,134,135,138,140,141,146,153,155,156,158,165,168,173,174,176,179,183,186,189,191,194,198,200,204,209,210,215,216,219,221,224,228,230,231,233,239,243,245,249,251,254,260,261,270
-; Formula: a(n) = (b(n)-3)/2+1, b(n) = A159477(b(n-1)), b(0) = 2
 
-mov $1,2
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $2,$0
+mul $2,2
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  sub $4,$2
+  mov $6,0
+  max $1,$3
+  add $1,1
+  lpb $1
+    gcd $6,2
+    mov $7,$1
+    div $7,3
+    lpb $7
+      mov $5,$1
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    div $1,$6
+    pow $1,2
+    mov $6,1
+  lpe
+  mov $1,$6
+  mul $1,2
+  sub $2,$1
+  add $3,2
 lpe
-mov $0,$1
-sub $0,3
+mov $0,$3
+sub $0,4
 div $0,2
 add $0,1

@@ -256,6 +256,7 @@ A116512: a(n) = number of positive integers each of which is <= n and is divisib
 A118480: (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
 A120007: Mobius transform of sum of prime factors of n with multiplicity (A001414).
+A120839: a(n) is the n-th positive integer which is coprime to the n-th Fibonacci number.
 A120891: Number of primitive Pythagorean triangles with odd leg 2n-1.
 A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) = p^j > 1. (a(1) = 0.)
 A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
@@ -490,6 +491,7 @@ A285075: Positions of 1 in A285073; complement of A285074.
 A285126: Positions of 0 in A285125; complement of A285127.
 A285127: Positions of 1 in A285125; complement of A285126.
 A285129: Positions of 0 in A285128; complement of A285130.
+A285143: Positions of 0 in A285142; complement of A285144.
 A285256: Positions of 0 in A285255; complement of A285257.
 A285258: 1-limiting word of the morphism 0->10, 1-> 0110.
 A285259: Positions of 0 in A285258; complement of A285260.

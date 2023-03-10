@@ -12,7 +12,10 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,353109 ; Array read by antidiagonals: A(n, k) is the digital root of n*k with n >= 0 and k >= 0.
+  seq $0,4247 ; Multiplication table read by antidiagonals: T(i,j) = i*j (i>=0, j>=0). Alternatively, multiplication triangle read by rows: P(i,j) = j*(i-j) (i>=0, 0<=j<=i).
+  sub $0,1
+  mod $0,9
+  add $0,1
   add $1,$0
 lpe
 mov $0,$1

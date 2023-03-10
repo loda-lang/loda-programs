@@ -14,7 +14,19 @@ lpb $4
   add $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,212793 ; Characteristic function of cubefree numbers, A004709.
+  seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $0,1
+  seq $0,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
+  mov $5,1
+  add $5,$0
+  add $0,$5
+  pow $5,$0
+  sub $5,3
+  mov $0,$5
+  mov $5,8
+  bin $5,$0
+  mov $0,$5
+  div $0,51
   mul $1,$0
   add $3,$1
 lpe

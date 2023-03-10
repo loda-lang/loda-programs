@@ -13,10 +13,9 @@ lpb $0
   dif $0,2
   add $4,1
 lpe
-mov $0,$4
 mov $3,2
-pow $3,$0
-mov $0,$3
-mov $1,$0
+pow $3,$4
+mov $1,$3
 gcd $1,$2
+mov $0,$3
 div $0,$1

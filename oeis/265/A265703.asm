@@ -4,7 +4,8 @@
 
 lpb $0
   trn $0,1
-  seq $0,70952 ; Number of 1's in n-th generation of 1-D CA using Rule 30, started with a single 1.
+  seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
+  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $1,$0
   mov $0,0
 lpe

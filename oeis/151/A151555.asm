@@ -9,7 +9,8 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,151549 ; a(n) = (A151548(n)-1)/2.
+  seq $0,151548 ; When A160552 is regarded as a triangle with rows of lengths 1, 1, 2, 4, 8, 16, ..., this is what the rows converge to.
+  div $0,2
   add $3,$0
   add $4,$3
 lpe

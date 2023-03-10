@@ -1,6 +1,7 @@
 ; A092536: Sorted numbers of edges in the Archimedean polyhedra.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 18,24,36,36,48,60,60,72,90,90,120,150,180
+; Formula: a(n) = 6*b(n)+12, b(n) = b(n-2)%2-e(n-3)-binomial(d(n-3),-d(n-3)+c(n-3))+b(n-1)+2, b(5) = 8, b(4) = 6, b(3) = 4, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = b(n-1)%2, c(5) = 0, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 1, c(0) = 0, d(n) = e(n-2)+binomial(d(n-2),-d(n-2)+c(n-2)), d(5) = 2, d(4) = 0, d(3) = 0, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = d(n-1)-1, e(5) = -1, e(4) = -1, e(3) = 1, e(2) = 0, e(1) = -1, e(0) = 1
 
 mov $1,1
 mov $2,1

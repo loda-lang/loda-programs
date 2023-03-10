@@ -1,9 +1,9 @@
 ; A266611: Middle column of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
+; Submitted by stoneageman
 ; 1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
-; Formula: a(n) = binomial(binomial(-1,n-4),64)
+; Formula: a(n) = (binomial(3,n)+n)%2
 
-sub $0,4
-mov $1,-1
+mov $1,3
 bin $1,$0
-bin $1,64
-mov $0,$1
+add $0,$1
+mod $0,2

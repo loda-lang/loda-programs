@@ -3,6 +3,24 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,4457 ; Nimsum n + 16.
-add $1,$0
+mov $2,2
+mov $4,$0
+div $0,16
+gcd $0,2
+lpb $0
+  pow $2,3
+  sub $2,1
+  mov $3,1
+  add $3,$0
+  pow $3,2
+  add $0,$2
+  mov $5,$0
+  div $0,10
+  mov $2,16
+  sub $3,$5
+  mul $3,$5
+lpe
+add $2,$3
+add $2,$4
+add $1,$2
 mov $0,$1

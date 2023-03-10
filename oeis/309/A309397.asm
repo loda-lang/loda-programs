@@ -5,7 +5,19 @@
 mov $2,$0
 add $2,2
 pow $2,2
-seq $0,175441 ; Denominators of the harmonic means H(n) of the first n positive integers.
-mov $1,$0
+mov $4,2
+mov $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  add $5,1
+  mul $6,$5
+  add $6,$4
+  mul $4,$5
+lpe
+add $7,$6
+gcd $6,$4
+div $7,$6
+mov $1,$7
 gcd $1,$2
 mov $0,$1

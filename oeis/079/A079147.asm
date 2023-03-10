@@ -4,6 +4,31 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,89965 ; Both n + 1 and n/2 + 1 are primes.
+cmp $2,$0
+trn $0,1
+mov $4,$0
+add $4,2
+pow $4,2
+lpb $4
+  max $5,$7
+  seq $5,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$5
+  add $3,6
+  mov $6,$0
+  max $6,0
+  cmp $6,$0
+  mul $4,$6
+  sub $4,1
+  add $7,$3
+  add $3,2
+  add $7,$3
+lpe
+mov $0,$3
+sub $0,8
+div $0,8
+add $0,1
+sub $2,$0
+sub $0,$2
+mul $0,2
 add $0,1
 sub $0,$1

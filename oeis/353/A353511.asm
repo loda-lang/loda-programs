@@ -6,7 +6,10 @@ mov $2,$0
 mul $2,2
 lpb $2
   mov $3,$1
-  seq $3,344300 ; Expansion of Sum_{k>=1} (-1)^(k+1) * k^2 * x^(k^2) / (1 - x^(k^2)).
+  seq $3,8833 ; Largest square dividing n.
+  seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  sub $3,1
+  seq $3,321543 ; a(n) = Sum_{d|n} (-1)^(d-1)*d^2.
   add $3,$4
   gcd $3,2
   sub $0,$3

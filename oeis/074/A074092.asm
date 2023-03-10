@@ -5,10 +5,10 @@ mov $1,2
 mov $3,$0
 mov $2,$0
 lpb $2
-  lpb $0
-    sub $0,1
-    add $3,$2
-  lpe
+  mov $4,$2
+  mul $4,$0
+  min $0,0
+  add $3,$4
   trn $3,4
   add $3,3
   mov $1,$3

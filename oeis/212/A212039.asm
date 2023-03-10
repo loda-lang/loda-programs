@@ -7,5 +7,14 @@ sub $1,1
 mul $1,$0
 div $1,2
 mul $1,3
-seq $0,211899 ; Number of triangular n X n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any neighbor, and containing the value n(n+1)/2-2.
+lpb $0
+  add $4,$0
+  add $4,4
+  add $3,$4
+  sub $0,1
+  add $2,$3
+lpe
+trn $3,1
+sub $2,$3
+mov $0,$2
 sub $0,$1

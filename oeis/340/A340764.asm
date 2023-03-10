@@ -7,7 +7,14 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,175029 ; a(n)=2*n if n is prime, otherwise a(n)=3*n.
+  add $0,81
+  mov $5,0
+  max $5,$0
+  sub $5,81
+  seq $5,191558 ; a(n) = 0 if n prime, otherwise n.
+  add $5,$0
+  add $0,$5
+  sub $0,160
   mul $0,2
   mod $0,3
   max $0,1

@@ -1,5 +1,6 @@
 ; A004047: The coding-theoretic function A(n,10,9).
 ; 1,1,1,1,1,2,3,4,6,10,19
+; Formula: a(n) = binomial(n,n/2)/(n+4)+1
 
 mov $1,$0
 div $1,2

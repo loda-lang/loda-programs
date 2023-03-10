@@ -9,7 +9,9 @@ mul $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,86299 ; a(n) = if n is 7-smooth then 1 else 0: characteristic function of 7-smooth numbers.
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $3,10
+  cmp $3,0
   cmp $3,0
   sub $0,$3
   add $1,1

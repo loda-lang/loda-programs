@@ -1,8 +1,32 @@
 ; A272890: Numbers n such that the product of n and the sum of the reciprocal of their anti-divisors is an integer.
 ; Submitted by shiva
 ; 9,36,441,576,1296,1764,2025,7569,10404,17424,23409,34596,41616,51984,56169,74529,88209,90000,103041,140625,181476,194481,219024,236196,239121,269361,324900,367236,404496,480249,540225,571536,576081,627264,783225,842724,904401,980100,986049,1134225,1205604,1272384,1279161,1340964,1418481,1758276,1806336,1846881,1920996,1979649,2082249,2169729,2232036,2268036,2396304,2692881,2832489,3059001,3164841,3207681,3493161,3583449,3873024,3896676,4064256,4347225,4410000,4652649,4875264,5062500,5076009
-; Formula: a(n) = (A152786(n)^2)/4
 
-seq $0,152786 ; Integers k such that (k^2)/2 is the arithmetic mean of a pair of twin primes.
+mov $1,5
+mov $2,$0
+add $2,4
+pow $2,3
+lpb $2
+  div $3,2
+  mul $3,$1
+  mov $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,3
+  sub $3,$5
+  mul $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
+  mov $3,$1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  add $1,3
+  mul $2,$4
+  sub $2,18
+lpe
+mov $0,$3
+div $0,6
+add $0,1
+mul $0,6
 pow $0,2
 div $0,4

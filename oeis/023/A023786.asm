@@ -10,8 +10,8 @@ lpb $2
   mov $3,$1
   add $3,1
   lpb $3
-    mul $3,20
-    div $3,8
+    mul $3,5
+    div $3,2
     mov $6,$3
     mod $6,10
     div $3,10

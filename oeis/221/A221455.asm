@@ -5,11 +5,13 @@
 mov $4,$0
 lpb $4
   sub $4,1
-  mov $0,$2
-  seq $0,28401 ; The (2^n+1)-th triangular number (cf. A000217).
+  mov $5,2
+  pow $5,$2
+  add $5,2
+  bin $5,2
   mov $1,$2
   bin $1,$4
-  mul $1,$0
+  mul $1,$5
   add $2,1
   add $3,$1
 lpe

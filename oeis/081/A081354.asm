@@ -9,7 +9,8 @@ add $2,2
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,81325 ; sigma(n^2) modulo 4.
+  seq $3,65764 ; Sum of divisors of square numbers.
+  mod $3,4
   cmp $3,1
   cmp $3,0
   sub $0,$3

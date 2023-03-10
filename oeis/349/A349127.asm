@@ -5,5 +5,7 @@
 mov $1,-1
 pow $1,$0
 cmp $1,1
-seq $0,349128 ; a(n) = phi(A064989(n)), where A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p, and phi is Euler totient function.
+seq $0,3602 ; Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
+sub $0,1
+seq $0,285702 ; a(n) = A000010(A064216(n)).
 mul $0,$1

@@ -1,4 +1,4 @@
-; A045186: Numbers n with property that in base 5 representation the numbers of 0's and 2's are 3 and 2, respectively.
+; A045186: Numbers whose base-5 representation contains exactly three 0's and two 2's.
 ; Submitted by damotbe
 ; 1252,1260,1300,1500,3137,3177,3185,3377,3385,3425,4377,4385,4425,4625,6257,6261,6263,6264,6267,6272,6277,6285,6301,6303,6304,6305,6315,6320,6327,6335,6352,6360,6377,6385,6425,6501
 

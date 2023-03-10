@@ -10,7 +10,11 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,331388 ; a(n) = Sum_{k=1..n} mu(gcd(n, k)) * k / gcd(n, k).
+  mov $4,$0
+  seq $4,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  seq $0,63445 ; Moebius transform of f(x) = EulerPhi(x^2) function (A002618).
+  add $0,$4
+  div $0,2
   add $3,$0
 lpe
 mov $0,$3

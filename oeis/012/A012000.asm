@@ -4,5 +4,17 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,116091 ; Expansion of 1/sqrt(1+4*x+16*x^2).
+mov $2,1
+mov $4,1
+lpb $0
+  add $3,1
+  mul $2,$0
+  div $2,$3
+  mul $2,$0
+  div $2,$3
+  mul $4,-3
+  add $4,$2
+  sub $0,1
+lpe
+mov $0,$4
 mul $0,$1

@@ -5,5 +5,16 @@
 mul $0,2
 cmp $1,$0
 trn $0,1
-seq $0,96441 ; Number of palindromic and unimodal compositions of n. Equivalently, the number of orbits under conjugation of even nilpotent n X n matrices.
+add $0,1
+mov $2,$0
+mov $3,-1
+pow $3,$0
+add $3,1
+dif $0,2
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $0,$3
+div $0,2
+seq $2,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+add $2,$0
+mov $0,$2
 sub $0,$1

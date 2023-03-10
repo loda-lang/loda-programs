@@ -11,8 +11,8 @@ lpb $0
   mul $1,2
   add $1,1
   mul $1,10
-  mul $3,4
-  div $3,30
+  mul $3,2
+  div $3,15
   mul $3,4
   add $1,$3
   div $1,28

@@ -10,7 +10,11 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,69264 ; Inverse Moebius transform of bigomega(n).
+  mov $4,$0
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mul $0,$4
+  div $0,2
   add $3,$0
 lpe
 mov $0,$3

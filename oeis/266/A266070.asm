@@ -1,9 +1,9 @@
 ; A266070: Middle column of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
+; Submitted by dougblair
 ; 1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
-; Formula: a(n) = binomial(binomial(-1,n-2),64)
+; Formula: a(n) = (binomial(1,n)+n)%2
 
-sub $0,2
-mov $1,-1
+mov $1,1
 bin $1,$0
-bin $1,64
-mov $0,$1
+add $0,$1
+mod $0,2

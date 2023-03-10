@@ -2,6 +2,12 @@
 ; Submitted by NOSNHOP
 ; 96,384,1152,3072,5760,9216,16128,24576
 
-seq $0,208895 ; Number of non-congruent solutions to x^2 + y^2 + z^2 + t^2 == 1 (mod n).
+mov $1,$0
+add $0,1
+add $1,$0
+seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
+mul $1,$0
+mov $0,$1
+div $0,3
 dif $0,2
 mul $0,96

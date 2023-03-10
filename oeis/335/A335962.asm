@@ -8,7 +8,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   pow $3,2
-  seq $3,175608 ; Characteristic function of squarefree triangular integers: 1 if n(n+1)/2 is squarefree else 0.
+  mov $5,$3
+  bin $5,2
+  add $5,$3
+  add $3,$5
+  seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  pow $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

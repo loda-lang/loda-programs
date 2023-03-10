@@ -7,8 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,28392 ; a(n) = n + floor(sqrt(n)).
-  add $3,1
+  seq $3,135668 ; a(n) = ceiling(n + sqrt(n)).
+  sub $3,1
   sub $3,$1
   mul $3,$1
   trn $3,1

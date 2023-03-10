@@ -4,7 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,213389 ; Number of (w,x,y) with all terms in {0,...,n} and max(w,x,y) < 2*min(w,x,y).
+  pow $2,2
+  add $2,3
+  div $2,4
+  mul $2,$0
   sub $0,3
   add $1,$2
 lpe
