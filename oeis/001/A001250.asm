@@ -1,10 +1,16 @@
 ; A001250: Number of alternating permutations of order n.
 ; Submitted by shiva
 ; 1,1,2,4,10,32,122,544,2770,15872,101042,707584,5405530,44736512,398721962,3807514624,38783024290,419730685952,4809759350882,58177770225664,740742376475050,9902996106248192,138697748786275802,2030847773013704704,31029068327114173810,493842960380415967232,8174145018586247784722,140503203207887919775744,2504519282807259730936570,46238368375619195682947072,883087786498046209107365642,17427925514250338592341622784,355038783159078578873329579330,7458815407441059142195019251712
-; Formula: a(n) = A000111(n)*min(A124302(n),2)
+; Formula: a(n) = min((3^n)/6+1,2)*gcd(A155585(n),A122045(n))
 
-mov $1,$0
-seq $1,124302 ; Number of set partitions with at most 3 blocks; number of Dyck paths of height at most 4; dimension of space of symmetric polynomials in 3 noncommuting variables.
+mov $2,3
+pow $2,$0
+div $2,6
+add $2,1
+mov $1,$2
 min $1,2
-seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+mov $3,$0
+seq $3,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$3
 mul $0,$1

@@ -212,6 +212,7 @@ A087560: Smallest m > n such that gcd(m, n^2) = n.
 A088462: a(1)=1, a(n) = ceiling((n - a(a(n-1)))/2).
 A088517: First differences of Golomb's sequence.
 A088534: Number of representations of n by the quadratic form x^2 + xy + y^2 with 0 <= x <= y.
+A088917: Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
 A089090: a(n) is the smallest composite number coprime to n.
 A089809: Complement of A078588.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
@@ -601,12 +602,14 @@ A338064: Numbers k such that the Enots Wolley sequence A336957(k) is even.
 A339661: Number of factorizations of n into distinct squarefree semiprimes.
 A339765: a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
 A340346: The largest divisor of n that is a term of A055932 (numbers divisible by all primes smaller than their largest prime factor).
+A340674: Numbers of the form s^(2^e), where s is a squarefree number, and e >= 1.
 A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of whose prime divisors are consecutive primes starting at 2, otherwise 0.
 A341996: a(n) = 1 if there is at least one such prime p that p^p divides the arithmetic derivative of n, A003415(n); a(0) = a(1) = 0 by convention.
 A342023: a(n) = 1 if there is a prime p such that p^p divides n, otherwise 0.
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).
+A347386: Number of iterations of A347385 (Dedekind psi function applied to the odd part of n) needed to reach a power of 2.
 A348498: a(n) = gcd(A003415(n), A347130(n)) / A003557(n), where A003415 is the arithmetic derivative and A347130 is its Dirichlet convolution with the identity function.
 A348741: Odd numbers k for which A161942(k) < k, where A161942 is the odd part of sigma.
 A348952: a(n) = -Sum_{d|n, d < sqrt(n)} (-1)^(d + n/d).

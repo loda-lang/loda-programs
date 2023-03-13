@@ -5,8 +5,7 @@ lpb $0
   trn $1,$0
   mul $1,4
   mov $2,$0
-  mul $0,2
-  div $0,8
+  div $0,4
   add $1,$2
 lpe
 mul $1,5

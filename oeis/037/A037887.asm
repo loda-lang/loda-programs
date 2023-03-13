@@ -1,13 +1,15 @@
 ; A037887: a(n)=(1/2)*Sum{|d(i)-e(i)|} where Sum{d(i)*10^i) is the base 10 representation of n and e(i) are the digits d(i) in nondecreasing order.
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,0,0,0,1,2,3,4,5,6,7,0,0,0,0,1,2,3,4,5,6,0,0,0,0,0,1,2,3,4,5,0,0,0,0,0,0,1,2,3,4,0,0,0,0,0,0,0,1,2,3,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,1,0
 
-sub $0,8
+add $0,1
 lpb $0
-  mov $1,$0
+  mov $2,$0
+  mod $2,10
+  div $0,10
   sub $1,$2
-  sub $0,8
-  trn $0,2
-  add $2,1
+  max $3,$1
+  mov $1,$3
+  add $1,$2
 lpe
-trn $1,2
-mov $0,$1
+mov $0,$3

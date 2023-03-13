@@ -9,12 +9,11 @@ pow $2,4
 lpb $2
   mov $4,6
   mov $3,$1
-  seq $3,52421 ; Numbers without 8 as a digit.
   lpb $3
     mov $5,$3
-    mod $5,10
+    mod $5,9
     cmp $5,0
-    div $3,10
+    div $3,9
     add $4,$5
   lpe
   mov $3,$4

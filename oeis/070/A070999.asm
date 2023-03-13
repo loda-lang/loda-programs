@@ -7,8 +7,14 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
   mov $3,$1
-  seq $3,333696 ; Denominators of coefficients in expansion of Sum_{k>=1} phi(k) * log(1/(1 - x^k)).
+  seq $3,57660 ; a(n) = Sum_{k=1..n} n/gcd(n,k).
+  mov $5,$3
+  gcd $5,$6
+  min $3,$6
+  div $3,$5
   mod $3,$1
   div $3,2
   min $3,1

@@ -3,8 +3,16 @@
 
 mul $0,2
 mov $1,$0
+mov $4,8
 div $0,4
-seq $0,228071 ; Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
+lpb $0
+  div $0,2
+  mov $3,$0
+  mul $3,$4
+  add $2,$3
+  mul $4,10
+lpe
+mov $0,$2
 mul $0,4
 add $0,$1
 div $0,2

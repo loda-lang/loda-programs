@@ -15,6 +15,5 @@ lpb $0
   pow $2,0
   add $2,$1
 lpe
-mul $0,2
-div $0,22
+div $0,11
 mod $0,10

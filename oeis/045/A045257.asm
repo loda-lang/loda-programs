@@ -16,8 +16,7 @@ lpb $2
     mod $5,10
     trn $5,4
     bin $5,2
-    mul $3,2
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4

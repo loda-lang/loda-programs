@@ -4,6 +4,16 @@
 
 mov $1,2
 gcd $1,$0
-seq $0,41048 ; Numerators of continued fraction convergents to sqrt(30).
-mul $1,$0
+mov $4,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $3,$4
+  mov $4,$2
+  mov $2,$3
+  dif $3,5
+  mul $3,5
+  add $4,$3
+lpe
+mul $1,$4
 mov $0,$1

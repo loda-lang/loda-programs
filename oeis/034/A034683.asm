@@ -7,8 +7,11 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,$1
   mov $3,$1
-  seq $3,129468 ; Unitary abundance of n.
+  seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  sub $3,$5
   trn $3,2
   min $3,1
   sub $0,$3

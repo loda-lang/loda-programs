@@ -1,29 +1,12 @@
 ; A056463: Number of primitive (aperiodic) palindromes using exactly two different symbols.
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,2,2,6,4,14,12,28,24,62,54,126,112,246,240,510,476,1022,990,2030,1984,4094,4020,8184,8064,16352,16254,32766,32484,65534,65280,131006,130560,262122,261576,524286,523264,1048446,1047540,2097150,2094988,4194302,4192254,8388324,8384512,16777214,16772880,33554416,33546216,67108350,67100670,134217726,134200864,268435386,268419060,536869886,536838144,1073741822,1073708010,2147483646,2147418112,4294965220,4294901760,8589934458,8589801532,17179869182,17179738110,34359734270,34359476088,68719476734
+; Formula: a(n) = 2*(A056458(max(n-1,0)+1)/2)
 
-mov $2,$0
-add $2,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  sub $0,1
-  mov $4,$0
-  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
-  lpb $0
-    add $5,1
-    sub $0,$5
-  lpe
-  seq $0,123208 ; Start with 1, then alternately add 2 or double.
-  mul $0,$4
-  add $1,$0
-lpe
+mov $1,$0
+trn $1,1
+add $1,1
+seq $1,56458 ; Number of primitive (aperiodic) palindromes using a maximum of two different symbols.
 mov $0,$1
-div $0,5
+div $0,2
 mul $0,2

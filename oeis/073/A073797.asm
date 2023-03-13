@@ -1,12 +1,16 @@
 ; A073797: a(n) = 2^n mod pi(n).
 ; Submitted by Athlici
 ; 0,0,0,2,1,0,0,0,0,3,1,2,4,2,4,4,1,0,0,0,0,5,1,2,4,8,7,2,4,2,4,8,5,10,9,8,4,8,4,6,12,2,4,8,2,8,1,2,4,8,1,0,0,0,0,0,0,8,16,2,4,8,16,14,10,3,6,12,5,8,16,2,4,8,16,11,1,6,12,2,4,18,13,3,6,12,1,8,16,8,16,8,16,8,16,22,19,13,1,6
-; Formula: a(n) = (2*2^(n+1))%A000720(n+1)
 
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+lpb $0
+  mov $3,$0
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,1
+  add $2,$3
+lpe
 mul $1,2
-mod $1,$0
+mod $1,$2
 mov $0,$1

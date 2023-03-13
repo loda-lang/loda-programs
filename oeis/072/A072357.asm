@@ -20,9 +20,7 @@ lpb $2
   sub $5,$4
   mul $5,2
   mov $3,$5
-  sub $3,4
-  div $3,2
-  add $3,2
+  sub $3,2
   cmp $3,2
   sub $0,$3
   add $1,1

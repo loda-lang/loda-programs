@@ -6,7 +6,14 @@ add $0,1
 lpb $0
   pow $0,2
   trn $0,2
-  seq $0,336551 ; a(n) = A003557(n) - 1.
+  mov $3,$0
+  add $3,1
+  seq $0,73353 ; Sum of n and its squarefree kernel.
+  mov $2,$0
+  gcd $2,$3
+  mov $0,$3
+  div $0,$2
+  sub $0,1
   mov $1,$0
   mov $0,1
 lpe

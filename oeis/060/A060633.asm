@@ -12,10 +12,9 @@ lpe
 sub $4,1
 pow $4,2
 add $3,$4
+mov $5,30
+mul $5,$2
 mov $1,$3
-lpb $2
-  sub $2,1
-  add $1,30
-lpe
+add $1,$5
 mov $0,$1
 add $0,12

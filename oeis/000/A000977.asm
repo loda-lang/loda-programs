@@ -10,7 +10,7 @@ mul $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,87893 ; Number of numbers m satisfying 1 < m < n such that m^2 == m (mod n).
+  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   trn $3,4
   add $3,$4
   cmp $3,1

@@ -1,9 +1,19 @@
 ; A075918: Fifth column of triangle A075501.
 ; Submitted by Jamie Morken(w3)
 ; 1,90,5040,226800,9008496,330674400,11511434880,386143718400,12611398415616,403864019919360,12744269679697920,397694704355020800,12304809943691636736,378212825199337758720,11565710925825703772160
-; Formula: a(n) = A000481(n)*6^n
 
 mov $1,6
 pow $1,$0
-seq $0,481 ; Stirling numbers of the second kind, S(n,5).
+mov $2,1
+mov $4,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  seq $0,453 ; Stirling numbers of the second kind, S(n,4).
+  mul $2,5
+  add $2,$0
+lpe
+mov $0,$2
 mul $0,$1

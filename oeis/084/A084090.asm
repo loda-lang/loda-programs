@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,91964 ; Number of left factors of peakless Motzkin paths of length n.
+  add $3,1
+  seq $3,78678 ; Number of binary strings with n 1's and n 0's avoiding zigzags, that is avoiding the substrings 101 and 010.
+  div $3,2
   add $3,1
   sub $3,$4
   gcd $3,2

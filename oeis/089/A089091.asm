@@ -1,7 +1,17 @@
 ; A089091: a(n) is the smallest composite number coprime to n and n+1.
 ; Submitted by Christian Krause
 ; 9,25,25,9,49,25,9,25,49,9,25,25,9,121,49,9,25,25,9,121,25,9,25,49,9,25,25,9,49,49,9,25,25,9,121,25,9,25,49,9,25,25,9,49,49,9,25,25,9,49,25,9,25,49,9,25,25,9,49,49,9,25,25,9,49,25,9,25,121,9,25,25,9,49,49,9,25,25
-; Formula: a(n) = A053670(n)^2
 
-seq $0,53670 ; Least number coprime to n and n+1.
+mov $1,2
+add $0,2
+bin $0,2
+pow $0,10
+lpb $0
+  mul $0,2
+  add $1,4
+  dif $0,$1
+lpe
+mov $0,$1
+div $0,2
+add $0,2
 pow $0,2

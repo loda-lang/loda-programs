@@ -1,34 +1,22 @@
 ; A015322: Inverse of 1313th cyclotomic polynomial.
-; Submitted by jmorken
+; Submitted by Raimund Barbeln
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-add $0,1
-mov $3,$0
-mul $3,2
-lpb $3
-  mul $1,$5
-  mul $1,$3
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  sub $2,1
-  mul $2,$5
-  add $1,$2
-  div $1,$0
-  mul $1,2
-  div $2,$0
-  sub $3,1
+mov $1,3
+mov $2,7
+add $0,18
+mul $0,2
+lpb $0
+  sub $0,1
+  sub $1,4
+  add $2,3
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
 lpe
-bin $2,2
-mul $2,3
-pow $1,2
-sub $1,$2
-mov $4,10
-pow $4,$0
-add $2,$1
-div $2,$4
-div $1,$2
-add $1,3
-sub $4,$1
+add $4,$3
+mul $3,$1
+gcd $3,$1
+div $4,$3
 mov $0,$4
-add $0,3
+add $0,1

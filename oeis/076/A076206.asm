@@ -7,7 +7,8 @@ add $0,1
 add $2,2
 pow $2,3
 lpb $2
-  seq $4,177274 ; Periodic sequence: Repeat 1, 2, 3, 4, 5, 6, 7, 8, 9.
+  mod $4,9
+  add $4,1
   mov $3,$1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,$4
