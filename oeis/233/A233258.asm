@@ -4,8 +4,24 @@
 
 mov $1,8
 pow $1,$0
-seq $0,233156 ; Number of 3 X n 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally or antidiagonally.
-add $0,6
+mov $2,7
+mov $3,20
+mov $4,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  add $3,$4
+  sub $2,$3
+  max $2,2
+  sub $2,$3
+  mul $2,-1
+  add $3,$2
+  mul $2,2
+  add $4,$3
+lpe
+mov $0,$2
+mul $0,3
+add $0,12
 mul $0,$1
 dif $0,2
 div $0,3

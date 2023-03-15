@@ -10,5 +10,10 @@ mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
-seq $1,138230 ; Expansion of (1-x)/(1 - 2*x + 4*x^2).
-mul $0,$1
+mov $4,$1
+pow $4,2
+mod $4,3
+sub $1,$4
+mov $3,-2
+pow $3,$1
+mul $0,$3

@@ -13,8 +13,7 @@ lpb $0
   lpe
   div $0,2
   lpb $3
-    mul $3,2
-    div $3,10
+    div $3,5
     add $1,$0
   lpe
   add $1,1

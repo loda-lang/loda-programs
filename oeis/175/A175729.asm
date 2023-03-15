@@ -10,7 +10,12 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,238525 ; n modulo sopfr(n), where sopfr(n) is the sum of the prime factors of n, with multiplicity.
+  add $3,1
+  mov $4,$3
+  seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
+  add $4,1
+  mod $4,$3
+  mov $3,$4
   mul $3,2
   cmp $3,2
   sub $0,$3

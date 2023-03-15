@@ -9,7 +9,23 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,171588 ; The Pell word: Fixed point of the morphism 0->001, 1->0.
+  mov $4,$0
+  add $4,1
+  seq $4,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $4,4
+  sub $4,1
+  seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $0,4
+  mov $5,0
+  sub $5,$0
+  sub $5,$0
+  sub $5,$0
+  add $5,$4
+  mov $0,$5
+  sub $0,1
+  mod $0,2
+  add $0,2
+  mod $0,2
   add $0,1
   add $2,$0
 lpe

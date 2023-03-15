@@ -6,4 +6,10 @@ add $0,2
 bin $0,2
 mul $0,2
 sub $0,1
-seq $0,46523 ; Smallest number with same prime signature as n.
+mov $1,2
+lpb $1
+  sub $1,1
+  add $0,$1
+  sub $0,1
+  seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+lpe

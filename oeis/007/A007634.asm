@@ -10,7 +10,8 @@ pow $2,4
 lpb $2
   max $3,$4
   add $3,25
-  seq $3,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  cmp $3,0
   sub $0,$3
   add $1,2
   sub $2,$0

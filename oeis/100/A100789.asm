@@ -10,8 +10,20 @@ lpb $3
   mul $1,$2
   sub $1,1
   mov $2,$0
-  seq $2,543 ; Number of inequivalent ways to color vertices of a cube using at most n colors.
+  pow $2,2
+  mov $4,0
+  sub $4,$2
+  mov $5,$2
+  bin $5,2
+  add $2,$5
+  mul $2,2
+  add $5,9
+  mul $2,$5
+  div $2,6
+  add $4,$2
+  div $4,2
   add $0,2
+  mov $2,$4
 lpe
 add $2,$1
 mov $0,$2

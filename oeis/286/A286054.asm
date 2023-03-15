@@ -5,7 +5,26 @@
 add $0,1
 mov $2,$0
 div $0,2
-seq $0,284393 ; Positions of 1 in A284391; complement of A284392.
+mov $4,$0
+mov $6,10
+mov $7,1
+lpb $0
+  sub $0,1
+  add $8,$7
+  add $8,2
+  sub $5,$6
+  div $5,2
+  mov $7,1
+  add $7,$5
+  gcd $7,4
+  div $5,$7
+  mul $6,4
+lpe
+mov $0,$8
+div $0,3
+mul $0,2
+add $0,1
+sub $0,$4
 mul $0,-1
 sub $2,$0
 mov $3,$2

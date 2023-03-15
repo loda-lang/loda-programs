@@ -6,8 +6,14 @@ mov $2,$0
 add $2,3
 pow $2,4
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,359593 ; Multiplicative with a(p^e) = 1 if p divides e, p^e otherwise.
+  seq $3,342001 ; Arithmetic derivative without its inherited divisor; the arithmetic derivative of n divided by A003557(n), which is a common divisor of both n and A003415(n).
+  mov $4,$3
+  gcd $4,$5
+  div $5,$4
+  mov $3,$5
   sub $3,$1
   max $3,0
   cmp $3,0

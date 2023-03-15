@@ -8,7 +8,11 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,6
-  seq $0,187324 ; a(n) = floor(n/2) + floor(n/3) - floor(n/4).
+  mov $6,$0
+  div $6,3
+  add $0,2
+  div $0,4
+  add $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -1,10 +1,12 @@
 ; A318059: a(n) is the numerator of sigma(sigma(n))/n.
 ; Submitted by Jamie Morken(w2)
 ; 1,2,7,2,12,14,15,3,14,39,28,14,24,30,4,2,39,28,42,24,3,91,60,7,32,48,10,30,72,13,63,13,124,60,124,28,60,84,40,117,96,6,84,56,56,195,124,14,80,64,65,171,120,20,39,45,62,117,168,8,96,126,10,2,224,403,126,78,84,403,195,14,114,120,224,84,36,80,186,24,133,156,224,6,56,168,120,273,234,91,248,120,85,403,72,91,171,130,392,64
-; Formula: a(n) = A051027(n)/gcd(n+1,A051027(n))
+; Formula: a(n) = A000203(A000203(n)-1)/gcd(n+1,A000203(A000203(n)-1))
 
 mov $1,$0
-seq $1,51027 ; a(n) = sigma(sigma(n)) = sum of the divisors of the sum of the divisors of n.
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $1,1
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 add $0,1
 gcd $0,$1
 div $1,$0

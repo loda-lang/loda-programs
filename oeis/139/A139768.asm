@@ -7,13 +7,17 @@ add $2,8
 pow $2,4
 lpb $2
   sub $2,15
-  mov $3,$1
-  seq $3,94996 ; a(n) = floor(10^n/9^n).
-  mov $5,$3
+  mov $5,3
+  pow $5,$1
+  mov $6,10
+  pow $6,$1
+  div $6,$5
+  div $6,$5
+  mov $3,$6
   mul $3,2
   gcd $3,4
   add $3,1
-  gcd $3,$5
+  gcd $3,$6
   cmp $3,5
   sub $0,$3
   add $1,1

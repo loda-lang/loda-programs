@@ -7,8 +7,13 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,56737 ; Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
-  add $3,3
+  seq $3,33677 ; Smallest divisor of n >= sqrt(n).
+  mov $6,$1
+  div $6,$3
+  sub $6,$3
+  mov $5,0
+  sub $5,$6
+  mov $3,$5
   gcd $3,2
   sub $0,$3
   add $0,1

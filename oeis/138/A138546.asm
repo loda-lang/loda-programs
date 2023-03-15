@@ -6,6 +6,27 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,136045 ; Bisection of A138546.
+mov $2,$0
+mul $0,2
+bin $0,$2
+mov $5,$2
+mov $7,$2
+lpb $7
+  mov $2,$7
+  add $2,1
+  mov $3,$5
+  bin $3,$7
+  pow $3,2
+  mov $4,$7
+  add $4,$7
+  bin $4,$7
+  sub $7,1
+  mul $3,$4
+  div $3,$2
+  add $6,$3
+lpe
+mov $2,$6
+add $2,1
+mul $0,$2
 mul $0,$1
 div $0,2

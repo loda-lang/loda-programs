@@ -8,6 +8,6 @@ lpb $0
   sub $0,6
 lpe
 seq $0,115281 ; Correlation triangle for the sequence 2-0^n.
-mul $0,63
-div $0,28
+mul $0,9
+div $0,4
 sub $0,1

@@ -1,12 +1,12 @@
 ; A107279: a(n) = 1 if n is an odd prime, a(n) = 2 if n is a nonzero even number, otherwise a(n) = 0.
 ; 0,0,2,1,2,1,2,1,2,0,2,1,2,1,2,0,2,1,2,1,2,0,2,1,2,0,2,0,2,1,2,1,2,0,2,0,2,1,2,0,2,1,2,1,2,0,2,1,2,0,2,0,2,1,2,0,2,0,2,1,2,1,2,0,2,0,2,1,2,0,2,1,2,1,2,0,2,0,2,1,2,0,2,1,2,0,2,0,2,1,2,0,2,0,2,0,2,1,2,0
-; Formula: a(n) = binomial((n-1)%2,A005171(max(n-1,0)))-(-(((n-1)%2)^2))
 
 sub $0,1
 mov $3,$0
 mod $3,2
 max $0,0
-seq $0,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+cmp $0,0
 mov $1,$3
 bin $1,$0
 mov $2,$3

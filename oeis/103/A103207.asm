@@ -5,7 +5,11 @@
 mov $1,2
 mov $2,$0
 lpb $2
-  seq $2,123072 ; Bishops on an 8n+1 X 8n+1 board (see Robinson paper for details).
+  seq $2,151817 ; a(n) = 2*(2*n)!/n!.
+  pow $2,2
+  sub $2,4
+  div $2,8
+  add $2,1
   sub $0,1
   mul $1,$2
   mov $2,$0

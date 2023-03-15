@@ -8,8 +8,17 @@ lpb $0
   add $3,1
   mov $4,$2
   mov $2,$1
+  mov $7,2
+  trn $7,$3
+  add $7,6
   mov $1,$3
-  seq $1,10125 ; Continued fraction for sqrt(21).
+  gcd $1,$7
+  sub $1,3
+  mov $6,3
+  pow $6,$1
+  mov $1,$6
+  add $1,1
+  mod $1,10
   mov $5,$1
   mul $5,2
   div $1,4

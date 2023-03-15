@@ -14,7 +14,12 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,252748 ; a(n) = A003961(n) - 2*n.
+  mov $5,$0
+  mov $6,$0
+  seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  sub $0,2
+  sub $0,$6
+  sub $0,$5
   max $0,0
   mod $0,2
   mul $1,$0

@@ -8,7 +8,9 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,250069 ; a(n) = n^2 mod gpf(n^2 + 1) where gpf(k) is the greatest prime dividing k.
+  add $3,1
+  pow $3,2
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,$1
   max $3,0
   cmp $3,0

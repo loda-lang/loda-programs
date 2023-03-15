@@ -10,7 +10,11 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,340492 ; a(n) = A000041(n)*A000070(n-1), n >= 1.
+  mov $6,$4
+  seq $6,70 ; a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
+  add $4,1
+  seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $4,$6
   mov $2,$5
   mul $2,$4
   add $1,$2

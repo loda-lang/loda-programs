@@ -6,6 +6,8 @@ mov $1,$0
 mov $0,1
 lpb $1
   sub $1,1
-  seq $0,222312 ; a(n) = n + A001222(n) - 1.
+  mov $2,$0
+  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  add $0,$2
 lpe
 add $0,1

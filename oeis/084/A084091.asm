@@ -4,4 +4,7 @@
 lpb $0
   dif $0,4
 lpe
-seq $0,134667 ; Period 6: repeat [0, 1, 0, 0, 0, -1].
+add $0,3
+dif $0,-2
+mod $0,3
+bin $0,-2

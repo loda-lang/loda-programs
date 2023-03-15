@@ -1,12 +1,15 @@
 ; A297046: Number of pieces in the list d(m), d(m-1), ..., d(0) of base-60 digits of n; see Comments.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Astraeus
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-lpb $0
-  mov $1,$0
-  add $1,$0
-  add $1,3
-  sub $0,59
+sub $0,55
+mov $3,4
+sub $3,$0
+lpb $3
+  cmp $1,0
+  add $2,$1
+  mod $3,$2
 lpe
-mov $0,$1
+mov $0,$2
+add $0,1
 mod $0,2

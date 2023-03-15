@@ -7,7 +7,16 @@ add $0,3
 mov $1,2
 mov $2,$0
 lpb $2
-  seq $2,122458 ; "Dropping time" of the reduced Collatz iteration starting with 2n+1.
+  mul $2,2
+  seq $2,102419 ; "Dropping time" in 3x+1 problem starting at n (number of steps to reach a lower number than starting value); a(1) = 0 by convention. Also called glide(n).
+  mov $4,$2
+  div $4,8
+  add $4,$2
+  div $4,7
+  mov $3,$2
+  add $3,$4
+  mov $2,$3
+  div $2,3
   sub $0,1
   mul $1,$2
   mov $2,$0

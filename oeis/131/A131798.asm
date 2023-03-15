@@ -9,8 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  seq $0,111150 ; a(n) is the number of integers of the form (n+k)/|(n-k)| for k>0.
+  div $0,2
   sub $0,1
-  seq $0,86327 ; Number of factors over Q in the factorization of the Chebyshev polynomial of the second kind U_n(x).
   sub $0,$1
   trn $0,-1
   add $1,$0

@@ -4,5 +4,13 @@
 
 mov $1,$0
 cmp $1,4
+mov $3,3
 add $0,$1
-seq $0,193832 ; Irregular triangle read by rows in which row n lists 2n-1 copies of 2n-1 and n copies of 2n, for n >= 1.
+add $0,3
+lpb $0
+  sub $0,$3
+  add $2,1
+  mov $3,$2
+  dif $3,2
+lpe
+mov $0,$2

@@ -7,7 +7,8 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,184795 ; Numbers m such that prime(m) is of the form floor(k*s), where s=(3+sqrt(5))/2; complement of A184793.
+  seq $3,95281 ; Upper Wythoff primes, i.e., primes in A001950.
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
   sub $3,1
   add $0,1
   add $1,1

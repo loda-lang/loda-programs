@@ -3,7 +3,10 @@
 ; 1,2,3,3,4,4,4,4,4,4,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,5,6,5,5,6,5,5,6,6,6,6,6,5,6,6,6,6,6,5,6,6,6,6,6,6,6,6,6,6,6,6,7,6,6,6,6,6,7,6,6,6,6,6,7,6,6,6,6,6,7,6,6,7,6,6,6,6,6,6,7,6,6,6,6,6,6,6,7,6,6,6
 
 lpb $0
-  seq $0,57022 ; a(n) = floor((sum of divisors of n) / (number of divisors of n)), or floor(sigma_1(n)/sigma_0(n)).
+  mov $2,$0
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  div $0,$2
   sub $0,1
   add $1,1
 lpe

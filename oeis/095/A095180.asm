@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,4087 ; Primes written backwards.
+  seq $3,40 ; The prime numbers.
+  seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -7,7 +7,12 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,195735 ; 2*sigma(n^2) - sigma(n)^2.
+  seq $3,65764 ; Sum of divisors of square numbers.
+  mul $3,2
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  pow $5,2
+  sub $3,$5
   mul $3,-4
   trn $3,3
   min $3,1

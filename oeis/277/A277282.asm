@@ -13,7 +13,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,162514 ; Triangle of coefficients of polynomials defined by the Binet form P(n,x) = U^n + L^n, where U = (x + d)/2, L = (x - d)/2, d = (4 + x^2)^(1/2). Decreasing powers of x.
+  seq $0,114525 ; Triangle of coefficients of the Lucas (w-)polynomials.
   trn $1,$0
   add $1,$0
 lpe

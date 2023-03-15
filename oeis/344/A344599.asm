@@ -9,8 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
-  seq $0,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
+  bin $0,2
+  mul $0,36
+  add $0,6
   add $3,$0
 lpe
 mov $0,$3

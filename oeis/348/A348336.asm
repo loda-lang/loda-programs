@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,348327 ; Characteristic function of numbers that have no middle divisors.
+  seq $2,67742 ; Number of middle divisors of n, i.e., divisors in the half-open interval [sqrt(n/2), sqrt(n*2)).
+  cmp $2,0
   sub $0,1
   add $1,$2
 lpe

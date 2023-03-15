@@ -1,7 +1,24 @@
 ; A138826: Concatenation of 2n-1 digits 1, n digits 0 and 2n-1 digits 1.
 ; Submitted by pututu
 ; 101,11100111,1111100011111,111111100001111111,11111111100000111111111,1111111111100000011111111111,111111111111100000001111111111111,11111111111111100000000111111111111111
-; Formula: a(n) = A007088(A147540(n))
 
-seq $0,147540 ; Numbers whose binary representation is the concatenation of 2n-1 digits 1, n digits 0 and 2n-1 digits 1.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+add $0,1
+mov $1,8
+pow $1,$0
+add $1,2
+mov $2,4
+pow $2,$0
+sub $2,2
+mul $1,$2
+mov $4,1
+mov $0,$1
+div $0,4
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

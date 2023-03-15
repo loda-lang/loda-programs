@@ -7,8 +7,15 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,83245 ; Difference between numbers of related and numbers of unrelated numbers belonging to n: a(n) = A073757(n)-A045763(n) = (n-u(n))-u(n) = n-2*A045763(n) = 2*A073757(n)-n.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $5,$3
+  mov $3,$5
+  mul $3,2
+  sub $3,3
+  sub $3,$1
   mul $3,-4
   trn $3,3
   min $3,1

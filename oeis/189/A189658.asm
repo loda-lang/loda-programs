@@ -6,8 +6,10 @@ mov $4,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,244042 ; In ternary representation of n, replace 2's with 0's.
   mov $3,$1
-  seq $3,300222 ; In ternary (base-3) representation of n, replace 1's with 0's.
+  sub $3,$5
   div $3,2
   gcd $3,2
   sub $0,$3

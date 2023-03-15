@@ -8,7 +8,8 @@ add $2,2
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,284557 ; a(n) = A048727(n) mod 3.
+  seq $3,48727 ; a(n) = Xmult(n,7) or rule150(n,1).
+  mod $3,3
   add $3,$4
   div $3,2
   gcd $3,2

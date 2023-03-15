@@ -6,9 +6,15 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,4216 ; a(n) = floor(log_10(n)).
+  add $6,1
+  mov $7,10
+  pow $7,$6
   mov $3,$1
-  seq $3,261618 ; Concatenation of n, n+1 and n.
-  sub $3,1
+  seq $3,1704 ; a(n) = n concatenated with n + 1.
+  mul $3,$7
+  add $3,$1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,104588 ; Product of primes less than or equal to sqrt(n).
+  add $5,1
+  seq $5,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  seq $5,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
   mov $3,$1
   add $3,$5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

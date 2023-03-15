@@ -4,6 +4,18 @@
 
 mov $1,$0
 pow $1,4
-seq $0,212565 ; Number of (w,x,y,z) with all terms in {1,...,n} and w+x>=2y+2z.
-sub $1,$0
+mov $6,$0
+lpb $6
+  sub $6,1
+  mov $0,$4
+  sub $0,$6
+  mov $2,$0
+  max $0,1
+  mov $3,$4
+  mul $3,$0
+  mul $2,$3
+  add $4,1
+  add $5,$2
+lpe
+sub $1,$5
 mov $0,$1

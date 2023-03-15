@@ -15,7 +15,11 @@ lpb $4
   bin $1,$0
   mul $1,$0
   sub $0,1
-  seq $0,17665 ; Numerator of sum of reciprocals of divisors of n.
+  mov $5,$0
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $5,1
+  gcd $5,$0
+  dif $0,$5
   mul $0,$3
   mul $1,$0
   max $3,$1

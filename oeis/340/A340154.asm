@@ -7,7 +7,11 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,326045 ; a(n) is the sum of divisors of n, minus the largest square dividing that sum, minus n: a(n) = sigma(n) - A008833(sigma(n)) - n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,326055 ; a(n) = n - {the largest square that divides n}.
+  sub $3,1
+  sub $3,$1
   cmp $3,0
   sub $0,$3
   sub $1,$4

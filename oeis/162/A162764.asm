@@ -4,7 +4,10 @@
 
 lpb $0
   mov $1,$0
-  seq $1,187394 ; a(n) = floor(s*n), where s = 4 - sqrt(8); complement of A187393.
+  mul $1,6
+  add $1,41
+  div $1,35
+  add $1,$0
   add $2,$1
   sub $0,9
 lpe

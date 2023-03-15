@@ -22,6 +22,5 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
-mul $0,2
-div $0,12
+div $0,6
 add $0,1

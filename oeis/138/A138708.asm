@@ -8,8 +8,12 @@ pow $2,2
 lpb $2
   mov $5,1
   add $5,$1
+  mov $6,1
+  add $6,$1
+  seq $6,51801 ; Product of the nonzero digits of n.
   mov $3,$1
-  seq $3,63543 ; a(n) = n - product of nonzero digits of n.
+  add $3,1
+  sub $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

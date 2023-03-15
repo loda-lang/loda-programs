@@ -1,13 +1,14 @@
 ; A178334: Number of mountain numbers <= n.
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = ((A187739(A327181(n))-2)/2-8)%10
 
-seq $0,327181 ; Positions of 0's in {A327180(n) : n > 0}.
-seq $0,187739 ; G.f.: Sum_{n>=0} (3*n+2)^n * x^n / (1 + (3*n+2)*x)^n.
-sub $0,2
-mov $1,$0
-div $1,2
+mov $2,$0
+seq $0,216765 ; Perfect powers (squares, cubes, etc.) plus 1.
+add $1,$0
+lpb $2
+  trn $2,2
+  mov $1,0
+lpe
 mov $0,$1
-sub $0,8
-mod $0,10
+add $0,1
+mod $0,2

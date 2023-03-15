@@ -1,6 +1,7 @@
 ; A157616: On an n X n board, a(n) is the maximal number of squares covered by a self-avoiding path that starts from a corner and is made of alternated vertical and horizontal unitary steps.
 ; Submitted by Jon Maiga
 ; 1,4,6,14,18,32,38,58,66,92,102,134
+; Formula: a(n) = (2*n+1)*((n+1)/2)-max((n+1)/2-1,0)+1
 
 mov $1,1
 add $1,$0

@@ -7,8 +7,14 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,6
+  mov $5,$1
+  seq $5,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $5,3
+  mul $5,2
+  add $5,1
   mov $3,$1
-  seq $3,72695 ; a(n) = lcm(d(n^2),d(n)), where d(n) = A000005, the number of divisors of n.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $3,$5
   mod $3,6
   dif $3,2
   gcd $3,4

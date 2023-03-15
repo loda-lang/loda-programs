@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,56979 ; Number of blocks of {1, 0, 1} in binary expansion of n.
+  mul $3,4
+  add $3,3
+  seq $3,290260 ; a(n) = number of isolated 0's in the binary representation of n.
   min $3,1
   sub $0,1
   add $1,1

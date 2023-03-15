@@ -5,7 +5,15 @@
 div $0,2
 lpb $0
   mov $2,$0
-  seq $2,112448 ; a(n) = 1 if 2*n+1 is prime, otherwise a(n) = minimal residue of (-1)^binomial(n+2,2) mod (2n+1).
+  mul $2,2
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $3,$0
+  add $3,22
+  div $3,2
+  mod $3,2
+  mul $3,$2
+  mul $3,2
+  sub $2,$3
   sub $0,1
   add $1,$2
 lpe

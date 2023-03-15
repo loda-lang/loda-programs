@@ -6,8 +6,11 @@ mov $2,2
 add $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  seq $3,62355 ; a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $3,$5
   sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,2

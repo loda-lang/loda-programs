@@ -4,7 +4,6 @@
 
 mov $2,$0
 add $2,1
-mov $3,1
 mov $4,$0
 lpb $4
   sub $4,1
@@ -13,10 +12,13 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  dif $0,2
-  sub $0,1
-  seq $0,108784 ; Difference between A107757 and A107755.
+  mul $0,$1
+  seq $0,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mod $0,2
+  mul $0,2
+  sub $0,$1
   mul $1,$0
   add $3,$1
 lpe
 mov $0,$3
+add $0,1

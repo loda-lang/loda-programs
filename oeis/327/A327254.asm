@@ -7,7 +7,10 @@ mov $2,$0
 mul $2,3
 lpb $2
   mov $3,$1
-  seq $3,327253 ; a(n) = floor(2*n*r) - 2*floor(n*r), where r = sqrt(6).
+  mul $3,2
+  sub $3,1
+  seq $3,22840 ; Beatty sequence for sqrt(6).
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

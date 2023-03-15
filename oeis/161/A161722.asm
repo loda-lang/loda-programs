@@ -5,6 +5,35 @@
 mov $1,$0
 mul $0,2
 trn $0,1
-seq $0,188458 ; Expansion of e.g.f. exp(x)/cosh(2*x).
+mov $2,$0
+mov $3,2
+pow $3,$0
+mov $7,$0
+add $0,1
+lpb $0
+  sub $0,1
+  div $9,2
+  add $9,$5
+  mul $9,2
+  add $10,3
+  mov $5,$4
+  add $5,$10
+  pow $5,$7
+  sub $5,$9
+  mov $6,$7
+  bin $6,$4
+  mul $6,$5
+  add $4,1
+  mul $8,-1
+  add $8,$6
+lpe
+gcd $8,$0
+mov $0,$8
+div $0,$3
+div $2,2
+mod $2,2
+mul $2,$0
+mul $2,2
+sub $0,$2
 mul $0,$1
 mul $0,2
