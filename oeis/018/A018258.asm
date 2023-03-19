@@ -1,8 +1,15 @@
 ; A018258: Divisors of 42.
-; Submitted by Dingo
+; Submitted by Matt
 ; 1,2,3,6,7,14,21,42
-; Formula: a(n) = A245479(n)
 
-mov $1,$0
-seq $1,245479 ; Numbers n such that the n-th cyclotomic polynomial has a root mod 7.
-mov $0,$1
+mov $2,2
+mov $3,1
+lpb $0
+  sub $0,1
+  dif $2,2
+  add $2,$3
+  mov $1,$2
+  dif $2,6
+  mov $3,$1
+lpe
+mov $0,$3

@@ -1,4 +1,4 @@
-; A295905: Number of (not necessarily maximum) cliques in the n X n knight graph.
+; A295905: Number of (not necessarily maximal) cliques in the n X n knight graph.
 ; 2,5,18,41,74,117,170,233,306,389,482,585,698,821,954,1097,1250,1413,1586,1769,1962,2165,2378,2601,2834,3077,3330,3593,3866,4149,4442,4745,5058,5381,5714,6057,6410,6773,7146,7529,7922,8325,8738,9161,9594,10037,10490,10953
 ; Formula: a(n) = n*(5*n-2)+2
 

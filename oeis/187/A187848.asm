@@ -12,8 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  add $0,2
-  seq $0,3319 ; Number of connected permutations of [1..n] (those not fixing [1..j] for 0 < j < n). Also called indecomposable permutations, or irreducible permutations.
+  add $0,1
+  seq $0,233824 ; A recurrent sequence in Panaitopol's formula for pi(x), where pi(x) is the number of primes <= x.
   mul $1,$0
   add $3,$1
 lpe

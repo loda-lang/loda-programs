@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,85975 ; Number of 1's in decimal expansion of prime(n).
+  seq $3,40 ; The prime numbers.
+  seq $3,268643 ; Number of 1's in decimal representation of n.
   cmp $3,0
   sub $0,$3
   add $1,1

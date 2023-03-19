@@ -13,7 +13,12 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,353566 ; a(n) = 1 if n is a multiple of its prime shadow A181819(n), and 0 otherwise.
+  mov $5,$0
+  add $5,1
+  seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  mov $6,$0
+  gcd $6,$5
+  cmp $0,$6
   mul $1,$0
   add $3,$1
 lpe

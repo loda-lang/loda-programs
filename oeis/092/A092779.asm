@@ -4,7 +4,13 @@
 
 mul $0,2
 div $0,3
-seq $0,47479 ; Numbers that are congruent to {0, 1, 5, 7} mod 8.
+add $0,2
+mov $2,$0
+mod $2,4
+sub $2,1
+sub $2,$0
+sub $0,$2
+sub $0,3
 mov $1,$0
 lpb $1
   div $0,2

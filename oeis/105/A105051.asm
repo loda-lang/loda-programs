@@ -1,12 +1,23 @@
-; A105051: Define a(1)=0, a(2)=0, a(3)=15, a(4)=111 then a(n)=254*a(n-2)+126-a(n-4) also sequence such that 7*(a(n)^2) + 7*a(n) + 1 = a square.
+; A105051: Define a(1)=0, a(2)=0, a(3)=15, a(4)=111 then a(n) = 254*a(n-2) - a(n-4) + 126 also sequence such that 7*a(n)*(a(n) + 1) + 1 = a square.
 ; Submitted by Simon Strandgaard
 ; 0,0,15,111,3936,28320,999855,7193295,253959360,1827068736,64504677711,464068265775,16383934179360,117871512438240,4161454776879855,29938900091047311,1056993129393303936,7604362751613578880
-; Formula: a(n) = A202638(max(n-1,0)%2+2*max(n-1,0))/2
 
-trn $0,1
+sub $0,1
 mov $1,$0
 mod $1,2
+mov $4,1
 mul $0,2
 add $0,$1
-seq $0,202638 ; y-values in the solution to x^2 - 7*y^2 = -3.
+lpb $0
+  sub $0,1
+  add $3,$4
+  mov $2,$3
+  dif $3,3
+  mod $3,$2
+  mul $3,9
+  add $4,$2
+  add $4,$3
+  mov $3,$2
+lpe
+mov $0,$4
 div $0,2

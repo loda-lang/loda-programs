@@ -1,4 +1,4 @@
-; A045303: Numbers n with property that in base 5 representation the numbers of 3's and 4's are 2 and 3, respectively.
+; A045303: Numbers whose base-5 representation contains exactly two 3's and three 4's.
 ; Submitted by ChelseaOilman
 ; 2374,2474,2494,2498,2974,2994,2998,3094,3098,3118,5499,5599,5619,5623,6099,6119,6123,6219,6223,6243,8624,8724,8744,8748,9224,9244,9248,9344,9348,9368,9874,9974,9994,9998,10499,10599
 
@@ -15,8 +15,7 @@ lpb $2
     mod $5,10
     sub $5,1
     trn $5,4
-    mul $3,2
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4

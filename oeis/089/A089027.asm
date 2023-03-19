@@ -1,9 +1,22 @@
 ; A089027: a(n) =1 if the prime gap A001223(n) is <=2, otherwise a(n)=n+1.
 ; 1,1,1,5,1,7,1,9,10,1,12,13,1,15,16,17,1,19,20,1,22,23,24,25,26,1,28,1,30,31,32,33,1,35,1,37,38,39,40,41,1,43,1,45,1,47,48,49,1,51,52,1,54,55,56,57,1,59,60,1,62,63,64,1,66,67,68,69,1,71,72,73,74,75,76,77,78,79,80
-; Formula: a(n) = A106002(n)*(n+1)+1
 
 mov $1,$0
 add $1,1
-seq $0,106002 ; a(n)=1 if there is a number of the form 6k+3 such that prime(n) < 6k+3 < prime(n+1), otherwise 0.
+mov $2,2
+mov $4,11
+add $0,1
+mov $3,$0
+pow $3,4
+lpb $3
+  mov $4,$2
+  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,$4
+  add $2,2
+  sub $3,$0
+lpe
+mov $0,$4
+add $0,1
+mod $0,2
 mul $0,$1
 add $0,1

@@ -7,5 +7,17 @@ mov $1,$0
 mod $1,10
 trn $1,1
 min $1,1
-seq $0,130251 ; Partial sums of A130249.
+mov $2,$0
+mov $3,1
+mov $4,1
+add $0,1
+lpb $0
+  sub $0,$3
+  add $2,$0
+  add $5,$3
+  mov $3,$4
+  mul $3,2
+  mov $4,$5
+lpe
+mov $0,$2
 sub $0,$1

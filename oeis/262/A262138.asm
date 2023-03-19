@@ -6,9 +6,15 @@ mov $1,$0
 mov $5,2
 lpb $5
   sub $5,1
+  mov $6,$1
+  div $6,2
   mov $0,$1
-  seq $0,134735 ; Primes followed by the difference from the next prime.
+  sub $0,$6
+  seq $0,40 ; The prime numbers.
+  sub $0,1
   sub $4,$3
+  seq $6,40 ; The prime numbers.
+  mod $0,$6
   add $1,2
   add $2,$4
   mov $3,$2

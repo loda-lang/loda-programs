@@ -9,7 +9,16 @@ lpb $0
   mov $2,$1
   mov $1,$3
   trn $1,$0
-  seq $1,7054 ; Super ballot numbers: 6(2n)!/(n!(n+2)!).
+  mov $4,$1
+  mul $1,2
+  bin $1,$4
+  mul $1,114
+  add $4,2
+  bin $4,2
+  div $1,$4
+  sub $1,76
+  div $1,38
+  add $1,2
   mul $2,$1
   add $3,1
 lpe

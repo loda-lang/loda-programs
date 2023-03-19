@@ -8,12 +8,18 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,234613 ; Self-inverse permutation of nonnegative integers, "gray-blue" code: a(n) = A193231(A003188(n)).
   mov $4,$3
+  mod $4,2
+  div $3,2
+  seq $3,193231 ; Blue code of n: in binary coding of a polynomial over GF(2), substitute x+1 for x.
+  mov $6,$3
+  mul $6,2
+  add $6,$4
   mov $5,$1
   add $5,1
+  mov $3,$6
   gcd $3,$5
-  div $3,$4
+  div $3,$6
   sub $0,$3
   add $1,2
   sub $2,$0

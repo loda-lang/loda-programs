@@ -7,5 +7,15 @@ mov $1,$0
 gcd $1,2
 dif $0,2
 mul $0,2
-seq $0,1644 ; a(n) = a(n-1) + a(n-2) + a(n-3), a(0)=3, a(1)=1, a(2)=3.
+mov $2,1
+mov $3,3
+lpb $0
+  sub $0,1
+  add $2,$4
+  mov $5,$3
+  mov $3,$2
+  mov $2,$4
+  add $4,$5
+lpe
+mov $0,$3
 pow $0,$1

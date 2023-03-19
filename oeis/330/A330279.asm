@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,187730 ; Greatest common divisor of Carmichael lambda(n) and n - 1.
+  seq $3,174824 ; a(n) = period of the sequence {m^m, m >= 1} modulo n.
+  mov $5,$3
+  gcd $5,$1
+  mov $3,$5
   trn $3,2
   min $3,1
   sub $0,$3

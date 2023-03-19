@@ -4,4 +4,4 @@
 ; Formula: a(n) = A178244(A001358(n))
 
 seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
-seq $0,178244 ; Number of distinct transpositions of binary digits (0's and 1's) in n.
+seq $0,178244 ; Number of distinct permutations of binary digits (0's and 1's) in n.

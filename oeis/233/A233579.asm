@@ -8,8 +8,13 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,90629 ; a(n) = abs(numerator of 2n-th Bernoulli number) modulo 3.
-  sub $3,1
+  trn $3,1
+  seq $3,165949 ; a(n) = A027762(n)/A165734(n).
+  add $3,1
+  mod $3,3
+  mov $5,0
+  pow $5,$3
+  mov $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

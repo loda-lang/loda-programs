@@ -6,8 +6,21 @@ mov $1,$0
 cmp $1,0
 add $1,2
 dif $1,2
-add $0,1
-seq $0,283358 ; Decimal representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 621", based on the 5-celled von Neumann neighborhood.
+mov $4,1
+sub $0,1
+lpb $0
+  sub $0,1
+  add $2,$4
+  mov $3,$2
+  add $3,$2
+  add $2,$3
+  sub $2,21
+  mod $2,4
+  mul $4,2
+lpe
+sub $4,$2
+mov $0,$4
+mul $0,4
+sub $0,3
 mul $0,$1
-mul $0,12
-div $0,24
+div $0,2

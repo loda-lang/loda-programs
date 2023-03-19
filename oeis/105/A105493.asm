@@ -10,7 +10,12 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $0,105489 ; Number of partitions of {1...n} containing 3 detached pairs of consecutive integers, i.e., partitions in which only 1- or 2-strings of consecutive integers can appear in a block and there are exactly three 2-strings.
+  mov $5,$0
+  add $0,3
+  bin $0,$5
+  add $5,2
+  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $0,$5
   bin $1,$4
   mul $1,$0
   add $3,$1

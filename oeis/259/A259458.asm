@@ -5,7 +5,14 @@
 mov $1,$0
 add $1,4
 bin $1,2
-seq $0,1806 ; a(n) = n! * binomial(n,4).
+mov $2,$0
+add $0,4
+bin $0,4
+add $2,4
+lpb $2
+  mul $0,$2
+  sub $2,1
+lpe
 mul $0,$1
 div $0,48
 mul $0,6

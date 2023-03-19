@@ -8,8 +8,14 @@ lpb $4
   sub $4,1
   mov $0,$2
   add $0,$4
-  max $0,0
-  seq $0,156037 ; Largest nonprime < n-th prime.
+  mov $5,$0
+  cmp $5,0
+  add $0,$5
+  mov $6,1
+  div $6,$0
+  sub $0,$6
+  seq $0,40 ; The prime numbers.
+  sub $0,1
   seq $0,57627 ; Number of nonsquarefree numbers not exceeding n.
   mov $1,$4
   mul $1,$0

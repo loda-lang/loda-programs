@@ -8,7 +8,8 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,168597 ; Squares of the central trinomial coefficients (A002426).
+  seq $5,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
+  pow $5,2
   sub $0,1
   mov $2,$3
   mul $2,$5

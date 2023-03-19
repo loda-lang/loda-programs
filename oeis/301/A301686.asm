@@ -4,10 +4,10 @@
 
 mov $1,$0
 cmp $2,$0
-mov $3,$0
-mov $4,$3
-mul $4,$3
+mov $4,$0
+mul $4,$0
 mod $4,3
+mov $3,$0
 mul $3,$4
 add $3,46078
 div $3,3

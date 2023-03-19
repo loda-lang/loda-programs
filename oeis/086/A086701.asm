@@ -1,9 +1,15 @@
 ; A086701: n-th prime number raised to the n-th composite number.
 ; Submitted by Jamie Morken(w2)
 ; 16,729,390625,40353607,25937424601,23298085122481,168377826559400929,15181127029874798299,6132610415680998648961,210457284365172120330305161,671790528819082282036142601601,855531895666462872887391390111637,302862043149743582494593171234930481
+; Formula: a(n) = A000040(n)^(A122825(-((-2*n-2)/(n+1))+n+1)-1)
 
 mov $1,$0
 add $1,1
-seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mov $2,$1
+mul $2,-2
+div $2,$1
+sub $1,$2
+seq $1,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+sub $1,1
 seq $0,40 ; The prime numbers.
 pow $0,$1

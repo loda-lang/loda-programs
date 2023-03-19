@@ -6,5 +6,28 @@ mov $1,$0
 cmp $1,0
 mov $2,$0
 add $2,$1
-seq $0,66643 ; a(n) = floor(Pi*n^2).
+mov $4,1
+mov $5,$0
+mul $5,4
+lpb $5
+  mov $7,$5
+  mul $7,2
+  add $7,1
+  mul $4,$7
+  mul $3,$5
+  add $3,$4
+  cmp $6,0
+  mov $7,$0
+  add $7,$0
+  add $7,$6
+  div $3,$7
+  div $4,$7
+  sub $5,1
+lpe
+mul $4,2
+mul $7,$0
+mul $3,$7
+mul $3,2
+div $3,$4
+mov $0,$3
 mod $0,$2

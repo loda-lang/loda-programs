@@ -8,8 +8,21 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,222410 ; Partial sums of A008534, or crystal ball sequence for {A_6}* lattice.
+  sub $0,1
+  mov $6,$0
+  pow $0,2
+  mov $7,2
+  add $7,$0
+  add $7,$6
+  mov $5,$7
+  mul $5,$7
+  add $5,2
+  add $7,1
+  mul $5,$7
+  mov $0,$5
+  div $0,72
+  mul $0,14
+  add $0,1
   mov $2,$3
   mul $2,$0
   add $4,$2

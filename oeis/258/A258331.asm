@@ -23,17 +23,17 @@ lpb $0
     dif $0,$2
     div $4,2
     add $4,1
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $6,$2
+    pow $6,3
+    mul $5,$6
     add $5,1
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $7,$2
+    pow $7,3
+    mul $5,$7
     add $5,1
-    mul $5,$2
-    mul $5,$2
-    mul $5,$2
+    mov $8,$2
+    pow $8,3
+    mul $5,$8
     add $5,$4
   lpe
   mul $1,$5

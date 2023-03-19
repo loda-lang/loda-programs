@@ -4,7 +4,24 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,104163 ; Primes p such that (2p+1)/3 is prime.
+mov $3,$0
+add $3,8
+pow $3,4
+lpb $3
+  mov $2,$6
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $2,$4
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,2
+  sub $0,$2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,17
+  add $6,3
+lpe
+mov $0,$6
 div $0,2
 sub $0,$1
 mul $0,2

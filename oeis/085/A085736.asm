@@ -5,8 +5,19 @@
 mov $2,$0
 lpb $2
   add $0,1
-  seq $1,44692 ; Numbers n such that string 6,6 occurs in the base 9 representation of n but not of n+1.
-  sub $1,1
+  add $1,1
+  mov $3,$1
+  div $1,8
+  add $1,70
+  mov $4,$3
+  mul $4,81
+  add $1,$4
+  mul $1,2
+  div $1,3
+  sub $1,83
+  mul $1,3
+  div $1,2
+  add $1,34
   add $2,$1
   sub $2,$0
 lpe

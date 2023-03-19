@@ -4,5 +4,16 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,16365 ; 253rd cyclotomic polynomial.
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $3,1
+  sub $4,$3
+  mod $4,23
+  pow $4,$4
+  sub $0,7
+  trn $0,4
+  add $2,$4
+lpe
+mov $0,$2
 mul $0,$1

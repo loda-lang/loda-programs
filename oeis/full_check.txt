@@ -218,6 +218,7 @@ A089809: Complement of A078588.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
 A091393: a(n) = Product_{ p | n } (1 + Legendre(-3,p) ).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
+A092486: Take natural numbers, exchange first and third quadrisection.
 A095080: Fibeven primes, i.e., primes p whose Zeckendorf-expansion A014417(p) ends with zero.
 A095098: Fib001 numbers: those k for which the Zeckendorf expansion A014417(k) ends with two zeros and a final one.
 A096299: List of strings in lexicographic order with property that for the 2^(m-1) strings of length m, the first entry is 1, the second distinct entry (reading from left to right) is 2, the third distinct entry is 3, etc.
@@ -484,6 +485,7 @@ A283773: Numbers k such that U(k) = 1 mod 3, where U = A001950 = upper Wythoff s
 A283774: Numbers k such that U(k) == 2 mod 3, where U = A001950 = upper Wythoff sequence.
 A284394: {101->2}-transform of the infinite Fibonacci word A003849.
 A284396: Positions of 2 in A284394.
+A284489: Positions of 1 in A284487; complement of A284488.
 A284491: Positions of 0 in A284490; complement of A284492.
 A284621: Positions of 0 in A284620.
 A284624: Positions of 1 in A284749.
@@ -530,6 +532,7 @@ A290739: a(n) = 0 unless n = 3j^2+2j or 3j^2+4j+1 for some j>=0, in which case a
 A291208: Number of noncube divisors of n.
 A293405: The integer k that minimizes |k/n^2 - tau^2|, where tau = (1+sqrt(5))/2 (golden ratio).
 A293408: The integer k that minimizes |k/n^2 - 1/tau|, where tau = (1+sqrt(5))/2 (golden ratio).
+A293449: Characteristic function for A056166, numbers that have no nonprime exponents present in their prime factorization n = p_1^e_1 * ... * p_k^e_k.
 A293484: The number of 7th powers in the multiplicative group modulo n.
 A293706: a(n) is the shift of the longest palindromic subsequence within the first differences of the concatenation of the first n negative and positive roots of floor(tan(k)) = 1.
 A294926: Number of proper divisors of n that are deficient (A005100).

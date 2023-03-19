@@ -1,4 +1,4 @@
-; A045297: Numbers n with property that in base 5 representation the numbers of 3's and 4's are 1 and 1, respectively.
+; A045297: Numbers whose base-5 representation contains exactly one 3 and one 4.
 ; Submitted by damotbe
 ; 19,23,44,48,69,73,79,84,89,95,96,97,103,108,113,115,116,117,144,148,169,173,194,198,204,209,214,220,221,222,228,233,238,240,241,242,269,273,294,298,319,323,329,334,339,345,346,347
 

@@ -10,7 +10,10 @@ lpb $0
   mov $2,$1
   mov $1,$3
   dif $1,2
-  seq $1,40142 ; Continued fraction for sqrt(155).
+  seq $1,10197 ; Continued fraction for sqrt(138).
+  div $1,2
+  mul $1,2
+  add $1,2
   div $1,2
   mul $1,$2
   add $1,$4

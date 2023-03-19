@@ -8,7 +8,10 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,317934 ; Multiplicative with a(p^n) = 2^A011371(n); denominators for certain "Dirichlet Square Roots" sequences.
+  seq $3,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+  mov $5,2
+  pow $5,$3
+  mov $3,$5
   trn $3,3
   mod $3,2
   sub $0,$3

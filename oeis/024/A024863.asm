@@ -11,7 +11,8 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,66096 ; Duplicate values in A060143.
+  mul $0,55
+  div $0,34
   add $3,$0
   add $4,$3
 lpe

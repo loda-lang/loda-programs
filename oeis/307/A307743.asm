@@ -8,8 +8,14 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  mov $4,$0
+  seq $4,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $4,1
+  mod $4,2
+  seq $0,214606 ; a(n) = gcd(n, 2^n - 2).
   sub $0,1
+  mul $4,$0
+  mov $0,$4
   seq $0,73933 ; Number of terms in n-th row of triangle in A073932.
   sub $0,1
   add $2,$0

@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,110475 ; Number of symbols '*' and '^' to write the canonical prime factorization of n.
+  seq $3,238949 ; Degree of divisor lattice D(n).
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

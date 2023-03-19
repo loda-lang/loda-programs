@@ -7,8 +7,14 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,53001 ; Largest prime < n^2.
+  seq $5,13634 ; a(n) = nextprime(n) + n.
+  div $5,2
   mov $3,$1
-  seq $3,56929 ; Difference between n^2 and average of smallest prime greater than n^2 and largest prime less than n^2.
+  add $3,2
+  pow $3,2
+  sub $3,$5
   mul $3,-4
   trn $3,3
   min $3,1

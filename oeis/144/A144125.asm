@@ -8,10 +8,17 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,144124 ; P_4(2n+1), the Legendre polynomial of order 4 at 2n+1.
+  add $3,1
+  bin $3,2
+  mov $7,7
+  mul $7,$3
+  mov $6,$3
+  mul $6,$7
+  add $3,$6
+  div $3,2
+  mul $3,80
   mov $5,$3
-  sub $5,2
-  sub $3,1
+  sub $5,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3

@@ -1,4 +1,4 @@
-; A084075: Length of list created by n substitutions k -> Range[ -Abs[k+1],Abs[k-1],2] starting with {1}.
+; A084075: Length of list created by n substitutions k -> Range( -abs(k+1), abs(k-1), 2) starting with {1}.
 ; Submitted by Ciceronian
 ; 1,2,5,12,33,86,249,680,2033,5722,17485,50260,156033,455534,1431281,4228752,13412193,40003058,127840085,384232156,1235575201,3737280582,12080678505,36736735672,119276490193,364372758986,1187542872989
 

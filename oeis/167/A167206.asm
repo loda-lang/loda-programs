@@ -12,7 +12,13 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,164555 ; Numerators of the "original" Bernoulli numbers; also the numerators of the Bernoulli polynomials at x=1.
+  max $0,2
+  add $0,1
+  mov $5,$0
+  div $5,2
+  seq $5,367 ; Numerators of Bernoulli numbers B_2n.
+  mod $0,2
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

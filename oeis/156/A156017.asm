@@ -5,7 +5,28 @@
 mov $1,$0
 mov $0,2
 pow $0,$1
-seq $1,238111 ; Twice the large Schroeder numbers A006318.
+mov $2,$1
+mov $7,$1
+add $7,3
+add $1,1
+lpb $1
+  sub $1,1
+  mov $3,$5
+  sub $3,$7
+  bin $3,$1
+  sub $5,1
+  trn $1,1
+  mov $4,$5
+  bin $4,$2
+  add $7,1
+  add $2,1
+  mul $4,$3
+  div $4,$2
+  sub $2,1
+  add $6,$4
+lpe
+mov $1,$6
+mul $1,2
 mul $1,$0
 mov $0,$1
 div $0,2

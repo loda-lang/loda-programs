@@ -1,9 +1,13 @@
 ; A129949: a(n) = n! - binomial(n,3).
 ; Submitted by Jamie Morken(s3.)
 ; 1,1,2,5,20,110,700,5005,40264,362796,3628680,39916635,479001380,6227020514,87178290836,1307674367545,20922789887440,355687428095320,6402373705727184,121645100408831031,2432902008176638860,51090942171709438670,1124000727777607678460
-; Formula: a(n) = -binomial(n,3)+A000142(n)
 
 mov $1,$0
 bin $1,3
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $2,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+lpe
+mov $0,$2
 sub $0,$1

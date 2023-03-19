@@ -5,4 +5,26 @@
 mov $1,$0
 min $1,1
 add $0,$1
-seq $0,45443 ; Primes congruent to {0, 1, 5, 6} mod 7.
+mov $2,2
+mov $3,$0
+add $3,6
+pow $3,3
+lpb $3
+  mov $4,$7
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $2,7
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,18
+  gcd $6,7
+  add $6,$2
+  add $6,$2
+  sub $6,1
+  div $6,5
+  mov $7,$6
+lpe
+mov $0,$7
+add $0,1

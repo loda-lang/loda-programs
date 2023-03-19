@@ -5,5 +5,27 @@
 mov $1,$0
 add $1,1
 pow $1,2
-seq $0,8833 ; Largest square dividing n.
+mov $2,1
+mov $4,1
+mov $5,1
+add $0,1
+mov $3,$0
+lpb $3
+  add $4,2
+  add $5,$4
+  mov $6,$0
+  mod $6,$5
+  cmp $6,0
+  mov $7,$5
+  sub $7,$2
+  mul $7,$6
+  add $2,$7
+  mov $6,$0
+  add $6,1
+  trn $6,$5
+  cmp $6,0
+  cmp $6,0
+  sub $3,$6
+lpe
+mov $0,$2
 mul $0,$1

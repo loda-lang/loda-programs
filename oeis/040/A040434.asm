@@ -1,10 +1,19 @@
 ; A040434: Continued fraction for sqrt(456).
 ; Submitted by Christian Krause
 ; 21,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1,4,1,2,42,2,1
+; Formula: a(n) = gcd(0,(5*((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3-3)/2+1
 
-seq $0,40685 ; Continued fraction for sqrt(712).
-mul $0,10
-div $0,6
+mov $2,-1
+pow $2,$0
+add $2,2
+seq $0,10225 ; Continued fraction for sqrt(183).
+mul $0,$2
+mul $0,2
+sub $0,1
+div $0,3
+add $0,1
+mul $0,5
+div $0,3
 sub $0,3
 gcd $1,$0
 div $1,2

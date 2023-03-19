@@ -1,11 +1,24 @@
 ; A157328: Expansion of 1/(1-2x*c(4x)) with c(x) g.f. of Catalan numbers (A000108).
 ; Submitted by Jon Maiga
 ; 1,2,12,104,1072,12192,147648,1867392,24380160,326105600,4445965312,61555599360,863154221056,12233140576256,174954419109888,2521749245558784,36595543723671552,534249057803698176
-; Formula: a(n) = A064062(n)*2^n
 
 mov $1,$0
 mov $0,2
 pow $0,$1
-seq $1,64062 ; Generalized Catalan numbers C(2; n).
+mov $3,3
+mov $4,$1
+lpb $4
+  sub $4,1
+  mul $3,-4
+  mov $1,$3
+  sub $2,2
+  mul $3,$4
+  div $3,$2
+  add $5,$3
+  sub $3,$1
+lpe
+mov $1,$5
+div $1,3
+add $1,1
 mul $1,$0
 mov $0,$1

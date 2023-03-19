@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,102863 ; a(n)=1 if at least one of the first n primes is a divisor of the sum of the first n primes; otherwise a(n)=0.
+  seq $3,132995 ; a(n) = gcd(sum{k=1...n} p(k), product{j=1...n} p(j)), where p(k) is the k-th prime.
+  sub $3,1
+  mov $5,0
+  pow $5,$3
+  mov $3,$5
+  add $3,1
+  mod $3,2
   add $3,$4
   sub $0,$3
   add $0,1

@@ -7,7 +7,7 @@ mov $1,1
 lpb $0
   sub $0,1
   add $1,1
-  seq $1,184615 ; Positive parts of the nonadjacent forms for n
+  seq $1,184615 ; Positive parts of the nonadjacent forms for n.
 lpe
 mov $0,$1
 mul $0,3

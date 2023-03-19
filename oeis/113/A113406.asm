@@ -1,18 +1,10 @@
 ; A113406: Half the number of integer solutions to x^2 + 4 * y^2 = n.
-; Submitted by Jon Maiga
+; Submitted by vaughan
 ; 1,0,0,2,2,0,0,2,1,0,0,0,2,0,0,2,2,0,0,4,0,0,0,0,3,0,0,0,2,0,0,2,0,0,0,2,2,0,0,4,2,0,0,0,2,0,0,0,1,0,0,4,2,0,0,0,0,0,0,0,2,0,0,2,4,0,0,4,0,0,0,2,2,0,0,0,0,0,0,4,1,0,0,0,4,0,0,0,2,0,0,0,0,0,0,0,2,0,0,6
-; Formula: a(n) = ((-2*max(A129447(A025480(n)),0)*(n%4)+2*max(A129447(A025480(n)),0))/2)*(-1)^n
+; Formula: a(n) = A004531(n+1)/2
 
-mov $1,-1
-pow $1,$0
-mov $2,$0
-seq $2,25480 ; a(2n) = n, a(2n+1) = a(n).
-seq $2,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
-max $2,0
-mul $2,2
-mod $0,4
-mul $0,$2
-sub $2,$0
-mov $0,$2
+add $0,1
+mov $1,$0
+seq $1,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+mov $0,$1
 div $0,2
-mul $0,$1

@@ -9,7 +9,17 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  seq $0,1250 ; Number of alternating permutations of order n.
+  mov $7,3
+  pow $7,$0
+  div $7,6
+  add $7,1
+  mov $6,$7
+  min $6,2
+  mov $8,$0
+  seq $8,122045 ; Euler (or secant) numbers E(n).
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$8
+  mul $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

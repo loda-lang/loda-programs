@@ -5,5 +5,5 @@
 
 mov $1,$0
 seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,132923 ; Triangle by columns, F(n) followed by (F(n)+1), (F(n)+2), (F(n)+3), ...
+seq $0,132923 ; Triangle read by rows: T(n, k) = Fibonacci(k) + n - k.
 mul $0,$1

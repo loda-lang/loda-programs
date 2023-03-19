@@ -7,8 +7,13 @@ mov $2,$0
 pow $2,2
 add $2,6
 lpb $2
+  mov $5,$1
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   mov $3,$1
-  seq $3,269304 ; a(n) = n + n/gpf(n) + 1, where gpf(n) is the greatest prime factor of n or 1 if n = 1.
+  div $3,$5
+  add $3,1
+  add $3,$1
+  add $3,2
   mod $3,3
   div $3,2
   sub $0,$3

@@ -14,7 +14,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,349431 ; Dirichlet convolution of A003602 (Kimberling's paraphrases) with A055615 (Dirichlet inverse of n)
+  seq $0,23900 ; Dirichlet inverse of Euler totient function (A000010).
+  dif $0,2
   mul $1,$0
   add $3,$1
 lpe

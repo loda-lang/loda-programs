@@ -6,8 +6,11 @@ mov $1,$0
 mov $2,$0
 lpb $2
   pow $2,0
+  mov $3,$1
+  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $0,$1
-  seq $0,16035 ; a(n) = Sum_{j|n, 1 < j < n} phi(j). Also a(n) = n - phi(n) - 1 for n > 1.
+  sub $0,$3
+  trn $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $1,0
 lpe

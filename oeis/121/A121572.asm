@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+  add $0,1
+  seq $0,102476 ; Least modulus with 2^n square roots of 1.
+  add $0,1
+  div $0,4
   mul $0,12
   mul $1,$0
   mul $3,-1

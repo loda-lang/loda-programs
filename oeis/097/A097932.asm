@@ -33,7 +33,6 @@ add $2,2
 sub $4,$0
 mov $0,$2
 add $0,6
-mul $0,2
-div $0,4
+div $0,2
 add $0,5
 sub $0,$4

@@ -1,4 +1,4 @@
-; A045202: Numbers n with property that in base 5 representation the numbers of 0's and 3's are 3 and 3, respectively.
+; A045202: Numbers whose base-5 representation contains exactly three 0's and three 3's.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 9393,9453,9465,9753,9765,9825,11253,11265,11325,11625,15718,16018,16078,16090,17518,17578,17590,17878,17890,17950,25018,25078,25090,25378,25390,25450,26878,26890,26950,27250,31343
 

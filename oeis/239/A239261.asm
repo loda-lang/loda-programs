@@ -7,6 +7,11 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,249914 ; Number of partitions of 4n with equal sums of odd and even parts.
+mov $2,$0
+mul $2,2
+seq $2,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $2,$0
+mov $0,$2
 mul $0,$1
 div $0,2

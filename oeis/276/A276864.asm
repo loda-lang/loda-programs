@@ -1,13 +1,20 @@
 ; A276864: First differences of the Beatty sequence A001952 for 2 + sqrt(2).
-; Submitted by Landjunge
+; Submitted by estatic707
 ; 3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3,3,4,3,4,3,3,4,3,4,3,4,3
-; Formula: a(n) = (A001951(n+1)+A001951(n)+1)%2+3
 
-mov $1,$0
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-add $0,$1
-mod $0,2
+mov $2,8
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  dif $1,2
+  mov $3,1
+  add $3,$1
+  gcd $3,4
+  mul $2,4
+  mul $2,$3
+  div $3,2
+lpe
+mov $0,$3
+div $0,2
 add $0,3

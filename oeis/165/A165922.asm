@@ -18,12 +18,10 @@ lpb $3
   mul $1,2
   sub $3,1
 lpe
-div $1,45
-mul $1,2
-div $1,6
 mov $4,10
 pow $4,$0
 div $2,$4
+div $1,135
 div $1,$2
 mov $0,$1
 mod $0,10
