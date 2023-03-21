@@ -14,7 +14,8 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,162514 ; Triangle of coefficients of polynomials defined by the Binet form P(n,x) = U^n + L^n, where U = (x + d)/2, L = (x - d)/2, d = (4 + x^2)^(1/2). Decreasing powers of x.
+  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  seq $0,114525 ; Triangle of coefficients of the Lucas (w-)polynomials.
   mul $1,2
   trn $1,$0
   add $1,$0

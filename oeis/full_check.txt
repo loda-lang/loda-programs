@@ -453,6 +453,7 @@ A274036: a(n) is the thickness of n (see Comments section for definition).
 A276084: a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
 A276150: Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.
 A276151: n minus the greatest primorial number (A002110) which divides n: a(n) = n - A053589(n).
+A276153: The most significant digit when n is written in primorial base (A049345).
 A276157: a(n) = {greatest primorial less than or equal to n} divided by {greatest primorial number which divides n} = A260188(n)/A053589(n).
 A276618: Transpose of table A099884.
 A276781: a(n) = 1+n-(nearest power of prime <= n); for n > 1, a(n) = minimal b such that the numbers binomial(n,k) for b <= k <= n-b have a common divisor greater than 1.

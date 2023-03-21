@@ -6,7 +6,10 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,244967 ; A141285(n) - 1.
+mov $2,$0
+seq $2,141285 ; Largest part of the n-th partition of j in the list of colexicographically ordered partitions of j, if 1 <= n <= A000041(j).
+mov $0,$2
+sub $0,1
 mul $0,$1
 div $0,2
 add $0,1

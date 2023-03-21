@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,328581 ; Product of nonzero digits in primorial base expansion of n.
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  sub $3,1
+  seq $3,5361 ; Product of exponents of prime factorization of n.
   cmp $3,1
   cmp $3,0
   sub $0,$3

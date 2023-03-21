@@ -1,6 +1,7 @@
 ; A170894: Similar to A160406, always staying outside the wedge, but starting with a horizontal toothpick whose endpoint touches the vertex of the wedge.
 ; Submitted by Jamie Morken(l1)
 ; 0,1,2,4,7,10,13,19,27,33,37
+; Formula: a(n) = a(n-1)+A170895(n), a(0) = 0
 
 lpb $0
   mov $2,$0

@@ -1,6 +1,8 @@
 ; A175733: a(n) is the smallest n-digit number with 3 divisors.
 ; Submitted by Penguin
 ; 4,25,121,1369,10201,100489,1018081,10004569,100140049,1000267129,10000600009,100008370081,1000006000009,10000033772089,100000380000361,1000000025191729,10000001400000049,100000000621806289,1000000014000000049,10000000055856073561
+; Formula: a(n) = A151800(A017934(n))^2
 
-seq $0,131581 ; The next prime greater than the square root of 10^n.
+seq $0,17934 ; Powers of sqrt(10) rounded down.
+seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).
 pow $0,2

@@ -10,7 +10,18 @@ lpb $0
   mov $2,$1
   mov $1,$3
   dif $1,2
-  seq $1,40451 ; Continued fraction for sqrt(473).
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $5,$1
+  mod $1,2
+  sub $5,2
+  div $5,5
+  add $5,1
+  mul $5,20
+  sub $5,$1
+  mov $1,$5
+  sub $1,18
   mul $1,$2
   add $1,$4
   add $3,1

@@ -1,11 +1,33 @@
 ; A010163: Continued fraction for sqrt(92).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by fuzzydice555
 ; 9,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2,4,2,1,1,18,1,1,2
-; Formula: a(n) = (A266313(n)%4+A040329(n))/2
 
-mov $1,$0
-seq $1,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
-mod $1,4
-seq $0,40329 ; Continued fraction for sqrt(348).
-add $0,$1
+mov $1,10
+mov $2,$0
+add $2,1
+mov $4,2
+gcd $4,$2
+add $2,1
+div $2,2
+mov $3,4
+pow $3,$2
+sub $3,$4
+pow $4,$2
+mul $4,$3
+mov $2,$4
+sub $2,3
+mod $2,10
+sub $2,2
+mov $5,$0
+gcd $0,8
+lpb $5
+  mov $5,3
+  add $0,6
+  mov $1,7
+lpe
+mul $0,$1
+trn $0,63
+add $0,1
+add $0,$2
 div $0,2
+add $0,1

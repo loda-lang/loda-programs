@@ -10,7 +10,11 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,319684 ; Sum of A003415(d) over the divisors d of n, where A003415 is arithmetic derivative.
-  add $3,$0
+  seq $0,66842 ; a(n) = Product_{k|n} k^k; product is over the positive divisors, k, of n.
+  mov $4,$0
+  seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  mov $5,$0
+  div $5,$4
+  add $3,$5
 lpe
 mov $0,$3

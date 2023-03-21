@@ -9,7 +9,12 @@ lpb $3
   mov $0,$4
   add $0,$3
   trn $0,1
-  seq $0,211007 ; Surface area of the first n faces of the structure mentioned in A211006.
+  add $0,1
+  mov $5,1
+  bin $5,$0
+  sub $0,$5
+  seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
+  bin $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

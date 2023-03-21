@@ -1,25 +1,29 @@
 ; A309808: Primes formed by concatenating k and 2k+1.
-; Submitted by PDW
+; Submitted by BlisteringSheep
 ; 13,37,613,919,1021,1123,1327,1429,1531,2143,2347,2551,2857,3061,3163,3469,3571,3673,3877,4591,4999,50101,56113,59119,63127,70141,71143,74149,78157,79159,81163,88177,91183,93187,95191,101203,105211,106213,108217,110221,113227,114229,124249,128257,130261,134269,135271,136273,140281,141283,143287,144289,150301,151303,159319,161323,163327,165331,169339,170341,173347,176353,180361,184369,185371,193387,198397,199399,200401,201403,206413,210421,218437,224449,226453,228457,229459,231463,238477,243487
 
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  sub $2,1
+  mov $6,$1
+  seq $6,4216 ; a(n) = floor(log_10(n)).
+  add $6,1
+  mov $7,10
+  pow $7,$6
   mov $3,$1
-  seq $3,309809 ; a(n) is the concatenation of n and 2n+1.
+  seq $3,191362 ; Number of the diagonal of the dispersion of the even positive integers that contains n.
+  mul $3,$7
+  add $3,$1
   mov $5,$3
-  add $5,2
-  sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
+  trn $2,1
 lpe
 mov $0,$5
-sub $0,2
+add $0,1

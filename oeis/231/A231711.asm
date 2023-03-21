@@ -6,8 +6,15 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  mov $6,$5
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $5,1
+  sub $5,$6
   mov $3,$1
-  seq $3,163553 ; First differences of A024816.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$5
   mul $3,4
   trn $3,3
   min $3,1

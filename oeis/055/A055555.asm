@@ -1,7 +1,13 @@
 ; A055555: a(n) = n!*(n!+1)/2.
 ; Submitted by Christian Krause
 ; 1,1,3,21,300,7260,259560,12703320,812871360,65841128640,6584096534400,796675481078400,114721266640780800,19387894024929830400,3800027228319587865600,855006126362753549184000,218881568348707987666944000,63256773252773762936322048000
+; Formula: a(n) = binomial(b(n)+1,2), b(n) = n*b(n-1), b(0) = 1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+mov $1,1
+lpb $0
+  mul $1,$0
+  sub $0,1
+lpe
+mov $0,$1
 add $0,1
 bin $0,2

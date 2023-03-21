@@ -4,9 +4,17 @@
 
 mov $1,1
 lpb $0
-  mov $2,$0
-  seq $2,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
+  mov $3,$0
+  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  seq $2,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $2,1
+  mul $3,$2
+  mov $4,0
+  sub $4,$3
   sub $0,1
-  add $1,$2
+  add $1,$4
+  mov $2,$4
 lpe
 mov $0,$1

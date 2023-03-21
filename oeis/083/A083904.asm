@@ -4,4 +4,4 @@
 
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
 sub $0,1
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.

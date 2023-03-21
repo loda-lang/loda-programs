@@ -5,7 +5,26 @@
 mov $1,$0
 mov $0,16
 pow $0,$1
-seq $1,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+mul $1,2
+add $1,1
+mov $2,1
+mov $5,$1
+lpb $1
+  sub $1,1
+  div $7,2
+  add $7,$3
+  mul $7,2
+  mov $3,$2
+  pow $3,$5
+  sub $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+gcd $1,$6
 mul $1,$0
 mov $0,$1
 mul $0,4

@@ -4,5 +4,19 @@
 
 mov $1,2
 pow $1,$0
-seq $0,52856 ; E.g.f.: (1-3*exp(x)+exp(2*x))/(exp(x)-2).
+mov $4,200
+lpb $4
+  div $3,2
+  add $3,$5
+  mov $5,$4
+  pow $5,$0
+  sub $4,1
+lpe
+mov $2,$3
+add $2,2
+mov $0,$2
+mul $0,2
+add $0,2
+div $0,16
+add $0,1
 sub $0,$1

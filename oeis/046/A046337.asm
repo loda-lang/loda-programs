@@ -9,7 +9,8 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,66829 ; Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mod $3,2
   cmp $3,0
   sub $0,$3
   mov $4,$0

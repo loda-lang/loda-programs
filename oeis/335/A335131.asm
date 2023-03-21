@@ -9,7 +9,13 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,33931 ; a(n) = lcm(n,n+1,n+2).
+  mov $4,$0
+  add $4,3
+  mul $0,$4
+  add $0,2
+  dif $4,2
+  mul $4,$0
+  mov $0,$4
   sub $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $2,$0

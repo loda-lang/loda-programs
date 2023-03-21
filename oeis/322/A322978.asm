@@ -15,7 +15,7 @@ lpb $4
   sub $0,1
   mul $0,2
   mov $7,$0
-  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $7,46897 ; Sum of divisors of n that are not divisible by 4.
   mov $6,$0
   add $6,2
   gcd $6,$7

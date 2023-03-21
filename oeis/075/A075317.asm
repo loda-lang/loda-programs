@@ -1,12 +1,22 @@
 ; A075317: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the first member of pairs.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by kpmonaghan
 ; 1,5,7,11,15,17,21,23,27,31,33,37,41,43,47,49,53,57,59,63,65,69,73,75,79,83,85,89,91,95,99,101,105,109,111,115,117,121,125,127,131,133,137,141,143,147,151,153,157,159,163,167,169,173,175,179,183,185,189,193,195,199,201,205,209,211,215,219,221,225,227,231,235,237,241,243,247,251,253,257,261,263,267,269,273,277,279,283,287,289,293,295,299,303,305,309,311,315,319,321
-; Formula: a(n) = 2*A026351(n+1)-3
 
-mov $1,$0
-add $1,1
-seq $1,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
-sub $1,1
-mov $0,$1
+mov $1,3
+mov $2,2
+mov $4,-1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  cmp $3,4
+  add $3,$1
+  mod $3,2
+  add $3,2
+  add $4,$3
+  add $1,$2
+  mul $2,$3
+lpe
+mov $0,$4
 mul $0,2
-sub $0,1
+add $0,3

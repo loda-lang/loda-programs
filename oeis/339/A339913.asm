@@ -1,11 +1,20 @@
 ; A339913: a(n) = x/gcd(n,x), where x = 1+A060681(n).
 ; Submitted by Maurice Goulois
 ; 1,1,1,3,1,2,1,5,7,3,1,7,1,4,11,9,1,5,1,11,5,6,1,13,21,7,19,15,1,8,1,17,23,9,29,19,1,10,9,21,1,11,1,23,31,12,1,25,43,13,35,27,1,14,9,29,13,15,1,31,1,16,43,33,53,17,1,35,47,18,1,37,1,19,17,39,67,20,1,41,55,21,1,43,69,22,59,45,1,23,79,47,21,24,77,49,1,25,67,51
-; Formula: a(n) = (A060681(n)+1)/gcd(n+1,A060681(n)+1)
 
 mov $1,$0
-seq $0,60681 ; Largest difference between consecutive divisors of n (ordered by size).
-add $0,1
+mov $3,$0
+mov $4,1
+mov $2,$0
+lpb $2
+  mov $4,$2
+  seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $2,$4
+lpe
+add $3,1
+div $3,$4
+sub $0,$3
+add $0,2
 add $1,1
 gcd $1,$0
 div $0,$1

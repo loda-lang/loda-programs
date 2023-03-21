@@ -12,7 +12,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,84624 ; floor(C(n+5,5)/C(n+2,2)).
+  add $0,5
+  bin $0,3
+  div $0,10
   mul $1,$0
   add $3,$1
 lpe
