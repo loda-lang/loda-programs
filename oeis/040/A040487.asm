@@ -4,7 +4,7 @@
 
 seq $0,10225 ; Continued fraction for sqrt(183).
 dif $0,4
-mul $0,90
-div $0,72
+mul $0,5
+div $0,4
 mul $0,7
 div $0,5

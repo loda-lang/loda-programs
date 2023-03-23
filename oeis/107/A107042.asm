@@ -9,6 +9,6 @@ add $1,8
 div $1,7
 sub $0,$1
 div $0,3
-mul $0,20
-div $0,16
+mul $0,5
+div $0,4
 add $0,1

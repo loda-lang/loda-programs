@@ -8,7 +8,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,269895 ; Number of n X 1 0..6 arrays with some element plus some horizontally or vertically adjacent neighbor totalling six exactly once.
+  mov $5,6
+  pow $5,$0
+  mul $0,$5
+  div $0,6
+  mul $0,7
   sub $0,$4
   mul $0,4
   add $3,$0

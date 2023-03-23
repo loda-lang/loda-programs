@@ -1,13 +1,12 @@
 ; A356982: Fixed point of the morphism 0->010, 1->000.
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0
 
+mul $0,2
 add $0,1
-mov $1,$0
-lpb $1
-  add $1,1
-  dif $1,3
-  add $2,1
+lpb $0
+  add $1,5
+  dif $0,3
 lpe
-mov $0,$2
+mov $0,$1
 mod $0,2

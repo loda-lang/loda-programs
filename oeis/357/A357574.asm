@@ -1,4 +1,4 @@
-; A357574: a(n) is the number of pairs that add to a power of 2 in a set of n consecutive positive or negative odd numbers including A357409(n) positive numbers.
+; A357574: a(n) is the maximum number of pairs that sum to a power of 2 in a set of n consecutive odd numbers.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,2,4,5,7,9,11,13,15,17,19,21,24,26,29,31,34,36,39,41,44,46,49,51,54,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98,101,104,107,110,113,116,119,122,125,128,131,134,137,140,143,146,150,153,157,160,164,167
 

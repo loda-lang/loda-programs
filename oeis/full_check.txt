@@ -39,6 +39,7 @@ A004641: Fixed under 0 -> 10, 1 -> 100.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
+A005101: Abundant numbers (sum of divisors of m exceeds 2m).
 A005206: Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n > 0.
 A005361: Product of exponents of prime factorization of n.
 A005379: The male of a pair of recurrences.
@@ -447,6 +448,7 @@ A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers
 A265673: Area A under the trajectory of each odd number in the "3x+1" problem.
 A268335: Exponentially odd numbers.
 A270248: Even Löschian numbers.
+A270672: Löschian numbers (A003136) that are multiples of 3.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A272550: Lexicographically earliest increasing sequence of primes such that odd-indexed terms have final digit 1 and even-indexed terms have final digit 9.
 A274036: a(n) is the thickness of n (see Comments section for definition).

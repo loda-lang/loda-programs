@@ -4,5 +4,28 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,5928 ; G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
+mov $2,17
+add $2,$0
+mod $2,3
+mul $2,3
+sub $2,2
+mov $7,$0
+mov $5,2
+lpb $5
+  sub $5,1
+  mov $0,$7
+  add $0,$5
+  trn $0,1
+  seq $0,38589 ; Sizes of successive clusters in hexagonal lattice A_2 centered at lattice point.
+  mov $4,$5
+  mul $4,$0
+  add $3,$4
+  mov $6,$0
+lpe
+min $7,1
+mul $7,$6
+sub $3,$7
+mov $0,$3
+mul $0,$2
+div $0,4
 mul $0,$1

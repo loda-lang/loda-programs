@@ -10,7 +10,20 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mul $1,$0
-  seq $0,14017 ; Inverse of 8th cyclotomic polynomial.
+  dif $0,2
+  mov $4,-1
+  pow $4,$0
+  dif $0,2
+  mov $5,-1
+  pow $5,$0
+  add $4,1
+  mul $4,2
+  mul $0,0
+  add $0,12
+  div $0,4
+  mul $0,$5
+  mul $0,$4
+  div $0,12
   add $1,$0
 lpe
 mov $0,$1

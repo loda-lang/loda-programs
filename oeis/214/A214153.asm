@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,74943 ; tau(n) (mod 3).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mod $3,3
   cmp $3,1
   sub $0,$3
   add $1,3

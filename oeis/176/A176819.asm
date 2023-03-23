@@ -9,7 +9,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,77448 ; Numbers k such that Sum_{d|k} mu(d)*mu(k/d)^2 = +1.
+  seq $0,30229 ; Numbers that are the product of an even number of distinct primes.
+  pow $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

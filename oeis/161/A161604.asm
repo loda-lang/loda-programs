@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,57889 ; Bit-reverse of n, including as many leading as trailing zeros.
+  seq $3,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+  mov $5,2
+  pow $5,$1
+  mul $3,$5
   mod $3,$1
   min $3,1
   sub $0,1

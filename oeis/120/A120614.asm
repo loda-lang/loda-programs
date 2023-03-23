@@ -8,11 +8,14 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,1
-  seq $0,287659 ; Positions of 1 in A287657; complement of A287658.
+  mov $6,$0
+  seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+  mul $6,2
+  add $6,$0
   mov $3,$4
-  mul $3,$0
+  mul $3,$6
   add $1,$3
-  mov $5,$0
+  mov $5,$6
 lpe
 min $2,1
 mul $2,$5

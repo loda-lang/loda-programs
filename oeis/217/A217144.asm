@@ -9,7 +9,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,1247 ; Squares of Bell numbers.
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  pow $0,2
   div $1,-1
   add $1,$0
 lpe

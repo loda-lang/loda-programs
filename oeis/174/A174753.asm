@@ -8,8 +8,29 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  mov $5,0
+  sub $5,$3
+  gcd $5,2
   mov $1,$3
-  seq $1,40367 ; Continued fraction for sqrt(387).
+  mul $1,2
+  mov $8,2
+  trn $8,$1
+  add $8,6
+  gcd $1,$8
+  sub $1,3
+  mov $7,3
+  pow $7,$1
+  mov $1,$7
+  add $1,1
+  mod $1,10
+  mov $6,0
+  sub $6,$1
+  gcd $6,2
+  mul $6,$1
+  mov $1,$6
+  mul $1,$5
+  mul $1,6
+  div $1,5
   mul $1,$2
   add $1,$4
   add $3,1

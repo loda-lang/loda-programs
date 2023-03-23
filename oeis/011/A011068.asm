@@ -12,8 +12,8 @@ lpb $3
   cmp $1,1
   add $1,$6
   add $1,$2
-  mul $1,8
-  div $1,30
+  mul $1,4
+  div $1,15
   add $2,$1
   add $5,$2
   add $6,$5

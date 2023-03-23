@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $7,$1
+  seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  add $6,1
+  mul $6,$7
   mov $3,$1
-  seq $3,125287 ; a(n) = mu(n) * A000217(n).
+  mul $3,$6
   trn $3,1
   add $3,$5
   cmp $3,1

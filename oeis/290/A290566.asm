@@ -1,10 +1,23 @@
 ; A290566: Coefficients in 5-adic expansion of 2^(1/3).
 ; Submitted by [AF>Occitania]franky82
 ; 3,0,2,2,3,1,4,0,2,3,0,0,4,0,4,4,3,1,1,2,0,0,2,4,0,0,2,1,4,2,2,4,0,4,2,3,1,2,3,0,0,2,0,3,4,4,2,3,2,0,4,1,2,2,3,3,0,4,2,2,3,4,4,3,4,0,2,1,2,3,4,4,2,3,3,0,3,4,1,3,1,0,2,2,1,4,4,1,2,1,1,0,3,2,1,2,4,1,1,2
-; Formula: a(n) = A290567(n+1)/(5^n)
 
 mov $1,5
 pow $1,$0
+mov $2,1
 add $0,1
-seq $0,290567 ; The successive approximations up to 5^n for 5-adic integer 2^(1/3).
+lpb $0
+  sub $0,1
+  pow $5,3
+  add $5,1
+  mul $5,2
+  mul $2,5
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  sub $4,6
+  mov $5,$3
+lpe
+mov $0,$3
 div $0,$1

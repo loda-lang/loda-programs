@@ -6,8 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,168563 ; a(n) = (n-th prime > 3) minus (n-th composite number).
+  add $3,2
+  mov $6,$3
+  seq $6,141468 ; Zero together with the nonprime numbers A018252.
+  seq $3,40 ; The prime numbers.
   sub $3,1
+  sub $3,$6
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   cmp $3,0

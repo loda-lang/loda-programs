@@ -1,12 +1,28 @@
 ; A161641: Positions n such that A010060(n) + A010060(n+4) = 1.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,3,8,9,10,11,12,13,14,15,16,17,18,19,24,25,26,27,32,33,34,35,40,41,42,43,44,45,46,47,48,49,50,51,56,57,58,59,60,61,62,63,64,65,66,67,72,73,74,75,76,77,78,79,80,81,82,83,88,89,90,91,96,97,98,99,104,105,106,107,108,109,110,111,112,113,114,115,120,121,122,123,128,129,130,131,136,137,138,139,140,141,142,143,144,145,146,147
-; Formula: a(n) = (n%4+2*A072939(n/4)+(-1))-5
 
 mov $2,$0
 mod $2,4
+mov $4,10
 div $0,4
-seq $0,72939 ; Define a sequence c depending on n as follows: c(1)=1 and c(2)=n; c(k+2) = (c(k+1) + c(k))/2 if c(k+1) and c(k) have the same parity; otherwise c(k+2) = abs(c(k+1) - 2*c(k)); sequence gives values of n such that lim_{k->oo} c(k) = infinity.
+add $0,1
+lpb $0
+  sub $0,1
+  add $6,$5
+  add $6,2
+  sub $3,$4
+  div $3,2
+  mov $5,1
+  add $5,$3
+  gcd $5,4
+  div $3,$5
+  mul $4,4
+lpe
+mov $0,$6
+div $0,3
+mul $0,2
+add $0,3
 mov $1,-1
 add $1,$0
 add $1,$2

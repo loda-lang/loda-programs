@@ -13,8 +13,7 @@ lpb $3
   div $4,2
   add $4,3
   gcd $4,4
-  mul $4,2
-  div $4,6
+  div $4,3
   add $4,$0
   trn $4,1
   add $1,$4

@@ -1,31 +1,10 @@
 ; A324828: a(n) = A324543(n) read modulo 2, where A324543 is the Möbius-transform of sigma(A156552(n)).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 0,1,1,1,1,0,1,0,1,1,1,1,1,0,0,0,1,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,1,1,1,0,0,1,0,1,0,1,1,0,1,1,0,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,0,1,0
+; Formula: a(n) = (A324543(n)^2)%2
 
-mov $2,$0
-add $2,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  sub $0,1
-  mov $4,$0
-  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
-  lpb $0
-    add $5,1
-    sub $0,$5
-  lpe
-  seq $0,332223 ; a(1) = 1, and for n > 1, a(n) = A005940(1+sigma(A156552(n))).
-  add $0,1
-  mul $0,$4
-  add $1,$0
-lpe
+seq $0,324543 ; Möbius transform of A323243, where A323243(n) = sigma(A156552(n)).
+pow $0,2
+mov $1,$0
+mod $1,2
 mov $0,$1
-mod $0,2
-add $0,2
-mod $0,2

@@ -4,7 +4,11 @@
 
 lpb $0
   mov $2,$1
-  seq $2,268679 ; a(n) = A268389(A001969(1+n)); A268389 without its zero terms.
+  add $2,1
+  seq $2,6068 ; a(n) is Gray-coded into n.
+  sub $2,1
+  seq $2,268389 ; a(n) = greatest k such that polynomial (X+1)^k divides the polynomial (in polynomial ring GF(2)[X]) that is encoded in the binary expansion of n. (See the comments for details).
+  add $2,1
   sub $0,$2
   add $1,1
 lpe

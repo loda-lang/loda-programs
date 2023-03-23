@@ -7,5 +7,17 @@ mod $0,2
 mul $0,2
 add $1,1
 div $1,2
-seq $1,71 ; a(n) = Fibonacci(n) - 1.
+mov $3,$1
+add $3,2
+mov $1,$3
+lpb $1
+  sub $1,2
+  add $4,$1
+  bin $4,$1
+  add $5,1
+  add $2,$4
+  mov $4,$5
+lpe
+mov $1,$2
+sub $1,1
 add $0,$1

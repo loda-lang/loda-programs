@@ -1,13 +1,15 @@
 ; A346305: Positions of words in A076478 that start with 1 and end with 1.
-; Submitted by Simon Strandgaard
+; Submitted by Hans van der Giessen
 ; 2,6,12,14,24,26,28,30,48,50,52,54,56,58,60,62,96,98,100,102,104,106,108,110,112,114,116,118,120,122,124,126,192,194,196,198,200,202,204,206,208,210,212,214,216,218,220,222,224,226,228,230,232,234,236,238
 
-mul $0,2
-mov $1,2
-mov $2,$0
+mov $1,$0
+add $1,2
+mov $2,1
 lpb $0
-  trn $0,$1
-  mul $1,2
+  div $0,2
+  mul $2,2
 lpe
-add $1,$2
-mov $0,$1
+add $0,$2
+add $0,$1
+mul $0,2
+sub $0,4

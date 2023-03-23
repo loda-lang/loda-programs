@@ -1,5 +1,5 @@
 ; A309048: Expansion of Product_{k>=0} (1 + x^(3^k) + x^(2*3^k) - x^(3^(k+1))).
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,0,1,1,0,1,1,-1,0,0,1,1,1,0,1,1,-1,0,0,1,1,1,0,1,1,-2,-1,-1,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,-1,0,0,1,1,1,0,1,1,-2,-1,-1,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,-1,0,0,1,1,1,0,1,1,-3,-2,-2,1,-1,-1,0,-1,-1,2,1,1,-1,0,0,0,0,0,0
 
 mov $2,1
@@ -12,7 +12,7 @@ lpb $0
   add $4,6
   lpb $4
     mov $7,$4
-    seq $7,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
+    seq $7,204164 ; Symmetric matrix based on f(i,j)=floor[(i+j)/2], by antidiagonals.
     cmp $7,2
     mov $9,10
     add $9,$5

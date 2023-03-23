@@ -7,8 +7,12 @@ add $0,1
 add $2,3
 pow $2,4
 lpb $2
+  add $5,1
   mov $3,$1
-  seq $3,65331 ; Largest 3-smooth divisor of n.
+  mul $3,743008370688
+  mov $4,$3
+  gcd $4,$5
+  mov $3,$4
   sub $3,$1
   max $3,0
   cmp $3,0

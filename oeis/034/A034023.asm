@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,105673 ; One-half of theta series of square lattice (or half the number of ways of writing n > 0 as a sum of 2 squares), without the constant term, which is 1/2.
+  add $5,1
+  mul $5,4
+  seq $5,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   mov $3,$1
   seq $3,360720 ; a(n) is the sum of unitary divisors of n that are powerful (A001694).
   gcd $5,$3

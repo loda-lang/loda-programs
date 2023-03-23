@@ -13,8 +13,12 @@ lpb $4
   add $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,79261 ; Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
-  mul $1,$0
+  mov $5,$0
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  div $5,2
+  mod $5,2
+  mul $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

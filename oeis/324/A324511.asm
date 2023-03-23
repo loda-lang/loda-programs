@@ -6,8 +6,14 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,211776 ; a(n) = Product_{d | n} tau(d).
+  mov $6,$5
   mov $3,$1
-  seq $3,324510 ; a(n) = denominator of Product_{d|n} (sigma(d)/tau(d)) where sigma(k) = the sum of the divisors of k (A000203) and tau(k) = the number of divisors of k (A000005).
+  seq $3,206032 ; a(n) = Product_{d|n} sigma(d) where sigma = A000203.
+  gcd $5,$3
+  div $6,$5
+  mov $3,$6
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -8,7 +8,9 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,60719 ; a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).
+  add $5,1
+  seq $5,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $5,2
   sub $0,1
   mov $2,$3
   mul $2,$5

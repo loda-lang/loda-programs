@@ -6,7 +6,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,8835 ; Largest 4th power dividing n.
+  seq $3,8833 ; Largest square dividing n.
+  seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  sub $3,1
+  seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
   cmp $3,1
   sub $0,$3
   add $1,1

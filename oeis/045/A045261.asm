@@ -1,4 +1,4 @@
-; A045261: Numbers n with property that in base 5 representation the numbers of 1's and 4's are 3 and 2, respectively.
+; A045261: Numbers whose base-5 representation contains exactly three 1's and two 4's.
 ; Submitted by ChelseaOilman
 ; 799,859,871,1159,1171,1231,2659,2671,2731,3031,3299,3359,3371,3659,3671,3731,3799,3859,3871,3899,3949,3974,3979,3989,3994,3995,3997,3998,4049,4109,4121,4174,4234,4246,4259,4271,4279
 

@@ -6,8 +6,11 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,125746 ; a(n) = smallest divisor d of n such that n <= {sum of d and all smaller divisors of n}.
   mov $3,$1
-  seq $3,300826 ; a(n) = n/A125746(n), where A125746(n) gives the smallest divisor d of n such that the sum which includes d and all smaller divisors is >= n.
+  div $3,$6
+  add $3,1
   mov $5,$1
   seq $5,181434 ; First column in matrix inverse of a mixed convolution of A052542.
   add $5,1

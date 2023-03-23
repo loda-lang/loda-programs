@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353307 ; a(n) = 1 if A156552(n) == 1 (mod 3), otherwise 0.
+  seq $3,65883 ; Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
+  sub $3,1
+  seq $3,332814 ; a(n) is -1, 0, or +1 such that a(n) == A156552(n) (mod 3).
+  add $3,1
+  div $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

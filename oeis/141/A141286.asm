@@ -6,8 +6,16 @@ mov $1,$0
 mov $2,16
 lpb $2
   sub $2,$1
-  mov $3,$1
-  seq $3,161658 ; a(n) = the largest multiple of {the sum of the prime-factorization exponents of n} that is <= n.
+  mov $4,$1
+  min $4,1
+  mov $5,$1
+  seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$5
+  add $3,1
+  add $4,$1
+  div $4,$3
+  mul $4,$3
+  mov $3,$4
   sub $3,1
   add $1,$0
   add $1,1

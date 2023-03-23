@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,4175 ; Triangle of coefficients of Euler polynomials 2^n*E_n(x) (exponents in decreasing order).
+  seq $3,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  seq $3,4174 ; Triangle of coefficients of Euler polynomials 2^n*E_n(x) (exponents in increasing order).
   mov $5,$3
   cmp $3,0
   cmp $3,0

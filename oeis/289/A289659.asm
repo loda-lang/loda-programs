@@ -5,5 +5,20 @@
 mov $1,$0
 mul $1,2
 add $1,1
-seq $0,2326 ; Multiplicative order of 2 mod 2n+1.
+mul $0,2
+mov $2,$0
+add $2,1
+mov $6,$2
+mov $5,$2
+lpb $5
+  cmp $2,$3
+  mov $4,$2
+  cmp $4,0
+  sub $5,$4
+  add $3,256
+  mul $3,2
+  mod $3,$6
+lpe
+add $0,1
+sub $0,$5
 mul $0,$1

@@ -7,8 +7,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,231002 ; Number of years after which it is possible to have a date falling on same day of the week, but the entire year does not have the same calendar, in the Julian calendar.
-  sub $3,1
+  mul $3,7
+  mov $4,-1
+  bin $4,$3
+  sub $3,$4
+  mul $3,2
+  add $3,6
   add $0,1
   add $1,1
   add $2,$3

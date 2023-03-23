@@ -11,8 +11,12 @@ lpb $0
   sub $0,1
   add $3,1
   mov $4,$0
-  seq $4,355937 ; a(n) = 1 if the number of divisors of n is a noncomposite, otherwise 0.
-  add $0,$4
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $4,1
+  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $5,1
+  bin $5,$4
+  add $0,$5
 lpe
 add $3,1
 mov $1,1

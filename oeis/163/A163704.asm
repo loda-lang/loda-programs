@@ -6,6 +6,14 @@ sub $1,$0
 cmp $1,0
 add $0,3
 add $1,$0
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
-sub $0,2
+mov $2,1
+mov $4,3
+lpb $0
+  sub $0,1
+  add $4,$3
+  mov $3,$2
+  mov $2,$4
+lpe
+mov $0,$2
 sub $0,$1
+sub $0,2

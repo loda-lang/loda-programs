@@ -8,7 +8,12 @@ mul $2,8
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,133620 ; Binomial(n+p,n) mod n where p=10.
+  add $3,1
+  mov $5,10
+  add $5,$3
+  bin $5,$3
+  mod $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,$4

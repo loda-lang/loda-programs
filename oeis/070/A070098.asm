@@ -4,7 +4,23 @@
 
 mov $1,$0
 sub $1,2
-seq $0,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
+mov $2,$0
+add $2,1
+mov $4,6
+mov $5,11
+lpb $5
+  sub $5,1
+  add $4,$3
+  mul $3,2
+  add $3,$4
+lpe
+mul $3,$2
+div $3,$4
+mov $2,$3
+add $2,945
+add $0,$2
+div $0,2
+sub $0,471
 sub $0,$1
 mul $0,2
 sub $0,$1

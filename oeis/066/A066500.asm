@@ -7,7 +7,8 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,261872 ; a(n) = phi(n) mod 5, where phi is the Euler totient function.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mod $3,5
   cmp $3,0
   sub $0,$3
   add $1,1
