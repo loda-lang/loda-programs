@@ -1,0 +1,8 @@
+; A128581: Expansion of (phi(q^2) * phi(-q^3) - phi(-q) * phi(q^6)) / 2 in powers of q where phi() is a Ramanujan theta function.
+; Submitted by vaughan
+; 1,1,-1,-1,-2,-1,2,1,1,-2,-2,1,0,2,2,-1,0,1,0,2,-2,-2,0,-1,3,0,-1,-2,-2,2,2,1,2,0,-4,-1,0,0,0,-2,0,-2,0,2,-2,0,0,1,3,3,0,0,-2,-1,4,2,0,-2,-2,-2,0,2,2,-1,0,2,0,0,0,-4,0,1,2,0,-3,0,-4,0,2,2,1,0,-2,2,0,0,2,-2,0,-2,0,0,-2,0,0,-1,2,3,-2,-3
+
+add $0,1
+dif $0,2
+sub $0,1
+seq $0,115660 ; Expansion of (phi(q) * phi(q^6) - phi(q^2) * phi(q^3)) / 2 in powers of q where phi() is a Ramanujan theta function.

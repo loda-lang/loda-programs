@@ -1,0 +1,22 @@
+; A045683: Number of 2n-bead balanced binary necklaces of fundamental period 2n which are equivalent to their reverse, complement and reversed complement.
+; Submitted by Simon Strandgaard (M1)
+; 1,1,1,1,2,3,3,7,8,14,15,31,30,63,63,123,128,255,252,511,510,1015,1023,2047,2040,4092,4095,8176,8190,16383,16365,32767,32768,65503,65535,131061,131040,262143,262143,524223,524280,1048575,1048509,2097151,2097150,4194162,4194303,8388607,8388480,16777208,16777200,33554175,33554430,67108863,67108608,134217693,134217720,268434943,268435455,536870911,536870370,1073741823,1073741823,2147482610,2147483648,4294967229,4294966269,8589934591,8589934590,17179867135,17179869105,34359738367,34359736320
+
+mov $3,3
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $4,$0
+  seq $4,56476 ; Number of primitive (aperiodic) palindromic structures of length n using a maximum of two different symbols.
+  mov $2,$0
+  seq $2,40001 ; 1 followed by {1, 2} repeated.
+  add $4,$2
+  mov $2,$4
+  sub $2,2
+  mul $3,0
+  add $3,$0
+  dif $3,2
+  add $1,$2
+lpe
+mov $0,$1
+add $0,1
