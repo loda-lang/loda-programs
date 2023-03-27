@@ -6,8 +6,10 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
-  seq $3,51953 ; Cototient(n) := n - phi(n).
+  sub $3,$5
   sub $3,1
   seq $3,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
   cmp $3,1

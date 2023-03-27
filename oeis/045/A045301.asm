@@ -1,4 +1,4 @@
-; A045301: Numbers whose base-5 representation contains two 3's and one 4.
+; A045301: Numbers whose base-5 representation contains exactly two 3's and one 4.
 ; Submitted by ChelseaOilman
 ; 94,98,118,219,223,243,344,348,368,394,398,419,423,444,448,454,459,464,470,471,472,478,483,488,490,491,492,518,543,568,578,583,588,590,591,592,719,723,743,844,848,868,969,973,993,1019
 

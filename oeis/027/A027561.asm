@@ -4,6 +4,19 @@
 
 mov $1,2
 pow $1,$0
-seq $0,27559 ; Number of 4-balanced strings of length n: let d(S)= #(1)'s in S - #(0)'s, then S is k-balanced if every substring T has -k<=d(T)<=k; here k=4.
-sub $1,$0
+mov $2,1
+mov $5,1
+lpb $0
+  sub $0,1
+  dif $4,2
+  add $5,$4
+  add $2,$4
+  sub $4,$5
+  mov $5,$3
+  add $5,$2
+  sub $3,$4
+  mov $4,$2
+lpe
+add $3,$2
+sub $1,$3
 mov $0,$1

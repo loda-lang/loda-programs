@@ -12,13 +12,12 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  mov $5,$0
   mov $6,0
-  sub $6,$5
+  sub $6,$0
+  mov $5,$0
   div $5,2
   mod $6,2
   pow $6,$5
-  mov $5,$6
   mod $0,7
   pow $0,8
   add $0,1
@@ -26,7 +25,7 @@ lpb $4
   mul $0,2
   sub $0,2
   div $0,2
-  mul $0,$5
+  mul $0,$6
   mul $1,$0
   add $3,$1
 lpe

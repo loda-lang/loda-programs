@@ -6,8 +6,7 @@ add $0,2
 lpb $0
   mov $2,$0
   max $4,98
-  mul $4,2
-  div $4,4
+  div $4,2
   sub $0,2
   sub $2,3
   add $2,$4

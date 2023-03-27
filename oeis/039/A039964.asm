@@ -1,12 +1,7 @@
 ; A039964: Motzkin numbers A001006 read mod 3.
-; Submitted by Jon Maiga
+; Submitted by Conan
 ; 1,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,0,0,0
-; Formula: a(n) = binomial(-n+n+52124,n+2)%3
+; Formula: a(n) = A001006(n)%3
 
-mov $1,$0
-add $0,2
-add $1,52126
-sub $1,$0
-bin $1,$0
-mod $1,3
-mov $0,$1
+seq $0,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.
+mod $0,3

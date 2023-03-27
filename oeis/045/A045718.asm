@@ -5,9 +5,14 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $5,1
+  mov $6,$1
+  seq $6,34694 ; Smallest prime == 1 (mod n).
   mov $3,$1
-  seq $3,103689 ; a(n) is the least k such that either k*n - 1 or k*n + 1 (or both) is prime.
-  sub $3,1
+  seq $3,38700 ; Smallest prime == -1 (mod n).
+  min $3,$6
+  sub $3,2
+  div $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

@@ -1,4 +1,4 @@
-; A045155: Numbers n with property that in base 4 representation the numbers of 2's and 3's are 4 and 2, respectively.
+; A045155: Numbers whose base-4 representation contains exactly four 2's and two 3's.
 ; Submitted by [TA]crashtech
 ; 2735,2747,2750,2795,2798,2810,2987,2990,3002,3050,3755,3758,3770,3818,4010,6831,6843,6846,6891,6894,6906,7083,7086,7098,7146,7851,7854,7866,7914,8106,8879,8891,8894,8939,8942,8954
 

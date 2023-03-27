@@ -4,5 +4,19 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,2374 ; Largest prime <= n in any decomposition of 2n into a sum of two odd primes.
+mov $2,$0
+add $0,2
+add $2,3
+lpb $2
+  sub $2,1
+  add $2,$4
+  mov $3,$0
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $3,$2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $0,1
+  add $4,$3
+lpe
+mov $0,$2
 sub $0,$1
+add $0,1

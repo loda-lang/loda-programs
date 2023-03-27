@@ -1,11 +1,16 @@
 ; A039982: Let phi denote the morphism 0 -> 11, 1 -> 10. This sequence is the limit S(oo) where S(0) = 1; S(n+1) = 1.phi(S(n)).
-; Submitted by Hans van der Giessen
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1
-; Formula: a(n) = (A245187(A092754(n+1)-1)+1)%2
 
-add $0,1
-seq $0,92754 ; a(1)=1, a(2n)=2a(n)+1, a(2n+1)=2a(n)+2.
-sub $0,1
-seq $0,245187 ; Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
-add $0,1
-mod $0,2
+mov $1,1
+mov $2,1
+lpb $0
+  mov $1,$0
+  mul $2,2
+  sub $0,$2
+  gcd $1,$2
+lpe
+mov $0,$1
+mul $0,5
+add $0,8
+mod $0,3

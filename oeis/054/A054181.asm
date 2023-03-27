@@ -13,7 +13,13 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,11 ; Number of n-bead necklaces (turning over is allowed) where complements are equivalent.
+  mov $5,$0
+  div $5,2
+  mov $6,2
+  pow $6,$5
+  seq $0,13 ; Definition (1): Number of n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.
+  add $0,$6
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

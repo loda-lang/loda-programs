@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   add $1,4
   mov $3,$1
-  seq $3,6015 ; Nim product 2*n.
+  seq $3,57300 ; Binary counter with odd/even bit positions swapped; base-4 counter with 1's replaced by 2's and vice versa.
+  seq $3,48647 ; Write n in base 4, then replace each digit '1' with '3' and vice versa and convert back to decimal.
   seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   add $3,4
   div $3,2

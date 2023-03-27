@@ -8,8 +8,12 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,-1
+  pow $5,$1
   mov $3,$1
-  seq $3,104794 ; Expansion of theta_4(q)^2 in powers of q.
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  mul $3,$5
   trn $3,1
   gcd $3,2
   sub $0,$3

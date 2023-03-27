@@ -8,7 +8,10 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
-  seq $3,160593 ; Indices of primes congruent to 11 modulo 12.
+  seq $3,68231 ; Primes congruent to 11 mod 12.
+  sub $3,4
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
+  add $3,1
   mov $5,$3
   mul $3,338
   add $3,2

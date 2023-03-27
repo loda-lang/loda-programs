@@ -7,7 +7,14 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,80647 ; Sum of prime factors of phi(n).
+  add $3,2
+  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $3,1
+  pow $3,2
+  div $3,4
+  mul $3,2
+  sub $3,1
+  seq $3,8472 ; Sum of the distinct primes dividing n.
   cmp $3,5
   sub $0,$3
   add $1,1

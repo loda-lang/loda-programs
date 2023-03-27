@@ -7,8 +7,11 @@ mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
+  mov $6,$1
+  seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$6
+  add $3,1
+  cmp $3,4
   sub $0,$3
   add $1,$4
   mov $4,$0

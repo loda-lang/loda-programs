@@ -3,8 +3,12 @@
 
 lpb $0
   add $1,$0
+  mov $3,2
+  gcd $3,$0
   mov $2,$0
-  seq $2,8617 ; Expansion of 1/((1-x^2)(1-x^7)).
+  div $2,7
+  add $2,$3
+  div $2,2
   sub $0,2
   add $1,$2
 lpe

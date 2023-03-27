@@ -1,6 +1,16 @@
 ; A080175: Fourth power of primes of the form 4k+1 (A002144).
 ; 625,28561,83521,707281,1874161,2825761,7890481,13845841,28398241,62742241,88529281,104060401,141158161,163047361,352275361,492884401,607573201,895745041,1073283121,1387488001,1506138481,2750058481
-; Formula: a(n) = A002144(n)^4
 
-seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  add $2,4
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  sub $3,$0
+lpe
+mov $0,$2
+add $0,5
 pow $0,4

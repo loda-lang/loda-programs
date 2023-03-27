@@ -90,6 +90,7 @@ A033684: 1 iff n is a square not divisible by 3.
 A033687: Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
 A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
+A034387: Sum of primes <= n.
 A034683: Unitary abundant numbers: numbers k such that usigma(k) > 2*k.
 A035034: Numbers k such that k >= d(k)^2, where d(k) is the number of divisors of k.
 A035035: Numbers k such that k > d(k)^2, where d(k) is the number of divisors of k.
@@ -506,6 +507,7 @@ A285326: a(0) = 0, for n > 0, a(n) = n + A006519(n).
 A285401: Positions of 0 in A285177; complement of A285402.
 A285405: Positions of 1 in A285403; complement of A285404.
 A285422: Positions of 0 in A285421; complement of A285423.
+A285601: Positions of 1 in A285599; complement of A285600.
 A285682: Positions of 1 in A285680.
 A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
 A285708: a(n) = n / A285707(n).
@@ -549,6 +551,7 @@ A296923: Primes p such that Legendre(-5,p) = -1.
 A296924: Primes p such that Legendre(-6,p) = 0 or 1.
 A297155: a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
 A302253: Positions of 3 in A190436.
+A305390: A ternary tribonacci sequence: define the morphism f: 1 -> 2, 2 -> 3, 3 -> 1,2,3; let S[k] be result of applying f k times to 1, for k =- 0,1,2,...; sequence gives limit S[3k+1] as k -> oo.
 A305490: Fixed point of the morphism 0->120, 1->110, 2->100.
 A305847: Solution a() of the complementary equation a(n) + b(n) = 5*n, where a(1) = 1. See Comments.
 A305848: Solution b() of the complementary equation a(n) + b(n) = 5n, where a(1) = 1. See Comments.

@@ -1,6 +1,7 @@
 ; A067096: Floor[X/Y] where X = concatenation in increasing order of first n even numbers and Y = that of first n natural numbers.
 ; Submitted by PDW
 ; 2,2,2,2,19,199,1999,19991,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916,199916
+; Formula: a(n) = A019520(n)/A007908(n)
 
 mov $1,$0
 seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.

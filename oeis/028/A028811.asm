@@ -7,4 +7,13 @@ lpb $1
   sub $1,27
   add $0,1
 lpe
-seq $0,28762 ; Nonsquares mod 49.
+mul $0,7
+add $0,7
+mov $2,$0
+div $2,2
+sub $0,$2
+add $0,1
+div $0,2
+mod $2,2
+add $2,$0
+mov $0,$2

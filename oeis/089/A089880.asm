@@ -9,7 +9,12 @@ lpb $3
   div $3,2
   mov $0,$2
   add $0,$3
-  seq $0,89849 ; Number of fixed points in range [A014137(n-1)..A014138(n-1)] of permutation A069772.
+  mov $4,$0
+  div $4,2
+  bin $0,$4
+  mul $4,2
+  add $4,1
+  dif $0,$4
   add $1,$0
   div $2,2
 lpe

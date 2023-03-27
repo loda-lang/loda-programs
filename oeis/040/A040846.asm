@@ -1,15 +1,19 @@
 ; A040846: Continued fraction for sqrt(876).
-; Submitted by X_FISH
+; Submitted by Science United
 ; 29,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2,14,2,1,1,58,1,1,2
-; Formula: a(n) = (A266313(n)%4+A040329(n))/2+10*(((A266313(n)%4+A040329(n))/2)/4)
+; Formula: a(n) = b(n)-1, b(n) = 10*(A010163(n)/4)+A010163(n)+1, b(1) = 2, b(0) = 30
 
-mov $2,$0
-seq $2,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
-mod $2,4
-seq $0,40329 ; Continued fraction for sqrt(348).
-add $0,$2
-div $0,2
-mov $1,$0
-div $0,4
-mul $0,10
-add $0,$1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  seq $1,10163 ; Continued fraction for sqrt(92).
+  mov $2,$1
+  div $1,4
+  mul $1,10
+  add $1,$2
+  add $1,1
+  add $3,1
+lpe
+mov $0,$1
+sub $0,1

@@ -1,24 +1,14 @@
 ; A073423: Sums of two powers of zero: triangle read by rows: T(m,n) = 0^n + 0^m, n >= 0, m = 0..n.
-; Submitted by vaughan
+; Submitted by kpmonaghan
 ; 2,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 
-mov $3,0
 lpb $0
-  add $3,1
-  sub $0,$3
+  add $2,1
+  sub $0,$2
 lpe
-mov $4,10
-pow $4,$0
+pow $1,$0
 mov $0,10
-pow $0,$3
-add $4,$0
-mov $0,$4
-div $0,3
-add $0,1
-mov $2,$0
-add $2,2
-mov $1,3
-mul $1,$2
+pow $0,$2
+add $1,$0
 mov $0,$1
-sub $0,7
 mod $0,10

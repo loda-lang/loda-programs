@@ -13,7 +13,10 @@ lpb $4
   gcd $1,$4
   cmp $1,1
   sub $0,$1
-  seq $0,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+  mov $5,$0
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $0,1
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

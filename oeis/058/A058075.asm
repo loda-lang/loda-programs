@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,60780 ; a(n) = gcd(sigma(n+1), sigma(n)) = gcd(A000203(n+1), A000203(n)).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  gcd $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

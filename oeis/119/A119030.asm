@@ -1,7 +1,7 @@
 ; A119030: Difference between numerator and denominator of the sum of all matrix elements of n X n Hilbert matrix M(i,j)=1/(i+j-1) (i,j = 1..n), A117731[n] - A117664[n].
 ; Submitted by http://kodeks.karelia.ru/
 ; 0,4,27,428,1375,15797,211631,86540,1496205,144045379,145607407,3378951221,17021747431,51392118293,214084856611,13337033800292,13393340889767,94103945740529,3493457389196573,3503912518228613
-; Formula: a(n) = (A080958(2*n+1)-A000142(2*n+1))/gcd(A000142(2*n+1),A080958(2*n+1)-A000142(2*n+1))
+; Formula: a(n) = (-A000142(2*n+1)+A080958(2*n+1))/gcd(A000142(2*n+1),-A000142(2*n+1)+A080958(2*n+1))
 
 mul $0,2
 add $0,1

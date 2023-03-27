@@ -7,8 +7,13 @@ mov $1,$0
 lpb $1
   mov $2,$1
   mul $2,2
-  seq $2,187323 ; Floor(n/2)+floor(n/3)+floor(n/4).
+  mov $3,$2
   mov $1,1
+  div $2,2
+  div $3,3
+  add $3,$2
+  div $2,2
+  add $2,$3
 lpe
 mov $0,$2
 add $0,2

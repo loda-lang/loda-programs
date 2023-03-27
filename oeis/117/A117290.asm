@@ -5,8 +5,10 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
-  seq $3,51953 ; Cototient(n) := n - phi(n).
+  sub $3,$5
   trn $3,1
   seq $3,194029 ; Natural fractal sequence of the Fibonacci sequence (1, 2, 3, 5, 8, ...).
   cmp $3,1

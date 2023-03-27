@@ -1,39 +1,24 @@
 ; A010138: Continued fraction for sqrt(52).
-; Submitted by WTBroughton
+; Submitted by Conan
 ; 7,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2,1,4,14,4,1,2
 
-mov $2,-1
-pow $2,$0
-add $2,2
-mov $7,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  mov $0,$7
-  add $0,$5
+add $0,1
+lpb $0
   sub $0,1
-  div $0,3
-  seq $0,272100 ; Integers n that are the sum of three nonzero squares while n*(n+1) is not.
-  mov $6,$0
-  mov $4,$5
-  lpb $4
-    sub $4,1
-    mov $3,$0
-  lpe
+  mov $2,-1
+  pow $2,$3
+  add $2,2
+  mov $1,$3
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  mul $1,$2
+  mul $1,2
+  sub $1,1
+  div $1,3
+  add $3,1
+  mov $4,$1
+  add $4,13
+  dif $4,2
+  div $4,2
 lpe
-lpb $7
-  mov $7,0
-  sub $3,$6
-lpe
-add $3,1
-mov $0,$3
-mul $0,$2
-mul $0,2
-sub $0,1
-div $0,3
-mov $1,$0
-add $1,13
-dif $1,2
-div $1,2
-mov $0,$1
+mov $0,$4
 sub $0,2

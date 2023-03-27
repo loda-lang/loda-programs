@@ -1,7 +1,28 @@
 ; A069210: a(1)=a(2)=1, a(n+2) = a(n+1)+1 if sign(sin(a(n+1)) = sign(sin(a(n)), a(n+2) = a(n)+1 otherwise.
 ; 1,1,2,3,4,4,5,6,7,7,8,9,10,10,11,12,13,13,14,15,16,16,17,18,19,19,20,21,22,22,23,24,25,26,26,27,28,29,29,30,31,32,32,33,34,35,35,36,37,38,38,39,40,41,41,42,43,44,44,45,46,47,48,48,49,50,51,51,52,53,54,54,55
-; Formula: a(n) = A076539(max(n-1,0))+1
 
-trn $0,1
-seq $0,76539 ; Numerators a(n) of fractions slowly converging to Pi: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < Pi, then a(n+1) = a(n) + 1, otherwise a(n+1) = a(n).
-add $0,1
+sub $0,1
+mul $0,4
+mov $3,$0
+add $3,1
+mov $5,6
+mov $6,11
+lpb $6
+  sub $6,1
+  add $5,$4
+  mul $4,2
+  add $4,$5
+lpe
+mul $4,$3
+div $4,$5
+mov $3,$4
+add $3,945
+add $0,$3
+div $0,2
+sub $0,471
+add $1,$0
+add $2,$1
+add $2,27
+add $1,$2
+div $1,18
+mov $0,$1
