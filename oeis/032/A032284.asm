@@ -4,8 +4,18 @@
 
 mov $1,$0
 add $0,1
-seq $0,1868 ; Number of n-bead necklaces with 4 colors.
-div $0,2
+lpb $0
+  mov $4,$0
+  seq $4,54611 ; a(n) = Sum_{d|n} phi(d)*4^(n/d).
+  mov $3,$0
+  cmp $3,0
+  add $0,$3
+  div $4,$0
+  mul $4,2
+  mov $0,0
+lpe
+mov $0,$4
+div $0,4
 sub $0,2
 mov $2,2
 pow $2,$1

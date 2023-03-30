@@ -7,10 +7,16 @@ lpb $3
   sub $3,1
   mov $0,$4
   add $0,$3
-  trn $0,1
-  seq $0,26635 ; Sum{T(i,j)}, 0<=i<=n, 0<=j<=n, T given by A026626.
+  sub $0,1
+  mov $5,2
+  pow $5,$0
+  mul $5,17
+  div $5,6
+  sub $5,1
+  sub $5,$0
+  mov $0,$5
   mov $2,$3
-  mul $2,$0
+  mul $2,$5
   add $1,$2
 lpe
 min $4,1

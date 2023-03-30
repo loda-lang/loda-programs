@@ -4,10 +4,6 @@
 
 mul $0,2
 mov $4,$0
-lpb $4
-  mul $4,143
-  mod $4,8
-lpe
 mod $4,4
 mov $5,$0
 mov $6,10

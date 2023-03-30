@@ -10,7 +10,9 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,52344 ; Number of ways to write n as the unordered sum of two nonzero triangular numbers.
+  seq $3,53603 ; Number of ways to write n as an ordered sum of two nonzero triangular numbers.
+  add $3,1
+  div $3,2
   sub $3,1
   cmp $3,2
   sub $0,$3

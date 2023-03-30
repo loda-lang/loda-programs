@@ -9,8 +9,12 @@ pow $2,2
 bin $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,69283 ; a(n) = -1 + number of odd divisors of n.
+  mov $4,$1
+  sub $4,1
+  seq $4,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+  mov $3,$4
+  sub $3,2
+  div $3,2
   cmp $3,2
   sub $0,$3
   add $1,1

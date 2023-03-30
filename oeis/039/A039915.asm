@@ -1,26 +1,20 @@
 ; A039915: Smallest k such that k(p-1)-1 is positive and divisible by p where p = n-th prime.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,2,4,6,10,12,16,18,22,28,30,36,40,42,46,52,58,60,66,70,72,78,82,88,96,100,102,106,108,112,126,130,136,138,148,150,156,162,166,172,178,180,190,192,196,198,210,222,226,228,232,238,240,250,256,262,268,270,276,280,282,292,306,310,312,316,330,336,346,348,352,358,366,372,378,382,388,396,400,408,418,420,430,432,438,442,448,456,460,462,466,478,486,490,498,502,508,520,522,540
+; Formula: a(n) = (2*(b(n)/(-9*n+1))+2*b(n)-6)/2+2, b(n) = A159477(b(n-1)), b(1) = 3, b(0) = 2
 
-pow $1,$0
-mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
+mov $1,1
+mov $3,2
+lpb $0
+  sub $0,1
+  sub $1,9
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
+mov $2,$3
+div $2,$1
 add $2,$3
-sub $2,1
+mul $2,2
 mov $0,$2
-add $0,$1
-add $0,$1
-sub $0,1
+sub $0,6
+div $0,2
+add $0,2

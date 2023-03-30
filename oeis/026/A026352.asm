@@ -3,6 +3,7 @@
 
 mov $1,$0
 add $1,12
-seq $0,66096 ; Duplicate values in A060143.
+mul $0,55
+div $0,34
 sub $0,11
 add $0,$1

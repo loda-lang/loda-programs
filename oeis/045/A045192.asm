@@ -1,4 +1,4 @@
-; A045192: Numbers n with property that in base 5 representation the numbers of 0's and 3's are 1 and 1, respectively.
+; A045192: Numbers whose base-5 representation contains exactly one 0 and one 3.
 ; Submitted by arkiss
 ; 15,28,40,53,65,76,77,79,80,85,95,103,115,133,138,141,142,144,148,153,165,178,190,201,202,204,205,210,220,228,240,258,263,266,267,269,273,278,290,303,315,326,327,329,330,335,345,353
 
