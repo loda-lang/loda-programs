@@ -1,0 +1,9 @@
+; A134706: a(n) = n-th perfect number divided by 2^n, minus 1.
+; Submitted by Science United
+; 2,6,61,507,1048447,134216703,1073739775,9007199250546687,5192296858534827626278696515534847,187072209578355573530071658285452771612302071824383
+; Formula: a(n) = A133067(n)/(2^n)
+
+mov $1,2
+pow $1,$0
+seq $0,133067 ; Perfect numbers divided by 2, minus 1.
+div $0,$1
