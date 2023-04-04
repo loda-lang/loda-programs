@@ -1,0 +1,29 @@
+; A258498: Number of words of length 2n such that the index set of occurring letters is {1, 2, ..., k}, all letters are introduced in ascending order, and the words can be built by repeatedly inserting doublets into the initially empty word.
+; Submitted by USTL-FIL (Lille Fr)
+; 1,1,3,15,105,933,9988,124449,1761287,27813479,483482018,9153385959,187129080977,4102129113670,95861136747795,2376234441556411,62216635372018209,1714347701138957189,49553280367466054768,1498300016807379304877,47270249397381096576643,1552622164801111031390744,52985511638604020077485347,1875301327815801734062284189,68721003846506466573722632068,2603499971086731672896505174365,101829985271652677756829752458975,4106697423106877750693140299673930,170569121813355707193483685318232197
+
+mov $1,119
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  mov $4,$0
+  seq $4,157491 ; A050165*A130595 as infinite lower triangular matrices.
+  mov $5,0
+  lpb $0
+    add $5,1
+    sub $0,$5
+  lpe
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $0,$4
+  add $1,$0
+lpe
+mov $0,$1
+sub $0,119
