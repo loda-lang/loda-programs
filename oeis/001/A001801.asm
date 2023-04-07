@@ -4,7 +4,19 @@
 
 add $0,4
 mov $1,$0
+mov $2,1
+mov $4,1
 bin $0,4
-seq $1,161200 ; Numerators in expansion of (1-x)^(3/2).
+lpb $1
+  mov $3,$1
+  mul $4,$1
+  sub $1,1
+  mul $3,2
+  sub $3,5
+  mul $2,$3
+lpe
+gcd $4,$2
+div $2,$4
+mov $1,$2
 mul $1,$0
 mov $0,$1

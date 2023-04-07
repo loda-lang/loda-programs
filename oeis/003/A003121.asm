@@ -7,6 +7,6 @@ mov $1,$0
 add $1,1
 bin $1,2
 seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $0,86205 ; Determinant of n X n matrix M_(i,j)=binomial(i^2, j).
+seq $0,86205 ; Determinant of n X n matrix M_(i,j) = binomial(i^2, j).
 div $1,$0
 mov $0,$1

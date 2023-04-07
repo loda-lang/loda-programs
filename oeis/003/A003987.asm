@@ -1,4 +1,4 @@
-; A003987: Table of n XOR m (or Nim-sum of n and m) read by antidiagonals, i.e., with entries in the order (n,m) = (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), ...
+; A003987: Table of n XOR m (or Nim-sum of n and m) read by antidiagonals with m>=0, n>=0.
 ; Submitted by Simon Strandgaard
 ; 0,1,1,2,0,2,3,3,3,3,4,2,0,2,4,5,5,1,1,5,5,6,4,6,0,6,4,6,7,7,7,7,7,7,7,7,8,6,4,6,0,6,4,6,8,9,9,5,5,1,1,5,5,9,9,10,8,10,4,2,0,2,4,10,8,10,11,11,11,11,3,3,3,3,11,11,11,11,12,10,8,10,12,2,0,2,12,10,8,10,12,13,13,9,9,13,13,1,1,13
 
