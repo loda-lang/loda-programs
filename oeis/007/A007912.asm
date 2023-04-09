@@ -4,5 +4,14 @@
 
 mov $1,$0
 add $1,3
-seq $0,7911 ; a(n) = (n-1)!! - (n-2)!!.
+mov $3,1
+add $0,2
+lpb $0
+  mul $2,$0
+  add $2,$3
+  sub $0,1
+  mul $3,$0
+  sub $0,1
+lpe
+mov $0,$2
 mod $0,$1

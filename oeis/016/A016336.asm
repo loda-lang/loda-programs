@@ -5,10 +5,13 @@
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,10891 ; Inverse of 5th cyclotomic polynomial.
+  sub $2,1
+  mov $3,0
+  sub $3,$2
+  mod $3,5
+  pow $3,$3
   sub $0,18
   trn $0,11
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

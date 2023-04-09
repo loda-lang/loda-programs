@@ -6,6 +6,20 @@ mov $1,-1
 pow $1,$0
 add $1,1
 dif $0,2
-seq $0,16348 ; 182nd cyclotomic polynomial.
+mov $2,-1
+pow $2,$0
+add $0,1
+lpb $0
+  mov $4,$0
+  sub $4,1
+  sub $5,$4
+  mod $5,13
+  pow $5,$5
+  add $0,4
+  trn $0,11
+  add $3,$5
+lpe
+mov $0,$3
+mul $0,$2
 mul $0,$1
 div $0,2

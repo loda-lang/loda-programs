@@ -1,9 +1,30 @@
 ; A019740: Decimal expansion of e/3.
 ; Submitted by Jamie Morken(s4)
 ; 9,0,6,0,9,3,9,4,2,8,1,9,6,8,1,7,4,5,1,2,0,0,9,5,8,2,3,7,8,4,2,2,0,8,3,2,5,8,5,7,4,9,0,3,1,2,3,3,3,1,9,8,5,8,3,2,2,3,2,2,5,4,2,5,7,4,6,9,2,2,1,0,1,1,7,8,4,9,1,9,8,1,9,0,4,6,0,7,2,6,1,7,5,0,5,5,4,7,5,8
-; Formula: a(n) = (A011543(n+1)/3)%10
 
 add $0,1
-seq $0,11543 ; Decimal expansion of e truncated to n places.
+mov $2,0
+mov $1,0
+add $0,1
+mov $3,$0
+mul $3,5
+lpb $3
+  add $2,56
+  mul $2,$3
+  mov $5,$3
+  div $5,3
+  add $5,1
+  add $1,$2
+  div $1,$5
+  div $2,$5
+  sub $3,1
+lpe
+mov $4,10
+pow $4,$0
+mul $2,5
+div $2,$4
+div $1,2
+div $1,$2
+mov $0,$1
 div $0,3
 mod $0,10

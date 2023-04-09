@@ -5,6 +5,21 @@
 add $0,3
 mov $1,$0
 div $1,2
-seq $0,8760 ; Expansion of (1+x^17)/((1-x)*(1-x^2)*(1-x^3)).
-sub $0,1
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $6,$0
+  add $6,6
+  mov $3,$0
+  mul $3,$6
+  div $3,12
+  add $3,1
+  add $4,$5
+  add $4,14
+  add $2,$3
+  add $5,$2
+lpe
+mov $0,$2
 sub $0,$1
+sub $0,1

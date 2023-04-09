@@ -8,8 +8,13 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
+  mov $6,$1
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $6,1
+  sub $6,$1
   mov $3,$1
-  seq $3,7517 ; a(n) = phi(n) * (sigma(n) - n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mul $3,$6
   mod $3,$5
   cmp $3,0
   sub $0,$3
