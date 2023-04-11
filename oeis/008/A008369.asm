@@ -3,8 +3,13 @@
 ; 1,1,4,6,11,16,25,33,47,60,79,98,124
 
 lpb $0
+  mov $3,3
+  mul $3,$0
+  add $3,8
   mov $2,$0
-  seq $2,212986 ; Number of (w,x,y) with all terms in {0,...,n} and 2w = 3x+y.
+  mul $2,$3
+  div $2,12
+  add $2,1
   sub $0,2
   add $1,$2
 lpe

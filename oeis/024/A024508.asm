@@ -9,7 +9,10 @@ add $2,3
 mul $2,3
 pow $2,2
 lpb $2
-  seq $3,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
+  add $3,1
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+  div $3,4
   trn $3,3
   add $3,$4
   cmp $3,1

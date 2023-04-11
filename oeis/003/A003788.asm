@@ -1,11 +1,20 @@
 ; A003788: Order of universal Chevalley group A_n (4).
-; Submitted by amazing
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,60,60480,987033600,258492255436800,1083930404878024704000,72736898347485916060188672000,78099458182389588115529148326215680000,1341733356588640095264385107865053233298800640000
-; Formula: a(n) = (A053291(n+1)-3)/3+1
+; Formula: a(n) = (b(n)-3)/3+1, b(n) = b(n-1)*(c(n-1)+1)*(3*c(n-1)+c(n-1)+3), b(1) = 180, b(0) = 3, c(n) = 3*c(n-1)+c(n-1)+3, c(1) = 15, c(0) = 3
 
-mov $1,$0
-add $1,1
-seq $1,53291 ; Nonsingular n X n matrices over GF(4).
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,1
+  add $3,$2
+  mov $4,3
+  mul $4,$3
+  add $2,$4
+  mul $1,$2
+  mul $1,$3
+lpe
 mov $0,$1
 sub $0,3
 div $0,3

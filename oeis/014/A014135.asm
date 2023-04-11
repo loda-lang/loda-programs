@@ -6,5 +6,32 @@ mov $1,$0
 mul $1,2
 add $1,1
 div $1,3
-seq $1,14093 ; Inverse of 84th cyclotomic polynomial.
+mov $2,-1
+pow $2,$1
+add $2,1
+dif $1,2
+mov $3,-1
+pow $3,$1
+lpb $1
+  add $4,21
+  add $7,21
+  mod $1,$4
+  mov $5,-1
+  mov $6,4
+  add $6,$1
+  div $1,10
+lpe
+sub $5,$6
+div $5,4
+add $1,1
+mul $1,$5
+mul $1,2
+gcd $7,2
+mul $7,2
+sub $1,$7
+add $1,6
+div $1,2
+mul $1,$3
+mul $1,$2
+div $1,2
 mov $0,$1

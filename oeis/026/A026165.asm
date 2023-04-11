@@ -1,22 +1,25 @@
 ; A026165: Number of (s(0), s(1), ..., s(n)) such that every s(i) is a nonnegative integer, s(0) = 2, |s(1) - s(0)| = 1, |s(i) - s(i-1)| <= 1 for i >= 2. Also sum of numbers in row n+1 of the array T in A026148.
-; Submitted by Jon Maiga
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,6,17,49,141,407,1177,3411,9904,28808,83931,244895,715534,2093262,6130767,17974779,52751358,154950378,455524203,1340182539,3945723033,11624603235,34268836707,101081770181,298320243976,880875609552,2602287231901,7691173199897,22741315926549,67268856947231,199057515581737,589251266656467,1744905349079966,5168746167790714,15315586344618723,45395284037738611,134589310605804815,399142116605577309,1184013085525412747,3513116440124099017,10426321865121140904,30950522052185343168
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  max $0,0
-  seq $0,5774 ; Number of directed animals of size n (k=1 column of A038622); number of (s(0), s(1), ..., s(n)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| <= 1 for i = 1,2,...,n, where s(0) = 2; also sum of row n+1 of array T in A026323.
-  mul $0,2
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  mov $5,$0
+  add $5,1
+  div $0,2
+  bin $5,$0
+  mov $6,$4
+  bin $6,$4
+  mul $6,$5
+  mul $1,$6
+  add $3,$1
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
-div $0,2
+mov $0,$3

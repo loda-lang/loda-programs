@@ -4,6 +4,25 @@
 
 mov $1,1
 cmp $1,$0
+sub $0,1
 trn $0,1
-seq $0,307788 ; Number of valid hook configurations of permutations of [n] that avoid the patterns 231 and 321.
+mov $5,$0
+min $0,0
+mov $3,$5
+add $3,1
+lpb $3
+  sub $3,1
+  trn $0,2
+  add $0,2
+  mov $2,$5
+  sub $2,$3
+  mov $4,$2
+  add $4,$3
+  bin $4,$2
+  add $2,$0
+  seq $2,25250 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-3)*a(3) for n >= 4.
+  mul $4,$2
+  add $6,$4
+lpe
+mov $0,$6
 sub $0,$1
