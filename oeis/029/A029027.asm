@@ -11,8 +11,7 @@ lpb $0
   pow $3,2
   div $3,6
   add $3,$2
-  mul $3,2
-  div $3,12
+  div $3,6
   add $3,1
   sub $0,2
   trn $0,8

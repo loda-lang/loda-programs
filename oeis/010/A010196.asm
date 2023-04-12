@@ -12,7 +12,7 @@ lpb $0
   seq $2,10135 ; Continued fraction for sqrt(45).
   mov $1,$2
   sub $1,1
-  seq $1,128309 ; 2*A000069(n).
+  seq $1,128309 ; a(n) = 2*A000069(n).
   div $1,2
   add $3,1
 lpe

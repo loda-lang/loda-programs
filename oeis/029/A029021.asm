@@ -6,10 +6,14 @@ add $0,3
 lpb $0
   sub $0,3
   sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,25765 ; Expansion of 1/((1-x)(1-x^2)(1-x^9)).
-  mov $3,4
+  mov $2,3
+  add $2,$0
+  pow $2,2
+  div $2,6
+  add $2,$0
+  div $2,6
+  add $2,1
   add $1,$2
+  mov $3,4
 lpe
 mov $0,$1

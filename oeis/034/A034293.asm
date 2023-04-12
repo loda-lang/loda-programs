@@ -1,4 +1,4 @@
-; A034293: Numbers n such that 2^n does not contain the digit 2 (probably finite).
+; A034293: Numbers k such that 2^k does not contain the digit 2 (probably finite).
 ; Submitted by Opolis
 ; 0,2,3,4,6,12,14,16,20,22,23,26,34,35,36,39,42,46,54,64,74,83,168
 

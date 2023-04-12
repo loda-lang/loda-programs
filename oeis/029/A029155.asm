@@ -4,10 +4,16 @@
 
 add $0,6
 lpb $0
-  sub $0,6
   mov $2,$0
-  max $2,0
-  seq $2,25801 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^12)).
+  sub $2,4
+  mov $3,$2
+  div $3,3
+  sub $0,6
+  div $2,2
+  sub $2,$3
+  add $2,1
+  pow $2,2
+  div $2,4
   add $1,$2
 lpe
 mov $0,$1

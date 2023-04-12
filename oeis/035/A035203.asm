@@ -13,7 +13,20 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,322829 ; a(n) = Jacobi (or Kronecker) symbol (n/21).
+  mov $5,$0
+  mul $5,108
+  add $5,43
+  div $5,28
+  mul $5,4
+  div $5,3
+  sub $5,1
+  mov $6,$0
+  mul $6,$5
+  mul $0,6
+  sub $0,$6
+  sub $0,1
+  mod $0,3
+  add $0,1
   mul $1,$0
   add $3,$1
 lpe

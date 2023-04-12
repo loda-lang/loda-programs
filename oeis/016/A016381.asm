@@ -1,15 +1,15 @@
 ; A016381: 319th cyclotomic polynomial.
-; Submitted by Simon Strandgaard
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,0,1,-1,0,0,0,0,0,1,-1,0,0,1,-1,0,0,0,0,0,1,-1,0,0,1,-1,0,1,-1,0,0,1,-1,0,0,1,-1,0,1,-1,0,0,1,-1,0,0,1,-1,0,1,-1,0,0,1,-1,0,1,0,-1,0,1,-1,0,0,1,-1,0,1,0
 
-mov $3,3
 add $0,3
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,14038 ; Inverse of 29th cyclotomic polynomial.
-  add $1,$2
-  mov $3,11
+  sub $0,3
+  sub $0,$1
+  sub $3,$0
+  mod $3,29
+  pow $3,$3
+  mov $1,8
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2

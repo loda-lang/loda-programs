@@ -8,9 +8,15 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
+  mul $3,8
+  add $3,5
+  mov $6,97
+  mul $6,$3
+  div $6,113
   mul $3,4
-  add $3,2
-  seq $3,62389 ; a(n) = floor( (2n-1)*Pi/2 ).
+  sub $3,1
+  sub $3,$6
+  div $3,2
   mov $5,$3
   mul $3,338
   gcd $3,4

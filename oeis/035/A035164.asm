@@ -13,9 +13,17 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  seq $5,188510 ; Expansion of x*(1 + x^2)/(1 + x^4) in powers of x.
-  seq $0,11583 ; Legendre symbol (n,13).
-  mul $0,$5
+  sub $5,1
+  mod $5,8
+  sub $5,3
+  mod $5,2
+  mov $6,0
+  sub $6,$5
+  pow $0,6
+  add $0,1
+  mod $0,13
+  sub $0,1
+  mul $0,$6
   mul $1,$0
   add $3,$1
 lpe
