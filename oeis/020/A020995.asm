@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,280185 ; a(n) = n - A004090(n), where A004090 is the sum of digits of the Fibonacci numbers A000045.
+  seq $3,4090 ; Sum of digits of Fibonacci numbers.
+  mov $4,$1
+  sub $4,$3
+  mov $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

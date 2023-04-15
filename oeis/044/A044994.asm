@@ -4,4 +4,4 @@
 ; Formula: a(n) = A005836(A030130(n))
 
 seq $0,30130 ; Binary expansion contains a single 0.
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.

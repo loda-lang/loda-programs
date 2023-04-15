@@ -1,4 +1,4 @@
-; A045223: Numbers n with property that in base 5 representation the numbers of 1's and 2's are 1 and 2, respectively.
+; A045223: Numbers whose base-5 representation contains exactly one 1 and two 2's.
 ; Submitted by LM
 ; 37,57,61,137,177,185,188,189,192,197,212,237,257,261,277,285,288,289,292,297,301,305,308,309,316,321,332,336,357,361,412,432,436,537,557,561,637,677,685,688,689,692,697,712,737,877
 
@@ -15,8 +15,7 @@ lpb $2
     mod $5,10
     sub $5,1
     trn $5,4
-    mul $3,2
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4

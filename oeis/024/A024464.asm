@@ -12,7 +12,9 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
+  add $0,1
+  mul $0,55
+  div $0,34
   add $3,$0
   add $4,$3
 lpe

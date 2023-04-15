@@ -1,9 +1,18 @@
 ; A040142: Continued fraction for sqrt(155).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 12,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2
-; Formula: a(n) = 2*(A010197(n)/2)+2
 
-seq $0,10197 ; Continued fraction for sqrt(138).
+mov $2,$0
+gcd $2,4
+mov $1,4
+pow $1,$2
+lpb $0
+  mov $0,1
+  mul $1,2
+lpe
+div $1,24
+mov $0,$1
+add $0,1
 div $0,2
 mul $0,2
 add $0,2

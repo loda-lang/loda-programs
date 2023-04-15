@@ -15,7 +15,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $0,4
-  seq $0,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  mov $5,$0
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $0,$5
+  add $0,1
   mul $0,$3
   mul $1,$0
   max $3,$1

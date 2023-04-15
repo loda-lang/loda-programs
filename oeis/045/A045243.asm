@@ -1,4 +1,4 @@
-; A045243: Numbers n with property that in base 5 representation the numbers of 1's and 3's are 2 and 3, respectively.
+; A045243: Numbers whose base-5 representation contains exactly two 1's and three 3's.
 ; Submitted by Landjunge
 ; 843,1043,1083,1091,2043,2083,2091,2283,2291,2331,3343,3543,3583,3591,3843,4093,4143,4193,4203,4213,4215,4217,4219,4223,4243,4343,4593,4793,4833,4841,5043,5083,5091,5143,5193,5203,5213
 
@@ -14,8 +14,7 @@ lpb $2
     mul $5,16
     mod $5,10
     trn $5,5
-    mul $3,2
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4

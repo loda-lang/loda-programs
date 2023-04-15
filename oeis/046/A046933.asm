@@ -1,7 +1,14 @@
 ; A046933: Number of composites between successive primes.
-; Submitted by Dave Studdert
+; Submitted by Science United
 ; 0,1,1,3,1,3,1,3,5,1,5,3,1,3,5,5,1,5,3,1,5,3,5,7,3,1,3,1,3,13,3,5,1,9,1,5,5,3,5,5,1,9,1,3,1,11,11,3,1,3,5,1,9,5,5,5,1,5,3,1,9,13,3,1,3,13,5,9,1,3,5,7,5,5,3,5,7,3,7,9,1,9,1,5,3,5,7,3,1,3,11,7,3,7,3,5,11,1,17,5
+; Formula: a(n) = A159477(b(n))%b(n)-1, b(n) = A159477(b(n-1)), b(0) = 2
 
-seq $0,40
-seq $0,13632
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$1
+seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mod $0,$1
 sub $0,1

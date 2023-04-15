@@ -1,13 +1,25 @@
 ; A040297: Continued fraction for sqrt(315).
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 17,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1,34,1,2,1
 
-gcd $0,262156
-mul $0,42
-mod $0,13
+mul $0,2
 mov $1,$0
-div $1,5
-mul $1,12
-add $0,$1
-sub $0,2
-dif $0,8
+mov $2,10
+gcd $0,8
+lpb $1
+  mov $1,3
+  add $0,6
+  mov $2,7
+lpe
+mul $0,$2
+trn $0,63
+add $0,1
+dif $0,2
+mov $3,$0
+mul $3,2
+div $0,4
+add $3,$0
+mul $0,7
+add $0,$3
+dif $0,2
+dif $0,4

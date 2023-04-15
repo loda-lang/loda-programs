@@ -1,4 +1,4 @@
-; A045217: Numbers n with property that in base 5 representation the numbers of 0's and 4's are 3 and 3, respectively.
+; A045217: Numbers whose base-5 representation contains exactly three 0's and three 4's.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 12524,12604,12620,13004,13020,13100,15004,15020,15100,15500,15749,16149,16229,16245,18149,18229,18245,18629,18645,18725,28149,28229,28245,28629,28645,28725,30629,30645,30725,31125
 

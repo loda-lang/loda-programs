@@ -13,7 +13,18 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,322796 ; a(n) = Kronecker symbol (6/n).
+  mov $5,1
+  add $5,$0
+  mod $5,3
+  sub $5,1
+  sub $0,1
+  mod $0,8
+  sub $0,3
+  mod $0,2
+  mov $6,0
+  sub $6,$0
+  mov $0,$6
+  mul $0,$5
   mul $1,$0
   add $3,$1
   trn $4,1

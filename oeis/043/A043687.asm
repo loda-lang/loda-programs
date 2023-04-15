@@ -7,7 +7,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,33264 ; Number of blocks of {1,0} in the binary expansion of n.
+  add $3,1
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  add $3,1
+  div $3,2
   cmp $3,1
   sub $0,$3
   add $1,1

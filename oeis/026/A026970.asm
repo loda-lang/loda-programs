@@ -9,8 +9,10 @@ div $0,$2
 mul $0,2
 add $0,$2
 mul $0,4
-mov $1,$2
-seq $1,14131 ; a(n) = 2*a(n-1) if n odd else 2*a(n-1) + 6.
+mov $1,2
+pow $1,$2
+mul $1,2
+div $1,3
+mul $1,6
 mul $0,$1
-mul $0,2
-div $0,48
+div $0,24

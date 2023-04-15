@@ -17,8 +17,8 @@ lpb $0
   div $1,2
   seq $1,10225 ; Continued fraction for sqrt(183).
   dif $1,4
-  mul $1,90
-  div $1,72
+  mul $1,5
+  div $1,4
   mul $1,$2
   add $1,$4
 lpe

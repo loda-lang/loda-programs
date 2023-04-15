@@ -1,6 +1,7 @@
 A000004: The zero sequence.
 A000012: The simplest sequence of positive numbers: the all 1's sequence.
 A000065: -1 + number of partitions of n.
+A000142: Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 A001247: Squares of Bell numbers.

@@ -7,8 +7,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
+  dif $6,2
+  sub $6,1
+  seq $6,62570 ; a(n) = phi(2*n).
   mov $3,$1
-  seq $3,2618 ; a(n) = n*phi(n).
+  add $3,1
+  mul $3,$6
   sub $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

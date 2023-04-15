@@ -1,30 +1,26 @@
 ; A045454: Primes congruent to {1, 5, 6} mod 7.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 5,13,19,29,41,43,47,61,71,83,89,97,103,113,127,131,139,167,173,181,197,211,223,229,239,251,257,271,281,293,307,313,337,349,379,383,397,419,421,433,439,449,461,463,467,491,503,509,523,547,587,593,601,607,617,631,643,659,673,677,691,701,719,727,733,743,757,761,769,797,811,827,839,853,859,881,883,887,911,929,937,953,967,971,1009,1013,1021,1049,1051,1063,1069,1091,1093,1097,1153,1163,1181,1217,1223,1231
 
-mov $1,$0
-min $1,1
-add $0,$1
-mov $2,2
-mov $3,$0
-add $3,6
-pow $3,3
-lpb $3
-  mov $4,$7
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$4
-  add $2,7
-  mov $5,$0
-  max $5,0
-  cmp $5,$0
-  mul $3,$5
-  sub $3,18
-  gcd $6,7
-  add $6,$2
-  add $6,$2
-  sub $6,1
-  div $6,5
-  mov $7,$6
+mov $2,$0
+add $2,6
+pow $2,3
+lpb $2
+  mov $3,$6
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mov $1,$4
+  add $1,$6
+  mul $2,$4
+  sub $2,15
+  add $5,2
+  mod $5,7
+  add $5,$1
+  mov $6,$5
 lpe
-mov $0,$7
+mov $0,$5
 add $0,1

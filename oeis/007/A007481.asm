@@ -10,8 +10,7 @@ lpb $1
   add $2,1
   mul $2,-1
   sub $2,$0
-  mul $2,2
-  div $2,4
+  div $2,2
   mul $0,4
   add $0,$2
 lpe
