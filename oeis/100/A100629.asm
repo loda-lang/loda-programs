@@ -1,10 +1,25 @@
 ; A100629: a(n) = 2^(5*prime(n) + 1).
 ; Submitted by Jamie Morken(w4)
 ; 2048,65536,67108864,68719476736,72057594037927936,73786976294838206464,77371252455336267181195264,79228162514264337593543950336,83076749736557242056487941267521536,89202980794122492566142873090593446023921664
-; Formula: a(n) = 2*32^A000040(n)
 
-seq $0,40 ; The prime numbers.
+mov $2,$0
+mul $2,2
+max $2,1
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  max $5,$3
+  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $5,2
+  sub $2,$5
+  add $3,2
+  sub $4,$2
+lpe
+add $2,$3
+sub $2,1
 mov $1,32
-pow $1,$0
+pow $1,$2
 mul $1,2
 mov $0,$1

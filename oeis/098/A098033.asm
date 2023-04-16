@@ -1,14 +1,40 @@
 ; A098033: Parity of p*(p+1)/2 for n-th prime p.
-; Submitted by mmonnin
+; Submitted by Fardringle
 ; 1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,0,1,0,0,1,1,1,1,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1
-; Formula: a(n) = (b(n)/2+1)%2, b(n) = A159477(max(b(n-1),2)), b(0) = 0
 
-lpb $0
-  sub $0,1
-  max $1,2
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $2,$0
+mul $2,2
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  mov $6,0
+  max $1,$3
+  add $1,1
+  lpb $1
+    gcd $6,2
+    mov $7,$1
+    div $7,3
+    lpb $7
+      mov $5,$1
+      mod $5,$6
+      add $6,1
+      sub $7,$5
+    lpe
+    div $1,$6
+    pow $1,2
+    mov $6,1
+  lpe
+  mov $1,$6
+  mul $1,2
+  sub $2,$1
+  add $3,2
+  sub $4,$2
 lpe
-div $1,2
-mov $0,$1
+add $2,$3
+mov $0,$2
+sub $0,1
+div $0,2
 add $0,1
 mod $0,2

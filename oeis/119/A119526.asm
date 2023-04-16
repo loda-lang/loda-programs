@@ -1,7 +1,23 @@
 ; A119526: Odd denominators of n * n-th harmonic number = A027611[2^n].
 ; Submitted by [AF>France] Cyril BRANDT
 ; 1,1,3,35,45045,4512611027925,2052546673789621992207225,104326219460917277964091790659689347988584942875383375,65134729714436885436168002936626505274493455112928327538888490982573786624726691153873697518277375333357875
-; Formula: a(n) = A096620(A000225(n))
 
-seq $0,225 ; a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that name is usually reserved for A001348.)
-seq $0,96620 ; Denominator of -3*n + 2*(1+n)*HarmonicNumber(n).
+mov $1,2
+pow $1,$0
+mov $3,$1
+sub $1,1
+mov $4,1
+mov $0,$1
+lpb $0
+  sub $0,1
+  add $5,1
+  mul $6,$5
+  add $6,$4
+  mul $4,$5
+lpe
+gcd $6,$4
+div $4,$6
+mov $2,$4
+gcd $2,$3
+mov $0,$4
+div $0,$2

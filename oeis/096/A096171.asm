@@ -7,7 +7,8 @@ add $2,3
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,193562 ; Number of divisors of n^4+1.
+  pow $3,4
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,4
   cmp $3,0
   sub $0,$3

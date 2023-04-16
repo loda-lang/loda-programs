@@ -1,10 +1,16 @@
 ; A092187: A092186(n)/2.
 ; Submitted by Christian Krause
 ; 1,1,4,6,36,72,576,1440,14400,43200,518400,1814400,25401600,101606400,1625702400,7315660800,131681894400,658409472000,13168189440000,72425041920000,1593350922240000,9560105533440000,229442532802560000,1491376463216640000,38775788043632640000
-; Formula: a(n) = (A152875(n)*gcd(n,2))/4
 
+mov $2,2
 mov $1,$0
-seq $1,152875 ; Number of permutations of {1,2,...,n} (n >= 2) with all odd entries preceding all even entries or all even entries preceding all odd entries.
+lpb $1
+  mov $3,$1
+  add $3,3
+  div $3,2
+  sub $1,1
+  mul $2,$3
+lpe
 gcd $0,2
-mul $0,$1
+mul $0,$2
 div $0,4

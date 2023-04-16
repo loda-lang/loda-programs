@@ -8,7 +8,8 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,130675 ; Factorial of bigomega(n).
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   gcd $3,$5
   cmp $3,1
   sub $0,$3

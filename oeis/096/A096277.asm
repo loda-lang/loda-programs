@@ -1,16 +1,16 @@
 ; A096277: Sum of successive sums of successive primes: a(n) = s(n) + s(n+1) where s(n) = prime(n) + prime(n+1) (A001043).
-; Submitted by dthonon
+; Submitted by Kotenok2000
 ; 13,20,30,42,54,66,78,94,112,128,146,162,174,190,212,232,248,266,282,296,314,334,358,384,402,414,426,438,462,498,526,544,564,588,608,628,650,670,692,712,732,756,774,786,806,844,884,906,918,934,952,972,1000,1028,1052,1072,1088,1106,1122,1140,1176,1218,1242,1254,1278,1316,1352,1380,1398,1414,1438,1466,1492,1514,1534,1558,1584,1608,1638,1668,1692,1716,1736,1754,1774,1798,1824,1842,1854,1876,1912,1944,1968,1992,2014,2042,2074,2108,2152,2192
+; Formula: a(n) = 2*A159477(b(n))+b(n)+A159477(A159477(b(n))), b(n) = A159477(b(n-1)), b(0) = 2
 
-add $0,1
-mov $3,2
-lpb $3
-  sub $3,1
-  add $0,$3
+mov $1,2
+lpb $0
   sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,1043 ; Numbers that are the sum of 2 successive primes.
-  add $1,$2
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $0,$1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $0,$1
+add $0,$1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $0,$1

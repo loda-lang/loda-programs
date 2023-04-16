@@ -7,8 +7,13 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $5,1
+  seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mov $3,$1
-  seq $3,55736 ; Difference between number of prime factors of n and of phi(n).
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  sub $3,$5
   max $3,0
   min $3,1
   sub $0,$3

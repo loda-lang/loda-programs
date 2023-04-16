@@ -1,14 +1,24 @@
 ; A056357: Number of bracelet structures using exactly two different colored beads.
 ; Submitted by Sphynx
 ; 0,1,1,3,3,7,8,17,22,43,62,121,189,361,611,1161,2055,3913,7154,13647,25481,48733,92204,176905,337593,649531,1246862,2405235,4636389,8964799,17334800,33588233,65108061,126390031,245492243,477353375,928772649,1808676325,3524337979,6872485103,13409202675,26179922023,51141124286,99957747387,195470831355,382443112537,748607855768,1466024067849,2872202028516,5629516646995,11038251159311,21651955485303,42486822491889,83400061453513,163767326286011,321685824284099,632084292449765,1242372584062411
-; Formula: a(n) = ((2^((n+1)/2)+A000013(n+1))-2)/2
 
 add $0,1
 mov $1,$0
 div $1,2
 mov $2,2
 pow $2,$1
-seq $0,13 ; Definition (1): Number of n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.
+mov $3,$0
+sub $0,1
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$3
+  gcd $0,$4
+  seq $0,45654 ; Number of 2n-bead balanced binary strings, rotationally equivalent to complement.
+  add $5,$0
+lpe
+div $5,$3
+mov $0,$5
+div $0,2
 add $0,$2
-sub $0,2
 div $0,2

@@ -1,11 +1,18 @@
 ; A071378: Largest proper divisor of n^3.
 ; Submitted by Simon Strandgaard
 ; 4,9,32,25,108,49,256,243,500,121,864,169,1372,1125,2048,289,2916,361,4000,3087,5324,529,6912,3125,8788,6561,10976,841,13500,961,16384,11979,19652,8575,23328,1369,27436,19773,32000,1681,37044,1849,42592
-; Formula: a(n) = A032742(n+1)*(n+2)^2
 
 mov $1,$0
 add $1,2
 pow $1,2
 add $0,1
-seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+mov $2,$0
+lpb $0
+  mov $3,$0
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$3
+lpe
+add $2,1
+div $2,$3
+mov $0,$2
 mul $0,$1

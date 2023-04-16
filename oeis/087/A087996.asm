@@ -4,11 +4,18 @@
 
 mov $2,$0
 add $0,1
-seq $0,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
-sub $2,$0
+lpb $0
+  mov $4,$0
+  mod $4,10
+  div $0,10
+  mul $3,10
+  add $3,$4
+lpe
+sub $2,$3
 add $2,1
 mov $1,$2
 cmp $1,0
 add $2,$1
+mov $0,$3
 mul $0,2
 mod $0,$2

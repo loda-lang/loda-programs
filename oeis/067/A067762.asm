@@ -7,7 +7,11 @@ pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,336386 ; a(n) = bigomega(sigma(n)) - bigomega(n), where bigomega (A001222) gives the number of prime factors with multiplicity, and sigma (A000203) gives the sum of divisors.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $4,$1
+  seq $4,58063 ; Number of prime factors (when counted with multiplicity) of sigma(n), the sum of divisors of n.
+  sub $4,$3
+  mov $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

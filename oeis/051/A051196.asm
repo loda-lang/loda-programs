@@ -5,5 +5,28 @@
 mov $1,$0
 add $1,3
 add $1,$0
-seq $0,50181 ; T(2n+3, n), array T as in A051168; a count of Lyndon words.
+add $0,1
+lpb $0
+  sub $0,1
+  mov $7,3
+  pow $7,$0
+  div $7,3
+  mul $3,2
+  add $3,$0
+  bin $3,$0
+  mov $4,$5
+  bin $4,$2
+  sub $0,1
+  trn $0,1
+  add $2,1
+  mul $4,$3
+  mul $4,$7
+  div $4,$2
+  add $5,2
+  max $6,256
+  add $6,$4
+  mov $3,$2
+lpe
+mov $0,$6
+sub $0,256
 mul $0,$1

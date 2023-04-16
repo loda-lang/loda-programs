@@ -10,7 +10,9 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,51953 ; Cototient(n) := n - phi(n).
+  mov $4,$0
+  seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  sub $0,$4
   mul $0,3
   add $3,$0
 lpe

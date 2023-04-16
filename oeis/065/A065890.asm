@@ -1,25 +1,14 @@
 ; A065890: Number of composites less than the n-th prime.
-; Submitted by Jason Jung
+; Submitted by Science United
 ; 0,0,1,2,5,6,9,10,13,18,19,24,27,28,31,36,41,42,47,50,51,56,59,64,71,74,75,78,79,82,95,98,103,104,113,114,119,124,127,132,137,138,147,148,151,152,163,174,177,178,181,186,187,196,201,206,211,212,217,220,221,230,243,246,247,250,263,268,277,278,281,286,293,298,303,306,311,318,321,328,337,338,347,348,353,356,361,368,371,372,375,386,393,396,403,406,411,422,423,440
+; Formula: a(n) = -n+b(n)-2, b(n) = A159477(b(n-1)), b(1) = 3, b(0) = 2
 
-mov $1,$0
-mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
+mov $2,2
+lpb $0
+  sub $0,1
+  add $1,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
-add $2,$3
-sub $2,1
+sub $2,$1
 mov $0,$2
-sub $0,$1
 sub $0,2

@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,168597 ; Squares of the central trinomial coefficients (A002426).
+  seq $0,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
+  pow $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

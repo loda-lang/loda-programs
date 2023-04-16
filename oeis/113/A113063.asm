@@ -11,6 +11,5 @@ lpb $0
 lpe
 seq $0,217219 ; Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
 mul $0,$1
-mul $0,2
-div $0,12
+div $0,6
 mod $0,10

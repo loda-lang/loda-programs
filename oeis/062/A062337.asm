@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,52220 ; Numbers whose sum of digits is 6.
+  seq $3,23688 ; Numbers with exactly 6 ones in binary expansion.
+  seq $3,1202 ; a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

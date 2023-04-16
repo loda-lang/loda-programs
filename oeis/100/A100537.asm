@@ -7,5 +7,13 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-seq $1,71724 ; a(n) = 3*binomial(2n, n-1)/(n+2), n > 0, with a(0)=1.
-mov $0,$1
+mov $3,4
+mul $3,$1
+sub $3,1
+div $3,2
+mov $2,$3
+bin $2,$1
+sub $1,3
+bin $3,$1
+sub $2,$3
+mov $0,$2

@@ -3,4 +3,9 @@
 
 pow $0,2
 div $0,2
-seq $0,5369 ; a(n) = 1 if n is of the form m(m+1), else 0.
+lpb $0
+  sub $2,2
+  add $0,$2
+lpe
+bin $1,$0
+mov $0,$1

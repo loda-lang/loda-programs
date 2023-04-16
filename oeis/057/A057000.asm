@@ -1,26 +1,11 @@
 ; A057000: a(n) = phi(n+1) - phi(n).
-; Submitted by PDW
+; Submitted by Science United
 ; 0,1,0,2,-2,4,-2,2,-2,6,-6,8,-6,2,0,8,-10,12,-10,4,-2,12,-14,12,-8,6,-6,16,-20,22,-14,4,-4,8,-12,24,-18,6,-8,24,-28,30,-22,4,-2,24,-30,26,-22,12,-8,28,-34,22,-16,12,-8,30,-42,44,-30,6,-4,16,-28,46,-34,12,-20,46,-46,48,-36,4,-4,24,-36,54,-46,22,-14,42,-58,40,-22,14,-16,48,-64,48,-28,16,-14,26,-40,64,-54,18,-20,60
+; Formula: a(n) = -A000010(n)+A000010(n+1)
 
-mov $3,2
-lpb $3
-  add $0,$3
-  mov $7,2
-  lpb $7
-    sub $7,1
-    sub $0,1
-    mov $2,$0
-    max $2,0
-    seq $2,39649 ; a(n) = phi(n)+1.
-    mov $3,0
-    mov $4,$2
-    mov $6,$7
-    mul $6,$2
-    add $1,$6
-  lpe
-  bin $5,$6
-  mul $5,$4
-  mov $4,$1
-  sub $4,$5
-lpe
-mov $0,$4
+mov $1,$0
+add $1,1
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+sub $1,$0
+mov $0,$1

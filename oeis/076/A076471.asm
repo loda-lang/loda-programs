@@ -6,8 +6,12 @@ add $0,1
 lpb $0
   add $0,$2
   mov $2,$1
-  seq $2,1043 ; Numbers that are the sum of 2 successive primes.
-  sub $0,$2
+  seq $2,40 ; The prime numbers.
+  mov $3,$2
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $3,$2
+  sub $0,$3
   add $1,1
+  mov $2,$3
 lpe
 mov $0,$1

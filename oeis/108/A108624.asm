@@ -4,5 +4,22 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,108623 ; G.f. satisfies x = (A(x)-(A(x))^2)/(1-A(x)-(A(x))^2).
+mov $2,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,$5
+  bin $3,$0
+  sub $5,1
+  trn $0,1
+  mov $4,$5
+  bin $4,$2
+  add $2,1
+  mul $4,$3
+  div $4,$2
+  sub $2,1
+  trn $2,1
+  add $6,$4
+lpe
+mov $0,$6
 mul $0,$1

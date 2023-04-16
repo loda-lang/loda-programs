@@ -9,7 +9,15 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $3,$1
-  seq $3,257295 ; Arithmetic mean of the digits of n, rounded to the nearest integer.
+  mul $3,2
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  mov $4,$3
+  seq $4,55642 ; Number of digits in the decimal expansion of n.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  mul $3,2
+  div $3,$4
+  add $3,1
+  div $3,2
   sub $3,1
   cmp $3,5
   sub $0,$3

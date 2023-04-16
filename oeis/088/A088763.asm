@@ -1,25 +1,29 @@
 ; A088763: a(n) = A087695(n)/2.
-; Submitted by Bunteck
+; Submitted by Science United
 ; 4,5,7,8,10,13,17,20,22,25,28,32,35,38,43,50,52,53,55,67,77,80,85,88,97,98,113,115,118,127,130,133,137,140,155,157,167,175,178,185,188,193,218,223,230,232,253,272,280,283,287,295,298,302,305,308,322,325,328,340,365,368,377,412,413,428,430,440,442,472,475,487,490,497,508,518,533,545,547,550,553,560,563,592,595,610,613,617,640,643,647,650,652,662,682,685,713,715,718,725
 
 mov $2,$0
-add $2,2
-pow $2,5
+add $2,6
+pow $2,3
 lpb $2
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  add $5,$4
-  sub $0,$3
-  add $1,6
+  add $3,2
+  add $6,$5
+  add $6,7
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,2
+  add $5,$3
+  sub $5,$1
+  add $5,1
+  mul $6,$5
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$6
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,$1
-  add $1,2
   mul $2,$4
   sub $2,1
-  add $4,5
 lpe
-mov $0,$1
-div $0,8
-add $0,1
+mov $0,$5
+sub $0,3
+div $0,2
+add $0,4

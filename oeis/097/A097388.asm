@@ -1,15 +1,13 @@
 ; A097388: 2n-th derivative of the Gaussian exp(-x^2) evaluated at x=0.
-; Submitted by Raul Prisacariu
+; Submitted by Science United
 ; 1,-2,12,-120,1680,-30240,665280,-17297280,518918400,-17643225600,670442572800,-28158588057600,1295295050649600,-64764752532480000,3497296636753920000,-202843204931727360000,12576278705767096320000
-; Formula: a(n) = b(n)/2, b(n) = 2*b(n-1)*(-2*n+1), b(1) = -4, b(0) = 2
 
-mov $1,2
-mov $2,-1
-lpb $0
-  sub $0,1
-  mul $1,$2
-  mul $1,2
-  sub $2,2
+mov $2,$0
+mov $0,2
+mov $1,1
+lpb $2
+  sub $2,1
+  sub $0,4
+  mul $1,$0
 lpe
 mov $0,$1
-div $0,2

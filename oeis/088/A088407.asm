@@ -8,7 +8,8 @@ lpb $3
   pow $3,0
   mov $0,$1
   trn $0,1
-  seq $0,52219 ; Numbers whose sum of digits is 5.
+  seq $0,14313 ; Numbers with exactly 5 ones in binary expansion.
+  seq $0,1202 ; a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
   mul $0,2
   mov $2,$0
   sub $2,1

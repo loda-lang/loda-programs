@@ -8,7 +8,9 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,193453 ; Number of odd divisors of phi(n).
+  seq $3,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+  sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,2
   sub $0,$3
   add $1,1

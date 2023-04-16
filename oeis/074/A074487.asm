@@ -1,15 +1,14 @@
 ; A074487: a(1)=1, then "jump over next square": a(n) = 2*(a(n-1)+1)^2-a(n-1).
-; Submitted by Merlin2331
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,7,121,29647,1757978161,6180974434379818327,76408889916913830205838054898189612841,11676636916670111980512852400247542904848802859324947344926081051625513021087
-; Formula: a(n) = b(n)+1, b(n) = binomial(2*b(n-1)+4,2), b(0) = 0
+; Formula: a(n) = binomial(2*a(n-1)+2,2)+1, a(0) = 1
 
+mov $1,1
 lpb $0
   sub $0,1
-  mov $2,3
-  add $2,$1
-  add $1,$2
   add $1,1
+  mul $1,2
   bin $1,2
+  add $1,1
 lpe
 mov $0,$1
-add $0,1

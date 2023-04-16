@@ -6,7 +6,13 @@ mov $2,$0
 add $2,10
 mov $3,$0
 add $3,$2
-seq $0,914 ; Stirling numbers of the first kind: s(n+2, n).
+add $0,2
+mov $4,$0
+mul $4,3
+sub $4,1
+bin $0,3
+mul $0,$4
+div $0,4
 mov $1,$3
 lpb $3
   mul $0,2

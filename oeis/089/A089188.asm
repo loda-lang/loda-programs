@@ -7,7 +7,10 @@ pow $2,2
 add $2,6
 lpb $2
   mov $3,$1
-  seq $3,40040 ; Average of twin prime pairs (A014574), divided by 2. Equivalently, 2*a(n)-1 and 2*a(n)+1 are primes.
+  mul $3,2
+  trn $3,1
+  seq $3,171688 ; Twin primes > 3.
+  div $3,2
   sub $3,1
   mov $5,$3
   mul $3,2

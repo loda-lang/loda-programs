@@ -2,6 +2,16 @@
 ; Submitted by Christian Krause
 ; 2,4,4,8,4,8,8,16,4,8,8,16,8,16,16,32,4,8,8,16,8,16,16,32,8,16,16,32,16,32,32,64,4,8,8,16,8,16,16,32,8,16,16,32,16,32,32,64,8,16,16,32,16,32,32,64,16,32,32,64,32,64,64,128,4,8,8,16,8,16,16,32,8,16,16,32,16,32
 
+mov $2,1
 dif $0,2
-seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+lpb $0
+  mov $1,$0
+  sub $1,1
+  mod $1,2
+  mul $1,2
+  div $0,2
+  mul $2,2
+  dif $2,$1
+lpe
+mov $0,$2
 mul $0,2

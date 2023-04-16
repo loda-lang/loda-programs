@@ -9,8 +9,17 @@ add $0,1
 mov $1,6
 lpb $2
   add $1,1
+  mov $5,1
+  add $5,$1
   mov $3,$1
-  seq $3,65345 ; a(n) = Mod( binomial(2*n,n), (n+1)*(n+2)*(n+3) ).
+  add $3,$5
+  bin $3,$1
+  mov $4,$1
+  add $4,4
+  add $5,2
+  bin $5,2
+  mul $5,$4
+  mod $3,$5
   cmp $3,0
   sub $0,$3
   sub $2,$0

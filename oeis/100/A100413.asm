@@ -1,10 +1,10 @@
 ; A100413: Numbers n such that n is reversal(n)-th even composite number (n is A004086(n)-th even composite number).
+; Submitted by USTL-FIL (Lille Fr)
 ; 52,592,5992,59992,599992,5999992,59999992,599999992,5999999992,59999999992,599999999992,5999999999992,59999999999992,599999999999992,5999999999999992,59999999999999992,599999999999999992
-; Formula: a(n) = 4*(15*10^n-2)
+; Formula: a(n) = 60*10^n-8
 
 mov $1,10
 pow $1,$0
-mul $1,15
-sub $1,2
-mul $1,4
 mov $0,$1
+mul $0,60
+sub $0,8

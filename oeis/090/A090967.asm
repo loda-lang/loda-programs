@@ -8,7 +8,8 @@ pow $2,3
 lpb $2
   sub $2,29
   mov $3,$1
-  seq $3,68318 ; Sum of prime factors of n-th semiprime.
+  seq $3,1358 ; Semiprimes (or biprimes): products of two primes.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   mov $5,$3
   mul $3,338
   gcd $3,4

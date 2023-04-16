@@ -8,7 +8,11 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,38573 ; a(n) = 2^A000120(n) - 1.
+  max $7,$3
+  mov $6,$7
+  seq $6,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+  mov $3,$6
+  sub $3,1
   mov $4,$3
   add $5,2
   gcd $3,$5

@@ -1,20 +1,20 @@
 ; A069290: Sum of square roots of square divisors of n.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,3,1,1,1,3,4,1,1,3,1,1,1,7,1,4,1,3,1,1,1,3,6,1,4,3,1,1,1,7,1,1,1,12,1,1,1,3,1,1,1,3,4,1,1,7,8,6,1,3,1,4,1,3,1,1,1,3,1,1,4,15,1,1,1,3,1,1,1,12,1,1,6,3,1,1,1,7,13,1,1,3,1,1,1,3,1,4,1,3,1,1,1,7,1,8,4,18
 
-add $0,1
 mov $1,1
-mov $4,$0
+mov $2,1
+add $0,1
 lpb $0
-  sub $0,$1
-  mov $2,$4
-  div $2,$1
-  add $4,1
-  mov $3,$4
-  gcd $3,$2
+  sub $0,$2
+  add $2,2
+  mov $3,$0
+  gcd $3,$1
   div $3,$1
-  mul $3,$1
-  add $5,$3
-  add $1,1
+  add $5,2
+  add $1,$2
+  mul $3,$5
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4
+div $0,2

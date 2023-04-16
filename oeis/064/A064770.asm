@@ -7,8 +7,8 @@ mov $3,1
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,260191 ; Numbers m such that there exists no square whose base-m digit sum is binomial(m,2).
-  div $2,8
+  seq $2,171947 ; P-positions for game of UpMark.
+  div $2,4
   mul $2,$3
   mul $3,10
   div $0,10

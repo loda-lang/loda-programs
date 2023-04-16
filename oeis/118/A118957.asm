@@ -7,7 +7,10 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
+  add $3,1
+  seq $3,6257 ; Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
+  div $3,2
+  add $3,1
   trn $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -8,7 +8,10 @@ add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,4426 ; Arithmetic mean of digits of n (rounded down).
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  mov $5,$1
+  seq $5,55642 ; Number of digits in the decimal expansion of n.
+  div $3,$5
   cmp $3,3
   sub $0,$3
   add $1,3

@@ -9,5 +9,4 @@ lpb $0
   pow $0,3
 lpe
 seq $0,183228 ; a(n) is the base-5 digit sum of 10^n+1.
-mul $0,5
-div $0,20
+div $0,4

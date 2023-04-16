@@ -8,7 +8,8 @@ pow $2,3
 lpb $2
   sub $2,20
   mov $3,$1
-  seq $3,139582 ; Twice partition numbers.
+  seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $3,2
   max $5,$3
   mod $3,6
   dif $3,2

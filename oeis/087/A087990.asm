@@ -13,7 +13,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
+  mov $5,$0
+  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  cmp $0,$5
   mul $1,$0
   add $3,$1
 lpe

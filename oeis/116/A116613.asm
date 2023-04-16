@@ -8,7 +8,9 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,160591 ; Indices of primes congruent to 5 modulo 12.
+  seq $3,40117 ; Primes congruent to 5 (mod 12). Also primes p such that x^4 = 9 has no solution mod p.
+  sub $3,3
+  seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   add $3,1
   mov $5,$3
   mul $3,338

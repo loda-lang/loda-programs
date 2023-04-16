@@ -8,5 +8,4 @@ lpb $1
   sub $1,1
   trn $1,6
 lpe
-mul $0,2
-div $0,48
+div $0,24

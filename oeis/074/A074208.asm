@@ -9,7 +9,9 @@ add $2,1
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  sub $3,$1
   gcd $3,$0
   add $1,1
   add $2,$3

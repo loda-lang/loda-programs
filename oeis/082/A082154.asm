@@ -15,8 +15,7 @@ mul $1,4
 add $0,1
 add $0,$1
 pow $0,2
-mul $0,3
-div $0,6
+div $0,2
 add $0,$1
 div $0,4
 add $0,1

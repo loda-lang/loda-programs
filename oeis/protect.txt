@@ -1,6 +1,7 @@
 A000004: The zero sequence.
 A000012: The simplest sequence of positive numbers: the all 1's sequence.
 A000065: -1 + number of partitions of n.
+A000120: 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 A000142: Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
@@ -9,6 +10,7 @@ A001248: Squares of primes.
 A001255: Squares of partition numbers.
 A001317: Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.
 A001348: Mersenne numbers: 2^p - 1, where p is prime.
+A001566: a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2.
 A001602: Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).
 A001748: 3 * primes.
 A001749: Primes multiplied by 4.
@@ -105,6 +107,7 @@ A031937: Upper prime of a difference of 18 between consecutive primes.
 A031974: 1 repeated prime(n) times.
 A033192: a(n) = binomial(Fibonacci(n) + 1, 2).
 A033286: a(n) = n * prime(n).
+A033312: a(n) = n! - 1.
 A033633: Primes modulo 19.
 A034785: a(n) = 2^(n-th prime).
 A034953: Triangular numbers (A000217) with prime indices.

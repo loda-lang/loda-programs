@@ -4,6 +4,18 @@
 mov $1,$0
 sub $0,6
 max $0,1
+sub $0,2
 add $0,$1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
-add $0,2
+mov $2,4
+mov $3,$0
+pow $3,4
+lpb $3
+  max $4,$2
+  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $4,2
+  sub $0,$4
+  add $2,2
+  sub $3,$0
+lpe
+add $0,$2
+add $0,1

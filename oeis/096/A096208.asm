@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,1750 ; Primes multiplied by 5.
+  seq $3,40 ; The prime numbers.
+  mul $3,5
   sub $3,1
   add $3,$5
   mov $5,$3

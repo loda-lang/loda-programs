@@ -8,11 +8,14 @@ mov $1,8
 add $2,12
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,69904 ; Number of prime factors of n-th triangular number (with multiplicity).
+  add $3,3
+  bin $3,2
+  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,5
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,6
   cmp $4,$0

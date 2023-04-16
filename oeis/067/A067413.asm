@@ -4,8 +4,8 @@
 
 mov $1,6
 pow $1,$0
-mul $1,21
-div $1,18
+mul $1,7
+div $1,6
 mov $0,$1
 lpb $0
   dif $0,2

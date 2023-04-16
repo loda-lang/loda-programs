@@ -1,9 +1,14 @@
 ; A108568: a(n) = prime(n) + prime(n+1) - 2n - 1.
 ; Submitted by Jamie Morken(s4)
 ; 2,3,5,9,13,17,21,25,33,39,45,53,57,61,69,79,85,91,99,103,109,117,125,137,147,151,155,159,163,179,195,203,209,219,229,235,245,253,261,271,277,287,297,301,305,317,339,353,357,361,369,375,385,399,409,419,425
+; Formula: a(n) = -2*n+A000040(n)+A159477(A000040(n))-3
 
 mov $1,$0
 mul $1,2
-seq $0,1043 ; Numbers that are the sum of 2 successive primes.
-sub $0,3
+seq $0,40 ; The prime numbers.
+mov $2,$0
+seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $2,$0
+mov $0,$2
 sub $0,$1
+sub $0,3

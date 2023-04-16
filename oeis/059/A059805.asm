@@ -11,8 +11,27 @@ lpb $2
   mov $0,$3
   sub $0,$2
   add $0,$3
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
   bin $2,$1
+  mov $6,$0
+  seq $6,261138 ; The concatenation of 123456...n and the reverse of this number.
+  add $0,1
+  mov $5,$0
+  mov $0,10
+  pow $0,$5
+  mov $7,0
+  sub $7,$0
+  mov $0,$6
+  mul $0,10
+  div $0,$7
+  add $0,9
+  mod $0,10
+  add $0,10
+  mod $0,10
+  mov $4,0
+  seq $4,422 ; Concatenation of numbers from n down to 1.
+  sub $4,$0
+  mov $0,$4
+  add $0,8
   mul $1,10
   add $1,$0
 lpe

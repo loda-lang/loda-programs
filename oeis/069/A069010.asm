@@ -1,14 +1,12 @@
 ; A069010: Number of runs of 1's in the binary representation of n.
-; Submitted by [AF>Amis des Lapins] Ceclo
+; Submitted by rajab
 ; 0,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,1,2,2,2,2,3,2,2,1,2,2,2,1,2,1,1,1,2,2,2,2,3,2,2,2,3,3,3,2,3,2,2,1,2,2,2,2,3,2,2,1,2,2,2,1,2,1,1,1,2,2,2,2,3,2,2,2,3,3,3,2,3,2,2,2,3,3,3,3,4,3,3,2,3,3,3,2,3,2,2,1,2,2,2
 
-mul $0,2
 lpb $0
   mov $2,$0
+  mod $2,4
+  cmp $2,1
   div $0,2
-  add $2,$0
-  mod $2,2
   add $1,$2
 lpe
 mov $0,$1
-div $0,2

@@ -20,8 +20,7 @@ lpb $4
   mul $0,3
   bin $0,2
   mul $0,$7
-  mul $0,2
-  div $0,30
+  div $0,15
   mul $0,$6
   div $0,3
   mov $3,$4

@@ -1,9 +1,12 @@
 ; A104103: a(n) = ceiling(sqrt(prime(n))).
-; Submitted by jp557
+; Submitted by Aexoden
 ; 2,2,3,3,4,4,5,5,5,6,6,7,7,7,7,8,8,8,9,9,9,9,10,10,10,11,11,11,11,11,12,12,12,12,13,13,13,13,13,14,14,14,14,14,15,15,15,15,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,19,19,19,19,19,19,20,20,20,20,20,20,21,21,21,21,21,21,21,22,22,22,22,22,22,22,23,23,23,23,23,23,23,24
-; Formula: a(n) = A001650(A000040(n))/2+1
+; Formula: a(n) = A003059(b(n)), b(n) = A159477(b(n-1)), b(0) = 2
 
-seq $0,40 ; The prime numbers.
-seq $0,1650 ; k appears k times (k odd).
-div $0,2
-add $0,1
+mov $1,2
+lpb $0
+  sub $0,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+seq $1,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+mov $0,$1

@@ -1,14 +1,24 @@
 ; A119915: Number of ternary words of length n and having exactly one run of 0's of odd length.
-; Submitted by Jamie Morken(s2)
+; Submitted by Jerry Musser
 ; 0,1,4,13,40,117,332,921,2512,6761,18004,47525,124536,324317,840092,2166065,5562272,14232273,36300196,92321085,234192584,592695109,1496810732,3772761289,9492450672,23844342073,59804611060,149787196117
+; Formula: a(n) = 2*a(n-1)+b(n-1)+1, a(3) = 13, a(2) = 4, a(1) = 1, a(0) = 0, b(n) = a(n-1)+c(n-1)+1, b(3) = 13, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = 2*a(n-2)+2*c(n-1)-a(n-2)-b(n-2)-2*a(n-2)+a(n-2)+b(n-2)+c(n-2)+4, c(3) = 22, c(2) = 8, c(1) = 2, c(0) = 0
 
-mov $2,1
+mov $4,1
 lpb $0
-  mov $1,$2
-  add $2,$0
-  add $2,$3
-  add $2,$3
   sub $0,1
-  add $3,$1
+  mov $2,$1
+  sub $4,2
+  add $1,$3
+  add $1,1
+  add $1,$2
+  sub $3,$4
+  add $3,$5
+  mov $4,$2
+  add $4,$1
+  add $5,$2
+  add $5,1
+  mov $2,$3
+  mov $3,$5
+  add $5,$2
 lpe
-mov $0,$3
+mov $0,$1

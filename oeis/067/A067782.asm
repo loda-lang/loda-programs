@@ -8,8 +8,8 @@ lpb $0
   mul $2,2
   mul $0,$2
   lpb $0
-    mul $0,8
-    div $0,10
+    mul $0,4
+    div $0,5
     add $1,1
   lpe
 lpe

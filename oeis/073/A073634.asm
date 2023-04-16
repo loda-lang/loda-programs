@@ -8,8 +8,14 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,259796 ; Number of partitions of 3^n into n-th powers.
-  sub $3,3
+  add $3,1
+  mov $6,2
+  pow $6,$3
+  mov $5,3
+  pow $5,$3
+  div $5,$6
+  mov $3,$5
+  sub $3,1
   mod $3,2
   sub $0,$3
   add $1,1

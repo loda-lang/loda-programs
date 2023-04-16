@@ -7,11 +7,17 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  sub $0,1
   mov $2,$0
-  max $2,0
-  seq $2,58077 ; Binomial coefficients formed from consecutive primes: a(n) = binomial( prime(n+1), prime(n) ).
+  seq $2,40 ; The prime numbers.
+  mov $4,$2
+  div $2,2
+  mul $2,2
+  sub $2,1
+  seq $2,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+  add $2,1
+  bin $4,$2
+  sub $0,1
   bin $0,$3
-  gcd $1,$2
+  gcd $1,$4
 lpe
 mov $0,$1

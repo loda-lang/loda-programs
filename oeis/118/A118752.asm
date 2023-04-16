@@ -5,7 +5,8 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,118751 ; Smallest prime >= 3*n.
+  mul $2,3
+  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
   sub $0,1
   mul $1,$2
   mov $2,$0

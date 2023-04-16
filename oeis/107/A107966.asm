@@ -9,7 +9,12 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,107916 ; a(n) = binomial(n+3,2)*binomial(n+4,3)*binomial(n+5,5)/12.
+  mov $5,$0
+  add $0,2
+  seq $5,47819 ; a(n) = Product_{i=1..n} ((i+3)*(i+4)*(i+5))/(i*(i+1)*(i+2)).
+  mul $5,$0
+  mov $0,$5
+  div $0,2
   mov $2,$3
   mul $2,$0
   add $4,$2

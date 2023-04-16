@@ -1,13 +1,16 @@
 ; A098117: a(n) = 5^(prime(n) - 1) + 5^prime(n) - 1.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by fzs600
 ; 29,149,3749,93749,58593749,1464843749,915527343749,22888183593749,14305114746093749,223517417907714843749,5587935447692871093749,87311491370201110839843749,54569682106375694274902343749,1364242052659392356872558593749
-; Formula: a(n) = 30*5^(A015919(n+1)-2)-1
+; Formula: a(n) = 120*((5^b(n))/100)+29, b(n) = A159477(b(n-1)), b(0) = 2
 
-add $0,1
-seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
-sub $0,2
+mov $2,2
+lpb $0
+  sub $0,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
 mov $1,5
-pow $1,$0
+pow $1,$2
 mov $0,$1
-mul $0,30
-sub $0,1
+div $0,100
+mul $0,120
+add $0,29

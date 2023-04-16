@@ -6,7 +6,16 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,107042 ; First differences of indices of squarefree Catalan numbers.
+  seq $2,18662 ; Divisors of 816.
+  dif $2,4
+  mov $3,$2
+  add $3,8
+  div $3,7
+  sub $2,$3
+  div $2,3
+  mul $2,5
+  div $2,4
+  add $2,1
   add $1,$2
 lpe
 add $1,1

@@ -1,14 +1,17 @@
 ; A061695: Generalized Bell numbers.
 ; Submitted by Christian Krause
 ; 1,27,864,36000,1944000,133358400,11379916800,1185137049600,148142131200000,21908575180800000,3785801791242240000,756127866850836480000,172901238886557941760000,44887821634010234880000000,13132894100921851576320000000,4301460581188603786297344000000
-; Formula: a(n) = (((n+2)^2-(n+2))*A000142(n+2)^2)/8
 
 mov $1,$0
 add $1,2
+mov $2,1
 add $0,2
 pow $0,2
 sub $0,$1
-seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mul $0,$1
-mul $0,$1
+lpb $1
+  mul $2,$1
+  sub $1,1
+lpe
+mul $0,$2
+mul $0,$2
 div $0,8

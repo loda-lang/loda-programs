@@ -7,8 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,119461 ; Zero-free numbers with digit sum equal to 7.
-  sub $3,1
+  seq $3,23776 ; Metadromes: digits in base 7 are in strict ascending order.
+  seq $3,7093 ; Numbers in base 7.
+  mul $3,9
+  add $3,6
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

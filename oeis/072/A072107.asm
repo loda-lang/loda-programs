@@ -1,12 +1,21 @@
 ; A072107: a(n) = Sum_{k=1..n} A014963(k).
-; Submitted by shiva
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,3,6,8,13,14,21,23,26,27,38,39,52,53,54,56,73,74,93,94,95,96,119,120,125,126,129,130,159,160,191,193,194,195,196,197,234,235,236,237,278,279,322,323,324,325,372,373,380,381,382,383,436,437,438,439,440,441,500,501,562,563,564,566,567,568,635,636,637,638,709,710,783,784,785,786,787,788,867,868,871,872,955,956,957,958,959,960,1049,1050,1051,1052,1053,1054,1055,1056,1153,1154,1155,1156
+; Formula: a(n) = (A214606(n)-1)*((A143731(n)+1)%2)+a(n-1)+1, a(0) = 1
 
+mov $1,1
 lpb $0
+  mov $3,$0
+  seq $3,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $3,1
+  mod $3,2
   mov $2,$0
-  seq $2,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  seq $2,214606 ; a(n) = gcd(n, 2^n - 2).
+  sub $2,1
+  mul $3,$2
+  mov $2,$3
+  add $2,1
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

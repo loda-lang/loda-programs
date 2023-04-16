@@ -5,12 +5,20 @@
 add $0,1
 mov $3,4
 bin $3,$0
+mov $4,1
+mov $5,5
 sub $0,1
 mov $1,$0
-seq $1,52699 ; Expansion of e.g.f. (1+x^5-x^6)/(1-x).
+lpb $1
+  mul $4,$1
+  cmp $5,$4
+  add $5,1
+  sub $1,1
+  mul $4,$5
+lpe
 mov $2,$3
 cmp $2,0
 add $3,$2
 div $0,$3
 add $0,1
-mul $0,$1
+mul $0,$4

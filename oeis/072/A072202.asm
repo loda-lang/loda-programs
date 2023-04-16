@@ -7,7 +7,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,342025 ; a(n) = 1 if n has the same numbers of prime factors of forms 4*k+1 and 4*k+3 when counted with multiplicity, otherwise 0.
+  seq $3,79635 ; Sum of (2 - p mod 4) for all prime factors p of n (with repetition).
+  mov $5,$3
+  cmp $5,0
+  mov $3,$5
   add $3,$4
   sub $0,$3
   add $0,1

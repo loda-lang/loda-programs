@@ -7,7 +7,15 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,539 ; Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
+  pow $3,2
+  mov $6,$1
+  add $6,$3
+  mov $3,2
+  mul $3,$6
+  bin $3,2
+  mul $6,$3
+  mov $3,$6
+  div $3,12
   mov $5,$3
   mul $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

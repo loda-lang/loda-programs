@@ -8,7 +8,15 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,9242 ; a(n) = lcm(n, sigma(n)).
+  add $3,1
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $6,$1
+  add $6,1
+  gcd $6,$5
+  dif $5,$6
+  mul $5,$3
+  mov $3,$5
   sub $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   cmp $3,1

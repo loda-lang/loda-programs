@@ -6,5 +6,24 @@ pow $0,2
 sub $0,4
 dif $0,4
 dif $0,4
-sub $0,1
-seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+mov $1,1
+mov $3,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  sub $6,$1
+  mul $6,$5
+  add $1,$6
+  mov $5,$0
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
+lpe
+div $0,$1

@@ -8,7 +8,16 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,60692 ; Number of parts if 3^n is partitioned into parts of size 2^n as far as possible and into parts of size 1^n.
+  add $3,1
+  mov $6,2
+  pow $6,$3
+  mov $5,3
+  pow $5,$3
+  sub $5,$6
+  sub $5,1
+  sub $6,1
+  mod $5,$6
+  mov $3,$5
   gcd $3,2
   mul $3,2
   sub $0,$3

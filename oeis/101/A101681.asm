@@ -7,8 +7,15 @@ add $0,1
 add $2,3
 pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,56617 ; Denominator of binomial(2*n,n) / (2*n+1).
+  mov $5,0
+  sub $5,$1
+  mov $4,$1
+  sub $4,$5
+  add $4,1
+  bin $5,$1
+  gcd $5,$4
+  div $4,$5
+  mov $3,$4
   sub $3,$1
   max $3,0
   cmp $3,0
