@@ -2,5 +2,21 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,5,14,41,124,385,1220,3929,12822,42309,140922,473169,1599864,5442561,18615176,63975857,220816906,765121477,2660426630,9280204025,32466050612,113883898241,400464335116,1411407234697,4984885122974
 
-seq $0,187256 ; Number of peakless Motzkin paths of length n, assuming that the (1,0)-steps come in 2 colors.
+add $0,2
+lpb $0
+  mov $2,$0
+  sub $0,2
+  sub $2,1
+  add $2,$4
+  add $2,$4
+  bin $2,$0
+  mov $3,$4
+  bin $3,$1
+  add $1,1
+  mul $3,$2
+  div $3,$1
+  add $4,2
+  add $5,$3
+lpe
+mov $0,$5
 dif $0,2

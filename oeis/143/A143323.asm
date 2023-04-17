@@ -5,4 +5,20 @@
 add $0,1
 dif $0,2
 sub $0,1
-seq $0,111949 ; Expansion of eta(q) * eta(q^2) * eta(q^10) * eta(q^20) / (eta(q^4) * eta(q^5)) in powers of q.
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  seq $0,33718 ; Product theta3(q^d); d | 5.
+  mul $5,2
+  add $5,2
+  mov $2,$3
+  mul $2,$0
+  add $1,$2
+  mov $4,$0
+lpe
+sub $1,$4
+mov $0,$1
+div $0,2

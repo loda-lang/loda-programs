@@ -5,6 +5,24 @@
 mov $1,$0
 mul $1,2
 add $1,1
-seq $0,352217 ; Smallest power of 2 that is one more than a multiple of 2n-1.
+mul $0,2
+mov $3,$0
+add $3,1
+mov $7,$3
+mov $6,$3
+lpb $6
+  cmp $3,$4
+  mov $5,$3
+  cmp $5,0
+  sub $6,$5
+  add $4,256
+  mul $4,2
+  mod $4,$7
+lpe
+sub $0,$6
+add $0,1
+mov $2,2
+pow $2,$0
+mov $0,$2
 sub $0,1
 div $0,$1

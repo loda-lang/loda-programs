@@ -1,6 +1,19 @@
 ; A161777: n-th nonprime*(n-th nonprime-1)/2
 ; 0,6,15,28,36,45,66,91,105,120,153,190,210,231,276,300,325,351,378,435,496,528,561,595,630,703,741,780,861,946,990,1035,1128,1176,1225,1275,1326,1431,1485,1540,1596,1653,1770,1891,1953,2016,2080,2145,2278,2346
-; Formula: a(n) = binomial(A018252(n),2)
 
-seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mov $1,$0
+mul $1,-2
+add $0,1
+div $1,$0
+mov $2,1
+sub $0,$1
+lpb $0
+  sub $0,1
+  add $2,$3
+  mov $3,$2
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $2,1
+lpe
+mov $0,$2
+sub $0,1
 bin $0,2

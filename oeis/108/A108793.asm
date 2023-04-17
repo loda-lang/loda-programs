@@ -1,7 +1,23 @@
 ; A108793: Semiprimes that can be partitioned into a sum of semiprimes in more than one way.
 ; Submitted by Christian Krause
 ; 10,14,15,21,22,25,26,33,34,35,38,39,46,49,51,55,57,58,62,65,69,74,77,82,85,86,87,91,93,94,95,106,111,115,118,119,121,122,123,129,133,134,141,142,143,145,146,155,158,159,161,166,169,177,178,183,185,187,194
-; Formula: a(n) = A001358(n+3)
 
 add $0,3
-seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
+mov $2,$0
+pow $2,2
+lpb $2
+  max $3,$5
+  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  sub $5,2
+  div $5,4
+  add $1,1
+  mul $2,$4
+  sub $2,1
+  add $5,$1
+lpe
+mov $0,$5
+add $0,1

@@ -5,6 +5,16 @@
 mov $1,$0
 cmp $1,0
 add $1,$0
-seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $3,$1
+mov $4,$1
+lpb $4
+  sub $4,1
+  mov $5,$3
+  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $3,1
+  add $4,$5
+lpe
+mov $1,$3
+add $1,1
 add $2,$1
 mov $0,$2

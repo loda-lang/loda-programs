@@ -7,7 +7,9 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,56813 ; Largest non-unitary prime factor of LCM(1,...,n); that is, the largest prime which occurs to power > 1 in prime factorization of LCM(1,..,n).
+  add $3,1
+  seq $3,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  seq $3,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   add $1,$4
   mov $5,$1
   add $5,1

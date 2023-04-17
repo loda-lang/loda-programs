@@ -1,33 +1,13 @@
 ; A127971: a(n) = fusc(n+1) + (1-(-1)^n)/2, fusc = A002487.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,2,2,2,3,3,3,2,4,4,5,3,5,4,4,2,5,5,7,4,8,6,7,3,7,6,8,4,7,5,5,2,6,6,9,5,11,8,10,4,11,9,13,6,12,8,9,3,9,8,12,6,13,9,11,4,10,8,11,5,9,6,6,2,7,7,11,6,14,10,13,5,15,12,18,8,17,11,13,4,14,12,19,9,21,14,18,6,17,13,19,8,16,10,11,3,11,10,16,8
 
-mov $2,$0
 add $0,1
-div $0,2
 lpb $0
+  mov $2,$0
+  seq $2,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
   sub $0,1
-  mov $3,$2
-  sub $3,$0
-  mov $4,0
-  mov $5,$0
-  mov $6,$3
-  sub $6,$0
-  mov $10,$6
-  mov $9,$6
-  lpb $9
-    mov $7,$5
-    mod $7,2
-    mov $8,$10
-    mod $8,2
-    div $10,2
-    mul $7,$8
-    add $4,$7
-    div $5,2
-    mov $9,$10
-  lpe
-  cmp $4,0
-  add $1,$4
+  mod $0,2
+  add $1,$2
 lpe
 mov $0,$1
-add $0,1

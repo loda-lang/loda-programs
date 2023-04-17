@@ -1,14 +1,18 @@
 ; A166356: Expansion of e.g.f. 1 + x*arctanh(x), even powers only.
-; Submitted by Christian Krause
+; Submitted by Cruncher Pete
 ; 1,2,8,144,5760,403200,43545600,6706022400,1394852659200,376610217984000,128047474114560000,53523844179886080000,26976017466662584320000,16131658445064225423360000
+; Formula: a(n) = 2*n*(2*a(n-1)*(n-2)+a(n-1)), a(3) = 144, a(2) = 8, a(1) = 2, a(0) = 1
 
 mov $1,1
-mov $2,2
-mul $0,2
+mov $4,-1
 lpb $0
-  sub $0,$2
-  add $2,$0
+  sub $0,1
+  add $2,2
+  mul $3,$1
+  add $4,1
+  add $1,$3
+  add $1,$3
   mul $1,$2
-  mov $2,1
+  mov $3,$4
 lpe
 mov $0,$1

@@ -1,17 +1,15 @@
 ; A120927: a(n) = floor(semiprime(n)/n).
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 4,3,3,2,2,2,3,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,3,3,3,3,3,3,2,2,3,3,2,3,3,2,2,2,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+; Formula: a(n) = ((91*A001358(n)*(n+1))/(gcd(0,n+1)^2))/91
 
-mov $1,$0
-add $1,1
-mov $2,$0
-add $0,1
-lpb $0
-  sub $0,1
-  seq $3,106325 ; Smallest semiprime not less than n.
-lpe
-mov $0,$3
-add $0,$2
-add $0,1
-div $0,$1
-sub $0,1
+mov $1,1
+add $1,$0
+gcd $2,$1
+pow $2,2
+seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
+mul $0,91
+mul $1,$0
+div $1,$2
+mov $0,$1
+div $0,91

@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,17754 ; Binomial coefficients C(n,90).
+  add $3,90
+  bin $3,90
   mul $3,338
   add $3,2
   gcd $3,4

@@ -8,7 +8,9 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,334028 ; Number of distinct parts in the n-th composition in standard order.
+  seq $3,333219 ; Heinz number of the n-th composition in standard order.
+  sub $3,1
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   cmp $3,3
   sub $0,$3
   add $1,2

@@ -13,7 +13,8 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,138072 ; Triangle read by rows: row n lists the digits of A135700(n), the palindromic number formed from the reflected decimal expansion of golden ratio phi.
+  seq $0,4197 ; Table of min(x,y), where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
+  seq $0,1622 ; Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2.
   mul $1,10
   add $1,$0
 lpe

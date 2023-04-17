@@ -10,8 +10,13 @@ lpb $2
   div $3,2
   add $3,2
   mul $3,$1
-  seq $3,353463 ; Characteristic function of lesser twin primes: a(n) = 1 if both n and n+2 are primes, otherwise 0.
-  sub $0,$3
+  mov $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,3
+  sub $3,$5
+  mul $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
   mov $4,$0
   max $4,0
   cmp $4,$0

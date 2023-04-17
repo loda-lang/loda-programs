@@ -1,16 +1,12 @@
 ; A144863: Start with 1, then at each step prepend 10 and append 01.
-; Submitted by gemini8
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,10101,101010101,1010101010101,10101010101010101,101010101010101010101,1010101010101010101010101,10101010101010101010101010101,101010101010101010101010101010101
 
-mov $1,5
+mov $1,1
 mul $0,2
-add $0,3
 lpb $0
   sub $0,1
-  add $1,1
   mul $1,100
+  add $1,1
 lpe
 mov $0,$1
-sub $0,6010100
-div $0,5950000
-add $0,1

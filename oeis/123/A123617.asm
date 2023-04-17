@@ -11,7 +11,9 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,984 ; Central binomial coefficients: binomial(2*n,n) = (2*n)!/(n!)^2.
+  mov $4,$0
+  mul $0,2
+  bin $0,$4
   pow $0,2
   add $3,$0
 lpe

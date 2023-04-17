@@ -8,7 +8,8 @@ cmp $2,0
 add $0,$2
 sub $0,$1
 max $1,0
-seq $1,1223 ; Prime gaps: differences between consecutive primes.
+seq $1,40 ; The prime numbers.
+seq $1,13632 ; Difference between n and the next prime greater than n.
 sub $0,1
 add $0,$1
 add $0,$2

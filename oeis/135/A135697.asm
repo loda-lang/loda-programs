@@ -12,7 +12,8 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,138070 ; Triangle read by rows: row n lists the successive digits of A135697(n), the palindromic number formed from the reflected decimal expansion of Pi.
+  seq $0,4197 ; Table of min(x,y), where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
+  seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
   mul $1,10
   add $1,$0
 lpe

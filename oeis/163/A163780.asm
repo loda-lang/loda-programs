@@ -8,7 +8,14 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,305151 ; a(n) = (2n+1) - A294673(n), the amount by which A294673 is less than the maximum possible for n.
+  mul $3,2
+  add $3,1
+  mov $5,$3
+  seq $5,3558 ; Least number m > 0 such that 2^m == +-1 (mod 2n + 1).
+  sub $5,$3
+  mov $6,0
+  sub $6,$5
+  mov $3,$6
   cmp $3,0
   sub $0,$3
   add $1,1

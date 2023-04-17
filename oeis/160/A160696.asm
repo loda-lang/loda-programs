@@ -4,5 +4,5 @@
 ; Formula: a(n) = A057918(A006005(n))+1
 
 seq $0,6005 ; The odd prime numbers together with 1.
-seq $0,57918 ; Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
+seq $0,57918 ; Number of pairs of numbers (r,s) each less than n such that (r,s,n) is in geometric progression.
 add $0,1

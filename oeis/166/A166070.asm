@@ -6,10 +6,16 @@ mov $1,-1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,2
   add $1,1
   mov $3,$1
-  seq $3,323152 ; a(n) = 1 if sigma(n) is divisible by all proper divisors of n, 0 otherwise.
-  sub $0,$3
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $3,$6
+  div $3,2
+  mov $5,0
+  bin $5,$3
+  sub $0,$5
   mov $4,$0
   max $4,0
   cmp $4,$0

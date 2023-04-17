@@ -13,7 +13,14 @@ lpb $4
   add $1,$4
   add $1,1
   bin $1,$0
-  seq $0,56040 ; Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).
+  mov $5,$0
+  div $5,2
+  mov $6,0
+  sub $6,$5
+  add $6,$0
+  bin $6,$5
+  bin $0,$5
+  mul $0,$6
   mul $1,$0
   add $3,$1
 lpe

@@ -1,13 +1,21 @@
 ; A002461: Coefficients of Legendre polynomials.
 ; Submitted by Jamie Morken(w2)
 ; 1,3,20,35,126,231,3432,6435,24310,46189,352716,676039,2600150,5014575,155117520,300540195,1166803110,2268783825,17672631900,34461632205,134564468610,263012370465,4116715363800,8061900920775,31602651609438,61989816618513,486734856412028
-; Formula: a(n) = A098597(n+1)*((n^2)%(n+1)+n+1)
+; Formula: a(n) = ((n^2)%(n+1)+n+1)*(binomial(2*n+2,n+1)/gcd(512*n+1024,binomial(2*n+2,n+1)))
 
 mov $1,$0
 add $1,1
 pow $0,2
 mod $0,$1
 add $0,$1
-seq $1,98597 ; Numerator of Catalan(n)/2^(2n+1). Also, numerators of (2n-1)!!/(n+1)!. Odd part of the n-th Catalan number.
+mov $2,$1
+mul $2,2
+mov $3,2
+add $3,$2
+bin $2,$1
+mul $3,256
+gcd $3,$2
+div $2,$3
+mov $1,$2
 mul $1,$0
 mov $0,$1

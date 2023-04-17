@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,89802 ; Expansion of q^(-1/3) * (theta_4(q^3) - theta_4(q^(1/3))) / 2 in powers of q.
+  mov $5,-1
+  pow $5,$2
+  seq $2,89801 ; a(n) = 0 unless n = 3j^2+2j or 3j^2+4j+1 for some j>=0, in which case a(n) = 1.
+  mul $2,$5
   add $1,$2
   add $3,$4
   mov $4,3

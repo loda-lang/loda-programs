@@ -3,9 +3,17 @@
 
 mov $1,1
 lpb $0
+  mov $4,1
+  sub $4,$0
   mov $2,$0
-  seq $2,135679 ; a(n) = n if n = 1 or if n is prime. Otherwise, a(n) = 2 if n is even and a(n) = 3 if n is odd.
-  add $1,$2
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$0
+  mul $5,$2
+  add $5,2
+  sub $3,$4
+  mod $3,$5
+  add $3,2
+  add $1,$3
   mov $0,$1
 lpe
 add $0,1

@@ -1,10 +1,18 @@
 ; A160039: Numerators of n!*(1 + 1/2 + 1/3 +...+ 1/(n+1))
-; Submitted by Simon Strandgaard
+; Submitted by Cruncher Pete
 ; 1,3,11,25,274,294,13068,13698,114064,1062864,120543840,123870240,19802759040,20247546240,289277533440,4420892649600,1223405590579200,1243166003251200,431565146817638400,437647401838080000
-; Formula: a(n) = A000254(n+1)/gcd(n+1,A000254(n+1))
+; Formula: a(n) = c(n)/gcd(n+1,c(n)), b(n) = b(n-1)*(n+1), b(2) = 6, b(1) = 2, b(0) = 1, c(n) = c(n-1)*(n+1)+b(n-1), c(2) = 11, c(1) = 3, c(0) = 1
 
-add $0,1
-mov $1,$0
-seq $0,254 ; Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
-gcd $1,$0
-div $0,$1
+mov $1,1
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
+lpe
+gcd $2,$3
+div $3,$2
+mov $0,$3

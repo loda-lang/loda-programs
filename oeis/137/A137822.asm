@@ -13,10 +13,10 @@ lpb $4
   seq $5,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
   mul $5,2
   add $5,$7
-  mul $5,9
-  div $5,6
-  mul $5,6
-  div $5,4
+  mul $5,3
+  div $5,2
+  mul $5,3
+  div $5,2
   mov $3,$4
   mul $3,$5
   add $1,$3

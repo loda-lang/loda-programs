@@ -1,8 +1,9 @@
 ; A128547: Primes p such that p*q-p-q is prime where q=nextprime(p).
 ; Submitted by pututu
 ; 3,5,7,13,29,37,43,71,89,107,151,163,191,199,211,239,241,277,331,401,479,569,607,643,683,719,751,773,811,823,881,907,911,937,953,1087,1091,1109,1117,1201,1249,1289,1321,1399,1439,1459,1471,1597,1619,1621,1657,1721,1741,1789,1931,1993,1997,2081,2087,2129,2213,2243,2273,2287,2309,2341,2381,2423,2459,2467,2531,2549,2551,2591,2677,2683,2729,2731,2741,2791,3037,3109,3137,3181,3187,3253,3259,3299,3343,3359,3413,3463,3491,3527,3559,3607,3623,3673,3691,3701
-; Formula: a(n) = A020639(A109068(n)-1)
+; Formula: a(n) = A020639(A174805(A096345(n))+2)
 
-seq $0,109068 ; Products of two successive primes that can be partitioned in sum of three distinct primes which contain the prime divisors.
-sub $0,1
+seq $0,96345 ; Primes of the form p*q - p - q, where p and q are two successive primes.
+seq $0,174805 ; n+ceiling[sqrt(n)]+floor[sqrt(n)].
+add $0,2
 seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.

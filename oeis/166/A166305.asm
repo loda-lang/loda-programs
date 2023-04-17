@@ -5,7 +5,28 @@
 cmp $1,$0
 mul $1,2
 trn $0,1
-seq $0,164385 ; Composite numbers n such that n+4 and n-4 are both prime.
+mov $3,$0
+add $3,1
+mul $3,10
+mov $6,-2
+mov $2,1
+lpb $3
+  max $4,$6
+  mul $4,4
+  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$4
+  add $2,16
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,2
+  add $6,1
+  add $6,$2
+  add $2,2
+lpe
+mov $0,$2
+div $0,3
 sub $0,$1
-sub $0,4
+sub $0,1
 mul $0,2

@@ -7,5 +7,15 @@ add $1,3
 div $1,2
 mul $0,2
 add $0,$1
-seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-sub $0,1981
+mov $2,4
+mov $3,2
+lpb $0
+  sub $0,2
+  add $3,$2
+  add $2,$3
+lpe
+mul $0,$3
+add $0,$2
+sub $0,4
+div $0,2
+add $0,2

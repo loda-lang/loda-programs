@@ -7,8 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,315469 ; Coordination sequence Gal.4.134.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+  mul $3,22
+  mov $6,$1
+  div $6,2
+  mod $6,4
+  sub $3,$1
+  sub $3,$6
   sub $3,1
+  div $3,4
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

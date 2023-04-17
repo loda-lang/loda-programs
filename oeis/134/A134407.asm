@@ -6,10 +6,13 @@ mov $2,$0
 add $2,1
 lpb $2
   sub $2,1
-  add $1,1
   mov $0,$1
-  seq $0,295405 ; a(n) = 1 if n^2+1 is prime, 0 otherwise.
-  add $1,$0
+  add $0,2
+  pow $0,2
+  mov $3,$0
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $1,1
+  add $1,$3
 lpe
 mov $0,$1
 add $0,1

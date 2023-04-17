@@ -4,6 +4,6 @@
 ; Formula: a(n) = A000040(A200259(n+1)-1)
 
 add $0,1
-seq $0,200259 ; Numbers n such that n-th prime has an even digit sum.
+seq $0,200259 ; Numbers k such that k-th prime has an even digit sum.
 sub $0,1
 seq $0,40 ; The prime numbers.

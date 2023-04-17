@@ -1,7 +1,11 @@
 ; A129966: Triangular numbers which are differences of squares.
 ; 0,1,3,15,21,28,36,45,55,91,105,120,136,153,171,231,253,276,300,325,351,435,465,496,528,561,595,703,741,780,820,861,903,1035,1081,1128,1176,1225,1275,1431,1485,1540,1596,1653,1711,1891,1953
-; Formula: a(n) = binomial(A047581(n)+1,2)
+; Formula: a(n) = binomial(2*((n+3)/6)+n+1,2)
 
-seq $0,47581 ; Numbers that are congruent to {0, 1, 2, 5, 6, 7} mod 8.
+mov $1,$0
+add $0,3
+div $0,6
+mul $0,2
+add $0,$1
 add $0,1
 bin $0,2

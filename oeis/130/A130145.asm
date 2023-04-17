@@ -4,10 +4,18 @@
 
 add $0,3
 lpb $0
-  sub $0,3
   mov $2,$0
-  max $2,0
-  seq $2,57524 ; Number of 3 x n binary matrices without unit columns up to row and column permutations.
+  sub $2,1
+  mov $3,$2
+  sub $0,3
+  add $2,4
+  mul $2,$3
+  pow $2,2
+  div $2,36
+  mul $2,9
+  sub $2,36
+  div $2,36
+  add $2,1
   add $1,$2
 lpe
 mov $0,$1

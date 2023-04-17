@@ -8,11 +8,23 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,76539 ; Numerators a(n) of fractions slowly converging to Pi: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < Pi, then a(n+1) = a(n) + 1, otherwise a(n+1) = a(n).
+  mul $0,4
+  mov $8,$0
+  seq $8,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  add $8,945
+  add $0,$8
+  div $0,2
+  mov $7,$0
+  sub $7,444
+  sub $0,471
+  mov $6,$0
+  add $6,$7
+  div $6,18
+  sub $6,1
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
-  mov $4,$0
+  mov $4,$6
 lpe
 min $5,1
 mul $5,$4

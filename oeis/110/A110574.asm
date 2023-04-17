@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,3
   mov $3,$1
-  seq $3,101556 ; A Thue-Morse convolution.
+  seq $3,19300 ; First n elements of Thue-Morse sequence A010060 read as a binary number.
+  seq $3,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
   add $3,1
   mov $5,$3
   mul $3,338

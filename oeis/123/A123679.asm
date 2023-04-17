@@ -3,7 +3,18 @@
 ; 1,0,0,1,0,1,2,0,0,1,2,3,0,0,0,1,0,1,2,3,4,0,0,0,0,1,0,1,0,1,2,0,0,1,2,3,4,5,0,0,0,0,0,1,0,1,0,1,0,1,2,0,0,1,2,0,0,1,2,3,0,0,0,1,0,1,2,3,4,5,6,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,2,0,0,1,2,0,0,1,2,0,0,1,2,3
 
 mov $1,$0
-seq $1,123088 ; a(1)=1. For n>=2, a(n) = n + (largest integer which is <= n and is missing from the earlier terms of the sequence).
+mov $3,$0
+add $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,85262 ; Indices of nonzero terms of A085246, where a(n+2)=a(n+1)+A085246(n)+1 and a(2^(n-1)+1)=2^n.
+  add $1,1
+  add $2,1
+  add $3,$4
+  sub $3,$1
+lpe
+add $1,1
 mul $0,2
 add $0,2
 sub $0,$1

@@ -8,9 +8,15 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,23496 ; a(n) = b(n) + d(n), where b(n) = (n-th Fibonacci number > 2) and d(n) = (n-th number that is 1 or is not a Lucas number).
+  mov $4,$2
+  seq $4,90946 ; Non-Lucas numbers: complement of A000204.
+  max $4,1
+  add $2,4
+  seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  add $4,$2
   add $1,1
-  add $1,$2
+  add $1,$4
+  mov $2,$4
   sub $3,2
 lpe
 div $1,$2

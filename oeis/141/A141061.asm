@@ -8,7 +8,13 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,57855 ; Greatest k such that (k-th prime) <= (n times n-th prime).
+  mov $6,$0
+  seq $0,40 ; The prime numbers.
+  mul $6,$0
+  add $0,$6
+  seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  sub $0,1
+  seq $0,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   mov $2,$3
   mul $2,$0
   add $1,$2

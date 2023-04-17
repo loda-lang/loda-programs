@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,63475 ; Sum_{d | H(n)} d^2, where H(n) is the Half-Totient function (A023022).
+  add $3,2
+  mov $5,$3
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $3,$5
+  sub $3,2
+  div $3,2
+  seq $3,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
   gcd $3,10
   cmp $3,1
   sub $0,$3

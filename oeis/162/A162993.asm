@@ -1,14 +1,16 @@
 ; A162993: The second left hand column of triangle A162990
-; Submitted by Jamie Morken(s3)
+; Submitted by USTL-FIL (Lille Fr)
 ; 9,144,3600,129600,6350400,406425600,32920473600,3292047360000,398337730560000,57360633200640000,9693947010908160000,1900013614137999360000,427503063181049856000000
+; Formula: a(n) = (b(n)-36)/4+9, b(n) = b(n-1)*(n+3)^2, b(0) = 36
 
-add $0,2
-mov $1,$0
-add $0,1
-lpb $1
-  mul $0,$1
-  sub $1,1
+mov $1,1
+add $0,3
+lpb $0
+  mul $1,$0
+  mul $1,$0
+  sub $0,1
 lpe
-pow $0,2
-div $0,36
-mul $0,9
+mov $0,$1
+sub $0,36
+div $0,4
+add $0,9

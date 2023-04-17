@@ -7,8 +7,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,144101 ; Characteristic sequence for A144100.
-  sub $0,$3
+  add $3,1
+  mov $5,$1
+  seq $5,144907 ; a(n) = 1 if n is prime, 2 * rad(n) if four divides n and rad(n) otherwise.
+  div $5,$3
+  mov $6,0
+  pow $6,$5
+  sub $0,$6
   add $1,1
   mov $4,$0
   max $4,0

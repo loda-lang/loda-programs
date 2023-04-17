@@ -8,7 +8,7 @@ mul $2,2
 add $2,107
 lpb $2
   mov $3,$1
-  seq $3,2
+  seq $3,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
   sub $3,1
   sub $0,$3
   add $1,1
@@ -19,6 +19,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$2
-sub $0,106
-add $0,3
+sub $0,103
 mod $0,2

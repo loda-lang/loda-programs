@@ -1,9 +1,8 @@
 ; A153727: Period 3: repeat [1, 4, 2] ; Trajectory of 3x+1 sequence starting at 1.
-; Submitted by Science United
+; Submitted by [SG]KidDoesCrunch
 ; 1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1,4,2,1
-; Formula: a(n) = ((8*n)%24)%5+1
+; Formula: a(n) = max((4*n)%6,1)
 
-mul $0,8
-mod $0,24
-mod $0,5
-add $0,1
+mul $0,4
+mod $0,6
+max $0,1

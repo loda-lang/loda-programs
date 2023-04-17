@@ -6,5 +6,10 @@ mov $1,3
 lpb $1
   div $1,2
   add $0,$1
-  seq $0,22844 ; a(n) = floor(n*Pi).
+  mov $2,97
+  mul $2,$0
+  div $2,113
+  mul $0,4
+  sub $0,1
+  sub $0,$2
 lpe

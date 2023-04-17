@@ -1,9 +1,22 @@
 ; A145219: a(n) is the number of even permutations (of an n-set) with exactly 1 fixed point.
 ; Submitted by Christian Krause
 ; 1,0,0,8,15,144,910,7440,66717,667520,7342236,88107480,1145396395,16035550608,240533257770,3848532125984,65425046139705,1177650830517120,22375365779822392,447507315596451240,9397653627525472071,206748379805560390160,4755212735527888968390
-; Formula: a(n) = A003221(n)*(n+1)
 
 mov $1,$0
 add $1,1
-seq $0,3221 ; Number of even permutations of length n with no fixed points.
+mov $2,1
+mov $3,1
+mov $5,1
+mov $4,$0
+lpb $4
+  add $6,$5
+  mul $2,$4
+  div $2,$6
+  mul $3,-1
+  add $3,$2
+  mul $2,$6
+  sub $4,1
+  div $5,$6
+lpe
+mov $0,$3
 mul $0,$1

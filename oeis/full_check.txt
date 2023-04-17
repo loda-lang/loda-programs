@@ -48,6 +48,7 @@ A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
 A005882: Theta series of planar hexagonal lattice (A2) with respect to deep hole.
 A005928: G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
 A006530: Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+A006996: a(n) = C(2n,n) mod 3.
 A007066: a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
 A007067: Nearest integer to n*tau.
 A007424: a(n) = 1 if n is squarefree, otherwise 2.
@@ -82,6 +83,7 @@ A026274: Greatest k such that s(k) = n, where s = A026272.
 A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
+A030300: Runs have lengths 2^n, n >= 0.
 A032668: Digit '5' concatenated with a(n) is a prime.
 A032682: Numbers k such that k surrounded by digit '1' is a prime.
 A033203: Primes p congruent to {1, 2, 3} (mod 8); or primes p of form x^2 + 2*y^2; or primes p such that x^2 = -2 has a solution mod p.
@@ -122,6 +124,7 @@ A040074: Continued fraction for sqrt(84).
 A042986: Primes congruent to {0, 1, 2, 3} mod 5.
 A042987: Primes congruent to {2, 3, 5, 7} mod 8.
 A042999: Primes congruent to {2, 3, 5} (mod 8).
+A043545: (Maximal base-2 digit of n) - (minimal base-2 digit of n).
 A045252: Numbers whose base-5 expansion contains exactly one 1 and one 4.
 A045312: Primes congruent to {2, 3, 5, 6} (mod 7).
 A045329: Primes congruent to {0, 2, 3, 6} (mod 7).
@@ -158,7 +161,9 @@ A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (
 A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is different from {largest m such that m! divides k}; numbers k which are either odd multiples of 12 or the largest m such that (m-1)! divides k is a composite number > 5.
 A056624: Number of unitary square divisors of n.
 A056671: 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.
+A056832: All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
 A060143: a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
+A060632: a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
 A062173: a(n) = 2^(n-1) mod n.
@@ -175,6 +180,8 @@ A069513: Characteristic function of the prime powers p^k, k >= 1.
 A069623: Number of perfect powers <= n.
 A069812: a(n) = Sum_{k=1..n} (bigomega(k)-omega(k)).
 A070321: Greatest squarefree number <= n.
+A070940: Number of digits that must be counted from left to right to reach the last 1 in the binary representation of n.
+A071055: Number of 0's in n-th row of triangle in A071038.
 A071178: Exponent of the largest prime factor of n.
 A071187: Smallest prime factor of number of divisors of n.
 A071222: Smallest k such that gcd(n,k) = gcd(n+1,k+1).
@@ -183,6 +190,7 @@ A072292: Number of proper powers b^d <= n (b > 1, d > 1).
 A072586: Number of numbers <= n having prime factors with odd exponents only.
 A072613: Number of numbers of the form p*q (p, q distinct primes) less than or equal to n.
 A073093: Number of prime power divisors of n.
+A074724: Highest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
 A074939: Even numbers such that base 3 representation contains no 2.
 A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.
 A075802: Characteristic function of perfect powers, A001597.
@@ -269,12 +277,15 @@ A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) 
 A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
 A124218: a(n) is the m-th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n, d(n) is the number of positive divisors of n and m = phi(n) if phi(n)|d(n), else m = d(n) mod phi(n).
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
+A127971: a(n) = fusc(n+1) + (1-(-1)^n)/2, fusc = A002487.
+A128309: a(n) = 2*A000069(n).
 A128703: Numbers of the form 5^k*p, where 1 <= k <= 5 and p is a prime different from 5.
 A129252: Smallest prime factor p of n such that p^p is a divisor of n, a(n)=1 if no such factor exists.
 A129760: Bitwise AND of binary representation of n-1 and n.
 A129761: First differences of Fibbinary numbers (A003714).
 A130063: Primes p such that p divides 3^((p+1)/2) - 2^((p+1)/2) - 1.
 A130245: Number of Lucas numbers (A000032) <= n.
+A130249: Maximal index k of a Jacobsthal number such that A001045(k)<=n (the 'lower' Jacobsthal inverse).
 A131099: a(n) = n times number of divisors of n of form 3m+1 - n times number of divisors of form 3m+2.
 A131853: Numbers m such that z(m)=(0,0) with z as defined in A131851.
 A131856: Numbers m such that z(m)=(0,1) with z as defined in A131851.
@@ -295,6 +306,7 @@ A141105: Upper Even Swappage of Upper Wythoff Sequence.
 A141123: Primes of the form -x^2+2*x*y+2*y^2 (as well as of the form 3*x^2+6*x*y+2*y^2).
 A141172: Primes of the form 2*x^2+2*x*y-3*y^2 (as well as of the form 2*x^2+6*x*y+y^2).
 A141785: Primes of the form -x^2 + 5*x*y + 5*y^2 (as well as of the form 9*x^2 + 15*x*y + 5*y^2).
+A144611: Sturmian word of slope 2-sqrt(2).
 A147645: Number of distinct Mersenne primes dividing n.
 A147648: Number of distinct even superperfect numbers dividing n.
 A151774: Characteristic function of numbers with binary weight 2 (A018900).

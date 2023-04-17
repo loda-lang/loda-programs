@@ -1,7 +1,15 @@
 ; A152205: Triangle read by rows, A000012 * A152204.
 ; Submitted by Jon Maiga
 ; 1,4,9,1,16,4,25,9,1,36,16,4,49,25,9,1,64,36,16,4,81,49,25,9,1,100,64,36,16,4,121,81,49,25,9,1,144,100,64,36,16,4,169,121,81,49,25,9,1
-; Formula: a(n) = A122196(n)^2
 
-seq $0,122196 ; Fractal sequence: count down by 2's from successive integers.
+mov $1,1
+lpb $0
+  mov $2,$1
+  mul $2,$0
+  add $1,2
+  trn $0,$1
+lpe
+mod $2,$1
+mov $0,$2
+add $0,1
 pow $0,2

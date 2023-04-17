@@ -4,5 +4,24 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,23208 ; Primes p such that 3*p + 2 is also prime.
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  max $4,$6
+  mul $4,2
+  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  add $6,$2
+  add $2,10
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+sub $0,6
+div $0,6
 sub $0,$1

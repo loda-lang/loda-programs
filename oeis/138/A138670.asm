@@ -1,15 +1,18 @@
 ; A138670: Indices of 0's in Stewart's choral sequence.
-; Submitted by Jamie Morken(s4)
+; Submitted by Science United
 ; 0,1,3,4,6,9,10,12,13,15,18,19,21,24,27,28,30,31,33,36,37,39,40,42,45,46,48,51,54,55,57,58,60,63,64,66,69,72,73,75,78,81,82,84,85,87,90,91,93,94,96,99,100,102,105,108,109,111,112,114,117,118,120,121,123,126,127,129,132,135,136,138,139,141,144,145,147,150,153,154,156,159,162,163,165,166,168,171,172,174,175,177,180,181,183,186,189,190,192,193
 
-mov $1,1
 mov $2,$0
+add $2,4
 pow $2,2
 lpb $2
+  seq $5,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+  mod $5,2
   mov $3,$1
-  seq $3,118006 ; Define a sequence of binary words by w(1) = 01 and w(n+1) = w(n)w(n)Reverse[w(n)]. Sequence gives the limiting word w(infinity).
+  seq $3,137893 ; Fixed point of the morphism 0->100, 1->101, starting from a(1) = 1.
+  mul $3,$5
   sub $0,$3
-  add $1,2
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0

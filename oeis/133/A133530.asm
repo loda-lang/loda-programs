@@ -9,7 +9,9 @@ lpb $3
   mov $0,$4
   add $0,$3
   max $0,0
-  seq $0,153481 ; a(n) = prime(n)^3 - 2.
+  seq $0,40 ; The prime numbers.
+  pow $0,3
+  sub $0,2
   mov $2,10
   mul $2,$0
   add $1,$2

@@ -8,7 +8,8 @@ cmp $2,$0
 trn $0,1
 mov $5,$0
 mov $4,$0
-div $4,2
+add $4,2
+div $4,4
 add $4,1
 lpb $4
   sub $4,1

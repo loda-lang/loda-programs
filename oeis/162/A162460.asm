@@ -14,7 +14,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,161762 ; Sum of all numbers from Fibonacci(n-1) to Fibonacci(n).
+    seq $2,161762 ; Sum of all numbers from and including Fibonacci(n-1) to and including Fibonacci(n).
     mov $3,0
     mov $4,$2
     trn $7,$1

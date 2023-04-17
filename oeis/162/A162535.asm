@@ -8,7 +8,11 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,227190 ; a(n) = n minus (product of run lengths in binary representation of n)
+  add $3,1
+  mov $6,$3
+  seq $6,3188 ; Decimal equivalent of Gray code for n.
+  seq $6,124758 ; Product of the parts of the compositions in standard order.
+  sub $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

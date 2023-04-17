@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,68318 ; Sum of prime factors of n-th semiprime.
+  seq $3,1358 ; Semiprimes (or biprimes): products of two primes.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

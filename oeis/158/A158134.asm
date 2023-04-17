@@ -6,4 +6,4 @@
 seq $0,90740 ; Exponent of 2 in 3^n - 1.
 add $0,4
 div $0,2
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.

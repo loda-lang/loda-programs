@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,130632 ; Number of natural numbers between d(n) and d(n+1), where d(n) denotes the number of divisors of n.
+  seq $3,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
+  gcd $3,$3
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1
