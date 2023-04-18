@@ -31,6 +31,7 @@ A003511: A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
 A003512: A Beatty sequence: floor(n*(sqrt(3) + 2)).
 A003557: n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 A003589: a(n) has the property that the sequence b(n) = number of 2's between successive 3's is the same as the original sequence.
+A003602: Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
 A003622: The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.
 A003623: Wythoff AB-numbers: floor(floor(n*phi^2)*phi), where phi = (1+sqrt(5))/2.
 A003754: Numbers with no adjacent 0's in binary expansion.
@@ -180,6 +181,7 @@ A069513: Characteristic function of the prime powers p^k, k >= 1.
 A069623: Number of perfect powers <= n.
 A069812: a(n) = Sum_{k=1..n} (bigomega(k)-omega(k)).
 A070321: Greatest squarefree number <= n.
+A070350: a(n) = 2^n mod 45.
 A070940: Number of digits that must be counted from left to right to reach the last 1 in the binary representation of n.
 A071055: Number of 0's in n-th row of triangle in A071038.
 A071178: Exponent of the largest prime factor of n.
@@ -247,6 +249,7 @@ A101345: a(n) = Knuth's Fibonacci (or circle) product "2 o n".
 A101436: Number of exponents in prime factorization of n which are primes.
 A102261: a(n) = A002144(n) - A002145(n).
 A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
+A103391: 'Even' fractal sequence for the natural numbers: Deleting every even-index term results in the same sequence.
 A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci representation. Also list of binary vectors not containing 00.
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
 A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 otherwise.
@@ -292,6 +295,7 @@ A131856: Numbers m such that z(m)=(0,1) with z as defined in A131851.
 A131860: Numbers m such that z(m)=(1,1) with z as defined in A131851.
 A132222: Beatty sequence 1+2*floor(n*Pi/2), which contains infinitely many primes.
 A132240: Primes congruent to {1, 29} mod 30.
+A132740: Largest divisor of n coprime to 10.
 A133827: Number of solutions to x + 7 * y = 2 * n in triangular numbers.
 A134080: Expansion of (f(-q^5)^5 / f(-q) + f(q^5)^5 / f(q)) / 2 in powers of q^2 where f() is a Ramanujan theta function.
 A134860: Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zeckendorf expansion A014417(n) ends with 1,0,1.

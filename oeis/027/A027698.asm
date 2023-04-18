@@ -8,7 +8,9 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,162720 ; A014499 represented in binary.
+  seq $3,40 ; The prime numbers.
+  seq $3,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+  sub $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3

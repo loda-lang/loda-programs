@@ -4,7 +4,13 @@
 
 add $0,4
 max $1,$0
-seq $1,190912 ; Partial sums of pentanacci numbers (A000322).
+lpb $1
+  mov $3,$1
+  seq $3,322 ; Pentanacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5) with a(0) = a(1) = a(2) = a(3) = a(4) = 1.
+  sub $1,1
+  add $2,$3
+lpe
+mov $1,$2
 sub $1,$0
 mov $0,$1
 div $0,4

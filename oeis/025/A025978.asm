@@ -9,8 +9,12 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,16290 ; Expansion of 1/((1-2x)(1-4x)(1-8x)).
+  add $0,2
+  mov $4,2
+  pow $4,$0
+  bin $4,3
+  div $4,4
   mul $1,11
-  add $1,$0
+  add $1,$4
 lpe
 mov $0,$1

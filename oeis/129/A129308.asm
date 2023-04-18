@@ -1,16 +1,18 @@
 ; A129308: a(n) is the number of positive integers k such that k*(k+1) divides n.
-; Submitted by Cruncher Pete
+; Submitted by www.urfak.petrsu.ru
 ; 0,1,0,1,0,2,0,1,0,1,0,3,0,1,0,1,0,2,0,2,0,1,0,3,0,1,0,1,0,3,0,1,0,1,0,3,0,1,0,2,0,3,0,1,0,1,0,3,0,1,0,1,0,2,0,2,0,1,0,5,0,1,0,1,0,2,0,1,0,1,0,4,0,1,0,1,0,2,0,2,0,1,0,4,0,1,0,1,0,4,0,1,0,1,0,3,0,1,0,2
 
-add $0,1
-mov $2,$0
-lpb $2
-  add $3,2
-  add $4,$3
-  mov $5,$0
-  mod $5,$4
-  cmp $5,0
-  add $1,$5
-  sub $2,$3
+mov $1,$0
+dif $1,-2
+add $1,1
+mov $3,$1
+lpb $3
+  add $4,2
+  add $5,$4
+  mov $6,$1
+  mod $6,$5
+  cmp $6,0
+  add $2,$6
+  sub $3,$4
 lpe
-mov $0,$1
+mov $0,$2

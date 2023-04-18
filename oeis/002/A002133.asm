@@ -12,8 +12,11 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
-  seq $0,274108 ; Number of partitions of n into parts with exactly two different sizes, the sizes being relatively prime.
+  sub $0,2
+  mov $5,$0
+  seq $0,72031 ; Row sums of A072030.
+  sub $0,$5
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

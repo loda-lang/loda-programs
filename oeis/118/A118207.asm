@@ -1,4 +1,4 @@
-; A118207: Expansion of Product_{k>=1}(1 + x^k)^lambda(k) where lambda(k) is the Liouville function, A008836.
+; A118207: Expansion of Product_{k>=1} (1 + x^k)^lambda(k) where lambda(k) is the Liouville function, A008836.
 ; Submitted by gemini8
 ; 1,1,-1,-2,1,2,0,-2,-2,0,5,2,-7,-6,7,9,0,-10,-9,4,17,2,-18,-12,14,21,5,-26,-25,14,41,4,-38,-35,18,53,23,-56,-54,31,86,15,-78,-85,34,112,41,-110,-102,49,158,40,-138,-150,68,195,68,-191,-190,69,279,89,-217,-253,102,327,122,-336,-335,118,462,142,-361,-430,170
 

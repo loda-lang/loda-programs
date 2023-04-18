@@ -1,18 +1,10 @@
 ; A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function d = A000005, with initial value n.
-; Submitted by Aexoden
+; Submitted by www.urfak.petrsu.ru
 ; 1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
-; Formula: a(n) = ((-c(n-1)+b(n-1))/2+a(n-1))%2+2, a(2) = 2, a(1) = 2, a(0) = 1, b(n) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)*(((-c(n-1)+b(n-1))/2+a(n-1))%2+2), c(2) = 8, c(1) = 4, c(0) = 2
 
-mov $2,2
-add $0,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  add $3,2
-  mul $1,0
-  mul $2,$3
+mov $1,$0
+lpb $1
+  div $1,32
+  bin $0,$1
 lpe
-mov $0,$3
+add $0,1

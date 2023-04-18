@@ -8,7 +8,14 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,66066 ; a(n) = prime(2*n) - 2*prime(n).
+  seq $3,40 ; The prime numbers.
+  mul $3,2
+  mov $5,$1
+  mul $5,2
+  add $5,1
+  seq $5,40 ; The prime numbers.
+  sub $5,$3
+  mov $3,$5
   pow $3,2
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

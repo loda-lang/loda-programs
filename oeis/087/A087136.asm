@@ -1,7 +1,23 @@
 ; A087136: Smallest positive number m such that A073642(m)=n.
+; Submitted by Leviathan
 ; 1,2,4,6,10,12,14,22,26,28,30,46,54,58,60,62,94,110,118,122,124,126,190,222,238,246,250,252,254,382,446,478,494,502,506,508,510,766,894,958,990,1006,1014,1018,1020,1022,1534,1790,1918,1982,2014,2030,2038
-; Formula: a(n) = max(A224195(n)-4,0)+1
 
-seq $0,224195 ; Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n >= 1, m >= 1.
-trn $0,4
+mov $1,3
+mov $2,2
 add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  cmp $3,4
+  sub $3,$4
+  add $3,$1
+  mod $3,2
+  add $3,2
+  mov $4,5
+  add $1,$2
+  mul $2,$3
+lpe
+add $1,$3
+mov $0,$1
+sub $0,3

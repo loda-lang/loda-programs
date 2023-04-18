@@ -1,31 +1,29 @@
 ; A007693: Primes p such that 6*p + 1 is also prime.
-; Submitted by Olivier Chass&#233; St-Laurent
+; Submitted by fzs600
 ; 2,3,5,7,11,13,17,23,37,47,61,73,83,101,103,107,131,137,151,173,181,233,241,257,263,271,277,283,293,311,313,331,347,367,373,397,443,461,467,503,557,577,593,601,607,641,653,661,683,727,751,761,773,787,797,853,863,887,907,937,941,947,971,1013,1033,1061,1063,1091,1103,1117,1151,1171,1193,1201,1283,1321,1327,1361,1381,1423,1427,1433,1451,1453,1481,1487,1511,1531,1553,1567,1607,1613,1693,1733,1777,1787,1811,1823,1831,1847
 
 mov $2,$0
 add $2,8
-pow $2,3
+pow $2,4
 lpb $2
-  add $3,$1
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $6,$3
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$6
-  add $1,3
+  mov $1,$6
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,3
+  mul $1,$3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $3,2
   mov $4,$0
   max $4,0
   cmp $4,$0
+  mov $1,$5
   mul $2,$4
   sub $2,17
-  div $5,6
-  mov $6,$5
-  bin $5,$3
-  add $5,$1
-  cmp $3,1
+  mov $5,1
+  add $6,$1
 lpe
-mov $0,$1
-div $0,2
+mov $0,$6
 mul $0,2
-sub $0,18
-div $0,6
-add $0,3
+sub $0,2
+div $0,2
+add $0,2
