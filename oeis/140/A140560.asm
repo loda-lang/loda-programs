@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,139049 ; a(n) = prime(n) + 6.
+  seq $3,40 ; The prime numbers.
+  add $3,6
   mov $5,$3
   add $3,23
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $6,1
   mov $3,$1
-  seq $3,2618 ; a(n) = n*phi(n).
+  add $3,1
+  mul $3,$6
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

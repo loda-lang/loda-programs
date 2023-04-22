@@ -3,7 +3,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,164016 ; 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
+  add $2,1
+  bin $2,2
+  mul $2,36
+  add $2,6
   trn $0,2
   add $1,$2
 lpe

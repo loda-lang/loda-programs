@@ -9,7 +9,8 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,62011 ; a(n) = 2*tau(n) = 2*A000005(n).
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $0,2
   mov $4,$3
   mul $4,$0
   add $2,$4

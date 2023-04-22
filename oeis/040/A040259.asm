@@ -1,7 +1,6 @@
 ; A040259: Continued fraction for sqrt(276).
 ; Submitted by Simon Strandgaard
 ; 16,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2,2,2,1,1,1,1,32,1,1,1,1,2
-; Formula: a(n) = A040258((binomial(gcd(n/2,2),2)+n)/2)
 
 mov $1,$0
 div $1,2
@@ -9,4 +8,7 @@ gcd $1,2
 bin $1,2
 add $0,$1
 div $0,2
-seq $0,40258 ; Continued fraction for sqrt(275).
+seq $0,10225 ; Continued fraction for sqrt(183).
+dif $0,4
+mul $0,5
+div $0,4

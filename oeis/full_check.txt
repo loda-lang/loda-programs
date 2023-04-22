@@ -7,6 +7,7 @@ A000865: Numbers beginning with letter 'o' in English.
 A001132: Primes == +-1 (mod 8).
 A001221: Number of distinct primes dividing n (also called omega(n)).
 A001222: Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+A001316: Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
 A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
@@ -149,6 +150,7 @@ A046337: Odd numbers with an even number of prime factors (counted with multipli
 A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
 A048865: a(n) is the number of primes in the reduced residue system mod n.
+A048896: a(n) = 2^(A000120(n+1) - 1), n >= 0.
 A049345: n written in primorial base.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
@@ -167,7 +169,9 @@ A060143: a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 A060632: a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061704: Number of cubes dividing n.
+A062116: a(n) = 2^n mod 17.
 A062173: a(n) = 2^(n-1) mod n.
+A062175: a(n) = 4^(n-1) mod n.
 A063574: Number of steps to reach an integer == 1 (mod 4) when iterating the map n -> 3n/2 if n even or (3n+1)/2 if n odd.
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.

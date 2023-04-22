@@ -6,8 +6,10 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,356114 ; Number of irreducible permutations of n with partition type [2, 1, 1, ..., 1] (with '1' taken n - 2 times).
+  mov $5,2
+  pow $5,$1
+  sub $5,3
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

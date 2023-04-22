@@ -7,7 +7,11 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-seq $1,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $3,$1
+mul $1,2
+bin $1,$3
+add $3,1
+div $1,$3
 mov $2,$0
 mul $0,2
 bin $0,$2

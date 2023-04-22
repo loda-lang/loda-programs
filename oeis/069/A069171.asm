@@ -8,7 +8,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,14491 ; a(n) = gcd(n, 2^n - 1).
+  add $3,1
+  mov $5,2
+  pow $5,$3
+  sub $5,1
+  gcd $3,$5
   cmp $3,3
   sub $0,$3
   mov $4,$0

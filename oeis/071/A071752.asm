@@ -1,10 +1,36 @@
 ; A071752: Expansion of (1+x^4*C^3)*C^3, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
 ; Submitted by [AF] Hydrosaure
 ; 1,3,9,28,91,303,1028,3542,12363,43628,155414,558144,2018750,7347281,26888610,98888730,365292555,1354757040,5042499990,18830130360,70527871530,264886906830,997372693824,3764155637772,14236915323806
-; Formula: a(n) = A071755(n)+A099376(n)
 
 mov $1,$0
-seq $1,99376 ; An inverse Chebyshev transform of x^3.
-seq $0,71755 ; Expansion of (1+x^4*C^4)*C^2, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
+add $1,1
+mov $2,$1
+mov $3,$1
+sub $3,2
+mul $1,2
+bin $1,$3
+mul $1,2
+div $1,$2
+add $0,1
+lpb $0
+  max $4,$0
+  mov $5,2
+  mul $5,$0
+  add $7,1
+  mov $8,7
+  add $8,$9
+  mov $9,$6
+  mov $6,$7
+  bin $6,$4
+  add $4,1
+  mul $6,$5
+  div $6,$4
+  add $7,1
+  sub $0,1
+  sub $4,1
+  add $8,$6
+lpe
+mov $0,$8
+sub $0,7
 add $1,$0
 mov $0,$1

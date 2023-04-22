@@ -9,7 +9,10 @@ lpb $3
   mov $0,$1
   trn $0,1
   add $0,1
-  seq $0,167746 ; Number of prime divisors of A001222 (counted with multiplicity), with a(1) = 1 by convention.
+  mov $5,$0
+  seq $5,36430 ; Number of iterations needed to reach 1 under the map n -> Omega(n).
+  mov $0,$5
+  sub $0,1
   sub $1,1
   mov $4,$3
   mul $4,$0

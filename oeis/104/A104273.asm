@@ -2,5 +2,13 @@
 ; Submitted by Jon Maiga
 ; 1,1,0,1,2,1,1,2,0,0,1,2,3,1,1,1,2,3,0,2,0,1,2,3,1,1,0,1
 
-seq $0,51778 ; Triangle read by rows, where row (n) = n mod (n-1), n mod (n-2), n mod (n-3), ...n mod 2.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+add $1,3
+add $0,1
+sub $0,$1
+mod $1,$0
+mov $0,$1
 dif $0,4

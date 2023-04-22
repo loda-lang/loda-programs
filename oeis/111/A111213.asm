@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,96494 ; Largest value in the periodic part of the continued fraction of sqrt(prime(n)).
+  seq $3,40 ; The prime numbers.
+  seq $3,1650 ; k appears k times (k odd).
+  sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

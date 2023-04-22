@@ -7,7 +7,12 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,182394 ; Signs of differences of number of divisors function: a(n) = sign(d(n)-d(n-1)), cf. A000005.
+  seq $3,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
+  mov $5,$3
+  cmp $3,0
+  gcd $3,$5
+  div $5,$3
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -1,9 +1,27 @@
 ; A011546: Decimal expansion of Pi rounded to n places.
 ; Submitted by Simon Strandgaard
 ; 3,31,314,3142,31416,314159,3141593,31415927,314159265,3141592654,31415926536,314159265359,3141592653590,31415926535898,314159265358979,3141592653589793,31415926535897932,314159265358979324,3141592653589793238,31415926535897932385
-; Formula: a(n) = (A011545(n+1)+5)/10
 
 add $0,1
-seq $0,11545 ; Decimal expansion of Pi truncated to n places.
+mov $2,1
+mov $3,$0
+mul $3,5
+lpb $3
+  mov $5,$3
+  mul $5,2
+  add $5,1
+  mul $2,$5
+  mul $1,$3
+  add $1,$2
+  div $1,$0
+  div $2,$0
+  sub $3,1
+lpe
+mov $4,10
+pow $4,$0
+div $2,$4
+mul $1,2
+div $1,$2
+mov $0,$1
 add $0,5
 div $0,10

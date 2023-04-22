@@ -4,7 +4,6 @@
 
 mul $0,3
 add $0,1
-mov $1,0
 div $0,2
 lpb $0
   div $0,2

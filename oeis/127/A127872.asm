@@ -7,8 +7,8 @@ lpb $0
   sub $0,$1
 lpe
 sub $0,$1
-mul $0,-2
-div $0,4
+mul $0,-1
+div $0,2
 bin $1,$0
 mov $0,$1
 mod $0,2

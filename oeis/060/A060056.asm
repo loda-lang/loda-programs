@@ -8,7 +8,10 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $5,$0
-  seq $5,12509 ; E.g.f.: -log(cos(x)*cos(x)) (even powers only).
+  mul $5,2
+  sub $5,1
+  seq $5,350972 ; E.g.f. = tan(x).
+  mul $5,2
   sub $0,1
   mov $2,$3
   mul $2,$5

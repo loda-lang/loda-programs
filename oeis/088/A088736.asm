@@ -1,8 +1,14 @@
 ; A088736: 10^p - p for prime p.
 ; 98,997,99995,9999993,99999999989,9999999999987,99999999999999983,9999999999999999981,99999999999999999999977,99999999999999999999999999971,9999999999999999999999999999969
-; Formula: a(n) = 10^max(A006005(n),2)-max(A006005(n),2)
+; Formula: a(n) = 10^max(b(n),2)-max(b(n),2), b(n) = A151800(b(n-1)+1), b(0) = 1
 
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+lpe
+mov $0,$2
 max $0,2
 mov $1,10
 pow $1,$0

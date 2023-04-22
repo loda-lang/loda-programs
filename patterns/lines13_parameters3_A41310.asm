@@ -5,7 +5,9 @@ lpb $0
   add $2,$3
   mov $3,$1
   mov $1,$2
-  mul $2,5 ; source=parameter 0
+  dif $2,12 ; source=parameter 0
+  dif $2,2 ; source=parameter 1
+  mul $2,12 ; source=parameter 2
   add $3,$2
 lpe
 mov $0,$3

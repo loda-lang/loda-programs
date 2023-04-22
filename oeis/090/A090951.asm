@@ -7,7 +7,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,283262 ; Numbers n such that tau(n^2) is a prime.
+  seq $2,283262 ; Numbers m such that tau(m^2) is a prime.
   dif $1,$2
   mul $1,$2
 lpe

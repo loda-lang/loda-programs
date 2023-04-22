@@ -4,9 +4,15 @@
 lpb $0
   sub $0,2
   mov $1,$0
-  max $1,0
-  seq $1,212850 ; Number of n X 3 arrays with rows being permutations of 0..2 and no column j greater than column j-1 in all rows.
+  mov $3,3
+  pow $3,$0
   mov $0,1
+  mov $2,6
+  pow $2,$1
+  sub $2,$3
+  mov $1,$2
+  mul $1,6
+  add $1,1
 lpe
 mov $0,$1
 mul $0,6

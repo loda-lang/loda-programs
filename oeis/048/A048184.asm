@@ -8,7 +8,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,354924 ; a(n) = 1 if A047994(n) is equal to A344005(n), otherwise 0.
+  add $3,1
+  dif $3,2
+  sub $3,1
+  seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

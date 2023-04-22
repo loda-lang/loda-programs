@@ -5,7 +5,10 @@
 mov $2,49
 lpb $2
   mov $3,$1
-  seq $3,11586 ; Legendre symbol (n,23).
+  pow $3,11
+  add $3,1
+  mod $3,23
+  sub $3,1
   mul $3,-9
   trn $3,3
   min $3,1

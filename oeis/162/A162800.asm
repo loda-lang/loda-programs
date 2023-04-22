@@ -4,9 +4,12 @@
 
 lpb $0
   trn $0,1
-  seq $0,1043 ; Numbers that are the sum of 2 successive primes.
-  mov $1,$0
+  seq $0,40 ; The prime numbers.
+  mov $2,$0
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $2,$0
   mov $0,0
+  mov $1,$2
 lpe
 mov $0,$1
 div $0,2

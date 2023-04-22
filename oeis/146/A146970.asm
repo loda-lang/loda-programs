@@ -11,7 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,135506 ; a(n) = x(n+1)/x(n) - 1 where x(1)=1 and x(k) = x(k-1) + lcm(x(k-1),k).
+    seq $2,135506 ; a(n) = x(n+1)/x(n) - 1 where x(1)=1 and x(k) = x(k-1) + lcm(x(k-1),k). Here x(n) = A135504(n).
     mov $3,0
     add $4,$2
   lpe

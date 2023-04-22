@@ -4,5 +4,22 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
+dif $0,4
+mul $0,2
+mov $2,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$2
+  add $0,$4
+  trn $0,1
+  seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
+  mov $3,$4
+  mul $3,$0
+  add $5,$3
+lpe
+min $2,1
+mul $2,$0
+mov $0,$5
+sub $0,$2
 mul $0,$1
