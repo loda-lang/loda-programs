@@ -13,8 +13,13 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  add $5,1
   sub $0,$1
-  seq $0,180322 ; a(n) = AR(n) is the total number of aperiodic k-reverses of n.
+  seq $0,56493 ; Number of primitive (period n) periodic palindromes using a maximum of two different symbols.
+  mul $0,$5
+  sub $0,2
+  div $0,2
+  add $0,1
   mul $1,$0
   add $3,$1
 lpe

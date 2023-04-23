@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,62570 ; a(n) = phi(2*n).
   mov $3,$1
-  seq $3,23896 ; Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
+  add $3,1
+  mul $3,$5
+  dif $3,2
   add $3,1
   gcd $3,2
   sub $0,$3

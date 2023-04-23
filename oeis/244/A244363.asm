@@ -1,4 +1,4 @@
-; A244363: Number of toothpicks added at n-th stage in the toothpick structure of the symmetric representation of sigma in the first quadrant (without the axis x and y).
+; A244363: Number of toothpicks added at n-th stage in the toothpick structure of the symmetric representation of sigma of the first n positive integers in the first quadrant (without the axis x and y).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,4,6,8,8,12,10,16,16,20,14,24,16,26,26,32,20,36,22,40,36,38,26,48,34,44,44,56
 

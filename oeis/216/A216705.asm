@@ -19,5 +19,4 @@ lpb $4
   sub $3,9
   sub $5,$3
 lpe
-mov $1,$2
-mul $0,$1
+mul $0,$2

@@ -8,7 +8,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,280684 ; a(n) = number of divisors of the product of the divisors of n.
+  seq $3,46523 ; Smallest number with same prime signature as n.
+  sub $3,1
+  seq $3,7955 ; Product of divisors of n.
+  mul $3,2
+  mov $5,-1
+  add $5,$3
+  seq $5,69157 ; Number of positive divisors of n that are divisible by the smallest prime that divides n.
+  mov $3,$5
   gcd $3,2
   sub $0,$3
   add $0,1

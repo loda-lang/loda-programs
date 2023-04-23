@@ -1,9 +1,19 @@
 ; A212886: Decimal expansion of 2/(3*sqrt(3)) = 2*sqrt(3)/9.
 ; Submitted by Christian Krause
 ; 3,8,4,9,0,0,1,7,9,4,5,9,7,5,0,5,0,9,6,7,2,7,6,5,8,5,3,6,6,7,9,7,1,6,3,7,0,9,8,4,0,1,1,6,7,5,1,3,4,1,7,9,1,7,3,4,5,7,3,4,8,8,4,3,2,2,6,5,1,7,8,1,5,3,5,2,8,8,8,9,7,1,2,9,1,4,3,5,9,7,0,5,7,1,6,6,3,5,0,1
-; Formula: a(n) = (A011549(n+2)/45)%10
 
 add $0,2
-seq $0,11549 ; Decimal expansion of sqrt(3) truncated to n places.
+mov $2,$0
+mul $2,2
+mov $0,10
+pow $0,$2
+mov $1,$0
+mul $1,3
+lpb $0
+  mov $2,$1
+  div $2,$0
+  add $0,$2
+  div $0,2
+lpe
 div $0,45
 mod $0,10

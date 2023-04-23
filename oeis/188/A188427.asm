@@ -9,7 +9,10 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
-  seq $0,24049 ; a(n) = 5^n - 1.
+  mov $4,5
+  pow $4,$0
+  sub $4,1
+  mov $0,$4
   seq $0,71521 ; Number of 3-smooth numbers <= n.
   add $2,$0
 lpe

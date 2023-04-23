@@ -1,7 +1,15 @@
 ; A216779: Number of derangements on n elements with an odd number of cycles.
 ; 0,0,1,2,6,24,135,930,7420,66752,667485,7342290,88107426,1145396472,16035550531,240533257874,3848532125880,65425046139840,1177650830516985,22375365779822562,447507315596451070,9397653627525472280,206748379805560389951,4755212735527888968642
 
+mov $2,2
 mov $1,$0
-seq $1,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
-add $0,$1
+lpb $1
+  sub $1,1
+  mov $4,$3
+  add $3,$2
+  mul $3,$1
+  mov $2,$4
+lpe
+div $2,2
+add $0,$2
 div $0,2

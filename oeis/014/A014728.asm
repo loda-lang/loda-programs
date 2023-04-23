@@ -1,9 +1,18 @@
 ; A014728: Squares of odd Fibonacci numbers.
-; Submitted by Jon Maiga
+; Submitted by Groo
 ; 1,1,9,25,169,441,3025,7921,54289,142129,974169,2550409,17480761,45765225,313679521,821223649,5628750625,14736260449,101003831721,264431464441,1812440220361,4745030099481,32522920134769
-; Formula: a(n) = 8*binomial(A107857(n),2)+1
 
-seq $0,107857 ; a(n) = floor[(phi + n mod 2)*a(n-1)], a(1)=1.
-bin $0,2
+mul $0,3
+div $0,2
+lpb $0
+  sub $0,1
+  add $1,1
+  add $2,2
+  add $2,$1
+  add $1,$2
+lpe
+mov $0,$1
+div $0,8
 mul $0,8
+div $0,5
 add $0,1

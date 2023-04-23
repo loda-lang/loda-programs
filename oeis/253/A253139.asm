@@ -14,8 +14,17 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
+  mov $6,$0
+  cmp $6,1
   sub $0,1
-  seq $0,100995 ; If n is a prime power p^m, m >= 1, then m, otherwise 0.
+  mov $5,$0
+  seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $5,$6
+  add $5,1
+  mod $5,2
+  seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mul $5,$0
+  mov $0,$5
   seq $0,99635 ; a(n) = gcd(sum of all prime factors of n, n).
   mul $0,$3
   mul $1,$0

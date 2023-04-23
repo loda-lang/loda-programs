@@ -6,8 +6,12 @@ mov $1,1
 mov $2,$0
 pow $2,4
 lpb $2
+  mov $4,$1
+  seq $4,51903 ; Maximal exponent in prime factorization of n.
+  add $4,1
   mov $3,$1
-  seq $3,225230 ; In canonical prime factorization of n: (number of distinct primes) minus (largest prime exponent).
+  seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
+  sub $3,$4
   bin $3,$2
   cmp $3,0
   sub $0,$3

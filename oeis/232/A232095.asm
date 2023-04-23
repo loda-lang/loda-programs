@@ -5,5 +5,13 @@
 mov $1,$0
 bin $0,2
 add $1,$0
-seq $1,34968 ; Minimal number of factorials that add to n.
-mov $0,$1
+mov $2,$1
+mov $3,2
+lpb $1
+  div $1,$3
+  mod $2,$3
+  add $4,$2
+  mov $2,$1
+  add $3,1
+lpe
+mov $0,$4

@@ -1,18 +1,13 @@
 ; A172423: Period length 10: repeat 0,9,2,7,4,5,6,3,8,1.
-; Submitted by Fardringle
+; Submitted by vaughan
 ; 0,9,2,7,4,5,6,3,8,1,0,9,2,7,4,5,6,3,8,1,0,9,2,7,4,5,6,3,8,1,0,9,2,7,4,5,6,3,8,1,0,9,2,7,4,5,6,3,8,1
-; Formula: a(n) = (c(n)%10+10)%10, b(n) = 3*c(n-1)-3*b(n-1)-3*c(n-1)+b(n-1)+c(n-1), b(1) = -2, b(0) = 1, c(n) = -b(n-1)-c(n-1)+c(n-1), c(1) = -1, c(0) = 0
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $1,$3
-  sub $3,$1
-  mov $2,$3
-  mul $2,3
-  add $1,$2
+max $1,$0
+mod $1,2
+lpb $1
+  div $1,9
+  mul $0,-1
 lpe
-mov $0,$3
 mod $0,10
 add $0,10
 mod $0,10

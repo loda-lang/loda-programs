@@ -5,8 +5,11 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,66911 ; Sum of primes < n that do not divide n.
   mov $3,$1
-  seq $3,349555 ; a(n) = Sum_{p<=n, p prime} p^floor(1/gcd(n/p)).
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $3,$5
   gcd $3,2
   sub $0,$3
   add $0,1

@@ -1,10 +1,15 @@
 ; A180353: a(n) = n^n * prime(n).
 ; Submitted by Christian Krause
 ; 2,12,135,1792,34375,606528,14000231,318767104,8910671247,290000000000,8844661788941,329895716585472,12417879370282373,477816293498994688,20581012847900390625,977677435906606235648,48807175451293869086443,2400130892593088792100864
-; Formula: a(n) = (4*max(A006005(n),2)*(n+1)^(n+1))/4
 
 mov $2,$0
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $3,1
+lpb $0
+  sub $0,1
+  add $3,1
+  seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
+lpe
+mov $0,$3
 max $0,2
 add $1,$0
 add $2,1

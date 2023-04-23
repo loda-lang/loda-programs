@@ -1,7 +1,11 @@
 ; A265280: Binary representation of the n-th iteration of the "Rule 86" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jon Maiga
 ; 1,111,10011,1111011,100010011,11101111011,1001000010011,111111001111011,10000011100010011,1110001001101111011,100110111101000010011,11110100001011001111011,1000101100110011100010011,111011001110111001101111011,10010011100100011101000010011,1111111001111101001011001111011,100000011100001011110011100010011,11100001001100110000111001101111011,1001100111101110110010011101000010011,111101110001000100111111001011001111011,10001000110111011110000011110011100010011
-; Formula: a(n) = A004086(A245549(n))
+; Formula: a(n) = A004086(10*A007088(A110240(n)/2)+1)
 
-seq $0,245549 ; State of one-dimensional cellular automaton 'sigma' (Rule 30): 000,001,010,011,100,101,110,111 -> 0,0,0,1,1,1,1,0 at generation n, regarded as a binary number.
+seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
+div $0,2
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mul $0,10
+add $0,1
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).

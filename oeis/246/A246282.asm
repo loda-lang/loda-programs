@@ -9,7 +9,12 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,252742 ; Characteristic function of A246282: if A003961(n) > 2*n, then a(n) = 1, otherwise 0 (when A003961(n) < 2*n) [where A003961(n) shifts the prime factorization of n one step towards larger primes].
+  seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
+  sub $3,2
+  sub $3,$1
+  sub $3,$1
+  max $3,0
+  mod $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

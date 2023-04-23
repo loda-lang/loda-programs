@@ -15,5 +15,6 @@ lpb $2
   sub $3,$2
   max $3,0
   seq $3,24939 ; Number of partitions of n into distinct odd primes.
+  gcd $0,$1
 lpe
 mov $0,$3

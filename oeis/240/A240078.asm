@@ -10,7 +10,10 @@ lpb $5
   mov $3,1
   mov $4,$0
   max $4,0
-  seq $4,240077 ; Number of partitions of n such that m(greatest part) <= m(1), where m = multiplicity.
+  mov $6,$4
+  seq $6,117298 ; Number of partitions of n with unique smallest part and unique largest part.
+  seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $4,$6
   mov $2,$5
   mul $2,$4
   add $1,$2

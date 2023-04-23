@@ -6,7 +6,20 @@ mov $1,$0
 mod $1,2
 mul $0,4
 add $0,$1
-seq $0,76049 ; Numbers k such that the sum of the k-th triangular number and (k+2)-nd triangular number is a triangular number.
+lpb $0
+  sub $0,1
+  mov $4,$0
+  add $4,$0
+  mod $4,4
+  mul $4,$3
+  add $2,4
+  add $2,$4
+  add $3,$2
+lpe
+mul $3,2
+add $3,$2
+mov $0,$3
+div $0,4
 add $0,2
 bin $0,2
 div $0,306

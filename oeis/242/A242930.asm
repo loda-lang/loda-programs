@@ -7,8 +7,16 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,179338 ; Positive integers of the form (10*m^2+1)/11.
+  mov $6,-2
+  bin $6,$1
+  div $6,2
+  mul $6,11
+  add $6,1
+  pow $6,2
+  mov $3,$6
+  div $3,11
+  mul $3,10
+  add $3,1
   mov $5,$3
   mul $3,2
   add $3,2

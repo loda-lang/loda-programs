@@ -1,18 +1,20 @@
 ; A194642: Units' digits of the nonzero heptagonal numbers.
-; Submitted by Cruncher Pete
+; Submitted by Merlin2331
 ; 1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1
-; Formula: a(n) = c(n)%10, b(n) = 42*c(n-1)+6*b(n-1)+3*n+4, b(2) = 1378, b(1) = 109, b(0) = 10, c(n) = 7*c(n-1)+b(n-1), c(2) = 228, c(1) = 17, c(0) = 1
 
-add $0,2
+mov $2,$0
+mul $2,4
+mov $3,$0
+mul $0,2
 lpb $0
-  sub $0,1
-  add $2,1
-  mul $3,7
-  add $3,$1
-  mov $1,$3
-  mul $1,6
-  add $1,$2
-  add $2,2
+  dif $0,2
+  mov $4,$3
 lpe
-mov $0,$3
+add $2,$4
+add $4,1
+mov $1,2
+add $1,$2
+mul $1,$4
+mov $0,$1
+div $0,2
 mod $0,10

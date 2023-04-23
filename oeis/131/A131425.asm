@@ -13,7 +13,11 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,131424 ; Triangle read by rows: T(n,k) = prime(n) + prime(k) - 3, 1 <= k <= n.
+  mov $4,$0
+  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  seq $0,5145 ; n copies of n-th prime.
+  sub $0,3
+  add $0,$4
   add $1,$0
 lpe
 mov $0,$1

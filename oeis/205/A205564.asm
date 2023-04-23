@@ -6,5 +6,7 @@ mov $1,$0
 add $1,1
 dif $1,2
 sub $1,1
-seq $1,204933 ; The index j<k such that n divides k!-j!, where k is the least index (A204932) for which such j exists.
+seq $1,204931 ; Least k such that n divides A204930(k), the k-th difference of two distinct factorials.
+seq $1,131818 ; A130296 + A002260 - A000012. Triangle read by rows: row n consists of n, 2, 3, 4, ..., n.
+sub $1,1
 mov $0,$1

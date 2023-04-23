@@ -5,4 +5,29 @@
 add $0,1
 pow $0,3
 sub $0,1
-seq $0,71558 ; Smallest k such that n*k + 1 and n*k - 1 are twin primes.
+mov $5,$0
+mov $1,1
+mov $2,$0
+add $2,4
+pow $2,2
+lpb $2
+  sub $2,1
+  mov $3,$6
+  trn $3,2
+  mov $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,3
+  sub $3,$7
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $0,$4
+  sub $0,$7
+  trn $4,1
+  cmp $4,$0
+  add $6,$5
+  add $6,1
+  add $1,1
+  mul $2,$4
+lpe
+mov $0,$1
+sub $0,2

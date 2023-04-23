@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,40 ; The prime numbers.
-  seq $3,5836 ; Numbers whose base 3 representation contains no 2.
+  seq $3,5836 ; Numbers whose base-3 representation contains no 2.
   mov $5,$3
   mul $3,2
   sub $3,1

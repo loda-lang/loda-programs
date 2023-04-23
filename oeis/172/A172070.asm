@@ -1,11 +1,40 @@
 ; A172070: Primes p such that either p-1/2-+5/2, but not both, is prime.
 ; Submitted by dthonon
 ; 3,11,17,29,41,59,71,101,107,137,149,179,191,197,227,239,269,281,311,347,419,431,461,521,569,599,617,641,659,809,821,827,857,881,1019,1031,1049,1061,1091,1151,1229,1277,1289,1301,1319,1427,1451,1481,1487,1607,1619,1667,1697,1721,1787,1871,1877
-; Formula: a(n) = (A171688(2*n)-2)+min(2*n,2)
 
 mul $0,2
 mov $1,$0
 min $1,2
-seq $0,171688 ; Twin primes > 3.
-sub $0,2
+mov $2,$0
+div $2,2
+sub $0,1
+gcd $0,2
+mov $3,4
+mov $4,$2
+sub $2,1
+add $4,4
+pow $4,3
+lpb $4
+  mov $7,$5
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $5,3
+  sub $5,$7
+  mul $7,$5
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $2,$7
+  mov $6,$2
+  max $6,0
+  cmp $6,$2
+  add $3,6
+  mul $4,$6
+  sub $4,18
+  mov $5,$3
+lpe
+mov $2,$3
+div $2,6
+mul $2,3
+add $2,$0
+mov $0,$2
+mul $0,2
+add $0,1
 add $0,$1

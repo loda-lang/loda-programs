@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
+  seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $0,1
+  seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $2,$3
   mul $2,$0
   add $1,$2

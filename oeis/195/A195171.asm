@@ -4,5 +4,23 @@
 
 mov $1,$0
 mul $0,2
-seq $0,195122 ; a(n) = 2*n - floor(n*r/2), where r=(1+sqrt(5))/2.
+mov $3,$0
+mov $5,6
+mov $6,10
+lpb $6
+  sub $6,1
+  add $5,$4
+  add $4,$5
+lpe
+add $3,1
+mul $4,$0
+div $4,$5
+mov $2,$4
+add $2,2
+mul $2,$0
+mod $2,$3
+mul $0,2
+add $0,$2
+add $0,1
+div $0,2
 add $0,$1

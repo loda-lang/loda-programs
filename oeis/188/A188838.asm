@@ -6,7 +6,21 @@ cmp $3,0
 mov $2,$0
 add $2,$3
 mov $4,$0
-seq $0,34858 ; a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15.
+mov $8,$0
+add $8,12
+mov $9,$0
+mul $0,2
+mul $0,$8
+sub $8,4
+mov $7,$8
+bin $7,4
+lpb $0
+  sub $0,1
+  sub $7,1
+lpe
+sub $7,63
+add $7,$9
+mov $0,$7
 add $0,$2
 add $1,$0
 add $1,8

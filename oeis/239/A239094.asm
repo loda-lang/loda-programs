@@ -4,6 +4,14 @@
 mov $1,$0
 min $0,2
 cmp $0,2
-trn $1,2
-seq $1,250212 ; Second partial sums of seventh powers (A001015).
-mul $0,$1
+sub $1,1
+lpb $1
+  add $2,1
+  mov $3,$1
+  pow $3,7
+  sub $1,1
+  mov $4,$2
+  mul $4,$3
+  add $5,$4
+lpe
+mul $0,$5

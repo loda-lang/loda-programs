@@ -4,29 +4,26 @@
 
 mov $1,$0
 div $1,2
-mov $17,$1
-mov $19,$1
-add $19,1
-lpb $19
-  sub $19,1
-  mov $1,$17
-  sub $1,$19
+mov $7,$1
+mov $2,$1
+add $2,1
+lpb $2
+  sub $2,1
+  mov $1,$7
+  sub $1,$2
   add $1,7
   mov $4,$1
   mov $5,0
   mov $3,2
-  lpb $3,2
-    mul $3,20
+  lpb $3
     seq $4,140397 ; a(n) = floor(3*phi*n) - 3*floor(phi*n) where phi = (1+sqrt(5))/2.
     add $5,1
     gcd $3,$4
-    mul $4,40
   lpe
   mov $1,$5
   add $1,2
-  add $18,$1
+  add $6,$1
 lpe
-mov $1,$18
 mod $0,2
 sub $0,1
-add $0,$1
+add $0,$6

@@ -1,9 +1,19 @@
 ; A075925: Sixth column of triangle A075502.
 ; Submitted by Christian Krause
 ; 1,147,13034,907578,54807627,3016638009,155726334148,7676501248416,365698066506773,16976491006185711,772549060467762942,34614587429584922214,1532054031119984651839,67151990527665760714053
-; Formula: a(n) = A000770(n)*7^n
 
 mov $1,7
 pow $1,$0
-seq $0,770 ; Stirling numbers of the second kind, S(n,6).
+mov $2,1
+mov $4,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  seq $0,481 ; Stirling numbers of the second kind, S(n,5).
+  mul $2,6
+  add $2,$0
+lpe
+mov $0,$2
 mul $0,$1

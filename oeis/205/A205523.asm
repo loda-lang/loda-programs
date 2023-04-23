@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,272008 ; a(n) is the numerator of the fractional part of sigma(n)/n, where sigma(n) is the sum of the divisors of n.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $3,$5
+  gcd $5,$3
+  dif $3,$5
   div $3,2
   cmp $3,0
   sub $0,$3

@@ -1,9 +1,23 @@
 ; A180963: Numbers divisible by 3 with an odd number of 1s in their base 2 representation.
 ; Submitted by Ralfy
 ; 21,42,69,81,84,87,93,117,138,162,168,171,174,186,213,234,261,273,276,279,285,309,321,324,327,333,336,339,342,345,348,351,357,369,372,375,381,405,426,453,465,468,471,477,501,522,546,552,555,558,570,597,618,642,648,651,654,666,672,675,678,681,684,687,690,696,699,702,714,738,744,747,750,762,789,810,837,849,852,855,861,885,906,930,936,939,942,954,981,1002,1029,1041,1044,1047,1053,1077,1089,1092,1095,1101
-; Formula: a(n) = 3*A036556(n)
 
 mov $1,$0
-seq $1,36556 ; Integers which when multiplied by 3 have an odd number of 1's in their binary expansion (cf. A000069).
+mov $3,$0
+add $3,4
+pow $3,2
+lpb $3
+  add $2,1
+  mov $4,$2
+  seq $4,293162 ; Take every third term of the {0,1}-version of the Thue-Morse sequence: a(n) = A010060(3n).
+  sub $1,$4
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+  sub $3,1
+lpe
+mov $1,$2
+add $1,1
 mov $0,$1
 mul $0,3

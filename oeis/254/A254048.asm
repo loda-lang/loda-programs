@@ -6,6 +6,12 @@ mov $1,$0
 add $1,1
 div $1,2
 add $1,$0
-seq $1,126759 ; a(0) = 1; a(2n) = a(n); a(3n) = a(n); otherwise write n = 6i+j, where j = 1 or 5 and set a(n) = 2i+2 if j = 1, otherwise a(n) = 2i+3.
-mov $0,$1
+lpb $1
+  dif $1,3
+  dif $1,2
+lpe
+mov $2,5
+add $2,$1
+div $2,3
+mov $0,$2
 sub $0,1

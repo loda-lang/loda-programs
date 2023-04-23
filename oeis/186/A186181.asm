@@ -1,16 +1,12 @@
 ; A186181: Period 4 sequence [ 2, 2, 3, 2, ...] except a(0) = 1.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Manuel Stenschke
 ; 1,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2
 
-mul $0,4
+mov $1,$0
 lpb $0
-  mod $0,16
-  add $1,11
-  lpb $0
-    dif $0,3
-  lpe
-  trn $0,7
+  dif $0,2
+  add $0,$1
+  mod $0,2
+  add $0,1
 lpe
-mov $0,$1
-div $0,10
 add $0,1

@@ -5,7 +5,10 @@
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,138969 ; Positions of the primes congruent to 2 mod 3 when all primes except 3 are listed in order.
+  seq $1,3627 ; Primes of the form 3n-1.
+  max $1,3
+  seq $1,230980 ; Number of primes <= n, starting at n=0.
+  sub $1,1
   mul $0,0
 lpe
 mov $0,$1

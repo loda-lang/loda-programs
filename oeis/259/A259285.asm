@@ -22,5 +22,4 @@ lpb $0
   mov $0,$2
 lpe
 mov $0,$1
-mul $0,4
-div $0,8
+div $0,2

@@ -9,7 +9,11 @@ lpb $0
   mul $1,2
   mov $2,$0
   max $2,0
-  seq $2,139478 ; a(n) = A001109(n) in binary.
+  mul $2,4
+  add $2,2
+  seq $2,143607 ; Numerators of principal and intermediate convergents to 2^(1/2).
+  seq $2,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+  div $2,100
 lpe
 mov $0,$2
 mul $0,10

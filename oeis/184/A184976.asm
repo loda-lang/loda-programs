@@ -5,7 +5,10 @@
 mov $1,$0
 lpb $0
   mov $2,$0
-  seq $2,184589 ; floor(n*e-1); complement of A184590.
+  add $2,1
+  seq $2,276853 ; Beatty sequence for 2*e.
+  div $2,2
+  sub $2,1
   sub $0,1
   add $1,$2
 lpe

@@ -5,7 +5,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,244363 ; Number of toothpicks added at n-th stage in the toothpick structure of the symmetric representation of sigma in the first quadrant (without the axis x and y).
+  seq $2,244363 ; Number of toothpicks added at n-th stage in the toothpick structure of the symmetric representation of sigma of the first n positive integers in the first quadrant (without the axis x and y).
   mul $2,2
   sub $0,1
   add $1,$2

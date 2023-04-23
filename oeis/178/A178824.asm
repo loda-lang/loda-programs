@@ -4,5 +4,14 @@
 
 mov $1,$0
 add $1,1
-seq $0,5260 ; a(n) = Sum_{k = 0..n} binomial(n,k)^4.
+mov $3,$0
+lpb $0
+  sub $0,1
+  mov $4,$3
+  bin $4,$0
+  pow $4,4
+  add $2,$4
+lpe
+mov $0,$2
+add $0,1
 div $0,$1

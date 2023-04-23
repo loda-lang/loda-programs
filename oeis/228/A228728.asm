@@ -3,9 +3,13 @@
 
 mov $1,$0
 trn $1,2
-seq $1,139179 ; Number of non-fourth-powers <= n.
+mov $3,$1
+lpb $1
+  div $1,16
+  sub $3,1
+lpe
 mul $0,2
-sub $0,$1
+sub $0,$3
 mov $2,$0
 cmp $2,0
 add $0,$2

@@ -4,6 +4,6 @@
 ; Formula: a(n) = 9*A005836(A135764(n))-1
 
 seq $0,135764 ; Distribute the natural numbers in columns based on the occurrence of "2" in each prime factorization; square array A(row,col) = 2^(row-1) * ((2*col)-1), read by descending antidiagonals.
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.
 mul $0,9
 sub $0,1

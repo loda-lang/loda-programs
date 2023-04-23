@@ -4,5 +4,8 @@
 
 add $0,1
 mov $1,$0
-seq $1,76314 ; a(n) = floor(n/10) + (n mod 10).
-dif $0,$1
+mod $1,10
+mov $2,$0
+div $2,10
+add $2,$1
+dif $0,$2

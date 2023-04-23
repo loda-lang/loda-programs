@@ -6,8 +6,9 @@ add $0,3
 lpb $0
   sub $0,5
   mov $2,$0
-  max $2,0
-  seq $2,107750 ; If n=0 then 0, else smallest number greater than its predecessor and having either more or fewer zeros in its binary representation.
+  trn $2,3
+  div $2,3
+  add $2,$0
   add $1,$2
 lpe
 mov $0,$1

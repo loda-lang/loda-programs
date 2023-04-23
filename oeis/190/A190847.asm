@@ -7,7 +7,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,190843 ; [2ne]-2[ne], where [ ]=floor.
+  add $3,1
+  seq $3,276853 ; Beatty sequence for 2*e.
+  mod $3,2
   cmp $3,0
   sub $0,$3
   mov $4,$0

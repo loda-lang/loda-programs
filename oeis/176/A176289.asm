@@ -1,9 +1,30 @@
 ; A176289: Denominators of the rational sequence with e.g.f. (x/2)*(1+exp(-x))/(1-exp(-x)).
-; Submitted by [AF] Kalianthys
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,6,1,30,1,42,1,30,1,66,1,2730,1,6,1,510,1,798,1,330,1,138,1,2730,1,6,1,870,1,14322,1,510,1,6,1,1919190,1,6,1,13530,1,1806,1,690,1,282,1,46410,1,66,1,1590,1,798,1,870,1,354,1,56786730,1,6,1,510,1,64722,1,30,1,4686,1,140100870,1,6,1,30,1,3318,1,230010,1,498,1,3404310,1,6,1,61410,1,272118,1,1410,1,6,1,4501770,1,6,1
 
-trn $0,1
 mov $1,$0
-gcd $1,2
-seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
-div $0,$1
+trn $1,1
+mov $4,$1
+gcd $4,2
+mov $6,$1
+add $6,1
+mov $7,2
+mov $2,$1
+lpb $2
+  sub $2,$4
+  mov $1,$6
+  sub $1,$2
+  mov $3,$1
+  mov $5,$1
+  gcd $5,$2
+  bin $5,$1
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $1,$3
+  add $1,1
+  mul $1,$7
+  mul $5,$1
+  max $7,$5
+lpe
+mov $1,$7
+div $1,$4
+mov $0,$1

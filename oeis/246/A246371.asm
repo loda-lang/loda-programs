@@ -8,7 +8,8 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,64216 ; Replace each p^e with prevprime(p)^e in the prime factorization of odd numbers; inverse of sequence A048673 considered as a permutation of the natural numbers.
+  mul $3,2
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   sub $3,$1
   max $3,0
   cmp $3,0

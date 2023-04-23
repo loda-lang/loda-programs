@@ -4,7 +4,19 @@
 
 add $0,2
 mov $1,$0
-seq $0,241526 ; Number of different positions in which a square with side length k, 1 <= k <= n - floor(n/3), can be placed within a bi-symmetric triangle of 1 X 1 squares of height n.
+mul $0,4
+add $0,3
+div $0,2
+add $0,4
+lpb $0
+  mov $3,$0
+  sub $3,2
+  pow $3,2
+  div $3,4
+  sub $0,3
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,3
 add $0,1
 sub $0,$1

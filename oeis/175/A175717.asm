@@ -8,11 +8,23 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,175628 ; a(2*n+1) = A005563(n). a(2*n) = A061037(n+1).
+  mov $6,$0
+  div $0,2
+  add $6,1
+  sub $6,$0
+  mov $7,$0
+  sub $7,$6
+  sub $6,$7
+  mul $6,$0
+  pow $7,4
+  sub $7,$0
+  add $0,$7
+  gcd $0,$6
+  div $6,$0
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1

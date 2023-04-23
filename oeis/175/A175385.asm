@@ -1,10 +1,24 @@
-; A175385: a(n) = numerator of sum{i=1..n} binomial(2n-i-1,i-1)/i.
+; A175385: a(n) = numerator of Sum_{i=1..n} binomial(2n-i-1,i-1)/i.
 ; Submitted by Christian Krause
 ; 1,3,17,23,61,107,421,1103,5777,7563,19801,103681,135721,355323,1860497,2435423,6376021,11128427,43701901,114413063,599074577,784198803,2053059121,10749957121,14071876561,36840651123,192900153617
 
 mul $0,2
+mov $2,$0
+add $2,2
 add $0,1
-seq $0,189731 ; a(n) = numerator of B(0,n) with B(n,n) = 0, B(n-1,n) = 1/n, and B(m,n) = B(m-1,n+1)-B(m-1,n).
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mov $3,$5
+  add $3,4
+  add $5,$4
+  add $5,2
+lpe
+mov $0,$3
+dif $0,2
+mov $1,$0
+gcd $1,$2
+div $0,$1
 div $0,2
 mul $0,2
 add $0,1

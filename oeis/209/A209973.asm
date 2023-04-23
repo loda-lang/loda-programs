@@ -6,7 +6,10 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,345082 ; Number of elements of order n in R/Z X Z/2Z.
+  mov $4,$2
+  seq $4,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $2,$4
   mov $3,$1
   add $1,$2
 lpe

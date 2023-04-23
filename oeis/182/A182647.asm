@@ -7,11 +7,11 @@ mov $1,2
 lpb $1
   bin $1,$2
   add $0,$1
-  sub $0,1
   mov $2,$0
-  max $2,0
-  seq $2,174394 ; Fourth root of largest n-digit number with exactly five divisors
+  seq $2,114322 ; Largest number whose 4th power has n digits.
+  seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   pow $2,4
+  sub $0,1
   mul $0,$1
 lpe
 min $3,1

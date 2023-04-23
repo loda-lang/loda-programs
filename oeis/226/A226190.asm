@@ -5,9 +5,10 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  seq $4,215000 ; a(n) = floor(exp(1 + 1/2 + 1/3 + ... + 1/n)).
   mov $3,$1
-  seq $3,226894 ; Position of n-th harmonic number H(n) in the joint ranking of {H(k)} and {log k}, for k >= 1; complement of A226896.
-  sub $3,1
+  add $3,$4
   add $0,1
   add $1,1
   add $2,$3

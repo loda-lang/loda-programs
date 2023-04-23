@@ -8,7 +8,15 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,76605 ; Largest prime divisor of n^2 - 1.
+  add $3,2
+  pow $3,2
+  mov $5,$3
+  gcd $5,2
+  mul $3,$5
+  sub $3,$5
+  div $3,2
+  sub $3,1
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,90
   cmp $3,7
   sub $0,$3

@@ -8,7 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,46897 ; Sum of divisors of n that are not divisible by 4.
+  seq $3,593 ; Sum of odd divisors of n.
   mov $4,$1
   add $4,1
   gcd $4,$3

@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,46975 ; Partial sums of digits of decimal expansion of e.
+  seq $3,11543 ; Decimal expansion of e truncated to n places.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mov $5,$3
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

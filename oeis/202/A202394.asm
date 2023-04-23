@@ -8,6 +8,15 @@ mod $1,3
 dif $1,2
 mul $1,6
 sub $1,4
-seq $0,10816 ; Expansion of Product_{k>=1} (1 - x^k)^3.
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+sub $0,1
+bin $0,$2
+mul $2,2
+add $2,1
+mul $2,$0
+mov $0,$2
 mul $0,$1
 div $0,2

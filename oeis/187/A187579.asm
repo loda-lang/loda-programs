@@ -7,8 +7,15 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$6
-  seq $3,287790 ; {0->001, 1->110}-transform of the infinite Fibonacci word A003849.
-  sub $0,$3
+  div $3,3
+  seq $3,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+  add $3,1
+  mov $7,$6
+  mul $7,2
+  div $7,3
+  add $7,$3
+  mod $7,2
+  sub $0,$7
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -16,7 +23,7 @@ lpb $2
   sub $2,18
   add $5,1
   add $5,$1
-  cmp $1,$3
+  cmp $1,$7
   mov $6,$5
 lpe
 mov $0,$5

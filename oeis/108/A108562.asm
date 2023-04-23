@@ -9,9 +9,13 @@ lpb $2
   mov $6,$1
   mul $6,2
   mov $3,$1
-  seq $3,1043 ; Numbers that are the sum of 2 successive primes.
-  sub $3,3
+  seq $3,40 ; The prime numbers.
+  mov $7,$3
+  seq $7,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $7,$3
+  mov $3,$7
   sub $3,$6
+  sub $3,3
   mov $5,$3
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

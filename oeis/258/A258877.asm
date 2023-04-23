@@ -7,7 +7,9 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,164029 ; a(n) = nonprime(n) + (-1)^(nonprime(n)).
+  seq $3,141468 ; Zero together with the nonprime numbers A018252.
+  pow $6,$3
+  add $3,$6
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

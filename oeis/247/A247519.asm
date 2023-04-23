@@ -7,8 +7,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,293320 ; Least integer k such that k/2^n > tau^2, where tau = (1+sqrt(5))/2 = golden ratio.
-  sub $3,1
+  seq $3,293313 ; Greatest integer k such that k/2^n < (1+sqrt(5))/2 (the golden ratio).
   gcd $3,4
   cmp $3,4
   sub $0,$3

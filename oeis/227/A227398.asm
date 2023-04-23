@@ -1,9 +1,30 @@
 ; A227398: Expansion of chi(x^3) / chi(x) in powers of x where chi() is a Ramanujan theta function.
 ; Submitted by [AF>Libristes] alain65
 ; 1,-1,1,-1,1,-2,2,-3,3,-3,4,-5,6,-7,8,-9,10,-12,14,-16,18,-20,23,-26,30,-34,38,-42,47,-53,60,-67,74,-82,91,-102,114,-126,139,-153,169,-187,207,-228,250,-274,301,-331,364,-399,436,-476,520,-569,622,-679,739,-804,875,-953,1038,-1128,1224,-1327,1439,-1562,1694,-1835,1985,-2146,2321,-2510,2714,-2931,3162,-3410,3677,-3966,4275,-4605,4956,-5331,5735,-6169,6634,-7129,7655,-8217,8819,-9465,10155,-10889,11669,-12500,13389,-14340,15354,-16431,17575,-18792
-; Formula: a(n) = A003105(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,3105 ; Schur's 1926 partition theorem: number of partitions of n into parts 6n+1 or 6n-1.
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  add $5,1
+  mov $6,$3
+  mul $6,2
+  add $6,1
+  div $6,3
+  mov $7,-1
+  pow $7,$6
+  add $7,1
+  dif $6,2
+  seq $6,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $6,$7
+  div $6,2
+  add $2,$6
+  mov $4,$5
+  dif $4,2
+lpe
+mov $0,$2
 mul $0,$1

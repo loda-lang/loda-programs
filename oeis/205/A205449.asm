@@ -7,7 +7,8 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,205448 ; Ordered differences of even-indexed Fibonacci numbers.
+  seq $3,130328 ; Triangle of differences between powers of 2, read by rows.
+  seq $3,62879 ; Integers whose Zeckendorf expansion does not contain ones at even positions.
   gcd $3,$0
   add $1,1
   add $2,$3

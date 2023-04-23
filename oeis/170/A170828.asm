@@ -10,7 +10,13 @@ lpb $1
   sub $0,$1
   mov $3,0
   gcd $3,$0
-  seq $3,170827 ; Sum of digits after the decimal point in the decimal expansion of (3/2)^n.
+  mov $5,10
+  pow $5,$3
+  mov $4,15
+  pow $4,$3
+  mod $4,$5
+  mov $3,$4
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $2,$3
 lpe
 mov $0,$2

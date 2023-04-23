@@ -9,7 +9,14 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,212337 ; Expansion of 1/(1-4*x+3*x^2)^2.
+  add $5,2
+  mov $6,$0
+  mov $0,3
+  pow $0,$5
+  add $0,1
+  mul $0,$6
+  div $0,4
+  add $0,1
   sub $0,$4
   sub $4,$3
   add $1,1

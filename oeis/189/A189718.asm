@@ -1,6 +1,13 @@
 ; A189718: Fixed point of the morphism 0->011, 1->100.
+; Submitted by Science United
 ; 0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0
-; Formula: a(n) = A160384(n)%2
 
-seq $0,160384 ; Number of nonzero digits in the base-3 representation of n.
+mul $0,2
+lpb $0
+  mov $2,$0
+  seq $2,64990 ; If A_k denotes the first 3^k terms, then A_0 = 0, A_{k+1} = A_k A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1
 mod $0,2

@@ -6,9 +6,16 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  add $4,5
+  mul $4,4
+  mod $4,14
   mov $3,$1
-  seq $3,231000 ; Number of years after which a date can fall on the same day of the week, in the Julian calendar.
-  sub $3,1
+  mul $3,12
+  add $3,$4
+  add $3,1
+  div $3,3
+  sub $3,3
   add $0,1
   add $1,1
   add $2,$3

@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,118469 ; Triangle read by rows: a(n,m) = If(n = 1, then 1, else Prime(n) - 1 + Sum_{k=n..m} (Prime(k + 1) - Prime(k))/2.
+  seq $3,18900 ; Sums of two distinct powers of 2.
+  seq $3,19565 ; The squarefree numbers ordered lexicographically by their prime factorization (with factors written in decreasing order). a(n) = Product_{k in I} prime(k+1), where I is the set of indices of nonzero binary digits in n = Sum_{k in I} 2^k.
+  sub $3,1
+  seq $3,219839 ; a(n) is the number of odd integers in 2..(n-1) that have a common factor (other than 1) with n.
   mul $3,338
   gcd $3,4
   add $3,1

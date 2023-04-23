@@ -5,7 +5,15 @@
 sub $1,$0
 lpb $0
   mov $2,$0
-  seq $2,96000 ; Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.
+  mul $2,5
+  mov $3,$2
+  add $2,4
+  pow $2,3
+  mul $3,2
+  add $3,$2
+  mov $2,$3
+  div $2,75
+  add $2,1
   sub $0,1
   add $1,$2
 lpe

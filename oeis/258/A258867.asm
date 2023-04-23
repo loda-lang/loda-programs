@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,138515 ; Expansion of q^(-1/4) * eta(q^2)^8 / (eta(q) * eta(q^4))^2 in powers of q.
+  seq $3,2171 ; Glaisher's chi numbers. a(n) = chi(4*n + 1).
   cmp $3,0
   sub $0,$3
   mov $4,$0

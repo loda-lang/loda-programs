@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,106507 ; G.f.: Product_{k>0} (1-x^(2k-1))/(1-x^(2k)).
+  mov $5,-1
+  pow $5,$2
+  seq $2,6950 ; G.f.: Product_{k>=1} (1 + x^(2*k - 1)) / (1 - x^(2*k)).
+  mul $2,$5
   add $4,9
   add $1,$2
   mov $3,$4

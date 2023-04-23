@@ -5,9 +5,16 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,191162 ; a(n) = [4*n*Pi] - 2*[2*n*Pi], where [ ]=floor.
+  add $3,2
+  mul $3,4
+  mov $5,97
+  mul $5,$3
+  div $5,113
+  add $1,1
+  sub $3,$5
+  sub $3,1
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

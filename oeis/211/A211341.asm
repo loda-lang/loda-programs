@@ -6,7 +6,11 @@ add $0,1
 mov $1,$0
 mov $2,$0
 pow $2,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mod $2,$0
+mov $3,1
+lpb $0
+  mul $3,$0
+  sub $0,1
+lpe
+mod $2,$3
 mov $0,$2
 div $0,$1

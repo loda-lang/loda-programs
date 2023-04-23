@@ -7,8 +7,14 @@ add $0,1
 add $2,4
 pow $2,5
 lpb $2
+  mov $4,$1
+  seq $4,195076 ; Fractalization of (1+[n/3]), where [ ]=floor.
   mov $3,$1
-  seq $3,195078 ; Inverse permutation of A195077; every positive integer occurs exactly once.
+  seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  add $4,$1
+  sub $4,$3
+  mov $3,$4
+  add $3,1
   gcd $3,$0
   add $1,1
   add $2,$3

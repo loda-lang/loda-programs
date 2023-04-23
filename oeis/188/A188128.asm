@@ -5,6 +5,18 @@
 mov $1,$0
 mul $1,2
 mod $1,4
-seq $0,215885 ; a(n) = 3*a(n-1) - a(n-3), with a(0) = 3, a(1) = 3, and a(2) = 9.
-add $0,1
+mov $2,1
+mov $4,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mov $5,$3
+  mov $3,$4
+  mov $4,$2
+  mul $2,3
+  sub $2,$5
+lpe
+mul $2,3
+mov $0,$2
 sub $0,$1
+add $0,1

@@ -9,8 +9,14 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,187219 ; Number of partitions of n that do not contain parts less than the smallest part of the partitions of n-1.
+  mov $4,$0
+  seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
+  add $4,1
+  add $0,1
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mod $0,$4
   sub $0,$1
+  add $0,1
   mov $1,$0
 lpe
 mov $0,$1

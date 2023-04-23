@@ -1,15 +1,17 @@
 ; A255817: Parity of A000788, which is the total number of ones in 0..n in binary.
-; Submitted by Athlici
+; Submitted by WyerByter
 ; 0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,0,1,0,0
 
 mov $1,$0
-mov $2,$0
-lpb $0
-  div $2,2
-  sub $0,$2
-lpe
-sub $0,1
-gcd $0,2
-add $0,$1
+add $1,1
+dif $1,-2
+max $1,0
+mov $2,$1
 div $0,2
+lpb $1
+  div $2,2
+  sub $1,$2
+lpe
+add $1,1
+add $0,$1
 mod $0,2

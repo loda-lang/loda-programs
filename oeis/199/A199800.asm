@@ -11,7 +11,16 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $2,$0
-  seq $2,100923 ; a(n) = 1 iff 6*n+1 and 6*n-1 are both prime numbers (0 otherwise).
+  add $2,1
+  mul $2,6
+  mov $7,$2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $6,$2
+  sub $6,$7
+  sub $6,1
+  mul $7,$6
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $2,$7
   mul $2,$1
   sub $2,1
   trn $2,1

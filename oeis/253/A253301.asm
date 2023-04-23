@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   div $1,5
   add $1,$2
-  mul $2,2
-  div $2,4
+  div $2,2
   add $2,$1
   mul $1,2
 lpe

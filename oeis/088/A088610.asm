@@ -8,7 +8,15 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,243352 ; If n is k-th squarefree number [i.e., n = A005117(k)], a(n) = 2k-1; otherwise, when n is k-th nonsquarefree number [i.e., n = A013929(k)], a(n) = 2k.
+  seq $3,284584 ; a(1) = 0; for n > 1, if n is not squarefree, then a(n) = A057627(n), otherwise a(n) = A013928(n).
+  mov $4,$3
+  add $4,1
+  add $3,$4
+  mov $5,$1
+  div $5,$3
+  cmp $5,0
+  sub $3,1
+  add $3,$5
   gcd $3,$0
   add $1,1
   add $2,$3

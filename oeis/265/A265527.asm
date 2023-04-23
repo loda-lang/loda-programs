@@ -3,4 +3,11 @@
 
 mul $0,2
 trn $0,1
-seq $0,206913 ; Greatest binary palindrome <= n; the binary palindrome floor function.
+lpb $0
+  mov $2,$0
+  seq $2,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+  mov $1,$0
+  cmp $1,$2
+  sub $0,1
+  add $0,$1
+lpe

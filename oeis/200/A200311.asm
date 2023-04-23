@@ -6,6 +6,10 @@ add $0,2
 pow $0,2
 mul $0,11
 max $1,$0
-seq $1,70939 ; Length of binary representation of n.
-mov $0,$1
-sub $0,4
+div $1,2
+lpb $1
+  div $1,2
+  add $2,1
+lpe
+mov $0,$2
+sub $0,3

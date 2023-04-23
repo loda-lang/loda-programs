@@ -7,8 +7,14 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,34380 ; Ratio of totient to Carmichael's lambda function: a(n) = A000010(n) / A002322(n).
+  mov $7,$1
+  seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $5,$1
+  seq $5,2322 ; Reduced totient function psi(n): least k such that x^k == 1 (mod n) for all x prime to n; also known as the Carmichael lambda function (exponent of unit group mod n); also called the universal exponent of n.
+  mov $6,$7
+  gcd $7,$5
+  div $6,$7
+  mov $3,$6
   trn $3,2
   min $3,1
   sub $0,$3

@@ -9,7 +9,13 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,136277 ; From the binary representation of n: binomial(number of ones, number of blocks of contiguous ones).
+  seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+  sub $3,1
+  seq $3,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
+  sub $3,1
+  seq $3,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
+  sub $3,1
+  seq $3,181591 ; a(n) = binomial(bigOmega(n),omega(n)), where omega = A001221 and bigOmega = A001222.
   sub $3,1
   cmp $3,2
   sub $0,$3

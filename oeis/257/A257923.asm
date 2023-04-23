@@ -5,8 +5,8 @@
 pow $0,2
 lpb $0
   trn $0,4
-  add $1,1
   div $0,2
+  add $1,1
 lpe
 mov $0,$1
 add $0,3

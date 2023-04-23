@@ -12,7 +12,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,127236 ; A Thue-Morse binomial triangle.
+  seq $0,28326 ; Twice Pascal's triangle A007318: T(n,k) = 2*C(n,k).
+  seq $0,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
+  mod $0,2
   mul $1,2
   add $1,$0
 lpe

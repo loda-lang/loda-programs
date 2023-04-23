@@ -10,8 +10,8 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $6,$3
-  mul $6,3872
-  div $6,1032
+  mul $6,484
+  div $6,129
   sub $6,$3
   mov $3,$6
   sub $3,$1

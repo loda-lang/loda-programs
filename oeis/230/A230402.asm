@@ -1,10 +1,17 @@
 ; A230402: Integer areas of orthic triangles of integer-sided triangles.
 ; Submitted by Christian Krause
 ; 1512,2688,6048,10752,13608,24192,37800,43008,54432,67200,74088,96768,122472,131712,151200,172032,182952,217728,255528,268800,296352,325248,340200,387072,436968,454272,489888,526848,545832,604800,666792,688128,731808,776832
-; Formula: a(n) = 168*(A267027(n+1)-1)^2
+; Formula: a(n) = 168*(((2*((2*n+3)/((2*n+3)%4))+1)*((2*n+3)%4))/2-1)^2
 
-add $0,1
-seq $0,267027 ; "Polyrhythmic sequence" P(3,4): numbers congruent to 1 mod 3 (A016777) or 1 mod 4 (A016813).
+mul $0,2
+add $0,3
+mov $1,$0
+mod $0,4
+div $1,$0
+mul $1,2
+add $1,1
+mul $0,$1
+div $0,2
 sub $0,1
 pow $0,2
 mul $0,168

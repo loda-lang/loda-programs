@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   add $1,$4
-  seq $0,335519 ; Number of contiguous divisors of n.
+  seq $0,325770 ; Number of distinct nonempty contiguous subsequences of the integer partition with Heinz number n.
+  add $0,1
   bin $1,$4
   mul $1,$0
   add $3,$1
