@@ -9,7 +9,12 @@ lpb $2
   sub $2,1
   sub $2,$4
   mov $3,$1
-  seq $3,182126 ; a(n) = prime(n)*prime(n+1) mod prime(n+2).
+  add $3,2
+  seq $3,40 ; The prime numbers.
+  mov $5,$1
+  seq $5,6094 ; Products of 2 successive primes.
+  mod $5,$3
+  mov $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

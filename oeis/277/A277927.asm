@@ -1,22 +1,22 @@
 ; A277927: Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 5", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jamie Morken(l1)
+; Submitted by Science United
 ; 1,1,0,1111,0,111111,0,11111111,0,1111111111,0,111111111111,0,11111111111111,0,1111111111111111,0,111111111111111111,0,11111111111111111111,0,1111111111111111111111,0,111111111111111111111111,0,11111111111111111111111111,0,1111111111111111111111111111,0,111111111111111111111111111111,0,11111111111111111111111111111111,0,1111111111111111111111111111111111,0,111111111111111111111111111111111111,0,11111111111111111111111111111111111111,0,1111111111111111111111111111111111111111,0
 
-mov $3,$0
-mul $3,5
-sub $3,3
-lpb $3
-  sub $3,1
-  mov $1,$0
-  add $1,$0
-  mov $4,$1
-  cmp $4,0
-  add $1,$4
-  sub $0,$1
-  add $0,1
-lpe
 add $0,1
-mov $2,10
-pow $2,$0
-mov $0,$2
+lpb $0
+  mul $0,-1
+  add $0,3
+lpe
+mov $1,$0
+lpb $0
+  mul $0,3
+  add $0,1
+  dif $0,2
+  div $0,2
+  mov $1,0
+lpe
+mov $0,$1
+mov $1,10
+pow $1,$0
+mov $0,$1
 div $0,9

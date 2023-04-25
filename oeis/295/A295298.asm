@@ -6,8 +6,13 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
+  mov $4,$1
+  seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,295297 ; a(n) = (A000120(n) + A000203(n)) mod 2.
+  add $3,1
+  seq $3,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  sub $3,$4
+  mod $3,2
   cmp $3,0
   sub $0,$3
   add $1,1

@@ -1,5 +1,5 @@
 ; A294239: Sum of the parts in the partitions of n into two parts with larger part nonsquarefree.
-; Submitted by Jamie Morken(w1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,0,5,6,7,8,9,20,22,24,39,42,45,48,51,54,57,60,84,88,92,96,100,130,135,168,203,210,217,224,231,238,245,252,259,266,273,280,287,294,301,308,360,414,423,432,441,500,510,520,583,594,605,616,627,638,649,660,732,744,756,832,845,858,871,884,966,980,994,1008,1022,1036,1050,1140,1232,1248,1264,1280,1296,1394,1411,1428,1530,1548,1566,1584,1602,1620,1638,1656,1767,1786,1805,1824,1843,1862,1881,2000
 
 mov $4,-1
@@ -11,7 +11,7 @@ lpb $1
   mov $7,$1
   add $7,1
   mov $3,$1
-  seq $3,73353 ; Sum of n and its squarefree kernel.
+  seq $3,336567 ; Sum of proper divisors of {n divided by its largest squarefree divisor}.
   mov $6,$3
   gcd $6,$7
   mov $3,$7

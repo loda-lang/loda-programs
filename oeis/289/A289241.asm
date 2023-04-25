@@ -4,7 +4,17 @@
 
 mov $1,$0
 min $1,1
-trn $0,1
-seq $0,289013 ; Positions of 1 in A289011; complement of A289012.
+mov $2,2
+mov $3,$0
+pow $3,4
+lpb $3
+  mov $4,$2
+  seq $4,289011 ; Fixed point of the mapping 00->0010, 01->001, 10->100, starting with 00.
+  sub $0,$4
+  add $2,1
+  sub $3,$0
+lpe
+mov $0,$2
+add $0,1
 mul $0,$1
 add $0,3

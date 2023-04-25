@@ -8,7 +8,10 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,78936 ; Smallest divisor of n*(n+1)/2 that is >= sqrt(n*(n+1)/2).
+  add $3,2
+  bin $3,2
+  sub $3,1
+  seq $3,33677 ; Smallest divisor of n >= sqrt(n).
   sub $3,$1
   max $3,0
   cmp $3,0

@@ -1,5 +1,22 @@
 ; A286772: Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 221", based on the 5-celled von Neumann neighborhood.
 ; 1,2,0,14,1,62,1,254,1,1022,1,4094,1,16382,1,65534,1,262142,1,1048574,1,4194302,1,16777214,1,67108862,1,268435454,1,1073741822,1,4294967294,1,17179869182,1,68719476734,1,274877906942,1,1099511627774,1,4398046511102,1,17592186044414,1,70368744177662,1,281474976710654,1,1125899906842622,1,4503599627370494,1,18014398509481982,1,72057594037927934,1,288230376151711742,1,1152921504606846974,1,4611686018427387902,1,18446744073709551614,1,73786976294838206462,1,295147905179352825854,1
 
-seq $0,287192 ; Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 253", based on the 5-celled von Neumann neighborhood.
+mov $1,$0
+cmp $1,2
+cmp $1,0
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,2
+  mov $3,$4
+  mul $3,2
+  add $3,1
+  add $4,$2
+  mov $2,$3
+lpe
+sub $4,1
+mov $0,$2
+mod $0,$4
+add $0,1
+mul $0,$1
 dif $0,3

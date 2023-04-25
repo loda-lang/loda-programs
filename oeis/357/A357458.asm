@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,325033 ; Sum of sums of the multisets of prime indices of each prime index of n.
+  seq $0,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
+  sub $0,1
+  seq $0,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mov $2,$3
   mul $2,$0
   add $1,$2

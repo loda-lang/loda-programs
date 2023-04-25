@@ -1,28 +1,17 @@
 ; A317048: Numbers k such that both k and k + 2 are consecutive deficient numbers.
-; Submitted by ChelseaOilman
+; Submitted by arkiss
 ; 5,11,17,19,23,27,29,35,39,41,47,53,55,59,65,69,71,77,79,83,87,89,95,99,101,103,107,111,113,119,125,131,137,139,143,149,155,159,161,167,173,175,179,185,191,195,197,199,203,207,209,215,219,221,223,227,233,239,245,251,257,259,263,269,271,275,279,281,287,293,299,303,305,307,311,317,319,323,329,335,339,341,347,349,351,353,359,363,365,367,371,377,379,383,389,391,395,399,401,407
 
-mov $1,1
-mov $2,$0
-add $2,5
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,160413 ; a(n) = A160411(n+1)/4.
-  sub $3,1
-  seq $3,294936 ; Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
-  sub $0,$3
-  mul $3,3
-  add $1,1
-  add $1,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  trn $2,1
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $1,$0
+  add $1,$4
+  trn $1,1
+  seq $1,23196 ; Nondeficient numbers: numbers k such that sigma(k) >= 2k; union of A000396 and A005101.
+  mov $2,$4
+  mul $2,$1
+  add $3,$2
 lpe
-mov $0,$1
-mul $0,6
-sub $0,72
-div $0,12
-add $0,4
+mov $0,$3
+sub $0,1

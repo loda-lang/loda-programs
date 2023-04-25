@@ -5,8 +5,11 @@
 mov $2,$0
 mul $2,1682
 lpb $2
+  mov $6,$1
+  add $6,1
   mov $3,$1
-  seq $3,268336 ; a(n) = A174824(n)/n, where A174824(n) = lcm(A002322(n), n) and A002322(n) is the Carmichael lambda function (also known as the reduced totient function or the universal exponent of n).
+  seq $3,174824 ; a(n) = period of the sequence {m^m, m >= 1} modulo n.
+  div $3,$6
   add $1,$4
   mov $5,$1
   gcd $5,$3

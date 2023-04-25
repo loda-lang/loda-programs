@@ -8,9 +8,9 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  mov $1,$0
-  seq $1,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
-  sub $1,1
+  mov $5,$0
+  seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $1,$5
   cmp $1,0
   seq $0,161 ; Number of partitions of n into 2 squares.
   mul $0,$1

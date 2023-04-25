@@ -8,7 +8,11 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,97723 ; One fourth of sum of divisors of 4n+3.
+  mul $2,2
+  add $2,1
+  mul $2,2
+  seq $2,593 ; Sum of odd divisors of n.
+  div $2,4
   add $4,2
   add $1,$2
   mov $3,$4

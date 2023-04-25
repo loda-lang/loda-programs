@@ -7,8 +7,20 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  sub $5,1
+  seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  add $5,1
   mov $3,$1
-  seq $3,358775 ; a(n) = 1 if the prime factorization of n has an even number of prime factors that sum to an odd number, otherwise 0.
+  seq $3,92412 ; Fixed point of the morphism 0->11, 1->12, 2->13, 3->10, starting from a(1) = 1.
+  add $3,5
+  sub $5,$3
+  mul $5,$3
+  mov $3,$5
+  mod $3,2
+  add $3,2
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

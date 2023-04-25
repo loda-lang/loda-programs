@@ -14,7 +14,8 @@ lpb $4
   bin $1,$0
   sub $4,1
   sub $0,1
-  seq $0,353563 ; Primorial base exp-function applied to Euler totient function: a(n) = A276086(phi(n)).
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
   mul $0,$3
   mul $1,$0
   max $3,$1

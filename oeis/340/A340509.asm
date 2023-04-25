@@ -4,7 +4,26 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,105610 ; Numbers n such that both p1=2n+3 and p2=4n+5 are primes.
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  max $4,$6
+  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$4
+  add $2,6
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+  add $6,$2
+  add $2,2
+  add $6,$2
+lpe
+mov $0,$2
+sub $0,8
+div $0,8
 sub $1,$0
 sub $0,$1
 mul $0,3

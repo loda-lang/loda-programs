@@ -9,7 +9,10 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,354924 ; a(n) = 1 if A047994(n) is equal to A344005(n), otherwise 0.
+  add $3,1
+  dif $3,2
+  sub $3,1
+  seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   gcd $3,4
   add $3,1
   cmp $3,5

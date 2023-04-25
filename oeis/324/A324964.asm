@@ -1,13 +1,11 @@
 ; A324964: a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
-; Submitted by Jon Maiga
+; Submitted by Dave Studdert
 ; 0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = binomial((-n+1)/2-2,n-1)%2
+; Formula: a(n) = binomial(3*n,n-1)%2
 
+mov $1,$0
+mul $1,3
 sub $0,1
-sub $1,$0
-mov $2,$1
-div $2,2
-sub $2,2
-bin $2,$0
-mov $0,$2
+bin $1,$0
+mov $0,$1
 mod $0,2

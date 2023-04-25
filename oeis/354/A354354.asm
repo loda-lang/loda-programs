@@ -1,8 +1,6 @@
 ; A354354: a(n) = 1 if n is neither a multiple of 2 nor 3, and otherwise 0.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0
-; Formula: a(n) = (gcd(n,6)%3)%2
 
 gcd $0,6
-mod $0,3
-mod $0,2
+cmp $0,1

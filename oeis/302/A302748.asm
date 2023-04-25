@@ -1,14 +1,13 @@
 ; A302748: Half thrice the previous number, rounded down, plus 1, starting with 6.
-; Submitted by Simon Strandgaard
+; Submitted by USTL-FIL (Lille Fr)
 ; 6,10,16,25,38,58,88,133,200,301,452,679,1019,1529,2294,3442,5164,7747,11621,17432,26149,39224,58837,88256,132385,198578,297868,446803,670205,1005308,1507963,2261945,3392918,5089378,7634068,11451103,17176655,25764983,38647475,57971213
+; Formula: a(n) = (3*a(n-1)+2)/2, a(0) = 6
 
-mov $1,48
-mul $0,2
+mov $1,6
 lpb $0
-  sub $0,2
-  div $1,4
-  mul $1,6
+  sub $0,1
+  mul $1,3
+  add $1,2
+  div $1,2
 lpe
-sub $1,12
-div $1,6
-add $0,$1
+mov $0,$1

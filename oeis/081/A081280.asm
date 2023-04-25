@@ -12,7 +12,15 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,6974 ; Coefficients of Chebyshev T polynomials: a(n) = A053120(n+8, n), n >= 0.
+  mov $5,-4
+  bin $5,$0
+  mov $6,-2
+  pow $6,$0
+  mul $6,$5
+  add $0,7
+  mul $0,$6
+  add $0,$6
+  div $0,8
   mul $1,$0
   add $3,$1
 lpe

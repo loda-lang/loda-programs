@@ -1,4 +1,4 @@
-; A043397: Numbers having one 1 in base 7.
+; A043397: Numbers whose base-7 representation contains exactly one 1.
 ; Submitted by ChelseaOilman
 ; 1,7,9,10,11,12,13,15,22,29,36,43,49,51,52,53,54,55,63,65,66,67,68,69,70,72,73,74,75,76,77,79,80,81,82,83,84,86,87,88,89,90,91,93,94,95,96,97,99,105,107,108,109,110,111,113,120,127
 

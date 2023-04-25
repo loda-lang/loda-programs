@@ -1,9 +1,32 @@
 ; A105936: Numbers that are the product of exactly 3 primes and are of the form prime(n) + prime(n+1).
 ; Submitted by LCB001
 ; 8,12,18,30,42,52,68,78,138,172,186,222,258,268,410,434,508,548,618,668,762,772,786,892,906,946,978,1002,1030,1132,1334,1374,1446,1542,1606,1758,1866,1878,1948,2006,2022,2252,2334,2414,2452,2468,2486,2572,2588,2598,2626,2930,3034,3054,3074,3092,3126,3138,3362,3590,3634,3678,3790,3882,3966,4132,4210,4314,4382,4434,4458,4542,4748,4772,4782,4906,4926,5108,5254,5322,5622,5708,5718,5812,5826,5866,5932,6078,6146,6172,6198,6378,6394,6530,6652,6674,6706,6906,6918,7010
-; Formula: a(n) = 2*A078443(n)
 
 mov $1,$0
-seq $1,78443 ; Numbers which are both interprime and semiprime.
+mov $3,$0
+add $3,4
+pow $3,2
+lpb $3
+  sub $3,1
+  mov $4,$2
+  seq $4,40 ; The prime numbers.
+  mov $7,$4
+  seq $7,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $7,$4
+  mov $4,$7
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  seq $4,38548 ; Number of divisors of n that are at most sqrt(n).
+  cmp $4,2
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+lpe
+mov $1,$6
+add $1,1
 mov $0,$1
 mul $0,2

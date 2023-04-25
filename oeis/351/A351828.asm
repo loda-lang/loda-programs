@@ -9,8 +9,11 @@ lpb $1
   sub $1,1
   mov $0,$5
   sub $0,$1
+  mov $8,$0
+  seq $8,48250 ; Sum of the squarefree divisors of n.
   mov $3,$0
-  seq $3,162296 ; Sum of divisors of n that have a square factor.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$8
   mov $7,$3
   cmp $7,0
   mov $2,$7

@@ -6,8 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  mul $5,55
+  div $5,34
   mov $3,$1
-  seq $3,332937 ; a(n) is the greatest common divisor of the first two terms of row n of the Wythoff array (A035513).
+  gcd $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

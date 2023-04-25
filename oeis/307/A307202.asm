@@ -9,8 +9,17 @@ lpb $5
   add $0,$5
   sub $0,1
   mov $4,$0
-  max $4,0
-  seq $4,307272 ; Partial sums of A307202.
+  mul $4,5
+  sub $4,1
+  mov $6,$4
+  add $4,6
+  div $4,4
+  sub $6,$4
+  mul $4,$6
+  add $4,53
+  div $4,5
+  mul $4,3
+  sub $4,29
   mov $2,$5
   mul $2,$4
   add $1,$2

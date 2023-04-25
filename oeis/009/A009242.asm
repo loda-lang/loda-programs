@@ -1,10 +1,13 @@
 ; A009242: a(n) = lcm(n, sigma(n)).
 ; Submitted by Jon Maiga
 ; 1,6,12,28,30,12,56,120,117,90,132,84,182,168,120,496,306,234,380,420,672,396,552,120,775,546,1080,56,870,360,992,2016,528,918,1680,3276,1406,1140,2184,360,1722,672,1892,924,1170,1656,2256,1488,2793,4650,1224,2548
-; Formula: a(n) = A017665(n)*(n+1)
 
 mov $1,$0
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $2,$0
+add $2,1
+gcd $2,$1
 add $0,1
-seq $1,17665 ; Numerator of sum of reciprocals of divisors of n.
+dif $1,$2
 mul $1,$0
 mov $0,$1

@@ -4,6 +4,20 @@
 
 mul $0,2
 add $0,1
+mov $3,10
 mov $1,$0
-seq $1,286044 ; {011->0}-transform of the Thue-Morse word A010060.
+add $1,1
+lpb $1
+  sub $1,1
+  add $5,$4
+  sub $2,$3
+  div $2,2
+  mov $4,1
+  add $4,$2
+  gcd $4,4
+  div $2,$4
+  mul $3,4
+lpe
+mov $1,$5
+mod $1,2
 add $0,$1

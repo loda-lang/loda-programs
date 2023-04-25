@@ -5,4 +5,15 @@
 add $0,1
 pow $0,2
 sub $0,1
-seq $0,70319 ; Max( tau(k) : k=1,2,3,...,n ) where tau(n)=A000005(n) is the number of divisors of x.
+mov $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $0,1
+  max $1,$0
+lpe
+mov $0,$1
+add $0,1

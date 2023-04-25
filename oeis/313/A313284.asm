@@ -39,8 +39,7 @@ add $2,1
 add $2,$7
 mul $2,4
 add $2,1
-mul $2,2
-div $2,6
+div $2,3
 mov $5,$0
 mul $5,2
 sub $2,$5

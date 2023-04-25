@@ -1,9 +1,17 @@
 ; A357518: Unique fixed point of the two-block substitution 00->111, 01->110, 10->101, 11->100.
 ; Submitted by Arkhenia
 ; 1,0,1,1,0,0,1,1,1,1,0,0,1,0,0,1,1,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,1
-; Formula: a(n) = ((8*gcd(0,A087088(n))-24)/8+3)%2
 
-seq $0,87088 ; Positive ruler-type fractal sequence with 1's in every third position.
+lpb $0
+  mov $2,$0
+  add $3,1
+  gcd $0,3
+  add $0,1
+  mul $0,$2
+  div $0,3
+lpe
+mov $0,$3
+add $0,1
 gcd $1,$0
 mul $1,8
 mov $0,$1

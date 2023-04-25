@@ -1,14 +1,20 @@
 ; A346304: Positions of words in A076478 that start with 1 and end with 0.
-; Submitted by Simon Strandgaard
+; Submitted by Coleslaw
 ; 5,11,13,23,25,27,29,47,49,51,53,55,57,59,61,95,97,99,101,103,105,107,109,111,113,115,117,119,121,123,125,191,193,195,197,199,201,203,205,207,209,211,213,215,217,219,221,223,225,227,229,231,233,235,237
 
-mov $1,2
-mov $2,$0
-lpb $2
-  trn $2,$1
-  mul $1,2
+mov $2,3
+add $0,1
+lpb $0
+  mov $3,$0
+  mod $3,2
+  mul $3,$2
+  div $0,2
+  add $1,$3
+  mul $2,2
 lpe
-add $1,$0
-mul $1,2
-add $1,1
-mov $0,$1
+add $0,$2
+add $0,$1
+sub $0,9
+div $0,3
+mul $0,2
+add $0,5

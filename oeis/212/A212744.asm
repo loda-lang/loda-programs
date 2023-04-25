@@ -5,7 +5,12 @@
 add $0,1
 lpb $0
   mov $2,$0
-  seq $2,309335 ; a(n) = n^3 if n odd, 7*n^3/8 if n even.
+  pow $2,3
+  mul $2,7
+  mov $3,2
+  gcd $3,$2
+  add $3,6
+  div $2,$3
   sub $0,$1
   trn $0,1
   add $1,$2

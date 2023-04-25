@@ -8,7 +8,11 @@ lpb $1
   sub $1,1
   mov $0,$3
   trn $0,1
-  seq $0,300570 ; a(n) is the concatenation n in base 2, n-1 in base 2, ..., 1 in base 2.
+  seq $0,98780 ; First n numbers in binary representation concatenated in reverse order.
+  div $0,2
+  seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+  mul $0,10
+  add $0,1
   mov $2,$0
 lpe
 min $3,1

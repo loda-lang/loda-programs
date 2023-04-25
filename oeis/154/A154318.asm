@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,78782 ; Nonprimes (A018252) with prime (A000040) subscripts.
+  seq $3,40 ; The prime numbers.
+  sub $3,2
+  seq $3,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
   sub $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

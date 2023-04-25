@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,211159 ; Number of integer pairs (x,y) such that 0<x<y<=n and x*y=n+1.
+  add $3,1
+  seq $3,56924 ; Number of divisors of n that are smaller than sqrt(n).
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

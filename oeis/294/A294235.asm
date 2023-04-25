@@ -7,8 +7,15 @@ lpb $0
   sub $0,1
   add $3,1
   max $0,$3
+  mov $6,$0
+  add $6,1
   mov $2,$0
-  seq $2,336551 ; a(n) = A003557(n) - 1.
+  seq $2,73353 ; Sum of n and its squarefree kernel.
+  mov $5,$2
+  gcd $5,$6
+  mov $2,$6
+  div $2,$5
+  sub $2,1
   mov $4,$2
   min $4,1
   add $1,$4

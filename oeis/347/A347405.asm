@@ -14,8 +14,10 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
-  seq $0,338506 ; a(n) is the number of subsets of divisors of n.
-  mul $1,$0
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,2
+  pow $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

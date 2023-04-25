@@ -4,6 +4,24 @@
 
 mov $1,13
 pow $1,$0
+mov $2,1
 add $0,1
-seq $0,322086 ; One of the two successive approximations up to 13^n for 13-adic integer sqrt(3). Here the 9 (mod 13) case (except for n = 0).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  add $3,$2
+  mul $3,6
+  add $5,5
+  add $2,$3
+  add $4,1
+  pow $4,4
+  mul $4,3
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  mov $5,$3
+  sub $5,33
+lpe
+mov $0,$3
 div $0,$1

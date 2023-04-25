@@ -4,6 +4,25 @@
 
 mov $1,13
 pow $1,$0
+mov $2,1
+mov $4,3
+mov $5,1
 add $0,1
-seq $0,320914 ; One of the three successive approximations up to 13^n for 13-adic integer 5^(1/3). This is the 7 (mod 13) case (except for n = 0).
+lpb $0
+  sub $0,1
+  pow $5,3
+  div $5,$2
+  mul $5,2
+  mov $3,$2
+  mul $3,8
+  mul $5,$3
+  mul $2,5
+  add $2,$3
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  mov $5,$3
+lpe
+mov $0,$3
 div $0,$1

@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,2
+  pow $5,$1
   mov $3,$1
-  seq $3,51023 ; Middle column of rule-30 1-D cellular automaton, from a lone 1 cell.
+  seq $3,110240 ; Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
+  div $3,$5
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

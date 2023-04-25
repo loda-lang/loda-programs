@@ -1,12 +1,28 @@
 ; A332018: a(n) = A038502(A000265(n)) if n is even or n == 0 (mod 3), a(n) = A038502(A000265(5*n + 1)) otherwise.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,13,1,1,1,1,5,7,1,11,7,5,1,43,1,1,5,7,11,29,1,7,13,1,7,73,5,13,1,11,17,11,1,31,19,13,5,103,7,1,11,5,23,59,1,41,25,17,13,133,1,23,7,19,29,37,5,17,31,7,1,163,11,7,17,23,35,89,1,61,37
-; Formula: a(n) = A133419(n)/gcd(A133419(n),A122216(8))
 
-seq $0,133419 ; Image of n under one application of the "5x+1" map.
-mov $1,8
-seq $1,122216 ; Numerators in infinite products for Pi/2, e and e^gamma (unreduced).
+add $0,1
+mov $3,10
+mul $3,$0
+add $3,6
+gcd $0,$3
+sub $3,3
+div $3,$0
+mov $0,$3
+div $0,2
+dif $0,5
+mov $4,1
+mov $6,8
+lpb $6
+  sub $6,2
+  mov $1,$5
+  add $1,2
+  pow $1,8
+  mul $4,$1
+  add $5,2
+lpe
 add $2,$0
-gcd $0,$1
+gcd $0,$4
 div $2,$0
 mov $0,$2

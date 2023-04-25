@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
   mov $3,$1
-  seq $3,305006 ; Numerators of coefficients in expansion of Sum_{k>=1} x^k/(k*(1 + x^k)).
+  seq $3,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
+  mov $5,$3
+  gcd $5,$6
+  div $3,$5
   seq $3,342921 ; a(n) = A003415(A019565(n)).
   cmp $3,1
   sub $0,$3

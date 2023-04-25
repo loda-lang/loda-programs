@@ -8,7 +8,12 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,104777 ; Integer squares congruent to 1 mod 6.
+  mul $1,3
+  add $1,3
+  div $1,2
+  mul $1,2
+  sub $1,1
+  pow $1,2
   add $2,$0
   sub $3,$1
 lpe

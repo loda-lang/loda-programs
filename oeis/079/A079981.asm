@@ -5,7 +5,26 @@
 mov $1,-1
 pow $1,$0
 add $1,1
+mov $2,1
+mov $3,4
 dif $0,2
-seq $0,79980 ; Number of permutations of length 2n satisfying -k<=p(i)-i<=r and p(i)-i not in I, i=1..2n, with k=3, r=3, I={-2,0,1,2}. There is no one such permutation of length 2n+1.
+lpb $0
+  sub $0,1
+  sub $4,$5
+  mov $6,$2
+  add $6,$3
+  mov $7,$5
+  sub $9,$2
+  add $2,$4
+  add $2,$9
+  mov $5,$3
+  mov $9,$4
+  add $3,$8
+  mov $4,$6
+  mov $8,$7
+lpe
+mul $2,$3
+mov $0,$2
+div $0,4
 mul $0,$1
 div $0,2

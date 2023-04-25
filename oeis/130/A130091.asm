@@ -7,8 +7,12 @@ pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,351564 ; a(n) = 1 if all the exponents in the prime factorization of n are distinct, and 0 otherwise.
-  sub $0,$3
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  mov $4,1
+  bin $4,$3
+  sub $0,$4
   add $1,1
   sub $2,$0
 lpe

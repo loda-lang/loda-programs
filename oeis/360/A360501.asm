@@ -8,9 +8,17 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
+  mov $6,$0
+  pow $6,2
+  sub $6,2
+  div $6,2
   mov $4,$0
-  max $4,0
-  seq $4,360512 ; Total number of edges after n generations in hexagonal graph constructed in first quadrant (see Comments in A360501 for precise definition).
+  sub $4,1
+  div $4,2
+  pow $4,2
+  div $4,4
+  add $4,$6
+  add $4,1
   mov $2,$5
   mul $2,$4
   add $1,$2

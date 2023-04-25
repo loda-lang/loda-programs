@@ -9,7 +9,7 @@ dif $0,2
 mul $0,2
 trn $0,1
 seq $0,53738 ; If k is in sequence then 2*k and 2*k+1 are not (and 1 is in the sequence); numbers with an odd number of digits in binary.
-seq $0,128309 ; 2*A000069(n).
+seq $0,128309 ; a(n) = 2*A000069(n).
 div $0,4
 mul $0,$1
 div $0,8

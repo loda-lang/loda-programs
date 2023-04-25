@@ -13,8 +13,7 @@ lpb $2
   add $0,$1
   pow $0,2
   add $0,3
-  mul $0,2
-  div $0,24
+  div $0,12
   add $1,1
   sub $3,$2
   add $3,$0

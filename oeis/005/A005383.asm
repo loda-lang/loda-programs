@@ -1,26 +1,27 @@
 ; A005383: Primes p such that (p+1)/2 is prime.
-; Submitted by Christian Krause
+; Submitted by rajab
 ; 3,5,13,37,61,73,157,193,277,313,397,421,457,541,613,661,673,733,757,877,997,1093,1153,1201,1213,1237,1321,1381,1453,1621,1657,1753,1873,1933,1993,2017,2137,2341,2473,2557,2593,2797,2857,2917,3061,3217,3253,3313,3517,3733,4021,4057,4177,4261,4273,4357,4441,4561,4621,4933,5077,5101,5113,5233,5413,5437,5581,5701,6037,6073,6121,6133,6217,6337,6361,6373,6637,6661,6781,6997,7057,7213,7393,7417,7477,7537,7753,7933,8053,8101,8221,8317,8353,8461,8521,8677,8713,8893,9013,9133
 
 mov $2,$0
-mul $2,3
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  add $1,1
-  mov $5,$1
-  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $5,2
-  mov $3,$5
-  mul $3,$1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
-  sub $0,$3
+  mov $1,$5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  add $3,2
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,17
+  add $5,1
 lpe
-mov $0,$1
+mov $0,$5
+mul $0,2
+sub $0,2
+div $0,2
 mul $0,2
 add $0,3

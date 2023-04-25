@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,353493 ; The arithmetic derivative of n, reduced modulo 4.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  mod $3,4
   cmp $3,0
   sub $0,$3
   add $1,1

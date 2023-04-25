@@ -6,8 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mov $5,$1
+  seq $5,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
+  mul $5,$6
   mov $3,$1
-  seq $3,140668 ; a(n) = n + A140664(n).
+  add $3,$5
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,2

@@ -6,4 +6,19 @@ dif $0,-2
 add $0,1
 div $0,2
 max $0,0
-seq $0,5044 ; Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
+sub $0,1
+mov $1,$0
+div $1,2
+add $1,2
+pow $1,2
+add $1,2
+add $1,$0
+sub $0,1
+sub $2,$0
+gcd $0,2
+pow $0,3
+add $0,6
+div $0,6
+mul $0,$2
+add $0,$1
+div $0,12

@@ -8,7 +8,10 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
-  seq $0,28387 ; a(n) = n + (n+1)^2.
+  mov $4,$0
+  add $0,3
+  mul $0,$4
+  add $0,1
   seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   add $2,$0
 lpe

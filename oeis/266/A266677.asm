@@ -4,7 +4,13 @@
 
 lpb $0
   mov $2,$0
-  seq $2,161718 ; Expansion of (1+3*x^2)/(1+x)^2.
+  mul $2,3
+  sub $2,2
+  mov $3,-2
+  bin $3,$2
+  mul $3,4
+  div $3,3
+  mov $2,$3
   mul $2,$0
   trn $0,2
   add $1,$2

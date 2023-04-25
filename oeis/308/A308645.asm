@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,308536 ; Expansion of e.g.f. exp(1 - exp(2*x)).
+  mov $5,2
+  pow $5,$0
+  seq $0,587 ; Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

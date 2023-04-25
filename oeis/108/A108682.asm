@@ -8,8 +8,20 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,108680 ; Kekulé numbers for certain benzenoids.
+  mov $5,$0
+  add $0,1
+  mov $7,$0
+  pow $0,2
+  mov $6,0
+  sub $6,$7
+  bin $6,4
+  add $7,1
+  mul $6,$0
+  mul $6,$7
+  mov $0,$6
+  div $0,2
+  mul $0,$5
+  div $0,30
   mov $2,$3
   mul $2,$0
   add $4,$2

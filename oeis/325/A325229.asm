@@ -7,8 +7,15 @@ add $2,11
 pow $2,2
 lpb $2
   sub $2,6
+  mov $5,$1
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $5,1
+  seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  sub $5,1
   mov $3,$1
-  seq $3,325225 ; Lesser of the number of prime factors of n counted with multiplicity and the maximum prime index of n.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  min $5,$3
+  mov $3,$5
   cmp $3,2
   sub $0,$3
   add $1,1

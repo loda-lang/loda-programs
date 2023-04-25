@@ -8,7 +8,13 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,240658 ; Least k such that 3^k == -1 (mod prime(n)), or 0 if no such k exists.
+  seq $3,40 ; The prime numbers.
+  sub $3,1
+  seq $3,70676 ; Smallest m in range 1..phi(n) such that 3^m == 1 mod n, or 0 if no such number exists.
+  seq $3,296065 ; Partial sums of A296064.
+  add $3,2
+  div $3,2
+  sub $3,1
   mov $5,$3
   add $1,1
   cmp $3,0

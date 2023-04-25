@@ -8,8 +8,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$6
+  mov $7,$1
+  cmp $7,0
   mov $6,$1
-  seq $6,156037 ; Largest nonprime < n-th prime.
+  add $6,$7
+  seq $6,40 ; The prime numbers.
+  sub $6,1
   mov $3,$1
   seq $3,158611 ; 0, 1 and the primes.
   add $3,$6

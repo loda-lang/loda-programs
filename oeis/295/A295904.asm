@@ -1,6 +1,6 @@
-; A295904: Number of (not necessarily maximum) cliques in the n-sun graph.
+; A295904: Number of (not necessarily maximal) cliques in the n-sun graph.
 ; 6,12,20,32,52,88,156,288,548,1064,2092,4144,8244,16440,32828,65600,131140,262216,524364,1048656,2097236,4194392,8388700,16777312,33554532,67108968,134217836,268435568,536871028,1073741944,2147483772,4294967424,8589934724
-; Formula: a(n) = 2*(2^n+2*n+2)
+; Formula: a(n) = 4*n+2*2^n+4
 
 mov $1,2
 pow $1,$0

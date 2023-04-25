@@ -15,8 +15,12 @@ lpb $4
   bin $1,$0
   sub $0,1
   mov $5,$0
-  seq $5,179941 ; Number of times n appears in a 100 X 100 multiplication table.
-  mul $1,$5
+  seq $5,262530 ; Numbers such that digits occur at most twice in decimal representation.
+  mul $5,2
+  mov $6,-1
+  add $6,$5
+  seq $6,69157 ; Number of positive divisors of n that are divisible by the smallest prime that divides n.
+  mul $1,$6
   add $3,$1
 lpe
 mov $0,$3

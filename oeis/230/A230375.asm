@@ -6,10 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  add $3,4
   add $1,3
-  mov $3,$1
-  seq $3,290098 ; Characteristic function for A003658 (fundamental discriminants of real quadratic fields).
-  sub $0,$3
+  mov $5,$1
+  seq $5,37449 ; Discriminant of quadratic field Q(sqrt(n)).
+  div $5,$3
+  sub $0,$5
   mov $4,$0
   max $4,0
   cmp $4,$0

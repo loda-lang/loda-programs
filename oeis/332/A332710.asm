@@ -5,5 +5,17 @@
 add $0,2
 mov $1,$0
 mod $1,2
-seq $0,78480 ; Number of permutations p of {1,2,...,n} such that |p(i)-i| != 1 for all i.
+mov $4,1
+lpb $0
+  mul $3,$0
+  sub $3,$2
+  add $4,$3
+  add $5,$4
+  sub $0,1
+  mov $2,$4
+  mov $4,$3
+  add $4,1
+  mov $3,$5
+lpe
+mov $0,$4
 sub $0,$1

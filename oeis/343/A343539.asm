@@ -4,5 +4,12 @@
 mul $0,2
 mov $1,$0
 add $1,1
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+mov $2,1
+mov $3,2
+lpb $0
+  sub $0,2
+  add $3,$2
+  add $2,$3
+lpe
+add $0,$2
 mul $0,$1

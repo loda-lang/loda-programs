@@ -4,5 +4,9 @@
 
 mul $0,2
 div $0,3
-seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+add $0,1
+lpb $0
+  dif $0,2
+lpe
+div $0,2
 add $0,1

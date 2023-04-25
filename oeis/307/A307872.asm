@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,7997 ; a(n) = ceiling((n-3)(n-4)/6).
+  bin $2,2
+  add $2,2
+  div $2,3
   trn $0,6
   add $1,$2
 lpe

@@ -9,7 +9,13 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
-  seq $0,152953 ; a(n) = A136007(n)*(A136007(n)+1)/2.
+  seq $0,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $0,1
+  mov $6,2
+  pow $6,$0
+  bin $6,2
+  mov $0,$6
   pow $0,2
   mul $0,2
   sub $0,4

@@ -12,7 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,229558 ; E.g.f.: exp(x) / (2 - exp(4*x))^(1/4).
+  mov $5,2
+  pow $5,$0
+  seq $0,276371 ; E.g.f.: exp(x/2)/(2 - exp(2*x))^(1/4).
+  mul $0,$5
   mul $1,$0
   mul $1,2
   mul $3,-1

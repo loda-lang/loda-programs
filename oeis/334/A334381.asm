@@ -12,19 +12,12 @@ lpb $3
   div $1,2
   div $1,$3
   add $1,$2
-  mov $5,$0
-  div $5,3
-  mov $4,$5
-  cmp $4,0
-  add $5,$4
-  div $1,$5
-  div $2,$5
   sub $3,1
 lpe
-mov $6,10
-pow $6,$0
-div $2,$6
+mov $5,10
+pow $5,$0
+div $2,$5
 div $1,$2
-add $1,$6
+add $1,$5
 mod $1,10
 mov $0,$1

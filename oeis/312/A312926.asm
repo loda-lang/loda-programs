@@ -16,9 +16,7 @@ lpb $0
   sub $4,1
 lpe
 mul $3,5
-trn $0,1
 add $0,$3
-add $0,1
 max $0,2
 add $0,1
 div $0,3

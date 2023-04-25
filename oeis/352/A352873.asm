@@ -1,7 +1,17 @@
 ; A352873: Heinz numbers of integer partitions with nonnegative crank, counted by A064428.
-; Submitted by LG@BOINC
+; Submitted by hoppisaur
 ; 1,3,5,6,7,9,10,11,13,14,15,17,18,19,21,22,23,25,26,27,29,30,31,33,34,35,37,38,39,41,42,43,45,46,47,49,50,51,53,54,55,57,58,59,61,62,63,65,66,67,69,70,71,73,74,75,77,78,79,81,82,83,85,86,87,89,90
-; Formula: a(n) = A024352(n)-2
+; Formula: a(n) = a(n-1)+gcd(-d(n-1)+b(n-1)+c(n-1),2), a(4) = 7, a(3) = 6, a(2) = 5, a(1) = 3, a(0) = 1, b(n) = gcd(-d(n-1)+b(n-1)+c(n-1),2), b(4) = 1, b(3) = 1, b(2) = 2, b(1) = 2, b(0) = 0, c(n) = a(n-1)+e(n-1), c(4) = 15, c(3) = 9, c(2) = 4, c(1) = 1, c(0) = 0, d(n) = a(n-1), d(4) = 6, d(3) = 5, d(2) = 3, d(1) = 1, d(0) = 0, e(n) = a(n-1)+e(n-1), e(4) = 15, e(3) = 9, e(2) = 4, e(1) = 1, e(0) = 0
 
-seq $0,24352 ; Numbers which are the difference of two positive squares, c^2 - b^2 with 1 <= b < c.
-sub $0,2
+mov $2,1
+lpb $0
+  sub $0,1
+  sub $3,$4
+  mov $4,$2
+  add $5,$2
+  add $1,$3
+  gcd $1,2
+  add $2,$1
+  mov $3,$5
+lpe
+mov $0,$2

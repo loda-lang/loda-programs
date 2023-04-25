@@ -12,7 +12,11 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,7840 ; Number of factorizations of permutations of n letters into ordered cycles.
+  add $0,1
+  mov $5,0
+  gcd $5,$0
+  seq $0,52860 ; A simple grammar: rooted sequences of cycles.
+  dif $0,$5
   mul $1,$0
   mul $3,-1
   add $3,$1

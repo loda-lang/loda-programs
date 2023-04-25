@@ -13,7 +13,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,328260 ; a(n) = n * omega(n).
+  mov $5,$0
+  seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $0,1
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

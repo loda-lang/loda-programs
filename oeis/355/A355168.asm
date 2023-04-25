@@ -8,7 +8,9 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
-  seq $3,135061 ; a(n) = minimum (floor(n^3/m) + m) for any integer m >= 1.
+  pow $3,3
+  seq $3,55086 ; n appears 1+[n/2] times.
+  add $3,1
   mov $5,$3
   mul $3,338
   gcd $3,4

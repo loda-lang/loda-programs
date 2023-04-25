@@ -8,7 +8,13 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
-  seq $3,47073 ; a(n) = Sum_{j=0..n} A047072(j, n-j).
+  div $3,2
+  mov $7,$3
+  mul $7,2
+  bin $7,$3
+  mov $6,2
+  mul $6,$7
+  mov $3,$6
   gcd $3,$5
   cmp $3,1
   sub $0,$3

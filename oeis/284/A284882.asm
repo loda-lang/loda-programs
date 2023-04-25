@@ -10,7 +10,14 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,284884 ; Positions of 1's in A284881.
+  mov $4,$2
+  seq $4,189727 ; Fixed point of the morphism 0->011, 1->110.
+  mul $2,3
+  sub $2,$4
+  add $2,1
+  div $2,2
+  mul $2,2
+  add $2,1
   add $1,$2
 lpe
 mov $0,$1

@@ -7,7 +7,7 @@ add $2,3
 pow $2,8
 lpb $2
   mov $3,$1
-  seq $3,20705 ; n+4
+  add $3,4
   seq $3,316866 ; Number of times 5 appears in decimal expansion of n.
   sub $3,3
   cmp $3,1

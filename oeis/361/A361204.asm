@@ -8,7 +8,7 @@ mul $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,361393 ; Positive integers k such that 2*omega(k) > bigomega(k).
+  seq $3,317090 ; Positive integers whose prime multiplicities span an initial interval of positive integers.
   sub $3,1
   add $0,1
   add $1,1

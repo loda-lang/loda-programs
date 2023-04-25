@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  seq $3,329893 ; Product_{k=0..floor(log_2(n))} (1 + A004718(floor(n/(2^k)))), where A004718 is Per Nørgård's "infinity sequence".
+  seq $3,329893 ; a(n) = Product_{k=0..floor(log_2(n))} (1 + A004718(floor(n/(2^k)))), where A004718 is Per Nørgård's "infinity sequence".
   mov $5,$3
   cmp $3,0
   cmp $3,0

@@ -4,9 +4,15 @@
 
 lpb $0
   mov $2,$0
-  seq $2,54541 ; Sum of first n terms equals n-th prime.
+  sub $2,1
+  mov $3,0
+  trn $3,$2
+  max $2,0
+  seq $2,40 ; The prime numbers.
+  seq $2,13632 ; Difference between n and the next prime greater than n.
+  add $3,$2
   sub $0,1
-  add $1,$2
+  add $1,$3
   sub $1,1
   mul $1,-1
 lpe

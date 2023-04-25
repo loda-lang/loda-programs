@@ -10,5 +10,4 @@ seq $0,7706 ; a(n) = 1 + coefficient of x^n in Product_{k>=1} (1-x^k) (essential
 cmp $0,0
 add $1,$0
 mov $0,$1
-mul $0,2
-div $0,4
+div $0,2

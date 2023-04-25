@@ -6,8 +6,14 @@ mov $2,$0
 mov $1,2
 lpb $1
   sub $1,1
+  mov $4,-1
+  pow $4,$2
+  add $4,2
   mov $0,$2
-  seq $0,214456 ; Expansion of b(q^2) * (b(q) + 2 * b(q^4)) / 3 in powers of q where b() is a cubic AGM theta function.
+  dif $0,2
+  seq $0,131943 ; Expansion of b(q) * b(q^2) in powers of q where b() is a cubic AGM theta function.
+  mul $0,$4
+  div $0,3
   mul $2,3
   add $3,$0
 lpe

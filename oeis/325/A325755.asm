@@ -7,7 +7,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,353566 ; a(n) = 1 if n is a multiple of its prime shadow A181819(n), and 0 otherwise.
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  add $4,1
+  mov $5,$3
+  gcd $5,$4
+  cmp $3,$5
   sub $0,$3
   add $1,1
   sub $2,$0

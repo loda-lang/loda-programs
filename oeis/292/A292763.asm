@@ -6,8 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,354032 ; a(n) = 1 if phi(n)+sigma(n) == 2 (mod 4), otherwise 0.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,$5
+  seq $3,296065 ; Partial sums of A296064.
+  div $3,2
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

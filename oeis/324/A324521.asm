@@ -7,8 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,257541 ; The rank of the partition with Heinz number n.
-  sub $3,1
+  add $3,1
+  mov $5,$3
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  seq $5,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $5,$3
+  mov $3,$5
+  sub $3,2
   add $3,$2
   bin $3,$2
   cmp $3,0

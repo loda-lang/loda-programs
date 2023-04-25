@@ -5,7 +5,9 @@
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,344160 ; Numbers k such that the k-th word in A342910 starts with 1 and ends with 0.
+  seq $1,344154 ; Numbers k such that the k-th word in A342910 ends with 0.
+  mul $1,3
+  add $1,2
   mov $0,0
 lpe
 mov $0,$1

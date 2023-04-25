@@ -6,7 +6,12 @@ mov $2,$0
 add $2,156
 lpb $2
   mov $3,$1
-  seq $3,356310 ; a(n) = 1 if A003415(n) and A276086(n) are relatively prime, otherwise 0. Here A003415 is the arithmetic derivative, and A276086 is the primorial base exp-function.
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  mov $5,$1
+  seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  gcd $5,$3
+  bin $3,0
+  div $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

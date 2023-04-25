@@ -1,21 +1,13 @@
 ; A342279: A bisection of A000201: a(n) = A000201(2*n+1).
-; Submitted by Science United
+; Submitted by matszpk
 ; 1,4,8,11,14,17,21,24,27,30,33,37,40,43,46,50,53,56,59,63,66,69,72,76,79,82,85,88,92,95,98,101,105,108,111,114,118,121,124,127,131,134,137,140,144,147,150,153,156,160,163,166,169,173,176,179,182,186,189
+; Formula: a(n) = A000201(2*n), a(1) = 4, a(0) = 1
 
-mov $1,1
-mul $0,2
-add $0,2
+add $0,1
 lpb $0
   sub $0,1
-  add $1,$2
-  add $4,1
-  add $2,$1
-  mov $3,$4
-  mul $3,2
-  mul $3,$1
-  div $3,$2
-  mod $3,2
-  add $4,$3
+  mov $1,$2
+  seq $1,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+  add $2,2
 lpe
-mov $0,$4
-sub $0,1
+mov $0,$1

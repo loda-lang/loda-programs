@@ -4,6 +4,24 @@
 
 mov $1,7
 pow $1,$0
+mov $2,1
+mov $4,2
 add $0,1
-seq $0,309451 ; The successive approximations up to 7^n for 7-adic integer 3^(1/5).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,2
+  mul $5,2
+  add $5,6
+  mul $2,5
+  add $2,$3
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  mov $5,$3
+  pow $5,5
+lpe
+sub $2,$3
+mov $0,$2
 div $0,$1

@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,66301 ; a(n) = 0 if n is squarefree, otherwise 1 + a(n/rad(n)) where rad = A007947 (squarefree kernel).
+  mov $6,1
+  max $6,$1
+  seq $6,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
+  mul $6,2
+  mov $3,$6
+  sub $3,4
+  div $3,2
   add $4,1
   mov $5,1
   bin $5,$3

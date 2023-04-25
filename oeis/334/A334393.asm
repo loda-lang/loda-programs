@@ -6,8 +6,13 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $5,$6
+  add $5,1
   mov $3,$1
-  seq $3,113901 ; Product of omega(n) and bigomega(n) = A001221(n)*A001222(n), where omega(x): number of distinct prime divisors of x. bigomega(x): number of prime divisors of x, counted with multiplicity.
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  mul $3,$5
   sub $3,1
   max $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -9,7 +9,16 @@ lpb $1
   mov $0,$3
   add $0,$1
   div $0,2
-  seq $0,311570 ; Coordination sequence Gal.3.18.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+  mov $5,$0
+  seq $5,348237 ; Coordination sequence for the cpq net with respect to a node where a hexagon and two octagons meet.
+  mov $6,$0
+  mul $6,3
+  mul $0,7
+  sub $0,1
+  sub $0,$6
+  mod $0,$5
+  add $0,$6
+  add $0,1
   mov $2,$1
   mul $2,$0
   add $4,$2

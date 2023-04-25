@@ -4,8 +4,27 @@
 
 mov $1,17
 pow $1,$0
+mov $2,1
+mov $4,3
+mov $5,1
 add $0,1
-seq $0,322559 ; One of the two successive approximations up to 17^n for 17-adic integer sqrt(2). This is the 6 (mod 17) case (except for n = 0).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,2
+  pow $5,6
+  div $5,$2
+  mul $5,$3
+  add $2,$3
+  mul $2,5
+  add $2,$3
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  mov $5,$3
+lpe
+mov $0,$3
 add $0,$1
 div $0,$1
 sub $0,1

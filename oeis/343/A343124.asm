@@ -10,7 +10,9 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mul $0,$3
-  seq $0,14591 ; a(n) = floor(n^2/12 + 5/4).
+  pow $0,2
+  add $0,16
+  div $0,12
   sub $0,1
   add $1,$0
 lpe

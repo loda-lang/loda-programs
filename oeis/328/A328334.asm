@@ -8,7 +8,7 @@ lpb $3
   add $0,$3
   mov $2,$0
   max $2,0
-  seq $2,63005 ; Difference between 2^n and the next smaller power of 3.
+  seq $2,63005 ; Difference between 2^n and the next smaller or equal power of 3.
   sub $0,1
   add $1,$4
   mov $4,$2

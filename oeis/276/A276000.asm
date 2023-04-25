@@ -6,7 +6,13 @@ mov $2,$0
 mov $1,$0
 lpb $1
   mov $0,$1
-  seq $0,175856 ; a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
+  seq $0,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
+  sub $3,$1
+  add $3,$0
+  add $0,$3
+  mov $3,3
+  sub $3,$0
+  mov $0,$3
   mov $1,1
 lpe
 add $0,1

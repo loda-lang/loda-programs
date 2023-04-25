@@ -4,7 +4,8 @@
 
 add $0,33
 lpb $0
-  seq $0,32615 ; a(n) = floor(n/Pi).
+  mul $0,7
+  div $0,22
   trn $1,1
   sub $1,1
   pow $1,$0

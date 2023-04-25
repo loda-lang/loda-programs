@@ -12,9 +12,16 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,138350 ; Moment sequence of tr(A^2) in USp(4).
-  mul $1,$0
-  gcd $1,0
+  mov $5,$0
+  mov $6,$0
+  div $0,2
+  bin $5,$0
+  add $6,1
+  bin $6,$0
+  add $0,1
+  mul $6,$5
+  div $6,$0
+  mul $1,$6
   mul $3,2
   add $3,$1
 lpe

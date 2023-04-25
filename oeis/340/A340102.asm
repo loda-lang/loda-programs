@@ -5,7 +5,11 @@
 mul $0,2
 lpb $0
   mov $1,$0
-  seq $1,335549 ; Number of normal patterns matched by the multiset of prime indices of n in weakly increasing order.
+  seq $1,335516 ; Number of normal patterns contiguously matched by the prime indices of n in increasing or decreasing order, counting multiplicity.
+  mul $1,3
+  sub $1,2
+  div $1,3
+  add $1,1
   cmp $0,0
 lpe
 mov $0,$1

@@ -5,7 +5,11 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  seq $1,163489 ; Indices n such that composite(n)/3 is prime.
+  seq $1,6005 ; The odd prime numbers together with 1.
+  mul $1,3
+  sub $1,3
+  seq $1,62298 ; Number of nonprimes <= n.
+  add $1,1
   mov $0,1
 lpe
 add $1,$2

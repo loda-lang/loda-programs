@@ -3,5 +3,13 @@
 
 mov $1,$0
 add $1,1
-seq $1,256654 ; Least Fibonacci number not less than n.
+mov $3,$1
+mov $1,1
+mov $2,1
+lpb $3
+  trn $3,$2
+  add $1,$2
+  sub $2,$1
+  gcd $2,0
+lpe
 add $0,$1

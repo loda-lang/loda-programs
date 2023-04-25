@@ -1,28 +1,25 @@
 ; A317510: Numbers (4p+1)/3 where p is a Sophie Germain prime p > 3.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by shiva
 ; 7,15,31,39,55,71,111,119,151,175,231,239,255,311,319,335,375,391,479,559,575,591,655,679,791,855,871,879,911,959,991,1015,1079,1215,1271,1351,1359,1375,1399,1471,1631,1639,1719,1879,1919,1935,1975,1999,2015,2079,2111,2135,2311,2415,2519,2535,2575,2631,2671,2719,2751,2759,2839,2855,3031,3119,3135,3191,3199,3279,3391,3399,3591,3599,3655,3671,3759,3871,3919,3951,3959,4031,4399,4439,4479,4519,4551,4599,4655,4719,4791,4831,5015,5039,5071,5095,5135,5151,5215,5359
 
+mov $1,2
 mov $2,$0
-add $0,2
-add $2,10
-pow $2,4
+pow $2,5
 lpb $2
-  mov $1,$6
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $3,2
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mov $1,$5
-  mul $2,$4
-  sub $2,17
-  mov $5,1
-  add $6,$1
+  sub $2,1
+  add $1,3
+  mov $4,$1
+  add $4,$1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $3,$1
+  sub $3,$4
+  mul $4,$3
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  add $1,3
+  sub $2,$0
 lpe
-mov $0,$6
+mov $0,$1
 div $0,6
 mul $0,8
 add $0,7

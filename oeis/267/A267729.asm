@@ -1,8 +1,19 @@
 ; A267729: Number of n X 2 0..1 arrays with every repeated value in every row and column greater than or equal to the previous repeated value.
 ; Submitted by Jason Jung
 ; 4,16,64,225,784,2601,8464,26896,84100,259081,788544,2374681,7086244,20976400,61653904,180069561,522945424,1510954641,4345446400,12444741136,35502850084,100926300721,285976813824,807886380625,2275928269924,6395011514896,17925672112384,50133749309361,139916251104400,389714148310041,1083467532580624,3006938201829136,8331345051544804,23047686436476025,63664530570529344,175614056950029481,483775109813355844,1331002729660919056,3657565751059795600,10039401191508990921,27526369714107483664
+; Formula: a(n) = c(n)^2, b(n) = b(n-1)+b(n-2), b(3) = 21, b(2) = 13, b(1) = 8, b(0) = 5, c(n) = b(n-2)+c(n-2)+d(n-2), c(3) = 15, c(2) = 8, c(1) = 4, c(0) = 2, d(n) = b(n-3)+d(n-1)+d(n-2), d(3) = 15, d(2) = 7, d(1) = 3, d(0) = 1
 
-add $0,1
-seq $0,320947 ; a(n) is the number of dominoes, among all domino tilings of the 2 X n rectangle, sharing a length-2 side with the boundary of the rectangle.
-div $0,2
+mov $2,2
+mov $4,1
+add $0,2
+lpb $0
+  sub $0,1
+  mov $1,$2
+  add $2,$4
+  add $4,$5
+  add $5,$3
+  mov $3,$4
+  mov $4,$1
+lpe
+mov $0,$3
 pow $0,2

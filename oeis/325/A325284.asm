@@ -7,8 +7,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $5,1
   mov $3,$1
-  seq $3,79067 ; Number of primes less than greatest prime factor of n but not dividing n.
+  seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1
