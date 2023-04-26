@@ -7,8 +7,11 @@ mov $2,$0
 pow $2,2
 add $2,4
 lpb $2
+  mov $5,$1
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   mov $3,$1
-  seq $3,57108 ; Difference between the smallest number S(n) with S(n)! a multiple of n and the largest prime factor of n [taking a(1)=0].
+  seq $3,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
+  sub $3,$5
   min $3,1
   sub $0,$3
   add $1,1

@@ -1,8 +1,36 @@
 ; A136026: Smallest prime of the form (2n+1)p + 2n with p prime.
 ; Submitted by Simon Strandgaard (M1)
 ; 11,19,41,53,43,103,59,67,113,83,137,149,107,173,433,131,139,443,233,163,257,179,281,293,1019,211,439,227,353,487,251,389,401,827,283,1021,449,307,631,647,331,509,347,1601,727,557,379,1163,593,2423,617,419,641,653,443,677,919,467,1427,967,491,499,761,773,523,797,809,547,1667,563,571,2029,587,1787,1811,1223,619,941,953,643,977,659,2003,1013,683,691,1049,1061,3221,1447,1097,739,2243,1511,4583,1543,1559,787,1193,1607
-; Formula: a(n) = A062251(2*n+2)
 
 add $0,1
 mul $0,2
-seq $0,62251 ; Take minimal prime q such that n(q+1)-1 is prime (A060324), that is, the smallest prime q so that n = (p+1)/(q+1) with p prime; sequence gives values of p.
+mov $2,$0
+mov $4,$0
+add $4,6
+pow $4,3
+lpb $4
+  add $5,$0
+  add $5,$2
+  add $8,3
+  mov $3,$7
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $3,$5
+  trn $3,$7
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $2,$3
+  add $5,2
+  mov $6,$2
+  max $6,0
+  cmp $6,$2
+  mul $2,0
+  mul $4,$6
+  sub $4,17
+  add $7,1
+lpe
+mov $1,$8
+sub $1,3
+div $1,3
+add $1,3
+add $0,1
+mul $0,$1
+sub $0,1

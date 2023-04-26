@@ -1,9 +1,21 @@
 ; A264968: Permutation of nonnegative integers: a(n) = A246200(A263272(n)).
 ; Submitted by [AF] Kalianthys
 ; 0,1,2,3,4,5,6,11,8,9,10,7,12,19,14,15,32,27,18,39,20,33,26,17,24,25,38,23,28,13,30,41,16,21,34,35,36,31,22,29,40,37,42,123,68,75,86,47,96,135,70,81,152,77,46,53,56,107,110,59,60,163,82,99,108,65,142,111,44,51,134,57,72,139,62,147,156,83,58,87,80,69,74,55,84,151,54,71,140,73,150,91,64,119,94,43,48,131,50,63
-; Formula: a(n) = A057889(3*A263272(n))/3
+; Formula: a(n) = A057889(3*((-A030102(2*n)*gcd(2*n,81)*(A264668(n/2)-1))/2))/3
 
-seq $0,263272 ; Self-inverse permutation of nonnegative integers: a(n) = A263273(2*n) / 2.
+mov $1,$0
+add $1,$0
+mov $3,$1
+seq $3,30102 ; Base-3 reversal of n (written in base 10).
+div $0,2
+seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+sub $0,1
+gcd $1,81
+mul $1,$3
+mul $1,$0
+sub $2,$1
+mov $0,$2
+div $0,2
 mul $0,3
 seq $0,57889 ; Bit-reverse of n, including as many leading as trailing zeros.
 div $0,3

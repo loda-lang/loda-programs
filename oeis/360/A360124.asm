@@ -1,9 +1,22 @@
 ; A360124: Numbers k such that A360121(k) is odd, but A347389(k) is even.
 ; Submitted by Aexoden
 ; 8,16,32,64,72,128,144,200,256,288,392,400,512,576,648,784,800,968,1024,1152,1296,1352,1568,1600,1800,1936,2048,2304,2312,2592,2704,2888,3136,3200,3528,3600,3872,4096,4232,4608,4624,5000,5184,5408,5776,5832,6272,6400,6728,7056,7200,7688,7744,8192
-; Formula: a(n) = 4*A088827(n)
 
 mov $1,$0
-seq $1,88827 ; Even numbers with odd abundance: even squares or two times squares.
+mov $3,$0
+pow $3,2
+lpb $3
+  add $2,1
+  mov $4,$2
+  seq $4,93709 ; Characteristic function of squares or twice squares.
+  sub $1,$4
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+  sub $3,1
+lpe
+mov $1,$2
+add $1,1
 mov $0,$1
-mul $0,4
+mul $0,8

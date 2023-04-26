@@ -9,7 +9,7 @@ pow $2,2
 mul $2,2
 lpb $2
   mov $3,$1
-  seq $3,179437 ; |2n - prime(n)|.
+  seq $3,179437 ; a(n) = |2n - prime(n)|.
   sub $3,1
   mov $5,$3
   add $6,2

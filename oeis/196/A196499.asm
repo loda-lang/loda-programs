@@ -7,8 +7,11 @@ add $2,14
 pow $2,2
 lpb $2
   sub $2,7
+  add $5,1
   mov $3,$1
-  seq $3,76951 ; Smallest k > 0 such that nk-1 is an n-th power, or 0 if no such number exists.
+  seq $3,76952 ; n-th power associated with A076951, or 0 if no such number exists.
+  add $3,1
+  div $3,$5
   cmp $3,0
   cmp $3,0
   sub $0,$3

@@ -1,4 +1,4 @@
-; A045182: Numbers n with property that in base 5 representation the numbers of 0's and 2's are 2 and 2, respectively.
+; A045182: Numbers whose base-5 representation contains exactly two 0's and two 2's.
 ; Submitted by damotbe
 ; 252,260,300,637,677,685,877,885,925,1257,1261,1263,1264,1267,1272,1277,1285,1301,1303,1304,1305,1315,1320,1327,1335,1352,1360,1377,1385,1425,1501,1503,1504,1505,1515,1520,1525,1575
 

@@ -24,6 +24,7 @@ A001967: u-pile positions for the 4-Wythoff game with i=3.
 A001968: v-pile positions of the 4-Wythoff game with i=3.
 A002251: Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
 A002324: Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+A002808: The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 A003136: Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
@@ -646,6 +647,7 @@ A341629: Characteristic function of A055932: a(n) = 1 if n is a number all of wh
 A341996: a(n) = 1 if there is at least one such prime p that p^p divides the arithmetic derivative of n, A003415(n); a(0) = a(1) = 0 by convention.
 A342023: a(n) = 1 if there is a prime p such that p^p divides n, otherwise 0.
 A342398: Numbers k such that there is a subset of the nontrivial unitary divisors of k, {d|k : 1 < d < k, gcd(d, k/d) = 1}, that adds up to k.
+A343045: a(0) = 0 and for any n > 0, a(n) = A343044(a(n-1), n).
 A343783: a(n) is the largest primorial number (A002110) which divides phi(n).
 A343794: Numbers k > 0 such that 630*k + 315 is not an abundant number (A005101).
 A347386: Number of iterations of A347385 (Dedekind psi function applied to the odd part of n) needed to reach a power of 2.

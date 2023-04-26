@@ -4,6 +4,17 @@
 
 mov $1,2
 pow $1,$0
-seq $0,31923 ; Let r and s be consecutive Fibonacci numbers. Sequence is r^4, r^3 s, r^2 s^2, and r s^3.
-sub $1,$0
+add $0,1
+mov $2,1
+mov $3,$0
+lpb $3
+  div $3,2
+  add $3,2
+  seq $3,6498 ; a(n) = a(n-1) + a(n-3) + a(n-4), a(0) = a(1) = a(2) = 1, a(3) = 2.
+  sub $0,1
+  mul $2,$3
+  mov $3,$0
+  mov $0,2
+lpe
+sub $1,$2
 mov $0,$1

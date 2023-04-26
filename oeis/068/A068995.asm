@@ -1,10 +1,16 @@
 ; A068995: Integer parts of the square roots of the schizophrenic numbers (A014824).
 ; Submitted by Christian Krause
 ; 1,3,11,35,111,351,1111,3513,11111,35136,111111,351364,1111111,3513641,11111111,35136418,111111111,351364184,1111111111,3513641844,11111111111,35136418446,111111111111,351364184463,1111111111111
-; Formula: a(n) = A017934(n+2)/9
 
 add $0,2
-mov $1,$0
-seq $1,17934 ; Powers of sqrt(10) rounded down.
+mov $1,10
+pow $1,$0
+mov $2,$1
+lpb $1
+  mov $3,$2
+  div $3,$1
+  add $1,$3
+  div $1,2
+lpe
 mov $0,$1
 div $0,9

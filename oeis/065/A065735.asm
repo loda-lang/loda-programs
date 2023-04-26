@@ -5,8 +5,7 @@
 seq $0,88860 ; Twice the primorials (first definition), 2*A002110(n).
 mov $1,$0
 div $1,2
-mul $0,4
-div $0,8
+div $0,2
 lpb $0
   div $2,$0
   add $0,$2

@@ -7,8 +7,8 @@ add $0,1
 lpb $0
   mul $2,$0
   sub $0,1
-  mul $1,22
-  div $1,42
+  mul $1,11
+  div $1,21
   sub $1,2
   add $1,$2
 lpe

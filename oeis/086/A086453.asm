@@ -1,7 +1,17 @@
 ; A086453: Least difference between 5^n and a power of 2.
 ; Submitted by Jamie Morken(m3)
 ; 0,1,7,3,113,971,759,12589,128481,144027,1377017,15273693,24294831,146961301,1808548329,3842160243,15148937153,213183639237,583349245479,1481300283709,24998687462961,86112795218187,132385977330377
-; Formula: a(n) = A080776(A103455(n))
 
-seq $0,103455 ; a(n) = 0^n + 5^n - 1.
-seq $0,80776 ; Oscillating sequence which rises to 2^(k-1) in k-th segment (k>=1) then falls back to 0.
+mov $1,5
+pow $1,$0
+sub $1,1
+mov $3,1
+mov $0,$1
+lpb $0
+  mov $2,$0
+  trn $0,$3
+  sub $2,$0
+  add $0,$3
+  sub $0,$2
+  add $3,$2
+lpe

@@ -10,8 +10,7 @@ mov $2,2
 pow $2,$0
 sub $1,$2
 mov $0,$1
-mul $0,8
-div $0,16
+div $0,2
 lpb $0
   mov $4,$0
   mul $4,$5

@@ -1,7 +1,29 @@
 ; A266323: Binary representation of the n-th iteration of the "Rule 19" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Christian Krause
 ; 1,101,0,1111111,0,11111111111,0,111111111111111,0,1111111111111111111,0,11111111111111111111111,0,111111111111111111111111111,0,1111111111111111111111111111111,0,11111111111111111111111111111111111,0,111111111111111111111111111111111111111,0,1111111111111111111111111111111111111111111,0,11111111111111111111111111111111111111111111111,0,111111111111111111111111111111111111111111111111111,0,1111111111111111111111111111111111111111111111111111111,0
-; Formula: a(n) = A007088(A266324(n))
 
-seq $0,266324 ; Decimal representation of the n-th iteration of the "Rule 19" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $2,$0
+div $2,2
+mov $3,-2
+bin $3,$0
+sub $2,$3
+dif $3,$2
+sub $0,$3
+mov $1,2
+pow $1,$0
+gcd $0,$1
+mul $1,$0
+mul $0,2
+add $1,1
+sub $1,$0
+mov $5,1
+mov $0,$1
+lpb $0
+  mov $6,$0
+  mod $6,2
+  mul $6,$5
+  div $0,2
+  add $4,$6
+  mul $5,10
+lpe
+mov $0,$4
