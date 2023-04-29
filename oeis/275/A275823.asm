@@ -6,8 +6,12 @@ mov $2,$0
 add $0,1
 pow $2,5
 lpb $2
+  mov $4,$1
+  seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $4,1
   mov $3,$1
-  seq $3,2618 ; a(n) = n*phi(n).
+  add $3,1
+  mul $3,$4
   gcd $3,$0
   add $1,1
   add $2,$3

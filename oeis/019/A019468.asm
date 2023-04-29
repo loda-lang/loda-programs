@@ -8,7 +8,12 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,39969 ; An example of a d-perfect sequence: a(n) = Catalan(n) mod 3.
+  mul $3,2
+  mov $4,$1
+  add $4,1
+  bin $3,$1
+  div $3,$4
+  mod $3,3
   cmp $3,2
   sub $0,$3
   add $1,1

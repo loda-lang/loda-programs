@@ -1,4 +1,4 @@
-; A081823: Decimal expansion of the elementary charge e in coulomb (C).
+; A081823: Decimal expansion of the elementary charge e in coulombs (C).
 ; Submitted by GolfSierra
 ; 1,6,0,2,1,7,6,6,3,4
 

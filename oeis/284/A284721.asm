@@ -1,8 +1,13 @@
 ; A284721: Smallest odd prime that is relatively prime to 2n+1.
 ; Submitted by stoneageman
 ; 3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,11,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3,5,3,3,5,3,3,5,3,3,5,3,3,7,3,3
-; Formula: a(n) = A053669(4*n+1)
 
+mov $1,2
 mul $0,4
-add $0,1
-seq $0,53669 ; Smallest prime not dividing n.
+add $0,2
+pow $0,144
+lpb $0
+  dif $0,$1
+  add $1,1
+lpe
+mov $0,$1

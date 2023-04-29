@@ -9,7 +9,8 @@ add $0,1
 mov $1,1
 lpb $2
   mov $5,$3
-  seq $3,230775 ; Smallest prime number greater than or equal to the square root of n.
+  seq $3,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
   gcd $3,$5
   add $3,$4
   sub $3,1

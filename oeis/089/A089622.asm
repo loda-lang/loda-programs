@@ -1,11 +1,16 @@
 ; A089622: a(n) = n^n + n-th prime.
 ; Submitted by Jamie Morken(l1)
 ; 3,7,32,263,3136,46669,823560,16777235,387420512,10000000029,285311670642,8916100448293,302875106592294,11112006825558059,437893890380859422,18446744073709551669,827240261886336764236
-; Formula: a(n) = (n+1)^(n+1)+max(A006005(n),2)
 
 mov $2,$0
 add $2,1
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $3,1
+lpb $0
+  sub $0,1
+  add $3,1
+  seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
+lpe
+mov $0,$3
 max $0,2
 mov $1,$2
 pow $1,$2

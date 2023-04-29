@@ -6,8 +6,14 @@ add $0,4
 lpb $0
   sub $0,4
   mov $2,$0
-  max $2,0
-  seq $2,8749 ; Expansion of (1+x^6)/((1-x)*(1-x^2)*(1-x^3)).
+  pow $2,2
+  trn $2,1
+  add $2,3
+  mov $3,$2
+  div $3,3
+  div $2,2
+  mod $2,$3
+  add $2,1
   add $1,$2
 lpe
 mov $0,$1

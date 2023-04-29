@@ -8,8 +8,15 @@ add $2,5
 pow $2,2
 lpb $2
   sub $2,6
+  mov $5,$1
+  seq $5,62570 ; a(n) = phi(2*n).
+  dif $5,2
+  mov $6,$1
+  add $6,1
+  gcd $6,$5
   mov $3,$1
-  seq $3,109395 ; Denominator of phi(n)/n = Product_{p|n} (1 - 1/p); phi(n)=A000010(n), the Euler totient function.
+  div $3,$6
+  add $3,1
   mod $3,6
   sub $3,$4
   dif $3,2

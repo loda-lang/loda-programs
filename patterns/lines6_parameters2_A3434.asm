@@ -1,5 +1,5 @@
 lpb $0
-  seq $0,5 ; source=parameter 0
+  seq $0,10 ; source=parameter 0
   sub $0,1 ; source=parameter 1
   add $1,1
 lpe

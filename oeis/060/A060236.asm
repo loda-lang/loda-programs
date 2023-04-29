@@ -1,15 +1,12 @@
 ; A060236: If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
-; Submitted by Morgaph
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,2,1,1,2,2,1,2,2,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1
 
-add $0,1
+mul $0,2
+add $0,2
 lpb $0
   dif $0,3
 lpe
-add $0,1
-mul $0,4
-pow $0,2
-div $0,12
-add $0,1
+mod $0,3
 mod $0,2
 add $0,1

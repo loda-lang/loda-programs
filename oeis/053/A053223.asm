@@ -1,29 +1,19 @@
 ; A053223: Second differences of sigma(n).
-; Submitted by Jamie Morken(w1)
+; Submitted by Kotenok2000
 ; -1,2,-4,7,-10,11,-9,7,-11,22,-30,24,-10,7,-20,34,-40,41,-32,14,-16,48,-65,40,-13,18,-42,68,-82,71,-46,21,-12,49,-96,75,-26,38,-82,102,-106,92,-46,0,-18,100,-143,103,-57,47,-70,110,-114,96,-88,50,-40,138,-214,140,-26,15,-66,103,-136,134,-88,78,-120,195,-244,161,-30,6,-60,116,-160,194,-171,70,-47,182,-256,140,-36,72,-150,234,-266,178,-96,56,-40,156,-286,227,-88,76,-176,229
 
-mov $1,$0
-add $1,2
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
-  mov $0,$1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  trn $0,2
-  mov $6,$0
-  add $6,1
-  mov $7,$6
-  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $6,$7
-  mov $5,$0
-  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $5,$6
-  sub $0,$5
+  seq $0,53222 ; First differences of sigma(n).
   mov $2,$3
   mul $2,$0
-  add $4,$2
+  add $1,$2
+  mul $4,$3
+  mov $5,$0
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
+sub $1,$5
+mov $0,$1

@@ -4,11 +4,11 @@
 
 mov $1,2
 seq $0,85128 ; Multiples of 5 which are members of A002473. Or multiples of 5 with the largest prime divisor <= 7.
-mul $0,12
-div $0,10
+mul $0,6
+div $0,5
 lpb $0
   sub $0,1
-  seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+  seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
   add $1,1
 lpe
 mov $0,$1

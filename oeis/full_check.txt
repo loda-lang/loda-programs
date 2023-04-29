@@ -12,6 +12,7 @@ A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with 
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+A001953: a(n) = floor((n + 1/2) * sqrt(2)).
 A001954: a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
 A001956: Beatty sequence of (5+sqrt(13))/2.
 A001961: A Beatty sequence: floor(n * (sqrt(5) - 1)).
@@ -62,6 +63,8 @@ A008966: a(n) = 1 if n is squarefree, otherwise 0.
 A010051: Characteristic function of primes: 1 if n is prime, else 0.
 A010055: 1 if n is a prime power p^k (k >= 0), otherwise 0.
 A010059: Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+A010060: Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+A011371: a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
 A014587: Nim function for Take-a-Factorial-Game (a subtraction game).
 A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 A015910: a(n) = 2^n mod n.
@@ -174,6 +177,7 @@ A062116: a(n) = 2^n mod 17.
 A062173: a(n) = 2^(n-1) mod n.
 A062175: a(n) = 4^(n-1) mod n.
 A063574: Number of steps to reach an integer == 1 (mod 4) when iterating the map n -> 3n/2 if n even or (3n+1)/2 if n odd.
+A063787: a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065331: Largest 3-smooth divisor of n.
@@ -238,6 +242,7 @@ A089809: Complement of A078588.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
 A091393: a(n) = Product_{ p | n } (1 + Legendre(-3,p) ).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
+A092436: a(n) = 1/2 + (-1)^n*(1/2 - A010060(floor(n/2))).
 A092486: Take natural numbers, exchange first and third quadrisection.
 A094914: Absolute value of n^2 + n - 1354363.
 A095080: Fibeven primes, i.e., primes p whose Zeckendorf-expansion A014417(p) ends with zero.
@@ -272,6 +277,7 @@ A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A111701: Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
 A111972: a(n) = Max(omega(k): 1<=k<=n), where omega(n) = A001221(n), the number of distinct prime factors of n.
 A113063: Associated with theta series of hexagonal net with respect to a node.
+A113474: a(n) = a(floor(n/2)) + floor(n/2) with a(1) = 1.
 A113852: Numbers whose prime factors are raised to the seventh power.
 A114562: The first occurrence of n in A111701.
 A115944: Number of partitions of n into distinct factorials.
@@ -528,6 +534,7 @@ A285075: Positions of 1 in A285073; complement of A285074.
 A285126: Positions of 0 in A285125; complement of A285127.
 A285127: Positions of 1 in A285125; complement of A285126.
 A285129: Positions of 0 in A285128; complement of A285130.
+A285142: 1-limiting word of the morphism 0->10, 1->0010.
 A285143: Positions of 0 in A285142; complement of A285144.
 A285256: Positions of 0 in A285255; complement of A285257.
 A285597: Positions of 0 in A285596; complement of A285598.
@@ -623,6 +630,7 @@ A327301: Positions of 2's in {A327298(n) : n > 0}.
 A327527: Number of uniform divisors of n.
 A327829: Squarefree numbers with a prime number of prime factors.
 A328308: a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
+A328399: Lexicographically earliest infinite sequence such that a(i) = a(j) => A328475(i) = A328475(j) for all i, j.
 A328616: Number of digits in primorial base expansion of n that are maximal possible in their positions.
 A328819: Third digit after decimal point of square root of n.
 A328820: Fourth digit after decimal point of square root of n.

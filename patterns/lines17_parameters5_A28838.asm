@@ -5,9 +5,9 @@ lpb $2
   mov $3,$1
   seq $3,7953 ; source=parameter 1
   seq $3,342921 ; source=parameter 2
-  cmp $3,1
+  cmp $3,1 ; source=parameter 3
   sub $0,$3
-  add $1,1
+  add $1,1 ; source=parameter 4
   mov $4,$0
   max $4,0
   cmp $4,$0

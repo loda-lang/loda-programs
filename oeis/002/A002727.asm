@@ -5,7 +5,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,5783 ; Number of 3-covers of an n-set.
+  seq $2,5783 ; Number of 3-covers of an unlabeled n-set.
   sub $0,1
   add $1,$2
 lpe

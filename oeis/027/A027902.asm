@@ -7,8 +7,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   max $3,3
-  add $3,1
-  seq $3,243302 ; Consider a triangular Go board graph with side length n; remove i nodes and let j be the number of nodes in the largest connected subgraph remaining; then a(n) = minimum (i + j).
+  add $3,5
+  bin $3,2
+  add $3,14
+  div $3,3
+  sub $3,5
   pow $3,12
   add $3,$4
   add $4,1

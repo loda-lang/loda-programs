@@ -9,7 +9,8 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,29043 ; Expansion of 1/((1-x)(1-x^3)(1-x^5)(1-x^11)).
+  mul $0,2
+  seq $0,29224 ; Expansion of 1/((1-x^2)(1-x^6)(1-x^10)(1-x^11)).
   mov $2,$3
   mul $2,$0
   add $1,$2

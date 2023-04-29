@@ -22,6 +22,5 @@ mul $0,2
 mov $2,2
 pow $2,$1
 sub $0,$2
-mul $0,11
-div $0,22
+div $0,2
 mul $0,2

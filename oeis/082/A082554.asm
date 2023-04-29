@@ -8,8 +8,8 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,43570 ; Numbers whose base-2 representation has exactly 3 runs.
-  sub $3,1
+  seq $3,43687 ; a(n) = (s(n)-1)/2, where s(n) is the n-th number whose base-2 representation has exactly 3 runs.
+  mul $3,2
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

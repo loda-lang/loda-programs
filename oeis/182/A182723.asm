@@ -1,9 +1,20 @@
 ; A182723: Sum of (all parts of) all partitions of prime(n).
 ; Submitted by Nuadormrac
 ; 4,9,35,105,616,1313,5049,9310,28865,132385,212102,800569,1827903,2720223,5863438,17486343,49077380,68411805,179539163,333501555,451555297,1094043350,1937092927,4449637325,12923400210,21662593726,27938641850,46132984623,59072140160
-; Formula: a(n) = (A220909(A216886(n))-8)/2+4
+; Formula: a(n) = (A220909((-(A264668(n)-1)*(128*A000040(n)+113)-369)/128+2)-8)/2+4
 
-seq $0,216886 ; Primes p such that x^59 = 2 has a solution mod p.
+mov $1,$0
+seq $1,40 ; The prime numbers.
+mul $1,128
+add $1,113
+seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+sub $0,1
+mul $1,$0
+sub $2,$1
+mov $0,$2
+sub $0,369
+div $0,128
+add $0,2
 seq $0,220909 ; The second crank moment function M_2(n).
 sub $0,8
 div $0,2

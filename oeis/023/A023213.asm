@@ -1,22 +1,28 @@
 ; A023213: Primes p such that 4p + 3 is prime.
-; Submitted by Fardringle
+; Submitted by mikey
 ; 2,5,7,11,17,19,31,37,41,47,59,67,89,107,109,149,151,157,179,181,227,229,241,257,271,307,331,349,359,367,389,401,439,457,461,467,487,499,509,521,571,577,587,599,647,661,677,691,719,769,797,829,839,877,881,907,929,941,977,991,1019,1031,1039,1097,1129,1187,1217,1229,1237,1249,1259,1279,1291,1307,1319,1367,1381,1409,1427,1447,1451,1459,1481,1511,1549,1567,1571,1637,1669,1697,1741,1747,1759,1787,1789,1801,1811,1871,1889,1901
 
-mov $1,-1
+mov $3,2
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$3
+  add $3,1
+  mov $1,$6
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,2
+  add $3,$4
+  sub $0,$1
+  mov $1,$5
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,$1
-  add $1,8
+  mov $5,1
+  add $6,$1
   mul $2,$4
-  sub $2,1
+  sub $2,16
 lpe
-mov $0,$1
-div $0,8
+mov $0,$6
+add $0,1

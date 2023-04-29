@@ -6,9 +6,13 @@ mov $1,2
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,191561 ; a(n) = 2^n mod 3*n
+  add $3,3
+  mov $5,2
+  pow $5,$3
+  mod $5,$3
+  add $1,2
+  mov $3,$5
   cmp $3,2
   sub $0,$3
   mov $4,$0

@@ -1,9 +1,9 @@
-mov $2,5 ; source=parameter 0
+mov $2,1 ; source=parameter 0
 mov $3,1 ; source=parameter 1
 lpb $0
   sub $0,1
   mov $1,$3
-  mul $1,32 ; source=parameter 2
+  mul $1,10 ; source=parameter 2
   add $2,$1
   add $3,$2
 lpe

@@ -1,16 +1,14 @@
 ; A214684: a(1)=1, a(2)=1, and, for n>2, a(n)=(a(n-1)+a(n-2))/5^k, where 5^k is the highest power of 5 dividing a(n-1)+a(n-2).
-; Submitted by Cruncher Pete
+; Submitted by Fardringle
 ; 1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1
-; Formula: a(n) = -b(n)+c(n)+1, b(n) = (c(n-1)+1)%4, b(1) = 1, b(0) = 0, c(n) = (c(n-1)+1)%4+(c(n-2)+1)%4, c(1) = 1, c(0) = 0
 
+mov $3,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,1
-  mod $2,4
+  add $2,$3
+  dif $2,5
   mov $3,$1
   mov $1,$2
-  add $2,$3
 lpe
-sub $2,$1
-mov $0,$2
-add $0,1
+mov $0,$1

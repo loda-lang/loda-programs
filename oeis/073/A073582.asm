@@ -1,22 +1,14 @@
 ; A073582: Numbers n such that S(n) = n/2, where S(n) is the Kempner function A002034.
-; Submitted by srilofts
+; Submitted by Cruncher Pete [B@A]
 ; 6,8,10,14,22,26,34,38,46,58,62,74,82,86,94,106,118,122,134,142,146,158,166,178,194,202,206,214,218,226,254,262,274,278,298,302,314,326,334,346,358,362,382,386,394,398,422,446,454,458,466,478,482,502,514,526,538,542,554,562,566,586,614,622,626,634,662,674,694,698,706,718,734,746,758,766,778,794,802,818,838,842,862,866,878,886,898,914,922,926,934,958,974,982,998,1006,1018,1042,1046,1082
 
-mov $1,$0
-sub $0,1
-max $0,1
-sub $0,2
-add $0,$1
-mov $2,4
-mov $3,$0
-pow $3,4
-lpb $3
-  max $4,$2
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  sub $0,$4
-  add $2,2
-  sub $3,$0
+mov $1,2
+add $0,1
+lpb $0
+  sub $0,1
+  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+  cmp $1,$2
+  add $1,$2
 lpe
-add $0,$2
+mov $0,$1
 mul $0,2
