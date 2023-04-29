@@ -1,0 +1,29 @@
+; A160461: Coefficients in the expansion of C/B^2, in Watson's notation of page 106.
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; 1,2,5,10,20,35,63,105,175,280,444,685,1050,1575,2345,3439,5005,7195,10275,14525,20405,28428,39375,54150,74080,100715,136265,183365,245645,327485,434810,574790,756965,992950,1297940,1690500,2194642,2839695,3663225,4711160,6041745,7726180,9854105,12534925,15905475,20132576,25423550,32030775,40266275,50509090,63225635,78981460,98469320,122527550,152179030,188658876,233468615,288417595,355697800,437945100,538342795,660710610,809648035,990662850,1210368555,1476668665,1799028722,2188737765,2659282650
+
+mov $1,119
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  mov $4,$0
+  seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
+  mov $5,0
+  lpb $0
+    add $5,1
+    sub $0,$5
+  lpe
+  seq $0,35959 ; Number of partitions of n in which no parts are multiples of 5.
+  mul $0,$4
+  add $1,$0
+lpe
+mov $0,$1
+sub $0,119
