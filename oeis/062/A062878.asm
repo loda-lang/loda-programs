@@ -1,8 +1,20 @@
 ; A062878: a(n) is the position of A050614(n) in A062877.
 ; Submitted by Jon Maiga
-; 1,3,6,15,24,60,102,255,384,960,1632,4080,6168,15420,26214,65535,98304,245760,417792,1044480,1579008,3947520,6710784
-; Formula: a(n) = (3*A277918(n))/2
+; 1,3,6,15,24,60,102,255,384,960,1632,4080,6168,15420,26214,65535,98304,245760,417792,1044480,1579008,3947520,6710784,16776960,25166208,62915520,106956384,267390960,404232216,1010580540,1717986918,4294967295,6442450944
 
-seq $0,277918 ; Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 4", based on the 5-celled von Neumann neighborhood.
+mul $0,2
+mov $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  trn $0,1
+  mov $3,$4
+  bin $3,$1
+  mod $3,2
+  add $1,1
+  mul $2,2
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,3
 div $0,2

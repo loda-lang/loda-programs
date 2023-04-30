@@ -1,12 +1,10 @@
 ; A001747: 2 together with primes multiplied by 2.
-; Submitted by Christian Krause
+; Submitted by kpmonaghan
 ; 2,4,6,10,14,22,26,34,38,46,58,62,74,82,86,94,106,118,122,134,142,146,158,166,178,194,202,206,214,218,226,254,262,274,278,298,302,314,326,334,346,358,362,382,386,394,398,422,446,454,458,466,478,482,502,514,526,538,542,554,562,566,586,614,622,626,634,662,674,694,698,706,718,734,746,758,766,778,794,802,818,838,842,862,866,878,886,898,914,922,926,934,958,974,982,998,1006,1018,1042,1046
-; Formula: a(n) = 2*b(n), b(n) = A159477(b(n-1)), b(0) = 1
+; Formula: a(n) = (200*A008578(n)-200)/100+2
 
-mov $1,1
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$1
-mul $0,2
+seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+mul $0,200
+sub $0,200
+div $0,100
+add $0,2

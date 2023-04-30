@@ -10,7 +10,9 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,2
-  seq $0,138692 ; Numbers of the form 86+p^2 (where p is a prime).
+  seq $0,40 ; The prime numbers.
+  pow $0,2
+  add $0,86
   gcd $3,5
   mul $3,$0
   add $1,$3

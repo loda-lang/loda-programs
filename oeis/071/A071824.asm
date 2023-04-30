@@ -7,8 +7,11 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,76566 ; Greatest prime divisor of 3n+3 (sum of three successive integers).
   add $0,1
+  seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,2
+  mul $0,2
+  add $0,2
   mod $0,4
   add $0,32360
   mul $0,2

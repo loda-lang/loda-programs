@@ -1,17 +1,14 @@
 ; A082389: a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
-; Submitted by Science United
+; Submitted by Chuck
 ; 1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2
-; Formula: a(n) = gcd(b(n-1)/2+1,2), a(2) = 2, a(1) = 2, a(0) = 1, b(n) = b(n-1)/2+c(n-1), b(2) = 5, b(1) = 3, b(0) = 2, c(n) = gcd(b(n-1)/2+1,2)*c(n-1), c(2) = 8, c(1) = 4, c(0) = 2
 
-mov $2,2
-add $0,1
 lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,1
-  add $3,$1
-  gcd $3,2
-  add $1,$2
-  mul $2,$3
+  mov $1,$0
+  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
+  sub $0,$1
 lpe
-mov $0,$3
+add $0,1
+cmp $0,1
+add $0,1
+mod $0,2
+add $0,1

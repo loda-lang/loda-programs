@@ -6,5 +6,19 @@ mov $1,$0
 mod $1,2
 mul $0,2
 add $0,$1
-seq $0,221763 ; Numbers m such that 11*m^2 - 7 is a square.
+lpb $0
+  sub $0,1
+  mul $4,2
+  add $4,1
+  add $4,$3
+  mov $2,$4
+  dif $2,2
+  add $3,1
+  div $3,2
+  add $3,$2
+  add $4,$3
+lpe
+mov $0,$4
+div $0,2
+mul $0,3
 div $0,2
