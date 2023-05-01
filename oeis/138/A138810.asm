@@ -13,9 +13,14 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  seq $5,253909 ; 1 together with the positive squares.
+  pow $5,2
   mod $0,7
-  seq $0,11584 ; Legendre symbol (n,17).
+  pow $0,8
+  add $0,1
+  mod $0,17
+  mul $0,2
+  sub $0,2
+  div $0,2
   mul $0,$5
   mul $1,$0
   add $3,$1

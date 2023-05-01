@@ -6,7 +6,16 @@ mov $1,$0
 sub $0,2
 lpb $0
   trn $0,1
-  seq $0,113709 ; a(n) is the composite between p(n) and p(n+1), where p(n) is the n-th prime, which is divisible by (p(n+1)-p(n)).
+  add $0,2
+  seq $0,40 ; The prime numbers.
+  mov $2,$0
+  div $0,2
+  mul $0,2
+  sub $0,1
+  seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+  add $0,1
+  div $2,$0
+  mul $0,$2
   sub $0,1
   mov $1,$0
   mov $0,0

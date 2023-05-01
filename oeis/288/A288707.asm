@@ -5,7 +5,20 @@
 mov $1,-1
 pow $1,$0
 add $1,1
+mov $3,2
 dif $0,2
-seq $0,189661 ; Fixed point of the morphism 0->010, 1->10 starting with 0.
+lpb $0
+  sub $0,1
+  sub $2,$3
+  div $2,2
+  add $4,$2
+  gcd $4,2
+  mul $4,2
+  mul $3,$4
+lpe
+mov $0,$2
+mod $0,2
+add $0,2
+mod $0,2
 mul $0,$1
 div $0,2

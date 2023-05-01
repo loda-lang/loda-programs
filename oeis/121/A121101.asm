@@ -1,13 +1,19 @@
 ; A121101: Catapolyoctagons (see Cyvin et al. for precise definition).
 ; Submitted by Science United
 ; 1,1,3,9,39,169,819,3969,19719,97969,489219,2442969,12211719,61042969,305199219,1525917969,7629511719,38147167969,190735449219,953675292969,4768374511719,23841862792969,119209304199219,596046472167969,2980232312011719,14901161315917969,74505806335449219
-; Formula: a(n) = 2*(b(n)/5)+1, b(n) = b(n-1)+A032122(max(n-1,0)), b(0) = 0
+; Formula: a(n) = 2*(b(n)/5)+1, b(n) = (5^(n/2)+5^(n-1))/2+b(n-1), b(0) = 0
 
 lpb $0
-  sub $0,1
   mov $2,$0
-  max $2,0
-  seq $2,32122 ; Number of reversible strings with n beads of 5 colors.
+  div $2,2
+  mov $4,5
+  pow $4,$2
+  sub $0,1
+  mov $3,5
+  pow $3,$0
+  add $3,$4
+  mov $2,$3
+  div $2,2
   add $1,$2
 lpe
 mov $0,$1

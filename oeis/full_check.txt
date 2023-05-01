@@ -3,6 +3,7 @@ A000010: Euler totient function phi(n): count numbers <= n and prime to n.
 A000161: Number of partitions of n into 2 squares.
 A000201: Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
 A000572: A Beatty sequence: [ n(e+1) ].
+A000720: pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 A000865: Numbers beginning with letter 'o' in English.
 A001132: Primes == +-1 (mod 8).
 A001221: Number of distinct primes dividing n (also called omega(n)).
@@ -245,6 +246,7 @@ A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for w
 A092436: a(n) = 1/2 + (-1)^n*(1/2 - A010060(floor(n/2))).
 A092486: Take natural numbers, exchange first and third quadrisection.
 A094914: Absolute value of n^2 + n - 1354363.
+A094918: a(n) = (3^n-1)/2 mod n.
 A095080: Fibeven primes, i.e., primes p whose Zeckendorf-expansion A014417(p) ends with zero.
 A095098: Fib001 numbers: those k for which the Zeckendorf expansion A014417(k) ends with two zeros and a final one.
 A096299: List of strings in lexicographic order with property that for the 2^(m-1) strings of length m, the first entry is 1, the second distinct entry (reading from left to right) is 2, the third distinct entry is 3, etc.

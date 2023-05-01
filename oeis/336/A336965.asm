@@ -4,7 +4,7 @@
 ; Formula: a(n) = gcd(A188385(n),A099788(n))
 
 mov $1,$0
-seq $1,188385 ; Highest exponent in the prime factorization of n^n
+seq $1,188385 ; Highest exponent in the prime factorization of n^n.
 seq $0,99788 ; a(n) = Product_{i=1..2n} prime(i).
 gcd $1,$0
 mov $0,$1

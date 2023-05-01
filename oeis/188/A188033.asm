@@ -7,7 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,188031 ; [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=11, [ ]=floor.
+  add $3,1
+  seq $3,83368 ; A Fibbinary system represents a number as a sum of distinct Fibonacci numbers (instead of distinct powers of two). Using representations without adjacent zeros, a(n) = the highest bit-position which changes going from n-1 to n.
+  seq $3,213818 ; Antidiagonal sums of the convolution array A213773.
+  sub $3,2
+  div $3,2
+  mod $3,2
   add $3,$4
   sub $0,$3
   add $0,1

@@ -5,8 +5,10 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $5,1
   mov $3,$1
-  seq $3,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $3,$5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3

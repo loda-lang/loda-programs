@@ -9,7 +9,12 @@ lpb $2
   add $1,2
   mov $3,$1
   add $1,1
-  seq $3,295632 ; Write 1/Product_{n > 1}(1 - 1/n^s) in the form Product_{n > 1}(1 + a(n)/n^s).
+  add $3,1
+  seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  pow $3,4
+  sub $3,5
+  mod $3,10
   add $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1

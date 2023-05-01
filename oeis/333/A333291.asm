@@ -14,7 +14,11 @@ lpb $4
   gcd $1,$4
   cmp $1,1
   sub $0,$1
-  seq $0,2618 ; a(n) = n*phi(n).
+  mov $5,$0
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $5,1
+  add $0,1
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

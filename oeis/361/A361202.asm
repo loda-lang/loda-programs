@@ -12,7 +12,13 @@ lpb $2
   mov $1,$0
   div $0,2
   add $1,$0
-  seq $1,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
+  mov $5,59969536
+  sub $5,$1
+  div $5,4
+  div $1,3
+  add $5,$1
+  mov $1,$5
+  sub $1,14992383
   add $3,$1
 lpe
 mov $0,$3

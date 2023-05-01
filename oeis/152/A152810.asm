@@ -9,7 +9,8 @@ lpb $2
   mov $3,$1
   mul $3,2
   add $3,1
-  seq $3,267674 ; Binary representation of the n-th iteration of the "Rule 195" elementary cellular automaton starting with a single ON (black) cell.
+  seq $3,267675 ; Decimal representation of the n-th iteration of the "Rule 195" elementary cellular automaton starting with a single ON (black) cell.
+  seq $3,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
   mod $3,3
   mod $3,2
   sub $0,$3
