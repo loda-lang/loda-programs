@@ -1,10 +1,10 @@
 ; A002058: Number of internal triangles in all triangulations of an (n+1)-gon.
+; Submitted by Science United
 ; 2,14,72,330,1430,6006,24752,100776,406980,1634380,6537520,26075790,103791870,412506150,1637618400,6495886320,25751549340,102042235620,404225281200,1600944863700,6339741660252,25103519174844,99399793096352
-; Formula: a(n) = 2*binomial(2*n+5,n)
+; Formula: a(n) = 2*binomial(2*n+5,n+5)
 
 mov $1,5
 add $1,$0
-add $1,$0
-bin $1,$0
-mul $1,2
-mov $0,$1
+add $0,$1
+bin $0,$1
+mul $0,2

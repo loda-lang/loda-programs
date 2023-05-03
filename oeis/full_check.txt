@@ -42,6 +42,7 @@ A003754: Numbers with no adjacent 0's in binary expansion.
 A004016: Theta series of planar hexagonal lattice A_2.
 A004641: Fixed under 0 -> 10, 1 -> 100.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
+A004956: a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
 A005101: Abundant numbers (sum of divisors of m exceeds 2m).

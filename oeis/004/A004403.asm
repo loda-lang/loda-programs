@@ -4,5 +4,16 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,1934 ; Expansion of 1/theta_4(q)^2 in powers of q.
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,716 ; Number of partitions of n into parts of 3 kinds.
+  add $5,1
+  add $2,$3
+  mov $4,$5
+lpe
+mov $0,$2
 mul $0,$1
