@@ -1,11 +1,6 @@
 ; A018358: Divisors of 255.
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,3,5,15,17,51,85,255
-; Formula: a(n) = A048724(a(n-1)), a(0) = 1
+; Formula: a(n) = A003527(n)
 
-mov $1,1
-lpb $0
-  sub $0,1
-  seq $1,48724 ; Write n and 2n in binary and add them mod 2.
-lpe
-mov $0,$1
+seq $0,3527 ; Divisors of 2^16 - 1.

@@ -1,11 +1,11 @@
 ; A006672: Ramsey numbers.
+; Submitted by Albatross795
 ; 4,4,6,7,8,9,11,12,13,14
-; Formula: a(n) = -((4*((3*n)/(-2)))/5)+4
+; Formula: a(n) = (14*n-6)/11+4
 
-mul $0,3
-div $0,-2
-mul $0,4
-div $0,5
-sub $1,$0
-add $1,4
+mul $0,14
+mov $1,$0
+sub $1,6
+div $1,11
 mov $0,$1
+add $0,4

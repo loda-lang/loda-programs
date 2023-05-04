@@ -1,13 +1,8 @@
 ; A016053: Inverse of 2044th cyclotomic polynomial.
-; Submitted by Albatross795
+; Submitted by Science United
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A015661(n), a(1) = 0, a(0) = 1
+; Formula: a(n) = A015661(n)
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $2,1
-  mov $1,$2
-  seq $1,15661 ; Inverse of 1652nd cyclotomic polynomial.
-lpe
+mov $1,$0
+seq $1,15661 ; Inverse of 1652nd cyclotomic polynomial.
 mov $0,$1

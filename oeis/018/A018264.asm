@@ -1,13 +1,12 @@
 ; A018264: Divisors of 54.
-; Submitted by TankbusterGames
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,6,9,18,27,54
+; Formula: a(n) = 3^(n/2)+3^(n/2)*(n%2)
 
-mov $1,1
-mov $2,1
-lpb $0
-  sub $0,1
-  add $2,$1
-  mov $1,$2
-  dif $1,2
-lpe
-mov $0,$2
+mov $1,$0
+div $1,2
+mov $2,3
+pow $2,$1
+mod $0,2
+mul $0,$2
+add $0,$2
