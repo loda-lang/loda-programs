@@ -112,6 +112,7 @@ A035187: Sum over divisors d of n of Kronecker symbol (5|d).
 A035199: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
 A035336: a(n) = 2*floor(n*phi) + n - 1, where phi = (1+sqrt(5))/2.
 A035337: Third column of Wythoff array.
+A036234: Number of primes <= n, if 1 is counted as a prime.
 A036349: Numbers whose sum of prime factors (taken with multiplicity) is even.
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
 A036987: Fredholm-Rueppel sequence.

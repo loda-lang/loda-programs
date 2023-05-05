@@ -18,7 +18,5 @@ lpb $3
   lpe
   add $3,$1
 lpe
-div $0,3
-mul $0,5
-div $0,10
+div $0,6
 mul $0,4

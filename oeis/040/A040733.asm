@@ -1,7 +1,19 @@
 ; A040733: Continued fraction for sqrt(761).
 ; Submitted by Simon Strandgaard
 ; 27,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1,2,2,1,1,54,1,1
+; Formula: a(n) = ((42*gcd((4*n+10)/7-1,262156))%13+3)/3+25*(((42*gcd((4*n+10)/7-1,262156))%13+3)/5)-26
 
-seq $0,225875 ; We write the 1 + 4*k numbers once and twice the others.
+mul $0,4
+add $0,10
+div $0,7
 sub $0,1
-seq $0,40742 ; Continued fraction for sqrt(770).
+gcd $0,262156
+mul $0,42
+mod $0,13
+add $0,3
+mov $1,$0
+div $1,5
+mul $1,25
+div $0,3
+sub $0,26
+add $0,$1

@@ -1,30 +1,10 @@
 ; A089965: Both n + 1 and n/2 + 1 are primes.
-; Submitted by PDW
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,4,12,36,60,72,156,192,276,312,396,420,456,540,612,660,672,732,756,876,996,1092,1152,1200,1212,1236,1320,1380,1452,1620,1656,1752,1872,1932,1992,2016,2136,2340,2472,2556,2592,2796,2856,2916,3060,3216,3252
+; Formula: a(n) = A005383(n)-1
 
-cmp $1,$0
-trn $0,1
-mov $3,$0
-add $3,2
-pow $3,2
-lpb $3
-  max $4,$6
-  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$4
-  add $2,6
-  mov $5,$0
-  max $5,0
-  cmp $5,$0
-  mul $3,$5
-  sub $3,1
-  add $6,$2
-  add $2,2
-  add $6,$2
-lpe
-mov $0,$2
-sub $0,8
-div $0,8
-add $0,1
-sub $1,$0
-sub $0,$1
-mul $0,2
+seq $0,5383 ; Primes p such that (p+1)/2 is prime.
+mov $1,24
+add $1,$0
+mov $0,$1
+sub $0,25

@@ -1,13 +1,14 @@
 ; A024711: a(n) = residue mod 2 of n-th term of A024702.
-; Submitted by Science United
+; Submitted by http://amez.petrsu.ru/
 ; 1,0,1,1,0,1,0,1,0,1,0,1,0,1,1,1,1,0,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,1,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,0,1,1,1,1
+; Formula: a(n) = ((2*((A000040(n+2)^2)/8)-4)/6+3)%2
 
-mov $1,6
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-pow $1,2
-mov $0,$1
-div $0,24
+add $0,2
+seq $0,40 ; The prime numbers.
+pow $0,2
+div $0,8
+mul $0,2
+sub $0,4
+div $0,6
+add $0,3
 mod $0,2

@@ -27,8 +27,8 @@ lpb $0
   div $5,7
   sub $1,$5
   div $1,3
-  mul $1,20
-  div $1,8
+  mul $1,5
+  div $1,2
   add $1,1
   mul $1,$2
   add $1,$4

@@ -1,17 +1,8 @@
 ; A071617: A063439[A000040(n)]=Phi[p]^Phi[p].
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,256,46656,10000000000,8916100448256,18446744073709551616,39346408075296537575424,341427877364219557396646723584,33145523113253374862572728253364605812736
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $1,1
-  mov $2,$1
-  cmp $2,0
-  add $2,$1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  mov $1,$2
-lpe
-mov $0,$1
+seq $0,40 ; The prime numbers.
 sub $0,1
-pow $0,$0
+add $1,$0
+pow $0,$1

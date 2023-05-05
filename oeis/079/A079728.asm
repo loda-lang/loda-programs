@@ -1,18 +1,16 @@
 ; A079728: sum(k=0,p,binomial(2*k,k)) (mod p) where p runs through the primes.
-; Submitted by zombie67 [MM]
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,1,3,1,3,1,3,1,1,3,3,1,3,1,1,1,3,3,1,3,3,1,1,3,1,3,1,3,1,3,1,1,3,1,3,3,3,1,1,1,3,1,3,1,3,3,3,1,3,1,1,3,1,1,1,1,3,3,1,3,1,3,1,3,1,3,3,1,3,1,1,3,3,3,1,1,3,1,3,1
 
-mov $1,1
+mov $1,$0
+seq $1,40 ; The prime numbers.
+mul $0,2
 lpb $0
-  sub $0,1
-  add $1,1
-  mov $2,$1
-  cmp $2,0
-  add $2,$1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  mov $1,$2
+  mod $1,3
+  mov $0,$1
 lpe
-mov $0,$1
-trn $0,2
-mod $0,3
+add $1,1
+seq $0,207833 ; E.g.f.: T(T(x)), where T(x) is the e.g.f. for labeled rooted trees, A000169.
+div $0,$1
 add $0,1
+mod $0,10

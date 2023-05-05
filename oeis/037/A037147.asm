@@ -1,10 +1,9 @@
 ; A037147: Denominators of Fourier coefficients of Eisenstein series of degree 2 and weight 10 when evaluated at Gram(A_2)*z.
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867,43867
-; Formula: a(n) = 43866*(min(2*n,5)%2)+1
+; Formula: a(n) = 43866*((n+3897)/1300)-87731
 
-mul $0,2
-min $0,5
-mod $0,2
+add $0,3897
+div $0,1300
 mul $0,43866
-add $0,1
+sub $0,87731

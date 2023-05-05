@@ -1,15 +1,9 @@
 ; A079685: Degrees of irreducible representations of SL(2,5).
-; Submitted by Cruncher Pete
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,3,3,4,4,5,6
+; Formula: a(n) = (4*n+3)/7+1
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  mul $2,$1
-  add $2,1
-  div $0,8
-  mul $1,10
-lpe
-div $2,2
-mov $0,$2
+mul $0,4
+add $0,3
+div $0,7
 add $0,1

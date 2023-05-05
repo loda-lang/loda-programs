@@ -1,13 +1,13 @@
 ; A085391: Square array of centered numbers, read by antidiagonals.
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,0,1,1,0,1,3,1,0,1,4,5,1,0,1,5,10,7,1,0,1,6,15,19,9,1,0,1,7,21,35,31,11,1,0,1,8,28,56,69,46,13,1,0,1,9,36,84,126,121,64,15,1,0,1,10,45,120,210,251,195,85,17,1,0,1,11,55,165,330,462,456,295,109,19,1,0
 
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
 lpe
+mov $2,$1
+sub $2,$0
 bin $1,$0
 bin $0,$2
 sub $1,$0

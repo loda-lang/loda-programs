@@ -1,15 +1,12 @@
 ; A047607: Numbers that are congruent to {0, 1, 2, 3, 5} mod 8.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,2,3,5,8,9,10,11,13,16,17,18,19,21,24,25,26,27,29,32,33,34,35,37,40,41,42,43,45,48,49,50,51,53,56,57,58,59,61,64,65,66,67,69,72,73,74,75,77,80,81,82,83,85,88,89
-; Formula: a(n) = (3*(n/5))/3+(3*(n/5)+n)/4+n
+; Formula: a(n) = ((8*n+38)%10+8*n+38)/5-9
 
+mul $0,8
+add $0,38
 mov $1,$0
-div $1,5
-mul $1,3
-mov $3,$0
+mod $0,10
 add $0,$1
-div $0,4
-mov $2,$1
-div $2,3
-add $0,$3
-add $0,$2
+div $0,5
+sub $0,9

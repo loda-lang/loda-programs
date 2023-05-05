@@ -1,4 +1,4 @@
-; A045163: Numbers n with property that in base 5 representation the numbers of 0's and 1's are 1 and 2, respectively.
+; A045163: Numbers whose base-5 representation contains exactly one 0 and two 1's.
 ; Submitted by damotbe
 ; 26,30,132,133,134,136,141,146,152,153,154,160,165,170,176,180,201,205,226,230,256,276,280,381,401,405,506,526,530,662,663,664,667,668,669,672,673,674,682,683,684,686,691,696,707,708
 

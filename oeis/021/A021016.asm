@@ -1,11 +1,10 @@
 ; A021016: Decimal expansion of 1/12.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,8,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = binomial(binomial(53,min(n,2)),2)%10
+; Formula: a(n) = (min(8*n+8,21)+2)%10
 
-min $0,2
-mov $1,53
-bin $1,$0
-bin $1,2
-mov $0,$1
+add $0,1
+mul $0,8
+min $0,21
+add $0,2
 mod $0,10

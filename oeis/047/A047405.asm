@@ -1,13 +1,15 @@
 ; A047405: Numbers that are congruent to {0, 1, 2, 3, 6} mod 8.
-; Submitted by Simon Strandgaard
+; Submitted by http://amez.petrsu.ru/
 ; 0,1,2,3,6,8,9,10,11,14,16,17,18,19,22,24,25,26,27,30,32,33,34,35,38,40,41,42,43,46,48,49,50,51,54,56,57,58,59,62,64,65,66,67,70,72,73,74,75,78,80,81,82,83,86,88,89
+; Formula: a(n) = (6*n+15)/5+2*((n+1)/5)-3
 
+add $0,1
 mov $1,$0
-sub $1,3
-lpb $1
-  add $0,1
-  add $0,$1
-  trn $1,2
-  sub $0,$1
-  trn $1,3
-lpe
+add $0,3
+add $0,$1
+mul $0,3
+div $0,5
+sub $0,3
+div $1,5
+mul $1,2
+add $0,$1

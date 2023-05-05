@@ -1,13 +1,12 @@
 ; A036287: Denominators for Fibonacci Binary Verticals viewed as Periodic Binary Fractions: a(n) = ((2^(3*(2^n))) - 1).
-; Submitted by TankbusterGames
+; Submitted by Science United
 ; 7,63,4095,16777215,281474976710655,79228162514264337593543950335,6277101735386680763835789423207666416102355444464034512895,39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306815
-; Formula: a(n) = a(n-1)*(a(n-1)+2), a(0) = 7
+; Formula: a(n) = 8^(2^n)-1
 
-mov $1,7
-lpb $0
-  sub $0,1
-  mov $2,$1
-  add $2,2
-  mul $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+mov $0,2
+pow $0,$1
+mov $2,8
+pow $2,$0
+mov $0,$2
+sub $0,1

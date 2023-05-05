@@ -1,13 +1,13 @@
 ; A086303: Numbers n such that n+15 is prime.
 ; Submitted by Science United
 ; 2,4,8,14,16,22,26,28,32,38,44,46,52,56,58,64,68,74,82,86,88,92,94,98,112,116,122,124,134,136,142,148,152,158,164,166,176,178,182,184,196,208,212,214,218,224,226,236,242,248,254,256,262,266,268,278,292,296
-; Formula: a(n) = b(n)-15, b(n) = A159477(b(n-1)+1), b(0) = 17
+; Formula: a(n) = (4*A000040(n+6)-68)/4+2
 
 add $0,6
-lpb $0
-  sub $0,1
-  add $1,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
+mov $1,$0
+seq $1,40 ; The prime numbers.
+mul $1,4
 mov $0,$1
-sub $0,15
+sub $0,68
+div $0,4
+add $0,2

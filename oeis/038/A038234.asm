@@ -1,14 +1,14 @@
 ; A038234: Triangle whose (i,j)-th entry is binomial(i,j)*4^(i-j)*4^j.
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,4,16,32,16,64,192,192,64,256,1024,1536,1024,256,1024,5120,10240,10240,5120,1024,4096,24576,61440,81920,61440,24576,4096,16384,114688,344064,573440,573440,344064,114688,16384,65536,524288
 
 lpb $0
   add $1,1
   sub $0,$1
-  mul $2,4
-  add $2,3
 lpe
+mov $2,$1
 bin $1,$0
-mul $2,$1
-add $2,$1
-mov $0,$2
+mov $0,4
+pow $0,$2
+mul $1,$0
+mov $0,$1

@@ -13,7 +13,10 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,1041 ; a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
+  add $0,1
+  seq $0,102476 ; Least modulus with 2^n square roots of 1.
+  div $0,4
+  mul $0,12
   mul $1,$0
   add $3,$1
 lpe

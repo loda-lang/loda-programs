@@ -1,14 +1,6 @@
 ; A040300: Continued fraction for sqrt(318).
-; Submitted by tosi
+; Submitted by USTL-FIL (Lille Fr)
 ; 17,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1,34,1,4,1
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $1,$3
-  seq $1,40304 ; Continued fraction for sqrt(322).
-  dif $1,4
-  mov $2,$1
-  add $3,1
-lpe
-mov $0,$2
+seq $0,40304 ; Continued fraction for sqrt(322).
+dif $0,4

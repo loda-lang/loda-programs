@@ -1,16 +1,19 @@
 ; A068499: Numbers m such that m! reduced modulo (m+1) is not zero.
-; Submitted by www.urfak.petrsu.ru
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,4,6,10,12,16,18,22,28,30,36,40,42,46,52,58,60,66,70,72,78,82,88,96,100,102,106,108,112,126,130,136,138,148,150,156,162,166,172,178,180,190,192,196,198,210,222,226,228,232,238,240,250,256,262,268,270,276,280,282,292,306,310,312,316,330,336,346,348,352,358,366,372,378,382,388,396,400,408,418,420,430,432,438,442,448,456,460,462,466,478,486,490,498,502,508,520,522
 
-mov $1,2
-lpb $0
-  sub $0,1
-  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
-  cmp $1,$2
-  add $1,$2
+mov $2,$0
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  max $1,$3
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $2,$1
+  add $3,2
+  sub $4,$2
 lpe
-mov $0,$1
-mul $0,2
-sub $0,4
-div $0,2
-add $0,1
+add $2,$3
+sub $2,1
+mov $0,$2

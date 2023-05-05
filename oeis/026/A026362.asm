@@ -8,7 +8,7 @@ lpb $0
   add $0,$3
   sub $2,2
   mov $3,$1
-  seq $3,26363 ; a(n) = least k such that s(k) = n, where s = A026362.
+  seq $3,26363 ; a(n) is the least k such that s(k) = n, where s = A026362.
   sub $0,$3
   add $1,1
   max $4,1
