@@ -5,13 +5,11 @@
 add $0,2
 mov $2,$0
 sub $0,1
-mov $3,1
 lpb $0
   mov $3,$0
-  seq $3,6530
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $0,$3
 lpe
-mov $0,$3
-pow $2,$0
+pow $2,$3
 add $1,$2
 mov $0,$1

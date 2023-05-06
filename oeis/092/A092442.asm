@@ -1,12 +1,12 @@
 ; A092442: Sequence arising from enumeration of domino tilings of Aztec Pillow-like regions.
+; Submitted by Conan
 ; 0,1,5,19,59,161,405,967,2231,5029,11153,24443,53091,114505,245549,524047,1113839,2358989,4980393,10485379,22019675,46136881,96468485,201326039,419429799,872414581,1811938625,3758095627,7784627411
 ; Formula: a(n) = (n+1)*(2^n-n)-1
 
 mov $1,2
 pow $1,$0
 sub $1,$0
-mov $2,$0
-add $2,1
-mul $1,$2
-sub $1,1
+add $0,1
+mul $1,$0
 mov $0,$1
+sub $0,1

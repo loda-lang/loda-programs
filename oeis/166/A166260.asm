@@ -1,16 +1,11 @@
 ; A166260: a(n) = A089026(n) - 1.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,0,4,0,6,0,0,0,10,0,12,0,0,0,16,0,18,0,0,0,22,0,0,0,0,0,28,0,30,0,0,0,0,0,36,0,0,0,40,0,42,0,0,0,46,0,0,0,0,0,52,0,0,0,0,0,58,0,60,0,0,0,0,0,66,0,0,0,70,0,72,0,0,0,0,0,78,0,0,0,82,0,0,0,0,0,88,0,0,0,0,0,0
-; Formula: a(n) = gcd(b(n)+1,n+1)-1, b(n) = max(n*b(n-1),1), b(1) = 1, b(0) = 0
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mul $2,$1
-  max $2,1
-  add $1,1
+mov $1,$0
+lpb $1
+  sub $1,1
+  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,$0
 lpe
-add $2,1
-gcd $2,$1
 mov $0,$2
-sub $0,1

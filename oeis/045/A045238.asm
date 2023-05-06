@@ -1,4 +1,4 @@
-; A045238: Numbers n with property that in base 5 representation the numbers of 1's and 3's are 1 and 2, respectively.
+; A045238: Numbers whose base-5 representation contains exactly one 1 and two 3's.
 ; Submitted by ChelseaOilman
 ; 43,83,91,143,193,203,213,215,217,219,223,243,293,333,341,383,391,403,413,415,417,419,423,433,441,451,455,457,459,461,471,483,491,543,583,591,643,693,703,713,715,717,719,723,743,893
 

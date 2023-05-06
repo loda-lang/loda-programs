@@ -5,9 +5,12 @@
 lpb $0
   sub $0,1
   mov $2,$0
+  bin $2,2
+  mul $2,-2
+  bin $2,2
+  mul $2,10
+  add $2,1
   sub $0,2
-  trn $2,1
-  seq $2,22521 ; a(n) = (n+1)^5 - n^5.
   add $1,$2
 lpe
 add $0,1

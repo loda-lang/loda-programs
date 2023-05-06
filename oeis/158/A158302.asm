@@ -1,18 +1,12 @@
 ; A158302: "1" followed by repeats of 2^k deleting all 4^k, k>0
-; Submitted by Dave Studdert
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,2,2,8,8,32,32,128,128,512,512,2048,2048,8192,8192,32768,32768,131072,131072,524288,524288,2097152,2097152,8388608,8388608,33554432,33554432,134217728,134217728,536870912,536870912,2147483648,2147483648,8589934592
-; Formula: a(n) = b(n)/2+1, b(n) = 4^((n+1)/2)-2, b(1) = 2, b(0) = 0
+; Formula: a(n) = (gcd(n+1,2)*2^(n+1)+2)/4
 
-lpb $0
-  sub $0,1
-  mov $2,$3
-  add $2,2
-  div $2,2
-  mov $1,4
-  pow $1,$2
-  sub $1,2
-  add $3,1
-lpe
-mov $0,$1
-div $0,2
 add $0,1
+mov $1,2
+pow $1,$0
+gcd $0,2
+mul $0,$1
+add $0,2
+div $0,4

@@ -1,9 +1,22 @@
 ; A099195: Figurate numbers based on the 8-dimensional regular convex polytope called the 8-dimensional cross-polytope, or 8-dimensional hyperoctahedron, which is represented by the Schlaefli symbol {3, 3, 3, 3, 3, 3, 4}. It is the dual of the 8-dimensional hypercube.
 ; Submitted by Science United
 ; 0,1,16,129,704,2945,10128,29953,78592,187137,411280,845185,1640640,3032705,5373200,9173505,15158272,24331777,38058768,58161793,87037120,127791489,184402064,261902081,366594816,506298625,690625936,931299201,1242506944,1641303169,2148053520,2786931713,3586469888,4580166657,5807156752,7312946305,9150217920,11379709825,14071173520,17304414465,21170420480,25772582657,31228013712,37668968833,45244374208,54121468545,64487563024,76551925249,90547792896,106734522881,125399882000,146862485121
-; Formula: a(n) = (n*A008416(n))/16
 
 mov $1,$0
-seq $1,8416 ; Coordination sequence for 8-dimensional cubic lattice.
-mul $0,$1
+add $1,2
+lpb $1
+  sub $1,2
+  mov $3,16
+  bin $3,$1
+  add $5,1
+  add $5,$2
+  mov $4,$5
+  add $4,2
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mov $5,4
+  add $6,$4
+lpe
+mul $0,$6
 div $0,16

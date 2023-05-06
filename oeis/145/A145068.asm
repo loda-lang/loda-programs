@@ -1,17 +1,11 @@
 ; A145068: Zero followed by partial sums of A059100, starting at n=1.
-; Submitted by artemis8
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,3,9,20,38,65,103,154,220,303,405,528,674,845,1043,1270,1528,1819,2145,2508,2910,3353,3839,4370,4948,5575,6253,6984,7770,8613,9515,10478,11504,12595,13753,14980,16278,17649,19095,20618,22220,23903,25669
-; Formula: a(n) = (n-1)^2+2*n+a(n-1)+1, a(2) = 9, a(1) = 3, a(0) = 0
+; Formula: a(n) = -binomial(-n-1,3)+binomial(n,3)-1
 
-lpb $0
-  sub $0,1
-  add $4,1
-  mov $1,$2
-  pow $1,2
-  add $1,$4
-  add $1,$4
-  mov $2,$4
-  add $3,1
-  add $3,$1
-lpe
-mov $0,$3
+mov $1,-1
+sub $1,$0
+bin $1,3
+bin $0,3
+sub $0,1
+sub $0,$1

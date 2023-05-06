@@ -1,8 +1,14 @@
 ; A097272: Least integer with same "mod 2 prime signature" as n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,4,3,6,3,8,9,6,3,12,3,6,15,16,3,18,3,12,15,6,3,24,9,6,27,12,3,30,3,32,15,6,15,36,3,6,15,24,3,30,3,12,45,6,3,48,9,18,15,12,3,54,15,24,15,6,3,60,3,6,45,64,15,30,3,12,15,30,3,72,3,6,45,12,15,30,3,48,81,6,3,60,15,6,15,24,3,90,15,12,15,6,15,96,3,18,45,36
-; Formula: a(n) = A046523(A158421(n))/1024
 
-seq $0,158421 ; a(n) = 1024*n - 1.
-seq $0,46523 ; Smallest number with same prime signature as n.
+mul $0,1024
+add $0,1023
+mov $1,2
+lpb $1
+  sub $1,1
+  add $0,$1
+  sub $0,1
+  seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+lpe
 div $0,1024

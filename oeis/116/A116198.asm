@@ -1,20 +1,13 @@
 ; A116198: A 3 x 3 magic square read by rows.
-; Submitted by TankbusterGames
+; Submitted by Science United
 ; 7,0,5,2,4,6,3,8,1
+; Formula: a(n) = (9*A033812(max(0,n)%9)-9)/9
 
-mov $1,-2
-mov $2,2
-mov $4,1
-mov $3,$0
-lpb $3
-  mul $4,$3
-  add $1,$4
-  add $1,$2
-  cmp $4,0
-  add $2,$4
-  add $2,$1
-  sub $3,1
-lpe
+max $2,$0
+mod $2,9
+seq $2,33812 ; The Loh-Shu 3 X 3 magic square, lexicographically largest variant when read by columns.
+mul $2,9
+add $1,$2
 mov $0,$1
-add $0,9
-mod $0,10
+sub $0,9
+div $0,9

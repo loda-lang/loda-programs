@@ -4,9 +4,18 @@
 
 mov $1,$0
 min $1,1
-trn $0,1
-seq $0,144338 ; Squarefree numbers > 1.
-add $1,$0
+mov $2,1
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  sub $0,$4
+  add $2,1
+  sub $3,$0
+lpe
+add $2,1
+add $1,$2
 mov $0,$1
 mul $0,4
 sub $0,4

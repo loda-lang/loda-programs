@@ -1,4 +1,4 @@
-; A045836: Half of Theta series of b.c.c. lattice with respect to long edge.
+; A045836: Half of theta series of b.c.c. lattice with respect to long edge.
 ; Submitted by Orange Kid
 ; 1,2,0,0,4,4,0,0,5,4,0,0,4,8,0,0,8,6,0,0,8,4,0,0,5,12,0,0,12,8,0,0,8,8,0,0,4,12,0,0,16,8,0,0,12,8,0,0,9,14,0,0,12,16,0,0,8,4,0,0,12,16,0,0,16,16,0,0,16,8,0,0,8,20,0,0,16,8,0,0,17
 

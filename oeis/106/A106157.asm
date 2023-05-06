@@ -6,8 +6,7 @@ lpb $0
   mov $2,2
   pow $2,$0
   add $2,4
-  mul $2,2
-  div $2,6
+  div $2,3
   sub $2,2
   add $1,$2
 lpe

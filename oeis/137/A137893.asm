@@ -6,6 +6,5 @@ add $0,1
 lpb $0
   dif $0,3
 lpe
-mul $0,4
-div $0,3
+mod $0,3
 mod $0,2

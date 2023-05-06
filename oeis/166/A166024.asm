@@ -1,9 +1,8 @@
 ; A166024: Define dsf(n) = A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of n. dsf(421845123) = 16780890 and dsf(16780890) = 421845123, so these 2 numbers make a loop for the function dsf.
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890,421845123,16780890
-; Formula: a(n) = 405064233*((n+9)%2)+16780890
+; Formula: a(n) = 405064233*gcd(n,2)-388283343
 
-add $0,9
-mod $0,2
+gcd $0,2
 mul $0,405064233
-add $0,16780890
+sub $0,388283343

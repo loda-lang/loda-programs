@@ -4,8 +4,17 @@
 
 mov $2,$0
 add $2,1
-seq $0,8339 ; a(1)=1; for n >= 1, a(n+1) = lcm(a(n),n) / gcd(a(n),n).
-mov $1,$0
+mov $3,1
+lpb $0
+  sub $0,1
+  add $4,1
+  mov $5,$3
+  gcd $5,$4
+  div $3,$5
+  mul $3,$4
+  div $3,$5
+lpe
+mov $1,$3
 gcd $1,$2
 mov $0,$2
 div $0,$1

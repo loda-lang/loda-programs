@@ -6,9 +6,10 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
-  sub $3,4
+  mov $5,$1
+  seq $5,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+  mov $3,$5
+  sub $3,3
   cmp $3,0
   sub $0,$3
   add $1,1

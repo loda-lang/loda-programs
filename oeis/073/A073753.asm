@@ -7,5 +7,8 @@ mov $1,2
 lpb $1
   sub $1,1
   sub $0,1
-  seq $0,73752 ; Greatest common divisor of n/spf(n) and n/gpf(n) where spf(n) is the smallest and gpf(n) is the greatest prime factor of n (see A020639, A006530).
+  mov $2,$0
+  seq $2,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  seq $0,60681 ; Largest difference between consecutive divisors of n (ordered by size).
+  gcd $0,$2
 lpe

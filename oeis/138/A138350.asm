@@ -1,9 +1,18 @@
 ; A138350: Moment sequence of tr(A^2) in USp(4).
 ; Submitted by pututu
 ; 1,-1,3,-6,20,-50,175,-490,1764,-5292,19404,-60984,226512,-736164,2760615,-9202050,34763300,-118195220,449141836,-1551580888,5924217936,-20734762776,79483257308,-281248448936,1081724803600,-3863302870000,14901311070000,-53644719852000
-; Formula: a(n) = A005558(n)*(-1)^n
+; Formula: a(n) = ((binomial(n,n/2)*binomial(n+1,n/2))/(n/2+1))*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,5558 ; a(n) is the number of n-step walks on square lattice such that 0 <= y <= x at each step.
+mov $2,$0
+mov $3,$0
+div $0,2
+add $2,1
+bin $2,$0
+bin $3,$0
+add $0,1
+mul $2,$3
+div $2,$0
+mov $0,$2
 mul $0,$1

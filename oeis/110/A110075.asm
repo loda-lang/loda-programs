@@ -1,16 +1,9 @@
 ; A110075: Numbers of the form 3*2^p*(2^p-1) where 2^p-1 is a (Mersenne) prime greater than 3.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by USTL-FIL (Lille Fr)
 ; 168,2976,48768,201302016,51539214336,824632147968,13835058048839712768,15950735949418990467928155695723053056,1149371655649416643768760268505821828785983929289015296
-; Formula: a(n) = 12*b(n)+12, b(n) = A133067(n+1), b(1) = 247, b(0) = 13
+; Formula: a(n) = 12*A133067(n+1)+12
 
-add $0,2
-lpb $0
-  sub $0,1
-  mov $1,$3
-  seq $1,133067 ; Perfect numbers divided by 2, minus 1.
-  mov $2,$1
-  add $3,1
-lpe
-mov $0,$2
+add $0,1
+seq $0,133067 ; Perfect numbers divided by 2, minus 1.
 add $0,1
 mul $0,12

@@ -1,34 +1,23 @@
 ; A023630: a(n) = s(2n) - s(2n-1), where s( ) is sequence A023629.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 3,2,4,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2,2,4,4,4,2,2,4,2,2,4,2
+; Formula: a(n) = d(n)/2+2, b(n) = (-c(n-1)+b(n-1)-5)/4-5, b(2) = -13, b(1) = -12, b(0) = -7, c(n) = c(n-1)*gcd((-c(n-1)+b(n-1)-5)/4+d(n-1),4)^2, c(2) = 256, c(1) = 16, c(0) = 16, d(n) = 2*(gcd((-c(n-1)+b(n-1)-5)/4+d(n-1),4)/2), d(2) = 4, d(1) = 0, d(0) = 2
 
-mov $5,$0
-mov $7,2
-lpb $7
-  sub $7,1
-  mov $0,$5
-  add $0,$7
+mov $2,4
+add $0,1
+lpb $0
   sub $0,1
-  mov $1,3
-  mov $2,$0
-  pow $2,2
-  lpb $2
-    mov $3,$1
-    seq $3,39984 ; An example of a d-perfect sequence.
-    sub $0,$3
-    add $1,2
-    mov $4,$0
-    max $4,0
-    cmp $4,$0
-    mul $2,$4
-    sub $2,1
-  lpe
-  mov $8,$7
-  mul $8,$1
-  mov $0,$1
-  add $6,$8
+  sub $1,$2
+  sub $1,5
+  div $1,4
+  add $3,$1
+  gcd $3,4
+  sub $1,5
+  mul $2,$3
+  mul $2,$3
+  div $3,2
+  mul $3,2
 lpe
-min $5,1
-mul $5,$0
-mov $0,$6
-sub $0,$5
+mov $0,$3
+div $0,2
+add $0,2

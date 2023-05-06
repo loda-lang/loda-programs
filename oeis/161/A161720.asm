@@ -1,16 +1,16 @@
 ; A161720: a(n) = (prime(n) - 7)/2.
-; Submitted by LM
+; Submitted by Stony666
 ; -1,0,2,3,5,6,8,11,12,15,17,18,20,23,26,27,30,32,33,36,38,41,45,47,48,50,51,53,60,62,65,66,71,72,75,78,80,83,86,87,92,93,95,96,102,108,110,111,113,116,117,122,125,128,131,132
-; Formula: a(n) = (2*b(n)+15)/4-7, b(n) = A159477(b(n-1)), b(0) = 5
+; Formula: a(n) = (-n+A000040(n+2)+n+3)/2-5
 
-mov $1,1
-add $0,3
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mul $1,2
-mov $0,$1
-add $0,15
-div $0,4
-sub $0,7
+add $0,1
+mov $1,$0
+add $0,1
+sub $1,$0
+seq $0,40 ; The prime numbers.
+mov $2,$0
+sub $2,$1
+add $2,2
+mov $0,$2
+div $0,2
+sub $0,5

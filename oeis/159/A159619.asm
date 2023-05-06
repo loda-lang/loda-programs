@@ -4,7 +4,10 @@
 
 mov $1,$0
 add $1,2
-seq $1,285383 ; Limiting 0-word of the morphism 0 -> 11, 1 -> 01.
+lpb $1
+  dif $1,4
+lpe
+mod $1,2
 mul $0,2
 add $0,$1
 add $0,4

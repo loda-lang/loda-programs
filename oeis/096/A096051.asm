@@ -1,4 +1,4 @@
-; A096051: Decimal expansion of lim_{n->infty} B(2n,8)/(B(2n)*64^n) ( see comment for B(n,k) definition ).
+; A096051: Decimal expansion of lim_{n->oo} B(2n,8)/(B(2n)*64^n) (see comment for B(n,k) definition).
 ; Submitted by Jon Maiga
 ; 1,0,4,1,8,4,1,8,8,8,4,0,1,9,2,1,7,8,2,2,2,8,4,5,0,8,0,5,4,1,3,5,9,2,9,9,4,3,8,7,8,8,0,5,8,0,3,3,0,2,1,7,9,9,4,7,7,3,0,9,4,3,0,4,4,2,9,2,3,3,3,9,4,3,9,5,5,6,3,7,8,2,9,3,9,2,5,8,0,3,3,2,6,2,3,1,1,3,1,6
 

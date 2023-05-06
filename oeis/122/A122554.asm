@@ -6,7 +6,16 @@ mov $1,$0
 mul $1,2
 trn $0,1
 mov $2,$0
-seq $0,288219 ; a(n) = a(n-1) + a(n-2) for n >= 3, where a(0) = 2, a(1) = 4, a(2) = 7.
-sub $0,1
+mov $3,2
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $5,$4
+  mov $4,$3
+  add $3,$5
+lpe
+add $5,$3
+mov $0,$5
 sub $0,$2
 add $0,$1
+sub $0,1

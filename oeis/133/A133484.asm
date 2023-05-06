@@ -2,14 +2,19 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,5,8,9,12,14,15
 
+add $0,4
+add $0,4
+mov $1,$0
+div $1,2
+mod $1,4
+mul $0,6
+add $0,$1
+add $0,1
+div $0,4
+mul $0,5
+add $0,4
+div $0,4
 mul $0,2
-mov $1,1
-mov $2,$0
-lpb $0
-  div $0,2
-  add $1,$0
-lpe
-mod $1,2
-add $1,1
-add $1,$2
-mov $0,$1
+sub $0,15
+div $0,2
+sub $0,6

@@ -1,24 +1,26 @@
 ; A094524: Primes of form 3*prime(m) + 2.
-; Submitted by Jason Jung
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 11,17,23,41,53,59,71,89,113,131,179,239,251,269,293,311,383,419,449,491,503,521,593,599,683,701,719,773,809,881,941,953,1013,1049,1061,1103,1151,1193,1229,1259,1301,1319,1373,1439,1499,1511,1571,1709,1733,1823,1931,1979,2129,2273,2309,2393,2579,2591,2633,2663,2789,2843,2861,2903,3041,3119,3191,3209,3329,3371,3389,3461,3491,3581,3671,3779,3833,3851,3911,3923,4229,4271,4283,4289,4451,4463,4481,4649,4679,4703,4751,4793,4973,5003,5009,5081,5099,5171,5261,5279
 
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  max $3,$5
-  mul $3,2
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$3
-  add $1,2
+  add $3,1
+  mov $1,$6
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$3
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,2
+  sub $0,$1
+  mov $1,$5
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,$1
-  add $1,10
+  mov $5,1
+  add $6,$1
   mul $2,$4
-  sub $2,1
+  sub $2,16
 lpe
-mov $0,$1
-div $0,2
-sub $0,1
+mov $0,$3
+add $0,2

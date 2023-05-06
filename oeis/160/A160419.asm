@@ -1,14 +1,11 @@
 ; A160419: a(n) = A160409(n+2)/2.
-; Submitted by Cruncher Pete
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,2,2,2,2,4,8
+; Formula: a(n) = (2^n-17)/16+2
 
-mov $2,$0
-mul $2,3
-lpb $2
-  div $2,2
-  dif $0,2
-  div $1,2
-  gcd $1,$0
-lpe
+mov $1,2
+pow $1,$0
 mov $0,$1
-add $0,1
+sub $0,17
+div $0,16
+add $0,2

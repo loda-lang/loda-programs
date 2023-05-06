@@ -1,4 +1,4 @@
-; A043405: Numbers having one 3 in base 7.
+; A043405: Numbers whose base-7 representation contains exactly one 3.
 ; Submitted by ChelseaOilman
 ; 3,10,17,21,22,23,25,26,27,31,38,45,52,59,66,70,71,72,74,75,76,80,87,94,101,108,115,119,120,121,123,124,125,129,136,143,147,148,149,151,152,153,154,155,156,158,159,160,161,162,163,165
 

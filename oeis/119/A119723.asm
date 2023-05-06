@@ -5,7 +5,14 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,39915 ; Smallest k such that k(p-1)-1 is positive and divisible by p where p = n-th prime.
+  seq $2,40 ; The prime numbers.
+  mov $4,1
+  seq $4,54272 ; Number of primes in the interval [prime(n), prime(n)^2].
+  sub $4,$2
+  mov $5,0
+  gcd $5,$4
+  mov $2,$5
+  add $2,2
   pow $2,2
   mul $3,$2
   mul $3,-1

@@ -4,5 +4,15 @@
 
 add $0,1
 mul $0,10000
-seq $0,255270 ; Integer part of fourth root of n.
+mov $2,$0
+lpb $0
+  add $1,1
+  add $3,$1
+  mov $0,$2
+  div $0,$3
+  sub $0,$3
+  add $1,1
+lpe
+div $1,2
+mov $0,$1
 mod $0,10

@@ -1,15 +1,14 @@
 ; A111731: Minimal size of a complete cap in (Z/nZ)^2.
-; Submitted by arkiss
+; Submitted by Science United
 ; 4,4,4,5,4,6,4,4,4
 
-mov $1,$0
-mul $1,2
-lpb $1
-  div $1,2
-  dif $1,-2
-  add $2,3
+sub $0,2
+mov $1,1
+cmp $1,$0
+add $0,1
+lpb $0
+  dif $0,4
+  add $1,2
 lpe
-mod $2,2
-mul $0,$2
-div $0,2
+mov $0,$1
 add $0,4

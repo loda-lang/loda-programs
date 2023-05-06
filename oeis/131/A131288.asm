@@ -12,7 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,318130 ; Number of sets of subsets of {1,...,n} with intersection {}.
+  mov $5,$0
+  seq $0,3465 ; Number of ways to cover an n-set.
+  min $5,1
+  mul $5,$0
+  add $0,$5
+  add $0,1
   mul $1,$0
   mul $3,-1
   add $3,$1

@@ -1,19 +1,16 @@
 ; A162994: The third left hand column of triangle A162990
-; Submitted by Science United
+; Submitted by Josemi
 ; 64,1600,57600,2822400,180633600,14631321600,1463132160000,177038991360000,25493614755840000,4308420893736960000,844450495172444160000,190001361413799936000000
-; Formula: a(n) = 64*((b(n)-144)/144)+64, b(n) = b(n-1)*(n+4)^2, b(1) = 3600, b(0) = 144
+; Formula: a(n) = (b(n)-575)/9+64, b(n) = b(n-1)*(n+4)^2, b(0) = 576
 
 mov $1,1
-mov $2,2
-add $0,2
+add $0,4
 lpb $0
+  mul $1,$0
+  mul $1,$0
   sub $0,1
-  add $2,1
-  mul $1,$2
-  mul $1,$2
 lpe
 mov $0,$1
-sub $0,144
-div $0,144
-mul $0,64
+sub $0,575
+div $0,9
 add $0,64
