@@ -1,17 +1,13 @@
 ; A230847: a(n) = 1 + A054541(n).
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,2,3,3,5,3,5,3,5,7,3,7,5,3,5,7,7,3,7,5,3,7,5,7,9,5,3,5,3,5,15,5,7,3,11,3,7,7,5,7,7,3,11,3,5,3,13,13,5,3,5,7,3,11,7,7,7,3,7,5,3,11,15,5,3,5,15,7,11,3,5,7,9,7,7,5,7,9,5,9,11,3,11,3,7,5,7,9,5,3,5,13,9,5,9,5,7
+; Formula: a(n) = max(-n+1,0)+A013632(A000040(max(n-1,0)))+1
 
+sub $0,1
+trn $1,$0
+max $0,0
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.
+add $1,$0
+mov $0,$1
 add $0,1
-lpb $0
-  sub $0,1
-  cmp $3,0
-  add $3,$1
-  add $1,1
-  mov $2,$3
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  sub $2,$1
-  add $1,$2
-lpe
-mov $0,$2
-add $0,2

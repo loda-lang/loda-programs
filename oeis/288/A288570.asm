@@ -1,12 +1,13 @@
 ; A288570: Partial sums of A019565.
 ; Submitted by ChelseaOilman
 ; 1,3,6,12,17,27,42,72,79,93,114,156,191,261,366,576,587,609,642,708,763,873,1038,1368,1445,1599,1830,2292,2677,3447,4602,6912,6925,6951,6990,7068,7133,7263,7458,7848,7939,8121,8394,8940,9395,10305,11670,14400,14543,14829,15258,16116,16831,18261,20406,24696,25697,27699,30702,36708,41713,51723,66738,96768,96785,96819,96870,96972,97057,97227,97482,97992,98111,98349,98706,99420,100015,101205,102990,106560,106747,107121,107682,108804,109739,111609,114414,120024,121333,123951,127878,135732,142277
-; Formula: a(n) = a(n-1)+A019565(n), a(0) = 1
+; Formula: a(n) = a(n-1)+A005940(A048678(n)), a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,19565 ; The squarefree numbers ordered lexicographically by their prime factorization (with factors written in decreasing order). a(n) = Product_{k in I} prime(k+1), where I is the set of indices of nonzero binary digits in n = Sum_{k in I} 2^k.
+  seq $2,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
+  seq $2,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
   sub $0,1
   add $1,$2
 lpe

@@ -1,12 +1,9 @@
 ; A359351: a(n) = A001952(A003151(n)).
-; Submitted by Science United
+; Submitted by Conan
 ; 6,13,23,30,40,47,54,64,71,81,88,95,105,112,122,129,139,146,153,163,170,180,187,194,204,211,221,228,238,245,252,262,269,279,286,293,303,310,320,327,334,344,351,361,368,378,385,392,402,409,419,426,433,443
+; Formula: a(n) = A188383(n)-1
 
-mov $1,2
-lpb $1
-  sub $1,1
-  seq $0,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
-  add $2,$0
-lpe
-mov $0,$2
-sub $0,3
+mov $1,$0
+seq $1,188383 ; Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
+mov $0,$1
+sub $0,1

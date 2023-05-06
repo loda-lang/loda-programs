@@ -1,10 +1,9 @@
 ; A307799: a(0) = 0, a(1) = 3; a(n) = rev(a(n-1))*a(n-1) + a(n-2), where rev = digit reversal (A004086).
-; Submitted by Thibault Gauthier, Josef Urban (NMT)
+; Submitted by kpmonaghan
 ; 0,3,9,84,4041,5673648,48020423368761,806086788756824484462571572,221815145293562950532110825781341443907408910699844537
-; Formula: a(n) = b(n-1), a(1) = 3, a(0) = 0, b(n) = A004086(b(n-1))*b(n-1)+b(n-2), b(1) = 9, b(0) = 3
+; Formula: a(n) = A004086(a(n-1))*a(n-1)+a(n-2), a(1) = 3, a(0) = 0
 
 mov $2,3
-add $0,1
 lpb $0
   sub $0,1
   mov $3,$2
@@ -13,4 +12,4 @@ lpb $0
   mul $1,$2
   add $1,$3
 lpe
-mov $0,$2
+mov $0,$1

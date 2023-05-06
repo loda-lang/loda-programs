@@ -1,30 +1,13 @@
 ; A340509: a(n) = 3*A005382(n)-1.
-; Submitted by Stony666
+; Submitted by USTL-FIL (Lille Fr)
 ; 5,8,20,56,92,110,236,290,416,470,596,632,686,812,920,992,1010,1100,1136,1316,1496,1640,1730,1802,1820,1856,1982,2072,2180,2432,2486,2630,2810,2900,2990,3026,3206,3512,3710,3836,3890,4196,4286,4376,4592,4826,4880,4970,5276,5600
+; Formula: a(n) = 3*((A005383(n)-3)/2)+5
 
-cmp $1,$0
-trn $0,1
-mov $3,$0
-add $3,2
-pow $3,2
-lpb $3
-  max $4,$6
-  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$4
-  add $2,6
-  mov $5,$0
-  max $5,0
-  cmp $5,$0
-  mul $3,$5
-  sub $3,1
-  add $6,$2
-  add $2,2
-  add $6,$2
-lpe
-mov $0,$2
-sub $0,8
-div $0,8
-sub $1,$0
-sub $0,$1
+seq $0,5383 ; Primes p such that (p+1)/2 is prime.
+mov $1,24
+add $1,$0
+mov $0,$1
+sub $0,27
+div $0,2
 mul $0,3
-add $0,8
+add $0,5

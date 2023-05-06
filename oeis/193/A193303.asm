@@ -8,7 +8,9 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,333842 ; G.f.: Sum_{k>=1} k * x^(prime(k)^2) / (1 - x^(prime(k)^2)).
+  seq $3,8833 ; Largest square dividing n.
+  sub $3,1
+  seq $3,66328 ; a(n) = sum of indices of distinct prime factors of n; here, index(i-th prime) = i.
   cmp $3,2
   sub $0,$3
   add $1,1

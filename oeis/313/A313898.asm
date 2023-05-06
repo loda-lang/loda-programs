@@ -18,8 +18,7 @@ trn $1,1
 add $1,$4
 mul $1,2
 add $1,3
-mul $1,2
-div $1,6
+div $1,3
 add $1,$3
 mov $2,$0
 mul $2,4

@@ -5,8 +5,13 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $4,1
   mov $3,$1
-  seq $3,62316 ; Neither the sum or difference of 2 squares.
+  seq $3,124981 ; Odd numbers that are not the sum of 2 squares.
+  mul $3,2
+  sub $3,1
+  sub $3,$1
+  add $3,$4
   add $0,1
   add $1,1
   add $2,$3

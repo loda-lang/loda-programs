@@ -7,9 +7,14 @@ mul $2,2
 pow $2,5
 lpb $2
   add $1,4
+  mov $4,$1
+  add $4,$1
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $3,$1
-  seq $3,156660 ; Characteristic function of Sophie Germain primes.
-  sub $0,$3
+  sub $3,$4
+  mul $4,$3
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
   add $1,1
   sub $2,$0
 lpe

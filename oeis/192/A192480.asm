@@ -3,9 +3,14 @@
 
 mov $2,$0
 lpb $0
+  mov $3,$0
+  sub $3,1
   mov $1,$0
-  seq $1,120588 ; G.f. is 1 + x*c(x), where c(x) is the g.f. of the Catalan numbers (A000108).
+  add $1,$3
+  gcd $4,$1
   mov $0,1
+  bin $1,$3
+  div $1,$4
 lpe
 add $1,$2
 mov $0,$1

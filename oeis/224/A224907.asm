@@ -7,11 +7,16 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,53815 ; Floor(n / (sum of proper divisors of n)).
+  add $3,2
+  mov $5,$3
+  add $3,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $5,$3
+  div $3,$5
   cmp $3,0
   sub $0,$3
+  add $1,1
   add $1,$3
   mov $4,$0
   max $4,0

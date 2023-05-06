@@ -31,8 +31,7 @@ lpb $3
 lpe
 sub $4,$0
 mov $0,$2
-mul $0,2
-div $0,4
+div $0,2
 sub $0,2
 sub $0,$4
 mul $0,3

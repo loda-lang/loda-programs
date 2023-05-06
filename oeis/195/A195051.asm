@@ -1,9 +1,11 @@
 ; A195051: Number of divisors of 24*n - 1.
 ; Submitted by pututu
 ; 2,2,2,4,4,4,2,2,4,2,2,4,2,4,2,2,4,2,8,2,2,4,4,6,2,4,2,4,4,2,2,4,4,4,2,2,2,2,8,4,2,4,2,4,4,2,6,2,6,4,2,4,4,8,2,4,2,4,4,2,8,2,2,4,2,2,2,4,4,4,4,4,4,6,4,2,2,2,4,4,4,4,4,8,2,2,2,2,8,4,4,2,4,8,4,6,4,2,8,2
-; Formula: a(n) = 2*A193773(12*n+11)
+; Formula: a(n) = 2*(A000005(24*n+22)/2)
 
 mul $0,12
 add $0,11
-seq $0,193773 ; Number of ways to write n as 2*x*y - x - y with 1 <= x <= y.
+mul $0,2
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+div $0,2
 mul $0,2

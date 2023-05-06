@@ -9,8 +9,23 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  sub $0,2
+  mov $4,$0
+  div $4,2
+  add $4,2
+  pow $4,2
+  add $4,2
+  add $4,$0
   sub $0,1
-  seq $0,5044 ; Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
+  mov $5,0
+  sub $5,$0
+  gcd $0,2
+  pow $0,3
+  add $0,6
+  div $0,6
+  mul $0,$5
+  add $0,$4
+  div $0,12
   add $1,$0
 lpe
 mov $0,$1

@@ -8,7 +8,8 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,55778 ; Number of 1's in the base-phi representation of n.
+  seq $3,23607 ; a(n) = n * Fibonacci(n+1).
+  seq $3,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
   mov $4,$3
   add $5,1
   gcd $3,$5

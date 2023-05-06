@@ -1,9 +1,9 @@
 ; A297662: Number of chordless cycles in the complete tripartite graph K_n,n,n.
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,3,27,108,300,675,1323,2352,3888,6075,9075,13068,18252,24843,33075,43200,55488,70227,87723,108300,132300,160083,192027,228528,270000,316875,369603,428652,494508,567675,648675,738048,836352,944163,1062075,1190700
-; Formula: a(n) = 3*binomial(-n,2)^2
+; Formula: a(n) = 3*binomial(n+1,2)^2
 
-sub $1,$0
-bin $1,2
-pow $1,2
-mul $1,3
-mov $0,$1
+add $0,1
+bin $0,2
+pow $0,2
+mul $0,3

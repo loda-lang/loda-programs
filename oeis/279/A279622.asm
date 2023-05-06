@@ -8,8 +8,12 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
   mov $3,$1
-  seq $3,332881 ; If n = Product (p_j^k_j) then a(n) = denominator of Product (1 + 1/p_j).
+  add $3,1
+  gcd $5,$3
+  div $3,$5
   seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
   sub $3,1
   trn $3,1

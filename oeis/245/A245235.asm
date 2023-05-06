@@ -1,13 +1,11 @@
 ; A245235: Repeat 2^(n*(n+1)/2) n+1 times.
-; Submitted by Jamie Morken(l1)
+; Submitted by Stony666
 ; 1,2,2,8,8,8,64,64,64,64,1024,1024,1024,1024,1024,32768,32768,32768,32768,32768,32768,2097152,2097152,2097152,2097152,2097152,2097152,2097152,268435456,268435456,268435456,268435456,268435456,268435456,268435456,268435456
+; Formula: a(n) = 2^(-A002262(n)+n)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-  mov $2,$1
-lpe
-add $2,1
-bin $2,2
-mov $0,2
-pow $0,$2
+mov $1,$0
+seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+sub $1,$0
+mov $2,2
+pow $2,$1
+mov $0,$2

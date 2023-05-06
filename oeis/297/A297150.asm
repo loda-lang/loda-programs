@@ -1,25 +1,16 @@
 ; A297150: Let b(k) denote A292081(k); the sequence lists numbers b(2n) where for all m > n, b(2m) > b(2n).
-; Submitted by Cruncher Pete
+; Submitted by Science United
 ; 35,65,95,115,155,185,215,235,265,305,335,365,395,415,445,485,515,545,565,635,655,695,755,785,815,835,865,905,965,995,1055,1115,1145,1165,1205,1255,1285,1315,1355,1385,1415,1465,1535,1565,1585,1655,1685,1745,1765,1795,1835,1865,1895,1915,1945,1985,2005,2045,2105,2165,2195,2215,2245,2285,2315,2335,2395,2435,2455,2495,2515,2545,2615,2705,2735,2785,2815,2855,2885,2935,2965,3005,3035,3065,3095,3155,3215,3235,3265,3305,3365,3385,3415,3455,3505,3545,3595,3635,3665,3695
 
-mov $2,$0
-add $2,10
-pow $2,2
-lpb $2
-  seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
-  add $1,$3
-  add $1,2
-  add $3,2
-  mul $3,2
-  min $3,7
-  mod $3,2
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,2
-  mov $3,$1
+add $0,1
+lpb $0
+  mov $1,$0
+  trn $1,1
+  seq $1,136799 ; Last term in a sequence of at least 3 consecutive composite integers.
+  seq $1,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  sub $1,2
+  mov $0,0
 lpe
-mov $0,$3
+mov $0,$1
+add $0,2
 mul $0,5

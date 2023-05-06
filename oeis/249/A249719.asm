@@ -9,7 +9,13 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,86359 ; Fixed point if [decimal-digit-sum]-function at initial-value=A000984(n)=C[2n,n] is iterated.
+  add $3,1
+  mov $4,$3
+  mul $3,2
+  bin $3,$4
+  sub $3,1
+  mod $3,9
+  add $3,1
   cmp $3,9
   sub $0,$3
   add $1,1

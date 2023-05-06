@@ -1,4 +1,4 @@
-; A359514: allocated for Ilya Gutkovskiy
+; A359514: Number of compositions (ordered partitions) of n into at most 2 positive Fibonacci numbers (with a single type of 1).
 ; Submitted by owensse
 ; 1,1,2,3,3,3,3,2,3,2,3,2,0,3,2,2,3,0,2,0,0,3,2,2,2,0,3,0,0,2,0,0,0,0,3,2,2,2,0,2,0,0,3,0,0,0,0,2,0,0,0,0,0,0,0,3,2,2,2,0,2,0,0,2,0,0,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,3,2,2,2,0,2,0,0,2,0,0
 

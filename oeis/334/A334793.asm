@@ -14,7 +14,13 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,324528 ; a(n) = lcm(tau(n), pod(n)) where tau(k) = the number of divisors of k (A000005) and pod(n) = the product of divisors of k (A007955).
+  mov $5,$0
+  seq $5,7955 ; Product of divisors of n.
+  mov $6,$5
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $5,$0
+  div $6,$5
+  mul $0,$6
   mul $1,$0
   add $3,$1
 lpe

@@ -1,4 +1,4 @@
-; A359400: Sum of positions of zeros in the reversed (little-endian) binary expansion of n, where positions in a sequence are read starting with 1 from the left.
+; A359400: Sum of positions of zeros in the reversed binary expansion of n, where positions in a sequence are read starting with 1 from the left.
 ; Submitted by Science United
 ; 1,0,1,0,3,2,1,0,6,5,4,3,3,2,1,0,10,9,8,7,7,6,5,4,6,5,4,3,3,2,1,0,15,14,13,12,12,11,10,9,11,10,9,8,8,7,6,5,10,9,8,7,7,6,5,4,6,5,4,3,3,2,1,0,21,20,19,18,18,17,16,15,17,16,15,14,14,13
 

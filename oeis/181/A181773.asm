@@ -1,10 +1,9 @@
 ; A181773: Molecular topological indices of the cocktail party graphs.
+; Submitted by gemini8
 ; 0,48,240,672,1440,2640,4368,6720,9792,13680,18480,24288,31200,39312,48720,59520,71808,85680,101232,118560,137760,158928,182160,207552,235200,265200,297648,332640,370272,410640
-; Formula: a(n) = 48*((-binomial(-2*n,3))/4)
+; Formula: a(n) = 48*(binomial(-2*n,3)/(-4))
 
 mul $0,-2
 bin $0,3
-sub $1,$0
-div $1,4
-mul $1,48
-mov $0,$1
+div $0,-4
+mul $0,48

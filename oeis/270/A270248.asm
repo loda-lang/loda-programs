@@ -1,15 +1,7 @@
 ; A270248: Even Löschian numbers.
-; Submitted by Steve Dodd
+; Submitted by Science United
 ; 0,4,12,16,28,36,48,52,64,76,84,100,108,112,124,144,148,156,172,192,196,208,228,244,252,256,268,292,300,304,316,324,336,364,372,388,400,412,432,436,444,448,468,484,496,508,516,532,556,576,588,592,604,624,628,652,676,684,688,700,724,732,756,768,772,784,796,804,832,844,868,876,892,900,912,916,948,964,972,976,988,1008,1024,1036,1072,1084,1092,1108,1116,1132,1156,1164,1168,1200,1204,1216,1228,1236,1252,1264
-; Formula: a(n) = 4*b(n), b(n) = A003136(n), b(1) = 1, b(0) = 0
+; Formula: a(n) = 4*A003136(n)
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $1,$3
-  seq $1,3136 ; Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
-  mov $2,$1
-  add $3,1
-lpe
-mov $0,$2
+seq $0,3136 ; Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
 mul $0,4

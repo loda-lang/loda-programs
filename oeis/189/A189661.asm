@@ -1,19 +1,14 @@
 ; A189661: Fixed point of the morphism 0->010, 1->10 starting with 0.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by TrikkStar
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0
-; Formula: a(n) = (b(n)%2+2)%2, b(n) = (-c(n-1)+b(n-1))/2, b(2) = -2, b(1) = -1, b(0) = 0, c(n) = 2*gcd((-c(n-1)+b(n-1))/2+d(n-1),2)*c(n-1), c(2) = 16, c(1) = 4, c(0) = 2, d(n) = 2*gcd((-c(n-1)+b(n-1))/2+d(n-1),2), d(2) = 4, d(1) = 2, d(0) = 0
+; Formula: a(n) = A288707(2*n), a(1) = 1, a(0) = 0
 
-mov $2,2
+add $0,1
 lpb $0
   sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  gcd $3,2
-  mul $3,2
-  mul $2,$3
+  mov $1,$3
+  seq $1,288707 ; 0-limiting word of the mapping 00->1000, 10->00, starting with 00.
+  mov $2,$1
+  add $3,2
 lpe
-mov $0,$1
-mod $0,2
-add $0,2
-mod $0,2
+mov $0,$2

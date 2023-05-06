@@ -7,8 +7,8 @@ add $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,5
-  seq $3,341062 ; Sequence whose partial sums give A000005.
+  add $3,4
+  seq $3,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
   add $1,4
   mov $5,$1
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,181923 ; Nonprimes (A018252) mod 2.
+  seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  mod $3,2
   cmp $3,0
   sub $0,$3
   mov $4,$0

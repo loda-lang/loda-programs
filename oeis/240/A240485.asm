@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,226158 ; a(n) = zeta(1-n)*2*n*(2^n-1) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
+  seq $0,226158 ; a(n) = 2*n*(2^n - 1)*zeta(1-n) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
   div $2,2
   sub $2,1
   mul $2,$0

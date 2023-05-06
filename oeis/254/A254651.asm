@@ -1,16 +1,19 @@
 ; A254651: Characteristic function of A254614, numbers that are either odd or evil (or both).
-; Submitted by shiva
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1
 
-mov $1,$0
-add $1,1
-dif $1,-2
-max $1,0
-mov $2,$1
-lpb $1
-  div $2,2
-  sub $1,$2
+add $0,1
+mov $2,$0
+mov $4,1
+lpb $0
+  div $0,2
+  gcd $3,$2
+  mul $3,$4
+  mov $5,$1
+  add $1,$3
+  mul $4,2
+  add $4,$0
 lpe
-mod $1,2
+mov $0,$5
+add $0,1
 mod $0,2
-add $0,$1

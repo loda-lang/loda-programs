@@ -1,21 +1,9 @@
 ; A248558: Squares of the digits of the decimal expansion of e.
+; Submitted by USTL-FIL (Lille Fr)
 ; 4,49,1,64,4,64,1,64,4,64,16,25,81,0,16,25,4,9,25,9,36,0,4,64,49,16,49,1,9,25,4,36,36,4,16,81,49,49,25,49,4,16,49,0,81,9,36,81,81,81,25,81,25,49,16,81,36,36,81,36,49,36,4,49,49,4,16,0,49,36
+; Formula: a(n) = A001113(n)^2
 
-add $0,1
-mov $3,$0
-mul $3,5
-lpb $3
-  add $2,56
-  mul $2,$3
-  add $1,$2
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-mul $2,5
-div $2,$4
-div $1,2
-div $1,$2
+seq $0,1113 ; Decimal expansion of e.
+add $1,$0
+pow $1,2
 mov $0,$1
-mod $0,10
-pow $0,2

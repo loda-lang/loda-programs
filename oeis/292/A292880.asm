@@ -4,8 +4,15 @@
 
 add $0,1
 lpb $0
+  mov $5,0
+  sub $5,$0
+  bin $5,2
   mov $2,$0
-  seq $2,1297 ; Stirling numbers of the second kind S(n+3, n).
+  add $2,2
+  bin $2,2
+  bin $2,2
+  mul $2,$5
+  div $2,3
   mov $3,$2
   min $3,1
   add $4,1

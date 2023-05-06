@@ -1,4 +1,4 @@
-; A358379: Height (or depth) of the n-th standard ordered rooted tree.
+; A358379: Edge-height (or depth) of the n-th standard ordered rooted tree.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,1,3,2,2,1,2,3,2,2,3,2,2,1,4,2,3,3,3,2,2,2,2,3,2,2,3,2,2,1,3,4,2,2,3,3,3,3,2,3,2,2,3,2,2,2,4,2,3,3,3,2,2,2,2,3,2,2,3,2,2,1,3,3,4,4,3,2,2,2,3,3,3,3,3,3,3,3,4,2,3,3,3,2,2
 

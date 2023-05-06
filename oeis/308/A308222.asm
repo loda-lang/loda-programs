@@ -8,8 +8,10 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,338117 ; Number of partitions of n into two parts (s,t) such that (t-s) | n, where s < t.
+  add $3,1
+  dif $3,2
   sub $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $3,$4
   gcd $3,2
   sub $0,$3

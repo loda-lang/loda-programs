@@ -1,18 +1,34 @@
 ; A186300: (A007521(n)+1)/2.
-; Submitted by johngo54
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,7,15,19,27,31,51,55,75,79,87,91,99,115,135,139,147,159,175,187,195,199,211,231,255,271,279,307,327,331,339,351,355,367,379,387,399,411,415,427,439,471,499,507,511,531,535,547,555,559,591,607
 
 add $0,1
-mov $2,4
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,8
-  sub $3,$0
+mov $1,4
+mov $2,$0
+pow $2,4
+lpb $2
+  mov $5,0
+  max $3,$1
+  add $3,1
+  lpb $3
+    gcd $5,3
+    mov $6,$3
+    div $6,5
+    lpb $6
+      mov $4,$3
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $3,$5
+    pow $3,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $1,8
+  sub $2,$0
 lpe
-div $2,2
-mov $0,$2
-add $0,1
+mov $0,$1
+sub $0,4
+div $0,2
+add $0,3

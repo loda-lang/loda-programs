@@ -1,15 +1,11 @@
 ; A298039: Partial sums of A298038.
-; Submitted by Cruncher Pete
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,7,31,49,97,127,199,241
-; Formula: a(n) = 6*b(n)+1, b(n) = n*gcd(n,2)+b(n-1), b(0) = 0
+; Formula: a(n) = 2*((6*n+5)/4)^2-1
 
-lpb $0
-  mov $1,$0
-  gcd $1,2
-  mul $1,$0
-  add $2,$1
-  sub $0,1
-lpe
-mov $0,$2
 mul $0,6
-add $0,1
+add $0,5
+div $0,4
+pow $0,2
+mul $0,2
+sub $0,1

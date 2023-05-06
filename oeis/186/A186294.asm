@@ -1,18 +1,8 @@
 ; A186294: (A007519(n)+1)/2.
-; Submitted by Jamie Morken(l1)
+; Submitted by USTL-FIL (Lille Fr)
 ; 9,21,37,45,49,57,69,97,117,121,129,141,157,169,177,201,205,217,225,229,261,285,289,297,301,309,321,337,381,385,405,429,441,465,469,477,489,505,517,525,549,565,577,597,601,609,625,645,649,661,681
+; Formula: a(n) = 4*A153762(n)+5
 
-add $0,1
-mov $2,16
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,8
-  sub $3,$0
-lpe
-mov $0,$2
-div $0,2
-add $0,1
+seq $0,153762 ; Numbers n such that 8n + 9 is prime.
+mul $0,4
+add $0,5

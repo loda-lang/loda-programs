@@ -4,7 +4,19 @@
 
 mov $1,3
 pow $1,$0
-seq $0,70198 ; Smallest nonnegative number m such that m == i (mod i+1) for all 1 <= i <= n.
+mov $3,1
+add $0,1
+lpb $0
+  mov $4,$3
+  gcd $4,$0
+  mul $3,$0
+  div $3,$4
+  sub $0,1
+lpe
+mov $0,$3
+mul $0,2
+sub $0,2
+div $0,2
 mov $2,$1
 sub $2,$0
 mov $0,$2

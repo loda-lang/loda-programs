@@ -10,7 +10,9 @@ lpb $2
   sub $0,$2
   mul $0,2
   div $0,5
-  seq $0,256257 ; 6 times numbers of Gould's sequence A001316.
+  dif $0,2
+  seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+  mul $0,6
   mov $3,$0
   sub $3,6
   div $3,6

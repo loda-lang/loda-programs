@@ -1,16 +1,14 @@
 ; A211664: Number of iterations (...f_4(f_3(f_2(n))))...) such that the result is < 1, where f_j(x):=log_j(x).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Christian Krause
 ; 1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
-mov $2,-1
-mov $1,$0
-lpb $1
-  div $1,7
-  mov $3,$0
-  mul $3,-1
-  mul $0,0
-  mul $2,$3
-  bin $2,$3
+lpb $0
+  div $0,7
+  add $2,1
+  mov $3,$2
+  dif $2,2
 lpe
-mov $0,$2
-add $0,2
+mov $1,13
+add $1,$3
+mov $0,$1
+sub $0,12

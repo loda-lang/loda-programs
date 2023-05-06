@@ -1,13 +1,10 @@
 ; A173072: n-th prime minus n-th even number.
-; Submitted by Jamie Morken(l1)
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,1,1,1,3,3,5,5,7,11,11,15,17,17,19,23,27,27,31,33,33,37,39,43,49,51,51,53,53,55,67,69,73,73,81,81,85,89,91,95,99,99,107,107,109,109,119,129,131,131,133,137,137,145,149,153,157,157,161,163,163,171,183,185
+; Formula: a(n) = -2*n+A000040(n)
 
 mov $1,$0
-mul $1,2
-mov $2,2
-lpb $0
-  sub $0,1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$2
-sub $0,$1
+seq $1,40 ; The prime numbers.
+sub $1,$0
+sub $1,$0
+mov $0,$1

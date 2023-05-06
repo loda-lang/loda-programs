@@ -1,13 +1,12 @@
 ; A174686: Number of equivalence classes of 3 X 3 matrices filled with n colors so that no two rotations are identical.
+; Submitted by Odd-Rod
 ; 120,4860,65280,487500,2517480,10084200,33546240,96840360,249975000,589446660,1289882880,2651032020,5165127240,9610650000,17179607040,29646614160,49589350200,80671305420,127999200000,198568990620,301816016040,450286556280,660449894400
-; Formula: a(n) = 60*((2*binomial((n+2)^4,2)*(n+2))/240)
+; Formula: a(n) = 6*((binomial((n+2)^4,2)*(n+2))/12)
 
 add $0,2
 mov $1,$0
-mul $0,2
-pow $1,4
-bin $1,2
-mul $1,$0
-mov $0,$1
-div $0,240
-mul $0,60
+pow $0,4
+bin $0,2
+mul $0,$1
+div $0,12
+mul $0,6

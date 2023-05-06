@@ -4,5 +4,20 @@
 
 mul $0,3
 dif $0,2
-seq $0,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+mov $3,1
+mov $1,$0
+mul $1,4
+lpb $1
+  div $1,2
+  mov $4,1
+  add $4,$1
+  div $4,2
+  mod $4,2
+  mov $5,$3
+  sub $5,$2
+  add $3,$2
+  mul $4,$5
+  add $2,$4
+lpe
+mov $0,$2
 div $0,2

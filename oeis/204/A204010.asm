@@ -8,6 +8,23 @@ mod $1,3
 dif $1,2
 mul $1,6
 sub $1,4
-seq $0,226350 ; Expansion of psi(x) * psi(-x^3) in powers of x where psi() is a Ramanujan theta function.
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  mul $3,3
+  mov $6,-1
+  pow $6,$3
+  seq $3,97806 ; Riordan array (1+x, 1) read by rows.
+  mul $3,$6
+  sub $5,1
+  add $2,$3
+  mov $4,2
+  add $4,$5
+  add $5,2
+lpe
+mov $0,$2
 mul $0,$1
 div $0,2

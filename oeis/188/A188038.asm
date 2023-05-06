@@ -1,18 +1,22 @@
 ; A188038: a(n) = [nr]-[kr]-[nr-kr], where r=sqrt(2), k=2, [ ]=floor.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Joe
 ; 1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1
+; Formula: a(n) = ((b(n)+1)%2+2)%2, b(n) = (-c(n-1)+b(n-1)+1)/2, b(2) = -14, b(1) = -5, b(0) = 0, c(n) = 2*gcd((-c(n-1)+b(n-1)+1)/2+d(n-1),4)*c(n-1), c(2) = 96, c(1) = 24, c(0) = 12, d(n) = gcd((-c(n-1)+b(n-1)+1)/2+d(n-1),4)/2, d(2) = 1, d(1) = 0, d(0) = 0
 
-mov $1,1
+mov $2,12
 lpb $0
   sub $0,1
-  mov $1,$0
-  max $1,0
-  mov $2,$1
-  add $2,2
-  seq $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  mov $0,0
-  seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  add $1,$2
+  sub $1,$2
+  add $1,1
+  div $1,2
+  add $3,$1
+  gcd $3,4
+  mul $2,2
+  mul $2,$3
+  div $3,2
 lpe
-mod $1,2
 mov $0,$1
+add $0,1
+mod $0,2
+add $0,2
+mod $0,2

@@ -1,17 +1,10 @@
 ; A212344: Sequence of coefficients of x^(n-3) in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
-; Submitted by Cruncher Pete
+; Submitted by Science United
 ; 5,5,10,25,70,210,660,2145,7150,24310,83980,293930,1040060,3714500,13372200,48474225,176788350,648223950,2388193500,8836315950,32820602100,122331335100,457412818200,1715298068250,6449520736620,24309732007260,91836765360760
-; Formula: a(n) = 5*b(n), b(n) = (2*n*b(n-1)*(2*n-1))/(2*n+c(n-1)), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 2*n+c(n-1), c(2) = 6, c(1) = 2, c(0) = 0
 
-mov $1,1
-lpb $0
-  sub $0,1
-  add $2,1
-  mul $1,$2
-  add $2,1
-  add $3,$2
-  mul $1,$2
-  div $1,$3
-lpe
-mov $0,$1
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+div $0,$1
 mul $0,5

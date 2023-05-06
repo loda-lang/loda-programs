@@ -5,8 +5,14 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mov $3,$1
-  seq $3,175087 ; Number of numbers whose product of perfect divisors is equal to n.
+  seq $3,99788 ; a(n) = Product_{i=1..2n} prime(i).
+  gcd $5,$3
+  mov $3,$5
+  sub $3,1
+  seq $3,5713 ; Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
   sub $0,$3
   add $1,1
   mov $4,$0

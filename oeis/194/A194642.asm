@@ -1,20 +1,14 @@
 ; A194642: Units' digits of the nonzero heptagonal numbers.
-; Submitted by Merlin2331
+; Submitted by Jerry Musser
 ; 1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1,2,8,9,5,6,2,3,9,0,6,7,3,4,0,1,7,8,4,5,1
+; Formula: a(n) = (((n+1)*(45*n+2))/2)%10
 
-mov $2,$0
-mul $2,4
-mov $3,$0
-mul $0,2
-lpb $0
-  dif $0,2
-  mov $4,$3
-lpe
-add $2,$4
-add $4,1
-mov $1,2
-add $1,$2
-mul $1,$4
-mov $0,$1
-div $0,2
+mov $2,45
+mul $2,$0
+add $2,2
+mov $1,$0
+add $1,1
+mul $2,$1
+div $2,2
+mov $0,$2
 mod $0,10

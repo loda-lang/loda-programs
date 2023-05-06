@@ -5,9 +5,18 @@
 add $0,1
 mov $1,-1
 pow $1,$0
-seq $0,54108 ; a(n) = (-1)^(n+1)*Sum_{k=0..n+1}(-1)^k*binomial(2*k,k).
+add $0,2
+lpb $0
+  sub $0,1
+  sub $5,1
+  mov $4,$5
+  bin $4,$2
+  add $2,1
+  add $6,$4
+lpe
+gcd $3,$6
 add $1,2
 pow $1,2
-add $1,$0
+add $1,$3
 mov $0,$1
 sub $0,5
