@@ -1,2 +1,2 @@
-mul $0,10 ; source=parameter 0
-div $0,8 ; source=parameter 1
+mul $0,5 ; source=parameter 0
+div $0,4 ; source=parameter 1
