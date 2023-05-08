@@ -1,25 +1,19 @@
 ; A089362: Numbers n such that n^2 - 5n + 5 is prime.
-; Submitted by pututu
+; Submitted by Kotenok2000
 ; 5,6,7,8,9,11,12,13,14,16,18,19,22,23,24,27,29,31,33,34,38,41,42,44,47,48,49,51,53,56,57,58,59,62,63,67,68,69,71,73,79,86,88,89,92,96,97,99,103,104,106,117,118,123,128,129,133,134,137,141,143,144,147,148,151,152,156,157,158,161,162,163,166,167,172
 
+add $0,1
+mov $1,2
+mov $3,11
 mov $2,$0
-add $2,2
-pow $2,2
+pow $2,4
 lpb $2
-  mov $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  max $3,$4
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $5,$1
-  add $5,$6
-  add $5,$1
-  max $6,4
   add $1,2
-  mul $2,$4
-  sub $2,1
-  add $5,$1
+  sub $2,$0
+  add $4,$1
 lpe
 mov $0,$1
 div $0,2

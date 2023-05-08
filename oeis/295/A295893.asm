@@ -1,5 +1,5 @@
 ; A295893: a(n) = 1 if in Doudna-tree (A005940) the contents of the node n and its left-hand child have binary weights with different parity, 0 otherwise.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Kotenok2000
 ; 0,1,0,1,1,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,0,1,1,1,0,1,0,1,1,1,1,0,1,1,0,1,1,0,1,0,1,0,0,0,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0
 
 mov $4,$0
@@ -13,6 +13,7 @@ lpb $3
   mov $2,$3
   mul $2,$0
   add $1,$2
+  mul $4,$3
   mov $5,$0
 lpe
 sub $1,$5

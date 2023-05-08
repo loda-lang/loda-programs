@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  seq $3,6995 ; Binary palindromes: numbers whose binary expansion is palindromic.
+  seq $3,164302 ; a(n) = 2* (the n-th positive (odd) integer that is a palindrome when written in base 2).
+  div $3,2
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

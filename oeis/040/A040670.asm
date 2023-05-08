@@ -1,19 +1,11 @@
 ; A040670: Continued fraction for sqrt(697).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 26,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2
+; Formula: a(n) = (4*A010225(2*n)-1)/2+1
 
 mul $0,2
-mov $2,-1
-pow $2,$0
-add $2,2
 seq $0,10225 ; Continued fraction for sqrt(183).
-mul $0,$2
-mul $0,2
+mul $0,4
 sub $0,1
-div $0,3
-mov $1,$0
-add $1,11
-dif $1,2
-mov $0,$1
-mul $0,2
-sub $0,10
+div $0,2
+add $0,1

@@ -1,11 +1,12 @@
 ; A007948: Largest cubefree number dividing n.
 ; Submitted by arkiss
 ; 1,2,3,4,5,6,7,4,9,10,11,12,13,14,15,4,17,18,19,20,21,22,23,12,25,26,9,28,29,30,31,4,33,34,35,36,37,38,39,20,41,42,43,44,45,46,47,12,49,50,51,52,53,18,55,28,57,58,59,60,61,62,63,4,65,66,67,68,69,70,71,36,73,74,75,76,77,78,79,20,9,82,83,84,85,86,87,44,89,90,91,92,93,94,95,12,97,98,99,100
-; Formula: a(n) = gcd(A078615(n),n+1)
+; Formula: a(n) = gcd(A053143(A075423(n)),n+1)
 
 mov $2,$0
 add $2,1
-seq $0,78615 ; a(n) = rad(n)^2, where rad is the squarefree kernel of n (A007947).
+seq $0,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+seq $0,53143 ; Smallest square divisible by n.
 mov $1,$0
 gcd $1,$2
 mov $0,$1

@@ -1,10 +1,10 @@
 ; A114054: Decimal expansion of 998998998998998998998998998/9.
+; Submitted by BlisteringSheep
 ; 1,1,0,9,9,9,8,8,8,7,7,7,6,6,6,5,5,5,4,4,4,3,3,3,2,2,2
-; Formula: a(n) = (((29*n-58)/3)%10+10)%10
+; Formula: a(n) = ((29*n-58)/3+20)%10
 
 sub $0,2
 mul $0,29
 div $0,3
-mod $0,10
-add $0,10
+add $0,20
 mod $0,10

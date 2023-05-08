@@ -1,5 +1,5 @@
 ; A076435: Number of strongly regular simple graphs on n nodes.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 1,2,2,4,3,6,2,6,5,8,2,10,3,6
 
 mov $2,$0
@@ -13,6 +13,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  mul $0,$1
   sub $0,$1
   sub $0,$1
   seq $0,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.

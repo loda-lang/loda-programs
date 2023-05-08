@@ -7,9 +7,11 @@ mul $2,2
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
   mov $3,$1
-  seq $3,135668 ; a(n) = ceiling(n + sqrt(n)).
-  sub $3,1
+  add $3,1
+  add $3,$5
   mul $3,$1
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

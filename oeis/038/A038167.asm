@@ -3,7 +3,9 @@
 
 lpb $0
   mov $2,$0
-  seq $2,226294 ; Period 2: repeat [6, 4].
+  gcd $2,2
+  mul $2,2
+  add $2,2
   mul $2,$0
   trn $0,5
   add $1,$2

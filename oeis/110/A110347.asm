@@ -4,7 +4,14 @@
 
 mov $1,$0
 add $0,1
-seq $0,47749 ; If n = 2*m then a(n) = binomial(3*m, m)/(2*m+1), if n=2*m+1 then a(n) = binomial(3*m+1, m+1)/(2*m+1).
+mov $2,$0
+div $2,2
+add $0,$2
+mul $2,2
+mov $3,$2
+add $3,1
+bin $0,$2
+div $0,$3
 add $1,2
 lpb $1
   mul $0,$1

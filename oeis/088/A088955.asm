@@ -1,16 +1,33 @@
 ; A088955: Primes of the form 60*n + 1.
-; Submitted by Jamie Morken(w2)
+; Submitted by Kotenok2000
 ; 61,181,241,421,541,601,661,1021,1201,1321,1381,1621,1741,1801,1861,2161,2221,2281,2341,2521,3001,3061,3121,3181,3301,3361,3541,4021,4201,4261,4441,4561,4621,4801,4861,5101,5281,5521,5581,5641,5701,5821,5881
 
 add $0,1
-mov $2,60
+mov $2,40
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $5,0
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,60
+  add $1,1
+  lpb $1
+    add $5,$2
+    gcd $5,3
+    mov $6,$1
+    div $6,5
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $2,20
   sub $3,$0
 lpe
-add $0,$2
+mov $0,$2
+add $0,1

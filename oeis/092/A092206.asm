@@ -13,7 +13,7 @@ lpb $2
     dif $3,3
   lpe
   sub $3,1
-  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
   mod $3,2
   cmp $3,0
   sub $0,$3

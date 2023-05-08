@@ -1,12 +1,10 @@
 ; A018299: Divisors of 136.
-; Submitted by Fardringle
+; Submitted by shiva
 ; 1,2,4,8,17,34,68,136
-; Formula: a(n) = 2^n+(2^n+8)/17
+; Formula: a(n) = (16*2^n)/15
 
-mov $2,2
-pow $2,$0
-mov $1,8
-add $1,$2
-div $1,17
-add $2,$1
-mov $0,$2
+mov $1,2
+pow $1,$0
+mul $1,16
+div $1,15
+mov $0,$1

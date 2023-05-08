@@ -1,5 +1,5 @@
 ; A039143: Numbers whose base-10 representation has the same number of 4's and 7's.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Kotenok2000
 ; 0,1,2,3,5,6,8,9,10,11,12,13,15,16,18,19,20,21,22,23,25,26,28,29,30,31,32,33,35,36,38,39,47,50,51,52,53,55,56,58,59,60,61,62,63,65,66,68,69,74,80,81,82,83,85,86,88,89,90,91,92,93,95,96,98,99,100,101,102
 
 mov $2,$0
@@ -10,10 +10,10 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    add $5,3
+    add $5,1
     mul $5,3
     mod $5,10
-    seq $5,16365 ; 253rd cyclotomic polynomial.
+    seq $5,131533 ; Period 6: repeat [0, 0, 0, 0, 1, -1].
     div $3,10
     add $4,$5
   lpe

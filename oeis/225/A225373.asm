@@ -1,16 +1,15 @@
 ; A225373: a(n) = 1 + Sum_{i=0..floor(n/2)} phi(n-2*i).
-; Submitted by fzs600
+; Submitted by Kotenok2000
 ; 1,2,2,4,4,8,6,14,10,20,14,30,18,42,24,50,32,66,38,84,46,96,56,118,64,138,76,156,88,184,96,214,112,234,128,258,140,294,158,318,174,358,186,400,206,424,228,470,244,512,264,544,288,596,306,636,330,672,358,730
-; Formula: a(n) = b(n)+1, b(n) = b(n-2)+A000010(n-1), b(2) = 1, b(1) = 1, b(0) = 0
 
 lpb $0
-  sub $0,1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $1,$4
-  add $3,1
+  mov $2,$0
+  trn $2,1
+  seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,2
+  add $1,$2
 lpe
+add $0,2
+sub $1,1
+add $1,$0
 mov $0,$1
-add $0,1

@@ -1,22 +1,17 @@
 ; A106036: Trajectory of 1 under the morphism 1->{1,2}, 2->{1,2,3}, 3->{1,2,3,3}.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,3,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2,3,1,2,3,3,1,2,3,3,1,2,1,2,3,1,2,1,2,3,1,2,3,3,1,2,1,2
 
-mov $5,$0
+mov $2,$0
 mov $3,2
 lpb $3
   sub $3,1
-  mov $0,$5
+  mov $0,$2
   add $0,$3
-  max $0,0
-  seq $0,189636 ; Positions of 0 in A116178; complement of A189637.
-  sub $0,1
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
+  seq $0,138670 ; Indices of 0's in Stewart's choral sequence.
+  add $1,$4
+  gcd $2,$1
   mov $4,$0
 lpe
-min $5,1
-mul $5,$4
-sub $1,$5
+sub $1,$0
 mov $0,$1

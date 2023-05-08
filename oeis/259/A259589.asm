@@ -1,20 +1,25 @@
 ; A259589: Numerators of the other-side convergents to e.
-; Submitted by Jamie Morken(w1)
+; Submitted by Kotenok2000
 ; 3,5,11,19,30,106,193,299,1457,2721,4178,25946,49171,75117,566827,1084483,1651310,14665106,28245729,42910835,438351041,848456353,1286807394,14862109042,28875761731,43737870773,563501581931,1098127402131,1661628984062
-; Formula: a(n) = (b(n)+c(n))/2, b(n) = A003417(n)*b(n-1)+b(n-2), b(2) = 16, b(1) = 6, b(0) = 4, c(n) = b(n-1), c(2) = 6, c(1) = 4, c(0) = 2
 
-mov $1,2
-add $0,1
+mov $1,1
+mov $2,1
+add $0,2
 lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
+  add $3,1
   mov $1,$3
-  seq $1,3417 ; Continued fraction for e.
+  mul $1,2
+  mov $5,5
+  sub $5,$1
+  dif $5,3
+  add $1,$5
+  sub $1,2
+  div $1,2
   mul $1,$2
   add $1,$4
-  add $3,1
 lpe
-add $2,$1
-mov $0,$2
-div $0,2
+add $1,$2
+mov $0,$1

@@ -1,7 +1,8 @@
 ; A081217: Greatest squarefree number not exceeding n-th prime power.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,3,5,7,7,7,11,13,15,17,19,23,23,26,29,31,31,37,41,43,47,47,53,59,61,62,67,71,73,79,79,83,89,97,101,103,107,109,113,119,123,127,127,131,137,139,149,151,157,163,167,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,241,251,255,257,263,269,271,277,281,283,287,293,307,311,313,317,331,337,341,347,349,353,359,359,367,373,379,383,389,397,401,409
-; Formula: a(n) = A070321(A181062(n))
+; Formula: a(n) = A070321(A000961(n)-1)
 
-seq $0,181062 ; Prime powers minus 1.
+seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
+sub $0,1
 seq $0,70321 ; Greatest squarefree number <= n.

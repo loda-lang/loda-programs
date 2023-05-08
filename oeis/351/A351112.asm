@@ -14,8 +14,13 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,351114 ; Characteristic function of balanced numbers.
-  mul $1,$0
+  mov $6,$0
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $6,$0
+  mov $5,0
+  bin $5,$6
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3

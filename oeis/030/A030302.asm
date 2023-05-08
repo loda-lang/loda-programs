@@ -1,9 +1,25 @@
 ; A030302: Write n in base 2 and juxtapose; irregular table in which row n lists the binary expansion of n.
-; Submitted by Science United
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,1,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,0,1,0,0,1,1,0,1,0,1,0,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,0,0,1,0,1,0,0,1,1,1,0,1,0,0,1,0,1,0,1,1,0,1,1,0,1,0,1,1,1,1
-; Formula: a(n) = A055143(n)%2
 
-mov $1,$0
-seq $1,55143 ; The first n digits of the juxtaposition of the base-2 numbers converted to decimal.
-mov $0,$1
+mov $1,1
+mov $2,1
+add $0,2
+lpb $0
+  sub $0,1
+  div $4,$2
+  mul $4,$2
+  add $2,$4
+  mov $4,$5
+  mul $4,$2
+  mov $5,$3
+  add $5,$4
+  add $6,1
+  mul $1,$2
+  dif $1,2
+  mov $3,$6
+  mov $4,$6
+lpe
+mov $0,$5
+div $0,$1
 mod $0,2

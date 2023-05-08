@@ -1,24 +1,26 @@
 ; A023622: Convolution of Lucas numbers and A001950.
-; Submitted by fzs600
+; Submitted by Kotenok2000
 ; 2,11,30,65,128,234,410,700,1173,1945,3198,5230,8524,13858,22493,36470,59089,95694,154926,250770,405854,656789,1062817,1719788,2782794,4502780,7285780
-; Formula: a(n) = 2*c(n)+b(n)-3, b(n) = b(n-1)+b(n-2)+A000201(n)+n, b(3) = 34, b(2) = 17, b(1) = 8, b(0) = 3, c(n) = b(n-1), c(3) = 17, c(2) = 8, c(1) = 3, c(0) = 1
 
-mov $1,2
-mov $2,1
-mov $3,1
-add $0,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  seq $1,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
-  add $1,$3
-  add $1,$4
-  add $3,1
+mov $1,$0
+add $1,1
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $3,$5
+  mov $5,$4
+  mov $0,$1
+  sub $0,$2
+  mov $6,$0
+  mul $0,55
+  div $0,34
+  add $0,$6
+  add $3,$0
+  add $4,$3
 lpe
-add $2,$4
-add $4,$2
+add $5,1
+mul $5,2
+add $4,$5
 mov $0,$4
-sub $0,3
+sub $0,2

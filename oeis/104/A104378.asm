@@ -1,22 +1,17 @@
 ; A104378: First differences of A102370.
-; Submitted by Jamie Morken(w1)
+; Submitted by Kotenok2000
 ; 3,3,-1,-1,11,-5,-1,-1,3,3,-1,15,-5,-5,-1,-1,3,3,-1,-1,11,-5,-1,-1,3,3,31,-17,-5,-5,-1,-1,3,3,-1,-1,11,-5,-1,-1,3,3,-1,15,-5,-5,-1,-1,3,3,-1,-1,11,-5,-1,-1,3,67,-33,-17,-5,-5,-1,-1,3,3,-1,-1,11,-5,-1,-1,3,3,-1,15,-5,-5,-1,-1,3,3,-1,-1,11,-5,-1,-1,3,3,31,-17,-5,-5,-1,-1,3,3
 
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  mov $5,$0
-  max $5,0
-  seq $5,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
-  sub $0,1
-  mov $2,$3
-  mul $2,$5
-  add $1,$2
-  mov $4,$5
-  mov $6,5
+  seq $0,102370 ; "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
+  mov $1,$2
+  mov $2,$0
+  mul $4,$3
 lpe
-min $6,1
-mul $6,$4
-sub $1,$6
+sub $1,$2
 mov $0,$1

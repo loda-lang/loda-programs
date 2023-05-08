@@ -224,6 +224,7 @@ A080081: Beatty sequence for (3+sqrt(13))/2.
 A080463: Sum of the two numbers formed by alternate digits of n.
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
 A080755: a(n) = ceiling(n*(1+1/sqrt(2))).
+A080763: Exchange 1's and 2's in the eta-sequence A006337.
 A081129: Differences of Beatty sequence for cube root of 3.
 A081477: Complement of A086377.
 A082061: Greatest common prime-divisor of n and phi(n)=A000010(n); a(n)=1 if no common prime-divisor exists.

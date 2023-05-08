@@ -13,9 +13,12 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  mul $1,$0
+  pow $0,$1
   sub $0,1
-  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,$0
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $0,$5
+  add $0,$5
   mul $0,$3
   mul $1,$0
   max $3,$1

@@ -1,11 +1,11 @@
 ; A319852: Difference between 3^n and the product of primes less than or equal to n.
 ; Submitted by Christian Krause
 ; 0,2,7,21,75,213,699,1977,6351,19473,58839,174837,529131,1564293,4752939,14318877,43016691,128629653,386909979,1152561777,3477084711,10450653513,31371359919,93920085957,282206443611,847065516573,2541642735459,7625374392117,22876569362091
-; Formula: a(n) = 3^n-A300951(2*n)
+; Formula: a(n) = 3^n-A083907(max(n-1,0))
 
 mov $1,3
 pow $1,$0
-mul $0,2
-seq $0,300951 ; a(n) = Product_{j=1..floor(n/2)} p(j) where p(j) = j if j is prime else 1.
+trn $0,1
+seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
 sub $1,$0
 mov $0,$1

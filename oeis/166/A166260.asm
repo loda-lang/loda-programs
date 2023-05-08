@@ -1,11 +1,17 @@
 ; A166260: a(n) = A089026(n) - 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,1,2,0,4,0,6,0,0,0,10,0,12,0,0,0,16,0,18,0,0,0,22,0,0,0,0,0,28,0,30,0,0,0,0,0,36,0,0,0,40,0,42,0,0,0,46,0,0,0,0,0,52,0,0,0,0,0,58,0,60,0,0,0,0,0,66,0,0,0,70,0,72,0,0,0,0,0,78,0,0,0,82,0,0,0,0,0,88,0,0,0,0,0,0
 
-mov $1,$0
-lpb $1
-  sub $1,1
-  seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,$0
+mov $2,$0
+seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+mov $3,$0
+lpb $0
+  add $1,$0
+  mov $0,$2
+  sub $0,$1
 lpe
-mov $0,$2
+lpb $0
+  mul $3,$2
+  mov $0,$2
+lpe
+mov $0,$3

@@ -9,6 +9,7 @@ lpb $2
   mov $5,2
   lpb $5
     div $5,2
+    sub $5,1
     mov $3,$1
     seq $3,14373 ; Inverse of 364th cyclotomic polynomial.
     mov $6,$3

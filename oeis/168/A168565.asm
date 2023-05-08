@@ -1,9 +1,34 @@
 ; A168565: Let p = prime(n); then a(n) = p + (p-1)/2.
-; Submitted by Spot T
+; Submitted by Kotenok2000
 ; 4,7,10,16,19,25,28,34,43,46,55,61,64,70,79,88,91,100,106,109,118,124,133,145,151,154,160,163,169,190,196,205,208,223,226,235,244,250,259,268,271,286,289,295,298,316,334,340,343,349,358,361,376,385,394,403
-; Formula: a(n) = A014682(A000040(n+1))-1
 
 add $0,1
-seq $0,40 ; The prime numbers.
-seq $0,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
-sub $0,1
+mov $2,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $5,0
+  mov $1,$2
+  add $1,1
+  lpb $1
+    gcd $5,3
+    mov $6,$1
+    div $6,5
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $2,2
+  sub $3,$0
+lpe
+mov $0,$2
+div $0,2
+mul $0,3
+add $0,1

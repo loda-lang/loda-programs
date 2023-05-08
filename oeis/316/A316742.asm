@@ -1,16 +1,12 @@
 ; A316742: Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
-; Submitted by Cruncher Pete
+; Submitted by LCB001
 ; 1,0,3,1,7,3,15,7,31,15,63,31,127,63,255,127,511,255,1023,511,2047,1023,4095,2047,8191,4095,16383,8191,32767,16383,65535,32767,131071,65535,262143,131071,524287,262143,1048575,524287,2097151,1048575,4194303,2097151,8388607,4194303
-; Formula: a(n) = b(n-1), a(1) = 0, a(0) = 1, b(n) = 2*b(n-2)-b(n-1)+b(n-1)+1, b(1) = 3, b(0) = 0
+; Formula: a(n) = gcd(n,2)*2^(n/2)-1
 
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $1,$2
-  mul $3,2
-  add $2,1
-  sub $2,$1
-  add $2,$3
-  mov $3,$1
-lpe
-mov $0,$3
+mov $1,$0
+div $1,2
+mov $2,2
+pow $2,$1
+gcd $0,2
+mul $0,$2
+sub $0,1

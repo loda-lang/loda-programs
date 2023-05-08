@@ -1,18 +1,9 @@
 ; A090603: Number of n-element labeled groupoids with a fixed identity.
-; Submitted by gemini8
+; Submitted by shiva
 ; 1,2,81,262144,152587890625,28430288029929701376,2651730845859653471779023381601,178405961588244985132285746181186892047843328,11790184577738583171520872861412518665678211592275841109096961
+; Formula: a(n) = (n+1)^(n^2)
 
 mov $1,$0
+pow $1,2
 add $0,1
-lpb $0
-  sub $0,1
-  pow $3,$2
-  mov $4,$1
-  bin $4,$2
-  mul $4,$3
-  add $2,1
-  mov $3,1
-  add $3,$2
-  pow $3,$2
-lpe
-mov $0,$4
+pow $0,$1

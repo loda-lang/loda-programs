@@ -1,7 +1,7 @@
 ; A321729: Number of integer partitions of n whose Young diagram can be partitioned into vertical sections of the same sizes as the parts of the original partition.
 ; Submitted by JayPi
 ; 1,1,1,2,3,4,6,8,12,16,22,28,40,51
-; Formula: a(n) = (2*(((n^2+4)/9)*((n^2+4)/18)+1))/11+(n^2+4)/9+1
+; Formula: a(n) = (n^2+4)/9+(2*((n^2+4)/9)*((n^2+4)/18)+2)/11+1
 
 pow $0,2
 add $0,4

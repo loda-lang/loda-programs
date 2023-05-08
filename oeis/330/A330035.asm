@@ -1,11 +1,12 @@
 ; A330035: a(n) = sign(tan(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,-1,-1,1,-1,-1,1,-1,-1,1,-1,-1,1,1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1,-1,-1,1,-1,-1,1,-1,-1,1,1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1,-1,-1,1,-1,-1,1,-1,-1,1,1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1,-1,-1,1,-1,-1,1,-1
 
+mul $0,2
 lpb $0
-  trn $0,1
-  seq $0,176360 ; a(n) = quadrant of unit circle corresponding to n radians.
-  add $0,1
+  mul $0,7
+  div $0,22
+  trn $1,1
   sub $1,1
   pow $1,$0
   mov $0,0

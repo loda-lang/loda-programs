@@ -8,8 +8,20 @@ lpb $0
   mov $4,$2
   mov $2,$1
   add $3,1
+  mov $5,$3
+  dif $5,2
+  mov $6,$5
+  gcd $6,2
+  add $6,9
+  cmp $5,0
+  add $5,$6
+  mul $5,$6
+  sub $5,99
   mov $1,$3
-  seq $1,40855 ; Continued fraction for sqrt(885).
+  gcd $1,2
+  mul $1,$5
+  mul $1,4
+  div $1,3
   mul $1,$2
   add $1,$4
 lpe

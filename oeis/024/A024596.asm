@@ -1,5 +1,5 @@
 ; A024596: a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = (F(2), F(3), ...), t = A014306.
-; Submitted by [TA]crashtech
+; Submitted by Kotenok2000
 ; 0,1,3,2,4,3,6,11,19,18,30,29,48,45,74,66,108,87,142,230,373,372,603,600,972,964,1561,1540,2493,2438,3946,3802,6153,5776,9346,8358,13525,10939,17701,28642,46345,46332,74968,74934,121247,121158,196039,195806
 
 mov $1,$0
@@ -12,10 +12,11 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,14306 ; a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
+  seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
+  min $0,1
   add $3,$0
   add $4,$3
   mov $3,$5
 lpe
-add $4,$5
+add $4,$3
 mov $0,$4

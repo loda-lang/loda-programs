@@ -8,7 +8,8 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,138793 ; a(n) = concatenation of reversed digits of natural numbers from n down to 1.
+  seq $5,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
+  seq $5,345110 ; a(n) is n rotated one place to the left or, equivalently, n with the most significant digit moved to the least significant place, omitting leading zeros.
   sub $0,1
   mov $2,$3
   mul $2,$5

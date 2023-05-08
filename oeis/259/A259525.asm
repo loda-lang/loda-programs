@@ -1,23 +1,19 @@
 ; A259525: First differences of A007318, when Pascal's triangle is seen as flattened list.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 0,0,0,1,-1,0,2,0,-2,0,3,2,-2,-3,0,4,5,0,-5,-4,0,5,9,5,-5,-9,-5,0,6,14,14,0,-14,-14,-6,0,7,20,28,14,-14,-28,-20,-7,0,8,27,48,42,0,-42,-48,-27,-8,0,9,35,75,90,42,-42,-90,-75,-35,-9,0,10,44,110,165,132,0,-132,-165,-110,-44,-10,0,11,54,154,275,297,132,-132,-297,-275,-154,-54,-11,0,12,65,208,429,572,429,0,-429,-572
 
-mov $3,$0
-add $3,1
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$3
-  add $0,$4
-  trn $0,1
-  seq $0,131060 ; 3*A007318 - 2*A000012 as infinite lower triangular matrices.
-  mov $2,$4
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  seq $0,14473 ; Pascal's triangle - 1.
+  mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
   mov $5,$0
 lpe
-min $3,1
-mul $3,$5
-sub $1,$3
+sub $1,$5
 mov $0,$1
-div $0,3

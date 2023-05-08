@@ -6,6 +6,6 @@ mov $1,2
 mul $0,6
 lpb $0
   sub $0,6
-  seq $1,5836 ; Numbers whose base 3 representation contains no 2.
+  seq $1,5836 ; Numbers whose base-3 representation contains no 2.
 lpe
 mov $0,$1

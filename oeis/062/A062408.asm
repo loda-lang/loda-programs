@@ -1,27 +1,25 @@
 ; A062408: Numbers k such that floor(Pi*k) is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,10,12,14,15,17,19,31,33,35,36,42,50,52,57,61,63,71,73,77,80,82,84,98,99,101,117,119,122,124,138,140,143,147,159,166,182,187,189,201,206,208,210,220,226,229,241,245,254,262,264,273,275,289,290,296,308,311,313,325,329,331,334,338,348,373,376,378,380,392,394,401,411,413,415,420,453,455,462,474,481,485,499,504,516,518,539,541,544,548,558,560,569,583,588,609,630,646,665,672
 
+mov $1,1
 mov $2,$0
-add $2,11
+add $2,2
 pow $2,2
+mul $2,2
 lpb $2
-  mov $5,97
-  mul $5,$1
-  div $5,113
   mov $3,$1
-  mul $3,4
-  sub $3,1
-  sub $3,$5
-  trn $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  add $3,3
+  seq $3,62389 ; a(n) = floor( (2n-1)*Pi/2 ).
+  sub $3,12
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $5,$1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,1
   mul $2,$4
-  sub $2,1
+  trn $2,1
 lpe
-mov $0,$1
+mov $0,$5

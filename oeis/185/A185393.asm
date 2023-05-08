@@ -7,20 +7,13 @@ mul $3,5
 lpb $3
   mul $2,$3
   add $2,$1
-  mov $5,$3
-  div $5,3
-  mov $4,$5
-  cmp $4,0
-  add $5,$4
   add $1,$2
-  div $1,$5
-  div $2,$5
   sub $3,1
 lpe
-mov $6,10
-pow $6,$0
-div $2,$6
+mov $4,10
+pow $4,$0
+div $2,$4
 div $1,$2
-add $1,$6
+add $1,$4
 mod $1,10
 mov $0,$1

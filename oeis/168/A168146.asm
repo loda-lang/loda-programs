@@ -6,9 +6,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $3,$1
-  seq $3,37228 ; a(n) = phi(n) - pi(n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $3,1
+  sub $3,$5
   bin $3,$2
   cmp $3,0
   sub $0,$3
