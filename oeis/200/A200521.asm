@@ -9,8 +9,13 @@ pow $2,2
 bin $2,2
 lpb $2
   sub $2,1
+  mov $4,$1
+  seq $4,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  cmp $4,0
+  sub $4,1
   mov $3,$1
-  seq $3,158210 ; Number omega(n) of distinct primes dividing n multiplied by -1 when n is squarefree (thus Omega(n) = omega(n)).
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  dif $3,$4
   sub $3,2
   cmp $3,2
   sub $0,$3

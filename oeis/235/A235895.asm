@@ -5,5 +5,14 @@
 add $0,2
 mov $1,4
 pow $1,$0
-seq $0,7483 ; a(n) = 3*a(n-1) + 2*a(n-2), with a(0)=1, a(1)=5.
+mov $2,2
+mov $3,1
+lpb $0
+  sub $0,1
+  add $2,$3
+  mul $2,2
+  mul $3,-1
+  add $3,$2
+lpe
+mov $0,$3
 add $0,$1

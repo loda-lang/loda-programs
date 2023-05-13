@@ -1,6 +1,7 @@
 ; A136137: a(n+1)=sopfr(3a(n)+1), with sopfr=A001414. Finishes with 17 (fixed point).
 ; Submitted by Landjunge
 ; 1,4,13,11,19,31,49,41,35,55,85,16,14,43,20,61,29,17
+; Formula: a(n) = A001414(3*a(n-1)), a(0) = 1
 
 mov $1,1
 lpb $0

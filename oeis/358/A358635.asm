@@ -1,5 +1,5 @@
 ; A358635: Number of partitions of n into at most 2 distinct prime powers (including 1).
-; Submitted by Stony666
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,2,2,3,2,3,3,4,3,4,4,4,3,3,4,4,4,4,5,4,3,3,5,4,4,5,5,4,6,4,7,5,6,4,7,3,5,4,6,4,6,4,6,5,5,3,8,4,7,4,6,3,8,3,7,4,5,3,8,4,6,4,7,3,9,3,8,5,7,3,10,4,7,6,7,3,9,3,9,5,6,5,11,3,8,4,7,4,12,4
 
 mov $2,1
@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,297155 ; a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
+    seq $7,87893 ; Number of numbers m satisfying 1 < m < n such that m^2 == m (mod n).
     cmp $7,$1
     mov $9,10
     add $9,$5

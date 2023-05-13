@@ -1,12 +1,12 @@
 ; A035224: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 42.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,1,0,1,1,1,1,0,2,1,2,1,0,1,2,1,2,0,1,2,0,1,1,2,1,1,2,0,0,1,2,2,0,1,0,2,2,0,2,1,0,2,0,0,2,1,1,1,2,2,2,1,0,1,2,2,0,0,2,0,1,1,0,2,0,2,0,0,0,1,0,0,1,2,2,2,2,0,1
 
 mov $2,$0
 add $2,1
 mov $4,$0
 lpb $4
-  sub $4,1
+  sub $4,2
   mov $0,$2
   sub $0,$4
   mov $1,$0

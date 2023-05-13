@@ -1,12 +1,10 @@
 ; A034114: Fractional part of square root of a(n) starts with 8: first term of runs.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 8,15,24,34,47,61,78,97,117,140,164,191,220,250,283,317,354,393,433,476,520,567,616,666,719,773,830,889,949,1012,1076,1143,1212,1282,1355,1429,1506,1585,1665,1748,1832,1919,2008,2098,2191,2285,2382,2481,2581
-; Formula: a(n) = ((n+3)*(10*n+26))/10+1
+; Formula: a(n) = ((5*n+14)^2)/25+1
 
-add $0,3
-mov $1,10
-mul $1,$0
-sub $1,4
-mul $0,$1
-div $0,10
+mul $0,5
+add $0,14
+pow $0,2
+div $0,25
 add $0,1

@@ -1,7 +1,12 @@
 ; A359172: a(n) = 1 if n is not a multiple of 3 and has an odd number of prime factors (with multiplicity), otherwise a(n) = 0.
-; Submitted by Science United
+; Submitted by fix
 ; 0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0
-; Formula: a(n) = binomial(A359378(n),2)
+; Formula: a(n) = (A314264(n+1)*A001222(n))%2
 
-seq $0,359378 ; Dirichlet inverse of A359377, where A359377(n) = 1 if 3*n is squarefree, otherwise 0.
-bin $0,2
+mov $1,$0
+seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+add $0,1
+seq $0,314264 ; Coordination sequence Gal.5.316.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+mul $1,$0
+mov $0,$1
+mod $0,2

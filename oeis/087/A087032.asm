@@ -1,9 +1,9 @@
 ; A087032: a(n) = 1 if 2*A151800(n) - n is prime, otherwise 0, where A151800(n) is the smallest prime > n.
-; Submitted by damotbe
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0
 
-mov $2,$0
-add $2,2
+mov $1,$0
+mov $2,2
 lpb $2
   sub $2,1
   mov $3,$1

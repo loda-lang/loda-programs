@@ -1,12 +1,11 @@
 ; A032196: Number of necklaces with 11 black beads and n-11 white beads.
-; Submitted by Jamie Morken(s2)
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,1,6,26,91,273,728,1768,3978,8398,16796,32066,58786,104006,178296,297160,482885,766935,1193010,1820910,2731365,4032015,5864750,8414640,11920740,16689036,23107896,31666376,42975796
-; Formula: a(n) = (binomial(-n-1,10)-1)/11+1
+; Formula: a(n) = (binomial(n+10,n)-1)/11+1
 
-sub $1,$0
-sub $1,1
-bin $1,10
-sub $1,1
-div $1,11
-mov $0,$1
+mov $1,$0
+add $0,10
+bin $0,$1
+sub $0,1
+div $0,11
 add $0,1

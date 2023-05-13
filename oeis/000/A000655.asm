@@ -1,11 +1,11 @@
 ; A000655: a(n) = number of letters in a(n-1), a(1) = 1 (in English).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,3,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+; Formula: a(n) = (2*n-1)/max(n-1,1)+2
 
-mov $2,$0
-mul $2,2
-sub $2,3
-sub $0,1
-clr $1,$0
-add $2,4
-mov $0,$2
+mov $1,-1
+add $1,$0
+add $0,$1
+max $1,1
+div $0,$1
+add $0,2

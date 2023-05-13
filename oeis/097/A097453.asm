@@ -9,7 +9,15 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,4
-  seq $3,14237 ; a(n) = (n-th prime) - (n-th nonprime).
+  mov $7,$3
+  mul $7,-2
+  div $7,$3
+  mov $6,$3
+  sub $6,$7
+  seq $6,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $6,1
+  seq $3,40 ; The prime numbers.
+  sub $3,$6
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

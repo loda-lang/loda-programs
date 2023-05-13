@@ -1,14 +1,23 @@
 ; A029105: Expansion of 1/((1-x)(1-x^5)(1-x^11)(1-x^12)).
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,1,1,2,2,2,2,2,3,4,5,5,5,6,7,8,8,8,9,10,12,13,14,15,16,18,19,20,21,22,24,26,28,30,32,34,36,38,40,42,44,46,49,52,55,58,61,64,67,70,73,76,79,83,87,91,95,99,104
 
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
-  sub $0,8
-  trn $0,3
-  add $1,$2
+  lpb $2
+    mov $1,$2
+    add $1,$2
+    mov $4,$1
+    mul $1,2
+    div $1,5
+    div $4,2
+    sub $4,$1
+    sub $2,6
+    trn $2,6
+    add $3,$4
+  lpe
+  sub $0,3
+  trn $0,8
 lpe
-mov $0,$1
+mov $0,$3

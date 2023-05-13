@@ -1,14 +1,17 @@
 ; A029034: Expansion of 1/((1-x)(1-x^3)(1-x^4)(1-x^8)).
-; Submitted by Coleslaw
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,2,3,3,4,5,7,8,9,11,14,15,17,20,24,26,29,33,38,41,45,50,57,61,66,73,81,86,93,101,111,118,126,136,148,156,166,178,192,202,214,228,244,256,270,286,305,319,335,354
-; Formula: a(n) = a(n-1)+A025830(max(n,0)), a(0) = 1
 
-add $0,1
+mov $3,3
+add $0,3
 lpb $0
+  sub $0,$3
   mov $2,$0
-  trn $2,1
-  seq $2,25830 ; Expansion of 1/((1-x^3)(1-x^4)(1-x^8)).
-  sub $0,1
+  add $2,4
+  pow $2,2
+  add $2,9
+  div $2,24
   add $1,$2
+  mov $3,8
 lpe
 mov $0,$1

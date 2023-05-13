@@ -8,8 +8,12 @@ pow $2,4
 lpb $2
   mov $5,$1
   add $5,1
+  mov $6,$1
+  seq $6,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   mov $3,$1
-  seq $3,342001 ; Arithmetic derivative without its inherited divisor; the arithmetic derivative of n divided by A003557(n), which is a common divisor of both n and A003415(n).
+  add $3,1
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  div $3,$6
   mov $4,$3
   gcd $4,$5
   div $5,$4

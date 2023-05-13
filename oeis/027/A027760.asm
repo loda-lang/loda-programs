@@ -1,26 +1,34 @@
 ; A027760: Denominator of Sum_{p prime, p-1 divides n} 1/p.
-; Submitted by http://amez.petrsu.ru/
+; Submitted by Science United
 ; 2,6,2,30,2,42,2,30,2,66,2,2730,2,6,2,510,2,798,2,330,2,138,2,2730,2,6,2,870,2,14322,2,510,2,6,2,1919190,2,6,2,13530,2,1806,2,690,2,282,2,46410,2,66,2,1590,2,798,2,870,2,354,2,56786730,2,6,2,510,2,64722,2,30,2,4686,2,140100870,2,6,2,30,2,3318,2,230010,2,498,2,3404310,2,6,2,61410,2,272118,2,1410,2,6,2,4501770,2,6,2,33330
 
-mov $6,$0
-gcd $6,2
+add $0,1
 mov $1,$0
+sub $1,1
+mov $4,$1
+gcd $4,2
 add $1,1
-mov $2,2
-mov $4,$0
-lpb $4
-  sub $4,$6
-  mov $3,$1
-  sub $3,$4
-  mov $5,$3
-  mov $7,$3
-  gcd $7,$4
-  bin $7,$3
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $3,$5
-  add $3,1
-  mul $3,$2
-  mul $7,$3
-  max $2,$7
+mov $3,2
+mov $7,$1
+mov $2,$1
+lpb $2
+  sub $2,2
+  mov $1,$7
+  sub $1,$2
+  mov $5,$1
+  mov $6,$1
+  gcd $6,$2
+  bin $6,$1
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $1,$5
+  add $1,1
+  mul $1,$3
+  div $2,$4
+  mul $6,$1
+  max $3,$6
 lpe
-mov $0,$2
+mov $0,$3
+sub $0,2
+div $0,2
+add $0,1
+mul $0,2

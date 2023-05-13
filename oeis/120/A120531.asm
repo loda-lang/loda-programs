@@ -1,17 +1,21 @@
 ; A120531: First differences of successive generalized meta-Fibonacci numbers A120509.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Kotenok2000
 ; 1,0,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1
 
 mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  seq $0,120509 ; Generalized meta-Fibonacci sequence a(n) with parameters s=2 and k=4.
-  div $1,2
-  add $1,$0
+mov $5,2
+lpb $5
+  sub $5,1
+  add $0,$5
+  sub $0,1
+  mov $4,$0
+  max $4,0
+  seq $4,120509 ; Generalized meta-Fibonacci sequence a(n) with parameters s=2 and k=4.
+  mov $2,$5
+  mul $2,$4
+  add $1,$2
 lpe
+min $3,1
+mul $3,$4
+sub $1,$3
 mov $0,$1
-add $0,1
-mod $0,2

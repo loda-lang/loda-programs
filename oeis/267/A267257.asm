@@ -1,7 +1,24 @@
 ; A267257: Binary representation of the middle column of the "Rule 111" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jon Maiga
 ; 1,11,111,1111,11111,111111,1111111,11111111,111111110,1111111101,11111111010,111111110101,1111111101010,11111111010101,111111110101010,1111111101010101,11111111010101010,111111110101010101,1111111101010101010,11111111010101010101,111111110101010101010,1111111101010101010101,11111111010101010101010,111111110101010101010101,1111111101010101010101010,11111111010101010101010101,111111110101010101010101010,1111111101010101010101010101,11111111010101010101010101010,111111110101010101010101010101
-; Formula: a(n) = A007088(A267258(n))
 
-seq $0,267258 ; Decimal representation of the middle column of the "Rule 111" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,2
+pow $1,$0
+mod $0,2
+add $0,$1
+div $0,192
+mul $1,2
+add $1,2
+sub $1,$0
+mov $3,1
+mov $0,$1
+sub $0,3
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2

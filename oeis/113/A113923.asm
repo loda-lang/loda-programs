@@ -1,8 +1,8 @@
 ; A113923: A Farey like level n=2 rational function as a coefficient expansion.
+; Submitted by Science United
 ; 12,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = 9*0^n+3
+; Formula: a(n) = 3*gcd(min(n,1),4)
 
-pow $1,$0
-mul $1,9
-add $1,3
-mov $0,$1
+min $0,1
+gcd $0,4
+mul $0,3

@@ -1,22 +1,12 @@
 ; A277801: a(n) = 2^(n - 1) - prime(n).
+; Submitted by Kotenok2000
 ; -1,-1,-1,1,5,19,47,109,233,483,993,2011,4055,8149,16337,32715,65477,131011,262077,524217,1048503,2097073,4194221,8388519,16777119,33554331,67108761,134217621,268435347,536870799,1073741697,2147483517,4294967159,8589934453,17179869035
+; Formula: a(n) = 2^n-max(A006005(n),2)
 
-mov $1,2
-pow $1,$0
-mov $2,$0
-add $2,1
-pow $2,2
-add $2,1
-lpb $2
-  sub $2,1
-  mov $3,$5
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  sub $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  add $5,1
-lpe
-mov $0,$1
+mov $1,$0
+seq $0,6005 ; The odd prime numbers together with 1.
+max $0,2
+mov $2,2
+pow $2,$1
+sub $2,$0
+mov $0,$2

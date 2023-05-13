@@ -4,5 +4,21 @@
 
 mov $1,$0
 add $1,1
-seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
+mov $2,1
+add $0,2
+lpb $0
+  sub $0,1
+  div $4,$2
+  mul $4,$2
+  mul $4,9
+  add $2,$4
+  mov $4,$5
+  mul $4,$2
+  mov $5,$3
+  add $5,$4
+  add $6,1
+  mov $3,$6
+  mov $4,$6
+lpe
+mov $0,$5
 mod $0,$1

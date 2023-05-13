@@ -1,11 +1,13 @@
 ; A033899: Sort then Add!.
 ; Submitted by Jon Maiga
 ; 17,34,68,136,272,499,998,1897,3686,7354,10811,11929,23228,45466,90032,90271,91550,93109,94508,99097,107096,108775,124553,248008,250496,275065,300632,302968,326657,562324,785780,843568,1189256,2314945,3549404
-; Formula: a(n) = A070196(a(n-1)), a(0) = 17
+; Formula: a(n) = a(n-1)+A004185(a(n-1)), a(0) = 17
 
 mov $1,17
 lpb $0
   sub $0,1
-  seq $1,70196 ; a(n)=n plus the sorted version of the base-10 digits of n.
+  mov $2,$1
+  seq $1,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+  add $1,$2
 lpe
 mov $0,$1

@@ -10,5 +10,3 @@ lpb $0
   trn $0,$1
   add $0,$1
 lpe
-sub $0,1
-add $0,1

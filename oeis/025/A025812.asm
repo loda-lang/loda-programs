@@ -1,14 +1,17 @@
 ; A025812: Expansion of 1/((1-x^2)*(1-x^5)*(1-x^12)).
-; Submitted by GolfSierra
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,0,1,0,1,1,1,1,1,1,2,1,3,1,3,2,3,3,3,3,4,3,5,3,6,4,6,5,6,6,7,6,8,6,9,7,10,8,10,9,11,10,12,10,13,11,14,12,15,13,16,14,17,15,18,16,19,17,20,18,22,19,23,20,24,22,25
 
 add $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  seq $2,8616 ; Expansion of 1/((1-x^2)(1-x^5)).
-  sub $0,2
-  trn $0,10
-  add $1,$2
+  add $2,1
+  mov $3,$2
+  mul $2,2
+  div $2,5
+  div $3,2
+  sub $3,$2
+  trn $0,12
+  add $1,$3
 lpe
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A127772: Row sums of inverse of number triangle A(n,k) = 1/Euler_phi(n+1) if k <= n <= 2k, 0 otherwise.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,1,1,2,-1,4,-1,2,0,6,-7,8,-2,2,-1,8,-8,12,-10,4,4,12,-21,12,0,6,-8,16,-18,22,-15,4,4,8,-20,24,-6,6,-18,24,-24,30,-18,4,10,24,-51,26,-10,12,-8,28,-28,22,-24,12,8,30,-60
 
 mov $3,$0
@@ -23,6 +23,7 @@ lpb $5
   mul $4,2
   mov $2,$5
   mul $2,$4
+  mul $0,$5
   add $1,$2
 lpe
 min $3,1

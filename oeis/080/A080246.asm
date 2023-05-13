@@ -1,9 +1,28 @@
 ; A080246: Signed version of A035607.
-; Submitted by Cruncher Pete
+; Submitted by Kotenok2000
 ; 1,-2,1,2,-4,1,-2,8,-6,1,2,-12,18,-8,1,-2,16,-38,32,-10,1,2,-20,66,-88,50,-12,1,-2,24,-102,192,-170,72,-14,1,2,-28,146,-360,450,-292,98,-16,1,-2,32,-198,608,-1002,912,-462,128,-18,1,2,-36,258,-952,1970,-2364
-; Formula: a(n) = A113413(n)*A097807(n)
 
-mov $1,$0
-seq $1,113413 ; A Riordan array of coordination sequences.
-seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
-mul $0,$1
+mov $1,3
+mov $5,3
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+mul $0,-1
+add $0,$2
+sub $2,$0
+lpb $0
+  sub $0,1
+  add $2,1
+  sub $3,$5
+  mov $1,$3
+  mul $1,2
+  mul $1,$2
+  sub $2,1
+  add $4,1
+  div $1,$4
+  mul $5,-1
+  add $5,$1
+lpe
+mov $0,$1
+div $0,3

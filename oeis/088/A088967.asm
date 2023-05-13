@@ -1,8 +1,14 @@
 ; A088967: Numbers n such that n+9 is a prime.
-; Submitted by gemini8
+; Submitted by William Michael Kanar
 ; 2,4,8,10,14,20,22,28,32,34,38,44,50,52,58,62,64,70,74,80,88,92,94,98,100,104,118,122,128,130,140,142,148,154,158,164,170,172,182,184,188,190,202,214,218,220,224,230,232,242,248,254,260,262,268,272,274,284
-; Formula: a(n) = A000040(n+4)-9
+; Formula: a(n) = (12*((6*A089038(n+2)+15)/3)-132)/12+2
 
-add $0,4
-seq $0,40 ; The prime numbers.
-sub $0,9
+add $0,2
+seq $0,89038 ; Nonnegative numbers k such that 2k+5 is prime.
+mul $0,6
+add $0,15
+div $0,3
+mul $0,12
+sub $0,132
+div $0,12
+add $0,2

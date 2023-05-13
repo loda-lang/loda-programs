@@ -1,5 +1,5 @@
 ; A294233: Number of partitions of n into two parts with smaller part nonsquarefree and larger part squarefree.
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,1,2,3,1,2,2,3,1,3,3,3,1,2,3,3,1,3,3,4,0,4,5,5,2,5,6,5,2,4,6,6,2,5,7,8,2,5,6,9,4,7,7,9,4,7,8,8,4,8,9,9,3,8,8,10,1,9,9,10,3,8,10,9,4,8,11,11,3,9
 
 mov $2,1
@@ -15,7 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,71325 ; Number of squares > 1 dividing n.
+    seq $7,107078 ; Whether n has non-unitary prime divisors.
     add $7,2
     cmp $7,2
     cmp $7,$10

@@ -1,5 +1,5 @@
 ; A157911: Nonprimes whose digits are all cubes.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,8,10,18,80,81,88,100,108,110,111,118,180,188,800,801,808,810,818,880,888,1000,1001,1008,1010,1011,1018,1080,1081,1088,1100,1101,1108,1110,1111,1118,1180,1188,1800,1808,1810,1818,1880,1881,1888,8000,8001
 
 mov $2,$0
@@ -14,7 +14,7 @@ lpb $2
   mov $7,2
   lpb $3
     mov $8,$3
-    div $8,2
+    div $8,3
     lpb $8
       mov $9,$3
       mod $9,$7

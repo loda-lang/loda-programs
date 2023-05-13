@@ -1,18 +1,16 @@
 ; A106403: Primitive exponents of the Weyl group W(E_8).
-; Submitted by Science United
+; Submitted by Odd-Rod
 ; 3,15,23,27,35,39,47,59
-; Formula: a(n) = 4*((5*((((n+4)/2)%4+6*n+25)/4)+4)/4)-29
+; Formula: a(n) = 8*n+4*(gcd(4,(n+3)/2)%4)-1
 
-add $0,4
-mov $1,$0
-div $1,2
+mov $2,$0
+mul $2,2
+add $0,3
+div $0,2
+mov $1,4
+gcd $1,$0
 mod $1,4
-mul $0,6
-add $0,$1
-add $0,1
-div $0,4
-mul $0,5
-add $0,4
-div $0,4
+add $1,$2
+mov $0,$1
 mul $0,4
-sub $0,29
+sub $0,1

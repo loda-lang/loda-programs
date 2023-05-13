@@ -1,26 +1,23 @@
 ; A124583: Duplicate of A083371.
-; Submitted by [DPC] hansR
+; Submitted by Science United
 ; 89,113,139,181,199,211,241,283,293,317,337,359,389,401,409,421,449,467,479,491,509,523,547,577,619,631,661,683,691,701,709,719,743,761,773,787,797,811,829,839,863,887,911,919,929,953,983,997,1021,1039,1051,1069,1109
 
+mov $1,2
 mov $2,$0
-add $2,8
+add $2,10
 pow $2,2
-add $0,6
-mov $1,46
 lpb $2
-  mov $3,$1
-  seq $3,49847 ; a(n) = (2*n + 1 - prevprime(2*n+1))/2.
-  cmp $3,4
-  sub $0,$3
-  mul $3,3
-  add $1,1
+  seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
   add $1,$3
+  add $1,2
+  min $3,7
+  div $3,5
+  sub $0,$3
   mov $4,$0
-  max $4,6
+  max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,2
+  mov $3,$1
 lpe
 mov $0,$1
-mul $0,2
-sub $0,3

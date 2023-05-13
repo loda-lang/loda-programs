@@ -7,8 +7,29 @@ mov $1,2
 mov $2,$0
 pow $2,4
 lpb $2
+  mov $4,$1
+  mul $4,3
+  add $4,4
+  mov $6,$4
+  seq $6,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  add $6,7
+  add $4,7
+  add $6,$4
+  mov $4,$6
+  mul $4,2
+  sub $4,26
+  div $4,4
+  sub $4,1
   mov $3,$1
-  seq $3,190775 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),3,2) and [ ]=floor.
+  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $3,4
+  mov $5,1
+  sub $5,$3
+  sub $5,$3
+  sub $5,$3
+  add $5,$4
+  mov $3,$5
+  sub $3,3
   cmp $3,0
   sub $0,$3
   add $1,1

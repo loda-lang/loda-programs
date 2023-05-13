@@ -1,5 +1,5 @@
 ; A029884: Second differences of Thue-Morse sequence A001285.
-; Submitted by Kotenok2000
+; Submitted by Simon Strandgaard (raspberrypi)
 ; -1,-1,2,-2,1,1,-1,-1,1,1,-2,2,-1,-1,2,-2,1,1,-2,2,-1,-1,1,1,-1,-1,2,-2,1,1,-1,-1,1,1,-2,2,-1,-1,1,1,-1,-1,2,-2,1,1,-2,2,-1,-1,2,-2,1,1,-1,-1,1,1,-2,2,-1,-1,2,-2,1,1,-2,2,-1,-1,1,1,-1,-1,2,-2,1,1,-2,2,-1
 
 mov $3,2
@@ -16,12 +16,12 @@ lpb $3
     mov $4,$2
     mov $6,$7
     mul $6,$2
+    mul $0,$7
     add $1,$6
   lpe
   mov $3,0
   min $5,1
   mul $5,$4
-  mov $0,1
   mov $4,$1
   sub $4,$5
 lpe

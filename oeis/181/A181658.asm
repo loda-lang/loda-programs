@@ -1,10 +1,19 @@
 ; A181658: Row sums of A181657.
 ; 1,2,3,7,8,19,20,48,49,118,119,287,288,695,696,1680,1681,4058,4059,9799,9800,23659,23660,57120,57121,137902,137903,332927,332928,803759,803760,1940448,1940449,4684658,4684659,11309767,11309768,27304195,27304196
-; Formula: a(n) = A059020((n-1)/2)+n+1
 
 mov $1,$0
 sub $0,1
 div $0,2
-seq $0,59020 ; Number of 2 X n checkerboards (with at least one red square) in which the set of red squares is edge connected.
+lpb $0
+  sub $0,1
+  add $3,3
+  add $5,$3
+  add $2,$5
+  add $4,$5
+  mov $3,$4
+  add $3,1
+  mov $4,$5
+lpe
+mov $0,$2
 add $0,1
 add $0,$1

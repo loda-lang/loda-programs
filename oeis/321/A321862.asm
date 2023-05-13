@@ -4,7 +4,10 @@
 
 lpb $0
   mov $2,$0
-  seq $2,86937 ; Number of distinct zeros of x^2-x-1 mod prime(n).
+  seq $2,40 ; The prime numbers.
+  pow $2,2
+  add $2,26
+  mod $2,5
   sub $0,1
   add $1,1
   sub $1,$2

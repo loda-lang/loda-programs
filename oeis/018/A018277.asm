@@ -1,8 +1,13 @@
 ; A018277: Divisors of 88.
-; Submitted by Dingo
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,4,8,11,22,44,88
-; Formula: a(n) = A345111(A018749(n))/2
 
-seq $0,18749 ; Divisors of 968.
-seq $0,345111 ; a(n) = n + A345110(n).
-div $0,2
+mov $1,1
+lpb $0
+  sub $0,4
+  mul $1,11
+lpe
+mov $2,2
+pow $2,$0
+mul $1,$2
+mov $0,$1

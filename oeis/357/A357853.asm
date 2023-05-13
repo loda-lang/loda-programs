@@ -1,5 +1,5 @@
 ; A357853: Fully multiplicative with a(prime(k)) = A000009(k+1).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,1,2,1,2,2,3,1,4,2,4,2,5,3,4,1,6,4,8,2,6,4,10,2,4,5,8,3,12,4,15,1,8,6,6,4,18,8,10,2,22,6,27,4,8,10,32,2,9,4,12,5,38,8,8,3,16,12,46,4,54,15,12,1,10,8,64,6,20,6,76,4,89,18,8,8,12,10
 
 mov $1,1
@@ -32,7 +32,7 @@ lpb $0
     lpb $3
       dif $3,$6
     lpe
-    mul $5,$7
+    mul $4,$7
     add $5,$4
   lpe
   mul $3,$5

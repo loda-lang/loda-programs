@@ -1,10 +1,31 @@
 ; A001747: 2 together with primes multiplied by 2.
 ; Submitted by kpmonaghan
 ; 2,4,6,10,14,22,26,34,38,46,58,62,74,82,86,94,106,118,122,134,142,146,158,166,178,194,202,206,214,218,226,254,262,274,278,298,302,314,326,334,346,358,362,382,386,394,398,422,446,454,458,466,478,482,502,514,526,538,542,554,562,566,586,614,622,626,634,662,674,694,698,706,718,734,746,758,766,778,794,802,818,838,842,862,866,878,886,898,914,922,926,934,958,974,982,998,1006,1018,1042,1046
-; Formula: a(n) = (200*A008578(n)-200)/100+2
 
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-mul $0,200
-sub $0,200
-div $0,100
+mov $1,$0
+dif $1,$0
+add $1,1
+sub $0,1
+mov $2,$0
+mul $2,2
+max $2,1
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  max $5,$3
+  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $5,2
+  sub $2,$5
+  add $3,2
+  sub $4,$2
+lpe
+add $2,$3
+sub $2,1
+mul $1,$2
+mov $0,$1
+sub $0,2
+div $0,2
+mul $0,2
 add $0,2

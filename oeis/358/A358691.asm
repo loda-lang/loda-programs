@@ -1,9 +1,8 @@
 ; A358691: Gilbreath transform of primes p(2k-1); see Comments.
-; Submitted by Science United
+; Submitted by USTL-FIL (Lille Fr)
 ; 3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 div $0,4
-cmp $1,$0
-mov $0,$1
+cmp $0,0
 mul $0,2
 add $0,1

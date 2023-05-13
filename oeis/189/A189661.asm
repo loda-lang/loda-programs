@@ -1,14 +1,20 @@
 ; A189661: Fixed point of the morphism 0->010, 1->10 starting with 0.
-; Submitted by TrikkStar
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0
-; Formula: a(n) = A288707(2*n), a(1) = 1, a(0) = 0
+; Formula: a(n) = -(gcd(2*((-c(n-1)+b(n-1))/4)+binomial(a(n-1),c(n-1)),4)/2)+2, a(2) = 0, a(1) = 1, a(0) = 0, b(n) = 2*((-c(n-1)+b(n-1))/4), b(2) = -4, b(1) = -2, b(0) = 0, c(n) = gcd(2*((-c(n-1)+b(n-1))/4)+binomial(a(n-1),c(n-1)),4)*c(n-1), c(2) = 32, c(1) = 8, c(0) = 4
 
-add $0,1
+mov $2,4
 lpb $0
   sub $0,1
-  mov $1,$3
-  seq $1,288707 ; 0-limiting word of the mapping 00->1000, 10->00, starting with 00.
-  mov $2,$1
-  add $3,2
+  sub $1,$2
+  div $1,4
+  mul $1,2
+  bin $3,$2
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
+  sub $3,2
+  mul $3,-1
 lpe
-mov $0,$2
+mov $0,$3

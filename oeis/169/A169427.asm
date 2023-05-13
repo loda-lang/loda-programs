@@ -1,18 +1,14 @@
 ; A169427: Number of reduced words of length n in Coxeter group on 30 generators S_i with relations (S_i)^2 = (S_i S_j)^32 = I.
-; Submitted by Conan
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,30,870,25230,731670,21218430,615334470,17844699630,517496289270,15007392388830,435214379276070,12621216999006030,366015292971174870,10614443496164071230,307818861388758065670,8926746980273983904430
-; Formula: a(n) = 4*b(n-1)+c(n-1), a(2) = 870, a(1) = 30, a(0) = 1, b(n) = 20*b(n-1)+5*c(n-1)+4*b(n-1)+c(n-1), b(2) = 5220, b(1) = 180, b(0) = 6, c(n) = c(n-1)/(4*b(n-1)+c(n-1))+20*b(n-1)+5*c(n-1), c(2) = 4350, c(1) = 150, c(0) = 6
+; Formula: a(n) = b(n-1)+max(29*b(n-1),1), a(1) = 30, a(0) = 1, b(n) = max(29*b(n-1),1), b(1) = 29, b(0) = 1
 
-mov $3,1
 add $0,1
 lpb $0
   sub $0,1
-  mul $2,4
-  add $2,$3
-  div $3,$2
-  mov $1,$2
-  mul $2,5
-  add $3,$2
+  mov $2,$1
+  mul $1,29
+  max $1,1
   add $2,$1
 lpe
-mov $0,$1
+mov $0,$2

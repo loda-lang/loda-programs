@@ -1,12 +1,12 @@
 ; A093357: Number of occurrences of pattern 2-1 after n iterations of morphism A007413.
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,4,20,88,368,1504,6080,24448,98048,392704,1571840,6289408,25161728,100655104,402636800,1610579968,6442385408,25769672704,103078952960,412316336128,1649266393088,6597067669504,26388274872320
-; Formula: a(n) = 4*(binomial(3*2^(n-1),2)/3)
+; Formula: a(n) = ((6*2^n-2)^2)/24
 
-sub $0,1
 mov $1,2
 pow $1,$0
-mul $1,3
-bin $1,2
-div $1,3
-mul $1,4
+mul $1,6
+sub $1,2
+pow $1,2
+div $1,24
 mov $0,$1

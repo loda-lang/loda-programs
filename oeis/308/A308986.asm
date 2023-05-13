@@ -1,5 +1,5 @@
 ; A308986: Expansion of Product_{k>=0} 1/(1 + 2*x^(2^k)).
-; Submitted by Ciceronian
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,-2,2,-4,10,-20,36,-72,154,-308,596,-1192,2420,-4840,9608,-19216,38586,-77172,154036,-308072,616740,-1233480,2465768,-4931536,9865492,-19730984,39457128,-78914256,157838120,-315676240,631333264,-1262666528,2525371642,-5050743284
 
 mov $2,1
@@ -13,7 +13,7 @@ lpb $0
     trn $4,1
     mod $6,2
     mov $7,$4
-    seq $7,10815 ; From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m>=1} (1 - q^m).
+    seq $7,22525 ; Nexus numbers (n+1)^9-n^9.
     mov $9,10
     add $9,$5
     mul $7,$$9

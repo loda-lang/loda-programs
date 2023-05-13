@@ -1,13 +1,18 @@
 ; A029316: Expansion of 1/((1-x^3)(1-x^8)(1-x^9)(1-x^10)).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,0,0,1,0,0,1,0,1,2,1,1,2,1,1,2,2,2,4,3,3,4,3,3,5,4,5,7,6,6,8,6,7,9,8,9,12,10,11,13,12,12,15,14,15,18,17,17,21,19,20,23,22,23,27,25,27,30,29,30,34,32,34,38,37,38
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
   mov $2,$0
-  max $2,0
-  seq $2,25918 ; Expansion of 1/((1-x^8)(1-x^9)(1-x^10)).
+  trn $2,1
+  mov $3,$2
+  mod $3,2
+  add $2,$3
+  add $2,$3
+  seq $2,25877 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^8)).
+  add $0,1
+  trn $0,10
   add $1,$2
 lpe
 mov $0,$1

@@ -4,7 +4,14 @@
 
 lpb $0
   mov $2,$0
-  seq $2,189036 ; a(n)= lcm(n,n')/gcd(n,n'), where n' is the arithmetic derivative of n.
+  add $2,1
+  mov $3,$2
+  seq $2,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  mov $4,$2
+  gcd $4,$3
+  div $3,$4
+  dif $2,$4
+  mul $2,$3
   sub $0,1
   add $1,$2
 lpe

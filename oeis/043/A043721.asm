@@ -1,5 +1,5 @@
 ; A043721: Numbers n such that number of runs in the base 2 representation of n is congruent to 0 mod 3.
-; Submitted by Kotenok2000
+; Submitted by Melilot
 ; 5,9,11,13,17,19,23,25,27,29,33,35,39,42,47,49,51,55,57,59,61,65,67,71,74,79,82,84,86,90,95,97,99,103,106,111,113,115,119,121,123,125,129,131,135,138,143,146,148,150,154,159,162,164
 
 mov $2,$0
@@ -13,6 +13,7 @@ lpb $2
   mul $3,2
   cmp $3,2
   sub $0,$3
+  add $1,$3
   add $1,1
   mov $4,$0
   max $4,0

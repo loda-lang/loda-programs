@@ -1,5 +1,5 @@
 ; A330868: Number of proper divisors d of n such that n-d is squarefree.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,1,1,2,0,2,1,2,1,1,1,3,0,2,2,2,0,2,0,3,1,2,1,3,0,1,1,3,0,2,1,2,2,2,2,4,0,2,2,4,0,4,1,4,2,1,1,3,1,0,1,3,0,2,0,2,1,2,1,5,0,2,2,1,0,3,1,4,2,3,1,4,0,2,2,3,2,3,1,3,1,1,1,6,0,2,2,4,0,3
 
 mov $2,1
@@ -16,9 +16,7 @@ lpb $0
     trn $7,1
     seq $7,71325 ; Number of squares > 1 dividing n.
     add $7,2
-    seq $7,345378 ; Number of terms m <= n, where m is a term in A006497.
     cmp $7,2
-    cmp $7,$8
     mov $9,10
     add $9,$4
     sub $4,$0

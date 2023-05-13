@@ -7,7 +7,9 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,181357 ; Sum of squares of digits of Fibonacci(n).
+  seq $3,71 ; a(n) = Fibonacci(n) - 1.
+  add $3,1
+  seq $3,3132 ; Sum of squares of digits of n.
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -7,7 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,24702 ; a(n) = (prime(n)^2 - 1)/24.
+  add $3,2
+  seq $3,40 ; The prime numbers.
+  pow $3,2
+  div $3,8
+  mul $3,2
+  sub $3,6
+  div $3,6
+  add $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3

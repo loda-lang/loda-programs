@@ -1,14 +1,29 @@
 ; A045375: Primes congruent to {1, 2} mod 6.
-; Submitted by Christian Krause
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 2,7,13,19,31,37,43,61,67,73,79,97,103,109,127,139,151,157,163,181,193,199,211,223,229,241,271,277,283,307,313,331,337,349,367,373,379,397,409,421,433,439,457,463,487,499,523,541,547,571,577,601,607,613,619,631,643,661,673,691
 
 mov $2,6
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $5,0
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
+  add $1,1
+  lpb $1
+    gcd $5,3
+    mov $6,$1
+    div $6,3
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
   add $2,6
   sub $3,$0
 lpe

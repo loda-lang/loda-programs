@@ -1,19 +1,8 @@
 ; A160723: First differences of A160722.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,4,4,10,4,10,10,22,4,10,10,22,10,22,22,46,4,10,10,22,10,22,22,46,10,22,22,46,22,46,46,94,4,10,10,22,10,22,22,46,10,22,22,46,22,46,46,94,10,22,22,46,22,46,46,94,22,46,46,94,46,94,94,190
 
-mov $3,$0
-lpb $3
-  div $3,2
-  sub $1,$3
-lpe
-mov $2,$1
-add $2,$0
-mov $1,2
-pow $1,$2
-mov $0,$1
-mul $0,2
-sub $0,2
-div $0,2
+dif $0,2
+seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
 mul $0,3
-add $0,1
+sub $0,2

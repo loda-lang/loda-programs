@@ -1,10 +1,15 @@
 ; A009478: Expansion of sin(sin(x))*x.
 ; Submitted by Fardringle
 ; 0,2,-8,72,-1024,18720,-451200,13870976,-517341184,22907884032,-1190546278400,71557772290048,-4904509780131840,379465209995010048,-32882543112668741632,3167852772782079836160,-336982188500401608720384
-; Formula: a(n) = 2*n*A003712(max(n-1,0))
+; Formula: a(n) = 2*n*A003724(2*max(n-1,0)+1)*(-1)^max(n-1,0)
 
 mov $1,$0
 trn $0,1
-seq $0,3712 ; E.g.f. sin(sin(x)) (odd powers only).
+mov $2,-1
+pow $2,$0
+mul $0,2
+add $0,1
+seq $0,3724 ; Number of partitions of n-set into odd blocks.
+mul $0,$2
 mul $0,$1
 mul $0,2

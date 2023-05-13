@@ -1,23 +1,19 @@
 ; A320667: First differences of A066194.
-; Submitted by Jon Maiga
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,-1,5,-1,-2,1,10,-1,-2,1,-5,1,2,-1,21,-1,-2,1,-5,1,2,-1,-10,1,2,-1,5,-1,-2,1,42,-1,-2,1,-5,1,2,-1,-10,1,2,-1,5,-1,-2,1,-21,1,2,-1,5,-1,-2,1,10,-1,-2,1,-5,1,2,-1,85,-1,-2,1,-5,1,2,-1,-10
 
-mov $3,2
+mov $4,$0
+mov $3,3
 lpb $3
-  sub $3,1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  mov $5,$0
-  max $5,0
-  seq $5,268716 ; a(n) = 2*A006068(n); main diagonal of A268714.
-  sub $0,1
+  seq $0,6068 ; a(n) is Gray-coded into n.
   mov $2,$3
-  mul $2,$5
+  mul $2,$0
+  mul $4,$3
   add $1,$2
-  mov $4,$5
-  mov $6,5
+  mov $5,$0
 lpe
-min $6,1
-mul $6,$4
-sub $1,$6
+sub $1,$5
 mov $0,$1
-div $0,2

@@ -1,7 +1,18 @@
 ; A160713: 3 times numbers of Gould's sequence: a(n) = A001316(n)*3.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 3,6,6,12,6,12,12,24,6,12,12,24,12,24,24,48,6,12,12,24,12,24,24,48,12,24,24,48,24,48,48,96,6,12,12,24,12,24,24,48,12,24,24,48,24,48,48,96,12,24,24,48,24,48,48,96,24,48,48,96,48,96,96,192,6,12,12,24,12,24,24,48
 
-dif $0,2
-seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+mov $1,3
+add $0,3
+lpb $0
+  sub $0,$1
+  mov $4,$0
+  mul $4,2
+  bin $4,$0
+  mov $3,512
+  gcd $3,$4
+  mov $1,0
+  mov $2,$3
+lpe
+mov $0,$2
 mul $0,3

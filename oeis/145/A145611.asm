@@ -1,8 +1,19 @@
 ; A145611: Numerator of the polynomial A_l(x) = sum_{d=1..l-1} x^(l-d)/d for index l=2n+1 evaluated at x=2.
-; Submitted by Christian Krause
+; Submitted by USTL-FIL (Lille Fr)
 ; 5,131,1327,148969,89422,7869871,204620705,32739453941,556571247527,42299423848079,84598851790183,31132377803126339,155661889412050564,3735885348093583561,216681350219210744683,429895798848743086730197
-; Formula: a(n) = A145656(2*(n+1))
 
+mov $1,1
 add $0,1
 mul $0,2
-seq $0,145656 ; a(n) = numerator of polynomial of genus 1 and level n for m = 2
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
+  mul $3,2
+  mul $1,$2
+lpe
+add $4,$3
+gcd $3,$1
+div $4,$3
+mov $0,$4

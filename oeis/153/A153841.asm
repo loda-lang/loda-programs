@@ -1,8 +1,9 @@
 ; A153841: First Sunday in n-th month of 365-day year starting on Tuesday
-; Submitted by [SG]KidDoesCrunch
+; Submitted by USTL-FIL (Lille Fr)
 ; 6,3,3,7,5,2,7,4,1,6,3,1
-; Formula: a(n) = (41^((24*((4*n)/3)-40)/9)-((24*((4*n)/3)-40)/9)+2)%10
+; Formula: a(n) = (41^((24*((4*(n%16))/3)-40)/9)-((24*((4*(n%16))/3)-40)/9)+2)%10
 
+mod $0,16
 mul $0,4
 div $0,3
 mul $0,6

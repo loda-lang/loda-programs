@@ -1,6 +1,24 @@
 ; A040595: Continued fraction for sqrt(620).
+; Submitted by Kotenok2000
 ; 24,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1
-; Formula: a(n) = A003188(A040270(n))
 
-seq $0,40270 ; Continued fraction for sqrt(287).
-seq $0,3188 ; Decimal equivalent of Gray code for n.
+pow $0,2
+mov $2,10
+mov $3,$0
+gcd $0,8
+lpb $3
+  mov $3,3
+  add $0,6
+  mov $2,7
+lpe
+mul $0,$2
+trn $0,63
+mov $1,$0
+mul $1,2
+div $0,4
+mul $0,7
+add $0,$1
+div $0,2
+mul $0,3
+div $0,4
+add $0,1

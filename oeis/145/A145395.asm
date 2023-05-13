@@ -6,7 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,79261 ; Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
+  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mov $6,$1
+  div $6,2
+  mul $6,$3
+  mov $3,$6
   gcd $3,2
   sub $0,$3
   add $0,1

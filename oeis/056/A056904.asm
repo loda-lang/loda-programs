@@ -15,6 +15,4 @@ lpb $3
   sub $3,$0
 lpe
 add $0,$2
-div $0,12
-mul $0,2
-div $0,4
+div $0,24

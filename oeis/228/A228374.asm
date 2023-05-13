@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,62234 ; a(n) = 2*prime(n) - prime(n+1).
+  seq $3,62234 ; From Bertrand's postulate: a(n) = 2*prime(n) - prime(n+1).
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   cmp $3,0

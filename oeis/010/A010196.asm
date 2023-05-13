@@ -1,8 +1,8 @@
 ; A010196: Continued fraction for sqrt(137).
-; Submitted by Simon Strandgaard
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 11,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1
 
-mul $0,4
+mul $0,2
 add $0,1
 lpb $0
   sub $0,1
@@ -14,6 +14,6 @@ lpb $0
   sub $1,1
   seq $1,128309 ; a(n) = 2*A000069(n).
   div $1,2
-  add $3,1
+  add $3,2
 lpe
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A016119: Minimal number of cosets in an orthogonal sublattice of A_n (minimal number of paths in any trellis diagram).
-; Submitted by William Michael Kanar
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,8,8,48,16,96,128
 
 add $0,1
@@ -18,5 +18,6 @@ lpb $0
   mov $3,$4
   mul $3,$1
   add $1,$3
+  mov $2,$4
 lpe
 mov $0,$1

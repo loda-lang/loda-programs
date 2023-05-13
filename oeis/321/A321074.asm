@@ -4,8 +4,27 @@
 
 mov $1,11
 pow $1,$0
+mov $2,1
 add $0,1
-seq $0,321072 ; One of the two successive approximations up to 11^n for 11-adic integer sqrt(3). Here the 5 (mod 11) case (except for n = 0).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,4
+  add $3,$2
+  mul $3,2
+  add $5,4
+  add $2,$3
+  pow $4,2
+  sub $4,2
+  add $4,$5
+  mod $4,$2
+  mov $3,1
+  add $3,$4
+  add $4,3
+  mov $5,$3
+  sub $5,6
+lpe
+mov $0,$4
 add $0,$1
 div $0,$1
 sub $0,1

@@ -1,13 +1,7 @@
 ; A081259: a(n) is the smallest k such that C(3n,n) divides k!.
+; Submitted by USTL-FIL (Lille Fr)
 ; 2,5,7,11,13,17,19,23,23,29,31,31,37,41,43,47,47,53,53,59,61,61,67,71,73,73,79,83,83,89,89,89,97,101,103,107,109,113,113,113,113,113,127,131,131,137,139,139,139,149,151,151,157,157,163,167,167,173,173,179,181
+; Formula: a(n) = A151799(3*n)
 
-lpb $0
-  mov $2,$0
-  sub $0,1
-  add $1,2
-  gcd $2,$1
-  cmp $2,1
-  add $1,$2
-lpe
-add $1,2
-mov $0,$1
+mul $0,3
+seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
