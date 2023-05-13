@@ -1,4 +1,5 @@
 ; A165479: a(n) = Least i in range [A165478(n),A165478(n+1)] for which abs(A165477(i)) gets the maximum value in that range.
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 43690,131070,174761,262141,305832,393212,436903,524283,567974,655354,699045,786425,830116,917496,961187,1048567,1092258,1179638,1223329,1310709,1354400,1441780,1485471,1572851,1616542,1703922
 
 mov $4,$0
@@ -19,7 +20,7 @@ lpb $9
     mul $2,2
     add $7,1
     gcd $7,3
-    seq $8,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+    mov $8,1
   lpe
   mov $3,$8
   add $3,$7
