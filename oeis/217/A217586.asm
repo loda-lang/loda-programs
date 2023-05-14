@@ -1,16 +1,9 @@
 ; A217586: a(1) = 1 and, for all n >= 1, if a(n) = 0 then a(2*n) = 1 and a(2*n+1) = 0 whereas if a(n) = 1 then a(2*n) = 0 and a(2*n+1) = 0.
-; Submitted by Stony666
+; Submitted by arkiss
 ; 1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0
+; Formula: a(n) = A245187(A092754(n)-1)%2
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mov $3,1
-  add $3,$0
-  div $0,2
-  add $1,$2
-  mul $2,$3
-lpe
-add $1,1
-mov $0,$1
+seq $0,92754 ; a(1)=1, a(2n)=2a(n)+1, a(2n+1)=2a(n)+2.
+sub $0,1
+seq $0,245187 ; Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
 mod $0,2

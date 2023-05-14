@@ -15,24 +15,16 @@ lpb $0
     sub $3,$4
   lpe
   mov $5,1
-  mov $6,2
   mov $3,$2
   lpb $3
+    mov $6,$3
     mov $7,$3
-    lpb $7
-      mov $8,$3
-      mod $8,$6
-      min $8,1
-      add $6,1
-      sub $7,$8
-    lpe
-    mov $7,$6
     sub $7,1
     seq $7,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
     lpb $3
       dif $3,$6
     lpe
-    mul $4,$7
+    mul $5,$7
     add $5,$4
   lpe
   mul $3,$5

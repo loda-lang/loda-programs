@@ -540,6 +540,7 @@ A285075: Positions of 1 in A285073; complement of A285074.
 A285126: Positions of 0 in A285125; complement of A285127.
 A285127: Positions of 1 in A285125; complement of A285126.
 A285129: Positions of 0 in A285128; complement of A285130.
+A285141: Positions of 1 in A285139; complement of A285140.
 A285142: 1-limiting word of the morphism 0->10, 1->0010.
 A285143: Positions of 0 in A285142; complement of A285144.
 A285256: Positions of 0 in A285255; complement of A285257.
@@ -594,6 +595,7 @@ A296908: Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) < #
 A296923: Primes p such that Legendre(-5,p) = -1.
 A296924: Primes p such that Legendre(-6,p) = 0 or 1.
 A297155: a(1) = a(2) = 0, after which, a(n) = 1+a(n/2) if n is of the form 4k+2, otherwise a(n) = a(A252463(n)).
+A301517: Numbers whose ratio (sum of nonsquarefree divisors)/(sum of squarefree divisors) is a positive integer.
 A302253: Positions of 3 in A190436.
 A305390: A ternary tribonacci sequence: define the morphism f: 1 -> 2, 2 -> 3, 3 -> 1,2,3; let S[k] be result of applying f k times to 1, for k =- 0,1,2,...; sequence gives limit S[3k+1] as k -> oo.
 A305490: Fixed point of the morphism 0->120, 1->110, 2->100.

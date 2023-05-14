@@ -18,7 +18,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $10,$0
-    sub $4,$0
+    gcd $4,$0
     sub $4,$0
     mul $7,$$9
     max $4,$5

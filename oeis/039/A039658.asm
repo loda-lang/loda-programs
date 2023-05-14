@@ -10,7 +10,8 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,55879 ; Least nondecreasing sequence with a(1) = 1 and Hankel transform {1,1,1,1,...}.
+  div $2,2
+  seq $2,7317 ; Binomial transform of Catalan numbers.
   add $1,$2
 lpe
 mov $0,$1

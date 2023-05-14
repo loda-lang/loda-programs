@@ -1,9 +1,32 @@
 ; A111806: Riordan array (1/(1+3x+2x^2),x/(1+3x+2x^2)).
-; Submitted by Leviathan
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,-3,1,7,-6,1,-15,23,-9,1,31,-72,48,-12,1,-63,201,-198,82,-15,1,127,-522,699,-420,125,-18,1,-255,1291,-2223,1795,-765,177,-21,1,511,-3084,6562,-6768,3840,-1260,238,-24,1,-1023,7181,-18324,23276,-16758,7266,-1932,308,-27,1,2047,-16398,49029,-74616,65870
-; Formula: a(n) = A110441(n)*A097807(n)
 
-mov $1,$0
-seq $1,110441 ; Triangular array formed by the Mersenne numbers.
-seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
-mul $0,$1
+mov $3,3
+mov $5,3
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+mov $1,3
+mul $0,-1
+add $0,$2
+sub $2,$0
+lpb $0
+  sub $0,1
+  add $2,1
+  add $5,$3
+  mul $3,-2
+  add $3,$1
+  mov $1,$3
+  sub $1,$5
+  mul $1,$2
+  sub $2,1
+  add $4,1
+  div $1,$4
+  add $3,$1
+  mul $5,-1
+  add $5,$1
+lpe
+mov $0,$1
+div $0,3

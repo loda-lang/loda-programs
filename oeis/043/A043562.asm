@@ -1,10 +1,11 @@
 ; A043562: Number of runs in base-10 representation of n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1
-; Formula: a(n) = A136522(n)*(A264668(n)-1)+2
 
+mov $2,$0
+seq $2,4086 ; Read n backwards (referred to as R(n) in many sequences).
 mov $1,$0
-seq $1,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
+cmp $1,$2
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 mul $1,$0

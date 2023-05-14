@@ -7,7 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,39915 ; Smallest k such that k(p-1)-1 is positive and divisible by p where p = n-th prime.
+  seq $5,40 ; The prime numbers.
+  mov $6,1
+  seq $6,54272 ; Number of primes in the interval [prime(n), prime(n)^2].
+  sub $6,$5
+  mov $7,0
+  gcd $7,$6
+  mov $5,$7
+  add $5,2
   mov $3,$1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,$5

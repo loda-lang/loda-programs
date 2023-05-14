@@ -4,5 +4,22 @@
 
 mov $1,$0
 add $1,3
-seq $1,108863 ; Number of Dyck paths containing exactly one UUUD.
-mov $0,$1
+mov $2,$1
+mov $5,1
+mov $7,$1
+add $7,2
+lpb $1
+  sub $1,1
+  sub $3,$7
+  bin $3,$1
+  sub $5,1
+  trn $1,1
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $6,$4
+  sub $7,1
+  sub $2,3
+  cmp $3,3
+lpe
+mov $0,$6

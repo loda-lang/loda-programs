@@ -1,14 +1,22 @@
 ; A040370: Continued fraction for sqrt(390).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Libristes] Dudumomo
 ; 19,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1
-; Formula: a(n) = (((3*(A040297(n)+1))/2+3*(A040297(n)+1))-9)/4+1
 
-seq $0,40297 ; Continued fraction for sqrt(315).
-add $0,1
-mul $0,3
-add $1,$0
-div $1,2
+gcd $0,262156
+mul $0,42
+mod $0,13
+mov $1,$0
+div $1,5
+mul $1,12
 add $0,$1
+sub $0,2
+dif $0,8
+add $0,1
+mov $2,$0
+mul $2,3
+div $2,2
+mul $0,3
+add $0,$2
 sub $0,9
 div $0,4
 add $0,1

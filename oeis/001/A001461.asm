@@ -9,7 +9,17 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,60280 ; Number of orbits of length n under the map whose periodic points are counted by A001350.
+  mov $8,1
+  add $8,$0
+  mov $9,0
+  gcd $9,$8
+  pow $9,2
+  seq $0,31367 ; Inflation orbit counts.
+  mul $0,91
+  mul $8,$0
+  div $8,$9
+  mov $0,$8
+  div $0,91
   mov $4,$0
   cmp $4,0
   mov $5,$0

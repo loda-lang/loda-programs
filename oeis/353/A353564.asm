@@ -1,5 +1,5 @@
 ; A353564: Product_{d|n, d<n} A276086(phi(d)), where A276086 is primorial base exp-function, and phi is Euler totient function.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,2,4,2,12,2,12,6,36,2,108,2,20,54,108,2,180,2,972,30,180,2,8748,18,100,30,300,2,43740,2,1620,270,900,90,24300,2,500,150,131220,2,22500,2,24300,4050,4500,2,1968300,10,121500,1350,7500,2,112500,810,67500,750,22500,2,265720500,2,28,3750,364500,450
 
 mov $2,$0
@@ -9,6 +9,7 @@ mov $4,$0
 lpb $4
   mov $0,$2
   sub $0,$4
+  max $4,$0
   mov $1,$0
   gcd $1,$4
   bin $1,$0

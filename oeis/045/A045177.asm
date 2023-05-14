@@ -1,4 +1,4 @@
-; A045177: Numbers k with property that in base 5-representation the numbers of 0's and 2's are 1 and 1, respectively.
+; A045177: Numbers whose base-5 representation contains exactly one 0 and one 2.
 ; Submitted by Science United
 ; 10,27,35,51,53,54,55,65,70,77,85,102,110,132,136,138,139,142,147,152,160,176,178,179,180,190,195,202,210,227,235,256,258,259,266,268,269,271,273,274,276,278,279,280,290,295,326,328,329,330,340,345,351,353
 

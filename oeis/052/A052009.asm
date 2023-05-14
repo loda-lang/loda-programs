@@ -6,8 +6,11 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,4186 ; Arrange digits of n in decreasing order.
   mov $3,$1
-  seq $3,52008 ; a(n) = 'n with digits sorted in ascending order' + 'n with digits sorted in descending order'.
+  seq $3,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+  add $3,$5
   mul $3,2
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

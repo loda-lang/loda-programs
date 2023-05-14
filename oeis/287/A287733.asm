@@ -7,8 +7,16 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  max $0,0
-  seq $0,154293 ; Integers of the form t/6, where t is a triangular number (A000217).
+  mov $5,$0
+  div $5,2
+  mod $5,2
+  add $5,$0
+  add $0,1
+  bin $0,2
+  pow $5,2
+  add $5,$0
+  mov $0,$5
+  div $0,2
   mov $2,$3
   mul $2,$0
   add $4,$2
