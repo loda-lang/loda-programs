@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; Odd primes.
+  seq $3,40 ; The prime numbers.
   mov $5,$3
   sub $3,1
   seq $3,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.

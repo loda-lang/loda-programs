@@ -7,5 +7,8 @@ lpb $1
   sub $1,1
   add $0,$1
   trn $0,1
-  seq $0,66249 ; Inverse permutation to A066248.
+  mov $2,-1
+  pow $2,$0
+  add $0,$2
+  seq $0,66251 ; Inverse permutation to A066250.
 lpe

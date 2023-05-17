@@ -4,4 +4,4 @@
 ; Formula: a(n) = A005836(A014312(n))
 
 seq $0,14312 ; Numbers with exactly 4 ones in binary expansion.
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.

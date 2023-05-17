@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,7604 ; a(n)=a(n-1)+a(n-1- number of odd terms so far).
+  seq $0,7604 ; a(n) = a(n-1) + a(n-1-(number of odd terms so far)).
   mov $2,$3
   mul $2,$0
   add $4,$2

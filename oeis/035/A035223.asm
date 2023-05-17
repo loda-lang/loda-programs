@@ -1,7 +1,19 @@
 ; A035223: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 41.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,0,3,2,0,0,4,1,4,0,0,0,0,0,5,0,2,0,6,0,0,2,0,3,0,0,0,0,0,2,6,0,0,0,3,2,0,0,8,1,0,2,0,2,4,0,0,1,6,0,0,0,0,0,0,0,0,2,0,2,4,0,7,0,0,0,0,0,0,0,4,2,4,0,0,0,0,0,10,1
-; Formula: a(n) = A013968(n)%41
 
-seq $0,13968 ; a(n) = sigma_20(n), the sum of the 20th powers of the divisors of n.
+add $0,1
+mov $2,$0
+lpb $0
+  mov $3,$2
+  dif $3,$0
+  cmp $3,$2
+  cmp $3,0
+  mul $3,$0
+  pow $3,20
+  sub $0,1
+  add $1,$3
+lpe
+add $1,1
+mov $0,$1
 mod $0,41

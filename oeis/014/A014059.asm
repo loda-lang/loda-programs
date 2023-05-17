@@ -19,7 +19,6 @@ lpb $1
   add $4,21
   add $7,21
   mod $1,$4
-  mov $5,-1
   mov $6,4
   add $6,$1
   div $1,10

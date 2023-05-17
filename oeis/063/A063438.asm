@@ -8,7 +8,14 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,59532 ; Beatty sequence for 1 + Pi.
+  mov $6,$0
+  add $0,1
+  mov $7,97
+  mul $7,$0
+  div $7,113
+  mul $0,4
+  sub $0,$7
+  add $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

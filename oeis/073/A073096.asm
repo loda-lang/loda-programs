@@ -1,14 +1,11 @@
 ; A073096: Maximal element in continued fraction for s(n) = sum( k>=n,1/2^(2^k) ).
-; Submitted by Stony666
+; Submitted by Leviathan
 ; 6,6,18,258,65538,4294967298,18446744073709551618,340282366920938463463374607431768211458,115792089237316195423570985008687907853269984665640564039457584007913129639938
-; Formula: a(n) = 4*((2^(2^n)-4)/4)+6
+; Formula: a(n) = 2^(2^max(n,1))+2
 
+max $0,1
 mov $1,2
 pow $1,$0
-mov $2,2
-pow $2,$1
-mov $0,$2
-sub $0,4
-div $0,4
-mul $0,4
-add $0,6
+mov $0,2
+pow $0,$1
+add $0,2

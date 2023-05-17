@@ -1,4 +1,4 @@
-; A043395: Numbers having three 0's in base 7.
+; A043395: Numbers whose base-7 representation contains exactly three 0's.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 343,686,1029,1372,1715,2058,2402,2403,2404,2405,2406,2407,2408,2415,2422,2429,2436,2443,2450,2499,2548,2597,2646,2695,2744,3087,3430,3773,4116,4459,4803,4804,4805,4806,4807,4808,4809
 

@@ -1,16 +1,19 @@
 ; A025821: Expansion of 1/((1-x^2)(1-x^8)(1-x^9)).
-; Submitted by Skillz
+; Submitted by skildude
 ; 1,0,1,0,1,0,1,0,2,1,2,1,2,1,2,1,3,2,4,2,4,2,4,2,5,3,6,4,6,4,6,4,7,5,8,6,9,6,9,6,10,7,11,8,12,9,12,9,13,10,14,11,15,12,16,12,17,13,18,14,19,15,20,16,21,17,22,18,23
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
-  sub $0,$3
   mov $2,$0
-  mul $2,2
-  max $2,0
-  seq $2,33183 ; a(n) = number of pairs (p,q) such that 4*p + 9*q = n.
-  mov $3,5
-  add $1,$2
+  lpb $2
+    mov $4,$2
+    trn $4,1
+    seq $4,8618 ; Expansion of 1/((1-x^2)(1-x^9)).
+    div $0,3
+    trn $2,8
+    add $3,$4
+  lpe
+  trn $0,12
+  add $1,$3
 lpe
 mov $0,$1

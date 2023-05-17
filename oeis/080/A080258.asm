@@ -7,8 +7,12 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  add $5,1
   mov $3,$1
-  seq $3,55212 ; Number of composite divisors of n.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,$5
   cmp $3,3
   sub $0,$3
   add $1,1

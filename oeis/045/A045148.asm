@@ -1,4 +1,4 @@
-; A045148: Numbers n with property that in base 4 representation the numbers of 2's and 3's are 3 and 0, respectively.
+; A045148: Numbers whose base-4 representation contains exactly three 2's and no 3's.
 ; Submitted by mmonnin
 ; 42,106,138,154,162,166,168,169,298,362,394,410,418,422,424,425,522,538,546,550,552,553,586,602,610,614,616,617,642,646,648,649,658,662,664,665,672,673,676,677,1066,1130,1162,1178,1186
 

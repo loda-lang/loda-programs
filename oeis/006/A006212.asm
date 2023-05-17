@@ -6,8 +6,12 @@ mov $1,$0
 mov $5,2
 lpb $5
   sub $5,1
+  mov $6,$1
+  seq $6,122045 ; Euler (or secant) numbers E(n).
   mov $0,$1
-  seq $0,260786 ; Twice the Euler or up/down numbers A000111.
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  gcd $0,$6
+  mul $0,2
   sub $4,$3
   add $1,2
   bin $1,$5

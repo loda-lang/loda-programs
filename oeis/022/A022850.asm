@@ -3,4 +3,9 @@
 
 pow $0,2
 mul $0,7
-seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+lpb $0
+  add $1,2
+  trn $0,$1
+lpe
+div $1,2
+mov $0,$1

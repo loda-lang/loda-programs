@@ -6,5 +6,5 @@
 mov $1,$0
 div $0,5
 add $1,$0
-seq $1,43394 ; Numbers having two 0's in base 7.
+seq $1,43394 ; Numbers whose base-7 representation contains exactly two 0's.
 mov $0,$1

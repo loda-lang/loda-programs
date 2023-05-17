@@ -1,4 +1,4 @@
-; A045101: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 3 and 1, respectively.
+; A045101: Numbers whose base-4 representation contains exactly three 1's and one 2.
 ; Submitted by DoctorNow
 ; 86,89,101,149,278,281,293,326,329,338,344,347,350,353,356,359,365,374,377,389,401,404,407,413,437,470,473,485,533,581,593,596,599,605,629,725,854,857,869,917,1046,1049,1061,1094,1097
 

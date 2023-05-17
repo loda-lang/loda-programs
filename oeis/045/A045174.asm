@@ -1,4 +1,4 @@
-; A045174: Numbers n with property that in base 5 representation the numbers of 0's and 2's are 0 and 2, respectively.
+; A045174: Numbers whose base-5 representation contains no 0's and exactly two 2's.
 ; Submitted by Science United
 ; 12,37,57,61,63,64,67,72,87,112,162,182,186,188,189,192,197,212,237,282,286,288,289,292,297,306,308,309,316,318,319,321,323,324,332,336,338,339,342,347,357,361,363,364,367,372,412,432
 

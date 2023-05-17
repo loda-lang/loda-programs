@@ -1,13 +1,17 @@
 ; A047363: Numbers that are congruent to {0, 2, 3, 4, 5} mod 7.
-; Submitted by Matthias Lehmkuhl
+; Submitted by USTL-FIL (Lille Fr)
 ; 0,2,3,4,5,7,9,10,11,12,14,16,17,18,19,21,23,24,25,26,28,30,31,32,33,35,37,38,39,40,42,44,45,46,47,49,51,52,53,54,56,58,59,60,61,63,65,66,67,68,70,72,73,74,75,77,79
+; Formula: a(n) = ((26*n)%((2*((174*n-6)/10))/3+1))/2
 
-mov $1,$0
-add $1,1
-lpb $1
-  add $0,$1
-  trn $1,2
-  sub $0,$1
-  trn $1,3
-lpe
-sub $0,1
+mul $0,2
+mov $1,87
+mul $1,$0
+sub $1,6
+div $1,10
+mul $1,2
+div $1,3
+mov $2,$1
+add $2,1
+mul $0,13
+mod $0,$2
+div $0,2
