@@ -4,7 +4,7 @@
 
 seq $0,62570 ; a(n) = phi(2*n).
 lpb $0
-  add $1,1
   dif $0,3
+  add $1,1
 lpe
 mov $0,$1

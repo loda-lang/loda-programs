@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,102397 ; a(n) = concatenation of first n elements of Thue-Morse sequence A010059.
+  seq $3,19299 ; First n elements of Thue-Morse sequence A010059 read as a binary number.
+  seq $3,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
   add $3,1
   mov $5,$3
   mul $3,338

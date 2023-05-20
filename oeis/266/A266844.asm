@@ -12,5 +12,5 @@ mul $0,$1
 div $0,6
 mul $0,$1
 div $0,2
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.
 seq $0,7089 ; Numbers in base 3.

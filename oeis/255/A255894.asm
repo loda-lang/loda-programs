@@ -4,9 +4,19 @@
 
 mov $2,$0
 add $2,1
-seq $0,60130 ; Number of nonzero digits in factorial base representation (A007623) of n; minimum number of transpositions needed to compose each permutation in the lists A060117 & A060118.
-mov $1,$0
+mov $3,$0
+mov $4,2
+lpb $0
+  div $0,$4
+  mod $3,$4
+  min $3,1
+  add $5,$3
+  mov $3,$0
+  add $4,1
+lpe
+mov $1,$5
 gcd $1,$2
+mov $0,$5
 mul $0,$1
 div $0,2
 add $0,1

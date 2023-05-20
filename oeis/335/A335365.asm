@@ -10,11 +10,10 @@ lpb $2
   mov $4,0
   mov $3,$1
   lpb $3
+    div $3,5
     mul $5,4
     mod $5,10
     bin $5,2
-    mul $3,2
-    div $3,10
     add $4,$5
   lpe
   mov $3,$4

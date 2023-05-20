@@ -8,7 +8,7 @@ pow $2,2
 mov $4,1073741824
 add $0,13
 lpb $2
-  sub $2,1
+  sub $2,6
   mul $3,7
   div $3,22
   pow $3,$0

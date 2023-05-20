@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; Odd primes.
+  add $3,1
+  seq $3,40 ; The prime numbers.
   mov $5,$3
   seq $3,52343 ; Number of ways to write n as the unordered sum of two triangular numbers (zero allowed).
   cmp $3,0

@@ -6,8 +6,15 @@ add $0,1
 mov $3,$0
 pow $3,2
 lpb $3
+  mov $6,$2
+  add $6,1
+  mov $7,2
+  pow $7,$6
+  sub $7,2
+  gcd $6,$7
   mov $4,$2
-  seq $4,244149 ; a(n) = 2*(n*Denominator(((n-1)*(n^2)+2^(n+1)-4)/(2*n))-n)/n+1.
+  div $4,$6
+  add $4,1
   cmp $4,1
   sub $0,$4
   add $2,1

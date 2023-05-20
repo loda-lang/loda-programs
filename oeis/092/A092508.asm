@@ -5,8 +5,23 @@
 mov $1,1
 div $0,2
 lpb $0
+  mov $4,$0
+  div $4,2
   mov $2,$0
-  seq $2,8743 ; Molien series for 3-dimensional group [3,4]+ = 432.
+  gcd $2,2
+  pow $2,2
+  div $2,2
+  pow $2,2
+  add $2,$4
+  sub $2,1
+  pow $2,2
+  div $2,8
+  mov $3,2
+  add $3,$2
+  mul $3,2
+  div $3,3
+  mov $2,$3
+  sub $2,1
   sub $0,1
   add $1,$2
 lpe

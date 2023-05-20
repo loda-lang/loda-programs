@@ -1,4 +1,4 @@
-; A196251: Leading terms of successive absolute differences of the partition numbers (A000041)
+; A196251: Leading terms of successive absolute differences of the partition numbers (A000041).
 ; Submitted by Joe
 ; 1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,1,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,0,1,0,0,0,0
 

@@ -9,7 +9,9 @@ lpb $2
   add $1,1
   mov $3,$1
   div $3,2
-  seq $3,325660 ; Number of ones in the q-signature of n.
+  seq $3,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
+  sub $3,1
+  seq $3,56169 ; Number of unitary prime divisors of n.
   cmp $3,0
   sub $0,$3
   add $1,1

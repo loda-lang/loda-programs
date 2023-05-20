@@ -1,9 +1,7 @@
 ; A139378: Number of 2-digit multiples of n whose digits sum to n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,1,3,1,1,3,1,1,9
-; Formula: a(n) = gcd(9,n-224)
+; Formula: a(n) = gcd(n+1,9)
 
-sub $0,224
-mov $1,9
-gcd $1,$0
-mov $0,$1
+add $0,1
+gcd $0,9

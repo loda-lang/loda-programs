@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,89801 ; a(n) = 0 unless n = 3j^2+2j or 3j^2+4j+1 for some j>=0, in which case a(n) = 1.
+  seq $2,89801 ; a(n) = 0 unless n = 3j^2 + 2j or 3j^2 + 4j + 1 for some j >= 0, in which case a(n) = 1.
   add $1,$2
   mov $3,2
   add $3,$4

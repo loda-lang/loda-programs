@@ -8,7 +8,13 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,204914 ; Ordered differences of squared primes.
+  seq $3,204890 ; Ordered differences of primes.
+  mov $4,$1
+  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  mul $4,2
+  add $4,$3
+  mul $4,$3
+  mov $3,$4
   gcd $3,$0
   add $1,1
   add $2,$3

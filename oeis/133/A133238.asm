@@ -1,7 +1,7 @@
 ; A133238: Dimensions of certain Lie algebra (see reference for precise definition).
-; Submitted by Dylan Delgado
+; Submitted by hriach
 ; 1,52,1053,12376,100776,627912,3187041,13748020,51949755,175847880,542393670,1544927904,4107092288,10278624864,24388573014,55188666312,119696471453,249869263644,503865726155,984563860280,1869304764600,3456658569000,6238533257775
-; Formula: a(n) = (binomial(n+7,n)*binomial(2*n+11,7)*(n+4)-1320)/1320+1
+; Formula: a(n) = (binomial(n+7,n)*binomial(2*n+11,7)*(n+4))/1320
 
 mov $2,$0
 mov $3,$0
@@ -15,6 +15,4 @@ mov $1,$2
 add $1,4
 mul $1,$0
 mov $0,$1
-sub $0,1320
 div $0,1320
-add $0,1

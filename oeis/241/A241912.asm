@@ -6,7 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,278520 ; a(n) = A243503(n) - A056239(n).
+  seq $3,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
+  mov $5,$1
+  seq $5,243503 ; Sums of parts of partitions (i.e., their sizes) as ordered in the table A241918: a(n) = Sum_{i=A203623(n-1)+2..A203623(n)+1} A241918(i).
+  sub $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1

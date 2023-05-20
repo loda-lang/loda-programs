@@ -12,5 +12,4 @@ lpb $1
   trn $1,1
   add $0,2
 lpe
-mul $0,2
-div $0,4
+div $0,2

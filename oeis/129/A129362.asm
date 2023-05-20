@@ -18,6 +18,6 @@ gcd $4,$3
 sub $4,$1
 add $4,7
 add $0,$4
-mul $0,8
-div $0,12
+mul $0,2
+div $0,3
 sub $0,3

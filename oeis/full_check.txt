@@ -90,6 +90,7 @@ A025441: Number of partitions of n into 2 distinct nonzero squares.
 A025465: Number of partitions of n into 3 distinct nonnegative cubes.
 A026274: Greatest k such that s(k) = n, where s = A026272.
 A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+A026513: a(n) = t(2+3n), where t = A001285 (Thue-Morse sequence).
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
 A030300: Runs have lengths 2^n, n >= 0.

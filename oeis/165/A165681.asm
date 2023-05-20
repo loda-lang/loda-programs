@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; Odd primes.
+  add $3,1
+  seq $3,40 ; The prime numbers.
   sub $3,1
   mov $5,$3
   seq $3,100656 ; a(n)=1 if a hexagonal number is a prime, otherwise 0.

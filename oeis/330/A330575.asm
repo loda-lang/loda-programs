@@ -9,8 +9,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
-  seq $0,67824 ; a(1) = 1; for n > 1, a(n) = 1 + Sum_{0 < d < n, d|n} a(d).
+  mov $4,$0
+  add $4,1
+  seq $0,74206 ; Kalmár's [Kalmar's] problem: number of ordered factorizations of n.
+  mul $0,2
+  dif $0,$4
   add $3,$0
 lpe
 mov $0,$3

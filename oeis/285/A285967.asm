@@ -4,7 +4,13 @@
 
 mov $1,$0
 mul $1,2
-seq $1,50292 ; a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n >= 0).
+lpb $1
+  add $2,$1
+  div $1,2
+  sub $2,$1
+  div $1,2
+lpe
+mov $1,$2
 add $1,3
 div $1,2
 add $0,$1

@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353489 ; If A276086(n) is of the form 4k+3, then a(n) = 1, otherwise a(n) = 0.
+  seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  bin $3,3
+  mod $3,2
   sub $0,$3
   add $1,2
   mov $4,$0

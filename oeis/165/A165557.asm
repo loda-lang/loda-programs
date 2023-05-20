@@ -22,9 +22,7 @@ lpb $2
   add $6,2
 lpe
 mov $0,$6
-div $0,6
-add $0,1
-div $0,2
+div $0,12
 bin $0,2
 mul $0,2
 sub $0,1

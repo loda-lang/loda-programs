@@ -1,14 +1,22 @@
 ; A057944: Largest triangular number less than or equal to n; write m-th triangular number m+1 times.
-; Submitted by Cruncher Pete
+; Submitted by Matthias Lehmkuhl
 ; 0,1,1,3,3,3,6,6,6,6,10,10,10,10,10,15,15,15,15,15,15,21,21,21,21,21,21,21,28,28,28,28,28,28,28,28,36,36,36,36,36,36,36,36,36,45,45,45,45,45,45,45,45,45,45,55,55,55,55,55,55,55,55,55,55,55,66,66,66,66,66,66,66,66,66,66,66,66,78,78,78,78,78,78,78,78,78,78,78,78,78,91,91,91,91,91,91,91,91,91
 
+mul $0,2
+add $0,1
+mov $2,$0
+mul $2,4
 lpb $0
-  add $2,1
-  sub $0,$2
+  mov $3,$2
+  div $3,$0
+  add $0,$3
+  div $0,2
 lpe
-sub $2,$0
-mov $1,1
-add $1,$2
+sub $0,1
+div $0,2
+mul $0,2
+add $0,2
+div $0,2
 add $1,$0
 bin $1,2
 mov $0,$1

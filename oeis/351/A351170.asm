@@ -1,5 +1,5 @@
 ; A351170: Consider the primes of the form p(m)=m^2+1 such that p(m+2) is also prime for some m. The sequence lists the sums p(m) + p(m+2).
-; Submitted by kpmonaghan
+; Submitted by arkiss
 ; 22,54,454,1254,6054,31254,84054,296454,432454,806454,832054,1022454,2398054,2622054,2761254,3100054,3251254,3458454,3781254,4898454,5216454,5611254,5678454,7722454,8446054,8694454,8778054,11568054,12054054,12852454,14204454,16074454
 
 mov $2,$0
@@ -18,6 +18,7 @@ lpb $2
   max $4,0
   cmp $4,$0
   mov $7,$5
+  dif $7,10
   mul $2,$4
   sub $2,17
   add $5,$1
@@ -25,5 +26,8 @@ lpb $2
   sub $5,1
 lpe
 mov $0,$3
-add $0,2
 mul $0,2
+sub $0,18
+div $0,2
+mul $0,2
+add $0,22

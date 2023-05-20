@@ -4,8 +4,12 @@
 
 trn $0,1
 lpb $0
+  mov $2,$0
+  seq $2,300486 ; Number of relatively prime or monic partitions of n.
   mov $1,$0
-  seq $1,108572 ; Number of partitions of n which, as multisets, are nontrivial repetitions of a multiset.
+  add $1,1
+  seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $1,$2
   mov $0,1
 lpe
 add $1,$0

@@ -8,6 +8,8 @@ lpb $0
 lpe
 sub $1,$0
 add $1,1
-seq $1,1405 ; a(n) = binomial(n, floor(n/2)).
+mov $2,$1
+div $2,2
+bin $1,$2
 mov $0,$1
 mod $0,2

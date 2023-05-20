@@ -6,8 +6,15 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  add $5,7
   mov $3,$1
-  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  add $3,7
+  add $5,$3
+  mov $3,$5
+  mul $3,2
+  sub $3,26
   div $3,2
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   cmp $3,1

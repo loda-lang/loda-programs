@@ -1,5 +1,6 @@
 ; A217517: Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (12345)*.
 ; 20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5,20,20,10,6,5
+; Formula: a(n) = binomial(max(n%5-1,0)-3,4)+5
 
 mod $0,5
 trn $0,1

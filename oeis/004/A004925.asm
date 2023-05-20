@@ -1,11 +1,8 @@
 ; A004925: Floor of n*phi^10, where phi is the golden ratio, A001622.
-; Submitted by Science United
+; Submitted by mikey
 ; 0,122,245,368,491,614,737,860,983,1106,1229,1352,1475,1598,1721,1844,1967,2090,2213,2336,2459,2582,2705,2828,2951,3074,3197,3320,3443,3566,3689,3812,3935,4058,4181
-; Formula: a(n) = max(124*n-n,1)-1
+; Formula: a(n) = (369*n-1)/3
 
-mov $1,$0
-mul $1,124
-sub $1,$0
-max $1,1
-mov $0,$1
+mul $0,369
 sub $0,1
+div $0,3

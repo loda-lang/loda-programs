@@ -4,7 +4,6 @@
 ; Formula: a(n) = max(2*n-3,0)+n
 
 mov $1,$0
-add $1,$0
-sub $1,2
-trn $1,1
+mul $0,2
+trn $0,3
 add $0,$1

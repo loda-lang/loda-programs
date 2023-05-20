@@ -7,7 +7,9 @@ pow $2,2
 lpb $2
   add $6,1
   mov $3,$1
-  seq $3,128212 ; a(n) = Sum_digits(p), where p is the product of the digits of n.
+  add $3,1
+  seq $3,7954 ; Product of decimal digits of n.
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mov $5,$3
   gcd $5,$6
   div $3,$5

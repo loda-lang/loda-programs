@@ -6,7 +6,11 @@ mov $2,$0
 mul $2,10
 lpb $2
   mov $3,$1
-  seq $3,93318 ; d(n) = number of positive divisors k of n where mu(k) = 1 and mu(n/k) = -1.
+  seq $3,7427 ; Moebius transform applied twice to sequence 1,0,0,0,....
+  mov $5,0
+  sub $5,$3
+  mov $3,$5
+  div $3,2
   cmp $3,$4
   sub $0,$3
   add $1,1

@@ -1,9 +1,14 @@
 ; A222556: Number of (n+2)X1 arrays of occupancy after each element moves up to +-n places but not 0
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Le_Pommier>MacADSL.com]Bertrand
 ; 2,20,102,427,1668,6372,24230,92279,352596
-; Formula: a(n) = A359435(n)+2
+; Formula: a(n) = -(n+3)^2+binomial(2*n+5,n+2)+1
 
-mov $1,$0
-seq $1,359435 ; a(n) = binomial(2*n-1,n) - n^2 - 1.
-mov $0,$1
 add $0,2
+mov $1,$0
+mul $0,2
+add $0,1
+bin $0,$1
+add $1,1
+pow $1,2
+sub $0,$1
+add $0,1

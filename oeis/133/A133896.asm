@@ -6,12 +6,14 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,133886 ; a(n) = binomial(n+6,n) mod 6.
+  add $3,7
+  bin $3,6
+  mod $3,6
   add $3,1
   cmp $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0

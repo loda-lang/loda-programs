@@ -4,6 +4,21 @@
 
 mov $1,2
 pow $1,$0
-seq $0,116 ; Number of even sequences with period 2n (bisection of A000013).
+mul $0,2
+trn $0,1
+mov $2,$0
+add $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$2
+  gcd $0,$3
+  seq $0,129342 ; a(2n) = a(n) + 2^(2n), a(2n+1) = 2^(2n+1).
+  add $4,$0
+lpe
+div $4,$2
+mov $0,$4
+div $0,2
+add $0,1
 add $0,$1
 div $0,2

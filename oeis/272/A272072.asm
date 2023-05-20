@@ -2,13 +2,15 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,2,3,4,5,7,10
 
-max $1,$0
-add $0,$1
-sub $0,11
-mov $2,$0
-lpb $2
-  div $2,4
-  add $1,$0
-  mod $0,7
-lpe
-mov $0,$1
+max $3,$0
+mov $4,$3
+mov $1,$3
+cmp $1,0
+add $3,$1
+div $0,$3
+add $0,1
+bin $3,2
+mov $2,$3
+div $2,$0
+max $2,$4
+mov $0,$2

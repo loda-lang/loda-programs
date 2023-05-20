@@ -6,9 +6,17 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
+  mov $5,-1
+  pow $5,$0
   mov $2,$0
-  max $2,0
-  seq $2,133692 ; Expansion of phi(-q) * phi(q^2) in powers of q where phi() is a Ramanujan theta function.
+  trn $2,1
+  mov $6,$2
+  seq $2,2325 ; Glaisher's J numbers.
+  mul $2,2
+  sub $2,1
+  sub $2,$6
+  add $2,$0
+  mul $2,$5
   add $1,$2
   mov $3,2
   add $3,$4

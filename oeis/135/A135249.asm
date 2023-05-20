@@ -1,17 +1,12 @@
 ; A135249: a(n) = number of bits in binary expansion of A046967(n).
-; Submitted by Dingo
+; Submitted by Science United
 ; 2,4,16,106,1156,15016,255256,4849846
-; Formula: a(n) = b(n)+1, b(n) = A000040(n)*b(n-1), b(1) = 3, b(0) = 1
+; Formula: a(n) = (A066332(A000040(n))-2)/2+2
 
-mov $1,1
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  seq $1,40 ; The prime numbers.
-  mul $1,$2
-  add $3,1
-lpe
+seq $0,40 ; The prime numbers.
+mov $1,$0
+seq $1,66332 ; a(1)=1; for n > 0, a(n+1) = rad(a(n))*n where rad=A007947.
 mov $0,$1
-add $0,1
+sub $0,2
+div $0,2
+add $0,2

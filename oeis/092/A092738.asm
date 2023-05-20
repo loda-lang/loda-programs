@@ -1,23 +1,24 @@
 ; A092738: Primes of the form prime(x)+prime(x+1)+1.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Cruncher Pete
 ; 13,19,31,37,43,53,61,79,101,113,139,163,173,199,211,223,241,269,277,331,353,373,397,457,463,509,521,541,577,601,619,631,727,773,787,811,829,853,883,907,919,947,967,991,1013,1031,1181,1193,1201,1231,1237,1291,1301,1321,1361,1429,1447,1483,1531,1543,1607,1621,1657,1669,1693,1723,1741,1759,1831,1867,1879,1889,1901,1949,2053,2089,2113,2179,2213,2281,2381,2441,2557,2689,2729,2741,2833,2851,2857,2887,2953,2971,3011,3163,3181,3209,3217,3331,3391,3457
 
-mov $1,2
+mov $1,1
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,6
+pow $2,3
 lpb $2
+  sub $2,1
   mov $3,$1
-  seq $3,69102 ; a(1) = 1; a(2) = 1; a(n) = Prime[n-1] + Prime[n-2] if n > 2.
+  seq $3,1043 ; Numbers that are the sum of 2 successive primes.
   mov $5,$3
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  cmp $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  trn $2,1
 lpe
 mov $0,$5
 add $0,1

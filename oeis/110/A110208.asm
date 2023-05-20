@@ -1,12 +1,12 @@
 ; A110208: 1 + sum of first n semiprimes.
-; Submitted by Kotenok2000
+; Submitted by Rolf
 ; 1,5,11,20,30,44,59,80,102,127,153,186,220,255,293,332,378,427,478,533,590,648,710,775,844,918,995,1077,1162,1248,1335,1426,1519,1613,1708,1814,1925,2040,2158,2277,2398,2520,2643,2772,2905,3039,3180,3322,3465
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A106325(c(n-1)), b(1) = 4, b(0) = 0, c(n) = A106325(c(n-1)), c(1) = 4, c(0) = 0
+; Formula: a(n) = a(n-1)+A106325(b(n-1)), a(1) = 5, a(0) = 1, b(n) = A106325(b(n-1)), b(1) = 4, b(0) = 0
 
+mov $2,1
 lpb $0
   sub $0,1
-  seq $2,106325 ; Smallest semiprime not less than n.
-  add $1,$2
+  seq $1,106325 ; Smallest semiprime not less than n.
+  add $2,$1
 lpe
-add $1,1
-mov $0,$1
+mov $0,$2

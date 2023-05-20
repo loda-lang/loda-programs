@@ -13,7 +13,8 @@ lpb $3
   add $0,1
   add $0,$3
   max $0,0
-  seq $0,86801 ; a(n) = prime(n) - 3.
+  seq $0,40 ; The prime numbers.
+  sub $0,3
   mov $2,$3
   cmp $2,$3
   mul $2,$0

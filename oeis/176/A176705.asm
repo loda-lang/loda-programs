@@ -9,7 +9,10 @@ lpb $2
   mov $0,$4
   add $0,$2
   max $0,0
-  seq $0,167277 ; Largest nonprime<n-th single (or isolated or non-twin) prime.
+  seq $0,176656 ; The positions of single (or isolated or non-twin) primes in A000040.
+  sub $0,1
+  seq $0,40 ; The prime numbers.
+  sub $0,1
   seq $0,72000 ; Number of semiprimes (A001358) <= n.
   mov $1,$2
   mul $1,$0

@@ -7,7 +7,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; Odd primes.
+  seq $3,97932 ; Positive integers n such that 2n-19 is prime.
+  add $3,3
+  mov $6,1
+  add $6,$3
+  mov $3,$6
+  mul $3,2
+  sub $3,27
   mov $5,$3
   seq $3,279048 ; a(n) = 0 whenever n is a practical number (A005153) otherwise least powers of 2 that when multiplied by n becomes practical.
   cmp $3,0

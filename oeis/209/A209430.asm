@@ -6,7 +6,7 @@
 add $0,1
 mov $1,$0
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,52127 ; Sum a(n) x^n / n!^2 = exp(-2x)/(1-x)^3.
+seq $1,52127 ; Sum_{n >= 0} a(n) * x^n / n!^2 = exp(-2*x)/(1-x)^3.
 div $1,$0
 mov $2,$0
 gcd $0,$1

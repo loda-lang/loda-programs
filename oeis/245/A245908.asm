@@ -6,4 +6,4 @@
 seq $0,40 ; The prime numbers.
 div $0,2
 sub $0,1
-seq $0,59957 ; Sum of distinct prime factors of n and n+1, or number of prime factors of n(n+1) or of lcm(n,n+1).
+seq $0,59957 ; Sum of number of distinct prime factors of n and n+1, or number of distinct prime factors of n(n+1) or of lcm(n,n+1).

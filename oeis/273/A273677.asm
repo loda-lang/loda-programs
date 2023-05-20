@@ -9,5 +9,12 @@ cmp $2,1
 mov $3,1
 sub $3,$2
 mul $1,$3
-seq $0,81435 ; Diagonal in array of n-gonal numbers A081422.
+mov $4,$0
+mul $4,6
+mul $0,2
+add $0,1
+pow $0,3
+add $0,$4
+div $0,8
+add $0,1
 add $0,$1

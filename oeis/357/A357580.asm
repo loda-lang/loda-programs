@@ -4,5 +4,15 @@
 
 mov $1,$0
 add $1,1
-seq $0,357502 ; a(n) = ((1 + sqrt(n))^n - (1 - sqrt(n))^n)/(2*sqrt(n)).
+mov $3,$0
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $2,$4
+  mul $5,$3
+  add $5,$4
+  add $4,$5
+  mov $5,$2
+lpe
+mov $0,$4
 div $0,$1

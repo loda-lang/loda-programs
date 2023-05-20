@@ -6,7 +6,26 @@ add $0,1
 mov $1,$0
 bin $1,2
 mul $1,2
-seq $0,157052 ; Number of integer sequences of length n+1 with sum zero and sum of absolute values 6.
+mov $4,2
+mov $5,$0
+add $5,2
+mov $3,$5
+bin $3,2
+add $3,3
+lpb $0
+  mul $4,2
+  mov $2,$3
+  add $2,$4
+  mov $4,$3
+  mul $4,5
+  trn $0,$4
+  sub $2,8
+  mul $2,$3
+  mul $2,$4
+lpe
+div $2,45
+mul $2,2
+mov $0,$2
 add $0,$1
 div $0,4
 sub $0,1

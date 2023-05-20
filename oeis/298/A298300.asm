@@ -1,7 +1,7 @@
 ; A298300: Analog of Motzkin numbers for Coxeter type D.
 ; Submitted by Christian Krause
 ; 1,4,11,31,87,246,699,1996,5723,16468,47533,137567,399073,1160082,3378483,9855207,28790403,84218052,246651729,723165765,2122391109,6234634266,18330019029,53932825926,158802303429,467898288676,1379485436579,4069450219561
-; Formula: a(n) = A129703(n+1)-A001006(n)-1
+; Formula: a(n) = -A001006(n)+A129703(n+1)-1
 
 mov $1,$0
 seq $1,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.

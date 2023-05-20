@@ -1,9 +1,31 @@
 ; A158913: Primes p such that there is a composite c with sigma(p) = sigma(c).
 ; Submitted by Solidair79
 ; 11,17,23,31,41,47,53,59,71,79,83,89,97,103,107,113,127,131,139,151,167,179,181,191,223,227,233,239,251,263,269,271,293,307,311,359,383,389,419,431,433,439,443,449,467,479,491,503,521,557,569,571,587,593,599,607,619,631,647,659,683,701,719,727,743,761,769,773,797,809,827,839,863,881,883,887,911,919,929,941,947,953,967,971,983,991,1013,1019,1031,1039,1049,1061,1063,1087,1091,1097,1103,1109,1151,1163
-; Formula: a(n) = A206449(n)-1
 
 mov $1,$0
-seq $1,206449 ; Values of sigma(p) of primes p such that sigma(p) = sigma(c) has solution for some composite number c.
-sub $1,1
-mov $0,$1
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,97932 ; Positive integers n such that 2n-19 is prime.
+  add $4,3
+  mov $7,1
+  add $7,$4
+  mov $4,$7
+  mul $4,2
+  sub $4,27
+  mov $6,$4
+  sub $4,1
+  seq $4,70242 ; Card( k>0 : sigma(k)=sigma(n) ).
+  cmp $4,1
+  cmp $4,0
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+  trn $3,1
+lpe
+mov $0,$6

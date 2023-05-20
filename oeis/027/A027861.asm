@@ -5,8 +5,11 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,3
   mov $3,$1
-  seq $3,89619 ; Greatest prime factor of n^2 + (n+1)^2.
+  mul $3,$6
+  seq $3,76567 ; Greatest prime divisor of 4n+6 (sum of four successive integers).
   max $5,$3
   add $1,1
   div $3,$5

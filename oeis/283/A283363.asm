@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,90396 ; Remainder when the sum of the first n primes is divided by n.
+  add $0,1
+  mov $7,$0
+  seq $0,7504 ; Sum of the first n primes.
+  mod $0,$7
   mov $2,$3
   mul $2,$0
   add $1,$2

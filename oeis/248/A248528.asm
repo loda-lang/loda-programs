@@ -8,7 +8,9 @@ add $2,11
 pow $2,2
 bin $2,2
 lpb $2
-  seq $3,247339 ; a(n) is the least number k such that the greatest prime divisor of k^2+1 is the smallest prime divisor of n^2+1.
+  seq $3,89120 ; Smallest prime factor of n^2 + 1.
+  sub $3,1
+  seq $3,70669 ; Smallest m in range 2..n-1 such that m^4 == 1 mod n, or 1 if no such number exists.
   add $3,1
   cmp $3,5
   sub $0,$3

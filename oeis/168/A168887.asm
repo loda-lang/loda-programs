@@ -1,12 +1,11 @@
 ; A168887: Number of reduced words of length n in Coxeter group on 18 generators S_i with relations (S_i)^2 = (S_i S_j)^21 = I.
-; Submitted by Rolf
+; Submitted by Ralfy
 ; 1,18,306,5202,88434,1503378,25557426,434476242,7386096114,125563633938,2134581776946,36287890208082,616894133537394,10487200270135698,178282404592306866,3030800878069216722,51523614927176684274
 ; Formula: a(n) = 17^(n-1)+17^n
 
-mov $2,$0
-sub $2,1
 mov $1,17
-pow $1,$2
+pow $1,$0
+sub $0,1
 mov $2,17
 pow $2,$0
 add $1,$2

@@ -1,15 +1,14 @@
 ; A138119: Concatenation of n digits 1 and 2n-1 digits 0.
-; Submitted by Christian Krause
+; Submitted by Torbj&#246;rn Eriksson
 ; 10,11000,11100000,11110000000,11111000000000,11111100000000000,11111110000000000000,11111111000000000000000,11111111100000000000000000,11111111110000000000000000000
-; Formula: a(n) = 10*((10*(binomial(10*10^n,2)/5)*10^n)/90)
+; Formula: a(n) = 2*((10*binomial(10*10^n,2)*10^n)/90)
 
 mov $1,10
 pow $1,$0
 mul $1,10
 mov $0,$1
 bin $1,2
-div $1,5
 mul $1,$0
 mov $0,$1
 div $0,90
-mul $0,10
+mul $0,2

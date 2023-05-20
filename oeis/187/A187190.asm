@@ -1,6 +1,7 @@
 ; A187190: Number of 3-turn rook's tours on an n X n board summed over all starting positions
+; Submitted by TrikkStar
 ; 0,8,108,480,1400,3240,6468,11648,19440,30600,45980,66528,93288,127400,170100,222720,286688,363528,454860,562400,687960,833448,1000868,1192320,1410000,1656200,1933308,2243808,2590280,2975400
-; Formula: a(n) = 4*((binomial(2*n,2)*(2*n+2)^2)/8)
+; Formula: a(n) = (binomial(2*n,2)*(2*n+2)^2)/2
 
 mul $0,2
 mov $1,$0
@@ -9,5 +10,4 @@ add $1,2
 pow $1,2
 mul $1,$0
 mov $0,$1
-div $0,8
-mul $0,4
+div $0,2

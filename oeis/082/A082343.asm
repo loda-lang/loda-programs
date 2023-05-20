@@ -10,7 +10,7 @@ lpb $0
   div $0,$4
   add $3,$4
 lpe
-mov $0,$3
-mov $1,$0
+mov $1,$3
 gcd $1,$2
+mov $0,$3
 div $0,$1

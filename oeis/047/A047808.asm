@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,113652 ; Expansion of (1 - theta_4(q)^2) / 4 in powers of q.
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   add $3,1
   cmp $3,1
   max $0,$2

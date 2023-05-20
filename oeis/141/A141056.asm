@@ -1,29 +1,14 @@
 ; A141056: 1 followed by A027760, a variant of Bernoulli number denominators.
-; Submitted by Fardringle
+; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,6,2,30,2,42,2,30,2,66,2,2730,2,6,2,510,2,798,2,330,2,138,2,2730,2,6,2,870,2,14322,2,510,2,6,2,1919190,2,6,2,13530,2,1806,2,690,2,282,2,46410,2,66,2,1590,2,798,2,870,2,354,2,56786730,2,6,2,510,2,64722,2,30,2,4686,2,140100870,2,6,2,30,2,3318,2,230010,2,498,2,3404310,2,6,2,61410,2,272118,2,1410,2,6,2,4501770,2,6,2
 
-cmp $1,$0
-mov $4,$0
-mov $5,2
-mov $6,$0
-lpb $6
-  sub $6,2
-  mov $0,$4
-  sub $0,$6
-  mov $2,$0
-  mov $3,$0
-  gcd $3,$6
-  bin $3,$0
-  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $0,$2
-  add $0,1
-  mul $0,$5
-  mul $3,$0
-  max $5,$3
-lpe
-mov $0,$5
+mov $2,$0
+seq $0,176289 ; Denominators of the rational sequence with e.g.f. (x/2)*(1+exp(-x))/(1-exp(-x)).
+mov $1,$0
 sub $0,1
-div $0,2
+mov $3,$2
+lpb $3
+  mul $3,$0
+  mov $0,$1
+lpe
 add $0,1
-mul $0,2
-sub $0,$1

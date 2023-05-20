@@ -1,15 +1,12 @@
 ; A212686: Number of (w,x,y,z) with all terms in {1,...,n} and 2|w-x|=n+|y-z|.
-; Submitted by Science United
+; Submitted by Cruncher Pete
 ; 0,0,4,8,24,40,76,112,176,240,340,440,584,728,924,1120,1376,1632,1956,2280,2680,3080,3564,4048,4624,5200,5876,6552,7336,8120,9020,9920,10944,11968,13124,14280,15576,16872,18316,19760,21360,22960
-; Formula: a(n) = (2*n*(n^2+gcd(4,n^2)-2))/6
+; Formula: a(n) = 4*((n*(n/2)+binomial(n,3))/2)
 
 mov $1,$0
-add $1,$0
-pow $0,2
-mov $2,4
-gcd $2,$0
-add $0,$2
-sub $0,2
+div $1,2
 mul $1,$0
-mov $0,$1
-div $0,6
+bin $0,3
+add $0,$1
+div $0,2
+mul $0,4

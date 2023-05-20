@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $0,1
+  seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $2,$3
   mul $2,$0
   add $1,$2

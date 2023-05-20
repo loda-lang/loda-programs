@@ -1,11 +1,10 @@
 ; A168608: Decimal expansion of average of two-digit primes.
-; Submitted by Kenta.K
+; Submitted by www.urfak.petrsu.ru
 ; 4,9,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
-; Formula: a(n) = ((min(n,2)+2)^2)%10
+; Formula: a(n) = ((min(n+1,3)+1)^2)%10
 
-min $0,2
-mov $1,$0
-add $1,2
-pow $1,2
-mov $0,$1
+add $0,1
+min $0,3
+add $0,1
+pow $0,2
 mod $0,10

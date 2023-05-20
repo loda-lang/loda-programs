@@ -1,10 +1,7 @@
 ; A228495: Characteristic function of the odd odious numbers (A092246).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0
 
 dif $0,-2
 max $0,0
-seq $0,128309 ; a(n) = 2*A000069(n).
-gcd $0,4
-sub $0,2
-div $0,2
+seq $0,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.

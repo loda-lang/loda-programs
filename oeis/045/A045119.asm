@@ -1,4 +1,4 @@
-; A045119: Numbers n with property that in base 4 representation the numbers of 1's and 3's are 2 and 0, respectively.
+; A045119: Numbers whose base-4 representation contains exactly two 1's and no 3's.
 ; Submitted by [AF] Kalianthys
 ; 5,17,20,22,25,37,65,68,70,73,80,82,88,90,97,100,102,105,133,145,148,150,153,165,257,260,262,265,272,274,280,282,289,292,294,297,320,322,328,330,352,354,360,362,385,388,390,393,400
 

@@ -1,12 +1,11 @@
 ; A137237: Number of non-isomorphic drawings of K_n with minimum crossings.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,1,1,1,1,5,3
-; Formula: a(n) = ((14*binomial(n,6)^3-169)%10+10)%10
+; Formula: a(n) = (4*max(2*n-11,0)+1)%10
 
-bin $0,6
-pow $0,3
-mul $0,14
-sub $0,169
-mod $0,10
-add $0,10
+mul $0,2
+sub $0,3
+trn $0,8
+mul $0,4
+add $0,1
 mod $0,10

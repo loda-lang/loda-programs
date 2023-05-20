@@ -1,13 +1,15 @@
 ; A021742: Decimal expansion of 1/738.
+; Submitted by Science United
 ; 0,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3,5,5,0,1,3
+; Formula: a(n) = A000010(max((2*n-1)%10-1,0))-1
 
+mul $0,2
+sub $0,1
+mod $0,10
+sub $0,1
 mov $2,$0
-lpb $2
-  mov $1,$2
-  trn $2,4
-  sub $1,$2
-  mul $1,2
-  trn $1,3
-  trn $2,1
-lpe
+max $2,0
+seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+add $1,$2
 mov $0,$1
+sub $0,1

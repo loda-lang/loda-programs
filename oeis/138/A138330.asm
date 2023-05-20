@@ -1,12 +1,19 @@
 ; A138330: Beatty discrepancy (defined in A138253) giving the closeness of the pair (A136497,A136498) to the Beatty pair (A001951,A001952).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,1,1
-; Formula: a(n) = ((A286927(2*n+1)/4-(A286927(2*n)/4)-2*(A286927(2*n)/4)-2)%2)^2+1
+; Formula: a(n) = (((4*n+2*A003151(2*n+1)+4)/4-(A286927(2*n)/4)-2*(A286927(2*n)/4)-2)%2)^2+1
 
 mul $0,2
 mov $1,$0
 add $1,1
-seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
+mov $3,$1
+seq $3,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+add $3,7
+add $1,7
+add $3,$1
+mov $1,$3
+mul $1,2
+sub $1,26
 div $1,4
 sub $1,1
 seq $0,286927 ; Positions of 1 in A286925; complement of A286926.

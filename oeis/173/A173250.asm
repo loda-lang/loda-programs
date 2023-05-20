@@ -6,8 +6,17 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,101448 ; Nonnegative numbers k such that 2k + 11 is prime.
+  mov $6,$1
+  add $6,3
+  seq $6,154115 ; Numbers n such that n + 3 is prime.
+  sub $6,2
+  div $6,2
+  mul $6,6
+  add $6,15
+  div $6,3
+  mov $3,$6
+  sub $3,11
+  div $3,2
   mul $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

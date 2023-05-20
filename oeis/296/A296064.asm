@@ -9,9 +9,16 @@ lpb $1
   mov $0,$3
   add $0,$1
   trn $0,1
-  seq $0,296065 ; Partial sums of A296064.
+  mov $6,$0
+  add $6,1
+  trn $0,2
+  gcd $0,2
+  mov $5,$6
+  pow $6,$0
+  mod $5,$6
+  mov $0,$5
   mov $2,$1
-  mul $2,$0
+  mul $2,$5
   add $4,$2
 lpe
 mov $3,$0

@@ -4,5 +4,20 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,285345 ; Fixed point of the morphism 0 -> 10, 1 -> 1100.
+mul $0,2
+mov $3,2
+mov $4,1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $2,$3
+  div $2,2
+  add $4,$2
+  mod $4,2
+  gcd $4,4
+  mul $3,2
+  mul $3,$4
+lpe
+mov $0,$4
+div $0,4
 sub $0,$1
