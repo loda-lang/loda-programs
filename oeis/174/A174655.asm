@@ -1,12 +1,20 @@
 ; A174655: Partial sums of A049486.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,5,15,36,70,123,197,298,428,593,795,1040,1330,1671,2065,2518,3032,3613,4263,4988,5790,6675,7645,8706,9860,11113,12467,13928,15498,17183,18985,20910,22960,25141,27455,29908,32502,35243,38133,41178,44380
-; Formula: a(n) = a(n-1)+A049486(n), a(0) = 1
+; Formula: a(n) = n*(2*n+1)-max(-gcd(n+1,2)+n,0)+a(n-1)+1, a(0) = 1
 
 mov $1,1
 lpb $0
+  mov $4,1
+  add $4,$0
   mov $2,$0
-  seq $2,49486 ; Maximum length of non-crossing path on n X n square lattice.
+  add $2,$4
+  mul $2,$0
+  gcd $4,2
+  mov $3,$0
+  trn $3,$4
+  sub $2,$3
+  add $2,1
   sub $0,1
   add $1,$2
 lpe

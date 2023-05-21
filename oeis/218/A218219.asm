@@ -1,19 +1,18 @@
 ; A218219: Define a(x,y) to be 1 if x is 0 or 1 and y*a(x-1,y)-a(x-2,y) otherwise. Then the n-th term of the sequence is a(n,n).
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,1,1,5,41,436,5741,90481,1663585,34988311,828931049,21851881930,634556225161,20129592507025,692665874901013,25699370092119569,1022757988416562049,43461563755791470416,1964206882303435582865,94076863910519354420761,4760163616791818063701801
 
-mov $3,1
+mov $1,2
+mov $4,$0
+sub $4,2
 lpb $0
-  sub $0,$3
-  mov $1,$4
-  mul $1,$0
-  sub $3,1
-  add $4,1
-  add $0,$3
-  add $2,1
-  sub $2,$4
+  sub $0,1
+  mov $3,$2
+  mul $3,$4
+  add $1,$3
   add $2,$1
-  add $4,$2
 lpe
-mov $0,$2
+mov $0,$1
+sub $0,2
+div $0,2
 add $0,1

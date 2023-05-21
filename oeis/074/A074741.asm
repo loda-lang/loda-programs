@@ -8,7 +8,8 @@ lpb $1
   sub $1,1
   mov $0,$2
   sub $0,$1
-  seq $0,1223 ; Prime gaps: differences between consecutive primes.
+  seq $0,40 ; The prime numbers.
+  seq $0,13632 ; Difference between n and the next prime greater than n.
   pow $0,2
   add $3,$0
 lpe

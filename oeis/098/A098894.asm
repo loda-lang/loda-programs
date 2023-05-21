@@ -1,15 +1,22 @@
 ; A098894: Values of k such that {s(1),...,s(k)} is a palindrome, where {s(1),s(2),...} is the fixed point of the substitutions 0->1 and 1->110.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,2,5,8,15,22,39,56,97,138,237,336,575,814,1391,1968,3361,4754,8117,11480,19599,27718,47319,66920,114241,161562,275805,390048,665855,941662,1607519,2273376,3880897,5488418,9369317
+; Formula: a(n) = c(n)-2, b(n) = -e(n-1)+d(n-1)+1, b(4) = 12, b(3) = 5, b(2) = 5, b(1) = 2, b(0) = 2, c(n) = -e(n-1)+b(n-1)+d(n-1)+1, c(4) = 17, c(3) = 10, c(2) = 7, c(1) = 4, c(0) = 3, d(n) = c(n-1)+f(n-1), d(4) = 27, d(3) = 17, d(2) = 10, d(1) = 6, d(0) = 3, e(n) = -b(n-1)-e(n-1)+c(n-1)+d(n-1), e(4) = 16, e(3) = 6, e(2) = 6, e(1) = 2, e(0) = 2, f(n) = c(n-1)+f(n-1), f(4) = 27, f(3) = 17, f(2) = 10, f(1) = 6, f(0) = 3
 
+add $0,3
 lpb $0
   sub $0,1
-  add $2,1
-  trn $3,$0
-  mov $1,$3
-  mul $1,2
-  add $3,$2
+  sub $3,$4
+  mov $4,$2
+  add $4,$3
+  sub $4,$1
+  add $5,$2
+  mov $2,$3
   add $2,$1
+  add $2,1
+  add $3,1
+  mov $1,$3
+  mov $3,$5
 lpe
 mov $0,$2
-add $0,1
+sub $0,2

@@ -1,11 +1,9 @@
 ; A267059: Chess diagrams for rank n.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Science United
 ; 134357139,582192771,582192771,582192771,582192771,582192771,582192771,134357139
-; Formula: a(n) = -74639272*gcd(n,7)+656832043
+; Formula: a(n) = 447835632*((n^6)%7)+134357139
 
-gcd $0,7
-mov $1,7
-sub $1,$0
-mov $0,$1
-mul $0,74639272
+pow $0,6
+mod $0,7
+mul $0,447835632
 add $0,134357139

@@ -10,7 +10,8 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,94088 ; E.g.f. 1/(2-cosh(x)) (even coefficients).
+  mul $0,2
+  seq $0,336012 ; a(n) is the number of chains from {} to a top element in the poset of even sized subsets of {1,2,...,n} ordered by inclusion.
   add $3,$0
 lpe
 div $3,$1

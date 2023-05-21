@@ -5,5 +5,22 @@
 cmp $1,$0
 sub $1,1
 trn $0,1
-seq $0,238479 ; Number of partitions of n whose median is not a part.
+add $0,1
+mul $0,2
+mov $2,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $0,$2
+  add $0,$4
+  sub $0,1
+  seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  mov $5,$4
+  mul $5,$0
+  add $3,$5
+lpe
+min $2,1
+mul $2,$0
+mov $0,$3
+sub $0,$2
 sub $0,$1

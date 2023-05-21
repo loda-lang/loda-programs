@@ -1,9 +1,17 @@
 ; A043294: Sum of digits of binomial(2n,n).
 ; Submitted by STE\/E
 ; 2,6,2,7,9,15,12,18,20,31,21,25,11,18,27,27,27,33,39,54,57,51,45,45,54,72,74,67,66,76,77,72,75,78,90,88,86,96,83,88,117,99,99,117,99,108,90,108,126,126,117,144,135,141,156,153,138,141,153,153,126,162,156,168
-; Formula: a(n) = A007953(A244174(n+1))-1
 
 add $0,1
-seq $0,244174 ; Number of compositions of 3n in which the minimal multiplicity of parts equals n.
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $0,1
+lpb $0
+  mov $3,$0
+  mod $3,10
+  div $0,10
+  add $2,$3
+lpe
+mov $0,$2
 sub $0,1

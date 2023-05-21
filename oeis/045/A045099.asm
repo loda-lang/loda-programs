@@ -1,4 +1,4 @@
-; A045099: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 2 and 4, respectively.
+; A045099: Numbers whose base-4 representation contains exactly two 1's and four 2's.
 ; Submitted by zombie67 [MM]
 ; 1450,1642,1690,1702,1705,2410,2458,2470,2473,2650,2662,2665,2710,2713,2725,4522,4714,4762,4774,4777,5290,5674,5770,5794,5800,5803,5806,5818,5866,6058,6250,6298,6310,6313,6442,6538
 

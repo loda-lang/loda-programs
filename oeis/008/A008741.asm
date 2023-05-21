@@ -1,17 +1,12 @@
 ; A008741: Putative number of uniform tight n-dimensional sphere packings (the next 2 numbers are believed to be infinity, 1 ).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Dirk Broer
 ; 1,1,1,2,1,4,4,4,1
 
+sub $0,1
 mov $2,$0
-mul $2,2
-lpb $0
-  div $0,2
-  gcd $3,$2
-  mod $3,2
-  mul $3,$1
-  mul $1,2
-  add $1,1
-  div $2,2
-lpe
-mov $0,$3
+cmp $2,0
+add $0,$2
+mov $1,63
+mod $1,$0
+mov $0,$1
 add $0,1

@@ -1,13 +1,13 @@
 ; A030241: Minimal determinant of any n-dimensional even lattice.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3,4,4,4,3,2,1,2,3
 
-mov $1,1
 lpb $0
+  mul $0,143
   mod $0,8
-  add $1,2
-  add $2,$0
-  trn $2,$1
-  sub $0,$2
 lpe
 add $0,1
+lpb $0
+  div $0,3
+  add $0,3
+lpe

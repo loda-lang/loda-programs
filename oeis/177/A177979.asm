@@ -4,6 +4,12 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,152680 ; a(n) = 4*A005098(n) = A002144(n) - 1.
+seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
+mov $2,1
+add $2,$0
+mov $0,$2
+mul $0,2
+sub $0,2
+sub $0,$2
 seq $0,70669 ; Smallest m in range 2..n-1 such that m^4 == 1 mod n, or 1 if no such number exists.
 sub $0,$1

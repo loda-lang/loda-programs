@@ -8,9 +8,24 @@ lpb $0
   mov $4,$2
   mov $2,$1
   add $3,1
+  mov $8,2
+  trn $8,$3
+  add $8,6
   mov $1,$3
-  seq $1,10125 ; Continued fraction for sqrt(21).
-  seq $1,40304 ; Continued fraction for sqrt(322).
+  gcd $1,$8
+  sub $1,3
+  mov $7,3
+  pow $7,$1
+  mov $1,$7
+  add $1,1
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $9,$1
+  div $9,5
+  mul $9,12
+  add $1,$9
+  sub $1,2
   dif $1,4
   mov $5,$3
   mod $5,2
