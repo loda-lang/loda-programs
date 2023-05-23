@@ -12,7 +12,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,74081 ; Sum of determinants of 3rd order principal minors of powers of inverse of tetramatrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).
+    seq $2,74081 ; Sum of determinants of 3rd-order principal minors of powers of inverse of tetramatrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).
     pow $2,2
     add $4,$2
   lpe

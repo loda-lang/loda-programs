@@ -1,15 +1,15 @@
 ; A011654: 119th cyclotomic polynomial.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,-1,0,0,0,0,0,1,-1,0,0,0,0,0,1,-1,0,1,-1,0,0,1,-1,0,1,-1,0,0,1,-1,0,1,-1,0,1,0,-1,0,1,-1,0,1,0,-1,0,1,-1,0,1,0,-1,1,0,-1,0,1,0,-1,1,0,-1,0,1,0,-1,1,0,-1,1,0,0,-1,1,0,-1,1,0,0,-1,1,0,-1,1,0,0,0,0,0,-1,1,0,0,0,0,0,-1,1
 
-mov $3,3
+mov $1,3
 add $0,3
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,14026 ; Inverse of 17th cyclotomic polynomial.
-  add $1,$2
-  mov $3,7
+  sub $0,$1
+  mov $1,7
+  sub $2,$0
+  mod $2,17
+  pow $2,$2
+  add $3,$2
 lpe
-mov $0,$1
+mov $0,$3

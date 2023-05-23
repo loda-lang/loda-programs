@@ -8,11 +8,15 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,140236 ; Double tetrahedral numbers (or double pyramidal numbers): a(n) = k(k+1)(k+2)/6 where k = n(n+1)(n+2)/6.
+  mov $7,0
+  sub $7,$0
+  bin $7,3
+  bin $7,3
+  mov $6,0
+  sub $6,$7
   mov $2,$5
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
   add $1,$2
 lpe
 min $3,1

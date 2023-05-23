@@ -5,5 +5,11 @@
 add $0,1
 mov $1,$0
 pow $1,2
-seq $0,323526 ; One and prime numbers whose prime index is a perfect square.
+pow $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$2
 mod $0,$1
