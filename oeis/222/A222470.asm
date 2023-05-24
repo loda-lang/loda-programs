@@ -1,14 +1,18 @@
 ; A222470: Numerator sequence of the n-th convergent of the continued fraction 1/(1-2/(2-2/(3-2/(4-...
-; Submitted by Jon Maiga
+; Submitted by Leviathan
 ; 1,2,4,12,52,288,1912,14720,128656,1257120,13571008,160337856,2057250112,28480825856,423097887616,6712604550144,113268081577216,2025400259289600,38256068763347968,761070574748380160
+; Formula: a(n) = a(n-1)*(n-2)+2*b(n-1)+a(n-1), a(2) = 4, a(1) = 2, a(0) = 1, b(n) = a(n-1)*(n-2)+2*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1
 
-mov $3,1
+mov $1,1
+mov $2,1
+mov $4,-1
 lpb $0
   sub $0,1
-  mov $1,$2
-  mul $1,$0
-  mul $3,2
-  add $3,$1
-  add $2,$3
+  mov $3,$2
+  mul $3,$4
+  add $4,1
+  mul $1,2
+  add $1,$3
+  add $2,$1
 lpe
-mov $0,$3
+mov $0,$2

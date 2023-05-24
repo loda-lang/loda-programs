@@ -8,12 +8,23 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,139 ; a(n) = 2*(3*n)!/((2*n+1)!*((n+1)!)).
+  mov $7,$5
+  add $7,1
+  mul $5,2
+  mov $6,0
+  sub $6,$7
+  bin $6,$5
+  mul $6,2
+  add $5,1
+  mov $8,1
+  add $8,$5
+  bin $8,2
+  div $6,$8
   sub $0,1
   mov $2,$3
-  mul $2,$5
+  mul $2,$6
   add $1,$2
-  mov $4,$5
+  mov $4,$6
   mul $4,2
 lpe
 trn $1,$4

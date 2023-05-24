@@ -16,15 +16,11 @@ lpb $2
   add $2,$4
   div $2,2
 lpe
-add $1,2
+mul $1,2
 div $2,2
 add $2,$1
 mov $1,$2
-sub $1,2
-add $1,7
-add $0,7
-add $1,$0
+add $1,14
 mov $0,$1
 mul $0,2
-sub $0,26
-sub $0,1
+sub $0,29
