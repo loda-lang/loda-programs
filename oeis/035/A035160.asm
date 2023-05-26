@@ -14,7 +14,19 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  seq $5,109017 ; a(n) = Kronecker symbol (-6/n).
+  add $5,18
+  mov $6,1
+  add $6,$5
+  mod $6,3
+  sub $6,1
+  sub $5,1
+  mod $5,8
+  sub $5,3
+  mod $5,2
+  mov $7,0
+  sub $7,$5
+  mov $5,$7
+  mul $5,$6
   mul $0,2
   seq $0,100047 ; A Chebyshev transform of the Fibonacci numbers.
   mul $0,$5

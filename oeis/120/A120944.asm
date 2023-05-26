@@ -8,7 +8,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,354819 ; a(n) = 1 if n is a nonprime squarefree number, otherwise 0.
+  seq $3,74823 ; a(n) = 2^omega(n)*mu(n)^2.
+  mov $5,10
+  seq $5,286604 ; a(n) = n mod sum of digits of n in factorial base.
+  min $5,$3
+  mov $3,$5
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

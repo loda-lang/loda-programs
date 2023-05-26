@@ -1,14 +1,12 @@
 ; A245343: Sum of digits of n written in fractional base 5/3.
-; Submitted by Jamie Morken(s3)
+; Submitted by Science United
 ; 0,1,2,3,4,3,4,5,6,7,4,5,6,7,8,7,8,9,10,11,6,7,8,9,10,7,8,9,10,11,10,11,12,13,14,7,8,9,10,11,10,11,12,13,14,9,10,11,12,13,10,11,12,13,14,13,14,15,16,17,8,9,10,11,12,11,12,13,14,15
 
 lpb $0
-  mul $0,2
   mov $2,$0
-  mod $2,10
-  div $0,10
+  mod $2,5
+  div $0,5
   mul $0,3
   add $1,$2
 lpe
 mov $0,$1
-div $0,2

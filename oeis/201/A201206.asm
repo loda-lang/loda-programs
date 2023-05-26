@@ -14,8 +14,9 @@ lpb $5
   add $0,1
   add $0,$2
   mul $0,2
-  seq $0,185546 ; a(n) = floor((1/2)*(n+1)^(3/2)); complement of A185547.
-  div $0,4
+  add $0,2
+  seq $0,93 ; a(n) = floor(n^(3/2)).
+  div $0,8
   mov $4,$5
   mul $4,$0
   add $1,$4

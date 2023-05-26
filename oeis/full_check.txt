@@ -293,6 +293,7 @@ A114562: The first occurrence of n in A111701.
 A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
 A116512: a(n) = number of positive integers each of which is <= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
+A116609: a(n) = 13^n modulo n.
 A118480: (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
 A120007: Mobius transform of sum of prime factors of n with multiplicity (A001414).

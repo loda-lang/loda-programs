@@ -7,9 +7,16 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
+  mov $6,$1
+  add $6,1
+  dif $6,2
+  sub $6,1
+  seq $6,62570 ; a(n) = phi(2*n).
+  mov $5,$6
+  sub $5,1
   mov $3,$1
-  seq $3,121048 ; a(n) = n + phi(n), for Euler totient function phi(n).
-  sub $3,1
+  add $3,$5
+  add $3,1
   seq $3,29635 ; The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
   cmp $3,2
   sub $0,$3

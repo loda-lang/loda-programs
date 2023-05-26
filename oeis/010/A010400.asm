@@ -2,7 +2,6 @@
 ; Submitted by Science United
 ; 0,1,3,4,9,10,12,13,16,22,25,27,30,36
 
-mov $1,0
 mov $2,$0
 pow $2,2
 lpb $2

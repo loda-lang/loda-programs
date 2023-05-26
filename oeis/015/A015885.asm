@@ -1,20 +1,21 @@
 ; A015885: Inverse of 1876th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by axels
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-mov $2,-5
-mov $4,3
-add $1,3
-lpb $1
-  sub $1,$4
-  mov $3,$1
-  seq $3,296891 ; Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
-  sub $3,1
-  seq $3,15997 ; Inverse of 1988th cyclotomic polynomial.
-  mul $2,12
-  add $2,38
-  mov $4,$2
+mov $3,3
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  mov $1,$2
+  seq $1,50519 ; Increments of arithmetic progression of at least 6 terms having the same value of phi in A050518.
+  mov $2,$1
+  div $2,30
+  sub $2,1
+  seq $2,15997 ; Inverse of 1988th cyclotomic polynomial.
+  add $4,61
+  pow $4,6
+  mov $3,$4
 lpe
-mov $1,$3
-mov $0,$1
+mov $0,$2

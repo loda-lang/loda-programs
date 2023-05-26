@@ -9,9 +9,9 @@ sub $0,$1
 add $0,2
 lpb $0
   trn $0,1
-  seq $0,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
+  seq $0,7921 ; Numbers that are not the difference of two primes.
   mov $1,$0
-  add $1,2
+  add $1,3
   mov $0,0
 lpe
 mov $0,$1

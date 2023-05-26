@@ -10,7 +10,7 @@ mul $2,2
 lpb $2
   mov $3,$1
   mod $3,10
-  seq $3,578 ; The cubes: a(n) = n^3.
+  pow $3,3
   mov $5,$3
   gcd $5,$1
   div $3,$5

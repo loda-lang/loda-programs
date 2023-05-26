@@ -1,17 +1,15 @@
 ; A206543: Period 10: repeat 1, 3, 5, 7, 9, 9, 7, 5, 3, 1.
-; Submitted by vaughan
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,3,5,7,9,9,7,5,3,1,1,3,5,7,9,9,7,5,3,1,1,3,5,7,9,9,7,5,3,1,1,3,5,7,9,9,7,5,3,1,1,3,5,7,9,9,7,5,3,1,1,3,5,7,9,9,7,5,3,1,1
+; Formula: a(n) = (2^(2*n)*(2*n+6)^3+5)%10
 
-mov $2,1
-lpb $0
-  sub $0,1
-  add $3,$2
-  add $4,$3
-  mov $1,$3
-  dif $1,2
-  add $2,$1
-  sub $3,$4
-lpe
-mov $0,$2
 mul $0,2
-sub $0,1
+mov $2,$0
+add $2,6
+pow $2,3
+mov $1,2
+pow $1,$0
+mul $1,$2
+mov $0,$1
+add $0,5
+mod $0,10

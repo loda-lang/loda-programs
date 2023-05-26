@@ -11,7 +11,9 @@ lpb $1
   div $1,2
   mov $2,$0
   max $2,0
-  seq $2,333147 ; Number of compositions of n that are either strictly increasing or strictly decreasing.
+  seq $2,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  mul $2,2
+  sub $2,1
 lpe
 min $3,1
 mul $3,$2

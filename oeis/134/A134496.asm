@@ -1,13 +1,13 @@
 ; A134496: Numbers that are not lunar pseudoprimes.
-; Submitted by TrikkStar
+; Submitted by [AF>Libristes] Dudumomo
 ; 100,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
 ; Formula: a(n) = b(n)+100, b(n) = n+9, b(1) = 10, b(0) = 0
 
+mov $2,10
 lpb $0
   sub $0,1
-  sub $2,1
-  mov $1,9
-  sub $1,$2
+  mov $1,$2
+  add $2,1
 lpe
 mov $0,$1
 add $0,100

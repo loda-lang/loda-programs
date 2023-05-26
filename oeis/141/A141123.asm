@@ -4,5 +4,15 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,141187 ; Primes of the form -x^2+6*x*y+3*y^2 (as well as of the form 8*x^2+12*x*y+3*y^2).
+mul $0,2
+lpb $0
+  sub $0,1
+  mov $2,$0
+  div $2,2
+  seq $2,68231 ; Primes congruent to 11 mod 12.
+  sub $2,3
+  mov $0,1
+lpe
+mov $0,$2
 sub $0,$1
+add $0,3

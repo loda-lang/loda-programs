@@ -4,5 +4,12 @@
 
 mov $1,$0
 add $1,1
-seq $0,522 ; Total number of ordered k-tuples (k=0..n) of distinct elements from an n-element set: a(n) = Sum_{k=0..n} n!/k!.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $3,1
+  mul $2,$3
+  add $2,1
+lpe
+mov $0,$2
 mod $0,$1

@@ -7,20 +7,17 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
-  add $3,4
-  mov $7,0
-  sub $7,$0
-  bin $7,3
-  sub $7,1
-  bin $7,3
+  mov $3,0
+  sub $3,$0
+  bin $3,3
+  sub $3,1
+  bin $3,3
   mov $6,0
-  sub $6,$7
+  sub $6,$3
   mov $2,$5
   mul $2,$6
   mov $4,$6
   add $1,$2
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
+sub $1,$4
 mov $0,$1

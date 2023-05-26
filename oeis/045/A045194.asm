@@ -1,4 +1,4 @@
-; A045194: Numbers n with property that in base 5 representation the numbers of 0's and 3's are 1 and 3, respectively.
+; A045194: Numbers whose base-5 representation contains exactly one 0 and three 3's.
 ; Submitted by F14Claude
 ; 393,453,465,718,1018,1078,1090,1343,1643,1703,1715,1918,1943,1958,1963,1966,1967,1969,1973,1993,2018,2078,2090,2143,2203,2215,2258,2263,2266,2267,2269,2273,2278,2290,2303,2315,2326
 

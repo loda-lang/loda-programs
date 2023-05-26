@@ -4,6 +4,4 @@
 ; Formula: a(n) = A001113(n)^2
 
 seq $0,1113 ; Decimal expansion of e.
-add $1,$0
-pow $1,2
-mov $0,$1
+pow $0,2

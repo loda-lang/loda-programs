@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,151403 ; Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0), ending on the vertical axis and consisting of 2 n steps taken from {(-1, 0), (-1, 1), (1, 0), (1, 1)}.
+  mul $3,2
+  bin $3,$1
   gcd $3,$1
   cmp $3,1
   sub $0,$3

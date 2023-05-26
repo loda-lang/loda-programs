@@ -27,6 +27,7 @@ A004397: a(n) = prime(n) + Fibonacci(n).
 A004398: a(n) = Fibonacci(n+1) + prime(n).
 A004399: Fibonacci(n+2) plus n-th prime.
 A004649: Prime(n) mod (n-1).
+A004682: Primes written in base 8.
 A005097: (Odd primes - 1)/2.
 A005171: Characteristic function of nonprimes: 0 if n is prime, else 1.
 A005722: a(n) = (prime(n) - 1)^2.
@@ -459,6 +460,7 @@ A242125: Primes modulo 27.
 A242126: Primes modulo 28.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
 A244735: a(n) = (prime(n) mod 5) mod 2.
+A248558: Squares of the digits of the decimal expansion of e.
 A259547: a(n) = n^4*Fibonacci(n).
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
