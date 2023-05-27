@@ -1,12 +1,22 @@
 ; A098102: a(n) = 2^(prime(n) - 1) - 1 where prime(n) is the n-th prime.
-; Submitted by Science United
+; Submitted by Stony666
 ; 1,3,15,63,1023,4095,65535,262143,4194303,268435455,1073741823,68719476735,1099511627775,4398046511103,70368744177663,4503599627370495,288230376151711743,1152921504606846975
-; Formula: a(n) = (2^A000040(n)-4)/2+1
 
-seq $0,40 ; The prime numbers.
-mov $1,2
-pow $1,$0
-mov $0,$1
-sub $0,4
+add $0,2
+mov $3,$0
+pow $3,4
+lpb $3
+  add $5,1
+  add $1,1
+  mov $4,$2
+  gcd $4,$1
+  div $4,$5
+  sub $0,$4
+  add $2,1
+  mul $2,2
+  sub $3,$0
+lpe
+mov $0,$2
+sub $0,2
 div $0,2
 add $0,1

@@ -6,8 +6,17 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  add $6,1
+  mov $7,$1
+  mul $7,2
+  add $7,1
+  seq $7,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
   mov $3,$1
-  seq $3,344764 ; a(n) = gcd(n, A011772(n)).
+  sub $3,$7
+  add $3,1
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   add $3,$4
   cmp $3,3
   sub $0,$3

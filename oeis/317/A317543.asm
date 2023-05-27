@@ -1,21 +1,28 @@
 ; A317543: Positions of 1's in A317542, the formal inverse of the period-doubling sequence A096268.
-; Submitted by Christian Krause
+; Submitted by Stony666
 ; 1,5,7,13,17,23,29,31,37,49,55,61,65,71,77,95,101,113,119,125,127,133,145,151,157,193,199,205,223,229,241,247,253,257,263,269,287,293,305,311,317,383,389,401,407,413,449,455,461,479,485,497,503,509,511,517,529
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,316832 ; In A316831, replace 2's and 3's with 0's.
-  sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+add $0,1
+mov $2,1
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,316832 ; In A316831, replace 2's and 3's with 0's.
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
 lpe
-mov $0,$1
+mov $0,$2
 div $0,2
-sub $0,1
+add $0,426878854210636742665
+mov $1,426878854210636742656
+mul $1,$0
+mov $0,$1
+sub $0,182225556172186058679209018346836337360896
+div $0,213439427105318371328
+add $0,1

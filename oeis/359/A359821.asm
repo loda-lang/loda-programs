@@ -6,7 +6,7 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  seq $3,40 ; The prime numbers.
+  seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$1
   mul $5,$3
   add $3,$5

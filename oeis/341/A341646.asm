@@ -6,8 +6,17 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,341596 ; Number of strictly inferior squarefree divisors of n.
+  mov $5,$1
+  seq $5,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  sub $5,$6
   mov $3,$1
-  seq $3,341595 ; Number of strictly superior squarefree divisors of n.
+  add $3,1
+  seq $3,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
+  gcd $3,2
+  sub $3,1
+  mul $3,$5
   min $3,1
   sub $0,$3
   add $1,1

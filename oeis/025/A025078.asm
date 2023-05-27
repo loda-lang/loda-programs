@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
+  seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   add $0,$4
   mov $4,$3
   add $3,$0

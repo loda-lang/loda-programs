@@ -9,7 +9,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,85357 ; Common residues of binomial(3n,n)/(2n+1) modulo 2: relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
+  seq $3,227349 ; Product of lengths of runs of 1-bits in binary representation of n.
+  mov $5,$3
+  seq $3,47551 ; Numbers that are congruent to {0, 1, 6, 7} mod 8.
+  div $5,$3
+  mov $3,$5
   gcd $3,2
   sub $0,$3
   add $0,1

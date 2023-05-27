@@ -16,7 +16,12 @@ lpb $4
   mov $5,$0
   add $5,1
   add $0,$4
-  seq $0,23896 ; Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
+  mov $6,$0
+  seq $6,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $6,1
+  add $0,1
+  mul $0,$6
+  dif $0,2
   mod $0,$5
   mul $1,$0
   add $3,$1

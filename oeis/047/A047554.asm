@@ -1,13 +1,11 @@
 ; A047554: Numbers that are congruent to {1, 2, 6, 7} mod 8.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,2,6,7,9,10,14,15,17,18,22,23,25,26,30,31,33,34,38,39,41,42,46,47,49,50,54,55,57,58,62,63,65,66,70,71,73,74,78,79,81,82,86,87,89,90,94,95,97,98,102,103,105,106,110,111,113,114,118,119,121,122,126
-; Formula: a(n) = ((3*n+21)%4+4*n+1)/2
+; Formula: a(n) = (8*((5*n+10)/4))/5-2
 
-mov $1,$0
-mul $0,4
-add $0,1
-mul $1,3
-add $1,21
-mod $1,4
-add $0,$1
-div $0,2
+add $0,2
+mul $0,5
+div $0,4
+mul $0,8
+div $0,5
+sub $0,2

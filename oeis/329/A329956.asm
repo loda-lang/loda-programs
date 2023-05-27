@@ -17,7 +17,13 @@ lpb $0
   dif $3,2
   mov $8,-1
   pow $8,$3
-  seq $3,115978 ; Expansion of phi(-q) * phi(-q^3) in powers of q where phi() is a Ramanujan theta function.
+  mov $9,-1
+  pow $9,$3
+  mul $9,10
+  add $9,5
+  seq $3,4016 ; Theta series of planar hexagonal lattice A_2.
+  mul $3,$9
+  div $3,15
   mul $3,$8
   mul $3,$7
   div $3,2
