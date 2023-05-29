@@ -1,19 +1,19 @@
 ; A051109: Hyperinflation sequence for banknotes.
-; Submitted by dkester788
+; Submitted by Science United
 ; 1,2,5,10,20,50,100,200,500,1000,2000,5000,10000,20000,50000,100000,200000,500000,1000000,2000000,5000000,10000000,20000000,50000000,100000000,200000000,500000000,1000000000,2000000000,5000000000
 
 add $0,1
 mov $1,2
 pow $1,$0
-mov $4,1
+mov $2,1
 mov $0,$1
 lpb $0
   mov $3,$0
-  mod $3,8
-  mul $3,$4
+  mul $3,$2
   div $0,8
-  add $2,$3
-  mul $4,10
+  mul $2,10
 lpe
-mov $0,$2
+mov $0,$3
+sub $0,2
 div $0,2
+add $0,1

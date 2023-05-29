@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,5836 ; Numbers whose base 3 representation contains no 2.
+  seq $3,5836 ; Numbers whose base-3 representation contains no 2.
   mul $3,2
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

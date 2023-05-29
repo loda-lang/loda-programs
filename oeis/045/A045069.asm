@@ -1,4 +1,4 @@
-; A045069: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 1 and 3, respectively.
+; A045069: Numbers whose base-4 representation contains exactly one 0 and three 3's.
 ; Submitted by PDW
 ; 207,243,252,319,463,499,508,575,719,755,764,799,815,823,827,829,830,847,883,892,911,947,956,967,971,973,974,979,988,995,1004,1009,1010,1012,1016,1151,1215,1247,1263,1271,1275,1277
 

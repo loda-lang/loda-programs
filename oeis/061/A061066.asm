@@ -6,6 +6,5 @@
 add $0,1
 seq $0,40 ; The prime numbers.
 pow $0,2
-sub $0,9
+sub $0,1
 div $0,8
-add $0,1

@@ -8,7 +8,9 @@ lpb $0
   add $0,$3
   sub $2,2
   mov $3,$1
-  seq $3,108598 ; Floor(n*((5+sqrt(5))/4)).
+  add $3,1
+  mul $3,85
+  div $3,47
   sub $0,$3
   add $1,1
   max $4,1

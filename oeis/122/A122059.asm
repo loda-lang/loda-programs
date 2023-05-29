@@ -1,22 +1,18 @@
 ; A122059: Number of different polygonal knots with n straight line segments.
-; Submitted by gemini8
+; Submitted by Science United
 ; 1,0,0,1,1,2,3,0,4
+; Formula: a(n) = b(n)%10, b(n) = (b(n-4)+c(n-4))*(b(n-2)+b(n-3)+b(n-4)+c(n-4)), b(4) = 1, b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 1, c(n) = b(n-1)+c(n-1), c(4) = 2, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 0
 
-mov $1,$0
-bin $1,2
+mov $1,1
 mov $5,1
-add $0,2
 lpb $0
   sub $0,1
-  mov $4,$5
-  add $5,$3
-  sub $3,$5
+  mul $3,$5
+  add $4,$1
+  mov $1,$3
+  mov $3,$2
+  mov $2,$5
+  mov $5,$4
 lpe
-sub $4,$3
-sub $4,$3
-mov $2,2
-pow $2,$1
-mov $0,$4
-add $0,$2
-div $0,3
+mov $0,$1
 mod $0,10

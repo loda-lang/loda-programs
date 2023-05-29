@@ -166,6 +166,7 @@ A060429: a(n) = 4*prime(n)^2+1.
 A060497: a(n) = binomial(2^n, prime(n)).
 A060800: a(n) = p^2 + p + 1 where p runs through the primes.
 A060904: Largest power of 5 that divides n.
+A061066: a(n) = (prime(n)^2 - 1)/8.
 A061397: Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
 A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
 A061725: p^2 + 2 where p is a prime.

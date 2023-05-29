@@ -3,7 +3,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,167463 ; a(n) = n mod 15.
+  mod $2,15
   mov $0,13
   mov $1,$2
   min $1,1

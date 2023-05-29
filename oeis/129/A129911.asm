@@ -7,7 +7,22 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,129910 ; Quotient of the decimal representation of concatenated twin primes in reverse divided by 3.
+  mul $3,2
+  trn $3,1
+  mov $6,$3
+  sub $3,1
+  gcd $3,2
+  div $6,2
+  seq $6,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+  sub $6,1
+  mul $6,3
+  add $6,$3
+  mov $3,$6
+  mul $3,2
+  add $3,2
+  seq $3,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+  sub $3,2
+  div $3,3
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

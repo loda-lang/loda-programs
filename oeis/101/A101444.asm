@@ -7,8 +7,8 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,101442 ; a(n) = 9973*n + 10007.
-  sub $3,1
+  mul $3,9973
+  add $3,10006
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,2
   sub $0,$3

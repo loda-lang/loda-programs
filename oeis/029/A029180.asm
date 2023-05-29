@@ -1,13 +1,32 @@
 ; A029180: Expansion of 1/((1-x^2)(1-x^4)(1-x^6)(1-x^11)).
-; Submitted by Simon Strandgaard
+; Submitted by BlisteringSheep
 ; 1,0,1,0,2,0,3,0,4,0,5,1,7,1,8,2,10,3,12,4,14,5,17,7,20,8,23,10,27,12,31,14,35,17,40,20,45,23,50,27,56,31,62,35,69,40,76,45,84,50,92,56,101,62,110,69,120,76,130,84,141
 
-add $0,1
+mov $3,1
+add $0,6
 lpb $0
+  sub $0,$3
   mov $2,$0
-  trn $2,1
-  seq $2,25805 ; Expansion of 1/((1-x^2)(1-x^4)(1-x^11)).
-  trn $0,6
+  dif $2,-2
+  add $2,1
+  max $2,0
+  sub $2,1
+  mov $4,$2
+  div $4,2
+  add $4,2
+  pow $4,2
+  add $4,$2
+  sub $2,1
+  mov $5,0
+  sub $5,$2
+  gcd $2,2
+  pow $2,3
+  add $2,6
+  div $2,6
+  mul $2,$5
+  add $2,$4
+  div $2,12
+  mov $3,11
   add $1,$2
 lpe
 mov $0,$1

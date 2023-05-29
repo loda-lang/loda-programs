@@ -13,7 +13,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,29833 ; A discrete version of the Mangoldt function: if n is prime then round(log(n)) else 0.
+  seq $0,166260 ; a(n) = A089026(n) - 1.
+  seq $0,193 ; Nearest integer to log n.
   mul $1,$0
   add $3,$1
 lpe

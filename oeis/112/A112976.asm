@@ -5,9 +5,11 @@
 mov $2,$0
 lpb $0
   mov $1,$0
-  seq $1,6005 ; The odd prime numbers together with 1.
+  seq $1,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
+  mul $1,2
+  sub $1,8
+  div $1,8
   mul $1,3
-  sub $1,3
   seq $1,62298 ; Number of nonprimes <= n.
   add $1,1
   mov $0,1

@@ -10,7 +10,10 @@ lpb $2
   sub $2,1
   mov $3,$1
   trn $3,1
-  seq $3,16035 ; a(n) = Sum_{j|n, 1 < j < n} phi(j). Also a(n) = n - phi(n) - 1 for n > 1.
+  mov $5,$3
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  sub $3,$5
+  trn $3,1
   sub $0,$3
   add $1,$4
   add $1,1

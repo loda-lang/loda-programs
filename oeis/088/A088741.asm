@@ -1,4 +1,5 @@
 ; A088741: Number of connected strongly regular simple graphs on n nodes.
+; Submitted by Padanian
 ; 1,1,1,2,2,3,1,3,3,5
 
 sub $0,1
@@ -7,6 +8,7 @@ div $0,2
 sub $1,4
 lpb $1
   trn $1,8
+  mul $1,2
   sub $0,2
   mul $0,2
 lpe

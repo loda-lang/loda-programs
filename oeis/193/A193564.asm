@@ -24,5 +24,4 @@ sub $0,$1
 mul $0,9
 gcd $0,0
 div $0,9
-add $0,1
-sub $0,2
+sub $0,1

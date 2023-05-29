@@ -1,14 +1,9 @@
 ; A169675: Lexicographically earliest de Bruijn sequence for n = 3 and k = 2.
-; Submitted by BlisteringSheep
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0
-; Formula: a(n) = ((((n+4)/2)%4+6*n+25)/4)%2
+; Formula: a(n) = (binomial(n%8,2)/3)%2
 
-add $0,4
-mov $1,$0
-div $1,2
-mod $1,4
-mul $0,6
-add $0,$1
-add $0,1
-div $0,4
+mod $0,8
+bin $0,2
+div $0,3
 mod $0,2
