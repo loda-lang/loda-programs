@@ -7,7 +7,7 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,55035 ; Degree of minimal polynomial of sin(Pi/n) over the rationals.
+  seq $3,62570 ; a(n) = phi(2*n).
   mod $3,3
   add $3,1
   div $3,2

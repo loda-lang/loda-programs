@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   trn $0,1
-  seq $0,226158 ; a(n) = zeta(1-n)*2*n*(2^n-1) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
+  seq $0,226158 ; a(n) = 2*n*(2^n - 1)*zeta(1-n) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
 lpe
 mul $1,$0
 mov $0,0

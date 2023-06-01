@@ -1,13 +1,12 @@
 ; A099041: Number of 3 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (10;0) and (10;1).
-; Submitted by Science United
+; Submitted by Mumps
 ; 1,8,24,58,128,270,556,1130,2280,4582,9188,18402,36832,73694,147420,294874,589784,1179606,2359252,4718546,9437136,18874318,37748684,75497418,150994888,301989830,603979716,1207959490,2415919040,4831838142,9663676348,19327352762
 ; Formula: a(n) = 9*2^n-2*n-8
 
 mov $1,2
 pow $1,$0
-mul $0,2
 mul $1,9
-add $1,5
+mul $0,2
 sub $1,$0
 mov $0,$1
-sub $0,13
+sub $0,8

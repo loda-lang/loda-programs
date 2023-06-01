@@ -5,8 +5,16 @@
 mov $1,$0
 div $1,2
 mul $1,2
+mov $4,4
 add $0,$1
-seq $0,253878 ; Indices of triangular numbers (A000217) which are also centered heptagonal numbers (A069099).
-div $0,7
-mul $0,3
+lpb $0
+  sub $0,1
+  mov $2,$4
+  mul $2,14
+  add $3,$2
+  add $4,$3
+lpe
+mov $0,$4
+div $0,56
+mul $0,9
 add $0,1

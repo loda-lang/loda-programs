@@ -8,7 +8,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353470 ; a(n) = 1 if the number of its divisors, tau(n), is divisible by 3, otherwise 0.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $3,1
+  mod $3,3
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

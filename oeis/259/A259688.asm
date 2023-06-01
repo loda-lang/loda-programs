@@ -1,15 +1,32 @@
 ; A259688: Related to Euler numbers.
 ; Submitted by Skillz
 ; 2,8,16,136,272,3968,7936,176896,353792
-; Formula: a(n) = 2*((A000182((n+1)/2+1)*gcd(n,2))/4)
 
 add $0,1
 mov $1,$0
 sub $0,1
 gcd $0,2
 div $1,2
-add $1,1
-seq $1,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+mul $1,2
+add $1,3
+mov $2,1
+mov $5,$1
+lpb $1
+  sub $1,1
+  div $7,2
+  add $7,$3
+  mul $7,2
+  mov $3,$2
+  pow $3,$5
+  sub $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+gcd $1,$6
 mul $0,$1
 div $0,4
 mul $0,2

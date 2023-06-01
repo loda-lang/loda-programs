@@ -4,5 +4,23 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,14030 ; Inverse of 21st cyclotomic polynomial.
+lpb $0
+  add $2,21
+  add $5,21
+  mod $0,$2
+  mov $3,-1
+  mov $4,4
+  add $4,$0
+  div $0,10
+lpe
+sub $3,$4
+div $3,4
+add $0,1
+mul $0,$3
+mul $0,2
+gcd $5,2
+mul $5,2
+sub $0,$5
+add $0,6
+div $0,2
 mul $0,$1

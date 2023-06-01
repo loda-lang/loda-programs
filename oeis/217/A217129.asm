@@ -8,7 +8,8 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,193929 ; Number of prime factors of n^4 + 1, counted with multiplicity.
+  pow $3,4
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   div $3,2
   min $3,1
   sub $0,$3

@@ -35,6 +35,5 @@ add $0,10
 mov $2,1
 add $2,$0
 mov $0,$2
-sub $0,9
-sub $0,3
 sub $0,$1
+sub $0,12

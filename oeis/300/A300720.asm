@@ -14,7 +14,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,300718 ; Möbius transform of A010848, number of numbers k <= n such that at least one prime factor of n is not a prime factor of k.
+  mov $5,$0
+  seq $5,300717 ; Möbius transform of A003557, n divided by its largest squarefree divisor.
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,$5
   mul $1,$0
   add $3,$1
 lpe

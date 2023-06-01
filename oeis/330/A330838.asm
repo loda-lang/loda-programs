@@ -1,6 +1,7 @@
 ; A330838: Numbers of the form 2^(2*p)*3*M_p^2, where p > 2 is a Mersenne exponent, A000043, and M_p is the corresponding Mersenne prime, A000668.
 ; Submitted by Science United
 ; 9408,2952192,792772608,13507500548554752,885430204790715973632,226672726487439148843008,63802943738254840027519543753580740608,84808659109362447746438494074097423574469305696233859650983304520596979712
+; Formula: a(n) = 12*(((4*((4*binomial(2^A139421(A019280(n+1)),2)-24)/8)+12)*(8*((4*binomial(2^A139421(A019280(n+1)),2)-24)/8)+24))/8)
 
 add $0,1
 seq $0,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
@@ -12,8 +13,7 @@ mov $0,$2
 mul $0,4
 sub $0,24
 div $0,8
-add $0,2
-add $0,1
+add $0,3
 mul $0,4
 mov $1,$0
 mul $0,2

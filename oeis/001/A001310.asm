@@ -6,10 +6,16 @@ mov $1,1
 mov $2,$0
 lpb $2
   sub $2,2
+  mov $5,$1
+  seq $5,339094 ; Number of (unordered) ways of making change for n US Dollars using the current US denominations of 1$, 2$, 5$, 10$, 20$, 50$ and 100$ bills.
   mov $3,$1
-  seq $3,57537 ; Number of ways of making change for n Euro-cents using the Euro currency.
-  add $4,$3
+  seq $3,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $3,1
+  mul $5,$3
+  mov $6,0
+  sub $6,$5
   add $1,1
+  add $4,$6
 lpe
 mov $0,$4
 add $0,1

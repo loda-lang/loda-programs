@@ -1,12 +1,11 @@
 ; A173406: This sequence starts with any odd, composite number, like 15. There exists a power of two such that every 2^n + s_i is composite, where s_i is a term in the sequence less than 2^n. For example, 128+15=143, 512+15=527, 512+143=655, etc.
-; Submitted by Science United
+; Submitted by Dingo
 ; 15,143,527,655,1039,1167,1551,1679
-; Formula: a(n) = 256*n+128*((n+1)%2)-113
+; Formula: a(n) = 256*(n/2)+128*max(0,n)+15
 
-add $0,1
-mov $1,$0
-mod $1,2
+max $1,$0
+div $0,2
 mul $0,2
 add $0,$1
 mul $0,128
-sub $0,369
+add $0,15

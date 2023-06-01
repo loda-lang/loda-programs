@@ -7,8 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,243305 ; a(n) = 2^phi(n)+1 = A066781(n)+1.
-  sub $3,1
+  seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  seq $3,79 ; Powers of 2: a(n) = 2^n.
+  mul $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

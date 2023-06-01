@@ -10,7 +10,16 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,319699 ; a(n) = A001065(A252463(n)).
+  mov $6,$0
+  seq $6,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  sub $0,$6
+  add $0,1
+  sub $6,$0
+  dif $6,2
+  add $0,$6
+  sub $0,1
+  seq $0,91818 ; Sum of the even proper divisors of 2n. Sum of the even divisors of 2n that are less than 2n.
+  div $0,2
   mov $2,$3
   mul $2,$0
   div $4,2

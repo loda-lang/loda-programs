@@ -7,9 +7,18 @@ mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
+  mov $6,$1
+  add $6,3
+  seq $6,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
   add $1,2
   mov $3,$1
-  seq $3,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
+  mul $3,2
+  sub $3,$6
+  mul $3,2
+  mov $5,$3
+  add $5,1
+  div $3,$5
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

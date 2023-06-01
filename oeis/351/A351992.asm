@@ -1,14 +1,11 @@
 ; A351992: Number of minimum edge covers in the n-vertex wheel graph.
-; Submitted by Simon Strandgaard
+; Submitted by http://amez.petrsu.ru/
 ; 0,1,4,3,14,5,30,7,52,9,80,11,114,13,154,15,200,17,252,19,310,21,374,23,444,25,520,27,602,29,690,31,784,33,884,35,990,37,1102,39,1220,41,1344,43,1474,45,1610,47,1752,49,1900,51,2054,53,2214,55,2380,57,2552,59,2730
 
-mul $0,3
-lpb $0
-  add $2,$0
-  dif $2,2
-  sub $0,$2
-  mul $1,$2
-  add $1,$2
-lpe
+sub $1,$0
+dif $0,2
+bin $0,2
+mul $0,2
+pow $1,2
+sub $1,$0
 mov $0,$1
-div $0,3

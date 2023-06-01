@@ -7,7 +7,11 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,48106 ; Number of unitary divisors of n (A034444) - number of non-unitary divisors of n (A048105).
+  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,$3
+  sub $3,$5
   trn $3,7
   min $3,1
   sub $0,$3

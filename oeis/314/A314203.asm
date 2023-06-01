@@ -41,8 +41,7 @@ add $3,1
 add $3,$8
 mul $3,4
 add $3,1
-mul $3,2
-div $3,6
+div $3,3
 mov $6,$0
 mul $6,2
 sub $3,$6

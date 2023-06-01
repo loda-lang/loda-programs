@@ -14,8 +14,6 @@ lpb $1
   lpe
   dif $1,3
 lpe
-mod $2,2
-mov $1,$2
-add $0,$1
+add $0,$2
 add $0,3
 mod $0,2

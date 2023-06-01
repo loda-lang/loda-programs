@@ -4,5 +4,5 @@
 ; Formula: a(n) = A005836(A277335(n))/4
 
 seq $0,277335 ; Fibbinary numbers multiplied by three: a(n) = 3*A003714(n); Numbers where all 1-bits occur in runs of even length.
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.
 div $0,4

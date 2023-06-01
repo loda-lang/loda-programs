@@ -12,8 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,20806 ; Decimal expansion of 1/7.
-  mul $1,$0
+  add $0,4
+  mov $5,10
+  pow $5,$0
+  div $5,875
+  mod $5,10
+  mul $1,$5
   mul $3,-1
   add $3,$1
 lpe

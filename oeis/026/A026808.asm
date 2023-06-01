@@ -10,7 +10,16 @@ lpb $4
   mov $0,$2
   sub $0,$4
   sub $0,1
-  seq $0,45778 ; Number of factorizations of n into distinct factors greater than 1.
+  mov $5,$0
+  seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $0,1
+  seq $5,88434 ; Number of ways to write n as n = u*v*w with 1 <= u < v < w.
+  add $5,45
+  mul $5,$0
+  mov $6,3
+  sub $6,$5
+  mov $0,$6
+  sub $0,47
   mov $1,2
   mul $1,$0
   sub $3,1

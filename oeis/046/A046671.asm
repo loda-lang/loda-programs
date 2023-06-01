@@ -1,12 +1,32 @@
 ; A046671: Nim-values G(3,n) for Sylver coinage.
 ; Submitted by Jon Maiga
 ; 2,3,1,4,6,1,7,8,1,9,11,1,12
-; Formula: a(n) = A314026(A117909(-(n/25)+n))/4+1
 
 mov $1,$0
 div $1,25
 sub $0,$1
-seq $0,117909 ; Count, inserting 0 after every even number.
-seq $0,314026 ; Coordination sequence Gal.5.130.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+add $0,1
+mov $2,$0
+div $2,3
+dif $0,3
+sub $0,$2
+mov $5,$0
+mul $5,2
+mov $3,$0
+mul $3,22
+sub $3,$0
+sub $3,1
+div $3,4
+mul $3,8
+add $3,10
+div $3,6
+sub $3,$5
+mov $4,$0
+mul $4,3
+mul $0,7
+sub $0,1
+mod $0,$3
+add $0,$4
+add $0,1
 div $0,4
 add $0,1

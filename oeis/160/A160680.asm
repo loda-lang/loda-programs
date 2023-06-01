@@ -8,7 +8,9 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
-  seq $2,152774 ; Number of proper divisors of the Fibonacci number A000045(n).
+  seq $2,71 ; a(n) = Fibonacci(n) - 1.
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $2,1
   add $1,$2
 lpe
 mov $0,$1

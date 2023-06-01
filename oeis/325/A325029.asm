@@ -14,11 +14,14 @@ lpb $4
   bin $1,$0
   pow $0,$1
   sub $0,1
+  mov $7,$0
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$0
-  seq $5,76722 ; Product of product of divisors of n and sum of divisors of n.
+  seq $5,7955 ; Product of divisors of n.
   mov $6,$0
   add $6,1
   add $0,1
+  mul $5,$7
   dif $5,$6
   mul $5,$0
   mul $1,$5

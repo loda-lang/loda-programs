@@ -4,7 +4,8 @@
 lpb $0
   mov $1,$0
   max $1,4
-  seq $1,5171 ; Characteristic function of nonprimes: 0 if n is prime, else 1.
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  cmp $1,0
   sub $0,$1
 lpe
 add $0,1

@@ -8,7 +8,10 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
-  seq $3,14664 ; Order of 2 modulo the n-th prime.
+  seq $3,40 ; The prime numbers.
+  div $3,2
+  mul $3,2
+  seq $3,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
   mov $5,$3
   mul $5,2
   add $3,1

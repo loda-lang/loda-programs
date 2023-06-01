@@ -4,7 +4,14 @@
 
 mov $1,$0
 mul $1,8
+mov $2,2
 dif $0,2
-seq $0,53669 ; Smallest prime not dividing n.
+add $0,1
+pow $0,144
+lpb $0
+  dif $0,$2
+  add $2,1
+lpe
+mov $0,$2
 add $0,$1
 add $0,1

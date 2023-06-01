@@ -1,6 +1,14 @@
 ; A165735: Surviving integers under the double-count Josephus problem (see A054995), modulo 3.
 ; 1,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = A054995(n)%3
+; Formula: a(n) = (b(n)+1)%3, b(n) = (b(n-1)+3)%(n+1), b(1) = 1, b(0) = 0
 
-seq $0,54995 ; A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer two places clockwise from i. Repeat, counting two places from the next undeleted integer, until only one integer remains.
+mov $2,1
+lpb $0
+  sub $0,1
+  add $2,1
+  add $1,3
+  mod $1,$2
+lpe
+mov $0,$1
+add $0,1
 mod $0,3

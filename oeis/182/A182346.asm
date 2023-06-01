@@ -10,7 +10,9 @@ lpb $2
   add $3,1
   mov $5,$3
   pow $5,4
-  seq $3,40188 ; Continued fraction for sqrt(203).
+  sub $3,1
+  mod $3,2
+  add $3,4
   add $3,$5
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

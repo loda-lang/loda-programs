@@ -1,18 +1,16 @@
 ; A051941: Truncated triangular pyramid numbers: a(n) = (n-7)*(n^2 + 10*n - 108)/6, n >= 8.
-; Submitted by Science United
+; Submitted by LCB001
 ; 6,21,46,82,130,191,266,356,462,585,726,886,1066,1267,1490,1736,2006,2301,2622,2970,3346,3751,4186,4652,5150,5681,6246,6846,7482,8155,8866,9616,10406,11237,12110,13026,13986,14991,16042,17140,18286,19481
-; Formula: a(n) = (24*binomial(n+1,2)+2*binomial(n-2,3)+9)/2+6
+; Formula: a(n) = (10*(n+1)^2+2*binomial(n,3)-10)/2+6
 
-sub $0,1
 mov $1,$0
-sub $0,1
 bin $0,3
-add $1,2
-bin $1,2
-mul $1,12
+mul $0,2
+add $1,1
+pow $1,2
+mul $1,10
 add $1,$0
 mov $0,$1
-mul $0,2
-add $0,9
+sub $0,10
 div $0,2
 add $0,6

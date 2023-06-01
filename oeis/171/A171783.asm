@@ -1,21 +1,21 @@
 ; A171783: Third smallest divisor of smallest number having exactly n divisors.
-; Submitted by [AF] Kalianthys
+; Submitted by [AF>Libristes] Dudumomo
 ; 4,3,4,3,4,3,3,3,4,3,4,3,3,3,4,3,4,3,3,3,4,3,3,3,3,3,4,3,4,3,3,3,3,3,4,3,3,3,4,3,4,3,3,3,4,3,3,3,3,3,4,3,3,3,3,3,4,3,4,3,3,3,3,3,4,3,3,3,4,3,4,3,3,3,3,3,4,3,3,3,4,3,3,3,3,3,4,3,3,3,3,3,3,3,4,3,3,3,4,3
 
-add $0,3
-lpb $0
-  gcd $2,2
-  mov $3,$0
-  div $3,3
-  lpb $3
-    mov $1,$0
-    mod $1,$2
-    add $2,1
-    sub $3,$1
-  lpe
-  div $0,$2
-  pow $0,2
-  mov $2,1
+add $0,2
+mov $1,1
+add $1,$0
+add $0,$1
+bin $0,$1
+mul $0,2
+sub $0,2
+pow $1,2
+mod $0,$1
+mul $1,$0
+mov $0,12
+lpb $1
+  mov $1,0
+  mov $0,0
 lpe
-mov $0,$2
+div $0,10
 add $0,3

@@ -5,8 +5,11 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
   mov $3,$1
-  seq $3,355442 ; a(n) = gcd(A003961(n), A276086(n)), where A003961 is fully multiplicative with a(p) = nextprime(p), and A276086 is primorial base exp-function.
+  seq $3,283980 ; a(n) = A003961(n)*A006519(n).
+  gcd $3,$5
   cmp $3,1
   sub $0,$3
   mov $4,$0

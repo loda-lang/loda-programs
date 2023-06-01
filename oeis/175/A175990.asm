@@ -1,4 +1,4 @@
-; A175990: Irregular triangle t(n,m) = binomial(n-m-1,m+1) read by rows.
+; A175990: Irregular triangle read by rows: t(n,m) = binomial(n-m-1,m+1) for 0 <= m <= floor((n-1)/2).
 ; Submitted by Christian Krause
 ; 1,2,0,3,1,4,3,0,5,6,1,6,10,4,0,7,15,10,1,8,21,20,5,0,9,28,35,15,1,10,36,56,35,6,0,11,45,84,70,21,1
 

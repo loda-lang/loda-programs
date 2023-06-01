@@ -83,6 +83,7 @@ A031359: Bisection of A001615.
 A031368: Odd-indexed primes: a(n) = prime(2n-1).
 A031369: a(n) = prime(3n-1).
 A031370: a(n) = prime(4n-1).
+A031373: Primes p(7n-1).
 A031374: a(n) = prime(8*n - 1).
 A031377: a(n) = prime(3n-2).
 A031378: a(n) = prime(4*n - 2).

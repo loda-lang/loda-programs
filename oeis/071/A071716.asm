@@ -5,4 +5,14 @@ lpb $0
   pow $0,2
   sub $0,1
 lpe
-seq $0,167422 ; Expansion of (1+x)*c(x), c(x) the g.f. of A000108.
+sub $0,1
+mov $2,2
+mul $2,$0
+mov $1,$2
+bin $1,$0
+mul $1,2
+sub $0,1
+add $2,1
+bin $2,$0
+sub $1,$2
+mov $0,$1

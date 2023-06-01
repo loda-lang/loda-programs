@@ -8,7 +8,14 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  seq $0,244220 ; Binary complement of Greedy Catalan Base reduced modulo 2: a(n) = 1 - (A014418(n) modulo 2).
+  mov $5,$0
+  seq $5,244221 ; Parity of Greedy Catalan Base representation for n: a(n) = A014418(n) reduced modulo 2.
+  pow $0,$5
+  seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $0,1
+  mul $5,$0
+  mov $0,$5
+  add $0,1
   mov $1,1558
   sub $1,$0
   mov $0,$1

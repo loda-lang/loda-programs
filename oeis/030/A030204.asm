@@ -4,5 +4,18 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,138514 ; Expansion of q^(-1/8) * eta(q^2)^4 / (eta(q) * eta(q^4)) in powers of q.
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,89798 ; Expansion of Jacobi theta function theta_4(q^2).
+  sub $5,1
+  add $2,$3
+  mov $4,2
+  add $4,$5
+  add $5,2
+lpe
+mov $0,$2
 mul $0,$1

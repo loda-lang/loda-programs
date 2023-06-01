@@ -1,7 +1,21 @@
 ; A267535: Binary representation of the n-th iteration of the "Rule 143" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,110,11001,1100111,110011111,11001111111,1100111111111,110011111111111,11001111111111111,1100111111111111111,110011111111111111111,11001111111111111111111,1100111111111111111111111,110011111111111111111111111,11001111111111111111111111111,1100111111111111111111111111111,110011111111111111111111111111111,11001111111111111111111111111111111,1100111111111111111111111111111111111,110011111111111111111111111111111111111,11001111111111111111111111111111111111111
-; Formula: a(n) = A007088(A267536(n))
 
-seq $0,267536 ; Decimal representation of the n-th iteration of the "Rule 143" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,4
+pow $1,$0
+mul $1,13
+sub $1,10
+div $1,8
+add $1,1
+mov $3,1
+mov $0,$1
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2

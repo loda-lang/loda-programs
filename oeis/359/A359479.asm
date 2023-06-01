@@ -8,7 +8,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,332793 ; a(1) = 1; a(n) = n * Sum_{d|n, d < n} (-1)^(n/d) * a(d) / d.
+  mov $5,$2
+  seq $5,67856 ; Sum_{n >= 1} a(n)/n^s = 1/(Sum_{n >= 1} (-1)^(n + 1)/n^s).
+  mul $2,$5
+  add $2,$5
   max $0,$4
   add $1,$2
   mov $3,1

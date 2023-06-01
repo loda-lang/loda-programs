@@ -1,7 +1,14 @@
 ; A359271: Number of odd digits necessary to write all nonnegative n-digit integers.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 5,95,1400,18500,230000,2750000,32000000,365000000,4100000000,45500000000,500000000000,5450000000000,59000000000000,635000000000000,6800000000000000,72500000000000000,770000000000000000,8150000000000000000
-; Formula: a(n) = 5*A081045(n)
 
-seq $0,81045 ; 10th binomial transform of (1,9,0,0,0,0,0,...).
+mov $1,$0
+lpb $1
+  sub $1,1
+  add $0,1
+  mul $0,10
+lpe
+div $0,10
+mul $0,9
+add $0,1
 mul $0,5

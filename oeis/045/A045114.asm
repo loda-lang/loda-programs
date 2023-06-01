@@ -1,4 +1,4 @@
-; A045114: Numbers n with property that in base 4 representation the numbers of 1's and 3's are 1 and 0, respectively.
+; A045114: Numbers whose base-4 representation contains exactly one 1 and no 3's.
 ; Submitted by PDW
 ; 1,4,6,9,16,18,24,26,33,36,38,41,64,66,72,74,96,98,104,106,129,132,134,137,144,146,152,154,161,164,166,169,256,258,264,266,288,290,296,298,384,386,392,394,416,418,424,426,513,516,518
 

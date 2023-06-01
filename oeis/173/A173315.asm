@@ -12,7 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,131800 ; Period 4: repeat [1, 2, 5, 6].
+  mod $0,4
+  mov $5,$0
+  gcd $5,2
+  add $5,$0
+  add $0,$5
+  sub $0,1
   mul $1,$0
   mul $3,-1
   add $3,$1

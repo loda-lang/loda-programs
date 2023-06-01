@@ -8,7 +8,12 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,326846 ; Length times maximum of the integer partition with Heinz number n.
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  mov $5,$1
+  seq $5,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  mul $5,$3
+  sub $5,$3
+  mov $3,$5
   add $3,$4
   gcd $3,2
   sub $0,$3

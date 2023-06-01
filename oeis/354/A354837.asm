@@ -7,9 +7,14 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,2
   add $1,1
   mov $3,$1
-  seq $3,76775 ; Greatest common divisor of n and the binary representation of n interpreted decimally.
+  seq $3,355297 ; a(n) = A007088(n) mod n.
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   div $3,2
   min $3,1
   sub $0,$3

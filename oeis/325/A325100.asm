@@ -7,7 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,318762 ; Number of permutations of a multiset whose multiplicities are the prime indices of n.
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+  sub $3,1
+  seq $3,331580 ; Smallest number whose unsorted prime signature is the reversed unsorted prime signature of n.
+  sub $3,1
+  seq $3,335447 ; Number of (1,2)-matching permutations of the prime indices of n.
+  add $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3
