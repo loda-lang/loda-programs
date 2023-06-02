@@ -1,4 +1,4 @@
-; A045269: Numbers n with property that in base 5 representation the numbers of 2's and 3's are 1 and 3, respectively.
+; A045269: Numbers whose base-5 representation contains exactly one 2 and three 3's.
 ; Submitted by Landjunge
 ; 343,443,463,467,968,1068,1088,1092,1343,1468,1643,1668,1703,1708,1715,1716,1719,1723,1743,1843,1943,1963,1967,2068,2088,2092,2143,2168,2203,2208,2215,2216,2219,2223,2243,2263,2267
 
@@ -16,8 +16,7 @@ lpb $2
     mod $5,10
     sub $5,1
     trn $5,4
-    mul $3,2
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4

@@ -4,5 +4,13 @@
 
 mov $1,$0
 div $1,2
+mov $2,1
 sub $0,$1
-seq $0,99496 ; a(n) = (-1)^n * Fibonacci(2*n+1).
+lpb $0
+  sub $0,1
+  sub $3,$2
+  mul $3,-1
+  mul $2,-1
+  sub $2,$3
+lpe
+mov $0,$2

@@ -50,6 +50,7 @@ A008864: a(n) = prime(n) + 1.
 A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
 A011757: a(n) = prime(n^2).
 A014303: a(n) = prime(n)*(prime(n+1)-1)/2.
+A014566: Sierpiński numbers of the first kind: n^n + 1.
 A014683: In the sequence of positive integers add 1 to each prime number.
 A014688: a(n) = n-th prime + n.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
@@ -100,6 +101,8 @@ A031906: a(n) = prime(6*n - 5).
 A031908: a(n) = prime(8*n - 5).
 A031910: a(n) = prime(10*n - 5).
 A031911: a(n) = prime(7*n - 6).
+A031912: a(n) = prime(8*n - 6).
+A031913: a(n) = prime(9*n - 6).
 A031914: a(n) = prime(10*n - 6).
 A031915: a(n) = prime(8*n - 7).
 A031918: a(n) = prime(9*n-8).
@@ -172,11 +175,13 @@ A061397: Characteristic function sequence of primes multiplied componentwise by 
 A061669: a(n) = n*(mu(n) + 1), where mu(n) is the Moebius function A008683.
 A061725: p^2 + 2 where p is a prime.
 A062011: a(n) = 2*tau(n) = 2*A000005(n).
+A062207: a(n) = 2*n^n-1.
 A062249: a(n) = n + d(n), where d(n) = number of divisors of n, cf. A000005.
 A062312: Nonprime numbers squared.
 A062355: a(n) = d(n) * phi(n), where d(n) is the number of divisors function.
 A062727: Sum of the divisors of n^n (A000312).
 A062772: Smallest prime larger than square of n-th prime.
+A062971: a(n) = (2*n)^n.
 A062981: a(n) = n^phi(n).
 A063439: a(n) = phi(n)^phi(n).
 A065073: n-th prime + sum of digits of n-th prime.
@@ -236,6 +241,7 @@ A083786: Composite numbers mod 10.
 A084300: a(n) = phi(n) mod 6.
 A084311: a(n) = gcd(prime(n)-1,n-1).
 A084920: a(n) = (prime(n)-1)*(prime(n)+1).
+A085603: (2n)^(2n) + 1.
 A085855: Number of 1's in decimal expansion of Fibonacci(n).
 A085858: Number of 4's in decimal expansion of Fibonacci(n).
 A085975: Number of 1's in decimal expansion of prime(n).
@@ -314,6 +320,7 @@ A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 A108605: Semiprimes with prime sum of factors: twice the lesser of the twin prime pairs.
 A109722: Sum of first 2n primes.
 A109763: Primes repeated.
+A110139: a(n) = floor(n/2)^floor(n/2).
 A110833: a(n) = (prime(n)+1)^2.
 A111741: Distance between k*(n-th prime) and next prime, k=9 case.
 A111742: Distance between k*(n-th prime) and next prime, k=10 case.
@@ -324,6 +331,7 @@ A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
 A119959: p^2-p+1 central polygonal numbers with prime indices A002061(prime(n)).
 A121239: Decimal expansion of 10-e.
+A122566: Primes with index k^2+k+1.
 A124669: Product of successive primes minus 2.
 A125137: a(n) = p^p + 1, where p = prime(n).
 A126996: a(n) = binomial(prime(3+n), prime(3)).
@@ -430,6 +438,7 @@ A179262: a(n) = 2*prime(n)^2 - 1.
 A180363: a(n) = Lucas(prime(n)).
 A180673: a(n) = Fibonacci(n+8) - Fibonacci(8).
 A181062: Prime powers minus 1.
+A181150: a(n) = prime(n)^3 + prime(n) + 1.
 A181923: Nonprimes (A018252) mod 2.
 A181932: A003136(n) mod 2.
 A182200: a(n) = prime(n)^2-3.
@@ -442,6 +451,7 @@ A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
 A200905: a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
 A215848: Primes > 3.
+A216147: 2*n^n + 1.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
 A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).

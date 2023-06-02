@@ -1,7 +1,20 @@
 ; A245933: Limit-reverse of A006337 (the difference sequence of Beatty sequence for sqrt(2)), with first term as initial block.
 ; 1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1
-; Formula: a(n) = A159684(n+14)+1
+; Formula: a(n) = d(n)+1, b(n) = (-c(n-1)+b(n-1))/2, b(2) = -19483284, b(1) = -5412137, b(0) = -2435666, c(n) = 2*gcd((-c(n-1)+b(n-1))/2+b(n-1)+d(n-1)+3,2)*c(n-1), c(2) = 67108864, c(1) = 33554432, c(0) = 8388608, d(n) = gcd((-c(n-1)+b(n-1))/2+b(n-1)+d(n-1)+3,2)/2, d(2) = 0, d(1) = 1, d(0) = 0
 
-add $0,14
-seq $0,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
+mov $2,4
+add $0,15
+lpb $0
+  sub $0,1
+  add $3,$1
+  sub $1,$2
+  div $1,2
+  add $3,3
+  add $3,$1
+  gcd $3,2
+  mul $2,$3
+  mul $2,2
+  div $3,2
+lpe
+mov $0,$3
 add $0,1

@@ -1,11 +1,9 @@
 ; A187102: Minimum number of function evaluations in each step of an explicit Runge-Kutta method of order n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by skildude
 ; 1,2,3,4,6,7,9,11
-; Formula: a(n) = (n*(n+1)-2)/15+n+1
+; Formula: a(n) = binomial(n+11,3)/64-1
 
-mov $1,$0
-add $1,1
-mul $0,$1
-sub $0,2
-div $0,15
-add $0,$1
+add $0,11
+bin $0,3
+div $0,64
+sub $0,1

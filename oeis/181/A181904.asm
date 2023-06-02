@@ -1,12 +1,38 @@
 ; A181904: a(n) = 2*(4^n - 1) / A027760(n)
 ; Submitted by Sphynx
 ; 3,5,63,17,1023,195,16383,4369,262143,31775,4194303,12291,67108863,89478485,1073741823,16843009,17179869183,172229265,274877906943,6663706835,4398046511103,254959218035,70368744177663,206208774147,1125899906842623,1501199875790165
-; Formula: a(n) = (4^(n+1)-1)/A141459(n+1)
 
 add $0,1
 mov $1,4
 pow $1,$0
-seq $0,141459 ; a(n) = Product_{p-1 divides n} p, where p is an odd prime.
+mov $2,$0
+sub $2,1
+mov $5,$2
+gcd $5,2
+add $2,1
+mov $4,2
+mov $8,$2
+mov $3,$2
+lpb $3
+  sub $3,2
+  mov $2,$8
+  sub $2,$3
+  mov $6,$2
+  mov $7,$2
+  gcd $7,$3
+  bin $7,$2
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $2,$6
+  add $2,1
+  mul $2,$4
+  div $3,$5
+  mul $7,$2
+  max $4,$7
+lpe
+mov $0,$4
+sub $0,2
+div $0,2
+add $0,1
 sub $1,1
 div $1,$0
 mov $0,$1

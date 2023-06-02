@@ -5,6 +5,14 @@
 mov $1,$0
 add $1,4
 add $0,2
-seq $0,145222 ; a(n) is the number of odd permutations (of an n-set) with exactly 1 fixed point.
+lpb $0
+  mov $3,$0
+  seq $3,387 ; Rencontres numbers: number of permutations of [n] with exactly two fixed points.
+  mov $2,$3
+  mul $3,$0
+  mod $0,2
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,$1
 div $0,12

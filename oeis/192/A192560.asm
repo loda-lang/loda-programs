@@ -6,8 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $6,1
+  sub $6,$1
+  sub $6,$1
   mov $3,$1
-  seq $3,24816 ; Antisigma(n): Sum of the numbers less than n that do not divide n.
+  bin $3,2
+  sub $3,$6
   add $3,$1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

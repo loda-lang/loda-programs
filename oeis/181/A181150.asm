@@ -4,7 +4,7 @@
 ; Formula: a(n) = A000040(n)^3+A000040(n)+1
 
 seq $0,40 ; The prime numbers.
-add $1,$0
+mov $1,$0
 pow $1,3
 add $0,$1
 add $0,1

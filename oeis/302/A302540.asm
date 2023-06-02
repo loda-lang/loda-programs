@@ -5,8 +5,17 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,360329 ; a(n) is the largest divisor of n that has only prime factors that are not prime-indexed primes.
+  mov $5,$1
+  seq $5,295665 ; Fully multiplicative with a(prime(m)) = prime(k) when m = prime(k), and a(prime(m)) = 1 when m is not a prime.
+  sub $5,1
+  seq $5,64988 ; Multiplicative with a(p^e) = prime(p)^e.
+  mov $6,$1
+  add $6,1
+  div $6,$5
+  mov $3,$6
+  sub $3,2
+  div $3,2
+  add $3,1
   seq $3,342921 ; a(n) = A003415(A019565(n)).
   cmp $3,1
   sub $0,$3

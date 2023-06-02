@@ -1,13 +1,12 @@
 ; A040168: Continued fraction for sqrt(182).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 13,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2,26,2
+; Formula: a(n) = binomial(gcd(n,2)*(min(n,1)+3),gcd(n,2))-2
 
 mov $1,$0
-cmp $0,0
-sub $1,$0
 gcd $1,2
-add $1,10
-add $0,$1
-add $0,1
+min $0,1
+add $0,3
 mul $0,$1
-sub $0,130
+bin $0,$1
+sub $0,2

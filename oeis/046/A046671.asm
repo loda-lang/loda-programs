@@ -1,17 +1,14 @@
 ; A046671: Nim-values G(3,n) for Sylver coinage.
-; Submitted by Jon Maiga
+; Submitted by Mumps
 ; 2,3,1,4,6,1,7,8,1,9,11,1,12
 
-mov $1,$0
-div $1,25
-sub $0,$1
 add $0,1
 mov $2,$0
 div $2,3
 dif $0,3
 sub $0,$2
-mov $5,$0
-mul $5,2
+mov $1,$0
+mul $1,2
 mov $3,$0
 mul $3,22
 sub $3,$0
@@ -20,7 +17,7 @@ div $3,4
 mul $3,8
 add $3,10
 div $3,6
-sub $3,$5
+sub $3,$1
 mov $4,$0
 mul $4,3
 mul $0,7
