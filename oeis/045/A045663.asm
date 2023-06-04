@@ -6,6 +6,25 @@ mov $1,$0
 trn $0,1
 sub $1,$0
 add $1,3
-seq $0,195095 ; G.f.: Sum_{n>=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+mov $4,$0
+mov $6,2
+lpb $6
+  sub $6,1
+  add $0,$6
+  sub $0,1
+  mov $5,$0
+  max $5,0
+  seq $5,237500 ; Number of binary strings of length 2n which contain the ones' complement of each of their two halves.
+  mov $3,$6
+  mul $3,$5
+  add $2,$3
+lpe
+min $4,1
+mul $4,$5
+sub $2,$4
+mov $0,$2
+sub $0,2
+div $0,2
+add $0,1
 mul $0,$1
 div $0,2

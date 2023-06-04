@@ -4,7 +4,6 @@
 ; Formula: a(n) = binomial(3*n,n)^2
 
 mov $1,$0
-mul $1,3
-bin $1,$0
-pow $1,2
-mov $0,$1
+mul $0,3
+bin $0,$1
+pow $0,2

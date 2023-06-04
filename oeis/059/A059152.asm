@@ -1,11 +1,23 @@
 ; A059152: A hierarchical sequence (W'2{2}c - see A059126).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 4,16,4,64,4,16,4,256,4,16,4,64,4,16,4,1024,4,16,4,64,4,16,4,256,4,16,4,64,4,16,4,4096,4,16,4,64,4,16,4,256,4,16,4,64,4,16,4,1024,4,16,4,64,4,16,4,256,4,16,4,64,4,16,4,16384,4,16,4,64,4,16,4,256,4,16,4,64,4,16
-; Formula: a(n) = 4*gcd(n+1,64)^2
 
-mov $1,$0
-add $1,1
-gcd $1,64
-pow $1,2
+mov $1,1
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    pow $4,0
+    sub $3,$4
+  lpe
+  mov $2,1
+  lpb $0
+    dif $0,2
+    mul $2,4
+    add $2,$4
+  lpe
+  mul $1,$2
+lpe
 mov $0,$1
-mul $0,4
+mul $0,3
+add $0,1

@@ -4,8 +4,19 @@
 
 mov $1,2
 lpb $0
-  mov $2,$0
-  seq $2,919 ; a(n) = 4^n - C(4,3)*3^n + C(4,2)*2^n - C(4,1).
+  mov $3,4
+  pow $3,$0
+  mov $5,2
+  pow $5,$0
+  mov $4,3
+  pow $4,$0
+  sub $4,$5
+  mov $2,$4
+  mul $2,3
+  sub $3,1
+  sub $3,$2
+  mov $2,$3
+  mul $2,4
   div $0,$1
   add $1,$2
   mul $2,2

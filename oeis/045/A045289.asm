@@ -1,4 +1,4 @@
-; A045289: Numbers n with property that in base 5 representation the numbers of 2's and 4's are 3 and 0, respectively.
+; A045289: Numbers whose base-5 representation contains exactly three 2's and no 4's.
 ; Submitted by [SG]KidDoesCrunch
 ; 62,187,262,287,302,307,310,311,313,317,337,437,687,812,887,912,927,932,935,936,938,942,962,1062,1262,1287,1302,1307,1310,1311,1313,1317,1337,1387,1412,1427,1432,1435,1436,1438,1442,1462
 ; Formula: a(n) = A020654(A023716(n))

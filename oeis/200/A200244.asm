@@ -1,8 +1,9 @@
 ; A200244: a(n)=1 iff binary weight of n-th prime is even.
-; Submitted by CThiede
+; Submitted by waffleironhead
 ; 0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,1,1,0,1,0
-; Formula: a(n) = A063787(A000040(n))%2
+; Formula: a(n) = (A000120(A006005(n))-1)%2
 
-seq $0,40 ; The prime numbers.
-seq $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+seq $0,6005 ; The odd prime numbers together with 1.
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+sub $0,1
 mod $0,2

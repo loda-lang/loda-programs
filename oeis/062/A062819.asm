@@ -13,7 +13,17 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,139256 ; Twice even perfect numbers. Also a(n) = M(n)*(M(n)+1), where M(n) is the n-th Mersenne prime A000668(n).
+  seq $0,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  seq $0,139421 ; a(1)=1; for n>1, a(n) = largest prime divisor of n!!.
+  mov $5,2
+  pow $5,$0
+  bin $5,2
+  mov $0,$5
+  mul $0,4
+  sub $0,24
+  div $0,8
+  add $0,3
+  mul $0,4
   mul $1,$0
   add $3,$1
 lpe

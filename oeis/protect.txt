@@ -3,6 +3,8 @@ A000012: The simplest sequence of positive numbers: the all 1's sequence.
 A000065: -1 + number of partitions of n.
 A000120: 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 A000142: Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+A000169: Number of labeled rooted trees with n nodes: n^(n-1).
+A000312: a(n) = n^n; number of labeled mappings from n points to themselves (endofunctions).
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
 A001247: Squares of Bell numbers.
@@ -123,6 +125,7 @@ A036690: Product of a prime and the following number.
 A037168: a(n) = 2*prime(n) - 2.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
+A038189: Bit to left of least significant 1-bit in binary expansion of n.
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
 A038500: Highest power of 3 dividing n.
 A038702: Prime(n)^2 mod prime(n-1).
@@ -160,6 +163,7 @@ A052147: a(n) = prime(n) + 2.
 A054526: Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
 A055003: a(n) = prime(prime(n)-1).
 A056798: Prime powers with even nonnegative exponents.
+A056849: Final digit of n^n.
 A057048: a(n) = A017911(n+1) = round(sqrt(2)^(n+1)).
 A057901: a(n) = 3^prime(n).
 A057902: a(n) = 5^prime(n).
@@ -190,6 +194,7 @@ A065995: a(n) = prime(prime(n) + n).
 A066829: Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
 A066872: p^2 + 1 as p runs through the primes.
 A066885: a(n) = (prime(n)^2 + 1)/2.
+A068087: a(n) = n^(2*n-2).
 A068096: a(n) = F(L(n)) where F(n) = n-th Fibonacci number and L(n) = n-th Lucas number.
 A068503: Highest power of 3 dividing prime(n)-1.
 A069177: Maximal power of 2 that divides Phi(n), or the size of the Sylow 2-subgroup of the group of units mod n.
@@ -269,6 +274,7 @@ A092759: a(n) = prime(n)^7.
 A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
 A092772: (Prime(prime(n))^2-1)/24.
+A093460: a(n) = 2n^(n-1) - 1.
 A095116: a(n) = prime(n) + n - 1.
 A095901: A004001 (mod 2).
 A096197: a(n) = (1+prime(n)) mod n.
@@ -454,6 +460,7 @@ A215848: Primes > 3.
 A216147: 2*n^n + 1.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
 A217589: Bit reversed 16-bit numbers.
+A222963: a(n) = (p-3)*(p+3)/4 where p is the n-th prime.
 A228409: a(n) = 4*mu(n) + 5, where mu is the Moebius function (A008683).
 A229787: Primes modulo 24.
 A231620: a(n) = A000930(n^2), where A000930 is Narayana's cows sequence.

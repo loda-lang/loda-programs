@@ -14,8 +14,13 @@ lpb $3
   lpb $4
     dif $4,2
   lpe
+  mov $5,1
   add $4,1
-  gcd $4,64
+  lpb $4
+    dif $4,2
+    mul $5,2
+  lpe
+  mov $4,$5
   sub $4,2
   cmp $4,0
   sub $1,$4

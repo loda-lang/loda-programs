@@ -181,6 +181,7 @@ A059534: Beatty sequence for 1 + 1/Catalan's constant.
 A060143: a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 A060632: a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
+A061357: Number of 0<k<n such that n-k and n+k are both primes.
 A061704: Number of cubes dividing n.
 A062116: a(n) = 2^n mod 17.
 A062173: a(n) = 2^(n-1) mod n.
@@ -189,6 +190,7 @@ A063574: Number of steps to reach an integer == 1 (mod 4) when iterating the map
 A063787: a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
+A065176: Site swap sequence associated with the permutation A065174 of Z.
 A065331: Largest 3-smooth divisor of n.
 A066441: a(n) = 11^n mod n.
 A066911: Sum of primes < n that do not divide n.
@@ -250,6 +252,7 @@ A088534: Number of representations of n by the quadratic form x^2 + xy + y^2 wit
 A088917: Central Delannoy numbers (mod 3); Characteristic function for Cantor set.
 A089090: a(n) is the smallest composite number coprime to n.
 A089809: Complement of A078588.
+A090616: Exponent of highest power of 4 dividing n!.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
 A091393: a(n) = Product_{ p | n } (1 + Legendre(-3,p) ).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
@@ -360,6 +363,7 @@ A180122: First of three "least, sum, least" self-generating sequences.
 A180824: Number of distinct solutions of sum{i=1..1}(x(2i-1)*x(2i)) = 1 (mod n), with x() only in 2..n-2
 A181932: A003136(n) mod 2.
 A182318: List of positive integers whose prime tower factorization, as defined in comments, does not contain the prime 2.
+A182769: Beatty sequence for (4 + sqrt(2))/2.
 A182936: Greatest common divisor of the proper divisors of n, 0 if there are none.
 A183094: a(n) = number of powerful divisors d (excluding 1) of n.
 A184485: Upper s-Wythoff sequence, where s(n)=3n-2.  Complement of A184484.
@@ -546,6 +550,8 @@ A284491: Positions of 0 in A284490; complement of A284492.
 A284621: Positions of 0 in A284620.
 A284624: Positions of 1 in A284749.
 A284723: Smallest odd prime that is relatively prime to n.
+A284775: Fixed point of the morphism 0 -> 01, 1 -> 0011.
+A284905: Fixed point of the morphism 0 -> 01, 1 -> 1001.
 A285075: Positions of 1 in A285073; complement of A285074.
 A285126: Positions of 0 in A285125; complement of A285127.
 A285127: Positions of 1 in A285125; complement of A285126.

@@ -9,7 +9,11 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,164364 ; a(n) = A164349(2^n).
+  mov $4,2
+  pow $4,$0
+  seq $4,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
+  mov $0,$4
+  sub $0,1
   mul $1,2
   add $1,$0
 lpe

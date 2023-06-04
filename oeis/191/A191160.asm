@@ -7,7 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,191156 ; a(n) = [6*n*Pi] - 2*[3*n*Pi], where [ ]=floor.
+  add $3,1
+  mul $3,6
+  mov $5,97
+  mul $5,$3
+  div $5,113
+  add $5,1
+  mov $3,$5
+  mod $3,2
   sub $3,1
   mov $4,$0
   max $4,0

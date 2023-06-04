@@ -1,17 +1,14 @@
 ; A162349: First differences of A160412.
-; Submitted by Steve Dodd
+; Submitted by waffleironhead
 ; 3,9,9,27,9,27,27,81,9,27,27,81,27,81,81,243,9,27,27,81,27,81,81,243,27,81,81,243,81,243,243,729,9,27,27,81,27,81,81,243,27,81,81,243,81,243,243,729,27,81,81
 
-mov $2,1
-mul $0,2
+mov $1,3
 lpb $0
+  mov $2,$0
+  mul $2,2
+  mod $2,4
+  mul $2,$1
   div $0,2
-  add $2,$3
-  add $3,$0
-  mod $3,2
-  mov $1,$2
-  mul $1,2
-  mul $3,$1
+  add $1,$2
 lpe
-mov $0,$2
-mul $0,3
+mov $0,$1

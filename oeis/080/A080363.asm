@@ -7,8 +7,13 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,329607 ; a(n) = A007947(A122111(n)).
+  add $3,$1
+  div $3,2
+  seq $3,99788 ; a(n) = Product_{i=1..2n} prime(i).
+  mov $5,$1
+  seq $5,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
+  gcd $5,$3
+  mov $3,$5
   trn $3,3
   mod $3,2
   sub $0,$3

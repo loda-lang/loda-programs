@@ -8,7 +8,11 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,182737 ; Sum of parts in all partitions of 2n+1 that do not contain 1 as a part.
+  mul $0,2
+  add $0,1
+  mov $6,$0
+  seq $6,2865 ; Number of partitions of n that do not contain 1 as a part.
+  mul $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -3,6 +3,31 @@
 
 mov $1,$0
 add $1,1
-seq $1,63957 ; Numbers not of the form round(m*sqrt(2)) for any integer m, i.e., complement of A022846.
-add $0,$1
+mul $1,2
+mov $2,$1
+mov $3,$1
+add $3,1
+mov $4,$3
+mul $4,2
+pow $4,2
+mov $5,$4
+mul $5,2
+dif $4,$3
+lpb $4
+  mov $6,$5
+  div $6,$4
+  add $4,$6
+  div $4,2
+lpe
+add $3,2
+div $4,2
+add $4,$3
+add $2,7
+mov $3,$4
+add $3,5
+add $3,$2
+div $3,2
+mov $2,$3
+sub $2,6
+add $0,$2
 div $0,2
