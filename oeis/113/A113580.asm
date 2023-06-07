@@ -6,7 +6,11 @@ mov $1,-1
 lpb $0
   mov $2,$0
   mod $2,10
-  seq $2,352190 ; Indices of records in A352188.
+  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  mul $2,200
+  sub $2,200
+  div $2,200
+  add $2,1
   mov $3,$2
   mul $3,2
   add $3,1

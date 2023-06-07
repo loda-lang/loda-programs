@@ -4,4 +4,4 @@
 ; Formula: a(n) = A061767(A057588(n))
 
 seq $0,57588 ; Kummer numbers: -1 + product of first n consecutive primes.
-seq $0,61767 ; a(1) = 4; a(n) = smallest composite number of the form k*n + 1.
+seq $0,61767 ; a(n) = smallest composite number of the form k*n + 1.

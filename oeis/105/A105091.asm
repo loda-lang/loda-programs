@@ -11,7 +11,8 @@ lpb $3
   add $0,1
   mul $0,9
   add $0,$3
-  seq $0,86801 ; a(n) = prime(n) - 3.
+  seq $0,40 ; The prime numbers.
+  sub $0,3
   add $1,$0
   trn $3,3
 lpe

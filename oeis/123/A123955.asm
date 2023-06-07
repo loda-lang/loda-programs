@@ -16,7 +16,13 @@ lpb $2
   mov $4,$1
   mov $5,4
   pow $5,$0
-  seq $0,210448 ; Total number of different letters summed over all ternary words of length n.
+  mov $8,2
+  pow $8,$0
+  mov $7,3
+  pow $7,$0
+  sub $7,$8
+  mov $0,$7
+  mul $0,3
   sub $5,$0
   div $5,2
   mov $0,$5

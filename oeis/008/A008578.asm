@@ -1,30 +1,42 @@
 ; A008578: Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-; Submitted by rajab
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523
 
 mov $1,$0
-dif $1,$0
+add $1,2
+trn $1,3
+mov $3,0
 add $1,1
-sub $0,1
-mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
+mov $4,$1
+pow $4,5
 lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
+  mov $6,0
+  mov $2,$3
+  add $2,1
+  lpb $2
+    gcd $6,3
+    mov $7,$2
+    div $7,5
+    lpb $7
+      mov $5,$2
+      mod $5,$6
+      add $6,2
+      sub $7,$5
+    lpe
+    div $2,$6
+    pow $2,2
+    mov $6,1
+  lpe
+  sub $1,$6
   add $3,2
-  sub $4,$2
+  sub $4,$1
 lpe
-add $2,$3
-sub $2,1
-mul $1,$2
-mov $0,$1
-sub $0,2
-div $0,2
+mov $1,$3
+mul $1,4
+add $1,4
+mul $1,2
+sub $1,8
+div $1,8
+add $1,1
 add $0,1
+max $0,$1

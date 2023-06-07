@@ -4,11 +4,9 @@
 
 mov $1,$0
 gcd $1,2
-mov $2,$0
-mov $5,0
-mov $3,$2
+mov $3,$0
 add $3,1
-mov $4,$2
+mov $4,$0
 lpb $4
   sub $4,1
   mov $2,$3

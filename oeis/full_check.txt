@@ -173,6 +173,7 @@ A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
 A054703: Number of distinct powers of 2 modulo n.
 A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
+A055670: a(n) = prime(n) - (-1)^prime(n).
 A055926: Numbers k such that {largest m such that 1, 2, ..., m divide k} is different from {largest m such that m! divides k}; numbers k which are either odd multiples of 12 or the largest m such that (m-1)! divides k is a composite number > 5.
 A056624: Number of unitary square divisors of n.
 A056671: 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.
@@ -196,6 +197,7 @@ A066441: a(n) = 11^n mod n.
 A066911: Sum of primes < n that do not divide n.
 A067132: Number of elements in the largest set of divisors of n which are in geometric progression.
 A068068: Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
+A068499: Numbers m such that m! reduced modulo (m+1) is not zero.
 A069213: a(n) = n-th positive integer relatively prime to n.
 A069513: Characteristic function of the prime powers p^k, k >= 1.
 A069623: Number of perfect powers <= n.
@@ -207,6 +209,7 @@ A071055: Number of 0's in n-th row of triangle in A071038.
 A071178: Exponent of the largest prime factor of n.
 A071187: Smallest prime factor of number of divisors of n.
 A071222: Smallest k such that gcd(n,k) = gcd(n+1,k+1).
+A071928: Kolakoski-(2,4) sequence: a(n) is length of n-th run.
 A071974: Numerator of rational number i/j such that Sagher map sends i/j to n.
 A072292: Number of proper powers b^d <= n (b > 1, d > 1).
 A072586: Number of numbers <= n having prime factors with odd exponents only.
@@ -276,6 +279,7 @@ A101278: Write n in base 3 as n = b_0 + b_1*3 + b_2*3^2 + b_3*3^3 + ...; then a(
 A101345: a(n) = Knuth's Fibonacci (or circle) product "2 o n".
 A101436: Number of exponents in prime factorization of n which are primes.
 A102261: a(n) = A002144(n) - A002145(n).
+A102376: a(n) = 4^A000120(n).
 A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
 A103391: 'Even' fractal sequence for the natural numbers: Deleting every even-index term results in the same sequence.
 A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci representation. Also list of binary vectors not containing 00.
@@ -301,6 +305,7 @@ A115944: Number of partitions of n into distinct factorials.
 A115979: Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
 A116512: a(n) = number of positive integers each of which is <= n and is divisible by exactly one prime dividing n (but is coprime to every other prime dividing n). a(1) = 0.
 A116609: a(n) = 13^n modulo n.
+A118310: a(n) = gcd(n,m(n)), where m(n) is the n-th nonprime positive integer (1 or composite).
 A118480: (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
 A119395: Number of nonnegative integer solutions to the equation x^2 + 3y^2 = n.
 A120007: Mobius transform of sum of prime factors of n with multiplicity (A001414).

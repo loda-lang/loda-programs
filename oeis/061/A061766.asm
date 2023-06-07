@@ -7,6 +7,6 @@ mov $1,4
 lpb $0
   sub $0,1
   sub $1,1
-  seq $1,61767 ; a(1) = 4; a(n) = smallest composite number of the form k*n + 1.
+  seq $1,61767 ; a(n) = smallest composite number of the form k*n + 1.
 lpe
 mov $0,$1

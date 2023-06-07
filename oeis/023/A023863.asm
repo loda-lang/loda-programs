@@ -10,7 +10,9 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,282671 ; Twice composite numbers.
+  seq $0,72668 ; Numbers one less than composite numbers.
+  add $0,1
+  mul $0,2
   add $3,$0
   add $4,$3
 lpe

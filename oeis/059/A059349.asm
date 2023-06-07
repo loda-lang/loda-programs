@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; Odd primes.
+  add $3,1
+  seq $3,154115 ; Numbers n such that n + 3 is prime.
+  seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
   sub $3,1
   seq $3,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.

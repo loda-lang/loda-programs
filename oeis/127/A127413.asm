@@ -14,7 +14,12 @@ lpb $4
   gcd $1,$4
   cmp $1,1
   mul $1,2
-  seq $0,1747 ; 2 together with primes multiplied by 2.
+  mov $5,$0
+  sub $5,1
+  seq $5,6005 ; The odd prime numbers together with 1.
+  add $0,1
+  max $0,$5
+  mul $0,2
   mul $1,$0
   add $3,$1
 lpe

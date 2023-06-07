@@ -122,6 +122,7 @@ A035011: A006318(n) - 1.
 A035116: a(n) = tau(n)^2, where tau(n) = A000005(n).
 A036689: Product of a prime and the previous number.
 A036690: Product of a prime and the following number.
+A036987: Fredholm-Rueppel sequence.
 A037168: a(n) = 2*prime(n) - 2.
 A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest power of 2 dividing n).
 A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
@@ -253,6 +254,7 @@ A085975: Number of 1's in decimal expansion of prime(n).
 A085977: Number of 3's in decimal expansion of prime(n).
 A085983: Number of 9's in decimal expansion of prime(n).
 A086665: Difference between sum of divisors of n and integer log of n, i.e., A000203(n) - A001414(n).
+A086799: Replace all trailing 0's with 1's in binary representation of n.
 A086801: a(n) = prime(n) - 3.
 A086874: Seventh power of odd primes.
 A086995: Number of 1's in binary representation of n-th decimal digit in expansion of Pi.
