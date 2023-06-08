@@ -83,9 +83,11 @@ A022804: a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is
 A022843: Beatty sequence for e: a(n) = floor(n*e).
 A022844: a(n) = floor(n*Pi).
 A022853: a(n) = integer nearest n*Pi.
+A023514: a(n) = sum of exponents in prime-power factorization of prime(n) + 1.
 A023689: Numbers with exactly 7 ones in binary expansion.
 A023690: Numbers with exactly 8 ones in binary expansion.
 A024698: a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
+A024702: a(n) = (prime(n)^2 - 1)/24.
 A024707: Positions of multiples of 5 in A024702.
 A025441: Number of partitions of n into 2 distinct nonzero squares.
 A025465: Number of partitions of n into 3 distinct nonnegative cubes.

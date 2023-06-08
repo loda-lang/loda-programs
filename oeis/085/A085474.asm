@@ -9,7 +9,5 @@ mul $1,$0
 bin $1,3
 div $1,4
 sub $0,$1
-mov $2,$0
-add $2,$0
-mov $0,$2
+mul $0,2
 add $0,1

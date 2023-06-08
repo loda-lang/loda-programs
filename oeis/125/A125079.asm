@@ -2,5 +2,27 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,0,1,0,2,2,2,0,0,0,3,1,2,0,0,0,2,2,2,0,2,0,1,2,2,0,0,0,2,0,4,0,0,0,2,3,0,0,1,0,4,2,2,0,0,0,2,0,2,0,0,0,2,2,2,0,2,0,1,2,4,0,0,0,0,2,2,0,0,0,4,1,2,0,2,0,2,2,0,0,0,0,3,0,2,0,0,0,2,2,4,0,0,0,2,4,2,0
 
-seq $0,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
-seq $0,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+mov $1,-2
+bin $1,$0
+div $1,2
+sub $0,$1
+mul $0,4
+add $0,1
+mov $3,$0
+lpb $0
+  add $5,1
+  min $0,$5
+  mov $4,$3
+  dif $4,$0
+  add $0,$4
+  mod $0,2
+  mul $0,2
+  sub $0,1
+  mul $4,$5
+  cmp $4,$3
+  mul $4,$0
+  sub $2,$4
+  sub $3,$5
+  mov $0,$3
+lpe
+mov $0,$2

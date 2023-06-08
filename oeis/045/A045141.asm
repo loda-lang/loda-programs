@@ -1,4 +1,4 @@
-; A045141: Numbers n with property that in base 4 representation the numbers of 2's and 3's are 1 and 3, respectively.
+; A045141: Numbers whose base-4 representation contains exactly one 2 and three 3's.
 ; Submitted by [TA]crashtech
 ; 191,239,251,254,447,495,507,510,575,639,719,735,755,759,764,765,815,827,830,879,891,894,911,927,947,951,956,957,971,974,987,990,995,999,1004,1005,1010,1014,1016,1017,1215,1263,1275
 

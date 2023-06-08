@@ -5,9 +5,13 @@
 mov $1,8
 mov $2,$0
 lpb $2
-  seq $2,67563 ; Product of n-th prime number and n-th composite number.
+  mov $3,$2
+  seq $2,40 ; The prime numbers.
+  add $3,1
+  seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+  mul $3,$2
   sub $0,1
-  mul $1,$2
+  mul $1,$3
   mov $2,$0
 lpe
 mov $0,$1

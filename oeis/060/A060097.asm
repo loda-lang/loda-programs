@@ -1,5 +1,5 @@
 ; A060097: Denominator of coefficients of Euler polynomials (rising powers).
-; Submitted by Simon Strandgaard
+; Submitted by lugau
 ; 1,2,1,1,1,1,4,1,2,1,1,1,1,1,1,2,1,2,1,2,1,1,1,1,1,1,1,1,8,1,2,1,4,1,2,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,4,1,2,1,4,1,1,1,4,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,1,2
 
 lpb $0
@@ -15,6 +15,11 @@ add $0,2
 mul $0,2
 add $2,1
 gcd $2,$1
+mov $3,1
 div $0,$2
 div $0,4
-gcd $0,32
+lpb $0
+  mul $3,2
+  dif $0,2
+lpe
+mov $0,$3

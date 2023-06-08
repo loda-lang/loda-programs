@@ -1,4 +1,4 @@
-; A045005: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 3 and 1, respectively.
+; A045005: Numbers whose base-3 representation contains exactly three 0's and one 2.
 ; Submitted by Science United
 ; 54,83,87,99,135,163,165,171,189,248,250,254,258,262,264,272,276,288,298,300,306,326,330,342,378,406,408,414,432,490,496,498,514,516,522,568,570,576,594,743,745,751,761,763,767,771
 

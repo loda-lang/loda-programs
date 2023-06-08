@@ -6,7 +6,18 @@ mov $1,$0
 sub $0,1
 gcd $0,2
 mul $0,2
+mov $2,1
+mov $3,-2
+mov $4,1
 div $1,2
-seq $1,104970 ; Sum of squares of terms in even-indexed rows of triangle A104967.
-mul $0,$1
+lpb $1
+  sub $1,1
+  add $5,1
+  mul $2,$3
+  div $2,$5
+  sub $3,4
+  mul $4,4
+  sub $4,$2
+lpe
+mul $0,$4
 div $0,2

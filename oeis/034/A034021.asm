@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,211776 ; a(n) = Product_{d | n} tau(d).
   mov $3,$1
-  seq $3,324987 ; a(n) = Product_{d|n} (tau(d)*sigma(d)) where tau(k) = the number of divisors of k (A000005) and sigma(k) = the sum of the divisors of k (A000203).
+  seq $3,206032 ; a(n) = Product_{d|n} sigma(d) where sigma = A000203.
+  mul $5,$3
+  mov $3,$5
   add $3,1
   mod $3,3
   gcd $3,2

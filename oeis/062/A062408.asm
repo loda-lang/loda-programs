@@ -9,8 +9,15 @@ pow $2,2
 mul $2,2
 lpb $2
   mov $3,$1
-  add $3,3
-  seq $3,62389 ; a(n) = floor( (2n-1)*Pi/2 ).
+  mul $3,2
+  add $3,7
+  mov $6,97
+  mul $6,$3
+  div $6,113
+  mul $3,4
+  sub $3,1
+  sub $3,$6
+  div $3,2
   sub $3,12
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $5,$1
