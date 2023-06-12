@@ -5,9 +5,16 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,3
+  mov $6,$5
+  seq $6,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   add $1,2
+  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  sub $5,$6
   mov $3,$1
-  seq $3,63933 ; Difference between n and the average of largest prime less than or equal to n and smallest prime greater than or equal to n.
+  sub $3,$5
+  add $3,2
   cmp $3,0
   sub $0,$3
   mov $4,$0

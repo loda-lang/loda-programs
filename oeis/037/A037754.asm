@@ -1,11 +1,10 @@
 ; A037754: Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 2,3,1,0.
+; Submitted by Science United
 ; 2,17,120,840,5882,41177,288240,2017680,14123762,98866337,692064360,4844450520,33911153642,237378075497,1661646528480,11631525699360,81420679895522,569944759268657,3989613314880600,27927293204164200
-; Formula: a(n) = (2*((7^(n+3))/8))/35
+; Formula: a(n) = (7^(n+2))/20
 
-add $0,3
-mov $1,7
-pow $1,$0
-div $1,8
-mul $1,2
-div $1,35
-mov $0,$1
+add $0,2
+mov $1,$0
+mov $0,7
+pow $0,$1
+div $0,20

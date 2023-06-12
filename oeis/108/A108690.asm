@@ -10,7 +10,9 @@ lpb $2
   add $3,1
   pow $3,2
   sub $3,1
-  seq $3,326990 ; Sum of odd divisors of n that are greater than 1.
+  mod $3,81
+  seq $3,593 ; Sum of odd divisors of n.
+  sub $3,1
   mod $3,2
   cmp $3,0
   sub $0,$3

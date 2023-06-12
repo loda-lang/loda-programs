@@ -9,8 +9,17 @@ pow $2,2
 bin $2,2
 lpb $2
   sub $2,1
+  mov $4,$1
+  bin $4,2
+  mov $5,1
+  add $5,$1
   mov $3,$1
-  seq $3,102294 ; Number of prime divisors (with multiplicity) of icosahedral numbers.
+  add $3,$5
+  mul $3,$5
+  add $3,$4
+  mul $3,$5
+  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,2
   sub $0,$3
   add $1,1

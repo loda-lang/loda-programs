@@ -1,32 +1,30 @@
 ; A133362: Decimal expansion of 1/(2 log 2).
-; Submitted by Christian Krause
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 7,2,1,3,4,7,5,2,0,4,4,4,4,8,1,7,0,3,6,7,9,9,6,2,3,4,0,5,0,0,9,4,6,0,6,8,7,1,3,3,2,2,9,7,7,0,7,6,4,9,2,9,6,7,0,6,7,7,2,4,7,0,3,4,6,5,5,5,4,6,0,9,5,9,0,5,9,2,5,3,9,9,4,2,7,6,3,3,1,1,4,4,6,7,5,3,1,7,2,2
 
 add $0,1
-mov $2,1
+mov $1,1
 mov $3,$0
-mul $3,5
+mul $3,7
 lpb $3
   mov $5,$3
-  mul $5,2
-  add $5,4
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  div $1,$0
-  div $2,$0
+  cmp $5,0
+  add $3,$5
+  max $6,$2
+  div $6,$3
+  mul $6,2
+  mul $1,2
+  add $1,$6
+  mod $2,10
+  add $2,$1
   sub $3,1
+  sub $7,$1
 lpe
-div $1,4
-mul $1,2
-sub $1,$2
 mov $4,10
 pow $4,$0
-sub $2,$1
+mov $2,1
+sub $2,$7
 div $2,$4
 div $1,$2
 mov $0,$1
-sub $0,1
-mod $0,10
-add $0,10
 mod $0,10

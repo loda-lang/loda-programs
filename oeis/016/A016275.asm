@@ -1,9 +1,24 @@
 ; A016275: Inverse of 2266th cyclotomic polynomial.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A015186(n)*(-1)^n
 
 mov $1,-1
 pow $1,$0
-seq $0,15186 ; Inverse of 1177th cyclotomic polynomial.
+mov $3,7
+add $0,18
+mul $0,2
+lpb $0
+  sub $0,1
+  sub $2,4
+  add $3,3
+  mul $4,$3
+  add $4,$2
+  mul $2,$3
+lpe
+add $5,$4
+mul $4,$2
+gcd $4,$2
+div $5,$4
+mov $0,$5
+add $0,1
 mul $0,$1

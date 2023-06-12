@@ -1,7 +1,21 @@
 ; A097705: a(n) = 4*a(n-1) + 17*a(n-2), a(1)=1, a(2)=4.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,4,33,200,1361,8844,58513,384400,2532321,16664084,109705793,722112600,4753448881,31289709724,205967469873,1355794944800,8924626767041,58747021129764,386706739558753,2545526317441000
+; Formula: a(n) = b(n)/2, b(n) = 2*c(n-1)-b(n-1), b(2) = 66, b(1) = 8, b(0) = 2, c(n) = 16*c(n-2)+4*c(n-1)+2*b(n-2)-4*c(n-2)-8*b(n-2)+c(n-1), c(2) = 233, c(1) = 37, c(0) = 5
 
+mov $3,1
 add $0,1
-seq $0,231280 ; Number of n X 3 0..3 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, and upper left element zero.
+lpb $0
+  sub $0,1
+  mul $2,4
+  add $2,$3
+  mul $3,2
+  sub $3,$1
+  mov $1,$3
+  mov $3,$2
+  mov $2,$1
+  add $2,$1
+  add $3,$2
+lpe
+mov $0,$1
 div $0,2

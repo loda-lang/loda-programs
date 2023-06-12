@@ -20,8 +20,7 @@ lpb $2
   mov $3,$6
   mul $3,2
   add $3,3
-  mul $3,4
-  div $3,8
+  div $3,2
   sub $3,1
   mov $5,$3
   seq $3,349343 ; Dirichlet inverse of A193356, which is defined as n if n is odd, 0 if n is even.

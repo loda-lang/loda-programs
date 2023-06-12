@@ -1,28 +1,22 @@
 ; A045831: Number of 4-core partitions of n.
-; Submitted by Kotenok2000
+; Submitted by Chuck
 ; 1,1,2,3,1,3,3,3,4,4,2,2,7,3,5,6,2,4,7,3,4,7,5,8,5,4,4,8,5,6,7,2,9,11,3,8,9,4,6,5,7,5,14,7,4,10,5,10,11,3,9,10,5,8,10,4,6,15,8,9,10,6,8,15,6,10,6,5,15,9,6,8,14,8,6,13,5,16,18,7,8,7,9,6,15,6,12,17,5,8,15,7,12,16,5,10,13,10,16,15
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $5,0
-  mov $7,3
-  mov $8,0
-  mov $2,$0
-  add $2,3
-  lpb $2
-    sub $2,$7
-    mov $6,$2
-    max $6,0
-    seq $6,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
-    add $8,2
-    add $5,$6
-    mov $7,$8
-  lpe
-  add $1,$5
-  mov $3,2
+mov $2,2
+mul $2,$0
+mov $5,3
+mov $1,$2
+add $1,3
+lpb $1
+  sub $1,$5
+  mov $4,$1
+  max $4,0
+  seq $4,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+  add $6,2
   add $3,$4
-  add $4,2
+  mov $5,2
+  add $5,$6
+  mul $5,2
+  add $6,2
 lpe
-mov $0,$1
+mov $0,$3

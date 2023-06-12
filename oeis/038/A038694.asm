@@ -6,7 +6,8 @@ mov $1,1
 mov $2,$0
 lpb $2
   mul $2,2
-  seq $2,131581 ; The next prime greater than the square root of 10^n.
+  seq $2,17934 ; Powers of sqrt(10) rounded down.
+  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
   sub $0,1
   mul $1,$2
   mov $2,$0

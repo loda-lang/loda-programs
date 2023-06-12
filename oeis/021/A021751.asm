@@ -1,7 +1,11 @@
 ; A021751: Decimal expansion of 1/747.
-; Submitted by Jon Maiga
+; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,1,3,3,8,6,8,8,0,8,5,6,7,6,0,3,7,4,8,3,2,6,6,3,9,8,9,2,9,0,4,9,5,3,1,4,5,9,1,7,0,0,1,3,3,8,6,8,8,0,8,5,6,7,6,0,3,7,4,8,3,2,6,6,3,9,8,9,2,9,0,4,9,5,3,1,4,5,9,1,7,0,0,1,3,3,8,6,8,8,0,8,5,6,7,6,0,3
+; Formula: a(n) = ((10^(n+1))/747)%10
 
-seq $0,42 ; Unary representation of natural numbers.
-div $0,83
+add $0,1
+mov $1,10
+pow $1,$0
+mov $0,$1
+div $0,747
 mod $0,10

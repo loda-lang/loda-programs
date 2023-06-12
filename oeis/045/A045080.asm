@@ -1,4 +1,4 @@
-; A045080: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 3 and 4, respectively.
+; A045080: Numbers whose base-4 representation contains exactly three 0's and four 3's.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 12351,12495,12531,12540,13071,13107,13116,13251,13260,13296,15375,15411,15420,15555,15564,15600,16131,16140,16176,16320,16639,17215,17359,17395,17404,19519,19663,19699,19708,20239
 

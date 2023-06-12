@@ -1,4 +1,4 @@
-; A045133: Numbers n with property that in base 4 representation the numbers of 1's and 3's are 4 and 4, respectively.
+; A045133: Numbers whose base-4 representation contains exactly four 1's and four 3's.
 ; Submitted by emoga
 ; 22015,22399,22495,22519,22525,23935,24031,24055,24061,24415,24439,24445,24535,24541,24565,30079,30175,30199,30205,30559,30583,30589,30679,30685,30709,32095,32119,32125,32215,32221
 ; Formula: a(n) = A145850(A031443(n+49))/8-502443

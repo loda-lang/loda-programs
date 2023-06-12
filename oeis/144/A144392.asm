@@ -11,7 +11,11 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,61037 ; Numerator of 1/4 - 1/n^2.
+  add $0,2
+  pow $0,2
+  sub $0,4
+  dif $0,4
+  dif $0,4
   mul $1,$0
   mul $3,-1
   add $3,$1

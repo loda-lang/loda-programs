@@ -1,14 +1,19 @@
 ; A086797: Discriminant of the polynomial x^n - x - 1.
-; Submitted by [DPC] hansR
+; Submitted by Science United
 ; 0,5,-23,-283,2869,49781,-776887,-17600759,370643273,10387420489,-275311670611,-9201412118867,293959006143997,11414881932150269,-426781883555301359,-18884637964090410991,808793517812627212561,40173648337182874339601
 
 add $0,3
 lpb $0
   sub $0,3
   sub $0,$3
+  mov $4,$0
+  div $4,2
+  mov $5,-1
+  pow $5,$4
   mov $2,$0
-  max $2,0
-  seq $2,86783 ; Discriminant of the polynomial x^n - 1.
+  add $2,1
+  pow $2,$2
+  mul $2,$5
   add $1,1
   add $1,$2
   sub $3,2

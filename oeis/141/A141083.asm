@@ -1,13 +1,28 @@
 ; A141083: a(n) = 2^(p - 2)*(2^p - 2), where p = prime(n).
-; Submitted by Penguin
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,12,240,4032,1047552,16773120,4294901760,68719214592,17592181850112,72057593769492480,1152921503533105152,4722366482800925736960,1208925819613529663078400,19342813113829668748787712
 
-seq $0,40 ; The prime numbers.
-mov $1,2
-pow $1,$0
-mov $0,$1
-sub $0,1
-pow $0,2
-sub $0,9
-div $0,4
+add $0,2
+mov $5,$0
+pow $5,4
+lpb $5
+  add $1,1
+  add $3,1
+  mov $4,$6
+  gcd $4,$1
+  div $4,$3
+  add $6,1
+  mul $6,2
+  sub $0,$4
+  sub $5,$0
+lpe
+mov $0,$6
+mul $0,2
+add $0,5
+mov $2,3
+sub $2,$0
+pow $2,2
+mov $0,$2
+sub $0,36
+div $0,16
 add $0,2

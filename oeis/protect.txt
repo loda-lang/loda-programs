@@ -370,6 +370,7 @@ A137664: a(n) = (p+1)^p - 1 where p = prime(n).
 A137727: Final digit of prime(n)*prime(n+1).
 A137807: Final digit of prime(n)^2.
 A137831: (Prime(n)^2 minus its last digit)/20.
+A138031: a(n) = prime(n)^13.
 A138032: a(n) = prime(n)^17.
 A138418: a(n) = ((n-th prime)^4-(n-th prime)^2)/2.
 A138419: a(n) = (prime(n)^4 - prime(n)^2)/3.

@@ -6,9 +6,12 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,25768 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^7)).
+  mov $4,$0
+  add $4,11
+  mul $4,$0
+  div $4,42
+  mov $2,$4
+  add $2,1
   add $1,$2
   mov $3,12
 lpe

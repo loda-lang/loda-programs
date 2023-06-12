@@ -7,7 +7,23 @@ lpb $0
   sub $0,1
   mov $3,$2
   mov $2,$1
-  seq $1,40936 ; Continued fraction for sqrt(968).
+  mov $5,-1
+  pow $5,$1
+  add $5,2
+  seq $1,10225 ; Continued fraction for sqrt(183).
+  mul $1,$5
+  mul $1,2
+  sub $1,1
+  div $1,3
+  mov $4,$1
+  add $4,11
+  dif $4,2
+  min $4,30
+  add $1,1
+  add $1,$4
+  div $1,2
+  sub $1,9
+  add $1,$4
   mul $1,$2
   add $1,$3
 lpe

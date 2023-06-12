@@ -1,4 +1,4 @@
-; A045197: Numbers n with property that in base 5 representation the numbers of 0's and 3's are 2 and 2, respectively.
+; A045197: Numbers whose base-5 representation contains exactly two 0's and two 3's.
 ; Submitted by Landjunge
 ; 378,390,450,643,703,715,1003,1015,1075,1268,1328,1340,1628,1640,1700,1883,1888,1891,1892,1894,1898,1903,1915,1928,1940,1951,1952,1954,1955,1960,1970,1978,1990,2003,2015,2075,2128,2140
 

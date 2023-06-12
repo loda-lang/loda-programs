@@ -1,14 +1,20 @@
 ; A130123: Infinite lower triangular matrix with 2^k in the right diagonal and the rest zeros. Triangle, T(n,k), n zeros followed by the term 2^k. Triangle by columns, (2^k, 0, 0, 0, ...).
-; Submitted by Cruncher Pete
+; Submitted by Fardringle
 ; 1,0,2,0,0,4,0,0,0,8,0,0,0,0,16,0,0,0,0,0,32,0,0,0,0,0,0,64,0,0,0,0,0,0,0,128,0,0,0,0,0,0,0,0,256,0,0,0,0,0,0,0,0,0,512,0,0,0,0,0,0,0,0,0,0,1024,0,0,0,0,0,0,0,0,0,0,0,2048,0,0,0,0,0,0,0,0,0,0,0,0,4096,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = (d(n)*c(n))/4, b(n) = b(n-1)/2+c(n-1), b(2) = 6, b(1) = 5, b(0) = 2, c(n) = gcd(b(n-1)/2+d(n-1)*b(n-1),2)*c(n-1), c(2) = 8, c(1) = 4, c(0) = 4, d(n) = gcd(b(n-1)/2+d(n-1)*b(n-1),2)/2, d(2) = 1, d(1) = 0, d(0) = 1
 
+mov $2,2
+add $0,1
 lpb $0
-  add $1,1
-  sub $0,$1
+  sub $0,1
+  mul $3,$1
+  div $1,2
+  add $3,$1
+  gcd $3,2
+  add $1,$2
+  mul $2,$3
+  div $3,2
 lpe
-sub $1,$0
-bin $2,$1
-mov $1,2
-pow $1,$0
-mul $2,$1
+mul $2,$3
 mov $0,$2
+div $0,4

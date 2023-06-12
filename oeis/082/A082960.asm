@@ -1,10 +1,9 @@
 ; A082960: Number of inequivalent optimal Hermitian self-dual codes of length 2n over GF(4).
-; Submitted by Cruncher Pete
+; Submitted by Science United
 ; 1,0,1,1,0,0,1,0,1
-; Formula: a(n) = ((10*n-23)/9+9)%2
+; Formula: a(n) = ((n^5)%43+1)%2
 
-mul $0,10
-sub $0,23
-div $0,9
-add $0,9
+pow $0,5
+mod $0,43
+add $0,1
 mod $0,2

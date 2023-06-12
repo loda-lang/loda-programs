@@ -1,15 +1,12 @@
 ; A143058: A007318 * [1, 6, 7, 1, 0, 0, 0, ...].
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Stony666
 ; 1,7,20,41,71,111,162,225,301,391,496,617,755,911
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+c(n-1)+n+5, b(2) = 19, b(1) = 6, b(0) = 0, c(n) = c(n-1)+n+5, c(2) = 13, c(1) = 6, c(0) = 0
+; Formula: a(n) = (binomial(n+1,2)*(n+17))/3+1
 
-mov $1,6
-lpb $0
-  sub $0,1
-  add $2,$3
-  add $2,$1
-  add $3,$1
-  add $1,1
-lpe
-mov $0,$2
+mov $1,$0
+add $1,17
+add $0,1
+bin $0,2
+mul $0,$1
+div $0,3
 add $0,1

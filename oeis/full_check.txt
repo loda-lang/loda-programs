@@ -1,4 +1,5 @@
 A000005: d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+A000006: Integer part of square root of n-th prime.
 A000010: Euler totient function phi(n): count numbers <= n and prime to n.
 A000040: The prime numbers.
 A000161: Number of partitions of n into 2 squares.
@@ -25,6 +26,7 @@ A001965: u-pile count for the 4-Wythoff game with i=2.
 A001966: v-pile counts for the 4-Wythoff game with i=2.
 A001967: u-pile positions for the 4-Wythoff game with i=3.
 A001968: v-pile positions of the 4-Wythoff game with i=3.
+A002034: Kempner numbers: smallest positive integer m such that n divides m!.
 A002251: Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
 A002324: Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
 A002808: The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
@@ -218,6 +220,7 @@ A072586: Number of numbers <= n having prime factors with odd exponents only.
 A072613: Number of numbers of the form p*q (p, q distinct primes) less than or equal to n.
 A073093: Number of prime power divisors of n.
 A073783: First differences of composite numbers.
+A074264: Values of Kolakoski sequence A000002 at positions n = 0 mod 3.
 A074724: Highest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
 A074939: Even numbers such that base 3 representation contains no 2.
 A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.

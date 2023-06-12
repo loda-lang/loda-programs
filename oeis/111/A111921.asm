@@ -6,11 +6,15 @@ add $0,1
 lpb $0
   mov $2,$0
   pow $2,3
+  mov $5,1
   mov $4,$0
-  gcd $4,256
+  lpb $4
+    dif $4,2
+    mul $5,2
+  lpe
   sub $0,1
   max $1,1
-  mul $2,$4
+  mul $2,$5
   mul $3,$2
   add $3,$1
   mul $1,$2

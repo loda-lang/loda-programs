@@ -1,4 +1,4 @@
-; A045213: Numbers n with property that in base 5 representation the numbers of 0's and 4's are 2 and 3, respectively.
+; A045213: Numbers whose base-5 representation contains exactly two 0's and three 4's.
 ; Submitted by ChelseaOilman
 ; 2524,2604,2620,3004,3020,3100,3249,3649,3729,3745,5649,5729,5745,6129,6145,6225,6374,6774,6854,6870,8774,8854,8870,9254,9270,9350,9499,9899,9979,9995,11899,11979,11995,12379,12395
 
