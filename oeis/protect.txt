@@ -120,6 +120,7 @@ A034785: a(n) = 2^(n-th prime).
 A034953: Triangular numbers (A000217) with prime indices.
 A035011: A006318(n) - 1.
 A035116: a(n) = tau(n)^2, where tau(n) = A000005(n).
+A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function d = A000005, with initial value n.
 A036689: Product of a prime and the previous number.
 A036690: Product of a prime and the following number.
 A036987: Fredholm-Rueppel sequence.
