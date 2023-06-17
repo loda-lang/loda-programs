@@ -1,9 +1,22 @@
 ; A179657: Digital root of n-th practical number.
 ; Submitted by amazing
 ; 1,2,4,6,8,3,7,9,2,6,1,3,5,9,4,6,3,9,2,6,1,3,9,6,8,3,7,9,6,1,5,9,4,3,9,2,6,5,9,6,3,7,9,6,5,9,3,7,9,2,6,1,3,9,4,8,3,9,6,9,4,8,3,9,2,6,1,9,6,3,7,9,2,6,5,9,6,3,7,9,6,1,9,4,8,9,2,6,3,5,9,4,3,9,2,6,9,8,7,9
-; Formula: a(n) = (A005153(n)-1)%9+1
 
-seq $0,5153 ; Practical numbers: positive integers m such that every k <= sigma(m) is a sum of distinct divisors of m. Also called panarithmic numbers.
-sub $0,1
+mov $1,-1
+mov $2,$0
+pow $2,2
+lpb $2
+  add $1,1
+  mov $3,$1
+  seq $3,322860 ; If n is practical (in A005153), a(n) = 1, otherwise a(n) = 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1
 mod $0,9
 add $0,1

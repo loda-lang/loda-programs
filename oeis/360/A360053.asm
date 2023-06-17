@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,87966 ; a(n) = gcd(-1 + 2^n, n^2).
+  add $3,1
+  mov $6,2
+  pow $6,$3
+  sub $6,1
+  gcd $3,$6
   add $3,$1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

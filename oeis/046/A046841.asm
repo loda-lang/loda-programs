@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,91258 ; Denominator of sigma(3,n)/sigma(1,n).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $5,$1
+  seq $5,1158 ; sigma_3(n): sum of cubes of divisors of n.
+  gcd $5,$3
+  mov $6,$3
+  div $6,$5
+  mov $3,$6
   cmp $3,1
   sub $0,$3
   add $1,1

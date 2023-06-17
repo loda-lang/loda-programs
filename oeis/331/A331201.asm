@@ -6,8 +6,15 @@ mov $2,$0
 pow $2,2
 add $2,12
 lpb $2
+  mov $6,$1
+  seq $6,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
+  div $6,3
   mov $3,$1
-  seq $3,88434 ; Number of ways to write n as n = u*v*w with 1 <= u < v < w.
+  seq $3,46951 ; a(n) is the number of squares dividing n.
+  add $3,$6
+  div $3,2
+  sub $6,$3
+  mov $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $5,$1
   sub $0,$3

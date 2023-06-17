@@ -9,7 +9,9 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,11772 ; Smallest number m such that m(m+1)/2 is divisible by n.
+  mul $3,2
+  add $3,1
+  seq $3,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
   gcd $3,2
   sub $0,$3
   add $0,1

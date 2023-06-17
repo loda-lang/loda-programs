@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,260454 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (3,2,1) and midword sequence (a(n)); see Comments.
+  seq $3,260451 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (2,3,1) and midword sequence (a(n)); see Comments.
+  add $3,1
+  dif $3,2
   add $3,$4
   gcd $3,2
   sub $0,$3

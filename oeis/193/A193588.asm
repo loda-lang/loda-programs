@@ -1,16 +1,10 @@
 ; A193588: A Fibonacci triangle: T(n,k) = Fib(k+2) for 0 <= k <= n.
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,1,2,1,2,3,1,2,3,5,1,2,3,5,8,1,2,3,5,8,13,1,2,3,5,8,13,21,1,2,3,5,8,13,21,34,1,2,3,5,8,13,21,34,55,1,2,3,5,8,13,21,34,55,89,1,2,3,5,8,13,21,34,55,89,144,1,2,3,5,8,13,21,34,55,89,144,233
 
 lpb $0
-  add $2,1
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
-mov $2,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mul $1,-1
-  sub $2,$1
-lpe
-mov $0,$2
+add $0,2
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.

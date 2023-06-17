@@ -1,17 +1,15 @@
 ; A161936: The number of direct isometries that are derangements of the (n-1)-dimensional facets of an n-cube.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,3,14,117,1164,13975,195642,3130281,56345048,1126900971,24791821350,595003712413,15470096522724,433162702636287,12994881079088594,415836194530835025,14138430614048390832,508983502105742069971,19341373080018198658878,773654923200727946355141
 
-mul $0,2
-add $0,2
-mov $1,$0
-mov $2,$0
-mov $3,2
-lpb $0,2
-  sub $1,2
-  sub $3,$2
-  gcd $3,0
-  mul $2,$1
+mov $1,1
+mov $2,1
+add $0,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+  dif $1,-1
+  add $1,$2
+  mul $2,2
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

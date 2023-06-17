@@ -4,8 +4,10 @@
 
 mov $1,$0
 lpb $1
-  mov $2,$1
-  seq $2,308358 ; Beatty sequence for sqrt(3)/4.
+  mov $3,110
+  mul $3,$1
+  div $3,254
+  mov $2,$3
   sub $2,2
   add $0,$2
   add $1,$2

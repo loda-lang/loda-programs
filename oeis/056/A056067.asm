@@ -10,7 +10,11 @@ lpb $2
   add $1,1
   mov $3,$1
   div $3,2
-  seq $3,99905 ; a(n) = binomial(2n-1, n-1) mod n.
+  mov $5,$3
+  add $5,1
+  add $3,$5
+  bin $3,$5
+  mod $3,$5
   cmp $3,0
   sub $0,$3
   mov $4,$0

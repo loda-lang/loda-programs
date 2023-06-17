@@ -1,11 +1,8 @@
 ; A065730: Largest square <= n-th prime.
-; Submitted by Jon Maiga
+; Submitted by Coleslaw
 ; 1,1,4,4,9,9,16,16,16,25,25,36,36,36,36,49,49,49,64,64,64,64,81,81,81,100,100,100,100,100,121,121,121,121,144,144,144,144,144,169,169,169,169,169,196,196,196,196,225,225,225,225,225,225,256,256,256,256,256,256,256,289,289,289,289,289,324,324,324,324,324,324,361,361,361,361,361,361,400,400,400,400,400,400,400,441,441,441,441,441,441,441,484,484,484,484,484,484,484,529
-; Formula: a(n) = ((A001650(A000040(n))-2)/2+1)^2
+; Formula: a(n) = A000196(A006005(n))^2
 
-seq $0,40 ; The prime numbers.
-seq $0,1650 ; k appears k times (k odd).
-sub $0,2
-div $0,2
-add $0,1
+seq $0,6005 ; The odd prime numbers together with 1.
+seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 pow $0,2

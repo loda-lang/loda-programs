@@ -1,11 +1,24 @@
 ; A040287: Continued fraction for sqrt(305).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by [AF>Libristes] Dudumomo
 ; 17,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2,34,2,6,2
-; Formula: a(n) = (81*A010199(n)+37)/53
+; Formula: a(n) = (486*(((42*gcd(n,262156)-2)%13)/5)+81*((42*gcd(n,262156)-2)%13)+37)/53, a(1) = 2, a(0) = 17
 
-seq $0,10199 ; Continued fraction for sqrt(140).
-mov $1,81
-mul $1,$0
-add $1,37
-div $1,53
-mov $0,$1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  gcd $1,262156
+  mul $1,42
+  sub $1,2
+  mod $1,13
+  mov $2,$1
+  div $2,5
+  mul $2,6
+  add $3,1
+  add $1,$2
+  mov $4,81
+  mul $4,$1
+  add $4,37
+  div $4,53
+lpe
+mov $0,$4

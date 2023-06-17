@@ -1,7 +1,22 @@
 ; A226982: a(n) = ceiling(n/2) - primepi(n).
 ; 1,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,4,4,5,5,5,5,5,5,6,6,7,7,7,7,8,8,8,8,8,8,9,9,9,9,10,10,11,11,11,11,12,12,13,13,13,13,13,13,14,14,15,15,15
-; Formula: a(n) = (A072731(n)+2)/2
+; Formula: a(n) = (c(n)+2)/2, b(n) = 2*b(n-1)-n-2, b(2) = -10, b(1) = -3, b(0) = 0, c(n) = -2*binomial(gcd(b(n-1),n+1),n+1)+c(n-1)+1, c(2) = -2, c(1) = -1, c(0) = 0
 
-seq $0,72731 ; Difference of numbers of composite and prime numbers <= n.
+mov $1,2
+lpb $0
+  sub $0,1
+  mov $2,$4
+  gcd $2,$1
+  bin $2,$1
+  mul $4,2
+  sub $4,1
+  sub $4,$1
+  add $1,1
+  mov $3,-2
+  mul $3,$2
+  add $5,1
+  add $5,$3
+lpe
+mov $0,$5
 add $0,2
 div $0,2

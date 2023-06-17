@@ -7,7 +7,8 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,340378 ; Number of 1-digits in the ternary representation of A048673(n).
+  seq $3,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
+  seq $3,62756 ; Number of 1's in ternary (base-3) expansion of n.
   cmp $3,0
   sub $0,$3
   add $1,1

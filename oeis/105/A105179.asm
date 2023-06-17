@@ -7,8 +7,11 @@ add $2,8
 pow $2,4
 lpb $2
   sub $2,14
+  mov $6,$1
+  seq $6,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
   mov $3,$1
-  seq $3,60681 ; Largest difference between consecutive divisors of n (ordered by size).
+  sub $3,$6
+  add $3,1
   mov $5,$3
   mul $3,2
   gcd $3,4

@@ -1,7 +1,27 @@
 ; A266175: Binary representation of the n-th iteration of the "Rule 5" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jamie Morken(l1)
 ; 1,10,100,1101011,10000,11110101111,1000000,111111010111111,100000000,1111111101011111111,10000000000,11111111110101111111111,1000000000000,111111111111010111111111111,100000000000000,1111111111111101011111111111111,10000000000000000,11111111111111110101111111111111111,1000000000000000000,111111111111111111010111111111111111111,100000000000000000000,1111111111111111111101011111111111111111111,10000000000000000000000,11111111111111111111110101111111111111111111111,1000000000000000000000000
-; Formula: a(n) = A007088(A266176(n))
 
-seq $0,266176 ; Decimal representation of the n-th iteration of the "Rule 5" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+add $0,1
+mov $1,2
+pow $1,$0
+gcd $0,2
+mul $1,2
+sub $1,$0
+bin $1,$0
+div $0,2
+mul $0,2
+div $1,4
+sub $1,$0
+mov $3,1
+mov $0,$1
+add $0,1
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2

@@ -6,10 +6,14 @@ add $0,1
 mov $3,$0
 pow $3,5
 lpb $3
-  mov $1,$2
-  seq $1,336040 ; Characteristic function of refactorable numbers (A033950).
   add $4,8
-  sub $0,$1
+  mov $1,$2
+  seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,1
+  add $5,$2
+  gcd $5,$1
+  bin $5,$1
+  sub $0,$5
   add $2,$4
   sub $3,$0
 lpe

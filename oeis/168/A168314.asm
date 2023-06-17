@@ -1,4 +1,4 @@
-; A168314: Eigensequence of triangle A168313
+; A168314: Eigensequence of triangle A168313.
 ; Submitted by CFJH
 ; 1,1,3,5,13,29,71,165,401,957,2315,5561,13437,32377,78191,188617,455425,1099137,2653699
 

@@ -6,7 +6,9 @@ add $0,2
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+  trn $2,1
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $2,1
   sub $0,1
   mul $1,$2
   mov $2,$0

@@ -12,7 +12,11 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,107078 ; Whether n has non-unitary prime divisors.
+  seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  mul $0,2
+  max $0,1
+  sub $0,1
+  mod $0,2
   add $3,$0
   add $4,$3
 lpe

@@ -8,7 +8,15 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,73898 ; a(1) = 1; for n>1, a(n) = smallest even or odd number not occurring earlier accordingly as n is prime or composite.
+  seq $3,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+  mul $3,2
+  add $3,1
+  mov $4,$1
+  seq $4,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $4,1
+  mul $4,2
+  max $4,$3
+  mov $3,$4
   gcd $3,$0
   add $1,1
   add $2,$3

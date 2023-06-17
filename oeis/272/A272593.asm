@@ -8,8 +8,10 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,46072 ; Decompose multiplicative group of integers modulo n as a product of cyclic groups C_{k_1} x C_{k_2} x ... x C_{k_m}, where k_i divides k_j for i < j; then a(n) = m.
-  sub $3,2
+  seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
+  div $3,2
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  sub $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

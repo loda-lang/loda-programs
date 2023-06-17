@@ -7,8 +7,14 @@ mov $3,$0
 sub $0,1
 pow $3,5
 lpb $3
+  mov $4,$2
+  seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $1,$2
-  seq $1,325321 ; a(n) = 1 if cototient of n is a square, 0 otherwise.
+  sub $1,$4
+  sub $1,1
+  seq $1,49240 ; Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
+  add $1,1
+  mod $1,2
   sub $0,$1
   add $2,1
   sub $3,$0

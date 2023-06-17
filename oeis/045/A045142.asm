@@ -1,4 +1,4 @@
-; A045142: Numbers n with property that in base 4 representation the numbers of 2's and 3's are 1 and 4, respectively.
+; A045142: Numbers whose base-4 representation contains exactly one 2 and four 3's.
 ; Submitted by [TA]crashtech
 ; 767,959,1007,1019,1022,1791,1983,2031,2043,2046,2303,2559,2879,2943,3023,3039,3059,3063,3068,3069,3263,3311,3323,3326,3519,3567,3579,3582,3647,3711,3791,3807,3827,3831,3836,3837,3887
 

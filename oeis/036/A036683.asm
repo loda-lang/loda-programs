@@ -11,7 +11,16 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $0,6504 ; Coefficient of x^4 in (1-x-x^2)^(-n).
+  mov $6,$0
+  add $6,4
+  add $0,15
+  mov $5,3
+  sub $5,$6
+  bin $5,2
+  mul $5,$0
+  mul $5,$6
+  mov $0,$5
+  div $0,12
   bin $1,$4
   mul $1,$0
   add $3,$1

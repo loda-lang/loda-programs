@@ -18,4 +18,4 @@ lpb $0
   add $4,2
 lpe
 mov $0,$1
-gcd $0,$0
+gcd $0,$1

@@ -3,10 +3,14 @@
 
 lpb $0
   mov $1,$0
-  seq $1,136926 ; Numbers k such that k and k^2 use only the digits 0, 2, 7 and 9.
+  sub $1,1
+  mov $2,10
+  pow $2,$1
+  mul $2,27
+  cmp $0,0
+  mov $1,$2
   div $1,6
   sub $1,1
-  cmp $0,0
 lpe
 mov $0,$1
 add $0,1

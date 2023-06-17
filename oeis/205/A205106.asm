@@ -7,7 +7,9 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,205105 ; Ordered differences of numbers 3^j-2^j, as in A001047.
+  seq $3,130328 ; Triangle of differences between powers of 2, read by rows.
+  mul $3,2
+  seq $3,91311 ; Partial sums of 3^A007814(n).
   gcd $3,$0
   add $1,1
   add $2,$3

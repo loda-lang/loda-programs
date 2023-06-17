@@ -1,7 +1,20 @@
 ; A290661: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jamie Morken(s3)
 ; 1,11,101,1111,10111,111111,1011111,11111111,101111111,1111111111,10111111111,111111111111,1011111111111,11111111111111,101111111111111,1111111111111111,10111111111111111,111111111111111111,1011111111111111111,11111111111111111111,101111111111111111111,1111111111111111111111,10111111111111111111111,111111111111111111111111,1011111111111111111111111,11111111111111111111111111,101111111111111111111111111,1111111111111111111111111111,10111111111111111111111111111,111111111111111111111111111111
-; Formula: a(n) = A004086(A290660(n))
 
-seq $0,290660 ; Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 899", based on the 5-celled von Neumann neighborhood.
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+mov $1,10
+pow $1,$0
+gcd $0,2
+sub $1,$0
+div $1,9
+mov $0,$1
+mul $0,10
+add $0,1
+lpb $0
+  mov $3,$0
+  mod $3,10
+  div $0,10
+  mul $2,10
+  add $2,$3
+lpe
+mov $0,$2

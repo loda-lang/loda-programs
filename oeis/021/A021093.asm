@@ -1,9 +1,11 @@
 ; A021093: Decimal expansion of 1/89.
-; Submitted by Jon Maiga
+; Submitted by Fardringle
 ; 0,1,1,2,3,5,9,5,5,0,5,6,1,7,9,7,7,5,2,8,0,8,9,8,8,7,6,4,0,4,4,9,4,3,8,2,0,2,2,4,7,1,9,1,0,1,1,2,3,5,9,5,5,0,5,6,1,7,9,7,7,5,2,8,0,8,9,8,8,7,6,4,0,4,4,9,4,3,8,2,0,2,2,4,7,1,9,1,0,1,1,2,3,5,9,5,5,0,5
-; Formula: a(n) = ((9*A000042(n))/89)%10
+; Formula: a(n) = ((10*10^n)/89)%10
 
-seq $0,42 ; Unary representation of natural numbers.
-mul $0,9
+mov $1,10
+pow $1,$0
+mov $0,$1
+mul $0,10
 div $0,89
 mod $0,10

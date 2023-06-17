@@ -4,5 +4,12 @@
 
 add $0,1
 pow $0,3
-seq $0,55086 ; n appears 1+[n/2] times.
-add $0,1
+mov $1,$0
+mul $1,4
+mul $0,2
+lpb $0
+  mov $2,$1
+  div $2,$0
+  add $0,$2
+  div $0,2
+lpe

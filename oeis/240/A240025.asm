@@ -1,21 +1,27 @@
 ; A240025: Characteristic function of quarter squares, cf. A002620.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
 
-mov $4,0
-lpb $0
-  mov $3,$0
-  add $4,1
-  sub $0,$4
-  trn $0,$4
-  mod $3,$4
+mov $2,$0
+sub $2,1
+mov $6,1
+mov $3,$2
+lpb $3
+  mov $7,$6
+  mul $7,$3
+  add $6,2
+  trn $3,$6
 lpe
-add $3,1
-mov $0,$3
-mov $1,$0
-lpb $0
-  mul $1,$0
-  cmp $2,0
-  sub $0,$1
-lpe
-mov $0,$2
+mod $7,$6
+pow $3,0
+sub $3,1
+sub $4,$7
+add $5,$4
+div $5,2
+sub $3,$5
+mul $3,4
+add $3,2
+mov $1,$3
+div $1,2
+cmp $1,1
+mov $0,$1

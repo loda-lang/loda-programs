@@ -9,7 +9,10 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $5,$1
-  seq $5,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $5,1
+  seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  sub $5,1
   mov $4,$1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   gcd $5,$4

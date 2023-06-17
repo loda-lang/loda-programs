@@ -6,8 +6,17 @@ mov $2,$0
 pow $2,2
 add $2,6
 lpb $2
+  mov $5,$1
+  seq $5,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  div $5,2
   mov $3,$1
-  seq $3,195128 ; a(n) = 2*n - floor(n*sqrt(1/2)).
+  sub $3,$5
+  add $3,2
+  add $5,$3
+  add $3,$5
+  mul $3,1008
+  sub $3,4031
+  div $3,1008
   mod $3,3
   div $3,2
   sub $0,$3

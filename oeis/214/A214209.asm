@@ -4,9 +4,24 @@
 
 mov $1,$0
 add $1,2
-seq $0,44432 ; a(n) is the number whose base-2 representation is d(0)d(1)...d(n), where d=A005614 (the infinite Fibonacci word).
+mov $4,2
+mov $5,-1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $3,$4
+  div $3,2
+  add $5,$3
+  mod $5,2
+  add $5,2
+  mul $6,2
+  sub $6,1
+  add $6,$5
+  mul $4,$5
+  sub $5,$6
+lpe
 mov $2,2
 pow $2,$1
-sub $2,$0
+sub $2,$6
 div $2,2
 mov $0,$2

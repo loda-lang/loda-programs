@@ -3,7 +3,13 @@
 
 mov $2,1
 sub $2,$0
-seq $0,214210 ; Trebled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0,0 and 1 with 1,1,1.
+div $0,3
+lpb $0
+  add $3,$0
+  div $0,2
+lpe
+mov $0,$3
+mod $0,2
 add $2,$0
 mov $1,3
 gcd $1,$2

@@ -11,7 +11,7 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,100726 ; Prime numbers whose binary representations are split into a maximum of 7 runs.
+  seq $0,40 ; The prime numbers.
   add $3,$0
   add $4,$3
 lpe

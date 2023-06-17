@@ -1,14 +1,19 @@
 ; A049710: a(n)=3-k(n), where k=A006928; also, a and k have the same runlength sequence, with n-th term k(n-1) for n >= 2.
-; Submitted by [SG]ATA-Rolf
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,1,2,1,2,2,1,2,1,1,2,2,1,2,2,1,2,1,1,2,1,1,2,2,1,2,1,1,2,1,2,2,1,2,2,1,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,2,1,1,2,1,2,2,1,1,2,1,1,2,2,1,2,1,1,2,1,1,2,2,1,2,2,1,1,2
+; Formula: a(n) = -d(n)+b(n)+3, b(n) = b(n-1), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)/2+e(n-1), c(3) = 6, c(2) = 5, c(1) = 3, c(0) = 2, d(n) = gcd(c(n-1)/2+d(n-1),2), d(3) = 1, d(2) = 1, d(1) = 2, d(0) = 1, e(n) = gcd(c(n-1)/2+d(n-1),2)*e(n-1), e(3) = 4, e(2) = 4, e(1) = 4, e(0) = 2
 
-mov $1,$0
+mov $3,1
+mov $4,2
 add $0,1
-seq $0,49705 ; a(n)=3-k(n), where k=A000002=Kolakoski sequence; also the sequence of runlengths of a is k.
-mod $0,2
 lpb $0
-  mov $0,$1
+  sub $0,1
+  div $2,2
+  add $3,$2
+  gcd $3,2
+  add $2,$4
+  mul $4,$3
 lpe
-bin $2,$0
-mov $0,$2
-add $0,1
+sub $1,$3
+mov $0,$1
+add $0,3

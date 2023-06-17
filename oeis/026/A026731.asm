@@ -8,5 +8,18 @@ add $0,3
 add $1,$0
 sub $1,2
 div $1,2
-seq $1,165407 ; Expansion of 1/(1-x-x^3*c(x^3)), c(x) the g.f. of A000108.
-mov $0,$1
+mov $5,$1
+mov $6,1
+lpb $1
+  sub $1,3
+  mov $3,1
+  add $3,$1
+  sub $5,1
+  mov $4,$5
+  bin $4,$2
+  add $2,1
+  mul $4,$3
+  div $4,$2
+  add $6,$4
+lpe
+mov $0,$6

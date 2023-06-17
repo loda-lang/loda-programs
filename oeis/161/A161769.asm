@@ -7,10 +7,13 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,8472 ; Sum of the distinct primes dividing n.
   mov $3,$1
-  seq $3,161606 ; a(n) = gcd(A008472(n), A001222(n)).
-  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  gcd $3,$5
   add $3,$4
+  sub $3,1
   cmp $3,1
   gcd $3,2
   sub $0,$3

@@ -8,7 +8,11 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,351414 ; Number of divisors of n that are either prime or have at least 1 square divisor > 1 and at least two distinct prime factors.
+  seq $3,351418 ; Number of divisors of n that are either of the form p^k (p prime, k>1) or are nonprime squarefree numbers.
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,$3
+  mov $3,$5
   cmp $3,3
   sub $0,$3
   add $1,1

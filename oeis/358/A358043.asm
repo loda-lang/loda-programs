@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,200905 ; a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   dif $3,2
   gcd $3,4
   add $3,1

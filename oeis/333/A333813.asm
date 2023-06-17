@@ -4,16 +4,13 @@
 mov $1,3
 pow $1,$0
 mul $1,8
-sub $1,1
-mov $0,$1
-add $0,1
 mov $2,1
-mov $3,$0
+mov $0,$1
 lpb $0
   trn $0,$2
   mul $2,2
 lpe
-sub $2,$3
+sub $2,$1
 mov $0,$2
 sub $0,8
 div $0,8

@@ -1,5 +1,5 @@
 ; A315109: Coordination sequence Gal.5.257.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by www.urfak.petrsu.ru
+; Submitted by Fardringle
 ; 1,5,9,16,22,26,32,36,40,48,53,57,64,67,71,80,84,88,96,98,102,112,115,119,128,129,133,144,146,150,160,160,164,176,177,181,192,191,195,208,208,212,224,222,226,240,239,243,256,253
 
 mov $1,$0
@@ -7,6 +7,44 @@ dif $1,2
 mul $1,2
 add $1,1
 mod $1,3
-seq $0,315317 ; Coordination sequence Gal.5.257.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+cmp $3,$0
+mov $6,$0
+mul $6,2
+add $6,46078
+div $6,3
+sub $6,15359
+sub $2,$0
+add $2,46078
+div $2,3
+sub $2,15359
+mov $8,$0
+mul $8,2
+sub $8,$2
+mul $8,3
+add $8,$3
+add $8,1
+mul $8,2
+div $8,3
+mov $7,$0
+mul $7,2
+add $7,1
+div $7,3
+add $8,$7
+add $8,$0
+mov $9,$8
+mul $9,2
+add $9,$8
+mov $4,$0
+mul $4,3
+add $4,1
+add $4,$9
+div $4,4
+sub $4,$6
+mov $5,$0
+mul $5,3
+dif $0,3
+mul $0,7
 sub $0,1
+mod $0,$4
+add $0,$5
 add $0,$1

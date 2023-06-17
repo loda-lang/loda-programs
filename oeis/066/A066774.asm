@@ -6,12 +6,17 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,66728 ; a(n) is the number of integers of the form (n+k+n*k)/(n-k) for k = 1,2,...,n-1.
+  add $3,3
+  pow $3,2
+  sub $3,2
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,2
+  div $3,2
   sub $3,1
   cmp $3,2
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0

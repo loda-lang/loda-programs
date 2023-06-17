@@ -20,7 +20,7 @@ lpb $2
   pow $5,$6
   seq $5,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
   mul $5,$6
-  seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $0,1
   mul $0,$5
   add $1,$0

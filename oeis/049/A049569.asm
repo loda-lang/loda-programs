@@ -6,8 +6,10 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,240357 ; Inverse of 74th cyclotomic polynomial.
+  sub $6,$1
+  mod $6,37
+  pow $6,$6
+  mov $3,$6
   add $3,1
   div $3,2
   add $3,$1

@@ -12,7 +12,8 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  seq $0,194439 ; Number of regions in the set of partitions of n that contain only one part.
+  sub $0,1
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   mul $1,$0
   add $3,$1
 lpe

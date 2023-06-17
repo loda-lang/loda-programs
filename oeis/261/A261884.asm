@@ -9,5 +9,24 @@ sub $2,1
 mov $1,$2
 cmp $1,0
 add $2,$1
-seq $0,93829 ; Expansion of q * psi(q^3)^3 / psi(q) in powers of q where psi() is a Ramanujan theta function.
+mov $3,-1
+pow $3,$0
+mov $4,-1
+mul $0,2
+add $0,3
+lpb $0
+  sub $0,1
+  mov $6,$5
+  dif $6,$0
+  cmp $6,$5
+  cmp $6,0
+  sub $7,$4
+  sub $0,1
+  add $4,$7
+  add $5,1
+  add $6,$7
+  mov $7,$6
+lpe
+mov $0,$6
+mul $0,$3
 div $0,$2

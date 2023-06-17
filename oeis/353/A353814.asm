@@ -20,10 +20,9 @@ lpb $0
   sub $5,$7
   mov $0,$5
 lpe
-mov $0,$4
-mov $1,$0
+mov $1,$4
 cmp $1,0
-mov $2,$0
+mov $2,$4
 add $2,$1
 mov $3,1
 mod $3,$2

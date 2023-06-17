@@ -1,5 +1,11 @@
 ; A021131: Decimal expansion of 1/127.
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 0,0,7,8,7,4,0,1,5,7,4,8,0,3,1,4,9,6,0,6,2,9,9,2,1,2,5,9,8,4,2,5,1,9,6,8,5,0,3,9,3,7,0,0,7,8,7,4,0,1,5,7,4,8,0,3,1,4,9,6,0,6,2,9,9,2,1,2,5,9,8,4,2,5,1,9,6,8,5,0,3,9,3,7,0,0,7,8,7,4,0,1,5,7,4,8,0,3,1
+; Formula: a(n) = ((10^(n+7))/254)%10
 
-add $0,4
-seq $0,224233 ; Decimal expansion of number of inches in a meter.
+add $0,7
+mov $1,10
+pow $1,$0
+div $1,254
+mov $0,$1
+mod $0,10

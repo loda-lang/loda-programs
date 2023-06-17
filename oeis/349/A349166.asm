@@ -8,8 +8,19 @@ pow $2,4
 add $2,11
 lpb $2
   sub $2,1
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,349167 ; a(n) = 1 if sigma(n) and A003961(n) are relatively prime, otherwise 0.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,1
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $4,$3
+  gcd $4,$5
+  mov $3,$4
+  div $3,2
+  mov $6,0
+  bin $6,$3
+  mov $3,$6
   cmp $3,0
   sub $0,$3
   add $1,1

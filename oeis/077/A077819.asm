@@ -1,18 +1,13 @@
 ; A077819: Probability P(n) of the occurrence of a 3-dimensional self-trapping walk of length n: exponent of 3 in the denominator.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Soulfly
 ; 0,0,1,0,1,3,2,1,5
 
-mov $3,$0
-div $3,4
-add $3,1
-mov $1,$3
-add $0,4
+mul $0,2
+sub $0,1
 lpb $0
-  sub $0,2
-  mov $2,$3
-  bin $2,$0
-  sub $0,1
-  add $1,$2
+  mul $0,3
+  mov $1,$0
+  mod $0,9
 lpe
 mov $0,$1
-sub $0,1
+div $0,9

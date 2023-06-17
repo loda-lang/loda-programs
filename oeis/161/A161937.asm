@@ -1,17 +1,14 @@
 ; A161937: The number of indirect isometries that are derangements of the (n-1)-dimensional facets of an n-cube.
-; Submitted by Jamie Morken(s1)
+; Submitted by Science United
 ; 1,2,15,116,1165,13974,195643,3130280,56345049,1126900970,24791821351,595003712412,15470096522725,433162702636286,12994881079088595,415836194530835024,14138430614048390833,508983502105742069970,19341373080018198658879,773654923200727946355140
 
-mul $0,2
-add $0,2
-mov $1,$0
 mov $2,1
-lpb $0,2
-  sub $1,2
-  sub $3,$2
-  gcd $3,0
-  mul $2,$1
+add $0,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+  dif $1,-1
+  add $1,$2
+  mul $2,2
 lpe
-mul $3,$0
-mov $0,$3
-div $0,2
+mov $0,$1

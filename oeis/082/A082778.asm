@@ -1,9 +1,9 @@
 ; A082778: a(1) = 3; for n>1, a(n) = smallest palindromic multiple of a(n-1) obtained by inserting digits anywhere in a(n-1).
-; Submitted by Science United
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 3,33,363,36663,36699663,36699699699663,36699699699699699699699663,36699699699699699699699699699699699699699699699663,36699699699699699699699699699699699699699699699699699699699699699699699699699699699699699699699663
-; Formula: a(n) = 3*b(n), b(n) = A088773(max(n-1,0))*b(n-1), b(0) = 1
+; Formula: a(n) = A088773(max(n-1,0))*a(n-1), a(0) = 3
 
-mov $1,1
+mov $1,3
 lpb $0
   sub $0,1
   mov $2,$0
@@ -12,4 +12,3 @@ lpb $0
   mul $1,$2
 lpe
 mov $0,$1
-mul $0,3

@@ -1,9 +1,23 @@
 ; A075512: Seventh column of triangle A075497.
 ; Submitted by dthonon
 ; 1,56,1848,47040,1023792,20076672,365787136,6314147840,104637781248,1680323893248,26325099300864,404403166003200,6115019304300544,91287994741981184,1348582723009708032
-; Formula: a(n) = A000771(n)*2^n
 
 mov $1,2
 pow $1,$0
-seq $0,771 ; Stirling numbers of second kind, S(n,7).
+add $0,1
+mov $2,1
+mov $4,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  seq $0,481 ; Stirling numbers of the second kind, S(n,5).
+  mul $2,6
+  mul $5,7
+  add $5,$2
+  add $2,$0
+lpe
+mov $0,$5
+div $0,6
 mul $0,$1

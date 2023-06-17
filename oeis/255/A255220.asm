@@ -5,9 +5,13 @@
 mov $1,39
 lpb $0
   mov $1,$0
-  seq $1,255221 ; Number of (n+2) X (1+2) 0..1 arrays with no 3 x 3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2.
-  mul $1,2
+  mov $2,$0
+  seq $2,255225 ; Number of (n+2)X(5+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
+  sub $2,$0
   mov $0,0
+  add $1,$2
+  sub $1,45
+  mul $1,2
 lpe
 mov $0,$1
 sub $0,16

@@ -1,13 +1,13 @@
 ; A280116: Partial sums of A266265 (Product_{d|n} pod(d)).
-; Submitted by Alessandro Chimetto
+; Submitted by Odd-Rod
 ; 1,3,6,22,27,243,250,1274,1355,2355,2366,2988350,2988363,2991107,2994482,4043058,4043075,38055299,38055318,102055318,102064579,102075227,102075250,63403483040626,63403483041251,63403483058827,63403483117876,63403965008180
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+A266265(n), b(0) = 0
+; Formula: a(n) = a(n-1)+A266265(n), a(0) = 1
 
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,266265 ; Product of products of divisors of divisors of n.
   sub $0,1
   add $1,$2
 lpe
-add $1,1
 mov $0,$1

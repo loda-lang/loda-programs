@@ -16,7 +16,18 @@ lpb $5
   bin $2,$0
   add $3,1
   add $0,18
-  seq $0,322796 ; a(n) = Kronecker symbol (6/n).
+  mov $6,1
+  add $6,$0
+  mod $6,3
+  sub $6,1
+  sub $0,1
+  mod $0,8
+  sub $0,3
+  mod $0,2
+  mov $7,0
+  sub $7,$0
+  mov $0,$7
+  mul $0,$6
   mul $2,$0
   add $4,$2
 lpe

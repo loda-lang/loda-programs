@@ -1,5 +1,5 @@
 ; A193247: Inverse binomial transform of A000371.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by ArvaroilLaido [Toscana]
 ; 2,0,8,192,63776,4294321152,18446744022173838464,340282366920938463205120190760593525760,115792089237316195423570985008687907847825466794905548626109625623336235655680
 
 mov $3,2
@@ -11,9 +11,8 @@ lpb $0
   bin $1,$0
   mul $1,$3
   sub $1,$2
-  sub $1,$2
-  sub $1,$2
+  mov $2,$1
   add $2,$1
   pow $3,2
 lpe
-mov $0,$2
+mov $0,$1

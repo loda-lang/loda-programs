@@ -8,7 +8,15 @@ mov $2,$0
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,53193 ; Cototient of odd numbers.
+  add $3,1
+  mov $4,$3
+  add $4,$3
+  mov $3,$4
+  seq $4,62570 ; a(n) = phi(2*n).
+  dif $4,2
+  sub $3,$4
+  sub $3,$4
+  add $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

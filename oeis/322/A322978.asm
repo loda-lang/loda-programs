@@ -15,7 +15,7 @@ lpb $4
   sub $0,1
   mul $0,2
   mov $7,$0
-  seq $7,46897 ; Sum of divisors of n that are not divisible by 4.
+  seq $7,593 ; Sum of odd divisors of n.
   mov $6,$0
   add $6,2
   gcd $6,$7

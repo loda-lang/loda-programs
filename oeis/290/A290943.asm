@@ -7,8 +7,13 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
-  seq $2,123330 ; Expansion of eta(q^2) * eta(q^3)^6 / (eta(q)^2 * eta(q^6)^3) in powers of q.
+  trn $2,1
+  mov $5,$2
+  seq $2,123331 ; Expansion of (c(q)^2/(3c(q^2))-1)/2 in powers of q where c(q) is a cubic AGM function.
+  mul $2,2
+  sub $2,1
+  sub $2,$5
+  add $2,$0
   sub $4,1
   add $1,$2
   mov $3,2

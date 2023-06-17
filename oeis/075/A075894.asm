@@ -8,8 +8,10 @@ lpb $3
   sub $3,1
   mov $0,$2
   add $0,$3
-  max $0,0
-  seq $0,61066 ; a(n) = (prime(n)^2 - 1)/8.
+  add $0,1
+  seq $0,40 ; The prime numbers.
+  pow $0,2
+  div $0,8
   add $1,$0
 lpe
 mov $0,$1

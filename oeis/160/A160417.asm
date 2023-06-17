@@ -1,8 +1,11 @@
 ; A160417: a(n) = A160415(n+1)/4.
-; Submitted by Simon Strandgaard
+; Submitted by decryption
 ; 2,1,7,1,7,3,21,1,7,3,21,3,21,9,63,1,7,3,21,3,21,9,63,3,21,9,63,9,63,27,189,1,7,3,21,3,21,9,63,3,21,9,63,9,63,27,189
-; Formula: a(n) = A160797(n+1)/3
+; Formula: a(n) = (142857*A160415(n+1)-571428)/571428+1
 
 add $0,1
-seq $0,160797 ; First differences of A160796.
-div $0,3
+seq $0,160415 ; First differences of A160118.
+mul $0,142857
+sub $0,571428
+div $0,571428
+add $0,1

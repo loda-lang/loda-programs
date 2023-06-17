@@ -1,17 +1,15 @@
 ; A005666: Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
-; Submitted by Science United
+; Submitted by Pavel_Kirpichenko
 ; 0,2,7,21,59,163,447,1223,3343,9135,24959,68191,186303,508991,1390591,3799167,10379519,28357375,77473791,211662335,578272255,1579869183,4316282879,11792304127,32217174015,88018956287,240472260607,656982433791,1794909388799
-; Formula: a(n) = max(b(n-1)+c(n-1),2), a(2) = 7, a(1) = 2, a(0) = 0, b(n) = 2*c(n-1)+max(b(n-1)+c(n-1),2)+3, b(2) = 14, b(1) = 5, b(0) = 0, c(n) = max(b(n-1)+c(n-1),2), c(2) = 7, c(1) = 2, c(0) = 0
+; Formula: a(n) = 2*a(n-2)+2*b(n-2)+a(n-1)+a(n-2)+b(n-2)+5, a(2) = 7, a(1) = 2, a(0) = 0, b(n) = a(n-1)+b(n-1)+1, b(2) = 4, b(1) = 1, b(0) = 0
 
 lpb $0
   sub $0,1
+  add $3,1
+  add $1,$3
+  add $3,$2
   mov $2,$1
   add $2,$3
-  max $2,2
   mov $1,$3
-  add $1,$3
-  add $1,3
-  add $1,$2
-  mov $3,$2
 lpe
 mov $0,$2

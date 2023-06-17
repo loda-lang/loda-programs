@@ -1,7 +1,18 @@
 ; A059149: A hierarchical sequence (W'2{2}* - see A059126).
-; Submitted by Science United
+; Submitted by Stony666
 ; 1,2,1,2,4,2,1,2,1,4,8,4,1,2,1,2,4,2,1,2,1,8,16,8,1,2,1,2,4,2,1,2,1,4,8,4,1,2,1,2,4,2,1,2,1,16,32,16,1,2,1,2,4,2,1,2,1,4,8,4,1,2,1,2,4,2,1,2,1,8,16,8,1,2,1,2,4,2,1,2,1,4,8,4,1,2,1,2,4,2,1,2,1,32,64,32,1,2,1,2
-; Formula: a(n) = gcd(A099470(n),256)
 
-seq $0,99470 ; A sequence generated from the Quadrifoil.
-gcd $0,256
+mov $1,1
+mov $2,$0
+add $2,3
+div $2,3
+add $0,1
+mod $0,3
+add $0,2
+div $0,2
+mul $0,$2
+lpb $0
+  mul $1,2
+  dif $0,2
+lpe
+mov $0,$1

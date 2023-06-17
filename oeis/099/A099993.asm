@@ -8,8 +8,8 @@ seq $0,25487 ; Least integer of each prime signature A124832; also products of p
 add $0,1
 mov $2,$0
 lpb $0
-  mov $1,1
   mov $0,1
+  mov $1,1
 lpe
 add $2,$1
 mov $0,$2

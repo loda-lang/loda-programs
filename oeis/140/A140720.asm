@@ -8,7 +8,10 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
-  seq $5,115392 ; First appearance of n-th prime as prime factor in list of semiprimes.
+  seq $5,40 ; The prime numbers.
+  mul $5,2
+  sub $5,2
+  seq $5,72000 ; Number of semiprimes (A001358) <= n.
   sub $0,1
   mov $2,$3
   mul $2,$5

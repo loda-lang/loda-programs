@@ -11,7 +11,10 @@ lpb $2
   gcd $0,$2
   mul $0,2
   sub $0,1
-  seq $0,6003 ; a(n) = n*(n^2 + 1)/2.
+  mov $4,$0
+  pow $0,3
+  add $0,$4
+  div $0,2
   add $3,$0
 lpe
 mov $0,$3

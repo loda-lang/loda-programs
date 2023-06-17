@@ -21,8 +21,8 @@ lpb $3
   sub $3,1
 lpe
 pow $1,4
-mul $1,24
-div $1,9
+mul $1,8
+div $1,3
 mul $2,2
 pow $2,4
 sub $0,1

@@ -7,7 +7,8 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,78615 ; a(n) = rad(n)^2, where rad is the squarefree kernel of n (A007947).
+  seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  seq $3,53143 ; Smallest square divisible by n.
   sub $3,$1
   sub $3,2
   mul $3,-4

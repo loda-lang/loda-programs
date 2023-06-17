@@ -6,8 +6,16 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  pow $5,2
+  mov $6,$5
   mov $3,$1
-  seq $3,152016 ; a(n) = n^4 - n^3 - n^2 - n.
+  bin $3,2
+  add $5,1
+  mul $5,$3
+  sub $5,$6
+  mov $3,$5
+  mul $3,2
   trn $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

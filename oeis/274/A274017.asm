@@ -4,6 +4,18 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,32190 ; Number of cyclic compositions of n into parts >= 2.
-add $0,2
+mov $2,$0
+add $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$2
+  gcd $0,$3
+  sub $0,1
+  seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+  add $4,$0
+lpe
+div $4,$2
+mov $0,$4
 sub $0,$1
+add $0,2

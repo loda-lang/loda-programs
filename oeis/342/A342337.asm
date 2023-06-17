@@ -13,7 +13,12 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,40039 ; First differences of A033485; also A033485 with terms repeated.
+  add $0,2
+  div $0,2
+  seq $0,123 ; Number of binary partitions: number of partitions of 2n into powers of 2.
+  sub $0,2
+  div $0,2
+  add $0,1
   mul $1,$0
   add $3,$1
 lpe

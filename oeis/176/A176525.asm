@@ -7,9 +7,14 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,1
   mov $3,$1
   seq $3,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
-  gcd $3,256
+  lpb $3
+    dif $3,2
+    mul $5,2
+  lpe
+  mov $3,$5
   mul $3,2
   sub $3,2
   div $3,2

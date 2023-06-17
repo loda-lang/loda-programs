@@ -411,6 +411,7 @@ A152241: Products of cubes of 2 successive primes.
 A153480: a(n) = 2*prime(n)^2 - 4.
 A153481: a(n) = prime(n)^3 - 2.
 A153482: a(n) = prime(n)^4 - 8.
+A155213: a(n) = floor(prime(n)/9).
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
 A162143: a(n) = A007304(n)^2.

@@ -4,5 +4,16 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,80054 ; G.f.: Product_{n >= 0} (1+x^(2n+1))/(1-x^(2n+1)).
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  seq $3,6950 ; G.f.: Product_{k>=1} (1 + x^(2*k - 1)) / (1 - x^(2*k)).
+  add $5,1
+  add $2,$3
+  mov $4,$5
+lpe
+mov $0,$2
 mul $0,$1

@@ -4,7 +4,7 @@
 ; Formula: a(n) = A066169(n/A032742(n))*A032742(n)
 
 mov $1,$0
-seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n.
+seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
 div $1,$0
 seq $1,66169 ; Least k such that phi(k) >= n.
 mul $0,$1

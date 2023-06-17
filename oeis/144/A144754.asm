@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,23416 ; Number of 0's in binary expansion of n.
+  seq $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   trn $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
