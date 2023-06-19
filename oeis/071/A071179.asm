@@ -6,8 +6,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,8472 ; Sum of the distinct primes dividing n.
   mov $3,$1
-  seq $3,76694 ; a(n) = n - sum of the distinct prime factors of n.
+  sub $3,$5
+  add $3,1
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
   cmp $3,1
   sub $0,$3

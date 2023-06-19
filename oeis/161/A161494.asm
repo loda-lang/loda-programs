@@ -10,7 +10,10 @@ lpb $2
   add $3,1
   pow $3,2
   sub $3,1
-  seq $3,161654 ; a(n) = the largest multiple of {the number of divisors of n} that is <= n.
+  mov $4,$3
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $3,1
+  div $3,$4
   mod $3,2
   cmp $3,0
   cmp $3,0

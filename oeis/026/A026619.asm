@@ -1,29 +1,17 @@
 ; A026619: T(2n-1,n-1), T given by A026615.
-; Submitted by Jon Maiga
+; Submitted by Jave808
 ; 1,5,17,60,217,798,2970,11154,42185,160446,613054,2351440,9048522,34916300,135059220,523521630,2033066025,7908332190,30807696150,120173896920,469334610030,1834970026500
+; Formula: a(n) = 2*binomial(2*n+1,(2*n)/2)-2*binomial(2*n-1,(2*n)/2)+binomial(2*n-1,(2*n)/2)
 
-mov $5,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  sub $0,1
-  mov $6,2
-  lpb $6
-    sub $6,1
-    add $0,$6
-    mov $4,$0
-    mul $4,2
-    bin $4,$0
-  lpe
-  sub $4,$1
-  mov $2,$3
-  mul $2,$4
-  add $1,$2
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mul $0,2
+mov $1,$0
+sub $1,1
+mov $2,$1
 div $0,2
+bin $1,$0
+add $2,2
+bin $2,$0
+sub $2,$1
+mul $2,2
+add $2,$1
+mov $0,$2

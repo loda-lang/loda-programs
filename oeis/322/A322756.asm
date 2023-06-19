@@ -4,17 +4,15 @@
 ; Formula: a(n) = 2*(2*n+1)*(binomial(2*n,n)/gcd(512*n+512,binomial(2*n,n)))
 
 mov $1,$0
-add $0,1
-add $0,$1
-mov $3,$1
+mov $3,$0
 mul $3,2
 mov $2,2
 add $2,$3
-bin $3,$1
+bin $3,$0
 mul $2,256
 gcd $2,$3
 div $3,$2
-mov $1,$3
-mul $1,$0
-mov $0,$1
+add $0,1
+add $0,$1
+mul $0,$3
 mul $0,2

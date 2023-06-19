@@ -6,10 +6,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
-  add $5,1
-  seq $5,21030 ; Decimal expansion of 1/26.
+  add $5,3
+  mov $7,10
+  pow $7,$5
+  div $7,260
+  mod $7,10
   mov $3,$1
   seq $3,360720 ; a(n) is the sum of unitary divisors of n that are powerful (A001694).
+  mov $5,$7
   gcd $5,$3
   mov $6,$3
   div $6,$5

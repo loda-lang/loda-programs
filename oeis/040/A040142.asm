@@ -1,17 +1,22 @@
 ; A040142: Continued fraction for sqrt(155).
-; Submitted by marcstone
+; Submitted by Fardringle
 ; 12,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2
 
-gcd $0,262156
-mul $0,42
-mod $0,13
-mov $1,$0
-div $1,5
-mul $1,12
-add $0,$1
-sub $0,2
-dif $0,4
-mul $0,2
-add $0,4
-div $0,6
+pow $0,2
+mov $1,10
+mov $2,$0
+gcd $0,8
+lpb $2
+  mov $2,3
+  add $0,6
+  mov $1,7
+lpe
+mul $0,$1
+trn $0,63
+mov $3,$0
+div $0,4
+mul $0,7
+add $0,$3
+div $0,8
+add $0,1
 mul $0,2

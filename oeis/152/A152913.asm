@@ -7,8 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,8514 ; 4-dimensional centered cube numbers.
-  sub $3,1
+  bin $3,2
+  add $3,1
+  bin $3,2
+  mul $3,16
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -5,8 +5,14 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  mov $6,$5
   mov $3,$1
-  seq $3,348505 ; a(n) = usigma(n) / gcd(sigma(n), usigma(n)), where sigma is the sum of divisors function, A000203, and usigma is the unitary sigma, A034448.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  gcd $5,$3
+  div $6,$5
+  mov $3,$6
   cmp $3,1
   sub $0,$3
   add $1,1

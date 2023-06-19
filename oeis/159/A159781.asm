@@ -10,8 +10,12 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,106602 ; Number of primitive positive solutions to 8n+2=x^2+y^2.
-  sub $3,2
+  mul $3,4
+  seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
+  seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+  add $3,12
+  div $3,8
+  sub $3,3
   cmp $3,2
   sub $0,$3
   add $1,1

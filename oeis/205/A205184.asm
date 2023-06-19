@@ -1,9 +1,18 @@
 ; A205184: Period 12: repeat (1, 8, 4, 9, 7, 8, 7, 9, 4, 8, 1, 9).
 ; Submitted by Jamie Morken(s3)
 ; 1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8,4,9,7,8,7,9,4,8,1,9,1,8
-; Formula: a(n) = (A115598(n)-1)%9+1
+; Formula: a(n) = (c(n)-1)%9+1, b(n) = 2*b(n-1)+2*c(n-1)+b(n-1)+1, b(1) = 6, b(0) = 1, c(n) = 2*(2*b(n-1))+2*c(n-1)+c(n-1)+1, c(1) = 8, c(0) = 1
 
-seq $0,115598 ; Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives Z-(X+1) values.
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,$1
+  add $1,$2
+  add $1,$2
+  add $1,1
+  add $2,$1
+lpe
+mov $0,$2
 sub $0,1
 mod $0,9
 add $0,1

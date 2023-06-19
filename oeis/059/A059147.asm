@@ -8,8 +8,11 @@ lpb $0
 lpe
 add $1,1
 pow $1,3
+mov $2,1
 add $0,1
 mul $0,$1
-mov $2,65536
-gcd $2,$0
+lpb $0
+  mul $2,2
+  dif $0,2
+lpe
 mov $0,$2

@@ -4,7 +4,15 @@
 
 mul $0,2
 add $0,1
-seq $0,38629 ; Convolution of Catalan numbers A000108 with Catalan numbers but C(0)=1 replaced by 3.
+mov $1,$0
+mul $0,2
+bin $0,$1
+mul $0,114
+add $1,2
+div $0,$1
+sub $0,57
+div $0,19
+add $0,3
 lpb $0
   dif $0,2
 lpe

@@ -6,7 +6,10 @@ lpb $0
   sub $0,2
   mov $1,$0
   max $1,0
-  seq $1,87787 ; a(n) = Sum_{k=0..n} (-1)^(n-k)*A000041(k).
+  mov $2,-1
+  pow $2,$1
   mov $0,1
+  seq $1,240690 ; Number of partitions p of n such that p contains fewer 1s than its conjugate.
+  add $1,$2
 lpe
 mov $0,$1

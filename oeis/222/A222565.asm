@@ -7,8 +7,14 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
+  mov $5,$1
+  mod $5,4
   mov $3,$1
-  seq $3,301729 ; a(0)=1; thereafter positive numbers that are congruent to {0, 1, 3, 5} mod 6.
+  mul $3,6
+  add $3,$5
+  sub $3,4
+  div $3,4
+  add $3,1
   mul $3,$1
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

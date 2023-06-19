@@ -1,4 +1,4 @@
-; A045012: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 4 and 3, respectively.
+; A045012: Numbers whose base-3 representation contains exactly four 0's and three 2's.
 ; Submitted by Landjunge
 ; 1466,1478,1482,1514,1518,1530,1622,1626,1638,1674,1946,1950,1962,1998,2106,2213,2249,2261,2265,2357,2369,2373,2405,2409,2421,2681,2693,2697,2729,2733,2745,2837,2841,2853,2889,3653
 

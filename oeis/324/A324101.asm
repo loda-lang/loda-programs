@@ -8,7 +8,10 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,342655 ; Number of prime factors (counted with multiplicity) in A156552(n).
+  add $3,1
+  seq $3,156552 ; Unary-encoded compressed factorization of natural numbers.
+  sub $3,1
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1
   add $3,$4
   cmp $3,1

@@ -12,6 +12,4 @@ lpb $1
   seq $3,1462 ; Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
   add $2,$3
 lpe
-mov $1,$2
-add $1,$0
-mov $0,$1
+add $0,$2

@@ -1,11 +1,10 @@
 ; A033141: Base-5 digits are, in order, the first n terms of the periodic sequence with initial period 1,0,0.
-; Submitted by waffleironhead
+; Submitted by Science United
 ; 1,5,25,126,630,3150,15751,78755,393775,1968876,9844380,49221900,246109501,1230547505,6152737525,30763687626,153818438130,769092190650,3845460953251,19227304766255,96136523831275,480682619156376
 ; Formula: a(n) = (5^(n+3))/124
 
 add $0,3
-mov $2,5
-pow $2,$0
-mov $1,$2
-div $1,124
+mov $1,5
+pow $1,$0
 mov $0,$1
+div $0,124

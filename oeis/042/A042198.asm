@@ -15,6 +15,4 @@ lpb $1
   mul $3,12
   add $4,$3
 lpe
-mov $1,$4
-mul $1,$0
-mov $0,$1
+mul $0,$4
