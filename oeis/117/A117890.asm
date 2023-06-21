@@ -8,7 +8,8 @@ pow $2,2
 add $2,12
 lpb $2
   mov $3,$1
-  seq $3,23416 ; Number of 0's in binary expansion of n.
+  seq $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $5,$3
   gcd $5,$1
   div $3,$5

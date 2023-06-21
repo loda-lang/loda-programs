@@ -3,8 +3,17 @@
 ; 1,1,1,1,1,1,2,2,2,2,3,3,4,4,4,3,4,4,5,5,6,5,6,6,7,6,7,6,7,7,9,8,9,8,9,8,10,9,10,9,11,10,12,11,12,10,12,11,13,12,14,12,14,13,15,13,15,13,15,14,17,15,17,15,17,15,18,16,18,16,19,17,20,18,20,17,20,18,21,19,22,19
 
 lpb $0
+  mov $3,$0
+  sub $3,1
+  mov $5,$0
+  div $5,3
+  mov $4,$0
+  div $4,5
+  add $4,$5
   mov $2,$0
-  seq $2,307897 ; Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+  div $2,2
+  add $2,$4
+  sub $2,$3
   sub $0,1
   add $1,$2
   mul $1,-1

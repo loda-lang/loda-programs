@@ -4,7 +4,8 @@
 
 lpb $0
   mov $2,$0
-  seq $2,274536 ; a(n) = 6 * sigma(n).
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $2,6
   mov $3,$2
   min $3,1
   add $4,1

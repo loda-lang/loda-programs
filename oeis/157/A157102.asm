@@ -9,7 +9,5 @@ lpb $1
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $1,$2
 lpe
-mov $1,$2
-mul $1,$0
-mov $0,$1
+mul $0,$2
 add $0,1

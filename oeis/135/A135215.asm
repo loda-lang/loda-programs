@@ -1,11 +1,13 @@
 ; A135215: Maximal number of zero digits in square of number with n digits and without zero digits.
+; Submitted by Matthias Lehmkuhl
 ; 0,1,3,4,6,7,10,10,12,13,15
 
-lpb $0
-  add $1,$0
-  div $0,2
-  add $1,$0
-  pow $0,2
-  cmp $0,$1
-lpe
+mov $1,$0
+mov $2,6
+cmp $2,$0
+add $0,$2
+add $0,1
+div $1,2
+add $1,$0
 mov $0,$1
+sub $0,1

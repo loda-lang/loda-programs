@@ -5,8 +5,22 @@
 mov $2,$0
 lpb $2
   sub $2,1
+  mov $6,$1
+  cmp $6,0
+  mul $6,2
   mov $3,$1
-  seq $3,340793 ; Sequence whose partial sums give A000203.
+  add $3,$6
+  mov $8,$3
+  mov $9,$3
+  sub $3,1
+  seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $8,1
+  sub $8,$9
+  mov $7,$3
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $7,$8
+  sub $3,$7
+  add $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
