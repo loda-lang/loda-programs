@@ -7,8 +7,15 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  seq $0,212763 ; Number of (w,x,y,z) with all terms in {0,...,n}, and w, x and y odd.
+  sub $0,1
+  mul $0,2
+  mov $5,$0
+  add $5,2
+  add $0,3
+  div $0,4
+  pow $0,3
+  mul $0,$5
+  div $0,2
   mov $2,$3
   mul $2,$0
   add $4,$2

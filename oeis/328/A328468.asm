@@ -1,10 +1,14 @@
 ; A328468: Row 5 of A328464: a(n) = A276156(32n - 16) / 210.
 ; Submitted by Jerry Musser
 ; 1,12,144,155,2432,2443,2575,2586,46190,46201,46333,46344,48621,48632,48764,48775,1062348,1062359,1062491,1062502,1064779,1064790,1064922,1064933,1108537,1108548,1108680,1108691,1110968,1110979,1111111,1111122,30808064,30808075,30808207,30808218,30810495,30810506,30810638,30810649,30854253,30854264,30854396,30854407,30856684,30856695,30856827,30856838,31870411,31870422,31870554,31870565,31872842,31872853,31872985,31872996,31916600,31916611,31916743,31916754,31919031,31919042,31919174,31919185
-; Formula: a(n) = (A328467(2*n)-8)/7+2
+; Formula: a(n) = (A276085(A005940(2*A048678(16*n))-1)-210)/210+2
 
+mul $0,16
+seq $0,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
 mul $0,2
-seq $0,328467 ; Row 4 of A328464: a(n) = A276156(16n - 8) / 30.
-sub $0,8
-div $0,7
+seq $0,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
+sub $0,1
+seq $0,276085 ; Primorial base log-function: a(1) = 0, a(n) = (e1*A002110(i1-1) + ... + ez*A002110(iz-1)) for n = prime(i1)^e1 * ... * prime(iz)^ez, where prime(k) is the k-th prime, A000040(k) and A002110(k) (the k-th primorial) is the product of first k primes.
+sub $0,210
+div $0,210
 add $0,2

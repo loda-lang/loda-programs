@@ -8,8 +8,12 @@ add $2,2
 pow $2,2
 lpb $2
   add $1,1
-  mov $3,$1
-  seq $3,9195 ; a(n) = gcd(n, phi(n)).
+  mov $6,$1
+  seq $6,62570 ; a(n) = phi(2*n).
+  mov $5,$1
+  add $5,1
+  gcd $5,$6
+  mov $3,$5
   cmp $3,1
   cmp $3,0
   sub $0,$3

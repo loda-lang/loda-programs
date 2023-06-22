@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,69072 ; a(n) = (2n+1)*(2n+2)*(2n+3).
+  mul $3,2
+  add $3,3
+  bin $3,3
+  mul $3,6
   sub $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   cmp $3,1

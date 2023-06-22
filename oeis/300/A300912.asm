@@ -9,11 +9,23 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,327529 ; Maximum divisor of n that is 1 or whose prime indices are relatively prime.
-  mov $5,$3
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
+  mul $3,2
+  seq $3,64894 ; Binary dilution of n. GCD of exponents in binary expansion of n.
+  mov $7,$1
+  add $7,$3
+  mov $6,$3
+  sub $6,1
+  gcd $6,$7
+  mov $3,$6
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,2
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,119972 ; Flag n when the first difference of the decimal encoding of the Gray code is negative.
+    seq $7,119972 ; a(n) = n * A034947(n).
     pow $7,2
     mov $9,10
     add $9,$5

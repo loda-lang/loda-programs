@@ -13,19 +13,14 @@ lpb $0
   sub $0,$5
   mov $4,$0
   max $4,0
-  mov $7,-1
-  pow $7,$4
+  mov $2,-1
+  pow $2,$4
   seq $4,6950 ; G.f.: Product_{k>=1} (1 + x^(2*k - 1)) / (1 - x^(2*k)).
-  mul $4,$7
+  mul $4,$2
   add $6,9
   add $3,$4
   mov $5,$6
 lpe
 mov $0,$3
 gcd $0,$3
-add $0,1
-mov $2,1
-add $2,$0
-mov $0,$2
-sub $0,2
 mul $0,$1
