@@ -6,6 +6,10 @@ mov $1,2
 lpb $1
   sub $1,1
   add $0,$1
-  trn $0,1
-  seq $0,115316 ; Lexicographically earliest permutation of the natural numbers such that each prime number is followed by exactly two composite numbers.
+  mul $0,4
+  sub $0,7
+  div $0,3
+  dif $0,2
+  add $0,1
+  seq $0,73846 ; a(1) = 1; thereafter, every even-indexed term is prime and every odd-indexed term is composite.
 lpe

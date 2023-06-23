@@ -5,8 +5,22 @@
 mov $2,$0
 mov $0,2
 pow $0,$2
-mov $1,$2
-seq $1,63765 ; Least integer m whose largest prime factor > m^(n/(n+1)).
+mov $3,2
+pow $3,$2
+mul $3,2
+mov $4,$3
+mov $5,$3
+lpb $5
+  sub $5,1
+  mov $6,$4
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $4,1
+  add $5,$6
+lpe
+mov $3,$4
+add $3,1
+mov $1,$3
+mul $1,2
 pow $1,2
 mul $1,$0
 mov $0,$1

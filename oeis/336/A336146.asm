@@ -6,6 +6,6 @@ lpb $0
   dif $0,4
   mul $0,2
 lpe
-mul $0,6
-div $0,8
+mul $0,3
+div $0,4
 add $0,1

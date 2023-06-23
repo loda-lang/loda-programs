@@ -6,7 +6,9 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,101436 ; Number of exponents in prime factorization of n which are primes.
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  seq $3,257994 ; Number of prime parts in the partition having Heinz number n.
   seq $3,32357 ; Convolution of Catalan numbers and powers of -1.
   cmp $3,1
   sub $0,$3

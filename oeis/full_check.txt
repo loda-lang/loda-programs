@@ -471,6 +471,7 @@ A215390: Primes congruent to {1, 2} mod 11.
 A217220: Theta series of Kagome net with respect to an atom.
 A217287: Length of chain of consecutive integers starting with n, where each new integer in the chain has a prime factor which no previous member in the chain has.
 A224731: b(n+1) - b(n) + n where b(n) = A095114(n).
+A225569: Decimal expansion of Sum_{n>=0} 1/10^(3^n), a transcendental number.
 A225687: a(n) = A030124(n) - n.
 A226123: Number of terms of the form 2^k in Collatz(3x+1) trajectory of n.
 A226133: Integers of the form (pq-1)/24 where p < q are primes.

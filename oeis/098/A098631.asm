@@ -4,15 +4,13 @@
 ; Formula: a(n) = (2*A123346(2*n^2)*2^n-2)/2+1
 
 mov $1,$0
+mov $2,$0
+mul $2,2
+mul $2,$0
+seq $2,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
 mov $0,2
 pow $0,$1
-mov $2,$1
-mul $2,2
-mul $2,$1
-seq $2,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
-mov $1,$2
-mul $1,$0
-mov $0,$1
+mul $0,$2
 mul $0,2
 sub $0,2
 div $0,2

@@ -1,5 +1,5 @@
 ; A115562: a(n) = number of distinct squarefree ternary (cyclic) sequences uniquely containing every possible length-n substring.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,3,0,6,0,0,0,0,0,0
 
 sub $0,3
@@ -13,6 +13,7 @@ lpb $0
   div $1,2
   cmp $2,1
   mov $0,$1
+  pow $1,2
 lpe
 mov $0,$2
 add $0,10

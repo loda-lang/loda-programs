@@ -4,4 +4,7 @@
 
 dif $0,2
 div $0,4
-seq $0,202 ; a(8i+j) = 13i + a(j), where 1<=j<=8.
+add $0,4
+mul $0,13
+div $0,8
+sub $0,5

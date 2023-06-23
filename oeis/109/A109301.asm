@@ -3,7 +3,12 @@
 ; 0,1,2,2,3,2,3,3,2,3,4,2,3,3,3,3,4,2,4,3,3,4,3,3,3,3,3,3,4,3,5,4,4,4,3,2,3,4,3,3,4,3,4,4,3,3,4,3,3,3,4,3,4,3,4,3,4,4,5,3,3,5,3,3,3,4,5,4,3,3,4,3,4,3,3,4,4,3,5,3,3,4,4,3,4,4,4,4,4,3,3,3,5,4,4,4,4,3,4,3
 
 lpb $0
-  seq $0,263323 ; The greater of maximal exponent and maximal prime index in the prime factorization of n.
+  mov $2,$0
+  seq $0,51903 ; Maximal exponent in prime factorization of n.
+  seq $2,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $2,1
+  max $2,$0
+  mov $0,$2
   sub $0,1
   add $1,1
 lpe

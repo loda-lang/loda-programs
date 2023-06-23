@@ -9,5 +9,4 @@ lpb $0
   pow $0,3
 lpe
 seq $0,183226 ; Sum of digits of (2^n) in base 5, also sum of digits of (10^n) in base 5.
-mul $0,5
-div $0,20
+div $0,4

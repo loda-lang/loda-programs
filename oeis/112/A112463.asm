@@ -10,8 +10,13 @@ lpb $4
   sub $0,$4
   mov $3,$0
   add $3,1
+  mov $7,$0
+  add $7,7
   mov $0,$3
-  seq $0,27823 ; a(n) = 77*(n+1)*binomial(n+6,11).
+  add $0,11
+  bin $0,11
+  mul $0,$7
+  mul $0,77
   mov $2,2
   mul $2,$3
   mul $2,$0

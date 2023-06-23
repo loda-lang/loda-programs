@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,307641 ; Triangle T(i,j=1..i) read by rows which contain the naturally ordered prime-or-one factorization of the row number i.
+  seq $3,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
+  add $3,1
+  trn $3,2
+  seq $3,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
   mov $5,$3
   add $3,$4
   sub $3,1

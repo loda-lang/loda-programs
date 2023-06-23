@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,82304 ; McKay-Thompson series of class 16d for the Monster group.
+  seq $2,29839 ; McKay-Thompson series of class 16B for the Monster group.
   add $4,4
   add $1,$2
   mov $3,$4

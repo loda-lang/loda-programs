@@ -5,11 +5,16 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $6,1
   mov $3,$1
   seq $3,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
-  gcd $3,256
-  max $5,$3
+  lpb $3
+    dif $3,2
+    mul $6,2
+  lpe
+  max $5,$6
   add $1,1
+  mov $3,$6
   div $3,$5
   sub $0,$3
   mov $4,$0

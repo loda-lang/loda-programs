@@ -3,5 +3,17 @@
 
 mov $1,2
 max $1,$0
-seq $1,323231 ; A(n, k) = [x^k] (1/(1-x) + x/(1-x)^n), square array read by descending antidiagonals for n, k >= 0.
+lpb $1
+  add $3,1
+  sub $1,$3
+lpe
+sub $3,1
+sub $1,$3
+sub $3,1
+max $3,$1
+add $1,$3
+mov $2,$3
+bin $2,$1
+mov $1,$2
+add $1,1
 mov $0,$1

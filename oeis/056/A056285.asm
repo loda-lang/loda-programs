@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,1118 ; Differences of 0; labeled ordered partitions into 5 parts.
+  seq $0,1118 ; Number of labeled ordered set partitions into 5 parts for n>=1, a(0)=1.
   add $3,$0
 lpe
 div $3,$1

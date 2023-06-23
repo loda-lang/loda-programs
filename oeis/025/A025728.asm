@@ -23,8 +23,8 @@ lpb $3
       add $0,$7
       sub $0,1
       mov $2,$0
-      mul $2,578
-      div $2,648
+      mul $2,289
+      div $2,324
       mov $4,$2
       mov $8,$7
       lpb $8

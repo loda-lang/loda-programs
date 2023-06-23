@@ -1,13 +1,14 @@
 ; A359152: a(n) = 1 if n is a number of the form 4u+3 with an odd number of prime factors (counted with multiplicity), otherwise 0.
 ; Submitted by ChelseaOilman
 ; 0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = (gcd(A129283(n+1),A106611(n)+n+1)-1)%2
 
 mov $1,$0
 add $1,1
-seq $0,106611 ; a(n) = numerator of n/(n+10).
+dif $0,2
 add $0,$1
-seq $1,129283 ; (Arithmetic derivative of n) + n.
+mov $2,$1
+seq $2,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+add $1,$2
 gcd $1,$0
 mov $0,$1
 sub $0,1

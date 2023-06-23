@@ -5,7 +5,7 @@
 add $0,1
 mul $0,2
 mov $1,$0
-seq $0,337302 ; Number of X-based filling of diagonals in a diagonal Latin square of order n with fixed main diagonal.
+seq $0,337302 ; Number of X-based filling of diagonals in a diagonal Latin square of order n with the main diagonal in ascending order.
 lpb $1
   sub $1,1
   div $0,2

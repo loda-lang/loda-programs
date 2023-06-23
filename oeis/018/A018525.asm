@@ -1,5 +1,5 @@
 ; A018525: Divisors of 572.
-; Submitted by gemini8
+; Submitted by Facultad de Derecho
 ; 1,2,4,11,13,22,26,44,52,143,286,572
 
 mov $1,1
@@ -10,7 +10,6 @@ lpb $0
   add $3,$1
   mov $1,988
   lpb $3
-    add $1,3
     add $2,1
     mov $4,572
     gcd $4,$2

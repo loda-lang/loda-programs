@@ -1,16 +1,13 @@
 ; A329008: a(n) = p(0,n), where p(x,n) is the strong divisibility sequence of polynomials based on sqrt(3) as in A327321.
-; Submitted by Jamie Morken(s1)
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,7,5,61,91,547,205,4921,7381,44287,33215,398581,597871,3587227,672605,32285041,48427561,290565367,217924025,2615088301,3922632451,23535794707,8825923015,211822152361,317733228541,1906399371247,1429799528435,17157594341221
 
-max $0,1
 add $0,1
-mov $2,-2
-pow $2,$0
-mov $1,6
+mov $1,3
 pow $1,$0
-sub $1,$2
+add $1,1
+div $1,4
 mov $0,$1
-div $0,32
 lpb $0
   dif $0,2
 lpe

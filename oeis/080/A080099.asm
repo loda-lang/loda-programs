@@ -3,7 +3,7 @@
 ; 0,0,1,0,0,2,0,1,2,3,0,0,0,0,4,0,1,0,1,4,5,0,0,2,2,4,4,6,0,1,2,3,4,5,6,7,0,0,0,0,0,0,0,0,8,0,1,0,1,0,1,0,1,8,9,0,0,2,2,0,0,2,2,8,8,10,0,1,2,3,0,1,2,3,8,9,10,11,0,0,0,0,4,4,4,4,8,8,8,8,12,0,1,0,1,4,5,4,5,8
 
 mov $2,$0
-seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 mov $4,1
 seq $0,3056 ; n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
 mov $5,$0

@@ -4,9 +4,16 @@
 
 lpb $0
   mov $1,$0
-  trn $1,1
-  seq $1,306174 ; a(n) = (prime(n)^6 - 1)/504.
+  add $1,3
+  mov $2,$1
+  seq $2,40 ; The prime numbers.
+  pow $2,6
   mov $0,0
+  mov $1,$2
+  mul $1,6
+  sub $1,10629360
+  div $1,3024
+  add $1,3515
 lpe
 mov $0,$1
 mul $0,59295096

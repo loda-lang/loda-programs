@@ -7,8 +7,11 @@ bin $3,2
 mov $2,$0
 lpb $2
   sub $2,1
+  mov $4,$3
+  seq $4,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
   mov $0,$3
-  seq $0,181538 ; T(n, k) = sum_(1 <= j <= k) [j | k] j mu(k / j) gcd(n, k), triangle read by rows.
+  seq $0,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
+  mul $0,$4
   add $1,$0
   add $3,1
 lpe

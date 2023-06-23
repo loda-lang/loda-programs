@@ -1,11 +1,20 @@
 ; A195539: Numerators b(n) of Pythagorean approximations b(n)/a(n) to sqrt(8).
 ; Submitted by Jon Maiga
 ; 12,35,408,1189,13860,40391,470832,1372105,15994428,46611179,543339720,1583407981,18457556052,53789260175,627013566048,1827251437969,21300003689580,62072759630771,723573111879672,2108646576008245,24580185800219268
-; Formula: a(n) = A041011(2*n+3)*gcd(n,2)
 
+mov $4,1
 mov $1,$0
 mul $1,2
-add $1,3
-seq $1,41011 ; Denominators of continued fraction convergents to sqrt(8).
+add $1,4
+lpb $1
+  sub $1,1
+  mul $3,2
+  add $3,$4
+  mov $4,$2
+  mov $2,$3
+  dif $3,2
+  mov $5,$3
+  mov $3,$2
+lpe
 gcd $0,2
-mul $0,$1
+mul $0,$5
