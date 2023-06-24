@@ -12,7 +12,19 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $0,4
-  seq $0,919 ; a(n) = 4^n - C(4,3)*3^n + C(4,2)*2^n - C(4,1).
+  mov $5,4
+  pow $5,$0
+  mov $7,2
+  pow $7,$0
+  mov $6,3
+  pow $6,$0
+  sub $6,$7
+  mov $0,$6
+  mul $0,3
+  sub $5,1
+  sub $5,$0
+  mov $0,$5
+  mul $0,4
   mul $1,$0
   add $3,$1
 lpe

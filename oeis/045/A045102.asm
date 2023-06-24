@@ -1,4 +1,4 @@
-; A045102: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 3 and 2, respectively.
+; A045102: Numbers whose base-4 representation contains exactly three 1's and two 2's.
 ; Submitted by [TA]crashtech
 ; 346,358,361,406,409,421,598,601,613,661,1114,1126,1129,1174,1177,1189,1306,1318,1321,1354,1378,1384,1387,1390,1402,1414,1417,1426,1432,1435,1438,1441,1444,1447,1453,1462,1465,1498
 

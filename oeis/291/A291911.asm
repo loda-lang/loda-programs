@@ -1,18 +1,16 @@
 ; A291911: Number of 5-cycles in the n X n rook complement graph.
-; Submitted by Christian Krause
+; Submitted by Rodney Duane
 ; 0,0,36,3456,77040,800640,5265540,25514496,99320256,327836160,951285060,2488844160,5980596336,13384215936,28197301860,56398325760,107825391360,198142765056,351580800996,604675808640,1011282960240,1649187872640,2628701385156
-; Formula: a(n) = 36*((binomial(n^2,2)*(n^2-1)*(-n^2+binomial(n^2,2)+3))/90)
+; Formula: a(n) = 36*((binomial(-n^2+1,2)*(n^2-1)*(-n^2+binomial(-n^2+1,2)+3))/90)
 
-mov $1,$0
 pow $0,2
 sub $0,1
-mov $3,$1
-pow $3,2
-bin $3,2
-mov $2,$3
-add $3,2
-sub $3,$0
-mul $2,$3
+sub $1,$0
+bin $1,2
+mov $2,$1
+add $1,2
+sub $1,$0
+mul $2,$1
 mul $0,$2
 div $0,90
 mul $0,36

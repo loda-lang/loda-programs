@@ -1,19 +1,15 @@
 ; A010196: Continued fraction for sqrt(137).
-; Submitted by WyerByter
+; Submitted by Soulfly
 ; 11,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1,2,2,1,22,1,2,2,1,1
-; Formula: a(n) = A128309(A010135((4*n+1)/3)-1)/2, a(1) = 1, a(0) = 11
+; Formula: a(n) = A128309(A010135((4*n+1)/3)-1)/2
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$3
-  add $2,1
-  div $2,3
-  seq $2,10135 ; Continued fraction for sqrt(45).
-  mov $1,$2
-  sub $1,1
-  seq $1,128309 ; a(n) = 2*A000069(n).
-  div $1,2
-  add $3,4
-lpe
+mov $2,$0
+mul $2,4
+add $2,1
+div $2,3
+seq $2,10135 ; Continued fraction for sqrt(45).
+mov $1,$2
+sub $1,1
+seq $1,128309 ; a(n) = 2*A000069(n).
+div $1,2
 mov $0,$1

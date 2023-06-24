@@ -1,10 +1,25 @@
 ; A132402: Binomial transform of A004524 starting at 1.
 ; Submitted by Jon Maiga
 ; 1,3,7,15,32,70,156,348,768,1672,3600,7696,16384,34784,73664,155584,327680,688256,1442048,3014912,6291456,13106688,27261952,56622080,117440512,243271680,503320576,1040191488,2147483648
-; Formula: a(n) = 2^n+A323225(n)
 
 mov $1,2
 pow $1,$0
-seq $0,323225 ; a(n) = ((2^n*n + i*(1 - i)^n - i*(1 + i)^n))/4, where i is the imaginary unit.
+mov $2,1
+mov $4,$0
+mov $5,1
+lpb $0
+  sub $0,1
+  add $2,$5
+  add $3,2
+  add $3,$0
+  sub $4,$2
+  add $5,1
+  mul $5,2
+  add $5,$4
+  mov $4,$3
+  mul $3,2
+lpe
+mov $0,$5
+div $0,2
 add $1,$0
 mov $0,$1

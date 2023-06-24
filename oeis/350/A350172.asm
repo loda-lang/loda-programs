@@ -9,8 +9,3 @@ lpb $0
 lpe
 seq $0,83375 ; n appears prime(n) times.
 seq $0,7504 ; Sum of the first n primes.
-mul $0,2
-mov $1,$0
-add $1,$0
-mov $0,$1
-div $0,4

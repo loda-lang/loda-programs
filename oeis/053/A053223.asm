@@ -8,7 +8,15 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,53222 ; First differences of sigma(n).
+  mov $7,$0
+  add $7,1
+  mov $8,$7
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $7,$8
+  mov $6,$0
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $6,$7
+  sub $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

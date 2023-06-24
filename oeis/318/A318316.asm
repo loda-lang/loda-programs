@@ -6,10 +6,8 @@
 mov $2,$0
 seq $2,359411 ; a(n) is the number of divisors of n that are both infinitary and exponential.
 seq $0,345222 ; Number of divisors of n with a prime number of divisors.
-mov $3,$2
-add $3,$0
-mov $0,$3
 sub $0,1
+add $0,$2
 mov $1,2
 pow $1,$0
 mov $0,$1

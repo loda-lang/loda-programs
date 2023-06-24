@@ -20,8 +20,7 @@ lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-mul $1,2
-div $1,14
+div $1,7
 div $1,$2
 mov $0,$1
 mod $0,10

@@ -11,8 +11,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,162153 ; Differences between the sum of consecutive composites and the prime that precedes them.
-  mul $1,$0
+  add $0,1
+  mov $5,$0
+  seq $5,54265 ; Sum of composite numbers between successive primes.
+  seq $0,40 ; The prime numbers.
+  sub $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 gcd $3,2

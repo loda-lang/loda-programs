@@ -6,8 +6,13 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,318995 ; Totally additive with a(prime(n)) = n - 1.
+  mov $6,-1
+  pow $6,$5
   mov $3,$1
-  seq $3,321747 ; Sum of coefficients of elementary symmetric functions in the monomial symmetric function of the integer partition with Heinz number n.
+  seq $3,8480 ; Number of ordered prime factorizations of n.
+  mul $3,$6
   cmp $3,2
   sub $0,$3
   add $1,1

@@ -5,6 +5,8 @@
 mov $1,$0
 cmp $1,2
 gcd $1,2
-seq $0,87374 ; Smallest square >= n!.
+add $0,1
+seq $0,55228 ; a(n) = ceiling(sqrt(n!)).
+pow $0,2
 sub $0,2
 add $0,$1

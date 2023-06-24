@@ -4,5 +4,14 @@
 
 mov $1,1
 cmp $1,$0
+mov $2,1
 add $0,$1
-seq $0,95996 ; a(n) = largest divisor of n! that is coprime to n.
+add $0,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+  pow $3,2
+  gcd $3,$2
+lpe
+div $2,$3
+mov $0,$2

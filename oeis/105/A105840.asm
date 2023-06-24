@@ -6,8 +6,15 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  mul $6,-2
   mov $3,$1
-  seq $3,102615 ; Nonprime numbers of order 2.
+  add $3,1
+  div $6,$3
+  sub $3,$6
+  seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
+  sub $3,2
+  seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

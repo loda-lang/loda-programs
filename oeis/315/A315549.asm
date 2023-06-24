@@ -6,28 +6,25 @@ mov $1,$0
 mul $1,5
 add $1,1
 div $1,3
-mov $2,$0
-mov $4,$2
-mov $5,$2
+mov $5,$0
 mul $5,4
-mov $6,$2
+mov $6,$0
+mov $2,$0
 lpb $2
   sub $2,2
-  add $7,7
-  trn $2,$7
-  add $2,$7
+  add $4,7
+  trn $2,$4
+  add $2,$4
   sub $2,4
-  sub $7,1
+  sub $4,1
 lpe
 mul $6,5
-trn $2,1
 add $2,$6
-add $2,1
 max $2,2
 add $2,1
 div $2,3
 add $2,$5
-sub $2,$4
+sub $2,$0
 mov $3,$0
 mul $3,3
 mul $0,6
