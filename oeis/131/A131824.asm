@@ -1,0 +1,21 @@
+; A131824: Main diagonal of triangle A131823: a(n) = A131823(n,n) for n>=0.
+; Submitted by [AF>Libristes] Dudumomo
+; 1,1,2,7,24,86,316,1177,4424,16744,63724,243618,934870,3598960,13892776,53756263,208434024,809658440,3150218032,12274694280,47890456576,187068828772,731511810152,2863308366462,11217762520246,43984983838966
+
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  add $1,$4
+  seq $0,1285 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and 2's.
+  dif $0,-2
+  bin $1,$4
+  mul $1,$0
+  add $3,$1
+lpe
+mov $0,$3
