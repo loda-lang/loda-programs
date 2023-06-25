@@ -401,6 +401,7 @@ A188017: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 A188039: Positions of 0 in A188038; complement of A188040.
 A188302: Positions of 1 in A188300; complement of A188301.
 A188383: Positions of 1 in the zero-one sequence [nr+3r]-[nr]-[3r], where r=1/sqrt(2).
+A188585: Moebius inversion of sequence A000688, the number of factorizations of n into prime powers greater than 1.
 A189021: Apostol's second order Möbius (or Moebius) function mu_2(n).
 A189364: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=sqrt(2), t=(1+sqrt(5))/2.
 A189368: a(n) = n + [n*r/s] + [n*t/s]; r=2, s=sqrt(2), t=sqrt(3).
@@ -475,6 +476,7 @@ A225569: Decimal expansion of Sum_{n>=0} 1/10^(3^n), a transcendental number.
 A225687: a(n) = A030124(n) - n.
 A226123: Number of terms of the form 2^k in Collatz(3x+1) trajectory of n.
 A226133: Integers of the form (pq-1)/24 where p < q are primes.
+A230980: Number of primes <= n, starting at n=0.
 A232324: n(n+1)/2 modulo sigma(n).
 A232437: Numbers whose square is expressible in only one way as x^2+xy+y^2, with x and y > 0.
 A232742: Numbers n for which the largest m such that (m-1)! divides n is a composite.

@@ -1,16 +1,12 @@
 ; A088842: Denominator of the quotient sigma(7n)/sigma(n).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Dave Studdert
 ; 1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,57,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,8,1,1,1,1,1,1,57,1,1
 
 mov $1,1
 add $0,1
 lpb $0
-  mov $2,1
-  lpb $0
-    dif $0,7
-    mul $2,7
-    add $2,1
-  lpe
-  mul $1,$2
+  dif $0,7
+  mul $1,7
+  add $1,1
 lpe
 mov $0,$1

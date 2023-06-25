@@ -1,10 +1,12 @@
 ; A043545: (Maximal base-2 digit of n) - (minimal base-2 digit of n).
-; Submitted by Science United
+; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-add $0,1
+mov $1,1
 lpb $0
-  dif $0,2
+  mul $1,$0
+  div $0,2
 lpe
-min $0,3
-div $0,2
+mov $0,$1
+add $0,1
+mod $0,2

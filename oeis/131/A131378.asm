@@ -1,24 +1,20 @@
 ; A131378: Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1
 
-mov $4,2
-lpb $4
-  sub $4,1
-  sub $1,$2
-  add $0,$4
-  lpb $0
-    sub $0,2
-    div $0,2
-    mul $0,2
-    trn $0,1
-    seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-    add $3,1
+mov $1,1
+mov $2,1
+lpb $0
+  mov $3,$2
+  lpb $3
+    mov $4,$1
+    gcd $4,$2
+    add $5,$4
+    mov $3,$5
   lpe
-  mov $2,$4
-  mul $2,$3
+  sub $0,1
+  mul $1,$2
+  add $2,1
 lpe
-mov $0,$1
-mod $0,2
-add $0,2
+mov $0,$5
 mod $0,2

@@ -1,13 +1,19 @@
 ; A055250: Seventh column of triangle A055249.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 1,9,47,187,630,1898,5282,13866,34831,84575,199977,462973,1053804,2365704,5250660,11543700,25177005,54539205,117456115,251676495,536892146,1140875254,2415947382,5100306062,10737455195,22548620283
-; Formula: a(n) = a(n-1)+A034009(n), a(0) = 1
 
 mov $1,1
+mov $2,6
+add $2,$0
+mov $3,1
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,34009 ; Convolution of A000295(n+2) (n>=0) with itself.
   sub $0,1
-  add $1,$2
+  mul $1,$2
+  sub $2,1
+  add $4,1
+  add $5,$3
+  div $1,$4
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$5
