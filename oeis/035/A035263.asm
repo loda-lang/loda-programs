@@ -1,9 +1,18 @@
 ; A035263: Trajectory of 1 under the morphism 0 -> 11, 1 -> 10; parity of 2-adic valuation of 2n: a(n) = A000035(A001511(n)).
-; Submitted by Cruncher Pete
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1
 
-add $0,1
+mov $2,1
 lpb $0
-  dif $0,4
+  mov $3,$0
+  mul $3,$2
+  div $0,2
+  add $1,$3
+  mul $2,2
+  sub $2,$3
 lpe
+mov $0,$1
+add $0,1
+mod $0,2
+add $0,2
 mod $0,2

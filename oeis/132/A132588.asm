@@ -23,6 +23,4 @@ lpb $3
   cmp $5,$1
   mul $3,$5
 lpe
-mov $1,$6
-gcd $1,$0
-mov $0,$1
+gcd $0,$6

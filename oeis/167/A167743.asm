@@ -5,7 +5,8 @@
 mov $2,$0
 lpb $2
   mov $3,$1
-  seq $3,1227 ; Number of odd divisors of n.
+  seq $3,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+  div $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

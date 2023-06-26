@@ -1,9 +1,15 @@
 ; A092780: Sum(prime(k),k=1..n)^2-1.
 ; Submitted by Simon Strandgaard
 ; 3,24,99,288,783,1680,3363,5928,9999,16640,25599,38808,56643,78960,107583,145160,193599,251000,322623,408320,506943,625680,763875,927368,1123599,1347920,1597695,1879640,2190399,2537648,2958399,3426200
-; Formula: a(n) = (A237589(n)+1)^2-1
+; Formula: a(n) = c(n)^2-1, b(n) = A159477(b(n-1)), b(1) = 5, b(0) = 3, c(n) = b(n-1)+c(n-1), c(1) = 5, c(0) = 2
 
-seq $0,237589 ; Sum of first n odd noncomposite numbers.
+mov $1,2
 add $0,1
+lpb $0
+  sub $0,1
+  add $2,$1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+lpe
+mov $0,$2
 pow $0,2
 sub $0,1

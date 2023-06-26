@@ -1,15 +1,20 @@
 ; A160572: Elements of A160444, pairs of consecutive entries swapped.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,0,1,1,4,2,10,6,28,16,76,44,208,120,568,328,1552,896,4240,2448,11584,6688,31648,18272,86464,49920,236224,136384,645376,372608,1763200,1017984,4817152,2781184,13160704,7598336,35955712,20759040,98232832
+; Formula: a(n) = c(n)/2, b(n) = d(n-2), b(3) = 2, b(2) = 0, b(1) = 2, b(0) = 1, c(n) = d(n-1), c(3) = 2, c(2) = 2, c(1) = 0, c(0) = 2, d(n) = 2*b(n-2)+2*d(n-2), d(3) = 8, d(2) = 2, d(1) = 2, d(0) = 0
 
-mov $1,$0
-mov $2,1
-add $0,5
-mod $0,2
-lpb $1
-  sub $1,2
-  mul $0,-1
-  sub $2,$0
-  add $0,$2
-  mul $2,2
+mov $1,1
+mov $2,-1
+mov $3,2
+lpb $0
+  sub $0,1
+  mov $4,$2
+  add $4,$3
+  mul $4,2
+  mov $2,$1
+  mov $1,$3
+  mov $3,$5
+  mov $5,$4
 lpe
+mov $0,$3
+div $0,2

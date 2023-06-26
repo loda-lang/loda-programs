@@ -9,7 +9,5 @@ add $1,4
 pow $1,2
 add $0,6
 bin $0,5
-mov $2,$1
-mul $2,$0
-mov $0,$2
+mul $0,$1
 div $0,96

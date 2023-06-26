@@ -1,4 +1,4 @@
-; A045068: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 1 and 2, respectively.
+; A045068: Numbers whose base-4 representation contains exactly one 0 and two 3's.
 ; Submitted by arkiss
 ; 51,60,79,115,124,143,179,188,199,203,205,206,211,220,227,236,241,242,244,248,287,303,311,315,317,318,335,371,380,399,435,444,455,459,461,462,467,476,483,492,497,498,500,504,543,559
 

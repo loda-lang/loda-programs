@@ -7,8 +7,12 @@ mov $2,3
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $4,1
+  add $4,$2
   mov $1,$2
-  seq $1,322980 ; a(n) = 1 if n and d(n) are coprime, 0 otherwise. Here d(n) is the number of divisors of n, A000005.
+  seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $1,$4
+  cmp $1,1
   sub $0,$1
   add $2,4
   sub $3,$0

@@ -1,13 +1,11 @@
 ; A245938: Limit-reverse of the Thue-Morse sequence (A010060), with first term as initial block.
+; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1
 
-add $0,26
+add $0,27
 lpb $0
-  sub $0,1
-  add $2,$0
-  dif $0,2
+  add $1,$0
+  div $0,2
 lpe
-sub $1,$2
-gcd $1,2
-sub $1,1
 mov $0,$1
+mod $0,2

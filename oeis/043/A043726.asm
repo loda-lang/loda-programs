@@ -7,7 +7,9 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,268411 ; Parity of number of runs of 1's in binary representation of n.
+  seq $3,88371 ; Position where n is inserted into the n-th row of triangle A088370, where the n-th row differs from the prior row only by the presence of n.
+  sub $3,1
+  mod $3,2
   sub $0,$3
   mov $4,$0
   max $4,0

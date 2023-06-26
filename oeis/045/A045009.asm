@@ -1,4 +1,4 @@
-; A045009: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 4 and 0, respectively.
+; A045009: Numbers whose base-3 representation contains exactly four 0's and no 2's.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 81,244,246,252,270,324,733,739,741,757,759,765,811,813,819,837,973,975,981,999,1053,2200,2218,2224,2226,2272,2278,2280,2296,2298,2304,2434,2440,2442,2458,2460,2466,2512,2514,2520,2538
 

@@ -8,7 +8,8 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,72003 ; 10's complement of final digit of n-th prime.
+  seq $0,40 ; The prime numbers.
+  mod $0,10
   mov $2,$3
   mul $2,$0
   add $1,$2

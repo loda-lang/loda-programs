@@ -4,8 +4,10 @@
 
 lpb $0
   add $1,1
-  mov $2,$0
-  seq $2,134057 ; a(n) = binomial(2^n-1,2).
+  mov $2,2
+  pow $2,$0
+  sub $2,1
+  bin $2,2
   mov $0,$1
   add $3,$2
   add $3,1

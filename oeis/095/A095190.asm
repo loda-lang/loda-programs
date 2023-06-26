@@ -1,13 +1,12 @@
 ; A095190: Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
-; Submitted by Science United
+; Submitted by tosi
 ; 0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,0,0,1,1
 
-mov $1,1
-mov $2,1
-lpb $0
-  div $0,2
-  sub $2,$0
+mov $2,$0
+div $2,2
+lpb $2
+  add $1,$2
+  div $2,2
 lpe
-sub $1,$2
 mov $0,$1
 mod $0,2
