@@ -1,0 +1,13 @@
+; A331599: a(n) = A241909(n) / gcd(A122111(n),A241909(n)).
+; Submitted by Science United
+; 1,1,1,1,1,3,1,1,2,9,1,5,1,27,1,1,1,1,1,25,3,81,1,7,4,243,2,125,1,5,1,1,9,729,2,5,1,2187,27,49,1,25,1,625,1,6561,1,11,8,1,81,3125,1,3,1,343,243,19683,1,35,1,59049,5,1,3,125,1,15625,729,5,1,7,1,177147,2,78125,4,625,1,121,2,531441,1,245,9,1594323,2187,2401,1,21,2,390625,6561,4782969,27,13,1,1,25,25
+; Formula: a(n) = A075159(A006068(A156552(n)))/gcd(A122111(n),A075159(A006068(A156552(n))))
+
+mov $1,$0
+seq $1,156552 ; Unary-encoded compressed factorization of natural numbers.
+seq $1,6068 ; a(n) is Gray-coded into n.
+seq $1,75159 ; Run lengths in the binary expansion of n-1 gives the vector of exponents in prime factorization of a(n), with the least significant run corresponding to the exponent of the least prime, 2.
+seq $0,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
+gcd $0,$1
+div $1,$0
+mov $0,$1
