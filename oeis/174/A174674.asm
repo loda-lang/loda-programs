@@ -6,6 +6,6 @@
 mov $1,$0
 seq $1,137688 ; 2^A003056: 2^n appears n+1 times.
 sub $1,1
-seq $0,154695 ; Generalized Sierpinski-Pascal-MacMahon gasket triangular sequence defined by T(n, m) = (r^(n-m)*q^m + r^m*q^(n-m))*b(n), where b(n) = coefficients of p(x, n) = 2^n*(1-x)^(n+1) * LerchPhi(x, -n, 1/2), and r=2, q=1.
+seq $0,154695 ; Triangular sequence defined by T(n, m) = (r^(n-m)*q^m + r^m*q^(n-m))*b(n), where b(n) = coefficients of p(x, n) = 2^n*(1-x)^(n+1) * LerchPhi(x, -n, 1/2), and r=2, q=1.
 sub $0,1
 sub $0,$1

@@ -1,5 +1,5 @@
 ; A071737: Expansion of (1+x^3*C^3)*C^4, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
-; Submitted by Jamie Morken(w2)
+; Submitted by Science United
 ; 1,4,14,49,172,607,2156,7709,27742,100436,365636,1337866,4917998,18155165,67280520,250215045,933566550,3493585920,13109631540,49318717470,185974763520,702820113918,2661438889896,10097446604434
 
 mov $3,$0
@@ -8,12 +8,21 @@ lpb $5
   sub $5,1
   add $0,$5
   sub $0,1
+  mov $7,4
+  mul $7,$0
+  add $7,4
+  div $7,2
+  mov $8,$7
+  add $8,1
   mov $2,$0
-  max $2,0
-  seq $2,70857 ; Expansion of (1+x*C)*C^4, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
-  mov $4,$2
+  sub $2,2
+  bin $7,$2
+  bin $8,$0
+  sub $8,$7
+  sub $8,$7
+  mov $4,$8
   mov $6,$5
-  mul $6,$2
+  mul $6,$8
   add $1,$6
 lpe
 min $3,1

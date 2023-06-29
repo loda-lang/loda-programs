@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,284694 ; Least prime number appearing in the prime tower factorization of n (when n > 1); a(1) = 1.
+  seq $3,26 ; Mosaic numbers or multiplicative projection of n: if n = Product (p_j^k_j) then a(n) = Product (p_j * k_j).
+  sub $3,1
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   add $3,$4
   gcd $3,2
   sub $0,$3

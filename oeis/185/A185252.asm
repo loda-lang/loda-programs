@@ -4,16 +4,14 @@
 
 max $2,$0
 sub $0,1
-mov $5,$0
+mov $1,$0
 div $0,2
 lpb $0
-  mov $4,$5
+  mov $4,$1
   bin $4,$0
   sub $0,1
   add $3,$4
 lpe
 mov $0,$3
 mul $0,$2
-mov $1,$2
-add $1,$0
-mov $0,$1
+add $0,$2

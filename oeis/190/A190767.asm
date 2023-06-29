@@ -6,8 +6,21 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
+  mov $5,$1
+  mul $5,3
+  add $5,2
+  seq $5,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $5,4
+  sub $5,1
   mov $3,$1
-  seq $3,190766 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),3,0) and [ ]=floor.
+  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $3,4
+  mov $6,1
+  sub $6,$3
+  sub $6,$3
+  sub $6,$3
+  add $6,$5
+  mov $3,$6
   cmp $3,0
   sub $0,$3
   add $1,1

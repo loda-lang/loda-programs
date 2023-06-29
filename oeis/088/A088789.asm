@@ -4,7 +4,24 @@
 
 mov $1,$0
 cmp $1,1
-trn $0,1
-seq $0,100526 ; Number of local binary search trees (i.e., labeled binary trees such that every left child has a smaller label than its parent and every right child has a larger label than its parent) with n vertices such that the root has only one child.
+sub $0,1
+mov $2,1
+mov $5,$0
+sub $5,1
+mov $6,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  div $3,2
+  add $3,1
+  pow $3,$5
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  add $6,$4
+lpe
+mov $0,$6
+mul $0,$2
 add $0,$1
 div $0,2

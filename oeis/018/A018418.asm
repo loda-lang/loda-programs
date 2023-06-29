@@ -1,13 +1,11 @@
 ; A018418: Divisors of 370.
-; Submitted by ThrasherX-17
+; Submitted by Matthias Lehmkuhl
 ; 1,2,5,10,37,74,185,370
 
 mov $2,1
 lpb $0
-  add $4,2
   add $1,2
   pow $1,2
-  sub $1,2
   add $1,$4
   dif $1,2
   mov $3,$0

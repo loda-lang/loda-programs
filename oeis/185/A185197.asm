@@ -1,34 +1,30 @@
 ; A185197: Decimal expansion of 2/Pi^2.
-; Submitted by WTBroughton
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,0,2,6,4,2,3,6,7,2,8,4,6,7,5,5,4,2,8,8,7,7,5,8,9,2,6,4,1,9,4,5,5,2,7,7,8,0,8,7,1,7,5,4,9,3,4,4,4,9,3,0,9,7,6,9,1,2,1,8,0,6,3,7,8,8,3,4,6,2,4,1,9,2,4,4,7,0,8,8,2,3,8,2,4,1,8,5,4,7,8,5,1,2,4,3,6,7,5,2
 
 add $0,1
+mov $1,1
 mov $3,$0
-mul $3,4
+mul $3,7
 lpb $3
-  mul $2,2
-  sub $2,1
   mov $5,$3
-  mul $5,2
-  add $5,1
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  div $1,$0
+  cmp $5,0
+  add $3,$5
+  mov $6,$4
+  div $6,$3
+  add $4,$1
+  add $4,$6
   mul $1,2
-  div $2,$0
+  add $1,$6
+  add $2,$1
   sub $3,1
 lpe
-bin $2,2
-mul $2,4
+div $1,2
 mov $4,10
 pow $4,$0
-pow $1,2
-sub $1,$2
-add $2,$1
+bin $2,2
 div $2,$4
+div $2,$1
 div $1,$2
-sub $4,$1
-mov $0,$4
-sub $0,1
+mov $0,$1
 mod $0,10

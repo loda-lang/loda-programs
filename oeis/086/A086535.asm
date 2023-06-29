@@ -14,7 +14,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,103889 ; Odd and even positive integers swapped.
+  mov $5,-1
+  pow $5,$0
+  add $0,$5
+  add $0,1
   mul $0,$3
   mul $1,$0
   max $3,$1

@@ -4,6 +4,18 @@
 
 add $0,8
 mov $1,$0
-seq $1,193600 ; Indices n such that Padovan(n) < r^n/(2*r+3) where r is the real root of the polynomial x^3-x-1.
-mov $0,$1
-sub $0,17
+mov $2,26
+mov $3,$0
+pow $3,4
+lpb $3
+  sub $3,1
+  mov $4,$2
+  seq $4,109581 ; E.g.f.: x/(1+x-x^3).
+  trn $4,2
+  min $4,1
+  sub $1,$4
+  add $2,1
+  sub $3,$1
+lpe
+mov $0,$2
+sub $0,42

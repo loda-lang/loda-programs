@@ -5,7 +5,7 @@
 lpb $0
   mul $0,4
   add $0,2
-  seq $0,45114 ; Numbers n with property that in base 4 representation the numbers of 1's and 3's are 1 and 0, respectively.
+  seq $0,45114 ; Numbers whose base-4 representation contains exactly one 1 and no 3's.
   div $0,2
   add $0,1
   mod $0,2

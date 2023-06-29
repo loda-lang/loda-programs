@@ -6,7 +6,11 @@ mov $1,$0
 mov $2,$0
 lpb $2
   mov $3,$1
-  seq $3,56968 ; 10^(n-1) modulo n.
+  add $3,1
+  mov $4,10
+  pow $4,$1
+  mod $4,$3
+  mov $3,$4
   min $3,1
   add $1,1
   mul $2,$3

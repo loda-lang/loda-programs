@@ -10,7 +10,12 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $0,105488 ; Number of partitions of {1...n} containing 2 detached pairs of consecutive integers, i.e., partitions in which only 1- or 2-strings of consecutive integers can appear in a block and there are exactly two 2-strings.
+  add $0,2
+  mov $5,$0
+  bin $5,2
+  sub $0,1
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $0,$5
   bin $1,$4
   mul $1,$0
   add $3,$1

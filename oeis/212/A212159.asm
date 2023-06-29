@@ -1,25 +1,10 @@
 ; A212159: a(n) =  (-1)^((prime(n) + 1)/2).
-; Submitted by andrew
+; Submitted by UBT - Mikeejones
 ; 1,-1,1,1,-1,-1,1,1,-1,1,-1,-1,1,1,-1,1,-1,1,1,-1,1,1,-1,-1,-1,1,1,-1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,1,-1,-1,1,1,1,1,-1,-1,1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,1,-1,-1,1,-1,1,-1,-1,1,1,-1,1,1,-1,-1,-1,-1,1,-1,1,-1,1,1,-1,-1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,1
+; Formula: a(n) = binomial(-1,A097932(n)-9)
 
-add $0,1
-mov $2,$0
-mul $2,2
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-mov $0,$2
-div $0,2
+seq $0,97932 ; Positive integers n such that 2n-19 is prime.
+sub $0,9
 mov $1,-1
 bin $1,$0
 mov $0,$1

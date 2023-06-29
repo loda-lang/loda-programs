@@ -1,21 +1,25 @@
 ; A000469: 1 together with products of 2 or more distinct primes.
-; Submitted by gingavasalata
+; Submitted by Science United
 ; 1,6,10,14,15,21,22,26,30,33,34,35,38,39,42,46,51,55,57,58,62,65,66,69,70,74,77,78,82,85,86,87,91,93,94,95,102,105,106,110,111,114,115,118,119,122,123,129,130,133,134,138,141,142,143,145,146,154,155,158,159,161,165,166,170,174,177,178,182,183,185,186,187,190,194,195,201,202,203,205,206,209,210,213,214,215,217,218,219,221,222,226,230,231,235,237,238,246,247,249
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,69158 ; a(n) = Product{d|n} mu(d), product over positive divisors, d, of n, where mu(d) = Moebius function (A008683).
-  cmp $3,1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $1,1
-  mul $2,$4
-  sub $2,1
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,74823 ; a(n) = 2^omega(n)*mu(n)^2.
+  mov $1,10
+  seq $1,286604 ; a(n) = n mod sum of digits of n in factorial base.
+  min $1,$4
+  mov $4,$1
+  mod $4,2
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
 lpe
-mov $0,$1
+mov $0,$2
 add $0,1

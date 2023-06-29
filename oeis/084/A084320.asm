@@ -8,8 +8,13 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  max $0,0
-  seq $0,276208 ; Position of n! in the joint ranking of {2^h} and {k!}, where h >= 0, k >= 0.
+  add $0,1
+  mov $5,$0
+  seq $5,52584 ; E.g.f. (2-4x+x^2)/((1-x)(1-2x)).
+  mov $6,$5
+  seq $6,70939 ; Length of binary representation of n.
+  mov $0,$6
+  sub $0,1
   mov $4,$3
   mul $4,$0
   sub $2,1

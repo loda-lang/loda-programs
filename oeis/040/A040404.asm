@@ -1,7 +1,31 @@
 ; A040404: Continued fraction for sqrt(425).
 ; Submitted by nenym
 ; 20,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1,1,1,1,1,40,1,1
-; Formula: a(n) = A024639(A010143(n))
 
-seq $0,10143 ; Continued fraction for sqrt(58).
-seq $0,24639 ; n written in fractional base 7/2.
+mul $0,4
+add $0,10
+div $0,7
+sub $0,1
+gcd $0,262156
+mul $0,42
+mod $0,13
+add $0,3
+mov $1,$0
+div $1,5
+mul $1,25
+mov $4,1
+div $0,3
+sub $0,26
+add $0,$1
+div $0,4
+add $0,1
+lpb $0
+  mov $3,$0
+  div $0,7
+  mul $0,2
+  mod $3,7
+  mul $3,$4
+  add $2,$3
+  mul $4,10
+lpe
+mov $0,$2

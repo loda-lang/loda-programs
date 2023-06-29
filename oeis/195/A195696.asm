@@ -12,8 +12,6 @@ lpb $3
   max $6,$2
   div $6,$3
   sub $7,$6
-  div $1,2
-  mul $1,2
   mul $2,2
   sub $2,$6
   add $2,$1

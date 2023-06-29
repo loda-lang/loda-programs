@@ -1,13 +1,13 @@
 ; A230980: Number of primes <= n, starting at n=0.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,2,2,3,3,4,4,4,4,5,5,6,6,6,6,7,7,8,8,8,8,9,9,9,9,9,9,10,10,11,11,11,11,11,11,12,12,12,12,13,13,14,14,14,14,15,15,15,15,15,15,16,16,16,16,16,16,17,17,18,18,18,18,18,18,19,19,19,19,20,20,21,21,21,21,21,21,22,22,22,22,23,23,23,23,23,23,24,24,24,24,24,24,24,24,25,25,25
-; Formula: a(n) = a(n-1)+A010051(n-1), a(1) = 0, a(0) = 0
+; Formula: a(n) = (2*A000720(max(n-1,0))+2)/2-1
 
+trn $0,1
+seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+mov $1,$0
+mul $1,2
+add $1,2
+mov $0,$1
+div $0,2
 sub $0,1
-lpb $0
-  mov $1,$0
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $2,$1
-  sub $0,1
-lpe
-mov $0,$2

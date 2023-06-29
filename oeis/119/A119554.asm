@@ -1,9 +1,13 @@
 ; A119554: Binomial(binomial(2*n,n)*n^3,n).
-; Submitted by gemini8
+; Submitted by skildude
 ; 1,2,1128,26098380,16761736856480,258364978850258443800,87778710681918385888581120144,621514851092921197874844123833872380600,88158804906625037415769350785106269545224676306560
-; Formula: a(n) = binomial(A005429(n),n)
+; Formula: a(n) = binomial(binomial(2*n,n)*n^3,n)
 
 mov $1,$0
-seq $1,5429 ; Apéry numbers: n^3*C(2n,n).
+mul $1,2
+mov $2,$0
+pow $2,3
+bin $1,$0
+mul $1,$2
 bin $1,$0
 mov $0,$1

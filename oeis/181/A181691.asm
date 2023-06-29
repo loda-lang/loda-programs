@@ -8,7 +8,8 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,85855 ; Number of 1's in decimal expansion of Fibonacci(n).
+  seq $3,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  seq $3,268643 ; Number of 1's in decimal representation of n.
   sub $3,1
   cmp $3,1
   sub $0,$3

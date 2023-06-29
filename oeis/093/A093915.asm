@@ -6,7 +6,13 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+mov $2,$1
 sub $0,$1
-seq $1,93918 ; a(2k-1)=(2k-1)^2+k, a(2k)=6k^2+k+1: Last term in rows of triangle A093915.
-add $1,$0
-mov $0,$1
+add $1,1
+pow $2,2
+add $2,$1
+add $1,$2
+bin $2,2
+mod $2,$1
+add $2,$1
+add $0,$2

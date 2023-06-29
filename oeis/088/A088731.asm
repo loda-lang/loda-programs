@@ -1,13 +1,11 @@
 ; A088731: Numbers of the form p^p - 3 where p is prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,24,3122,823540,285311670608,302875106592250,827240261886336764174,1978419655660313589123976,20880467999847912034355032910564,2567686153161211134561828214731016126483466
-; Formula: a(n) = (2*A000040(n)^A000040(n)-8)/2+1
+; Formula: a(n) = max(A006005(n),2)^max(A006005(n),2)-3
 
-seq $0,40 ; The prime numbers.
+seq $0,6005 ; The odd prime numbers together with 1.
+max $0,2
 mov $1,$0
 pow $1,$0
 mov $0,$1
-mul $0,2
-sub $0,8
-div $0,2
-add $0,1
+sub $0,3

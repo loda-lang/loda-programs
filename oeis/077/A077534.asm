@@ -1,11 +1,26 @@
 ; A077534: Multiples of 4 using only prime digits (2, 3, 5 and 7).
 ; Submitted by http://kodeks.karelia.ru/
 ; 32,52,72,232,252,272,332,352,372,532,552,572,732,752,772,2232,2252,2272,2332,2352,2372,2532,2552,2572,2732,2752,2772,3232,3252,3272,3332,3352,3372,3532,3552,3572,3732,3752,3772,5232,5252,5272,5332,5352,5372
-; Formula: a(n) = 10*A046034((4*n+3)/3)+2
 
+mov $2,1
 mul $0,4
 add $0,3
 div $0,3
-seq $0,46034 ; Numbers whose digits are primes.
+add $0,1
+lpb $0
+  add $1,$2
+  add $1,$2
+  mov $3,$0
+  sub $0,1
+  div $0,4
+  add $3,3
+  mod $3,4
+  mul $3,$2
+  mul $3,2
+  trn $3,$2
+  add $1,$3
+  mul $2,10
+lpe
+mov $0,$1
 mul $0,10
 add $0,2

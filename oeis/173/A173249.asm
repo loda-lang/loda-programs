@@ -1,9 +1,10 @@
 ; A173249: Partial sums of A000272.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,3,6,22,147,1443,18250,280394,5063363,105063363,2463011054,64380375278,1856540769315,58550453144611,2004745521503986,74062339559431922,2936485391069247715,124376016487663499491
-; Formula: a(n) = b(n)+1, b(n) = n^(n-2)+b(n-1), b(2) = 2, b(1) = 1, b(0) = 0
+; Formula: a(n) = n^(n-2)+a(n-1), a(2) = 3, a(1) = 2, a(0) = 1
 
 mov $1,-1
+mov $3,1
 add $0,1
 lpb $0
   sub $0,1
@@ -14,4 +15,3 @@ lpb $0
   add $1,1
 lpe
 mov $0,$3
-add $0,1

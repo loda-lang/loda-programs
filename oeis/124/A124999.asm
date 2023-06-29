@@ -1,21 +1,19 @@
 ; A124999: Number of base 5 circular n-digit numbers with adjacent digits differing by 3 or less.
-; Submitted by Vato
+; Submitted by [AF>Libristes] Dudumomo
 ; 1,5,23,101,467,2165,10055,46709,216995,1008101,4683383,21757829,101081459,469599317,2181641639,10135364501,47086382915,218751625157,1016265649367,4721317472933,21934066839827,101900219778101,473403079631879,2199312977861813
-; Formula: a(n) = 4*b(n)+2*d(n)+1, b(n) = c(n-1)+max(3*b(n-1)+c(n-1)-1,0)+1, b(2) = 5, b(1) = 1, b(0) = 0, c(n) = max(3*b(n-1)+c(n-1)-1,0)+1, c(2) = 4, c(1) = 1, c(0) = 0, d(n) = c(n-1), d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = 2*d(n)+1, b(n) = 6*c(n-1)+b(n-1), b(2) = 17, b(1) = 5, b(0) = -1, c(n) = 3*c(n-1)+b(n-1), c(2) = 11, c(1) = 2, c(0) = 1, d(n) = 3*c(n-1)+b(n-1), d(2) = 11, d(1) = 2, d(0) = 0
 
+mov $1,-1
+mov $2,1
 lpb $0
   sub $0,1
-  mul $1,3
-  add $1,$2
-  mov $3,$2
-  mov $2,$1
-  trn $2,1
-  add $2,1
-  mov $1,$3
+  mul $2,3
+  mov $3,$1
+  mov $1,$2
+  add $2,$3
+  mov $4,$2
   add $1,$2
 lpe
-add $3,$1
-add $3,$1
-mov $0,$3
+mov $0,$4
 mul $0,2
 add $0,1
