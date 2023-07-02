@@ -8,8 +8,18 @@ add $2,3
 pow $2,2
 lpb $2
   add $5,1
-  mov $3,$1
-  seq $3,15126 ; Least k such that phi(k) = phi(n).
+  mov $6,$1
+  add $6,1
+  dif $6,2
+  sub $6,1
+  seq $6,62570 ; a(n) = phi(2*n).
+  mov $3,$6
+  sub $3,1
+  seq $3,61026 ; Smallest number m such that phi(m) is divisible by n, where phi = Euler totient function A000010.
+  mul $3,2
+  sub $3,2
+  div $3,2
+  add $3,1
   div $3,$5
   add $3,$4
   sub $3,1

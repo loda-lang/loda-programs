@@ -6,7 +6,14 @@ mov $2,$0
 mul $2,10
 lpb $2
   mov $3,$1
-  seq $3,342877 ; a(n) = 1 if the average distance between consecutive first n primes is greater than that of the first n-1 primes, otherwise a(n) = 0, for n > 2.
+  add $3,1
+  mov $5,$3
+  seq $3,40 ; The prime numbers.
+  seq $5,141042 ; Product of n and the n-th gap between primes: a(n) = n*A001223(n).
+  sub $5,$3
+  mov $3,$5
+  mod $3,2
+  add $3,1
   mul $3,$0
   cmp $3,0
   sub $0,$3

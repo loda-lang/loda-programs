@@ -7,7 +7,6 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
-  max $2,0
   mul $2,2
   add $2,1
   mov $5,$2

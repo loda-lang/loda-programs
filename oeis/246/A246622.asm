@@ -6,8 +6,10 @@ mov $2,$0
 add $2,18
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,51801 ; Product of the nonzero digits of n.
   mov $3,$1
-  seq $3,63114 ; n + product of nonzero digits of n.
+  add $3,$6
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

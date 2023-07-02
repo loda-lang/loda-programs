@@ -7,8 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
-  mov $6,$1
-  seq $6,46933 ; Number of composites between successive primes.
+  mov $7,$1
+  seq $7,40 ; The prime numbers.
+  seq $7,13632 ; Difference between n and the next prime greater than n.
+  mov $6,$7
+  sub $6,1
   mov $3,$1
   seq $3,152117 ; a(n) = n*(n-th prime) + (n+1)*((n+1)-th prime).
   sub $3,1

@@ -9,7 +9,8 @@ lpb $3
   mov $0,$2
   add $0,$3
   max $0,0
-  seq $0,6094 ; Products of 2 successive primes.
+  seq $0,40 ; The prime numbers.
+  seq $0,13636 ; n*nextprime(n).
   add $1,$0
   sub $1,1
 lpe

@@ -26,4 +26,4 @@ lpb $0
   mul $1,$5
 lpe
 mov $0,$1
-gcd $0,$0
+gcd $0,$1

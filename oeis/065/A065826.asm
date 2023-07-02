@@ -4,7 +4,7 @@
 ; Formula: a(n) = ((A176200(n)+1)*(A002262(n)+1))/2
 
 mov $1,$0
-seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 add $0,1
 seq $1,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
 add $1,1

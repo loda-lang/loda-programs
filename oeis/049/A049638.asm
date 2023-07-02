@@ -5,5 +5,19 @@
 mov $1,$0
 add $1,1
 div $1,2
-seq $0,49637 ; Congruent to 2, 3, 6, 8, 10 or 12 mod 13, but not equal to 3.
+add $0,1
+mov $2,$0
+lpb $2
+  mov $3,$2
+  mul $3,2
+  mov $4,$3
+  mov $2,1
+  div $3,2
+  div $4,3
+  add $4,$3
+  div $3,2
+  add $3,$4
+lpe
+mov $0,$3
+add $0,2
 add $0,$1

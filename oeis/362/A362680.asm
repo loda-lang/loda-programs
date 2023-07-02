@@ -8,6 +8,8 @@ add $0,4
 lpb $0
   sub $0,$2
   add $1,$0
-  seq $2,183199 ; Least integer k such that Floor(k*f(n+1)>k*f(n), where f(n)=(n^2)/(1+n^2).
+  add $2,1
+  pow $2,2
+  add $2,2
 lpe
 mov $0,$1

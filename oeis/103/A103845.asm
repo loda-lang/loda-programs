@@ -1,11 +1,18 @@
 ; A103845: Product of first n Lucas numbers, plus one.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,2,4,13,85,925,16633,482329,22669417,1722875617,211913700769,42170826452833,13579006117811905,7074662187380001985,5963940223961341672513,8134814465483270041306369
+; Formula: a(n) = e(n)+1, b(n) = b(n-1)+b(n-2), b(3) = 7, b(2) = 4, b(1) = 3, b(0) = 1, c(n) = c(n-1)*(b(n-1)+d(n-1)), c(3) = 84, c(2) = 12, c(1) = 3, c(0) = 1, d(n) = b(n-1), d(3) = 4, d(2) = 3, d(1) = 1, d(0) = 2, e(n) = c(n-1), e(3) = 12, e(2) = 3, e(1) = 1, e(0) = 0
 
+mov $1,1
+mov $2,1
+mov $3,2
 lpb $0
-  mov $1,$0
-  seq $1,70825 ; One half of product of first n+1 Lucas numbers A000032.
-  mov $0,0
+  sub $0,1
+  mov $5,$1
+  add $1,$3
+  mov $3,$5
+  mov $4,$2
+  mul $2,$1
 lpe
-mov $0,$1
+mov $0,$4
 add $0,1

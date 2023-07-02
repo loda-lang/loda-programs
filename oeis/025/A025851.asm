@@ -7,4 +7,4 @@ mov $1,$0
 mod $1,2
 add $0,$1
 add $0,$1
-seq $0,25877 ; Expansion of 1/((1-x^5)(1-x^6)(1-x^8)).
+seq $0,25877 ; Expansion of 1/((1-x^5)*(1-x^6)*(1-x^8)).

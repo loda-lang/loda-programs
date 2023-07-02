@@ -1,11 +1,20 @@
 ; A346306: Position in A076478 of the binary complement of the n-th word in A076478.
-; Submitted by SkyHighWeFly
+; Submitted by rboden
 ; 2,1,6,5,4,3,14,13,12,11,10,9,8,7,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89
-; Formula: a(n) = (2*A054429(n+1)-4)/2+1
 
 add $0,1
-seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
 mul $0,2
-sub $0,4
-div $0,2
-add $0,1
+mov $1,1
+mov $2,$0
+add $0,3
+lpb $0
+  div $0,2
+  mul $1,2
+lpe
+sub $2,$1
+mul $2,2
+add $0,$1
+sub $0,$2
+mul $0,2
+sub $0,24
+div $0,8

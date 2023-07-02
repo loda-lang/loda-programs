@@ -12,9 +12,16 @@ lpb $4
   mov $1,$0
   bin $1,$0
   sub $0,$1
-  seq $0,348036 ; a(n) = gcd(n, A003968(n)), where A003968 is multiplicative with a(p^e) = p*(p+1)^(e-1).
+  mov $7,$0
+  add $7,1
+  mov $8,$0
+  seq $0,3968 ; Möbius transform of A003959.
+  sub $0,1
+  sub $0,$8
+  mov $6,$0
+  gcd $6,$7
   mov $5,$2
-  pow $5,$0
+  pow $5,$6
   mul $1,$5
   add $3,1
   add $3,$1

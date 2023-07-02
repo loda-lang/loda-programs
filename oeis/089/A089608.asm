@@ -1,9 +1,16 @@
 ; A089608: a(n) = ((-1)^(n+1)*A002425(n)) modulo 6.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,1,1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,1,1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,1,1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,1,1,5,1,1,1,5,1,5,1,5,1,1,1,5,1,5,1,5,1,1
-; Formula: a(n) = 4*(A036577(n)%2)+1
 
-seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+mov $2,1
+lpb $0
+  add $3,$0
+  div $0,2
+  mul $2,$3
+  mov $3,0
+  add $1,$2
+lpe
+mov $0,$1
 mod $0,2
 mul $0,4
 add $0,1

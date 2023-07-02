@@ -6,9 +6,6 @@
 seq $0,72668 ; Numbers one less than composite numbers.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,3
-mov $1,2
-add $1,$0
-mov $0,$1
-sub $0,8
+sub $0,6
 div $0,6
 add $0,1

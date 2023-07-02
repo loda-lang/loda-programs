@@ -12,8 +12,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
-  seq $0,50369 ; Number of ordered factorizations of n into 2 kinds of 2, 3 kinds of 3, ...
+  mov $5,$0
+  seq $0,74206 ; Kalmár's [Kalmar's] problem: number of ordered factorizations of n.
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

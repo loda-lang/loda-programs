@@ -5,4 +5,17 @@
 add $0,1
 dif $0,2
 sub $0,1
-seq $0,204939 ; Least k such that n divides A130328(k-1), the k-th difference between numbers of the form 2^(k-1).
+mov $2,$0
+add $0,1
+add $2,4
+pow $2,5
+lpb $2
+  mov $3,$1
+  seq $3,130328 ; Triangle of differences between powers of 2, read by rows.
+  gcd $3,$0
+  add $1,1
+  add $2,$3
+  sub $2,$0
+lpe
+mov $0,$1
+add $0,1

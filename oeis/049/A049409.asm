@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.
+  pow $3,2
+  mov $5,$1
+  add $5,$3
+  add $3,1
+  mul $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

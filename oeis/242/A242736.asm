@@ -5,8 +5,7 @@ seq $0,40 ; The prime numbers.
 lpb $0
   add $1,$0
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,2
-  div $1,16
+  div $1,8
   sub $1,$0
 lpe
 add $1,1

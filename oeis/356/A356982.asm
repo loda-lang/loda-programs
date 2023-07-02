@@ -1,12 +1,10 @@
 ; A356982: Fixed point of the morphism 0->010, 1->000.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Science United
 ; 0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0
 ; Formula: a(n) = (gcd(2*n+1,81)/2)%2
 
-mov $1,$0
-mul $1,2
-add $1,1
-gcd $1,81
-div $1,2
-mov $0,$1
+mul $0,2
+add $0,1
+gcd $0,81
+div $0,2
 mod $0,2

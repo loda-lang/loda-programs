@@ -1,19 +1,15 @@
 ; A039963: The period-doubling sequence A035263 repeated.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Oppie
 ; 1,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0
 
-mov $2,1
 div $0,2
-lpb $0
-  mov $3,$0
-  mul $3,$2
-  div $0,2
-  add $1,$3
-  mul $2,2
-  sub $2,$3
+mov $1,$0
+add $1,1
+lpb $1
+  dif $1,4
+lpe
+lpb $1
+  mod $1,8
 lpe
 mov $0,$1
-add $0,1
-mod $0,2
-add $0,2
 mod $0,2

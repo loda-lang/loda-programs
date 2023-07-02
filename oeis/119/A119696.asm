@@ -4,6 +4,6 @@
 ; Formula: a(n) = A119703(n)*A000108(n)
 
 mov $1,$0
-seq $1,119703 ; n^3*binomial(2*n, n)*Fibonacci(n).
+seq $1,119703 ; a(n) = n^3*binomial(2*n, n)*Fibonacci(n).
 seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
 mul $0,$1

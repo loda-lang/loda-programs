@@ -1,4 +1,4 @@
-; A045196: Numbers n with property that in base 5 representation the numbers of 0's and 3's are 2 and 1, respectively.
+; A045196: Numbers whose base-5 representation contains exactly two 0's and one 3.
 ; Submitted by PDW
 ; 75,128,140,200,253,265,325,376,377,379,380,385,395,400,425,475,503,515,575,633,638,641,642,644,648,653,665,678,690,701,702,704,705,710,720,728,740,753,765,825,878,890,950,1001,1002,1004
 

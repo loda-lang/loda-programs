@@ -4,7 +4,10 @@
 
 lpb $0
   add $1,1
-  seq $2,9191 ; a(n) = gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
+  mov $3,1
+  add $3,$2
+  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  gcd $2,$3
   sub $0,$2
   mov $2,$0
 lpe

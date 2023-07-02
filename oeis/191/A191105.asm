@@ -8,7 +8,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,22843 ; Beatty sequence for e: a(n) = floor(n*e).
+  seq $3,121384 ; a(n) = ceiling(n*e).
+  sub $3,1
   mod $3,3
   div $3,2
   sub $0,$3

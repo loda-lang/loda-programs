@@ -9,7 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,324198 ; a(n) = gcd(n, A276086(n)).
+  mov $4,$0
+  seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+  gcd $0,$4
   mul $0,10
   add $3,$0
 lpe

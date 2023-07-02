@@ -12,13 +12,13 @@ lpb $4
   add $2,1
   lpb $2
     gcd $6,3
-    mov $7,$2
-    div $7,5
-    lpb $7
+    mov $1,$2
+    div $1,5
+    lpb $1
       mov $5,$2
       mod $5,$6
       add $6,2
-      sub $7,$5
+      sub $1,$5
     lpe
     div $2,$6
     pow $2,2
@@ -30,8 +30,4 @@ lpb $4
 lpe
 mov $0,$3
 div $0,2
-add $0,10
-mov $1,1
-add $1,$0
-mov $0,$1
-sub $0,7
+add $0,4

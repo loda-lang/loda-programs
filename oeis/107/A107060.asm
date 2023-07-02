@@ -6,10 +6,7 @@
 mov $1,$0
 seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
 mul $0,5
-mov $2,190
-add $2,$0
-mov $0,$2
-sub $0,210
+sub $0,20
 div $0,20
 add $0,1
 trn $0,2

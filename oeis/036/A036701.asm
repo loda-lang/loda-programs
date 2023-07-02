@@ -10,7 +10,9 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,36695 ; a(n)=number of Gaussian integers z=a+bi satisfying |z|<=n, b>=0.
+  pow $4,2
+  seq $4,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.
+  mul $4,2
   mov $2,$5
   mul $2,$4
   mul $0,$5

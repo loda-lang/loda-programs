@@ -12,7 +12,11 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
-  seq $0,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+  seq $0,72668 ; Numbers one less than composite numbers.
+  mul $0,2
+  sub $0,6
+  div $0,2
+  add $0,4
   add $3,$0
   add $4,$3
 lpe

@@ -11,7 +11,9 @@ lpb $3
   add $0,1
   add $0,$3
   max $0,0
-  seq $0,31215 ; Even-indexed primes: a(n) = prime(2n).
+  mul $0,2
+  add $0,1
+  seq $0,40 ; The prime numbers.
   add $1,$0
 lpe
 mov $0,$1

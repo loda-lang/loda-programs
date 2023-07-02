@@ -5,9 +5,7 @@
 
 mul $0,2
 seq $0,132974 ; Expansion of psi(-q^3) / psi(-q)^3 in powers of q where psi() is a Ramanujan theta function.
-mov $1,3
-mul $1,$0
-mov $0,$1
+mul $0,3
 sub $0,3
 div $0,3
 add $0,1

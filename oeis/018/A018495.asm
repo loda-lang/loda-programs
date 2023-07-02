@@ -5,6 +5,6 @@
 
 seq $0,18257 ; Divisors of 40.
 sub $0,1
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.
 mul $0,2
 add $0,1

@@ -1,4 +1,4 @@
-; A045006: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 3 and 2, respectively.
+; A045006: Numbers whose base-3 representation contains exactly three 0's and two 2's.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 164,168,180,216,251,263,267,299,303,315,407,411,423,459,491,493,497,501,505,507,515,519,531,541,543,549,569,573,585,621,649,651,657,675,746,752,754,764,776,780,788,790,794,798,802
 

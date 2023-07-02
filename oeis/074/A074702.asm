@@ -5,6 +5,17 @@
 mov $2,$0
 add $2,1
 gcd $1,$2
-add $0,2
-seq $0,73701 ; a(n) = n^2*a(n-1)+(-1)^n.
+add $0,3
+lpb $0
+  sub $0,1
+  mov $4,$3
+  pow $4,$6
+  mov $6,2
+  add $3,1
+  mul $5,$4
+  mul $5,-1
+  sub $5,1
+lpe
+gcd $5,$0
+mov $0,$5
 div $0,$1
