@@ -24,8 +24,7 @@ lpb $0
   add $1,$7
   div $1,2
   mov $6,$1
-  mul $1,2
-  div $1,4
+  div $1,2
   add $1,1
   div $6,5
   gcd $6,$1

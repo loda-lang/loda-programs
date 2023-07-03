@@ -8,7 +8,10 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,205120 ; Ordered differences of distinct numbers k*(2^(k-1)).
+  seq $3,130328 ; Triangle of differences between powers of 2, read by rows.
+  mul $3,2
+  seq $3,6520 ; Partial sums of A006519.
+  sub $3,1
   gcd $3,$0
   add $1,1
   add $2,$3

@@ -7,7 +7,14 @@ mov $4,$0
 add $0,$2
 mov $3,1
 div $3,$0
-seq $0,55417 ; Number of points in N^n of norm <= 2.
+mov $5,$0
+add $0,1
+mul $0,2
+bin $5,3
+add $5,$0
+add $5,2
+mul $0,$5
+div $0,8
 add $3,$0
 sub $3,1
 mov $1,$4

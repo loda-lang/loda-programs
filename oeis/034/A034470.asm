@@ -9,7 +9,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,28374 ; Curved numbers: numbers that have only curved digits (0, 2, 3, 5, 6, 8, 9).
+  seq $3,28374 ; Numbers that have only curved digits {0, 3, 6, 8, 9} or digits that are both curved and linear {2, 5}.
   mov $5,$3
   sub $3,1
   seq $3,337174 ; Number of pairs of divisors of n (d1,d2) such that d1 <= d2 and d1*d2 >= n.

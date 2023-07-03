@@ -7,7 +7,15 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,128913 ; a(n) = n*pi(n).
+  trn $3,1
+  seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+  mov $6,$3
+  mul $6,2
+  add $6,2
+  mov $3,$6
+  div $3,2
+  sub $3,1
+  mul $3,$1
   trn $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -8,9 +8,7 @@ trn $0,1
 sub $1,$0
 seq $0,216765 ; Perfect powers (squares, cubes, etc.) plus 1.
 sub $0,1
-mov $2,$0
-mul $2,$0
-mov $0,$2
+pow $0,2
 sub $0,1
 mul $0,$1
 seq $0,71325 ; Number of squares > 1 dividing n.

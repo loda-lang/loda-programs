@@ -4,5 +4,11 @@
 add $0,1
 bin $0,2
 mov $1,$0
-seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
-add $0,$1
+lpb $1
+  mov $3,$1
+  mod $3,10
+  div $1,10
+  mul $2,10
+  add $2,$3
+lpe
+add $0,$2

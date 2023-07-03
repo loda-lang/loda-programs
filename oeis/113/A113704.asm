@@ -1,4 +1,4 @@
-; A113704: Triangular indicator function for divisibility, read by rows.
+; A113704: Triangle read by rows. The indicator function for divisibility, the Moebius matrix.
 ; 1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,0,0,0,1,0,1,1,1,0,0,1,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
 
 lpb $0

@@ -1,14 +1,22 @@
 ; A115356: Matrix (1,x)+(x,x^2) in Riordan array notation.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,0,0,1,0,1,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
 
+mov $2,64
+mul $0,2
 add $0,1
 lpb $0
-  add $1,1
-  sub $0,$1
+  sub $0,1
+  sub $3,$2
+  div $3,4
+  bin $1,$2
+  add $1,$3
+  gcd $1,4
+  mul $2,$1
 lpe
-add $1,1
-sub $1,$0
-bin $1,$0
-mov $0,$1
-cmp $0,1
+div $3,4
+mov $0,$3
+add $0,1
+mod $0,2
+add $0,2
+mod $0,2

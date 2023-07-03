@@ -9,8 +9,7 @@ add $1,1
 dif $0,2
 add $0,2
 lpb $0
-  mul $0,2
-  div $0,8
+  div $0,4
   sub $2,1
   pow $2,$0
   mul $0,4
