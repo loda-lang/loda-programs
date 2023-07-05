@@ -1,7 +1,7 @@
 ; A176268: Primes of a Generalized Cunningham chain of length 9 by the function f(p) = 2 * p + 13.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 3467,6947,13907,27827,55667,111347,222707,445427,890867
-; Formula: a(n) = 174*b(n)-361, b(n) = 2*b(n-1)-2, b(0) = 22
+; Formula: a(n) = 174*b(n+1)-361, b(n) = 2*b(n-1)-2, b(0) = 12
 
 mov $1,12
 add $0,1

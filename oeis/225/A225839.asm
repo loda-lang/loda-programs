@@ -1,12 +1,20 @@
 ; A225839: Triangular numbers representable as triangular(m) + triangular(2m).
-; Submitted by Christian Krause
+; Submitted by waffleironhead
 ; 0,378,17766,39209940,1842032556,4065365016846,190985619471570,421505175637435176,19801770996209306328,43702499616375188919330,2053087220237987679246270,4531162564803507161896556028,212868189148913267563402477956,469799997000254729943383533193910
-; Formula: a(n) = 378*(A333718((6*(n+1))/4-1)/2160)
+; Formula: a(n) = 378*(c(max((3*n+3)/2-1,0))/2160), b(n) = 45*c(n-1)+b(n-1), b(1) = 45, b(0) = 0, c(n) = 45*c(n-1)+b(n-1)+c(n-1), c(1) = 46, c(0) = 1
 
+mov $2,1
 add $0,1
-mul $0,6
-div $0,4
+mul $0,3
+div $0,2
 sub $0,1
-seq $0,333718 ; a(n) = L(8*n+4)/7, where L=A000032 (the Lucas sequence).
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,45
+  add $1,$3
+  add $2,$1
+lpe
+mov $0,$2
 div $0,2160
 mul $0,378

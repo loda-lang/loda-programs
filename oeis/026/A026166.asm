@@ -4,6 +4,16 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,26136 ; Lexicographically earliest permutation of the positive integers such that |a(n)-n| = [a(n)/2].
-add $0,1
+mul $0,2
+mov $2,$0
+lpb $0
+  dif $0,3
+lpe
+mod $0,3
+div $0,2
+gcd $0,3
+div $2,$0
+add $2,1
+mov $0,$2
 sub $0,$1
+add $0,1

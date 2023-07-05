@@ -6,20 +6,18 @@ mov $1,5
 mov $3,$0
 mul $3,4
 lpb $3
-  mov $5,$3
-  cmp $5,0
+  max $3,1
   gcd $7,0
   add $7,$8
-  add $3,$5
   max $6,$2
   div $6,$3
   add $8,$7
   mul $1,2
   add $1,$6
   add $2,$1
+  add $5,$1
   sub $7,$2
   div $7,2
-  add $9,$1
   mul $1,2
   mul $2,2
   sub $3,1
@@ -33,7 +31,7 @@ mov $2,$1
 sub $2,$7
 div $2,$4
 mul $1,2
-add $1,$9
+add $1,$5
 div $1,$2
 mov $0,$1
 mod $0,10

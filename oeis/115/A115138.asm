@@ -8,11 +8,13 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,1
-  seq $0,64062 ; Generalized Catalan numbers C(2; n).
+  sub $0,1
+  mov $5,$0
+  max $5,0
+  seq $5,62992 ; Row sums of unsigned triangle A062991.
+  mov $0,$5
   mov $4,$3
-  mul $4,$0
+  mul $4,$5
   add $2,$4
 lpe
 mul $0,2

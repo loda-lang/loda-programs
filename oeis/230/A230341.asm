@@ -5,6 +5,18 @@
 mov $1,$0
 mul $1,2
 bin $1,$0
-seq $0,230382 ; Number of ascending runs of length n in the permutations of [2n].
-add $0,1
+mov $4,$0
+add $4,1
+mov $2,-1
+mov $3,$0
+mul $3,2
+lpb $0
+  sub $0,1
+  add $4,$2
+  mul $4,$3
+  mul $2,$0
+  sub $3,1
+lpe
+mov $0,$4
 sub $0,$1
+add $0,1

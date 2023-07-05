@@ -659,6 +659,7 @@ A323554: Irregular table read by rows: T(n,k) = (2*k+1)^(-1/5) mod 2^n, 0 <= k <
 A324534: The smallest common prime factor of sigma(n) and A276086(n), or 1 if no such prime exists.
 A325645: "Sloping quinary numbers": write numbers in quinary under each other (right-justified), read diagonals in upward direction, convert to decimal.
 A326188: a(n) = A001065(n) - A003557(n), where A001065(n) = the sum of proper divisors of n, and A003557(n) = n divided by its largest squarefree divisor.
+A327174: a(n) = [(2*n+1)*r] - [(n+1)*r] - [n*r], where [ ] = floor and r = (1+sqrt(5))/2.
 A327203: Positions of 0's in {A327202(n) : n > 0}.
 A327204: Positions of 1's in {A327202(n) : n > 0}.
 A327207: Positions of 1's in {A327205(n) : n > 0}.

@@ -5,11 +5,20 @@
 mov $3,$0
 mov $2,$0
 lpb $2
-  trn $2,1
+  sub $2,1
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $0,8811 ; Expansion of x*(1+x^4)/((1-x)^2*(1-x^4)).
+  mov $5,$0
+  mod $5,4
+  mov $6,$0
+  mul $6,$0
+  mov $7,$5
+  add $7,6
+  add $7,$6
+  div $7,4
+  mov $0,$7
+  sub $0,1
   mul $4,$0
   add $1,$4
 lpe

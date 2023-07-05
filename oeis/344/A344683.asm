@@ -10,7 +10,7 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   sub $0,1
-  seq $0,29935 ; a(n) = Sum phi(d)*phi(n/d); d divides n.
+  seq $0,29935 ; a(n) = Sum_{d divides n} phi(d)*phi(n/d).
   add $3,$0
 lpe
 mov $0,$3

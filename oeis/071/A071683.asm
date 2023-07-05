@@ -4,13 +4,20 @@
 
 mov $2,$0
 mov $3,$0
+mov $4,2
 mov $1,$0
 add $1,1
 mov $0,1
 add $0,$1
-seq $0,14445 ; Even Fibonacci numbers; or, Fibonacci(3*n).
-mul $0,2
-div $0,4
+lpb $0
+  sub $0,1
+  mov $5,$6
+  mul $6,4
+  add $6,$4
+  mov $4,$5
+lpe
+mov $0,$6
+div $0,2
 cmp $3,0
 mul $3,3
 cmp $2,1

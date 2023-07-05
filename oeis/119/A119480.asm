@@ -10,7 +10,9 @@ lpb $2
   mov $3,$1
   add $5,10
   add $1,2
-  seq $3,166306 ; Denominator of Bernoulli_n multiplied by the sum of the associated inverse primes in the Staudt-Clausen theorem, n=1, 2, 4, 6, 8, 10,...
+  mul $3,2
+  trn $3,1
+  seq $3,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
   sub $3,22
   div $3,2
   cmp $3,4

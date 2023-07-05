@@ -4,6 +4,4 @@
 ; Formula: a(n) = A074823(n)^2
 
 seq $0,74823 ; a(n) = 2^omega(n)*mu(n)^2.
-mov $1,$0
-mul $1,$0
-mov $0,$1
+pow $0,2

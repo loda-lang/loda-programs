@@ -5,13 +5,11 @@
 mov $1,1
 mov $3,$0
 lpb $3
-  mov $5,$3
-  cmp $5,0
-  add $3,$5
-  max $6,$2
-  div $6,$3
+  max $3,1
+  max $5,$2
+  div $5,$3
   mul $1,2
-  add $1,$6
+  add $1,$5
   add $2,$1
   sub $3,1
   sub $4,$1

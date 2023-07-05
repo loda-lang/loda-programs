@@ -7,9 +7,7 @@ mov $1,1
 mov $3,$0
 mul $3,7
 lpb $3
-  mov $5,$3
-  cmp $5,0
-  add $3,$5
+  max $3,1
   mov $6,$4
   div $6,$3
   add $4,$1
@@ -22,9 +20,9 @@ lpe
 bin $2,2
 mov $4,10
 pow $4,$0
-sub $7,$2
+sub $5,$2
 div $1,2
-sub $2,$7
+sub $2,$5
 div $2,$4
 div $2,$1
 div $1,$2

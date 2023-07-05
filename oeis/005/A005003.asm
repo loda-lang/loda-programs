@@ -10,7 +10,8 @@ lpb $2
   mov $0,$3
   sub $0,$2
   add $0,2
-  seq $0,186021 ; a(n) = Bell(n)*(2 - 0^n).
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $0,2
   mul $1,3
   add $1,$0
 lpe

@@ -7,7 +7,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,332813 ; a(n) = A048675(n) mod 3.
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $3,1
+  seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+  sub $3,1
+  seq $3,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
+  mod $3,3
   cmp $3,2
   sub $0,$3
   add $1,1

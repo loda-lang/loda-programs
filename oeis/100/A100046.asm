@@ -7,12 +7,10 @@ mov $1,1
 mov $3,$0
 mul $3,8
 lpb $3
-  mov $5,$3
-  cmp $5,0
-  sub $7,$4
-  add $3,$5
+  max $3,1
   max $6,$2
   div $6,$3
+  sub $7,$4
   add $4,$7
   sub $4,$1
   mul $7,2
@@ -20,12 +18,12 @@ lpb $3
   add $1,$6
   add $2,$1
   sub $3,1
-  sub $8,$1
+  sub $5,$1
 lpe
 mov $4,10
 pow $4,$0
 mov $2,1
-sub $2,$8
+sub $2,$5
 div $2,$4
 mov $1,3
 sub $1,$7

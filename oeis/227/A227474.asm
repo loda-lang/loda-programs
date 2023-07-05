@@ -18,7 +18,5 @@ lpb $1
 lpe
 gcd $4,$2
 div $2,$4
-mov $1,$2
-mul $1,$0
-mov $0,$1
+mul $0,$2
 div $0,27

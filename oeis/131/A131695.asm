@@ -1,7 +1,16 @@
 ; A131695: a(n) = 0 iff 2*prime(n+1) = prime(n) + prime(n+2), otherwise a(n) = 1.
-; Submitted by shiva
+; Submitted by Science United
 ; 1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = gcd(A079054(n),A079054(n))
 
-seq $0,79054 ; a(n) = -1 if the closest prime to prime(n) is prime(n-1); = 1 if the closest prime to prime(n) is prime(n+1); = 0 if prime(n-1) and prime(n+1) are equally close to prime(n).
-gcd $0,$0
+mov $1,$0
+mov $2,33
+lpb $2
+  sub $2,1
+  mov $3,$1
+  seq $3,219194 ; a(n) = max(A218075(n+1), A218075(n)) / min(A218075(n+1), A218075(n)).
+  sub $3,1
+  sub $1,$0
+  add $2,$3
+lpe
+mov $0,$2
+sub $0,32

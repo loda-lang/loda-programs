@@ -1,8 +1,21 @@
 ; A271974: Let p = prime(n): if p mod 4 == 1 then a(n) = (1+p)/2 otherwise if p mod 4 == 3 then a(n) = (1-p)/2.
 ; Submitted by Jon Maiga
 ; -1,3,-3,-5,7,9,-9,-11,15,-15,19,21,-21,-23,27,-29,31,-33,-35,37,-39,-41,45,49,51,-51,-53,55,57,-63,-65,69,-69,75,-75,79,-81,-83,87,-89,91,-95,97,99,-99,-105,-111,-113,115,117,-119,121,-125,129,-131,135,-135,139,141,-141,147,-153,-155,157,159,-165,169,-173,175,177,-179,-183,187,-189,-191,195,199,201,205
+; Formula: a(n) = (b(n+1)*(-((81*b(n+1))%4)+2)+1)/2, b(n) = A151800(b(n-1)+1), b(0) = 1
 
+mov $3,1
 add $0,1
-seq $0,73579 ; Signed primes: if prime(n) even, a(n) = 0; if prime(n) == 1 (mod 4), a(n) = prime(n); if prime(n) == -1 (mod 4), a(n) = -prime(n).
+lpb $0
+  sub $0,1
+  add $3,1
+  seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
+lpe
+mov $1,81
+mul $1,$3
+mod $1,4
+mov $2,2
+sub $2,$1
+mul $2,$3
+mov $0,$2
 add $0,1
 div $0,2
