@@ -247,6 +247,7 @@ A082061: Greatest common prime-divisor of n and phi(n)=A000010(n); a(n)=1 if no 
 A082389: a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
 A082447: a(n) = the number k such that s(k)=0 where s(0)=n and s(i)=s(i-1)-(s(i-1) modulo i).
 A083399: Number of divisors of n that are not divisors of other divisors of n.
+A084820: Numbers n such that n, sigma(n) and phi(n) form an integer triangle, where sigma=A000203 is the divisor sum and phi=A000010 the totient.
 A085002: a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
 A085003: Partial sums of A085002.
 A085263: Number of ways to write n as the sum of a squarefree number (A005117) and a positive square (A000290).
@@ -263,6 +264,7 @@ A089090: a(n) is the smallest composite number coprime to n.
 A089809: Complement of A078588.
 A090616: Exponent of highest power of 4 dividing n!.
 A090892: Solutions x to equation floor(x*r*floor(x/r)) = floor(x/r*floor(x*r)) when r = sqrt(2).
+A091248: Number of irreducible factors in the factorization of X^n + 1 over GF(2) (counted with multiplicity).
 A091393: a(n) = Product_{ p | n } (1 + Legendre(-3,p) ).
 A091844: a(1) = 4. To get a(n+1), write the string a(1)a(2)...a(n) as xy^k for words x and y (where y has positive length) and k is maximized, i.e., k = the maximal number of repeating blocks at the end of the sequence so far. Then a(n+1) = max(k,4).
 A092436: a(n) = 1/2 + (-1)^n*(1/2 - A010060(floor(n/2))).
