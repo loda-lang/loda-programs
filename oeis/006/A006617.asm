@@ -1,7 +1,7 @@
 ; A006617: Zarankiewicz's problem.
 ; Submitted by damotbe
 ; 6,10,14,19,25,30,36,43,51,57
-; Formula: a(n) = a(n-1)+A108872(n+1), a(0) = 6
+; Formula: a(n) = b(n+1), b(n) = b(n-1)+A108872(n), b(0) = 3
 
 mov $1,3
 add $0,1

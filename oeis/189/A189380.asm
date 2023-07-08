@@ -20,7 +20,6 @@ add $0,2
 div $2,2
 add $2,$0
 mov $0,$2
-sub $0,2
 mul $0,2
-sub $0,1
+sub $0,5
 add $0,$1

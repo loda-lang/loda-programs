@@ -6,9 +6,16 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $7,$1
+  seq $7,40 ; The prime numbers.
   mov $3,$1
-  seq $3,100021 ; a(n) = 3*prime(n) - prime(n+1) - 3.
   add $3,1
+  seq $3,6005 ; The odd prime numbers together with 1.
+  mov $6,$3
+  mov $3,3
+  mul $3,$7
+  sub $3,$6
+  sub $3,2
   trn $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

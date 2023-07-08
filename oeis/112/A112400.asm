@@ -1,4 +1,4 @@
-; A112400: a(n) = sum{p=primes,p|n} mu(b(p,n)), where mu(k) = A008683(k) (the Moebius function) and p^b(p,n) is the highest power of the prime p dividing n.
+; A112400: a(n) = Sum_{p|n, p prime} mu(b(p,n)), where mu(k) = A008683(k) (the Moebius function) and p^b(p,n) is the highest power of the prime p dividing n.
 ; Submitted by ladmo
 ; 0,1,1,-1,1,2,1,-1,-1,2,1,0,1,2,2,0,1,0,1,0,2,2,1,0,-1,2,-1,0,1,3,1,-1,2,2,2,-2,1,2,2,0,1,3,1,0,0,2,1,1,-1,0,2,0,1,0,2,0,2,2,1,1,1,2,0,1,2,3,1,0,2,3,1,-2,1,2,0,0,2,3,1,1,0,2,1,1,2,2,2,0,1,1,2,0,2,2,2,0,1,0,0,-2
 

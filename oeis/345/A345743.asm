@@ -1,10 +1,16 @@
 ; A345743: a(n) = Sum_{k=1..n} n^abs(mu(k)).
 ; Submitted by Jon Maiga
 ; 1,4,9,13,21,31,43,50,57,73,91,100,121,144,169,181,209,222,253,267,301,337,375,392,409,451,469,487,533,581,631,652,705,760,817,841,901,963,1027,1054,1121,1190,1261,1291,1321,1396,1473,1505,1537,1569,1651,1684,1769,1803
-; Formula: a(n) = n*A107079(n+1)+1
 
 mov $1,$0
+mov $2,1
 add $0,1
-seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
+lpb $0
+  trn $0,1
+  mov $3,$0
+  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,$1
 add $0,1

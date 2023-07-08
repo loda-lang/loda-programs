@@ -1,12 +1,11 @@
 ; A057727: 3^(2^n) + 2.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Ralfy
 ; 5,11,83,6563,43046723,1853020188851843,3433683820292512484657849089283,11790184577738583171520872861412518665678211592275841109096963
-; Formula: a(n) = b(n)+2, b(n) = b(n-1)^2, b(0) = 3
+; Formula: a(n) = 3^(2^n)+2
 
-mov $1,3
-lpb $0
-  sub $0,1
-  pow $1,2
-lpe
-mov $0,$1
+mov $1,2
+pow $1,$0
+mov $2,3
+pow $2,$1
+mov $0,$2
 add $0,2

@@ -4,10 +4,7 @@
 ; Formula: a(n) = 2*A097932(n)-16
 
 seq $0,97932 ; Positive integers n such that 2n-19 is prime.
-mov $2,1
-add $2,$0
-mov $0,$2
-sub $0,9
+sub $0,8
 mul $0,-2
 sub $1,$0
 mov $0,$1

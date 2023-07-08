@@ -5,8 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
+  add $6,1
   mov $3,$1
-  seq $3,324933 ; Denominator in the division of n by the product of prime indices of n.
+  seq $3,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
+  mov $5,$3
+  gcd $5,$6
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

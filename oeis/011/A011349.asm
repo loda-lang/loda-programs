@@ -5,7 +5,7 @@
 mov $1,1
 mov $2,1
 mov $3,$0
-mul $3,8
+mul $3,7
 lpb $3
   max $3,1
   mul $1,2

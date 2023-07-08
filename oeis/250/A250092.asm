@@ -1,10 +1,11 @@
 ; A250092: a(n) = binomial( prime(n+4), prime(n) ).
-; Submitted by Jon Maiga
+; Submitted by BlisteringSheep
 ; 55,286,6188,50388,1352078,67863915,265182525,17672631900,202112640600,78378960360,1503232609098,14844575908435,647520696018735,1312251244423350,57963796707857040,31074067324187580,369731787035040,275291011073898820,51705423561053205
-; Formula: a(n) = binomial(A000040(n+4),A000040(n))
+; Formula: a(n) = binomial(A000040(n+4),A182986(n+1))
 
 mov $1,$0
-seq $0,40 ; The prime numbers.
+add $0,1
+seq $0,182986 ; Zero together with the prime numbers (A000040).
 add $1,4
 seq $1,40 ; The prime numbers.
 bin $1,$0

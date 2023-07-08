@@ -1,6 +1,6 @@
-; A210635: Array read by antidiagonals: row n (n >= 1) gives a permutation of the nonnegative integers for rotating an image of width n.
+; A210635: Array read by descending antidiagonals: a(n,w) = ((w - (n mod w) - 1) + n) - (n mod w), n >= 0, w >= 1.
 ; Submitted by Skillz
-; 0,1,1,2,0,2,3,1,3,3,4,2,0,2,4,5,3,1,5,5,5,6,4,2,0,4,4,6,7,5,3,1,7,3,7,7,8,6,4,2,0,6,8,6,8
+; 0,1,1,2,0,2,3,1,3,3,4,2,0,2,4,5,3,1,5,5,5,6,4,2,0,4,4,6,7,5,3,1,7,3,7,7,8,6,4,2,0,6,8,6,8,9,7,5,3,1,9,5,7,9,9,10,8,6,4,2,0,8,4,6,8,10,11,9,7,5,3,1,11,7,11,11,11,11,12,10,8,6,4,2,0,10,6,10,10,10,12
 
 lpb $0
   add $1,1

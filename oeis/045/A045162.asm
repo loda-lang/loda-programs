@@ -1,4 +1,4 @@
-; A045162: Numbers n with property that in base 5 representation the numbers of 0's and 1's are 1 and 1, respectively.
+; A045162: Numbers whose base-5 representation contains exactly one 0 and one 1.
 ; Submitted by Simon Strandgaard
 ; 5,27,28,29,35,40,45,51,55,76,80,101,105,137,138,139,142,143,144,147,148,149,177,178,179,185,190,195,202,203,204,210,215,220,227,228,229,235,240,245,257,258,259,261,266,271,277,278
 
@@ -16,8 +16,7 @@ lpb $2
     mod $5,10
     trn $5,4
     bin $5,2
-    mul $3,2
-    div $3,10
+    div $3,5
     add $4,$5
   lpe
   mov $3,$4

@@ -3,7 +3,7 @@
 ; 0,1,1,2,0,2,3,3,3,3,4,2,0,2,4,5,5,1,1,5,5,6,4,6,0,6,4,6,7,7,7,7,7,7,7,7,8,6,4,6,0,6,4,6,8,9,9,5,5,1,1,5,5,9,9,10,8,10,4,2,0,2,4,10,8,10,11,11,11,11,3,3,3,3,11,11,11,11,12,10,8,10,12,2,0,2,12,10,8,10,12,13,13,9,9,13,13,1,1,13
 
 mov $2,$0
-seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 mov $4,1
 seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 mov $5,$0

@@ -1,8 +1,8 @@
 ; A358691: Gilbreath transform of primes p(2k-1); see Comments.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by zeroFX
 ; 3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = gcd(n/4,743)%10
 
 div $0,4
-cmp $0,0
-mul $0,2
-add $0,1
+gcd $0,743
+mod $0,10

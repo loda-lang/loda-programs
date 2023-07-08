@@ -1,10 +1,27 @@
 ; A040437: Continued fraction for sqrt(459).
-; Submitted by PDW
+; Submitted by [AF>Libristes] Dudumomo
 ; 21,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4,21,4,1,2,2,42,2,2,1,4
-; Formula: a(n) = A040335(3*n)/6+A040335(3*n)
 
 mul $0,3
-seq $0,40335 ; Continued fraction for sqrt(354).
-mov $1,$0
+mov $2,16
+sub $3,$0
+gcd $3,2
+mul $0,4
+pow $0,2
+lpb $0
+  mov $1,$0
+  mul $2,9
+  add $2,6
+  mov $0,0
+  mod $1,10
+  add $1,5
+  div $2,$1
+  sub $2,5
+lpe
+sub $2,7
+mov $0,$2
+gcd $0,18
+mul $3,$0
+mov $0,$3
 div $0,6
-add $0,$1
+add $0,$3

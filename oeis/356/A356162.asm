@@ -2,5 +2,7 @@
 ; Submitted by pututu
 ; 1,1,1,0,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,0,1,0,1,1,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,0,0,1,1,1,1,0,1,0,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,1,1,0,0
 
-seq $0,324198 ; a(n) = gcd(n, A276086(n)).
+mov $1,$0
+seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
+gcd $0,$1
 cmp $0,1

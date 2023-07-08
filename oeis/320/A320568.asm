@@ -12,7 +12,21 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,340793 ; Sequence whose partial sums give A000203.
+  mov $5,$0
+  cmp $5,0
+  mul $5,2
+  add $0,$5
+  mov $7,$0
+  mov $8,$0
+  sub $0,1
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $7,1
+  sub $7,$8
+  mov $6,$0
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $6,$7
+  sub $0,$6
+  add $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

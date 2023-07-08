@@ -8,17 +8,15 @@ mov $3,$0
 mul $3,5
 lpb $3
   mul $2,$3
-  add $1,$2
-  add $2,$1
   cmp $4,0
-  mov $5,$0
   div $5,3
   add $5,$4
-  div $1,$5
-  cmp $4,0
   mul $5,2
+  add $1,$2
+  add $2,$1
   div $2,$5
   sub $3,1
+  cmp $4,0
 lpe
 mov $6,10
 pow $6,$0

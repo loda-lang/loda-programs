@@ -1,9 +1,10 @@
 ; A193509: Number of odd divisors of Omega(n).
-; Submitted by [AF] Kalianthys
+; Submitted by skildude
 ; 0,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,2,1,2,1,2,1,1,1,1,1,1,1,1,1,2,1,2,2,1,1,2,1,2,1,2,1,1,1,1,1,1,1,1,1,1,2,2,1,2,1,2,1,2,1,2,1,1,2,2,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,2,2,1
-; Formula: a(n) = A005811(A004011(A001222(n))/24)
+; Formula: a(n) = A105149(A001222(n))
 
-seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-div $0,24
-seq $0,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+mov $1,$0
+seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+add $2,$1
+seq $2,105149 ; Number of even semiprimes k such that n^2 < k <= (n+1)^2.
+mov $0,$2

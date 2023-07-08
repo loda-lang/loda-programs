@@ -4,4 +4,4 @@
 ; Formula: a(n) = A138757(A006005(n))
 
 seq $0,6005 ; The odd prime numbers together with 1.
-seq $0,138757 ; A007918(A138750(n)) = least prime > n/2 if n=2 (mod 3), > 2n otherwise.
+seq $0,138757 ; a(n) = A007918(A138750(n)), that is, least prime > n/2 if n=2 (mod 3), > 2n otherwise.
