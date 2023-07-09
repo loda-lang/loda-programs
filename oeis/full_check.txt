@@ -13,6 +13,7 @@ A001222: Number of prime divisors of n counted with multiplicity (also called bi
 A001316: Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
 A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
+A001670: n appears n times (n even).
 A001950: Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
 A001952: A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
 A001953: a(n) = floor((n + 1/2) * sqrt(2)).
@@ -30,6 +31,8 @@ A002034: Kempner numbers: smallest positive integer m such that n divides m!.
 A002251: Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
 A002324: Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
 A002808: The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
+A003056: n appears n+1 times. Also the array A(n,k) = n+k (n >= 0, k >= 0) read by antidiagonals. Also inverse of triangular numbers.
+A003057: n appears n - 1 times.
 A003136: Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
@@ -163,9 +166,11 @@ A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A01392
 A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
 A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+A046933: Number of composites between successive primes.
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
 A048865: a(n) is the number of primes in the reduced residue system mod n.
 A048896: a(n) = 2^(A000120(n+1) - 1), n >= 0.
+A049240: Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
 A049345: n written in primorial base.
 A050508: Golden rectangle numbers: n * A007067(n).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
@@ -357,6 +362,7 @@ A141785: Primes of the form -x^2 + 5*x*y + 5*y^2 (as well as of the form 9*x^2 +
 A144611: Sturmian word of slope 2-sqrt(2).
 A147645: Number of distinct Mersenne primes dividing n.
 A147648: Number of distinct even superperfect numbers dividing n.
+A151666: Number of partitions of n into distinct powers of 4.
 A151774: Characteristic function of numbers with binary weight 2 (A018900).
 A152738: a(n) = floor((n^2)/phi).
 A158378: a(1) = 0, a(n) = gcd(A051904(n), A051903(n)) for n >= 2.

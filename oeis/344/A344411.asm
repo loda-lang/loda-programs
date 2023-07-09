@@ -9,8 +9,11 @@ mov $3,$0
 div $3,2
 lpb $3
   sub $3,1
+  mov $5,$1
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $2,$1
-  seq $2,61397 ; Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
+  add $2,1
+  mul $2,$5
   add $4,$2
   mov $0,$4
   add $1,1

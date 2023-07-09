@@ -7,8 +7,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,66301 ; a(n) = 0 if n is squarefree, otherwise 1 + a(n/rad(n)) where rad = A007947 (squarefree kernel).
+  max $5,$1
+  seq $5,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
+  mul $5,2
+  mov $3,$5
+  sub $3,4
+  div $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

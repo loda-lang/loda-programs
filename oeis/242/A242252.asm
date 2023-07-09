@@ -6,10 +6,13 @@ mov $3,1
 mov $2,$0
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,176246 ; a(n) = A001223(n+1) - 1.
-  sub $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $4,$1
+  add $4,1
+  seq $4,40 ; The prime numbers.
+  seq $4,13632 ; Difference between n and the next prime greater than n.
   add $1,1
+  mov $3,$4
+  sub $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 lpe
 mov $0,$3

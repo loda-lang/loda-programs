@@ -9,7 +9,12 @@ lpb $2
   sub $2,7
   mov $3,$1
   add $3,1
-  seq $3,352491 ; n minus the Heinz number of the conjugate of the integer partition with Heinz number n.
+  mov $5,$3
+  seq $5,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  sub $5,1
+  seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,$5
+  add $3,1
   cmp $3,0
   cmp $3,0
   sub $0,$3

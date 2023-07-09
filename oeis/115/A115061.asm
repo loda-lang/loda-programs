@@ -9,7 +9,11 @@ lpb $2
   mov $0,$5
   add $0,$2
   trn $0,1
-  seq $0,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $0,40 ; The prime numbers.
+  mov $6,$0
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$0
+  mov $0,$6
   add $0,4
   div $0,2
   sub $0,2

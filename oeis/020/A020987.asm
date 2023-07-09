@@ -1,20 +1,15 @@
 ; A020987: Zero-one version of Golay-Rudin-Shapiro sequence (or word).
-; Submitted by axels
+; Submitted by 4TX75586Qp61ADs93WEnnQM2vLs4
 ; 0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0
 
-mov $3,0
 lpb $0
   lpb $0
     dif $0,2
   lpe
   div $0,2
-  sub $3,$0
+  sub $1,$0
 lpe
-mod $3,2
-pow $3,$3
-mov $0,$3
-mov $1,$0
-add $1,4
-mov $2,4
-div $2,$1
-mov $0,$2
+mov $0,$1
+mod $0,2
+add $0,2
+mod $0,2

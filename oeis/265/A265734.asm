@@ -5,7 +5,11 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  seq $2,156174 ; Period 5: repeat [1,-1,1,-1,0].
+  add $2,2
+  mul $2,2
+  mod $2,5
+  sub $2,2
+  dif $2,2
   add $0,$2
   add $1,$2
   sub $1,4
