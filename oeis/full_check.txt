@@ -646,6 +646,7 @@ A307743: a(n) = Sum_{k=1..n} A307742(k).
 A317047: Numbers k such that both k and k + 1 are deficient.
 A317048: Numbers k such that both k and k + 2 are consecutive deficient numbers.
 A317108: Numbers missing from A317106.
+A317594: Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 A317621: Numbers missing from A317619.
 A317622: Numbers missing from A317620.
 A317440: Numbers missing from A317438.
