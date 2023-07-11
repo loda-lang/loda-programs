@@ -10,6 +10,7 @@ A000865: Numbers beginning with letter 'o' in English.
 A001132: Primes == +-1 (mod 8).
 A001221: Number of distinct primes dividing n (also called omega(n)).
 A001222: Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+A001223: Prime gaps: differences between consecutive primes.
 A001316: Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
 A001462: Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
 A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
@@ -227,6 +228,7 @@ A073093: Number of prime power divisors of n.
 A073783: First differences of composite numbers.
 A074264: Values of Kolakoski sequence A000002 at positions n = 0 mod 3.
 A074724: Highest power of 3 dividing F(4n) where F(k) is the k-th Fibonacci number.
+A074851: Numbers k such that k and k+1 both have exactly 2 distinct prime factors.
 A074939: Even numbers such that base 3 representation contains no 2.
 A075318: Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the second member of pairs.
 A075802: Characteristic function of perfect powers, A001597.

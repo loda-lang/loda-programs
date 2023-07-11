@@ -1,13 +1,12 @@
 ; A096662: Least nontrivial n-tuply triangular number.
-; Submitted by TankbusterGames
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,6,21,231,26796,359026206,64449908476890321,2076895351339769460477611370186681,2156747150208372213435450937462082366919951682912789656986079991221
-; Formula: a(n) = binomial(a(n-1)+1,2), a(0) = 3
+; Formula: a(n) = binomial(-a(n-1),2), a(0) = 3
 
-mov $1,2
-add $0,1
+mov $1,3
 lpb $0
   sub $0,1
-  add $1,1
+  mul $1,-1
   bin $1,2
 lpe
 mov $0,$1
