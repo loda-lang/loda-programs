@@ -1,13 +1,14 @@
 ; A230847: a(n) = 1 + A054541(n).
-; Submitted by USTL-FIL (Lille Fr)
-; 3,2,3,3,5,3,5,3,5,7,3,7,5,3,5,7,7,3,7,5,3,7,5,7,9,5,3,5,3,5,15,5,7,3,11,3,7,7,5,7,7,3,11,3,5,3,13,13,5,3,5,7,3,11,7,7,7,3,7,5,3,11,15,5,3,5,15,7,11,3,5,7,9,7,7,5,7,9,5,9,11,3,11,3,7,5,7,9,5,3,5,13,9,5,9,5,7
-; Formula: a(n) = max(-n+1,0)+A013632(A000040(max(n-1,0)))+1
+; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; 3,2,3,3,5,3,5,3,5,7,3,7,5,3,5,7,7,3,7,5,3,7,5,7,9,5,3,5,3,5,15,5,7,3,11,3,7,7,5,7,7,3,11,3,5,3,13,13,5,3,5,7,3,11,7,7,7,3,7,5,3,11,15,5,3,5,15,7,11,3,5,7,9,7,7,5,7,9,5,9
+; Formula: a(n) = (2*A105161(A008578(n)-1)-4)/2+2
 
-sub $0,1
-trn $1,$0
-max $0,0
-seq $0,40 ; The prime numbers.
-seq $0,13632 ; Difference between n and the next prime greater than n.
-add $1,$0
+mov $1,$0
+seq $1,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+sub $1,1
+seq $1,105161 ; Difference between n and the second-smallest prime larger than n.
 mov $0,$1
-add $0,1
+mul $0,2
+sub $0,4
+div $0,2
+add $0,2

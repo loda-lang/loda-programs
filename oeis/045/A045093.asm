@@ -1,4 +1,4 @@
-; A045093: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 1 and 3, respectively.
+; A045093: Numbers whose base-4 representation contains exactly one 1 and three 2's.
 ; Submitted by mmonnin
 ; 106,154,166,169,298,394,418,424,427,430,442,490,538,550,553,586,610,616,619,622,634,646,649,658,664,667,670,673,676,679,685,694,697,730,742,745,874,922,934,937,1066,1162,1186,1192
 

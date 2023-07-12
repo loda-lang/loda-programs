@@ -1,11 +1,11 @@
 ; A276596: Least k such that A276502(k) = n.
-; Submitted by fzs600
+; Submitted by Science United
 ; 1,10,100,1000,10000,101,1000000,1001
 
 mov $3,$0
 dif $3,2
 lpb $3
-  sub $3,4
+  sub $3,5
   div $0,2
   mov $1,1
 lpe

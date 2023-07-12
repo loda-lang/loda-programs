@@ -1,7 +1,7 @@
 ; A167440: 5th GegenbauerC polynomial evaluated at powers of 2 (multiplied by 5).
-; Submitted by Stony666
+; Submitted by F14Claude
 ; 2,724,30248,1028176,33390752,1072431424,34349253248,1099427742976,35183701002752,1125894538138624,36028754069301248,1152921161009483776,36893485398640074752,1180591598727178829824,37778931687035301429248
-; Formula: a(n) = 2*((120*binomial(2*2^n+2,5)+2*2^n)/2)
+; Formula: a(n) = 120*binomial(2*2^n+2,5)+2*2^n
 
 mov $2,2
 pow $2,$0
@@ -11,7 +11,5 @@ mul $0,2
 mov $1,$0
 bin $0,5
 mul $0,120
-add $0,$1
 sub $0,2
-div $0,2
-mul $0,2
+add $0,$1

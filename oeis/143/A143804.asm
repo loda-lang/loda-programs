@@ -1,15 +1,24 @@
 ; A143804: Triangle read by rows, thrice the Connell numbers (A001614) - 2.
-; Submitted by Bill F
+; Submitted by Science United
 ; 1,4,10,13,19,25,28,34,40,46,49,55,61,67,73,76,82,88,94,100,106,109,115,121,127,133,139,145,148,154,160,166,172,178,184,190,193,199,205,211,217,223,229,235,241,244,250,256,262,268,274,280,286,292,298
 
-mov $1,$0
-mov $2,1
-mul $0,4
-lpb $1
-  sub $1,$2
-  sub $0,2
-  add $2,1
-lpe
-div $0,2
-mul $0,3
+mov $2,$0
+mul $0,2
 add $0,1
+mov $3,$0
+mul $3,4
+lpb $0
+  mov $1,$3
+  div $1,$0
+  add $0,$1
+  div $0,2
+lpe
+sub $0,1
+div $0,2
+add $0,1
+add $2,9
+mul $2,2
+sub $2,$0
+mov $0,$2
+mul $0,3
+sub $0,50

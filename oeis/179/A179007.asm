@@ -11,7 +11,8 @@ lpb $3
   add $0,1
   add $0,$3
   max $0,0
-  seq $0,146538 ; Even numbers n such that n+3 is not a prime.
+  seq $0,7921 ; Numbers that are not the difference of two primes.
+  sub $0,1
   add $1,$0
 lpe
 mov $0,$1

@@ -27,8 +27,7 @@ mul $0,2
 mul $0,$2
 add $2,1
 mul $0,$2
-mul $0,6
-div $0,24
+div $0,4
 mul $0,5
 mul $0,$1
 div $0,30
