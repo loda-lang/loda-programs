@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,102716 ; source=parameter 0
+  seq $0,7953 ; source=parameter 0
   add $1,$0
 lpe
 mov $0,$1

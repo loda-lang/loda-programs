@@ -10,9 +10,8 @@ lpb $0
   add $3,$2
   div $3,$0
   sub $0,1
-  max $1,2
   add $1,$3
   add $2,1
 lpe
 mov $0,$1
-sub $0,4
+sub $0,2

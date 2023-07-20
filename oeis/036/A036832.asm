@@ -1,5 +1,5 @@
 ; A036832: Schoenheim bound L_1(n,5,4).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 1,5,9,18,26,50,66,113,149,219,273,397,476,659,787,1028,1197,1549,1771,2237,2550,3120,3510,4273,4751,5700,6324,7444,8184,9595,10472,12161,13254,15185,16451,18800,20254,22991,24743,27817,29799,33433,35673,39821,42454
 
 mov $2,1
@@ -18,7 +18,7 @@ lpb $0
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,2131 ; Sum of divisors d of n such that n/d is odd.
+    seq $7,363283 ; Squares (A000290) and (1+squares) (A002522), in increasing order.
     mul $7,$11
     mul $7,$$9
     add $5,1

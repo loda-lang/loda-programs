@@ -1,21 +1,26 @@
 ; A043485: Numbers having one 8 in base 9.
-; Submitted by nenym
+; Submitted by Kotenok2000
 ; 8,17,26,35,44,53,62,71,72,73,74,75,76,77,78,79,89,98,107,116,125,134,143,152,153,154,155,156,157,158,159,160,170,179,188,197,206,215,224,233,234,235,236,237,238,239,240,241,251,260,269,278,287,296,305,314
 
+add $0,2
 mov $2,$0
-add $2,4
-pow $2,2
+sub $0,1
+pow $2,4
 lpb $2
-  add $3,$1
-  seq $3,270034 ; a(n) is the smallest b for which the base-b representation of n contains at least one 8 (or 0 if no such base exists).
-  cmp $3,9
+  mov $4,6
+  mov $3,$1
+  lpb $3
+    mov $5,$3
+    mod $5,9
+    cmp $5,8
+    div $3,9
+    add $4,$5
+  lpe
+  mov $3,$4
+  sub $3,7
+  cmp $3,0
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
-add $0,1

@@ -1,5 +1,5 @@
 add $0,1
-mov $2,70 ; source=parameter 0
+mov $2,42 ; source=parameter 0
 mov $3,$0
 pow $3,5
 lpb $3

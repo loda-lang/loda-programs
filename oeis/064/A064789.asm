@@ -6,7 +6,7 @@
 mov $1,$0
 seq $1,181940 ; a(0)=0, and there are a(n) terms between a(n) and the nearest a(n)+1.
 add $1,$0
-seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 sub $1,$0
 mov $0,$1
 add $0,1

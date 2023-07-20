@@ -1,20 +1,15 @@
 ; A093379: Expansion of x(1-2x-2x^2)/((1+x)(1-2x)(1-3x)).
+; Submitted by Kotenok2000
 ; 0,1,2,5,12,31,82,225,632,1811,5262,15445,45652,135591,404042,1206665,3609072,10805371,32372422,97029885,290914892,872395151,2616486402,7848061105,23541387112,70618568931,211844521982,635511196325
-; Formula: a(n) = ((3^n+4*2^n+10)/2+3)/A053186(A013636(A151799(1)))-1
+; Formula: a(n) = (2^n+(3^n)/4+4)/3-1
 
-mov $3,2
-pow $3,$0
-mul $3,4
-mov $2,3
+mov $2,2
 pow $2,$0
-add $2,$3
-mov $0,$2
-add $0,10
-div $0,2
-add $0,3
-mov $1,1
-seq $1,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-seq $1,13636 ; n*nextprime(n).
-seq $1,53186 ; Square excess of n: difference between n and largest square <= n.
-div $0,$1
+mov $1,3
+pow $1,$0
+div $1,4
+add $1,$2
+mov $0,$1
+add $0,4
+div $0,3
 sub $0,1

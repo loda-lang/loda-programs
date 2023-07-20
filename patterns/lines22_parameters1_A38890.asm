@@ -3,11 +3,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; source=parameter 0
+  add $3,1
+  seq $3,154115
+  seq $3,151799
+  sub $3,1
   mov $5,$3
-  sub $3,1 ; source=parameter 1
-  seq $3,69531 ; source=parameter 2
-  cmp $3,0 ; source=parameter 3
+  seq $3,35199 ; source=parameter 0
   cmp $3,0
   sub $0,$3
   add $1,1
@@ -18,3 +19,4 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
+add $0,1

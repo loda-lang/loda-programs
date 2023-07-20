@@ -1,4 +1,4 @@
-; A045078: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 3 and 2, respectively.
+; A045078: Numbers whose base-4 representation contains exactly three 0's and two 3's.
 ; Submitted by LM
 ; 771,780,816,960,1039,1075,1084,1219,1228,1264,1795,1804,1840,1984,2063,2099,2108,2243,2252,2288,2819,2828,2864,3008,3079,3083,3085,3086,3091,3100,3107,3116,3121,3122,3124,3128,3139
 

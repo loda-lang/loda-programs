@@ -1,6 +1,7 @@
 ; A054638: 0 if pronounced name of n-th letter of English alphabet begin with a vowel sound, otherwise 1. Different from A074322.
 ; Submitted by Gunnar Hjern
 ; 0,1,1,1,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,0,1,1,0,1,1
+; Formula: a(n) = (b(2*n+1)%2+2)%2, b(n) = (-c(n-1)+b(n-1))/2, b(2) = -94, b(1) = 0, b(0) = 0, c(n) = 94*c(n-1)*(((-c(n-1)+b(n-1))/2+d(n-1))%2+2), c(2) = 35344, c(1) = 188, c(0) = 1, d(n) = ((-c(n-1)+b(n-1))/2+d(n-1))%2+2, d(2) = 2, d(1) = 2, d(0) = 0
 
 mov $2,1
 mul $0,2

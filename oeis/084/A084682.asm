@@ -1,5 +1,5 @@
 ; A084682: Even evil numbers with an even digital sum.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Kotenok2000
 ; 0,6,20,24,40,46,48,60,66,68,80,86,114,116,130,132,136,150,154,156,170,172,178,190,192,198,202,204,222,226,228,240,246,260,264,282,284,288,312,318,330,332,338,350,354,356,374,378,390,394,396,402,404,408,420
 
 mov $2,$0
@@ -7,7 +7,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $7,$1
-  seq $7,65620 ; a(0)=0; thereafter a(2n) = 2a(n), a(2n+1) = -2a(n) + 1.
+  seq $7,254379 ; Characteristic function of the even odious numbers (A128309).
   mov $5,$1
   mul $5,$7
   mov $6,$1

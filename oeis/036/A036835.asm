@@ -1,5 +1,5 @@
 ; A036835: Schoenheim bound L_1(n,8,7).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 1,8,20,54,105,257,431,919,1492,2663,3978,6871,9690,15653,21648,32511,43263,63622,82225,116846,149177,203580,254475,342988,420804,555345,675767,870022,1043460,1331311,1577532,1984637,2338385,2890593
 
 mov $2,1
@@ -18,7 +18,7 @@ lpb $0
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,2131 ; Sum of divisors d of n such that n/d is odd.
+    seq $7,56001 ; A second-order recursive sequence.
     mul $7,$11
     mul $7,$$9
     add $5,1

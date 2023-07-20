@@ -11,7 +11,7 @@ lpb $3
   mov $2,$0
   mov $1,2
   lpb $1
-    sub $1,1
+    sub $1,2
     mov $0,$2
     trn $0,1
     seq $0,26343 ; Least k such that s(k) = n, where s = A026342.

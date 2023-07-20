@@ -9,7 +9,10 @@ lpb $3
   mov $0,$4
   add $0,$3
   mov $6,$0
-  seq $0,92674 ; Derived from a(n)=binomial(n+1,2) - sum{i=1,n-1,a(i)*floor(n/i)} (see A000010) - this is the value of the constant term.
+  mov $7,$0
+  seq $7,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
+  seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,$7
   add $0,$6
   mov $2,$3
   mul $2,$0

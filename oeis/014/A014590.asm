@@ -1,30 +1,22 @@
 ; A014590: Inverse of 581st cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by p3d-cluster
 ; 1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = (c(3*n)/gcd(c(3*n)*b(3*n),b(3*n))+1)%2, b(n) = -3*n*b(n-1), b(2) = 72, b(1) = -12, b(0) = 4, c(n) = -3*n*(c(n-1)+1)+b(n-1), c(2) = -24, c(1) = 1, c(0) = 0
 
-mov $2,1
-mov $10,1
+mov $1,4
+mul $0,3
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    trn $4,1
-    mov $7,$4
-    seq $7,114548 ; Numbers n such that n-th heptagonal number is 3-almost prime.
-    mov $9,10
-    add $9,$5
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  sub $2,3
+  add $3,1
+  mul $3,$2
+  add $3,$1
+  mul $1,$2
 lpe
-mov $0,$17
+mov $4,$3
+mul $3,$1
+gcd $3,$1
+div $4,$3
+mov $0,$4
 add $0,1
-mod $0,10
+mod $0,2

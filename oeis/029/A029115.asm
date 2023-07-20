@@ -1,26 +1,28 @@
 ; A029115: Expansion of 1/((1-x)(1-x^6)(1-x^10)(1-x^11)).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Kotenok2000
 ; 1,1,1,1,1,1,2,2,2,2,3,4,5,5,5,5,6,7,8,8,9,10,12,13,14,14,15,16,18,19,21,22,24,26,28,29,31,32,34,36,39,41,44,46,49,51,54,56,59,61,65,68,72,75,79,82,86,89,93,96,101
 
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
-  sub $0,1
-  mov $3,3
-  mov $4,$0
-  add $4,3
-  lpb $4
-    sub $4,$3
-    mov $7,$4
-    max $7,0
-    seq $7,25783 ; Expansion of 1/((1-x)(1-x^6)(1-x^11)).
-    mov $3,10
-    add $6,$7
+add $0,3
+lpb $0
+  sub $0,3
+  trn $3,4
+  sub $0,$3
+  mov $2,$0
+  add $2,1
+  lpb $2
+    mov $1,$2
+    sub $1,1
+    mov $5,$2
+    gcd $5,$1
+    div $1,11
+    add $1,$5
+    mul $1,2
+    add $1,2
+    div $1,2
+    sub $1,1
+    trn $2,6
+    add $4,$1
   lpe
-  mov $2,$5
-  mul $2,$6
-  mul $0,$5
-  add $1,$2
+  mov $3,11
 lpe
-mov $0,$1
+mov $0,$4

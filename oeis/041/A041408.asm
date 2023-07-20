@@ -14,15 +14,12 @@ lpb $0
   mod $1,13
   mov $5,$1
   div $5,5
-  mul $5,12
+  mul $5,4
   add $1,$5
   sub $1,2
   dif $1,4
-  add $1,3
-  seq $1,36693 ; Number of Gaussian integers z = a + bi satisfying n-1 < |z| <= n.
-  add $1,4
-  div $1,8
-  sub $1,2
+  mul $1,8
+  div $1,5
   mul $1,$2
   add $1,$4
   add $3,1
