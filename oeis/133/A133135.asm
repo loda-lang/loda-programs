@@ -9,7 +9,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,36968 ; Genocchi numbers (of first kind): expansion of 2*x/(exp(x)+1).
+  add $0,1
+  seq $0,226158 ; a(n) = 2*n*(2^n - 1)*zeta(1-n) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
   sub $0,$1
   mov $1,$0
 lpe

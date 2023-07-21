@@ -1,31 +1,22 @@
 ; A121540: Increasing sequence: "if n appears a*n+b does not", case a(1)=3, a=2, b=1.
-; Submitted by Josemi
+; Submitted by Kotenok2000
 ; 3,4,5,6,8,10,12,14,15,16,18,19,20,22,23,24,26,27,28,30,32,34,35,36,38,40,42,43,44,46,48,50,51,52,54,56,58,59,60,62,63,64,66,67,68,70,72,74,75,76,78,79,80,82,83,84,86,88,90,91,92,94,95,96,98,99,100
 
-add $0,2
-mov $1,$0
-mov $3,$0
-add $3,4
-pow $3,2
-lpb $3
-  mov $4,$2
-  seq $4,346073 ; a(n) = 1 + Sum_{k=0..n-4} a(k) * a(n-k-4).
-  sub $4,3
-  trn $5,$2
-  sub $5,$2
-  add $4,$5
-  gcd $4,2
-  sub $1,$4
-  add $1,1
-  add $2,1
-  mov $5,$1
-  max $5,0
-  cmp $5,$1
-  mul $3,$5
-  sub $3,1
+mov $1,9
+mov $2,2
+add $0,3
+lpb $0
+  sub $0,1
+  add $4,$3
+  dif $1,$3
+  sub $1,$2
+  div $1,2
+  sub $1,1
+  mov $3,$2
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
 lpe
-mov $1,$2
-add $1,4
-mov $0,$1
-div $0,4
+mov $0,$4
 sub $0,1

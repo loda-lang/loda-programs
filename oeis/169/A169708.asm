@@ -1,20 +1,17 @@
 ; A169708: First differences of A169707.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Kotenok2000
 ; 1,4,4,12,4,12,20,28,4,12,20,28,20,44,68,60,4,12,20,28,20,44,68,60,20,44,68,76,84,156,196,124,4,12,20,28,20,44,68,60,20,44,68,76,84,156,196,124,20,44,68,76,84,156,196,140,84,156,212,236,324,508,516,252,4,12,20,28,20
 
-mov $1,$0
-min $1,1
-trn $0,1
-add $0,1
 lpb $0
-  trn $0,1
-  mov $3,$0
-  seq $3,160762 ; Convolved with the toothpick sequence A139250 = (2*n - 1): (1, 3, 5, 7, ...).
-  add $2,$3
+  mov $2,$0
+  seq $2,255049 ; a(n) = 2*A160552(n).
+  mov $0,0
+  mov $1,$2
+  add $1,$2
+  sub $1,2
+  mov $3,$2
+  min $3,1
 lpe
-mov $0,$2
-mul $0,2
-sub $0,1
-add $0,$1
-mul $1,$0
-add $0,$1
+add $1,$3
+add $1,1
+mov $0,$1

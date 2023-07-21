@@ -1,5 +1,5 @@
 ; A174941: a(n) = Sum_{d|n} A007955(d) * A008683(d) = Sum_{d|n} A007955(d) * mu(d), where A007955(m) = product of divisors of m.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Kotenok2000
 ; 1,-1,-2,-1,-4,32,-6,-1,-2,94,-10,32,-12,188,218,-1,-16,32,-18,94,432,472,-22,32,-4,662,-2,188,-28,-809648
 
 mov $2,$0
@@ -13,6 +13,7 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
+  mul $0,$1
   sub $0,$1
   mov $5,$0
   seq $5,7955 ; Product of divisors of n.

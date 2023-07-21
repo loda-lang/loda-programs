@@ -1,6 +1,7 @@
 ; A118531: Start with 1 and repeatedly reverse the digits and add 14 to get the next term.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,15,65,70,21,26,76,81,32,37,87,92,43,48,98,103,315,527,739,951,173,385,597,809,922,243,356,667,780,101,115,525,539,949,963,383,397,807,722,241,156,665,580,99,113,325,537,749,961,183,395,607,720
+; Formula: a(n) = A004086(a(n-1))+14, a(0) = 1
 
 mov $1,$0
 mov $0,1

@@ -6,6 +6,6 @@
 mov $1,$0
 seq $1,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 seq $1,45623 ; Number of 1's in all compositions of n+1.
-seq $0,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 add $0,1
 mul $0,$1

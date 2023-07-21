@@ -1,24 +1,36 @@
 ; A232472: 2-Fubini numbers.
-; Submitted by Christian Krause
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,10,62,466,4142,42610,498542,6541426,95160302,1520385010,26468935022,498766780786,10114484622062,219641848007410,5085371491003502,125055112347154546,3255163896227709422,89416052656071565810,2584886208925055791982,78447137202259689678706,2493719594804686310662382
 
-mov $3,2
-lpb $3
-  sub $3,1
-  add $0,$3
-  mov $5,$0
-  add $5,1
-  max $5,0
-  seq $5,32109 ; "BIJ" (reversible, indistinct, labeled) transform of 1,1,1,1,...
+mov $2,1
+add $2,1
+add $0,1
+lpb $0
   sub $0,1
-  mov $2,$3
-  mul $2,$5
-  add $1,$2
-  mov $4,$5
-  mov $6,5
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $11,1
+    mov $7,2
+    div $7,2
+    add $7,$0
+    add $7,$4
+    bin $7,$0
+    add $7,2
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-min $6,1
-mul $6,$4
-sub $1,$6
-mov $0,$1
-mul $0,2
+mov $0,$6
+div $0,6
+mul $0,4
+add $0,2

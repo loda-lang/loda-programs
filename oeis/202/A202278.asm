@@ -5,8 +5,8 @@
 mov $1,$0
 seq $1,71 ; a(n) = Fibonacci(n) - 1.
 lpb $0
-  mov $2,1
   div $0,9
+  mov $2,1
 lpe
 add $2,$1
 mov $0,$2

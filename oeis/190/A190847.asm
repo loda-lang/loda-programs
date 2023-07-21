@@ -1,21 +1,23 @@
 ; A190847: Positions of 0 in A190843; complement of A190860.
-; Submitted by STE\/E
+; Submitted by Kotenok2000
 ; 2,3,6,7,9,10,13,14,16,17,20,21,24,27,28,31,34,35,38,39,41,42,45,46,48,49,52,53,56,59,60,63,66,67,70,73,74,77,78,80,81,84,85,87,88,91,92,95,98,99,102,105,106,109,110,112,113,116,117,119,120,123,124,127,130,131,134,137,138,141,144,145,148,149,151,152,155,156
 
-mov $1,1
 mov $2,$0
+add $0,1
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,276853 ; Beatty sequence for 2*e.
-  mod $3,2
-  cmp $3,0
+  seq $3,190843 ; a(n) = [2*n*e] - 2*[n*e], where [ ] = floor and e is the natural logarithm base.
+  sub $3,1
+  add $3,$4
+  gcd $3,2
   sub $0,$3
+  add $0,1
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,1
   mul $2,$4
   sub $2,1
 lpe

@@ -8,8 +8,7 @@ lpb $2
   mov $3,$1
   pow $3,7
   mod $3,43
-  seq $3,174378 ; Triangle T(n, k) = n!*q^k/(n-k)! if floor(n/2) > k-1 otherwise n!*q^(n-k)/k!, with q = 4, read by rows.
-  mod $3,2
+  seq $3,204177 ; Symmetric matrix based on f(i,j)=(1 if i=1 or j=1 or i=j, and 0 otherwise), by antidiagonals.
   sub $0,$3
   add $1,1
   mov $4,$0

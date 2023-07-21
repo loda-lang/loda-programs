@@ -1,17 +1,26 @@
 ; A105610: Numbers n such that both p1=2n+3 and p2=4n+5 are primes.
-; Submitted by Josemi
+; Submitted by Groo
 ; 0,2,8,14,17,38,47,68,77,98,104,113,134,152,164,167,182,188,218,248,272,287,299,302,308,329,344,362,404,413,437,467,482,497,503,533,584,617,638,647,698,713,728,764,803,812,827,878,932,1004,1013,1043,1064,1067
 
-mov $3,3
-lpb $3
-  div $3,2
-  add $0,$3
-  seq $0,5383 ; Primes p such that (p+1)/2 is prime.
-  mov $2,$3
-  mul $2,$0
-  mov $0,1
-  add $1,$2
+mov $2,$0
+add $2,8
+pow $2,4
+lpb $2
+  mov $3,$1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,3
+  mul $3,$1
+  trn $3,3
+  mul $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  sub $1,$4
+  mul $2,$4
+  sub $2,17
 lpe
 mov $0,$1
-sub $0,5
-div $0,4
+sub $0,2
+div $0,2

@@ -1,25 +1,25 @@
 ; A164019: Table read by rows: row n contains the primes between n and 2n.
-; Submitted by ChelseaOilman
+; Submitted by Kotenok2000
 ; 3,5,5,7,7,7,11,11,13,11,13,11,13,17,11,13,17,19,13,17,19,13,17,19,23,17,19,23,17,19,23,17,19,23,29,17,19,23,29,31,19,23,29,31,19,23,29,31,23,29,31,37,23,29,31,37,23,29,31,37,41,23,29,31,37,41,43,29,31,37,41
 
 mov $2,$0
-add $2,6
-pow $2,3
+add $2,2
+pow $2,2
 lpb $2
-  sub $2,37
+  sub $2,2
   mov $3,$1
-  seq $3,353612 ; Triangle read by rows: T(n,k) = (n + k) if (n + k) is a prime number, otherwise T(n,k) = 0; n >= 1, k >= 1.
-  mov $5,$3
-  mul $3,338
-  gcd $3,4
-  mul $3,2
   add $3,1
-  cmp $3,5
+  seq $3,108872 ; Sums of ordinal references for a triangular table read by columns, top to bottom.
+  sub $3,1
+  mov $5,$3
+  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  cmp $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,1
   mul $2,$4
 lpe
 mov $0,$5
+add $0,1

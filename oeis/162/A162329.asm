@@ -12,7 +12,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,221529 ; Triangle read by rows: T(n,k) = A000203(k)*A000041(n-k), 1 <= k <= n.
+  mov $4,$0
+  seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
+  seq $0,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1

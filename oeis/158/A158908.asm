@@ -1,22 +1,19 @@
 ; A158908: First differences of A061238.
-; Submitted by Jamie Morken(l1)
+; Submitted by Kotenok2000
 ; 9,18,18,36,18,36,36,18,36,36,18,36,36,36,54,18,18,90,18,54,18,18,144,18,18,54,18,18,36,36,72,18,54,18,36,72,18,54,72,18,36,36,36,54,54,54,90,36,54,72,54,36,18,18,54,54,36,54,36,18,72,18,18,18,54,18,72,36,36,18,18
 
-mov $1,$0
-add $1,2
+mov $1,18
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
-  mov $0,$1
+  div $3,2
+  mov $0,$4
   add $0,$3
-  trn $0,2
-  seq $0,24907 ; Numbers k such that 9*k - 7 is prime.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+  seq $0,61238 ; Prime numbers == 2 (mod 9).
+  add $1,$2
+  mov $2,$0
+  mul $4,$3
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
-mul $0,9
+sub $1,$2
+mov $0,$1
+sub $0,18

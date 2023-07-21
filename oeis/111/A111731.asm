@@ -1,10 +1,10 @@
 ; A111731: Minimal size of a complete cap in (Z/nZ)^2.
-; Submitted by Fardringle
+; Submitted by Cruncher Pete
 ; 4,4,4,5,4,6,4,4,4
+; Formula: a(n) = gcd(max(n%6,1),15)/2+4
 
-mov $1,7
-gcd $1,$0
-dif $0,-2
-trn $0,$1
+mod $0,6
+max $0,1
+gcd $0,15
 div $0,2
 add $0,4

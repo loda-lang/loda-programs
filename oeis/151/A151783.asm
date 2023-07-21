@@ -10,8 +10,8 @@ mul $0,2
 bin $0,$1
 div $0,$2
 lpb $0
-  mul $3,2
   dif $0,2
+  mul $3,2
 lpe
 mov $0,$3
 pow $0,2

@@ -1,16 +1,26 @@
 ; A138441: a(n) = ((n-th prime)^6-(n-th prime^2))/2.
-; Submitted by Dave Studdert
+; Submitted by Kotenok2000
 ; 30,360,7800,58800,885720,2413320,12068640,23522760,74017680,297411240,443751360,1282862520,2375051280,3160680600,5389606560,11082179160,21090265080,25760185320,45229188840,64050139440,75667110480,121543724640,163470183240
-; Formula: a(n) = 30*(binomial(b(n)^2+1,3)/10), b(n) = A159477(b(n-1)), b(0) = 2
 
-mov $1,2
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+mov $2,$0
+mul $2,2
+max $2,1
+sub $2,2
+mov $3,4
+mov $4,$2
+pow $4,4
+lpb $4
+  max $1,$3
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $1,2
+  sub $2,$1
+  add $3,2
+  sub $4,$2
 lpe
-mov $0,$1
-pow $0,2
-add $0,1
-bin $0,3
-div $0,10
-mul $0,30
+add $2,$3
+sub $2,1
+mov $0,$2
+pow $0,5
+sub $0,$2
+mul $0,$2
+div $0,2

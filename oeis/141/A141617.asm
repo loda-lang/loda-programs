@@ -5,5 +5,5 @@
 
 mov $1,$0
 seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,146985 ; I call this sequence "symmetrical spooky primes" as two prime combinations are used in cryptography: f(n)=If[n==0,1,Prime[n]]; t(n,m)=f(n-m)*f(n).
+seq $0,146985 ; Triangle T(n,m) = f(n-m)*f(n), where f(n) = A008578(n+1).
 mul $0,$1

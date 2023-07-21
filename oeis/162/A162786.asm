@@ -1,14 +1,39 @@
 ; A162786: a(n) = A162526(n)/6.
-; Submitted by Jamie Morken(s2)
+; Submitted by Kotenok2000
 ; 6,7,8,9,10,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277
 
-mov $2,1
 mov $1,$0
-sub $1,1
-lpb $1
-  sub $1,1
-  add $2,1
-  seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
+mov $2,$0
+mov $5,$0
+pow $5,5
+lpb $5
+  mov $7,0
+  mov $3,$4
+  add $3,1
+  lpb $3
+    gcd $7,3
+    mov $8,$3
+    div $8,5
+    lpb $8
+      mov $6,$3
+      mod $6,$7
+      add $7,2
+      sub $8,$6
+    lpe
+    div $3,$7
+    pow $3,2
+    mov $7,1
+  lpe
+  sub $2,$7
+  add $4,2
+  sub $5,$2
 lpe
-add $0,6
-max $0,$2
+mov $2,$4
+mul $2,8
+sub $2,8
+div $2,8
+add $2,1
+add $1,5
+max $1,$2
+mov $0,$1
+add $0,1

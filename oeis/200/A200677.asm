@@ -1,5 +1,5 @@
 ; A200677: Smallest semiprime such that the sum of the two prime factors equals n, or zero if impossible.
-; Submitted by fzs600
+; Submitted by Kotenok2000
 ; 0,0,0,4,6,9,10,15,14,21,0,35,22,33,26,39,0,65,34,51,38,57,0,95,46,69,0,115,0,161,58,87,62,93,0,155,0,217,74,111,0,185,82,123,86,129,0,215,94,141,0,235,0,329,106,159,0,265,0,371,118,177,122,183,0
 
 mov $2,1
@@ -20,8 +20,8 @@ lpb $0
     add $9,$5
     min $10,$0
     add $4,$6
-    trn $5,$0
     mul $7,$$9
+    gcd $4,$10
     add $5,1
     add $6,$7
   lpe

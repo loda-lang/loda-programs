@@ -1,9 +1,16 @@
 ; A179742: The number of syllables in each letter of the English alphabet.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Kotenok2000
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1
-; Formula: a(n) = gcd(A186424(n),A001694(n))
+; Formula: a(n) = 2*((A124767(A114994(n+2))+3)/2)+2*A000013(0)-5
 
-mov $1,$0
-seq $1,1694 ; Powerful numbers, definition (1): if a prime p divides n then p^2 must also divide n (also called squareful, square full, square-full or 2-powerful numbers).
-seq $0,186424 ; Odd terms in A186423.
-gcd $0,$1
+add $0,2
+seq $0,114994 ; Numbers whose binary representation has monotonically decreasing sizes of groups of zeros (including zero-length groups between adjacent ones).
+seq $0,124767 ; Number of level runs for compositions in standard order.
+add $0,3
+div $0,2
+seq $1,13 ; Definition (1): Number of n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.
+sub $1,2
+add $1,$0
+mov $0,$1
+mul $0,2
+sub $0,1

@@ -7,8 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,112930 ; a(n) = order of n-th term of A112926 among squarefree integers.
-  sub $3,2
+  seq $3,40 ; The prime numbers.
+  sub $3,1
+  seq $3,107079 ; Minimal number of squared primes in a squarefree gap of length n.
+  sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

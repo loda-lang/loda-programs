@@ -1,5 +1,5 @@
 ; A094029: Number of n-crossing links with alternating braids of 3 strands.
-; Submitted by biodoc
+; Submitted by Kotenok2000
 ; 1,1,4,5,13,18,38,57,115,183,354,604,1153,2047,3904,7145,13637,25471,48722,92193
 
 add $0,2
@@ -12,10 +12,17 @@ add $3,2
 mov $4,$0
 lpb $4
   sub $4,1
+  mov $7,0
   mov $0,$3
   gcd $0,$4
-  seq $0,45654 ; Number of 2n-bead balanced binary strings, rotationally equivalent to complement.
-  add $5,$0
+  mul $0,2
+  lpb $0
+    dif $0,2
+    mov $6,2
+    pow $6,$0
+    add $7,$6
+  lpe
+  add $5,$7
 lpe
 div $5,$3
 mov $0,$5

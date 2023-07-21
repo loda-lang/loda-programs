@@ -1,13 +1,38 @@
 ; A174934: a(n) = Sum_{k<=n} A007955(k) * A000027(n-k+1) = Sum_{k<=n} A007955(k) * (n-k+1), where A007955(m) = product of divisors of m.
-; Submitted by Science United
+; Submitted by Kotenok2000
 ; 1,4,10,24,43,98,160,286,439,692,956,2948,4953,7154,9580,13030,16497,25796,35114,52432,70191,88434,106700,456742,806909,1157752,1509324,1882848,2256401,3439954
-; Formula: a(n) = a(n-1)+A175318(n), a(0) = 1
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,175318 ; a(n) = Sum_{k<=n} A007955(k), where A007955(m) = product of divisors of m.
-  sub $0,1
-  add $1,$2
+mov $2,$0
+add $2,1
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  mov $5,$4
+  add $5,1
+  mov $6,1
+  mov $9,$5
+  mov $10,47
+  mov $0,0
+  lpb $5
+    sub $5,2
+    mov $7,$9
+    gcd $7,$6
+    bin $7,$6
+    mov $8,$9
+    div $8,$6
+    pow $8,$7
+    mul $10,$8
+    add $6,1
+  lpe
+  mov $5,$10
+  div $5,47
+  seq $0,77972 ; Expansion of 1/(1+x-x^2+2*x^3).
+  mul $0,$5
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$3
