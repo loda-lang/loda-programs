@@ -1,0 +1,18 @@
+; A112316: Number of partitions of n into products of 6 primes.
+; Submitted by Science United
+; 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+mov $4,3
+add $0,3
+lpb $0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  pow $1,$3
+  seq $3,14590 ; Inverse of 581st cyclotomic polynomial.
+  mul $3,$1
+  add $2,$3
+  mul $4,21
+  add $4,1
+lpe
+mov $0,$2
