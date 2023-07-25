@@ -13,7 +13,8 @@ lpb $2
     mul $5,3
     add $5,11
     mod $5,10
-    seq $5,14189 ; Inverse of 180th cyclotomic polynomial.
+    mul $5,2
+    seq $5,16365 ; 253rd cyclotomic polynomial.
     div $3,10
     add $4,$5
   lpe

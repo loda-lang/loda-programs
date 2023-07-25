@@ -1,4 +1,4 @@
-; A045082: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 4 and 1, respectively.
+; A045082: Numbers whose base-4 representation contains exactly four 0's and one 3.
 ; Submitted by Science United
 ; 768,1027,1036,1072,1216,1792,2051,2060,2096,2240,2816,3073,3074,3076,3080,3088,3104,3136,3200,3328,3584,4103,4107,4109,4110,4115,4124,4131,4140,4145,4146,4148,4152,4163,4172,4208,4227
 

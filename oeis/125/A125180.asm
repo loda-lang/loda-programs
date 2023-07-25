@@ -1,16 +1,16 @@
 ; A125180: a(n) = 2*a(n-1) + prime(n) - prime(n-1), a(1)=2, where prime(n) denotes the n-th prime.
-; Submitted by Stony666
+; Submitted by Kotenok2000
 ; 2,5,12,26,56,114,232,466,936,1878,3758,7522,15048,30098,60200,120406,240818,481638,963282,1926568,3853138,7706282,15412568,30825142,61650292,123300588,246601178,493202360,986404722,1972809448,3945618910
-; Formula: a(n) = a(n-1)+b(n-1)+A000040(n), a(2) = 12, a(1) = 5, a(0) = 2, b(n) = a(n-1)+b(n-1), b(2) = 7, b(1) = 2, b(0) = 0
 
-mov $1,2
-mov $3,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,$1
-  mov $1,$3
-  seq $1,40 ; The prime numbers.
-  add $1,$2
-  add $3,1
+  cmp $3,0
+  add $3,$2
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  mul $1,2
+  sub $1,$2
+  add $1,$3
+  mov $2,$3
 lpe
 mov $0,$1

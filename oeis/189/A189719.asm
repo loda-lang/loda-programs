@@ -6,10 +6,17 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
+  mov $4,1
   mov $3,$1
-  seq $3,189718 ; Fixed point of the morphism 0->011, 1->100.
-  cmp $3,0
-  sub $0,$3
+  lpb $3
+    lpb $3
+      dif $3,3
+    lpe
+    div $3,3
+    add $4,1
+  lpe
+  mod $4,2
+  sub $0,$4
   add $1,1
   sub $2,$0
 lpe

@@ -5,7 +5,7 @@
 cmp $1,$0
 trn $0,1
 seq $0,355722 ; Row 2 of table A355721.
-mul $0,6
-div $0,4
+mul $0,3
+div $0,2
 mul $0,2
 sub $0,$1

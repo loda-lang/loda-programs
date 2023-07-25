@@ -4,4 +4,4 @@
 ; Formula: a(n) = A005836(A019300(n))
 
 seq $0,19300 ; First n elements of Thue-Morse sequence A010060 read as a binary number.
-seq $0,5836 ; Numbers whose base 3 representation contains no 2.
+seq $0,5836 ; Numbers whose base-3 representation contains no 2.

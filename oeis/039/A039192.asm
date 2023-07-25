@@ -14,7 +14,7 @@ lpb $2
     add $5,1
     mul $5,2
     mod $5,11
-    seq $5,16360 ; 221st cyclotomic polynomial.
+    seq $5,14026 ; Inverse of 17th cyclotomic polynomial.
     div $3,11
     add $4,$5
   lpe

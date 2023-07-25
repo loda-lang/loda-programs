@@ -5,5 +5,12 @@
 mov $1,$0
 add $0,12
 bin $0,$1
-seq $1,166 ; Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
-mul $0,$1
+mov $2,1
+mov $3,1
+lpb $1
+  mul $3,$1
+  sub $1,1
+  sub $2,$3
+  mul $2,-1
+lpe
+mul $0,$2

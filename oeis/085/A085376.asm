@@ -1,18 +1,16 @@
 ; A085376: Ratio-dependent insertion sequence I(0.36704) (see the link below).
-; Submitted by Kotenok2000
+; Submitted by p3d-cluster
 ; 1,3,11,30,109,297,1079,2940,10681,29103,105731,288090,1046629,2851797,10360559,28229880,102558961,279447003,1015229051,2766240150,10049731549,27382954497,99482086439,271063304820,984771132841
 
-mov $3,1
+mov $2,1
+mov $3,11
 add $0,1
 lpb $0
   sub $0,1
-  add $2,$3
-  mov $1,$2
-  dif $2,3
-  mod $2,$1
-  mul $2,3
+  cmp $3,$1
+  add $1,$2
+  mul $3,$1
   add $3,$1
-  add $3,$2
-  mov $2,$1
+  add $2,$3
 lpe
 mov $0,$1

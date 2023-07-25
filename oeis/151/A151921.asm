@@ -1,14 +1,13 @@
 ; A151921: Net gain in number of ON cells at stage n of the cellular automaton described in A079317.
-; Submitted by Sphynx
+; Submitted by Kotenok2000
 ; 0,1,4,0,12,-8,20,-8,44,-40,52,-40,76,-64,100,-64,172,-168,180,-168,204,-192,228,-192,300,-288,324,-288,396,-360,468,-360,684,-680,692,-680,716,-704,740,-704,812,-800,836,-800,908,-872,980,-872,1196
 
 mov $6,$0
-mov $7,2
+mov $7,1
 lpb $7
   sub $7,1
   mov $0,$6
   sub $0,1
-  mov $1,0
   mov $2,$0
   mov $4,2
   lpb $4

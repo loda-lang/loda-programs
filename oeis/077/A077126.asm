@@ -1,14 +1,14 @@
 ; A077126: Sum of even-indexed primes.
+; Submitted by Kotenok2000
 ; 3,10,23,42,71,108,151,204,265,336,415,504,605,712,825,956,1095,1246,1409,1582,1763,1956,2155,2378,2607,2846,3097,3360,3631,3912,4205,4516,4833,5170,5519,5878,6251,6634,7031,7440,7861,8294,8737,9194,9657,10136,10627
-; Formula: a(n) = b(n)+3, b(n) = b(n-1)+A000040(2*n+1), b(0) = 0
+; Formula: a(n) = a(n-1)+A159477(A159477(b(n-1))), a(1) = 10, a(0) = 3, b(n) = A159477(A159477(b(n-1))), b(1) = 7, b(0) = 3
 
+mov $1,3
+mov $2,3
 lpb $0
-  mov $2,$0
-  mul $2,2
-  add $2,1
-  seq $2,40 ; The prime numbers.
   sub $0,1
-  add $1,$2
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $2,$1
 lpe
-add $1,3
-mov $0,$1
+mov $0,$2

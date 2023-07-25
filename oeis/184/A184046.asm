@@ -5,17 +5,15 @@
 
 mov $1,2
 pow $1,$0
-add $1,7
-mov $3,$0
-mod $3,2
-add $3,2
+mov $2,$0
+mod $2,2
+add $2,2
 div $0,2
-mov $2,2
-pow $2,$0
-mul $2,$3
-mov $0,$2
+mov $3,2
+pow $3,$0
+mul $3,$2
+mov $0,$3
 add $0,$1
-add $1,$0
-mov $0,$1
+add $0,$1
 mul $0,2
-add $0,253
+add $0,281

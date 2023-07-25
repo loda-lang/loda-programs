@@ -18,7 +18,7 @@ lpb $0
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,363283 ; Squares (A000290) and (1+squares) (A002522), in increasing order.
+    seq $7,147754 ; Terms of this sequence are equal to gcd between two polynomials P1(n)=(512*n^4+1024*n^3+712*n^2+194*n+15) and P2(n)=(120*n^2+151*n+47) which are used in the BBP formula
     mul $7,$11
     mul $7,$$9
     add $5,1

@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,162143 ; a(n) = A007304(n)^2.
+  seq $3,7304 ; Sphenic numbers: products of 3 distinct primes.
+  pow $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

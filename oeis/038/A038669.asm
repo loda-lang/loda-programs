@@ -1,13 +1,17 @@
 ; A038669: [ n/2 ]+[ n/3 ]+[ n/4 ]+[ n/7 ]+[ n/11 ]+[ n/18 ]+[ n/29 ]+[ n/47 ]+[ n/76 ]+[ n/123 ]+[ n/199 ]+... (using Lucas numbers A000032).
-; Submitted by fzs600
+; Submitted by Kotenok2000
 ; 0,1,2,4,4,6,7,9,10,11,12,15,15,17,18,20,20,23,23,25,27,29,29,32,32,33,34,37,38,40,40,42,44,45,46,50,50,51,52,54,54,57,57,60,61,62,63,66,67,68,69,71,71,74,75,78,79,81,81,84,84,85,87,89,89,92,92,94,95,97,97,101
-; Formula: a(n) = a(n-1)+A304092(n)-1, a(0) = 0
 
+add $0,1
+mov $1,1
+mov $4,$0
 lpb $0
-  mov $2,$0
-  seq $2,304092 ; Number of Lucas numbers (A000032: 2, 1, 3, 4, 7, 11, ...) dividing n.
-  sub $2,1
-  sub $0,1
-  add $1,$2
+  sub $0,2
+  mov $3,$4
+  div $3,$1
+  sub $3,1
+  seq $3,130241 ; Maximal index k of a Lucas number such that Lucas(k) <= n (the 'lower' Lucas (A000032) Inverse).
+  add $1,1
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2

@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,105852 ; sigma(n) mod 9.
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mod $3,9
   cmp $3,3
   cmp $3,0
   sub $5,2

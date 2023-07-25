@@ -1,5 +1,5 @@
 ; A177492: Products of squares of 2 or more distinct primes.
-; Submitted by Ralfy
+; Submitted by Kotenok2000
 ; 36,100,196,225,441,484,676,900,1089,1156,1225,1444,1521,1764,2116,2601,3025,3249,3364,3844,4225,4356,4761,4900,5476,5929,6084,6724,7225,7396,7569,8281,8649,8836,9025,10404,11025,11236,12100,12321,12996,13225
 
 mov $2,5
@@ -9,8 +9,10 @@ pow $3,2
 lpb $3
   mov $4,$2
   seq $4,74823 ; a(n) = 2^omega(n)*mu(n)^2.
-  mov $6,10
-  seq $6,286604 ; a(n) = n mod sum of digits of n in factorial base.
+  mov $7,11
+  seq $7,173862 ; a(n) = A158772(n-1)/21.
+  mov $6,11
+  mod $6,$7
   min $6,$4
   mov $4,$6
   mod $4,2

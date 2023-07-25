@@ -8,9 +8,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  sub $3,1
-  seq $3,137362 ; Positions at which the truncated square root of triangular numbers is unique.
-  dif $3,2
+  seq $3,6918 ; a(n) = binomial(n+3, 3)/4 for odd n, n*(n+2)*(n+4)/24 for even n.
+  add $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3

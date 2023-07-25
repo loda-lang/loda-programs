@@ -18,7 +18,7 @@ lpb $0
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,63823 ; Expansion of g.f. (1 - 2*x^2 - 3*x^3)/((1 - x^3)*(1 - 2*x)).
+    seq $7,329835 ; Beatty sequence for (9+sqrt(101))/10.
     mul $7,$11
     mul $7,$$9
     add $5,1

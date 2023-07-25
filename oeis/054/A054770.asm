@@ -1,28 +1,7 @@
 ; A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11, ... (A000204).
-; Submitted by BlisteringSheep
+; Submitted by thorsam
 ; 2,6,9,13,17,20,24,27,31,35,38,42,46,49,53,56,60,64,67,71,74,78,82,85,89,93,96,100,103,107,111,114,118,122,125,129,132,136,140,143,147,150,154,158,161,165,169,172,176,179,183,187,190,194,197,201,205,208,212,216,219,223,226,230,234,237,241,245,248,252,255,259,263,266,270,273,277,281,284,288
+; Formula: a(n) = A287775(2*n)
 
-mov $2,$0
-mul $2,2
-mov $1,$0
-add $1,1
-mov $3,$1
-mov $4,$1
-mul $1,2
-pow $3,2
-lpb $3
-  sub $3,$1
-  add $4,1
-  add $1,1
-  sub $3,$1
-lpe
-mov $1,$4
-div $1,2
-add $2,$1
-mov $1,$2
-add $1,1
-add $0,$1
 mul $0,2
-sub $0,2
-div $0,2
-add $0,2
+seq $0,287775 ; Positions of 0 in A287772; complement of A050140 (conjectured and proved).

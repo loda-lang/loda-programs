@@ -10,7 +10,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,134660 ; Number of odd coefficients in (1 + x + x^2 + x^3)^n.
+    seq $7,79908 ; Solution to the Dancing School Problem with 3 girls and n+3 boys: f(3,n).
     cmp $7,1
     mov $9,10
     add $9,$5

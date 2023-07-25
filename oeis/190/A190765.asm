@@ -1,16 +1,28 @@
 ; A190765: Positions of 2 in A190762.
-; Submitted by jmorken
+; Submitted by Kotenok2000
 ; 1,4,7,8,11,14,18,21,24,25,28,31,35,38,41,42,45,48,49,52,55,59,62,65,66,69,72,76,79,82,83,86,89,93,96,100,103,106,107,110,113,117,120,123,124,127,130,134,137,140,141,144,147,148,151,154,158,161,164,165,168,171,175,178,181,182,185,188,192,195,199,202,205,206,209
 
-mov $1,1
 mov $2,$0
-add $2,10
+add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
+  mul $5,2
+  seq $5,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $5,4
+  sub $5,1
   mov $3,$1
-  seq $3,286655 ; Characteristic sequence of the Beatty sequence, A022842, of sqrt(8).
+  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  div $3,4
+  mov $6,0
+  sub $6,$3
+  sub $6,$3
+  add $6,$5
+  mov $3,$6
+  bin $3,2
   sub $0,$3
-  add $1,2
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -18,5 +30,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,2
 add $0,1

@@ -9,7 +9,20 @@ lpb $2
   mov $0,$4
   sub $0,$2
   add $0,3
-  seq $0,132194 ; a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
+  seq $0,6005 ; The odd prime numbers together with 1.
+  div $0,2
+  gcd $0,3
+  mov $5,1
+  div $5,$0
+  mov $6,$5
+  add $6,11
+  pow $6,2
+  mov $0,$6
+  mul $0,2
+  pow $0,2
+  add $5,$0
+  mul $0,$5
+  div $0,3459729276
   mov $3,$0
   add $3,1
   div $3,2
