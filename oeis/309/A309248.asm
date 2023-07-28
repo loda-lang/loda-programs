@@ -1,0 +1,24 @@
+; A309248: Primes p such that p * (sum of digits of p) - 2 is prime.
+; Submitted by Science United
+; 2,3,5,7,23,29,83,89,113,131,157,173,179,191,197,199,223,281,283,311,353,359,397,401,443,467,557,593,797,809,821,827,829,863,887,977,997,1031,1033,1093,1109,1163,1187,1259,1361,1433,1451,1471,1549,1637,1657,1699,1723,1747,1811,1831,2063,2069,2083,2137,2179,2243,2287,2339,2377,2441,2447,2539,2551,2609,2647,2711,2713,2719,2801,2887,2999,3011,3163,3169
+
+mov $2,$0
+add $2,2
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,40 ; The prime numbers.
+  mov $5,$3
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  mul $3,$5
+  sub $3,3
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$5
