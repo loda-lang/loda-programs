@@ -1,24 +1,24 @@
 ; A181741: Primes of the form 2^t-2^k-1, k>=1.
-; Submitted by Fardringle
+; Submitted by Kotenok2000
 ; 3,5,7,11,13,23,29,31,47,59,61,127,191,223,239,251,383,479,503,509,991,1019,1021,2039,3583,3967,4079,4091,4093,6143,8191,15359,16127,16319,16381,63487,65407,65519,129023,131063,131071,245759,253951,261631,261887,262079,262111,262127,262139,522239,524287,786431,917503,1032191,1044479,1046527,1047551,1048063,1048447,1048559,1048571,1048573,1966079,2096639,2097023,2097143,4128767,4193279,4194271,4194287,4194301,14680063,16744447,16769023,16776191,16777183,16777199,16777213,33546239,67108351
 
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  sub $2,2
   mov $3,$1
-  seq $3,81118 ; Triangle of first n numbers per row having exactly n 1's in binary representation.
-  sub $3,1
+  seq $3,89633 ; Numbers having no more than one 0 in their binary representation.
   mov $5,$3
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  mul $3,2
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
+  trn $2,1
 lpe
 mov $0,$5
+mul $0,2
 add $0,1

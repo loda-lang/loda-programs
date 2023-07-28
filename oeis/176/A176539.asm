@@ -12,8 +12,8 @@ lpb $1
   sub $0,1
   seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   add $0,$2
+  min $2,1
 lpe
-min $2,1
 mul $2,$0
 mov $0,$2
 add $0,1

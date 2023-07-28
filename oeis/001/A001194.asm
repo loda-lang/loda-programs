@@ -4,7 +4,16 @@
 
 mov $1,$0
 add $1,2
-seq $0,1193 ; a(n) = (n+1)*(2*n)!/(2^n*n!) = (n+1)*(2n-1)!!.
+sub $3,$0
+mul $0,2
+add $0,1
+add $3,$0
+mov $2,$0
+lpb $2
+  sub $2,2
+  mul $3,$2
+lpe
+mov $0,$3
 mul $0,$1
 div $0,2
 mul $0,3

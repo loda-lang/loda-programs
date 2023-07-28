@@ -12,7 +12,6 @@ lpb $0
   max $3,0
   seq $3,14018 ; Inverse of 9th cyclotomic polynomial.
   add $2,$3
-  mul $4,34
   add $4,30
 lpe
 mov $0,$2

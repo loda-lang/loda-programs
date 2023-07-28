@@ -1,6 +1,6 @@
 ; A051265: Maximal value of prime divisors of numbers in reduced residue system for n.
 ; Submitted by Simon Strandgaard (M1)
-; 0,0,1,1,1,1,2,1,1,1,2,1,2,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,3,2,2,2,2,2,3,2,2,2,3,1,3,2,2,2,3,2,3,2,2,2,3,2,3,2,2,2,3,1,3,2,2,2,3,2,3,2,2,2,3,2,3,2,2,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2
+; 0,0,1,1,1,1,2,1,1,1,2,1,2,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,3,2,2,2,2,2,3,2,2,2,3,1,3,2,2,2,3,2,3,2,2,2,3,2,3,2,2,2,3,1,3,2,2,2,3,2,3,2,2,2,3,2,3,2,2,2,3,2,3,2
 
 mov $3,$0
 add $3,1
@@ -13,8 +13,11 @@ lpb $5
   gcd $2,$5
   cmp $2,1
   sub $0,$2
+  mov $6,$0
+  seq $6,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mov $1,$0
-  seq $1,344478 ; Number of unitary prime divisors p of n such that n/p is squarefree.
+  mul $1,$6
+  seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $0,2
   mul $0,$1
   mul $2,$0

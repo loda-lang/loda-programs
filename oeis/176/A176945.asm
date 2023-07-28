@@ -8,7 +8,10 @@ add $2,10
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,318312 ; Multiplicative with a(p^e) = 2^A000041(e).
+  seq $5,8481 ; If n = Product (p_j^k_j) then a(n) = Sum partition(k_j).
+  mov $6,2
+  pow $6,$5
+  mov $5,$6
   div $5,2
   mov $3,$1
   pow $3,2

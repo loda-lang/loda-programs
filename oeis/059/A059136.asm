@@ -1,9 +1,21 @@
 ; A059136: A hierarchical sequence (W3{2,2}c - see A059126).
-; Submitted by X_FISH
+; Submitted by Jave808
 ; 4,10,4,16,22,16,4,10,4,28,34,28,4,10,4,16,22,16,4,10,4,40,46,40,4,10,4,16,22,16,4,10,4,28,34,28,4,10,4,16,22,16,4,10,4,52,58,52,4,10,4,16,22,16,4,10,4,28,34,28,4,10,4,16,22,16,4,10,4,40,46,40,4,10,4,16,22,16
-; Formula: a(n) = 6*A023416(A059146(n))+4
 
-seq $0,59146 ; A hierarchical sequence (W'2{2} - see A059126).
-seq $0,23416 ; Number of 0's in binary expansion of n.
+mov $1,1
+mov $2,$0
+add $2,3
+div $2,3
+pow $2,2
+add $0,1
+mod $0,3
+add $0,2
+div $0,2
+mul $0,$2
+lpb $0
+  dif $0,2
+  add $1,1
+lpe
+mov $0,$1
 mul $0,6
-add $0,4
+sub $0,2

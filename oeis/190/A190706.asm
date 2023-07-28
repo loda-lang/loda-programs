@@ -1,22 +1,29 @@
 ; A190706: Positions of 1 in A190704.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Kotenok2000
 ; 3,10,14,18,21,25,29,33,36,40,44,48,51,55,59,66,70,74,77,81,85,89,92,96,100,107,111,115,118,122,126,130,133,137,141,145,148,152,156,163,167,171,174,178,182,186,189,193,197,201,204,208,212,219,223,227,230,234,238,242,245,249,253,257,260,264,268,275,279,283,286,290
 
-add $0,121
-mov $1,1
+mov $1,2
 mov $2,$0
+add $2,4
 pow $2,2
 lpb $2
+  sub $2,1
+  add $1,3
   mov $3,$1
-  seq $3,190693 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,0) and [ ]=floor.
-  cmp $3,1
+  seq $3,22838 ; Beatty sequence for sqrt(3); complement of A054406.
+  gcd $3,4
+  add $3,1
+  cmp $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,1
 lpe
 mov $0,$1
-sub $0,480
+div $0,4
+mul $0,3
+sub $0,3
+div $0,3
+add $0,1

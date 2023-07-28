@@ -1,4 +1,4 @@
-; A045036: Numbers n with property that in base 4 representation the numbers of 0's and 1's are 4 and 3, respectively.
+; A045036: Numbers whose base-4 representation contains exactly four 0's and three 1's.
 ; Submitted by Science United
 ; 4101,4113,4116,4161,4164,4176,4353,4356,4368,4416,5121,5124,5136,5184,5376,16406,16407,16409,16413,16421,16437,16454,16455,16457,16461,16466,16467,16472,16476,16481,16484,16497,16500
 

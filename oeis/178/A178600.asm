@@ -1,13 +1,13 @@
 ; A178600: Expansion of the polynomial (1+x^3)*(1+x^11).
+; Submitted by Science United
 ; 1,0,0,1,0,0,0,0,0,0,0,1,0,0,1
-; Formula: a(n) = binomial(4*n+2*((4*n+3)/7)+6,6)%2
+; Formula: a(n) = ((gcd((n^3)%28,3)+8)%5)%2
 
-mul $0,4
+pow $0,3
+mod $0,28
+gcd $0,3
+add $0,8
+mod $0,5
 mov $1,$0
-add $0,3
-div $0,7
-mul $0,2
-add $0,$1
-add $0,6
-bin $0,6
-mod $0,2
+mod $1,2
+mov $0,$1

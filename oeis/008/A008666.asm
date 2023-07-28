@@ -1,25 +1,14 @@
 ; A008666: Expansion of g.f.: 1/((1-x^2)*(1-x^3)*(1-x^5)*(1-x^6)*(1-x^9)).
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by Kotenok2000
 ; 1,0,1,1,1,2,3,2,4,5,5,7,9,8,12,14,14,18,22,21,28,31,32,39,45,45,55,61,63,74,83,84,99,108,112,128,141,144,165,178,185,207,225,231,259,278,288,318,342,352,389,414,429,468,500,515,562,595,616,666,707,728,787,830,858,921,972,1001,1074,1128,1165,1242,1306,1344,1433,1500,1547,1641,1719,1768
+; Formula: a(n) = b(n+1), b(n) = b(n-9)+A029143(max(n-1,0)), b(8) = 2, b(7) = 3, b(6) = 2, b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 0, b(1) = 1, b(0) = 0
 
-add $0,3
+add $0,1
 lpb $0
-  sub $0,3
-  sub $0,$3
   mov $2,$0
-  mul $2,2
-  add $2,1
-  lpb $2
-    mov $5,$2
-    trn $5,1
-    seq $5,8679 ; Expansion of 1/((1-x^3)*(1-x^4)).
-    mov $1,$5
-    pow $5,2
-    add $5,$1
-    div $5,2
-    trn $2,10
-    add $4,$5
-  lpe
-  mov $3,6
+  trn $2,1
+  seq $2,29143 ; Expansion of 1/((1-x^2)*(1-x^3)*(1-x^5)*(1-x^6)). Molien series for u.g.g.r. #31 of order 46080. Poincaré series [or Poincare series] for ring of even weight Siegel modular forms of genus 2.
+  trn $0,9
+  add $1,$2
 lpe
-mov $0,$4
+mov $0,$1

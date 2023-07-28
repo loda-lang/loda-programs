@@ -6,22 +6,15 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  sub $2,1
+  sub $2,2
   mov $3,$1
-  add $3,1
-  mov $5,$1
-  gcd $5,262156
-  mul $5,42
-  mod $5,13
-  sub $5,3
-  mul $5,8
-  div $5,5
-  add $5,2
-  add $6,1
-  gcd $6,$5
-  dif $5,$6
-  mul $5,$3
-  mov $3,$5
+  mul $3,2
+  div $3,5
+  mul $3,3
+  div $3,2
+  add $3,$1
+  add $3,2
+  mov $5,$3
   sub $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   cmp $3,1
@@ -32,4 +25,4 @@ lpb $2
   cmp $4,$0
   mul $2,$4
 lpe
-mov $0,$1
+mov $0,$5

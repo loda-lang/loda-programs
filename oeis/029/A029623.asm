@@ -1,18 +1,33 @@
 ; A029623: Even numbers in (3,2)-Pascal triangle A029618.
-; Submitted by Opolis
+; Submitted by Kotenok2000
 ; 2,2,8,2,2,14,26,24,2,40,50,2,20,90,48,2,2,26,100,224,322,308,196,80,2,126,324,546,630,504,276,2,32,450,870,1176,1134,780,120,2,1320,2046,2310,1914,2,38,222,792,3366,4356,4224,1650,638,168,2,260,1014,7722
 
-mov $2,7257
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
-  sub $2,44
-  sub $2,$0
+  sub $2,38
+  mov $6,1
+  mov $7,0
   mov $3,$1
-  sub $3,$4
-  seq $3,29621 ; Numbers in (3,2)-Pascal triangle A029618 that are different from 3.
+  lpb $3
+    add $7,1
+    sub $3,$7
+    add $6,1
+  lpe
+  add $3,1
+  bin $6,$3
+  add $6,1
+  bin $7,$3
+  add $7,$6
+  add $7,$6
+  mov $3,$7
+  sub $3,2
   mov $5,$3
+  add $3,3
   mul $3,338
   gcd $3,4
-  add $3,1
+  add $3,3
   cmp $3,5
   sub $0,$3
   add $1,1
@@ -22,3 +37,7 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
+mul $0,2
+sub $0,2
+div $0,2
+add $0,1

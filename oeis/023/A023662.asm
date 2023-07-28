@@ -1,19 +1,15 @@
 ; A023662: Convolution of odd numbers and primes.
-; Submitted by [AF] Kalianthys
+; Submitted by Kotenok2000
 ; 2,9,24,51,96,165,264,399,576,805,1094,1451,1886,2405,3014,3723,4544,5485,6554,7761,9112,10615,12280,14117,16140,18361,20786,23421,26272,29345,32658,36229,40068,44183,48586,53289,58300,63631,69292
+; Formula: a(n) = b(n+1), b(n) = 2*c(n-1)+b(n-1)+d(n-1), b(2) = 9, b(1) = 2, b(0) = 0, c(n) = c(n-1)+d(n-1), c(2) = 5, c(1) = 2, c(0) = 0, d(n) = A159477(d(n-1)), d(2) = 5, d(1) = 3, d(0) = 2
 
-mov $1,$0
-add $1,1
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $5,$4
-  mov $0,$1
-  sub $0,$2
-  seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
-  add $3,$0
-  add $4,$3
+mov $3,2
+add $0,1
+lpb $0
+  sub $0,1
+  add $1,$2
+  add $2,$3
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $1,$2
 lpe
-add $5,$4
-mov $0,$5
+mov $0,$1

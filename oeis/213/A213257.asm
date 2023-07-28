@@ -7,7 +7,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,96271 ; Ternary sequence that is a fixed point of the morphism 0 -> 01, 1 -> 02, 2 -> 00.
-  seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  seq $3,242112 ; a(n) = floor((2*n+6)/(5-(-1)^n)).
   cmp $3,1
   sub $0,$3
   add $1,1

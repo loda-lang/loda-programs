@@ -1,9 +1,9 @@
 ; A204173: Symmetric matrix based on f(i,j)=(2i-1 if max(i,j) is odd, and 0 otherwise), by antidiagonals.
 ; Submitted by Jamie Morken(w2)
-; 1,0,0,2,0,2,0,2,2,0,3,0,2,0,3,0,3,0,0,3,0,4,0,3,0,3,0,4,0,4,0,3,3,0,4,0,5,0,4,0,3,0,4,0,5,0,5,0,4,0,0,4,0,5,0,6,0,5,0,4,0,4,0,5,0,6,0,6,0,5,0,4,4,0,5,0,6,0,7,0,6,0,5,0,4,0,5,0,6,0,7,0,7,0,6,0,5,0,0
+; 1,0,0,2,0,2,0,2,2,0,3,0,2,0,3,0,3,0,0,3,0,4,0,3,0,3,0,4,0,4,0,3,3,0,4,0,5,0,4,0,3,0,4,0,5,0,5,0,4,0,0,4,0,5,0,6,0,5,0,4,0,4,0,5,0,6,0,6,0,5,0,4,4,0,5,0,6,0,7,0
 
 mov $2,$0
-seq $2,2262 ; Triangle read by rows: T(n,k), 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 mov $4,1
 seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 mov $5,$0
