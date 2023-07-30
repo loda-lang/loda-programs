@@ -18,7 +18,7 @@ lpb $0
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,265056 ; Partial sums of A234275.
+    seq $7,329835 ; Beatty sequence for (9+sqrt(101))/10.
     mul $7,$11
     mul $7,$$9
     add $5,1

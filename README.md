@@ -7,8 +7,7 @@ This repository contains programs that compute integer sequences from the OEIS. 
 generated (or "mined") using [loda-cpp](https://github.com/loda-lang/loda-cpp) and [loda-rust](https://github.com/loda-lang/loda-rust).
 You can find an overview of the programs and complete lists at [loda-lang.org](https://programs.loda-lang.org).
 
-For updates on new miner findings, you can check the [latest commits](https://github.com/loda-lang/loda-programs/commits/main)
-or subscribe to the [@lodaminer](https://twitter.com/lodaminer) channel on Twitter.
+For updates on new miner findings, you can check the [latest commits](https://github.com/loda-lang/loda-programs/commits/main).
 
 ## History of LODA Mining
 
@@ -18,6 +17,5 @@ or subscribe to the [@lodaminer](https://twitter.com/lodaminer) channel on Twitt
 
 The programs in this repository are published under the 
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-Integer sequence names and descriptions are made available by the
-[OEIS](https://oeis.org/) under the
-[Creative Commons Attribution Non-Commercial 3.0 license](https://creativecommons.org/licenses/by-nc/3.0/).
+For integer sequence names and descriptions please check the
+[OEIS End User License Agreement](https://oeis.org/wiki/The_OEIS_End-User_License_Agreement).

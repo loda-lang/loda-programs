@@ -1,5 +1,5 @@
 ; A215424: Primes congruent to {0, 1, 2, 4, 5, 6} mod 13.
-; Submitted by Science United
+; Submitted by p3d-cluster
 ; 2,5,13,17,19,31,41,43,53,67,71,79,83,97,109,131,149,157,173,197,199,223,227,239,251,277,313,317,331,353,379,383,409,421,431,433,443,457,461,487,499,509,521,547,563,577,587,599,613,617,641,643,677,691,719,733,743,769,773,797,811,821,823,859,863,877,911,929,937,941,953,967,977,1019,1031,1033,1093,1097,1109,1123
 
 mov $6,4
@@ -12,7 +12,7 @@ lpb $2
   add $6,1
   add $3,$1
   sub $3,$6
-  seq $4,354487 ; Triangle read by rows: T(n,k) is the denominator of the n-th term of the Somos-k sequence, 4 <= k <= n.
+  cmp $4,0
   mul $4,$3
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,$1

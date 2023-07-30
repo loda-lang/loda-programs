@@ -8,7 +8,7 @@ lpb $2
   mov $3,$1
   pow $3,7
   mod $3,43
-  seq $3,204177 ; Symmetric matrix based on f(i,j)=(1 if i=1 or j=1 or i=j, and 0 otherwise), by antidiagonals.
+  seq $3,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
   sub $0,$3
   add $1,1
   mov $4,$0

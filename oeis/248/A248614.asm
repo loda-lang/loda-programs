@@ -7,9 +7,10 @@ add $0,1
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,346467 ; a(n) is the least common multiple of the divisors d of n-1 such that d+1 is prime; a(1) = 1.
+  seq $3,27642 ; Denominator of Bernoulli number B_n.
+  sub $3,1
+  seq $3,96226 ; a(n) is the least exponent k > 1 such that m^k is congruent to m modulo n for all natural numbers m, or a(n) = 1 if no such k exists.
   sub $3,$1
-  add $3,1
   max $3,0
   min $3,1
   sub $0,$3

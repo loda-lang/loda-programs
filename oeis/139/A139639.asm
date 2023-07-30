@@ -1,23 +1,9 @@
 ; A139639: Numbers n such that 168n+31 is prime.
-; Submitted by Christian Krause
+; Submitted by thorsam
 ; 0,1,2,6,9,11,14,15,16,17,20,21,22,25,27,29,32,34,36,37,45,46,47,49,50,51,54,56,60,66,67,71,76,77,82,84,86,89,91,94,95,100,102,106,111,114,117,119,121,125,130,131,134,141,142,144,145,154,157,164,165,166,167,170,171,172,176,179,180,191,202,204,205,207,210,214,215,216,221,224
+; Formula: a(n) = A137657(n)/168
 
-mov $1,15
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  sub $2,2
-  mov $3,$1
-  mul $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,84
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-lpe
+mov $1,$0
+seq $1,137657 ; Primes that are simultaneously of the forms 24i+7 and 7j+24.
 mov $0,$1
-sub $0,99
-div $0,84
+div $0,168

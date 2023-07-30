@@ -4,5 +4,5 @@
 ; Formula: a(n) = A160541(4*n)+1
 
 mul $0,4
-seq $0,160541 ; Number of odd-then-even runs to reach 1 under the modified `3x+1' map: n -> n/2 if n is even, n -> (3n+1)/2 if n is odd.
+seq $0,160541 ; Number of odd-then-even runs to reach 1 from n under the modified "3x+1" map: x -> x/2 if x is even, x -> (3x+1)/2 if x is odd.
 add $0,1
