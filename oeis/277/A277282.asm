@@ -13,7 +13,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,114525 ; Triangle of coefficients of the Lucas (w-)polynomials.
+  pow $4,$0
+  seq $0,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
+  gcd $0,$4
+  add $0,$4
   trn $1,$0
   add $1,$0
 lpe

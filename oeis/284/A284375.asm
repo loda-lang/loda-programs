@@ -8,7 +8,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,7954 ; Product of decimal digits of n.
-  seq $3,132278 ; Number of distinct terms in rows 1 through n of the triangle of the Narayana numbers (A001263).
+  mov $5,$3
+  pow $5,2
+  mov $3,$5
+  div $3,4
+  add $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

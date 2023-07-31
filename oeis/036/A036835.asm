@@ -4,7 +4,7 @@
 
 mov $2,1
 mov $11,$0
-mov $0,3
+mov $0,4
 pow $0,2
 lpb $0
   sub $0,1
@@ -18,7 +18,7 @@ lpb $0
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,147754 ; Terms of this sequence are equal to gcd between two polynomials P1(n)=(512*n^4+1024*n^3+712*n^2+194*n+15) and P2(n)=(120*n^2+151*n+47) which are used in the BBP formula
+    seq $7,329835 ; Beatty sequence for (9+sqrt(101))/10.
     mul $7,$11
     mul $7,$$9
     add $5,1
@@ -28,6 +28,7 @@ lpb $0
   mov $9,10
   add $9,$12
   add $9,$2
+  sub $0,1
   mov $3,$6
   mov $$9,$3
   add $2,1

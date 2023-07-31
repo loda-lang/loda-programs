@@ -14,7 +14,7 @@ lpb $0
     mov $7,$2
     seq $7,8833 ; Largest square dividing n.
     sub $7,1
-    seq $7,286905 ; Positions of 1 in A286903; complement of A286904.
+    seq $7,47391 ; Numbers that are congruent to {1, 3, 5} mod 7.
     div $2,$7
   lpe
   add $2,1

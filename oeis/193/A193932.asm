@@ -14,7 +14,7 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
-    seq $7,49181 ; Revert transform of 2*(1 + x + x^2 + x^3 + x^4 + x^5 + x^6)-1/(1-x).
+    seq $7,49181 ; Revert transform of 2*x*(1 - x + x^2 - x^3 + x^4 - x^5)-x/(1+x).
     cmp $7,1
     mov $9,10
     add $9,$5

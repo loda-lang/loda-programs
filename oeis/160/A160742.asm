@@ -1,14 +1,13 @@
 ; A160742: a(n) = A151566(n)*2.
 ; Submitted by Kotenok2000
 ; 0,2,4,8,12,16,20,28,36,40,44,52,60,68,76,92,108,112,116,124,132,140,148,164,180,188,196,212,228,244,260,292,324,328,332,340,348,356,364,380,396,404,412,428,444,460,476,508,540,548,556,572,588,604,620,652,684
-; Formula: a(n) = 2*A001316((n-1)/2)+a(n-1), a(0) = 0
 
-lpb $0
-  sub $0,1
+mov $2,$0
+seq $2,151566 ; Leftist toothpicks (see Comments for definition).
+sub $0,1
+mov $1,$2
+lpb $2
   mov $2,$0
-  div $2,2
-  seq $2,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
-  add $1,$2
-  add $1,$2
+  mul $1,2
 lpe
 mov $0,$1

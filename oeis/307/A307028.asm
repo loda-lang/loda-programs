@@ -1,12 +1,11 @@
 ; A307028: Longest path length in the stacked book graph S_{n+1} square P_n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by elliptical
 ; 1,5,10,17,24,33,42,53
-; Formula: a(n) = ((2*n+1)*(2*n+11))/7
+; Formula: a(n) = (n*(n+8)-1)/2+1
 
-mul $0,2
-mov $1,11
-add $1,$0
+mov $1,$0
+add $0,8
+mul $0,$1
+sub $0,1
+div $0,2
 add $0,1
-mul $1,$0
-div $1,7
-mov $0,$1

@@ -2,20 +2,19 @@
 ; Submitted by Kotenok2000
 ; 1,4,9,12,14,17,20,22,25,30,33,35,38,41,43,46,48,51,54,56,59,64,67,69,72,75,77,80,85,88,90,93,98,101,103,106,109,111,114,119,122,124,127,130,132,135,140,143,145,148,153,156,158,161,164,166,169,174,177,179,182
 
-mov $1,3
 mov $2,$0
-add $2,2
 pow $2,2
+add $2,6
 lpb $2
   mov $3,$1
-  seq $3,195171 ; a(n) = 5*n - floor(n*r), where r=(1+sqrt(5))/2 (the golden ratio).
+  seq $3,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
   mod $3,3
-  div $3,2
+  mod $3,2
   sub $0,$3
-  add $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,3
   mul $2,$4
   sub $2,1
 lpe

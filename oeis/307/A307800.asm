@@ -1,18 +1,27 @@
 ; A307800: Binomial transform of least common multiple sequence (A003418), starting with a(1).
-; Submitted by ChelseaOilman
+; Submitted by Kotenok2000
 ; 1,3,11,37,153,551,2023,7701,29417,107083,384771,1408133,5457961,22466367,92977823,365613181,1342359393,4677908531,16159185307,58676063493,231520762361,967464685783,4052593703511,16354948948517,62709285045913,229276436653851
 
+mov $2,$0
 mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,100442 ; Binomial transform of A003418.
-  mov $2,$3
-  mul $2,$0
-  add $1,$2
-  mov $5,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  mov $5,1
+  add $5,$0
+  lpb $0
+    mov $6,$5
+    gcd $6,$0
+    mul $5,$0
+    div $5,$6
+    sub $0,1
+  lpe
+  mul $1,$5
+  add $3,$1
 lpe
-sub $1,$5
-mov $0,$1
+mov $0,$3

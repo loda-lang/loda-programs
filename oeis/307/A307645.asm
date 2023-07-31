@@ -1,5 +1,5 @@
 ; A307645: Numbers that are the sum of a positive triangular number and a positive cube.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 2,4,7,9,11,14,16,18,22,23,28,29,30,33,36,37,42,44,46,48,53,55,56,63,65,67,70,72,74,79,82,85,86,92,93,99,100,105,106,109,113,118,119,121,126,128,130,131,132,135,137,140,142,144,146,147,153,154,155,161,163,169,170,172,179
 
 mov $2,$0
@@ -20,7 +20,7 @@ lpb $2
     pow $6,$5
     add $8,$9
     add $5,$6
-    mov $7,1
+    mov $7,$5
     add $7,$8
     add $9,6
   lpe

@@ -1,24 +1,7 @@
 ; A120533: Primes having a prime number of digits.
 ; Submitted by Saenger
 ; 11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409,419,421,431,433
+; Formula: a(n) = A006005(n+4)
 
-sub $0,1
-mov $2,5
-add $2,$0
-mov $3,$2
-mul $3,2
-sub $3,2
-mov $4,4
-mov $5,$3
-pow $5,4
-lpb $5
-  max $1,$4
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $1,2
-  sub $3,$1
-  add $4,2
-  sub $5,$3
-lpe
-add $3,$4
-sub $3,1
-mov $0,$3
+add $0,4
+seq $0,6005 ; The odd prime numbers together with 1.

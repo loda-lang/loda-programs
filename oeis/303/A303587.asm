@@ -9,7 +9,7 @@ lpb $2
   mov $0,$4
   add $0,$2
   trn $0,1
-  seq $0,303586 ; Number of partitions of n that contain no isolated singletons.
+  seq $0,303586 ; Number of partitions of [n] that contain no isolated singletons.
   mov $1,$2
   mul $1,$0
   add $3,$1

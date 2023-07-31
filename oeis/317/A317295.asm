@@ -1,27 +1,28 @@
 ; A317295: Numbers with a composite number of 1's in their binary expansion.
-; Submitted by PDW
+; Submitted by Kotenok2000
 ; 15,23,27,29,30,39,43,45,46,51,53,54,57,58,60,63,71,75,77,78,83,85,86,89,90,92,95,99,101,102,105,106,108,111,113,114,116,119,120,123,125,126,135,139,141,142,147,149,150,153,154,156,159,163,165,166,169,170,172,175,177,178,180,183,184,187,189,190
 
-mov $4,10
+add $0,2
 mov $2,$0
-add $2,10
-pow $2,2
+sub $0,1
+pow $2,8
 lpb $2
+  mov $4,0
   mov $3,$1
-  seq $3,111412 ; f(f(n+1))-f(f(n)), where f(m) = wt(m) = A000120(m).
-  gcd $3,2
-  add $4,3
+  seq $3,238015 ; Denominator of (2*n+1)!*8*Bernoulli(2*n,1/2).
+  lpb $3
+    mov $5,$3
+    mul $5,24
+    add $5,2
+    mod $5,10
+    trn $5,4
+    div $3,10
+    add $4,$5
+  lpe
+  mov $3,$4
+  cmp $3,0
   sub $0,$3
-  add $0,1
-  add $1,$4
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
-sub $0,122
-div $0,8
-add $0,15
