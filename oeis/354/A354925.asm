@@ -6,8 +6,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,89233 ; Number of coprime pairs of divisors > 1 of n.
   mov $3,$1
-  seq $3,354923 ; a(n) = 1 if n is either a power of prime or 2*prime, otherwise 0.
+  mod $3,2
+  bin $3,$5
   add $3,$4
   sub $0,$3
   add $0,1

@@ -1,28 +1,49 @@
 ; A334782: a(n) = Sum_{d|n} lcm(d, tau(d)).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,3,7,15,11,21,15,23,16,33,23,45,27,45,77,103,35,48,39,105,105,69,47,77,86,81,124,141,59,231,63,199,161,105,165,108,75,117,189,153,83,315,87,213,176,141,95,397,162,258,245,249,107,372,253,205,273,177
 
 mov $2,$0
 add $2,1
 mov $4,$0
-add $4,1
 lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  mov $1,$2
+  mov $1,$0
   gcd $1,$4
   bin $1,$0
-  add $7,1
-  sub $0,$1
+  pow $0,$1
+  sub $0,1
+  mov $7,1
+  mov $8,2
   mov $5,$0
-  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mov $6,$5
+  add $5,1
+  lpb $5
+    mov $9,$5
+    sub $9,1
+    lpb $9
+      mov $10,$5
+      mod $10,$8
+      min $10,1
+      add $8,1
+      sub $9,$10
+    lpe
+    mov $11,1
+    lpb $5
+      dif $5,$8
+      add $11,1
+    lpe
+    mul $7,$11
+  lpe
+  mov $6,$0
+  add $6,1
   gcd $6,$7
-  div $5,$6
-  mul $0,$5
-  add $0,$5
-  mul $1,$0
+  add $0,1
+  mov $5,$7
+  dif $5,$6
+  mul $5,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3
+add $0,1

@@ -1,5 +1,5 @@
 ; A335031: Complement of A334919.
-; Submitted by Jason Jung
+; Submitted by Kotenok2000
 ; 1,2,3,4,6,7,10,11,12,14,15,19,20,22,24,26,27,31,32,34,35,36,39,42,46,47,50,52,54,55,59,60,64,66,67,70,71,74,75,76,80,87,90,91,92,94,99,102,104,110,111,112,115,116,119,122,124,126,127,131,132,136
 
 mov $2,$0
@@ -7,7 +7,19 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,46079 ; Number of Pythagorean triangles with leg n.
+  add $3,1
+  dif $3,2
+  mov $5,0
+  mov $6,$3
+  lpb $3
+    mov $7,$6
+    dif $7,$3
+    cmp $7,$6
+    cmp $7,0
+    sub $3,2
+    add $5,$7
+  lpe
+  mov $3,$5
   cmp $3,1
   sub $0,$3
   add $1,3

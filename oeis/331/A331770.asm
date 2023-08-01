@@ -6,13 +6,10 @@ add $0,1
 lpb $0
   sub $0,1
   mul $0,2
-  add $2,5
-  add $2,$0
-  bin $2,$0
-  bin $3,0
-  mul $3,$2
+  add $1,5
+  add $1,$0
+  bin $1,$0
   mov $0,0
-  add $1,$3
 lpe
 mov $0,$1
 mul $0,1008

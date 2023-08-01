@@ -13,11 +13,14 @@ lpb $4
   mov $1,$2
   gcd $1,$4
   bin $1,$0
+  mul $0,$1
   sub $0,$1
   mov $5,$0
-  seq $5,359792 ; a(n) = (-1)^A003415(n), where A003415 is the arithmetic derivative of n.
-  mul $0,$5
-  add $0,$5
+  seq $5,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
+  mov $6,-1
+  pow $6,$5
+  mul $0,$6
+  add $0,$6
   mul $1,$0
   add $3,$1
 lpe

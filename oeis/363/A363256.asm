@@ -1,10 +1,9 @@
 ; A363256: Number of length n strings on the alphabet {0,1,2,3} with digit sum at most 4.
 ; Submitted by Science United
 ; 1,4,13,32,66,121,204,323,487,706,991,1354,1808,2367,3046,3861,4829,5968,7297,8836,10606,12629,14928,17527,20451,23726,27379,31438,35932,40891,46346,52329,58873,66012,73781,82216,91354,101233,111892,123371,135711
-; Formula: a(n) = -n+binomial(n+4,4)
+; Formula: a(n) = -n+binomial(n+4,n)
 
 mov $1,$0
-add $1,4
-bin $1,4
-sub $1,$0
-mov $0,$1
+add $0,4
+bin $0,$1
+sub $0,$1

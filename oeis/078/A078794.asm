@@ -31,8 +31,7 @@ lpe
 gcd $7,$0
 mov $0,$7
 div $0,$2
-mul $0,2
-div $0,30
+div $0,15
 mul $0,5
 add $0,1
 mul $0,$1

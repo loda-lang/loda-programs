@@ -6,14 +6,14 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  add $1,4
   mov $3,$1
-  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+  add $3,5
   seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   sub $3,1
   min $3,1
   cmp $3,1
   sub $0,$3
+  add $1,4
   mov $4,$0
   max $4,0
   cmp $4,$0

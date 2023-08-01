@@ -12,7 +12,14 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,276858 ; First differences of the Beatty sequence A022842 for sqrt(8).
+  mul $0,2
+  mov $5,$0
+  seq $5,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  add $0,2
+  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  add $0,$5
+  mod $0,2
+  add $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

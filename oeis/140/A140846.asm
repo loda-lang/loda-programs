@@ -1,19 +1,33 @@
 ; A140846: Primes of the form 210k + 31.
-; Submitted by Jamie Morken(w4)
+; Submitted by Kotenok2000
 ; 31,241,661,1291,2131,2341,2551,2971,3181,3391,4021,4231,4441,4651,4861,5281,5701,6121,6961,7591,8011,8221,8431,8641,9901,10111,10321,10531,11161,12211,12421,12841,13681,14731,15361,15991,16411,16831,17041
 
 add $0,1
-mov $2,15
+mov $2,30
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $5,0
   mov $1,$2
-  mul $1,2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $2,105
+  add $1,1
+  lpb $1
+    add $5,$2
+    gcd $5,3
+    mov $6,$1
+    div $6,6
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $2,70
   sub $3,$0
 lpe
-add $0,$2
-mul $0,2
-sub $0,1
+mov $0,$2
+add $0,1

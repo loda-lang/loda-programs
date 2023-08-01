@@ -1,12 +1,12 @@
 ; A347634: Number of minimum dominating sets in the n-prism graph (for n > 3 except n = 6).
-; Submitted by rboden
+; Submitted by [AF>Libristes] Dudumomo
 ; 2,8,6,4,10,48,14,4,18,120,22,4,26,224,30,4,34,360,38,4,42,528,46,4,50,728,54,4,58,960,62,4,66,1224,70,4,74,1520,78,4,82,1848,86,4,90,2208,94,4,98,2600,102,4,106,3024,110,4,114,3480,118,4,122,3968
 
 mov $1,1
 add $0,1
 lpb $0
   add $7,$1
-  mov $3,$0
+  add $3,2
   lpb $3
     cmp $6,0
     mov $1,$7

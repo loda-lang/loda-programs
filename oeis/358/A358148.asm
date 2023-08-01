@@ -1,6 +1,7 @@
 ; A358148: Aliquot sequence starting at 326.
 ; Submitted by Ciceronian
 ; 326,166,86,46,26,16,15,9,4,3,1,0
+; Formula: a(n) = (2*A000203(max(a(n-1)-1,0))-2*max(a(n-1)-1,0)-1)/2, a(0) = 326
 
 mov $2,$0
 mov $0,326

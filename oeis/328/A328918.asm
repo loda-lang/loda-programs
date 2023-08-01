@@ -1,6 +1,7 @@
 ; A328918: a(n) is the number of ordered pairs of positive integers (x, y) with x + y = 10^n, where x and y each have exactly n-digits but with initial zero digits allowed, and as strings, x and y are permutations of each other.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,11,11,281,281,11181,11181,563131,563131,32795191,32795191,2103687091,2103687091,144420919291,144420919291,10421915468041,10421915468041,781300466839541,781300466839541,60358948031151561,60358948031151561,4777791013174712961
+; Formula: a(n) = b(n/2)+1, b(n) = b(n-1)+A287317(n), b(0) = 0
 
 div $0,2
 lpb $0

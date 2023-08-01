@@ -1,5 +1,5 @@
 ; A347525: Number of minimum dominating sets in the n-Andrásfai graph.
-; Submitted by Jamie Morken(w2)
+; Submitted by Kotenok2000
 ; 2,5,24,22,28,34,40,46,52,58,64,70,76,82,88,94,100,106,112,118,124,130,136,142,148,154,160,166,172,178,184,190,196,202,208,214,220,226,232,238,244,250,256,262,268,274,280,286,292,298,304,310,316,322,328,334
 
 mov $7,$0
@@ -18,7 +18,7 @@ lpb $6
     div $0,$2
     div $0,2
     max $0,0
-    seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+    seq $0,105677 ; Highest minimal Hamming distance of any Type 4^E Euclidean linear self-dual code over GF(4) of length 2n.
     sub $0,1
     mul $3,$4
     mul $2,2

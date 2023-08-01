@@ -4,8 +4,8 @@
 
 mov $1,$0
 gcd $1,2
-mov $2,$0
 mov $3,6
+mov $2,$0
 lpb $2
   gcd $3,$2
   mul $3,4
@@ -19,8 +19,6 @@ mov $4,$2
 div $4,3
 mul $4,3
 add $2,$4
-add $2,3
-sub $2,3
 mul $2,4
 div $2,5
 mul $2,$1

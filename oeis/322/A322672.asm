@@ -10,17 +10,16 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
+  max $4,$0
   mov $1,$0
   gcd $1,$4
   bin $1,$0
   bin $0,$1
   sub $0,1
-  seq $0,7956 ; Product of the proper divisors of n.
+  seq $0,7955 ; Product of divisors of n.
   mul $0,$3
   mul $1,$0
   max $3,$1
 lpe
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

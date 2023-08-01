@@ -1,12 +1,28 @@
 ; A358821: a(n) is the largest square dividing n^2 - 1.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Kotenok2000
 ; 1,4,1,4,1,16,9,16,9,4,1,4,1,16,1,144,1,36,1,4,1,16,25,16,225,4,9,4,1,64,1,64,1,36,1,36,1,16,1,16,1,4,9,4,9,16,49,400,49,100,1,36,1,144,1,16,1,4,1,4,9,64,9,64,1,4,1,4,1,144,1,144,25,4
 
 add $0,2
 pow $0,2
-sub $0,2
-mov $1,2
-lpb $1
-  mov $1,1
-  seq $0,8833 ; Largest square dividing n.
+sub $0,1
+mov $1,1
+mov $3,1
+mov $4,1
+mov $2,$0
+lpb $2
+  add $3,2
+  add $4,$3
+  mov $5,$0
+  mod $5,$4
+  cmp $5,0
+  mov $6,$4
+  sub $6,$1
+  mul $6,$5
+  add $1,$6
+  mov $5,$0
+  trn $5,$4
+  cmp $5,0
+  cmp $5,0
+  sub $2,$5
 lpe
+mov $0,$1

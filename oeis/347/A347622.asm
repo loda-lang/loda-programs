@@ -1,5 +1,5 @@
 ; A347622: Number of partitions of n into at most 2 prime parts (counting 1 as a prime).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,2,2,2,2,2,2,2,1,2,1,2,2,3,1,2,1,3,2,3,1,3,1,4,1,3,0,2,1,4,2,3,1,4,0,4,1,3,1,3,1,5,2,4,1,4,1,6,1,4,0,3,1,6,1,3,0,4,1,7,2,4,1,5,0,6,1,3,1,5,1,7,2,6,1,5
 
 mov $2,$0
@@ -14,7 +14,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
-    seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+    seq $7,191558 ; a(n) = 0 if n prime, otherwise n.
     div $7,3
     cmp $7,$8
     mov $9,10
