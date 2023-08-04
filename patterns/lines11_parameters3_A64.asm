@@ -1,11 +1,11 @@
 mov $3,3 ; source=parameter 0
-add $0,3 ; source=parameter 1
+add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,8637 ; source=parameter 2
+  seq $2,1304 ; source=parameter 1
   add $1,$2
-  mov $3,9 ; source=parameter 3
+  mov $3,10 ; source=parameter 2
 lpe
 mov $0,$1

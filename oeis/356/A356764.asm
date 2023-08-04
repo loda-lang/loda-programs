@@ -1,13 +1,16 @@
 ; A356764: Semiprimes divisible by their indices in the sequence of semiprimes, divided by those indices.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Groo
 ; 4,3,3,3,3,3,3,5,5,5,5,5,5,7,7,7,7
 
-mov $1,1
-trn $1,$0
-lpb $0
-  trn $0,6
-  add $1,$2
-  mov $2,2
+mov $1,$0
+mul $0,2
+sub $0,3
+div $0,11
+add $0,1
+lpb $1
+  mov $1,0
+  sub $0,1
+  mul $0,2
 lpe
-mov $0,$1
 add $0,3
+mod $0,10

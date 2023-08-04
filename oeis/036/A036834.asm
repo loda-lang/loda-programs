@@ -1,24 +1,25 @@
 ; A036834: Schoenheim bound L_1(n,7,6).
-; Submitted by Kotenok2000
+; Submitted by Fardringle
 ; 1,7,16,39,70,158,246,490,746,1253,1768,2893,3876,5963,7872,11308,14421,20359,25300,34621,42622,56160,67860,88513,105201,134629,159004,198862,231880,287851,332112,407105,467677,564018,642377
 
 mov $2,1
 mov $11,$0
-mov $0,4
-pow $0,2
+mov $0,3
+mul $0,2
+add $0,1
 lpb $0
   sub $0,1
   add $11,1
   mov $4,$2
   lpb $4
     trn $4,1
+    mov $6,$5
     mov $9,10
     add $9,$5
     add $9,1
     mov $12,1
-    mov $6,$5
     mov $7,$4
-    seq $7,329835 ; Beatty sequence for (9+sqrt(101))/10.
+    seq $7,147754 ; Terms of this sequence are equal to gcd between two polynomials P1(n)=(512*n^4+1024*n^3+712*n^2+194*n+15) and P2(n)=(120*n^2+151*n+47) which are used in the BBP formula
     mul $7,$11
     mul $7,$$9
     add $5,1
@@ -28,10 +29,9 @@ lpb $0
   mov $9,10
   add $9,$12
   add $9,$2
-  sub $0,1
   mov $3,$6
   mov $$9,$3
   add $2,1
   mod $5,-1
 lpe
-mov $0,$18
+mov $0,$3

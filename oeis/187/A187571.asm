@@ -4,9 +4,9 @@
 
 mov $1,$0
 mov $5,2
+seq $0,187570 ; Rank transform of the sequence ceiling(n/3); complement of A187571.
 mov $2,1
 lpb $2
-  seq $0,187570 ; Rank transform of the sequence ceiling(n/3); complement of A187571.
   mov $4,1
   lpb $5
     sub $5,1

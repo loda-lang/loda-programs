@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   seq $3,43557 ; Number of runs in base-5 representation of n.
   trn $3,2
-  min $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

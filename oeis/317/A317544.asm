@@ -7,15 +7,8 @@ mov $2,$0
 sub $0,1
 pow $2,8
 lpb $2
-  mov $4,0
   mov $3,$1
   seq $3,317542 ; Formal inverse of the period-doubling sequence A096268.
-  lpb $3
-    div $3,10
-    sub $5,4
-    add $4,$5
-  lpe
-  mov $3,$4
   cmp $3,0
   sub $0,$3
   add $1,1

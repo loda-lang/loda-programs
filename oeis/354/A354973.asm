@@ -1,5 +1,5 @@
 ; A354973: a(0)=0; for n > 0, a(n) = 2*a(n-1) if n-1 is prime, a(n-1) + 1 otherwise.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Kotenok2000
 ; 0,1,2,4,8,9,18,19,38,39,40,41,82,83,166,167,168,169,338,339,678,679,680,681,1362,1363,1364,1365,1366,1367,2734,2735,5470,5471,5472,5473,5474,5475,10950,10951,10952,10953,21906,21907,43814,43815,43816,43817,87634
 
 lpb $0
@@ -8,7 +8,7 @@ lpb $0
   mov $4,$2
   lpb $4
     trn $4,1
-    add $9,$5
+    add $4,$5
     mov $7,$4
     seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
     cmp $7,2

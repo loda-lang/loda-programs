@@ -1,13 +1,11 @@
 ; A020987: Zero-one version of Golay-Rudin-Shapiro sequence (or word).
-; Submitted by Fardringle
+; Submitted by Stony666
 ; 0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,1,1,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,1,0,1
 
-lpb $0
-  mov $1,$0
-  mod $1,4
-  div $1,3
-  div $0,2
-  add $2,$1
-lpe
-mov $0,$2
+mov $2,$0
+seq $2,20985 ; The Rudin-Shapiro or Golay-Rudin-Shapiro sequence (coefficients of the Shapiro polynomials).
+cmp $2,1
+add $1,$2
+add $1,7
+mov $0,$1
 mod $0,2

@@ -1,8 +1,14 @@
 ; A324118: Sum of odd divisors in A156552(n): a(1) = 0, for n > 1, a(n) = A000593(A156552(n)) = A000203(A322993(n)).
-; Submitted by Landjunge
+; Submitted by Kotenok2000
 ; 0,1,1,4,1,6,1,8,4,13,1,12,1,18,6,24,1,14,1,20,13,48,1,24,4,84,8,48,1,32,1,32,18,176,6,40,1,258,48,56,1,38,1,68,12,800,1,48,4,31,84,132,1,30,13,72,176,1302,1,44,1,2736,20,104,18,96,1,304,258,42,1,72,1,4356,14,624,6,160,1,80
-; Formula: a(n) = A004011(A322993(n))/24
 
 seq $0,322993 ; a(1) = 0; for n > 1, a(n) = A000265(A156552(n)).
-seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
-div $0,24
+mul $0,2
+sub $0,1
+lpb $0
+  div $0,2
+  mov $1,$0
+  seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $0,2
+lpe
+mov $0,$1

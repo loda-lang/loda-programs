@@ -1,36 +1,10 @@
-; A364668: 
+; A364668: Lower independence number of the n-Goldberg graph.
 ; Submitted by waffleironhead
 ; 0,3,5,7,9,11,14,16,18,20,22,25,27,29,31,33,36,38,40,42,44,47,49,51,53,55,58,60,62,64,66,69,71,73,75,77,80,82,84,86,88,91,93,95,97,99,102,104,106,108,110,113,115,117,119,121,124,126,128,130,132
+; Formula: a(n) = (n+4)/5+2*n
 
-mov $9,$0
-mov $7,$0
-add $7,1
-lpb $7
-  sub $7,1
-  mov $0,$9
-  sub $0,$7
-  mov $2,5
-  mov $5,8
-  mov $6,1
-  add $0,2
-  lpb $0
-    add $8,$0
-    sub $0,1
-    sub $2,$0
-    mov $3,$8
-    add $4,1
-    div $5,2
-    add $6,4
-    mov $8,$6
-    mod $0,$4
-    mul $2,$5
-    add $2,$3
-    gcd $2,$6
-  lpe
-  sub $2,2
-  div $2,2
-  add $2,2
-  add $1,$2
-lpe
-mov $0,$1
-sub $0,2
+mov $1,$0
+mul $1,2
+add $0,4
+div $0,5
+add $0,$1

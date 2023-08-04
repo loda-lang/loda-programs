@@ -4,6 +4,15 @@
 
 mov $1,-1
 pow $1,$0
+mov $3,1
 mul $0,2
-seq $0,2019 ; a(n) = a(n-1) - (n-1)(n-2)a(n-2).
+lpb $0
+  mul $4,$0
+  sub $0,1
+  mov $2,$4
+  mul $2,$0
+  mov $4,$3
+  sub $3,$2
+lpe
+mov $0,$3
 mul $0,$1

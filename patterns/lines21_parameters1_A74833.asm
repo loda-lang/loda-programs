@@ -6,7 +6,7 @@ lpb $2
   mov $3,$1
   seq $3,40
   mov $5,$3
-  seq $3,30107 ; source=parameter 0
+  seq $3,30102 ; source=parameter 0
   mul $3,2
   sub $3,1
   seq $3,1222

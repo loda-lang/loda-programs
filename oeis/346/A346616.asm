@@ -12,10 +12,19 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  bin $0,$1
-  sub $0,1
-  seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
-  mul $1,$0
+  mov $6,0
+  mul $0,$1
+  mov $5,$0
+  lpb $0
+    add $6,1
+    lpb $6
+      mul $6,$0
+      dif $6,$5
+      mov $0,$5
+    lpe
+    sub $0,1
+  lpe
+  mul $1,$6
   add $3,$1
 lpe
 mov $0,$3

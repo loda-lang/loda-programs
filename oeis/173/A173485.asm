@@ -2,8 +2,24 @@
 ; Submitted by Gunnar Hjern
 ; 100,1000,30000,100000,1000000,30000000,700000000,1000000000,90000000000,100000000000,0,30000000000000,0,7000000000000000,30000000000000000
 
+mov $4,1
+add $4,$0
 mov $2,$0
-seq $2,173478 ; a(n) = the smallest number ending in n-1 zeros divisible by n.
+add $2,1
+mov $6,10
+pow $6,$2
+min $2,1
+mul $2,$6
+mov $5,$2
+gcd $5,$4
+mul $2,91
+mul $4,$2
+dif $4,5
+div $4,$5
+mov $2,$4
+sub $2,182
+div $2,182
+add $2,1
 add $0,1
 mov $1,$0
 mov $0,10

@@ -1,21 +1,21 @@
 ; A189465: Positions of 1 in A189463.
-; Submitted by Kotenok2000
+; Submitted by Fardringle
 ; 2,6,7,10,11,15,19,23,24,27,28,32,36,40,44,45,49,53,57,61,62,65,66,70,74,78,79,82,83,87,91,95,96,99,100,104,108,112,116,117,121,125,129,133,134,137,138,142,146,150,151,154,155,159,163,167,168,171,172,176,180,184,188,189,193,197,201,205,206,209,210,214,218,222,223,226,227,231,235,239
 
-mov $1,3
 mov $2,$0
-add $2,2
 pow $2,2
+add $2,6
 lpb $2
   mov $3,$1
-  seq $3,195172 ; a(n) = 4*n - floor(2*n*r), where r=(1+sqrt(5))/2 (the golden ratio).
+  mul $3,2
+  seq $3,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
   mod $3,3
-  div $3,2
+  mod $3,2
   sub $0,$3
-  add $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0
+  add $1,3
   mul $2,$4
   sub $2,1
 lpe

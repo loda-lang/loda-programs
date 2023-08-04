@@ -1,22 +1,41 @@
 ; A028317: Even elements in the 5-Pascal triangle A028313.
-; Submitted by nenym
+; Submitted by Science United
 ; 6,6,12,8,8,38,10,36,36,10,46,130,46,12,12,204,378,462,378,204,14,82,582,840,840,582,82,14,96,1422,1680,1422,96,16,1210,3102,3102,1210,16,562,6204,562,18,144,5148,8866,8866,5148,144,18,162,2912,14014,23166
 
-mov $2,7261
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
-  sub $2,64
+  sub $2,31
+  mov $6,1
+  mov $7,0
   mov $3,$1
-  seq $3,28314 ; Elements in the 5-Pascal triangle A028313 that are not 1.
+  lpb $3
+    add $7,1
+    sub $3,$7
+    add $6,1
+  lpe
+  sub $6,1
+  bin $6,$3
+  mul $6,3
+  add $3,1
+  add $7,2
+  bin $7,$3
+  add $6,$7
+  mov $3,$6
+  add $3,1
   mov $5,$3
-  add $1,1
+  add $3,3
   mul $3,338
   gcd $3,4
   add $3,1
   cmp $3,5
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
 lpe
 mov $0,$5
+sub $0,1

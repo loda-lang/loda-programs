@@ -1,5 +1,5 @@
 ; A347648: Number of partitions of n into at most 2 squarefree parts.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,1,2,2,2,2,3,3,3,2,3,3,4,4,4,4,5,5,4,4,6,5,6,5,7,5,6,5,7,6,6,6,8,7,8,7,11,8,8,8,11,9,9,10,13,10,9,9,13,10,8,8,14,11,10,8,13,11,12,10,15,12,12,11,15,12,12,12,18,13,14,12,21,14,15,13
 
 mov $2,1
@@ -16,7 +16,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
-    seq $7,228483 ; a(n) = 2 - mu(n), where mu(n) is the Moebius function (A008683).
+    seq $7,7424 ; a(n) = 1 if n is squarefree, otherwise 2.
     cmp $7,2
     cmp $7,$8
     mov $9,10
