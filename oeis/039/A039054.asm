@@ -12,10 +12,7 @@ lpb $2
   seq $3,8539 ; Numbers that do not contain the letter `s'.
   lpb $3
     mov $5,$3
-    add $5,5
-    mul $5,3
-    mod $5,10
-    add $5,5
+    gcd $5,10
     seq $5,131533 ; Period 6: repeat [0, 0, 0, 0, 1, -1].
     div $3,10
     add $4,$5

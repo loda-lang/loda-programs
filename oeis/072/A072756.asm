@@ -15,8 +15,8 @@ lpb $3
     mov $0,$2
     trn $0,1
     seq $0,26343 ; Least k such that s(k) = n, where s = A026342.
+    min $2,1
   lpe
-  min $2,1
   mul $2,$0
 lpe
 add $2,1

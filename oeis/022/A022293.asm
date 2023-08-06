@@ -5,9 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,294448 ; Discrepancy of the Kolakoski sequence A000002.
+  add $3,1
+  mov $5,$1
+  seq $5,156242 ; Bisection of A054353.
+  mod $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   add $1,1
@@ -18,5 +21,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,2
 add $0,1

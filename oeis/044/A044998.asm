@@ -1,4 +1,4 @@
-; A044998: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 1 and 4, respectively.
+; A044998: Numbers whose base-3 representation contains exactly one 0 and four 2's.
 ; Submitted by damotbe
 ; 188,224,236,240,323,431,467,479,483,539,557,563,565,593,629,641,645,665,671,673,683,695,699,707,709,713,717,721,723,890,944,962,968,970,1052,1160,1196,1208,1212,1268,1286,1292,1294
 

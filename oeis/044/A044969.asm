@@ -1,4 +1,4 @@
-; A044969: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 0 and 4, respectively.
+; A044969: Numbers whose base-3 representation contains no 0's and exactly four 1's.
 ; Submitted by damotbe
 ; 40,122,124,130,148,202,368,374,376,392,394,400,446,448,454,472,608,610,616,634,688,1106,1124,1130,1132,1178,1184,1186,1202,1204,1210,1340,1346,1348,1364,1366,1372,1418,1420,1426,1444
 
