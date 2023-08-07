@@ -16,7 +16,7 @@ lpb $0
   lpe
   mov $3,$2
   sub $3,1
-  seq $3,252464 ; a(1) = 0, a(2n) = 1 + a(n), a(2n+1) = 1 + a(A064989(2n+1)); also binary width of terms of A156552 and A243071.
+  seq $3,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
   mov $5,1
   lpb $0
     dif $0,$2

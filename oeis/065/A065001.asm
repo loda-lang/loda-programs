@@ -8,7 +8,7 @@ div $0,10
 add $2,6
 pow $2,3
 lpb $2
-  sub $2,1
+  sub $2,6
   mov $5,$1
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $3,$1

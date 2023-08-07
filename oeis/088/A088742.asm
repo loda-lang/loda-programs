@@ -2,21 +2,26 @@
 ; Submitted by Kotenok2000
 ; 1,1,2,1,3,1,1,3,3,1,1,2,1,4,1,3,3,1,1,2,1,3,1,1,3,4,1,2,1,4,1,3,3,1,1,2,1,3,1,1,3,3,1,1,2,1,4,1,3,4,1,2,1,3,1,1,3,4,1,2,1,4,1,3,3,1,1,2,1,3,1,1,3,3,1,1,2,1,4,1
 
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
-  sub $0,1
+add $0,2
+mov $2,$0
+sub $0,1
+pow $2,2
+lpb $2
+  sub $2,1
+  mov $3,$5
+  seq $3,14577 ; The regular paper-folding sequence (or dragon curve sequence).
+  sub $0,$3
   mov $4,$0
-  max $4,0
-  seq $4,91072 ; Numbers whose odd part is of the form 4k+1. The bit to the left of the least significant bit of each term is unset.
-  mov $2,$5
+  max $4,1
+  cmp $4,$0
+  add $5,1
+  add $1,$0
   mul $2,$4
-  mul $0,$5
-  add $1,$2
+  lpb $3
+    div $3,3
+    mov $1,0
+    sub $2,1
+  lpe
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
 mov $0,$1
+add $0,1

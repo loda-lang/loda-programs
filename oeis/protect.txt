@@ -4,6 +4,7 @@ A000065: -1 + number of partitions of n.
 A000120: 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 A000142: Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 A000169: Number of labeled rooted trees with n nodes: n^(n-1).
+A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 A000312: a(n) = n^n; number of labeled mappings from n points to themselves (endofunctions).
 A001041: a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
 A001065: Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
@@ -58,6 +59,7 @@ A014688: a(n) = n-th prime + n.
 A014689: a(n) = prime(n)-n, the number of nonprimes less than prime(n).
 A014690: a(n) = n + prime(n+1).
 A014692: a(n) = prime(n) - (n-1).
+A014709: The regular paper-folding (or dragon curve) sequence.
 A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A020552: 6th Fibonacci polynomial evaluated at x=n!.

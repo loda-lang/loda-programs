@@ -495,6 +495,7 @@ A225569: Decimal expansion of Sum_{n>=0} 1/10^(3^n), a transcendental number.
 A225687: a(n) = A030124(n) - n.
 A226123: Number of terms of the form 2^k in Collatz(3x+1) trajectory of n.
 A226133: Integers of the form (pq-1)/24 where p < q are primes.
+A230642: Number of integers m such that m + (sum of digits in base-3 representation of m) = n.
 A230980: Number of primes <= n, starting at n=0.
 A232324: n(n+1)/2 modulo sigma(n).
 A232437: Numbers whose square is expressible in only one way as x^2+xy+y^2, with x and y > 0.

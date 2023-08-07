@@ -1,4 +1,4 @@
-; A271787: Integers n that are the sum of two nonzero squares while n*(n+1) is not.
+; A271787: Integers k that are the sum of two nonzero squares while k*(k+1) is not.
 ; Submitted by [AF] Kalianthys
 ; 2,5,10,13,18,20,26,29,32,34,37,41,45,50,53,58,61,65,68,74,82,85,90,98,101,104,106,109,113,117,122,125,128,130,137,146,149,153,157,160,162,164,170,173,178,181,185,194,197,200,202,205,208,212,218,221,226,229,234,242,245,250,257,261
 
