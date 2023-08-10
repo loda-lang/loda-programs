@@ -16,7 +16,7 @@ lpb $0
   bin $3,$2
   mul $3,$1
   add $2,1
-  mul $4,2
+  mul $4,0
   add $4,2
   add $5,$3
 lpe

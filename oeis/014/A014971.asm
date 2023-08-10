@@ -1,20 +1,22 @@
 ; A014971: Inverse of 962nd cyclotomic polynomial.
-; Submitted by Jave808
+; Submitted by Time_Traveler
 ; 1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  mov $4,-1
-  pow $4,$2
-  seq $2,15088 ; Inverse of 1079th cyclotomic polynomial.
-  mul $2,$4
-  add $1,$2
-  add $3,4
-  bin $3,2
-  add $3,16
+mov $5,3
+mov $6,16
+mov $2,$0
+add $2,3
+lpb $2
+  sub $2,$5
+  mov $1,-1
+  pow $1,$2
+  mov $4,$2
+  sub $4,8
+  trn $4,6
+  seq $4,16056 ; Inverse of 2047th cyclotomic polynomial.
+  mul $4,$1
+  sub $6,$5
+  add $3,$4
+  mov $5,$6
 lpe
-mov $0,$1
+mov $0,$3

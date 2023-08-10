@@ -20,6 +20,7 @@ A001749: Primes multiplied by 4.
 A001750: Primes multiplied by 5.
 A002062: a(n) = Fibonacci(n) + n.
 A002659: a(n) = 2*sigma(n) - 1.
+A003602: Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
 A003842: The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1->12, 2->1, take limit; or, start with S(0)=2, S(1)=1, and for n>1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
 A003849: The infinite Fibonacci word (start with 0, apply 0->01, 1->0, take limit).
 A003972: Moebius transform of A003961; a(n) = phi(A003961(n)), where A003961 shifts the prime factorization of n one step towards the larger primes.

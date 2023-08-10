@@ -1,5 +1,5 @@
 ; A045192: Numbers whose base-5 representation contains exactly one 0 and one 3.
-; Submitted by arkiss
+; Submitted by Science United
 ; 15,28,40,53,65,76,77,79,80,85,95,103,115,133,138,141,142,144,148,153,165,178,190,201,202,204,205,210,220,228,240,258,263,266,267,269,273,278,290,303,315,326,327,329,330,335,345,353
 
 add $0,2
@@ -21,6 +21,7 @@ lpb $2
     add $4,$5
   lpe
   mov $3,$4
+  dif $3,2
   sub $3,7
   cmp $3,0
   sub $0,$3

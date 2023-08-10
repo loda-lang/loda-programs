@@ -1,5 +1,5 @@
 ; A039180: Numbers whose base-11 representation has the same number of 2's and 9's.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by taurec
 ; 0,1,3,4,5,6,7,8,10,11,12,14,15,16,17,18,19,21,31,33,34,36,37,38,39,40,41,43,44,45,47,48,49,50,51,52,54,55,56,58,59,60,61,62,63,65,66,67,69,70,71,72,73,74,76,77,78,80,81,82,83,84,85,87,88,89,91,92,93,94
 
 mov $2,$0
@@ -10,12 +10,25 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    mul $5,4
-    add $5,3
+    add $5,7
     mod $5,11
-    seq $5,14189 ; Inverse of 180th cyclotomic polynomial.
+    add $5,2
+    mov $6,$5
+    mov $8,0
     div $3,11
-    add $4,$5
+    mul $5,2
+    add $5,3
+    add $6,$5
+    sub $6,2
+    div $6,4
+    lpb $6
+      sub $6,5
+      mov $7,$6
+      max $7,0
+      seq $7,14018 ; Inverse of 9th cyclotomic polynomial.
+      add $8,$7
+    lpe
+    add $4,$8
   lpe
   mov $3,$4
   cmp $3,0

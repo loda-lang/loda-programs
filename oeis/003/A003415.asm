@@ -1,29 +1,24 @@
-; A003415 o=0: a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
-; Coded manually 2021-02-28 by Antti Karttunen, https://github.com/karttu
-; Essentially, we implement the algorithm of the following PARI-script:
-; A003415(n) = { my(s=0, m=1, spf); while(n>1, spf = A020639(n); n /= spf; s += m*n; m *= spf); (s); };
-; which is iterative solution, obtained from Zumkeller's non-branching recursive formula:
-; a(n) = a(A032742(n)) * A020639(n) + A032742(n), for n > 1.
-; mov $1,0    ; Initialize the result-register, the result (which is a sum) is constructed to this (such zero-inits actually not needed in LODA!)
+; A003415: a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+; Submitted by Science United
+; 0,0,1,1,4,1,5,1,12,6,7,1,16,1,9,8,32,1,21,1,24,10,13,1,44,10,15,27,32,1,31,1,80,14,19,12,60,1,21,16,68,1,41,1,48,39,25,1,112,14,45,20,56,1,81,16,92,22,31,1,92,1,33,51,192,18,61,1,72,26,59,1,156,1,39,55,80,18,71,1
 
-mov $2,2 ; This is the smallest prime-divisor we have encountered so far.
-mov $5,1 ; Current product m in the above PARI-script.
-lpb $0 ; Start the main loop. We stop when there's nothing remaining in $0 anymore. Guaranteed to decrease on every iteration.
-  mov $3,$0 ; What's remaining of $0 is safe upper limit for finding its smallest prime factor.
-  lpb $3 ; Done in this subloop, find the next prime >= $2 that divides $0, which = A020639($0).
+mov $2,2
+mov $5,1
+lpb $0
+  mov $3,$0
+  lpb $3
     mov $4,$0
     mod $4,$2
     cmp $4,0
     cmp $4,0
-    sub $3,$4 ; Subtract one if $2 did not divide n (to continue searching), otherwise subtract zero, and fall out of the loop.
-    add $2,1 ; Note: when we fall out, the last instance of this incrementing is discarded, and we still have the spf-divisor in $2
+    mul $4,2
+    add $2,1
+    sub $3,$4
   lpe
-  ; Now for $0 > 0, we have lpf = A020639(n) in $2. 
-  div $0,$2 ; Divide one instance of that (current) smallest prime factor out of $0.
+  div $0,$2
   mov $4,$0
   mul $4,$5
-  add $1,$4 ; s += m*n; (as in PARI-script).
-  mul $5,$2 ; m *= spf; ( ditto )
+  add $1,$4
+  mul $5,$2
 lpe
-; The result is now in $1.
 mov $0,$1
