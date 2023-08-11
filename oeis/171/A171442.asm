@@ -1,13 +1,13 @@
 ; A171442: Expansion of (1+x)^7/(1-x).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Science United
 ; 1,8,29,64,99,120,127,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128
-; Formula: a(n) = a(n-1)+binomial(7,n), a(0) = 1
+; Formula: a(n) = b(n+2), b(n) = b(n-2)+binomial(8,n-2), b(1) = 0, b(0) = 0
 
-mov $1,1
+add $0,2
 lpb $0
-  mov $2,7
+  sub $0,2
+  mov $2,8
   bin $2,$0
-  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

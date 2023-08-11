@@ -7,7 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65119 ; n-th cyclotomic polynomial is a trinomial.
+  seq $3,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
+  mul $3,3
   mov $5,$3
   add $5,1
   sub $3,1

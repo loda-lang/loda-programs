@@ -1,13 +1,10 @@
 ; A090115: a(n)=Product[p(n)-j, j=1..n]/n!=A090114(n)/n!.
+; Submitted by Science United
 ; 1,1,4,15,252,924,11440,43758,497420,13123110,54627300,1251677700,12033222880,52860229080,511738760544,10363194502115,197548686920970,925029565741050,17302625882942400,161884603662657876
+; Formula: a(n) = binomial(A000040(n)-1,n+1)
 
-mov $1,$0
-add $1,1
-mov $2,2
-lpb $0
-  sub $0,1
-  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$2
+mov $1,1
+add $1,$0
+seq $0,40 ; The prime numbers.
 sub $0,1
 bin $0,$1

@@ -361,6 +361,7 @@ A134860: Wythoff AAB numbers; also, Fib101 numbers: those n for which the Zecken
 A135124: Numbers such that the digital sums in base 2, base 4 and base 8 are all equal.
 A135416: a(n) = A036987(n)*(n+1)/2.
 A135600: Angled numbers with an internal digit as the vertex.
+A136617: a(n) = largest k such that the sum of k consecutive reciprocals 1/n + ... + 1/(n+k-1) does not exceed 1.
 A137803: a(n) = floor(n*(sqrt(2) + 1/2)).
 A138026: Where A121561(n) = 3.
 A140099: A Beatty sequence: a(n) = [n*(1+t)], where t = tribonacci constant (A058265); complement of A140098.

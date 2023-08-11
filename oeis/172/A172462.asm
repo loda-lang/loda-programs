@@ -11,7 +11,6 @@ lpb $2
   seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
   div $3,8
   dif $3,2
-  mod $3,2
   sub $0,$3
   add $1,2
   mov $4,$0

@@ -1,8 +1,9 @@
 ; A165560: The arithmetic derivative of n, modulo 2.
-; Submitted by ChelseaOilman
+; Submitted by BlisteringSheep
 ; 0,0,1,1,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,0,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,1,1,1,0,0,1,1
-; Formula: a(n) = A322079(max(n-1,0))%2
+; Formula: a(n) = A003415(n)%2
 
-trn $0,1
-seq $0,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
+mov $1,$0
+seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+mov $0,$1
 mod $0,2

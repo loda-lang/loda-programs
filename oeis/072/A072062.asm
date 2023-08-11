@@ -1,12 +1,32 @@
 ; A072062: Inverse permutation to A072061.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,5,4,7,6,9,11,8,13,15,10,17,12,19,21,14,23,16,25,27,18,29,31,20,33,22,35,37,24,39,41,26,43,28,45,47,30,49,32,51,53,34,55,57,36,59,38,61,63,40,65,42,67,69,44,71,73,46,75,48,77,79,50,81,83,52,85,54,87,89
-; Formula: a(n) = n/(2*A193564(n)+1)+2*A193564(n)+1
 
 mov $2,$0
-seq $0,193564 ; In A014675, replace the n-th occurrence of 1 with n-1 and also replace the n-th occurrence of 2 with n-1.
+add $0,1
+mov $3,$0
+mov $4,$0
+mov $6,2
+lpb $6
+  sub $6,1
+  mov $0,$4
+  add $0,$6
+  trn $0,1
+  seq $0,293688 ; Partial sums of A002251.
+  mov $5,$6
+  mul $5,$0
+  add $7,$5
+lpe
+min $4,1
+mul $4,$0
+mov $0,$7
+sub $0,$4
+sub $0,$3
+mul $0,9
+gcd $0,0
+div $0,9
 mov $1,$0
-add $1,1
+sub $0,1
 add $0,$1
 div $2,$0
 add $0,$2

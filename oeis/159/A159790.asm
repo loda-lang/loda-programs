@@ -1,11 +1,18 @@
 ; A159790: Toothpick number A139250(n) minus triangular number A000217(n).
 ; Submitted by chordtoll
 ; 0,0,0,1,1,0,2,7,7,2,0,1,1,4,18,35,35,22,12,5,-3,-8,-2,7,3,-6,-4,5,17,48,106,155,155,126,100,77,53,32,22,15,-5,-30,-44,-51,-55,-40,2,35,23,-10,-32,-47,-59,-52,-18,11,11,14,48,101,181,328,522,651,651,590,532
-; Formula: a(n) = (-((2*n)^2)-(4*n+(-4)*A160164(n)))/8
 
 mov $1,$0
 mul $1,2
-seq $0,160164 ; Number of toothpicks after n-th stage in the I-toothpick structure of A139250.
+mul $0,2
+lpb $0
+  mov $4,$0
+  div $4,2
+  seq $4,151568 ; a(0)=1, a(1)=1; a(2^i+j)=2*a(j)+a(j+1) for 0 <= j < 2^i.
+  sub $0,1
+  add $3,$4
+lpe
+mov $0,$3
 mul $0,-4
 add $0,$1
 add $0,$1

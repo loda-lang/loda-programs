@@ -5,5 +5,21 @@
 mov $1,-1
 pow $1,$0
 add $0,1
-seq $0,9444 ; E.g.f. log(1 + x*exp(-x)).
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  max $0,1
+  mov $3,$2
+  sub $3,$5
+  pow $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,$0
+  div $6,-1
+  add $6,$4
+lpe
+mov $0,$6
 mul $0,$1

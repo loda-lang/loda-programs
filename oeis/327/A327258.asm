@@ -1,22 +1,24 @@
 ; A327258: Positions of 1's in {A327256(n) : n > 0}.
-; Submitted by zombie67 [MM]
+; Submitted by Stony666
 ; 1,2,6,7,8,12,13,14,18,19,20,24,25,26,30,31,32,35,36,37,41,42,43,47,48,49,53,54,55,59,60,61,65,66,67,70,71,72,76,77,78,82,83,84,88,89,90,94,95,96,100,101,105,106,107,111,112,113,117,118,119,123,124,125,129,130,131,135,136,140,141,142,146,147,148,152,153,154,158,159
 
 mov $2,$0
-add $2,2
+add $2,3
 pow $2,2
 lpb $2
+  add $1,1
   mov $3,$1
-  seq $3,346522 ; a(n) is the smallest number such that there are precisely n squares between a(n) and 2*a(n) inclusive.
-  gcd $3,2
+  seq $3,24539 ; a(n) = [ 1/{n*sqrt(2)} ], where {x} := x - [ x ].
+  sub $3,1
+  cmp $3,0
   sub $0,$3
-  add $0,1
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $1,4
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-div $0,4
+div $0,2
+add $0,1

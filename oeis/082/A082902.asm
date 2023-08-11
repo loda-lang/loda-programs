@@ -5,7 +5,7 @@ mov $1,1
 seq $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
 div $0,2
 lpb $0
-  mul $1,2
   dif $0,2
+  mul $1,2
 lpe
 mov $0,$1

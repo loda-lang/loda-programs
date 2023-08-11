@@ -10,6 +10,7 @@ lpb $3
   sub $1,2
   bin $1,$2
   mul $1,$0
+  mov $2,1
   mov $0,4
 lpe
 mov $0,$1

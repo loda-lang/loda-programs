@@ -8,8 +8,14 @@ add $2,4
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,195686 ; a(n) = C(2*n,n) / gcd(n,C(2*n,n)).
+  mov $5,$1
+  mul $5,2
+  bin $5,$1
+  mov $6,0
+  sub $6,$1
+  gcd $6,$5
+  div $5,$6
+  mov $3,$5
   gcd $3,4
   add $3,3
   cmp $3,5

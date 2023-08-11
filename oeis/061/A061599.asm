@@ -1,16 +1,25 @@
 ; A061599: Primes p such that the greatest prime divisor of p-1 is 5.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 11,31,41,61,101,151,181,241,251,271,401,541,601,641,751,811,1201,1601,1621,1801,2161,2251,3001,4001,4051,4801,4861,6481,7681,8101,8641,9001,9601,9721,11251,14401,15361,16001,19441,21601,21871,22501,23041,24001,25601,32401,33751,36451,37501,40961,43201,54001,57601,58321,61441,62501,72901,76801,77761,81001,87481,90001,96001,103681,112501,115201,121501,131221,138241,150001,155521,160001,163841,172801,180001,184321,196831,259201,270001,281251
 
-mov $1,$0
-mov $2,2
+mov $2,$0
+add $2,2
+pow $2,2
 lpb $2
-  sub $2,1
-  mov $0,$1
-  add $0,$2
-  trn $0,1
-  seq $0,125869 ; Numbers n such that p=10n+1 is prime and cos(2pi/p) is an algebraic number of a 5-smooth degree, but not 3-smooth.
-  bin $2,2
+  mov $1,$4
+  seq $1,80193 ; 5-smooth numbers which are not 3-smooth.
+  mov $3,$1
+  add $4,1
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $2,$5
+  trn $2,1
 lpe
+mov $0,$3
+sub $0,10
+div $0,10
 mul $0,10
-add $0,1
+add $0,11

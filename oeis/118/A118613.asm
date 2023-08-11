@@ -1,6 +1,7 @@
 ; A118613: Start with 1 and repeatedly reverse the digits and add 27 to get the next term.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370,100,28,109,928,856,685,613,343,370
+; Formula: a(n) = A004086(a(n-1))+27, a(0) = 1
 
 mov $1,$0
 mov $0,1

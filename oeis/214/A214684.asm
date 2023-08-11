@@ -1,14 +1,12 @@
 ; A214684: a(1)=1, a(2)=1, and, for n>2, a(n)=(a(n-1)+a(n-2))/5^k, where 5^k is the highest power of 5 dividing a(n-1)+a(n-2).
-; Submitted by Fardringle
+; Submitted by Science United
 ; 1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1,2,3,1,4,1,1
+; Formula: a(n) = ((10^(n+1))/693)%6+1
 
-mov $3,1
 add $0,1
-lpb $0
-  sub $0,1
-  add $2,$3
-  dif $2,5
-  mov $3,$1
-  mov $1,$2
-lpe
+mov $1,10
+pow $1,$0
+div $1,693
 mov $0,$1
+mod $0,6
+add $0,1

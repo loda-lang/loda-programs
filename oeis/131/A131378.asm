@@ -1,12 +1,23 @@
 ; A131378: Starting with 0, the sequence a(n) changes from 0 to 1 or back when the next number n is a prime.
-; Submitted by Geoff
+; Submitted by Cruncher Pete
 ; 0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0
 
 lpb $0
+  sub $0,1
+  div $0,2
+  mul $0,2
   trn $0,1
-  mov $2,$0
-  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  cmp $2,0
-  cmp $1,$2
+  add $0,2
+  sub $1,1
+  lpb $0
+    sub $0,1
+    mov $2,$0
+    seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+    add $0,$2
+  lpe
+  sub $0,1
 lpe
 mov $0,$1
+mod $0,2
+add $0,2
+mod $0,2
