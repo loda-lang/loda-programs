@@ -1,22 +1,26 @@
 ; A106841: Numbers m such that m, m+1 and m+2 have odd part of form 4k+1.
-; Submitted by Groo
+; Submitted by Science United
 ; 8,16,32,40,64,72,80,104,128,136,144,160,168,200,208,232,256,264,272,288,296,320,328,336,360,392,400,416,424,456,464,488,512,520,528,544,552,576,584,592,616,640,648,656,672,680,712,720,744,776,784,800,808,832,840,848,872,904,912,928,936,968,976,1000,1024,1032,1040,1056,1064,1088,1096,1104,1128,1152,1160,1168,1184,1192,1224,1232
 
-add $0,2
+add $0,1
 mov $2,$0
-sub $0,1
-pow $2,2
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,1
+  mov $4,0
   mov $3,$1
-  seq $3,14577 ; The regular paper-folding sequence (or dragon curve sequence).
+  add $3,1
+  lpb $3
+    dif $3,2
+  lpe
+  add $4,$3
+  div $4,2
+  mov $3,$4
+  mod $3,2
+  cmp $3,0
   sub $0,$3
-  mov $4,$0
-  max $4,1
-  cmp $4,$0
   add $1,1
-  mul $2,$4
+  sub $2,$0
 lpe
 mov $0,$1
-mul $0,4
+add $0,1
+mul $0,8

@@ -16,7 +16,7 @@ lpb $0
     max $4,2
     mov $7,$4
     sub $7,1
-    seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+    seq $7,357531 ; Final value obtained by traveling clockwise around a circular array with positions numbered clockwise from 1 to n. Each move consists of traveling clockwise k places, where k is the position at the beginning of the move. The first move begins at position 1. a(n) is the position at the end of the n-th move.
     cmp $7,2
     mov $9,10
     add $9,$5

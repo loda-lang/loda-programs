@@ -1,4 +1,4 @@
-; A143724: Triangle read by rows, inverse Möbius transform of a diagonalized matrix of A116470.
+; A143724: Triangle read by rows, inverse Möbius transform of a diagonalized matrix of A116477.
 ; Submitted by Penguin
 ; 1,1,2,1,0,4,1,2,0,5,1,0,0,0,9,1,2,4,0,0,7,1,0,0,0,0,0,15,1,2,0,5,0,0,0,12,1,0,4,0,0,0,0,0,18,1,2,0,0,9,0,0,0,0,15,1,0,0,0,0,0,0,0,0,0,28,1,2,4,5,0,7,0,0,0,0,0,16
 

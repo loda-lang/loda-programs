@@ -1,23 +1,9 @@
 ; A162510: Dirichlet inverse of A076479.
-; Submitted by stoneageman
-; 1,1,1,2,1,1,1,4,2,1,1,2,1,1,1,8,1,2,1,2,1,1,1,4,2,1,4,2,1,1,1,16,1,1,1,4,1,1,1,4,1,1,1,2,2,1,1,8,2,2,1,2,1,4,1,4,1,1,1,2,1,1,2,32,1,1,1,2,1,1,1,8,1,1,2,2,1,1,1,8,8,1,1,2,1,1,1,4,1,2,1,2,1,1,1,16,1,2,2,4
+; Submitted by Science United
+; 1,1,1,2,1,1,1,4,2,1,1,2,1,1,1,8,1,2,1,2,1,1,1,4,2,1,4,2,1,1,1,16,1,1,1,4,1,1,1,4,1,1,1,2,2,1,1,8,2,2,1,2,1,4,1,4,1,1,1,2,1,1,2,32,1,1,1,2,1,1,1,8,1,1,2,2,1,1,1,8
+; Formula: a(n) = 2^A046660(n)
 
-mov $1,1
-mov $2,2
-add $0,1
-lpb $0
-  mov $3,$0
-  sub $3,8
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    mul $1,2
-  lpe
-  div $1,2
-lpe
+seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+mov $1,2
+pow $1,$0
 mov $0,$1

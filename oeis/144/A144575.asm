@@ -18,7 +18,6 @@ lpb $0
     sub $4,1
     mul $6,$5
     mul $7,$$9
-    mod $4,93
     add $5,1
     add $6,$7
   lpe

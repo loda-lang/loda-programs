@@ -338,6 +338,7 @@ A122411: a(n) is the sum of primes p for those k's, 2 <= k <= n, where gcd(k,n) 
 A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
 A124218: a(n) is the m-th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n, d(n) is the number of positive divisors of n and m = phi(n) if phi(n)|d(n), else m = d(n) mod phi(n).
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
+A125070: a(n) = number of nonzero exponents in the prime-factorization of n which are not primes.
 A127971: a(n) = fusc(n+1) + (1-(-1)^n)/2, fusc = A002487.
 A128309: a(n) = 2*A000069(n).
 A128703: Numbers of the form 5^k*p, where 1 <= k <= 5 and p is a prime different from 5.
@@ -520,6 +521,7 @@ A247778: Least k such that e - (1 + 1/k)^k < 1/n.
 A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
+A253251: a(1) = 1, and for n > 0, a(n+1) = a(n) + floor(10^k/a(n)), where k is the least integer such that 10^k >= a(n).
 A256757: Number of iterations of A007733 required to reach 1.
 A257091: a(n) = log_5 (A256693(n)).
 A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.

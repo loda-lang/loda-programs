@@ -9,8 +9,12 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,182699 ; Number of emergent parts in all partitions of n.
-  add $1,$0
+  mov $4,$0
+  sub $4,1
+  seq $4,138137 ; First differences of A006128.
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $4,$0
+  add $1,$4
 lpe
 mov $0,$1
 sub $0,1

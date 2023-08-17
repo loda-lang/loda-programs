@@ -1,17 +1,31 @@
 ; A141375: Primes of the form x^2 + 8*x*y - 8*y^2 (as well as of the form x^2 + 10*x*y + y^2).
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 73,97,193,241,313,337,409,433,457,577,601,673,769,937,1009,1033,1129,1153,1201,1249,1297,1321,1489,1609,1657,1753,1777,1801,1873,1993,2017,2089,2113,2137,2161,2281,2377,2473,2521,2593,2617,2689,2713,2833,2857
 
-mov $2,$0
-add $2,3
-pow $2,5
-lpb $2
-  sub $2,1
-  mov $1,$3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  sub $2,$0
-  add $3,24
+add $0,2
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $5,0
+  mov $1,$2
+  add $1,1
+  lpb $1
+    gcd $5,3
+    mov $6,$1
+    div $6,5
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $2,24
+  sub $3,$0
 lpe
-mov $0,$3
+mov $0,$2
 add $0,1
