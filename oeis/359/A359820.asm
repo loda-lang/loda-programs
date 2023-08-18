@@ -1,9 +1,12 @@
 ; A359820: a(n) = 1 if n and n' are of different parity, otherwise 0. Here n' stands for the arithmetic derivative of n, A003415(n).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 0,1,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,0,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,0,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,1,1,0
-; Formula: a(n) = A322079(max(29*n-1,0))%2
+; Formula: a(n) = ((-n+A003415(n))%2+2)%2
 
-mul $0,29
-trn $0,1
-seq $0,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
+mov $1,$0
+seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+sub $1,$0
+mov $0,$1
+mod $0,2
+add $0,2
 mod $0,2

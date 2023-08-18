@@ -1,19 +1,22 @@
 ; A014443: Inverse of 434th cyclotomic polynomial.
-; Submitted by [AF>EDLS]zOU
+; Submitted by Conan
 ; 1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $4,3
-add $0,3
-lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  mov $1,-1
-  pow $1,$3
-  seq $3,14590 ; Inverse of 581st cyclotomic polynomial.
-  mul $3,$1
-  add $2,$3
-  mul $4,21
-  div $4,2
+mov $6,3
+mov $1,10
+mov $3,$0
+add $3,3
+lpb $3
+  sub $3,$6
+  mov $2,-1
+  pow $2,$3
+  mov $5,$3
+  sub $5,2
+  trn $5,6
+  seq $5,16056 ; Inverse of 2047th cyclotomic polynomial.
+  mul $5,$2
+  sub $1,$6
+  add $4,$5
+  mov $6,$1
 lpe
-mov $0,$2
+mov $0,$4

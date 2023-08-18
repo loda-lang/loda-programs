@@ -1,16 +1,26 @@
 ; A210490: Union of positive squares (A000290 \ {0}) and squarefree numbers (A005117).
-; Submitted by USTL-FIL (Lille Fr)
-; 1,2,3,4,5,6,7,9,10,11,13,14,15,16,17,19,21,22,23,25,26,29,30,31,33,34,35,36,37,38,39,41,42,43,46,47,49,51,53,55,57,58,59,61,62,64,65,66,67,69,70,71,73,74,77,78,79,81,82,83,85,86,87,89,91,93,94,95,97,100,101,102,103,105,106,107,109,110,111,113,114,115,118,119,121,122,123,127,129,130,131,133,134,137,138,139,141,142,143,144
+; Submitted by Kotenok2000
+; 1,2,3,4,5,6,7,9,10,11,13,14,15,16,17,19,21,22,23,25,26,29,30,31,33,34,35,36,37,38,39,41,42,43,46,47,49,51,53,55,57,58,59,61,62,64,65,66,67,69,70,71,73,74,77,78,79,81,82,83,85,86,87,89,91,93,94,95,97,100,101,102,103,105,106,107,109,110,111,113
 
 mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,51144 ; Nonsquarefree nonsquares: each term has a square factor but is not a perfect square itself.
-  sub $3,1
-  add $0,1
+  seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,$3
+  mov $3,$5
+  trn $3,1
+  seq $3,296306 ; a(n) = A001157(n)/A050999(n).
+  cmp $3,1
+  sub $0,$3
   add $1,1
-  add $2,$3
-  sub $2,$0
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
+mov $0,$1
 add $0,1

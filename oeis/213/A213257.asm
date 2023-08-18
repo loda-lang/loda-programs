@@ -5,10 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,96271 ; Ternary sequence that is a fixed point of the morphism 0 -> 01, 1 -> 02, 2 -> 00.
-  seq $3,242112 ; a(n) = floor((2*n+6)/(5-(-1)^n)).
-  cmp $3,1
+  mov $5,$1
+  seq $5,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+  mod $5,3
+  add $3,1
+  mul $3,$5
+  min $3,1
   sub $0,$3
   add $1,1
   mov $4,$0

@@ -1,15 +1,13 @@
 ; A247209: Number of terms in generalized Swinnerton-Dyer polynomials.
-; Submitted by [AF>Le_Pommier] Jerome_C2005
+; Submitted by Groo
 ; 1,2,6,35,495,20349,2760681,1329890705,2353351951665,15481400876017505,379554034822178909121,34676179189150610052785025,11806724418359403847522843860225,14998128029851443976142151169687652865,71221988684076361563783957084457295633613825
-; Formula: a(n) = binomial((2^n+2*n-2)/2+1,n)
+; Formula: a(n) = binomial((2^n+2*n)/2,n)
 
 mov $2,$0
 mul $2,2
 mov $1,2
 pow $1,$0
 add $1,$2
-sub $1,2
 div $1,2
-add $1,1
 bin $1,$0
 mov $0,$1

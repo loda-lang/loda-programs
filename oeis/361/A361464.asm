@@ -6,8 +6,15 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,2
   mov $3,$1
-  seq $3,361462 ; a(n) = A135506(n) mod 4.
+  seq $3,135504 ; a(1)=1; for n>1, a(n) = a(n-1) + lcm(a(n-1),n).
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$6
+  div $3,$5
+  mod $3,4
   sub $3,1
   cmp $3,2
   sub $0,$3

@@ -8,8 +8,17 @@ add $2,7
 pow $2,2
 lpb $2
   add $1,1
+  mov $7,$1
+  seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $6,$7
+  add $6,1
   mov $3,$1
-  seq $3,328958 ; a(n) = sigma_0(n) - omega(n) * nu(n), where sigma_0 = A000005, nu = A001221, omega = A001222.
+  seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  mul $3,$6
+  mov $5,$1
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $5,$3
+  mov $3,$5
   cmp $3,0
   sub $0,$3
   mov $4,$0

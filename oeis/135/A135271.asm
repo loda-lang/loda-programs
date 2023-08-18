@@ -1,5 +1,5 @@
 ; A135271: Row 7 of A038207.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by waffleironhead
 ; 128,448,672,560,280,84,14,1
 
 mov $1,3
@@ -15,6 +15,4 @@ lpb $0
   div $1,$3
 lpe
 mov $0,$1
-sub $0,3
 div $0,3
-add $0,1
