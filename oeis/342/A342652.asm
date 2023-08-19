@@ -1,5 +1,5 @@
 ; A342652: a(n) = A331410(A156552(n)).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 0,0,1,0,2,0,1,1,2,0,2,0,3,2,3,0,2,0,3,2,3,0,2,1,4,1,3,0,2,0,1,3,4,2,3,0,5,3,3,0,4,0,4,2,6,0,2,1,4,4,4,0,4,2,3,4,7,0,3,0,7,3,3,3,3,0,5,5,3,0,4,0,8,2,5,2,4,0,3,3
 
 add $0,1
@@ -10,6 +10,6 @@ lpb $0
   div $0,2
   mov $1,$0
   seq $1,331410 ; a(n) is the number of iterations needed to reach a power of 2 starting at n and using the map k -> k + k/p, where p is the largest prime factor of k.
-  mul $0,2
+  mov $0,0
 lpe
 mov $0,$1

@@ -1,15 +1,8 @@
 ; A063250: Number of binary right-rotations (iterations of A038572) to reach fixed point.
-; Submitted by USTL-FIL (Lille Fr)
-; 0,0,1,0,2,2,1,0,3,3,3,3,2,2,1,0,4,4,4,4,4,4,4,4,3,3,3,3,2,2,1,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,4,4,4,4,3,3,3,3,2,2,1,0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5
+; Submitted by Hans van der Giessen
+; 0,0,1,0,2,2,1,0,3,3,3,3,2,2,1,0,4,4,4,4,4,4,4,4,3,3,3,3,2,2,1,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,4,4,4,4,3,3,3,3,2,2,1,0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+; Formula: a(n) = A070939(A261693(n))-1
 
-lpb $0
-  add $1,1
-  add $2,1
-  mov $3,$0
-  mod $3,2
-  mul $3,$1
-  div $0,2
-  mov $1,$3
-lpe
-sub $2,$3
-mov $0,$2
+seq $0,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
+seq $0,70939 ; Length of binary representation of n.
+sub $0,1

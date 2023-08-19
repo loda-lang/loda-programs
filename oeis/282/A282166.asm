@@ -1,5 +1,6 @@
 ; A282166: a(n) is the minimal sum of a positive integer sequence of length n with no duplicate substrings of length greater than 1, and every number different from its neighbors.
 ; 1,3,4,7,8,12,13,17,18,22,24,28,30,35,37,42,44,49,51,56,59
+; Formula: a(n) = b(n+2)-2, b(n) = b(n-2)+A193832(n), b(1) = 2, b(0) = 0
 
 add $0,2
 lpb $0
