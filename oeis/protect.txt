@@ -52,6 +52,7 @@ A008335: Number of primes dividing p+1 as p runs through the primes.
 A008837: a(n) = p*(p-1)/2 for p = prime(n).
 A008864: a(n) = prime(n) + 1.
 A008908: (1 + number of halving and tripling steps to reach 1 in the Collatz (3x+1) problem), or -1 if 1 is never reached.
+A010871: Constant sequence: a(n) = 32.
 A011757: a(n) = prime(n^2).
 A014303: a(n) = prime(n)*(prime(n+1)-1)/2.
 A014566: Sierpiński numbers of the first kind: n^n + 1.

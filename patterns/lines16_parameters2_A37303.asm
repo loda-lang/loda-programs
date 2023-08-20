@@ -4,7 +4,7 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $4,$1
-  seq $4,53827 ; source=parameter 0
+  seq $4,53824 ; source=parameter 0
   mov $3,$1
   seq $3,120 ; source=parameter 1
   sub $3,$4

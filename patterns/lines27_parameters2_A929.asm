@@ -4,11 +4,11 @@ mov $10,1
 lpb $0
   sub $0,1
   mov $5,0
-  mov $6,0
+  mov $6,0 ; source=parameter 0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,79559 ; source=parameter 0
+    seq $7,79559 ; source=parameter 1
     mov $9,10
     add $9,$5
     sub $4,1
