@@ -67,6 +67,8 @@ A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A020908: Number of terms in Zeckendorf representation of 2^n.
 A022797: n-th prime + n-th nonprime.
+A022988: 32-n.
+A023474: a(n) = n-32.
 A023507: a(n) = sum of distinct prime divisors of prime(n) - 1.
 A023517: Greatest prime divisor of p(n)*p(n-1) - 1.
 A023589: Number of distinct prime divisors of 2*p(n)+1.
