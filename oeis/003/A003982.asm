@@ -1,19 +1,8 @@
 ; A003982: Table read by rows: 1 if x = y, 0 otherwise, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = A000005(2*n)%2
 
 mul $0,2
-mov $2,$0
-add $2,1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $3,$2
-  dif $3,$0
-  mul $3,$0
-  cmp $3,$2
-  sub $0,1
-  add $1,$3
-lpe
-mov $0,$1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mod $0,2

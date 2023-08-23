@@ -1,4 +1,4 @@
-; A045106: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 4 and 1, respectively.
+; A045106: Numbers whose base-4 representation contains exactly four 1's and one 2.
 ; Submitted by Cruncher Pete
 ; 342,345,357,405,597,1110,1113,1125,1173,1302,1305,1317,1350,1353,1362,1368,1371,1374,1377,1380,1383,1389,1398,1401,1413,1425,1428,1431,1437,1461,1494,1497,1509,1557,1605,1617,1620
 

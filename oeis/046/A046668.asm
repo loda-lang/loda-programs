@@ -7,8 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,192885 ; A071963(n) - n, where A071963(n) is the largest prime factor of p(n), the n-th partition number A000041(n).
+  seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
   sub $3,1
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $3,1
+  sub $3,$1
   add $3,$2
   bin $3,$2
   cmp $3,0
