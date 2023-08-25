@@ -19,7 +19,6 @@ lpb $2
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $2,$0
   mul $2,$4
 lpe
 mov $0,$5

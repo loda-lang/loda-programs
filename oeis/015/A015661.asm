@@ -1,5 +1,5 @@
 ; A015661: Inverse of 1652nd cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by kle
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,-5
@@ -12,7 +12,7 @@ lpb $0
   sub $2,1
   seq $2,15997 ; Inverse of 1988th cyclotomic polynomial.
   mul $1,12
-  add $1,38
+  add $1,50
   mov $3,$1
 lpe
 mov $0,$2

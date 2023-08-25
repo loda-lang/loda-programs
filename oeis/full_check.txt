@@ -301,6 +301,7 @@ A099564: a(0) = 0; for n > 0, a(n) = final nonzero number in the sequence n, f(n
 A101278: Write n in base 3 as n = b_0 + b_1*3 + b_2*3^2 + b_3*3^3 + ...; then a(n) = Product_{i >= 0} prime(i+1)^b_i.
 A101345: a(n) = Knuth's Fibonacci (or circle) product "2 o n".
 A101436: Number of exponents in prime factorization of n which are primes.
+A101778: Last term in each row of triangle referenced in A101777.
 A102261: a(n) = A002144(n) - A002145(n).
 A102376: a(n) = 4^A000120(n).
 A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
@@ -537,6 +538,7 @@ A260941: Expansion of phi(-x) * phi(x^6) / chi(-x^3) in powers of x where phi(),
 A260943: Expansion of psi(-x^2) * chi(x^3) * f(x^6) in powers of x where psi(), chi(), f() are Ramanujan theta functions.
 A260944: Expansion of phi(-x^4) * psi(-x^6) / chi(-x^3) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
 A262478: a(n) = Sum_{i >= 0} d_i(n) * p_(i + 1) where d_i(n) = i-th digit of n in base 3, and p_i = i-th prime.
+A262558: Number of palindromic primes <= n.
 A262726: Expansion of phi(-x) * psi(x^6) in powers of x where phi(), psi() are Ramanujan theta functions.
 A262774: Expansion of psi(x^2) * phi(-x^3) in powers of x where phi(), psi() are Ramanujan theta functions.
 A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.
