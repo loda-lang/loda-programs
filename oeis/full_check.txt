@@ -107,6 +107,8 @@ A026351: a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
 A026513: a(n) = t(2+3n), where t = A001285 (Thue-Morse sequence).
 A026608: a(n) = number of 2's between n-th 1 and (n+1)st 1 in A026600.
 A030124: Complement (and also first differences) of Hofstadter's sequence A005228.
+A030132: Digital root of Fibonacci(n).
+A030133: a(n+1) is the sum of digits of (a(n) + a(n-1)).
 A030300: Runs have lengths 2^n, n >= 0.
 A032665: Digit '2' concatenated with a(n) is a prime.
 A032668: Digit '5' concatenated with a(n) is a prime.

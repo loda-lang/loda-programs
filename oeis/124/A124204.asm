@@ -1,5 +1,5 @@
 ; A124204: Numbers k such that 20*k + 1 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,3,5,9,12,14,20,21,23,26,27,30,32,33,35,38,41,44,47,51,53,59,60,65,66,68,69,74,80,81,86,87,90,93,95,104,107,108,111,114,117,119,122,126,131,137,140,143,150,152,153,156,159,161,165,168,173,177,179,185,188,191
 
 add $0,1
@@ -7,11 +7,28 @@ mov $2,40
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $5,0
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
+  add $1,1
+  lpb $1
+    gcd $5,3
+    mov $6,$1
+    div $6,5
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
   add $2,20
   sub $3,$0
 lpe
 mov $0,$2
+sub $0,40
 div $0,20
+add $0,2

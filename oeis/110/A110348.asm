@@ -1,9 +1,23 @@
 ; A110348: a(2) = 1 by definition; otherwise a(n) = A109347(n)/n.
-; Submitted by [SG-FC] hl
+; Submitted by Mumps
 ; 1,1,8,45,504,5040,86400,1247400,28828800,544864320,15850598400,370507737600,12996271411200,362038989312000,14867734494412800,480878287553664000,22629566473113600000,833522365093017600000
-; Formula: a(n) = A110347(n)/(n+1)
 
 mov $1,$0
 add $1,1
-seq $0,110347 ; a(n) = meantorial(n) = the product of the set of n closest numbers with an arithmetic mean of n.
+mov $3,$0
+add $0,1
+mov $4,$0
+div $4,2
+add $0,$4
+mul $4,2
+mov $2,$4
+add $2,1
+bin $0,$4
+div $0,$2
+add $3,2
+lpb $3
+  mul $0,$3
+  sub $3,1
+lpe
+div $0,2
 div $0,$1

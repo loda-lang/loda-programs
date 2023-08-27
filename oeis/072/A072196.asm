@@ -1,10 +1,12 @@
 ; A072196: Multiples of 3 which on one operation of the Collatz function T (N -> 3N+1/2^r) yield the number 5.
+; Submitted by Science United
 ; 3,213,13653,873813,55924053,3579139413,229064922453,14660155037013,938249922368853,60047995031606613,3843071682022823253,245956587649460688213,15741221609565484045653
-; Formula: a(n) = 210*((64^n)/63)+3
+; Formula: a(n) = 210*((8^(2*n))/63)+3
 
-mov $1,64
+mul $0,2
+mov $1,8
 pow $1,$0
-div $1,63
-mul $1,210
-add $1,3
 mov $0,$1
+div $0,63
+mul $0,210
+add $0,3

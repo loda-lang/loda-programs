@@ -1,5 +1,5 @@
 ; A108977: Numbers n such that 19*n + 17 is prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by booc0mtaco
 ; 0,6,14,18,20,30,36,38,44,48,50,74,78,84,98,104,108,116,120,126,140,144,146,158,168,174,176,198,206,210,218,224,228,234,246,248,258,260,270,276,284,290,296,300,308,324,326,330,344,356,360,366,380,386,396,414,426,434,440,456,458,480,494,498,506,518,524,534,546,548,560,564,566,570,584,630,636,644,648,666
 
 add $0,1
@@ -7,9 +7,24 @@ mov $2,16
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $5,0
   mov $1,$2
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$1
+  add $1,1
+  lpb $1
+    gcd $5,3
+    mov $6,$1
+    div $6,5
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
   add $2,38
   sub $3,$0
 lpe

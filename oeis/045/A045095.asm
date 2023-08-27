@@ -1,4 +1,4 @@
-; A045095: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 2 and 0, respectively.
+; A045095: Numbers whose base-4 representation contains exactly two 1's and no 2's.
 ; Submitted by zombie67 [MM]
 ; 5,17,20,23,29,53,65,68,71,77,80,83,92,95,113,116,119,125,197,209,212,215,221,245,257,260,263,269,272,275,284,287,305,308,311,317,320,323,332,335,368,371,380,383,449,452,455,461,464
 

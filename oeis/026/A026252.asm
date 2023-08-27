@@ -6,6 +6,25 @@ mov $1,$0
 add $1,1
 add $0,$1
 add $1,2
-seq $0,130527 ; A permutation of the integers induced by the Beatty sequence for sqrt(2).
-sub $0,2
+mov $3,$0
+lpb $0
+  add $0,2
+  mov $6,$2
+  seq $6,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  mov $4,$2
+  add $4,1
+  seq $4,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  add $4,1
+  add $4,$6
+  mod $4,2
+  add $4,3
+  sub $0,$4
+  add $2,1
+  max $5,1
+  cmp $5,$0
+lpe
+mul $3,$5
+sub $2,$3
+mov $0,$2
 add $0,$1
+sub $0,2

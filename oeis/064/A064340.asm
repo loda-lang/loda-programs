@@ -1,10 +1,26 @@
 ; A064340: Generalized Catalan numbers C(2,2; n).
-; Submitted by Jamie Morken(l1)
+; Submitted by Steve Dodd
 ; 1,1,4,28,256,2704,31168,380608,4840960,63458560,851399680,11635096576,161396604928,2266669453312,32166082822144,460531091685376,6644185553305600,96498260064403456,1409750653282287616
-; Formula: a(n) = A115197(max(n-1,0))*2^max(n-1,0)
 
 trn $0,1
 mov $1,2
 pow $1,$0
-seq $0,115197 ; Convolution of generalized Catalan numbers A064062 (called C(n;2)).
+mov $6,-1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $4,2
+  mul $4,$0
+  add $4,$6
+  add $4,2
+  bin $4,$0
+  mov $5,-2
+  bin $5,$3
+  mul $5,$4
+  add $6,2
+  mul $2,2
+  add $2,$5
+  add $3,3
+lpe
+mov $0,$2
 mul $0,$1

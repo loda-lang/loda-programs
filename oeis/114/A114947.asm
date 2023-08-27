@@ -10,7 +10,8 @@ lpb $2
   sub $0,$2
   add $0,1
   mov $1,$0
-  seq $1,54720 ; Number of 5-ary sequences with primitive period n.
+  seq $1,54719 ; Number of 4-ary sequences with primitive period n.
+  seq $1,23729 ; Numbers with no 2's in their base-5 expansion.
   div $1,$0
   add $3,$1
 lpe

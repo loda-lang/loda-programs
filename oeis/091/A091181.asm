@@ -1,10 +1,14 @@
 ; A091181: A091180 indexed by A000040.
 ; Submitted by PDW
 ; 4,6,8,11,12,19,29,31,34,37,42,46,47,63,68,75,80,93,95,100,105,106,115,133,136,138,141,145,151,157,159,167,169,175,187,197,210,211,217,221,222,232,233,247,257,263,274,275,279,306,308,327,335,337,339,355,365
-; Formula: a(n) = A036234(A091180(n)-3)
+; Formula: a(n) = A036234(6*((8*A088878(n)-24)/16)+4)
 
-seq $0,91180 ; Primes of the form 3*p - 2 such that p is a prime.
+seq $0,88878 ; Prime numbers p such that 3p - 2 is a prime.
+mul $0,8
+sub $0,24
+div $0,16
+mul $0,6
 mov $1,$0
-sub $1,3
+add $1,4
 seq $1,36234 ; Number of primes <= n, if 1 is counted as a prime.
 mov $0,$1

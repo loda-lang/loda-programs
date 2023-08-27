@@ -1,4 +1,4 @@
-; A045079: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 3 and 3, respectively.
+; A045079: Numbers whose base-4 representation contains exactly three 0's and three 3's.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 3087,3123,3132,3267,3276,3312,3843,3852,3888,4032,4159,4303,4339,4348,4879,4915,4924,5059,5068,5104,7183,7219,7228,7363,7372,7408,7939,7948,7984,8128,8255,8399,8435,8444,8975,9011
 
