@@ -7,10 +7,11 @@ add $2,1
 max $4,$2
 lpb $4
   sub $4,1
+  div $4,7
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  bin $1,$0
+  cmp $1,$0
   sub $0,1
   mov $3,$0
   seq $3,23196 ; Nondeficient numbers: numbers k such that sigma(k) >= 2k; union of A000396 and A005101.

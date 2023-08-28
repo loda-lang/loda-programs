@@ -1,4 +1,4 @@
-; A044996: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 1 and 2, respectively.
+; A044996: Numbers whose base-3 representation contains exactly one 0 and two 2's.
 ; Submitted by pututu
 ; 20,24,35,47,51,59,61,65,69,73,75,98,104,106,116,128,132,140,142,146,150,154,156,176,178,184,194,196,200,204,208,210,220,226,228,287,293,295,311,313,319,341,347,349,359,371,375,383
 

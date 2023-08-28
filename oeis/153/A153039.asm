@@ -1,7 +1,34 @@
 ; A153039: Numbers n such that 2*n-7 is composite.
-; Submitted by eclipse99
+; Submitted by Science United
 ; 8,11,14,16,17,20,21,23,26,28,29,31,32,35,36,38,41,42,44,46,47,49,50,51,53,56,59,61,62,63,64,65,66,68,70,71,74,75,76,77,80,81,83,84,86,88,89,91,92,95,96,97,98,101,104,105,106,107,108,110,111,112,113,114,116,119,121,122,125,126,127,128,130,131,133,134,136,137,140,141
-; Formula: a(n) = A153238(n)+5
 
-seq $0,153238 ; Numbers k such that 2*k + 3 is composite.
-add $0,5
+mov $2,$0
+add $0,1
+add $2,5
+pow $2,2
+lpb $2
+  mov $3,$1
+  mov $5,0
+  add $1,2
+  add $3,7
+  lpb $3
+    gcd $5,3
+    mov $6,$3
+    div $6,5
+    lpb $6
+      mov $4,$3
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $3,$5
+    pow $3,2
+    mov $5,1
+  lpe
+  add $0,$5
+  sub $0,1
+  sub $2,$0
+lpe
+mov $0,$1
+div $0,2
+add $0,7

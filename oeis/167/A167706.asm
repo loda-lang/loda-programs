@@ -14,10 +14,7 @@ lpb $4
     trn $1,1
     add $1,1
     seq $1,141515 ; a(n) = phi(A067774(n)) where phi is Euler totient function.
-    mul $1,5
-    sub $1,30
-    div $1,5
-    add $1,4
+    sub $1,2
     mov $0,0
   lpe
   max $3,$1

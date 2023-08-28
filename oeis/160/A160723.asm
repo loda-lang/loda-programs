@@ -1,13 +1,18 @@
 ; A160723: First differences of A160722.
-; Submitted by Science United
+; Submitted by Dave Studdert
 ; 1,4,4,10,4,10,10,22,4,10,10,22,10,22,22,46,4,10,10,22,10,22,22,46,10,22,22,46,22,46,46,94,4,10,10,22,10,22,22,46,10,22,22,46,22,46,46,94,10,22,22,46,22,46,46,94,22,46,46,94,46,94,94,190
-; Formula: a(n) = 3*gcd(512,binomial(2*n,n))-2
 
-mov $2,$0
-mul $2,2
-bin $2,$0
-mov $1,512
-gcd $1,$2
-mov $0,$1
+mov $3,$0
+mov $4,$0
+lpb $4
+  div $4,2
+  sub $3,$4
+lpe
+mov $1,$3
+mov $3,2
+pow $3,$1
+sub $3,1
+add $2,$3
+mov $0,$2
 mul $0,3
-sub $0,2
+add $0,1

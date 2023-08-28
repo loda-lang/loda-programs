@@ -1,4 +1,4 @@
-; A045094: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 1 and 4, respectively.
+; A045094: Numbers whose base-4 representation contains exactly one 1 and four 2's.
 ; Submitted by biodoc
 ; 426,618,666,678,681,1194,1578,1674,1698,1704,1707,1710,1722,1770,1962,2154,2202,2214,2217,2346,2442,2466,2472,2475,2478,2490,2538,2586,2598,2601,2634,2658,2664,2667,2670,2682,2694
 
