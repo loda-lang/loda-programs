@@ -292,6 +292,7 @@ A093460: a(n) = 2n^(n-1) - 1.
 A095116: a(n) = prime(n) + n - 1.
 A095901: A004001 (mod 2).
 A096197: a(n) = (1+prime(n)) mod n.
+A097012: a(n) = sigma(n) mod 210.
 A097945: a(n) = mu(n)*phi(n) where mu(n) is the Mobius function (A008683) and phi(n) is the Euler totient function (A000010).
 A098640: 2^p + 1 where p is prime.
 A098823: a(n) = 16*(8*prime(n) + 7).

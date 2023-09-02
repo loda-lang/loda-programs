@@ -8,4 +8,4 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
-seq $0,51109 ; Hyperinflation sequence for banknotes.
+seq $0,51109 ; Expansion of g.f. (1+2*x+5*x^2)/(1-10*x^3).

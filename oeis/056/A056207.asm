@@ -1,13 +1,13 @@
 ; A056207: Number of binary trees of height <= n.
-; Submitted by http://amez.petrsu.ru/
+; Submitted by Science United
 ; 3,24,675,458328,210066388899,44127887745906175987800,1947270476915296449559703445493848930452791203,3791862310265926082868235028027893277370233152247388584761734150717768254410341175325352024
-; Formula: a(n) = (a(n-1)+2)^2-1, a(0) = 3
+; Formula: a(n) = b(n)-1, b(n) = (b(n-1)+1)^2, b(0) = 4
 
-mov $1,3
+mov $1,4
 lpb $0
   sub $0,1
-  add $1,2
+  add $1,1
   pow $1,2
-  sub $1,1
 lpe
 mov $0,$1
+sub $0,1

@@ -4,9 +4,21 @@
 
 mov $1,$0
 cmp $1,6
-add $0,1
 mul $0,2
-seq $0,172128 ; a(n) = floor(phi^n/n), where phi = golden ratio = (1+sqrt(5))/2.
+add $0,3
+mov $2,$0
+mov $3,1
+mov $5,2
+lpb $0
+  sub $0,1
+  mov $6,$4
+  cmp $4,$5
+  add $4,$3
+  mov $5,$3
+  add $3,$6
+lpe
+mov $0,$3
+div $0,$2
 add $0,$1
 add $0,1
 div $0,2

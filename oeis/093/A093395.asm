@@ -4,7 +4,29 @@
 
 mov $2,$0
 add $2,3
-seq $0,91507 ; Product of the anti-divisors of n.
+mov $5,1
+mov $6,1
+mov $8,2
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $9,$6
+  mod $9,2
+  add $3,$8
+  add $6,$5
+  mov $7,$0
+  mod $7,$6
+  cmp $7,0
+  mul $7,$3
+  mov $8,$6
+  mul $8,$7
+  sub $0,1
+  sub $3,$7
+  mov $5,$9
+lpe
+mov $0,$8
+div $0,2
 add $1,$0
 gcd $1,$2
 div $2,$1

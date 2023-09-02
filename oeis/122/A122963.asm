@@ -6,8 +6,8 @@ seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
 mov $1,$0
 mov $2,$0
 lpb $0
-  add $2,1
   mov $0,0
+  add $2,1
 lpe
 mul $1,$2
 mul $1,4

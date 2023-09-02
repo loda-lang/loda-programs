@@ -1,15 +1,13 @@
 ; A004482: Tersum n + 1 (answer recorded in base 10).
-; Submitted by NapierNimbus
+; Submitted by Science United
 ; 1,2,0,4,5,3,7,8,6,10,11,9,13,14,12,16,17,15,19,20,18,22,23,21,25,26,24,28,29,27,31,32,30,34,35,33,37,38,36,40,41,39,43,44,42,46,47,45,49,50,48,52,53,51,55,56,54,58,59,57,61,62
-; Formula: a(n) = gcd(0,(gcd(n+1,3)+8)%5)+n-3
+; Formula: a(n) = (gcd(n+1,3)+8)%5+n-3
 
 add $0,1
-mov $1,1
-add $1,$0
+mov $1,$0
 gcd $0,3
 add $0,8
 mod $0,5
-gcd $2,$0
-add $2,$1
-mov $0,$2
-sub $0,5
+add $1,$0
+mov $0,$1
+sub $0,4

@@ -1,6 +1,6 @@
 ; A071625: Number of distinct exponents when n is factorized as a product of primes.
 ; Submitted by Simon Strandgaard (M1)
-; 0,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,2,1,2,1,2,1,2,1,2,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2,1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,2,1
+; 0,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,2,1,2,1,2,1,2,1,2,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2
 
 seq $0,297404 ; A binary representation of the positive exponents that appear in the prime factorization of a number, shown in decimal.
 lpb $0
