@@ -1,5 +1,5 @@
 ; A011643: 84th cyclotomic polynomial.
-; Submitted by zombie67 [MM]
+; Submitted by Science United
 ; 1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1
 
 mov $1,$0
@@ -15,6 +15,7 @@ lpb $1
   max $4,0
   seq $4,14018 ; Inverse of 9th cyclotomic polynomial.
   add $3,$4
+  pow $5,5
   add $5,18
 lpe
 mov $1,$3

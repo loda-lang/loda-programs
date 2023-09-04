@@ -12,7 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,119370 ; G.f. satisfies: A(x) = 1 + x*A(x)^2 + x^2*(A(x)^2 - A(x)).
+  seq $0,119370 ; G.f. satisfies A(x) = 1 + x*A(x)^2 + x^2*(A(x)^2 - A(x)).
   mul $1,$0
   add $3,$1
 lpe

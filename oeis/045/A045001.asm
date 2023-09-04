@@ -1,4 +1,4 @@
-; A045001: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 2 and 2, respectively.
+; A045001: Numbers whose base-3 representation contains exactly two 0's and two 2's.
 ; Submitted by shiva
 ; 56,60,72,89,101,105,137,141,153,167,169,173,177,181,183,191,195,207,217,219,225,260,266,268,278,290,294,302,304,308,312,316,318,332,344,348,380,384,396,410,412,416,420,424,426,434
 
