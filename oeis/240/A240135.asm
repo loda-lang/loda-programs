@@ -1,10 +1,14 @@
 ; A240135: a(n) = composite(n)*2^(n - 3).
 ; Submitted by Christian Krause
 ; 1,3,8,18,40,96,224,480,1024,2304,5120,10752,22528,49152,102400,212992,442368,917504,1966080,4194304,8650752,17825792,36700160,75497472,159383552,327155712,671088640,1409286144,2952790016,6039797760,12348030976,25769803776
-; Formula: a(n) = (A140347(n)*2^n)/4
+; Formula: a(n) = (((2*A072668(n)-6)/2+4)*2^n)/4
 
 mov $1,2
 pow $1,$0
-seq $0,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
+seq $0,72668 ; Numbers one less than composite numbers.
+mul $0,2
+sub $0,6
+div $0,2
+add $0,4
 mul $0,$1
 div $0,4

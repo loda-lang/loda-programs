@@ -11,7 +11,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,1146 ; a(n) = 2^(2^n).
+  mov $5,2
+  pow $5,$0
+  mov $0,2
+  pow $0,$5
   mul $1,$0
   add $3,$1
 lpe

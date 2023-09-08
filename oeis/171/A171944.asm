@@ -1,7 +1,23 @@
 ; A171944: N-positions for game of misere version of Mark.
-; Submitted by Simon Strandgaard
+; Submitted by matszpk
 ; 0,2,3,5,7,8,9,11,12,13,15,17,19,20,21,23,25,27,28,29,31,32,33,35,36,37,39,41,43,44,45,47,48,49,51,52,53,55,57,59,60,61,63,65,67,68,69,71,73,75,76,77,79,80,81,83,84,85,87,89,91,92,93,95,97,99,100,101,103,105
-; Formula: a(n) = A171945(n)/2
 
-seq $0,171945 ; P-positions for game of misere version of Mark.
+mov $1,2
+mov $4,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $3,$4
+  add $3,1
+  div $3,4
+  mul $3,2
+  bin $1,$4
+  add $1,$3
+  gcd $1,4
+  add $2,$1
+  mul $4,$1
+  div $1,2
+  dif $3,$1
+lpe
+mov $0,$2
 div $0,2

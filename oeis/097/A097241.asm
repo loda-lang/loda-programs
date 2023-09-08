@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $7,$1
-  seq $7,40 ; The prime numbers.
+  seq $7,6005 ; The odd prime numbers together with 1.
   seq $7,13632 ; Difference between n and the next prime greater than n.
   mov $6,$7
   sub $6,1
@@ -29,7 +29,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-mul $0,2
-sub $0,18
-div $0,2
-add $0,7
+sub $0,2

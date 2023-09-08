@@ -1,15 +1,11 @@
 ; A239141: Number of strict partitions of n having standard deviation <= 1.
-; Submitted by Matt
+; Submitted by Jarod
 ; 1,1,2,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2,3,2,2
+; Formula: a(n) = min(n-3,(n-3)%3)/2+2
 
-add $0,2
+sub $0,3
 lpb $0
-  sub $0,1
-  mov $3,$2
-  add $1,1
-  mov $2,$1
-  cmp $1,$3
-  div $4,2
-  add $4,$3
+  sub $0,3
 lpe
-mov $0,$4
+div $0,2
+add $0,2

@@ -12,7 +12,5 @@ lpb $1
   trn $1,1
 lpe
 div $2,2
-mov $1,$2
-add $1,$0
-mov $0,$1
+add $0,$2
 sub $0,48

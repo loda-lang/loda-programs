@@ -7,7 +7,8 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
-  seq $3,204906 ; Ordered differences of primes >=5.
+  seq $3,14132 ; Complement of triangular numbers (A000217); also array T(n,k) = ((n+k)^2 + n-k)/2, n, k > 0, read by antidiagonals.
+  seq $3,204898 ; Ordered differences of odd primes.
   gcd $3,$0
   add $1,1
   add $2,$3

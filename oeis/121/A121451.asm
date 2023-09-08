@@ -3,7 +3,16 @@
 
 lpb $0
   mov $1,$0
-  seq $1,164682 ; a(n) = 2*a(n-2) for n > 2; a(1) = 5, a(2) = 8.
+  add $1,5
+  mov $3,$1
+  mod $3,2
+  add $3,4
+  div $1,2
+  mov $2,2
+  pow $2,$1
+  mul $2,$3
+  mov $1,$2
+  div $1,4
   mul $0,$1
   mod $0,8
 lpe

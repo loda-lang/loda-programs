@@ -7,6 +7,4 @@ add $1,1
 mov $2,$1
 seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 dif $0,4
-mov $1,$2
-add $1,$0
-mov $0,$1
+add $0,$2

@@ -6,8 +6,12 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,75491 ; Sum of digits of n minus number of divisors of n.
+  add $3,1
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  sub $3,$6
   max $3,0
   min $3,1
   add $5,2

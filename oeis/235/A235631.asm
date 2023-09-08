@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,40 ; The prime numbers.
+  seq $3,6005 ; The odd prime numbers together with 1.
+  max $3,2
   mov $5,$3
   seq $3,37471 ; a(n)=Sum{d(i)*8^i: i=0,1,...,m}, where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.
   mul $3,2

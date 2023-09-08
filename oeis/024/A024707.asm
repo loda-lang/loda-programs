@@ -9,7 +9,7 @@ pow $2,2
 lpb $2
   add $1,1
   mov $3,$1
-  seq $3,40 ; The prime numbers.
+  seq $3,6005 ; The odd prime numbers together with 1.
   pow $3,2
   mul $3,2
   seq $3,10874 ; a(n) = n mod 5.

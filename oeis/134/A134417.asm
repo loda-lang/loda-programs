@@ -7,8 +7,15 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$0
+mov $3,$0
+div $3,2
 mov $0,$1
 mov $1,$2
-seq $1,133632 ; a(1)=1, a(n) = (p-1)*a(n-1), if n is even, otherwise a(n) = p*a(n-2), where p = 5.
+sub $1,1
+gcd $1,2
+pow $1,2
+mov $4,5
+pow $4,$3
+mul $1,$4
 bin $0,$2
 mul $0,$1

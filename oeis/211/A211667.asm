@@ -1,11 +1,10 @@
 ; A211667: Number of iterations sqrt(sqrt(sqrt(...(n)...))) such that the result is < 2.
-; Submitted by LCB001
+; Submitted by arkiss
 ; 0,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = (10*n)/((6*n+11)/2)
+; Formula: a(n) = (20*n)/(6*n+10)
 
 mov $1,$0
 mul $1,6
-add $1,11
-div $1,2
-mul $0,10
+add $1,10
+mul $0,20
 div $0,$1

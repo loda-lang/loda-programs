@@ -1,16 +1,15 @@
 ; A048298: a(n) = n if n=2^i for i >= 0, otherwise a(n) = 0.
-; Submitted by omegaintellisys
+; Submitted by Science United
 ; 0,1,2,0,4,0,0,0,8,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,1
+mov $2,2
 lpb $0
-  mov $2,$0
+  sub $2,$1
   mul $2,2
-  mod $2,4
-  mul $2,$1
+  add $1,$0
+  mod $1,2
+  mul $1,$2
   div $0,2
-  mul $1,2
-  sub $1,$2
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1
+div $0,4

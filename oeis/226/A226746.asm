@@ -6,10 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,1
   mov $3,$1
-  seq $3,308474 ; a(n) = Sum_{k=1..n^2, gcd(n,k) = 1} k.
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mul $3,$5
+  add $3,1
+  div $3,2
   gcd $3,2
-  gcd $4,2
   sub $0,$3
   add $0,1
   add $1,$4

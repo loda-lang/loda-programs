@@ -1,20 +1,30 @@
 ; A192479: a(n) = 2^n*C(n-1) - A186997(n-1), where C(n) are the Catalan numbers (A000108).
-; Submitted by Jamie Morken(w4)
+; Submitted by Science United
 ; 1,3,12,61,344,2074,13080,85229,569264,3876766,26817304,187908802,1330934032,9513485076,68539442800,497178707325,3628198048352,26617955242806,196205766112536,1452410901340598,10792613273706320
 
+mov $1,1
+add $1,$0
+mul $1,2
 add $0,1
 mov $4,$0
+add $0,1
 lpb $0
   sub $0,1
-  add $2,1
+  trn $1,2
+  mov $2,$4
   bin $2,$0
   mov $3,$4
+  add $3,$1
   bin $3,$1
-  mul $3,$2
+  mul $3,3
+  trn $0,1
   add $1,1
-  mov $2,$1
+  mul $3,$2
   div $3,$1
-  add $4,2
+  sub $4,1
   add $5,$3
 lpe
 mov $0,$5
+sub $0,3
+div $0,3
+add $0,1

@@ -4,5 +4,17 @@
 
 mov $1,$0
 add $1,1
-seq $0,7407 ; a(n) = denominator of Sum_{k=1..n} 1/k^2.
+mov $2,1
+add $0,1
+lpb $0
+  mov $3,$0
+  pow $3,2
+  mul $4,$3
+  add $4,$2
+  sub $0,1
+  mul $2,$3
+lpe
+gcd $4,$2
+div $2,$4
+mov $0,$2
 mul $0,$1

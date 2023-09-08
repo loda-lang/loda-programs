@@ -8,7 +8,13 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,306190 ; a(n) = p^2 - p - 1 where p = prime(n), the n-th prime.
+  seq $3,6005 ; The odd prime numbers together with 1.
+  bin $3,2
+  mov $6,$3
+  max $6,1
+  mov $3,$6
+  mul $3,2
+  sub $3,1
   mov $5,$3
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

@@ -1,9 +1,17 @@
 ; A197879: Parity of floor(n*sqrt(8)).
 ; Submitted by www.urfak.petrsu.ru
 ; 0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0
-; Formula: a(n) = A001951(2*n+2)%2
 
-mul $0,2
-add $0,2
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+mul $0,4
+pow $0,2
+mov $1,$0
+mul $1,2
+lpb $0
+  mov $2,$1
+  div $2,$0
+  add $0,$2
+  div $0,2
+lpe
+div $0,2
 mod $0,2

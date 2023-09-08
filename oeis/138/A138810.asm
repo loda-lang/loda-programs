@@ -18,9 +18,7 @@ lpb $4
   pow $0,8
   add $0,1
   mod $0,17
-  mul $0,2
-  sub $0,2
-  div $0,2
+  sub $0,1
   mul $0,$5
   mul $1,$0
   add $3,$1

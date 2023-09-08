@@ -7,8 +7,12 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,14551 ; Jacobsthal-Lucas numbers.
+  mov $7,2
+  pow $7,$1
+  mov $6,-1
+  pow $6,$1
+  add $6,$7
+  mov $3,$6
   sub $3,1
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
