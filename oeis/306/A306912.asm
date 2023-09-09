@@ -4,6 +4,13 @@
 
 cmp $1,$0
 trn $0,1
-seq $0,209489 ; Number of partitions of 1 into rational parts a/b satisfying 0<a<b<=n.
-add $0,2
+lpb $0
+  mov $3,$0
+  seq $3,300486 ; Number of relatively prime or monic partitions of n.
+  sub $3,1
+  sub $0,1
+  add $2,$3
+lpe
+mov $0,$2
 sub $0,$1
+add $0,2

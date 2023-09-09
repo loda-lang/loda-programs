@@ -2,10 +2,18 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,2,3,4,5,7,9,12,16,21,28,39,49
 
-seq $0,134816 ; Padovan's spiral numbers.
-mov $1,$0
+mov $2,1
+lpb $0
+  sub $0,1
+  sub $3,$1
+  mov $1,$3
+  mov $3,$4
+  mov $4,$2
+  add $2,$1
+lpe
+mov $0,$2
 div $0,16
 sub $0,1
 cmp $0,1
 mul $0,2
-add $0,$1
+add $0,$2

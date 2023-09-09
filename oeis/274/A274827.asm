@@ -5,7 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,40 ; The prime numbers.
+  seq $2,6005 ; The odd prime numbers together with 1.
   seq $2,13632 ; Difference between n and the next prime greater than n.
   mul $3,$2
   mul $3,-1

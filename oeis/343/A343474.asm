@@ -13,7 +13,3 @@ pow $2,$1
 mov $0,$2
 mul $0,$1
 pow $0,2
-mul $0,4
-sub $0,4
-div $0,4
-add $0,1

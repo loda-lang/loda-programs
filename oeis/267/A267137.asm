@@ -6,8 +6,10 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,33687 ; Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
+  mov $4,$1
+  mul $4,3
+  seq $4,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+  mov $3,$4
   cmp $3,0
   cmp $3,0
   sub $0,$3

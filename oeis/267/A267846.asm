@@ -1,7 +1,21 @@
 ; A267846: Binary representation of the n-th iteration of the "Rule 227" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jon Maiga
 ; 1,100,11010,1111010,111111010,11111111010,1111111111010,111111111111010,11111111111111010,1111111111111111010,111111111111111111010,11111111111111111111010,1111111111111111111111010,111111111111111111111111010,11111111111111111111111111010,1111111111111111111111111111010,111111111111111111111111111111010,11111111111111111111111111111111010,1111111111111111111111111111111111010,111111111111111111111111111111111111010,11111111111111111111111111111111111111010
-; Formula: a(n) = A007088(A267847(n))
 
-seq $0,267847 ; Decimal representation of the n-th iteration of the "Rule 227" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,4
+pow $1,$0
+mov $2,$1
+max $2,6
+add $2,$1
+mov $4,1
+mov $0,$2
+sub $0,6
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3

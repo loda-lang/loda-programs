@@ -4,12 +4,16 @@
 
 mov $1,1
 lpb $0
+  mov $5,$0
+  add $5,1
   mov $2,$0
-  seq $2,5451 ; a(n)=1 if n is a prime number, otherwise a(n)=n.
-  mul $3,$2
+  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mov $4,$2
+  gcd $4,$5
+  mul $3,$4
   add $3,$1
   sub $0,1
-  mul $1,$2
+  mul $1,$4
 lpe
 gcd $3,$1
 div $1,$3

@@ -9,7 +9,16 @@ lpb $3
   mov $0,$2
   add $0,$3
   max $0,0
-  seq $0,133067 ; Perfect numbers divided by 2, minus 1.
+  seq $0,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  seq $0,139421 ; a(1)=1; for n>1, a(n) = largest prime divisor of n!!.
+  mov $4,2
+  pow $4,$0
+  bin $4,2
+  mov $0,$4
+  mul $0,4
+  sub $0,24
+  div $0,8
+  add $0,2
   add $1,$0
 lpe
 mov $0,$1

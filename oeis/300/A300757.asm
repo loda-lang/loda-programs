@@ -5,6 +5,20 @@
 mov $1,2
 pow $1,$0
 pow $1,$0
-seq $0,48291 ; Number of {0,1} n X n matrices with no zero rows or columns.
-sub $1,$0
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,2
+  pow $3,$2
+  sub $3,1
+  pow $3,$5
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+sub $1,$6
 mov $0,$1

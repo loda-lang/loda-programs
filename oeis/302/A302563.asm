@@ -1,11 +1,18 @@
 ; A302563: Numbers whose digital root is equal to their number of digits.
+; Submitted by Science United
 ; 1,11,20,29,38,47,56,65,74,83,92,102,111,120,129,138,147,156,165,174,183,192,201,210,219,228,237,246,255,264,273,282,291,300,309,318,327,336,345,354,363,372,381,390,399,408,417,426,435,444
 
 mov $1,$0
-mul $0,9
+add $1,1
+mul $1,9
+mov $2,$1
+mov $0,$1
+add $0,1
 lpb $1
-  sub $1,1
   div $1,10
-  add $0,1
+  add $0,2
 lpe
+add $0,$2
+sub $0,21
+div $0,2
 add $0,1

@@ -1,24 +1,16 @@
 ; A307465: Number of Catalan words of length n avoiding the pattern 110.
-; Submitted by stoneageman
+; Submitted by Science United
 ; 1,1,2,5,13,33,82,201,489,1185,2866,6925,16725,40385,97506,235409,568337,1372097,3312546,7997205,19306973,46611169,112529330,271669849,655869049,1583407969,3822685010,9228778013,22280241061,53789260161,129858761410
+; Formula: a(n) = c(n)+1, b(n) = 2*b(n-1)+b(n-2)+n, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = b(n-1), c(2) = 1, c(1) = 0, c(0) = 0
 
-mov $1,1
-mov $4,1
-mov $7,1
 lpb $0
   sub $0,1
-  mov $6,$4
-  sub $7,$4
-  mov $4,$1
-  add $4,$7
-  mov $5,$1
-  add $5,$2
-  add $5,1
-  mul $1,2
-  add $1,$3
-  add $2,2
-  mov $3,$5
-  mov $7,$6
-  dif $7,$6
+  add $4,$2
+  add $1,1
+  mov $3,$4
+  mov $4,$2
+  add $2,$1
+  add $2,$3
 lpe
 mov $0,$4
+add $0,1

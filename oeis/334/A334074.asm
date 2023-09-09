@@ -4,4 +4,4 @@
 ; Formula: a(n) = A003415(A334075(n))
 
 seq $0,334075 ; a(n) is the denominator of the sum of reciprocals of primes not exceeding n and not dividing binomial(2*n, n).
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

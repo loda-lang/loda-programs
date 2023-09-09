@@ -4,7 +4,17 @@
 
 mov $1,3
 pow $1,$0
-seq $0,189746 ; a(1)=5,  a(2)=2, a(n)=5*a(n-1) + 2*a(n-2)
+mov $2,5
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $3,$4
+  mul $3,2
+  mul $4,5
+  add $4,$2
+  mov $2,$3
+lpe
+mov $0,$2
 mul $0,$1
 sub $0,5
 div $0,6

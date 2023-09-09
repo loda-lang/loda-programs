@@ -1,13 +1,26 @@
 ; A269027: Parity of the number of 1's in A039724(n).
-; Submitted by vaughan
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0
 
-lpb $0
-  add $1,$0
-  div $0,2
-  sub $1,$0
-  add $0,1
-  div $0,2
+mul $0,3
+mov $3,1
+mov $1,$0
+mul $1,4
+lpb $1
+  div $1,2
+  sub $3,1
+  mov $4,1
+  add $4,$1
+  div $4,2
+  mod $4,2
+  mov $5,$3
+  sub $5,$2
+  add $3,$2
+  mul $4,$5
+  add $2,$4
 lpe
-mov $0,$1
+mov $0,$2
+div $0,2
+mod $0,2
+add $0,2
 mod $0,2

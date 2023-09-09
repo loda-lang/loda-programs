@@ -1,8 +1,21 @@
 ; A262779: Binary representation of the n-th iteration of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jamie Morken(s3)
 ; 1,110,11011,1101111,110111111,11011111111,1101111111111,110111111111111,11011111111111111,1101111111111111111,110111111111111111111,11011111111111111111111,1101111111111111111111111,110111111111111111111111111,11011111111111111111111111111,1101111111111111111111111111111,110111111111111111111111111111111,11011111111111111111111111111111111,1101111111111111111111111111111111111,110111111111111111111111111111111111111,11011111111111111111111111111111111111111
-; Formula: a(n) = A007088(A267604(2*n))
 
 mul $0,2
-seq $0,267604 ; Decimal representation of the middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,2
+pow $1,$0
+mul $1,7
+sub $1,2
+div $1,4
+mov $3,1
+mov $0,$1
+lpb $0
+  mov $4,$0
+  mod $4,2
+  mul $4,$3
+  div $0,2
+  add $2,$4
+  mul $3,10
+lpe
+mov $0,$2

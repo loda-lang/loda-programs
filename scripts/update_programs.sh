@@ -37,6 +37,21 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # no color
 
+function is_trivial_change {
+  f=$1
+  cp $f /tmp/updated_prog.asm
+  git checkout -- $f
+  cp $f /tmp/orig_prog.asm
+  cp /tmp/updated_prog.asm $f
+  orig_opt=$(loda opt /tmp/orig_prog.asm)
+  updated_opt=$(loda opt /tmp/updated_prog.asm)
+  if [ "$orig_opt" = "$updated_opt" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
 function update_program {
   f=$1
   fname=$(basename -- $f)
@@ -120,6 +135,12 @@ for f in $files; do
   fi
   if git diff -U1000 --exit-code -- $f > /dev/null; then
     echo "Already staged: $f"
+    ((num_updated++))
+    continue
+  fi
+  if is_trivial_change $f; then
+    echo "Trivial change: $f"
+    git add $f
     ((num_updated++))
     continue
   fi

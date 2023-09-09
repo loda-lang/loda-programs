@@ -4,4 +4,4 @@
 ; Formula: a(n) = A003415(A000178(n))
 
 seq $0,178 ; Superfactorials: product of first n factorials.
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

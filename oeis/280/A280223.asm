@@ -1,6 +1,6 @@
 ; A280223: Precipice of n: descending by the main diagonal of the pyramid described in A245092, a(n) is the height difference between the n-th level (starting from the top) and the level of the next terrace.
 ; Submitted by Jamie Morken(w4)
-; 1,2,1,2,1,2,1,1,3,2,1,3,2,1,1,2,1,2,1,4,3,2,1,1,3,2,1,2,1,2,1,3,2,1,1,4,3,2,1,2,1,3,2,1,3,2,1,1,1,4,3,2,1,2,1,4,3,2,1,3,2,1,1,2,1,4,3,2,1,2,1,5,4,3,2,1,3,2,1,1,3,2,1,4,3,2,1,2,1,1,5,4,3,2,1,2,1,1,1,4
+; 1,2,1,2,1,2,1,1,3,2,1,3,2,1,1,2,1,2,1,4,3,2,1,1,3,2,1,2,1,2,1,3,2,1,1,4,3,2,1,2,1,3,2,1,3,2,1,1,1,4,3,2,1,2,1,4,3,2,1,3,2,1,1,2,1,4,3,2,1,2,1,5,4,3,2,1,3,2,1,1
 
 mov $2,$0
 mov $1,$0

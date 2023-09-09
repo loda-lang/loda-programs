@@ -4,5 +4,17 @@
 
 mov $1,$0
 add $1,1
-seq $0,323118 ; a(n) = U_{n}(n) where U_{n}(x) is a Chebyshev polynomial of the second kind.
+mov $2,1
+mov $3,1
+mov $5,$0
+sub $5,1
+mul $5,2
+lpb $0
+  sub $0,1
+  mov $4,$3
+  mul $4,$5
+  add $2,$4
+  add $3,$2
+lpe
+mov $0,$3
 div $0,$1
