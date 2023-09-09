@@ -6,7 +6,8 @@ add $0,1
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,271703 ; Triangle read by rows: the unsigned Lah numbers T(n,k) = binomial(n-1, k-1)*n!/k! if n > 0 and k > 0, T(n,0) = 0^n and otherwise 0, for n >= 0 and 0 <= k <= n.
+  seq $2,111596 ; The matrix inverse of the unsigned Lah numbers A271703.
+  gcd $2,$2
   mov $3,$2
   min $3,1
   sub $0,$3

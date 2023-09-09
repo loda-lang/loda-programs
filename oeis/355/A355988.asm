@@ -10,10 +10,7 @@ lpb $0
   lpb $3
     mov $3,$2
     mul $3,2
-    mov $4,$1
-    gcd $4,$2
     mov $0,31
-    div $1,$4
   lpe
   mul $1,$2
 lpe

@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   add $3,2
   mov $5,$3
-  seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
   mod $3,$5
   mod $3,2
@@ -25,7 +25,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$1
-mul $0,5
-sub $0,5
-div $0,5
-add $0,2
+add $0,1

@@ -1,19 +1,13 @@
 ; A363706: a(n) is the sigma irregularity of the n-th power of a path graph of length at least 3*n.
 ; Submitted by Science United
 ; 2,14,52,140,310,602,1064,1752,2730,4070,5852,8164,11102,14770,19280,24752,31314,39102,48260,58940,71302,85514,101752,120200,141050,164502,190764,220052,252590,288610,328352,372064,420002,472430,529620,591852,659414,732602,811720,897080,989002
-; Formula: a(n) = (-2*(n+1)*(n+2)+2*binomial((n+2)^2-n,2)-8)/3+2
+; Formula: a(n) = (2*binomial(-2*binomial(n+2,2),2)-6)/3+2
 
-mov $1,$0
-sub $2,$0
 add $0,2
-add $1,1
-mul $1,$0
-sub $1,1
-pow $0,2
-add $0,$2
 bin $0,2
-sub $0,$1
+mul $0,-2
+bin $0,2
 mul $0,2
-sub $0,10
+sub $0,6
 div $0,3
 add $0,2

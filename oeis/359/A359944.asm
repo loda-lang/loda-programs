@@ -1,4 +1,4 @@
-; A359944: Number of divisors d of n such that d-1 is cube.
+; A359944: Number of divisors d of n such that d-1 is a cube.
 ; Submitted by Kotenok2000
 ; 1,2,1,2,1,2,1,2,2,2,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,2,2,3,1,2,1,2,1,2,1,3,1,2,1,2,1,2,1,2,2,2,1,2,1,2,1,2,1,3,1,3,1,2,1,2,1,2,2,2,2,2,1,2,1,2,1,3,1,2,1,2,1,2,1,2
 

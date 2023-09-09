@@ -1,14 +1,10 @@
 ; A361196: Denominator of the discriminant of the n-th Legendre polynomial.
-; Submitted by stoneageman
+; Submitted by arkiss
 ; 1,1,4,16,1024,65536,16777216,4294967296,70368744177664,1152921504606846976,75557863725914323419136,4951760157141521099596496896,5192296858534827628530496329220096,5444517870735015415413993718908291383296,22835963083295358096932575511191922182123945984
+; Formula: a(n) = (2^A174605(n))^2
 
-mov $1,4
-mov $2,$0
-lpb $2
-  seq $2,124399 ; a(n) = 4^(n - bitcount(n)) where bitcount(n) = A000120(n).
-  sub $0,1
-  mul $1,$2
-  mov $2,$0
-lpe
+seq $0,174605 ; Partial sums of A011371.
+mov $1,2
+pow $1,$0
+pow $1,2
 mov $0,$1
-div $0,4

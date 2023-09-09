@@ -5,8 +5,14 @@
 add $0,1
 mov $2,$0
 lpb $2
+  mov $3,1
+  add $3,$2
   mov $1,$2
-  seq $1,260 ; Number of rooted simplicial 3-polytopes with n+3 nodes; or rooted 3-connected triangulations with 2n+2 faces; or rooted 3-connected trivalent maps with 2n+2 vertices.
+  add $1,$3
+  mul $3,$1
+  mul $1,2
+  bin $1,$2
+  div $1,$3
   sub $2,1
   cmp $2,1
 lpe
