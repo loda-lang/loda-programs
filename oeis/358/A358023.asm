@@ -1,5 +1,5 @@
 ; A358023: Number of partitions of n into at most 2 distinct squarefree parts.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Kotenok2000
 ; 1,1,1,2,1,2,2,3,3,2,2,3,3,4,3,4,5,5,4,4,5,5,5,5,7,5,5,5,6,6,5,6,8,7,7,7,11,8,7,8,11,9,8,10,12,10,8,9,13,10,8,8,13,11,10,8,13,11,11,10,14,12,11,11,15,12,11,12,17,13,13,12,21,14,14,13,19,15,13,15
 
 mov $2,1
@@ -13,8 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,56170 ; Number of non-unitary prime divisors of n.
-    cmp $7,$1
+    seq $7,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
     mov $9,10
     add $9,$5
     sub $4,$0

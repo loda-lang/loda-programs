@@ -14,12 +14,12 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
+  gcd $3,$0
   sub $3,1
   seq $3,66169 ; Least k such that phi(k) >= n.
   lpb $0
     dif $0,$2
-    add $1,$3
-    mov $3,0
   lpe
+  add $1,$3
 lpe
 mov $0,$1

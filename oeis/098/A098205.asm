@@ -8,7 +8,14 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,40 ; The prime numbers.
+  mov $4,$0
+  seq $4,154115 ; Numbers n such that n + 3 is prime.
+  seq $4,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mul $4,3
+  mov $0,$4
+  sub $0,6
+  div $0,3
+  add $0,2
   mul $1,$0
   pow $0,2
   add $1,$0

@@ -1,16 +1,8 @@
 ; A115356: Matrix (1,x)+(x,x^2) in Riordan array notation.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,1,1,0,0,1,0,1,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+; Formula: a(n) = (A115359(n)+2)%2
 
-lpb $0
-  add $2,1
-  sub $0,$2
-  mov $1,$2
-lpe
-sub $1,$0
-add $2,1
-sub $2,$1
-bin $2,$1
-mov $0,$2
-min $0,2
+seq $0,115359 ; Matrix (1,x)-(x,x^2) in Riordan array notation.
+add $0,2
 mod $0,2

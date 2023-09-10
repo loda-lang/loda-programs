@@ -1,23 +1,43 @@
 ; A045466: Primes congruent to {1, 4, 6} mod 7.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 11,13,29,41,43,53,67,71,83,97,109,113,127,137,139,151,167,179,181,193,197,211,223,239,251,263,277,281,293,307,337,347,349,379,389,419,421,431,433,449,461,463,487,491,503,547,557,571,587,599,601,613,617,631,641,643,659,673,683,701,727,739,743,757,769,797,809,811,823,827,839,853,881,883,907,911,937,953,967,977
 
-mov $1,2
 mov $2,$0
-add $2,6
-pow $2,3
+add $2,3
+pow $2,2
 lpb $2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,7
+  mov $6,$1
+  div $6,3
+  mul $6,4
+  mov $8,0
+  mov $3,$1
+  add $3,$6
+  sub $3,2
+  mul $3,2
+  mov $5,$3
+  add $3,1
+  lpb $3
+    gcd $8,2
+    mov $9,$3
+    div $9,3
+    lpb $9
+      mov $7,$3
+      mod $7,$8
+      add $8,1
+      sub $9,$7
+    lpe
+    add $3,1
+    div $3,$8
+    pow $3,2
+    mov $8,1
+  lpe
+  sub $0,$8
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
-  sub $2,18
-  mov $5,$1
-  div $5,3
-  mov $3,$5
+  trn $2,1
 lpe
-mov $0,$3
+mov $0,$5
 add $0,1

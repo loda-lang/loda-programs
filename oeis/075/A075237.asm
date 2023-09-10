@@ -7,8 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   sub $2,1
-  mov $3,$1
-  seq $3,40 ; The prime numbers.
+  mov $6,$1
+  seq $6,154115 ; Numbers n such that n + 3 is prime.
+  seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mul $6,3
+  mov $3,$6
+  sub $3,6
+  div $3,3
+  add $3,2
   mov $5,$3
   seq $3,30106 ; Base 7 reversal of n (written in base 10).
   mul $3,2
