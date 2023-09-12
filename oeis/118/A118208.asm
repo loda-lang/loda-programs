@@ -1,4 +1,4 @@
-; A118208: G.f.: A(x) = product_{k>=1}(1 + x^k)^(-lambda(k)) where lambda(k) is the Liouville function, A008836.
+; A118208: G.f.: A(x) = Product_{k>=1} (1 + x^k)^(-lambda(k)) where lambda(k) is the Liouville function, A008836.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,-1,2,-1,0,2,-4,5,-3,0,4,-6,6,-2,-3,8,-10,6,0,-6,14,-13,9,0,-12,17,-18,11,3,-18,28,-22,14,7,-25,30,-31,11,12,-23,34,-28,9,12,-30,35,-31,10,11,-30,56,-35,26,-4,-41,51,-65,48,-8,-28,65,-74,70,-9,-49,71,-112,69,-4,-48,135,-129,82,-21,-83,155,-176,99,0
 

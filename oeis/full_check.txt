@@ -529,6 +529,7 @@ A248469: Floor((2*n^2)/e).
 A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231.
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
 A253251: a(1) = 1, and for n > 0, a(n+1) = a(n) + floor(10^k/a(n)), where k is the least integer such that 10^k >= a(n).
+A255738: a(1) = 1; for n > 1, a(n) = 1*0^{A000120(n-1) - 1}.
 A256757: Number of iterations of A007733 required to reach 1.
 A257091: a(n) = log_5 (A256693(n)).
 A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.

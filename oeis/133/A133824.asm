@@ -1,15 +1,14 @@
 ; A133824: Triangle whose rows are sequences of increasing and decreasing fourth powers: 1; 1,16,1; 1,16,81,16,1; ... .
-; Submitted by Jamie Morken(s3)
+; Submitted by Saenger
 ; 1,1,16,1,1,16,81,16,1,1,16,81,256,81,16,1,1,16,81,256,625,256,81,16,1,1,16,81,256,625,1296,625,256,81,16,1,1,16,81,256,625,1296,2401,1296,625,256,81,16,1,1,16,81,256,625,1296,2401,4096,2401,1296,625,256,81,16
 
-mov $1,1
-mul $0,2
 lpb $0
+  add $1,1
   sub $0,$1
-  gcd $0,0
-  sub $0,1
-  add $1,4
+  add $1,1
 lpe
-div $0,2
+sub $1,$0
+min $1,$0
+mov $0,$1
 add $0,1
 pow $0,4

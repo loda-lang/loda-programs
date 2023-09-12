@@ -425,6 +425,13 @@ A153480: a(n) = 2*prime(n)^2 - 4.
 A153481: a(n) = prime(n)^3 - 2.
 A153482: a(n) = prime(n)^4 - 8.
 A155213: a(n) = floor(prime(n)/9).
+A156772: a(n) = 729*n - 198.
+A157949: a(n) = 128*n - 1.
+A157951: a(n) = 128*n + 1.
+A158011: a(n) = 512n - 1.
+A158231: a(n) = 256*n + 1.
+A158250: a(n) = 256*n - 1.
+A158421: a(n) = 1024*n - 1.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
 A162143: a(n) = A007304(n)^2.
@@ -497,6 +504,7 @@ A242126: Primes modulo 28.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
 A244735: a(n) = (prime(n) mod 5) mod 2.
 A248558: Squares of the digits of the decimal expansion of e.
+A254029: Positive solutions of Monkey and Coconuts Problem for the classic case (5 sailors, 1 coconut to the monkey): a(n) = 15625*n - 4 for n >= 1.
 A259547: a(n) = n^4*Fibonacci(n).
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
@@ -506,6 +514,7 @@ A272027: a(n) = 3*sigma(n).
 A272470: 7 times the primes.
 A274535: a(n) = 5*sigma(n).
 A274536: a(n) = 6 * sigma(n).
+A276234: a(n) = n/gcd(n, 256).
 A278227: Least number with the prime signature of prime(n)-1.
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
@@ -529,3 +538,4 @@ A336551: a(n) = A003557(n) - 1.
 A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.
 A356533: a(n) = sigma_2(n)^2.
 A356534: a(n) = sigma_3(n)^2.
+A362361: a(n) = n*2^10 - 3.
