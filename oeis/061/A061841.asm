@@ -11,5 +11,5 @@ lpb $0
   sub $0,1
   sub $1,8
 lpe
-seq $0,61753 ; n! is divisible by (n+1)^5.
+seq $0,61753 ; Positive integers k such that k! is divisible by (k+1)^5.
 sub $0,4

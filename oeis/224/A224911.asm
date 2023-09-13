@@ -1,24 +1,14 @@
 ; A224911: Greatest prime dividing A190339(n).
-; Submitted by Conan
+; Submitted by Science United
 ; 2,3,5,7,7,11,13,13,17,19,19,23,23,23,29,31,31,31,37,37,41,43,43,47,47,47,53,53,53,59,61,61,61,67,67,71,73,73,73,79,79,83,83,83,89,89,89,89,97,97,101,103,103,107,109,109,113,113,113,113,113,113,113,127,127,131,131
 
-add $0,1
-mov $1,$0
-mov $2,2
-mul $0,2
-bin $0,$1
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-  lpe
+mov $2,$0
+mul $2,2
+add $2,2
+lpb $2
+  sub $2,1
+  mov $1,$2
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $2,$1
 lpe
 mov $0,$2
