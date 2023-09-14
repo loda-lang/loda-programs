@@ -4,12 +4,9 @@
 ; Formula: a(n) = 6*binomial(n+3,5)+binomial(n+1,3)
 
 mov $1,$0
-mov $0,2
-add $0,$1
-mov $1,$0
-sub $1,1
+add $1,1
 bin $1,3
-add $0,1
+add $0,3
 bin $0,5
 mul $0,6
 add $0,$1

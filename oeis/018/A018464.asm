@@ -26,7 +26,3 @@ dif $0,3
 sub $1,$0
 add $0,$1
 add $0,$1
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1

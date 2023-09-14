@@ -2,26 +2,9 @@
 ; Submitted by fzs600
 ; 1,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 
-mov $6,-2
-bin $6,$0
-div $6,2
-mov $3,$0
-sub $3,$6
-mul $3,4
-add $3,1
-mov $4,$3
-lpb $3
-  add $1,1
-  min $3,$1
-  mov $2,$4
-  dif $2,$3
-  mul $2,$1
-  cmp $2,$4
-  sub $4,$1
-  sub $5,$2
-  mov $3,$4
+mul $0,2
+add $0,1
+lpb $0
+  dif $0,3
 lpe
-mov $3,$5
-mul $3,-1
-mov $0,$3
-mod $0,2
+seq $0,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.

@@ -8,11 +8,11 @@ add $0,1
 add $4,3
 pow $4,2
 lpb $4
-  mov $5,$3
-  seq $5,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
-  cmp $5,1
-  gcd $5,2
-  sub $0,$5
+  mov $2,$3
+  seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  cmp $2,1
+  gcd $2,2
+  sub $0,$2
   add $0,1
   mov $1,$0
   max $1,0
@@ -23,6 +23,4 @@ lpb $4
 lpe
 mov $0,$3
 add $0,1
-mov $2,$0
-mul $2,$0
-mov $0,$2
+pow $0,2

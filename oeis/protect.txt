@@ -318,6 +318,7 @@ A100672: Second least-significant bit in the binary expansion of the n-th prime.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A102348: Decimated primes: every 10th prime has been omitted.
+A102689: a(n) = 10000*n + 2468.
 A102704: Numbers k such that k999 is prime.
 A102770: (p*q - 1)/2 where p and q are consecutive odd primes.
 A102781: Number of positive even numbers less than the n-th prime.
@@ -480,6 +481,8 @@ A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
 A200905: a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
+A212739: a(n) = 2^(n^2) - 1.
+A213236: a(n) = (-n)^(n-1).
 A215848: Primes > 3.
 A216147: 2*n^n + 1.
 A216244: a(n) = (prime(n)^2 - 1)/2 for n >= 2.
