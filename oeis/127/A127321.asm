@@ -1,11 +1,11 @@
 ; A127321: First 4-dimensional hyper-tetrahedral coordinate; repeat m C(m+3,3) times; 4-D analog of A056556.
-; Submitted by mikey
+; Submitted by Science United
 ; 0,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5
 
 mov $1,3
 mov $2,3
+mov $3,1
 lpb $0
-  sub $0,1
   add $3,$2
   trn $0,$3
   add $2,$1

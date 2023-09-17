@@ -1,15 +1,14 @@
 ; A055861: Essentially A053506 but with leading 0 (instead of 1) and offset 0.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,0,6,48,500,6480,100842,1835008,38263752,900000000,23579476910,681091006464,21505924728444,737020860878848,27246730957031250,1080863910568919040,45798768824157052688,2064472028642102280192
-; Formula: a(n) = 2*((n*(n+1)^(n-1))/2)
+; Formula: a(n) = 2*binomial(n+1,2)*(n+1)^(n-2)
 
-sub $0,1
-mov $1,2
-add $1,$0
-pow $1,$0
+mov $1,$0
+sub $1,2
 mov $2,$0
 add $2,1
-mul $1,$2
-div $1,2
-mov $0,$1
+pow $2,$1
+add $0,1
+bin $0,2
+mul $0,$2
 mul $0,2

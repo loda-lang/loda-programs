@@ -7,7 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n>1.
+  seq $3,55034 ; a(1) = 1, a(n) = phi(2*n)/2 for n > 1.
   lpb $3
     dif $3,2
     dif $3,3

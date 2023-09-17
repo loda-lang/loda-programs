@@ -1,14 +1,14 @@
 ; A110368: Integers with mutual residues of 9.
-; Submitted by Science United
+; Submitted by skildude
 ; 10,19,199,37819,1429936399,2044718092315659619,4180872077042990313463432060226288599,17479691324597767931283328689425028720038746822457352536058485868000785419
-; Formula: a(n) = c(n+1), b(n) = b(n-1)*(b(n-1)+9), b(1) = 10, b(0) = 1, c(n) = b(n-1)+9, c(1) = 10, c(0) = 0
+; Formula: a(n) = b(n)+9, b(n) = b(n-1)*(b(n-1)+9), b(0) = 1
 
 mov $1,1
-add $0,1
 lpb $0
   sub $0,1
-  mov $2,9
-  add $2,$1
+  mov $2,$1
+  add $2,9
   mul $1,$2
 lpe
-mov $0,$2
+mov $0,$1
+add $0,9

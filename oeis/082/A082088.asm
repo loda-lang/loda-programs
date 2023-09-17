@@ -4,4 +4,4 @@
 ; Formula: a(n) = A075860(A237589(n))
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
-seq $0,75860 ; a(n) is the fixed point reached by the sum of divisors of n without multiplicity (with the convention a(1)=0).
+seq $0,75860 ; a(n) is the fixed point reached when the map x -> A008472(x) is iterated, starting from x = n, with the convention a(1)=0.

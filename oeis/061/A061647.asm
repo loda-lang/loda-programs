@@ -1,14 +1,17 @@
 ; A061647: Beginning at the well for the topograph of a positive definite quadratic form with values 1, 1, 1 at a superbase (i.e., 1, 1 and 1 are the vonorms of the superbase), these numbers indicate the labels of the edges of the topograph on a path of greatest ascent.
-; Submitted by Christian Krause
+; Submitted by Roadranner
 ; 1,3,9,23,61,159,417,1091,2857,7479,19581,51263,134209,351363,919881,2408279,6304957,16506591,43214817,113137859,296198761,775458423,2030176509,5315071103,13915036801,36430039299,95375081097,249695203991,653710530877,1711436388639,4480598635041,11730359516483,30710479914409,80401080226743,210492760765821,551077202070719,1442738845446337,3777139334268291,9888679157358537,25888898137807319,67778015256063421,177445147630382943,464557427635085409,1216227135274873283,3184123978189534441
+; Formula: a(n) = 2*((2*c(n))/5)+1, b(n) = 2*b(n-1)+c(n-1), b(1) = 7, b(0) = 3, c(n) = b(n-1)+c(n-1), c(1) = 4, c(0) = 1
 
-mov $1,1
+mov $1,3
 mov $2,1
 lpb $0
   sub $0,1
-  cmp $3,$1
+  add $2,$1
   add $1,$2
-  add $3,$1
-  add $2,$3
 lpe
 mov $0,$2
+mul $0,2
+div $0,5
+mul $0,2
+add $0,1
