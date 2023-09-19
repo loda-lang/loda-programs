@@ -17,9 +17,8 @@ lpb $3
   sub $1,$3
   trn $3,6
 lpe
-add $1,1
 mul $1,4
-add $1,2
+add $1,6
 div $1,5
 mov $2,$0
 mul $2,8

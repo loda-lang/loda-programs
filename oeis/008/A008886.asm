@@ -1,6 +1,7 @@
 ; A008886: Aliquot sequence starting at 42.
 ; Submitted by Jamie Morken(w4)
 ; 42,54,66,78,90,144,259,45,33,15,9,4,3,1,0
+; Formula: a(n) = (2*A000203(max(a(n-1)-1,0))-2*max(a(n-1)-1,0)-1)/2, a(0) = 42
 
 mov $2,$0
 mov $0,42
