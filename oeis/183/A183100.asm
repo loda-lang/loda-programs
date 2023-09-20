@@ -1,4 +1,4 @@
-; A183100: a(n) = sum of divisors d of n which are either 1 or of the form Product_(i) (p_i^e_i) where the e_i are <= 1.
+; A183100: a(n) is the sum of divisors d of n which are either 1 or of the form Product_{i} (p_i^e_i) where at least one e_i = 1.
 ; Submitted by Christian Krause
 ; 1,3,4,3,6,12,8,3,4,18,12,24,14,24,24,3,18,30,20,38,32,36,24,48,6,42,4,52,30,72,32,3,48,54,48,42,38,60,56,78,42,96,44,80,69,72,48,96,8,68,72,94,54,84,72,108,80,90,60,164,62,96,95,3,84,144,68,122,96,144,72,66,74,114,99,136,96,168,80,158
 ; Formula: a(n) = -A183099(n)+A000203(n)
