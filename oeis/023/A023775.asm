@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,37829 ; Number of i such that d(i)>=d(i-1), where Sum{d(i)*6^i: i=0,1,...,m} is base 6 representation of n.
+  seq $3,37829 ; Number of i such that d(i) >= d(i-1), where Sum_{i=0..m} d(i)*6^i is the base-6 representation of n.
   cmp $3,0
   sub $0,$3
   add $1,1
