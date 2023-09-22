@@ -4,8 +4,8 @@
 
 sub $0,3
 lpb $0
-  add $1,6
   add $0,1
   mod $0,5
+  add $1,6
 lpe
 mov $0,$1
