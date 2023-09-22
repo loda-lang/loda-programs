@@ -1,0 +1,20 @@
+; A365544: Number of subsets of {1..n} containing two distinct elements summing to n.
+; Submitted by ber7
+; 0,0,0,2,4,14,28,74,148,350,700
+; Formula: a(n) = d(n)/4, b(n) = 4*c(n-2)+2*b(n-1), b(4) = 56, b(3) = 16, b(2) = 8, b(1) = 0, b(0) = 0, c(n) = 2*c(n-2)+c(n-2), c(4) = 18, c(3) = 0, c(2) = 6, c(1) = 0, c(0) = 2, d(n) = b(n-1), d(4) = 16, d(3) = 8, d(2) = 0, d(1) = 0, d(0) = 0
+
+mov $4,2
+lpb $0
+  sub $0,1
+  mul $2,2
+  add $2,$3
+  mul $3,2
+  mov $5,$1
+  add $1,$3
+  mul $1,2
+  mov $3,$4
+  mov $4,$2
+  mov $2,$3
+lpe
+mov $0,$5
+div $0,4
