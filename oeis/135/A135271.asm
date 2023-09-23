@@ -1,18 +1,13 @@
 ; A135271: Row 7 of A038207.
-; Submitted by waffleironhead
+; Submitted by Ralfy
 ; 128,448,672,560,280,84,14,1
+; Formula: a(n) = binomial(7,n)*2^(-n+7)
 
-mov $1,3
 mov $2,7
-mul $0,-1
-add $0,7
-lpb $0
-  sub $0,1
-  mul $1,2
-  mul $1,$2
-  sub $2,1
-  add $3,1
-  div $1,$3
-lpe
+sub $2,$0
+mov $1,7
+bin $1,$0
+mov $0,2
+pow $0,$2
+mul $1,$0
 mov $0,$1
-div $0,3

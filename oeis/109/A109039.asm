@@ -4,7 +4,7 @@
 
 mov $2,$0
 trn $0,1
-seq $0,109040 ; Expansion of 1-eta(q)eta(q^3)(eta(q^4)eta(q^6))^2/eta(q^12)^2 in powers of q.
+seq $0,109040 ; Expansion of 1-eta(q)*eta(q^3)*(eta(q^4)*eta(q^6))^2/eta(q^12)^2 in powers of q.
 pow $1,$2
 lpb $2
   mov $2,0

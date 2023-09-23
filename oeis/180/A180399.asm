@@ -9,7 +9,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $0,25748 ; 3rd order Patalan numbers (generalization of Catalan numbers).
+  seq $0,25748 ; 3rd-order Patalan numbers (generalization of Catalan numbers).
   bin $1,$4
   mul $1,$0
   add $3,$1

@@ -1,23 +1,10 @@
 ; A071617: A063439[A000040(n)]=Phi[p]^Phi[p].
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by arkiss
 ; 1,4,256,46656,10000000000,8916100448256,18446744073709551616,39346408075296537575424,341427877364219557396646723584,33145523113253374862572728253364605812736
+; Formula: a(n) = (A006005(n)-1)^(A006005(n)-1)
 
-mov $2,$0
-mul $2,2
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-mov $0,$2
-sub $0,2
+seq $0,6005 ; The odd prime numbers together with 1.
+sub $0,1
 add $1,$0
-pow $0,$1
+pow $1,$0
+mov $0,$1

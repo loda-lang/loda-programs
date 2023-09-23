@@ -12,7 +12,6 @@ lpb $2
   mov $5,$1
   mul $5,$6
   mov $3,$1
-  add $3,1
   seq $3,230980 ; Number of primes <= n, starting at n=0.
   sub $3,$5
   trn $3,1

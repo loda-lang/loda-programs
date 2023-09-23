@@ -1,22 +1,26 @@
 ; A190377: Numbers with prime factorization p^2q^2r^2s^2
-; Submitted by Gunnar Hjern
+; Submitted by Science United
 ; 44100,108900,152100,213444,260100,298116,324900,476100,509796,592900,636804,736164,756900,828100,864900,933156,1232100,1258884,1334025,1416100,1483524,1512900,1572516,1664100,1695204,1758276,1768900,1863225,1988100,2044900,2196324,2304324,2414916,2528100,2592100,2965284,3132900,3186225,3218436,3261636,3348900,3496900,3663396,3755844,3896676,3980025,4008004,4040100,4120900,4186116,4368100,4536900,4601025,4708900,4796100,4884100,4955076,5116644,5503716,5616900,5832225,5846724,5963364,6100900
 
-mov $2,$0
+mov $3,$0
+add $3,11
+pow $3,2
+bin $3,2
 add $0,1
-add $2,11
-pow $2,2
-bin $2,2
-lpb $2
-  mov $3,$1
-  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-  add $3,2
-  cmp $3,6
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+mov $2,1
+lpb $3
+  mov $4,$2
+  seq $4,5361 ; Product of exponents of prime factorization of n.
+  mov $1,$2
+  seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $1,$4
+  mov $4,$1
+  sub $4,10
+  cmp $4,5
+  sub $0,$4
+  add $2,1
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$2
 add $0,1
 pow $0,2

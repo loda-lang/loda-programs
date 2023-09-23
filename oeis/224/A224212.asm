@@ -1,22 +1,17 @@
 ; A224212: Number of nonnegative solutions to x^2 + y^2 <= n.
-; Submitted by gera
+; Submitted by Conan
 ; 1,3,4,4,6,8,8,8,9,11,13,13,13,15,15,15,17,19,20,20,22,22,22,22,22,26,28,28,28,30,30,30,31,31,33,33,35,37,37,37,39,41,41,41,41,43,43,43,43,45,48,48,50,52,52,52,52,52,54,54,54,56,56,56,58,62,62,62,64,64,64,64,65,67,69,69,69,69,69,69
 
 mov $3,3
-mov $4,-1
 add $0,3
 lpb $0
   sub $0,$3
-  mov $5,1
   mov $2,$0
-  lpb $2
-    add $5,2
-    trn $2,$5
-  lpe
+  max $2,0
+  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+  mov $3,1
+  add $3,$4
   add $4,2
-  add $1,1
-  add $1,$5
-  mov $3,$4
+  add $1,$2
 lpe
 mov $0,$1
-div $0,2

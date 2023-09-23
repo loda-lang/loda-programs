@@ -66,6 +66,7 @@ A014803: Squares of even hexagonal pyramidal numbers.
 A015614: a(n) = -1 + Sum_{i=1..n} phi(i).
 A020552: 6th Fibonacci polynomial evaluated at x=n!.
 A020908: Number of terms in Zeckendorf representation of 2^n.
+A021260: Decimal expansion of 1/256.
 A022797: n-th prime + n-th nonprime.
 A022988: 32-n.
 A023474: a(n) = n-32.
@@ -270,6 +271,7 @@ A086799: Replace all trailing 0's with 1's in binary representation of n.
 A086801: a(n) = prime(n) - 3.
 A086874: Seventh power of odd primes.
 A086995: Number of 1's in binary representation of n-th decimal digit in expansion of Pi.
+A088190: Largest quadratic residue modulo prime(n).
 A088308: 2 followed by list of composite numbers mod 10.
 A088377: (Smallest prime-factor of n)^2.
 A088580: a(n) = 1 + sigma(n).
@@ -427,11 +429,15 @@ A153481: a(n) = prime(n)^3 - 2.
 A153482: a(n) = prime(n)^4 - 8.
 A155213: a(n) = floor(prime(n)/9).
 A156772: a(n) = 729*n - 198.
+A157666: a(n) = 19683*n - 13716.
+A157669: a(n) = 19683*n - 5967.
 A157949: a(n) = 128*n - 1.
 A157951: a(n) = 128*n + 1.
 A158011: a(n) = 512n - 1.
 A158231: a(n) = 256*n + 1.
 A158250: a(n) = 256*n - 1.
+A158395: 729n - 1.
+A158397: a(n) = 729n + 1.
 A158421: a(n) = 1024*n - 1.
 A160467: a(n) = 1 if n is odd; otherwise, a(n) = 2^(k-1) where 2^k is the largest power of 2 that divides n.
 A160594: Indices of primes congruent to 1 modulo 12.
@@ -481,6 +487,7 @@ A193916: Mirror of the triangle A193915.
 A193952: Mirror of the triangle A193951.
 A195459: a(n) = phi(3*n)/2.
 A200905: a(n) = 3*phi(n), where phi (A000010) is the Euler totient function.
+A209229: Characteristic function of powers of 2, cf. A000079.
 A212739: a(n) = 2^(n^2) - 1.
 A213236: a(n) = (-n)^(n-1).
 A215848: Primes > 3.
