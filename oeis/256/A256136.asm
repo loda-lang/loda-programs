@@ -1,15 +1,9 @@
 ; A256136: a(n) = 6^A000120(n).
-; Submitted by Cruncher Pete
+; Submitted by Groo
 ; 1,6,6,36,6,36,36,216,6,36,36,216,36,216,216,1296,6,36,36,216,36,216,216,1296,36,216,216,1296,216,1296,1296,7776,6,36,36,216,36,216,216,1296,36,216,216,1296,216,1296,1296,7776,36,216,216,1296,216,1296,1296,7776,216,1296,1296,7776,1296,7776
+; Formula: 6^A000120(n)
 
-mov $2,1
-lpb $0
-  mov $1,$0
-  sub $1,1
-  mod $1,2
-  mul $1,6
-  div $0,2
-  mul $2,6
-  dif $2,$1
-lpe
-mov $0,$2
+seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+mov $1,6
+pow $1,$0
+mov $0,$1

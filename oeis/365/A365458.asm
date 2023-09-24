@@ -1,11 +1,12 @@
 ; A365458: The largest power of 3 that is less than or equal to n.
-; Submitted by gianni.montefiori
+; Submitted by Science United
 ; 1,1,3,3,3,3,3,3,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27
 
-mov $1,2
+mov $1,1
+add $0,1
 lpb $0
-  sub $0,$1
+  div $0,3
   mul $1,3
 lpe
 mov $0,$1
-div $0,2
+div $0,3

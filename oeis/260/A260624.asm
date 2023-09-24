@@ -5,4 +5,4 @@
 add $0,3
 seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 sub $0,1
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

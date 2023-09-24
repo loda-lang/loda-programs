@@ -1,17 +1,17 @@
 ; A135267: Difference between partial sum of the first n primes and the first n even numbers greater than 0.
-; Submitted by Jamie Morken(w4)
+; Submitted by Kotenok2000
 ; 0,-1,-2,-3,-2,-1,2,5,10,19,28,41,56,71,88,109,134,159,188,219,250,285,322,363,410,459,508,559,610,663,728,795,866,937,1016,1095,1178,1265,1354,1447,1544,1641,1746,1851,1958,2065,2182,2309,2438,2567,2698,2833,2968,3111,3258,3409,3564,3719,3878,4039,4200,4369,4550,4733,4916,5101,5298,5499,5708,5917,6128,6343,6564,6789,7018,7249,7484,7725,7968,8217
 
-max $1,$0
-add $1,1
-trn $0,1
+mov $1,$0
+add $1,2
+bin $1,2
+mov $3,2
+add $0,1
 lpb $0
-  mov $3,$0
-  seq $3,8507 ; Number of odd composite numbers less than n-th odd prime.
   sub $0,1
   add $2,$3
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
-mul $2,2
+sub $2,$1
 mov $0,$2
 sub $0,$1
-add $0,1

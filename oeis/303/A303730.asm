@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,49128 ; Revert transform of (x - 1)^2/(1 - x + x^3).
+    seq $7,49128 ; Revert transform of x*(x - 1)^2/(1 - x + x^3).
     mov $9,10
     add $9,$5
     mul $7,$$9

@@ -28,12 +28,7 @@ lpb $5
   add $4,2
   sub $5,$2
 lpe
-mov $2,$4
-mul $2,8
-sub $2,8
-div $2,8
-add $2,1
 add $1,5
-max $1,$2
+max $1,$4
 mov $0,$1
 add $0,1

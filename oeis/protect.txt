@@ -350,10 +350,12 @@ A111741: Distance between k*(n-th prime) and next prime, k=9 case.
 A111742: Distance between k*(n-th prime) and next prime, k=10 case.
 A113935: a(n) = prime(n) + 3.
 A117495: Product of a prime number p and the number of primes smaller than p.
+A117812: a(n) = n^(2*n) - 1.
 A117961: Hexagonal numbers with prime indices.
 A118755: Smallest prime >= 6*n.
 A119411: Product of the first prime(n) primes.
 A119959: p^2-p+1 central polygonal numbers with prime indices A002061(prime(n)).
+A120054: a(n) = binomial(n+3,4)*4^4.
 A121239: Decimal expansion of 10-e.
 A122566: Primes with index k^2+k+1.
 A124669: Product of successive primes minus 2.
@@ -512,9 +514,11 @@ A242122: Primes modulo 22.
 A242125: Primes modulo 27.
 A242126: Primes modulo 28.
 A243949: Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
+A244009: Decimal expansion of 1 - log(2).
 A244735: a(n) = (prime(n) mod 5) mod 2.
 A248558: Squares of the digits of the decimal expansion of e.
 A254029: Positive solutions of Monkey and Coconuts Problem for the classic case (5 sailors, 1 coconut to the monkey): a(n) = 15625*n - 4 for n >= 1.
+A256136: a(n) = 6^A000120(n).
 A259547: a(n) = n^4*Fibonacci(n).
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
@@ -528,6 +532,7 @@ A276234: a(n) = n/gcd(n, 256).
 A278227: Least number with the prime signature of prime(n)-1.
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
+A284600: a(n) = n/(largest prime power dividing n).
 A287922: a(n) = prime(1)^2 + prime(n)^2.
 A287925: a(n) = prime(1)^4 + prime(n)^4
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).

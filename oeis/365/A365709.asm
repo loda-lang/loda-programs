@@ -1,5 +1,5 @@
 ; A365709: Number of rigid configurations of n non-overlapping congruent spheres in three-dimensional Euclidean space
-; Submitted by Science United
+; Submitted by Matthias Lehmkuhl
 ; 1,1,1,1,1,2,5,13,52
 
 lpb $0
@@ -18,9 +18,7 @@ lpb $0
   bin $3,$1
   mul $3,$2
   div $3,$4
-  add $1,1
-  mov $2,$1
-  add $1,1
+  add $1,2
   add $5,$3
 lpe
 mov $0,$5

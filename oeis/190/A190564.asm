@@ -1,26 +1,38 @@
 ; A190564: Positions of 2 in A190561.
-; Submitted by Ralfy
+; Submitted by Kotenok2000
 ; 4,6,11,16,18,23,28,33,35,40,45,47,52,57,62,64,69,74,76,81,86,88,93,98,103,105,110,115,117,122,127,132,134,139,144,146,151,156,158,161,163,168,173,175,180,185,187,192,197,202,204,209,214,216,221,226,228,231,233,238,243,245,250,255,257,262,267,272,274,279,284,286,291,296,301,303,308,313,315,320
 
-mov $1,1000
+mov $1,2
 mov $2,$0
-add $2,2
+add $2,4
 pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,346522 ; a(n) is the smallest number such that there are precisely n squares between a(n) and 2*a(n) inclusive.
+  add $3,5
+  mov $8,2
+  add $1,3
+  mov $5,$3
+  pow $5,2
+  mul $5,2
+  mov $6,$5
+  lpb $5
+    mov $7,$6
+    div $7,$5
+    add $5,$7
+    div $5,2
+  lpe
+  add $8,$5
+  mov $3,$8
+  gcd $3,4
   add $3,1
-  div $3,2
-  gcd $3,2
-  mul $4,4
+  cmp $3,5
   sub $0,$3
-  add $0,1
-  add $1,$4
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
+  mul $2,$4
 lpe
 mov $0,$1
 div $0,4
-sub $0,248

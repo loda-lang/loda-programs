@@ -1,12 +1,19 @@
 ; A158387: a(n) = -1 if n is a square, 1 if n is not a square.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; -1,1,1,-1,1,1,1,1,-1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
+mov $3,1
 lpb $0
-  sub $0,1
-  add $1,2
-  sub $0,$1
+  add $3,2
+  sub $0,$3
 lpe
-min $0,1
-mul $0,2
 sub $0,1
+min $0,0
+add $0,2
+mul $0,3
+add $2,$0
+mul $2,2
+mov $1,$2
+sub $1,9
+mov $0,$1
+div $0,3

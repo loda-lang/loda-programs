@@ -1,26 +1,10 @@
 ; A269027: Parity of the number of 1's in A039724(n).
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Science United
 ; 0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0
+; Formula: a(n) = A000120(A005351(n))%2
 
-mul $0,3
-mov $3,1
 mov $1,$0
-mul $1,4
-lpb $1
-  div $1,2
-  sub $3,1
-  mov $4,1
-  add $4,$1
-  div $4,2
-  mod $4,2
-  mov $5,$3
-  sub $5,$2
-  add $3,$2
-  mul $4,$5
-  add $2,$4
-lpe
-mov $0,$2
-div $0,2
-mod $0,2
-add $0,2
+seq $1,5351 ; Base -2 representation for n regarded as base 2, then evaluated.
+seq $1,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+mov $0,$1
 mod $0,2

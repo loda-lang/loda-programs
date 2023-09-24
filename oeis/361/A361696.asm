@@ -1,9 +1,26 @@
 ; A361696: Semiprimes of the form k^2 + 5.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 6,9,14,21,69,86,201,329,446,489,581,681,734,789,905,1094,1769,1941,2606,2921,3254,3369,3849,3974,4101,4629,4766,6729,7061,7401,8105,8654,9609,9806,10409,10821,11669,12326,13929,17429,17961,19049,20741,23109,23721,24341,27561,30281,31334,32405
-; Formula: a(n) = (2*A242333(n)^2-72)/2+41
 
-seq $0,242333 ; Numbers k such that k^2 + 5 is a semiprime.
+mov $5,-3
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  max $4,$6
+  seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $6,$5
+  sub $0,$4
+  add $2,2
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+  add $6,$2
+lpe
+mov $0,$2
+div $0,2
 pow $0,2
 add $1,$0
 add $0,$1
