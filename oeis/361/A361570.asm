@@ -6,7 +6,6 @@ mov $4,$0
 add $0,1
 lpb $0
   sub $0,1
-  dif $0,84
   mov $2,$1
   add $2,$1
   bin $2,$4
