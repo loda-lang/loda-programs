@@ -7,7 +7,7 @@ mov $2,$0
 seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 mov $1,$0
 add $1,1
-seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 div $1,$2
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mul $0,$1

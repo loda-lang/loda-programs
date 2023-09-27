@@ -6,8 +6,11 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,$1
+  seq $5,69359 ; a(n) = n * Sum_{p|n} 1/p where p are primes dividing n.
   mov $3,$1
-  seq $3,306369 ; a(n) = A000010(n) + A069359(n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,$5
   sub $3,$1
   trn $3,3
   min $3,1

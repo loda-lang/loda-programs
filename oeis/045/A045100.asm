@@ -1,4 +1,4 @@
-; A045100: Numbers n with property that in base 4 representation the numbers of 1's and 2's are 3 and 0, respectively.
+; A045100: Numbers whose base-4 representation contains exactly three 1's and no 2's.
 ; Submitted by [TA]crashtech
 ; 21,69,81,84,87,93,117,213,261,273,276,279,285,309,321,324,327,333,336,339,348,351,369,372,375,381,453,465,468,471,477,501,789,837,849,852,855,861,885,981,1029,1041,1044,1047,1053,1077
 

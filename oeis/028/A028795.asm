@@ -9,7 +9,8 @@ pow $2,2
 lpb $2
   mul $4,2
   mov $3,$1
-  seq $3,70624 ; n^5 mod 41.
+  pow $3,5
+  mod $3,41
   add $3,$4
   div $3,2
   gcd $3,2

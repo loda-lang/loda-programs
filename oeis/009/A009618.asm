@@ -1,22 +1,21 @@
 ; A009618: Expansion of sinh(x)*cos(log(1+x)).
-; Submitted by Rhodan71
+; Submitted by Science United
 ; 0,1,0,-2,12,-59,300,-1700,10808,-76835,604440,-5201734,48397140,-480836407,5029687572,-54376704304,590140657200,-6060696430375,49142463616368,25189857279350,-16700280706496420,638685917560435181
 
 mov $2,$0
 mov $4,$0
 add $4,1
 lpb $4
+  div $4,2
+  mul $4,2
   sub $4,1
-  mul $3,2
-  mov $5,$3
   mov $0,$2
   sub $0,$4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,9027 ; Expansion of cos(log(1+x))/exp(x).
+  seq $0,3703 ; Expansion of e.g.f. cos(log(1+x)).
   mul $1,$0
   add $3,$1
 lpe
-mov $0,$5
-div $0,2
+mov $0,$3
