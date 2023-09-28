@@ -1,0 +1,38 @@
+; A253972: Primes p such that p + nextprime(p) is divisible by 8.
+; Submitted by Dave Studdert
+; 3,11,53,59,61,71,73,107,113,139,157,173,179,191,227,233,239,257,283,293,311,317,347,353,373,419,431,433,523,541,547,557,593,599,601,631,653,659,677,691,733,773,787,811,827,919,941,953,977,1013,1019,1031,1033
+
+mov $2,$0
+add $2,6
+pow $2,3
+lpb $2
+  sub $2,2
+  mov $6,$1
+  seq $6,154115 ; Numbers n such that n + 3 is prime.
+  seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mul $6,3
+  mov $3,$6
+  sub $3,6
+  div $3,3
+  add $3,2
+  mov $5,$3
+  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  sub $3,3
+  add $5,$3
+  mov $3,$5
+  sub $3,1
+  seq $3,131082 ; Periodic sequence (15, 11, 5, 1, 1, 5, 11, 15).
+  mul $3,2
+  sub $3,1
+  cmp $3,1
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+lpe
+mov $0,$6
+sub $0,9
+div $0,3
+add $0,3
