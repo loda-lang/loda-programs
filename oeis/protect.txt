@@ -180,6 +180,9 @@ A056849: Final digit of n^n.
 A057048: a(n) = A017911(n+1) = round(sqrt(2)^(n+1)).
 A057901: a(n) = 3^prime(n).
 A057902: a(n) = 5^prime(n).
+A059159: A hierarchical sequence (W'2{2}*c) - see A059126).
+A059161: A hierarchical sequence (W'2{3}*c - see A059126).
+A059164: A hierarchical sequence (W'3{2,2}*cc - see A059126).
 A059591: Squarefree part of n^2+1.
 A059786: Smallest prime after 2*(n-th prime).
 A060418: Largest decimal digit in n-th prime.

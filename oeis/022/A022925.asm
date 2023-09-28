@@ -1,20 +1,18 @@
 ; A022925: Number of 5^m between 2^n and 2^(n+1).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0
 
 add $0,1
-mov $1,1
-mov $4,10
-pow $4,$0
-lpb $4
-  mov $3,$4
-  cmp $3,0
-  add $4,$3
-  cmp $1,0
-  cmp $1,0
-  div $2,$4
-  add $2,$1
-  div $4,5
+mov $2,$0
+lpb $2
+  mov $3,10
+  pow $3,$0
+  div $2,$3
 lpe
-mov $0,$2
-sub $0,1
+lpb $3
+  mul $3,2
+  mov $1,$3
+  cmp $1,2
+  div $3,10
+lpe
+mov $0,$1
