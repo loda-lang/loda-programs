@@ -1,4 +1,4 @@
-; A044980: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 3 and 0, respectively.
+; A044980: Numbers whose base-3 representation contains exactly three 0's and no 1's.
 ; Submitted by ChelseaOilman
 ; 54,164,168,180,216,494,506,510,542,546,558,650,654,666,702,1484,1520,1532,1536,1628,1640,1644,1676,1680,1692,1952,1964,1968,2000,2004,2016,2108,2112,2124,2160,4454,4562,4598,4610,4614
 
