@@ -8,9 +8,7 @@ lpb $0
 lpe
 sub $1,$0
 min $1,$0
-mul $1,2
-add $1,2
-div $1,2
+add $1,1
 add $2,$1
 div $2,$1
 add $2,$1

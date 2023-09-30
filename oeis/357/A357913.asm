@@ -21,6 +21,4 @@ div $1,5
 mod $1,$2
 sub $2,$1
 mov $0,$2
-sub $0,4
 div $0,2
-add $0,2

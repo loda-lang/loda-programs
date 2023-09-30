@@ -23,6 +23,4 @@ lpb $3
   add $2,$4
   mul $2,$1
 lpe
-mov $1,$4
-mul $1,$0
-mov $0,$1
+mul $0,$4
