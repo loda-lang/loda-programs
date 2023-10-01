@@ -4,6 +4,6 @@
 ; Formula: a(n) = A036234(A075860(A237589(n))-2)
 
 seq $0,237589 ; Sum of first n odd noncomposite numbers.
-seq $0,75860 ; a(n) is the fixed point reached by the sum of divisors of n without multiplicity (with the convention a(1)=0).
+seq $0,75860 ; a(n) is the fixed point reached when the map x -> A008472(x) is iterated, starting from x = n, with the convention a(1)=0.
 sub $0,2
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.

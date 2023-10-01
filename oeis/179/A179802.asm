@@ -1,14 +1,22 @@
 ; A179802: Digital root of A179545.
-; Submitted by Stony666
+; Submitted by Dave Studdert
 ; 3,9,3,9,3,9,3,9,3,3,9,9,3,9,3,3,3,9,9,3,9,9,3,3,9,3,9,3,9,3,9,3,3,9,3,9,9,9,3,3,3,9,3,9,3,9,9,9,3,9,3,3,9,3,3,3,3,9,9,3,9,3,9,3,9,3,9,9,3,9,3,3,9,9,9,3,3,9,3,9
-; Formula: a(n) = (4*A053188(2*(A000040(n)%3+1)^2)+5)%10
 
-seq $0,40 ; The prime numbers.
-mod $0,3
+seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
+div $0,4
 add $0,1
-pow $0,2
+max $0,3
+seq $0,78979 ; a(n) = A078711(n) - 1.
+add $0,2
+lpb $0
+  mov $0,3
+lpe
 mul $0,2
-seq $0,53188 ; Distance from n to nearest square.
-mul $0,4
-add $0,5
+mov $1,$0
+div $0,2
+mul $0,$1
+div $0,7
+add $0,$1
+mul $0,2
+add $0,3
 mod $0,10

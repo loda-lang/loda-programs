@@ -12,6 +12,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $1,$0
-  seq $1,132747 ; a(n) = number of non-isolated divisors of n.
+  seq $1,132881 ; a(n) is the number of isolated divisors of n.
+  mov $4,$0
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $4,$1
+  mov $1,$4
 lpe
 mov $0,$1

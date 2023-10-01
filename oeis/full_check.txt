@@ -326,6 +326,7 @@ A110382: Numbers which are sum of distinct unary numbers (containing only ones),
 A110661: Triangle read by rows: T(n,k) = total number of divisors of k, k+1, ..., n (1 <= k <= n).
 A111060: a(n) = sum of primes dividing the n-th squarefree positive integer.
 A111701: Least integer obtained when n is divided by prime(1), then by prime(2), then by prime(3), ..., stopping as soon as one of the primes does not divide it. In particular, a(2n-1) = 2n-1.
+A111958: Lucas numbers (A000032) mod 8.
 A111972: a(n) = Max(omega(k): 1<=k<=n), where omega(n) = A001221(n), the number of distinct prime factors of n.
 A113063: Associated with theta series of hexagonal net with respect to a node.
 A113474: a(n) = a(floor(n/2)) + floor(n/2) with a(1) = 1.

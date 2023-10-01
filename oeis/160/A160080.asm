@@ -8,7 +8,14 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
-  seq $3,26185 ; If n even, then 2n. If n odd, then nearest integer to 2n/3.
+  mul $3,2
+  mov $6,$3
+  add $6,1
+  mod $6,4
+  mul $3,3
+  add $3,$6
+  dif $3,$6
+  div $3,3
   add $3,$4
   mul $3,2
   mov $5,$3

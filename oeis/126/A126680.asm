@@ -5,7 +5,19 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,453 ; Stirling numbers of the second kind, S(n,4).
+  add $2,3
+  mov $3,4
+  pow $3,$2
+  mov $5,2
+  pow $5,$2
+  mov $4,3
+  pow $4,$2
+  sub $4,$5
+  mov $2,$4
+  mul $2,3
+  sub $3,$2
+  mov $2,$3
+  div $2,6
   sub $0,1
   mul $1,$2
   mov $2,$0

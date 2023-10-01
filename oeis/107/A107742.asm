@@ -12,7 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,109386 ; G.f. is the logarithm of the g.f. of A107742: Sum_{n>=1} (a(n)/n)*x^n = Log( Sum_{n>=0} A107742(n)*x^n ).
+    seq $7,109386 ; G.f. is the logarithm of the g.f. of A107742: Sum_{n>=1} (a(n)/n)*x^n = log( Sum_{n>=0} A107742(n)*x^n ).
     mov $9,10
     add $9,$5
     mul $7,$$9

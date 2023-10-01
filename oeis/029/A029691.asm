@@ -1,5 +1,5 @@
 ; A029691: n-th binary digit in fractional part of square root of n.
-; Submitted by ChelseaOilman
+; Submitted by TheSeeker1942
 ; 0,1,1,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,1,1,1,0,1,0,1,0,1,0,0
 
 mov $2,1
@@ -11,7 +11,7 @@ pow $7,$4
 add $0,1
 add $3,8
 lpb $3
-  sub $3,1
+  sub $3,2
   add $1,1
   mov $4,$2
   pow $4,2

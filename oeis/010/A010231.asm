@@ -1,6 +1,25 @@
 ; A010231: Continued fraction for sqrt(189).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 13,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1,26,1,2,1
 
-seq $0,40693 ; Continued fraction for sqrt(720).
-dif $0,2
+add $0,1
+lpb $0
+  sub $0,1
+  mov $1,$3
+  gcd $1,262156
+  mul $1,42
+  mod $1,13
+  mov $2,$1
+  div $2,5
+  mul $2,12
+  add $3,1
+  add $1,$2
+  sub $1,2
+  dif $1,8
+  mov $4,$1
+  mul $4,3
+  div $4,2
+lpe
+mov $0,$4
+div $0,2
+add $0,1
