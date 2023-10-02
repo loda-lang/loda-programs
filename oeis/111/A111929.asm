@@ -11,11 +11,11 @@ lpb $0
     dif $4,2
     mul $5,2
   lpe
-  sub $0,1
   max $1,1
   mul $2,$5
   mul $3,$2
   add $3,$1
+  sub $0,1
   mul $1,$2
 lpe
 mov $4,$3

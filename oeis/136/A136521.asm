@@ -1,19 +1,10 @@
 ; A136521: Triangle read by rows: (1, 2, 2, 2, ...) on the main diagonal and the rest zeros.
-; Submitted by Science United
+; Submitted by VWS
 ; 1,0,2,0,0,2,0,0,0,2,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0
 
+seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
+mul $0,2
 lpb $0
-  sub $0,2
-  sub $0,$2
-  add $2,1
+  mov $0,4
 lpe
-gcd $3,$2
-sub $2,1
-sub $0,$2
-max $3,$0
-add $2,$0
-add $2,$3
-add $2,$0
-mov $1,2
-bin $1,$2
-mov $0,$1
+div $0,2

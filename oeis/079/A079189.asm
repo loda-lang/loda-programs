@@ -5,7 +5,10 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,23813 ; a(n) = n^(n*(n+1)/2).
+  mov $3,0
+  sub $3,$2
+  bin $3,2
+  pow $2,$3
   sub $0,1
   mul $1,$2
   mov $2,$0

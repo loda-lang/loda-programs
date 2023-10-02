@@ -570,6 +570,7 @@ A276854: Beatty sequence for 1 + sqrt(5).
 A276855: Beatty sequence for (3 + golden ratio).
 A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
+A276950: Characteristic function for A273670: 1 if there is at least one maximal digit present in the factorial representation of n (A007623), otherwise 0.
 A277022: Primorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
 A277052: a(n) = n+floor(n/(2/sqrt(Pi)-1)).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
@@ -603,6 +604,7 @@ A284621: Positions of 0 in A284620.
 A284624: Positions of 1 in A284749.
 A284723: Smallest odd prime that is relatively prime to n.
 A284775: Fixed point of the morphism 0 -> 01, 1 -> 0011.
+A284818: Positions of 0 in A284817.
 A284905: Fixed point of the morphism 0 -> 01, 1 -> 1001.
 A285075: Positions of 1 in A285073; complement of A285074.
 A285126: Positions of 0 in A285125; complement of A285127.
@@ -626,6 +628,7 @@ A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
 A285708: a(n) = n / A285707(n).
 A285970: Positions of 0 in A285969; complement of A285971.
 A285980: Positions of 1 in A285978; complement of A285979.
+A286046: {011->1}-transform of the Thue-Morse word A010060.
 A286375: a(n) = A278222(n^3).
 A286666: Positions of 0 in A286665; complement of A286667.
 A286690: Positions of 1 in A286688; complement of A286689.
