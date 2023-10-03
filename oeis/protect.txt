@@ -562,4 +562,5 @@ A336551: a(n) = A003557(n) - 1.
 A337937: a(n) = Euler totient function phi = A000010 evaluated at N(n) = floor((3*n-1)/2) =  A001651(n), for n >= 1.
 A356533: a(n) = sigma_2(n)^2.
 A356534: a(n) = sigma_3(n)^2.
+A358714: a(n) = phi(n)^3.
 A362361: a(n) = n*2^10 - 3.

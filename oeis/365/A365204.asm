@@ -1,14 +1,11 @@
 ; A365204: Centered icositetrachoral numbers.
-; Submitted by davidBAM
+; Submitted by Contact
 ; 1,145,1009,3745,10081,22321,43345,76609,126145,196561,293041,421345,587809,799345,1063441,1388161,1782145,2254609,2815345,3474721,4243681,5133745,6157009,7326145,8654401,10155601,11844145,13735009,15843745,18186481
-; Formula: a(n) = 192*binomial(n+1,2)+192*binomial(binomial(n+1,2),2)-48*binomial(n+1,2)+1
+; Formula: a(n) = 48*binomial(-2*binomial(n+1,2),2)+1
 
 add $0,1
 bin $0,2
-mov $1,$0
+mul $0,-2
 bin $0,2
-add $0,$1
-mul $0,4
-sub $0,$1
 mul $0,48
 add $0,1

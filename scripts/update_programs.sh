@@ -17,20 +17,26 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-echo "Finding updated programs"
+# number of updated programs
+num_updated=0
+
+echo "Finding added or updated programs"
 files=
 while read -r s f; do
-  if [[ $f == oeis/* ]] && [[ $s == "M" ]]; then
-  files="$files $f"
+  if ! [[ $f == oeis/* ]]; then
+    continue
+  fi
+  if [[ $s == "??" ]]; then
+    git add $f
+    ((num_updated++))
+  elif [[ $s == "M" ]]; then
+    files="$files $f"
   fi
 done < <(git status --porcelain)
 
 if [ -z "$LODA_HOME" ]; then
   LODA_HOME=$HOME/loda
 fi
-
-# number of updated programs
-num_updated=0
 
 # colors
 RED='\033[0;31m'

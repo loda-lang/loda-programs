@@ -7,8 +7,12 @@ mov $2,$0
 pow $2,3
 lpb $2
   mov $3,$1
-  sub $3,1
-  seq $3,215862 ; Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.
+  bin $3,2
+  bin $3,2
+  mov $5,$1
+  bin $5,3
+  add $5,$3
+  mov $3,$5
   mod $3,$1
   min $3,1
   sub $0,1

@@ -28,6 +28,4 @@ lpb $0
 lpe
 mov $0,$3
 add $0,$8
-sub $0,3
 div $0,3
-add $0,1

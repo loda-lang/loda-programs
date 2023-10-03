@@ -1,14 +1,20 @@
 ; A365857: Number of cyclic compositions of 2*n into odd parts.
-; Submitted by Science United
+; Submitted by tazzduke
 ; 1,2,4,7,14,30,63,142,328,765,1810,4340,10461,25414,62074,152287,375166,927554,2300347,5721044,14264308,35646311,89264834,223959710,562878429,1416953362,3572233420,9018211989,22795835726,57690911720,146164582455,370705552702,941109975022,2391391374017,6081865318124
 
-mov $2,$0
-mov $1,2
-lpb $1
+mov $1,$0
+mul $1,2
+mov $2,$1
+add $2,2
+add $1,1
+mov $3,$1
+lpb $3
+  sub $3,1
+  mov $1,$2
+  gcd $1,$3
   sub $1,1
-  mov $0,$2
-  seq $0,274017 ; Number of n-bead binary necklaces (no turning over allowed) that avoid the subsequence 110.
-  mul $2,2
-  add $2,2
+  seq $1,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+  add $4,$1
 lpe
-sub $0,2
+div $4,$2
+mov $0,$4

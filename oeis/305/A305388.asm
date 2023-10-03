@@ -1,17 +1,23 @@
 ; A305388: Indicator function of A140103.
-; Submitted by Kotenok2000
+; Submitted by tazzduke
 ; 0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0
 
-seq $0,295561 ; Prefixal-derivation of A092782.
+add $0,1
 mov $3,2
-mul $3,$0
-mov $2,$3
-lpb $2
-  lpb $3
-    dif $3,3
-    add $1,6
-    div $2,$0
-  lpe
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  max $1,$4
+  sub $2,$3
+  add $2,1
+  div $2,2
+  mul $4,$2
+  gcd $4,4
+  mul $3,$4
+  mul $3,$4
+  div $4,2
 lpe
-div $1,6
+add $1,1
+cmp $1,1
 mov $0,$1

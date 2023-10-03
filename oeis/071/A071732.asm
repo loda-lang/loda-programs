@@ -1,5 +1,5 @@
 ; A071732: Expansion of (1+x^3*C^2)*C^3, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
-; Submitted by owensse
+; Submitted by zioriga
 ; 1,3,9,29,95,317,1076,3707,12935,45630,162486,583338,2109190,7674157,28077250,103234695,381260535,1413686490,5260849110,19642116150,73557465570,276224933010,1039922723424,3924250124142,14840700243830
 
 mov $1,$0
@@ -7,34 +7,41 @@ add $1,1
 mov $2,$1
 mov $3,$1
 sub $3,2
+mov $4,$0
+add $4,2
+mov $5,$4
+mov $6,$4
+sub $6,2
+mov $10,1
+mul $4,2
+sub $4,3
+bin $4,$6
+mul $4,2
+div $4,$5
+add $0,1
+lpb $0
+  max $7,$0
+  mov $8,2
+  add $8,$0
+  add $10,1
+  mov $11,7
+  add $11,$12
+  mov $12,$9
+  mov $9,$10
+  bin $9,$7
+  add $7,1
+  mul $9,$8
+  div $9,$7
+  add $10,1
+  sub $0,1
+  sub $7,1
+lpe
+mov $0,$11
+sub $0,7
+add $4,$0
 mul $1,2
 bin $1,$3
 mul $1,2
 div $1,$2
-mov $4,$0
-mov $6,2
-lpb $6
-  sub $6,1
-  mov $0,$4
-  add $0,$6
-  sub $0,1
-  mov $8,$0
-  mul $8,2
-  mov $9,$0
-  mov $0,1
-  add $0,$8
-  bin $0,$9
-  add $9,2
-  bin $8,$9
-  mul $8,2
-  sub $0,$8
-  mov $5,$6
-  mul $5,$0
-  add $7,$5
-lpe
-min $4,1
-mul $4,$0
-mov $0,$7
-sub $0,$4
-add $1,$0
+add $1,$4
 mov $0,$1

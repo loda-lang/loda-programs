@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   dif $3,2
   add $3,1
   mod $3,2
