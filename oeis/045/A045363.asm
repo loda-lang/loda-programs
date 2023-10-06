@@ -32,9 +32,8 @@ lpb $2
   cmp $4,$0
   mul $2,$4
   sub $2,18
-  add $5,2
   div $5,2
-  add $5,4
+  add $5,5
   gcd $5,7
   add $5,$1
   add $5,$1
