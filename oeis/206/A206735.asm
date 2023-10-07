@@ -15,7 +15,3 @@ max $3,0
 pow $4,$3
 mul $1,$4
 mov $0,$1
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
