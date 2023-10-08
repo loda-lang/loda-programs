@@ -10,10 +10,6 @@ lpb $1
   mov $0,$3
   sub $0,$1
   seq $0,47994 ; Unitary totient (or unitary phi) function uphi(n).
-  mul $0,200
-  sub $0,200
-  div $0,200
-  add $0,1
   add $2,$0
 lpe
 mov $0,$2
