@@ -1,4 +1,4 @@
-; A094960: Positive integers k such that the derivative of k-th Bernoulli polynomial B(k,x) contains only integer coefficients.
+; A094960: Positive integers k such that the derivative of the k-th Bernoulli polynomial B(k,x) contains only integer coefficients.
 ; Submitted by [AF>Libristes] alain65
 ; 1,2,4,6,10,12,28,30,36,60
 ; Formula: a(n) = A159477(A334156(n+1)/2)-1

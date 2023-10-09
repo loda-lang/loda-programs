@@ -1,4 +1,4 @@
-; A023707: Numbers with exactly 2 0's in base 4 expansion.
+; A023707: Numbers with exactly 2 0's in their base 4 expansion.
 ; Submitted by [AF] Kalianthys
 ; 16,32,48,65,66,67,68,72,76,80,96,112,129,130,131,132,136,140,144,160,176,193,194,195,196,200,204,208,224,240,261,262,263,265,266,267,269,270,271,273,274,275,276,280,284,289,290,291
 

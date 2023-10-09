@@ -1,4 +1,4 @@
-; A325837: The number of exponentially odd divisors of n.
+; A325837: The number of coreful divisors of n that are exponentially odd numbers (A268335).
 ; Submitted by [AF] Kalianthys
 ; 1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2
 
