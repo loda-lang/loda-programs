@@ -1,13 +1,8 @@
 ; A031905: a(n) = prime(10*n - 4).
-; Submitted by ChelseaOilman
+; Submitted by Sphynx
 ; 13,53,101,151,199,263,317,383,443,503,577,641,701,769,839,911,983,1049,1109,1193,1277,1321,1429,1487,1559,1619,1699,1783,1871,1949,2017,2089,2161,2267,2339,2393,2473,2579,2663,2713,2791,2861,2957
-; Formula: a(n) = b(10*n+6), b(n) = A159477(b(n-1)), b(0) = 1
+; Formula: a(n) = A006005(10*n+5)
 
-mov $1,1
 mul $0,10
-add $0,6
-lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$1
+add $0,5
+seq $0,6005 ; The odd prime numbers together with 1.

@@ -9,6 +9,4 @@ lpb $1
   mov $0,$2
   seq $0,46313 ; Numbers that are divisible by at least 10 primes (counted with multiplicity).
 lpe
-sub $0,1024
 div $0,4
-add $0,256

@@ -9,5 +9,5 @@ lpe
 mov $2,$0
 mov $0,$1
 bin $0,$2
-seq $1,24175 ; Expansion of (x^3 - 6*x^2 + 5*x - 1)/((2*x - 1)*(2*x^2 - 4*x + 1))
+seq $1,24175 ; Expansion of g.f. (x^3 - 6*x^2 + 5*x - 1)/((2*x - 1)*(2*x^2 - 4*x + 1)).
 mul $0,$1

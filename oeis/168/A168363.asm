@@ -16,9 +16,7 @@ lpb $2
   seq $3,69513 ; Characteristic function of the prime powers p^k, k >= 1.
   mul $4,$3
   add $3,$4
-  sub $3,4
   div $3,2
-  add $3,2
   cmp $3,2
   sub $0,$3
   add $1,1

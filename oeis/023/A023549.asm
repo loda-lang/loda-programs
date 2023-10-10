@@ -1,22 +1,17 @@
 ; A023549: Convolution of natural numbers >= 2 and Lucas numbers.
-; Submitted by Simon Strandgaard
+; Submitted by davidsteele1975
 ; 2,9,21,43,80,142,244,411,683,1125,1842,3004,4886,7933,12865,20847,33764,54666,88488,143215,231767,375049,606886,982008,1588970,2571057,4160109,6731251
-; Formula: a(n) = a(n-1)+b(n-2)+4, a(2) = 21, a(1) = 9, a(0) = 2, b(n) = 2*b(n-1)-b(n-1)+b(n-2)+7, b(2) = 33, b(1) = 18, b(0) = 8
+; Formula: a(n) = c(n+1), b(n) = 3*n+b(n-1)+c(n-1)+1, b(2) = 13, b(1) = 4, b(0) = 0, c(n) = 3*n-c(n-1)+b(n-1)+c(n-1)-1, c(2) = 9, c(1) = 2, c(0) = 0
 
-mov $5,3
+mov $2,2
 add $0,1
 lpb $0
   sub $0,1
+  add $3,2
   add $1,$3
-  add $1,2
-  mov $4,$5
-  sub $4,2
-  add $5,1
-  sub $3,$4
-  add $3,$5
-  add $5,1
-  mov $2,$3
-  mov $3,$5
-  add $5,$2
+  add $1,$2
+  add $2,3
+  mul $3,-1
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$3

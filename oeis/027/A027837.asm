@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,279055 ; Convolution of squares of factorial numbers (A000142).
+    seq $7,279055 ; Self-convolution of squares of factorial numbers (A001044).
     mov $9,10
     add $9,$5
     sub $4,1
@@ -27,6 +27,4 @@ lpb $0
   add $2,1
 lpe
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

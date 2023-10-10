@@ -1,18 +1,17 @@
 ; A123110: Triangle T(n,k), 0 <= k <= n, read by rows given by [0,1,0,0,0,0,0,0,0,0,...] DELTA [1,0,-1,1,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
-; Submitted by Science United
+; Submitted by pnbbfr
 ; 1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
-; Formula: a(n) = (d(n)+1)%2, b(n) = (c(n-1)%b(n-1)+2*b(n-1))/2+1, b(2) = 3, b(1) = 2, b(0) = 1, c(n) = c(n-1)%b(n-1)+b(n-1), c(2) = 3, c(1) = 1, c(0) = 0, d(n) = max(d(n-1),b(n-1)), d(2) = 2, d(1) = 1, d(0) = 0
+; Formula: a(n) = c(n)%2, b(n) = gcd(c(n-1)/2,2)*b(n-1), b(1) = 4, b(0) = 2, c(n) = c(n-1)/2+b(n-1), c(1) = 2, c(0) = 1
 
-mov $1,1
+mov $2,2
+mov $3,1
 lpb $0
   sub $0,1
-  mod $2,$1
-  add $2,$1
-  max $3,$1
-  add $1,$2
-  div $1,2
-  add $1,1
+  div $3,2
+  mov $1,$3
+  gcd $1,2
+  add $3,$2
+  mul $2,$1
 lpe
 mov $0,$3
-add $0,1
 mod $0,2

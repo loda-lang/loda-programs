@@ -30,6 +30,4 @@ lpb $0
 lpe
 sub $4,$6
 mov $0,$4
-sub $0,625
 div $0,625
-add $0,1

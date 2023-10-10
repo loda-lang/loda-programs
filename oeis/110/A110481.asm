@@ -6,8 +6,15 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  div $6,2
+  mul $6,3
   mov $3,$1
-  seq $3,62317 ; Numbers k such that 5*k-1 is a perfect square.
+  add $3,$6
+  add $3,2
+  pow $3,2
+  div $3,5
+  add $3,1
   mov $5,$3
   mul $5,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

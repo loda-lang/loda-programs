@@ -1,5 +1,5 @@
 ; A087233: a(n)=floor[sigma[A002110(n)]/A002110(n)]; integer quotient of divisor-sum of primorial numbers and primorials.
-; Submitted by skildude
+; Submitted by zioriga
 ; 1,2,2,2,2,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
 
 mov $3,1
@@ -23,6 +23,7 @@ lpb $3
         div $0,5
         add $6,1
       lpe
+      pow $11,$5
       mov $0,$6
       sub $0,1
       mul $0,2

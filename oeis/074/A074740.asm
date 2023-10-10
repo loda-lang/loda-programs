@@ -4,7 +4,7 @@
 ; Formula: a(n) = A000165(n+1)/(2*A066843(n))
 
 mov $1,$0
-seq $1,66843 ; a(n) = Product_{k=1..n} d(k); d(k) is the number of positive divisors of k.
+seq $1,66843 ; a(n) = Product_{k=1..n} d(k); d(k) = A000005(k) is the number of positive divisors of k.
 mul $1,2
 add $0,1
 seq $0,165 ; Double factorial of even numbers: (2n)!! = 2^n*n!.

@@ -10,10 +10,6 @@ lpb $3
   mul $1,$0
   trn $1,$2
   add $1,$2
-  mov $4,$0
-  max $4,1
-  div $1,$4
-  div $2,$4
   add $2,3
   sub $3,1
 lpe
