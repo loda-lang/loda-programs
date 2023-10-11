@@ -1,24 +1,34 @@
 ; A000700: Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
-; Submitted by owensse
+; Submitted by p3d-cluster
 ; 1,1,0,1,1,1,1,1,2,2,2,2,3,3,3,4,5,5,5,6,7,8,8,9,11,12,12,14,16,17,18,20,23,25,26,29,33,35,37,41,46,49,52,57,63,68,72,78,87,93,98,107,117,125,133,144,157,168,178,192,209,223,236,255,276,294,312,335,361,385,408,437,471,501,530,568,609,647,686,732
 
-mov $3,3
-add $0,3
+mov $2,1
+mov $3,1
+mov $10,1
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  dif $2,2
-  mov $5,-1
-  pow $5,$2
-  add $5,1
-  dif $2,2
-  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
-  mul $2,$5
-  div $2,2
-  add $1,$2
-  mov $3,1
-  add $3,$4
-  add $4,1
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  add $2,1
+  mov $4,$2
+  lpb $4
+    trn $4,1
+    add $6,$7
+    mov $9,10
+    add $9,$5
+    mov $7,$4
+    seq $7,46897 ; Sum of divisors of n that are not divisible by 4.
+    mul $7,-2
+    mul $7,$$9
+    add $5,1
+  lpe
+  mov $9,10
+  add $9,$2
+  div $6,$2
+  div $6,3
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$3
+gcd $0,$0

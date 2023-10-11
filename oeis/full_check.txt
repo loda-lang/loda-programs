@@ -40,6 +40,7 @@ A003136: Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors
 A003151: Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
 A003152: A Beatty sequence: a(n) = floor(n*(1+1/sqrt(2))).
 A003153: a(n) = integer nearest n*(1+sqrt(2)).
+A003157: A self-generating sequence (see Comments in A003156 for the definition).
 A003511: A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
 A003512: A Beatty sequence: floor(n*(sqrt(3) + 2)).
 A003557: n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

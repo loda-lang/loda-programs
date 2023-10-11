@@ -1,18 +1,8 @@
 ; A003982: Table read by rows: 1 if x = y, 0 otherwise, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
-; Submitted by Lazarus-uk
+; Submitted by Science United
 ; 1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = d(2*n+1)-1, b(n) = b(n-1)/2+c(n-1), b(2) = 10, b(1) = 4, b(0) = 0, c(n) = gcd(b(n-1)/2,2)*c(n-1), c(2) = 16, c(1) = 8, c(0) = 4, d(n) = gcd(b(n-1)/2,2), d(2) = 2, d(1) = 2, d(0) = 0
+; Formula: a(n) = A000203(2*n)%2
 
-mov $2,4
 mul $0,2
-add $0,1
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $1,$2
-  mul $2,$3
-lpe
-mov $0,$3
-sub $0,1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mod $0,2

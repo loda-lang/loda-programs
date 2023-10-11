@@ -1,5 +1,5 @@
 ; A007223: Number of distinct perforation patterns for deriving (v,b) = (n+2,n) punctured convolutional codes from (2,1).
-; Submitted by Gunnar Hjern
+; Submitted by p3d-cluster
 ; 1,2,8,24,85,286,1008,3536,12618,45220,163504,594320,2173197,7983990,29465440,109174560,405995326,1514797020,5669021488,21275014800,80047272578,301892460012,1141069157408,4321730134624,16399422757300
 
 add $0,3
@@ -20,10 +20,8 @@ lpb $0
   mul $3,$6
   div $3,$1
   add $4,2
-  max $5,256
   add $5,$3
   mov $2,$1
 lpe
 div $5,2
 mov $0,$5
-sub $0,128

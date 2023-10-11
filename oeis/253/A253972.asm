@@ -10,15 +10,12 @@ lpb $2
   mov $6,$1
   seq $6,154115 ; Numbers n such that n + 3 is prime.
   seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mul $6,3
   mov $3,$6
-  sub $3,6
-  div $3,3
-  add $3,2
-  mov $5,$3
-  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   sub $3,3
+  mov $5,$6
+  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $5,$3
+  mul $6,3
   mov $3,$5
   sub $3,1
   seq $3,131082 ; Periodic sequence (15, 11, 5, 1, 1, 5, 11, 15).
@@ -33,6 +30,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$6
-sub $0,9
 div $0,3
-add $0,3
