@@ -1,6 +1,6 @@
 ; A137794: Characteristic function of numbers having no prime gaps in their factorization.
 ; Submitted by http://extinction.petrsu.ru/
-; 1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,0,0,1,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0
+; 1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,0,0,1,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,1,0,1,0,1,0,1,0
 ; Formula: a(n) = A340375(A334032(A181819(A108951(n)-1)-1))
 
 seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).

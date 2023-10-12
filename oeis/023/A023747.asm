@@ -1,13 +1,27 @@
 ; A023747: Plaindromes: numbers whose digits in base 5 are in nondecreasing order.
-; Submitted by NOSNHOP
+; Submitted by Science United
 ; 0,1,2,3,4,6,7,8,9,12,13,14,18,19,24,31,32,33,34,37,38,39,43,44,49,62,63,64,68,69,74,93,94,99,124,156,157,158,159,162,163,164,168,169,174,187,188,189,193,194,199,218,219,224,249,312,313,314,318,319,324,343,344,349,374,468,469,474,499,624,781,782,783,784,787,788,789,793,794,799
-; Formula: a(n) = (A102861(n)*(A264668(n)+4)-16)/16
 
-mov $1,$0
-seq $1,102861 ; Numbers which in base 5 have digit-sum 4.
-seq $0,264668 ; a(n) = A264600(n) - A061486(n).
-add $0,4
-mul $1,$0
+mov $2,$0
+add $0,1
+add $2,9
+pow $2,4
+lpb $2
+  mov $4,-6
+  mov $3,$1
+  lpb $3
+    mov $5,$3
+    mul $5,2
+    mod $5,10
+    div $3,5
+    add $4,$5
+  lpe
+  mov $3,$4
+  cmp $3,2
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
 mov $0,$1
-sub $0,16
-div $0,16
+sub $0,4
+div $0,4

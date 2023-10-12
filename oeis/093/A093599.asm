@@ -27,9 +27,7 @@ lpb $1
   mul $2,$0
   mov $0,$3
   sub $0,$2
-  sub $0,15
   div $0,5
-  add $0,3
   add $7,$0
 lpe
 mov $0,$7

@@ -1,5 +1,5 @@
 ; A087248: Squarefree abundant numbers.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by F14Claude
 ; 30,42,66,70,78,102,114,138,174,186,210,222,246,258,282,318,330,354,366,390,402,426,438,462,474,498,510,534,546,570,582,606,618,642,654,678,690,714,762,770,786,798,822,834,858,870,894,906,910,930,942,966,978,1002,1038,1074,1086,1110,1122,1146,1158,1182,1190,1194,1218,1230,1254,1266,1290,1302,1326,1330,1338,1362,1374,1398,1410,1430,1434,1446
 
 mov $1,3
@@ -7,16 +7,10 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  mov $6,$1
-  seq $6,48250 ; Sum of the squarefree divisors of n.
-  mov $3,$1
-  seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
-  add $3,$6
+  mov $5,$1
+  seq $5,48250 ; Sum of the squarefree divisors of n.
+  add $3,$5
   div $3,2
-  max $5,$1
-  mul $5,-1
-  add $5,$3
-  mov $3,$5
   sub $3,3
   div $3,$1
   sub $0,$3

@@ -1,16 +1,12 @@
 ; A040625: Continued fraction for sqrt(651).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by p3d-cluster
 ; 25,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1,1,16,1,1,50,1
-; Formula: a(n) = (8*((7*(A298468((5*A010225(n))/4+2)/2))/5))/9-3
+; Formula: a(n) = 4*(A010225(n)/4)+A010225(n)
 
-seq $0,10225 ; Continued fraction for sqrt(183).
-mul $0,5
-div $0,4
-add $0,2
-seq $0,298468 ; Solution (aa(n)) of the system of 3 complementary equations in Comments.
-div $0,2
-mul $0,7
-div $0,5
-mul $0,8
-div $0,9
-sub $0,3
+mov $1,$0
+seq $1,10225 ; Continued fraction for sqrt(183).
+mov $2,$1
+div $1,4
+mul $1,4
+add $1,$2
+mov $0,$1

@@ -1,6 +1,6 @@
 ; A056670: Largest prime factor of which the exponent exceeds 1 among prime factors of central binomial coefficient, C(n, floor(n/2)); largest non-unitary prime factor of A001405(n); or the maximal prime divisor of the largest square divisor(A056057(n)) of C(n, floor(n/2)).
 ; Submitted by Science United
-; 1,1,1,1,1,2,1,1,3,3,1,2,2,2,3,3,1,2,1,2,2,2,1,2,5,5,5,5,3,3,3,3,3,3,5,5,5,5,3,3,2,2,2,2,5,5,5,5,7,7,7,7,7,7,2,2,2,2,2,2,2,2,7,7,7,7,7,7,3,3,1,2,2,2,5,5,7,7,7,7,7,7,3,3,5,5,5,5,3,3,7,7,7,7,7,7,5,5,3,3
+; 1,1,1,1,1,2,1,1,3,3,1,2,2,2,3,3,1,2,1,2,2,2,1,2,5,5,5,5,3,3,3,3,3,3,5,5,5,5,3,3,2,2,2,2,5,5,5,5,7,7,7,7,7,7,2,2,2,2,2,2,2,2,7,7,7,7,7,7,3,3,1,2,2,2,5,5,7,7,7,7
 
 add $0,1
 mov $1,$0

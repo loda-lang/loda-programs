@@ -6,10 +6,7 @@ mov $1,$0
 div $1,2
 add $1,1
 seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
-mov $2,1
-add $2,$1
-mov $1,$2
-sub $1,2
+sub $1,1
 sub $0,$1
 sub $0,1
 sub $1,$0

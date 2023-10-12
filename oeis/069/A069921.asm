@@ -1,21 +1,19 @@
 ; A069921: Define C(n) by the recursion C(0) = 1 + I where I^2 = -1, C(n+1) = 1/(1+C(n)); then a(n) = (-1)^n/Im(C(n)) where Im(z) is the imaginary part of the complex number z.
-; Submitted by Jamie Morken(l1)
+; Submitted by p3d-cluster
 ; 1,5,10,29,73,194,505,1325,3466,9077,23761,62210,162865,426389,1116298,2922509,7651225,20031170,52442281,137295677,359444746,941038565,2463670945,6449974274,16886251873,44208781349,115740092170,303011495165,793294393321
+; Formula: a(n) = c(2*n+2), b(n) = c(n-2), b(4) = 1, b(3) = 0, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = b(n-2)+d(n-2), c(4) = 5, c(3) = 3, c(2) = 1, c(1) = 0, c(0) = 2, d(n) = b(n-1)+c(n-1)+d(n-1), d(4) = 9, d(3) = 6, d(2) = 3, d(1) = 3, d(0) = 1
 
-mul $0,2
+mov $4,2
+mov $5,1
 add $0,1
-mov $2,1
-mov $4,-1
+mul $0,2
 lpb $0
   sub $0,1
-  add $3,1
-  sub $3,$4
-  mov $4,$2
-  mov $2,$3
-  add $2,$1
-  add $5,$4
+  add $5,$1
   mov $1,$3
-  mov $3,$5
-  add $4,1
+  mov $3,$4
+  mov $4,$2
+  mov $2,$5
+  add $5,$3
 lpe
-mov $0,$3
+mov $0,$4

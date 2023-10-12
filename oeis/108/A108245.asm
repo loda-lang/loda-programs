@@ -19,9 +19,8 @@ lpb $4
 lpe
 add $2,$3
 mov $0,$2
-sub $0,4
 div $0,2
-add $0,3
+add $0,1
 mov $1,-1
 bin $1,$0
 sub $0,$1
