@@ -193,6 +193,7 @@ A052223: Numbers whose sum of digits is 9.
 A052369: Largest prime factor of n, where n runs through composite numbers.
 A053669: Smallest prime not dividing n.
 A053723: Number of 5-core partitions of n.
+A054406: Beatty sequence for (3+sqrt 3)/2; complement of A022838.
 A054703: Number of distinct powers of 2 modulo n.
 A054770: Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
 A055670: a(n) = prime(n) - (-1)^prime(n).
@@ -217,6 +218,7 @@ A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065176: Site swap sequence associated with the permutation A065174 of Z.
 A065331: Largest 3-smooth divisor of n.
+A066247: Characteristic function of composite numbers: 1 if n is composite else 0.
 A066441: a(n) = 11^n mod n.
 A066911: Sum of primes < n that do not divide n.
 A067132: Number of elements in the largest set of divisors of n which are in geometric progression.

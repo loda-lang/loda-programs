@@ -10,7 +10,7 @@ lpb $3
   mov $4,$2
   seq $4,43556 ; Number of runs in base-4 representation of n.
   cmp $4,2
-  add $6,2
+  add $6,3
   sub $1,$4
   add $2,1
   sub $3,$6

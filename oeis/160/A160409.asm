@@ -8,7 +8,3 @@ sub $0,2
 pow $0,$0
 dif $0,2
 mod $0,31
-mul $0,6
-sub $0,6
-div $0,6
-add $0,1

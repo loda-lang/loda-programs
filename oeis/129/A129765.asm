@@ -1,18 +1,16 @@
 ; A129765: Triangle, (1, 1, 2, 2, 2, ...) in every column.
-; Submitted by Science United
+; Submitted by skildude
 ; 1,1,1,2,1,1,2,2,1,1,2,2,2,1,1,2,2,2,2,1,1,2,2,2,2,2,1,1,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,1,1,2,2
 
+mov $1,2
+sub $0,1
 lpb $0
-  add $2,1
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
-add $2,1
-mul $0,-1
-add $0,$2
-lpb $0
-  mov $0,2
-  add $1,3
-lpe
-mov $0,$1
-div $0,3
+sub $0,2
+mov $2,$0
+max $2,0
+cmp $2,$0
+mov $0,$2
 add $0,1

@@ -1,17 +1,19 @@
 ; A115516: The mode of the bits of n (using 0 if bimodal).
-; Submitted by rajab
+; Submitted by p3d-cluster
 ; 0,1,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1
 
-mov $2,1
-mov $1,$0
-lpb $1
-  div $0,2
-  sub $1,$0
-  add $2,1
+mov $3,$0
+lpb $3
+  mov $2,$3
+  mod $2,2
+  div $3,2
+  add $1,$2
+  add $1,$2
+  sub $1,1
 lpe
-sub $2,$1
-sub $2,$1
-mov $0,$2
-add $0,162
-div $0,9
+mov $3,$1
+mul $3,2
+max $3,1
+mov $0,$3
+add $0,1
 mod $0,2

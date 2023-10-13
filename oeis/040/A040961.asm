@@ -1,11 +1,12 @@
 ; A040961: Continued fraction for sqrt(993).
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 31,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1,1,20,1,1,62,1
-; Formula: a(n) = A007093((7*((5*A010225(n))/4))/5)
+; Formula: a(n) = 6*(A010225(n)/4)+A010225(n)
 
-seq $0,10225 ; Continued fraction for sqrt(183).
-mul $0,5
-div $0,4
-mul $0,7
-div $0,5
-seq $0,7093 ; Numbers in base 7.
+mov $1,$0
+seq $1,10225 ; Continued fraction for sqrt(183).
+mov $2,$1
+div $1,4
+mul $1,6
+add $1,$2
+mov $0,$1

@@ -1,32 +1,29 @@
 ; A138546: Moment sequence of tr(A^5) in USp(6).
-; Submitted by Simon Strandgaard
+; Submitted by p3d-cluster
 ; 1,0,4,0,42,0,660,0,12810,0,281736,0,6727644,0,170316432,0,4504487130,0,123255492360,0,3465702008340,0,99645553785960,0,2918768920720380,0,86852063374902000,0,2619552500788984200,0,79939673971478231760,0
 
-mov $1,-1
-pow $1,$0
-add $1,1
-dif $0,2
 mov $2,$0
-mul $0,2
-bin $0,$2
-mov $5,$2
-mov $7,$2
-lpb $7
-  mov $2,$7
-  add $2,1
-  mov $3,$5
-  bin $3,$7
-  pow $3,2
-  mov $4,$7
-  add $4,$7
-  bin $4,$7
-  sub $7,1
-  mul $3,$4
-  div $3,$2
-  add $6,$3
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  div $0,2
+  mov $5,$7
+  bin $5,$0
+  pow $5,2
+  add $7,1
+  mov $0,$4
+  div $0,2
+  mov $6,$4
+  bin $6,$0
+  mul $6,$5
+  mul $1,$6
+  mul $3,-1
+  add $3,$1
 lpe
-mov $2,$6
-add $2,1
-mul $0,$2
-mul $0,$1
-div $0,2
+mov $0,$3
