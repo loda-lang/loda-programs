@@ -1,33 +1,18 @@
 ; A089193: Odd numbers n such that 2*n-7 is a prime of the form 4*k+3.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 5,7,9,13,15,19,25,27,33,37,39,43,45,55,57,67,69,73,79,85,87,93,99,103,109,115,117,123,129,135,139,145,157,159,169,177,183,187,193,195,213,219,223,225,235,237,243,247,249,253,255,265,277,285,289,297,303,307,313,319,325,327,333,345,349,363,367,373,375,379,397,409,415,417,423,433,435,445,447,457
 
 add $0,1
-mov $1,4
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  max $3,$1
   add $3,2
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,5
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,8
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
-div $0,4
-add $0,4
+mov $0,$3
+div $0,2
+add $0,5

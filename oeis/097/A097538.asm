@@ -1,35 +1,17 @@
 ; A097538: Subtract 2 from primes == 3 (mod 4).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,5,9,17,21,29,41,45,57,65,69,77,81,101,105,125,129,137,149,161,165,177,189,197,209,221,225,237,249,261,269,281,305,309,329,345,357,365,377,381,417,429,437,441,461,465,477,485,489,497,501,521,545,561,569,585,597,605
 
 add $0,1
-mov $1,4
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  max $3,$1
   add $3,2
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,5
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,8
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
-sub $0,4
-div $0,4
-mul $0,2
+mov $0,$3
 add $0,1

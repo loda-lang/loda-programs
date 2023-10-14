@@ -2,27 +2,31 @@
 ; Submitted by fzs600
 ; 17,19,23,29,31,41,43,53,59,71,73,79,83,101,109,113,139,149,151,163,179,191,193,211,223,239,241,251,263,269,281,283,293,349,359,379,401,409,421,431,433,443,461,479,491,499,503,521,569,599,613,619,631,643,653,659,673,739,751,769,773,809,821,823,839,919,941,953,983,1009,1021,1031,1033,1051,1061,1063,1103,1109,1129,1163
 
-mov $1,10
-mov $5,-11
+mov $7,2
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
+  mov $3,$1
+  add $3,11
+  mov $6,$1
+  add $6,2
+  mul $6,2
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $6,2
+  add $1,1
+  mov $5,$3
+  sub $5,$6
   sub $5,1
-  max $3,$5
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$3
-  add $1,2
+  mul $6,$5
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $7,1
+  sub $0,$6
   mov $4,$0
   max $4,0
   cmp $4,$0
-  add $5,$1
-  add $1,1
   mul $2,$4
   sub $2,1
-  add $5,$1
-  add $1,1
 lpe
-mov $0,$1
-div $0,2
-add $0,6
+mov $0,$7
+mul $0,2
+add $0,13

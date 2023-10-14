@@ -1,34 +1,18 @@
 ; A005099: (( Primes == -1 mod 4 ) + 1)/4.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,2,3,5,6,8,11,12,15,17,18,20,21,26,27,32,33,35,38,41,42,45,48,50,53,56,57,60,63,66,68,71,77,78,83,87,90,92,95,96,105,108,110,111,116,117,120,122,123,125,126,131,137,141,143,147,150,152,155,158,161,162,165,171,173,180,182,185,186,188,197,203,206,207,210,215,216,221,222,227
 
 add $0,1
-mov $1,4
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  max $3,$1
   add $3,2
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,6
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,8
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
-sub $0,12
-div $0,8
-add $0,2
+mov $0,$3
+div $0,4
+add $0,1

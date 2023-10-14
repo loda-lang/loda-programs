@@ -1,23 +1,22 @@
 ; A101508: Product of binomial matrix and the Mobius matrix A051731.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,2,1,4,2,1,8,4,3,1,16,8,6,4,1,32,16,11,10,5,1,64,32,21,20,15,6,1,128,64,42,36,35,21,7,1,256,128,85,64,70,56,28,8,1,512,256,171,120,127,126,84,36,9,1,1024,512,342,240,220,252,210,120,45,10,1,2048,1024,683,496,385,463,462,330,165,55,11,1,4096,2048
 
 lpb $0
-  add $2,1
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
-add $2,1
-mov $4,$0
-add $5,$0
-mov $0,$2
-lpb $0
-  sub $0,1
-  add $4,1
-  mov $1,$2
-  bin $1,$4
-  mul $1,$4
-  div $1,$2
-  add $3,$1
+mov $2,$0
+mov $0,$1
+sub $1,$2
+add $1,1
+lpb $1
+  sub $1,1
+  trn $1,$2
+  add $3,$2
+  mov $5,$0
+  bin $5,$3
+  add $3,1
   add $4,$5
 lpe
-mov $0,$3
+mov $0,$4
