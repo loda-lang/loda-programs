@@ -12,7 +12,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,171372 ; a(n) = Numerator of 1/(2*n)^2 - 1/(3*n)^2 for n > 0, a(0) = 1.
+  gcd $0,5
+  mul $0,-1
+  add $0,6
   mul $1,$0
   add $3,$1
 lpe

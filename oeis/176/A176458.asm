@@ -1,21 +1,24 @@
 ; A176458: Decimal expansion of 4+sqrt(17).
-; Submitted by Christian Krause
+; Submitted by p3d-cluster
 ; 8,1,2,3,1,0,5,6,2,5,6,1,7,6,6,0,5,4,9,8,2,1,4,0,9,8,5,5,9,7,4,0,7,7,0,2,5,1,4,7,1,9,9,2,2,5,3,7,3,6,2,0,4,3,4,3,9,8,6,3,3,5,7,3,0,9,4,9,5,4,3,4,6,3,3,7,6,2,1,5
 
-mov $1,2
-mov $2,1
+mov $2,4
+mov $5,56
 mov $3,$0
 mul $3,4
 lpb $3
   sub $3,1
-  add $1,$2
-  add $2,$1
-  mul $2,2
+  add $1,$5
+  mov $5,$1
+  add $5,$2
+  mul $5,2
+  mov $2,$1
 lpe
 mov $4,10
 pow $4,$0
+dif $2,2
 div $2,$4
-mul $1,4
+add $1,$5
 div $1,$2
 mov $0,$1
 mod $0,10

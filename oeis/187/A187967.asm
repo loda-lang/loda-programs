@@ -1,26 +1,18 @@
 ; A187967: [nr+kr]-[nr]-[kr], where r=sqrt(2), k=2, [ ]=floor.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by p3d-cluster
 ; 1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0
+; Formula: a(n) = (((A001951(n+3)+A001951(n+1)+1)%2+3)^((A001951(n+3)+A001951(n+1)+1)%2+3)-5)%10-1
 
 add $0,1
-lpb $0
-  mov $3,$0
-  lpb $3
-    div $3,470
-    mov $2,3
-  lpe
-  mov $4,1
-  mov $5,1
-  lpb $0
-    sub $0,$4
-    mov $1,$4
-    add $2,10
-    mov $4,$5
-    mul $4,2
-    sub $4,$1
-    add $5,$4
-  lpe
-lpe
-mov $0,$2
-div $0,12
+mov $1,$0
+seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,2
+seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+add $0,$1
 mod $0,2
+add $0,3
+pow $0,$0
+sub $0,5
+mod $0,10
+sub $0,1

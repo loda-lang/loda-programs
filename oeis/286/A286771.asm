@@ -5,5 +5,12 @@
 mov $1,$0
 cmp $1,2
 cmp $1,0
-seq $0,280411 ; Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 261", based on the 5-celled von Neumann neighborhood.
+mov $2,10
+pow $2,$0
+mod $0,2
+mov $3,3
+pow $3,$0
+div $2,$3
+div $2,$3
+mov $0,$2
 mul $0,$1

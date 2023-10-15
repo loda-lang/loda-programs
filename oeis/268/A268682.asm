@@ -1,21 +1,30 @@
 ; A268682: Decimal expansion of 1 - 1/sqrt(2).
-; Submitted by Simon Strandgaard
+; Submitted by p3d-cluster
 ; 2,9,2,8,9,3,2,1,8,8,1,3,4,5,2,4,7,5,5,9,9,1,5,5,6,3,7,8,9,5,1,5,0,9,6,0,7,1,5,1,6,4,0,6,2,3,1,1,5,2,5,9,6,3,4,1,1,6,6,0,1,3,1,0,0,4,6,3,3,7,6,0,7,6,8,9,4,6,4,8
 
 add $0,1
-mul $0,2
-mov $2,$0
-mov $0,10
-pow $0,$2
-mov $1,$0
-mul $1,2
-lpb $0
+mov $3,$0
+mul $3,6
+lpb $3
+  sub $3,1
+  sub $7,$4
+  add $5,$7
+  max $6,$2
   mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
+  add $2,13
+  add $4,$7
+  sub $4,$1
+  mul $7,2
+  mul $1,2
+  add $1,$6
+  sub $5,$1
 lpe
-div $0,2
+mov $4,10
+pow $4,$0
+mov $2,1
+sub $2,$5
+div $2,$4
+sub $1,$7
+div $1,$2
+mov $0,$1
 mod $0,10
-mul $0,-1
-add $0,9

@@ -1,35 +1,20 @@
 ; A104636: Even n such that 2n+1 is prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 2,6,8,14,18,20,26,30,36,44,48,50,54,56,68,74,78,86,90,96,98,114,116,120,128,134,138,140,146,156,158,168,174,176,186,194,198,200,204,210,216,224,228,230,254,260,270,278,284,288,296,300,306,308,320,326,330,336,338,350,354,366,378,380,384,386,398,404,410,414,426,428,438,440,464,468,470,476,488,498
 
+mov $3,2
 add $0,1
-mov $1,1
 mov $2,$0
-add $0,1
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  mov $3,$1
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,5
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,8
+  add $3,2
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
-sub $0,4
+mov $0,$3
 div $0,4
 add $0,1
+mul $0,2

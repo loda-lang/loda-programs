@@ -1,22 +1,20 @@
 ; A080428: First differences of A079255.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Conan
 ; 3,2,3,3,3,3,2,3,3,2,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,3,3,2,3,3,2,3,3,2,3,3,2,3,3,3,3,2,3,3
+; Formula: a(n) = d(n+1)+1, b(n) = (-c(n-1)+b(n-1))/2, b(2) = -6, b(1) = -1, b(0) = 0, c(n) = 2*gcd((-c(n-1)+b(n-1))/2-b(n-1)+d(n-1),2)*c(n-1), c(2) = 24, c(1) = 12, c(0) = 3, d(n) = gcd((-c(n-1)+b(n-1))/2-b(n-1)+d(n-1),2), d(2) = 1, d(1) = 2, d(0) = 3
 
-mov $1,1
-mov $2,4
+mov $2,3
+mov $3,3
+add $0,1
 lpb $0
   sub $0,1
+  sub $3,$1
   sub $1,$2
   div $1,2
-  mul $2,2
-  cmp $3,4
   add $3,$1
-  mod $3,2
-  add $3,2
-  add $1,$2
+  gcd $3,2
+  mul $2,2
   mul $2,$3
 lpe
 mov $0,$3
 add $0,1
-mod $0,2
-add $0,2

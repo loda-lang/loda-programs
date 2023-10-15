@@ -5,7 +5,7 @@
 
 mov $1,$0
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,143990 ; n!*A001515(n-1) with a(0) = 1.
+seq $1,143990 ; a(n) = n!*A001515(n-1) with a(0) = 1.
 div $1,$0
 gcd $0,$1
 div $1,$0

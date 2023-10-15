@@ -1,18 +1,17 @@
 ; A054961: Maximal number of binary vectors of length n such that the unions (or bitwise ORs) of any 2 distinct vectors are all distinct.
-; Submitted by Mads Nissen
+; Submitted by Ralfy
 ; 1,2,3,4,5,6,8,10,13,17
+; Formula: a(n) = b(n)/2+1, b(n) = b(n-1)+max(-d(n-1)+c(n-1),2), b(3) = 6, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = b(n-2), c(3) = 2, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = max(-d(n-1)+c(n-1),2), d(3) = 2, d(2) = 2, d(1) = 2, d(0) = 0
 
-mov $2,1
-mov $5,1
-add $0,2
 lpb $0
   sub $0,1
-  cmp $4,1
-  add $4,$2
-  mov $2,$1
-  trn $2,2
-  mov $1,$3
-  mov $3,$5
-  add $5,$4
+  sub $2,$4
+  mov $4,$2
+  max $4,2
+  mov $2,$3
+  mov $3,$1
+  add $1,$4
 lpe
 mov $0,$1
+div $0,2
+add $0,1

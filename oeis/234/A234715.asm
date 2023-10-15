@@ -6,7 +6,7 @@ mov $1,1
 lpb $0
   mov $3,$2
   mov $2,$0
-  seq $2,60746 ; Absolute value of numerator of non-Euler-constant term of Laurent expansion of Gamma function at s=-n.
+  seq $2,60746 ; Absolute value of numerator of non-Euler-constant term of Laurent expansion of Gamma function at s = -n.
   lpb $3
     mov $3,0
     mov $4,$1

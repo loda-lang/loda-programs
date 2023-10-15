@@ -1,20 +1,18 @@
 ; A217789: Least difference between 2 palindromic numbers of length n.
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Olde16
 ; 1,11,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
 
-lpb $0
-  sub $0,1
-  mul $0,4
-  lpb $0
-    mov $0,15
-  lpe
+mov $5,3
+sub $5,$0
+mov $3,3
+sub $3,$5
+lpb $3
+  cmp $3,2
+  add $2,$3
+  mov $3,$2
+  add $4,$2
   mov $1,10
-  mov $2,$0
-  div $0,8
+  sub $1,$4
+  mov $0,$1
 lpe
-mov $3,$2
-cmp $3,0
-add $2,$3
-mod $2,2
-add $1,$2
-mov $0,$1
+add $0,1

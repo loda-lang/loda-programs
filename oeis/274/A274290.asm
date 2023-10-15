@@ -1,17 +1,17 @@
 ; A274290: Arising in solving the keyboard problem.
-; Submitted by rbrooks737
+; Submitted by Groo
 ; 1,8,15,21,27,34,40,46
+; Formula: a(n) = 5*n+2*n-((2*n-2)/3)+1
 
-mul $0,3
-mov $1,$0
+mov $1,-1
 add $1,$0
-mul $0,2
-cmp $1,$0
-add $0,1
-add $1,$0
-lpb $0
-  div $0,3
-  add $1,1
-lpe
-mov $0,$1
-sub $0,2
+mov $2,2
+mul $2,$1
+mov $4,$2
+div $4,3
+sub $4,2
+sub $1,$4
+mov $3,$0
+mul $3,5
+add $3,$1
+add $0,$3

@@ -1,23 +1,9 @@
 ; A360616: Half the number of prime factors of n (counted with multiplicity, A001222), rounded down.
-; Submitted by Christian Krause
+; Submitted by p3d-cluster
 ; 0,0,0,1,0,1,0,1,1,1,0,1,0,1,1,2,0,1,0,1,1,1,0,2,1,1,1,1,0,1,0,2,1,1,1,2,0,1,1,2,0,1,0,1,1,1,0,2,1,1,1,1,0,2,1,2,1,1,0,2,0,1,1,3,1,1,0,1,1,1,0,2,0,1,1,1,1,1,0,2
+; Formula: a(n) = A001222(n)/2
 
-mov $2,2
-add $0,1
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  lpb $0
-    dif $0,$2
-    add $1,1
-  lpe
-lpe
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+mov $1,$0
+div $1,2
 mov $0,$1
-div $0,2

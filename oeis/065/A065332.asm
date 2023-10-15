@@ -1,5 +1,5 @@
 ; A065332: 3-smooth numbers in their natural position, gaps filled with 0.
-; Submitted by waffleironhead
+; Submitted by VWS
 ; 1,2,3,4,0,6,0,8,9,0,0,12,0,0,0,16,0,18,0,0,0,0,0,24,0,0,27,0,0,0,0,32,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,48,0,0,0,0,0,54,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,72,0,0,0,0,0,0,0,0
 
 add $0,1
@@ -13,7 +13,8 @@ lpb $3
     mod $2,$0
     cmp $2,0
     add $3,$1
+    mul $1,0
     sub $1,$2
   lpe
 lpe
-mov $0,$3
+mov $0,$1

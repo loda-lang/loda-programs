@@ -6,7 +6,7 @@ mul $0,12
 mov $1,1
 mov $3,$0
 lpb $3
-  sub $3,14
+  sub $3,18
   lpb $1
     min $3,1
     sub $0,6

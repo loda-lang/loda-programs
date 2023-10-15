@@ -1,13 +1,12 @@
 ; A235992: Numbers with an even arithmetic derivative, cf. A003415.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by fzs600
 ; 0,1,4,8,9,12,15,16,20,21,24,25,28,32,33,35,36,39,40,44,48,49,51,52,55,56,57,60,64,65,68,69,72,76,77,80,81,84,85,87,88,91,92,93,95,96,100,104,108,111,112,115,116,119,120,121,123,124,128,129,132,133,135,136,140,141,143,144,145,148,152,155,156,159,160,161,164,168,169,172
 
 mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  trn $3,1
-  seq $3,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   add $3,1
   mod $3,2
   sub $0,$3

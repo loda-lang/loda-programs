@@ -1,17 +1,16 @@
 ; A102546: Numbers t such that t1 is prime and t is a multiple of 10.
-; Submitted by Jamie Morken(w4)
+; Submitted by Science United
 ; 10,40,60,70,120,130,160,180,190,280,300,330,370,400,420,480,510,550,570,580,610,630,670,700,790,810,850,900,960,990,1030,1050,1060,1170,1180,1210,1230,1240,1260,1300,1390,1440,1510,1540,1560,1590,1600,1630,1690,1740,1830,1840,1870,1900,1930,1950,1980,2010,2020,2100,2110,2140,2160,2170,2250,2290,2320,2380,2400,2530,2560,2580,2650,2670,2680,2770,2790,2800,2820,2890
 
-add $0,1
+add $0,2
 mov $3,$0
 pow $3,5
 lpb $3
-  add $2,100
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
+  add $2,100
   sub $3,$0
 lpe
 mov $0,$2
 div $0,10
-add $0,10

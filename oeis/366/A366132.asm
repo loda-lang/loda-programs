@@ -8,5 +8,6 @@ lpb $1
   sub $1,1
   mov $0,$2
   seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  mov $2,0
 lpe
 bin $0,2

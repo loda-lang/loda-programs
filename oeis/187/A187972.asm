@@ -1,19 +1,18 @@
 ; A187972: a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=4, [ ]=floor.
-; Submitted by [AF] Hydrosaure
+; Submitted by p3d-cluster
 ; 1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0
 
 mov $1,$0
-add $1,4
-mov $2,$1
+add $1,5
+seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+mov $2,$0
+mul $2,$0
 lpb $2
-  mov $3,$2
-  seq $3,159684 ; Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n>=1, S(n+1) = S(n)S(n)S(n-1).
-  add $4,$3
-  mul $4,$3
-  add $2,3
-  mul $2,$4
-  trn $2,8
+  sub $2,$0
+  add $0,1
+  sub $2,$0
 lpe
-add $3,1
-mod $3,2
-mov $0,$3
+add $0,$1
+add $0,1
+mod $0,2

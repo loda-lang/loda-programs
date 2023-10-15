@@ -1,20 +1,20 @@
 ; A247334: Highly abundant numbers which are not abundant.
-; Submitted by Science United
+; Submitted by Mumps
 ; 1,2,3,4,6,8,10,16
+; Formula: a(n) = max((max(n-4,0)+1)^2,(n-1)/3+max(n-4,0)+n+1)
 
-mul $0,3
-add $0,1
-mov $1,1
 mov $5,$0
-lpb $0
-  mov $3,$0
-  mod $3,10
-  mov $4,$3
-  mul $4,$1
-  div $0,10
-  mul $1,$5
-  add $2,$4
-lpe
+sub $0,1
+mov $4,$0
+div $4,3
+mov $2,$0
+trn $2,3
+mov $3,$2
+add $3,$4
+mov $1,$3
+add $1,1
+add $1,$5
+add $2,1
+pow $2,2
+max $2,$1
 mov $0,$2
-div $0,3
-add $0,1

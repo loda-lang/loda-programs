@@ -2,26 +2,20 @@
 ; Submitted by Science United
 ; 8,26,98,218,602,866,1538,1946,2906,4706,5402,7778,9602,10586,12698,16226,20186,21602,26138,29402,31106,36506,40346,46466,55298,60002,62426,67418,69986,75266,95258,101402,110978,114266,131426,135002,146018,157466
 
-mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,2
+  sub $3,$0
 lpe
-add $2,$3
 mov $0,$2
-sub $0,2
-mov $1,$0
-mul $1,$0
-mov $0,$1
+add $0,1
+max $0,2
+sub $0,1
+pow $0,2
 mul $0,6
 add $0,2

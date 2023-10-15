@@ -1,20 +1,14 @@
 ; A360222: a(n) is the number of permutable pieces in a standard n X n X n Rubik's cube.
-; Submitted by scole
+; Submitted by p3d-cluster
 ; 0,8,20,56,92,152,212,296,380,488,596,728,860,1016,1172,1352,1532,1736,1940,2168,2396,2648,2900,3176,3452,3752,4052,4376,4700,5048,5396,5768,6140,6536,6932,7352,7772,8216,8660,9128,9596,10088,10580,11096,11612,12152
+; Formula: a(n) = 4*((69*n^2-69*((n^2)/2)-22)/23)
 
 pow $0,2
-lpb $0
-  sub $0,1
-  sub $0,$3
-  add $2,2
-  sub $3,8
-  sub $1,$3
-  mov $3,$1
-  div $3,$1
-  mov $1,$2
-  mul $1,9
-  add $2,$3
-lpe
+mov $1,$0
+div $0,2
+sub $1,$0
+mul $1,69
 mov $0,$1
-div $0,9
+sub $0,22
+div $0,23
 mul $0,4

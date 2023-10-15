@@ -1,17 +1,16 @@
 ; A334155: a(n) is the number of length n decorated permutations avoiding the pattern 001.
-; Submitted by Science United
+; Submitted by waffleironhead
 ; 1,2,5,15,57,273,1593,10953,86553,771993,7666713,83871513,1001957913,12976997913,181106559513,2709277004313,43247182412313,733699248716313,13182759232076313,250070586344012313,4994229502288460313,104743211837530700313,2301653725221036620313
+; Formula: a(n) = b(n)+c(n)+1, b(n) = n*c(n-1)+b(n-1), b(2) = 2, b(1) = 0, b(0) = -1, c(n) = n*c(n-1), c(2) = 2, c(1) = 1, c(0) = 1
 
-mov $1,1
+mov $1,-1
+mov $3,1
 lpb $0
-  add $1,1
-  mul $1,$0
   sub $0,1
-  dif $0,24
+  add $2,1
+  mul $3,$2
+  add $1,$3
 lpe
 add $1,1
+add $1,$3
 mov $0,$1
-mul $0,480
-sub $0,960
-div $0,480
-add $0,1

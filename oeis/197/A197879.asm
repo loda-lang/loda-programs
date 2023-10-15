@@ -1,17 +1,19 @@
 ; A197879: Parity of floor(n*sqrt(8)).
-; Submitted by www.urfak.petrsu.ru
+; Submitted by p3d-cluster
 ; 0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,0
 
 add $0,1
-mul $0,4
-pow $0,2
 mov $1,$0
 mul $1,2
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
+pow $1,2
+mov $2,$1
+mul $2,2
+dif $1,$0
+lpb $1
+  mov $3,$2
+  div $3,$1
+  add $1,$3
+  div $1,2
 lpe
-div $0,2
+mov $0,$1
 mod $0,2

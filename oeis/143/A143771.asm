@@ -1,15 +1,23 @@
 ; A143771: a(n) = gcd(k + n/k), where k is over all divisors of n.
-; Submitted by [DPC] hansR
+; Submitted by Science United
 ; 2,3,4,1,6,1,8,3,2,1,12,1,14,3,8,1,18,1,20,3,2,1,24,1,2,3,4,1,30,1,32,3,2,1,12,1,38,3,8,1,42,1,44,3,2,1,48,1,2,3,4,1,54,1,8,3,2,1,60,1,62,3,8,1,6,1,68,3,2,1,72,1,74,3,4,1,6,1,80,3
 
 add $0,1
 mov $2,$0
-lpb $0
+lpb $2
+  add $2,1
+  add $4,1
+  min $0,$4
   mov $3,$2
   dif $3,$0
-  pow $3,2
-  add $3,$2
-  sub $0,1
+  sub $0,2
+  add $0,$3
+  add $0,$4
+  mul $3,$4
+  cmp $3,$2
+  mul $3,$0
   gcd $1,$3
+  sub $2,$4
+  sub $2,$4
 lpe
 mov $0,$1

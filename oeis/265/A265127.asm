@@ -1,26 +1,12 @@
 ; A265127: a(n) = prime(n) * 2^n.
-; Submitted by Jon Maiga
+; Submitted by Ralfy
 ; 4,12,40,112,352,832,2176,4864,11776,29696,63488,151552,335872,704512,1540096,3473408,7733248,15990784,35127296,74448896,153092096,331350016,696254464,1493172224,3254779904,6777995264,13824425984,28722593792,58518929408,121332826112
+; Formula: a(n) = A000040(n)*2^(n+1)
 
-mov $1,2
-pow $1,$0
-mul $1,2
-mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-sub $2,1
-mov $0,$2
-mul $0,$1
+mov $1,$0
+seq $1,40 ; The prime numbers.
+add $0,1
+mov $2,2
+pow $2,$0
+mul $1,$2
+mov $0,$1

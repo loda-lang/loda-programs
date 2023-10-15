@@ -1,5 +1,5 @@
 ; A119689: Numbers n such that the sum of the largest distinct prime divisor and the smallest distinct prime divisor is a prime.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by gemini8
 ; 6,10,12,18,20,22,24,30,34,36,40,44,48,50,54,58,60,66,68,72,80,82,88,90,96,100,102,108,110,116,118,120,132,136,142,144,150,154,160,162,164,170,174,176,180,192,198,200,202,204,214,216,220,232,236,238,240,242,246,250,264,270,272,274,284,288,290,298,300,306,308,320,324,328,330,340,348,352,354,358
 
 mov $1,1
@@ -13,7 +13,7 @@ lpb $2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   cmp $4,$0

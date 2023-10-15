@@ -1,18 +1,18 @@
 ; A288381: Fixed point of the mapping 00->0001, 1->11, starting with 00.
-; Submitted by Saenger
+; Submitted by p3d-cluster
 ; 0,0,0,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1
+; Formula: a(n) = (b(n+1)-1)%2, b(n) = b(n-1)/2+c(n-1), b(1) = 3, b(0) = 0, c(n) = gcd(b(n-1)/2,2)*c(n-1), c(1) = 6, c(0) = 3
 
-mov $1,1
+mov $2,3
+add $0,1
 lpb $0
-  div $2,2
-  add $2,1
-  sub $0,$2
-  mov $2,$1
-  mul $1,2
+  sub $0,1
+  div $1,2
+  mov $3,$1
+  gcd $3,2
+  add $1,$2
+  mul $2,$3
 lpe
-bin $2,$0
-add $2,$1
-add $1,1
-sub $2,$1
-mov $0,$2
+mov $0,$1
+sub $0,1
 mod $0,2

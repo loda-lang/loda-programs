@@ -7,9 +7,15 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$0
+mov $3,$0
+div $3,2
+mov $4,-2
+sub $4,$3
+bin $4,$3
 add $0,$1
 mov $1,$2
-seq $1,57977 ; GCD of consecutive central binomial coefficients: a(n) = gcd(A001405(n+1), A001405(n)).
+bin $1,$3
+gcd $1,$4
 mul $2,2
 bin $0,$2
 mul $0,$1

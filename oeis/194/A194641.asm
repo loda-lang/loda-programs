@@ -1,12 +1,10 @@
 ; A194641: Digital roots of the nonzero heptagonal numbers.
-; Submitted by Science United
+; Submitted by Daniele [lombardia]
 ; 1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4,9,1,7,9,7,1,9,4,4
-; Formula: a(n) = ((5*(2*n-904)^4)%9+9)%10
+; Formula: a(n) = (35*binomial(-2*n,2))%9+1
 
-mul $0,2
-sub $0,904
-pow $0,4
-mul $0,5
+mul $0,-2
+bin $0,2
+mul $0,35
 mod $0,9
-add $0,9
-mod $0,10
+add $0,1

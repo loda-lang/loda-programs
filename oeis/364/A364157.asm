@@ -1,5 +1,5 @@
 ; A364157: Numbers whose rounded-down (floor) mean of prime factors (with multiplicity) is 2.
-; Submitted by Science United
+; Submitted by p3d-cluster
 ; 2,4,6,8,12,16,18,24,32,36,40,48,54,64,72,80,96,108,120,128,144,160,162,192,216,224,240,256,288,320,324,360,384,432,448,480,486,512,576,640,648,672,720,768,800,864,896,960,972,1024,1080,1152,1280,1296,1344
 
 mov $2,$0
@@ -20,7 +20,7 @@ lpb $2
   mov $3,$5
   cmp $3,2
   sub $0,$3
-  add $1,1
+  add $1,2
   sub $2,$0
 lpe
 mov $0,$1

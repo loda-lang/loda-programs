@@ -354,6 +354,7 @@ A127971: a(n) = fusc(n+1) + (1-(-1)^n)/2, fusc = A002487.
 A128309: a(n) = 2*A000069(n).
 A128703: Numbers of the form 5^k*p, where 1 <= k <= 5 and p is a prime different from 5.
 A129252: Smallest prime factor p of n such that p^p is a divisor of n, a(n)=1 if no such factor exists.
+A129253: Number of numbers not greater than n having at least one divisor p^e with p<=e, p prime.
 A129760: Bitwise AND of binary representation of n-1 and n.
 A129761: First differences of Fibbinary numbers (A003714).
 A130063: Primes p such that p divides 3^((p+1)/2) - 2^((p+1)/2) - 1.
@@ -375,6 +376,7 @@ A135416: a(n) = A036987(n)*(n+1)/2.
 A135600: Angled numbers with an internal digit as the vertex.
 A136617: a(n) = largest k such that the sum of k consecutive reciprocals 1/n + ... + 1/(n+k-1) does not exceed 1.
 A137803: a(n) = floor(n*(sqrt(2) + 1/2)).
+A137979: Highest coefficient occurring in the factorization of x^n - 1 over the reals.
 A138026: Where A121561(n) = 3.
 A140099: A Beatty sequence: a(n) = [n*(1+t)], where t = tribonacci constant (A058265); complement of A140098.
 A140868: a(n) = floor(floor(n*alpha)*alpha) where alpha = 1+sqrt(2) = A014176.
@@ -559,6 +561,7 @@ A270248: Even Löschian numbers.
 A270672: Löschian numbers (A003136) that are multiples of 3.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).
 A272550: Lexicographically earliest increasing sequence of primes such that odd-indexed terms have final digit 1 and even-indexed terms have final digit 9.
+A273663: Least monotonic left inverse for A273670: a(1) = 0; for n > 1, a(n) = A257680(A225901(n)) + a(n-1).
 A274036: a(n) is the thickness of n (see Comments section for definition).
 A276084: a(n) = Number of trailing zeros in primorial base representation of n (A049345); largest k such that A002110(k) divides n.
 A276150: Sum of digits when n is written in primorial base (A049345); minimal number of primorials (A002110) that add to n.

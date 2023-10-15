@@ -5,7 +5,8 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,6094 ; Products of 2 successive primes.
+  seq $2,40 ; The prime numbers.
+  seq $2,13636 ; n*nextprime(n).
   mul $3,$2
   add $3,$1
   sub $0,1

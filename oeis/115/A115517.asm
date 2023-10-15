@@ -1,16 +1,18 @@
 ; A115517: The mode of the bits of n (using 1 if bimodal).
-; Submitted by fzs600
+; Submitted by waffleironhead
 ; 0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1
 
 mov $1,$0
 lpb $1
-  div $0,2
-  sub $1,$0
-  add $2,1
+  mov $3,$1
+  mod $3,2
+  div $1,2
+  add $2,$3
+  add $2,$3
+  sub $2,1
 lpe
-sub $2,$1
-sub $2,$1
-mov $0,$2
-add $0,162
-div $0,9
-mod $0,2
+mov $1,$2
+bin $1,9
+bin $1,$0
+cmp $1,0
+mov $0,$1

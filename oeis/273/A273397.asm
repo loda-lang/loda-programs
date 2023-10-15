@@ -1,7 +1,18 @@
 ; A273397: a(n) = Fibonacci(Catalan(n)).
-; Submitted by F14Claude
+; Submitted by Science United
 ; 1,1,1,5,377,267914296,1725375039079340637797070384,202401005213503038261932567177107618332887918916819829782797456368284639448671475316218754
-; Formula: a(n) = A000045(A211216(n))
 
-seq $0,211216 ; Expansion of (1-8*x+21*x^2-20*x^3+5*x^4)/(1-9*x+28*x^2-35*x^3+15*x^4-x^5).
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+mov $3,3
+div $0,$1
+lpb $0
+  sub $0,2
+  add $3,$2
+  add $2,$3
+lpe
+mul $0,$3
+add $0,$2
+div $0,3

@@ -1,19 +1,15 @@
 ; A279561: Number of length n inversion sequences avoiding the patterns 101, 102, 201, and 210.
-; Submitted by Aexoden
+; Submitted by p3d-cluster
 ; 1,1,2,6,21,77,287,1079,4082,15522,59280,227240,873886,3370030,13027730,50469890,195892565,761615285,2965576715,11563073315,45141073925,176423482325,690215089745,2702831489825,10593202603775,41550902139551,163099562175851
-; Formula: a(n) = c(n+1)/2+1, b(n) = b(n-1)+binomial(2*n-2,n-1), b(3) = 9, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = -b(n-1)+binomial(2*n-2,n-1), c(3) = 3, c(2) = 1, c(1) = 1, c(0) = 0
+; Formula: a(n) = b(max(n-1,0))+1, b(n) = b(n-1)+binomial(2*n,n-1), b(0) = 0
 
-add $0,1
+sub $0,1
 lpb $0
+  mov $2,$0
+  mul $2,2
   sub $0,1
-  mov $3,$4
-  bin $3,$1
-  mov $5,$3
-  sub $5,$2
-  add $1,1
-  add $2,$3
-  add $4,2
+  bin $2,$0
+  add $1,$2
 lpe
-mov $0,$5
-div $0,2
+mov $0,$1
 add $0,1

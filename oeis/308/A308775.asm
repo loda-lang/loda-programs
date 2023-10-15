@@ -1,8 +1,15 @@
 ; A308775: Sum of all the parts in the partitions of n into 4 parts.
-; Submitted by fzs600
+; Submitted by p3d-cluster
 ; 0,0,0,0,4,5,12,21,40,54,90,121,180,234,322,405,544,663,846,1026,1280,1512,1848,2162,2592,3000,3536,4050,4732,5365,6180,6975,7968,8910,10098,11235,12636,13986,15618,17199,19120,20951,23142,25284,27808,30240,33120
-; Formula: a(n) = n*A026810(n)
 
 mov $1,$0
-seq $0,26810 ; Number of partitions of n in which the greatest part is 4.
+lpb $0
+  mov $3,$0
+  div $3,2
+  pow $3,2
+  div $3,4
+  sub $0,3
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,$1
