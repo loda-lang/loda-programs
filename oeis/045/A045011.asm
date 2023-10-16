@@ -1,4 +1,4 @@
-; A045011: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 4 and 2, respectively.
+; A045011: Numbers whose base-3 representation contains exactly four 0's and two 2's.
 ; Submitted by ladmo
 ; 488,492,504,540,648,737,749,753,785,789,801,893,897,909,945,1217,1221,1233,1269,1377,1463,1465,1469,1473,1477,1479,1487,1491,1503,1513,1515,1521,1541,1545,1557,1593,1621,1623,1629
 
