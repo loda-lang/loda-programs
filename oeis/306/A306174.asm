@@ -1,28 +1,17 @@
 ; A306174: a(n) = (prime(n)^6 - 1)/504.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by fzs600
 ; 3515,9577,47892,93345,293722,1180205,1760920,5090727,9424810,12542387,21387332,43976907,83691535,102222965,179480917,254167230,300266322,482316380,648691217,986073990,1652722232,2106190775,2369151382,2977639587,3327579585,4130856652
 
-add $0,4
-mov $2,$0
-mul $2,2
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
+add $0,1
+lpb $0
+  mov $1,$0
+  add $1,3
+  mov $2,$1
+  seq $2,40 ; The prime numbers.
+  pow $2,6
+  mov $0,0
 lpe
-add $2,$3
-sub $2,1
-mov $1,$2
-pow $1,6
-mov $0,$1
-mul $0,6
-sub $0,10629360
-div $0,3024
+mov $0,$2
+sub $0,1771561
+div $0,504
 add $0,3515

@@ -6,16 +6,13 @@ mov $2,$0
 add $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  add $3,8
-  add $6,2
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,1
-  mov $5,$3
-  sub $5,2
+  mov $5,$1
+  add $5,6
+  add $6,1
   mul $6,$5
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $6,2
+  add $1,1
   mov $3,$6
   mul $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

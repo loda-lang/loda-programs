@@ -6,8 +6,11 @@ mov $3,3
 add $0,3
 lpb $0
   sub $0,$3
-  mov $4,$0
-  seq $4,56476 ; Number of primitive (aperiodic) palindromic structures of length n using a maximum of two different symbols.
+  mov $5,$0
+  trn $5,1
+  seq $5,56458 ; Number of primitive (aperiodic) palindromes using a maximum of two different symbols.
+  mov $4,$5
+  div $4,2
   mov $2,$0
   seq $2,40001 ; 1 followed by {1, 2} repeated.
   add $4,$2

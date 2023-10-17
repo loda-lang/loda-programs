@@ -1,5 +1,5 @@
 ; A108724: Numbers n such that 11*n + 17 is prime.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 0,4,6,10,12,16,24,30,40,42,46,60,66,70,72,76,82,84,94,100,112,124,130,142,144,150,156,160,174,180,186,192,202,214,216,220,222,226,234,240,250,252,256,282,286,292,294,304,312,322,324,334,342,346,352,354,364,376,382,384,396,406,412,420,426,436,450,454,460,462,472,474,480,490,516,520,532,550,552,556
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
   add $2,22
   sub $3,$0

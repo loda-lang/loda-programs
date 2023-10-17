@@ -1,18 +1,9 @@
 ; A057612: Numbers that are both Mersenne numbers (A001348) and lucky numbers (A000959).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 3,7,31,127,8191,131071,524287,8388607
+; Formula: a(n) = 2*A060547(A048701(n))-1
 
-lpb $0
-  mov $3,$0
-  div $0,2
-  add $3,$0
-  sub $2,$0
-  mul $2,2
-  add $2,$3
-lpe
-add $2,1
-mov $1,2
-pow $1,$2
-mov $0,$1
+seq $0,48701 ; List of binary palindromes of even length (written in base 10).
+seq $0,60547 ; a(n) = 2^(floor(n/3) + ((n mod 3) mod 2)).
 mul $0,2
 sub $0,1

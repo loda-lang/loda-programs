@@ -1,19 +1,18 @@
 ; A043437: Numbers having one 4 in base 8.
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 4,12,20,28,32,33,34,35,37,38,39,44,52,60,68,76,84,92,96,97,98,99,101,102,103,108,116,124,132,140,148,156,160,161,162,163,165,166,167,172,180,188,196,204,212,220,224,225,226,227,229,230
 
 mov $2,$0
-add $2,4
-pow $2,2
+mul $2,240
+add $2,133
 lpb $2
+  add $4,3
   mov $5,0
   mov $3,$1
   lpb $3
     mov $6,$3
-    add $6,4
     mod $6,8
-    cmp $6,2
-    add $3,14
+    cmp $6,$4
     div $3,8
     add $5,$6
   lpe
@@ -28,4 +27,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,2

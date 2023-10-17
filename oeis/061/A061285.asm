@@ -1,26 +1,21 @@
 ; A061285: a(n) = 2^((prime(n) - 1)/2).
-; Submitted by Jamie Morken(s1)
+; Submitted by Mumps
 ; 2,4,8,32,64,256,512,2048,16384,32768,262144,1048576,2097152,8388608,67108864,536870912,1073741824,8589934592,34359738368,68719476736,549755813888,2199023255552,17592186044416,281474976710656,1125899906842624,2251799813685248
 
-add $0,1
-mov $2,$0
-mul $2,2
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
+add $0,2
+mov $4,$0
+pow $4,5
 lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
+  mov $2,$3
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$2
   add $3,2
-  sub $4,$2
+  sub $4,$0
 lpe
-add $2,$3
-sub $2,1
-mov $0,$2
+mov $0,$3
+sub $0,2
 div $0,2
 mov $1,2
 pow $1,$0
 mov $0,$1
+mul $0,2

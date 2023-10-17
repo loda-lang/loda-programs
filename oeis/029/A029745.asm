@@ -6,6 +6,6 @@
 mov $1,$0
 trn $1,1
 gcd $1,4
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,94958 ; Numbers of the form 2^k or 5*2^k.
 mul $0,$1
