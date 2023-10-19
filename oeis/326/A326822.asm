@@ -1,16 +1,18 @@
 ; A326822: T(n, k) = k^0 if k = 1 else 0^n. Triangle read by rows, T(n, k) for 0 <= k <= n.
-; Submitted by Dave Studdert
+; Submitted by mikey
 ; 1,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+; Formula: a(n) = (b(n)+1)%2, b(n) = b(n-1)/2+c(n-1)+1, b(1) = 3, b(0) = 0, c(n) = gcd(b(n-1)/2+1,2)*c(n-1), c(1) = 2, c(0) = 2
 
+mov $2,2
 lpb $0
+  sub $0,1
+  div $1,2
   add $1,1
-  sub $0,$1
+  mov $3,$1
+  gcd $3,2
+  add $1,$2
+  mul $2,$3
 lpe
-sub $0,1
-mov $2,4
-pow $2,$0
-mov $0,4
-pow $0,$1
-add $2,$0
-mov $0,$2
+mov $0,$1
+add $0,1
 mod $0,2

@@ -1,5 +1,5 @@
 ; A028774: Nonsquares mod 61.
-; Submitted by Solidair79
+; Submitted by Mads Nissen
 ; 2,6,7,8,10,11,17,18,21,23,24,26,28,29,30,31,32,33,35,37,38,40,43,44,50,51,53,54,55,59
 
 mov $2,$0
@@ -9,8 +9,9 @@ pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,11595 ; Legendre symbol (n,61).
+  pow $3,90
   add $3,1
+  mod $3,61
   cmp $3,0
   sub $0,$3
   add $1,1

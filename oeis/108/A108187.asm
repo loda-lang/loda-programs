@@ -1,5 +1,5 @@
 ; A108187: Numbers n such that 11*n - 5 is prime.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 2,6,8,12,14,18,26,32,42,44,48,62,68,72,74,78,84,86,96,102,114,126,132,144,146,152,158,162,176,182,188,194,204,216,218,222,224,228,236,242,252,254,258,284,288,294,296,306,314,324,326,336,344,348,354,356,366,378,384,386,398,408,414,422,428,438,452,456,462,464,474,476,482,492,518,522,534,552,554,558
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
   add $2,22
   sub $3,$0

@@ -6,33 +6,17 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  sub $2,1
   mov $3,$1
   seq $3,62289 ; Numbers n such that n-th row in Pascal triangle contains an even number, i.e., A048967(n) > 0.
   mov $5,$3
-  mov $7,2
-  mov $9,0
-  lpb $3
-    mov $8,$3
-    lpb $8
-      mov $6,$3
-      mod $6,$7
-      mul $6,3
-      add $7,1
-      sub $8,$6
-    lpe
-    dif $3,$7
-    max $3,$7
-    add $9,1
-  lpe
-  mov $3,$9
-  add $3,1
-  cmp $3,1
+  sub $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
   mul $2,$4
+  trn $2,1
 lpe
 mov $0,$5

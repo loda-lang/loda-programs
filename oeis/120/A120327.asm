@@ -7,7 +7,7 @@ mov $2,16
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,112622 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = product_{p|n} b(p,n)^b(p,n).
+  seq $3,46951 ; a(n) is the number of squares dividing n.
   sub $3,1
   add $1,1
   add $2,$3

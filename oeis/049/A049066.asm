@@ -5,7 +5,6 @@
 seq $0,307342 ; Products of four primes, except fourth powers of primes.
 mov $1,$0
 add $1,$0
-mul $0,4
 lpb $0
   add $1,1
   div $2,$0

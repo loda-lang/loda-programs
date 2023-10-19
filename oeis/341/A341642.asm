@@ -1,12 +1,14 @@
 ; A341642: Number of strictly superior prime divisors of n.
-; Submitted by Dark Angel
+; Submitted by Kotenok2000
 ; 0,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,0,1,0,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,0,1,0,1,1,0,1,1,1,1,0
 
 lpb $0
-  seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
-  pow $0,2
-  sub $0,1
-  add $1,2
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $1,$2
+  div $0,$2
+  add $0,1
+  div $0,$1
+  max $3,1
 lpe
-mov $0,$1
-div $0,2
+mov $0,$3

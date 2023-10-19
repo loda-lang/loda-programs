@@ -1,29 +1,31 @@
 ; A190767: Positions of 0 in A190766.
-; Submitted by [AF>Libristes] ElGuillermo
+; Submitted by Kotenok2000
 ; 3,6,10,13,16,17,20,23,27,30,34,37,40,44,47,51,54,57,58,61,64,68,71,74,75,78,81,85,88,92,95,98,99,102,105,109,112,115,116,119,122,126,129,133,136,139,143,146,150,153,156,157,160,163,167,170,173,174,177,180,184,187,191,194,197,198,201,204,208,211,214,215,218,221
 
+mov $1,3
 mov $2,$0
-add $2,10
+add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
-  mul $5,3
-  add $5,2
-  seq $5,286927 ; Positions of 1 in A286925; complement of A286926.
-  div $5,4
-  sub $5,1
-  mov $3,$1
-  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
-  div $3,4
-  mov $6,1
-  sub $6,$3
-  sub $6,$3
-  sub $6,$3
-  add $6,$5
-  mov $3,$6
-  cmp $3,0
+  mul $5,2
+  pow $5,2
+  mov $6,$5
+  dif $6,2
+  dif $5,$1
+  lpb $5
+    mov $7,$6
+    div $7,$5
+    add $5,$7
+    div $5,2
+  lpe
+  div $5,2
+  mov $3,$5
+  add $3,1
+  mod $3,3
+  mod $3,2
   sub $0,$3
-  add $1,1
+  add $1,3
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -31,4 +33,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+div $0,3

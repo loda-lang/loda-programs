@@ -31,6 +31,4 @@ lpb $0
   add $2,1
 lpe
 mov $0,$3
-sub $0,256
 div $0,16
-add $0,16

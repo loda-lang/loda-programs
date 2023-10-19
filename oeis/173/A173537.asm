@@ -1,15 +1,17 @@
 ; A173537: a(n) = A173522(n)/2.
+; Submitted by Conan
 ; 2,4,7,10,13,17,23,28,31,35,41,47,53,61,73,82,85,89,95,101,107,115,127,137,143,151,163,175,187,203,227,244,247,251,257,263,269,277,289,299,305,313,325,337,349,365,389,407,413,421,433,445,457,473,497,517,529,545,569,593,617,649,697,730,733,737,743,749,755,763,775,785,791,799,811,823,835
-; Formula: a(n) = b(2*n+3)/2, b(n) = b(n-1)+A001316((n-1)/2), b(0) = 0
 
-mul $0,2
-add $0,3
+mov $1,2
+add $0,4
 lpb $0
-  sub $0,1
+  sub $0,$1
+  add $1,$3
+  dif $1,2
   mov $2,$0
-  div $2,2
-  seq $2,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
-  add $1,$2
+  max $2,0
+  seq $2,6046 ; Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1). For n>0, a(n) = Sum_{i=0..n-1} 2^wt(i).
+  add $3,$2
 lpe
-mov $0,$1
+mov $0,$3
 div $0,2

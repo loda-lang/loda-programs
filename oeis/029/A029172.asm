@@ -17,9 +17,7 @@ lpb $0
     div $1,4
     mul $1,2
     add $1,$5
-    add $1,2
     div $1,2
-    sub $1,1
     trn $2,7
     add $4,$1
   lpe

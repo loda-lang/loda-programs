@@ -1,5 +1,5 @@
 ; A325437: Final digit of primes of the form k^2 + 1.
-; Submitted by Olaf
+; Submitted by Dylan Delgado
 ; 2,5,7,7,1,7,7,1,7,7,7,1,7,7,7,7,7,1,7,1,7,1,7,7,1,7,7,1,7,1,1,7,1,7,7,7,1,7,1,7,1,1,7,1,7,1,1,7,1,7,7,7,1,1,7,7,7,1,7,1,1,7,1,7,7,7,1,7,1,7,7,7,7,1,7,7,7,7,7,7
 
 mov $1,2
@@ -8,7 +8,7 @@ pow $2,4
 lpb $2
   max $3,$1
   pow $3,2
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$3
   add $1,2
   sub $2,$0
