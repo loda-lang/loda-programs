@@ -16,9 +16,7 @@ lpb $0
     gcd $5,$1
     div $1,9
     add $1,$5
-    add $1,2
     div $1,2
-    sub $1,1
     trn $2,6
     add $4,$1
   lpe

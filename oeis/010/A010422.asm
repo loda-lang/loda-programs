@@ -1,5 +1,5 @@
 ; A010422: Squares mod 61.
-; Submitted by JagDoc
+; Submitted by kundor
 ; 0,1,3,4,5,9,12,13,14,15,16,19,20,22,25,27,34,36,39,41,42,45,46,47,48,49,52,56,57,58,60
 
 mov $2,$0
@@ -10,9 +10,10 @@ lpb $2
   mov $3,$1
   mul $3,2
   seq $3,11595 ; Legendre symbol (n,61).
-  sub $3,$4
   add $3,1
+  sub $3,$4
   cmp $3,0
+  mul $4,2
   sub $0,$3
   add $1,2
   sub $2,$0

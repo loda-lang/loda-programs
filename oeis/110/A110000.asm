@@ -1,20 +1,11 @@
 ; A110000: Minimal number of polygonal pieces in a dissection of a regular n-gon to an equilateral triangle (conjectured).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by crashtech
 ; 1,4,6,5,8,7,8,7
 
-mov $2,1
-sub $0,1
-mul $0,3
-lpb $0
-  mov $3,$0
-  add $3,$2
-  mod $3,2
-  mul $3,$2
-  sub $0,1
-  div $0,2
-  add $1,$3
-  mul $2,2
+mov $1,$0
+seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+lpb $1
+  div $1,2
+  add $0,2
 lpe
-add $0,$1
-add $0,4
-mod $0,10
+add $0,1

@@ -260,6 +260,7 @@ A079131: Primes such that iterated sum-of-digits (A038194) is odd.
 A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
 A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
+A079947: Partial sums of A030300.
 A080081: Beatty sequence for (3+sqrt(13))/2.
 A080463: Sum of the two numbers formed by alternate digits of n.
 A080754: a(n) = ceiling(n*(1+sqrt(2))).

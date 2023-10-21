@@ -1,22 +1,11 @@
 ; A084309: a(n) = gcd(prime(n)-1, n).
+; Submitted by Ralfy
 ; 1,2,1,2,5,6,1,2,1,2,1,12,1,14,1,4,1,6,1,10,3,2,1,8,1,2,3,2,1,2,1,2,1,2,1,6,1,2,1,4,1,6,1,4,1,2,1,6,1,2,1,2,1,2,1,2,1,2,1,20,1,2,9,2,13,2,1,4,1,2,1,2,1,2,3,2,1,6,1,8
+; Formula: a(n) = gcd(A138403(n),n+1)
 
 mov $2,$0
-mul $2,2
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-mov $1,$2
-sub $1,2
-add $0,1
-gcd $0,$1
+add $2,1
+seq $0,138403 ; a(n) = p^3*(p-1), where p = prime(n).
+mov $1,$0
+gcd $1,$2
+mov $0,$1

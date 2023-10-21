@@ -1,21 +1,19 @@
 ; A123740: Characteristic sequence for Wythoff AB-numbers A003623.
-; Submitted by waffleironhead
+; Submitted by Mumps
 ; 0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0
-; Formula: a(n) = ((b(n+1)-1)%2+2)%2, b(n) = (-c(n-1)+b(n-1))/((-c(n-1)+b(n-1)+d(n-1))%2+2), b(2) = -5, b(1) = -1, b(0) = 0, c(n) = 2*c(n-1), c(2) = 8, c(1) = 4, c(0) = 2, d(n) = (-c(n-1)+b(n-1)+d(n-1))%2+2, d(2) = 1, d(1) = 2, d(0) = 0
 
 mov $2,2
 add $0,1
 lpb $0
   sub $0,1
   sub $1,$2
-  add $3,$1
-  mod $3,2
-  add $3,2
-  div $1,$3
+  add $1,1
+  div $1,2
+  dif $1,2
   mul $2,2
 lpe
+div $1,2
 mov $0,$1
-sub $0,1
 mod $0,2
 add $0,2
 mod $0,2

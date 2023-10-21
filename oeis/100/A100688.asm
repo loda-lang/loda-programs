@@ -2,16 +2,22 @@
 ; Submitted by Science United
 ; 17,80,1214,15308,1948616,20726198,2195382770,22082967872,2165293113020,1990280943581606,19147875284802356,16660504517966902430,1495392851464002242522,14115049597965094337960,1249674274871002654525988,1027312020387041054530226318
 
-seq $0,40 ; The prime numbers.
-mov $2,$0
-lpb $0
-  add $1,1
-  lpb $1
-    div $1,8
-    sub $0,1
-  lpe
-  trn $1,2
-  mul $2,3
+add $0,1
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $5,$4
+  seq $5,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$5
+  sub $3,$0
+  add $4,2
 lpe
-mov $0,$2
+mov $0,$4
+add $0,1
+max $0,2
+add $2,$0
+mov $1,3
+pow $1,$0
+mul $1,$2
+mov $0,$1
 sub $0,1

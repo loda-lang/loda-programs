@@ -1,24 +1,22 @@
 ; A010466: Decimal expansion of square root of 8.
-; Submitted by waffleironhead
+; Submitted by jp557
 ; 2,8,2,8,4,2,7,1,2,4,7,4,6,1,9,0,0,9,7,6,0,3,3,7,7,4,4,8,4,1,9,3,9,6,1,5,7,1,3,9,3,4,3,7,5,0,7,5,3,8,9,6,1,4,6,3,5,3,3,5,9,4,7,5,9,8,1,4,6,4,9,5,6,9,2,4,2,1,4,0
+; Formula: a(n) = ((2*b(4*n+2))/(c(4*n+2)/(10^n)))%10, b(n) = 2*b(n-1)+2*c(n-1), b(1) = 14, b(0) = 0, c(n) = 2*c(n-1)+b(n-1), c(1) = 14, c(0) = 7
 
+mov $2,7
 mov $3,$0
-add $3,1
-mul $3,5
+mul $3,4
+add $3,2
 lpb $3
   sub $3,1
-  add $2,$6
-  sub $2,2
-  mov $1,$2
-  mul $2,2
-  add $5,$2
-  add $6,$1
+  add $1,$2
+  add $2,$1
+  mul $1,2
 lpe
 mov $4,10
 pow $4,$0
-mul $5,2
 div $2,$4
-mov $1,$5
+mul $1,2
 div $1,$2
 mov $0,$1
 mod $0,10

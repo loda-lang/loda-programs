@@ -1,27 +1,23 @@
 ; A018324: Divisors of 186.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,3,6,31,62,93,186
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  mov $6,$1
-  seq $6,18727 ; Divisors of 930.
-  mov $3,$6
-  sub $3,1
-  mov $5,$3
-  seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
-  cmp $3,0
-  sub $0,$3
+mov $1,1
+mov $2,1
+mov $4,-1
+lpb $0
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  trn $2,1
+  mov $3,$0
+  sub $3,1
+  mod $3,2
+  mul $3,$1
+  add $4,1
+  div $0,2
+  mul $2,$1
+  dif $2,$3
+  add $1,$4
+  bin $1,2
+  mul $1,2
+  add $4,2
 lpe
-mov $0,$5
-sub $0,4
-div $0,5
-add $0,1
+mov $0,$2

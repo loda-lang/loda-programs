@@ -1,25 +1,20 @@
 ; A002731: Numbers n such that (n^2 + 1)/2 is prime.
-; Submitted by vaughan
+; Submitted by jp557
 ; 3,5,9,11,15,19,25,29,35,39,45,49,51,59,61,65,69,71,79,85,95,101,121,131,139,141,145,159,165,169,171,175,181,195,199,201,205,209,219,221,231,245,261,271,275,279,289,299,309,315,321,325,329,335,345,349,371,375,379,391,399,405,409,415,425,435,441,445,449,451,459,461,471,519,521,529,535,545,559,569
 
+add $0,1
+mov $3,1
 mov $2,$0
-pow $2,2
+pow $2,5
 lpb $2
-  mov $6,$1
-  add $6,3
-  mov $3,$1
-  mul $3,$6
-  seq $3,76567 ; Greatest prime divisor of 4n+6 (sum of four successive integers).
-  max $5,$3
-  add $1,1
-  div $3,$5
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  add $3,2
+  mov $1,$3
+  pow $1,2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  sub $2,$0
 lpe
-mov $0,$1
+mov $0,$3
+div $0,2
 mul $0,2
 add $0,3

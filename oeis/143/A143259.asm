@@ -1,10 +1,30 @@
 ; A143259: a(n) = 1 if n is a nonzero square, -1 if n is twice a nonzero square, 0 otherwise.
-; Submitted by Jon Maiga
-; 1,-1,0,1,0,0,0,-1,1,0,0,0,0,0,0,1,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,1
+; Submitted by Kotenok2000
+; 1,-1,0,1,0,0,0,-1,1,0,0,0,0,0,0,1,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0
 
-seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-sub $0,1
-seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+add $0,1
+mov $3,1
+mov $5,1
+mov $6,1
+mov $4,$0
+lpb $4
+  add $5,2
+  add $6,$5
+  mov $7,$0
+  mod $7,$6
+  cmp $7,0
+  mov $8,$6
+  sub $8,$3
+  mul $8,$7
+  add $3,$8
+  mov $7,$0
+  add $7,1
+  trn $7,$6
+  cmp $7,0
+  cmp $7,0
+  sub $4,$7
+lpe
+div $0,$3
 mov $2,$0
 cmp $2,2
 mov $1,$0

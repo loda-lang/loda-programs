@@ -1,22 +1,10 @@
 ; A064799: Sum of n-th prime number and n-th composite number.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 6,9,13,16,21,25,31,34,39,47,51,58,63,67,72,79,86,89,97,103,106,113,118,125,135,140,143,149,153,158,173,179,186,189,200,203,211,218,223,230,237,241,253,256,261,264,277,291,296,299,305,313,316,327,334,341,349,352,359,365,368,379,394,399,403,408,423,430,441,444,449,457,466,473,481,487,494,503,509,519
-; Formula: a(n) = -n+A040976(n)+A122825(-((-2*n-2)/(n+1))+n+1)+n+1
+; Formula: a(n) = A000040(n)+A018252(n+1)
 
 mov $1,$0
-mov $2,$0
-add $2,1
-mov $3,$0
-add $3,2
-mov $4,$2
-mul $4,-2
-div $4,$2
-sub $2,$4
-seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-sub $2,1
-sub $2,$3
-seq $0,40976 ; a(n) = prime(n) - 2.
-add $0,$2
-add $0,3
+add $1,1
+seq $1,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+seq $0,40 ; The prime numbers.
 add $0,$1
-add $0,1

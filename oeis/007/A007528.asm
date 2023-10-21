@@ -1,10 +1,19 @@
 ; A007528: Primes of the form 6k-1.
-; Submitted by John Napoli
+; Submitted by Dylan Delgado
 ; 5,11,17,23,29,41,47,53,59,71,83,89,101,107,113,131,137,149,167,173,179,191,197,227,233,239,251,257,263,269,281,293,311,317,347,353,359,383,389,401,419,431,443,449,461,467,479,491,503,509,521,557,563,569,587,593,599,617,641,647,653,659,677,683,701,719,743,761,773,797,809,821,827,839,857,863,881,887,911,929
-; Formula: a(n) = 3*(A003627(n+1)/3)+2
 
-add $0,1
-seq $0,3627 ; Primes of the form 3n-1.
-div $0,3
-mul $0,3
+mov $3,2
 add $0,2
+mov $2,$0
+pow $2,5
+lpb $2
+  add $2,1
+  add $3,2
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  sub $2,$0
+  add $3,4
+lpe
+mov $0,$3
+add $0,3
