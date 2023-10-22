@@ -12,8 +12,16 @@ lpb $1
   add $3,1
   lpb $3
     sub $3,1
+    add $6,1
     mov $2,$0
-    seq $2,49084 ; a(n) = pi(n) if n is prime, otherwise 0.
+    seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+    mov $5,$2
+    gcd $5,$6
+    mov $2,$6
+    div $2,$5
+    sub $2,1
+    seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+    seq $2,261306 ; a(n+1) = abs((n) - gcd(a(n), 6*n+5)), a(1) = 1.
     mul $2,2
     max $2,1
     sub $2,1

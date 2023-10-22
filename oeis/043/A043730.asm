@@ -1,4 +1,4 @@
-; A043730: Numbers n such that number of runs in the base 2 representation of n is congruent to 2 mod 5.
+; A043730: Numbers whose number of runs in the base-2 representation is congruent to 2 mod 5.
 ; Submitted by Kotenok2000
 ; 2,4,6,8,12,14,16,24,28,30,32,48,56,60,62,64,85,96,112,120,124,126,128,149,165,169,171,173,181,192,213,224,240,248,252,254,256,277,293,297,299,301,309,325,329,331,333,337,339,343,345
 

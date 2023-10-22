@@ -1,17 +1,18 @@
 ; A216361: a(n) = (A216315(n) - 1)/118.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 6,7,9,10,16,19,24,27,30,31,34,39,40,42,49,54,55,66,67,76,79,82,87,91,94,96,97,100,102,105,111,112,117,124,126,144,165,172,174,177,184,187,189,195,201,210,214,226,231,237,241,244,247,249,250,255,264,265,276,277,286,292,294,300,306,315,319,321,322,325,342,346,349,364,366,369,370,381,382,387
 
+add $0,2
 mov $3,$0
-add $0,1
-add $3,2
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
   add $2,118
   sub $3,$0
 lpe
-mov $0,$2
+add $0,$2
+sub $0,709
 div $0,118
+add $0,6

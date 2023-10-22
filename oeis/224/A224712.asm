@@ -11,7 +11,7 @@ lpb $3
   sub $0,$3
   mov $2,$0
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  seq $2,339825 ; Odd bisection of the infinite Fibonacci word A003849.
+  seq $2,319117 ; Sign of the n-th Maclaurin coefficient of 1/(exp(x) + exp(1)/2).
   mul $2,$1
   sub $2,1
   trn $2,1

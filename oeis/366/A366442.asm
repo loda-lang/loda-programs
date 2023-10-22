@@ -1,24 +1,20 @@
 ; A366442: The sum of divisors of the 5-rough numbers (A007310).
-; Submitted by Dylan Delgado
+; Submitted by Science United
 ; 1,6,8,12,14,18,20,24,31,30,32,48,38,42,44,48,57,54,72,60,62,84,68,72,74,96,80,84,108,90,112,120,98,102,104,108,110,114,144,144,133,156,128,132,160,138,140,168,180,150,152,192,158,192,164,168,183,174,248,180,182,228,216,192,194,198,200,240,252,240,212,264,256,252,224,228,230,234,288,240
 
-mov $3,3
-mul $0,6
-add $0,7
-lpb $0
-  sub $0,$3
-  mov $1,-1
-  pow $1,$0
-  add $1,1
-  mov $4,$0
-  dif $4,2
-  mov $2,-1
-  pow $2,$4
-  seq $4,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
-  mul $4,$1
-  div $4,2
-  mov $3,2
-  mul $3,$2
+mul $0,3
+add $0,1
+div $0,2
+mul $0,4
+add $0,2
+seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+add $0,1
+mov $1,2
+lpb $1
+  sub $1,1
+  mul $0,25
+  add $0,3
 lpe
-mov $0,$4
-div $0,8
+sub $0,1953
+div $0,1875
+add $0,1

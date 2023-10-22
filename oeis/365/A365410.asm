@@ -1,14 +1,7 @@
 ; A365410: Parity of A000070.
-; Submitted by scole
+; Submitted by Science United
 ; 1,0,0,1,0,1,0,1,1,1,1,1,0,1,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,0,1,0,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,0,0,0,1,0,0,1,1,1,1,0,1,0,0,1,0,1,1,1,0,1,1,1
-; Formula: a(n) = b(n)%2, b(n) = b(n-1)+A000041(n), b(0) = 1
+; Formula: a(n) = A101417(n)%2
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+seq $0,101417 ; Number of partitions of n into parts without powers of 2.
 mod $0,2

@@ -17,7 +17,7 @@ lpb $0
   mov $3,$2
   gcd $3,$0
   sub $3,1
-  seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
+  seq $3,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
   seq $3,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   lpb $0
     dif $0,$2

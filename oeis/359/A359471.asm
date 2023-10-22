@@ -1,10 +1,10 @@
 ; A359471: a(n) = 1 if the product of exponents in the prime factorization of n is less than 3, otherwise 0.
-; Submitted by pututu
+; Submitted by Science United
 ; 1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0
+; Formula: a(n) = binomial(1,binomial(A005361(n),2))
 
-seq $0,112624 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = Product_{p|n} b(p,n)!.
-add $1,$0
-mov $2,2
-max $2,$1
-cmp $2,2
-mov $0,$2
+seq $0,5361 ; Product of exponents of prime factorization of n.
+bin $0,2
+mov $1,1
+bin $1,$0
+mov $0,$1

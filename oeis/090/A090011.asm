@@ -9,6 +9,4 @@ lpe
 bin $1,$0
 seq $1,299474 ; a(n) = 4*p(n), where p(n) is the number of partitions of n.
 mov $0,$1
-sub $0,4
 div $0,4
-add $0,1

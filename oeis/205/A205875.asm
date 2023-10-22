@@ -1,10 +1,10 @@
 ; A205875: [s(k)-s(j)]/9, where the pairs (k,j) are given by A205872 and A205873, and s(k) denotes the (k+1)-st Fibonacci number.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Science United
 ; 2,6,9,25,16,41,32,16,64,176,287,281,464,642,1216,1967,1958,1942,1926,3184,3178,2897,5136,8336,8330,8049,5152,13488,13482,13201,10304,5152,21824,20608,35312,35310,57136,56672,92448,92439,92423,92407
 
 mov $2,21780
 lpb $2
-  sub $2,33
+  sub $2,39
   mov $3,$1
   seq $3,204922 ; Ordered differences of Fibonacci numbers.
   mov $6,$3

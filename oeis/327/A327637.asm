@@ -9,7 +9,8 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,73424 ; Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  cmp $0,0
   add $3,$0
 lpe
 add $3,1

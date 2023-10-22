@@ -1,26 +1,8 @@
 ; A290478: Triangle read by rows in which row n lists the sum of the divisors of each divisor of n.
-; Submitted by nenym
-; 1,1,3,1,4,1,3,7,1,6,1,3,4,12,1,8,1,3,7,15,1,4,13,1,3,6,18,1,12,1,3,4,7,12,28,1,14,1,3,8,24,1,4,6,24,1,3,7,15,31,1,18,1,3,4,12,13,39,1,20,1,3,7,6,18,42,1,4,8,32,1,3,12,36,1,24,1,3,4,7,12,15,28,60,1,6,31,1,3,14,42,1,4,13,40,1,3,7,8,24
+; Submitted by Science United
+; 1,1,3,1,4,1,3,7,1,6,1,3,4,12,1,8,1,3,7,15,1,4,13,1,3,6,18,1,12,1,3,4,7,12,28,1,14,1,3,8,24,1,4,6,24,1,3,7,15,31,1,18,1,3,4,12,13,39,1,20,1,3,7,6,18,42,1,4,8,32,1,3,12,36,1,24,1,3,4,7
+; Formula: a(n) = A000203(A027750(n)-1)
 
-mov $2,$0
-add $2,14
-pow $2,2
-lpb $2
-  sub $2,7
-  mov $6,$1
-  seq $6,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
-  mov $3,$1
-  pow $3,$6
-  seq $3,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
-  mul $3,$6
-  mov $5,$3
-  cmp $3,0
-  cmp $3,0
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  add $1,1
-  mul $2,$4
-lpe
-mov $0,$5
+seq $0,27750 ; Triangle read by rows in which row n lists the divisors of n.
+sub $0,1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
