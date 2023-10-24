@@ -182,6 +182,7 @@ A046337: Odd numbers with an even number of prime factors (counted with multipli
 A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 A046933: Number of composites between successive primes.
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
+A048671: a(n) is the least common multiple of the proper divisors of n.
 A048865: a(n) is the number of primes in the reduced residue system mod n.
 A048896: a(n) = 2^(A000120(n+1) - 1), n >= 0.
 A049240: Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).

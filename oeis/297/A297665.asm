@@ -8,7 +8,3 @@ lpb $0
   mul $0,3
 lpe
 seq $0,297661 ; a(n) = n + 2*cos((n*Pi)/3) + Lucas(n).
-mul $0,2
-sub $0,6
-div $0,2
-add $0,3

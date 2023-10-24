@@ -1,4 +1,4 @@
-; A043723: Numbers n such that number of runs in the base 2 representation of n is congruent to 2 mod 3.
+; A043723: Numbers whose number of runs in the base-2 representation is congruent to 2 mod 3.
 ; Submitted by Fardringle
 ; 2,4,6,8,12,14,16,21,24,28,30,32,37,41,43,45,48,53,56,60,62,64,69,73,75,77,81,83,87,89,91,93,96,101,105,107,109,112,117,120,124,126,128,133,137,139,141,145,147,151,153,155,157,161,163
 

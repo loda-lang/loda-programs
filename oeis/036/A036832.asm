@@ -1,22 +1,23 @@
 ; A036832: Schoenheim bound L_1(n,5,4).
-; Submitted by Science United
+; Submitted by Kotenok2000
 ; 1,5,9,18,26,50,66,113,149,219,273,397,476,659,787,1028,1197,1549,1771,2237,2550,3120,3510,4273,4751,5700,6324,7444,8184,9595,10472,12161,13254,15185,16451,18800,20254,22991,24743,27817,29799,33433,35673,39821,42454
 
 mov $2,1
 mov $11,$0
-mov $0,3
+mov $0,2
 mul $0,2
+add $0,1
 lpb $0
   sub $0,1
   add $11,1
   mov $4,$2
   lpb $4
     trn $4,1
+    mov $6,$5
     mov $9,10
     add $9,$5
     add $9,1
     mov $12,1
-    mov $6,$5
     mov $7,$4
     seq $7,147754 ; Terms of this sequence are equal to gcd between two polynomials P1(n)=(512*n^4+1024*n^3+712*n^2+194*n+15) and P2(n)=(120*n^2+151*n+47) which are used in the BBP formula
     mul $7,$11
@@ -33,4 +34,4 @@ lpb $0
   add $2,1
   mod $5,-1
 lpe
-mov $0,$16
+mov $0,$3

@@ -1,23 +1,21 @@
 ; A064615: Numbers of the form m * 6^k for k >= 0 and m > 0 with gcd(m, 6) = 1.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 1,5,6,7,11,13,17,19,23,25,29,30,31,35,36,37,41,42,43,47,49,53,55,59,61,65,66,67,71,73,77,78,79,83,85,89,91,95,97,101,102,103,107,109,113,114,115,119,121,125,127,131,133,137,138,139,143,145,149,150,151,155,157,161,163,167,169,173,174,175,179,180,181,185,186,187,191,193,197,199
 
+add $0,2
 mov $2,$0
-add $2,3
-pow $2,2
+sub $0,1
+pow $2,4
 lpb $2
   mov $3,$1
+  add $3,2
+  mul $3,$1
   seq $3,277544 ; a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
   sub $3,1
-  gcd $3,4
-  cmp $3,4
+  cmp $3,0
   sub $0,$3
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
 lpe
 mov $0,$1
 add $0,1
