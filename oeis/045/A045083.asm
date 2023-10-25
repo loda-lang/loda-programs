@@ -1,4 +1,4 @@
-; A045083: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 4 and 2, respectively.
+; A045083: Numbers whose base-4 representation contains exactly four 0's and two 3's.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 3075,3084,3120,3264,3840,4111,4147,4156,4291,4300,4336,4867,4876,4912,5056,7171,7180,7216,7360,7936,8207,8243,8252,8387,8396,8432,8963,8972,9008,9152,11267,11276,11312,11456,12032
 
