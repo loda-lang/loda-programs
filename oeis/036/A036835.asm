@@ -1,34 +1,34 @@
 ; A036835: Schoenheim bound L_1(n,8,7).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,8,20,54,105,257,431,919,1492,2663,3978,6871,9690,15653,21648,32511,43263,63622,82225,116846,149177,203580,254475,342988,420804,555345,675767,870022,1043460,1331311,1577532,1984637,2338385,2890593
 
 mov $2,1
 mov $11,$0
 mov $0,4
-pow $0,2
+mul $0,2
 lpb $0
   sub $0,1
   add $11,1
   mov $4,$2
   lpb $4
-    trn $4,1
+    sub $4,1
+    mov $6,$5
     mov $9,10
     add $9,$5
     add $9,1
     mov $12,1
-    mov $6,$5
     mov $7,$4
-    seq $7,329835 ; Beatty sequence for (9+sqrt(101))/10.
+    add $7,2
+    gcd $7,225
     mul $7,$11
     mul $7,$$9
     add $5,1
-    add $6,$7
   lpe
+  add $6,$7
   div $6,$2
   mov $9,10
   add $9,$12
   add $9,$2
-  sub $0,1
   mov $3,$6
   mov $$9,$3
   add $2,1

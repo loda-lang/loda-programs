@@ -1,23 +1,23 @@
 ; A043451: Numbers having three 7's in base 8.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 511,1023,1535,2047,2559,3071,3583,3647,3711,3775,3839,3903,3967,4031,4039,4047,4055,4063,4071,4079,4087,4088,4089,4090,4091,4092,4093,4094,4607,5119,5631,6143,6655,7167,7679,7743,7807
 
 mov $2,$0
-add $2,8
+add $2,4
+mul $2,2
 pow $2,4
 lpb $2
-  mov $5,0
+  mov $5,-3
   mov $3,$1
   lpb $3
     mov $6,$3
-    add $6,3
     mod $6,8
-    cmp $6,2
+    cmp $6,7
     div $3,8
     add $5,$6
   lpe
-  sub $5,2
   mov $3,$5
+  add $3,1
   cmp $3,1
   sub $0,$3
   add $1,1

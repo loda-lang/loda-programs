@@ -1,19 +1,21 @@
 ; A057129: -4 is a square mod n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Kotenok2000
 ; 1,2,4,5,8,10,13,17,20,25,26,29,34,37,40,41,50,52,53,58,61,65,68,73,74,82,85,89,97,100,101,104,106,109,113,116,122,125,130,136,137,145,146,148,149,157,164,169,170,173,178,181,185,193,194,197,200,202,205,212,218,221,226,229,232,233,241,244,250,257,260,265,269,274,277,281,289,290,292,293
 
+mov $1,-1
 mov $2,$0
-pow $2,2
+pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,65338 ; a(1) = 1, a(p) = p mod 4 for p prime and a(u * v) = a(u) * a(v) for u, v > 0.
-  dif $3,4
-  add $3,1
-  bin $3,2
-  min $3,6
-  mod $3,2
-  sub $0,$3
   add $1,1
+  mov $5,$1
+  seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+  mov $3,$1
+  div $3,$5
+  add $3,1
+  dif $3,4
+  dif $3,2
+  cmp $3,1
+  sub $0,$3
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -21,4 +23,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+add $0,2

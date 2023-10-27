@@ -1,24 +1,20 @@
 ; A040166: Continued fraction for sqrt(180).
-; Submitted by UBT - Mikeejones
+; Submitted by Science United
 ; 13,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2,26,2,2,2
 
 mul $0,2
-mov $1,$0
-mov $3,10
-gcd $0,8
-lpb $1
-  mov $1,3
-  add $0,6
-  mov $3,7
-lpe
-sub $3,1
-mul $0,$3
-trn $0,63
-add $0,1
-div $0,2
+mov $1,10
 mov $2,$0
-mul $2,2
+gcd $0,8
+lpb $2
+  mov $2,3
+  add $0,6
+  mov $1,7
+lpe
+mul $0,$1
+trn $0,63
+div $0,16
+mul $0,49
+sub $0,2
 div $0,4
-add $2,$0
-mov $0,$2
 add $0,2

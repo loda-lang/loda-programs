@@ -220,6 +220,7 @@ A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
 A065176: Site swap sequence associated with the permutation A065174 of Z.
 A065331: Largest 3-smooth divisor of n.
+A065515: Number of prime powers <= n.
 A066247: Characteristic function of composite numbers: 1 if n is composite else 0.
 A066441: a(n) = 11^n mod n.
 A066911: Sum of primes < n that do not divide n.

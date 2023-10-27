@@ -1,5 +1,5 @@
 ; A018773: Divisors of 1010.
-; Submitted by Aflatoxin
+; Submitted by gemini8
 ; 1,2,5,10,101,202,505,1010
 
 mov $1,1
@@ -13,9 +13,9 @@ lpb $0
   div $0,2
   mul $2,$1
   dif $2,$3
-  bin $1,2
-  max $1,2
-  pow $1,2
+  pow $1,$4
+  mul $1,4
+  mov $4,2
 lpe
 mov $0,$2
 div $0,3
