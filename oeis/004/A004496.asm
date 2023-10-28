@@ -1,7 +1,21 @@
 ; A004496: Tersum n + 7.
-; Submitted by Jamie Morken(s1)
+; Submitted by Science United
 ; 7,8,6,1,2,0,4,5,3,16,17,15,10,11,9,13,14,12,25,26,24,19,20,18,22,23,21,34,35,33,28,29,27,31,32,30,43,44,42,37,38,36,40,41,39,52,53,51,46,47,45,49,50,48,61,62,60,55
-; Formula: a(n) = A004495(A004482(n))
 
-seq $0,4482 ; Tersum n + 1 (answer recorded in base 10).
-seq $0,4495 ; Tersum n + 6.
+add $0,1
+mov $2,$0
+gcd $0,3
+add $0,8
+mod $0,5
+add $2,$0
+mov $0,$2
+sub $0,4
+mov $1,896
+add $1,$0
+mod $0,9
+lpb $0
+  mov $0,2
+  sub $1,9
+lpe
+sub $1,890
+mov $0,$1

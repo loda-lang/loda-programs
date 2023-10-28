@@ -1,10 +1,22 @@
 ; A117484: Number of triangular numbers mod n.
-; Submitted by Dylan Delgado
+; Submitted by Samyyy
 ; 1,2,2,4,3,4,4,8,4,6,6,8,7,8,6,16,9,8,10,12,8,12,12,16,11,14,11,16,15,12,16,32,12,18,12,16,19,20,14,24,21,16,22,24,12,24,24,32,22,22,18,28,27,22,18,32,20,30,30,24,31,32,16,64,21,24,34,36,24,24,36,32,37,38,22,40,24,28,40,48
-; Formula: a(n) = A290731(2*n+1)
 
+add $0,1
 mov $1,$0
-mul $1,2
-add $1,1
-seq $1,290731 ; Number of distinct values of X*(X+1) mod n.
+lpb $1
+  mov $2,$1
+  bin $2,2
+  mod $2,$0
+  add $2,10
+  mov $$2,1
+  sub $1,1
+lpe
+mov $1,1
+lpb $0
+  mov $2,$0
+  add $2,10
+  add $1,$$2
+  sub $0,1
+lpe
 mov $0,$1

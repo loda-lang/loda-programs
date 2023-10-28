@@ -10,7 +10,7 @@ lpb $2
   seq $3,5090 ; Number of primes == 2 mod 3 dividing n.
   cmp $3,0
   sub $0,$3
-  add $1,1
+  add $1,2
   sub $2,$0
 lpe
 mov $0,$1

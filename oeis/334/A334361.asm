@@ -1,5 +1,5 @@
 ; A334361: Number of r X s rectangles with squarefree side lengths such that r < s, r + s = 2n and r | s.
-; Submitted by damotbe
+; Submitted by Kotenok2000
 ; 0,1,1,2,0,2,1,2,2,2,1,3,0,2,1,2,1,4,1,4,3,3,0,3,0,2,2,2,1,4,1,1,2,3,2,4,1,2,2,3,0,5,1,4,3,2,1,3,2,1,2,4,1,4,2,3,3,3,0,6,0,3,3,1,1,4,1,3,2,5,1,4,1,2,2,3,1,4,1,3
 
 mov $2,1
@@ -15,7 +15,7 @@ lpb $0
     mov $7,$4
     add $7,$2
     sub $7,1
-    seq $7,71325 ; Number of squares > 1 dividing n.
+    seq $7,107078 ; Whether n has non-unitary prime divisors.
     add $7,2
     seq $7,345378 ; Number of terms m <= n, where m is a term in A006497.
     cmp $7,2

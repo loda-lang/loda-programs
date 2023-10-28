@@ -1,24 +1,22 @@
 ; A188260: [nr+kr]-[nr]-[kr], where r=sqrt(5), k=3, [ ]=floor.
-; Submitted by Matthias Lehmkuhl
+; Submitted by Science United
 ; 0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1
 
-lpb $0
-  add $1,2
-  bin $1,$0
-  mov $3,$0
-  lpb $3
-    sub $3,1
-    mov $4,1
-  lpe
-  mov $5,1
-  lpb $0
-    sub $0,$4
-    mov $2,$4
-    mov $4,$5
-    mul $4,4
-    sub $4,$2
-    add $5,$4
-  lpe
+add $0,4
+mov $2,$0
+pow $2,2
+lpb $2
+  mov $4,$1
+  add $4,3
+  mov $3,$1
+  mul $3,55
+  div $3,68
+  mul $3,3
+  add $3,$4
+  bin $3,$0
+  add $1,1
+  sub $2,$0
+  add $2,$3
 lpe
-mov $0,$1
-div $0,2
+mov $0,$3
+cmp $0,0

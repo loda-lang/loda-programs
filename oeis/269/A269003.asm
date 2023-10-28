@@ -6,7 +6,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,34
-  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $3,10158 ; Continued fraction for sqrt(85).
+  mov $6,$3
+  div $3,4
+  mul $3,4
+  add $3,$6
   mov $5,$1
   seq $5,128202 ; Configuration of discs on pegs after n steps of the optimal solution to the Towers of Hanoi problem moving an odd number of discs from peg 0 to peg 2, or an even number from peg 0 to peg 1.
   gcd $5,$3

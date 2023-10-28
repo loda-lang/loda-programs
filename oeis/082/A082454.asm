@@ -1,5 +1,5 @@
 ; A082454: a(n) = prime(n) + prime(n-1) - a(n-1) with a(0) = a(1) = 0.
-; Submitted by Cruncher Pete
+; Submitted by Kotenok2000
 ; 0,0,5,3,9,9,15,15,21,21,31,29,39,39,45,45,55,57,63,65,73,71,81,81,91,95,103,101,109,107,115,125,133,135,141,147,153,155,165,165,175,177,183,189,195,195,201,209,225,225,231,231,241,239,253,255,265,267,273,275
 
 trn $0,1
@@ -12,7 +12,7 @@ mov $5,$3
 pow $5,4
 lpb $5
   max $1,$4
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   mul $1,2
   sub $3,$1
   add $4,2

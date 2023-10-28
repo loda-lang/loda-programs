@@ -1,12 +1,23 @@
 ; A176146: a(n) = n-th-semiprime without last digit.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,0,0,1,1,1,2,2,2,2,3,3,3,3,3,4,4,5,5,5,5,6,6,6,7,7,8,8,8,8,9,9,9,9,10,11,11,11,11,12,12,12,12,13,13,14,14,14,14,14,15,15,15,16,16,16,17,17,18,18,18,19,20,20,20,20,20,20,21,21,21,21,21,21,22,22,23,23,24,24
-; Formula: a(n) = b(n+1)/10, b(n) = A106325(b(n-1)), b(0) = 0
 
-add $0,1
-lpb $0
-  sub $0,1
-  seq $1,106325 ; Smallest semiprime not less than n.
+mov $4,$0
+pow $4,2
+lpb $4
+  max $5,$1
+  seq $5,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  sub $0,$5
+  mov $2,$0
+  max $2,0
+  cmp $2,$0
+  sub $1,2
+  div $1,4
+  add $3,1
+  mul $4,$2
+  sub $4,1
+  add $1,$3
 lpe
 mov $0,$1
+add $0,1
 div $0,10

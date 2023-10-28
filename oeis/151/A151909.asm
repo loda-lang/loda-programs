@@ -1,16 +1,16 @@
 ; A151909: Weight distribution of [255,45,87] primitive binary BCH code.
-; Submitted by kpmonaghan
+; Submitted by Ralfy
 ; 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = d(n+1), b(n) = b(n-1)*(2*c(n-1)+2), b(2) = 12, b(1) = 2, b(0) = 1, c(n) = 2*c(n-1)+2, c(2) = 6, c(1) = 2, c(0) = 0, d(n) = d(n-1)/b(n-1), d(2) = 0, d(1) = 1, d(0) = 1
 
-mul $0,6
-mov $2,1
-mov $3,$0
+mov $1,1
+mov $3,1
+add $0,1
 lpb $0
   sub $0,1
-  mov $4,$1
-  mov $1,-2
-  add $1,$3
-  mul $2,$1
-  mov $3,$4
+  add $2,1
+  mul $2,2
+  div $3,$1
+  mul $1,$2
 lpe
-mov $0,$2
+mov $0,$3

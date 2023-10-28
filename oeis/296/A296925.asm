@@ -7,7 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65091 ; Odd primes.
+  add $3,1
+  seq $3,154115 ; Numbers n such that n + 3 is prime.
+  seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
   sub $3,1
   seq $3,35180 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -10.
@@ -21,7 +23,3 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
-mul $0,2
-sub $0,6
-div $0,2
-add $0,3

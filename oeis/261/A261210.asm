@@ -6,6 +6,6 @@
 mov $1,$0
 seq $1,40 ; The prime numbers.
 add $0,1
-seq $0,46302 ; Product of 4 successive primes.
+seq $0,46302 ; Products of 4 successive primes.
 mul $0,$1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

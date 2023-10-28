@@ -1,19 +1,18 @@
 ; A141638: Odd numbers which are not Yang numbers.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 35,43,47,55,63,67,71,75,79
-; Formula: a(n) = 4*e(n)+35, b(n) = (-c(n-1)+b(n-1))/2, b(3) = -3, b(2) = -3, b(1) = -2, b(0) = -2, c(n) = c(n-1)*(((-c(n-1)+b(n-1))/2+min(d(n-1),b(n-1)))%2+2), c(3) = 8, c(2) = 4, c(1) = 4, c(0) = 2, d(n) = ((-c(n-1)+b(n-1))/2+min(d(n-1),b(n-1)))%2+2, d(3) = 2, d(2) = 1, d(1) = 2, d(0) = 0, e(n) = ((-c(n-1)+b(n-1))/2+min(d(n-1),b(n-1)))%2+e(n-1)+2, e(3) = 5, e(2) = 3, e(1) = 2, e(0) = 0
+; Formula: a(n) = 4*d(n+1)+35, b(n) = b(n-1)/2+c(n-1), b(3) = 21, b(2) = 9, b(1) = 2, b(0) = 0, c(n) = gcd(b(n-1)/2,2)*(b(n-1)/2+2*c(n-1)), c(3) = 76, c(2) = 17, c(1) = 8, c(0) = 2, d(n) = d(n-1)+gcd(b(n-2)/2,2), d(3) = 3, d(2) = 2, d(1) = 0, d(0) = 0
 
-mov $1,-2
 mov $2,2
+add $0,1
 lpb $0
   sub $0,1
-  min $3,$1
-  sub $1,$2
   div $1,2
-  add $3,$1
-  mod $3,2
-  add $3,2
   add $4,$3
+  mov $3,$1
+  gcd $3,2
+  add $1,$2
+  add $2,$1
   mul $2,$3
 lpe
 mov $0,$4

@@ -1,9 +1,18 @@
 ; A321394: a(n) = (1/24)*n!*[x^n] (9 + sectan(4*x) + 6*sectan(2*x) + 8*sectan(x)) where sectan(x) = sec(x) + tan(x).
 ; Submitted by PDW
 ; 1,1,2,10,75,816,11407,194480,3871075,87700736,2220246387,62010892800,1892138207375,62591994720256,2230631475837767,85188256574494720,3470563987113896475,150234341045137637376,6886077311552162511547,333165973379285030666240,16967906593223743786978375
-; Formula: a(n) = A124303(n)*A000111(n)
+; Formula: a(n) = gcd(A155585(n),A122045(n))*(((2^n+6)*2^n)/24+1)
 
-mov $1,$0
-seq $1,124303 ; Number of set partitions of length <= 4; sum of first 4 columns of triangle of Stirling numbers of 2nd kind; dimension of space of symmetric polynomials in 4 noncommuting variables.
-seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+mov $2,2
+pow $2,$0
+mov $1,6
+add $1,$2
+mul $2,$1
+mov $1,$2
+div $1,24
+add $1,1
+mov $3,$0
+seq $3,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$3
 mul $0,$1

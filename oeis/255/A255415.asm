@@ -11,7 +11,7 @@ lpb $1
   div $1,2
   mul $1,2
   trn $1,1
-  seq $1,218993 ; Numerator of the least reduced fraction b/c > 1 using divisors b and c of n.
+  seq $1,177980 ; Iterate (n + lpf(n)) / 2 until a prime is reached, where lpf equals the least prime factor. a(n) is that terminating prime.
   mul $2,$1
   sub $1,1
   div $2,$1

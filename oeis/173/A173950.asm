@@ -1,14 +1,16 @@
 ; A173950: a(n) = 1 if 6 divides (prime(n) + 1), a(n) = -1 if 6 divides (prime(n) - 1), a(n) = 0 otherwise.
-; Submitted by LCB001
+; Submitted by Kotenok2000
 ; 0,0,1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,1,1,1,-1,1,-1,1,-1,-1,-1,1,-1,1,1,-1,1,1,1,1,-1,-1,1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,1,-1,-1,-1,1,1,-1,1,-1
-; Formula: a(n) = (b(n)%6)/2-1, b(n) = A159477(b(n-1)), b(0) = 2
 
-mov $1,2
+seq $0,6005 ; The odd prime numbers together with 1.
 lpb $0
-  sub $0,1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  mov $2,2
+  lpb $0
+    sub $0,1
+    sub $1,$2
+    add $2,$1
+  lpe
+  seq $0,10015 ; a(0) = 1, a(n) = 25*n^2 + 2 for n > 0.
 lpe
 mov $0,$1
-mod $0,6
 div $0,2
-sub $0,1

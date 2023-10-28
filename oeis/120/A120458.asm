@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,352190 ; Indices of records in A352188.
+  seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   pow $2,$1
   add $1,1
   mov $3,$1

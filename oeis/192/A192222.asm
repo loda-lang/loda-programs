@@ -1,16 +1,16 @@
 ; A192222: a(n) = Fibonacci(2^n + 1).
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Conan
 ; 1,2,5,34,1597,3524578,17167680177565,407305795904080553832073954,229265413057075367692743352179590077832064383222590237
 
-sub $0,1
 mov $1,2
 pow $1,$0
-lpb $1
-  sub $1,1
-  add $2,$3
-  add $2,2
+mov $3,3
+mov $0,$1
+add $0,2
+lpb $0
+  sub $0,2
   add $3,$2
+  add $2,$3
 lpe
 mov $0,$3
-div $0,2
-add $0,1
+div $0,3

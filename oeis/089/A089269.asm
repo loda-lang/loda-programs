@@ -1,22 +1,20 @@
 ; A089269: Squarefree numbers congruent to 1 or 2 mod 4.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Kotenok2000
 ; 1,2,5,6,10,13,14,17,21,22,26,29,30,33,34,37,38,41,42,46,53,57,58,61,62,65,66,69,70,73,74,77,78,82,85,86,89,93,94,97,101,102,105,106,109,110,113,114,118,122,129,130,133,134,137,138,141,142,145,146,149,154,157,158,161,165,166,170,173,174,177,178,181,182,185,186,190,193,194,197
 
+add $0,2
 mov $2,$0
-pow $2,2
+pow $2,4
 lpb $2
+  add $2,1
   mov $3,$1
-  seq $3,204993 ; Negative of the discriminant of quadratic field Q(sqrt(-n)).
-  sub $3,$1
-  trn $3,3
-  min $3,1
+  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$3
+  add $1,$4
+  add $1,$4
   add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $2,$0
+  cmp $4,0
 lpe
 mov $0,$1
 add $0,1

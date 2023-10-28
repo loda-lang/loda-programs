@@ -1,14 +1,7 @@
 ; A111043: Partial sums of squares of digits of golden ratio phi (A001622).
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,37,38,102,102,111,120,201,265,329,378,394,475,539,620,636,700,716,780,784,784,800,825,889,925,989,998,1014,1023,1059,1084,1120,1129,1193,1194,1195,1244,1293,1297,1297,1306,1306,1387,1388,1437,1518,1582,1582,1607,1656,1692,1696,1760,1796,1800,1801,1810,1835,1851,1867,1931,1967,1971,1975,2024,2024,2049,2053,2089,2089,2105,2141,2145,2209,2210,2274,2355,2355,2359,2375
-; Formula: a(n) = A001622(n)^2+a(n-1), a(0) = 1
+; Formula: a(n) = A003132(A011551(n))
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,1622 ; Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2.
-  pow $2,2
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+seq $0,11551 ; Decimal expansion of phi truncated to n places.
+seq $0,3132 ; Sum of squares of digits of n.

@@ -1,18 +1,21 @@
 ; A188037: a(n) = floor(nr) - 1 - floor((n-1)r), where r = sqrt(2).
-; Submitted by Joe
+; Submitted by Science United
 ; 0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1
-; Formula: a(n) = gcd((-c(n-1)+b(n-1)+1)/2+a(n-1),4)/2, a(2) = 1, a(1) = 0, a(0) = 0, b(n) = (-c(n-1)+b(n-1)+1)/2, b(2) = -14, b(1) = -5, b(0) = 0, c(n) = 2*gcd((-c(n-1)+b(n-1)+1)/2+a(n-1),4)*c(n-1), c(2) = 96, c(1) = 24, c(0) = 12
+; Formula: a(n) = (2*((A001951(n+1)+A001951(n)+1)%2)+2*n-2*n)/2
 
-mov $2,12
-lpb $0
-  sub $0,1
-  sub $1,$2
-  add $1,1
-  div $1,2
-  add $3,$1
-  gcd $3,4
-  mul $2,2
-  mul $2,$3
-  div $3,2
-lpe
-mov $0,$3
+mov $1,$0
+sub $1,$0
+add $1,1
+mov $2,$0
+seq $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+add $0,1
+add $0,$2
+mod $0,2
+add $0,5
+add $1,$0
+mul $1,2
+mov $0,$1
+sub $0,12
+div $0,2

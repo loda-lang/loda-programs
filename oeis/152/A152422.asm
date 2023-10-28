@@ -1,27 +1,23 @@
 ; A152422: Decimal expansion of (sqrt(3)-1)/2.
-; Submitted by Jamie Morken(w4)
+; Submitted by Atheze
 ; 3,6,6,0,2,5,4,0,3,7,8,4,4,3,8,6,4,6,7,6,3,7,2,3,1,7,0,7,5,2,9,3,6,1,8,3,4,7,1,4,0,2,6,2,6,9,0,5,1,9,0,3,1,4,0,2,7,9,0,3,4,8,9,7,2,5,9,6,6,5,0,8,4,5,4,4,0,0,0,1
 
 add $0,1
+mov $2,7
 mov $3,$0
-mul $3,3
+mul $3,4
 lpb $3
   sub $3,1
   add $5,$2
   add $1,$5
-  mul $2,2
   add $2,$1
-  mov $4,$3
-  add $4,$5
-  mul $1,2
-  add $2,$4
-  mov $5,43
+  mov $5,$1
+  mov $1,$2
 lpe
 mov $4,10
 pow $4,$0
-add $2,$5
+mov $2,$5
 div $2,$4
-mul $2,2
 div $1,$2
 mov $0,$1
 mod $0,10

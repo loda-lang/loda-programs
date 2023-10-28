@@ -7,5 +7,7 @@ mov $1,$0
 mul $1,2
 lpb $1
   mov $1,2
-  seq $0,109045 ; a(n) = lcm(n,4).
+  dif $0,2
+  dif $0,2
+  mul $0,4
 lpe

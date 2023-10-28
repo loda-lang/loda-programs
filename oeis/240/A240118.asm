@@ -12,13 +12,13 @@ lpb $0
   add $11,1
   mov $4,$2
   lpb $4
-    trn $4,1
+    sub $4,1
     mov $9,10
     add $9,$5
     mov $12,1
     mov $6,$5
     mov $7,$4
-    seq $7,163980 ; a(n) = 2*n + (-1)^n.
+    add $7,1
     mul $7,$11
     mul $7,$$9
     add $5,1

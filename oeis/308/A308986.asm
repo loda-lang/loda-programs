@@ -10,10 +10,10 @@ lpb $0
   add $10,$2
   mov $4,$2
   lpb $4
-    trn $4,1
+    sub $4,1
     mod $6,2
     mov $7,$4
-    seq $7,124 ; Central polygonal numbers (the Lazy Caterer's sequence): n(n+1)/2 + 1; or, maximal number of pieces formed when slicing a pancake with n cuts.
+    add $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

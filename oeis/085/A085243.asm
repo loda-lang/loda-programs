@@ -11,7 +11,7 @@ lpb $3
   add $0,$3
   seq $0,6899 ; Numbers of the form 2^i or 3^j.
   sub $0,1
-  seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  seq $0,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
   mov $2,$3
   mul $2,$0
   mul $4,$3

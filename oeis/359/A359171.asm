@@ -6,11 +6,11 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
+  sub $2,$0
   mov $4,$1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $3,$1
-  add $3,1
-  seq $3,314264 ; Coordination sequence Gal.5.316.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+  seq $3,47459 ; Numbers that are congruent to {1, 3, 4} mod 8.
   mul $4,$3
   sub $3,$4
   mod $3,2
@@ -18,6 +18,5 @@ lpb $2
   mod $3,2
   sub $0,$3
   add $1,1
-  sub $2,$0
 lpe
-add $0,$1
+mov $0,$1

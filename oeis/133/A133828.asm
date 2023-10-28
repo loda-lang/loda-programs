@@ -1,5 +1,5 @@
 ; A133828: a(n) = the smallest "isolated divisor" of n, or 0 if no such divisor exists. A positive divisor, k, of n is isolated if neither (k-1) nor (k+1) divides n.
-; Submitted by AlexxAl
+; Submitted by [AF>France>IDF>Paris]Kasur
 ; 1,0,1,4,1,6,1,4,1,5,1,6,1,7,1,4,1,6,1,10,1,11,1,6,1,13,1,4,1,10,1,4,1,17,1,6,1,19,1,8,1,14,1,4,1,23,1,6,1,5,1,4,1,6,1,4,1,29,1,10,1,31,1,4,1,6,1,4,1,5,1,6,1,37,1,4,1,6,1,8
 
 add $0,1
@@ -19,8 +19,6 @@ lpb $3
     sub $5,$4
   lpe
   cmp $6,2
-  cmp $6,0
-  cmp $6,0
   mov $4,$2
   pow $4,$6
   mul $1,$4

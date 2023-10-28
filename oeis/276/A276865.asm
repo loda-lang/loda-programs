@@ -1,19 +1,20 @@
 ; A276865: First differences of the Beatty sequence A003512 for 2 + sqrt(3).
-; Submitted by Science United
+; Submitted by fzs600
 ; 3,4,4,3,4,4,4,3,4,4,4,3,4,4,3,4,4,4,3,4,4,4,3,4,4,4,3,4,4,3,4,4,4,3,4,4,4,3,4,4,4,3,4,4,3,4,4,4,3,4,4,4,3,4,4,3,4,4,4,3,4,4,4,3,4,4,4,3,4,4,3,4,4,4,3,4,4,4,3,4
-; Formula: a(n) = d(n+1)+2, b(n) = (-c(n-1)+b(n-1))/2, b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 4*gcd((-c(n-1)+b(n-1))/2+2*d(n-1),2)*c(n-1), c(2) = 64, c(1) = 8, c(0) = 2, d(n) = gcd((-c(n-1)+b(n-1))/2+2*d(n-1),2), d(2) = 2, d(1) = 1, d(0) = 0
 
+mov $1,1
 mov $2,2
-add $0,1
 lpb $0
   sub $0,1
   sub $1,$2
-  div $1,2
-  mul $3,2
-  add $3,$1
-  gcd $3,2
-  mul $2,4
-  mul $2,$3
+  add $1,1
+  div $1,4
+  dif $1,2
+  mul $2,2
 lpe
-mov $0,$3
+mov $0,$1
+add $0,1
+mod $0,2
 add $0,2
+mod $0,2
+add $0,3
