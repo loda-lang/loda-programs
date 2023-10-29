@@ -4,9 +4,5 @@
 ; Formula: a(n) = A004186(A022360(n)/26)
 
 seq $0,22360 ; Fibonacci sequence beginning 0, 26.
-mov $1,54
-add $1,$0
-mov $0,$1
-sub $0,54
 div $0,26
 seq $0,4186 ; Arrange digits of n in decreasing order.
