@@ -1,5 +1,5 @@
 ; A102721: Numbers n such that 11*n + 13 is prime.
-; Submitted by Christian Krause
+; Submitted by Kotenok2000
 ; 0,6,8,14,18,20,24,36,38,48,50,54,60,66,68,74,84,96,98,108,110,116,126,134,138,140,144,146,150,168,176,180,188,200,216,218,224,228,230,236,246,248,258,264,266,276,284,288,290,300,314,318,320,330,336,344,350,354,356,374,386,398,404,410,414,428,434,438,446,458,474,488,504,510,516,518,528,530,540,558
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
   add $2,22
   sub $3,$0

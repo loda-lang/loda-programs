@@ -1,5 +1,5 @@
 ; A111312: Numbers n such that 11*n + 2 is prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 0,1,7,9,15,19,21,25,37,39,49,51,55,61,67,69,75,85,97,99,109,111,117,127,135,139,141,145,147,151,169,177,181,189,201,217,219,225,229,231,237,247,249,259,265,267,277,285,289,291,301,315,319,321,331,337,345,351,355,357,375,387,399,405,411,415,429,435,439,447,459,475,489,505,511,517,519,529,531,541
 
 mov $2,12
@@ -7,9 +7,9 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$1
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $2,22
+  sub $0,$1
   sub $3,$0
 lpe
 add $0,$2

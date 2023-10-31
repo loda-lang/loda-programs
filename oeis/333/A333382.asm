@@ -4,8 +4,8 @@
 
 mov $1,1
 mov $2,$0
+seq $2,124767 ; Number of level runs for compositions in standard order.
 lpb $2
-  seq $2,124767 ; Number of level runs for compositions in standard order.
   mul $1,$2
   min $2,0
 lpe

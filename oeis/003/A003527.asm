@@ -2,25 +2,15 @@
 ; Submitted by Science United
 ; 1,3,5,15,17,51,85,255,257,771,1285,3855,4369,13107,21845,65535
 
-mov $1,2
-pow $1,$0
-sub $1,1
-mov $0,$1
-mov $4,1
-lpb $4
-  sub $4,1
-  mov $2,1
-  add $0,1
-  lpb $0
-    mov $3,2
-    mov $5,1
-    lpb $0
-      dif $0,$3
-      mul $5,$3
-      mov $3,$5
-    lpe
-    add $5,1
-    mul $2,$5
-  lpe
+mov $2,$0
+lpb $0
+  mov $3,$2
+  bin $3,$0
+  mod $3,2
+  sub $0,1
+  mul $1,2
+  add $1,$3
 lpe
-mov $0,$2
+mov $0,$1
+mul $0,2
+add $0,1

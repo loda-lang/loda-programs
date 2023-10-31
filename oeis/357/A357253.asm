@@ -1,18 +1,15 @@
 ; A357253: a(n) is the largest prime < 6*n.
-; Submitted by Mumps
+; Submitted by Science United
 ; 5,11,17,23,29,31,41,47,53,59,61,71,73,83,89,89,101,107,113,113,113,131,137,139,149,151,157,167,173,179,181,191,197,199,199,211,211,227,233,239,241,251,257,263,269,271,281,283,293,293,293,311,317,317,317,331,337,347,353
 
-mul $0,3
-add $0,2
-mul $0,2
+mul $0,6
+mov $2,$0
+add $2,5
+mov $0,$2
 lpb $0
-  div $0,2
-  add $1,1
-  add $0,$1
-  mul $0,2
-  sub $0,3
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mov $1,$0
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  cmp $1,0
+  sub $0,$1
 lpe
-div $0,2
-mul $0,2
 add $0,1

@@ -1,5 +1,5 @@
 ; A114275: Numbers k such that k^2 + 12 is prime.
-; Submitted by [AF] Kalianthys
+; Submitted by Kotenok2000
 ; 1,5,7,13,19,23,29,35,37,41,43,47,55,61,85,89,91,97,113,119,121,127,139,161,167,169,175,187,191,197,203,211,215,223,229,245,265,271,295,299,307,317,335,341,355,371,379,383,401,419,427,455,463,475,491,517,527,539,541,551,553,565,589,593,595,601,637,643,653,659,665,667,679,685,715,719,751,761,763,793
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

@@ -1,18 +1,18 @@
 ; A322430: Numbers k such that the coefficient of x^k in the expansion of Product_{j>=1} (1-x^j)^8 is zero.
-; Submitted by Science United
+; Submitted by Kotenok2000
 ; 3,7,11,13,15,18,19,23,27,28,29,31,35,38,39,43,45,47,48,51,53,55,59,61,62,63,67,68,71,73,75,77,78,79,83,84,87,88,91,93,95,98,99,103,106,107,109,111,113,115,117,118,119,123,125,127,128,130,131,135,138,139,141,143,147,148,150,151,153,155,157,159,163,164,167,168,171,172,173,175
 
-mov $1,3
 mov $2,$0
-add $2,2
+add $2,4
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
-  seq $3,33716 ; Number of integer solutions to the equation x^2 + 3y^2 = n.
+  mul $3,3
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $3,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
   cmp $3,0
   sub $0,$3
-  add $1,2
+  add $1,1
   mov $4,$0
   max $4,0
   cmp $4,$0
@@ -20,4 +20,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-div $0,3

@@ -12,7 +12,7 @@ mov $4,$2
 pow $4,4
 lpb $4
   max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $5,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   mul $5,2
   sub $2,$5
   add $3,2

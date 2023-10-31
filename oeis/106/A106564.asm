@@ -1,5 +1,5 @@
 ; A106564: Perfect squares which are not the difference of two primes.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 25,49,121,169,289,361,529,625,729,841,961,1225,1369,1681,1849,2209,2401,2601,2809,3025,3481,3721,3969,4225,4489,4761,5041,5329,5625,5929,6241,6889,7225,7569,7921,8281,8649,9025,9409,10201,10609,11449,11881,12769,13225,14161,14641,15625,16129,16641,17161,17689,18225,18769,19321,19881,20449,21025,22201,22801,23409,24025,24649,25281,25921,26569,27225,27889,28561,29929,30625,31329,32041,32761,33489,34225,34969,35721,36481,37249
 
 mov $2,$0
@@ -10,14 +10,13 @@ pow $2,2
 lpb $2
   max $3,$4
   mul $3,2
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   cmp $3,0
   sub $0,$3
   add $1,4
   sub $2,$0
   add $4,$1
 lpe
-mov $0,$1
-div $0,2
-add $0,1
-pow $0,2
+mov $0,$4
+mul $0,2
+sub $0,1

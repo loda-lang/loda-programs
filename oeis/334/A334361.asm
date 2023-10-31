@@ -17,7 +17,7 @@ lpb $0
     sub $7,1
     seq $7,107078 ; Whether n has non-unitary prime divisors.
     add $7,2
-    seq $7,345378 ; Number of terms m <= n, where m is a term in A006497.
+    seq $7,227184 ; a(n) = product of parts of the unordered partition encoded with the runlengths of binary expansion of n.
     cmp $7,2
     cmp $7,$8
     mov $9,10

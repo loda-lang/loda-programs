@@ -1,5 +1,5 @@
 ; A083022: Numbers n such that 4*n^2 - 3 is prime.
-; Submitted by Sphynx
+; Submitted by Kotenok2000
 ; 2,4,5,7,10,13,16,17,20,22,23,29,32,34,40,43,44,46,49,55,56,59,62,64,68,70,71,73,82,86,95,97,101,103,104,109,110,125,127,133,134,148,149,152,155,160,161,163,164,166,170,175,178,181,185,208,209,218,220,226,230,235,244,247,251,253,254,263,265,274,277,280,287,290,293,295,304,313,317,320
 
 add $0,1
@@ -9,7 +9,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

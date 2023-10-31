@@ -1,18 +1,19 @@
 ; A024902: Numbers k such that 7*k + 4 is prime.
-; Submitted by Kotenok2000
+; Submitted by Ralfy
 ; 1,7,9,15,19,21,25,27,37,39,49,55,61,69,79,81,85,87,91,97,105,115,117,129,139,141,145,147,151,157,159,169,171,175,189,205,207,211,217,225,229,231,237,247,249,255,261,267,271,285,289,295,297,301,307,319,321,327,339,349,357,361,379,381,385,387,391,399,415,435,445,457,459,465,471,475,477,481,487,495
 
-mov $1,10
-mov $3,11
-mov $2,$0
-mul $2,2
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,14
-  sub $2,$0
+add $0,1
+mov $2,10
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,14
+  sub $3,$0
 lpe
-mov $0,$1
-div $0,7
+mov $0,$2
+div $0,14
+mul $0,2
+add $0,1

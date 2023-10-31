@@ -1,19 +1,18 @@
 ; A101123: Numbers n for which 7*n + 11 is prime.
-; Submitted by Kotenok2000
+; Submitted by waffleironhead
 ; 0,6,8,14,18,20,24,26,36,38,48,54,60,68,78,80,84,86,90,96,104,114,116,128,138,140,144,146,150,156,158,168,170,174,188,204,206,210,216,224,228,230,236,246,248,254,260,266,270,284,288,294,296,300,306,318,320,326,338,348,356,360,378,380,384,386,390,398,414,434,444,456,458,464,470,474,476,480,486,494
 
-mov $1,10
-mov $3,11
-mov $2,$0
-mul $2,2
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,14
-  sub $2,$0
+add $0,1
+mov $2,10
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,14
+  sub $3,$0
 lpe
-mov $0,$1
-div $0,14
-mul $0,2
+mov $0,$2
+sub $0,10
+div $0,7

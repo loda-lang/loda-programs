@@ -1,21 +1,18 @@
 ; A024897: Numbers k such that 5*k + 4 is prime.
-; Submitted by ChelseaOilman
+; Submitted by arkiss
 ; 3,5,11,15,17,21,27,29,35,39,45,47,53,69,71,75,77,81,83,87,89,95,99,101,113,119,123,131,141,143,147,153,161,165,167,171,183,185,201,203,207,209,213,221,225,245,249,251,255,257,263,279,281,285,287,291,297,299,309,311,315,321,323,333,339,341,351,357,375,377,389,395,399,405,407,413,417,419,425,435
 
 add $0,1
-mov $1,-2
-mov $3,11
-mov $2,$0
-mul $2,2
-pow $2,4
-lpb $2
-  max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,10
-  sub $2,$0
+mov $2,8
+mov $3,$0
+pow $3,5
+lpb $3
+  add $2,10
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  sub $3,$0
 lpe
-mov $0,$1
-sub $0,18
+mov $0,$2
 div $0,5
-add $0,3
+add $0,2

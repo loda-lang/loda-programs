@@ -1,19 +1,10 @@
 ; A082693: Pyramidal sequence built with powers of 2.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,2,1,2,4,2,1,2,4,8,4,2,1,2,4,8,16,8,4,2,1,2,4,8,16,32,16,8,4,2,1,2,4,8,16,32,64,32,16,8,4,2,1,2,4,8,16,32,64,128,64,32,16,8,4,2,1,2,4,8,16,32,64,128,256,128,64,32,16,8,4,2,1,2,4,8,16,32,64,128
+; Formula: a(n) = (2^A004738(n))/2
 
 mov $2,$0
-lpb $2
-  add $3,1
-  sub $2,$3
-  add $3,1
-lpe
-mul $2,2
-sub $3,$2
-gcd $4,$3
-mov $2,$4
-div $2,2
-add $2,1
+seq $2,4738 ; Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n >= 2.
 mov $1,2
 pow $1,$2
 div $1,2

@@ -1,18 +1,8 @@
 ; A135947: a(n)=(floor(3*S2(n)/2)) mod 2, where S2(n) is the binary weight of n.
-; Submitted by Science United
+; Submitted by UBT - Mikeejones
 ; 0,1,1,1,1,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1
+; Formula: a(n) = (A063787(n)/2)%2
 
-mov $2,$0
-lpb $2
-  div $2,2
-  sub $0,$2
-lpe
-add $0,1
-add $1,$0
-sub $0,$1
-sub $0,$1
-mul $1,$0
-sub $1,$0
-bin $1,2
-mov $0,$1
+seq $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+div $0,2
 mod $0,2

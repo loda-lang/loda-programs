@@ -1,10 +1,20 @@
 ; A277801: a(n) = 2^(n - 1) - prime(n).
 ; Submitted by Kotenok2000
 ; -1,-1,-1,1,5,19,47,109,233,483,993,2011,4055,8149,16337,32715,65477,131011,262077,524217,1048503,2097073,4194221,8388519,16777119,33554331,67108761,134217621,268435347,536870799,1073741697,2147483517,4294967159,8589934453,17179869035
-; Formula: a(n) = 2^n-max(A006005(n),2)
 
 mov $1,$0
-seq $0,6005 ; The odd prime numbers together with 1.
+add $0,1
+mov $5,$0
+pow $5,5
+lpb $5
+  mov $3,$4
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  add $4,2
+  sub $5,$0
+lpe
+mov $0,$4
+add $0,1
 max $0,2
 mov $2,2
 pow $2,$1

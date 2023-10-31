@@ -1,5 +1,5 @@
 ; A114269: Numbers k such that k^2 + 6 is prime.
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 1,5,11,19,25,31,35,61,65,79,89,91,109,131,145,151,175,185,199,221,269,329,331,355,401,431,445,481,485,511,515,529,539,569,595,605,611,649,695,709,731,775,779,859,889,905,929,941,949,955,971,985,991,1025,1039,1075,1141,1145,1199,1241,1249,1255,1271,1295,1319,1339,1351,1355,1361,1375,1391,1409,1411,1435,1451,1465,1495,1519,1531,1549
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

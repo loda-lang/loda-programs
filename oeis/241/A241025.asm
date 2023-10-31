@@ -12,8 +12,5 @@ lpb $1
   seq $2,50376 ; "Fermi-Dirac primes": numbers of the form p^(2^k) where p is prime and k >= 0.
   mul $3,$2
 lpe
-mul $3,4
 mov $0,$3
-sub $0,240
-div $0,8
-add $0,30
+div $0,2
