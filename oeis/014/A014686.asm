@@ -7,8 +7,8 @@ seq $1,40 ; The prime numbers.
 mod $0,2
 mul $0,3
 lpb $0
-  sub $1,2
   dif $0,3
+  sub $1,2
 lpe
 mov $0,$1
 add $0,1
