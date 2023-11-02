@@ -1,33 +1,19 @@
 ; A153355: Numbers k such that 5k-1 is a prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Aurum
 ; 4,6,12,16,18,22,28,30,36,40,46,48,54,70,72,76,78,82,84,88,90,96,100,102,114,120,124,132,142,144,148,154,162,166,168,172,184,186,202,204,208,210,214,222,226,246,250,252,256,258,264,280,282,286,288,292,298,300,310,312,316,322,324,334,340,342,352,358,376,378,390,396,400,406,408,414,418,420,426,436
 
 add $0,1
-mov $1,18
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $5,0
-  max $3,$1
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,3
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,1
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,10
-  sub $2,$0
+mov $2,8
+mov $3,$0
+pow $3,5
+lpb $3
+  add $2,10
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  sub $3,$0
 lpe
-mov $0,$1
-div $0,5
-add $0,1
+mov $0,$2
+div $0,10
+add $0,2
+mul $0,2

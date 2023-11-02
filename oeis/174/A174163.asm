@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  mov $6,$0
+  seq $6,93515 ; Numbers k such that either k or k-1 is a prime.
+  mov $0,$6
+  sub $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2

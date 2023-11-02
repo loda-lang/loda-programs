@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   seq $3,275823 ; Least k such that n divides phi(k^2).
   sub $3,1
-  seq $3,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  seq $3,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
   cmp $3,1
   sub $0,$3
   add $1,1

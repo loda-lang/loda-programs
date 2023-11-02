@@ -1,5 +1,5 @@
 ; A096174: Even numbers k such that (k^3+1)/(k+1) is prime.
-; Submitted by [TA]crashtech
+; Submitted by Science United
 ; 2,4,6,16,18,22,28,34,42,58,60,70,72,76,78,90,100,102,106,112,118,120,132,142,144,148,154,156,162,168,174,190,204,210,216,232,246,280,288,294,310,330,352,358,370,382,384,396,406,436,448,454,456,490,496,526,532,534,538,552,568,580,604,606,610,622,636,672,678,702,736,744,748,756,762,774,786,802,820,826
 
 add $0,1
@@ -9,12 +9,13 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4
   sub $3,$0
 lpe
 mov $0,$4
-div $0,4
 add $0,2
+div $0,4
+add $0,1
