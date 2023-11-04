@@ -1,20 +1,9 @@
 ; A096176: Numbers k such that (k^3-1)/(k-1) is prime.
-; Submitted by Ralfy
+; Submitted by MJKelleher
 ; 2,3,5,6,8,12,14,15,17,20,21,24,27,33,38,41,50,54,57,59,62,66,69,71,75,77,78,80,89,90,99,101,105,110,111,117,119,131,138,141,143,147,150,153,155,161,162,164,167,168,173,176,188,189,192,194,203,206,209,215,218,231,236,245,246,266,272,278,279,287,288,290,293,309,314,329,332,336,342,344
+; Formula: a(n) = A128815(n)+1
 
-add $0,1
-mov $1,2
-mov $3,11
-mov $4,2
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$4
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,2
-  sub $2,$0
-  add $4,$1
-lpe
+mov $1,$0
+seq $1,128815 ; Numbers n such that n-th and (n+2)th triangular numbers sum up to a prime.
 mov $0,$1
-div $0,2
+add $0,1

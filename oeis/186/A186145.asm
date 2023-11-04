@@ -1,5 +1,5 @@
 ; A186145: Rank of n^2 when {i^2: i>=1} and {j^3: j>=1} are jointly ranked with i^2 before j^3 when i^2=j^3.  Complement of A186146.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,3,5,6,7,9,10,11,13,14,15,17,18,19,21,22,23,24,26,27,28,29,31,32,33,34,35,37,38,39,40,42,43,44,45,46,48,49,50,51,52,54,55,56,57,58,60,61,62,63,64,65,67,68,69,70,71,72,74,75,76,77,78,79,81,82,83,84,85,86,88,89,90,91,92,93,95,96,97,98
 
 mov $1,$0
@@ -8,11 +8,11 @@ pow $0,2
 sub $0,1
 lpb $0
   sub $0,1
-  add $2,1
-  add $3,6
-  add $4,$3
-  trn $0,$4
+  add $2,6
+  add $3,$2
+  trn $0,$3
 lpe
 mov $0,$2
-add $0,1
+div $0,6
 add $0,$1
+add $0,1

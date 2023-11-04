@@ -8,7 +8,10 @@ lpb $1
   mov $0,$2
   sub $0,$1
   mul $0,2
-  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  mov $4,$0
+  seq $4,93515 ; Numbers k such that either k or k-1 is a prime.
+  mov $0,$4
+  sub $0,1
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mod $0,2
   add $3,$0

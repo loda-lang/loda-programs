@@ -1,16 +1,16 @@
 ; A151933: Weight distribution of [255,47,85] primitive binary BCH code.
-; Submitted by Ralfy
+; Submitted by kundor
 ; 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = d(n+1), b(n) = b(n-1)*(2*c(n-1)+2), b(2) = 12, b(1) = 2, b(0) = 1, c(n) = 2*c(n-1)+2, c(2) = 6, c(1) = 2, c(0) = 0, d(n) = d(n-1)/b(n-1), d(2) = 0, d(1) = 1, d(0) = 1
 
-mul $0,14
-mov $1,10
-pow $1,$0
-div $1,82
-mov $0,$1
-mod $0,10
-lpb $1
-  seq $0,40 ; The prime numbers.
-  mov $1,$0
-lpe
+mov $1,1
+mov $3,1
 add $0,1
-mod $0,2
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $2,2
+  div $3,$1
+  mul $1,$2
+lpe
+mov $0,$3

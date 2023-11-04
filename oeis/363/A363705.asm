@@ -1,20 +1,14 @@
 ; A363705: The minimum irregularity of all maximal 2-degenerate graphs with n vertices.
-; Submitted by waffleironhead
+; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 0,4,2,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+; Formula: a(n) = (binomial(n-6,n+2)/8+8)%10
 
-min $0,4
+mov $2,$0
+add $2,2
+sub $0,6
 mov $1,$0
-lpb $0
-  mov $2,$0
-  add $2,7
-  mod $2,10
-  mov $3,$2
-  mod $3,2
-  sub $3,1
-  div $0,10
-  div $2,8
-  dif $2,$3
-  sub $1,$2
-lpe
+bin $1,$2
 mov $0,$1
-mul $0,2
+div $0,8
+add $0,8
+mod $0,10

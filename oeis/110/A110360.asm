@@ -1,16 +1,14 @@
 ; A110360: Integers with mutual residues of 8.
-; Submitted by gemini8
+; Submitted by fzs600
 ; 9,17,161,24641,606981761,368426853330807041,135738346255240000293762417728719361,18424898644107427010977107148874723523180059431182608785043639266493441
-; Formula: a(n) = 8*b(n)+1, b(n) = -4*b(n-1)+binomial(4*b(n-1),2), b(0) = 1
 
 mov $2,1
-lpb $0
-  sub $0,1
-  mul $2,4
-  mov $1,$2
-  bin $2,2
-  sub $2,$1
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $3,$2
+  add $3,8
+  mul $2,$3
 lpe
 mov $0,$2
-mul $0,8
-add $0,1
+add $0,8

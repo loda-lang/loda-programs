@@ -1,5 +1,5 @@
 ; A111576: Number of minimal non-2-stack-sortable permutations of length n.
-; Submitted by Jon Fox
+; Submitted by F14Claude
 ; 0,0,0,0,0,0,22,51,146
 
 mov $2,1
@@ -25,6 +25,7 @@ lpb $0
   mov $3,$6
   div $6,$5
   mov $$9,$3
+  mov $14,1
   sub $0,2
   add $2,1
 lpe

@@ -1,21 +1,22 @@
 ; A324502: a(n) = denominator of  Sum_{d|n} (1/pod(d)) where pod(k) = the product of the divisors of k (A007955).
-; Submitted by Penguin
+; Submitted by ladmo
 ; 1,2,3,8,5,36,7,64,27,100,11,1728,13,196,225,1024,17,5832,19,8000,441,484,23,331776,125,676,729,21952,29,810000,31,32768,1089,1156,1225,10077696,37,1444,1521,2560000,41,3111696,43,85184,91125,2116,47,254803968,343
 
+mod $0,53
 add $0,1
-mov $1,1
-mov $4,$0
-mov $5,47
+mov $1,47
+mov $2,$0
+mov $4,1
 lpb $0
   sub $0,2
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  mov $3,$4
-  div $3,$1
-  pow $3,$2
-  mul $5,$3
-  add $1,1
+  mov $5,$2
+  gcd $5,$4
+  bin $5,$4
+  mov $3,$2
+  div $3,$4
+  pow $3,$5
+  mul $1,$3
+  add $4,1
 lpe
-mov $0,$5
+mov $0,$1
 div $0,47

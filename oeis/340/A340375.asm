@@ -1,16 +1,14 @@
 ; A340375: a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Joe
 ; 1,1,1,1,1,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $3,$0
-lpb $3
-  mov $4,$3
-  mod $4,4
-  cmp $4,1
-  mov $2,$5
-  div $3,2
-  add $5,$4
+lpb $0
+  dif $0,2
 lpe
-mov $1,$2
-cmp $1,0
+add $0,1
+mov $1,$0
+add $1,$0
+bin $1,$0
 mov $0,$1
+mod $0,4
+div $0,2
