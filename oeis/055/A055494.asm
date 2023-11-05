@@ -1,20 +1,18 @@
 ; A055494: Numbers k such that k^2 - k + 1 is prime.
-; Submitted by Science United
+; Submitted by Wojciech Duda
 ; 2,3,4,6,7,9,13,15,16,18,21,22,25,28,34,39,42,51,55,58,60,63,67,70,72,76,78,79,81,90,91,100,102,106,111,112,118,120,132,139,142,144,148,151,154,156,162,163,165,168,169,174,177,189,190,193,195,204,207,210,216,219,232,237,246,247,267,273,279,280,288,289,291,294,310,315,330,333,337,343
 
-mov $4,4
-add $0,1
-mov $2,5
+add $0,2
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
   seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  add $4,4
+  add $4,2
   sub $0,$1
   add $2,$4
   sub $3,$0
 lpe
 mov $0,$4
-div $0,4
+div $0,2
 add $0,1

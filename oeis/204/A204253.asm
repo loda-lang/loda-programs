@@ -1,18 +1,24 @@
 ; A204253: Symmetric matrix given by f(i,j)=1+[(i+j) mod 3].
-; Submitted by Conan
+; Submitted by fzs600
 ; 3,1,1,2,2,2,3,3,3,3,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3
-; Formula: a(n) = (((2*(A002024(n)%3)+5)*((A002024(n)%3+1)/2+1))^2-3)%10
 
-seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-mod $0,3
 add $0,1
-mov $1,$0
+mov $2,$0
+mul $2,8
+add $0,2
+lpb $0
+  mov $1,$2
+  div $1,$0
+  add $0,$1
+  div $0,2
+lpe
+sub $0,1
+div $0,2
+add $0,1
+mod $0,3
 mul $0,2
-add $0,3
-mov $2,$1
-div $2,2
-add $2,1
-mul $0,$2
+add $0,5
 pow $0,2
-sub $0,3
 mod $0,10
+div $0,4
+add $0,1

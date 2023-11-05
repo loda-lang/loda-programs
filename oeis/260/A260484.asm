@@ -1,27 +1,22 @@
 ; A260484: Complement of the Beatty sequence for e^(1/Pi) = A179706.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by skildude
 ; 3,7,11,14,18,22,25,29,33,36,40,44,47,51,55,58,62,66,69,73,77,80,84,88,91,95,99,102,106,110,113,117,121,124,128,132,135,139,143,146,150,154,157,161,165,168,172,176,179,183,187,190,194,198,201,205,209,212,216,220,223,227,231,234,238,242,245,249,253,256,260,264,267,271,275,278,282,286,289,293
 
-mov $5,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $1,0
-  mov $0,$5
-  sub $0,$3
-  add $0,3
-  lpb $0
-    sub $0,2
-    add $1,1
-    sub $0,$1
-    mov $2,$0
-    max $2,0
-    seq $2,194640 ; Smallest image size for which the number of endofunctions (functions f:{1,2,...,n}->{1,2,...,n}) is a maximum.
-    cmp $1,$2
-  lpe
-  mov $0,$2
-  add $0,3
-  add $4,$0
+mov $1,$0
+add $1,1
+mov $3,$1
+lpb $1
+  max $1,$4
+  sub $1,1
+  mov $4,$3
+  mul $4,30
+  mov $2,$4
+  cmp $4,$3
+  cmp $4,0
+  mul $4,2
+  pow $4,$2
 lpe
-mov $0,$4
+mov $0,$2
+div $0,30
+mul $0,11
+div $0,3

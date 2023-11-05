@@ -1,4 +1,4 @@
-; A023695: Numbers with exactly 4 1's in ternary expansion.
+; A023695: Numbers with exactly 4 1's in their ternary expansion.
 ; Submitted by [TA]crashtech
 ; 40,94,112,118,120,122,124,130,148,202,256,274,280,282,284,286,292,310,328,334,336,338,340,346,352,354,356,358,360,362,366,368,370,372,374,376,382,388,390,392,394,400,418,436,442
 

@@ -1,10 +1,27 @@
 ; A020645: Least positive integer k for which 4^n divides k!.
-; Submitted by Orange Kid
+; Submitted by skildude
 ; 1,4,6,8,10,12,16,16,18,20,24,24,28,30,32,32,34,36,40,40,44,46,48,48,52,54,56,58,60,64,64,64,66,68,72,72,76,78,80,80,84,86,88,90,92,96,96,96,100,102,104,106,108,112,112,114,116,120,120,124,126,128,128,128,130,132,136,136,140,142,144,144,148,150,152,154,156,160,160,160
-; Formula: a(n) = 2*n+A100661(max(2*n-1,0))
+; Formula: a(n) = e(2*n+1)/2+1, b(n) = (-c(n-1)+b(n-1)-6)/4, b(3) = -67, b(2) = -6, b(1) = -2, b(0) = 0, c(n) = max(c(n-1),4)*gcd((-c(n-1)+b(n-1)-6)/4+d(n-1)+e(n-1)+binomial(d(n-1),max(c(n-1),4)),4)^2, c(3) = 256, c(2) = 256, c(1) = 16, c(0) = 2, d(n) = 2*(gcd((-c(n-1)+b(n-1)-6)/4+d(n-1)+e(n-1)+binomial(d(n-1),max(c(n-1),4)),4)/2), d(3) = 0, d(2) = 4, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1), e(3) = 6, e(2) = 2, e(1) = 0, e(0) = 0
 
+mov $2,2
 mul $0,2
-mov $1,$0
-trn $0,1
-seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
-add $0,$1
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  sub $1,6
+  div $1,4
+  max $2,4
+  add $4,$3
+  bin $3,$2
+  add $3,$1
+  add $3,$4
+  gcd $3,4
+  mul $2,$3
+  mul $2,$3
+  div $3,2
+  mul $3,2
+lpe
+mov $0,$4
+div $0,2
+add $0,1

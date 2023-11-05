@@ -1,19 +1,17 @@
 ; A002384: Numbers m such that m^2 + m + 1 is prime.
-; Submitted by Science United
+; Submitted by Wojciech Duda
 ; 1,2,3,5,6,8,12,14,15,17,20,21,24,27,33,38,41,50,54,57,59,62,66,69,71,75,77,78,80,89,90,99,101,105,110,111,117,119,131,138,141,143,147,150,153,155,161,162,164,167,168,173,176,188,189,192,194,203,206,209,215,218,231,236,245,246,266,272,278,279,287,288,290,293,309,314,329,332,336,342
 
-mov $4,4
-add $0,1
-mov $2,5
+add $0,2
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
   seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  add $4,4
+  add $4,2
   sub $0,$1
   add $2,$4
   sub $3,$0
 lpe
 mov $0,$4
-div $0,4
+div $0,2

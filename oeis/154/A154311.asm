@@ -8,7 +8,10 @@ pow $2,2
 lpb $2
   mov $5,$1
   mul $5,2
-  seq $5,173919 ; Numbers that are prime or one less than a prime.
+  mov $6,$5
+  seq $6,93515 ; Numbers k such that either k or k-1 is a prime.
+  mov $5,$6
+  sub $5,1
   seq $5,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mov $3,$1
   add $3,1

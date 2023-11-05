@@ -1,24 +1,31 @@
 ; A136063: Mother primes of order 4.
-; Submitted by respawner
+; Submitted by skildude
 ; 19,37,109,163,199,271,379,523,541,631,739,919,1009,1171,1459,1549,1621,1783,1999,2053,2089,2143,2161,2251,2521,2539,2791,2971,3169,3673,3889,3943,4159,4483,4519,4861,5059,5113,5563,5779,5869,5923,6211,6301,6373,6679,6841,6949,7669,7723,7759,8191,8263,8353,8461,8731,8839,9109,9181,9343,9433,9613,9811,9829,9973,10099,10369,10459,10531,10729,10909,11071,11503,11593,11701,11719,11863,12241,12421,12583
 
 mov $2,$0
-add $2,2
-pow $2,2
+add $2,8
+pow $2,4
 lpb $2
-  max $3,$5
-  mul $3,4
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$3
-  add $1,16
+  add $3,1
+  mov $7,$6
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $7,$3
+  mul $7,$6
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  add $1,2
+  mov $3,8
   mov $4,$0
   max $4,0
   cmp $4,$0
+  mov $7,$5
   mul $2,$4
-  sub $2,1
-  add $5,$1
-  sub $5,2
-  add $1,2
+  sub $2,17
+  mov $5,1
+  add $6,$7
 lpe
 mov $0,$1
-add $0,1
+sub $0,6
+div $0,4
+mul $0,18
+add $0,19

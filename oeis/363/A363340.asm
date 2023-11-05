@@ -1,5 +1,5 @@
 ; A363340: a(n) is the smallest positive integer such that a(n) * n is the sum of two squares.
-; Submitted by thorsam
+; Submitted by Obi1987
 ; 1,1,3,1,1,3,7,1,1,1,11,3,1,7,3,1,1,1,19,1,21,11,23,3,1,1,3,7,1,3,31,1,33,1,7,1,1,19,3,1,1,21,43,11,1,23,47,3,1,1,3,1,1,3,11,7,57,1,59,3,1,31,7,1,1,33,67,1,69,7,71,1,1,1,3,19,77,3,79
 
 add $0,1
@@ -27,6 +27,7 @@ lpb $3
   mov $7,$0
   cmp $7,1
   cmp $7,0
+  sub $3,1
   sub $3,$7
 lpe
 mov $0,$1

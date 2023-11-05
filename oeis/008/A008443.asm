@@ -8,7 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,5883 ; Theta series of square lattice with respect to deep hole.
+  mul $2,4
+  seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
+  mul $2,4
   add $4,1
   add $1,$2
   mov $3,$4

@@ -1,18 +1,21 @@
 ; A285076: 1-limiting word of the morphism 0->10, 1-> 010.
-; Submitted by ChelseaOilman
+; Submitted by LCB001
 ; 1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0
-; Formula: a(n) = ((-max(n-1,0)+n)*(A001951(max(n-1,0)+1)+A001951(max(n-1,0))+4)+1)%2
+; Formula: a(n) = ((b(n)+1)%2+2)%2, b(n) = (-c(n-1)+b(n-1)-1)/2, b(2) = -3, b(1) = -1, b(0) = 0, c(n) = 2*gcd((-c(n-1)+b(n-1)-1)/2+d(n-1),2)*c(n-1), c(2) = 8, c(1) = 4, c(0) = 2, d(n) = 2*gcd((-c(n-1)+b(n-1)-1)/2+d(n-1),2), d(2) = 2, d(1) = 2, d(0) = 0
 
-mov $1,$0
-trn $0,1
-sub $1,$0
-mov $2,$0
-seq $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mov $2,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  sub $1,1
+  div $1,2
+  add $3,$1
+  gcd $3,2
+  mul $3,2
+  mul $2,$3
+lpe
+mov $0,$1
 add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-add $0,$2
-add $0,3
-mul $0,$1
-add $0,1
+mod $0,2
+add $0,2
 mod $0,2
