@@ -1,4 +1,4 @@
-; A108644: Square table T(n,n) read by ascending antidiagonals: T(i,i)=i*i, if i>j T(i,j)=i*(i-1)+j, if j>i T(i,j)=(j-1)*(j-1)+i.
+; A108644: Square array A(n,k) read by ascending antidiagonals: A(n,n) = n^2, if n>k: A(n,k) = n*(n-1) + k, if k>n: A(n,k) = n + (k-1)^2.
 ; Submitted by Penguin
 ; 1,3,2,7,4,5,13,8,6,10,21,14,9,11,17,31,22,15,12,18,26,43,32,23,16,19,27,37,57,44,33,24,20,28,38,50,73,58,45,34,25,29,39,51,65,91,74,59,46,35,30,40,52,66,82,111,92,75,60,47,36,41,53,67,83,101
 

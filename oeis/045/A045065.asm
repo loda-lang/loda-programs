@@ -1,4 +1,4 @@
-; A045065: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 0 and 4, respectively.
+; A045065: Numbers whose base-4 representation contains no 0's and exactly four 3's.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 255,511,767,895,959,991,1007,1015,1019,1021,1022,1535,1791,1919,1983,2015,2031,2039,2043,2045,2046,2559,2815,2943,3007,3039,3055,3063,3067,3069,3070,3455,3519,3551,3567,3575,3579,3581
 

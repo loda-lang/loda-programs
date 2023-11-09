@@ -4,10 +4,6 @@
 ; Formula: a(n) = 8388608*A097932(n)-79691776
 
 seq $0,97932 ; Positive integers n such that 2n-19 is prime.
-add $0,3
-mov $1,1
-add $1,$0
-mov $0,$1
 mul $0,2
-sub $0,27
+sub $0,19
 mul $0,4194304

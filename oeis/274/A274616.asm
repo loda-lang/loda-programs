@@ -6,7 +6,6 @@ add $1,$0
 cmp $0,4
 sub $0,$1
 sub $1,$0
-add $1,90
 div $1,3
-sub $1,39
+sub $1,9
 mov $0,$1
