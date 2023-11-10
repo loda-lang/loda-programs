@@ -1,14 +1,14 @@
 ; A092256: Nonprimes of form 6k+5.
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by arkiss
 ; 35,65,77,95,119,125,143,155,161,185,203,209,215,221,245,275,287,299,305,323,329,335,341,365,371,377,395,407,413,425,437,455,473,485,497,515,527,533,539,545,551,575,581,605,611,623,629,635,665,671,689,695,707,713,725,731,737,749,755,767,779,785,791,803,815,833,845,851,869,875,893,899,905,917,923,935,959,965,989,995
 
 add $0,1
 mov $1,28
 mov $2,$0
-pow $2,5
+pow $2,4
 lpb $2
   mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   cmp $3,0
   sub $0,$3
   add $1,6

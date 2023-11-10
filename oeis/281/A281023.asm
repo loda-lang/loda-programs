@@ -1,10 +1,20 @@
 ; A281023: Partial sums of A067392.
 ; 0,2,5,11,16,31,38,58,76,111,122,176,189,252,312,384,401,518,537,667,772,915,938,1142,1217,1412,1547,1785,1814,2159,2190,2462,2693,3016,3226,3676,3713,4112,4424,4924,4965,5616,5659,6209,6704,7279,7326,8118,8314
+; Formula: a(n) = ((n+1)*(-A109606(n)+n)+n+1)/2+a(n-1), a(0) = 0
 
 lpb $0
+  mov $4,$0
+  seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  mov $5,$0
+  sub $5,$4
   mov $2,$0
-  seq $2,67392 ; Sum of numbers <= n which have common prime factors with n.
+  add $2,1
+  mul $2,$5
+  add $2,$0
+  mov $3,1
+  add $3,$2
+  div $3,2
   sub $0,1
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1

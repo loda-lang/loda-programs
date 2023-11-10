@@ -4,6 +4,6 @@
 ; Formula: a(n) = A287730(n)*A001511(n)
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,287730 ; The s-fusc function s(n) = a(n): a(1) = 0, a(2n) = A287729(n), a(2n+1) = A287729(n) + A287729(n+1).
 mul $0,$1

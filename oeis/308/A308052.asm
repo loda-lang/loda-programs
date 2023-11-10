@@ -1,5 +1,5 @@
 ; A308052: a(n) = nextprime(ceiling(n/2)-1), where nextprime(n) is the smallest prime > n.
-; Submitted by Jamie Morken(l1)
+; Submitted by Kotenok2000
 ; 2,2,2,2,3,3,5,5,5,5,7,7,7,7,11,11,11,11,11,11,11,11,13,13,13,13,17,17,17,17,17,17,17,17,19,19,19,19,23,23,23,23,23,23,23,23,29,29,29,29,29,29,29,29,29,29,29,29,31,31,31,31,37,37,37,37,37,37
 
 div $0,2
@@ -11,7 +11,7 @@ mov $4,$1
 lpb $4
   sub $4,1
   mov $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $5,166260 ; a(n) = A089026(n) - 1.
   add $3,1
   add $4,$5
 lpe

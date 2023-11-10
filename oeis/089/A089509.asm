@@ -1,6 +1,6 @@
 ; A089509: a(n) = Kronecker(7/n).
-; Submitted by ChelseaOilman
-; 1,1,1,1,-1,1,0,1,1,-1,-1,1,-1,0,-1,1,-1,1,1,-1,0,-1,-1,1,1,-1,1,0,1,-1,1,1,-1,-1,0,1,1,1,-1,-1,-1,0,-1,-1,-1,-1,1,1,0,1,-1,-1,1,1,1,0,1,1,1,-1,-1,1,0,1,1,-1,-1,-1,-1,0,-1,1,-1,1,1,1,0,-1,-1,-1,1,-1,1,0,1,-1,1,-1,-1,-1,0,-1,1,1,-1,1,-1,0,-1,1
+; Submitted by Kotenok2000
+; 1,1,1,1,-1,1,0,1,1,-1,-1,1,-1,0,-1,1,-1,1,1,-1,0,-1,-1,1,1,-1,1,0,1,-1,1,1,-1,-1,0,1,1,1,-1,-1,-1,0,-1,-1,-1,-1,1,1,0,1,-1,-1,1,1,1,0,1,1,1,-1,-1,1,0,1,1,-1,-1,-1,-1,0,-1,1,-1,1,1,1,0,-1,-1,-1
 
 mov $1,1
 mov $2,2
@@ -18,7 +18,7 @@ lpb $0
   sub $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   sub $3,1
-  seq $3,91399 ; a(n) = Product_{ p | n } (1 + Legendre(7,p) ).
+  seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
   sub $3,1
   lpb $0
     dif $0,$2

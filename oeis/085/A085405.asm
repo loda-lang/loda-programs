@@ -1,15 +1,10 @@
 ; A085405: Common residues of binomial(3n+2,n+1)/(3n+2) modulo 2.
-; Submitted by Ron Shurtz [BlackOps]
+; Submitted by [AF] Kalianthys
 ; 1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0
+; Formula: a(n) = binomial(3*n+1,n)%2
 
-mul $0,2
+mov $1,$0
+mul $0,3
 add $0,1
-lpb $0
-  mov $2,$0
-  mod $2,4
-  cmp $2,3
-  div $0,2
-  add $1,$2
-lpe
-mov $0,$1
-cmp $0,0
+bin $0,$1
+mod $0,2

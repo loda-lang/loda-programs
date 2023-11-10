@@ -4,12 +4,11 @@
 ; Formula: a(n) = 3*binomial(n+1,2)*(n^2+binomial(n+1,2))+3*n+3
 
 mov $1,$0
-mov $2,$0
-add $0,1
-bin $0,2
 pow $1,2
+add $0,1
+mov $2,$0
+bin $0,2
 add $1,$0
 mul $0,$1
 add $0,$2
 mul $0,3
-add $0,3

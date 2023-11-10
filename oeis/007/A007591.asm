@@ -1,5 +1,5 @@
 ; A007591: Numbers k such that k^2 + 4 is prime.
-; Submitted by [AF] Kalianthys
+; Submitted by Kotenok2000
 ; 1,3,5,7,13,15,17,27,33,35,37,45,47,57,65,67,73,85,87,95,97,103,115,117,125,135,137,147,155,163,167,177,183,193,203,207,215,217,233,235,243,245,253,255,265,267,275,277,287,293,303,307,313,317,347,357,373,375,385,403,407,423,425,427,435,447,453,455,463,475,477,483,487,495,503,507,533,547,573,577
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

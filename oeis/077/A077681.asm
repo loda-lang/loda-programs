@@ -17,7 +17,7 @@ lpb $2
   add $3,$6
   mov $5,$3
   sub $3,1
-  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  seq $3,5361 ; Product of exponents of prime factorization of n.
   cmp $3,1
   sub $0,$3
   add $1,1

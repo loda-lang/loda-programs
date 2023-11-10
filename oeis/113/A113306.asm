@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,109040 ; Expansion of 1-eta(q)eta(q^3)(eta(q^4)eta(q^6))^2/eta(q^12)^2 in powers of q.
+    seq $7,109040 ; Expansion of 1-eta(q)*eta(q^3)*(eta(q^4)*eta(q^6))^2/eta(q^12)^2 in powers of q.
     mov $9,10
     add $9,$5
     mul $7,$$9

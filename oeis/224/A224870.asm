@@ -1,5 +1,5 @@
 ; A224870: Numbers n such that n^2 + (n+3)^2 is prime.
-; Submitted by zombie67 [MM]
+; Submitted by Science United
 ; 1,2,5,7,10,11,16,20,22,25,37,40,41,46,50,55,61,62,65,77,85,91,92,101,106,107,116,122,125,127,130,131,142,145,146,152,155,161,172,181,182,187,196,197,206,220,221,232,235,241,242,257,260,262,265,271,275,280,281,286,295,310,317,325,326,346,356,362,380,382,386,391,397,400,406,410,416,425,427,431
 
 add $0,1
@@ -9,7 +9,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,4
   sub $0,$1
   add $2,$4

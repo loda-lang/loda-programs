@@ -1,5 +1,5 @@
 ; A347342: a(n) = prime(n) mod floor(prime(n) / n).
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,0,0,0,1,1,1,1,1,1,1,1,2,1,2,2,2,1,1,2,1,1,2,2,1,2,1,2,1,2,3,3,1,3,1,3,1,3,3,1,3,1,3,1,1,3,3,3,3,1,1,3,1,3,1,3,1,3,1,1,3,1,3,3,1,1,3,1,2,1,1,3,2,3,4,3,4,2,1,4
 
 mov $1,$0
@@ -12,7 +12,7 @@ mov $5,$3
 pow $5,4
 lpb $5
   max $6,$4
-  seq $6,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  seq $6,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   mul $6,2
   sub $3,$6
   add $4,2

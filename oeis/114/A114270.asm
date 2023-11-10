@@ -1,5 +1,5 @@
 ; A114270: Numbers k such that k^2 + 7 is prime.
-; Submitted by Simon Strandgaard
+; Submitted by Kotenok2000
 ; 0,2,4,6,8,10,12,16,18,22,26,30,32,34,36,38,40,48,52,58,60,62,66,74,76,78,100,106,110,114,116,118,120,122,124,132,136,138,144,146,148,158,162,164,176,184,186,190,192,194,206,208,216,220,228,232,248,250,256,258,260,270,274,278,282,296,298,300,320,330,344,346,352,356,360,366,368,374,380,382
 
 add $0,1
@@ -9,7 +9,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

@@ -1,19 +1,19 @@
 ; A088502: Numbers n such that (n^2 - 5)/4 is prime.
-; Submitted by Christian Krause
+; Submitted by [AF] Kalianthys
 ; 5,7,9,11,13,17,19,21,23,27,31,33,39,41,43,49,53,57,61,63,71,77,79,83,89,91,93,97,101,107,109,111,113,119,121,129,131,133,137,141,153,167,171,173,179,187,189,193,201,203,207,229,231,241,251,253,261,263,269,277,281,283,289,291,297,299,307,309,311,317,319,321,327,329,339,343,349,353,361,363
 
 add $0,1
-mov $1,2
-mov $3,11
-mov $2,$0
-pow $2,4
-lpb $2
-  max $3,$4
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$3
-  add $1,2
-  sub $2,$0
-  add $4,$1
+mov $4,4
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,2
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$1
+mov $0,$4
 add $0,1

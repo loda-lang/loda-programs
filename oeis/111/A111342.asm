@@ -11,7 +11,7 @@ lpb $4
   sub $0,$4
   mov $1,$0
   add $1,$4
-  seq $0,90351 ; Satisfies A^3 = BINOMIAL(A^2).
+  seq $0,90351 ; G.f. satisfies A^3 = BINOMIAL(A^2).
   bin $1,$4
   mul $1,$0
   add $3,$1

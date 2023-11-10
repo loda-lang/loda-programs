@@ -1,5 +1,5 @@
 ; A114273: Numbers k such that k^2 + 10 is prime.
-; Submitted by [AF] Kalianthys
+; Submitted by skildude
 ; 1,3,7,11,13,27,31,39,49,53,57,59,71,77,81,83,91,97,99,101,123,127,129,141,151,157,161,169,171,179,181,189,207,209,211,223,227,237,239,249,253,291,311,319,333,343,363,367,379,393,403,413,423,427,437,447,449,469,487,517,521,531,539,543,591,599,601,603,609,613,619,631,657,669,679,697,699,731,741,743
 
 add $0,1
@@ -8,7 +8,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

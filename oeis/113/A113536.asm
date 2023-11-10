@@ -1,5 +1,5 @@
 ; A113536: Numbers k such that k^2 + 13 is prime.
-; Submitted by mmonnin
+; Submitted by Kotenok2000
 ; 0,2,4,10,12,16,18,28,40,42,44,46,60,68,72,82,84,88,94,108,110,114,116,122,126,142,144,152,158,180,192,194,198,200,220,222,264,266,268,282,284,296,298,332,336,340,354,378,380,418,420,430,434,446,464,466,486,488,490,500,502,506,516,530,544,548,550,560,562,574,588,604,612,618,626,684,686,704,724,742
 
 add $0,1
@@ -9,7 +9,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4

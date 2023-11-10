@@ -1,5 +1,5 @@
 ; A090696: Numbers k such that k^2 - 11 is a prime.
-; Submitted by emoga
+; Submitted by Kotenok2000
 ; 4,8,10,18,20,28,32,38,42,48,52,62,70,78,80,90,118,120,130,148,158,160,172,182,200,210,218,228,230,232,238,248,252,258,260,262,270,272,290,298,300,302,318,340,342,350,358,360,370,372,378,388,398,410,412,420,438,442,470,472,480,490,498,500,510,512,560,568,570,588,592,598,602,640,648,662,690,692,700,720
 
 add $0,1
@@ -9,13 +9,12 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   add $4,8
   sub $0,$1
   add $2,$4
   sub $3,$0
 lpe
 mov $0,$4
-div $0,8
+div $0,4
 add $0,1
-mul $0,2

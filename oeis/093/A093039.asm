@@ -5,4 +5,16 @@ mov $1,$0
 add $1,$0
 add $0,$1
 div $0,2
-seq $0,189374 ; Expansion of 1/((1-x)^5*(x^2+x+1)^3).
+add $0,1
+lpb $0
+  mov $3,$0
+  sub $0,1
+  trn $0,2
+  mov $4,2
+  add $4,$2
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  add $5,$4
+lpe
+mov $0,$5

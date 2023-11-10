@@ -1,14 +1,13 @@
 ; A334764: a(n) = Product_{k=1..n} d(2*k - 1), where d() is the number of divisors function A000005.
-; Submitted by Jamie Morken(s4)
+; Submitted by Kotenok2000
 ; 1,2,4,8,24,48,96,384,768,1536,6144,12288,36864,147456,294912,589824,2359296,9437184,18874368,75497472,150994944,301989888,1811939328,3623878656,10871635968,43486543872,86973087744,347892350976,1391569403904,2783138807808,5566277615616,33397665693696,133590662774784
-; Formula: a(n) = A000005(2*n)*a(n-1), a(0) = 1
 
 mov $1,1
-lpb $0
-  mov $2,$0
-  mul $2,2
-  seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $2,$0
+lpb $2
+  seq $2,99774 ; Number of divisors of 2*n-1.
   sub $0,1
   mul $1,$2
+  mov $2,$0
 lpe
 mov $0,$1
