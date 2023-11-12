@@ -1,5 +1,5 @@
 ; A049921: a(n) = a(1) + a(2) + ... + a(n-1) - a(m) for n >= 4, where m = 2^(p+1) + 2 - n and p is the unique integer such that 2^p < n - 1 <= 2^(p+1), starting with a(1) = 1, a(2) = 3, and a(3) = 2.
-; Submitted by QuentinVR
+; Submitted by Kotenok2000
 ; 1,3,2,3,8,14,29,57,116,176,380,775,1556,3117,6235,12469,24940,37412,81058,165234,332029,664839,1330073,2660350,5320760,10641579,21283186,42566387,85132780,170265565,340531131,681062261,1362124524
 
 mov $3,1
@@ -12,7 +12,7 @@ lpb $0
     mov $5,$4
     mov $7,$4
     add $7,$2
-    seq $7,593 ; Sum of odd divisors of n.
+    seq $7,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
     cmp $7,1
     add $7,1
     cmp $7,1

@@ -1,5 +1,5 @@
 ; A075141: Numerator of the generalized harmonic number H(n,5,3).
-; Submitted by Jamie Morken(w1)
+; Submitted by Science United
 ; 1,11,167,553,13655,100967,1160869,22885339,1015565041,2087559455,113349261019,3358906732007,1141662738301,19755194336321,1465720275945305,495933038673019,41736492051778129,3843447765945901
 
 mov $3,-1
@@ -8,9 +8,8 @@ lpb $0
   mov $2,$0
   sub $0,1
   max $1,1
-  mul $2,3
-  add $2,$0
-  add $2,$0
+  mul $2,5
+  sub $2,2
   mul $3,$2
   add $3,$1
   mul $1,$2
