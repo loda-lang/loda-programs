@@ -1,7 +1,7 @@
 ; A005860: The coding-theoretic function A(n,12,10).
 ; Submitted by Jamie Morken(w1)
 ; 1,1,1,1,1,1,2,2,3,4,6,7,11,16,24
-; Formula: a(n) = (3*((2*(c(n+5)/36)-11)/2)+15)/3+1, b(n) = b(n-1)+b(n-3), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = b(n-1), c(2) = 1, c(1) = 1, c(0) = 1
+; Formula: a(n) = (2*(c(n+5)/36)-11)/2+6, b(n) = b(n-1)+b(n-3), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = b(n-1), c(2) = 1, c(1) = 1, c(0) = 1
 
 mov $2,1
 mov $4,1
@@ -18,7 +18,4 @@ div $0,36
 mul $0,2
 sub $0,11
 div $0,2
-mul $0,3
-add $0,15
-div $0,3
-add $0,1
+add $0,6

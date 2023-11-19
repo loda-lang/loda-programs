@@ -13,10 +13,6 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  mul $0,200
-  sub $0,200
-  div $0,200
-  add $0,1
   mul $1,$0
   max $1,$0
 lpe

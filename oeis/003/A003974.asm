@@ -20,7 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
-  seq $0,3962 ; Completely multiplicative with a(p(k)) = floor( (p(k+1)+1)/2 ) for k-th prime p(k).
+  seq $0,3962 ; Completely multiplicative with a(prime(k)) = floor( (prime(k+1)+1)/2 ) for k-th prime prime(k).
   mul $0,$4
   add $1,$0
 lpe

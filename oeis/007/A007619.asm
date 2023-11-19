@@ -5,5 +5,5 @@
 
 seq $0,40 ; The prime numbers.
 sub $0,1
-seq $0,226198 ; Floor((n-1)!/n).
+seq $0,226198 ; a(n) = floor((n-1)!/n).
 add $0,1

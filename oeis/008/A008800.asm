@@ -10,9 +10,7 @@ lpb $1
   mov $3,$1
   div $3,7
   add $3,$4
-  add $3,2
   div $3,2
-  sub $3,1
   sub $1,1
   add $2,$3
 lpe

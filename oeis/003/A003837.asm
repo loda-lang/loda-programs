@@ -18,6 +18,4 @@ lpb $0
 lpe
 gcd $1,$2
 mov $0,$1
-sub $0,8
 div $0,8
-add $0,1

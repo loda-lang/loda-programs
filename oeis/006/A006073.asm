@@ -1,4 +1,4 @@
-; A006073: Numbers n such that n, n+1 and n+2 all have same number of distinct prime divisors.
+; A006073: Numbers k such that k, k+1 and k+2 all have the same number of distinct prime divisors.
 ; Submitted by arkiss
 ; 2,3,7,20,33,34,38,44,50,54,55,56,74,75,85,86,91,92,93,94,98,115,116,117,122,133,134,141,142,143,144,145,146,158,159,160,175,176,183,187,200,201,205,206,207,212,213,214,215,216,217,224,235,247,248,295,296,297,301,302,303,319,323,324,325,326,327,332,333,375,386,391,392,393,403,411,415,422,423,445
 

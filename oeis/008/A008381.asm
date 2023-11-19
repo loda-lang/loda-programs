@@ -8,8 +8,12 @@ lpb $0
   sub $0,1
   mov $2,$1
   mov $1,$3
-  trn $1,$0
-  seq $1,8497 ; a(n) = floor(n/5)*floor((n+1)/5).
+  sub $1,$0
+  mov $4,$1
+  add $4,1
+  div $4,5
+  div $1,5
+  mul $1,$4
   mul $2,$1
   add $3,1
 lpe

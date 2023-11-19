@@ -1,6 +1,6 @@
-; A011978: Covering numbers C(n,6,2) (next term is <= 15).
+; A011978: Covering numbers C(n,6,2).
 ; Submitted by Simon Strandgaard
-; 1,3,3,3,4,6,6,7,7,10,10,12,12
+; 1,3,3,3,4,6,6,7,7,10,10,12,12,15,16,17,19
 
 add $0,1
 mov $2,$0

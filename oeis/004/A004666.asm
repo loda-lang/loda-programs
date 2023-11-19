@@ -1,4 +1,4 @@
-; A004666: Powers of 3 written in base 12. (Next term contains a non-decimal character).
+; A004666: Powers of 3 written in base 12. (Next term contains a non-decimal character.)
 ; Submitted by LCB001
 ; 1,3,9,23,69,183,509,1323,3969
 

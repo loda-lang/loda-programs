@@ -19,9 +19,7 @@ lpb $5
   sub $0,$2
   seq $0,56493 ; Number of primitive (period n) periodic palindromes using a maximum of two different symbols.
   mul $0,$6
-  sub $0,2
   div $0,2
-  add $0,1
   mul $2,$0
   add $4,$2
 lpe
@@ -29,7 +27,4 @@ mov $0,$4
 sub $0,1
 sub $1,$0
 sub $0,$1
-mul $0,3
-add $0,3
-div $0,3
-add $0,1
+add $0,2
