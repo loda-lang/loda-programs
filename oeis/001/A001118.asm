@@ -24,11 +24,8 @@ lpb $4
   mov $1,$7
   mul $1,3
   sub $2,$1
-  div $2,2
   mov $1,$2
-  sub $1,3
-  div $1,3
-  add $1,1
+  div $1,6
   mul $3,5
   add $3,$1
 lpe

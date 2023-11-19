@@ -1,6 +1,6 @@
 ; A000791: Ramsey numbers R(3,n).
 ; Submitted by USTL-FIL (Lille Fr)
-; 3,6,9,14,18,23,28,36
+; 1,3,6,9,14,18,23,28,36
 
 mov $4,$0
 mov $2,$0

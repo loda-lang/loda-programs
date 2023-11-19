@@ -12,7 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,172 ; Franel number a(n) = Sum_{k = 0..n} binomial(n,k)^3.
+  seq $0,172 ; The Franel number a(n) = Sum_{k = 0..n} binomial(n,k)^3.
   mul $1,$0
   mul $3,-2
   add $3,$1

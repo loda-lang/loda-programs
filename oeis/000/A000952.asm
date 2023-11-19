@@ -1,4 +1,4 @@
-; A000952: Numbers n == 2 (mod 4) that are the orders of conference matrices.
+; A000952: Numbers k == 2 (mod 4) that are the orders of conference matrices.
 ; Submitted by BlisteringSheep
 ; 2,6,10,14,18,26,30,38,42,46,50,54,62
 ; Formula: a(n) = 4*((9*n+27)/11)+4*((5*n-1)/11)-6

@@ -4,4 +4,4 @@
 ; Formula: a(n) = A023037(A000040(n))
 
 seq $0,40 ; The prime numbers.
-seq $0,23037 ; a(n) = n^0+n^1+...+n^(n-1), or a(n) = (n^n-1)/(n-1) with a(0)=0; a(1)=1.
+seq $0,23037 ; a(n) = n^0 + n^1 + ... + n^(n-1), or a(n) = (n^n-1)/(n-1) with a(0)=0; a(1)=1.

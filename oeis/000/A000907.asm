@@ -1,4 +1,4 @@
-; A000907: Second order reciprocal Stirling number (Fekete) [[2n+2, n]]. The number of n-orbit permutations of a (2n+2)-set with at least 2 elements in each orbit. Also known as associated Stirling numbers of the first kind (e.g., Comtet).
+; A000907: Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+2, n]]. The number of n-orbit permutations of a (2n+2)-set with at least 2 elements in each orbit. Also known as associated Stirling numbers of the first kind (e.g., Comtet).
 ; Submitted by Odd-Rod
 ; 6,130,2380,44100,866250,18288270,416215800,10199989800,268438920750,7562120816250,227266937597700,7262844156067500,246045975136211250,8810836639999143750,332624558868351750000,13205706717164131170000
 

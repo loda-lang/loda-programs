@@ -1,4 +1,4 @@
-; A002271: All odd numbers k, 1 < k < n, relatively prime to n are primes.
+; A002271: Numbers m such that all odd numbers k, 1 < k < m, relatively prime to m are primes.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,4,5,6,7,8,9,12,15,18,21,24,30,45,105
 
@@ -20,6 +20,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$1
-sub $0,2
 div $0,2
-add $0,1

@@ -6,7 +6,28 @@ mov $1,2
 pow $1,$0
 pow $1,2
 add $0,1
-seq $0,436 ; Generalized Euler numbers c(3,n).
+mul $0,2
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  div $7,2
+  add $7,$3
+  mul $7,2
+  add $8,2
+  mov $3,$2
+  add $3,$8
+  pow $3,$5
+  sub $3,$7
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+gcd $6,$0
+mov $0,$6
 div $0,$1
 div $0,8
 mul $0,3

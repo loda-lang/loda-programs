@@ -1,4 +1,4 @@
-; A003277: Cyclic numbers: k such that k and phi(k) are relatively prime; also k such that there is just one group of order k, i.e., A000001(n) = 1.
+; A003277: Cyclic numbers: k such that k and phi(k) are relatively prime; also k such that there is just one group of order k, i.e., A000001(k) = 1.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,3,5,7,11,13,15,17,19,23,29,31,33,35,37,41,43,47,51,53,59,61,65,67,69,71,73,77,79,83,85,87,89,91,95,97,101,103,107,109,113,115,119,123,127,131,133,137,139,141,143,145,149,151,157,159,161,163,167,173,177,179,181,185,187,191,193,197,199,209,211,213,215,217,221,223,227,229,233
 
