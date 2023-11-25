@@ -11,10 +11,8 @@ lpb $0
   mov $3,$0
   seq $3,14191 ; Inverse of 182nd cyclotomic polynomial.
   mul $3,$1
-  add $5,4
   mov $0,2
   add $2,$3
-  mov $4,$5
   sub $4,4
 lpe
 mov $0,$2

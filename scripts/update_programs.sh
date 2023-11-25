@@ -139,6 +139,9 @@ for f in $files; do
   if [ "$commit_staged" != "y" ]; then
     clear
   fi
+  if ((num_updated >= 1000)); then
+    break
+  fi
   if git diff -U1000 --exit-code -- $f > /dev/null; then
     echo "Already staged: $f"
     ((num_updated++))

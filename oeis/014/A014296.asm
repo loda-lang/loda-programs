@@ -13,7 +13,11 @@ lpb $0
   add $5,41
   mov $2,-1
   pow $2,$3
-  seq $3,14590 ; Inverse of 581st cyclotomic polynomial.
+  seq $3,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  mov $6,73
+  mod $6,$3
+  seq $6,292438 ; Characteristic function of non-isolated nonprimes.
+  mov $3,$6
   mul $3,$2
   mov $4,$5
 lpe
