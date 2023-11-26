@@ -10,7 +10,3 @@ seq $1,62570 ; a(n) = phi(2*n).
 mov $0,$1
 sub $0,1
 seq $0,61026 ; Smallest number m such that phi(m) is divisible by n, where phi = Euler totient function A000010.
-mul $0,2
-sub $0,2
-div $0,2
-add $0,1
