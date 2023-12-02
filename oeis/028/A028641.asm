@@ -6,7 +6,7 @@
 mov $1,$0
 trn $0,1
 mov $2,$0
-seq $0,13957 ; sigma_9(n), the sum of the 9th powers of the divisors of n.
+seq $0,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
 mod $0,19
 mul $0,2
 sub $0,1

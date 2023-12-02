@@ -10,11 +10,7 @@ lpb $2
   add $3,2
   seq $3,40 ; The prime numbers.
   pow $3,2
-  div $3,8
-  mul $3,2
-  sub $3,6
-  div $3,6
-  add $3,1
+  div $3,24
   add $3,$4
   gcd $3,2
   sub $0,$3

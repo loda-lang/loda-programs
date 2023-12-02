@@ -1,4 +1,4 @@
-; A035226: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 44.
+; A035226: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = 44.
 ; Submitted by Olde16
 ; 1,1,0,1,2,0,2,1,1,2,1,0,0,2,0,1,0,1,2,2,0,1,0,0,3,0,0,2,0,0,0,1,0,0,4,1,2,2,0,2,0,0,2,1,2,0,0,0,3,3,0,0,2,0,2,2,0,0,0,0,0,0,2,1,0,0,0,0,0,4,0,1,0,2,0,2,2,0,2,2
 

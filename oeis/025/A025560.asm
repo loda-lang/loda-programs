@@ -20,8 +20,4 @@ mov $1,$4
 sub $1,1
 div $1,$2
 add $1,1
-mul $1,8
 mov $0,$1
-sub $0,8
-div $0,8
-add $0,1

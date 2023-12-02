@@ -13,9 +13,7 @@ lpb $0
     gcd $3,$1
     div $1,11
     add $1,$3
-    add $1,2
     div $1,2
-    sub $1,1
     trn $2,10
     add $4,$1
   lpe

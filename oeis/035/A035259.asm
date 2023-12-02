@@ -6,7 +6,8 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,35202 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 20.
+  seq $3,50999 ; Sum of squares of odd divisors of n.
+  mod $3,5
   min $3,1
   sub $0,$3
   add $1,1

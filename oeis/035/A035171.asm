@@ -3,5 +3,5 @@
 ; 1,0,0,1,2,0,2,0,1,0,2,0,0,0,0,1,2,0,1,2,0,0,2,0,3,0,0,2,0,0,0,0,0,0,4,1,0,0,0,0,0,0,2,2,2,0,2,0,3,0,0,0,0,0,4,0,0,0,0,0,2,0,2,1,0,0,0,2,0,0,0,0,2,0,0,1,4,0,0,2
 ; Formula: a(n) = A013957(n)%19
 
-seq $0,13957 ; sigma_9(n), the sum of the 9th powers of the divisors of n.
+seq $0,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
 mod $0,19

@@ -12,7 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,13956 ; sigma_8(n), the sum of the 8th powers of the divisors of n.
+    seq $7,13956 ; a(n) = sigma_8(n), the sum of the 8th powers of the divisors of n.
     mov $9,10
     add $9,$5
     mul $7,$$9

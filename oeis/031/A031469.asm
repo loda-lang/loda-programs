@@ -10,9 +10,8 @@ lpb $2
   mov $3,$1
   seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
   seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
-  add $3,8
   div $3,2
-  sub $3,7
+  sub $3,3
   cmp $3,1
   sub $0,$3
   mov $4,$0
@@ -23,7 +22,4 @@ lpb $2
 lpe
 mov $0,$1
 div $0,4
-mul $0,4
-sub $0,1016
-div $0,4
-add $0,255
+add $0,1

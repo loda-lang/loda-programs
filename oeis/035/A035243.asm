@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,13957 ; sigma_9(n), the sum of the 9th powers of the divisors of n.
+  seq $3,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
   mod $3,19
   min $3,1
   sub $0,$3

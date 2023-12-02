@@ -9,9 +9,7 @@ lpb $0
 lpe
 sub $2,$0
 min $2,$0
-mul $2,2
-add $2,2
-div $2,2
+add $2,1
 mov $4,$3
 mov $0,$2
 lpb $0

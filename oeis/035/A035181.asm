@@ -4,6 +4,6 @@
 ; Formula: a(n) = A035154(n)*A001511(n)
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
 mul $0,$1

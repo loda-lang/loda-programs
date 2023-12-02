@@ -4,6 +4,6 @@
 ; Formula: a(n) = A053694(n)*A001511(n)
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,53694 ; Number of self-conjugate 5-core partitions of n.
 mul $0,$1

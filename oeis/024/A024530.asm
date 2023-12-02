@@ -12,9 +12,7 @@ lpb $0
   seq $2,40 ; The prime numbers.
   mul $5,$2
   mov $2,$5
-  sub $2,2
   div $2,2
-  add $2,1
   mul $3,$2
   mul $3,-1
   add $3,$1

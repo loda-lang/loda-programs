@@ -13,7 +13,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,109763 ; Primes repeated.
+  div $0,2
+  seq $0,40 ; The prime numbers.
   mul $1,$0
   add $3,$1
 lpe

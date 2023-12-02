@@ -1,10 +1,20 @@
 ; A026275: Sum of numbers between the two n's in A026272.
 ; Submitted by Simon Strandgaard
 ; 2,4,11,21,28,43,53,73,96,111,139,170,190,226,249,290,334,362,411,442,496,553,589,651,716,757,827,871,946,1024,1073,1156,1242,1296,1387,1444,1540,1639,1701,1805,1870,1979,2091,2161,2278
-; Formula: a(n) = -2*n+A026353(n+1)-2
+; Formula: a(n) = (6*(n+2)*(2*((55*n+110)/34)-n-1)-12)/12-2*n-2
 
 add $0,1
 mov $1,$0
 mul $1,2
-seq $0,26353 ; a(n) = sum of the numbers between the two n's in A026350.
+add $0,1
+mov $2,$0
+mul $0,55
+div $0,34
+mul $0,2
+add $0,1
+sub $0,$2
+mul $0,$2
+mul $0,6
+sub $0,12
+div $0,12
 sub $0,$1

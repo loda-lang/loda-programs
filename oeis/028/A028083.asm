@@ -9,7 +9,16 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,17933 ; Expansion of 1/((1-3x)(1-6x)(1-9x)).
+  add $0,2
+  mov $4,6
+  pow $4,$0
+  mov $5,3
+  pow $5,$0
+  add $5,1
+  bin $5,2
+  sub $5,$4
+  mov $0,$5
+  div $0,9
   mul $1,10
   add $1,$0
 lpe

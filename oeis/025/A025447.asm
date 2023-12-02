@@ -4,8 +4,8 @@
 
 seq $0,51343 ; Number of ways of writing n as a sum of 3 nonnegative cubes (counted naively).
 lpb $0
-  add $1,2
   trn $0,7
+  add $1,2
 lpe
 mov $0,$1
 div $0,2

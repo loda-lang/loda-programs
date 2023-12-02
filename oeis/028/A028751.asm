@@ -7,7 +7,8 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,70481 ; a(n) = n^3 mod 19.
+  pow $3,3
+  mod $3,19
   add $3,5
   gcd $3,2
   sub $0,$3

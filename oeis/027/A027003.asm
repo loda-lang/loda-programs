@@ -20,6 +20,4 @@ lpe
 mul $5,3
 add $5,$3
 mov $0,$5
-sub $0,21
 div $0,21
-add $0,1

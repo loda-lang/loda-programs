@@ -1,4 +1,4 @@
-; A033496: Numbers n such that initial number is largest number in trajectory of Collatz (3x+1) problem.
+; A033496: Numbers m that are the largest number in their Collatz (3x+1) trajectory.
 ; Submitted by Coleslaw
 ; 1,2,4,8,16,20,24,32,40,48,52,56,64,68,72,80,84,88,96,100,104,112,116,128,132,136,144,148,152,160,168,176,180,184,192,196,200,208,212,224,228,232,240,244,256,260,264,272,276,280,288,296,304,308,312,320,324,336,340,344,352,356,360,368,372,384,392,400,404,408,416,424,448,452,456,464,468,472,480,488
 

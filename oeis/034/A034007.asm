@@ -8,8 +8,13 @@ lpb $4
   sub $4,1
   mov $0,$2
   add $0,$4
-  trn $0,1
-  seq $0,45891 ; First differences of A045623.
+  sub $0,1
+  mov $5,2
+  pow $5,$0
+  add $0,4
+  mul $0,$5
+  add $0,4
+  div $0,8
   mov $3,$4
   mul $3,$0
   add $1,$3
