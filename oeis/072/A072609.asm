@@ -11,7 +11,10 @@ lpb $3
   mov $6,$0
   add $6,1
   mul $0,2
-  seq $0,173919 ; Numbers that are prime or one less than a prime.
+  mov $7,$0
+  seq $7,93515 ; Numbers k such that either k or k-1 is a prime.
+  mov $0,$7
+  sub $0,1
   mod $0,$6
   mod $0,2
   mov $2,$3

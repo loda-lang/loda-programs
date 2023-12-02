@@ -10,17 +10,13 @@ lpb $2
   mov $6,$1
   seq $6,154115 ; Numbers n such that n + 3 is prime.
   seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mul $6,3
   mov $3,$6
-  sub $3,6
-  div $3,3
-  add $3,2
-  mov $5,$3
   seq $3,30106 ; Base 7 reversal of n (written in base 10).
   mul $3,2
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,2
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

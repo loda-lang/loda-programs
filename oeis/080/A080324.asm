@@ -1,4 +1,4 @@
-; A080324: Union of even squarefree numbers (A001747) and squarefree numbers for which the number of prime factors is even (A030229).
+; A080324: Union of even squarefree numbers (A039956) and squarefree numbers for which the number of prime factors is even (A030229).
 ; Submitted by mmonnin
 ; 1,2,6,10,14,15,21,22,26,30,33,34,35,38,39,42,46,51,55,57,58,62,65,66,69,70,74,77,78,82,85,86,87,91,93,94,95,102,106,110,111,114,115,118,119,122,123,129,130,133,134,138,141,142,143,145,146,154,155,158,159,161
 

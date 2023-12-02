@@ -1,8 +1,8 @@
 ; A077373: Fibonacci numbers whose external digits as well as internal digits form a Fibonacci number.
 ; Submitted by Science United
 ; 0,1,1,2,3,5,8,13,21,34,55,89
+; Formula: a(n) = (min(n,n%2)*c(n)+b(n))/3, b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = b(n-2)+c(n-2), c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
-mov $1,0
 mov $2,3
 lpb $0
   sub $0,2

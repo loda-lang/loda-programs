@@ -5,7 +5,9 @@
 mov $1,3
 mov $2,$0
 lpb $2
-  seq $2,6450 ; Prime-indexed primes: primes with prime subscripts.
+  seq $2,40 ; The prime numbers.
+  sub $2,1
+  seq $2,40 ; The prime numbers.
   sub $0,1
   mul $1,$2
   mov $2,$0

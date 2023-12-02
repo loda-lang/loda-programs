@@ -9,8 +9,18 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,2
-  seq $0,73995 ; Number of strings of length n over GF(4) with trace 0 and subtrace 0.
+  sub $0,2
+  mov $5,2
+  pow $5,$0
+  add $0,2
+  pow $0,7
+  add $0,1
+  mod $0,4
+  mul $0,3
+  add $0,$5
+  mul $5,$0
+  mov $0,$5
+  div $0,4
   mov $2,$3
   mul $2,$0
   add $4,$2

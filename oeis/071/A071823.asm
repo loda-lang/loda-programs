@@ -7,7 +7,8 @@ lpb $4
   sub $4,1
   mov $0,$6
   sub $0,$4
-  seq $0,299766 ; Greatest odd noncomposite divisor of n.
+  seq $0,111089 ; Largest prime factor of 2n.
+  dif $0,2
   bin $0,2
   sub $0,1
   mov $3,$0

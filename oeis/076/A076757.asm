@@ -4,5 +4,5 @@
 ; Formula: a(n) = A064427(A077510(n))-1
 
 seq $0,77510 ; Numbers n such that n + pi(n) is a prime.
-seq $0,64427 ; (Number of primes <= n - 1) + n.
+seq $0,64427 ; a(n) = n + (number of primes < n).
 sub $0,1

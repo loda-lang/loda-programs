@@ -1,4 +1,4 @@
-; A077337: Numbers n such that n and R(n) both are squarefree where R(n) (A004086) is the digit reversal of n.
+; A077337: Numbers k such that k and R(k) both are squarefree where R(n) (A004086) is the digit reversal of n.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,5,6,7,10,11,13,14,15,17,19,22,26,30,31,33,34,35,37,38,39,41,43,47,51,53,55,58,59,62,66,70,71,73,74,77,78,79,83,85,87,91,93,95,97,101,102,103,105,106,107,109,110,111,113,114,115,118,119,122,123,127,129,130,131,133,134,137,138,141,142,143,145,146,149,151,154,155
 

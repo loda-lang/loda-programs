@@ -7,6 +7,5 @@ lpb $1
   trn $1,10
   mul $0,10
 lpe
-sub $0,20
 div $0,10
-add $0,1
+sub $0,1

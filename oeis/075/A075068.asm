@@ -11,6 +11,4 @@ lpb $0
   seq $2,151800 ; Least prime > n (version 2 of the "next prime" function).
 lpe
 mov $0,$1
-sub $0,12
 div $0,2
-add $0,6
