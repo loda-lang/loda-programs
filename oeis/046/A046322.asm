@@ -8,9 +8,5 @@ lpb $2
   mov $1,$0
   seq $1,46320 ; Odd numbers divisible by exactly 7 primes (counted with multiplicity).
 lpe
-mul $1,27
-sub $1,59049
-div $1,9
-add $1,6561
 mov $0,$1
-mul $0,3
+mul $0,9

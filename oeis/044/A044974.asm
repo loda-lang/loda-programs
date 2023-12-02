@@ -1,4 +1,4 @@
-; A044974: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 1 and 4, respectively.
+; A044974: Numbers whose base-3 representation contains exactly one 0 and four 1's.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 94,112,118,120,284,286,292,310,338,340,346,356,358,362,366,370,372,382,388,390,418,436,442,444,526,580,598,604,606,854,860,862,878,880,886,932,934,940,958,1016,1022,1024,1040,1042,1048
 

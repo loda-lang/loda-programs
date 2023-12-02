@@ -1,4 +1,4 @@
-; A045066: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 1 and 0, respectively.
+; A045066: Numbers whose base-4 representation contains exactly one 0 and no 3's.
 ; Submitted by HipsterDuRocher
 ; 0,4,8,17,18,20,24,33,34,36,40,69,70,73,74,81,82,84,88,97,98,100,104,133,134,137,138,145,146,148,152,161,162,164,168,277,278,281,282,293,294,297,298,325,326,329,330,337,338,340,344,353
 

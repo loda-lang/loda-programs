@@ -1,4 +1,4 @@
-; A043414: Numbers having two 5's in base 7.
+; A043414: Numbers whose base-7 representation contains exactly two 5's.
 ; Submitted by Science United
 ; 40,89,138,187,236,250,257,264,271,278,280,281,282,283,284,286,292,334,383,432,481,530,579,593,600,607,614,621,623,624,625,626,627,629,635,677,726,775,824,873,922,936,943,950,957,964
 

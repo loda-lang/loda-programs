@@ -1,4 +1,4 @@
-; A044983: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 3 and 3, respectively.
+; A044983: Numbers whose base-3 representation contains exactly three 0's and three 1's.
 ; Submitted by Ralfy
 ; 247,253,255,271,273,279,325,327,333,351,743,745,751,761,763,767,771,775,777,787,793,795,815,817,821,825,829,831,839,843,855,865,867,873,895,901,903,919,921,927,977,979,983,987,991
 

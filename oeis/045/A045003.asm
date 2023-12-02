@@ -1,4 +1,4 @@
-; A045003: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 2 and 4, respectively.
+; A045003: Numbers whose base-3 representation contains exactly two 0's and four 2's.
 ; Submitted by Science United
 ; 512,548,560,564,656,668,672,704,708,720,809,917,953,965,969,1241,1277,1289,1293,1385,1397,1401,1433,1437,1449,1511,1529,1535,1537,1565,1601,1613,1617,1637,1643,1645,1655,1667,1671
 

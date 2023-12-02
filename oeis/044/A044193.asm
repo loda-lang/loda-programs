@@ -17,8 +17,4 @@ add $4,$3
 mul $4,3
 add $4,$3
 mov $0,$4
-mul $0,4
-sub $0,268
-div $0,4
 mul $0,2
-add $0,134

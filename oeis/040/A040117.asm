@@ -1,7 +1,17 @@
 ; A040117: Primes congruent to 5 (mod 12). Also primes p such that x^4 = 9 has no solution mod p.
 ; Submitted by Science United
 ; 5,17,29,41,53,89,101,113,137,149,173,197,233,257,269,281,293,317,353,389,401,449,461,509,521,557,569,593,617,641,653,677,701,761,773,797,809,821,857,881,929,941,953,977,1013,1049,1061,1097,1109,1181,1193,1217,1229,1277,1289,1301,1361,1373,1409,1433,1481,1493,1553,1601,1613,1637,1697,1709,1721,1733,1877,1889,1901,1913,1949,1973,1997,2069,2081,2129
-; Formula: a(n) = A243183(n+1)
 
 add $0,1
-seq $0,243183 ; Primes of the form 2x^2+2xy+5y^2.
+mov $2,4
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,12
+  sub $3,$0
+lpe
+mov $0,$2
+add $0,1

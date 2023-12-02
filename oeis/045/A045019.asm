@@ -1,4 +1,4 @@
-; A045019: Numbers n with property that in base 4 representation the numbers of 0's and 1's are 1 and 1, respectively.
+; A045019: Numbers whose base-4 representation contains exactly one 0 and one 1.
 ; Submitted by ChelseaOilman
 ; 4,18,19,24,28,33,36,49,52,74,75,78,79,98,99,104,108,114,115,120,124,134,135,137,141,146,147,152,156,161,164,177,180,198,199,201,205,210,211,216,220,225,228,241,244,298,299,302,303
 

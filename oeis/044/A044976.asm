@@ -1,4 +1,4 @@
-; A044976: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 2 and 1, respectively.
+; A044976: Numbers whose base-3 representation contains exactly two 0's and one 1.
 ; Submitted by Landjunge
 ; 9,29,33,45,55,57,63,89,101,105,137,141,153,167,169,173,177,181,183,191,195,207,217,219,225,269,305,317,321,413,425,429,461,465,477,503,509,511,521,533,537,545,547,551,555,559,561,575
 

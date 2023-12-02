@@ -1,4 +1,4 @@
-; A043727: Numbers n such that number of runs in the base 2 representation of n is congruent to 3 mod 4.
+; A043727: Numbers whose number of runs in the base-2 representation is congruent to 3 mod 4.
 ; Submitted by taurec
 ; 5,9,11,13,17,19,23,25,27,29,33,35,39,47,49,51,55,57,59,61,65,67,71,79,85,95,97,99,103,111,113,115,119,121,123,125,129,131,135,143,149,159,165,169,171,173,181,191,193,195,199,207,213
 

@@ -1,4 +1,4 @@
-; A044971: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 1 and 1, respectively.
+; A044971: Numbers whose base-3 representation contains exactly one 0 and one 1.
 ; Submitted by ChelseaOilman
 ; 3,11,15,19,21,35,47,51,59,61,65,69,73,75,107,143,155,159,179,185,187,197,209,213,221,223,227,231,235,237,323,431,467,479,483,539,557,563,565,593,629,641,645,665,671,673,683,695,699
 

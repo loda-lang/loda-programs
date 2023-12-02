@@ -1,4 +1,4 @@
-; A044978: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 2 and 3, respectively.
+; A044978: Numbers whose base-3 representation contains exactly two 0's and three 1's.
 ; Submitted by shiva
 ; 85,91,93,109,111,117,257,259,265,275,277,281,285,289,291,301,307,309,329,331,335,339,343,345,353,357,369,379,381,387,409,415,417,433,435,441,499,517,523,525,571,577,579,595,597,603
 

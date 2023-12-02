@@ -15,7 +15,6 @@ div $0,4
 mul $0,21
 add $0,$1
 dif $0,2
-sub $0,2
 div $0,2
-sub $0,1
+sub $0,2
 seq $0,6068 ; a(n) is Gray-coded into n.

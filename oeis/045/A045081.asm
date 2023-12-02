@@ -1,4 +1,4 @@
-; A045081: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 4 and 0, respectively.
+; A045081: Numbers whose base-4 representation contains exactly four 0's and no 3's.
 ; Submitted by Caius Corp.
 ; 256,512,1025,1026,1028,1032,1040,1056,1088,1152,1280,1536,2049,2050,2052,2056,2064,2080,2112,2176,2304,2560,4101,4102,4105,4106,4113,4114,4116,4120,4129,4130,4132,4136,4161,4162,4164
 

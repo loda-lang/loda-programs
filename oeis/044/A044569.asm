@@ -17,7 +17,5 @@ mul $3,2
 add $4,$3
 add $4,$3
 mov $0,$4
-mul $0,4
-sub $0,132
-div $0,2
-add $0,65
+mul $0,2
+sub $0,1

@@ -7,7 +7,6 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
   seq $3,154115 ; Numbers n such that n + 3 is prime.
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
@@ -24,6 +23,5 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
-sub $0,12
 div $0,6
-add $0,3
+add $0,1

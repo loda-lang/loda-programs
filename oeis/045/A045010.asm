@@ -1,4 +1,4 @@
-; A045010: Numbers n with property that in base 3 representation the numbers of 0's and 2's are 4 and 1, respectively.
+; A045010: Numbers whose base-3 representation contains exactly four 0's and one 2.
 ; Submitted by ChelseaOilman
 ; 162,245,249,261,297,405,487,489,495,513,567,734,736,740,744,748,750,758,762,774,784,786,792,812,816,828,864,892,894,900,918,974,978,990,1026,1134,1216,1218,1224,1242,1296,1462,1468
 

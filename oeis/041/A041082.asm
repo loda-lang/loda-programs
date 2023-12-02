@@ -15,6 +15,4 @@ lpe
 add $2,$3
 add $3,$2
 mov $0,$3
-sub $0,12
 div $0,2
-add $0,6

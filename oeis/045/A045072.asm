@@ -1,4 +1,4 @@
-; A045072: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 2 and 1, respectively.
+; A045072: Numbers whose base-4 representation contains exactly two 0's and one 3.
 ; Submitted by ChelseaOilman
 ; 48,67,76,112,131,140,176,193,194,196,200,208,224,263,267,269,270,275,284,291,300,305,306,308,312,323,332,368,387,396,432,449,450,452,456,464,480,519,523,525,526,531,540,547,556,561
 

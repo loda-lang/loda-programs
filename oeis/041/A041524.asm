@@ -24,13 +24,11 @@ lpb $0
   mul $5,8
   dif $5,$1
   div $5,5
-  mul $5,5
   mov $1,$5
-  sub $1,10
-  div $1,5
-  add $1,1
+  sub $1,1
   mul $1,$2
   add $1,$4
   add $3,1
+  mul $5,5
 lpe
 mov $0,$1

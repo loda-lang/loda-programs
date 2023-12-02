@@ -1,4 +1,4 @@
-; A043403: Numbers having three 2's in base 7.
+; A043403: Numbers whose base-7 representation contains exactly three 2's.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 114,457,702,751,786,793,798,799,801,802,803,804,807,814,821,828,849,898,947,996,1143,1486,1829,2172,2515,2858,3103,3152,3187,3194,3199,3200,3202,3203,3204,3205,3208,3215,3222,3229
 

@@ -1,4 +1,4 @@
-; A045062: Numbers n with property that in base 4 representation the numbers of 0's and 3's are 0 and 1, respectively.
+; A045062: Numbers whose base-4 representation contains no 0's and exactly one 3.
 ; Submitted by Simon Strandgaard
 ; 3,7,11,13,14,23,27,29,30,39,43,45,46,53,54,57,58,87,91,93,94,103,107,109,110,117,118,121,122,151,155,157,158,167,171,173,174,181,182,185,186,213,214,217,218,229,230,233,234,343,347
 

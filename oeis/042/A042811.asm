@@ -17,9 +17,8 @@ lpb $0
   mul $1,21
   add $1,$5
   dif $1,2
-  sub $1,2
   div $1,2
-  sub $1,1
+  sub $1,2
   mul $1,$2
   add $1,$4
 lpe

@@ -1,4 +1,4 @@
-; A044982: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 3 and 2, respectively.
+; A044982: Numbers whose base-3 representation contains exactly three 0's and two 1's.
 ; Submitted by damotbe
 ; 82,84,90,108,248,250,254,258,262,264,272,276,288,298,300,306,326,330,342,378,406,408,414,432,490,496,498,514,516,522,568,570,576,594,746,752,754,764,776,780,788,790,794,798,802,804
 

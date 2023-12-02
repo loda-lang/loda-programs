@@ -1,4 +1,4 @@
-; A045271: Numbers n with property that in base 5 representation the numbers of 2's and 3's are 2 and 1, respectively.
+; A045271: Numbers whose base-5 representation contains exactly two 2's and one 3.
 ; Submitted by Science United
 ; 63,67,87,188,192,212,263,267,288,292,303,308,315,316,319,323,327,332,335,336,339,347,363,367,387,412,427,432,435,436,439,447,487,563,567,587,688,692,712,813,817,837,888,892,913,917
 

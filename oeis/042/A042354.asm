@@ -23,9 +23,8 @@ lpb $0
   div $1,4
   mul $1,21
   add $1,$5
-  sub $1,2
   div $1,2
-  sub $1,19
+  sub $1,20
   cmp $5,2
   mul $5,5
   add $1,$5

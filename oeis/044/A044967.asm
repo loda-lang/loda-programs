@@ -1,4 +1,4 @@
-; A044967: Numbers n with property that in base 3 representation the numbers of 0's and 1's are 0 and 2, respectively.
+; A044967: Numbers whose base-3 representation contains no 0's and exactly two 1's.
 ; Submitted by vanos0512
 ; 4,14,16,22,44,50,52,68,70,76,134,152,158,160,206,212,214,230,232,238,404,458,476,482,484,620,638,644,646,692,698,700,716,718,724,1214,1376,1430,1448,1454,1456,1862,1916,1934,1940,1942
 

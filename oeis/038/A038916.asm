@@ -13,10 +13,6 @@ lpb $2
   add $1,1
   sub $3,1
   seq $3,35220 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 38.
-  seq $3,296065 ; Partial sums of A296064.
-  add $3,2
-  div $3,2
-  sub $3,1
   cmp $3,0
   sub $0,$3
   mov $4,$0

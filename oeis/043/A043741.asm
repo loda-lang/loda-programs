@@ -1,4 +1,4 @@
-; A043741: Numbers n such that number of runs in the base 2 representation of n is congruent to 2 mod 7.
+; A043741: Numbers whose number of runs in the base-2 representation is congruent to 2 mod 7.
 ; Submitted by GolfSierra
 ; 2,4,6,8,12,14,16,24,28,30,32,48,56,60,62,64,96,112,120,124,126,128,192,224,240,248,252,254,256,341,384,448,480,496,504,508,510,512,597,661,677,681,683,685,693,725,768,853,896,960,992
 
