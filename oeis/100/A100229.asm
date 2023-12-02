@@ -33,6 +33,4 @@ lpb $0
 lpe
 add $1,$7
 mov $0,$1
-sub $0,3
 div $0,3
-add $0,1

@@ -6,7 +6,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,101113 ; Let t(G) = number of unitary factors of the Abelian group G. Then a(n) = sum t(G) over all Abelian groups G of order exactly n.
+  seq $2,101113 ; Let t(G) = number of unitary factors of the Abelian group G. Then a(n) = Sum t(G) over all Abelian groups G of order exactly n.
   sub $0,1
   add $1,$2
 lpe

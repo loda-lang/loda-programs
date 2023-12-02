@@ -1,8 +1,18 @@
 ; A101441: n^prime(n+1).
 ; Submitted by fzs600
 ; 0,1,32,2187,4194304,1220703125,16926659444736,11398895185373143,590295810358705651712,4710128697246244834921603689,10000000000000000000000000000000,340039485861577398992406882305761986971
-; Formula: a(n) = n^A006005(n)
 
 mov $1,$0
-seq $1,6005 ; The odd prime numbers together with 1.
+add $1,1
+mov $4,$1
+pow $4,5
+lpb $4
+  mov $2,$3
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $1,$2
+  add $3,2
+  sub $4,$1
+lpe
+mov $1,$3
+add $1,1
 pow $0,$1

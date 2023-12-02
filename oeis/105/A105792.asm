@@ -5,8 +5,11 @@
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,105399 ; Largest prime <= numbers of the form 6k+3 (duplicates removed).
-  sub $1,2
+  seq $1,141515 ; a(n) = phi(A067774(n)) where phi is Euler totient function.
+  sub $1,6
+  div $1,2
+  mul $1,2
+  add $1,5
   mov $0,0
 lpe
 mov $0,$1

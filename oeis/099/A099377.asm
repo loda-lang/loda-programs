@@ -5,7 +5,7 @@
 
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $0,94471 ; a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+seq $0,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
 add $0,$1
 gcd $1,$0
 div $0,$1

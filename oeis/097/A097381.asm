@@ -7,8 +7,16 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,97378 ; SquareFreeKernel(n)*CubeFreeKernel(n) + 1.
-  sub $3,1
+  seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  add $6,1
+  mov $7,$3
+  add $7,1
+  add $3,1
+  mul $3,$7
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
+  mul $3,$7
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   cmp $3,2
   sub $0,$3

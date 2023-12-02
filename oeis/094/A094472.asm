@@ -6,6 +6,6 @@
 mov $2,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $1,$2
-seq $1,94471 ; a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+seq $1,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
 sub $1,$0
 mov $0,$1

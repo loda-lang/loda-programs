@@ -22,6 +22,5 @@ min $4,1
 mul $4,$0
 add $1,$4
 mov $0,$1
-sub $0,16
 div $0,2
-add $0,11
+add $0,3

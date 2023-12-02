@@ -31,11 +31,8 @@ lpb $4
 lpe
 mov $1,$3
 div $1,2
-mul $1,2
-sub $1,4
-div $1,2
 mul $1,6
-add $1,15
+add $1,3
 div $1,3
 mov $0,$1
 sub $0,11

@@ -8,7 +8,9 @@ pow $2,3
 lpb $2
   sub $2,24
   mov $3,$1
-  seq $3,131019 ; Semiperimeters of quadrilaterals whose sides are 4 consecutive odd primes.
+  add $3,1
+  seq $3,34963 ; Sums of four consecutive primes.
+  div $3,2
   mov $5,$3
   add $5,1
   mul $3,2

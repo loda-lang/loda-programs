@@ -4,5 +4,19 @@
 
 mov $1,$0
 add $1,1
-seq $0,207833 ; E.g.f.: T(T(x)), where T(x) is the e.g.f. for labeled rooted trees, A000169.
+mov $5,$0
+add $5,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  pow $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,$5
+  add $6,$4
+lpe
+mov $0,$6
 div $0,$1

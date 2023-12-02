@@ -5,10 +5,6 @@
 
 mov $1,$0
 seq $1,22360 ; Fibonacci sequence beginning 0, 26.
-mov $2,54
-add $2,$1
-mov $1,$2
-sub $1,54
 div $1,26
 seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
 add $0,$1

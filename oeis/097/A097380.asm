@@ -8,8 +8,15 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,97377 ; CubeFreeKernel(n) + 1.
-  sub $3,1
+  seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
+  add $6,1
+  mov $7,$3
+  add $7,1
+  add $3,1
+  mul $3,$7
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   cmp $3,1
   sub $0,$3

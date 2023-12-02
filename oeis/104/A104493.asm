@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   seq $3,40 ; The prime numbers.
   seq $3,55400 ; Cube excess: difference between n and largest cube <= n.
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   cmp $3,1
   sub $0,$3
   add $1,1
