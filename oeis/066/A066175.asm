@@ -1,4 +1,4 @@
-; A066175: Numbers n such that sigma(phi(sigma(n))) = n.
+; A066175: Numbers k such that sigma(phi(sigma(k))) = k.
 ; Submitted by Science United
 ; 1,3,7,15,31,127,1023,8191,131071,524287,2147483647
 

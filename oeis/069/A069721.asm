@@ -4,7 +4,14 @@
 
 lpb $0
   mov $2,$0
-  seq $2,25225 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n >= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
+  mul $2,2
+  mov $4,$0
+  add $4,1
+  mov $3,2
+  pow $3,$4
+  bin $2,$0
+  div $2,$4
+  mul $2,$3
   sub $0,1
   add $1,$2
   mul $1,$0

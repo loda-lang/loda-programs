@@ -13,6 +13,4 @@ lpe
 mov $1,$2
 mod $1,5
 add $0,$1
-add $0,108
 div $0,3
-sub $0,36

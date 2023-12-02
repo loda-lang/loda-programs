@@ -1,4 +1,4 @@
-; A060576: Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
+; A060576: a(n) = 1 except for a(1) = 0.
 ; Submitted by Cruncher Pete
 ; 1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 

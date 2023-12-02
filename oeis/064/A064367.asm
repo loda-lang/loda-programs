@@ -1,10 +1,20 @@
 ; A064367: a(n) = 2^n mod prime(n), or 2^n = k*prime(n) + a(n) with integer k.
 ; Submitted by Kotenok2000
 ; 0,1,3,2,10,12,9,9,6,9,2,26,33,1,9,28,33,27,13,48,8,36,47,4,95,20,76,62,23,4,8,117,68,25,138,64,150,43,61,10,72,156,40,12,73,51,48,41,24,26,71,48,32,16,128,173,74,110,118,59,30,247,202,208,284,53,128,32,139,56,285,24,126,243,312,121,386,271,36,318
-; Formula: a(n) = (2*2^n)%A006005(n)
 
 mov $1,$0
-seq $0,6005 ; The odd prime numbers together with 1.
+add $0,1
+mov $5,$0
+pow $5,5
+lpb $5
+  mov $3,$4
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  add $4,2
+  sub $5,$0
+lpe
+mov $0,$4
+add $0,1
 mov $2,2
 pow $2,$1
 mul $2,2

@@ -9,6 +9,4 @@ sub $1,1
 seq $1,62570 ; a(n) = phi(2*n).
 add $0,2
 mul $0,$1
-sub $0,4
 div $0,2
-add $0,2

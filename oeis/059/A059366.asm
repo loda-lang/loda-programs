@@ -5,5 +5,5 @@
 
 mov $1,$0
 seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-seq $0,173424 ; Triangle T(n,m) read by rows: (2*n - 2*m)!*(2*m)!/( 2^n*(n - m)!*m! )
+seq $0,173424 ; Triangle read by rows: T(n, k) = (2*n - 2*k)!*(2*k)!/(2^n*(n - k)!*k!).
 mul $0,$1

@@ -5,9 +5,18 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) is the smallest possible choice for m.
+  mov $4,$2
+  add $4,1
+  mov $5,$2
+  mov $6,$2
+  seq $2,175070 ; a(n) is the sum of perfect divisors of n - n, where a perfect divisor of n is a divisor d such that d^k = n for some k >= 1.
+  add $6,$2
+  mov $2,$6
+  sub $2,$5
+  mov $3,$2
+  gcd $3,$4
   sub $0,1
-  mul $1,$2
+  mul $1,$3
   mov $2,$0
 lpe
 mov $0,$1

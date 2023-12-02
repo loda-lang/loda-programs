@@ -14,8 +14,5 @@ lpe
 add $2,3
 mov $1,2
 pow $1,$2
-div $1,4
 mov $0,$1
-sub $0,2
-div $0,2
-add $0,1
+div $0,8

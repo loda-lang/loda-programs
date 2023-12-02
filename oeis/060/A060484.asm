@@ -19,7 +19,4 @@ lpb $0
 lpe
 mov $0,$4
 mul $0,$1
-mul $0,360
-sub $0,720
-div $0,720
-add $0,1
+div $0,2

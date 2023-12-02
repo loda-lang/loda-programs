@@ -12,11 +12,7 @@ lpb $1
   mov $5,$0
   seq $5,154115 ; Numbers n such that n + 3 is prime.
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mul $5,3
   mov $0,$5
-  sub $0,6
-  div $0,3
-  add $0,2
   trn $0,5
   div $2,10
   pow $2,$0

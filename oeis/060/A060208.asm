@@ -9,8 +9,8 @@ lpb $5
   sub $6,$1
   mov $0,$7
   add $0,$5
+  seq $0,86936 ; Number of primes between n and p(n) inclusive.
   sub $0,1
-  seq $0,62298 ; Number of nonprimes <= n.
   add $2,$6
   mov $3,$2
   add $3,$0

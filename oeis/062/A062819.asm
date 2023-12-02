@@ -19,10 +19,7 @@ lpb $4
   pow $5,$0
   bin $5,2
   mov $0,$5
-  mul $0,4
-  sub $0,24
-  div $0,8
-  add $0,3
+  div $0,2
   mul $0,4
   mul $1,$0
   add $3,$1

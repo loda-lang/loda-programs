@@ -7,6 +7,6 @@ add $0,2
 lpb $0
   sub $0,1
   mov $2,$1
-  seq $1,64427 ; (Number of primes <= n - 1) + n.
+  seq $1,64427 ; a(n) = n + (number of primes < n).
 lpe
 mov $0,$2
