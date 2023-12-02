@@ -9,6 +9,4 @@ lpe
 add $1,1
 seq $0,62011 ; a(n) = 2*tau(n) = 2*A000005(n).
 mul $0,$1
-sub $0,2
 div $0,2
-add $0,1

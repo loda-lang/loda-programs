@@ -10,14 +10,12 @@ lpb $2
   mov $5,$1
   seq $5,154115 ; Numbers n such that n + 3 is prime.
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mul $5,3
   mov $3,$5
-  sub $3,6
-  div $3,3
-  add $3,1
+  sub $3,1
   seq $3,147810 ; Half the number of divisors of n^2+1.
   sub $3,3
   cmp $3,1
+  mul $5,3
   sub $0,$3
   add $1,1
   mov $4,$0
@@ -26,6 +24,4 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-sub $0,39
 div $0,3
-add $0,13

@@ -12,8 +12,4 @@ add $0,$2
 bin $0,$2
 mod $2,2
 add $2,$0
-mul $2,2
 mov $0,$2
-sub $0,2
-div $0,2
-add $0,1

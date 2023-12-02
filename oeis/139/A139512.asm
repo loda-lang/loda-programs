@@ -23,9 +23,7 @@ lpb $3
   trn $3,1
 lpe
 mov $1,$6
-sub $1,228
 div $1,12
-add $1,19
 mov $0,$1
 mul $0,12
 add $0,1

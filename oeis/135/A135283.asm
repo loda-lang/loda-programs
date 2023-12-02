@@ -12,10 +12,7 @@ lpb $0
   seq $2,285250 ; Positions of 0 in A285249; complement of A285251.
   div $2,4
   seq $2,1359 ; Lesser of twin primes.
-  mul $2,2
-  sub $2,6
-  div $2,2
-  add $2,5
+  add $2,2
   mul $2,2
   add $1,$2
 lpe
