@@ -7,8 +7,8 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,96494 ; Largest value in the periodic part of the continued fraction of sqrt(prime(n)).
-  div $3,2
+  seq $3,6005 ; The odd prime numbers together with 1.
+  seq $3,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

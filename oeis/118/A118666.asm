@@ -11,7 +11,7 @@ lpb $2
   mov $4,$3
   mod $4,2
   div $3,2
-  seq $3,193231 ; Blue code of n: in binary coding of a polynomial over GF(2), substitute x+1 for x.
+  seq $3,193231 ; Blue code for n: in binary coding of a polynomial over GF(2), substitute x+1 for x (see Comments for precise definition).
   mov $6,$3
   mul $6,2
   add $6,$4

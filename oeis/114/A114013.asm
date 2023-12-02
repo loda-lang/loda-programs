@@ -22,9 +22,7 @@ div $2,5
 mod $2,$3
 sub $3,$2
 mov $1,$3
-sub $1,4
 div $1,2
-add $1,2
 mov $0,$1
 mul $0,10
 sub $0,1

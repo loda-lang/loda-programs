@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,5237 ; Numbers n such that n and n+1 have the same number of divisors.
+  seq $3,5237 ; Numbers k such that k and k+1 have the same number of divisors.
   add $3,1
   mov $5,$3
   sub $3,1
@@ -22,7 +22,3 @@ lpb $2
   mul $2,$4
 lpe
 mov $0,$5
-mul $0,2
-sub $0,8
-div $0,2
-add $0,4

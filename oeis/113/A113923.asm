@@ -1,6 +1,6 @@
-; A113923: A Farey like level n=2 rational function as a coefficient expansion.
+; A113923: Expansion of 3*(2-x)^2/(1-x).
 ; Submitted by Science United
-; 12,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+; 12,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 ; Formula: a(n) = 3*gcd(min(n,1),4)
 
 min $0,1

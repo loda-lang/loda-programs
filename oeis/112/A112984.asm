@@ -7,7 +7,12 @@ pow $2,2
 add $2,12
 lpb $2
   mov $3,$1
-  seq $3,281375 ; a(n) = floor(2^(n+1)/n).
+  add $3,2
+  mov $5,2
+  pow $5,$3
+  sub $3,1
+  div $5,$3
+  mov $3,$5
   add $3,1
   gcd $3,2
   sub $0,$3

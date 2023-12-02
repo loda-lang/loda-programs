@@ -12,7 +12,7 @@ add $2,$1
 lpb $2
   div $2,2
   add $1,$0
-  seq $1,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
+  seq $1,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
   sub $3,2
   pow $3,$3
   mul $3,$1

@@ -14,9 +14,7 @@ lpb $0
   seq $2,40 ; The prime numbers.
   mul $3,$2
   mov $2,$3
-  sub $2,2
   div $2,2
-  add $2,1
   mul $1,$2
 lpe
 mov $0,$1
