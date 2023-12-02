@@ -10,9 +10,14 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,164931 ; n times the n-th noncomposite.
+  mov $7,$4
+  seq $7,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  add $4,1
+  mov $6,$7
+  mul $6,$4
   mov $2,$5
-  mul $2,$4
+  mul $2,$6
+  mov $4,$6
   mul $0,$5
   add $1,$2
 lpe

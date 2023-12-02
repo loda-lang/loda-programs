@@ -5,6 +5,6 @@
 
 mov $1,$0
 add $1,1
-seq $1,23037 ; a(n) = n^0+n^1+...+n^(n-1), or a(n) = (n^n-1)/(n-1) with a(0)=0; a(1)=1.
+seq $1,23037 ; a(n) = n^0 + n^1 + ... + n^(n-1), or a(n) = (n^n-1)/(n-1) with a(0)=0; a(1)=1.
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mul $0,$1

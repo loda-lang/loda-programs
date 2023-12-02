@@ -29,10 +29,5 @@ lpb $3
   add $1,$6
   sub $3,$1
 lpe
-mov $1,$2
-sub $1,5
-mul $1,2
-mov $0,$1
-sub $0,22
-div $0,2
-add $0,2
+mov $0,$2
+sub $0,14

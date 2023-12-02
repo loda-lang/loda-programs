@@ -9,13 +9,12 @@ pow $2,2
 bin $2,2
 lpb $2
   mov $3,$1
-  seq $3,38548 ; Number of divisors of n that are at most sqrt(n).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $3,1
+  div $3,2
   add $1,1
   add $2,$3
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,256
-sub $0,61184
-div $0,256
-add $0,240
+add $0,1

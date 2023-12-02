@@ -4,6 +4,23 @@
 
 mov $1,$0
 add $1,1
-seq $0,93701 ; a(n) = smallest m>a(n-1) such that 1+m*n is prime, a(1) = 1.
+mov $2,1
+mov $6,1
+mov $3,$0
+pow $3,3
+lpb $3
+  mov $4,$2
+  mul $4,$6
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,$4
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  cmp $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
 mul $0,$1
 add $0,1

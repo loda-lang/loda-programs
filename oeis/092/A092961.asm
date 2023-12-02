@@ -29,12 +29,10 @@ lpb $4
   add $7,1
 lpe
 mov $1,$8
-sub $1,3
 div $1,3
-add $1,2
+add $1,1
 add $0,1
 mul $0,2
 mul $0,$1
-sub $0,6
 div $0,2
-add $0,4
+add $0,1

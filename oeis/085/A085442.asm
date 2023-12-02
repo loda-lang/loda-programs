@@ -12,7 +12,5 @@ lpb $0
   sub $0,1
   add $1,$3
 lpe
-sub $1,128
 div $1,128
-add $1,1
 mov $0,$1

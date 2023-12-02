@@ -14,7 +14,8 @@ lpb $2
   sub $0,$2
   sub $0,1
   mov $4,$0
-  seq $4,104887 ; Triangle T(n,k) = (n-k+1)-th prime, read by rows.
+  seq $4,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
   seq $0,245093 ; Triangle read by rows in which row n lists the first n terms of A000203.
   mul $0,$4
   add $1,$0

@@ -4,5 +4,5 @@
 ; Formula: a(n) = A073591(A000120(n))-1
 
 seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-seq $0,73591 ; A000522(n)+1.
+seq $0,73591 ; a(n) = A000522(n) + 1.
 sub $0,1

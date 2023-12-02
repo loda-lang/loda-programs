@@ -1,9 +1,22 @@
 ; A088031: Smallest n-th power k such that k-1 is divisible by an n-th power. Smallest n-th power == 1 (mod some n-th power).
 ; Submitted by Jamie Morken(w3)
 ; 3,9,729,81,39135393,887503681,594467302491009,852891037441,2460686496619787545743873,1213972926354344043087129601,2672769719437237714909813214827010049,1313734498399602126928988680233144321,749477178512218249053016816019761862837541531656193
-; Formula: a(n) = A088032(n)^(n+1)
 
 mov $1,$0
 add $1,1
-seq $0,88032 ; Smallest number k such that k^n -1 is divisible by an n-th power. a(n) = A088031(n)^(1/n).
+mov $2,$0
+add $2,1
+mov $3,2
+pow $3,$2
+gcd $2,$3
+div $3,$2
+mov $2,$3
+div $2,2
+lpb $0
+  mod $0,2
+  sub $2,$0
+lpe
+mov $0,$2
+mul $0,2
+add $0,1
 pow $0,$1
