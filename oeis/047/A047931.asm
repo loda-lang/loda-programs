@@ -11,7 +11,11 @@ lpb $5
   mov $4,$0
   max $4,0
   mov $6,$4
-  seq $6,135708 ; Minimal total number of edges in a polyhex consisting of n hexagonal cells.
+  mul $6,3
+  add $6,1
+  mov $7,$6
+  seq $6,55086 ; n appears 1+[n/2] times.
+  add $6,$7
   mul $4,6
   sub $4,$6
   mul $0,$5

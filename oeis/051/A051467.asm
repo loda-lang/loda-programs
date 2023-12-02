@@ -1,8 +1,26 @@
 ; A051467: (Terms in A029640)/2.
 ; Submitted by Cruncher Pete
 ; 1,1,2,1,1,3,7,8,1,10,15,1,4,25,18,1,1,5,22,56,91,98,70,32,1,27,78,147,189,168,102,1,6,105,225,336,357,270,50,1,330,561,693,627,1,7,45,176,891,1254,1320,605,253,72,1,52,221,2145,2574,858,325,1,8,273,2002,4719
-; Formula: a(n) = A029640(n+1)/2
 
+mov $2,$0
 add $0,1
-seq $0,29640 ; Even numbers in the (1,2)-Pascal triangle A029635.
+add $2,7
+pow $2,3
+lpb $2
+  sub $2,8
+  mov $3,$1
+  seq $3,29635 ; The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
+  mov $5,$3
+  mul $3,338
+  gcd $3,4
+  add $3,1
+  cmp $3,5
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  cmp $4,$0
+  mul $2,$4
+lpe
+mov $0,$5
 div $0,2

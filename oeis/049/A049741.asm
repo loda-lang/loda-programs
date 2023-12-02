@@ -1,11 +1,25 @@
 ; A049741: a(n)=T(n,n+1), array T as in A049735.
 ; Submitted by Christian Krause
 ; 5,21,45,81,137,193,277,357,457,577,697,845,981,1153,1321,1505,1725,1933,2161,2393,2629,2917,3181,3489,3769,4093,4421,4741,5129,5465,5853,6237,6621,7049,7473,7917,8389,8841,9329,9785
-; Formula: a(n) = A057655(((2*n+1)^2+1)/2)
 
+mov $3,3
 mul $0,2
 add $0,1
 pow $0,2
 add $0,1
 div $0,2
-seq $0,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+  mov $3,1
+  add $3,$4
+  add $4,2
+  add $1,$2
+  sub $1,1
+lpe
+mov $0,$1
+mul $0,4
+add $0,1

@@ -9,6 +9,4 @@ lpb $0
 lpe
 add $0,1
 seq $0,46895 ; Sizes of successive clusters in Z^4 lattice.
-sub $0,8
 div $0,8
-add $0,1

@@ -6,7 +6,7 @@ mov $2,$0
 seq $2,73184 ; Number of cubefree divisors of n.
 mov $0,$2
 lpb $0
-  add $1,1
   dif $0,2
+  add $1,1
 lpe
 mov $0,$1

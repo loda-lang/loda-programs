@@ -8,7 +8,7 @@ lpb $1
   cmp $2,0
   add $1,$2
   mod $0,$1
-  mod $1,8
   seq $0,40 ; The prime numbers.
+  mod $1,8
 lpe
 add $0,1

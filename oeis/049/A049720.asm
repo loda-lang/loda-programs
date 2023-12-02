@@ -1,8 +1,18 @@
 ; A049720: a(n)=T(n,1), array T as in A048149.
 ; Submitted by Stony666
 ; 3,4,8,13,19,28,37,48,62,75,92,108,127,150,170,195,218,247,277,304,337,369,406,441,475,518,559,604,646,689,740,786,841,890,945,1001,1052,1115,1173,1236,1299,1360,1428,1497,1568,1638,1707
-; Formula: a(n) = A224212(n^2+1)
 
+mov $3,3
 pow $0,2
-add $0,1
-seq $0,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.
+add $0,4
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+  mov $3,1
+  add $3,$4
+  add $4,2
+  add $1,$2
+lpe
+mov $0,$1

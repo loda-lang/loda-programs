@@ -12,11 +12,7 @@ lpb $0
   add $2,4
   mul $2,$4
   pow $2,2
-  div $2,36
-  mul $2,9
-  sub $2,36
-  div $2,36
-  add $2,1
+  div $2,144
   add $1,1
   add $1,$2
   sub $3,2

@@ -13,6 +13,4 @@ pow $0,$2
 mul $1,3
 mul $1,$0
 mov $0,$1
-sub $0,9
 div $0,9
-add $0,1
