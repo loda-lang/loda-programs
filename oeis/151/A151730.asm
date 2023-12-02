@@ -6,7 +6,8 @@ add $0,1
 mov $2,$0
 pow $2,8
 lpb $2
-  seq $3,106350 ; Semiprimes indexed by primes.
+  seq $3,40 ; The prime numbers.
+  seq $3,176540 ; 1 together with the semiprimes.
   mul $3,16
   pow $3,2
   sub $3,3

@@ -11,9 +11,7 @@ lpb $0
   seq $2,40 ; The prime numbers.
   mul $4,$2
   mov $2,$4
-  sub $2,2
   div $2,2
-  add $2,1
   seq $2,105161 ; Difference between n and the second-smallest prime larger than n.
   sub $2,3
   mov $3,10057
