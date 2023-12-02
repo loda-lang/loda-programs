@@ -9,7 +9,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$5
-  seq $3,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
+  seq $3,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
   sub $0,$3
   mov $4,$0
   max $4,1

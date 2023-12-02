@@ -10,7 +10,7 @@ seq $2,122045 ; Euler (or secant) numbers E(n).
 seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
 gcd $1,$2
 trn $0,1
-seq $0,27412 ; a(n) = 2*a(n-1) + (n-2)*a(n-2).
+seq $0,27412 ; a(n) = 2*a(n-1) + (n-2)*a(n-2) with a(0) = 1, a(1) = 2.
 gcd $0,$1
 div $1,$0
 mov $0,$1

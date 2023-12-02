@@ -8,7 +8,7 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,578 ; The cubes: a(n) = n^3.
+  pow $3,3
   sub $3,1
   mov $5,$3
   seq $3,294936 ; Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.

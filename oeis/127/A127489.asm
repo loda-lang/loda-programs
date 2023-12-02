@@ -6,6 +6,6 @@
 mov $1,$0
 seq $1,40 ; The prime numbers.
 add $0,1
-seq $0,46302 ; Product of 4 successive primes.
+seq $0,46302 ; Products of 4 successive primes.
 mul $0,$1
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

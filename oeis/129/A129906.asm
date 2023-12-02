@@ -6,4 +6,4 @@
 add $0,3
 seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 sub $0,2
-seq $0,226198 ; Floor((n-1)!/n).
+seq $0,226198 ; a(n) = floor((n-1)!/n).

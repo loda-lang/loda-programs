@@ -5,8 +5,12 @@ mov $1,2
 add $1,$0
 div $1,2
 lpb $0
+  mov $3,$0
+  add $3,1
+  seq $3,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mov $2,$0
-  seq $2,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
+  seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  mul $2,$3
   trn $0,2
   add $1,$2
 lpe

@@ -1,4 +1,4 @@
-; A131597: Bigomega of Pisano periods mod n, i.e., number of prime divisors with multiplicity of the period length of Fibonacci residues mod n.
+; A131597: Bigomega of Pisano periods mod n, i.e., number of prime divisors (counted with multiplicity) of the period of Fibonacci residues mod n.
 ; Submitted by Orange Kid
 ; 0,1,3,2,3,4,4,3,4,4,2,4,3,5,4,4,4,4,3,4,4,3,5,4,4,4,5,5,2,5,3,5,4,4,5,4,3,3,4,4,4,5,4,3,5,5,5,4,5,5,5,4,5,5,3,5,5,3,2,5,4,3,5,6,4,5,4,4,5,6,3,4,3,4,5,3,5,5,3,5
 ; Formula: a(n) = A001222(A001175(n)-1)

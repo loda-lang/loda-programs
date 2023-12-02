@@ -10,7 +10,7 @@ lpb $2
   seq $6,40 ; The prime numbers.
   mov $3,$1
   add $3,1
-  seq $3,46302 ; Product of 4 successive primes.
+  seq $3,46302 ; Products of 4 successive primes.
   mul $3,$6
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   sub $3,1

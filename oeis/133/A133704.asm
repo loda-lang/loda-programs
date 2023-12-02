@@ -4,7 +4,7 @@
 ; Formula: a(n) = 2*A054527(n)*A051731(n)-A051731(n)
 
 mov $1,$0
-seq $1,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
+seq $1,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
 seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
 mul $0,2
 mul $0,$1

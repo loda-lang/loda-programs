@@ -1,4 +1,4 @@
-; A133557: Numbers n for which sum of squares of five consecutive primes starting with prime(n) is prime (A133559).
+; A133557: Numbers k for which the sum of squares of five consecutive primes starting with prime(k) is prime (A133559).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,3,9,10,11,16,18,25,26,28,31,33,36,42,43,46,47,54,56,58,63,68,76,87,91,93,99,101,105,106,114,127,131,145,153,159,183,186,196,201,206,229,230,232,233,238,239,241,244,245,246,248,253,256,257,264,265,266,268
 

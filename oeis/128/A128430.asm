@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $3,$2
-  seq $3,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
+  seq $3,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
   seq $2,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
   mul $2,$3
   sub $1,$2

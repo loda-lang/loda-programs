@@ -5,5 +5,23 @@
 add $0,1
 mov $1,3
 pow $1,$0
-seq $0,74048 ; Pentanacci numbers with initial conditions a(0)=5, a(1)=1, a(2)=3, a(3)=7, a(4)=15.
+mov $2,3
+lpb $0
+  sub $0,1
+  mov $6,$2
+  mov $7,$5
+  sub $2,2
+  add $2,$4
+  add $3,$5
+  mov $4,$5
+  mov $5,$6
+  add $6,$3
+  mov $3,$4
+  add $3,$8
+  mov $4,$6
+  mov $8,$7
+lpe
+mov $0,$2
+mul $0,2
+sub $0,1
 mul $0,$1

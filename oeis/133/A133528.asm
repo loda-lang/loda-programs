@@ -9,7 +9,13 @@ lpb $3
   mov $0,$2
   add $0,$3
   max $0,0
-  seq $0,153486 ; a(n) = prime(n)^6 - 512.
+  mov $4,$0
+  sub $4,1
+  mov $0,1
+  add $0,$4
+  seq $0,40 ; The prime numbers.
+  pow $0,6
+  sub $0,512
   add $1,$0
 lpe
 mov $0,$1

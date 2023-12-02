@@ -1,12 +1,20 @@
 ; A132194: a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
 ; Submitted by LCB001
 ; 1,1,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0
-; Formula: a(n) = (((2*(1/gcd((max(A006005(n)-2,0)+2)/2,3)+11)^2)^2+1/gcd((max(A006005(n)-2,0)+2)/2,3))*(2*(1/gcd((max(A006005(n)-2,0)+2)/2,3)+11)^2)^2)/3459729276
 
-seq $0,6005 ; The odd prime numbers together with 1.
+add $0,1
+mov $5,$0
+pow $5,5
+lpb $5
+  mov $3,$4
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  add $4,2
+  sub $5,$0
+lpe
+mov $0,$4
 trn $0,2
 add $0,2
-div $0,2
 gcd $0,3
 mov $1,1
 div $1,$0

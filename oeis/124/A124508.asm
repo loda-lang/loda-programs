@@ -1,4 +1,4 @@
-; A124508: 2^BigO(n) * 3^omega(n), where BigO=A001222 and omega=A001221, the numbers of prime factors of n with and without repetitions.
+; A124508: a(n) = 2^BigO(n) * 3^omega(n), where BigO = A001222 and omega = A001221, the numbers of prime factors of n with and without repetitions.
 ; Submitted by Simon Strandgaard
 ; 1,6,6,12,6,36,6,24,12,36,6,72,6,36,36,48,6,72,6,72,36,36,6,144,12,36,24,72,6,216,6,96,36,36,36,144,6,36,36,144,6,216,6,72,72,36,6,288,12,72,36,72,6,144,36,144,36,36,6,432,6,36,72,192,36,216,6,72,36,216,6,288,6,36,72,72,36,216,6,288
 
