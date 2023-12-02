@@ -6,7 +6,7 @@
 mov $2,$0
 add $2,1
 pow $2,$0
-seq $0,13956 ; sigma_8(n), the sum of the 8th powers of the divisors of n.
+seq $0,13956 ; a(n) = sigma_8(n), the sum of the 8th powers of the divisors of n.
 mov $1,$0
 gcd $1,$2
 div $0,$1

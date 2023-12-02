@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,37828 ; Number of i such that d(i)>=d(i-1), where Sum{d(i)*5^i: i=0,1,...,m} is base 5 representation of n.
+  seq $3,37828 ; Number of i such that d(i) >= d(i-1), where Sum_{i=0..m} d(i)*5^i is the base-5 representation of n.
   mul $3,$0
   cmp $3,0
   sub $0,$3

@@ -398,6 +398,7 @@ A052285: Duplicate of A046858.
 A052397: Duplicate of A047889.
 A052398: Duplicate of A047890.
 A053345: Duplicate of A032505.
+A053453: Duplicate of A002329.
 A053554: Duplicate of A048172.
 A054319: Duplicate of A006061.
 A054517: Duplicate of A054016.
@@ -410,6 +411,7 @@ A056209: Duplicate of A056157.
 A056605: Number of stable n-celled patterns ("still lifes") in Conway''s game of Life (incorrect version).
 A056644: Duplicate of A007813.
 A056837: Duplicate of A001971.
+A056998: Erroneous version of A057348.
 A057310: Duplicate of A008084.
 A057433: Erroneous version of A006074.
 A057497: Erroneous version of A008403.
@@ -447,6 +449,8 @@ A060830: Erroneous version of A120427.
 A060960: Duplicate of A073642.
 A060994: Duplicate of A031146.
 A061016: Duplicate of A038366.
+A061055: Duplicate of A060776.
+A061056: Duplicate of A060777.
 A061058: Duplicate of A060795.
 A061059: Duplicate of A060796.
 A061080: Another erroneous version of A009287.
@@ -595,6 +599,7 @@ A071420: Duplicate of A031139.
 A071871: Duplicate of A055030.
 A072067: Duplicate of A072049.
 A072267: Duplicate of A024934.
+A072326: Conjectured values of n such that the sum of proper divisors of x*n is never prime for any x >= 1 (i.e., sigma(xn) - xn is never prime for x >= 1).
 A072538: Erroneous version of A000040 (the primes).
 A072539: Duplicate of A062391.
 A072615: Duplicate of A020871.
@@ -682,6 +687,7 @@ A077004: Duplicate of A002034.
 A077036: Duplicate of A076604.
 A077104: Duplicate of A073815.
 A077108: Duplicate of A075847.
+A077109: Duplicate of A070923.
 A077132: Duplicate of A075580.
 A077134: Duplicate of A001710.
 A077137: Duplicate of A023194.
@@ -764,6 +770,7 @@ A080771: Duplicate of A025477.
 A080781: Duplicate of A079357.
 A080784: Duplicate of A072978.
 A081104: Duplicate of A079028.
+A081126: Duplicate of A018191.
 A081137: Duplicate of A027474.
 A081191: Duplicate of A060531.
 A081255: Duplicate of A005371.
@@ -965,6 +972,7 @@ A088058: Duplicate of A062392.
 A088059: Duplicate of A028387.
 A088118: Duplicate of A088117.
 A088130: Erroneous version of A076497.
+A088140: Duplicate of A005451 (for n >= 3).
 A088255: Duplicate of A075590.
 A088273: Duplicate of A049054.
 A088321: Duplicate of A061301.
@@ -1102,11 +1110,13 @@ A094481: Duplicate of A045637.
 A094532: Duplicate of A092980.
 A094579: Duplicate of A029729.
 A094583: Erroneous version of A002058.
+A094628: Erroneous version of A052218.
 A094629: Erroneous version of A052216.
 A094742: Duplicate of A008578.
 A094760: Duplicate of A083956.
 A094805: Duplicate of A055193.
 A094979: Duplicate of A065565.
+A095097: Erroneous version of A101345.
 A095099: Duplicate of A134860.
 A095196: Duplicate of A074828.
 A095241: Duplicate of A061839.
@@ -1208,6 +1218,7 @@ A106170: Duplicate of A072215.
 A106765: Erroneous version of A000040.
 A107154: Duplicate of A141373.
 A107328: Duplicate of A065034.
+A107394: C(n+2,2)*C(n+4,2).
 A107864: Duplicate of A099121.
 A108123: Duplicate of A105954.
 A108236: Erroneous version of A002849.
@@ -1294,6 +1305,7 @@ A123465: Duplicate of A000055.
 A123537: Erroneous version of A005644 (there appears to be a typo in a(9)).
 A123570: Duplicate of A110567.
 A124160: Erroneous version of A006571.
+A124583: Duplicate of A083371.
 A124624: Erroneous version of A058377.
 A125214: Duplicate of A114062.
 A125878: Duplicate of A066674.
@@ -1320,6 +1332,7 @@ A130295: Erroneous duplicate of A125026.
 A130627: Duplicate of A006209.
 A130683: Duplicate of A032184.
 A131177: Duplicate of A092498
+A131204: Primes p of the form 16n+1, that is, primes congruent to 1 mod 16.
 A131359: Erroneous version of A108808.
 A131510: Erroneous version of A079342.
 A131831: Duplicate of A100314
@@ -1345,6 +1358,7 @@ A136434: Duplicate of A121670.
 A137175: Duplicate of A032589.
 A137592: Duplicate of A098694.
 A137908: Duplicate of A121370.
+A138097: Duplicate of A004956, for n>0.
 A138161: Erroneous version of A105195.
 A138568: Erroneous duplicate of A136094.
 A139470: Incorrect version of A154640 and A154644.
@@ -1372,6 +1386,7 @@ A141016: Duplicate of A008998.
 A141122: Duplicate of A068228.
 A141131: Duplicate of A038873.
 A141158: Duplicate of A038872.
+A141159: Duplicate of A139492.
 A141174: Duplicate of A007519.
 A141175: Duplicate of A007522.
 A141184: Duplicate of A033212.
@@ -1390,6 +1405,8 @@ A143386: Duplicate of A139430.
 A143580: Duplicate of A010059.
 A143660: Erroneous version of A170946.
 A143679: Duplicate of A081581.
+A143681: Duplicate of A081582.
+A144075: Duplicate of A008621.
 A144420: Erroneous version of A036984.
 A144538: Erroneous version of A127935.
 A144710: Erroneous version of A070007.
@@ -1560,6 +1577,7 @@ A234594: Erroneous version of Brier numbers A076335.
 A234940: Erroneous version of A010896.
 A234942: Erroneous version of A013577.
 A236479: Duplicate of A116514.
+A238443: Duplicate of A174973.
 A238965: Duplicate of A036042.
 A239099: Erroneous version of A006934.
 A239105: Erroneous version of A004001.
@@ -1612,6 +1630,7 @@ A260995: Erroneous version of A250001.
 A261014: Erroneous version of A000616.
 A262263: Duplicate of A072987.
 A262391: Erroneous duplicate of A000944.
+A262588: Duplicate of A193140.
 A263621: Appears to be an erroneous version of A263620.
 A263839: Erroneous version of A004028.
 A263840: Erroneous version of A004027.
@@ -1648,6 +1667,7 @@ A294437: Erroneous version of A007290.
 A294438: Erroneous version of A074650.
 A294455: Erroneous version of A182522.
 A295558: Erroneous version of A295559.
+A296509: Duplicate of A238005.
 A296366: Erroneous version of A007334.
 A299917: Erroneous version of A299915.
 A299999: Duplicate of A007341.
@@ -1676,3 +1696,7 @@ A338710: Erroneous version of A338706.
 A338711: Erroneous version of A130132.
 A338734: Erroneous version of A123828.
 A339386: a(n) is the number of non-isomorphic, serial/parallel indecomposable resistor networks with n edges. (Erroneous version of A338487)
+A344002: Erroneous version of A077868 (if initial 0 is ignored).
+A344003: Erroneous version of A050228 (if initial 0 is ignored).
+A350408: Erroneous version of A187015.
+A362102: Erroneous version of A000260.

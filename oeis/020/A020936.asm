@@ -1,11 +1,13 @@
 ; A020936: Greatest k such that (k-th prime) < (6 times n-th prime).
 ; Submitted by [AF>Amis des Lapins] Xe120
 ; 5,7,10,13,18,21,26,30,33,40,42,47,53,55,60,66,71,72,79,82,84,91,94,99,106,110,113,116,119,123,135,137,142,145,154,154,160,165,168,174,180,180,189,191,194,196,205,217,218,220,221,227,228,239,242,248,255,257,260,263,265,273,282,284,288,291,299,306,313,316,319,325,327,332,338,342,345,353,357,363
-; Formula: a(n) = A230980(6*A173919(max(2*n,1))-1)
+; Formula: a(n) = A230980(6*A093515(max(2*n,1))-7)
 
 mul $0,2
 max $0,1
-seq $0,173919 ; Numbers that are prime or one less than a prime.
+mov $1,$0
+seq $1,93515 ; Numbers k such that either k or k-1 is a prime.
+mov $0,$1
 mul $0,6
-sub $0,1
+sub $0,7
 seq $0,230980 ; Number of primes <= n, starting at n=0.
