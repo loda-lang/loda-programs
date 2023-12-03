@@ -5,6 +5,14 @@
 mov $1,$0
 mul $1,2
 add $1,4
-seq $0,74373 ; Square of the sum of the prime factors of n (with repetition).
+mov $2,0
+lpb $0
+  mov $3,$0
+  seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$3
+  add $2,$3
+lpe
+mov $0,$2
+pow $0,2
 add $0,2
 sub $0,$1

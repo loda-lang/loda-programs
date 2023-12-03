@@ -9,7 +9,7 @@ lpb $0
   max $2,0
   mov $3,$2
   add $3,1
-  seq $2,19445 ; Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1+..+p_n.
+  seq $2,19445 ; Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1 + ... + p_n.
   div $2,$3
   mul $2,2
   add $1,$2

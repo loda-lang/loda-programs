@@ -16,9 +16,7 @@ lpb $0
   add $4,2
   bin $4,2
   div $1,$4
-  sub $1,76
   div $1,38
-  add $1,2
   mul $2,$1
   add $3,1
 lpe

@@ -15,7 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
-    seq $7,121456 ; Expansion of q*(psi(-q)psi(-q^3))^2 in powers of q where psi() is a Ramanujan theta function.
+    seq $7,121456 ; Expansion of q*(psi(-q)*psi(-q^3))^2 in powers of q where psi() is a Ramanujan theta function.
     mul $7,4
     mul $7,$$9
     mul $7,-1

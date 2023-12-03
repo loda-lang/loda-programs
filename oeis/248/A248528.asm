@@ -8,7 +8,9 @@ add $2,11
 pow $2,2
 bin $2,2
 lpb $2
-  seq $3,89120 ; Smallest prime factor of n^2 + 1.
+  add $3,1
+  pow $3,2
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   sub $3,1
   seq $3,70669 ; Smallest m in range 2..n-1 such that m^4 == 1 mod n, or 1 if no such number exists.
   add $3,1

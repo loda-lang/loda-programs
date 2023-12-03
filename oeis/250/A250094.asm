@@ -9,7 +9,7 @@ lpb $2
   mov $4,$1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,94471 ; a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+  seq $3,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
   add $3,$4
   gcd $4,$3
   div $3,$4

@@ -9,9 +9,28 @@ lpb $4
   mov $0,$3
   add $0,$4
   trn $0,1
-  seq $0,255177 ; Second differences of seventh powers (A001015).
+  mov $11,$0
+  mul $11,14
+  mov $12,$0
+  mul $12,$0
+  mov $8,$12
+  mul $8,$0
+  mov $9,$8
+  mul $9,$0
+  mov $10,$8
+  mul $10,70
+  mov $5,1
+  trn $5,$0
+  add $5,$11
+  add $5,$10
+  mov $7,$9
+  mul $7,$0
+  mov $6,$7
+  mul $6,42
+  add $5,$6
+  mov $0,$5
   mov $2,$4
-  mul $2,$0
+  mul $2,$5
   add $1,$2
 lpe
 min $3,1

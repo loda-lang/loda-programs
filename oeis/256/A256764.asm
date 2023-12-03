@@ -5,7 +5,24 @@
 add $0,1
 mov $1,2
 pow $1,$0
-seq $0,204032 ; Number of (n+1) X 2 0..1 arrays with the sums of 2 X 2 subblocks nondecreasing rightwards and downwards.
-mul $1,$0
+mov $2,0
+mov $4,0
+add $0,2
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mov $2,$4
+  div $2,2
+  add $2,3
+  mov $5,2
+  pow $5,$2
+  sub $5,$2
+  sub $5,1
+  mov $2,$5
+  mul $3,$5
+  add $4,1
+lpe
+mul $1,$3
+mov $0,$3
 mov $0,$1
 mul $0,4

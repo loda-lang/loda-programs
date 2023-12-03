@@ -4,7 +4,7 @@
 ; Formula: a(n) = gcd(A121362(n)*(A001511(n)-2),A121362(n)*(A001511(n)-2))
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 sub $1,2
 seq $0,121362 ; Expansion of eta(q)*eta(q^6)*eta(q^10)*eta(q^15)/(eta(q^3)*eta(q^5)) in powers of q.
 mul $0,$1

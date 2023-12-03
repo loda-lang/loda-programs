@@ -3,4 +3,4 @@
 ; Formula: a(n) = A003415(A002109(n))
 
 seq $0,2109 ; Hyperfactorials: Product_{k = 1..n} k^k.
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

@@ -29,8 +29,6 @@ lpe
 min $2,3
 add $2,1
 mul $2,$3
-div $2,2
 mov $0,$2
-sub $0,2
-div $0,2
-add $0,1
+div $0,4
+div $2,2
