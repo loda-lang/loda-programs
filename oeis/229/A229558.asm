@@ -5,5 +5,5 @@
 
 mov $1,2
 pow $1,$0
-seq $0,276371 ; E.g.f.: exp(x/2)/(2 - exp(2*x))^(1/4).
+seq $0,276371 ; Expansion of e.g.f. exp(x/2)/(2 - exp(2*x))^(1/4).
 mul $0,$1

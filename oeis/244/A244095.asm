@@ -9,7 +9,11 @@ pow $2,3
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,1043 ; Numbers that are the sum of 2 successive primes.
+  seq $3,40 ; The prime numbers.
+  mov $6,$3
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$3
+  mov $3,$6
   pow $3,2
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

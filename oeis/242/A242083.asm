@@ -5,6 +5,6 @@
 
 seq $0,6005 ; The odd prime numbers together with 1.
 max $0,2
-seq $0,2783 ; 2*(3^n - 2^n) + 1.
+seq $0,2783 ; a(n) = 2*(3^n - 2^n) + 1.
 div $0,2
 sub $0,1

@@ -20,6 +20,6 @@ lpb $0
 lpe
 seq $0,40 ; The prime numbers.
 mul $0,4
-seq $0,14110 ; Number of ordered ways of writing n as a sum of 4 squares of natural numbers.
+seq $0,14110 ; Number of ordered ways of writing n as a sum of 4 squares of nonnegative integers.
 div $0,2
 mul $0,2

@@ -7,8 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,23523 ; a(n) = prime(n)*prime(n-1) + 1.
-  sub $3,24
+  seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+  seq $3,13636 ; n*nextprime(n).
+  sub $3,23
   trn $3,8
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

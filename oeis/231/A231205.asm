@@ -1,5 +1,5 @@
 ; A231205: Table of maximal number of guesses required to solve a Mastermind variant, read by columns.
-; 0,1,1,2,1,2,3,2,2,3,4,2
+; 0,1,1,2,1,2,3,2,2,3,4,2,5
 
 pow $0,2
 lpb $0

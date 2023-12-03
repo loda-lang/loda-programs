@@ -9,7 +9,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,1
-  seq $3,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
+  mov $5,$3
+  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,$5
   cmp $3,4
   sub $0,$3
   add $1,1

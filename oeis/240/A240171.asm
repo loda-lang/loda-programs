@@ -6,8 +6,12 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
+  mov $6,$1
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,51950 ; Differences between values of tau(n) (A000005): a(n) = tau(n)-tau(n-1).
+  add $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,$6
   mov $5,$3
   cmp $3,0
   gcd $3,$5

@@ -5,8 +5,13 @@
 mov $2,$0
 lpb $2
   trn $2,1
+  mov $3,$2
+  seq $3,129814 ; a(n) = Bernoulli(n) * (n+1)!.
   mov $1,$2
-  seq $1,50925 ; Numerator of (n+1)*Bernoulli(n).
+  seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+  gcd $1,$3
+  div $3,$1
+  mov $1,$3
   cmp $2,1
 lpe
 add $2,$1

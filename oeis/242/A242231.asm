@@ -7,7 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,352851 ; a(n) = prime(n)^2 + prime(n+1).
+  seq $3,40 ; The prime numbers.
+  mov $6,$3
+  pow $3,2
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$3
+  mov $3,$6
   sub $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

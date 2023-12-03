@@ -13,7 +13,10 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,340524 ; Triangle read by rows: T(n,k) = A000005(n-k+1)*A002865(k-1), 1 <= k <= n.
+  mov $4,$0
+  seq $4,272171 ; Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
+  seq $0,133734 ; A000012 * A002865 as a diagonalized matrix.
+  mul $0,$4
   add $1,$0
 lpe
 mov $0,$1

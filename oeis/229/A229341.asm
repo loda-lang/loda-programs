@@ -3,6 +3,6 @@
 ; Formula: a(n) = A000005(A003415(n+2)-1)
 
 add $0,2
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 sub $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
