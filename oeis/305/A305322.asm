@@ -8,7 +8,7 @@ pow $2,3
 lpb $2
   sub $2,31
   mov $3,$1
-  seq $3,10785 ; Repdigit numbers, or numbers with repeated digits.
+  seq $3,10785 ; Repdigit numbers, or numbers whose digits are all equal.
   mov $5,$3
   mod $3,3
   gcd $3,4

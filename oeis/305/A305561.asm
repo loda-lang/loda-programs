@@ -8,7 +8,4 @@ lpb $0
   sub $0,2
 lpe
 seq $0,98617 ; G.f. A(x) satisfies: A(x*G(x)) = G(x), where G(x) is the g.f. for A098616(n) = Pell(n+1)*Catalan(n).
-mul $0,2
-sub $0,4
-div $0,4
-add $0,1
+div $0,2

@@ -8,12 +8,9 @@ mul $2,2
 seq $2,363596 ; a(n) = (Product_{k=1..pi(n+1)} prime(k)^floor(n/(prime(k)-1) ) )/(n+1)!.
 seq $0,56603 ; Squarefree kernels of distinct values of lcm(1,...,m) (A051451).
 gcd $2,$0
-mul $2,2
 mov $0,$2
-sub $0,2
-div $0,2
-add $0,1
 mul $1,2
 add $1,1
-gcd $1,$0
+gcd $1,$2
+mul $2,2
 dif $0,$1

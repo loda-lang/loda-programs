@@ -1,4 +1,4 @@
-; A312681: Coordination sequence Gal.6.251.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+; A312681: Coordination sequence Gal.6.251.1 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 ; Submitted by Jon Maiga
 ; 1,4,8,14,20,26,30,36,42,48,52,56,60,64,70,76,82,86,92,98,104,108,112,116,120,126,132,138,142,148,154,160,164,168,172,176,182,188,194,198,204,210,216,220,224,228,232,238,244,250
 

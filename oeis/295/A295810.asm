@@ -9,7 +9,7 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
-  seq $0,271469 ; G.f. satisfies: A(x) = 1 + x*(A(x)^3 - A(x)^4 + A(x)^5).
+  seq $0,271469 ; G.f. satisfies A(x) = 1 + x*(A(x)^3 - A(x)^4 + A(x)^5).
   mov $1,$4
   sub $1,$2
   bin $1,$4

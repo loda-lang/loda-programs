@@ -9,7 +9,7 @@ lpb $0
   add $4,1
   mov $2,$0
   trn $2,1
-  seq $2,44990 ; Numbers n with property that in base 3 representation the numbers of 0's and 2's are 0 and 1, respectively.
+  seq $2,44990 ; Numbers whose base-3 representation contains no 0's and exactly one 2.
   mov $3,-1
   pow $3,$2
   mul $3,$4

@@ -3,8 +3,15 @@
 
 mov $1,2
 lpb $0
+  mov $2,$0
+  div $2,2
+  mov $3,3
+  pow $3,$2
   mov $1,$0
-  seq $1,62547 ; a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
+  mod $1,2
+  add $1,$3
+  mul $1,2
+  sub $1,1
   mod $0,2
 lpe
 add $0,$1

@@ -9,7 +9,7 @@ pow $2,2
 lpb $2
   add $1,2
   mov $3,$1
-  seq $3,24935 ; a(n) = minimal length of any partition of n into distinct primes.
+  seq $3,24935 ; Duplicate of A051034.
   cmp $3,3
   sub $0,$3
   mov $4,$0

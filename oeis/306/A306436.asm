@@ -1,4 +1,4 @@
-; A306436: The nonnegative integers, the ten successive digits being swapped by pairs.
+; A306436: Rewrite n by substituting each digit d of n by d-1 if d is odd, d+1 otherwise.
 ; Submitted by Solidair79
 ; 1,0,3,2,5,4,7,6,9,8,1,0,3,2,5,4,7,6,9,8,31,30,33,32,35,34,37,36,39,38,21,20,23,22,25,24,27,26,29,28,51,50,53,52,55,54,57,56,59,58,41,40,43,42,45,44,47,46,49,48,71,70,73,72,75,74,77,76,79,78,61,60,63,62,65,64,67,66,69,68
 

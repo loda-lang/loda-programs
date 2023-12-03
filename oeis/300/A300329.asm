@@ -25,9 +25,7 @@ min $5,1
 mul $5,$6
 sub $3,$5
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1
 div $0,$2
 mul $0,2
 mul $0,$1

@@ -9,8 +9,12 @@ lpb $3
   mov $0,$2
   add $0,$3
   add $0,$2
-  seq $0,163747 ; Expansion of e.g.f. 2*exp(x)*(1-exp(x))/(1+exp(2*x)).
-  add $1,$0
+  mov $4,$0
+  seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+  seq $4,122045 ; Euler (or secant) numbers E(n).
+  sub $4,$0
+  mov $0,$4
+  add $1,$4
   add $2,1
 lpe
 mov $0,$1

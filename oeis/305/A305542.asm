@@ -13,7 +13,24 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,1
-  seq $0,326660 ; Number of n-bead asymmetric bracelets with exactly 3 different colored beads.
+  mov $5,$0
+  mov $7,1
+  add $7,$0
+  mov $8,0
+  gcd $8,$7
+  pow $8,2
+  seq $0,56268 ; Number of primitive (aperiodic) words of length n which contain exactly three different symbols.
+  mul $0,91
+  mul $7,$0
+  div $7,$8
+  mov $0,$7
+  div $0,91
+  seq $5,56499 ; Number of primitive (period n) periodic palindromes using exactly three different symbols.
+  sub $5,$0
+  mov $6,0
+  sub $6,$5
+  mov $0,$6
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe

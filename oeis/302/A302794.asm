@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   add $0,$2
   trn $0,1
-  seq $0,193231 ; Blue code of n: in binary coding of a polynomial over GF(2), substitute x+1 for x.
+  seq $0,193231 ; Blue code for n: in binary coding of a polynomial over GF(2), substitute x+1 for x (see Comments for precise definition).
 lpe
 add $0,1
 min $1,1

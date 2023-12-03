@@ -13,10 +13,9 @@ lpb $4
   mod $2,7
   add $2,2
   gcd $2,9
-  mul $2,6
-  sub $2,9
-  div $2,9
-  add $2,2
+  mul $2,2
+  div $2,3
+  add $2,1
   add $1,$2
 lpe
 mov $0,$1

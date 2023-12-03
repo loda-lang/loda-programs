@@ -1,6 +1,6 @@
 ; A308230: Irregular triangle: row n shows the alternating sums of partitions of n when the parts are arranged in nonincreasing order and the partitions are arranged lexicographically from [n] to [1,1,1,...,1].
 ; Submitted by damotbe
-; 1,2,0,3,1,1,4,2,0,2,0,5,3,1,3,1,1,1,6,4,2,4,0,2,2,2,0,2,0,7,5,3,5,1,3,3,1,3,1,3,1,1,1,1,8,6,4,6,2,4,4,0,2,4,2,4,2,0,2,2,2,0,2,0,2,0,9,7,5,7,3,5,5,1,3,5,3,5,1,3,1,3,3,3,3,1
+; 1,2,0,3,1,1,4,2,0,2,0,5,3,1,3,1,1,1,6,4,2,4,0,2,2,2,0,2,0,7,5,3,5,1,3,3,1,3,1,3,1,1,1,1,8,6,4,6,2,4,4,0,2,4,2,4,2,0,2,2,2,0,2,0,2,0,9,7,5,7,3,5,5,1,3,5,3,5,1,3
 ; Formula: a(n) = A319273(A057335(A114994(n+1))-1)
 
 add $0,1

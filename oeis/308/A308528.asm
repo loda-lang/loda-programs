@@ -4,8 +4,4 @@
 ; Formula: a(n) = 2*A003000(n)
 
 seq $0,3000 ; Number of bifix-free (or primary, or unbordered) words of length n over a two-letter alphabet.
-mov $1,3619864
-add $1,$0
-mov $0,$1
 mul $0,2
-sub $0,7239728

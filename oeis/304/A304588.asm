@@ -16,10 +16,8 @@ sub $2,$3
 mul $2,2
 add $1,$3
 sub $1,$2
-mul $1,2
-sub $1,24
-div $1,8
-add $1,1
+div $1,4
+sub $1,2
 mul $0,2
 add $0,$1
 add $0,2

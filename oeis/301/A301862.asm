@@ -1,6 +1,6 @@
 ; A301862: Decimal expansion of the probability of intersection of 2 random chords in a circle, where each chord is selected by a random point within the circle and a random direction.
 ; Submitted by Jamie Morken(w1)
-; 5,8,6,6,3,6,2,9,2,4,3,9,1,7,7,7,6,1,9,4,3,0,3,1,9,9,1,3,5,7,6,5,2,4,3,0,5,9,4,2,3,0,2,7,0,0,1,3,9,4,9,7,0,5,4,4,7,3,5,5,9,1,3,0,6,8,7,6,6,1,3,5,7,3,8,9,2,1,9,3,6,3,1,1,3,5,6
+; 5,8,6,6,3,6,2,9,2,4,3,9,1,7,7,7,6,1,9,4,3,0,3,1,9,9,1,3,5,7,6,5,2,4,3,0,5,9,4,2,3,0,2,7,0,0,1,3,9,4,9,7,0,5,4,4,7,3,5,5,9,1,3,0,6,8,7,6,6,1,3,5,7,3,8,9,2,1,9,3
 
 add $0,2
 mov $3,$0
