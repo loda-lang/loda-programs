@@ -7,8 +7,12 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-add $0,1
 add $1,1
-seq $1,255047 ; 1 together with the positive terms of A000225.
+mov $2,2
+pow $2,$1
+trn $2,2
+add $2,1
+add $0,1
+mov $1,$2
 pow $1,$0
 mov $0,$1

@@ -7,8 +7,11 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $6,1
+  mov $7,$1
+  seq $7,51903 ; Maximal exponent in prime factorization of n.
   mov $3,$1
-  seq $3,304180 ; If n = Product (p_j^k_j) then a(n) = max{p_j}^max{k_j}.
+  seq $3,111089 ; Largest prime factor of 2n.
+  pow $3,$7
   mov $5,$3
   gcd $5,$6
   div $3,$5

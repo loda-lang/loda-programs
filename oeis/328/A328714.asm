@@ -12,7 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$2
   sub $4,1
-  seq $0,39699 ; Number of 4-dimensional cubic lattice walks that start and end at origin after 2n steps, free to pass through origin at intermediate stages.
+  seq $0,39699 ; Number of 4-dimensional cubic lattice walks that start and end at the origin after 2n steps, free to pass through origin at intermediate stages.
   bin $1,$4
   mul $1,$0
   add $3,$1

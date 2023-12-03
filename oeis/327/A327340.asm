@@ -5,7 +5,19 @@
 mov $2,$0
 add $2,1
 pow $2,2
-seq $0,173290 ; Partial sums of A001615.
-mov $1,$0
+mov $3,1
+lpb $0
+  mov $5,-1
+  pow $5,$0
+  mul $5,2
+  bin $5,2
+  mov $4,$0
+  seq $4,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $4,$5
+  sub $0,1
+  add $3,$4
+lpe
+mov $1,$3
 gcd $1,$2
+mov $0,$3
 div $0,$1

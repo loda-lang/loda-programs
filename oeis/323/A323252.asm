@@ -1,4 +1,4 @@
-; A323252: Numbers n such that the numerator and denominator of the reduced fraction Sum_{k=1..n} 1/k have no digits in common.
+; A323252: Numbers k such that the numerator and denominator of the reduced fraction Sum_{i=1..k} 1/i have no digits in common.
 ; Submitted by gemini8
 ; 2,3,5,6,7,8,10,15
 ; Formula: a(n) = (7*n+7)/4-(((n+1)/2)%4)+1

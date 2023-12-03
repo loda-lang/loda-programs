@@ -4,10 +4,15 @@ pushd .. > /dev/null
 
 # parse options
 commit_staged="n"
+auto_trivial="n"
 while [[ $# -gt 0 ]]; do
   case $1 in
     -c|--commit-staged)
       commit_staged="y"
+      shift # past argument
+      ;;
+    -t|--auto-trivial)
+      auto_trivial="y"
       shift # past argument
       ;;
     *)
@@ -147,7 +152,7 @@ for f in $files; do
     ((num_updated++))
     continue
   fi
-  if is_trivial_change $f; then
+  if [ "$auto_trivial" = "y" ] && is_trivial_change $f; then
     echo "Trivial change: $f"
     git add $f
     ((num_updated++))

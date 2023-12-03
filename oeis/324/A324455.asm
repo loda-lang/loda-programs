@@ -13,13 +13,10 @@ lpb $2
   add $7,2
   mov $8,$3
   seq $8,363596 ; a(n) = (Product_{k=1..pi(n+1)} prime(k)^floor(n/(prime(k)-1) ) )/(n+1)!.
-  mul $8,2
   mov $5,$8
-  sub $5,2
-  div $5,2
-  add $5,1
-  mov $6,$5
+  mov $6,$8
   gcd $6,$7
+  mul $8,2
   mod $3,$6
   mul $3,4
   trn $3,3

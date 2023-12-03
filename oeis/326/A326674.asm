@@ -11,8 +11,5 @@ lpb $0
   div $0,2
   gcd $1,$3
 lpe
-mul $1,2
 mov $0,$1
-sub $0,2
-div $0,2
-add $0,1
+mul $1,2

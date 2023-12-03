@@ -6,7 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,326700 ; Denominator of the average position of a 1 in the reversed binary expansion of n.
+  add $3,1
+  mov $5,$3
+  seq $5,73642 ; Replace 2^k in the binary representation of n with k (i.e., if n = 2^b + 2^c + 2^d + ... then a(n) = b + c + d + ...).
+  mul $3,2
+  seq $3,48881 ; a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+  gcd $5,$3
+  div $3,$5
   cmp $3,1
   sub $0,$3
   add $1,1

@@ -12,7 +12,12 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,16031 ; De Bruijn's sequence: 2^(2^(n-1) - n): number of ways of arranging 2^n bits in circle so all 2^n consecutive strings of length n are distinct.
+  mov $5,2
+  pow $5,$0
+  sub $5,$0
+  mov $0,2
+  pow $0,$5
+  div $0,2
   mul $1,$0
   mul $3,-1
   add $3,$1

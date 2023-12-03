@@ -1,10 +1,30 @@
 ; A323648: Numbers k such that the largest Dyck path of the symmetric representation of sigma(k) does not share any line segment with the largest Dyck path of the symmetric representation of sigma(k+1).
 ; Submitted by p3d-cluster
 ; 1,2,3,5,7,9,11,15,17,19,23,27,29,31,35,39
-; Formula: a(n) = A325796(n+1)-1
 
 add $0,1
 mov $1,$0
-seq $1,325796 ; Numbers with at least as many divisors as the sum of their prime indices.
-mov $0,$1
-sub $0,1
+mov $2,0
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
+  mov $6,$2
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $6,$4
+  mov $4,$6
+  add $4,4
+  trn $4,3
+  min $4,1
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  cmp $5,$1
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+mov $1,$2
+add $1,1
