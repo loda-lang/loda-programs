@@ -13,10 +13,8 @@ lpb $2
   add $3,7
   add $5,$3
   mov $3,$5
-  mul $3,2
-  sub $3,26
-  div $3,2
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  sub $3,13
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   cmp $3,1
   sub $0,$3
   add $1,1

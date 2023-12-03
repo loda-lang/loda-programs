@@ -23,9 +23,8 @@ lpb $0
   add $2,$0
   mul $4,$3
   div $4,$2
-  add $5,2
   div $5,2
-  add $5,2
+  add $5,3
   mul $6,-1
   add $6,$4
 lpe

@@ -9,7 +9,8 @@ lpb $3
   mov $0,$3
   add $0,$2
   add $0,$3
-  seq $0,90368 ; a(1) = 1; for n > 1, smallest divisor > 1 of 2n-1.
+  mul $0,2
+  seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   add $1,$0
   mul $2,$3
 lpe

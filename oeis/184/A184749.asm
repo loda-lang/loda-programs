@@ -19,7 +19,4 @@ mul $2,$0
 div $2,$3
 mov $0,$2
 add $0,$1
-mul $0,2
-sub $0,8
-div $0,8
-add $0,1
+div $0,4

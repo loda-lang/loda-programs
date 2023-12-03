@@ -1,12 +1,22 @@
 ; A176083: a(n) = 2^(2n-2) mod prime(2n).
 ; Submitted by Science United
 ; 1,4,3,7,24,25,11,7,22,12,9,1,5,69,1,62,41,16,133,89,39,3,162,66,121,12,4,109,163,85,135,52,251,8,14,6,154,126,167,284,149,158,254,110,318,23,75,23,59,279,478,513,290,58,256,345,347,25,58,361,672,681,673,697,669,609,278,739,355,529,543,478,43,839,192,237,324,581,168,421
-; Formula: a(n) = (2^(2*n))%A006005(2*n+1)
 
 mul $0,2
 mov $1,2
 pow $1,$0
+mov $3,0
+add $0,2
+mov $4,$0
+pow $4,5
+lpb $4
+  mov $2,$3
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$2
+  add $3,2
+  sub $4,$0
+lpe
+mov $0,$3
 add $0,1
-seq $0,6005 ; The odd prime numbers together with 1.
 mod $1,$0
 mov $0,$1

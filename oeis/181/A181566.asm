@@ -1,6 +1,6 @@
-; A181566: Expected number of elements needed to identify an abelian group of order n by testing the order of random elements.
+; A181566: Minimum number of random elements such that their orders allow identification of an abelian group of order n (sampled uniformly) with probability greater than 1/2.
 ; Submitted by Simon Strandgaard
-; 0,0,2,0,0,0,4,3,0,0,3,0,0,0
+; 0,0,0,2,0,0,0,4,3,0,0,3,0,0,0,8,0,3,0,4,0,0,0,7,5,0,8,5,0,0,0,16,0,0,0,9,0,0,0,12,0,0,0,5,4,0,0,19,7,5,0,6,0,12,0,16,0,0,0,6,0,0,5,37,0,0,0,6,0,0,0,20,0,0,5,6,0,0,0,32
 ; Formula: a(n) = A071325(n+1)*(A344259(n+1)+1)
 
 add $0,1

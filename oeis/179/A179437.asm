@@ -1,10 +1,21 @@
 ; A179437: a(n) = |2n - prime(n)|.
 ; Submitted by Kotenok2000
 ; 0,1,1,1,1,1,3,3,5,9,9,13,15,15,17,21,25,25,29,31,31,35,37,41,47,49,49,51,51,53,65,67,71,71,79,79,83,87,89,93,97,97,105,105,107,107,117,127,129,129,131,135,135,143,147,151,155,155,159,161,161,169,181,183,183,185,197,201,209,209,211,215,221,225,229,231,235,241,243,249
-; Formula: a(n) = gcd(0,2*n-max(A006005(n),2)+2)
 
 mov $1,$0
-seq $0,6005 ; The odd prime numbers together with 1.
+mov $4,0
+add $0,1
+mov $5,$0
+pow $5,5
+lpb $5
+  mov $3,$4
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$3
+  add $4,2
+  sub $5,$0
+lpe
+mov $0,$4
+add $0,1
 max $0,2
 mul $1,2
 add $1,2

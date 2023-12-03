@@ -6,7 +6,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,24935 ; a(n) = minimal length of any partition of n into distinct primes.
+  seq $2,24935 ; Duplicate of A051034.
   sub $0,1
   add $1,$2
 lpe

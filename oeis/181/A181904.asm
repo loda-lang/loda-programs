@@ -30,9 +30,7 @@ lpb $3
   max $4,$7
 lpe
 mov $0,$4
-sub $0,2
 div $0,2
-add $0,1
 sub $1,1
 div $1,$0
 mov $0,$1

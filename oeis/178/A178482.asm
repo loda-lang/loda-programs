@@ -8,7 +8,7 @@ lpb $3
   add $0,$3
   mov $4,$0
   div $4,2
-  seq $4,62877 ; Apart from the initial term (0), each a(n) is representable as a sum of distinct odd-indexed Fibonacci numbers.
+  seq $4,62877 ; 0 and numbers representable as a sum of distinct odd-indexed Fibonacci numbers.
   mul $0,2
   mov $2,$3
   mul $2,$4

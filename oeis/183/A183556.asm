@@ -15,6 +15,5 @@ lpb $0
 lpe
 max $1,$3
 mov $0,$1
-sub $0,8
 div $0,4
-add $0,1
+sub $0,1
