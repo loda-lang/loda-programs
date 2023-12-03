@@ -22,11 +22,6 @@ lpb $4
   sub $1,1
 lpe
 mov $0,$3
-sub $0,18
 div $0,2
-add $0,10
+add $0,1
 bin $0,2
-mul $0,3
-sub $0,9
-div $0,3
-add $0,3

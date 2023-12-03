@@ -21,7 +21,3 @@ mov $0,$3
 sub $0,$2
 mul $0,2
 add $0,$1
-mul $0,4
-sub $0,4
-div $0,4
-add $0,1

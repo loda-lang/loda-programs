@@ -28,6 +28,4 @@ lpb $0
   add $2,1
 lpe
 mov $0,$7
-sub $0,24
 div $0,24
-add $0,1

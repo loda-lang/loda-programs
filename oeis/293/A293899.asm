@@ -1,4 +1,4 @@
-; A293899: Number of proper divisors of form 3k+1 minus number of proper divisors of form 3k+2.
+; A293899: Number of proper divisors of the form 3k+1 minus number of proper divisors of the form 3k+2.
 ; Submitted by Christian Krause
 ; 0,1,1,0,1,0,1,1,1,-1,1,1,1,1,0,0,1,0,1,1,2,-1,1,0,0,1,1,1,1,0,1,1,0,-1,1,1,1,1,2,-1,1,0,1,1,0,-1,1,1,2,1,0,1,1,0,-1,1,2,-1,1,0,1,1,2,0,1,0,1,1,0,-1,1,0,1,1,1,1,1,0,1,1
 

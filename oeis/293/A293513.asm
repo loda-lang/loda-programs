@@ -1,4 +1,4 @@
-; A293513: Number of proper divisors of form 4k+3.
+; A293513: Number of proper divisors of n of the form 4k+3.
 ; Submitted by Jamie Morken(l1)
 ; 0,0,0,0,0,1,0,0,1,0,0,1,0,1,1,0,0,1,0,0,2,1,0,1,0,0,1,1,0,2,0,0,2,0,1,1,0,1,1,0,0,2,0,1,2,1,0,1,1,0,1,0,0,2,1,1,2,0,0,2,0,1,2,0,0,2,0,0,2,2,0,1,0,0,2,1,2,2,0,0
 

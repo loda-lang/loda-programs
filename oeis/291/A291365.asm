@@ -9,7 +9,8 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,349444 ; Dirichlet convolution of A003602 (Kimberling's paraphrases) with A092673 (Dirichlet inverse of A001511).
+  seq $0,319997 ; a(n) = Sum_{d|n, d is odd} mu(n/d)*d, where mu(n) is Moebius function A008683.
+  dif $0,2
   add $3,$0
   add $4,$3
 lpe
