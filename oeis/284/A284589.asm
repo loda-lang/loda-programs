@@ -16,7 +16,5 @@ lpb $2
   add $2,$3
   sub $2,$0
 lpe
-mul $0,16
-sub $0,32
-div $0,32
-add $0,2
+div $0,2
+add $0,1

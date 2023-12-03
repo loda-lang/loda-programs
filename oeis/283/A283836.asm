@@ -6,7 +6,7 @@
 add $0,2
 lpb $0
   mov $2,$0
-  seq $2,124312 ; G.f.: (x^3 - x^4)/(1 - x - x^2 - x^3 - x^4 - x^5).
+  seq $2,124312 ; Expansion of g.f. x^3*(1 - x)/(1 - x - x^2 - x^3 - x^4 - x^5).
   trn $0,6
   add $1,$2
 lpe

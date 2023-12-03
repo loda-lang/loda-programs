@@ -4,7 +4,7 @@
 ; Formula: a(n) = A030231(n)+A264668(n)
 
 mov $1,$0
-seq $1,30231 ; Number of distinct primes dividing n is even.
+seq $1,30231 ; Numbers with an even number of distinct prime factors.
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 add $1,$0

@@ -1,12 +1,35 @@
-; A278079: E.g.f. 1/3!*sin^3(x)/cos(x) (coefficients of odd powers only).
+; A278079: Expansion of e.g.f. (1/3!)*sin^3(x)/cos(x) (coefficients of odd powers only).
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,0,56,1280,59136,3727360,317295616,34977546240,4848147562496,825249675345920,169237314418507776,41153580031698534400,11708600267324004499456,3853197364634932928839680,1452327126187528216207425536,621567950620088261848869109760
-; Formula: a(n) = (A009126(2*n+1)*(-1)^n)/3
 
 mov $1,-1
 pow $1,$0
+mov $3,0
+mov $6,0
+mov $7,0
 mul $0,2
 add $0,1
-seq $0,9126 ; Expansion of e.g.f. cosh(log(1+tanh(x))).
+mov $2,0
+mov $5,$0
+add $0,1
+lpb $0
+  sub $0,1
+  div $7,2
+  add $7,$3
+  mul $7,2
+  mov $3,$2
+  pow $3,$5
+  add $3,1
+  sub $3,$7
+  add $3,$2
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $2,1
+  mul $6,-1
+  add $6,$4
+lpe
+mov $0,$6
+div $0,2
 mul $0,$1
 div $0,3

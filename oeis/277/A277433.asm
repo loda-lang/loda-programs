@@ -8,8 +8,7 @@ lpb $0
   div $0,2
 lpe
 mov $0,$1
-mul $0,100
-sub $0,4950
-div $0,450
-add $0,12
+mul $0,2
+div $0,9
+add $0,1
 mod $0,10

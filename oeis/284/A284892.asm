@@ -7,7 +7,10 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,353471 ; a(n) = 1 if n is a prime or a squarefree semiprime, otherwise 0.
+  seq $3,73184 ; Number of cubefree divisors of n.
+  seq $3,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
+  bin $3,2
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

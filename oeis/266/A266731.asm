@@ -12,7 +12,4 @@ lpb $1
 lpe
 add $0,3
 div $0,6
-mul $0,6
-sub $0,60
-div $0,6
-add $0,7
+sub $0,3

@@ -1,10 +1,30 @@
 ; A267804: Binary representation of the n-th iteration of the "Rule 214" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Jon Maiga
 ; 1,111,10111,1100111,101110111,11001100111,1011101110111,110011001100111,10111011101110111,1100110011001100111,101110111011101110111,11001100110011001100111,1011101110111011101110111,110011001100110011001100111,10111011101110111011101110111,1100110011001100110011001100111,101110111011101110111011101110111,11001100110011001100110011001100111,1011101110111011101110111011101110111,110011001100110011001100110011001100111,10111011101110111011101110111011101110111
-; Formula: a(n) = 10*A007088(A267805(n)/2)+1
 
-seq $0,267805 ; Decimal representation of the n-th iteration of the "Rule 214" elementary cellular automaton starting with a single ON (black) cell.
-div $0,2
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,2
+pow $1,$0
+pow $1,2
+add $1,6
+mov $2,$0
+mod $2,2
+add $2,11
+mul $1,$2
+mov $0,$1
+div $0,3
+mul $0,2
+sub $0,45
+div $0,10
+mov $3,0
+mov $4,1
+lpb $0
+  mov $5,$0
+  mod $5,2
+  mul $5,$4
+  div $0,2
+  add $3,$5
+  mul $4,10
+lpe
+mov $0,$3
 mul $0,10
 add $0,1
