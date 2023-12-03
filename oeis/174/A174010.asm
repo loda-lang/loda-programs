@@ -11,7 +11,15 @@ pow $3,2
 mul $3,2
 lpb $3
   mov $4,$2
-  seq $4,179437 ; a(n) = |2n - prime(n)|.
+  seq $4,6005 ; The odd prime numbers together with 1.
+  max $4,2
+  mov $7,$2
+  mul $7,2
+  add $7,2
+  sub $7,$4
+  mov $8,0
+  gcd $8,$7
+  mov $4,$8
   sub $4,1
   mov $6,$4
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

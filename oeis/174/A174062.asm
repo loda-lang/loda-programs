@@ -19,6 +19,4 @@ lpb $2
   add $1,$0
 lpe
 mov $0,$1
-sub $0,4
 div $0,4
-add $0,1

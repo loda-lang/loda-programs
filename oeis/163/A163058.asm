@@ -7,9 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,175540 ; a(n) = A067076(n) + n.
+  seq $3,67076 ; Numbers k such that 2*k + 3 is a prime.
+  add $3,$1
+  add $3,1
   mov $5,$3
   mul $5,2
+  mov $6,$1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
@@ -20,9 +23,5 @@ lpb $2
   trn $2,1
 lpe
 mov $0,$5
-sub $0,32
 div $0,2
-mul $0,5
-add $0,75
-div $0,5
-add $0,2
+add $0,1

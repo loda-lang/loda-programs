@@ -17,9 +17,7 @@ mul $4,$2
 dif $4,5
 div $4,$5
 mov $2,$4
-sub $2,182
 div $2,182
-add $2,1
 add $0,1
 mov $1,$0
 mov $0,10

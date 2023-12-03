@@ -11,8 +11,7 @@ lpb $1
   seq $0,151569 ; a(0)=1, a(1)=2; a(2^i+j)=2*a(j)+a(j+1) for 0 <= j < 2^i.
   add $2,$0
 lpe
-div $2,2
 mov $0,$2
-sub $0,6
-div $0,3
-add $0,1
+div $0,6
+sub $0,1
+div $2,2

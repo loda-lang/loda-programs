@@ -29,9 +29,7 @@ lpb $4
   pow $0,$8
   mul $0,$7
   add $0,$6
-  sub $0,4
   div $0,2
-  add $0,2
   mul $1,$0
   add $3,$1
 lpe
