@@ -10,6 +10,4 @@ add $0,$1
 max $0,1
 mul $0,2
 dif $0,3
-sub $0,2
 div $0,2
-add $0,1

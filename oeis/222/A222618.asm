@@ -8,7 +8,13 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
-  seq $3,24675 ; Average of two consecutive odd primes.
+  add $3,1
+  seq $3,6005 ; The odd prime numbers together with 1.
+  mov $6,$3
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $6,$3
+  mov $3,$6
+  div $3,2
   mul $3,2
   mov $5,$3
   mul $3,2

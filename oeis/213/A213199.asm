@@ -7,7 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  seq $3,33496 ; Numbers n such that initial number is largest number in trajectory of Collatz (3x+1) problem.
+  seq $3,33496 ; Numbers m that are the largest number in their Collatz (3x+1) trajectory.
   sub $3,1
   add $0,1
   add $1,1

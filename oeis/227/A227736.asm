@@ -1,6 +1,6 @@
 ; A227736: Irregular table read by rows: the first entry of n-th row is length of run of rightmost identical bits (either 0 or 1, equal to n mod 2), followed by length of the next run of bits, etc., in the binary representation of n, when scanned from the least significant to the most significant end.
 ; Submitted by Simon Strandgaard (M1)
-; 1,1,1,2,2,1,1,1,1,1,2,3,3,1,1,2,1,1,1,1,1,2,1,1,2,2,1,1,2,1,3,4,4,1,1,3,1,1,1,2,1,2,2,1,2,1,1,1,1,1,1,1,1,1,2,1,1,3,1,1,3,2,1,2,2,1,1,1,2,2,1,2,2,3,1,1,3,1,4,5,5,1,1,4,1,1,1,3,1,2,3,1,2,1,2,1,1,1,1,2
+; 1,1,1,2,2,1,1,1,1,1,2,3,3,1,1,2,1,1,1,1,1,2,1,1,2,2,1,1,2,1,3,4,4,1,1,3,1,1,1,2,1,2,2,1,2,1,1,1,1,1,1,1,1,1,2,1,1,3,1,1,3,2,1,2,2,1,1,1,2,2,1,2,2,3,1,1,3,1,4,5
 
 mov $2,$0
 add $2,1

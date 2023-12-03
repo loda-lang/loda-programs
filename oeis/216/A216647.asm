@@ -4,7 +4,7 @@
 ; Formula: a(n) = A001511(n)+A309786(n)
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,309786 ; a(n) is the length of the cycle of the trajectory of 1/n under the map f(x) = min(2*x, 2-2*x).
 add $1,$0
 mov $0,$1

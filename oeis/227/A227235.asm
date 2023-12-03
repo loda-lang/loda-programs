@@ -15,10 +15,8 @@ lpb $2
   pow $4,$0
   min $4,72
   mul $0,$4
-  mul $0,8
-  sub $0,1728
-  div $0,576
-  add $0,1
+  div $0,72
+  sub $0,2
   add $0,$2
   bin $0,$2
   add $1,$0

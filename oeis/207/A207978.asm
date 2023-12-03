@@ -8,5 +8,21 @@ cmp $1,0
 mov $2,$0
 add $2,$1
 sub $2,1
-seq $2,11968 ; Apply (1+Shift) to Bell numbers.
-mov $0,$2
+mov $3,$2
+mov $4,0
+mov $5,2
+lpb $5
+  sub $5,1
+  mov $2,$3
+  add $2,$5
+  trn $2,1
+  seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mov $6,$5
+  mul $6,$2
+  add $4,$6
+lpe
+min $3,1
+mul $3,$2
+add $3,$4
+mov $0,$3
+mov $2,$3

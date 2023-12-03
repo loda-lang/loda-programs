@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $6,$1
-  seq $6,51731 ; Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n >= 1 and 1 <= k <= n).
+  seq $6,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
   mov $3,$1
   pow $3,$6
   seq $3,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.

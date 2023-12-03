@@ -9,8 +9,16 @@ lpb $2
   add $1,2
   mov $3,$1
   pow $3,2
-  seq $3,88512 ; Number of partitions of n into two parts whose xor-sum is n.
   sub $3,1
+  mov $5,-1
+  sub $5,$3
+  add $3,1
+  bin $5,$3
+  mov $6,2
+  pow $6,$3
+  gcd $6,$5
+  mov $3,$6
+  sub $3,2
   cmp $3,2
   sub $0,$3
   mov $4,$0

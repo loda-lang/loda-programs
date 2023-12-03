@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,172 ; Franel number a(n) = Sum_{k = 0..n} binomial(n,k)^3.
+    seq $7,172 ; The Franel number a(n) = Sum_{k = 0..n} binomial(n,k)^3.
     pow $7,3
     mov $9,10
     add $9,$5

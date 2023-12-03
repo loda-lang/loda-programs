@@ -34,6 +34,4 @@ div $1,2
 sub $1,$7
 add $1,$6
 mov $0,$1
-sub $0,3
 div $0,3
-add $0,1

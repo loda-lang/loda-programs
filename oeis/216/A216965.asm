@@ -15,9 +15,7 @@ lpb $2
   seq $3,164029 ; a(n) = nonprime(n) + (-1)^(nonprime(n)).
   max $3,1
   seq $3,296065 ; Partial sums of A296064.
-  add $3,2
   div $3,2
-  sub $3,1
   cmp $3,0
   cmp $3,0
   sub $0,$3
