@@ -6,8 +6,16 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $6,$1
+  trn $6,1
+  seq $6,94178 ; Numbers n such that 4n+1 is divisible only by primes of form 4m+1 (i.e., by the Pythagorean primes A002144).
   mov $3,$1
-  seq $3,4613 ; Numbers that are divisible only by primes congruent to 1 mod 4.
+  add $3,1
+  pow $3,3
+  mod $6,$3
+  mov $3,$6
+  mul $3,4
+  add $3,1
   mul $3,2
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

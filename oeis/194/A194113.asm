@@ -5,7 +5,7 @@
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,198265 ; Ceiling(n*sqrt(10)).
+  seq $2,198265 ; a(n) = ceiling(n*sqrt(10)).
   sub $2,1
   sub $0,1
   add $1,$2

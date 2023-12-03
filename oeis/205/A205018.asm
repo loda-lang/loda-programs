@@ -6,7 +6,3 @@ add $0,1
 dif $0,2
 sub $0,1
 seq $0,205002 ; Least k such that n divides s(k)-s(j) for some j satisfying 1<=j<k, where s(j)=j(j+1)/2.
-mul $0,2
-sub $0,4
-div $0,2
-add $0,2

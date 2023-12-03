@@ -7,7 +7,19 @@ mul $0,2
 add $0,2
 add $1,1
 mod $1,2
+mov $2,0
+mov $3,1
 add $0,$1
-seq $0,133325 ; Numbers such that 2*X^2-82 is a square.
-mul $0,81
-div $0,162
+lpb $0
+  sub $0,1
+  mov $4,$0
+  add $4,$0
+  mod $4,4
+  mul $4,$3
+  add $2,6
+  add $2,$4
+  add $3,$2
+lpe
+mov $0,$3
+add $0,6
+div $0,2

@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   add $2,1
   mov $3,$2
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   gcd $2,$3
   div $3,$2
   sub $0,1

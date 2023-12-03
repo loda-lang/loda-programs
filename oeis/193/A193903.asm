@@ -15,6 +15,4 @@ sub $0,$3
 mov $1,$0
 gcd $0,2
 mul $0,$1
-sub $0,2
 div $0,2
-add $0,1

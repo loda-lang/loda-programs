@@ -13,7 +13,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,60098 ; Triangle of partial sums of column sequences of triangle A060086.
+  seq $4,60098 ; Triangle of partial sums of column sequences of triangle A060086, read by rows.
   mov $5,0
   lpb $0
     add $5,1

@@ -19,6 +19,4 @@ lpb $0
   add $0,$3
   div $0,2
 lpe
-div $0,2
-div $0,2
-div $0,4
+div $0,16

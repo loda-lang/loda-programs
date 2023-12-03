@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,44990 ; Numbers n with property that in base 3 representation the numbers of 0's and 2's are 0 and 1, respectively.
+  seq $3,44990 ; Numbers whose base-3 representation contains no 0's and exactly one 2.
   seq $3,7089 ; Numbers in base 3.
   sub $3,1
   mov $5,$3

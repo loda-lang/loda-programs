@@ -12,10 +12,7 @@ lpb $0
   sub $2,$3
   bin $3,0
   mul $3,$2
-  mul $4,2
-  add $4,4
-  div $4,2
-  add $4,1
+  add $4,3
   add $1,$3
 lpe
 mov $0,$1

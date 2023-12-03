@@ -9,6 +9,4 @@ seq $1,120865 ; a(n) is the number k for which there exists a unique pair (j,k) 
 sub $0,$1
 add $0,1
 seq $0,204991 ; 2^k-2^j, where (2^k,2^j) is the least pair of distinct positive powers of 2 for which n divides 2^k-2^j.
-sub $0,2
 div $0,2
-add $0,1

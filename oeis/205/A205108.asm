@@ -6,5 +6,5 @@
 seq $0,205106 ; Least k such that n divides the k-th difference between distinct pairs of numbers 3^j-2^j.
 seq $0,107436 ; a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.
 add $0,1
-seq $0,2783 ; 2*(3^n - 2^n) + 1.
+seq $0,2783 ; a(n) = 2*(3^n - 2^n) + 1.
 div $0,2

@@ -12,9 +12,5 @@ add $0,$2
 add $1,$0
 sub $0,2
 seq $0,138799 ; Values of T(j) corresponding to least possible T(k) with T(k)-T(j)=n, where T(i)>0 are the triangular numbers A000217.
-mul $0,4
-sub $0,4
-div $0,4
 add $0,$1
-add $0,1
 mul $0,2
