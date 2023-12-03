@@ -28,10 +28,7 @@ lpb $6
   trn $6,1
 lpe
 mov $0,$4
-mul $0,6
-sub $0,72
-div $0,12
-add $0,6
+div $0,2
 sub $1,$0
 gcd $1,0
 mov $0,$1

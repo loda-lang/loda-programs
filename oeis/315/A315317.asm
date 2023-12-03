@@ -1,4 +1,4 @@
-; A315317: Coordination sequence Gal.5.257.3 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+; A315317: Coordination sequence Gal.5.257.3 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
 ; Submitted by Conan
 ; 1,6,10,16,21,25,32,37,41,48,52,56,64,68,72,80,83,87,96,99,103,112,114,118,128,130,134,144,145,149,160,161,165,176,176,180,192,192,196,208,207,211,224,223,227,240,238,242,256,254
 

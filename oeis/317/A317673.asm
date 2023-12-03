@@ -4,6 +4,6 @@
 ; Formula: a(n) = A209635(n)*A001511(n)
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,209635 ; Möbius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
 mul $0,$1

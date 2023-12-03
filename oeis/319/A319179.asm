@@ -15,7 +15,7 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  seq $0,130162 ; A051731 * A000837 as a diagonalized matrix.
+  seq $0,130162 ; Triangle read by rows: A051731 * A000837 as a diagonalized matrix.
   mul $0,$4
   add $1,$0
 lpe

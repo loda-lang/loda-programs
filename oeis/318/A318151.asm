@@ -30,6 +30,4 @@ add $0,2
 mov $2,2
 pow $2,$0
 mov $0,$2
-sub $0,4
 div $0,4
-add $0,1
