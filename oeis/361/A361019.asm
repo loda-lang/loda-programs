@@ -4,7 +4,7 @@
 ; Formula: a(n) = (A092673(n)*A001511(n)+A092673(n))/2
 
 mov $1,$0
-seq $1,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
 seq $0,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
 mul $1,$0
 add $0,$1

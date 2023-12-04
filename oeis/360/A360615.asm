@@ -1,6 +1,6 @@
 ; A360615: Denominator of the average distance between consecutive 0-prepended prime indices of n; a(1) = 0.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
-; 0,1,1,2,1,1,1,3,1,2,1,3,1,1,2,4,1,3,1,1,1,2,1,2,2,1,3,3,1,1,1,5,2,2,1,2,1,1,1,4,1,3,1,3,1,2,1,5,1,1,2,1,1,2,2,1,1,1,1,4,1,2,3,6,1,3,1,3,2,3,1,5,1,1,1,3,2,1,1,5,2,2,1,1,2,1,1,4,1,4,1,1,2,2,1,3,1,3,3,4
+; 0,1,1,2,1,1,1,3,1,2,1,3,1,1,2,4,1,3,1,1,1,2,1,2,2,1,3,3,1,1,1,5,2,2,1,2,1,1,1,4,1,3,1,3,1,2,1,5,1,1,2,1,1,2,2,1,1,1,1,4,1,2,3,6,1,3,1,3,2,3,1,5,1,1,1,3,2,1,1,5
 
 add $0,1
 mov $1,1
@@ -10,7 +10,10 @@ lpb $2
   add $2,1
   sub $2,$0
   mov $5,$1
-  seq $5,61395 ; Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
+  seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  sub $5,1
+  seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  sub $5,1
   mov $4,$1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   gcd $5,$4

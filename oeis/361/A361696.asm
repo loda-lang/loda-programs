@@ -24,6 +24,5 @@ div $0,2
 pow $0,2
 add $1,$0
 add $0,$1
-sub $0,72
 div $0,2
-add $0,41
+add $0,5

@@ -9,7 +9,7 @@ lpb $2
   sub $2,18
   mov $3,$1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   mov $5,-1
   sub $5,$1
   add $5,$3

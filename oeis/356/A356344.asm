@@ -70,9 +70,7 @@ lpb $2
       mul $12,$0
       mov $0,$13
       sub $0,$12
-      sub $0,1100
       div $0,550
-      add $0,2
       add $17,$0
     lpe
     add $6,$17

@@ -25,6 +25,4 @@ mov $1,$4
 div $1,6
 div $1,$0
 mov $0,$1
-sub $0,4
 div $0,4
-add $0,1

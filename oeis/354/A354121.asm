@@ -19,6 +19,4 @@ sub $3,1
 mul $3,$0
 add $3,$1
 mov $0,$3
-sub $0,3
 div $0,3
-add $0,1

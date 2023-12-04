@@ -7,7 +7,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+  seq $5,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   mod $5,2
   mov $3,$1
   seq $3,137893 ; Fixed point of the morphism 0->100, 1->101, starting from a(1) = 1.

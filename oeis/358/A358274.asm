@@ -7,4 +7,4 @@ seq $0,121543 ; "If n appears then n-th prime doesn't", with a(1)=1.
 sub $0,1
 seq $0,6450 ; Prime-indexed primes: primes with prime subscripts.
 sub $0,1
-seq $0,65769 ; Prime cascade: multiplicative with a(p(m)^k) = p(m-1) * p(m)^(k-1).
+seq $0,65769 ; Prime cascade: multiplicative with a(prime(m)^k) = prime(m-1) * prime(m)^(k-1).

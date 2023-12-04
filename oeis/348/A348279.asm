@@ -14,7 +14,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,190116 ; a(n) = n*n', where n' is the arithmetic derivative (A003415) of n.
+  add $0,1
+  mov $5,$0
+  seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  mul $0,$5
   mul $1,$0
   add $3,$1
 lpe

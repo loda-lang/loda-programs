@@ -14,7 +14,7 @@ lpb $4
   bin $1,$0
   mov $5,2
   pow $5,$0
-  seq $0,276371 ; E.g.f.: exp(x/2)/(2 - exp(2*x))^(1/4).
+  seq $0,276371 ; Expansion of e.g.f. exp(x/2)/(2 - exp(2*x))^(1/4).
   mul $0,$5
   mul $1,$0
   mul $1,2
@@ -22,6 +22,4 @@ lpb $4
   add $3,$1
 lpe
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

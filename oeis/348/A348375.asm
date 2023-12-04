@@ -8,7 +8,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $1,$4
-  seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $1,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   add $3,$1
   mul $4,$0
 lpe

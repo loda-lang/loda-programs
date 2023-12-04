@@ -14,13 +14,9 @@ lpb $4
   add $1,$4
   bin $1,$0
   seq $0,4009 ; Expansion of Eisenstein series E_4(q) (alternate convention E_2(q)); theta series of E_8 lattice.
-  sub $0,12
   div $0,12
-  add $0,1
   mul $1,$0
   add $3,$1
 lpe
 mov $0,$3
-sub $0,20
 div $0,20
-add $0,1

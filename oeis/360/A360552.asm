@@ -6,8 +6,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,206824 ; Number of solutions (n,k) of s(k) = s(n) (mod n), where 1 <= k < n and s(k) = k(k+1)/2.
-  sub $3,1
+  add $3,1
+  mov $5,$3
+  gcd $3,2
+  seq $5,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  sub $5,2
+  mul $5,$3
+  mov $3,$5
+  div $3,2
   add $3,$4
   cmp $3,2
   gcd $3,2

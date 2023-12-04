@@ -13,7 +13,7 @@ mov $4,$0
 pow $4,2
 lpb $4
   mov $7,$3
-  seq $7,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+  seq $7,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   mov $5,$3
   seq $5,41896 ; Numerators of continued fraction convergents to sqrt(470).
   mul $5,$7
