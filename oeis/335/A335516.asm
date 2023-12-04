@@ -1,6 +1,6 @@
 ; A335516: Number of normal patterns contiguously matched by the prime indices of n in increasing or decreasing order, counting multiplicity.
 ; Submitted by [AF&amp;gt;Libristes]IxPo
-; 1,2,2,3,2,3,2,4,3,3,2,5,2,3,3,5,2,5,2,5,3,3,2,7,3,3,4,5,2,4,2,6,3,3,3,7,2,3,3,7,2,4,2,5,5,3,2,9,3,5,3,5,2,7,3,7,3,3,2,7,2,3,5,7,3,4,2,5,3,4,2,10,2,3,5,5,3,4,2,9,5,3,2,7,3,3,3
+; 1,2,2,3,2,3,2,4,3,3,2,5,2,3,3,5,2,5,2,5,3,3,2,7,3,3,4,5,2,4,2,6,3,3,3,7,2,3,3,7,2,4,2,5,5,3,2,9,3,5,3,5,2,7,3,7,3,3,2,7,2,3,5,7,3,4,2,5,3,4,2,10,2,3,5,5,3,4,2,9
 
 mov $1,1
 seq $0,320390 ; Prime signature of n (sorted in decreasing order), concatenated.

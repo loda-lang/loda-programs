@@ -20,9 +20,7 @@ lpb $3
   pow $1,2
   sub $1,$0
   mov $0,$1
-  sub $0,12
   div $0,4
-  add $0,3
   add $4,$0
 lpe
 mov $0,$4

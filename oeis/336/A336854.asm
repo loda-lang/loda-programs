@@ -4,5 +4,5 @@
 ; Formula: a(n) = A094471(A253885(n))/2
 
 seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
-seq $0,94471 ; a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+seq $0,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
 div $0,2

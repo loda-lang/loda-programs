@@ -7,7 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,293897 ; Sum of proper divisors of the form 3k+1.
+  seq $3,293897 ; Sum of proper divisors of n of the form 3k+1.
   trn $3,5
   min $3,1
   sub $0,$3

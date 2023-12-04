@@ -1,6 +1,6 @@
 ; A337981: Decimal expansion of Pi*BesselY(0,2)/(2*BesselJ(0,2)) - gamma, where BesselJ and BesselY are the Bessel functions of the first and second kind, respectively, and gamma is Euler's constant (A001620).
 ; Submitted by USTL-FIL (Lille Fr)
-; 3,0,0,3,5,3,1,3,1,7,8,8,4,9,4,9,0,3,9,0,6,8,1,5,0,6,8,0,8,1,1,0,7,6,1,8,8,1,4,0,0,7,0,5,4,5,1,7,0,6,5,5,7,5,7,9,5,6,7,5,3,3,2,4,8,6,6,4,4,5,7,6,7,3,0,1,5,2,5,9,4,4,8,1,2,0,5
+; 3,0,0,3,5,3,1,3,1,7,8,8,4,9,4,9,0,3,9,0,6,8,1,5,0,6,8,0,8,1,1,0,7,6,1,8,8,1,4,0,0,7,0,5,4,5,1,7,0,6,5,5,7,5,7,9,5,6,7,5,3,3,2,4,8,6,6,4,4,5,7,6,7,3,0,1,5,2,5,9
 
 mov $3,$0
 add $3,8

@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,284105 ; a(n) = Sum_{d|n, d=6 mod 7} d.
+    seq $7,284105 ; a(n) = Sum_{d|n, d == 6 (mod 7)} d.
     mov $9,10
     add $9,$5
     mul $7,$$9

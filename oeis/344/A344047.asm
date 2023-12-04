@@ -14,12 +14,14 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
-  seq $0,217872 ; a(n) = sigma(n)^n.
+  mov $5,$0
+  add $0,1
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  pow $5,$0
+  mov $0,$5
   mul $1,2
-  mul $1,$0
+  mul $1,$5
   add $3,$1
 lpe
 mov $0,$3
-sub $0,2
 div $0,2
-add $0,1

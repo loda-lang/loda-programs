@@ -4,6 +4,38 @@
 
 mul $0,2
 add $0,1
-seq $0,76539 ; Numerators a(n) of fractions slowly converging to Pi: let a(1) = 0, b(n) = n - a(n); if (a(n) + 1) / b(n) < Pi, then a(n+1) = a(n) + 1, otherwise a(n+1) = a(n).
-mul $0,6
-div $0,4
+mul $0,4
+mov $1,0
+mov $2,0
+mov $3,$0
+add $3,1
+mov $4,$3
+mul $4,2
+pow $4,2
+mov $5,$4
+mul $5,2
+dif $4,$3
+lpb $4
+  mov $6,$5
+  div $6,$4
+  add $4,$6
+  div $4,2
+lpe
+add $3,2
+div $4,2
+add $4,$3
+mov $3,$4
+add $3,5
+add $3,$0
+div $3,2
+mov $0,$3
+sub $0,2
+add $1,$0
+add $2,$1
+add $2,27
+add $1,$2
+div $1,18
+sub $1,1
+mov $0,$1
+mul $0,3
+div $0,2

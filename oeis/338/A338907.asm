@@ -16,10 +16,6 @@ lpb $2
   seq $3,8480 ; Number of ordered prime factorizations of n.
   mul $3,$6
   mul $3,2
-  sub $3,3
-  div $3,3
-  mul $3,3
-  add $3,3
   div $3,3
   add $3,1
   cmp $3,0

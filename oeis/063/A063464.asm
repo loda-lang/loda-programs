@@ -1,4 +1,4 @@
-; A063464: omega(n) = omega(n+2), where omega(n) is the number of distinct prime divisors of n.
+; A063464: Numbers k such that omega(k) = omega(k+2), where omega(k) is the number of distinct prime divisors of k.
 ; Submitted by Simon Strandgaard
 ; 2,3,5,7,9,10,11,12,17,18,20,22,23,24,25,26,27,29,33,34,36,38,41,44,46,47,48,50,52,54,55,56,59,63,71,72,74,75,79,80,81,85,86,91,92,93,94,96,98,101,104,106,107,115,116,117,122,125,130,133,134,137,138,141,142,143,144,145,146,149,153,154,158,159,160,162,164,167,168,175
 

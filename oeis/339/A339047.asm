@@ -7,9 +7,12 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,7
+  mov $6,$1
+  seq $6,2325 ; Glaisher's J numbers.
+  div $6,2
   mov $3,$1
-  seq $3,216278 ; Number of solutions to the equation x^2+2y^2 = n with x and y > 0.
-  mov $5,$3
+  mov $3,$6
+  mov $5,$6
   add $1,1
   cmp $3,0
   cmp $3,0

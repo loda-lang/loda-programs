@@ -15,7 +15,4 @@ lpb $2
   add $2,$3
   sub $2,$0
 lpe
-mul $0,2
-sub $0,4
-div $0,2
-add $0,4
+add $0,2

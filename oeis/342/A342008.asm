@@ -10,7 +10,7 @@ lpb $2
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
   add $3,1
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(mn) = m*a(n) + n*a(m).
+  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   mov $5,$3
   gcd $5,$6
   div $3,$5

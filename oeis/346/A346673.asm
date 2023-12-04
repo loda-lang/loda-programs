@@ -1,6 +1,6 @@
 ; A346673: Number of symmetry types of undirected graphs with n unlabeled nodes.
 ; Submitted by 2mdPUbG3fhUMEpz6FJkmzwC9PME8
-; 1,1,1,2,6,9,23,31,71
+; 1,1,1,2,6,9,23,31,71,103,213
 
 mov $1,1
 mov $2,$0

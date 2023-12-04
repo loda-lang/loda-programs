@@ -40,6 +40,5 @@ add $1,3
 sub $2,$1
 pow $2,2
 mov $0,$2
-sub $0,36
 div $0,3
-add $0,11
+sub $0,1

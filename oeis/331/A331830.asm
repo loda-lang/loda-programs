@@ -11,7 +11,7 @@ lpb $2
   mov $3,$1
   mul $3,3
   add $3,1
-  seq $3,1511 ; The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+  seq $3,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   add $3,$4
   gcd $3,2
   sub $0,$3

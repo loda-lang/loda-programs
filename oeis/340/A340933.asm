@@ -6,7 +6,11 @@ mov $2,$0
 mul $2,5
 lpb $2
   mov $3,$1
-  seq $3,38802 ; Factor 2n+1 = (2^m1)*(3^m2)*(5^m3)*...; a(n) = number of initial zero exponents.
+  add $3,1
+  mul $3,2
+  seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  seq $3,230980 ; Number of primes <= n, starting at n=0.
+  sub $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3

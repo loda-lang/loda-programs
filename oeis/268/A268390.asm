@@ -4,7 +4,7 @@
 ; Formula: a(n) = -A238748(n)*(A264668(n)-1)
 
 mov $1,$0
-seq $1,238748 ; Numbers n such that each integer that appears in the prime signature of n appears an even number of times.
+seq $1,238748 ; Numbers k such that each integer that appears in the prime signature of k appears an even number of times.
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 mul $1,$0

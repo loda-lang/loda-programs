@@ -25,9 +25,7 @@ lpb $6
   max $7,$2
 lpe
 mov $4,$7
-sub $4,2
 div $4,2
-add $4,1
 mov $1,$4
 gcd $1,$0
 mov $0,$4

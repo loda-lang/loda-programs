@@ -5,7 +5,7 @@
 
 mov $1,$0
 seq $1,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
-seq $1,94471 ; a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+seq $1,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
 mov $2,$1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 gcd $1,$0

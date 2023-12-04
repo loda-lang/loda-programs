@@ -8,7 +8,8 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,139378 ; Number of 2-digit multiples of n whose digits sum to n.
+  add $3,1
+  gcd $3,9
   gcd $3,3
   sub $3,1
   cmp $3,2

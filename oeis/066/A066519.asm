@@ -9,7 +9,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,66692 ; Odd n such that tau(n) = tau(n+2), where tau(n) = A000005(n) is the number of divisors of n.
+  seq $0,66692 ; Odd numbers k such that tau(k) = tau(k+2), where tau(k) = A000005(k) is the number of divisors of k.
   mov $2,$3
   mul $2,$0
   add $1,$2

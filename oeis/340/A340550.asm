@@ -1,4 +1,4 @@
-; A340550: Number of main classes of doubly symmetric diagonal Latin squares of order n.
+; A340550: Number of main classes of diagonal Latin squares of order n that contain a doubly symmetric square.
 ; Submitted by [AF] Kalianthys
 ; 1,0,0,1,0,0,0,47,0,0,0
 ; Formula: a(n) = gcd(max(n-7,-n),-2*(-n)^2+3)/2

@@ -14,7 +14,7 @@ lpb $0
     trn $4,1
     mul $6,-1
     mov $7,$4
-    seq $7,50449 ; a(n) = Sum_{d|n, d==1 (mod 4)} d.
+    seq $7,50449 ; a(n) = Sum_{d|n, d == 1 (mod 4)} d.
     mov $9,10
     add $9,$5
     mul $7,$$9

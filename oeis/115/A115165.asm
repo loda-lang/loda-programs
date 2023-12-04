@@ -8,7 +8,7 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
-  seq $3,63464 ; omega(n) = omega(n+2), where omega(n) is the number of distinct prime divisors of n.
+  seq $3,63464 ; Numbers k such that omega(k) = omega(k+2), where omega(k) is the number of distinct prime divisors of k.
   mov $5,$3
   mul $3,338
   gcd $3,4
