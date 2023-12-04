@@ -1,10 +1,22 @@
 ; A365858: Number of cyclic compositions of 2*n-1 into odd parts.
 ; Submitted by Megacruncher
 ; 1,2,3,5,10,19,41,94,211,493,1170,2787,6713,16274,39651,97109,238838,589527,1459961,3626242,9030451,22542397,56393862,141358275,354975433,892893262,2249412291,5674891017,14335757586,36259245523,91815545801,232745229290,590586152235,1500020153485,3813274653414
-; Formula: a(n) = A032190(2*n)+1
 
 mov $1,$0
 mul $1,2
-seq $1,32190 ; Number of cyclic compositions of n into parts >= 2.
-mov $0,$1
+mov $4,0
+mov $2,$1
+add $2,1
+mov $3,$1
+lpb $3
+  sub $3,1
+  mov $1,$2
+  gcd $1,$3
+  sub $1,1
+  seq $1,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+  add $4,$1
+lpe
+div $4,$2
+mov $0,$4
 add $0,1
+mov $1,$4

@@ -1,4 +1,4 @@
-; A363947: Number of integer partitions of n whose rounded mean is 1. Partitions with mean < 3/2.
+; A363947: Number of integer partitions of n with mean < 3/2.
 ; Submitted by Science United
 ; 0,1,1,1,2,2,2,4,4,4,7,7,7,12,12,12,19,19,19,30,30,30,45,45,45,67,67,67,97,97,97,139,139,139,195,195,195,272,272,272,373,373,373,508,508,508,684,684,684,915,915,915,1212,1212,1212,1597,1597,1597,2087
 

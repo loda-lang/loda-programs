@@ -10,9 +10,8 @@ lpb $0
   max $3,0
   add $3,1
   seq $3,154115 ; Numbers n such that n + 3 is prime.
-  add $3,6
   div $3,2
-  sub $3,4
+  sub $3,1
   mul $3,2
   seq $3,83059 ; a(n) is the number of natural numbers k such that A078496(k)=n.
   add $3,1

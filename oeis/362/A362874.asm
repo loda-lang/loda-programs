@@ -1,7 +1,18 @@
-; A362874: allocated for Tanya Khovanova
+; A362874: Number of strongly magic quad squares that can be formed using cards from Quads-2^n deck.
 ; Submitted by Science United
 ; 322560,19998720,839946240,30478049280,1036253675520,34162943754240,1109482268590080,35765515020533760,1148704188306554880,36825972627862978560,1179511064637886955520,37761640503165258301440,1208649138156256509296640,38681199166714368680263680
-; Formula: a(n) = 322560*A308436(n)
 
-seq $0,308436 ; Expansion of 1/((1-2*x)*(1-4*x)*(1-8*x)*(1-16*x)*(1-32*x)).
+mov $1,0
+mov $3,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,28258 ; Expansion of 1/((1-2*x)*(1-4*x)(1-8*x)(1-16*x)).
+  mul $1,32
+  add $1,$0
+lpe
+mov $0,$1
 mul $0,322560
