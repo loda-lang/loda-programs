@@ -1,7 +1,7 @@
 ; A274290: Arising in solving the keyboard problem.
 ; Submitted by Groo
 ; 1,8,15,21,27,34,40,46
-; Formula: a(n) = 5*n+2*n-((2*n-2)/3)+1
+; Formula: a(n) = 7*n-((2*n-2)/3)+1
 
 mov $1,-1
 add $1,$0
