@@ -1,7 +1,7 @@
 ; A006626: Zarankiewicz's problem k_4(n,n+1).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 19,27,37,46,56,68,80,94,109
-; Formula: a(n) = ((2*n-max(-n+2,0)+11)*(2*n-max(-n+2,0)+max(-n+2,0)+11))/7+5
+; Formula: a(n) = ((2*n+11)*(2*n-max(-n+2,0)+11))/7+5
 
 sub $0,2
 trn $2,$0

@@ -1,7 +1,7 @@
 ; A011633: 30th cyclotomic polynomial.
 ; Submitted by Science United
 ; 1,1,0,-1,-1,-1,0,1,1
-; Formula: a(n) = c(n+1), b(n) = -b(n-1)+b(n-1)+c(n-1), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = -b(n-1)+c(n-1)+d(n-1), c(3) = 0, c(2) = 1, c(1) = 1, c(0) = 1, d(n) = -b(n-2)-d(n-1)+c(n-2), d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0
+; Formula: a(n) = c(n+1), b(n) = c(n-1), b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = -b(n-1)+c(n-1)+d(n-1), c(3) = 0, c(2) = 1, c(1) = 1, c(0) = 1, d(n) = -b(n-2)-d(n-1)+c(n-2), d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0
 
 mov $3,1
 mov $5,1
