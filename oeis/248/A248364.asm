@@ -1,7 +1,7 @@
 ; A248364: Decimal expansion of Schwarzschild radius of the Sun (meters).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,9,5,3,2,5,0,0,7
-; Formula: a(n) = ((c(n+2)-1)%10+10)%10, b(n) = 2*n-b(n-1)-c(n-1)-n+b(n-1)+c(n-1)+d(n-1)+6, b(3) = 34, b(2) = 24, b(1) = 7, b(0) = 0, c(n) = -c(n-1)-d(n-1)-2*n+b(n-1)+c(n-1)+n-6, c(3) = -10, c(2) = -17, c(1) = -7, c(0) = 2, d(n) = (2*c(n-1)+2*n-c(n-1)-d(n-1)-2*n+b(n-1)+d(n-1)+1)^2+2*n-b(n-1)-c(n-1)-n+b(n-1)+c(n-1)+d(n-1)+6, d(3) = 98, d(2) = 25, d(1) = 16, d(0) = 0
+; Formula: a(n) = ((b(n+2)-1)%10+10)%10, b(n) = -(b(n-2)+c(n-3)+n+5)^2-n-6, b(3) = -10, b(2) = -17, b(1) = -7, b(0) = 2, c(n) = (c(n-3)+n+5)^2+c(n-1)+n+6, c(3) = 98, c(2) = 25, c(1) = 16, c(0) = 0
 
 mov $3,2
 add $0,2

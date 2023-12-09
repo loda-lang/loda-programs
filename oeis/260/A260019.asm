@@ -1,7 +1,7 @@
 ; A260019: Number of prime caskets of order n.
 ; Submitted by Science United
 ; 1,2,0,0,1,2,9,34
-; Formula: a(n) = (-n+b(n-3)+n-1)^2+2*n-n+b(n-3)-4, a(4) = 1, a(3) = 0, a(2) = 0, a(1) = 2, a(0) = 1, b(n) = b(n-1)+n-1, b(4) = 6, b(3) = 3, b(2) = 1, b(1) = 0, b(0) = 0
+; Formula: a(n) = (b(n-3)-1)^2+b(n-3)+n-4, a(4) = 1, a(3) = 0, a(2) = 0, a(1) = 2, a(0) = 1, b(n) = b(n-1)+n-1, b(4) = 6, b(3) = 3, b(2) = 1, b(1) = 0, b(0) = 0
 
 mov $1,1
 mov $2,1
