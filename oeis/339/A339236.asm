@@ -1,4 +1,4 @@
-; A339236: Irregular triangle of incomplete Leonardo numbers read by rows. T(n, k) = 2*Sum_{j=0..k} binomial(n-j, j)) -1, for n>=0 and 0<=k<=floor(n/2).
+; A339236: Irregular triangle of incomplete Leonardo numbers read by rows. T(n, k) = 2*(Sum_{j=0..k} binomial(n-j, j)) - 1, for n>=0 and 0<=k<=floor(n/2).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,3,1,5,1,7,9,1,9,15,1,11,23,25,1,13,33,41,1,15,45,65,67,1,17,59,99,109,1,19,75,145,175,177,1,21,93,205,275,287,1,23,113,281,421,463,465,1,25,135,375,627,739,753,1,27,159,489,909,1161,1217,1219
 

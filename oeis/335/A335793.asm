@@ -1,7 +1,7 @@
 ; A335793: Number of hare pop-stack sortable Cayley permutations.
 ; Submitted by Fardringle
 ; 1,1,3,11,41,151,553,2023,7401
-; Formula: a(n) = d(max(n-1,0))/2+1, b(n) = b(n-1)+c(n-1)+d(n-1)+2, b(3) = 49, b(2) = 13, b(1) = 3, b(0) = 1, c(n) = b(n-1)+c(n-1)+d(n-1)+3, c(3) = 50, c(2) = 14, c(1) = 4, c(0) = 0, d(n) = 3*d(n-1)+2*b(n-2)+2*c(n-2)+6, d(3) = 80, d(2) = 20, d(1) = 4, d(0) = 0
+; Formula: a(n) = d(max(n-1,0))/2+1, b(n) = b(n-1)+c(n-1)+d(n-1)+2, b(3) = 49, b(2) = 13, b(1) = 3, b(0) = 1, c(n) = b(n-1)+c(n-1)+d(n-1)+3, c(3) = 50, c(2) = 14, c(1) = 4, c(0) = 0, d(n) = 3*d(n-1)-2*d(n-2)+b(n-1)+c(n-1)+1, d(3) = 80, d(2) = 20, d(1) = 4, d(0) = 0
 
 mov $1,1
 sub $0,1

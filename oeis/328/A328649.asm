@@ -1,4 +1,4 @@
-; A328649: Irregular triangular array read by rows: row n shows the coefficients of the following polynomial of degree n: (1/n!)*(numerator of n-th derivative of (x-2)/(1-x-x^2).
+; A328649: Irregular triangular array read by rows: row n shows the coefficients of the following polynomial of degree n: (1/n!)*(numerator of n-th derivative of (x-2)/(1-x-x^2)).
 ; Submitted by Simon Strandgaard
 ; 2,-1,-1,-4,1,3,3,6,-1,-4,-12,-6,-8,1,7,20,30,10,10,-1,-11,-42,-60,-60,-15,-12,1,18,77,147,140,105,21,14,-1,-29,-144,-308,-392,-280,-168,-28,-16,1,47,261,648,924,882,504,252,36,18,-1,-76,-470,-1305
 
