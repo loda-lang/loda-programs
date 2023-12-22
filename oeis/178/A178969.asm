@@ -1,6 +1,6 @@
-; A178969: Last nonzero decimal digit of (10^10^n)!
+; A178969: Last nonzero decimal digit of (10^10^n)!.
 ; Submitted by Jamie Morken(s2)
-; 8,2,6,4,2,2,6,2,6,4
+; 8,2,6,4,2,2,6,2,6,4,2,2
 ; Formula: a(n) = ((32*((binomial(-8,4*n)*(-n+7))/2)+2)%10+10)%10
 
 mov $3,-2

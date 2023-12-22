@@ -1,7 +1,7 @@
 ; A123843: Number of ways to build a contiguous building with n LEGO blocks of size 4 X 4 on top of a fixed block of the same size so that the building is symmetric after a rotation by 90 degrees.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,7,13,19,25,209,571
-; Formula: a(n) = c(max(n-1,0)), b(n) = -c(n-2), b(3) = -1, b(2) = -1, b(1) = 0, b(0) = 0, c(n) = -89*(b(n-2)/3)+c(n-1)+6, c(3) = 13, c(2) = 7, c(1) = 1, c(0) = 1
+; Formula: a(n) = b(max(n-1,0)), b(n) = -89*((-b(n-4))/3)+b(n-1)+6, b(4) = 19, b(3) = 13, b(2) = 7, b(1) = 1, b(0) = 1
 
 mov $5,1
 sub $0,1

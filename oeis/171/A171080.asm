@@ -1,9 +1,9 @@
-; A171080: a(n) = Product_{3 <= q <= 2n+1, q prime} q^floor((2n/(q-1)).
+; A171080: a(n) = Product_{3 <= p <= 2*n+1, p prime} p^floor(2*n / (p - 1)).
 ; Submitted by Simon Strandgaard
 ; 1,3,45,945,14175,467775,638512875,1915538625,488462349375,194896477400625,32157918771103125,2218896395206115625,3028793579456347828125,9086380738369043484375,3952575621190533915703125,28304394023345413370350078125,7217620475953080409439269921875
 
 mul $0,2
-seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
+seq $0,91137 ; The Hirzebruch numbers. a(n) = Product_{2 <= p <= n+1, p prime} p^floor(n / (p - 1)).
 lpb $0
   dif $0,4
 lpe

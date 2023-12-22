@@ -6,4 +6,4 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-seq $0,91137 ; Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
+seq $0,91137 ; The Hirzebruch numbers. a(n) = Product_{2 <= p <= n+1, p prime} p^floor(n / (p - 1)).
