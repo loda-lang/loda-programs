@@ -1,7 +1,7 @@
 ; A079815: Number of equivalent classes of n X n 0-1 matrices with 3 1's in each row and column.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,1,2,7,16,71
-; Formula: a(n) = b(n-2), a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 0, b(n) = A321232(n)*b(n-1)+b(n-2), b(3) = 7, b(2) = 2, b(1) = 1, b(0) = 1
+; Formula: a(n) = c(n-1), a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 0, b(n) = A321232(n)*b(n-1)+b(n-2), b(3) = 7, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = b(n-1), c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0
 
 mov $1,1
 mov $3,1

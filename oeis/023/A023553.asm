@@ -1,4 +1,4 @@
-; A023553: Convolution of natural numbers >= 3 and Lucas numbers.
+; A023553: Convolution of integers >= 3 and Lucas numbers.
 ; Submitted by [SG]FX
 ; 3,13,29,58,106,186,317,531,879,1444,2360,3844,6247,10137,16433,26622,43110,69790,112961,182815,295843,478728,774644,1253448,2028171,3281701,5309957,8591746
 ; Formula: a(n) = b(n+1), b(n) = 3*n+b(n-1)+b(n-2)+4, b(2) = 13, b(1) = 3, b(0) = 0

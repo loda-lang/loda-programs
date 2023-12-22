@@ -11,7 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,1344 ; a(n) = sum_{k=0..2} (n+k)! * C(2,k).
+    seq $2,1344 ; a(n) = Sum_{k=0..2} (n+k)! * C(2,k).
     mov $3,0
     add $4,$2
   lpe
