@@ -5,5 +5,5 @@
 
 seq $0,40 ; The prime numbers.
 mov $1,$0
-seq $1,271231 ; Expansion of the modular cusp form ( (eta(q^4) * eta(q^12) )^4 / ( eta(q^2) * eta(q^6) * eta(q^8) * eta(q^24) ), where eta is Dedekind's eta function.
+seq $1,271231 ; Expansion of the modular cusp form ( eta(q^4) * eta(q^12) )^4 / ( eta(q^2) * eta(q^6) * eta(q^8) * eta(q^24) ), where eta is Dedekind's eta function.
 sub $0,$1

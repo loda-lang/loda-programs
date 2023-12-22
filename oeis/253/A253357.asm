@@ -1,7 +1,7 @@
 ; A253357: Decimal expansion of Sum_{n>=1} prime(n)/n^4.
 ; Submitted by kpmonaghan
 ; 2,3,3,7,6,3,5,3,2,9,7,4
-; Formula: a(n) = (d(n)+2)%10, b(n) = b(n-1)^2+c(n-1), b(3) = 11, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = (b(n-2)^2+c(n-2))^2+2*c(n-1)+binomial(-c(n-1)+1,2)+binomial(-c(n-2)+1,2)+2, c(3) = 42, c(2) = 7, c(1) = 2, c(0) = 0, d(n) = b(n-1)^2+max(d(n-1)-3,0)+1, d(3) = 5, d(2) = 1, d(1) = 1, d(0) = 0
+; Formula: a(n) = (d(n)+2)%10, b(n) = b(n-1)^2+c(n-1), b(3) = 11, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = b(n-1)^2+2*c(n-1)+binomial(-c(n-1)+1,2)+binomial(-c(n-2)+1,2)+2, c(3) = 42, c(2) = 7, c(1) = 2, c(0) = 0, d(n) = b(n-1)^2+max(d(n-1)-3,0)+1, d(3) = 5, d(2) = 1, d(1) = 1, d(0) = 0
 
 lpb $0
   sub $0,1

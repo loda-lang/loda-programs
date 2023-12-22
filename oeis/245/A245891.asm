@@ -1,7 +1,7 @@
 ; A245891: Number of labeled increasing unary-binary trees on n nodes whose breadth-first reading word avoids 213 and 321.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,3,7,20,55,157,448
-; Formula: a(n) = b(n)/3+1, b(n) = b(n-1)+c(n-1), b(4) = 57, b(3) = 18, b(2) = 6, b(1) = 0, b(0) = 0, c(n) = 4*c(n-2)+3*c(n-3)+2*b(n-3)-3*n+c(n-1)+12, c(4) = 105, c(3) = 39, c(2) = 12, c(1) = 6, c(0) = 0
+; Formula: a(n) = b(n)/3+1, b(n) = b(n-1)+c(n-1), b(4) = 57, b(3) = 18, b(2) = 6, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-3*n+b(n-1)+b(n-2)+c(n-1)+c(n-3)+12, c(4) = 105, c(3) = 39, c(2) = 12, c(1) = 6, c(0) = 0
 
 mov $2,1
 lpb $0

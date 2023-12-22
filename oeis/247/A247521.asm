@@ -9,7 +9,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,293333 ; The integer k that minimizes |k/2^n - sqrt(5))|.
+  seq $3,293333 ; The integer k that minimizes |k/2^n - sqrt(5)|.
   add $3,$4
   gcd $3,2
   sub $0,$3

@@ -1,7 +1,7 @@
 ; A213075: Second diagonal of A213074.
 ; Submitted by Fardringle
 ; 2,3,7,10,17,24,36,49,70,93
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)/2+b(n-2)+c(n-2)+2, b(3) = 9, b(2) = 6, b(1) = 2, b(0) = 1, c(n) = c(n-2)+2, c(3) = 4, c(2) = 4, c(1) = 2, c(0) = 2
+; Formula: a(n) = b(n)+1, b(n) = b(n-1)/2+b(n-2)+c(n-1)+2, b(3) = 9, b(2) = 6, b(1) = 2, b(0) = 1, c(n) = c(n-2)+2, c(3) = 4, c(2) = 2, c(1) = 2, c(0) = 0
 
 mov $1,1
 mov $2,2
