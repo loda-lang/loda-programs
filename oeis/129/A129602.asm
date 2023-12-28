@@ -1,4 +1,4 @@
-; A129602: Replace in the binary expansion of n each run of k 0's (or 1's) with 2k-1 0's (or 1's), except in the most significant run, double the number of 0's (or 1's).
+; A129602: In the binary expansion of n replace each run of k 0's (or 1's) with 2k-1 0's (or 1's), except in the most significant run where we double the number of 0's (or 1's).
 ; Submitted by emoga
 ; 0,3,6,15,24,13,30,63,96,49,26,55,120,61,126,255,384,193,98,199,104,53,110,223,480,241,122,247,504,253,510,1023,1536,769,386,775,392,197,398,799,416,209,106,215,440,221,446,895,1920,961,482,967,488,245,494
 

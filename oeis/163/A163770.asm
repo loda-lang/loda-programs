@@ -1,4 +1,4 @@
-; A163770: Triangle read by rows interpolating the swinging sub-factorial (A163650) with the swinging factorial (A056040).
+; A163770: Triangle read by rows interpolating the swinging subfactorial (A163650) with the swinging factorial (A056040).
 ; Submitted by Simon Strandgaard
 ; 1,0,1,1,1,2,2,3,4,6,-9,-7,-4,0,6,44,35,28,24,24,30,-165,-121,-86,-58,-34,-10,20,594,429,308,222,164,130,120,140,-2037,-1443,-1014,-706,-484,-320,-190,-70,70,6824,4787,3344,2330,1624,1140,820,630,560,630,-22437,-15613,-10826,-7482,-5152,-3528,-2388,-1568,-938,-378,252,72830,50393,34780,23954,16472,11320,7792,5404,3836,2898,2520,2772,-234047,-161217
 
