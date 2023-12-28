@@ -1,6 +1,6 @@
-; A111693: The number system may be represented by linearly stringing together all the square domains. The number of the domain is given by r. It is noted that this has the same value as the circuit number in the Ellerstein square spiral. One below each odd square is a zero-centered octagonal number, which is divisible by 8. The value of this is eight times a triangular number. It may be seen that there are r octads in each square domain. The sequence is the first prime number in the first octad of each square domain.
+; A111693: a(n) = nextprime((2*n-1)^2) for n >= 2, a(1) = 3.
 ; Submitted by USTL-FIL (Lille Fr)
-; 3,11,29,53,83,127,173,227,293,367,443
+; 3,11,29,53,83,127,173,227,293,367,443,541,631,733,853,967,1091,1229,1373,1523,1693,1861,2027,2213,2411,2609,2819,3037,3251,3491,3727,3989,4229,4493,4783,5051,5333,5639,5939,6247,6563,6899,7229,7573,7927,8287,8663
 
 mul $0,2
 add $0,1

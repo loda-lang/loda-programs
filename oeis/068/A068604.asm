@@ -1,7 +1,7 @@
 ; A068604: Number of distinct coefficients in expansion related to enumeration of permutations of length n by length of longest subsequence.
 ; Submitted by Science United
 ; 1,1,2,3,6,9,16,29,55
-; Formula: a(n) = e(n)+1, b(n) = d(n-2)+d(n-3), b(7) = 37, b(6) = 20, b(5) = 10, b(4) = 4, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = b(n-1)+c(n-1)+1, c(7) = 43, c(6) = 22, c(5) = 11, c(4) = 6, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 0, d(n) = b(n-1)+c(n-1)+d(n-1)+1, d(7) = 89, d(6) = 46, d(5) = 24, d(4) = 13, d(3) = 7, d(2) = 3, d(1) = 1, d(0) = 0, e(n) = c(n-1)+c(n-3), e(7) = 28, e(6) = 15, e(5) = 8, e(4) = 5, e(3) = 2, e(2) = 1, e(1) = 0, e(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = c(n-2)+c(n-5)+1, b(13) = 1329, b(12) = 700, b(11) = 369, b(10) = 195, b(9) = 103, b(8) = 54, b(7) = 28, b(6) = 15, b(5) = 8, b(4) = 5, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)-c(n-2)+c(n-3)+c(n-4)+1, c(12) = 2199, c(11) = 1158, c(10) = 610, c(9) = 322, c(8) = 170, c(7) = 89, c(6) = 46, c(5) = 24, c(4) = 13, c(3) = 7, c(2) = 3, c(1) = 1, c(0) = 1
 
 mov $8,1
 lpb $0
