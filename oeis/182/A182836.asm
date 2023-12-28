@@ -1,7 +1,7 @@
 ; A182836: Toothpick sequence starting at the vertex of the outside corner of an infinite 120-degree wedge on hexagonal net.
 ; Submitted by [AF>PlusCitoyen] Davlabedave
 ; 0,1,3,7,15,27,39,51,71,91,107
-; Formula: a(n) = c(n-1)+gcd(a(n-1)-1,2*b(n-1)), a(3) = 7, a(2) = 3, a(1) = 1, a(0) = 0, b(n) = 2*gcd(a(n-2)-1,2*b(n-2))+1, b(3) = 5, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = 2*b(n-1)+c(n-1)+gcd(a(n-1)-1,2*b(n-1)), c(3) = 13, c(2) = 5, c(1) = 1, c(0) = 0
+; Formula: a(n) = 2*b(n-2)+a(n-1)+gcd(a(n-1)-1,2*b(n-1)), a(4) = 15, a(3) = 7, a(2) = 3, a(1) = 1, a(0) = 0, b(n) = 2*gcd(a(n-2)-1,2*b(n-2))+1, b(3) = 5, b(2) = 3, b(1) = 1, b(0) = 0
 
 lpb $0
   sub $0,1
