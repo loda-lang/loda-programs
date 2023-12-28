@@ -10,7 +10,7 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   sub $3,1
-  seq $3,70551 ; n^4 mod 23.
+  seq $3,70551 ; a(n) = n^4 mod 23.
   cmp $3,0
   cmp $3,0
   sub $0,$3

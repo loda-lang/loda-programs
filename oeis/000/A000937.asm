@@ -1,7 +1,7 @@
 ; A000937: Length of longest simple cycle without chords in the n-dimensional hypercube graph. Also called n-coil or closed n-snake-in-the-box problem.
 ; Submitted by amazing
 ; 0,4,6,8,14,26,48,96
-; Formula: a(n) = 2*e(n), b(n) = 2*d(n-2)+b(n-1)+b(n-2)+d(n-1)+d(n-3)+2, b(5) = 59, b(4) = 28, b(3) = 13, b(2) = 6, b(1) = 2, b(0) = 1, c(n) = d(n-1), c(5) = 7, c(4) = 4, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = -d(n-1)+b(n-1)+f(n-1), d(5) = 15, d(4) = 7, d(3) = 4, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = c(n-1)+d(n-1)+2, e(5) = 13, e(4) = 7, e(3) = 4, e(2) = 3, e(1) = 2, e(0) = 0, f(n) = -d(n-1)+f(n-1), f(5) = -13, f(4) = -6, f(3) = -2, f(2) = -1, f(1) = 0, f(0) = 0
+; Formula: a(n) = 2*d(n), b(n) = c(n-1), b(5) = 7, b(4) = 4, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = 2*c(n-2)-c(n-5)-e(n-2)-2*c(n-4)+c(n-1)+e(n-4), c(9) = 264, c(8) = 129, c(7) = 63, c(6) = 31, c(5) = 15, c(4) = 7, c(3) = 4, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = b(n-1)+c(n-1)+2, d(5) = 13, d(4) = 7, d(3) = 4, d(2) = 3, d(1) = 2, d(0) = 0, e(n) = -c(n-1)+e(n-1), e(5) = -13, e(4) = -6, e(3) = -2, e(2) = -1, e(1) = 0, e(0) = 0
 
 mov $1,1
 lpb $0
