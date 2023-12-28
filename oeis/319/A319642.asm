@@ -1,7 +1,7 @@
 ; A319642: Number of non-isomorphic weight-n antichains of distinct multisets whose dual is a chain of (not necessarily distinct) multisets.
 ; Submitted by stoneageman
 ; 1,1,2,3,6,9,16,25,42,66,108
-; Formula: a(n) = c(max(n-1,0)), b(n) = b(n-1)+b(n-2)+1, b(3) = 7, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = (d(n-1)+e(n-1)+1)/2+c(n-1), c(3) = 6, c(2) = 3, c(1) = 2, c(0) = 1, d(n) = b(n-1)+1, d(3) = 5, d(2) = 3, d(1) = 2, d(0) = 1, e(n) = -e(n-1)+c(n-1), e(3) = 1, e(2) = 2, e(1) = 0, e(0) = 1
+; Formula: a(n) = b(max(n-1,0)), b(n) = (c(n-1)+d(n-1)+1)/2+b(n-1), b(3) = 6, b(2) = 3, b(1) = 2, b(0) = 1, c(n) = c(n-1)+c(n-2), c(4) = 8, c(3) = 5, c(2) = 3, c(1) = 2, c(0) = 1, d(n) = (c(n-2)+d(n-2)+1)/2+d(n-2), d(4) = 5, d(3) = 1, d(2) = 2, d(1) = 0, d(0) = 1
 
 mov $1,1
 mov $2,1

@@ -1,7 +1,7 @@
 ; A302613: Total domination number of the n-folded cube graph.
 ; Submitted by Science United
 ; 2,2,2,4,8,12,16,32,64
-; Formula: a(n) = b(2*n+2), b(n) = 2*c(n-4)+2, b(7) = 2, b(6) = 2, b(5) = 2, b(4) = 2, b(3) = 2, b(2) = 2, b(1) = 2, b(0) = 0, c(n) = c(n-1)+max(2*c(n-7)+1,0), c(9) = 6, c(8) = 5, c(7) = 4, c(6) = 3, c(5) = 2, c(4) = 1, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = b(2*n+2), b(n) = 2*c(n-3)+2, b(6) = 2, b(5) = 2, b(4) = 2, b(3) = 2, b(2) = 2, b(1) = 2, b(0) = 0, c(n) = c(n-1)+max(2*c(n-7)+1,0), c(9) = 5, c(8) = 4, c(7) = 3, c(6) = 2, c(5) = 1, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
 
 add $0,1
 mul $0,2
