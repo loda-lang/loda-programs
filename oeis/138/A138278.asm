@@ -1,4 +1,4 @@
-; A138278: Sequence identical to its third differences in absolute values: a(2n)=3a(2n-1)-3a(2n-2)+2a(2n-3)), a(2n+1)=3a(2n)-3a(2n-1) n > 1.
+; A138278: Sequence identical to its third differences in absolute values.
 ; Submitted by Odicin
 ; 1,2,4,8,16,24,40,80,120,200,400,600,1000,2000,3000,5000,10000,15000,25000,50000,75000,125000,250000,375000,625000,1250000,1875000,3125000,6250000,9375000,15625000,31250000,46875000,78125000,156250000,234375000,390625000
 ; Formula: a(n) = (-a(n-1)+a(n-2))*(((2*a(n-2)-a(n-3))/8)%2)+2*a(n-1), a(5) = 24, a(4) = 16, a(3) = 8, a(2) = 4, a(1) = 2, a(0) = 1

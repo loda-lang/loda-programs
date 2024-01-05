@@ -1,4 +1,4 @@
-; A322584: Number of divisors of n that area product of primorial numbers (terms of A025487).
+; A322584: a(n) is the number of terms of A025487 that divide n.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,2,1,3,1,3,1,4,1,2,1,5,1,2,1,5,1,3,1,3,1,2,1,7,1,2,1,3,1,4,1,6,1,2,1,6,1,2,1,4,1,3,1,3,1,2,1,9,1,2,1,3,1,3,1,4,1,2,1,7,1,2,1,7,1,3,1,3,1,2,1,9,1,2,1,3,1,3,1,5
 

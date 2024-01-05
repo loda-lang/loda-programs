@@ -12,7 +12,7 @@ lpb $2
   seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
   mod $3,$5
   mod $3,2
-  seq $3,83315 ; (2*5^n-(4^n-2^n))/2.
+  seq $3,83315 ; a(n) = (2*5^n-(4^n-2^n))/2.
   cmp $3,1
   sub $0,$3
   add $1,1

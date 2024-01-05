@@ -4,7 +4,7 @@
 ; Formula: a(n) = -A098020(n)*(A264668(n/11)-1)+1
 
 mov $1,$0
-seq $1,98020 ; Let f[n] = fractional part of n*Pi and let g[x] = -1 for the range 0<=x<=1/3, g[x] = 0 for the range 1/3<x<=2/3, g[x] = 11 for range 2/3<x<1. Sequence gives all positive integers n such that f[n+2]-2*f[n+1]+f[n]]-g[f[n+1]] = 0.
+seq $1,98020 ; Let f[n] = fractional part of n*Pi and let g[x] = -1 for the range 0<=x<=1/3, g[x] = 0 for the range 1/3<x<=2/3, g[x] = 11 for range 2/3<x<1. Sequence gives all positive integers n such that f[n+2]-2*f[n+1]+f[n]-g[f[n+1]] = 0.
 div $0,11
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1

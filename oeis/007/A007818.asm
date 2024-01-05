@@ -7,7 +7,7 @@ add $2,2
 mul $2,3
 lpb $2
   mov $3,$1
-  seq $3,194066 ; Natural fractal sequence of A087483; a rectangular array, by antidiagonals.
+  seq $3,194066 ; Natural fractal sequence of A087483.
   div $3,2
   sub $0,$3
   add $1,1

@@ -1,4 +1,4 @@
-; A154109: Convolution triangle by rows, A004736 * (A154108 * 0^n-k)); row sums = Bell numbers.
+; A154109: Convolution triangle by rows, A004736 * (A154108 * 0^(n-k)); row sums = Bell numbers.
 ; Submitted by Simon Strandgaard (M1)
 ; 1,2,0,3,0,2,4,0,4,7,5,0,6,14,27,6,0,8,21,54,114,7,0,10,28,81,228,523,8,0,12,35,108,342,1046,2589,9,0,14,42,135,456,1569,5178,13744,10,0,16,49,162,570,2092,7767,27488,77821
 

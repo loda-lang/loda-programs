@@ -1,4 +1,4 @@
-; A072546: Sequence related to Fibonacci and "tribonacci" sequences : let f(1)=1, f(2)=n, f(k+2)=f(k+1)+f(k), t(1)=t(2)=t(3)=1, t(k+3)=t(k+2)+t(k+1)+t(k) (t(k)=A000213(k-1); sequence gives the smallest value k = a(n) such that t(k)>f(k).
+; A072546: Sequence related to Fibonacci and "tribonacci" sequences : let f(1)=1, f(2)=n, f(k+2)=f(k+1)+f(k), t(1)=t(2)=t(3)=1, t(k+3)=t(k+2)+t(k+1)+t(k) (t(k)=A000213(k-1)); sequence gives the smallest value k = a(n) such that t(k)>f(k).
 ; Submitted by Hoshione
 ; 6,9,12,14,15,16,18,19,19,20,21,21,22,23,23,24,24,25,25,25,26,26,26,27,27,27,28,28,28,28,29,29,29,29,30,30,30,30,30,31,31,31,31,31,32,32,32,32,32,32,32,33,33,33,33,33,33,33,34,34,34,34,34,34,34,34,35,35,35,35
 

@@ -10,7 +10,7 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $1,$3
-  seq $1,97133 ; 3*Fibonacci(n)+(-1)^n.
+  seq $1,97133 ; a(n) = 3*Fibonacci(n)+(-1)^n.
   sub $1,1
   seq $1,40521 ; Continued fraction for sqrt(545).
   mul $1,$2

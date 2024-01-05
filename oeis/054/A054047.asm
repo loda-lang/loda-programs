@@ -1,4 +1,4 @@
-; A054047: Numbers which can be read as (possibly different) numbers when rotated by 180 degrees *final zeros allowed).
+; A054047: Numbers which can be read as (possibly different) numbers when rotated by 180 degrees (final zeros allowed).
 ; Submitted by Kotenok2000
 ; 0,1,6,8,9,10,11,16,18,19,60,61,66,68,69,80,81,86,88,89,90,91,96,98,99,100,101,106,108,109,110,111,116,118,119,160,161,166,168,169,180,181,186,188,189,190,191,196,198,199,600,601,606,608,609,610,611,616,618
 

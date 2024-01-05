@@ -1,4 +1,4 @@
-; A019559: Distance between vowels when alphabet is written around a daisy wheel.
+; A019559: Period 5: repeat [4, 4, 6, 6, 6].
 ; Submitted by skildude
 ; 4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6,4,4,6,6,6
 ; Formula: a(n) = 2*((n%5+7)/3)

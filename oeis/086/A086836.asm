@@ -1,4 +1,4 @@
-; A086836: On a 3 X 3 board, number of distinct positions of n digits (modulo rotation/reflection)).
+; A086836: On a 3 X 3 board, number of distinct positions of n digits (modulo rotation/reflection).
 ; Submitted by Science United
 ; 3,12,66,378,1890,7560,22680,45360,45360
 ; Formula: a(n) = 3*((-n+b(n+1)+2)/24)+3, b(n) = b(n-1)*(-n+10), b(1) = 9, b(0) = 1

@@ -5,4 +5,4 @@
 
 seq $0,46523 ; Smallest number with same prime signature as n.
 sub $0,1
-seq $0,322584 ; Number of divisors of n that area product of primorial numbers (terms of A025487).
+seq $0,322584 ; a(n) is the number of terms of A025487 that divide n.

@@ -1,4 +1,4 @@
-; A065930: (x,y) = (a(n),a(n+1)) are the solutions of (t(x)+t(y))/(1+xy)) = t(4) = 10, where t(n) denotes the n-th triangular number t(n) = n(n+1)/2.
+; A065930: (x,y) = (a(n),a(n+1)) are the solutions of (t(x)+t(y))/(1+xy) = t(4) = 10, where t(n) denotes the n-th triangular number t(n) = n(n+1)/2.
 ; Submitted by Simon Strandgaard
 ; 4,79,1575,31420,626824,12505059,249474355,4976982040,99290166444,1980826346839,39517236770335,788363909059860,15727760944426864,313766854979477419,6259609338645121515,124878419917922952880
 ; Formula: a(n) = b(n+1)/18, b(n) = 18*c(n-1)+b(n-1), b(1) = 72, b(0) = 0, c(n) = 19*c(n-1)+b(n-1)-1, c(1) = 75, c(0) = 4

@@ -1,4 +1,4 @@
-; A124458: Triangular array resulting from summing three repeated Pascal sequences; (related to the generalized pentagonal sequence (A001318) and the classical modular tessellation (cf. A054886).
+; A124458: Triangular array resulting from summing three repeated Pascal sequences; related to the generalized pentagonal sequence (A001318) and the classical modular tessellation (cf. A054886).
 ; Submitted by F14Claude
 ; 1,2,1,3,2,1,3,4,2,1,3,5,5,2,1,3,7,7,6,2,1,3,8,12,9,7,2,1,3,10,15,18,11,8,2,1,3,11,22,24,25,13,9,2,1,3,13,26,40,35,33,15,10,2,1
 

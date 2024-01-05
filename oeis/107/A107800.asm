@@ -1,4 +1,4 @@
-; A107800: a(n) = number of distinct primes dividing A006049(n) (and dividing (A006049(n)+1).
+; A107800: a(n) = number of distinct primes dividing A006049(n) (and dividing A006049(n)+1).
 ; Submitted by Fardringle
 ; 1,1,1,1,1,2,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 

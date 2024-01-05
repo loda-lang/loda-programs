@@ -1,4 +1,4 @@
-; A247635: Numbers k such that d(r,k) = d(s,k), where d(x,k) = k-th binary digit of x, r = {sqrt(2)}, s = {sqrt(8), and { } = fractional part.
+; A247635: Numbers k such that d(r,k) = d(s,k), where d(x,k) = k-th binary digit of x, r = {sqrt(2)}, s = {sqrt(8)}, and { } = fractional part.
 ; Submitted by shiva
 ; 2,8,9,10,11,14,16,17,18,20,22,24,26,28,30,31,32,33,34,35,37,39,40,43,44,45,47,49,51,54,57,58,59,62,63,67,69,73,74,75,76,79,81,82,85,87,90,92,94,97,98,106,114,115,116,117,121,123,124,125,126,128,129,131,132,137,140,141,142,145,147,148,149,150,154,155,161,162,165,168
 

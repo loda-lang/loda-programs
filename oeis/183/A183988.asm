@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,183987 ; Ranks of (odd i)+j*r, when all i+j*r are ranked; r=golden ratio (1+sqrt(5))/2), i>=0, j>=0.  Complement of A183988.
+  seq $3,183987 ; Ranks of (odd i)+j*r, when all i+j*r are ranked; r=golden ratio (1+sqrt(5))/2, i>=0, j>=0.  Complement of A183988.
   sub $3,1
   add $0,1
   add $1,1

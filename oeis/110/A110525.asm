@@ -11,7 +11,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,151383 ; Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0), ending on the vertical axis and consisting of 2 n steps taken from {(-1, -1), (-1, 0), (-1, 1), (1, 1)}
+    seq $7,151383 ; Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0), ending on the vertical axis and consisting of 2 n steps taken from {(-1, -1), (-1, 0), (-1, 1), (1, 1)}.
     mov $9,10
     add $9,$5
     mov $10,3

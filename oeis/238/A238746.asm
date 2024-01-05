@@ -5,4 +5,4 @@
 
 seq $0,25487 ; Least integer of each prime signature A124832; also products of primorial numbers A002110.
 sub $0,1
-seq $0,322584 ; Number of divisors of n that area product of primorial numbers (terms of A025487).
+seq $0,322584 ; a(n) is the number of terms of A025487 that divide n.

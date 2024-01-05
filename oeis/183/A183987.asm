@@ -1,4 +1,4 @@
-; A183987: Ranks of (odd i)+j*r, when all i+j*r are ranked; r=golden ratio (1+sqrt(5))/2), i>=0, j>=0.  Complement of A183988.
+; A183987: Ranks of (odd i)+j*r, when all i+j*r are ranked; r=golden ratio (1+sqrt(5))/2, i>=0, j>=0.  Complement of A183988.
 ; Submitted by [AF>Occitania]franky82
 ; 2,5,6,10,11,13,16,18,20,22,24,26,29,31,33,34,36,39,42,44,45,47,48,51,54,57,58,60,61,64,65,68,71,72,75,76,79,80,83,84,87,88,91,92,96,97,100,101,104,105,106,109,110,114,115,119,120,123,124,125,128,129
 
