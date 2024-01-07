@@ -1,7 +1,7 @@
 ; A320448: a(n) is the maximum number of distinct distances between n non-attacking rooks on an n X n chessboard.
 ; Submitted by Jamie Morken(w2)
 ; 0,1,2,4,8,11,15,20,25,31,37,44,51,59,68
-; Formula: a(n) = b(n-1), a(4) = 8, a(3) = 4, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = b(n-1)+c(n-2)+2, b(4) = 11, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = (b(n-1)+c(n-1)-1)/(c(n-1)+1), c(5) = 3, c(4) = 3, c(3) = 2, c(2) = 1, c(1) = 2, c(0) = 0
+; Formula: a(n) = b(n-1), a(4) = 8, a(3) = 4, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = b(n-1)+c(n-2)+2, b(4) = 11, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = truncate((b(n-1)+c(n-1)-1)/(c(n-1)+1)), c(5) = 3, c(4) = 3, c(3) = 2, c(2) = 1, c(1) = 2, c(0) = 0
 
 mov $2,1
 mov $5,1

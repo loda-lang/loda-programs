@@ -1,7 +1,7 @@
 ; A327982: Partial sums of A051023, the middle column of rule-30 1-D cellular automaton, when started from a lone 1 cell.
 ; Submitted by arkiss
 ; 1,2,2,3,4,5,5,5,6,7,7,7,7,8,8,9,10,10,10,11,11,11,12,13,14,14,15,15,16,17,18,18,18,19,20,21,21,22,22,23,23,24,25,25,25,25,25,26,27,27,27,28,28,29,29,30,31,31,32,32,33,33,34,35,36,37,38,39,39,39,39,39,40,41,42,43,43,43,43,44
-; Formula: a(n) = b(n)+1, b(n) = (A110240(n)/(2^n))%2+b(n-1), b(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = -2*truncate(truncate(A110240(n)/(2^n))/2)+b(n-1)+truncate(A110240(n)/(2^n)), b(0) = 0
 
 lpb $0
   mov $3,2

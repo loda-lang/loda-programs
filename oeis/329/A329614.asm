@@ -1,7 +1,7 @@
 ; A329614: Smallest prime factor of the number of divisors of A108951(n).
 ; Submitted by Megacruncher
 ; 1,2,2,3,2,2,2,2,3,2,2,2,2,2,2,5,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,7,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
-; Formula: a(n) = -A020639(A000005(n)-1)*(A264668(n/3)-1)
+; Formula: a(n) = -A020639(A000005(n)-1)*(A264668(floor(n/3))-1)
 
 mov $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

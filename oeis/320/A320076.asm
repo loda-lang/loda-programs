@@ -1,7 +1,7 @@
 ; A320076: a(n) is smallest positive integer i such that difference of numerator and denominator of sum of j^(-i), when j=1..n and n > 2, is prime.
 ; Submitted by Dingo
 ; 1,1,2,1,1,2,32,1
-; Formula: a(n) = (gcd(n+1,441)*((2^gcd(n+1,441))/gcd(n+1,441))-2)/4+1
+; Formula: a(n) = truncate((truncate(truncate(2^gcd(n+1,441))/gcd(n+1,441))*gcd(n+1,441)-2)/4)+1
 
 mov $2,$0
 add $2,1

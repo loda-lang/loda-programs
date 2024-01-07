@@ -1,7 +1,7 @@
 ; A337503: Minimum number of painted cells in an n X n grid to avoid unpainted pentominoes.
 ; Submitted by Simon Strandgaard
 ; 0,0,3,5,8,13,17,24,31,39
-; Formula: a(n) = (n^2+6*n+5)/20+2*((n^2+1)/5)
+; Formula: a(n) = 2*floor((n^2+1)/5)+floor((n^2+6*n+5)/20)
 
 mov $1,$0
 pow $1,2

@@ -1,7 +1,7 @@
 ; A320007: If there is k >= 0 such that floor(n/4^k) is odd and A320006(k) is 1, then a(n) = 1, otherwise a(n) = 0.
 ; Submitted by Jamie Morken(s3)
 ; 0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1
-; Formula: a(n) = (binomial(((n+13)^(n+13))/2,2)+1)%2
+; Formula: a(n) = -2*truncate((binomial(floor(((n+13)^(n+13))/2),2)+1)/2)+binomial(floor(((n+13)^(n+13))/2),2)+1
 
 add $0,13
 pow $0,$0

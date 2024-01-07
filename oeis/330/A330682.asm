@@ -1,7 +1,7 @@
 ; A330682: a(n) = 1 if the 2-adic and 3-adic valuations of A025487(n) are equal, 0 otherwise.
 ; Submitted by Science United
 ; 1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,1,0
-; Formula: a(n) = A319626(A025487(n)-1)%2
+; Formula: a(n) = -2*truncate(A319626(A025487(n)-1)/2)+A319626(A025487(n)-1)
 
 seq $0,25487 ; Least integer of each prime signature A124832; also products of primorial numbers A002110.
 sub $0,1

@@ -1,7 +1,7 @@
 ; A339871: Number of primes p for which the p-adic valuation of phi(n) exceeds the p-adic valuation of n-1, with a(1) = 0 by convention.
 ; Submitted by Landjunge
 ; 0,0,0,1,0,1,0,1,1,1,0,1,0,2,1,1,0,2,0,1,1,2,0,1,1,2,1,1,0,1,0,1,1,1,2,2,0,2,2,1,0,2,0,2,2,2,0,1,1,2,1,1,0,2,2,2,1,2,0,1,0,3,2,1,1,1,0,1,1,1,0,2,0,2,2,2,2,2,0,1
-; Formula: a(n) = A001221(A000010(n)/gcd(n,A000010(n))-1)
+; Formula: a(n) = A001221(truncate(A000010(n)/gcd(n,A000010(n)))-1)
 
 mov $1,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

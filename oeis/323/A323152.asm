@@ -1,6 +1,6 @@
 ; A323152: a(n) = 1 if sigma(n) is divisible by all proper divisors of n, 0 otherwise.
 ; 1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
-; Formula: a(n) = binomial(0,(A000203(n)%(n+1))/2)
+; Formula: a(n) = binomial(0,truncate((-truncate(A000203(n)/(n+1))*(n+1)+A000203(n))/2))
 
 mov $2,$0
 add $2,1

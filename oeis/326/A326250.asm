@@ -1,7 +1,7 @@
 ; A326250: Number of weakly nesting simple graphs with vertices {1..n}.
 ; Submitted by Science United
 ; 0,0,0,3,50,982,32636,2096723
-; Formula: a(n) = 2^binomial(n,2)-(binomial(2*n,n)/(n+1))
+; Formula: a(n) = 2^binomial(n,2)-floor(binomial(2*n,n)/(n+1))
 
 mov $1,$0
 mul $1,2

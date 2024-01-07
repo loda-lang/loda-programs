@@ -1,7 +1,7 @@
 ; A328085: Column sums of triangle A328084.
 ; Submitted by Christian Krause
 ; 1,1,2,3,5,8,12,18,26,38,52
-; Formula: a(n) = (binomial(n+7,5)+binomial(n+5,n+2)+n+2)/128+1
+; Formula: a(n) = floor((binomial(n+7,5)+binomial(n+5,n+2)+n+2)/128)+1
 
 mov $1,$0
 add $0,2

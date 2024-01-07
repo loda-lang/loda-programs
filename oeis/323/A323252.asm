@@ -1,7 +1,7 @@
 ; A323252: Numbers k such that the numerator and denominator of the reduced fraction Sum_{i=1..k} 1/i have no digits in common.
 ; Submitted by gemini8
 ; 2,3,5,6,7,8,10,15
-; Formula: a(n) = (7*n+7)/4-(((n+1)/2)%4)+1
+; Formula: a(n) = 4*truncate(floor((n+1)/2)/4)-floor((n+1)/2)+floor((7*n+7)/4)+1
 
 add $0,1
 mov $1,$0
