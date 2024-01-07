@@ -1,7 +1,7 @@
 ; A307830: Numbers k for which there exist no palindromic decagonal numbers (also known as 10-gonals) of length k.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,4,6,7,9,11,16,18,19
-; Formula: a(n) = (11*(n/6)+5*n+11)/3-1
+; Formula: a(n) = truncate((11*floor(n/6)+5*n+11)/3)-1
 
 mov $1,$0
 div $1,6

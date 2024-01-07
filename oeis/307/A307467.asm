@@ -1,7 +1,7 @@
 ; A307467: The number of points, corresponding to the first n primes, and placed on the unit circle according to an algorithm using the data from A077218 (in the spirit of Ulam's spiral, and described in the COMMENTS section below), which lie on the closed arc of the unit circle from 0 to 45 degrees.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,2,3,4,4,4,5,5,6,7
-; Formula: a(n) = b(n+1), b(n) = ((n+10)*(2*n-6))/140+b(n-8)+1, b(7) = 1, b(6) = 1, b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0
+; Formula: a(n) = b(n+1), b(n) = b(n-8)+truncate(((n+10)*(2*n-6))/140)+1, b(7) = 1, b(6) = 1, b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0
 
 add $0,1
 lpb $0

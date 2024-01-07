@@ -1,7 +1,7 @@
 ; A309395: Number of integer-sided triangles with sides a,b,c, max(a,b) < c, a + c = n that are right triangles.
 ; Submitted by arkiss
 ; 0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,2,0,0,0,0,0,1,2,0,1,0,0,0,0,3,0,0,0,2,0,0,0,1,0,0,0,0,1,0,0,1,3,4,0,0,0,2,0,1,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,5,0,0,2,0,0,0,0,1
-; Formula: a(n) = (A000194(A008833(2*n+1))-1)/2
+; Formula: a(n) = truncate((A000194(A008833(2*n+1))-1)/2)
 
 mul $0,2
 add $0,1

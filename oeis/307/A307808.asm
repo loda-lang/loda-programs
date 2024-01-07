@@ -1,7 +1,7 @@
 ; A307808: Number of palindromic nonagonal numbers of length n whose index is also palindromic.
 ; Submitted by Science United
 ; 3,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = ((2*n-2)*(6/(2*n-1)))/4
+; Formula: a(n) = truncate((truncate(6/(2*n-1))*(2*n-2))/4)
 
 mul $0,2
 sub $0,1

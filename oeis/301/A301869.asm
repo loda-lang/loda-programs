@@ -1,7 +1,7 @@
 ; A301869: Decimal expansion of the nominal solar radius in meters.
 ; Submitted by Cruncher Pete
 ; 6,9,5,7,0,0,0,0,0
-; Formula: a(n) = ((b(n)-4)%10+10)%10, b(n) = -d(n-1)+e(n-1), b(3) = -9, b(2) = -1, b(1) = 3, b(0) = 0, c(n) = e(n-1)*c(n-1), c(3) = -36, c(2) = 6, c(1) = 3, c(0) = 1, d(n) = d(n-1)*(-d(n-1)+e(n-1))+e(n-1)*c(n-1), d(3) = -63, d(2) = 3, d(1) = 3, d(0) = 0, e(n) = d(n-1)*(-d(n-1)+e(n-1))+e(n-1)*c(n-1)-c(n-1)^2, e(3) = -99, e(2) = -6, e(1) = 2, e(0) = 3
+; Formula: a(n) = -10*truncate((-10*truncate((b(n)-4)/10)+b(n)+6)/10)-10*truncate((b(n)-4)/10)+b(n)+6, b(n) = -d(n-1)+e(n-1), b(3) = -9, b(2) = -1, b(1) = 3, b(0) = 0, c(n) = e(n-1)*c(n-1), c(3) = -36, c(2) = 6, c(1) = 3, c(0) = 1, d(n) = d(n-1)*(-d(n-1)+e(n-1))+e(n-1)*c(n-1), d(3) = -63, d(2) = 3, d(1) = 3, d(0) = 0, e(n) = d(n-1)*(-d(n-1)+e(n-1))+e(n-1)*c(n-1)-c(n-1)^2, e(3) = -99, e(2) = -6, e(1) = 2, e(0) = 3
 
 mov $2,1
 mov $4,3

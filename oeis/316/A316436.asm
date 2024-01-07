@@ -1,7 +1,7 @@
 ; A316436: Sum divided by GCD of the integer partition with Heinz number n > 1.
 ; Submitted by vonboedefeldt
 ; 1,1,2,1,3,1,3,2,4,1,4,1,5,5,4,1,5,1,5,3,6,1,5,2,7,3,6,1,6,1,5,7,8,7,6,1,9,4,6,1,7,1,7,7,10,1,6,2,7,9,8,1,7,8,7,5,11,1,7,1,12,4,6,3,8,1,9,11,8,1,7,1,13,8,10,9,9,1,7,4
-; Formula: a(n) = A056239(n+1)/A289508(n+1)
+; Formula: a(n) = truncate(A056239(n+1)/A289508(n+1))
 
 add $0,1
 mov $1,$0

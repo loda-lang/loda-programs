@@ -1,7 +1,7 @@
 ; A316261: The number of ways to induce a single pinch on a compact 2-manifold with n handles. (Note: The manifold is embedded in Euclidean 2-space, and each pinch partitions it into at most two submanifolds.)
 ; Submitted by Jamie Morken(s4)
 ; 1,3,9,15,26,37,55,73,100,127,165,203,254,305,371,437,520,603,705,807,930,1053,1199,1345,1516,1687,1885,2083,2310,2537,2795,3053,3344,3635,3961,4287,4650,5013,5415,5817,6260,6703,7189,7675,8206,8737,9315,9893,10520,11147,11825,12503,13234,13965,14751,15537,16380,17223,18125,19027,19990,20953,21979,23005,24096,25187,26345,27503,28730,29957,31255,32553,33924,35295,36741,38187,39710,41233,42835,44437
-; Formula: a(n) = 2*n+max(((n+2)*((n+2)^2+gcd(4,(n+2)^2)-2))/12,2)-1
+; Formula: a(n) = 2*n+max(truncate(((n+2)*((n+2)^2+gcd(4,(n+2)^2)-2))/12),2)-1
 
 mov $1,$0
 add $0,2

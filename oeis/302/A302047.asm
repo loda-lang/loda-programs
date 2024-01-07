@@ -1,7 +1,7 @@
 ; A302047: a(n) = 1 if n = prime(k)*prime(2+k) for some k, otherwise 0.
 ; Submitted by ChelseaOilman
 ; 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = ((-A323244(n)*A001222(n)+A323244(n))%2+2)%2
+; Formula: a(n) = -A323244(n)*A001222(n)-2*truncate((-A323244(n)*A001222(n)-2*truncate((-A323244(n)*A001222(n)+A323244(n))/2)+A323244(n)+2)/2)-2*truncate((-A323244(n)*A001222(n)+A323244(n))/2)+A323244(n)+2
 
 mov $1,$0
 seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
