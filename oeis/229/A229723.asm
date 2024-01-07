@@ -1,7 +1,7 @@
 ; A229723: Expansion of psi(q) * chi(-q^3) * phi(-q^6) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
 ; Submitted by Contact
 ; 1,1,0,0,-1,0,-2,-2,0,-2,2,0,0,0,0,4,-1,0,0,0,0,0,2,0,2,3,0,0,-2,0,0,-2,0,-4,0,0,2,0,0,0,-2,0,-4,0,0,0,0,0,0,3,0,0,0,0,-2,-4,0,0,2,0,4,0,0,4,-1,0,0,0,0,0,4,0,0,2,0,0,0,0,0,-2
-; Formula: a(n) = ((3*((n+17)%3)-2)*(-2*A046113(n)*((n/2)%2)+A046113(n))*(-1)^n)/4
+; Formula: a(n) = truncate(((3*((n+17)%3)-2)*(-2*A046113(n)*(-2*truncate(floor(n/2)/2)+floor(n/2))+A046113(n))*(-1)^n)/4)
 
 mov $1,$0
 add $1,17

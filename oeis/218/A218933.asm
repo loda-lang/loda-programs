@@ -1,7 +1,7 @@
 ; A218933: Number of maximal nilpotent conjugacy classes of subgroups of the symmetric group.
 ; Submitted by Cruncher Pete
 ; 1,1,1,2,2,3,5,6,7,9,12,15,20,25
-; Formula: a(n) = c(n)+1, b(n) = c(n-2)/2+max(c(n-5)/2+b(n-5),1)+1, b(6) = 2, b(5) = 2, b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = b(n-2)/2+c(n-1)/2+b(n-1), c(6) = 4, c(5) = 2, c(4) = 1, c(3) = 1, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = c(n)+1, b(n) = max(b(n-5)+truncate(c(n-5)/2),1)+truncate(c(n-2)/2)+1, b(6) = 2, b(5) = 2, b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = b(n-1)+truncate(b(n-2)/2)+truncate(c(n-1)/2), c(6) = 4, c(5) = 2, c(4) = 1, c(3) = 1, c(2) = 0, c(1) = 0, c(0) = 0
 
 lpb $0
   sub $0,1

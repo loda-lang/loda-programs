@@ -1,7 +1,7 @@
 ; A222810: Number of n-digit numbers N with distinct digits such that the reversal of N divides N.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 9,9,3,5,3,2,0,0,0
-; Formula: a(n) = (((4*((((10*n+37)/11+4)^2+10*n+25)/6)+2*((4*((((10*n+37)/11+4)^2+10*n+25)/6)+2*((((10*n+37)/11+4)^2+10*n+25)/2)-150)%4)+2*((((10*n+37)/11+4)^2+10*n+25)/2)-150)/2-167)%10+10)%10
+; Formula: a(n) = -10*truncate((-10*truncate((truncate((12*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+6*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-8*truncate((4*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+2*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-150)/4)-450)/2)-167)/10)+truncate((12*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+6*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-8*truncate((4*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+2*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-150)/4)-450)/2)-157)/10)-10*truncate((truncate((12*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+6*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-8*truncate((4*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+2*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-150)/4)-450)/2)-167)/10)+truncate((12*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+6*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-8*truncate((4*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/6)+2*floor(((floor((10*n+37)/11)+4)^2+10*n+25)/2)-150)/4)-450)/2)-157
 
 add $0,3
 mul $0,10

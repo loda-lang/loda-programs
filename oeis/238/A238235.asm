@@ -1,7 +1,7 @@
 ; A238235: Numerators of Euler twin numbers Et(n).
 ; Submitted by ChelseaOilman
 ; 1,-1,-1,-1,1,1,-1,-17,17,31,-31,-691,691,5461,-5461,-929569,929569,3202291,-3202291,-221930581,221930581,4722116521,-4722116521,-968383680827,968383680827,14717667114151,-14717667114151
-; Formula: a(n) = A240677(n)/gcd(A037251(n),A240677(n))
+; Formula: a(n) = truncate(A240677(n)/gcd(A037251(n),A240677(n)))
 
 mov $1,$0
 seq $0,240677 ; a(n) = 6*Zeta(1-n)*n*(2^n-1) - Zeta(-n)*(n+1)*(2^(n+2)-2), for n = 0 the limit is understood.
