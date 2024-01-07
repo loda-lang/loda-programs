@@ -1,7 +1,7 @@
 ; A190303: Decimal expansion of sum of alternating series of reciprocals of Ramanujan primes, Sum_{n>=1} (1/R_n)(-1)^(n-1), where R_n is the n-th Ramanujan prime, A104272(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 4,4,6,6,8,4,3,0,7
-; Formula: a(n) = ((2*(((21*(n/2)-21)*(22*(n/2)-22)+21*(n/2)-21)/34)+2*(n/2)+2)%(n+3)+2)%10
+; Formula: a(n) = -truncate((2*floor(n/2)+2*truncate(((21*floor(n/2)-21)*(22*floor(n/2)-22)+21*floor(n/2)-21)/34)+2)/(n+3))*(n+3)+2*floor(n/2)+2*truncate(((21*floor(n/2)-21)*(22*floor(n/2)-22)+21*floor(n/2)-21)/34)-10*truncate((-truncate((2*floor(n/2)+2*truncate(((21*floor(n/2)-21)*(22*floor(n/2)-22)+21*floor(n/2)-21)/34)+2)/(n+3))*(n+3)+2*floor(n/2)+2*truncate(((21*floor(n/2)-21)*(22*floor(n/2)-22)+21*floor(n/2)-21)/34)+4)/10)+4
 
 mov $1,$0
 add $1,3

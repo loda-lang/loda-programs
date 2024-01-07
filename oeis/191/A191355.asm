@@ -1,7 +1,7 @@
 ; A191355: Indices of terms in A069748 with two decimal digits 1 and all others 0.
 ; Submitted by Science United
 ; 5,6,8,9,12,15,18,22,27,31,37,43,49,56,64,71,80,89,98,108
-; Formula: a(n) = b(n+3)+5, b(n) = (n-3)/2+b(n-3)+n-3, b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = b(n+3)+5, b(n) = b(n-3)+truncate((n-3)/2)+n-3, b(2) = 0, b(1) = 0, b(0) = 0
 
 add $0,3
 lpb $0
