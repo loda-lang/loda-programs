@@ -1,7 +1,7 @@
 ; A135272: Row 8 of A038207.
 ; Submitted by Stony666
 ; 256,1024,1792,1792,1120,448,112,16,1
-; Formula: a(n) = binomial(8,-n+8)*2^(-n+8)
+; Formula: a(n) = truncate(2^(-n+8))*binomial(8,-n+8)
 
 mov $2,8
 sub $2,$0

@@ -1,7 +1,7 @@
 ; A134183: A Hankel transform of a Catalan product.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,16,768,131072,83886080,206158430208,1970324836974592,73786976294838206464,10880332376531662572355584,6338253001141147007483516026880
-; Formula: a(n) = (n*2^(n^2))/2
+; Formula: a(n) = floor((n*2^(n^2))/2)
 
 mov $1,$0
 pow $1,2

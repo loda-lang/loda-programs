@@ -1,7 +1,7 @@
 ; A131977: Analog of A131976 for the icosahedron.
 ; Submitted by Simon Strandgaard
 ; 1,1,3,5,8,8,12,8,8,5,3,1,1
-; Formula: a(n) = (4*A001304(A036371(n+1))-1)/4
+; Formula: a(n) = truncate((4*A001304(A036371(n+1))-1)/4)
 
 add $0,1
 seq $0,36371 ; Number of ternary rooted trees with n nodes and height at most 3.

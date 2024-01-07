@@ -1,7 +1,7 @@
 ; A134015: Expansion of (1 - phi(-q) * phi(q^4)) / 2 in powers of q where phi() is a Ramanujan theta function.
 ; Submitted by Jon Maiga
 ; 1,0,0,-2,2,0,0,-2,1,0,0,0,2,0,0,-2,2,0,0,-4,0,0,0,0,3,0,0,0,2,0,0,-2,0,0,0,-2,2,0,0,-4,2,0,0,0,2,0,0,0,1,0,0,-4,2,0,0,0,0,0,0,0,2,0,0,-2,4,0,0,-4,0,0,0,-2,2,0,0,0,0,0,0,-4
-; Formula: a(n) = (A004531(4*n+4)/2-(A004531(4*n+4)/2)*(n%4))/2
+; Formula: a(n) = truncate((-truncate(A004531(4*n+4)/2)*(n%4)+truncate(A004531(4*n+4)/2))/2)
 
 mov $1,$0
 add $1,1

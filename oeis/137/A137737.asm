@@ -1,7 +1,7 @@
 ; A137737: Number of circular permutations of the multiset {1,1,2,2,...,n,n} (up to rotations) with even distances between equal elements.
 ; Submitted by [AF>Occitania]franky82
 ; 0,1,0,30,0,13560,0,27785520,0,162030637440,0,2156625389318400,0,56857271240920550400,0,2686506065987036477184000,0,211180868835057744408834048000,0,26072812428113877344085395644416000,0
-; Formula: a(n) = max(A155456(n+1)*(A000246(n+1)+1),1)/2
+; Formula: a(n) = floor(max(A155456(n+1)*(A000246(n+1)+1),1)/2)
 
 add $0,1
 mov $1,$0

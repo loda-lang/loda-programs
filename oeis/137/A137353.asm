@@ -1,7 +1,7 @@
 ; A137353: Minimal number of edges in an n-stable graph.
 ; Submitted by Science United
 ; 4,6,8,9,10,12,13,14
-; Formula: a(n) = -(6/(n+2))+n+7
+; Formula: a(n) = -floor(6/(n+2))+n+7
 
 add $0,2
 mov $1,6

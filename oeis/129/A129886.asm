@@ -1,7 +1,7 @@
 ; A129886: Sequence a_{h_n} arising in enumeration of arrays of directed blocks (see Quaintance reference for precise definition), where a_n = A129878, h_n = A129874.
 ; Submitted by Cruncher Pete
 ; 1,0,1,1,6,4,25,20
-; Formula: a(n) = ((a(n-4)+c(n-4))^2+a(n-2)+c(n-2))/2+b(n-1)+a(n-3)+c(n-3), a(6) = 25, a(5) = 4, a(4) = 6, a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 1, b(n) = 4*b(n-2), b(6) = 0, b(5) = 16, b(4) = 0, b(3) = 4, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = a(n-1)+c(n-1), c(6) = 13, c(5) = 9, c(4) = 3, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0
+; Formula: a(n) = b(n-1)+a(n-3)+c(n-3)+truncate(((a(n-4)+c(n-4))^2+a(n-2)+c(n-2))/2), a(6) = 25, a(5) = 4, a(4) = 6, a(3) = 1, a(2) = 1, a(1) = 0, a(0) = 1, b(n) = 4*b(n-2), b(6) = 0, b(5) = 16, b(4) = 0, b(3) = 4, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = a(n-1)+c(n-1), c(6) = 13, c(5) = 9, c(4) = 3, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0
 
 mov $1,1
 mov $4,1

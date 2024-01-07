@@ -1,7 +1,7 @@
 ; A129186: Right shift operator generating 1's in shifted spaces.
 ; Submitted by BlisteringSheep
 ; 1,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-; Formula: a(n) = (b(n)/4+1)%2, b(n) = b(n-1)/2+c(n-1), b(1) = 2, b(0) = 0, c(n) = gcd(b(n-1)/2,2)*c(n-1), c(1) = 4, c(0) = 2
+; Formula: a(n) = -2*truncate((truncate(b(n)/4)+1)/2)+truncate(b(n)/4)+1, b(n) = c(n-1)+truncate(b(n-1)/2), b(1) = 2, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(1) = 4, c(0) = 2
 
 mov $2,2
 lpb $0

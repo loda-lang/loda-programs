@@ -1,7 +1,7 @@
 ; A129448: Expansion of q * psi(-q) * chi(q^3)^2 * psi(-q^9) in powers of q where psi(), chi() are Ramanujan theta functions.
 ; Submitted by Simon Strandgaard
 ; 1,-1,0,1,-2,0,0,-1,0,2,0,0,2,0,0,1,-2,0,0,-2,0,0,0,0,3,-2,0,0,-2,0,0,-1,0,2,0,0,2,0,0,2,-2,0,0,0,0,0,0,0,1,-3,0,2,-2,0,0,0,0,2,0,0,2,0,0,1,-4,0,0,-2,0,0,0,0,2,-2,0,0,0,0,0,-2
-; Formula: a(n) = A049347(n)*(A004531(4*n+4)/4)
+; Formula: a(n) = A049347(n)*truncate(A004531(4*n+4)/4)
 
 mov $1,$0
 add $0,1

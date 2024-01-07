@@ -1,7 +1,7 @@
 ; A129068: A128894[n,k] for k=1 : Coxeter numbers as defined by Bulgadaev for exceptional group sequence using critical exponent solution.
 ; Submitted by PDW
 ; 2,3,3,6,9,12,18,24,30,50
-; Formula: a(n) = d(n)+2, b(n) = c(n-1)%(d(n-1)+1)+b(n-1)+2, b(5) = 13, b(4) = 10, b(3) = 7, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = b(n-1)+d(n-1)+6, c(5) = 23, c(4) = 17, c(3) = 11, c(2) = 9, c(1) = 6, c(0) = 0, d(n) = b(n-2)+d(n-3)+2, d(8) = 28, d(7) = 22, d(6) = 16, d(5) = 10, d(4) = 7, d(3) = 4, d(2) = 1, d(1) = 1, d(0) = 0
+; Formula: a(n) = d(n)+2, b(n) = -truncate(c(n-1)/(d(n-1)+1))*(d(n-1)+1)+b(n-1)+c(n-1)+2, b(5) = 13, b(4) = 10, b(3) = 7, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = b(n-1)+d(n-1)+6, c(5) = 23, c(4) = 17, c(3) = 11, c(2) = 9, c(1) = 6, c(0) = 0, d(n) = b(n-2)+d(n-3)+2, d(8) = 28, d(7) = 22, d(6) = 16, d(5) = 10, d(4) = 7, d(3) = 4, d(2) = 1, d(1) = 1, d(0) = 0
 
 lpb $0
   sub $0,1
