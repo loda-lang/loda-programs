@@ -1,6 +1,6 @@
 ; A063958: Sum of the non-unitary prime factors of n: sum of those prime factors for which the exponent exceeds 1.
 ; 0,0,0,2,0,0,0,2,3,0,0,2,0,0,0,2,0,3,0,2,0,0,0,2,5,0,3,2,0,0,0,2,0,0,0,5,0,0,0,2,0,0,0,2,3,0,0,2,7,5,0,2,0,3,0,2,0,0,0,2,0,0,3,2,0,0,0,2,0,0,0,5,0,0,5,2,0,0,0,2
-; Formula: a(n) = A008472((n+1)/gcd(A073353(n),n+1)-1)
+; Formula: a(n) = A008472(truncate((n+1)/gcd(A073353(n),n+1))-1)
 
 mov $2,$0
 add $2,1

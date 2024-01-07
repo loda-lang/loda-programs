@@ -1,7 +1,7 @@
 ; A059285: Hilbert's Hamiltonian walk projected onto the second diagonal: M'(3) (difference between sequences A059253 and A059252; their sum is A059261).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,0,-1,-2,-3,-2,-1,0,-1,0,1,2,1,2,3,4,3,4,5,6,7,6,5,4,5,4,3,2,3,2,1,0,-1,0,1,2,3,2,1,0,1,0,-1,-2,-1,-2,-3,-4,-5,-4,-3,-2,-1,-2,-3,-4,-3,-4,-5,-6,-5,-6,-7
-; Formula: a(n) = (A106825(max(n-1,0))+1)%3+a(n-1)-1, a(0) = 0
+; Formula: a(n) = -3*truncate((A106825(max(n-1,0))+1)/3)+a(n-1)+A106825(max(n-1,0)), a(0) = 0
 
 lpb $0
   mov $2,$0

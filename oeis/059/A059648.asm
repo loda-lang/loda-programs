@@ -1,7 +1,7 @@
 ; A059648: a(n) = [[(k^2)*n]-(k*[k*n])], where k = sqrt(2) and [] is the floor function.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,1
-; Formula: a(n) = ((A286927(max(2*n-2,0)+1)/4-3*(A286927(max(2*n-2,0))/4)-2)%2+2)%2
+; Formula: a(n) = -2*truncate((-2*truncate((-3*truncate(A286927(max(2*n-2,0))/4)+truncate(A286927(max(2*n-2,0)+1)/4)-2)/2)-3*truncate(A286927(max(2*n-2,0))/4)+truncate(A286927(max(2*n-2,0)+1)/4))/2)-2*truncate((-3*truncate(A286927(max(2*n-2,0))/4)+truncate(A286927(max(2*n-2,0)+1)/4)-2)/2)-3*truncate(A286927(max(2*n-2,0))/4)+truncate(A286927(max(2*n-2,0)+1)/4)
 
 sub $0,1
 mul $0,2

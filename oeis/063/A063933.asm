@@ -1,7 +1,7 @@
 ; A063933: Difference between n and the average of largest prime less than or equal to n and smallest prime greater than or equal to n.
 ; Submitted by Penguin
 ; 0,0,0,0,0,0,-1,0,1,0,0,0,-1,0,1,0,0,0,-1,0,1,0,-2,-1,0,1,2,0,0,0,-2,-1,0,1,2,0,-1,0,1,0,0,0,-1,0,1,0,-2,-1,0,1,2,0,-2,-1,0,1,2,0,0,0,-2,-1,0,1,2,0,-1,0,1,0,0,0,-2,-1,0,1,2,0,-1,0
-; Formula: a(n) = (-A159477(n+1)+A064722(n+1)+n+2)/2
+; Formula: a(n) = truncate((-A159477(n+1)+A064722(n+1)+n+2)/2)
 
 mov $1,$0
 add $1,1

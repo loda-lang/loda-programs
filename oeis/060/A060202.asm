@@ -1,7 +1,7 @@
 ; A060202: Let G = complete graph on 4 vertices, create the sequence G, L(G), L(L(G)), L(L(L(G))), ... where each graph in this sequence is the line graph of the previous graph; a(n) is number of vertices of the n-th graph in this sequence.
 ; Submitted by Athlici
 ; 4,6,12,36,180,1620,27540,908820,59073300,7620455700,1958457114900,1004688499943700,1029805712442292500,2110071904794257332500,8644964593942072291252500,70828194918167398282231732500
-; Formula: a(n) = 2*((b(n)-56)/28)+4, b(n) = (c(n-1)*b(n-1))/4, b(1) = 84, b(0) = 56, c(n) = 2*c(n-1)-4, c(1) = 8, c(0) = 6
+; Formula: a(n) = 2*truncate((b(n)-56)/28)+4, b(n) = truncate((c(n-1)*b(n-1))/4), b(1) = 84, b(0) = 56, c(n) = 2*c(n-1)-4, c(1) = 8, c(0) = 6
 
 mov $1,56
 mov $2,6

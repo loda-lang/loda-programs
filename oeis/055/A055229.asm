@@ -1,7 +1,7 @@
 ; A055229: Greatest common divisor of largest square dividing n and squarefree part of n.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,3,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1
-; Formula: a(n) = A336643((n+1)/gcd(A073353(n),n+1)-1)
+; Formula: a(n) = A336643(truncate((n+1)/gcd(A073353(n),n+1))-1)
 
 mov $2,$0
 add $2,1

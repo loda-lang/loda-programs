@@ -1,7 +1,7 @@
 ; A056626: Number of non-unitary square divisors of n.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1
-; Formula: a(n) = (-8*A156061(A181819(n)-1)*(A264668(n)-1)-8)/16
+; Formula: a(n) = truncate((-8*A156061(A181819(n)-1)*(A264668(n)-1)-8)/16)
 
 mov $1,$0
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
