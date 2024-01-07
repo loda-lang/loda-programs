@@ -1,7 +1,7 @@
 ; A152822: Periodic sequence [1,1,0,1] of length 4.
 ; Submitted by Cruncher Pete
 ; 1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1
-; Formula: a(n) = (gcd(n,4)%3)%2
+; Formula: a(n) = -2*truncate((-3*truncate(gcd(n,4)/3)+gcd(n,4))/2)-3*truncate(gcd(n,4)/3)+gcd(n,4)
 
 gcd $0,4
 mod $0,3

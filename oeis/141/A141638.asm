@@ -1,7 +1,7 @@
 ; A141638: Odd numbers which are not Yang numbers.
 ; Submitted by Science United
 ; 35,43,47,55,63,67,71,75,79
-; Formula: a(n) = 4*d(n+1)+35, b(n) = b(n-1)/2+c(n-1), b(3) = 21, b(2) = 9, b(1) = 2, b(0) = 0, c(n) = gcd(b(n-1)/2,2)*(b(n-1)/2+2*c(n-1)), c(3) = 76, c(2) = 17, c(1) = 8, c(0) = 2, d(n) = d(n-1)+gcd(b(n-2)/2,2), d(3) = 3, d(2) = 2, d(1) = 0, d(0) = 0
+; Formula: a(n) = 4*d(n+1)+35, b(n) = c(n-1)+truncate(b(n-1)/2), b(3) = 21, b(2) = 9, b(1) = 2, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*(2*c(n-1)+truncate(b(n-1)/2)), c(3) = 76, c(2) = 17, c(1) = 8, c(0) = 2, d(n) = d(n-1)+gcd(truncate(b(n-2)/2),2), d(3) = 3, d(2) = 2, d(1) = 0, d(0) = 0
 
 mov $2,2
 add $0,1

@@ -1,7 +1,7 @@
 ; A153839: First Sunday in n-th month of 365-day year starting on Sunday
 ; Submitted by Science United
 ; 1,5,5,2,7,4,2,6,3,1,5,3
-; Formula: a(n) = ((41^((24*((4*(n%16))/3)-40)/9)-((24*((4*(n%16))/3)-40)/9)+3)%10)%7+1
+; Formula: a(n) = -truncate((24*floor((4*(n%16))/3)-40)/9)-7*truncate((-truncate((24*floor((4*(n%16))/3)-40)/9)-10*truncate((-truncate((24*floor((4*(n%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+3)/10)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+3)/7)-10*truncate((-truncate((24*floor((4*(n%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+3)/10)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+4
 
 mod $0,16
 mul $0,4

@@ -1,7 +1,7 @@
 ; A146539: A061045 mod 9.
 ; Submitted by Fardringle
 ; 0,4,7,5,4,4,1,7,1,7,1,1,2,1,1,5,1,7,5,4,4,5,7,4,2,7,4,4,7,1,8
-; Formula: a(n) = ((n*(n+12))/gcd(6^4,n*(n+12)))%9
+; Formula: a(n) = -9*truncate(truncate((n*(n+12))/gcd(6^4,n*(n+12)))/9)+truncate((n*(n+12))/gcd(6^4,n*(n+12)))
 
 mov $1,$0
 add $0,6

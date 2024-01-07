@@ -1,7 +1,7 @@
 ; A147844: Difference between the number of distinct prime divisors of (2*n)!/n!^2 and pi(2*n), where pi(x) is the prime counting function.
 ; Submitted by ArvaroilLaido [Toscana]
 ; 0,0,1,1,1,1,2,1,2,3,2,3,3,3,3,3,3,2,3,2,3,4,5,5,5,5,6,4,3,5,6,5,4,5,5,6,7,6,7,7,7,7,7,7,7,7,7,6,7,7,8,9,8,8,10,10,11,10,10,9,9,9,9,9,9,9,8,9,10,11,11,10,10,10,10,11,10,10,11,10
-; Formula: a(n) = A001222(gcd(A000142(2*n+1),A002110(n+1)/A048633(2*n+1))-1)
+; Formula: a(n) = A001222(gcd(A000142(2*n+1),truncate(A002110(n+1)/A048633(2*n+1)))-1)
 
 add $0,1
 mov $2,$0

@@ -1,7 +1,7 @@
 ; A141473: Number of 3-equitable permutations: permutations on n letters equally avoiding each permutation of S_3.
 ; Submitted by Dingo
 ; 6,2,2,0,0,4,2,0,0
-; Formula: a(n) = (8*(binomial(n%2+binomial(8*n,2)-1,2)/8)+6)%10
+; Formula: a(n) = 8*truncate(binomial(n%2+binomial(8*n,2)-1,2)/8)-10*truncate((8*truncate(binomial(n%2+binomial(8*n,2)-1,2)/8)+6)/10)+6
 
 mov $1,$0
 mod $1,2

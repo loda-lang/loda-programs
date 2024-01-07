@@ -1,7 +1,7 @@
 ; A140087: Decimal expansion of a lower bound of the area of a convex universal cover for a unit length curve.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,2,2,3,9,2,1,0
-; Formula: a(n) = (d(n)+2)%10, b(n) = ((b(n-1)+1)^3)/n+c(n-1)-2, b(4) = 41, b(3) = 4, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = n*(e(n-1)+1), c(4) = 124, c(3) = 12, c(2) = 6, c(1) = 1, c(0) = 0, d(n) = ((b(n-1)+1)^3)/n, d(4) = 31, d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = binomial(((b(n-1)+1)^3)/n+c(n-1)+e(n-1)-1,2)+2, e(4) = 2558, e(3) = 30, e(2) = 3, e(1) = 2, e(0) = 0
+; Formula: a(n) = -10*truncate((d(n)+2)/10)+d(n)+2, b(n) = c(n-1)+truncate(((b(n-1)+1)^3)/n)-2, b(4) = 41, b(3) = 4, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = n*(e(n-1)+1), c(4) = 124, c(3) = 12, c(2) = 6, c(1) = 1, c(0) = 0, d(n) = truncate(((b(n-1)+1)^3)/n), d(4) = 31, d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = binomial(c(n-1)+e(n-1)+truncate(((b(n-1)+1)^3)/n)-1,2)+2, e(4) = 2558, e(3) = 30, e(2) = 3, e(1) = 2, e(0) = 0
 
 lpb $0
   sub $0,1

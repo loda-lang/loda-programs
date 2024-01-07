@@ -1,7 +1,7 @@
 ; A145110: Number of elements in the Redheffer matrix that contribute to the Moebius function.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,6,5,10,7,13,11,14
-; Formula: a(n) = (2*((A000005(n)+A336851(n))/2))/3+n+1
+; Formula: a(n) = truncate((2*truncate((A000005(n)+A336851(n))/2))/3)+n+1
 
 mov $2,$0
 add $2,1

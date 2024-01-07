@@ -1,7 +1,7 @@
 ; A156241: Triangle read by rows, T(n,k). If k divides n then A008683(n)*A008683(k).
 ; Submitted by Science United
 ; 1,-1,1,-1,0,1,0,0,0,1,-1,0,0,0,1,1,-1,-1,0,0,1,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,-1,0,0,-1,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0
-; Formula: a(n) = (A156348(n)*A054525(n))%2
+; Formula: a(n) = A156348(n)*A054525(n)-2*truncate((A156348(n)*A054525(n))/2)
 
 mov $1,$0
 seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).

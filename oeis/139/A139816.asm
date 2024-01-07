@@ -1,7 +1,7 @@
 ; A139816: Final nonzero terms in rows of A139801.
 ; Submitted by Jon Maiga
 ; 1,2,3,9,14,48,75,275,429,1638
-; Formula: a(n) = -binomial((n+1)/2+n,n+2)+binomial((n+1)/2+n,n)
+; Formula: a(n) = -binomial(floor((n+1)/2)+n,n+2)+binomial(floor((n+1)/2)+n,n)
 
 mov $1,$0
 add $1,1
