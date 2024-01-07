@@ -1,6 +1,6 @@
 ; A202068: Denominator of mass of oriented maximal Wicks forms of genus n.
 ; 6,6,3,6,3,1,1,2,3,3,3,3,3,3,1,2,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,6,1,1,1,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (((binomial(2*n,n)/(n+1))%6+2)^2-3)%10
+; Formula: a(n) = (-6*truncate(floor(binomial(2*n,n)/(n+1))/6)+floor(binomial(2*n,n)/(n+1))+2)^2-10*truncate(((-6*truncate(floor(binomial(2*n,n)/(n+1))/6)+floor(binomial(2*n,n)/(n+1))+2)^2-3)/10)-3
 
 mov $2,$0
 mul $0,2

@@ -1,7 +1,7 @@
 ; A214211: Doubled Fibonacci word: the A003842 sequence replacing 1 with 1,1 and 2 with 2,2.
 ; Submitted by Science United
 ; 1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1
-; Formula: a(n) = (c((n+2)/2)-8)%10+10, b(n) = 4*b(n-1), b(1) = 40, b(0) = 10, c(n) = ((c(n-1)/2-b(n-1))/2)/gcd((c(n-1)/2-b(n-1))/2+1,4), c(1) = -1, c(0) = 0
+; Formula: a(n) = -10*truncate((c(max(floor((n+2)/2),0))-8)/10)+c(max(floor((n+2)/2),0))+2, b(n) = 4*b(n-1), b(1) = 40, b(0) = 10, c(n) = truncate(truncate((-b(n-1)+truncate(c(n-1)/2))/2)/gcd(truncate((-b(n-1)+truncate(c(n-1)/2))/2)+1,4)), c(1) = -1, c(0) = 0
 
 mov $2,10
 add $0,2

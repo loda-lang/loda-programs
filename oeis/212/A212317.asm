@@ -1,7 +1,7 @@
 ; A212317: Numbers m such that both 3*2^m + 5 and 5*2^m + 3 are prime.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,3,4,5,7,8,32
-; Formula: a(n) = (((n*(n+5))/8-6)^((n*(n+5))/8-6)+n+5)/11+n+1
+; Formula: a(n) = truncate((truncate((floor((n*(n+5))/8)-6)^(floor((n*(n+5))/8)-6))+n+5)/11)+n+1
 
 mov $1,$0
 add $0,5

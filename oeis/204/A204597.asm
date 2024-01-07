@@ -1,7 +1,7 @@
 ; A204597: Number of connected non-isomorphic well-covered circulant graphs on n nodes (including the complete graph).
 ; Submitted by Jamie Morken(w2)
 ; 1,2,2,3,2,3,3,5,4,14
-; Formula: a(n) = c(n+1)+1, b(n) = (d(n-2)/2-d(n-2)+b(n-2))^2+(d(n-3)/2-d(n-3)+b(n-3))^2-b(n-1)-e(n-1)+d(n-1)+e(n-3)+e(n-4)+1, b(6) = 1, b(5) = 2, b(4) = 2, b(3) = 2, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = (d(n-1)/2-d(n-1)+b(n-1))^2+e(n-2), c(5) = 1, c(4) = 2, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = (d(n-1)/2-d(n-1)+b(n-1))^2, d(5) = 1, d(4) = 1, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0, e(n) = -d(n-1)+b(n-1)+e(n-1), e(5) = 2, e(4) = 1, e(3) = 0, e(2) = 1, e(1) = 0, e(0) = 0
+; Formula: a(n) = c(n+1)+1, b(n) = (-d(n-2)+b(n-2)+truncate(d(n-2)/2))^2+(-d(n-3)+b(n-3)+truncate(d(n-3)/2))^2-b(n-1)-e(n-1)+d(n-1)+e(n-3)+e(n-4)+1, b(6) = 1, b(5) = 2, b(4) = 2, b(3) = 2, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = (-d(n-1)+b(n-1)+truncate(d(n-1)/2))^2+e(n-2), c(5) = 1, c(4) = 2, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = (-d(n-1)+b(n-1)+truncate(d(n-1)/2))^2, d(5) = 1, d(4) = 1, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0, e(n) = -d(n-1)+b(n-1)+e(n-1), e(5) = 2, e(4) = 1, e(3) = 0, e(2) = 1, e(1) = 0, e(0) = 0
 
 add $0,1
 lpb $0
