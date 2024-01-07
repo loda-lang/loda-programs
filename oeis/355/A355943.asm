@@ -1,7 +1,7 @@
 ; A355943: a(n) = 1 if n is odd and A064989(sigma(n)) divides A064989(n), otherwise 0, where A064989 is fully multiplicative with a(2) = 1 and a(p) = prevprime(p) for odd primes p, and sigma is the sum of divisors function.
 ; Submitted by vaughan
 ; 1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (binomial(2*(A002129(n)/gcd(A002129(n),n+1)),A002129(n)/gcd(A002129(n),n+1))/2)%2
+; Formula: a(n) = -2*truncate(truncate(binomial(2*truncate(A002129(n)/gcd(A002129(n),n+1)),truncate(A002129(n)/gcd(A002129(n),n+1)))/2)/2)+truncate(binomial(2*truncate(A002129(n)/gcd(A002129(n),n+1)),truncate(A002129(n)/gcd(A002129(n),n+1)))/2)
 
 mov $3,$0
 add $3,1

@@ -1,7 +1,7 @@
 ; A353632: Even bisection of A353630: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for even numbers.
 ; Submitted by Simon Strandgaard
 ; 0,1,2,1,0,3,2,3,0,3,2,1,0,1,2,1,2,3,0,3,2,3,0,1,2,1,0,1,2,3,2,3,0,3,2,1,0,1,2,1,0,3,2,3,0,3,0,1,2,1,0,1,2,3,0,3,2,3,0,1,0,1,2,1,0,3,2,3,0,3,2,1,0,1,2,1,2,3,0,3
-; Formula: a(n) = A003415(A276086(2*n))%4
+; Formula: a(n) = -4*truncate(A003415(A276086(2*n))/4)+A003415(A276086(2*n))
 
 mul $0,2
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.

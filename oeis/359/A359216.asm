@@ -1,7 +1,7 @@
 ; A359216: X-coordinates of a point moving in a counterclockwise undulating spiral in a square grid.
 ; Submitted by Dave Studdert
 ; 0,1,1,0,0,-1,-1,-2,-2,-1,-1,0,0,1,1,2,2,3,3,2,2,1,1,0,0,-1,-1,-2,-2,-3,-3,-4,-4,-3,-3,-2,-2,-1,-1,0,0,1,1,2,2,3,3,4,4,5,5,4,4,3,3,2,2,1,1,0,0,-1,-1,-2,-2,-3,-3,-4,-4,-5,-5,-6,-6,-5,-5,-4,-4,-3,-3,-2
-; Formula: a(n) = d(n+1)/2, b(n) = b(n-1)%2+c(n-1)+1, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = -d(n-1)-2*(b(n-1)%2)+c(n-1), c(2) = -2, c(1) = 0, c(0) = 0, d(n) = 2*(b(n-1)%2)+d(n-1), d(2) = 2, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate(d(n+1)/2), b(n) = -2*truncate(b(n-1)/2)+b(n-1)+c(n-1)+1, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = 4*truncate(b(n-1)/2)-d(n-1)-2*b(n-1)+c(n-1), c(2) = -2, c(1) = 0, c(0) = 0, d(n) = 2*b(n-1)-4*truncate(b(n-1)/2)+d(n-1), d(2) = 2, d(1) = 0, d(0) = 0
 
 add $0,1
 lpb $0

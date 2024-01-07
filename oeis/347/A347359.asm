@@ -1,7 +1,7 @@
 ; A347359: Decimal expansion of Product_{p in A077800} (1 - 1/p).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,9,3,3,7,1,7
-; Formula: a(n) = (A208752(n+2)*A059268(n+2)-1)%10
+; Formula: a(n) = A208752(n+2)*A059268(n+2)-10*truncate((A208752(n+2)*A059268(n+2)-1)/10)-1
 
 add $0,2
 mov $1,$0

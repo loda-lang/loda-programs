@@ -1,7 +1,7 @@
 ; A347871: a(n) = (n+A003415(sigma(n))) mod 2, where A003415 gives the arithmetic derivative of its argument.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,1,1,0,1,0,0,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,0,1,1,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1
-; Formula: a(n) = (A003415(A000203(n))+n+1)%2
+; Formula: a(n) = -2*truncate((A003415(A000203(n))+n+1)/2)+A003415(A000203(n))+n+1
 
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

@@ -1,7 +1,7 @@
 ; A354028: a(n) = 1 if n is a prime power of the form 4m+3, otherwise 0.
 ; Submitted by vanos0512
 ; 0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = A336551(n*A010055(max(0,n))+A010055(max(0,n)))%2
+; Formula: a(n) = -2*truncate(A336551(n*A010055(max(0,n))+A010055(max(0,n)))/2)+A336551(n*A010055(max(0,n))+A010055(max(0,n)))
 
 max $2,$0
 seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.

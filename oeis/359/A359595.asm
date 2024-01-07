@@ -1,7 +1,7 @@
 ; A359595: Parity of A358777, where A358777 is Dirichlet inverse of the characteristic function of odd numbers with an even number of prime factors (counted with multiplicity).
 ; Submitted by Science United
 ; 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
-; Formula: a(n) = (gcd(n,A345222(n)+A359411(n)-1)+1)%2
+; Formula: a(n) = -2*truncate((gcd(n,A345222(n)+A359411(n)-1)+1)/2)+gcd(n,A345222(n)+A359411(n)-1)+1
 
 mov $1,$0
 mov $2,$0

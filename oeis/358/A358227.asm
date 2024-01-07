@@ -1,7 +1,7 @@
 ; A358227: Parity of A328382(n), where A328382(n) = A276086(n) mod A003415(n), with A003415 the arithmetic derivative and A276086 the primorial base exp-function.
 ; Submitted by Landjunge
 ; 0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0
-; Formula: a(n) = (A276086(n+2)%A003415(n+2))%2
+; Formula: a(n) = -A003415(n+2)*truncate(A276086(n+2)/A003415(n+2))-2*truncate((-A003415(n+2)*truncate(A276086(n+2)/A003415(n+2))+A276086(n+2))/2)+A276086(n+2)
 
 add $0,2
 mov $1,$0

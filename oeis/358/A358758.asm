@@ -1,7 +1,7 @@
 ; A358758: a(n) = 1 if A358669(n) == 1 (mod 4), otherwise 0.
 ; Submitted by fzs600
 ; 0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0
-; Formula: a(n) = binomial(A276086(n)*A003415(n)+2,3)%2
+; Formula: a(n) = -2*truncate(binomial(A276086(n)*A003415(n)+2,3)/2)+binomial(A276086(n)*A003415(n)+2,3)
 
 mov $1,$0
 seq $1,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.

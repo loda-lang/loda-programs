@@ -1,7 +1,7 @@
 ; A348484: Maximum number of squares on an n X n chessboard such that no two are two steps apart horizontally or vertically.
 ; Submitted by Solidair79
 ; 1,4,5,8,13,20,25,32,41,52
-; Formula: a(n) = (n+1)^2+4*((-(n+1)^2)/8)
+; Formula: a(n) = (n+1)^2+4*truncate((-(n+1)^2)/8)
 
 add $0,1
 pow $0,2

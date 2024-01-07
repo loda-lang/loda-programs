@@ -1,7 +1,7 @@
 ; A349630: Denominators of the Dirichlet inverse of the abundancy index, sigma(n)/n.
 ; Submitted by Christian Krause
 ; 1,2,3,2,5,1,7,1,3,5,11,3,13,7,5,1,17,2,19,5,21,11,23,1,5,13,1,7,29,5,31,1,11,17,35,6,37,19,39,1,41,7,43,11,5,23,47,1,7,10,17,13,53,1,55,1,57,29,59,5,61,31,21,1,65,11,67,17,23,35,71,1,73,37,15,19,77,13,79,1
-; Formula: a(n) = (n+1)/gcd(A046692(n),n+1)
+; Formula: a(n) = truncate((n+1)/gcd(A046692(n),n+1))
 
 mov $2,$0
 add $2,1

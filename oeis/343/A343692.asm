@@ -1,7 +1,7 @@
 ; A343692: a(n) is the number of men's preference profiles in the stable marriage problem with n men and n women, where every man prefers woman number 1 to woman number 2.
 ; Submitted by Matt
 ; 1,27,20736,777600000,2176782336000000,645362587921121280000000,27285016590396539545426329600000000,213106813311662727500673631554480635904000000000,386661002072680852777222237092449665784217600000000000000000000
-; Formula: a(n) = b(n+1), b(n) = c(n-1)^(n+1), b(2) = 27, b(1) = 1, b(0) = 0, c(n) = c(n-1)*(n+2), c(2) = 12, c(1) = 3, c(0) = 1
+; Formula: a(n) = b(n+1), b(n) = truncate(c(n-1)^(n+1)), b(2) = 27, b(1) = 1, b(0) = 0, c(n) = c(n-1)*(n+2), c(2) = 12, c(1) = 3, c(0) = 1
 
 mov $1,2
 mov $3,1

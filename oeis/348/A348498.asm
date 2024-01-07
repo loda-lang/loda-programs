@@ -1,7 +1,7 @@
 ; A348498: a(n) = gcd(A003415(n), A347130(n)) / A003557(n), where A003415 is the arithmetic derivative and A347130 is its Dirichlet convolution with the identity function.
 ; Submitted by Landjunge
 ; 0,1,1,1,1,5,1,3,1,7,1,8,1,9,8,2,1,7,1,12,10,13,1,11,1,15,3,16,1,31,1,5,14,19,12,5,1,21,16,17,1,41,1,24,13,25,1,14,1,9,20,28,1,9,16,23,22,31,1,46,1,33,17,3,18,61,1,36,26,59,1,13,1,39,11,40,18,71,1,22
-; Formula: a(n) = (gcd(A000005(n),2)*(A003415(n+1)/A003557(n)))/2
+; Formula: a(n) = truncate((truncate(A003415(n+1)/A003557(n))*gcd(A000005(n),2))/2)
 
 mov $2,$0
 seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

@@ -1,7 +1,7 @@
 ; A359594: Multiplicative with a(p^e) = p^e if p divides e, 1 otherwise.
 ; Submitted by Simon Strandgaard (M1)
 ; 1,1,1,4,1,1,1,1,1,1,1,4,1,1,1,16,1,1,1,4,1,1,1,1,1,1,27,4,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,4,1,1,1,16,1,1,1,4,1,27,1,1,1,1,1,4,1,1,1,64,1,1,1,4,1,1,1,1,1,1,1,4,1,1,1,16
-; Formula: a(n) = gcd((A003415(n+1)/A003557(n))^7,n+1)
+; Formula: a(n) = gcd(truncate(A003415(n+1)/A003557(n))^7,n+1)
 
 mov $2,$0
 add $2,1

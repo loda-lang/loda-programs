@@ -1,7 +1,7 @@
 ; A353680: a(n) = 1 if n is odd and phi(sigma(n)) is equal to phi(n), otherwise 0.
 ; Submitted by Landjunge
 ; 1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = ((-1)^n+binomial(0,-A000010(n)+A062401(n)))/2
+; Formula: a(n) = truncate(((-1)^n+binomial(0,-A000010(n)+A062401(n)))/2)
 
 mov $1,$0
 mov $4,$0

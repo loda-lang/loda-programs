@@ -1,7 +1,7 @@
 ; A348049: a(n) = A003959(n) / gcd(sigma(n), A003959(n)), where A003959 is multiplicative with a(p^e) = (p+1)^e and sigma is the sum of divisors function.
 ; Submitted by Jamie Morken(w2)
 ; 1,1,1,9,1,1,1,9,16,1,1,9,1,1,1,81,1,16,1,9,1,1,1,9,36,1,8,9,1,1,1,27,1,1,1,144,1,1,1,9,1,1,1,9,16,1,1,81,64,36,1,9,1,8,1,9,1,1,1,9,1,1,16,729,1,1,1,9,1,1,1,144,1,1,36,9,1,1,1,81
-; Formula: a(n) = A003959(n)/gcd(A003959(n),A000203(n))
+; Formula: a(n) = truncate(A003959(n)/gcd(A003959(n),A000203(n)))
 
 mov $1,$0
 seq $1,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.

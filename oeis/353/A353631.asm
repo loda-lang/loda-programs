@@ -1,7 +1,7 @@
 ; A353631: Arithmetic derivative of primorial base exp-function, reduced modulo 4, computed for odd numbers.
 ; Submitted by Simon Strandgaard (M1)
 ; 1,1,1,3,3,3,1,1,1,3,3,3,1,1,1,1,1,1,3,3,3,1,1,1,3,3,3,1,1,1,1,1,1,3,3,3,1,1,1,3,3,3,1,1,1,1,1,1,3,3,3,1,1,1,3,3,3,1,1,1,1,1,1,3,3,3,1,1,1,3,3,3,1,1,1,1,1,1,3,3
-; Formula: a(n) = A003415(A276086(2*n+1))%4
+; Formula: a(n) = -4*truncate(A003415(A276086(2*n+1))/4)+A003415(A276086(2*n+1))
 
 mul $0,2
 add $0,1

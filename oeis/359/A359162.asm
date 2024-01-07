@@ -1,7 +1,7 @@
 ; A359162: a(n) = 1 if n is a number of the form 4u+3 with an even number of prime factors (counted with multiplicity), otherwise 0.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (gcd(A003415(n+1),A018804(n+1))-1)%2
+; Formula: a(n) = -2*truncate((gcd(A003415(n+1),A018804(n+1))-1)/2)+gcd(A003415(n+1),A018804(n+1))-1
 
 mov $1,$0
 add $1,1

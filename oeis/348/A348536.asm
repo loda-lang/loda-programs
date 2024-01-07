@@ -1,7 +1,7 @@
 ; A348536: Number of partitions of n into 3 parts that divide n.
 ; Submitted by Fardringle
 ; 0,0,1,1,0,2,0,1,1,0,0,3,0,0,1,1,0,2,0,1,1,0,0,3,0,0,1,1,0,2,0,1,1,0,0,3,0,0,1,1,0,2,0,1,1,0,0,3,0,0,1,1,0,2,0,1,1,0,0,3,0,0,1,1,0,2,0,1,1,0,0,3,0,0,1,1,0,2,0,1
-; Formula: a(n) = (3*gcd(n+1,12)+3)/10
+; Formula: a(n) = truncate((3*gcd(n+1,12)+3)/10)
 
 add $0,1
 gcd $0,12

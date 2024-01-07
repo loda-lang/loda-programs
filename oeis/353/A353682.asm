@@ -1,7 +1,7 @@
 ; A353682: a(n) = 1 if phi(sigma(n)) >= phi(n), otherwise 0.
 ; Submitted by eclipse99
 ; 1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1
-; Formula: a(n) = (3^(-A000010(n)+A062401(n)))%2
+; Formula: a(n) = -2*truncate(truncate(3^(-A000010(n)+A062401(n)))/2)+truncate(3^(-A000010(n)+A062401(n)))
 
 mov $3,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

@@ -1,7 +1,7 @@
 ; A358261: a(n) is the number of noninfinitary square divisors of n.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-; Formula: a(n) = ((-8*A156061(A181819(n)-1)*(A264668(n)-1)-9)/16)%2
+; Formula: a(n) = -2*truncate(truncate((-8*A156061(A181819(n)-1)*(A264668(n)-1)-9)/16)/2)+truncate((-8*A156061(A181819(n)-1)*(A264668(n)-1)-9)/16)
 
 mov $1,$0
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).

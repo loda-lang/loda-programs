@@ -1,7 +1,7 @@
 ; A362852: The number of divisors of n that are both bi-unitary and exponential.
 ; Submitted by Ralfy
 ; 1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2
-; Formula: a(n) = (-A366145(n)*(A264668(n)-1)-1)/3+1
+; Formula: a(n) = truncate((-A366145(n)*(A264668(n)-1)-1)/3)+1
 
 mov $2,$0
 seq $2,366145 ; The number of divisors of the largest divisor of n that is a cubefull number (A036966).

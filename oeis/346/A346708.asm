@@ -1,7 +1,7 @@
 ; A346708: a(n) is the least k > 1 such that p(n) divides p(n^k), or 0 if no such k exists (p = A000041).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,2,3,3,6,7,2,10
-; Formula: a(n) = c(n)%9+2, b(n) = 2*b(n-1)+2*c(n-1)+2*d(n-1)-2, b(3) = -10, b(2) = -4, b(1) = -2, b(0) = 0, c(n) = -c(n-1)+d(n-1)+1, c(3) = 1, c(2) = 0, c(1) = 1, c(0) = 0, d(n) = -b(n-1)-c(n-3)+b(n-2)+d(n-2)+d(n-3)-1, d(4) = 4, d(3) = 1, d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = -9*truncate(c(n)/9)+c(n)+2, b(n) = 2*b(n-1)+2*c(n-1)+2*d(n-1)-2, b(3) = -10, b(2) = -4, b(1) = -2, b(0) = 0, c(n) = -c(n-1)+d(n-1)+1, c(3) = 1, c(2) = 0, c(1) = 1, c(0) = 0, d(n) = -b(n-1)-c(n-3)+b(n-2)+d(n-2)+d(n-3)-1, d(4) = 4, d(3) = 1, d(2) = 0, d(1) = 0, d(0) = 0
 
 mov $4,3
 lpb $0

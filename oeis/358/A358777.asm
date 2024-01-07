@@ -1,7 +1,7 @@
 ; A358777: Dirichlet inverse of A353557, the characteristic function of odd numbers with an even number of prime factors (counted with multiplicity).
 ; Submitted by Science United
 ; 1,0,0,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,0,0,-1,0,0,0,-1,0,0,0,0,0,0,0,-1,0,-1,0,0,0,-1,0,0,0,0,0,0,0,0,0,-1,0,-1,0,0,0,-1,0,-1,0,0,0,0,0,0,0,-1,0,0,0,-1,0,0,0,0,0,0,0,-1,0,0,0
-; Formula: a(n) = (-gcd(n,A345222(n)+A359411(n)-1)+1)%2
+; Formula: a(n) = -gcd(n,A345222(n)+A359411(n)-1)-2*truncate((-gcd(n,A345222(n)+A359411(n)-1)+1)/2)+1
 
 mov $1,$0
 mov $2,$0
