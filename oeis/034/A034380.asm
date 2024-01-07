@@ -1,7 +1,7 @@
 ; A034380: Ratio of totient to Carmichael's lambda function: a(n) = A000010(n) / A002322(n).
 ; Submitted by Dave Studdert
 ; 1,1,1,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2,2,1,1,4,1,1,1,2,1,2,1,2,2,1,2,2,1,1,2,4,1,2,1,2,2,1,1,4,1,1,2,2,1,1,2,4,2,1,1,4,1,1,6,2,4,2,1,2,2,2,1,4,1,1,2,2,2,2,1,8
-; Formula: a(n) = A000010(n)/gcd(A000010(n),A002322(n))
+; Formula: a(n) = truncate(A000010(n)/gcd(A000010(n),A002322(n)))
 
 mov $3,$0
 seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

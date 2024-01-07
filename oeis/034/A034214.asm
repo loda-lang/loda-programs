@@ -1,7 +1,7 @@
 ; A034214: Number of ternary codes of length 2 with n words.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,2,4,5,5,4,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = ((binomial(9,n)*(binomial(9,n)^2+19)+1442)/22-65)%10
+; Formula: a(n) = -10*truncate((floor((binomial(9,n)*(binomial(9,n)^2+19)+1442)/22)-65)/10)+floor((binomial(9,n)*(binomial(9,n)^2+19)+1442)/22)-65
 
 mov $1,9
 bin $1,$0

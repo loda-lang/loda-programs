@@ -1,7 +1,7 @@
 ; A028729: Nonsquares mod 16.
 ; Submitted by Cruncher Pete
 ; 2,3,5,6,7,8,10,11,12,13,14,15
-; Formula: a(n) = -(8/(n+3))+n+4
+; Formula: a(n) = -floor(8/(n+3))+n+4
 
 add $0,2
 mov $2,1

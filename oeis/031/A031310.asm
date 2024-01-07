@@ -1,7 +1,7 @@
 ; A031310: Write n in base 10, complement each digit and juxtapose.
 ; Submitted by Science United
 ; 8,7,6,5,4,3,2,1,0,8,9,8,8,8,7,8,6,8,5,8,4,8,3,8,2,8,1,8,0,7,9,7,8,7,7,7,6,7,5,7,4,7,3,7,2,7,1,7,0,6,9,6,8,6,7,6,6,6,5,6,4,6,3,6,2,6,1,6,0,5,9,5,8,5,7,5,6,5,5,5
-; Formula: a(n) = (((10*A261138(n))/(-10^(n+1))+9)%10+10)%10
+; Formula: a(n) = -10*truncate((-10*truncate((truncate((10*A261138(n))/(-10^(n+1)))+9)/10)+truncate((10*A261138(n))/(-10^(n+1)))+19)/10)-10*truncate((truncate((10*A261138(n))/(-10^(n+1)))+9)/10)+truncate((10*A261138(n))/(-10^(n+1)))+19
 
 mov $2,$0
 seq $2,261138 ; The concatenation of 123456...n and the reverse of this number.

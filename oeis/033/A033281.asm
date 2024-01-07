@@ -1,7 +1,7 @@
 ; A033281: Number of diagonal dissections of a convex (n+9)-gon into n+1 regions.
 ; Submitted by Christian Krause
 ; 1,35,616,7644,76440,659736,5116320,36581688,245402157,1563837275,9553624080,56338955400,322432175520,1798432526880,9809631964800,52470868368240,275857874141850,1428186531145374
-; Formula: a(n) = (binomial(n+6,n+1)*binomial(2*n+8,n))/6
+; Formula: a(n) = floor((binomial(n+6,n+1)*binomial(2*n+8,n))/6)
 
 mov $1,$0
 add $0,2

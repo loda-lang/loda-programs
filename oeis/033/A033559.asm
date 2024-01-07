@@ -1,7 +1,7 @@
 ; A033559: a(n) = (q - p)/2, where p is the largest prime < n and q is the smallest prime > n.
 ; Submitted by Science United
 ; 1,2,1,3,2,2,2,3,1,3,2,2,2,3,1,3,2,2,2,5,3,3,3,3,3,4,1,4,3,3,3,3,3,5,2,2,2,3,1,3,2,2,2,5,3,3,3,3,3,6,3,3,3,3,3,4,1,4,3,3,3,3,3,5,2,2,2,3,1,4,3,3,3,3,3,5,2,2,2,5
-; Formula: a(n) = (-n+A064722(n+2)+A159477(n+4)-2)/2
+; Formula: a(n) = truncate((-n+A064722(n+2)+A159477(n+4)-2)/2)
 
 add $0,2
 mov $1,$0
