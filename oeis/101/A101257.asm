@@ -1,7 +1,7 @@
 ; A101257: Remainder when the least divisor of n greater than or equal to the square root of n (A033677(n)) is divided by the greatest divisor of n less than or equal to the square root of n (A033676(n)).
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,0,0,0,1,0,1,0,1,2,0,0,0,0,1,1,1,0,2,0,1,0,3,0,1,0,0,2,1,2,0,0,1,1,3,0,1,0,3,4,1,0,2,0,0,2,1,0,3,1,1,1,1,0,4,0,1,2,0,3,5,0,1,2,3,0,1,0,1,0,3,4,1,0,2
-; Formula: a(n) = A033677(n)%((n+1)/A033677(n))
+; Formula: a(n) = -truncate(A033677(n)/truncate((n+1)/A033677(n)))*truncate((n+1)/A033677(n))+A033677(n)
 
 mov $1,$0
 add $1,1

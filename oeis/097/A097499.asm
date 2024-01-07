@@ -1,7 +1,7 @@
 ; A097499: p^q + q^p for consecutive primes p and q.
 ; Submitted by Thibault Gauthier, Josef Urban (NMT)
 ; 17,368,94932,1996813914,36314872537968,8660320497414243870,244552822542936127033092,257904243416235317958787975746,3091062959814255272215316579358416079052
-; Formula: a(n) = A000040(n+1)^A000040(n)+A000040(n)^A000040(n+1)
+; Formula: a(n) = truncate(A000040(n+1)^A000040(n))+truncate(A000040(n)^A000040(n+1))
 
 mov $2,$0
 seq $2,40 ; The prime numbers.

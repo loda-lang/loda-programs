@@ -1,7 +1,7 @@
 ; A094863: Maximal number of longest common subsequences between any two strings of length n (Version 2).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,4,7,10,19,28
-; Formula: a(n) = 3^((n-1)/2)+3^((n-1)/2)*((n-1)%2)+1
+; Formula: a(n) = truncate(3^truncate((n-1)/2))*(-2*truncate((n-1)/2)+n-1)+truncate(3^truncate((n-1)/2))+1
 
 sub $0,1
 mov $1,$0

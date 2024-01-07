@@ -1,7 +1,7 @@
 ; A102298: Number of prime divisors with multiplicity of n+1 where n and n+1 are composite or twin composite numbers.
 ; Submitted by Jamie Morken(w3)
 ; 2,2,2,4,2,2,2,2,3,3,2,2,2,4,2,4,3,2,2,3,2,3,2,4,2,2,3,6,2,3,2,3,3,3,2,3,4,2,2,2,2,4,2,3,2,2,2,6,3,4,3,2,2,5,2,3,3,2,2,5,2,2,2,3,3,4,2,3,2,2,4,4,2,2,2,6,2,2,3,3
-; Formula: a(n) = A001222(2*A153238(n/2)-2*(n/2)+n+2)
+; Formula: a(n) = A001222(2*A153238(floor(n/2))-2*floor(n/2)+n+2)
 
 mov $1,$0
 div $0,2

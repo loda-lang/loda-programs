@@ -1,7 +1,7 @@
 ; A105234: Central column of a Moebius-binomial triangle.
 ; Submitted by William Michael Kanar
 ; 1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1
-; Formula: a(n) = ((A008966(max(n,1)-1)*(max(n,1)-1)-229)%2+2)%2
+; Formula: a(n) = A008966(max(n,1)-1)*(max(n,1)-1)-2*truncate((A008966(max(n,1)-1)*(max(n,1)-1)-2*truncate((A008966(max(n,1)-1)*(max(n,1)-1)-229)/2)-227)/2)-2*truncate((A008966(max(n,1)-1)*(max(n,1)-1)-229)/2)-227
 
 max $0,1
 sub $0,1

@@ -1,7 +1,7 @@
 ; A109074: Numerator of binomial(6*n-2,2*n)/(2*binomial(4*n-1,2*n)).
 ; Submitted by Science United
 ; 1,1,3,26,323,2415,26970,66526,717541,278992987,30741431,753069156,21291561634,1258540885373,11255629805034,833378477982,181778972767041,101220208716435,644821697046585,4759584409762049637,7692170694126370209,19898042621084590853
-; Formula: a(n) = binomial(6*n-2,2*n)/gcd(binomial(4*n,2*n),binomial(6*n-2,2*n))
+; Formula: a(n) = truncate(binomial(6*n-2,2*n)/gcd(binomial(4*n,2*n),binomial(6*n-2,2*n)))
 
 mov $1,$0
 mul $1,2

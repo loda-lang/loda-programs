@@ -1,7 +1,7 @@
 ; A101432: Each term is the number of letters in the Spanish name of the previous term.
 ; Submitted by Torbj&#246;rn Eriksson
 ; 1,3,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6
-; Formula: a(n) = ((5*n-6)%10)/3+3
+; Formula: a(n) = truncate((5*n-10*truncate((5*n-6)/10)-6)/3)+3
 
 mul $0,5
 sub $0,6

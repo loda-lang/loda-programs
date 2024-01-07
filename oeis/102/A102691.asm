@@ -1,7 +1,7 @@
 ; A102691: Least n-expodigital number (i.e., numbers m such that m^n has exactly n decimal digits).
 ; Submitted by Science United
 ; 0,4,5,6,7,7,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9
-; Formula: a(n) = (6*n-11)/(n+2)+5
+; Formula: a(n) = truncate((6*n-11)/(n+2))+5
 
 mov $1,$0
 add $0,2

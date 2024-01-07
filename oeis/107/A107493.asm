@@ -1,6 +1,6 @@
 ; A107493: Coefficients of a certain theta series.
 ; 1,0,0,0,0,0,4,4,8,0,6,4
-; Formula: a(n) = binomial(max(n-5,0)*(2*n-3),n)%10
+; Formula: a(n) = -10*truncate(binomial(max(n-5,0)*(2*n-3),n)/10)+binomial(max(n-5,0)*(2*n-3),n)
 
 mov $1,$0
 mov $2,$0
