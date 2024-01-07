@@ -1,7 +1,7 @@
 ; A272532: Single bit representation of the sum of two sinusoids with periods 2 and 2*sqrt(2).
 ; Submitted by Mads Nissen
 ; 1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,1
-; Formula: a(n) = (c(n)/5+1)%2, b(n) = (-c(n-1)+b(n-1))/2+1, b(2) = -3, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)*(((-c(n-1)+b(n-1))/2+d(n-1))%2+2), c(2) = 32, c(1) = 8, c(0) = 2, d(n) = ((-c(n-1)+b(n-1))/2+d(n-1))%2+2, d(2) = 2, d(1) = 2, d(0) = -3
+; Formula: a(n) = -2*truncate((truncate(c(n)/5)+1)/2)+truncate(c(n)/5)+1, b(n) = truncate((-c(n-1)+b(n-1))/2)+1, b(2) = -3, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)*(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2), c(2) = 32, c(1) = 8, c(0) = 2, d(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, d(2) = 2, d(1) = 2, d(0) = -3
 
 mov $2,2
 mov $3,-3

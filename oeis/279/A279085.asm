@@ -1,7 +1,7 @@
 ; A279085: Number of distinct residues of triangular numbers mod 10^n.
 ; Submitted by Matt
 ; 1,6,44,424,4176,41696,416704,4166784,41666816
-; Formula: a(n) = (2*((5*5^n)/24)+1)*2^n
+; Formula: a(n) = (2*floor((5*5^n)/24)+1)*2^n
 
 mov $1,2
 pow $1,$0

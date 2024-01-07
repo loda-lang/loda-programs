@@ -1,7 +1,7 @@
 ; A269111: a(n) = length of the repeating part of row n of A288097.
 ; Submitted by omegaintellisys
 ; 2,3,2,2,3,2,2,3,2,2,2,2,2,2
-; Formula: a(n) = (binomial(binomial(8,n),3)%3)/2+2
+; Formula: a(n) = floor((binomial(binomial(8,n),3)%3)/2)+2
 
 mov $1,8
 bin $1,$0

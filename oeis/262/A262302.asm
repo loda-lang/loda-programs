@@ -1,7 +1,7 @@
 ; A262302: Rainbow index for n-th odd prime.
 ; Submitted by Fardringle
 ; 3,4,4,5,5,6,6,6,6,6,6,6,6
-; Formula: a(n) = (min(n-2,3)+3)/2+3
+; Formula: a(n) = truncate((min(n-2,3)+3)/2)+3
 
 sub $0,2
 min $0,3

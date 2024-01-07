@@ -1,7 +1,7 @@
 ; A278829: Pawn's moves in chess: possible difference between origin and destination square when the squares are numbered sequentially row by row.
 ; Submitted by shiva
 ; -16,-9,-8,-7,7,8,9,16
-; Formula: a(n) = b(n)-16, b(n) = ((A266313(3*n)%4+A040329(3*n))/2)/8+(A266313(3*n)%4+A040329(3*n))/2+5*((2*gcd(0,((A266313(3*n)%4+A040329(3*n))/2)/8+(A266313(3*n)%4+A040329(3*n))/2)+2)/5)+b(n-1), b(0) = 0
+; Formula: a(n) = b(n)-16, b(n) = 5*truncate((2*gcd(0,truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)+truncate(truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)/8))+2)/5)+b(n-1)+truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)+truncate(truncate((-4*truncate(A266313(3*n)/4)+A040329(3*n)+A266313(3*n))/2)/8), b(0) = 0
 
 lpb $0
   mov $2,$0

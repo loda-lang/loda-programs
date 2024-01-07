@@ -1,7 +1,7 @@
 ; A267579: Middle column of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
 ; Submitted by Cruncher Pete
 ; 1,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (binomial(2*n,n)/gcd(n,2)+1)%2
+; Formula: a(n) = -2*truncate((truncate(binomial(2*n,n)/gcd(n,2))+1)/2)+truncate(binomial(2*n,n)/gcd(n,2))+1
 
 mov $1,$0
 mul $0,2

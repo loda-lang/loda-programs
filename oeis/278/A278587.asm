@@ -1,7 +1,7 @@
 ; A278587: Value of the Catch-Up game [1,...n] for first player (1 = win, -1 = loss, 0 = draw).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,1,0,0,-1,-1,0,0,1,-1,0,0,1,-1,0,0
-; Formula: a(n) = b(n)%2, b(n) = 2*b(n-2)+2*c(n-2)+b(n-1)+c(n-1), b(2) = 5, b(1) = 2, b(0) = 0, c(n) = -c(n-1)-2*b(n-1)+1, c(2) = -2, c(1) = -1, c(0) = 2
+; Formula: a(n) = -2*truncate(b(n)/2)+b(n), b(n) = 2*b(n-2)+2*c(n-2)+b(n-1)+c(n-1), b(2) = 5, b(1) = 2, b(0) = 0, c(n) = -c(n-1)-2*b(n-1)+1, c(2) = -2, c(1) = -1, c(0) = 2
 
 mov $3,2
 lpb $0
