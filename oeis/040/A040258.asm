@@ -1,7 +1,7 @@
 ; A040258: Continued fraction for sqrt(275).
 ; Submitted by Fardringle
 ; 16,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1,1,2,1,1,32,1
-; Formula: a(n) = (3^(gcd(n,max(-n+2,0)+6)-3))%10+12*(((3^(gcd(n,max(-n+2,0)+6)-3))%10)/3)+1
+; Formula: a(n) = 12*truncate((-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1
 
 mov $1,2
 trn $1,$0

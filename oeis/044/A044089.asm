@@ -1,7 +1,7 @@
 ; A044089: Numbers n such that string 2,2 occurs in the base 5 representation of n but not of n-1.
 ; Submitted by Simon Strandgaard
 ; 12,37,60,87,112,137,162,185,212,237,262,287,300,337,362,387,412,435,462,487,512,537,560,587,612,637,662,685,712,737,762,787,810,837,862,887,912,925,962,987,1012,1037,1060,1087,1112
-; Formula: a(n) = gcd(25,2*n+1)*(n/gcd(25,2*n+1))+24*n+12
+; Formula: a(n) = truncate(n/gcd(25,2*n+1))*gcd(25,2*n+1)+24*n+12
 
 mov $2,$0
 mov $5,$0

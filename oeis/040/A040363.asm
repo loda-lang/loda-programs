@@ -1,7 +1,7 @@
 ; A040363: Continued fraction for sqrt(383).
 ; Submitted by Landjunge
 ; 19,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1,38,1,1,3,19,3,1,1
-; Formula: a(n) = ((A266313(n)%4+A040329(n))/2)/2+14*((((A266313(n)%4+A040329(n))/2)/2+gcd(((A266313(n)%4+A040329(n))/2)/5,((A266313(n)%4+A040329(n))/2)/2+1))/4)+gcd(((A266313(n)%4+A040329(n))/2)/5,((A266313(n)%4+A040329(n))/2)/2+1)
+; Formula: a(n) = 14*truncate((gcd(truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/5),truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)+1)+truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2))/4)+gcd(truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/5),truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)+1)+truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)
 
 mov $3,$0
 seq $3,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].

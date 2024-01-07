@@ -1,7 +1,7 @@
 ; A040250: Continued fraction for sqrt(267).
 ; Submitted by Penguin
 ; 16,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2,1,15,1,2,32,2
-; Formula: a(n) = (3^(gcd(n,max(-n+2,0)+6)-3))%10+12*(((3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n+1,2))/3)+gcd(-n+1,2)
+; Formula: a(n) = 12*truncate((-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))
 
 mov $2,1
 sub $2,$0

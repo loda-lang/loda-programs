@@ -1,7 +1,7 @@
 ; A037897: (Greatest base 3 digit of n)-(least base 3 digit of n).
 ; Submitted by LM
 ; 0,0,1,0,1,2,1,0,1,1,2,1,0,1,2,1,1,2,2,2,2,1,1,2,1,0,1,1,2,1,1,2,2,2,2,1,1,2,1,0,1,2,1,1,2,2,2,2,1,1,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,1,2,2,2,2,1,1,2,1,0
-; Formula: a(n) = A007089((-A030102(A319651(n+1))+A319651(n+1))/2)%10
+; Formula: a(n) = -10*truncate(A007089(truncate((-A030102(A319651(n+1))+A319651(n+1))/2))/10)+A007089(truncate((-A030102(A319651(n+1))+A319651(n+1))/2))
 
 add $0,1
 seq $0,319651 ; Largest number having in its ternary representation the same number of 0's, 1's and 2's as n.

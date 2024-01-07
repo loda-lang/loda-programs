@@ -1,7 +1,7 @@
 ; A037734: Base 8 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,0,3.
 ; Submitted by Christian Krause
 ; 2,17,136,1091,8730,69841,558728,4469827,35758618,286068945,2288551560,18308412483,146467299866,1171738398929,9373907191432,74991257531459,599930060251674,4799440482013393
-; Formula: a(n) = b(n)+c(n), b(n) = 8*b(n-1)+8*c(n-1), b(1) = 16, b(0) = 0, c(n) = (c(n-1)+15)%4, c(1) = 1, c(0) = 2
+; Formula: a(n) = b(n)+c(n), b(n) = 8*b(n-1)+8*c(n-1), b(1) = 16, b(0) = 0, c(n) = -4*truncate((c(n-1)+15)/4)+c(n-1)+15, c(1) = 1, c(0) = 2
 
 mov $2,2
 lpb $0

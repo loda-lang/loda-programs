@@ -1,7 +1,7 @@
 ; A040476: Continued fraction for sqrt(499).
 ; Submitted by Skivelitis2
 ; 22,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2,1,21,1,2,44,2
-; Formula: a(n) = (3^(gcd(n,max(-n+2,0)+6)-3))%10+18*(((3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n+1,2))/3)+gcd(-n+1,2)
+; Formula: a(n) = 18*truncate((-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))
 
 mov $2,1
 sub $2,$0

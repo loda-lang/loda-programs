@@ -1,6 +1,6 @@
 ; A039971: An example of a d-perfect sequence.
 ; 1,1,2,0,0,1,2,2,1,0,0,0,0,0,0,0,0,1,2,2,1,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,1,0,0,2,1,1,2,0,0,0,0,0,0,0,0,2,1,1,2,0,0,1,2,2
-; Formula: a(n) = binomial(n,n/2)%3
+; Formula: a(n) = -3*truncate(binomial(n,floor(n/2))/3)+binomial(n,floor(n/2))
 
 mov $1,$0
 div $1,2
