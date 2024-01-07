@@ -1,7 +1,7 @@
 ; A160734: a(n) = (A160158(n+2)-4)/4.
 ; Submitted by Orange Kid
 ; 0,1,3,5,6,8,11,13,15,19,25,30,33,38,43,45,47,51
-; Formula: a(n) = A160163((n-1)%17+2)/2+a(n-1), a(0) = 0
+; Formula: a(n) = a(n-1)+truncate(A160163(-17*truncate((n-1)/17)+n+1)/2), a(0) = 0
 
 lpb $0
   sub $0,1

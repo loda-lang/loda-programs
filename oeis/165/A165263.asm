@@ -1,7 +1,7 @@
 ; A165263: A sequence similar to the Fibonacci rabbit sequence for the Padovan sequence
 ; Submitted by misaki@med
 ; 0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,1,0
-; Formula: a(n) = ((43*n+203)/4+(n+5)/11)%2
+; Formula: a(n) = -2*truncate((floor((43*n+203)/4)+floor((n+5)/11))/2)+floor((43*n+203)/4)+floor((n+5)/11)
 
 mov $1,$0
 add $0,5

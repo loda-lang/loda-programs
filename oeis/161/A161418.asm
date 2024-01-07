@@ -1,6 +1,6 @@
 ; A161418: Number of triangles in the Y-toothpick structure after n rounds.
 ; 0,0,0,0,6,6,12,12,24,30
-; Formula: a(n) = 6*max((4*n-4)/7-((-n+8)%2),0)
+; Formula: a(n) = 6*max(2*truncate((-n+8)/2)+truncate((4*n-4)/7)+n-8,0)
 
 sub $0,1
 sub $2,$0

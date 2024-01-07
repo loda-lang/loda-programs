@@ -1,7 +1,7 @@
 ; A159988: Catalan numbers read modulo 11 .
 ; Submitted by Fardringle
 ; 1,1,2,5,3,9,0,0,0,0,10,2,2,4,10,6,7,0,0,0,0,8,6,6,1,8,7,10,0,0,0,0,1,9,9,7,1,5,4,0,0,0,0,9,4,4,8,9,1,3,0,0,0,0,6,10,10,9,6,8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (binomial(2*n,n)/(n+1))%11
+; Formula: a(n) = -11*truncate(floor(binomial(2*n,n)/(n+1))/11)+floor(binomial(2*n,n)/(n+1))
 
 mov $1,$0
 mul $0,2

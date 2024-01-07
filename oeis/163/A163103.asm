@@ -1,7 +1,7 @@
 ; A163103: Decimal expansion of the astronomical unit (measured in meters).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,9,5,9,7,8,7,0,7,0,0
-; Formula: a(n) = (A001222(binomial(n+2,2)-1)+A124353(n)+5)%10
+; Formula: a(n) = -10*truncate((A001222(binomial(n+2,2)-1)+A124353(n)+5)/10)+A001222(binomial(n+2,2)-1)+A124353(n)+5
 
 mov $1,$0
 add $1,2

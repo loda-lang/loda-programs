@@ -1,7 +1,7 @@
 ; A158650: Indices of single-digit numbers in A061041.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 4,5,6,8,12,20,28,36
-; Formula: a(n) = (max(n-4,0)+1)*2^(-max(n-4,0)+n-1)+4
+; Formula: a(n) = truncate(2^(-max(n-4,0)+n-1))*(max(n-4,0)+1)+4
 
 mov $1,$0
 trn $0,4

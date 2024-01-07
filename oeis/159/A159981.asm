@@ -1,7 +1,7 @@
 ; A159981: Catalan numbers read modulo 4.
 ; Submitted by Fardringle
 ; 1,1,2,1,2,2,0,1,2,2,0,2,0,0,0,1,2,2,0,2,0,0,0,2,0,0,0,0,0,0,0,1,2,2,0,2,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,0,2,0,0,0,2,0,0,0,0,0,0,0,2
-; Formula: a(n) = (binomial(2*n,n)/(n+1))%4
+; Formula: a(n) = -4*truncate(floor(binomial(2*n,n)/(n+1))/4)+floor(binomial(2*n,n)/(n+1))
 
 mov $1,$0
 mul $0,2
