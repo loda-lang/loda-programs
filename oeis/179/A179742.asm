@@ -1,7 +1,7 @@
 ; A179742: The number of syllables in each letter of the English alphabet.
 ; Submitted by Kotenok2000
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1
-; Formula: a(n) = 2*((A124767(A114994(n+2))+3)/2)+2*A000013(0)-5
+; Formula: a(n) = 2*truncate((A124767(A114994(n+2))+3)/2)+2*A000013(0)-5
 
 add $0,2
 seq $0,114994 ; Numbers whose binary representation has monotonically decreasing sizes of groups of zeros (including zero-length groups between adjacent ones).

@@ -1,7 +1,7 @@
 ; A171369: Triangle read by rows, replace 2's with 3's in A169695.
 ; Submitted by Mumps
 ; 1,3,3,1,3,3,3,3,1,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = 2*((c(n+1)+1)%2)+1, b(n) = (5*b(n-1))%(b(n-1)*((c(n-1)/2-b(n-1)+2)%2+2)), b(1) = 2, b(0) = 1, c(n) = (c(n-1)/2-b(n-1))/2+b(n-1)*((c(n-1)/2-b(n-1)+2)%2+2), c(1) = 3, c(0) = 0
+; Formula: a(n) = 2*c(n+1)-4*truncate((c(n+1)+1)/2)+3, b(n) = -truncate((5*b(n-1))/(b(n-1)*(-b(n-1)-2*truncate((-b(n-1)+truncate(c(n-1)/2)+2)/2)+truncate(c(n-1)/2)+4)))*b(n-1)*(-b(n-1)-2*truncate((-b(n-1)+truncate(c(n-1)/2)+2)/2)+truncate(c(n-1)/2)+4)+5*b(n-1), b(1) = 2, b(0) = 1, c(n) = b(n-1)*(-b(n-1)-2*truncate((-b(n-1)+truncate(c(n-1)/2)+2)/2)+truncate(c(n-1)/2)+4)+truncate((-b(n-1)+truncate(c(n-1)/2))/2), c(1) = 3, c(0) = 0
 
 mov $2,1
 add $0,1

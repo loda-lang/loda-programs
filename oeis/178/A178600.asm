@@ -1,7 +1,7 @@
 ; A178600: Expansion of the polynomial (1+x^3)*(1+x^11).
 ; Submitted by UBT - Mikeejones
 ; 1,0,0,1,0,0,0,0,0,0,0,1,0,0,1
-; Formula: a(n) = ((14*(n+4)^2-56)/11)%2
+; Formula: a(n) = -2*truncate(truncate((14*(n+4)^2-56)/11)/2)+truncate((14*(n+4)^2-56)/11)
 
 add $0,4
 pow $0,2

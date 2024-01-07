@@ -1,7 +1,7 @@
 ; A171587: Sequence of the diagonal variant of the Fibonacci word fractal. Sequence of the Fibonacci tile.
 ; Submitted by Jon Maiga
 ; 0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1
-; Formula: a(n) = ((377*n+377)/144)%2
+; Formula: a(n) = -2*truncate(floor((377*n+377)/144)/2)+floor((377*n+377)/144)
 
 add $0,1
 mul $0,377

@@ -1,7 +1,7 @@
 ; A179527: Characteristic function of numbers in A083207.
 ; Submitted by Science United
 ; 0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1
-; Formula: a(n) = ((-2*n+A000203(n)-3)^(-2*n+A000203(n)-3)+2)%2
+; Formula: a(n) = -2*truncate((truncate((-2*n+A000203(n)-3)^(-2*n+A000203(n)-3))+2)/2)+truncate((-2*n+A000203(n)-3)^(-2*n+A000203(n)-3))+2
 
 mov $1,$0
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

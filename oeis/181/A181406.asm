@@ -1,6 +1,6 @@
 ; A181406: Symbolic sequence at the accumulation point of the 3*2^{k} supercycles of unimodal maps.
 ; 1,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,0,1
-; Formula: a(n) = (A197870(max(8*n-A039653(4*n+2)+4,0))+1)%2
+; Formula: a(n) = -2*truncate((A197870(max(8*n-A039653(4*n+2)+4,0))+1)/2)+A197870(max(8*n-A039653(4*n+2)+4,0))+1
 
 mul $0,4
 add $0,2
