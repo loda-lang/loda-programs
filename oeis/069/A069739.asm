@@ -1,7 +1,7 @@
 ; A069739: Size of the key space for isomorphism verification of circulant graphs of order n.
 ; Submitted by Pheonixarcher
 ; 1,1,1,2,1,1,1,5,2,1,1,2,1,1,1,14,1,2,1,2,1,1,1,5,2,1,5,2,1,1,1,42,1,1,1,4,1,1,1,5,1,1,1,2,2,1,1,14,2,2,1,2,1,5,1,5,1,1,1,2,1,1,2,132,1,1,1,2,1,1,1,10,1,1,2,2,1,1,1,14
-; Formula: a(n) = A317848(n)/gcd(A317848(n),A000005(n))
+; Formula: a(n) = truncate(A317848(n)/gcd(A317848(n),A000005(n)))
 
 mov $1,$0
 seq $1,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).

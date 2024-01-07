@@ -1,7 +1,7 @@
 ; A073637: Digital root (cf. A010888) of prime(n)^3.
 ; Submitted by Science United
 ; 8,9,8,1,8,1,8,1,8,8,1,1,8,1,8,8,8,1,1,8,1,1,8,8,1,8,1,8,1,8,1,8,8,1,8,1,1,1,8,8,8,1,8,1,8,1,1,1,8,1,8,8,1,8,8,8,8,1,1,8,1,8,1,8,1,8,1,1,8,1,8,8,1,1,1,8,8,1,8,1
-; Formula: a(n) = (((A078979(max(A062876(n)/4+1,3))+1)*(2*A078979(max(A062876(n)/4+1,3))+1))/4+8)%10
+; Formula: a(n) = -10*truncate((truncate(((A078979(max(truncate(A062876(n)/4)+1,3))+1)*(2*A078979(max(truncate(A062876(n)/4)+1,3))+1))/4)+8)/10)+truncate(((A078979(max(truncate(A062876(n)/4)+1,3))+1)*(2*A078979(max(truncate(A062876(n)/4)+1,3))+1))/4)+8
 
 seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
 div $0,4

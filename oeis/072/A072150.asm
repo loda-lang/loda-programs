@@ -1,7 +1,7 @@
 ; A072150: Coordination sequence for AlPO_4-11 structure with respect to node (Y) where decagon, hexagon and square meet and is adjacent to node of type (X).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,3,5,8,10,13,17,18,20,25,26,28,33,33,36,42,41,43,50,49,51,58,56,59,67,64,66,75,72,74,83,79,82,92,87,89,100,95,97,108,102,105,117,110,112,125,118,120,133,125,128,142,133,135,150,141,143,158,148,151,167,156,158,175,164,166,183,171,174,192,179,181,200,187,189,208,194,197,217,202
-; Formula: a(n) = (4*n-2*((n*((n^2)%3)+n+46078)/3)+30716)/3+(2*n+1)/3+n+1
+; Formula: a(n) = floor((2*n+1)/3)+truncate((4*n-2*floor((n*((n^2)%3)+n+46078)/3)+30716)/3)+n+1
 
 mov $2,$0
 mul $2,$0

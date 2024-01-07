@@ -1,7 +1,7 @@
 ; A071739: Expansion of (1+x^3*C^4)*C^2, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
 ; Submitted by PDW
 ; 1,2,5,15,48,159,539,1859,6500,22984,82042,295222,1069776,3900225,14296455,52656315,194777340,723281460,2695246950,10075695330,37776123840,142010723790,535172997294,2021412800430,7651226309768
-; Formula: a(n) = binomial(2*n+4,n+2)/(n+3)+2*binomial(max(2*n-1,0),n-3)-((-2*binomial(max(2*n-1,0),n-3)+binomial(max(2*n-1,0)+1,n))/2)-binomial(max(2*n-1,0)+1,n)
+; Formula: a(n) = 2*binomial(max(2*n-1,0),n-3)-binomial(max(2*n-1,0)+1,n)-truncate((-2*binomial(max(2*n-1,0),n-3)+binomial(max(2*n-1,0)+1,n))/2)+floor(binomial(2*n+4,n+2)/(n+3))
 
 mov $2,$0
 mul $2,2

@@ -1,6 +1,6 @@
 ; A080531: Number of nucleons in longest known radioactive decay series ending with Lead 208 ("thorium series"), reversed.
 ; 208,208,212,212,216,220,224,224,228,228,232,236,240,244,248,252,252,256,260,264,268,272
-; Formula: a(n) = 4*(b(n+1)/3)+208, b(n) = b(n-1)+A000120(n), b(0) = 0
+; Formula: a(n) = 4*truncate(b(n+1)/3)+208, b(n) = b(n-1)+A000120(n), b(0) = 0
 
 add $0,1
 lpb $0

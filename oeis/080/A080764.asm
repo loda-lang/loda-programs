@@ -1,7 +1,7 @@
 ; A080764: First differences of A049472, floor(n/sqrt(2)).
 ; Submitted by Paul
 ; 1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1
-; Formula: a(n) = ((A286927(n+1)/4-3*(A286927(n)/4)-1)%2+2)%2
+; Formula: a(n) = -2*truncate((-2*truncate((-3*truncate(A286927(n)/4)+truncate(A286927(n+1)/4)-1)/2)-3*truncate(A286927(n)/4)+truncate(A286927(n+1)/4)+1)/2)-2*truncate((-3*truncate(A286927(n)/4)+truncate(A286927(n+1)/4)-1)/2)-3*truncate(A286927(n)/4)+truncate(A286927(n+1)/4)+1
 
 mov $2,$0
 add $2,1
