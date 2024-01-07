@@ -1,7 +1,7 @@
 ; A048597: Very round numbers: reduced residue system consists of only primes and 1.
 ; Submitted by matszpk
 ; 1,2,3,4,6,8,12,18,24,30
-; Formula: a(n) = b(n)/5+1, b(n) = 5*A159477(b(n-1)/4), b(0) = 0
+; Formula: a(n) = truncate(b(n)/5)+1, b(n) = 5*A159477(truncate(b(n-1)/4)), b(0) = 0
 
 lpb $0
   sub $0,1
