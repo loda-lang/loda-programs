@@ -1,7 +1,7 @@
 ; A123939: Ramsey number r(K_{2,2}, K_{3,n}).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 8,11,11,14,15,16,17,20,22
-; Formula: a(n) = (-n+A165972(n+7)-1)/2-2
+; Formula: a(n) = truncate((-n+A165972(n+7)-1)/2)-2
 
 mov $1,$0
 add $1,7

@@ -1,7 +1,7 @@
 ; A120962: Final digit (in decimal system) of n^(n^n), i.e., n^(n^n) mod 10.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,6,7,6,5,6,3,6,9,0,1,6,3,6,5,6,7,6,9,0,1,6,7,6,5,6,3,6,9,0,1,6,3,6,5,6,7,6,9,0,1,6,7,6,5,6,3,6,9,0,1,6,3,6,5,6,7,6,9,0,1,6,7,6,5,6,3,6,9,0,1,6,3,6,5,6,7,6,9
-; Formula: a(n) = ((n+5)^(gcd(n+1,n+5)+3)+5)%10
+; Formula: a(n) = -10*truncate((truncate((n+5)^(gcd(n+1,n+5)+3))+5)/10)+truncate((n+5)^(gcd(n+1,n+5)+3))+5
 
 mov $1,$0
 add $0,5

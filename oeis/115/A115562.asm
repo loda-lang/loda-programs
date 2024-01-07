@@ -1,7 +1,7 @@
 ; A115562: a(n) = number of distinct squarefree ternary (cyclic) sequences uniquely containing every possible length-n substring.
 ; Submitted by Science United
 ; 2,3,0,6,0,0,0,0,0,0
-; Formula: a(n) = (c(n)*(b(n)+1))%10, b(n) = n*c(n-1)+b(n-1), b(2) = 4, b(1) = 2, b(0) = 1, c(n) = n*c(n-1), c(2) = 2, c(1) = 1, c(0) = 1
+; Formula: a(n) = c(n)*(b(n)+1)-10*truncate((c(n)*(b(n)+1))/10), b(n) = n*c(n-1)+b(n-1), b(2) = 4, b(1) = 2, b(0) = 1, c(n) = n*c(n-1), c(2) = 2, c(1) = 1, c(0) = 1
 
 mov $1,1
 mov $3,1

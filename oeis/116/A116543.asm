@@ -1,7 +1,7 @@
 ; A116543: Number of terms in greedy representation of n in terms of the Lucas numbers.
 ; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,2,2,1,2,2,2,1,2,2,2,2,3,3,1,2,2,2,2,3,3,2,3,3,3,1,2,2,2,2,3,3,2,3,3,3,2,3,3,3,3,4,4,1,2,2,2,2,3,3,2,3,3,3,2,3,3,3,3,4,4,2,3,3,3,3,4,4,3,4,4,4,1,2,2,2
-; Formula: a(n) = A007895((2*n+A026351(n)+2)/5)
+; Formula: a(n) = A007895(truncate((2*n+A026351(n)+2)/5))
 
 mov $1,$0
 seq $1,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.

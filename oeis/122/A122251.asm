@@ -1,7 +1,7 @@
 ; A122251: Numerators of Hankel transform of 1/(3n+1) (conjecture).
 ; Submitted by Science United
 ; 1,9,729,4782969,282429536481,150094635296999121,6461081889226673298932241,2503155504993241601315571986085849,8727963568087712425891397479476727340041449
-; Formula: a(n) = 3^(((4*n+1)^2)/12)
+; Formula: a(n) = truncate(3^floor(((4*n+1)^2)/12))
 
 mul $0,4
 add $0,1

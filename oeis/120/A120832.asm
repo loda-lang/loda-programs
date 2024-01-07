@@ -1,7 +1,7 @@
 ; A120832: Denominators of partial sums of (p+q)/p*q, where p and q are primes.
 ; Submitted by fzs600
 ; 1,6,2,5,70,210,210,1155,1155,30030,10010,85085,17017,646646,1939938,22309287,22309287,22309287,111546435,37182145,2156564410,33426748355,33426748355,100280245065,7420738134810,7420738134810
-; Formula: a(n) = A112141(n)/gcd(A003415(A112141(n)),A112141(n))
+; Formula: a(n) = truncate(A112141(n)/gcd(A003415(A112141(n)),A112141(n)))
 
 seq $0,112141 ; Product of the first n semiprimes.
 mov $1,$0

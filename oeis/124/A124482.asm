@@ -1,7 +1,7 @@
 ; A124482: Number of indecomposable disconnected hook length posets with n elements.
 ; Submitted by pututu
 ; 0,0,0,0,0,0,4,5,31
-; Formula: a(n) = (binomial((-n+4)/2,4)*((n+1)*(2*n-((-n+4)/2)+8)+1))/37
+; Formula: a(n) = truncate((binomial(truncate((-n+4)/2),4)*((n+1)*(2*n-truncate((-n+4)/2)+8)+1))/37)
 
 mov $1,4
 sub $1,$0

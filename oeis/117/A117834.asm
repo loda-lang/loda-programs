@@ -1,7 +1,7 @@
 ; A117834: Triangular numbers with consecutive digits.
 ; Submitted by Skillz
 ; 0,1,3,6,10,21,45,78,210
-; Formula: a(n) = b(n+2), b(n) = binomial(c(n-1)/2,2), b(5) = 6, b(4) = 3, b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)/2+d(n-1)+n+1, c(5) = 11, c(4) = 8, c(3) = 6, c(2) = 4, c(1) = 2, c(0) = 0, d(n) = -d(n-1)+d(n-2)+binomial(c(n-2)/2,2), d(6) = 5, d(5) = 2, d(4) = 1, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = b(n+2), b(n) = binomial(truncate(c(n-1)/2),2), b(5) = 6, b(4) = 3, b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = d(n-1)+truncate(c(n-1)/2)+n+1, c(5) = 11, c(4) = 8, c(3) = 6, c(2) = 4, c(1) = 2, c(0) = 0, d(n) = -d(n-1)+d(n-2)+binomial(truncate(c(n-2)/2),2), d(6) = 5, d(5) = 2, d(4) = 1, d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
 
 add $0,2
 lpb $0

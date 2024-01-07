@@ -1,7 +1,7 @@
 ; A110860: Number of even formally self-dual (but not self-dual) binary codes of length 2n that have the highest possible minimal distance.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,0,1,2,9,141
-; Formula: a(n) = f(n)/2, b(n) = (b(n-1)+d(n-1)+1)/4, b(5) = 141, b(4) = 9, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = (c(n-1)+e(n-1)+1)^2+d(n-2)*(e(n-3)+8)-c(n-2)-e(n-2)-2*b(n-2), c(5) = 5564861600, c(4) = 74593, c(3) = 270, c(2) = 14, c(1) = 1, c(0) = 0, d(n) = 4*b(n-1)+2*c(n-1)+2*e(n-1)+2, d(5) = 149232, d(4) = 554, d(3) = 34, d(2) = 8, d(1) = 6, d(0) = 0, e(n) = 2*b(n-1), e(5) = 18, e(4) = 4, e(3) = 2, e(2) = 0, e(1) = 2, e(0) = 0, f(n) = e(n-1), f(5) = 4, f(4) = 2, f(3) = 0, f(2) = 2, f(1) = 0, f(0) = 0
+; Formula: a(n) = truncate(f(n)/2), b(n) = truncate((b(n-1)+d(n-1)+1)/4), b(5) = 141, b(4) = 9, b(3) = 2, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = (c(n-1)+e(n-1)+1)^2+d(n-2)*(e(n-3)+8)-c(n-2)-e(n-2)-2*b(n-2), c(5) = 5564861600, c(4) = 74593, c(3) = 270, c(2) = 14, c(1) = 1, c(0) = 0, d(n) = 4*b(n-1)+2*c(n-1)+2*e(n-1)+2, d(5) = 149232, d(4) = 554, d(3) = 34, d(2) = 8, d(1) = 6, d(0) = 0, e(n) = 2*b(n-1), e(5) = 18, e(4) = 4, e(3) = 2, e(2) = 0, e(1) = 2, e(0) = 0, f(n) = e(n-1), f(5) = 4, f(4) = 2, f(3) = 0, f(2) = 2, f(1) = 0, f(0) = 0
 
 mov $1,1
 lpb $0

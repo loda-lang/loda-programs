@@ -1,7 +1,7 @@
 ; A115992: Number of non-attacking queens that can be placed on a "hyper-chessboard" = hypercube of size 3, dimension n. That is, the size of the largest subset S of {0,1,2}^n such that for each pair (x0,y0,...), (x1,y1,...) of distinct elements of S, the absolute differences vector (|x1-x0|, |y1-y0|, ...) has at least two distinct non-null coordinates.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,4,6,11,19,32,52
-; Formula: a(n) = (b(n+1)-2)/12+1, b(n) = 2*((55*n)/34)+b(n-1)+b(n-2), b(2) = 8, b(1) = 2, b(0) = 0
+; Formula: a(n) = truncate((b(n+1)-2)/12)+1, b(n) = 2*truncate((55*n)/34)+b(n-1)+b(n-2), b(2) = 8, b(1) = 2, b(0) = 0
 
 mov $1,2
 mov $3,1

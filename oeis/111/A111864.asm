@@ -1,7 +1,7 @@
 ; A111864: Define the first three terms to be 1, 1 and 1. All the other terms are obtained by concatenating the three previous terms.
 ; Submitted by Yankton
 ; 1,1,1,111,11111,111111111,11111111111111111,1111111111111111111111111111111,111111111111111111111111111111111111111111111111111111111
-; Formula: a(n) = 110*(b(n)/198)+1, b(n) = max(25*b(n-3)*b(n-2)*b(n-1),2), b(2) = 2, b(1) = 2, b(0) = 2
+; Formula: a(n) = 110*truncate(b(n)/198)+1, b(n) = max(25*b(n-3)*b(n-2)*b(n-1),2), b(2) = 2, b(1) = 2, b(0) = 2
 
 mov $2,2
 lpb $0

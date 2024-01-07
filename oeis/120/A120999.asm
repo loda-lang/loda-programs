@@ -1,7 +1,7 @@
 ; A120999: Denominators of partial sums of Catalan numbers scaled by powers of 1/7^2 = 1/49.
 ; Submitted by Simon Strandgaard
 ; 1,49,2401,117649,823543,40353607,13841287201,678223072849,33232930569601,1628413597910449,79792266297612001,558545864083284007,27368747340080916343,9387480337647754305649,459986536544739960976801
-; Formula: a(n) = (49^n)/gcd(49^n,binomial(n+3,2))
+; Formula: a(n) = truncate((49^n)/gcd(49^n,binomial(n+3,2)))
 
 mov $2,$0
 add $2,3
