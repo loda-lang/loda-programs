@@ -1,7 +1,7 @@
 ; A242211: a(1) = 4, a(n) = A222208(a(n-1)).
 ; Submitted by Daniele Casale
 ; 4,6,12,36,144,1296,20736,1679616,429981696
-; Formula: a(n) = (a(n-2)*(a(n-2)+gcd(a(n-1),a(n-2))))/2, a(1) = 6, a(0) = 4
+; Formula: a(n) = truncate((a(n-2)*(a(n-2)+gcd(a(n-1),a(n-2))))/2), a(1) = 6, a(0) = 4
 
 mov $1,4
 mov $2,3

@@ -1,7 +1,7 @@
 ; A243129: a(n) = sigma(d(d(d(n)))), where d(n) is the number of divisors of n.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,4,3,4,3,3,3,4,3,3,3,4,3,4,3,4,3,3,3,3,3,3,3,4,3,4,3,4,4,3,3,4,3,4,3,4,3,4,3,4,3,3,3,7,3,3,4,3,3,4,3,4,3,4,3,7,3,3,4,4,3,4,3,4
-; Formula: a(n) = 2*A032741(A000005(A000005(n)-1))-(4%(A032741(A000005(A000005(n)-1))+1))+1
+; Formula: a(n) = truncate(4/(A032741(A000005(A000005(n)-1))+1))*(A032741(A000005(A000005(n)-1))+1)+2*A032741(A000005(A000005(n)-1))-3
 
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1

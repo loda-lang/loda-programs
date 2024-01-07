@@ -1,7 +1,7 @@
 ; A247334: Highly abundant numbers which are not abundant.
 ; Submitted by Mumps
 ; 1,2,3,4,6,8,10,16
-; Formula: a(n) = max((max(n-4,0)+1)^2,(n-1)/3+max(n-4,0)+n+1)
+; Formula: a(n) = max((max(n-4,0)+1)^2,max(n-4,0)+truncate((n-1)/3)+n+1)
 
 mov $5,$0
 sub $0,1

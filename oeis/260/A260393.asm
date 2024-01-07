@@ -1,7 +1,7 @@
 ; A260393: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1) and midword sequence (a(n)); see Comments.
 ; Submitted by owensse
 ; 0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
-; Formula: a(n) = gcd((A041896(n)*A001511(n))%2,8)/7
+; Formula: a(n) = truncate(gcd(A041896(n)*A001511(n)-2*truncate((A041896(n)*A001511(n))/2),8)/7)
 
 mov $1,$0
 seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.

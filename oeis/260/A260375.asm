@@ -1,7 +1,7 @@
 ; A260375: Numbers k such that A260374(k) is a perfect square.
 ; Submitted by Simon Strandgaard
 ; 0,1,2,4,5,6,7,8,10,11,14,15,16
-; Formula: a(n) = ((21*n-3)/5-((4*(n%10)-8)/7))/3
+; Formula: a(n) = truncate((-truncate((4*(n%10)-8)/7)+truncate((21*n-3)/5))/3)
 
 mov $1,$0
 mul $1,7

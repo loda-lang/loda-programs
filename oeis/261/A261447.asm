@@ -1,7 +1,7 @@
 ; A261447: The number of distinct prime factors of the number of proper divisors of n.
 ; Submitted by p3d-cluster
 ; 0,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,2,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1,1
-; Formula: a(n) = A365335(n+1)%((n+2)/A020639(n+1))
+; Formula: a(n) = -truncate(A365335(n+1)/truncate((n+2)/A020639(n+1)))*truncate((n+2)/A020639(n+1))+A365335(n+1)
 
 add $0,1
 mov $1,$0

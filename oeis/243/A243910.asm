@@ -1,7 +1,7 @@
 ; A243910: Least number k>0 such that 3^k contains exactly n different digits.
 ; Submitted by aendgraend
 ; 1,3,5,7,9,13,15,24,30,39
-; Formula: a(n) = b(n)+1, b(n) = ((c(n-2)+1)^2+b(n-2)+7)%(c(n-1)+1)+b(n-1)+2, b(5) = 12, b(4) = 8, b(3) = 6, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = ((c(n-4)+1)^2+b(n-4)+7)%(c(n-3)+1)-c(n-1)+b(n-3)+c(n-3)+3, c(7) = 8, c(6) = 7, c(5) = 5, c(4) = 2, c(3) = 3, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = (c(n-2)+1)^2-truncate(((c(n-2)+1)^2+b(n-2)+7)/(c(n-1)+1))*(c(n-1)+1)+b(n-1)+b(n-2)+9, b(5) = 12, b(4) = 8, b(3) = 6, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = (c(n-4)+1)^2-truncate(((c(n-4)+1)^2+b(n-4)+7)/(c(n-3)+1))*(c(n-3)+1)-c(n-1)+b(n-3)+b(n-4)+c(n-3)+10, c(7) = 8, c(6) = 7, c(5) = 5, c(4) = 2, c(3) = 3, c(2) = 0, c(1) = 0, c(0) = 0
 
 lpb $0
   sub $0,1

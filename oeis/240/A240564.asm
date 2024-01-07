@@ -1,7 +1,7 @@
 ; A240564: A number (where A=1, B=2...) for every letter in the capitalized alphabet that does not have a curved line in the letter.
 ; Submitted by Dataman
 ; 1,5,6,8,9,11,12,13,14,20,22,23,24,25,26
-; Formula: a(n) = c(n)+1, b(n) = gcd(b(n-1)+d(n-1),(b(n-1)+c(n-1)+d(n-1)-4)/4), b(4) = 1, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = e(n-1)+gcd(b(n-1)+d(n-1),(b(n-1)+c(n-1)+d(n-1)-4)/4), c(4) = 8, c(3) = 7, c(2) = 5, c(1) = 4, c(0) = 0, d(n) = 2*d(n-1)-3*d(n-2)+e(n-1)-1, d(5) = -22, d(4) = 5, d(3) = 13, d(2) = 9, d(1) = 3, d(0) = 0, e(n) = e(n-1)+gcd(b(n-1)+d(n-1),(b(n-1)+c(n-1)+d(n-1)-4)/4), e(4) = 8, e(3) = 7, e(2) = 5, e(1) = 4, e(0) = 3
+; Formula: a(n) = c(n)+1, b(n) = gcd(b(n-1)+d(n-1),truncate((b(n-1)+c(n-1)+d(n-1)-4)/4)), b(4) = 1, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 0, c(n) = e(n-1)+gcd(b(n-1)+d(n-1),truncate((b(n-1)+c(n-1)+d(n-1)-4)/4)), c(4) = 8, c(3) = 7, c(2) = 5, c(1) = 4, c(0) = 0, d(n) = 2*d(n-1)-3*d(n-2)+e(n-1)-1, d(5) = -22, d(4) = 5, d(3) = 13, d(2) = 9, d(1) = 3, d(0) = 0, e(n) = e(n-1)+gcd(b(n-1)+d(n-1),truncate((b(n-1)+c(n-1)+d(n-1)-4)/4)), e(4) = 8, e(3) = 7, e(2) = 5, e(1) = 4, e(0) = 3
 
 mov $5,3
 lpb $0

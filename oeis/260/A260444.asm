@@ -1,7 +1,7 @@
 ; A260444: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (1,0,0) and midword sequence (a(n)); see A260390.
 ; Submitted by PDW
 ; 1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0
-; Formula: a(n) = (A260394(n)+1)%2
+; Formula: a(n) = -2*truncate((A260394(n)+1)/2)+A260394(n)+1
 
 seq $0,260394 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1,1) and midword sequence (a(n)); see Comments.
 add $0,1

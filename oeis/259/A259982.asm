@@ -1,7 +1,7 @@
 ; A259982: Decimal expansion of 1/2^20.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,9,5,3,6,7,4,3,1,6,4,0,6,2,5
-; Formula: a(n) = ((5*10^n)/524288)%10
+; Formula: a(n) = -10*truncate(floor((5*10^n)/524288)/10)+floor((5*10^n)/524288)
 
 mov $1,10
 pow $1,$0

@@ -1,7 +1,7 @@
 ; A240025: Characteristic function of quarter squares, cf. A002620.
 ; Submitted by Science United
 ; 1,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-; Formula: a(n) = (b(n)+1)%2, b(n) = b(n-1)/2+c(n-1), b(1) = 4, b(0) = 0, c(n) = gcd(b(n-1)/2,2)*c(n-1), c(1) = 8, c(0) = 4
+; Formula: a(n) = -2*truncate((b(n)+1)/2)+b(n)+1, b(n) = c(n-1)+truncate(b(n-1)/2), b(1) = 4, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(1) = 8, c(0) = 4
 
 mov $2,4
 lpb $0

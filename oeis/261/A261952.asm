@@ -1,7 +1,7 @@
 ; A261952: Start with a single equilateral triangle for n=0; for the odd n-th generation add a triangle at each expandable vertex of the triangles of the (n-1)-th generation (this is the "vertex to vertex" version); for the even n-th generation use the "side to side" version; a(n) is the number of triangles added in the n-th generation.
 ; Submitted by vonboedefeldt
 ; 1,3,9,18,18,24,27,33,36,42,45,51,54,60,63,69,72,78,81,87,90,96,99,105,108,114,117,123,126,132,135,141,144,150,153,159,162,168,171,177,180,186,189,195,198,204,207,213,216,222
-; Formula: a(n) = e(2*n)+1, b(n) = (3*b(n-2)+c(n-2)+6)/(d(n-2)+2), b(7) = 0, b(6) = 0, b(5) = 1, b(4) = 1, b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = d(n-2), c(7) = 15, c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 3*b(n-2)+c(n-2)+6, d(7) = 15, d(6) = 15, d(5) = 15, d(4) = 15, d(3) = 6, d(2) = 6, d(1) = 0, d(0) = 0, e(n) = d(n-2)+2, e(7) = 17, e(6) = 17, e(5) = 8, e(4) = 8, e(3) = 2, e(2) = 2, e(1) = 0, e(0) = 0
+; Formula: a(n) = e(2*n)+1, b(n) = truncate((3*b(n-2)+c(n-2)+6)/(d(n-2)+2)), b(7) = 0, b(6) = 0, b(5) = 1, b(4) = 1, b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = d(n-2), c(7) = 15, c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 3*b(n-2)+c(n-2)+6, d(7) = 15, d(6) = 15, d(5) = 15, d(4) = 15, d(3) = 6, d(2) = 6, d(1) = 0, d(0) = 0, e(n) = d(n-2)+2, e(7) = 17, e(6) = 17, e(5) = 8, e(4) = 8, e(3) = 2, e(2) = 2, e(1) = 0, e(0) = 0
 
 mul $0,2
 lpb $0
