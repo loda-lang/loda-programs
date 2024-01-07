@@ -1,7 +1,7 @@
 ; A018356: Divisors of 250.
 ; Submitted by kpmonaghan
 ; 1,2,5,10,25,50,125,250
-; Formula: a(n) = gcd(n-1,2)*5^(n/2)
+; Formula: a(n) = truncate(5^floor(n/2))*gcd(n-1,2)
 
 mov $1,$0
 div $1,2

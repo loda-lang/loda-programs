@@ -1,7 +1,7 @@
 ; A019532: Numbers k such that Fibonacci(k) divides k!.
 ; Submitted by UBT - Mikeejones
 ; 1,2,3,4,5,6,8,12,24
-; Formula: a(n) = binomial(n+2,7)/8+n+1
+; Formula: a(n) = floor(binomial(n+2,7)/8)+n+1
 
 mov $1,$0
 add $0,2

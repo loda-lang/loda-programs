@@ -1,7 +1,7 @@
 ; A018421: Divisors of 375.
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,5,15,25,75,125,375
-; Formula: a(n) = (2*(4*(n%2)+1)*5^(n/2)+2*5^(n/2))/4
+; Formula: a(n) = truncate((2*truncate(5^floor(n/2))*(4*(n%2)+1)+2*truncate(5^floor(n/2)))/4)
 
 mov $1,$0
 div $1,2

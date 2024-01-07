@@ -1,7 +1,7 @@
 ; A018374: Divisors of 285.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,3,5,15,19,57,95,285
-; Formula: a(n) = A263245(n/2)*A168604(n%2)
+; Formula: a(n) = A263245(floor(n/2))*A168604(n%2)
 
 mov $1,$0
 div $0,2

@@ -1,7 +1,7 @@
 ; A018481: Divisors of 486.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,6,9,18,27,54,81,162,243,486
-; Formula: a(n) = 3^(n/2)+3^(n/2)*(n%2)
+; Formula: a(n) = truncate(3^floor(n/2))*(n%2)+truncate(3^floor(n/2))
 
 mov $1,$0
 div $1,2

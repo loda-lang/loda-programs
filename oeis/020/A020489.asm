@@ -1,7 +1,7 @@
 ; A020489: phi(n) divides sigma_0(n).
 ; Submitted by Dingo
 ; 1,2,3,6,8,10,18,24,30
-; Formula: a(n) = min(n,n%3)*c(n)+b(n)+1, b(n) = 3*max(b(n-3),1)+2*((c(n-3)+1)/2), b(5) = 5, b(4) = 5, b(3) = 5, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = (c(n-3)+1)/2+max(b(n-3),1), c(5) = 2, c(4) = 2, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 1
+; Formula: a(n) = min(n,n%3)*c(n)+b(n)+1, b(n) = 3*max(b(n-3),1)+2*truncate((c(n-3)+1)/2), b(5) = 5, b(4) = 5, b(3) = 5, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = max(b(n-3),1)+truncate((c(n-3)+1)/2), c(5) = 2, c(4) = 2, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 1
 
 mov $2,1
 lpb $0

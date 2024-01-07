@@ -1,7 +1,7 @@
 ; A014031: Inverse of 22nd cyclotomic polynomial.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,-1,-1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,-1,-1,0
-; Formula: a(n) = binomial(-1,n)/(-2*(n%11)+1)
+; Formula: a(n) = truncate(binomial(-1,n)/(-2*(n%11)+1))
 
 mov $1,$0
 mov $0,-1

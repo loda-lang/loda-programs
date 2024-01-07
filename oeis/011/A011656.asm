@@ -1,7 +1,7 @@
 ; A011656: A binary m-sequence: expansion of reciprocal of x^3 + x^2 + 1 (mod 2), shifted by 2 initial 0's.
 ; Submitted by ladmo
 ; 0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,1,0,0,1
-; Formula: a(n) = (((n+1)^3)%7+1)%2
+; Formula: a(n) = (n+1)^3-2*truncate(((n+1)^3-7*truncate(((n+1)^3)/7)+1)/2)-7*truncate(((n+1)^3)/7)+1
 
 add $0,1
 pow $0,3

@@ -1,7 +1,7 @@
 ; A011954: Barlow packings with group R3(bar)m(SO) that repeat after 6n+3 layers.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,4,11,20,42,84
-; Formula: a(n) = c(n)/2+1, b(n) = (2*b(n-2)-1)%10+2*b(n-1), b(5) = 35, b(4) = 13, b(3) = 5, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = (2*b(n-1)-1)%10+b(n-1)+c(n-1), c(4) = 21, c(3) = 7, c(2) = 2, c(1) = 0, c(0) = 0
+; Formula: a(n) = truncate(c(n)/2)+1, b(n) = 2*b(n-1)+2*b(n-2)-10*truncate((2*b(n-2)-1)/10)-1, b(5) = 35, b(4) = 13, b(3) = 5, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = 3*b(n-1)-10*truncate((2*b(n-1)-1)/10)+c(n-1)-1, c(4) = 21, c(3) = 7, c(2) = 2, c(1) = 0, c(0) = 0
 
 lpb $0
   sub $0,1

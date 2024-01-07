@@ -1,7 +1,7 @@
 ; A011671: A binary m-sequence: expansion of reciprocal of x^6+x^5+x^4+x^2+1.
 ; Submitted by Science United
 ; 0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0
-; Formula: a(n) = ((-n*((4*((108*n+43)/28))/3)+6*n-1)%3+3)%2
+; Formula: a(n) = -n*truncate((4*floor((108*n+43)/28))/3)+6*n-2*truncate((-n*truncate((4*floor((108*n+43)/28))/3)+6*n-3*truncate((-n*truncate((4*floor((108*n+43)/28))/3)+6*n-1)/3)+2)/2)-3*truncate((-n*truncate((4*floor((108*n+43)/28))/3)+6*n-1)/3)+2
 
 mov $1,$0
 mul $1,108

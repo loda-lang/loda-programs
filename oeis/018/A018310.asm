@@ -1,7 +1,7 @@
 ; A018310: Divisors of 160.
 ; Submitted by respawner
 ; 1,2,4,5,8,10,16,20,32,40,80,160
-; Formula: a(n) = A094958((4*(A080194(n)/7)-((4*(A080194(n)/7)-2)/2)-3)/2)
+; Formula: a(n) = A094958(truncate((4*truncate(A080194(n)/7)-truncate((4*truncate(A080194(n)/7)-2)/2)-3)/2))
 
 seq $0,80194 ; 7-smooth numbers which are not 5-smooth.
 div $0,7
