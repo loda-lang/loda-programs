@@ -1,7 +1,7 @@
 ; A023393: Maximal number of circles of radius 1 that can be packed in a circle of radius n.
 ; Submitted by PDW
 ; 0,1,2,7,11,19,27,38,50,64,80,98,118
-; Formula: a(n) = a(n-2)+a(n-3)+b(n-2)+binomial(a(n-1),b(n-1))+binomial(a(n-2),b(n-2))+2*n+1, a(5) = 19, a(4) = 11, a(3) = 7, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = (-a(n-1)+b(n-1))/2, b(4) = -4, b(3) = -1, b(2) = -1, b(1) = -1, b(0) = -2
+; Formula: a(n) = a(n-2)+a(n-3)+b(n-2)+binomial(a(n-1),b(n-1))+binomial(a(n-2),b(n-2))+2*n+1, a(5) = 19, a(4) = 11, a(3) = 7, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = truncate((-a(n-1)+b(n-1))/2), b(4) = -4, b(3) = -1, b(2) = -1, b(1) = -1, b(0) = -2
 
 mov $2,-2
 lpb $0

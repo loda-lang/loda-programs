@@ -1,7 +1,7 @@
 ; A023976: First bit in fractional part of binary expansion of 9th root of n.
 ; Submitted by Athlici
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (0^((n-2)/36)+1)%2
+; Formula: a(n) = -2*truncate((truncate(0^truncate((n-2)/36))+1)/2)+truncate(0^truncate((n-2)/36))+1
 
 sub $0,2
 div $0,36

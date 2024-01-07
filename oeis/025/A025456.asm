@@ -1,7 +1,7 @@
 ; A025456: Number of partitions of n into 3 positive cubes.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
-; Formula: a(n) = ((A067626(n)/gcd(A051344(n),A067626(n))-120)/120)%2
+; Formula: a(n) = -2*truncate(truncate((truncate(A067626(n)/gcd(A051344(n),A067626(n)))-120)/120)/2)+truncate((truncate(A067626(n)/gcd(A051344(n),A067626(n)))-120)/120)
 
 mov $1,$0
 seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
