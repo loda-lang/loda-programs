@@ -1,7 +1,7 @@
 ; A088151: Value of n-th digit in ternary representation of n^n.
 ; Submitted by Christian Krause
 ; 1,0,0,1,0,0,1,1,1,0,0,0,1,2,1,2,2,0,0,1,1,1,0,2,1,1,0,0,1,0,1,1,1,2,0,2,0,2,1,1,1,0,1,0,1,0,0,0,1,2,2,2,1,1,0,1,2,1,1,1,1,1,1,0,0,1,1,0,2,2,1,0,0,0,0,1,1,2,1,2
-; Formula: a(n) = ((n^n)/(3^n))%3
+; Formula: a(n) = -3*truncate(floor((n^n)/(3^n))/3)+floor((n^n)/(3^n))
 
 mov $1,3
 pow $1,$0

@@ -1,7 +1,7 @@
 ; A092713: Disk degeneracies for brane III in the O(K)->P^1 x P^1 geometry.
 ; Submitted by Stony666
 ; 0,0,0,0,0,-28,-336,-2156
-; Formula: a(n) = 28*((-binomial(n,n-4)*binomial(n+1,n-4)+binomial(n,n-4))/25)
+; Formula: a(n) = 28*truncate((-binomial(n,n-4)*binomial(n+1,n-4)+binomial(n,n-4))/25)
 
 mov $1,$0
 add $1,1

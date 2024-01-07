@@ -1,7 +1,7 @@
 ; A086360: Fixed point if (decimal-digit-sum)-function at initial value = n-th primorial = A002110(n) is iterated.
 ; Submitted by Landjunge
 ; 2,6,3,3,6,6,3,3,6,3,3,3,6,6,3,6,3,3,3,6,6,6,3,6,6,3,3,6,6,3,3,6,3,3,6,6,6,6,3,6,3,3,6,6,3,3,3,3,6,6,3,6,6,3,6,3,6,6,6,3,3,6,6,3,3,6,6,6,3,3,6,3,3,3,3,6,3,3,6,6
-; Formula: a(n) = A066332(A000040(n))%9
+; Formula: a(n) = -9*truncate(A066332(A000040(n))/9)+A066332(A000040(n))
 
 seq $0,40 ; The prime numbers.
 mov $1,$0

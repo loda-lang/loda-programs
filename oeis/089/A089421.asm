@@ -1,7 +1,7 @@
 ; A089421: Number of cycles in range [A014137(n-1)..A014138(n-1)] of permutation A082335/A082336.
 ; Submitted by Ralfy
 ; 1,1,1,2,3,9,22,71,217,729,2438,8440,29414,104138,371516,1337649,4847637,17680265,64823110,238824212,883634026
-; Formula: a(n) = (binomial(2*max(n-1,0),max(n-1,0))/(max(n-1,0)+1)+A293838((max(n-1,0)+1)%2)*(binomial(2*(max(n-1,0)/2),max(n-1,0)/2)/(max(n-1,0)/2+1)))/2
+; Formula: a(n) = truncate((A293838((max(n-1,0)+1)%2)*truncate(binomial(2*floor(max(n-1,0)/2),floor(max(n-1,0)/2))/(floor(max(n-1,0)/2)+1))+floor(binomial(2*max(n-1,0),max(n-1,0))/(max(n-1,0)+1)))/2)
 
 mov $1,$0
 trn $1,1

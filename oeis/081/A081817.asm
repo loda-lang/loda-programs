@@ -1,7 +1,7 @@
 ; A081817: Electron mass energy equivalent in MeV.
 ; Submitted by Science United
 ; 5,1,0,9,9,8,9,0,2
-; Formula: a(n) = (0^n+(24*gcd(n+6,2))/3-((binomial(n+6,2)+gcd(n+6,2))/2)-2*gcd(n+6,2)+binomial(n+6,2)-15)%10
+; Formula: a(n) = 0^n-truncate((binomial(n+6,2)+gcd(n+6,2))/2)-2*gcd(n+6,2)-10*truncate((0^n-truncate((binomial(n+6,2)+gcd(n+6,2))/2)-2*gcd(n+6,2)+binomial(n+6,2)+truncate((24*gcd(n+6,2))/3)-15)/10)+binomial(n+6,2)+truncate((24*gcd(n+6,2))/3)-15
 
 pow $1,$0
 sub $1,2

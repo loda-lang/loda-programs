@@ -1,7 +1,7 @@
 ; A088166: Smallest integer divisible by Fibonacci(2n) such that the second partial quotient in the continued fraction expansion of a(n)/phi is 2 (phi is the golden ratio), n >= 2.
 ; Submitted by fzs600
 ; 12,72,504,3410,23184,159094,1089648,7465176,51170460,350713222,2403763488,16475700746,112925875764,774004377960,5305106018016,36361732975514,249227005939632,1708227330997438,11708364225400920
-; Formula: a(n) = b(n+2)*((c(n+2)+3)/2), b(n) = (b(n-1)+c(n-1))/2+b(n-1)+1, b(1) = 1, b(0) = 0, c(n) = (b(n-1)+c(n-1))/2+2*b(n-1)+c(n-1)+1, c(1) = 1, c(0) = 0
+; Formula: a(n) = truncate((c(n+2)+3)/2)*b(n+2), b(n) = b(n-1)+truncate((b(n-1)+c(n-1))/2)+1, b(1) = 1, b(0) = 0, c(n) = 2*b(n-1)+c(n-1)+truncate((b(n-1)+c(n-1))/2)+1, c(1) = 1, c(0) = 0
 
 add $0,2
 lpb $0

@@ -1,6 +1,6 @@
 ; A091336: Number of prime divisors of A000058(n)-1 = A000058(0)*...*A000058(n-1).
 ; 0,1,2,3,4,6,7,11,15,18,23,27
-; Formula: a(n) = (max(binomial(-n+18,(n-3)/2)-2,0)+1)%10+a(n-1), a(0) = 0
+; Formula: a(n) = (max(binomial(-n+18,truncate((n-3)/2))-2,0)+1)%10+a(n-1), a(0) = 0
 
 lpb $0
   mov $2,$0

@@ -1,7 +1,7 @@
 ; A086359: Fixed point if [decimal-digit-sum]-function at initial-value=A000984(n)=C[2n,n] is iterated.
 ; Submitted by Bill F
 ; 2,6,2,7,9,6,3,9,2,4,3,7,2,9,9,9,9,6,3,9,3,6,9,9,9,9,2,4,3,4,5,9,3,6,9,7,5,6,2,7,9,9,9,9,9,9,9,9,9,9,9,9,9,6,3,9,3,6,9,9,9,9,3,6,9,6,3,9,9,9,9,9,9,9,9,9,9,9,9,9
-; Formula: a(n) = (binomial(2*n+2,n+1)-1)%9+1
+; Formula: a(n) = -9*truncate((binomial(2*n+2,n+1)-1)/9)+binomial(2*n+2,n+1)
 
 add $0,1
 mov $1,$0

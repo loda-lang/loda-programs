@@ -1,7 +1,7 @@
 ; A087504: Composition length of the n-th symmetric power of the natural representation of a finite subgroup of SL(2,C) of type E_7 (binary octahedral group).
 ; Submitted by Kotenok2000
 ; 1,1,1,1,2,2,3,3,4,3,4,4,6,5,6,5,7,6,8,7,9,7,9,8,11,9,11,9,12,10,13,11,14,11,14,12,16,13,16,13,17,14,18,15,19,15,19,16,21,17,21,17,22,18,23,19,24,19,24,20,26,21,26,21,27,22,28,23,29,23,29,24,31,25,31,25,32,26,33,27
-; Formula: a(n) = b(n)+1, b(n) = b(n-4)+gcd(n/3,2), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = b(n-4)+gcd(floor(n/3),2), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0
 
 lpb $0
   mov $2,$0

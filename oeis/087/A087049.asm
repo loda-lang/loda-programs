@@ -1,7 +1,7 @@
 ; A087049: Characteristic sequence for numbers n>=0 that are either squares or have a square > 1 as factor.
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0
-; Formula: a(n) = (max(2*A046660(max(n-1,0)),1)-1)%2+binomial(1,n)
+; Formula: a(n) = -2*truncate((max(2*A046660(max(n-1,0)),1)-1)/2)+binomial(1,n)+max(2*A046660(max(n-1,0)),1)-1
 
 mov $1,$0
 trn $0,1

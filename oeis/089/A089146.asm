@@ -1,7 +1,7 @@
 ; A089146: Greatest common divisor of n^2 - 4 and n^2 + 4.
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1,4,1,8,1
-; Formula: a(n) = (gcd(n,4)^3)%10
+; Formula: a(n) = gcd(n,4)^3-10*truncate((gcd(n,4)^3)/10)
 
 gcd $0,4
 pow $0,3

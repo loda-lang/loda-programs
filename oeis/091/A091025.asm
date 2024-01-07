@@ -1,7 +1,7 @@
 ; A091025: Smallest positive k such that phi(1+k*2^m) <= phi(k*2^m) for all m = n (mod 12), where phi is Euler's totient function.
 ; Submitted by [SG]KidDoesCrunch
 ; 104,52,26,13,59,82,41,73,89,97,101,103
-; Formula: a(n) = -(b(n+1)%c(n+1))+c(n+1), b(n) = b(n-1)*(105/2)+b(n-1), b(1) = 1, b(0) = 1, c(n) = 105, c(1) = 105, c(0) = 0
+; Formula: a(n) = truncate(b(n+1)/c(n+1))*c(n+1)-b(n+1)+c(n+1), b(n) = truncate(105/2)*b(n-1)+b(n-1), b(1) = 1, b(0) = 1, c(n) = 105, c(1) = 105, c(0) = 0
 
 mov $1,1
 add $0,1

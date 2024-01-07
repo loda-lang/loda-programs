@@ -1,7 +1,7 @@
 ; A092253: Nearest neighbor transform with respect to Cayley metric on Sym_n is one-to-one just for these values.
 ; Submitted by Cruncher Pete
 ; 1,3,4,5,6,8,10,12
-; Formula: a(n) = ((n+3)*(min(n,1)+n+3))/10+1
+; Formula: a(n) = truncate(((n+3)*(min(n,1)+n+3))/10)+1
 
 mov $1,$0
 add $1,3
