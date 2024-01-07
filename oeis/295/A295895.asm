@@ -1,7 +1,7 @@
 ; A295895: Parity of the binary weight of the contents of node n in Doudna-tree (A005940).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,1,0,1,0,0,0,1,1,0,0,0,1,0,0,1,1,1,1,0,1,0,0,0,1,1,0,0,0,0,1,1,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,1,1,0,1,0,1,0,1,0,0,0,1,1,1,0,1,0,0,0,0
-; Formula: a(n) = A000120(A122111(A217434(A057335(n)-1)-1))%2
+; Formula: a(n) = -2*truncate(A000120(A122111(A217434(A057335(n)-1)-1))/2)+A000120(A122111(A217434(A057335(n)-1)-1))
 
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
 sub $0,1

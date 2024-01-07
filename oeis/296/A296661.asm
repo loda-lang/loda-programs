@@ -1,7 +1,7 @@
 ; A296661: a(n) = (exp(k)*Gamma(1+n, k) - exp(-k)*Gamma(1+n, -k))/k! for k = 3.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,2,15,60,381,2286,16731,133848,1211193,12111930,133290279,1599483348,20793814965,291113409510,4366705925619,69867294809904,1187744054815089,21379392986671602,406208467134180927,8124169342683618540
-; Formula: a(n) = c(n)/3, b(n) = binomial(gcd(b(n-1),n),n), b(2) = 0, b(1) = 1, b(0) = 0, c(n) = binomial(gcd(b(n-1),n),n)*3^n+n*c(n-1), c(2) = 6, c(1) = 3, c(0) = 0
+; Formula: a(n) = truncate(c(n)/3), b(n) = binomial(gcd(b(n-1),n),n), b(2) = 0, b(1) = 1, b(0) = 0, c(n) = truncate(3^n)*binomial(gcd(b(n-1),n),n)+n*c(n-1), c(2) = 6, c(1) = 3, c(0) = 0
 
 mov $1,1
 lpb $0

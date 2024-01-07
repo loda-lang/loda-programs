@@ -1,7 +1,7 @@
 ; A283495: Smallest k such that there is a number whose divisors sum to k*n.
 ; Submitted by sjmielh
 ; 1,2,1,1,3,1,1,1,2,2,4,1,1,2,1,2,4,1,2,1,2,2,6,1,6,3,2,1,6,2,1,1,4,2,4,1,2,1,1,1,4,1,6,1,2,3,6,1,2,3,2,2,4,1,2,1,1,3,6,1,3,2,1,2,3,2,6,1,2,2,4,1,7,1,2,2,4,1,2,1
-; Formula: a(n) = A000203(A070982(n)-1)/gcd(0,n+1)
+; Formula: a(n) = truncate(A000203(A070982(n)-1)/gcd(0,n+1))
 
 mov $2,$0
 add $2,1

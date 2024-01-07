@@ -1,7 +1,7 @@
 ; A290226: Numbers n such that A290223(n) = 2.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,23,62,77,119,194,287,398
-; Formula: a(n) = 6*((10*n+13)/11)^2+3*((10*n+3)/11)^2-4
+; Formula: a(n) = 6*floor((10*n+13)/11)^2+3*floor((10*n+3)/11)^2-4
 
 mul $0,10
 add $0,9

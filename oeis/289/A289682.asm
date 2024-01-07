@@ -1,7 +1,7 @@
 ; A289682: Catalan numbers read modulo 16.
 ; Submitted by 4TX75586Qp61ADs93WEnnQM2vLs4
 ; 1,1,2,5,14,10,4,13,6,14,12,2,12,4,8,13,6,6,12,6,4,12,8,2,12,12,8,4,8,8,0,13,6,6,12,14,4,12,8,6,4,4,8,12,8,8,0,2,12,12,8,12,8,8,0,4,8,8,0,8,0,0,0,13,6,6,12,14,4,12,8,14,4,4,8,12,8,8,0,6
-; Formula: a(n) = (binomial(2*n,n)/(n+1))%16
+; Formula: a(n) = -16*truncate(floor(binomial(2*n,n)/(n+1))/16)+floor(binomial(2*n,n)/(n+1))
 
 mov $1,$0
 mul $0,2

@@ -1,7 +1,7 @@
 ; A297037: Number of pieces in the list d(m), d(m-1), ..., d(0) of base-9 digits of n; see Comments.
 ; Submitted by http://amez.petrsu.ru/
 ; 0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = (c(3*n)/gcd(c(3*n)*b(3*n),b(3*n))+2)%2, b(n) = -3*n*b(n-1), b(2) = 54, b(1) = -9, b(0) = 3, c(n) = -3*n*(c(n-1)+1)+b(n-1), c(2) = -15, c(1) = 0, c(0) = 0
+; Formula: a(n) = -2*truncate((truncate(c(3*n)/gcd(c(3*n)*b(3*n),b(3*n)))+2)/2)+truncate(c(3*n)/gcd(c(3*n)*b(3*n),b(3*n)))+2, b(n) = -3*n*b(n-1), b(2) = 54, b(1) = -9, b(0) = 3, c(n) = -3*n*(c(n-1)+1)+b(n-1), c(2) = -15, c(1) = 0, c(0) = 0
 
 mov $1,3
 mul $0,3

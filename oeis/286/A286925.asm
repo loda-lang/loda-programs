@@ -1,7 +1,7 @@
 ; A286925: {0->01,1->00}-transform of the Sturmian word A080764.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1
-; Formula: a(n) = (((2*((n*(n%(-2)))/2)+2*A003151((n*(n%(-2)))/2+1)+4)/4-3*(A286927((n*(n%(-2)))/2)/4)-2)%2+2)%2
+; Formula: a(n) = -2*truncate((-2*truncate((-3*truncate(A286927(truncate((n*(2*truncate(n/(-2))+n))/2))/4)+truncate((2*truncate((n*(2*truncate(n/(-2))+n))/2)+2*A003151(truncate((n*(2*truncate(n/(-2))+n))/2)+1)+4)/4)-2)/2)-3*truncate(A286927(truncate((n*(2*truncate(n/(-2))+n))/2))/4)+truncate((2*truncate((n*(2*truncate(n/(-2))+n))/2)+2*A003151(truncate((n*(2*truncate(n/(-2))+n))/2)+1)+4)/4))/2)-2*truncate((-3*truncate(A286927(truncate((n*(2*truncate(n/(-2))+n))/2))/4)+truncate((2*truncate((n*(2*truncate(n/(-2))+n))/2)+2*A003151(truncate((n*(2*truncate(n/(-2))+n))/2)+1)+4)/4)-2)/2)-3*truncate(A286927(truncate((n*(2*truncate(n/(-2))+n))/2))/4)+truncate((2*truncate((n*(2*truncate(n/(-2))+n))/2)+2*A003151(truncate((n*(2*truncate(n/(-2))+n))/2)+1)+4)/4)
 
 mov $1,$0
 mod $1,-2

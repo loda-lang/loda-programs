@@ -1,7 +1,7 @@
 ; A295800: Numbers that have exactly three representations as a sum of seven positive squares.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 31,34,39,43,47,51,56,59,68
-; Formula: a(n) = (7*n)/2+2*((2*n)/3)-(((2*n)/3-1)%4)+30
+; Formula: a(n) = 4*truncate((floor((2*n)/3)-1)/4)+floor((7*n)/2)+floor((2*n)/3)+31
 
 mov $1,$0
 mul $1,2

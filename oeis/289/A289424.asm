@@ -1,7 +1,7 @@
 ; A289424: a(n) = length of longest circuit code K(n,3).
 ; Submitted by NeoGen
 ; 0,4,6,8,10,16,24,36
-; Formula: a(n) = 2*((2*n+binomial(n-1,3)+2)/2)
+; Formula: a(n) = 2*truncate((2*n+binomial(n-1,3)+2)/2)
 
 mov $2,$0
 sub $2,2
