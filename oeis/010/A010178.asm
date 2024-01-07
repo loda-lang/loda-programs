@@ -1,7 +1,7 @@
 ; A010178: Continued fraction for sqrt(113).
 ; Submitted by BlisteringSheep
 ; 10,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1,1,20,1,1,1,2,2,1,1
-; Formula: a(n) = b(n+1), b(n) = (3^(gcd((2*n-1)/3,max(-((2*n-1)/3)+2,0)+6)-3)+1)%10+6*(((3^(gcd((2*n-1)/3,max(-((2*n-1)/3)+2,0)+6)-3)+1)%10)/3), b(1) = 10, b(0) = 0
+; Formula: a(n) = b(n+1), b(n) = 6*truncate((-10*truncate((truncate(3^(gcd(truncate((2*n-1)/3),max(-truncate((2*n-1)/3)+2,0)+6)-3))+1)/10)+truncate(3^(gcd(truncate((2*n-1)/3),max(-truncate((2*n-1)/3)+2,0)+6)-3))+1)/3)-10*truncate((truncate(3^(gcd(truncate((2*n-1)/3),max(-truncate((2*n-1)/3)+2,0)+6)-3))+1)/10)+truncate(3^(gcd(truncate((2*n-1)/3),max(-truncate((2*n-1)/3)+2,0)+6)-3))+1, b(1) = 10, b(0) = 0
 
 add $0,1
 lpb $0

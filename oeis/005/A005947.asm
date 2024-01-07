@@ -1,7 +1,7 @@
 ; A005947: Tumbling distance for n-input mappings with 2 steps.
 ; Submitted by PDW
 ; 0,3,16,75,356,1770,9306,51821,305232,1897227,12411650,85234864,612903324,4604004691,36050248752,293659886235,2483993559376,21781908622738,197701336871190,1854695911048053,17960309481562600,179309794875495795
-; Formula: a(n) = -n*(2*((A000110(n)+A005493(n))/2)-2*A000110(n+2)+A138378(n))
+; Formula: a(n) = -n*(2*truncate((A000110(n)+A005493(n))/2)-2*A000110(n+2)+A138378(n))
 
 mov $4,$0
 seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.

@@ -1,7 +1,7 @@
 ; A010140: Continued fraction for sqrt(54).
 ; Submitted by Skivelitis2
 ; 7,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2,1,6,1,2,14,2
-; Formula: a(n) = (6*(((3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n+1,2))/3)+2*((3^(gcd(n,max(-n+2,0)+6)-3))%10)+2*gcd(-n+1,2))/2
+; Formula: a(n) = truncate((6*truncate((-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)+2*gcd(-n+1,2)+2*truncate(3^(gcd(n,max(-n+2,0)+6)-3))-20*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10))/2)
 
 mov $2,1
 sub $2,$0

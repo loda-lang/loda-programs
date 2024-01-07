@@ -1,6 +1,6 @@
 ; A003034: Sylvester's problem: minimal number of ordinary lines through n points in the plane.
 ; 3,3,4,3,3,4,6,5,6,6,6,7
-; Formula: a(n) = (n^(n+2)-1)%((n+2)/2)+3
+; Formula: a(n) = n^(n+2)-truncate((n^(n+2)-1)/floor((n+2)/2))*floor((n+2)/2)+2
 
 mov $1,$0
 add $1,2

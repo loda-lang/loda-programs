@@ -1,7 +1,7 @@
 ; A001647: Number of indecomposable self-dual codes of length 2n over GF(4).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,1,1,2,4,10,31
-; Formula: a(n) = (c(n-1)*(a(n-1)^2+b(n-1)))/(a(n-1)^2+b(n-1)+c(n-1)), a(2) = 1, a(1) = 0, a(0) = 1, b(n) = a(n-1)^2+b(n-1), b(2) = 2, b(1) = 2, b(0) = 1, c(n) = a(n-1)^2+b(n-1)+c(n-1), c(2) = 4, c(1) = 2, c(0) = 0
+; Formula: a(n) = truncate((c(n-1)*(a(n-1)^2+b(n-1)))/(a(n-1)^2+b(n-1)+c(n-1))), a(2) = 1, a(1) = 0, a(0) = 1, b(n) = a(n-1)^2+b(n-1), b(2) = 2, b(1) = 2, b(0) = 1, c(n) = a(n-1)^2+b(n-1)+c(n-1), c(2) = 4, c(1) = 2, c(0) = 0
 
 mov $1,1
 mov $3,1

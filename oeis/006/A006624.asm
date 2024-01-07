@@ -1,7 +1,7 @@
 ; A006624: Zarankiewicz's problem.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 9,14,20,27,33,41,49,57
-; Formula: a(n) = (16*n+2*((n^2+4)/3)-2)/3+9
+; Formula: a(n) = truncate((16*n+2*floor((n^2+4)/3)-2)/3)+9
 
 mov $1,$0
 pow $1,2

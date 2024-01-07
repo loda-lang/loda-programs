@@ -1,7 +1,7 @@
 ; A010173: Continued fraction for sqrt(107).
 ; Submitted by Simon Strandgaard
 ; 10,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2,1,9,1,2,20,2
-; Formula: a(n) = (3^(gcd(n,max(-n+2,0)+6)-3)+1)%10+6*(((3^(gcd(n,max(-n+2,0)+6)-3)+1)%10+gcd(-n+1,2)-1)/3)+gcd(-n+1,2)-1
+; Formula: a(n) = 6*truncate((-10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)-10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))
 
 mov $2,1
 sub $2,$0

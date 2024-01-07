@@ -1,7 +1,7 @@
 ; A010384: Squares mod 22.
 ; Submitted by Simon Strandgaard
 ; 0,1,3,4,5,9,11,12,14,15,16,20
-; Formula: a(n) = A007094(((n+4)/3+A182771(n)-1)/2)-1
+; Formula: a(n) = A007094(truncate((floor((n+4)/3)+A182771(n)-1)/2))-1
 
 mov $1,$0
 add $1,4

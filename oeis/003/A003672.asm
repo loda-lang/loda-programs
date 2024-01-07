@@ -1,7 +1,7 @@
 ; A003672: Decimal expansion of electron mass (mass units).
 ; Submitted by Tom Hennigan
 ; 0,0,0,5,4,8,5,7,9,9,0,9,0
-; Formula: a(n) = c(n)%10, b(n) = (n-1)%2+(42*gcd(3^(n-1)+1,262156)+24*((42*gcd(3^(n-1)+1,262156))/5)-2)/8+b(n-2)/5+42*gcd(3^(n-1)+1,262156)+24*((42*gcd(3^(n-1)+1,262156))/5)-2, b(3) = 524, b(2) = 1078, b(1) = 0, b(0) = 0, c(n) = b(n-1)/5, c(3) = 215, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = -10*truncate(c(n)/10)+c(n), b(n) = 42*gcd(truncate(3^(n-1))+1,262156)+24*truncate((42*gcd(truncate(3^(n-1))+1,262156))/5)-2*truncate((n-1)/2)+truncate((42*gcd(truncate(3^(n-1))+1,262156)+24*truncate((42*gcd(truncate(3^(n-1))+1,262156))/5)-2)/8)+truncate(b(n-2)/5)+n-3, b(3) = 524, b(2) = 1078, b(1) = 0, b(0) = 0, c(n) = truncate(b(n-1)/5), c(3) = 215, c(2) = 0, c(1) = 0, c(0) = 0
 
 lpb $0
   sub $0,1

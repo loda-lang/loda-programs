@@ -1,7 +1,7 @@
 ; A006623: Zarankiewicz's problem.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 10,15,20,25,32,37,43,51
-; Formula: a(n) = ((n+17)*((10*n+170)/3+1))/24-30
+; Formula: a(n) = truncate(((n+17)*(floor((10*n+170)/3)+1))/24)-30
 
 add $0,17
 mov $1,$0

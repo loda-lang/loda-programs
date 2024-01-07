@@ -1,7 +1,7 @@
 ; A004056: The coding-theoretic function A(n,14,12).
 ; Submitted by Orange Kid
 ; 1,1,1,1,1,1,1,2,2,3,4,4,6,8,13
-; Formula: a(n) = (3*(c(n+1)/12)+15)/4-2, b(n) = b(n-1)+c(n-1), b(3) = 5, b(2) = 4, b(1) = 3, b(0) = 2, c(n) = -c(n-2)+b(n-3)+c(n-1), c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 1
+; Formula: a(n) = truncate((3*truncate(c(n+1)/12)+15)/4)-2, b(n) = b(n-1)+c(n-1), b(3) = 5, b(2) = 4, b(1) = 3, b(0) = 2, c(n) = -c(n-2)+b(n-3)+c(n-1), c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 1
 
 mov $2,2
 mov $4,1

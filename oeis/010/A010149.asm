@@ -1,7 +1,7 @@
 ; A010149: Continued fraction for sqrt(70).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 8,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2,1,2,1,2,16,2
-; Formula: a(n) = gcd(-((3^(gcd(n,max(-n+2,0)+6)-3)+1)%10)-n,2)*((3^(gcd(n,max(-n+2,0)+6)-3)+1)%10)
+; Formula: a(n) = gcd(10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(n,max(-n+2,0)+6)-3))-n-1,2)*(-10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)
 
 mov $4,2
 trn $4,$0

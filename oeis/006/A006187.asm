@@ -1,7 +1,7 @@
 ; A006187: Number of pair-coverings with largest block size 5.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,6,10,13,15,16,16,18
-; Formula: a(n) = b(n+1)+1, b(n) = b(n-1)/2+b(n-6)/2+b(n-7)/2+8, b(9) = 22, b(8) = 17, b(7) = 15, b(6) = 15, b(5) = 14, b(4) = 12, b(3) = 9, b(2) = 5, b(1) = 0, b(0) = 0
+; Formula: a(n) = b(n+1)+1, b(n) = truncate(b(n-1)/2)+truncate(b(n-6)/2)+truncate(b(n-7)/2)+8, b(9) = 22, b(8) = 17, b(7) = 15, b(6) = 15, b(5) = 14, b(4) = 12, b(3) = 9, b(2) = 5, b(1) = 0, b(0) = 0
 
 mov $2,1
 add $0,1
