@@ -1,6 +1,6 @@
 ; A246508: Digital root of numbers congruent to {1,7,11,13,17,19,23,29} modulo 30.
 ; 1,7,2,4,8,1,5,2,4,1,5,7,2,4,8,5,7,4,8,1,5,7,2,8,1,7,2,4,8,1,5,2,4,1,5,7,2,4,8,5,7,4,8,1,5,7,2,8,1,7,2,4,8,1,5,2,4,1,5,7,2,4,8,5,7,4,8,1,5,7,2,8,1,7,2,4,8,1,5,2
-; Formula: a(n) = 2*truncate((5*truncate((6*n-4*truncate(floor((n+4)/2)/4)+floor((n+4)/2)+25)/4)+4)/4)-9*truncate((2*truncate((5*truncate((6*n-4*truncate(floor((n+4)/2)/4)+floor((n+4)/2)+25)/4)+4)/4)-15)/9)-15
+; Formula: a(n) = 2*floor((5*floor((floor((n+4)/2)%4+6*n+25)/4)+4)/4)-9*truncate((2*floor((5*floor((floor((n+4)/2)%4+6*n+25)/4)+4)/4)-15)/9)-15
 
 add $0,4
 mov $1,$0

@@ -1,7 +1,7 @@
 ; A287195: Independence and clique covering number of the n-triangular honeycomb acute knight graph.
 ; Submitted by Christian Krause
 ; 1,3,3,5,9,9,12,18,18,22,30,30,35,45,45,51,63,63,70,84,84,92,108,108,117,135,135,145,165,165,176,198,198,210,234,234,247,273,273,287,315,315,330,360,360,376,408,408,425,459,459,477,513,513,532,570,570,590,630,630,651,693,693,715,759,759,782,828,828,852,900,900,925,975,975,1001,1053,1053,1080,1134
-; Formula: a(n) = truncate((truncate((floor((2*n+1)/3)+1)/2)^2+binomial(-floor((2*n+1)/3)-2,2)-1)/2)
+; Formula: a(n) = truncate((floor((floor((2*n+1)/3)+1)/2)^2+binomial(-floor((2*n+1)/3)-2,2)-1)/2)
 
 mul $0,2
 add $0,1

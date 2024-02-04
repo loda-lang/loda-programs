@@ -1,7 +1,7 @@
 ; A340675: Exponential of Mangoldt function conjugated by Tek's flip: a(n) = A225546(A014963(A225546(n))).
 ; Submitted by Landjunge
 ; 1,2,2,4,2,2,2,1,4,2,2,1,2,2,2,16,2,1,2,1,2,2,2,1,4,2,1,1,2,2,2,1,2,2,2,4,2,2,2,1,2,2,2,1,1,2,2,1,4,1,2,1,2,1,2,1,2,2,2,1,2,2,1,1,2,2,2,1,2,2,2,1,2,2,1,1,2,2,2,1
-; Formula: a(n) = truncate(truncate(2^(-10*truncate((A152665(gcd(A181819(n),A099788(n))-1)+1)/10)+A152665(gcd(A181819(n),A099788(n))-1)+1))/2)
+; Formula: a(n) = floor(truncate(2^(-10*truncate((A152665(gcd(A181819(n),A099788(n))-1)+1)/10)+A152665(gcd(A181819(n),A099788(n))-1)+1))/2)
 
 mov $2,$0
 seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
