@@ -1,7 +1,7 @@
 ; A040646: Continued fraction for sqrt(672).
 ; Submitted by Ciceronian
 ; 25,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11,1,50,1,11
-; Formula: a(n) = 2*truncate((floor(max(26*truncate((42*gcd(n,262156))/13)+22*truncate((84*gcd(n,262156)-26*truncate((42*gcd(n,262156))/13)-4)/5)-84*gcd(n,262156)+2,0)/2)+2)/4)+floor(max(26*truncate((42*gcd(n,262156))/13)+22*truncate((84*gcd(n,262156)-26*truncate((42*gcd(n,262156))/13)-4)/5)-84*gcd(n,262156)+2,0)/2)+1
+; Formula: a(n) = 2*floor((floor(max(26*truncate((42*gcd(n,262156))/13)+22*truncate((84*gcd(n,262156)-26*truncate((42*gcd(n,262156))/13)-4)/5)-84*gcd(n,262156)+2,0)/2)+2)/4)+floor(max(26*truncate((42*gcd(n,262156))/13)+22*truncate((84*gcd(n,262156)-26*truncate((42*gcd(n,262156))/13)-4)/5)-84*gcd(n,262156)+2,0)/2)+1
 
 gcd $0,262156
 mul $0,42

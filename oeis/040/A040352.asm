@@ -1,7 +1,7 @@
 ; A040352: Continued fraction for sqrt(372).
 ; Submitted by Solidair79
 ; 19,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3,2,12,2,3,38,3
-; Formula: a(n) = truncate((3*gcd(10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(n,max(-n+2,0)+6)-3))-1,2)*(-10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)*(gcd(-n,2)-10)^2)/80)
+; Formula: a(n) = truncate((3*gcd(-((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10),2)*(gcd(-n,2)-10)^2*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10))/80)
 
 mov $1,2
 trn $1,$0

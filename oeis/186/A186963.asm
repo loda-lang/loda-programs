@@ -1,7 +1,7 @@
 ; A186963: Number of prime factors in the expansion of the infinitary perfect number A007357(n) over distinct terms of A050376
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,2,2,3,4,3,4,5,4,4,6,5,6,7,6,7,6
-; Formula: a(n) = 2*floor((2*n+2)/7)+truncate((4*truncate((floor((3*n+2)/2)+1)/4)-floor((3*n+2)/2)-n-4)/4)+3
+; Formula: a(n) = 2*floor((2*n+2)/7)+truncate((-((floor((3*n+2)/2)+1)%4)-n-3)/4)+3
 
 mov $1,$0
 mul $1,2

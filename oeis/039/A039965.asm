@@ -1,7 +1,7 @@
 ; A039965: An example of a d-perfect sequence.
 ; Submitted by Stony666
 ; 1,2,2,1,2,0,0,0,2,1,2,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,1,2,0,0,0,2,1,2,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((-6*truncate(truncate((floor((3*binomial(2*n,n))/(n+1))*2^(n+1))/3)/6)+truncate((floor((3*binomial(2*n,n))/(n+1))*2^(n+1))/3))/2)
+; Formula: a(n) = floor((floor((floor((3*binomial(2*n,n))/(n+1))*2^(n+1))/3)%6)/2)
 
 mov $2,$0
 mul $0,2

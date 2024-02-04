@@ -1,7 +1,7 @@
 ; A039969: An example of a d-perfect sequence: a(n) = Catalan(n) mod 3.
 ; Submitted by Dirk Broer
 ; 1,1,2,2,2,0,0,0,2,2,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,1,1,1,0,0,0,1,1,1,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -3*truncate(floor(binomial(2*n,n)/(n+1))/3)+floor(binomial(2*n,n)/(n+1))
+; Formula: a(n) = floor(binomial(2*n,n)/(n+1))%3
 
 mov $1,$0
 mul $0,2

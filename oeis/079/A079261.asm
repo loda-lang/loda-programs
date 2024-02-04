@@ -1,7 +1,7 @@
 ; A079261: Characteristic function of primes of form 4n+3 (1 if n is prime of form 4n+3, 0 otherwise).
 ; Submitted by Science United
 ; 0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0
-; Formula: a(n) = A010051(n*(-2*truncate(floor(n/2)/2)+floor(n/2)))
+; Formula: a(n) = A010051(n*(floor(n/2)%2))
 
 mov $1,$0
 div $1,2

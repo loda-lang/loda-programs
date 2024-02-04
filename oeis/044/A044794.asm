@@ -1,7 +1,7 @@
 ; A044794: Numbers n such that string 8,1 occurs in the base 10 representation of n but not of n+1.
 ; Submitted by Jamie Morken(w3)
 ; 81,181,281,381,481,581,681,781,819,881,981,1081,1181,1281,1381,1481,1581,1681,1781,1819,1881,1981,2081,2181,2281,2381,2481,2581,2681,2781,2819,2881,2981,3081,3181,3281,3381,3481,3581
-; Formula: a(n) = 6*truncate((5*truncate((56*floor((10*n+29)/11)+44*floor((10*n+41)/11)+152)/5)-90)/2)-20*truncate((2*truncate((5*truncate((56*floor((10*n+29)/11)+44*floor((10*n+41)/11)+152)/5)-90)/2))/10)-231
+; Formula: a(n) = 6*truncate((5*floor((56*floor((10*n+29)/11)+44*floor((10*n+41)/11)+152)/5)-90)/2)-20*truncate((2*truncate((5*floor((56*floor((10*n+29)/11)+44*floor((10*n+41)/11)+152)/5)-90)/2))/10)-231
 
 mul $0,10
 add $0,32

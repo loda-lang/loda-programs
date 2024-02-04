@@ -1,7 +1,7 @@
 ; A130851: Catalan numbers A000108(n) modulo 9.
 ; Submitted by Science United
 ; 1,1,2,5,5,6,6,6,8,2,2,7,4,4,0,0,0,6,6,6,3,3,3,0,0,0,8,2,2,4,1,1,3,3,3,1,7,7,2,5,5,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,3,3,3,0,0,0,3,3,3,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -9*truncate(floor(binomial(2*n,n)/(n+1))/9)+floor(binomial(2*n,n)/(n+1))
+; Formula: a(n) = floor(binomial(2*n,n)/(n+1))%9
 
 mov $1,$0
 mul $0,2

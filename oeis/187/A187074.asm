@@ -1,7 +1,7 @@
 ; A187074: a(n) = 0 if and only if n is of the form 3*k or 4*k + 2, otherwise a(n) = 1.
 ; Submitted by Aexoden
 ; 1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1
-; Formula: a(n) = -2*truncate(truncate((16*n-3*truncate(floor((n+1)/4)/3)+floor((n+1)/4)+16)/3)/2)+truncate((16*n-3*truncate(floor((n+1)/4)/3)+floor((n+1)/4)+16)/3)
+; Formula: a(n) = floor((floor((n+1)/4)%3+16*n+16)/3)%2
 
 add $0,1
 mov $1,$0

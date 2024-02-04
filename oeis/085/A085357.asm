@@ -1,7 +1,7 @@
 ; A085357: Common residues of binomial(3n,n)/(2n+1) modulo 2: relates ternary trees (A001764) to the infinite Fibonacci word (A003849).
 ; Submitted by [AF] Kalianthys
 ; 1,1,1,0,1,1,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,0,1,1,1,0,0,0,0,0
-; Formula: a(n) = -2*truncate(binomial(floor(n/2)+n,n)/2)+binomial(floor(n/2)+n,n)
+; Formula: a(n) = binomial(floor(n/2)+n,n)%2
 
 mov $2,$0
 div $0,2

@@ -1,7 +1,7 @@
 ; A044425: Numbers n such that string 9,3 occurs in the base 10 representation of n but not of n-1.
 ; Submitted by Jamie Morken(l1)
 ; 93,193,293,393,493,593,693,793,893,930,993,1093,1193,1293,1393,1493,1593,1693,1793,1893,1930,1993,2093,2193,2293,2393,2493,2593,2693,2793,2893,2930,2993,3093,3193,3293,3393,3493,3593
-; Formula: a(n) = 45*truncate((56*floor((10*n+19)/11)+44*floor((10*n+31)/11)+152)/5)-16*truncate((10*truncate((56*floor((10*n+19)/11)+44*floor((10*n+31)/11)+152)/5)-180)/4)-930
+; Formula: a(n) = 45*floor((56*floor((10*n+19)/11)+44*floor((10*n+31)/11)+152)/5)-16*truncate((10*floor((56*floor((10*n+19)/11)+44*floor((10*n+31)/11)+152)/5)-180)/4)-930
 
 mul $0,10
 add $0,22

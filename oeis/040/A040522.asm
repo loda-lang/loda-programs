@@ -1,7 +1,7 @@
 ; A040522: Continued fraction for sqrt(546).
 ; Submitted by Cruncher Pete
 ; 23,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2,1,2,1,2,46,2
-; Formula: a(n) = 15*truncate(b(n+1)/8)+b(n+1), b(n) = gcd(10*truncate((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1)/10)-truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))-n,2)*(-10*truncate((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1)/10)+truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1), b(1) = 8, b(0) = 0
+; Formula: a(n) = 15*truncate(b(n+1)/8)+b(n+1), b(n) = gcd(-((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1)%10)-n+1,2)*((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1)%10), b(1) = 8, b(0) = 0
 
 add $0,1
 lpb $0

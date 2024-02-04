@@ -1,7 +1,7 @@
 ; A065125: Numbers n such that the sums of the odd and even aliquot parts of n both divide n.
 ; Submitted by Aexoden
 ; 4,12,56,992,16256,67100672,17179738112,274877382656,4611686016279904256,5316911983139663489309385231907684352,383123885216472214589586756168607276261994643096338432
-; Formula: a(n) = 4*b(n)+4, b(n) = truncate(binomial(truncate(2^A139421(A019280(n-1))),2)/2)-1, b(1) = 2, b(0) = 0
+; Formula: a(n) = 4*b(n)+4, b(n) = floor(binomial(truncate(2^A139421(A019280(n-1))),2)/2)-1, b(1) = 2, b(0) = 0
 
 lpb $0
   sub $0,1

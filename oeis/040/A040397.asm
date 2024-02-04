@@ -1,7 +1,7 @@
 ; A040397: Continued fraction for sqrt(418).
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 20,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2
-; Formula: a(n) = 2*truncate((3*gcd(10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))-1,2)*gcd(-n,2)*(-10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1))/5)+2
+; Formula: a(n) = 2*truncate((3*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+2
 
 sub $2,$0
 gcd $2,2

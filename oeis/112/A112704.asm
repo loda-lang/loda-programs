@@ -1,7 +1,7 @@
 ; A112704: Partial sum of Catalan numbers A000108 multiplied by powers of 10.
 ; Submitted by JayPi
 ; 1,11,211,5211,145211,4345211,136345211,4426345211,147426345211,5009426345211,172969426345211,6051569426345211,214063569426345211,7643063569426345211,275087063569426345211,9969932063569426345211
-; Formula: a(n) = a(n-1)+truncate((floor(binomial(2*n,n)/(n+1))*10^(n+1))/10), a(0) = 1
+; Formula: a(n) = a(n-1)+floor((floor(binomial(2*n,n)/(n+1))*10^(n+1))/10), a(0) = 1
 
 mov $1,1
 lpb $0

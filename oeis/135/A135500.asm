@@ -1,7 +1,7 @@
 ; A135500: Generating function for Viswanath's constant, using the golden string.
 ; Submitted by Skillz
 ; 0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate(floor((8*n+7)/59)/2)+floor((8*n+7)/59)
+; Formula: a(n) = floor((8*n+7)/59)%2
 
 mul $0,8
 add $0,7

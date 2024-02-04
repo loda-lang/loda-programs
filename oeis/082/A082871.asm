@@ -1,7 +1,7 @@
 ; A082871: First component x of pairs (x,y) where x <= y and x!+y! is a square, sorted on x.
 ; Submitted by taurec
 ; 0,0,0,1,1,1,1,2,4
-; Formula: a(n) = max(truncate((6*truncate(floor((n+4)/2)/3)+2*n-2*floor((n+4)/2))/3)-1,0)
+; Formula: a(n) = max(truncate((2*n-2*(floor((n+4)/2)%3))/3)-1,0)
 
 mov $1,$0
 add $1,4

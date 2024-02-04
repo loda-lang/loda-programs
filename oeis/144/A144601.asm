@@ -1,7 +1,7 @@
 ; A144601: Christoffel word of slope 3/11.
 ; Submitted by Jamie Morken(s3)
 ; 0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1
-; Formula: a(n) = -2*truncate(binomial(floor((6*n)/7),3)/2)+binomial(floor((6*n)/7),3)
+; Formula: a(n) = binomial(floor((6*n)/7),3)%2
 
 mul $0,2
 mov $1,3

@@ -1,7 +1,7 @@
 ; A127475: Triangle T(n,k) read by rows: T(n,k) = mu(n)*phi(k) if k|n, else T(n,k)=0.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,-1,-1,-1,0,-2,0,0,0,0,-1,0,0,0,-4,1,1,2,0,0,2,-1,0,0,0,0,0,-6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,4,0,0,0,0,4,-1,0,0,0,0,0,0,0,0,0,-10,0,0,0,0,0,0,0,0,0,0,0,0,-1,0
-; Formula: a(n) = truncate((4*A127507(n)*A054526(n)*truncate(A126988(n)^truncate(0^A126988(n))))/4)
+; Formula: a(n) = truncate((4*A127507(n)*A054526(n)*A126988(n)^truncate(0^A126988(n)))/4)
 
 mov $2,$0
 seq $2,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).

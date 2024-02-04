@@ -1,7 +1,7 @@
 ; A040491: Continued fraction for sqrt(514).
 ; Submitted by Jon Maiga
 ; 22,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1,2,22,2,1,44,1
-; Formula: a(n) = truncate((7*gcd(10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))-1,2)*gcd(-n,2)*(-10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1))/5)
+; Formula: a(n) = truncate((7*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)
 
 sub $1,$0
 gcd $1,2

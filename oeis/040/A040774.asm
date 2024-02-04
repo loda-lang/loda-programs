@@ -1,7 +1,7 @@
 ; A040774: Continued fraction for sqrt(803).
 ; Submitted by Saenger
 ; 28,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2,1,27,1,2,56,2
-; Formula: a(n) = 24*truncate((-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n+1,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))
+; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+24*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n+1,2))/3)+gcd(-n+1,2)
 
 mov $2,1
 sub $2,$0

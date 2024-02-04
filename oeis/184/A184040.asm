@@ -1,7 +1,7 @@
 ; A184040: 1/9 the number of (n+1)X(n+1) 0..2 arrays with all 2X2 subblocks having the same four values
 ; Submitted by kpmonaghan
 ; 9,21,41,81,153,297,569,1113,2169,4281,8441,16761,33273,66297
-; Formula: a(n) = 4*truncate(2^floor(n/2))*(n%2+2)+8*2^n-7
+; Formula: a(n) = 4*(n%2+2)*2^floor(n/2)+8*2^n-7
 
 mov $1,2
 pow $1,$0

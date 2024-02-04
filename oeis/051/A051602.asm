@@ -1,7 +1,7 @@
 ; A051602: a(n) is the maximal number of squares that can be formed from n points in the plane.
 ; Submitted by JZD
 ; 0,0,0,0,1,1,2,3,4,6,7,8,11,13,15,17,20,22
-; Formula: a(n) = truncate((-floor(n/2)*floor((binomial(n,2)+1)/2)+3*truncate((floor(n/2)*floor((binomial(n,2)+1)/2))/3)+floor((binomial(n,2)+1)/2))/3)
+; Formula: a(n) = truncate((-((floor(n/2)*floor((binomial(n,2)+1)/2))%3)+floor((binomial(n,2)+1)/2))/3)
 
 mov $1,$0
 div $1,2

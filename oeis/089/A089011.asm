@@ -1,7 +1,7 @@
 ; A089011: a(n) = 1 if n is an exponent of the Weyl group W(E_7), 0 otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = floor(binomial(20,n+2)/50)*(n+1)-2*truncate((floor(binomial(20,n+2)/50)*(n+1))/2)
+; Formula: a(n) = (floor(binomial(20,n+2)/50)*(n+1))%2
 
 add $0,2
 mov $1,$0

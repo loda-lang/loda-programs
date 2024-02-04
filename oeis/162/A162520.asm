@@ -1,7 +1,7 @@
 ; A162520: Pairs (i,j) of positive integers where j<10.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,2,1,2,2,2,3,2,4,2,5,2,6,2,7,2,8,2,9,3,1,3,2,3,3,3,4,3,5,3,6,3,7,3,8,3,9,4,1,4,2,4,3,4,4,4,5,4,6,4,7,4,8,4,9,5,1,5,2,5,3,5,4
-; Formula: a(n) = floor(n/2)*(n%2)-10*truncate((floor(n/2)*(n%2)+truncate(floor(n/2)/9)+1)/10)+truncate(floor(n/2)/9)+1
+; Formula: a(n) = (floor(n/2)*(n%2)+floor(floor(n/2)/9)+1)%10
 
 mov $1,$0
 div $1,2

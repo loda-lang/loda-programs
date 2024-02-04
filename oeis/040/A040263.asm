@@ -1,7 +1,7 @@
 ; A040263: Continued fraction for sqrt(280).
 ; Submitted by Jamie Morken(w1)
 ; 16,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1,2,1,2,1,32,1
-; Formula: a(n) = gcd(2*gcd(10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(n,max(-n+2,0)+6)-3))-1,2)*(-10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1),n^10)
+; Formula: a(n) = gcd(2*gcd(-((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10),n^10)
 
 mov $1,$0
 pow $1,10

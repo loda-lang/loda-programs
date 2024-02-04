@@ -1,7 +1,7 @@
 ; A040633: Continued fraction for sqrt(659).
 ; Submitted by Simon Strandgaard
 ; 25,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1,2,25,2,1,50,1
-; Formula: a(n) = 15*truncate((truncate((3*gcd(10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))-1,2)*gcd(-n,2)*(-10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1))/5)+1)/8)+truncate((3*gcd(10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)-truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))-1,2)*gcd(-n,2)*(-10*truncate((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1))/5)+1
+; Formula: a(n) = 15*truncate((truncate((3*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+1)/8)+truncate((3*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+1
 
 sub $2,$0
 gcd $2,2
