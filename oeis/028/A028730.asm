@@ -1,7 +1,7 @@
 ; A028730: Nonsquares mod 17.
 ; Submitted by Cruncher Pete
 ; 3,5,6,7,10,11,12,14
-; Formula: a(n) = truncate((9*floor((5*n+40)/4))/7)-9
+; Formula: a(n) = floor((9*floor((5*n+40)/4))/7)-9
 
 add $0,8
 mul $0,5

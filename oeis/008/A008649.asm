@@ -1,7 +1,7 @@
 ; A008649: Molien series of 3 X 3 upper triangular matrices over GF( 3 ).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,1,2,2,2,3,3,3,5,5,5,7,7,7,9,9,9,12,12,12,15,15,15,18,18,18,22,22,22,26,26,26,30,30,30,35,35,35,40,40,40,45,45,45,51,51,51,57,57,57,63,63,63,70,70,70,77,77,77,84,84,84,92,92,92,100,100,100,108,108,108,117,117,117,126,126,126,135,135
-; Formula: a(n) = truncate(binomial(floor(n/3)+3,2)/3)
+; Formula: a(n) = floor(binomial(floor(n/3)+3,2)/3)
 
 div $0,3
 add $0,3

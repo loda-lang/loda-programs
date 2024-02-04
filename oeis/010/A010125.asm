@@ -1,7 +1,7 @@
 ; A010125: Continued fraction for sqrt(21).
 ; Submitted by Jamie Morken(s1.)
 ; 4,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1,1,2,1,1,8,1
-; Formula: a(n) = -10*truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)/10)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1
+; Formula: a(n) = (truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10
 
 mov $2,2
 trn $2,$0

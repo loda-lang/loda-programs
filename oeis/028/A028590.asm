@@ -1,7 +1,7 @@
 ; A028590: Expansion of (theta_3(z)*theta_3(6z)+theta_2(z)*theta_2(6z)).
 ; Submitted by Science United
 ; 1,0,0,0,2,0,0,4,0,0,0,0,0,0,0,4,2,0,0,0,0,0,0,0,2,0,0,0,4,0,0,4,0,0,0,0,2,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,4,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4
-; Formula: a(n) = A046113(n)*(-2*truncate(floor((n+3)/2)/2)+floor((n+3)/2))
+; Formula: a(n) = A046113(n)*(floor((n+3)/2)%2)
 
 mov $1,$0
 seq $0,46113 ; Coefficients in expansion of theta_3(q) * theta_3(q^6) in powers of q.

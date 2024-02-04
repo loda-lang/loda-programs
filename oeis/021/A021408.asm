@@ -1,7 +1,7 @@
 ; A021408: Decimal expansion of 1/404.
 ; Submitted by Jamie Morken(s4)
 ; 0,0,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4,7,5,2,4
-; Formula: a(n) = -2*truncate(floor(n/2)/2)-10*truncate((-2*truncate(floor(n/2)/2)+floor(n/2)+max(floor((2^n)/2)-1,0))/10)+floor(n/2)+max(floor((2^n)/2)-1,0)
+; Formula: a(n) = (floor(n/2)%2+max(floor((2^n)/2)-1,0))%10
 
 mov $1,2
 pow $1,$0

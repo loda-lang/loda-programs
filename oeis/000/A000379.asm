@@ -10,7 +10,7 @@ lpb $2
   add $3,1
   pow $3,2
   sub $3,1
-  seq $3,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+  seq $3,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
   mod $3,2
   cmp $3,0
   sub $0,$3

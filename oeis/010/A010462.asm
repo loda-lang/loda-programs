@@ -1,7 +1,7 @@
 ; A010462: Squares mod 30.
 ; Submitted by Simon Strandgaard
 ; 0,1,4,6,9,10,15,16,19,21,24,25
-; Formula: a(n) = truncate((6*floor(n/2)+6*truncate((19*truncate(floor(n/2)/3)+19)/26)+6*n+9)/4)-2
+; Formula: a(n) = floor((6*floor((19*floor(floor(n/2)/3)+19)/26)+6*floor(n/2)+6*n+9)/4)-2
 
 mov $1,$0
 div $0,2

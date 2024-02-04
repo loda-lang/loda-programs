@@ -1,7 +1,7 @@
 ; A010135: Continued fraction for sqrt(45).
 ; Submitted by skildude
 ; 6,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1,2,2,2,1,12,1
-; Formula: a(n) = -10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3))+truncate((-10*truncate(truncate(3^(gcd(n,max(-n+2,0)+6)-3))/10)+gcd(-n,2)+truncate(3^(gcd(n,max(-n+2,0)+6)-3)))/3)
+; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2)+truncate((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+gcd(-n,2))/3)
 
 mov $1,2
 trn $1,$0
