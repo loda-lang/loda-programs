@@ -9,4 +9,4 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
-seq $0,49642 ; Number of divisors of n does not divide sum of divisors of n.
+seq $0,49642 ; Numbers k such that the number of divisors of k does not divide the sum of divisors of k.

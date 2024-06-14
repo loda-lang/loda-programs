@@ -1,4 +1,4 @@
-; A272721: The circle curvature (rounded down) inscribed in the area related to critical point of Mandelbrot set at C = 1/4.
+; A272721: The curvature (rounded down) of the n-th circle inscribed in the area related to the critical point of the Mandelbrot set at C = 1/4.
 ; Submitted by Jamie Morken(l1)
 ; 13,23,35,50,66,83,103,123,146,170,196,223
 ; Formula: a(n) = 9*n+max(truncate(((n+1)*(9*n+5)-6)/11),1)+12

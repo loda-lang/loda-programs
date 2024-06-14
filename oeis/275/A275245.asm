@@ -1,4 +1,4 @@
-; A275245: Numbers n such that phi(n) divides n^2 while phi(n) does not divide n.
+; A275245: Numbers k such that phi(k) divides k^2 while phi(k) does not divide k.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 10,20,40,42,50,60,80,84,100,114,120,126,136,156,160,168,180,200,220,228,240,250,252,272,294,300,312,320,336,342,360,378,400,440,444,456,468,480,500,504,540,544,588,600,624,640,672,684,720,756,800,816
 

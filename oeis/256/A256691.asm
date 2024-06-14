@@ -4,7 +4,7 @@
 ; Formula: a(n) = truncate(2^(2*A001222(n)+A317946(n)))
 
 mov $2,$0
-seq $2,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+seq $2,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mul $0,2
 add $0,$2

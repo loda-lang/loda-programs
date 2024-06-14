@@ -1,4 +1,4 @@
-; A281925: Numbers that are the product of exactly 4 primes and are of the form prime(n) + prime(n + 1).
+; A281925: Numbers that are the product of exactly 4 primes and are of the form prime(k) + prime(k + 1).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 24,36,60,84,90,100,152,198,204,210,276,308,330,340,372,390,462,472,492,532,558,564,712,726,740,798,852,872,930,966,1012,1148,1164,1180,1192,1208,1220,1230,1236,1284,1290,1410,1460
 

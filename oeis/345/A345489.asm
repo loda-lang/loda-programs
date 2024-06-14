@@ -7,5 +7,5 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
-seq $0,344805 ; Numbers that are the sum of six second powers in one or more ways.
+seq $0,344805 ; Numbers that are the sum of six squares in one or more ways.
 add $0,17

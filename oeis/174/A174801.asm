@@ -6,7 +6,7 @@ cmp $1,$0
 trn $0,1
 cmp $2,$0
 trn $0,1
-seq $0,105610 ; Numbers n such that both p1=2n+3 and p2=4n+5 are primes.
+seq $0,105610 ; Numbers k such that both p1=2k+3 and p2=4k+5 are primes.
 add $0,1
 sub $2,$0
 sub $0,$2

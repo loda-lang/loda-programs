@@ -1,4 +1,4 @@
-; A225241: Numbers n such that the sum of reciprocals of even divisors of n < 1.
+; A225241: Numbers n such that the sum of the reciprocals of the even divisors of n is greater than zero and less than one.
 ; Submitted by PDW
 ; 2,4,6,8,10,14,16,18,20,22,26,28,30,32,34,38,42,44,46,50,52,54,58,62,64,66,68,70,74,76,78,82,86,88,90,92,94,98,100,102,104,106,110,114,116,118,122,124,126,128,130,134,136,138,142,146,148,150,152,154
 

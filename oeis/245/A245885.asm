@@ -4,7 +4,7 @@
 
 add $0,1
 mul $0,2
-seq $0,11545 ; Decimal expansion of Pi truncated to n places.
+seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
 mov $1,$0
 mul $1,9
 div $1,64

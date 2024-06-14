@@ -12,7 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,217924 ; Row sums of triangle A217537.
+  seq $0,217924 ; a(n) = n! * [x^n] exp(2*exp(x) - x - 2). Row sums of triangle A217537.
   mul $1,$0
   mul $3,-1
   add $3,$1

@@ -4,7 +4,7 @@
 ; Formula: a(n) = truncate((10*A218310(n))/gcd(A178500(n),10*A218310(n)))
 
 mov $1,$0
-seq $0,218310 ; E.g.f. A(x) satisfies: A( x/(exp(5*x)*cosh(5*x)) ) = exp(x)*cosh(x).
+seq $0,218310 ; E.g.f. A(x) satisfies A( x/(exp(5*x)*cosh(5*x)) ) = exp(x)*cosh(x).
 mul $0,10
 seq $1,178500 ; a(n) = 10^n * signum(n).
 gcd $1,$0

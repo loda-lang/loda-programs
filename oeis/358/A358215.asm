@@ -1,4 +1,4 @@
-; A358215: Numbers k for which there are no such prime p that p^p would divide the arithmetic derivative of k, A003415(k).
+; A358215: Numbers k for which there is no prime p such that p^p divides the arithmetic derivative of k, A003415(k).
 ; Submitted by Simon Strandgaard
 ; 2,3,5,6,7,9,10,11,13,14,17,18,19,21,22,23,25,26,29,30,31,33,34,37,38,41,42,43,45,46,47,49,50,53,57,58,59,61,62,63,65,66,67,69,70,71,73,74,75,77,78,79,82,83,85,86,89,90,93,94,97,98,99,101,102,103,105,106,107,109,110,113,114,117,118,121,122,125
 

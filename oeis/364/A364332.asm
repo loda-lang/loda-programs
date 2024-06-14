@@ -1,4 +1,4 @@
-; A364332: a(n) = f(prime(n)), where f(2)=0 and for an odd prime p,  f(p) = max{a(q)+1: q ranges over all prime factors of p-1}.
+; A364332: a(n) = f(prime(n)), where f(2) = 0 and for an odd prime p, f(p) = max{f(q)+1: q ranges over all prime factors of p-1}.
 ; Submitted by scole
 ; 0,1,1,2,2,2,1,2,3,3,2,2,2,3,4,3,4,2,3,3,2,3,3,3,2,2,2,4,2,3,3,3,2,4,3,2,3,2,4,4,4,2,3,2,3,3,3,3,4,3,4,3,2,2,1,4,4,2,4,3,5,3,2,3,3,4,3,3,5,4,3,5,3,3,3,4,3,3,2,2
 ; Formula: a(n) = A364334(A000040(n)-2)

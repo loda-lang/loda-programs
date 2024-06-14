@@ -8,7 +8,7 @@ lpb $2
   add $3,1
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   sub $3,1
-  seq $3,61356 ; Triangle read by rows. T(n,k) are the labeled trees on n nodes with maximal node degree k (0 < k < n).
+  seq $3,61356 ; Triangle read by rows: T(n, k) is the number of labeled trees on n nodes with maximal node degree k (0 < k < n).
   cmp $3,1
   mov $5,$1
   sub $0,$3

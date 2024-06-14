@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,70155 ; Numbers n such that n-1, n+1 and 1+n^2 are prime numbers.
+  seq $0,70155 ; Numbers k such that k-1, k+1 and k^2+1 are prime numbers.
   seq $0,230980 ; Number of primes <= n, starting at n=0.
   mov $1,$2
   mov $2,$0

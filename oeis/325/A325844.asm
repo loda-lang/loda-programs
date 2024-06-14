@@ -20,7 +20,7 @@ lpb $4
     add $0,$8
     mov $6,$0
     max $6,0
-    seq $6,7067 ; Nearest integer to n*tau.
+    seq $6,7067 ; Nearest integer to n*tau where tau = (1+sqrt(5))/2.
     mov $7,$8
     mul $7,$6
     sub $0,1

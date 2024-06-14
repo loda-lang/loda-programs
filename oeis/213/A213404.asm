@@ -12,7 +12,7 @@ lpb $0
   lpb $4
     mov $7,$4
     mul $7,4
-    seq $7,110556 ; a(n) = binomial(2*n-1,n)*(-1)^n for n>0; a(0) = 1.
+    seq $7,110556 ; a(n) = binomial(2*n-1, n)*(-1)^n.
     mov $9,10
     add $9,$5
     sub $4,1

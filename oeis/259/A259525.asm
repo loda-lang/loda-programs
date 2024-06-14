@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,14473 ; Pascal's triangle - 1.
+  seq $0,14473 ; Pascal's triangle - 1: Triangle read by rows: T(n, k) = A007318(n, k) - 1.
   mov $2,$3
   mul $2,$0
   mul $4,$3

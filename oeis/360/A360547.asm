@@ -11,7 +11,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,218303 ; E.g.f. A(x) satisfies: A( x/(exp(2*x)*cosh(2*x)) ) = exp(x)*cosh(x).
+  seq $0,218303 ; E.g.f. A(x) satisfies A( x/(exp(2*x)*cosh(2*x)) ) = exp(x)*cosh(x).
   mul $1,$0
   add $3,1
   mul $3,-1

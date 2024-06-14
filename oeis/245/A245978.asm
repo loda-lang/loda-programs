@@ -7,7 +7,7 @@ mov $1,2
 lpb $0
   mov $2,$0
   seq $2,26272 ; a(n) = smallest k such that k=a(n-k-1) is the only appearance of k so far; if there is no such k, then a(n) = least positive integer that has not yet appeared.
-  seq $2,246104 ; Least m > 0 for which (s(m), ..., s(n+m-1) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
+  seq $2,246104 ; Least m > 0 for which (s(m), ..., s(n+m-1)) = (s(0), ..., s(n)), the first n+1 terms of the infinite Fibonacci word A003849.
   sub $0,1
   add $1,$2
 lpe

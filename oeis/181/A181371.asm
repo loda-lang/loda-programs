@@ -5,4 +5,4 @@
 
 seq $0,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
 sub $0,1
-seq $0,125662 ; A convolution triangle of numbers based on A001906 (even indexed Fibonacci numbers).
+seq $0,125662 ; A convolution triangle of numbers based on A001906 (even-indexed Fibonacci numbers).

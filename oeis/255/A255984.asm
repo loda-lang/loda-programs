@@ -3,7 +3,7 @@
 ; 2,1,7,0,8,0,3,7,6,3,6,7,4,8,0,2,9,7,8,0,8,9,0,4,3,8,8,1,8,7,2,3,8,7,3,0,3,6,1,6,3,2,6,6,8,4,3,5,3,6,3,7,7,8,0,9,2,8,6,3,6,9,8,3,3,1,1,1,0,4,6,1,5,8,5,8,8,8,7,1
 
 mul $0,2
-seq $0,11545 ; Decimal expansion of Pi truncated to n places.
+seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
 mov $1,$0
 mul $1,3
 div $1,2

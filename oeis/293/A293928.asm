@@ -1,4 +1,4 @@
-; A293928: Totients having one or more solutions to phi(m)^(k+1) = phi(phi(m)^k*m), k >= 1, m >= 1.
+; A293928: Totients phi(m) having one or more solutions to phi(m)^(k+1) = phi(phi(m)^k*m), k >= 1, m >= 1.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,4,6,8,12,16,18,20,24,32,36,40,48,54,64,72,80,84,96,100,108,120,128,144,160,162,168,192,200,216,240,252,256,272,288,312,320,324,336,360,384,400,432,440,480,486,500,504,512,544,576,588,600,624,640,648,672,684
 

@@ -1,4 +1,4 @@
-; A307883: Square array T(n,k), n >= 0, k >= 0, read by antidiagonals, where column k is the expansion of 1/sqrt(1 - 2*(k+1)*x + ((k-1)*x)^2).
+; A307883: Square array read by descending antidiagonals: T(n, k) where column k is the expansion of 1/sqrt(1 - 2*(k+1)*x + ((k-1)*x)^2).
 ; Submitted by [AF] Kalianthys
 ; 1,1,1,1,2,1,1,3,6,1,1,4,13,20,1,1,5,22,63,70,1,1,6,33,136,321,252,1,1,7,46,245,886,1683,924,1,1,8,61,396,1921,5944,8989,3432,1,1,9,78,595,3606,15525,40636,48639,12870,1,1,10,97,848,6145,33876,127905,281488,265729,48620,1,1,11,118,1161,9766,65527,324556,1067925,1968934,1462563,184756,1,1,12
 

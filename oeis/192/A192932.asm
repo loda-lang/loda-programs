@@ -1,4 +1,4 @@
-; A192932: Squares of numbers in Perrin sequence
+; A192932: Squares of numbers in Perrin sequence.
 ; Submitted by Christian Krause
 ; 9,0,4,9,4,25,25,49,100,144,289,484,841,1521,2601,4624,8100,14161,24964,43681,76729,134689,236196,414736,727609,1276900,2241009,3932289,6901129,12110400,21252100,37295449,65448100
 ; Formula: a(n) = b(n)^2, b(n) = b(n-2)+b(n-3), b(2) = 2, b(1) = 0, b(0) = 3

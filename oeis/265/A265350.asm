@@ -1,4 +1,4 @@
-; A265350: Numbers in whose factorial base representation (A007623) at least one of the nonzero digits occurs more than once (although not necessarily in adjacent positions).
+; A265350: Numbers whose factorial base representation (A007623) contains at least one of the nonzero digits occurs more than once (although not necessarily in adjacent positions).
 ; Submitted by PDW
 ; 3,7,8,9,11,15,16,17,21,25,26,27,29,30,31,32,33,34,35,37,38,39,40,41,43,44,45,47,51,52,53,55,56,57,58,59,60,61,62,63,64,65,69,70,71,75,79,80,81,83,87,88,89,90,91,92,93,94,95,99,103,104,105,107,111,112,113,117,121,122,123,125,126,127,128,129,130,131,133,134
 

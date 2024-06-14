@@ -1,6 +1,6 @@
 ; A174540: Partial sums of A036983.
 ; Submitted by ThrasherX-17
-; 0,1,2,4,8,13,43,52
+; 1,2,4,8,13,43,52,144,250
 
 add $0,2
 lpb $0

@@ -4,6 +4,6 @@
 ; Formula: a(n) = A125662(n)*A097807(n)
 
 mov $1,$0
-seq $1,125662 ; A convolution triangle of numbers based on A001906 (even indexed Fibonacci numbers).
+seq $1,125662 ; A convolution triangle of numbers based on A001906 (even-indexed Fibonacci numbers).
 seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
 mul $0,$1

@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,152152 ; A sequence related to sine products and the Fibonacci numbers A000045: a(n) = Product_{k=1..n} (1 + 4*sin(2*Pi*k/n)^2).
+    seq $7,152152 ; a(n) = Product_{k=1..n} (1 + 4*sin(2*Pi*k/n)^2).
     mov $9,10
     add $9,$5
     sub $4,1

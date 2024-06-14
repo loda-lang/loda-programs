@@ -1,4 +1,4 @@
-; A243813: Table read by antidiagonals, T(n,k) is circle curvature (rounded down) in a variation of nested Pappus chains (see comments for details).
+; A243813: Table read by antidiagonals: T(n,k) is the curvature (truncated to integer) of a circle in a variation of nested Pappus chains (see Comments for details).
 ; Submitted by Landjunge
 ; 1,1,1,1,1,3,1,1,1,5,1,1,1,2,9,1,1,1,1,3,13,1,1,1,1,2,5,19,1,1,1,1,1,3,7,25,1,1,1,1,1,2,4,9,33,1,1,1,1,1,1,2,5,11,41,1,1,1,1,1,1,2,3,6,14,51,1,1,1,1,1,1,1,2,4,7,17,61,1,1
 

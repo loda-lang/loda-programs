@@ -12,7 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,192555 ; a(n) = sum(stirling2(n+1,k+1)*(-1)^(n-k)*k!^2,k=0..n).
+  seq $0,192555 ; a(n) = Sum_{k=0..n} Stirling2(n+1, k+1)*(-1)^(n-k)*k!^2.
   mul $1,$0
   add $3,$1
 lpe

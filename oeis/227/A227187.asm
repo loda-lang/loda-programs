@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,227157 ; Numbers n whose factorial base representation A007623(n) doesn't contain any nonleading zeros.
+  seq $3,227157 ; Numbers k whose factorial base representation A007623(k) does not contain any nonleading zeros.
   add $0,1
   add $1,1
   add $2,$3

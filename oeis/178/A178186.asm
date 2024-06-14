@@ -3,7 +3,7 @@
 ; Formula: a(n) = A033159(A246534(n+2)-1)-2
 
 add $0,2
-seq $0,246534 ; a(n) = Sum_{k=1..n} 2^(T(k)-1), where T(k)=k(k+1)/2 are the triangular numbers A000217; for n=0 the empty sum a(0)=0.
+seq $0,246534 ; a(n) = Sum_{k=1..n} 2^(T(k)-1), where T(k)=k(k+1)/2 = A000217(k).
 sub $0,1
 seq $0,33159 ; Begins with (2, 3); avoids 3-term arithmetic progressions.
 sub $0,2

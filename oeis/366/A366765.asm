@@ -5,6 +5,6 @@
 
 mov $1,$0
 add $1,1
-seq $0,329376 ; Multiplicative with a(p^e) = p when e == 2, otherwise a(p^e) = 1.
+seq $0,329376 ; Multiplicative with a(p^e) = p when e = 2, otherwise a(p^e) = 1.
 div $1,$0
 mov $0,$1

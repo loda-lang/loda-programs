@@ -1,4 +1,4 @@
-; A255219: Squarefree numbers n such that mu(n) = mu(phi(n)) where mu(k) is the Möbius function and phi(k) is Euler's totient function.
+; A255219: Squarefree numbers k such that mu(k) = mu(phi(k)) where mu(k) is the Möbius function and phi(k) is Euler's totient function.
 ; Submitted by Joe
 ; 1,3,14,22,31,43,46,67,71,79,94,103,118,131,139,166,191,214,223,239,283,311,334,358,367,419,422,431,439,443,454,499,526,599,607,619,643,647,659,662,683,694,718,743,766,787,823,827,907,926,934,947,958,971,1006
 

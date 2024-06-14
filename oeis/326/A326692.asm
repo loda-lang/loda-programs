@@ -1,4 +1,4 @@
-; A326692: Values of n for which the denominator of (Sum_{prime p | n} 1/p - 1/n) is n.
+; A326692: Values of k for which the denominator of (Sum_{prime p | k} 1/p - 1/k) is k.
 ; Submitted by emoga
 ; 1,4,8,9,15,16,20,24,25,27,28,32,33,35,36,40,44,45,49,51,52,60,63,64,65,68,69,72,76,77,81,85,87,88,91,92,95,96,99,100,104,108,112,115,116,117,119,121,123,124,125,128,133,135,136,140,141,143,144,145,148
 

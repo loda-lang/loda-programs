@@ -1,4 +1,4 @@
-; A177154: Fractional part of the conversion from degrees Centigrade (or Celsius) to Fahrenheit.
+; A177154: Fractional part of the conversion from degrees Celsius to Fahrenheit.
 ; 0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2,0,8,6,4,2
 ; Formula: a(n) = (8*n)%10
 

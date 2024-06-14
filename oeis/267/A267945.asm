@@ -11,7 +11,7 @@ lpb $2
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   mov $3,$1
   add $3,3
-  seq $3,327859 ; a(n) = A276086(A003415(n)), where A003415 is the arithmetic derivative and A276086 converts digits of primorial base representation to exponents in prime factorization.
+  seq $3,327859 ; a(n) = A276086(A003415(n)), where A003415 is the arithmetic derivative, and A276086 is the primorial base exp-function.
   sub $3,$5
   cmp $3,0
   sub $0,$3

@@ -1,6 +1,6 @@
 ; A243332: Number of simple connected graphs with n nodes that are integral and triangle-free.
 ; Submitted by Simon Strandgaard
-; 1,1,0,1,1,3,1,3,0,14
+; 1,1,0,1,1,3,1,3,0,14,8,18,33,75
 
 mul $0,2
 lpb $0

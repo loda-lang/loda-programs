@@ -1,4 +1,4 @@
-; A284035: Upper twin primes which correspond to the hypotenuse in a Pythagorean triple whose small leg is also a prime.
+; A284035: Upper twin primes which correspond to the hypotenuse in a Pythagorean triple whose short leg is also a prime.
 ; Submitted by Fardringle
 ; 5,13,61,181,421,3121,5101,60901,83641,100801,135721,161881,163021,218461,273061,491041,595141,637321,697381,1064341,1108561,1171981,1806901,2574181,2601481,2740141,2763601,2853661,3248701,3535141,3567121,3696481,3723721,3729181,4832941
 

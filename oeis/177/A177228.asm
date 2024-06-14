@@ -1,4 +1,4 @@
-; A177228: A combinatorial differential triangle sequence:q=3;t=1/q;f(t,n)=d^n/dt^n*(t/(1+t); c(t.n,m)=(1/(1+t)*f(n,t)/(f(t,m)*f(t,(n-m))
+; A177228: Triangle read by rows: T(n, k) = -binomial(n,k) for 1 <= k <= n-1, otherwise T(n, k) = 3.
 ; Submitted by Simon Strandgaard
 ; 3,3,3,3,-2,3,3,-3,-3,3,3,-4,-6,-4,3,3,-5,-10,-10,-5,3,3,-6,-15,-20,-15,-6,3,3,-7,-21,-35,-35,-21,-7,3,3,-8,-28,-56,-70,-56,-28,-8,3,3,-9,-36,-84,-126,-126,-84,-36,-9,3,3,-10,-45,-120,-210,-252,-210,-120,-45,-10
 

@@ -1,4 +1,4 @@
-; A365709: Number of rigid configurations of n non-overlapping congruent spheres in three-dimensional Euclidean space
+; A365709: Number of rigid configurations of n non-overlapping congruent spheres in three-dimensional Euclidean space.
 ; Submitted by Matthias Lehmkuhl
 ; 1,1,1,1,1,2,5,13,52
 

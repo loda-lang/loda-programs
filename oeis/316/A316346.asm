@@ -9,7 +9,7 @@ lpb $3
   add $0,$4
   sub $0,1
   mov $2,$0
-  seq $2,102928 ; Reduced numerators of the harmonic means of the first n positive integers.
+  seq $2,102928 ; Numerator of the harmonic mean of the first n positive integers.
   mov $4,2
   bin $0,$3
   gcd $1,$2

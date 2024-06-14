@@ -1,4 +1,4 @@
-; A179952: Add 1 to all the divisors of n. a(n)=number of perfect squares in the set.
+; A179952: Add 1 to all the divisors of n. a(n) = number of perfect squares in the set.
 ; Submitted by [AF] Kalianthys
 ; 0,0,1,0,0,1,0,1,1,0,0,1,0,0,2,1,0,1,0,0,1,0,0,3,0,0,1,0,0,2,0,1,1,0,1,1,0,0,1,1,0,1,0,0,2,0,0,4,0,0,1,0,0,1,0,1,1,0,0,2,0,0,2,1,0,1,0,0,1,1,0,3,0,0,2,0,0,1,0,2
 

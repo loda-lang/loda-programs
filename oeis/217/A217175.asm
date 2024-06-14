@@ -1,6 +1,6 @@
 ; A217175: a(n) is the first digit (from the left) to appear n times in succession in the decimal representation of the Fibonacci(A217165(n)).
 ; Submitted by JayPi
-; 0,5,7,7,1,5,7,7,3,2,4
+; 0,5,7,7,1,5,7,7,3,2,4,3,4,2,4
 
 mov $2,2
 add $0,1

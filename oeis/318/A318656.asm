@@ -7,7 +7,7 @@ mov $1,$0
 add $1,1
 pow $1,2
 sub $1,1
-seq $1,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+seq $1,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
 seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
 mul $0,2
 sub $0,$1

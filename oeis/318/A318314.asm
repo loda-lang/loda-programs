@@ -5,7 +5,7 @@
 
 mov $1,$0
 seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
-seq $0,317946 ; Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+seq $0,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
 add $1,$0
 mov $2,2
 pow $2,$1

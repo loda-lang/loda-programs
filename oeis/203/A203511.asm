@@ -8,7 +8,7 @@ lpb $0
   sub $0,1
   mov $2,$1
   mov $1,$3
-  seq $1,203512 ; a(n) = v(n+1)/v(n), where v = A203511.
+  seq $1,203512 ; a(n) = A203511(n+1)/A203511(n).
   mul $1,$2
   add $3,1
 lpe

@@ -8,7 +8,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,25904 ; Expansion of 1/((1-x^6)(1-x^9)(1-x^10)).
+  seq $3,25904 ; Expansion of 1/((1-x^6)*(1-x^9)*(1-x^10)).
   min $3,1
   sub $0,$3
   add $1,1

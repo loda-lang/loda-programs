@@ -1,6 +1,6 @@
-; A279402: Domination number for queens' graph on an n X n toroidal board.
+; A279402: Domination number for queen graph on an n X n toroidal board.
 ; Submitted by Simon Strandgaard
-; 1,1,1,2,3,3,4,4,5,5,5,6,7,7,5
+; 1,1,1,2,3,3,4,4,5,5,5,6,7,7,5,8,9,8,10,10,7,11
 
 mov $2,1
 add $0,1

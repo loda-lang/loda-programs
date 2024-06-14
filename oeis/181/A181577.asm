@@ -1,4 +1,4 @@
-; A181577: Prime number of trailing end 0's associated with p! where p = A181576.
+; A181577: Prime number of trailing end 0's associated with p! where p = A181576(n).
 ; Submitted by Science United
 ; 2,2,3,3,7,13,19,31,37,41,43,47,47,53,71,89,97,103,107,109,113,113,137,139,149,151,151,157,163,181,191,197,211,227,233,239,251,257,263,263,269,271,277,293,313,347,353,359,383,389,401,421,421,433,443,463,499
 

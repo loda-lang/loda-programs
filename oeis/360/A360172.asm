@@ -1,4 +1,4 @@
-; A360172: Sequences of length n in [n] not starting by their minimum value
+; A360172: Sequences of length n in [n] not starting with their minimum value.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,13,156,2146,34455,638723,13479760,319689156,8425695015,244459904085,7745416087332,266155064108662,9860698167427471,391859875043125895
 

@@ -1,4 +1,4 @@
-; A228560: Curvature of the circles (rounded down) inscribed in golden triangle arranged as spiral form.
+; A228560: Curvature (rounded down) of the circle inscribed in the n-th golden triangle arranged in a spiral form.
 ; 2,4,7,11,18,30,49,79,129,209,338,547,886,1434,2320,3754,6075,9830,15905,25735,41641,67376,109017,176394,285412,461806,747218,1209024
 ; Formula: a(n) = A101776(A078642(2*n))-1
 
