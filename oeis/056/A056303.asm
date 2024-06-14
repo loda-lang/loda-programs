@@ -11,7 +11,7 @@ lpb $3
   trn $0,1
   mov $4,$0
   add $4,1
-  seq $0,195095 ; G.f.: Sum_{n>=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+  seq $0,195095 ; Duplicate of A011946.
   div $0,$4
   mul $0,2
   mov $2,$0

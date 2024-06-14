@@ -1,4 +1,4 @@
-; A071814: Number of 1's in binary representation of n equals bigomega(n), the number of prime divisors of n (counted with multiplicity).
+; A071814: Numbers k such that the number of 1's in the binary representation of k equals bigomega(k), the number of prime divisors of k (counted with multiplicity).
 ; Submitted by ChelseaOilman
 ; 2,6,9,10,28,33,34,42,44,50,52,54,60,65,70,76,90,98,129,135,138,148,150,156,164,184,198,204,210,225,228,232,261,266,268,273,290,292,294,297,306,308,322,330,340,344,385,388,390,405,424,440,468,486,496,504,514,518,524,525,530,548,550,564,568,578,585,642,650,664,675,676,684,696,708,712,728,729,744,752
 

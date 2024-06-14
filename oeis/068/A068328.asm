@@ -1,4 +1,4 @@
-; A068328: Arithmetic derivative of squarefree numbers.
+; A068328: Arithmetic derivatives of the squarefree numbers.
 ; Submitted by Jamie Morken(s3)
 ; 0,1,1,1,5,1,7,1,1,9,8,1,1,10,13,1,15,1,31,1,14,19,12,1,21,16,1,41,1,25,1,20,1,16,22,31,1,1,33,18,61,1,26,59,1,1,39,18,71,1,43,1,22,45,32,1,20,34,49,24,1,1,91,1,71,55,1,1,87,40,1,101,28,61,24,63,44,1,46,101
 ; Formula: a(n) = A003415(A005117(n))

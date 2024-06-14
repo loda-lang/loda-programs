@@ -1,4 +1,4 @@
-; A119584: Sum{k=1 to phi(n)-1} t(n,k)*t(n,k+1), where t(n,k) is the k-th positive integer which is coprime to n and phi(n) is the number of positive integers which are <= n and are coprime to n.
+; A119584: a(n) = Sum_{k=1..phi(n)-1} t(n,k)*t(n,k+1), where t(n,k) is the k-th positive integer which is coprime to n and phi(n) is the number of positive integers which are <= n and are coprime to n.
 ; Submitted by Jens Pollmann
 ; 0,0,2,3,20,5,70,53,121,87,330,117,572,305,507,553,1360,481,1938,873,1586,1405,3542,1241,3846,2415,4006,2765,7308,1875,8990,4945,6828,5675,9333,4525,15540,8053,11567,7745,21320,6047,24682,12005,15244,14625
 

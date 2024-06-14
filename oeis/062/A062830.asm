@@ -1,4 +1,4 @@
-; A062830: a(n) = n - phi(n) + 1.
+; A062830: a(n) = #{ 0 <= k <= n : K(n, k) = 0 } where K(n, k) is the Kronecker symbol. This is the number of integers 0 <= k <= n that are not coprime to n.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,2,3,2,5,2,5,4,7,2,9,2,9,8,9,2,13,2,13,10,13,2,17,6,15,10,17,2,23,2,17,14,19,12,25,2,21,16,25,2,31,2,25,22,25,2,33,8,31,20,29,2,37,16,33,22,31,2,45,2,33,28,33,18,47,2,37,26,47,2,49,2,39,36,41,18,55,2,49
 ; Formula: a(n) = -A109606(n)+n+1

@@ -8,4 +8,4 @@ lpb $1
   sub $1,27
   add $0,1
 lpe
-seq $0,158276 ; Numbers k such that sigma_1(k) not divides sigma_2(k).
+seq $0,158276 ; Numbers k such that sigma_1(k) does not divide sigma_2(k).

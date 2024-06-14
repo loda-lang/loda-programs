@@ -1,4 +1,4 @@
-; A137391: Triangular sequence of coefficients from a Sheffer sequence expansion: f(t) = 1 + t + t^2; g(t) = t + t^2; p(t) = f[t]*Exp[x*g[t]];.
+; A137391: Triangle: let f(t) = 1 + t + t^2 and g(t) = t + t^2, expansion of p(t) = f(t)*exp(x*g(t)).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,2,4,1,0,12,9,1,0,24,48,16,1,0,0,180,140,25,1,0,0,360,840,330,36,1,0,0,0,3360,2940,672,49,1,0,0,0,6720,18480,8400,1232,64,1,0,0,0,0,75600,75600,20664,2088,81,1,0,0,0,0,151200,483840,252000,45360,3330
 

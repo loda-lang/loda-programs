@@ -1,4 +1,4 @@
-; A081372: Binomial coefficients C(n,j) reduced modulo j, j=1..n; read by rows, j=0 is omitted because of n mod 0. a(n) is the number of zero residues counted in n-th row.
+; A081372: a(n) is the number of j from 1 to n such that binomial(n,j) is divisible by j.
 ; Submitted by Jamie Morken(s2)
 ; 1,1,1,2,2,1,1,2,4,3,3,3,3,1,1,3,3,5,5,4,3,1,1,2,4,2,6,7,7,2,2,8,7,6,5,6,6,4,2,4,4,2,2,2,4,2,2,4,8,12,9,8,8,12,10,12,11,8,8,6,6,3,4,14,12,9,9,9,7,4,4,7,7,6,9,11,10,4,4,6
 

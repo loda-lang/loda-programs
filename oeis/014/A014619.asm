@@ -1,4 +1,4 @@
-; A014619: Exponential generating function is -f(x) * int(exp(exp(-t)-1),t,0,x) where f(x) = exp(1-x-exp(-x)) is an exponential generating function for A014182.
+; A014619: Exponential generating function is -f(x) * Integral_{t = 0..x} exp(exp(-t) - 1) dt, where f(x) = exp(1 - x - exp(-x)) is the exponential generating function for A014182.
 ; Submitted by Ralfy
 ; -1,1,1,-5,5,21,-105,141,777,-5513,13209,39821,-527525,2257425,-41511,-70561285,531862173,-1559180499,-8858267353,147780183829,-936560917615,1352130196615,38710924110081,-487251979381019,2846575686392251,872653153712201
 

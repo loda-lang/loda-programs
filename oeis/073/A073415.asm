@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
-  seq $1,88431 ; Half of the (n+1)-st component of the continued fraction expansion of Sum_{k>=1} 1/2^(2^k).
+  seq $1,88431 ; Half of the (n+1)-st component of the continued fraction expansion of Sum_{k>=0} 1/2^(2^k).
   mul $1,2
   mul $1,$2
   add $1,$4

@@ -1,4 +1,4 @@
-; A140221: A number n is included if n is coprime to sum{k=1 to n} d(k), where d(k) is the number of divisors of k.
+; A140221: A number n is included if n is coprime to Sum_{k=1..n} d(k), where d(k) is the number of divisors of k.
 ; Submitted by Kotenok2000
 ; 1,2,3,7,9,10,11,12,13,14,17,19,23,25,27,28,29,31,32,34,35,37,41,43,45,49,50,51,52,53,54,56,58,59,61,62,65,67,69,71,73,75,77,79,81,82,83,84,86,87,88,89,92,93,94,95,97,98,101,103,107,109,111,113,115,117,119,122
 

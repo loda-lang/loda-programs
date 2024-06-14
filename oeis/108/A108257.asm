@@ -1,4 +1,4 @@
-; A108257: Numbers n such that concatenating n and the sum of factorials of the digits of n produces a prime.
+; A108257: Numbers k such that concatenating k and the sum of factorials of the digits of k produces a prime.
 ; Submitted by ChelseaOilman
 ; 1,13,15,30,31,91,101,110,128,133,136,138,144,152,156,166,175,193,199,203,215,230,250,260,280,281,303,304,306,307,309,315,320,330,331,340,361,391,412,508,520,550,606,651,661,681,708,712,717,730,750,751,780
 

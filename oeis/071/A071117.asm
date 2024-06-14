@@ -1,4 +1,4 @@
-; A071117: Sum of first n digits of decimal expansion of e is prime.
+; A071117: Numbers k such that the sum of the first k digits of the decimal expansion of e is prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,7,8,10,18,24,38,42,52,54,64,100,107,112,113,114,135,144,145,150,151,159,162,172,177,184,189,196,197,202,213,214,223,228,230,232,238,239,240,252,255,264,267,272,278,283,302,314,315,316,332,338,366,367,374
 

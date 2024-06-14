@@ -1,4 +1,4 @@
-; A075149: Sum_{i=0..2*A053645(n)} (C(2*A053645(n),i) mod 2)*A000045(n-i) [where C(r,c) is the binomial coefficient (A007318) and A000045(n) is the n-th Fibonacci number).].
+; A075149: Sum_{i=0..2*A053645(n)} (C(2*A053645(n),i) mod 2)*A000045(n-i) [where C(r,c) is the binomial coefficient (A007318) and A000045(n) is the n-th Fibonacci number].
 ; Submitted by Jamie Morken(w2)
 ; 0,1,1,3,3,7,9,21,21,47,63,141,147,329,441,987,987,2207,2961,6621,6909,15449,20727,46347,46389,103729,139167,311187,324723,726103,974169,2178309,2178309,4870847,6534927,14612541,15248163,34095929,45744489
 

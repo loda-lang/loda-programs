@@ -1,4 +1,4 @@
-; A060923: Bisection of Lucas triangle A060922: even indexed members of column sequences of A060922 (not counting leading zeros).
+; A060923: Bisection of Lucas triangle A060922: even-indexed members of column sequences of A060922 (not counting leading zeros).
 ; Submitted by Jim1348
 ; 1,4,1,11,17,1,29,80,39,1,76,303,315,70,1,199,1039,1687,905,110,1,521,3364,7470,6666,2120,159,1,1364,10493,29634,37580,20965,4311,217,1,3571,31885,109421,181074,148545
 

@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,138685 ; Numbers n such that there is no prime of the form 2n + p^2 for any prime p.
+  seq $3,138685 ; Numbers k such that there is no prime of the form 2k + p^2 for any prime p.
   mov $5,$3
   sub $5,1
   sub $3,1

@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   add $3,1
-  seq $3,179952 ; Add 1 to all the divisors of n. a(n)=number of perfect squares in the set.
+  seq $3,179952 ; Add 1 to all the divisors of n. a(n) = number of perfect squares in the set.
   cmp $3,0
   sub $0,$3
   add $1,1

@@ -1,4 +1,4 @@
-; A140128: A positive integer n is included if d(d(n)) = d(d(n+1)), where d(n) is the number of divisors of n.
+; A140128: A positive integer k is included if d(d(k)) = d(d(k+1)), where d(k) is the number of divisors of k.
 ; Submitted by WTBroughton
 ; 2,3,4,14,16,21,26,33,34,35,38,44,57,75,85,86,93,94,98,104,116,118,122,133,135,141,142,145,147,152,153,158,164,170,171,174,175,177,188,189,201,202,205,207,213,214,217,218,225,230,231,242,243,244,245,253,272,284,285,296,298,301,302,324,326,332,334,344,356,368,369,374,375,381,387,393,394,399,404,405
 

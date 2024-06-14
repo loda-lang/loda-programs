@@ -1,4 +1,4 @@
-; A136481: Symmetric polynomial matrices that give multivariate determinants as Coefficients of characteristic polynomials: h(n,m)=If[m == 1, n, If[n - m + 1 == 0, 1, If[n - m == 0, 1, If[n - m > 0, 1, 0]]]],n,m<=d.
+; A136481: Triangle: h(n,m)=If[m == 1, n, If[n - m + 1 == 0, 1, If[n - m == 0, 1, If[n - m > 0, 1, 0]]]],n,m<=d.
 ; Submitted by Landjunge
 ; 1,1,-1,-1,-2,1,1,0,3,-1,-1,0,2,-4,1,1,0,0,-5,5,-1,-1,0,0,-2,9,-6,1,1,0,0,0,7,-14,7,-1,-1,0,0,0,2,-16,20,-8,1,1,0,0,0,0,-9,30,-27,9,-1,-1,0,0,0,0,-2,25,-50,35,-10,1
 

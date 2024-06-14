@@ -1,6 +1,6 @@
 ; A171760: The maximum number of sets of n queens which can be placed on an n X n chessboard such that no queen attacks another queen in the same set.
 ; Submitted by [SG]FX
-; 0,1,0,0,2,5,4,7,6,7,8,11,12,13,14
+; 0,1,0,0,2,5,4,7,6,7,8,11,12,13,14,15,16,17
 
 mov $3,$0
 mov $1,$0

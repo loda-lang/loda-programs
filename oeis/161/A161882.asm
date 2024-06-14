@@ -1,4 +1,4 @@
-; A161882: Smallest k such that n^2 = a_1^2+...+a_k^2 and all a_i are positive integers less than n.
+; A161882: Smallest k such that n^2 = a_1^2 + ... + a_k^2 and all a_i are positive integers less than n.
 ; Submitted by Simon Strandgaard
 ; 4,3,4,2,3,3,4,3,2,3,3,2,3,2,4,2,3,3,2,3,3,3,3,2,2,3,3,2,2,3,4,3,2,2,3,2,3,2,2,2,3,3,3,2,3,3,3,3,2,2,2,2,3,2,3,3,2,3,2,2,3,3,4,2,3,3,2,3,2,3,3,2,2,2,3,3,2,3,2,3
 

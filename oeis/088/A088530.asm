@@ -1,4 +1,4 @@
-; A088530: Denominator of Bigomega(n)/Omega(n).
+; A088530: Denominator of bigomega(n)/omega(n).
 ; Submitted by Simon Strandgaard (M1)
 ; 1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,1,2,1,2,1,1,1,1,1,1,1,3,1,1,2,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,2,1
 ; Formula: a(n) = truncate(A001221(n+1)/gcd(A086436(n+1),A001221(n+1)))

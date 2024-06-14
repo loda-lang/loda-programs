@@ -1,4 +1,4 @@
-; A085776: Numbers n such that n concatenated with n+1 is a semiprime.
+; A085776: Numbers k such that k concatenated with k+1 is a semiprime.
 ; Submitted by ChelseaOilman
 ; 3,10,14,17,18,20,21,26,30,32,33,38,45,46,48,53,54,57,66,70,72,77,81,84,88,98,101,105,110,116,118,122,125,128,132,140,141,142,146,152,158,162,164,170,173,176,177,178,185,190,194,198,204,206,208,210,212,218,222
 

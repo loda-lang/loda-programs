@@ -11,7 +11,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,81663 ; F(2n+1)+n*2^(n-1).
+  seq $0,81663 ; a(n) = Fibonacci(2n+1) + n*2^(n-1).
   mul $1,$0
   add $3,$1
 lpe

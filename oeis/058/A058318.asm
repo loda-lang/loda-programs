@@ -1,4 +1,4 @@
-; A058318: Number of energy levels in atoms of n-th element of periodic table.
+; A058318: Number of energy levels in atoms of the n-th element of the periodic table.
 ; Submitted by Science United
 ; 1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
 

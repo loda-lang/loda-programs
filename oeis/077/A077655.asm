@@ -5,7 +5,7 @@
 
 mov $1,$0
 seq $0,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
-seq $1,71193 ; Least m>n such that the number of prime factors of m and n differ at least by 1.
+seq $1,71193 ; Least m > n such that bigomega(m) != bigomega(n), where bigomega(n) = A001222(n).
 sub $1,$0
 mov $0,$1
 sub $0,1

@@ -17,7 +17,7 @@ lpb $2
   mov $3,$1
   bin $3,$1
   add $1,$0
-  seq $1,154108 ; A000110 / (1,2,3,...): (convolved with (1,2,3,...) = Bell numbers.
+  seq $1,154108 ; A000110 / (1,2,3,...): (convolved with (1,2,3,...) = Bell numbers).
   sub $0,1
   mul $3,$1
   add $5,$3

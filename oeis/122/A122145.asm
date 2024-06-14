@@ -1,4 +1,4 @@
-; A122145: Numbers n such that q(n) < M(n) where q(n) is the largest prime divisor of n and M(n) is the largest prime power divisor of n.
+; A122145: Numbers k such that q(k) < M(k) where q(k) is the largest prime divisor of k and M(k) is the largest prime power divisor of k.
 ; Submitted by nenym
 ; 4,8,9,12,16,18,24,25,27,32,36,40,45,48,49,50,54,56,63,64,72,75,80,81,90,96,98,100,108,112,120,121,125,126,128,135,144,147,150,160,162,168,169,175,176,180,189,192,196,200,208,216,224,225,240,242,243,245,250,252,256,270,275,280,288,289,294,297,300,315,320,324,325,336,338,343,350,351,352,360
 

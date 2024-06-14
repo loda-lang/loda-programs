@@ -1,4 +1,4 @@
-; A096785: Primes of form 4n+1 which are the sum of two consecutive composite numbers.
+; A096785: Primes of form 4k+1 which are the sum of two consecutive composite numbers.
 ; Submitted by Ralfy
 ; 17,29,41,53,89,97,101,109,113,137,149,173,181,197,229,233,241,257,269,281,293,317,337,349,353,373,389,401,409,433,449,461,509,521,557,569,577,593,601,617,641,653,677,701,709,761,769,773,797,809,821,829,853
 

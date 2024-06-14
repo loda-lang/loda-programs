@@ -1,4 +1,4 @@
-; A085558: Numbers with the property that the number of prime digits < number of nonprime digits.
+; A085558: Numbers that have more nonprime digits than prime digits.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,4,6,8,9,10,11,14,16,18,19,40,41,44,46,48,49,60,61,64,66,68,69,80,81,84,86,88,89,90,91,94,96,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,124,126,128,129,130
 

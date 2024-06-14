@@ -5,7 +5,7 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  seq $2,38164 ; G.f.: 1/((1-x)*(1-x^2))^4.
+  seq $2,38164 ; Expansion of 1/((1-x)*(1-x^2))^4.
   sub $0,1
   add $1,$2
 lpe

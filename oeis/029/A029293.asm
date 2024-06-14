@@ -12,7 +12,7 @@ lpb $0
   max $5,$2
   add $2,$5
   mov $4,$2
-  seq $4,25901 ; Expansion of 1/((1-x^6)(1-x^7)(1-x^12)).
+  seq $4,25901 ; Expansion of 1/((1-x^6)*(1-x^7)*(1-x^12)).
   add $1,$4
   mov $3,6
 lpe

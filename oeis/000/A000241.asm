@@ -1,5 +1,5 @@
 ; A000241: Crossing number of complete graph with n nodes.
-; 0,0,0,0,0,1,3,9,18,36,60,100,150
+; 0,0,0,0,0,1,3,9,18,36,60,100,150,225,315
 
 sub $0,1
 lpb $0

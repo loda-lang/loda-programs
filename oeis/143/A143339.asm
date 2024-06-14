@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,348957 ; G.f. A(x) satisfies: A(x) = (1 + x * A(-x)) / (1 - x * A(x)).
+    seq $7,348957 ; G.f. A(x) satisfies A(x) = (1 + x * A(-x)) / (1 - x * A(x)).
     mov $9,10
     add $9,$5
     mul $7,$$9

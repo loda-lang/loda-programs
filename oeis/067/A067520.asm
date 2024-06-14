@@ -1,4 +1,4 @@
-; A067520: Triangular numbers whose index is a multiple of the sum of the digits.
+; A067520: Triangular numbers whose index is a multiple of the sum of their digits.
 ; Submitted by Landjunge
 ; 1,10,21,45,55,120,171,300,465,666,820,1035,1485,1830,2016,2211,2628,2850,2926,3321,4095,5050,5565,5886,7260,8001,8911,10011,10440,13203,14196,16290,17955,18145,18528,19701,20910,22155,23436,24310,29646
 

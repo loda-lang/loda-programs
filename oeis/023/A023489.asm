@@ -6,5 +6,5 @@
 mov $1,$0
 seq $1,22800 ; a(n) = F(n+2) + c(n) where F(k) is k-th Fibonacci number and c(n) is n-th number that is 1 or is a non-Fibonacci number.
 add $0,1
-seq $0,128588 ; A007318 * A128587.
+seq $0,128588 ; Expansion of g.f. x*(1+x+x^2)/(1-x-x^2).
 add $0,$1

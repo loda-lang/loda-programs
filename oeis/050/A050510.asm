@@ -6,7 +6,7 @@ mov $1,$0
 mov $2,2
 lpb $2
   div $2,2
-  seq $0,7067 ; Nearest integer to n*tau.
+  seq $0,7067 ; Nearest integer to n*tau where tau = (1+sqrt(5))/2.
   mul $1,$0
 lpe
 mov $0,$1

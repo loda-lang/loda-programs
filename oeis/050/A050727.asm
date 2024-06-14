@@ -1,4 +1,4 @@
-; A050727: Decimal expansion of 6^n contains no pair of consecutive equal digits (probably finite).
+; A050727: Numbers k such that the decimal expansion of 6^k contains no pair of consecutive equal digits (probably finite).
 ; Submitted by Orange Kid
 ; 0,1,2,3,4,8,11,13,14,15,26
 

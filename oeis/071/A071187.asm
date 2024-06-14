@@ -1,4 +1,4 @@
-; A071187: Smallest prime factor of number of divisors of n.
+; A071187: Smallest prime factor of number of divisors of n; a(1) = 1.
 ; Submitted by [AF>Libristes] erik
 ; 1,2,2,3,2,2,2,2,3,2,2,2,2,2,2,5,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,7,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 ; Formula: a(n) = A020639(A000005(n)-1)

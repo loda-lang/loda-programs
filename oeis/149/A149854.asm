@@ -1,4 +1,4 @@
-; A149854: Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0) and consisting of n steps taken from {(-1, -1, -1), (-1, -1, 1), (0, 1, 0), (1, 1, 0)}
+; A149854: Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0) and consisting of n steps taken from {(-1, -1, -1), (-1, -1, 1), (0, 1, 0), (1, 1, 0)}.
 ; Submitted by Science United
 ; 1,2,5,13,37,111,346,1100,3557,11683,38926,131154,445765,1526305,5261985,18254431,63672445,223138635,785267758,2774187398,9835528373,34983477901,124795716145,446376963933,1600610895841,5752771831361,20720666878796,74782199279800,270397125942817,979410568546113,3553373294757136
 

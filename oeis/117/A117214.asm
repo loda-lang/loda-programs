@@ -5,4 +5,4 @@
 
 seq $0,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
 sub $0,1
-seq $0,83720 ; Product of primes less than greatest prime factor of n but not dividing n.
+seq $0,83720 ; Product of the primes less than the greatest prime factor of n but not dividing n.

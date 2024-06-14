@@ -5,7 +5,7 @@
 
 mov $2,$0
 add $2,2
-seq $0,135507 ; a(1)=1; for n>1, a(n)=2*a(n-1)+lcm(a(n-1),n).
+seq $0,135507 ; a(1) = 1; for n > 1, a(n) = 2*a(n-1) + lcm(a(n-1),n).
 mov $1,$0
 gcd $1,$2
 mov $0,$2

@@ -6,6 +6,6 @@
 mov $1,$0
 seq $1,1690 ; Non-Fibonacci numbers.
 add $0,2
-seq $0,128588 ; A007318 * A128587.
+seq $0,128588 ; Expansion of g.f. x*(1+x+x^2)/(1-x-x^2).
 div $0,2
 add $0,$1

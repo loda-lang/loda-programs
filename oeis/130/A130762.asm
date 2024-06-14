@@ -4,7 +4,7 @@
 ; Formula: a(n) = A350634(n)*gcd(A133156(n),2)
 
 mov $1,$0
-seq $1,350634 ; Products of the parts s,t in each partition of k (= 2,3,..) into two parts, ordered by increasing k and then by increasing values of s*t (see example).
+seq $1,350634 ; Products of the parts s,t in each partition of k (= 2,3,...) into two parts, ordered by increasing k and then by increasing values of s*t (see example).
 seq $0,133156 ; Irregular triangle read by rows: coefficients of U(n,x), Chebyshev polynomials of the second kind with exponents in decreasing order.
 gcd $0,2
 mul $0,$1

@@ -4,6 +4,6 @@
 ; Formula: a(n) = A001221(A128588(n+1)-1)
 
 add $0,1
-seq $0,128588 ; A007318 * A128587.
+seq $0,128588 ; Expansion of g.f. x*(1+x+x^2)/(1-x-x^2).
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

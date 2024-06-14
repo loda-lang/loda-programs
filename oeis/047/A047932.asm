@@ -11,7 +11,7 @@ seq $2,55086 ; n appears 1+[n/2] times.
 add $2,$3
 add $2,4
 mov $1,2
-seq $1,198694 ; 7*4^n-1.
+seq $1,198694 ; a(n) = 7*4^n-1.
 mul $0,6
 sub $0,105
 add $0,$1

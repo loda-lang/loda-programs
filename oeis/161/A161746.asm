@@ -1,6 +1,6 @@
-; A161746: The number of equivalence classes of n-leaf binary trees with respect to pattern avoidance.
+; A161746: The number of equivalence classes of n-leaf binary trees with respect to contiguous pattern avoidance.
 ; Submitted by NeoGen
-; 1,1,1,2,3,7,15,43
+; 1,1,1,2,3,7,15,43,136
 
 lpb $0
   sub $0,1

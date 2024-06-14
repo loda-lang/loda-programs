@@ -1,4 +1,4 @@
-; A123640: Consider the 2^n compositions of n per row and mark only those ending in an odd part.
+; A123640: a(n) = A065120(n) modulo 2.
 ; Submitted by Science United
 ; 0,1,0,1,1,0,1,1,0,1,0,0,1,1,1,1,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1
 

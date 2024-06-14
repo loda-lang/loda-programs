@@ -1,4 +1,4 @@
-; A081147: Differences of Beatty sequence for square root of 5.
+; A081147: First differences of A022839.
 ; Submitted by Conan
 ; 2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2
 ; Formula: a(n) = d(n+1)+2, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -8, b(1) = 0, b(0) = 1, c(n) = 8*gcd(max(d(n-1)-2,0)+truncate((-c(n-1)+b(n-1))/2)-1,4)*c(n-1), c(2) = 128, c(1) = 16, c(0) = 2, d(n) = truncate(gcd(max(d(n-1)-2,0)+truncate((-c(n-1)+b(n-1))/2)-1,4)/2), d(2) = 0, d(1) = 0, d(0) = 0

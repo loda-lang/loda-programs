@@ -3,6 +3,6 @@
 ; 1,0,2,0,2,0,1,2,2,1,2,0,3,0,2,1,3,1,1,2,1,1,3,1,3,2,2,1,3,2,3,1,3,1,1,1,3,2,3,2,3,1,3,1,3,1,2,2,3,3,3,2,4,1,1,3,4,2,1,0,2,1,2,0,1,2,2,3,2,3,3,1,3,1,1,2,4,1,3,3
 ; Formula: a(n) = A001221(A132995(n)-1)
 
-seq $0,132995 ; a(n) = gcd(sum{k=1...n} p(k), product{j=1...n} p(j)), where p(k) is the k-th prime.
+seq $0,132995 ; a(n) = gcd(Sum_{k=1..n} prime(k), Product{j=1..n} prime(j)).
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

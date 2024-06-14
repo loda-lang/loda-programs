@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,121699 ; Floor((prime(n+1)/prime(n))^n).
+  seq $3,121699 ; a(n) = floor((prime(n+1)/prime(n))^n).
   sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -1,4 +1,4 @@
-; A083782: n-th row of the following triangle contains n distinct natural numbers such that every sum of n-1 of them +1 is a prime,n >1, with a(1) = 1 by convention. Sequence contains the triangle by rows.
+; A083782: n-th row of the following triangle contains n distinct natural numbers such that every sum of n-1 of them +1 is a prime, n>1, with a(1) = 1 by convention. Sequence contains the triangle by rows.
 ; Submitted by eclipse99
 ; 1,1,2,1,3,9,2,4,6,16
 

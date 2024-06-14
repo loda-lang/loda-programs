@@ -1,4 +1,4 @@
-; A006614: Zarankiewicz's problem.
+; A006614: A variant of Zarankiewicz's problem: a(n) is the least k such that every n X n {0,1}-matrix with k ones contains an all-ones 2 X 4 submatrix.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 14,21,26,32,41,48,56,67
 

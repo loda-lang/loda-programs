@@ -1,4 +1,4 @@
-; A162660: Triangle read by rows, the coefficients of the complementary Swiss-Knife polynomials.
+; A162660: Triangle read by rows: coefficients of the complementary Swiss-Knife polynomials.
 ; Submitted by ChelseaOilman
 ; 0,1,0,0,2,0,-2,0,3,0,0,-8,0,4,0,16,0,-20,0,5,0,0,96,0,-40,0,6,0,-272,0,336,0,-70,0,7,0,0,-2176,0,896,0,-112,0,8,0,7936,0,-9792,0,2016,0,-168,0,9,0,0,79360,0,-32640,0,4032,0,-240,0,10,0
 

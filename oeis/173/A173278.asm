@@ -9,7 +9,7 @@ lpb $0
   max $2,0
   mov $3,$2
   add $3,1
-  seq $2,195095 ; G.f.: Sum_{n>=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+  seq $2,195095 ; Duplicate of A011946.
   div $2,$3
   mul $2,2
   add $1,$2

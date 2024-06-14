@@ -1,4 +1,4 @@
-; A084754: Triangle read by rows: row n contains the first n primes greater than n.
+; A084754: Triangle read by rows: row n lists the first n primes greater than n.
 ; Submitted by Simon Strandgaard (M1)
 ; 2,3,5,5,7,11,5,7,11,13,7,11,13,17,19,7,11,13,17,19,23,11,13,17,19,23,29,31,11,13,17,19,23,29,31,37,11,13,17,19,23,29,31,37,41,11,13,17,19,23,29,31,37,41,43,13,17,19,23,29,31,37,41,43,47,53,13,17,19,23,29,31,37,41,43,47,53,59,17,19
 

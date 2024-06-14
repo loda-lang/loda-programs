@@ -1,4 +1,4 @@
-; A064409: Even numbers not the sum of a pair of twin primes, one the lesser and the other the greater.
+; A064409: Positive even numbers not of the form A001359(i) + A006512(j) for integers i and j.
 ; Submitted by Jim1348
 ; 2,4,6,14,20,26,28,32,38,40,44,50,52,56,58,62,68,70,74,80,82,86,88,92,94,96,98,100,104,110,116,118,122,124,128,130,134,136,140,146,148,152,158,160,164,166,170,172,176,178,182,188,190,194,200
 

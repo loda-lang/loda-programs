@@ -14,7 +14,7 @@ lpb $4
   bin $1,$0
   add $5,1
   sub $0,2
-  seq $0,195095 ; G.f.: Sum_{n>=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+  seq $0,195095 ; Duplicate of A011946.
   div $0,$5
   mul $1,$0
   add $3,$1

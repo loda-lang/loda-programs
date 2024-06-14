@@ -7,6 +7,6 @@ mov $1,$0
 seq $1,7522 ; Primes of the form 8n+7, that is, primes congruent to -1 mod 8.
 div $1,8
 add $1,2
-seq $0,153762 ; Numbers n such that 8n + 9 is prime.
+seq $0,153762 ; Numbers k such that 8k + 9 is prime.
 add $0,$1
 mul $0,8

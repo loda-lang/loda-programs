@@ -1,4 +1,4 @@
-; A093458: Mixed factorials. Define MF(n) as the product prime(1)*composite(1)*(prime(2)*composite(2)...prime(n/2)*composite(n/2) if n is even else MF(n) as the product prime(1)*composite(1)*(prime(2)*composite(2)*...*prime((n+1)/2). a(0)= 1.
+; A093458: Partial products of A073846.
 ; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 1,2,8,24,144,720,5760,40320,362880,3991680,39916800,518918400,6227020800,105859353600,1482030950400,28158588057600,422378820864000,9714712879872000,155435406077952000,4507626776260608000
 ; Formula: a(n) = A073846(n)*a(n-1), a(0) = 1

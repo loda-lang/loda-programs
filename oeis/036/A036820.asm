@@ -12,7 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,284361 ; Sum_{d|n, d = 0, 1, or 4 mod 5} d.
+    seq $7,284361 ; a(n) = Sum_{d|n, d = 0, 1, or 4 mod 5} d.
     mov $9,10
     add $9,$5
     mul $7,$$9

@@ -1,4 +1,4 @@
-; A129379: a(n) = sum of sums of all sets of three distinct preceding terms; a(n) = n for n<=3.
+; A129379: a(n) = sum of sums of all sets of three distinct preceding terms otherwise a(n) = n for n <= 3.
 ; Submitted by Jamie Morken(w3)
 ; 1,2,3,6,36,288,3360,55440,1241856,36427776,1358235648,62818398720,3531789972480,237336286150656,18792718657929216,1732062236305809408,183865068161693614080,22273939685873740677120
 

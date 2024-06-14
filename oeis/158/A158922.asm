@@ -1,6 +1,6 @@
 ; A158922: Number of simple critical nonplanar graphs on n nodes.
 ; Submitted by USTL-FIL (Lille Fr)
-; 0,0,0,0,1,8,40,258
+; 0,0,0,0,1,8,40,258,1310,6084
 
 mov $1,1
 mov $2,1
