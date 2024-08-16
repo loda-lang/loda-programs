@@ -3,4 +3,4 @@
 
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 div $0,10
-cmp $0,0
+equ $0,0

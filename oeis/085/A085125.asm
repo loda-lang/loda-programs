@@ -9,12 +9,12 @@ pow $3,2
 lpb $3
   mov $4,$2
   seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  cmp $4,7
+  equ $4,7
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

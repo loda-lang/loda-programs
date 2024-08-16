@@ -6,5 +6,5 @@ add $0,1
 div $0,3
 mul $0,4
 mov $1,$0
-cmp $1,0
+equ $1,0
 add $0,$1

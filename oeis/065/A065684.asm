@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   seq $2,77648 ; Initial digits of prime numbers.
   bin $2,5
-  cmp $2,1
+  equ $2,1
   sub $0,1
   add $1,$2
 lpe

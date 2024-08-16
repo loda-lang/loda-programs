@@ -14,8 +14,8 @@ lpb $2
   mov $5,$0
   add $5,1
   bin $5,2
-  cmp $5,0
-  cmp $5,0
+  equ $5,0
+  equ $5,0
   sub $2,$5
 lpe
 mov $0,$4

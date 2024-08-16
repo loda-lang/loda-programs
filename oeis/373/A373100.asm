@@ -1,13 +1,11 @@
 ; A373100: Last digit of n*2^n - 1.
-; Submitted by Christian Krause
+; Submitted by ThrasherX-17
 ; 1,7,3,3,9,3,5,7,7,9,7,1,5,5,9,5,3,1,1,9,1,7,3,3,9,3,5,7,7,9,7,1,5,5,9,5,3,1,1,9,1,7,3,3,9,3,5,7,7,9,7,1,5,5,9,5,3,1,1,9,1,7
 ; Formula: a(n) = (n+1)*2^(n+1)-10*truncate(((n+1)*2^(n+1)-1)/10)-1
 
 add $0,1
-mov $2,2
-pow $2,$0
-mov $1,$0
-mul $1,$2
-mov $0,$1
+mov $1,2
+pow $1,$0
+mul $0,$1
 sub $0,1
 mod $0,10
