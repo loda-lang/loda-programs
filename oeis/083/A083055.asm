@@ -22,7 +22,7 @@ lpb $0
   add $3,$5
   add $3,1
   mod $3,-3
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   sub $0,1
   add $2,$3

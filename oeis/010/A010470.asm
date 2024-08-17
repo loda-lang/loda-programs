@@ -1,25 +1,27 @@
 ; A010470: Decimal expansion of square root of 13.
-; Submitted by Jon Maiga
+; Submitted by [B S] fred
 ; 3,6,0,5,5,5,1,2,7,5,4,6,3,9,8,9,2,9,3,1,1,9,2,2,1,2,6,7,4,7,0,4,9,5,9,4,6,2,5,1,2,9,6,5,7,3,8,4,5,2,4,6,2,1,2,7,1,0,4,5,3,0,5,6,2,2,7,1,6,6,9,4,8,2,9,3,0,1,0,4
 
-mov $1,4
-mov $2,4
-mov $5,50
 mov $3,$0
-mul $3,3
+mul $3,6
+add $3,169
 lpb $3
   sub $3,1
-  add $1,$5
-  mov $5,$1
+  add $6,$2
+  equ $1,1
+  add $1,$6
+  add $1,$2
+  div $1,9
+  mul $1,4
+  add $2,$1
   add $5,$2
-  mul $5,4
-  mov $2,$1
-  mul $1,2
+  sub $6,1
 lpe
 mov $4,10
 pow $4,$0
+mul $5,2
 div $2,$4
-add $1,$5
+mov $1,$5
 div $1,$2
 mov $0,$1
 mod $0,10

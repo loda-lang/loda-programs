@@ -14,7 +14,7 @@ lpb $4
   bin $1,$0
   seq $0,54055 ; Largest digit of n.
   mul $1,$0
-  cmp $1,2
+  equ $1,2
   add $3,$1
 lpe
 mov $0,$3

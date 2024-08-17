@@ -1,20 +1,18 @@
 ; A083035: a(n) = floor(sqrt(2)*n)-2*floor(n/sqrt(2)).
-; Submitted by waffleironhead
+; Submitted by fzs600
 ; 1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,0,0,1,1
+; Formula: a(n) = -2*truncate(truncate((b(n+1)*(n+1))/c(n+1))/2)+truncate((b(n+1)*(n+1))/c(n+1)), b(n) = 2*b(n-1)+2*c(n-1), b(1) = 2, b(0) = 0, c(n) = 4*c(n-1)-2*c(n-2), c(3) = 20, c(2) = 6, c(1) = 2, c(0) = 1
 
+add $0,1
 mov $2,1
-add $0,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  add $1,1
-  div $1,2
-  mul $2,4
-  add $3,$1
-  dif $1,2
+mov $3,$0
+lpb $3
+  sub $3,1
+  mul $2,2
+  add $2,$1
+  add $1,$2
 lpe
-mov $0,$3
-add $0,1
-mod $0,2
-add $0,2
+mul $1,$0
+div $1,$2
+mov $0,$1
 mod $0,2
