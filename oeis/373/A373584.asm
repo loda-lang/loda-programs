@@ -4,11 +4,8 @@
 ; Formula: a(n) = 6*floor((binomial(n+1,2)+1)/2)+1
 
 add $0,1
-mov $2,$0
-bin $2,2
-mov $1,$2
-add $1,1
-div $1,2
-mov $0,$1
+bin $0,2
+add $0,1
+div $0,2
 mul $0,6
 add $0,1

@@ -1,18 +1,23 @@
 ; A093995: n^2 repeated n times, triangle read by rows.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by gemini8
 ; 1,4,4,9,9,9,16,16,16,16,25,25,25,25,25,36,36,36,36,36,36,49,49,49,49,49,49,49,64,64,64,64,64,64,64,64,81,81,81,81,81,81,81,81,81,100,100,100,100,100,100,100,100,100,100,121,121,121,121,121,121,121,121,121,121,121,144,144,144,144,144,144,144,144,144,144,144,144,169,169
-; Formula: a(n) = d(n+1)^2, b(n) = truncate(c(n-1)/b(n-1))*b(n-1), b(2) = 6, b(1) = 3, b(0) = 3, c(n) = truncate(c(n-1)/b(n-1))*c(n-1)+b(n-1), c(2) = 15, c(1) = 6, c(0) = 3, d(n) = truncate(c(n-1)/b(n-1)), d(2) = 2, d(1) = 1, d(0) = 0
 
-mov $1,3
-mov $2,3
-add $0,1
-lpb $0
-  sub $0,1
-  mov $3,$2
-  div $3,$1
-  mul $2,$3
-  add $2,$1
-  mul $1,$3
+mov $3,2
+mov $5,$0
+add $5,1
+lpb $5
+  sub $5,1
+  div $4,2
+  sub $1,1
+  add $1,$2
+  mov $2,$4
+  gcd $2,2
+  add $4,$3
+  mul $3,$2
 lpe
-pow $3,2
-mov $0,$3
+mov $5,$1
+add $5,2
+mul $5,3
+pow $5,2
+mov $0,$5
+div $0,9

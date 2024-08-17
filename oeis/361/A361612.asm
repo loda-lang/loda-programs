@@ -1,16 +1,24 @@
 ; A361612: Decimal expansion of sqrt(10) truncated to n places (after the decimal point).
-; Submitted by shiva
+; Submitted by Science United
 ; 3,31,316,3162,31622,316227,3162277,31622776,316227766,3162277660,31622776601,316227766016,3162277660168,31622776601683,316227766016837,3162277660168379,31622776601683793,316227766016837933,3162277660168379331,31622776601683793319
 
-mul $0,2
-mov $2,$0
-add $2,1
-mov $0,10
-pow $0,$2
-mov $1,$0
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
+mov $3,$0
+mul $3,6
+add $3,169
+lpb $3
+  sub $3,1
+  add $6,$2
+  equ $1,1
+  add $1,$6
+  add $1,$2
+  div $1,9
+  add $2,$1
+  add $5,$2
+  sub $6,1
 lpe
+mov $4,10
+pow $4,$0
+div $2,$4
+mov $1,$5
+div $1,$2
+mov $0,$1
