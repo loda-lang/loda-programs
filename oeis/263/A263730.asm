@@ -13,12 +13,12 @@ lpb $2
   seq $3,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
   mov $5,$3
   add $1,1
-  cmp $3,0
-  cmp $3,0
+  equ $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

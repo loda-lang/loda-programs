@@ -7,13 +7,11 @@ mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
-  cmp $3,$2
-  cmp $3,0
+  equ $3,$2
+  equ $3,0
   mul $3,$0
   sub $0,1
-  mov $4,1
-  add $4,$0
-  sub $4,1
+  mov $4,$0
   max $4,1
   pow $3,$4
   mul $1,2

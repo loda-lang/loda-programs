@@ -29,7 +29,7 @@ lpb $0
   lpe
   sub $3,1
   seq $3,69192 ; Sum of the reversals of the divisors of n.
-  cmp $3,4
+  equ $3,4
   sub $3,1
   lpb $0
     dif $0,$2

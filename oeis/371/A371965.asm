@@ -1,7 +1,7 @@
 ; A371965: a(n) is the sum of all peaks in the set of Catalan words of length n.
-; Submitted by BlisteringSheep
+; Submitted by Mumps
 ; 0,0,0,1,6,27,111,441,1728,6733,26181,101763,395693,1539759,5997159,23381019,91244934,356427459,1393585779,5453514729,21358883439,83718027429,328380697629,1288947615849,5062603365999,19896501060225,78239857877649,307831771279549,1211767933187601
-; Formula: a(n) = truncate(b(n+1)/2)-1, b(n) = 2*binomial(truncate(c(n-1)/2),n-1)+b(n-1), b(2) = 2, b(1) = 2, b(0) = 0, c(n) = 2*n+truncate(c(n-1)/2)-1, c(2) = 3, c(1) = 1, c(0) = 0
+; Formula: a(n) = b(n+1)-1, b(n) = b(n-1)+binomial(truncate(c(n-1)/2),n-1), b(2) = 1, b(1) = 1, b(0) = 0, c(n) = 2*n+truncate(c(n-1)/2)-1, c(2) = 3, c(1) = 1, c(0) = 0
 
 add $0,1
 lpb $0
@@ -9,12 +9,10 @@ lpb $0
   div $4,2
   mov $3,$4
   bin $3,$1
-  mul $3,2
   add $4,$1
   add $1,1
   add $2,$3
   add $4,$1
 lpe
 mov $0,$2
-div $0,2
 sub $0,1
