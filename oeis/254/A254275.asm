@@ -8,6 +8,7 @@ add $4,1
 lpb $4
   sub $4,1
   div $4,7
+  min $4,1
   div $0,2
   mov $1,$2
   bin $1,$2

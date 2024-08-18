@@ -14,8 +14,8 @@ lpb $0
   sub $0,1
   mov $4,$3
   dif $4,$0
-  cmp $4,$3
-  cmp $4,0
+  equ $4,$3
+  equ $4,0
   sub $5,$2
   sub $0,1
   add $2,$5

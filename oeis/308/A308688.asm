@@ -8,8 +8,8 @@ lpb $0
   mov $3,$2
   dif $3,$0
   mov $4,$3
-  cmp $3,$2
-  cmp $3,0
+  equ $3,$2
+  equ $3,0
   mul $3,$0
   mul $4,2
   sub $4,1

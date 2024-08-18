@@ -1,23 +1,22 @@
 ; A104078: Numbers which are the sum of three nonzero squares and are also divisible by 31.
-; Submitted by Elzeard BOUFFIER
+; Submitted by crashtech
 ; 62,93,155,186,217,248,310,341,372,403,434,465,558,589,620,651,682,713,744,806,837,868,899,930,961,992,1054,1085,1147,1178,1209,1240,1302,1333,1364,1395,1426,1457,1488,1550,1581,1612,1643,1674,1705,1736,1798,1829,1860,1891,1922,1953,2046,2077,2139,2170,2201,2232,2294,2325,2356,2387,2418,2449,2480,2542,2573,2604,2635,2666,2697,2728,2790,2821,2852,2883,2914,2945,2976,3038
 
-mov $1,1
 mov $2,$0
+add $0,1
 pow $2,2
+add $2,5
 lpb $2
   mov $3,$1
-  seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
-  cmp $3,1
-  cmp $3,0
+  seq $3,71374 ; 0 iff n is of the form 4^a*(8k+7), otherwise 1.
   sub $0,$3
-  add $1,1
+  add $1,7
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+div $0,7
 mul $0,31
-add $0,31

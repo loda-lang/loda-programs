@@ -5,7 +5,7 @@
 mul $0,2
 lpb $0
   add $0,5
-  cmp $1,$0
+  equ $1,$0
   add $1,$2
   mul $1,4
   trn $2,216
