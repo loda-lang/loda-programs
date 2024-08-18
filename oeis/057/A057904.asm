@@ -9,7 +9,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,51344 ; Number of ways of writing n as a sum of 3 positive cubes (counted naively).
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

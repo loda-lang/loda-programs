@@ -1,15 +1,25 @@
 ; A173593: Numbers having in binary representation exactly two ones in three consecutive digits.
-; Submitted by Simon Strandgaard
+; Submitted by rolivos
 ; 3,5,6,11,13,22,27,45,54,91,109,182,219,365,438,731,877,1462,1755,2925,3510,5851,7021,11702,14043,23405,28086,46811,56173,93622,112347,187245,224694,374491,449389,748982,898779,1497965,1797558,2995931,3595117
+; Formula: a(n) = truncate(c(n+5)/2), b(n) = -d(n-2)+b(n-1)+b(n-2)+1, b(8) = 15, b(7) = 7, b(6) = 7, b(5) = 3, b(4) = 3, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = -c(n-4)-d(n-2)+b(n-2)+c(n-1)+c(n-3)+1, c(8) = 22, c(7) = 12, c(6) = 10, c(5) = 6, c(4) = 4, c(3) = 2, c(2) = 2, c(1) = 0, c(0) = 0, d(n) = -d(n-1)+b(n-1)+1, d(7) = 8, d(6) = 0, d(5) = 4, d(4) = 0, d(3) = 2, d(2) = 0, d(1) = 1, d(0) = 0
 
-add $0,3
-mov $1,$0
-mod $0,2
-lpb $1
-  sub $1,2
-  mul $0,2
-  add $0,5
+add $0,5
+lpb $0
+  sub $0,1
+  add $6,$3
+  mov $7,$6
+  sub $7,$1
+  add $8,1
+  add $4,1
+  sub $4,$9
+  mov $6,$4
+  mov $9,$4
+  mov $4,$2
+  mov $1,$3
+  add $2,$6
+  mov $3,$8
+  mov $8,$5
+  add $5,$7
 lpe
-mul $0,2
-div $0,7
-add $0,1
+mov $0,$5
+div $0,2

@@ -6,7 +6,7 @@ mov $3,4
 lpb $0
   mov $2,$0
   mod $2,4
-  cmp $2,3
+  equ $2,3
   mul $2,$3
   div $0,2
   add $1,$2

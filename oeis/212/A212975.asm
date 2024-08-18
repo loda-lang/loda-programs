@@ -1,16 +1,14 @@
 ; A212975: Number of (w,x,y) with all terms in {0,...,n} and even range.
-; Submitted by Jon Maiga
+; Submitted by Aionel
 ; 1,2,15,28,65,102,175,248,369,490,671,852,1105,1358,1695,2032,2465,2898,3439,3980,4641,5302,6095,6888,7825,8762,9855,10948,12209,13470,14911,16352,17985,19618,21455,23292,25345,27398,29679,31960
-; Formula: a(n) = truncate(((n+1)*((n+1)^2+gcd(4,(n+1)^2-1)-3))/2)
+; Formula: a(n) = (n+1)*(3*floor(n/2)+binomial(n,2)+1)
 
-add $0,1
 mov $1,$0
-pow $0,2
-sub $0,1
-mov $2,4
-gcd $2,$0
-add $0,$2
-sub $0,2
-mul $1,$0
-mov $0,$1
+mov $2,1
+add $2,$0
 div $0,2
+mul $0,3
+bin $1,2
+add $1,1
+add $0,$1
+mul $0,$2
