@@ -1,20 +1,22 @@
 ; A369806: Expansion of 1/(1 - x^3/(1-x)^7).
-; Submitted by Aionel
+; Submitted by [AF] Kalianthys
 ; 1,0,0,1,7,28,85,224,567,1485,4117,11802,33909,96182,269402,750275,2090728,5845015,16384908,45973701,128944042,361364501,1012168575,2834690172,7939970075,22244001961,62323608147,174620915138,489240430938,1370662332271,3839992876850
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,373909 ; Number of compositions of 7*n into parts 3 and 7.
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+mov $3,$0
+mov $5,2
+lpb $5
+  bin $5,$4
+  add $0,$5
+  sub $0,1
+  mov $4,$0
+  max $4,0
+  seq $4,373909 ; Number of compositions of 7*n into parts 3 and 7.
+  mov $2,$5
+  mul $2,$4
+  mul $0,$5
+  add $1,$2
 lpe
-min $1,1
-mul $1,$0
-mov $0,$4
-sub $0,$1
+min $3,1
+mul $3,$4
+sub $1,$3
+mov $0,$1

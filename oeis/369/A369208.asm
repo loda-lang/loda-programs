@@ -1,31 +1,25 @@
 ; A369208: Expansion of (1/x) * Series_Reversion( x * (1-x)^2 / (1+x^2) ).
-; Submitted by Mumps
+; Submitted by Orange Kid
 ; 1,2,8,38,200,1122,6576,39790,246672,1558658,10001592,64997814,426922392,2829624514,18901301984,127115260894,859978039840,5848754717314,39964745880552,274231943135686,1888891689752680,13055393137141282,90517646431869328
 
-mov $2,1
-mov $10,1
+mov $1,$0
+add $0,1
+mov $6,$0
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,370242 ; Coefficient of x^n in the expansion of ( 1/(1-x)^2 * (1+x^2) )^n.
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-  mov $8,$3
+  equ $2,1
+  sub $2,$6
+  mul $2,2
+  bin $2,$0
+  sub $4,1
+  trn $0,1
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,1
+  gcd $3,0
+  div $3,$1
+  add $5,$3
+  trn $1,2
 lpe
-mov $0,$8
-max $0,1
+mov $0,$5

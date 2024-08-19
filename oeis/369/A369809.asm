@@ -13,6 +13,7 @@ lpb $5
   seq $4,373912 ; Number of compositions of 7*n into parts 6 and 7.
   mov $2,$5
   mul $2,$4
+  mul $0,$5
   add $1,$2
 lpe
 min $3,1
