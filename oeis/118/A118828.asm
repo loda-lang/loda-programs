@@ -1,17 +1,18 @@
 ; A118828: Numerators of the convergents of the 2-adic continued fraction of zero given by A118827.
-; Submitted by fzs600
+; Submitted by zombie67 [MM]
 ; 1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1,1,-1,0,-1,-1,1,0,1
+; Formula: a(n) = binomial(-truncate((n+1)/min(2*binomial(-1,floor((n+1)/2)),1))*min(2*binomial(-1,floor((n+1)/2)),1)+n,floor((floor((n+1)/2)+1)/2))
 
-mul $0,7
-mov $1,$0
-add $1,4
-lpb $1
-  mul $1,3
-  mod $1,8
-lpe
-bin $1,2
-sub $1,1
-lpb $1
-  mod $1,4
-lpe
-mov $0,$1
+add $0,1
+mov $2,$0
+div $0,2
+mov $1,-1
+bin $1,$0
+add $0,1
+div $0,2
+mul $1,2
+min $1,1
+mod $2,$1
+sub $2,1
+bin $2,$0
+mov $0,$2

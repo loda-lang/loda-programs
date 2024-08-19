@@ -1,13 +1,17 @@
 ; A373933: Number of compositions of 7*n-1 into parts 6 and 7.
-; Submitted by Orange Kid
+; Submitted by ThrasherX-17
 ; 1,2,3,4,5,6,8,17,54,175,506,1299,3017,6465,13021,25142,47651,91104,180254,374077,810381,1800140,4019204,8888489,19322901,41223071,86520282,179574728,370946309,767426451,1597653852,3354537225,7101005320,15118658953
-; Formula: a(n) = a(n-1)+A373912(n), a(0) = 1
 
-mov $1,1
+mov $3,$0
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,373912 ; Number of compositions of 7*n into parts 6 and 7.
   sub $0,1
+  mov $2,$3
+  add $2,1
+  bin $2,$0
+  sub $0,3
+  trn $0,2
   add $1,$2
+  add $3,1
 lpe
 mov $0,$1

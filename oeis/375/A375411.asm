@@ -8,9 +8,7 @@ lpb $0
   sub $4,1
   mov $2,$4
   bin $2,$0
-  mov $3,$0
-  bin $3,59
-  sub $3,1
+  mov $3,-1
   pow $3,$1
   mul $3,$2
   mul $5,$1

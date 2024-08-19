@@ -13,7 +13,7 @@ lpb $2
   seq $3,53603 ; Number of ways to write n as an ordered sum of two nonzero triangular numbers.
   add $3,1
   div $3,2
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

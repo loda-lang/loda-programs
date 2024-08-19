@@ -12,8 +12,8 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    equ $4,1
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

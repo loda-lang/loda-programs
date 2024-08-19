@@ -1,12 +1,19 @@
 ; A356139: a(n) = A137804(A001951(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Stony666
 ; 2,4,8,10,14,16,18,23,25,29,31,33,37,39,43,46,50,52,54,58,60,64,67,69,73,75,79,81,85,87,90,94,96,100,102,104,108,110,115,117,119,123,125,129,131,136,138,140,144,146,150,152,154,159,161,165,167,171,173
-; Formula: a(n) = 2*A001951(n+1)+truncate(A001951(A001951(n+1))/15)
 
 add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-mov $1,$0
+pow $0,2
+mul $0,2
+mov $3,$0
+nrt $3,2
+mov $1,$3
 mul $1,2
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+mov $0,$3
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2
 div $0,15
 add $0,$1
