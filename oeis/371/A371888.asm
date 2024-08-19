@@ -1,19 +1,24 @@
 ; A371888: G.f. A(x) satisfies A(x) = 1 - x/A(x) * (1 - A(x) - A(x)^2).
-; Submitted by Skillz
+; Submitted by Joe
 ; 1,1,2,3,3,1,-2,-1,10,25,12,-65,-151,-7,588,1083,-437,-5247,-7732,7943,47503,53793,-105312,-430117,-343042,1249801,3866558,1730019,-13996095,-34243895,-1947202,150962375,296101866,-121857183,-1582561868,-2468098041,2529520767
 
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,156906 ; Transform of Fibonacci(n+1) with Hankel transform (-1)^binomial(n+1,2) * Fibonacci(n+1).
-  mul $1,$0
-  add $3,$1
+add $0,1
+lpb $0
+  sub $0,1
+  mod $2,-1
+  sub $2,$6
+  bin $2,$0
+  sub $4,$0
+  mov $3,$4
+  bin $3,$1
+  add $4,1
+  add $4,$0
+  add $1,1
+  mul $3,$2
+  div $3,$1
+  mov $1,$6
+  mul $5,-1
+  add $5,$3
+  add $6,1
 lpe
-mov $0,$3
+mov $0,$5

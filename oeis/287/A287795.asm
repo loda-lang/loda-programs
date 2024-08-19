@@ -1,12 +1,15 @@
 ; A287795: {0->101, 1->010}-transform of the infinite Fibonacci word A003849.
-; Submitted by eclipse99
+; Submitted by Jerzy_Przytocki
 ; 1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0
-; Formula: a(n) = gcd(-A022318(n)+A287790(n)-1,2)-1
+; Formula: a(n) = -2*truncate((floor((2*n+2)/3)+A035612(floor(n/3)))/2)+floor((2*n+2)/3)+A035612(floor(n/3))
 
+mov $2,$0
+div $2,3
+seq $2,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+add $0,1
 mov $1,$0
-seq $1,22318 ; a(n) = a(n-1) + a(n-2) + 1, with a(0) = 1 and a(1) = 4.
-seq $0,287790 ; {0->001, 1->110}-transform of the infinite Fibonacci word A003849.
-sub $0,$1
-sub $0,1
-gcd $0,2
-sub $0,1
+mul $1,2
+div $1,3
+add $1,$2
+mod $1,2
+mov $0,$1

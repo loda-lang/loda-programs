@@ -9,11 +9,10 @@ lpb $0
   max $4,$0
   add $4,1
   div $0,2
-  max $2,$4
-  mul $2,2
+  mov $2,$4
+  mul $2,3
   sub $2,1
   add $2,$0
-  add $2,$4
   bin $2,$0
   mov $3,$4
   bin $3,$1
@@ -22,7 +21,6 @@ lpb $0
   div $3,$4
   add $5,$3
   add $1,1
-  mov $2,$1
 lpe
 mov $0,$5
 div $0,3

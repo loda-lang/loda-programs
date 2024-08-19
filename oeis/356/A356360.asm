@@ -1,18 +1,20 @@
 ; A356360: Denominator of the continued fraction 1/(2-3/(3-4/(4-5/(...(n-1)-n/(n+1))))).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 5,7,3,11,13,1,17,19,1,23,1,1,29,31,1,1,37,1,41,43,1,47,1,1,53,1,1,59,61,1,1,67,1,71,73,1,1,79,1,83,1,1,89,1,1,1,97,1,101,103,1,107,109,1,113,1,1,1,1,1,1,127,1,131,1,1,137,139,1,1,1,1,149,151,1,1,157,1,1,163
-; Formula: a(n) = truncate(b(n+1)/gcd(c(n+1),b(n+1))), b(n) = 2*n+3, b(2) = 7, b(1) = 5, b(0) = 0, c(n) = max(c(n-1)*(2*n-1),1), c(2) = 3, c(1) = 1, c(0) = 0
 
-add $0,1
-lpb $0
-  sub $0,1
-  add $2,1
-  mul $3,$2
-  max $3,1
-  mov $1,$2
-  add $1,4
-  add $2,1
+add $0,3
+mov $2,3
+mov $1,$0
+lpb $1
+  sub $1,1
+  add $3,1
+  mov $4,2
+  mul $4,$3
+  add $3,1
+  div $2,2
+  mul $2,$3
 lpe
-gcd $3,$1
-div $1,$3
-mov $0,$1
+add $5,$4
+gcd $4,$2
+div $5,$4
+mov $0,$5

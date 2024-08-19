@@ -1,5 +1,5 @@
 ; A360158: a(n) is the number of unitary divisors of n that are odd squares minus the number of unitary divisors of n that are even squares.
-; Submitted by STE\/E
+; Submitted by omegaintellisys
 ; 1,1,1,0,1,1,1,1,2,1,1,0,1,1,1,0,1,2,1,0,1,1,1,1,2,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,2,1,1,0,2,2,1,0,1,1,1,1,1,1,1,0,1,1,2,0,1,1,1,0,1,1,1,2,1,1,2,0,1,1,1,0
 
 mov $1,11
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    equ $4,0
-    equ $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

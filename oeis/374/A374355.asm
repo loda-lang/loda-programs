@@ -8,9 +8,8 @@ mov $1,$3
 div $1,2
 mov $2,$0
 lpb $0
-  ban $0,$3
   div $0,2
   bxo $1,$2
-  mov $2,$0
+  ban $2,$0
 lpe
 mov $0,$1

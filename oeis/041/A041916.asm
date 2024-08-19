@@ -27,7 +27,7 @@ lpb $0
   div $1,4
   add $1,1
   mov $5,$1
-  cmp $1,2
+  equ $1,2
   mul $1,7
   add $5,$1
   mov $1,$5

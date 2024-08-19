@@ -1,8 +1,21 @@
 ; A373155: a(n) = 1 if n is a non-multiple of 3 whose 2-adic valuation is even, otherwise 0.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 1,0,0,1,1,0,1,0,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,0,1,1
-; Formula: a(n) = -10*truncate(A007088(A370234(n))/10)+A007088(A370234(n))
 
-seq $0,370234 ; a(n) = hypergeom([-n, 1 + n, 2 + n, -1 - n], [1/2, 1/2, 1], 1/16). Row sums of A370233.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-mod $0,10
+mov $4,2
+add $4,$0
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$4
+  bin $2,$0
+  pow $2,2
+  mov $3,$0
+  mul $3,$2
+  div $3,$4
+  add $4,1
+  add $1,$3
+lpe
+mov $0,$1
+add $0,1
+mod $0,2

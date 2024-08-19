@@ -6,7 +6,7 @@ mov $1,1
 lpb $0
   sub $0,$1
   add $1,$2
-  cmp $2,0
+  equ $2,0
 lpe
 add $0,1
 sub $2,$0

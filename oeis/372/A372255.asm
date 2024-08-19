@@ -1,22 +1,16 @@
 ; A372255: a(1) = 1, a(n) = n*(n-2)! + n - 1.
-; Submitted by Roadranner
+; Submitted by Science United
 ; 1,3,5,11,34,149,846,5767,45368,403209,3991690,43545611,518918412,6706022413,93405312014,1394852659215,22230464256016,376610217984017,6758061133824018,128047474114560019,2554547108585472020,53523844179886080021,1175091669949317120022,26976017466662584320023
+; Formula: a(n) = b(2*n)+d(2*n), b(n) = b(n-2)*(c(n-2)+1), b(5) = 2, b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = c(n-2)+1, c(5) = 2, c(4) = 2, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = b(n-2)+c(n-2)+1, d(5) = 3, d(4) = 3, d(3) = 2, d(2) = 2, d(1) = 0, d(0) = 0
 
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,2
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  sub $3,1
-  mov $0,$3
-  sub $0,$2
-  sub $0,1
-  seq $0,75263 ; Triangle of coefficients of polynomials H(n,x) formed from the first (n+1) terms of the power series expansion of ( -x/log(1-x) )^(n+1), multiplied by n!.
-  add $1,$0
-  add $1,1
+mov $1,1
+mul $0,2
+lpb $0
+  sub $0,2
+  add $2,1
+  mov $3,$2
+  add $3,$1
+  mul $1,$2
 lpe
+add $1,$3
 mov $0,$1
-sub $0,1

@@ -1,17 +1,22 @@
 ; A014515: Inverse of 506th cyclotomic polynomial.
-; Submitted by Stony666
+; Submitted by Irish Republican
 ; 1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,-6
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,16231 ; Inverse of 2222nd cyclotomic polynomial.
+mov $4,3
+mov $5,10
+mov $1,$0
+add $1,3
+lpb $1
+  sub $1,$4
   mov $3,$1
-  add $3,29
-  add $1,37
+  max $3,0
+  mov $6,-1
+  pow $6,$3
+  seq $3,15648 ; Inverse of 1639th cyclotomic polynomial.
+  mul $3,$6
+  sub $5,$4
+  add $2,$3
+  mov $4,$5
+  add $4,16
 lpe
 mov $0,$2
