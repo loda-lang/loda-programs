@@ -1,0 +1,10 @@
+; A371372: a(n) = Sum_{d|2*n} binomial(4*n/d-1, 2*n/d)*phi(d)/(4*n) for n>0 with a(0)=0.
+; Submitted by Stony666
+; 0,1,5,40,405,4626,56360,716430,9392085,126044248,1723083930,23910223514,335912566824,4768447532200,68291880722182,985538181002940,14317376105810133,209213540276280758,3073003751985537656,45346188478477675122,671920054584212646330,9993514798883508502188
+; Formula: a(n) = truncate(A003239(2*n)/2)
+
+mov $1,$0
+mul $1,2
+seq $1,3239 ; Number of rooted planar trees with n non-root nodes: circularly cycling the subtrees at the root gives equivalent trees.
+div $1,2
+mov $0,$1
