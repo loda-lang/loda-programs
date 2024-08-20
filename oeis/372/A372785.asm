@@ -1,16 +1,10 @@
 ; A372785: a(n) = tau(5*n) = A000005(5*n).
-; Submitted by gemini8
+; Submitted by Science United
 ; 2,4,4,6,3,8,4,8,6,6,4,12,4,8,6,10,4,12,4,9,8,8,4,16,4,8,8,12,4,12,4,12,8,8,6,18,4,8,8,12,4,16,4,12,9,8,4,20,6,8,8,12,4,16,6,16,8,8,4,18,4,8,12,14,6,16,4,12,8,12,4,24,4,8,8,12,8,16,4,15
+; Formula: a(n) = A000005(5*n+4)
 
-add $0,1
 mul $0,5
-mov $2,$0
-lpb $2
-  sub $2,1
-  add $4,1
-  mov $3,$0
-  mod $3,$4
-  equ $3,0
-  add $1,$3
-lpe
+mov $1,$0
+add $1,4
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $0,$1

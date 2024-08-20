@@ -1,20 +1,16 @@
 ; A371734: Maximal length of a factorization of n into factors > 1 all having different sums of prime indices.
-; Submitted by Skillz
+; Submitted by Jerzy_Przytocki
 ; 0,1,1,1,1,2,1,2,1,2,1,2,1,2,2,2,1,2,1,2,2,2,1,2,1,2,2,2,1,3,1,2,2,2,2,3,1,2,2,3,1,3,1,2,2,2,1,3,1,2,2,2,1,3,2,3,2,2,1,3,1,2,2,3,2,3,1,2,2,3,1,3,1,2,2,2,2,3,1,3
 
-mov $2,1
+mov $2,2
 add $0,1
 lpb $0
   mov $3,$0
   lpb $3
     mov $4,$0
     mod $4,$2
-    equ $4,0
-    equ $4,0
-    mov $5,$2
-    equ $5,1
+    neq $4,0
     add $2,1
-    max $4,$5
     sub $3,$4
   lpe
   add $2,1

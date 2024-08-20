@@ -1,16 +1,16 @@
 ; A099899: Multiplies by 4 and shifts right under the XOR BINOMIAL transform (A099898).
-; Submitted by Christian Krause
+; Submitted by fzs600
 ; 1,5,21,69,277,1349,5141,16453,65813,329029,1381397,4538437,18088213,88081733,335549461,1073758277,4295033109,21475165509,90195694613,296357281861,1189724029205,5793998964037,22080762418197,70666170679365
 
-mul $0,4
-add $0,2
+mov $1,1
+mul $0,2
 lpb $0
   sub $0,1
-  mov $3,$2
-  bin $3,$0
-  mod $3,2
-  mul $1,2
-  add $1,$3
-  add $2,1
+  add $2,$3
+  bxo $2,$1
+  mov $3,$1
+  mul $3,2
+  mov $1,$2
+  mov $2,$3
 lpe
 mov $0,$1

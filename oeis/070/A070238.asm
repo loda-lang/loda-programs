@@ -1,5 +1,5 @@
 ; A070238: Sign of core(n)-phi(n) where core(n) is the squarefree part of n and phi the Euler totient function.
-; Submitted by Christian Krause
+; Submitted by Jave808
 ; 0,1,1,-1,1,1,1,-1,-1,1,1,-1,1,1,1,-1,1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,1,1,1,-1,1,1,1,-1,1,1,1,-1,1,1,1,-1,-1,1,1,-1,-1,-1,1,-1,1,-1,1,-1,1,1,1,-1,1,1,-1,-1,1,1,1,-1,1,1,1,-1,1,1,-1,-1,1,1,1,-1
 
 mov $2,2
@@ -10,8 +10,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

@@ -1,10 +1,17 @@
 ; A144611: Sturmian word of slope 2-sqrt(2).
-; Submitted by waffleironhead
+; Submitted by Science United
 ; 0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0
-; Formula: a(n) = -2*truncate(A001951(A001951(n+1)-1)/2)+A001951(A001951(n+1)-1)
 
 add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2
 sub $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+pow $0,2
+mul $0,2
+mov $1,$0
+nrt $1,2
+mov $0,$1
 mod $0,2

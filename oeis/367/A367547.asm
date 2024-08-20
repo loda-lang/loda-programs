@@ -10,9 +10,8 @@ lpb $0
   mov $1,$0
   gcd $1,$2
   equ $1,1
-  mul $3,5
   add $3,$1
-  mul $3,2
+  mul $3,10
 lpe
 mov $0,$3
-div $0,2
+div $0,10

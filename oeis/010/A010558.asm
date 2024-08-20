@@ -1,19 +1,12 @@
 ; A010558: Maximal size of binary code of length n correcting 2 unidirectional errors.
-; Submitted by rajab
+; Submitted by Skillz
 ; 1,1,1,2,2,2,4,6,10
-; Formula: a(n) = b(max(n-2,0))+1, b(n) = 2*b(n-3)+b(n-1)+b(n-2)-1, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 0
+; Formula: a(n) = floor((truncate(2^(n-2))+5)/7)+1
 
-mov $1,1
 sub $0,2
-lpb $0
-  sub $0,1
-  mul $2,2
-  sub $2,1
-  add $2,$1
-  sub $1,$2
-  add $1,$3
-  add $3,$2
-  add $2,$1
-lpe
-mov $0,$2
+mov $1,2
+pow $1,$0
+add $1,5
+div $1,7
+mov $0,$1
 add $0,1

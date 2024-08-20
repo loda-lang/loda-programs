@@ -1,5 +1,5 @@
 ; A329377: Number of iterations done when n is divided by its divisors starting from the smallest one in increasing order until one no longer gets an integer, or until divisors are exhausted.
-; Submitted by PDW
+; Submitted by Skillz
 ; 1,2,2,2,2,3,2,3,2,3,2,3,2,3,3,3,2,3,2,2,3,3,2,4,2,3,3,2,2,4,2,3,3,3,3,3,2,3,3,4,2,3,2,2,3,3,2,4,2,3,3,2,2,3,3,4,3,3,2,3,2,3,3,4,3,3,2,2,3,4,2,4,2,3,3,2,3,3,2,4
 
 add $0,1
@@ -12,8 +12,7 @@ lpb $0
     mov $4,$0
     mul $4,$1
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

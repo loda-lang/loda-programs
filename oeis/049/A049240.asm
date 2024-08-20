@@ -1,8 +1,19 @@
 ; A049240: Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
-; Submitted by Science United
+; Submitted by [AF] Kalianthys
 ; 0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate((A000005(n)+3)/2)+A000005(n)+3
 
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $0,3
+mov $4,$0
+mov $3,2
+lpb $3
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  mov $5,$0
+  nrt $5,2
+  add $0,$5
+  mov $1,$2
+  mov $2,$0
+lpe
+sub $1,$2
+mov $0,$1
 mod $0,2

@@ -1,5 +1,5 @@
 ; A324392: a(n) is the number of divisors d of n such that A000120(d) divides n, where A000120(d) gives the binary weight of d.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by omegaintellisys
 ; 1,2,1,3,1,4,1,4,1,4,1,6,1,2,1,5,1,6,1,6,3,2,1,8,1,2,1,3,1,6,1,6,2,4,1,9,1,2,2,8,1,8,1,3,1,2,1,10,1,4,1,3,1,6,2,4,2,2,1,12,1,2,3,7,1,8,1,6,2,4,1,12,1,2,2,3,1,6,1,10
 
 mov $2,$0
@@ -14,7 +14,8 @@ lpb $4
   bin $1,$0
   sub $0,$1
   mov $5,$0
-  seq $5,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
+  add $5,1
+  dis $5,2
   mov $6,$5
   gcd $6,$2
   div $6,$5

@@ -1,19 +1,26 @@
 ; A250594: Number of (n+2)X(1+2) 0..2 arrays with nondecreasing sum of every three consecutive values in every row and column
-; Submitted by waffleironhead
+; Submitted by Skillz
 ; 19683,157464,1259712,10077696,46656000,216000000,1000000000,3375000000,11390625000,38443359375,105488578125,289460658375,794280046581,1882737888192,4462786105344,10578455953408,22483074023424,47784725839872,101559956668416,198359290368000,387420489000000,756680642578125,1381539005859375,2522398376953125,4605366583984375,7958073457125000,13751550933912000,23762680013799936,39223597287992832,64743984403997184,106868920913284608,169703888302113984,269483489294560632,427929800129788411
 
-mov $3,1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $2,$1
-  mov $1,$3
-  add $1,1
-  sub $1,$0
-  trn $1,$0
-  seq $1,251187 ; Number of (n+2)X(1+2) 0..1 arrays with nondecreasing sum of every three consecutive values in every row and column
-  mul $2,$1
-  add $3,1
+mov $3,$0
+add $3,3
+mov $4,2
+mov $1,6
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  add $0,2
+  div $0,3
+  mov $2,$0
+  add $2,2
+  mov $5,$2
+  pow $5,2
+  mul $5,$2
+  mov $2,$5
+  mul $2,2
+  div $4,2
+  mul $4,$2
 lpe
-mov $0,$2
-div $0,512
+mov $0,$4
+div $0,1024

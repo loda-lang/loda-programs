@@ -1,23 +1,33 @@
 ; A138330: Beatty discrepancy (defined in A138253) giving the closeness of the pair (A136497,A136498) to the Beatty pair (A001951,A001952).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Skillz
 ; 1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,2,1
-; Formula: a(n) = (-2*truncate((-3*truncate(A286927(2*n)/4)+truncate((4*n+2*A003151(2*n+1)+4)/4)-2)/2)-3*truncate(A286927(2*n)/4)+truncate((4*n+2*A003151(2*n+1)+4)/4)-2)^2+1
 
 mul $0,2
 mov $1,$0
 add $1,1
-mov $3,$1
-seq $3,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
-add $3,7
-add $1,7
-add $3,$1
-mov $1,$3
-mul $1,2
-sub $1,26
-div $1,4
+mov $4,1
+add $4,$1
+mov $3,$4
+pow $3,2
+mul $3,2
+mov $5,$3
+nrt $5,2
+mul $4,2
+add $4,$5
+mov $1,$4
+div $1,2
 sub $1,1
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
-div $0,4
+mov $7,1
+add $7,$0
+mov $6,$7
+pow $6,2
+mul $6,2
+mov $8,$6
+nrt $8,2
+mul $7,2
+add $7,$8
+mov $0,$7
+div $0,2
 sub $2,$0
 sub $2,$0
 sub $2,$0
@@ -25,5 +35,6 @@ add $2,$1
 mov $0,$2
 sub $0,1
 mod $0,2
-pow $0,2
+add $0,2
+mod $0,2
 add $0,1

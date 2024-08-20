@@ -1,19 +1,12 @@
 ; A136119: Limiting sequence when we start with the positive integers (A000027) and delete in step n >= 1 the term at position n + a(n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,3,4,5,7,8,10,11,13,14,15,17,18,20,21,22,24,25,27,28,29,31,32,34,35,37,38,39,41,42,44,45,46,48,49,51,52,54,55,56,58,59,61,62,63,65,66,68,69,71,72,73,75,76,78,79,80,82,83,85,86,87,89,90,92,93,95,96,97,99,100,102,103,104,106,107,109,110,112,113
-; Formula: a(n) = a(n-1)+gcd(truncate((-c(n-1)+b(n-1))/2)+1,2), a(2) = 4, a(1) = 3, a(0) = 1, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 2*gcd(truncate((-c(n-1)+b(n-1))/2)+1,2)*c(n-1), c(2) = 16, c(1) = 8, c(0) = 2
 
-mov $2,2
-mov $4,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  mov $3,1
-  add $3,$1
-  gcd $3,2
-  add $4,$3
-  mul $2,2
-  mul $2,$3
-lpe
-mov $0,$4
+mul $0,2
+add $0,1
+pow $0,2
+mov $1,$0
+div $1,2
+nrt $1,2
+mov $0,$1
+add $0,1

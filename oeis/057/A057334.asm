@@ -1,6 +1,12 @@
 ; A057334: In A000120, replace each entry k with the k-th prime and replace 0 with 1.
+; Submitted by Skillz
 ; 1,2,2,3,2,3,3,5,2,3,3,5,3,5,5,7,2,3,3,5,3,5,5,7,3,5,5,7,5,7,7,11,2,3,3,5,3,5,5,7,3,5,5,7,5,7,7,11,3,5,5,7,5,7,7,11,5,7,7,11,7,11,11,13,2,3,3,5,3,5,5,7,3,5,5,7,5,7,7,11
-; Formula: a(n) = A008578(A000120(n))
+; Formula: a(n) = truncate(A206297(A063787(n)-1)/2)+1
 
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+mov $1,$0
+seq $1,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+sub $1,1
+seq $1,206297 ; Position of n in the canonical bijection from the positive integers to the positive rational numbers.
+mov $0,$1
+div $0,2
+add $0,1

@@ -4,14 +4,9 @@
 
 mov $1,$0
 add $1,1
-mov $2,$1
-add $2,$0
+mov $2,$0
 add $2,2
-lpb $1
-  mov $3,$2
-  div $3,$1
-  add $1,$3
-  div $1,2
-lpe
-add $1,1
-add $0,$1
+add $2,$1
+nrt $2,2
+add $2,$1
+mov $0,$2

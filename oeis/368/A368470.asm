@@ -1,5 +1,5 @@
 ; A368470: a(n) is the number of exponentially odd divisors of the largest unitary divisor of n that is an exponentially odd number (A268335).
-; Submitted by [AF] Kalianthys
+; Submitted by STE\/E
 ; 1,2,2,1,2,4,2,3,1,4,2,2,2,4,4,1,2,2,2,2,4,4,2,6,1,4,3,2,2,8,2,4,4,4,4,1,2,4,4,6,2,8,2,2,2,4,2,2,1,2,4,2,2,6,4,6,4,4,2,4,2,4,2,1,4,8,2,2,4,8,2,3,2,4,2,2,4,8,2,2
 
 mov $1,1
@@ -10,8 +10,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    equ $4,0
-    equ $4,0
+    neq $4,0
     mov $5,$2
     equ $5,1
     add $2,1

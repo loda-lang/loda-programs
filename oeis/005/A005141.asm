@@ -1,5 +1,5 @@
 ; A005141: Number of genera of forms with |determinant| = n.
-; Submitted by Skillz
+; Submitted by atannir
 ; 2,2,4,9,4,4,4,10,8,4,4
 
 mov $2,2
@@ -9,8 +9,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
     add $4,1

@@ -1,31 +1,28 @@
 ; A369483: Expansion of (1/x) * Series_Reversion( x / (1+x+x^3)^2 ).
-; Submitted by Joseph
+; Submitted by Science United
 ; 1,2,5,16,60,242,1014,4370,19278,86678,395751,1829742,8549100,40302810,191469165,915751966,4405727502,21307102900,103526683797,505118705078,2473833623696,12157124607612,59929746189165,296271556144028,1468494529164194,7296261411708962
 
-mov $2,1
-mov $10,1
+mov $1,$0
+add $0,1
+add $1,$0
+mov $6,$0
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    mov $7,$4
-    seq $7,370185 ; Coefficient of x^n in the expansion of (1+x+x^3)^(2*n).
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  div $6,$2
-  mov $9,10
-  add $9,$2
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-  mov $8,$3
+  add $6,2
+  mov $2,0
+  sub $2,$6
+  bin $2,$0
+  sub $4,1
+  sub $0,1
+  trn $0,1
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,1
+  mul $3,2
+  gcd $3,0
+  div $3,$1
+  add $5,$3
+  sub $1,2
 lpe
-mov $0,$8
-max $0,1
+mov $0,$5

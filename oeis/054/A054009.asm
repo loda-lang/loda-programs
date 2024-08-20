@@ -1,5 +1,5 @@
 ; A054009: n read modulo (number of proper divisors of n).
-; Submitted by Alexander
+; Submitted by mmonnin
 ; 0,0,0,0,0,0,2,1,1,0,2,0,2,0,0,0,3,0,0,0,1,0,3,1,2,0,3,0,2,0,2,0,1,2,4,0,2,0,5,0,0,0,4,0,1,0,3,1,0,0,2,0,5,1,0,0,1,0,5,0,2,3,4,2,3,0,3,0,0,0,6,0,2,0,1,2,1,0,8,1
 
 add $0,2
@@ -8,8 +8,7 @@ div $1,2
 lpb $1
   mov $3,$0
   dif $3,$1
-  cmp $3,$0
-  cmp $3,0
+  neq $3,$0
   sub $1,1
   add $2,$3
 lpe

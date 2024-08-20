@@ -1,5 +1,5 @@
 ; A043371: Numbers having three 0's in base 6.
-; Submitted by stoneageman
+; Submitted by ThrasherX-17
 ; 216,432,648,864,1080,1297,1298,1299,1300,1301,1302,1308,1314,1320,1326,1332,1368,1404,1440,1476,1512,1728,1944,2160,2376,2593,2594,2595,2596,2597,2598,2604,2610,2616,2622,2628,2664
 
 add $0,2
@@ -8,7 +8,6 @@ sub $0,1
 pow $2,8
 lpb $2
   mov $4,-2
-  add $1,5
   mov $3,$1
   seq $3,7092 ; Numbers in base 6.
   lpb $3
@@ -22,10 +21,9 @@ lpb $2
   lpe
   mov $3,$4
   mod $3,7
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0
 lpe
 mov $0,$1
-div $0,6
