@@ -1,0 +1,10 @@
+; A068053: Start with one 1 in the infinite vector of zeros, shift one right or left and sum mod 2 (bitwise-XOR) to get 11, then shift two steps and XOR to get 1111, then three steps and XOR to get 1110111, then four steps and so on.
+; Submitted by Science United
+; 1,11,1111,1110111,11100000111,1110011111100111,1110010001111000100111,11100101101100000110110100111,1110010101010101110111010101010100111,1110010100100111011101111011101110010010100111,11100101000111100011111001100110011111000111100010100111,1110010100000010100111011010000110110000101101110010100000010100111,1110010100001100110011011000100001101010101011000010001101100110011000010100111,11100101000010111110010111101110000001101110111101110110000001110111101001111101000010100111
+; Formula: a(n) = 10*A007088(truncate(A068052(n)/2))+1
+
+seq $0,68052 ; Start from 1, shift one left and sum mod 2 (bitwise-XOR) to get 3 (11 in binary), then shift two steps left and XOR to get 15 (1111 in binary), then three steps and XOR to get 119 (1110111 in binary), then four steps and so on.
+div $0,2
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mul $0,10
+add $0,1
