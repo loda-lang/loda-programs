@@ -1,5 +1,5 @@
 ; A360165: a(n) is the sum of the square roots of the unitary divisors of n that are odd squares minus the sum of the square roots of the unitary divisors of n that are even squares.
-; Submitted by pututu
+; Submitted by Frank [NT]
 ; 1,1,1,-1,1,1,1,1,4,1,1,-1,1,1,1,-3,1,4,1,-1,1,1,1,1,6,1,1,-1,1,1,1,1,1,1,1,-4,1,1,1,1,1,1,1,-1,4,1,1,-3,8,6,1,-1,1,1,1,1,1,1,1,-1,1,1,4,-7,1,1,1,-1,1,1,1,4,1,1,6,-1,1,1,1,-3
 
 mov $1,11
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

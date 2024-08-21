@@ -1,17 +1,13 @@
 ; A354874: a(n) = 1 if A003415(n) is squarefree, otherwise 0.
-; Submitted by AXm 77
+; Submitted by gemini8
 ; 0,0,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,1,1,0,0,1,1
 
-mov $2,$0
-sub $2,1
+mov $2,2
 lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,2
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
-  sub $3,1
-  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  cmp $3,1
-  add $1,1
+  div $2,2
+  seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+  sub $1,$0
 lpe
-mov $0,$3
+gcd $1,$0
+equ $1,1
+mov $0,$1

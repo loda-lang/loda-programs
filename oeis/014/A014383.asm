@@ -1,9 +1,9 @@
 ; A014383: Inverse of 374th cyclotomic polynomial.
-; Submitted by Science United
+; Submitted by Skillz
 ; 1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $4,3
-mov $5,4
+mov $5,10
 mov $1,$0
 add $1,3
 lpb $1
@@ -12,11 +12,12 @@ lpb $1
   max $3,0
   mov $6,-1
   pow $6,$3
-  seq $3,15862 ; Inverse of 1853rd cyclotomic polynomial.
+  seq $3,15648 ; Inverse of 1639th cyclotomic polynomial.
   mul $3,$6
-  sub $5,$4
+  div $5,2
+  mul $5,$4
   add $2,$3
   mov $4,$5
-  add $4,10
+  add $4,2
 lpe
 mov $0,$2

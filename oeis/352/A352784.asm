@@ -1,7 +1,10 @@
 ; A352784: a(n) = w(n - w(n)), where w(n) is the binary weight of n, A000120(n).
-; Submitted by fzs600
+; Submitted by atannir
 ; 0,0,1,1,2,2,1,1,3,3,1,1,2,2,3,3,4,4,1,1,2,2,3,3,3,3,4,4,3,3,3,3,5,5,1,1,2,2,3,3,3,3,4,4,3,3,3,3,4,4,5,5,3,3,3,3,4,4,4,4,3,3,4,4,6,6,1,1,2,2,3,3,3,3,4,4,3,3,3,3
-; Formula: a(n) = A280700(floor(n/2))
 
-div $0,2
-seq $0,280700 ; Binary weight of terms of A005187: a(n) = A000120(A005187(n)).
+lpb $0
+  div $0,2
+  add $1,$0
+lpe
+mov $0,$1
+dis $0,2

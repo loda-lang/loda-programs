@@ -1,16 +1,12 @@
 ; A359102: a(n) = phi(7 * n)/6.
-; Submitted by crashtech
+; Submitted by Mumps
 ; 1,1,2,2,4,2,7,4,6,4,10,4,12,7,8,8,16,6,18,8,14,10,22,8,20,12,18,14,28,8,30,16,20,16,28,12,36,18,24,16,40,14,42,20,24,22,46,16,49,20,32,24,52,18,40,28,36,28,58,16,60,30,42,32,48,20,66,32,44,28,70,24,72,36,40,36,70,24,78,32
+; Formula: a(n) = truncate(A000010(7*n+6)/6)
 
-add $0,1
-mov $1,1
-mov $4,$0
-lpb $0
-  sub $0,1
-  mov $3,$4
-  gcd $3,$1
-  cmp $3,1
-  add $1,7
-  add $2,$3
-lpe
-mov $0,$2
+mul $0,7
+mov $2,$0
+add $2,6
+mov $1,$2
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+mov $0,$1
+div $0,6

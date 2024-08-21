@@ -1,18 +1,16 @@
 ; A099901: Shifts left and divides by 2 under the XOR BINOMIAL transform (A099902).
-; Submitted by Jamie Morken(w1)
+; Submitted by STE\/E
 ; 1,2,6,14,22,46,118,206,278,558,1654,3790,5910,11310,28790,49358,65814,131630,394870,921294,1447702,3025966,7762038,13549774,18284822,36438574,108004982,247467726,385881878,738208814,1879076982,3221274830
 
-add $0,1
-mov $4,$0
+mov $1,1
+mov $2,1
+mul $0,2
 lpb $0
   sub $0,1
-  mov $3,$4
-  sub $3,2
-  bin $3,$1
-  mod $3,2
-  add $3,$2
-  add $1,2
   add $2,$3
-  add $4,1
+  bxo $2,$1
+  mov $3,$1
+  mov $1,$2
+  mov $2,$3
 lpe
-mov $0,$2
+mov $0,$1

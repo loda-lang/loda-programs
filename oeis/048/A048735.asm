@@ -1,15 +1,8 @@
 ; A048735: a(n) = (n AND floor(n/2)), where AND is bitwise and-operator (A004198).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,0,0,1,0,0,2,3,0,0,0,1,4,4,6,7,0,0,0,1,0,0,2,3,8,8,8,9,12,12,14,15,0,0,0,1,0,0,2,3,0,0,0,1,4,4,6,7,16,16,16,17,16,16,18,19,24,24,24,25,28,28,30,31,0,0,0,1,0,0,2,3,0,0,0,1,4,4,6,7
 
-mov $3,1
-lpb $0
-  mov $2,$0
-  mod $2,4
-  cmp $2,3
-  mul $2,$3
-  div $0,2
-  add $1,$2
-  mul $3,2
-lpe
-mov $0,$1
+mov $1,$0
+mul $1,2
+ban $0,$1
+div $0,2

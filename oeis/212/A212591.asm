@@ -1,7 +1,19 @@
 ; A212591: a(n) is the smallest value of k for which A020986(k) = n.
+; Submitted by Ralfy
 ; 0,1,2,5,8,9,10,21,32,33,34,37,40,41,42,85,128,129,130,133,136,137,138,149,160,161,162,165,168,169,170,341,512,513,514,517,520,521,522,533,544,545,546,549,552,553,554,597,640,641,642,645,648,649,650,661,672,673,674,677,680,681,682,1365,2048,2049,2050,2053,2056,2057,2058,2069,2080,2081,2082,2085,2088,2089,2090,2133
-; Formula: a(n) = truncate(A086799(A001196(n))/6)
 
-seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
-seq $0,86799 ; Replace all trailing 0's with 1's in binary representation of n.
-div $0,6
+mov $1,2
+add $0,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  mov $2,$1
+  mul $3,2
+  add $3,1
+  mov $1,$3
+  mul $1,$2
+  bxo $1,$2
+  mod $3,2
+lpe
+mov $0,$1
+div $0,16

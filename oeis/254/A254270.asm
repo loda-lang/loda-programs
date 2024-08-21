@@ -1,5 +1,5 @@
 ; A254270: Decimal expansion of atomic unit of magnetic dipole moment in J T^-1.
-; Submitted by Science United
+; Submitted by gemini8
 ; 1,8,5,4,8,0,2,0,1
 
 mov $1,1
@@ -14,8 +14,7 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    equ $4,1
-    equ $4,0
+    neq $4,1
     mul $1,$0
     sub $3,$4
   lpe

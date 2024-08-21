@@ -1,21 +1,15 @@
 ; A276882: Sums-complement of the Beatty sequence for 2 + sqrt(2).
-; Submitted by Conan
+; Submitted by Science United
 ; 1,2,5,8,9,12,15,16,19,22,25,26,29,32,33,36,39,42,43,46,49,50,53,56,57,60,63,66,67,70,73,74,77,80,83,84,87,90,91,94,97,98,101,104,107,108,111,114,115,118,121,124,125,128,131,132,135,138,141,142,145
 
+mov $1,$0
+pow $1,2
+div $1,2
 mov $2,$0
-mov $3,$0
-pow $3,2
-lpb $3
-  sub $3,$2
-  add $2,1
-  sub $3,$2
-lpe
-div $2,2
-add $2,1
-mov $1,12
-add $1,$2
-sub $0,1
-add $0,$1
-add $1,$0
-mov $0,$1
-sub $0,24
+add $2,8
+mov $3,$1
+nrt $3,2
+mul $3,2
+add $2,$3
+mov $0,$2
+sub $0,7

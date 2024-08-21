@@ -1,9 +1,19 @@
 ; A103930: Numerators of squares of harmonic numbers A001008/A002805.
-; Submitted by Odd-Rod
+; Submitted by omegaintellisys
 ; 1,9,121,625,18769,2401,131769,579121,50822641,54479161,7007531521,7399612441,1313299956049,1372958223289,1429834803049,5936819760481,1775966959381729,203755669038601,75787776947048401,3117562300468225
+; Formula: a(n) = truncate((c(n+1)+d(n+1))/gcd(d(n+1),b(n+1)))^2, b(n) = n*b(n-1), b(3) = 12, b(2) = 4, b(1) = 2, b(0) = 2, c(n) = c(n-1), c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = n*d(n-1)+b(n-1), d(3) = 22, d(2) = 6, d(1) = 2, d(0) = 0
 
+mov $1,2
+add $0,1
 lpb $0
-  mov $0,23
+  sub $0,1
+  add $2,1
+  mul $4,$2
+  add $4,$1
+  mul $1,$2
 lpe
-seq $0,1008 ; Numerators of harmonic numbers H(n) = Sum_{i=1..n} 1/i.
-pow $0,2
+add $3,$4
+gcd $4,$1
+div $3,$4
+mov $0,$3
+mul $0,$3

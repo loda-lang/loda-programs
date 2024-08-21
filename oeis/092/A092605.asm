@@ -1,23 +1,21 @@
 ; A092605: Decimal expansion of e^(-1/2) or 1/sqrt(e).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 6,0,6,5,3,0,6,5,9,7,1,2,6,3,3,4,2,3,6,0,3,7,9,9,5,3,4,9,9,1,1,8,0,4,5,3,4,4,1,9,1,8,1,3,5,4,8,7,1,8,6,9,5,5,6,8,2,8,9,2,1,5,8,7,3,5,0,5,6,5,1,9,4,1,3,7,4,8,4,2
 
 add $0,1
 mov $3,$0
-mul $3,3
+mul $3,7
 lpb $3
-  mul $1,$3
-  mul $1,6
-  div $1,$0
-  mul $2,3
-  div $2,$0
+  max $3,1
+  mul $1,2
+  div $2,$3
   add $2,$1
-  sub $1,142
   sub $3,1
+  add $1,6
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
 div $1,$2
-mod $1,10
 mov $0,$1
+mod $0,10

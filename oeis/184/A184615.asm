@@ -1,11 +1,11 @@
 ; A184615: Positive parts of the nonadjacent forms for n.
-; Submitted by Science United
+; Submitted by Skillz
 ; 0,1,2,4,4,5,8,8,8,9,10,16,16,17,16,16,16,17,18,20,20,21,32,32,32,33,34,32,32,33,32,32,32,33,34,36,36,37,40,40,40,41,42,64,64,65,64,64,64,65,66,68,68,69,64,64,64,65,66,64,64,65,64,64,64,65,66,68,68,69,72,72,72,73,74,80,80,81,80,80
-; Formula: a(n) = truncate((A184617(n)+n)/2)
 
-mov $2,$0
-seq $2,184617 ; With nonadjacent forms: A184615(n) + A184616(n).
 mov $1,$0
-add $1,$2
+mul $1,2
+add $1,$0
+bor $1,$0
+sub $1,$0
 mov $0,$1
 div $0,2

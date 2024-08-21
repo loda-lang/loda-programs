@@ -1,5 +1,5 @@
 ; A095366: Least k > 1 such that k divides 1^n + 2^n +...+ (k-1)^n.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 3,5,3,7,3,5,3,7,3,5,3,11,3,5,3,7,3,5,3,7,3,5,3,11,3,5,3,7,3,5,3,7,3,5,3,11,3,5,3,7,3,5,3,7,3,5,3,11,3,5,3,7,3,5,3,7,3,5,3,17,3,5,3,7,3,5,3,7,3,5,3,11,3,5,3,7,3,5,3,7
 
 add $0,1
@@ -11,15 +11,12 @@ lpb $3
   lpb $5
     mov $4,$0
     mod $4,$2
-    cmp $4,0
+    equ $4,0
     add $2,$1
     sub $5,$4
     add $1,2
   lpe
-  mov $4,$0
-  cmp $4,1
-  cmp $4,0
-  sub $3,$4
+  sub $3,2
 lpe
 mov $0,$2
 add $0,1

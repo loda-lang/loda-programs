@@ -1,15 +1,22 @@
 ; A175632: Maximal run length of primes of the form A025584(n), A025584(n)+2, A025584(n)+4, ...
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 1,3,2,2,1,2,1,2,1,1,2,1,2,1,1,1,1,2,2,1,1,1,2,2,1,1,1,1,2,2,2,1,1,2,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,2,1
 
-lpb $0
-  trn $0,1
-  seq $0,251092 ; a(n) is the number of primes in the n-th group of consecutive primes among the odd numbers.
-  mul $0,2
-  sub $0,2
-  mov $1,$0
-  mov $0,0
+mov $3,$0
+mul $0,2
+mov $5,2
+lpb $5
+  sub $5,1
+  sub $0,1
+  mov $4,$0
+  max $4,0
+  seq $4,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
+  mov $2,$5
+  mul $2,$4
+  mul $0,$5
+  add $1,$2
 lpe
+min $3,1
+mul $3,$4
+sub $1,$3
 mov $0,$1
-div $0,2
-add $0,1
