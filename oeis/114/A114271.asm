@@ -1,25 +1,19 @@
 ; A114271: Numbers k such that k^2 + 8 is prime.
-; Submitted by Jon Maiga
+; Submitted by Jave808
 ; 3,9,15,21,33,51,57,81,87,111,117,123,129,135,141,147,153,177,189,213,219,255,279,285,315,321,327,345,351,363,399,417,465,471,477,483,495,549,579,585,627,657,663,669,723,735,741,747,759,771,783,789,807,825,837,855,879,891,903,909,933,939,945,969,975,987,999,1005,1011,1035,1041,1053,1089,1173,1203,1245,1251,1257,1269,1317
 
-mov $5,2
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $3,$5
-  mul $3,8
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,9
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,$1
+add $0,1
+mov $2,8
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,8
+  sub $0,$1
+  add $2,$4
+  sub $3,$0
 lpe
-mov $0,$1
-div $0,9
-mul $0,6
-add $0,3
+mov $0,$4
+div $0,4
+add $0,1

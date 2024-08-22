@@ -32,5 +32,6 @@ lpb $3
     lpe
     mov $3,0
   lpe
+  add $3,1
 lpe
 mov $0,$2

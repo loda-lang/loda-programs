@@ -1,11 +1,10 @@
 ; A254732: a(n) is the least k > n such that n divides k^2.
+; Submitted by Skillz
 ; 2,4,6,6,10,12,14,12,12,20,22,18,26,28,30,20,34,24,38,30,42,44,46,36,30,52,36,42,58,60,62,40,66,68,70,42,74,76,78,60,82,84,86,66,60,92,94,60,56,60,102,78,106,72,110,84,114,116,118,90,122,124,84,72,130,132,134,102,138,140,142,84,146,148,90,114,154,156,158,100
-; Formula: a(n) = truncate(n/A000194(A008833(n)))+n+2
+; Formula: a(n) = A019554(n)+n+1
 
 mov $1,$0
-seq $1,8833 ; Largest square dividing n.
-seq $1,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-mov $2,$0
-div $2,$1
-add $2,2
-add $0,$2
+seq $0,19554 ; Smallest number whose square is divisible by n.
+add $1,$0
+mov $0,$1
+add $0,1

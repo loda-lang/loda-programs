@@ -1,5 +1,5 @@
 ; A138330: Beatty discrepancy (defined in A138253) giving the closeness of the pair (A136497,A136498) to the Beatty pair (A001951,A001952).
-; Submitted by Skillz
+; Submitted by Jave808
 ; 1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,2,1
 
 mul $0,2
@@ -29,12 +29,8 @@ add $7,$8
 mov $0,$7
 div $0,2
 sub $2,$0
-sub $2,$0
-sub $2,$0
 add $2,$1
 mov $0,$2
-sub $0,1
-mod $0,2
-add $0,2
+add $0,1
 mod $0,2
 add $0,1

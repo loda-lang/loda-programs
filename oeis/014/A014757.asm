@@ -1,5 +1,5 @@
 ; A014757: Inverse of 748th cyclotomic polynomial.
-; Submitted by STE\/E
+; Submitted by gemini8
 ; 1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,$0
@@ -15,8 +15,9 @@ lpb $1
   pow $6,$3
   seq $3,15648 ; Inverse of 1639th cyclotomic polynomial.
   mul $3,$6
-  sub $5,6
   sub $5,$4
+  sub $5,6
+  pow $5,2
   add $2,$3
   mov $4,$5
   add $4,16

@@ -5,7 +5,6 @@
 mov $1,$0
 trn $0,1
 sub $1,$0
-mov $3,0
 lpb $0
   max $3,$0
   seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.

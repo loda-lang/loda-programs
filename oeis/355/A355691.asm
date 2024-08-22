@@ -1,5 +1,5 @@
 ; A355691: Dirichlet inverse of A320111, number of divisors of n that are not of the form 4k+2.
-; Submitted by trigggl
+; Submitted by Ralfy
 ; 1,-1,-2,-1,-2,2,-2,0,1,2,-2,2,-2,2,4,1,-2,-1,-2,2,4,2,-2,0,1,2,0,2,-2,-4,-2,1,4,2,4,-1,-2,2,4,0,-2,-4,-2,2,-2,2,-2,-2,1,-1,4,2,-2,0,4,0,4,2,-2,-4,-2,2,-2,0,4,-4,-2,2,4,-4,-2,0,-2,2,-2,2,4,-4,-2,-2
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

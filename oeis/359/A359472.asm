@@ -4,7 +4,7 @@
 
 mov $1,$0
 seq $1,5361 ; Product of exponents of prime factorization of n.
-cmp $1,3
+equ $1,3
 mov $2,1
 add $2,$1
 mov $0,$2

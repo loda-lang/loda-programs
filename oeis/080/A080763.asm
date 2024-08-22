@@ -1,17 +1,18 @@
 ; A080763: Exchange 1's and 2's in the eta-sequence A006337.
-; Submitted by Science United
+; Submitted by Jave808
 ; 2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2
-; Formula: a(n) = -10*truncate((truncate((-2*truncate((A001951(n+2)+A001951(n+1)+1)/2)+A001951(n+2)+A001951(n+1)+4)^(-2*truncate((A001951(n+2)+A001951(n+1)+1)/2)+A001951(n+2)+A001951(n+1)+4))-5)/10)+truncate((-2*truncate((A001951(n+2)+A001951(n+1)+1)/2)+A001951(n+2)+A001951(n+1)+4)^(-2*truncate((A001951(n+2)+A001951(n+1)+1)/2)+A001951(n+2)+A001951(n+1)+4))-5
 
-add $0,1
+add $0,2
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2
+sub $0,1
+pow $0,2
+mul $0,2
 mov $1,$0
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-add $0,$1
+nrt $1,2
+mov $0,$1
 mod $0,2
-add $0,3
-pow $0,$0
-sub $0,5
-mod $0,10
+add $0,1

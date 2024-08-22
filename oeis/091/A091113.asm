@@ -1,15 +1,14 @@
 ; A091113: Nonprimes of the form 4*k+1.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,9,21,25,33,45,49,57,65,69,77,81,85,93,105,117,121,125,129,133,141,145,153,161,165,169,177,185,189,201,205,209,213,217,221,225,237,245,249,253,261,265,273,285,289,297,301,305,309,321,325,329,333,341,345,357,361,365,369,377,381,385,393,405,413,417,425,429,437,441,445,453,465,469,473,477,481,485,489,493
 
-add $0,1
-mov $3,11
 mov $2,$0
-pow $2,4
+add $2,5
+pow $2,2
 lpb $2
   max $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  cmp $3,0
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
   sub $0,$3
   add $1,4
   sub $2,$0

@@ -8,7 +8,7 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-  seq $2,269712 ; Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 20", based on the 5-celled von Neumann neighborhood.
+  seq $2,269712 ; Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 20", based on the 5-celled von Neumann neighborhood.
   add $1,$2
 lpe
 mov $0,$1

@@ -1,21 +1,21 @@
 ; A278291: Numbers n such that n-1 has the same number of prime factors as n (with multiplicity).
-; Submitted by ChelseaOilman
+; Submitted by Mumps
 ; 3,10,15,22,26,28,34,35,39,45,58,76,86,87,94,95,99,117,119,122,123,125,134,136,142,143,146,148,154,159,165,171,172,175,178,202,203,206,214,215,218,219,231,245,246,254,285,286,297,299,302,303,327,333,335,351,357,362,370,376,382,388,394,395,426,429,430,435,436,446,447,454,460,475,482,502,507,508,515,527
 
+add $0,1
+mov $1,1
 mov $2,$0
-add $2,1
 pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,76191 ; First differences of A001222.
-  cmp $3,0
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
+  sub $2,$0
+  mov $4,$1
+  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   add $1,1
-  mul $2,$4
-  sub $2,1
+  mov $3,$1
+  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  sub $3,$4
+  equ $3,0
+  sub $0,$3
 lpe
 mov $0,$1
-add $0,2
+add $0,1
