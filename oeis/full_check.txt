@@ -215,6 +215,7 @@ A062116: a(n) = 2^n mod 17.
 A062173: a(n) = 2^(n-1) mod n.
 A062175: a(n) = 4^(n-1) mod n.
 A063574: Number of steps to reach an integer == 1 (mod 4) when iterating the map n -> 3n/2 if n even or (3n+1)/2 if n odd.
+A063695: Remove even-positioned bits from the binary expansion of n.
 A063787: a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.

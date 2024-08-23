@@ -9,6 +9,6 @@ lpb $2
   sub $1,1
   trn $1,1
   seq $1,24939 ; Number of partitions of n into distinct odd primes.
-  sub $0,1
+  mod $0,2
 lpe
 mov $0,$1

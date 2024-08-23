@@ -13,7 +13,7 @@ lpb $0
   add $4,1
   add $3,$2
   sub $4,$3
-  cmp $1,1
+  equ $1,1
   add $1,$0
   bin $1,2
   mul $2,10

@@ -11,8 +11,7 @@ lpb $0
   dif $5,$0
   add $0,$3
   mov $1,$5
-  cmp $5,$4
-  cmp $5,0
+  neq $5,$4
   mul $5,$0
   pow $5,$1
   gcd $5,$4

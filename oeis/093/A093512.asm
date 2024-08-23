@@ -8,9 +8,9 @@ lpb $0
   mov $3,$2
   lpb $3
     lpb $3,3
-      cmp $5,0
+      equ $5,0
       mov $26,$1
-      cmp $26,0
+      equ $26,0
       add $1,$26
       mul $1,2
       sub $2,$26
@@ -18,7 +18,7 @@ lpb $0
       mov $4,$1
       gcd $4,$2
       sub $4,1
-      cmp $4,0
+      equ $4,0
       sub $3,$4
     lpe
   lpe

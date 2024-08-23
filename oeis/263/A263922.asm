@@ -1,5 +1,5 @@
 ; A263922: Highest exponent in prime factorization of n-th central binomial coefficient.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Skillz
 ; 1,1,2,1,2,2,3,2,2,2,3,2,3,3,4,2,3,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,2,2,3,2,3,3,4,2,4,3,4,4,4,4,5,2,3,4,4,3,4,4,5,3,4,4,5,4,5,5,6,3,2,2,3,4,3,3,4,2,3,3,4,3,4,4,5,4
 
 add $0,1
@@ -12,8 +12,6 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
     add $2,1
     sub $3,$4
   lpe

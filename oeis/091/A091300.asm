@@ -1,36 +1,17 @@
 ; A091300: Nonprimes of the form 6k + 1.
-; Submitted by arkiss
+; Submitted by Science United
 ; 1,25,49,55,85,91,115,121,133,145,169,175,187,205,217,235,247,253,259,265,289,295,301,319,325,343,355,361,385,391,403,415,427,445,451,469,475,481,493,505,511,517,529,535,553,559,565,583,589,595,625,637,649,655,667,679,685,697,703,715,721,745,763,775,781,793,799,805,817,835,841,847,865,871,889,895,901,913,925,931
 
-mov $4,11
-add $0,1
-max $1,$0
-mov $2,1
-mov $3,$1
-pow $3,4
-lpb $3
-  mov $6,0
-  max $4,$2
-  add $4,1
-  lpb $4
-    gcd $6,3
-    mov $7,$4
-    div $7,4
-    lpb $7
-      mov $5,$4
-      mod $5,$6
-      add $6,2
-      sub $7,$5
-    lpe
-    mov $4,$6
-    pow $4,2
-    mov $6,1
-  lpe
-  sub $1,$6
-  add $2,12
-  sub $3,$1
+mov $2,$0
+add $2,5
+pow $2,2
+lpb $2
+  max $3,$1
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
+  sub $0,$3
+  add $1,6
+  sub $2,$0
 lpe
-mov $0,$2
-div $0,12
-mul $0,6
+mov $0,$1
 add $0,1

@@ -1,16 +1,21 @@
 ; A094622: Expansion of x*(11+20*x)/((1-x)*(1-10*x^2)).
-; Submitted by ChelseaOilman
+; Submitted by Science United
 ; 0,11,31,141,341,1441,3441,14441,34441,144441,344441,1444441,3444441,14444441,34444441,144444441,344444441,1444444441,3444444441,14444444441,34444444441,144444444441,344444444441,1444444444441
-; Formula: a(n) = truncate((b(n+1)-20)/10), b(n) = b(n-1)+A070199(n)+1, b(0) = 0
 
 add $0,1
-lpb $0
-  mov $2,$0
-  seq $2,70199 ; Number of palindromes of length <= n.
-  sub $0,1
-  add $1,$2
-  add $1,1
+mov $3,11
+mov $4,4
+mov $1,$0
+lpb $1
+  sub $1,1
+  add $2,$4
+  mul $4,5
+  mov $5,$3
+  mov $3,$4
+  mov $4,$5
+  mul $4,2
 lpe
+mov $1,$2
+div $1,2
 mov $0,$1
-sub $0,20
-div $0,10
+sub $0,2

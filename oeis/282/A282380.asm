@@ -17,8 +17,8 @@ lpb $0
     trn $7,1
     seq $7,107078 ; Whether n has non-unitary prime divisors.
     add $7,2
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$5
     min $10,$0

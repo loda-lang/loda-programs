@@ -1,14 +1,8 @@
 ; A048656: a(n) is the number of unitary (and also of squarefree) divisors of n!.
-; Submitted by eclipse99
+; Submitted by Science United
 ; 1,2,4,4,8,8,16,16,16,16,32,32,64,64,64,64,128,128,256,256,256,256,512,512,512,512,512,512,1024,1024,2048,2048,2048,2048,2048,2048,4096,4096,4096,4096,8192,8192,16384,16384,16384,16384,32768,32768,32768,32768,32768,32768,65536,65536,65536,65536,65536,65536,131072,131072,262144,262144,262144,262144,262144,262144,524288,524288,524288,524288,1048576,1048576,2097152,2097152,2097152,2097152,2097152,2097152,4194304,4194304
+; Formula: a(n) = A032741(A083907(n))+1
 
-mov $1,1
-lpb $0
-  div $0,2
-  mul $0,2
-  trn $0,1
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $0,2
-  mul $1,2
-lpe
-mov $0,$1
+seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
+seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+add $0,1

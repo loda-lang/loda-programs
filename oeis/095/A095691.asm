@@ -1,13 +1,28 @@
 ; A095691: Multiplicative with a(p^e) = A000720(e)+1.
-; Submitted by fzs600
+; Submitted by Skillz
 ; 1,1,1,2,1,1,1,3,2,1,1,2,1,1,1,3,1,2,1,2,1,1,1,3,2,1,3,2,1,1,1,4,1,1,1,4,1,1,1,3,1,1,1,2,2,1,1,3,2,2,1,2,1,3,1,3,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,6,1,1,2,2,1,1,1,3
-; Formula: a(n) = -A365552(n)*(A264668(floor(n/5))-1)
 
-mov $1,$0
-seq $1,365552 ; The number of exponentially odd divisors of the powerful part of n.
-div $0,5
-seq $0,264668 ; a(n) = A264600(n) - A061486(n).
-sub $0,1
-mul $1,$0
-sub $2,$1
-mov $0,$2
+mov $1,75
+mov $2,2
+add $0,1
+lpb $0
+  mov $4,1
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    neq $4,0
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+    mov $5,$4
+    seq $5,230980 ; Number of primes <= n, starting at n=0.
+    add $5,1
+    add $4,1
+  lpe
+  mul $1,$5
+lpe
+mov $0,$1
+div $0,75

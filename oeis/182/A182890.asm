@@ -1,17 +1,16 @@
 ; A182890: Number of (1,0)-steps of weight 1 at level 0 in all weighted lattice paths in L_n.
-; Submitted by Jamie Morken
+; Submitted by Science United
 ; 0,1,2,5,14,36,94,247,646,1691,4428,11592,30348,79453,208010,544577,1425722,3732588,9772042,25583539,66978574,175352183,459077976,1201881744,3146567256,8237820025,21566892818,56462858429,147821682470,387002188980,1013184884470
-; Formula: a(n) = truncate((b(2*n+1)+1)/4), b(n) = b(n-1)+b(n-2), b(1) = 1, b(0) = 1
+; Formula: a(n) = truncate((b(n)+1)/4), b(n) = 3*b(n-1)-b(n-2), b(3) = 21, b(2) = 8, b(1) = 3, b(0) = 1
 
-mov $3,1
-mul $0,2
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,$3
-  add $3,$1
-  mov $1,$2
+mov $1,1
+mov $2,2
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $1,$2
+  add $2,$1
 lpe
-mov $0,$3
+mov $0,$1
 add $0,1
 div $0,4

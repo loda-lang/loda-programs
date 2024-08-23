@@ -1,20 +1,17 @@
 ; A285073: 0-limiting word of the morphism 0->10, 1-> 010.
-; Submitted by Joe
+; Submitted by Skillz
 ; 0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0
-; Formula: a(n) = truncate(e(n)/4), b(n) = 2*truncate((-c(n-1)+b(n-1)+1)/4), b(3) = -8, b(2) = -2, b(1) = 0, b(0) = 0, c(n) = gcd(2*truncate((-c(n-1)+b(n-1)+1)/4)+d(n-1),4)*c(n-1), c(3) = 64, c(2) = 16, c(1) = 8, c(0) = 2, d(n) = truncate(gcd(2*truncate((-c(n-1)+b(n-1)+1)/4)+d(n-1),4)/(gcd(2*truncate((-c(n-1)+b(n-1)+1)/4)+d(n-1),4)*c(n-1))), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = gcd(2*truncate((-c(n-1)+b(n-1)+1)/4)+d(n-1),4), e(3) = 4, e(2) = 2, e(1) = 4, e(0) = 0
 
-mov $2,2
-lpb $0
-  sub $0,1
-  sub $1,$2
-  add $1,1
-  div $1,4
-  mul $1,2
-  add $3,$1
-  gcd $3,4
-  mov $4,$3
-  mul $2,$3
-  div $3,$2
-lpe
-mov $0,$4
-div $0,4
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2
+sub $0,1
+pow $0,2
+mul $0,2
+mov $1,$0
+nrt $1,2
+mov $0,$1
+add $0,1
+mod $0,2

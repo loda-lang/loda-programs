@@ -10,7 +10,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,190886 ; a(n) = [5nr]-5[nr], where r=sqrt(5).
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,$3
   add $1,1

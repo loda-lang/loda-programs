@@ -1,16 +1,16 @@
 ; A038744: T(2n,n), array T as in A038738.
-; Submitted by Jamie Morken(s4)
+; Submitted by Skillz
 ; 1,5,30,188,1201,7756,50439,329625,2161974,14220038,93740152,619083041,4094863900,27120465023,179822255181
 
-lpb $0
-  mov $2,3
-  mul $2,$0
-  add $2,$1
-  add $2,1
-  bin $2,$0
-  sub $0,1
-  add $1,4
-  add $3,$2
-lpe
-mov $0,$3
+mov $2,3
+mul $2,$0
 add $0,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  add $3,1
+  bin $3,$0
+  add $1,$3
+  add $2,1
+lpe
+mov $0,$1

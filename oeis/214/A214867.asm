@@ -4,7 +4,7 @@
 
 mov $1,$0
 mul $0,2
-cmp $2,$0
+equ $2,$0
 trn $0,3
 seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
 sub $0,$2

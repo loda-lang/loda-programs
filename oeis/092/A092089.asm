@@ -1,5 +1,5 @@
 ; A092089: Number of odd-length palindromes among the k-tuples of partial quotients of the continued fraction expansions of n/r, r = 1, ..., n.
-; Submitted by [TA]crashtech
+; Submitted by Mumps
 ; 1,2,3,4,3,6,3,8,5,6,3,12,3,6,9,12,3,10,3,12,9,6,3,24,5,6,7,12,3,18,3,16,9,6,9,20,3,6,9,24,3,18,3,12,15,6,3,36,5,10,9,12,3,14,9,24,9,6,3,36,3,6,15,20,9,18,3,12,9,18,3,40,3,6,15,12,9,18,3,36
 
 mov $1,4
@@ -12,8 +12,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $6,108
     add $2,1
     sub $3,$4
