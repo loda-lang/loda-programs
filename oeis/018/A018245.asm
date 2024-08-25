@@ -1,13 +1,19 @@
 ; A018245: A self-generating sequence: there are a(n) (k+1)'s between successive k's, where k=4.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by fzs600
 ; 4,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5,4,5,5,5,5,5,4,5,5,5,5
-; Formula: a(n) = -2*truncate((A001951(2*n)+A001951(2*n+2))/2)+A001951(2*n)+A001951(2*n+2)+4
 
 mul $0,2
 mov $1,$0
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+pow $1,2
+mul $1,2
+mov $3,$1
+nrt $3,2
 add $0,2
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,$1
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2
+add $0,$3
 mod $0,2
 add $0,4

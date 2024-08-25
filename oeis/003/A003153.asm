@@ -10,8 +10,6 @@ add $4,$1
 mov $3,$4
 pow $3,2
 mul $3,2
-div $4,2
-mul $4,2
 mov $2,$3
 nrt $2,2
 sub $2,1
