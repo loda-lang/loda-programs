@@ -1,10 +1,14 @@
 ; A257022: Trace of n in the quarter-sum representation of n.
-; Submitted by Skivelitis2
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,1,2,1,4,1,6,1,2,9,1,2,12,1,2,1,16,1,2,1,20,1,2,1,4,25,1,2,1,4,30,1,2,1,4,1,36,1,2,1,4,1,42,1,2,1,4,1,6,49,1,2,1,4,1,6,56,1,2,1,4,1,6,1,64,1,2,1,4,1,6,1,72,1,2,1,4,1,6,1
 
 mov $1,$0
 lpb $0
-  seq $1,55087 ; Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
+  mov $2,1
+  add $2,$1
+  mov $3,$2
+  nrt $3,2
+  mod $1,$3
   sub $0,$1
 lpe
 mov $0,$1

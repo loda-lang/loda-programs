@@ -1,7 +1,13 @@
 ; A277825: a(n) = A048725(A065621(n)) = A048720(A065621(n),5).
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 5,10,27,20,57,54,39,40,125,114,99,108,65,78,95,80,245,250,235,228,201,198,215,216,141,130,147,156,177,190,175,160,485,490,507,500,473,470,455,456,413,402,387,396,417,430,447,432,277,282,267,260,297,294,311,312,365,354,371,380,337,350,335,320,965,970,987,980,1017,1014,999,1000,957,946,931,940,897,910,927,912
-; Formula: a(n) = A048725(A065621(n))
 
-seq $0,65621 ; Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
-seq $0,48725 ; a(n) = Xmult(n,5) or rule90(n,1).
+mov $3,$0
+add $0,1
+add $0,$3
+bxo $3,$0
+max $2,$3
+mov $1,$2
+mul $2,4
+bxo $2,$1
+mov $0,$2

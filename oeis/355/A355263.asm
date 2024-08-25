@@ -1,5 +1,5 @@
 ; A355263: a(n) = largest-nth-power(n, 3) * radical(n) = A053150(n) * A007947(n), where the largest-nth-power(n, e) is the largest positive integer b such that b^e divides n.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by fzs600
 ; 1,2,3,2,5,6,7,4,3,10,11,6,13,14,15,4,17,6,19,10,21,22,23,12,5,26,9,14,29,30,31,4,33,34,35,6,37,38,39,20,41,42,43,22,15,46,47,12,7,10,51,26,53,18,55,28,57,58,59,30,61,62,21,8,65,66,67,34,69,70,71,12,73,74,15,38,77,78,79,20
 
 mov $1,1
@@ -12,8 +12,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

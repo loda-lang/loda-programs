@@ -1,9 +1,8 @@
 ; A370118: a(n) = 1 if the arithmetic derivative of n is a multiple of 9, otherwise 0.
 ; Submitted by Science United
 ; 1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0
-; Formula: a(n) = -2*truncate((A000045(A369669(n))+1)/2)+A000045(A369669(n))+1
+; Formula: a(n) = truncate(gcd(A003415(n),9)/8)
 
-seq $0,369669 ; The greatest common divisor of the first and the second arithmetic derivative of n.
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-add $0,1
-mod $0,2
+seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
+gcd $0,9
+div $0,8

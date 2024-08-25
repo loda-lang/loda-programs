@@ -1,13 +1,37 @@
 ; A226693: Squarefree parts of A079896(n), n>= 0.
-; Submitted by UBT - Mikeejones
+; Submitted by Science United
 ; 5,2,3,13,17,5,21,6,7,29,2,33,37,10,41,11,5,3,13,53,14,57,15,61,65,17,69,2,73,19,77,5,21,85,22,89,23,93,6,97,101,26,105,3,109,7,113,29,13,30,31,5,2,129,33,133,34,137,35,141,145,37,149,38,17,39,157,10,161,41,165,42,43,173,11,177,5,181,46,185
-; Formula: a(n) = A007913(-2*truncate(truncate(A113909(n)/2)/2)+truncate(A113909(n)/2)+A113909(n)-1)
 
-seq $0,113909 ; Square table of odd numbers which are neither squares nor one less than squares, read by antidiagonals.
+mov $5,$0
+add $5,1
+add $5,$0
+nrt $5,2
+add $5,$0
+mov $0,$5
+mul $0,2
+add $0,3
 mov $2,$0
 div $2,2
 mod $2,2
 sub $1,$2
+mov $6,1
+mov $8,1
+mov $9,1
 sub $0,$1
-sub $0,1
-seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
+mov $7,$0
+lpb $7
+  add $8,2
+  add $9,$8
+  mov $4,$0
+  mod $4,$9
+  equ $4,0
+  mov $3,$9
+  sub $3,$6
+  mul $3,$4
+  mov $4,$0
+  trn $4,$9
+  neq $4,0
+  add $6,$3
+  sub $7,$4
+lpe
+div $0,$6

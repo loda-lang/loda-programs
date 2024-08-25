@@ -13,12 +13,11 @@ lpb $2
   pow $3,$5
   seq $3,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
   mul $3,$5
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

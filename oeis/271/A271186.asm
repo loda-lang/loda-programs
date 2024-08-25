@@ -1,26 +1,21 @@
 ; A271186: Odd integers k such that k^k + 1 is the sum of 2 nonzero squares.
-; Submitted by Cruncher Pete
+; Submitted by modesti
 ; 1,9,17,25,49,73,81,89,97,121
-; Formula: a(n) = 8*b(n+5)-39, b(n) = c(n-2), b(7) = 7, b(6) = 6, b(5) = 5, b(4) = 4, b(3) = 3, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)+gcd(-c(n-2)-d(n-2)+c(n-5)+c(n-7)+1,3), c(10) = 16, c(9) = 15, c(8) = 14, c(7) = 11, c(6) = 8, c(5) = 7, c(4) = 6, c(3) = 5, c(2) = 4, c(1) = 3, c(0) = 0, d(n) = c(n-1)+d(n-1)+2, d(7) = 47, d(6) = 37, d(5) = 28, d(4) = 20, d(3) = 13, d(2) = 7, d(1) = 2, d(0) = 0
+; Formula: a(n) = 8*e(n)-7, b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = -gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)+1)/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+1,4)+c(n-1), c(3) = -6, c(2) = -2, c(1) = -1, c(0) = 0, d(n) = truncate(gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)+1)/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+1,4)/2), d(3) = 2, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = d(n-1)+e(n-1)+1, e(3) = 4, e(2) = 3, e(1) = 2, e(0) = 1
 
-add $0,5
+mov $4,1
 lpb $0
   sub $0,1
-  mov $7,$6
-  add $9,$5
-  add $4,1
-  sub $4,$9
-  mov $6,$4
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  add $7,$4
-  gcd $7,3
-  mov $8,$5
-  add $9,2
-  add $5,$7
+  sub $1,$2
+  div $1,2
+  add $3,1
+  add $4,$3
+  add $3,$1
+  mod $3,2
+  gcd $3,4
+  sub $2,$3
+  div $3,2
 lpe
-mov $0,$3
+mov $0,$4
 mul $0,8
-sub $0,39
+sub $0,7

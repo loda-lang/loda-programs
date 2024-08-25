@@ -1,10 +1,21 @@
 ; A167482: a(n)=n-1 if n is prime, otherwise a(n)=n+1.
-; Submitted by Bunteck
+; Submitted by Skillz
 ; 2,1,2,5,4,7,6,9,10,11,10,13,12,15,16,17,16,19,18,21,22,23,22,25,26,27,28,29,28,31,30,33,34,35,36,37,36,39,40,41,40,43,42,45,46,47,46,49,50,51,52,53,52,55,56,57,58,59,58,61,60,63,64,65,66,67,66,69,70,71,70,73
-; Formula: a(n) = -2*A010051(n)+n+2
 
 mov $1,$0
-seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $1,2
-sub $0,$1
+mov $2,2
+lpb $0
+  sub $0,1
+  mov $3,$5
+  gcd $3,$2
+  bin $3,$2
+  mul $5,2
+  sub $5,1
+  sub $5,$2
+  add $2,1
+  mov $4,-2
+  mul $4,$3
+lpe
+add $4,$1
+mov $0,$4
 add $0,2

@@ -1,5 +1,5 @@
 ; A155689: a(n) = Sum_{k >= 1} floor(n * sqrt(2) / 2^k).
-; Submitted by Bunteck
+; Submitted by BlisteringSheep
 ; 0,1,3,3,4,7,7,8,10,11,11,15,16,16,18,19,22,22,23,25,25,26,31,31,32,34,35,35,38,39,39,41,42,46,46,47,49,49,50,53,53,54,56,57,57,63,64,64,66,67,70,70,71,73,73,74,78,79,79,81,82,82,85,86,86,88,89,94,94,95,97,97,98,101,102,102,104,105,105,109
 
 add $0,1
@@ -7,7 +7,7 @@ pow $0,2
 lpb $0
   div $0,2
   mov $2,$0
-  seq $2,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  nrt $2,2
   div $0,2
   add $1,$2
 lpe

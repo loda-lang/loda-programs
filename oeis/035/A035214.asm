@@ -1,16 +1,14 @@
 ; A035214: 2 followed by a run of n 1's.
-; Submitted by Science United
+; Submitted by arkiss
 ; 2,2,1,2,1,1,2,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1
-; Formula: a(n) = d(n+1), b(n) = c(n-1)+truncate(b(n-1)/2), b(2) = 2, b(1) = 1, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(2) = 4, c(1) = 2, c(0) = 1, d(n) = gcd(truncate(b(n-1)/2),2), d(2) = 2, d(1) = 2, d(0) = 0
 
-mov $2,1
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+add $1,1
+div $1,2
+bin $1,2
+bin $1,$0
+mov $0,$1
 add $0,1
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $1,$2
-  mul $2,$3
-lpe
-mov $0,$3

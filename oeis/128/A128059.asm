@@ -1,11 +1,20 @@
 ; A128059: a(n) = numerator((2*n-1)^2/(2*(2*n)!)).
-; Submitted by Cruncher Pete [B@A]
+; Submitted by rolivos
 ; 1,1,3,5,7,1,11,13,1,17,19,1,23,1,1,29,31,1,1,37,1,41,43,1,47,1,1,53,1,1,59,61,1,1,67,1,71,73,1,1,79,1,83,1,1,89,1,1,1,97,1,101,103,1,107,109,1,113,1,1,1,1,1,1,127,1,131,1,1,137,139,1,1,1,1,149,151,1,1,157
-; Formula: a(n) = 2*A010051(2*max(n-1,0))*max(n-1,0)+1
 
 trn $0,1
 mul $0,2
-mov $1,$0
-seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $0,$1
-add $0,1
+mov $2,$0
+seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+mov $4,$0
+mul $0,$2
+add $2,$4
+mul $2,$0
+mov $3,$0
+equ $3,0
+add $0,$3
+div $2,$0
+mov $1,$2
+equ $1,0
+mov $0,$2
+add $0,$1

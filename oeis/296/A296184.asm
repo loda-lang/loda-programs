@@ -1,23 +1,33 @@
 ; A296184: Decimal expansion of 2 + phi, with the golden section phi from A001622.
-; Submitted by Science United
+; Submitted by Mumps
 ; 3,6,1,8,0,3,3,9,8,8,7,4,9,8,9,4,8,4,8,2,0,4,5,8,6,8,3,4,3,6,5,6,3,8,1,1,7,7,2,0,3,0,9,1,7,9,8,0,5,7,6,2,8,6,2,1,3,5,4,4,8,6,2,2,7,0,5,2,6,0,4,6,2,8,1,8,9
-; Formula: a(n) = -10*truncate(truncate(b(6*n)/(truncate(c(6*n)/(10^floor((2*n)/2)))+1))/10)+truncate(b(6*n)/(truncate(c(6*n)/(10^floor((2*n)/2)))+1)), b(n) = 3*b(n-1)-b(n-2), b(3) = 43, b(2) = 17, b(1) = 8, b(0) = 7, c(n) = 2*c(n-1)+b(n-1), c(1) = 9, c(0) = 1
+; Formula: a(n) = -10*truncate(truncate(truncate((2*b(3*n+3)-truncate(d(3*n+3)/2)+c(3*n+3))/(2*truncate((2*b(3*n+3)+c(3*n+3))/(2*10^(n+1)))))/3)/10)+truncate(truncate((2*b(3*n+3)-truncate(d(3*n+3)/2)+c(3*n+3))/(2*truncate((2*b(3*n+3)+c(3*n+3))/(2*10^(n+1)))))/3), b(n) = 2*b(n-1)+2*max(e(n-1),c(n-1)), b(3) = 72, b(2) = 18, b(1) = 0, b(0) = 0, c(n) = 4*c(n-1)+2*max(e(n-1),c(n-1))-4*c(n-2), c(4) = 576, c(3) = 108, c(2) = 18, c(1) = 0, c(0) = 0, d(n) = -b(n-1)-max(e(n-1),c(n-1))+d(n-1), d(3) = -45, d(2) = -9, d(1) = 0, d(0) = 0, e(n) = max(e(n-1),c(n-1))+9, e(3) = 27, e(2) = 18, e(1) = 9, e(0) = 0
 
-mul $0,2
-mov $1,7
-mov $2,1
+add $0,1
 mov $3,$0
 mul $3,3
 lpb $3
   sub $3,1
-  add $1,$2
+  add $5,$2
+  max $6,$2
+  add $1,$6
   add $2,$1
+  sub $5,$2
+  mul $1,2
+  mul $2,2
+  add $6,9
 lpe
-div $0,2
 mov $4,10
 pow $4,$0
+mul $4,2
+div $5,2
+mul $1,2
+add $1,$2
+mov $2,$1
 div $2,$4
-add $2,1
+mul $2,2
+sub $1,$5
 div $1,$2
 mov $0,$1
+div $0,3
 mod $0,10

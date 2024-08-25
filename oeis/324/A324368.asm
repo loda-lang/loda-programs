@@ -7,6 +7,6 @@ mov $1,$0
 add $1,1
 seq $1,320689 ; Number of partitions of n with up to two distinct kinds of 1.
 add $0,1
-seq $0,52810 ; 1 + number of partitions of n, n>0.
+seq $0,52810 ; a(n) = 1 + (number of partitions of n, n>0).
 sub $0,1
 sub $0,$1

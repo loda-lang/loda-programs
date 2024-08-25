@@ -6,6 +6,6 @@ add $1,$0
 bin $1,3
 mul $1,5
 mov $2,$1
-cmp $2,0
+equ $2,0
 add $1,$2
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A170770: Expansion of ( phi(q) * phi(q^63) + phi(-q) * phi(-q^63) + 4 * q^16 * psi(q^2) * psi(q^126) ) / 2 in powers of q^2 where phi(), psi() are Ramanujan theta functions.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by arkiss
 ; 1,0,2,0,0,0,0,0,4,2,0,2,0,0,2,0,0,0,4,0,0,0,0,2,0,0,0,0,0,2,0,0,6,0,0,0,6,0,0,0,0,0,0,0,6,0,0,0,0,0,2,0,0,2,0,0,4,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,8,0,4,0,0,2,0,0
 
 mov $1,$0
@@ -13,8 +13,7 @@ mov $5,$0
 lpb $0
   mov $6,$5
   dif $6,$0
-  cmp $6,$5
-  cmp $6,0
+  neq $6,$5
   mul $6,$0
   pow $6,21
   sub $0,1

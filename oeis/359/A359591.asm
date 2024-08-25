@@ -1,5 +1,5 @@
 ; A359591: Dirichlet inverse of A035263, where A035263(n) is parity of 2-adic valuation of 2n.
-; Submitted by Solidair79
+; Submitted by Science United
 ; 1,0,-1,-1,-1,0,-1,0,0,0,-1,1,-1,0,1,0,-1,0,-1,1,1,0,-1,0,0,0,0,1,-1,0,-1,0,1,0,1,0,-1,0,1,0,-1,0,-1,1,0,0,-1,0,0,0,1,1,-1,0,1,0,1,0,-1,-1,-1,0,0,0,1,0,-1,1,1,0,-1,0,-1,0,0,1,1,0,-1,0
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe
@@ -22,7 +21,7 @@ lpb $0
     mov $6,$4
     mul $4,$2
     sub $4,$6
-    cmp $4,1
+    equ $4,1
     sub $4,$5
     add $5,$4
   lpe

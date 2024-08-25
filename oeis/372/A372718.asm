@@ -1,8 +1,14 @@
 ; A372718: Triangular numbers that are 2 mod 4, halved.
-; Submitted by Contact
+; Submitted by mmonnin
 ; 3,5,33,39,95,105,189,203,315,333,473,495,663,689,885,915,1139,1173,1425,1463,1743,1785,2093,2139,2475,2525,2889,2943,3335,3393,3813,3875,4323,4389,4865,4935,5439,5513,6045,6123,6683,6765,7353,7439,8055,8145,8789,8883,9555,9653
-; Formula: a(n) = 2*A274979(n)+3
+; Formula: a(n) = 2*floor(binomial(6*floor(n/2)+n+4,2)/4)+1
 
-seq $0,274979 ; Integers of the form m*(m + 7)/8.
+mov $1,$0
+div $1,2
+mul $1,6
+add $0,$1
+add $0,4
+bin $0,2
+div $0,4
 mul $0,2
-add $0,3
+add $0,1

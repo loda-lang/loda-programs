@@ -1,16 +1,15 @@
 ; A059628: Carryless multiplication 5 X n base 10.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Skillz
 ; 0,5,0,5,0,5,0,5,0,5,50,55,50,55,50,55,50,55,50,55,0,5,0,5,0,5,0,5,0,5,50,55,50,55,50,55,50,55,50,55,0,5,0,5,0,5,0,5,0,5,50,55,50,55,50,55,50,55,50,55,0,5,0,5,0,5,0,5,0,5,50,55,50,55,50,55,50,55,50,55
 
 mov $3,1
 lpb $0
   mov $2,$0
-  pow $2,2
-  mod $2,4
+  mod $2,2
   mul $2,$3
+  mul $3,10
   div $0,10
   add $1,$2
-  mul $3,10
 lpe
 mov $0,$1
 mul $0,5

@@ -1,5 +1,5 @@
 ; A327224: Positions of 1's in {A327222(k) : n > 0}.
-; Submitted by gera
+; Submitted by Josemi
 ; 2,3,7,8,9,12,14,15,19,20,21,24,26,27,31,32,36,37,38,41,43,44,48,49,50,53,55,56,60,61,62,65,66,67,70,72,73,77,78,79,82,84,85,89,90,91,94,96,97,101,102,106,107,108,111,113,114,118,119,120,123,125,126,130,131,132,135,136,137,140,142,143,147,148,149,152,154,155,159,160
 
 add $0,1
@@ -8,13 +8,24 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $5,$2
-  seq $5,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $5,2
+  mul $5,2
+  mov $8,$5
+  nrt $8,2
   mov $1,$2
   add $1,4
-  seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  add $1,$5
+  pow $1,2
+  mul $1,2
+  mov $7,$1
+  nrt $7,2
+  mov $1,$7
+  add $1,$8
   add $1,1
-  seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $1,2
+  mul $1,2
+  mov $6,$1
+  nrt $6,2
+  mov $1,$6
   mod $1,2
   dif $4,2
   sub $0,$1

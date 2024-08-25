@@ -102,6 +102,7 @@ A024698: a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 o
 A024702: a(n) = (prime(n)^2 - 1)/24.
 A024707: Positions of multiples of 5 in A024702.
 A025441: Number of partitions of n into 2 distinct nonzero squares.
+A025456: Number of partitions of n into 3 positive cubes.
 A025465: Number of partitions of n into 3 distinct nonnegative cubes.
 A025480: a(2n) = n, a(2n+1) = a(n).
 A026274: Greatest k such that s(k) = n, where s = A026272.
@@ -124,6 +125,7 @@ A033716: Number of integer solutions to the equation x^2 + 3y^2 = n.
 A033762: Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
 A034387: Sum of primes <= n.
 A034683: Unitary abundant numbers: numbers k such that usigma(k) > 2*k.
+A034699: Largest prime power factor of n.
 A035034: Numbers k such that k >= d(k)^2, where d(k) is the number of divisors of k.
 A035035: Numbers k such that k > d(k)^2, where d(k) is the number of divisors of k.
 A035143: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -47.

@@ -1,17 +1,18 @@
 ; A114778: Cumulative product of triple factorial A007661.
-; Submitted by Fardringle
+; Submitted by Science United
 ; 1,1,2,6,24,240,4320,120960,9676800,1567641600,438939648000,386266890240000,750902834626560000,2733286318040678400000,33674087438261157888000000,981936389699695364014080000000
 
-mov $1,126785
-lpb $0
-  mov $3,$2
-  lpb $3
-    sub $3,3
-    mul $1,$0
+mov $3,2
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $2,$1
+  lpb $2
+    mul $3,$2
+    sub $2,1
   lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
+  sub $1,2
 lpe
-mov $0,$1
-div $0,126785
+mov $0,$3
+div $0,2

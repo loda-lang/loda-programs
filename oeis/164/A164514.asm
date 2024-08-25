@@ -1,21 +1,21 @@
 ; A164514: 1 followed by numbers that are not squares.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,2,3,5,6,7,8,10,11,12,13,14,15,17,18,19,20,21,22,23,24,26,27,28,29,30,31,32,33,34,35,37,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,58,59,60,61,62,63,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
 
-mov $1,1
-max $1,$0
-mov $2,$0
-mul $2,2
-sub $2,1
-mov $3,$2
+mul $0,2
+mov $1,$0
+sub $1,1
+mov $4,1
+add $4,$1
+mov $3,$4
 mul $3,2
-lpb $2
-  mov $4,$3
-  div $4,$2
-  add $2,$4
-  div $2,2
-lpe
-add $2,1
-div $2,2
-add $2,$1
-mov $0,$2
+div $4,2
+mul $4,2
+mov $2,$3
+nrt $2,2
+sub $2,1
+add $4,$2
+mov $1,$4
+div $1,2
+mov $0,$1
+add $0,1

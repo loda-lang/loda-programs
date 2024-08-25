@@ -1,18 +1,16 @@
 ; A245187: Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
-; Submitted by Christian Krause
+; Submitted by [AF>Amis de la Mer] ComteZera
 ; 1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0
 
-mov $2,$0
-div $2,2
-add $2,1
-lpb $2
-  dif $2,4
-lpe
-mod $2,2
+mov $1,$0
 mod $0,2
-mul $0,9
-bin $0,$2
-sub $1,$0
-mov $0,$1
-add $0,11
+add $0,12
+div $1,2
+add $1,1
+lpb $1
+  dif $1,4
+lpe
+mod $1,2
+bin $0,$1
+sub $0,11
 mod $0,10

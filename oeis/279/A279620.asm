@@ -1,21 +1,28 @@
 ; A279620: Limit of the sequence of words defined by w(1) = 1, w(2) = 1221, and w(n) = w(n-1) 2 w(n-2) 2 w(n-1) for n >= 2. Also the fixed point of the map 1 -> 122, 2 -> 12.
-; Submitted by stoneageman
+; Submitted by Skillz
 ; 1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2,1,2,1,2,2,1,2,1,2,1,2,2
-; Formula: a(n) = -2*truncate(d(n+1)/2)+d(n+1)+1, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 2*gcd(-b(n-1)+d(n-1)+truncate((-c(n-1)+b(n-1))/2),2)*c(n-1), c(2) = 16, c(1) = 8, c(0) = 2, d(n) = gcd(-b(n-1)+d(n-1)+truncate((-c(n-1)+b(n-1))/2),2), d(2) = 1, d(1) = 2, d(0) = 3
 
-mov $2,2
-mov $3,3
+mul $0,2
+mov $1,$0
+add $1,3
+pow $1,2
+mul $1,2
+mov $3,$1
+nrt $3,2
 add $0,1
-lpb $0
-  sub $0,1
-  sub $3,$1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  gcd $3,2
-  mul $2,2
-  mul $2,$3
-lpe
-mov $0,$3
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $1,$3
+mul $1,$2
+mov $0,$2
+add $0,$1
+mod $0,2
+mov $1,11
+pow $1,$0
+mov $0,$1
+div $0,10
+add $0,1
 mod $0,2
 add $0,1

@@ -19,7 +19,7 @@ sub $0,1
 mov $4,10
 pow $4,$0
 mov $5,$4
-cmp $5,0
+equ $5,0
 add $4,$5
 div $2,$4
 div $1,$2

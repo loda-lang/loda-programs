@@ -1,17 +1,13 @@
 ; A086117: Denominator of mean deviation of a symmetrical binomial distribution on n elements.
-; Submitted by pnbbfr
+; Submitted by Mumps
 ; 2,2,4,4,16,16,32,32,256,256,512,512,2048,2048,4096,4096,65536,65536,131072,131072,524288,524288,1048576,1048576,8388608,8388608,16777216,16777216,67108864,67108864,134217728,134217728,4294967296,4294967296
 
+mov $2,2
 div $0,2
-mov $1,$0
-pow $0,0
-lpb $1
-  add $0,$1
-  div $1,2
+lpb $0
+  add $1,$0
+  div $0,2
 lpe
-add $1,1
-mul $1,2
-pow $1,$0
-mov $0,$1
-div $0,2
+pow $2,$1
+mov $0,$2
 mul $0,2

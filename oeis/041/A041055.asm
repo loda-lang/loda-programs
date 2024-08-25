@@ -9,8 +9,7 @@ lpb $0
   mov $2,$1
   add $3,1
   mov $5,$3
-  cmp $5,0
-  cmp $5,0
+  neq $5,0
   sub $5,3
   mov $1,$3
   gcd $1,4

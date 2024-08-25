@@ -1,5 +1,5 @@
 ; A349710: Paschal full moon dates expressed as days after March 21 (Julian calendar).
-; Submitted by DoctorNow
+; Submitted by modesti
 ; 15,4,23,12,1,20,9,28,17,6,25,14,3,22,11,0,19,8,27,15,4,23,12,1,20,9,28,17,6,25,14,3,22,11,0,19,8,27,15,4,23,12,1,20,9,28,17,6,25,14,3,22,11,0,19,8,27,15,4,23,12,1,20,9,28,17,6,25,14,3,22,11,0,19,8
 
 add $0,3
@@ -12,7 +12,6 @@ lpb $0
   add $2,4
   mul $2,49
   mod $2,30
-  add $2,10
 lpe
 mov $0,$2
-sub $0,11
+sub $0,1

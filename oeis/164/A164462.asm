@@ -12,12 +12,12 @@ lpb $6
     mov $3,$2
     dif $3,$0
     mul $3,2
-    cmp $3,$2
+    equ $3,$2
     sub $3,$1
     mov $4,$0
     sub $0,1
     add $2,$4
-    cmp $4,0
+    equ $4,0
     sub $4,1
     mul $5,$4
     sub $5,$3

@@ -1,30 +1,27 @@
 ; A030644: Decimal expansion of 10 - Pi.
-; Submitted by fzs600
+; Submitted by Science United
 ; 6,8,5,8,4,0,7,3,4,6,4,1,0,2,0,6,7,6,1,5,3,7,3,5,6,6,1,6,7,2,0,4,9,7,1,1,5,8,0,2,8,3,0,6,0,0,6,2,4,8,9,4,1,7,9,0,2,5,0,5,5,4,0,7,6,9,2,1,8,3,5,9,3,7,1,3,7,9,1,0
 
-mov $4,1
-mov $3,$0
-add $3,3
-mul $3,4
-lpb $3
-  max $3,1
-  mul $1,2
-  mov $2,1
-  max $5,$1
-  div $5,$3
-  add $1,$4
-  sub $3,1
+mov $5,1
+mov $2,$0
+add $2,3
+mul $2,4
+lpb $2
+  max $2,1
   mul $4,2
+  max $3,$4
+  div $3,$2
   add $4,$5
-  mul $4,2
+  sub $2,1
+  mul $5,2
+  add $5,$3
+  mul $5,2
 lpe
-mov $6,10
-pow $6,$0
-div $1,$6
+mov $1,10
+pow $1,$0
 div $4,$1
-mov $0,$4
-add $0,$2
+div $5,$4
+mov $0,$5
+mod $0,10
 mul $0,-1
-mod $0,10
-add $0,10
-mod $0,10
+add $0,9
