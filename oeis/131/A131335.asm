@@ -1,24 +1,22 @@
 ; A131335: A000012 * A131334.
-; Submitted by BarnardsStern
+; Submitted by Conan
 ; 1,1,1,2,1,1,2,2,2,1,3,2,4,2,1,3,3,6,4,3,1,4,3,9,6,7,3,1,4,4,12,9,13,7,4,1,5,4,16,12,22,13,11,4,1,5,5,20,16,34,22,24,11,5,1
 
 lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,1
+add $2,2
 sub $2,$0
-mov $3,2
 div $0,2
-add $0,1
+add $3,$0
+mov $4,$0
+mov $0,$2
 lpb $0
-  sub $0,1
-  add $2,1
-  add $4,1
-  mul $1,$2
-  div $1,$4
-  div $3,2
-  add $3,$1
+  sub $0,2
+  add $3,$0
+  bin $3,$0
+  add $1,$3
+  mov $3,$4
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

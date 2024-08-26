@@ -1,10 +1,21 @@
 ; A173344: a(n+4) = a(n+3) - 2*a(n+2) - a(n+1) - a(n), starting with (0, 1, 0, -2).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,1,0,-2,-3,0,8,13,0,-34,-55,0,144,233,0,-610,-987,0,2584,4181,0,-10946,-17711,0,46368,75025,0,-196418,-317811,0,832040,1346269,0,-3524578,-5702887,0,14930352,24157817,0,-63245986,-102334155,0
-; Formula: a(n) = truncate((A022365(n)*A010892(n))/31)
+; Formula: a(n) = 3*d(n-1)-b(n-1)-2*a(n-1)+c(n-1)+1, a(3) = -2, a(2) = 0, a(1) = 1, a(0) = 0, b(n) = 2*a(n-1)-2*d(n-1)+b(n-1)-1, b(3) = 1, b(2) = 0, b(1) = -1, b(0) = 0, c(n) = -b(n-1)-a(n-1)+d(n-1), c(3) = -1, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 2*d(n-1)-b(n-1)-2*a(n-1)+c(n-1), d(3) = -2, d(2) = -1, d(1) = 0, d(0) = 0
 
-mov $1,$0
-seq $1,22365 ; Fibonacci sequence beginning 0, 31.
-seq $0,10892 ; Inverse of 6th cyclotomic polynomial. A period 6 sequence.
-mul $0,$1
-div $0,31
+lpb $0
+  sub $0,1
+  sub $3,$4
+  add $1,$3
+  add $1,$3
+  sub $3,$1
+  add $4,1
+  mov $5,$4
+  mov $4,$2
+  sub $4,$1
+  add $5,$4
+  sub $1,1
+  mov $2,$3
+  mov $3,$5
+lpe
+mov $0,$3

@@ -1,23 +1,30 @@
 ; A190698: a(n) = [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,1) and [ ]=floor.
-; Submitted by Manuel Stenschke
+; Submitted by Skillz
 ; 3,2,1,4,3,2,1,4,3,2,0,3,2,1,4,3,2,1,4,3,2,1,4,3,1,0,3,2,1,4,3,2,1,4,3,2,1,4,2,1,0,3,2,1,4,3,2,1,4,3,2,0,3,2,1,4,3,2,1,4,3,2,1,4,3,1,0,3,2,1,4,3,2,1,4,3,2,1,4,2
 
 mov $6,$0
 mov $5,2
 lpb $5
   sub $5,1
-  mov $0,$6
-  seq $0,180123 ; Second of three "least, sum, least" self-generating sequences.
+  mov $10,1
+  add $10,$6
+  mov $9,$10
+  pow $9,2
+  mul $9,3
+  mov $8,$9
+  nrt $8,2
+  add $10,$8
+  max $7,$6
+  add $7,$10
   sub $4,$3
   sub $4,$1
-  mov $1,$0
+  mov $1,$7
   mov $2,$4
   add $2,$4
   mov $3,$2
-  add $3,$0
+  add $3,$7
   add $6,1
   mul $6,4
 lpe
 mov $0,$3
 sub $0,6
-mul $3,2

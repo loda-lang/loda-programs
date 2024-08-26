@@ -1,17 +1,14 @@
 ; A129185: Shift operator, left.
-; Submitted by Bunteck
+; Submitted by Skillz
 ; 0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-; Formula: a(n) = d(n+2)-1, b(n) = c(n-1)+truncate(b(n-1)/2), b(2) = 5, b(1) = 2, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(2) = 4, c(1) = 4, c(0) = 2, d(n) = gcd(truncate(b(n-1)/2),2), d(2) = 1, d(1) = 2, d(0) = 0
 
-mov $2,2
 add $0,2
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $1,$2
-  mul $2,$3
-lpe
-mov $0,$3
-sub $0,1
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+add $1,1
+div $1,2
+bin $1,2
+bin $1,$0
+mov $0,$1

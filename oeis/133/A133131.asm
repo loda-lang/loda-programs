@@ -7,7 +7,7 @@ lpb $0
   sub $0,1
   sub $2,1
   sub $2,$1
-  cmp $3,0
+  equ $3,0
   add $3,$2
   add $1,1
   add $1,$2

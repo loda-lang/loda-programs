@@ -10,7 +10,7 @@ lpb $0
   mov $5,$4
   gcd $5,$0
   dif $5,13
-  cmp $5,$0
+  equ $5,$0
   mul $5,$0
   sub $0,1
   add $3,$5

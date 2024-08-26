@@ -13,7 +13,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     seq $7,99039 ; Riordan array (1,c(-x)), where c(x) = g.f. of Catalan numbers.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

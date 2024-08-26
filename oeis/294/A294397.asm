@@ -1,14 +1,20 @@
 ; A294397: Solution of the complementary equation a(n) = a(n-1) + b(n-2) + 1, where a(0) = 1, a(1) = 3, b(0) = 2, b(1) = 4.
-; Submitted by Christian Krause
+; Submitted by mmonnin
 ; 1,3,6,11,17,25,34,44,55,68,82,97,113,130,149,169,190,212,235,259,284,311,339,368,398,429,461,494,528,564,601,639,678,718,759,801,844,888,934,981,1029,1078,1128,1179,1231,1284,1338,1393,1450,1508,1567,1627
 
 mov $1,1
 bin $1,$0
 lpb $0
   mov $2,$0
-  seq $2,183864 ; n+floor(sqrt(5*n/3)); complement of A183865.
+  add $2,1
+  mov $3,$2
+  mul $3,2
+  div $3,3
+  add $3,$2
+  nrt $3,2
+  add $3,$2
   sub $0,1
-  add $1,$2
+  add $1,$3
   sub $1,1
 lpe
 mov $0,$1

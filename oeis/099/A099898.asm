@@ -1,20 +1,19 @@
 ; A099898: Shifts left and divides by 4 under the XOR BINOMIAL transform (A099899).
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 1,4,20,84,276,1108,5396,20564,65812,263252,1316116,5525588,18153748,72352852,352326932,1342197844,4295033108,17180132436,85900662036,360782778452,1185429127444,4758896116820,23175995856148,88323049672788
 
+mov $1,1
+mov $3,1
+mul $0,2
 add $0,1
-mov $4,$0
 lpb $0
   sub $0,1
-  mov $3,$4
-  sub $3,2
-  bin $3,$1
-  mod $3,2
-  add $3,$2
-  add $1,2
   add $2,$3
-  mul $2,2
-  add $4,1
+  bxo $2,$1
+  mov $3,$1
+  mul $3,2
+  mov $1,$2
+  mov $2,$3
 lpe
 mov $0,$2
 div $0,2

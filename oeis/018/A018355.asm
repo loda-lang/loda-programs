@@ -1,17 +1,24 @@
 ; A018355: Divisors of 248.
-; Submitted by pututu
+; Submitted by Steve Dodd
 ; 1,2,4,8,31,62,124,248
 
+mov $1,1
+mov $2,3
 lpb $0
-  sub $0,1
-  add $3,1
-  mul $4,2
-  mul $4,$3
-  add $4,$3
-  mov $3,$2
-  mov $2,$1
+  max $1,$4
+  add $1,1
+  mov $3,$0
+  sub $3,1
+  mod $3,2
+  mul $3,$1
+  div $0,2
+  mul $2,$1
+  dif $2,$3
   add $1,$4
-  cmp $1,1
+  sub $1,1
+  bin $1,2
+  mul $1,2
+  mov $4,3
 lpe
-mov $0,$4
-add $0,1
+mov $0,$2
+div $0,3

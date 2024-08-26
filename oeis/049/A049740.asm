@@ -1,5 +1,5 @@
 ; A049740: a(n)=T(n,n), array T as in A049735.
-; Submitted by GolfSierra
+; Submitted by Science United
 ; 1,9,25,61,101,161,225,305,405,509,633,761,889,1069,1229,1425,1609,1813,2029,2253,2521,2769,3045,3317,3597,3937,4249,4581,4925,5273,5649,6025,6437,6845,7265,7705,8113,8597,9061,9569
 
 mov $3,3
@@ -11,13 +11,15 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+  mov $5,$2
+  nrt $5,2
   mov $3,1
   add $3,$4
   add $4,2
+  mov $2,$5
+  mul $2,2
   add $1,$2
-  sub $1,1
 lpe
 mov $0,$1
-mul $0,4
+mul $0,2
 add $0,1

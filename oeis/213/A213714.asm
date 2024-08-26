@@ -6,8 +6,7 @@ add $0,1
 mov $4,$0
 lpb $4
   add $2,$3
-  cmp $3,1
-  cmp $3,0
+  neq $3,1
   lpb $4
     sub $4,$3
     mul $3,2
