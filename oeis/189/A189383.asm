@@ -1,15 +1,28 @@
 ; A189383: a(n) = n + [n*s/r] + [n*t/r]; r=1, s=1/sqrt(2), t=1/sqrt(3).
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 1,4,6,8,10,13,15,17,20,22,24,26,29,31,33,36,38,40,42,45,47,49,52,53,56,59,61,63,65,68,69,72,75,77,79,81,84,85,88,91,92,95,97,100,101,104,107,108,111,113,116,118,120,123,124,127,129,132,134,136,139,140,143,145,147,150,152,155,156,159,161,163,166,168,171,172,175,178,179,182
-; Formula: a(n) = truncate((A003151(n)+n+945)/2)+A097337(n)-472
 
-mov $2,$0
-seq $2,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+mov $6,1
+add $6,$0
+mov $5,$6
+pow $5,2
+mul $5,2
+mov $7,$5
+nrt $7,2
+add $6,$7
+mov $2,$6
 add $2,945
 mov $1,$0
 add $1,$2
 div $1,2
 sub $1,471
-seq $0,97337 ; Integer part of the edge of a cube that has space-diagonal n.
-sub $0,1
+mov $4,1
+add $4,$0
+mov $8,$4
+pow $8,2
+div $8,3
+mov $3,$8
+nrt $3,2
+mov $0,$3
 add $0,$1
+sub $0,1

@@ -12,7 +12,7 @@ lpb $3
   seq $4,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $4,1
   add $4,$1
-  cmp $4,1
+  equ $4,1
   gcd $4,2
   sub $0,$4
   add $0,1
@@ -20,7 +20,7 @@ lpb $3
   add $2,$1
   mov $1,$0
   max $1,0
-  cmp $1,$0
+  equ $1,$0
   mul $3,$1
   sub $3,1
 lpe

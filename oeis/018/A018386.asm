@@ -6,7 +6,7 @@ mov $3,$0
 lpb $3
   sub $3,1
   div $0,2
-  cmp $2,0
+  equ $2,0
   div $1,2
   add $1,$2
   add $1,$0

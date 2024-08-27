@@ -1,5 +1,5 @@
 ; A225561: Largest number m such that 1, 2, ..., m can be represented as the sum of distinct divisors of n.
-; Submitted by Christian Krause
+; Submitted by aendgraend
 ; 1,3,1,7,1,12,1,15,1,3,1,28,1,3,1,31,1,39,1,42,1,3,1,60,1,3,1,56,1,72,1,63,1,3,1,91,1,3,1,90,1,96,1,7,1,3,1,124,1,3,1,7,1,120,1,120,1,3,1,168,1,3,1,127,1,144,1,7,1,3,1,195,1,3,1,7,1,168,1,186
 
 mov $1,1
@@ -10,10 +10,9 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     add $2,1
     max $4,$5
     sub $3,$4

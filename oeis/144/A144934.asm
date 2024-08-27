@@ -6,8 +6,11 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,84188 ; a(0)=1, a(n+1) = 2*a(n) + b(n+2), where b(n)=A004539(n) is the n-th bit in the binary expansion of sqrt(2).
+  mov $6,4
+  pow $6,$1
+  mul $6,2
+  mov $3,$6
+  nrt $3,2
   add $3,$4
   mov $5,$3
   gcd $3,2
@@ -16,7 +19,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

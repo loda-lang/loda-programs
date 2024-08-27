@@ -1,21 +1,19 @@
 ; A342279: A bisection of A000201: a(n) = A000201(2*n+1).
-; Submitted by SkyHighWeFly
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,4,8,11,14,17,21,24,27,30,33,37,40,43,46,50,53,56,59,63,66,69,72,76,79,82,85,88,92,95,98,101,105,108,111,114,118,121,124,127,131,134,137,140,144,147,150,153,156,160,163,166,169,173,176,179,182,186,189
-; Formula: a(n) = truncate(e(2*n+1)/2), b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -9, b(2) = -2, b(1) = -1, b(0) = 0, c(n) = c(n-1)*(2*d(n-1)+2*truncate((-c(n-1)+b(n-1))/2)-4*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+4), c(3) = 32, c(2) = 16, c(1) = 4, c(0) = 2, d(n) = 2*d(n-1)+2*truncate((-c(n-1)+b(n-1))/2)-4*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+4, d(3) = 2, d(2) = 4, d(1) = 2, d(0) = 0, e(n) = 2*d(n-1)+2*truncate((-c(n-1)+b(n-1))/2)-4*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+e(n-1)+4, e(3) = 8, e(2) = 6, e(1) = 2, e(0) = 0
+; Formula: a(n) = truncate((b(n+2)*(2*n+1))/c(n+2)), b(n) = 2*b(n-1)+c(n-1), b(1) = 12, b(0) = 6, c(n) = 3*c(n-1)-c(n-2), c(3) = 48, c(2) = 18, c(1) = 6, c(0) = 0
 
-mov $2,2
-mul $0,2
-add $0,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  add $3,2
-  mul $3,2
-  add $4,$3
-  mul $2,$3
+mov $1,6
+mov $2,$0
+mul $2,2
+add $2,1
+mov $3,$0
+add $3,2
+lpb $3
+  sub $3,1
+  add $4,$1
+  add $1,$4
 lpe
-mov $0,$4
-div $0,2
+mul $1,$2
+div $1,$4
+mov $0,$1

@@ -6,6 +6,6 @@ lpb $0
   sub $1,2
   add $0,$1
 lpe
-cmp $0,2
+equ $0,2
 add $0,1
 mod $0,2

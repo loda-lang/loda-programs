@@ -16,9 +16,7 @@ mov $3,$1
 nrt $3,2
 mov $4,$2
 mul $4,$3
-sub $3,3
 mov $1,$3
 add $1,$4
-add $1,1
-mod $1,2
 mov $0,$1
+mod $0,2

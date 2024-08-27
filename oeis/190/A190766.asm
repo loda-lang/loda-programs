@@ -1,16 +1,33 @@
 ; A190766: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(1/2),3,0) and [ ]=floor.
-; Submitted by vaughan
+; Submitted by Skillz
 ; 2,1,0,2,1,0,2,1,1,0,2,1,0,2,1,0,0,2,1,0,2,1,0,2,2,1,0,2,1,0,2,1,1,0,2,1,0,2,1,0,2,2,1,0,2,1,0,2,1,1,0,2,1,0,2,1,0,0,2,1,0,2,1,0,2,2,1,0,2,1,0,2,1,0,0,2,1,0,2,1
-; Formula: a(n) = -3*truncate(A286927(n)/4)+truncate(A286927(3*n+2)/4)
 
 mov $1,$0
 mul $1,3
 add $1,2
-seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
-div $1,4
+mov $6,1
+add $6,$1
+mov $5,$6
+pow $5,2
+mul $5,2
+mov $7,$5
+nrt $7,2
+mul $6,2
+add $6,$7
+mov $1,$6
+div $1,2
 sub $1,1
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
-div $0,4
+mov $4,1
+add $4,$0
+mov $8,$4
+pow $8,2
+mul $8,2
+mov $3,$8
+nrt $3,2
+mul $4,2
+add $4,$3
+mov $0,$4
+div $0,2
 mov $2,1
 sub $2,$0
 sub $2,$0

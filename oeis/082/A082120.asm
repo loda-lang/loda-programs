@@ -10,7 +10,7 @@ lpb $0
       add $2,2
       sub $0,$2
       mov $1,$0
-      cmp $1,0
+      equ $1,0
     lpe
     sub $3,$1
     mul $1,32

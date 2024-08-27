@@ -6,12 +6,12 @@ mov $2,7080
 lpb $2
   mov $3,$2
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

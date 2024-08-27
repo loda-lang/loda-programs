@@ -1,5 +1,5 @@
 ; A080773: In binary representation: sum of number of 1's in prime factors of n (with repetition).
-; Submitted by Gunnar Hjern
+; Submitted by Skillz
 ; 0,1,2,2,2,3,3,3,4,3,3,4,3,4,4,4,2,5,3,4,5,4,4,5,4,4,6,5,4,5,5,5,5,3,5,6,3,4,5,5,3,6,4,5,6,5,5,6,6,5,4,5,4,7,5,6,5,5,5,6,5,6,7,6,5,6,3,4,6,6,4,7,3,4,6,5,6,6,5,6
 
 mov $2,2
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

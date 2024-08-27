@@ -1,7 +1,13 @@
 ; A221146: Table read by antidiagonals: (m+n) - (m XOR n).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,0,0,2,0,0,0,0,0,0,2,4,2,0,0,0,4,4,0,0,0,2,0,6,0,2,0,0,0,0,0,0,0,0,0,0,2,4,2,8,2,4,2,0,0,0,4,4,8,8,4,4,0,0,0,2,0,6,8,10,8,6,0,2,0,0,0,0,0,8,8,8,8,0,0,0,0,0,2
-; Formula: a(n) = 2*A004198(n)
 
-seq $0,4198 ; Table of x AND y, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+mov $1,$2
+sub $1,$0
+ban $1,$0
+mov $0,$1
 mul $0,2

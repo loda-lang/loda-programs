@@ -1,25 +1,28 @@
 ; A361433: a(n) = number of squares in the n-th antidiagonal of the natural number array, A000027.
-; Submitted by Ralfy
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0
 
-add $0,1023
-max $5,$0
-mov $2,$5
-mov $1,2
+add $0,9
+mov $1,1
 lpb $1
   sub $1,1
-  mov $5,$2
-  add $5,$1
-  sub $5,1
-  seq $5,182769 ; Beatty sequence for (4 + sqrt(2))/2.
-  mov $4,$1
-  mul $4,$5
-  add $3,$4
+  sub $0,4
 lpe
-min $2,1
-mul $2,$5
-add $3,2
-mov $5,$3
-sub $5,$2
-sub $5,4
-mov $0,$5
+mov $1,$0
+add $1,4
+seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
+div $1,4
+sub $1,1
+add $0,3
+seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+div $0,4
+mov $2,1
+sub $2,$0
+sub $2,$0
+sub $2,$0
+add $2,$1
+mov $0,$2
+sub $0,1
+mod $0,2
+add $0,2
+mod $0,2

@@ -1,10 +1,11 @@
 ; A123081: Infinite square array read by antidiagonals: T(n,k) = Bell(n+k) = A000110(n+k).
-; Submitted by ladmo
+; Submitted by Mumps
 ; 1,1,1,2,2,2,5,5,5,5,15,15,15,15,15,52,52,52,52,52,52,203,203,203,203,203,203,203,877,877,877,877,877,877,877,877,4140,4140,4140,4140,4140,4140,4140,4140,4140,21147,21147,21147,21147,21147,21147,21147,21147,21147,21147,115975,115975,115975,115975,115975,115975,115975,115975,115975,115975,115975,678570,678570,678570,678570,678570,678570,678570,678570,678570,678570,678570,678570,4213597,4213597
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mov $0,$1
+mul $0,8
+add $0,1
+nrt $0,2
+add $0,1
+div $0,2
+sub $0,1
+seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.

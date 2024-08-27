@@ -12,8 +12,7 @@ lpb $0
   sub $2,1
   mov $3,$2
   dif $3,$4
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   add $5,$1
   add $5,$1
   add $1,$3

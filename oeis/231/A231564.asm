@@ -9,11 +9,11 @@ lpb $2
   sub $2,7
   mov $3,$1
   seq $3,231563 ; a(n) = f(1)^n + ... + f(n)^n (mod n) where f(i)=i if gcd(i,n)=1 and f(i)=0 otherwise.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

@@ -10,6 +10,6 @@ lpb $0
   mov $4,$2
   mul $2,$1
   sub $2,$3
-  cmp $1,1
+  equ $1,1
 lpe
 mov $0,$4

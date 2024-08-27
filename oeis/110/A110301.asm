@@ -1,11 +1,14 @@
 ; A110301: Integers written in base "triangle".
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,2,21,22,32,321,322,332,432,4321,4322,4332,4432,5432,54321,54322,54332,54432,55432,65432,654321,654322,654332,654432,655432,665432,765432,7654321,7654322,7654332,7654432,7655432,7665432,7765432,8765432
 
 lpb $0
   mov $2,$0
+  mul $2,8
+  add $2,9
+  nrt $2,2
   add $2,1
-  seq $2,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
+  div $2,2
   sub $2,1
   sub $0,$2
   mul $1,10

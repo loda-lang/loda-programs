@@ -1,17 +1,14 @@
 ; A023531: a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.
-; Submitted by Mumps
+; Submitted by zombie67 [MM]
 ; 1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-; Formula: a(n) = b(n+1)-1, b(n) = gcd(truncate(c(n-1)/2),2), b(2) = 1, b(1) = 2, b(0) = 0, c(n) = d(n-1)+truncate(c(n-1)/2), c(2) = 5, c(1) = 2, c(0) = 0, d(n) = gcd(truncate(c(n-1)/2),2)*d(n-1), d(2) = 4, d(1) = 4, d(0) = 2
 
-mov $3,2
 add $0,1
-lpb $0
-  sub $0,1
-  div $2,2
-  mov $1,$2
-  gcd $1,2
-  add $2,$3
-  mul $3,$1
-lpe
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+add $1,1
+div $1,2
+bin $1,2
+bin $1,$0
 mov $0,$1
-sub $0,1
