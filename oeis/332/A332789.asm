@@ -1,5 +1,5 @@
 ; A332789: First differences of the iterated Beatty sequence A007069.
-; Submitted by Kotenok2000
+; Submitted by fzs600
 ; 1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,1,3,2
 
 mov $4,$0
@@ -9,11 +9,18 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $0,2
+  mul $0,2
+  mov $7,$0
+  nrt $7,2
+  mov $0,$7
+  pow $0,2
+  mul $0,2
+  mov $6,$0
+  nrt $6,2
   mov $2,$3
-  mul $2,$0
-  mul $4,$3
+  mul $2,$6
+  mov $0,$6
   sub $0,2
   add $1,2
   add $1,$2

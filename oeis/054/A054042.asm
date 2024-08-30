@@ -1,19 +1,27 @@
 ; A054042: Decimal expansion of 1 - 1/sqrt(10).
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 6,8,3,7,7,2,2,3,3,9,8,3,1,6,2,0,6,6,8,0,0,1,1,0,6,4,5,5,5,6,7,2,8,1,4,6,6,2,8,0,4,4,4,8,6,0,6,7,4,7,8,3,1,7,3,1,4,2,4,9,5,1,4,7,2,0,7,4,0,5,5,6,1,3,6,0,7,6,1,7
 
-mul $0,2
-mov $2,$0
-add $2,1
-mov $0,10
-pow $0,$2
-mov $1,$0
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
+add $0,1
+mov $3,$0
+mul $3,3
+lpb $3
+  sub $3,1
+  add $2,$1
+  add $1,$2
+  mul $2,3
+  add $2,$1
+  mov $5,$1
+  add $1,1
+  mul $1,2
 lpe
+mov $4,10
+pow $4,$0
+div $2,$4
+sub $5,$1
+div $5,$2
+mov $0,$5
+sub $0,1
 mod $0,10
-mul $0,-1
-add $0,9
+add $0,10
+mod $0,10

@@ -14,12 +14,12 @@ lpb $2
   add $3,4
   seq $3,242082 ; Nim sequence of game on n counters whose legal moves are removing some number of counters in A027941.
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

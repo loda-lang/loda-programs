@@ -11,7 +11,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  cmp $1,$0
+  equ $1,$0
   sub $0,1
   mov $3,$0
   seq $3,23196 ; Nondeficient numbers: numbers k such that sigma(k) >= 2k; union of A000396 and A005101.

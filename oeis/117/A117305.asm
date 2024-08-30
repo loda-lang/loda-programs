@@ -10,12 +10,12 @@ lpb $2
   seq $3,4157 ; Sum of digits of n-th triangular number.
   trn $3,1
   seq $3,317497 ; Triangle T(n,k) = 3*T(n-1,k) +  T(n-3,k-1) for k = 0..floor(n/3) with T(0,0) = 1 and T(n,k) = 0 for n or k < 0, read by rows.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,$1
   mul $2,$4
   sub $2,1

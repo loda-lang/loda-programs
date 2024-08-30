@@ -15,11 +15,11 @@ lpb $3
   mul $1,$3
   mul $1,$0
   mul $2,-2
-  cmp $4,0
+  equ $4,0
   add $5,$4
   add $0,1
   div $1,$5
-  cmp $6,3
+  equ $6,3
   sub $6,$2
   add $2,$1
   sub $3,1

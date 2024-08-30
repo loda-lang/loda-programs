@@ -1,9 +1,23 @@
 ; A356182: a(n) = A022838(A001952(n)).
-; Submitted by Simon Strandgaard
+; Submitted by omegaintellisys
 ; 5,10,17,22,29,34,39,46,51,58,64,69,76,81,88,93,100,105,110,117,122,129,135,140,147,152,159,164,171,176,181,188,193,200,206,211,218,223,230,235,240,247,252,259,265,271,277,282,289,294,301,306,311,318,323
-; Formula: a(n) = A198081(truncate(A286927(n)/2))-1
 
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
-div $0,2
-seq $0,198081 ; a(n) = ceiling(n*sqrt(3)).
+mov $3,1
+add $3,$0
+mov $2,$3
+pow $2,2
+mul $2,2
+mov $4,$2
+nrt $4,2
+mul $3,2
+add $3,$4
+mov $0,$3
 sub $0,1
+mov $1,1
+add $1,$0
+mov $6,$1
+pow $6,2
+mul $6,3
+mov $5,$6
+nrt $5,2
+mov $0,$5

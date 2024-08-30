@@ -21,7 +21,7 @@ lpb $0
     sub $8,7
     trn $8,3
     add $8,1
-    cmp $8,1
+    equ $8,1
     mul $7,$$9
     mul $7,$8
     add $5,1

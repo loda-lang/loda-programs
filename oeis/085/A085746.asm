@@ -1,18 +1,38 @@
 ; A085746: Numbers n such that n^2 + n + 1 is a semiprime.
-; Submitted by Orange Kid
+; Submitted by Skillz
 ; 4,7,9,10,11,13,19,23,26,28,29,31,32,34,35,36,39,40,42,43,44,45,47,48,51,52,53,56,60,63,65,70,72,73,76,82,83,84,85,86,91,92,93,95,96,97,98,103,104,108,112,113,114,115,120,122,123,124,125,126,127,129,132,134,136,140,145,148,152,156,157,166,170,171,174,175,179,180,182,183
 
 mov $2,$0
-add $0,1
-add $2,4
-pow $2,4
+add $2,2
+pow $2,2
 lpb $2
-  max $3,$4
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  sub $0,$3
+  mov $7,2
+  mov $9,0
+  max $3,$5
+  add $3,1
+  lpb $3
+    mov $8,$3
+    lpb $8
+      mov $6,$3
+      mod $6,$7
+      mul $6,4
+      add $7,1
+      sub $8,$6
+    lpe
+    dif $3,$7
+    add $9,1
+  lpe
+  mov $6,$9
+  equ $6,1
+  sub $0,$6
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
+  add $5,2
+  add $5,$1
   add $1,2
-  sub $2,$0
-  add $4,$1
 lpe
 mov $0,$1
 div $0,2

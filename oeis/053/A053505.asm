@@ -12,7 +12,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     seq $7,321029 ; Number of integers x such that 1 <= x <= n and gcd(x,n) = gcd(x+4,n) = gcd(x+6,n) = gcd(x+10,n) = gcd(x+12,n) = 1.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $6,$5

@@ -1,5 +1,5 @@
 ; A023847: Sum of exponents in prime-power factorization of binomial(5n, 2n).
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 0,2,4,4,6,8,8,11,11,11,13,13,13,18,16,17,17,19,18,18,22,24,21,23,23,24,28,26,26,30,29,32,28,30,31,31,32,35,35,36,36,36,37,33,35,38,36,39,36,40,40,41,45,48,43,46,46,45,50,47,49,52,52,49,46,51,51,50,50,55,51,57,54,57,57,55,59,62,60,63
 
 mov $1,$0
@@ -13,16 +13,13 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
     add $2,1
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
-    add $1,2
+    add $1,23
   lpe
-  add $2,1
 lpe
 mov $0,$1
-div $0,2
+div $0,23

@@ -10,10 +10,10 @@ lpb $2
   sub $0,$2
   add $0,1
   mul $0,10000
-  seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  nrt $0,2
   mod $0,10
   mov $3,$0
-  cmp $3,1
+  equ $3,1
   add $4,$3
 lpe
 mov $0,$4

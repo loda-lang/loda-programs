@@ -15,7 +15,7 @@ lpb $2
   min $0,0
   sub $0,$3
   trn $4,6
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   mov $5,2
 lpe

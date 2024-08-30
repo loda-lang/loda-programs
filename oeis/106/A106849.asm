@@ -9,12 +9,12 @@ pow $4,2
 lpb $4
   mov $5,$3
   seq $5,216416 ; a(n) = smallest m such that 2n-1 | 10^m+1, or 0 if no such m exists.
-  cmp $5,$3
+  equ $5,$3
   sub $2,$5
   add $3,1
   mov $6,$2
   max $6,0
-  cmp $6,$2
+  equ $6,$2
   mul $4,$6
   sub $4,1
 lpe

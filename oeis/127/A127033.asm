@@ -4,7 +4,7 @@
 
 add $0,1
 lpb $0
-  cmp $1,0
+  equ $1,0
   lpb $0
     mul $1,$0
     sub $0,1

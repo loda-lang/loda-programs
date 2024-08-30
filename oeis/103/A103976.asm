@@ -1,14 +1,10 @@
 ; A103976: Partial sums of A040976 (= primes-2).
 ; Submitted by Science United
 ; 0,1,4,9,18,29,44,61,82,109,138,173,212,253,298,349,406,465,530,599,670,747,828,915,1010,1109,1210,1315,1422,1533,1658,1787,1922,2059,2206,2355,2510,2671,2836,3007,3184,3363,3552,3743,3938,4135,4344,4565,4790,5017,5248
-; Formula: a(n) = c(n+1), b(n) = A159477(b(n-1)), b(1) = 3, b(0) = 2, c(n) = b(n-1)+c(n-1)-2, c(1) = 0, c(0) = 0
+; Formula: a(n) = -n+A101301(n)-1
 
-mov $1,2
+mov $1,$0
+seq $1,101301 ; The sum of the first n primes, minus n.
 add $0,1
-lpb $0
-  sub $0,1
-  add $2,$1
-  sub $2,2
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$2
+sub $1,$0
+mov $0,$1

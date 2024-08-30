@@ -7,7 +7,7 @@ lpb $0
 lpe
 bin $2,$0
 mov $1,$2
-cmp $1,1
+equ $1,1
 mov $0,$2
 mul $0,3
 sub $0,1

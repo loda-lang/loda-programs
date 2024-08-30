@@ -11,12 +11,11 @@ lpb $2
   mov $5,$3
   add $6,1
   seq $3,347730 ; Number of compositions (ordered partitions) of n into at most 2 triangular numbers.
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mov $1,2
   add $1,$6
   mul $2,$4

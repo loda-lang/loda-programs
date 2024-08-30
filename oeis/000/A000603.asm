@@ -1,18 +1,9 @@
 ; A000603: Number of nonnegative solutions to x^2 + y^2 <= n^2.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Matthias Lehmkuhl
 ; 1,3,6,11,17,26,35,45,58,73,90,106,123,146,168,193,216,243,271,302,335,365,402,437,473,516,557,600,642,687,736,782,835,886,941,999,1050,1111,1167,1234,1297,1357,1424,1491,1564,1636,1703,1778,1852,1931,2012,2095,2177,2256,2341,2425,2518,2605,2698,2788,2883,2982,3078,3177,3278,3384,3485,3586,3695,3807,3914,4025,4133,4256,4373,4492,4608,4729,4856,4974
+; Formula: a(n) = A224212(n^2)
 
-mov $3,3
-pow $0,2
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
-  mov $3,1
-  add $3,$4
-  add $4,2
-  add $1,$2
-lpe
+mov $1,$0
+pow $1,2
+seq $1,224212 ; Number of nonnegative solutions to x^2 + y^2 <= n.
 mov $0,$1

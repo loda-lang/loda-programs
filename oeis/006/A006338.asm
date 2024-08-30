@@ -1,25 +1,26 @@
 ; A006338: An "eta-sequence": floor((n+1)*sqrt(2) + 1/2) - floor(n*sqrt(2) + 1/2).
+; Submitted by [AF>Libristes]Maeda
 ; 2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2
 
 add $0,1
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$6
-  add $0,$4
-  sub $0,1
-  mov $3,$0
-  add $0,2
-  mul $3,$0
-  max $3,0
-  seq $3,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-  mov $2,$4
-  mul $2,$3
-  add $1,$2
-  mov $5,$3
-lpe
-min $6,1
-mul $6,$5
-sub $1,$6
+mul $0,2
+mov $1,$0
+pow $1,2
+mul $1,2
+mov $3,$1
+nrt $3,2
+add $0,2
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $1,$3
+mul $1,$2
+mov $0,$2
+add $0,$1
+mod $0,2
+mov $1,11
+pow $1,$0
 mov $0,$1
+div $0,10
+add $0,1

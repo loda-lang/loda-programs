@@ -1,9 +1,26 @@
 ; A356183: a(n) = A054406(A001952(n)).
-; Submitted by Simon Strandgaard
+; Submitted by omegaintellisys
 ; 7,14,23,30,40,47,54,63,70,80,87,94,104,111,120,127,137,144,151,160,167,177,184,191,201,208,217,224,234,241,248,257,264,274,281,288,298,305,314,321,328,338,345,354,362,371,378,385,395,402,411,418,425,435
-; Formula: a(n) = A054406(truncate(A286927(n)/2)-1)
 
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
-div $0,2
+mov $3,1
+add $3,$0
+mov $2,$3
+pow $2,2
+mul $2,2
+mov $4,$2
+nrt $4,2
+mul $3,2
+add $3,$4
+mov $0,$3
 sub $0,1
-seq $0,54406 ; Beatty sequence for (3+sqrt 3)/2; complement of A022838.
+mov $1,1
+add $1,$0
+mov $6,$1
+pow $6,2
+mul $6,3
+mov $5,$6
+nrt $5,2
+add $1,$5
+div $1,2
+add $0,$1
+add $0,1
