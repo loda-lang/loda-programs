@@ -11,7 +11,7 @@ lpb $2
   mul $3,7
   seq $3,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   mod $3,7
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

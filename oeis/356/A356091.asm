@@ -1,8 +1,24 @@
 ; A356091: a(n) = A001952(A054406(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 6,13,23,30,37,47,54,61,71,78,88,95,102,112,119,126,136,143,150,160,167,177,184,191,201,208,215,225,232,238,249,256,266,273,279,290,297,303,314,320,331,338,344,355,361,368,378,385,392,402,409,419,426,433
-; Formula: a(n) = A001952(A054406(n)-1)
 
-seq $0,54406 ; Beatty sequence for (3+sqrt 3)/2; complement of A022838.
-sub $0,1
-seq $0,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+mov $4,1
+add $4,$0
+mov $3,$4
+pow $3,2
+mul $3,3
+mov $2,$3
+nrt $2,2
+add $4,$2
+div $4,2
+add $0,$4
+mov $6,1
+add $6,$0
+mov $5,$6
+pow $5,2
+mul $5,2
+mov $1,$5
+nrt $1,2
+mul $6,2
+add $6,$1
+mov $0,$6

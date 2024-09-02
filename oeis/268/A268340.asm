@@ -4,5 +4,5 @@
 
 seq $0,73184 ; Number of cubefree divisors of n.
 mov $1,$0
-cmp $1,3
+equ $1,3
 mov $0,$1

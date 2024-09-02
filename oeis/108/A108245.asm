@@ -1,28 +1,9 @@
 ; A108245: If n-th prime is 4m - 1, then a(n) = 4m + 1. If n-th prime is 4m + 1, then a(n) = 4m - 1.
-; Submitted by Jamie Morken(w2)
+; Submitted by Science United
 ; 5,3,9,13,11,15,21,25,27,33,35,39,45,49,51,61,59,69,73,71,81,85,87,95,99,105,109,107,111,129,133,135,141,147,153,155,165,169,171,181,179,193,191,195,201,213,225,229,227,231,241,239,253,255,265,267,273,275,279,285,291,309,313,311,315,333,335,349,347,351,361,369,371,381,385,387,395,399,407,421
 
-add $0,1
-mov $2,$0
-mul $2,2
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-mov $0,$2
-div $0,2
-add $0,1
-mov $1,-1
-bin $1,$0
-sub $0,$1
-mul $0,2
-sub $0,3
+seq $0,154115 ; Numbers n such that n + 3 is prime.
+add $1,$0
+bxo $1,2
+mov $0,$1
+add $0,3

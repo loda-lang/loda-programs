@@ -14,7 +14,7 @@ mov $1,$2
 bin $1,$0
 sub $2,$0
 mov $0,$2
-cmp $2,1
+equ $2,1
 lpb $0
   sub $0,2
   sub $2,1

@@ -1,9 +1,21 @@
 ; A189386: a(n) = n+[ns/r]+[nt/r]; r=1, s=sqrt(2), t=1/sqrt(3), []=floor.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,5,8,11,14,17,20,23,26,29,32,34,38,41,44,47,50,53,55,59,62,65,68,70,74,77,80,83,86,89,91,95,98,101,104,106,110,112,116,119,121,125,127,131,133,137,140,142,146,148,152,155,157,161,163,167,169,173,176,178,182,184,188,190,193,197,199,203,205,208,211,214,218,220,224,226,229,233,235,239
-; Formula: a(n) = A003151(n)+A097337(n)
 
-mov $1,$0
-seq $1,97337 ; Integer part of the edge of a cube that has space-diagonal n.
-seq $0,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
-add $0,$1
+mov $5,1
+add $5,$0
+mov $4,$5
+pow $4,2
+div $4,3
+mov $6,$4
+nrt $6,2
+mov $1,1
+add $1,$0
+mov $3,$1
+pow $3,2
+mul $3,2
+mov $2,$3
+nrt $2,2
+add $1,$2
+mov $0,$1
+add $0,$6

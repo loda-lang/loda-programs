@@ -5,7 +5,6 @@
 add $0,1
 mov $3,2
 pow $3,$0
-mov $6,0
 mov $2,3
 pow $2,$0
 add $2,$3
@@ -19,7 +18,7 @@ gcd $1,$0
 sub $1,1
 mov $4,$0
 mov $5,$0
-cmp $5,0
+equ $5,0
 add $5,$0
 mov $7,$5
 mov $8,$5

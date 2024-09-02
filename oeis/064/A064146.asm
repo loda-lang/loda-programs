@@ -1,5 +1,5 @@
 ; A064146: Sum of non-unitary prime divisors (A034444, A056169) of central binomial coefficient C(n,floor(n/2)) (A001405). If A001405(n) is squarefree (A046098) then a(n)=0.
-; Submitted by [AF] Kalianthys
+; Submitted by Skillz
 ; 0,0,0,0,0,2,0,0,3,5,0,2,2,2,3,3,0,2,0,2,2,2,0,2,7,7,10,10,5,5,3,3,3,5,5,7,7,7,3,5,2,2,2,2,10,10,8,10,12,12,12,12,9,9,2,2,2,2,2,2,2,2,10,10,7,9,7,9,5,5,0,2,2,2,7,7,14,14,7,9
 
 add $0,1
@@ -12,8 +12,6 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
     add $2,1
     sub $3,$4
   lpe
@@ -22,8 +20,7 @@ lpb $0
     dif $0,$2
     add $5,1
   lpe
-  cmp $5,3
-  cmp $5,0
+  neq $5,3
   mul $5,$2
   add $6,$5
 lpe

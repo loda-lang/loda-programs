@@ -1,25 +1,15 @@
 ; A136486: Number of unit square lattice cells enclosed by origin centered circle of diameter 2n+1.
-; Submitted by Penguin
+; Submitted by Science United
 ; 0,4,12,24,52,76,112,148,192,256,308,376,440,524,608,688,796,904,1012,1124,1232,1372,1508,1648,1788,1952,2112,2268,2448,2616,2812,3000,3184,3388,3608,3828,4052,4272,4516,4748,5008,5252,5512,5784,6044,6328,6600,6900,7200,7508,7820,8136,8476,8788,9120,9468,9804,10176,10508,10896,11272,11636,12032,12392,12828,13224,13644,14060,14472,14916,15340,15768,16244,16684,17152,17604,18088,18584,19052,19544
 
-mov $1,$0
-mov $4,3
-mul $0,2
-add $0,1
-pow $0,2
-div $0,4
-add $0,3
 lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  seq $3,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
-  mov $4,1
-  add $4,$5
-  add $5,2
-  add $2,$3
-  sub $2,1
+  mov $1,$0
+  pow $1,2
+  add $1,$0
+  seq $1,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
+  div $1,4
+  sub $1,$0
+  mul $0,0
 lpe
-mov $0,$2
-sub $0,$1
+mov $0,$1
 mul $0,4

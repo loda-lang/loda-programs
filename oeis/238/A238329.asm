@@ -1,10 +1,10 @@
 ; A238329: Fibonacci numbers that have no prime factors of the form 4k+1.
-; Submitted by ChelseaOilman
+; Submitted by Skillz
 ; 1,1,2,3,8,21,144,987,46368,2178309,4807526976
 
 lpb $0
   lpb $0
-    div $0,2
+    equ $0,1
   lpe
   pow $1,$0
   add $1,1

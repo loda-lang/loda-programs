@@ -1,5 +1,5 @@
 ; A083890: Number of divisors of n with largest digit = 3 (base 10).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,0,1,0,0,1,0,0,1,0,0,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,1,0,0,2,1,1,2,0,0,1,0,0,2,0,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,0,2,0,1,1,1,1,2,0,0,2,0,0,1,0,0,1,0,0,2,0,0
 
 mov $2,$0
@@ -10,13 +10,12 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  gcd $1,$4
+  gcd $0,$4
   bin $1,$0
   seq $0,54055 ; Largest digit of n.
+  add $0,3
   mul $1,$0
-  bin $1,3
-  mul $1,2
-  cmp $1,2
+  equ $1,6
   add $3,$1
 lpe
 mov $0,$3

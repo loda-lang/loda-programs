@@ -11,9 +11,7 @@ mov $1,$2
 mul $2,4
 nrt $2,2
 add $2,$1
-add $2,3
 mul $0,6
 add $0,6
 sub $0,$2
 div $0,3
-add $0,1

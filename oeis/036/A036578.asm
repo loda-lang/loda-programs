@@ -1,7 +1,15 @@
 ; A036578: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+; Submitted by Science United
 ; 1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2,1,0,2,1,2,0,1,0,2,0,1,2,1,0,2,1,2,0,1,2,1,0,2,0,1,0,2,1,2,0,1,2
-; Formula: a(n) = -3*truncate((A036577(n)+8)/3)+A036577(n)+8
 
-seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-add $0,8
-mod $0,3
+mov $1,7
+lpb $0
+  sub $0,1
+  max $3,$1
+  mov $2,$3
+  mul $3,4
+  bxo $3,$2
+  mov $1,$3
+lpe
+mod $1,3
+mov $0,$1

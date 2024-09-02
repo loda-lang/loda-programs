@@ -1,23 +1,20 @@
 ; A040752: Continued fraction for sqrt(780).
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 27,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12,1,54,1,12
 
 mul $0,2
-mov $1,10
+mov $2,10
 mov $3,$0
-mod $3,4
-mov $4,$0
 gcd $0,8
-lpb $4
-  mov $4,3
+lpb $3
+  mov $3,3
   add $0,6
-  mov $1,7
+  mov $2,7
 lpe
-mul $0,$1
-sub $0,62
-dif $0,2
-mov $2,$0
-mul $2,2
-add $2,$0
-gcd $2,$3
-mov $0,$2
+mul $0,$2
+trn $0,63
+add $0,1
+mov $1,$0
+div $0,2
+add $1,$0
+mov $0,$1

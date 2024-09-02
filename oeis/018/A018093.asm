@@ -1,7 +1,16 @@
 ; A018093: Powers of fourth root of 17 rounded down.
 ; Submitted by Science United
 ; 1,2,4,8,17,34,70,142,289,586,1191,2419,4913,9976,20256,41132,83521,169592,344365,699249,1419857,2883080,5854220,11887247,24137569,49012376,99521746,202083204,410338673
-; Formula: a(n) = A000196(A017956(n))
 
-seq $0,17956 ; Powers of sqrt(17) rounded to nearest integer.
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+mov $3,17
+pow $3,$0
+mov $0,$3
+nrt $0,2
+mov $1,$0
+add $0,1
+lpb $0
+  div $2,$0
+  add $0,$2
+  div $0,2
+  mov $2,$1
+lpe

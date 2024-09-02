@@ -1,15 +1,13 @@
 ; A092780: Sum(prime(k),k=1..n)^2-1.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 3,24,99,288,783,1680,3363,5928,9999,16640,25599,38808,56643,78960,107583,145160,193599,251000,322623,408320,506943,625680,763875,927368,1123599,1347920,1597695,1879640,2190399,2537648,2958399,3426200
-; Formula: a(n) = c(n+1)^2-1, b(n) = A159477(b(n-1)), b(1) = 3, b(0) = 2, c(n) = b(n-1)+c(n-1), c(1) = 2, c(0) = 0
+; Formula: a(n) = floor(((2*A101301(n)+2*n+2)^2)/4)-1
 
-mov $1,2
-add $0,1
-lpb $0
-  sub $0,1
-  add $2,$1
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
-mov $0,$2
+mov $1,$0
+seq $1,101301 ; The sum of the first n primes, minus n.
+add $0,$1
+mul $0,2
+add $0,2
 pow $0,2
+div $0,4
 sub $0,1

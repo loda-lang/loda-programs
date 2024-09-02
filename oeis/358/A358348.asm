@@ -4,19 +4,16 @@
 
 lpb $0
   sub $0,1
-  add $3,$2
   mov $1,10
-  sub $1,$4
   add $1,$3
   add $1,1
   add $1,$3
   mod $1,3
-  mov $2,$3
   add $4,1
-  mov $5,$4
-  div $5,3
-  dif $5,$1
-  mov $3,$5
+  mov $2,$4
+  div $2,3
+  dif $2,$1
+  mov $3,$2
   add $4,$1
 lpe
 mov $0,$4

@@ -1,17 +1,35 @@
 ; A190245: a(n) = [nu+nv]-[nu]-[nv], where u=sqrt(2), v=2u, and []=floor.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1,0
-; Formula: a(n) = truncate((-2*truncate((-3*truncate((A286927(2*n+1)+2)/4)+truncate(A286927(6*n+5)/4)+2)/2)-3*truncate((A286927(2*n+1)+2)/4)+truncate(A286927(6*n+5)/4)+2)/2)
 
 mul $0,2
 add $0,1
 mov $1,$0
 mul $1,3
 add $1,2
-seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
-div $1,4
+mov $6,1
+add $6,$1
+mov $5,$6
+pow $5,2
+mul $5,2
+mov $7,$5
+nrt $7,2
+mul $6,2
+add $6,$7
+mov $1,$6
+div $1,2
 sub $1,1
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+mov $4,1
+add $4,$0
+mov $8,$4
+pow $8,2
+mul $8,2
+mov $3,$8
+nrt $3,2
+mul $4,2
+add $4,$3
+mov $0,$4
+mul $0,2
 add $0,2
 div $0,4
 mov $2,1
@@ -22,4 +40,3 @@ add $2,$1
 mov $0,$2
 add $0,2
 mod $0,2
-div $0,2

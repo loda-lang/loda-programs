@@ -1,18 +1,29 @@
 ; A063880: Numbers k such that sigma(k) = 2*usigma(k).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Merlin2331
 ; 108,540,756,1188,1404,1836,2052,2484,3132,3348,3780,3996,4428,4644,5076,5724,5940,6372,6588,7020,7236,7668,7884,8316,8532,8964,9180,9612,9828,10260,10476,10908,11124,11556,11772,12204,12420,12852,13716,14148,14364,14796,15012,15444,15660,16092,16308,16740,16956,17388,17604,18036,18684,19332,19548,19980,20196,20628,20844,21276,21492,21924,22140,22572,22788,23220,23436,23868,24084,24516,24732,25164,25380,25812,26028,26676,27108,27324,27756,27972
 
-add $0,1
-mov $1,2
 mov $2,$0
-pow $2,2
+add $2,6
+pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
+  mov $3,$6
+  seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  mul $3,2
+  max $3,1
+  mod $3,2
   sub $0,$3
-  add $1,6
-  sub $2,$0
+  gcd $1,3
+  add $1,2
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,18
+  add $5,$1
+  sub $5,1
+  mov $6,$5
 lpe
-mov $0,$1
-mul $0,36
-add $0,36
+mov $0,$5
+div $0,2
+mul $0,216
+add $0,108

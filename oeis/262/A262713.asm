@@ -8,11 +8,11 @@ pow $3,4
 lpb $3
   mov $1,$2
   seq $1,4159 ; Sum of digits of n^2.
-  cmp $1,10
+  equ $1,10
   mov $4,$2
   gcd $4,$1
   sub $4,$1
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   sub $3,$0

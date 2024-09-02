@@ -1,5 +1,5 @@
 ; A231470: Largest integer less than 10, coprime to n.
-; Submitted by Jamie Morken(s1)
+; Submitted by Ralfy
 ; 9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,5,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9,8,9,9,7,9,9
 
 add $0,2
@@ -12,9 +12,7 @@ lpb $1
     sub $2,$1
     gcd $2,$0
     mul $0,$2
-    lpb $1
-      sub $1,1
-    lpe
+    min $1,0
   lpe
   sub $1,1
 lpe

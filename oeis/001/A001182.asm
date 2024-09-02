@@ -1,22 +1,14 @@
 ; A001182: Number of cells of square lattice of edge 1/n inside quadrant of unit circle centered at 0.
-; Submitted by biodoc
+; Submitted by fzs600
 ; 0,1,4,8,15,22,30,41,54,69,83,98,119,139,162,183,208,234,263,294,322,357,390,424,465,504,545,585,628,675,719,770,819,872,928,977,1036,1090,1155,1216,1274,1339,1404,1475,1545,1610,1683,1755,1832,1911,1992,2072,2149,2232,2314,2405,2490,2581,2669,2762,2859,2953,3050,3149,3253,3352,3451,3558,3668,3773,3882,3988,4109,4224,4341,4455,4574,4699,4815,4940
 
-add $0,1
-mov $1,$0
-mov $4,3
-pow $0,2
-add $0,3
 lpb $0
-  sub $0,$4
-  mov $3,$0
-  max $3,0
-  seq $3,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
-  mov $4,1
-  add $4,$5
-  add $5,2
-  add $2,$3
-  sub $2,1
+  add $0,1
+  mov $1,$0
+  pow $1,2
+  seq $1,57655 ; The circle problem: number of points (x,y) in square lattice with x^2 + y^2 <= n.
+  div $1,4
+  sub $1,$0
+  mul $0,0
 lpe
-mov $0,$2
-sub $0,$1
+mov $0,$1

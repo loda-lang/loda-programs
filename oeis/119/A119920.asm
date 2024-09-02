@@ -28,7 +28,7 @@ lpe
 mov $1,$4
 mul $1,2
 add $2,1
-cmp $2,1
+equ $2,1
 sub $1,$2
 mul $1,$0
 mov $0,$1

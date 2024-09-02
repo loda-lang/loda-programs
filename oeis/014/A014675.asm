@@ -1,9 +1,18 @@
 ; A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
-; Submitted by STE\/E
+; Submitted by omegaintellisys
 ; 2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2
-; Formula: a(n) = -A025675(A270788(n))+2
 
-seq $0,270788 ; Unique fixed point of the 3-symbol Fibonacci morphism phi-hat_2.
-seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
-mul $0,-1
-add $0,2
+lpb $0
+  mov $2,$0
+  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
+  sub $0,$2
+lpe
+add $0,1
+lpb $0
+  mov $1,$0
+  mul $0,2
+  div $0,5
+lpe
+mov $0,$1
+mod $0,2
+add $0,1

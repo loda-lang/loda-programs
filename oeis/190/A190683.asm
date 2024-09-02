@@ -1,5 +1,5 @@
 ; A190683: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),3,1) and [ ]=floor.
-; Submitted by Landjunge
+; Submitted by BlisteringSheep
 ; 2,2,1,3,2,1,1,3,2,1,0,3,2,1,3,2,2,1,3,2,1,1,3,2,1,0,3,2,1,3,2,2,1,3,2,1,0,3,2,1,0,2,2,1,3,2,1,1,3,2,1,0,3,2,1,3,2,2,1,3,2,1,1,3,2,1,0,3,2,1,3,2,2,1,3,2,1,1,3,2
 
 mov $2,$0
@@ -9,9 +9,16 @@ lpb $5
   mov $0,$2
   mul $0,2
   add $0,1
-  mov $6,$0
-  seq $6,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
-  add $0,$6
+  mov $8,1
+  add $8,$0
+  mov $7,$8
+  pow $7,2
+  mul $7,3
+  mov $6,$7
+  nrt $6,2
+  add $8,$6
+  div $8,2
+  add $0,$8
   add $0,1
   sub $4,$3
   sub $4,$1

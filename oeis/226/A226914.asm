@@ -1,25 +1,8 @@
 ; A226914: Third column of A226518.
+; Submitted by Science United
 ; 1,0,0,2,0,0,2,0,2,0,2,0,2,0,2,0,0,0,0,2,2,2,0,2,2,0,2,0,0,2,2,0,2,0,0,2,0,0,2,0,0,0,2,2,0,2,0,2,0,0,2,2,2,0,2,2,0,2,0,2,0,0,0,2,2,0,0,2,0,0,2,2,2,0,0,2,0,0,2,2
+; Formula: a(n) = A046980(A000040(n))+1
 
-mov $1,$0
-mul $1,2
-max $1,1
-sub $1,2
-mov $2,4
-mov $3,$1
-pow $3,4
-lpb $3
-  max $4,$2
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  sub $1,$4
-  add $2,2
-  sub $3,$1
-lpe
-add $1,$2
-sub $1,1
-mov $0,$1
-pow $0,6
-mod $0,16
+seq $0,40 ; The prime numbers.
+seq $0,46980 ; Numerators of Taylor series for exp(x)*cos(x).
 add $0,1
-mod $0,10

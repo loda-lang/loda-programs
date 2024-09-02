@@ -5,7 +5,7 @@
 lpb $0
   mov $3,$2
   gcd $3,$0
-  cmp $3,$0
+  equ $3,$0
   trn $0,5
   add $1,$3
   sub $2,1

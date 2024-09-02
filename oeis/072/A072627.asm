@@ -16,7 +16,7 @@ lpb $4
   sub $0,1
   seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   mov $5,1
-  cmp $5,$0
+  equ $5,$0
   mul $1,$5
   add $3,$1
 lpe

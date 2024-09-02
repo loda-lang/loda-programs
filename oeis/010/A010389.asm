@@ -1,13 +1,22 @@
 ; A010389: Squares mod 27.
-; Submitted by emoga
+; Submitted by roundup
 ; 0,1,4,7,9,10,13,16,19,22,25
-; Formula: a(n) = truncate((max(truncate((2*A044678(n+1))/3)-78,36)-36)/18)
 
-add $0,1
-seq $0,44678 ; Numbers n such that string 5,1 occurs in the base 9 representation of n but not of n+1.
-mul $0,2
-div $0,3
-sub $0,78
-max $0,36
-sub $0,36
-div $0,18
+lpb $0
+  sub $0,1
+  mov $1,10
+  sub $1,$4
+  add $1,$3
+  add $1,1
+  mul $3,$5
+  add $4,1
+  add $1,$3
+  mod $1,3
+  mov $2,$4
+  mov $5,$4
+  div $5,3
+  dif $5,$1
+  mov $3,$5
+  add $4,$1
+lpe
+mov $0,$2

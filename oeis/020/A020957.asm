@@ -17,5 +17,5 @@ sub $0,$1
 sub $0,1
 div $0,2
 add $0,3
-cmp $1,0
+equ $1,0
 sub $0,$1

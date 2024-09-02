@@ -1,5 +1,5 @@
 ; A083915: Number of divisors of n that are congruent to 5 modulo 10.
-; Submitted by [AF] Kalianthys
+; Submitted by Skillz
 ; 0,0,0,0,1,0,0,0,0,1,0,0,0,0,2,0,0,0,0,1,0,0,0,0,2,0,0,0,0,2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,3,0,0,0,0,2,0,0,0,0,2,0,0,0,0,2,0,0,0,0,2,0,0,0,0,2,0,0,0,0,4,0,0,0,0,1
 
 add $0,1
@@ -9,8 +9,7 @@ lpb $0
   min $0,$4
   mov $3,$2
   dif $3,$0
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   sub $2,$4
   mov $0,$2
   add $1,$3

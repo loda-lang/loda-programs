@@ -1,6 +1,9 @@
 ; A018111: Powers of fourth root of 23 rounded down.
-; Submitted by Skillz
+; Submitted by Science United
 ; 1,2,4,10,23,50,110,241,529,1158,2536,5555,12167,26644,58350,127784,279841,612834,1342070,2939051,6436343,14095196,30867616,67598188,148035889,324189522,709955183,1554758332
 
-seq $0,17974 ; Powers of sqrt(23) rounded to nearest integer.
+mov $1,23
+pow $1,$0
+mov $0,$1
+nrt $0,2
 nrt $0,2

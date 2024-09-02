@@ -1,18 +1,21 @@
 ; A049720: a(n)=T(n,1), array T as in A048149.
-; Submitted by Stony666
+; Submitted by Science United
 ; 3,4,8,13,19,28,37,48,62,75,92,108,127,150,170,195,218,247,277,304,337,369,406,441,475,518,559,604,646,689,740,786,841,890,945,1001,1052,1115,1173,1236,1299,1360,1428,1497,1568,1638,1707
 
-mov $3,3
-pow $0,2
-add $0,4
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
-  mov $3,1
-  add $3,$4
-  add $4,2
-  add $1,$2
+mov $6,3
+mov $1,$0
+pow $1,2
+add $1,4
+lpb $1
+  sub $1,$6
+  mov $5,$1
+  max $5,0
+  mov $2,$5
+  nrt $2,2
+  mov $6,1
+  add $6,$3
+  add $3,2
+  add $4,1
+  add $4,$2
 lpe
-mov $0,$1
+mov $0,$4
