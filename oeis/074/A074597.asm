@@ -1,20 +1,22 @@
 ; A074597: Numerator of 3 * H(n,3,2), a generalized harmonic number. See A075135.
-; Submitted by Christian Krause
+; Submitted by Skillz
 ; 3,21,99,1209,9123,164331,34437,823467,11066355,330317679,1355321733,990324351,19205317149,802205873349,815985479709,38957620226163,197637723726063,10617280487243739,75264900895382073
+; Formula: a(n) = 6*truncate(truncate((c(n+1)+d(n+1))/2)/gcd(c(n+1),b(n+1)))+3, b(n) = b(n-1)*(3*n-1), b(3) = 160, b(2) = 20, b(1) = 4, b(0) = 2, c(n) = c(n-1)*(3*n-1)+b(n-1), c(3) = 132, c(2) = 14, c(1) = 2, c(0) = 0, d(n) = d(n-1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0
 
-mov $1,1
+mov $1,2
+add $0,1
 lpb $0
-  mov $2,$0
-  mul $2,3
+  sub $0,1
   add $2,2
   mul $3,$2
   add $3,$1
-  add $3,$1
-  sub $0,1
   mul $1,$2
+  add $2,1
 lpe
-add $1,$3
+add $4,$3
 gcd $3,$1
-div $1,$3
-mov $0,$1
-mul $0,3
+div $4,2
+div $4,$3
+mov $0,$4
+mul $0,6
+add $0,3

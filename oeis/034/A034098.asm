@@ -9,13 +9,11 @@ pow $2,2
 bin $2,2
 lpb $2
   sub $2,1
-  mov $5,1
-  add $5,$1
-  mov $4,$5
+  mov $4,$1
   mul $4,100
-  mov $6,$4
-  nrt $6,2
-  mov $3,$6
+  mov $5,$4
+  nrt $5,2
+  mov $3,$5
   mod $3,10
   equ $3,2
   sub $0,$3
@@ -23,4 +21,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-add $0,1

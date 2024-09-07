@@ -9,12 +9,12 @@ lpb $2
   mov $3,$1
   seq $3,121549 ; Number of ordered ways of writing n as a sum of two Fibonacci numbers (only one 1 is considered as a Fibonacci number).
   seq $3,342921 ; a(n) = A003415(A019565(n)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

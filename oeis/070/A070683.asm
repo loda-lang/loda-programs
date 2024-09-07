@@ -12,6 +12,7 @@ lpb $3
     pow $2,$1
     mod $2,$0
     mul $2,$1
+    mov $3,0
     sub $1,$2
   lpe
   add $1,1

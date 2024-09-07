@@ -1,25 +1,20 @@
 ; A297217: Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 3,0,4,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
 
-mov $1,7261
-add $1,$0
-gcd $1,2
-mov $3,$1
-div $3,2
-add $1,2
-mov $4,-1
-pow $4,$1
-dif $1,2
-add $1,$4
-mul $3,$1
-mov $1,$3
-add $1,1
-bin $1,$0
-mov $2,-3631
-mul $2,$1
+mov $2,5
+mul $2,$0
+sub $0,2
+add $2,$0
+gcd $2,96
+add $2,$0
+mov $1,$0
+equ $1,0
+add $0,$1
+div $2,$0
+lpb $2
+  dif $2,2
+lpe
 mov $0,$2
-add $0,4
-mod $0,10
-add $0,10
+add $0,3
 mod $0,10

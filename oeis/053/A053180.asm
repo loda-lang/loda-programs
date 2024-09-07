@@ -1,18 +1,21 @@
 ; A053180: Numbers ending in 7 which are not prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Skillz
 ; 27,57,77,87,117,147,177,187,207,217,237,247,267,287,297,327,357,377,387,407,417,427,437,447,477,497,507,517,527,537,567,597,627,637,657,667,687,697,707,717,737,747,767,777,807,817,837,847,867,897,917,927,957,987,1007,1017,1027,1037,1047,1057,1067,1077,1107,1127,1137,1147,1157,1167,1177,1197,1207,1227,1247,1257,1267,1287,1317,1337,1347,1357
 
-add $0,1
-mov $1,6
+mov $1,3
 mov $2,$0
-pow $2,4
+add $0,1
+add $2,5
+pow $2,2
 lpb $2
-  add $1,10
-  mov $3,$1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $0,$3
-  sub $0,1
+  max $3,$1
+  mul $3,2
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
+  sub $0,$3
+  add $1,5
   sub $2,$0
 lpe
 mov $0,$1
-add $0,11
+mul $0,2
+add $0,1

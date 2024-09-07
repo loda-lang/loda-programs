@@ -16,7 +16,7 @@ lpb $0
   mov $4,$2
   add $4,$3
   mov $6,$2
-  cmp $6,6
+  equ $6,6
   add $6,1
   mov $2,$5
   mov $3,$5

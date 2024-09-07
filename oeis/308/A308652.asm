@@ -17,7 +17,7 @@ lpb $4
     mov $3,$7
     pow $3,$8
     mul $7,$0
-    cmp $7,$6
+    equ $7,$6
     mul $7,$3
     mov $8,$2
     sub $0,1

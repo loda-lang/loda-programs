@@ -1,26 +1,12 @@
 ; A062557: 2n-1 1's followed by a 2.
-; Submitted by Heijo
+; Submitted by Skillz
 ; 1,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1
+; Formula: a(n) = truncate((A005369(n+1)-2)/2)+2
 
-mov $1,$0
-add $1,1
-mov $3,$1
-mul $3,4
-mov $5,$3
-nrt $5,2
-mul $1,2
-add $1,1
-mul $1,2
-mov $4,$1
-nrt $4,2
-mov $1,$4
-mod $1,2
-mov $3,$5
-pow $3,$1
-mov $1,$3
-add $1,1
-mod $1,2
-mul $1,-1
-sub $2,$1
-mov $0,$2
 add $0,1
+mov $1,$0
+seq $1,5369 ; a(n) = 1 if n is of the form m(m+1), else 0.
+sub $1,2
+div $1,2
+mov $0,$1
+add $0,2

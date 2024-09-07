@@ -1,10 +1,10 @@
 ; A068332: Numbers n such that 2^tau(n)<=n<2*2^tau(n).
-; Submitted by zombie67 [MM]
+; Submitted by Science United
 ; 5,7,9,21,22,26,27,68,75,76,92,98,99,116,117,124,258,266,273,282,285,286,290,296,297,310,318,322,328,344,345,351,354,357,366,370,374,375,376,385,399,402,406,410,418,424,426,429,430,434,435,438,442,455,459
 
 mov $2,$0
 add $2,10
-pow $2,2
+mul $2,38
 lpb $2
   mov $3,$1
   seq $3,70939 ; Length of binary representation of n.
@@ -20,7 +20,7 @@ lpb $2
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,3
 lpe
 mov $0,$1
 add $0,1

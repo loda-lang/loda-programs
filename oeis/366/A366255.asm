@@ -2,7 +2,6 @@
 ; Submitted by Science United
 ; 0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0
 
-mov $1,0
 lpb $0
   mov $2,$0
   seq $2,280510 ; Index sequence of the Thue-Morse sequence (A010060) as a block-fractal sequence.

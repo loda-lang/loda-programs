@@ -1,18 +1,17 @@
 ; A036581: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
-; Submitted by arkiss
+; Submitted by Science United
 ; 0,2,1,0,1,2,0,2,1,2,0,1,0,2,1,0,1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,2,1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,1,0,2,1,0,1,2,0,2,1,2,0,1,0,2,1,0,1,2,0,1,0,2,1,2,0,2,1,0,1,2,0,1
 
-mov $1,1
-mov $2,1
+mov $1,7
 lpb $0
-  mul $2,-1
-  lpb $0
-    dif $0,2
-    mul $1,0
-  lpe
-  div $0,2
-  add $2,$1
+  sub $0,1
+  max $3,$1
+  mov $2,$3
+  mul $3,4
+  sub $3,2
+  bxo $3,$2
+  mov $1,$3
 lpe
-add $0,$2
-add $0,2
-mod $0,-3
+div $1,2
+mod $1,3
+mov $0,$1

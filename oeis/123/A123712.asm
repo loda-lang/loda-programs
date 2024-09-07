@@ -9,18 +9,18 @@ pow $2,3
 lpb $2
   mov $5,$1
   seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-  cmp $5,0
+  equ $5,0
   sub $5,1
   mov $3,$1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   dif $3,$5
   sub $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -5,14 +5,11 @@
 add $0,1
 mov $1,5
 pow $1,$0
-add $1,47
+add $1,21
 mov $2,$1
 mul $2,5
-div $2,31
-mul $1,2
+div $2,62
 sub $1,$2
-mul $1,2
-sub $1,18
 log $1,4
 mov $0,$1
-sub $0,2
+sub $0,1

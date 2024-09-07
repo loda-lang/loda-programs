@@ -18,13 +18,10 @@ lpb $3
   sub $0,120
   div $0,120
   mod $0,2
-  seq $0,2144 ; Pythagorean primes: primes of form 4*k + 1.
+  seq $0,2144 ; Pythagorean primes: primes of the form 4*k + 1.
   bin $0,2
   div $0,4
-  lpb $0
-    add $2,1
-    sub $0,$2
-  lpe
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   div $0,3
   add $5,$0
 lpe

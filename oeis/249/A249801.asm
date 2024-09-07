@@ -20,7 +20,7 @@ lpb $4
   add $5,2
   mov $6,$2
   max $6,0
-  cmp $6,$2
+  equ $6,$2
   mul $2,0
   mul $4,$6
   sub $4,17

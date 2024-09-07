@@ -2,12 +2,7 @@
 ; Submitted by omegaintellisys
 ; 2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2
 
-lpb $0
-  mov $2,$0
-  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$2
-lpe
-add $0,1
+seq $0,139764 ; Smallest term in Zeckendorf representation of n.
 lpb $0
   mov $1,$0
   mul $0,2

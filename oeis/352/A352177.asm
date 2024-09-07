@@ -14,10 +14,7 @@ lpb $0
   lpe
   lpb $0
     dif $0,$2
-    div $3,2
-    add $3,$1
   lpe
   add $1,1
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1

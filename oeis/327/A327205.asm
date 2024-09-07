@@ -1,5 +1,5 @@
 ; A327205: a(n) = [(2n+2)r] - [(n+2)r] - [nr], where [ ] = floor and r = sqrt(2).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1
 
 mov $3,$0
@@ -7,13 +7,20 @@ mov $5,2
 lpb $5
   sub $5,1
   add $0,$5
-  sub $0,1
   mov $4,$0
-  max $4,0
-  seq $4,197879 ; Parity of floor(n*sqrt(8)).
+  mul $4,4
+  mov $6,$4
+  pow $6,2
+  mul $6,2
+  mov $7,$6
+  nrt $7,2
+  mov $4,$7
+  div $4,2
+  mod $4,2
   mov $2,$5
   mul $2,$4
   mul $2,2
+  sub $0,1
   add $0,$2
 lpe
 mul $3,$4

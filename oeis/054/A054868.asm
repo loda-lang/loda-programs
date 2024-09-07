@@ -1,6 +1,10 @@
 ; A054868: Sum of bits of sum of bits of n: a(n) = wt(wt(n)).
+; Submitted by Science United
 ; 0,1,1,1,1,1,1,2,1,1,1,2,1,2,2,1,1,1,1,2,1,2,2,1,1,2,2,1,2,1,1,2,1,1,1,2,1,2,2,1,1,2,2,1,2,1,1,2,1,2,2,1,2,1,1,2,2,1,1,2,1,2,2,2,1,1,1,2,1,2,2,1,1,2,2,1,2,1,1,2
-; Formula: a(n) = A000120(A000120(n))
 
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+mov $1,$0
+lpb $1
+  div $1,2
+  sub $0,$1
+lpe
+dis $0,2

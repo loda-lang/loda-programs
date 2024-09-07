@@ -8,7 +8,7 @@ lpb $0
   mul $2,4
   seq $2,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   mov $3,$2
-  cmp $3,0
+  equ $3,0
   mov $2,$3
   add $2,1
   mod $2,2

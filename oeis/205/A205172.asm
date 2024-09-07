@@ -1,23 +1,36 @@
 ; A205172: Primes p == 5 (mod 8) such that p + 2 is also prime.
-; Submitted by [AF>Amis des Lapins] Xe120
+; Submitted by Science United
 ; 5,29,101,149,197,269,461,821,1061,1229,1277,1301,1877,1949,1997,2141,2237,2309,2381,2549,2789,3389,3461,3557,3581,3821,3917,4157,4229,4421,4517,4637,5021,5477,5501,5741,6197,6269,6701,6869,7349,7589,7757,7877,7949,8429,8597,8837,8861,9341,9437,9461,9629,9677,10037,10301,10709,11069,11117,11549,11717,12821,12917,13397,13709,13757,13829,13877,13901,13997,14549,15269,15581,16061,16229,16829,16901,17189,17597,17789
 
 mov $2,$0
-pow $2,2
-lpb $2
-  add $1,3
-  mov $3,$1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  div $3,2
-  add $3,$4
-  sub $0,$3
-  add $0,1
-  add $1,21
-  mov $4,$0
-  max $4,1
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+mul $0,2
+sub $0,1
+gcd $0,2
+mov $3,4
+mov $4,$2
+sub $2,1
+add $4,4
+pow $4,3
+lpb $4
+  mov $1,$5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $3,24
+  add $5,3
+  sub $5,$1
+  mul $1,$5
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $2,$1
+  mov $6,$2
+  max $6,0
+  equ $6,$2
+  mul $4,$6
+  sub $4,18
+  mov $5,$3
 lpe
-mov $0,$1
-add $0,5
+mov $2,$3
+div $2,6
+mul $2,3
+add $2,$0
+mov $0,$2
+mul $0,2
+add $0,3

@@ -1,8 +1,17 @@
 ; A151920: a(n) = (Sum_{i=1..n+1} 3^wt(i))/3, where wt() = A000120().
-; Submitted by mmonnin
+; Submitted by Mumps
 ; 1,2,5,6,9,12,21,22,25,28,37,40,49,58,85,86,89,92,101,104,113,122,149,152,161,170,197,206,233,260,341,342,345,348,357,360,369,378,405,408,417,426,453,462,489,516,597,600,609,618,645,654,681,708,789,798,825,852,933,960,1041,1122,1365,1366,1369,1372,1381,1384,1393,1402,1429,1432,1441,1450,1477,1486,1513,1540,1621,1624
-; Formula: a(n) = truncate(A160410(n+2)/12)
 
-add $0,2
-seq $0,160410 ; Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
-div $0,12
+add $0,1
+lpb $0
+  mov $3,$0
+  dis $3,2
+  mov $1,3
+  pow $1,$3
+  mov $3,$1
+  mul $3,3
+  sub $0,1
+  add $2,$3
+lpe
+div $2,9
+mov $0,$2

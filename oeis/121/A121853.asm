@@ -1,35 +1,13 @@
 ; A121853: Cumulative product of A000120.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,1,1,2,2,4,8,24,24,48,96,288,576,1728,5184,20736,20736,41472,82944,248832,497664,1492992,4478976,17915904,35831808,107495424,322486272,1289945088,3869835264,15479341056,61917364224,309586821120
+; Formula: a(n) = A000120(n)*a(n-1), a(0) = 1
 
-mov $5,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  lpb $0
-    sub $0,1
-    mul $7,$6
-    add $7,1
-    mov $1,$0
-    mov $6,0
-    add $9,$0
-    lpb $9
-      mov $9,0
-      mov $8,$1
-      mod $8,2
-      div $1,2
-      add $6,$8
-      add $9,$1
-    lpe
-  lpe
-  mov $0,$7
-  mov $2,$3
-  mul $2,$7
-  add $4,$2
+mov $1,1
+lpb $0
+  mov $2,$0
+  seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  sub $0,1
+  mul $1,$2
 lpe
-min $5,1
-mul $5,$0
-mov $0,$4
-sub $0,$5
+mov $0,$1

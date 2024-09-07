@@ -1,5 +1,5 @@
 ; A054972: Product of (sum of first n primes) and (product of first n primes).
-; Submitted by Jamie Morken(l1)
+; Submitted by Mumps
 ; 4,30,300,3570,64680,1231230,29609580,746876130,22309287000,834590426670,32089678420800,1461885412557570,72411562719475980,3676255934199278430,201683848689025182480,12416469379809407042130
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     sub $3,$4
   lpe
   add $2,1

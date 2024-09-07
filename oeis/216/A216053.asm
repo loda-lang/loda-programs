@@ -1,13 +1,22 @@
 ; A216053: a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
-; Submitted by vaughan
+; Submitted by Skillz
 ; 2,3,5,8,13,20,31,46,68,98,140,196,273,374,509,685,916,1213,1598,2088,2715,3507,4509,5764,7339,9297,11733,14743,18461,23026,28630,35472,43821,53964,66274,81157,99134,120771,146786,177971,215309,259892,313066,376327,451502,540636,646194,770948,918221,1091746,1295972,1535915,1817504,2147435,2533590,2984866,3511689,4125843,4841063,5672883,6639350,7760855,9061011,10566510,12308140,14320698,16644218,19323907,22411642,25965987,30053955,34751160,40143943,46329632,53419132,61537396,70826487,81446350
-; Formula: a(n) = a(n-1)+A000041(n), a(0) = 2
 
-mov $1,2
-lpb $0
-  mov $2,$0
-  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
+mov $3,$0
+mov $5,2
+lpb $5
+  sub $5,1
+  add $0,$5
   sub $0,1
+  mov $4,$0
+  max $4,0
+  seq $4,14153 ; Expansion of 1/((1-x)^2*Product_{k>=1} (1-x^k)).
+  mov $2,$5
+  mul $2,$4
   add $1,$2
 lpe
+min $3,1
+mul $3,$4
+sub $1,$3
 mov $0,$1
+add $0,1

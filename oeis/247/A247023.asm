@@ -1,7 +1,28 @@
 ; A247023: Riordan array (1/(1-2*x), x*C(x)) where C(x) is the o.g.f. of Catalan numbers A000108.
-; Submitted by Gunnar Hjern
+; Submitted by fzs600
 ; 1,2,1,4,3,1,8,8,4,1,16,21,13,5,1,32,56,40,19,6,1,64,154,122,66,26,7,1,128,440,376,222,100,34,8,1,256,1309,1181,741,365,143,43,9,1,512,4048,3792,2483,1302,561,196,53,10,1,1024,12958,12446,8398,4606,2123,821,260,64,11,1,2048,42712,41688,28730,16284,7886,3280,1157,336,76,12,1,4096,144210
-; Formula: a(n) = A201634(A061579(n))
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,201634 ; Triangle read by rows, n>=0, k>=0, T(n,n) = 2^n, T(n,k) = sum_{j=0..k} T(n-1,j) for k=0..n-1.
+mov $3,3
+mov $5,3
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+mul $0,-1
+add $0,$2
+lpb $0
+  sub $0,1
+  mov $1,$3
+  mul $1,$2
+  sub $2,1
+  add $4,1
+  add $6,$5
+  div $1,$4
+  mul $3,2
+  add $3,$1
+  sub $1,$6
+  mul $5,2
+  add $5,$1
+lpe
+mov $0,$5
+div $0,3

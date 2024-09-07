@@ -8,16 +8,6 @@ lpb $1
   mod $1,8
 lpe
 mod $1,4
-mov $2,$0
-mov $3,10
-gcd $0,8
-lpb $2
-  mov $2,3
-  add $0,6
-  mov $3,7
-lpe
-mul $0,$3
-trn $0,63
-add $0,1
+seq $0,40329 ; Continued fraction for sqrt(348).
 add $0,$1
 div $0,2

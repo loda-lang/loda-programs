@@ -1,40 +1,17 @@
 ; A373699: a(n) is the area of the (n+1)-gon having vertices coordinates (2,0), (2,prime(2)), ..., (n,prime(n)), (n,0).
-; Submitted by fix
+; Submitted by Skillz
 ; 4,10,19,31,46,64,85,111,141,175,214,256,301,351,407,467,531,600,672,748,829,915,1008,1107,1209,1314,1422,1533,1653,1782,1916,2054,2198,2348,2502,2662,2827,2997,3173,3353,3539,3731,3926,4124,4329,4546,4771,4999,5230,5466,5706,5952,6206,6466,6732,7002,7276,7555,7837,8125,8425,8734,9046,9361,9685,10019,10361,10709,11060,11416,11779,12149,12525,12906,13292,13685,14084,14489,14903,15323
 
-mov $6,$0
-mov $3,1
-lpb $3
-  sub $3,1
-  mov $4,$6
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $0,$6
-    sub $0,$4
-    mov $8,0
-    mov $9,2
-    lpb $9
-      sub $9,1
-      add $0,$9
-      add $0,1
-      lpb $0
-        trn $0,1
-        seq $0,40 ; The prime numbers.
-        mov $2,$0
-        seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-        add $2,$0
-        mov $0,0
-        mov $1,$2
-      lpe
-      mul $1,2
-      mov $7,$9
-      mul $7,$1
-      add $8,$7
-    lpe
-    mov $0,$8
-    div $0,4
-    add $5,$0
-  lpe
+mov $2,3
+add $0,1
+lpb $0
+  sub $0,1
+  equ $3,0
+  add $3,$2
+  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  add $1,$2
+  add $1,$3
+  mov $2,$3
 lpe
-mov $0,$5
+mov $0,$1
+div $0,2

@@ -14,7 +14,7 @@ lpb $0
   sub $0,$3
 lpe
 mov $1,$2
-cmp $1,0
+equ $1,0
 add $2,$1
 div $3,$2
 mov $0,$3

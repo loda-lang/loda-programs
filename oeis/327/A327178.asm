@@ -1,5 +1,5 @@
 ; A327178: Positions of 0's in {A327177(n) : n > 0}.
-; Submitted by damotbe
+; Submitted by Science United
 ; 3,4,5,9,10,15,16,17,20,21,22,26,27,28,29,32,33,34,38,39,44,45,46,50,51,55,56,57,58,61,62,63,67,68,73,74,75,79,80,85,86,87,90,91,92,96,97,98,99,102,103,104,108,109,114,115,116,119,120,121,125,126,127,128,131,132,133,137,138,143,144,145,149,150,154,155,156,157,160,161
 
 mov $2,$0
@@ -8,20 +8,31 @@ add $2,10
 pow $2,2
 lpb $2
   mov $5,$1
-  seq $5,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $5,2
+  mul $5,2
+  mov $7,$5
+  nrt $7,2
   mov $3,$1
   add $3,1
-  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  add $3,$5
+  pow $3,2
+  mul $3,2
+  mov $8,$3
+  nrt $8,2
+  mov $3,$8
+  add $3,$7
   add $3,1
-  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $3,2
+  mul $3,2
+  mov $6,$3
+  nrt $6,2
+  mov $3,$6
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

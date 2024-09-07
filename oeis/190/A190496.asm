@@ -1,19 +1,33 @@
 ; A190496: a(n) = [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(2),3,2) and []=floor.
-; Submitted by Merlin2331
+; Submitted by Science United
 ; 2,3,1,2,1,2,3,1,3,1,2,3,1,3,1,2,0,2,3,1,2,1,2,3,1,3,1,2,0,2,3,1,2,1,2,3,1,3,1,2,3,2,3,1,2,0,2,3,1,2,1,2,3,1,3,1,2,0,2,3,1,2,1,2,3,1,3,1,2,3,2,3,1,2,1,2,3,1,2,1
-; Formula: a(n) = truncate((-3*A286927(n)+A286927(3*n+4)-2)/2)-5
 
 mov $1,$0
 mul $1,3
-add $1,4
-seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
+add $1,5
+max $4,$1
+mul $4,2
+add $0,1
+pow $1,2
+mul $1,8
+nrt $1,2
+div $1,2
+add $1,$4
+mul $1,2
+max $3,$0
+mul $3,2
+pow $0,2
+mul $0,8
+nrt $0,2
+div $0,2
+add $0,$3
+mul $0,2
 mov $2,1
 sub $2,$0
 sub $2,$0
 sub $2,$0
 add $2,$1
 mov $0,$2
-sub $0,3
+sub $0,15
 div $0,2
-sub $0,5
+add $0,1

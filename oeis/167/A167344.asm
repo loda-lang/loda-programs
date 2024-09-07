@@ -17,7 +17,7 @@ lpb $0
   lpe
   lpb $0
     dif $0,$2
-    cmp $5,4
+    equ $5,4
     sub $5,$4
     mov $6,$4
     sub $6,1

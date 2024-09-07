@@ -1,23 +1,7 @@
 ; A364034: Expansion of Sum_{k>0} x^k / (1 - 2*x^(2*k)).
-; Submitted by Science United
+; Submitted by Jave808
 ; 1,1,3,1,5,3,9,1,19,5,33,3,65,9,135,1,257,19,513,5,1035,33,2049,3,4101,65,8211,9,16385,135,32769,1,65571,257,131085,19,262145,513,524355,5,1048577,1035,2097153,33,4194455,2049,8388609,3,16777225,4101,33554691,65,67108865,8211,134217765,9
+; Formula: a(n) = A059905(A034729(n))
 
-add $0,1
-mov $1,1
-mov $4,$0
-lpb $0
-  sub $0,1
-  add $1,$0
-  mov $2,$4
-  gcd $2,$1
-  bin $2,$1
-  add $2,$3
-  add $2,$6
-  mov $3,0
-  sub $3,$2
-  mov $6,$5
-  cmp $1,1
-  add $1,1
-  add $5,$2
-lpe
-mov $0,$5
+seq $0,34729 ; a(n) = Sum_{ k, k|n } 2^(k-1).
+seq $0,59905 ; Index of first half of decomposition of integers into pairs based on A000695.

@@ -7,7 +7,7 @@ add $1,1
 mov $2,$1
 mov $3,$1
 add $3,1
-cmp $0,13
+equ $0,13
 mul $1,2
 bin $1,$2
 div $1,$3

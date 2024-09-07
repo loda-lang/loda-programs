@@ -9,12 +9,12 @@ lpb $2
   seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   sub $3,1
   seq $3,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

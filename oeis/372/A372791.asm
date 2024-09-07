@@ -12,8 +12,7 @@ lpb $0
   add $0,$4
   mov $3,$2
   dif $3,$0
-  equ $3,$2
-  equ $3,0
+  neq $3,$2
   mul $3,$0
   div $3,$4
   sub $0,1

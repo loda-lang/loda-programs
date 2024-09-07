@@ -1,4 +1,4 @@
-; A273860: Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
+; A273860: Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 1006", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Christian Krause
 ; 1,5,21,89,377,1569,6425,26033,104841,420833,1686329,6751377,27017705,108095297,432430233,1729819121
 ; Formula: a(n) = 2*c(n)+1, b(n) = 5*b(n-1)-4*b(n-2)+2, b(5) = 822, b(4) = 204, b(3) = 50, b(2) = 12, b(1) = 3, b(0) = 1, c(n) = 2*b(n-1)+2*c(n-1), c(3) = 44, c(2) = 10, c(1) = 2, c(0) = 0

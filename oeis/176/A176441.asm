@@ -1,29 +1,12 @@
 ; A176441: Decimal expansion of sqrt(210).
-; Submitted by Jamie Morken(w2)
+; Submitted by Skillz
 ; 1,4,4,9,1,3,7,6,7,4,6,1,8,9,4,3,8,5,7,3,7,1,8,6,6,4,1,5,7,1,6,9,7,7,1,7,2,3,1,4,0,1,3,2,8,7,4,7,5,8,9,7,3,0,8,8,6,9,5,9,2,4,8,0,7,1,1,8,1,4,4,3,7,2,6,5,3,6,8,0
 
-mov $1,1
-pow $2,$0
-mov $3,$0
-mul $3,4
-lpb $3
-  sub $3,1
-  add $6,$2
-  div $6,3
-  mul $6,2
-  add $1,$6
-  mov $2,4
-  add $2,$1
-  mul $2,2
-  mov $5,$1
-  add $5,$2
-  mul $5,3
-  mov $1,$6
-  add $6,$5
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
+mul $0,2
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,21
+div $0,10
+nrt $0,2
 mod $0,10

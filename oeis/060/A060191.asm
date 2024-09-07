@@ -1,26 +1,13 @@
 ; A060191: Union_i p(4i), p(4i+1), where p(k) = k-th prime.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Skillz
 ; 2,7,11,19,23,37,41,53,59,71,73,89,97,107,109,131,137,151,157,173,179,193,197,223,227,239,241,263,269,281,283,311,313,337,347,359,367,383,389,409,419,433,439,457,461,479,487,503,509,541,547,569,571,593,599,613,617,641,643,659,661,683,691,719,727,743,751,769,773,809,811,827,829,857,859,881,883,911,919,941
+; Formula: a(n) = A151799(A154115(n%2+2*n))
 
 mov $1,$0
-mul $1,2
-mod $0,2
-add $0,$1
-mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $5,$3
-  seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $5,2
-  sub $2,$5
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-sub $2,1
+mod $1,2
+add $1,$0
+add $1,$0
+mov $2,$1
+seq $2,154115 ; Numbers n such that n + 3 is prime.
+seq $2,151799 ; Version 2 of the "previous prime" function: largest prime < n.
 mov $0,$2

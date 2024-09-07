@@ -1,35 +1,31 @@
 ; A020853: Decimal expansion of 1/sqrt(96).
-; Submitted by Science United
+; Submitted by Skillz
 ; 1,0,2,0,6,2,0,7,2,6,1,5,9,6,5,7,5,4,0,9,1,5,5,3,5,0,3,1,1,2,7,4,5,4,7,4,6,6,5,2,4,7,8,1,1,6,9,4,0,2,7,9,2,2,0,1,8,0,2,8,8,5,6,9,6,8,7,9,0,0,1,5,7,2,7,3,8,8,1,2
 
-mov $1,1
-mov $2,2
-mov $4,$0
-add $4,3
-mov $7,10
-pow $7,$4
-dif $0,2
+mov $5,13
 mov $3,$0
-add $3,8
+mul $3,2
 lpb $3
   sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,96
-  mov $5,$1
-  pow $5,2
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  add $4,$5
-  mov $8,$4
-  div $8,$7
-  max $8,2
-  mov $1,$4
-  div $1,$8
-  mov $2,$6
-  div $2,$8
+  mov $7,$6
+  add $6,$2
+  add $2,$7
+  mul $2,4
+  equ $1,1
+  add $1,$6
+  add $1,$2
+  mul $1,4
+  add $2,$1
+  add $5,$2
+  add $6,$5
 lpe
-div $2,100
-mov $0,$2
+mov $1,$5
+mul $1,2
+mov $4,10
+pow $4,$0
+add $2,10
+div $2,$4
+div $1,$2
+mov $0,$1
+div $0,2
 mod $0,10

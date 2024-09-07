@@ -1,26 +1,24 @@
 ; A339977: Sums of two distinct odd squares.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 10,26,34,50,58,74,82,90,106,122,130,146,170,178,194,202,218,226,234,250,274,290,298,306,314,338,346,362,370,386,394,410,442,450,458,466,482,490,514,522,530,538,554,562,578,586,610,626,634,650,666,674,698,706,730,738,746,754,778,794,802,810,818,842,850,866,890,898,914,922,954,962,970,986,1010,1018,1042,1066,1082,1090
 
-mov $1,24
 mov $2,$0
-add $2,7
+add $2,4
 pow $2,2
 lpb $2
-  add $1,1
+  sub $2,7
   mov $3,$1
-  seq $3,925 ; Number of ordered ways of writing n as a sum of 2 squares of nonnegative integers.
-  trn $3,2
-  min $3,1
+  seq $3,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+  bin $3,2
+  neq $3,0
+  add $5,1
   sub $0,$3
-  add $1,19
+  add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
-  sub $2,1
 lpe
-add $1,1
-mov $0,$1
-div $0,5
-mul $0,2
+mov $0,$5
+mul $0,8
+sub $0,6

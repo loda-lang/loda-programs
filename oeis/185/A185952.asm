@@ -7,7 +7,7 @@ mov $1,2
 lpb $0
   mov $2,$0
   trn $2,1
-  seq $2,2144 ; Pythagorean primes: primes of form 4*k + 1.
+  seq $2,2144 ; Pythagorean primes: primes of the form 4*k + 1.
   sub $0,1
   mul $1,$2
 lpe
