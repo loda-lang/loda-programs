@@ -1,21 +1,15 @@
 ; A105321: Convolution of binomial(1,n) and Gould's sequence A001316.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Josemi
 ; 1,3,4,6,6,6,8,12,10,6,8,12,12,12,16,24,18,6,8,12,12,12,16,24,20,12,16,24,24,24,32,48,34,6,8,12,12,12,16,24,20,12,16,24,24,24,32,48,36,12,16,24,24,24,32,48,40,24,32,48,48,48,64,96,66,6,8,12,12,12,16,24,20,12,16,24,24,24,32,48
 
-mov $4,3
-mov $1,$0
-add $1,3
-lpb $1
-  sub $1,$4
+mov $1,1
+mov $2,3
+lpb $0
+  sub $0,1
   mov $3,$1
-  mov $5,$1
-  lpb $5
-    div $3,2
-    sub $5,$3
-  lpe
-  mov $3,2
-  pow $3,$5
-  add $2,$3
-  div $4,2
+  mul $3,8
+  bxo $2,$3
+  mov $1,$2
 lpe
-mov $0,$2
+dis $1,2
+mov $0,$1

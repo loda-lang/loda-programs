@@ -1,16 +1,14 @@
 ; A173950: a(n) = 1 if 6 divides (prime(n) + 1), a(n) = -1 if 6 divides (prime(n) - 1), a(n) = 0 otherwise.
-; Submitted by Kotenok2000
+; Submitted by Skillz
 ; 0,0,1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,1,1,1,-1,1,-1,1,-1,-1,-1,1,-1,1,1,-1,1,1,1,1,-1,-1,1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,1,-1,-1,-1,1,1,-1,1,-1
+; Formula: a(n) = truncate((-truncate((-2*A000040(n)+1)/(gcd(A000040(n),2)+2))*(gcd(A000040(n),2)+2)-2*A000040(n)+1)^(-truncate((-2*A000040(n)+1)/(gcd(A000040(n),2)+2))*(gcd(A000040(n),2)+2)-2*A000040(n)+1))
 
-seq $0,6005 ; The odd prime numbers together with 1.
-lpb $0
-  mov $2,2
-  lpb $0
-    sub $0,1
-    sub $1,$2
-    add $2,$1
-  lpe
-  seq $0,10015 ; a(0) = 1, a(n) = 25*n^2 + 2 for n > 0.
-lpe
+seq $0,40 ; The prime numbers.
+mov $1,1
+sub $1,$0
+sub $1,$0
+gcd $0,2
+add $0,2
+mod $1,$0
+pow $1,$1
 mov $0,$1
-div $0,2

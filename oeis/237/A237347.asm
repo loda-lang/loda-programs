@@ -1,17 +1,13 @@
 ; A237347: First differences of A078633.
-; Submitted by Mumps
+; Submitted by wareyore
 ; 3,3,2,3,2,3,2,2,3,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,2,3,2,2,2,2,2,3,2,2,2,2,2,3,2,2,2,2,2,2,3,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2
-; Formula: a(n) = d(n+1)+1, b(n) = c(n-1)+truncate(b(n-1)/2), b(2) = 10, b(1) = 4, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(2) = 16, c(1) = 8, c(0) = 4, d(n) = gcd(truncate(b(n-1)/2),2), d(2) = 2, d(1) = 2, d(0) = 0
 
-mov $2,4
+mov $2,$0
+add $2,2
+nrt $2,2
 add $0,1
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $1,$2
-  mul $2,$3
-lpe
-mov $0,$3
-add $0,1
+mod $0,$2
+mov $1,$0
+equ $1,0
+mov $0,$1
+add $0,2

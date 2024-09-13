@@ -16,7 +16,7 @@ lpb $2
   sub $3,1
   mod $3,9
   add $3,1
-  cmp $3,9
+  equ $3,9
   sub $0,$3
   add $1,1
   sub $2,$0

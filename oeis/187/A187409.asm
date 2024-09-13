@@ -6,7 +6,7 @@ add $0,1
 pow $0,2
 mov $1,$0
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $2,$0
 mov $4,$2
 mov $5,$2

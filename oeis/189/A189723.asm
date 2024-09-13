@@ -4,12 +4,12 @@
 
 mov $3,$0
 lpb $3
-  cmp $1,0
+  equ $1,0
   lpb $3
     dif $3,3
     div $2,2
   lpe
-  cmp $2,0
+  equ $2,0
   sub $3,$2
 lpe
 mov $0,$1

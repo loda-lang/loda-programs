@@ -1,18 +1,17 @@
 ; A134312: A097806 * A134309.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,1,1,0,1,2,0,0,2,4,0,0,0,4,8,0,0,0,0,8,16,0,0,0,0,0,16,32,0,0,0,0,0,0,32,64
 
 lpb $0
   add $1,1
   sub $0,$1
-  mov $2,$1
-  sub $2,$0
-  trn $2,1
 lpe
-max $0,1
-pow $1,$2
-mov $2,2
-div $2,$1
-pow $2,$0
-mov $0,$2
-div $0,2
+mov $2,$1
+sub $2,$0
+mov $3,2
+pow $3,$0
+mov $1,1
+bin $1,$2
+mul $1,$3
+mov $0,$1
+dif $0,2

@@ -1,15 +1,19 @@
 ; A357073: For n >= 1, a(n) = A003714(n) mod n.
-; Submitted by nenym
+; Submitted by Science United
 ; 0,0,1,1,3,3,3,0,8,8,9,9,6,5,4,4,3,4,3,2,1,21,20,20,19,20,19,18,22,21,20,20,19,26,24,22,21,19,19,17,15,18,16,14,13,11,19,17,15,14,12,12,10,8,36,33,30,28,25,24,21,18,20,17,14,12,9,16,13,10,8,5
-; Formula: a(n) = -truncate(b(n+1)/(n+1))*(n+1)+b(n+1), b(n) = A184615(b(n-1)+1), b(0) = 0
 
 add $0,1
 mov $1,$0
-mov $2,0
 lpb $0
   sub $0,1
   add $2,1
-  seq $2,184615 ; Positive parts of the nonadjacent forms for n.
+  mov $3,$2
+  mul $3,2
+  add $3,$2
+  bor $3,$2
+  sub $3,$2
+  mov $2,$3
+  div $2,2
 lpe
 mov $0,$2
 mod $0,$1

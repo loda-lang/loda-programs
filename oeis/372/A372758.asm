@@ -1,25 +1,24 @@
 ; A372758: 5th prepended column of the 3-Zeckendorf array (A136189).
-; Submitted by Science United
+; Submitted by Skillz
 ; 1,2,2,2,3,4,4,5,5,5,6,6,6,7,8,8,8,9,10,10,11,11,11,12,13,13,14,14,14,15,15,15,16,17,17,18,18,18,19,19,19,20,21,21,21,22,23,23,24,24,24,25,25,25,26,27,27,27,28,29,29,30,30,30,31,32,32,33,33,33
 
 mov $2,2
-mov $4,-1
 add $0,1
 lpb $0
   sub $0,1
   sub $1,$2
   add $1,1
   div $1,4
-  max $3,1
-  add $4,1
-  sub $4,$5
   add $4,$3
-  mov $5,2
+  add $4,$3
   bin $3,$2
   add $3,$1
   gcd $3,4
   mul $2,$3
   div $3,2
   dif $1,$3
+  bin $3,2
 lpe
 mov $0,$4
+div $0,2
+add $0,1

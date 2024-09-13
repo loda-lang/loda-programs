@@ -10,8 +10,8 @@ mov $4,1
 lpb $1
   sub $1,1
   mov $2,$1
-  cmp $2,0
-  cmp $5,2
+  equ $2,0
+  equ $5,2
   sub $5,1
   add $1,$2
   sub $4,$3

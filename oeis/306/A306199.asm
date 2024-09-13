@@ -16,13 +16,13 @@ lpb $2
   lpb $3
     mod $3,8
   lpe
-  cmp $3,4
+  equ $3,4
   sub $0,$3
   add $1,$4
   add $1,3
   sub $2,$0
   mov $4,$0
-  cmp $4,$0
+  equ $4,$0
 lpe
 div $1,2
 mov $0,$1

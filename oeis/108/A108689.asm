@@ -1,15 +1,17 @@
 ; A108689: Smallest integer q >= 1 such that difference between q*Pi and the nearest integer is <= 1/n.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Skillz
 ; 1,1,1,1,1,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
 
-mov $2,$0
-lpb $2
-  add $0,1
-  pow $1,2
-  seq $1,69161 ; Numbers n such that no group of order n can be a central factor.
-  add $1,4
+pow $0,2
+div $0,34
+mov $1,14
+mov $2,14
+lpb $0
+  bin $2,9
   add $2,$1
-  sub $2,$0
+  bxo $1,$2
+  div $0,19
 lpe
 mov $0,$1
-add $0,1
+sub $0,3
+mod $0,10

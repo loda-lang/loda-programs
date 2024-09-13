@@ -1,5 +1,5 @@
 ; A018390: Divisors of 318.
-; Submitted by Roadranner
+; Submitted by Science United
 ; 1,2,3,6,53,106,159,318
 
 mov $1,1
@@ -17,7 +17,7 @@ lpb $0
   pow $1,$4
   sub $1,1
   mul $1,2
-  add $4,1
+  mov $4,2
 lpe
 mov $0,$2
 div $0,3

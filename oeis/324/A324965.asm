@@ -14,7 +14,7 @@ lpb $5
   div $2,2
   sub $2,2
   bin $2,$0
-  cmp $1,$0
+  equ $1,$0
   mov $0,$2
   mod $0,2
   add $4,$0

@@ -1,15 +1,22 @@
 ; A284878: Fixed point of the morphism 0 -> 01, 1 -> 0110.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Opolis
 ; 0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1
-; Formula: a(n) = 2*floor(n/2)-A189727(2*floor(n/2)+1)-2*truncate((2*floor(n/2)-A189727(2*floor(n/2)+1)+n+1)/2)+n+1
+; Formula: a(n) = d(2*n+2)-1, b(n) = truncate((-c(n-1)+b(n-1)+1)/2)-1, b(2) = -5, b(1) = -2, b(0) = 0, c(n) = 2*c(n-1)*gcd(d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),2)^2, c(2) = 16, c(1) = 8, c(0) = 4, d(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1)+1)/2),2), d(2) = 1, d(1) = 1, d(0) = 0
 
-mov $1,$0
-div $0,2
+mov $2,4
 mul $0,2
-mov $2,$0
-add $2,1
-seq $2,189727 ; Fixed point of the morphism 0->011, 1->110.
-add $0,1
-sub $0,$2
-add $0,$1
-mod $0,2
+add $0,2
+lpb $0
+  sub $0,1
+  sub $1,$2
+  add $1,1
+  div $1,2
+  add $3,$1
+  gcd $3,2
+  sub $1,1
+  mul $2,$3
+  mul $2,2
+  mul $2,$3
+lpe
+mov $0,$3
+sub $0,1

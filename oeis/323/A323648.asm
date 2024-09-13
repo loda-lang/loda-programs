@@ -4,7 +4,6 @@
 
 add $0,1
 mov $1,$0
-mov $2,0
 mov $3,$0
 pow $3,2
 lpb $3
@@ -21,10 +20,8 @@ lpb $3
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe
 mov $0,$2
-mov $1,$2
-add $1,1

@@ -15,7 +15,7 @@ lpb $0
   add $5,1
   mul $5,2
   add $6,$5
-  cmp $1,$4
+  equ $1,$4
   add $3,$4
   add $5,$1
   add $5,$4

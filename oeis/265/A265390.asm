@@ -1,5 +1,5 @@
 ; A265390: a(n) = lcm_{d|n} tau(d) * Sum_{d|n} 1/tau(d), where tau(d) represents the number of divisors of d (A000005(d)).
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Skillz
 ; 1,3,3,11,3,9,3,25,11,9,3,33,3,9,9,137,3,33,3,33,9,9,3,75,11,9,25,33,3,27,3,147,9,9,9,121,3,9,9,75,3,27,3,33,33,9,3,411,11,33,9,33,3,75,9,75,9,9,3,99,3,9,33,1089,9,27,3,33,9,27,3,275,3,9,33,33,9,27,3,411
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

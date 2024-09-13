@@ -1,5 +1,5 @@
 ; A204429: Symmetric matrix: f(i,j)=(2*i + 2*j) mod 3, by antidiagonals.
-; Submitted by Science United
+; Submitted by Skillz
 ; 1,0,0,2,2,2,1,1,1,1,0,0,0,0,0,2,2,2,2,2,2,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,1,1
 
 mul $0,8
@@ -8,8 +8,6 @@ nrt $0,2
 add $0,1
 div $0,2
 mod $0,3
-sub $0,2
-mov $1,1
 sub $1,$0
 mov $0,$1
-sub $0,1
+add $0,2

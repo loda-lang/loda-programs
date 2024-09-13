@@ -12,6 +12,6 @@ lpb $0
   mov $4,$0
 lpe
 max $4,1
-cmp $4,$0
+equ $4,$0
 mul $4,$2
 mov $0,$4

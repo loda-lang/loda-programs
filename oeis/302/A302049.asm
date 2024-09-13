@@ -7,14 +7,13 @@ add $0,1
 lpb $0
   mov $3,$0
   lpb $3
-    cmp $6,0
+    equ $6,0
     add $2,$6
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     add $6,$0
     add $2,1
     max $4,$5

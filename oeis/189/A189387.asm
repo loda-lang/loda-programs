@@ -1,16 +1,27 @@
 ; A189387: a(n) = n+[nr/s]+[nt/s]; r=1, s=sqrt(2), t=1/sqrt(3).
-; Submitted by Simon Strandgaard
+; Submitted by BlisteringSheep
 ; 1,3,6,7,10,12,13,16,18,21,22,24,27,28,31,33,35,37,39,42,43,45,48,49,52,54,57,58,60,63,64,67,69,71,73,75,78,79,81,84,85,88,90,92,94,96,99,100,103,105,107,109,111,114,115,117,120,122,124,126,128,130,132,135,136,138,141,143,145,147,149,151,153,156,158,160,162,164,166,168
-; Formula: a(n) = truncate((A003151(n)+n+945)/2)+truncate(A022840(n)/6)-472
 
-mov $2,$0
-seq $2,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+mov $6,1
+add $6,$0
+mov $5,$6
+pow $5,2
+mul $5,2
+mov $4,$5
+nrt $4,2
+add $6,$4
+mov $2,$6
 add $2,945
 mov $1,$0
 add $1,$2
 div $1,2
 sub $1,471
-seq $0,22840 ; Beatty sequence for sqrt(6).
+add $0,1
+pow $0,2
+mov $3,$0
+mul $3,6
+nrt $3,2
+mov $0,$3
 div $0,6
 sub $0,1
 add $0,$1

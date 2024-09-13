@@ -1,16 +1,11 @@
 ; A102511: Sum(A008683(A102510(k)): k<=n).
-; Submitted by Dingo
+; Submitted by Skillz
 ; 1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0
-; Formula: a(n) = -2*truncate((b(n+1)-1)/2)+b(n+1)-1, b(n) = b(n-1)+A008966(max(n-1,0)), b(0) = 1
+; Formula: a(n) = -2*truncate((-2*truncate(A360658(n)/2)+A360658(n)+2)/2)-2*truncate(A360658(n)/2)+A360658(n)+2
 
-mov $1,1
-add $0,1
-lpb $0
-  trn $0,1
-  mov $2,$0
-  seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-  add $1,$2
-lpe
+mov $1,$0
+seq $1,360658 ; a(1) = 1; a(n) = -Sum_{k=2..n} k^3 * a(floor(n/k)).
 mov $0,$1
-sub $0,1
+mod $0,2
+add $0,2
 mod $0,2

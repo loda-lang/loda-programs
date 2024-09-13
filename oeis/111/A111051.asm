@@ -1,21 +1,22 @@
 ; A111051: Numbers m such that 3*m^2 + 1 is prime.
-; Submitted by Skillz
+; Submitted by fzs600
 ; 2,6,8,12,16,20,22,26,34,36,40,58,64,68,78,82,84,86,98,112,120,126,142,146,148,152,156,160,168,188,190,194,196,208,216,218,222,238,240,244,246,254,264,272,282,286,294,300,302,306,308,316,320,330,338,344,348,350,364,370,372,376,380,422,426,428,434,446,454,462,464,478,490,504,512,524,530,560,566,568
 
-add $0,1
-mov $2,2
-mov $4,2
+mov $4,4
+add $0,2
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  mul $1,6
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,4
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,2
   sub $0,$1
   add $2,$4
+  add $2,$4
   sub $3,$0
+  add $4,10
 lpe
 mov $0,$4
-div $0,2
-add $0,1
+sub $0,16
+div $0,6
+add $0,2

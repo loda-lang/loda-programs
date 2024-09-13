@@ -12,11 +12,17 @@ lpb $2
   mov $6,$3
   sub $6,$4
   mov $7,$6
-  seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  sub $7,$6
+  sub $7,1
+  trn $9,56
+  add $9,1
+  mov $8,$7
+  sub $8,$9
+  add $8,3
   add $6,1
   seq $6,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  add $6,$7
-  cmp $6,0
+  add $6,$8
+  equ $6,0
   add $1,1
   add $5,$3
   sub $5,$1
@@ -30,12 +36,11 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-sub $0,8
 div $0,4
 mul $0,2
-add $0,5
+add $0,1

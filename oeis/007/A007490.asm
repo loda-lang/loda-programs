@@ -10,13 +10,12 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   seq $3,51344 ; Number of ways of writing n as a sum of 3 positive cubes (counted naively).
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

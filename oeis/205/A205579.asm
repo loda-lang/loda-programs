@@ -13,7 +13,7 @@ lpb $0
   mov $5,$4
   mov $4,$2
   add $4,$1
-  cmp $2,6
+  equ $2,6
   add $3,$1
 lpe
 mov $0,$4

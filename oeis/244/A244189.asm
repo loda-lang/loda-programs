@@ -1,12 +1,13 @@
 ; A244189: a(n) = most common final digit for a prime with n digits, or 0 if there is a tie.
-; Submitted by GolfSierra
+; Submitted by omegaintellisys
 ; 0,3,7,3,7,3,7,7,3,3,1,7,3,7
 
 mov $1,$0
 mov $2,2
 lpb $2
-  sub $2,1
+  mul $2,0
   mov $0,$1
+  dif $0,12
   seq $0,6005 ; The odd prime numbers together with 1.
   max $0,2
   sub $0,2

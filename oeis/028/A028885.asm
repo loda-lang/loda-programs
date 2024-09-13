@@ -1,19 +1,20 @@
 ; A028885: Numbers k such that k^2 - 8 is prime.
-; Submitted by Skivelitis2
+; Submitted by Skillz
 ; 5,7,9,11,17,19,21,23,25,31,35,37,45,49,51,53,65,67,81,87,91,93,101,103,115,117,119,121,123,129,133,135,143,145,147,149,161,163,173,177,185,187,191,203,205,207,213,227,229,231,235,241,245,247,257,259,261,269,271,273,275,287,291,299,303,313,327,329,333,339,341,347,353,359,367,371,373,375,383,399
 
-add $0,1
-mov $4,8
+add $0,2
+mov $4,4
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,8
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,4
   sub $0,$1
+  add $2,$4
   add $2,$4
   sub $3,$0
 lpe
 mov $0,$4
-div $0,4
+div $0,2
 add $0,1

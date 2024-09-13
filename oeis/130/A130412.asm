@@ -1,23 +1,24 @@
 ; A130412: Denominator of partial sums of a series for 3*(Pi-3).
-; Submitted by Science United
+; Submitted by tosi
 ; 2,5,140,105,2310,15015,120120,85085,9699690,4849845,446185740,557732175,3346393050,48522699225,24067258815600,1504203675975,3008407351950,55655536011075,222622144044300,2281876976454075
 
-mov $1,1
+mov $2,1
 add $0,1
 lpb $0
-  mov $2,$0
-  mov $4,$0
-  add $4,$0
-  add $4,1
+  mov $1,$0
+  add $1,$0
+  add $1,1
+  mov $3,$0
+  mul $3,$1
+  mul $4,-1
+  mul $4,$3
+  add $4,$2
   sub $0,1
-  mul $2,$4
-  mul $3,-1
-  mul $3,$2
   add $3,$1
-  add $2,$4
-  mul $1,$2
+  mul $2,$3
 lpe
-gcd $3,$1
-div $1,$3
-mov $0,$1
-div $0,3
+mul $2,3
+gcd $4,$2
+div $2,$4
+mov $0,$2
+div $0,9

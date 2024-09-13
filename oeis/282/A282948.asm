@@ -8,11 +8,8 @@ add $0,3
 lpb $0
   sub $0,$1
   seq $3,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
-  mov $4,73
-  mod $4,$3
-  seq $4,292438 ; Characteristic function of non-isolated nonprimes.
-  mov $3,$4
   mul $3,$0
+  sub $1,$0
   mul $1,21
   add $2,$3
 lpe

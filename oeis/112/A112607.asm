@@ -1,10 +1,29 @@
 ; A112607: Number of representations of n as a sum of a triangular number and twelve times a triangular number.
-; Submitted by Jamie Morken(s3)
+; Submitted by Science United
 ; 1,1,0,1,0,0,1,0,0,0,1,0,1,1,0,2,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,0,0,2,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,0,0,1,0,2,0,0,0,0,0,0,1,0,1,1,0,0,0,0,2,1,0,1,0,0,3,0
-; Formula: a(n) = truncate(A123331(8*n+12)/2)
 
-mul $0,4
-add $0,6
+mov $3,3
 mul $0,2
-seq $0,123331 ; Expansion of (c(q)^2/(3c(q^2))-1)/2 in powers of q where c(q) is a cubic AGM function.
-div $0,2
+add $0,3
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  mov $7,$2
+  mul $7,4
+  mov $6,$7
+  nrt $6,2
+  mul $2,2
+  add $2,1
+  mul $2,2
+  mov $4,$2
+  nrt $4,2
+  add $6,$4
+  mov $2,$6
+  mod $2,2
+  add $5,12
+  add $1,$2
+  mov $3,2
+  mul $3,$5
+lpe
+mov $0,$1

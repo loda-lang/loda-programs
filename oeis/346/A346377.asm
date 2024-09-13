@@ -11,7 +11,7 @@ lpb $2
   mov $0,$4
   sub $0,$2
   seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

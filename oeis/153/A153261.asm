@@ -1,5 +1,5 @@
 ; A153261: Primes p such that 3*p-2 is not prime.
-; Submitted by Josemi
+; Submitted by gemini8
 ; 2,17,19,29,31,41,59,73,79,83,89,97,101,107,109,131,139,149,151,157,173,179,197,199,223,227,229,233,239,241,269,281,283,311,317,349,353,359,367,379,383,389,397,409,419,421,439,449,457,463,479,499,503,509,521
 
 sub $0,1
@@ -10,16 +10,15 @@ pow $2,3
 lpb $2
   mov $3,$1
   add $3,2
-  mov $6,$3
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  equ $6,0
   add $1,1
   add $5,$3
   sub $5,$1
+  equ $6,0
   mul $6,$5
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $3,$6
-  add $3,4
+  mul $3,$1
+  add $3,$6
   seq $3,55976 ; Remainder when (n-1)! + 1 is divided by n.
   sub $0,$3
   add $1,$4

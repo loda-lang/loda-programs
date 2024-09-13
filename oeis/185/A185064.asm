@@ -2,7 +2,7 @@
 ; Submitted by [AF>WildWildWest]Sebastien
 ; 1,2,4,8,10,16,20,26,32,40,52,64,80,100
 
-cmp $1,$0
+equ $1,$0
 sub $0,1
 mov $2,1
 mov $3,$0
@@ -20,7 +20,7 @@ lpb $3
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

@@ -7,13 +7,5 @@ add $0,1
 nrt $0,2
 add $0,1
 div $0,2
-add $0,3
-mov $1,1
-sub $1,$0
-mov $2,$0
-add $0,$1
-add $0,2
-bin $2,$0
-mov $0,$2
-add $0,1
+dif $0,2
 mod $0,2

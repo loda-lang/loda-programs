@@ -1,22 +1,25 @@
 ; A238248: Numbers m such that A072219(m) = 7.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Amis de la Mer] ComteZera
 ; 43,75,83,85,86,87,91,107,139,147,149,150,151,155,163,165,166,167,169,170,172,173,174,175,179,181,182,183,187,203,211,213,214,215,219,235,267,275,277,278,279,283,291,293,294,295,297,298,300,301,302,303,307,309,310,311,315,323,325,326,327,329,330,332,333,334,335,337,338,340,344,345,346,348,349,350,351,355,357,358
 
+mov $1,1
 mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
-  seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
-  cmp $3,7
+  seq $3,37800 ; Number of occurrences of 01 in the binary expansion of n.
+  add $3,2
+  equ $3,5
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+sub $0,85
 div $0,2
-add $0,1
+add $0,43

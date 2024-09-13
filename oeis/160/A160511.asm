@@ -7,7 +7,7 @@ mov $3,45
 mul $3,$0
 div $3,71
 mov $1,$3
-cmp $1,0
+equ $1,0
 mov $0,$3
 add $0,$1
 div $2,$0
