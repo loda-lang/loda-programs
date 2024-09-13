@@ -1,27 +1,13 @@
 ; A088543: Decimal expansion of sqrt(15)/2.
-; Submitted by Jon Maiga
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,9,3,6,4,9,1,6,7,3,1,0,3,7,0,8,4,4,2,5,8,9,6,3,2,6,9,9,8,9,1,1,9,9,8,0,5,4,1,6,4,6,0,8,5,2,6,4,5,7,9,5,4,1,3,2,9,3,7,8,6,8,8,3,0,5,6,7,4,1,5,4,5,9,6,8,4,8,9,5
 
-mov $3,$0
-add $3,1
-mul $3,3
-lpb $3
-  sub $3,1
-  add $6,$2
-  add $1,$6
-  add $2,$1
-  add $1,$2
-  add $2,$1
-  mov $5,$1
-  mul $1,2
-  add $1,$5
-  add $5,$2
-  mov $6,2
-  add $6,$5
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
+mul $0,2
+add $0,1
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,6
+nrt $0,2
+div $0,4
 mod $0,10

@@ -1,5 +1,5 @@
 ; A018284: Divisors of 102.
-; Submitted by Cruncher Pete
+; Submitted by fzs600
 ; 1,2,3,6,17,34,51,102
 
 mov $1,1
@@ -17,6 +17,8 @@ lpb $0
   pow $1,$4
   sub $1,1
   mul $1,2
+  mul $4,0
+  add $4,1
 lpe
 mov $0,$2
 div $0,3

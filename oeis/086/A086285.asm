@@ -1,22 +1,23 @@
 ; A086285: Numbers k such that 1 + 2k + 3k^2 is prime.
-; Submitted by Fardringle
+; Submitted by Josemi
 ; 2,12,14,18,24,26,32,38,44,56,62,68,90,92,98,114,120,126,128,144,150,158,164,168,170,176,180,186,192,200,210,212,216,230,246,254,260,266,276,278,282,290,300,318,332,344,354,362,366,378,396,398,408,420,432,434,450,452,456,474,476,480,482,486,494,500,510,516,518,524,528,542,548,572,584,588,594,606,618,626
 
-add $0,1
-mov $4,2
-mov $2,2
+add $0,2
+mov $4,4
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  mul $1,8
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,2
   sub $0,$1
+  add $2,4
+  add $2,$4
   add $2,$4
   sub $3,$0
+  add $4,10
 lpe
 mov $0,$4
-div $0,3
-mul $0,2
+sub $0,16
+div $0,6
 add $0,2

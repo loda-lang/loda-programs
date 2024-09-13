@@ -1,5 +1,5 @@
 ; A081933: a(1) = 1, a(n) is the smallest number coprime to n and beginning with a(n-1).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Skillz
 ; 1,11,110,1101,11011,110111,1101110,11011101,110111011,1101110111,11011101110,110111011103,1101110111030,11011101110301,110111011103011,1101110111030111,11011101110301110,110111011103011103
 
 mov $1,1
@@ -10,8 +10,7 @@ lpb $0
   lpb $3
     mov $4,$1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     add $1,1
     sub $3,$4
   lpe

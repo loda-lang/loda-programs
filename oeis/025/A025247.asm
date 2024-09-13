@@ -5,7 +5,7 @@
 pow $1,$0
 add $1,1
 mov $2,1
-cmp $2,$0
+equ $2,$0
 trn $0,1
 pow $7,$0
 lpb $0

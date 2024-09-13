@@ -1,18 +1,21 @@
 ; A060806: Denominators of special continued fraction for 2*zeta(3).
 ; Submitted by fzs600
 ; 2,4,3,2,4,6,5,4,6,8,7,6,8,10,9,8,10,12,11,10,12,14,13,12,14,16,15,14,16,18,17,16,18,20,19,18,20,22,21,20,22,24,23,22,24,26,25,24,26,28,27,26,28,30,29,28,30,32,31,30,32,34,33,32,34,36,35,34,36
-; Formula: a(n) = truncate(b(n)/2)+2, b(n) = -b(n-2)+b(n-1)+b(n-3)+2, b(2) = 3, b(1) = 4, b(0) = 0
+; Formula: a(n) = 3*gcd(binomial(n,2),2)+2*n-3*truncate((gcd(binomial(n,2),2)+n)/2)-1
 
-mov $1,-2
-mov $2,3
-lpb $0
-  sub $0,1
-  sub $3,$1
-  add $1,$3
-  add $1,$2
-  sub $2,$1
-  add $3,2
-lpe
-mov $0,$3
-div $0,2
-add $0,2
+mov $2,$0
+bin $2,2
+gcd $2,2
+mov $3,$0
+add $3,$2
+div $3,2
+sub $3,10
+sub $3,$2
+mul $3,3
+mov $1,$0
+mul $1,2
+mov $4,-8
+add $4,$1
+sub $4,$3
+mov $0,$4
+sub $0,23

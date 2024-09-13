@@ -1,18 +1,18 @@
 ; A085002: a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
-; Submitted by Stony666
+; Submitted by Skillz
 ; 1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1
 
+mov $3,1
 add $0,1
-mov $2,$0
-mul $2,2
 mov $1,$0
-pow $1,2
 lpb $1
-  sub $1,$2
-  add $2,1
-  sub $1,$2
+  div $1,2
+  add $3,$2
+  mul $3,2
+  mul $2,2
+  add $2,$3
 lpe
-add $2,$0
-div $2,2
+mul $2,$0
+div $2,$3
 mov $0,$2
 mod $0,2

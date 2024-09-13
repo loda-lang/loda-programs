@@ -1,5 +1,5 @@
 ; A068074: a(n) = Sum_{d|n} (-1)^d*2^omega(n/d) where omega(x) is the number of distinct prime factors in the factorization of x.
-; Submitted by Science United
+; Submitted by Drago75
 ; -1,-1,-3,1,-3,-3,-3,3,-5,-3,-3,3,-3,-3,-9,5,-3,-5,-3,3,-9,-3,-3,9,-5,-3,-7,3,-3,-9,-3,7,-9,-3,-9,5,-3,-3,-9,9,-3,-9,-3,3,-15,-3,-3,15,-5,-5,-9,3,-3,-7,-9,9,-9,-3,-3,9,-3,-3,-15,9,-9,-9,-3,3,-9,-9,-3,15,-3,-3,-15,3,-9,-9,-3,15
 
 mov $1,-1
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

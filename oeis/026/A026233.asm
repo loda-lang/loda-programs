@@ -4,7 +4,7 @@
 ; Formula: a(n) = max(A159081(n)-1,A066246(n)+1)
 
 mov $1,$0
-seq $0,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+seq $0,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
 add $0,1
 seq $1,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
 sub $1,1

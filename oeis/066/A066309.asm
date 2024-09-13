@@ -11,7 +11,7 @@ lpb $2
   seq $3,66308 ; a(n) = (sum of digits of n) * (product of digits of n).
   sub $3,$1
   max $3,0
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

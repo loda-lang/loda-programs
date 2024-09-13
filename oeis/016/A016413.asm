@@ -1,17 +1,16 @@
 ; A016413: 451st cyclotomic polynomial.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0,0,0,0,0,0,1,-1,0,1,-1,0
 
 add $0,3
 lpb $0
   sub $0,3
-  pow $3,2
-  mul $3,2
+  mul $3,4
   sub $0,$3
   sub $2,$0
   mod $2,41
   pow $2,$2
-  add $1,$2
   mov $3,2
+  add $1,$2
 lpe
 mov $0,$1

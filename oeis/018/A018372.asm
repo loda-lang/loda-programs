@@ -1,20 +1,23 @@
 ; A018372: Divisors of 282.
-; Submitted by pututu
+; Submitted by Science United
 ; 1,2,3,6,47,94,141,282
 
 mov $1,1
-mov $3,1
+mov $2,3
 lpb $0
-  sub $0,1
-  mul $2,7
-  add $1,$2
-  mul $2,4
-  add $2,$1
-  dif $2,2
-  add $2,$3
-  mov $1,$2
-  dif $2,6
-  mod $2,$1
-  mov $3,$1
+  add $1,1
+  mov $3,$0
+  sub $3,1
+  mod $3,2
+  mul $3,$1
+  div $0,2
+  mul $2,$1
+  dif $2,$3
+  add $1,$4
+  bin $1,2
+  mul $1,2
+  add $1,$4
+  add $4,4
 lpe
-mov $0,$1
+mov $0,$2
+div $0,3

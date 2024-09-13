@@ -1,12 +1,20 @@
 ; A007071: First row of 2-shuffle of spectral array W( sqrt 2 ).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,2,3,5,6,7,9,11,12,13,15,16,17,19,21,22,23,25,26,27,29,30,31,33,35,36,37,39,40,41,43,45,46,47,49,50,51,53,54,55,57,59,60,61,63,64,65,67,69,70,71,73,74,75,77,79,80,81,83,84,85,87,88,89,91,93,94,95,97,98,99,101
 
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,286667 ; Positions of 1 in A286665; complement of A286666.
+  mov $5,1
+  add $5,$1
+  mov $4,$5
+  pow $4,2
+  div $4,2
+  mov $6,$4
+  add $6,$5
+  nrt $6,2
+  add $5,$6
+  mov $3,$5
   mul $3,2
   sub $3,1
   add $0,1
