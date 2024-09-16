@@ -1,24 +1,23 @@
 ; A035487: Second column of Stolarsky array.
-; Submitted by Skillz
+; Submitted by Matthias Lehmkuhl
 ; 2,6,11,15,19,23,28,32,36,40,44,49,53,57,61,66,70,74,78,83,87,91,95,100,104,108,112,116,121,125,129,133,138,142,146,150,155,159,163,167,172,176,180,184,189,193,197,201
-; Formula: a(n) = e(n+1)-2, b(n) = truncate((-2*c(n-1)+b(n-1))/2), b(3) = -264, b(2) = -17, b(1) = -2, b(0) = 0, c(n) = 8*gcd(max(d(n-1)-2,0)+truncate((-2*c(n-1)+b(n-1))/2)-1,4)*c(n-1), c(3) = 2048, c(2) = 256, c(1) = 16, c(0) = 2, d(n) = truncate(gcd(max(d(n-1)-2,0)+truncate((-2*c(n-1)+b(n-1))/2)-1,4)/2), d(3) = 0, d(2) = 1, d(1) = 0, d(0) = 0, e(n) = d(n-1)+e(n-1)+4, e(3) = 13, e(2) = 8, e(1) = 4, e(0) = 0
 
-mov $2,2
-add $0,1
-lpb $0
-  sub $0,1
-  mul $2,2
-  sub $1,$2
-  div $1,2
-  add $4,$3
-  add $4,4
-  trn $3,2
-  sub $3,1
-  add $3,$1
-  gcd $3,4
-  mul $2,4
-  mul $2,$3
+mul $0,2
+mov $1,$0
+add $1,1
+mov $5,1
+mov $3,$1
+lpb $3
   div $3,2
+  add $5,$4
+  add $4,$5
 lpe
-mov $0,$4
-sub $0,2
+mul $4,$1
+div $4,$5
+mov $1,$4
+mul $1,2
+mov $2,$0
+add $2,$1
+mov $0,$2
+add $0,2
+div $0,2

@@ -9,9 +9,9 @@ lpb $2
   mov $1,$0
   mov $3,$2
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
-  cmp $1,$0
+  equ $1,$0
   mul $2,$1
   sub $2,1
 lpe

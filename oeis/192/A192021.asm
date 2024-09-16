@@ -1,16 +1,20 @@
 ; A192021: The Wiener index of the binomial tree of order n.
-; Submitted by WTBroughton
+; Submitted by Science United
 ; 0,1,10,68,392,2064,10272,49216,229504,1048832,4719104,20972544,92276736,402657280,1744838656,7516209152,32212287488,137439019008,584115683328,2473901424640,10445360988160,43980466159616,184717955563520,774056190148608
+; Formula: a(n) = truncate(c(n)/6), b(n) = 2*b(n-1)+1, b(1) = 1, b(0) = 0, c(n) = 6*binomial(2*b(n-1)+2,2*b(n-1))+4*c(n-1), c(1) = 6, c(0) = 0
 
-mov $1,$0
-mov $0,2
-pow $0,$1
-add $1,1
-lpb $1
-  add $2,$1
-  sub $2,1
-  mul $2,2
-  sub $1,1
+lpb $0
+  sub $0,1
+  mov $4,1
+  add $4,$1
+  mul $1,2
+  mov $3,$4
+  add $3,$4
+  bin $3,$1
+  mul $3,6
+  add $1,1
+  mul $2,4
+  add $2,$3
 lpe
-mul $0,$2
-div $0,8
+mov $0,$2
+div $0,6

@@ -5,5 +5,5 @@
 mov $1,$0
 seq $1,73184 ; Number of cubefree divisors of n.
 div $1,2
-cmp $1,2
+equ $1,2
 mov $0,$1

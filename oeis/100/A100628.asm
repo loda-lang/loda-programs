@@ -2,21 +2,23 @@
 ; Submitted by Science United
 ; 128,1024,65536,4194304,17179869184,1099511627776,4503599627370496,288230376151711744,1180591620717411303424,309485009821345068724781056,19807040628566084398385987584,5192296858534827628530496329220096
 
-add $0,1
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
+add $0,2
+mov $3,$0
+pow $3,4
+lpb $3
+  add $5,1
+  add $6,1
+  mov $4,$2
+  gcd $4,$6
+  div $4,$5
+  sub $0,$4
+  add $2,1
+  mul $2,2
+  sub $3,$0
 lpe
-mov $0,$3
+mov $0,$5
 add $0,1
-max $0,2
-mul $0,3
-mov $1,2
+mov $1,8
 pow $1,$0
 mov $0,$1
 mul $0,2

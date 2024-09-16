@@ -1,8 +1,27 @@
 ; A051429: (Terms in A029659)/2.
-; Submitted by [AF] Kalianthys
+; Submitted by Skillz
 ; 2,8,7,3,15,10,18,25,4,32,70,98,91,56,22,5,102,168,189,147,78,27,50,270,357,336,225,105,6,627,693,561,330,72,253,605,1320,1254,891,176,45,7,325,858,2574,2145,221,52,98,1183,4004,4719,2002,273,8,128,620,2100
-; Formula: a(n) = truncate(A110813(A268232(n))/2)
 
-seq $0,268232 ; Indices of 0's in A047999.
-seq $0,110813 ; A triangle of pyramidal numbers.
+mov $2,7261
+lpb $2
+  sub $2,56
+  add $2,$6
+  mov $3,$1
+  trn $3,1
+  seq $3,110813 ; A triangle of pyramidal numbers.
+  mov $5,$3
+  pow $1,$4
+  add $1,1
+  mul $3,338
+  gcd $3,4
+  add $3,1
+  equ $3,5
+  sub $0,$3
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mov $6,4
+  mul $2,$4
+lpe
+mov $0,$5
 div $0,2

@@ -1,13 +1,16 @@
 ; A373113: For n >= 1, a(n) = Sum_{i = n..(n + A000005(n) - 1)} i.
-; Submitted by Contact
+; Submitted by Science United
 ; 1,5,7,15,11,30,15,38,30,46,23,87,27,62,66,90,35,123,39,135,90,94,47,220,78,110,114,183,59,268,63,207,138,142,146,360,75,158,162,348,83,364,87,279,285,190,95,525,150,315,210,327,107,460,226,476,234,238,119,786,123
+; Formula: a(n) = truncate((A000005(n)*(2*n+A000005(n)+1))/2)
 
-mov $1,1
-add $1,$0
+mov $1,$0
+mul $1,2
+mov $2,$1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-lpb $0
-  sub $0,1
-  add $2,$1
-  add $1,1
-lpe
-mov $0,$2
+add $0,1
+mov $1,$0
+add $1,$2
+sub $0,1
+mul $1,$0
+mov $0,$1
+div $0,2

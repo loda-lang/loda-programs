@@ -16,13 +16,12 @@ lpb $3
   mov $6,$4
   sub $4,1
   seq $4,35199 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
-  cmp $4,0
-  cmp $4,0
+  neq $4,0
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   trn $3,1
 lpe

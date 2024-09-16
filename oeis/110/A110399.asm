@@ -1,25 +1,21 @@
 ; A110399: Expansion of (theta_3(q)*theta_3(q^7) - 1)/2 in powers of q.
-; Submitted by matszpk
+; Submitted by Skillz
 ; 1,0,0,1,0,0,1,2,1,0,2,0,0,0,0,3,0,0,0,0,0,0,2,0,1,0,0,1,2,0,0,4,0,0,0,1,2,0,0,0,0,0,2,2,0,0,0,0,1,0,0,0,2,0,0,2,0,0,0,0,0,0,1,5,0,0,2,0,0,0,2,2,0,0,0,0,2,0,2,0
 
 add $0,1
-mov $1,$0
-lpb $1
-  mov $4,$0
-  dif $4,$1
-  cmp $4,$0
-  cmp $4,0
-  mul $4,$1
+mov $3,$0
+lpb $0
+  mov $4,$3
+  dif $4,$0
+  neq $4,$3
+  mul $4,$0
   pow $4,3
-  sub $1,1
+  sub $0,1
   mul $2,-1
   add $2,$4
-  mov $3,16
 lpe
 add $2,1
-gcd $4,$2
-mul $4,$3
-mov $1,$4
-mod $1,14
+mov $0,$2
+mod $0,7
+gcd $1,$0
 mov $0,$1
-div $0,2

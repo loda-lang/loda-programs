@@ -8,10 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   dif $2,-2
-  add $2,1
   div $2,2
   max $2,0
-  sub $2,1
   mov $4,$2
   div $4,2
   add $1,$4

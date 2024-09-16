@@ -1,17 +1,11 @@
 ; A035072: a(n) is root of square starting with digit 5: first term of runs.
-; Submitted by Jamie Morken(w3)
+; Submitted by Luca
 ; 23,71,224,708,2237,7072,22361,70711,223607,707107,2236068,7071068,22360680,70710679,223606798,707106782,2236067978,7071067812,22360679775,70710678119,223606797750,707106781187,2236067977500
 
-mov $2,$0
-add $2,2
-mov $0,10
-pow $0,$2
-mul $0,5
-mov $1,$0
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
+add $0,3
+mov $1,10
+pow $1,$0
+mov $0,$1
+dif $0,2
+nrt $0,2
 add $0,1

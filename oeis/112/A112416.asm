@@ -5,7 +5,7 @@
 seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
 lpb $0
   mov $2,$0
-  cmp $2,3
+  equ $2,3
   div $0,2
   add $1,$2
 lpe

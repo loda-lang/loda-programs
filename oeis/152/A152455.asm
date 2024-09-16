@@ -5,7 +5,7 @@
 mov $2,$0
 seq $0,80737 ; a(1) = a(2) = 0; for n > 2, the least dimension of a lattice possessing a symmetry of order n.
 mov $1,$0
-cmp $1,0
+equ $1,0
 add $0,$1
 lpb $0
   mov $0,$2

@@ -1,24 +1,26 @@
 ; A171949: P-positions for game of Mark-4.
-; Submitted by Kotenok2000
+; Submitted by Skillz
 ; 0,4,8,12,20,24,28,36,40,44,52,56,60,64,68,72,76,84,88,92,100,104,108,116,120,124,128,132,136,140,148,152,156,164,168,172,180,184,188,192,196,200,204,212,216,220,228,232,236,244,248,252,260,264,268,276
 
-mov $1,2
-mov $2,$0
-add $2,7
-pow $2,2
-lpb $2
-  add $1,1
-  mov $3,$1
+mov $1,$0
+mov $4,2
+mov $5,$0
+add $5,7
+pow $5,2
+lpb $5
+  add $4,1
+  mov $3,$4
   seq $3,87810 ; First differences of A029931.
   add $3,1
   mod $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
-  sub $2,1
+  sub $1,$3
+  mov $2,$1
+  max $2,0
+  equ $2,$1
+  add $4,3
+  mul $5,$2
+  sub $5,1
 lpe
-mov $0,$1
-div $0,4
+mov $0,$4
+div $0,16
+mul $0,4

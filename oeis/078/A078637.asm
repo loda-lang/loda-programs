@@ -1,14 +1,24 @@
 ; A078637: a(n) = rad(n(n+1)(n+2)), where rad(m) is the largest squarefree number dividing m (see A007947).
-; Submitted by Science United
+; Submitted by Skillz
 ; 6,6,30,30,210,42,42,30,330,330,858,546,2730,210,510,102,1938,570,3990,2310,10626,1518,690,390,390,546,1218,6090,26970,930,2046,1122,39270,3570,7770,4218,54834,7410,15990,8610,74046,19866,14190,7590,32430,6486,1974,210,3570,6630,70278,4134,17490,2310,43890,23142,195054,51330,107970,56730,79422,1302,2730,4290,287430,75174,157182,82110,342930,14910,31098,16206,81030,21090,43890,114114,474474,30810,2370,1230
-; Formula: a(n) = A007947(6*binomial(-4,n)*(-4)^n-1)
 
-mov $2,-4
-bin $2,$0
-mov $1,-4
-pow $1,$0
-mul $1,$2
-mul $1,6
+mov $1,1
+mov $2,2
+add $0,2
+pow $0,2
+bin $0,2
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+  lpe
+  mul $1,$2
+lpe
+mul $1,$0
 mov $0,$1
-sub $0,1
-seq $0,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.

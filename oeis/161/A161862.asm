@@ -21,4 +21,3 @@ lpb $4
   trn $4,1
 lpe
 mov $0,$3
-mul $3,2

@@ -1,7 +1,23 @@
 ; A054123: Right Fibonacci row-sum array T(n,k), n >= 0, 0<=k<=n.
-; Submitted by owensse
+; Submitted by Skillz
 ; 1,1,1,1,1,1,1,2,1,1,1,3,2,1,1,1,4,4,2,1,1,1,5,7,4,2,1,1,1,6,11,8,4,2,1,1,1,7,16,15,8,4,2,1,1,1,8,22,26,16,8,4,2,1,1,1,9,29,42,31,16,8,4,2,1,1,1,10,37,64,57,32,16,8,4,2,1,1,1,11
-; Formula: a(n) = A054124(A061579(n))
 
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,54124 ; Left Fibonacci row-sum array, n >= 0, 0<=k<=n.
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+mov $2,$0
+mov $0,$1
+mov $1,$2
+add $1,1
+trn $0,$1
+lpb $1
+  sub $1,1
+  mov $4,$2
+  sub $4,$3
+  mov $5,$0
+  bin $5,$4
+  add $3,1
+  add $6,$5
+lpe
+mov $0,$6

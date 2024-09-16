@@ -13,7 +13,7 @@ div $0,3
 sub $0,15359
 sub $2,$0
 mov $3,$2
-cmp $3,0
+equ $3,0
 mov $1,$4
 mul $1,5
 add $2,$3

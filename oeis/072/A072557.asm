@@ -20,7 +20,7 @@ lpb $4
     div $5,2
     mod $5,2
   lpe
-  cmp $3,$0
+  equ $3,$0
   add $3,$5
   add $1,$3
 lpe

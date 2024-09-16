@@ -16,6 +16,6 @@ lpb $0
   mov $3,$4
   sub $4,$1
 lpe
-cmp $1,0
+equ $1,0
 gcd $4,$1
 mov $0,$4

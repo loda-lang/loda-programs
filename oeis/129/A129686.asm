@@ -1,10 +1,12 @@
 ; A129686: Triangle read by rows: row n is 0^(n-3), 1, 0, 1.
-; Submitted by Science United
+; Submitted by Mumps
 ; 1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1
-; Formula: a(n) = -2*truncate(A045623(A025581(n))/2)+A045623(A025581(n))
 
-seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
-seq $0,45623 ; Number of 1's in all compositions of n+1.
-mov $1,$0
-mod $1,2
-mov $0,$1
+mov $1,2
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+min $0,3
+add $0,1
+mod $0,2

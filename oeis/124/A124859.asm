@@ -1,5 +1,5 @@
 ; A124859: Multiplicative with p^e -> primorial(e), p prime and e > 0.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Skillz
 ; 1,2,2,6,2,4,2,30,6,4,2,12,2,4,4,210,2,12,2,12,4,4,2,60,6,4,30,12,2,8,2,2310,4,4,4,36,2,4,4,60,2,8,2,12,12,4,2,420,6,12,4,12,2,60,4,60,4,4,2,24,2,4,12,30030,4,8,2,12,4,8,2,180,2,4,12,12,4,8,2,420
 
 mov $1,1
@@ -12,8 +12,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe
@@ -25,11 +24,10 @@ lpb $0
     lpb $6
       mov $7,$4
       gcd $7,$6
-      cmp $7,1
+      equ $7,1
       sub $6,$7
     lpe
-    cmp $6,0
-    cmp $6,0
+    neq $6,0
     sub $5,$6
   lpe
   add $4,1

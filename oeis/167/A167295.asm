@@ -1,24 +1,15 @@
 ; A167295: Totally multiplicative sequence with a(p) = 3*(p-2) for prime p.
-; Submitted by Jarod
+; Submitted by Irish Republican
 ; 1,0,3,0,9,0,15,0,9,0,27,0,33,0,27,0,45,0,51,0,45,0,63,0,81,0,27,0,81,0,87,0,81,0,135,0,105,0,99,0,117,0,123,0,81,0,135,0,225,0,135,0,153,0,243,0,153,0,171,0,177,0,135,0,297,0,195,0,189,0,207,0,213,0,243,0,405,0,231,0
 
-mov $1,1
-mov $2,2
-add $0,1
+mov $2,4
 lpb $0
-  mov $3,$0
-  pow $3,2
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  sub $5,2
-  dif $0,$2
-  mul $1,3
-  mul $1,$5
+  mov $1,$0
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$1
+  sub $1,2
+  mul $2,$1
+  mul $2,3
 lpe
-mul $0,$1
+mov $0,$2
+div $0,4

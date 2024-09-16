@@ -1,16 +1,8 @@
 ; A094497: Triangular table A(n,j) = C(n,j) - C(n,j) mod n^3, difference of binomial coefficient and its residue mod n^3, read by rows.
-; Submitted by fzs600
+; Submitted by Penguin
 ; 1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = -2*truncate(A001177(A000045(n))/2)+A001177(A000045(n))
 
-mov $1,10
-mov $2,1
-max $2,$0
-lpb $2
-  div $2,3
-  bin $1,2
-  equ $3,7
-  add $3,$1
-  mul $1,$3
-lpe
-mov $0,$3
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,1177 ; Fibonacci entry points: a(n) = least k >= 1 such that n divides Fibonacci number F_k (=A000045(k)).
 mod $0,2

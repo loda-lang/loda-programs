@@ -8,7 +8,7 @@ pow $5,$0
 mov $3,$0
 lpb $3
   sub $3,1
-  cmp $1,1
+  equ $1,1
   add $1,$5
   add $2,$1
   mul $5,-1

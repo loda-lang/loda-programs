@@ -1,17 +1,17 @@
 ; A296354: Official position where binary expansion of n starts in the list of binary numbers in the binary Champernowne sequence A076478.
-; Submitted by Jon Maiga
+; Submitted by roundup
 ; 0,1,6,8,22,25,28,31,66,70,74,78,82,86,90,94,178,183,188,193,198,203,208,213,218,223,228,233,238,243,248,253,450,456,462,468,474,480,486,492,498,504,510,516,522,528,534,540,546,552,558,564,570,576,582,588,594,600,606,612,618,624,630,636,1090,1097,1104,1111,1118,1125,1132,1139,1146,1153,1160,1167,1174,1181,1188,1195
 
 mov $1,2
+mov $4,1
 mov $3,$0
-mul $3,4
 lpb $3
+  div $3,2
   add $4,$2
   add $4,$0
   mul $2,2
   add $2,$1
   mul $1,2
-  div $3,2
-  sub $3,1
 lpe
 mov $0,$4
+sub $0,1

@@ -1,7 +1,7 @@
 ; A040958: Continued fraction for sqrt(990).
-; Submitted by Jon Maiga
+; Submitted by Skillz
 ; 31,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2,62,2,6,2
-; Formula: a(n) = truncate((168*gcd(n,262156)+72*truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)+3)/5)-52*truncate((42*gcd(n,262156))/13)-84)/3)+2
+; Formula: a(n) = truncate((168*gcd(n,262156)+72*truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)+3)/5)-52*truncate((42*gcd(n,262156))/13))/3)-26
 
 gcd $0,262156
 mul $0,42
@@ -10,9 +10,7 @@ mov $1,$0
 add $1,3
 div $1,5
 mul $1,18
-add $0,4
 add $0,$1
 mul $0,4
-sub $0,100
 div $0,3
-add $0,2
+sub $0,26
