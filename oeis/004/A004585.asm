@@ -1,27 +1,14 @@
 ; A004585: Expansion of sqrt(10) in base 2.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,1,0,0,1,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,1,1,0,1,0,1,1,0,1,1,0,1,0,0,1,0,1,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,1
 
+mul $0,2
 mov $1,2
-mov $3,$0
-lpb $3
-  sub $3,1
-  add $1,$6
-  add $1,$2
-  add $2,$1
-  mov $4,2
-  mov $5,$1
-  mul $1,2
-  add $1,$5
-  add $5,$2
-  sub $2,1
-  mul $6,2
-  add $6,$5
-lpe
-pow $4,$0
-add $2,1
-div $2,$4
-add $2,1
-div $1,$2
+pow $1,$0
 mov $0,$1
+mul $0,7
+sub $0,$1
+div $0,4
+add $0,$1
+nrt $0,2
 mod $0,2

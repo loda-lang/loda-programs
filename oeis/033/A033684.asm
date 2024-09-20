@@ -1,21 +1,14 @@
 ; A033684: 1 iff n is a square not divisible by 3.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by ChelseaOilman
 ; 0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -A000005(max(n-1,0))*(3*n+floor(n/3)-3)-2*truncate((-A000005(max(n-1,0))*(3*n+floor(n/3)-3)-2*truncate((-A000005(max(n-1,0))*(3*n+floor(n/3)-3)+A000005(max(n-1,0)))/2)+A000005(max(n-1,0))+2)/2)-2*truncate((-A000005(max(n-1,0))*(3*n+floor(n/3)-3)+A000005(max(n-1,0)))/2)+A000005(max(n-1,0))+2
 
-mov $1,$0
-sub $1,1
+mov $3,$0
+nrt $0,2
 mov $2,$0
-sub $2,1
-div $0,3
-add $0,$1
-add $2,$1
-add $2,$0
-max $1,0
-seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+lpb $0
+  mul $0,$2
+  dif $0,9
+  sub $0,$3
+  add $1,1
+lpe
 mov $0,$1
-mul $1,$2
-sub $0,$1
-mod $0,2
-add $0,2
-mod $0,2

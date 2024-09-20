@@ -1,15 +1,10 @@
 ; A038529: n-th prime - n-th composite.
-; Submitted by Simon Strandgaard
+; Submitted by Mumps
 ; -2,-3,-3,-2,1,1,3,4,7,11,11,16,19,19,22,27,32,33,37,39,40,45,48,53,59,62,63,65,65,68,81,83,88,89,98,99,103,108,111,116,121,121,129,130,133,134,145,155,158,159,161,165,166,175,180,185,189,190,195,197,198,207,220,223,223,226,239,244,253,254,257,261,268,273,277,279,284,291,293,299
-; Formula: a(n) = -A122825(-truncate((-2*n-2)/(n+1))+n+1)+A000040(n)+1
+; Formula: a(n) = -A141468(n+2)+A000040(n)
 
 mov $1,$0
-add $1,1
-mov $2,$1
-mul $2,-2
-div $2,$1
-sub $1,$2
-seq $1,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-sub $1,1
+add $1,2
+seq $1,141468 ; Zero together with the nonprime numbers A018252.
 seq $0,40 ; The prime numbers.
 sub $0,$1

@@ -1,22 +1,25 @@
 ; A288997: Fixed point of the mapping 00->0010, 01->001, 10->001, starting with 00.
-; Submitted by TankbusterGames
+; Submitted by Mumps
 ; 0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0
-; Formula: a(n) = -2*truncate((-2*truncate((-3*truncate(A286927(n+3)/4)+truncate(A286927(n+4)/4)-2)/2)-3*truncate(A286927(n+3)/4)+truncate(A286927(n+4)/4))/2)-2*truncate((-3*truncate(A286927(n+3)/4)+truncate(A286927(n+4)/4)-2)/2)-3*truncate(A286927(n+3)/4)+truncate(A286927(n+4)/4)
 
-mov $1,$0
-add $1,4
-seq $1,286927 ; Positions of 1 in A286925; complement of A286926.
-div $1,4
-sub $1,1
-add $0,3
-seq $0,286927 ; Positions of 1 in A286925; complement of A286926.
-div $0,4
-sub $2,$0
-sub $2,$0
-sub $2,$0
-add $2,$1
-mov $0,$2
-sub $0,1
-mod $0,2
-add $0,2
-mod $0,2
+add $0,4
+mov $2,$0
+pow $2,2
+mul $2,2
+mov $5,$2
+nrt $5,2
+mov $4,$0
+add $4,1
+pow $4,2
+mul $4,2
+mov $3,$4
+nrt $3,2
+mov $2,$5
+mul $2,$3
+mov $4,$3
+add $4,$2
+add $4,1
+mod $4,2
+mov $1,$4
+equ $1,0
+mov $0,$1

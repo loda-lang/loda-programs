@@ -1,11 +1,7 @@
 ; A139329: a(n) = (factorial of the number of 0's in the binary expansion of n).
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 1,1,1,1,2,1,1,1,6,2,2,1,2,1,1,1,24,6,6,2,6,2,2,1,6,2,2,1,2,1,1,1,120,24,24,6,24,6,6,2,24,6,6,2,6,2,2,1,24,6,6,2,6,2,2,1,6,2,2,1,2,1,1,1,720,120,120,24,120,24,24,6,120,24,24,6,24,6,6,2
+; Formula: a(n) = A000142(A080791(n))
 
-mov $1,1
-seq $0,23416 ; Number of 0's in binary expansion of n.
-lpb $0
-  mul $1,$0
-  sub $0,1
-lpe
-mov $0,$1
+seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).

@@ -1,5 +1,5 @@
 ; A147848: Number (up to isomorphism) of groups of order 2n that have Z/nZ as a subgroup (that is, that have an element of order n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by gemini8
 ; 1,2,2,4,2,4,2,6,2,4,2,8,2,4,4,6,2,4,2,8,4,4,2,12,2,4,2,8,2,8,2,6,4,4,4,8,2,4,4,12,2,8,2,8,4,4,2,12,2,4,4,8,2,4,4,12,4,4,2,16,2,4,4,6,4,8,2,8,4,8,2,12,2,4,4,8,4,8,2,12
 
 mov $2,2
@@ -10,8 +10,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

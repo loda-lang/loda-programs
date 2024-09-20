@@ -1,20 +1,14 @@
 ; A004555: Expansion of sqrt(5) in base 2.
-; Submitted by damotbe
+; Submitted by Schildkroete
 ; 1,0,0,0,1,1,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,1,1,0,0,1,1,1,0,0,1,1,1,0
 
-mov $2,$0
-mov $0,2
-pow $0,$2
-mov $1,$0
-pow $1,2
-mul $1,5
-pow $0,2
-add $0,1
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
-div $0,2
+mul $0,2
+mov $1,2
+pow $1,$0
+mov $0,$1
+mul $1,2
+mul $0,7
+sub $0,$1
+div $0,4
+nrt $0,2
 mod $0,2

@@ -1,17 +1,14 @@
 ; A230402: Integer areas of orthic triangles of integer-sided triangles.
-; Submitted by Christian Krause
+; Submitted by entity
 ; 1512,2688,6048,10752,13608,24192,37800,43008,54432,67200,74088,96768,122472,131712,151200,172032,182952,217728,255528,268800,296352,325248,340200,387072,436968,454272,489888,526848,545832,604800,666792,688128,731808,776832
-; Formula: a(n) = 168*(floor(((2*floor((2*n+3)/((2*n+3)%4))+1)*((2*n+3)%4))/2)-1)^2
+; Formula: a(n) = 168*((truncate((2*n)/(gcd(n,2)+1))+1)*(gcd(n,2)+1))^2
 
-mul $0,2
-add $0,3
 mov $1,$0
-mod $0,4
-div $1,$0
-mul $1,2
+gcd $1,2
 add $1,1
+mul $0,2
+div $0,$1
+add $0,1
 mul $0,$1
-div $0,2
-sub $0,1
 pow $0,2
 mul $0,168

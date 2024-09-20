@@ -9,7 +9,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,83475 ; Consider the set of all the numbers n*k where 1 <= k <= n. Then a(n) = number of palindromic members of this set.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

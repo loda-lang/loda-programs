@@ -1,8 +1,10 @@
 ; A035340: 6th column of Wythoff array.
-; Submitted by Simon Strandgaard
+; Submitted by Skillz
 ; 13,47,68,102,136,157,191,212,246,280,301,335,369,390,424,445,479,513,534,568,589,623,657,678,712,746,767,801,822,856,890,911,945,979,1000,1034,1055,1089,1123,1144,1178,1199,1233,1267,1288,1322,1356,1377,1411,1432,1466,1500,1521,1555,1576,1610,1644,1665,1699,1733,1754,1788,1809,1843,1877,1898,1932,1966,1987,2021,2042,2076,2110,2131,2165,2186,2220,2254,2275,2309
-; Formula: a(n) = A134864(truncate(A075317(n)/2))
 
-seq $0,75317 ; Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the first member of pairs.
-div $0,2
-seq $0,134864 ; Wythoff BBB numbers.
+mov $1,7
+lpb $1
+  sub $1,1
+  seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+lpe
+sub $0,40

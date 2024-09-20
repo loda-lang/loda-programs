@@ -1,19 +1,17 @@
 ; A159917: Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 01, starting from a(0) = 0.
-; Submitted by Science United
+; Submitted by Lazarus-uk
 ; 0,1,2,0,1,0,1,2,0,1,2,0,1,0,1,2,0,1,0,1,2,0,1,2,0,1,0,1,2,0,1,2,0,1,0,1,2,0,1,0,1,2,0,1,2,0,1,0,1,2,0,1,0,1,2,0,1,2,0,1,0,1,2,0,1,2,0,1,0,1,2,0,1,0,1,2,0,1,2,0
 
 lpb $0
   sub $0,1
-  add $1,2
-  mov $2,$1
-  mul $2,3
-  mov $3,$1
-  bxo $3,$2
-  mov $2,$3
-  div $2,2
+  add $2,1
+  mov $1,$2
+  mul $1,2
   add $1,$2
-  div $1,2
+  bor $1,$2
+  sub $1,$2
+  mov $2,$1
+  div $2,2
 lpe
-mov $0,$1
-div $0,2
+mov $0,$2
 mod $0,4

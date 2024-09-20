@@ -1,16 +1,18 @@
 ; A295897: Numbers in whose binary expansion there are no 1-runs of odd length followed by a 0 to their right.
-; Submitted by Jamie Morken(w1)
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,1,3,6,7,12,13,15,24,25,27,30,31,48,49,51,54,55,60,61,63,96,97,99,102,103,108,109,111,120,121,123,126,127,192,193,195,198,199,204,205,207,216,217,219,222,223,240,241,243,246,247,252,253,255,384,385,387,390,391,396,397,399,408,409,411,414,415,432,433,435,438,439,444,445,447,480,481,483,486
-; Formula: a(n) = truncate((3*b(n))/2), b(n) = truncate((b(n-1)+A184617(b(n-1)+1)+1)/2), b(0) = 0
 
 lpb $0
   sub $0,1
-  add $1,1
-  mov $2,$1
-  seq $2,184617 ; With nonadjacent forms: A184615(n) + A184616(n).
+  add $2,1
+  mov $1,$2
+  mul $1,2
   add $1,$2
-  div $1,2
+  bor $1,$2
+  sub $1,$2
+  mov $2,$1
+  div $2,2
 lpe
-mov $0,$1
+mov $0,$2
 mul $0,3
 div $0,2

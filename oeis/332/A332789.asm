@@ -1,5 +1,5 @@
 ; A332789: First differences of the iterated Beatty sequence A007069.
-; Submitted by fzs600
+; Submitted by Skillz
 ; 1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,2,2,2,1,3,1,3,2,1,3,1,3,2,2,2,1,3,1,3,2
 
 mov $4,$0
@@ -11,6 +11,7 @@ lpb $3
   add $0,1
   pow $0,2
   mul $0,2
+  add $2,$5
   mov $7,$0
   nrt $7,2
   mov $0,$7
@@ -18,14 +19,10 @@ lpb $3
   mul $0,2
   mov $6,$0
   nrt $6,2
-  mov $2,$3
-  mul $2,$6
-  mov $0,$6
-  sub $0,2
   add $1,2
   add $1,$2
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1
-sub $0,6
+sub $0,4

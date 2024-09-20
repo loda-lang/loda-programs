@@ -1,9 +1,15 @@
 ; A109394: A000934(A000934(n)).
-; Submitted by Pheidologeton
+; Submitted by Ralfy
 ; 10,12,13,13,14,15,15,15,16,16,16,16,16,17,17,17,17,17,18,18,18,18,18,19,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21,21,21,21,21,22,22,22,22,22,22
 
 mov $1,2
 lpb $1
   sub $1,1
-  seq $0,934 ; Chromatic number (or Heawood number) Chi(n) of surface of genus n.
+  mul $0,8
+  add $0,1
+  mul $0,6
+  nrt $0,2
+  add $0,3
+  div $0,2
+  add $0,2
 lpe

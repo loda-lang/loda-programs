@@ -11,12 +11,12 @@ lpb $2
   seq $3,96500 ; Let f(n) = smallest prime > n; a(n) = f(n+1) - f(n).
   dif $3,2
   dif $3,2
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,30
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

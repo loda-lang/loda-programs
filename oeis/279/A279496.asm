@@ -16,7 +16,7 @@ lpb $4
   mov $5,$0
   seq $5,64866 ; Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
   mov $0,$5
-  cmp $0,1
+  equ $0,1
   mul $1,$0
   add $3,$1
 lpe

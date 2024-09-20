@@ -1,21 +1,9 @@
 ; A117945: Triangle related to powers of 3 partitions of n.
-; Submitted by Christian Krause
+; Submitted by Mumps
 ; 1,0,1,-1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,-1,0,1,-1,0,0,0,0,0,1,0,-1,0,0,0,0,0,1,1,0,-1,0,0,0,-1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-1,0,1,0,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-  mov $2,$1
-lpe
-bin $1,$0
-sub $2,$0
-mov $0,$2
-dif $2,2
-bin $0,$2
-add $2,1
-div $0,$2
-mul $1,$0
-mul $2,$1
-mov $0,$2
-mod $0,3
-dif $0,-2
+mov $1,$0
+seq $1,109187 ; Triangle read by rows: T(n,k) is number of Grand Motzkin paths of length n having k (1,0)-steps.
+mod $1,3
+dif $1,-2
+mov $0,$1

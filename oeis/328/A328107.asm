@@ -1,10 +1,23 @@
 ; A328107: Binary weight of A327973.
-; Submitted by atannir
+; Submitted by Penguin
 ; 2,4,5,6,7,8,9,13,11,13,13,14,17,18,19,23,20,23,24,27,26,24,23,30,31,29,29,31,36,35,36,37,35,34,35,42,40,46,41,50,54,48,52,47,47,53,47,51,51,54,48,51,60,55,56,64,61,60,59,68,71,67,65,78,64,63,68,72,70,74,79,89,85,77,85,76,79,83,78,90
 
-seq $0,327973 ; Bitwise XOR of two successive generations (centrally aligned) in the trajectory of rule 30 started from a lone 1 cell: a(n) = A110240(n) XOR 2*A110240(n-1).
-mov $1,$0
+mov $1,1
+mov $2,2
+add $0,2
 lpb $0
-  div $1,2
-  sub $0,$1
+  sub $0,1
+  mov $3,$1
+  mul $1,2
+  bxo $3,$1
+  mov $1,$3
+  mul $1,2
+  sub $3,$2
+  add $2,$3
+  bxo $2,$3
+  bxo $2,$1
+  mov $1,$2
 lpe
+sub $1,$3
+dis $1,2
+mov $0,$1

@@ -5,5 +5,4 @@
 lpb $0
   dif $0,2
 lpe
-cmp $0,1
-cmp $0,0
+neq $0,1

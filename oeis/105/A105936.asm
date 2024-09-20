@@ -18,12 +18,12 @@ lpb $3
   div $4,2
   mov $6,$4
   seq $4,38548 ; Number of divisors of n that are at most sqrt(n).
-  cmp $4,2
+  equ $4,2
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
 lpe
 mov $1,$6

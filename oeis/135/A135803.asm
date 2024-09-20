@@ -9,7 +9,7 @@ mov $2,1
 add $2,$0
 mov $4,$0
 lpb $4
-  cmp $5,0
+  equ $5,0
   add $6,$5
   mul $2,$4
   div $2,$6

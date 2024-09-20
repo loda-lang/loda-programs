@@ -1,9 +1,9 @@
 ; A113459: Least number that begins an arithmetic progression of n numbers with the same prime signature.
-; Submitted by Odd-Rod
+; Submitted by Ralfy
 ; 1,2,3,5,5,7,7,11,11,11,11,13
 
 mov $1,$0
-mov $2,$0
+mov $2,3
 lpb $2
   sub $2,1
   mov $3,$1

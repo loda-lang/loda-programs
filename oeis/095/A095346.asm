@@ -1,32 +1,25 @@
 ; A095346: a(n) is the length of the n-th run of A095345.
-; Submitted by Jon Maiga
+; Submitted by den777
 ; 3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1,3,1,3,1,1,1,3,1,1,1,3,1,3,1,1,1
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
+mov $2,2
+add $0,1
+lpb $0
   sub $0,1
-  mov $6,$0
-  div $0,2
-  mov $5,$0
-  add $5,1
-  div $5,7
-  sub $5,1
-  mul $0,2
-  sub $0,$5
-  div $0,3
-  add $0,2
-  add $0,$6
-  mov $2,$3
-  mul $2,$0
-  add $4,$2
+  sub $1,$2
+  add $1,1
+  div $1,4
+  mul $1,2
+  bin $3,$2
+  add $3,$1
+  gcd $3,4
+  mov $4,$3
+  mul $2,$3
+  div $3,2
+  dif $1,$3
+  mul $3,-1
 lpe
-min $1,1
-mul $1,$0
+max $4,3
 mov $0,$4
-sub $0,$1
 mul $0,2
-sub $0,1
+sub $0,5

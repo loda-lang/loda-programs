@@ -7,10 +7,10 @@ mov $2,$0
 lpb $2
   mov $3,$1
   seq $3,55957 ; n - reversal of base 8 digits of n (written in base 10).
-  cmp $3,0
+  equ $3,0
   mov $4,$0
   add $4,$3
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

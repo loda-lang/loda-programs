@@ -1,15 +1,14 @@
 ; A100583: Number of triangles in an n X n grid of squares with diagonals.
+; Submitted by Science United
 ; 0,8,44,124,268,492,816,1256,1832,2560,3460,4548,5844,7364,9128,11152,13456,16056,18972,22220,25820,29788,34144,38904,44088,49712,55796,62356,69412,76980,85080,93728,102944,112744,123148,134172,145836
-; Formula: a(n) = 3*n^3+floor(((3*n)^2)/2)+n
+; Formula: a(n) = floor((3*n*(3*n*(2*n+3)+1)+3*n)/6)
 
-mov $1,$0
-mul $0,3
-pow $0,2
-div $0,2
-mov $3,$1
-mul $3,$1
-mul $3,$1
-mov $2,$3
-mul $2,3
+mov $1,3
+mul $1,$0
+mul $0,2
+add $0,3
+mul $0,$1
+add $0,1
+mul $0,$1
 add $0,$1
-add $0,$2
+div $0,6

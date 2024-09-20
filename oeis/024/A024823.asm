@@ -16,8 +16,7 @@ lpb $2
   div $4,2
   mul $4,2
   trn $1,$4
-  cmp $1,0
-  cmp $1,0
+  neq $1,0
   sub $2,$1
   add $3,1
 lpe
