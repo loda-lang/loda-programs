@@ -8,12 +8,28 @@ pow $2,2
 lpb $2
   mov $6,$1
   mul $6,3
-  add $6,2
-  seq $6,286927 ; Positions of 1 in A286925; complement of A286926.
-  div $6,4
+  add $6,3
+  mov $7,0
+  max $7,$6
+  mul $7,2
+  pow $6,2
+  mul $6,8
+  nrt $6,2
+  div $6,2
+  add $6,$7
+  div $6,2
   sub $6,1
   mov $3,$1
-  seq $3,286927 ; Positions of 1 in A286925; complement of A286926.
+  add $3,1
+  mov $8,0
+  max $8,$3
+  mul $8,2
+  pow $3,2
+  mul $3,8
+  nrt $3,2
+  div $3,2
+  add $3,$8
+  mul $3,2
   add $3,2
   div $3,4
   mov $5,1
@@ -23,12 +39,12 @@ lpb $2
   add $5,$6
   mov $3,$5
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -13,7 +13,7 @@ lpb $3
   mov $1,$6
   add $1,$2
   mul $1,10
-  cmp $6,$2
+  equ $6,$2
   add $2,$1
   add $5,$2
   add $7,$1

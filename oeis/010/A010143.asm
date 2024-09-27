@@ -1,21 +1,20 @@
 ; A010143: Continued fraction for sqrt(58).
-; Submitted by Aexoden
+; Submitted by Science United
 ; 7,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1
-; Formula: a(n) = truncate((25*truncate((42*gcd(floor((4*n+10)/7)-1,262156)-13*truncate((42*gcd(floor((4*n+10)/7)-1,262156))/13)+3)/5)+truncate((42*gcd(floor((4*n+10)/7)-1,262156)-13*truncate((42*gcd(floor((4*n+10)/7)-1,262156))/13)+3)/3)-26)/4)+1
 
-mul $0,4
-add $0,10
-div $0,7
-sub $0,1
-gcd $0,262156
-mul $0,42
-mod $0,13
-add $0,3
-mov $1,$0
-div $1,5
-mul $1,25
-div $0,3
-sub $0,26
-add $0,$1
-div $0,4
-add $0,1
+mov $2,1
+max $2,$0
+mov $3,14
+add $0,14
+lpb $0
+  add $1,4
+  mul $1,$0
+  gcd $2,$0
+  trn $2,6
+  lpb $0
+    mul $0,$2
+    gcd $3,$1
+  lpe
+  div $3,2
+lpe
+mov $0,$3

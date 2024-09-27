@@ -1,28 +1,24 @@
 ; A018686: Divisors of 856.
-; Submitted by [AF>Amis de la Mer] ComteZera
+; Submitted by Science United
 ; 1,2,4,8,107,214,428,856
+; Formula: a(n) = d(n)+1, b(n) = b(n-1)+c(n-1)+2, b(4) = 212, b(3) = 105, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = max(-2*b(n-2)-12*c(n-1)+b(n-1)+e(n-1)+119,b(n-1)+c(n-1)+2), c(4) = 212, c(3) = 105, c(2) = 97, c(1) = 2, c(0) = 0, d(n) = b(n-1)+1, d(4) = 106, d(3) = 7, d(2) = 3, d(1) = 1, d(0) = 0, e(n) = b(n-1)+e(n-1), e(4) = 113, e(3) = 8, e(2) = 2, e(1) = 0, e(0) = 0
 
-mov $1,1
 lpb $0
   sub $0,1
-  sub $1,1
-  mov $2,$1
-  add $3,1
-  mov $1,$3
-  seq $1,10163 ; Continued fraction for sqrt(92).
-  mov $4,$1
   mul $4,2
-  div $1,4
-  mul $1,21
-  add $1,$4
-  dif $1,2
-  div $1,2
-  cmp $4,2
-  add $1,$4
-  add $1,1
-  mul $1,$2
-  add $1,6
+  sub $3,$2
+  mul $3,12
+  sub $3,$4
+  add $2,2
+  mov $4,$1
+  add $4,1
+  add $5,$4
+  add $1,$2
+  mov $2,$3
+  add $2,$5
+  max $2,$1
+  mov $3,10
+  sub $5,1
 lpe
-mov $0,$1
-div $0,5
+mov $0,$4
 add $0,1

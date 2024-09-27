@@ -14,7 +14,7 @@ lpb $0
   lpb $2
     mov $4,$2
     seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-    cmp $4,0
+    equ $4,0
     sub $2,$4
   lpe
   add $1,1

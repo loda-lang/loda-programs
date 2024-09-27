@@ -1,33 +1,23 @@
 ; A335031: Complement of A334919.
-; Submitted by Kotenok2000
+; Submitted by nebula
 ; 1,2,3,4,6,7,10,11,12,14,15,19,20,22,24,26,27,31,32,34,35,36,39,42,46,47,50,52,54,55,59,60,64,66,67,70,71,74,75,76,80,87,90,91,92,94,99,102,104,110,111,112,115,116,119,122,124,126,127,131,132,136
 
+mov $1,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  dif $3,2
-  mov $5,0
-  mov $6,$3
-  lpb $3
-    mov $7,$6
-    dif $7,$3
-    cmp $7,$6
-    cmp $7,0
-    sub $3,2
-    add $5,$7
-  lpe
-  mov $3,$5
-  cmp $3,1
-  sub $0,$3
-  add $1,3
+  mul $3,3
+  seq $3,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
+  div $3,4
+  min $3,1
+  sub $0,1
+  add $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-div $0,3

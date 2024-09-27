@@ -1,18 +1,14 @@
 ; A067472: Smallest n-digit square starting with 2.
-; Submitted by Christian Krause
+; Submitted by arkiss
 ; 25,225,2025,20164,200704,2002225,20007729,200024449,2000057284,20000182084,200000361796,2000001237796,20000000402496,200000010642496,2000000040249600,20000000215721449,200000000447251216
 
-add $0,1
-mov $2,$0
-mov $0,10
-pow $0,$2
 mov $1,$0
+add $1,1
+mov $2,10
+pow $2,$1
+mov $1,$2
 mul $1,2
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
-add $0,1
-pow $0,2
+nrt $1,2
+add $1,1
+pow $1,2
+mov $0,$1

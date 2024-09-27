@@ -7,4 +7,4 @@ lpb $0
   sub $0,$1
   gcd $2,$0
 lpe
-cmp $0,$2
+equ $0,$2

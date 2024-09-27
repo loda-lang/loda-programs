@@ -11,7 +11,7 @@ lpb $0
   trn $1,$3
   add $2,$3
   add $3,$1
-  cmp $3,2
+  equ $3,2
 lpe
 add $2,$1
 mov $0,$2

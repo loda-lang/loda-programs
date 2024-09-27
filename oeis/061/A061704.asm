@@ -10,8 +10,7 @@ lpb $0
   pow $0,3
   mov $3,$2
   dif $3,$0
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mov $0,$4
   add $1,$3
   sub $4,1

@@ -1,41 +1,23 @@
 ; A051434: (Terms in A029607)/2.
-; Submitted by Kotenok2000
+; Submitted by fix
 ; 4,12,13,7,25,20,24,45,10,40,98,154,161,112,50,13,138,252,315,273,162,63,60,390,567,588,435,225,16,957,1155,1023,660,84,319,825,2112,2178,1683,396,111,19,403,1144,4290,3861,507,130,112,1547,6006,8151,4004
 
-mov $2,$0
-add $2,6
-pow $2,3
+mov $2,7260
+sub $2,$0
 lpb $2
-  sub $2,16
-  mov $6,0
-  mov $7,0
+  sub $2,58
   mov $3,$1
-  lpb $3
-    add $7,1
-    sub $3,$7
-    add $6,1
-  lpe
-  add $6,2
-  sub $7,$3
-  mov $3,$7
-  mov $7,$6
-  bin $6,$3
-  add $3,1
-  bin $7,$3
-  add $6,$7
-  add $7,$6
-  add $7,$6
-  mov $3,$7
+  seq $3,29602 ; Numbers in the (2,3)-Pascal triangle A029600 that are different from 2.
+  mov $5,$3
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
-  mov $5,$7
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

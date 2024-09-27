@@ -1,5 +1,5 @@
 ; A036326: Composite numbers n such that juxtaposition of prime factors of n has length 2.
-; Submitted by entity
+; Submitted by Science United
 ; 4,6,9,10,14,15,21,25,35,49
 
 mov $2,$0
@@ -7,6 +7,7 @@ add $2,6
 pow $2,3
 div $2,2
 lpb $2
+  sub $2,1
   mov $3,$1
   seq $3,54576 ; Largest proper factor of the largest proper factor of n.
   equ $3,7

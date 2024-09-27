@@ -16,8 +16,8 @@ lpb $0
     mov $7,$4
     trn $7,1
     seq $7,228483 ; a(n) = 2 - mu(n), where mu(n) is the Moebius function (A008683).
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$5
     mov $10,$0

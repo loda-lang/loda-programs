@@ -1,19 +1,7 @@
 ; A079559: Number of partitions of n into distinct parts of the form 2^j-1, j=1,2,....
-; Submitted by pututu
+; Submitted by marcstone
 ; 1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1
-; Formula: a(n) = truncate(d(n+2)/2), b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = 0, b(1) = 0, b(0) = 0, c(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),4)*c(n-1), c(2) = 4, c(1) = 1, c(0) = 1, d(n) = truncate(gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),4)/2), d(2) = 2, d(1) = 0, d(0) = 1
+; Formula: a(n) = -2*truncate(A182105(n)/2)+A182105(n)
 
-mov $2,1
-mov $3,1
-add $0,2
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  gcd $3,4
-  mul $2,$3
-  div $3,2
-lpe
-mov $0,$3
-div $0,2
+seq $0,182105 ; Number of elements merged by bottom-up merge sort.
+mod $0,2

@@ -1,16 +1,13 @@
 ; A101904: Number of leg-hypotenuse twin Pythagorean triples < 10^n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Mumps
 ; 1,6,21,70,223,706,2235,7070,22360,70710,223606,707106,2236067,7071067,22360679,70710677,223606797,707106780,2236067976,7071067811,22360679774,70710678118,223606797749,707106781186,2236067977499
 
-mov $2,$0
-mov $0,10
-pow $0,$2
-mul $0,5
-mov $1,$0
-lpb $0
-  add $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
+add $0,1
+mov $1,10
+pow $1,$0
+mov $0,$1
+mul $0,2
+nrt $0,2
+add $0,1
+div $0,2
 sub $0,1

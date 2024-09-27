@@ -7,11 +7,8 @@ mul $0,2
 mov $1,10
 pow $1,$0
 mov $0,$1
-dif $0,2
+div $0,2
 nrt $0,2
-sub $2,$0
-mov $0,$2
-sub $0,1
-mod $0,10
-add $0,10
+mul $0,9
+add $0,9
 mod $0,10

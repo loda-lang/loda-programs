@@ -1,14 +1,20 @@
 ; A065896: Number of composites <= 2*n.
-; Submitted by Science United
+; Submitted by Coleslaw
 ; 0,1,2,3,5,6,7,9,10,11,13,14,16,18,19,20,22,24,25,27,28,29,31,32,34,36,37,39,41,42,43,45,47,48,50,51,52,54,56,57,59,60,62,64,65,67,69,71,72,74,75,76,78,79,80,82,83,85,87,89,91,93,95,96,98,99,101,103,104,105,107,109,111,113,114,115,117,119,120,122
 
+mov $1,1
+mov $2,1
+add $0,1
 lpb $0
-  mov $2,$0
-  mul $2,2
-  seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  cmp $2,0
+  add $3,2
+  lpb $3
+    mov $4,$1
+    gcd $4,$2
+    equ $4,1
+    mul $1,$2
+    sub $3,$4
+  lpe
+  add $2,2
   sub $0,1
-  add $1,1
-  add $1,$2
 lpe
-mov $0,$1
+mov $0,$3

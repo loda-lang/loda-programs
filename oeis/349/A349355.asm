@@ -1,5 +1,5 @@
 ; A349355: Dirichlet convolution of A003958 with A063441 (Dirichlet inverse of A003959), where A003958 and A003959 are fully multiplicative with a(p) = p-1 and p+1 respectively.
-; Submitted by Simon Strandgaard
+; Submitted by Coleslaw
 ; 1,-2,-2,-2,-2,4,-2,-2,-4,4,-2,4,-2,4,4,-2,-2,8,-2,4,4,4,-2,4,-8,4,-8,4,-2,-8,-2,-2,4,4,4,8,-2,4,4,4,-2,-8,-2,4,8,4,-2,4,-12,16,4,4,-2,16,4,4,4,4,-2,-8,-2,4,8,-2,4,-8,-2,4,4,-8,-2,8,-2,4,16,4,4,-8,-2,4
 
 mov $1,1
@@ -10,8 +10,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

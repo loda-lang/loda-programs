@@ -1,21 +1,12 @@
 ; A112609: Number of representations of n as a sum of three times a triangular number and four times a triangular number.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 1,0,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,0,0,1,0,0,2,0,0,1,1,0,0,0,0,0,1,0,2,1,0,1,0,0,0,2,0,0,0,0,1,0,0,1,1,0,1,0,0,2,0,0,0,1,0,2,1,0,0,0,0,1,0,0,1,0
+; Formula: a(n) = truncate(A033762(A025480(8*n)+3)/2)
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $6,0
-  mov $2,$0
-  mul $2,3
-  lpb $2
-    sub $6,9
-    add $2,$6
-  lpe
-  add $4,4
-  bin $5,$2
-  add $1,$5
-  mov $3,$4
-lpe
+mov $1,$0
+mul $1,8
 mov $0,$1
+seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+add $0,3
+seq $0,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
+div $0,2

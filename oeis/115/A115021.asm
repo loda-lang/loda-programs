@@ -1,9 +1,10 @@
 ; A115021: Numbers typed on a keyboard's numeric keypad: start at 1 and read alternately up and down until reaching 9.
-; Submitted by Science United
+; Submitted by Mumps
 ; 1,4,7,8,5,2,3,6,9
 
 mov $2,1
 mov $3,1
+mod $0,10
 mov $1,$0
 lpb $1
   mul $2,$1

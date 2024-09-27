@@ -1,5 +1,5 @@
 ; A253139: a(n) = lcm_{d|n} tau(d), where tau(d) represents the number of divisors of d (A000005(d)).
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,2,2,6,2,4,2,12,6,4,2,12,2,4,4,60,2,12,2,12,4,4,2,24,6,4,12,12,2,8,2,60,4,4,4,36,2,4,4,24,2,8,2,12,12,4,2,120,6,12,4,12,2,24,4,24,4,4,2,24,2,4,12,420,4,8,2,12,4,8,2,72,2,4,12,12,4,8,2,120
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

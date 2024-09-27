@@ -1,5 +1,5 @@
 ; A370239: The sum of divisors of n that are squares of squarefree numbers.
-; Submitted by crashtech
+; Submitted by JagDoc
 ; 1,1,1,5,1,1,1,5,10,1,1,5,1,1,1,5,1,10,1,5,1,1,1,5,26,1,10,5,1,1,1,5,1,1,1,50,1,1,1,5,1,1,1,5,10,1,1,5,50,26,1,5,1,10,1,5,1,1,1,5,1,1,10,5,1,1,1,5,1,1,1,50,1,1,26,5,1,1,1,5
 
 mov $1,1
@@ -10,8 +10,6 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    equ $4,0
-    equ $4,0
     add $2,1
     sub $3,$4
   lpe

@@ -1,13 +1,19 @@
 ; A026906: Number of sums S of distinct positive integers satisfying S <= n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Amis de la Mer] ComteZera
 ; 1,2,4,6,9,13,18,24,32,42,54,69,87,109,136,168,206,252,306,370,446,535,639,761,903,1068,1260,1482,1738,2034,2374,2764,3212,3724,4309,4977,5737,6601,7583,8696,9956,11382,12992,14808,16856,19160,21750,24660,27924,31582,35679,40261,45381,51099,57477,64585,72502,81310,91102,101982,114058,127452,142300,158744,176944,197076,219326,243902,271032,300959,333951,370303,410329,454375,502821,556071,614570,678804,749292,826604
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+A000009(n), b(0) = 0
 
-add $0,1
+mov $3,2
+add $0,3
 lpb $0
+  sub $0,$3
   mov $2,$0
-  seq $2,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
-  sub $0,1
+  max $2,0
+  div $2,2
+  seq $2,70 ; a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
   add $1,$2
+  mov $3,1
+  add $3,$4
+  add $4,1
 lpe
 mov $0,$1
+sub $0,1

@@ -1,5 +1,5 @@
 ; A072983: Denominator of b(n)=sum (k'<=n,1/k') where k' denotes the squarefree numbers.
-; Submitted by entity
+; Submitted by Drago75
 ; 1,2,6,6,30,5,35,35,35,70,770,770,10010,5005,15015,15015,255255,255255,4849845,4849845,1616615,3233230,74364290,74364290,74364290,37182145,37182145,37182145,1078282205,6469693230,200560490130,200560490130
 
 mov $1,1
@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   seq $2,369163 ; a(n) = A000005(A000688(n)).
   sub $2,1
-  seq $2,263297 ; The greater of bigomega(n) and maximal prime index in the prime factorization of n.
+  seq $2,322675 ; a(n) = n * (4*n + 3)^2.
   mov $4,$2
   gcd $4,$5
   mul $3,$4

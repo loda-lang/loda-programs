@@ -10,7 +10,7 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   mov $5,$0
-  cmp $5,1
+  equ $5,1
   sub $0,1
   mov $4,$0
   seq $4,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).

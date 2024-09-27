@@ -1,5 +1,5 @@
 ; A347550: Number of partitions of n into at most 2 distinct prime parts.
-; Submitted by vanos0512
+; Submitted by entity
 ; 1,0,1,1,0,2,0,2,1,1,1,1,1,2,1,1,2,1,2,2,2,1,2,1,3,1,2,0,2,1,3,2,2,1,3,0,4,1,1,1,3,1,4,2,3,1,3,1,5,1,4,0,3,1,5,1,3,0,3,1,6,2,2,1,5,0,6,1,2,1,5,1,6,2,4,1,5,0,7,1
 
 mov $2,1
@@ -13,8 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-    cmp $7,2
+    seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     mov $9,10
     add $9,$5
     sub $4,$0

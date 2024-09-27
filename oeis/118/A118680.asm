@@ -1,17 +1,17 @@
 ; A118680: Numerator of determinant of n X n matrix with M(i,j) = (i+1)/i if i=j otherwise 1.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Science United
 ; 2,2,7,11,2,11,29,37,23,1,67,79,23,53,11,137,1,43,191,211,29,127,277,43,163,1,379,37,109,233,71,23,281,149,631,1,1,53,71,821,431,113,947,991,1,541,1129,107,613,1,1327,197,179,743,67,1597,827,107,1,1831,1,977,2017,2081,1,79,1,2347,151,113,2557,239,193,347,2851,2927,751,1,109,463
+; Formula: a(n) = truncate(c(n+1)/gcd(b(n+1),c(n+1))), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = c(n-1)+n, c(2) = 4, c(1) = 2, c(0) = 1
 
+mov $1,1
+mov $3,1
 add $0,1
-mov $1,2
-mov $2,1
-mov $3,$0
-lpb $3
-  add $1,$4
-  mov $4,$3
-  mul $2,$3
-  sub $3,1
+lpb $0
+  sub $0,1
+  add $2,1
+  mul $1,$2
+  add $3,$2
 lpe
-gcd $2,$1
-div $1,$2
-mov $0,$1
+gcd $1,$3
+div $3,$1
+mov $0,$3

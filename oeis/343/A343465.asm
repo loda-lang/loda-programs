@@ -6,8 +6,7 @@ add $0,1
 mov $2,$0
 lpb $0
   add $3,$1
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$0
   mov $4,$2
   gcd $4,$3

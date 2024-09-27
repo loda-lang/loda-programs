@@ -1,15 +1,8 @@
 ; A023970: First bit in fractional part of binary expansion of cube root of n.
-; Submitted by Daniel
+; Submitted by entity
 ; 0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 add $0,1
 mul $0,8
-lpb $0
-  sub $0,1
-  add $1,1
-  add $2,6
-  add $3,$2
-  trn $0,$3
-lpe
-mov $0,$1
+nrt $0,3
 mod $0,2

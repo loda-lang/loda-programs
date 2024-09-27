@@ -32,7 +32,7 @@ add $0,1
 mul $0,2
 div $0,$3
 add $1,$2
-cmp $1,1
+equ $1,1
 add $1,$0
 mov $0,$1
 dif $0,5

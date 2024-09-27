@@ -1,29 +1,20 @@
 ; A108701: Values of n such that n^2-2 and n^2+2 are both prime.
-; Submitted by YTREHOT
+; Submitted by lee
 ; 3,9,15,21,33,117,237,273,303,309,387,429,441,447,513,561,573,609,807,897,1035,1071,1113,1143,1233,1239,1311,1563,1611,1617,1737,1749,1827,1839,1953,2133,2211,2283,2589,2715,2721,2955,3081,3093,3453,3549,3555,3621,3723,3807,3873,3879,4179,4263,4305,4629,4809,4863,5031,5199,5301,5325,5403,5529,5775,5853,6081,6183,6315,6327,6417,6441,6621,6651,6957,7023,7077,7173,7209,7569
 
+add $0,2
 mov $2,$0
-add $2,12
-pow $2,3
+sub $0,1
+pow $2,4
 lpb $2
-  add $3,$1
-  add $3,2
-  add $5,3
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $6,$3
-  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$6
-  add $1,2
-  sub $3,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mov $6,$5
-  sub $6,2
-  mul $2,$4
-  sub $2,16
-  add $5,$1
+  mov $3,$1
+  mul $3,2
+  seq $3,106548 ; Perfect squares n^2 which are both the sum and the difference of two primes (otherwise 0).
+  min $3,1
+  sub $0,$3
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
-div $0,2
+mul $0,2
 add $0,1

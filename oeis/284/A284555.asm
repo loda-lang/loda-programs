@@ -7,8 +7,15 @@ mov $2,$0
 add $2,2
 pow $2,4
 lpb $2
+  mov $5,0
+  max $5,$1
   mov $3,$1
-  seq $3,48727 ; a(n) = Xmult(n,7) or rule150(n,1).
+  mul $3,2
+  mov $6,$3
+  bxo $6,$5
+  mul $6,2
+  bxo $5,$6
+  mov $3,$5
   mod $3,3
   add $3,$4
   div $3,2
@@ -18,7 +25,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

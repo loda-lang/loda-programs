@@ -1,11 +1,16 @@
 ; A268289: a(0)=0; thereafter a(n) = a(n-1) - A037861(n).
+; Submitted by Science United
 ; 0,1,1,3,2,3,4,7,5,5,5,7,7,9,11,15,12,11,10,11,10,11,12,15,14,15,16,19,20,23,26,31,27,25,23,23,21,21,21,23,21,21,21,23,23,25,27,31,29,29,29,31,31,33,35,39,39,41,43,47,49,53,57,63,58,55,52,51,48,47,46,47,44,43,42,43,42,43,44,47
-; Formula: a(n) = a(n-1)+A145037(n), a(0) = 0
 
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   sub $0,1
-  add $1,$2
+  mov $2,$0
+  max $2,0
+  seq $2,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+  mov $3,0
+  sub $3,$2
+  mov $4,$1
+  add $1,$3
 lpe
-mov $0,$1
+mov $0,$4

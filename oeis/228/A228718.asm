@@ -1,5 +1,5 @@
 ; A228718: Sequence taken from Garvan's paper (see slides 28, 29).
-; Submitted by Jon Maiga
+; Submitted by Mumps
 ; 1,1,1,2,3,4,8,12,17,27,40
 
 mov $1,126785
@@ -11,8 +11,7 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     sub $3,$4
     add $5,1
   lpe

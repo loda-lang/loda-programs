@@ -5,11 +5,11 @@
 mov $4,1
 mov $3,$0
 lpb $3
-  cmp $6,0
+  equ $6,0
   add $1,$4
   mul $2,$3
   mul $2,$0
-  cmp $4,0
+  equ $4,0
   add $5,$4
   add $5,$6
   mul $1,$3

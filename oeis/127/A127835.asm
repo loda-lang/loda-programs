@@ -1,5 +1,5 @@
 ; A127835: (Order of Galois group of Chebyshev polynomial)/(order of polynomial); or A124827(n)/n.
-; Submitted by waffleironhead
+; Submitted by Science United
 ; 1,1,2,2,4,2,6,2,6,4,10,4,12,6,8,4,16,6,18,8,12
 
 mov $1,1
@@ -10,10 +10,9 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     add $2,1
     max $4,$5
     sub $3,$4

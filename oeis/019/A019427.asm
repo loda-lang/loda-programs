@@ -1,10 +1,26 @@
 ; A019427: Continued fraction for tan(1/4).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Frank [NT]
 ; 0,3,1,10,1,18,1,26,1,34,1,42,1,50,1,58,1,66,1,74,1,82,1,90,1,98,1,106,1,114,1,122,1,130,1,138,1,146,1,154,1,162,1,170,1,178,1,186,1,194,1,202,1,210,1,218,1,226,1,234,1,242,1,250,1,258,1,266,1,274,1,282,1,290,1,298,1,306,1,314
-; Formula: a(n) = -truncate((A019428(n)+2)/5)+A019428(n)
 
-seq $0,19428 ; Continued fraction for tan(1/5).
-mov $1,2
-add $1,$0
-div $1,5
-sub $0,$1
+mov $4,$0
+sub $4,1
+mul $0,3
+mov $2,$0
+mov $3,$0
+add $3,$4
+lpb $0
+  dif $0,2
+  mov $2,1
+  mov $3,2
+  mod $4,2
+lpe
+trn $4,2
+add $1,$4
+add $1,1
+add $1,$2
+lpb $3
+  mov $3,$0
+  add $1,1
+lpe
+mov $0,$1
+sub $0,1

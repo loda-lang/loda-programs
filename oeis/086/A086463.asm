@@ -1,32 +1,28 @@
 ; A086463: Decimal expansion of Pi^2/18.
-; Submitted by Jon Maiga
+; Submitted by entity
 ; 5,4,8,3,1,1,3,5,5,6,1,6,0,7,5,4,7,8,8,2,4,1,3,8,3,8,8,8,8,2,0,0,8,3,9,6,4,0,6,3,1,6,6,3,3,7,3,5,5,9,9,4,7,9,2,4,5,1,8,6,0,7,6,4,5,6,6,6,9,1,5,6,8,0,1,0,6,6,9,5
 
 add $0,1
-mov $1,$0
-mov $2,1
 mov $3,$0
-mul $3,4
-sub $3,1
+mul $3,5
 lpb $3
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  div $1,$0
-  div $2,$0
+  max $3,1
+  div $2,$3
+  mul $1,2
+  sub $1,$2
+  mul $1,2
+  max $6,$2
+  div $6,$3
+  gcd $2,2
+  add $2,$1
   sub $3,1
+  sub $5,$6
+  add $1,6
 lpe
-mul $1,2
-pow $1,2
-div $1,3
-pow $2,2
-mul $2,6
 mov $4,10
 pow $4,$0
 div $2,$4
+sub $1,$5
 div $1,$2
 mov $0,$1
 mod $0,10

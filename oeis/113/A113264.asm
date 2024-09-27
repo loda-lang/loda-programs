@@ -1,5 +1,5 @@
 ; A113264: Partial sums of Catalan numbers A000108 multiplied by powers of -5.
-; Submitted by Christian Krause
+; Submitted by ChelseaOilman
 ; 1,-4,46,-579,8171,-123079,1939421,-31576204,527017546,-8969076204,155054361296,-2715355794954,48068823892546,-858791527669954,15464694800455046,-280398494896810579,5114753787818033171,-93796371395287435579,1728250671451392251921
 
 mov $1,$0
@@ -7,18 +7,13 @@ lpb $0
   sub $1,1
   mov $2,$0
   mul $2,2
+  mov $4,$0
+  add $4,1
   bin $2,$0
-  mul $2,3
-  mov $5,$0
-  add $5,1
+  div $2,$4
+  mul $2,2
   mov $0,$1
-  mov $4,2
-  pow $4,$5
-  div $2,$5
-  mul $2,$4
-  div $2,3
   add $3,$2
-  div $3,2
   mul $3,5
   dif $3,-1
 lpe

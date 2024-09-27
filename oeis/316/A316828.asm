@@ -1,15 +1,15 @@
 ; A316828: Image of the Thue-Morse sequence A010060 under the morphism {1 -> 1,2; 0 -> 0,2}.
-; Submitted by Coleslaw
+; Submitted by Mumps
 ; 0,2,1,2,1,2,0,2,1,2,0,2,0,2,1,2,1,2,0,2,0,2,1,2,0,2,1,2,1,2,0,2,1,2,0,2,0,2,1,2,0,2,1,2,1,2,0,2,0,2,1,2,1,2,0,2,1,2,0,2,0,2,1,2,1,2,0,2,0,2,1,2,0,2,1,2,1,2,0,2
 
 mov $1,7
+mov $2,7
 lpb $0
   sub $0,1
-  max $2,$1
   mul $2,8
   bxo $2,$1
   mov $1,$2
 lpe
-sub $1,1
+add $1,5
 mod $1,3
 mov $0,$1

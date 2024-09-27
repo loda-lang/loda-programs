@@ -9,12 +9,11 @@ lpb $2
   sub $2,7
   mov $3,$1
   seq $3,64272 ; Number of representations of n as the sum of a prime number and a nonzero square.
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe
