@@ -1,20 +1,22 @@
 ; A018760: Divisors of 987.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Baggins
 ; 1,3,7,21,47,141,329,987
 
-mov $4,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  div $0,2
-  add $1,$5
-  mov $3,$4
-  bin $3,$0
+mov $1,2
+mov $2,3
+lpb $0
+  add $1,1
+  mov $3,$0
+  sub $3,1
   mod $3,2
-  add $5,$1
-  add $5,$3
+  mul $3,$1
+  pow $4,2
+  div $0,2
+  mul $2,$1
+  dif $2,$3
+  add $1,$4
+  mul $1,2
+  max $4,4
 lpe
-mov $0,$5
+mov $0,$2
+div $0,3

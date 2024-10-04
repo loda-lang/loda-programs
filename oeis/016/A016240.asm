@@ -1,17 +1,17 @@
 ; A016240: Inverse of 2231st cyclotomic polynomial.
-; Submitted by Fardringle
+; Submitted by entity
 ; 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate((truncate(c(3*n)/gcd(c(3*n)*b(3*n),b(3*n)))+1)/2)+truncate(c(3*n)/gcd(c(3*n)*b(3*n),b(3*n)))+1, b(n) = -3*n*(-3*n+b(n-1)+3), b(2) = 54, b(1) = -6, b(0) = 2, c(n) = -3*n*(c(n-1)+2)-3*n+b(n-1)+3, c(2) = 3, c(1) = -4, c(0) = 0
+; Formula: a(n) = -2*truncate((truncate(c(3*n)/gcd(c(3*n)*b(3*n),b(3*n)))+1)/2)+truncate(c(3*n)/gcd(c(3*n)*b(3*n),b(3*n)))+1, b(n) = -3*n*b(n-1), b(2) = 90, b(1) = -15, b(0) = 5, c(n) = -3*n*c(n-1)+b(n-1)-7, c(2) = 8, c(1) = -5, c(0) = 1
 
-mov $1,2
+mov $1,5
+mov $3,1
 mul $0,3
 lpb $0
   sub $0,1
-  add $1,$2
   sub $2,3
-  add $3,2
   mul $3,$2
   add $3,$1
+  sub $3,7
   mul $1,$2
 lpe
 mov $4,$3

@@ -10,7 +10,7 @@ lpb $3
   mov $5,$4
   div $5,3
   mov $7,$5
-  cmp $7,0
+  equ $7,0
   add $5,$7
   mov $1,2
   div $1,$5

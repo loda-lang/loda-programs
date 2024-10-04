@@ -1,18 +1,21 @@
 ; A018318: Divisors of 174.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Drago75
 ; 1,2,3,6,29,58,87,174
 
 mov $1,1
-mov $3,1
+mov $2,3
 lpb $0
-  sub $0,1
-  mul $2,40
-  add $2,$1
-  dif $2,2
-  add $2,$3
-  mov $1,$2
-  dif $2,6
-  mod $2,$1
-  mov $3,$1
+  add $1,1
+  mov $3,$0
+  sub $3,1
+  mod $3,2
+  mul $3,$1
+  div $0,2
+  mul $2,$1
+  dif $2,$3
+  pow $1,$4
+  add $1,1
+  add $4,3
 lpe
-mov $0,$1
+mov $0,$2
+div $0,3

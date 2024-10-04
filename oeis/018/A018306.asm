@@ -13,11 +13,11 @@ lpb $0
   div $0,2
   mul $2,$1
   dif $2,$3
-  add $1,$4
-  sub $1,1
-  bin $1,2
-  add $1,3
-  mov $4,3
+  pow $1,$4
+  add $1,2
+  mov $4,2
 lpe
+sub $2,3
 mov $0,$2
 div $0,3
+add $0,1

@@ -19,7 +19,7 @@ lpb $1
   div $0,2
   mod $2,2
   lpb $2
-    cmp $2,3
+    equ $2,3
     add $0,6
   lpe
   add $3,1

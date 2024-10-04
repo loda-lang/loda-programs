@@ -1,10 +1,10 @@
 ; A018305: Divisors of 150.
-; Submitted by Skillz
+; Submitted by omegaintellisys
 ; 1,2,3,5,6,10,15,25,30,50,75,150
 
 mov $1,-1
 mov $2,$0
-add $2,10
+add $2,3
 pow $2,2
 lpb $2
   add $1,1
