@@ -1,19 +1,22 @@
 ; A053181: Composite numbers ending in 9.
-; Submitted by Kotenok2000
+; Submitted by [AF>Amis de la Mer] ComteZera
 ; 9,39,49,69,99,119,129,159,169,189,209,219,249,259,279,289,299,309,319,329,339,369,399,429,459,469,489,519,529,539,549,559,579,589,609,629,639,649,669,679,689,699,729,749,759,779,789,799,819,849,869,879,889,899,909,939,949,959,969,979,989,999,1029,1059,1079,1089,1099,1119,1139,1149,1159,1169,1179,1189,1199,1209,1219,1239,1269,1299
 
-add $0,1
-mov $1,6
+mov $1,-1
 mov $2,$0
-pow $2,4
+add $0,1
+add $2,5
+pow $2,2
 lpb $2
-  add $1,2
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,8
+  max $3,$1
+  mul $3,2
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
+  sub $0,$3
+  add $1,5
   sub $2,$0
 lpe
+add $1,1
 mov $0,$1
-add $0,3
+mul $0,2
+sub $0,1

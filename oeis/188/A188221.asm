@@ -1,12 +1,26 @@
 ; A188221: [nr+kr]-[nr]-[kr], where r=sqrt(5), k=1, [ ]=floor.
-; Submitted by [AF>Occitania]franky82
+; Submitted by entity
 ; 0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1
 
-mul $0,2
-lpb $0
-  mov $1,$0
-  seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
-  sub $0,$1
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  add $0,1
+  mov $6,$0
+  add $6,$0
+  mul $6,2
+  add $6,$0
+  mul $6,$0
+  nrt $6,2
+  mov $2,$3
+  mul $2,$6
+  mov $4,$6
+  sub $1,$3
+  add $1,$2
 lpe
-add $0,1
-cmp $0,2
+sub $1,$4
+mov $0,$1
+sub $0,1

@@ -1,22 +1,27 @@
 ; A071742: Expansion of (1+x^4*C)*C, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.
-; Submitted by Jamie Morken(w2)
+; Submitted by http://amez.petrsu.ru/
 ; 1,1,2,5,15,44,137,443,1472,4994,17225,60216,212874,759696,2733226,9902857,36100570,132319230,487333545,1802620860,6693765210,24943905720,93249826830,349623734070,1314370414344,4953428965092
 
-add $0,1
 lpb $0
   sub $0,1
-  mov $2,$4
-  trn $2,1
+  div $4,25
+  max $4,$0
+  add $4,1
+  gcd $2,3
+  sub $2,1
+  add $2,$0
+  add $2,$0
   bin $2,$0
-  cmp $2,1
-  mov $4,$1
-  mul $4,2
-  mov $3,$4
   bin $3,$1
-  add $1,1
   mul $3,$2
-  div $3,$1
-  mov $4,4
+  mul $3,6
+  div $3,$4
+  trn $0,2
+  sub $1,$5
+  mov $2,$1
   add $5,$3
 lpe
 mov $0,$5
+sub $0,3
+div $0,6
+add $0,1

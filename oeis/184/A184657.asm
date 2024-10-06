@@ -9,7 +9,7 @@ lpb $0
   sub $0,1
   sub $3,$4
   div $3,2
-  cmp $2,4
+  equ $2,4
   add $2,$3
   mod $2,2
   add $2,2

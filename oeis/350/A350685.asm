@@ -1,5 +1,5 @@
 ; A350685: Maximum number of points on a hexagonal grid of side length n without arithmetic progression, i.e., no point is exactly at the center between two other points.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by LCB001
 ; 0,1,6,12,18,27,33,42
 
 mov $2,$0
@@ -12,6 +12,7 @@ lpb $0
   mov $0,$2
   div $0,$1
   sub $0,$1
+  max $2,$3
   add $2,1
   add $4,5
   lpb $4

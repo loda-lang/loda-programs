@@ -12,6 +12,7 @@ lpb $3
   seq $0,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
   gcd $1,$3
   mul $1,$0
+  bin $2,$3
   add $2,$3
 lpe
 mov $0,$1

@@ -1,21 +1,8 @@
 ; A007735: Period of base 4 representation of 1/n.
-; Submitted by Christian Krause
+; Submitted by Geoff
 ; 1,1,1,1,2,1,3,1,3,2,5,1,6,3,2,1,4,3,9,2,3,5,11,1,10,6,9,3,14,2,5,1,5,4,6,3,18,9,6,2,10,3,7,5,6,11,23,1,21,10,4,6,26,9,10,3,9,14,29,2,30,5,3,1,6,5,33,4,11,6,35,3,9,18,10,9,15,6,39,2
+; Formula: a(n) = truncate(A065457(A025480(n))/2)
 
-mov $1,$0
-add $0,1
-mov $5,$0
-mov $4,$0
-lpb $4
-  cmp $0,$2
-  mov $3,$0
-  cmp $3,0
-  sub $4,$3
-  add $2,256
-  mul $2,2
-  mod $2,$5
-lpe
-sub $1,$4
-add $1,1
-dif $1,2
-mov $0,$1
+seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+seq $0,65457 ; Period of the flip-riffle shuffle function on a deck of 2n cards.
+div $0,2

@@ -12,7 +12,7 @@ lpb $2
   add $1,7
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   gcd $5,2
   add $5,$1
   div $5,4

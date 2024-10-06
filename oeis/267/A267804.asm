@@ -9,14 +9,13 @@ add $1,6
 mov $2,$0
 mod $2,2
 add $2,11
+mov $4,1
 mul $1,$2
 mov $0,$1
 div $0,3
 mul $0,2
 sub $0,45
 div $0,10
-mov $3,0
-mov $4,1
 lpb $0
   mov $5,$0
   mod $5,2

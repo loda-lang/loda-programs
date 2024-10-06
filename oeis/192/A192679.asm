@@ -1,13 +1,21 @@
 ; A192679: Floor-Sqrt transform of ordered Bell numbers (A000670).
-; Submitted by Arkhenia
+; Submitted by Skillz
 ; 1,1,1,3,8,23,68,217,738,2662,10111,40281,167605,725850,3262107,15175084,72908536,361068922,1839982245,9633358049,51746379547,284824200163,1604632175859,9243292234736,54390064543757,326645626694244,2000556362576213,12485902607285611
 
-seq $0,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
-mov $1,$0
-mul $0,4
+mov $6,$0
+add $0,1
 lpb $0
-  div $2,$0
-  add $0,$2
-  div $0,2
-  mov $2,$1
+  sub $0,1
+  add $1,$4
+  mov $4,$3
+  pow $4,$6
+  add $4,$1
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  mul $2,-1
+  add $2,$5
+  add $3,1
 lpe
+mov $0,$2
+nrt $0,2

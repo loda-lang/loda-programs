@@ -1,11 +1,9 @@
 ; A072195: Replace all prime factors p of n with n/p.
-; Submitted by pelpolaris
+; Submitted by Science United
 ; 1,1,1,4,1,6,1,64,9,10,1,144,1,14,15,4096,1,324,1,400,21,22,1,13824,25,26,729,784,1,900,1,1048576,33,34,35,46656,1,38,39,64000,1,1764,1,1936,2025,46,1,5308416,49,2500,51,2704,1,157464,55,175616,57,58,1,216000,1
-; Formula: a(n) = (n+1)^max(A144494(n)-1,0)
+; Formula: a(n) = truncate((n+1)^A252736(n))
 
-mov $1,1
-add $1,$0
-seq $0,144494 ; a(n) = 0 if n is prime, otherwise A001222(n).
-trn $0,1
-pow $1,$0
-mov $0,$1
+mov $1,$0
+seq $1,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+add $0,1
+pow $0,$1

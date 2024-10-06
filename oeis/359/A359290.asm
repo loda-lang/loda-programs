@@ -1,15 +1,25 @@
 ; A359290: Number of divisors of 4*n-2 of form 4*k+3.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by entity
 ; 0,1,0,1,1,1,0,2,0,1,2,1,0,2,0,1,2,2,0,2,0,1,2,1,1,2,0,2,2,1,0,3,0,1,2,1,0,3,2,1,2,1,0,2,0,2,2,2,0,3,0,1,4,1,0,2,0,2,2,2,1,2,0,1,2,1,2,4,0,1,2,2,0,3,0,1,2,2,0,2
 
-mov $1,3
+mul $0,2
 add $0,1
-lpb $0
-  sub $0,2
-  mov $3,$0
-  gcd $3,$1
-  div $3,$1
-  add $1,4
-  add $2,$3
+mov $3,$0
+mul $3,2
+mov $5,$3
+lpb $3
+  add $1,1
+  min $3,$1
+  mov $4,$5
+  dif $4,$3
+  add $3,$4
+  mod $3,2
+  sub $3,1
+  mul $4,$1
+  equ $4,$5
+  mul $4,$3
+  sub $5,$1
+  sub $2,$4
+  mov $3,$5
 lpe
 mov $0,$2

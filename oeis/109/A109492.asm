@@ -1,19 +1,23 @@
 ; A109492: Divisors of 111111.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by entity
 ; 1,3,7,11,13,21,33,37,39,77,91,111,143,231,259,273,407,429,481,777,1001,1221,1443,2849,3003,3367,5291,8547,10101,15873,37037,111111
 
 add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
+  add $3,3
+  mul $3,2
+  mov $1,10
+  pow $1,$3
+  mov $3,$1
+  div $3,9
   add $4,1
   add $5,1
-  mov $3,111111
   gcd $3,$5
   div $3,$4
   sub $0,$3
-  add $1,1
-  sub $2,$3
   sub $2,$0
 lpe
-mov $0,$1
+mov $0,$4
+add $0,1

@@ -1,17 +1,13 @@
 ; A089800: Expansion of Jacobi theta function theta_2(q)/q^(1/4).
-; Submitted by mmonnin
+; Submitted by shiva
 ; 2,0,2,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
 
-mov $1,$0
-mul $1,4
-mov $3,$1
-nrt $3,2
-mul $0,2
-add $0,1
-mul $0,2
+mul $0,4
 mov $2,$0
 nrt $2,2
-add $3,$2
-mov $0,$3
-mod $0,2
+add $0,2
+mov $1,$0
+nrt $1,2
+sub $1,$2
+mov $0,$1
 mul $0,2

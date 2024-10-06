@@ -1,16 +1,16 @@
 ; A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
-; Submitted by Skillz
+; Submitted by Science United
 ; 1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1
 
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-pow $0,2
-div $0,3
-lpb $0
-  mul $0,2
-  div $0,5
-  div $1,2
-  gcd $1,2
+mov $2,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$2
+  sub $0,$3
+  add $0,1
+  seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
+  bxo $1,$0
 lpe
 mov $0,$1
-add $0,1
-mod $0,2
+div $0,3

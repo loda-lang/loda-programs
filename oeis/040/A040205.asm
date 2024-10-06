@@ -1,17 +1,14 @@
 ; A040205: Continued fraction for sqrt(220).
-; Submitted by Torbj&#246;rn Eriksson
+; Submitted by Tatar_Volunteer
 ; 14,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1,28,1,4,1
-; Formula: a(n) = truncate(max(2*gcd(n,4)^2-5,0)/gcd(0,0^n+1))+1
+; Formula: a(n) = floor(max(2*gcd(n,4)^2-5,0)/(0^n+1))+1
 
-pow $2,$0
-add $2,1
-gcd $3,$2
-mov $1,$0
-gcd $1,4
-pow $1,2
-sub $1,1
-mul $1,2
-trn $1,3
-div $1,$3
+pow $1,$0
 add $1,1
-mov $0,$1
+gcd $0,4
+pow $0,2
+sub $0,1
+mul $0,2
+trn $0,3
+div $0,$1
+add $0,1

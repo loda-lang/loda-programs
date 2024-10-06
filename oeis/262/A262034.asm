@@ -6,7 +6,7 @@ mov $2,$0
 lpb $0
   lpb $2
     mul $0,$2
-    cmp $1,0
+    equ $1,0
     pow $2,2
     trn $2,9
   lpe

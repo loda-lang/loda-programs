@@ -1,21 +1,14 @@
-; A097448: If n is square, replace with sqrt(n).
-; Submitted by taurec
+; A097448: If n is square, replace it with sqrt(n).
+; Submitted by Mumps
 ; 0,1,2,3,2,5,6,7,8,3,10,11,12,13,14,15,4,17,18,19,20,21,22,23,24,5,26,27,28,29,30,31,32,33,34,35,6,37,38,39,40,41,42,43,44,45,46,47,48,7,50,51,52,53,54,55,56,57,58,59,60,61,62,63,8,65,66,67,68,69,70,71,72,73,74
 
+mov $1,$0
+mov $3,$0
+nrt $0,2
 mov $2,$0
-lpb $2
-  add $2,1
-  add $4,2
-  sub $2,$4
+lpb $0
+  mul $0,$2
+  sub $0,$3
+  mov $1,$2
 lpe
-add $5,$2
-add $2,$4
-pow $2,$5
-mov $6,$4
-div $6,2
-bin $6,$2
-add $1,$6
-mov $3,$1
-cmp $3,0
-add $1,$3
-div $0,$1
+mov $0,$1

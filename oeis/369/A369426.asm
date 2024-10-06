@@ -5,7 +5,7 @@
 mov $1,$0
 mov $3,$0
 lpb $3
-  sub $3,1
+  sub $3,3
   mov $4,$1
   seq $4,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
   seq $0,264668 ; a(n) = A264600(n) - A061486(n).

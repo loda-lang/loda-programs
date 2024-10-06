@@ -18,7 +18,7 @@ lpb $0
     mul $7,$$9
     add $7,$5
     gcd $7,$2
-    cmp $7,1
+    equ $7,1
     add $5,1
     add $6,$7
   lpe

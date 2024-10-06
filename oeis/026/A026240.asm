@@ -10,7 +10,7 @@ sub $3,1
 seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
 mul $3,2
 sub $3,1
-seq $0,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+seq $0,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
 mul $0,2
 sub $3,$0
 max $3,$0

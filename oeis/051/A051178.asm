@@ -11,12 +11,12 @@ lpb $2
   seq $3,33312 ; a(n) = n! - 1.
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

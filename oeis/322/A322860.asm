@@ -1,5 +1,5 @@
 ; A322860: Characteristic function of practical numbers, A005153: If n is in A005153, a(n) = 1, otherwise a(n) = 0.
-; Submitted by Christian Krause
+; Submitted by BlisteringSheep
 ; 1,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1
 
 mov $1,1
@@ -10,10 +10,9 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     add $2,1
     max $4,$5
     sub $3,$4
@@ -27,4 +26,4 @@ lpb $0
   mul $1,$5
   mov $2,$4
 lpe
-cmp $0,1
+equ $0,1

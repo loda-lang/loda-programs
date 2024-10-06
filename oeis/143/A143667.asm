@@ -1,8 +1,19 @@
 ; A143667: Digits of the infinite Fibonacci word A003849 grouped 2 by 2 and interpreted as a binary value.
-; Submitted by Jamie Morken(w3)
+; Submitted by entity
 ; 1,0,2,2,1,0,2,2,1,1,0,2,1,1,0,2,1,1,0,2,2,1,0,2,2,1,1,0,2,1,1,0,2,1,1,0,2,2,1,0,2,2,1,0,2,2,1,1,0,2,1,1,0,2,2,1,0,2,2,1,0,2,2,1,1,0,2,1,1,0,2,2,1,0,2,2,1,0,2,2
-; Formula: a(n) = -3*truncate(A270788(2*n)/3)+A270788(2*n)
 
 mul $0,2
-seq $0,270788 ; Unique fixed point of the 3-symbol Fibonacci morphism phi-hat_2.
+lpb $0
+  sub $0,1
+  add $1,2
+  add $1,$2
+  bor $1,$2
+  sub $1,$2
+  mov $2,$1
+  div $2,2
+lpe
+mod $1,8
+mov $0,$1
+div $0,2
+add $0,1
 mod $0,3

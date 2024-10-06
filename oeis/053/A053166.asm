@@ -11,7 +11,7 @@ lpb $1
   mov $4,$1
   pow $4,4
   mod $4,$3
-  cmp $4,0
+  equ $4,0
   sub $1,1
   add $2,$4
 lpe

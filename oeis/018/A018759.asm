@@ -16,6 +16,7 @@ lpb $0
     gcd $4,$2
     div $4,$2
     equ $4,0
+    div $1,2
     sub $3,$4
   lpe
   add $2,1

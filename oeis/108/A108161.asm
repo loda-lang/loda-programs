@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,97448 ; If n is square, replace with sqrt(n).
+  seq $2,97448 ; If n is square, replace it with sqrt(n).
   sub $0,1
   add $1,$2
 lpe

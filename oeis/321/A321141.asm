@@ -20,7 +20,7 @@ lpb $4
     dif $7,$0
     mov $8,$7
     mul $7,$0
-    cmp $7,$6
+    equ $7,$6
     mul $7,$8
     pow $7,$2
     sub $0,1

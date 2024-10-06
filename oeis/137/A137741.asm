@@ -8,7 +8,7 @@ lpb $2
   mov $1,$0
   trn $1,1
   mov $5,$1
-  cmp $5,0
+  equ $5,0
   mov $4,$1
   add $4,$5
   mov $6,$1

@@ -1,4 +1,4 @@
-; A032704: n prefixed by '4' and followed by '1' is prime.
+; A032704: Numbers k such that k prefixed by '4' and followed by '1' is prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,2,3,6,9,11,20,21,23,24,26,27,39,42,44,45,48,56,59,62,65,69,72,75,80,83,86,87,93,95,101,105,108,113,114,116,120,122,123,128,134,135,138,141,149,152,161,162,164,165,168,176,177,180,185,191,194,198,206
 
@@ -21,7 +21,7 @@ lpb $2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,2
   mul $2,$4
   trn $2,1

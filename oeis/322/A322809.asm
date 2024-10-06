@@ -24,7 +24,7 @@ lpb $2
     trn $5,$4
   lpe
   mov $2,0
-  cmp $3,0
+  equ $3,0
 lpe
 add $0,$6
 div $0,2

@@ -1,25 +1,25 @@
 ; A167915: Primes which are the sums of two consecutive nonprimes (A141468).
-; Submitted by NeoGen
+; Submitted by entity
 ; 5,17,19,29,31,41,43,53,67,71,79,89,97,101,103,109,113,127,131,137,139,149,151,163,173,181,191,197,199,211,223,229,233,239,241,251,257,269,271,281,283,293,307,311,317,331,337,349,353,367,373,379,389,401,409,419,431,433,439,443,449,461,463,487,491,499,509,521,523,547,557,569,571,577,593,599,601,607,617,619
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  seq $3,166685 ; Odd numbers that are the sum of two consecutive nonprimes.
-  mov $5,$3
-  add $5,2
-  sub $3,1
-  seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  cmp $4,$0
-  mul $2,$4
+mov $1,$0
+mov $3,$0
+add $3,3
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,166037 ; Numbers that are the sum of 2 successive nonprimes A141468.
+  sub $4,1
+  mov $6,$4
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $1,$4
+  add $2,1
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
+  trn $3,1
 lpe
-mov $0,$5
-sub $0,2
+mov $1,$6
+add $1,1
+mov $0,$1

@@ -1,28 +1,9 @@
 ; A326058: a(n) = n - {the sum of square divisors of n}.
-; Submitted by Simon Strandgaard
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,1,2,-1,4,5,6,3,-1,9,10,7,12,13,14,-5,16,8,18,15,20,21,22,19,-1,25,17,23,28,29,30,11,32,33,34,-14,36,37,38,35,40,41,42,39,35,45,46,27,-1,24,50,47,52,44,54,51,56,57,58,55,60,61,53,-21,64,65,66,63,68,69,70,22,72,73,49,71,76,77,78,59
+; Formula: a(n) = -A035316(n)+n+1
 
 mov $1,$0
-add $1,1
-mov $2,1
-mov $4,1
-mov $5,1
-mov $3,$1
-lpb $3
-  add $4,2
-  add $5,$4
-  mov $6,$1
-  mod $6,$5
-  cmp $6,0
-  mov $7,$5
-  mul $7,$6
-  add $2,$7
-  mov $6,$1
-  add $6,1
-  trn $6,$5
-  cmp $6,0
-  cmp $6,0
-  sub $3,$6
-lpe
+seq $1,35316 ; Sum of the square divisors of n.
 add $0,1
-sub $0,$2
+sub $0,$1

@@ -1,5 +1,5 @@
 ; A038148: Number of 3-infinitary divisors of n: if n = Product p(i)^r(i) and d = Product p(i)^s(i), each s(i) has a digit a <= b in its ternary expansion everywhere that the corresponding r(i) has a digit b, then d is a 3-infinitary-divisor of n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Ralfy
 ; 1,2,2,3,2,4,2,2,3,4,2,6,2,4,4,4,2,6,2,6,4,4,2,4,3,4,2,6,2,8,2,6,4,4,4,9,2,4,4,4,2,8,2,6,6,4,2,8,3,6,4,6,2,4,4,4,4,4,2,12,2,4,6,3,4,8,2,6,4,8,2,6,2,4,6,6,4,8,2,8
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

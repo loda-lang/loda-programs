@@ -16,7 +16,7 @@ lpb $4
   mul $1,$0
   mov $5,$1
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  cmp $0,$5
+  equ $0,$5
   mul $0,2
   mul $1,$0
   max $3,$1

@@ -1,11 +1,11 @@
 ; A365634: The number of divisors of n that are terms of A048102.
-; Submitted by Science United
+; Submitted by Skillz
 ; 1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1
 
 mov $1,$0
 mov $3,$0
 lpb $3
-  sub $3,1
+  sub $3,3
   mov $4,$1
   seq $4,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
   seq $0,264668 ; a(n) = A264600(n) - A061486(n).

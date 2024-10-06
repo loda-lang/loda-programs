@@ -14,7 +14,7 @@ lpb $2
   seq $3,124867 ; Numbers that are the sum of 3 distinct primes.
   add $3,1
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

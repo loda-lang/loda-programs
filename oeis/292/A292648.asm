@@ -1,29 +1,28 @@
 ; A292648: Rank of Pi*n when all the numbers Pi*j and (Pi+1)*k, for j>=1, k>=1, are jointly ranked.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,3,5,7,8,10,12,14,15,17,19,21,22,24,26,28,29,31,33,35,36,38,40,42,43,45,47,49,50,52,54,56,58,59,61,63,65,66,68,70,72,73,75,77,79,80,82,84,86,87,89,91,93,94,96,98,100,101,103,105,107,109,110,112,114,116,117,119,121,123,124,126,128,130,131,133,135,137,138,140
 
-mov $2,1
-mov $3,$0
-mul $3,5
-lpb $3
-  mov $5,$3
+mov $1,$0
+add $0,1
+mov $3,1
+mov $4,$0
+lpb $4
+  mov $5,$4
   mul $5,2
   add $5,1
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  cmp $4,0
-  mov $5,$0
-  add $5,$4
-  div $1,$5
-  div $2,$5
-  sub $3,1
+  mul $2,$4
+  mul $3,4
+  mul $3,$5
+  sub $4,1
+  mul $2,2
+  add $2,$3
+  div $2,$0
+  div $3,$0
+  div $3,2
 lpe
-mul $1,2
-mov $6,1
-add $6,$0
-add $2,$1
-div $2,$6
-div $1,$2
-add $1,$6
+add $3,$2
+div $3,$0
+div $2,$3
+add $1,$2
 mov $0,$1
+add $0,1

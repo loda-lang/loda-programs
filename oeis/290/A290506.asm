@@ -1,25 +1,25 @@
 ; A290506: Decimal expansion of 1 - 1/e^(1/2).
-; Submitted by Christian Krause
+; Submitted by Ralfy
 ; 3,9,3,4,6,9,3,4,0,2,8,7,3,6,6,5,7,6,3,9,6,2,0,0,4,6,5,0,0,8,8,1,9,5,4,6,5,5,8,0,8,1,8,6,4,5,1,2,8,1,3,0,4,4,3,1,7,1,0,7,8,4,1,2,6,4,9,4,3,4,8,0,5,8,6,2,5,1,5,7
 
 add $0,1
 mov $3,$0
-mul $3,3
+mul $3,7
 lpb $3
-  mul $1,$3
-  mul $1,6
-  div $1,$0
-  mul $2,3
-  div $2,$0
+  max $3,1
+  mul $1,2
+  div $2,$3
   add $2,$1
-  sub $1,142
   sub $3,1
+  add $1,6
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
 div $1,$2
-mod $1,10
-mov $0,$1
-mul $0,-1
-add $0,9
+sub $3,$1
+mov $0,$3
+sub $0,1
+mod $0,10
+add $0,10
+mod $0,10
