@@ -1,24 +1,25 @@
 ; A215850: Primes p such that 2*p + 1 divides Lucas(p).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Science United
 ; 5,29,89,179,239,359,419,509,659,719,809,1019,1049,1229,1289,1409,1439,1499,1559,1889,2039,2069,2129,2339,2399,2459,2549,2699,2819,2939,2969,3299,3329,3359,3389,3449,3539,3779,4019,4349,4409,4919,5039,5279,5399,5639,5849,6269,6329,6449,6899,7079,7349,7649,8069,8969,9029,9059,9419,9479,9539,9629,9689,10529,10589,10709,10799,11369,11519,11549,11579,11699,11909,11939,12119,12329,12899,12959,13049,13229
 
-mov $2,$0
-mul $2,2
-pow $2,5
-lpb $2
-  add $1,4
-  mov $4,$1
-  add $4,$1
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $3,$1
-  sub $3,$4
-  mul $4,$3
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+mov $3,$0
+add $3,6
+pow $3,4
+lpb $3
+  sub $1,2
+  add $2,4
+  mov $4,$2
+  seq $4,63377 ; Sophie Germain degree of n: number of iterations of n under f(k) = 2k+1 before we reach a number that is not a prime.
+  div $4,2
+  min $4,1
   sub $0,$4
-  add $1,1
-  sub $2,$0
+  add $2,2
+  add $2,$1
+  mov $1,$0
+  max $1,0
+  equ $1,$0
+  mul $3,$1
+  sub $3,1
 lpe
-div $1,2
-mov $0,$1
-mul $0,2
+mov $0,$2
 add $0,5

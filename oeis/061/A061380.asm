@@ -18,11 +18,11 @@ lpb $2
   add $6,$8
   mov $3,$6
   sub $3,2
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   sub $1,$5
   mul $2,$4

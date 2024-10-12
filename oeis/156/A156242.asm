@@ -1,19 +1,20 @@
 ; A156242: Bisection of A054353.
-; Submitted by Dataman
+; Submitted by Science United
 ; 3,6,9,12,15,19,21,24,27,30,33,36,39,42,45,47,50,54,57,60,63,66,69,72,75,77,81,84,87,90,93,96,100,102,105,108,111,114,117,120,123,127,129,132,136,139,142,145,147,151,154,156,159,163,166,169,172,174,177,181
-; Formula: a(n) = e(2*n+2), b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -2, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = c(n-1)*(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2), c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 2, d(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, d(3) = 2, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+e(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, e(3) = 5, e(2) = 3, e(1) = 1, e(0) = 0
+; Formula: a(n) = e(2*n+1)+1, b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -5, b(2) = -2, b(1) = 0, b(0) = 2, c(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2)*c(n-1), c(3) = 8, c(2) = 8, c(1) = 4, c(0) = 2, d(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2), d(3) = 1, d(2) = 2, d(1) = 2, d(0) = 0, e(n) = e(n-1)+gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2), e(3) = 5, e(2) = 4, e(1) = 2, e(0) = 0
 
+mov $1,2
 mov $2,2
 mul $0,2
-add $0,2
+add $0,1
 lpb $0
   sub $0,1
   sub $1,$2
   div $1,2
   add $3,$1
-  mod $3,2
-  add $3,2
-  mul $2,$3
+  gcd $3,2
   add $4,$3
+  mul $2,$3
 lpe
 mov $0,$4
+add $0,1

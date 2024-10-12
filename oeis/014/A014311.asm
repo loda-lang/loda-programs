@@ -1,21 +1,22 @@
 ; A014311: Numbers with exactly 3 ones in binary expansion.
-; Submitted by Kotenok2000
+; Submitted by Time_Traveler
 ; 7,11,13,14,19,21,22,25,26,28,35,37,38,41,42,44,49,50,52,56,67,69,70,73,74,76,81,82,84,88,97,98,100,104,112,131,133,134,137,138,140,145,146,148,152,161,162,164,168,176,193,194,196,200,208,224,259,261,262,265,266,268,273,274,276,280,289,290,292,296,304,321,322,324,328,336,352,385,386,388
 
-mov $1,1
 mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
+  mov $5,$1
+  add $5,1
+  dis $5,2
+  mov $3,$5
   sub $3,2
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

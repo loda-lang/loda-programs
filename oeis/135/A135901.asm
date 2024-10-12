@@ -1,16 +1,15 @@
 ; A135901: Number of terms in row n of irregular triangle A135879 for n>=0.
-; Submitted by Jamie Morken(s4)
+; Submitted by BlisteringSheep
 ; 1,2,4,7,12,18,26,36,47,60,75,92,111,132,154,178,204,232,262,294,328,364,402,442,484,527,572,619,668,719,772,827,884,943,1004,1067,1132,1199,1268,1339,1412,1487,1564,1643,1724,1807,1892,1978,2066,2156,2248
-; Formula: a(n) = c(n)+1, b(n) = truncate((b(n-1)+truncate(c(n-1)/(b(n-1)+1))+1)/2), b(1) = 0, b(0) = 0, c(n) = b(n-1)+c(n-1)+truncate(c(n-1)/(b(n-1)+1))+1, c(1) = 1, c(0) = 0
 
 lpb $0
   sub $0,1
+  mov $2,$1
   add $2,1
-  mov $1,$3
-  div $1,$2
-  add $2,$1
-  add $3,$2
-  div $2,2
+  nrt $2,2
+  mul $2,4
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1
+div $0,4
 add $0,1

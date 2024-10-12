@@ -22,5 +22,5 @@ lpe
 div $0,2
 add $0,$4
 mul $0,2
-cmp $1,$0
+equ $1,$0
 add $0,$1

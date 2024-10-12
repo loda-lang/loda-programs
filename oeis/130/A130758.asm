@@ -1,5 +1,5 @@
 ; A130758: a(n) = n if n is not an odd prime number. Otherwise, a(n) = k, where k is the smallest integer such that n < 10^k.
-; Submitted by Simon Strandgaard
+; Submitted by Joe
 ; 0,1,2,1,4,1,6,1,8,9,10,2,12,2,14,15,16,2,18,2,20,21,22,2,24,25,26,27,28,2,30,2,32,33,34,35,36,2,38,39,40,2,42,2,44,45,46,2,48,49,50,51,52,2,54,55,56,57,58,2,60,2,62,63,64,65,66,2,68
 
 mov $1,11
@@ -9,10 +9,9 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     add $2,1
     max $4,$5
     sub $3,$4

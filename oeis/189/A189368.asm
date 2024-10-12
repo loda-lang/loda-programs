@@ -1,13 +1,20 @@
 ; A189368: a(n) = n + [n*r/s] + [n*t/s]; r=2, s=sqrt(2), t=sqrt(3).
-; Submitted by Raimund Barbeln
+; Submitted by Science United
 ; 3,6,10,13,18,21,24,28,32,36,39,42,46,50,54,57,61,65,68,72,75,79,83,86,90,93,98,101,105,108,111,116,119,123,126,130,134,137,141,144,148,152,155,159,163,167,170,173,178,181,185,188,191,196,199,203,206,211,214,217,221,224,229,232,235,239,243,247,250,253,257,261,265,268,272,276,279,283,286,290
-; Formula: a(n) = truncate(A022804(n)/2)+truncate(A022840(n)/2)
 
 mov $1,$0
-seq $1,22804 ; a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
-div $1,2
-sub $1,1
-seq $0,22840 ; Beatty sequence for sqrt(6).
-div $0,2
-add $0,$1
+add $1,1
+mov $4,$1
+pow $4,2
+mul $4,2
+mov $3,$4
+nrt $3,2
+add $3,$1
 add $0,1
+pow $0,2
+mov $2,$0
+mul $2,6
+nrt $2,2
+mov $0,$2
+div $0,2
+add $0,$3

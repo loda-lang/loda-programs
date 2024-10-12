@@ -1,17 +1,14 @@
 ; A037668: Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,2,0.
+; Submitted by Odd-Rod
 ; 3,17,85,428,2142,10710,53553,267767,1338835,6694178,33470892,167354460,836772303,4183861517,20919307585,104596537928,522982689642,2614913448210,13074567241053,65372836205267,326864181026335
-; Formula: a(n) = truncate((17*c(n+1))/30), b(n) = -2*truncate((b(n-1)+c(n-1))/2)+b(n-1)+c(n-1)+1, b(1) = 2, b(0) = 0, c(n) = 6*c(n-1)-2*truncate((b(n-1)+c(n-1))/2)+b(n-1), c(1) = 6, c(0) = 1
+; Formula: a(n) = floor((17*floor((100*5^n)/31))/16)
 
-mov $2,1
-add $0,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mod $1,2
-  mul $2,5
-  add $2,$1
-  add $1,1
-lpe
-mov $0,$2
-mul $0,17
-div $0,30
+mov $1,5
+pow $1,$0
+mul $1,100
+div $1,31
+mov $0,$1
+mov $1,17
+mul $1,$0
+div $1,16
+mov $0,$1

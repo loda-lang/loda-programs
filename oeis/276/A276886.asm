@@ -1,17 +1,19 @@
 ; A276886: Sums-complement of the Beatty sequence for 2 + phi.
-; Submitted by Mumps
+; Submitted by Science United
 ; 1,2,5,6,9,12,13,16,17,20,23,24,27,30,31,34,35,38,41,42,45,46,49,52,53,56,59,60,63,64,67,70,71,74,77,78,81,82,85,88,89,92,93,96,99,100,103,106,107,110,111,114,117,118,121,122,125,128,129,132,135,136
 
-mov $2,1
-mov $3,$0
-lpb $3
-  div $3,2
-  add $2,$1
-  add $1,$2
-lpe
-mul $1,$0
-div $1,$2
-sub $0,1
-mul $1,2
 sub $1,$0
-mov $0,$1
+mov $3,$0
+add $3,$0
+mul $3,2
+add $3,$0
+mul $3,$0
+nrt $3,2
+add $3,$0
+mov $2,$3
+div $2,2
+add $2,2
+mul $2,2
+add $2,$1
+mov $0,$2
+sub $0,3

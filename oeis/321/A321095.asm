@@ -22,6 +22,6 @@ sub $2,$6
 mov $1,$2
 sub $1,1
 mul $1,3
-cmp $0,0
+equ $0,0
 add $0,4
 sub $0,$1

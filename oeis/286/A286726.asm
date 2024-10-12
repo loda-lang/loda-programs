@@ -1,32 +1,11 @@
 ; A286726: {0->10, 1->01}-transform of the Pell word, A171588.
-; Submitted by marmuglia
+; Submitted by atannir
 ; 1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1
+; Formula: a(n) = -A289001(floor(n/2))-2*truncate((-A289001(floor(n/2))+n+1)/2)+n+1
 
 mov $1,$0
 div $1,2
-add $1,1
-mov $2,$1
-pow $2,2
-mul $2,2
-mov $4,$2
-nrt $4,2
-mov $6,$1
-add $6,1
-pow $6,2
-mul $6,2
-mov $5,$6
-nrt $5,2
-mov $2,$4
-mul $2,$5
-mov $6,$5
-add $6,$2
-mov $1,$6
-mod $1,2
+seq $1,289001 ; Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 sub $0,$1
-mod $0,2
-mul $0,18
-trn $0,1
-mov $3,$0
-add $3,1
-mov $0,$3
+add $0,1
 mod $0,2

@@ -1,17 +1,15 @@
 ; A037834: a(n) = Sum_{i=1..m} |d(i) - d(i-1)|, where Sum_{i=0..m} d(i)*2^i is the base-2 representation of n.
-; Submitted by davidsteele1975
+; Submitted by Time_Traveler
 ; 0,1,0,1,2,1,0,1,2,3,2,1,2,1,0,1,2,3,2,3,4,3,2,1,2,3,2,1,2,1,0,1,2,3,2,3,4,3,2,3,4,5,4,3,4,3,2,1,2,3,2,3,4,3,2,1,2,3,2,1,2,1,0,1,2,3,2,3,4,3,2,3,4,5,4,3,4,3,2,3
 
 add $0,1
-lpb $0
-  mov $2,$0
-  div $0,2
-  add $2,$0
-  mod $2,2
-  add $3,$2
+mov $2,$0
+div $0,2
+bxo $2,$0
+mov $0,$2
+mov $1,$2
+lpb $1
+  div $1,2
+  sub $0,$1
 lpe
-add $1,$3
-mul $1,40
-mov $0,$1
-sub $0,40
-div $0,40
+sub $0,1

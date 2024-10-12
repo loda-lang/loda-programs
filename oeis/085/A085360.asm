@@ -11,10 +11,10 @@ lpb $4
   add $0,$4
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,14153 ; Expansion of 1/((1-x)^2*Product_{k>=1} (1-x^k)).
   mov $5,$4
   mul $5,$2
+  mov $0,2
   add $3,$5
 lpe
 add $1,$3

@@ -1,18 +1,22 @@
 ; A101441: n^prime(n+1).
-; Submitted by fzs600
+; Submitted by Skillz
 ; 0,1,32,2187,4194304,1220703125,16926659444736,11398895185373143,590295810358705651712,4710128697246244834921603689,10000000000000000000000000000000,340039485861577398992406882305761986971
 
 mov $1,$0
-add $1,1
-mov $4,$1
-pow $4,5
-lpb $4
-  mov $2,$3
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $1,$2
-  add $3,2
-  sub $4,$1
+add $0,2
+mov $3,$0
+pow $3,4
+lpb $3
+  add $5,1
+  mov $4,$2
+  gcd $4,$5
+  div $4,$5
+  sub $0,$4
+  add $2,1
+  mul $2,2
+  sub $3,$0
 lpe
-mov $1,$3
-add $1,1
-pow $0,$1
+mov $0,$5
+add $0,1
+pow $1,$0
+mov $0,$1

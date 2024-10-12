@@ -18,9 +18,9 @@ lpb $3
       sub $5,$1
     lpe
   lpe
-  cmp $1,4
-  cmp $1,0
+  neq $1,4
   mul $1,$5
+  sub $2,1
   sub $3,$1
 lpe
 mov $0,$3

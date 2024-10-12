@@ -9,8 +9,7 @@ lpb $0
   add $2,3
   mul $2,$0
   add $2,1
-  seq $2,51903 ; Maximal exponent in prime factorization of n.
-  mov $3,$0
+  seq $2,51903 ; Maximum exponent in the prime factorization of n.
   sub $0,1
   add $1,$2
 lpe

@@ -12,11 +12,11 @@ lpb $0
     mov $7,$4
     add $7,$2
     seq $7,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mov $10,3
-    cmp $7,$8
+    equ $7,$8
     mul $7,$$9
     add $6,$7
   lpe

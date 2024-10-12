@@ -1,16 +1,14 @@
 ; A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
-; Submitted by Science United
+; Submitted by amazing
 ; 1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1
 
 mov $2,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
-  add $0,1
-  seq $0,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
-  bxo $1,$0
+lpb $0
+  trn $1,1
+  seq $2,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
+  trn $2,2
+  mov $0,$1
 lpe
-mov $0,$1
-div $0,3
+mov $0,$2
+add $0,1
+mod $0,2

@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,288372 ; Fixed point of the mapping 00->0001, 1->01, starting with 00.
-  cmp $0,1
+  equ $0,1
   add $1,$2
   add $1,$0
 lpe

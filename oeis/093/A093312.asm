@@ -1,5 +1,5 @@
 ; A093312: Least k such that (2n + 2k) + 1 and (2n*2k) + 1 are both primes.
-; Submitted by Science United
+; Submitted by Joe
 ; 1,9,3,1,3,3,1,3,2,1,9,2,1,6,3,4,6,8,10,3,5,1,3,2,1,3,12,1,15,5,13,9,3,1,18,3,4,3,2,4,33,2,1,12,3,7,6,3,1,3,2,16,15,2,13,9,17,25,15,5,4,6,26,1,9,8,1,30,5,16,3,2,1,15,6,7,12,3,7,15
 
 add $0,1
@@ -15,7 +15,6 @@ lpb $3
   mul $2,$0
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $2,$4
-  trn $2,$6
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $1,$2
   add $4,2
@@ -25,7 +24,7 @@ lpb $3
   mul $1,0
   mul $3,$5
   sub $3,17
-  add $6,1
+  add $6,2
 lpe
 mov $0,$7
-div $0,6
+div $0,3

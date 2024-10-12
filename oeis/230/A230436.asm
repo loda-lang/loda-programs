@@ -1,23 +1,21 @@
 ; A230436: Decimal expansion of Compton wavelength in meters.
-; Submitted by NeoGen
+; Submitted by Coleslaw
 ; 2,4,2,6,3,1,0,2
 
-mov $1,$0
-mul $1,2
-add $1,1
-mov $6,$1
-add $1,1
-lpb $1
-  sub $1,1
-  div $5,2
-  add $5,$4
-  div $5,12
-  mov $4,$3
-  pow $4,$6
-  sub $4,$5
-  add $2,$4
-  bin $3,0
-  add $3,1
+add $0,2
+mov $2,$0
+sub $0,1
+pow $2,8
+lpb $2
+  mov $3,$1
+  lpb $3
+    div $3,5
+    sub $2,3
+  lpe
+  bin $0,2
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$2
+sub $0,4
 mod $0,10

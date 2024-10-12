@@ -12,7 +12,7 @@ lpb $2
   add $3,$1
   seq $3,23962 ; First digit after decimal point of cube root of n.
   add $3,5
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -13,7 +13,7 @@ lpb $4
     mov $2,$0
     seq $2,110660 ; Oblong (promic) numbers repeated.
     mov $7,$0
-    cmp $7,0
+    equ $7,0
     add $0,$7
     div $2,$0
     add $3,$2

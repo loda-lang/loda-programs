@@ -12,8 +12,7 @@ pow $4,4
 lpb $4
   mov $5,$3
   seq $5,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
-  cmp $5,0
-  cmp $5,0
+  neq $5,0
   sub $0,$5
   add $3,1
   sub $4,$0

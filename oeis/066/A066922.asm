@@ -1,26 +1,11 @@
 ; A066922: a(n) = gcd(Omega(n), omega(n)).
-; Submitted by vanos0512
+; Submitted by Skillz
 ; 0,1,1,1,1,2,1,1,1,2,1,1,1,2,2,1,1,1,1,1,2,2,1,2,1,2,1,1,1,3,1,1,2,2,2,2,1,2,2,2,1,3,1,1,1,2,1,1,1,1,2,1,1,2,2,2,2,2,1,1,1,2,1,1,2,3,1,1,2,3,1,1,1,2,1,1,2,3,1,1
 
-mov $2,2
-mov $3,1
-add $0,1
+mov $1,$0
+seq $1,87802 ; a(n) = Sum_{d|n, d nonprime} mu(d), where mu = A008683.
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+gcd $1,$0
 lpb $0
-  add $5,1
-  mul $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    add $2,1
-    sub $3,$4
-  lpe
-  add $1,1
-  lpb $0
-    dif $0,$2
-    add $5,1
-  lpe
-  gcd $1,$5
+  mov $0,$1
 lpe
-mov $0,$1

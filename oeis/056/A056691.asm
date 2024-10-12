@@ -1,5 +1,5 @@
 ; A056691: Number of divisors k of n with gcd(k+1, n) = 1.
-; Submitted by Fabrice.ltn
+; Submitted by Science United
 ; 1,1,2,2,2,1,2,3,3,2,2,3,2,2,3,4,2,2,2,3,4,2,2,4,3,2,4,4,2,3,2,5,3,2,4,5,2,2,4,5,2,1,2,4,4,2,2,6,3,3,3,4,2,3,4,6,4,2,2,5,2,2,6,6,4,3,2,4,3,3,2,7,2,2,5,4,4,2,2,7
 
 add $0,1
@@ -7,10 +7,11 @@ mov $1,1
 mov $2,$0
 lpb $0
   mov $3,$0
-  sub $0,1
+  sub $0,2
+  sub $3,1
   mul $3,$0
   gcd $3,$2
-  cmp $3,$0
+  equ $3,$0
   add $1,$3
 lpe
 mov $0,$1

@@ -1,5 +1,5 @@
 ; A030704: Numbers k such that the decimal expansion of 8^k contains no zeros (probably finite).
-; Submitted by Skillz
+; Submitted by BlisteringSheep
 ; 0,1,2,3,5,6,8,9,11,12,13,17,24,27
 
 mov $1,1
@@ -18,7 +18,7 @@ lpb $2
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,3
 lpe
 mov $0,$5
 div $0,2

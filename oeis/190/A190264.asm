@@ -20,7 +20,7 @@ pow $4,$0
 mov $2,$5
 div $2,$4
 mov $6,$2
-cmp $6,0
+equ $6,0
 add $2,$6
 div $1,$2
 mov $0,$1

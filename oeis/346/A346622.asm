@@ -11,7 +11,7 @@ lpb $3
   sub $0,$3
   seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   div $0,2
-  cmp $0,2
+  equ $0,2
   add $1,$0
 lpe
 mov $0,$1

@@ -11,7 +11,7 @@ add $0,1
 div $0,3
 sub $2,$0
 mov $3,$2
-cmp $3,0
+equ $3,0
 mov $1,$2
 mul $1,5
 add $2,$3

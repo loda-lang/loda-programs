@@ -14,11 +14,10 @@ lpb $2
   mov $1,$4
   seq $1,30 ; Initial digit of n.
   sub $1,1
-  cmp $1,5
+  equ $1,5
   add $6,$1
   mov $7,$6
-  cmp $7,$5
-  cmp $7,0
+  neq $7,$5
   sub $2,$7
 lpe
 mov $0,$4

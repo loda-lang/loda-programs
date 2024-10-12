@@ -8,7 +8,7 @@ lpb $0
   max $1,$3
   add $1,$2
   add $2,$1
-  cmp $2,8
+  equ $2,8
   mul $2,86
   add $3,2
 lpe

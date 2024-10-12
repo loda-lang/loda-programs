@@ -1,8 +1,22 @@
 ; A192674:  Floor-Sqrt transform of large central Delannoy numbers (A001850).
-; Submitted by roundup
+; Submitted by hecmac33
 ; 1,1,3,7,17,41,94,220,515,1209,2845,6711,15861,37549,89015,211287,502051,1194083,2842413,6771220,16141369,38501639,91888052,219411132,524154756,1252695124,2995034616,7163349548,17138661276,41017945745,98196952422,235147807457,563242204233
 
-seq $0,1850 ; Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
+mov $5,$0
+add $0,2
+lpb $0
+  mov $3,$0
+  add $3,$5
+  sub $0,2
+  sub $3,2
+  bin $3,$0
+  mov $4,$5
+  bin $4,$2
+  mul $4,$3
+  add $1,$4
+  add $2,2
+lpe
+mov $0,$1
+mul $0,2
+sub $0,1
 nrt $0,2
-add $$1,3
-sub $0,3

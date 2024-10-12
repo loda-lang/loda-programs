@@ -7,7 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 bin $1,$0
-cmp $0,$1
+equ $0,$1
 gcd $1,25
 div $0,2
 add $0,$1

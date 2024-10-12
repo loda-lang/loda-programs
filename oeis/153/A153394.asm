@@ -11,7 +11,7 @@ lpb $0
   mov $6,$0
   mul $6,3
   add $6,2
-  gcd $2,3
+  mov $2,3
   add $2,$6
   bin $2,$0
   mov $3,$4
@@ -21,9 +21,6 @@ lpb $0
   mul $3,6
   div $3,$4
   add $1,1
-  mov $2,$1
-  mul $2,2
-  add $2,$1
   add $5,$3
 lpe
 trn $5,2

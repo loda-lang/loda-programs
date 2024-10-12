@@ -1,5 +1,5 @@
 ; A074473: Dropping time for the 3x+1 problem: for n >= 2, number of iteration that first becomes smaller than the initial value if Collatz-function (A006370) is iterated starting at n; a(1)=1 by convention.
-; Submitted by gemini8
+; Submitted by omegaintellisys
 ; 1,2,7,2,4,2,12,2,4,2,9,2,4,2,12,2,4,2,7,2,4,2,9,2,4,2,97,2,4,2,92,2,4,2,7,2,4,2,14,2,4,2,9,2,4,2,89,2,4,2,7,2,4,2,9,2,4,2,12,2,4,2,89,2,4,2,7,2,4,2,84,2,4,2,9,2,4,2,14,2
 
 mov $3,2
@@ -15,6 +15,7 @@ lpb $3
     mov $8,$0
     pow $8,2
     lpb $8
+      add $7,$4
       mov $9,$5
       sub $9,$2
       lpb $9
@@ -38,7 +39,7 @@ lpb $3
     mul $6,$10
     add $1,$6
   lpe
-  mov $4,$1
+  mov $4,1
 lpe
-mov $0,$4
+mov $0,$1
 add $0,1

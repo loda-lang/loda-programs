@@ -14,7 +14,7 @@ lpb $3
   bin $4,2
   mod $4,$1
   sub $4,1
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   sub $3,$0

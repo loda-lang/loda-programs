@@ -14,13 +14,13 @@ lpb $2
   seq $5,181434 ; First column in matrix inverse of a mixed convolution of A052542.
   pow $3,$6
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   add $6,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -4,7 +4,7 @@
 
 mov $1,$0
 seq $1,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
-cmp $1,1
+equ $1,1
 seq $0,54526 ; Triangle T(n,k): T(n,k) = phi(k) (n >= 1, 1 <= k <= n).
 mul $0,4
 mul $0,$1

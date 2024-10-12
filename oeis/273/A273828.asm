@@ -1,4 +1,4 @@
-; A273828: Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 950", based on the 5-celled von Neumann neighborhood.
+; A273828: Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 950", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jamie Morken(s1.)
 ; 1,5,25,109,477,1981,8061,32509,130557,523261,2095101,8384509,33546237,134201341,536838141,2147418109
 ; Formula: a(n) = 4*binomial(2^n,2)+4*truncate(truncate((-binomial(2^n,2)+n)/9)^truncate((-binomial(2^n,2)+n)/9))-3

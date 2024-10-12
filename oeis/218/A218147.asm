@@ -5,7 +5,7 @@
 
 add $0,2
 mov $1,$0
-seq $1,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p = 1 (mod 4) and H(p) = p + 1 if p = 3 (mod 4).
+seq $1,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p == 1 (mod 4) and H(p) = p + 1 if p == 3 (mod 4).
 seq $0,62570 ; a(n) = phi(2*n).
 mul $0,$1
 div $0,4

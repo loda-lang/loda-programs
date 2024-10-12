@@ -10,16 +10,14 @@ lpb $2
   mov $6,$1
   seq $6,2325 ; Glaisher's J numbers.
   div $6,2
-  mov $3,$1
   mov $3,$6
+  neq $3,0
   mov $5,$6
-  add $1,1
-  cmp $3,0
-  cmp $3,0
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

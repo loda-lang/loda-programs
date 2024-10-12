@@ -14,14 +14,14 @@ lpb $3
     add $6,1
     mul $6,$2
     mov $7,$0
-    cmp $7,0
+    equ $7,0
     sub $5,$7
   lpe
   pow $6,2
   add $1,$6
   add $2,1
   mov $7,$0
-  cmp $7,0
+  equ $7,0
   sub $3,$7
 lpe
 mov $0,$1

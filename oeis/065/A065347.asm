@@ -17,7 +17,7 @@ lpb $2
   bin $4,2
   mod $3,$4
   add $3,1
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   sub $2,$0
 lpe

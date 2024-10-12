@@ -18,7 +18,7 @@ lpb $2
   sub $4,$3
   mov $3,$4
   sub $3,13
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

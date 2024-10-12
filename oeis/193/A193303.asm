@@ -11,12 +11,12 @@ lpb $2
   seq $3,8833 ; Largest square dividing n.
   sub $3,1
   seq $3,66328 ; a(n) = sum of indices of distinct prime factors of n; here, index(i-th prime) = i.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

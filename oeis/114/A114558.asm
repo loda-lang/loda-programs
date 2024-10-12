@@ -9,14 +9,14 @@ lpb $2
   mov $3,$1
   seq $3,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   sub $3,5
-  cmp $3,0
+  equ $3,0
   add $5,5
   sub $0,$3
   add $1,$5
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

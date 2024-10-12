@@ -8,7 +8,7 @@ div $2,2
 lpb $2
   mov $3,$2
   gcd $3,$0
-  cmp $3,$2
+  equ $3,$2
   mul $3,$2
   pow $3,5
   add $1,$3
