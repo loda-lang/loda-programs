@@ -1,24 +1,7 @@
 ; A055641: Number of zero digits in n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by zombie67 [MM]
 ; 1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = -10*truncate(A306958(n)/10)+A306958(n)
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  seq $0,209685 ; Sum of last two digits of n.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
-lpe
-min $1,1
-mul $1,$0
-mov $0,$2
-sub $0,$1
-sub $0,1
-mod $0,2
-add $0,2
-mod $0,2
+seq $0,306958 ; If the decimal expansion of n is d_1 ... d_k, a(n) = Sum d_i!*binomial(10,d_i).
+mod $0,10

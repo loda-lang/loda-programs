@@ -1,5 +1,5 @@
 ; A011648: 99th cyclotomic polynomial.
-; Submitted by Rodney Duane
+; Submitted by Science United
 ; 1,0,0,-1,0,0,0,0,0,1,0,0,-1,0,0,0,0,0,1,0,0,-1,0,0,0,0,0,1,0,0,-1,0,0,1,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,-1,0,0,1
 
 add $0,3
@@ -9,7 +9,7 @@ lpb $0
   mov $3,$0
   max $3,0
   seq $3,14018 ; Inverse of 9th cyclotomic polynomial.
-  mul $1,7
+  mul $1,-2
   add $1,30
   add $2,$3
 lpe

@@ -19,10 +19,10 @@ lpb $10
   add $3,$7
   mov $5,$6
   mov $9,$0
-  cmp $9,0
+  equ $9,0
   sub $8,$9
 lpe
 sub $2,$3
 mov $1,$2
-cmp $1,0
+equ $1,0
 mov $0,$1

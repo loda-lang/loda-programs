@@ -8,9 +8,7 @@ lpb $1
   sub $0,2
   max $1,$0
   dif $1,$0
-  lpb $1
-    mov $1,4
-  lpe
+  min $1,4
 lpe
 div $0,2
 add $0,1

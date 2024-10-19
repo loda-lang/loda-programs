@@ -14,12 +14,10 @@ lpb $0
     add $2,2
     sub $3,$4
   lpe
-  lpb $0
-    mov $0,0
-  lpe
   mov $5,$1
   div $5,$2
   mul $5,-1
+  min $0,0
   add $1,$5
 lpe
 mov $0,$1

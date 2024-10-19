@@ -1,31 +1,14 @@
 ; A040637: Continued fraction for sqrt(663).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Conan
 ; 25,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1,50,1,2,1
+; Formula: a(n) = floor(max(4*gcd(n,4)^2-15,0)/(0^n+1))+1
 
-mul $0,2
-mov $2,$0
-mov $3,10
-gcd $0,8
-lpb $2
-  mov $2,3
-  add $0,6
-  mov $3,7
-lpe
-mul $0,$3
-trn $0,63
+pow $1,$0
+add $1,1
+gcd $0,4
+pow $0,2
+sub $0,3
+mul $0,4
+trn $0,3
+div $0,$1
 add $0,1
-dif $0,2
-mov $4,$0
-mul $4,2
-div $0,4
-add $4,$0
-mul $0,7
-add $0,$4
-dif $0,2
-dif $0,4
-add $0,1
-mul $0,3
-add $1,$0
-div $1,2
-mov $0,$1
-sub $0,2

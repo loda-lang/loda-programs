@@ -1,26 +1,21 @@
 ; A018422: Divisors of 376.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Joe
 ; 1,2,4,8,47,94,188,376
+; Formula: a(n) = d(n)+1, b(n) = b(n-1)+c(n-1)+2, b(3) = 45, b(2) = 6, b(1) = 2, b(0) = 0, c(n) = max(12*truncate(10/2)-12*c(n-1)+1,b(n-1)+c(n-1)+2), c(3) = 45, c(2) = 37, c(1) = 2, c(0) = 0, d(n) = b(n-1)+1, d(3) = 7, d(2) = 3, d(1) = 1, d(0) = 0
 
-mov $3,3
-mov $5,3
-mov $6,3
 lpb $0
   sub $0,1
-  add $3,$5
-  mul $4,2
-  add $4,3
-  mov $1,$3
-  sub $1,$5
-  mul $1,$2
-  div $1,$4
-  sub $2,1
-  sub $5,$3
-  mul $5,-1
-  add $5,$1
-  add $3,$1
-  mul $6,2
-  add $6,$1
+  div $3,2
+  sub $3,$2
+  mul $3,12
+  add $2,2
+  mov $4,$1
+  add $4,1
+  add $1,$2
+  mov $2,$3
+  add $2,1
+  max $2,$1
+  mov $3,10
 lpe
-mov $0,$6
-dif $0,3
+mov $0,$4
+add $0,1

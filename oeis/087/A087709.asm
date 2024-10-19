@@ -10,7 +10,7 @@ lpb $3
   add $1,$0
   lpb $1
     sub $1,1
-    cmp $2,0
+    equ $2,0
     add $0,1
     sub $1,$2
   lpe

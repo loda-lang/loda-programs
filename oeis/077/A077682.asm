@@ -20,12 +20,12 @@ lpb $2
   add $5,2
   sub $3,1
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

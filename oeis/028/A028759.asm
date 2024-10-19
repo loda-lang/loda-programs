@@ -10,12 +10,12 @@ lpb $2
   add $3,1
   mod $3,23
   sub $3,1
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,30
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

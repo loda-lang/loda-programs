@@ -1,25 +1,22 @@
 ; A010160: Continued fraction for sqrt(88).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 9,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2,1,1,1,2,18,2
 
-mov $3,$0
-gcd $3,6
+mov $2,$0
+gcd $2,6
+add $0,1
 lpb $0
-  mov $0,$3
-  sub $0,1
-  mul $3,2
-  trn $3,6
-  add $3,2
+  mov $0,$2
+  mul $2,2
+  trn $2,6
+  add $2,2
 lpe
-bin $3,2
-add $0,$3
-add $0,$3
-sub $0,1
-sub $2,$0
-div $2,5
-mul $2,2
 add $0,$2
-mov $1,4
-div $1,$0
-max $0,$1
-div $0,2
+add $0,$2
+sub $0,1
+mov $1,3
+sub $1,$0
+div $1,2
+pow $1,$1
+add $0,$1
+sub $0,3

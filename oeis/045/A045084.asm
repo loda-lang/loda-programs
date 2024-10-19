@@ -13,20 +13,18 @@ lpb $2
   lpb $3
     sub $3,1
     mov $5,$3
-    add $5,$6
+    mul $5,3
     mod $5,4
     mul $5,$4
     add $3,94
     div $3,4
     max $4,$5
-    mov $6,1
   lpe
   dif $4,2
   div $4,28
-  sub $4,3
   mov $3,$4
-  div $3,4
-  cmp $3,2
+  sub $3,5
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -20,6 +20,6 @@ lpb $1
   add $6,$4
   sub $7,1
   sub $2,3
-  cmp $3,3
+  equ $3,3
 lpe
 mov $0,$6

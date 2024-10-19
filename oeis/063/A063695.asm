@@ -1,15 +1,11 @@
 ; A063695: Remove even-positioned bits from the binary expansion of n.
-; Submitted by waffleironhead
+; Submitted by vanos0512
 ; 0,0,2,2,0,0,2,2,8,8,10,10,8,8,10,10,0,0,2,2,0,0,2,2,8,8,10,10,8,8,10,10,32,32,34,34,32,32,34,34,40,40,42,42,40,40,42,42,32,32,34,34,32,32,34,34,40,40,42,42,40,40,42,42,0,0,2,2,0,0,2,2,8,8,10,10,8,8,10,10
 
-mov $2,2
 div $0,2
-lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  div $0,4
-  add $1,$3
-  mul $2,4
-lpe
+mov $1,2730
+bxo $1,$0
+sub $0,3
+add $1,$0
 mov $0,$1
+sub $0,2727

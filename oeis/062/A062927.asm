@@ -12,7 +12,7 @@ lpb $2
   mul $3,2
   seq $3,4166 ; Sum of digits of 3^n.
   mod $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

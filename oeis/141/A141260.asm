@@ -5,5 +5,5 @@ mov $1,1
 sub $1,$0
 gcd $1,12
 bin $1,4
-cmp $1,0
+equ $1,0
 mov $0,$1

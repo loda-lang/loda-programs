@@ -1,5 +1,5 @@
 ; A102419: "Dropping time" in 3x+1 problem starting at n (number of steps to reach a lower number than starting value); a(1) = 0 by convention. Also called glide(n).
-; Submitted by omegaintellisys
+; Submitted by mmonnin
 ; 0,1,6,1,3,1,11,1,3,1,8,1,3,1,11,1,3,1,6,1,3,1,8,1,3,1,96,1,3,1,91,1,3,1,6,1,3,1,13,1,3,1,8,1,3,1,88,1,3,1,6,1,3,1,8,1,3,1,11,1,3,1,88,1,3,1,6,1,3,1,83,1,3,1,8,1,3,1,13,1
 
 mov $3,2
@@ -12,6 +12,7 @@ lpb $3
     sub $7,1
     mov $2,$0
     sub $0,1
+    bin $0,$7
     mov $8,$0
     pow $8,2
     lpb $8
