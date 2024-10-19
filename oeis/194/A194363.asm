@@ -9,5 +9,5 @@ seq $0,1177 ; Fibonacci entry points: a(n) = least k >= 1 such that n divides Fi
 mov $2,$0
 bin $0,2
 mod $0,$2
-cmp $1,$0
+equ $1,$0
 sub $0,$1

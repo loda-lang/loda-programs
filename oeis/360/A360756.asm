@@ -12,8 +12,7 @@ lpb $0
   add $4,$0
   sub $4,1
   bin $4,$0
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$4
   mul $1,-2
   add $1,$3

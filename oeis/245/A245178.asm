@@ -17,11 +17,11 @@ lpb $2
   sub $3,1
   seq $3,181591 ; a(n) = binomial(bigOmega(n),omega(n)), where omega = A001221 and bigOmega = A001222.
   sub $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

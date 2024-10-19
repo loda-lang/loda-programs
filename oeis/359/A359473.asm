@@ -8,5 +8,5 @@ mov $2,$1
 seq $0,75101 ; Numerator of 2^n/n.
 gcd $1,$0
 div $2,$1
-cmp $2,1
+equ $2,1
 mov $0,$2

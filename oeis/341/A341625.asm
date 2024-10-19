@@ -9,5 +9,5 @@ mov $0,$2
 sub $0,1
 mov $1,$0
 max $1,0
-cmp $1,$0
+equ $1,$0
 mov $0,$1

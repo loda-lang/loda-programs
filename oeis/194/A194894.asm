@@ -18,7 +18,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mul $4,$2
-    cmp $5,4
+    equ $5,4
     add $5,1
     sub $5,$4
     mul $4,$2

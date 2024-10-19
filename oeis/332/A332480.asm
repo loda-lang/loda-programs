@@ -8,7 +8,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,176360 ; a(n) = quadrant of unit circle corresponding to n radians.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

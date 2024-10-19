@@ -1,26 +1,14 @@
 ; A159860: The maximum length of a string of identical characters which can be reduced to one character in "n" nested substitution operations, e.g. replace(string, substring, character) such that all shorter strings will also reduce to one character.
-; Submitted by USTL-FIL (Lille Fr)
-; 2,4,10,40,460,53590,718052410,128899816953780640,4313494300416744426870901874924164733839903365825579313972159982440
+; Submitted by Ralfy
+; 2,4,10,40,460,53590,718052410,128899816953780640,4153790702679538920955222740373360,4313494300416744426870901874924164733839903365825579313972159982440
+; Formula: a(n) = 2*b(n)-2, b(n) = binomial(b(n-1)+1,2), b(0) = 2
 
-mov $2,2
-mov $4,2
-mul $0,2
+mov $1,2
 lpb $0
-  sub $1,$2
-  div $1,2
-  cmp $3,4
-  add $3,$1
-  mod $3,2
-  add $3,2
-  add $4,1
-  bin $4,2
-  sub $0,$3
-  mul $1,$4
-  add $1,2
-  add $1,$2
-  mul $1,$4
-  mul $2,16
+  sub $0,1
+  add $1,1
+  bin $1,2
 lpe
-mov $0,$4
-sub $0,1
+mov $0,$1
 mul $0,2
+sub $0,2

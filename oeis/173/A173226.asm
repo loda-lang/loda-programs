@@ -1,15 +1,14 @@
 ; A173226: Partial sums of A000364.
-; Submitted by LCB001
+; Submitted by shiva
 ; 1,2,7,68,1453,51974,2754739,202115720,19593627865,2424473303306,372795661540831,69721670054678732,15584255833611765637,4102656765126735657998,1256362298168756601126283,442800255547191861154809104,177962191835086481297819598769
-; Formula: a(n) = truncate(b(n)/2)+1, b(n) = 2*A000364(n)+b(n-1), b(0) = 0
+; Formula: a(n) = truncate(b(n)/2)+1, b(n) = b(n-1)+A011248(n), b(0) = 0
 
 lpb $0
   mov $2,$0
-  seq $2,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
-  mul $2,2
+  seq $2,11248 ; Twice A000364.
   sub $0,1
   add $1,$2
 lpe
-div $1,2
-add $1,1
 mov $0,$1
+div $0,2
+add $0,1

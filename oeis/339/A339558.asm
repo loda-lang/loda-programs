@@ -16,7 +16,7 @@ lpb $4
   pow $0,$1
   seq $0,124522 ; a(n) = smallest k such that 2nk-1 and 2nk+1 are primes.
   mov $5,1
-  cmp $5,$0
+  equ $5,$0
   mul $1,$5
   add $3,$1
 lpe

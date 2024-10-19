@@ -9,10 +9,9 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
+    neq $4,0
     sub $0,1
     add $2,1
-    cmp $4,0
-    cmp $4,0
     sub $3,$4
   lpe
   mod $0,-1

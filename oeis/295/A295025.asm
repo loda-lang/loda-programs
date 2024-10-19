@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   pow $3,3
   seq $3,54055 ; Largest digit of n.
-  cmp $3,5
+  equ $3,5
   add $3,$4
   gcd $3,2
   sub $0,$3
@@ -18,7 +18,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

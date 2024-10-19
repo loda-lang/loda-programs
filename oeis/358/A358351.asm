@@ -10,7 +10,7 @@ lpb $2
   mov $0,$4
   sub $0,$2
   seq $0,61762 ; a(n) = (sum of digits of n) + (product of digits of n).
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

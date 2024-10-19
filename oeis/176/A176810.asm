@@ -6,7 +6,6 @@ mul $0,2
 trn $0,1
 mov $1,$0
 div $1,2
-mov $4,0
 sub $0,1
 gcd $0,2
 mov $2,4
@@ -24,7 +23,7 @@ lpb $3
   sub $1,$6
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   add $2,6
   mul $3,$5
   sub $3,18

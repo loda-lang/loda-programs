@@ -12,7 +12,7 @@ lpb $0
   sub $2,1
   add $5,$3
   add $8,$7
-  cmp $8,0
+  equ $8,0
   sub $8,1
   sub $3,$1
   add $4,2

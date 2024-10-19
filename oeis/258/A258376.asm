@@ -13,8 +13,20 @@ lpb $3
   mov $4,$0
   add $4,$0
   add $0,1
-  mov $6,$0
-  seq $6,189663 ; Partial sums of A189661.
+  mov $8,$0
+  add $8,$0
+  mul $8,2
+  add $8,$0
+  mul $8,$0
+  nrt $8,2
+  mov $9,$0
+  div $9,-1
+  add $8,$9
+  mov $9,$8
+  div $9,2
+  mov $7,$0
+  sub $7,$9
+  mov $6,$7
   mul $6,2
   add $0,$6
   sub $0,3

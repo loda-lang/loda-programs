@@ -6,7 +6,7 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
-cmp $0,$1
+equ $0,$1
 add $1,1
 sub $2,$1
 gcd $2,$0

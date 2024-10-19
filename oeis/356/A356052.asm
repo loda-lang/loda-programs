@@ -1,21 +1,44 @@
 ; A356052: Intersection of A001951 and A137803.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Vato
 ; 1,5,7,9,11,15,19,21,22,24,26,28,32,36,38,42,45,49,53,55,57,59,63,65,66,70,72,74,76,80,82,84,86,89,91,93,97,101,103,107,111,114,118,120,124,128,130,132,135,137,141,145,147,149,151,155,156,158,162,164
 
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $8,$1
+  add $8,1
+  mul $8,2
+  pow $8,2
+  mul $8,2
+  mov $9,$8
+  nrt $9,2
   mov $3,$1
-  seq $3,137803 ; a(n) = floor(n*(sqrt(2) + 1/2)).
+  add $3,1
+  add $3,$9
+  div $3,2
   mov $5,$3
-  sub $3,1
-  seq $3,80764 ; First differences of A049472, floor(n/sqrt(2)).
+  mov $6,$3
+  pow $6,2
+  mul $6,2
+  mov $7,$6
+  nrt $7,2
+  add $3,1
+  pow $3,2
+  mul $3,2
+  mov $10,$3
+  nrt $10,2
+  mov $6,$7
+  mul $6,$10
+  mov $3,$10
+  add $3,$6
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,$4
 lpe

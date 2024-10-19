@@ -14,7 +14,7 @@ lpb $0
     trn $5,1
     seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
     sub $5,1
-    cmp $5,2
+    equ $5,2
     add $1,$5
     sub $4,$0
   lpe

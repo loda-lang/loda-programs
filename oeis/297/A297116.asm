@@ -14,7 +14,7 @@ lpb $4
   sub $0,$4
   mov $1,$0
   gcd $1,$4
-  cmp $1,1
+  equ $1,1
   sub $4,1
   sub $0,$1
   add $0,1
