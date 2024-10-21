@@ -11,7 +11,7 @@ div $0,-1
 add $0,$1
 min $0,$3
 mov $2,$1
-cmp $2,2
+equ $2,2
 add $2,1
 bin $2,$0
 mov $0,$2

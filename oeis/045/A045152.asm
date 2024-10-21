@@ -14,14 +14,10 @@ lpb $2
     sub $3,1
     mov $5,$3
     mul $5,3
-    add $5,$6
     mod $5,4
     mul $5,$4
-    add $3,95
     div $3,4
-    add $3,1
     max $4,$5
-    mov $6,1
   lpe
   dif $4,2
   div $4,28
@@ -33,6 +29,3 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-div $0,3
-sub $0,11
-mul $0,3

@@ -1,17 +1,40 @@
 ; A356054: Intersection of A001952 and A137803.
-; Submitted by mmonnin
+; Submitted by Rutor
 ; 3,13,17,30,34,40,44,47,51,61,68,78,88,95,99,105,109,112,116,122,126,133,139,143,153,160,170,174,187,191,204,208,218,225,235,245,252,256,262,266,269,273,279,283,290,300,310,317,327,331,334,338,344,348
 
 mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $8,$1
+  add $8,1
+  mul $8,2
+  pow $8,2
+  mul $8,2
+  mov $9,$8
+  nrt $9,2
   mov $3,$1
-  seq $3,137803 ; a(n) = floor(n*(sqrt(2) + 1/2)).
+  add $3,1
+  add $3,$9
+  div $3,2
   mov $5,$3
-  sub $3,1
-  seq $3,80764 ; First differences of A049472, floor(n/sqrt(2)).
-  equ $3,0
+  mov $6,$3
+  pow $6,2
+  mul $6,2
+  mov $7,$6
+  nrt $7,2
+  add $3,1
+  pow $3,2
+  mul $3,2
+  mov $10,$3
+  nrt $10,2
+  mov $6,$7
+  mul $6,$10
+  add $6,1
+  mov $3,$10
+  add $3,$6
+  add $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0

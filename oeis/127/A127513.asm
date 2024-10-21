@@ -3,9 +3,22 @@
 
 lpb $0
   mov $2,$0
-  seq $2,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  sub $2,$0
+  sub $2,1
+  mov $3,$0
+  seq $3,73184 ; Number of cubefree divisors of n.
+  mov $5,$3
+  trn $3,56
+  add $3,56
+  mul $3,$5
+  sub $3,32
+  mod $3,3
+  add $3,1
+  mov $4,$2
+  sub $4,$3
+  add $4,3
   sub $0,1
-  add $1,$2
+  add $1,$4
   mul $1,2
 lpe
 add $1,1

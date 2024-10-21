@@ -1,5 +1,5 @@
 ; A018759: Divisors of 986.
-; Submitted by Coleslaw
+; Submitted by Science United
 ; 1,2,17,29,34,58,493,986
 
 mov $1,1
@@ -21,5 +21,6 @@ lpb $0
   lpe
   add $1,3
   add $2,1
+  sub $3,1
 lpe
 mov $0,$2

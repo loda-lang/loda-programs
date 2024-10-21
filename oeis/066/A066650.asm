@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,78359 ; Number of ways to write n as sum of a positive square and a positive cube.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

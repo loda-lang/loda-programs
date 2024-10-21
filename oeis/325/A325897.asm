@@ -1,18 +1,16 @@
 ; A325897: Digits of the 2-adic integer 5^(1/5).
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 1,0,1,0,1,0,0,1,0,0,1,0,0,1,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,0,0
-; Formula: a(n) = truncate((2*c(n+1))/b(n+1))+1, b(n) = 2*b(n-1), b(2) = 4, b(1) = 2, b(0) = 1, c(n) = d(n-1)^5-2*truncate((d(n-1)^5+d(n-1)-5)/(2*b(n-1)))*b(n-1)+d(n-1)-4, c(2) = -2, c(1) = 0, c(0) = 0, d(n) = d(n-1)^5-2*truncate((d(n-1)^5+d(n-1)-5)/(2*b(n-1)))*b(n-1)+d(n-1)-5, d(2) = -3, d(1) = -1, d(0) = 0
+; Formula: a(n) = -2*truncate((truncate((2*c(n+1))/b(n+1))+2)/2)+truncate((2*c(n+1))/b(n+1))+2, b(n) = 2*b(n-1), b(2) = 4, b(1) = 2, b(0) = 1, c(n) = (c(n-1)-1)^5-2*truncate(((c(n-1)-1)^5+c(n-1)-6)/(2*b(n-1)))*b(n-1)+c(n-1)-5, c(3) = -6, c(2) = 0, c(1) = 1, c(0) = 0
 
 mov $1,1
 add $0,1
 lpb $0
   sub $0,1
   mul $1,2
-  mov $4,$3
-  add $4,1
   pow $3,5
   sub $3,6
-  add $3,$4
+  add $3,$2
   mod $3,$1
   mov $2,1
   add $2,$3
@@ -20,4 +18,5 @@ lpe
 mul $2,2
 div $2,$1
 mov $0,$2
-add $0,1
+add $0,2
+mod $0,2

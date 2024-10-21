@@ -1,18 +1,15 @@
 ; A040142: Continued fraction for sqrt(155).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by kundor
 ; 12,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2,24,2,4,2
+; Formula: a(n) = 2*truncate((4*gcd(n,4)^2-7)/(5*0^n+5))+2
 
-mov $2,$0
-gcd $2,4
-mov $1,4
-pow $1,$2
-lpb $0
-  mov $0,1
-  mul $1,2
-lpe
-div $1,24
-mov $0,$1
+pow $1,$0
+gcd $0,4
+pow $0,2
+add $1,1
+mul $1,5
+mul $0,4
+sub $0,7
+div $0,$1
 add $0,1
-div $0,2
 mul $0,2
-add $0,2

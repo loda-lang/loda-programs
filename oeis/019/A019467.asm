@@ -12,7 +12,7 @@ lpb $2
   bin $3,$1
   div $3,$4
   mod $3,3
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

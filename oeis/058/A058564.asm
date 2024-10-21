@@ -4,7 +4,6 @@
 
 mov $1,$0
 add $1,1
-cmp $1,2
-cmp $1,0
+neq $1,2
 seq $0,226006 ; McKay-Thompson series of class 21B for the Monster group with a(0) = -1.
 mul $0,$1

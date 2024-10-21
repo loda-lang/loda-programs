@@ -14,7 +14,5 @@ nrt $3,2
 add $3,$1
 mov $2,$3
 div $2,2
-add $2,1
 add $1,$2
 mov $0,$1
-sub $0,1

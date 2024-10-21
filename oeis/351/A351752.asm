@@ -10,11 +10,11 @@ lpb $2
   min $0,$4
   mov $3,$2
   dif $3,$0
-  cmp $0,0
+  equ $0,0
   sub $0,2
   add $0,$3
   mul $3,$4
-  cmp $3,$2
+  equ $3,$2
   add $5,$3
   mul $3,$0
   add $1,$3

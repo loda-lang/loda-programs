@@ -1,13 +1,24 @@
 ; A374864: Obverse convolution (1)**A001950; see Comments.
-; Submitted by Science United
+; Submitted by Coleslaw
 ; 1,3,18,144,1584,22176,354816,6741504,141571584,3397718016,91738386432,2660413206528,85133222608896,2979662791311360,110247523278520320,4409900931140812800,185215839107914137600,8334712759856136192000,400066212473094537216000
 
 mov $1,1
 mov $2,$0
 lpb $2
-  seq $2,4957 ; a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
+  mov $3,$2
+  add $3,$2
+  mul $3,2
+  add $3,$2
+  mul $3,$2
+  nrt $3,2
+  add $3,$2
+  mov $4,$3
+  div $4,2
+  add $4,1
+  add $4,$2
+  min $3,$4
   sub $0,1
-  mul $1,$2
+  mul $1,$3
   mov $2,$0
 lpe
 mov $0,$1

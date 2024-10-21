@@ -13,17 +13,16 @@ lpb $2
   sub $5,1
   seq $5,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   sub $5,1
-  mov $3,$1
   mov $3,$5
   mul $3,2
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

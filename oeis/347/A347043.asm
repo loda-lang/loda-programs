@@ -20,7 +20,7 @@ lpb $0
     mov $2,$3
     add $6,$1
   lpe
-  mov $5,1
+  add $5,1
   lpb $5
     mov $6,$5
     sub $5,$4

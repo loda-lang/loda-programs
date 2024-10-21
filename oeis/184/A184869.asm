@@ -7,14 +7,24 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,63957 ; Numbers not of the form round(m*sqrt(2)) for any integer m, i.e., complement of A022846.
+  mul $3,2
+  add $3,1
+  mov $5,0
+  max $5,$3
+  pow $3,2
+  mul $3,8
+  nrt $3,2
+  add $3,2
+  div $3,4
+  add $5,$3
+  mov $3,$5
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

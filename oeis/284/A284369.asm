@@ -12,7 +12,7 @@ lpb $0
   div $1,2
   add $3,$1
   gcd $3,4
-  cmp $4,$0
+  equ $4,$0
   mul $2,2
   mul $2,$3
   div $3,2
