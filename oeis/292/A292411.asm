@@ -1,25 +1,9 @@
 ; A292411: a(n) = ((prime(n) - 1)/2)^2 modulo prime(n).
-; Submitted by Kotenok2000
+; Submitted by Drago75
 ; 1,4,2,3,10,13,5,6,22,8,28,31,11,12,40,15,46,17,18,55,20,21,67,73,76,26,27,82,85,32,33,103,35,112,38,118,41,42,130,45,136,48,145,148,50,53,56,57,172,175,60,181,63,193,66,202,68,208,211,71,220,77,78,235,238,83,253,87,262
+; Formula: a(n) = truncate(A014682(A168565(n))/3)+1
 
-mov $4,1
-add $0,1
-lpb $0
-  sub $0,1
-  add $4,1
-  mov $5,$4
-  cmp $5,0
-  add $5,$4
-  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  mov $4,$5
-lpe
-mov $1,81
-mul $1,$4
-mov $3,$1
-mod $1,4
-mov $2,4
-sub $2,$1
-mul $2,$3
-mov $0,$2
-div $0,324
+seq $0,168565 ; Let p = prime(n); then a(n) = p + (p-1)/2.
+seq $0,14682 ; The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
+div $0,3
 add $0,1

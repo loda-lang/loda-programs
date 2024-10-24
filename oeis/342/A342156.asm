@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   add $1,$2
   sub $3,1
-  cmp $3,2
+  equ $3,2
   mov $2,$0
   seq $2,40 ; The prime numbers.
   mod $2,3

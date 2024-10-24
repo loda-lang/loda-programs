@@ -1,31 +1,24 @@
 ; A144612: Sturmian word of slope (3-sqrt(3))/2.
-; Submitted by Skillz
+; Submitted by zombie67 [MM]
 ; 1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1
 
-mov $3,2
-lpb $3
-  div $3,2
-  mov $1,$0
-  add $1,$3
-  mov $7,0
-  sub $7,$1
-  mov $2,$1
+add $0,3
+lpb $0
+  sub $0,3
+  sub $3,1
+  sub $0,$3
+  mov $2,$0
   add $2,1
-  mov $6,$2
-  mul $6,2
-  add $6,$2
-  mul $6,$2
-  nrt $6,2
-  add $6,$2
-  mov $2,$6
-  div $2,2
-  add $2,$7
-  mov $5,$3
-  mul $5,$2
-  mov $1,$2
-  add $4,$5
+  mov $4,$2
+  mul $4,2
+  add $4,$2
+  mul $4,$2
+  nrt $4,2
+  add $4,$2
+  div $4,2
+  mul $2,2
+  add $2,$4
+  add $1,$2
 lpe
-sub $4,$1
-mov $0,$4
-add $0,1
+mov $0,$1
 mod $0,2

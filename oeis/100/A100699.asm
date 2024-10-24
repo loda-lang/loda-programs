@@ -17,7 +17,7 @@ lpb $0
     trn $7,1
     seq $7,354819 ; a(n) = 1 if n is a nonprime squarefree number, otherwise 0.
     sub $7,1
-    cmp $7,0
+    equ $7,0
     mov $9,10
     add $9,$5
     min $10,$0

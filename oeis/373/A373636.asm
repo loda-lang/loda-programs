@@ -9,12 +9,13 @@ lpb $2
   add $0,$2
   sub $0,1
   lpb $0
+    mov $1,$5
     add $3,1
     mov $4,$0
     div $4,$3
     mul $4,$5
     sub $0,3
-    mov $1,$5
+    min $0,$5
     add $5,$4
   lpe
   sub $2,$0

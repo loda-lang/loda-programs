@@ -1,22 +1,22 @@
 ; A124698: Number of base 5 circular n-digit numbers with adjacent digits differing by 1 or less.
-; Submitted by Skyman
+; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 1,5,13,29,73,185,481,1265,3361,8993,24193,65345,177025,480641,1307137,3559169,9699841,26452481,72173569,196989953,537802753,1468536833,4010582017,10954043393,29920862209,81733033985,223274237953
-; Formula: a(n) = 4*d(n)+1, b(n) = 2*b(n-1)+2*b(n-2), b(4) = 32, b(3) = 12, b(2) = 4, b(1) = 2, b(0) = 0, c(n) = 2*c(n-1)-b(n-3)+b(n-1), c(5) = 120, c(4) = 46, c(3) = 18, c(2) = 7, c(1) = 3, c(0) = 1, d(n) = c(n-1), d(4) = 18, d(3) = 7, d(2) = 3, d(1) = 1, d(0) = 0
 
-mov $1,1
 mov $3,1
-mov $4,1
+mov $5,-1
+mov $1,$0
+sub $1,1
 lpb $0
   sub $0,1
-  add $1,$3
-  mov $5,$3
-  mov $3,$4
-  add $3,$2
-  mov $4,$2
-  mov $2,$3
-  mul $2,2
-  add $3,$1
+  mul $3,2
+  mov $4,$3
+  add $3,$5
+  mov $5,$4
 lpe
-mov $0,$5
+mov $2,2
+pow $2,$1
+mov $0,$3
+add $0,$2
+div $0,2
 mul $0,4
 add $0,1

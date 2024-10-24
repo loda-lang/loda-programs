@@ -1,19 +1,20 @@
 ; A359309: Number of divisors of 6*n-5 of form 6*k+1.
-; Submitted by Christian Krause
+; Submitted by PaoloNasca
 ; 1,2,2,2,2,2,2,2,3,2,2,2,2,2,2,4,2,2,2,2,2,2,4,2,2,2,2,2,3,4,2,2,2,2,2,2,4,2,2,2,2,4,2,4,2,2,2,2,2,2,4,2,2,2,4,2,2,4,2,2,3,2,2,2,4,2,2,4,2,2,2,4,2,2,2,2,2,2,4,4
 
+mov $1,1
 mov $2,$0
-add $2,1
-mov $4,$0
-add $4,1
-lpb $4
+lpb $2
+  add $2,1
+  sub $4,$3
   sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  add $2,5
-  add $3,$1
+  add $3,2
+  mov $5,$0
+  mod $5,$4
+  equ $5,0
+  sub $0,1
+  add $1,$5
+  sub $2,$3
+  mov $3,5
 lpe
-mov $0,$3
+mov $0,$1

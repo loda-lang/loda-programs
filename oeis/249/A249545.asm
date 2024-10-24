@@ -27,7 +27,7 @@ lpb $2
   min $3,1
   sub $0,$3
   add $1,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 sub $5,$4
 mov $0,$5

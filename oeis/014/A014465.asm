@@ -10,12 +10,11 @@ lpb $2
   mov $3,$1
   seq $3,63691 ; Number of solutions to x^2 + y^2 + z^2 = n in positive integers.
   mov $5,$3
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

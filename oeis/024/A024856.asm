@@ -12,7 +12,7 @@ lpb $2
   mov $0,$1
   sub $0,$2
   seq $0,73424 ; Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
-  cmp $0,0
+  equ $0,0
   add $3,$0
   add $4,$3
 lpe

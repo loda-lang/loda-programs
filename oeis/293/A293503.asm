@@ -4,13 +4,11 @@
 
 pow $0,2
 mov $1,$0
-add $1,$0
+mul $1,2
 mul $1,$0
 nrt $1,2
-mov $0,$1
-add $1,$0
 mov $2,$1
-div $2,2
 add $2,1
+mul $1,2
 min $1,$2
 mov $0,$1

@@ -1,19 +1,8 @@
 ; A151878: Weight distribution of [255,37,91] primitive binary BCH code.
-; Submitted by kundor
+; Submitted by Odd-Rod
 ; 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = A058543(n)*0^n
 
-lpb $0
-  mov $1,$0
-  div $0,2
-  sub $1,$0
-  bin $2,$1
-  mul $2,2
-  add $2,$1
-lpe
-mov $0,$2
-add $0,1
-div $0,2
-gcd $0,38
-add $0,314
-nrt $0,2
-sub $0,17
+pow $1,$0
+seq $0,58543 ; McKay-Thompson series of class 18e for the Monster group.
+mul $0,$1
