@@ -8,7 +8,7 @@ lpb $2
   add $1,1
   mov $3,$1
   seq $3,99244 ; Greatest common divisor of length of n in binary representation and its number of ones.
-  cmp $3,1
+  equ $3,1
   add $4,$3
 lpe
 mov $0,$4

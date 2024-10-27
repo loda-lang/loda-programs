@@ -1,7 +1,8 @@
 ; A045152: Numbers whose base-4 representation contains exactly three 2's and four 3's.
-; Submitted by Science United
+; Submitted by AnandBhat
 ; 11007,11199,11247,11259,11262,11967,12015,12027,12030,12207,12219,12222,12267,12270,12282,15039,15087,15099,15102,15279,15291,15294,15339,15342,15354,16047,16059,16062,16107,16110
 
+mov $1,0
 mov $2,$0
 add $0,1
 add $2,7
@@ -11,7 +12,6 @@ lpb $2
   mov $4,1
   mov $3,$1
   lpb $3
-    sub $3,1
     mov $5,$3
     mul $5,3
     mod $5,4
@@ -29,3 +29,8 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
+mul $0,2
+add $0,10923
+sub $0,22015
+div $0,2
+add $0,11007

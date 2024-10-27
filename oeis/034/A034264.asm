@@ -1,16 +1,14 @@
 ; A034264: a(n) = f(n,4) where f is given in A034261.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by TheXiron
 ; 0,1,11,56,196,546,1302,2772,5412,9867,17017,28028,44408,68068,101388,147288,209304,291669,399399,538384,715484,938630,1216930,1560780,1981980,2493855,3111381,3851316,4732336,5775176,7002776,8440432
-; Formula: a(n) = n*binomial(-n,4)+a(n-1), a(0) = 0
+; Formula: a(n) = truncate((binomial(n+4,5)*(5*n+2)-binomial(n+4,5))/6)
 
-lpb $0
-  mov $2,$0
-  mov $4,$0
-  sub $0,1
-  mov $3,0
-  sub $3,$4
-  bin $3,4
-  mul $3,$2
-  add $1,$3
-lpe
-mov $0,$1
+mov $2,$0
+add $2,4
+mul $0,5
+add $0,2
+mov $1,$2
+bin $1,5
+mul $0,$1
+sub $0,$1
+div $0,6

@@ -17,8 +17,8 @@ lpb $0
     trn $7,1
     seq $7,323170 ; a(n) = 1 if (2*phi(n)) < n, 0 otherwise, where phi is Euler totient function (A000010).
     add $7,2
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$5
     mov $10,$4

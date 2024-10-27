@@ -1,19 +1,18 @@
 ; A067395: First differences of A067368.
-; Submitted by LeChat51X
+; Submitted by Lord_Possum
 ; 4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4
 
-mov $4,$0
-mov $3,2
-lpb $3
-  div $3,2
-  mov $0,$4
-  add $0,$3
-  seq $0,67368 ; a(n) is the smallest positive even integer that cannot be expressed as the product of two or three previous terms (not necessarily distinct).
-  mov $2,$3
-  mul $2,$0
-  mul $4,$3
-  add $1,$2
-  mov $5,$0
+mov $1,2
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $3,$1
+  lpb $3
+    dif $3,8
+  lpe
+  gcd $3,2
+  add $1,$3
 lpe
-sub $1,$5
-mov $0,$1
+mov $0,$3
+mul $0,2

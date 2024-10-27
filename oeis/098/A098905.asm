@@ -12,11 +12,11 @@ lpb $2
   seq $3,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   sub $3,1
   mod $3,3
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

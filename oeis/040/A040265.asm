@@ -6,7 +6,7 @@ add $0,1
 lpb $0
   sub $0,1
   mov $4,$2
-  cmp $2,0
+  equ $2,0
   add $3,$4
   mov $1,$3
   seq $1,40249 ; Continued fraction for sqrt(266).

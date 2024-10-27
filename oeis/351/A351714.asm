@@ -7,8 +7,16 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  mov $6,$3
-  seq $6,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+  mov $7,$3
+  add $7,$3
+  mul $7,2
+  add $7,$3
+  mul $7,$3
+  nrt $7,2
+  add $7,$3
+  mov $6,$7
+  div $6,2
+  add $6,1
   add $6,$3
   mov $5,$3
   add $5,$6
@@ -16,12 +24,12 @@ lpb $2
   div $5,5
   seq $5,7895 ; Number of terms in the Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
   mod $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

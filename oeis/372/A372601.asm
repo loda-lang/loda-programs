@@ -2,11 +2,20 @@
 ; Submitted by Science United
 ; 0,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,1,3,1,1,1,1,5,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,1,1,1,1,3,1,3,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3
 
-seq $0,320390 ; Prime signature of n (sorted in decreasing order), concatenated.
-lpb $0
-  sub $0,1
-  mov $1,$0
-  bor $1,1
-  div $0,10
+mov $1,1
+mov $2,$0
+seq $2,51903 ; Maximum exponent in the prime factorization of n.
+mov $3,1
+add $3,$2
+max $2,1
+lpb $3
+  add $1,$2
+  mod $3,2
+  lpb $3
+    mul $3,$2
+    mov $1,$3
+    trn $3,8
+  lpe
 lpe
 mov $0,$1
+sub $0,1

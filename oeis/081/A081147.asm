@@ -1,23 +1,28 @@
 ; A081147: First differences of A022839.
-; Submitted by Conan
+; Submitted by Matthias Lehmkuhl
 ; 2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2
-; Formula: a(n) = d(n+1)+2, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -8, b(1) = 0, b(0) = 1, c(n) = 8*gcd(max(d(n-1)-2,0)+truncate((-c(n-1)+b(n-1))/2)-1,4)*c(n-1), c(2) = 128, c(1) = 16, c(0) = 2, d(n) = truncate(gcd(max(d(n-1)-2,0)+truncate((-c(n-1)+b(n-1))/2)-1,4)/2), d(2) = 0, d(1) = 0, d(0) = 0
 
-mov $1,1
-mov $2,2
+sub $0,2
+mov $1,$0
+mul $1,2
+add $0,3
+mov $2,$0
+add $2,$0
+mul $2,2
+add $2,$0
+mul $2,$0
+nrt $2,2
+add $2,$0
+add $1,$2
+mov $0,$1
 add $0,1
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  trn $3,2
-  sub $3,1
-  add $3,$1
-  gcd $3,4
-  mul $2,4
-  mul $2,$3
-  mul $2,2
-  div $3,2
-lpe
+mov $3,$0
+add $3,$0
+mul $3,2
+add $3,$0
+mul $3,$0
+nrt $3,2
+add $3,$0
 mov $0,$3
+mod $0,2
 add $0,2

@@ -1,14 +1,16 @@
 ; A257023: Number of terms in the quarter-sum representation of n.
-; Submitted by Kotenok2000
+; Submitted by Steve Dodd
 ; 1,1,1,2,1,2,1,2,2,1,2,2,1,2,2,3,1,2,2,3,1,2,2,3,2,1,2,2,3,2,1,2,2,3,2,3,1,2,2,3,2,3,1,2,2,3,2,3,2,1,2,2,3,2,3,2,1,2,2,3,2,3,2,3,1,2,2,3,2,3,2,3,1,2,2,3,2,3,2,3
 
-mov $2,$0
+mov $1,$0
+mov $4,1
 lpb $0
-  seq $2,55087 ; Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
+  mov $2,1
+  add $2,$1
   mov $3,$2
-  min $3,1
-  sub $0,$2
-  add $1,$3
+  nrt $3,2
+  add $4,1
+  mod $1,$3
+  sub $0,$1
 lpe
-add $1,1
-mov $0,$1
+mov $0,$4

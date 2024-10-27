@@ -1,13 +1,30 @@
 ; A005713: Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
-; Submitted by Science United
+; Submitted by Conan
 ; 1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1
 
-lpb $0
-  seq $0,2251 ; Start with the nonnegative integers; then swap L(k) and U(k) for all k >= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
-  sub $0,1
-  add $1,2
+mov $4,1
+lpb $4
+  sub $4,1
+  add $0,1
+  mov $2,$0
+  add $2,$0
+  mul $2,2
+  add $2,$0
+  mul $2,$0
+  nrt $2,2
+  add $2,$0
+  mov $0,$2
+  div $0,2
+  mov $1,4
+  add $1,$0
+  mov $3,$1
+  add $3,$1
+  mul $3,2
+  add $3,$1
+  mul $3,$1
+  nrt $3,2
+  add $3,$1
+  mov $0,$3
 lpe
-mov $0,$1
-div $0,2
-add $0,5619
+add $0,1
 mod $0,2

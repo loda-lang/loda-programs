@@ -11,14 +11,14 @@ lpb $3
   add $2,1
   mov $4,$2
   seq $4,343638 ; a(n) = (Sum of decimal digits of 3*n) / 3.
-  cmp $4,7
+  equ $4,7
   add $2,$6
   add $2,1
   mov $6,8
   sub $1,$4
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

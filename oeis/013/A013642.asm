@@ -16,7 +16,7 @@ lpb $2
     mov $7,$3
     gcd $7,$5
     max $7,2
-    cmp $7,$3
+    equ $7,$3
     add $5,1
     add $6,$7
   lpe
@@ -24,7 +24,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

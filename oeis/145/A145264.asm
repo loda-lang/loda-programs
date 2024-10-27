@@ -12,8 +12,7 @@ lpb $3
     sub $0,1
   lpe
   mov $1,$0
-  cmp $1,0
-  cmp $1,0
+  neq $1,0
   sub $3,$1
 lpe
 mov $0,$3

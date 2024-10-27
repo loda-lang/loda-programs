@@ -1,34 +1,30 @@
 ; A145471: Primes p such that (5+p)/2 is prime.
-; Submitted by Skillz
+; Submitted by modesti
 ; 5,17,29,41,53,89,101,113,137,173,197,257,269,293,353,389,449,461,509,521,557,617,701,761,773,797,857,881,929,953,977,1013,1109,1181,1193,1229,1277,1289,1301,1361,1433,1481,1613,1637,1709,1721,1877,1889,1901,1949,2213,2297,2357,2381,2441,2549,2609,2633,2729,2741,2861,2897,2957,2969,3041,3137,3209,3221,3329,3389,3413,3461,3617,3797,3821,3989,4001,4049,4073,4133
 
 mov $2,$0
-add $2,11
-pow $2,3
+pow $2,2
 lpb $2
-  sub $6,1
-  add $6,$3
-  mov $3,$6
-  add $3,$1
-  sub $3,3
-  add $6,1
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $7,$3
-  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$7
-  add $1,2
+  mov $3,$1
+  add $3,2
+  mov $6,$3
+  mul $6,2
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,3
+  mul $3,2
+  mov $5,$3
+  sub $5,$6
+  sub $5,1
+  mul $5,2
+  mul $6,$5
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$6
   mov $4,$0
   max $4,0
   equ $4,$0
-  add $5,1
-  mov $8,$5
   mul $2,$4
-  sub $2,17
-  pow $3,0
-  add $3,1
-  mov $7,$5
-  mul $7,2
+  sub $2,1
 lpe
-mov $0,$8
+mov $0,$1
 mul $0,4
-sub $0,3
+add $0,5

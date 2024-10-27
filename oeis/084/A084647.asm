@@ -13,7 +13,7 @@ lpb $2
   sub $3,1
   seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
   sub $3,1
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,1
   sub $2,$0

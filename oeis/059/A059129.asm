@@ -1,19 +1,16 @@
 ; A059129: A hierarchical sequence (W2{2}* - see A059126).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,4,5,4,1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,5,6,5,1,2,1,2,3,2,1,2,1,3,4,3,1,2,1,2,3,2,1,2,1,4,5,4,1,2,1,2,3,2,1,2
 
+mov $1,1
 mov $2,$0
 add $2,3
 div $2,3
-add $0,1
 mod $0,3
-add $0,2
-div $0,2
+add $0,1
 mul $0,$2
 lpb $0
   dif $0,2
-  add $1,3
+  add $1,1
 lpe
 mov $0,$1
-div $0,3
-add $0,1

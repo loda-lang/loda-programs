@@ -11,12 +11,12 @@ lpb $3
   mov $6,$4
   gcd $4,4
   add $4,1
-  cmp $4,5
+  equ $4,5
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
 lpe
 mov $0,$6

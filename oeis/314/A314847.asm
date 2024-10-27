@@ -1,21 +1,18 @@
 ; A314847: Coordination sequence Gal.6.193.3 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
-; Submitted by entity
+; Submitted by Steve Dodd
 ; 1,5,9,14,18,24,28,32,38,42,47,51,56,61,65,70,74,80,84,88,94,98,103,107,112,117,121,126,130,136,140,144,150,154,159,163,168,173,177,182,186,192,196,200,206,210,215,219,224,229
-; Formula: a(n) = (7*n)%(floor((16*n+2*(floor((5*n)/6)%2))/3)+1)+3*n+1
+; Formula: a(n) = -n+max(floor((17*n+2*((floor(n/6)+n)%2))/3)-1,0)+1
 
-mov $3,$0
-mul $3,5
-div $3,6
-mod $3,2
 mov $1,$0
-mul $1,8
-add $1,$3
+div $1,6
+add $1,$0
+mod $1,2
 mul $1,2
-div $1,3
-add $1,1
+add $1,$0
 mov $2,$0
-mul $2,3
-mul $0,7
-mod $0,$1
-add $0,$2
+mul $0,16
+add $0,$1
+div $0,3
+trn $0,1
 add $0,1
+sub $0,$2

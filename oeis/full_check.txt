@@ -73,6 +73,7 @@ A007424: a(n) = 1 if n is squarefree, otherwise 2.
 A007457: Number of (j,k): j+k=n, (j,n)=(k,n)=1, j,k squarefree.
 A007916: Numbers that are not perfect powers.
 A007948: Largest cubefree number dividing n.
+A008683: Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
 A008966: a(n) = 1 if n is squarefree, otherwise 0.
 A010051: Characteristic function of primes: 1 if n is prime, else 0.
 A010055: 1 if n is a prime power p^k (k >= 0), otherwise 0.

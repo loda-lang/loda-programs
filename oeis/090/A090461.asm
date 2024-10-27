@@ -4,7 +4,7 @@
 mov $1,$0
 lpb $1
   sub $1,1
-  cmp $1,2
+  equ $1,2
   gcd $1,2
   add $0,4
   add $0,$1
