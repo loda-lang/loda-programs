@@ -14,16 +14,14 @@ lpb $3
   equ $6,0
   mov $5,-1
   pow $5,$6
-  mul $1,$5
   mov $4,$2
   pow $4,2
-  mov $5,$2
-  pow $5,$6
   mov $6,$0
   mod $6,$4
   neq $6,0
-  div $0,$5
+  dif $0,2
   mod $0,4
+  mul $1,$5
   mul $1,$6
 lpe
 mov $0,$1

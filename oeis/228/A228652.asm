@@ -19,16 +19,15 @@ lpb $4
     mov $3,$2
     sub $3,$0
     sub $3,1
+    neq $10,$0
     mov $12,$3
     trn $12,$0
     mov $11,$12
-    cmp $11,0
+    equ $11,0
     mul $11,$0
     div $0,2
     mov $9,$12
     add $9,$11
-    cmp $10,$1
-    cmp $10,0
     mul $9,$10
     mov $8,$9
     add $8,$1

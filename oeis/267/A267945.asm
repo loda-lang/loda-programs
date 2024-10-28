@@ -13,12 +13,12 @@ lpb $2
   add $3,3
   seq $3,327859 ; a(n) = A276086(A003415(n)), where A003415 is the arithmetic derivative, and A276086 is the primorial base exp-function.
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

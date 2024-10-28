@@ -22,7 +22,7 @@ lpb $2
     sub $6,1
     mov $7,$2
     gcd $7,$1
-    cmp $7,1
+    equ $7,1
     add $5,$7
   lpe
   add $3,$5

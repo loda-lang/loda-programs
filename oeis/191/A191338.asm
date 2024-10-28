@@ -8,7 +8,20 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,189406 ; n+[nr/s]+[nt/s]; r=1, s=-1+sqrt(3), t=1+sqrt(3).
+  mul $3,2
+  add $3,2
+  mov $6,$3
+  mul $6,2
+  add $6,$3
+  mul $6,$3
+  nrt $6,2
+  add $6,$3
+  mov $5,$6
+  div $5,2
+  add $3,$5
+  div $5,2
+  add $5,$3
+  mov $3,$5
   sub $3,1
   gcd $3,2
   sub $0,$3
@@ -16,7 +29,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

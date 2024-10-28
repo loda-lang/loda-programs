@@ -12,7 +12,7 @@ lpb $2
   lpb $3
     mov $5,$3
     mod $5,10
-    cmp $5,$2
+    equ $5,$2
     div $3,10
     mul $3,2
     add $4,$5
