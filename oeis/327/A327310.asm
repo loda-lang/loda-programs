@@ -1,23 +1,13 @@
 ; A327310: a(n) = floor(3*n*r) - 3*floor(n*r), where r = sqrt(8).
+; Submitted by Science United
 ; 0,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,1,0,0,2,2,1,0,0,2,2,1,1,0,0,2,2,1,1
-; Formula: a(n) = 2*e(6*n+1)-3*truncate((2*e(6*n+1))/3), b(n) = truncate((2*truncate((-c(n-1)+b(n-1))/2))/2)-1, b(3) = -7, b(2) = -4, b(1) = -2, b(0) = 0, c(n) = gcd(2*truncate((-c(n-1)+b(n-1))/2)+binomial(d(n-1),9),4)*c(n-1), c(3) = 32, c(2) = 8, c(1) = 4, c(0) = 2, d(n) = gcd(2*truncate((-c(n-1)+b(n-1))/2)+binomial(d(n-1),9),4), d(3) = 4, d(2) = 2, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1), e(3) = 4, e(2) = 2, e(1) = 0, e(0) = 0
 
-mov $2,2
-mul $0,6
-add $0,1
-lpb $0
-  sub $0,1
-  add $4,$3
-  sub $1,$2
-  div $1,2
-  mul $1,2
-  bin $3,9
-  add $3,$1
-  gcd $3,4
-  div $1,2
-  sub $1,1
-  mul $2,$3
-lpe
-mov $0,$4
-mul $0,2
-mod $0,3
+mov $1,$0
+mul $1,6
+mov $3,$1
+pow $3,2
+mul $3,2
+mov $2,$3
+nrt $2,2
+mod $2,3
+mov $0,$2

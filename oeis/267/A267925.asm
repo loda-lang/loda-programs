@@ -1,22 +1,21 @@
 ; A267925: Binary representation of the n-th iteration of the "Rule 246" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by pututu
+; Submitted by lee
 ; 1,111,10111,1110111,101110111,11101110111,1011101110111,111011101110111,10111011101110111,1110111011101110111,101110111011101110111,11101110111011101110111,1011101110111011101110111,111011101110111011101110111,10111011101110111011101110111,1110111011101110111011101110111,101110111011101110111011101110111,11101110111011101110111011101110111,1011101110111011101110111011101110111,111011101110111011101110111011101110111,10111011101110111011101110111011101110111
-; Formula: a(n) = a(n-1)+A007088(5*floor(((n%2+2)*4^n)/10)+1), a(0) = 1
 
-mov $1,1
-lpb $0
-  mov $4,$0
+mov $5,$0
+mul $5,2
+lpb $5
+  sub $5,1
+  mul $1,2
+  add $1,$5
+  mul $4,$0
+  add $4,$1
   mod $4,2
-  add $4,2
-  mov $3,4
-  pow $3,$0
-  mul $3,$4
-  div $3,10
-  mul $3,5
+  sub $0,$3
+  mul $2,10
+  add $2,$4
   add $3,1
-  mov $2,$3
-  seq $2,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
-  sub $0,1
-  add $1,$2
 lpe
-mov $0,$1
+mov $0,$2
+mul $0,10
+add $0,1

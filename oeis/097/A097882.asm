@@ -1,23 +1,12 @@
 ; A097882: a(n) = floor( n^2/prime(n) ).
+; Submitted by Ralfy
 ; 0,1,1,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,10,10,11,11,11,11,11,11,12,12,12,12,13,13,12,13,13,13,13,13,13,14,14,14,14,14,14,15,15,15,15,15
+; Formula: a(n) = truncate(((n+1)^2)/A000040(n))
 
-mov $1,$0
 add $0,1
-pow $0,2
-mul $1,2
-max $1,1
-sub $1,2
-mov $2,4
-mov $3,$1
-pow $3,4
-lpb $3
-  max $4,$2
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  sub $1,$4
-  add $2,2
-  sub $3,$1
-lpe
-add $1,$2
-sub $1,1
-div $0,$1
+mov $1,$0
+mul $1,$0
+sub $0,1
+seq $0,40 ; The prime numbers.
+div $1,$0
+mov $0,$1

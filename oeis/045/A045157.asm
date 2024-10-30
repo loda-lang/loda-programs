@@ -1,5 +1,5 @@
 ; A045157: Numbers whose base-4 representation contains exactly four 2's and four 3's.
-; Submitted by Frank [NT]
+; Submitted by Drago75
 ; 43775,43967,44015,44027,44030,44735,44783,44795,44798,44975,44987,44990,45035,45038,45050,47807,47855,47867,47870,48047,48059,48062,48107,48110,48122,48815,48827,48830,48875,48878
 
 mov $2,$0
@@ -9,6 +9,7 @@ mul $2,9
 pow $2,3
 lpb $2
   mov $4,1
+  add $1,2
   mov $3,$1
   lpb $3
     mov $5,$3
@@ -28,4 +29,4 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-add $0,38229
+add $0,38231

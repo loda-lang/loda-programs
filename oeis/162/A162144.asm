@@ -1,26 +1,23 @@
 ; A162144: Products of cubes of 3 distinct primes.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 27000,74088,287496,343000,474552,1061208,1157625,1331000,1481544,2197000,2628072,3652264,4492125,4913000,5268024,6028568,6434856,6859000,7414875,10941048,12167000,12326391,13481272,14886936,16581375,17173512,18821096,20346417,22425768,23149125,23393656,24389000,29791000,32157432,33386248,41063625,44361864,45499293,49027896,50653000,52313624,57066625,63521199,64964808,66923416,68921000,73034632,77308776,78953589,79507000,81746504,82312875,84027672,86350888,94196375,100544625,103823000,106496424
 
-mov $3,$0
-add $3,11
-pow $3,2
-lpb $3
-  mov $1,$2
-  seq $1,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-  mov $4,$2
-  mul $4,$1
-  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  add $4,1
-  cmp $4,4
-  sub $0,$4
-  add $2,1
-  mov $5,$0
-  max $5,0
-  cmp $5,$0
-  mul $3,$5
-  sub $3,1
+mov $2,$0
+add $2,6
+pow $2,3
+lpb $2
+  sub $2,4
+  mov $3,$1
+  seq $3,73184 ; Number of cubefree divisors of n.
+  dif $3,2
+  add $3,1
+  equ $3,5
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
 lpe
-mov $0,$2
-add $0,1
+mov $0,$1
 pow $0,3

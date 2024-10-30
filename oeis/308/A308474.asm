@@ -1,13 +1,13 @@
 ; A308474: a(n) = Sum_{k=1..n^2, gcd(n,k) = 1} k.
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 1,4,27,64,250,216,1029,1024,2187,2000,6655,3456,13182,8232,13500,16384,39304,17496,61731,32000,55566,53240,133837,55296,156250,105456,177147,131712,341446,108000,446865,262144,359370,314432,514500,279936,911754,493848,711828,512000
-; Formula: a(n) = truncate((A000010(n)*(n+1)^3+1)/2)
 
-mov $1,$0
-add $1,1
-seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-mul $0,$1
+mov $1,1
+add $1,$0
 pow $1,2
-mul $0,$1
-add $0,1
+mov $2,$1
+equ $1,1
+add $2,$1
+seq $0,2618 ; a(n) = n*phi(n).
+mul $0,$2
 div $0,2

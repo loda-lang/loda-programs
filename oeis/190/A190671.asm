@@ -1,24 +1,24 @@
 ; A190671: Positions of 1 in A190669; complement of A190670.
-; Submitted by Kotenok2000
+; Submitted by fzs600
 ; 1,4,5,8,9,12,13,15,16,19,20,23,24,27,30,31,34,35,38,39,42,45,46,49,50,53,54,56,57,60,61,64,65,68,69,71,72,75,76,79,80,83,86,87,90,91,94,95,98,101,102,105,106,109,110,112,113,116,117,120,121,124,125,127,128,131,132,135,136,139,142,143,146,147,150,151,154,157,158,161
 
 mov $1,1
-mov $4,3
 mov $2,$0
+add $0,1
+add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,120865 ; a(n) is the number k for which there exists a unique pair (j,k) of positive integers such that (j + k + 1)^2 - 4*k = 12*n^2.
-  gcd $3,2
-  mul $4,2
+  add $3,1
+  pow $3,2
+  mul $3,3
+  mov $4,$3
+  nrt $4,2
+  mov $3,$4
+  mod $3,2
   sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,2
+  sub $2,$0
 lpe
 mov $0,$1
 div $0,2

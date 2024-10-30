@@ -6,12 +6,12 @@ mov $1,1
 mov $2,1
 mov $3,$0
 lpb $3
-  sub $3,1
   add $2,1
-  min $3,$2
   mov $6,$0
   mod $6,$2
   equ $6,0
+  min $3,$2
+  div $3,$2
   mov $5,-1
   pow $5,$6
   mov $4,$2

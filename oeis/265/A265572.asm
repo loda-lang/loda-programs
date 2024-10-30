@@ -9,7 +9,7 @@ lpb $2
   seq $4,30108 ; Base 9 reversal of n (written in base 10).
   mov $3,$1
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   add $1,$0
