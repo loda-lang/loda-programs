@@ -8,15 +8,12 @@ pow $2,4
 lpb $2
   mov $4,0
   mov $3,$1
-  add $3,1
-  lpb $3
-    dif $3,2
-  lpe
+  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
   add $4,$3
   div $4,2
   mov $3,$4
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -14,14 +14,7 @@ lpb $4
   bin $1,$0
   mov $5,$0
   mul $5,2
-  pow $5,2
-  add $5,2
-  lpb $5
-    mul $5,9
-    sub $5,1
-    mod $5,10
-  lpe
-  sub $5,2
+  seq $5,100047 ; A Chebyshev transform of the Fibonacci numbers.
   mod $0,7
   seq $0,11584 ; Legendre symbol (n,17).
   mul $0,$5

@@ -16,10 +16,7 @@ lpb $2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
-  lpb $0
-    add $5,1
-    sub $0,$5
-  lpe
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
   mul $0,$4
   add $1,$0

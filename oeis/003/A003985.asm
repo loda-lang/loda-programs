@@ -7,12 +7,7 @@ seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lis
 add $2,1
 mov $4,1
 max $5,$2
-lpb $0
-  add $7,1
-  sub $0,$7
-lpe
-sub $7,$0
-mov $0,$7
+seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 add $0,1
 lpb $2
   sub $2,1

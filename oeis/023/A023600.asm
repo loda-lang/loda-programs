@@ -12,10 +12,7 @@ lpb $2
   mov $6,0
   mov $0,$1
   sub $0,$2
-  lpb $0
-    add $6,1
-    sub $0,$6
-  lpe
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   min $0,1
   add $3,$0
   add $4,$3

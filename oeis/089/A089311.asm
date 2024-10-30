@@ -5,10 +5,7 @@
 lpb $0
   dif $0,2
 lpe
-add $0,1
-lpb $0
-  dif $0,2
-lpe
+seq $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 sub $0,1
 lpb $0
   dif $0,2

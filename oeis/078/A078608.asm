@@ -19,9 +19,5 @@ lpe
 mul $1,$0
 div $1,$2
 mov $0,$1
-lpb $0
-  div $0,2
-  add $4,1
-lpe
-mov $0,$4
+seq $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
 sub $0,1

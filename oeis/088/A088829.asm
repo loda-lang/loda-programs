@@ -8,14 +8,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  add $3,1
-  lpb $3
-    dif $3,2
-  lpe
+  seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
   sub $3,1
   seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -8,11 +8,7 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  lpb $3
-    dif $3,2
-  lpe
-  div $3,2
-  mod $3,2
+  seq $3,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
   sub $0,$3
   add $1,1
   sub $2,$0
