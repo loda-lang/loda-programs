@@ -1,14 +1,21 @@
 ; A030015: Binomial transform of {1, primes}.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Fardringle
 ; 1,3,8,21,54,137,342,837,2006,4713,10882,24771,55764,124465,275934,608283,1334120,2911871,6325092,13674121,29425308,63042233,134517426,285984131,606056546,1280778343,2700105566,5680099085,11925792492,24993841655,52291456452
-; Formula: a(n) = a(n-1)+A007443(max(n-1,0)), a(0) = 1
 
-mov $1,1
-lpb $0
-  sub $0,1
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $4,$2
+  mov $0,$3
+  sub $0,$1
   mov $2,$0
-  max $2,0
-  seq $2,7443 ; Binomial transform of primes.
-  add $1,$2
+  add $2,$1
+  bin $2,$0
+  seq $0,112773 ; 3 together with primes multiplied by 3.
+  mul $2,$0
+  add $2,$4
 lpe
-mov $0,$1
+mov $0,$2
+div $0,3

@@ -18,12 +18,12 @@ lpb $4
   add $5,2
   gcd $5,4
   add $5,1
-  cmp $5,5
+  equ $5,5
   sub $0,$5
   add $3,1
   mov $6,$0
   max $6,0
-  cmp $6,$0
+  equ $6,$0
   mul $4,$6
 lpe
 mov $0,$3

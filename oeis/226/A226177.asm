@@ -1,28 +1,22 @@
 ; A226177: a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
-; Submitted by Simon Strandgaard
+; Submitted by LoupBlanc
 ; 1,-2,-2,0,-2,4,-2,0,0,4,-2,0,-2,4,4,0,-2,0,-2,0,4,4,-2,0,0,4,0,0,-2,-8,-2,0,4,4,4,0,-2,4,4,0,-2,-8,-2,0,0,4,-2,0,0,0,4,0,-2,0,4,0,4,4,-2,0,-2,4,0,0,4,-8,-2,0,4,-8,-2,0,-2,4,0,0,4,-8,-2,0
+; Formula: a(n) = A073184(n)*(-A073184(n)*(max(A073184(n)-56,0)+56)+3*truncate((A073184(n)*(max(A073184(n)-56,0)+56)-32)/3)+33)
 
-mov $1,1
-mov $2,2
-add $0,1
-lpb $0
-  mov $3,$0
-  sub $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $4,2
-  lpb $0
-    dif $0,$2
-    mov $5,0
-    sub $5,$4
-    div $4,8
-  lpe
-  mul $1,$5
-  add $2,1
-lpe
-mov $0,$1
+mov $2,$0
+sub $2,$0
+sub $2,1
+mov $1,$0
+seq $1,73184 ; Number of cubefree divisors of n.
+mov $3,$1
+trn $1,56
+add $1,56
+mul $1,$3
+sub $1,32
+mod $1,3
+add $1,1
+mov $4,$2
+sub $4,$1
+add $4,3
+mul $3,$4
+mov $0,$3

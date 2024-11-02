@@ -10,7 +10,7 @@ lpb $0
   lpb $2,2
     mov $3,$2
     dif $3,$0
-    cmp $3,$2
+    equ $3,$2
     gcd $4,$0
     add $1,$4
     max $4,$0

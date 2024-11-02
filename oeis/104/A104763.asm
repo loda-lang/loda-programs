@@ -2,10 +2,7 @@
 ; Submitted by damotbe
 ; 1,1,1,1,1,2,1,1,2,3,1,1,2,3,5,1,1,2,3,5,8,1,1,2,3,5,8,13,1,1,2,3,5,8,13,21,1,1,2,3,5,8,13,21,34,1,1,2,3,5,8,13,21,34,55,1,1,2,3,5,8,13,21,34,55,89,1,1,2,3,5,8,13,21,34,55,89,144,1,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 gcd $4,$0
 lpb $0
   sub $0,2

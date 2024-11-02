@@ -1,11 +1,16 @@
 ; A051679: Total number of even entries in first n rows of Pascal's triangle (the zeroth and first rows being 1; 1,1).
+; Submitted by Science United
 ; 0,0,1,1,4,6,9,9,16,22,29,33,42,48,55,55,70,84,99,111,128,142,157,165,186,204,223,235,256,270,285,285,316,346,377,405,438,468,499,523,560,594,629,657,694,724,755,771,816,858,901,937,982,1020,1059,1083,1132,1174,1217,1245,1290,1320,1351,1351,1414,1476,1539,1599,1664,1726,1789,1845,1914,1980,2047,2107,2176,2238,2301,2349
-; Formula: a(n) = a(n-1)+A048967(n), a(0) = 0
 
 lpb $0
   mov $2,$0
-  seq $2,48967 ; Number of even entries in row n of Pascal's triangle (A007318).
+  dis $2,2
+  mov $3,2
+  pow $3,$2
+  mov $4,$0
+  sub $4,$3
+  add $4,1
   sub $0,1
-  add $1,$2
+  add $1,$4
 lpe
 mov $0,$1

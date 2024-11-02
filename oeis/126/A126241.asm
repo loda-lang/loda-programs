@@ -1,5 +1,5 @@
 ; A126241: Dropping times in the 3n+1 problem (or the Collatz problem). Let T(n):=n/2 if n is even, (3n+1)/2 otherwise (A014682). Let a(n) be the smallest integer k such that T^(k)(n)<n, where T^(k) is the k-th iterate, or infinity otherwise; a(n) is called the dropping time of n.
-; Submitted by Jave808
+; Submitted by MJKelleher
 ; 0,1,4,1,2,1,7,1,2,1,5,1,2,1,7,1,2,1,4,1,2,1,5,1,2,1,59,1,2,1,56,1,2,1,4,1,2,1,8,1,2,1,5,1,2,1,54,1,2,1,4,1,2,1,5,1,2,1,7,1,2,1,54,1,2,1,4,1,2,1,51,1,2,1,5,1,2,1,8,1
 
 mov $3,2
@@ -12,6 +12,7 @@ lpb $3
     sub $7,1
     mov $2,$0
     sub $0,1
+    bin $0,$7
     mov $8,$0
     pow $8,2
     lpb $8

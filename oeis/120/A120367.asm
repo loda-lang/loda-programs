@@ -10,7 +10,10 @@ lpb $2
   add $3,$1
   mov $0,$3
   sub $0,$2
-  seq $0,105062 ; Triangle read by rows, based on the morphism f: 1->2, 2->3, 3->4, 4->5, 5->6, 6->{6,6,10,7}, 7->8, 8->9, 9->10, 10->11, 11->12, 12->{12,12,5,1}. First row is 1. If current row is a,b,c,..., then the next row is a,b,c,...,f(a),f(b),f(c),...
+  mov $4,$0
+  add $4,1
+  dis $4,2
+  mov $0,$4
   sub $0,1
   max $1,$0
 lpe

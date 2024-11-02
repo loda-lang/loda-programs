@@ -1,5 +1,5 @@
 ; A079838: a(1) = 1 and then smallest multiple of a(n) which has no nonzero digit in common with a(n).
-; Submitted by Christian Krause
+; Submitted by Steve Dodd
 ; 1,2,4,8,16,32,64,128,640,1280,6400
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
     mov $4,$0
     sub $0,1
     mul $2,8
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     max $4,$2
     add $2,1
     sub $3,$4

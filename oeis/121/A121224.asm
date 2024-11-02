@@ -7,7 +7,7 @@ mov $3,$0
 mul $3,3
 lpb $3
   mov $4,$3
-  cmp $4,0
+  equ $4,0
   add $3,$4
   div $1,$3
   add $1,$2

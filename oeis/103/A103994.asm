@@ -7,12 +7,7 @@ mul $0,2
 sub $0,1
 lpb $0
   max $1,$0
-  lpb $1
-    mul $1,2
-    sub $1,2
-    dif $1,4
-  lpe
-  seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  seq $1,209635 ; Möbius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
   mov $0,0
 lpe
 mov $0,$1

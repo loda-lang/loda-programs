@@ -1,22 +1,13 @@
 ; A110003: n followed by n^3 followed by n^2 followed by n^4.
-; Submitted by Fardringle
+; Submitted by fuzzydice555
 ; 1,1,1,1,2,8,4,16,3,27,9,81,4,64,16,256,5,125,25,625,6,216,36,1296,7,343,49,2401,8,512,64,4096,9,729,81,6561,10,1000,100,10000,11,1331,121,14641,12,1728,144,20736,13,2197,169,28561,14,2744,196,38416,15,3375
-; Formula: a(n) = c(n+1)+d(n+1), b(n) = -4*truncate(truncate((3*binomial(b(n-1),2))/2)/4)+truncate((3*binomial(b(n-1),2))/2)-5, b(3) = -4, b(2) = -3, b(1) = -5, b(0) = 0, c(n) = truncate(e(n-1)^(-4*truncate(truncate((3*binomial(b(n-1),2))/2)/4)+truncate((3*binomial(b(n-1),2))/2)+1)), c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = binomial(d(n-1),-4*truncate(truncate((3*binomial(b(n-1),2))/2)/4)+truncate((3*binomial(b(n-1),2))/2)), d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = e(n-1)+binomial(d(n-1),-4*truncate(truncate((3*binomial(b(n-1),2))/2)/4)+truncate((3*binomial(b(n-1),2))/2)), e(3) = 1, e(2) = 1, e(1) = 1, e(0) = 0
+; Formula: a(n) = truncate((floor(n/4)+1)^((n%4+1)^3-5*truncate(((n%4+1)^3)/5)))
 
+mov $1,$0
+mod $1,4
+add $1,1
+pow $1,3
+mod $1,5
+div $0,4
 add $0,1
-lpb $0
-  sub $0,1
-  bin $1,2
-  mul $1,3
-  div $1,2
-  mod $1,4
-  mov $2,$4
-  bin $3,$1
-  mov $4,$3
-  add $4,$2
-  add $1,1
-  pow $2,$1
-  sub $1,6
-lpe
-add $2,$3
-mov $0,$2
+pow $0,$1

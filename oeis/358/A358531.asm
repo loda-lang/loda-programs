@@ -10,7 +10,7 @@ pow $3,4
 lpb $3
   mov $4,$2
   seq $4,73836 ; Let C(n) = product of composite numbers between the n-th prime and (n+1)-th prime; a(n) = floor(C(n+1)/C(n)).
-  cmp $4,0
+  equ $4,0
   sub $1,$4
   add $2,1
   sub $3,$1

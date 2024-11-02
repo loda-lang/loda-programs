@@ -1,12 +1,21 @@
 ; A050510: Golden rectangular box numbers: a(n) = n*A007067(n)*A007067(A007067(n)).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 0,6,30,120,240,520,960,1386,2184,3240,4160,5742,7068,9282,11914,14040,17472,21420,24534,29450,33280,39270,45936,51060,58968,65000,74256,84348,91980,103588,116130,125550,139776,150414,166430,183540,196272
 
 mov $1,$0
 mov $2,2
 lpb $2
   div $2,2
-  seq $0,7067 ; Nearest integer to n*tau where tau = (1+sqrt(5))/2.
+  mov $3,$0
+  add $3,$0
+  mul $3,2
+  add $3,$0
+  mul $3,$0
+  add $0,1
+  nrt $3,2
+  add $3,$0
+  mov $0,$3
+  div $0,2
   mul $1,$0
 lpe
 mov $0,$1
