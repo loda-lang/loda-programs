@@ -1,13 +1,13 @@
 ; A344569: Decimal expansion of 2*(1+sqrt(290))/17.
-; Submitted by Christian Krause
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,1,2,1,1,0,4,2,7,8,3,4,4,2,8,2,4,9,0,1,3,3,3,3,1,9,7,9,2,7,9,6,8,5,0,2,4,2,8,1,1,4,2,9,6,3,6,4,4,5,2,0,1,9,1,4,4,7,3,7,6,1,1,3,2,3,1,2,6,8,0,2,7,0,6,5,3,3,2,3
 
 bin $1,$0
 mov $2,1
 mov $3,$0
-mul $3,4
+mul $3,3
 lpb $3
-  sub $3,1
+  sub $3,2
   add $1,$2
   add $2,$1
   mul $2,17

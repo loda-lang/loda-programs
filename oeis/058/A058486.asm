@@ -7,6 +7,6 @@ seq $0,187091 ; McKay-Thompson series of class 12H for the Monster group with a(
 lpb $1
   sub $1,1
   mul $0,$1
-  cmp $1,0
+  equ $1,0
   sub $1,1
 lpe

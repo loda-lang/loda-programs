@@ -1,20 +1,20 @@
 ; A104436: Number of ways to split 1, 2, 3, ..., 3n into 3 arithmetic progressions each with n terms.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,15,5,4,4,4,4,4,4,4,4,4,4,4,4
 
-mov $3,$0
-mul $3,4
-sub $3,1
-lpb $3
-  mov $4,$0
-  cmp $4,0
-  add $0,$4
-  div $1,$0
+mov $1,1
+mov $3,1
+mul $0,4
+lpb $0
+  sub $0,2
+  mul $3,10
+  add $4,$2
+  add $4,1
+  add $1,$2
   add $1,$3
-  div $1,$0
-  add $2,$1
-  div $3,$0
-  sub $3,1
+  div $1,$4
+  mov $2,$3
+  dif $3,2
+  add $3,$1
 lpe
-add $2,1
-mov $0,$2
+mov $0,$1

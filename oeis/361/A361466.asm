@@ -14,5 +14,5 @@ seq $1,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for od
 gcd $2,$1
 div $1,$2
 sub $1,1
-cmp $1,0
+equ $1,0
 mov $0,$1

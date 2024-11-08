@@ -1,0 +1,26 @@
+; A377716: E.g.f. satisfies A(x) = (1 + (exp(x) - 1) * A(x))^2.
+; Submitted by Cruncher Pete
+; 1,2,12,116,1584,28172,619872,16289996,498428544,17417438252,684759380832,29925135793676,1439467532867904,75591768584407532,4303733247493423392,264082643528395550156,17375242687235713361664,1220318925238762558532012,91128522664443184593699552
+
+mov $1,119
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  mov $4,$0
+  seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
+  seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+  mul $0,$4
+  add $1,$0
+lpe
+mov $0,$1
+sub $0,119

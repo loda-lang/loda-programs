@@ -8,7 +8,7 @@ mul $3,8
 lpb $3
   sub $3,1
   add $6,$2
-  cmp $1,1
+  equ $1,1
   add $1,$6
   add $1,$2
   div $1,10

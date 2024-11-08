@@ -1,5 +1,5 @@
 ; A065600: Triangle T(n,k) giving number of Dyck paths of length 2n with exactly k hills (0 <= k <= n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,0,1,1,0,1,2,2,0,1,6,4,3,0,1,18,13,6,4,0,1,57,40,21,8,5,0,1,186,130,66,30,10,6,0,1,622,432,220,96,40,12,7,0,1,2120,1466,744,328,130,51,14,8,0,1,7338,5056,2562,1128,455,168,63,16,9,0,1,25724,17672,8942,3941,1590,602,210,76,18,10,0,1,91144,62460
 
 mov $3,3
@@ -8,22 +8,19 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,3
 mul $0,-1
 add $0,$2
+add $2,1
 lpb $0
   sub $0,1
-  sub $1,$5
-  mul $1,2
+  sub $3,$5
+  sub $4,1
+  mov $1,$3
   mul $1,$2
-  sub $2,1
-  add $4,1
-  mov $5,$3
   div $1,$4
-  mul $3,3
   add $3,$1
-  mul $5,-1
+  mul $5,2
   add $5,$1
 lpe
-mov $0,$1
+mov $0,$3
 div $0,3

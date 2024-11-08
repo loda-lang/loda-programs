@@ -1,14 +1,26 @@
 ; A219637: Numbers that occur twice in A219641.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 0,2,4,7,9,12,14,16,20,22,24,27,29,33,35,37,40,42,45,47,49,54,56,58,61,63,66,68,70,74,76,78,81,83,88,90,92,95,97,100,102,104,108,110,112,115,117,121,123,125,128,130,133,135,137,143,145,147,150,152,155,157,159,163,165,167,170,172,176,178,180,183,185,188,190,192,197,199,201,204
-; Formula: a(n) = a(n-1)+A261095(max(n-1,0))+1, a(0) = 0
 
-lpb $0
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,261095 ; First differences of A219640: a(n) = A219640(n+1) - A219640(n).
-  add $1,1
-  add $1,$2
+mov $1,$0
+add $1,1
+mov $4,$1
+add $4,$1
+mul $4,2
+add $4,$1
+mul $4,$1
+nrt $4,2
+add $4,$1
+mov $1,$4
+div $1,2
+add $1,1
+mov $5,$0
+lpb $5
+  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
+  add $3,1
+  sub $5,$2
+  mov $2,$5
 lpe
-mov $0,$1
+sub $0,$3
+add $0,$1
+sub $0,2

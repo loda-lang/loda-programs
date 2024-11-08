@@ -9,9 +9,9 @@ lpb $0
   sub $2,$0
   mov $1,$2
   dif $1,$0
-  cmp $1,$2
+  equ $1,$2
   sub $0,1
-  cmp $1,0
+  equ $1,0
   mul $1,$0
   mul $2,$0
   sub $0,1

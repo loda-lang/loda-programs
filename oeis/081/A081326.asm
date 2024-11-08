@@ -19,7 +19,7 @@ lpb $0
       dif $7,2
     lpe
     sub $7,1
-    cmp $7,0
+    equ $7,0
     mov $9,10
     add $9,$5
     min $10,$0

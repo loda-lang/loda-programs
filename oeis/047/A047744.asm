@@ -18,7 +18,7 @@ lpb $0
   mod $3,2
   sub $4,$2
   add $4,$3
-  cmp $2,0
+  equ $2,0
   mul $3,2
 lpe
 add $1,1

@@ -10,7 +10,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,2993 ; Initial digits of squares.
-  cmp $3,4
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

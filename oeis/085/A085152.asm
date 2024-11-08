@@ -1,5 +1,5 @@
 ; A085152: All prime factors of n and n+1 are <= 5. (Related to the abc conjecture.)
-; Submitted by damotbe
+; Submitted by atannir
 ; 1,2,3,4,5,8,9,15,24,80
 
 mov $2,$0
@@ -25,12 +25,13 @@ lpb $2
   min $3,3
   add $3,1
   div $3,2
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
+  sub $2,2
   mul $2,$4
   sub $2,1
 lpe

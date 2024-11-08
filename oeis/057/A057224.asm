@@ -1,17 +1,17 @@
-; A057224: Numbers n such that (Product of first n Mersenne prime exponents) + 1 is prime.
-; Submitted by BlisteringSheep
+; A057224: Numbers k such that (Product of first k Mersenne prime exponents) + 1 is prime.
+; Submitted by Ralfy
 ; 1,2,3,4,5,6,13,17
+; Formula: a(n) = truncate((n*(floor((max(n,5)^2)/3)+gcd(3,floor((max(n,5)^2)/3))-3))/6)+1
 
-add $0,2
-mov $2,$0
-mul $2,2
 mov $1,$0
-bin $1,2
-lpb $1
-  max $2,$0
-  mov $0,$1
-  dif $1,2
-lpe
-mov $0,$2
-div $0,2
-sub $0,1
+max $0,5
+pow $0,2
+div $0,3
+mov $2,3
+gcd $2,$0
+sub $0,3
+add $0,$2
+mul $1,$0
+mov $0,$1
+div $0,6
+add $0,1

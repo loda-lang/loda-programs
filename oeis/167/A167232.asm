@@ -11,4 +11,4 @@ mov $0,10
 pow $0,$1
 mod $2,$0
 mov $0,$2
-seq $0,55017 ; Difference between sums of alternate digits of n starting with the last, i.e., (Sum of ultimate digit of n, antepenultimate digit of n,...)-(sum of penultimate digit of n, preantepenultimate digit of n,...).
+seq $0,55017 ; Difference between sums of alternate digits of n starting with the last, i.e., (sum of ultimate digit of n, antepenultimate digit of n, ...) - (sum of penultimate digit of n, preantepenultimate digit of n, ...).

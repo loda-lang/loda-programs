@@ -9,8 +9,10 @@ lpb $2
   mov $0,$5
   add $0,$2
   add $0,1
-  seq $0,17934 ; Powers of sqrt(10) rounded down.
-  mov $1,$0
+  mov $6,10
+  pow $6,$0
+  nrt $6,2
+  mov $1,$6
   div $1,5
   add $1,1
   mov $4,$2

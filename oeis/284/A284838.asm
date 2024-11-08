@@ -5,7 +5,7 @@
 sub $0,1
 mov $6,2
 add $6,$0
-cmp $0,1
+equ $0,1
 div $0,2
 add $0,1
 mov $5,$0
@@ -17,7 +17,7 @@ pow $4,$6
 mov $3,$4
 add $3,$5
 lpb $0
-  cmp $0,$2
+  equ $0,$2
   mov $5,1
   sub $5,$3
   mov $1,$2

@@ -1,5 +1,5 @@
 ; A328102: Column immediately left of the middle column of rule-30 1-D cellular automaton, when started from a lone 1 cell.
-; Submitted by PDW
+; Submitted by omegaintellisys
 ; 1,1,0,0,1,0,1,0,1,1,1,0,1,1,0,1,0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,1,1,1,0,1,1,0,1,0,1,1,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,1,0,1,1
 
 mov $1,2
@@ -7,7 +7,13 @@ pow $1,$0
 mov $2,1
 lpb $0
   sub $0,1
-  seq $2,269160 ; Formula for Wolfram's Rule 30 cellular automaton: a(n) = n XOR (2n OR 4n).
+  max $4,$2
+  add $4,$2
+  bxo $4,$2
+  add $2,$4
+  mov $3,$2
+  bxo $3,$4
+  mov $2,$3
 lpe
 mov $0,$2
 div $0,$1

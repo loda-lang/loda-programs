@@ -1,23 +1,17 @@
 ; A126588: a(n) = prime(13*n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 41,101,167,239,313,397,467,569,643,733,823,911,1009,1091,1187,1283,1381,1481,1567,1657,1753,1871,1979,2069,2153,2273,2371,2459,2591,2687,2767,2861,2971,3089,3217,3323,3433,3533,3623,3727,3847,3931,4051,4157,4261,4391,4507,4621,4723,4831,4957,5051,5171,5297,5417,5507,5641,5737,5843,5939,6079,6199,6299,6379,6547,6659,6763,6869,6977,7103,7219,7349,7489,7577,7687,7817,7927,8069,8179,8291
 
+add $0,1
 mul $0,13
-add $0,12
 mov $1,$0
-mul $1,2
-sub $1,2
-mov $2,4
-mov $3,$1
-pow $3,4
-lpb $3
-  max $4,$2
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $4,2
-  sub $1,$4
-  add $2,2
-  sub $3,$1
+pow $1,5
+lpb $1
+  mov $2,$3
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $3,2
+  sub $0,$2
+  sub $1,$0
 lpe
-add $1,$2
-sub $1,1
-mov $0,$1
+mov $0,$3
+add $0,1

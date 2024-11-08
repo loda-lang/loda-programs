@@ -1,18 +1,18 @@
 ; A171527: Numerator of (n-th composite/n).
-; Submitted by Jon Maiga
+; Submitted by GPV67
 ; 4,3,8,9,2,2,2,15,16,9,20,7,22,12,5,13,27,14,30,8,11,17,35,3,38,3,40,3,44,3,46,3,49,25,51,13,54,55,56,57,58,10,62,63,64,65,66,17,69,7,24,37,75,38,7,39,80,81,82,7,85,43,29,11,18,91,92,93,94,19,96,49,99,50,34,26,15,53,108,11
 
-mov $1,$0
-add $0,3
+mov $2,$0
+add $2,1
+add $0,1
 lpb $0
-  sub $0,1
-  add $2,$3
-  mov $3,$2
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $2,1
+  trn $0,1
+  seq $0,72668 ; Numbers one less than composite numbers.
+  mov $3,$0
+  mov $0,0
 lpe
-mov $0,$2
-sub $0,1
-add $1,1
-gcd $1,$0
+mov $0,$3
+add $0,1
+mov $1,$0
+gcd $1,$2
 div $0,$1

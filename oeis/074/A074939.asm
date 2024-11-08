@@ -1,11 +1,23 @@
 ; A074939: Even numbers such that base 3 representation contains no 2.
-; Submitted by thorsam
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,4,10,12,28,30,36,40,82,84,90,94,108,112,118,120,244,246,252,256,270,274,280,282,324,328,334,336,352,354,360,364,730,732,738,742,756,760,766,768,810,814,820,822,838,840,846,850,972,976,982,984,1000,1002,1008,1012,1054,1056,1062,1066,1080,1084,1090,1092,2188,2190,2196,2200,2214,2218,2224,2226,2268,2272,2278,2280,2296,2298,2304,2308
-; Formula: a(n) = truncate((A083094(n)*min(A142833(n),2))/4)
 
 mov $1,$0
-seq $1,83094 ; Numbers k such that Sum_{j=0..k} (binomial(k,j) mod 3) is odd.
-seq $0,142833 ; Primes congruent to 35 mod 61.
-min $0,2
-mul $0,$1
+mov $4,1
 div $0,4
+lpb $0
+  mov $3,$0
+  mul $3,$4
+  div $0,2
+  add $2,$3
+  mul $4,3
+lpe
+mov $0,$2
+mul $0,2
+add $0,$1
+mul $0,3
+div $0,2
+mul $0,6
+add $0,2
+div $0,4
+mul $0,2

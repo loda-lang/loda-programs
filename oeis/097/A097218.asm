@@ -11,7 +11,7 @@ lpb $2
   seq $3,76078 ; a(n) is the number of nonempty sets of distinct positive integers that have a least common multiple of n.
   sub $3,$1
   max $3,0
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

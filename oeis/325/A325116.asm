@@ -1,5 +1,5 @@
 ; A325116: Length of longest run of consecutive even integers having exactly n divisors.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by omegaintellisys
 ; 0,1,1,3,1,2,1,3,1,1,1,7,1,1,1,3,1,2,1,3,1,1,1
 
 mov $1,1
@@ -10,10 +10,8 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     div $6,2
     add $2,1
     max $4,$5

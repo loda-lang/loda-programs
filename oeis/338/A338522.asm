@@ -1,17 +1,11 @@
 ; A338522: Number of cyclic Latin squares of order n.
-; Submitted by Jamie Morken
+; Submitted by Science United
 ; 1,2,12,48,480,1440,30240,161280,2177280,14515200,399168000,1916006400,74724249600,523069747200,10461394944000,167382319104000,5690998849536000,38414242234368000,2189611807358976000,19463216065413120000,613091306060513280000
 
-add $0,1
-mov $4,1
-mov $2,$0
-lpb $2
-  mov $3,$2
-  gcd $3,$0
-  cmp $3,1
-  mul $4,$2
-  add $1,$3
-  sub $2,1
+mov $1,$0
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+add $1,1
+lpb $1
+  mul $0,$1
+  sub $1,1
 lpe
-mul $4,$1
-mov $0,$4
