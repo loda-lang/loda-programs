@@ -6,6 +6,6 @@
 mov $1,$0
 add $0,1
 seq $0,40 ; The prime numbers.
-seq $1,212158 ; ((prime(n)- 1)/2)!, n >= 2.
+seq $1,212158 ; a(n) = ((prime(n) - 1)/2)!, n >= 2.
 mod $1,$0
 mov $0,$1

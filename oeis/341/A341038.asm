@@ -11,8 +11,7 @@ lpb $0
     dif $3,$0
     lpb $3
       add $5,$3
-      cmp $3,$2
-      cmp $3,0
+      neq $3,$2
       sub $3,1
       add $4,$5
     lpe

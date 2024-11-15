@@ -1,10 +1,19 @@
 ; A102511: Sum(A008683(A102510(k)): k<=n).
-; Submitted by shiva
+; Submitted by Yeti
 ; 1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0
-; Formula: a(n) = -2*truncate(A013928(n+1)/2)+A013928(n+1)
 
-mov $1,$0
-add $1,1
-seq $1,13928 ; Number of (positive) squarefree numbers < n.
+mov $1,1
+add $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  gcd $3,$2
+  dif $1,$3
+  mov $3,$1
+  mul $1,$2
+  mul $2,2
+lpe
 mov $0,$1
+add $0,226
+div $0,2
 mod $0,2

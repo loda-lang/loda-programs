@@ -13,7 +13,7 @@ lpb $2
   seq $3,43556 ; Number of runs in base-4 representation of n.
   sub $3,1
   gcd $3,6
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,1
   sub $2,$0

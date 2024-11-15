@@ -9,5 +9,5 @@ lpb $0
   mov $0,$1
 lpe
 mov $3,$0
-cmp $3,0
+equ $3,0
 add $0,$3

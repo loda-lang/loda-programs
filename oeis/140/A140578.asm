@@ -1,5 +1,5 @@
 ; A140578: A positive integer n is included if n is the smallest integer in a run of a plural number of consecutive integers all with the same number of divisors.
-; Submitted by Skillz
+; Submitted by Matthias Lehmkuhl
 ; 2,14,21,26,33,38,44,57,75,85,93,98,104,116,118,122,133,135,141,145,147,158,171,177,189,201,205,213,217,230,242,253,285,296,298,301,326,332,334,344,374,381,387,393,429,434,445,453,481,501,507,514,526,537,542
 
 mov $2,$0
@@ -25,12 +25,13 @@ lpb $2
   mov $3,$5
   equ $3,0
   sub $0,$3
-  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
   sub $2,1
+  add $1,1
+  add $1,$3
 lpe
 mov $0,$1
 add $0,2

@@ -8,7 +8,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,109848 ; Highest common factor of n and its 9's complement.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -9,7 +9,7 @@ lpb $0
   lpe
   min $1,$2
   sub $2,$3
-  cmp $1,$2
+  equ $1,$2
   sub $2,1
   add $3,$1
   div $0,2

@@ -13,13 +13,12 @@ lpb $3
   add $5,$4
   mov $6,$0
   mod $6,$5
-  cmp $6,0
+  equ $6,0
   add $2,$6
   mov $6,$0
   add $6,1
   trn $6,$5
-  cmp $6,0
-  cmp $6,0
+  neq $6,0
   sub $3,$6
 lpe
 mov $0,$2

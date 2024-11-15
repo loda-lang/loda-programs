@@ -6,9 +6,7 @@ mov $1,24
 mov $2,3
 lpb $2
   div $2,3
-  seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
-  add $0,9
-  mod $0,10
+  seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
   sub $0,2
   add $0,$1
   mov $1,0

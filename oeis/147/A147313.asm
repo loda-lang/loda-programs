@@ -1,24 +1,29 @@
 ; A147313: Decimal expansion of sqrt(11)/2.
-; Submitted by Simon Strandgaard
+; Submitted by Aionel
 ; 1,6,5,8,3,1,2,3,9,5,1,7,7,6,9,9,9,2,4,5,5,7,4,6,6,3,6,8,3,3,5,3,4,3,3,4,1,9,6,3,5,4,4,2,7,2,7,9,4,6,7,6,7,9,8,5,2,9,3,4,1,0,7,3,0,5,8,2,4,2,3,2,1,3,0,4,5,2,1,9
 
+mov $5,13
+mov $1,1
 mov $3,$0
-mul $3,6
-add $3,169
+mul $3,3
 lpb $3
   sub $3,1
+  mov $7,$6
   add $6,$2
-  cmp $1,1
-  add $1,$6
+  add $2,$7
+  mov $5,$1
+  add $5,$1
+  add $5,$7
+  mov $1,4
   add $1,$2
-  div $1,7
-  mul $1,4
   add $2,$1
+  mul $1,2
   add $5,$2
-  sub $6,1
+  add $6,$5
 lpe
 mov $4,10
 pow $4,$0
+add $2,10
 div $2,$4
 mov $1,$5
 div $1,$2

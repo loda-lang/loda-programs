@@ -1,18 +1,21 @@
 ; A213436: Principal diagonal of the convolution array A212891.
-; Submitted by Simon Strandgaard
+; Submitted by GPV67
 ; 1,17,84,260,625,1281,2352,3984,6345,9625,14036,19812,27209,36505,48000,62016,78897,99009,122740,150500,182721,219857,262384,310800,365625,427401,496692,574084,660185,755625,861056,977152,1104609
+; Formula: a(n) = b(n)+1, b(n) = (n+1)^3+2*binomial(2*n+2,3)+b(n-1), b(0) = 0
 
-add $0,1
-mov $1,$0
-pow $1,2
-mov $4,$0
 lpb $0
-  sub $0,1
-  mul $3,$4
+  mov $4,$0
   add $4,1
+  pow $4,3
+  mov $2,$0
+  add $2,1
+  mov $3,$2
+  mul $3,2
+  bin $3,3
+  add $4,$3
+  add $3,$4
+  sub $0,1
   add $1,$3
-  mov $3,$4
-  add $5,$1
 lpe
-add $2,$5
-mov $0,$2
+mov $0,$1
+add $0,1

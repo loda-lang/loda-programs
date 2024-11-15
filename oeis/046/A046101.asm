@@ -8,8 +8,13 @@ add $2,7
 pow $2,2
 lpb $2
   add $1,1
-  mov $3,$1
-  seq $3,8833 ; Largest square dividing n.
+  max $7,$1
+  mov $6,$7
+  seq $7,19554 ; Smallest number whose square is divisible by n.
+  div $6,$7
+  mov $3,$6
+  add $3,1
+  pow $3,2
   seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
   sub $3,1
   seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
@@ -20,11 +25,11 @@ lpb $2
   div $5,$3
   div $5,11
   mov $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

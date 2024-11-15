@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   div $2,$3
-  cmp $2,1
+  equ $2,1
   sub $0,1
   add $1,$2
 lpe

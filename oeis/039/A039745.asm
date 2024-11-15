@@ -21,10 +21,10 @@ lpb $4
     mov $13,$0
     mul $13,2
     mul $2,40
-    cmp $8,0
+    equ $8,0
     mul $8,$13
     mov $12,$3
-    cmp $12,$13
+    equ $12,$13
     add $11,$8
     mul $11,$12
     add $10,$13
@@ -37,7 +37,7 @@ lpb $4
       mov $10,$11
       div $13,2
     lpe
-    cmp $7,0
+    equ $7,0
     add $1,$7
   lpe
   add $5,$1

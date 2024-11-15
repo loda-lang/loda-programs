@@ -1,11 +1,11 @@
 ; A284001: a(n) = A005361(A283477(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,2,1,2,4,6,1,2,4,6,8,12,18,24,1,2,4,6,8,12,18,24,16,24,36,48,54,72,96,120,1,2,4,6,8,12,18,24,16,24,36,48,54,72,96,120,32,48,72,96,108,144,192,240,162,216,288,360,384,480,600,720,1,2,4,6,8,12,18,24,16,24,36,48,54,72,96,120
 
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dis $2,2
   div $0,2
   mul $1,$2
 lpe

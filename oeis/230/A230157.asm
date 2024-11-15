@@ -1,12 +1,12 @@
 ; A230157: Decimal expansion of the positive real solution of the equation x^(k+1)+x^k-1=0. Case k=9.
-; Submitted by titidestroy
+; Submitted by Science United
 ; 9,2,9,5,7,0,1,2,8,2,3,2,0,2,2,8,6,4,2,0,4,4,1,3,0,3,6,9,1,4,4,6,4,1,2,5,4,3,5,3,2,5,8,5,3,0,0,2,0,2,4,8,3,3,6,3,0,2,0,5,5,4,5,2,1,5,0,9,8,7,8,5,3,0,6,5,4,2,7,2
 
 add $0,1
 mov $3,$0
 mul $3,8
 lpb $3
-  sub $3,2
+  sub $3,4
   sub $4,$12
   add $6,$4
   add $6,$2

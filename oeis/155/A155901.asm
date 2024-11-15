@@ -1,7 +1,8 @@
 ; A155901: Arise in p-adic valuations of sequences counting alternating sign matrices.
-; Submitted by Fardringle
+; Submitted by shiva
 ; 2,8,5,12,5,14,8,14
 
+mov $3,-2
 add $0,139
 lpb $0
   sub $0,3
@@ -17,4 +18,4 @@ lpb $0
   div $3,2
 lpe
 mov $0,$4
-sub $0,128
+sub $0,126

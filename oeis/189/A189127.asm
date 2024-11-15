@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,189126 ; Zero-one sequence based on the sequence (4n-2):  a(A016825(k))=a(k); a(A042965(k))=1-a(k), a(1)=0.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

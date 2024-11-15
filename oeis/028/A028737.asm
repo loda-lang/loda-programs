@@ -6,4 +6,13 @@ lpb $1
   mov $1,7
   add $0,1
 lpe
-seq $0,37 ; Numbers that are not squares (or, the nonsquares).
+max $2,$0
+div $0,2
+mul $0,8
+add $0,1
+nrt $0,2
+add $0,1
+div $0,2
+add $2,$0
+mov $0,$2
+add $0,1

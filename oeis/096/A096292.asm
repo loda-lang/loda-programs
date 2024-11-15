@@ -17,12 +17,12 @@ lpb $3
   mul $4,2
   sub $4,1
   seq $4,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
 lpe
 mov $0,$6

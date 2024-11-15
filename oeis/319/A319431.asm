@@ -1,5 +1,5 @@
 ; A319431: The first differences (A319430) of the tribonacci representation numbers (A003726 or A278038) consists of runs of 1's separated by the terms of the present sequence.
-; Submitted by Science United
+; Submitted by [AF>France>Sale-caractere] Antares
 ; 2,3,2,5,2,3,10,2,3,2,5,2,19,2,3,2,5,2,3,10,2,3,2,37,2,3,2,5,2,3,10,2,3,2,5,2,19,2,3,2,5,2,3,74,2,3,2,5,2,3,10,2,3,2,5,2,19,2,3,2,5,2,3,10,2,3,2,37,2,3,2,5,2,3,10,2,3,2,5,2
 
 mov $2,$0
@@ -15,6 +15,7 @@ lpb $2
   neq $3,0
   sub $0,$3
   add $1,1
+  add $1,$3
   mov $4,$0
   max $4,0
   equ $4,$0

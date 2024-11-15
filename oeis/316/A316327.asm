@@ -9,5 +9,3 @@ seq $1,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S
 div $1,-1
 mov $0,$1
 add $0,5
-add $1,4
-mul $1,6

@@ -13,8 +13,7 @@ lpb $2
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   pow $3,2
   sub $3,$4
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

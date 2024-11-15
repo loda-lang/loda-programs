@@ -10,12 +10,12 @@ lpb $2
   seq $3,193238 ; Number of prime digits in decimal representation of n.
   pow $3,2
   trn $3,3
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

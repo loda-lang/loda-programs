@@ -1,13 +1,14 @@
 ; A109222: Row sums of a triangle related to the Fibonacci polynomials.
-; Submitted by Dave Studdert
+; Submitted by Science United
 ; 1,2,3,6,11,21,40,76,145,276,526,1002,1909,3637,6929,13201,25150,47915,91286,173915,331337,631252,1202640,2291229,4365172,8316378,15844082,30185609,57508601,109563441,208736561,397677834,757642355,1443434582
-; Formula: a(n) = truncate(b(n+1)/121)+1, b(n) = 2*b(n-2)-b(n-4)+b(n-1)+121, b(6) = 2420, b(5) = 1210, b(4) = 605, b(3) = 242, b(2) = 121, b(1) = 0, b(0) = 0
+; Formula: a(n) = 2*a(n-2)-a(n-4)+a(n-1), a(4) = 11, a(3) = 6, a(2) = 3, a(1) = 2, a(0) = 1
 
-add $0,1
+mov $2,1
+mov $3,1
+mov $4,1
 lpb $0
   sub $0,1
   add $1,$3
-  add $3,121
   mov $5,$4
   add $5,$2
   mov $4,$2
@@ -15,6 +16,4 @@ lpb $0
   mov $2,$3
   mov $3,$5
 lpe
-mov $0,$4
-div $0,121
-add $0,1
+mov $0,$3

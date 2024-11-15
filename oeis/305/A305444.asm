@@ -1,5 +1,5 @@
 ; A305444: a(n) = Product_{p is odd and prime and divisor of n} (p - 2).
-; Submitted by Christian Krause
+; Submitted by GPV67
 ; 1,1,1,1,3,1,5,1,1,3,9,1,11,5,3,1,15,1,17,3,5,9,21,1,3,11,1,5,27,3,29,1,9,15,15,1,35,17,11,3,39,5,41,9,3,21,45,1,5,3,15,11,51,1,27,5,17,27,57,3,59,29,5,1,33,9,65,15,21,15,69,1,71,35,3,17,45,11,77,3
 
 mov $1,1
@@ -10,19 +10,17 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     mov $5,$2
-    cmp $5,1
-    add $2,1
+    equ $5,1
+    add $2,2
     max $4,$5
     sub $3,$4
   lpe
   lpb $0
     dif $0,$2
   lpe
-  trn $2,3
-  add $2,1
+  sub $2,2
   mul $1,$2
 lpe
 mov $0,$1

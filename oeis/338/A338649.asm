@@ -12,7 +12,7 @@ lpb $0
   gcd $2,$1
   bin $2,$1
   mul $2,3
-  cmp $1,1
+  equ $1,1
   add $1,6
   add $3,$2
 lpe

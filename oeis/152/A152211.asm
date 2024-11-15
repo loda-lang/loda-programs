@@ -8,9 +8,9 @@ mov $1,$0
 lpb $1
   mov $3,$2
   dif $3,$1
-  cmp $3,$2
+  equ $3,$2
   add $1,$4
-  cmp $3,0
+  equ $3,0
   mul $3,$1
   add $0,$3
   sub $1,1

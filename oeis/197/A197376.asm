@@ -1,4 +1,4 @@
-; A197376: Decimal expansion of least x>0 having sin(x)=(sin x/2)^2.
+; A197376: Decimal expansion of least x>0 having sin(x)=(sin (x/2))^2.
 ; Submitted by Gibson Praise
 ; 2,2,1,4,2,9,7,4,3,5,5,8,8,1,8,1,0,0,6,0,3,4,1,3,0,9,2,0,3,5,7,0,7,4,0,8,0,1,4,0,0,9,5,2,9,0,8,0,2,8,6,5,2,9,3,3,5,3,0,7,8,4,1,4,8,6,7,4,2,0,6,7,7,9,5,4,7,2,5,5
 

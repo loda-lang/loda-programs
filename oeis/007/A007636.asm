@@ -11,7 +11,7 @@ lpb $2
   max $3,$4
   add $3,1
   seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,2
   sub $2,$0

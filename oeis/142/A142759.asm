@@ -13,7 +13,7 @@ lpb $2
   sub $0,$3
   mov $1,$0
   max $1,0
-  cmp $1,$0
+  equ $1,$0
   mul $2,$1
   sub $2,1
   mov $3,$4
