@@ -14,18 +14,15 @@ lpb $3
     add $6,1
     mov $4,$0
     mod $4,$2
-    cmp $4,0
+    equ $4,0
     sub $5,$4
   lpe
-  cmp $6,0
-  cmp $6,0
   mov $4,$2
   pow $4,$6
   mul $1,$4
   add $2,1
   mov $4,$0
-  cmp $4,1
-  cmp $4,0
+  neq $4,1
   mov $0,$1
   sub $3,$4
 lpe

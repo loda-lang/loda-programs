@@ -17,12 +17,12 @@ lpb $3
   seq $6,193238 ; Number of prime digits in decimal representation of n.
   add $4,$7
   sub $4,$6
-  cmp $4,4
+  equ $4,4
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

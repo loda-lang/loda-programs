@@ -8,7 +8,7 @@ mul $3,5
 sub $3,2
 lpb $3
   mov $4,$3
-  cmp $4,0
+  equ $4,0
   mov $5,$3
   mul $1,$3
   add $3,$4
@@ -21,7 +21,7 @@ lpb $3
   mov $5,$0
   add $5,$0
   mov $4,$5
-  cmp $4,0
+  equ $4,0
   add $5,$4
   div $1,$5
   div $1,$3

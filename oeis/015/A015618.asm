@@ -30,7 +30,7 @@ lpb $3
       mov $0,$1
       div $0,2
       mov $2,2
-      cmp $2,$0
+      equ $2,$0
       bin $1,$2
       add $1,$0
       mov $0,$1

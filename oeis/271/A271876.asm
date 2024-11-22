@@ -2,7 +2,7 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,2,3,5,8,11,14,17,20
 
-cmp $2,$0
+equ $2,$0
 gcd $2,2
 mov $1,$0
 mul $1,2

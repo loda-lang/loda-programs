@@ -11,7 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,34178 ; Number of solutions to n = a^2 - b^2, a > b >= 0.
   add $3,1
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -18,7 +18,7 @@ lpb $3
   seq $0,40 ; The prime numbers.
   sub $0,3
   mov $2,$3
-  cmp $2,$3
+  equ $2,$3
   mul $2,$0
   add $1,3
   add $1,$2

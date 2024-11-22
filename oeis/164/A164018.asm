@@ -14,11 +14,11 @@ pow $3,2
 lpb $3
   mov $4,$2
   seq $4,8963 ; Initial digit of Fibonacci number F(n).
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   add $2,1
   add $2,$4
   mul $3,$5

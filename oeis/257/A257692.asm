@@ -15,7 +15,7 @@ lpb $2
   sub $3,1
   seq $3,320390 ; Prime signature of n (sorted in decreasing order), concatenated.
   mod $3,10
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

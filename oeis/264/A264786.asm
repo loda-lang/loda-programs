@@ -7,10 +7,10 @@ mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
-  cmp $3,$2
+  equ $3,$2
   trn $4,$3
   add $4,1
-  cmp $3,0
+  equ $3,0
   mul $3,$0
   pow $3,$4
   sub $0,1

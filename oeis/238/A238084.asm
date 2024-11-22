@@ -7,7 +7,7 @@ add $2,1
 trn $0,1
 seq $0,265409 ; a(n) = index to the nearest inner neighbor in Ulam-style square-spirals using zero-based indexing.
 sub $1,$0
-cmp $1,0
+equ $1,0
 add $1,$2
 div $2,2
 mul $2,$0

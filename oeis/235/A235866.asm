@@ -8,17 +8,17 @@ pow $2,2
 lpb $2
   add $6,1
   mov $3,$1
-  seq $3,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p = 1 (mod 4) and H(p) = p + 1 if p = 3 (mod 4).
+  seq $3,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p == 1 (mod 4) and H(p) = p + 1 if p == 3 (mod 4).
   mov $5,$3
   mul $5,2
   gcd $5,$6
   mov $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -8,12 +8,12 @@ pow $3,6
 lpb $3
   mov $4,$2
   seq $4,336466 ; Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   add $2,2
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

@@ -11,13 +11,11 @@ lpb $2
   mov $5,$3
   sub $3,1
   seq $3,11656 ; A binary m-sequence: expansion of reciprocal of x^3 + x^2 + 1 (mod 2), shifted by 2 initial 0's.
-  cmp $3,0
-  cmp $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

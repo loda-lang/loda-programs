@@ -17,8 +17,8 @@ lpb $0
     trn $7,1
     seq $7,302110 ; Let d be the list of A000005(n) = tau(n) divisors of n. Then a(n) is the largest k such that Sum_{i=1..#d-k} d_i > n.
     add $7,2
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     add $9,$5
     mov $10,$7
     sub $4,$0

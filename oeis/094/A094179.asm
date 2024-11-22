@@ -10,11 +10,11 @@ lpb $2
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $3,1
   seq $3,48883 ; a(n) = 3^wt(n), where wt(n) = A000120(n).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,4
   mul $2,$4
   sub $2,1
