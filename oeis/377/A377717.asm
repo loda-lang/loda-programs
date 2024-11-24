@@ -1,0 +1,26 @@
+; A377717: E.g.f. satisfies A(x) = (1 + (exp(x) - 1) * A(x))^3.
+; Submitted by Coleslaw
+; 1,3,27,405,8703,245493,8608167,361640205,17727268383,993980112453,62774530115607,4410751512076605,341353603094403663,28856102576884010613,2645807719152819131847,261551674681092859354605,27732033282190658330940543,3139533157528775981685527973
+
+mov $1,119
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  mov $4,$0
+  seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
+  seq $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
+  mul $0,$4
+  add $1,$0
+lpe
+mov $0,$1
+sub $0,119
