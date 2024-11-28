@@ -1,21 +1,7 @@
 ; A342455: The fifth powers of primorials: a(n) = A002110(n)^5.
-; Submitted by miko
+; Submitted by Science United
 ; 1,32,7776,24300000,408410100000,65774855015100000,24421743243121524300000,34675383095948798128025100000,85859681408495723096004822084900000,552622359415801587878908964592391520700000,11334919554709059323420895730190266747414284300000,324509123504618420438174660414872405442002404781629300000
+; Formula: a(n) = A002110(n)^5
 
-mov $1,1
-mov $2,1
-lpb $0
-  mov $3,$2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    neq $4,1
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
-lpe
-pow $1,5
-mov $0,$1
+seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+pow $0,5

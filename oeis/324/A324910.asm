@@ -14,7 +14,7 @@ lpb $0
     add $2,1
     sub $3,$4
   lpe
-  cmp $5,22
+  equ $5,22
   lpb $0
     dif $0,$2
     mul $5,2

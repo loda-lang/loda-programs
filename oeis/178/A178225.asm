@@ -10,4 +10,4 @@ lpb $1
   mul $2,2
 lpe
 div $2,2
-cmp $0,$2
+equ $0,$2

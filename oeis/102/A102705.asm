@@ -1,5 +1,5 @@
 ; A102705: Numbers not of the form 7x + 9y with nonnegative x and y.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by STE\/E
 ; 0,1,2,3,4,5,6,8,10,11,12,13,15,17,19,20,22,24,26,29,31,33,38,40,47
 
 mov $2,$0
@@ -12,9 +12,7 @@ lpb $2
   lpb $3
     mov $6,$3
     mod $6,7
-    div $6,3
-    pow $6,2
-    div $6,4
+    div $6,6
     sub $3,5
     trn $3,4
     add $5,$6
@@ -28,7 +26,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

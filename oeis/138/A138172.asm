@@ -14,16 +14,16 @@ lpb $2
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,$6
   mov $5,$3
-  cmp $3,0
+  equ $3,0
   gcd $3,$5
   div $5,$3
   mov $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

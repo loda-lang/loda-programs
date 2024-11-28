@@ -1,13 +1,22 @@
 ; A070951: Number of 0's in n-th row of triangle in A070950.
-; Submitted by Simon Strandgaard
+; Submitted by Coleslaw
 ; 0,0,2,1,5,2,8,3,10,7,10,9,13,8,16,9,18,16,17,15,20,20,22,19,23,24,27,22,27,25,30,24,39,28,40,25,41,31,39,34,34,42,40,38,51,36,51,44,53,46,58,44,53,47,60,46,56,55,61,50,60,53,66,49,65,75,68,66,68,72,64,65,72,79,66,73,75,68,77,73
-; Formula: a(n) = 2*n-A265703(n+1)+1
 
 mov $2,$0
+mov $4,1
 add $0,1
-seq $0,265703 ; Number of OFF (white) cells in the n-th iteration of the "Rule 135" elementary cellular automaton starting with a single ON (black) cell.
+lpb $0
+  sub $0,1
+  mov $3,$5
+  mul $5,2
+  bxo $3,$5
+  add $4,$3
+  bxo $4,$3
+  mov $5,$4
+lpe
+dis $5,2
 mov $1,$2
 mul $1,2
 add $1,1
-sub $1,$0
+sub $1,$5
 mov $0,$1

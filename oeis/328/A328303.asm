@@ -8,7 +8,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,354874 ; a(n) = 1 if A003415(n) is squarefree, otherwise 0.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

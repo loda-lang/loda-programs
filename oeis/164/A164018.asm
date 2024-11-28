@@ -1,10 +1,11 @@
 ; A164018: The index values of the smallest and the largest n-digit Fibonacci numbers.
-; Submitted by zombie67 [MM]
+; Submitted by Joe
 ; 0,6,7,11,12,16,17,20,21,25,26,30,31,35,36,39,40,44,45,49,50,54,55,59,60,63,64,68,69,73,74,78,79,83,84,87,88,92,93,97,98,102,103,106,107,111,112,116,117,121,122,126,127,130,131,135,136,140,141,145,146,150,151,154,155,159,160,164,165,169,170,173,174,178,179,183,184,188,189,193
 
 mov $1,$0
 max $0,1
 gcd $0,2
+add $0,20
 add $1,1
 div $1,2
 mov $2,1
@@ -16,6 +17,7 @@ lpb $3
   seq $4,8963 ; Initial digit of Fibonacci number F(n).
   equ $4,1
   sub $1,$4
+  mul $4,3
   mov $5,$1
   max $5,0
   equ $5,$1
@@ -25,4 +27,4 @@ lpb $3
   sub $3,1
 lpe
 add $0,$2
-sub $0,2
+sub $0,22

@@ -8,7 +8,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,243223 ; Number of partitions of n into positive summands in arithmetic progression with common difference 3.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

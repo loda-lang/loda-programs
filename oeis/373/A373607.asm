@@ -18,6 +18,7 @@ lpb $8
   equ $7,0
   add $1,$5
   mov $3,$4
+  pow $6,2
   add $6,$5
   dif $2,2
   add $2,1

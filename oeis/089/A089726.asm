@@ -17,7 +17,7 @@ lpb $2
   sub $0,$3
   mov $1,$6
   trn $4,1
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   add $6,$5
   add $6,1

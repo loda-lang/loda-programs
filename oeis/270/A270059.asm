@@ -7,7 +7,7 @@ sub $1,1
 pow $0,2
 div $0,2
 mov $2,$1
-cmp $2,0
+equ $2,0
 add $1,$2
 div $0,$1
 add $0,1

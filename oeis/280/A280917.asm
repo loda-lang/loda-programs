@@ -13,7 +13,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     seq $7,244149 ; a(n) = 2*(n*Denominator(((n-1)*(n^2)+2^(n+1)-4)/(2*n))-n)/n+1.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

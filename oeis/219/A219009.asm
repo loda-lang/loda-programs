@@ -1,15 +1,13 @@
 ; A219009: Coefficients of the Dirichlet series for zeta(4s)/zeta(s).
-; Submitted by zelandonii
+; Submitted by Christian Krause
 ; 1,-1,-1,0,-1,1,-1,0,0,1,-1,0,-1,1,1,1,-1,0,-1,0,1,1,-1,0,0,1,0,0,-1,-1,-1,-1,1,1,1,0,-1,1,1,0,-1,-1,-1,0,0,1,-1,-1,0,0,1,0,-1,0,1,0,1,1,-1,0,-1,1,0,0,1,-1,-1,0,1,-1,-1,0,-1,1,0,0,1,-1,-1,-1
 
 mov $1,1
+mov $2,1
 add $0,1
 lpb $0
   mov $3,$0
   lpb $3
-    mov $6,$2
-    equ $6,0
-    add $2,$6
     mov $4,$0
     mod $4,$2
     neq $4,0

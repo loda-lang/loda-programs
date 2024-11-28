@@ -1,33 +1,25 @@
 ; A301672: Coordination sequence for node of type V2 in "krr" 2-D tiling (or net).
-; Submitted by Kotenok2000
+; Submitted by BlisteringSheep
 ; 1,4,8,13,17,20,25,30,33,37,42,46,50,54,58,63,67,70,75,80,83,87,92,96,100,104,108,113,117,120,125,130,133,137,142,146,150,154,158,163,167,170,175,180,183,187,192,196,200,204,208,213,217,220,225,230,233,237,242,246,250,254,258,263,267,270,275,280,283,287,292,296,300,304,308,313,317,320,325,330
+; Formula: a(n) = 2*n-truncate((gcd(binomial(n,2)+3,2)+n)/2)+gcd(binomial(n,2)+3,2)+truncate((8*n-2)/3)
 
-pow $1,$0
-sub $1,2
-add $0,6
+mov $1,$0
+bin $1,2
+add $1,3
+gcd $1,2
 mov $2,$0
-bin $2,2
-gcd $2,2
+add $2,$1
+div $2,2
+sub $2,8
+sub $2,$1
 mov $3,$0
-add $3,$2
-div $3,2
-sub $3,8
-sub $3,$2
+mul $3,2
 mov $4,$0
-mul $4,2
-mov $5,$0
-lpb $0
-  add $6,7
-  trn $0,$5
-  add $0,$6
-  sub $0,4
-lpe
-mul $5,5
-add $0,$5
-mul $0,4
-add $0,1
+add $4,$3
+add $0,$4
+sub $0,1
+mul $0,2
 div $0,3
-sub $0,36
-sub $0,$4
-sub $0,$3
-add $0,$1
+sub $0,8
+add $0,$3
+sub $0,$2

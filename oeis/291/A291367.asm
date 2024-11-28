@@ -12,13 +12,12 @@ lpb $3
     mod $2,$1
     mul $3,$2
     div $0,2
-    cmp $2,0
+    equ $2,0
     sub $4,$2
   lpe
   add $1,1
   mov $2,$0
-  cmp $2,1
-  cmp $2,0
+  neq $2,1
   sub $3,$2
   add $4,1
 lpe

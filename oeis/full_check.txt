@@ -223,6 +223,7 @@ A063695: Remove even-positioned bits from the binary expansion of n.
 A063787: a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
 A064724: A Beatty sequence for 2^sqrt(2).
 A064911: If n is semiprime (or 2-almost prime) then 1 else 0.
+A065159: Binary string self-substitutions: a(n) is obtained by substituting the binary expansion of n for each 1-bit in the binary expansion of n.
 A065176: Site swap sequence associated with the permutation A065174 of Z.
 A065331: Largest 3-smooth divisor of n.
 A065515: Number of prime powers <= n.
@@ -548,6 +549,7 @@ A249115: Floor(r*n), where r = (5 - sqrt(5))/2; the Beatty complement of A003231
 A251758: Let n>=2 be a positive integer with divisors 1 = d_1 < d_2 < ... < d_k = n, and s = d_1*d_2 + d_2*d_3 + ... + d_(k-1)*d_k. The sequence lists the values a(n) = floor(n^2/s).
 A253251: a(1) = 1, and for n > 0, a(n+1) = a(n) + floor(10^k/a(n)), where k is the least integer such that 10^k >= a(n).
 A255738: a(1) = 1; for n > 1, a(n) = 1*0^{A000120(n-1) - 1}.
+A255873: The first nonzero digit of n/7.
 A256757: Number of iterations of A007733 required to reach 1.
 A257091: a(n) = log_5 (A256693(n)).
 A257993: Least gap in the partition having Heinz number n; index of the least prime not dividing n.

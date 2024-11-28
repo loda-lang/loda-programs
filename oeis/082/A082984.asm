@@ -9,13 +9,12 @@ lpb $2
   max $3,2
   seq $3,6577 ; Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
   trn $3,$1
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -8,11 +8,24 @@ lpb $5
   add $3,$0
   add $0,$5
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,186324 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f and g are the squares and octagonal numbers.  Complement of A186325.
+  mov $11,1
+  add $11,$0
+  mov $10,$11
+  pow $10,2
+  mov $7,$10
+  mul $7,3
+  nrt $7,2
+  add $11,$7
+  mov $9,1
+  add $9,$11
+  mov $6,$9
+  pow $6,2
+  div $6,3
+  mov $8,$6
+  nrt $8,2
   mov $2,$5
-  mul $2,$4
+  mul $2,$8
+  mov $4,$8
   add $1,$2
 lpe
 min $3,1

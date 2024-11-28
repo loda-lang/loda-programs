@@ -6,11 +6,19 @@ lpb $0
   add $1,1
   mov $3,$0
   add $3,3
-  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $3,2
+  mul $3,2
+  mov $4,$3
+  nrt $4,2
   mov $2,$0
   add $2,1
-  seq $2,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-  mul $3,$2
+  pow $2,2
+  mul $2,2
+  mov $5,$2
+  nrt $5,2
+  mov $3,$4
+  mul $3,$5
+  mov $2,$5
   add $2,$3
   mod $2,2
   add $0,$2

@@ -1,9 +1,24 @@
 ; A351749: a(n) = Sum_{p|n, p prime} sigma_p(p).
-; Submitted by Christian Krause
+; Submitted by Coleslaw
 ; 0,5,28,5,3126,33,823544,5,28,3131,285311670612,33,302875106592254,823549,3154,5,827240261886336764178,33,1978419655660313589123980,3131,823572,285311670617,20880467999847912034355032910568,33,3126,302875106592259
-; Formula: a(n) = A001221(n)+A351366(n)
 
-mov $1,$0
-seq $1,351366 ; a(n) = Sum_{p|n, p prime} p^p.
-seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
-add $0,$1
+mov $2,2
+add $0,1
+lpb $0
+  mov $3,$0
+  lpb $3
+    mov $4,$0
+    mod $4,$2
+    neq $4,0
+    add $2,1
+    sub $3,$4
+  lpe
+  lpb $0
+    dif $0,$2
+  lpe
+  mov $5,$2
+  pow $5,$2
+  add $1,1
+  add $1,$5
+lpe
+mov $0,$1

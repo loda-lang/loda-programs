@@ -10,7 +10,18 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  seq $0,16269 ; Number of monotone Boolean functions of n variables with 2 mincuts. Also number of Sperner systems with 2 blocks.
+  add $0,2
+  mov $6,2
+  pow $6,$0
+  add $6,1
+  mov $5,3
+  pow $5,$0
+  mul $5,2
+  add $5,$6
+  pow $6,2
+  sub $6,$5
+  mov $0,$6
+  div $0,2
   bin $1,$4
   mul $1,$0
   mul $3,-1

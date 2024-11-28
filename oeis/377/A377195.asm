@@ -8,16 +8,15 @@ mov $4,$0
 add $4,1
 lpb $4
   sub $4,1
-  mov $5,$9
+  mov $5,$7
   add $8,2
   mov $0,$2
   sub $0,$4
   mov $1,$0
-  add $1,$7
-  bin $1,$0
+  add $1,1
   add $2,1
   mov $6,$0
-  add $9,2
+  add $7,2
   div $0,2
   bin $5,$0
   mul $5,2
@@ -26,7 +25,6 @@ lpb $4
   mul $1,$8
   mul $1,$6
   add $3,$1
-  pow $7,0
 lpe
 mov $0,$3
 div $0,6

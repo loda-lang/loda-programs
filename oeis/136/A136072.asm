@@ -9,7 +9,9 @@ pow $2,4
 lpb $2
   sub $2,1
   max $3,$4
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  sub $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,14
   sub $2,$0

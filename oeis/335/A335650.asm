@@ -11,11 +11,11 @@ lpb $2
   gcd $3,210
   sub $3,1
   seq $3,93411 ; Divide n by the largest factorial that divides it and repeat until an odd number is reached, which will be the result; a(0) = 0.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,$4
   mul $2,$4
   sub $2,1
