@@ -1,23 +1,18 @@
 ; A166633: Totally multiplicative sequence with a(p) = 3*(p-1) for prime p.
-; Submitted by Simon Strandgaard
+; Submitted by Time_Traveler
 ; 1,3,6,9,12,18,18,27,36,36,30,54,36,54,72,81,48,108,54,108,108,90,66,162,144,108,216,162,84,216,90,243,180,144,216,324,108,162,216,324,120,324,126,270,432,198,138,486,324,432,288,324,156,648,360,486,324,252,174,648,180,270,648,729,432,540,198,432,396,648,210,972,216,324,864,486,540,648,234,972
 
-mov $1,1
-mov $2,2
-add $0,1
+#offset 1
+
+sub $0,1
+mov $2,4
 lpb $0
-  mov $3,$0
-  bin $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  sub $5,1
-  mul $5,3
-  dif $0,$2
-  mul $1,$5
+  mov $1,$0
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$1
+  sub $1,1
+  mul $2,$1
+  mul $2,3
 lpe
-mov $0,$1
+mov $0,$2
+div $0,4
