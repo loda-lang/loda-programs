@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,2,4,6,8,10,12,14,16,22,26,32,36,40,44
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $1,$0
   mul $1,6

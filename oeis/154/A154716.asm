@@ -9,9 +9,10 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  add $0,2
   mov $2,$0
+  add $2,3
   seq $2,35497 ; Happy primes: primes that eventually reach 1 under iteration of "x -> sum of squares of digits of x".
+  add $0,2
   mul $4,$2
 lpe
 mov $0,$4

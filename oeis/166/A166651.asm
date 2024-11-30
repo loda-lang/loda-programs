@@ -1,23 +1,14 @@
 ; A166651: Totally multiplicative sequence with a(p) = 2p-1 for prime p.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,3,5,9,9,15,13,27,25,27,21,45,25,39,45,81,33,75,37,81,65,63,45,135,81,75,125,117,57,135,61,243,105,99,117,225,73,111,125,243,81,195,85,189,225,135,93,405,169,243,165,225,105,375,189,351,185,171,117,405,121,183,325,729,225,315,133,297,225,351,141,675,145,219,405,333,273,375,157,729
 
 mov $1,1
-mov $2,2
-add $0,1
 lpb $0
-  mov $3,$0
-  bin $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  mul $5,2
-  sub $5,1
-  dif $0,$2
-  mul $1,$5
+  mov $2,$0
+  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$2
+  mul $2,2
+  sub $2,1
+  mul $1,$2
 lpe
 mov $0,$1

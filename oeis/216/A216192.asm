@@ -2,6 +2,9 @@
 ; Submitted by F14Claude
 ; 9,12,28,28,28,28,28,31
 
+#offset 3
+
+sub $0,3
 mul $0,3
 mov $1,$0
 lpb $1

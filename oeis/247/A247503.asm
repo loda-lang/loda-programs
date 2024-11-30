@@ -10,6 +10,7 @@ div $0,3
 lpb $0
   mov $4,$0
   mul $4,2
+  add $4,1
   seq $4,6005 ; The odd prime numbers together with 1.
   sub $0,1
   mul $3,$4

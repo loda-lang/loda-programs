@@ -1,17 +1,15 @@
 ; A128623: Triangle read by rows: A128621 * A000012 as infinite lower triangular matrices.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by NyanDoggo
 ; 1,2,2,6,3,3,8,8,4,4,15,10,10,5,5,18,18,12,12,6,6,28,21,21,14,14,7,7,32,32,24,24,16,16,8,8,45,36,36,27,27,18,18,9,9,50,50,40,40,30,30,20,20,10,10,66,55,55,44,44,33,33,22,22,11,11,72,72,60,60,48,48,36,36,24,24,12,12,91,78
 
-mov $3,1
 lpb $0
-  add $2,1
-  add $3,1
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
+mov $2,$1
 sub $2,$0
-add $2,2
 div $2,2
-mov $4,$3
-mul $4,$2
-add $1,$4
+add $2,1
+add $1,1
+mul $1,$2
 mov $0,$1

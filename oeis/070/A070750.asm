@@ -1,8 +1,9 @@
 ; A070750: 0 if n-th prime is even, 1 if n-th prime is == 1 (mod 4), and -1 if n-th prime is == 3 (mod 4).
 ; Submitted by Stony666
 ; 0,-1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,-1,1,-1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,-1,1,1,-1,-1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,1
-; Formula: a(n) = truncate((-truncate(truncate((-truncate(A004531(4*A006005(n))/2))/2)/(-1))-3*truncate((-truncate(A004531(4*A006005(n))/2))/2)-2)/2)
+; Formula: a(n) = truncate((-truncate(truncate((-truncate(A004531(4*A006005(n+1))/2))/2)/(-1))-3*truncate((-truncate(A004531(4*A006005(n+1))/2))/2)-2)/2)
 
+add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,4
 seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.

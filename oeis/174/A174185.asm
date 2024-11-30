@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,6005 ; The odd prime numbers together with 1.
   mov $5,$1
   mul $5,2

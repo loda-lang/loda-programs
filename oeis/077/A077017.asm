@@ -5,12 +5,13 @@
 lpb $0
   mov $2,$0
   lpb $0
+    sub $0,$2
     mov $1,8
     seq $1,33198 ; Discriminants of real quadratic number fields.
-    sub $0,$2
   lpe
   mov $0,$1
 lpe
 trn $0,1
+add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 mul $0,2

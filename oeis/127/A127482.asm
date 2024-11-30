@@ -5,6 +5,7 @@
 mov $1,2
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,6005 ; The odd prime numbers together with 1.
   seq $2,51801 ; Product of the nonzero digits of n.
   sub $0,1

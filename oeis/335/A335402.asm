@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $1,2
+add $1,1
 seq $1,6005 ; The odd prime numbers together with 1.
 sub $1,1
 max $0,$1

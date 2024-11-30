@@ -19,7 +19,7 @@ lpb $3
   add $2,$6
   mov $4,$5
   mov $8,$0
-  cmp $8,0
+  equ $8,0
   sub $7,$8
 lpe
 mov $0,$2

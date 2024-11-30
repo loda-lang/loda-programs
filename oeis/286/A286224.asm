@@ -14,6 +14,7 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
     mod $7,2
     mov $9,10

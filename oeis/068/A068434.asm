@@ -1,31 +1,31 @@
 ; A068434: Expansion of log(5) in base 2.
-; Submitted by Arkhenia
+; Submitted by Science United
 ; 1,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,0,1,1,0,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1
 
 mov $1,1
-mov $2,3
 mov $3,$0
-mul $3,4
+mul $3,2
 lpb $3
-  mov $5,$3
-  add $5,1
-  mul $1,$3
-  mul $2,$5
+  max $3,1
+  mul $5,-1
+  add $5,$2
+  max $6,$2
+  div $6,$3
+  mul $1,2
+  add $1,$6
   add $2,$1
   mul $1,2
-  add $1,$2
+  sub $5,$2
+  sub $5,$1
   mul $2,2
-  add $2,$1
-  div $2,$5
-  div $1,$5
   sub $3,1
 lpe
-sub $4,$5
+mov $4,2
 pow $4,$0
+sub $2,1
 div $2,$4
-mul $1,4
+sub $1,$5
 div $1,$2
 mov $0,$1
-mod $0,2
 add $0,2
 mod $0,2

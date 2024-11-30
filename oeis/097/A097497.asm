@@ -19,7 +19,7 @@ lpb $5
 lpe
 add $3,$4
 sub $3,1
-add $0,1
+add $0,2
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
 add $1,$3

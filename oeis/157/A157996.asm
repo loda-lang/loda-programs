@@ -8,5 +8,5 @@ lpb $0
   pow $0,2
   mul $0,2
 lpe
-add $0,2
+add $0,3
 seq $0,6005 ; The odd prime numbers together with 1.

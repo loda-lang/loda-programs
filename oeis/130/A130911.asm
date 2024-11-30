@@ -6,6 +6,7 @@ mov $3,1
 mov $1,$0
 lpb $1
   mov $4,$1
+  add $4,1
   seq $4,6005 ; The odd prime numbers together with 1.
   seq $4,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mod $4,2

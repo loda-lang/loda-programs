@@ -1,26 +1,19 @@
 ; A040487: Continued fraction for sqrt(510).
-; Submitted by shiva
+; Submitted by Mumps
 ; 22,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1,1,2,1,1,44,1
-; Formula: a(n) = b(n+1), b(n) = (truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1)%10+18*floor(((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))+1)%10)/3), b(1) = 22, b(0) = 0
+; Formula: a(n) = truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+18*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)/3)+1
 
-add $0,1
-lpb $0
-  sub $0,1
-  mov $2,2
-  trn $2,$3
-  add $2,6
-  mov $1,$3
-  gcd $1,$2
-  sub $1,3
-  mov $4,3
-  pow $4,$1
-  mov $1,$4
-  add $1,1
-  mod $1,10
-  mov $5,$1
-  div $1,3
-  mul $1,18
-  add $1,$5
-  add $3,1
-lpe
-mov $0,$1
+mov $1,2
+trn $1,$0
+add $1,6
+gcd $0,$1
+sub $0,3
+mov $3,3
+pow $3,$0
+mov $0,$3
+mod $0,10
+mov $2,1
+add $2,$0
+div $0,3
+mul $0,18
+add $0,$2

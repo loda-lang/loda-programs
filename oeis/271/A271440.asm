@@ -4,6 +4,7 @@
 
 mov $1,1
 mov $3,$0
+add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $2,$3
 sub $2,4

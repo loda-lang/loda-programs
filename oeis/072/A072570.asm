@@ -9,7 +9,7 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,6005 ; The odd prime numbers together with 1.
   mov $6,$3
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

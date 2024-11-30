@@ -10,6 +10,7 @@ lpb $0
   sub $0,1
   mov $4,$3
   mov $3,$5
+  add $3,1
   seq $3,6005 ; The odd prime numbers together with 1.
   max $3,2
   mul $3,$4
