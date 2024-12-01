@@ -4,7 +4,7 @@
 
 mov $2,2
 lpb $2
-  sub $2,2
+  div $2,7
   sub $0,2
   pow $0,7
   add $0,1
