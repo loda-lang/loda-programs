@@ -1,26 +1,35 @@
 ; A090866: Primes p == 1 (mod 4) such that (p-1)/4 is prime.
-; Submitted by pututu
+; Submitted by Time_Traveler
 ; 13,29,53,149,173,269,293,317,389,509,557,653,773,797,1109,1229,1493,1637,1733,1949,1997,2309,2477,2693,2837,2909,2957,3413,3533,3677,3989,4133,4157,4253,4349,4373,4493,4517,5189,5309,5693,5717,5813,6173,6197,6269,6317,6389,6653,7013,7109,7517,7949,8069,8117,8573,9173,9533,9749,10589,10709,10733,10853,11069,11213,11549,11813,12149,12197,12269,12437,12653,12917,13037,13229,13829,13877,13997,14549,14957
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $2,8
-pow $2,4
+pow $2,3
 lpb $2
-  add $3,4
-  mov $1,$5
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
+  mov $3,$6
+  add $3,$1
+  add $5,$1
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $7,$3
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  add $1,2
+  sub $3,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
+  mov $7,$5
   mul $2,$4
   sub $2,17
-  add $5,1
+  mul $5,2
+  add $5,$1
+  mov $6,$5
+  equ $5,0
 lpe
 mov $0,$3
-sub $0,8
 div $0,4
 mul $0,4
 add $0,13

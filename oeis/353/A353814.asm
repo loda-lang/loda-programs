@@ -1,29 +1,21 @@
 ; A353814: a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.
-; Submitted by [SG]FX
+; Submitted by shiva
 ; 0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,1
 
 add $0,1
-mov $5,$0
+mov $1,1
+add $1,$0
+mov $0,$1
+mov $1,1
+sub $0,1
+seq $0,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+div $0,4
 lpb $0
-  add $7,1
-  min $0,$7
-  mov $6,$5
-  dif $6,$0
-  add $0,$6
-  mod $0,2
-  mul $0,2
-  sub $0,1
-  mul $6,$7
-  cmp $6,$5
-  mul $6,$0
-  sub $4,$6
-  sub $5,$7
-  mov $0,$5
+  trn $0,1
+  sub $1,1
+  pow $1,$0
+  mov $0,0
 lpe
-mov $1,$4
-cmp $1,0
-mov $2,$4
-add $2,$1
-mov $3,1
-mod $3,$2
-mov $0,$3
+mov $0,$1
+add $0,1
+mod $0,2

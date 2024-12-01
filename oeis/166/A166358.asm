@@ -1,16 +1,19 @@
 ; A166358: Row sums of exponential Riordan array [1+x*arctanh(x), x], A166357.
-; Submitted by Jon Maiga
+; Submitted by shiva
 ; 1,1,3,7,21,61,295,1331,10409,65017,694411,5454879,73145149,689074101,11090013103,121652191051,2282132463953,28550033871857,611369381873683,8587415858721079,206626962757626981,3219065122124476717
 
-mov $1,$0
-sub $0,1
-lpb $0
-  sub $0,1
-  mov $3,$0
-  max $3,0
-  seq $3,87208 ; Expansion of e.g.f.: exp(x)/(1-x^2).
-  add $2,$3
+mov $1,1
+mov $4,1
+mov $3,$0
+lpb $3
+  mul $1,$3
+  sub $3,1
+  mul $1,$3
+  div $1,$4
+  add $2,$1
+  mul $1,$4
+  sub $3,1
+  add $4,2
 lpe
 mov $0,$2
-mul $0,$1
 add $0,1

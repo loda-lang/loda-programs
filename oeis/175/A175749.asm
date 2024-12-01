@@ -13,7 +13,7 @@ lpb $2
   add $3,1
   seq $3,56924 ; Number of divisors of n that are smaller than sqrt(n).
   sub $3,15
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

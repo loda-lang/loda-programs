@@ -5,4 +5,4 @@
 
 seq $0,40 ; The prime numbers.
 trn $0,4
-seq $0,51903 ; Maximal exponent in prime factorization of n.
+seq $0,51903 ; Maximum exponent in the prime factorization of n.

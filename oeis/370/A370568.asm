@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,122588 ; Expansion of x/(1 - 9*x + 28*x^2 - 35*x^3 + 15*x^4 - x^5).
   mov $2,$5
   mul $2,$4

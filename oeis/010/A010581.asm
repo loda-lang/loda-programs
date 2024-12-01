@@ -11,7 +11,7 @@ lpb $3
   add $6,$2
   mov $1,$6
   mul $1,8
-  cmp $2,1
+  equ $2,1
   add $2,$1
   add $5,$2
   add $6,$5

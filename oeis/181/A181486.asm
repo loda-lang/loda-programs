@@ -2,7 +2,9 @@
 ; Submitted by [AF] Hydrosaure
 ; 1,2,3,6,8,10,14,16,20,22,24,26,28,34,38
 
-sub $0,2
+#offset 1
+
+sub $0,3
 mov $1,6
 mov $2,$0
 pow $2,4

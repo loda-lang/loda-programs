@@ -2,9 +2,21 @@
 ; Submitted by Science United
 ; 1,2,1,2,3,2,3,2,3,4,1,2,3,2,3,4,3,4,3,4,5,2,3,2,3,4,3,4,3,4,5,2,3,4,3,4,5,4,5,4,5,6,1,2,3,2,3,4,3,4,3,4,5,2,3,4,3,4,5,4,5,4,5,6,3,4,3,4,5,4,5,4,5,6,3,4,5,4,5,6
 
-seq $0,3159 ; Numbers whose binary representation ends in an even number of zeros.
-mov $1,$0
+mov $2,1
+mov $3,10
+add $0,1
 lpb $0
-  div $1,2
-  sub $0,$1
+  sub $0,1
+  add $1,$2
+  add $1,2
+  sub $4,$3
+  div $4,2
+  mov $2,1
+  add $2,$4
+  gcd $2,4
+  mul $3,4
+  div $4,$2
 lpe
+mov $0,$1
+div $0,3
+dis $0,2
