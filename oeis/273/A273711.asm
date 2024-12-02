@@ -1,8 +1,9 @@
 ; A273711: The Hadamard product of omega(n) and A007875(n).
 ; Submitted by Simon Strandgaard
 ; 0,1,1,1,1,4,1,1,1,4,1,4,1,4,4,1,1,4,1,4,4,4,1,4,1,4,1,4,1,12,1,1,4,4,4,4,1,4,4,4,1,12,1,4,4,4,1,4,1,4,4,4,1,4,4,4,4,4,1,12,1,4,4,1,4,12,1,4,4,12,1,4,1,4,4,4,4,12,1,4
-; Formula: a(n) = truncate((A001221(n)*truncate(2^A001221(n)))/2)
+; Formula: a(n) = truncate((A001221(n+1)*truncate(2^A001221(n+1)))/2)
 
+add $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 mov $1,2
 pow $1,$0

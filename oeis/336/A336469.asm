@@ -4,9 +4,9 @@
 
 lpb $0
   seq $0,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
-  sub $0,1
   mov $2,$0
   seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  sub $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $5,$3
+  add $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   seq $5,66328 ; a(n) = sum of indices of distinct prime factors of n; here, index(i-th prime) = i.
   gcd $5,$3
@@ -16,12 +17,12 @@ lpb $2
   div $6,$5
   mov $3,$6
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

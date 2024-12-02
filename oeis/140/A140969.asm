@@ -10,13 +10,14 @@ lpb $2
   mov $3,$1
   seq $3,228774 ; Numbers n such that the digits of n, once written in base 16, are only the hexadecimal digits A to F.
   mov $5,$3
+  add $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

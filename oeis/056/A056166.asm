@@ -11,12 +11,13 @@ lpb $2
   sub $5,1
   seq $5,257994 ; Number of prime parts in the partition having Heinz number n.
   mov $4,$1
+  add $4,1
   seq $4,1221 ; Number of distinct primes dividing n (also called omega(n)).
   add $4,1
   sub $4,$5
   mov $3,$4
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

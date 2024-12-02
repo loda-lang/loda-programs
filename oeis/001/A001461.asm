@@ -21,7 +21,7 @@ lpb $1
   mov $0,$8
   div $0,91
   mov $4,$0
-  cmp $4,0
+  equ $4,0
   mov $5,$0
   add $5,$4
   mov $7,$0

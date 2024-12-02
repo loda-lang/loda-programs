@@ -2,6 +2,9 @@
 ; Submitted by PDW
 ; 1,2,4,6,8,12,16,22,24,28,32,44,48,56,64,86,88,92,96,112,120,128,172,176,184,192,220,224,240,256,342,344,348,352,368,376,384,440,448,480,496,512,684,688,696,704,732,736,752,768,880,888,896,960,992,1024
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
@@ -13,12 +16,12 @@ lpb $2
   seq $3,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
   sub $3,1
   seq $3,319627 ; Primorial deflation of n (denominator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the denominator of g(n).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

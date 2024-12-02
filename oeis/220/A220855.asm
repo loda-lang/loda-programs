@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,6,39,100,180,282,406,552,720,910
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $3,$0
 lpb $3

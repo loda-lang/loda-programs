@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mul $0,$2
   sub $0,1

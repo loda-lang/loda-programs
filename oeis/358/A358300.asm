@@ -1,22 +1,17 @@
 ; A358300: Row 1 of array in A358298.
-; Submitted by Dingo
+; Submitted by STE\/E
 ; 3,6,11,19,29,43,57,77,97,121,145,177,205,243,277,315,355,405,447,503,551,605,659,727,783,853,917,989,1057,1143,1211,1303,1383,1469,1553,1647,1731,1841,1935,2037,2133,2255,2351,2479,2587,2701,2815,2955,3067,3207,3327,3461
+; Formula: a(n) = b(2*n)+3, b(n) = b(n-2)+A000010(truncate((n-1)/2))+n, b(1) = 0, b(0) = 0
 
-mov $2,1
+mul $0,2
 lpb $0
-  sub $0,1
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    div $1,2
-    add $1,$4
-    gcd $1,$2
-    cmp $1,1
-    add $5,2
-    add $5,$1
-  lpe
-  add $2,1
-  mov $3,$5
+  mov $1,$0
+  sub $1,1
+  div $1,2
+  seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $2,$0
+  add $2,$1
+  sub $0,2
 lpe
-mov $0,$3
+mov $0,$2
 add $0,3

@@ -1,24 +1,24 @@
 ; A358184: Decimal expansion of the real root of 2*x^3 - x^2 + x - 1.
-; Submitted by Jerry Musser
+; Submitted by Science United
 ; 7,3,8,9,8,3,6,2,1,5,0,4,5,0,6,2,3,7,3,2,3,4,6,2,5,4,0,6,7,1,0,8,7,5,5,0,7,2,3,7,7,4,7,7,6,3,7,9,0,9,6,7,2,2,1,1,7,9,5,4,9,6,9,3,0,2,3,0,2,0,3,1,5,9,8,0
+; Formula: a(n) = -10*truncate(truncate(b(4*n+4)/truncate((-d(4*n+4)+c(4*n+4))/(10^(n+1))))/10)+truncate(b(4*n+4)/truncate((-d(4*n+4)+c(4*n+4))/(10^(n+1)))), b(n) = 2*b(n-1)-d(n-1)+e(n-1)+6, b(3) = 112, b(2) = 28, b(1) = 6, b(0) = 0, c(n) = c(n-1), c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 2*d(n-1)-e(n-1)-2*b(n-1)-8, d(3) = -152, d(2) = -38, d(1) = -8, d(0) = 0, e(n) = -d(n-1)+e(n-1)+2, e(3) = 52, e(2) = 12, e(1) = 2, e(0) = 0
 
 add $0,1
 mov $3,$0
-mul $3,8
+mul $3,4
 lpb $3
-  sub $3,2
-  mov $1,5
+  sub $3,1
+  sub $5,2
+  sub $6,$5
+  add $1,2
+  mul $1,2
   add $1,$6
-  add $1,$2
-  add $2,$1
-  add $5,$2
-  add $6,$5
-  div $1,2
+  sub $5,$1
 lpe
 mov $4,10
 pow $4,$0
+sub $2,$5
 div $2,$4
-mul $1,2
 div $1,$2
 mov $0,$1
 mod $0,10

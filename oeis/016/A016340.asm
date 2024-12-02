@@ -1,5 +1,5 @@
 ; A016340: 156th cyclotomic polynomial.
-; Submitted by Kotenok2000
+; Submitted by omegaintellisys
 ; 1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1,0,0,0,-1,0,-1,0,0,0,1,0,1
 
 mov $1,$0
@@ -14,8 +14,10 @@ lpb $1
   mov $4,$1
   max $4,0
   seq $4,14018 ; Inverse of 9th cyclotomic polynomial.
+  sub $1,$5
   add $3,$4
-  add $5,36
+  pow $5,5
+  add $5,18
 lpe
 mov $1,$3
 mul $1,$2

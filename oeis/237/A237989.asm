@@ -8,6 +8,7 @@ lpb $2
   mov $5,$1
   seq $5,66911 ; Sum of primes < n that do not divide n.
   mov $3,$1
+  add $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   add $3,$5
   gcd $3,2
@@ -16,7 +17,7 @@ lpb $2
   add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

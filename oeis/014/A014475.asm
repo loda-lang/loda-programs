@@ -1,5 +1,5 @@
 ; A014475: Triangular array formed from odd elements to right of middle of rows of Pascal's triangle.
-; Submitted by HansCCT
+; Submitted by Science United
 ; 1,1,3,1,1,5,1,15,1,35,21,7,1,1,9,1,45,1,165,55,11,1,495,1,1287,715,13,1,3003,1001,91,1,6435,5005,3003,1365,455,105,15,1,1,17,1,153,1,969,171,19,1,4845,1,20349,5985,21,1,74613,7315,231,1,245157,100947,33649
 
 mov $2,$0
@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   lpb $3
     add $7,1
+    add $2,1
     sub $3,$7
     add $6,1
     mov $7,$6

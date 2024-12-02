@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mov $3,-1
   pow $3,$2

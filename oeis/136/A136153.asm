@@ -14,6 +14,7 @@ lpb $2
   seq $8,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $8,$5
   mov $7,$1
+  add $7,1
   seq $7,1221 ; Number of distinct primes dividing n (also called omega(n)).
   add $7,$8
   mov $6,$1
@@ -22,12 +23,12 @@ lpb $2
   seq $3,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.
   mul $3,4
   sub $3,$6
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

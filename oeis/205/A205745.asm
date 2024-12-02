@@ -6,4 +6,5 @@ lpb $0
   gcd $0,8
   sub $0,2
 lpe
+add $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

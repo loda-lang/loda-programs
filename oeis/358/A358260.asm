@@ -2,6 +2,7 @@
 ; Submitted by damotbe
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,4,1,1,1,2,1,1,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,4,1,1,2,2,1,1,1,2
 
+add $0,1
 seq $0,159631 ; Dimension of space of modular forms of weight 1/2, level 4*n and trivial character.
 lpb $0
   add $1,$0

@@ -10,20 +10,21 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $5,$3
+  add $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   seq $5,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   gcd $5,$3
   mov $6,$3
   div $6,$5
   mov $3,$6
-  cmp $3,1
+  equ $3,1
   gcd $3,2
   sub $0,$3
   add $0,1
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

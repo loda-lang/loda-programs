@@ -13,10 +13,8 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   mov $5,$0
   seq $5,1221 ; Number of distinct primes dividing n (also called omega(n)).
-  add $0,1
   pow $0,$5
   mul $1,$0
   add $3,$1

@@ -24,7 +24,7 @@ lpb $3
   sub $1,$6
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   add $2,6
   mul $3,$5
   sub $3,18

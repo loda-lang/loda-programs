@@ -6,8 +6,9 @@ lpb $0
   mov $4,$0
   seq $4,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$4
-  cmp $3,1
+  equ $3,1
   mov $2,$0
+  add $2,1
   seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mul $2,$3
   sub $0,1

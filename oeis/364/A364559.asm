@@ -14,10 +14,10 @@ lpb $5
   gcd $6,$5
   bin $6,$0
   pow $0,$6
-  sub $0,1
   mov $2,$0
   seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
   add $2,1
+  sub $0,1
   mov $3,$0
   seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   sub $3,$2

@@ -5,6 +5,7 @@
 mov $1,$0
 add $1,1
 dis $1,2
+add $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 sub $0,1
 add $0,$1

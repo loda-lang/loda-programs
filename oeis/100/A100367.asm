@@ -9,13 +9,12 @@ lpb $2
   add $1,1
   mov $3,$1
   seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
-  sub $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   div $3,2
   mov $6,$3
+  add $6,1
   seq $6,1221 ; Number of distinct primes dividing n (also called omega(n)).
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,$6

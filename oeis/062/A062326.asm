@@ -15,6 +15,7 @@ lpb $2
   add $3,$5
   add $3,1
   trn $3,3
+  add $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   equ $3,1
   sub $0,$3

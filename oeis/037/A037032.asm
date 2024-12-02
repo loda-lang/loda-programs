@@ -15,6 +15,7 @@ lpb $2
   mov $4,$0
   seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
   seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mul $0,$4
   add $1,$0
