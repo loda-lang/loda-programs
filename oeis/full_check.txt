@@ -326,6 +326,7 @@ A102261: a(n) = A002144(n) - A002145(n).
 A102376: a(n) = 4^A000120(n).
 A103205: Write numbers in decimal under each other, then read diagonals in upward direction.
 A103391: 'Even' fractal sequence for the natural numbers: Deleting every even-index term results in the same sequence.
+A103977: Let d_1 ... d_k be the divisors of n. Then a(n) = min_{ e_1 = +-1, ... e_k = +-1 } | Sum_i e_i d_i |.
 A104326: Dual Zeckendorf representation of n or the maximal (binary) Fibonacci representation. Also list of binary vectors not containing 00.
 A105561: a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
 A105570: Nonsquarefree numbers in place: a(n) = n if n is not squarefree, 0 otherwise.

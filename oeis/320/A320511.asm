@@ -11,7 +11,7 @@ bin $2,2
 lpb $2
   mov $3,$1
   seq $3,237271 ; Number of parts in the symmetric representation of sigma(n).
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,2
   sub $2,$0

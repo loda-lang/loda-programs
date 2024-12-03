@@ -7,6 +7,7 @@ mul $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,340363 ; a(n) = 1 if n is of the form of 2^i * p^j, with p an odd prime and i, j >= 0, otherwise 0.
   add $3,$4
   add $5,2
@@ -16,7 +17,7 @@ lpb $2
   add $1,$5
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

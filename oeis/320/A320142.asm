@@ -7,13 +7,14 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,348406 ; Number of vertices on the axis of symmetry of the symmetric representation of sigma(n) with subparts.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe
