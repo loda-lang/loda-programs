@@ -15,7 +15,7 @@ lpb $1
   mov $4,$0
   bin $4,$1
   add $3,$4
-  cmp $4,1
+  equ $4,1
   add $3,$4
 lpe
 mov $0,$3

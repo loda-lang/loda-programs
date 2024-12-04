@@ -6,7 +6,7 @@ lpb $0
   mov $3,$0
   seq $3,123231 ; Row sums of A123230.
   mov $2,$0
-  add $2,2
+  add $2,3
   seq $2,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
   add $2,$3
   div $2,2

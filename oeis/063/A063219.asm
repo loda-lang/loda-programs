@@ -1,8 +1,11 @@
 ; A063219: Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 53 ).
 ; Submitted by Christian Krause
 ; 4,13,21,31,39,47,57,65,73,83,91,99,109,117,125,135,143,151,161,169,177,187,195,203,213,221,229,239,247,255,265,273,281,291,299,307,317,325,333,343,351,359,369,377,385,395,403,411,421,429
-; Formula: a(n) = 2*floor((13*n)/3)+min(n,1)+4
+; Formula: a(n) = 2*truncate((13*n-13)/3)+min(n-1,1)+4
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 min $1,1
 mul $0,13

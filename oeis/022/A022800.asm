@@ -9,7 +9,7 @@ lpb $0
   mov $2,$1
   seq $2,1690 ; Non-Fibonacci numbers.
   mov $0,0
-  add $1,4
+  add $1,5
   seq $1,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
   sub $1,3
   add $1,$2

@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,289011 ; Fixed point of the mapping 00->0010, 01->001, 10->100, starting with 00.
   sub $0,$3
   add $1,1

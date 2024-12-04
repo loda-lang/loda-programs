@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 1,2,5,17,59,201,703,2405
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   add $2,$1

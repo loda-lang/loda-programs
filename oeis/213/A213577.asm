@@ -9,6 +9,7 @@ add $2,1
 lpb $2
   sub $2,1
   mov $0,$1
+  add $0,1
   seq $0,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
   add $1,1
   add $3,$0

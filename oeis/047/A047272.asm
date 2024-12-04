@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   add $5,2
   mov $3,$1
+  add $3,1
   seq $3,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
   mod $3,$5
   equ $3,0

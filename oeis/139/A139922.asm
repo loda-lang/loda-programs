@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,107006 ; Primes of the form 4x^2-4xy+7y^2, with x and y nonnegative.
   mov $5,$3
   sub $3,1

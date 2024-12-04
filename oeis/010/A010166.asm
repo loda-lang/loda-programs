@@ -1,18 +1,15 @@
 ; A010166: Continued fraction for sqrt(95).
-; Submitted by skildude
+; Submitted by zombie67 [MM]
 ; 9,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1,18,1,2,1
-; Formula: a(n) = truncate((truncate(max(gcd(n,4)^2-3,0)/gcd(0,0^n+1))+1)/3)+truncate(max(gcd(n,4)^2-3,0)/gcd(0,0^n+1))+1
+; Formula: a(n) = max(truncate((4*gcd(n,4)^2-11)/(3*0^n+3)),0)+1
 
-pow $4,$0
-add $4,1
-gcd $3,$4
-mov $1,$0
-gcd $1,4
-pow $1,2
-trn $1,3
-div $1,$3
+pow $1,$0
+gcd $0,4
+pow $0,2
+mul $0,4
+sub $0,11
 add $1,1
-mov $2,$1
-div $1,3
-add $1,$2
-mov $0,$1
+mul $1,3
+div $0,$1
+max $0,0
+add $0,1
