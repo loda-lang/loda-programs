@@ -1,25 +1,27 @@
 ; A294235: Number of partitions of n into two parts such that the larger part is nonsquarefree.
-; Submitted by Skillz
+; Submitted by zombie67 [MM]
 ; 0,0,0,0,1,1,1,1,1,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,5,5,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,9,9,9,9,10,10,10,11,11,11,11,11,11,11,11,12,12,12,13,13,13,13,13,14,14,14,14,14,14,14,15,16
 
-mov $4,-1
+#offset 1
+
+sub $0,1
 mov $1,$0
-lpb $1
-  sub $1,1
-  add $4,1
-  max $1,$4
-  mov $7,$1
-  add $7,1
-  mov $3,$1
-  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  sub $3,1
-  mov $6,$3
-  gcd $6,$7
-  mov $3,$7
-  div $3,$6
-  sub $3,1
-  mov $5,$3
-  min $5,1
-  add $2,$5
+add $0,1
+div $0,2
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $5,$4
+  mov $0,$1
+  sub $0,$2
+  seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  mul $0,2
+  max $0,1
+  sub $0,1
+  mod $0,2
+  div $3,3
+  add $3,$0
+  add $4,$3
 lpe
-mov $0,$2
+mov $0,$5

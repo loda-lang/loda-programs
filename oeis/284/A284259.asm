@@ -1,7 +1,10 @@
 ; A284259: a(n) = number of distinct prime factors of n that are < the square of smallest prime factor of n, a(1) = 0.
-; Submitted by AXm 77
+; Submitted by Conan
 ; 0,1,1,1,1,2,1,1,1,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,2,1,1,2,1,1,2,1,1,1,1,1,2,2,1,1,1,1,2,1,1,2,1,2,2,1,1,1,1,1,2,1,1,2,1,2,2,1,1
 
+#offset 1
+
+sub $0,1
 add $0,1
 mov $1,$0
 mov $2,2
@@ -12,8 +15,7 @@ lpb $0
     mov $4,$0
     mul $4,$1
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

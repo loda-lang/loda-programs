@@ -8,7 +8,7 @@ sub $0,1
 mov $1,$0
 mov $2,2
 lpb $2
-  sub $2,1
+  sub $2,2
   seq $0,120327 ; Smallest nonsquarefree number >= n.
   mov $3,$0
   sub $3,1

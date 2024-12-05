@@ -1,19 +1,23 @@
 ; A102511: Sum(A008683(A102510(k)): k<=n).
-; Submitted by STE\/E
+; Submitted by Rutor
 ; 1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0
-; Formula: a(n) = -2*truncate((-2*truncate(b(n)/2)+b(n)+2)/2)-2*truncate(b(n)/2)+b(n)+2, b(n) = -3*truncate((A073184(n)+1)/3)+b(n-1)+A073184(n), b(0) = 1
 
-mov $2,1
+mov $3,3
+add $0,3
 lpb $0
-  mov $1,$0
-  seq $1,73184 ; Number of cubefree divisors of n.
-  add $1,1
-  mod $1,3
-  sub $1,1
-  sub $0,1
-  add $2,$1
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  mov $5,$2
+  seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  add $2,1
+  mul $2,$5
+  max $0,$4
+  add $1,$2
+  mov $3,1
+  add $4,1
 lpe
-mov $0,$2
+mov $0,$1
 mod $0,2
 add $0,2
 mod $0,2

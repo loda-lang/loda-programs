@@ -1,18 +1,26 @@
 ; A174969: Composites of form n^2 + n + 1.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 21,57,91,111,133,183,273,343,381,507,553,651,703,813,871,931,993,1057,1191,1261,1333,1407,1561,1641,1807,1893,1981,2071,2163,2257,2353,2451,2653,2757,2863,3081,3193,3423,3661,3783,4033,4161,4291,4557,4693,4971,5257,5403,5551,5853,6321,6643,6807,6973,7141,7311,7483,7657,7833,8373,8557,8743,8931,9121,9313,9507,9703,10101,10507,10713,10921,11343,11557,11773,11991,12657,12883,13111,13341,13573
 
-add $0,2
+#offset 1
+
+sub $0,1
 mov $2,$0
-pow $2,4
+mov $4,1
+add $0,1
+add $2,5
+pow $2,2
 lpb $2
   max $3,$4
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  cmp $3,0
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
   sub $0,$3
-  add $1,2
+  add $1,4
   sub $2,$0
   add $4,$1
 lpe
 mov $0,$4
-add $0,1
+mul $0,2
+sub $0,82
+div $0,4
+add $0,21

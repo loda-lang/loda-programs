@@ -17,7 +17,7 @@ lpb $0
     mov $7,$4
     bin $7,2
     seq $7,211665 ; Minimal number of iterations of log_10 applied to n until the result is < 1.
-    cmp $7,1
+    equ $7,1
     mul $7,-1
     mov $9,10
     add $9,$5

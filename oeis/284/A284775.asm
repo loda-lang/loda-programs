@@ -1,12 +1,18 @@
 ; A284775: Fixed point of the morphism 0 -> 01, 1 -> 0011.
-; Submitted by Jerry Musser
+; Submitted by STE\/E
 ; 0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,0,1,1,0,1
-; Formula: a(n) = -2*truncate((A284817(floor((n+1)/2))+n)/2)+A284817(floor((n+1)/2))+n
 
-add $0,1
 mov $1,$0
-div $1,2
-seq $1,284817 ; a(n) = 2n - 1 - A284776(n).
-add $0,$1
 sub $0,1
-mod $0,2
+div $0,2
+add $0,1
+lpb $0
+  lpb $0
+    add $0,1
+    dif $0,3
+    add $1,1
+  lpe
+  dif $0,3
+lpe
+mod $1,2
+mov $0,$1

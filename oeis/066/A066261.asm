@@ -5,6 +5,7 @@
 mov $1,56
 lpb $1
   div $1,9
+  add $0,1
   seq $0,66260 ; In the prime factorization of n replace the k-th prime with the k-th composite number, k > 0.
   sub $0,1
 lpe

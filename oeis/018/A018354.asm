@@ -1,5 +1,5 @@
 ; A018354: Divisors of 246.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by zombie67 [MM]
 ; 1,2,3,6,41,82,123,246
 
 #offset 1
@@ -21,8 +21,6 @@ lpb $0
     add $7,$6
     mov $9,10
     add $9,$5
-    mov $12,1
-    sub $4,$0
     mul $7,$$9
     trn $4,3
     add $5,1

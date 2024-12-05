@@ -1,21 +1,17 @@
 ; A218799: Number of solutions to x^2 + 2y^2 = n^2.
-; Submitted by Simon Strandgaard
+; Submitted by ThrasherX-17
 ; 1,1,1,2,1,1,2,1,1,3,1,2,2,1,1,2,1,2,3,2,1,2,2,1,2,1,1,4,1,1,2,1,1,5,2,1,3,1,2,2,1,2,2,2,2,3,1,1,2,1,1,5,1,1,4,2,1,5,1,2,2,1,1,3,1,1,5,2,2,2,1,1,3,2,1,2,2,2,2,1
 
-mov $1,1
-mov $3,3
 pow $0,2
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  seq $2,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
-  add $1,$2
-  mov $3,1
-  add $3,$4
-  mul $3,2
-  add $4,2
-lpe
-mov $0,$1
+mov $1,$0
+equ $1,0
+add $0,$1
+mov $3,$0
 sub $0,1
+mov $2,$0
+seq $0,2325 ; Glaisher's J numbers.
+mul $0,2
+sub $0,$2
+add $0,$3
+div $0,4
+add $0,1

@@ -7,6 +7,7 @@ add $2,1
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,133912 ; First differences of A007001.
   add $1,1
   add $4,$3

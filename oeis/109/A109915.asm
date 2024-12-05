@@ -12,8 +12,7 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     mul $3,$0
     sub $3,$4
     mul $5,$2

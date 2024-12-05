@@ -9,7 +9,10 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
+  mov $5,$2
+  nrt $5,2
+  mov $2,$5
+  add $2,1
   mov $3,1
   add $3,$4
   add $4,2

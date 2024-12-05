@@ -1,27 +1,30 @@
 ; A146981: Numbers k of the form q^2, q = prime, such that k-2 is a prime.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 4,9,25,49,169,361,841,1369,1849,2209,3721,5041,7921,10609,11449,16129,17161,19321,29929,36481,44521,49729,54289,57121,66049,85849,97969,113569,128881,177241,196249,201601,218089,241081,273529,292681,323761,344569,368449,426409,458329,516961,528529,537289,552049,564001,573049,579121,635209,657721,744769,776161,1026169,1042441,1104601,1142761,1190281,1329409,1495729,1515361,1661521,1682209,1708249,1745041,1868689,1985281,2042041,2093809,2247001,2399401,2455489,2550409,2563201,2621161,2866249
 
-mov $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  sub $5,1
-  add $1,$6
-  max $3,$5
-  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+mov $3,$0
+add $3,6
+pow $3,3
+lpb $3
+  mov $1,$2
+  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $1,$2
+  add $2,1
+  mov $4,$1
+  mul $4,$2
+  add $4,$1
+  add $4,1
+  trn $4,3
+  add $4,1
+  seq $4,1221 ; Number of distinct primes dividing n (also called omega(n)).
+  equ $4,1
+  sub $0,$4
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
   sub $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  add $5,$1
-  mul $2,$4
-  sub $2,1
-  add $1,$6
-  add $1,3
-  add $6,3
 lpe
-mov $0,$1
-div $0,3
+mov $0,$2
+add $0,1
+pow $0,2

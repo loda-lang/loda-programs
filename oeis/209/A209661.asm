@@ -1,16 +1,16 @@
 ; A209661: a(n) = (-1)^A083025(n).
-; Submitted by Ralfy
+; Submitted by STE\/E
 ; 1,1,1,1,-1,1,1,1,1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,1,1,1,1,-1,1,1,-1,-1,1,1,1,-1,-1,1,-1,1,-1,-1,-1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,1,1,1,1,-1,1,-1,1,1,-1,-1,1,1,1,-1,1,-1
 
-seq $0,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
-sub $0,1
-seq $0,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
 mov $1,$0
-div $0,2
-sub $1,$0
-add $0,1
-dif $1,2
-bin $1,$0
-mov $0,$1
-mul $0,2
-sub $0,1
+seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+sub $1,1
+seq $1,341885 ; a(n) is the sum of A000217(p) over the prime factors p of n, counted with multiplicity.
+add $1,1
+mod $1,2
+mov $3,$1
+add $3,$1
+trn $2,$3
+equ $2,0
+sub $3,$2
+mov $0,$3
