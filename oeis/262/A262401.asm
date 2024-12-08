@@ -29,7 +29,6 @@ lpb $0
     bin $3,$7
     max $3,$6
   lpe
-  sub $3,1
   seq $3,168338 ; Sum of the largest digit of the divisors of n.
   sub $3,1
   lpb $0

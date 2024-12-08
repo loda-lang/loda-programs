@@ -2,7 +2,9 @@
 ; Submitted by Mumps
 ; 2,3,1,4,6,1,7,8,1,9,11,1,12
 
-add $0,1
+#offset 4
+
+sub $0,3
 mov $2,$0
 div $2,3
 dif $0,3

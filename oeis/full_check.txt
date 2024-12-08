@@ -209,6 +209,7 @@ A056239: If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 
 A056624: Number of unitary square divisors of n.
 A056671: 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.
 A056832: All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
+A058620: Lesser of two consecutive primes whose difference divided by two is a prime: ( prime(next prime after n) - prime(n) )/2 is prime.
 A059534: Beatty sequence for 1 + 1/Catalan's constant.
 A060143: a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 A060632: a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
@@ -706,6 +707,7 @@ A317108: Numbers missing from A317106.
 A317594: Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 A317621: Numbers missing from A317619.
 A317622: Numbers missing from A317620.
+A317682: Number of partitions of n into a prime and two distinct squares.
 A317440: Numbers missing from A317438.
 A318622: Number of irreducible factors in the factorization of the n-th cyclotomic polynomial over GF(2) (counted with multiplicity).
 A319432: The first differences (A129761) of the tribonacci representation numbers (A003714 or A014417) consists of runs of 1's separated by the terms of the present sequence.

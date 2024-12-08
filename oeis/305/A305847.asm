@@ -1,21 +1,22 @@
 ; A305847: Solution a() of the complementary equation a(n) + b(n) = 5*n, where a(1) = 1. See Comments.
-; Submitted by PDW
+; Submitted by Vato
 ; 1,2,3,5,6,7,9,10,11,13,14,16,17,18,20,21,22,24,25,27,28,29,31,32,33,35,36,38,39,40,42,43,45,46,47,49,50,51,53,54,56,57,58,60,61,62,64,65,67,68,69,71,72,74,75,76,78,79,80,82,83,85,86,87,89,90,91,93,94,96,97,98,100,101,103,104,105,107,108,109
-; Formula: a(n) = d(n)+1, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -18, b(1) = -4, b(0) = 0, c(n) = 2*c(n-1)*(-2*truncate(gcd(truncate((-c(n-1)+b(n-1))/2)+1,2)/2)+gcd(truncate((-c(n-1)+b(n-1))/2)+1,2)+1), c(2) = 128, c(1) = 32, c(0) = 8, d(n) = d(n-1)+gcd(truncate((-c(n-1)+b(n-1))/2)+1,2), d(2) = 2, d(1) = 1, d(0) = 0
 
-mov $2,8
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  mov $3,1
-  add $3,$1
-  gcd $3,2
-  add $4,$3
-  mod $3,2
-  add $3,1
-  mul $2,2
-  mul $2,$3
+#offset 1
+
+sub $0,1
+mov $1,$0
+add $1,2
+mov $3,$1
+mul $3,$1
+sub $3,3
+lpb $3
+  add $1,1
+  sub $3,$1
+  add $1,1
+  add $2,1
 lpe
-add $4,1
-mov $0,$4
+mov $1,$2
+sub $1,$0
+sub $0,$1
+add $0,1

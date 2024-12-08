@@ -10,11 +10,12 @@ lpb $1
   mov $0,$7
   lpb $0
     mov $8,$0
-    cmp $8,0
+    equ $8,0
     mov $3,$0
     add $3,$8
     mod $0,$3
     mov $2,$0
+    add $2,1
     seq $2,43484 ; Numbers having four 7's in base 9.
     mov $4,$2
     min $4,1

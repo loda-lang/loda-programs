@@ -1,24 +1,19 @@
 ; A174925: Decimal expansion of (2+sqrt(6))/4.
-; Submitted by Rodney Duane
+; Submitted by STE\/E
 ; 1,1,1,2,3,7,2,4,3,5,6,9,5,7,9,4,5,2,4,5,4,9,3,2,1,0,1,8,6,7,6,4,7,2,8,4,7,9,9,1,4,8,6,8,7,0,1,6,4,1,6,7,5,3,2,1,0,8,1,7,3,1,4,1,8,1,2,7,4,0,0,9,4,3,6,4,3,2,8,7
 
-mov $1,1
-mov $3,$0
-mul $3,3
-lpb $3
-  sub $3,1
-  add $1,$2
-  add $5,$2
-  add $5,$1
-  add $5,$1
-  mov $2,$1
-  add $2,$5
-lpe
-mov $4,10
-pow $4,$0
-mul $2,2
-div $2,$4
-add $2,1
-div $1,$2
+#offset 1
+
+sub $0,1
+sub $0,1
+max $0,1
+mul $0,2
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,84
+mul $1,9
+sub $0,$1
+div $0,2
+nrt $0,2
 mod $0,10

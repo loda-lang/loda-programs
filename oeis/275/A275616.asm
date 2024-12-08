@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   add $6,1
   mov $3,$1
+  add $3,1
   seq $3,87802 ; a(n) = Sum_{d|n, d nonprime} mu(d), where mu = A008683.
   mov $5,$3
   gcd $5,$6

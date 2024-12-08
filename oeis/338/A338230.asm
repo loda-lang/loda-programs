@@ -1,15 +1,13 @@
 ; A338230: Number of ternary strings of length n that contain at least two 0's and at most one 1.
-; Submitted by p3d-cluster
+; Submitted by Technik007[CZ]
 ; 0,0,1,7,27,81,213,519,1207,2725,6033,13179,28515,61257,130861,278287,589551,1244877,2621097,5504643,11533915,24116785,50331141,104857047,218103207,452984181,939523393,1946156299,4026531027,8321498265,17179868253,35433479199,73014442975,150323854237
-; Formula: a(n) = truncate((2^n-n*(2*n+2)+(n+1)*2^n)/2)-1
+; Formula: a(n) = truncate((2^n-2*n*(n+1)+(n+1)*2^n)/2)-1
 
 mov $1,$0
-mov $4,1
-add $4,$0
-mov $3,$4
-add $3,$4
-mul $3,$0
-mov $0,$3
+mov $3,1
+add $3,$0
+mul $0,2
+mul $0,$3
 mul $0,-1
 mov $2,2
 pow $2,$1

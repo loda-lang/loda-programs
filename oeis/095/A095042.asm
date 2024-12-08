@@ -2,6 +2,9 @@
 ; Submitted by eclipse99
 ; 1,2,4,5,7,8,9,10,14,16,18,19,20,25,28
 
+#offset 1
+
+sub $0,1
 mov $1,6
 mov $2,$0
 pow $2,2

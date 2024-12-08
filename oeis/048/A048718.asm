@@ -6,15 +6,23 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,65621 ; Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
-  seq $3,48725 ; a(n) = Xmult(n,5) or rule90(n,1).
-  max $5,$3
+  add $3,1
+  add $3,$1
+  mov $6,$1
+  bxo $6,$3
+  mov $7,0
+  max $7,$6
+  mov $8,$7
+  mul $7,4
+  bxo $7,$8
+  max $5,$7
+  mov $3,$7
   div $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

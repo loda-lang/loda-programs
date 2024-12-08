@@ -7,11 +7,10 @@ lpb $0
   dif $3,$0
   div $3,3
   sub $2,$3
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$0
   mov $4,$2
-  cmp $4,0
+  equ $4,0
   sub $0,1
   add $2,$4
   div $3,$2

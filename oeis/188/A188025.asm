@@ -1,8 +1,40 @@
 ; A188025: Positions of 1 in A188020; complement of A188024.
-; Submitted by PDW
+; Submitted by Science United
 ; 2,5,10,13,15,18,23,26,28,31,34,36,39,44,47,49,52,57,60,62,65,68,70,73,78,81,83,86,89,91,94,99,102,104,107,112,115,117,120,123,125,128,133,136,138,141,146,149,151,154,157,159,162,167,170,172,175,178,180,183,188,191,193,196,201,204,206,209,212,214,217
-; Formula: a(n) = A004957(A188013(n))-1
 
-seq $0,188013 ; Positions of 1 in A188011; complement of A188012.
-seq $0,4957 ; a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
-sub $0,1
+add $0,1
+mov $2,$0
+pow $2,4
+lpb $2
+  mov $3,$1
+  sub $3,2
+  mov $6,$3
+  add $3,3
+  mov $5,$3
+  add $5,$3
+  mul $5,2
+  add $5,$3
+  mul $5,$3
+  nrt $5,2
+  add $5,$3
+  mov $3,$5
+  div $3,2
+  add $6,$3
+  mov $3,$6
+  add $3,1
+  mov $4,$3
+  add $4,$3
+  mul $4,2
+  add $4,$3
+  mul $4,$3
+  add $4,$3
+  nrt $4,2
+  add $4,$3
+  mov $3,$4
+  mod $3,2
+  sub $0,$3
+  add $1,1
+  sub $2,$0
+lpe
+mov $0,$1
+add $0,1

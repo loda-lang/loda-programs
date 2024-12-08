@@ -2,8 +2,10 @@
 ; Submitted by fzs600
 ; 1,1,4,7,12,17,24,31,42,50,65
 
+#offset 1
+
 mov $2,2
-sub $0,1
+sub $0,2
 lpb $0
   sub $0,1
   add $2,2

@@ -11,6 +11,7 @@ lpb $2
   sub $0,$2
   max $5,$0
   mov $4,$5
+  add $5,1
   seq $5,19554 ; Smallest number whose square is divisible by n.
   div $4,$5
   mov $0,$4

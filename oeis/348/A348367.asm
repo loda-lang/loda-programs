@@ -1,5 +1,5 @@
 ; A348367: a(n) = w(n + w(n)), where w(n) is the binary weight of n, A000120(n).
-; Submitted by Jamie Morken(l1)
+; Submitted by Steve Dodd
 ; 1,2,2,2,3,1,2,2,3,2,3,3,1,2,3,2,3,2,3,3,2,3,4,3,3,4,5,5,2,2,2,2,3,2,3,3,2,3,4,3,3,4,5,5,3,3,3,3,3,4,5,5,4,4,4,5,5,5,1,1,2,3,3,2,3,2,3,3,2,3,4,3,3,4,5,5,3,3,3,3
 
 mov $2,$0
@@ -9,7 +9,8 @@ lpb $3
   mov $0,$2
   add $0,$3
   add $0,$1
-  seq $0,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
+  dis $0,2
+  add $0,1
   mov $1,$0
 lpe
 sub $0,1

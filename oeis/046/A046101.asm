@@ -10,6 +10,7 @@ lpb $2
   add $1,1
   max $7,$1
   mov $6,$7
+  add $7,1
   seq $7,19554 ; Smallest number whose square is divisible by n.
   div $6,$7
   mov $3,$6

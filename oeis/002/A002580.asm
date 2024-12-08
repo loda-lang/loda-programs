@@ -1,26 +1,27 @@
 ; A002580: Decimal expansion of cube root of 2.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,2,5,9,9,2,1,0,4,9,8,9,4,8,7,3,1,6,4,7,6,7,2,1,0,6,0,7,2,7,8,2,2,8,3,5,0,5,7,0,2,5,1,4,6,4,7,0,1,5,0,7,9,8,0,0,8,1,9,7,5,1,1,2,1,5,5,2,9,9,6,7,6,5,1,3,9,5,9,4
-; Formula: a(n) = 10^n-10*truncate((10^n+truncate(d(3*n)/truncate((c(3*n)+10)/(10^n))))/10)+truncate(d(3*n)/truncate((c(3*n)+10)/(10^n))), b(n) = 2*b(n-1)+2*c(n-1)+2*e(n-1)+1456, b(3) = 34944, b(2) = 7280, b(1) = 1456, b(0) = 0, c(n) = 2*c(n-1)+2*e(n-1)+b(n-1)+728, c(3) = 26936, c(2) = 5096, c(1) = 728, c(0) = 0, d(n) = 8*e(n-1)+4*e(n-3)-10*e(n-2)+d(n-1)-728, d(6) = 3961776, d(5) = 814632, d(4) = 165984, d(3) = 32760, d(2) = 5824, d(1) = 728, d(0) = 0, e(n) = 6*e(n-1)+2*e(n-3)-6*e(n-2), e(6) = 2498496, e(5) = 515424, e(4) = 106288, e(3) = 21840, e(2) = 4368, e(1) = 728, e(0) = 0
+; Formula: a(n) = -10*truncate(truncate(b(max(3*n-3,0))/(truncate(c(max(3*n-3,0))/truncate(10^(n-1)))+1))/10)+truncate(b(max(3*n-3,0))/(truncate(c(max(3*n-3,0))/truncate(10^(n-1)))+1)), b(n) = b(n-1)+c(n-1), b(2) = 6, b(1) = 1, b(0) = 1, c(n) = 4*c(n-1)+b(n-1)+d(n-1)+4, c(2) = 26, c(1) = 5, c(0) = 0, d(n) = 2*c(n-1)+b(n-1)+d(n-1), d(2) = 12, d(1) = 1, d(0) = 0
 
+#offset 1
+
+sub $0,1
+mov $1,1
 mov $3,$0
 mul $3,3
 lpb $3
   sub $3,1
-  add $2,$6
-  add $1,728
   add $1,$2
-  add $2,$1
-  add $6,$1
-  mul $1,2
   add $5,$2
+  add $5,$1
+  add $2,2
+  mul $2,2
+  add $2,$5
 lpe
 mov $4,10
 pow $4,$0
-add $2,10
 div $2,$4
-mov $1,$5
+add $2,1
 div $1,$2
 mov $0,$1
-add $0,$4
 mod $0,10

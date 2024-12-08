@@ -6,11 +6,11 @@ mov $1,$0
 add $0,2
 mov $3,$0
 lpb $3
-  div $3,7
   mod $3,2
   mov $2,$1
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
   add $1,$2
+  add $3,$2
 lpe
 mov $0,$1
 add $0,1

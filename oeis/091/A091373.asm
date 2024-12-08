@@ -5,7 +5,7 @@
 lpb $0
   mov $2,$0
   seq $2,91371 ; Smallest prime factor of n - number of prime factors of n with multiplicity.
-  cmp $2,0
+  equ $2,0
   sub $0,1
   add $1,$2
 lpe

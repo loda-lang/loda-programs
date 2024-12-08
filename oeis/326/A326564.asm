@@ -5,8 +5,6 @@
 max $0,1
 mov $1,-1
 pow $1,$0
-mov $7,0
-mov $8,0
 mov $3,$0
 mov $4,$0
 add $0,1

@@ -8,6 +8,7 @@ add $0,2
 mov $3,$0
 lpb $3
   div $3,7
+  mul $3,$0
   mod $3,2
   mov $2,$4
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
