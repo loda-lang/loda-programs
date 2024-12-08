@@ -229,6 +229,7 @@ A065159: Binary string self-substitutions: a(n) is obtained by substituting the 
 A065176: Site swap sequence associated with the permutation A065174 of Z.
 A065331: Largest 3-smooth divisor of n.
 A065515: Number of prime powers <= n.
+A066096: a(n) = floor(n*phi), where phi = (1 + sqrt(5))/2.
 A066247: Characteristic function of composite numbers: 1 if n is composite else 0.
 A066441: a(n) = 11^n mod n.
 A066911: Sum of primes < n that do not divide n.

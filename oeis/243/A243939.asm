@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,285896 ; Sum of divisors d of n such that n/d is not congruent to 0 mod 5.
     mul $7,$$9
     add $5,1
