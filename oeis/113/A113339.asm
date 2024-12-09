@@ -11,7 +11,7 @@ lpb $2
   sub $4,1
   seq $4,105161 ; Difference between n and the second-smallest prime larger than n.
   mov $3,$4
-  sub $3,2
+  sub $3,1
   seq $3,327498 ; Maximum divisor of n whose prime multiplicities are distinct (A130091).
   mod $3,2
   sub $0,$3

@@ -2,8 +2,11 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20,21,28
 
+#offset 1
+
 mov $1,$0
-sub $1,14
+sub $0,1
+sub $1,15
 lpb $1
   sub $1,4
   mul $1,2

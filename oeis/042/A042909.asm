@@ -11,7 +11,7 @@ lpb $0
   mov $5,$3
   gcd $5,3
   add $5,13
-  cmp $1,0
+  equ $1,0
   add $1,$5
   pow $1,2
   sub $1,194

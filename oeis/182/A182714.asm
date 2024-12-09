@@ -1,25 +1,14 @@
 ; A182714: Number of 4's in the last section of the set of partitions of n.
-; Submitted by CFJH
+; Submitted by Coleslaw
 ; 0,0,0,1,0,1,1,3,2,5,5,10,10,17,19,31,34,51,60,86,100,139,165,223,265,349,418,543,648,827,992,1251,1495,1866,2230,2758,3289,4033,4803,5852,6949,8411,9973,12005,14194,17002,20060,23919,28153,33426,39256,46438,54405,64127,74973,88084,102747,120351,140094,163631,190078,221417,256694,298278,345116,400068,462037,534409,616044,711030,818206,942455,1082654,1244653,1427443,1638033,1875560,2148464,2456207,2808860
+; Formula: a(n) = b(n+1), b(n) = b(n-4)+A002865(max(n-4,0)), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0
 
-mov $3,3
-add $0,2
+add $0,1
 lpb $0
-  mov $5,-1
-  bin $5,$4
-  add $3,1
-  sub $3,$5
-  sub $0,$3
+  sub $0,4
   mov $2,$0
   max $2,0
-  mul $2,2
-  dif $2,2
-  seq $2,41 ; a(n) is the number of partitions of n (the partition numbers).
-  mul $2,$5
-  dif $4,$3
-  add $4,1
-  trn $1,$2
-  mov $3,$4
-  div $3,2
+  seq $2,2865 ; Number of partitions of n that do not contain 1 as a part.
+  add $1,$2
 lpe
 mov $0,$1

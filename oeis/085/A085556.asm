@@ -12,12 +12,12 @@ lpb $2
   seq $5,193238 ; Number of prime digits in decimal representation of n.
   mul $5,2
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

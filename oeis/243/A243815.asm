@@ -13,7 +13,7 @@ lpb $2
   mov $5,$0
   mov $0,2
   pow $0,$5
-  add $5,1
+  add $5,2
   seq $5,171682 ; Number of compositions of n with the smallest part in the first position.
   sub $5,$0
   add $1,$5

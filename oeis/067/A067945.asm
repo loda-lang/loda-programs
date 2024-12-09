@@ -11,8 +11,9 @@ mov $3,$0
 pow $3,4
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,94924 ; a(n) = (9^n-1)/8 mod n.
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   sub $3,$0
