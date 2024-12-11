@@ -84,6 +84,7 @@ A014587: Nim function for Take-a-Factorial-Game (a subtraction game).
 A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
 A015910: a(n) = 2^n mod n.
 A019446: a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+A019554: Smallest number whose square is divisible by n.
 A019594: Conway's "para-budding" sequence.
 A019778: Decimal expansion of sqrt(e)/5.
 A019786: Decimal expansion of sqrt(e)/13.

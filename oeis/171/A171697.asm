@@ -11,6 +11,7 @@ add $4,7
 pow $4,2
 lpb $4
   mov $5,$3
+  add $5,4
   seq $5,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
   trn $5,6
   min $5,1
@@ -18,7 +19,7 @@ lpb $4
   add $3,6
   mov $6,$0
   max $6,1
-  cmp $6,$0
+  equ $6,$0
   mul $4,$6
   sub $4,1
 lpe

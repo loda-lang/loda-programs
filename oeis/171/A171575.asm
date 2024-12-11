@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,129726 ; a(n) = a(n-1) + prime(n) - prime(n-1) + 2; a(1) = 2.
   add $1,3
   trn $0,$1

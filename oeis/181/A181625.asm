@@ -7,12 +7,12 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,226762 ; Least k such that 1/k <= mean of {1, 1/2, 1/3,..., 1/n}.
+  seq $3,226762 ; Greatest k such that 1/k >= mean of {1, 1/2, 1/3, ..., 1/n}.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $0,$3
   mul $2,$4
   sub $2,1

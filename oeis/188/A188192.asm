@@ -1,8 +1,10 @@
 ; A188192: [nr]-[kr]-[nr-kr], where r=sqrt(5), k=3, [ ]=floor.
 ; Submitted by Conan
 ; 1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0
+; Formula: a(n) = -2*truncate((sqrtnint((sqrtnint(5*n^2,2)+n+7)*(5*sqrtnint(5*n^2,2)+5*n+45),2)+sqrtnint(5*n^2,2)+n+8)/2)+sqrtnint((sqrtnint(5*n^2,2)+n+7)*(5*sqrtnint(5*n^2,2)+5*n+45),2)+sqrtnint(5*n^2,2)+n+8
 
-add $0,1
+#offset 1
+
 mov $2,$0
 add $2,$0
 mul $2,2

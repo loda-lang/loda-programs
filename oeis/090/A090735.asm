@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,175908 ; 3*sum(k=1..n, floor(k^2/n)) - n^2.
   div $2,3
-  cmp $2,0
+  equ $2,0
   sub $0,1
   add $1,$2
 lpe

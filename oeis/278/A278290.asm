@@ -1,20 +1,34 @@
 ; A278290: Number of neighbors of each new term in a square array read by antidiagonals.
+; Submitted by amargo133
 ; 0,1,2,1,4,2,1,4,4,2,1,4,4,4,2,1,4,4,4,4,2,1,4,4,4,4,4,2,1,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,4,4,2,1,4,4,4,4,4,4,4,4,4,4,2,1,4
 
-lpb $0
-  add $0,4
-  trn $3,2
-  add $3,3
-  trn $0,$3
-  mov $2,3
-  sub $2,$0
-  trn $0,2
-lpe
-mov $0,$2
-mul $0,2
+#offset 1
+
 sub $0,1
-mov $1,4
-sub $1,$0
-div $1,2
-add $0,$1
+mov $1,$0
+mov $2,0
+lpb $1
+  sub $1,1
+  sub $1,$2
+  mov $3,$2
+  add $2,1
+lpe
+sub $2,1
+mul $3,2
+sub $3,$1
+mov $1,$3
+sub $1,$2
+mov $3,$2
+bin $2,$1
+add $1,1
+bin $3,$1
+add $2,$3
+add $3,$2
+add $3,$2
+mov $1,$3
+mov $0,$1
+lpb $0
+  mod $0,6
+  add $0,5
+lpe
 sub $0,1

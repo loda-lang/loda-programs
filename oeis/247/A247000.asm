@@ -1,6 +1,9 @@
 ; A247000: Maximal number of palindromes in a circular binary word of length n.
 ; 1,2,4,6,7,9,10,12,13,15,16,18,19,21,23,24,26,28,29,31,33,34,36,38,39,41,43,44,46,48
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $2,$0
 lpb $2

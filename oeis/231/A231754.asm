@@ -6,13 +6,14 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,175908 ; 3*sum(k=1..n, floor(k^2/n)) - n^2.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

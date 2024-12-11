@@ -1,11 +1,16 @@
 ; A183009: a(n) = 24*n*p(n) = 24*n*A000041(n).
-; Submitted by LCB001
+; Submitted by Conan
 ; 24,96,216,480,840,1584,2520,4224,6480,10080,14784,22176,31512,45360,63360,88704,121176,166320,223440,300960,399168,529056,692760,907200,1174800,1520064,1950480,2498496,3177240,4034880,5090448,6412032
-; Formula: a(n) = 24*A000041(n+1)*(n+1)
+; Formula: a(n) = 24*truncate((n*A139582(n))/2)
 
-add $0,1
+#offset 1
+
+sub $0,1
 mov $1,$0
-seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+add $0,1
+add $1,1
+seq $1,139582 ; Twice partition numbers.
 mul $1,$0
 mov $0,$1
+div $0,2
 mul $0,24

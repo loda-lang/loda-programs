@@ -13,7 +13,7 @@ lpb $1
   sub $5,$1
   gcd $5,$3
   mul $5,$4
-  cmp $5,$3
+  equ $5,$3
   mul $5,$4
   add $2,$5
   add $3,1

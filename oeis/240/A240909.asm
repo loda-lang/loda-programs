@@ -2,7 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,15,7,8,3,12,4,11,1,14,6,9,2,13,5,10
 
-add $0,15
+#offset 1
+
+add $0,14
 lpb $0
   sub $0,1
   add $2,$0
