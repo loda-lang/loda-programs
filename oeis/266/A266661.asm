@@ -23,6 +23,6 @@ mov $0,$3
 add $0,1
 mov $1,$0
 div $0,4
-cmp $0,1
+equ $0,1
 mul $0,2
 add $0,$1

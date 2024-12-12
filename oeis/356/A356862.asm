@@ -10,6 +10,7 @@ add $3,3
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,182850 ; a(n) = number of iterations that n requires to reach a fixed point under the x -> A181819(x) map.
   bin $4,3
   gcd $4,2
@@ -18,7 +19,7 @@ lpb $3
   add $2,$5
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   sub $3,$4
   mul $3,$5
 lpe
