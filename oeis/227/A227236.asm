@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $3,$4
+    add $3,1
     seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
     bin $3,$5
     add $5,1

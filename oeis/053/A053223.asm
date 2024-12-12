@@ -11,9 +11,11 @@ lpb $3
   mov $7,$0
   add $7,1
   mov $8,$7
+  add $7,2
   seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $7,$8
   mov $6,$0
+  add $6,2
   seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $6,$7
   sub $0,$6

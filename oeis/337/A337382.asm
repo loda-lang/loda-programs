@@ -7,9 +7,10 @@ pow $2,2
 lpb $2
   mov $5,$1
   seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  sub $5,1
+  add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
+  add $3,2
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   div $5,$3
   equ $5,1

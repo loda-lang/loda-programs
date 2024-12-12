@@ -8,4 +8,5 @@ lpb $0
   gcd $1,16
   div $0,$1
 lpe
+add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

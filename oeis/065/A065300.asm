@@ -6,16 +6,17 @@ mov $1,-1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,1
   seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   sub $2,$4
 lpe
 mov $0,$1

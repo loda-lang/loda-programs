@@ -15,11 +15,12 @@ lpb $4
   sub $0,1
   mov $5,$0
   seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  sub $5,1
+  add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $0,2
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   div $5,$0
-  cmp $5,1
+  equ $5,1
   mov $0,$5
   add $0,1
   mod $0,2

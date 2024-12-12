@@ -14,6 +14,7 @@ lpb $3
   mov $2,$0
   mul $2,$1
   trn $2,1
+  add $2,1
   seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $2,1
   mul $2,4

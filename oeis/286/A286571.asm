@@ -1,9 +1,10 @@
 ; A286571: Compound filter (prime signature of n & n/gcd(n, sigma(n))): a(n) = P(A046523(n), A017666(n)), where P(n,k) is sequence A000027 used as a pairing function.
 ; Submitted by Science United
 ; 1,5,8,25,17,21,30,113,70,51,68,103,93,72,51,481,155,148,192,222,331,126,278,324,382,159,569,78,437,591,498,1985,126,237,786,2521,705,282,952,375,863,660,948,243,337,384,1130,1759,1330,1842,237,678,1433,520,1776,459,1897,567,1772,2076,1893,636,2713,8065,2421,810,2280,1002,384,2046,2558,4537,2703,867,3667,447,3327,891,3162,3789
-; Formula: a(n) = truncate(((truncate(n/gcd(n+1,A000203(n)))+A046523(n)+1)^2-A046523(n)-3*truncate(n/gcd(n+1,A000203(n)))-1)/2)
+; Formula: a(n) = truncate(((truncate(n/gcd(n+1,A000203(n+1)))+A046523(n)+1)^2-A046523(n)-3*truncate(n/gcd(n+1,A000203(n+1)))-1)/2)
 
 mov $3,$0
+add $3,1
 seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $4,$0
 add $4,1

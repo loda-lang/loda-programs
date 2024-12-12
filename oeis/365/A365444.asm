@@ -10,7 +10,7 @@ lpb $1
   mov $0,$3
   sub $0,$1
   mul $0,6
-  add $0,3
+  add $0,4
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $2,$0
 lpe

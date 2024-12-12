@@ -14,10 +14,10 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   mov $5,$0
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $5,6
+  sub $0,1
   seq $0,244668 ; Numerators of (product of divisors of n / sum of divisors of n).
   mul $0,$5
   div $0,6

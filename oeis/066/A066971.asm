@@ -1,10 +1,11 @@
 ; A066971: a(n) = sigma(sigma(sigma(n))).
 ; Submitted by Christian Krause
 ; 1,7,8,15,28,56,24,60,24,56,56,120,60,168,168,63,56,120,96,252,104,112,168,480,63,252,234,360,195,336,104,210,224,360,224,248,168,480,360,546,252,728,224,504,480,336,224,504,186,255,336,260,360,1170,336,1170,384,546,480,1512,252,728,576,255,504,448,312,840,728,448,336,992,240,744,504,992,728,1512,384,1020
-; Formula: a(n) = A000203(A000203(A000203(n)-1)-1)
+; Formula: a(n) = A000203(A000203(A000203(n+3)+2)+2)
 
+add $0,3
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,1
+add $0,2
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,1
+add $0,2
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

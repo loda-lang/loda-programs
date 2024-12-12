@@ -12,10 +12,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
   mov $5,$0
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $5,3
+  sub $0,1
   mul $1,$5
   add $3,$1
 lpe

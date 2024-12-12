@@ -8,5 +8,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,9286 ; a(n) = lcm(sigma(n), phi(n)).
 mov $0,$1

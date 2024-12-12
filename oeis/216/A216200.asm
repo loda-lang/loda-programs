@@ -8,17 +8,19 @@ mov $3,$0
 lpb $3
   sub $3,1
   mov $7,$2
-  cmp $7,0
+  equ $7,0
   mul $7,2
   mov $4,$2
   add $4,$7
   mov $9,$4
   mov $10,$4
   sub $4,1
+  add $9,2
   seq $9,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $9,1
   sub $9,$10
   mov $8,$4
+  add $8,2
   seq $8,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $8,$9
   sub $4,$8
@@ -27,7 +29,7 @@ lpb $3
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   add $6,$5
 lpe
 sub $1,$6

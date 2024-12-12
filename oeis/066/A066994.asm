@@ -1,4 +1,4 @@
-; A066994: Numbers n such that phi(n) divides n*sigma(n).
+; A066994: Numbers k such that phi(k) divides k*sigma(k).
 ; Submitted by Simon Strandgaard (M1)
 ; 1,2,3,4,6,8,10,12,14,15,16,18,20,21,24,26,27,30,32,35,36,39,40,42,48,54,55,56,60,63,64,70,72,78,80,84,88,96,98,104,105,108,110,114,116,120,125,126,128,135,140,144,147,150,155,156,160,162,165,168,189,190,192,196,203,210,216,220,222,224,238,240,243,248,250,252,256,264,270,280
 
@@ -12,14 +12,15 @@ lpb $2
   gcd $6,$3
   div $3,$6
   mov $5,$1
+  add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   gcd $5,$3
   div $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

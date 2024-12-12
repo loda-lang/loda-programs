@@ -8,5 +8,6 @@ lpb $0
 lpe
 sub $1,$0
 add $1,1
+add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mul $0,$1

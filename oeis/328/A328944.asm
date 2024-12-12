@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $6,$1
+  add $6,1
   seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

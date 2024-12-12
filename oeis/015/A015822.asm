@@ -13,6 +13,7 @@ lpb $2
   add $3,6
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $5,$1
+  add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   gcd $5,$3
   add $6,$4

@@ -13,7 +13,6 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-  sub $0,1
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $1,$0
 lpe

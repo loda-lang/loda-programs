@@ -11,6 +11,7 @@ lpb $1
   mov $0,$3
   sub $0,$1
   mov $4,$0
+  add $4,1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   add $2,$4
 lpe

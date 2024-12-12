@@ -7,6 +7,7 @@ pow $3,2
 lpb $3
   mov $4,$2
   seq $4,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  add $4,1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $4,1
   add $0,1

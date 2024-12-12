@@ -12,10 +12,11 @@ lpb $1
   mov $8,$0
   seq $8,48250 ; Sum of the squarefree divisors of n.
   mov $3,$0
+  add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,$8
   mov $7,$3
-  cmp $7,0
+  equ $7,0
   mov $2,$7
   add $2,$0
   mov $6,$2

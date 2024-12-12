@@ -16,6 +16,7 @@ lpb $4
   sub $0,1
   mov $7,$0
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $7,1
   seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mod $7,$0
   mov $6,0

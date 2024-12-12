@@ -11,6 +11,7 @@ lpb $2
   mov $5,$1
   add $5,1
   mov $3,$1
+  add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,1
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
@@ -21,7 +22,7 @@ lpb $2
   mov $6,0
   bin $6,$3
   mov $3,$6
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

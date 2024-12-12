@@ -13,10 +13,9 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  sub $0,1
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   div $0,$5
-  cmp $0,1
+  equ $0,1
   mul $1,$0
   add $3,$1
 lpe

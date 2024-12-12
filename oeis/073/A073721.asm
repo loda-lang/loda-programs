@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   mov $4,$3
   seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
+  add $4,1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mod $4,$3
   mov $3,$4

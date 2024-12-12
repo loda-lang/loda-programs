@@ -7,6 +7,7 @@ mov $1,$0
 lpb $0
   div $0,2
   mov $2,$0
+  add $2,1
   seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $0,2
 lpe

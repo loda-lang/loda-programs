@@ -10,6 +10,7 @@ lpb $0
   mov $2,$0
   seq $2,318458 ; a(n) = n AND A001065(n), where AND is bitwise-and (A004198) & A001065 = sum of proper divisors.
   mov $1,$0
+  add $1,1
   seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $1,$2
   mul $0,0

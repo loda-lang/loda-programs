@@ -46,6 +46,7 @@ lpb $2
           add $1,$0
           bin $1,$0
           max $0,0
+          add $0,1
           seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
           lpb $0
             mul $1,$0

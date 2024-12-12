@@ -10,8 +10,9 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,2
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $4,1
+  add $4,1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $2,$5
   mul $2,$4

@@ -10,19 +10,18 @@ lpb $2
   mov $5,$3
   sub $3,1
   seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  sub $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,1
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   gcd $5,$3
   div $3,$5
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

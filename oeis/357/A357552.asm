@@ -11,7 +11,7 @@ lpb $4
   mul $1,2
   mov $0,$2
   sub $0,1
-  mov $3,$0
+  mov $3,$2
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   bin $1,$2
   mul $1,$3

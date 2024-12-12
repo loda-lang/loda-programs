@@ -13,6 +13,7 @@ lpb $0
     pow $6,7
     mov $5,$4
     trn $5,1
+    add $5,1
     seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
     mul $5,$6
     add $1,$5

@@ -6,6 +6,7 @@ mul $0,2
 lpb $0
   add $1,1
   mov $2,$0
+  add $2,1
   seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $2,1
   seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

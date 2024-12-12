@@ -1,4 +1,4 @@
-; A180930: Numbers n such that the sum of divisors of n is a hexagonal number.
+; A180930: Numbers whose sum of divisors is a hexagonal number.
 ; Submitted by taurec
 ; 1,5,8,12,36,54,56,87,95,160,212,328,342,356,427,531,660,672,843,852,858,909,910,940,992,1002,1012,1162,1222,1245,1353,1417,1435,1495,1509,1547,1757,1837,1909,1927,1998,2072,2274,2793,2983,3051,3212,3219,3515,3548,3870,3871,3983,4040,4076,4169,4176,4313,4379,4392,4394,4659,4734,4745,5064,5090,5142,5710,5759,5858,5895,6059,6212,6224,6525,6579,6617,6984,8012,8018
 
@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   sub $3,1
   seq $3,256215 ; Triangle read by rows: T(n,k) = (n-1)!*n^(k-1)*binomial(n,k)/(k-1)!.

@@ -13,6 +13,7 @@ lpb $2
   pow $3,2
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   gcd $5,$3
@@ -20,12 +21,12 @@ lpb $2
   mod $3,3
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 pow $1,2

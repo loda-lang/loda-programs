@@ -7,9 +7,10 @@ add $1,1
 mov $3,$0
 add $3,1
 mov $2,$0
+add $2,1
 seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $2,$3
 dif $2,$3
-cmp $2,1
+equ $2,1
 mov $0,$2
 mul $0,$1

@@ -9,6 +9,7 @@ pow $2,5
 lpb $2
   add $0,1
   mov $3,$1
+  add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   gcd $3,$0
   add $1,1
