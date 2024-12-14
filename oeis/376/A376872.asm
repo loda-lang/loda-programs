@@ -1,18 +1,10 @@
 ; A376872: a(n) = n! * 2^(-n) * binomial(3*n - 1, 2*n) * binomial(2*n, n). Central terms of the Bessel triangle A132062.
-; Submitted by Science United
+; Submitted by PE2OND
 ; 1,1,15,420,17325,945945,64324260,5237832600,496939367925,53835098191875,6557114959770375,886998823648938000,131941075017779527500,21404902093269001807500,3761147082102981746175000,711609027933884146376310000,144234254849349142918648333125
 
-mov $1,1
-mov $2,$0
-sub $2,1
-lpb $0
-  sub $0,1
-  sub $3,$2
-  add $2,1
-  mul $1,$2
-  add $2,1
-  add $3,$2
-  mul $1,$2
-  div $1,$3
-lpe
-mov $0,$1
+gcd $2,$0
+mov $1,$2
+equ $1,0
+add $0,$1
+seq $0,245066 ; Central terms of triangles A001497 and A001498.
+div $0,3

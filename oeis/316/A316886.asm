@@ -8,8 +8,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  seq $3,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.
-  add $3,1
   max $5,$3
   div $3,$5
   sub $0,$3

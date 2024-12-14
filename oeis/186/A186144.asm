@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 1,1,3,3,2,1,2,1,2,1,2,1,2
 
+#offset 1
+
+sub $0,1
 mov $3,1
 mov $1,2
 gcd $1,$0

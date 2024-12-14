@@ -10,6 +10,7 @@ lpb $2
   mov $4,2
   mul $4,$1
   mov $5,$4
+  add $5,1
   seq $5,175297 ; Convert n to binary. AND each respective digit of binary n and binary A030101(n), where A030101(n) is the reversal of the order of the digits in the binary representation of n (given in decimal). a(n) is the decimal value of the result.
   mov $3,$5
   gcd $3,$0

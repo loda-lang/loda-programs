@@ -7,6 +7,5 @@ lpb $1
   sub $1,1
   add $0,1
   seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-  sub $0,2
   seq $0,342003 ; Maximal exponent in the prime factorization of the arithmetic derivative of n: a(n) = A051903(A003415(n)).
 lpe

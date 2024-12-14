@@ -5,7 +5,6 @@ add $0,1
 mov $1,1
 bin $1,$0
 sub $0,$1
-mov $2,0
 mov $3,4
 mov $5,$0
 sub $5,2

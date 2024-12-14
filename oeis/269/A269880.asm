@@ -1,4 +1,4 @@
-; A269880: First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 4", based on the 5-celled von Neumann neighborhood.
+; A269880: First differences of number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 4", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jamie Morken(w4)
 ; 3,0,12,-12,12,0,48,-60,12,0,48,-48,48,0,192,-252,12,0,48,-48,48,0,192,-240,48,0,192,-192,192,0,768,-1020,12,0,48,-48,48,0,192,-240,48,0,192,-192,192,0,768,-1008,48,0,192,-192,192,0,768,-960,192,0,768,-768,768,0,3072,-4092,12,0,48,-48,48,0,192,-240,48,0,192,-192,192,0,768,-1008
 

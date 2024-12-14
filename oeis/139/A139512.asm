@@ -10,15 +10,13 @@ lpb $3
   mov $4,$2
   seq $4,107152 ; Primes of the form x^2 + 45y^2.
   mov $6,$4
-  sub $4,1
   seq $4,35199 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
-  cmp $4,0
-  cmp $4,0
+  neq $4,0
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   trn $3,1
 lpe

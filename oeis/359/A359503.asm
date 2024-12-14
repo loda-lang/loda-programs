@@ -1,21 +1,20 @@
 ; A359503: Partial sums of A066839.
-; Submitted by Roadranner
+; Submitted by Ol_Sin
 ; 1,2,3,6,7,10,11,14,18,21,22,28,29,32,36,43,44,50,51,58,62,65,66,76,82,85,89,96,97,108,109,116,120,123,129,145,146,149,153,165,166,178,179,186,195,198,199,215,223,231,235,242,243,255,261,275,279,282,283
 
-mov $4,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $5,0
-  mov $0,$4
+#offset 1
+
+sub $0,1
+mov $1,1
+add $0,1
+lpb $0
+  add $0,1
   sub $0,$1
   mov $3,$0
-  seq $3,66839 ; a(n) = sum of positive divisors k of n with k <= sqrt(n).
-  lpb $3
-    add $5,$3
-    mov $3,0
-  lpe
-  add $2,$5
+  div $3,$1
+  mul $3,$1
+  sub $0,$1
+  add $1,1
+  add $2,$3
 lpe
 mov $0,$2

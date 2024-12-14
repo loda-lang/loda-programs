@@ -4,7 +4,7 @@
 
 add $0,2
 lpb $0
-  mov $0,0
+  mov $0,1
   seq $0,250742 ; T(n,k)=Number of (n+1)X(k+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nonincreasing x(i,j)-x(i-1,j) in the j direction
   pow $0,3
 lpe

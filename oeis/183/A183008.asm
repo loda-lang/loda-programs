@@ -1,12 +1,6 @@
 ; A183008: a(n) = 24*p(n) = 24*A000041(n).
-; Submitted by Science United
+; Submitted by amazing
 ; 24,24,48,72,120,168,264,360,528,720,1008,1344,1848,2424,3240,4224,5544,7128,9240,11760,15048,19008,24048,30120,37800,46992,58464,72240,89232,109560,134496,164208,200376,243432,295440,357192,431448,519288,624360,748440
-; Formula: a(n) = 12*A139582(n)
 
-mov $1,$0
-seq $1,139582 ; Twice partition numbers.
-mul $1,2
-add $1,1
-mov $0,$1
-mul $0,6
-sub $0,6
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $0,24

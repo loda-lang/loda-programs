@@ -8,4 +8,3 @@ mov $1,$0
 seq $1,86304 ; Numbers n such that n+6 is prime.
 mov $0,$1
 sub $0,4
-mul $1,2

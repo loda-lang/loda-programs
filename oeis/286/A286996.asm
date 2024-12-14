@@ -1,13 +1,22 @@
 ; A286996: {0->000, 11->null}-transform of the Sturmian word A080764.
 ; Submitted by zombie67 [MM]
 ; 0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-; Formula: a(n) = A001951(n+1)*A001951(n+4)-2*truncate((A001951(n+1)*A001951(n+4)+A001951(n+1))/2)+A001951(n+1)
+; Formula: a(n) = sqrtnint(2*n^2,2)*sqrtnint(2*(n+3)^2,2)-2*truncate((sqrtnint(2*n^2,2)*sqrtnint(2*(n+3)^2,2)+sqrtnint(2*n^2,2))/2)+sqrtnint(2*n^2,2)
+
+#offset 1
 
 mov $1,$0
-add $1,4
-seq $1,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-add $0,1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
-mul $1,$0
+add $1,3
+pow $1,2
+mul $1,2
+mov $2,$1
+nrt $2,2
+pow $0,2
+mul $0,2
+mov $3,$0
+nrt $3,2
+mov $1,$2
+mul $1,$3
+mov $0,$3
 add $0,$1
 mod $0,2

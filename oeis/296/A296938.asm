@@ -14,7 +14,6 @@ lpb $3
   mov $4,$2
   seq $4,40 ; The prime numbers.
   mov $6,$4
-  sub $4,1
   seq $4,35199 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
   neq $4,0
   sub $0,$4

@@ -10,8 +10,7 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    equ $4,0
-    equ $4,0
+    neq $4,0
     mov $5,$2
     equ $5,1
     mul $2,2

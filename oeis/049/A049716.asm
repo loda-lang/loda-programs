@@ -1,16 +1,22 @@
 ; A049716: a(n) = 2*n + 1 - prevprime(2*n + 1).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,2,2,2,4,2,2,4,2,2,4,2,4,6,2,2,4,6,2,4,2,2,4,2,4,6,2,4,6,2,2,4,6,2,4,2,2,4,6,2,4,2,4,6,2,4,6,8,2,4,2,2,4,2,2,4,2,4,6,8,10,12,14,2,4,2,4,6,2,2,4,6,8,10,2,2,4,6,2,4
 
-mov $1,$0
-mul $1,2
-add $1,2
-lpb $1
-  sub $1,1
-  add $2,1
-  mov $3,$1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,$3
+mul $0,2
+mov $1,2
+add $1,$0
+div $0,2
+mul $0,2
+trn $0,1
+add $0,2
+lpb $0
+  sub $0,1
+  mov $2,$0
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $0,1
+  add $0,$2
+  add $0,$2
 lpe
-mov $0,$2
+sub $1,$0
+mov $0,$1
 add $0,1

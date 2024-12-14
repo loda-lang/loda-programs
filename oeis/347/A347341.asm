@@ -9,6 +9,7 @@ lpb $0
   add $1,1
   mov $2,$0
   max $2,0
+  sub $2,1
   seq $2,126561 ; Decimal expansion of (Pi^2-9)/12.
   add $2,$1
   sub $3,2

@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   seq $3,38872 ; Primes congruent to {0, 1, 4} mod 5.
   mov $5,$3
-  sub $3,1
   seq $3,35199 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.
   neq $3,0
   sub $0,$3

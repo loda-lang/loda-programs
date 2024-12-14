@@ -2,6 +2,9 @@
 ; Submitted by Arkhenia
 ; 1,1,3,5,9,12,16,20,27,33,39,48
 
+#offset 3
+
+sub $0,3
 mul $0,2
 seq $0,29049 ; Expansion of 1/((1-x)(1-x^3)(1-x^7)(1-x^8)).
 mov $1,2

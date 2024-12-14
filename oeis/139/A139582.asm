@@ -1,10 +1,17 @@
 ; A139582: Twice partition numbers.
-; Submitted by Solidair79
+; Submitted by amazing
 ; 2,2,4,6,10,14,22,30,44,60,84,112,154,202,270,352,462,594,770,980,1254,1584,2004,2510,3150,3916,4872,6020,7436,9130,11208,13684,16698,20286,24620,29766,35954,43274,52030,62370,74676,89166,106348,126522,150350,178268,211116,249508,294546,347050,408452
 
 lpb $0
-  min $0,3
-  seq $0,30450 ; Related to number of elements in the free band (idempotent semigroup) on n generators.
+  sub $0,1
+  mul $0,2
+  trn $0,1
+  mul $0,48
+  nrt $0,2
+  add $0,3
+  div $0,2
+  mul $0,2
+  sub $0,6
 lpe
 mov $1,$0
 seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).

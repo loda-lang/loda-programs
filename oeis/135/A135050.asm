@@ -1,9 +1,11 @@
 ; A135050: Numbers k such that sum of digits of k^3 is 8. Multiples of 10 are omitted.
 ; Submitted by Jon Maiga
 ; 2,5,8,11,101,1001,10001,100001,1000001,10000001,100000001,1000000001,10000000001,100000000001,1000000000001,10000000000001,100000000000001,1000000000000001,10000000000000001,100000000000000001,1000000000000000001,10000000000000000001
-; Formula: a(n) = 3*max(n-2,truncate((truncate(10^(n-2))-6)/3))+8
+; Formula: a(n) = 3*max(n-3,truncate((truncate(10^(n-3))-6)/3))+8
 
-sub $0,2
+#offset 1
+
+sub $0,3
 mov $1,10
 pow $1,$0
 sub $1,6

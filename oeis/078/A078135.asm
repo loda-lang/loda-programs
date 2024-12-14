@@ -4,6 +4,7 @@
 mov $1,$0
 lpb $1
   mov $2,$1
+  add $2,1
   seq $2,204255 ; Symmetric matrix given by f(i,j)=1+[(i+j) mod 4].
   add $0,$2
   add $1,$2

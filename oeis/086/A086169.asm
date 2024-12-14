@@ -19,7 +19,7 @@ lpb $2
   sub $0,$6
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
   add $5,3
   add $1,$0
   mul $2,$4

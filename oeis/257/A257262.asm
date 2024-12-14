@@ -9,14 +9,13 @@ lpb $2
   mov $3,$1
   seq $3,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
   seq $3,246029 ; a(n) = Product_{i in row n of A245562} prime(i).
-  sub $3,1
   seq $3,257993 ; Least gap in the partition having Heinz number n; index of the least prime not dividing n.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -14,5 +14,6 @@ lpb $0
 lpe
 mul $2,2
 mul $0,$2
+add $0,1
 seq $0,237626 ; Sum of a^2 + b^2 for all nonnegative integers a,b such that b^2-a^2 = 4n.
 div $0,4

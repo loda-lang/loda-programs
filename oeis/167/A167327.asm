@@ -4,9 +4,8 @@
 
 #offset 1
 
-mov $1,5
-mul $0,2
 sub $0,1
+mov $1,1
 lpb $0
   mov $2,$0
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
@@ -17,4 +16,3 @@ lpb $0
   mul $1,2
 lpe
 mov $0,$1
-div $0,200

@@ -15,7 +15,7 @@ lpb $1
     seq $5,326586 ; Odd numbers which do not satisfy Korselt's criterion, complement of A324050.
     mov $0,1
   lpe
-  cmp $3,0
+  equ $3,0
   add $5,$3
   div $1,$5
 lpe

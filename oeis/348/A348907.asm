@@ -4,7 +4,7 @@
 
 lpb $0
   add $0,1
-  seq $0,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+  seq $0,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
   sub $0,1
 lpe
 add $0,2

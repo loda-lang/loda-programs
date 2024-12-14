@@ -1,19 +1,11 @@
 ; A054025: Sum of divisors of n read modulo (number of divisors of n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,1,0,1,0,0,0,3,1,2,0,4,0,0,0,1,0,3,0,0,0,0,0,4,1,2,0,2,0,0,0,3,0,2,0,1,0,0,0,2,0,0,0,0,0,0,0,4,0,3,0,2,0,0,0,0,0,2,0,0,0,0,2,1,0,0,0,0,0,0,0,3,0,2,4,2,0,0,0,6
+; Formula: a(n) = -A000005(n)*truncate(A000203(n+1)/A000005(n))+A000203(n+1)
 
-add $0,1
-mov $2,$0
-lpb $0
-  add $1,$4
-  mov $3,$2
-  dif $3,$0
-  neq $3,$2
-  sub $0,1
-  add $4,$3
-lpe
-add $4,1
-add $4,$1
-sub $1,$4
-mod $4,$1
-mov $0,$4
+mov $1,$0
+add $1,1
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mod $1,$0
+mov $0,$1

@@ -1,21 +1,25 @@
 ; A328973: Numbers k such that A053392(k) > k.
-; Submitted by arkiss
+; Submitted by Science United
 ; 119,128,129,137,138,139,146,147,148,149,155,156,157,158,159,164,165,166,167,168,169,173,174,175,176,177,178,179,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,219,228,229,237,238,239,246
 
+#offset 1
+
+sub $0,1
 mov $2,$0
-add $2,4
+add $2,2
+mul $2,3
 pow $2,2
 lpb $2
   add $1,109
   mov $3,$1
   seq $3,225693 ; Alternating sum of digits of n.
   pow $3,2
-  cmp $3,1
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

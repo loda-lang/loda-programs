@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,137243 ; Number of coprime pairs (a,b) with -n <= a,b <= n.
   mov $0,0
 lpe

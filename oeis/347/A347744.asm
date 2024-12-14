@@ -16,7 +16,7 @@ lpb $0
     div $7,2
     seq $7,191558 ; a(n) = 0 if n prime, otherwise n.
     div $7,3
-    cmp $7,$8
+    equ $7,$8
     mov $9,10
     add $9,$5
     sub $4,$0

@@ -1,31 +1,22 @@
 ; A126221: a(n)=c(n)+c(n-1)+2*c(n-2)+4*c(n-3)+8*c(n-4)+...+2^(n-2)*c(1)+2^(n-1)*c(0), where c(k) are the Catalan numbers (A000108).
-; Submitted by Jon Maiga
+; Submitted by Goldislops
 ; 1,2,5,13,35,98,286,869,2739,8910,29754,101498,352222,1239332,4410204,15840813,57344451,208976022,765945954,2821516398,10439890026,38781926652,144580149924,540737349858,2028319233390,7628680720908
 
-mov $4,$0
-mov $6,2
-lpb $6
-  sub $6,1
-  mov $0,$4
-  add $0,$6
-  mov $1,0
-  mov $2,$0
-  sub $0,1
-  mov $3,$0
-  lpb $2
-    sub $2,1
-    mov $0,$3
-    sub $0,$2
-    seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-    mul $1,2
-    add $1,$0
-  lpe
-  mov $7,$6
-  mul $7,$1
-  mov $0,$1
-  add $5,$7
+mov $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  mov $1,$0
+  add $1,$0
+  bin $1,$0
+  sub $1,1
+  add $4,1
+  add $0,1
+  div $1,$0
+  add $1,$4
+  add $4,$1
 lpe
-min $4,1
-mul $4,$0
-mov $0,$5
-sub $0,$4
+mov $0,$1
+add $0,1

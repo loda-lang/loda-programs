@@ -7,8 +7,8 @@ mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
-  cmp $2,$3
-  cmp $3,0
+  equ $2,$3
+  equ $3,0
   mul $3,$0
   pow $3,23
   sub $0,1

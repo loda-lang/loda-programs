@@ -2,6 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,4,8,12,16,18,24,27,32,36,40
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,117961
 mul $1,4

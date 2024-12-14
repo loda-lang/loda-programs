@@ -11,6 +11,7 @@ lpb $5
   mov $4,$0
   max $4,0
   mov $6,$4
+  add $6,1
   seq $6,37032 ; Total number of prime parts in all partitions of n.
   add $6,1
   add $4,1

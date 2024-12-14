@@ -9,7 +9,7 @@ lpb $2
   add $4,$3
   mov $5,$0
   mod $5,$4
-  cmp $5,0
+  equ $5,0
   mov $6,$4
   mul $6,$5
   add $1,$6
@@ -18,6 +18,6 @@ lpb $2
   add $5,1
   min $5,1
   sub $2,$5
-  cmp $3,1
+  equ $3,1
 lpe
 mov $0,$1

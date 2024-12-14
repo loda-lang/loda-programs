@@ -1,24 +1,13 @@
 ; A176461: Decimal expansion of sqrt(105).
-; Submitted by Rodney Duane
+; Submitted by Science United
 ; 1,0,2,4,6,9,5,0,7,6,5,9,5,9,5,9,8,3,8,3,2,2,1,0,3,8,6,8,0,5,2,1,0,5,1,9,9,0,7,3,5,0,3,2,6,6,3,4,5,4,8,3,2,9,2,9,5,4,1,9,7,8,4,9,9,8,9,0,3,4,7,9,8,5,7,0,5,3,5,4
+; Formula: a(n) = -10*truncate(sqrtnint(floor((21*10^(2*n))/20),2)/10)+sqrtnint(floor((21*10^(2*n))/20),2)
 
-mov $2,1
-mov $3,$0
-mul $3,4
-lpb $3
-  sub $3,3
-  add $5,$2
-  add $5,$2
-  add $1,$5
-  mul $1,40
-  add $2,$1
-  mov $1,0
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-mov $1,1
-add $1,$5
-div $1,$2
+mul $0,2
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,21
+div $0,20
+nrt $0,2
 mod $0,10
