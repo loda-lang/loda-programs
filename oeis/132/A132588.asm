@@ -12,15 +12,15 @@ pow $3,2
 lpb $3
   sub $3,7
   mov $4,$2
+  add $4,1
   seq $4,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
   mov $6,$4
   add $2,1
-  cmp $4,0
-  cmp $4,0
+  neq $4,0
   sub $1,$4
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
 lpe
 gcd $0,$6

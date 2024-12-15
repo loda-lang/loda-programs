@@ -1,4 +1,4 @@
-; A083533: First difference sequence of A002202. Difference between consecutive possible values for phi(n).
+; A083533: First difference sequence of A002202. Difference between consecutive possible values for phi.
 ; Submitted by Science United
 ; 1,2,2,2,2,2,4,2,2,2,2,4,2,2,4,4,2,2,2,2,4,2,2,2,2,4,2,4,2,6,2,2,2,4,4,4,4,2,2,2,2,2,2,4,4,6,2,2,2,4,2,2,4,4,2,6,4,2,2,2,2,4,4,2,2,4,6,2,4,2,2,4,4,2,2,4,4,2,2,2
 

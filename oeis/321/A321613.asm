@@ -5,6 +5,7 @@
 mov $1,4
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,47994 ; Unitary totient (or unitary phi) function uphi(n).
   sub $0,1
   mul $1,$2

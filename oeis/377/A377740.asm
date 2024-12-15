@@ -7,6 +7,7 @@ mov $4,$0
 add $4,$0
 lpb $0
   sub $0,1
+  dir $1,35
   mov $2,$4
   bin $2,$0
   mov $3,$0

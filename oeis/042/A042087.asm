@@ -24,7 +24,7 @@ lpb $0
   seq $1,24639 ; n written in fractional base 7/2.
   add $1,2
   mov $5,$1
-  cmp $1,4
+  equ $1,4
   sub $1,2
   add $1,$5
   mul $1,$2

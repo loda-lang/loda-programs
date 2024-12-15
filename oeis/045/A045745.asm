@@ -8,7 +8,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $3,1
   sub $3,$1
   seq $3,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
   neq $3,1

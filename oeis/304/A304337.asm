@@ -9,7 +9,7 @@ lpb $0
   gcd $0,0
   sub $0,1
   add $1,4
-  cmp $2,0
+  equ $2,0
 lpe
 add $2,$0
 mov $0,$2

@@ -11,7 +11,7 @@ lpb $0
   div $3,$0
   gcd $3,$0
   mul $3,$4
-  cmp $3,$2
+  equ $3,$2
   mul $3,$0
   pow $3,9
   sub $0,1

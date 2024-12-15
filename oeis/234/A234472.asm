@@ -12,6 +12,7 @@ lpb $1
     sub $0,2
     mov $3,$0
     max $3,0
+    add $3,1
     seq $3,38444 ; Sums of 2 distinct powers of 10.
     div $0,$3
   lpe

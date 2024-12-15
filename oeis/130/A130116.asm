@@ -2,6 +2,7 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,1,0,1,1,0,0,2,1,0,0,0,4,1,0,1,0,0,6,1,0,0,0,0,0,12,1,0,0,2,0,0,0,18,1,0,1,0,0,0,0,0,32,1,0,0,0,4,0,0,0,0,50
 
+add $0,1
 seq $0,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
 mul $0,2
 sub $0,1

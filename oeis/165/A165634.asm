@@ -12,7 +12,7 @@ lpb $0
   mov $5,$1
   sub $5,1
   mov $6,$1
-  cmp $6,0
+  equ $6,0
   mov $3,$1
   add $3,$6
   sub $3,$5
@@ -26,7 +26,7 @@ lpb $0
   add $1,1
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mul $2,$4
 add $1,$2
