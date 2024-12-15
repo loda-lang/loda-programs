@@ -2,6 +2,9 @@
 ; Submitted by fzs600
 ; 1,3,5,9,15,17,45,51,85,153,255,765
 
+#offset 1
+
+sub $0,1
 lpb $0
   mul $1,18
   mov $3,$2
@@ -11,7 +14,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

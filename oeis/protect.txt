@@ -496,6 +496,7 @@ A181150: a(n) = prime(n)^3 + prime(n) + 1.
 A181923: Nonprimes (A018252) mod 2.
 A181932: A003136(n) mod 2.
 A182200: a(n) = prime(n)^2-3.
+A183008: a(n) = 24*p(n) = 24*A000041(n).
 A185322: a(n) = ceiling(prime(n)/10).
 A186190: First digit of tribonacci sequence A000213.
 A186621: Semiprimes - 1.

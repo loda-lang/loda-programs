@@ -11,12 +11,12 @@ lpb $2
   mov $3,$1
   seq $3,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
   sub $3,2
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

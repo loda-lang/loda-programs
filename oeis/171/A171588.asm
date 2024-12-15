@@ -1,6 +1,7 @@
 ; A171588: The Pell word: Fixed point of the morphism 0->001, 1->0.
 ; Submitted by shiva
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0
+; Formula: a(n) = sqrtnint(2*(n+1)^2,2)*sqrtnint(2*(n+2)^2,2)-2*truncate((sqrtnint(2*(n+1)^2,2)*sqrtnint(2*(n+2)^2,2)+sqrtnint(2*(n+2)^2,2))/2)+sqrtnint(2*(n+2)^2,2)
 
 add $0,1
 mov $3,$0

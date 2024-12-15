@@ -8,6 +8,7 @@ pow $2,3
 lpb $2
   mov $5,5
   mov $3,$1
+  add $3,1
   seq $3,52421 ; Numbers without 8 as a digit.
   lpb $3
     mov $6,$3

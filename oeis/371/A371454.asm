@@ -4,9 +4,7 @@
 
 add $0,1
 lpb $0
-  mul $0,2
   sub $0,1
-  div $0,2
   add $1,1
   bor $1,922
 lpe

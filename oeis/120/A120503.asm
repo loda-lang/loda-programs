@@ -4,7 +4,7 @@
 
 add $0,1
 mov $1,$0
-cmp $0,0
+equ $0,0
 lpb $1
   sub $1,1
   mov $2,1

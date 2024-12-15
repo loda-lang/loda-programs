@@ -1,5 +1,5 @@
 ; A178623: Triangle T(n,m) read by rows: T(n,0)= prime(n); T(n,m)=1 if m>=1.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,2,1,3,1,1,5,1,1,1,1,7,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,13,1,1,1,1,1,1,1,1,1,1,1,1,17,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,19,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,23,1
 
 mov $1,1
@@ -11,8 +11,7 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     sub $3,$4
     add $5,1
   lpe
