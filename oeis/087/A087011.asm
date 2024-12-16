@@ -2,8 +2,10 @@
 ; Submitted by Science United
 ; 0,1,1,1,1,2,2,1,1,2,2,2,2,2,2,3,3,3,3,2,2,3,3,3,3,3,3,3,3,4,4,3,3,4,4,5,5,5,5,6,6,7,7,6,6,6,6,5,5,5,5,6,6,7,7,7,7,7,7,6,6,6,6,7,7,8,8,7,7,8,8,7,7,7,7,8,8,8,8,7
 
+#offset 1
+
 mov $1,$0
-add $1,1
+sub $0,1
 lpb $1
   sub $1,2
   sub $0,$1
@@ -16,7 +18,7 @@ lpb $1
     add $2,$5
     seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
     add $4,$2
-    cmp $5,8
+    equ $5,8
   lpe
   add $0,$1
 lpe

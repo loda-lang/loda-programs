@@ -1,14 +1,19 @@
 ; A330136: Numbers m such that 1 < gcd(m, 6) < m and m does not divide 6^e for e >= 0.
-; Submitted by arkiss
+; Submitted by Tim B
 ; 10,14,15,20,21,22,26,28,30,33,34,38,39,40,42,44,45,46,50,51,52,56,57,58,60,62,63,66,68,69,70,74,75,76,78,80,82,84,86,87,88,90,92,93,94,98,99,100,102,104,105,106,110,111,112,114,116,117,118,120,122,123,124,126,129,130,132,134,135,136,138,140,141,142,146,147,148,150,152,153
 
-mov $1,10
+mov $1,1
 mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  add $6,1
   mov $3,$1
-  seq $3,70945 ; Number of permutations on n letters that have only cycles of length 4 or less.
+  add $3,6
+  mul $3,743008370688
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

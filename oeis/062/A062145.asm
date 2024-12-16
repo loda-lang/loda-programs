@@ -1,4 +1,4 @@
-; A062145: Triangle read by rows. T{n, k] = [z^k] P(n, z) where P(n, z) = Sum_{k=0..n} binomial(n, k) * Pochhammer(n - k + c, k) * z^k / k! and c = 4.
+; A062145: Triangle read by rows. T(n, k) = [z^k] P(n, z) where P(n, z) = Sum_{k=0..n} binomial(n, k) * Pochhammer(n - k + c, k) * z^k / k! and c = 4.
 ; Submitted by Christian Krause
 ; 1,1,4,1,10,10,1,18,45,20,1,28,126,140,35,1,40,280,560,350,56,1,54,540,1680,1890,756,84,1,70,945,4200,7350,5292,1470,120,1,88,1540,9240,23100,25872,12936,2640,165,1,108
 

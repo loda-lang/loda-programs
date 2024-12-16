@@ -20,6 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,324118 ; Sum of odd divisors in A156552(n): a(1) = 0, for n > 1, a(n) = A000593(A156552(n)) = A000203(A322993(n)).
   mul $0,$4
   add $1,$0

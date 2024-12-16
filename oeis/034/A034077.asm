@@ -10,8 +10,7 @@ lpb $2
   pow $3,$0
   add $1,204
   trn $1,$3
-  cmp $1,0
-  cmp $1,0
+  neq $1,0
   sub $2,$1
 lpe
 mov $0,$3

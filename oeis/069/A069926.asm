@@ -10,10 +10,11 @@ lpb $1
   mov $4,10
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,17666 ; Denominator of sum of reciprocals of divisors of n.
   sub $0,1
   lpb $0
-    cmp $4,$0
+    equ $4,$0
     mov $0,0
   lpe
   mov $0,$4

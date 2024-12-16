@@ -1,23 +1,12 @@
 ; A087686: Elements of A004001 that repeat consecutively.
-; Submitted by NOSNHOP
+; Submitted by Science United
 ; 1,2,4,7,8,12,14,15,16,21,24,26,27,29,30,31,32,38,42,45,47,48,51,53,54,56,57,58,60,61,62,63,64,71,76,80,83,85,86,90,93,95,96,99,101,102,104,105,106,109,111,112,114,115,116,118,119,120,121,123,124,125,126,127,128,136,142,147,151,154,156,157,162,166,169,171,172,176,179,181
 
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,93879 ; First differences of A004001.
-  gcd $3,2
-  sub $0,$3
-  add $0,1
-  add $1,$4
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+mov $1,1
+add $1,$0
+lpb $0
+  trn $0,1
+  seq $0,4001 ; Hofstadter-Conway $10000 sequence: a(n) = a(a(n-1)) + a(n-a(n-1)) with a(1) = a(2) = 1.
+  add $1,$0
 lpe
 mov $0,$1
-add $0,1
-add $4,$0
-mov $0,$4

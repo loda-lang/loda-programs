@@ -2,6 +2,9 @@
 ; Submitted by [AF>Amis des Lapins] Ceclo
 ; 1,2,4,13,17,26,34,52,68,221,442,884
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 mov $2,1
@@ -15,7 +18,7 @@ lpb $0
     mov $4,884
     gcd $4,$2
     div $4,$2
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

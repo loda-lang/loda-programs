@@ -16,12 +16,12 @@ lpb $0
     sub $3,$4
   lpe
   mov $5,1
-  cmp $6,3
+  equ $6,3
   lpb $0
     dif $0,$2
     sub $6,1
     mul $6,$2
-    cmp $4,0
+    equ $4,0
     sub $4,$6
     add $4,1
     pow $4,3
