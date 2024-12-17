@@ -13,7 +13,6 @@ lpb $2
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $3,$5
-  sub $3,1
   seq $3,8836 ; Liouville's function lambda(n) = (-1)^k, where k is number of primes dividing n (counted with multiplicity).
   sub $3,1
   add $3,$4

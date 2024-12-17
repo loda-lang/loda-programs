@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,224380 ; Table read by antidiagonals of numbers of form (2^n -1)*2^(m+2) + 3 where n>=1, m>=1.
   sub $3,1
   mov $5,$3

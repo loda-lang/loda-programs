@@ -11,7 +11,7 @@ lpb $3
     pow $2,$1
     mod $2,$0
     sub $2,$1
-    cmp $2,0
+    equ $2,0
     add $3,$1
     sub $1,$2
   lpe

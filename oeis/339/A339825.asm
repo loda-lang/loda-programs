@@ -1,6 +1,7 @@
 ; A339825: Odd bisection of the infinite Fibonacci word A003849.
 ; Submitted by Steve Dodd
 ; 1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0
+; Formula: a(n) = -2*truncate((sqrtint((sqrtint((n+1)*(5*n+5))+n+3)*(5*sqrtint((n+1)*(5*n+5))+5*n+15))+sqrtint((n+1)*(5*n+5))+n+2)/2)+sqrtint((sqrtint((n+1)*(5*n+5))+n+3)*(5*sqrtint((n+1)*(5*n+5))+5*n+15))+sqrtint((n+1)*(5*n+5))+n+2
 
 add $0,1
 mov $2,$0

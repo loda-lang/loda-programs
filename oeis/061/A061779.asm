@@ -15,7 +15,7 @@ lpb $2
   sub $3,3
   div $3,2
   sub $3,4
-  cmp $3,4
+  equ $3,4
   sub $0,$3
   sub $2,$0
 lpe

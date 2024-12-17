@@ -3,7 +3,6 @@
 ; 1,1,7,7,15,15,31,31,39,39,55,55,71,71,111,111,119,119,151,151,175,175,177,177,231,231,239,239,255,255,303,303,311,311,313,313,319,319,329,329,335,335
 
 div $0,2
-mod $0,21
 mov $2,$0
 add $2,3
 pow $2,2
@@ -15,12 +14,12 @@ lpb $2
   seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   sub $3,$5
   add $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

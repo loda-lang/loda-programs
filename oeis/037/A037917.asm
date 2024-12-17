@@ -10,13 +10,12 @@ lpb $2
   seq $3,247193 ; a(n) = gcd(n!, Fibonacci(n)).
   sub $3,1
   seq $3,48146 ; Sum of non-unitary divisors of n.
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

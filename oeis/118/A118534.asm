@@ -3,6 +3,7 @@
 
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,62234 ; From Bertrand's postulate: a(n) = 2*prime(n) - prime(n+1).
   pow $0,3
   mod $0,4

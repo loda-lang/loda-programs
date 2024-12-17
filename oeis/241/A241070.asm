@@ -2,6 +2,9 @@
 ; Submitted by [AF] Kalianthys
 ; 2,3,0,3,0,4,0,4,0,7,0,8,0
 
+#offset 1
+
+sub $0,1
 mov $1,2
 mov $2,$0
 lpb $0
