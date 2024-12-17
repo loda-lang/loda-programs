@@ -25,7 +25,7 @@ set terminal pngcairo font "Helvetica,24" size 1024,768
 set output 'program_counts.png'
 set xdata time
 set timefmt "%Y-%m-%d %H:%M:%S"
-set format x "%m/%Y"
+set format x "%m/%y"
 set xrange ["2018-09-20 00:00:00":*]
 set xtics "2018-09-20 00:00:00",31104000
 set grid ytics lc rgb "#bbbbbb" lw 1 lt 0

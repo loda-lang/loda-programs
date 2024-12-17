@@ -1,8 +1,16 @@
 ; A337022: a(n) is the number of positive integers <= A070826(n) with at least one odd prime divisor <= prime(n).
-; Submitted by Fardringle
+; Submitted by jprange
 ; 0,1,7,57,675,9255,163095,3190965,75051075,2212976535,69624142665,2606749381005,107980344307605,4687299592683015,222157161929253705,11859617311615438365,704152383312290447535,43210523173814533171635,2910538720151462674819545,207666871186142520765307695
-; Formula: a(n) = truncate(A176095(A057588(n))/2)
 
-seq $0,57588 ; Kummer numbers: -1 + product of first n consecutive primes.
-seq $0,176095 ; a(n) = n - phi(2*n), where phi() is the Euler totient A000010().
-div $0,2
+mov $1,1
+lpb $0
+  mov $2,$0
+  seq $2,40 ; The prime numbers.
+  sub $2,1
+  mul $3,$2
+  add $3,$1
+  add $2,1
+  sub $0,1
+  mul $1,$2
+lpe
+mov $0,$3

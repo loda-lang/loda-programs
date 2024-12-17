@@ -10,6 +10,7 @@ lpb $1
   add $0,2
   dif $1,2
   mov $2,$0
+  add $2,1
   seq $2,50376 ; "Fermi-Dirac primes": numbers of the form p^(2^k) where p is prime and k >= 0.
   mul $3,$2
 lpe

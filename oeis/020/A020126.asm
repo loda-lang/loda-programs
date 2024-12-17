@@ -1,19 +1,18 @@
 ; A020126: Ceiling of GAMMA(n+1/6)/GAMMA(1/6).
-; Submitted by Geoffrey Yeung
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,1,2,6,29,178,1270,10366,95020,966033,10787363,131246246,1728075563,24481070470,371296235456,6002622473193,103045019123133,1871984514070245,35879703186346360,723574014257984911
 
 mov $1,1
 mov $3,1
 lpb $0
   mov $2,$0
-  mul $2,6
-  sub $2,5
+  mul $2,18
+  sub $2,15
   sub $0,1
-  mul $1,3
   mul $1,$2
   mul $3,18
 lpe
-mul $1,$2
+sub $3,5
 div $1,$3
 mov $0,$1
 add $0,1

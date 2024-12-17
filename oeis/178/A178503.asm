@@ -16,7 +16,6 @@ lpb $1
   lpe
   mov $4,$3
   gcd $4,$1
-  sub $4,1
   seq $4,186971 ; Maximal cardinality of a subset of {1, 2, ..., n} containing n and having pairwise coprime elements.
   sub $4,1
   lpb $1

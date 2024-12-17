@@ -4,4 +4,4 @@
 
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 mod $0,6
-cmp $0,1
+equ $0,1

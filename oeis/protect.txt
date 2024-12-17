@@ -321,6 +321,7 @@ A100429: Bisection of Kolakoski sequence A000002.
 A100484: The primes doubled.
 A100672: Second least-significant bit in the binary expansion of the n-th prime.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
+A101202: Multiples of 142857.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A101987: Product of nonzero digits of n-th prime.
 A102348: Decimated primes: every 10th prime has been omitted.
@@ -382,6 +383,7 @@ A132227: a(n) = 3*prime(n) - 5.
 A133037: Squares of members of the Padovan sequence A000931.
 A133042: Cubes of partition numbers.
 A133053: Squares of Motzkin numbers.
+A134960: a(n) = n*453060.
 A135282: Largest k such that 2^k appears in the trajectory of the Collatz 3x+1 sequence started at n.
 A135481: a(n) = 2^A007814(n+1) - 1.
 A135984: a(n) = 24(prime(n))+7.

@@ -11,8 +11,7 @@ lpb $0
   sub $5,$3
   pow $5,2
   sub $0,1
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mov $4,-2
   sub $4,$3
   bin $4,$0

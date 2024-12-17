@@ -11,6 +11,7 @@ lpb $0
   add $1,1
   sub $1,$0
   trn $1,$0
+  add $1,1
   seq $1,50376 ; "Fermi-Dirac primes": numbers of the form p^(2^k) where p is prime and k >= 0.
   mul $2,$1
   add $3,1

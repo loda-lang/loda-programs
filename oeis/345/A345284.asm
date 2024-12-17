@@ -30,7 +30,7 @@ lpb $4
     max $0,$7
   lpe
   mov $6,$9
-  cmp $6,1
+  equ $6,1
   mov $0,$6
   mul $0,$5
   mul $1,$0

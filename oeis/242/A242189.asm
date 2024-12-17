@@ -1,4 +1,4 @@
-; A242189: a(n) is the smallest prime number such that every number from 6 to 2n can be written as the sum of two primes less than or equal to a(n).
+; A242189: a(n) is the smallest prime number such that every even number from 6 to 2n can be written as the sum of two primes less than or equal to a(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 3,5,5,7,7,11,11,13,13,13,13,17,17,19,19,19,19,23,23,31,31,31,31,31,31,37,37,37,37,41,41,41,41,41,41,47,47,47,47,47,47,47,47,61,61,61,61,61,61,61,61,61,67,67,67,73,73,73,73,73,73,73,73,73,73,83,83,83,83,83,83,89,89,89,89,89,89,89,89,97
 ; Formula: a(n) = b(n+2), b(n) = max(b(n-1),A234345(n-1)), b(1) = 2, b(0) = 0

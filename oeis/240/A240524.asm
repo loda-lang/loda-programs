@@ -9,9 +9,10 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  add $0,2
   mov $2,$0
+  add $2,3
   seq $2,50376 ; "Fermi-Dirac primes": numbers of the form p^(2^k) where p is prime and k >= 0.
+  add $0,2
   mul $4,$2
 lpe
 mov $0,$4
