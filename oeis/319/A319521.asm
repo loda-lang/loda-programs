@@ -19,7 +19,6 @@ lpb $0
   lpb $3
     mov $6,$3
     mov $7,$3
-    sub $7,1
     seq $7,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
     lpb $3
       dif $3,$6

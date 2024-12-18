@@ -11,20 +11,19 @@ lpb $4
   mov $5,$3
   seq $5,109082 ; Depth of rooted tree having Matula-Goebel number n.
   sub $5,2
-  cmp $5,0
+  equ $5,0
   sub $0,$5
   add $3,1
   mov $6,$0
   max $6,0
-  cmp $6,$0
+  equ $6,$0
   mul $4,$6
   sub $4,1
 lpe
+neq $1,0
 mov $0,$3
 div $0,3
 add $0,1
-cmp $1,0
-cmp $1,0
 mul $0,$1
 add $0,2
 mov $2,2

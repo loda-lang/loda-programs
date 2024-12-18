@@ -7,6 +7,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,59556 ; Beatty sequence for 1 + 1/gamma.
   add $1,1
   add $2,1

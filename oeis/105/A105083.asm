@@ -1,21 +1,18 @@
 ; A105083: Trajectory of 1 under the morphism 1 -> 12, 2 -> 3, 3 -> 1.
-; Submitted by yoyo_rkn
+; Submitted by arkiss
 ; 1,2,3,1,1,2,1,2,3,1,2,3,1,1,2,3,1,1,2,1,2,3,1,1,2,1,2,3,1,2,3,1,1,2,1,2,3,1,2,3,1,1,2,3,1,1,2,1,2,3,1,2,3,1,1,2,3,1,1,2,1,2,3,1,1,2,1,2,3,1,2,3,1,1,2,3,1,1,2,1
 
-add $0,1
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $4,$1
-  seq $4,48727 ; a(n) = Xmult(n,7) or rule150(n,1).
-  mov $3,$1
-  mul $3,7
-  sub $3,$4
-  cmp $3,0
-  sub $0,$3
-  add $1,1
-  sub $2,$0
+lpb $0
+  sub $0,1
+  add $2,2
+  add $2,$1
+  bor $2,$1
+  sub $2,$1
+  mov $1,$2
+  div $1,4
+  mul $1,3
 lpe
-mov $0,$1
+mov $0,$2
+div $0,2
 mod $0,4
 add $0,1

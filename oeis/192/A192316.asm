@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $3,$4
+    add $3,1
     seq $3,38722 ; Take the sequence of natural numbers (A000027) and reverse successive subsequences of lengths 1,2,3,4,... .
     bin $3,$5
     add $5,1

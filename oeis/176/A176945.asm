@@ -2,6 +2,9 @@
 ; Submitted by treaclepumpkin
 ; 21,33,55,77,87,91,111,115,119,129,155,161,185,215,235,247,249,259,267,287,291,295,301,303,305,323,339,341,355,361,365,381,417,427,453,469,481,485,501,505,511,517,527,533,537,551,573,589,591
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,10
@@ -20,12 +23,12 @@ lpb $2
   add $3,$1
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

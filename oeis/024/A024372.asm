@@ -14,8 +14,8 @@ lpb $0
     mov $7,$4
     div $7,2
     seq $7,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$5
     dif $0,-1

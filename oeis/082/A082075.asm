@@ -8,6 +8,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,90658 ; Numbers n such that n-1 is a prime of the form 4k+3.
   sub $0,4
   div $0,4

@@ -13,7 +13,7 @@ lpb $0
   mov $3,$4
   mul $3,2
   gcd $3,$1
-  cmp $3,1
+  equ $3,1
   mul $3,$2
   add $3,2
   add $1,1

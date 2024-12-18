@@ -2,7 +2,10 @@
 ; Submitted by Simon Strandgaard (M1)
 ; 1,1,1,2,1,1,1,1,3,1,1,2,1,1,1,8,1,3,1,2,1,1,1,1,5,1,1,2,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,2,3,1,1,8,7,5,1,2,1,1,1,1,1,1,1,2,1,1,3,8,1,1,1,2,1,1,1,3,1,1,5,2,1,1,1,8
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   mov $2,$0
   seq $2,71974 ; Numerator of rational number i/j such that Sagher map sends i/j to n.

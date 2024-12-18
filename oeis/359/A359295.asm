@@ -1,10 +1,11 @@
 ; A359295: Decimal expansion of hydrogen ionization energy in the simplified Bohr model (eV).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,6,0,5,6,9,3,1,2
-; Formula: a(n) = -10*truncate((-10*truncate((c(n+2)+2)/10)+c(n+2)+12)/10)-10*truncate((c(n+2)+2)/10)+c(n+2)+12, b(n) = -d(n-2)-e(n-2)-2*b(n-1)+d(n-3)+e(n-3)+2, b(7) = 257, b(6) = -110, b(5) = 49, b(4) = -20, b(3) = 10, b(2) = -3, b(1) = 2, b(0) = 0, c(n) = d(n-1)+e(n-1), c(6) = -27, c(5) = 8, c(4) = -6, c(3) = 1, c(2) = -1, c(1) = 1, c(0) = 0, d(n) = -c(n-1)-2*b(n-1)+d(n-1), d(5) = 27, d(4) = -19, d(3) = 2, d(2) = -5, d(1) = 0, d(0) = 0, e(n) = truncate((-c(n-1)-2*b(n-1)+d(n-1)+e(n-1))/(-1)), e(5) = -54, e(4) = 27, e(3) = -8, e(2) = 6, e(1) = -1, e(0) = 1
+; Formula: a(n) = -10*truncate((-10*truncate((c(n)+2)/10)+c(n)+12)/10)-10*truncate((c(n)+2)/10)+c(n)+12, b(n) = -d(n-2)-e(n-2)-2*b(n-1)+d(n-3)+e(n-3)+2, b(7) = 257, b(6) = -110, b(5) = 49, b(4) = -20, b(3) = 10, b(2) = -3, b(1) = 2, b(0) = 0, c(n) = d(n-1)+e(n-1), c(6) = -27, c(5) = 8, c(4) = -6, c(3) = 1, c(2) = -1, c(1) = 1, c(0) = 0, d(n) = -c(n-1)-2*b(n-1)+d(n-1), d(5) = 27, d(4) = -19, d(3) = 2, d(2) = -5, d(1) = 0, d(0) = 0, e(n) = truncate((-c(n-1)-2*b(n-1)+d(n-1)+e(n-1))/(-1)), e(5) = -54, e(4) = 27, e(3) = -8, e(2) = 6, e(1) = -1, e(0) = 1
+
+#offset 2
 
 mov $5,1
-add $0,2
 lpb $0
   sub $0,1
   sub $1,1

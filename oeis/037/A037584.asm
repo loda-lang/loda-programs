@@ -1,7 +1,10 @@
 ; A037584: Base 5 digits are, in order, the first n terms of the periodic sequence with initial period 3,1.
 ; 3,16,83,416,2083,10416,52083,260416,1302083,6510416,32552083,162760416,813802083,4069010416,20345052083,101725260416,508626302083,2543131510416,12715657552083,63578287760416,317891438802083
-; Formula: a(n) = floor((10*5^n)/3)
+; Formula: a(n) = floor((10*5^(n-1))/3)
 
+#offset 1
+
+sub $0,1
 mov $1,5
 pow $1,$0
 mul $1,10

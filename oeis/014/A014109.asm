@@ -8,6 +8,7 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,216371 ; Odd primes with one coach: primes p such that A135303((p-1)/2) = 1.
 sub $0,3
 div $0,2
