@@ -1,4 +1,4 @@
-; A048868: Numbers for which reduced residue system contains more primes than nonprimes.
+; A048868: Numbers whose reduced residue system contains more primes than nonprimes.
 ; Submitted by [AF] Kalianthys
 ; 8,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,60,62,64,66,68,70,72,74,76,78,80,84,88,90,96,98,100,102,104,108,110,112,114,120,126,130,132,138,140,144,150,154,156,160,162,168,170,174,180,182,186,190,192,198,200,204,210,216,220,222,228,230,234,240,246,250
 
@@ -20,7 +20,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   add $4,1
   mov $3,$1
+  add $3,1
   seq $3,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
   mul $3,$4
   sub $3,1

@@ -7,12 +7,13 @@ lpb $0
   sub $0,1
   add $1,1
   mov $2,$1
-  cmp $2,0
+  equ $2,0
   add $2,$1
   seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $1,$2
 lpe
 mov $0,$1
 trn $0,2
+add $0,1
 seq $0,61373 ; "Natural" logarithm, defined inductively by a(1)=1, a(p) = 1 + a(p-1) if p is prime and a(n*m) = a(n) + a(m) if n, m>1.
 add $0,1

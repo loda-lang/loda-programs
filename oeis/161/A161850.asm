@@ -13,6 +13,7 @@ lpb $2
   sub $6,2
   seq $6,69859 ; (Largest prime factor of n) modulo (smallest prime factor of n).
   mov $3,$1
+  add $3,1
   seq $3,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
   add $6,$3
   mov $5,$6
@@ -20,12 +21,12 @@ lpb $2
   mov $3,$6
   sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

@@ -1,25 +1,20 @@
 ; A029151: Expansion of 1/((1-x^2)(1-x^3)(1-x^6)(1-x^8)).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,0,1,1,1,1,3,1,4,3,4,4,7,4,9,7,10,9,14,10,17,14,19,17,25,19,29,25,32,29,40,32,46,40,50,46,60,50,68,60,74,68,86,74,96,86,104,96,119,104,131,119,141,131,159,141,174
-; Formula: a(n) = b(n+1), b(n) = b(n-8)+truncate(((truncate((2*n-2)/3)+truncate((-2*n+59969538)/4)-14992383)^2+truncate((2*n-2)/3)+truncate((-2*n+59969538)/4)-14992383)/2), b(7) = 3, b(6) = 1, b(5) = 1, b(4) = 1, b(3) = 1, b(2) = 0, b(1) = 1, b(0) = 0
 
 add $0,1
 lpb $0
   mov $2,$0
-  sub $2,1
-  mul $2,2
-  mov $4,59969536
-  sub $4,$2
-  div $4,4
-  div $2,3
-  add $4,$2
-  mov $2,$4
-  sub $2,14992383
+  add $2,1
   mov $3,$2
-  pow $2,2
-  add $2,$3
-  div $2,2
-  trn $0,8
+  div $2,3
+  div $3,2
+  sub $3,$2
+  mov $2,$3
+  add $2,1
+  bin $2,2
+  sub $0,7
+  trn $0,1
   add $1,$2
 lpe
 mov $0,$1

@@ -1,6 +1,9 @@
 ; A157617: On an n X n board, a(n) is the maximal number of squares covered by a self-avoiding cycle made of alternated vertical and horizontal unit length steps.
 ; 4,4,12,16,28,32,52,64,80,96,124
 
+#offset 2
+
+sub $0,2
 mov $2,$0
 lpb $0
   mov $0,$2

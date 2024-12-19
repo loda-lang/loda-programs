@@ -13,14 +13,13 @@ lpb $2
     mov $7,$3
     lpb $7
       mov $10,$6
-      cmp $10,0
+      equ $10,0
       add $6,$10
       mov $8,$3
       mod $8,$6
-      cmp $8,0
-      cmp $8,0
+      neq $8,0
       mov $9,$6
-      cmp $9,1
+      equ $9,1
       add $6,2
       max $8,$9
       sub $7,$8
@@ -35,12 +34,12 @@ lpb $2
     lpe
   lpe
   mov $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

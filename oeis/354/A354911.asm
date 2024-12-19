@@ -1,8 +1,11 @@
 ; A354911: Number of factorizations of n into relatively prime prime-powers.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,0,0,0,1,0,0,0,1,0,2,0,1,1,0,0,2,0,2,1,1,0,3,0,1,0,2,0,1,0,0,1,1,1,4,0,1,1,3,0,1,0,2,2,1,0,5,0,2,1,2,0,3,1,3,1,1,0,2,0,1,2,0,1,1,0,2,1,1,0,6,0,1,2,2,1,1,0,5
-; Formula: a(n) = -A181819(A003557(n)-1)*(A069513(n)-1)
+; Formula: a(n) = -A181819(A003557(n-1)-1)*(A069513(n-1)-1)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 sub $1,1
@@ -12,4 +15,3 @@ sub $0,1
 mul $1,$0
 sub $2,$1
 mov $0,$2
-mul $2,2

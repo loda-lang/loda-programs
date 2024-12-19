@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   add $2,1
   mod $2,10
-  cmp $2,8
+  equ $2,8
   div $0,10
   add $3,$2
 lpe
