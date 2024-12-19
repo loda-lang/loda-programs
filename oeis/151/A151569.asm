@@ -4,7 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-cmp $2,$0
+equ $2,$0
 trn $0,1
 mov $5,$0
 mov $4,$0
@@ -15,6 +15,7 @@ lpb $4
   sub $4,1
   mov $0,$5
   sub $0,$4
+  add $0,1
   seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
   sub $0,1
   bin $0,$4

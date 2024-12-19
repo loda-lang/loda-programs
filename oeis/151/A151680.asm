@@ -10,6 +10,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,100661 ; Quet transform of A006519 (see A101387 for definition). Also, least k such that n+k has at most k ones in its binary representation.
   sub $0,1
   bin $0,$3
