@@ -136,6 +136,7 @@ A024852: Duplicate of A023856.
 A024859: Duplicate of A023870.
 A024883: Duplicate of A024328.
 A024911: Duplicate of A024906.
+A024935: Duplicate of A051034.
 A025067: Erroneous version of A024371.
 A025068: Erroneous version of A024368.
 A025080: Duplicate of A024468.
@@ -587,6 +588,9 @@ A070516: Duplicate of A070435.
 A070597: Duplicate of A070474.
 A070608: Duplicate of A070486.
 A070643: Duplicate of A070442.
+A070697: Duplicate of A070477.
+A070702: Duplicate of A070482.
+A070721: Duplicate of A070502.
 A070836: Duplicate of A063432.
 A070983: Erroneous version of A078350.
 A071039: Corrected version is duplicate of A118111.
@@ -1198,6 +1202,7 @@ A101469: Erroneous version of A058832.
 A101470: Erroneous version of A058831.
 A101829: Duplicate of A056252.
 A101832: Duplicate of A056253.
+A101875: Duplicate of A101871.
 A101935: Duplicate of A101294.
 A102043: Duplicate of A025017.
 A102081: Duplicate of A068397.
@@ -1212,6 +1217,7 @@ A104700: Duplicate of A039941.
 A104784: Erroneous version of A047841.
 A105699: Duplicate of A105698.
 A105724: Duplicate of A063448.
+A105734: Duplicate of A076839.
 A105807: Incorrect version of A209616
 A106168: Erroneous version of A106166.
 A106170: Duplicate of A072215.
@@ -1345,10 +1351,13 @@ A133633: Duplicate of A038509.
 A134203: Duplicate of A014777.
 A134302: Erroneous version of A000027.
 A134329: Erroneous version of A000040.
+A134390: Duplicate of A131416.
 A134445: Erroneous version of A001049.
+A134583: Duplicate of A191476.
 A134598: Duplicate of A080773.
 A134961: Erroneous version of A024507.
 A135043: Duplicate of A054966.
+A135098: Duplicate of A136488.
 A135279: Erroneous version of A005097.
 A135460: Erroneous version of A005251.
 A135584: Duplicate of A124013.
@@ -1442,12 +1451,14 @@ A153222: Duplicate of A023222.
 A153421: Primes of the form 2*n^2+11.
 A153437: Erroneous version of A153436.
 A153447: Duplicate of A076893.
+A154371: Duplicate of A119613.
 A154917: Duplicate of A001045.
 A156643: Erroneous duplicate of A071635.
 A157220: Erroneous version of A304182.
 A157222: Erroneous version of A304183.
 A157753: Duplicate of A020500.
 A158079: Duplicate of A090091.
+A158456: Duplicate of A191475.
 A158584: Erroneous version of A079866.
 A159577: Erroneous version of A116536.
 A159579: Erroneous version of A140763.
@@ -1496,6 +1507,7 @@ A176471: Duplicate of A136404,
 A177898: Duplicate of A168198.
 A178060: A poorly defined sequence, beyond repair.
 A178673: Duplicate of A028452.
+A179851: Duplicate of A182004.
 A180090: Sigma-powerful numbers: powerful numbers n such that sigma(n) is also powerful. An incomplete version of A337045.
 A181030: Duplicate of A006506.
 A181051: Incorrect duplicate of A073821.
@@ -1524,6 +1536,7 @@ A192788: Erroneous version of A292624.
 A193174: Duplicate of A126084.
 A193840: Erroneous version of A227590.
 A193841: Erroneous version of A227590.
+A195095: Duplicate of A011946.
 A195645: Erroneous version of A000136.
 A195741: Erroneous version of A006758.
 A196417: Erroneous version of A080937.
@@ -1576,6 +1589,7 @@ A233552: Erroneous version of A308177.
 A234594: Erroneous version of Brier numbers A076335.
 A234940: Erroneous version of A010896.
 A234942: Erroneous version of A013577.
+A235391: Duplicate of A129775.
 A236479: Duplicate of A116514.
 A238443: Duplicate of A174973.
 A238965: Duplicate of A036042.
@@ -1592,6 +1606,7 @@ A241712: Erroneous version of A128241.
 A241713: Erroneous version of A128242.
 A241714: Erroneous version of A128243.
 A241715: Erroneous version of column k=7 of A128042.
+A241958: Duplicate of A217800.
 A242644: Erroneous version of A242643.
 A243245: Duplicate of A128240.
 A244914: Duplicate of A227126.
@@ -1637,6 +1652,7 @@ A263840: Erroneous version of A004027.
 A266162: Erroneous version of A004143
 A266757: Erroneous version of A005263.
 A267011: Duplicate of A258206.
+A267651: Duplicate of A016725.
 A268521: Erroneous version of A268518.
 A269510: Duplicate of A093907.
 A271171: Erroneous version of A270798.
@@ -1675,6 +1691,7 @@ A300754: Erroneous version of A145392.
 A300755: Erroneous version of A145393.
 A306574: Incorrect version of A088527.
 A307289: Erroneous version of A006227.
+A307897: Duplicate of A008651.
 A317107: Numbers missing from A317105.
 A317439: Numbers missing from A317437.
 A317440: Numbers missing from A317438.
