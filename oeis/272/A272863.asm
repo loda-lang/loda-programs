@@ -7,11 +7,11 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$4
-  sub $0,1
   mov $2,$0
   seq $2,40 ; The prime numbers.
   seq $2,13632 ; Difference between n and the next prime greater than n.
   mov $4,2
+  sub $0,1
   bin $0,$3
   gcd $1,$2
 lpe

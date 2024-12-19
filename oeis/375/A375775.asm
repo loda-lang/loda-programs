@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,208645 ; Least x>0 such that x^2+x+n is not prime.
   sub $3,1

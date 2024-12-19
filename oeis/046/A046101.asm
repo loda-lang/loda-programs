@@ -17,7 +17,6 @@ lpb $2
   add $3,1
   pow $3,2
   seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
-  sub $3,1
   seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
   add $3,4
   bin $3,2

@@ -9,10 +9,11 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
+  add $3,3
   seq $3,40 ; The prime numbers.
   seq $3,13632 ; Difference between n and the next prime greater than n.
   mov $6,$1
+  add $6,2
   seq $6,40 ; The prime numbers.
   mov $5,$6
   sub $6,$3

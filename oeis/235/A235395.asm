@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,7095 ; Numbers in base 9.
   mov $5,$3

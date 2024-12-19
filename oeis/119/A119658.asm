@@ -9,8 +9,9 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,2
   seq $2,40 ; The prime numbers.
-  sub $2,1
+  add $2,1
   seq $2,40 ; The prime numbers.
   mul $1,$2
 lpe

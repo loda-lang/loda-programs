@@ -9,6 +9,7 @@ lpb $2
   mov $6,$1
   seq $6,141468 ; Zero together with the nonprime numbers A018252.
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   sub $3,1
   sub $3,$6

@@ -14,6 +14,7 @@ lpb $1
   sub $0,$1
   mov $4,$0
   seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  add $0,1
   seq $0,40 ; The prime numbers.
   mul $0,$4
   add $2,$0

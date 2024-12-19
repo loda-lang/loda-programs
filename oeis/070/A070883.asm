@@ -4,6 +4,7 @@
 
 mov $4,1
 mov $5,$0
+add $5,1
 seq $5,40 ; The prime numbers.
 add $0,1
 mov $2,$5

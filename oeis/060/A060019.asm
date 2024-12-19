@@ -3,7 +3,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,307136 ; a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.

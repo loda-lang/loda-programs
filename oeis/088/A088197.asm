@@ -10,7 +10,7 @@ lpb $3
   add $0,$3
   mov $6,$0
   seq $6,88198 ; Distance LQnR(p_n) (A088196) from p_n.
-  add $0,1
+  add $0,2
   seq $0,40 ; The prime numbers.
   sub $0,$6
   mov $2,$3

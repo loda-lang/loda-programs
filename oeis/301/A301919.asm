@@ -12,6 +12,7 @@ pow $4,2
 lpb $4
   sub $4,7
   mov $5,$3
+  add $5,1
   seq $5,40 ; The prime numbers.
   seq $5,70676 ; Smallest m in range 1..phi(n) such that 3^m == 1 mod n, or 0 if no such number exists.
   seq $5,296065 ; Partial sums of A296064.

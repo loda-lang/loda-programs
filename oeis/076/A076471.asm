@@ -6,6 +6,7 @@ add $0,1
 lpb $0
   add $0,$2
   mov $2,$1
+  add $2,1
   seq $2,40 ; The prime numbers.
   mov $3,$2
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
+  add $0,2
   seq $0,40 ; The prime numbers.
   sub $0,2
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

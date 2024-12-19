@@ -17,6 +17,7 @@ lpb $3
   sub $4,$5
   seq $4,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $4,1
+  add $0,1
   seq $0,40 ; The prime numbers.
   sub $0,$4
   add $1,$0

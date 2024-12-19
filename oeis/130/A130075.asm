@@ -1,9 +1,10 @@
 ; A130075: a(n) = (5^p - 3^p - 2^p)/p, where p = prime(n).
 ; Submitted by Simon Strandgaard
 ; 6,30,570,10830,4422630,93776970,44871187170,1003806502230,518297165370030,6422911941109705770,150213298561349961630,1966475018690546370358170,1109139879321302763891656370
-; Formula: a(n) = truncate(A135173(n)/A000040(n))
+; Formula: a(n) = truncate(A135173(n)/A000040(n+1))
 
 mov $1,$0
+add $0,1
 seq $0,40 ; The prime numbers.
 seq $1,135173 ; 5^p - 3^p - 2^p, where p = prime(n).
 div $1,$0

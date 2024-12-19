@@ -8,6 +8,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,3
   seq $2,256 ; Number of simple triangulations of the plane with n nodes.
   add $1,$2
 lpe

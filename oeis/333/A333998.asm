@@ -11,7 +11,9 @@ lpb $2
   mov $4,$3
   div $4,2
   sub $3,$4
+  add $3,2
   seq $3,40 ; The prime numbers.
+  add $4,2
   seq $4,40 ; The prime numbers.
   add $4,$3
   mov $3,$4

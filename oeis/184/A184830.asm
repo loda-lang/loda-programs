@@ -12,6 +12,7 @@ lpb $5
   mov $4,$0
   lpb $4
     sub $4,1
+    add $6,1
     seq $6,15 ; Smallest prime power >= n.
   lpe
   mov $2,$5

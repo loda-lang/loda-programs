@@ -8,6 +8,7 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
+  add $5,1
   seq $5,40 ; The prime numbers.
   mul $5,2
   sub $5,2

@@ -11,6 +11,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,469 ; 1 together with products of 2 or more distinct primes.
   sub $0,1
   seq $0,116568 ; Difference between n and the absolute value of the difference between number of nonprimes not exceeding n and number of primes not exceeding n.

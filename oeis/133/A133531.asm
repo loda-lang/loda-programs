@@ -9,11 +9,12 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,40 ; The prime numbers.
   pow $0,4
   sub $0,8
   mov $2,$3
-  cmp $2,$3
+  equ $2,$3
   mov $4,$0
   mul $4,8
   mul $2,$4

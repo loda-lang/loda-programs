@@ -1,5 +1,5 @@
 ; A089582: From Gilbreath's conjecture.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 2,0,2,2,2,2,2,2,0,0,0,0,0,0,2,2,0,2,2,0,0,2,2,2,0,0,0,2,2,0,2,0,0,0,2,2,0,0,0,0,0,0,2,2,0,2,2,0,2,0,0,2,0,2,2,2,2,0,0,0,0,0,0,2,0,0,2,2,0,0,2,2,0,2,0,0,0,0,0,2
 
 mov $2,$0
@@ -14,8 +14,7 @@ lpb $4
   add $0,1
   mov $5,$0
   seq $5,54265 ; Sum of composite numbers between successive primes.
-  seq $0,40 ; The prime numbers.
-  sub $5,$0
+  add $5,$1
   mul $1,$5
   add $3,$1
 lpe

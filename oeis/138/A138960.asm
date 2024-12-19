@@ -8,6 +8,7 @@ lpb $0
   seq $0,24922 ; a(n) = Sum_{k=1..n} floor((n/k) * floor((n/k) * floor(n/k))).
   seq $0,376714 ; Sum of squares of the decimal digits of the n-th prime.
 lpe
+add $0,1
 seq $0,422 ; Concatenation of numbers from n down to 1.
 seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
 sub $0,1

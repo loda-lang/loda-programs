@@ -6,6 +6,7 @@ add $0,6
 lpb $0
   add $1,$0
   mov $2,$0
+  add $2,1
   seq $2,40 ; The prime numbers.
   seq $2,13632 ; Difference between n and the next prime greater than n.
   mod $2,3

@@ -9,6 +9,7 @@ lpb $0
   add $5,1
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,40 ; The prime numbers.
   mul $5,$2
   mov $2,$5

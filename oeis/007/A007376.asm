@@ -21,7 +21,7 @@ lpb $0
   mod $2,10
   add $2,10
   mod $2,10
-  mov $3,0
+  mov $3,1
   seq $3,422 ; Concatenation of numbers from n down to 1.
   sub $3,$2
   mov $2,$3

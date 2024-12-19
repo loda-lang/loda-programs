@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,40 ; The prime numbers.
 pow $0,2
 div $0,2

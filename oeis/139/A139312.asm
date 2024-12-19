@@ -9,6 +9,7 @@ lpb $5
   div $5,2
   mov $0,$6
   add $0,$5
+  add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,13632 ; Difference between n and the next prime greater than n.
   mov $4,$5

@@ -1,6 +1,7 @@
 ; A000194: n appears 2n times, for n >= 1; also nearest integer to square root of n.
 ; Submitted by Science United
 ; 0,1,1,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9
+; Formula: a(n) = truncate((sqrtint(4*n)+1)/2)
 
 mul $0,4
 nrt $0,2

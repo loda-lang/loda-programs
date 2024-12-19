@@ -10,9 +10,10 @@ lpb $3
   add $0,$3
   trn $0,1
   mov $1,$0
-  add $0,1
+  add $0,3
   seq $0,40 ; The prime numbers.
   seq $0,13632 ; Difference between n and the next prime greater than n.
+  add $1,2
   seq $1,40 ; The prime numbers.
   sub $1,$0
   mov $2,$3

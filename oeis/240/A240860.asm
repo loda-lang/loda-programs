@@ -11,7 +11,9 @@ lpb $0
   mov $3,$2
   mul $2,2
   sub $2,$3
+  add $2,2
   seq $2,40 ; The prime numbers.
+  add $3,2
   seq $3,40 ; The prime numbers.
   mul $2,$3
   sub $2,$1

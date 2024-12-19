@@ -4,6 +4,7 @@
 
 mov $1,1
 mov $3,$0
+add $3,1
 seq $3,40 ; The prime numbers.
 mov $2,10
 lpb $2

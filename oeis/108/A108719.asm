@@ -8,5 +8,5 @@ add $0,1
 lpb $0
   mov $0,$1
 lpe
-add $0,2
+add $0,3
 seq $0,40 ; The prime numbers.

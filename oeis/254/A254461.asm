@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   mov $5,$1
   dif $5,2
+  add $5,1
   seq $5,40 ; The prime numbers.
   mov $3,$1
   add $3,1

@@ -7,4 +7,5 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,37 ; Numbers that are not squares (or, the nonsquares).

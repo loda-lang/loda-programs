@@ -11,6 +11,7 @@ lpb $3
   add $0,1
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,40 ; The prime numbers.
   sub $0,3
   add $1,3

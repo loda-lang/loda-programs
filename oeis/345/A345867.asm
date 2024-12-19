@@ -9,6 +9,7 @@ lpb $1
   sub $1,1
   mov $0,$2
   sub $0,$1
+  add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,23416 ; Number of 0's in binary expansion of n.
   add $3,$0

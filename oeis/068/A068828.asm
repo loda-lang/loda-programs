@@ -5,5 +5,6 @@
 equ $1,$0
 trn $0,1
 seq $0,258025 ; Numbers k such that prime(k+2) - 2*prime(k+1) + prime(k) > 0.
+add $0,1
 seq $0,40 ; The prime numbers.
 sub $0,$1

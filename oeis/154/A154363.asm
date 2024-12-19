@@ -2,6 +2,7 @@
 ; Submitted by Science United
 ; 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,67,73
 
+add $0,1
 seq $0,40 ; The prime numbers.
 sub $0,1
 mov $4,5

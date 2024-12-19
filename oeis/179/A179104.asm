@@ -6,6 +6,7 @@ mov $1,24
 mov $2,3
 lpb $2
   div $2,3
+  add $0,1
   seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
   sub $0,2
   add $0,$1

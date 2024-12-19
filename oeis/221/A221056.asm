@@ -8,6 +8,7 @@ add $1,1
 lpb $1
   sub $1,1
   sub $0,$1
+  add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,1650 ; k appears k times (k odd).
   div $0,2

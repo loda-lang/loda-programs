@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,120327 ; Smallest nonsquarefree number >= n.
   mov $2,$3

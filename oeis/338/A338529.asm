@@ -10,8 +10,9 @@ lpb $4
   add $0,$4
   add $0,$4
   max $0,0
+  add $0,1
   seq $0,40 ; The prime numbers.
-  seq $0,13636 ; n*nextprime(n).
+  seq $0,13636 ; a(n) = n*nextprime(n).
   pow $1,0
   mov $6,$1
   sub $6,7

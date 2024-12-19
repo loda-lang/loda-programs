@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,40 ; The prime numbers.
   seq $2,4086 ; Read n backwards (referred to as R(n) in many sequences).
   bin $0,$3

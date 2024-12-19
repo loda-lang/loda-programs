@@ -15,6 +15,7 @@ lpb $0
   add $3,$6
   sub $3,$5
   max $5,0
+  add $5,1
   seq $5,40 ; The prime numbers.
   seq $5,13632 ; Difference between n and the next prime greater than n.
   sub $3,1

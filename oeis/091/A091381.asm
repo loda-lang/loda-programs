@@ -13,6 +13,7 @@ lpb $3
   add $0,$3
   mov $6,$0
   seq $6,91382 ; Distance between the sequence of primes and the largest "mixed" quadratic residues modulo the primes (A091380).
+  add $0,1
   seq $0,40 ; The prime numbers.
   sub $0,$6
   mov $2,$3

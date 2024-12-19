@@ -9,7 +9,6 @@ dif $2,2
 sub $2,1
 seq $2,62570 ; a(n) = phi(2*n).
 mov $0,$2
-sub $0,1
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 seq $1,70803 ; Number of primes not exceeding sum of divisors of n.
 sub $1,$0

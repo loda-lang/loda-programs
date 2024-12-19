@@ -7,6 +7,7 @@ trn $0,1
 lpb $0
   mov $1,$4
   mov $3,$0
+  add $3,1
   seq $3,40 ; The prime numbers.
   sub $3,1
   mul $4,$3

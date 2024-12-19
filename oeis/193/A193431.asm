@@ -27,7 +27,7 @@ lpb $2
   mod $0,10
   add $0,10
   mod $0,10
-  mov $5,0
+  mov $5,1
   seq $5,422 ; Concatenation of numbers from n down to 1.
   sub $5,$0
   mov $0,$5

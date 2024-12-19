@@ -11,6 +11,7 @@ sub $2,1
 lpb $2
   mov $4,$2
   trn $4,1
+  add $4,1
   seq $4,40 ; The prime numbers.
   seq $4,13632 ; Difference between n and the next prime greater than n.
   trn $2,2

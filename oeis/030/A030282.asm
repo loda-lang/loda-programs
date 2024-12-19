@@ -14,6 +14,7 @@ lpb $4
   add $1,$4
   bin $1,$0
   div $0,2
+  add $0,1
   seq $0,40 ; The prime numbers.
   mul $1,$0
   add $3,$1

@@ -9,5 +9,6 @@ lpb $0
   add $1,$2
 lpe
 sub $1,$0
+add $1,1
 seq $1,40 ; The prime numbers.
 mov $0,$1

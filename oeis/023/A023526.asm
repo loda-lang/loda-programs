@@ -6,9 +6,10 @@ mov $1,$0
 dif $1,$0
 add $1,1
 trn $0,1
+add $0,1
 seq $0,40 ; The prime numbers.
 mul $1,$0
 mov $0,$1
 div $0,2
-seq $0,13636 ; n*nextprime(n).
-seq $0,51903 ; Maximal exponent in prime factorization of n.
+seq $0,13636 ; a(n) = n*nextprime(n).
+seq $0,51903 ; Maximum exponent in the prime factorization of n.

@@ -12,6 +12,7 @@ lpb $3
   sub $3,1
   mov $0,$4
   sub $0,$3
+  add $0,5
   seq $0,481 ; Stirling numbers of the second kind, S(n,5).
   mul $2,6
   mul $5,7

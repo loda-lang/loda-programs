@@ -13,6 +13,7 @@ lpb $2
   mul $3,-2
   mov $5,$1
   trn $5,1
+  add $5,1
   seq $5,40 ; The prime numbers.
   sub $5,$3
   mov $3,$5

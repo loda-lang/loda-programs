@@ -10,7 +10,7 @@ lpb $3
   sub $3,1
   mov $4,$2
   max $4,1
-  add $4,1
+  add $4,2
   seq $4,40 ; The prime numbers.
   mov $6,$4
   div $4,2

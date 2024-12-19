@@ -9,6 +9,7 @@ lpb $3
   add $3,$2
   mov $0,$1
   trn $0,1
+  add $0,4
   seq $0,498 ; Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3 of A173018)
   mov $2,$0
 lpe

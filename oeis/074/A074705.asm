@@ -10,6 +10,7 @@ lpb $3
   add $0,$3
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,40 ; The prime numbers.
   pow $0,2
   seq $0,230980 ; Number of primes <= n, starting at n=0.

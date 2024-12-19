@@ -12,7 +12,7 @@ mov $4,2
 lpb $4
   sub $4,1
   mov $0,$3
-  add $0,1
+  add $0,2
   seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
   add $2,$0
   mul $2,10

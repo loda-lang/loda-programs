@@ -9,6 +9,7 @@ lpb $2
   mov $0,$5
   add $0,$2
   trn $0,1
+  add $0,1
   seq $0,40 ; The prime numbers.
   mov $6,$0
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

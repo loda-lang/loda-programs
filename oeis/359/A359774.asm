@@ -1,28 +1,29 @@
 ; A359774: Parity of A359773, where A359773 is the Dirichlet inverse of A356163.
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0
 
-mov $1,$0
-add $1,1
 mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
 lpb $2
-  sub $2,1
-  mov $0,$1
-  gcd $0,$2
+  div $2,2
+  mov $0,$3
+  sub $0,$2
   sub $0,1
   mov $4,$0
-  mov $5,$0
-  seq $5,359411 ; a(n) is the number of divisors of n that are both infinitary and exponential.
-  seq $0,345222 ; Number of divisors of n with a prime number of divisors.
-  mov $6,$5
-  add $6,$0
-  mov $0,$6
-  sub $0,1
-  gcd $4,$0
-  mov $0,$4
-  add $0,1
-  add $3,$0
+  seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $5,0
+  lpb $0
+    add $5,1
+    sub $0,$5
+  lpe
+  seq $0,358777 ; Dirichlet inverse of A353557, the characteristic function of odd numbers with an even number of prime factors (counted with multiplicity).
+  mul $0,$4
+  add $1,$0
 lpe
-mov $0,$3
-add $0,1
+mov $0,$1
+add $0,2
 mod $0,2

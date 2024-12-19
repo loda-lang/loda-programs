@@ -9,8 +9,9 @@ lpb $3
   mov $0,$4
   add $0,$3
   mov $6,$0
+  add $6,2
   seq $6,40 ; The prime numbers.
-  add $0,2
+  add $0,4
   seq $0,40 ; The prime numbers.
   mul $0,$6
   mov $2,$3

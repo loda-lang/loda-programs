@@ -9,7 +9,6 @@ lpb $1
   sub $1,1
   mov $0,$2
   add $0,$1
-  sub $0,1
   seq $0,40 ; The prime numbers.
   pow $0,2
   add $0,86

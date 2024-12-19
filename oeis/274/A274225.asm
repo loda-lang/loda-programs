@@ -12,6 +12,7 @@ lpb $3
   mov $4,0
   trn $4,$2
   max $2,$4
+  add $2,1
   seq $2,40 ; The prime numbers.
   seq $2,13632 ; Difference between n and the next prime greater than n.
   add $4,$2

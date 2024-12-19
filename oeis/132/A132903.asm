@@ -6,6 +6,7 @@ mov $1,$0
 add $1,1
 seq $1,45533 ; Concatenate the n-th and (n+1)st prime.
 mov $2,$1
+add $0,1
 seq $0,40 ; The prime numbers.
 lpb $1
   div $1,10

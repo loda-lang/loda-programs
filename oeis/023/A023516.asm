@@ -6,10 +6,11 @@ mov $1,$0
 dif $1,$0
 add $1,1
 trn $0,1
+add $0,1
 seq $0,40 ; The prime numbers.
 mul $1,$0
 mov $0,$1
 div $0,2
-seq $0,13636 ; n*nextprime(n).
+seq $0,13636 ; a(n) = n*nextprime(n).
 sub $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

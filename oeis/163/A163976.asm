@@ -8,6 +8,7 @@ lpb $2
   mov $1,$0
   seq $1,141468 ; Zero together with the nonprime numbers A018252.
   mod $1,2
+  add $0,1
   seq $0,40 ; The prime numbers.
   mov $4,$0
   add $4,$1

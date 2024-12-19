@@ -1,10 +1,11 @@
 ; A079085: Number of distinct prime factors of (prime(n)+1)*(prime(n+1)+1)/4.
 ; Submitted by jmorken
 ; 1,2,2,2,3,2,3,3,3,3,2,3,4,3,2,3,4,3,3,3,3,4,4,3,3,4,3,4,4,3,3,4,5,4,4,3,3,4,4,4,5,4,3,3,4,3,3,4,5,4,4,4,4,4,4,4,4,3,3,4,4,4,5,4,3,4,3,4,5,4,4,4,4,5,4,4,4,3,4,5
-; Formula: a(n) = A001221(truncate((A183867(A013636(A000040(n)))-11)/4)+3)
+; Formula: a(n) = A001221(truncate((A183867(A013636(A000040(n+1)))-11)/4)+3)
 
+add $0,1
 seq $0,40 ; The prime numbers.
-seq $0,13636 ; n*nextprime(n).
+seq $0,13636 ; a(n) = n*nextprime(n).
 seq $0,183867 ; a(n) = n + floor(2*sqrt(n)); complement of A184676.
 sub $0,11
 div $0,4

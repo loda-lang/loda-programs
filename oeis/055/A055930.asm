@@ -5,8 +5,9 @@ mov $1,$0
 mov $2,$0
 trn $2,1
 seq $2,67076 ; Numbers k such that 2*k + 3 is a prime.
+add $2,1
 seq $2,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 add $0,$2
 sub $0,$1
-cmp $1,1
+equ $1,1
 add $0,$1

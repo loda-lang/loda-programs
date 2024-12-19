@@ -11,6 +11,7 @@ lpb $2
   sub $0,$2
   mul $1,2
   mov $4,$0
+  add $4,1
   seq $4,40 ; The prime numbers.
   seq $4,13632 ; Difference between n and the next prime greater than n.
   mov $0,$4

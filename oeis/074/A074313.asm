@@ -1,8 +1,9 @@
 ; A074313: a(n) = the maximal length of a sequence of primes {s_1 = prime(n), s_2 = f(s1), s_3 = f(s_2), ....} formed by repeated application of f(m) = Floor(m/2) on prime(n).
 ; Submitted by booc0mtaco
 ; 1,1,2,2,3,1,1,1,4,1,1,1,1,1,5,1,2,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,3,1,1,1,2,1,1,1,1
-; Formula: a(n) = A292936(truncate(A000040(n)/2)-1)+1
+; Formula: a(n) = A292936(truncate(A000040(n+1)/2)-1)+1
 
+add $0,1
 seq $0,40 ; The prime numbers.
 div $0,2
 sub $0,1

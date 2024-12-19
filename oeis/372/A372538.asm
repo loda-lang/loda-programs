@@ -6,12 +6,13 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,40 ; The prime numbers.
   seq $3,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
   mov $5,0
   sub $5,$3
+  add $1,1
   mov $3,$5
   equ $3,1
   sub $0,$3

@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   sub $2,$4
   mov $3,$1
-  add $3,2
+  add $3,3
   seq $3,40 ; The prime numbers.
   mov $5,$1
   seq $5,6094 ; Products of 2 successive primes.

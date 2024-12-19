@@ -2,7 +2,10 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,0,1,3,9,26,73,200,561,1568
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   equ $7,1

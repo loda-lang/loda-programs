@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,190 ; Number of solutions to x^4 == 0 (mod n).
   mov $5,$1
   add $5,1

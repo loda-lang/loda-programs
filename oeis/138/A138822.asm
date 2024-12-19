@@ -6,6 +6,7 @@ mov $1,$0
 add $1,2
 seq $1,324969 ; Number of unlabeled rooted identity trees with n vertices whose non-leaf terminal subtrees are all different.
 mov $2,$1
+add $0,1
 seq $0,40 ; The prime numbers.
 lpb $1
   div $1,10

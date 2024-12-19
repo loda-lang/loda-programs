@@ -10,9 +10,11 @@ lpb $5
   div $6,2
   mov $0,$1
   sub $0,$6
+  add $0,2
   seq $0,40 ; The prime numbers.
   sub $0,1
   sub $4,$3
+  add $6,2
   seq $6,40 ; The prime numbers.
   mod $0,$6
   add $1,2

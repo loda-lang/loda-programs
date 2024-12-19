@@ -10,6 +10,7 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,2
+  add $0,1
   seq $0,40 ; The prime numbers.
   pow $0,2
   add $0,86

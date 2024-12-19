@@ -11,6 +11,7 @@ lpb $1
   sub $2,$1
   gcd $0,$2
   max $2,0
+  add $2,1
   seq $2,40 ; The prime numbers.
   sub $2,1
   seq $2,338363 ; a(n) = n + pi(n) - pi(floor(n/2)), where pi = A000720.

@@ -5,6 +5,7 @@
 mov $1,1
 lpb $1
   sub $1,1
+  add $0,1
   seq $0,40 ; The prime numbers.
   mod $0,10
   mov $2,5

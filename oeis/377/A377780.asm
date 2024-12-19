@@ -13,6 +13,7 @@ lpb $2
   add $0,$2
   mov $5,$0
   max $5,0
+  add $5,1
   seq $5,15 ; Smallest prime power >= n.
   sub $5,2
   mov $0,$5

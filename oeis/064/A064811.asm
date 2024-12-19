@@ -7,6 +7,7 @@ mov $2,$0
 add $2,1
 lpb $2
   mov $0,$3
+  add $0,1
   seq $0,40 ; The prime numbers.
   bin $0,$2
   add $1,$0

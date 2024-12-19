@@ -23,7 +23,7 @@ lpb $2
   mod $3,10
   add $3,10
   mod $3,10
-  mov $6,0
+  mov $6,1
   seq $6,422 ; Concatenation of numbers from n down to 1.
   sub $6,$3
   mov $3,$6

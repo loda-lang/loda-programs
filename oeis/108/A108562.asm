@@ -9,6 +9,7 @@ lpb $2
   mov $6,$1
   mul $6,2
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   mov $7,$3
   seq $7,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
@@ -23,7 +24,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

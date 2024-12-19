@@ -5,6 +5,7 @@
 mov $2,$0
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
   sub $0,$3
   add $1,1

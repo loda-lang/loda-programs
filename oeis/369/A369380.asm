@@ -11,6 +11,7 @@ lpb $2
   sub $0,1
   div $0,3
   pow $0,2
+  add $0,1
   seq $0,40 ; The prime numbers.
   mul $0,2
   sub $0,2

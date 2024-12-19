@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,594 ; Ramanujan's tau function (or Ramanujan numbers, or tau numbers).
   mul $1,$0
   mul $3,-1

@@ -16,6 +16,7 @@ lpb $2
   mov $1,$4
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,40 ; The prime numbers.
   mul $3,$1
 lpe

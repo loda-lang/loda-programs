@@ -11,6 +11,7 @@ lpb $3
   mov $6,$0
   add $6,2
   mul $6,$0
+  add $6,1
   seq $6,40 ; The prime numbers.
   mov $2,$3
   mul $2,$6

@@ -8,10 +8,12 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,2
   seq $2,40 ; The prime numbers.
   add $3,1
   mov $4,$3
   add $4,$0
+  add $4,2
   seq $4,40 ; The prime numbers.
   pow $4,$2
   add $1,$4

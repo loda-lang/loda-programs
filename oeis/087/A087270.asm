@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   add $6,1
   mov $3,$1
+  add $3,1
   seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $5,$3
   gcd $5,$6

@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,40 ; The prime numbers.
   mov $4,$2
   seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

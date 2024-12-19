@@ -24,7 +24,7 @@ lpb $1
       mov $0,0
       seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
       seq $0,277989 ; a(n) = 424*2^n + 37.
-      sub $0,6806
+      sub $0,6805
       seq $0,40 ; The prime numbers.
       seq $0,76080 ; a(n) = A076079(n)/n.
     lpe

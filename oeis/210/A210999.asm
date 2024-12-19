@@ -7,6 +7,7 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  add $3,1
   seq $3,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mod $3,2
   sub $0,$3
@@ -14,7 +15,7 @@ lpb $2
   add $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

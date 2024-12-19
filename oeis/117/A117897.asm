@@ -8,6 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,40 ; The prime numbers.
   mov $2,$0
   sub $0,2

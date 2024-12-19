@@ -11,6 +11,7 @@ lpb $4
   sub $0,$4
   mov $1,$0
   bin $1,$0
+  add $0,1
   seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
   mul $1,$0
   mul $3,16

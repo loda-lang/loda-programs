@@ -13,6 +13,7 @@ lpb $0
     add $9,$5
     mov $10,3
     sub $4,1
+    add $7,1
     seq $7,366 ; Genocchi numbers of second kind (A005439) divided by 2^(n-1).
     mul $7,$$9
     add $5,1

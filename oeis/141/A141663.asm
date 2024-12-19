@@ -7,6 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 pow $0,2
+add $1,1
 seq $1,40 ; The prime numbers.
 sub $1,$0
 gcd $2,$1

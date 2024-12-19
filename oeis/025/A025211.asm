@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,5
   seq $4,481 ; Stirling numbers of the second kind, S(n,5).
   mov $2,$3
   mul $2,$4

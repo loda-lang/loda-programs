@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,40 ; The prime numbers.
   pow $0,4
   mov $1,$2

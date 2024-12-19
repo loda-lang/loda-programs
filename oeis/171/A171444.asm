@@ -11,6 +11,7 @@ lpb $3
   add $0,1
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
   add $1,$0

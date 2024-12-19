@@ -7,5 +7,6 @@ lpb $0
   sub $0,2
   mul $0,3
 lpe
+add $0,1
 seq $0,40 ; The prime numbers.
 mul $0,2

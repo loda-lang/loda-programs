@@ -8,5 +8,6 @@ lpb $0
   add $1,94
 lpe
 sub $1,$0
+add $1,1
 seq $1,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
 mov $0,$1

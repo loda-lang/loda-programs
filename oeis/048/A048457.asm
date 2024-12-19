@@ -14,8 +14,9 @@ lpb $4
   bin $1,$0
   mul $0,2
   mov $5,$0
-  add $5,2
+  add $5,4
   seq $5,40 ; The prime numbers.
+  add $0,2
   seq $0,40 ; The prime numbers.
   add $0,$5
   mul $1,$0

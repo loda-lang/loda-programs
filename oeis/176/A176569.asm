@@ -6,6 +6,7 @@ add $0,1
 mov $1,$0
 mul $1,2
 mod $1,4
+add $0,1
 seq $0,40 ; The prime numbers.
 sub $0,$1
 lpb $1

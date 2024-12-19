@@ -17,6 +17,7 @@ lpb $3
     mov $0,$4
     add $0,$6
     trn $0,1
+    add $0,1
     seq $0,40 ; The prime numbers.
     sub $0,1
     seq $0,338363 ; a(n) = n + pi(n) - pi(floor(n/2)), where pi = A000720.

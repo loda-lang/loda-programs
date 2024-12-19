@@ -7,6 +7,7 @@ add $1,3
 add $0,2
 lpb $0
   sub $0,1
+  add $3,1
   seq $3,426 ; Coefficients of ménage hit polynomials.
   add $2,$3
   mov $3,$0

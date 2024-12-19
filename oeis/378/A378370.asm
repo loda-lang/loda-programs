@@ -7,6 +7,7 @@ mov $2,2
 lpb $2
   sub $2,1
   mov $5,$0
+  add $5,1
   seq $5,15 ; Smallest prime power >= n.
   sub $5,2
   mov $1,$2

@@ -7,6 +7,7 @@ lpb $0
   add $0,$3
   trn $0,3
   trn $2,1
+  add $2,1
   seq $2,40 ; The prime numbers.
   mul $2,6
   add $1,$2

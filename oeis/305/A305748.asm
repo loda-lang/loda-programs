@@ -7,6 +7,7 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$4
+  add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,13632 ; Difference between n and the next prime greater than n.
   mov $2,$3

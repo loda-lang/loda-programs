@@ -9,4 +9,5 @@ lpb $0
   mov $0,0
 lpe
 mov $0,$1
+add $0,1
 seq $0,40 ; The prime numbers.

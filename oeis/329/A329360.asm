@@ -10,6 +10,7 @@ lpb $2
   mov $4,$1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
   mul $1,10
   add $1,$0

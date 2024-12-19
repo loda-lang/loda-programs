@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,8
     seq $7,581 ; a(n) = binomial coefficient C(n,8).
     mov $9,10
     add $9,$5

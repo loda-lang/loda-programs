@@ -9,6 +9,7 @@ lpb $4
   add $0,$4
   trn $0,1
   seq $0,67076 ; Numbers k such that 2*k + 3 is a prime.
+  add $0,1
   seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $3,$0
   mov $5,$4

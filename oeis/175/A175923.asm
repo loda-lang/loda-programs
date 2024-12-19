@@ -1,8 +1,9 @@
 ; A175923: Index of the first occurrence of prime(n)-1 consecutive zeros in the sequence of Bell numbers reduced modulo the n-th prime prime(n).
 ; Submitted by Simon Strandgaard
 ; 2,8,587,114382,25678050356,23136292864687,48471109094902544777,103805969587115219182432,905970719001665604796396056038,88427967009378444685165002293032443131447,550006721989970936444120719825244586583663666,285053798960048163188843790902665241600662702868793966427
-; Formula: a(n) = A051846(A000040(n)-2)+1
+; Formula: a(n) = A051846(A000040(n+1)-2)+1
 
+add $0,1
 seq $0,40 ; The prime numbers.
 sub $0,2
 seq $0,51846 ; Digits 1..n in strict descending order n..1 interpreted in base n+1.

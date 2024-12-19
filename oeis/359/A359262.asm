@@ -1,8 +1,9 @@
 ; A359262: a(n) is the largest number m such that prime(n)^m is in A359260.
 ; Submitted by Science United
 ; 0,1,1,3,1,3,1,3,1,1,5,3,1,3,1,1,1,5,3,1,3,3,1,1,3,1,3,1,3,1,3,1,1,3,1,5,3,3,1,1,1,5,1,3,1,3,9,3,1,3,1,1,5,1,1,1,1,5,3,1,3,1,3,1,3,1,5,3,1,3,1,1,3,3,3,1,1,3,1,3
-; Formula: a(n) = A071222(max(2*truncate((A000040(n)+1)/2)-3,0))-1
+; Formula: a(n) = A071222(max(2*truncate((A000040(n+1)+1)/2)-3,0))-1
 
+add $0,1
 seq $0,40 ; The prime numbers.
 add $0,1
 div $0,2

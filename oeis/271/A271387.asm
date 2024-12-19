@@ -8,6 +8,7 @@ lpb $0
   sub $0,1
   mov $3,$2
   mov $2,$4
+  add $2,1
   seq $2,40 ; The prime numbers.
   mul $2,$3
   dif $2,$4

@@ -1,18 +1,20 @@
 ; A219606: Prime gaps and primes interleaved.
 ; Submitted by BarnardsStern
 ; 1,2,2,3,2,5,4,7,2,11,4,13,2,17,4,19,6,23,2,29,6,31,4,37,2,41,4,43,6,47,6,53,2,59,6,61,4,67,2,71,6,73,4,79,6,83,8,89,4,97,2,101,4,103,2,107,4,109,14,113,4,127,6,131,2,137,10,139,2,149,6,151,6,157,4,163,6,167,6,173
-; Formula: a(n) = A000040(floor(n/2))*truncate((A000040(-floor(n/2)+n)-1)/A000040(floor(n/2)))-A000040(-floor(n/2)+n)+A000040(floor(n/2)+1)
+; Formula: a(n) = A000040(floor(n/2)+3)*truncate((A000040(-floor(n/2)+n+3)-1)/A000040(floor(n/2)+3))-A000040(-floor(n/2)+n+3)+A000040(floor(n/2)+4)
 
 mov $2,$0
 div $2,2
 mov $1,$0
 sub $1,$2
+add $1,3
 seq $1,40 ; The prime numbers.
 sub $1,1
+add $2,3
 seq $2,40 ; The prime numbers.
 mod $1,$2
 add $1,1
 div $0,2
-add $0,1
+add $0,4
 seq $0,40 ; The prime numbers.
 sub $0,$1

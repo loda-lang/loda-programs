@@ -5,6 +5,7 @@
 mov $1,$0
 seq $1,97944 ; Number of digits in n-th prime.
 mov $2,$1
+add $0,1
 seq $0,40 ; The prime numbers.
 mov $1,$0
 lpb $1

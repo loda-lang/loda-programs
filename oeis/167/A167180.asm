@@ -1,11 +1,13 @@
 ; A167180: a(n) = pi(n) plus the number of nonprimes less than prime(n).
 ; Submitted by Jon Maiga
 ; 1,2,4,5,9,10,14,15,18,23,25,30,34,35,38,43,49,50,56,59,60,65,69,74,81,84,85,88,90,93,107,110,115,116,125,126,132,137,140,145,151,152,162,163,166,167,179,190,193,194,197,202,204,213,218,223,228,229,235,238,240,249,262,265,266,269,283,288,297,298,302,307,315,320,325,328,333,340,344,351
-; Formula: a(n) = -n+A000040(n)+A000720(n)-1
+; Formula: a(n) = -n+A000040(n+1)+A000720(n+1)-1
 
 mov $2,$0
+add $2,1
 seq $2,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 mov $1,$0
+add $1,1
 seq $1,40 ; The prime numbers.
 add $1,$2
 sub $1,$0

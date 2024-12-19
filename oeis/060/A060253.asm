@@ -16,6 +16,7 @@ lpb $2
   seq $5,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $5,1
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   sub $3,$5
   gcd $3,$3

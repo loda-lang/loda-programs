@@ -7,6 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 sub $0,$1
+add $1,1
 seq $1,40 ; The prime numbers.
 add $1,$0
 mov $0,$1

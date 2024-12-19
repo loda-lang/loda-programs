@@ -5,8 +5,9 @@
 add $0,1
 mov $4,1
 mov $5,$0
+add $5,2
 seq $5,40 ; The prime numbers.
-sub $0,1
+add $0,1
 seq $0,40 ; The prime numbers.
 mov $2,$0
 seq $2,70939 ; Length of binary representation of n.

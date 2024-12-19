@@ -10,6 +10,7 @@ mov $4,1
 mov $2,$0
 lpb $2
   mov $3,$2
+  add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
   mov $5,0

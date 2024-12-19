@@ -2,7 +2,8 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,3,11,103,343,4095,14571,190651,9586983,35791471
 
-cmp $1,$0
+equ $1,$0
+add $0,1
 seq $0,40 ; The prime numbers.
 div $0,2
 seq $0,300668 ; a(n) = A000016(2*n).

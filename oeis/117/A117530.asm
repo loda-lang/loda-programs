@@ -6,6 +6,7 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+add $1,1
 seq $1,40 ; The prime numbers.
 add $1,$0
 pow $0,2

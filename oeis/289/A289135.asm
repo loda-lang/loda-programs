@@ -9,6 +9,7 @@ pow $3,2
 lpb $3
   sub $3,1
   mov $4,$2
+  add $4,1
   seq $4,40 ; The prime numbers.
   pow $4,2
   add $4,2
@@ -16,12 +17,12 @@ lpb $3
   sub $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $4,1
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
 lpe
 mov $0,$6

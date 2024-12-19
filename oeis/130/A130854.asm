@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$1
+  add $2,1
   seq $2,796 ; Decimal expansion of Pi (or digits of Pi).
   sub $0,$2
   max $0,$1

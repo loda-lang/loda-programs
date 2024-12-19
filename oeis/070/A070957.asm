@@ -7,17 +7,17 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
   sub $3,1
   seq $3,175253 ; a(n) = characteristic function of numbers k such that A000203(m) = k has no solution for any m, where A000203(m) = sum of divisors of m.
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

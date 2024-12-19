@@ -8,17 +8,18 @@ pow $2,2
 lpb $2
   seq $5,57963 ; Triangle T(n,k) of number of minimal 2-covers of a labeled n-set that cover k points of that set uniquely (k=2,..,n).
   mov $3,$1
+  add $3,1
   seq $3,40 ; The prime numbers.
   sub $3,1
   add $3,$5
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   add $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

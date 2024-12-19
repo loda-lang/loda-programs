@@ -11,6 +11,7 @@ lpb $5
   trn $0,1
   mod $0,74
   mov $1,$0
+  add $1,1
   seq $1,40 ; The prime numbers.
   add $1,1
   bin $1,2

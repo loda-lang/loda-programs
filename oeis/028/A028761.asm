@@ -7,4 +7,5 @@ lpb $1
   sub $1,27
   add $0,1
 lpe
+add $0,1
 seq $0,37 ; Numbers that are not squares (or, the nonsquares).

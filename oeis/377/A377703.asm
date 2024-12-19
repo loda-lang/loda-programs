@@ -8,7 +8,9 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,40 ; The prime numbers.
+  add $0,1
   seq $0,15 ; Smallest prime power >= n.
   mov $2,$3
   mul $2,$0

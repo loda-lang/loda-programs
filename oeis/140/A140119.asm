@@ -13,6 +13,7 @@ lpb $4
   add $1,$4
   add $1,1
   bin $1,$0
+  add $0,1
   seq $0,40 ; The prime numbers.
   mul $0,7
   mul $1,$0

@@ -8,6 +8,7 @@ lpb $0
   dif $4,$2
   add $4,1
   trn $2,1
+  add $2,1
   seq $2,40 ; The prime numbers.
   mul $4,$2
   mov $2,$4

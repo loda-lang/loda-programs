@@ -10,6 +10,7 @@ lpb $0
   add $3,1
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,40 ; The prime numbers.
   mul $3,$2
   mov $2,$3

@@ -2,7 +2,7 @@
 ; Submitted by Christian Krause
 ; 1,1,-1,1,-1,1,-1,0,1,0,-1,1,-1,0,0,1,0,-1,1,0,-1,0,1,-1,1,-1,1,-1,1,-1,0,1,-1,1,0,0,-1,0,0,1,-1,1,-1,1,0,0,-1,1,-1,0,1,-1,0,0,0,1,0,-1,1,-1,1,-1,1,-1,1,0,-1,1,-1,0,1,0,0,-1,0,1,-1,1,-1,1
 
-add $0,1
+add $0,2
 seq $0,40 ; The prime numbers.
 seq $0,13632 ; Difference between n and the next prime greater than n.
 div $0,2

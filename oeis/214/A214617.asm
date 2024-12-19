@@ -4,6 +4,7 @@
 
 mov $1,1
 mov $2,2
+add $0,1
 seq $0,40 ; The prime numbers.
 add $0,1
 lpb $0

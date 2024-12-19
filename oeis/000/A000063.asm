@@ -14,7 +14,7 @@ add $6,1
 div $1,$6
 mov $2,$0
 mod $2,4
-cmp $2,0
+equ $2,0
 mov $3,$1
 mov $1,$0
 div $1,4
@@ -27,7 +27,7 @@ div $1,$7
 mul $1,$2
 mov $2,$0
 mod $2,6
-cmp $2,0
+equ $2,0
 mov $4,$1
 mov $1,$0
 div $1,6

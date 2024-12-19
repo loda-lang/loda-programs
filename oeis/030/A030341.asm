@@ -14,7 +14,7 @@ lpb $0
   mul $3,10
   div $3,$1
   add $3,9
-  mov $4,0
+  mov $4,1
   seq $4,422 ; Concatenation of numbers from n down to 1.
   sub $4,$3
   mov $3,$4

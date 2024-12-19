@@ -7,9 +7,10 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,2
   seq $5,40 ; The prime numbers.
   mov $3,$1
-  add $3,2
+  add $3,4
   seq $3,40 ; The prime numbers.
   mul $3,$5
   mod $3,3
@@ -18,7 +19,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

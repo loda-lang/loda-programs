@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $5,$1
+  add $5,1
   seq $5,40 ; The prime numbers.
   mov $6,$1
   add $6,$1

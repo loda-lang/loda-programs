@@ -15,6 +15,7 @@ lpb $5
   mov $2,$0
   add $2,$5
   bin $2,$0
+  add $0,1
   seq $0,40 ; The prime numbers.
   mul $0,7
   mul $2,$0

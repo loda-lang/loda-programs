@@ -6,6 +6,7 @@ mov $1,1
 mov $3,2
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,40 ; The prime numbers.
   sub $2,1
   mul $3,$2

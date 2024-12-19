@@ -7,17 +7,17 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,40 ; The prime numbers.
   mov $6,$4
   sub $4,1
   seq $4,124897 ; a(n) = mu(n^2 + 1), mu = A008683.
-  cmp $4,0
-  cmp $4,0
+  neq $4,0
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   trn $3,1
 lpe

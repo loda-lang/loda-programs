@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,40 ; The prime numbers.
   seq $4,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   mul $4,12

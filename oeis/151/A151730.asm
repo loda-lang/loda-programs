@@ -6,6 +6,7 @@ add $0,1
 mov $2,$0
 pow $2,8
 lpb $2
+  add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,176540 ; 1 together with the semiprimes.
   mul $3,16

@@ -7,8 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,40 ; The prime numbers.
-  seq $6,13636 ; n*nextprime(n).
+  seq $6,13636 ; a(n) = n*nextprime(n).
   seq $6,183867 ; a(n) = n + floor(2*sqrt(n)); complement of A184676.
   sub $6,11
   div $6,4
