@@ -10,7 +10,6 @@ mov $1,1
 lpb $2
   add $3,1
   mov $5,$3
-  sub $3,1
   seq $3,5361 ; Product of exponents of prime factorization of n.
   gcd $3,$5
   add $3,$4

@@ -12,7 +12,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,5451 ; a(n)=1 if n is a prime number, otherwise a(n)=n.
   mul $1,$0
   max $1,$0

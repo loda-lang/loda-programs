@@ -4,6 +4,7 @@
 
 mov $2,$0
 mov $5,1
+add $0,1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 add $2,1
 mul $2,2

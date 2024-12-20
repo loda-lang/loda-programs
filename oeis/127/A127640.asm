@@ -4,6 +4,7 @@
 
 mov $1,$0
 seq $1,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+add $0,1
 seq $0,5145 ; n copies of n-th prime.
 mov $2,$0
 mod $2,$1

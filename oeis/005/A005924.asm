@@ -2,7 +2,8 @@
 ; Submitted by William Michael Kanar
 ; 1,7,49,415,4321,53887,783889,13031935
 
-add $0,1
+#offset 1
+
 mov $4,$0
 add $0,1
 lpb $0

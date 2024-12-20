@@ -5,6 +5,5 @@
 add $0,1
 seq $0,88822 ; a(n) is the sum of largest prime factors of numbers from 1 to n.
 lpb $0
-  sub $0,1
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 lpe

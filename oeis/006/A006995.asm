@@ -14,15 +14,14 @@ lpb $3
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe
+neq $1,0
 mov $0,$2
 div $0,2
 mul $0,4
 add $0,2
-cmp $1,0
-cmp $1,0
 mul $0,$1
 div $0,2

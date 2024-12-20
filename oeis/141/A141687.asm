@@ -1,6 +1,7 @@
 ; A141687: Triangle read by rows: t(n,m) = 1 - ((prime(n) - prime(m))/2 mod 2).
 ; Submitted by PDW
 ; 1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,0,1,0,0,1,1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,1,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,0,1,0,1,0,0,1,1,0,0,1,0,1,1,1,0
+; Formula: a(n) = -2*truncate(truncate((A005145(truncate((sqrtint(8*n+1)+1)/2)+n+2)+A037126(truncate((sqrtint(8*n+1)+1)/2)+n+1))/2)/2)+truncate((A005145(truncate((sqrtint(8*n+1)+1)/2)+n+2)+A037126(truncate((sqrtint(8*n+1)+1)/2)+n+1))/2)
 
 mov $1,$0
 mul $0,8
@@ -13,6 +14,7 @@ mov $0,$1
 add $0,1
 mov $2,$0
 seq $2,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+add $0,1
 seq $0,5145 ; n copies of n-th prime.
 add $0,$2
 div $0,2

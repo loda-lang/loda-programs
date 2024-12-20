@@ -10,5 +10,6 @@ lpe
 mov $2,$0
 mul $2,2
 seq $2,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
+add $2,1
 seq $2,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
 mov $0,$2

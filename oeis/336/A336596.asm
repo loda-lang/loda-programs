@@ -10,10 +10,9 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $3,1
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,2
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

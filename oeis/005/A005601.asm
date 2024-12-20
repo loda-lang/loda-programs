@@ -1,6 +1,6 @@
 ; A005601: Decimal expansion of proton-to-electron mass ratio.
 ; Submitted by vanos0512
-; 1,8,3,6,1,5,2,6,7,3,4,3
+; 1,8,3,6,1,5,2,6,7,3
 
 mov $2,1
 lpb $0

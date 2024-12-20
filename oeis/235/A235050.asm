@@ -8,6 +8,7 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $5,$1
+  add $5,1
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $5,1
   seq $5,8809 ; Expansion of (1+x^9)/((1-x^2)^2*(1-x^9)).
@@ -18,7 +19,7 @@ lpb $2
   mov $3,$1
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
 lpe

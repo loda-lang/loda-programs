@@ -2,7 +2,9 @@
 ; Submitted by WTBroughton
 ; 5,8,11,15,19,23,27,32,37,43,49,54,59,64
 
-add $0,3
+#offset 2
+
+add $0,1
 lpb $0
   sub $0,3
   sub $3,1

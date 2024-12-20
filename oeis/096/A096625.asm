@@ -8,6 +8,7 @@ lpb $0
   seq $4,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mov $2,$0
   mul $2,$4
+  add $2,1
   seq $2,5361 ; Product of exponents of prime factorization of n.
   mul $3,$2
   add $3,$1

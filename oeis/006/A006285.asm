@@ -9,12 +9,12 @@ pow $3,2
 lpb $3
   mov $4,$2
   seq $4,350959 ; Number of ways to write 2*n+1 as 2^i (i >= 0) plus a prime.
-  cmp $4,0
+  equ $4,0
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

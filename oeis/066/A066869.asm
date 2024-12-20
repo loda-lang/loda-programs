@@ -6,6 +6,7 @@ mov $2,2
 mov $1,$0
 lpb $1
   mov $3,$1
+  add $3,1
   seq $3,5384 ; Sophie Germain primes p: 2p+1 is also prime.
   sub $1,1
   add $2,$3

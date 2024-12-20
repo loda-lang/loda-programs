@@ -12,18 +12,17 @@ lpb $2
   seq $3,125903 ; a(n) = product of the first n primes which are coprime to n.
   gcd $5,$3
   mov $3,$5
-  sub $3,1
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,1
   add $3,$4
-  cmp $3,1
+  equ $3,1
   gcd $3,2
   sub $0,$3
   add $0,1
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

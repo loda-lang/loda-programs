@@ -3,6 +3,7 @@
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1
 
 mov $4,$0
+add $4,1
 seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 mov $3,$0
 seq $3,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
@@ -12,7 +13,7 @@ gcd $2,$3
 add $3,1
 div $2,$3
 mov $1,$2
-cmp $1,0
+equ $1,0
 mov $3,$2
 add $3,$1
 lpb $3

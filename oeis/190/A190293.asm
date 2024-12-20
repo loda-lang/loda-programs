@@ -9,6 +9,7 @@ add $2,10
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,5361 ; Product of exponents of prime factorization of n.
   add $3,4
   mov $4,$1
@@ -17,7 +18,7 @@ lpb $2
   sub $4,$3
   mov $3,$4
   sub $3,17
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,2
   sub $2,$0

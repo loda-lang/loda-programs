@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,6881 ; Squarefree semiprimes: Numbers that are the product of two distinct primes.
   mul $0,16
   add $1,$2

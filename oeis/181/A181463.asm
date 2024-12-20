@@ -14,15 +14,14 @@ lpb $2
   mul $3,$5
   sub $3,$5
   div $3,2
-  sub $3,1
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,54
-  cmp $3,7
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

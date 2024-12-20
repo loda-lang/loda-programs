@@ -8,6 +8,7 @@ pow $2,4
 lpb $2
   sub $2,17
   mov $3,$1
+  add $3,1
   seq $3,5064 ; Sum of cubes of primes dividing n.
   mod $3,9
   mov $5,$3

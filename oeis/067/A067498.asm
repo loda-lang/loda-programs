@@ -6,6 +6,7 @@ mov $3,1
 mov $2,$0
 lpb $2
   mov $4,$2
+  add $4,1
   seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $2,$4
   sub $4,1

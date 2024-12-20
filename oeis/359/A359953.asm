@@ -12,6 +12,7 @@ lpb $0
     add $2,$6
     max $2,0
     mov $9,$2
+    add $9,1
     seq $9,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
     mov $2,$9
     mov $7,$9
@@ -25,7 +26,7 @@ lpb $0
     mov $8,0
     sub $4,$7
   lpe
-  cmp $2,0
+  equ $2,0
   gcd $2,$4
   mov $3,$4
   div $3,$2

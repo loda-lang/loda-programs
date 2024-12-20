@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,5090 ; Number of primes == 2 mod 3 dividing n.
   equ $3,0
   sub $0,$3

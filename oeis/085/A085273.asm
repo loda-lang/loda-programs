@@ -7,6 +7,7 @@ seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 sub $0,2
 mov $1,$0
 lpb $0
+  add $0,1
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $1,$0
   mov $0,0

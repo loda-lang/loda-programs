@@ -14,6 +14,7 @@ lpb $2
   add $3,$5
   mov $6,$3
   seq $3,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
+  add $3,1
   seq $3,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
   gcd $3,$6
   sub $3,1

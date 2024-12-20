@@ -5,6 +5,7 @@
 lpb $0
   dif $0,2
 lpe
+add $0,1
 seq $0,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
 sub $0,1
 seq $0,64547 ; Sum of binary digits (or count of 1-bits) in the exponents of the prime factorization of n.

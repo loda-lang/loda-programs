@@ -9,6 +9,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,2
+  add $2,1
   seq $2,6928 ; a(n) = length of (n+1)st run, with initial terms 1, 2.
   sub $2,$1
 lpe

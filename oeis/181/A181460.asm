@@ -17,7 +17,6 @@ lpb $2
   mul $3,$5
   sub $3,$5
   div $3,2
-  sub $3,1
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $3,40
   equ $3,7

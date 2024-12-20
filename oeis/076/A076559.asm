@@ -5,6 +5,5 @@
 add $0,1
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 lpb $0
-  sub $0,1
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 lpe

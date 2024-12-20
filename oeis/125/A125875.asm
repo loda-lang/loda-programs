@@ -10,16 +10,15 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $3,1
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $3,2
   sub $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -2,8 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,4,6,9,12,20,24,30,35,44,50
 
+#offset 2
+
 mov $2,1
-add $0,2
 lpb $0
   mov $3,$0
   lpb $3

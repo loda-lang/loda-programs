@@ -7,8 +7,9 @@ lpb $0
   sub $0,1
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,6881 ; Squarefree semiprimes: Numbers that are the product of two distinct primes.
-  cmp $0,1
+  equ $0,1
   sub $1,4
   add $1,$2
 lpe

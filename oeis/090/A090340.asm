@@ -12,6 +12,7 @@ lpb $3
   mov $6,$0
   lpb $6
     mov $8,$6
+    add $8,1
     seq $8,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
     div $6,$8
     add $7,$8

@@ -9,6 +9,7 @@ add $2,3
 lpb $2
   mov $0,$3
   add $0,$1
+  add $0,1
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   mov $2,$0
   bin $4,0

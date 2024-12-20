@@ -3,7 +3,6 @@
 
 add $0,1
 lpb $0
-  sub $0,1
   seq $0,5361 ; Product of exponents of prime factorization of n.
   add $1,3
 lpe

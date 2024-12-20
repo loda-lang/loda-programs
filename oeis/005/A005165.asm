@@ -5,7 +5,7 @@
 lpb $0
   sub $2,$1
   add $1,$2
-  cmp $1,$2
+  equ $1,$2
   add $2,$1
   mul $2,$0
   sub $0,1

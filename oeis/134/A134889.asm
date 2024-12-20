@@ -6,13 +6,14 @@ mov $1,$0
 mov $4,1
 lpb $0
   mov $4,$0
+  add $4,1
   seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $0,$4
 lpe
 add $1,1
 div $1,$4
 mov $2,$1
-cmp $2,1
+equ $2,1
 mov $3,1
 sub $3,$2
 mul $1,$3

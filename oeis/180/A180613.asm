@@ -11,6 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
+  add $0,1
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   sub $0,4
   div $0,8

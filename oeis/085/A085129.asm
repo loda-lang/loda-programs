@@ -1,4 +1,4 @@
-; A085129: Multiples of 6 which are members of A002473. Or multiples of 6 with the largest prime divisor < 10.
+; A085129: Multiples of 6 which are 7-smooth.
 ; Submitted by Skillz
 ; 6,12,18,24,30,36,42,48,54,60,72,84,90,96,108,120,126,144,150,162,168,180,192,210,216,240,252,270,288,294,300,324,336,360,378,384,420,432,450,480,486,504,540,576,588,600,630,648,672,720,750,756,768,810,840
 
@@ -7,6 +7,7 @@ add $4,3
 pow $4,2
 lpb $4
   mov $5,$3
+  add $5,1
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   equ $5,7
   sub $0,$5

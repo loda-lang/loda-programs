@@ -15,9 +15,10 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,5361 ; Product of exponents of prime factorization of n.
     sub $7,1
-    cmp $7,0
+    equ $7,0
     mov $9,10
     add $9,$5
     min $10,$0

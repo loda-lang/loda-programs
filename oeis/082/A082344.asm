@@ -7,6 +7,7 @@ add $3,1
 mov $1,$0
 lpb $1
   mov $5,$1
+  add $5,1
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $1,$5
   add $4,$5

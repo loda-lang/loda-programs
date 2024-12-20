@@ -13,6 +13,7 @@ lpb $0
   mov $5,$1
   lpb $5
     mov $6,$5
+    add $6,1
     seq $6,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
     mov $5,0
   lpe

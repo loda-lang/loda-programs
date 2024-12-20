@@ -8,17 +8,18 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,6881 ; Squarefree semiprimes: Numbers that are the product of two distinct primes.
   mov $5,$3
   mul $5,10
   mul $3,2
   seq $3,89214 ; Let u(1)=0, u(2)=1; for k>2, u(k)= A010060(k)*u(k-1) + u(k-2) (mod 2); then a(n)=4n-b(n) where sequence (b(k)) gives values such that u(b(k))=0.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

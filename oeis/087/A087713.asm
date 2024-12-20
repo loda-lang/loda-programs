@@ -9,5 +9,4 @@ sub $0,1
 add $1,$0
 dif $1,2
 mov $0,$1
-sub $0,1
 seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

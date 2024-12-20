@@ -12,10 +12,10 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
+    equ $4,0
     add $2,1
     sub $3,$4
   lpe
-  cmp $0,1
+  equ $0,1
 lpe
 mov $0,$2

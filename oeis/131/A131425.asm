@@ -15,6 +15,7 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
+  add $0,1
   seq $0,5145 ; n copies of n-th prime.
   sub $0,3
   add $0,$4

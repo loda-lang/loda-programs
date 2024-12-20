@@ -7,6 +7,7 @@ mov $2,16
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,5361 ; Product of exponents of prime factorization of n.
   sub $3,1
   add $1,1

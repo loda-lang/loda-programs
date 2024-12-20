@@ -9,7 +9,7 @@ lpb $2
   mov $0,$4
   add $0,$2
   trn $0,1
-  add $0,1
+  add $0,2
   seq $0,5384 ; Sophie Germain primes p: 2p+1 is also prime.
   sub $0,2
   seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.

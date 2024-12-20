@@ -1,9 +1,12 @@
 ; A006250: Number of hypertournaments on n elements under signed bijection.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,2,2,6,17,69
-; Formula: a(n) = c(n)+1, b(n) = n*(-c(n-1)+b(n-1)+1), b(5) = 420, b(4) = 84, b(3) = 21, b(2) = 6, b(1) = 2, b(0) = 1, c(n) = -c(n-1)+b(n-3), c(5) = 5, c(4) = 1, c(3) = 1, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = c(n-1)+1, b(n) = n*(-c(n-1)+b(n-1)+1), b(5) = 420, b(4) = 84, b(3) = 21, b(2) = 6, b(1) = 2, b(0) = 1, c(n) = -c(n-1)+b(n-3), c(5) = 5, c(4) = 1, c(3) = 1, c(2) = 0, c(1) = 0, c(0) = 0
+
+#offset 1
 
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   add $2,$3

@@ -12,7 +12,7 @@ lpb $0
     lpb $2
       trn $2,2
       mov $4,$3
-      cmp $4,0
+      equ $4,0
       add $3,$4
       sub $0,$3
       sub $1,$3

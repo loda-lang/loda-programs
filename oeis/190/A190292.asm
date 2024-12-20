@@ -9,6 +9,7 @@ add $2,10
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,5361 ; Product of exponents of prime factorization of n.
   bin $3,5
   mov $4,$1

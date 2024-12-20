@@ -8,6 +8,7 @@ pow $2,2
 add $0,1
 mov $1,1
 lpb $2
+  add $3,1
   seq $3,5361 ; Product of exponents of prime factorization of n.
   bin $3,2
   mov $5,1
@@ -22,7 +23,7 @@ lpb $2
   mov $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

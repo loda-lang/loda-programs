@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,4
   seq $2,6113 ; Gaussian binomial coefficient [ n,4 ] for q = 5.
   sub $0,1
   add $1,$2
