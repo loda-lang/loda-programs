@@ -11,7 +11,7 @@ lpb $2
   add $0,1
   seq $0,6005 ; The odd prime numbers together with 1.
   max $0,2
-  sub $0,2
+  sub $0,1
   seq $0,7693 ; Primes p such that 6*p + 1 is also prime.
 lpe
 min $1,1

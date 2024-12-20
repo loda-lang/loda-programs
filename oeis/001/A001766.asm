@@ -4,9 +4,7 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
 dif $1,2
-add $0,1
 mul $0,$1

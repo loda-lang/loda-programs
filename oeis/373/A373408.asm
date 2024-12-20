@@ -10,6 +10,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,7674 ; Numbers m such that m and m+1 are squarefree.
   mul $0,$1
 lpe

@@ -9,6 +9,7 @@ lpe
 mov $2,$0
 mov $0,$1
 mov $1,$2
+add $1,1
 seq $1,7442 ; Inverse binomial transform of primes.
 bin $0,$2
 mul $0,$1

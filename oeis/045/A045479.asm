@@ -4,8 +4,9 @@
 
 mov $1,$0
 add $1,1
-cmp $1,2
+equ $1,2
 gcd $1,3
+sub $0,1
 seq $0,7191 ; McKay-Thompson series of class 2B for the Monster group with a(0) = -24.
 mul $0,$1
 div $0,3

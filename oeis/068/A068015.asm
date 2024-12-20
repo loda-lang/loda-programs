@@ -10,6 +10,7 @@ lpb $3
   mul $1,$2
   sub $1,1
   mov $2,$0
+  add $2,1
   seq $2,7510 ; Single (or isolated or non-twin) primes: Primes p such that neither p-2 nor p+2 is prime.
   add $0,2
 lpe

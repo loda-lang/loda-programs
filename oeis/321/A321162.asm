@@ -6,6 +6,7 @@ mov $2,$0
 mov $3,2
 lpb $3
   mov $1,$2
+  add $1,1
   seq $1,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
   add $2,2
   sub $3,$1

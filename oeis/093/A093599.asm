@@ -17,6 +17,7 @@ lpb $1
     mov $0,$2
     add $0,$4
     trn $0,1
+    add $0,1
     seq $0,7304 ; Sphenic numbers: products of 3 distinct primes.
     mul $0,5
     mov $5,$4

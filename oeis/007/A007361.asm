@@ -2,7 +2,8 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,4,2,4,8,64,64,256
 
-add $0,1
+#offset 1
+
 mov $1,2
 pow $1,$0
 mov $4,1

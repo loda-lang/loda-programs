@@ -18,6 +18,7 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
+  add $1,1
   seq $1,7442 ; Inverse binomial transform of primes.
   mul $3,$1
   add $5,$3

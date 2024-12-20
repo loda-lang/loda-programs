@@ -8,6 +8,7 @@ lpb $0
   sub $0,1
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
   add $2,$3
 lpe

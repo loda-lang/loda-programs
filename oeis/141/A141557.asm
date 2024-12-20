@@ -12,7 +12,7 @@ lpb $2
   mov $7,$3
   seq $7,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mov $6,$1
-  add $6,1
+  add $6,2
   seq $6,7821 ; Primes p such that pi(p) is not prime.
   sub $6,$7
   mov $3,$6

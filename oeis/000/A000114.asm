@@ -4,6 +4,5 @@
 
 #offset 2
 
-sub $0,1
 seq $0,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
 dif $0,2

@@ -19,6 +19,7 @@ lpb $5
   mov $6,$0
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $7,$6
+  add $0,1
   seq $0,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
   gcd $6,$0
   div $7,$6

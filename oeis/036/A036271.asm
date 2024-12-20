@@ -11,7 +11,7 @@ lpb $2
   mov $3,$1
   add $3,$2
   bin $3,$1
-  add $1,10
+  add $1,11
   seq $1,7442 ; Inverse binomial transform of primes.
   mul $3,$1
   add $4,$3

@@ -25,6 +25,7 @@ lpb $3
       seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
       mul $0,3
       mov $1,$2
+      add $1,1
       seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
       sub $1,$0
       mov $0,$1

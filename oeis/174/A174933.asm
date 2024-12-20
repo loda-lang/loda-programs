@@ -14,7 +14,6 @@ lpb $4
   bin $1,$0
   pow $0,$1
   mul $1,$0
-  sub $0,1
   seq $0,7955 ; Product of divisors of n.
   mul $1,$0
   add $3,$1

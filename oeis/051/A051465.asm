@@ -6,6 +6,7 @@ mov $1,$0
 add $0,1
 add $1,$0
 dif $0,2
+add $1,1
 seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
 mul $1,$0
 mov $0,$1

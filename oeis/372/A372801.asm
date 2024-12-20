@@ -14,6 +14,7 @@ lpb $2
   seq $0,40 ; The prime numbers.
   div $0,2
   mul $0,2
+  add $0,1
   seq $0,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
   min $1,1
 lpe

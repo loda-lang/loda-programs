@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,7444 ; Moebius transform of primes.
   mov $0,0
 lpe

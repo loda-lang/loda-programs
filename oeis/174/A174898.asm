@@ -11,10 +11,11 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $1,$0
+  add $0,1
   seq $0,7955 ; Product of divisors of n.
   sub $0,1
   sub $0,$1
-  cmp $0,$2
+  equ $0,$2
   add $0,$3
   sub $0,1
   gcd $0,3

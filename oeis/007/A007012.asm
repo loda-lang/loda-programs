@@ -13,8 +13,7 @@ lpb $4
   add $1,$4
   bin $1,$0
   gcd $1,$2
-  cmp $1,$2
-  cmp $1,0
+  neq $1,$2
   add $3,$1
 lpe
 mov $0,$3

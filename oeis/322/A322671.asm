@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  sub $0,1
   seq $0,7955 ; Product of divisors of n.
   div $0,$5
   mul $1,$0

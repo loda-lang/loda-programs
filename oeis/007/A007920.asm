@@ -5,7 +5,7 @@
 mov $1,$0
 trn $0,1
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $2,$0
 mov $4,$2
 mov $5,$2

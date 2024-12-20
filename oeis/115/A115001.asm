@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  add $2,3
+  add $2,4
   seq $2,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
   dif $2,2
   sub $0,1

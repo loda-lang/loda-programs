@@ -8,6 +8,7 @@ lpb $0
   max $2,0
   mov $3,$2
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,1
   seq $3,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
   mul $3,3
   sub $3,$4

@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,7039 ; Number of cyclic binary n-bit strings with no alternating substring of length > 2.
   sub $0,1
   add $1,$2

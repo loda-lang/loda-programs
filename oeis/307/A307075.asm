@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
     mov $9,10
     add $9,$5

@@ -7,10 +7,9 @@ mov $4,2
 lpb $4
   sub $4,1
   add $0,$4
-  sub $0,1
   mov $5,$0
   seq $5,7510 ; Single (or isolated or non-twin) primes: Primes p such that neither p-2 nor p+2 is prime.
-  add $0,2
+  add $0,1
   mov $3,$4
   mul $3,$5
   add $2,$3

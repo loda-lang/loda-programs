@@ -10,6 +10,7 @@ lpb $0
   mov $0,$1
 lpe
 mov $1,$0
+add $0,1
 seq $0,7735 ; Period of base 4 representation of 1/n.
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 div $1,$0
