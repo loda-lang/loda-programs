@@ -7,7 +7,7 @@ add $0,1
 seq $0,97932 ; Positive integers n such that 2n-19 is prime.
 add $0,1
 mov $3,$2
-cmp $3,0
+equ $3,0
 mov $4,$2
 add $4,$3
 div $2,$4

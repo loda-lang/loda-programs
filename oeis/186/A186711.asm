@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
   mul $2,6
   bin $0,$3

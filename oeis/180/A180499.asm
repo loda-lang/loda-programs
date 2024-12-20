@@ -7,6 +7,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   seq $4,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
   equ $4,1

@@ -8,17 +8,18 @@ pow $2,2
 lpb $2
   sub $2,3
   mov $3,$1
+  add $3,1
   seq $3,3071 ; Sorting numbers: maximal number of comparisons for sorting n elements by list merging.
   mov $5,$3
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

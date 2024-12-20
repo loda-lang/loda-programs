@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,3627 ; Primes of the form 3n-1.
   max $1,3
   seq $1,230980 ; Number of primes <= n, starting at n=0.

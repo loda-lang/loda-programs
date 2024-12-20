@@ -8,6 +8,7 @@ add $2,2
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   sub $3,1
   seq $3,332881 ; If n = Product (p_j^k_j) then a(n) = denominator of Product (1 + 1/p_j).
@@ -27,7 +28,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

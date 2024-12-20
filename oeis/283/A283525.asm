@@ -9,6 +9,7 @@ mov $2,1
 sub $0,1
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,4001 ; Hofstadter-Conway $10000 sequence: a(n) = a(a(n-1)) + a(n-a(n-1)) with a(1) = a(2) = 1.
   sub $0,1
   add $2,$3

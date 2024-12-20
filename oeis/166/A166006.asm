@@ -9,6 +9,7 @@ mov $1,$0
 mov $2,1
 lpb $0
   mov $3,$0
+  add $3,2
   seq $3,4601 ; Expansion of Pi in base 2 (or, binary expansion of Pi).
   sub $0,1
   add $2,$3

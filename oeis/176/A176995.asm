@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,3052 ; Self numbers or Colombian numbers (numbers that are not of the form m + sum of digits of m for any m).
   sub $3,1
   add $0,1

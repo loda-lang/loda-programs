@@ -2,7 +2,10 @@
 ; Submitted by Odd-Rod
 ; 1,11,11,22,22,22,22,22,23,24,24,24,24,24
 
+#offset 1
+
 mov $5,3
+sub $0,1
 lpb $0
   sub $0,1
   sub $0,$6

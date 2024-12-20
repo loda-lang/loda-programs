@@ -15,6 +15,7 @@ lpb $4
   mov $7,$0
   add $7,1
   mov $8,$0
+  add $0,1
   seq $0,3968 ; Möbius transform of A003959.
   sub $0,1
   sub $0,$8

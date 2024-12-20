@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
   mov $5,$3
   add $5,1

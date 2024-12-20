@@ -2,8 +2,11 @@
 ; Submitted by Roadranner
 ; 1,15,15,28,28,28,28,28,28,28,29,30,30,30,30,30,30
 
+#offset 1
+
 mov $5,3
 mov $7,-2
+sub $0,1
 lpb $0
   sub $0,1
   sub $0,$6

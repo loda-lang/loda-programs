@@ -6,13 +6,18 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $5,4
+  pow $5,$1
+  mul $5,2
   mov $3,$1
-  seq $3,4539 ; Expansion of sqrt(2) in base 2.
+  mov $3,$5
+  nrt $3,2
+  mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

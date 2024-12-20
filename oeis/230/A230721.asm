@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,3
   mov $3,$1
+  add $3,1
   seq $3,3071 ; Sorting numbers: maximal number of comparisons for sorting n elements by list merging.
   add $3,1
   mov $5,$3

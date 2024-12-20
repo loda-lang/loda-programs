@@ -7,8 +7,14 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,293332 ; Least integer k such that k/2^n > sqrt(5).
-  sub $3,1
+  mul $3,2
+  mov $5,2
+  pow $5,$3
+  mov $3,$5
+  mul $5,2
+  mul $3,7
+  sub $3,$5
+  nrt $3,2
   add $3,$4
   gcd $3,2
   sub $0,$3
@@ -16,7 +22,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

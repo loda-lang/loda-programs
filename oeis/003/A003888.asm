@@ -2,8 +2,11 @@
 ; Submitted by pelpolaris
 ; 1,13,13,24,24,24,24,24,24,25,26,26,26,26,26
 
+#offset 1
+
 mov $1,2
 mov $5,3
+sub $0,1
 lpb $0
   sub $0,1
   sub $0,$6

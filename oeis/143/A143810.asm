@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,3238 ; Number of rooted trees with n vertices in which vertices at the same level have the same degree.
   mul $0,0
 lpe

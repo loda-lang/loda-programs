@@ -8,6 +8,7 @@ mov $3,$0
 add $3,2
 lpb $3
   mov $5,$0
+  add $5,1
   seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   mov $3,$0
   div $3,$5

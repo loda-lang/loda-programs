@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1,6,10,10,14,14,15,21,35
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   sub $1,$0

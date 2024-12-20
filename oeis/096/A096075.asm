@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   mov $3,$2
   mov $2,$0
+  add $2,1
   seq $2,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
   lpb $3
     mov $3,0

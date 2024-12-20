@@ -9,12 +9,12 @@ lpb $2
   mov $3,$1
   seq $3,359270 ; Number of divisors of 5*n-3 of form 5*k+3.
   seq $3,174758 ; x-values in the solution to x^2-55*y^2=1.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

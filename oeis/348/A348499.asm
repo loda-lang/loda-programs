@@ -6,11 +6,12 @@ mov $1,-1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $3,$1
   mov $6,$1
   add $6,2
   mov $7,0
   add $1,1
-  mov $3,$1
+  add $3,2
   seq $3,3968 ; Möbius transform of A003959.
   sub $3,1
   sub $3,$1
@@ -23,7 +24,7 @@ lpb $2
   sub $0,$7
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

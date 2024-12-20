@@ -21,7 +21,6 @@ lpb $2
     mul $7,10
   lpe
   mov $3,$6
-  sub $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   equ $3,1
   mov $5,$6

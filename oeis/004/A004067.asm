@@ -15,7 +15,7 @@ lpb $0
   div $3,$4
   sub $0,1
   trn $0,1
-  cmp $1,$0
+  equ $1,$0
   add $1,1
   mov $2,$1
   add $4,2

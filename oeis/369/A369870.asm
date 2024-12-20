@@ -10,6 +10,7 @@ lpb $2
   mov $0,$5
   sub $0,$2
   mov $1,$0
+  add $1,2
   seq $1,4593 ; Expansion of e in base 2.
   mov $3,6
   add $3,$1

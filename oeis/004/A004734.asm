@@ -1,11 +1,14 @@
 ; A004734: Numerator of average distance traveled by n-dimensional fly.
 ; Submitted by Sphynx
 ; 1,8,3,32,5,64,35,512,63,1024,231,4096,429,8192,6435,131072,12155,262144,46189,1048576,88179,2097152,676039,16777216,1300075,33554432,5014575,134217728,9694845,268435456,300540195
-; Formula: a(n) = truncate(b(n)/gcd(c(n),b(n))), b(n) = 8*b(n-2)*(n+1), b(2) = 24, b(1) = 8, b(0) = 1, c(n) = 8*c(n-2)*(n+2), c(2) = 32, c(1) = 3, c(0) = 1
+; Formula: a(n) = truncate(b(n-1)/gcd(c(n-1),b(n-1))), b(n) = 8*b(n-2)*(n+1), b(2) = 24, b(1) = 8, b(0) = 1, c(n) = 8*c(n-2)*(n+2), c(2) = 32, c(1) = 3, c(0) = 1
+
+#offset 1
 
 mov $1,1
 mov $2,3
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   sub $3,$1

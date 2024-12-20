@@ -9,6 +9,7 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,1
+  add $0,1
   seq $0,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
   mov $1,$4
   mul $1,$0

@@ -6,13 +6,14 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   seq $3,188 ; (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   equ $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

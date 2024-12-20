@@ -14,6 +14,7 @@ lpb $2
   add $5,1
   seq $5,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   mov $3,$1
+  add $3,1
   seq $3,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
   mul $3,$5
   trn $3,1

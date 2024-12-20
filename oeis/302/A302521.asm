@@ -7,7 +7,6 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
-  sub $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   mov $5,1
   bin $5,$3
@@ -15,7 +14,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

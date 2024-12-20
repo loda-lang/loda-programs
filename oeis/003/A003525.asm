@@ -19,7 +19,7 @@ lpb $2
   add $1,1
   sub $2,$3
   sub $2,$0
-  cmp $3,$1
+  equ $3,$1
 lpe
 mov $0,$4
 mul $0,2
