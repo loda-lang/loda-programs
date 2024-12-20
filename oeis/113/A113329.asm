@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,3
     seq $7,1715 ; a(n) = n!/6.
     mul $7,4
     mov $9,10

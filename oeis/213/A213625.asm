@@ -9,6 +9,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   mov $5,$2
+  add $2,1
   seq $2,2325 ; Glaisher's J numbers.
   mul $2,2
   sub $2,1

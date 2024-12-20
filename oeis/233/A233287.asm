@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   mov $3,$2
   mov $2,$0
+  add $2,1
   seq $2,1177 ; Fibonacci entry points: a(n) = least k >= 1 such that n divides Fibonacci number F_k (=A000045(k)).
   lpb $3
     mov $3,0

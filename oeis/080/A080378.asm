@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,1223 ; Prime gaps: differences between consecutive primes.
 lpb $0
   mod $0,4

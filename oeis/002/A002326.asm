@@ -8,9 +8,9 @@ add $1,1
 mov $5,$1
 mov $4,$1
 lpb $4
-  cmp $1,$2
+  equ $1,$2
   mov $3,$1
-  cmp $3,0
+  equ $3,0
   sub $4,$3
   add $2,256
   mul $2,2

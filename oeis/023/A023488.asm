@@ -8,6 +8,7 @@ lpb $0
   mov $1,$0
   max $1,0
   mov $2,$1
+  add $2,1
   seq $2,1690 ; Non-Fibonacci numbers.
   mov $0,0
   add $1,5

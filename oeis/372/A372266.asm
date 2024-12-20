@@ -17,6 +17,7 @@ lpb $1
     add $0,$3
     trn $0,1
     seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+    add $0,1
     seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
     sub $0,1
     add $3,$6

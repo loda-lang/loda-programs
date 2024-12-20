@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$2
   sub $4,1
+  add $0,1
   seq $0,2105 ; Reduced tangent numbers: 2^n*(2^{2n} - 1)*|B_{2n}|/n, where B_n = Bernoulli numbers.
   bin $1,$4
   mul $1,$0

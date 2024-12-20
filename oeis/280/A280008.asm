@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,2375 ; From Goldbach conjecture: number of decompositions of 2n into an unordered sum of two odd primes.
   mov $2,$3
   mul $2,$0

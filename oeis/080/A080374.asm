@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   mov $3,$2
   mov $2,$0
+  add $2,1
   seq $2,1223 ; Prime gaps: differences between consecutive primes.
   lpb $3
     mov $3,0

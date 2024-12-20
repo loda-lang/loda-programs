@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   seq $2,27375 ; Number of aperiodic binary strings of length n; also number of binary sequences with primitive period n.
   mov $1,$0
-  cmp $1,0
+  equ $1,0
   add $0,$1
   div $2,$0
   mov $0,0

@@ -12,8 +12,7 @@ lpb $0
   sub $2,1
   mov $3,$2
   dif $3,$0
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$0
   pow $3,3
   sub $3,$1

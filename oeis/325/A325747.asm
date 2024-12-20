@@ -9,6 +9,7 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
+  add $0,1
   seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
   mov $1,$4
   sub $1,2

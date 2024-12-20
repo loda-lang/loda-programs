@@ -9,7 +9,7 @@ lpb $2
   mov $0,$4
   add $0,$2
   trn $0,1
-  add $0,1
+  add $0,2
   seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
   seq $0,86936 ; Number of primes between n and p(n) inclusive.
   sub $0,3

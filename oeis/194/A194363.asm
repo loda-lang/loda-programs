@@ -5,7 +5,6 @@
 pow $1,$0
 add $0,1
 seq $0,40 ; The prime numbers.
-sub $0,1
 seq $0,1177 ; Fibonacci entry points: a(n) = least k >= 1 such that n divides Fibonacci number F_k (=A000045(k)).
 mov $2,$0
 bin $0,2

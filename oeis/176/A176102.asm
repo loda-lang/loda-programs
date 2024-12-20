@@ -6,9 +6,10 @@ mov $1,$0
 mov $4,$0
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,2194 ; Decimal expansion of sqrt(3).
   mov $5,$1
-  cmp $5,0
+  equ $5,0
   add $1,$5
   div $0,$1
   add $3,$2

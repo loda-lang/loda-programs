@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,188015 ; Positions of 0 in A188014; complement of A188016.
+  add $3,1
   seq $3,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
   sub $3,3
   add $0,1

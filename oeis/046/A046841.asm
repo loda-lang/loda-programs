@@ -9,6 +9,7 @@ lpb $2
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$1
+  add $5,1
   seq $5,1158 ; sigma_3(n): sum of cubes of divisors of n.
   gcd $5,$3
   mov $6,$3

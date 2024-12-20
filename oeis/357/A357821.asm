@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
   mul $3,$2
   mul $3,-1

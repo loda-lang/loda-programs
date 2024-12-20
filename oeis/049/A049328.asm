@@ -10,7 +10,7 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   sub $3,19
   mul $3,2

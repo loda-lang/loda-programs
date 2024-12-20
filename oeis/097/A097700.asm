@@ -9,15 +9,16 @@ lpb $2
   mov $3,$1
   mov $5,$1
   add $1,1
+  add $3,1
   seq $3,2325 ; Glaisher's J numbers.
   sub $3,1
   sub $3,$5
   add $3,$1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

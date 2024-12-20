@@ -8,10 +8,10 @@ add $2,3
 pow $2,5
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,2321 ; Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
   add $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

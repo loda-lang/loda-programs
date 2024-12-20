@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   trn $0,1
   seq $0,14313 ; Numbers with exactly 5 ones in binary expansion.
+  add $0,1
   seq $0,1202 ; a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
   mul $0,2
   mov $2,$0

@@ -9,6 +9,7 @@ add $0,$1
 mov $3,$0
 sub $0,1
 mov $2,$0
+add $0,1
 seq $0,2325 ; Glaisher's J numbers.
 mul $0,2
 sub $0,$2

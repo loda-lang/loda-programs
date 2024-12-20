@@ -7,7 +7,7 @@ lpb $0
   mov $2,$0
   seq $2,54610 ; a(n) = Sum_{d|n} phi(d)*3^(n/d).
   mov $1,$0
-  cmp $1,0
+  equ $1,0
   add $0,$1
   div $2,$0
   mov $0,0

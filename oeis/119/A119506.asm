@@ -5,6 +5,7 @@
 mov $1,6
 lpb $1
   div $1,3
+  add $0,1
   seq $0,1113 ; Decimal expansion of e.
   add $0,9
   mod $0,10

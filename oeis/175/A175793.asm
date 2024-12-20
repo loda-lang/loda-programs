@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,1113 ; Decimal expansion of e.
   mod $2,2
   sub $0,1

@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,5,7,11,14,20,24,30,35,44,50
 
-add $0,2
+#offset 2
+
 lpb $0
   sub $0,2
   mov $3,$1

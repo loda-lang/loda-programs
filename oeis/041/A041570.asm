@@ -14,6 +14,7 @@ lpb $0
   dif $1,4
   mov $5,$1
   mul $1,2
+  add $1,1
   seq $1,1158 ; sigma_3(n): sum of cubes of divisors of n.
   mod $1,9
   add $1,$5

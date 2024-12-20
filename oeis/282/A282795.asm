@@ -23,6 +23,7 @@ lpb $2
   lpe
   add $0,1
   trn $0,2
+  add $0,1
   seq $0,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   add $0,$1
 lpe

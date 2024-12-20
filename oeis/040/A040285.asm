@@ -7,6 +7,7 @@ seq $0,40304 ; Continued fraction for sqrt(322).
 dif $0,4
 mov $1,$0
 mul $0,2
+add $0,1
 seq $0,1158 ; sigma_3(n): sum of cubes of divisors of n.
 mod $0,9
 add $0,$1

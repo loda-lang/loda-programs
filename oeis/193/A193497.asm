@@ -8,6 +8,7 @@ lpb $4
   div $4,2
   mov $0,$5
   add $0,$4
+  add $0,1
   seq $0,1113 ; Decimal expansion of e.
   mov $3,$4
   mul $3,$0

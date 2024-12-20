@@ -9,6 +9,7 @@ lpb $0
   sub $0,1
   mov $4,$3
   mov $3,$5
+  add $3,1
   seq $3,2476 ; Primes of the form 6m + 1.
   mul $3,$4
   add $5,1

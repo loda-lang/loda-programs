@@ -15,6 +15,7 @@ lpb $3
     mov $0,$6
     add $0,$8
     trn $0,1
+    add $0,2
     seq $0,1453 ; Catalan numbers - 1.
     mov $1,$8
     mul $1,$0

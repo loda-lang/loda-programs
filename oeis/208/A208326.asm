@@ -20,6 +20,7 @@ lpb $4
     mov $2,$0
     div $2,11
     max $0,0
+    add $0,1
     seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
     mov $1,$0
     lpb $0

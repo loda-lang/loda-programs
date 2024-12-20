@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,23689 ; Numbers with exactly 7 ones in binary expansion.
+  add $3,1
   seq $3,1202 ; a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
   div $3,3
   mul $3,3

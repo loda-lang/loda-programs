@@ -8,6 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
   add $0,1
   bin $0,2

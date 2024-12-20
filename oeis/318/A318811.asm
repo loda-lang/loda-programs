@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,2618 ; a(n) = n*phi(n).
     mov $9,10
     add $9,$5

@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,958 ; Number of ordered rooted trees with n edges having root of odd degree.
   sub $0,1
   add $1,$2

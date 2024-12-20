@@ -9,6 +9,7 @@ lpb $0
   sub $0,$2
   mov $1,$2
   max $1,0
+  add $1,1
   seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
   sub $1,1
   div $2,24

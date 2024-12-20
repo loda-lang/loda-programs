@@ -11,6 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    sub $2,1
     seq $2,1345 ; a(n) = Sum_{k = 0..3} (n+k)! C(3,k).
     mov $3,0
     add $4,$2

@@ -8,6 +8,7 @@ lpb $3
   sub $3,1
   mov $0,$2
   add $0,$3
+  add $0,1
   seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
   add $1,$4
   gcd $2,$1

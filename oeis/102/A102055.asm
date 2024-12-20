@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,1469 ; Genocchi numbers (of first kind); unsigned coefficients give expansion of x*tan(x/2).
   sub $1,$2
 lpe

@@ -18,6 +18,7 @@ lpb $3
   sub $0,120
   div $0,120
   mod $0,2
+  add $0,1
   seq $0,2144 ; Pythagorean primes: primes of the form 4*k + 1.
   bin $0,2
   div $0,4

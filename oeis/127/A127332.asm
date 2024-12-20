@@ -21,7 +21,6 @@ lpb $2
     gcd $4,$7
     bin $4,$0
     pow $0,$4
-    sub $0,1
     seq $0,2321 ; Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
     mul $4,$0
     add $6,$4

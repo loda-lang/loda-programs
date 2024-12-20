@@ -15,10 +15,11 @@ lpb $2
   mov $5,$3
   mov $3,$4
   add $3,1
+  add $5,1
   seq $5,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   div $5,$3
   mov $3,$5
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,2
   sub $2,$0

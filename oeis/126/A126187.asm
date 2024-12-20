@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,2215 ; Number of polyhexes with n hexagons, having reflectional symmetry (see Harary and Read for precise definition).
     mov $9,10
     add $9,$5

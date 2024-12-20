@@ -10,6 +10,7 @@ lpb $2
   mov $5,$1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
+  add $3,1
   seq $3,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
   sub $3,1
   mul $3,$5

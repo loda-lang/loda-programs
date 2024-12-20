@@ -10,6 +10,7 @@ mov $2,10
 lpb $2
   sub $2,1
   mov $8,$5
+  add $8,1
   seq $8,1113 ; Decimal expansion of e.
   mul $4,10
   add $4,$8

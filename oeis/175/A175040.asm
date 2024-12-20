@@ -10,6 +10,7 @@ lpb $4
   sub $4,1
   mov $1,$3
   add $1,$4
+  add $1,1
   seq $1,1358 ; Semiprimes (or biprimes): products of two primes.
   add $2,$5
   gcd $3,$2

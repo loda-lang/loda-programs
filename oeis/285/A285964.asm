@@ -11,6 +11,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $6,$2
+  add $6,1
   seq $6,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   mov $4,$2
   seq $4,41896 ; Numerators of continued fraction convergents to sqrt(470).
@@ -21,7 +22,7 @@ lpb $3
   add $2,$5
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

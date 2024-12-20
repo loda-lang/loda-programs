@@ -10,6 +10,7 @@ lpb $2
   mov $5,$1
   seq $5,272863 ; Numerator of the ratio of consecutive prime gaps.
   mov $3,$1
+  add $3,1
   seq $3,1223 ; Prime gaps: differences between consecutive primes.
   mul $3,$5
   mod $3,5

@@ -4,7 +4,7 @@
 
 lpb $0
   sub $0,1
-  cmp $1,$2
+  equ $1,$2
   mul $3,$2
   add $3,$1
   add $1,288

@@ -7,5 +7,6 @@ mov $1,2
 lpb $1
   div $1,2
   pow $1,$2
+  add $0,1
   seq $0,1113 ; Decimal expansion of e.
 lpe

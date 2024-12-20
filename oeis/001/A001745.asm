@@ -8,6 +8,7 @@ pow $2,16
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,1742 ; Numbers whose digits contain no loops (version 2).
   sub $3,1
   add $0,1

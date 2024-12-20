@@ -7,12 +7,13 @@ mov $2,$0
 lpb $0
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mul $2,$4
 add $1,$2

@@ -11,6 +11,7 @@ lpb $0
   add $4,10
   mov $5,$2
   mul $5,3
+  add $5,1
   seq $5,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
   add $1,$5
   mov $3,2

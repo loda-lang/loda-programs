@@ -11,6 +11,7 @@ lpb $2
   sub $4,$1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,2908 ; High temperature expansion of -u/J in odd powers of v = tanh(J/kT), where u is energy per site of the spin-1/2 Ising model on square lattice with nearest-neighbor interaction J at temperature T.
   sub $0,$1
   add $1,$0

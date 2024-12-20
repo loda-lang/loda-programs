@@ -11,6 +11,7 @@ lpb $2
   mov $6,$1
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$1
+  add $4,1
   seq $4,2322 ; Reduced totient function psi(n): least k such that x^k == 1 (mod n) for all x prime to n; also known as the Carmichael lambda function (exponent of unit group mod n); also called the universal exponent of n.
   mov $5,$6
   gcd $6,$4

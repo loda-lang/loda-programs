@@ -14,17 +14,18 @@ pow $3,2
 lpb $3
   sub $3,1
   mov $4,$2
+  add $4,1
   seq $4,1358 ; Semiprimes (or biprimes): products of two primes.
   sub $4,1
   mov $6,$4
   add $4,4
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $4,2
+  equ $4,2
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
 lpe
 mov $1,$6

@@ -8,6 +8,7 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $3,$1
+  add $3,1
   seq $3,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
   sub $0,$3
   add $1,1

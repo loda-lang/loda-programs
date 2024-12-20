@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,2375 ; From Goldbach conjecture: number of decompositions of 2n into an unordered sum of two odd primes.
   trn $3,1
   seq $3,30119 ; a(n) = a(n-1) + a(n-2) + n, a(0) = a(1) = 1.

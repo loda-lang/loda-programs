@@ -17,7 +17,6 @@ lpb $4
   sub $2,1
   mov $1,$2
   seq $1,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
-  sub $1,1
   seq $1,2321 ; Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
   seq $2,199656 ; Triangular array read by rows, T(n,k) is the number of functions from {1,2,...,n} into {1,2,...,n} with maximum value of k.
   mul $2,$1

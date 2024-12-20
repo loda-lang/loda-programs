@@ -9,15 +9,13 @@ lpb $4
   mov $0,$6
   add $0,$4
   add $0,1
+  mov $1,1
   mov $3,$0
-  mov $1,60
-  lpb $1
-    mov $1,1
-  lpe
   sub $3,1
-  mov $0,$1
+  mov $0,1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,2113 ; Palindromes in base 10.
   mov $2,$4
   mul $2,$0

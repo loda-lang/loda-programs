@@ -7,6 +7,7 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   gcd $3,3
   sub $3,1

@@ -8,18 +8,19 @@ pow $2,3
 lpb $2
   sub $2,29
   mov $3,$1
+  add $3,1
   seq $3,1358 ; Semiprimes (or biprimes): products of two primes.
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   mov $5,$3
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

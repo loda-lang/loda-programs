@@ -7,6 +7,7 @@ lpb $1
   mov $2,$1
   mul $2,2
   mov $3,$2
+  add $3,1
   seq $3,2325 ; Glaisher's J numbers.
   div $3,2
   mov $1,1

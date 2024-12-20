@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,2113 ; Palindromes in base 10.
   add $1,$0
   mul $3,$2

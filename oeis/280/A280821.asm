@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,1783 ; n-phi-torial, or phi-torial of n: Product k, 1 <= k <= n, k relatively prime to n.
   sub $0,1
   mul $1,$2

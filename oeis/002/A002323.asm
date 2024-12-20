@@ -1,10 +1,12 @@
 ; A002323: ((2^m - 1) / p) mod p, where p = prime(n) and m = ord(2,p).
 ; Submitted by [SG]KidDoesCrunch
 ; 1,3,1,5,3,15,3,20,1,1,1,32,37,22,36,8,36,10,1,7,49,48,23,77,92,81,13,95,49,1,17,95,30,96,66,132,67,107,3,50,148,25,52,175,167,109,143,201,99,30,13,207,200,255,64,260,190,208,159,208,78,98,243,60,175,133,157,149,325,304,29,353,204,2,98,134,308,370,78,318
-; Formula: a(n) = -A000040(n+2)*truncate(A352232(n)/A000040(n+2))+A352232(n)
+; Formula: a(n) = -A000040(n)*truncate(A352232(n-2)/A000040(n))+A352232(n-2)
+
+#offset 2
 
 mov $1,$0
-add $1,2
 seq $1,40 ; The prime numbers.
+sub $0,2
 seq $0,352232 ; a(n) is the smallest positive integer k such that 1 + k * prime(n) is a power of two.
 mod $0,$1

@@ -6,6 +6,7 @@ add $0,1
 mov $1,$0
 add $1,$0
 mov $2,1
+add $0,1
 seq $0,2541 ; a(n) = Sum_{k=1..n-1} floor((n-k)/k).
 add $1,$0
 mov $0,$1

@@ -8,6 +8,7 @@ pow $1,2
 mov $2,$1
 equ $1,1
 add $2,$1
+add $0,1
 seq $0,2618 ; a(n) = n*phi(n).
 mul $0,$2
 div $0,2

@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
   seq $2,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
   mul $3,$2

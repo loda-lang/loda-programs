@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $1,1
+add $1,1
 seq $1,2618 ; a(n) = n*phi(n).
 dif $1,2
 add $1,1

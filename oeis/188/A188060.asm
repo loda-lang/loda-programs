@@ -4,6 +4,7 @@
 
 add $0,1
 mov $2,$0
+sub $0,1
 seq $0,2431 ; Numerators in Taylor series for cot x.
 mul $2,2
 lpb $2
