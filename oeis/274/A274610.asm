@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $3,$0
-add $3,6
+sub $0,1
 pow $3,3
 lpb $3
   mov $1,$2

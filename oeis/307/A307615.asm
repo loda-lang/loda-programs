@@ -14,6 +14,7 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,50369 ; Number of ordered factorizations of n into 2 kinds of 2, 3 kinds of 3, ...
     mov $9,10
     add $9,$5

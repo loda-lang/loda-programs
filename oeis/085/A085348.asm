@@ -1,18 +1,16 @@
 ; A085348: Ratio-determined insertion sequence I(0.264) (see the link below).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,4,19,72,341,1292,6119,23184,109801,416020,1970299,7465176,35355581,133957148,634430159,2403763488,11384387281,43133785636,204284540899,774004377960,3665737348901,13888945017644,65778987739319
 
-mov $1,1
+mov $2,2
 lpb $0
   sub $0,1
-  sub $3,$2
-  mod $3,2
-  cmp $3,0
-  add $3,2
-  mul $3,$1
-  add $3,$4
-  mov $4,$3
-  add $1,$3
-  add $2,1
+  equ $1,4
+  add $1,4
+  mov $3,$4
+  mov $4,$2
+  mul $2,$1
+  sub $2,$3
 lpe
-mov $0,$1
+mov $0,$2
+div $0,2

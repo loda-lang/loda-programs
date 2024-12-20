@@ -29,7 +29,7 @@ lpb $0
   dif $2,2
   sub $2,2
   div $2,2
-  cmp $6,2
+  equ $6,2
   add $2,$6
   add $2,1
   mul $2,$3

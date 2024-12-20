@@ -12,7 +12,7 @@ lpb $0
   add $1,$0
   mov $3,$4
   div $3,$1
-  cmp $1,2
+  equ $1,2
   mov $2,$3
   pow $3,$0
   mul $3,$2

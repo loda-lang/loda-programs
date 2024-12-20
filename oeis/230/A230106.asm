@@ -11,7 +11,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   seq $0,51801 ; Product of the nonzero digits of n.
-  cmp $0,$2
+  equ $0,$2
   add $1,$0
 lpe
 mov $0,$1

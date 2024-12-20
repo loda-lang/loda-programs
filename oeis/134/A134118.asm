@@ -15,11 +15,11 @@ lpb $2
   div $3,2
   add $3,$5
   dif $3,2
-  cmp $3,4
+  equ $3,4
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mov $5,2
   mul $2,$4
 lpe

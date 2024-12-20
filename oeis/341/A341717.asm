@@ -2,7 +2,10 @@
 ; Submitted by Jon Fox
 ; 2,3,7,5,7,7,9,187
 
+#offset 2
+
 mov $1,1
+sub $0,2
 lpb $0
   mov $2,$0
   add $2,1

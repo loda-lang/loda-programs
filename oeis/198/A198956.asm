@@ -8,7 +8,7 @@ lpb $0
   dif $3,$0
   dif $3,3
   mul $3,$0
-  cmp $3,$2
+  equ $3,$2
   mul $3,$0
   pow $3,3
   sub $0,1

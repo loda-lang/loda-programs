@@ -1,7 +1,10 @@
 ; A209356: The function g(n), the inverse of f(k) the shortest length of a binary linear intersecting code.
 ; 2,2,2,3,3,3,4,4,4,4,5,5,6
 
+#offset 3
+
 mov $1,2
+sub $0,3
 lpb $0
   add $1,$0
   mov $2,22

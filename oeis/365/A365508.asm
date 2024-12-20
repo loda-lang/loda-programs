@@ -2,9 +2,10 @@
 ; Submitted by [AF>Amis de la Mer] ComteZera
 ; 1,2,5,14,41,123,375,1157,3603,11304,35683,113219,360805,1154140
 
+#offset 1
+
 mov $2,1
 mov $10,1
-add $0,1
 lpb $0
   sub $0,1
   mov $5,0

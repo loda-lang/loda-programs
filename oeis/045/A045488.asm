@@ -6,4 +6,5 @@ lpb $0
   sub $0,1
   mul $0,2
 lpe
+sub $0,1
 seq $0,128633 ; McKay-Thompson series of class 6E for the Monster group with a(0) = 4.

@@ -1,7 +1,10 @@
 ; A359834: Parity of Dirichlet inverse of A359832, where A359832(n) = 1 if the 2-adic valuation of n is either 0 or odd, otherwise 0.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Mads Nissen
 ; 1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,2
 add $0,1
@@ -10,8 +13,6 @@ lpb $0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
     add $2,1
     sub $3,$4
   lpe

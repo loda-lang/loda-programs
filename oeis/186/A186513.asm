@@ -6,7 +6,16 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,186514 ; Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=4+5j^2.  Complement of A186513.
+  add $3,1
+  mov $4,$3
+  add $4,$3
+  mul $4,2
+  add $4,$3
+  mul $4,$3
+  add $4,4
+  nrt $4,2
+  add $4,$3
+  mov $3,$4
   sub $3,1
   add $0,1
   add $1,1

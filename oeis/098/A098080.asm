@@ -1,18 +1,15 @@
 ; A098080: Nontrivial slowest increasing sequence whose succession of digits is that of the nonnegative integers.
+; Submitted by Rodney Duane
 ; 0,12,34,56,78,910,1112,1314,1516,1718,1920,2122,2324,2526,2728,2930,3132,3334,3536,3738,3940,4142,4344,4546,4748,4950,5152,5354,5556,5758,5960,6162,6364,6566,6768,6970,7172,7374,7576,7778,7980,8182,8384,8586,8788,8990,9192,9394,9596,9798,99100,101102
 
-mov $5,$0
 mul $0,2
 mov $3,$0
 trn $3,1
-mov $6,$3
-mov $4,$0
-lpb $4
-  div $4,10
-  mul $6,10
+mov $1,$3
+mov $2,$0
+lpb $2
+  div $2,10
+  mul $1,10
 lpe
-mov $2,$5
-mul $2,2
-mov $1,$6
-add $1,$2
+add $1,$0
 mov $0,$1

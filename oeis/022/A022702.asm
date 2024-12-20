@@ -11,10 +11,11 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
+    sub $4,1
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,300786 ; L.g.f.: log(Product_{k>=1} (1 + k*x^k)) = Sum_{n>=1} a(n)*x^n/n.
     mul $7,10
     mul $7,$$9

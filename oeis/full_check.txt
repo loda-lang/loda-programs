@@ -54,6 +54,7 @@ A004016: Theta series of planar hexagonal lattice A_2.
 A004641: Fixed under 0 -> 10, 1 -> 100.
 A004921: a(n) = floor(n*phi^6), phi = golden ratio, A001622.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
+A004939: a(n) = round(n*phi^4), where phi is the golden ratio, A001622.
 A004956: a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
 A004957: a(n) = ceiling(n*phi^2), where phi is the golden ratio, A001622.
 A004959: a(n) = ceiling(n*phi^4), where phi is the golden ratio, A001622.
@@ -193,6 +194,7 @@ A048865: a(n) is the number of primes in the reduced residue system mod n.
 A048896: a(n) = 2^(A000120(n+1) - 1), n >= 0.
 A049240: Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
 A049345: n written in primorial base.
+A049474: a(n) = ceiling(n/sqrt(2)).
 A050508: Golden rectangle numbers: n * A007067(n).
 A051344: Number of ways of writing n as a sum of 3 positive cubes (counted naively).
 A051543: Quotients of consecutive values of lcm of first n triangular numbers (A000217).
@@ -268,6 +270,7 @@ A076558: a(n) = r * min(e_1, ..., e_r), where n = p_1^e_1 . .... p_r^e_r is the 
 A077546: Primes of the form floor(n*Pi).
 A077655: Number of consecutive successors of n having the same number of prime factors as n (counted with multiplicity).
 A078175: Numbers with an integer arithmetic mean of all prime factors.
+A078285: Least nontrivial multiple of the n-th prime beginning with 1.
 A078687: Number of x>=0 such that prime(n)-2^x is prime.
 A079093: Squarefree kernel of (prime(n)+1)*(prime(n+1)+1)/4.
 A079131: Primes such that iterated sum-of-digits (A038194) is odd.

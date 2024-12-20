@@ -10,6 +10,7 @@ mov $1,1
 lpb $1
   sub $1,1
   mov $0,$2
+  add $0,1
   seq $0,340682 ; The closure under squaring of the nonunit squarefree numbers.
   pow $0,2
 lpe

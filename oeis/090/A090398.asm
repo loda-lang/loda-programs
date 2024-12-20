@@ -13,7 +13,7 @@ lpb $3
   mul $1,$3
   add $1,$2
   sub $3,1
-  cmp $4,0
+  equ $4,0
   min $5,5
   add $5,$4
   div $1,$5

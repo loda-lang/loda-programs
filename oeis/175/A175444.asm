@@ -7,7 +7,7 @@ mov $2,$0
 add $2,3
 pow $2,2
 lpb $2
-  cmp $6,$3
+  equ $6,$3
   mov $3,$1
   mul $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
@@ -16,7 +16,7 @@ lpb $2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,$5
   add $1,2
   mul $2,$4

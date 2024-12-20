@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $1,1
-cmp $1,2
-cmp $1,0
+neq $1,2
+sub $0,1
 seq $0,128633 ; McKay-Thompson series of class 6E for the Monster group with a(0) = 4.
 mul $0,$1

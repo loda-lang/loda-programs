@@ -1,15 +1,15 @@
 ; A330000: Beatty sequence for sqrt(x+1), where 1/sqrt(x-1) + 1/sqrt(x+1) = 1.
+; Submitted by Science United
 ; 2,4,6,9,11,13,15,18,20,22,25,27,29,31,34,36,38,40,43,45,47,50,52,54,56,59,61,63,66,68,70,72,75,77,79,81,84,86,88,91,93,95,97,100,102,104,106,109,111,113,116,118,120,122,125,127,129,132,134,136,138
-; Formula: a(n) = truncate((7*n-truncate((-floor(n/7)+n)/5)+6)/3)
+; Formula: a(n) = truncate((4*n+sqrtint((2*n+2)*(4*n+4))+4)/3)
 
-mov $3,$0
-mul $3,7
-mov $2,$0
-div $2,7
-sub $0,$2
-div $0,5
-mov $1,6
-sub $1,$0
-add $1,$3
+add $0,1
+mul $0,2
+mov $1,$0
+add $1,$0
+mul $1,$0
+nrt $1,2
+mul $0,2
+add $1,$0
+div $1,3
 mov $0,$1
-div $0,3

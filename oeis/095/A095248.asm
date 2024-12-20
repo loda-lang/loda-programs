@@ -20,7 +20,8 @@ lpb $12
     lpb $0
       mov $2,$0
       max $2,0
-      seq $2,179278 ; Largest nonprime integer not less than n.
+      add $2,1
+      seq $2,179278 ; Largest nonprime integer <= n.
       add $3,$2
       mov $4,$2
       min $4,1

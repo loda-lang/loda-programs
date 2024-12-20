@@ -5,7 +5,7 @@ lpb $0
   mov $2,$0
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   div $2,10
-  cmp $2,0
+  equ $2,0
   sub $0,1
   add $1,$2
 lpe

@@ -1,15 +1,18 @@
 ; A345888: a(n) = n + (n - 1) * pi(n).
-; Submitted by amazing
+; Submitted by tomkalei
 ; 1,3,7,10,17,21,31,36,41,46,61,67,85,92,99,106,129,137,163,172,181,190,221,231,241,251,261,271,309,320,361,373,385,397,409,421,469,482,495,508,561,575,631,646,661,676,737,753,769,785,801,817,885,902,919,936,953,970
 
-mov $1,$0
-mov $2,1
-lpb $0
-  mov $3,$0
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,1
-  add $2,$3
+mov $2,$0
+add $2,2
+lpb $2
+  sub $2,2
+  div $2,2
+  mul $2,2
+  seq $2,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  add $1,1
 lpe
+mov $2,$1
+add $2,1
+mul $2,$0
 mov $0,$2
-mul $0,$1
 add $0,1

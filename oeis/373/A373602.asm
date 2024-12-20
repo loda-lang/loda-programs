@@ -8,7 +8,6 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-  sub $3,1
   seq $3,100006 ; Integer log of 2n: sum of primes dividing 2n (with repetition).
   sub $3,2
   gcd $3,3
