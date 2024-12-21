@@ -2,6 +2,7 @@
 ; Submitted by Christian Krause
 ; 6,6,12,24,24,24,24,24,48,96,96,48,24,24,48
 
+add $0,1
 seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
 seq $0,105161 ; Difference between n and the second-smallest prime larger than n.
 sub $0,2

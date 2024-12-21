@@ -10,13 +10,14 @@ lpb $2
   seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   mov $3,$1
   div $3,$5
+  add $3,1
   seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

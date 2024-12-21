@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,8474 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j + k_j).
   add $3,1
   trn $3,2

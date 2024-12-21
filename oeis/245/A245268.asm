@@ -13,7 +13,6 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
   seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mul $1,$0
   add $3,$1

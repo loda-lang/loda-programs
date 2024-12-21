@@ -17,6 +17,7 @@ lpb $1
     mov $0,$2
     sub $0,1
     div $0,2
+    add $0,1
     seq $0,8508 ; Number of odd primes less than n-th odd composite number.
     mov $2,2
     mov $4,$5

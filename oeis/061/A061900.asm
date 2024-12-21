@@ -7,6 +7,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$6
+  add $3,1
   seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $3,1
   mod $3,2
@@ -14,7 +15,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,$1
   sub $1,1
   mul $2,$4

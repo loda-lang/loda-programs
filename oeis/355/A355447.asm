@@ -5,6 +5,7 @@
 lpb $0
   add $1,1
   mov $4,$0
+  add $4,1
   seq $4,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   equ $4,0
   sub $4,1

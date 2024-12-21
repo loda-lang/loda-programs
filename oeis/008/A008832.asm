@@ -2,7 +2,8 @@
 ; Submitted by UBT - Mikeejones
 ; 0,1,13,2,16,14,6,3,8,17,12,15,5,7,11,4,10,9
 
-add $0,1
+#offset 1
+
 mov $1,280
 lpb $1
   sub $1,12

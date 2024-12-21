@@ -5,6 +5,7 @@
 mov $1,-1
 add $0,$1
 max $0,0
+add $0,1
 seq $0,9278 ; a(n) = lcm(d(n), sigma(n)).
 mov $$0,$0
 mov $0,$6

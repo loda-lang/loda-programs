@@ -5,7 +5,6 @@
 mov $2,$0
 add $2,1
 dif $2,2
-sub $2,1
 seq $2,8833 ; Largest square dividing n.
 seq $2,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
 pow $2,2

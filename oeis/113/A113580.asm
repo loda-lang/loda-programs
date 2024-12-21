@@ -6,6 +6,7 @@ mov $1,-1
 lpb $0
   mov $2,$0
   mod $2,10
+  add $2,1
   seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   mov $3,$2
   mul $3,2

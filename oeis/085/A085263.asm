@@ -12,6 +12,7 @@ lpb $0
   mov $5,$2
   mul $2,0
   sub $2,1
+  add $5,1
   seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $5,1
   add $5,$2

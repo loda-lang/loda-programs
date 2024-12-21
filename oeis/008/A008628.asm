@@ -12,7 +12,7 @@ lpb $0
   seq $2,8763 ; Expansion of g.f.: x^4/((1-x)*(1-x^2)^2*(1-x^3)).
   add $2,$5
   mov $4,$2
-  cmp $4,0
+  equ $4,0
   add $2,$4
   add $1,$2
   mov $3,2

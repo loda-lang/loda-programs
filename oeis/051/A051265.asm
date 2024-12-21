@@ -11,9 +11,10 @@ lpb $5
   sub $0,$5
   mov $2,$0
   gcd $2,$5
-  cmp $2,1
+  equ $2,1
   sub $0,$2
   mov $6,$0
+  add $6,1
   seq $6,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mov $1,$0
   mul $1,$6

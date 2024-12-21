@@ -5,10 +5,11 @@
 sub $0,1
 mov $2,$0
 max $2,0
+add $2,1
 seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-cmp $2,0
+equ $2,0
 mod $0,2
 add $0,$2
 mov $1,$0
-cmp $1,0
+equ $1,0
 mov $0,$1

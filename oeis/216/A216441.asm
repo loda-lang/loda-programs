@@ -10,6 +10,7 @@ lpb $0
   mul $0,3
 lpe
 mov $1,$0
+add $1,1
 seq $1,6347 ; a(n) = (n+1) a(n-1) + (-1)^n.
 mov $0,$1
 mul $0,2

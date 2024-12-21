@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   max $3,$5
+  add $3,1
   seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$3
   max $1,1

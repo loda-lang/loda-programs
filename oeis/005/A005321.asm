@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,5327 ; Certain subgraphs of a directed graph (inverse binomial transform of A005321).
   mul $1,$0
   add $3,$1

@@ -10,14 +10,14 @@ lpb $3
   mov $0,$2
   add $1,$4
   sub $3,1
-  cmp $4,0
+  equ $4,0
   mov $5,-2
   add $5,$4
   mul $1,$3
   div $1,$5
   mov $2,$1
   sub $2,$6
-  cmp $4,9
+  equ $4,9
   mov $6,$0
 lpe
 mov $0,$6

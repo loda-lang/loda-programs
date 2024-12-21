@@ -10,9 +10,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
-  cmp $0,0
+  equ $0,0
   mul $0,$2
   add $1,$0
 lpe

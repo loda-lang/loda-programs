@@ -10,7 +10,7 @@ lpb $3
   add $0,$3
   mul $0,2
   mov $6,$0
-  add $6,1
+  add $6,2
   seq $6,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   sub $6,1
   seq $6,105161 ; Difference between n and the second-smallest prime larger than n.

@@ -4,6 +4,7 @@
 
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   sub $3,1
   seq $3,105161 ; Difference between n and the second-smallest prime larger than n.

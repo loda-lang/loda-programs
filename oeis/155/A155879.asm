@@ -9,6 +9,7 @@ add $2,180
 lpb $2
   mov $3,$1
   seq $3,102885 ; Index of n in the primes A000040 or nonprimes A141468.
+  add $3,1
   seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   sub $3,2
   add $0,1

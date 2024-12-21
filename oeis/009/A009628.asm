@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   sub $0,1
-  cmp $2,2
+  equ $2,2
   mul $1,$3
   add $1,$2
   add $2,2

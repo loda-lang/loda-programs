@@ -14,6 +14,7 @@ lpb $5
   pow $1,$0
   mov $3,$0
   div $0,2
+  add $0,1
   seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
   mul $0,2
   sub $0,$1

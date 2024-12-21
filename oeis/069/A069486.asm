@@ -1,9 +1,9 @@
 ; A069486: a(n) = 2*prime(n)*prime(n+1).
 ; Submitted by skildude
 ; 12,30,70,154,286,442,646,874,1334,1798,2294,3034,3526,4042,4982,6254,7198,8174,9514,10366,11534,13114,14774,17266,19594,20806,22042,23326,24634,28702,33274,35894,38086,41422,44998
-; Formula: a(n) = 2*A013636(A008578(n+1))
+; Formula: a(n) = 2*A013636(A008578(n+2))
 
-add $0,1
+add $0,2
 seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-seq $0,13636 ; n*nextprime(n).
+seq $0,13636 ; a(n) = n*nextprime(n).
 mul $0,2

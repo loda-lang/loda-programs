@@ -11,7 +11,7 @@ lpb $3
   max $0,0
   mov $5,$0
   add $5,1
-  add $0,1
+  add $0,2
   seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   div $0,$5
   min $4,$0

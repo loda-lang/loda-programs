@@ -15,6 +15,7 @@ lpb $5
   mov $2,$0
   add $2,$5
   bin $2,$0
+  add $0,1
   seq $0,5327 ; Certain subgraphs of a directed graph (inverse binomial transform of A005321).
   mul $2,$0
   add $4,$2

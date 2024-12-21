@@ -11,6 +11,7 @@ mov $0,$1
 lpb $0
   mov $3,$0
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  add $3,1
   seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   div $0,2
   mul $2,$3

@@ -11,6 +11,7 @@ mov $4,$0
 pow $4,2
 lpb $4
   mov $5,$3
+  add $5,1
   seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$5
   add $3,1

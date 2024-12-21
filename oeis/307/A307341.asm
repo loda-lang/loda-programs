@@ -13,6 +13,7 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $4,$1
+  add $4,1
   seq $4,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   equ $4,0
   sub $4,1

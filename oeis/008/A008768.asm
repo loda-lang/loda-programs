@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   bin $2,2
   mov $4,$2
-  cmp $4,0
+  equ $4,0
   mov $5,$2
   add $2,$4
   div $5,$2

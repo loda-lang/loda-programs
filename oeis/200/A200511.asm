@@ -8,6 +8,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   equ $5,0
   sub $5,1

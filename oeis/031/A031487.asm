@@ -8,7 +8,7 @@ lpb $2
   sub $2,1
   mov $4,0
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,8539 ; Numbers that do not contain the letter `s'.
   lpb $3
     mov $5,$3

@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,8480 ; Number of ordered prime factorizations of n.
   mod $3,2
   sub $0,$3

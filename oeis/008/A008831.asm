@@ -2,7 +2,8 @@
 ; Submitted by PDW
 ; 0,1,4,2,9,5,11,3,8,10,7,6
 
-add $0,1
+#offset 1
+
 mul $0,2
 mov $1,266
 lpb $1

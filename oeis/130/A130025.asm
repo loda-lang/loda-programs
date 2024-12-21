@@ -10,6 +10,7 @@ lpb $3
   sub $3,1
   add $1,$4
   mov $2,$1
+  add $2,1
   seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $4,$2
   add $1,1

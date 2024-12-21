@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mov $3,$1
   mul $3,$5

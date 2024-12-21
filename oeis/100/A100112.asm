@@ -9,6 +9,7 @@ lpb $3
   sub $3,1
   mov $0,$2
   sub $0,$3
+  add $0,1
   seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $1,$0
 lpe

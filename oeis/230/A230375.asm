@@ -9,6 +9,7 @@ pow $4,4
 lpb $4
   add $4,1
   mov $1,$3
+  add $1,1
   seq $1,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$1
   add $3,$2

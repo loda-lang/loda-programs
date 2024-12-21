@@ -16,6 +16,7 @@ lpb $2
   mov $6,-1
   pow $6,$5
   mov $3,$1
+  add $3,1
   seq $3,8480 ; Number of ordered prime factorizations of n.
   mul $3,$6
   mul $3,2

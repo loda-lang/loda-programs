@@ -10,6 +10,7 @@ lpb $1
   mov $0,$3
   bin $0,$1
   mov $2,$0
+  add $2,1
   seq $2,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   mul $4,$2
 lpe

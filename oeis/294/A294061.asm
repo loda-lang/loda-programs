@@ -14,6 +14,7 @@ lpb $1
   lpb $3
     sub $3,$1
     mov $2,$0
+    add $2,1
     seq $2,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
     mul $2,$3
     mov $3,$1

@@ -8,6 +8,7 @@ mov $3,$0
 lpb $3
   sub $3,1
   mov $4,$2
+  add $4,1
   seq $4,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   add $2,1
   add $3,$4

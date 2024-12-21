@@ -13,6 +13,7 @@ mov $5,$0
 pow $5,2
 lpb $5
   mov $6,$4
+  add $6,1
   seq $6,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$6
   add $4,1

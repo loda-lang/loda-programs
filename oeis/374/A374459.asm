@@ -7,6 +7,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,8477 ; If n = Product (p_j^k_j) then a(n) = Product (k_j^p_j).
   seq $3,353292 ; a(n) is the number of positive integers k <= n that have at least one common 1-bit with n.
   add $3,1

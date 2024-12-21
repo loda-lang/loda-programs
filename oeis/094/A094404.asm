@@ -4,7 +4,7 @@
 
 seq $0,32619 ; Numbers k such that k concatenated with k+4 is a prime.
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
-add $0,4
+add $0,5
 seq $0,8833 ; Largest square dividing n.
 div $0,4
 seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.

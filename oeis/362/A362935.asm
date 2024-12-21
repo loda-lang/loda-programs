@@ -9,6 +9,7 @@ lpb $1
   mov $0,$4
   sub $0,$1
   mov $3,$0
+  add $0,1
   seq $0,8833 ; Largest square dividing n.
   seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
   sub $0,1

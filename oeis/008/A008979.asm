@@ -6,13 +6,13 @@ mov $2,1
 mov $3,$0
 mul $3,6
 lpb $3
-  cmp $4,0
+  equ $4,0
   add $1,$4
   mul $2,$3
   div $2,$1
   sub $3,1
   mov $4,$0
-  cmp $4,0
+  equ $4,0
   add $0,$4
   mod $1,$0
 lpe

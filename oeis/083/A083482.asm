@@ -7,6 +7,7 @@ mov $1,1
 mov $2,$0
 lpb $2
   mov $3,$2
+  add $3,1
   seq $3,8833 ; Largest square dividing n.
   seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
   div $2,$3

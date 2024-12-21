@@ -7,8 +7,9 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-  seq $3,13636 ; n*nextprime(n).
+  seq $3,13636 ; a(n) = n*nextprime(n).
   sub $3,23
   trn $3,8
   mov $5,$3
@@ -17,7 +18,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

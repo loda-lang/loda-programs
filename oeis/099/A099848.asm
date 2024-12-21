@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$1
+  add $2,1
   seq $2,8480 ; Number of ordered prime factorizations of n.
   sub $0,$2
   add $1,1

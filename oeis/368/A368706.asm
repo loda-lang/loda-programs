@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   equ $1,1
   sub $0,$1
+  add $0,1
   seq $0,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mul $0,$5
   mul $1,$0

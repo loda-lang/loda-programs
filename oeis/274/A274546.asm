@@ -6,11 +6,11 @@ add $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,4
   mov $3,$1
+  add $3,5
   seq $3,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   sub $0,$3
-  add $1,1
+  add $1,5
   sub $2,$0
 lpe
 mov $0,$1

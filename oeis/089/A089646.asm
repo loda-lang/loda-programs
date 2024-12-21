@@ -10,6 +10,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,8480 ; Number of ordered prime factorizations of n.
   add $3,$0
 lpe

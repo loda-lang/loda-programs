@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   add $5,$6
   mov $6,$1

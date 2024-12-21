@@ -5,6 +5,7 @@
 mov $1,$0
 seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 sub $1,2
-cmp $1,1
+equ $1,1
+add $0,1
 seq $0,8480 ; Number of ordered prime factorizations of n.
 mul $0,$1
