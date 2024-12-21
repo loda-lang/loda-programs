@@ -13,11 +13,11 @@ lpb $3
   seq $4,24539 ; a(n) = [ 1/{n*sqrt(2)} ], where {x} := x - [ x ].
   sub $4,1
   min $4,2
-  cmp $4,2
+  equ $4,2
   sub $0,$4
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

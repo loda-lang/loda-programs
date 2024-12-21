@@ -7,6 +7,7 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,210770 ; a(1) = 1, a(2) = 2; for n > 1, a(2*n+2) = smallest number not yet seen, a(2*n+1) = a(2*n) + a(2*n+2).
   gcd $3,$0
   add $1,1

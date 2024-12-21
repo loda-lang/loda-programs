@@ -13,7 +13,7 @@ lpb $2
   mov $3,$1
   seq $3,319997 ; a(n) = Sum_{d|n, d is odd} mu(n/d)*d, where mu(n) is Moebius function A008683.
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

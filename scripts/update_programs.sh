@@ -25,16 +25,13 @@ done
 # number of updated programs
 num_updated=0
 
-echo "Finding added or updated programs"
+echo "Finding updated programs"
 files=
 while read -r s f; do
   if ! [[ $f == oeis/* ]]; then
     continue
   fi
-  if [[ $s == "??" ]]; then
-    git add $f
-    ((num_updated++))
-  elif [[ $s == "M" ]]; then
+  if [[ $s == "M" ]]; then
     files="$files $f"
   fi
 done < <(git status --porcelain)

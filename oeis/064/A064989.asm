@@ -15,7 +15,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  sub $3,1
   seq $3,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   lpb $0
     dif $0,$2

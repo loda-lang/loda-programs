@@ -2,6 +2,9 @@
 ; Submitted by Jason Jung
 ; 1,2,1,6,3,1,12,8,4,1,24,20,10,5,1
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,1
   sub $0,$1

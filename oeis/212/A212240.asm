@@ -9,6 +9,7 @@ lpb $0
   sub $0,1
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,55507 ; a(n) = Sum_{k=1..n} d(k)*d(n+1-k), where d(k) is number of positive divisors of k.
   add $2,$3
 lpe

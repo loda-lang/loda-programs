@@ -6,6 +6,7 @@ mov $2,$0
 add $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   div $3,2
   add $0,1

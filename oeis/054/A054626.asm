@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   seq $2,54614 ; a(n) = Sum_{d|n} phi(d)*7^(n/d).
   mov $1,$0
-  cmp $1,0
+  equ $1,0
   add $0,$1
   div $2,$0
   sub $2,1

@@ -1,17 +1,13 @@
 ; A346629: Number of n-digit positive integers that are the product of two integers ending with 2.
-; Submitted by Science United
+; Submitted by Coleslaw
 ; 1,4,45,450,4500,45000,450000,4500000,45000000,450000000,4500000000,45000000000,450000000000,4500000000000,45000000000000,450000000000000,4500000000000000,45000000000000000,450000000000000000,4500000000000000000,45000000000000000000,450000000000000000000
-; Formula: a(n) = b(n-1)*3^2, a(2) = 45, a(1) = 4, a(0) = 1, b(n) = b(n-1)*3^2+b(n-1), b(2) = 50, b(1) = 5, b(0) = 1
+; Formula: a(n) = max(floor((9*truncate(10^(n-1)))/2)-1,0)+1
 
-mov $1,1
-mov $2,2
-mov $3,1
-lpb $0
-  sub $0,1
-  pow $2,2
-  mov $1,$3
-  mul $1,$2
-  mov $2,3
-  add $3,$1
-lpe
+sub $0,1
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,9
+div $0,2
+trn $0,1
+add $0,1

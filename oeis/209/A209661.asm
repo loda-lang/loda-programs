@@ -4,7 +4,6 @@
 
 mov $1,$0
 seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
-sub $1,1
 seq $1,341885 ; a(n) is the sum of A000217(p) over the prime factors p of n, counted with multiplicity.
 add $1,1
 mod $1,2

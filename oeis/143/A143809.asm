@@ -1,5 +1,5 @@
 ; A143809: Eigentriangle of the Mobius transform, (A054525).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by zombie67 [MM]
 ; 1,-1,1,-1,0,0,0,-1,0,-1,-1,0,0,0,-2,1,-1,0,0,0,-3,-1,0,0,0,0,0,-3,0,0,0,1,0,0,0,-4,0,0,0,0,0,0,0,0,-3,1,-1,0,0,2,0,0,0,0,-3,-1,0,0,0,0,0,0,0,0,0,-1,0,1,0,1,0,3,0,0,0,0,0,-2,-1,0
 
 mov $3,$0
@@ -13,6 +13,7 @@ lpb $2
     add $1,1
     sub $0,$1
   lpe
+  pow $1,0
   seq $0,7554 ; Unique attractor for (RIGHT then MOBIUS) transform.
   mul $0,$4
 lpe

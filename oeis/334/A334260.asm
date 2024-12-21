@@ -11,6 +11,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,101256 ; Sum of composites <= n.
   mov $2,$5
   mul $2,$4

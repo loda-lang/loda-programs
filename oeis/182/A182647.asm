@@ -8,6 +8,7 @@ lpb $1
   mov $1,0
   mov $2,$0
   seq $2,114322 ; Largest number whose 4th power has n digits.
+  add $2,1
   seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   pow $2,4
   mul $0,0

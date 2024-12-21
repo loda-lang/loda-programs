@@ -2,7 +2,9 @@
 ; Submitted by UBT - Mikeejones
 ; 36,42,44,45,46,47,50,57,64,71,72,79,84,85,87,88,89,93,100,107,108,115,122,126,127,128,130,131,136,143,144,151,158,165,168,169,170,171,173,179,180,187,194,201,208,210,211,212,213,214
 
-add $0,5
+#offset 1
+
+add $0,4
 seq $0,44847 ; Positive integers having no fewer base-6 runs of even length than odd.
 mov $2,11
 add $2,$0

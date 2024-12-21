@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   nrt $3,2
+  add $3,1
   seq $3,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   mov $5,$1
   add $5,1

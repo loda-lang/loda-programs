@@ -1,18 +1,13 @@
 ; A067477: Smallest n-digit square starting with 7.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 729,7056,70225,700569,7001316,70006689,700025764,7000166889,70000459776,700001628921,7000003645504,70000012293201,700000047060196,7000000057996009,70000000472817424,700000000779640729
+; Formula: a(n) = (sqrtint(7*10^(n+2))+1)^2
 
-mov $2,$0
-add $2,2
-mov $0,10
-pow $0,$2
+add $0,2
+mov $1,10
+pow $1,$0
+mov $0,$1
 mul $0,7
-mov $1,$0
-lpb $0
-  mov $2,$1
-  div $2,$0
-  add $0,$2
-  div $0,2
-lpe
+nrt $0,2
 add $0,1
 pow $0,2

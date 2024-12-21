@@ -9,6 +9,5 @@ add $0,1
 sub $1,$0
 dif $1,2
 add $0,$1
-sub $0,1
 seq $0,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
 div $0,2

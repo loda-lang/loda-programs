@@ -6,7 +6,7 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,13
+  mov $3,14
   seq $3,43575 ; Numbers whose base-2 representation has exactly 8 runs.
   add $4,1
   add $5,1

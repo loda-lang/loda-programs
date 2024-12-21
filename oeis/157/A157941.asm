@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  add $3,1
   seq $3,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   add $1,$4
   mov $5,$1
@@ -16,11 +17,11 @@ lpb $2
   gcd $5,$3
   add $3,1
   div $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -10,7 +10,7 @@ lpb $2
   pow $3,3
   div $3,5
   seq $3,196564 ; Number of odd digits in decimal representation of n.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -7,9 +7,19 @@ add $0,1
 add $2,3
 pow $2,2
 lpb $2
-  mov $3,$1
-  seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-  sub $3,1
+  max $8,$1
+  mov $7,$8
+  add $8,1
+  seq $8,19554 ; Smallest number whose square is divisible by n.
+  div $7,$8
+  mov $6,$7
+  add $6,1
+  pow $6,2
+  seq $6,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  pow $6,2
+  mov $5,$1
+  div $5,$6
+  mov $3,$5
   seq $3,94828 ; Number of (s(0), s(1), ..., s(2n)) such that 0 < s(i) < 9 and |s(i) - s(i-1)| = 1 for i = 1,2,...,2n, s(0) = 1, s(2n) = 5.
   sub $3,1
   gcd $3,2
@@ -20,7 +30,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

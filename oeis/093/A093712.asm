@@ -5,6 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
   sub $0,$2
   mul $1,10

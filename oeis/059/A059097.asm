@@ -2,8 +2,11 @@
 ; Submitted by http://urfak.petrsu.ru/
 ; 0,1,2,3,4,6,7,9,10,11,12,21,22,28,29,30,31,36,37,54,55,57,58,110,171,784,786
 
+#offset 1
+
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,2
 lpb $2
   sub $2,1
@@ -12,12 +15,12 @@ lpb $2
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

@@ -9,11 +9,12 @@ pow $2,3
 lpb $2
   mov $4,$1
   trn $4,1
+  add $4,1
   seq $4,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   mov $3,$4
   div $3,2
   sub $3,3
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

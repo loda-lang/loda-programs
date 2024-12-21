@@ -6,4 +6,4 @@ lpb $0
   mul $0,2
   dif $0,10
 lpe
-cmp $0,0
+equ $0,0
