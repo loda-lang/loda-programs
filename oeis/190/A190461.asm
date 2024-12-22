@@ -9,9 +9,19 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
-  add $3,1
   mul $3,4
-  seq $3,19445 ; Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1 + ... + p_n.
+  add $3,5
+  mov $5,$3
+  add $5,$3
+  mul $5,2
+  add $5,$3
+  mul $5,$3
+  nrt $5,2
+  sub $5,$3
+  mov $6,$5
+  div $6,2
+  add $6,1
+  mul $3,$6
   sub $3,2
   gcd $3,4
   add $3,1

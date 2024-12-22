@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  add $3,1
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   equ $3,1
   sub $0,$3

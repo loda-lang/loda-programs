@@ -7,6 +7,7 @@ lpb $0
 lpe
 mov $1,$0
 seq $0,6068 ; a(n) is Gray-coded into n.
+add $0,1
 seq $0,75159 ; Run lengths in the binary expansion of n-1 gives the vector of exponents in prime factorization of a(n), with the least significant run corresponding to the exponent of the least prime, 2.
 gcd $1,$0
 mov $0,$1

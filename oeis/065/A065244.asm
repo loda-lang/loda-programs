@@ -12,7 +12,7 @@ lpb $2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $7,2
   add $1,3
   mul $2,$4

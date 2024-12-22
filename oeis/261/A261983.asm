@@ -7,6 +7,6 @@ trn $0,1
 mov $1,2
 pow $1,$0
 add $0,1
-seq $0,3242 ; Number of compositions of n such that no two adjacent parts are equal (Carlitz compositions).
+seq $0,3242 ; Number of compositions of n such that no two adjacent parts are equal (these are sometimes called Carlitz compositions).
 sub $1,$0
 mov $0,$1

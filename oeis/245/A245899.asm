@@ -2,9 +2,11 @@
 ; Submitted by atannir
 ; 1,1,2,3,7,14,37,80
 
+#offset 1
+
 mov $1,1
 mov $3,1
-sub $0,1
+sub $0,2
 lpb $0
   sub $0,1
   mov $4,$3

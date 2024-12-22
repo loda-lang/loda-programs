@@ -6,9 +6,9 @@ mov $1,$0
 add $1,1
 sub $0,1
 lpb $0
+  div $0,4
   add $1,1
   pow $2,0
-  div $0,4
 lpe
 add $2,$1
 mov $0,$2

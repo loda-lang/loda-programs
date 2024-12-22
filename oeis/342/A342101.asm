@@ -1,9 +1,25 @@
 ; A342101: Remove middle term and append, starting with [1, 2, 3].
 ; Submitted by Jamie Morken(w1)
 ; 1,2,3,1,3,1,2,1,3,1,2,3,1,1,2,1,3,1,2,3,1,3,1,2,1,1,2,3,1,1,2,1,3,1,2,3,1,3,1,2,1,3,1,2,3,1,1,2,1,1,2,3,1,3,1,2,1,1,2,3,1,1,2,1,3,1,2,3,1,3,1,2,1,3,1,2,3,1,1,2
-; Formula: a(n) = truncate(gcd(A091072(n),4)/2)+1
 
-seq $0,91072 ; Numbers whose odd part is of the form 4k+1. The bit to the left of the least significant bit of each term is unset.
+#offset 1
+
+sub $0,1
+mov $3,$0
+add $0,1
+add $3,5
+pow $3,2
+lpb $3
+  mov $4,$2
+  seq $4,38189 ; Bit to left of least significant 1-bit in binary expansion of n.
+  sub $0,$4
+  add $2,3
+  sub $3,$0
+lpe
+mov $0,$2
+sub $0,2
+div $0,3
+add $0,1
 mov $1,$0
 gcd $1,4
 mov $0,$1

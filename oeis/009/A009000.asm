@@ -7,13 +7,14 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $3,1
   seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
   div $3,2
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

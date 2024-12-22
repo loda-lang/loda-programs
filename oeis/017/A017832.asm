@@ -13,7 +13,7 @@ lpb $0
   lpb $4
     mov $7,$4
     seq $7,345378 ; Number of terms m <= n, where m is a term in A006497.
-    cmp $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
     sub $4,1

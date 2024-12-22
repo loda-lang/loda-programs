@@ -2,13 +2,14 @@
 ; Submitted by PDW
 ; 0,1,2,3,5,8,13,20,40,100
 
-add $0,1
+#offset 1
+
 mov $2,$0
 lpb $0
   bin $1,$0
   pow $3,2
   dif $3,$0
-  cmp $3,$2
+  equ $3,$2
   sub $3,$1
   sub $0,1
   mov $1,$4

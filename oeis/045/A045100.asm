@@ -9,12 +9,12 @@ mul $2,81
 lpb $2
   mov $3,$1
   seq $3,160381 ; Number of 1's in base-4 representation of n.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,36585 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
   add $3,1
   div $3,4
@@ -18,6 +19,6 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1

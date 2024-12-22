@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   mov $3,$1
   div $3,$5

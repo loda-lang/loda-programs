@@ -10,7 +10,7 @@ sub $1,$0
 add $1,1
 lpb $1
   add $3,$0
-  cmp $3,$0
+  equ $3,$0
   add $2,1
   div $2,2
   sub $2,$3

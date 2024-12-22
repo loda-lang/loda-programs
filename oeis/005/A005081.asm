@@ -1,11 +1,10 @@
 ; A005081: Sum of 4th powers of primes = 1 mod 4 dividing n.
 ; Submitted by bcavnaugh
 ; 0,0,0,0,625,0,0,0,0,625,0,0,28561,0,625,0,83521,0,0,625,0,0,0,0,625,28561,0,0,707281,625,0,0,0,83521,625,0,1874161,0,28561,625,2825761,0,0,0,625,0,0,0,0,625,83521,28561,7890481,0,625,0,0,707281,0,625,13845841,0,0,0,29186,0,0,83521,0,625,0,0,28398241,1874161,625,0,0,28561,0,625
-; Formula: a(n) = A005068(A170818(n-1)-1)
+; Formula: a(n) = A005068(A170818(n)-1)
 
 #offset 1
 
-sub $0,1
 seq $0,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
 sub $0,1
 seq $0,5068 ; Sum of 4th powers of odd primes dividing n.

@@ -11,7 +11,6 @@ lpb $0
   equ $3,1
   sub $3,$1
   bin $3,$0
-  mul $3,2
   sub $5,1
   add $1,2
   mov $4,$5
@@ -19,10 +18,6 @@ lpb $0
   add $2,1
   mul $4,$3
   div $4,$2
-  max $6,1
   add $6,$4
 lpe
 mov $0,$6
-sub $0,3
-div $0,2
-add $0,1

@@ -9,6 +9,7 @@ add $3,3
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $4,1
   add $4,$1
