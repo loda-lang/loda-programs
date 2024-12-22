@@ -5,8 +5,6 @@
 mul $0,2
 add $0,1
 lpb $0
-  trn $0,1
-  add $0,1
   seq $0,40 ; The prime numbers.
   mov $2,$0
   seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

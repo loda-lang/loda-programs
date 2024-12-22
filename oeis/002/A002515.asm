@@ -1,23 +1,34 @@
 ; A002515: Lucasian primes: p == 3 (mod 4) with 2*p+1 prime.
-; Submitted by Fardringle
+; Submitted by [SG]ATA-Rolf
 ; 3,11,23,83,131,179,191,239,251,359,419,431,443,491,659,683,719,743,911,1019,1031,1103,1223,1439,1451,1499,1511,1559,1583,1811,1931,2003,2039,2063,2339,2351,2399,2459,2543,2699,2819,2903,2939,2963,3023,3299,3359,3491,3539,3623,3779,3803,3851,3863,3911,4019,4211,4271,4391,4871,4919,4943,5003,5039,5051,5171,5231,5279,5303,5399,5639,5711,5903,6131,6263,6323,6491,6551,6563,6899
 
+add $0,1
+mov $1,4
 mov $2,$0
-mul $2,2
-pow $2,5
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,3
-  mov $4,$1
-  add $4,$1
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $3,$1
-  sub $3,$4
-  mul $4,$3
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$4
-  add $1,1
+  mov $5,0
+  max $3,$1
+  add $3,3
+  lpb $3
+    gcd $5,3
+    mov $6,$3
+    div $6,6
+    lpb $6
+      add $6,1
+      mov $4,$3
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $3,$5
+    pow $3,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $1,8
   sub $2,$0
 lpe
 mov $0,$1
-add $0,3
+div $0,2
+add $0,1

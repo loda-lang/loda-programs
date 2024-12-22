@@ -2,6 +2,9 @@
 ; Submitted by gemini8
 ; 1,8,5,4,8,0,2,0,1
 
+#offset -22
+
+add $0,22
 mov $1,1
 add $1,$0
 mov $2,1

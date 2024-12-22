@@ -12,15 +12,14 @@ lpb $3
     add $3,$1
     mov $4,$0
     mod $4,$2
-    cmp $4,0
+    equ $4,0
     mov $1,2
     sub $5,$4
   lpe
   trn $0,3
   add $2,2
   mov $4,$0
-  cmp $4,1
-  cmp $4,0
+  neq $4,1
   sub $3,$4
 lpe
 mov $0,$2

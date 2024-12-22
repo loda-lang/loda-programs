@@ -1,24 +1,33 @@
 ; A101789: Safe primes of the form 8*k-1: primes of the form 8*k-1 such that 4*k-1 is also a prime.
-; Submitted by mmonnin
+; Submitted by [SG]ATA-Rolf
 ; 7,23,47,167,263,359,383,479,503,719,839,863,887,983,1319,1367,1439,1487,1823,2039,2063,2207,2447,2879,2903,2999,3023,3119,3167,3623,3863,4007,4079,4127,4679,4703,4799,4919,5087,5399,5639,5807,5879,5927,6047,6599,6719,6983,7079,7247,7559,7607,7703,7727,7823,8039,8423,8543,8783,9743,9839,9887,10007,10079,10103,10343,10463,10559,10607,10799,11279,11423,11807,12263,12527,12647,12983,13103,13127,13799
 
+add $0,1
+mov $1,4
 mov $2,$0
-mul $2,2
-pow $2,5
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,3
-  mov $4,$1
-  add $4,$1
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $3,$1
-  sub $3,$4
-  mul $4,$3
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$4
-  add $1,1
+  mov $5,0
+  max $3,$1
+  add $3,3
+  lpb $3
+    gcd $5,3
+    mov $6,$3
+    div $6,6
+    lpb $6
+      add $6,1
+      mov $4,$3
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $3,$5
+    pow $3,2
+    mov $5,1
+  lpe
+  sub $0,$5
+  add $1,8
   sub $2,$0
 lpe
 mov $0,$1
-mul $0,2
-add $0,7
+add $0,3

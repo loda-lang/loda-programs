@@ -7,7 +7,29 @@ mov $5,2
 lpb $5
   sub $5,1
   mov $0,$2
-  seq $0,35339 ; 5th column of Wythoff array.
+  add $0,1
+  mov $7,$0
+  add $7,$0
+  mul $7,2
+  add $7,$0
+  mul $7,$0
+  nrt $7,2
+  add $7,$0
+  div $7,2
+  add $0,$7
+  mov $6,$0
+  add $6,$0
+  mul $6,2
+  add $6,$0
+  mul $6,$0
+  nrt $6,2
+  add $6,$0
+  div $6,2
+  add $0,$6
+  mul $0,2
+  add $6,$0
+  mov $0,$6
+  sub $0,5
   sub $4,$3
   sub $4,$1
   mul $4,2

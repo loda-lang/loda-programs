@@ -12,8 +12,7 @@ lpb $0
   mov $5,0
   sub $5,$3
   sub $0,1
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   sub $4,$3
   bin $4,$0
   mul $4,$5

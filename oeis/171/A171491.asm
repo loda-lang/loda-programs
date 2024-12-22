@@ -11,13 +11,12 @@ lpb $2
   seq $5,55642 ; Number of digits in the decimal expansion of n.
   mov $3,$1
   mod $3,$5
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

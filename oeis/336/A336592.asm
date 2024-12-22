@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,332730 ; a(n) = Sum_{d|n} tau(d/gcd(d, n/d)), where tau = A000005.
   mod $3,2
   sub $0,$3
