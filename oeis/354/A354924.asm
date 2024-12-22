@@ -4,5 +4,4 @@
 
 add $0,1
 dif $0,2
-sub $0,1
 seq $0,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.

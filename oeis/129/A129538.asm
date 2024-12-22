@@ -3,6 +3,7 @@
 
 add $0,1
 max $1,$0
+add $1,1
 seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
 mul $0,$1
 add $0,1

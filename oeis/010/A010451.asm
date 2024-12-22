@@ -2,6 +2,9 @@
 ; Submitted by TankbusterGames
 ; 0,1,4,9,10,16,19,25,31,34,36,40,45,46,49,54,55,61,64,70,76,79,81,85
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
@@ -24,7 +27,7 @@ lpb $2
   add $1,$7
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

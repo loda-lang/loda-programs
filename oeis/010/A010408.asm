@@ -2,6 +2,9 @@
 ; Submitted by [TA]crashtech
 ; 0,1,2,3,4,6,7,8,9,12,14,16,17,18,21,24,25,27,28,32,34,36,37,42
 
+#offset 1
+
+sub $0,1
 mov $1,-1
 mov $2,$0
 add $2,9
@@ -15,7 +18,7 @@ lpb $2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,4
 lpe

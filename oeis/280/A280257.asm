@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   max $5,$1
+  add $5,1
   seq $5,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mov $3,$1
   mul $3,$5

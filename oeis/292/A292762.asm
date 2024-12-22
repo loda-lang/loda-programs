@@ -12,6 +12,7 @@ lpb $2
   dif $3,2
   sub $3,1
   max $6,$3
+  add $6,1
   seq $6,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $1,1
   mul $3,$6
@@ -23,7 +24,7 @@ lpb $2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,10448 ; Squares mod 87.
   add $0,1
   add $1,1

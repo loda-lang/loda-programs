@@ -4,6 +4,7 @@
 
 lpb $0
   max $2,$0
+  add $2,1
   seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mov $1,$0
   mul $1,$2

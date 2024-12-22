@@ -10,8 +10,9 @@ lpb $2
   mov $3,$1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $4,$1
+  add $4,1
   seq $4,10554 ; a(n) = phi(phi(n)), where phi is the Euler totient function.
-  cmp $3,$4
+  equ $3,$4
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -10,7 +10,7 @@ lpb $2
   sub $2,$0
   mov $3,$1
   seq $3,135376 ; a(n) is the smallest prime that does not divide n(n+1)/2.
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
 lpe

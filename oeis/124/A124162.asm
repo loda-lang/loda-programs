@@ -12,7 +12,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
   sub $0,1
   seq $0,18805 ; Number of elements in the set {(x,y): 1 <= x,y <= n, gcd(x,y)=1}.

@@ -6,6 +6,7 @@ add $0,1
 dif $0,2
 sub $0,1
 max $2,$0
+add $2,1
 seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
 mul $0,$2
 add $0,$2

@@ -2,6 +2,9 @@
 ; Submitted by Landjunge
 ; 0,1,4,6,9,16,19,21,24,25,31,34,36,39,46,49,51,54,61,64,66,69
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
@@ -24,7 +27,7 @@ lpb $2
   add $1,$7
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

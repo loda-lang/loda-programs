@@ -2,6 +2,9 @@
 ; Submitted by fzs600
 ; 2,7,13,22,34,51,70,94,121,153
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   mov $2,$0

@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w4)
 ; 0,1,2,4,8,9,13,15,16,17,18,19,21,25,26,30,32,33
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $3,$0
 lpb $3

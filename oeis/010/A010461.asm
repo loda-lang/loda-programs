@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,4,9,16,21,24,25,29,36,41,44,49,56,61,64,69,76,81,84,89,96
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2

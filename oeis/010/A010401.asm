@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 0,1,4,9,16,20,24,25,36
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 add $2,180

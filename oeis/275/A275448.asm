@@ -14,7 +14,6 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
   seq $0,308616 ; Number of well-formed formulas of length n in a formal propositional language with one unitary operator, one binary operator, and one propositional variable.
   mul $1,$0
   add $3,$1

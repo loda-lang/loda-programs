@@ -2,6 +2,9 @@
 ; Submitted by William Michael Kanar
 ; 1,2,5,15,50,180,686,2731
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $4,2

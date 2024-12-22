@@ -1,24 +1,25 @@
 ; A203409: Indices of heptagonal numbers that are also decagonal.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 1,15,1075,21201,1549717,30571395,2234690407,44083929957,3222422016745,63568996426167,4646730313455451,91666448762602425,6700581889580743165,132182955546676270251,9662234438045118188047,190607730231858419099085,13932935359079170846420177
 
-mov $2,1
+#offset 1
+
+sub $0,1
+mov $4,1
 add $0,1
 lpb $0
-  mov $3,$0
-  mov $4,$1
-  mul $0,2
+  mov $1,$3
+  mov $2,$0
+  add $4,$3
   sub $0,1
-  div $0,2
-  add $2,$1
-  mod $3,2
-  mul $3,6
-  add $3,2
-  mul $3,$2
-  add $1,$3
+  mod $2,2
+  mul $2,6
   add $2,2
-  add $4,$2
+  mul $2,$4
+  add $3,$2
+  add $4,2
+  add $1,$4
 lpe
-mul $4,$3
-mov $0,$4
+mul $1,$2
+mov $0,$1
 div $0,24

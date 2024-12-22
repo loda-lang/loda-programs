@@ -2,6 +2,9 @@
 ; Submitted by roundup
 ; 0,1,4,7,9,10,13,16,19,22,25
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   mov $1,10

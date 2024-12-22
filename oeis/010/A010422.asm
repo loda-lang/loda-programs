@@ -12,7 +12,7 @@ lpb $2
   seq $3,11595 ; Legendre symbol (n,61).
   add $3,1
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   mul $4,2
   sub $0,$3
   add $1,2

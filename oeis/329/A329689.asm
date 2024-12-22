@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,308616 ; Number of well-formed formulas of length n in a formal propositional language with one unitary operator, one binary operator, and one propositional variable.
   mov $4,$3
   mul $4,$0

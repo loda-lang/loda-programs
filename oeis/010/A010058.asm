@@ -13,7 +13,7 @@ lpb $2
   bin $1,$0
   add $0,1
   div $1,$0
-  cmp $1,$4
+  equ $1,$4
   add $3,$1
 lpe
 mov $0,$3

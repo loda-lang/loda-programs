@@ -14,10 +14,10 @@ lpb $4
   sub $4,1
   mov $2,$5
   sub $2,$4
-  sub $2,1
   mov $1,$2
   seq $1,10766 ; Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
   seq $1,2321 ; Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.
+  sub $2,1
   seq $2,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
   mul $2,$1
   add $3,$2

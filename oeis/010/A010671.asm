@@ -2,8 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,2,2,2,2,6,8
 
+#offset 1
+
 mov $1,$0
-add $1,1
+sub $0,1
 lpb $1
   mov $3,$1
   sub $3,1

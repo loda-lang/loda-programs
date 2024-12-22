@@ -11,6 +11,7 @@ mov $1,1
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,188093 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=6, [ ]=floor.
   equ $3,0
   sub $0,$3

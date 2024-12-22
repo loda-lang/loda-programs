@@ -7,6 +7,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
+  add $1,1
   seq $1,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   sub $0,$1
   add $2,12

@@ -6,11 +6,11 @@ mov $2,$0
 pow $2,4
 lpb $2
   sub $2,1
-  add $1,3
   mov $3,$1
+  add $3,4
   seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   sub $0,$3
-  add $1,2
+  add $1,5
   sub $2,$0
 lpe
 mov $0,$1

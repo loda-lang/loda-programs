@@ -11,7 +11,6 @@ lpb $2
   mov $3,$1
   add $3,1
   dif $3,2
-  sub $3,1
   seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   gcd $3,4
   add $3,1

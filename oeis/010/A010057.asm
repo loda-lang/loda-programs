@@ -10,5 +10,5 @@ lpb $1
   add $4,$3
   trn $1,$4
 lpe
-cmp $5,$2
+equ $5,$2
 mov $0,$5

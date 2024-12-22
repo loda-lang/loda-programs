@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 1,1,1,1,2,2,2,2,4,4,7,10
 
+#offset 1
+
+sub $0,1
 lpb $0
   bin $0,2
   add $2,$1

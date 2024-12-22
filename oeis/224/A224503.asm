@@ -9,7 +9,6 @@ add $0,2
 lpb $2
   sub $2,1
   mov $3,$1
-  sub $3,1
   seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $1,$0
   add $2,$3

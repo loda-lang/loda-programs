@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   max $4,$0
+  add $4,1
   seq $4,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mov $2,$0
   mul $2,$4

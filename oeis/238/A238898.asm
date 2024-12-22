@@ -7,6 +7,7 @@ trn $0,1
 sub $1,$0
 lpb $0
   max $3,$0
+  add $3,1
   seq $3,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   mov $2,$0
   mul $2,$3

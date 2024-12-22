@@ -37,6 +37,6 @@ add $0,$1
 dif $0,2
 sub $0,2
 div $0,2
-cmp $1,2
+equ $1,2
 add $0,$1
 add $0,1

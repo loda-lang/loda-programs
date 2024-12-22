@@ -3,4 +3,6 @@
 ; 0,1,2,4,8,9,13,15,16
 ; Formula: a(n) = A010395(n)
 
+#offset 1
+
 seq $0,10395 ; Squares mod 34.

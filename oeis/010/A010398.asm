@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 0,1,3,4,7,9,10,11,12,16,21,25,26,27,28,30,33,34,36
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2

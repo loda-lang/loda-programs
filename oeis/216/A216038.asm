@@ -1,10 +1,11 @@
 ; A216038: Number of isomorphism classes of unstretchable simplicial arrangements of n pseudolines in the real projective plane that satisfy Pappus's theorem.
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0,1,0
 
+#offset 2
+
 mov $1,8
 mov $2,1
 mov $3,2
-add $0,2
 lpb $0
   trn $0,$2
   add $3,$1
