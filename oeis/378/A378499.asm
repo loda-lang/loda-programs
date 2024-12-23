@@ -1,0 +1,10 @@
+; A378499: a(n) is the number whose base-4 digits are 1 followed by the first n-1 terms of the periodic sequence with initial period 0,3,2.
+; Submitted by Science United
+; 1,4,19,78,312,1251,5006,20024,80099,320398,1281592,5126371,20505486,82021944,328087779,1312351118,5249404472,20997617891,83990471566,335961886264,1343847545059,5375390180238,21501560720952,86006242883811,344024971535246
+; Formula: a(n) = floor((11*4^n)/9)
+
+mov $1,4
+pow $1,$0
+mul $1,11
+div $1,9
+mov $0,$1
