@@ -1,8 +1,18 @@
 ; A010144: Continued fraction for sqrt(59).
 ; Submitted by Jon Maiga
 ; 7,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1,2,7,2,1,14,1
-; Formula: a(n) = A047249(A010126(n))-3
 
-seq $0,10126 ; Continued fraction for sqrt(22).
-seq $0,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
-sub $0,3
+mov $2,6
+lpb $0
+  gcd $2,$0
+  mul $2,4
+  div $2,3
+  add $2,2
+  mov $0,0
+lpe
+mov $0,$2
+sub $0,2
+mov $1,$0
+div $1,3
+mul $1,3
+add $0,$1

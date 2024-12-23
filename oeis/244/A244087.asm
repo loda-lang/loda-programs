@@ -1,23 +1,33 @@
 ; A244087: Numbers n such that 4*n+3 and 8*n+7 are prime.
-; Submitted by emoga
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,2,5,20,32,44,47,59,62,89,104,107,110,122,164,170,179,185,227,254,257,275,305,359,362,374,377,389,395,452,482,500,509,515,584,587,599,614,635,674,704,725,734,740,755,824,839,872,884,905,944,950,962,965,977,1004,1052,1067,1097,1217,1229,1235,1250,1259,1262,1292,1307,1319,1325,1349,1409,1427,1475,1532,1565,1580,1622,1637,1640,1724
 
+add $0,1
+mov $1,4
 mov $2,$0
-mul $2,2
-pow $2,5
+pow $2,4
 lpb $2
-  sub $2,1
-  add $1,3
-  mov $4,$1
-  add $4,$1
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mov $3,$1
-  sub $3,$4
-  mul $4,$3
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$4
-  add $1,1
+  mov $5,0
+  max $3,$1
+  add $3,3
+  lpb $3
+    gcd $5,3
+    mov $6,$3
+    div $6,6
+    lpb $6
+      add $6,1
+      mov $4,$3
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $3,$5
+    pow $3,2
+    mov $5,1
+  lpe
+  add $1,8
+  sub $0,$5
   sub $2,$0
 lpe
 mov $0,$1
-div $0,4
+div $0,8

@@ -15,7 +15,11 @@ lpb $2
   sub $0,$2
   sub $0,1
   seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-  seq $0,114525 ; Triangle of coefficients of the Lucas (w-)polynomials.
+  mov $4,0
+  pow $4,$0
+  seq $0,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
+  gcd $0,$4
+  add $0,$4
   mul $1,2
   trn $1,$0
   add $1,$0

@@ -15,6 +15,7 @@ lpb $2
   add $5,2
   seq $5,47994 ; Unitary totient (or unitary phi) function uphi(n).
   mov $3,$1
+  add $3,1
   seq $3,11772 ; Smallest number m such that m(m+1)/2 is divisible by n.
   gcd $5,$3
   div $3,$5

@@ -9,7 +9,10 @@ lpb $2
   add $5,1
   seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $5,1
-  seq $5,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  seq $5,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $5,3
+  mul $5,2
+  add $5,1
   div $5,2
   mov $3,$1
   seq $3,46079 ; Number of Pythagorean triangles with leg n.

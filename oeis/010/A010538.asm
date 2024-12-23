@@ -1,38 +1,13 @@
 ; A010538: Decimal expansion of square root of 87.
-; Submitted by PDW
+; Submitted by zombie67 [MM]
 ; 9,3,2,7,3,7,9,0,5,3,0,8,8,8,1,5,0,4,5,5,5,4,4,7,5,5,4,2,3,2,0,5,5,6,9,8,3,2,7,6,2,4,0,6,9,4,1,9,1,6,5,4,6,7,1,0,5,6,1,9,7,2,9,8,4,4,6,7,8,4,5,4,8,8,0,7,2,4,9,6
+; Formula: a(n) = -10*truncate(sqrtint(87*10^(2*n))/10)+sqrtint(87*10^(2*n))
 
-mov $1,1
-mov $2,1
-mov $4,$0
-add $4,3
-mul $4,2
-mov $7,10
-pow $7,$4
-mov $3,$0
-add $3,7
-lpb $3
-  sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,87
-  mov $5,$1
-  pow $5,2
-  add $4,$5
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  mov $8,$4
-  div $8,$7
-  max $8,2
-  mov $1,$4
-  div $1,$8
-  mov $2,$6
-  div $2,$8
-lpe
-mov $3,10
-pow $3,$0
-div $2,$3
-div $1,$2
-mod $1,10
+mul $0,2
+mov $1,10
+pow $1,$0
 mov $0,$1
+mul $0,88
+sub $0,$1
+nrt $0,2
+mod $0,10

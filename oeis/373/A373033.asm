@@ -7,6 +7,7 @@ mov $1,1
 lpb $1
   sub $1,1
   mov $0,$2
+  add $0,1
   seq $0,23378 ; a(n+1) = a(n) converted to base 10 from base 4 (written in base 10); a(1)=4.
   div $2,255
 lpe

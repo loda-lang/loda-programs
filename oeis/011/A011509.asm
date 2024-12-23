@@ -8,7 +8,7 @@ mov $3,$0
 mul $3,8
 lpb $3
   mov $5,$3
-  cmp $5,0
+  equ $5,0
   div $2,9
   add $3,$5
   max $6,$2

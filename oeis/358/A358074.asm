@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,12245 ; Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
   mov $3,1
   add $3,$4

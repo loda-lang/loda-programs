@@ -7,6 +7,7 @@ lpb $1
   sub $1,1
   mov $2,$1
   max $2,0
+  add $2,1
   seq $2,14301 ; Number of internal nodes of even outdegree in all ordered rooted trees with n edges.
   add $0,$2
 lpe

@@ -12,7 +12,14 @@ lpb $2
   add $3,1
   seq $3,3234 ; Numbers k such that A003231(A001950(k)) = A001950(A003231(k)) - 1.
   add $3,1
-  seq $3,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+  mov $4,$3
+  mul $4,4
+  add $4,$3
+  mul $4,$3
+  nrt $4,2
+  add $4,$3
+  mov $3,$4
+  div $3,2
   sub $3,2
   add $3,$1
   add $0,1

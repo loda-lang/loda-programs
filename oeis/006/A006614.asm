@@ -8,7 +8,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,187970 ; Positions of 0 in A187969; complement of A187971.
-  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $3,2
+  mul $3,2
+  mov $5,$3
+  nrt $5,2
+  mov $3,$5
   sub $3,1
   mov $4,$2
   add $0,1

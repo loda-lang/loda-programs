@@ -10,7 +10,6 @@ pow $2,$0
 mov $0,2
 pow $0,$1
 add $2,$0
-mov $3,0
 mov $4,1
 mov $0,$2
 lpb $0

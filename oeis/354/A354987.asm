@@ -9,6 +9,7 @@ mov $1,$0
 mul $1,2
 add $1,2
 seq $1,47994 ; Unitary totient (or unitary phi) function uphi(n).
+add $0,1
 seq $0,11772 ; Smallest number m such that m(m+1)/2 is divisible by n.
 gcd $1,$0
 div $0,$1

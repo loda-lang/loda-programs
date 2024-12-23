@@ -18,7 +18,7 @@ lpb $0
   mov $5,1
   lpb $0
     dif $0,$2
-    cmp $4,0
+    equ $4,0
     add $5,1
   lpe
   bin $5,$4

@@ -9,6 +9,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,249942 ; Ranks of single 1's in the Kolakoski sequence A000002.
   mov $1,$0
   sub $1,1

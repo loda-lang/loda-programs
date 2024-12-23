@@ -17,7 +17,7 @@ lpb $0
   mul $0,2
   sub $0,1
   mul $4,$5
-  cmp $4,$3
+  equ $4,$3
   mul $4,$0
   sub $2,$4
   sub $3,$5

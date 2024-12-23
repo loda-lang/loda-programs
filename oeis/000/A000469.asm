@@ -11,10 +11,9 @@ pow $3,2
 lpb $3
   mov $4,$2
   seq $4,74823 ; a(n) = 2^omega(n)*mu(n)^2.
-  mov $1,11
-  seq $1,173862 ; a(n) = A158772(n-1)/21.
-  mov $6,11
-  mod $6,$1
+  mov $7,8
+  mov $1,8
+  mov $6,3
   min $6,$4
   mov $4,$6
   mod $4,2

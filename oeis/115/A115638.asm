@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,115637 ; A divide-and-conquer sequence.
+  seq $0,115637 ; In the binary expansion of n+2, transform 0->1 and 1->0 then interpret as base 4.
   mov $2,$3
   mul $2,$0
   add $4,$2

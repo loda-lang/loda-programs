@@ -10,6 +10,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,5277 ; Nontotients: even numbers k such that phi(m) = k has no solution.
 lpe
 min $3,1

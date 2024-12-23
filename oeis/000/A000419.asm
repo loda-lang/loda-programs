@@ -13,7 +13,10 @@ lpb $2
   seq $3,408 ; Numbers that are the sum of three nonzero squares.
   mov $5,$3
   sub $3,1
-  seq $3,94247 ; Expansion of (phi(-q^5)^2 - phi(-q)^2) / 4 in powers of q where phi() is a Ramanujan theta function.
+  mov $6,-1
+  pow $6,$3
+  seq $3,53694 ; Number of self-conjugate 5-core partitions of n.
+  mul $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

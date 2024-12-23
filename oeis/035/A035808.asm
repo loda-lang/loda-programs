@@ -1,17 +1,16 @@
 ; A035808: Coordination sequence for lattice D*_46 (with edges defined by l_1 norm = 1).
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 1,92,4232,129812,2987792,55053260,846141848,11160045188,128975126048,1327092434748,12312430500520,104062494360052,808072815510832,5806722035765932,38851092934042552,243319195759791460,1433080081936088128
 
-add $0,2
+add $0,1
 lpb $0
-  mov $2,$0
-  sub $0,2
-  add $2,43
+  sub $0,1
+  mov $2,45
+  add $2,$0
   bin $2,$0
   mov $3,46
   bin $3,$1
   mul $3,$2
-  add $0,1
   add $1,1
   add $4,$3
 lpe

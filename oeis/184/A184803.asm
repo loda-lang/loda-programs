@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,22839 ; Beatty sequence for sqrt(5).
   sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -10,7 +10,10 @@ lpb $2
   mov $3,$1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$1
-  seq $4,62401 ; a(n) = phi(sigma(n)).
+  add $4,1
+  seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $4,1
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $4,$3
   mov $3,$4
   equ $3,0

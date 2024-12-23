@@ -11,7 +11,9 @@ lpb $2
   seq $0,7093 ; Numbers in base 7.
   seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
   mod $0,10
-  seq $0,33031 ; Squarefree kernels of 3-smooth numbers.
+  add $0,1
+  seq $0,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
+  gcd $0,210
   sub $0,1
   add $3,$0
 lpe

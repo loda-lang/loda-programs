@@ -1,23 +1,20 @@
 ; A270765: Total sum of the sizes of all blocks with minimal element 2 in all set partitions of {1,2,...,n}.
-; Submitted by PDW
+; Submitted by Goldislops
 ; 1,4,16,67,299,1429,7307,39848,230884,1416047,9160977,62316137,444424965,3314372728,25786012724,208842481687,1757367578867,15337268316933,138603393210479,1295082562497364,12494759080718152,124314054484739035,1274003246005735449,13434189322048775753,145615811301833414457,1620902206197160156140,18513053193387346724056,216779466164184956441499,2600428563532238592343051,31933477096330089813155781,401169609055119351913195171,5152441867010251350294532224,67614442625269517429889608748
 
-mov $1,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$1
-  add $0,$3
-  trn $0,1
-  add $0,3
-  bin $0,2
-  sub $0,2
-  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-  seq $0,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
-  mov $4,$3
-  mul $4,$0
-  add $2,$4
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $1,$0
+  sub $1,$2
+  mov $3,$1
+  add $3,$2
+  bin $3,$1
+  add $1,1
+  seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $3,$1
+  add $5,$3
+  add $4,$5
 lpe
-mul $1,$0
-add $1,$2
-mov $0,$1
+mov $0,$4

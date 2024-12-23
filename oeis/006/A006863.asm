@@ -9,8 +9,12 @@ lpb $0
   add $2,1
   seq $2,350972 ; E.g.f. = tan(x).
   add $0,1
-  seq $0,115490 ; Number of monic irreducible polynomials of degree 4 in GF(2^n)[x].
-  gcd $2,$0
+  mov $3,4
+  pow $3,$0
+  bin $3,2
+  div $3,2
+  gcd $2,$3
+  mov $0,$3
   div $0,$2
   mul $0,8
   sub $0,1

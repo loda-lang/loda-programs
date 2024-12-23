@@ -9,9 +9,12 @@ pow $2,2
 lpb $2
   mov $5,$1
   seq $5,55642 ; Number of digits in the decimal expansion of n.
+  mov $7,3
+  pow $7,$1
+  mul $7,11
   mov $3,$1
-  seq $3,120354 ; a(n) = 11*3^n.
-  mov $6,$3
+  mov $3,$7
+  mov $6,$7
   mod $6,$5
   neq $6,0
   sub $0,$6

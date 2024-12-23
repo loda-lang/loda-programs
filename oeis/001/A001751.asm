@@ -12,7 +12,12 @@ lpb $2
   add $3,1
   mov $5,$3
   seq $5,8472 ; Sum of the distinct primes dividing n.
-  seq $3,105637 ; a(n) = a(n-2) + a(n-3) - a(n-5).
+  mov $6,$3
+  gcd $6,3
+  div $6,2
+  div $3,2
+  add $3,1
+  sub $3,$6
   div $3,$5
   equ $3,0
   sub $0,$3

@@ -19,7 +19,8 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  seq $0,3962 ; Completely multiplicative with a(prime(k)) = floor( (prime(k+1)+1)/2 ) for k-th prime prime(k).
+  seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  seq $0,3960 ; Fully multiplicative with a(p) = [ (p+1)/2 ] for prime p.
   mul $0,$4
   add $1,$0
 lpe

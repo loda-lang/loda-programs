@@ -9,8 +9,9 @@ lpb $2
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
   mul $3,2
-  seq $3,11595 ; Legendre symbol (n,61).
+  pow $3,90
   add $3,1
+  mod $3,61
   sub $3,$4
   equ $3,0
   mul $4,2
