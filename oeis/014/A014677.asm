@@ -1,5 +1,5 @@
 ; A014677: First differences of A001468.
-; Submitted by Kotenok2000
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,-1,1,0,-1,1,-1,1,0,-1,1,0,-1,1,-1,1,0,-1,1,-1,1,0,-1,1,0,-1,1,-1,1,0,-1,1,0,-1,1,-1,1,0,-1,1,-1,1,0,-1,1,0,-1,1,-1,1,0,-1,1,-1,1,0,-1,1,0,-1,1,-1,1,0,-1,1,0,-1,1,-1,1,0,-1,1,-1,1,0,-1,1,0
 
 mov $3,$0
@@ -7,13 +7,28 @@ mov $5,2
 lpb $5
   sub $5,1
   add $0,$5
+  mov $6,$0
+  add $6,$0
+  mul $6,2
+  add $6,$0
+  mul $6,$0
+  nrt $6,2
+  add $6,$0
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+  mov $4,$6
+  div $4,2
+  add $4,2
+  mov $7,$4
+  add $7,$4
+  mul $7,2
+  add $7,$4
+  mul $7,$4
+  nrt $7,2
+  add $7,$4
+  mov $4,$7
+  mod $4,2
   mov $2,$5
   mul $2,$4
-  mul $0,$5
   add $1,10
   add $1,$2
 lpe

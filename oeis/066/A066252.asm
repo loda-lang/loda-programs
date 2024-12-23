@@ -13,6 +13,7 @@ lpb $1
   seq $2,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mul $2,2
   sub $2,1
+  add $0,1
   seq $0,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
   mul $0,2
   sub $2,$0

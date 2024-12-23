@@ -11,7 +11,8 @@ add $0,1
 pow $3,5
 lpb $3
   mov $4,$2
-  seq $4,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+  add $4,1
+  seq $4,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
   mul $4,2
   add $4,1
   mov $5,$2

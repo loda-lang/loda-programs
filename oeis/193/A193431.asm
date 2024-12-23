@@ -11,10 +11,10 @@ lpb $2
   mov $4,$1
   mov $0,$3
   sub $0,$2
-  add $0,1
   mov $7,$0
+  add $7,2
   seq $7,261138 ; The concatenation of 123456...n and the reverse of this number.
-  add $0,1
+  add $0,2
   mov $6,$0
   mov $0,10
   pow $0,$6

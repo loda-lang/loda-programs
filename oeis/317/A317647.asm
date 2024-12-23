@@ -8,6 +8,7 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $8,$1
+  add $8,1
   seq $8,261138 ; The concatenation of 123456...n and the reverse of this number.
   mov $3,$1
   add $3,1

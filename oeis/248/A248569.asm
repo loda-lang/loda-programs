@@ -2,7 +2,9 @@
 ; Submitted by Science United
 ; 3,3,2,9,4,6,0,4
 
-add $0,1
+#offset 6
+
+sub $0,5
 seq $0,45136 ; Numbers whose base-4 representation contains no 2's and exactly three 3's.
 seq $0,57300 ; Binary counter with odd/even bit positions swapped; base-4 counter with 1's replaced by 2's and vice versa.
 add $0,1

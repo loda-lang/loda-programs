@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,349394 ; a(p^e) = p^(e-1) for prime powers, a(n) = 0 for all other n; Dirichlet convolution of A003415 (arithmetic derivative of n) with A055615 (Dirichlet inverse of n).
   add $3,$0
 lpe

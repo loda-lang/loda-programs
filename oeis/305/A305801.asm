@@ -5,7 +5,8 @@
 mov $1,$0
 lpb $1
   mov $2,$1
-  seq $2,66246 ; 0 unless n is a composite number A002808(k) when a(n) = k.
+  add $2,1
+  seq $2,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
   add $2,1
   bin $1,152833
 lpe

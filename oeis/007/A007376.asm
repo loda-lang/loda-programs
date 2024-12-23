@@ -8,6 +8,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $5,$2
+  add $5,1
   seq $5,261138 ; The concatenation of 123456...n and the reverse of this number.
   add $2,1
   mov $4,$2

@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,174618 ; For n odd a(n) = a(n-2) + a(n-3), for n even a(n) = a(n-2) + a(n-5); with a(1) = 0, a(2) = 1.
   add $1,$2
 lpe

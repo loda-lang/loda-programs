@@ -13,6 +13,7 @@ lpb $2
   add $0,$3
   bin $2,$1
   mov $6,$0
+  add $6,1
   seq $6,261138 ; The concatenation of 123456...n and the reverse of this number.
   add $0,1
   mov $5,$0

@@ -10,6 +10,7 @@ lpb $0
   mov $3,$0
   max $3,0
   mov $6,$3
+  add $6,1
   seq $6,261138 ; The concatenation of 123456...n and the reverse of this number.
   add $3,1
   mov $5,$3

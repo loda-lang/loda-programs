@@ -12,6 +12,7 @@ lpb $4
   lpb $0
     mov $5,$2
     mov $2,$0
+    add $2,1
     seq $2,286665 ; {0->01}-transform of the Pell word, A171588.
     add $3,$2
     mul $0,$3
