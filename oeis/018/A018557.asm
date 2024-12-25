@@ -6,7 +6,7 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,8
+  mov $3,9
   seq $3,18443 ; Divisors of 418.
   pow $3,2
   add $3,2

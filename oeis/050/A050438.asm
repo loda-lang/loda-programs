@@ -5,5 +5,6 @@ add $0,1
 mov $1,12
 lpb $1
   sub $1,3
+  add $0,1
   seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
 lpe

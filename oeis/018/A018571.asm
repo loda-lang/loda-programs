@@ -15,7 +15,7 @@ lpb $0
     mov $4,650
     gcd $4,$2
     div $4,$2
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

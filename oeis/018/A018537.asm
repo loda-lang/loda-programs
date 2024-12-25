@@ -2,7 +2,10 @@
 ; Submitted by emoga
 ; 1,2,3,6,9,11,18,22,27,33,54,66,99,198,297,594
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,12
   add $2,1

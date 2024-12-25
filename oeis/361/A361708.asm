@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mul $1,$0
   add $3,$1

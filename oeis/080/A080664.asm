@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,18662 ; Divisors of 816.
   dif $2,4
   mov $3,$2

@@ -1,11 +1,24 @@
 ; A015613: a(n) = Sum_{i=1..n} phi(i) * (ceiling(n/i) - floor(n/i)).
 ; Submitted by Science United
 ; 0,0,1,2,5,6,11,14,19,22,31,34,45,50,57,64,79,84,101,108,119,128,149,156,175,186,203,214,241,248,277,292,311,326,349,360,395,412,435,450,489,500,541,560,583,604,649,664,705,724,755,778,829,846,885,908,943,970,1027,1042,1101,1130,1165,1196,1243,1262,1327,1358,1401,1424,1493,1516,1587,1622,1661,1696,1755,1778,1855,1886
-; Formula: a(n) = -n+A092249(n)-1
 
 sub $2,$0
-seq $0,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
-add $1,$0
+mov $3,0
+mov $5,3
+mov $6,0
+add $0,3
+lpb $0
+  sub $0,$5
+  mov $4,$0
+  max $4,0
+  seq $4,62570 ; a(n) = phi(2*n).
+  max $0,$6
+  add $3,$4
+  mov $5,1
+  add $6,1
+lpe
+add $1,$3
 add $2,$1
+mov $0,$3
 mov $0,$2
 sub $0,1

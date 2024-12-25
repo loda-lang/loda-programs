@@ -2,7 +2,8 @@
 ; Submitted by ThrasherX-17
 ; 1,2,13,19,26,38,247,494
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2

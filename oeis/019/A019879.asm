@@ -23,7 +23,7 @@ mul $1,5
 add $1,14
 mov $4,10
 pow $4,$0
-cmp $5,0
+equ $5,0
 div $2,$4
 add $2,$5
 div $1,$2

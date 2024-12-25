@@ -6,8 +6,17 @@ mov $3,$0
 add $3,2
 lpb $0
   mov $1,$0
-  seq $1,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+  add $1,1
+  mov $4,$1
+  mul $4,4
+  add $4,$1
+  mul $4,$1
+  nrt $4,2
+  sub $4,$1
+  div $4,2
   sub $0,1
+  mov $1,$4
+  add $1,1
   add $2,$1
 lpe
 add $2,2

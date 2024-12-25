@@ -2,8 +2,11 @@
 ; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 1,2,7,14,61,122,427,854
 
+#offset 1
+
 mov $1,1
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$0
   mod $3,2

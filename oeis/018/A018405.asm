@@ -11,7 +11,7 @@ lpb $0
     mov $1,696
     gcd $1,$2
     div $1,$2
-    cmp $1,0
+    equ $1,0
     sub $3,$1
   lpe
   add $2,1

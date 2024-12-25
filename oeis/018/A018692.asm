@@ -2,7 +2,10 @@
 ; Submitted by http://asterion.petrsu.ru/
 ; 1,2,4,7,14,28,31,62,124,217,434,868
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   add $1,8
   mul $1,7
@@ -13,7 +16,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

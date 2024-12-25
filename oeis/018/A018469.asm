@@ -2,7 +2,10 @@
 ; Submitted by Coleslaw
 ; 1,2,4,8,16,29,58,116,232,464
 
+#offset 1
+
 mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
   add $3,2

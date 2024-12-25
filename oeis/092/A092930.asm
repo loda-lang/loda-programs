@@ -12,6 +12,7 @@ lpb $5
   max $4,0
   add $4,1
   mov $6,$4
+  add $4,1
   seq $4,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mul $6,$4
   mul $0,$5

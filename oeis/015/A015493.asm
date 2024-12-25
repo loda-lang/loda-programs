@@ -11,7 +11,13 @@ lpb $1
   mov $3,$1
   seq $3,296891 ; Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
   sub $3,1
-  seq $3,15997 ; Inverse of 1988th cyclotomic polynomial.
+  mov $5,-1
+  pow $5,$3
+  add $5,1
+  dif $3,2
+  seq $3,15003 ; Inverse of 994th cyclotomic polynomial.
+  mul $3,$5
+  div $3,2
   mul $2,12
   add $2,50
   mov $4,$2

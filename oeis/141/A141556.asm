@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $7,$3
+  add $7,1
   seq $7,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mov $6,$1
   add $6,2

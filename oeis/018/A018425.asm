@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,384
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,1
 lpb $0

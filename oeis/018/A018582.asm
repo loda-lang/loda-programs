@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 1,2,3,6,9,18,37,74,111,222,333,666
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,1
 mov $3,1
@@ -13,10 +16,9 @@ lpb $8
     add $2,1
     mov $6,$2
     gcd $6,$3
+    neq $6,1
     mul $2,2
     add $2,6
-    cmp $6,1
-    cmp $6,0
     sub $5,$6
   lpe
   add $2,1
@@ -31,7 +33,7 @@ lpb $8
   mul $1,$7
   mov $3,$4
   mov $7,$0
-  cmp $7,0
+  equ $7,0
   sub $8,$9
   sub $9,$7
 lpe

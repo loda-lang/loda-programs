@@ -11,6 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,15919 ; Positive integers k such that 2^k == 2 (mod k).
   add $3,$0
   add $4,$3

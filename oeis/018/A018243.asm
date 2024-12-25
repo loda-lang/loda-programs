@@ -4,7 +4,24 @@
 
 mov $1,$0
 add $1,1
-cmp $1,2
-cmp $1,0
-seq $0,113788 ; Number of irreducible multiple zeta values at weight n.
+neq $1,2
+mov $2,0
+mov $4,$0
+bin $4,2
+add $4,$0
+add $4,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  mov $5,$0
+  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $6,0
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  seq $0,127687 ; Number of unlabeled maximal independent sets in the n-cycle graph.
+  mul $0,$5
+  add $2,$0
+lpe
+mov $0,$2
 mul $0,$1

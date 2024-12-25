@@ -10,7 +10,7 @@ lpb $0
     mov $1,528
     gcd $1,$2
     trn $1,$3
-    cmp $1,0
+    equ $1,0
     sub $3,$1
   lpe
   add $2,1

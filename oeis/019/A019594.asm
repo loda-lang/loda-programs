@@ -1,8 +1,38 @@
 ; A019594: Conway's "para-budding" sequence.
 ; Submitted by Aexoden
 ; 1,3,2,5,8,5,9,5,10,15,9,15,21,13,20,11,19,27,16,25,13,23,33,19,30,41,25,37,20,33,46,27,41,55,34,49,27,43,59,35,52,27,45,63,36,55,74,45,65,35,56,77,45,67,34,57,80,45,69,93,56,81,43,69,95,55,82,109,67,95,52,81,110,65,95,49,80,111,63,95
-; Formula: a(n) = A019587(truncate(A075317(n)/2))
 
-seq $0,75317 ; Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the first member of pairs.
+add $0,1
+mov $1,$0
+mul $1,5
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
+mov $0,$1
+mul $0,2
+sub $0,1
 div $0,2
-seq $0,19587 ; The left budding sequence: # of i such that 0<i<=n and 0 < {tau*i} <= {tau*n}, where {} is fractional part.
+mov $3,0
+mov $4,$0
+add $4,2
+lpb $0
+  mov $2,$0
+  add $2,1
+  mov $5,$2
+  mul $5,4
+  add $5,$2
+  mul $5,$2
+  nrt $5,2
+  sub $5,$2
+  div $5,2
+  sub $0,1
+  mov $2,$5
+  add $2,1
+  add $3,$2
+lpe
+add $3,2
+mov $0,$3
+mul $0,2
+sub $0,1
+mod $0,$4

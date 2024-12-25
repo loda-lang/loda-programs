@@ -10,6 +10,7 @@ lpb $5
   gcd $3,$0
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,16041 ; Primes that are palindromic in base 2 (but written here in base 10).
   mov $2,$5
   mul $2,$4

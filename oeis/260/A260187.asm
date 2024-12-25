@@ -7,6 +7,7 @@ mov $2,$0
 lpb $2
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,15053 ; Smallest positive integer for which n divides a(n)^6.
   sub $2,$0
 lpe

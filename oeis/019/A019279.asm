@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 2,4,16,64,4096,65536,262144,1073741824,1152921504606846976
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   div $0,2

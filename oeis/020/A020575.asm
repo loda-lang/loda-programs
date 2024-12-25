@@ -9,6 +9,7 @@ mul $1,5
 mov $2,$1
 mov $1,$0
 seq $1,5043 ; Riordan numbers: a(n) = (n-1)*(2*a(n-1) + 3*a(n-2))/(n+1).
+add $0,1
 seq $0,18805 ; Number of elements in the set {(x,y): 1 <= x,y <= n, gcd(x,y)=1}.
 max $1,$0
 lpb $2

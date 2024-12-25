@@ -2,12 +2,15 @@
 ; Submitted by Stony666
 ; 1,2,4,8,59,118,236,472
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $2,1
   add $1,$2
   add $2,$1
-  cmp $2,8
+  equ $2,8
   mul $2,43
   mul $1,2
 lpe

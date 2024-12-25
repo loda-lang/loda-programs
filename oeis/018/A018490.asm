@@ -2,7 +2,10 @@
 ; Submitted by [AF>PlusCitoyen] Davlabedave
 ; 1,2,3,4,6,7,8,9,12,14,18,21,24,28,36,42,56,63,72,84,126,168,252,504
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,3
   mov $3,$2
@@ -11,7 +14,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

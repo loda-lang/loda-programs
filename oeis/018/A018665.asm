@@ -2,8 +2,11 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,3,6,137,274,411,822
 
+#offset 1
+
 mov $1,1
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   add $1,$2

@@ -8,4 +8,5 @@ lpb $1
   mov $1,7
   add $0,1
 lpe
+add $0,1
 seq $0,18736 ; Divisors of 945.

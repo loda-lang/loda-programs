@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 1,2,3,4,5,6,9,10,12,15,18,20,30,36,45,60,90,180
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

@@ -6,6 +6,7 @@ mov $1,$0
 lpb $0
   sub $1,1
   mov $2,$0
+  add $2,7
   seq $2,15338 ; Gaussian binomial coefficient [ n,7 ] for q = -2.
   mov $0,$1
   add $3,$2

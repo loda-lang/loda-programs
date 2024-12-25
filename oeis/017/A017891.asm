@@ -14,7 +14,7 @@ lpb $0
     mov $7,$4
     seq $7,25768 ; Expansion of 1/((1-x)*(1-x^3)*(1-x^7)).
     dif $7,2
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

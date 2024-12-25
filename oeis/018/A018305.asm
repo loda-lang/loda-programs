@@ -2,6 +2,9 @@
 ; Submitted by omegaintellisys
 ; 1,2,3,5,6,10,15,25,30,50,75,150
 
+#offset 1
+
+sub $0,1
 mov $1,-1
 mov $2,$0
 add $2,3

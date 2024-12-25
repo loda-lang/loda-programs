@@ -2,8 +2,11 @@
 ; Submitted by marcstone
 ; 1,2,4,8,73,146,292,584
 
+#offset 1
+
 mov $1,1
 mov $2,3
+sub $0,1
 lpb $0
   max $1,$4
   add $1,1

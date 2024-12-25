@@ -2,7 +2,10 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,8,16,23,32,46,92,184,368,736
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,24
   add $2,2
@@ -12,7 +15,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

@@ -2,7 +2,10 @@
 ; Submitted by [AF>Amis des Lapins] Ceclo
 ; 1,2,3,6,37,74,111,222
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   pow $1,$4
   add $1,1

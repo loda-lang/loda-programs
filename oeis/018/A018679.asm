@@ -13,10 +13,9 @@ lpb $8
     add $2,1
     mov $6,$2
     gcd $6,$3
+    neq $6,1
     mul $2,10
     add $2,6
-    cmp $6,1
-    cmp $6,0
     sub $5,$6
   lpe
   add $2,1
@@ -31,7 +30,7 @@ lpb $8
   mul $1,$7
   mov $3,$4
   mov $7,$0
-  cmp $7,0
+  equ $7,0
   sub $8,$9
   sub $9,$7
 lpe

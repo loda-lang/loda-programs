@@ -2,7 +2,10 @@
 ; Submitted by emoga
 ; 1,2,3,4,5,6,10,12,15,20,25,30,50,60,75,100,150,300
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3
@@ -10,7 +13,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

@@ -11,13 +11,22 @@ lpb $2
   seq $3,176256 ; Numbers of the form 4k+1 with least prime divisor of the form 4m-1.
   mov $5,$3
   sub $3,1
-  seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.
-  cmp $3,2
+  mov $6,0
+  sub $6,$3
+  mul $6,2
+  mov $7,$3
+  add $7,1
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $3,2
+  add $3,$7
+  add $3,$6
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

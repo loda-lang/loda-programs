@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 1,3,5,7,9,15,21,35,45,63,105,315
 
+#offset 1
+
+sub $0,1
 mov $1,-1
 mov $2,$0
 add $2,10

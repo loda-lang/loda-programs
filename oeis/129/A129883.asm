@@ -15,7 +15,6 @@ lpb $0
   div $1,7
   sub $1,1
   seq $1,360496 ; a(n) is the remainder after dividing n by its largest prime factor plus 1, a(1) = 1.
-  sub $1,1
   seq $1,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
   mul $1,$2
   add $1,$4

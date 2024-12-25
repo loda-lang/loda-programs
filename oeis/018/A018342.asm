@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 1,3,5,9,15,25,45,75,225
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2

@@ -10,6 +10,6 @@ lpb $0
   trn $2,6
   add $2,$1
   add $1,$2
-  cmp $2,8
+  equ $2,8
 lpe
 mov $0,$1

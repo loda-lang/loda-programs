@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,6,8,12,16,24,48
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $0,9
 add $0,1

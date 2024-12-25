@@ -2,7 +2,10 @@
 ; Submitted by [TA]crashtech
 ; 1,3,5,9,15,19,45,57,95,171,285,855
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   add $1,6
   mul $1,5
@@ -11,7 +14,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     add $2,2
     sub $3,$4
   lpe

@@ -8,7 +8,7 @@ lpb $0
   sub $0,1
   mov $3,$0
   mod $3,4
-  add $3,1
+  add $3,2
   seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mul $3,$2
   div $0,4

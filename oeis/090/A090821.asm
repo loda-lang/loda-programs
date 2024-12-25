@@ -6,6 +6,7 @@ add $0,1
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   sub $0,1
   mul $1,$2

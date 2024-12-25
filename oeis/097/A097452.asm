@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mov $3,$1
   add $3,1

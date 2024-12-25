@@ -2,6 +2,7 @@
 ; Submitted by mmonnin
 ; 1,1,1,1,2,1,1,2,6,2,12,4
 
+add $0,1
 seq $0,18662 ; Divisors of 816.
 dif $0,4
 mov $1,$0

@@ -2,7 +2,10 @@
 ; Submitted by [TA]crashtech
 ; 1,3,5,13,15,25,39,65,75,195,325,975
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,5
   mov $3,$2

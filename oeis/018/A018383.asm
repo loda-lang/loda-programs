@@ -13,8 +13,7 @@ lpb $0
     gcd $4,$2
     pow $4,2
     div $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     add $1,2
     mul $3,$4
     sub $3,$4

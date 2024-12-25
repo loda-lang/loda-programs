@@ -2,6 +2,9 @@
 ; Submitted by [SG-FC] hl
 ; 1,2,5,7,10,14,35,49,70,98,245,490
 
+#offset 1
+
+sub $0,1
 seq $0,18617 ; Divisors of 735.
 mov $1,$0
 dif $0,3

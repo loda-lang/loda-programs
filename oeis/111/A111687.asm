@@ -8,7 +8,7 @@ lpb $2
   mov $3,$2
   add $2,1
   seq $2,6005 ; The odd prime numbers together with 1.
-  add $3,1
+  add $3,2
   seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
   mul $3,$2
   sub $0,1
