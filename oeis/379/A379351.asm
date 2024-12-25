@@ -1,21 +1,10 @@
 ; A379351: a(n) is the greatest prime factor of n^2 + 2.
-; Submitted by Science United
+; Submitted by crashtech
 ; 2,3,3,11,3,3,19,17,11,83,17,41,73,19,11,227,43,97,163,11,67,443,3,59,17,19,113,43,131,281,41,107,19,1091,193,409,59,457,241,1523,89,17,883,617,19,2027,353,67,1153,89,139,137,41,937,1459,1009,523,3251,17,43,1801
+; Formula: a(n) = A006530(n^2+2)
 
-mov $2,2
-pow $0,2
-add $0,2
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $1,$0
-    mod $1,$2
-    neq $1,0
-    add $2,1
-    sub $3,$1
-  lpe
-  lpb $0
-    dif $0,$2
-  lpe
-lpe
-mov $0,$2
+mov $1,$0
+pow $1,2
+add $1,2
+seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+mov $0,$1

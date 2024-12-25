@@ -8,11 +8,12 @@ lpb $0
   add $0,$3
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,26281 ; a(n) = least k such that s(k) = n, where s = A026280.
   sub $0,$3
   add $1,1
   max $4,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mul $2,$4
 add $1,$2

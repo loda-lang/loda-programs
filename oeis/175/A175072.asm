@@ -9,6 +9,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,121559 ; Final result (0 or 1) under iterations of {r mod (max prime p <= r)} starting at r = n.
   add $4,$5
   sub $1,$4
@@ -16,7 +17,7 @@ lpb $3
   add $2,$4
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

@@ -1,24 +1,20 @@
 ; A321032: Number of words of length 3n such that all letters of the binary alphabet occur at least once and are introduced in ascending order and which can be built by repeatedly inserting triples into the initially empty word.
-; Submitted by rajab
+; Submitted by crashtech
 ; 3,18,97,530,2973,17059,99657,590562,3540463,21430266,130771375,803538099,4967127735,30866224823,192696614729,1207967820098,7600482116931,47981452358200,303820299643137,1929099000980218,12279621792772821,78346444891033855,500932407401040087,3209188088239381555,20597083865743816863,132420640702559587299,852698525779401738415,5498960561977573428855,35511629999142526029583,229630139358816164768559,1486695751067869124586313,9636510117166861330110210,62530808072691693507476779
 
-add $0,1
-mov $4,$0
 add $0,2
-lpb $0
-  sub $0,1
-  add $4,1
-  mov $2,2
-  mul $2,$0
-  add $2,$4
-  bin $2,$0
-  mov $3,-2
-  bin $3,$1
-  mul $3,$2
-  add $4,1
-  add $1,3
-  mod $1,2
-  add $5,$3
+mov $2,8
+mov $3,$0
+lpb $3
+  sub $3,1
+  mul $2,-2
+  mov $0,$2
+  sub $1,2
+  mul $2,3
+  mul $2,$3
+  div $2,$1
+  add $4,$2
+  sub $2,$0
 lpe
-mov $0,$5
-sub $0,1
+mov $0,$4
+div $0,8

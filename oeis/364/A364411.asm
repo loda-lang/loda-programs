@@ -1,18 +1,13 @@
 ; A364411: a(n) = prime(n) + 2*prime(n+1).
-; Submitted by Science United
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 8,13,19,29,37,47,55,65,81,91,105,119,127,137,153,171,181,195,209,217,231,245,261,283,299,307,317,325,335,367,389,405,415,437,451,465,483,497,513,531,541,563,577,587,595,621,657,677,685,695,711,721,743,765,783,801,811,825,839,847,869,907,929,937,947,979,1005,1031,1045,1055,1071,1093,1113,1131,1145,1161,1183,1199,1219,1247
+; Formula: a(n) = 2*A159477(A000040(n+1))+A000040(n+1)
 
-mov $4,$0
-add $4,3
-seq $4,40 ; The prime numbers.
-mul $4,2
-add $0,2
+add $0,1
 seq $0,40 ; The prime numbers.
-seq $2,70939 ; Length of binary representation of n.
-lpb $2
-  sub $2,1
-  mov $3,$0
-  add $3,$4
-  max $1,$3
-lpe
-mov $0,$1
+mov $1,$0
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $0,$1
+add $1,1
+sub $0,1
+add $0,$1

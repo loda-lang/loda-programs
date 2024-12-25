@@ -7,12 +7,17 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
-  seq $3,37 ; Numbers that are not squares (or, the nonsquares).
-  sub $3,1
-  mov $5,$3
+  mul $3,2
+  add $3,7
+  mov $6,2
+  mul $6,$3
+  nrt $6,2
+  add $6,$3
+  div $6,2
+  mov $3,$6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

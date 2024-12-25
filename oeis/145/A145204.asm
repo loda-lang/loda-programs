@@ -1,14 +1,26 @@
 ; A145204: Numbers whose representation in base 3 (A007089) ends in an odd number of zeros.
-; Submitted by [AF>WildWildWest]Sebastien
+; Submitted by Wood
 ; 0,3,6,12,15,21,24,27,30,33,39,42,48,51,54,57,60,66,69,75,78,84,87,93,96,102,105,108,111,114,120,123,129,132,135,138,141,147,150,156,159,165,168,174,177,183,186,189,192,195,201,204,210,213,216,219,222,228,231,237,240,243,246,249,255,258,264,267,270,273,276,282,285,291,294,297,300,303,309,312
-; Formula: a(n) = 3*b(n), b(n) = b(n-1)+A092400(max(n-1,0)), b(0) = 0
 
+#offset 1
+
+sub $0,1
+mov $2,4
 lpb $0
-  mov $2,$0
-  trn $2,1
-  seq $2,92400 ; Fixed point of the morphism 1 -> 1121211, 2 -> 1121212121211, starting from a(1) = 1.
   sub $0,1
-  add $1,$2
+  sub $1,$2
+  add $1,1
+  div $1,2
+  add $4,$3
+  add $4,2
+  add $3,$1
+  gcd $3,4
+  mul $2,2
+  mul $2,$3
+  mul $2,2
+  div $3,2
+  dif $1,$3
 lpe
-mov $0,$1
+mov $0,$4
+div $0,2
 mul $0,3

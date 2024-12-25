@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,2
     seq $7,341191 ; Number of ways to write n as an ordered sum of 2 nonzero decimal palindromes.
     mov $9,10
     add $9,$5

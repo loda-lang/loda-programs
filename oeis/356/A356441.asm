@@ -8,6 +8,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,356438 ; Numbers k such that A309892(k) = k/gpf(k), where gpf = A006530.
   sub $3,1
   add $0,1

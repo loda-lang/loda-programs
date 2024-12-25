@@ -1,15 +1,25 @@
 ; A134015: Expansion of (1 - phi(-q) * phi(q^4)) / 2 in powers of q where phi() is a Ramanujan theta function.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,0,0,-2,2,0,0,-2,1,0,0,0,2,0,0,-2,2,0,0,-4,0,0,0,0,3,0,0,0,2,0,0,-2,0,0,0,-2,2,0,0,-4,2,0,0,0,2,0,0,0,1,0,0,-4,2,0,0,0,0,0,0,0,2,0,0,-2,4,0,0,-4,0,0,0,-2,2,0,0,0,0,0,0,-4
-; Formula: a(n) = truncate((-truncate(A004531(4*n+4)/2)*(n%4)+truncate(A004531(4*n+4)/2))/2)
 
-mov $1,$0
-add $1,1
-mul $1,4
-seq $1,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
-div $1,2
+mov $3,$0
+add $3,1
+lpb $3
+  dif $3,2
+lpe
+div $3,2
+mov $2,-1
+pow $2,$3
+mul $2,2
+mov $1,-2
+bin $1,$3
+div $1,$2
+sub $3,$1
+seq $3,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
+mul $3,$2
+div $3,2
+max $3,0
 mod $0,4
-mul $0,$1
-sub $1,$0
-mov $0,$1
-div $0,2
+mul $0,$3
+sub $3,$0
+mov $0,$3

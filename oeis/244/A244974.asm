@@ -1,19 +1,20 @@
 ; A244974: Sum of numbers m <= n whose set of prime divisors is a subset of the set of prime divisors of n.
-; Submitted by Irish Republican
+; Submitted by Skillz
 ; 1,3,4,7,6,16,8,15,13,30,12,45,14,36,33,31,18,79,20,66,41,64,24,103,31,70,40,80,30,235,32,63,84,114,73,198,38,120,92,163,42,310,44,140,130,132,48,246,57,213,108,154,54,300,97,217,116,150,60,600,62,156,180,127,109,540,68,246,132,536,72,436,74,238,205,260,145,644,80,357
 
+#offset 1
+
+sub $0,1
 add $0,1
-mov $2,$0
-pow $2,$0
+mov $2,1
+mov $3,$0
+pow $3,$0
 lpb $0
-  mov $3,$2
-  dif $3,$0
-  neq $3,$2
-  mul $3,6
-  mul $3,$0
+  mov $1,$3
+  dif $1,$0
+  neq $1,$3
+  mul $1,$0
   sub $0,1
-  add $1,$3
+  add $2,$1
 lpe
-div $1,6
-add $1,1
-mov $0,$1
+mov $0,$2

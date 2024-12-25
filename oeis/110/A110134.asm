@@ -11,12 +11,11 @@ lpb $2
   add $3,1
   seq $3,24363 ; Number of primitive Pythagorean triangles with side n.
   div $3,2
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

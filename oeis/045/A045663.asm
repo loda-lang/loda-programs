@@ -1,28 +1,32 @@
 ; A045663: Number of 2n-bead balanced binary strings of fundamental period 2n, rotationally equivalent to complement.
-; Submitted by nenym
+; Submitted by crashtech
 ; 1,2,4,6,16,30,60,126,256,504,1020,2046,4080,8190,16380,32730,65536,131070,262080,524286,1048560,2097018,4194300,8388606,16776960,33554400,67108860,134217216,268435440,536870910,1073740740,2147483646,4294967296,8589932538,17179869180,34359738210,68719472640,137438953470,274877906940,549755805690,1099511627520,2199023255550,4398046494660,8796093022206,17592186044400,35184372055560,70368744177660,140737488355326,281474976645120,562949953421184,1125899906841600,2251799813554170,4503599627370480
 
-mov $1,$0
-trn $0,1
-sub $1,$0
-add $1,3
-mov $4,$0
-mov $6,2
-lpb $6
-  sub $6,1
-  add $0,$6
+add $0,1
+mov $2,$0
+mov $6,1
+lpb $0
   sub $0,1
-  mov $5,$0
-  max $5,0
-  seq $5,237500 ; Number of binary strings of length 2n which contain the ones' complement of each of their two halves.
+  mul $1,2
+  mov $4,$2
+  lpb $4
+    mul $7,$11
+    equ $7,$8
+    sub $7,2
+    mov $9,10
+    add $9,$5
+    sub $4,$0
+    sub $4,$0
+    mul $7,$$9
+    mov $5,$4
+    add $6,$7
+  lpe
+  sub $6,$3
+  mov $9,10
+  add $9,$2
+  add $1,$6
   mov $3,$6
-  mul $3,$5
-  add $2,$3
+  mov $$9,$3
+  add $2,1
 lpe
-min $4,1
-mul $4,$5
-sub $2,$4
-mov $0,$2
-div $0,2
-mul $0,$1
-div $0,2
+mov $0,$1
