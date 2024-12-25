@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $1,$2
   add $1,$3
+  add $1,1
   seq $1,13929 ; Numbers that are not squarefree. Numbers that are divisible by a square greater than 1. The complement of A005117.
   mov $5,$3
   mul $5,$1

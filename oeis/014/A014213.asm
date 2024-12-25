@@ -8,7 +8,7 @@ lpb $3
   mul $1,$0
   add $1,$2
   mov $4,$0
-  cmp $4,0
+  equ $4,0
   mov $5,$0
   add $5,$4
   div $1,$5
@@ -18,7 +18,7 @@ lpb $3
   max $3,1
   mov $6,$0
 lpe
-cmp $4,0
+equ $4,0
 add $2,$4
 mul $1,$0
 div $1,$2

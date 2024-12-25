@@ -1,8 +1,9 @@
 ; A123073: Number of ordered triples of primes (p,q,r) such that pqr = n-th 3-almost prime A014612(n).
 ; Submitted by Marthium
 ; 1,3,3,3,1,3,6,6,3,3,3,3,3,6,3,6,3,3,6,3,3,3,6,6,6,6,3,3,3,1,6,6,3,3,3,6,3,6,6,3,3,6,3,6,6,3,6,6,3,3,6,6,6,3,6,3,3,3,6,6,6,3,6,3,6,3,3,6,3,6,6,6,3,6,3,6,6,3,3,3
-; Formula: a(n) = floor(((10*truncate(A319410(A014612(n))/4)+5)^2)/200)
+; Formula: a(n) = floor(((10*truncate(A319410(A014612(n+1))/4)+5)^2)/200)
 
+add $0,1
 seq $0,14612 ; Numbers that are the product of exactly three (not necessarily distinct) primes.
 seq $0,319410 ; Twice A032741.
 div $0,4

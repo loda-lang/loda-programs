@@ -5,8 +5,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 lpb $0
   sub $0,1
   sub $2,1

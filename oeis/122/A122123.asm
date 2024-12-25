@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,14614 ; Numbers that are products of 5 primes (or 5-almost primes, a generalization of semiprimes).
   sub $0,1
   mul $1,$2

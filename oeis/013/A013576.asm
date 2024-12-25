@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(s4)
 ; 11,22,32,41,51,60,71,80,91,100,111,120,131,140,151
 
+#offset 1
+
+sub $0,1
 mov $7,$0
 mov $4,$0
 lpb $4
@@ -29,7 +32,7 @@ lpb $4
     sub $3,1
   lpe
   mov $8,$2
-  cmp $8,0
+  equ $8,0
   add $2,$8
   mul $1,2
   div $1,$2

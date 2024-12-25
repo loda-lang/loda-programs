@@ -8,6 +8,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,83368 ; A Fibbinary system represents a number as a sum of distinct Fibonacci numbers (instead of distinct powers of two). Using representations without adjacent zeros, a(n) = the highest bit-position which changes going from n-1 to n.
+  add $3,1
   seq $3,14766 ; Numbers k such that the 3k shuffle group does not accomplish a perfect shuffle.
   sub $3,2
   div $3,2
@@ -16,7 +17,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

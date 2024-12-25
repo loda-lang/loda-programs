@@ -5,6 +5,6 @@ lpb $0
   mod $0,9
 lpe
 pow $1,$0
-cmp $0,3
+equ $0,3
 sub $1,$0
 mov $0,$1

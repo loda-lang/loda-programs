@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
   mov $3,$1
   add $3,$6

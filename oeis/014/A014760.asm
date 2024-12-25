@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,6
   mov $3,$1
+  add $3,1
   seq $3,14411 ; Triangular array formed from elements to right of middle of rows of Pascal's triangle that are not 1.
   pow $3,2
   mov $5,$3
@@ -18,7 +19,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

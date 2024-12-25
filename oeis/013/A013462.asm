@@ -16,7 +16,7 @@ lpb $0
     mov $7,$4
     add $7,6
     seq $7,87165 ; a(n)=1 when n == 1 (mod 4), otherwise a(n) = a(n - ceiling(n/4)) + 1. Removing all the 1's results in the original sequence with every term incremented by 1.
-    cmp $7,1
+    equ $7,1
     mul $7,-1
     mov $9,10
     add $9,$5

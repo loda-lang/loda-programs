@@ -10,7 +10,6 @@ lpb $5
   sub $6,$1
   mov $0,$4
   add $0,$5
-  sub $0,1
   seq $0,14612 ; Numbers that are the product of exactly three (not necessarily distinct) primes.
   add $2,$6
   mov $3,$2

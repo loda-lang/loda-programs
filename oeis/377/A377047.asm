@@ -13,6 +13,7 @@ lpb $4
   add $1,1
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,13929 ; Numbers that are not squarefree. Numbers that are divisible by a square greater than 1. The complement of A005117.
   mul $1,$0
   mul $3,-1

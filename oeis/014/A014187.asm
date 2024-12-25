@@ -8,12 +8,12 @@ lpb $3
   mov $1,$2
   seq $1,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $4,$2
-  cmp $4,$1
+  equ $4,$1
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

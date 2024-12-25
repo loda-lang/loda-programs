@@ -18,7 +18,13 @@ lpb $0
   div $5,30
   sub $5,1
   mul $5,2
-  seq $5,15997 ; Inverse of 1988th cyclotomic polynomial.
+  mov $6,-1
+  pow $6,$5
+  add $6,1
+  dif $5,2
+  seq $5,15003 ; Inverse of 994th cyclotomic polynomial.
+  mul $5,$6
+  div $5,2
 lpe
 mov $0,$5
 mul $0,$1

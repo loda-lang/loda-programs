@@ -20,7 +20,13 @@ lpb $0
   mov $3,$6
   div $3,30
   sub $3,1
-  seq $3,15997 ; Inverse of 1988th cyclotomic polynomial.
+  mov $7,-1
+  pow $7,$3
+  add $7,1
+  dif $3,2
+  seq $3,15003 ; Inverse of 994th cyclotomic polynomial.
+  mul $3,$7
+  div $3,2
   mul $5,6
   add $5,52
   add $2,$3

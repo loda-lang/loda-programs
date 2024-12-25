@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,14612 ; Numbers that are the product of exactly three (not necessarily distinct) primes.
   sub $0,1
   mul $1,$2

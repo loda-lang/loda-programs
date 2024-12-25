@@ -1,12 +1,13 @@
 ; A066729: a(n) = Product_{d|n, d<n} d if n is composite, n otherwise.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,2,5,6,7,8,3,10,11,144,13,14,15,64,17,324,19,400,21,22,23,13824,5,26,27,784,29,27000,31,1024,33,34,35,279936,37,38,39,64000,41,74088,43,1936,2025,46,47,5308416,7,2500,51,2704,53,157464,55,175616,57,58,59,777600000,61,62,3969,32768,65,287496,67,4624,69,343000,71,1934917632,73,74,5625,5776,77,474552,79,40960000
-; Formula: a(n) = truncate(A007955(n+1)/gcd(A007955(n+1),A014684(n)))
+; Formula: a(n) = truncate(A007955(n+1)/gcd(A007955(n+1),A014684(n+1)))
 
 mov $1,$0
 add $1,1
 seq $1,7955 ; Product of divisors of n.
 mov $2,$1
+add $0,1
 seq $0,14684 ; In the sequence of positive integers subtract 1 from each prime number.
 gcd $1,$0
 div $2,$1

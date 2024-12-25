@@ -8,6 +8,7 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
+  add $5,1
   seq $5,14614 ; Numbers that are products of 5 primes (or 5-almost primes, a generalization of semiprimes).
   sub $0,1
   mov $2,$3
