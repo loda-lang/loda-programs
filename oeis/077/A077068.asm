@@ -1,24 +1,7 @@
 ; A077068: Semiprimes of the form prime + 1.
-; Submitted by rajab
+; Submitted by Skillz
 ; 4,6,14,38,62,74,158,194,278,314,398,422,458,542,614,662,674,734,758,878,998,1094,1154,1202,1214,1238,1322,1382,1454,1622,1658,1754,1874,1934,1994,2018,2138,2342,2474,2558,2594,2798,2858,2918,3062,3218,3254,3314,3518,3734,4022,4058,4178,4262,4274,4358,4442,4562,4622,4934,5078,5102,5114,5234,5414,5438,5582,5702,6038,6074,6122,6134,6218,6338,6362,6374,6638,6662,6782,6998
+; Formula: a(n) = A005383(n)+1
 
-mov $2,$0
-add $2,8
-pow $2,4
-lpb $2
-  mov $1,$5
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $1,$3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$1
-  add $3,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,17
-  add $5,1
-lpe
-mov $0,$5
+seq $0,5383 ; Primes p such that (p+1)/2 is prime.
 add $0,1
-mul $0,2
