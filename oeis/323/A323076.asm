@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   add $1,1
   mov $2,$0
+  add $2,1
   seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mov $3,$0
   add $3,1

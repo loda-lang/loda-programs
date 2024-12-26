@@ -10,7 +10,8 @@ lpb $2
   mov $3,$1
   mul $3,4
   seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
-  seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
+  mul $3,4
+  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   div $3,4
   trn $3,3
   mod $3,2
@@ -18,7 +19,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

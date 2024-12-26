@@ -7,6 +7,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,23506 ; Exponent of 2 in prime factorization of prime(n) - 1.
   add $3,$0
 lpe

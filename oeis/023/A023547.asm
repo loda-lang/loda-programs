@@ -4,8 +4,7 @@
 add $0,1
 lpb $0
   add $2,10
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$0
   max $2,$0
   sub $0,1

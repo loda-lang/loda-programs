@@ -8,7 +8,7 @@ lpe
 mov $2,$0
 sub $0,1
 lpb $0
-  cmp $0,8
+  equ $0,8
   mov $1,$2
   pow $1,5
   div $1,4

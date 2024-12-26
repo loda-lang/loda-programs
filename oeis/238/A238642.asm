@@ -5,17 +5,18 @@
 add $0,1
 mov $1,$0
 mov $5,$0
-cmp $5,0
+equ $5,0
 mov $3,$0
+add $3,1
 seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mov $4,$0
 add $4,1
-cmp $4,$3
+equ $4,$3
 mul $4,$3
 sub $3,$4
 add $3,$5
 mov $2,$3
-cmp $2,0
+equ $2,0
 mov $0,$3
 add $0,$2
 mul $1,$0

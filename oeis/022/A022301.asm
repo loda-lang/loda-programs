@@ -10,12 +10,12 @@ lpb $2
   mov $3,$1
   seq $3,22300 ; The sequence a of 1's and 2's starting with (1,1,2,1) such that a(n) is the length of the (n+2)nd run of a.
   add $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

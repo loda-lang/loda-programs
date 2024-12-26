@@ -6,6 +6,7 @@ add $0,1
 lpb $0
   add $0,$2
   mov $2,$1
+  add $2,1
   seq $2,22838 ; Beatty sequence for sqrt(3); complement of A054406.
   sub $0,$2
   add $1,1

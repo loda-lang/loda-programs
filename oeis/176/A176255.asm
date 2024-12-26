@@ -9,17 +9,18 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mod $3,4
   sub $3,910
   mod $3,10
   add $3,10
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,4
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

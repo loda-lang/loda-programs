@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,4
   seq $2,22244 ; Gaussian binomial coefficients [ n,4 ] for q = 8.
   sub $0,1
   mul $1,8

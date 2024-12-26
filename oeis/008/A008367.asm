@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   mov $5,$3
+  add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   add $5,1
   equ $5,$3

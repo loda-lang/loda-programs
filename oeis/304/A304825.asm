@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,24786 ; Number of 2's in all partitions of n.
   add $1,$2
   mov $3,2

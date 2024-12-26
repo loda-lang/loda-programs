@@ -2,7 +2,10 @@
 ; Submitted by Christian Krause
 ; 0,0,0,0,0,0,0,0,4,16,84,408
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   max $0,6

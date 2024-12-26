@@ -13,7 +13,7 @@ lpb $0
     mov $7,$4
     seq $7,275063 ; Number of permutations p of [n] such that p(i)-i is a multiple of eight for all i in [n].
     dif $7,2
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

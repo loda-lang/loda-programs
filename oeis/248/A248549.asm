@@ -9,12 +9,13 @@ pow $2,2
 bin $2,2
 lpb $2
   pow $3,2
+  add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   sub $3,1
   seq $3,363674 ; T(n,k) is the decimal equivalent of the n-bit inverted Gray code for k; triangle T(n,k), n>=0, 0<=k<=2^n-1, read by rows.
   div $3,2
   sub $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

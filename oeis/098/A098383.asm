@@ -11,7 +11,6 @@ lpb $0
   gcd $5,$6
   mov $2,$6
   div $2,$5
-  sub $2,1
   seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   seq $2,230980 ; Number of primes <= n, starting at n=0.
   mov $4,$2

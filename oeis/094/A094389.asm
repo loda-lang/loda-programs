@@ -8,9 +8,10 @@ lpb $0
   lpb $3
     mov $3,1
     max $4,0
+    add $4,1
     seq $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
     add $0,1
-    cmp $0,$4
+    equ $0,$4
     lpb $2
       mod $2,9
       mov $0,2

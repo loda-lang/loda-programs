@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,24794 ; Number of 10's in all partitions of n.
   mov $2,$3
   mul $2,$0

@@ -7,12 +7,12 @@ lpb $2
   mov $3,$1
   seq $3,81603 ; Number of 2's in ternary representation of n.
   sub $3,$4
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
   mul $4,4

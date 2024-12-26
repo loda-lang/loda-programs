@@ -3,6 +3,7 @@
 
 mov $4,$0
 div $0,2
+add $4,1
 seq $4,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 sub $4,$0
 add $2,$4

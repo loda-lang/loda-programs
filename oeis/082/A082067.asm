@@ -7,6 +7,5 @@ seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 gcd $1,$0
 mov $0,$1
 lpb $0
-  sub $0,1
   seq $0,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 lpe

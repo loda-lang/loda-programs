@@ -11,18 +11,19 @@ lpb $2
   add $1,1
   add $3,1
   seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   pow $3,4
   sub $3,5
   mod $3,10
   add $3,$1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

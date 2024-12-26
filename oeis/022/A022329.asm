@@ -2,6 +2,9 @@
 ; Submitted by NeoGen
 ; 0,0,1,0,1,0,2,1,0,2,1,3,0,2,1,3,0,2,4,1,3,0,2,4,1,3,5,0,2,4,1,3,5,0,2,4,6,1,3,5,0,2,4,6,1,3,5,0,7,2,4,6,1,3,5,0,7,2,4,6,1,8,3,5,0,7,2,4,6,1,8,3,5,0,7,2,9,4,6,1
 
+#offset 1
+
+sub $0,1
 seq $0,65119 ; Numbers k such that the k-th cyclotomic polynomial is a trinomial.
 lpb $0
   dif $0,3

@@ -1,8 +1,11 @@
 ; A020588: Smallest nonempty set S containing prime divisors of 4k+2 for each k in S.
 ; Submitted by Jave808
 ; 2,3,5,7,11,13,19,23,47
-; Formula: a(n) = truncate((max(A005043(n),A018805(n+1))-1)/2)+2
+; Formula: a(n) = truncate((max(A005043(n-1),A018805(n))-1)/2)+2
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 seq $1,5043 ; Riordan numbers: a(n) = (n-1)*(2*a(n-1) + 3*a(n-2))/(n+1).
 add $0,1

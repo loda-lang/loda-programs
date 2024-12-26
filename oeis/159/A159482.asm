@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,2
   seq $1,20482 ; Greatest p with p, q both prime, p+q = 2n.
   mod $0,2
   add $0,1

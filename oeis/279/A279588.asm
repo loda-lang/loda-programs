@@ -13,6 +13,7 @@ lpb $0
     add $9,$5
     mov $10,3
     sub $4,1
+    add $7,1
     seq $7,22838 ; Beatty sequence for sqrt(3); complement of A054406.
     mul $7,$$9
     add $5,1

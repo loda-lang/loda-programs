@@ -12,6 +12,7 @@ lpb $2
   seq $6,127787 ; Numbers n such that F(n) divides F(F(n)), where F(n) is a Fibonacci number.
   seq $6,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mov $3,$1
+  add $3,1
   seq $3,23172 ; Self-Fibonacci numbers: numbers k that divide Fibonacci(k).
   div $6,$3
   gcd $3,4

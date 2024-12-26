@@ -8,13 +8,14 @@ mov $3,$0
 add $3,3
 pow $3,2
 lpb $3
-  add $2,1
   mov $4,$2
+  add $4,2
   seq $4,24539 ; a(n) = [ 1/{n*sqrt(2)} ], where {x} := x - [ x ].
   sub $4,1
   min $4,2
   equ $4,2
   sub $0,$4
+  add $2,1
   mov $5,$0
   max $5,0
   equ $5,$0

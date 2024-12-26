@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,24614 ; Numbers of the form x^2 + xy + y^2, where x and y are positive integers.
   add $3,$4
   gcd $3,2

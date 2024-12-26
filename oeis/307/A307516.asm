@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   sub $5,1
   seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
@@ -21,7 +22,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

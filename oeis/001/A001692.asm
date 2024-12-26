@@ -4,5 +4,6 @@
 
 mov $1,$0
 seq $0,54719 ; Number of 4-ary sequences with primitive period n.
+add $0,1
 seq $0,23729 ; Numbers with no 2's in their base-5 expansion.
 dif $0,$1

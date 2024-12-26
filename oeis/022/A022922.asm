@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   max $0,0
-  seq $0,67497 ; Smallest power of 2 with n+1 digits (n>=0). Also numbers k such that 1 is the first digit of 2^k.
+  seq $0,67497 ; Smallest k for which 2^k is n+1 decimal digits long, and equivalently numbers k such that 1 is the first digit of 2^k.
   sub $0,1
   mov $2,$3
   mul $2,$0

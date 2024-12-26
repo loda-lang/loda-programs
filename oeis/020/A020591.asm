@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,5,7,11,13,17,29,37,61
 
+#offset 1
+
+sub $0,1
 mov $5,$0
 lpb $0
   sub $0,1

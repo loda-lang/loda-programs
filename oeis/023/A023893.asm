@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,23888 ; Sum of prime power divisors of n (1 included).
     mov $9,10
     add $9,$5

@@ -8,10 +8,11 @@ lpb $1
   sub $1,1
   mov $0,$4
   sub $0,$1
+  add $0,1
   seq $0,23961 ; First digit after decimal point of square root of n.
   sub $0,1
   mov $2,$0
-  cmp $2,0
+  equ $2,0
   add $3,$2
 lpe
 mov $0,$3

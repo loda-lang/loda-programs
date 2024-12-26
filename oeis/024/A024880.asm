@@ -12,7 +12,7 @@ lpb $0
   lpb $4
     mov $7,$4
     seq $7,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-    cmp $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
     mov $10,1

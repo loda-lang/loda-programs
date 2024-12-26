@@ -9,12 +9,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,106154 ; Generation 5 of the substitution 1->{2, 1, 2}, 2->{3, 2, 3}, 3->{4, 3, 4}, 4->{5, 4, 5}, 5->{6, 5, 6}, 6->{1, 6, 1}, starting with 1.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

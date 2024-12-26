@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,3
   seq $2,22221 ; Gaussian binomial coefficients [ n,3 ] for q = 6.
   sub $0,1
   mul $1,6

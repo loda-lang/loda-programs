@@ -11,7 +11,7 @@ lpb $2
   seq $3,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   sub $3,$1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

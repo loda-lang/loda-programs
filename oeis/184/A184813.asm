@@ -18,6 +18,7 @@ mov $2,$1
 add $2,$0
 mov $1,$2
 sub $1,1
+add $0,1
 seq $0,22840 ; Beatty sequence for sqrt(6).
 div $0,3
 add $0,$1

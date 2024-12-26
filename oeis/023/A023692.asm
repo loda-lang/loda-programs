@@ -8,13 +8,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,62756 ; Number of 1's in ternary (base-3) expansion of n.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,$4
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,2
 lpe

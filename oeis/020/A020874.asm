@@ -5,8 +5,7 @@
 mov $2,$0
 lpb $0
   mul $2,2
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,2
   mul $3,$0
   add $4,$2

@@ -7,7 +7,7 @@ lpb $0
   add $0,$3
   trn $0,3
   seq $2,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
-  cmp $2,0
+  equ $2,0
   add $1,$2
   sub $3,1
 lpe

@@ -9,6 +9,7 @@ mov $3,$1
 lpb $3
   mov $3,1
   max $1,0
+  add $1,1
   seq $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mov $2,$1
 lpe

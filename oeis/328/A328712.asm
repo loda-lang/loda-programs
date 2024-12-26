@@ -12,7 +12,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $4,1
-  sub $0,1
   seq $0,24362 ; Number of primitive Pythagorean triangles with hypotenuse n.
   mul $1,$0
   add $3,$1

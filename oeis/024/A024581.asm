@@ -8,7 +8,7 @@ lpb $0
   mov $4,96
   lpb $4
     mov $2,$4
-    cmp $2,0
+    equ $2,0
     add $4,$2
     add $1,1
     div $1,$4

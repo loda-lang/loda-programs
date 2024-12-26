@@ -1,12 +1,28 @@
 ; A023556: Convolution of A023531 and A023532.
 ; Submitted by ANCHULA-MARK
 ; 0,1,0,1,2,0,2,2,2,1,3,3,1,4,2,4,3,2,4,5,3,3,5,3,5,5,5,2,6,6,4,6,4,6,5,5,7,7,4,5,7,7,5,8,6,6,8,4,8,8,8,6,7,7,7,9,7,7,9,9,7,7,7,9,10,8,8,10,7,8,10,10,6,10,10,10,11,5,11,9
-; Formula: a(n) = -A023555(n)+A002024(n+3)-2
 
+#offset 1
+
+sub $0,1
 mov $1,$0
-seq $0,23555 ; Self-convolution of A023531.
-add $1,3
-seq $1,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-sub $1,$0
+mov $2,0
+mov $4,0
+lpb $0
+  mov $3,$0
+  add $0,$4
+  trn $0,3
+  seq $3,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
+  equ $3,0
+  add $2,$3
+  sub $4,1
+lpe
+mul $1,8
+add $1,17
+nrt $1,2
+add $1,1
+div $1,2
+sub $1,$2
+mov $0,$2
 mov $0,$1
 sub $0,2

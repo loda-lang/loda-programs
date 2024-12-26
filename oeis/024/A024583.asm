@@ -7,7 +7,7 @@ mov $3,$0
 mul $3,7
 lpb $3
   mov $5,$3
-  cmp $5,0
+  equ $5,0
   add $3,$5
   mov $6,$4
   div $6,$3

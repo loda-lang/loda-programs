@@ -8,6 +8,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,20903 ; Lim f(f(...f(n))) where f is the fractal sequence given by f(n)=A002260(n+1).
   sub $3,1
   add $3,$4

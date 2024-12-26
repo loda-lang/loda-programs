@@ -6,8 +6,8 @@ mov $2,$0
 mul $2,5
 lpb $2
   mov $3,$1
-  add $3,1
   mul $3,2
+  add $3,3
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   seq $3,230980 ; Number of primes <= n, starting at n=0.
   sub $3,1
@@ -18,7 +18,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

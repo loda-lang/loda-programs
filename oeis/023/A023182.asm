@@ -12,7 +12,7 @@ lpb $3
   seq $4,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   sub $4,89
   mod $4,$1
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   sub $3,$0

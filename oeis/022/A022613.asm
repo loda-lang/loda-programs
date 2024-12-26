@@ -10,7 +10,7 @@ lpb $0
   add $2,1
   mov $4,$2
   mov $5,0
-  cmp $6,$4
+  equ $6,$4
   lpb $4
     trn $4,1
     mul $7,18

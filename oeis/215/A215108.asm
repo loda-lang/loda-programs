@@ -13,6 +13,7 @@ lpb $5
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,23619 ; Convolution of Lucas numbers and (F(2), F(3), F(4), ...).
     trn $0,2
     add $3,$2

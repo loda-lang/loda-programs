@@ -11,13 +11,14 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $6,$0
-  cmp $6,0
+  equ $6,0
   mov $5,$0
   add $5,$6
+  add $5,1
   seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
   mov $0,$5
   sub $0,1
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

@@ -4,7 +4,7 @@
 
 mul $0,2
 mov $1,$0
-cmp $0,0
+equ $0,0
 lpb $1
   mov $2,1
   lpb $1
