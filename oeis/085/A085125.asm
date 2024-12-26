@@ -8,7 +8,6 @@ add $3,3
 pow $3,2
 lpb $3
   mov $4,$2
-  add $4,1
   seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   equ $4,7
   sub $1,$4
@@ -19,7 +18,6 @@ lpb $3
   mul $3,$5
   sub $3,1
 lpe
-add $2,1
 mov $1,$2
 div $1,7
 mul $1,2

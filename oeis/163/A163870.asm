@@ -12,13 +12,13 @@ lpb $2
   mov $5,$3
   add $1,1
   div $3,2
-  cmp $3,0
+  equ $3,0
   add $0,$3
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,$5
 lpe

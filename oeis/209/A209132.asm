@@ -8,7 +8,7 @@ lpb $0
 lpe
 mov $1,2
 sub $2,$0
-cmp $3,$2
+equ $3,$2
 lpb $0
   sub $0,1
   mul $1,2

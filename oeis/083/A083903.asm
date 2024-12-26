@@ -18,7 +18,7 @@ lpb $4
   mul $1,$0
   bin $1,3
   mul $1,2
-  cmp $1,2
+  equ $1,2
   add $3,$1
 lpe
 mov $0,$3

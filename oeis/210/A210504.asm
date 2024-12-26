@@ -8,8 +8,9 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $3,$1
+  add $3,1
   seq $3,88421 ; Number of primes in arithmetic progression starting with 5 and with d=2n.
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
 lpe

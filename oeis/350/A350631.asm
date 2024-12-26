@@ -1,32 +1,32 @@
 ; A350631: a(n) is the smallest multiple of n that has at least twice as many divisors as n.
-; Submitted by damotbe
+; Submitted by shiva
 ; 2,6,6,12,10,24,14,24,18,30,22,60,26,42,30,48,34,72,38,60,42,66,46,120,50,78,54,84,58,120,62,96,66,102,70,180,74,114,78,120,82,168,86,132,90,138,94,240,98,150,102,156,106,216,110,168,114,174,118,360,122,186,126,192,130,264,134,204,138,210,142,360,146,222,150,228,154,312,158,240
 
-mov $2,$0
-add $2,1
-mov $3,2
 mov $4,$0
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  sub $0,1
-  mov $5,$0
-  seq $0,264668 ; a(n) = A264600(n) - A061486(n).
-  sub $0,1
-  seq $5,88434 ; Number of ways to write n as n = u*v*w with 1 <= u < v < w.
-  add $5,45
-  mul $5,$0
-  mov $6,3
-  sub $6,$5
-  mov $0,$6
-  sub $0,47
-  mul $1,$0
-  add $3,$1
-  mul $4,$1
+add $4,1
+mov $5,2
+mov $6,$0
+lpb $6
+  sub $6,1
+  mov $1,$4
+  sub $1,$6
+  mov $3,$1
+  gcd $3,$6
+  bin $3,$1
+  sub $1,1
+  mov $7,$1
+  seq $1,264668 ; a(n) = A264600(n) - A061486(n).
+  sub $1,1
+  seq $7,11937 ; a(n) = floor( n*(n-1)*(n-2)*(n-3)/27 ).
+  add $7,45
+  mul $7,$1
+  mov $2,3
+  sub $2,$7
+  mov $1,$2
+  sub $1,47
+  mul $3,$1
+  add $5,$3
+  mul $6,$3
 lpe
-mul $2,$3
-mov $0,$2
+mul $4,$5
+mov $0,$4

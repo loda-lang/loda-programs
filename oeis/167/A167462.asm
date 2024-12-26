@@ -7,6 +7,7 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,88421 ; Number of primes in arithmetic progression starting with 5 and with d=2n.
   equ $3,2
   sub $0,$3

@@ -1,5 +1,5 @@
 ; A102460: a(n) = 1 if n is a Lucas number, else a(n) = 0.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 
 add $0,1
@@ -14,12 +14,10 @@ lpb $2
   mod $5,$4
   mov $6,$4
   mul $6,$5
-  cmp $1,0
-  add $1,$6
+  mov $1,$6
   mov $5,$0
   trn $5,$4
-  cmp $5,0
-  cmp $5,0
+  neq $5,0
   sub $2,$5
   mov $3,$7
 lpe

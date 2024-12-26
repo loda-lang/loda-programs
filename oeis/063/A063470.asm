@@ -2,6 +2,9 @@
 ; Submitted by Athlici
 ; 34,45,52,102,140,156,252,360,420
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 add $2,7

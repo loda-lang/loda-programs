@@ -1,20 +1,14 @@
 ; A182723: Sum of (all parts of) all partitions of prime(n).
-; Submitted by Nuadormrac
+; Submitted by lauvii
 ; 4,9,35,105,616,1313,5049,9310,28865,132385,212102,800569,1827903,2720223,5863438,17486343,49077380,68411805,179539163,333501555,451555297,1094043350,1937092927,4449637325,12923400210,21662593726,27938641850,46132984623,59072140160
-; Formula: a(n) = truncate(A220909(truncate((-(A264668(n)-1)*(128*A000040(n+1)+113)-369)/128)+2)/2)
+; Formula: a(n) = A000041(A000040(n))*A000040(n)
 
-mov $1,$0
-add $1,1
-seq $1,40 ; The prime numbers.
-mul $1,128
-add $1,113
-seq $0,264668 ; a(n) = A264600(n) - A061486(n).
+#offset 1
+
 sub $0,1
+add $0,1
+seq $0,40 ; The prime numbers.
+add $1,$0
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 mul $1,$0
-sub $2,$1
-mov $0,$2
-sub $0,369
-div $0,128
-add $0,2
-seq $0,220909 ; The second crank moment function M_2(n).
-div $0,2
+mov $0,$1

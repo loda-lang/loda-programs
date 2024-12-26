@@ -7,6 +7,7 @@ lpb $0
   add $3,1
   sub $0,1
   div $2,$3
+  add $2,1
   seq $2,24916 ; a(n) = Sum_{k=1..n} k*floor(n/k); also Sum_{k=1..n} sigma(k) where sigma(n) = sum of divisors of n (A000203).
   add $1,$2
 lpe

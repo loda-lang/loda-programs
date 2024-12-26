@@ -1,19 +1,17 @@
 ; A039964: Motzkin numbers A001006 read mod 3.
-; Submitted by Conan
+; Submitted by Science United
 ; 1,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+; Formula: a(n) = floor(((2*floor(binomial(2*n+2,n+1)/(n+2))*2^(n+2))%6)/2)
 
-mov $1,1
-mov $3,$0
-lpb $3
-  mul $1,$3
-  sub $3,1
-  sub $4,2
-  sub $5,$4
-  mul $1,$3
-  div $1,$5
-  add $2,$1
-  sub $3,1
-lpe
-mov $0,$2
 add $0,1
-mod $0,3
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+mov $1,2
+pow $1,$2
+div $0,$2
+mul $0,2
+mul $0,$1
+mod $0,6
+div $0,2

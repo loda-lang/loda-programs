@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,284150 ; Sum_{d|n, d==1 or 4 mod 5} d.
     mov $9,10
     add $9,$5

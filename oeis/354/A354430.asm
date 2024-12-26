@@ -11,8 +11,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
-  seq $0,99862 ; Bisection of A002808.
+  seq $0,99862 ; a(n) = (2*k)-th composite number; a bisection of A002808.
   mul $1,$0
   add $3,$1
 lpe

@@ -1,15 +1,23 @@
 ; A189723: Fixed point of the morphism 0->011, 1->101.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by Orange Kid
 ; 0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0
 
-mov $3,$0
-lpb $3
-  equ $1,0
-  lpb $3
-    dif $3,3
-    div $2,2
-  lpe
-  equ $2,0
-  sub $3,$2
+#offset 1
+
+sub $0,1
+mov $2,1
+lpb $0
+  add $2,$3
+  dif $2,$4
+  mov $3,$0
+  add $3,1
+  mod $3,3
+  mov $4,$3
+  sub $3,1
+  mul $3,$2
+  div $0,3
+  add $1,$3
 lpe
 mov $0,$1
+add $0,2
+mod $0,2
