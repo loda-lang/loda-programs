@@ -6,7 +6,7 @@ mov $1,$0
 div $1,2
 sub $0,1
 gcd $0,2
-cmp $0,1
+equ $0,1
 mov $2,$1
 seq $2,128079 ; a(n) = Sum_{k=0..n} A000984(k)*A001263(n+1,k+1), where A000984 is the central binomial coefficients and A001263 is the Narayana triangle.
 seq $1,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).

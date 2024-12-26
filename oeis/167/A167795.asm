@@ -9,10 +9,11 @@ lpb $2
   mov $3,$1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$1
+  add $4,1
   seq $4,70678 ; Smallest m in range 1..phi(n) such that 7^m == 1 mod n, or 0 if no such number exists.
   sub $4,$3
   mov $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

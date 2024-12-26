@@ -1,17 +1,12 @@
 ; A352655: a(n) = (1/2)*(A005258(n) + A005258(n-1)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,11,83,699,6252,58106,554633,5399099,53356322,533627511,5388927513,54859837434,562267554552,5796123147756,60047675871333,624801952898619,6526036790730942,68395815476047901,718992874207884953,7578808590187108199
+; Formula: a(n) = truncate((A005258(n+1)+A005258(n))/2)
 
-mov $2,$0
-add $2,1
-mov $1,2
-lpb $1
-  sub $1,1
-  mov $0,$2
-  add $0,$1
-  trn $0,1
-  seq $0,5258 ; Apéry numbers: a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(n+k,k).
-  add $3,$0
-lpe
-mov $0,$3
+mov $1,$0
+seq $1,5258 ; Apéry numbers: a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(n+k,k).
+add $0,1
+seq $0,5258 ; Apéry numbers: a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(n+k,k).
+add $1,$0
+mov $0,$1
 div $0,2

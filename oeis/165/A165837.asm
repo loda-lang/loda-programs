@@ -1,8 +1,11 @@
 ; A165837: Totally multiplicative sequence with a(p) = 16.
 ; Submitted by Simon Strandgaard
 ; 1,16,16,256,16,256,16,4096,256,256,16,4096,16,256,256,65536,16,4096,16,4096,256,256,16,65536,256,256,4096,4096,16,4096,16,1048576,256,256,256,65536,16,256,256,65536,16,4096,16,4096,4096,256,16,1048576,256,4096,256,4096,16,65536,256,65536,256,256,16,65536,16,256,4096,16777216,256,4096,16,4096,256,4096,16,1048576,16,256,4096,4096,256,4096,16,1048576
-; Formula: a(n) = truncate(16^A001222(n))
+; Formula: a(n) = truncate(16^A001222(n-1))
 
+#offset 1
+
+sub $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mov $1,16
 pow $1,$0

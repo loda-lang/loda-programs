@@ -1,23 +1,10 @@
 ; A189723: Fixed point of the morphism 0->011, 1->101.
-; Submitted by Orange Kid
+; Submitted by Science United
 ; 0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0
+; Formula: a(n) = A189727(2*n-2)
 
 #offset 1
 
 sub $0,1
-mov $2,1
-lpb $0
-  add $2,$3
-  dif $2,$4
-  mov $3,$0
-  add $3,1
-  mod $3,3
-  mov $4,$3
-  sub $3,1
-  mul $3,$2
-  div $0,3
-  add $1,$3
-lpe
-mov $0,$1
-add $0,2
-mod $0,2
+mul $0,2
+seq $0,189727 ; Fixed point of the morphism 0->011, 1->110.

@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,375740 ; Numbers k such that A007916(k+1) - A007916(k) = 1. In other words, the k-th non-perfect-power is 1 less than the next.
   mov $2,$3
   mul $2,$0

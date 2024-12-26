@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,26134 ; a(n) = Sum_{k=1..n} T(k, k-1), where T is the array in A026120.
     mov $9,10
     add $9,$5
