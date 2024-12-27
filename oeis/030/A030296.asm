@@ -8,6 +8,7 @@ pow $2,20
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,96457 ; If n is prime replace n with the next prime.
   sub $3,1
   add $0,1

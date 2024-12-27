@@ -10,7 +10,7 @@ lpb $2
   mov $0,$4
   sub $0,$2
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

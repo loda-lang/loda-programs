@@ -13,7 +13,7 @@ lpb $0
   add $1,$5
   add $1,$6
   sub $2,$3
-  cmp $6,$5
+  equ $6,$5
   add $4,$2
   add $5,$2
 lpe

@@ -13,7 +13,7 @@ lpb $0
     sub $1,1
     mov $5,2
     gcd $5,$1
-    cmp $1,1
+    equ $1,1
     div $1,7
     add $1,$5
     div $1,2

@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
@@ -15,6 +15,7 @@ lpb $2
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35229 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = 47.
   equ $3,0
   sub $0,$3

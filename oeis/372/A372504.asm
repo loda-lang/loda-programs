@@ -20,6 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,372330 ; The number of divisors of the smallest multiple of n whose number of divisors is a power of 2 (A036537).
   mul $0,$4
   add $1,$0

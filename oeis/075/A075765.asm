@@ -1,11 +1,13 @@
 ; A075765: a(n) = floor(prime(n)/n) + (prime(n) mod n).
 ; Submitted by Jamie Morken(s2)
 ; 2,2,3,4,3,3,5,5,7,11,11,4,5,4,5,8,11,10,13,14,13,16,17,20,25,26,25,26,25,26,7,7,9,7,13,11,13,15,15,17,19,17,23,21,21,19,27,35,35,33,33,35,33,39,41,43,45,43,45,45,43,49,59,59,57,57,67,69,7,73,73,75,7,8,9,8,9,12
-; Formula: a(n) = -truncate((b(n)*(n+1))/(b(n)+truncate(b(n)/(n+1))))*(b(n)+truncate(b(n)/(n+1)))+b(n)*(n+1), b(n) = A159477(b(n-1)), b(0) = 2
+; Formula: a(n) = -truncate((n*b(n-1))/(b(n-1)+truncate(b(n-1)/n)))*(b(n-1)+truncate(b(n-1)/n))+n*b(n-1), b(n) = A159477(b(n-1)), b(0) = 2
+
+#offset 1
 
 mov $1,$0
-add $1,1
 mov $3,2
+sub $0,1
 lpb $0
   sub $0,1
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

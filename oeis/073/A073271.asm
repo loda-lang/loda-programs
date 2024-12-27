@@ -1,10 +1,17 @@
 ; A073271: a(n) = floor( prime(n)*prime(n+2) / prime(n+1) ).
-; Submitted by Landjunge
+; Submitted by Science United
 ; 3,4,7,8,14,14,20,23,24,34,34,38,44,48,52,54,64,64,68,76,76,84,90,92,98,104,104,110,122,116,132,132,146,140,154,156,160,168,172,174,188,182,194,194,208,210,214,224,230,234,234,248,246,256,262,264,274,274,278,290,296,296,308,314,326,322,340,338,350,354,360,364,372,376,384,390,392,404,410,410
-; Formula: a(n) = truncate(A090076(n)/A000040(n+2))
 
 mov $1,$0
-add $1,2
+add $1,1
 seq $1,40 ; The prime numbers.
-seq $0,90076 ; a(n) = prime(n)*prime(n+2).
-div $0,$1
+add $0,2
+seq $0,1223 ; Prime gaps: differences between consecutive primes.
+mul $0,$1
+add $1,1
+lpb $0
+  add $1,1
+  sub $0,$1
+lpe
+mov $0,$1
+sub $0,1

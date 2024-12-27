@@ -7,6 +7,7 @@ pow $2,20
 add $2,180
 lpb $2
   add $0,2
+  add $1,1
   seq $1,96457 ; If n is prime replace n with the next prime.
   add $2,$1
   sub $2,$0

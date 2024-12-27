@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,20
 lpb $2
   add $0,2
+  add $1,1
   seq $1,96457 ; If n is prime replace n with the next prime.
   max $1,2
   add $2,$1

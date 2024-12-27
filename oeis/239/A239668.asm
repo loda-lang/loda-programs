@@ -1,10 +1,11 @@
 ; A239668: Sum of the composite divisors of n^2.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,4,9,28,25,85,49,124,117,209,121,397,169,389,394,508,289,841,361,953,730,917,529,1645,775,1265,1089,1757,841,2810,961,2044,1714,2129,1754,3745,1369,2645,2362,3929,1681,5174,1849,4109,3742,3845,2209,6637,2793,5459,3970,5657,2809,7645,4106,7229,4930,6065,3481,12482,3721,6917,6886,8188,5654,12086,4489,9497,7162,12354,5041,15361,5329,9809,10144,11789,7562,16634,6241,15833
-; Formula: a(n) = -A008472(n)+A065764(n)-1
+; Formula: a(n) = A023891(n^2)
 
-mov $1,$0
-seq $1,8472 ; Sum of the distinct primes dividing n.
-add $1,1
-seq $0,65764 ; Sum of divisors of square numbers.
-sub $0,$1
+#offset 1
+
+sub $0,1
+add $0,1
+pow $0,2
+seq $0,23891 ; Sum of composite divisors of n.

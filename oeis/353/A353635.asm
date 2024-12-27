@@ -9,7 +9,12 @@ lpb $3
   mov $0,$4
   add $0,$3
   pow $3,$0
-  seq $0,5383 ; Primes p such that (p+1)/2 is prime.
+  seq $0,105610 ; Numbers k such that both p1=2k+3 and p2=4k+5 are primes.
+  add $0,1
+  sub $6,$0
+  sub $0,$6
+  mul $0,2
+  add $0,1
   mov $2,$3
   mul $2,$0
   mul $1,2

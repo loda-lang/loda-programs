@@ -8,4 +8,5 @@ lpb $0
   dif $0,6
   sub $0,1
 lpe
+add $0,1
 seq $0,48272 ; Number of odd divisors of n minus number of even divisors of n.
