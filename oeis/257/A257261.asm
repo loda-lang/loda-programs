@@ -16,7 +16,7 @@ lpb $1
   div $5,$3
   mov $7,$2
   pow $7,$5
-  cmp $7,$2
+  equ $7,$2
   mov $3,$4
   sub $6,$7
 lpe

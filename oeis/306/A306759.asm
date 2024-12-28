@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   sub $0,1
-  cmp $1,$6
+  equ $1,$6
   sub $4,$6
   pow $6,$2
   div $6,2

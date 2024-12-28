@@ -11,6 +11,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,72512 ; Product of all n - d, where 1 < d < n and d is a divisor of n.
     sub $7,1
     mod $7,2

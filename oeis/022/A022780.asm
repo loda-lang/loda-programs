@@ -12,8 +12,6 @@ lpb $2
   mov $6,2
   lpb $6
     sub $6,1
-    trn $0,1
-    add $0,1
     seq $0,22839 ; Beatty sequence for sqrt(5).
     div $0,5
     equ $5,0

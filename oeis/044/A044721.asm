@@ -1,10 +1,12 @@
 ; A044721: Numbers n such that string 0,8 occurs in the base 10 representation of n but not of n+1.
 ; Submitted by Jamie Morken(w3)
 ; 108,208,308,408,508,608,708,808,908,1008,1089,1108,1208,1308,1408,1508,1608,1708,1808,1908,2008,2089,2108,2208,2308,2408,2508,2608,2708,2808,2908,3008,3089,3108,3208,3308,3408,3508
-; Formula: a(n) = truncate((26*(2*truncate((5*floor((56*floor((10*n+9)/11)+44*floor((10*n+21)/11)+152)/5)-90)/2)-4*truncate((2*truncate((5*floor((56*floor((10*n+9)/11)+44*floor((10*n+21)/11)+152)/5)-90)/2))/4))^2+6*truncate((5*floor((56*floor((10*n+9)/11)+44*floor((10*n+21)/11)+152)/5)-90)/2)+13)/3)
+; Formula: a(n) = truncate((26*(2*truncate((5*truncate((56*truncate((10*n-1)/11)+44*floor((10*n+11)/11)+152)/5)-90)/2)-4*truncate((2*truncate((5*truncate((56*truncate((10*n-1)/11)+44*floor((10*n+11)/11)+152)/5)-90)/2))/4))^2+6*truncate((5*truncate((56*truncate((10*n-1)/11)+44*floor((10*n+11)/11)+152)/5)-90)/2)+13)/3)
+
+#offset 1
 
 mul $0,10
-add $0,12
+add $0,2
 mov $3,$0
 add $0,9
 div $0,11

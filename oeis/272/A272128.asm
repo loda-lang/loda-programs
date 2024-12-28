@@ -19,7 +19,7 @@ lpb $1
   bin $5,$3
   mul $5,$4
   add $7,$5
-  cmp $8,169
+  equ $8,169
   add $3,1
 lpe
 mov $1,$7

@@ -9,6 +9,7 @@ lpb $2
   mov $5,$1
   seq $5,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   mov $3,$1
+  add $3,1
   seq $3,125903 ; a(n) = product of the first n primes which are coprime to n.
   gcd $5,$3
   mov $3,$5

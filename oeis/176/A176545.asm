@@ -1,22 +1,25 @@
 ; A176545: Numbers n>0 such that 2*n^2+14*n+5 is prime.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Megacruncher
 ; 2,9,11,12,14,17,21,24,26,39,44,47,59,77,86,87,89,101,116,117,122,126,131,137,147,152,161,164,177,179,189,191,192,201,212,219,222,231,249,257,261,264,284,287,296,306,317,326,329,336,347,369,387,389,411,417,422,429,431,441,446,462,464,467,474,486,506,507,521,527,537,546,557,579,584,591,597,599,602,612
 
 #offset 1
 
-add $0,1
+sub $0,1
+add $0,2
 mov $2,4
-mov $4,12
+mov $4,4
 mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $4,4
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,2
   sub $0,$1
+  add $2,4
+  add $2,$4
   add $2,$4
   sub $3,$0
 lpe
 mov $0,$4
-div $0,4
-sub $0,3
+div $0,2
+sub $0,2

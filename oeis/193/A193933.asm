@@ -16,7 +16,7 @@ lpb $0
     mul $6,$5
     mov $7,$4
     seq $7,248767 ; Greatest 5th power integer that divides n!.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

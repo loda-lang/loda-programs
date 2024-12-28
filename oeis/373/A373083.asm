@@ -9,6 +9,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,117818 ; a(n) = n if n is 1 or a prime, otherwise a(n) = n divided by the least prime factor of n (A032742(n)).
   add $2,$0
 lpe

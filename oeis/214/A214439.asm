@@ -15,19 +15,18 @@ lpb $3
     add $6,1
     mov $7,$0
     mod $7,$2
-    cmp $7,0
+    equ $7,0
     div $0,$2
     sub $5,$7
   lpe
-  cmp $6,0
+  equ $6,0
   mov $7,3
   pow $7,$6
   mov $0,$1
   mul $1,$7
   mov $2,6
   mov $7,$0
-  cmp $7,1
-  cmp $7,0
+  neq $7,1
   sub $3,1
   sub $3,$7
 lpe

@@ -8,6 +8,7 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,294371 ; Lexicographically earliest sequence of distinct positive numbers such that, for any n > 0, a(3*n) = 2*a(n).
   gcd $3,$0
   add $1,1

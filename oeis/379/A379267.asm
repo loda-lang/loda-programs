@@ -6,11 +6,12 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
+  mov $1,$2
   mov $4,$0
   seq $4,357773 ; Odd numbers with two zeros in their binary expansion.
+  bin $0,0
   mov $2,$3
   mul $2,$4
-  add $1,$2
 lpe
 mov $0,$1
 sub $0,9

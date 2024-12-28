@@ -12,11 +12,22 @@ neq $3,0
 trn $0,1
 seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,3188 ; Decimal equivalent of Gray code for n.
+mov $4,$0
+div $0,2
+bxo $4,$0
+mov $0,$4
 mul $0,$3
+seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
+mov $6,$0
+div $0,2
+bxo $6,$0
+mov $0,$6
 sub $0,$2
+seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
+mov $5,$0
+div $0,2
+bxo $5,$0
+mov $0,$5
 mul $0,$1

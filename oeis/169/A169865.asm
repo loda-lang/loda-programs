@@ -1,6 +1,7 @@
 ; A169865: The sequence T of a pair S, T generalizing Golomb's sequence A001462 and the pair A093848, A169863. See Comments for definition.
 ; Submitted by Science United
 ; 2,5,7,9,11,14,16,18,20,22,24,27,29,31,33,35,37,39,41,44,46
+; Formula: a(n) = truncate((4*n+sqrtint(4*n+6)+7)/2)-2
 
 mul $0,2
 add $0,3

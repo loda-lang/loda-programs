@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,325937 ; Expansion of Sum_{k>=1} (-1)^(k + 1) * x^(2*k) / (1 - x^k).
   sub $3,1
   div $3,2
