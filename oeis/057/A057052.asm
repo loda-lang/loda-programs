@@ -8,5 +8,5 @@ lpb $0
   sub $0,$1
 lpe
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $0,$2

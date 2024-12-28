@@ -5,8 +5,29 @@
 equ $1,$0
 trn $0,1
 add $0,1
-seq $0,105610 ; Numbers k such that both p1=2k+3 and p2=4k+5 are primes.
-add $0,1
+mov $2,0
+mov $3,$0
+sub $0,1
+add $3,7
+pow $3,4
+lpb $3
+  mov $4,$2
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $2,3
+  mul $4,$2
+  trn $4,3
+  mul $4,2
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$4
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  sub $2,$5
+  mul $3,$5
+  sub $3,17
+lpe
+mov $0,$2
+div $0,2
 sub $1,$0
 sub $0,$1
 mul $0,2

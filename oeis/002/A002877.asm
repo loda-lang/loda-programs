@@ -1,8 +1,11 @@
 ; A002877: Number of connected weighted linear spaces of total weight n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,2,3,6,13,35,116
-; Formula: a(n) = truncate((floor(binomial(2*floor(max(n-1,0)/2),floor(max(n-1,0)/2))/(floor(max(n-1,0)/2)+1))+A000998(max(n-1,0)))/2)
+; Formula: a(n) = truncate((floor(binomial(2*floor(max(n-2,0)/2),floor(max(n-2,0)/2))/(floor(max(n-2,0)/2)+1))+A000998(max(n-2,0)))/2)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 trn $1,1
 mov $0,$1

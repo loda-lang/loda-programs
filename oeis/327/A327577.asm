@@ -15,7 +15,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
+  add $0,1
   seq $0,327571 ; Triangle T(n,k) read by rows giving the number of zeroless polydivisible numbers in base n that contains only "k" in the digits with 1 <= k <= n-1.
   add $1,$0
 lpe

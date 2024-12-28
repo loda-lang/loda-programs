@@ -8,7 +8,7 @@ lpb $0
   mov $3,$2
   dif $3,$0
   mul $3,$0
-  cmp $3,$2
+  equ $3,$2
   add $4,$3
   sub $0,1
   bin $1,11
