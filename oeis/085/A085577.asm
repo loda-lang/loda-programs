@@ -8,5 +8,5 @@ pow $0,2
 add $0,4
 div $0,5
 sub $1,1
-cmp $1,3
+equ $1,3
 add $0,$1

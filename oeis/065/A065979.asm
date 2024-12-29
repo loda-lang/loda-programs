@@ -1,8 +1,12 @@
 ; A065979: Binomial transform of A002024.
-; Submitted by Kotenok2000
+; Submitted by mkferrysr
 ; 1,3,7,16,36,79,170,362,767,1619,3402,7112,14797,30673,63427,130951,270031,556111,1143537,2347476,4810758,9843932,20118655,41081297,83832648,170987463,348581862,710242310,1446198858
 
+#offset 1
+
+sub $0,1
 mov $2,$0
+mov $3,-1
 mov $4,$0
 add $4,1
 lpb $4
@@ -12,9 +16,13 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  mul $0,8
   add $0,1
-  seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
+  nrt $0,2
+  add $0,1
+  div $0,2
   mul $1,$0
   add $3,$1
 lpe
 mov $0,$3
+add $0,1

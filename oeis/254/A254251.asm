@@ -2,7 +2,9 @@
 ; Submitted by Contact
 ; 2,7,2,1,1,3,8,6,2,4
 
-add $0,1
+#offset 2
+
+sub $0,1
 mov $5,-1
 mov $3,$0
 mul $3,5

@@ -9,7 +9,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,54015 ; a(n) is Chowla function of n read modulo (number of proper divisors of n), a(1) = 0 by convention.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

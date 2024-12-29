@@ -2,7 +2,9 @@
 ; Submitted by Coleslaw
 ; 2,4,2,6,3,1,0,2
 
-add $0,2
+#offset -11
+
+add $0,13
 mov $2,$0
 sub $0,1
 pow $2,8

@@ -1,29 +1,16 @@
 ; A076562: a(1)=3; a(n>1)= greatest prime divisor of a(n-1) + n.
-; Submitted by STE\/E
+; Submitted by Coleslaw
 ; 3,5,2,3,2,2,3,11,5,5,2,7,5,19,17,11,7,5,3,23,11,11,17,41,11,37,2,5,17,47,13,5,19,53,11,47,7,5,11,17,29,71,19,7,13,59,53,101,5,11,31,83,17,71,7,7,2,5,2,31,23,17,5,23,11,11,13,3,3,73,3,5,13,29,13,89,83,23,17,97
+; Formula: a(n) = A006530(a(n-1)+n+1), a(1) = 5, a(0) = 3
 
-mov $5,$0
-mov $1,$0
-add $1,3
-lpb $1
-  sub $1,1
-  mov $0,$5
-  add $0,$2
-  sub $0,$1
-  mov $2,2
-  add $0,1
-  lpb $0
-    mov $3,$0
-    lpb $3
-      mov $4,$0
-      mod $4,$2
-      neq $4,0
-      add $2,1
-      sub $3,$4
-    lpe
-    lpb $0
-      dif $0,$2
-    lpe
-  lpe
+add $0,1
+mov $1,3
+sub $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  add $1,1
+  add $1,$2
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
 lpe
-mov $0,$2
+mov $0,$1

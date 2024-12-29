@@ -4,23 +4,24 @@
 
 #offset 9
 
-sub $0,9
+add $0,1
+sub $0,10
 mov $4,$0
 mov $3,2
 lpb $3
   sub $3,1
   mov $0,$4
-  add $0,$3
-  mov $1,1
   mov $4,9
   add $4,$3
-  sub $0,1
   lpb $0
     sub $0,1
     add $2,1
     mul $2,5
+    bin $4,$3
+    mov $5,$1
     mul $1,$2
   lpe
+  add $1,1
 lpe
-mov $0,$1
+mov $0,$5
 div $0,161006752854092004946836750000000

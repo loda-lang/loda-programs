@@ -1,12 +1,23 @@
 ; A183137: [1/s]+[2/s]+...+[n/s], where s=(golden ratio)^2 and []=floor.
-; Submitted by rajab
+; Submitted by Ryan Hothersall
 ; 0,0,1,2,3,5,7,10,13,16,20,24,28,33,38,44,50,56,63,70,78,86,94,103,112,121,131,141,152,163,174,186,198,210,223,236,250,264,278,293,308,324,340,356,373,390,407,425,443,462,481,500,520,540,561,582,603,625
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+A060144(n), b(0) = 0
+; Formula: a(n) = b(n+1), b(n) = 2*n-truncate((sqrtint(5*n^2)+n)/2)+b(n-1)-1, b(0) = 0
 
 add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,60144 ; a(n) = floor(n/(1+tau)), or equivalently floor(n/(tau)^2), where tau is the golden ratio (A001622).
+  mov $3,$0
+  add $3,$0
+  mov $4,$3
+  mul $3,2
+  add $3,$0
+  mul $3,$0
+  nrt $3,2
+  add $3,$0
+  mov $2,$3
+  div $2,2
+  sub $4,$2
+  mov $2,$4
+  sub $2,1
   sub $0,1
   add $1,$2
 lpe

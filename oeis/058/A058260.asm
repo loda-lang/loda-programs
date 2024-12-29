@@ -2,8 +2,10 @@
 ; Submitted by kpmonaghan
 ; 0,0,0,0,2,1,2,16,58
 
+#offset 1
+
 mov $1,1
-sub $0,2
+sub $0,3
 lpb $0
   sub $0,1
   mov $6,$4

@@ -1,15 +1,14 @@
 ; A035487: Second column of Stolarsky array.
-; Submitted by Ralfy
+; Submitted by tosi
 ; 2,6,11,15,19,23,28,32,36,40,44,49,53,57,61,66,70,74,78,83,87,91,95,100,104,108,112,116,121,125,129,133,138,142,146,150,155,159,163,167,172,176,180,184,189,193,197,201
+; Formula: a(n) = 2*n+truncate((sqrtint((2*n+1)*(10*n+5))+1)/2)+1
 
-add $0,4
+mul $0,2
+add $0,1
 mov $1,$0
-add $1,$0
-mul $1,2
-add $1,$0
-add $1,3
+mul $1,5
 mul $1,$0
 nrt $1,2
-add $1,$0
+add $1,1
+div $1,2
 add $0,$1
-sub $0,15

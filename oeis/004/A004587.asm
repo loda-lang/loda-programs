@@ -1,42 +1,20 @@
 ; A004587: Expansion of sqrt(10) in base 4.
-; Submitted by Christian Krause
+; Submitted by Coleslaw
 ; 3,0,2,2,1,2,0,2,3,0,0,1,3,1,1,2,3,1,0,2,3,1,2,2,2,1,1,0,2,1,0,0,0,2,1,1,0,1,1,1,3,2,1,0,0,1,2,0,1,2,1,2,3,0,3,1,3,3,3,3,1,1,0,2,2,2,3,1,0,3,2,0,0,2,2,2,3,2,2,3
+; Formula: a(n) = -4*truncate(truncate(sqrtint(10*(4^n)^2)/4)/4)+truncate(sqrtint(10*(4^n)^2)/4)
 
 #offset 1
 
 sub $0,1
-mov $2,1
-mov $4,$0
-add $4,2
-mul $4,2
-mov $7,10
-pow $7,$4
-mov $3,$0
-add $3,2
-lpb $3
-  sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,10
-  mov $5,$1
-  pow $5,2
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  add $4,$5
-  mov $8,$4
-  div $8,$7
-  max $8,1
-  mov $1,$4
-  div $1,$8
-  mov $2,$6
-  div $2,$8
-  add $2,2
-  mov $9,4
-lpe
-mov $3,$9
-pow $3,$0
-div $2,$3
-div $1,$2
-mod $1,$9
+add $0,1
+mov $1,4
+pow $1,$0
 mov $0,$1
+mul $1,4
+add $1,$0
+mul $1,2
+mul $1,$0
+nrt $1,2
+mov $0,$1
+div $0,4
+mod $0,4
