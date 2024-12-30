@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $3,$4
+    add $3,1
     seq $3,593 ; Sum of odd divisors of n.
     add $5,1
     add $6,$3

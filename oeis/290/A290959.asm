@@ -8,18 +8,19 @@ lpb $2
   sub $2,1
   mov $0,$6
   sub $0,$2
-  cmp $3,0
+  equ $3,0
   mov $4,5
   trn $4,$0
   add $4,$3
   div $0,$4
+  add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $0,6
   mov $5,1
   sub $5,$0
   sub $0,$5
   add $0,5
-  cmp $3,0
+  equ $3,0
   mov $5,$0
   div $5,2
   sub $5,8

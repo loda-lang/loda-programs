@@ -5,6 +5,7 @@
 pow $0,3
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 lpb $0
   mov $0,$1

@@ -11,6 +11,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2
   sub $0,$3

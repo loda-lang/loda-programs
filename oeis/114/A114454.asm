@@ -1,4 +1,4 @@
-; A114454: Numbers n such that the n-th hexagonal number is a 3-almost prime.
+; A114454: Numbers k such that the k-th hexagonal number is a 3-almost prime.
 ; Submitted by fzs600
 ; 4,5,6,9,10,11,13,15,17,21,22,29,34,43,47,49,51,55,57,61,67,69,71,73,82,87,89,91,101,103,106,107,109,115,121,127,129,141,142,151,159,166,169,177,181,187,191,197,201,205,217,223,227,241,251,262,269,274,277,283
 
@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   add $3,4
   bin $3,2
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,3
   sub $0,$3

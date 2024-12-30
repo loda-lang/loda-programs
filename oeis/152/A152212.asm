@@ -8,12 +8,13 @@ add $2,2
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $4,$1
   seq $4,303384 ; Total area of all rectangles with dimensions s and t where s | t, n = s + t and s <= t.
   gcd $4,$3
   div $3,$4
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

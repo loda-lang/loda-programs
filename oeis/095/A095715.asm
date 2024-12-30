@@ -11,6 +11,7 @@ mov $2,$1
 lpb $2
   dif $2,$1
   sub $2,1
+  add $1,1
   seq $1,1622 ; Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2.
 lpe
 mov $0,$1

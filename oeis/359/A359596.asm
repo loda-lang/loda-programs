@@ -8,7 +8,6 @@ mul $2,36
 lpb $2
   mov $3,$1
   seq $3,356194 ; a(n) is the smallest multiple of n whose prime factorization exponents are all powers of 2.
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   pow $3,2
   seq $3,20079 ; a(n) = floor( Gamma(n+1/7)/Gamma(1/7) ).

@@ -10,11 +10,12 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $3,$1
+  add $3,2
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $3,1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
 lpe

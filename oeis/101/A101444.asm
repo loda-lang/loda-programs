@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,9973
-  add $3,10006
+  add $3,10007
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

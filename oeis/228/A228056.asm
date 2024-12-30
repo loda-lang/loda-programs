@@ -6,9 +6,10 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  add $1,1
   mov $5,$1
+  add $5,2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $1,1
   mov $3,$1
   seq $3,15995 ; a(n) = (tau(n^3)+2)/3.
   add $3,$5

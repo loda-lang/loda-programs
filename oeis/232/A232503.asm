@@ -1,7 +1,10 @@
 ; A232503: Largest power of 2 in the Collatz (3x+1) trajectory of n.
-; Submitted by Simon Strandgaard
+; Submitted by Ralfy
 ; 1,2,16,4,16,16,16,8,16,16,16,16,16,16,16,16,16,16,16,16,64,16,16,16,16,16,16,16,16,16,16,32,16,16,16,16,16,16,16,16,16,64,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,64,16,16,16,16,16,16,16,16,16,16,256,16,16,16,16,16
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $3,1
 add $0,1
@@ -9,10 +12,9 @@ pow $1,2
 lpb $1
   mov $2,2
   sub $2,$0
-  lpb $2
-    mov $2,0
-    mov $1,0
-  lpe
+  mov $4,$2
+  leq $4,0
+  mul $1,$4
   mov $2,$0
   mod $2,2
   lpb $2
@@ -20,11 +22,11 @@ lpb $1
     mul $0,3
     add $0,1
   lpe
-  mov $3,1
-  lpb $0
-    dif $0,2
-    mul $3,2
-  lpe
+  mov $4,$0
+  lex $4,2
+  mov $3,2
+  pow $3,$4
+  div $0,$3
   sub $1,1
 lpe
-mul $0,$3
+mov $0,$3

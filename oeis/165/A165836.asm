@@ -1,8 +1,9 @@
 ; A165836: Totally multiplicative sequence with a(p) = 15.
 ; Submitted by treaclepumpkin
 ; 1,15,15,225,15,225,15,3375,225,225,15,3375,15,225,225,50625,15,3375,15,3375,225,225,15,50625,225,225,3375,3375,15,3375,15,759375,225,225,225,50625,15,225,225,50625,15,3375,15,3375,3375,225,15,759375,225,3375,225,3375,15,50625,225,50625,225,225,15,50625,15,225,3375,11390625,225,3375,15,3375,225,3375,15,759375,15,225,3375,3375,225,3375,15,759375
-; Formula: a(n) = truncate(15^A001222(n))
+; Formula: a(n) = truncate(15^A001222(n+1))
 
+add $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mov $1,15
 pow $1,$0

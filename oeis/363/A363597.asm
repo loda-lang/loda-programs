@@ -13,6 +13,7 @@ lpb $2
   seq $5,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mov $3,$1
   mul $3,$5
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   trn $3,1
   seq $3,337041 ; a(n) = exp(-1/5) * Sum_{k>=0} (5*k - 1)^n / (5^k * k!).

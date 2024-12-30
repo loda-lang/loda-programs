@@ -14,6 +14,7 @@ lpb $4
   sub $0,1
   mov $5,$0
   add $5,$4
+  add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $0,1
   pow $0,$5

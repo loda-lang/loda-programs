@@ -16,6 +16,7 @@ lpb $2
   seq $6,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
   mov $3,$6
   mul $3,$1
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,4
   sub $0,$3

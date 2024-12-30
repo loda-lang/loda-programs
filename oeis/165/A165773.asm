@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   seq $3,316341 ; Characteristic function of the factorials 1!, 2!, 3!, ...
   sub $0,$3

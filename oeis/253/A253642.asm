@@ -10,7 +10,7 @@ lpb $3
   sub $3,1
   mov $2,$1
   sub $0,$3
-  add $0,1
+  add $0,2
   seq $0,1597 ; Perfect powers: m^k where m > 0 and k >= 2.
   sub $0,1
   seq $0,89723 ; a(1)=1; for n>1, a(n) gives number of ways to write n as n = x^y, 2 <= x, 1 <= y.

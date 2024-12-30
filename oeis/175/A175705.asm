@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
     mov $9,10
     add $9,$5

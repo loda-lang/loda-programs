@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,49852 ; Concatenate "n" and "nextprime(n)".
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   pow $3,$0
   equ $3,1

@@ -10,12 +10,14 @@ lpb $2
   add $9,1
   seq $9,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$1
+  add $5,2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $7,$9
   gcd $7,$5
   mov $8,$9
   div $8,$7
   mov $3,$1
+  add $3,2
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$8
   gcd $5,$3

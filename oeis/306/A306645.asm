@@ -13,6 +13,7 @@ lpb $2
   mov $3,$1
   seq $3,324392 ; a(n) is the number of divisors d of n such that A000120(d) divides n, where A000120(d) gives the binary weight of d.
   mov $4,$1
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $4,$3
   mov $3,$4

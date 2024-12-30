@@ -20,6 +20,7 @@ lpb $4
   mov $6,$0
   seq $6,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   sub $6,$7
+  add $0,1
   seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $0,1
   add $0,$6

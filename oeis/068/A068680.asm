@@ -12,6 +12,7 @@ lpb $2
   mov $7,10
   pow $7,$6
   mov $3,$1
+  add $3,1
   seq $3,1704 ; a(n) = n concatenated with n + 1.
   add $3,1
   mul $3,$7

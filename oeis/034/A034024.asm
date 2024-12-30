@@ -12,6 +12,7 @@ lpb $2
   seq $5,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   div $5,2
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   gcd $5,$3
   mov $6,$3

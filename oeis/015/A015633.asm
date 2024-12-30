@@ -13,6 +13,7 @@ lpb $3
   mov $1,1
   add $1,$4
   mov $6,$1
+  add $6,1
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $1,1
   seq $1,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).

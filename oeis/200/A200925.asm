@@ -8,12 +8,13 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $4,$1
+  add $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $3,$1
   sub $3,$4
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
 lpe

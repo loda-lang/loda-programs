@@ -10,6 +10,7 @@ lpb $2
   seq $5,48865 ; a(n) is the number of primes in the reduced residue system mod n.
   mul $5,2
   mov $3,$1
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $3,$5
   mul $3,4

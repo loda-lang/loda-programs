@@ -8,7 +8,6 @@ add $2,180
 lpb $2
   mov $3,$1
   seq $3,184800 ; Numbers k such that floor(k*s) is prime, where s = (3 + sqrt(3))/2.
-  sub $3,1
   seq $3,54406 ; Beatty sequence for (3+sqrt 3)/2; complement of A022838.
   sub $3,2
   seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.

@@ -1,11 +1,13 @@
 ; A046640: a(n) = A045763(n) + 1.
 ; Submitted by pututu
 ; 1,1,1,1,1,2,1,2,2,4,1,4,1,6,5,5,1,8,1,8,7,10,1,10,4,12,7,12,1,16,1,12,11,16,9,17,1,18,13,18,1,24,1,20,17,22,1,24,6,26,17,24,1,30,13,26,19,28,1,34,1,30,23,27,15,40,1,32,23,40,1,38,1,36,31,36,15,48,1,40
-; Formula: a(n) = -A000005(n)-A000010(n)+n+3
+; Formula: a(n) = -A000005(n+1)-A000010(n+1)+n+3
 
 mov $2,$0
+add $2,1
 seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $1,$0
+add $1,1
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $2,$1
 sub $0,$2

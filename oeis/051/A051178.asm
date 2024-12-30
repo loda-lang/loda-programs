@@ -9,6 +9,7 @@ lpb $2
   add $3,1
   mov $5,$3
   seq $3,33312 ; a(n) = n! - 1.
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,$5
   equ $3,0

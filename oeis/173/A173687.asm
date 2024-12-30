@@ -11,14 +11,14 @@ lpb $2
   mov $5,$3
   seq $3,241404 ; Sum of n and the sum of the factorials of its digits.
   sub $3,$5
-  sub $3,2
+  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mod $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

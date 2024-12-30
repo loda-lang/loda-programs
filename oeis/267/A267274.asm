@@ -8,6 +8,7 @@ lpb $0
   seq $1,266984 ; Decimal representation of the n-th iteration of the "Rule 81" elementary cellular automaton starting with a single ON (black) cell.
   div $0,$1
 lpe
+add $0,1
 seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
 mul $1,$0
 mov $0,$1

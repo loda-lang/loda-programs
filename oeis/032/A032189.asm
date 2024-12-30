@@ -11,7 +11,6 @@ lpb $4
   sub $4,1
   mov $2,$3
   gcd $2,$4
-  sub $2,1
   seq $2,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
   add $5,$2
 lpe

@@ -11,7 +11,6 @@ lpb $4
   mov $1,$2
   gcd $1,$4
   mov $0,$1
-  sub $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   pow $0,$2
   add $3,$0

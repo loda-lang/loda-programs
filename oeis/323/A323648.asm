@@ -10,6 +10,7 @@ lpb $3
   mov $4,$2
   seq $4,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mov $6,$2
+  add $6,1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $6,$4
   mov $4,$6

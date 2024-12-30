@@ -18,6 +18,7 @@ lpb $4
   mov $5,$0
   add $5,1
   seq $5,7955 ; Product of divisors of n.
+  add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $0,$5
   mul $1,$0

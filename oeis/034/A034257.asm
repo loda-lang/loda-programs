@@ -3,6 +3,7 @@
 ; 1,3,3,7,3,9,3,11,9,9
 
 lpb $0
+  add $0,1
   seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $4,$0
   div $0,2

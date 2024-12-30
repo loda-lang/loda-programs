@@ -15,6 +15,7 @@ lpb $4
   bin $1,$0
   sub $0,$1
   mul $0,$1
+  add $0,1
   seq $0,1747 ; 2 together with primes multiplied by 2.
   mul $1,$0
   add $3,$1

@@ -13,16 +13,17 @@ lpb $2
   seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $6,$7
   add $6,1
-  cmp $6,4
+  equ $6,4
   mov $3,$6
   mul $3,$1
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,4
+  equ $3,4
   mov $6,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,$4
   mul $2,$4
   sub $2,1

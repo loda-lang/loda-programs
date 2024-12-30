@@ -6,9 +6,10 @@ mov $2,$0
 mul $2,10
 lpb $2
   mov $5,$1
-  add $5,1
+  add $5,3
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
+  add $3,2
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   bin $5,$3
   mov $3,$5

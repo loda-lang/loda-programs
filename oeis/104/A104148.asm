@@ -11,8 +11,8 @@ lpb $0
   sub $0,1
   add $3,1
   mov $4,$0
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $5,1
   bin $5,$4

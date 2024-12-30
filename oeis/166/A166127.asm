@@ -4,6 +4,7 @@
 
 mov $1,8
 mov $3,$0
+add $3,1
 seq $3,6 ; Integer part of square root of n-th prime.
 add $3,5
 mov $4,2

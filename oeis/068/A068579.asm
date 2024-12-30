@@ -7,19 +7,20 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
   seq $3,49099 ; a(n) = Euler phi function applied thrice to n.
   sub $3,$4
   mul $3,2
   mov $5,$3
-  cmp $5,0
+  equ $5,0
   add $3,$5
   mov $6,$3
   add $6,1
   mod $6,2
   mov $3,$6
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

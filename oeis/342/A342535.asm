@@ -11,10 +11,10 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   pow $4,3
+  sub $0,1
   add $3,$4
 lpe
 mov $0,$3

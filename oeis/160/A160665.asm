@@ -8,15 +8,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,214968 ; Least m>0 such that n-m divides L(n)-m, where L = A000032 (Lucas numbers).
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

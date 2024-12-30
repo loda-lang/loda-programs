@@ -10,7 +10,7 @@ mul $2,1682
 max $2,2
 lpb $2
   mov $3,$1
-  add $3,5
+  add $3,6
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $5,$1
   add $5,1

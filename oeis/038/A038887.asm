@@ -8,20 +8,21 @@ add $2,10
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$1
   seq $5,35197 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 15.
-  cmp $5,0
+  equ $5,0
   add $5,$6
   mov $3,$1
   seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -11,7 +11,6 @@ lpb $2
   seq $3,226778 ; Numbers having no common divisor > 1 with their reversal in decimal representation (see A043537).
   mov $5,$3
   add $5,2
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

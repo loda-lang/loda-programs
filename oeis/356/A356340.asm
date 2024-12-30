@@ -12,9 +12,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   mul $1,2
-  sub $0,1
   mov $5,$0
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,1
   bin $1,$4
   mul $1,$5
   add $3,$1

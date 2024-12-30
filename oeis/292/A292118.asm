@@ -1,10 +1,18 @@
 ; A292118: G.f.: 1 + 2*Sum_{k >= 1} (-1)^k*q^A003159(k).
 ; Submitted by Jamie Morken(l1)
 ; 1,-2,0,2,-2,2,0,-2,0,2,0,-2,2,-2,0,2,-2,2,0,-2,2,-2,0,2,0,-2,0,2,-2,2,0,-2,0,2,0,-2,2,-2,0,2,0,-2,0,2,-2,2,0,-2,2,-2,0,2,-2,2,0,-2,0,2,0,-2,2,-2,0,2,-2,2,0,-2,2,-2,0,2,0,-2,0,2,-2,2,0,-2
-; Formula: a(n) = -2*A317189(n)+binomial(0,n)+2
 
 bin $1,$0
-seq $0,317189 ; A morphic sequence related to the ternary Thue-Morse sequence.
+mov $3,7
+lpb $0
+  sub $0,1
+  mul $3,4
+  bxo $3,$2
+  mov $2,$3
+lpe
+add $2,37
+mod $2,3
+mov $0,$2
 mul $0,2
 add $1,2
 sub $1,$0

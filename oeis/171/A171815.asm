@@ -13,7 +13,6 @@ lpb $2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$3
   mov $3,$6
-  sub $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

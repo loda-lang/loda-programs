@@ -9,6 +9,7 @@ add $2,11
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   div $3,2
   add $1,2

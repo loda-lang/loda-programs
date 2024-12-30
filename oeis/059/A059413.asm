@@ -9,6 +9,7 @@ lpb $2
   trn $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,740 ; Number of 2n-bead balanced binary necklaces of fundamental period 2n, equivalent to reversed complement; also Dirichlet convolution of b_n=2^(n-1) with mu(n); also number of components of Mandelbrot set corresponding to Julia sets with an attractive n-cycle.
   mul $1,2
   add $1,$0

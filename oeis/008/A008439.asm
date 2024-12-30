@@ -9,6 +9,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,593 ; Sum of odd divisors of n.
   add $1,$2
   mov $3,2

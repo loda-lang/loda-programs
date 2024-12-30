@@ -8,15 +8,16 @@ lpb $2
   mov $3,$1
   seq $3,115070 ; a(n) = phi(n)/3^b(n), where b(n) is #{primes p=1 mod 3 dividing n}.
   mov $5,$1
+  add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   div $5,$3
   mov $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

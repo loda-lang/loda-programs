@@ -1,15 +1,13 @@
 ; A009286: a(n) = lcm(sigma(n), phi(n)).
 ; Submitted by Simon Strandgaard
 ; 1,3,4,14,12,12,24,60,78,36,60,28,84,24,24,248,144,78,180,168,96,180,264,120,620,84,360,168,420,72,480,1008,240,432,48,1092,684,180,168,720,840,96,924,420,312,792,1104,496,798,1860,288,1176,1404,360,360,120,720,1260,1740,336,1860,480,936,4064,336,720,2244,2016,1056,144,2520,1560,2664,684,1240,1260,480,168,3120,2976
-; Formula: a(n) = A000203(n)*truncate(A000010(n-1)/gcd(A000010(n-1),A000203(n)))
+; Formula: a(n) = A000203(n)*truncate(A000010(n)/gcd(A000010(n),A000203(n)))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 mov $2,$1
-add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 gcd $1,$0
 div $2,$1

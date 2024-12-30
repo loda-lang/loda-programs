@@ -14,6 +14,7 @@ lpb $1
   pow $4,$0
   mul $4,2
   bin $4,2
+  add $0,1
   seq $0,593 ; Sum of odd divisors of n.
   mul $0,$4
   sub $2,1

@@ -10,13 +10,14 @@ add $0,1
 mov $1,1
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
   seq $3,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   sub $3,1
   sub $4,$3
   mov $3,$4
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

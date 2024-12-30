@@ -8,6 +8,7 @@ lpb $0
   mov $3,$0
   sub $3,1
   div $3,2
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,2
   add $2,$3

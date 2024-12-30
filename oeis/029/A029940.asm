@@ -14,7 +14,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   bin $0,$1
-  sub $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $0,$3
   mul $1,$0

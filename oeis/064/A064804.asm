@@ -10,21 +10,21 @@ lpb $2
   mov $5,$1
   mul $5,2
   mov $7,$5
-  add $7,1
+  add $7,3
   seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $6,0
   gcd $6,$7
   add $5,$4
-  add $5,2
+  add $5,4
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   div $5,$6
   gcd $5,$3
   div $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

@@ -6,4 +6,4 @@ lpb $0
   sub $0,$1
 lpe
 sub $0,1
-cmp $0,0
+equ $0,0

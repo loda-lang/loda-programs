@@ -14,6 +14,7 @@ lpb $3
   mov $2,$0
   mul $2,$1
   trn $2,1
+  add $2,1
   seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $2,4
   add $4,$2

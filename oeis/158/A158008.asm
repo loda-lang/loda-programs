@@ -13,7 +13,7 @@ lpb $2
   sub $5,1
   seq $5,322252 ; a(0) = 1 and a(n) = (5*n)!/(5!*n!^5) for n > 0.
   sub $5,1
-  add $4,2
+  add $4,3
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   gcd $5,$4
   mov $3,$1

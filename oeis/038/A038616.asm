@@ -12,6 +12,7 @@ lpb $2
   seq $3,52421 ; Numbers without 8 as a digit.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

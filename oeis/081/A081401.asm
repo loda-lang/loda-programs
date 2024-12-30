@@ -1,9 +1,20 @@
 ; A081401: Pseudologarithm (A056239) of n!: a(n) = A056239(A000142(n)).
-; Submitted by STE\/E
+; Submitted by Science United
 ; 0,1,3,5,8,11,15,18,22,26,31,35,41,46,51,55,62,67,75,80,86,92,101,106,112,119,125,131,141,147,158,163,170,178,185,191,203,212,220,226,239,246,260,267,274,284,299,305,313,320,329,337,353,360,368,375,385,396,413,420,438,450,458,464,473,481,500,509,520,528,548,555,576,589,597,607,616,625,647,654
-; Formula: a(n) = A079167(A249769(2*n)-1)
 
-mul $0,2
-seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
-sub $0,1
-seq $0,79167 ; Weighted roundness of n. If n = p_1^e_1...p_k^e_k, then a(n) = e_1 + 2*e_2 + ... + k*e_k. Note that p_i < p_j, i < j is assumed.
+mov $4,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$4
+  sub $0,$1
+  max $2,$0
+  mov $5,$2
+  sub $0,$2
+  lpb $2
+    bin $2,$0
+    seq $5,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
+  lpe
+  add $3,$5
+lpe
+mov $0,$3

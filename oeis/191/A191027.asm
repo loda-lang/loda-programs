@@ -10,12 +10,13 @@ lpb $2
   mov $3,$1
   mul $3,2
   mov $4,$3
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $3,1
   seq $3,11589 ; Legendre symbol (n,37).
   sub $3,$4
   add $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

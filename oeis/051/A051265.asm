@@ -18,6 +18,7 @@ lpb $5
   seq $6,8966 ; a(n) = 1 if n is squarefree, otherwise 0.
   mov $1,$0
   mul $1,$6
+  add $1,1
   seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $0,2
   mul $0,$1

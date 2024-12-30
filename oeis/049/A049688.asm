@@ -7,6 +7,7 @@ lpb $0
   add $3,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $2,$3
   add $1,1

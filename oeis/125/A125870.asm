@@ -9,7 +9,7 @@ mul $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
+  add $3,3
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   equ $3,7

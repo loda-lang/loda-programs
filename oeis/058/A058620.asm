@@ -4,15 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,7
+sub $0,1
+add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
   seq $3,13632 ; Difference between n and the next prime greater than n.
   add $1,$3
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1
   equ $3,1

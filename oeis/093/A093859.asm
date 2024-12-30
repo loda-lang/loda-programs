@@ -9,14 +9,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,93811 ; Sum of the digital products of the divisors of n.
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

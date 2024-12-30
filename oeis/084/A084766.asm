@@ -16,6 +16,7 @@ lpb $3
   mul $2,$1
   sub $2,1
   trn $2,1
+  add $2,1
   seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   add $4,$2
 lpe

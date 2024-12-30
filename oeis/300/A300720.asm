@@ -16,6 +16,7 @@ lpb $4
   sub $0,1
   mov $5,$0
   seq $5,300717 ; Möbius transform of A003557, n divided by its largest squarefree divisor.
+  add $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,$5
   mul $1,$0

@@ -8,6 +8,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,1463 ; Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
   sub $4,1
   add $2,1

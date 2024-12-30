@@ -11,6 +11,7 @@ sub $0,1
 lpb $0
   div $0,2
   gcd $2,$0
+  add $2,1
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $0,2
 lpe

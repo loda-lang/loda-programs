@@ -10,10 +10,10 @@ lpb $2
   mov $4,$1
   seq $4,237271 ; Number of parts in the symmetric representation of sigma(n).
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,$4
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -11,7 +11,7 @@ lpb $2
   seq $3,34961 ; Sums of three consecutive primes.
   mov $5,$3
   mul $3,2
-  add $3,7
+  add $3,8
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2
   sub $0,$3

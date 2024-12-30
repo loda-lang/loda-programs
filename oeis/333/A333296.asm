@@ -6,7 +6,7 @@ mov $2,$0
 add $2,1
 mov $3,$2
 min $3,7
-mov $4,10
+mov $4,11
 seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 bin $2,$4
 mov $1,$2

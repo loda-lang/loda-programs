@@ -9,5 +9,6 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
+add $0,1
 seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
 mod $0,5

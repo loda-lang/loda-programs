@@ -2,7 +2,10 @@
 ; Submitted by pututu
 ; 6,6,8,10,12,13,14,14,17,21,22,24
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   mod $6,5

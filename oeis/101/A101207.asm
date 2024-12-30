@@ -12,7 +12,6 @@ lpb $5
   max $4,0
   add $4,1
   seq $4,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
-  sub $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $2,$5
   mul $2,$4

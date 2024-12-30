@@ -9,15 +9,14 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   mov $5,$0
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$0
-  add $4,1
   seq $4,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
   trn $4,3
   mul $4,$5
   div $4,2
+  sub $0,1
   mul $0,$4
   add $0,$4
   add $3,$0

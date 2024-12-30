@@ -4,11 +4,11 @@
 
 mul $0,5
 mov $1,$0
-add $1,4
+add $1,5
 seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,2
 lpb $0
-  cmp $0,0
+  equ $0,0
   add $1,14
 lpe
 mov $0,$1

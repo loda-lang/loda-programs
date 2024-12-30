@@ -10,5 +10,4 @@ pow $0,2
 gcd $0,$1
 div $1,$0
 mov $0,$1
-sub $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

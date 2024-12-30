@@ -12,6 +12,7 @@ lpb $2
   seq $3,107665 ; Numbers with semiprime digits (digits 4, 6, 9 only).
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,2
   equ $3,1

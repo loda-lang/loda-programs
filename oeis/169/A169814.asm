@@ -4,7 +4,6 @@
 
 add $0,1
 bor $1,$0
-sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 bxo $1,$0
 mov $0,$1

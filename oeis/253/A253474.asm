@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,56927 ; Difference between n^2 and largest prime less than n^2.
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   add $0,$3

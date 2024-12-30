@@ -9,7 +9,6 @@ lpb $5
   sub $6,$1
   mov $0,$7
   add $0,$5
-  sub $0,1
   seq $0,1097 ; Twin primes.
   add $2,$6
   mov $3,$2

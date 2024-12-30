@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   add $1,1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$1
   seq $5,130819 ; 2*k appears 2*k-1 times.
@@ -14,12 +15,12 @@ lpb $2
   mov $6,$3
   div $6,$5
   mov $3,$6
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -14,7 +14,7 @@ lpb $2
   sub $5,1
   seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mul $3,2
   sub $5,$3

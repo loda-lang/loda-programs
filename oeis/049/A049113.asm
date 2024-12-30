@@ -2,14 +2,13 @@
 ; Submitted by Simon Strandgaard (M1)
 ; 1,2,2,3,3,2,2,4,2,3,3,3,3,2,4,5,5,2,2,4,3,3,3,4,4,3,2,3,3,4,4,6,4,5,4,3,3,2,4,5,5,3,3,4,4,3,3,5,3,4,6,4,4,2,5,4,3,3,3,5,5,4,3,7,5,4,4,6,4,4,4,4,4,3,5,3,5,4,4,6
 
-cmp $1,$0
+equ $1,$0
 trn $0,1
 mov $2,$0
 mov $3,1
 add $0,2
 lpb $0
   mul $0,2
-  sub $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $1,1
 lpe

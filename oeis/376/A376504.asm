@@ -6,6 +6,7 @@
 mov $1,$0
 seq $1,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
 mov $4,$0
+add $4,2
 seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $4,$1
 mov $3,$0
@@ -13,6 +14,7 @@ add $3,1
 seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
 add $3,$4
 mov $2,$0
+add $2,2
 seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $2,$3
 mov $1,$2

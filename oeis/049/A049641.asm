@@ -12,6 +12,7 @@ lpb $0
     sub $2,$0
     mov $4,$2
     max $4,0
+    add $4,1
     seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
     add $3,$4
   lpe

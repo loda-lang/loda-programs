@@ -9,7 +9,7 @@ lpb $3
   mov $1,$2
   add $1,2
   mov $4,$2
-  add $4,4
+  add $4,5
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   bin $4,2
   mod $4,$1

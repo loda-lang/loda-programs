@@ -11,6 +11,7 @@ lpb $2
   mov $0,$1
   sub $0,$3
   trn $0,1
+  add $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $1,0
 lpe

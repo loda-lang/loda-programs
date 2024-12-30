@@ -25,6 +25,7 @@ lpb $3
       mov $0,$4
       add $0,$10
       mov $2,$0
+      add $0,1
       seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
       mul $0,3
       mov $1,$2

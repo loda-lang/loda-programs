@@ -17,15 +17,16 @@ lpb $2
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,$1
   add $6,1
-  cmp $1,8
+  equ $1,8
   mul $1,$6
   add $1,$4
+  add $1,1
   seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $1,1
+  equ $1,1
   sub $0,$1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mod $6,13
   mul $2,$5
   sub $2,1

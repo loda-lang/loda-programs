@@ -8,9 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  add $2,1
-  mul $2,2
+  mul $2,4
+  add $2,3
   seq $2,593 ; Sum of odd divisors of n.
   div $2,4
   add $4,2

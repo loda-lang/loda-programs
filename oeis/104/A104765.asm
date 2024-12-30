@@ -7,5 +7,6 @@ lpb $0
   sub $0,$1
 lpe
 mov $1,$0
+add $1,1
 seq $1,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
 mov $0,$1

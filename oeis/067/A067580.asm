@@ -6,6 +6,7 @@ mov $1,1
 add $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mul $3,$2
   add $3,$1

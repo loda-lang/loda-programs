@@ -8,8 +8,9 @@ lpb $2
   mov $3,$1
   seq $3,23416 ; Number of 0's in binary expansion of n.
   trn $3,1
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-  cmp $3,1
+  equ $3,1
   add $1,1
   add $1,$0
   add $2,$3

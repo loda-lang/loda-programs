@@ -11,6 +11,7 @@ lpb $3
   mov $6,$0
   mov $7,$0
   seq $7,92673 ; a(n) = moebius(n) - moebius(n/2) where moebius(n) is zero if n is not an integer.
+  add $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $0,$7
   add $0,$6

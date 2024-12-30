@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   seq $3,94784 ; Numbers that are neither squares nor cubes.
   mov $5,$3
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   neq $3,1
   sub $0,$3

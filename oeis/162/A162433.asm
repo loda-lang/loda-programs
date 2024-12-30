@@ -12,8 +12,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mul $0,2
+  sub $0,1
   seq $0,593 ; Sum of odd divisors of n.
   add $1,$0
 lpe

@@ -8,10 +8,11 @@ lpb $2
   sub $2,1
   add $2,$4
   mov $3,$1
+  add $3,1
   seq $3,86 ; Number of solutions to x^2 - x + 1 == 0 (mod n).
   min $3,1
   sub $0,$3
   add $1,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1

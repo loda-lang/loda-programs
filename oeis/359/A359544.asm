@@ -10,6 +10,7 @@ lpb $2
   sub $3,1
   mov $5,$3
   seq $3,359541 ; Inverse Möbius transform of A328308, which is the characteristic function of numbers that eventually reach zero when iterated with the arithmetic derivative.
+  add $5,1
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $5,$3
   mov $3,$5

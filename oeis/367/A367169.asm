@@ -1,9 +1,10 @@
 ; A367169: a(n) is the sum of the exponents in the prime factorization of n that are powers of 2.
 ; Submitted by gemini8
 ; 0,1,1,2,1,2,1,0,2,2,1,3,1,2,2,4,1,3,1,3,2,2,1,1,2,2,0,3,1,3,1,0,2,2,2,4,1,2,2,1,1,3,1,3,3,2,1,5,2,3,2,3,1,1,2,1,2,2,1,4,1,2,3,0,2,3,1,3,2,3,1,2,1,2,3,3,2,3,1,5
-; Formula: a(n) = A048675(gcd(A000005(n),A369890(n))-1)
+; Formula: a(n) = A048675(gcd(A000005(n+1),A369890(n))-1)
 
 mov $1,$0
+add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 seq $0,369890 ; The number of divisors of the largest divisor of n whose exponents in its prime factorization are all powers of 2.
 gcd $1,$0

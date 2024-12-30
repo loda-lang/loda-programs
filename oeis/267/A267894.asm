@@ -9,7 +9,6 @@ lpb $2
   add $3,1
   seq $3,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
   div $3,2
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   neq $3,2
   sub $0,$3

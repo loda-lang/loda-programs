@@ -5,6 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,1747 ; 2 together with primes multiplied by 2.
   mov $3,$2
   mul $3,2

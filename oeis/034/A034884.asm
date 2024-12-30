@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   nrt $3,2
   mov $5,$1
+  add $5,1
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $5,$3
   mov $3,$5

@@ -8,8 +8,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,339767 ; a(n) = 2*gpf(n) - Sum_{p | n, p prime} p*m(p), where gpf(n) = A006530(n) is the greatest prime factor of n and m(p) is the multiplicity of p in the prime factorization of n.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

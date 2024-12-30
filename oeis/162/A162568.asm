@@ -15,7 +15,7 @@ lpb $2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$3
   mov $3,$6
-  add $3,2
+  add $3,3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   mov $5,$6

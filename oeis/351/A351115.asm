@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$0
   add $4,1

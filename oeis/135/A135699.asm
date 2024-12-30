@@ -15,6 +15,7 @@ lpb $2
   sub $0,$2
   sub $0,1
   seq $0,4197 ; Triangle read by rows. T(n, k) = n - k if n - k < k, otherwise k.
+  add $0,1
   seq $0,1622 ; Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2.
   mul $1,10
   add $1,$0

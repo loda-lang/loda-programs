@@ -7,6 +7,7 @@ dif $2,-2
 max $2,0
 seq $2,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
 mov $1,$0
+add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 bin $1,2
 sub $1,$2

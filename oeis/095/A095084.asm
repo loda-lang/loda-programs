@@ -15,7 +15,6 @@ lpb $2
   seq $6,95076 ; Parity of 1-fibits in Zeckendorf expansion A014417(n).
   add $6,$3
   mov $3,$6
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   mov $5,$6

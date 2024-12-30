@@ -1,6 +1,18 @@
 ; A100665: a(n) = round(sqrt(Fibonacci(n))).
+; Submitted by zombie67 [MM]
 ; 0,1,1,1,2,2,3,4,5,6,7,9,12,15,19,25,31,40,51,65,82,105,133,169,215,274,348,443,564,717,912,1160,1476,1877,2388,3038,3864,4915,6252,7953,10116,12868,16368,20821,26484,33688,42852,54509,69336,88197,112189,142706
-; Formula: a(n) = A000194(A000045(n))
+; Formula: a(n) = truncate((sqrtint(4*truncate((min(n,n%2)*c(n)+b(n))/3))+1)/2), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+mov $2,3
+lpb $0
+  sub $0,2
+  add $2,$1
+  add $1,$2
+lpe
+mul $0,$2
+add $0,$1
+div $0,3
+mul $0,4
+nrt $0,2
+add $0,1
+div $0,2

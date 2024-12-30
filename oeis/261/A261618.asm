@@ -5,6 +5,7 @@
 mov $1,$0
 add $1,1
 mov $2,$1
+add $0,1
 seq $0,1704 ; a(n) = n concatenated with n + 1.
 lpb $1
   div $1,10

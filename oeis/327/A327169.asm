@@ -11,12 +11,14 @@ lpb $2
   sub $0,$2
   mov $5,$0
   mov $6,$0
+  add $6,1
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $0,$6
   sub $0,1
   sub $0,$5
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

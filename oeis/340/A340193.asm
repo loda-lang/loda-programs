@@ -13,9 +13,9 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
   mov $5,$0
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  sub $0,1
   seq $0,63994 ; a(n) = Product_{primes p dividing n } gcd(p-1, n-1).
   sub $5,$0
   mul $1,$5

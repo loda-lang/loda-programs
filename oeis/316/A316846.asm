@@ -7,6 +7,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $1,$2
   add $1,1

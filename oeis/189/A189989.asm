@@ -12,6 +12,7 @@ lpb $2
   add $3,1
   seq $3,5361 ; Product of exponents of prime factorization of n.
   mov $4,$1
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   div $4,2
   sub $4,$3

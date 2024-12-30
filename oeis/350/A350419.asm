@@ -10,15 +10,14 @@ lpb $2
   mov $3,$1
   seq $3,105020 ; Array read by antidiagonals: row n (n >= 0) contains the numbers m^2 - n^2, m >= n+1.
   mov $5,$3
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $3,1
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

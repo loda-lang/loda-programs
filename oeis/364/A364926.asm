@@ -13,6 +13,7 @@ lpb $5
   dif $2,2
   seq $2,10055 ; 1 if n is a prime power p^k (k >= 0), otherwise 0.
   add $2,$4
+  add $2,1
   seq $2,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $2,1
   sub $1,$2

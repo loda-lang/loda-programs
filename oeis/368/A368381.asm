@@ -15,7 +15,6 @@ lpb $4
   lpe
   mov $1,$0
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
-  sub $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   lpb $0
     mov $0,$1

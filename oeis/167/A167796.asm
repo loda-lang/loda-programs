@@ -8,6 +8,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $6,$5
   mov $3,$1

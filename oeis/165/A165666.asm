@@ -13,7 +13,6 @@ lpb $2
   mov $5,$3
   seq $3,321324 ; a(n) = (n^2 - c(n)) / 7 + 1 where c(n) = c(-n) = c(n+7) for all n in Z and a(n) = 1 if 0 <= n <=3 except a(1) = 0.
   mul $3,2
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   neq $3,2
   sub $0,$3

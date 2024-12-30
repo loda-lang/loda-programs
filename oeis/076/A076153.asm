@@ -9,6 +9,7 @@ pow $2,4
 lpb $2
   sub $2,$0
   mov $4,$1
+  add $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   pow $4,2
   mov $3,$1

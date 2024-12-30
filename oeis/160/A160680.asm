@@ -10,7 +10,9 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
+  add $4,1
   seq $4,71 ; a(n) = Fibonacci(n) - 1.
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   add $1,$4
   mul $3,$2

@@ -5,6 +5,7 @@
 mov $1,1
 max $1,$0
 lpb $1
+  add $1,1
   seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 lpe
 mov $0,$1

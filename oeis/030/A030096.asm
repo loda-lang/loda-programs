@@ -14,7 +14,6 @@ lpb $2
   mov $3,$1
   seq $3,14261 ; Numbers that contain odd digits only.
   mov $5,$3
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

@@ -8,17 +8,18 @@ pow $2,3
 lpb $2
   sub $2,18
   mov $3,$1
+  add $3,1
   seq $3,26 ; Mosaic numbers or multiplicative projection of n: if n = Product (p_j^k_j) then a(n) = Product (p_j * k_j).
   mod $3,5
   dif $3,2
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

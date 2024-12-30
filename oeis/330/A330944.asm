@@ -16,6 +16,7 @@ lpb $0
   mov $3,$2
   sub $3,1
   seq $3,78442 ; a(p) = a(n) + 1 if p is the n-th prime, prime(n); a(n)=0 if n is not prime.
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mod $3,2
   lpb $0

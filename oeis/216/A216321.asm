@@ -4,5 +4,4 @@
 
 seq $0,62570 ; a(n) = phi(2*n).
 dif $0,2
-sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

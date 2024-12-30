@@ -4,6 +4,7 @@
 
 mov $1,$0
 mov $2,$0
+add $0,1
 seq $0,1747 ; 2 together with primes multiplied by 2.
 div $0,2
 sub $2,1

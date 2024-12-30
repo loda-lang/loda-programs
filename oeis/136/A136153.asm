@@ -11,6 +11,7 @@ lpb $2
   mov $5,$1
   seq $5,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   mov $8,$1
+  add $8,2
   seq $8,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $8,$5
   mov $7,$1
@@ -18,6 +19,7 @@ lpb $2
   seq $7,1221 ; Number of distinct primes dividing n (also called omega(n)).
   add $7,$8
   mov $6,$1
+  add $6,2
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $6,$7
   seq $3,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.

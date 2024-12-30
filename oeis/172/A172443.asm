@@ -9,6 +9,7 @@ add $2,10
 pow $2,5
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
   seq $3,40056 ; Continued fraction for sqrt(65).

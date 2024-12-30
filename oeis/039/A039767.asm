@@ -9,6 +9,7 @@ add $0,1
 mov $1,1
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   gcd $4,$1
   mov $3,$1

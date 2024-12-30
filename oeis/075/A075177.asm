@@ -13,7 +13,6 @@ lpb $2
   mov $3,$5
   sub $3,1
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

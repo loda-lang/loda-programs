@@ -6,6 +6,7 @@ lpb $0
   div $0,2
   div $1,8
   gcd $1,$0
+  add $1,1
   seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mul $0,2
 lpe

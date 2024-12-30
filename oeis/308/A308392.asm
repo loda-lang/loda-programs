@@ -13,8 +13,9 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,593 ; Sum of odd divisors of n.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

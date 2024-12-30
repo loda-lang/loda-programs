@@ -9,7 +9,6 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,34699 ; Largest prime power factor of n.
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,1
   gcd $3,2
@@ -18,7 +17,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

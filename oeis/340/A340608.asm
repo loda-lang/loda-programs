@@ -16,6 +16,7 @@ lpb $2
   seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $5,1
   mov $4,$1
+  add $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   gcd $5,$4
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).

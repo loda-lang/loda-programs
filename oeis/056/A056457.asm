@@ -5,6 +5,7 @@
 mov $1,2
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,920 ; Differences of 0: 6!*Stirling2(n,6).
   div $0,$1
   add $1,$2

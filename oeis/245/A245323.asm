@@ -11,6 +11,7 @@ lpb $2
   mov $3,$5
   mov $5,$4
   mov $0,$1
+  add $0,1
   seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
   add $3,$0
   add $3,1

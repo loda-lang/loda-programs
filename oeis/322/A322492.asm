@@ -8,6 +8,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   div $3,2
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $3,1
   seq $3,46523 ; Smallest number with same prime signature as n.

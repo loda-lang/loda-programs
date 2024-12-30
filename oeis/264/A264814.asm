@@ -12,6 +12,7 @@ lpb $2
   mov $6,10
   pow $6,$5
   mov $3,$1
+  add $3,1
   seq $3,1704 ; a(n) = n concatenated with n + 1.
   mul $3,$6
   add $3,$1
@@ -20,7 +21,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

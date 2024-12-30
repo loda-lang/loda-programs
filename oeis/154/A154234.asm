@@ -10,5 +10,6 @@ add $1,1
 mov $2,$0
 mov $0,$1
 mov $1,$2
+add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mod $0,$1

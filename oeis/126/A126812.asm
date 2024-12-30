@@ -6,6 +6,7 @@ mov $1,-1
 pow $1,$0
 mul $1,2
 bin $1,2
+add $0,1
 seq $0,593 ; Sum of odd divisors of n.
 mod $0,4
 lpb $1

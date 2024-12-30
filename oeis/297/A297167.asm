@@ -9,6 +9,7 @@ add $4,1
 mov $3,$0
 seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
 sub $3,$4
+add $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 add $0,$3
 mov $1,$0

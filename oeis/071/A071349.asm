@@ -13,7 +13,6 @@ lpb $2
   seq $3,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
   gcd $4,$3
   mov $3,$4
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   add $2,$3
   equ $3,0

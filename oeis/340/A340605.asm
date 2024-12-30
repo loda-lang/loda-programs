@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $5,$3
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   seq $5,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
   sub $5,$3

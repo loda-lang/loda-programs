@@ -5,6 +5,7 @@
 seq $0,72668 ; Numbers one less than composite numbers.
 mov $1,1
 add $1,$0
+add $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $1,$0
 mov $0,$1

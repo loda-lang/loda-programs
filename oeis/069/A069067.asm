@@ -8,12 +8,13 @@ pow $2,4
 lpb $2
   add $4,1
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $3,$4
   sub $3,1
   seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

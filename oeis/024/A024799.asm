@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,408 ; Numbers that are the sum of three nonzero squares.
   add $3,$4
   gcd $3,2

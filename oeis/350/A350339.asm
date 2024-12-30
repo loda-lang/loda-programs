@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  sub $0,1
   seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   div $0,2
   mov $6,1

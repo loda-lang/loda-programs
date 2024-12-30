@@ -4,6 +4,7 @@
 
 mov $1,1
 add $1,$0
+add $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,1
 lpb $0
@@ -15,7 +16,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     div $4,$2
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

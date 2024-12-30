@@ -8,6 +8,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,1097 ; Twin primes.
   add $1,$2
 lpe

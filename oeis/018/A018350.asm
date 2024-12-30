@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,73103 ; Number of solutions to x^4 == 1 (mod n).
   mov $5,$1
+  add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   div $5,$3
   mov $3,$5

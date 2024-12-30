@@ -1,8 +1,9 @@
 ; A065803: a(n) = (sigma_2(n) mod 2) * (sigma_2(n) mod 5). Residue-product modulo 2 and 5 of sum of square of divisors.
 ; Submitted by Simon Strandgaard
 ; 1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = (-5*truncate(A001157(n)/5)+A001157(n))*(-2*truncate(A001157(n)/2)+A001157(n))
+; Formula: a(n) = (-5*truncate(A001157(n+1)/5)+A001157(n+1))*(-2*truncate(A001157(n+1)/2)+A001157(n+1))
 
+add $0,1
 seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
 mov $1,$0
 mod $1,5

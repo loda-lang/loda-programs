@@ -8,7 +8,6 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,63775 ; Number of 4th powers dividing n.
-  sub $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2
   sub $0,$3

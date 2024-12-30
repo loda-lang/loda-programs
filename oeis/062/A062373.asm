@@ -9,6 +9,7 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $6,$1
+  add $6,1
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $4,$1
   add $4,1

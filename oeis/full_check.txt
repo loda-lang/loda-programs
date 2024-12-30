@@ -446,6 +446,7 @@ A184748: a(n) = floor(n*r + h), where r = 4 - sqrt(5), h = -1/2. Also, complemen
 A184778: Numbers k such that 2k + floor(k*sqrt(2)) is prime.
 A185102: a(n) is the recursion depth of repeatedly factoring n and then the exponents in its prime product factorization, until 1 is reached.
 A186221: Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and squares.  Complement of A186222.
+A187285: Smallest multiple of n beginning with 1.
 A187330: a(n) = floor((4-sqrt(5))*n); complement of A187339.
 A187338: a(n) = 3*n + floor(sqrt(2)*n), complement of A187328.
 A187948: [nr+kr]-[nr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.

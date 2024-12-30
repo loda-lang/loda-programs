@@ -8,10 +8,12 @@ add $2,2
 pow $2,5
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $6,46
   pow $6,$4
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $3,2
   mov $4,$6
@@ -19,7 +21,7 @@ lpb $2
   mov $5,$3
   div $5,$4
   mov $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -12,9 +12,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
   mov $5,$0
   seq $5,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+  sub $0,1
   mul $1,$5
   add $3,$1
 lpe

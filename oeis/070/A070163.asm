@@ -11,6 +11,7 @@ lpb $2
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,2
   mov $6,$3
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $6,$3
   mov $3,$6

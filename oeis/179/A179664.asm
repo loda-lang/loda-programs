@@ -10,6 +10,7 @@ add $0,1
 mov $1,1
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $4,2
   mov $3,$1

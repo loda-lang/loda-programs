@@ -5,6 +5,7 @@
 trn $0,1
 equ $1,$0
 mov $2,$0
+add $2,1
 seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 add $0,1
 seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).

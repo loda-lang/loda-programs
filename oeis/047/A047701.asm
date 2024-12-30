@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes]Maeda
 ; 1,2,3,4,6,7,9,10,12,15,18,33
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 add $2,180

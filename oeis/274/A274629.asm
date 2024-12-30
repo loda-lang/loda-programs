@@ -1,7 +1,7 @@
 ; A274629: Partial sums of A274628.
 ; Submitted by ChelseaOilman
 ; 1,5,12,25,40,66,91,130,170,224,273,352,415,503,591,703,796,936,1045,1204,1346,1516,1659,1883,2051,2267,2469,2724,2923,3227,3446,3754,4022,4338,4612,5016,5297,5667,6005,6443,6766,7250,7595,8076,8509,8993,9382,9993
-; Formula: a(n) = 2*A000203(n+2)-A000005(n)+a(n-1)+A002133(n), a(0) = 1
+; Formula: a(n) = 2*A000203(n+2)-A000005(n+1)+a(n-1)+A002133(n), a(0) = 1
 
 mov $1,1
 lpb $0
@@ -9,6 +9,7 @@ lpb $0
   add $6,2
   seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $4,$0
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $4,1
   sub $6,$0

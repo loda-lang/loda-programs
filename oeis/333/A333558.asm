@@ -12,6 +12,7 @@ lpb $4
   gcd $1,$4
   mov $0,$2
   dif $0,$1
+  add $0,1
   seq $0,1747 ; 2 together with primes multiplied by 2.
   mov $1,4
   mul $1,$0

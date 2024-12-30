@@ -8,6 +8,7 @@ mov $3,$1
 mul $3,1682
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $6,$2
   gcd $6,$4
@@ -16,7 +17,7 @@ lpb $3
   sub $1,$4
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   add $2,1
   mul $3,$5
   sub $3,1

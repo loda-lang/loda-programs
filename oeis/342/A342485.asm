@@ -13,6 +13,7 @@ lpb $4
   bin $1,$2
   add $2,1
   sub $0,$1
+  add $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   pow $0,$2
   mul $1,$0

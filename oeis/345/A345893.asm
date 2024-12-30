@@ -17,6 +17,7 @@ lpb $5
   bin $2,$0
   sub $0,$2
   mov $6,$0
+  add $6,1
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $6,1
   add $0,$5

@@ -9,6 +9,7 @@ lpb $0
   sub $3,1
   div $3,2
   mov $4,$3
+  add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,1
   seq $3,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).

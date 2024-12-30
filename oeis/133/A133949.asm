@@ -14,6 +14,7 @@ lpb $2
   mov $1,$0
   seq $1,132881 ; a(n) is the number of isolated divisors of n.
   mov $4,$0
+  add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $4,$1
   mov $1,$4

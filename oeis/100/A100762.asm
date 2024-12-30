@@ -16,7 +16,6 @@ lpb $6
   gcd $3,$6
   bin $3,$0
   bin $0,$3
-  sub $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $0,$5
   mul $3,$0

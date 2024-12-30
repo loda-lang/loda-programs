@@ -10,8 +10,9 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,2
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $4,1
+  add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $2,$5
   mul $2,$4

@@ -13,6 +13,7 @@ lpb $2
   sub $2,1
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $2,2
   add $3,$1

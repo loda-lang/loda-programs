@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,1597 ; Perfect powers: m^k where m > 0 and k >= 2.
   sub $0,$1
   mov $1,$0

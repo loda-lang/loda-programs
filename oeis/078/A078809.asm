@@ -4,15 +4,14 @@
 
 mov $1,1
 mov $2,2
-add $0,1
+add $0,2
 seq $0,1043 ; Numbers that are the sum of 2 successive primes.
 lpb $0
   mov $3,$0
   lpb $3
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

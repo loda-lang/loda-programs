@@ -10,8 +10,9 @@ lpb $3
   add $0,$3
   trn $0,1
   mov $6,$0
+  add $6,2
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  add $0,1
+  add $0,3
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,$6
   mov $2,$3

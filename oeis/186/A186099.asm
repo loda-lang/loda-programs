@@ -6,5 +6,4 @@ add $0,1
 lpb $0
   dif $0,3
 lpe
-sub $0,1
 seq $0,593 ; Sum of odd divisors of n.

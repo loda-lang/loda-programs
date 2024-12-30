@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,593 ; Sum of odd divisors of n.
   seq $3,209229 ; Characteristic function of powers of 2, cf. A000079.
   sub $0,$3

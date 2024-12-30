@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   sub $2,1
@@ -15,7 +15,6 @@ lpb $2
   mov $5,$3
   seq $3,4755 ; Binary expansion starts 11.
   mul $3,2
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2
   sub $0,$3

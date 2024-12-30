@@ -6,7 +6,7 @@ lpb $0
   mov $4,$2
   add $4,2
   seq $4,94471 ; a(n) = Sum_{(n - k)|n, 0 <= k <= n} k.
-  add $2,1
+  add $2,2
   seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$4
   gcd $4,$2

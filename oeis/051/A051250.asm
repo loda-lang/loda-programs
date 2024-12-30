@@ -12,11 +12,11 @@ lpb $2
   seq $3,144740 ; Partial totient function phi(c, n) for c = 2: number of semiprimes less than and coprime to n.
   add $3,1
   dif $3,2
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,4
 lpe

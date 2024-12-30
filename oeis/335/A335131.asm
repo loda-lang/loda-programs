@@ -16,7 +16,6 @@ lpb $1
   dif $4,2
   mul $4,$0
   mov $0,$4
-  sub $0,1
   seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $2,$0
 lpe

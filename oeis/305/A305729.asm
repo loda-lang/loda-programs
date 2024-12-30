@@ -7,18 +7,19 @@ add $3,10
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $4,1
   seq $4,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mov $6,$2
   seq $6,351436 ; a(n) = n - A351168(n).
   sub $4,$6
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

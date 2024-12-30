@@ -10,6 +10,7 @@ lpb $2
   add $4,1
   seq $4,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $3,$1
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $3,$4
   equ $3,0

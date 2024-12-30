@@ -13,6 +13,7 @@ lpb $4
   gcd $1,$4
   bin $1,$4
   sub $0,$1
+  add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,1
   mul $1,$0

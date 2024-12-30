@@ -15,6 +15,7 @@ lpb $3
   mul $2,2
   bin $2,2
   mul $0,2
+  add $1,1
   seq $1,593 ; Sum of odd divisors of n.
   mul $1,$2
   mul $1,$0

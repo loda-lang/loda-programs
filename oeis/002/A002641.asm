@@ -13,7 +13,6 @@ lpb $2
   mov $3,$1
   add $3,$1
   seq $3,25764 ; Expansion of 1/((1-x)(1-x^2)(1-x^7)).
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

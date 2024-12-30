@@ -21,6 +21,7 @@ lpb $3
   seq $4,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   add $7,$4
   mov $4,$7
+  add $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $4,1
   sub $1,$4

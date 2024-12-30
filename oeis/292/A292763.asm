@@ -10,6 +10,7 @@ lpb $2
   add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
+  add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,$5
   seq $3,296065 ; Partial sums of A296064.

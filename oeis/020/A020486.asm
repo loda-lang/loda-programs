@@ -9,8 +9,10 @@ mov $2,$0
 mul $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
   mov $3,$1
+  add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   gcd $5,$3
   div $3,$5

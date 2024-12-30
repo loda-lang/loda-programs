@@ -11,7 +11,6 @@ lpb $2
   seq $3,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
   mov $5,$3
   mul $5,3
-  sub $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2
   sub $0,$3

@@ -6,7 +6,6 @@
 
 sub $0,1
 seq $0,34699 ; Largest prime power factor of n.
-sub $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,1
 lpb $0

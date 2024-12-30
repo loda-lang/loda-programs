@@ -14,8 +14,9 @@ lpb $4
   bin $1,$0
   trn $0,1
   mov $5,$0
+  add $5,2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  add $0,1
+  add $0,3
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $0,$5
   mul $1,$0

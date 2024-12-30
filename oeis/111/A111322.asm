@@ -6,7 +6,7 @@ mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
-  mov $3,33
+  mov $3,34
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $5,$1
   seq $5,362419 ; Partial sum of the first n even semiprimes.

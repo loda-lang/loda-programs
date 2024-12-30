@@ -12,6 +12,7 @@ lpb $2
   seq $5,87802 ; a(n) = Sum_{d|n, d nonprime} mu(d), where mu = A008683.
   mov $6,$5
   mov $4,$1
+  add $4,1
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   gcd $5,$4
   div $6,$5

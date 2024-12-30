@@ -10,18 +10,19 @@ lpb $2
   mov $5,$1
   seq $5,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mov $3,$1
+  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   sub $5,$3
   sub $3,$5
   min $3,$4
-  cmp $3,1
+  equ $3,1
   gcd $3,2
   add $0,1
   sub $0,$3
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe
