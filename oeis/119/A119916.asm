@@ -1,21 +1,12 @@
 ; A119916: Number of runs of 0's of odd length in all ternary words of length n.
-; Submitted by ChelseaOilman
+; Submitted by iBezanilla
 ; 0,1,4,17,64,233,820,2825,9568,31985,105796,346913,1129312,3653657,11758132,37665881,120172096,382039649,1210689028,3825777329,12058462720,37918780361,118986517684,372650082857,1165021837984
-; Formula: a(n) = truncate((b(n)+7)/24), b(n) = 6*b(n-1)+6*c(n-1)+12, b(2) = 96, b(1) = 18, b(0) = 0, c(n) = 3*b(n-2)+3*c(n-2)-2*b(n-1)+2, c(4) = -607, c(3) = -148, c(2) = -31, c(1) = -4, c(0) = 1
+; Formula: a(n) = floor(((4*n+3)*3^n+6)/24)
 
-mov $3,1
-lpb $0
-  sub $0,1
-  add $2,$3
-  mov $3,$1
-  sub $3,$2
-  mov $1,$2
-  add $1,$3
-  add $1,$3
-  add $2,2
-  sub $3,$2
-  mul $2,6
-lpe
-mov $0,$2
-add $0,7
+mov $1,3
+pow $1,$0
+mul $0,4
+add $0,3
+mul $0,$1
+add $0,6
 div $0,24

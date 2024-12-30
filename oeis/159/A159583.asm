@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,157696 ; Define k(n) to be the sequence of integers such that k(n)F(n)=F(2n)(Fibonacci sequence) (A000204); in turn define g(n) to be the sequence of integers such that g(n)k(n)=k(3n)(A110391); finally a(n) is the sequence of integers such that a(n)g(n)=g(5n).
 pow $1,$2
 lpb $2

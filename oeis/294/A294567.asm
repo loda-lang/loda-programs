@@ -9,8 +9,7 @@ lpb $0
   mov $3,$2
   dif $3,$0
   mov $4,$3
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$0
   mul $4,2
   add $4,1
