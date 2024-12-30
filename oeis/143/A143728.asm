@@ -4,11 +4,12 @@
 
 mov $2,$0
 seq $2,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
-cmp $2,1
+equ $2,1
 mov $1,$0
 seq $1,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
 mul $1,4
 mul $1,$2
 div $1,4
+add $0,1
 seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
 mul $0,$1

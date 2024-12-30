@@ -10,6 +10,7 @@ add $2,9
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,30076 ; a(n) = 10 - m, where m = maximal digit of n.
   equ $3,1
   sub $0,$3

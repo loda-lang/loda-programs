@@ -13,7 +13,7 @@ lpb $3
   mov $1,$0
   add $1,2
   seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  add $0,1
+  add $0,2
   seq $0,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
   gcd $0,$0
   mul $0,$1

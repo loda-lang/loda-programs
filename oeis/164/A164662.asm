@@ -19,6 +19,7 @@ lpb $2
   seq $4,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
   mul $4,$6
   div $4,2
+  add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   mov $5,$0
   gcd $5,$4

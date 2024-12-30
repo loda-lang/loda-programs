@@ -12,6 +12,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,25473 ; a(1) = 1; for n > 1, a(n) = prime root of n-th prime power (A000961).
     mov $4,$2
     mov $6,$7

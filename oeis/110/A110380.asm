@@ -8,6 +8,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
   seq $0,83812 ; 4n-1 is the digit reversal of n-1.
   div $0,20

@@ -4,9 +4,10 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
   sub $0,$2
-  cmp $1,1
+  equ $1,1
   add $1,$0
   mov $0,$2
 lpe

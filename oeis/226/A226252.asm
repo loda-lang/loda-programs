@@ -8,9 +8,8 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,2
-  add $2,1
-  mul $2,2
+  mul $2,4
+  add $2,3
   seq $2,2173 ; a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.
   gcd $2,$2
   div $2,8

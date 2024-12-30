@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   mov $5,$3
   sub $3,1

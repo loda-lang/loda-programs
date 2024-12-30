@@ -2,6 +2,9 @@
 ; Submitted by Fardringle
 ; 1,1,2,3,4,6,16,16,30
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   sub $3,$4

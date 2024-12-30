@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
   sub $0,1
   mul $1,$2

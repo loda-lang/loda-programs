@@ -2,6 +2,7 @@
 ; Submitted by Saenger
 ; 1,2,3,1,4,1,1,2,5,1,1,2,1,2,3,1,6,1,1,2,1,2,3,1,1,2,3,1,4,1,1,2,7,1,1,2,1,2,3,1,1,2,3,1,4,1,1,2,1,2,3,1,4,1,1,2,5,1,1,2,1,2,3,1,8,1,1,2,1,2,3,1,1,2,3,1,4,1,1,2
 
+add $0,1
 seq $0,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
 lpb $0
   add $0,1

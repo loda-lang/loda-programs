@@ -6,9 +6,8 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
-  mul $4,2
-  add $4,1
-  mul $4,2
+  mul $4,4
+  add $4,3
   seq $4,2173 ; a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.
   div $4,8
   add $4,1
@@ -18,7 +17,7 @@ lpb $3
   add $2,2
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

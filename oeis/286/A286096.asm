@@ -4,6 +4,7 @@
 
 mov $1,$0
 seq $1,108044 ; Triangle read by rows: right half of Pascal's triangle (A007318) interspersed with 0's.
+add $0,1
 seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
 min $0,2
 mul $0,$1

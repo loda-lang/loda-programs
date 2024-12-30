@@ -14,6 +14,7 @@ lpb $4
   trn $0,1
   add $1,$6
   mov $6,$0
+  add $6,1
   seq $6,1961 ; A Beatty sequence: floor(n * (sqrt(5) - 1)).
   div $6,2
   add $0,1

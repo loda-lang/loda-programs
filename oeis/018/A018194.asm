@@ -6,6 +6,7 @@
 
 sub $0,1
 lpb $0
+  add $0,1
   seq $0,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
   sub $0,1
   add $1,1

@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
+  add $0,2
   seq $0,25475 ; 1 and the prime powers p^m where m >= 2, thus excluding the primes.
   sub $0,1
   seq $0,65515 ; Number of prime powers <= n.

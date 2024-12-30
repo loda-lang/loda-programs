@@ -13,16 +13,16 @@ lpb $2
   seq $6,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
   pow $6,6
   mov $3,$1
+  add $3,1
   seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   mul $3,$6
   mov $5,$3
   add $1,1
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

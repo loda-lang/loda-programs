@@ -10,6 +10,7 @@ lpb $0
   mov $4,-1
   pow $4,$0
   mov $3,$0
+  add $3,1
   seq $3,2173 ; a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.
   mul $3,$4
   mul $3,4

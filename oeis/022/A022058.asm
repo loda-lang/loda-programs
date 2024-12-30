@@ -17,6 +17,7 @@ lpb $0
     add $9,$5
     mov $11,54
     mov $7,$4
+    add $7,1
     seq $7,2131 ; Sum of divisors d of n such that n/d is odd.
     mul $7,$11
     mul $7,$$9

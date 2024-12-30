@@ -12,7 +12,7 @@ lpb $3
   mov $5,$2
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $4,$2
-  cmp $4,$5
+  equ $4,$5
   add $0,1
   add $2,$5
   add $3,$4

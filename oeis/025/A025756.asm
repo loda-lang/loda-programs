@@ -10,7 +10,7 @@ mul $6,3
 add $6,2
 lpb $0
   sub $0,1
-  cmp $2,1
+  equ $2,1
   sub $2,$6
   bin $2,$0
   sub $4,1

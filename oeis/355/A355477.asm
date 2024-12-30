@@ -8,9 +8,10 @@ lpb $0
   mov $4,$2
   add $4,$0
   mov $2,$1
-  add $3,1
   mov $1,$3
+  add $1,2
   seq $1,2407 ; Cuban primes: primes which are the difference of two consecutive cubes.
+  add $3,1
   gcd $5,$1
   add $5,2
   div $5,5

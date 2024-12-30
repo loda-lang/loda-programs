@@ -12,6 +12,7 @@ lpb $2
   mov $5,$0
   lpb $5
     trn $5,3
+    add $0,1
     seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
     mul $0,2
     add $1,$0

@@ -11,15 +11,15 @@ lpb $2
   seq $6,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
   mov $3,$1
   pow $3,$6
+  add $3,1
   seq $3,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
   mul $3,$6
   mov $5,$3
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

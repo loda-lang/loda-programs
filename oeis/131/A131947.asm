@@ -8,4 +8,5 @@ lpb $0
   dif $0,6
   sub $0,1
 lpe
+add $0,1
 seq $0,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.

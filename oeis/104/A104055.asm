@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,2760 ; Squares and cubes.
   add $1,1
   add $2,$3

@@ -11,6 +11,7 @@ lpb $2
   add $5,1
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
   mov $3,$1
+  add $3,1
   seq $3,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
   sub $3,$5
   min $3,1

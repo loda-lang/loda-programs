@@ -16,6 +16,7 @@ lpb $2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
+  add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   mul $0,2
   seq $0,16 ; a(n) is the number of distinct (infinite) output sequences from binary n-stage shift register which feeds back the complement of the last stage.

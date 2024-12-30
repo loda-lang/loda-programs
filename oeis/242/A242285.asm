@@ -6,6 +6,7 @@ pow $1,$0
 add $0,2
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,25691 ; Exponent of 10 (value of j) in n-th number of form 9^i*10^j.
   sub $0,$3
   mov $4,$0

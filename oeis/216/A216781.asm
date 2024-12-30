@@ -5,11 +5,12 @@
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $5,$1
+  add $5,2
   seq $5,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
   mov $6,$1
-  add $6,1
+  add $6,2
+  add $1,1
   gcd $5,$6
   mov $3,$1
   add $3,1
@@ -19,7 +20,7 @@ lpb $2
   add $0,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

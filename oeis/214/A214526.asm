@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   mul $2,2
-  add $2,1
+  add $2,2
   seq $2,25682 ; Exponent of 9 (value of j) in n-th number of form 8^i*9^j.
   add $2,1
   mov $3,$2

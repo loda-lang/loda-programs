@@ -12,12 +12,12 @@ lpb $2
   sub $5,1
   sub $3,1
   seq $3,69531 ; Smallest positive k such that 10^k + 1 is divisible by n, or 0 if no such number exists.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

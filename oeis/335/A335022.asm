@@ -5,6 +5,7 @@ lpb $0
   mov $2,-2
   bin $2,$0
   mov $1,$0
+  add $1,1
   seq $1,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
   sub $1,1
   sub $1,$2

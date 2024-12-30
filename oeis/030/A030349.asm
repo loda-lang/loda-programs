@@ -5,9 +5,7 @@
 
 #offset 1
 
-sub $0,1
 mov $2,1
-add $0,1
 lpb $0
   mov $1,$0
   seq $1,30341 ; Triangle T(n,k): write n in base 3, reverse order of digits.

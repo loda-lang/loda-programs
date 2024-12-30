@@ -6,16 +6,16 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
-  add $1,8
   mov $3,$1
+  add $3,9
   seq $3,30076 ; a(n) = 10 - m, where m = maximal digit of n.
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
-  add $1,1
+  add $1,9
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -16,6 +16,7 @@ lpb $2
   mov $1,$4
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,2083 ; Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).
   add $3,$1
 lpe

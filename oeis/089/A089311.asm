@@ -7,8 +7,4 @@ lpb $0
 lpe
 seq $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 sub $0,1
-lpb $0
-  dif $0,2
-  add $1,1
-lpe
-mov $0,$1
+seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.

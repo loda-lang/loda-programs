@@ -8,17 +8,18 @@ lpb $2
   mov $6,$1
   add $6,1
   mov $3,$1
+  add $3,1
   seq $3,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
   mov $5,$3
   gcd $5,$6
   div $3,$5
   seq $3,342921 ; a(n) = A003415(A019565(n)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

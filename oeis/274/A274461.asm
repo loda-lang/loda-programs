@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,25475 ; 1 and the prime powers p^m where m >= 2, thus excluding the primes.
   mul $3,$2
   add $3,$1

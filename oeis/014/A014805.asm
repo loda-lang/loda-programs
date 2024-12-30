@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
     mov $9,10
     add $9,$5

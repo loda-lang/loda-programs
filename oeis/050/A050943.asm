@@ -11,6 +11,7 @@ lpb $2
   seq $5,307666 ; Number of partitions of n into consecutive positive triangular numbers.
   mov $3,$1
   pow $3,$5
+  add $3,1
   seq $3,25676 ; Exponent of 8 (value of i) in n-th number of form 8^i*9^j.
   mul $3,$5
   neq $3,0

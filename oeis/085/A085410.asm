@@ -16,6 +16,7 @@ lpb $2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
+  add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   seq $0,211978 ; Total number of parts in all partitions of n plus the sum of largest parts of all partitions of n.
   mul $0,$4

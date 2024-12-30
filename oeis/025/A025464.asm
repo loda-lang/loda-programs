@@ -9,7 +9,7 @@ lpb $0
   mov $2,$0
   max $2,0
   seq $2,55400 ; Cube excess: difference between n and largest cube <= n.
-  cmp $2,0
+  equ $2,0
   add $4,$5
   add $1,$2
   mov $3,1
