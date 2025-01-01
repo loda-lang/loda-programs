@@ -10,7 +10,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,377283 ; Numbers k such that there is a perfect-power x in the range prime(k) < x < prime(k+1).
+  seq $2,377283 ; Nonnegative integers k such that either k = 0 or there is a perfect power x in the range prime(k) < x < prime(k+1).
   mul $0,$1
 lpe
 min $3,1

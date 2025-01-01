@@ -9,6 +9,6 @@ lpb $0
   add $0,$2
   add $1,1
 lpe
-cmp $0,0
+equ $0,0
 add $1,$0
 mov $0,$1

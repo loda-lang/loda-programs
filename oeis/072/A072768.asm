@@ -1,4 +1,4 @@
-; A072768: The RASTxx transformation of the sequence A072643. The sizes of the parenthesizations produced by 'cons' combination A072764 & its transpose A072766.
+; A072768: The RASTxx transformation of the sequence A072643.
 ; Submitted by stoneageman
 ; 1,2,2,3,3,3,3,4,4,3,4,4,5,4,4,4,5,5,5,5,4,4,5,6,5,6,5,4,4,5,6,6,6,6,5,4,4,5,6,6,7,6,6,5,4,5,5,6,6,7,7,6,6,5,5,5,6,6,6,7,7,7,6,6,6,5,5,6,7,6,7,7,7,7,6,7,6,5,5,6
 ; Formula: a(n) = A358372(A085207(n))

@@ -1,15 +1,18 @@
 ; A335955: a(n) = (4^n*(Z(-n, 1/4) - Z(-n, 3/4)) + Z(-n, 1)*(2^(n+1)-1))*A171977(n+1), where Z(n, c) is the Hurwitz zeta function.
-; Submitted by Dingo
+; Submitted by Owdjim
 ; 0,-1,-1,1,5,-1,-61,17,1385,-31,-50521,691,2702765,-5461,-199360981,929569,19391512145,-3202291,-2404879675441,221930581,370371188237525,-4722116521,-69348874393137901,968383680827,15514534163557086905,-14717667114151,-4087072509293123892361
-; Formula: a(n) = truncate((-A155585(n)+A122045(n))/gcd(A326483(n+1),-A155585(n)+A122045(n)))
+; Formula: a(n) = truncate((-A155585(n)+A122045(n))/gcd(A002436(floor((n+2)/2)),-A155585(n)+A122045(n)))
 
 mov $1,$0
+add $1,2
 mov $2,$0
 seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
 seq $2,122045 ; Euler (or secant) numbers E(n).
 sub $2,$0
-add $1,1
-seq $1,326483 ; a(n) = 2^n*E2_{n}(1/2) with E2_{n} the polynomials defined in A326480.
+mov $3,$1
+div $3,2
+seq $3,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+mov $1,$3
 gcd $1,$2
 mov $0,$2
 div $0,$1

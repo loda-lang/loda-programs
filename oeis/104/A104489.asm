@@ -2,6 +2,9 @@
 ; Submitted by pututu
 ; 1,1,3,1,5,5,3,1,9,9,11,1,5,5,3,1,17,17,19,17,5,5,3,1,9,9,11,1,5,5,3,1
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 seq $2,105033 ; Read binary numbers downwards to the right.
 mov $4,4

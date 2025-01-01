@@ -1,17 +1,28 @@
 ; A190710: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),4,3) and [ ]=floor.
-; Submitted by Gunnar Hjern
+; Submitted by LCB001
 ; 3,2,0,3,2,1,0,3,2,1,0,3,2,1,4,3,1,0,3,2,1,0,3,2,1,0,3,2,1,4,2,1,0,3,2,1,0,3,2,1,0,3,2,1,3,2,1,0,3,2,1,0,3,2,1,4,3,2,0,3,2,1,0,3,2,1,0,3,2,1,4,3,1,0,3,2,1,0,3,2
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $2,2
 lpb $2
-  sub $2,1
+  div $2,2
   mov $0,$3
   sub $0,$2
   add $0,2
-  seq $0,198081 ; a(n) = ceiling(n*sqrt(3)).
+  pow $0,2
+  mov $5,$0
+  mul $5,2
+  add $5,$0
+  nrt $5,2
+  mov $4,$5
+  add $4,1
+  mul $5,2
+  min $5,$4
   mul $1,-2
-  add $1,$0
+  add $1,$5
   mul $1,2
   mul $3,4
   add $3,5

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,256824 ; Reverse concatenation of distinct digits of all divisors of n in base 10.
 lpb $0
   div $0,10

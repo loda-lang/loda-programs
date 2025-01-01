@@ -17,7 +17,7 @@ lpb $0
   sub $2,$6
   bin $3,$1
   add $1,1
-  cmp $5,0
+  equ $5,0
 lpe
 mov $0,$6
 div $0,2

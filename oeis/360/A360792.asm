@@ -5,8 +5,6 @@
 
 #offset 3
 
-sub $0,3
-add $0,3
 pow $0,2
 add $0,3
 mov $1,1596

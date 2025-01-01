@@ -1,7 +1,10 @@
 ; A255745: a(1) = 1; for n > 1, a(n) = 11*10^{A000120(n-1)-1}.
-; Submitted by Simon Strandgaard
+; Submitted by tosi
 ; 1,11,11,110,11,110,110,1100,11,110,110,1100,110,1100,1100,11000,11,110,110,1100,110,1100,1100,11000,110,1100,1100,11000,1100,11000,11000,110000,11,110,110,1100,110,1100,1100,11000,110,1100,1100,11000,1100,11000,11000
 
-dif $0,2
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-seq $0,3953 ; Expansion of g.f.: (1+x)/(1-10*x).
+dis $0,2
+mov $1,10
+pow $1,$0
+mul $1,11
+div $1,10
+mov $0,$1

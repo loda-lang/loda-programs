@@ -1,23 +1,16 @@
 ; A167312: Totally multiplicative sequence with a(p) = 2*(p-3) for prime p.
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 1,-2,0,4,4,0,8,-8,0,-8,16,0,20,-16,0,16,28,0,32,16,0,-32,40,0,16,-40,0,32,52,0,56,-32,0,-56,32,0,68,-64,0,-32,76,0,80,64,0,-80,88,0,64,-32,0,80,100,0,64,-64,0,-104,112,0,116,-112,0,64,80,0,128,112,0,-64,136,0,140,-136,0,128,128,0,152,64
 
-mov $1,1
-mov $2,2
-add $0,1
+mov $2,4
 lpb $0
-  mov $3,$0
-  pow $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  sub $5,3
-  dif $0,$2
+  mov $1,$0
+  add $1,1
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$1
+  sub $1,3
   mul $1,2
-  mul $1,$5
+  mul $2,$1
 lpe
-mul $0,$1
+mov $0,$2
+div $0,4

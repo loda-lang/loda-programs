@@ -1,11 +1,9 @@
 ; A011763: Days in year in proleptic Gregorian calendar.
-; Submitted by Christian Krause
+; Submitted by shiva
 ; 365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366,365,365,365,366
-; Formula: a(n) = floor(((n-1)%4)/3)+365
 
 #offset 1
 
-sub $0,1
-mod $0,4
-div $0,3
-add $0,365
+dif $0,2
+gcd $0,2
+add $0,364

@@ -1,12 +1,30 @@
 ; A161737: Numerators of the column sums of the BG2 matrix.
-; Submitted by Skillz
+; Submitted by Aleksander Lodwich
 ; 2,16,128,2048,32768,262144,2097152,67108864,2147483648,17179869184,137438953472,2199023255552,35184372088832,281474976710656,2251799813685248,144115188075855872,9223372036854775808,73786976294838206464,590295810358705651712,9444732965739290427392,151115727451828646838272,1208925819614629174706176,9671406556917033397649408,309485009821345068724781056,9903520314283042199192993792,79228162514264337593543950336,633825300114114700748351602688,10141204801825835211973625643008
-; Formula: a(n) = truncate(A198633(A092054(2*n-3))/2)
 
 #offset 2
 
-mul $0,2
-sub $0,3
-seq $0,92054 ; Base-2 logarithm of the sum of numerator and denominator of the convergents of the continued fraction expansion [1; 1/2, 1/3, 1/4, ..., 1/n, ...].
-seq $0,198633 ; Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
+sub $0,2
+sub $0,1
+mov $3,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  div $0,2
+  add $0,1
+  lex $0,2
+  mov $4,1
+  add $4,$0
+  add $5,2
+  add $5,$4
+lpe
+mov $0,$5
+add $0,1
+mov $1,2
+pow $1,$0
+mov $0,$1
 div $0,2
+mul $0,2
