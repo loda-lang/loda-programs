@@ -11,9 +11,17 @@ lpb $5
   mov $3,$2
   sub $3,$5
   add $3,2
-  seq $3,198081 ; a(n) = ceiling(n*sqrt(3)).
+  pow $3,2
+  mov $6,$3
+  mul $6,2
+  add $6,$3
+  nrt $6,2
+  mov $7,$6
+  add $7,1
+  mul $6,2
+  min $6,$7
   mul $4,-2
-  add $4,$3
+  add $4,$6
   mul $4,2
   mul $2,4
   add $2,5

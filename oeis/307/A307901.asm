@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
     mov $9,10
     add $9,$5

@@ -12,6 +12,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
   mul $2,2
   add $1,$2

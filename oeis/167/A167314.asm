@@ -1,24 +1,17 @@
 ; A167314: Totally multiplicative sequence with a(p) = 4*(p-3) for prime p.
-; Submitted by Simon Strandgaard
+; Submitted by Ralfy
 ; 1,-4,0,16,8,0,16,-64,0,-32,32,0,40,-64,0,256,56,0,64,128,0,-128,80,0,64,-160,0,256,104,0,112,-1024,0,-224,128,0,136,-256,0,-512,152,0,160,512,0,-320,176,0,256,-256,0,640,200,0,256,-1024,0,-416,224,0,232,-448,0,4096,320,0,256,896,0,-512,272,0,280,-544,0,1024,512,0,304,2048
 
-mov $1,1
-mov $2,2
-add $0,1
+mov $2,4
 lpb $0
-  mov $3,$0
-  pow $3,2
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $5,$2
-  sub $5,3
-  mul $5,4
-  dif $0,$2
-  mul $1,$5
+  mov $1,$0
+  add $1,1
+  seq $1,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  div $0,$1
+  sub $1,3
+  mul $1,2
+  mul $2,2
+  mul $2,$1
 lpe
-mul $0,$1
+mov $0,$2
+div $0,4

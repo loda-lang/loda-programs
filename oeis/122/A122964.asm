@@ -6,6 +6,7 @@ add $0,2
 bin $0,2
 lpb $0
   sub $0,1
+  add $1,1
   seq $1,106325 ; Smallest semiprime not less than n.
 lpe
 mov $0,$1

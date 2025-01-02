@@ -1,6 +1,18 @@
 ; A263727: Largest square number less than or equal to the n-th Fibonacci number.
+; Submitted by m0laki
 ; 0,1,1,1,1,4,4,9,16,25,49,81,144,225,361,576,961,1521,2500,4096,6724,10816,17689,28561,46225,74529,121104,196249,316969,514089,831744,1345600,2175625,3523129,5702544,9223369,14922769,24157225,39087504,63234304,102333456
-; Formula: a(n) = A048760(A000045(n))
+; Formula: a(n) = sqrtint(truncate((min(n,n%2)*b(n)+c(n))/3))^2, b(n) = 3*b(n-2)-b(n-4), b(6) = 15, b(5) = 6, b(4) = 6, b(3) = 3, b(2) = 3, b(1) = 3, b(0) = 3, c(n) = 2*c(n-2)+b(n-2), c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 0
 
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-seq $0,48760 ; Largest square <= n.
+mov $1,3
+lpb $0
+  sub $0,2
+  add $1,$3
+  add $3,$1
+lpe
+mul $0,$1
+add $0,$3
+div $0,3
+mov $2,$0
+nrt $2,2
+pow $2,2
+mov $0,$2

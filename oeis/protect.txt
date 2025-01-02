@@ -385,6 +385,7 @@ A133042: Cubes of partition numbers.
 A133053: Squares of Motzkin numbers.
 A134960: a(n) = n*453060.
 A135282: Largest k such that 2^k appears in the trajectory of the Collatz 3x+1 sequence started at n.
+A135403: a(n) = 1 + 111110*n.
 A135481: a(n) = 2^A007814(n+1) - 1.
 A135984: a(n) = 24(prime(n))+7.
 A137264: Prime number gaps read modulo 3.

@@ -12,6 +12,7 @@ lpb $3
   mod $4,2
   mul $0,$4
   div $0,2
+  add $0,1
   seq $0,167268 ; Janet's sequence: Number of elements for each successively filled electronic subshell of an atom.
   mul $0,3
   mov $2,$0

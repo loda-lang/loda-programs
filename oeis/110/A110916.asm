@@ -10,6 +10,7 @@ lpb $3
   add $0,$3
   mul $0,10
   trn $0,1
+  add $0,1
   seq $0,3059 ; k appears 2k-1 times. Also, square root of n, rounded up.
   mov $2,$3
   mul $2,$0
