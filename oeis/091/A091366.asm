@@ -12,6 +12,7 @@ lpb $2
   seq $3,225534 ; Numbers whose sum of cubed digits is prime.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

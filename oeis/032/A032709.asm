@@ -1,4 +1,4 @@
-; A032709: n prefixed by '9' and followed by '1' is a prime.
+; A032709: Numbers k such that k prefixed by '9' and followed by '1' is prime.
 ; Submitted by Science United
 ; 1,4,7,9,15,16,18,22,24,28,31,34,37,39,42,43,46,49,51,52,55,60,63,66,72,78,79,81,85,87,90,93,94,108,112,114,115,129,133,138,141,154,157,159,162,163,169,171,177,178,180,181,184,192,195,196,204,205,211,222
 
@@ -19,11 +19,12 @@ lpb $2
     mul $3,10
   lpe
   add $3,$6
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,2
   mul $2,$4
   trn $2,1

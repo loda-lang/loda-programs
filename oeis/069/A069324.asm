@@ -8,7 +8,7 @@ lpb $2
   mov $3,$1
   add $3,2
   add $6,$5
-  add $6,7
+  add $6,8
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,2
   add $5,$3

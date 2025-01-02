@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,1031 ; Goldbach conjecture: a(n) = number of decompositions of 2n into sum of two primes (counting 1 as a prime).
-  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

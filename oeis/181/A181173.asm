@@ -11,6 +11,7 @@ lpb $2
   seq $3,23721 ; Numbers with no 0's in their base-5 expansion.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

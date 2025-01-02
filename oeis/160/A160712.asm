@@ -13,6 +13,7 @@ lpb $2
   seq $3,274612 ; Numbers not divisible by 10 with at least one zero but no two adjacent 0's among its decimal digits.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

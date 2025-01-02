@@ -2,7 +2,10 @@
 ; Submitted by ThrasherX-17
 ; 2,9,9,7,9,2,4,5,8
 
+#offset 9
+
 mov $1,1
+sub $0,9
 lpb $0
   sub $0,1
   mov $5,$1

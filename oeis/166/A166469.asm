@@ -14,7 +14,6 @@ lpb $4
   bin $1,$0
   mov $5,$0
   mov $7,$0
-  sub $0,1
   seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $6,$0
   gcd $6,$7

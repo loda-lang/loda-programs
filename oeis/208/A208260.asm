@@ -12,6 +12,7 @@ lpb $2
   seq $3,208259 ; Numbers starting and ending with digit 1.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

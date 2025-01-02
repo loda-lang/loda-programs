@@ -13,6 +13,7 @@ lpb $2
   add $5,$1
   mul $5,2
   add $5,6
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $3,$1
   seq $3,11657 ; A binary m-sequence: expansion of reciprocal of x^3 + x + 1 (mod 2, shifted by 2 initial 0's).
@@ -21,7 +22,7 @@ lpb $2
   mov $3,$5
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,17
 lpe

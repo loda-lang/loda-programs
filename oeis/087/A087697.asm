@@ -8,10 +8,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,8
-  add $5,2
+  add $5,4
   seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $5,2
   mul $5,$3
+  add $5,2
   seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $5,2
   add $1,1

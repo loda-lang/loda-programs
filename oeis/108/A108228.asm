@@ -1,5 +1,7 @@
-; A108228: (A003961(n) - 1)/2, a permutation of the nonnegative integers.
+; A108228: a(n) = (A003961(n) - 1)/2, a permutation of the nonnegative integers.
 ; 0,1,2,4,3,7,5,13,12,10,6,22,8,16,17,40,9,37,11,31,27,19,14,67,24,25,62,49,15,52,18,121,32,28,38,112,20,34,42,94,21,82,23,58,87,43,26,202,60,73,47,76,29,187,45,148,57,46,30,157,33,55,137,364,59,97,35,85,72
+; Formula: a(n) = truncate(A003961(n+1)/2)
 
+add $0,1
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 div $0,2

@@ -1,4 +1,4 @@
-; A032730: n prefixed by '5' and followed by '9' is a prime.
+; A032730: Numbers k such that k prefixed by '5' and followed by '9' is prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,6,9,11,17,18,20,27,30,39,41,44,47,51,56,63,65,66,68,74,77,83,84,86,87,93,105,110,116,119,122,123,132,134,141,143,144,147,153,159,165,167,171,174,176,182,183,185,186,189,192,194,200,206,218,224,225
 
@@ -19,12 +19,12 @@ lpb $2
   add $6,2
   add $1,10
   add $3,$6
-  add $3,5
+  add $3,6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

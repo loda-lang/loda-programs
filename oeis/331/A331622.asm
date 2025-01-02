@@ -15,7 +15,6 @@ lpb $0
     sub $4,1
     max $4,2
     mov $7,$4
-    sub $7,1
     seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     equ $7,0
     mov $9,10

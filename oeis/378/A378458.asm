@@ -4,14 +4,15 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
   seq $3,378036 ; First differences of A378033 (greatest positive integer < n that is 1 or nonsquarefree).
   trn $3,2
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $5,$1
   sub $0,$3

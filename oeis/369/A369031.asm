@@ -3,8 +3,8 @@
 ; 1,2,2,3,2,1,2,5,3,1,2,1,2,1,1,7,2,1,2,1,1,1,2,1,3,1,5,1,2,1,2,11,1,1,1,1,2,1,1,1,2,1,2,1,1,1,2,1,3,1,1,1,2,1,1,1,1,1,2,1,2,1,1,13,1,1,2,1,1,1,2,1,2,1,1,1,1,1,2,1
 
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-sub $0,1
 mov $2,$0
+sub $0,1
 seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 lpb $2
   trn $2,8

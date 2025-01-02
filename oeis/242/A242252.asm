@@ -12,7 +12,7 @@ lpb $2
   seq $4,13632 ; Difference between n and the next prime greater than n.
   add $1,1
   mov $3,$4
-  sub $3,2
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 lpe
 mov $0,$3

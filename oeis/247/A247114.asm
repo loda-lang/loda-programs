@@ -7,7 +7,7 @@ add $2,4
 pow $2,4
 lpb $2
   mov $6,$1
-  add $6,1
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $5,$1
   add $5,2

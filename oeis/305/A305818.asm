@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $0,2
+  add $0,1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $1,$0
   add $3,$1

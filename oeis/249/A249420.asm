@@ -10,6 +10,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   trn $3,3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   max $1,$0
   add $1,$0

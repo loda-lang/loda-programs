@@ -13,6 +13,7 @@ lpb $2
   add $5,7
   mov $6,$3
   add $3,$5
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

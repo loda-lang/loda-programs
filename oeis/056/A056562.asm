@@ -11,6 +11,7 @@ lpb $4
   min $4,2
   sub $4,1
   mov $0,$2
+  add $0,1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,1
   add $2,$1

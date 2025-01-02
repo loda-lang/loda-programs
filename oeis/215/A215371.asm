@@ -13,6 +13,7 @@ lpb $2
   sub $3,$6
   seq $4,354487 ; Triangle read by rows: T(n,k) is the denominator of the n-th term of the Somos-k sequence, 4 <= k <= n.
   mul $4,$3
+  add $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,$1
   mov $1,$4

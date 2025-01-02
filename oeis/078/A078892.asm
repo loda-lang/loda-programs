@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $3,2
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

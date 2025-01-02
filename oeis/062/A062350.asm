@@ -10,12 +10,13 @@ lpb $2
   seq $3,7932 ; Numbers that contain only 1's, 2's and 3's.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

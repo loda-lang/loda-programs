@@ -10,11 +10,12 @@ lpb $2
   sub $2,1
   mov $3,$1
   trn $3,1
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,$5
   add $1,1
-  cmp $4,$0
+  equ $4,$0
   sub $4,$0
 lpe
 mov $0,$4

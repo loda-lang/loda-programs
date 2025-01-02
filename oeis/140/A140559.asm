@@ -11,7 +11,7 @@ lpb $2
   seq $3,40 ; The prime numbers.
   add $3,5
   mov $5,$3
-  add $3,28
+  add $3,29
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

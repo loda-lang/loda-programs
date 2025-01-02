@@ -1,7 +1,8 @@
 ; A278044: Length of tribonacci representation of n (cf. A278038).
 ; Submitted by Elzeard BOUFFIER
 ; 1,1,2,2,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
-; Formula: a(n) = A070939(A003726(n))
+; Formula: a(n) = A070939(A003726(n+1))
 
+add $0,1
 seq $0,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
 seq $0,70939 ; Length of binary representation of n.

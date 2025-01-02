@@ -9,6 +9,7 @@ add $0,1
 pow $4,5
 lpb $4
   mov $6,$3
+  add $6,1
   seq $6,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $5,$3
   mul $5,$6

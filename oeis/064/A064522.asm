@@ -8,6 +8,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   div $3,2
+  add $3,1
   seq $3,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
   mov $4,$3
   add $5,1

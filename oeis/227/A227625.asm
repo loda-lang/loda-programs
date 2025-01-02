@@ -6,7 +6,8 @@ sub $2,1
 mod $2,3
 sub $2,1
 mov $1,$2
-cmp $1,0
+equ $1,0
 add $2,$1
+add $0,1
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 div $0,$2

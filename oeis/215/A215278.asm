@@ -15,6 +15,7 @@ lpb $2
   sub $3,$6
   seq $4,30528 ; Triangle read by rows: a(n,k) = binomial(k,n-k).
   mul $4,$3
+  add $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,$1
   add $6,1

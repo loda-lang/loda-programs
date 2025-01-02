@@ -8,8 +8,9 @@ mov $2,$1
 equ $2,0
 add $1,$2
 div $0,$1
-add $0,2
 mov $1,$0
+add $1,3
 seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+add $0,2
 mul $0,$1
 div $0,2

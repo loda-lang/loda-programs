@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,353394 ; Product of prime shadows of prime indices of n (with multiplicity).
-  add $3,9
+  add $3,10
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

@@ -12,8 +12,8 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
   mov $5,$0
+  sub $0,1
   seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $5,$0

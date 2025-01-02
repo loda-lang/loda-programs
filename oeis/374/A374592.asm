@@ -9,6 +9,7 @@ lpb $2
   add $3,$1
   mul $6,3
   mul $6,$3
+  add $6,1
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$6
   add $1,2

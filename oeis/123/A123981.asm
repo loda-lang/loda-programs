@@ -15,6 +15,7 @@ lpb $2
   sub $5,$6
   add $5,$4
   mul $6,$5
+  add $6,1
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $3,$6
   mul $3,$1

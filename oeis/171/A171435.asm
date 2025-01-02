@@ -5,6 +5,7 @@
 mov $1,$0
 seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
 lpb $1
+  add $0,1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   gcd $1,$0
   sub $0,$1

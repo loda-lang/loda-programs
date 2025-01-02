@@ -9,5 +9,6 @@ sub $3,1
 mov $26,$3
 equ $26,0
 add $3,$26
+add $3,1
 seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 mov $$9,$3

@@ -13,6 +13,7 @@ lpb $0
   mov $2,$3
   lpb $2
     mov $4,$2
+    add $4,1
     seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     equ $4,0
     sub $2,$4

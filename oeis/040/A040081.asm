@@ -9,6 +9,7 @@ add $2,4
 lpb $2
   mov $3,$1
   max $3,0
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $5,1
   div $0,$2

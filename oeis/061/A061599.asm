@@ -10,11 +10,12 @@ lpb $2
   seq $1,80193 ; 5-smooth numbers which are not 3-smooth.
   mov $3,$1
   add $4,1
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $2,$5
   trn $2,1
 lpe

@@ -11,6 +11,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,73170 ; a(1) = a(2) = 0; for n>2, a(n) = prime(n-1)-n+1.
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $5,14
   sub $0,$3

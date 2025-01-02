@@ -16,6 +16,7 @@ lpb $4
   sub $0,$1
   mov $5,$0
   mov $6,$0
+  add $0,1
   seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   sub $0,2
   sub $0,$6

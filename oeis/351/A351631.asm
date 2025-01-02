@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,3265 ; Not representable by truncated tribonacci sequence 2, 4, 7, 13, 24, 44, 81, ....
   mov $0,0
   add $1,1

@@ -12,7 +12,6 @@ lpb $3
   mov $4,$2
   add $4,1
   seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $4,0
   sub $0,$4

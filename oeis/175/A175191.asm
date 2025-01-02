@@ -5,6 +5,7 @@
 seq $0,154115 ; Numbers n such that n + 3 is prime.
 add $1,$0
 lpb $0
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $0,1
   add $0,2

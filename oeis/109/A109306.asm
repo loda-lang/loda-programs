@@ -8,8 +8,10 @@ pow $2,3
 lpb $2
   add $3,$1
   mov $7,$6
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $7,$3
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$7
   add $1,2

@@ -10,7 +10,6 @@ lpb $1
   sub $0,$1
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   mov $4,$0
-  sub $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $2,$4
 lpe

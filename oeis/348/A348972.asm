@@ -17,5 +17,6 @@ add $1,1
 mov $2,$1
 seq $2,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 add $1,$2
+add $0,1
 seq $0,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
 gcd $0,$1

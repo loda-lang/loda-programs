@@ -8,10 +8,11 @@ mov $1,$0
 bin $1,2
 lpb $1
   sub $1,1
-  add $2,1
+  add $2,3
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   max $1,$2
   mul $2,$1
+  add $2,2
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $3,$2
 lpe

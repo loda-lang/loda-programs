@@ -9,6 +9,7 @@ pow $3,2
 lpb $3
   mov $6,$5
   add $6,$2
+  add $6,1
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $6,0
   mul $6,2

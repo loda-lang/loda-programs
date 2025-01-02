@@ -13,7 +13,7 @@ lpb $2
   mov $5,$3
   mov $6,$3
   seq $3,40297 ; Continued fraction for sqrt(315).
-  cmp $3,$6
+  equ $3,$6
   lpb $5
     div $5,10
     mul $3,10
@@ -21,12 +21,12 @@ lpb $2
   lpe
   add $1,2
   add $3,$6
-  add $3,1
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

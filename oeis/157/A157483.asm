@@ -6,15 +6,16 @@ mov $2,$0
 add $2,4
 pow $2,4
 lpb $2
-  add $1,1
+  mov $5,$1
+  add $5,3
   mov $6,$1
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,1
-  mov $5,$1
-  add $5,2
   mul $6,$5
   add $6,2
   seq $6,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
+  add $1,1
   mov $3,$6
   mul $3,$1
   add $3,1

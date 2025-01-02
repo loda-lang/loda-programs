@@ -8,6 +8,7 @@ mul $2,3
 lpb $2
   add $1,$2
   mul $1,2
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $2,$1
 lpe

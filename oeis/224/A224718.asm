@@ -13,6 +13,7 @@ lpb $2
   mul $3,2
   seq $7,353626 ; a(n) = 1 if n is a multiple of the square of an odd prime (equally: if the odd part of n is not squarefree), otherwise 0.
   mul $7,$3
+  add $7,1
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$7
   add $1,2

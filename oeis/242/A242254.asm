@@ -13,7 +13,7 @@ lpb $2
   seq $5,105161 ; Difference between n and the second-smallest prime larger than n.
   mov $3,$1
   mov $3,$5
-  sub $3,3
+  sub $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

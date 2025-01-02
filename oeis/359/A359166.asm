@@ -1,9 +1,10 @@
 ; A359166: a(n) = lambda(n) * lambda(sigma(n)), where lambda is Liouville's lambda, and sigma is the sum of divisors function.
 ; Submitted by Science United
 ; 1,1,-1,-1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,-1,1,-1,1,1,-1,1,-1,1,-1,-1,-1,-1,1,1,1,1,-1,1,-1,1,-1,1,1,1,1,-1,1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,1,1,1,1
-; Formula: a(n) = A008836(A003961(n)*A000203(n+1))
+; Formula: a(n) = A008836(A003961(n+1)*A000203(n+1))
 
 mov $1,$0
+add $1,1
 seq $1,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

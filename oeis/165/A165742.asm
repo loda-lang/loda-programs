@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,3591 ; Numbers of form 2^i*7^j, with i, j >= 0.
   mov $2,$3
   mul $2,$0

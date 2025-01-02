@@ -12,6 +12,7 @@ lpb $2
   mov $5,$3
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $5,1
   seq $5,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   gcd $5,$3
   mov $3,$5

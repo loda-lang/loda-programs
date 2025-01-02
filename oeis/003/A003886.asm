@@ -2,7 +2,10 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,9,9,18,18,18,18,19,20,20,20,20
 
+#offset 1
+
 mov $5,3
+sub $0,1
 lpb $0
   sub $0,1
   sub $0,$6

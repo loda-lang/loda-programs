@@ -12,6 +12,7 @@ lpb $2
   seq $3,70087 ; P(n) > P(n+1) where P(n) (A006530) is the largest prime factor of n.
   mul $3,2
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

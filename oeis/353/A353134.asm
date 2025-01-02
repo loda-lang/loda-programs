@@ -7,6 +7,7 @@ seq $0,57147 ; a(n) = n times sum of digits of n.
 sub $0,1
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $2,$1
   sub $0,1

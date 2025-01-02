@@ -10,6 +10,7 @@ lpb $2
   seq $3,347476 ; Numbers which give a prime number when 0's and 1's are interchanged in their binary representation.
   mul $3,2
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

@@ -10,6 +10,7 @@ lpb $2
   seq $3,72282 ; Numbers n such that sigma(n) + 1 and sigma(n) - 1 are twin primes.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,$3

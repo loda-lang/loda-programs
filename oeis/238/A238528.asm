@@ -5,7 +5,7 @@
 max $1,$0
 trn $1,4
 add $0,$1
-cmp $2,$0
+equ $2,$0
 trn $0,1
 mov $3,$0
 min $3,1
@@ -21,15 +21,17 @@ add $6,4
 pow $6,3
 lpb $6
   mov $9,$7
+  add $9,2
   seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $7,3
   sub $7,$9
   mul $9,$7
+  add $9,2
   seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $4,$9
   mov $8,$4
   max $8,0
-  cmp $8,$4
+  equ $8,$4
   add $5,6
   mul $6,$8
   sub $6,18

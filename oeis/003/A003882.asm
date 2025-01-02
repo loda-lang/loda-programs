@@ -2,6 +2,9 @@
 ; Submitted by [AF>Amis des Lapins] Ceclo
 ; 1,5,5,10,10,11,12,12
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,7
   add $1,$0

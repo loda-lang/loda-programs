@@ -10,7 +10,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   seq $3,276856 ; First differences of the Beatty sequence A022840 for sqrt(6).
-  add $3,1
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

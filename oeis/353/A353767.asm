@@ -7,6 +7,7 @@ lpb $0
   div $0,93
   sub $0,1
 lpe
+add $0,1
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 sub $0,1
 seq $0,62401 ; a(n) = phi(sigma(n)).

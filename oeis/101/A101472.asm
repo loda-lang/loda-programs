@@ -6,14 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $3,16
   mul $3,2
+  add $3,33
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,50
   sub $0,$3
   mov $1,$0
   max $1,0
-  cmp $1,$0
+  equ $1,$0
   mul $2,$1
   sub $2,1
   mov $3,$4

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,3591 ; Numbers of form 2^i*7^j, with i, j >= 0.
 lpb $0
   dif $0,2

@@ -11,6 +11,7 @@ lpb $2
   sub $3,2
   mul $3,3
   trn $3,2
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $7,6
   sub $0,$3

@@ -9,14 +9,15 @@ lpb $2
   add $1,1
   mov $3,$1
   mul $3,2
+  add $3,1
   seq $3,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mod $3,3
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

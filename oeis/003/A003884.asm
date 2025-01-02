@@ -1,6 +1,9 @@
 ; A003884: Degrees of irreducible representations of group L2(16).
 ; 1,15,15,15,15,15,15,15,15,16,17,17,17,17,17,17,17
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $1,0
   add $2,2

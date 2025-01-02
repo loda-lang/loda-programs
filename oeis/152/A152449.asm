@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   seq $3,23758 ; Numbers of the form 2^i - 2^j with i >= j.
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

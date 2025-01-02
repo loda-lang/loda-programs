@@ -6,11 +6,12 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  add $1,5
   mov $3,$1
+  add $3,6
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,$3
   sub $0,1
+  add $1,5
   sub $2,$0
 lpe
 mov $0,$1

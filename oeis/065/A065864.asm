@@ -6,6 +6,7 @@ mov $1,$0
 mov $2,1
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0
   sub $0,1

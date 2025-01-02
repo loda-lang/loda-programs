@@ -7,6 +7,7 @@ lpb $0
   mov $5,$0
   add $5,1
   mov $2,$0
+  add $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $4,$2
   gcd $4,$5

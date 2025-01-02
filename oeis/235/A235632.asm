@@ -11,7 +11,6 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   seq $3,37467 ; Sum{d(i)*8^i: i=0,1,...,m}, where Sum{d(i)*5^i: i=0,1,...,m} is the base 5 representation of n.
-  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

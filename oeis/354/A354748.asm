@@ -13,7 +13,7 @@ lpb $2
   mul $4,2
   add $4,$1
   mov $3,$4
-  sub $3,2
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   lpb $3
     div $3,4

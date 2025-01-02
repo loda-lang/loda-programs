@@ -2,7 +2,8 @@
 ; Submitted by pututu
 ; 1,7,31,151,217,1057,4681,32767
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,8
 lpb $2

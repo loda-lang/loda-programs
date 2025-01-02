@@ -11,6 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $0,0
   add $2,$0

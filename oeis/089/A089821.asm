@@ -6,6 +6,7 @@ mov $1,$0
 add $1,1
 lpb $0
   mov $5,$0
+  add $5,1
   seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,$5
   sub $0,1

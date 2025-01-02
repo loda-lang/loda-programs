@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,3250 ; The number m such that A001950(m) = A003231(A003234(n)).
   seq $3,188190 ; Positions of 0 in A188189; complement of A188191.
   sub $3,1

@@ -9,10 +9,10 @@ seq $1,80359 ; The smallest integer x > 0 such that the number of primes in (x/2
 mov $2,$0
 lpb $2
   sub $2,1
-  sub $1,2
   mov $3,$1
+  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $1,1
+  sub $1,1
   add $2,$3
 lpe
 mov $0,$1

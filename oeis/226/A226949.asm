@@ -9,11 +9,13 @@ lpb $3
   mov $2,$0
   mul $2,$3
   mov $4,$2
+  add $4,2
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $2,1
   sub $2,$4
   mul $4,$2
   max $4,0
+  add $4,2
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,$4
   mov $2,$4

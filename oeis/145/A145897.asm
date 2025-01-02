@@ -15,7 +15,7 @@ lpb $3
   add $4,2
   mul $4,6
   mov $7,$4
-  sub $7,6
+  sub $7,4
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,1
   add $2,1
@@ -23,6 +23,7 @@ lpb $3
   sub $6,$7
   sub $6,1
   mul $7,$6
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$7
   mov $5,$0

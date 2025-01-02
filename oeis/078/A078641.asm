@@ -12,7 +12,6 @@ lpb $2
   mov $0,$4
   gcd $0,$2
   mul $0,2
-  sub $0,1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $2,1
   add $3,$0

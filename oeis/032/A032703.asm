@@ -1,4 +1,4 @@
-; A032703: n prefixed by '3' and followed by '1' is a prime.
+; A032703: Numbers k such that k prefixed by '3' and followed by '1' is prime.
 ; Submitted by Eric Liskay
 ; 1,3,12,18,19,22,25,27,30,33,36,37,39,46,49,51,54,57,58,63,67,69,70,76,82,85,88,91,93,105,108,109,112,115,118,123,127,132,139,148,151,153,154,160,172,174,175,177,189,198,199,205,214,219,225,226,232,234,237,238,240,241,244,249,253,256,261,262,277,280,283,291,294,297,307,309,315,316,318,319
 
@@ -18,12 +18,12 @@ lpb $2
     mul $3,10
   lpe
   add $3,$6
-  sub $3,11
+  sub $3,10
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,10
   mul $2,$4
   trn $2,1

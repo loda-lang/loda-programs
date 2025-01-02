@@ -9,6 +9,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,3292 ; Number of 4-line partitions of n decreasing across rows.
   mov $2,$5
   mul $2,$4

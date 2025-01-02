@@ -6,13 +6,14 @@ pow $0,2
 lpb $0
   sub $0,1
   mov $3,$0
-  cmp $3,0
+  equ $3,0
   mov $2,$0
   add $2,$3
   pow $0,2
   div $0,$2
   max $2,0
   mov $6,$2
+  add $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $2,1
   mov $7,$6

@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,7092 ; Numbers in base 6.
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $5,$1
   sub $0,$3

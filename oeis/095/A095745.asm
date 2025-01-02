@@ -14,6 +14,7 @@ lpb $2
   seq $3,50874 ; Binary numbers d(1)...d(j) such that d(i) = d(j+1-i) for all but 6 values of i.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

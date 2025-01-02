@@ -15,6 +15,7 @@ lpb $3
   sub $2,1
   gcd $2,2
   div $4,2
+  add $4,1
   seq $4,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
   sub $4,1
   mul $4,3

@@ -8,24 +8,26 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,2
-  mov $6,$3
+  mov $6,$1
+  add $6,4
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $1,1
   add $5,$3
   sub $5,$1
   mul $6,$5
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $6,$3
   mov $3,$6
   seq $3,117900 ; Expansion of (1 + 2*x + 4*x^2 + 4*x^3 + 2*x^4)/((1+x)*(1-x^3)^2).
-  cmp $3,1
+  equ $3,1
   mul $5,$4
   add $5,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

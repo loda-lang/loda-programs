@@ -12,12 +12,14 @@ pow $6,3
 lpb $6
   mov $7,$5
   add $7,2
-  mov $3,$7
+  mov $3,$5
+  add $3,4
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $5,1
   add $2,$7
   sub $2,$5
   mul $3,$2
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $3,$7
   mov $7,$3

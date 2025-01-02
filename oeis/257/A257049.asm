@@ -9,19 +9,21 @@ mov $4,$0
 add $4,8
 pow $4,4
 lpb $4
-  add $8,1
   mov $9,$8
+  add $9,3
   seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $8,1
   mov $5,$8
   sub $5,$9
   add $5,3
   mul $9,$5
+  add $9,2
   seq $9,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$9
   add $3,2
   mov $6,$0
   max $6,0
-  cmp $6,$0
+  equ $6,$0
   add $7,$3
   mul $4,$6
   sub $4,18

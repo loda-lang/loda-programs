@@ -13,6 +13,7 @@ lpb $2
   equ $6,3
   mov $1,$6
   mul $1,$3
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $3,1
   sub $0,$1

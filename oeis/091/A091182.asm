@@ -16,10 +16,12 @@ lpb $3
   sub $2,1
   trn $2,1
   mov $6,$2
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $2,3
   sub $2,$6
   mul $6,$2
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,$6
 lpe

@@ -11,9 +11,11 @@ lpb $1
   add $1,$3
   mov $2,$0
   sub $2,$1
+  add $2,2
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $2,2
   mul $2,$1
+  add $2,2
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,1
   mov $3,$2

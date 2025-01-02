@@ -13,7 +13,7 @@ lpb $2
   seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   mov $5,$3
   seq $3,13636 ; a(n) = n*nextprime(n).
-  add $3,1
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

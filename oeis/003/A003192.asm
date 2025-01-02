@@ -1,8 +1,11 @@
 ; A003192: Length of uncrossed knight's path on an n X n board.
 ; Submitted by Eric Liskay
 ; 0,0,2,5,10,17,24,35,47
-; Formula: a(n) = floor((max(n,1)*floor(((n+4)^2+9)/5))/5)-1
+; Formula: a(n) = floor((max(n-1,1)*floor(((n+3)^2+9)/5))/5)-1
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 max $1,1
 add $0,4

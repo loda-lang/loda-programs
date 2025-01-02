@@ -6,17 +6,18 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  mov $3,$1
-  add $3,10
-  mov $6,$3
+  mov $6,$1
+  add $6,12
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $3,1
+  mov $3,$1
+  add $3,11
   mov $5,$3
   add $5,$3
   sub $5,$1
   sub $5,1
   mul $6,$5
   mul $6,2
+  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $6,2
   mov $3,$6

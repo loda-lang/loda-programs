@@ -11,18 +11,19 @@ pow $3,3
 lpb $3
   add $4,2
   add $7,$6
-  add $7,7
+  add $7,9
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $2,2
   add $6,$4
   sub $6,$2
   add $6,1
   mul $7,$6
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$7
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

@@ -13,9 +13,10 @@ lpb $5
   sub $0,$5
   mov $2,$0
   gcd $2,$5
-  cmp $2,1
+  equ $2,1
   sub $0,$2
   mov $6,$0
+  add $6,1
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $0,1
   mul $0,$6

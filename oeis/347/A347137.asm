@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   add $3,$0
 lpe

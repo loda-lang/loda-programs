@@ -1,9 +1,10 @@
 ; A185712: a(n) = number of primes <= n that end in 3.
 ; 0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6
-; Formula: a(n) = a(n-1)+truncate(gcd(5,A010051(n)*(n+1)-3)/4), a(0) = 0
+; Formula: a(n) = a(n-1)+truncate(gcd(5,A010051(n+1)*(n+1)-3)/4), a(0) = 0
 
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $2,$0
   add $2,1

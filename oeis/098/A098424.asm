@@ -10,6 +10,7 @@ lpb $4
   sub $0,$4
   mov $3,$0
   seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
+  add $0,1
   seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $2,3
   add $2,$3
@@ -17,7 +18,7 @@ lpb $4
   sub $5,$0
   add $5,$2
   mov $7,$5
-  cmp $7,0
+  equ $7,0
   add $1,$7
 lpe
 mov $0,$1

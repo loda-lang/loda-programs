@@ -10,6 +10,7 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $4,$0
+  add $0,1
   seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   div $0,2
   add $4,$0

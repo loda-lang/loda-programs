@@ -1,11 +1,12 @@
 ; A348029: a(n) = A003959(n) - sigma(n), where A003959 is multiplicative with a(p^e) = (p+1)^e and sigma is the sum of divisors.
 ; Submitted by Christian Krause
 ; 0,0,0,2,0,0,0,12,3,0,0,8,0,0,0,50,0,9,0,12,0,0,0,48,5,0,24,16,0,0,0,180,0,0,0,53,0,0,0,72,0,0,0,24,18,0,0,200,7,15,0,28,0,72,0,96,0,0,0,48,0,0,24,602,0,0,0,36,0,0,0,237,0,0,20,40,0,0,0,300
-; Formula: a(n) = -A000203(n+1)+A003959(n)
+; Formula: a(n) = -A000203(n+1)+A003959(n+1)
 
 mov $1,$0
 add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+add $1,1
 seq $1,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
 sub $1,$0
 mov $0,$1

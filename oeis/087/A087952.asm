@@ -8,8 +8,9 @@ pow $2,2
 mov $3,$0
 lpb $0
   mov $1,$2
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  cmp $1,0
+  equ $1,0
   sub $0,$1
   add $2,$3
 lpe

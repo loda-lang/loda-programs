@@ -11,7 +11,6 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   seq $3,7089 ; Numbers in base 3.
-  sub $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

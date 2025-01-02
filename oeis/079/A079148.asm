@@ -12,15 +12,17 @@ lpb $2
   mov $5,$3
   max $5,4
   div $5,2
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $7,$3
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$7
   dif $1,2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mov $7,$5
   mul $2,$4
   sub $2,17

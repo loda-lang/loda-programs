@@ -9,12 +9,12 @@ lpb $2
   mov $3,$1
   seq $3,245317 ; Concatenate n-th composite integer with n.
   max $5,$3
-  add $3,1
+  add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,2
   mul $2,$4
   trn $2,1

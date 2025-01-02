@@ -13,12 +13,13 @@ lpb $2
   sub $3,2
   seq $3,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
   trn $3,1
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

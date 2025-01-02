@@ -10,6 +10,7 @@ add $4,4
 lpb $4
   mov $1,$3
   max $1,0
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   div $0,$4
   sub $0,$1
@@ -17,7 +18,7 @@ lpb $4
   add $3,2
   mov $2,$0
   max $2,0
-  cmp $2,$0
+  equ $2,$0
   mul $4,$2
   sub $4,1
 lpe

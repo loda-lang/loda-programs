@@ -12,8 +12,8 @@ lpb $0
   mov $12,1
   mov $4,$2
   lpb $4
-    sub $4,1
     mov $7,$4
+    sub $4,1
     seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     mul $7,$4
     mov $9,10

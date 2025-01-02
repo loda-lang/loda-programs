@@ -17,6 +17,7 @@ mov $1,$0
 sub $0,1
 gcd $0,2
 div $1,2
+add $1,1
 seq $1,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
 sub $1,1
 mul $1,3

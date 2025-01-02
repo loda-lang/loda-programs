@@ -27,7 +27,7 @@ lpb $2
   mul $3,10
   sub $3,1498
   div $3,9
-  add $3,71
+  add $3,72
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

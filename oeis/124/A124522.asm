@@ -14,15 +14,17 @@ lpb $2
   mov $3,$6
   trn $3,2
   mov $7,$3
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $3,3
   sub $3,$7
   mul $7,$3
+  add $7,2
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $0,$4
   sub $0,$7
   trn $4,1
-  cmp $4,$0
+  equ $4,$0
   add $6,$5
   add $6,1
   add $1,1

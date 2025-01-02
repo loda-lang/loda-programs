@@ -10,7 +10,7 @@ lpb $2
   add $6,1
   seq $6,6005 ; The odd prime numbers together with 1.
   max $6,2
-  seq $6,13636 ; n*nextprime(n).
+  seq $6,13636 ; a(n) = n*nextprime(n).
   seq $6,183867 ; a(n) = n + floor(2*sqrt(n)); complement of A184676.
   sub $6,11
   div $6,4
@@ -18,6 +18,7 @@ lpb $2
   mul $3,4
   add $3,10
   mov $5,$3
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

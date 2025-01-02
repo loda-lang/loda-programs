@@ -11,11 +11,13 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $2,$0
+  add $2,2
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   seq $2,339825 ; Odd bisection of the infinite Fibonacci word A003849.
   mul $2,$1
   sub $2,1
   trn $2,1
+  add $2,2
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,$2
 lpe

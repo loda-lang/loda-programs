@@ -2,6 +2,9 @@
 ; Submitted by ThrasherX-17
 ; 1,2,5,9,18,31,57,92,159
 
+#offset 4
+
+sub $0,4
 lpb $0
   sub $0,1
   add $2,1

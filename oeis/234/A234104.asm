@@ -13,11 +13,12 @@ lpb $2
   add $6,1
   seq $6,195735 ; a(n) = 2*sigma(n^2) - sigma(n)^2.
   add $6,$7
-  cmp $6,0
+  equ $6,0
   add $1,1
   add $5,$3
   sub $5,$1
   mul $6,$5
+  add $6,1
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $3,$6
   mul $3,$1
@@ -27,7 +28,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
   sub $6,1

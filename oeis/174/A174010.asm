@@ -23,6 +23,7 @@ lpb $3
   mov $4,$8
   sub $4,1
   mov $6,$4
+  add $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$4
   add $2,1

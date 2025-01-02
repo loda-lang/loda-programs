@@ -11,6 +11,7 @@ lpb $2
   mov $3,$6
   add $3,$1
   mul $3,2
+  add $7,1
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $7,$3
   seq $7,302777 ; a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.

@@ -14,6 +14,7 @@ lpb $2
   sub $3,$6
   equ $4,0
   mul $4,$3
+  add $4,1
   seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $4,2
   mov $1,$4

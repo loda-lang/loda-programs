@@ -11,7 +11,6 @@ lpb $2
   dif $3,2
   add $3,1
   seq $3,40 ; The prime numbers.
-  sub $3,1
   add $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

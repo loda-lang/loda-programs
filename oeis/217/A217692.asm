@@ -11,11 +11,12 @@ lpb $2
   seq $1,41294 ; Numerators of continued fraction convergents to sqrt(160).
   mul $1,165
   mul $1,$3
+  add $1,1
   seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,17
 lpe

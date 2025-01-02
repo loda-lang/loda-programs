@@ -5,6 +5,7 @@
 mov $1,$0
 lpb $1
   mov $3,$1
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $3,$1
   seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.

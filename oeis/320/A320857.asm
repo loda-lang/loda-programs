@@ -1,12 +1,13 @@
 ; A320857: a(n) = Pi(8,5)(n) + Pi(8,7)(n) - Pi(8,1)(n) - Pi(8,3)(n) where Pi(a,b)(x) denotes the number of primes in the arithmetic progression a*k + b less than or equal to x.
 ; Submitted by Opolis
 ; 0,0,-1,-1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,-1,-1,-1,-1,0,0,0,0,0,0,1,1,2,2,2,2,2,2,3,3,3,3,2,2,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,2,2,3,3,3,3,3,3,2,2,2,2,3,3,2,2,2,2,2,2,3,3
-; Formula: a(n) = b(floor(n/2)), b(n) = -2*A010051(2*n)*(floor((n+22)/2)%2)+b(n-1)+A010051(2*n), b(0) = 0
+; Formula: a(n) = b(floor(n/2)), b(n) = -2*A010051(2*n+1)*(floor((n+22)/2)%2)+b(n-1)+A010051(2*n+1), b(0) = 0
 
 div $0,2
 lpb $0
   mov $2,$0
   mul $2,2
+  add $2,1
   seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mov $3,$0
   add $3,22

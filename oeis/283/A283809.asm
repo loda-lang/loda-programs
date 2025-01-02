@@ -1,4 +1,4 @@
-; A283809: Squarefree numbers k such that 6k - 1 and 6k + 1 are twin primes.
+; A283809: Squarefree numbers k such that 6*k - 1 and 6*k + 1 are twin primes.
 ; Submitted by Landjunge
 ; 1,2,3,5,7,10,17,23,30,33,38,47,58,70,77,87,95,103,107,110,137,138,143,170,177,182,205,213,215,217,238,247,278,283,287,298,313,322,347,355,357,373,385,390,397,443,455,465,467,542,543,555,562,565,577,590,593,597,642,653,655,667,670,682,703,705,707,710,723,737,753,758,773,787,798,822,835,903,907,913
 
@@ -7,16 +7,17 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
   sub $3,1
   mov $5,$3
   seq $3,48146 ; Sum of non-unitary divisors of n.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe
