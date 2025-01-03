@@ -10,16 +10,17 @@ lpb $2
   mov $3,$1
   seq $3,317048 ; Numbers k such that both k and k + 2 are consecutive deficient numbers.
   mov $6,$3
+  add $3,1
   seq $3,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
   sub $3,$6
   mov $5,$3
   add $1,1
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

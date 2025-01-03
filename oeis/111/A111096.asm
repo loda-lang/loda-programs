@@ -1,19 +1,16 @@
 ; A111096: Partial sums of A137701.
 ; Submitted by Stony666
 ; 16,232,59281,10059281,4049575228945,1950244643588320,30041944445326335483061,32095019157463691981298869,142108579247039194637916834814494,108199957883829576141601541930838816381470,118558455387984539329682688832638841343258239487
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+truncate(A176540(max(n-1,0)+1)^A000040(max(n-1,0)+1)), b(0) = 0
+; Formula: a(n) = b(n+1), b(n) = b(n-1)+truncate(A176540(n)^A000040(n)), b(0) = 0
 
 add $0,1
 lpb $0
-  sub $0,1
   mov $2,$0
-  max $2,0
-  mov $3,$2
-  add $3,1
-  seq $3,176540 ; 1 together with the semiprimes.
-  add $2,1
   seq $2,40 ; The prime numbers.
+  mov $3,$0
+  seq $3,176540 ; 1 together with the semiprimes.
   pow $3,$2
+  sub $0,1
   add $1,$3
 lpe
 mov $0,$1

@@ -3,7 +3,7 @@
 
 mov $1,$0
 min $0,2
-cmp $0,2
+equ $0,2
 sub $1,1
 lpb $1
   add $2,1

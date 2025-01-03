@@ -14,7 +14,6 @@ lpb $6
   mov $3,$0
   gcd $3,$6
   bin $3,$0
-  sub $0,1
   seq $0,56188 ; a(1) = 1; for n>1, sum of binomial(n,k) as k runs over RRS(n), the reduced residue system of n.
   mul $3,$0
   add $5,$3

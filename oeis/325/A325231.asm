@@ -8,6 +8,7 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,204217 ; G.f.: Sum_{n>=1} n * x^(n*(n+1)/2) / (1 - x^n).
   div $3,2
   equ $3,2

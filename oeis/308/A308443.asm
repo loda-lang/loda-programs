@@ -9,12 +9,11 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,60648 ; Number of cyclic subgroups of the group C_n X C_n (where C_n is the cyclic group of order n).
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     mul $6,$5
     add $6,$7

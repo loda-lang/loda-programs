@@ -9,6 +9,7 @@ lpb $2
   add $3,3
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $5,$1
+  add $5,1
   seq $5,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
   gcd $5,$3
   add $1,1

@@ -2,19 +2,12 @@
 ; Submitted by Science United
 ; 1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
 
+seq $0,261969 ; Product of primes dividing n with maximum multiplicity.
+seq $0,55396 ; Smallest prime dividing n is a(n)-th prime (a(1)=0).
 add $0,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $4,$1
-  seq $4,51903 ; Maximum exponent in the prime factorization of n.
-  add $6,1
-  add $1,1
-  seq $3,111089 ; Largest prime factor of 2n.
-  pow $3,$4
-  mov $5,$3
-  gcd $5,$6
-  div $3,$5
-  equ $3,1
-lpe
-mov $0,$3
+mov $2,2
+sub $2,$0
+mov $1,$2
+max $1,0
+equ $1,$2
+mov $0,$1

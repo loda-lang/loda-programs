@@ -2,12 +2,14 @@
 ; Submitted by Science United
 ; 1,2,2,0,2,4,2,4,0,4,2,0,2,4,4,0,2,0,2,0,4,4,2,8,0,4,4,0,2,8,2,0,4,4,4,0,2,4,4,8,2,8,2,0,0,4,2,0,0,0,4,0,2,8,4,8,4,4,2,0,2,4,0,0,4,8,2,0,4,8,2,0,2,4,0,0,4,8,2,0
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $2,$1
-seq $0,75101 ; Numerator of 2^n/n.
-gcd $1,$0
+mov $3,2
+pow $3,$0
+gcd $1,$3
 div $2,$1
 equ $2,1
 mul $1,$2

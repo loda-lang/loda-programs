@@ -12,11 +12,11 @@ lpb $2
   div $3,2
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   add $3,2
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

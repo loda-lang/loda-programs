@@ -1,16 +1,28 @@
-; A119695: Fib(n)*n^2*(binomial(2*n, n))^2/(n+1).
+; A119695: a(n) = Fibonacci(n)*n^2*(binomial(2*n, n))^2/(n+1).
 ; Submitted by Jamie Morken(w1)
 ; 0,2,48,1800,47040,1323000,35126784,937872936,24735110400,651019271760,17067389768000,446585320669488,11663935674273792,304250554223980000,7927831278607968000,206402082984558900000,5369988005412124953600
-; Formula: a(n) = A000108(n)*A000045(n)*binomial(2*n,n)*n^2
+; Formula: a(n) = truncate((min(n,n%2)*c(n)+b(n))/3)*floor(binomial(2*n,n)/(n+1))*binomial(2*n,n)*n^2, b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
 mov $2,$0
 mul $2,2
+mov $6,3
 mov $3,$0
-seq $3,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+lpb $3
+  sub $3,2
+  add $6,$5
+  add $5,$6
+lpe
+mul $3,$6
+add $3,$5
+div $3,3
 bin $2,$0
 mul $2,$3
 mov $1,$0
 pow $1,2
 mul $1,$2
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $4,$0
+mul $0,2
+bin $0,$4
+add $4,1
+div $0,$4
 mul $0,$1

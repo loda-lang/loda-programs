@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,244035 ; a(n) = Sum_{d|n} Sum{t|d} moebius(d/t)*binomial(3*t,t)/(3*d^2).
   add $3,$0
 lpe

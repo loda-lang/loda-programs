@@ -1,8 +1,6 @@
 ; A179184: Number of connected 2-regular simple graphs with n vertices.
-; Submitted by vaughan
+; Submitted by shiva
 ; 1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = min(binomial(n-1,2),1)
 
-sub $0,1
-bin $0,2
-min $0,1
+dif $0,2
+neq $0,1

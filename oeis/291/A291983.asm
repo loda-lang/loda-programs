@@ -7,8 +7,7 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $4,$0
-  cmp $4,0
-  cmp $4,0
+  neq $4,0
   sub $4,3
   mov $2,$0
   gcd $2,4

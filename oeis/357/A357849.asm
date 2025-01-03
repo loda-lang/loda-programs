@@ -8,8 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,353906 ; a(n) is the {alternating sum of the digits of n} raised to the power {number of digits of n}.
-  cmp $2,0
+  equ $2,0
   add $1,$2
   mov $3,5
 lpe

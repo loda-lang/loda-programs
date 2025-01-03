@@ -1,13 +1,13 @@
 ; A247968: a(n) = least k such that (k!*e^k)/(sqrt(2*Pi)*k^(k+1/2)) - 1 < 1/2^n.
-; Submitted by Samyyy
+; Submitted by shiva
 ; 1,1,1,2,3,6,11,22,43,86,171,342,683,1366,2731,5462,10923,21846,43691,87382,174763,349526,699051,1398102,2796203,5592406,11184811,22369622
-; Formula: a(n) = floor(truncate(2^(n-1))/6)+1
+; Formula: a(n) = floor((2^(n-1))/6)+1
 
 #offset 1
 
 sub $0,1
 mov $1,2
 pow $1,$0
-div $1,6
 mov $0,$1
+div $0,6
 add $0,1
