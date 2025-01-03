@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,10377 ; Squares mod 14.
   mul $3,2
   sub $3,2

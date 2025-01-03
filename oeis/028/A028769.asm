@@ -11,6 +11,7 @@ add $2,180
 lpb $2
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,10417 ; Squares mod 56.
   sub $3,1
   add $0,1

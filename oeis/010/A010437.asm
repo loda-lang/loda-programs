@@ -2,6 +2,9 @@
 ; Submitted by ChelseaOilman
 ; 0,1,4,5,9,16,17,20,24,25,28,36,44,45,49,57,61,64,68,73
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2

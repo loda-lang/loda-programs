@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 0,1,4,7,9,15,16,18
 
-add $0,1
+#offset 1
+
 mov $2,12
 mov $3,$0
 pow $3,5

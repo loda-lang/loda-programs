@@ -2,7 +2,8 @@
 ; Submitted by zombie67 [MM]
 ; 0,1,2,4,5,7,8,9,10,14,16,18,19,20,25,28
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,2
 lpb $2

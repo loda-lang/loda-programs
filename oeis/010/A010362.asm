@@ -2,7 +2,8 @@
 ; Submitted by Roadranner
 ; 0,0,0,0,0,2,4,16,53,199
 
-add $0,1
+#offset 1
+
 lpb $0
   sub $0,1
   max $0,5

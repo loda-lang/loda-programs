@@ -2,8 +2,11 @@
 ; Submitted by Orange Kid
 ; 0,0,0,0,0,2,5,24,88,350
 
+#offset 1
+
 mov $1,2
 mov $4,-1
+sub $0,1
 lpb $0
   sub $0,1
   max $0,4

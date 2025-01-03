@@ -2,6 +2,9 @@
 ; Submitted by Landjunge
 ; 0,1,4,9,13,15,16,18,19,21,25,30,33,34,36,42,43,49
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2

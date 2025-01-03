@@ -1,8 +1,11 @@
 ; A010462: Squares mod 30.
 ; Submitted by Simon Strandgaard
 ; 0,1,4,6,9,10,15,16,19,21,24,25
-; Formula: a(n) = floor((6*floor((19*floor(floor(n/2)/3)+19)/26)+6*floor(n/2)+6*n+9)/4)-2
+; Formula: a(n) = floor((6*floor((19*floor(floor((n-1)/2)/3)+19)/26)+6*floor((n-1)/2)+6*n+3)/4)-2
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $0,2
 mov $2,$0
