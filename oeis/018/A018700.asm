@@ -2,7 +2,10 @@
 ; Submitted by Gunnar Hjern
 ; 1,2,3,6,7,9,14,18,21,42,49,63,98,126,147,294,441,882
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

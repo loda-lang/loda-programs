@@ -2,8 +2,11 @@
 ; Submitted by Stony666
 ; 1,2,7,14,53,106,371,742
 
+#offset 1
+
 mov $2,1
 mov $4,3
+sub $0,1
 lpb $0
   add $4,1
   pow $1,2

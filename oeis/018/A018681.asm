@@ -2,7 +2,10 @@
 ; Submitted by Christian Krause
 ; 1,2,4,8,16,53,106,212,424,848
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   mul $2,9

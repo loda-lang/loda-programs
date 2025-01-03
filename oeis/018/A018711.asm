@@ -2,8 +2,11 @@
 ; Submitted by Aflatoxin
 ; 1,2,11,22,41,82,451,902
 
+#offset 1
+
 mov $1,1
 mov $2,1
+sub $0,1
 lpb $0
   add $1,1
   mov $3,$0

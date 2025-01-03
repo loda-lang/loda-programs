@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 1,2,3,5,6,10,15,25,30,50,75,125,150,250,375,750
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,10
   mov $3,$2

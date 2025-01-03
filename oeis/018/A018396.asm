@@ -2,7 +2,10 @@
 ; Submitted by [AF>PlusCitoyen] Davlabedave
 ; 1,2,3,5,6,10,11,15,22,30,33,55,66,110,165,330
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,2
   mov $3,$2

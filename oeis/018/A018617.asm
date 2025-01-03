@@ -2,6 +2,9 @@
 ; Submitted by Opolis
 ; 1,3,5,7,15,21,35,49,105,147,245,735
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,$4
   mul $1,7

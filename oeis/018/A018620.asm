@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 1,2,4,5,10,20,37,74,148,185,370,740
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $3,1

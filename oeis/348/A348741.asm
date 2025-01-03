@@ -10,6 +10,7 @@ lpb $2
   add $6,1
   pow $6,$6
   mov $3,$1
+  add $3,1
   seq $3,13959 ; a(n) = sigma_11(n), the sum of the 11th powers of the divisors of n.
   mov $5,$3
   gcd $5,$6
@@ -20,7 +21,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

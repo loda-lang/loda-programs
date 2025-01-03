@@ -3,6 +3,8 @@
 ; 2,8,18,32,72,128,288,1152
 ; Formula: a(n) = 2*A018623(n)^2
 
+#offset 1
+
 seq $0,18623 ; Divisors of 744.
 pow $0,2
 mul $0,2

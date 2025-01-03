@@ -7,6 +7,7 @@
 sub $0,9
 lpb $0
   mov $2,$0
+  add $2,8
   seq $2,15357 ; Gaussian binomial coefficient [ n,8 ] for q=-3.
   sub $0,1
   add $1,$2

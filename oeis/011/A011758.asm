@@ -1,8 +1,11 @@
 ; A011758: Barker sequence of length 13.
 ; Submitted by Science United
 ; 1,1,1,1,1,-1,-1,1,1,-1,1,-1,1
-; Formula: a(n) = binomial(-1,floor(binomial(n,2)/10))
+; Formula: a(n) = binomial(-1,floor(binomial(n-1,2)/10))
 
+#offset 1
+
+sub $0,1
 bin $0,2
 div $0,10
 mov $1,-1

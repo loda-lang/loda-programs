@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,13955 ; a(n) = sigma_7(n), the sum of the 7th powers of the divisors of n.
     mov $9,10
     add $9,$5

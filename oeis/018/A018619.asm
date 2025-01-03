@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w4)
 ; 1,2,3,6,9,18,41,82,123,246,369,738
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,1
 mov $3,1

@@ -2,6 +2,9 @@
 ; Submitted by [AF&amp;gt;Libristes]IxPo
 ; 1,2,5,7,10,13,14,26,35,65,70,91,130,182,455,910
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 mov $2,1

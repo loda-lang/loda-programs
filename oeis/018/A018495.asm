@@ -2,12 +2,16 @@
 ; Submitted by arkiss
 ; 1,3,9,19,27,57,171,513
 
+#offset 1
+
 mov $2,$0
-add $2,10
+sub $0,1
+add $2,9
 pow $2,2
 lpb $2
   add $5,1
   mov $3,$1
+  add $3,1
   seq $3,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
   mod $3,$5
   equ $3,0

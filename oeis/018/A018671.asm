@@ -2,7 +2,10 @@
 ; Submitted by L@MiR
 ; 1,2,4,8,13,16,26,32,52,64,104,208,416,832
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,24
   add $2,2

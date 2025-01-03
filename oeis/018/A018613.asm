@@ -2,8 +2,11 @@
 ; Submitted by Gibson Praise
 ; 1,2,3,6,11,22,33,66,121,242,363,726
 
+#offset 1
+
 mov $1,1
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   mul $2,4

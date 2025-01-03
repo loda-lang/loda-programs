@@ -2,9 +2,12 @@
 ; Submitted by Science United
 ; 1,2,3,6,31,62,93,186
 
+#offset 1
+
 mov $1,1
 mov $2,1
 mov $4,-1
+sub $0,1
 lpb $0
   add $1,1
   mov $3,$0

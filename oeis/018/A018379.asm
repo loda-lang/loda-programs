@@ -2,8 +2,11 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,3,6,7,14,21,42,49,98,147,294
 
+#offset 1
+
 mov $2,1
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   dif $2,2

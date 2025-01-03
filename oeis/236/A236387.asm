@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $3,4
+  add $3,1
   seq $3,121466 ; Triangle read by rows: T(n,k) = is the number of directed column-convex polyominoes of area n having along the lower contour exactly k reentrant corners, i.e., a vertical step that is followed by a horizontal step (n >= 1, k >= 0).
   equ $3,1
   sub $0,$3

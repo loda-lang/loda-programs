@@ -2,6 +2,9 @@
 ; Submitted by Kotenok2000
 ; 1,2,3,4,6,7,12,14,21,28,42,84
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2

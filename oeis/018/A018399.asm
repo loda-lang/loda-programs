@@ -2,6 +2,9 @@
 ; Submitted by WTBroughton
 ; 1,2,3,4,6,7,8,12,14,16,21,24,28,42,48,56,84,112,168,336
 
+#offset 1
+
+sub $0,1
 mov $1,-1
 mov $2,$0
 pow $2,2

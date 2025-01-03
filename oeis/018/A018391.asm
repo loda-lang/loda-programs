@@ -2,7 +2,10 @@
 ; Submitted by Cruncher Pete
 ; 1,2,4,5,8,10,16,20,32,40,64,80,160,320
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

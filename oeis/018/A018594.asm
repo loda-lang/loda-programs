@@ -2,7 +2,10 @@
 ; Submitted by gemini8
 ; 1,2,3,5,6,10,15,23,30,46,69,115,138,230,345,690
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mul $1,5
   mov $3,$2

@@ -2,7 +2,10 @@
 ; Submitted by Fardringle
 ; 1,3,5,13,15,39,65,195
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   add $1,10
   mov $3,$2

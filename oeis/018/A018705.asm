@@ -2,6 +2,9 @@
 ; Submitted by Fornax
 ; 1,3,9,11,27,33,81,99,297,891
 
+#offset 1
+
+sub $0,1
 lpb $0
   mul $1,12
   add $2,1

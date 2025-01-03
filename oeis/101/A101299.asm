@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,15613 ; a(n) = Sum_{i=1..n} phi(i) * (ceiling(n/i) - floor(n/i)).
   add $3,$1
   add $3,1

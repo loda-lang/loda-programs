@@ -2,6 +2,9 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,3,7,9,13,21,39,63,91,117,273,819
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $3,$2
   mul $1,18

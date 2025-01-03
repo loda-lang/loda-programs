@@ -2,7 +2,10 @@
 ; Submitted by http://asterion.petrsu.ru/
 ; 1,2,3,4,6,12,19,38,57,76,114,228
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

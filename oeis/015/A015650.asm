@@ -5,8 +5,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 lpb $0
   mov $2,$0
   seq $2,117109 ; Moebius transform of binomial(n+3, 4).

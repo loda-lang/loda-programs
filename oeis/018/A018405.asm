@@ -2,7 +2,10 @@
 ; Submitted by Jim1348
 ; 1,2,3,4,6,12,29,58,87,116,174,348
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   add $2,1

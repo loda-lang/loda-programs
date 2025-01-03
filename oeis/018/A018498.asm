@@ -2,7 +2,10 @@
 ; Submitted by [DPC] hansR
 ; 1,2,4,5,8,10,13,20,26,40,52,65,104,130,260,520
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

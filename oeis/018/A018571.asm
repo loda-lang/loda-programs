@@ -2,6 +2,9 @@
 ; Submitted by NeoGen
 ; 1,2,5,10,13,25,26,50,65,130,325,650
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 mov $2,1

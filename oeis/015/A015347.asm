@@ -4,8 +4,7 @@
 
 #offset 7
 
-sub $0,7
-add $0,6
+sub $0,1
 lpb $0
   sub $0,5
   add $1,1

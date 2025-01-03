@@ -2,7 +2,10 @@
 ; Submitted by zombie67 [MM]
 ; 1,2,3,5,6,10,15,19,30,38,57,95,114,190,285,570
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   sub $1,28
   mul $1,15

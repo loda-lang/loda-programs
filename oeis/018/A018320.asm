@@ -2,7 +2,10 @@
 ; Submitted by http://kodeks.karelia.ru/
 ; 1,2,4,8,11,16,22,44,88,176
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   add $2,2
   mov $3,$2

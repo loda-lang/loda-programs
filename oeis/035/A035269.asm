@@ -7,10 +7,10 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,13968 ; a(n) = sigma_20(n), the sum of the 20th powers of the divisors of n.
   mod $3,41
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

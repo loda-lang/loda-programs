@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,14574 ; Average of twin prime pairs.
   add $0,2
   seq $0,151800 ; Least prime > n (version 2 of the "next prime" function).

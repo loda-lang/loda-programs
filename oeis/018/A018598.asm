@@ -2,7 +2,10 @@
 ; Submitted by Fardringle
 ; 1,2,4,5,7,10,14,20,25,28,35,50,70,100,140,175,350,700
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

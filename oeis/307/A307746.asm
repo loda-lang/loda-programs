@@ -12,6 +12,7 @@ lpb $2
   seq $3,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
   add $3,1
   trn $3,2
+  add $3,1
   seq $3,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
   mov $5,$3
   add $3,$4

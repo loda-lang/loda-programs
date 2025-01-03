@@ -19,7 +19,13 @@ lpb $4
   add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mul $5,6
-  seq $0,244668 ; Numerators of (product of divisors of n / sum of divisors of n).
+  mov $6,$0
+  add $0,1
+  seq $0,7955 ; Product of divisors of n.
+  add $6,1
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  gcd $6,$0
+  div $0,$6
   mul $0,$5
   div $0,6
   mul $1,$0

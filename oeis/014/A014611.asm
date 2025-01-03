@@ -10,6 +10,7 @@ lpb $0
   max $2,0
   mov $5,-1
   pow $5,$2
+  add $2,1
   seq $2,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
   mov $6,73
   mod $6,$2

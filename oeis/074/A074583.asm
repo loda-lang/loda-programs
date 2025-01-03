@@ -10,7 +10,6 @@ lpb $2
   add $4,$1
   mov $3,$1
   seq $3,275823 ; Least k such that n divides phi(k^2).
-  sub $3,1
   seq $3,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
   sub $3,1
   seq $3,36288 ; a(n) = 1 + integer log of n: if the prime factorization of n is n = Product (p_j^k_j) then a(n) = 1 + Sum (p_j * k_j) (cf. A001414).
@@ -20,7 +19,7 @@ lpb $2
   div $4,$3
   mov $3,$4
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

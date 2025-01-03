@@ -2,7 +2,8 @@
 ; Submitted by Stony666
 ; 1,2,11,17,22,34,187,374
 
-add $0,1
+#offset 1
+
 seq $0,18286 ; Divisors of 105.
 mov $1,$0
 dif $0,3

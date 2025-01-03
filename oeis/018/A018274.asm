@@ -2,9 +2,12 @@
 ; Submitted by arkiss
 ; 1,2,3,6,13,26,39,78
 
+#offset 1
+
 mov $1,1
 mov $2,1
 mov $4,-1
+sub $0,1
 lpb $0
   add $1,1
   mov $3,$0

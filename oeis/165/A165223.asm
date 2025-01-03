@@ -7,6 +7,7 @@ mov $1,1
 mov $2,$0
 lpb $2
   trn $2,1
+  add $2,1
   seq $2,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
   seq $2,139421 ; a(1)=1; for n>1, a(n) = largest prime divisor of n!!.
   sub $2,1

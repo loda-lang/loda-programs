@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,13938 ; a(n) = Sum_{k=1..n} floor(n/k^4).
   mov $2,$5
   mul $2,$4

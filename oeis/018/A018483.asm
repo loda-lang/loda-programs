@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,18617 ; Divisors of 735.
 mov $1,$0
 dif $0,3

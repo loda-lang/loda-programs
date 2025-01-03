@@ -9,6 +9,7 @@ lpb $2
   mov $5,$1
   add $5,1
   mov $3,$1
+  add $3,1
   seq $3,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
   mod $3,$5
   equ $3,0

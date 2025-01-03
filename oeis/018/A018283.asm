@@ -2,8 +2,9 @@
 ; Submitted by TankbusterGames
 ; 1,2,4,5,10,20,25,50,100
 
+#offset 1
+
 mov $1,1
-add $0,1
 lpb $0
   sub $0,1
   add $2,$1

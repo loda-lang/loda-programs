@@ -2,7 +2,10 @@
 ; Submitted by [AF] Kalianthys
 ; 1,2,4,8,16,29,32,58,116,232,464,928
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

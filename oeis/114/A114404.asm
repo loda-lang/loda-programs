@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,14613 ; Numbers that are products of 4 primes.
   mov $2,$3
   mul $2,$0

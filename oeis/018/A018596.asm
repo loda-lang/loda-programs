@@ -2,6 +2,9 @@
 ; Submitted by shiva
 ; 1,3,7,9,11,21,33,63,77,99,231,693
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $3,$2
   add $2,1

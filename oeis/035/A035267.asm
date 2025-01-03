@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,13966 ; a(n) = sigma_18(n), the sum of the 18th powers of the divisors of n.
   mod $3,37
   min $3,1

@@ -2,8 +2,11 @@
 ; Submitted by pututu
 ; 1,2,5,10,41,82,205,410
 
+#offset 1
+
 mov $1,1
 mov $2,3
+sub $0,1
 lpb $0
   add $1,1
   mov $3,$0

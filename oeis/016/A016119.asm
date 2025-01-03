@@ -2,7 +2,8 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,8,8,48,16,96,128
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $2,$0
 div $0,2

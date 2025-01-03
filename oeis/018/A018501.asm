@@ -2,7 +2,10 @@
 ; Submitted by DoctorNow
 ; 1,3,5,7,15,21,25,35,75,105,175,525
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   add $1,10
   mul $1,6

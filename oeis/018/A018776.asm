@@ -2,7 +2,8 @@
 ; Submitted by ThrasherX-17
 ; 1,5,7,29,35,145,203,1015
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2

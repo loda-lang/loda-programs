@@ -2,7 +2,10 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,4,7,14,23,28,46,92,161,322,644
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

@@ -8,4 +8,5 @@ lpb $0
   pow $0,2
   sub $0,1
 lpe
+add $0,1
 seq $0,15995 ; a(n) = (tau(n^3)+2)/3.

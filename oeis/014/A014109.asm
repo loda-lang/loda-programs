@@ -2,6 +2,9 @@
 ; Submitted by [AF] Kalianthys
 ; 1,2,3,5,9,11,14,18,23,26,29,30,33,35,39,41
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mul $1,$0
 lpb $1

@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,18900 ; Sums of two distinct powers of 2.
   add $0,1
   add $1,1

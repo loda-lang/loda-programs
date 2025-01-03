@@ -9,6 +9,7 @@ mov $2,1816
 lpb $2
   sub $2,24
   mov $3,$1
+  add $3,1
   seq $3,14721 ; Squares of elements to left of the central element in Pascal triangle (by row).
   mov $5,$3
   gcd $3,4

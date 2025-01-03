@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,3
   seq $3,13635 ; a(n) = prevprime(n) + n.
   sub $3,1
   mov $5,$3

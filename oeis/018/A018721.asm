@@ -2,7 +2,10 @@
 ; Submitted by pelpolaris
 ; 1,2,3,6,9,17,18,27,34,51,54,102,153,306,459,918
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   mul $1,18

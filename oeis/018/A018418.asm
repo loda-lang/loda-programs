@@ -2,7 +2,10 @@
 ; Submitted by Matthias Lehmkuhl
 ; 1,2,5,10,37,74,185,370
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   add $1,2
   pow $1,2

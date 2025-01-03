@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 1,2,3,6,7,14,19,21,38,42,57,114,133,266,399,798
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

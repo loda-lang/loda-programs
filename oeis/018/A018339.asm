@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 1,2,4,5,10,11,20,22,44,55,110,220
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

@@ -2,6 +2,9 @@
 ; Submitted by zombie67 [MM]
 ; 1,2,4,5,7,10,14,20,28,35,70,140
 
+#offset 1
+
+sub $0,1
 mov $1,-1
 mov $2,$0
 add $2,10

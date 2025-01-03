@@ -2,8 +2,9 @@
 ; Submitted by Stony666
 ; 1,2,4,8,89,178,356,712
 
+#offset 1
+
 mov $1,1
-add $0,1
 lpb $0
   sub $0,1
   mov $2,$1

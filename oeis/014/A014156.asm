@@ -11,6 +11,7 @@ add $2,180
 lpb $2
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,14155 ; Sum of a nonnegative cube and a triangular number.
   sub $3,1
   add $0,1
