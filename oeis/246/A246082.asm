@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   div $0,4
+  add $0,1
   seq $0,7601 ; Positions where A007600 increases.
   sub $0,1
   add $1,1

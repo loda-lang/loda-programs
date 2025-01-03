@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,5101 ; Abundant numbers (sum of divisors of m exceeds 2m).
   bin $0,$3
   gcd $1,$2

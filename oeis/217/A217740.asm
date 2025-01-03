@@ -6,6 +6,5 @@ mov $1,2
 lpb $1
   div $1,2
   add $0,$1
-  sub $0,1
   seq $0,5101 ; Abundant numbers (sum of divisors of m exceeds 2m).
 lpe

@@ -9,11 +9,10 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
-  sub $3,1
   seq $3,7424 ; a(n) = 1 if n is squarefree, otherwise 2.
   add $3,1
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

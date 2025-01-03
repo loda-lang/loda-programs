@@ -2,6 +2,9 @@
 ; Submitted by Thibault Gauthier, Josef Urban (NMT)
 ; 1,1,2,3,2,4,5,2,6,7,3,8,6,4,9,10,4,6,11,5,12,13,4,14,12,6,15,8,7,16,17,6,10,18,8,19,20,6,12,21,8,22,12,9,23,15,10,14,24,8,25,26,6,27,28,11,29,16,10,18,20,12,18,30,13,31,21,8,32,33,14,20,18,12,34,35,12,20
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $2,$0
 add $2,1
@@ -17,7 +20,7 @@ lpb $2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  add $0,1
+  add $0,2
   seq $0,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
   mul $0,$4
   add $1,$0

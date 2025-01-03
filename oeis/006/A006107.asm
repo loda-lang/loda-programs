@@ -7,6 +7,7 @@
 sub $0,4
 lpb $0
   mov $2,$0
+  add $2,3
   seq $2,6106 ; Gaussian binomial coefficient [ n,3 ] for q = 4.
   sub $0,1
   add $1,$2

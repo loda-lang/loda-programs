@@ -1,11 +1,13 @@
 ; A005860: The coding-theoretic function A(n,12,10).
 ; Submitted by Jamie Morken(w1)
 ; 1,1,1,1,1,1,2,2,3,4,6,7,11,16,24
-; Formula: a(n) = truncate((2*truncate(b(n+5)/36)-11)/2)+6, b(n) = b(n-1)+b(n-3), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1
+; Formula: a(n) = truncate((2*truncate(b(n-5)/36)-11)/2)+6, b(n) = b(n-1)+b(n-3), b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1
+
+#offset 10
 
 mov $2,1
 mov $4,1
-add $0,5
+sub $0,5
 lpb $0
   sub $0,1
   mov $1,$4

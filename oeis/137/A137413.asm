@@ -12,12 +12,13 @@ lpb $1
   sub $0,$1
   add $0,1
   mov $5,$3
+  add $5,1
   seq $5,8472 ; Sum of the distinct primes dividing n.
   gcd $5,$0
   mov $0,$5
   sub $0,1
   lpb $0
-    cmp $4,$0
+    equ $4,$0
     mov $0,0
   lpe
   mov $0,$4

@@ -14,6 +14,7 @@ lpb $2
     sub $0,$1
   lpe
   pow $1,0
+  add $0,1
   seq $0,7554 ; Unique attractor for (RIGHT then MOBIUS) transform.
   mul $0,$4
 lpe

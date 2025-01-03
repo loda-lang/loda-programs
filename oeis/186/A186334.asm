@@ -13,6 +13,7 @@ lpb $4
   sub $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,7317 ; Binomial transform of Catalan numbers.
   mul $1,$0
   add $3,$1

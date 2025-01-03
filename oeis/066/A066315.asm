@@ -18,6 +18,7 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  add $0,1
   seq $0,6080 ; Number of rooted projective plane trees with n nodes.
   mul $0,$4
   add $1,$0

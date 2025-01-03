@@ -5,6 +5,7 @@
 sub $0,2
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,7921 ; Numbers that are not the difference of two primes.
   add $0,1
   mov $1,$0

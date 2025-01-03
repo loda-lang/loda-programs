@@ -6,6 +6,7 @@ seq $0,352491 ; n minus the Heinz number of the conjugate of the integer partiti
 add $0,1
 lpb $0
   mov $0,$1
+  add $1,1
   seq $1,5003 ; Number of rhyme schemes (see reference for precise definition).
 lpe
 mov $0,$1

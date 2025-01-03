@@ -8,6 +8,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   seq $3,253262 ; Expansion of (x + x^2 + x^3) / (1 - x + x^2 - x^3 + x^4) in powers of x.
   sub $3,1

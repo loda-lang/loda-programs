@@ -11,6 +11,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   div $2,2
+  add $2,1
   seq $2,7528 ; Primes of the form 6k-1.
   sub $2,3
   mov $0,1

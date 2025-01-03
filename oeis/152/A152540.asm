@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,7921 ; Numbers that are not the difference of two primes.
   sub $3,1
   add $3,$5

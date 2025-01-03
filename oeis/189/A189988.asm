@@ -12,6 +12,7 @@ lpb $2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mul $5,2
   mov $3,$1
+  add $3,1
   seq $3,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   add $3,1
   sub $3,$5

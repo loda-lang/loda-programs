@@ -6,6 +6,7 @@ mov $1,$0
 lpb $1
   trn $1,1
   mov $3,$1
+  add $3,1
   seq $3,7882 ; Number of lattice points inside circle of radius n is 4(a(n)+n)-3.
   add $2,$3
 lpe

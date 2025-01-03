@@ -9,9 +9,10 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  add $0,1
   mov $2,$0
+  add $2,2
   seq $2,6963 ; Number of planar embedded labeled trees with n nodes: (2*n-3)!/(n-1)! for n >= 2, a(1) = 1.
+  add $0,1
   mul $4,$2
 lpe
 mov $0,$4

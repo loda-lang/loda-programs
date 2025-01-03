@@ -14,6 +14,7 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
+  add $0,1
   seq $0,7435 ; Inverse Moebius transform of Fibonacci numbers 1,1,2,3,5,8,...
   mul $1,$0
   add $3,$1

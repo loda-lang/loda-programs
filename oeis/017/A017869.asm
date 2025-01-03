@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,10
     seq $7,5862 ; The coding-theoretic function A(n,14,10).
     equ $7,2
     mov $9,10

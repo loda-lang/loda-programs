@@ -17,6 +17,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
     equ $7,2
     equ $7,$8

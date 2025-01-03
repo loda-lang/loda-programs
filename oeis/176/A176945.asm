@@ -11,6 +11,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,8481 ; If n = Product (p_j^k_j) then a(n) = Sum partition(k_j).
   mov $6,2
   pow $6,$5

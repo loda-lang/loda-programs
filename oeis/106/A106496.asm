@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
   mul $1,$0
   add $3,$1

@@ -14,7 +14,6 @@ lpb $4
   bin $1,$0
   pow $0,$1
   mov $5,$0
-  sub $0,1
   seq $0,8472 ; Sum of the distinct primes dividing n.
   mul $0,$5
   mul $1,$0

@@ -6,6 +6,7 @@ add $0,1
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,8472 ; Sum of the distinct primes dividing n.
   add $0,1
   sub $0,$2

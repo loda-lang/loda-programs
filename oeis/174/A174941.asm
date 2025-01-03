@@ -18,6 +18,7 @@ lpb $4
   mov $5,$0
   add $5,1
   seq $5,7955 ; Product of divisors of n.
+  add $0,1
   seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mul $0,$5
   mul $1,$0

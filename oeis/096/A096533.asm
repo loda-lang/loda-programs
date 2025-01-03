@@ -10,6 +10,7 @@ lpb $4
   mov $1,$0
   sub $1,$4
   seq $1,72668 ; Numbers one less than composite numbers.
+  add $1,1
   seq $1,7956 ; Product of the proper divisors of n.
   dif $1,2
   pow $1,2

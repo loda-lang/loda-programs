@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,2,3,4,6,9,12,17,21
 
+#offset 8
+
+sub $0,8
 mov $2,$0
 lpb $0
   sub $2,5

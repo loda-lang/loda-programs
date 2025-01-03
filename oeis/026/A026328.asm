@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,5
   seq $0,5325 ; Column of Motzkin triangle.
   mov $4,$3
   mul $4,$0

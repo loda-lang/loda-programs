@@ -13,10 +13,11 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
     add $7,2
     div $7,3
-    cmp $7,$8
+    equ $7,$8
     sub $7,1
     mov $9,10
     add $9,$5

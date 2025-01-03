@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
 lpb $1
   mul $0,$1

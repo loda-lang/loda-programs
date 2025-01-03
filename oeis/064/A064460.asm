@@ -14,7 +14,6 @@ lpb $3
   sub $1,$3
   sub $1,1
   seq $1,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-  sub $1,1
   seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   pow $1,2
   add $2,$1

@@ -1,10 +1,12 @@
 ; A062007: a(n) = mu(n)*prime(n).
 ; Submitted by Jon Maiga
 ; 2,-3,-5,0,-11,13,-17,0,0,29,-31,0,-41,43,47,0,-59,0,-67,0,73,79,-83,0,0,101,0,0,-109,-113,-127,0,137,139,149,0,-157,163,167,0,-179,-181,-191,0,0,199,-211,0,0,0,233,0,-241,0,257,0,269,271,-277,0,-283,293,0,0,313,-317,-331,0,347,-349,-353,0,-367,373,0,0,389,-397,-401,0
-; Formula: a(n) = A008683(n)*A000040(A007913(n))
+; Formula: a(n) = A008683(n+1)*A000040(A007913(n+1))
 
 mov $1,$0
+add $1,1
 seq $1,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
 seq $1,40 ; The prime numbers.
+add $0,1
 seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
 mul $0,$1

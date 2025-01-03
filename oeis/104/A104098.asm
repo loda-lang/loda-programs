@@ -14,6 +14,7 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  add $0,1
   seq $0,8292 ; Triangle of Eulerian numbers T(n,k) (n >= 1, 1 <= k <= n) read by rows.
   mul $0,$4
   add $1,$0

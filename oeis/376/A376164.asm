@@ -24,7 +24,7 @@ lpb $4
   sub $9,$8
   add $9,3
   mov $5,$3
-  add $5,1
+  add $5,2
   seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   sub $5,$9
   gcd $5,2

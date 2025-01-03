@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1,1,1,2,2,6,17,79
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $4,1
   mul $5,$0

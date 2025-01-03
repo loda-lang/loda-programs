@@ -18,6 +18,7 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
+  add $1,1
   seq $1,7443 ; Binomial transform of primes.
   mul $3,$1
   dif $5,-1

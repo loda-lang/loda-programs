@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,6666 ; Number of halving steps to reach 1 in '3x+1' problem, or -1 if this never happens.
   mod $2,2
   sub $0,1

@@ -6,6 +6,7 @@ mov $1,1
 add $1,$0
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,3963 ; Fully multiplicative with a(p) = k if p is the k-th prime.
   mov $0,$2
   sub $0,1

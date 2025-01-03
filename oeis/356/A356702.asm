@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,7931 ; Numbers that contain only 1's and 2's. Nonempty binary strings of length n in lexicographic order.
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

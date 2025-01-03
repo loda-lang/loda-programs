@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,6577 ; Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
   seq $3,269501 ; Subsequence immediately following the instances of n in the sequence is n, n-1, ..., 1, n+1, n+2, ....
   equ $3,1

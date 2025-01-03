@@ -9,6 +9,7 @@ mov $2,1
 lpb $0
   mov $3,$0
   trn $3,1
+  add $3,1
   seq $3,7921 ; Numbers that are not the difference of two primes.
   add $3,2
   sub $0,1

@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,7491 ; Smallest prime > n^2.
   seq $3,80883 ; Distance of n to next square.
   mov $5,$3

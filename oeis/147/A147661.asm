@@ -5,4 +5,5 @@ lpb $0
   mod $0,2
   sub $0,1
 lpe
+add $0,1
 seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.

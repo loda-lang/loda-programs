@@ -7,6 +7,7 @@ add $2,1
 mov $3,$2
 add $2,1
 seq $2,1221 ; Number of distinct primes dividing n (also called omega(n)).
+add $3,1
 seq $3,8472 ; Sum of the distinct primes dividing n.
 gcd $3,$2
 mov $1,$2

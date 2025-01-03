@@ -9,6 +9,7 @@ lpb $3
   add $0,$3
   mov $5,$0
   max $5,0
+  add $5,1
   seq $5,8366 ; Smallest prime factor is >= 17.
   sub $0,1
   mov $2,$3

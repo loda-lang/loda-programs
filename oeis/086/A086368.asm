@@ -8,6 +8,7 @@ add $2,3
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   mov $3,$1
   seq $3,355928 ; Squarefree part of the sum of divisors of n.

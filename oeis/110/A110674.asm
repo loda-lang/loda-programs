@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,4216 ; a(n) = floor(log_10(n)).
   add $6,1
   mov $5,10

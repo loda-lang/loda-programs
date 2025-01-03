@@ -1,8 +1,9 @@
 ; A120438: Average of twin-prime pairs modulo 10 (least absolute residue).
 ; Submitted by zombie67 [MM]
 ; 4,-4,2,-2,0,2,0,2,2,-2,-2,0,0,2,-2,-2,0,0,2,2,-2,0,2,2,2,0,0,-2,2,0,0,2,-2,-2,2,0,2,0,2,2,2,0,-2,0,2,0,-2,2,2,-2,-2,0,-2,-2,2,-2,2,-2,2,0,-2,-2,2,-2,2,0,2,-2,-2,0,0,2,0,2,-2,-2,2,0,0,2
-; Formula: a(n) = 2*A117444(truncate(A006512(n)/2))
+; Formula: a(n) = 2*A117444(truncate(A006512(n+1)/2))
 
+add $0,1
 seq $0,6512 ; Greater of twin primes.
 div $0,2
 seq $0,117444 ; Period 5: Repeat [0, 1, 2, -2, -1].

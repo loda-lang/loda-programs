@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,7437 ; Inverse Moebius transform of triangular numbers.
 lpb $1
   mov $1,0

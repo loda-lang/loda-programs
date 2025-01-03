@@ -8,11 +8,12 @@ add $2,11
 lpb $2
   sub $2,1
   mov $4,$1
+  add $4,1
   seq $4,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mov $3,$1
   seq $3,137794 ; Characteristic function of numbers having no prime gaps in their factorization.
   mul $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

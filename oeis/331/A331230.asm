@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   div $5,3
   mov $3,$1
@@ -21,7 +22,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -11,6 +11,7 @@ lpb $3
   add $0,1
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,7921 ; Numbers that are not the difference of two primes.
   sub $0,1
   add $1,$0

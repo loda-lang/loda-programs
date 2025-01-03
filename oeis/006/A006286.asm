@@ -7,6 +7,7 @@
 sub $0,1
 mov $1,$0
 trn $1,2
+add $1,1
 seq $1,6285 ; Odd numbers not of form p + 2^k (de Polignac numbers).
 sub $1,1
 max $0,$1

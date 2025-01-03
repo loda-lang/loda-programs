@@ -7,6 +7,7 @@ mov $2,93
 lpb $2
   sub $2,3
   mov $3,$1
+  add $3,1
   seq $3,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
   mov $5,$0
   sub $0,$3

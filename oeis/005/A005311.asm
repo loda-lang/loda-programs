@@ -2,6 +2,9 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,2,4,7,11,16,22,27,35,43,54
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 lpb $0
   sub $0,1

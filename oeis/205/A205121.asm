@@ -13,6 +13,7 @@ lpb $2
   mov $3,$1
   seq $3,130328 ; Triangle of differences between powers of 2, read by rows.
   mul $3,2
+  add $3,1
   seq $3,6520 ; Partial sums of A006519.
   sub $3,1
   gcd $3,$0

@@ -11,6 +11,7 @@ lpb $2
   sub $0,$2
   mov $1,$0
   trn $0,1
+  add $0,1
   seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   mul $1,6
   add $1,$0

@@ -14,8 +14,9 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-    cmp $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
     mul $7,$$9

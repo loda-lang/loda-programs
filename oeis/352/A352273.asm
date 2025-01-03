@@ -8,15 +8,16 @@ pow $2,3
 lpb $2
   sub $2,6
   mov $3,$1
+  add $3,1
   seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   mod $3,6
   sub $3,3
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

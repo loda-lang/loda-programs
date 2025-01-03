@@ -8,6 +8,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,8472 ; Sum of the distinct primes dividing n.
   mov $3,$1
   add $3,1

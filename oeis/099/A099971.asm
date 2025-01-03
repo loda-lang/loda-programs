@@ -9,6 +9,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,4714 ; Positions of ones in binary expansion of the reciprocal of the golden ratio (0.618...).
   seq $0,79 ; Powers of 2: a(n) = 2^n.
   add $2,$0

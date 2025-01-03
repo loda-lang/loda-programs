@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,7932 ; Numbers that contain only 1's, 2's and 3's.
   sub $3,1
   mov $5,$3

@@ -7,6 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,2
   seq $5,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
   mov $3,$1
   sub $3,$5

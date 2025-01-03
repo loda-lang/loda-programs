@@ -14,6 +14,7 @@ lpb $3
   mov $2,$0
   mul $2,$1
   trn $2,1
+  add $2,1
   seq $2,8472 ; Sum of the distinct primes dividing n.
   mul $2,4
   add $4,$2

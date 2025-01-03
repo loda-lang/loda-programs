@@ -11,6 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,5917 ; Rhombic dodecahedral numbers: a(n) = n^4 - (n - 1)^4.
     mov $9,10
     add $9,$5

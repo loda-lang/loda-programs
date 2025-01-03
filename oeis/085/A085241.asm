@@ -8,10 +8,11 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  add $0,1
   mov $4,$0
+  add $4,2
   seq $4,6899 ; Numbers of the form 2^i or 3^j.
   mod $4,2
+  add $0,1
   mov $2,$3
   mul $2,$4
   add $1,$2

@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   max $3,2
+  add $3,1
   seq $3,6577 ; Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
   trn $3,$1
   neq $3,0

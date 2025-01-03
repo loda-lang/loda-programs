@@ -10,6 +10,7 @@ lpb $2
   add $6,2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $5,$1
+  add $5,2
   seq $5,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
   mul $5,$6
   mov $3,$1

@@ -19,7 +19,7 @@ lpb $2
   mov $8,$7
   sub $8,$9
   add $8,3
-  add $6,1
+  add $6,2
   seq $6,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   add $6,$8
   equ $6,0

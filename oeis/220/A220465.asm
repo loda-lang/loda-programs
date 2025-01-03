@@ -7,5 +7,6 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
+add $1,1
 seq $1,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
 mov $0,$1

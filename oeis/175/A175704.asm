@@ -17,6 +17,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,8472 ; Sum of the distinct primes dividing n.
     mov $9,10
     add $9,$5

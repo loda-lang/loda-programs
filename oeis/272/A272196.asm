@@ -7,7 +7,6 @@ mul $1,2
 add $0,1
 seq $0,40 ; The prime numbers.
 mov $2,$0
-sub $0,1
 seq $0,6571 ; Expansion of q*Product_{k>=1} (1-q^k)^2*(1-q^(11*k))^2.
 sub $2,$0
 mov $0,$2

@@ -11,6 +11,7 @@ lpb $0
   mov $5,$2
   add $5,1
   mov $6,$2
+  add $6,1
   seq $6,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   add $2,1
   pow $2,2

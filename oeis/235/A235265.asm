@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
+  add $3,1
   seq $3,5836 ; Numbers whose base-3 representation contains no 2.
   mov $5,$3
   mul $3,2

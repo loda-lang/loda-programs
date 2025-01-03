@@ -15,9 +15,10 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
   mov $5,$0
+  add $5,1
   seq $5,5328 ; Certain subgraphs of a directed graph.
+  sub $0,1
   mul $1,$5
   mul $3,2
   add $3,$1

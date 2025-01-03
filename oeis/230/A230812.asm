@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $7,$1
+  add $7,1
   seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mov $6,$1
   add $6,1
@@ -25,7 +26,7 @@ lpb $2
   add $1,$5
   sub $2,$0
   mov $4,$0
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1
 add $0,1

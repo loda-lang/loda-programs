@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,8364 ; 11-rough numbers: not divisible by 2, 3, 5 or 7.
   mov $2,$3
   mul $2,$0

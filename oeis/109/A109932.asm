@@ -6,6 +6,5 @@ add $0,1
 mov $1,$0
 lpb $1
   sub $1,1
-  sub $0,1
   seq $0,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
 lpe

@@ -8,6 +8,7 @@ lpb $2
   mov $1,$3
   bin $1,$3
   mov $0,$3
+  add $0,1
   seq $0,8472 ; Sum of the distinct primes dividing n.
   mul $1,$0
   max $3,1

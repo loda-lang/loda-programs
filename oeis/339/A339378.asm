@@ -13,5 +13,4 @@ add $0,1
 seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
 gcd $1,$0
 mov $0,$1
-sub $0,1
 seq $0,8475 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).

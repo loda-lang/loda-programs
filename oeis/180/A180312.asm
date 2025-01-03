@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,8442 ; Expansion of Jacobi theta constant (theta_2(2z))^2/4.
   sub $4,1
   add $1,$2

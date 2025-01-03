@@ -32,6 +32,7 @@ lpb $2
     mov $6,$1
     add $6,$9
     bin $6,$1
+    add $1,1
     seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
     mul $1,7
     mul $6,$1

@@ -11,6 +11,7 @@ lpb $3
   mov $2,$0
   max $2,0
   div $2,2
+  add $2,1
   seq $2,7317 ; Binomial transform of Catalan numbers.
   add $1,$2
 lpe

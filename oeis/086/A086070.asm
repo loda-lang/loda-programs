@@ -17,6 +17,7 @@ lpb $4
       sub $7,1
       mov $0,$5
       sub $0,$7
+      add $0,1
       seq $0,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
       mov $3,$0
       seq $3,53208 ; Row sums of A053207.

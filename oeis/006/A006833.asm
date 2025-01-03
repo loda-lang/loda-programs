@@ -1,8 +1,11 @@
 ; A006833: Decimal expansion of neutron-to-electron mass ratio.
 ; Submitted by Jamie Morken(l1)
 ; 1,8,3,8,6,8,3,6,6,2
-; Formula: a(n) = ((3*floor((n^2+4*binomial(2*n,n))/4))^2+2)%10
+; Formula: a(n) = ((3*truncate(((n-4)^2+4*binomial(2*n-8,n-4))/4))^2+2)%10
 
+#offset 4
+
+sub $0,4
 mov $1,$0
 mul $0,2
 bin $0,$1

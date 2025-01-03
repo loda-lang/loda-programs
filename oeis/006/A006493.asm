@@ -14,6 +14,7 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
+  add $0,3
   seq $0,6492 ; Generalized Lucas numbers.
   add $3,$0
   add $4,$3

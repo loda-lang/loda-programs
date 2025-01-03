@@ -2,7 +2,8 @@
 ; Submitted by amazing
 ; 1,8,25,59,104,187,292,426,603
 
-add $0,1
+#offset 1
+
 pow $0,3
 mov $2,$0
 mov $3,-1

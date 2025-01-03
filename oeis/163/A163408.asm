@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,3
+  add $3,4
   seq $3,8475 ; If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0

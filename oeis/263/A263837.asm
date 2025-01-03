@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,5101 ; Abundant numbers (sum of divisors of m exceeds 2m).
   sub $3,1
   add $0,1

@@ -10,6 +10,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $3,$4
+    add $3,1
     seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
     add $1,$3
     trn $4,$0
