@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,20333 ; Numbers whose base-5 representation is the juxtaposition of two identical strings.
   mov $5,$3
   add $3,1

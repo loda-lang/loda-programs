@@ -12,6 +12,7 @@ lpb $2
   add $1,2
   mul $3,2
   trn $3,1
+  add $3,1
   seq $3,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
   sub $3,22
   div $3,2

@@ -5,7 +5,6 @@
 add $0,1
 mov $1,1
 mov $4,$0
-sub $0,1
 seq $0,24583 ; a(n) = floor(n/{n*Pi}), where { } = fractional part.
 lpb $0
   sub $0,1

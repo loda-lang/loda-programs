@@ -5,6 +5,7 @@ mov $2,1
 mov $1,$0
 lpb $1
   mov $2,$1
+  add $2,1
   seq $2,28233 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
   div $1,$2
 lpe

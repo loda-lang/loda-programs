@@ -9,6 +9,7 @@ lpb $2
   mov $5,$1
   add $5,1
   mov $7,$1
+  add $7,1
   seq $7,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
   mov $6,$7
   gcd $6,$5

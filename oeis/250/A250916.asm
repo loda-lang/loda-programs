@@ -12,7 +12,7 @@ lpb $0
     sub $4,1
     mul $6,$5
     mov $7,$4
-    add $7,1
+    add $7,3
     seq $7,24483 ; a(n) = binomial(2*n, n) mod binomial(2*n-2, n-1).
     mov $9,10
     add $9,$5

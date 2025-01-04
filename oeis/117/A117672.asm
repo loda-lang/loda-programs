@@ -8,6 +8,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,26314 ; a(n) = n-th nonnegative integer k satisfying |cos(k)*cos(k+2)| > (cos(k+1))^2.
   sub $3,1
   add $0,1

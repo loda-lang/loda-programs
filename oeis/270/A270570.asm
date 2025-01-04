@@ -4,5 +4,4 @@
 
 add $0,2
 dif $0,2
-sub $0,1
 seq $0,25586 ; Largest value in '3x+1' trajectory of n.

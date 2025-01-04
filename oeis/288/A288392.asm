@@ -13,6 +13,7 @@ lpb $0
     trn $4,1
     pow $10,$7
     mov $7,$4
+    add $7,1
     seq $7,27848 ; a(n) = Sum_{ d|n } sigma(n/d)*d^4.
     mov $9,10
     add $9,$5

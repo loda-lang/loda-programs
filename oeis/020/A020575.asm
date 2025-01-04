@@ -2,7 +2,8 @@
 ; Submitted by Jave808
 ; 3,5,7,11,13,19,23,47
 
-add $0,1
+#offset 1
+
 mov $1,6
 mul $1,$0
 mul $1,5

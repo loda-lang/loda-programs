@@ -7,4 +7,5 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
+add $0,1
 seq $0,23890 ; Sum of the nonprime divisors of n.

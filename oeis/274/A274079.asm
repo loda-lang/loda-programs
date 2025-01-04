@@ -8,6 +8,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $1,$2
+  add $1,1
   seq $1,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
   sub $0,$1
   add $2,1

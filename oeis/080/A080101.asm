@@ -14,6 +14,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,27883 ; Positions of primes in sequence (A246655) of primes and prime powers {p^i, i >= 1}.
     mov $4,$2
     mov $6,$7

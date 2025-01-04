@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,20337 ; Numbers whose base-9 representation is the juxtaposition of two identical strings.
   mov $5,$3
   add $3,1

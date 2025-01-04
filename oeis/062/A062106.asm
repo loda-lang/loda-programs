@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,25565 ; a(n) = T(n,n-1), where T is array defined in A025564.
   sub $0,1
   trn $0,$1

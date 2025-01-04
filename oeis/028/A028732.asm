@@ -2,8 +2,11 @@
 ; Submitted by Dingo
 ; 2,3,8,10,12,13,14,15,18
 
+#offset 1
+
 mov $2,$0
-add $2,3
+sub $0,1
+add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
@@ -16,7 +19,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

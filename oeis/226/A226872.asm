@@ -13,17 +13,16 @@ lpb $3
   mov $4,$2
   add $4,1
   mov $7,$4
-  sub $4,1
   seq $4,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
   mov $6,$4
   gcd $6,$7
   mov $4,$6
-  cmp $4,2
+  equ $4,2
   sub $0,$4
   add $2,2
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

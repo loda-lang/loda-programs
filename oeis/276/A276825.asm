@@ -9,10 +9,11 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $6,$2
+  add $2,1
   seq $2,23890 ; Sum of the nonprime divisors of n.
   sub $2,$6
   trn $2,2
-  cmp $2,0
+  equ $2,0
   add $4,$5
   add $1,$2
   max $1,2

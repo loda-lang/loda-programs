@@ -11,6 +11,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,22300 ; The sequence a of 1's and 2's starting with (1,1,2,1) such that a(n) is the length of the (n+2)nd run of a.
   equ $3,2
   sub $0,$3

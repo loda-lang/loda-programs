@@ -10,6 +10,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,24469 ; a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k), where k = [ (n+1)/2 ], s = (Lucas numbers).
   mov $4,$3
   mul $4,$0

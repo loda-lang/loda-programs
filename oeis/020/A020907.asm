@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,20906 ; Triangle where n-th row is the first n terms of the sequence in reverse order, starting with a(1) = 1 and a(2) = 2.
   sub $0,$3
   add $0,1

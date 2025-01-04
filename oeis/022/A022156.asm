@@ -9,6 +9,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,20991 ; Largest value of k for which Golay-Rudin-Shapiro sequence A020986(k) = n.
   add $1,$2
   mov $2,$0

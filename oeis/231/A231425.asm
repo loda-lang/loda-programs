@@ -12,5 +12,4 @@ add $0,1
 lpb $0
   gcd $0,$1
 lpe
-sub $0,1
 seq $0,23900 ; Dirichlet inverse of Euler totient function (A000010).

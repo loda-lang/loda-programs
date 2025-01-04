@@ -2,6 +2,9 @@
 ; Submitted by Ragnarsdad
 ; 3,6,11,12,13,15,17,21,22,23,24,26,27,29,30
 
+#offset 1
+
+sub $0,1
 mov $4,3
 mov $1,3
 mov $2,$0
@@ -16,7 +19,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

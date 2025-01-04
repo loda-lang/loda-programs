@@ -4,6 +4,7 @@
 mov $1,$0
 lpb $1
   mov $3,$1
+  add $3,1
   seq $3,28233 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
   div $1,$3
   add $2,$3

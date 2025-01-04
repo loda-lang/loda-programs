@@ -8,6 +8,7 @@ lpb $0
   mul $0,2
   mov $1,20
 lpe
+add $0,1
 seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
 sub $0,1
 div $0,3

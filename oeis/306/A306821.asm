@@ -5,6 +5,7 @@
 mov $1,3
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
   mov $1,$0
   mov $0,1

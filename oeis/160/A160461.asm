@@ -13,10 +13,10 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
   mov $5,0
+  sub $0,1
   lpb $0
     add $5,1
     sub $0,$5

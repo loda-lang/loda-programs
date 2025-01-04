@@ -4,7 +4,7 @@
 
 mov $1,3
 pow $1,$0
-cmp $0,1
+equ $0,1
 mul $1,8
 sub $1,$0
 div $1,6

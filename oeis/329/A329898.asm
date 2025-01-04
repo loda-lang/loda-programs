@@ -7,11 +7,12 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,25487 ; Least integer of each prime signature A124832; also products of primorial numbers A002110.
   sub $3,1
   seq $3,319626 ; Primorial deflation of n (numerator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the numerator of g(n).
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

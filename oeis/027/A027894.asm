@@ -2,7 +2,8 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,3,9,11,33,99,101,303,909,1111,3333,9999
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2

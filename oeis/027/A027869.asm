@@ -6,7 +6,7 @@ seq $0,52686 ; Expansion of e.g.f. x^2*(1+3*x-3*x^2)/(1-x).
 lpb $0
   mov $2,$0
   mod $2,10
-  cmp $2,0
+  equ $2,0
   div $0,10
   add $1,$2
 lpe

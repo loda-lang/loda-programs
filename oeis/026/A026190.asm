@@ -2,12 +2,16 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,1,4,6,7,3,10,12,13,5,16,18,19,21,22,8,25,9,28,30,31,11,34,36,37,39,40,14,43,15,46,48,49,17,52,54,55,57,58,20,61,63,64,66,67,23,70,24,73,75,76,26,79,27,82,84,85,29,88,90,91,93,94
 
+#offset 1
+
 mov $2,$0
-add $2,6
+sub $0,1
+add $2,5
 pow $2,3
 lpb $2
   sub $2,88
   mov $3,$1
+  add $3,1
   seq $3,26142 ; Lexicographically earliest permutation of the positive integers such that for n >= 2, |a(n)-n| = [(a(n)+1)/2].
   mov $5,$3
   mul $3,338

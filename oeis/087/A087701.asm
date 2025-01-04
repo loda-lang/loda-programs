@@ -11,6 +11,7 @@ mov $0,$1
 lpb $0
   div $0,2
   trn $0,1
+  add $0,1
   seq $0,25586 ; Largest value in '3x+1' trajectory of n.
   mov $1,$0
   div $0,$0

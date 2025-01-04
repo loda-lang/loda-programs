@@ -7,6 +7,7 @@ mov $3,$0
 lpb $3
   sub $3,1
   mov $2,$1
+  add $2,1
   seq $2,26002 ; a(n) = T(n,n+2), where T = Delannoy triangle (A008288).
   add $4,$2
   sub $1,1

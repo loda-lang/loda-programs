@@ -6,11 +6,11 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,20654 ; Lexicographically earliest infinite increasing sequence of nonnegative numbers containing no 5-term arithmetic progression.
   add $0,2
-  add $1,1
+  add $1,2
   add $2,$3
   sub $2,$0
 lpe

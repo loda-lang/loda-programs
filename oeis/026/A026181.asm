@@ -17,6 +17,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,26232 ; a(n) = (1/3)*(s(n) + 1), where s = A026231.
     mov $3,0
     mov $4,$2

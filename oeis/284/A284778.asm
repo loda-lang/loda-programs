@@ -9,14 +9,14 @@ lpb $0
   sub $0,1
   mov $3,$0
   max $3,0
+  add $3,2
   seq $3,26107 ; Second differences of Motzkin numbers (A001006).
   sub $0,1
   add $2,$3
 lpe
+neq $1,0
 mov $0,$2
 mul $0,2
 add $0,2
-cmp $1,0
-cmp $1,0
 mul $0,$1
 div $0,2

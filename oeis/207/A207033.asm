@@ -16,12 +16,14 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
+  add $4,1
   seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
   mov $5,0
   lpb $0
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,23645 ; a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
   mul $0,$4
   add $1,$0

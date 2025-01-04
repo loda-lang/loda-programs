@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,16909 ; Expansion of 1/((1-3x)(1-4x)(1-9x)).
+  seq $0,16909 ; Expansion of 1/((1-3*x)*(1-4*x)*(1-9*x)).
   sub $0,$1
   mul $1,11
   add $1,$0

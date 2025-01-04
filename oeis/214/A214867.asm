@@ -6,6 +6,7 @@ mov $1,$0
 mul $0,2
 equ $2,$0
 trn $0,3
+add $0,1
 seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
 sub $0,$2
 seq $1,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.

@@ -2,6 +2,9 @@
 ; Submitted by Thibault Gauthier, Josef Urban (NMT)
 ; 0,1,2,3,4,5,8,9,10,11,15,16,17,22,23,29,51,52,53,58,59,65,94,95,101,137,310,311,317,353,569,1865
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,4
 lpb $2

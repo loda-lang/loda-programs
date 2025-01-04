@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,29,43,115,124,198,431,719,979,1496
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 add $2,3

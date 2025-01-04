@@ -9,6 +9,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,26465 ; Length of n-th run of identical symbols in the Thue-Morse sequence A010060 (or A001285).
   mul $1,$2
   mul $3,$2

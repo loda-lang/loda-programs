@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,25487 ; Least integer of each prime signature A124832; also products of primorial numbers A002110.
   sub $3,1
   add $0,1

@@ -10,12 +10,12 @@ lpb $0
   mov $3,$0
   lpb $3
     mov $6,$2
-    cmp $6,0
+    equ $6,0
     mul $1,10
     add $2,$6
     mov $4,$0
     mod $4,$2
-    cmp $4,0
+    equ $4,0
     add $2,1
     sub $3,$4
   lpe

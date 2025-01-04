@@ -8,6 +8,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,27750 ; Triangle read by rows in which row n lists the divisors of n.
   mov $5,$3
   add $1,1

@@ -11,6 +11,7 @@ lpb $2
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,25565 ; a(n) = T(n,n-1), where T is array defined in A025564.
   mov $0,$4
   mov $1,$2

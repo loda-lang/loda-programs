@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,23414 ; If any power of 2 ends with k 7's and 8's, they must be the first k terms of this sequence in reverse order.
   sub $0,1
   add $1,$2

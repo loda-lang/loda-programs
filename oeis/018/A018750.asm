@@ -7,7 +7,7 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,13
+  mov $3,14
   seq $3,25088 ; a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (Fibonacci numbers), t = (primes).
   add $4,1
   add $5,1

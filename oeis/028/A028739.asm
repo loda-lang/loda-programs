@@ -2,8 +2,10 @@
 ; Submitted by Jamie Morken(s1)
 ; 2,5,6,7,8,11,15,18,19,20,21,24
 
+#offset 1
+
 mov $4,$0
-add $4,1
+sub $0,1
 lpb $4
   sub $4,1
   mov $0,0
@@ -22,7 +24,7 @@ lpb $4
   lpe
   mod $2,10
   mov $6,$2
-  cmp $6,0
+  equ $6,0
   add $2,$6
   div $1,$2
   mov $0,$1

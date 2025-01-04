@@ -2,9 +2,10 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,9,11,15,19,21,27,33,39,43,45,51,55,57,59
 
+#offset 1
+
 mov $1,1
 mov $2,2
-add $0,1
 lpb $0
   sub $0,1
   add $4,$3

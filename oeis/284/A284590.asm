@@ -9,9 +9,9 @@ lpb $2
   sub $2,1
   mov $4,$3
   add $1,$2
-  sub $1,1
   mov $3,$1
   seq $3,26367 ; a(n) = least k such that s(k) = n, where s = A026366.
+  sub $1,1
 lpe
 mov $1,$4
 mul $1,2

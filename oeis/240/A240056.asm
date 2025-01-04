@@ -11,6 +11,7 @@ lpb $5
   mov $4,$0
   add $4,$5
   max $4,0
+  add $4,1
   seq $4,24787 ; Number of 3's in all partitions of n.
   mov $2,$5
   mul $2,$4

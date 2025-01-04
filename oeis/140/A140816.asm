@@ -7,6 +7,7 @@ lpb $0
 lpe
 mul $0,2
 trn $0,1
+add $0,1
 seq $0,27760 ; Denominator of Sum_{p prime, p-1 divides n} 1/p.
 sub $0,2
 div $0,3

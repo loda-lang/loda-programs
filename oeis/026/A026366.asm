@@ -9,6 +9,7 @@ lpb $0
   add $0,$3
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,26367 ; a(n) = least k such that s(k) = n, where s = A026366.
   sub $0,$3
   add $1,1

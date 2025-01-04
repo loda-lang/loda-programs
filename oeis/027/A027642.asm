@@ -33,7 +33,7 @@ add $1,1
 mul $1,2
 sub $1,$4
 mov $2,$0
-cmp $2,1
+equ $2,1
 add $2,$1
 mov $0,$2
 add $0,1

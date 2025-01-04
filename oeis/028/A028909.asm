@@ -14,7 +14,7 @@ lpb $3
   lpb $4
     mov $6,$4
     mod $6,10
-    cmp $6,$7
+    equ $6,$7
     div $4,10
     add $5,$6
   lpe

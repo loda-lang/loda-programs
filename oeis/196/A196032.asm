@@ -6,12 +6,12 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,23705 ; Numbers with no 0's in base-4 expansion.
   sub $3,1
   add $0,3
-  add $1,1
+  add $1,3
   add $2,$3
   sub $2,$0
 lpe

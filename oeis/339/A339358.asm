@@ -16,6 +16,7 @@ lpb $3
     lpb $1
       mov $1,1
       div $0,2
+      add $0,2
       seq $0,27790 ; a(n) = 10*(n+1)*binomial(n+3,5)/3.
       add $5,$0
       mul $0,0

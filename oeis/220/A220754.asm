@@ -6,6 +6,7 @@
 
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,27837 ; Number of subgroups of index n in free group of rank 3.
 lpb $1
   mul $0,$1

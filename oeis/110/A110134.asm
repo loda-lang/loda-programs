@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,6
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,24363 ; Number of primitive Pythagorean triangles with side n.
   div $3,2
   neq $3,0

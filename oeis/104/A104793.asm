@@ -7,5 +7,6 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
+add $1,1
 seq $1,23537 ; a(n) = Lucas(n+4) - (3*n+7).
 mov $0,$1

@@ -12,6 +12,7 @@ lpb $3
   mov $0,$5
   add $0,1
   add $0,$3
+  add $0,2
   seq $0,26269 ; a(n) = number of (s(0), s(1), ..., s(n)) such that every s(i) is a nonnegative integer, s(0) = 0 = s(n), s(1) = 1, |s(i) - s(i-1)| <= 1 for i >= 2, |s(2) - s(1)| = 1, |s(3) - s(2)| = 1 if s(2) = 1. Also a(n) = T(n,n) and a(n) = Sum{T(k,k-1)}, k = 1,2,...,n, where T is array in A026268.
   sub $0,1
   mov $2,$3

@@ -10,7 +10,6 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
-  sub $0,1
   seq $0,23900 ; Dirichlet inverse of Euler totient function (A000010).
   add $3,$0
 lpe

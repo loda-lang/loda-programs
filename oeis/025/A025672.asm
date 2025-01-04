@@ -1,11 +1,13 @@
 ; A025672: Exponent of 8 (value of j) in n-th number of form 3^i*8^j.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,1,0,1,0,2,1,0,2,1,0,3,2,1,0,3,2,1,0,4,3,2,1,0,4,3,2,1,0,5,4,3,2,1,0,5,4,3,2,1,0,6,5,4,3,2,1,0,6,5,4,3,2,1,0,7,6,5,4,3,2,1,0,7,6,5,4,3,2,1,0,8,7,6,5,4,3,2,1
-; Formula: a(n) = truncate((-A167268(n+1)*(A264668(n)-1))/4)
+; Formula: a(n) = truncate((-A167268(n)*(A264668(n-1)-1))/4)
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,167268 ; Janet's sequence: Number of elements for each successively filled electronic subshell of an atom.
+sub $0,1
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 mul $1,$0

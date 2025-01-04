@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,25086 ; a(n) = s(1)*t(n) + s(2)*t(n-1) + ... + s(k)*t(n-k+1), where k = floor(n/2), s = A000045, t = A023533.
   sub $3,1
   add $0,10

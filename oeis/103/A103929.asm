@@ -13,9 +13,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,27293 ; Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
+  sub $0,1
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   seq $0,8639 ; Number of partitions of n into at most 10 parts.
   mul $0,$4

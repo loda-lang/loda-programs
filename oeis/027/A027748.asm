@@ -2,12 +2,16 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,2,5,2,3,7,2,3,2,5,11,2,3,13,2,7,3,5,2,17,2,3,19,2,5,3,7,2,11,23,2,3,5,2,13,3,2,7,29,2,3,5,31,2,3,11,2,17,5,7,2,3,37,2,19,3,13,2,5,41,2,3,7,43,2,11,3,5,2,23,47,2,3,7,2,5,3,17
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 sub $0,1
 add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,27750 ; Triangle read by rows in which row n lists the divisors of n.
   sub $3,1
   mov $5,$3

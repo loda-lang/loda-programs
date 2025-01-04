@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,27749 ; Take the list 1,2,3,4,... and replace each n with all d > 1 that divide n.
   bin $0,$3
   gcd $1,$2

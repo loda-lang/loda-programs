@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
+  add $3,1
   seq $3,20654 ; Lexicographically earliest infinite increasing sequence of nonnegative numbers containing no 5-term arithmetic progression.
   mov $5,$3
   mul $3,2

@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,28260 ; Numbers with an even number of prime divisors (counted with multiplicity); numbers k such that the Liouville function lambda(k) (A008836) is positive.
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

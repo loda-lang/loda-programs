@@ -4,6 +4,7 @@
 
 mov $2,$0
 add $2,1
+add $0,1
 seq $0,23900 ; Dirichlet inverse of Euler totient function (A000010).
 mov $1,$0
 gcd $1,$2

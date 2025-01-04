@@ -8,7 +8,6 @@ add $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  sub $3,1
   seq $3,27961 ; a(n) = Lucas(n+2) - 3.
   mod $3,$1
   min $3,1

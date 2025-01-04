@@ -18,7 +18,7 @@ lpb $4
   mul $5,2
   bin $5,$0
   div $5,$6
-  add $0,1
+  add $0,2
   seq $0,25565 ; a(n) = T(n,n-1), where T is array defined in A025564.
   div $0,2
   mul $0,$5

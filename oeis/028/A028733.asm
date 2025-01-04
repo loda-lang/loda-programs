@@ -2,6 +2,9 @@
 ; Submitted by Supericent
 ; 2,3,6,7,8,10,11,12,13,14,15,17,18,19
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 mov $2,$0

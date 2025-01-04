@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,23688 ; Numbers with exactly 6 ones in binary expansion.
   add $3,1
   seq $3,1202 ; a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
