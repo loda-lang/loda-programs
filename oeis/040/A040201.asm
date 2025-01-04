@@ -1,14 +1,24 @@
 ; A040201: Continued fraction for sqrt(216).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Science United
 ; 14,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1,2,3,2,1,28,1
-; Formula: a(n) = 8*truncate((truncate((truncate((4*A047249(A010126(n))-12)/5)*gcd(n,2)+gcd(n,2)-1)/2)+1)/6)+truncate((truncate((4*A047249(A010126(n))-12)/5)*gcd(n,2)+gcd(n,2)-1)/2)+1
 
 mov $3,$0
 gcd $3,2
+mov $4,6
 mov $2,$0
-seq $2,10126 ; Continued fraction for sqrt(22).
-seq $2,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
-sub $2,3
+lpb $2
+  gcd $4,$2
+  mul $4,4
+  div $4,3
+  add $4,2
+  mov $2,0
+lpe
+mov $2,$4
+sub $2,2
+mov $5,$2
+div $5,3
+mul $5,3
+add $2,$5
 mul $2,4
 div $2,5
 mul $2,$3

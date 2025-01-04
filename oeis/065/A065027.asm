@@ -7,6 +7,7 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,214046 ; Least m>0 such that n! <= m^n.
   add $1,1
   add $2,$3

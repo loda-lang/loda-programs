@@ -1,7 +1,22 @@
 ; A356058: a(n) = A001952(A137803(n)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 3,10,17,23,30,37,44,51,58,64,71,75,81,88,95,102,109,116,122,129,136,143,150,153,160,167,174,180,187,194,201,208,215,221,225,232,238,245,252,259,266,273,279,286,293,300,303,310,317,324,331,338,344,351,358
-; Formula: a(n) = A001952(A137803(n))
+; Formula: a(n) = 2*max(0,truncate((sqrtint(2*(2*n)^2)+n)/2))+truncate(sqrtint(8*truncate((sqrtint(2*(2*n)^2)+n)/2)^2)/2)
 
-seq $0,137803 ; a(n) = floor(n*(sqrt(2) + 1/2)).
-seq $0,1952 ; A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).
+#offset 1
+
+mov $3,$0
+mul $3,2
+pow $3,2
+mul $3,2
+mov $2,$3
+nrt $2,2
+add $0,$2
+div $0,2
+max $1,$0
+mul $1,2
+pow $0,2
+mul $0,8
+nrt $0,2
+div $0,2
+add $0,$1

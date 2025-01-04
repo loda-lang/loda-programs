@@ -2,7 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,1,1,2,1,4,1,4,3,6
 
-sub $0,2
+#offset 1
+
+sub $0,3
 mov $1,$0
 pow $0,2
 dif $0,3

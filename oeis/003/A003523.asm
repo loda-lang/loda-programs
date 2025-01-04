@@ -7,6 +7,7 @@
 mov $2,$0
 pow $2,4
 lpb $2
+  add $3,1
   seq $3,126654 ; A 3 x 3 magic square.
   pow $3,2
   sub $3,1

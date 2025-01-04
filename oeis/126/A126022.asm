@@ -13,7 +13,7 @@ lpb $3
   mov $7,2
   lpb $7
     mov $7,0
-    cmp $1,1
+    equ $1,1
     sub $0,1
     lpb $0
       mov $2,$1
