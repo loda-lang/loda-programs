@@ -13,8 +13,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mul $0,4
+  sub $0,3
   seq $0,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
   mul $0,4
   add $1,$0

@@ -19,7 +19,9 @@ lpb $3
   seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,1021 ; Powers of 12.
+  mov $6,12
+  pow $6,$0
+  mov $0,$6
   mul $0,$5
   add $2,$0
 lpe

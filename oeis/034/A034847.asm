@@ -11,6 +11,7 @@ add $0,5
 mov $1,6
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,34693 ; Smallest k such that k*n+1 is prime.
   equ $3,4
   sub $0,$3

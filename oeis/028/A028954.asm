@@ -11,6 +11,7 @@ lpb $2
   sub $2,1
   add $2,$4
   mov $3,$1
+  add $3,1
   seq $3,35179 ; a(n) = Sum_{d|n} Kronecker(-11, d).
   min $3,1
   sub $0,$3

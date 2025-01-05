@@ -8,7 +8,7 @@ pow $2,3
 lpb $2
   sub $2,24
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,34963 ; Sums of four consecutive primes.
   div $3,2
   mov $5,$3

@@ -10,13 +10,14 @@ lpb $2
   seq $3,139902 ; Primes of the form 16x^2+16xy+19y^2.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35162 ; Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

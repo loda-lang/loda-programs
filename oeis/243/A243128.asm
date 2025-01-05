@@ -12,6 +12,7 @@ lpb $2
   mov $6,$1
   seq $6,48250 ; Sum of the squarefree divisors of n.
   mov $3,$1
+  add $3,1
   seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   add $3,$6
   div $3,2
@@ -24,7 +25,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

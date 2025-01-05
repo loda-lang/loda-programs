@@ -15,6 +15,7 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,247453 ; T(n,k) = binomial(n,k)*A000111(n-k)*(-1)^(n-k), 0 <= k <= n.
+  add $0,1
   seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
   mul $0,$4
   mul $1,-1

@@ -7,6 +7,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,39725 ; Even abundant numbers divided by 2.
   mov $3,$6
   mul $3,2

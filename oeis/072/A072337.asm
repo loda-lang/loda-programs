@@ -4,11 +4,12 @@
 
 sub $0,1
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $0,$2
 mov $1,3
 div $1,$0
 max $0,0
+add $0,1
 seq $0,32170 ; "CHK" (necklace, identity, unlabeled) transform of 1, 2, 3, 4, ...
 max $1,$0
 mov $0,$1

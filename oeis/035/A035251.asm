@@ -22,15 +22,14 @@ lpb $2
     mul $3,2
     sub $3,1
     mul $6,$7
-    cmp $6,$5
+    equ $6,$5
     mul $6,$3
     sub $5,$7
     mov $3,$5
     sub $4,$6
   lpe
   mov $3,$4
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

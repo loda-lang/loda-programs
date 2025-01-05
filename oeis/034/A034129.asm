@@ -1,8 +1,11 @@
 ; A034129: Decimal part of cube root of a(n) starts with 3: first term of runs.
 ; Submitted by Simon Strandgaard
 ; 13,36,80,149,251,390,572,805,1093,1443,1861,2353,2925,3582,4331,5178,6129,7190,8366,9664,11090,12650,14349,16195,18192,20347,22666,25154,27819,30665,33699,36927,40354,43987,47833,51896,56182,60699,65451
-; Formula: a(n) = truncate(((10*n+23)^3+min(n,0))/1000)+1
+; Formula: a(n) = truncate(((10*n+13)^3+min(n-1,0))/1000)+1
 
+#offset 1
+
+sub $0,1
 mov $3,10
 mul $3,$0
 mov $2,17

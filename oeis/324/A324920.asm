@@ -5,6 +5,7 @@
 lpb $0
   trn $0,1
   mov $3,$0
+  add $0,1
   seq $0,33677 ; Smallest divisor of n >= sqrt(n).
   div $3,$0
   sub $3,$0

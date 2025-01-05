@@ -12,6 +12,7 @@ lpb $2
   mod $5,2
   mov $3,$1
   pow $3,$5
+  add $3,1
   seq $3,35226 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = 44.
   mul $3,$5
   min $3,1

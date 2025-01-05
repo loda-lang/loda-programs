@@ -12,6 +12,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,4
+  add $2,1
   seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
   mul $2,4
   add $4,1

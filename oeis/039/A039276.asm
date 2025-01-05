@@ -21,12 +21,12 @@ lpb $2
   max $3,$1
   pow $5,2
   sub $5,7
-  cmp $5,2
+  equ $5,2
   sub $0,$5
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   sub $5,2
   mul $5,10
   mul $2,$4

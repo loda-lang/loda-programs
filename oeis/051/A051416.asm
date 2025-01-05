@@ -7,6 +7,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,29581 ; Numbers in which all digits are composite.
   sub $3,1
   mov $5,$3

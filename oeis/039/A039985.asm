@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,39983 ; An example of a d-perfect sequence.
   add $0,2
   max $0,4

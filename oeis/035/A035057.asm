@@ -9,12 +9,12 @@ lpb $2
   sub $2,7
   mov $3,$1
   seq $3,268643 ; Number of 1's in decimal representation of n.
-  cmp $3,0
+  equ $3,0
   add $5,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $1,2
   mul $2,$4

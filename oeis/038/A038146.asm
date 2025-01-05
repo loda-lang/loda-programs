@@ -2,7 +2,9 @@
 ; Submitted by Jamie Morken(w1)
 ; 0,0,0,0,0,0,3,36,342,2736
 
-sub $0,6
+#offset 1
+
+sub $0,7
 mov $4,$0
 mul $4,5
 add $0,1

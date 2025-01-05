@@ -15,6 +15,7 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,53121 ; Catalan triangle (with 0's) read by rows.
+  add $0,1
   seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
   mul $0,$4
   add $1,$0

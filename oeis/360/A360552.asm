@@ -9,6 +9,7 @@ lpb $2
   add $3,1
   mov $5,$3
   gcd $3,2
+  add $5,1
   seq $5,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   sub $5,2
   mul $5,$3

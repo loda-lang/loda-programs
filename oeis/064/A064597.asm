@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $6,$3
+  add $6,1
   seq $6,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   mov $5,$3
   add $5,1

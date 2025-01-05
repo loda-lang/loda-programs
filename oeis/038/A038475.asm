@@ -5,8 +5,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 seq $0,14311 ; Numbers with exactly 3 ones in binary expansion.
 seq $0,1196 ; Double-bitters: only even length runs in binary expansion.
 div $0,3

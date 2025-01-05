@@ -19,7 +19,7 @@ lpb $2
     sub $4,1
   lpe
   add $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,2
   sub $2,$0

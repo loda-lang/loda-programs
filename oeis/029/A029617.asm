@@ -7,17 +7,18 @@ lpb $2
   sub $2,16
   sub $2,$1
   mov $3,$1
+  add $3,1
   seq $3,29615 ; Numbers to the right of the central elements of the (2,3)-Pascal triangle A029600 that are different from 3.
   mov $5,$3
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

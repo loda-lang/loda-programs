@@ -8,6 +8,7 @@ lpb $3
   mov $0,$2
   sub $0,$3
   lpb $0
+    add $0,1
     seq $0,38502 ; Remove 3's from n.
     mul $0,2
     div $0,3

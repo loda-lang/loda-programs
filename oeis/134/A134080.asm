@@ -10,7 +10,6 @@ lpb $3
   sub $3,1
   mov $0,$2
   gcd $0,$3
-  sub $0,1
   seq $0,35187 ; Sum over divisors d of n of Kronecker symbol (5|d).
   add $1,$0
 lpe

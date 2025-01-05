@@ -11,7 +11,6 @@ lpb $2
   add $3,1
   seq $3,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   mov $5,$3
-  sub $3,1
   seq $3,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
   mod $3,2
   sub $0,$3

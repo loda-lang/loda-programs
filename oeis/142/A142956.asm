@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,2313 ; Primes congruent to 1 or 2 modulo 4; or, primes of form x^2 + y^2; or, -1 is a square mod p.
   mov $5,$3
-  sub $3,1
   seq $3,35201 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 19.
   neq $3,0
   sub $0,$3

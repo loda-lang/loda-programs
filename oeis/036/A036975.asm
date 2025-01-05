@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 2,4,8,10,16,20,26,32,40,52,64,80,100,104
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 pow $2,2

@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,36758 ; Number of edge-rooted tree-like octagonal systems.
     mov $9,10
     add $9,$5

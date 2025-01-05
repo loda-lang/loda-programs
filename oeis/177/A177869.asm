@@ -7,7 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,29837 ; Binary order of n: log_2(n) rounded up to next integer.
   mov $4,$3
   add $5,1

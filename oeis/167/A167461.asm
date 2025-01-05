@@ -6,13 +6,14 @@ mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
+  add $3,1
   seq $3,37816 ; Number of i such that d(i) <= d(i-1), where Sum_{i=0..m} d(i)*9^i is the base-9 representation of n.
   sub $0,$3
   max $1,5
   mov $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,3
   div $3,2
   add $3,2

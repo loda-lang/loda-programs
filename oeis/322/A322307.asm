@@ -4,6 +4,5 @@
 
 #offset 1
 
-sub $0,1
 seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
 lex $0,2

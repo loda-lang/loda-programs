@@ -5,7 +5,6 @@
 add $0,1
 mov $1,1
 mov $4,$0
-sub $0,1
 seq $0,34699 ; Largest prime power factor of n.
 lpb $0
   sub $0,1

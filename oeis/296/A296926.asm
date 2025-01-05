@@ -12,6 +12,7 @@ lpb $2
   sub $3,1
   mov $5,$3
   mul $5,6
+  add $3,1
   seq $3,35177 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -13.
   bin $3,2
   sub $0,$3

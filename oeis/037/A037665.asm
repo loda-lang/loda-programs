@@ -1,9 +1,11 @@
 ; A037665: Base 9 digits are, in order, the first n terms of the periodic sequence with initial period 3,1,0.
 ; Submitted by Cruncher Pete
 ; 3,28,252,2271,20440,183960,1655643,14900788,134107092,1206963831,10862674480,97764070320,879876632883,7918889695948,71270007263532,641430065371791,5772870588346120,51955835295115080,467602517656035723,4208422658904321508
-; Formula: a(n) = floor((9^(n+2))/26)
+; Formula: a(n) = floor((9^(n+1))/26)
 
-add $0,2
+#offset 1
+
+add $0,1
 mov $1,9
 pow $1,$0
 mov $0,$1

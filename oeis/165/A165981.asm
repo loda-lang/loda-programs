@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,34961 ; Sums of three consecutive primes.
   add $3,1
   mov $5,$3

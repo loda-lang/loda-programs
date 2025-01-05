@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1,1,3,9,32,130,566,2548
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $3,$0
 mov $2,$0

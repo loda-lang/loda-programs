@@ -11,6 +11,7 @@ lpb $2
   seq $3,1132 ; Primes == +-1 (mod 8).
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35168 ; a(n) = Sum_{d|n} Kronecker(-22, d).
   bin $3,2
   sub $0,$3

@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,36116 ; Numbers n such that the number of distinct primes dividing n is a square.
   mul $3,$2
   add $3,$1

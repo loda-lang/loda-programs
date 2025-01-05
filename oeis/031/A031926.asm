@@ -12,7 +12,7 @@ lpb $2
   add $1,$3
   add $1,2
   sub $3,2
-  cmp $3,4
+  equ $3,4
   sub $0,$3
   sub $2,$0
 lpe

@@ -17,6 +17,7 @@ lpb $2
   sub $3,1
   div $3,2
   mov $5,$3
+  add $3,1
   seq $3,38548 ; Number of divisors of n that are at most sqrt(n).
   equ $3,2
   sub $0,$3

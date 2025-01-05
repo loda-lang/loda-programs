@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,204890 ; Ordered differences of primes.
   mov $4,$1
+  add $4,1
   seq $4,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
   mul $4,2
   add $4,$3

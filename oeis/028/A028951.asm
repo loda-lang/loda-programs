@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   sub $3,$4
+  add $3,1
   seq $3,35162 ; Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
   min $3,1
   sub $0,$3

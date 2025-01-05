@@ -10,6 +10,7 @@ lpb $2
   trn $3,1
   mov $6,$1
   sub $6,$3
+  add $3,1
   seq $3,29710 ; Primes such that next prime is 4 greater.
   sub $3,3
   mul $3,$6

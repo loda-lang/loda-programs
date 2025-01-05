@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,31312 ; Successive digits of odd numbers.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

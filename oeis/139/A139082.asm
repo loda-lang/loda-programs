@@ -8,6 +8,7 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$2
+  add $0,1
   seq $0,34699 ; Largest prime power factor of n.
   mul $1,$0
   add $2,$3

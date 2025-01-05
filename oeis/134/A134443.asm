@@ -13,6 +13,7 @@ lpb $4
   add $1,$4
   bin $1,$0
   mul $0,2
+  sub $0,1
   seq $0,29845 ; Expansion of 16/lambda(z) in powers of nome q = exp(Pi*i*z).
   mul $1,$0
   mul $3,2

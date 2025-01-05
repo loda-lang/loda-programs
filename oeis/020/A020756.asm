@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,4
+  add $3,1
   seq $3,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
   min $3,1
   sub $0,$3

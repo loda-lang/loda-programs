@@ -14,7 +14,6 @@ lpb $4
   gcd $0,$4
   bin $1,$0
   mov $5,$0
-  sub $0,1
   mov $6,$0
   seq $6,34694 ; Smallest prime == 1 (mod n).
   seq $0,38700 ; Smallest prime == -1 (mod n).
@@ -23,7 +22,7 @@ lpb $4
   div $0,$5
   add $0,1
   mul $1,$0
-  cmp $1,1
+  equ $1,1
   add $3,$1
 lpe
 mov $0,$3

@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,38374 ; Length of longest contiguous block of 1's in binary expansion of n.
   add $3,1
   add $3,$4

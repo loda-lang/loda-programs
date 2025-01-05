@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,36263 ; Second differences of primes.
   mov $4,$0
   mov $5,$0

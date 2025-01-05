@@ -14,7 +14,6 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-  sub $0,1
   seq $0,37126 ; Triangle T(n,k) = prime(k) for k = 1..n.
   mul $0,$4
   trn $1,$0

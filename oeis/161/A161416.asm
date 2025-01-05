@@ -12,6 +12,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
+  add $0,1
   seq $0,33677 ; Smallest divisor of n >= sqrt(n).
   div $1,$0
   sub $1,$0

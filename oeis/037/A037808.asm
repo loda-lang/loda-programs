@@ -11,4 +11,4 @@ lpb $1
   add $2,$3
 lpe
 div $0,$2
-cmp $0,0
+equ $0,0

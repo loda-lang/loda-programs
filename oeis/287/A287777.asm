@@ -9,6 +9,7 @@ lpb $2
   add $1,1
   mov $5,$1
   div $5,3
+  add $5,1
   seq $5,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
   add $5,1
   mov $3,$1

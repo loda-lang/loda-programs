@@ -12,7 +12,7 @@ lpb $2
   mov $4,$2
   seq $4,54611 ; a(n) = Sum_{d|n} phi(d)*4^(n/d).
   mov $6,$2
-  cmp $6,0
+  equ $6,0
   add $2,$6
   div $4,$2
   mul $4,2

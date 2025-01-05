@@ -6,6 +6,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,32924 ; Numbers whose ternary expansion contains no 0.
   add $4,$2
   add $1,1

@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,37125 ; Irregular triangle: row n is 1, 2, 3, 4, .., prime(n).
   mov $0,$2
   sub $0,2

@@ -10,6 +10,7 @@ lpb $2
   seq $3,139899 ; Primes of the form 5x^2+48y^2.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35179 ; a(n) = Sum_{d|n} Kronecker(-11, d).
   equ $3,0
   sub $0,$3

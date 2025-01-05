@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,34784 ; Numbers n such that A034693(n) = 2.
   mul $0,2
   sub $0,1

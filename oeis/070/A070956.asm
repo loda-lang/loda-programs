@@ -14,6 +14,7 @@ lpb $4
   bin $1,$0
   sub $0,2
   max $0,4
+  add $0,1
   seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   div $0,2
   mul $1,$0

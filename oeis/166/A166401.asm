@@ -11,6 +11,7 @@ lpb $2
   mov $5,$1
   add $5,1
   mov $3,$1
+  add $3,1
   seq $3,33677 ; Smallest divisor of n >= sqrt(n).
   div $5,$3
   mod $3,$5

@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $4,$1
+  add $4,1
   seq $4,37449 ; Discriminant of quadratic field Q(sqrt(n)).
   div $4,$3
   mov $3,$4

@@ -4,6 +4,7 @@
 
 lpb $0
   mov $4,$0
+  add $4,1
   seq $4,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   div $4,4
   mov $2,$4

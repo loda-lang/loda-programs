@@ -15,7 +15,10 @@ lpb $4
   bin $1,$0
   mov $5,$0
   seq $5,121238 ; a(n) = (-1)^(1+n+A088585(n)).
-  seq $0,11586 ; Legendre symbol (n,23).
+  pow $0,11
+  add $0,1
+  mod $0,23
+  sub $0,1
   mul $0,$5
   mul $1,$0
   add $3,$1

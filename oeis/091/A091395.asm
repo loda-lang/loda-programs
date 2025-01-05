@@ -8,5 +8,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,35182 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = -7.
 mov $0,$1

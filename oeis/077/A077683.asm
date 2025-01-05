@@ -17,14 +17,13 @@ lpb $2
   mul $6,6
   add $3,$6
   mov $5,$3
-  sub $3,1
   seq $3,35316 ; Sum of the square divisors of n.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

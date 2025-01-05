@@ -5,8 +5,20 @@
 mov $2,$0
 add $2,1
 dif $2,2
-seq $2,8833 ; Largest square dividing n.
-seq $2,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+sub $2,1
+mov $4,0
+max $4,$2
+mov $3,$4
+add $4,1
+seq $4,19554 ; Smallest number whose square is divisible by n.
+div $3,$4
+mov $2,$3
+add $2,1
+pow $2,2
+mul $2,4
+nrt $2,2
+add $2,1
+div $2,2
 pow $2,2
 mov $1,$0
 div $1,$2

@@ -12,6 +12,7 @@ pow $2,2
 mul $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,32822 ; Numbers whose set of base-10 digits is {1,4}.
   sub $3,1
   mov $5,$3

@@ -25,5 +25,5 @@ lpe
 mov $0,$3
 mul $0,2
 add $1,1
-cmp $1,1
+equ $1,1
 sub $0,$1

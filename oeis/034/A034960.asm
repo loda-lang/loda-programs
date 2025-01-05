@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   sub $0,1
-  cmp $3,0
+  equ $3,0
   add $3,$2
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $1,$2

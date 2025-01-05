@@ -2,7 +2,8 @@
 ; Submitted by Christian Krause
 ; 0,1,50,2,6,51,18,3,42,7,25,52,45,19,56,4,40,43,38,8,10,26,15,53,12,46,34,20,28,57,49,5,17,41,24,44,55,39,37,9,14,11,33,27,48,16,23,54,36,13,32,47,22,35,31,21,30,29
 
-add $0,1
+#offset 1
+
 mov $1,$0
 seq $1,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
 add $1,270

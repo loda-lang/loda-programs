@@ -4,7 +4,7 @@
 
 max $0,2
 lpb $0
-  cmp $2,0
+  equ $2,0
   lpb $0
     mul $2,$0
     sub $0,1

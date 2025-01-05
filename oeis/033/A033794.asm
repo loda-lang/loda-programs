@@ -14,6 +14,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,35162 ; Number of positive odd solutions to equation x^2 + 7y^2 = 8n.
     mov $9,10
     add $9,$5

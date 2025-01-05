@@ -10,6 +10,7 @@ lpb $2
   seq $3,209544 ; Primes not expressed in form n<+>2, where operation <+> defined in A206853.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35168 ; a(n) = Sum_{d|n} Kronecker(-22, d).
   bin $3,2
   sub $0,$3
@@ -17,7 +18,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

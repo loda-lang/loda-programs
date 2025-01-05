@@ -10,6 +10,7 @@ lpb $1
   mov $0,$2
   sub $0,$1
   mov $3,$0
+  add $0,1
   seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   sub $0,1
   sub $0,$3

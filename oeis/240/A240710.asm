@@ -8,18 +8,19 @@ pow $3,2
 lpb $3
   add $6,1
   mov $1,$2
+  add $1,1
   seq $1,34694 ; Smallest prime == 1 (mod n).
   mov $4,$2
   seq $4,349089 ; a(n) = n! * Sum_{k=0..floor((n-1)/4)} 1 / (4*k+1)!.
   min $4,$1
   sub $4,2
   div $4,$6
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

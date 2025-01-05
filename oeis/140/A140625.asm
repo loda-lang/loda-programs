@@ -10,6 +10,7 @@ lpb $2
   seq $3,139860 ; Primes of the form 12x^2+12xy+13y^2.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35152 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -38.
   equ $3,0
   sub $0,$3

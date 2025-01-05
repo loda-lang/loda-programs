@@ -1,7 +1,10 @@
-; A034822: Numbers n such that there are no palindromic squares of length n.
+; A034822: Numbers k such that there are no palindromic squares of length k.
 ; Submitted by Christian Krause
 ; 2,4,8,10,14,18,20,24,30,38,40
 
+#offset 1
+
+sub $0,1
 mov $10,$0
 mov $12,$0
 add $12,1

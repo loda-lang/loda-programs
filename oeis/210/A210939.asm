@@ -8,18 +8,20 @@ pow $3,2
 lpb $3
   add $6,1
   mov $7,$2
+  add $7,1
   seq $7,34694 ; Smallest prime == 1 (mod n).
   mov $4,$2
+  add $4,1
   seq $4,38700 ; Smallest prime == -1 (mod n).
   min $4,$7
   sub $4,2
   div $4,$6
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

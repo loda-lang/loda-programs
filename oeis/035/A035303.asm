@@ -11,7 +11,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   mov $1,400

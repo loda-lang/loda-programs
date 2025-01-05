@@ -8,14 +8,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
-  sub $3,1
   seq $3,38548 ; Number of divisors of n that are at most sqrt(n).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,3
 lpe

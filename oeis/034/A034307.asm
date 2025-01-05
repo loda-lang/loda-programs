@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 2,5,9,12,18,20,30,34
 
+#offset 1
+
+sub $0,1
 sub $3,$0
 lpb $0
   sub $0,1

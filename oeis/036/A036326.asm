@@ -2,8 +2,11 @@
 ; Submitted by entity
 ; 4,6,9,10,14,15,21,25,35,49
 
+#offset 1
+
 mov $2,$0
-add $2,6
+sub $0,1
+add $2,5
 pow $2,3
 div $2,2
 lpb $2

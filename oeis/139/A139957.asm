@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,107006 ; Primes of the form 4x^2-4xy+7y^2, with x and y nonnegative.
   mov $5,$3
-  sub $3,1
   seq $3,35156 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -34.
   equ $3,0
   sub $0,$3

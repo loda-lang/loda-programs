@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,36172 ; Log base 2 (n) mod 59.
   mod $3,2
   sub $0,$3

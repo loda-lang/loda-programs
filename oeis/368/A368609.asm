@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $6,$1
+  add $6,1
   seq $6,33677 ; Smallest divisor of n >= sqrt(n).
   mov $8,$1
   div $8,$6

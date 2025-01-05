@@ -4,6 +4,7 @@
 
 lpb $0
   add $1,$0
+  add $0,1
   seq $0,29837 ; Binary order of n: log_2(n) rounded up to next integer.
   mul $1,$0
   sub $0,1

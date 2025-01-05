@@ -12,11 +12,11 @@ lpb $2
   seq $3,145037 ; Number of 1's minus number of 0's in the binary representation of n.
   div $3,2
   sub $3,3
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

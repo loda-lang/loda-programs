@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  sub $0,1
   seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
   sub $0,1
   mod $0,3

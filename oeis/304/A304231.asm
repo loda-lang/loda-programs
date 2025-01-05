@@ -8,13 +8,14 @@ add $2,3
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,33677 ; Smallest divisor of n >= sqrt(n).
   pow $4,2
   sub $4,$1
   mov $3,$4
   sub $3,$1
   trn $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

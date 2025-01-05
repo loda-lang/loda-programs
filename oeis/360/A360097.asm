@@ -13,8 +13,10 @@ lpb $2
   mov $5,$1
   add $5,1
   mov $6,$1
+  add $6,1
   seq $6,34694 ; Smallest prime == 1 (mod n).
   mov $3,$1
+  add $3,1
   seq $3,38700 ; Smallest prime == -1 (mod n).
   min $3,$6
   sub $3,2

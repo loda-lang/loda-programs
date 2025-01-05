@@ -6,6 +6,5 @@ seq $0,110240 ; Decimal form of binary integer produced by the ON cells at n-th 
 mul $0,486
 dif $0,3
 div $0,162
-sub $0,1
 seq $0,37888 ; a(n) = (1/2)*Sum_{i} |d(i) - e(i)| where Sum_{i} d(i)*2^i is the base-2 representation of n and e(i) are digits d(i) in reverse order.
 mul $0,2

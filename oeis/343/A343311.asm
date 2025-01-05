@@ -11,6 +11,7 @@ lpb $2
   add $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
+  add $3,1
   seq $3,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
   sub $3,$5
   trn $3,6

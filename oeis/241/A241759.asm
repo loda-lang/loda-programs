@@ -7,8 +7,9 @@ lpb $0
   sub $0,1
   mov $1,$2
   div $1,3
+  add $1,1
   seq $1,39968 ; An example of a d-perfect sequence.
-  cmp $1,0
+  equ $1,0
   mul $1,2
   sub $0,$1
   add $2,3

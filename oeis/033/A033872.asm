@@ -8,6 +8,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,33831 ; Number of numbers d dividing n such that d >= 3 and n/d <= d-2.
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mul $3,2

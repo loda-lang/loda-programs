@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  sub $3,1
   seq $3,35223 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 41.
   neq $3,0
   sub $0,$3

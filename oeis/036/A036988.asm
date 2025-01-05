@@ -11,5 +11,5 @@ lpb $0
   add $1,$2
   max $3,$1
 lpe
-cmp $3,0
+equ $3,0
 mov $0,$3

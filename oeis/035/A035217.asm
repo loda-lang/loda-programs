@@ -2,8 +2,10 @@
 ; Submitted by Simon Strandgaard (M1)
 ; 1,0,0,1,1,0,1,0,1,0,0,0,2,0,0,1,2,0,2,1,0,0,2,0,1,0,0,1,2,0,2,0,0,0,1,1,0,0,0,0,0,0,2,0,1,0,0,0,1,0,0,2,0,0,0,0,0,0,2,0,0,0,1,1,2,0,2,2,0,0,0,0,2,0,0,2,0,0,0,1
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $4,$0
 lpb $4
   sub $4,1
@@ -19,7 +21,10 @@ lpb $4
   seq $5,100047 ; A Chebyshev transform of the Fibonacci numbers.
   mul $5,$6
   mod $0,7
-  seq $0,11584 ; Legendre symbol (n,17).
+  pow $0,8
+  add $0,1
+  mod $0,17
+  sub $0,1
   mul $0,$5
   mul $1,$0
   add $3,$1

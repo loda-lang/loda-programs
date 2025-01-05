@@ -8,6 +8,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
   add $1,$2
 lpe

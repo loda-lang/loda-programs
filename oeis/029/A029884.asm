@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,36577 ; Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
   mov $1,$2
   mov $2,$0

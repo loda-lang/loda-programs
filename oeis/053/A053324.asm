@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $1,$2
   add $1,$3
+  add $1,1
   seq $1,31930 ; Lower prime of a difference of 12 between consecutive primes.
   mov $5,$3
   mul $5,$1
