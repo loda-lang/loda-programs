@@ -8,6 +8,7 @@ mul $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,101184 ; a(n) = n + pi(n) + pi(pi(n)) + pi(pi(pi(n))) + pi(pi(pi(pi(n)))) + ...
   sub $3,1
   add $0,1

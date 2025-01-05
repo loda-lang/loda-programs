@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,69929 ; Number of k, 1 <= k <= n, such that k^3+1 divides n^3+1.
   mov $1,$0
   mov $0,0

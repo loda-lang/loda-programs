@@ -9,8 +9,16 @@ lpb $2
   mov $5,$1
   add $5,1
   mul $5,3
-  mov $6,$5
-  seq $6,26351 ; a(n) = floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
+  mov $7,$5
+  add $7,$5
+  mul $7,2
+  add $7,$5
+  mul $7,$5
+  nrt $7,2
+  add $7,$5
+  mov $6,$7
+  div $6,2
+  add $6,1
   add $5,$6
   mul $5,2
   sub $5,1
@@ -19,9 +27,18 @@ lpb $2
   mod $4,3
   sub $4,1
   mov $3,$1
-  seq $3,89809 ; Complement of A078588.
+  add $3,1
+  pow $3,2
+  mov $8,$3
+  mul $8,4
+  sub $3,1
+  add $8,$3
+  nrt $8,2
+  add $8,$3
+  mov $3,$8
+  mod $3,2
   add $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

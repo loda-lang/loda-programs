@@ -1,10 +1,24 @@
 ; A040278: Continued fraction for sqrt(296).
-; Submitted by Simon Strandgaard
+; Submitted by [CSF] Christian Carquillat
 ; 17,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4,1,7,1,4,34,4
 
 mov $1,$0
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-seq $0,40304 ; Continued fraction for sqrt(322).
+mov $3,3
+lpb $0
+  sub $0,2
+  add $3,$4
+  add $4,$3
+lpe
+mul $0,$3
+add $0,$4
+gcd $0,262156
+mul $0,42
+mod $0,13
+mov $5,$0
+div $5,5
+mul $5,12
+add $0,$5
+sub $0,2
 dif $0,4
 mov $2,$1
 mod $2,2

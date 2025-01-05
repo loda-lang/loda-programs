@@ -1,22 +1,15 @@
 ; A292273: For odd n: a(n) = 0, and for even n: a(n) = -mu(n), where mu is Moebius function (A008683).
-; Submitted by Science United
+; Submitted by Christopher Todd
 ; 0,1,0,0,0,-1,0,0,0,-1,0,0,0,-1,0,0,0,0,0,0,0,-1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,-1,0,0,0,1,0,0,0,1,0,0,0,-1,0,0,0,1,0,0
+; Formula: a(n) = A008683(n)*(truncate(gcd(n-1,2)/2)-1)
 
 #offset 1
 
-mov $2,$0
-ban $2,2
 sub $0,1
 mov $1,$0
-bin $1,2
-add $1,$0
-add $1,$2
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  sub $0,1
-  mov $3,$0
-  seq $3,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-lpe
-mov $0,$3
+add $1,1
+seq $1,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+gcd $0,2
+div $0,2
+sub $0,1
+mul $0,$1

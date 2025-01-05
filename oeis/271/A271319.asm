@@ -1,9 +1,11 @@
 ; A271319: Number of distinct prime factors of the n-th n-gonal number (A060354).
 ; Submitted by Vester
 ; 1,2,1,2,3,2,2,2,3,3,3,2,3,4,2,2,3,4,3,3,3,3,3,2,4,3,3,2,5,3,2,4,3,4,3,2,4,4,4,3,4,3,3,3,3,4,3,2,4,4,4,2,4,4,3,4,3,3,4,4,3,5,2,3,4,4,4,4,4,3,4,2,4,5,3,3,4,3,4,3
-; Formula: a(n) = A001221(truncate(((n+1)^3+n+1)/2)+1)
+; Formula: a(n) = A001221(truncate(((n-1)^3+n-1)/2)+1)
 
-add $0,1
+#offset 2
+
+sub $0,1
 mov $1,$0
 pow $0,3
 add $0,$1

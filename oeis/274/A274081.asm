@@ -1,13 +1,29 @@
 ; A274081: Number of unrooted labeled trees on 3n+2 nodes with node degree either one or four.
-; Submitted by Jamie Morken(w1)
+; Submitted by Coleslaw
 ; 1,5,560,277200,369969600,1040623584000,5318844410880000,44743448895425280000,577102758498249984000000,10821132329283106871040000000,283002122589833107696435200000000,9986037506585076241055342592000000000,462684151212030123561950840428953600000000
-; Formula: a(n) = truncate((A000139(n)*truncate(A014606(n+1)/(n+1)))/2)
 
 mov $1,$0
 add $1,1
 mov $2,$1
-seq $1,14606 ; a(n) = (3n)!/(6^n).
+mov $3,1
+mul $1,3
+lpb $1
+  mov $4,$1
+  bin $4,3
+  sub $1,3
+  mul $3,$4
+lpe
+mov $1,$3
 div $1,$2
-seq $0,139 ; a(n) = 2*(3*n)! / ((2*n+1)!*(n+1)!).
+mov $5,$0
+mul $0,2
+add $0,$5
+bin $0,$5
+mul $0,10
+mul $5,2
+add $5,2
+bin $5,2
+div $0,$5
+div $0,5
 mul $0,$1
 div $0,2

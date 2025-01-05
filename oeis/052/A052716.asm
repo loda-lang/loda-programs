@@ -7,6 +7,7 @@ lpb $1
   mul $1,$2
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,32037 ; Doubles (index 2+) under "AIJ" (ordered, indistinct, labeled) transform.
   mul $0,$1
 lpe

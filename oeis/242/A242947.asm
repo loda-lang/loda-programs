@@ -1,19 +1,22 @@
 ; A242947: a(n) = n / A242926(n-1).
-; Submitted by p3d-cluster
+; Submitted by Science United
 ; 1,2,3,2,5,1,7,2,3,2,11,3,13,2,1,2,17,1,19,2,1,2,23,1,5,2,3,2,29,1,31,2,3,2,1,3,37,2,1,2,41,1,43,2,5,2,47,1,7,2,3,2,53,1,1,2,3,2,59,3,61,2
 
+#offset 1
+
+sub $0,1
 mov $2,$0
-add $2,1
-lpb $0
-  sub $0,1
-  mov $4,$3
-  mov $3,$5
-  add $3,4
-  add $5,$4
-  add $5,2
-lpe
-mov $0,$3
-dif $0,2
+mov $3,2
+mov $4,1
 mov $1,$0
-gcd $1,$2
-mov $0,$1
+sub $1,1
+lpb $1
+  sub $1,1
+  mov $5,$4
+  mov $4,$3
+  add $4,1
+  add $3,$5
+lpe
+add $2,1
+gcd $2,$3
+mov $0,$2

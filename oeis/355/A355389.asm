@@ -1,7 +1,10 @@
 ; A355389: Number of unordered pairs of distinct integer partitions of n.
-; Submitted by shiva
+; Submitted by Science United
 ; 0,0,1,3,10,21,55,105,231,435,861,1540,2926,5050,9045,15400,26565,43956,73920,119805,196251,313236,501501,786885,1239525,1915903,2965830,4528545,6909903,10417330,15699606,23403061,34848726,51435153,75761895,110744403,161577276
-; Formula: a(n) = binomial(A000041(n),2)
+; Formula: a(n) = binomial(truncate(A139582(n)/2),2)
 
-seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
-bin $0,2
+seq $0,139582 ; Twice partition numbers.
+add $1,$0
+div $1,2
+bin $1,2
+mov $0,$1

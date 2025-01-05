@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
+  add $0,2
   seq $0,15916 ; Numbers k such that sigma(k) + 10 = sigma(k+10).
   mov $2,$3
   mul $2,$0

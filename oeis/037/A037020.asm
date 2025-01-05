@@ -8,12 +8,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,178601 ; a(n) = s(s(n)), where s(n) = sigma(n)-n = A001065(n).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,6
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

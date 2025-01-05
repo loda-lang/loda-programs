@@ -11,6 +11,7 @@ lpb $1
   mov $3,$0
   sub $3,$1
   max $3,0
+  add $3,1
   seq $3,32037 ; Doubles (index 2+) under "AIJ" (ordered, indistinct, labeled) transform.
 lpe
 mul $2,$3
