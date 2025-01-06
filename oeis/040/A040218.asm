@@ -14,7 +14,7 @@ div $0,8
 mul $0,49
 add $0,$1
 add $1,$0
-cmp $1,2
+equ $1,2
 dif $0,2
 sub $0,2
 div $0,2

@@ -1,14 +1,16 @@
 ; A040268: Continued fraction for sqrt(285).
 ; Submitted by stoneageman
 ; 16,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1,7,2,7,1,32,1
-; Formula: a(n) = 3*truncate((gcd(0,A144330(truncate((4*A047249(A010126(n))-12)/5)*gcd(n,2)+gcd(n,2)-1))+2)/5)+A144330(truncate((4*A047249(A010126(n))-12)/5)*gcd(n,2)+gcd(n,2)-1)
+; Formula: a(n) = 3*truncate((gcd(0,A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)-1))+2)/5)+A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)-1)
 
 mov $3,$0
 gcd $3,2
 mov $2,$0
 seq $2,10126 ; Continued fraction for sqrt(22).
-seq $2,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
-sub $2,3
+mov $4,$2
+div $4,3
+mul $4,3
+add $2,$4
 mul $2,4
 div $2,5
 mul $2,$3

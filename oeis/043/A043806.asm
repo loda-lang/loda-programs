@@ -13,7 +13,7 @@ lpb $2
   mov $3,$1
   seq $3,43555 ; Number of runs in base-3 representation of n.
   sub $3,1
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,1
   sub $2,$0

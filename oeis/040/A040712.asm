@@ -8,9 +8,16 @@ lpb $0
   sub $0,1
   mov $5,$1
   seq $5,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
-  seq $5,40304 ; Continued fraction for sqrt(322).
-  dif $5,4
+  gcd $5,262156
+  mul $5,42
+  mod $5,13
+  mov $6,$5
+  div $6,5
+  mul $6,12
   add $1,1
+  add $5,$6
+  sub $5,2
+  dif $5,4
 lpe
 mov $3,$4
 mod $3,2

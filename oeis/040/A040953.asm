@@ -2,11 +2,32 @@
 ; Submitted by boboviz
 ; 31,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2,62,2,1,1,2
 
-seq $0,10158 ; Continued fraction for sqrt(85).
-mov $2,$0
+mov $4,16
+mul $0,2
+pow $0,2
+lpb $0
+  mov $5,$0
+  mov $0,0
+  mul $4,9
+  add $4,6
+  mod $5,10
+  add $5,5
+  div $4,$5
+  sub $4,5
+lpe
+sub $4,7
+mov $0,$4
 div $0,4
-add $0,$2
-seq $0,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+add $0,$4
+add $0,1
+mov $2,$4
+mov $3,$0
+bin $0,2
+mul $0,4
+nrt $0,2
+add $3,$0
+mov $0,$3
+add $0,1
 dif $0,2
 mov $1,$0
 add $0,2

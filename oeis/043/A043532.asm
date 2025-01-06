@@ -13,7 +13,7 @@ lpb $2
     mul $3,2
     mov $5,$3
     mod $5,10
-    cmp $5,$2
+    equ $5,$2
     div $3,10
     add $4,$5
   lpe

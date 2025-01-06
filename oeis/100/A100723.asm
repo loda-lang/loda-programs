@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,43739 ; Numbers whose number of runs in the base-2 representation is congruent to 0 mod 7.
   sub $3,1
   mov $5,$3

@@ -8,8 +8,7 @@ lpb $0
   sub $0,1
   mov $4,$2
   mov $2,$1
-  cmp $5,0
-  cmp $5,0
+  neq $5,0
   sub $5,3
   mov $1,$3
   gcd $1,4

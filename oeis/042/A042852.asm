@@ -1,7 +1,7 @@
 ; A042852: Numerators of continued fraction convergents to sqrt(957).
 ; Submitted by [SG-FC] hl
 ; 30,31,464,959,13890,14849,904830,919679,13780336,28480351,412505250,440985601,26871641310,27312626911,409248418064,845809463039,12250580900610,13096390363649,798034002719550,811130393083199,12153859505884336,25118849404851871,363817751173810530,388936600578662401,23700013785893554590,24088950386472216991,360945319196504592464,745979588779481401919,10804659562109244219330,11550639150888725621249,703843008615432781494270,715393647766321507115519,10719354077343933881111536
-; Formula: a(n) = b(n+1), b(n) = b(n-1)*(9*truncate(truncate(A080652(A144330(truncate((4*A047249(A010126(n-1))-12)/5)*gcd(n-1,2)+gcd(n-1,2)-1))/2)/6)+truncate(A080652(A144330(truncate((4*A047249(A010126(n-1))-12)/5)*gcd(n-1,2)+gcd(n-1,2)-1))/2)-1)+b(n-2), b(2) = 31, b(1) = 30, b(0) = 1
+; Formula: a(n) = b(n+1), b(n) = b(n-1)*(9*truncate(truncate((sqrtint(4*binomial(A144330(truncate((12*truncate(A010126(n-1)/3)+4*A010126(n-1))/5)*gcd(n-1,2)+gcd(n-1,2)-1)+1,2))+A144330(truncate((12*truncate(A010126(n-1)/3)+4*A010126(n-1))/5)*gcd(n-1,2)+gcd(n-1,2)-1)+2)/2)/6)+truncate((sqrtint(4*binomial(A144330(truncate((12*truncate(A010126(n-1)/3)+4*A010126(n-1))/5)*gcd(n-1,2)+gcd(n-1,2)-1)+1,2))+A144330(truncate((12*truncate(A010126(n-1)/3)+4*A010126(n-1))/5)*gcd(n-1,2)+gcd(n-1,2)-1)+2)/2)-1)+b(n-2), b(2) = 31, b(1) = 30, b(0) = 1
 
 mov $1,1
 add $0,1
@@ -13,8 +13,10 @@ lpb $0
   mov $2,$1
   mov $6,$3
   seq $6,10126 ; Continued fraction for sqrt(22).
-  seq $6,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
-  sub $6,3
+  mov $8,$6
+  div $8,3
+  mul $8,3
+  add $6,$8
   mul $6,4
   div $6,5
   mul $6,$7
@@ -22,7 +24,14 @@ lpb $0
   sub $6,1
   seq $6,144330 ; Triangle read by rows, A144328 * A000012
   mov $1,$6
-  seq $1,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+  add $1,1
+  mov $9,$1
+  bin $1,2
+  mul $1,4
+  nrt $1,2
+  add $9,$1
+  mov $1,$9
+  add $1,1
   div $1,2
   mov $5,$1
   sub $5,1

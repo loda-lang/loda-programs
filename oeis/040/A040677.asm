@@ -15,6 +15,6 @@ mul $0,21
 add $0,$1
 div $0,2
 sub $0,20
-cmp $1,2
+equ $1,2
 mul $1,5
 add $0,$1

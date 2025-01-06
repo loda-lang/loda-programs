@@ -3,7 +3,7 @@
 
 dif $0,2
 mov $1,$0
-cmp $0,0
+equ $0,0
 sub $1,$0
 gcd $1,2
 add $1,18

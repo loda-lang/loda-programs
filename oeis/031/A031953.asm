@@ -10,6 +10,7 @@ mul $2,2
 add $2,129
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,43535 ; Number of distinct base-8 digits of n.
   equ $3,2
   sub $0,$3

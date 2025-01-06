@@ -7,6 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,43533 ; Number of distinct base-6 digits of n.
   equ $3,2
   sub $0,$3

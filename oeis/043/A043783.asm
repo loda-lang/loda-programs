@@ -7,12 +7,12 @@ mov $2,$0
 add $2,103
 lpb $2
   seq $3,43555 ; Number of runs in base-3 representation of n.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   sub $2,$4
   mov $3,$1
 lpe

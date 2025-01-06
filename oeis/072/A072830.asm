@@ -9,6 +9,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,40163 ; a(n) is the absolute value of (the first digit of n minus the last digit of n).
   mov $5,6
   sub $5,$0

@@ -18,6 +18,6 @@ mov $0,$2
 sub $0,2
 seq $0,24639 ; n written in fractional base 7/2.
 mov $1,$0
-cmp $0,4
+equ $0,4
 add $1,$0
 mov $0,$1

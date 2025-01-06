@@ -11,7 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,43560 ; Number of runs in base-8 representation of n.
   dif $3,2
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

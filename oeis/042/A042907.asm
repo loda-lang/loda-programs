@@ -13,7 +13,14 @@ lpb $0
   mov $6,$1
   div $1,4
   add $1,$6
-  seq $1,80652 ; a(1)=2; for n>1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+  add $1,1
+  mov $7,$1
+  bin $1,2
+  mul $1,4
+  nrt $1,2
+  add $7,$1
+  mov $1,$7
+  add $1,1
   dif $1,2
   mov $5,$1
   add $1,2

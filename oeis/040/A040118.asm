@@ -3,7 +3,7 @@
 
 add $0,3
 mov $1,3
-cmp $1,$0
+equ $1,$0
 add $1,3
 gcd $0,$1
 add $0,$1

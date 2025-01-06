@@ -12,7 +12,7 @@ lpb $2
   mov $4,$3
   seq $4,30104 ; Base 5 reversal of n (written in base 10).
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,5
   sub $2,$0

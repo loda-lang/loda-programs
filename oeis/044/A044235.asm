@@ -2,6 +2,9 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 48,112,176,240,304,368,384,432,496,560,624,688,752,816,880,896,944,1008,1072,1136,1200,1264,1328,1392,1408,1456,1520,1584,1648,1712,1776,1840,1904,1920,1968,2032,2096,2160,2224,2288,2352
 
+#offset 1
+
+sub $0,1
 mov $1,5
 mov $2,$0
 add $2,3
@@ -9,12 +12,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,277546 ; a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -13,7 +13,7 @@ lpb $0
   mov $6,$5
   gcd $6,2
   add $6,9
-  cmp $5,0
+  equ $5,0
   add $5,$6
   mul $5,$6
   sub $5,99

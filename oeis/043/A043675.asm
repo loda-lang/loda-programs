@@ -1,7 +1,25 @@
 ; A043675: Numbers whose base-16 representation has exactly 2 runs.
 ; Submitted by davidsteele1975
 ; 16,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
-; Formula: a(n) = A043705(A317945(n))
 
-seq $0,317945 ; Filter sequence constructed from the coefficients of the Stern polynomials B(d,t) collected for each divisor d of n. Restricted growth sequence transform of A317944.
-seq $0,43705 ; Numbers whose base-16 representation has an even number of runs.
+add $0,1
+mov $3,$0
+mov $4,0
+lpb $0
+  max $0,$4
+  sub $0,1
+  mov $4,$3
+  mul $4,30
+  mov $2,$4
+  neq $4,$3
+  mul $4,2
+  pow $4,$2
+lpe
+mov $0,$2
+div $0,30
+sub $0,1
+mov $1,15
+add $1,$0
+div $1,16
+add $0,$1
+add $0,16

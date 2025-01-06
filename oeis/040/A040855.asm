@@ -5,7 +5,7 @@
 mov $1,$0
 dif $1,2
 mov $2,$1
-cmp $1,0
+equ $1,0
 sub $2,$1
 gcd $2,2
 add $2,9

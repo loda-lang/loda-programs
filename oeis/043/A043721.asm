@@ -10,13 +10,13 @@ lpb $2
   seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
   seq $3,285097 ; a(n) = difference between the positions of two least significant 1-bits in base-2 representation of n, or 0 if there are less than two 1-bits in n (when n is either zero or a power of 2).
   mul $3,2
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

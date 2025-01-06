@@ -7,7 +7,7 @@ add $0,1
 dif $0,10
 mov $2,$0
 mod $2,2
-cmp $2,0
+equ $2,0
 mov $1,$2
 add $1,39
 mov $3,$4

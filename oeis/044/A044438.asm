@@ -1,11 +1,12 @@
 ; A044438: Numbers n such that string 1,2 occurs in the base 3 representation of n but not of n+1.
 ; Submitted by Bunteck
 ; 5,17,23,32,53,59,71,77,86,98,104,113,161,167,179,185,194,215,221,233,239,248,260,266,275,296,302,314,320,329,341,347,356,485,491,503,509,518,539,545,557,563,572,584,590,599,647,653
-; Formula: a(n) = truncate((9*A215090(A003714(floor((55*n+55)/34)+n+1))+5)/3)-2
+; Formula: a(n) = truncate((9*A215090(A003714(floor((55*n)/34)+n))+5)/3)-2
+
+#offset 1
 
 mov $1,$0
-add $1,13
-add $0,1
+add $1,12
 mul $0,55
 div $0,34
 add $0,$1

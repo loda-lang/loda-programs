@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,55951 ; n - reversal of base 5 digits of n (written in base 10).
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,5
   sub $2,$0
