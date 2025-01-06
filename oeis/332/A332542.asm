@@ -13,8 +13,7 @@ lpb $0
   add $5,1
   add $0,$1
   sub $0,1
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   add $1,$3
   add $2,$0
 lpe

@@ -2,7 +2,8 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,2,1,0,3,1,2,0,3,1,0,0,0,5,1,2,3,0,0,6,1,0,0,0,0,0,7,1,2,0,3,0,0,0,6,1,0,3,0,0,0,0,0,8,1,2,0,0,5,0,0,0,0,10,1,0,0,0,0,0,0,0,0,0,11,1,2,3,3,0,6,0,0,0,0,0,9,1,0
 
-add $0,1
+#offset 1
+
 seq $0,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
 mul $0,2
 sub $0,1

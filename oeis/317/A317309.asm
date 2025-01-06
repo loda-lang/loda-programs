@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,7606 ; Take 1, skip 2, take 3, etc.
-  trn $3,2
+  sub $3,2
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

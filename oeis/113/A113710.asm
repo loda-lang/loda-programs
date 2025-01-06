@@ -1,15 +1,29 @@
 ; A113710: a(n) = A113709(n)/(prime(n+1) - prime(n)).
-; Submitted by Kotenok2000
+; Submitted by shiva
 ; 2,3,2,6,4,9,5,4,15,6,10,21,11,8,9,30,11,17,36,13,20,14,12,25,51,26,54,28,9,32,22,69,14,75,26,27,41,28,29,90,19,96,49,99,17,18,56,114,58,39,120,25,42,43,44,135,46,70,141,29,21,77,156,79,23,56,34,174,88,59,45,62
-; Formula: a(n) = truncate(A006005(n+3)/(A064722(2*truncate(A006005(n+3)/2)-1)+1))
 
-add $0,3
-seq $0,6005 ; The odd prime numbers together with 1.
-mov $1,$0
-div $0,2
-mul $0,2
-sub $0,1
-seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+#offset 2
+
+sub $0,2
+mov $1,2
 add $0,1
-div $1,$0
+lpb $0
+  add $0,9
+  div $0,93
+  sub $0,1
+lpe
+lpb $0
+  add $0,2
+  seq $0,40 ; The prime numbers.
+  mov $1,$0
+  div $0,2
+  mul $0,2
+  sub $0,1
+  seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
+  add $0,1
+  sub $1,$0
+  div $1,$0
+  mov $0,0
+lpe
 mov $0,$1
+add $0,1

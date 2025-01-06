@@ -14,6 +14,7 @@ lpb $2
     seq $3,285599 ; 1-limiting word of the morphism 0->11, 1-> 0111.
     add $5,$7
     mov $6,$3
+    sub $7,1
   lpe
   sub $5,$6
   mov $3,$5

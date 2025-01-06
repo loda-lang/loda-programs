@@ -1,9 +1,31 @@
 ; A119696: Fib(n)*n^3*(binomial(2*n, n))^2/(n+1).
-; Submitted by Jamie Morken(w1)
+; Submitted by Science United
 ; 0,2,96,5400,188160,6615000,210760704,6565110552,197880883200,5859173445840,170673897680000,4912438527364368,139967228091285504,3955257204911740000,110989637900511552000,3096031244768383500000
-; Formula: a(n) = A119703(n)*A000108(n)
+; Formula: a(n) = truncate((min(n,n%2)*c(n)+b(n))/3)*floor(binomial(2*n,n)/(n+1))*binomial(2*n,n)*n^3, b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
+mov $6,$0
+mov $8,3
 mov $1,$0
-seq $1,119703 ; a(n) = n^3*binomial(2*n, n)*Fibonacci(n).
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-mul $0,$1
+mul $1,2
+mov $7,$0
+lpb $7
+  sub $7,2
+  add $8,$5
+  add $5,$8
+lpe
+mov $3,$0
+mul $7,$8
+add $7,$5
+div $7,3
+bin $1,$0
+mul $1,$7
+mov $2,$0
+mul $2,$1
+mul $6,$2
+mov $4,$0
+mul $4,$6
+mul $0,2
+bin $0,$3
+add $3,1
+div $0,$3
+mul $0,$4

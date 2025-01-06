@@ -1,26 +1,7 @@
 ; A267588: Binary representation of the middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,10,101,1010,10100,101001,1010011,10100111,101001111,1010011111,10100111111,101001111111,1010011111111,10100111111111,101001111111111,1010011111111111,10100111111111111,101001111111111111,1010011111111111111,10100111111111111111,101001111111111111111,1010011111111111111111,10100111111111111111111,101001111111111111111111,1010011111111111111111111,10100111111111111111111111,101001111111111111111111111,1010011111111111111111111111,10100111111111111111111111111,101001111111111111111111111111
+; Formula: a(n) = A007088(A267589(n))
 
-mov $1,1
-lpb $0
-  add $5,10
-  mov $3,1
-  lpb $3
-    mov $3,$2
-    cmp $4,0
-    div $2,2
-    sub $3,$4
-    mov $4,1
-    add $5,1
-  lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
-  div $2,$1
-  sub $5,1
-  mul $5,10
-lpe
-mov $0,$5
-div $0,10
-add $0,1
+seq $0,267589 ; Decimal representation of the middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.
+seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.

@@ -1,17 +1,19 @@
 ; A278169: Characteristic function for A000960.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 
+#offset 1
+
+sub $0,1
 mov $3,1
 mov $1,$0
 lpb $1
-  mov $4,$3
-  add $4,1
   sub $0,$3
+  add $3,1
   mov $2,$0
-  mod $2,$4
+  mod $2,$3
   sub $0,$2
   sub $1,$2
-  mov $3,$4
 lpe
-cmp $0,0
+geq $4,$0
+mov $0,$4

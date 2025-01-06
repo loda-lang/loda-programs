@@ -2,6 +2,9 @@
 ; Submitted by Vato
 ; 1,1,1,1,2,2,3,3,4,4,7,7,9,9,11,11,18,18
 
+#offset 1
+
+sub $0,1
 div $0,2
 sub $0,1
 mov $1,$0

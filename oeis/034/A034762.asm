@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,34773 ; Dirichlet convolution of d(n) (number of divisors of n) with primes (with 1).
   add $3,$0
 lpe

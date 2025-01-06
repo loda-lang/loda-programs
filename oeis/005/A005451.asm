@@ -1,18 +1,20 @@
 ; A005451: a(n)=1 if n is a prime number, otherwise a(n)=n.
-; Submitted by Science United
+; Submitted by shiva
 ; 1,1,1,4,1,6,1,8,9,10,1,12,1,14,15,16,1,18,1,20,21,22,1,24,25,26,27,28,1,30,1,32,33,34,35,36,1,38,39,40,1,42,1,44,45,46,1,48,49,50,51,52,1,54,55,56,57,58,1,60,1,62,63,64,65,66,1,68,69,70,1,72,1,74,75,76,77,78,1,80
-; Formula: a(n) = gcd(b(n-1),n), b(n) = max(2*n*b(n-1),1), b(1) = 1, b(0) = 0
+; Formula: a(n) = truncate(n/gcd(n,b(n-1)+1)), b(n) = n*b(n-1), b(0) = 1
 
 #offset 1
 
-mov $1,1
 sub $0,1
+mov $1,$0
+add $1,1
+mov $2,$1
+mov $3,1
 lpb $0
+  mul $3,$0
   sub $0,1
-  mul $2,2
-  mul $2,$1
-  max $2,1
-  add $1,1
 lpe
-gcd $2,$1
+add $3,1
+gcd $1,$3
+div $2,$1
 mov $0,$2

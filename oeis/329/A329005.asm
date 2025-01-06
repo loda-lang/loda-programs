@@ -6,7 +6,7 @@ mov $2,$0
 add $2,2
 lpb $2,2
   mov $26,$0
-  cmp $26,0
+  equ $26,0
   mov $2,$0
   add $2,$26
   div $0,$2

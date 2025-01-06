@@ -1,24 +1,28 @@
 ; A051457: (Terms in A029627)/2.
-; Submitted by Orange Kid
+; Submitted by yoyo_rkn
 ; 1,1,1,1,12,1,1,24,1,1,154,98,40,1,252,138,1,567,390,60,1,957,1,2112,825,319,84,1,1144,403,1,6006,1547,112,1,1,30030,23452,14560,7098,2660,740,144,1,53482,38012,21658,9758,3400,884,1,114257,91494,59670,31416
 
-mov $2,7217
+mov $2,7163
 sub $2,$0
 lpb $2
-  sub $2,77
+  sub $2,10
+  sub $2,$0
   mov $3,$1
   seq $3,29632 ; Numbers to right of central elements of the (3,2)-Pascal triangle A029618.
   mov $5,$3
+  sub $5,1
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
-div $5,2
 mov $0,$5
+sub $0,1
+div $0,2
+add $0,1

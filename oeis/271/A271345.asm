@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,61751 ; Numbers k such that k! is divisible by (k+1)^3.
   mul $0,0
 lpe
