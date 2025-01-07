@@ -1,16 +1,15 @@
 ; A189480: [4rn]-4[rn], where r=sqrt(5) and [ ]=floor.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,3,0,1,2,3,0,1,2,3
 
 add $0,1
-mul $0,8
-mov $2,$0
-mul $2,$0
-lpb $2
+mul $0,4
+mov $1,$0
+mul $0,2
+pow $1,2
+lpb $1
+  sub $1,$0
   add $0,1
-  sub $2,$0
-  add $0,1
-  add $1,1
+  sub $1,$0
 lpe
-mov $0,$1
 mod $0,4

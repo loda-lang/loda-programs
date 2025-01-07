@@ -1,15 +1,20 @@
 ; A268273: Negabinary odious numbers (see comment).
+; Submitted by Frank [NT]
 ; 1,3,4,6,9,11,12,15,16,18,21,23,24,26,29,30,33,35,36,38,41,43,44,47,48,50,53,54,57,59,60,63,64,66,69,71,72,74,77,78,81,83,84,86,89,91,92,95,96,98,101,103,104,106,109,110,113,115,116,119,120,122,125,126,129,131,132,134,137,139,140,143,144,146,149,151,152,154,157,158
 
 mov $4,$0
 mul $0,2
-seq $0,72894 ; Let c(k) be defined as follows: c(1)=1, c(2)=n, c(k+2) = c(k+1)/2 + c(k)/2 if c(k+1) and c(k) have the same parity; c(k+2) = c(k+1)/2 + c(k)/2 + 1/2 otherwise; a(n) = limit_{ k -> infinity} c(k).
-mov $3,$0
-lpb $3
-  sub $3,2
+lpb $0
+  add $0,1
+  add $3,$0
+  div $3,2
+  add $0,$3
+  div $0,2
 lpe
 mov $2,$4
 mul $2,2
-mov $1,$3
+add $0,1
+mov $1,$0
+mod $1,2
 add $1,$2
 mov $0,$1

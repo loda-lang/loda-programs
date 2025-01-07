@@ -1,43 +1,20 @@
 ; A053445: Second differences of partition numbers A000041.
-; Submitted by X_FISH
+; Submitted by omegaintellisys
 ; 1,0,1,0,2,0,3,1,4,2,7,3,10,7,14,11,22,17,32,28,45,43,67,63,95,96,134,139,192,199,269,287,373,406,521,566,718,792,983,1092,1346,1496,1827,2045,2465,2772,3323,3733,4449,5016,5929,6696,7882,8897,10426,11784,13735,15534,18047,20391,23613,26692,30788,34797,40034,45207,51877,58564,67013,75614,86341,97328,110905,124953,142063,159945,181529,204185,231340,260025
 
-mov $9,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$9
-  add $0,$4
-  sub $0,1
-  mov $5,$0
-  mov $6,0
-  mov $7,2
-  lpb $7
-    sub $7,1
-    mov $0,$5
-    add $0,$7
-    trn $0,1
-    mov $1,1
-    lpb $1
-      add $0,1
-      add $0,$1
-      trn $1,3
-    lpe
-    seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
-    sub $0,1
-    mov $8,$7
-    mul $8,$0
-    add $6,$8
-  lpe
-  min $5,1
-  mul $5,$0
-  mov $0,$6
-  sub $0,$5
-  mov $3,$4
-  mul $3,$0
-  add $2,$3
+mov $4,$0
+mov $2,2
+lpb $2
+  sub $2,1
+  mov $0,$4
+  add $0,$2
+  add $0,1
+  seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
+  mov $1,$2
+  mul $1,$0
+  add $3,$1
 lpe
-min $9,1
-mul $9,$0
-mov $0,$2
-sub $0,$9
+min $4,1
+mul $4,$0
+mov $0,$3
+sub $0,$4

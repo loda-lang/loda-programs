@@ -1,13 +1,13 @@
 ; A195441: a(n) = denominator(Bernoulli_{n+1}(x) - Bernoulli_{n+1}).
-; Submitted by Joe
+; Submitted by AnandBhat
 ; 1,1,2,1,6,2,6,3,10,2,6,2,210,30,6,3,30,10,210,42,330,30,30,30,546,42,14,2,30,2,462,231,3570,210,6,2,51870,2730,210,42,2310,330,2310,210,4830,210,210,210,6630,1326,858,66,330,110,798,114,870,30,30,6,930930,30030,4290,2145,5610,510,82110,4830,210,30,330,330,21111090,570570,114114,6006,390,30,210,42
-; Formula: a(n) = truncate(gcd(3*A363596(n),3*A056603(floor((n+5)/2)))/3)
+; Formula: a(n) = truncate(gcd(3*A363596(n),3*A034386(floor((n+5)/2)))/3)
 
 mov $1,$0
 seq $1,363596 ; a(n) = (Product_{k=1..pi(n+1)} prime(k)^floor(n/(prime(k)-1) ) )/(n+1)!.
 add $0,5
 div $0,2
-seq $0,56603 ; Squarefree kernels of distinct values of lcm(1,...,m) (A051451).
+seq $0,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
 mul $0,3
 mov $2,3
 mul $2,$1

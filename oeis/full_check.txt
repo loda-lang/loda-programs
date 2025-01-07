@@ -255,6 +255,7 @@ A071222: Smallest k such that gcd(n,k) = gcd(n+1,k+1).
 A071928: Kolakoski-(2,4) sequence: a(n) is length of n-th run.
 A071974: Numerator of rational number i/j such that Sagher map sends i/j to n.
 A072292: Number of proper powers b^d <= n (b > 1, d > 1).
+A072911: Number of "phi-divisors" of n.
 A072586: Number of numbers <= n having prime factors with odd exponents only.
 A072613: Number of numbers of the form p*q (p, q distinct primes) less than or equal to n.
 A073093: Number of prime power divisors of n.

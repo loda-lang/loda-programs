@@ -10,6 +10,6 @@ lpb $0
   mov $2,1
 lpe
 mov $3,$1
-cmp $3,0
+equ $3,0
 add $1,$3
 mov $0,$1
