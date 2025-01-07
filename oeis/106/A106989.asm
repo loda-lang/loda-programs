@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,45386 ; Primes congruent to {1, 2, 4} mod 7.
   mov $5,$3
   sub $3,1

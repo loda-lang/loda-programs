@@ -6,6 +6,7 @@ mov $4,2
 add $0,1
 lpb $0
   sub $0,1
+  add $4,1
   seq $4,47236 ; Numbers that are congruent to {1, 2, 4} mod 6.
 lpe
 mov $1,$4

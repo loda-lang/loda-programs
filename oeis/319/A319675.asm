@@ -6,6 +6,7 @@ mov $3,$0
 mov $2,1
 lpb $2
   equ $1,0
+  add $3,1
   seq $3,45533 ; Concatenate the n-th and (n+1)st prime.
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   add $0,$1

@@ -6,4 +6,4 @@ lpb $0
   mod $0,2
   sub $0,1
 lpe
-seq $0,106481 ; An Euler phi transform of 1/(1-x^2).
+seq $0,106481 ; An Euler phi transform of 1/(1 - x^2).

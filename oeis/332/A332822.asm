@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
   add $3,1
   mod $3,3

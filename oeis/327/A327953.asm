@@ -10,6 +10,7 @@ mul $3,6
 lpb $3
   sub $3,3
   mov $2,$1
+  add $2,1
   seq $2,46951 ; a(n) is the number of squares dividing n.
   sub $4,1
   add $4,$2

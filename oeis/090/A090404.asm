@@ -18,6 +18,7 @@ lpb $2
   add $3,$2
   bin $3,$1
   mov $1,$0
+  add $1,1
   seq $1,46311 ; Numbers that are divisible by at least 9 primes (counted with multiplicity).
   mul $3,$1
   add $5,$3

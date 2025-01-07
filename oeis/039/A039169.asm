@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $4,0
   mov $3,$1
+  add $3,1
   seq $3,44417 ; Numbers n such that string 8,5 occurs in the base 10 representation of n but not of n-1.
   lpb $3
     mov $5,$3

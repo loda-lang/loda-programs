@@ -15,7 +15,7 @@ lpb $0
   lpb $6
     mov $2,$6
     gcd $2,$1
-    cmp $2,1
+    equ $2,1
     add $5,$2
     sub $6,1
   lpe

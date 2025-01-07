@@ -11,6 +11,7 @@ gcd $4,$3
 mov $1,$0
 div $1,$4
 add $1,1
+add $0,1
 seq $0,46523 ; Smallest number with same prime signature as n.
 mov $2,$0
 add $0,$1

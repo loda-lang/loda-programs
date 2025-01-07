@@ -12,6 +12,7 @@ lpb $3
   mov $2,$0
   mul $2,$1
   trn $2,1
+  add $2,1
   seq $2,46523 ; Smallest number with same prime signature as n.
   mul $2,4
   mul $3,$4

@@ -10,6 +10,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,47700 ; Numbers that are the sum of 5 positive squares.
   sub $3,1
   add $0,1

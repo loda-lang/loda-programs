@@ -9,6 +9,7 @@ div $0,2
 sub $0,1
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   mul $3,2
   max $3,1

@@ -11,6 +11,7 @@ lpb $2
   seq $5,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
   sub $5,1
   mov $3,$1
+  add $3,1
   seq $3,46079 ; Number of Pythagorean triangles with leg n.
   add $3,$5
   equ $3,1

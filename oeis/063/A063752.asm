@@ -11,7 +11,6 @@ lpb $3
   seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $1,$2
   sub $1,$4
-  sub $1,1
   seq $1,49240 ; Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
   add $1,1
   mod $1,2

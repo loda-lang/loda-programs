@@ -7,6 +7,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,2
   seq $2,46666 ; a(n) = n - (smallest prime dividing n).
   equ $2,0
   sub $4,1

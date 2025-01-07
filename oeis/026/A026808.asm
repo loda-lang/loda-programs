@@ -19,6 +19,7 @@ lpb $4
   add $7,1
   seq $7,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   div $7,3
+  add $5,1
   seq $5,46951 ; a(n) is the number of squares dividing n.
   add $5,$7
   div $5,2

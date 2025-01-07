@@ -1,7 +1,11 @@
 ; A049240: Smallest nonnegative value taken on by x^2 - n*y^2 for an infinite number of integer pairs (x, y).
 ; Submitted by Conan
 ; 0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = -2*truncate((sqrtint(n-1)+sqrtint(n)+1)/2)+sqrtint(n-1)+sqrtint(n)+1
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 nrt $2,2
 add $2,1

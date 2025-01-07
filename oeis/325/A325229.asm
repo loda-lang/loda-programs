@@ -10,7 +10,6 @@ lpb $2
   mov $5,$1
   add $5,1
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  sub $5,1
   seq $5,47330 ; Numbers that are congruent to {0, 1, 3, 5, 6} mod 7.
   sub $5,1
   mov $3,$1

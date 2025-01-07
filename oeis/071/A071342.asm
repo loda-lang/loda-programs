@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,45836 ; Half of theta series of b.c.c. lattice with respect to long edge.
   max $4,$3
   add $1,1

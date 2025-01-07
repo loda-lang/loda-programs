@@ -8,14 +8,15 @@ pow $2,2
 lpb $2
   sub $2,6
   mov $3,$1
+  add $3,1
   seq $3,42997 ; Primes congruent to {2, 3, 4, 5, 6} (mod 7).
   mod $3,7
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

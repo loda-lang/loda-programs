@@ -8,5 +8,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
+add $1,1
 seq $1,46643 ; From square root of Riemann zeta function: form Dirichlet series Sum b_n/n^s whose square is zeta function; sequence gives numerator of b_n.
 mov $0,$1

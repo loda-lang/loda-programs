@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,46913 ; Sum of divisors of n not congruent to 0 mod 3.
     mul $7,$11
     mul $7,$$9

@@ -2,7 +2,10 @@
 ; Submitted by Science United
 ; 2,8,14,20,50,82,114,164
 
+#offset 1
+
 mov $8,-1
+sub $0,1
 lpb $0
   sub $0,1
   mov $7,$6

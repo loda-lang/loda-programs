@@ -19,6 +19,7 @@ lpb $2
     sub $0,$5
   lpe
   mov $5,$1
+  add $0,1
   seq $0,46081 ; Number of integer-sided right triangles with n as a hypotenuse or leg.
   mul $0,$4
   add $1,$0

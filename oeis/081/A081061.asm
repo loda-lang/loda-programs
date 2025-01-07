@@ -7,6 +7,7 @@ add $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
   trn $3,1
   add $3,$4

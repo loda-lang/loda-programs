@@ -1,9 +1,11 @@
 ; A044763: Numbers n such that string 5,0 occurs in the base 10 representation of n but not of n+1.
 ; Submitted by Simon Strandgaard
 ; 50,150,250,350,450,509,550,650,750,850,950,1050,1150,1250,1350,1450,1509,1550,1650,1750,1850,1950,2050,2150,2250,2350,2450,2509,2550,2650,2750,2850,2950,3050,3150,3250,3350,3450,3509
-; Formula: a(n) = truncate((175*floor((10*n+27)/11)+125*floor((10*n+15)/11)-50)/3)-91
+; Formula: a(n) = truncate((175*floor((10*n+17)/11)+125*floor((10*n+5)/11)-50)/3)-91
 
-add $0,2
+#offset 1
+
+add $0,1
 mul $0,10
 mov $1,$0
 add $0,7

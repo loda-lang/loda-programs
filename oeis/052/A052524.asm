@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,2
 seq $0,46736 ; Number of ways to place non-intersecting diagonals in convex n-gon so as to create no triangles.
 lpb $1
   mul $0,$1

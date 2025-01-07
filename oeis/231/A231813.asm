@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
   add $1,1
 lpe

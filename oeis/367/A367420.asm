@@ -9,6 +9,7 @@ lpb $2
   sub $2,15
   add $5,1
   mov $3,$1
+  add $3,1
   seq $3,47930 ; Smallest positive Fibonacci number divisible by n.
   div $3,$5
   mul $3,2

@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,49140 ; Revert transform of 1 - x - x^3.
 lpb $1
   mul $0,$1

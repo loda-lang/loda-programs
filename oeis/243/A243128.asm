@@ -10,6 +10,7 @@ lpb $2
   mov $5,0
   max $5,$1
   mov $6,$1
+  add $6,1
   seq $6,48250 ; Sum of the squarefree divisors of n.
   mov $3,$1
   add $3,1

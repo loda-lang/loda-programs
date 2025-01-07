@@ -7,6 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,43532 ; Number of distinct base-5 digits of n.
   trn $3,2
   min $3,1

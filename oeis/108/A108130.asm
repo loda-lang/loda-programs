@@ -9,9 +9,10 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,46069 ; Smallest m >= 0 such that (2n-1)2^m-1 is prime, or -1 if no such value exists.
+  add $0,1
+  seq $0,46069 ; Riesel Problem: Smallest m >= 0 such that (2n-1)2^m-1 is prime, or -1 if no such value exists.
   mov $4,$0
-  cmp $4,0
+  equ $4,0
   mov $5,$0
   add $5,$4
   add $2,$5

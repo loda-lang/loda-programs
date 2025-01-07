@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,46138 ; Primes p such that p+6 and p+8 are also primes.
   sub $3,1
   mov $5,$3

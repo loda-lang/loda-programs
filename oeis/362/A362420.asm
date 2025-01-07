@@ -12,6 +12,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,46315 ; Odd semiprimes: odd numbers divisible by exactly 2 primes (counted with multiplicity).
   add $2,$0
 lpe

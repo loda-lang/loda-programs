@@ -2,6 +2,9 @@
 ; Submitted by damotbe
 ; 0,2,4,6,6,8,12,12,12,14,14,18,18,18,18,18,20,20
 
+#offset 1
+
+sub $0,1
 seq $0,307342 ; Products of four primes, except fourth powers of primes.
 mov $1,$0
 add $1,$0

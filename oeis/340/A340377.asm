@@ -6,15 +6,16 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,48673 ; Permutation of natural numbers: a(n) = (A003961(n)+1) / 2 [where A003961(n) shifts the prime factorization of n one step towards larger primes].
   seq $3,289814 ; A binary encoding of the twos in ternary representation of n (see Comments for precise definition).
   max $3,1
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

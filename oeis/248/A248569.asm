@@ -4,7 +4,7 @@
 
 #offset 6
 
-sub $0,5
+sub $0,4
 seq $0,45136 ; Numbers whose base-4 representation contains no 2's and exactly three 3's.
 seq $0,57300 ; Binary counter with odd/even bit positions swapped; base-4 counter with 1's replaced by 2's and vice versa.
 add $0,1

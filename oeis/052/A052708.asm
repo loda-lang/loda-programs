@@ -14,6 +14,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,49140 ; Revert transform of 1 - x - x^3.
     mov $9,10
     add $9,$5

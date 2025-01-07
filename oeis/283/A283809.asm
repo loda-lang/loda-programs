@@ -11,6 +11,7 @@ lpb $2
   seq $3,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,48146 ; Sum of non-unitary divisors of n.
   equ $3,0
   sub $0,$3

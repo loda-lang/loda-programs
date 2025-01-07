@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,46117 ; Primes p such that p-6 is also prime. (Upper of a pair of sexy primes.)
   mov $2,$3
   mul $2,$0

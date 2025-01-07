@@ -10,7 +10,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,321944 ; Starting from n, repeatedly compute the sum of the prime divisors until a fixed point or 0 is reached; a(n) is the number of terms, including n.
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -10,6 +10,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,47930 ; Smallest positive Fibonacci number divisible by n.
   add $3,1
   mod $3,2

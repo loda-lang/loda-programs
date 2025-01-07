@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $3,2
+  sub $3,1
   seq $3,46665 ; Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   equ $3,1

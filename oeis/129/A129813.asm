@@ -9,6 +9,7 @@ sub $0,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,45468 ; Primes congruent to {1, 4} mod 5.
   mov $5,$3
   mov $6,$3

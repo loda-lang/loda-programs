@@ -5,7 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  add $2,1
+  add $2,2
   seq $2,45380 ; Primes congruent to 2 mod 5.
   mul $2,-1
   mov $3,0

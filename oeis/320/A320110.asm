@@ -12,7 +12,6 @@ lpb $2
   mov $0,$1
   add $0,1
   dif $0,2
-  sub $0,1
   seq $0,46523 ; Smallest number with same prime signature as n.
   sub $0,1
   seq $0,85089 ; Number of distinct prime signatures arising up to n.

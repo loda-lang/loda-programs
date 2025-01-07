@@ -7,9 +7,9 @@ seq $0,49688 ; a(n) = Sum_{i=0..n} T(i,n-i), array T as in A049687.
 lpb $0
   add $1,$0
   mul $1,2
-  cmp $0,2
+  equ $0,2
   mov $2,$0
-  cmp $2,0
+  equ $2,0
   add $0,$2
 lpe
 mov $0,$1

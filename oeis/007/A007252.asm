@@ -4,9 +4,9 @@
 
 #offset -1
 
-add $0,1
 mov $1,$0
 seq $1,45483 ; McKay-Thompson series of class 5B for the Monster group with a(0) = 1.
+add $0,1
 equ $0,1
 add $0,1
 div $1,$0

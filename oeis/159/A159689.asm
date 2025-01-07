@@ -4,7 +4,7 @@
 
 lpb $0
   mul $0,4
-  add $0,2
+  add $0,3
   seq $0,45114 ; Numbers whose base-4 representation contains exactly one 1 and no 3's.
   div $0,2
   add $0,1

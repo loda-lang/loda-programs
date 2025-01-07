@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,46523 ; Smallest number with same prime signature as n.
   sub $3,1
   seq $3,335603 ; a(n) = p*q where p is the sequential number (or PrimePi, A000720) of the largest prime divisor of n, and q is the maximal exponent in the canonical representation of n (A051903).

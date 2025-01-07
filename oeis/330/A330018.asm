@@ -14,7 +14,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   mul $1,$0
   add $3,$1

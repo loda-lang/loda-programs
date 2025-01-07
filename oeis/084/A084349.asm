@@ -11,6 +11,7 @@ lpb $2
   seq $3,18825 ; Numbers that are not the sum of 2 nonzero squares.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,48146 ; Sum of non-unitary divisors of n.
   equ $3,0
   sub $0,$3

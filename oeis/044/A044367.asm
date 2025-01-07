@@ -1,10 +1,12 @@
 ; A044367: Numbers n such that string 3,5 occurs in the base 10 representation of n but not of n-1.
 ; Submitted by Jon Maiga
 ; 35,135,235,335,350,435,535,635,735,835,935,1035,1135,1235,1335,1350,1435,1535,1635,1735,1835,1935,2035,2135,2235,2335,2350,2435,2535,2635,2735,2835,2935,3035,3135,3235,3335,3350,3435
-; Formula: a(n) = 5*truncate((88*floor((10*n+14)/11)+12*floor((10*n+4)/11)-4)/5)-45
+; Formula: a(n) = 5*truncate((88*floor((10*n+4)/11)+12*truncate((10*n-6)/11)-4)/5)-45
+
+#offset 1
 
 mul $0,10
-add $0,7
+sub $0,3
 mov $1,$0
 add $0,7
 div $0,11

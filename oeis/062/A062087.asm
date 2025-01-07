@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
+  add $3,1
   seq $3,46034 ; Numbers whose digits are primes.
   mov $5,$3
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

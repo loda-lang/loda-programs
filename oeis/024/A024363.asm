@@ -27,6 +27,7 @@ lpb $2
   mul $6,2
   add $6,1
   div $6,2
+  add $0,1
   seq $0,46079 ; Number of Pythagorean triangles with leg n.
   add $0,$6
   mul $0,$4

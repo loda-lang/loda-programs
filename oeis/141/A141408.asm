@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   seq $3,23201 ; Primes p such that p + 6 is also prime. (Lesser of a pair of sexy primes.)
   mov $5,$3
+  add $3,1
   seq $3,48146 ; Sum of non-unitary divisors of n.
   equ $3,0
   sub $0,$3

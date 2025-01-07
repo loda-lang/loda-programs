@@ -4,7 +4,7 @@
 
 #offset 1
 
-add $0,4
+add $0,5
 seq $0,44847 ; Positive integers having no fewer base-6 runs of even length than odd.
 mov $2,11
 add $2,$0

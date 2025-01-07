@@ -4,6 +4,7 @@
 
 dif $0,-2
 max $0,0
+add $0,1
 seq $0,48250 ; Sum of the squarefree divisors of n.
 mul $0,2
 div $0,3

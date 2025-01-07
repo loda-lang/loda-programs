@@ -9,7 +9,8 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,43269 ; a(n) is the sum of the digits of n-th base 10 palindrome.
+  add $0,1
+  seq $0,43269 ; a(n) is the sum of the digits of n-th base-10 palindrome.
   add $1,$0
 lpe
 mov $0,$1

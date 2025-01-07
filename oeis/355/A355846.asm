@@ -25,6 +25,7 @@ lpb $3
   div $4,2
   sub $4,1
   mov $6,$4
+  add $4,1
   seq $4,48146 ; Sum of non-unitary divisors of n.
   equ $4,0
   sub $1,$4

@@ -11,8 +11,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
-  cmp $0,0
+  equ $0,0
   add $1,$0
 lpe
 mov $0,$1

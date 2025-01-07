@@ -7,6 +7,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,48158 ; Triangular array T read by rows: T(n,k) = n mod k, for k=1,2,...,n, n=1,2,...
   add $0,1
   add $3,$0

@@ -20,7 +20,7 @@ lpb $0
     mov $6,0
   lpe
   mov $6,$8
-  sub $6,2
+  sub $6,1
   seq $6,47249 ; Numbers that are congruent to {3, 4, 5} mod 6.
   sub $6,3
   mul $6,4

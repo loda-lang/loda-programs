@@ -16,6 +16,7 @@ lpb $4
     mov $0,$7
     add $0,$1
     trn $0,1
+    add $0,1
     seq $0,45445 ; Number of nonisomorphic systems of catafusenes for the unsymmetrical schemes (group C_s) with two appendages (see references for precise definition).
     mov $2,$1
     mul $2,$0

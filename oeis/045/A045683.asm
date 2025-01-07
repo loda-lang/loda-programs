@@ -12,7 +12,8 @@ lpb $0
   mov $4,$5
   div $4,2
   mov $2,$0
-  seq $2,40001 ; 1 followed by {1, 2} repeated.
+  max $2,1
+  gcd $2,2
   add $4,$2
   mov $2,$4
   sub $2,2

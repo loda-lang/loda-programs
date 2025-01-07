@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   neq $3,0
   sub $0,$3

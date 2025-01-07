@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,46523 ; Smallest number with same prime signature as n.
   seq $3,7955 ; Product of divisors of n.
   mul $3,2

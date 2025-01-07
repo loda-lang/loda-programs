@@ -1,10 +1,11 @@
 ; A348986: Denominator of ratio sigma(n) / A325973(n), where A325973 is the arithmetic mean of {sum of squarefree divisors} and {sum of unitary divisors}.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,4,1,1,1,2,7,1,1,4,1,1,1,10,1,7,1,4,1,1,1,2,16,1,2,4,1,1,1,2,1,1,1,31,1,1,1,2,1,1,1,4,7,1,1,10,29,16,1,4,1,2,1,2,1,1,1,4,1,1,7,34,1,1,1,4,1,1,1,17,1,1,16,4,1,1,1,10
-; Formula: a(n) = truncate(truncate((A034448(n+1)+A048250(n))/2)/gcd(A000203(n+1),truncate((A034448(n+1)+A048250(n))/2)))
+; Formula: a(n) = truncate(truncate((A034448(n+1)+A048250(n+1))/2)/gcd(A000203(n+1),truncate((A034448(n+1)+A048250(n+1))/2)))
 
 mov $1,$0
 mov $2,$0
+add $2,1
 seq $2,48250 ; Sum of the squarefree divisors of n.
 add $0,1
 seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).

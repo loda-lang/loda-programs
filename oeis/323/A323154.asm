@@ -4,6 +4,7 @@
 
 mov $2,$0
 add $2,1
+add $0,1
 seq $0,48146 ; Sum of non-unitary divisors of n.
 mov $1,$0
 gcd $1,$2

@@ -10,6 +10,7 @@ lpb $1
   mov $0,$5
   sub $0,$1
   mov $8,$0
+  add $8,1
   seq $8,48250 ; Sum of the squarefree divisors of n.
   mov $3,$0
   add $3,1

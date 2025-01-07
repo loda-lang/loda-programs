@@ -6,6 +6,7 @@ lpb $0
 lpe
 lpb $0
   mov $1,$0
+  add $1,2
   seq $1,46667 ; a(n) = A046666(n)/2.
   sub $0,$1
 lpe

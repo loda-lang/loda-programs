@@ -5,6 +5,7 @@
 lpb $0
   mul $0,2
   mov $1,$0
+  add $1,1
   seq $1,46924 ; Number of ways to express n as p+2q; p, q = 1 or prime.
   mod $0,2
 lpe

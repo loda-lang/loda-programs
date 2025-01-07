@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   equ $1,1
   sub $0,$1
+  add $0,1
   seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   mul $0,2
   max $0,1

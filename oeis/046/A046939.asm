@@ -2,8 +2,10 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,8,14,20,50,82,126,184
 
+#offset 1
+
 mov $5,$0
-add $5,1
+sub $0,1
 lpb $5
   max $5,$3
   sub $5,1

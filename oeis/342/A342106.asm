@@ -9,4 +9,5 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,49642 ; Numbers k such that the number of divisors of k does not divide the sum of divisors of k.

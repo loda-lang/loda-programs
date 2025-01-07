@@ -9,8 +9,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,2
   seq $2,46666 ; a(n) = n - (smallest prime dividing n).
-  cmp $2,0
+  equ $2,0
   add $4,$3
   sub $4,1
   add $1,$2

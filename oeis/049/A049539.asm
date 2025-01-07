@@ -2,6 +2,9 @@
 ; Submitted by [SG-FC] hl
 ; 1,4,14,43,125,340,896,2281,5672,13807
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $2,$0
 add $2,1

@@ -11,6 +11,7 @@ lpb $2
   seq $5,7425 ; d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
   div $5,3
   mov $3,$1
+  add $3,1
   seq $3,46951 ; a(n) is the number of squares dividing n.
   add $3,$5
   div $3,2

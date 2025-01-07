@@ -17,7 +17,6 @@ lpb $2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$3
   mov $3,$6
-  sub $3,1
   seq $3,48146 ; Sum of non-unitary divisors of n.
   equ $3,0
   sub $0,$3

@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,227349 ; Product of lengths of runs of 1-bits in binary representation of n.
   mov $5,$3
+  add $3,1
   seq $3,47551 ; Numbers that are congruent to {0, 1, 6, 7} mod 8.
   add $4,1
   div $5,$3

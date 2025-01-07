@@ -12,6 +12,7 @@ pow $3,3
 lpb $3
   sub $3,1
   mov $4,$2
+  add $4,1
   seq $4,46034 ; Numbers whose digits are primes.
   sub $4,1
   mov $6,$4

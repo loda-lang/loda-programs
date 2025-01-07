@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   add $2,1
+  add $0,1
   seq $0,46523 ; Smallest number with same prime signature as n.
   mov $1,$0
   gcd $1,$2

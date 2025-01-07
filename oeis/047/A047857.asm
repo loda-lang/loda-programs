@@ -17,11 +17,11 @@ lpb $6
     mov $3,$2
     dif $3,$0
     mov $4,$0
-    cmp $4,0
+    equ $4,0
     add $8,1
     sub $0,1
     sub $2,1
-    cmp $3,$2
+    equ $3,$2
     sub $3,$2
     mov $5,$4
     sub $5,$3

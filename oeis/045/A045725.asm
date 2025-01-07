@@ -5,7 +5,5 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 seq $0,105501 ; Numbers n such that 1 is the leading digit of the n-th Fibonacci number in decimal representation.
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.

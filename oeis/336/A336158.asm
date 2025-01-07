@@ -7,4 +7,5 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
+add $0,1
 seq $0,46523 ; Smallest number with same prime signature as n.

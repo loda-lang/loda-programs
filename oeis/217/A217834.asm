@@ -12,6 +12,7 @@ lpb $0
   mov $5,$2
   mul $2,0
   sub $2,1
+  add $5,1
   seq $5,46951 ; a(n) is the number of squares dividing n.
   add $5,1
   add $5,$2

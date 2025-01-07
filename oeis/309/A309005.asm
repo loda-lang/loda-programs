@@ -7,6 +7,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,49231 ; Primes p such that p - 2 is squarefree.
   sub $3,4
   sub $3,$4

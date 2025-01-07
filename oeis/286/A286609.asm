@@ -9,7 +9,6 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,375240 ; For squarefree j, a(j*k^2) = j * a(k), a(1) = 1.
-  sub $3,1
   seq $3,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
   sub $3,$1
   max $3,0

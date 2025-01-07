@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,48250 ; Sum of the squarefree divisors of n.
   add $3,$5
   div $3,2

@@ -16,6 +16,7 @@ lpb $2
   mov $3,$6
   add $3,2
   mov $5,$3
+  add $3,1
   seq $3,48146 ; Sum of non-unitary divisors of n.
   equ $3,0
   sub $0,$3
