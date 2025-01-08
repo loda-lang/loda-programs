@@ -15,6 +15,7 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
+  add $0,1
   seq $0,55225 ; a(n) = Sum_{k divides n} (n/k)^k.
   mul $1,$0
   add $3,$1

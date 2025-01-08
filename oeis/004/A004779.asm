@@ -8,6 +8,7 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,56974 ; Number of blocks of {0, 0, 0} in the binary expansion of n.
   min $3,1
   sub $0,$3

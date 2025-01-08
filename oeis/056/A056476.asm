@@ -1,10 +1,32 @@
 ; A056476: Number of primitive (aperiodic) palindromic structures of length n using a maximum of two different symbols.
 ; Submitted by Science United
 ; 1,1,0,1,1,3,2,7,6,14,12,31,27,63,56,123,120,255,238,511,495,1015,992,2047,2010,4092,4032,8176,8127,16383,16242,32767,32640,65503,65280,131061,130788,262143,261632,524223,523770,1048575,1047494,2097151,2096127,4194162,4192256,8388607,8386440,16777208,16773108,33554175,33550335,67108863,67100432,134217693,134209530,268434943,268419072,536870911,536854005,1073741823,1073709056,2147482610,2147450880,4294967229,4294900766,8589934591,8589869055,17179867135,17179738044,34359738367,34359605280
-; Formula: a(n) = truncate(A056458(max(n-1,0))/2)
 
 mov $1,$0
 trn $1,1
-seq $1,56458 ; Number of primitive (aperiodic) palindromes using a maximum of two different symbols.
-mov $0,$1
-div $0,2
+add $1,1
+mov $2,0
+mov $3,$1
+sub $1,1
+mov $4,$1
+bin $4,2
+add $4,$1
+add $4,$3
+lpb $3
+  sub $3,1
+  mov $1,$4
+  sub $1,$3
+  sub $1,1
+  mov $5,$1
+  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  seq $1,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  div $1,2
+  mov $6,2
+  pow $6,$1
+  mov $1,$6
+  mul $1,$5
+  add $2,$1
+lpe
+mov $0,$2
+mov $1,$2
+mul $1,2

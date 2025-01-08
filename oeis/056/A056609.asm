@@ -12,10 +12,13 @@ lpb $3
   max $2,0
   mov $4,$2
   seq $4,345466 ; a(n) = Product_{k=1..n} binomial(n, floor(n/k)).
-  seq $2,99788 ; a(n) = Product_{i=1..2n} prime(i).
-  gcd $4,$2
+  mov $5,$2
+  add $5,$2
+  seq $5,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+  gcd $4,$5
   bin $0,$3
   gcd $1,$4
+  mov $2,$5
   mov $2,$4
 lpe
 div $2,$1

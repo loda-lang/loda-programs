@@ -16,7 +16,6 @@ lpb $4
   sub $0,$6
   add $0,1
   seq $0,40 ; The prime numbers.
-  sub $0,1
   seq $0,57627 ; Number of nonsquarefree numbers not exceeding n.
   mov $1,$4
   mul $1,$0

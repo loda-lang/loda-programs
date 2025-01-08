@@ -4,8 +4,8 @@
 
 add $0,3
 lpb $0
-  sub $0,3
   mov $1,$0
+  sub $1,2
   seq $1,56493 ; Number of primitive (period n) periodic palindromes using a maximum of two different symbols.
   mov $0,3
 lpe

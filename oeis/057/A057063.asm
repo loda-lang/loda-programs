@@ -10,7 +10,7 @@ lpb $0
   mov $1,$2
   dif $1,$0
   mul $1,$0
-  cmp $1,$2
+  equ $1,$2
   mul $1,$0
   sub $0,1
   sub $2,$1

@@ -2,8 +2,10 @@
 ; Submitted by Ralfy
 ; 1,1,3,9,30,102,378,1440,5607,22155,87978,350775,1400490,5597487,22379145,89498880,357952170,1431737433,5726775978,22906819575,91626580269,366505186047,1466017950378,5864067254880
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -18,7 +20,16 @@ lpb $2
   mov $5,0
   add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,56323 ; Number of reversible string structures with n beads using a maximum of four different colors.
+  mov $6,2
+  pow $6,$0
+  div $6,3
+  add $6,1
+  mov $0,$6
+  mul $0,3
+  add $0,6
+  pow $0,2
+  sub $0,25
+  div $0,48
   mul $0,$4
   add $1,$0
 lpe

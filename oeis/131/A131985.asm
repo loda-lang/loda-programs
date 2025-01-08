@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    sub $7,1
     seq $7,58538 ; McKay-Thompson series of class 18c for Monster.
     mov $9,10
     add $9,$5

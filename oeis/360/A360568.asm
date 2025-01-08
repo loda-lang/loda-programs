@@ -14,10 +14,11 @@ lpb $0
     gcd $4,$0
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,55491 ; Smallest square divisible by n divided by largest square which divides n.
     add $7,1
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$4
     sub $4,$0

@@ -8,7 +8,7 @@ lpb $3
   mul $4,$3
   mul $1,$3
   add $1,$4
-  cmp $4,0
+  equ $4,0
   add $5,$4
   mul $1,$3
   div $1,$5

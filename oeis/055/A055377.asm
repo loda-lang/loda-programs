@@ -1,9 +1,20 @@
 ; A055377: a(n) = largest prime <= n/2.
 ; Submitted by Jave808
 ; 2,2,3,3,3,3,5,5,5,5,7,7,7,7,7,7,7,7,11,11,11,11,13,13,13,13,13,13,13,13,17,17,17,17,19,19,19,19,19,19,19,19,23,23,23,23,23,23,23,23,23,23,23,23,29,29,29,29,31,31,31,31,31,31,31,31,31,31,31,31,37,37,37,37,37,37,37,37,41,41
-; Formula: a(n) = A151799(floor(n/2))
 
 div $0,2
 mov $1,$0
-seq $1,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+add $1,1
+div $1,2
+mul $1,2
+trn $1,1
+add $1,2
+lpb $1
+  sub $1,1
+  mov $2,$1
+  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  sub $1,1
+  add $1,$2
+  add $1,$2
+lpe
 mov $0,$1

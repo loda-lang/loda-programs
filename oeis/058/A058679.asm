@@ -4,8 +4,7 @@
 
 mov $1,$0
 add $1,1
-cmp $1,2
-cmp $1,0
+neq $1,2
 seq $0,132320 ; McKay-Thompson series of class 22B for the Monster group with a(0) = -2.
 mul $0,$1
 gcd $0,$0

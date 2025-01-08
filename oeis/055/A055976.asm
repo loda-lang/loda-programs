@@ -2,10 +2,12 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,0,3,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
 sub $1,1
+sub $0,1
 mov $3,2
 sub $3,$0
 mov $2,$3

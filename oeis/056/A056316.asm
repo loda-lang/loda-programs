@@ -2,8 +2,10 @@
 ; Submitted by bcavnaugh
 ; 5,10,70,310,1620,7790,39370,195300,978050,4882740,24421870,122069940,610390620,3051757490,15258982680,76293945000,381470703120,1907348623450,9536748046870,47683715818440
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -18,7 +20,15 @@ lpb $2
   mov $5,0
   add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,32122 ; Number of reversible strings with n beads of 5 colors.
+  mov $6,5
+  pow $6,$0
+  add $0,1
+  div $0,2
+  mov $7,5
+  pow $7,$0
+  add $6,$7
+  mov $0,$6
+  div $0,2
   mul $0,$4
   add $1,$0
 lpe

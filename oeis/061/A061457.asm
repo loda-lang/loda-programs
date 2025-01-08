@@ -4,8 +4,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 mov $2,$0
 sub $0,1
 pow $2,4
@@ -14,6 +12,7 @@ lpb $2
   pow $3,2
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   trn $3,1
+  add $3,1
   seq $3,55491 ; Smallest square divisible by n divided by largest square which divides n.
   equ $3,1
   sub $0,$3

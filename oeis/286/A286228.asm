@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,46523 ; Smallest number with same prime signature as n.
-  sub $3,1
   seq $3,59532 ; Beatty sequence for 1 + Pi.
   mul $3,2
   mov $5,-1

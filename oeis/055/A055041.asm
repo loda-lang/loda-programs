@@ -9,13 +9,13 @@ lpb $2
   mov $3,$1
   seq $3,277547 ; a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
   mul $3,2
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,$4
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -13,6 +13,7 @@ lpb $2
   add $3,1
   seq $3,1414 ; Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
   trn $3,1
+  add $3,1
   seq $3,56536 ; Mapping from half-antidiagonal reading of the triangle (as used in A028297) to the column-by-column reading of the triangular tables.
   sub $3,1
   seq $3,125662 ; A convolution triangle of numbers based on A001906 (even-indexed Fibonacci numbers).

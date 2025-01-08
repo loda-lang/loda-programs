@@ -4,10 +4,11 @@
 
 mov $2,$0
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,55679 ; Number of distinct prime factors of phi(n!).
   sub $0,$3
+  add $1,2
   mov $2,$0
 lpe
 add $0,1

@@ -5,7 +5,9 @@
 lpb $0
   mov $1,$0
   trn $1,1
-  seq $1,61742 ; a(n) is the square of the product of first n primes.
+  seq $1,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+  mov $2,$1
+  mul $1,$2
   trn $0,$1
 lpe
 mov $0,$1

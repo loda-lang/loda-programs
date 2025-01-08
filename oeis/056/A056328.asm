@@ -14,7 +14,9 @@ lpb $4
   bin $1,$0
   sub $0,$1
   mov $5,$0
+  add $0,1
   seq $0,56332 ; Number of primitive (aperiodic) reversible string structures with n beads using a maximum of three different colors.
+  add $5,1
   seq $5,56333 ; Number of primitive (aperiodic) reversible string structures with n beads using a maximum of four different colors.
   sub $5,$0
   mul $1,$5

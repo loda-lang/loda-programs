@@ -2,6 +2,9 @@
 ; Submitted by JayPi
 ; 1,3,6,11,15,22,30,41,48,61
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   sub $3,$1

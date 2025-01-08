@@ -10,7 +10,6 @@ lpb $2
   seq $3,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
   add $3,1
   seq $3,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
-  sub $3,1
   seq $3,55231 ; Powerfree part of n: product of primes that divide n only once.
   equ $3,1
   sub $0,$3

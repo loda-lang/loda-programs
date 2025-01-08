@@ -8,14 +8,15 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,56924 ; Number of divisors of n that are smaller than sqrt(n).
-  cmp $3,1
+  equ $3,1
   gcd $3,2
   sub $0,$3
   add $0,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,2
   mul $2,$4
   sub $2,1

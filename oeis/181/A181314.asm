@@ -5,8 +5,9 @@
 mov $1,4
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,56493 ; Number of primitive (period n) periodic palindromes using a maximum of two different symbols.
-  cmp $0,6
+  equ $0,6
   mul $1,$2
   mov $2,$0
 lpe

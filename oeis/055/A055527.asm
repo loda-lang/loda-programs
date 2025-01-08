@@ -7,12 +7,11 @@ mov $2,$0
 lpb $0
   add $2,2
   sub $2,$5
-  cmp $5,$3
+  equ $5,$3
   mov $3,$2
   dif $3,$0
   mov $4,$3
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$5
   add $0,$1
   sub $0,1

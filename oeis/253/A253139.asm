@@ -19,6 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
+    add $5,1
     seq $5,58312 ; Denominator of the n-th alternating harmonic number, Sum_{k=1..n} (-1)^(k+1)/k.
     add $4,1
   lpe

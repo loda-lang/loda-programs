@@ -11,6 +11,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
   mul $0,2
 lpe

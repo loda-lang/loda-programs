@@ -1,13 +1,19 @@
 ; A058262: a(n) is the quotient obtained when the totient of primorial (that is, the product of p-1 values) is divided by the LCM of the same p-1 values.
 ; Submitted by Athlici
 ; 1,1,2,4,8,96,384,2304,4608,18432,552960,19906560,796262400,33443020800,66886041600,267544166400,535088332800,32105299968000,2118949797888000,148326485852160000,10679506981355520000,833001544545730560000,1666003089091461120000,146608271840048578560000,7037197048322331770880000,140743940966446635417600000,844463645798679812505600000,1688927291597359625011200000,60801382497504946500403200000,6809754839720554008045158400000,858029109804789805013689958400000,111543784274622674651779694592000000
-; Formula: a(n) = truncate(A005867(n+1)/gcd(A005867(n+1),A058254(n+1)))
+; Formula: a(n) = truncate(A005867(n+1)/gcd(A005867(n+1),A096226(truncate((A102476(n+2)+1)/4)-1)-1))
 
 add $0,1
 mov $1,$0
 seq $1,5867 ; a(0) = 1; for n > 0, a(n) = (prime(n)-1)*a(n-1).
 mov $2,$1
-seq $0,58254 ; a(n) = lcm{prime(i)-1, i=1..n}.
+add $0,1
+seq $0,102476 ; Least modulus with 2^n square roots of 1.
+add $0,1
+div $0,4
+sub $0,1
+seq $0,96226 ; a(n) is the least exponent k > 1 such that m^k is congruent to m modulo n for all natural numbers m, or a(n) = 1 if no such k exists.
+sub $0,1
 gcd $1,$0
 div $2,$1
 mov $0,$2

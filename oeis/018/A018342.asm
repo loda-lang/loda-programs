@@ -8,7 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   add $1,1
-  mov $3,3
+  mov $3,4
   seq $3,57532 ; n is odd and sum of digits of n equals the numbers of divisors of n.
   gcd $3,$1
   div $3,$1

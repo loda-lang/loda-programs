@@ -8,6 +8,6 @@ lpb $0
   sub $0,1
   mul $1,$2
   sub $2,$3
-  cmp $3,0
+  equ $3,0
 lpe
 mov $0,$1

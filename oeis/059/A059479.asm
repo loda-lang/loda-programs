@@ -5,8 +5,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 max $2,$0
 mov $1,$2
 pow $1,2

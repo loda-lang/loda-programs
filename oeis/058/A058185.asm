@@ -8,12 +8,12 @@ lpb $2
   mov $3,$1
   seq $3,246462 ; a(n) = Sum_{k=0..n} (2k+1)*C(n,k)^2*C(n+k,k)^2, where C(n,k) denotes the binomial coefficient n!/(k!*(n-k)!).
   gcd $3,10
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

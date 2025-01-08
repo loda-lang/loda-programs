@@ -43,6 +43,7 @@ A006519: Highest power of 2 dividing n.
 A006862: Euclid numbers: 1 + product of the first n primes.
 A007088: The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
 A007423: a(n) = mu(n) + 1, where mu is the Moebius function.
+A007619: Wilson quotients: ((p-1)! + 1)/p where p is the n-th prime.
 A007652: Final digit of prime(n).
 A007947: Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
 A008328: Number of divisors of prime(n)-1.
@@ -289,6 +290,7 @@ A089241: Even numbers k such that k/2 - 1 is prime.
 A089250: Add 2 (mod 10) to each decimal digit of Pi.
 A090076: a(n) = prime(n)*prime(n+2).
 A090080: In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
+A091330: a(n) = ((p-1)!/p) - ((p-1)*(p-1)!/p!), where p is the n-th prime.
 A092759: a(n) = prime(n)^7.
 A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.

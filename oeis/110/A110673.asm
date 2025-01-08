@@ -17,6 +17,7 @@ lpb $3
   mov $4,$6
   mul $4,$2
   add $4,$6
+  add $4,1
   seq $4,55976 ; Remainder when (n-1)! + 1 is divided by n.
   sub $1,$4
   mov $5,$1

@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,59861 ; a(n) = Product_{i=2..n} (prime(i) - 2).
   mov $0,1
 lpe

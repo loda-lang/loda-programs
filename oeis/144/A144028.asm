@@ -11,6 +11,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
     mov $9,10
     add $9,$5

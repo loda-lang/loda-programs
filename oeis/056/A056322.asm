@@ -5,6 +5,7 @@
 mov $1,2
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,56282 ; Number of primitive (aperiodic) word structures of length n which contain exactly six different symbols.
   div $0,$1
   add $1,$2

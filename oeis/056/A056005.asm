@@ -13,7 +13,6 @@ lpb $2
   lpb $5
     sub $5,1
     mov $0,$6
-    sub $0,1
     seq $0,56078 ; Number of proper T_1-hypergraphs with 3 labeled nodes and n hyperedges.
     add $3,$0
   lpe

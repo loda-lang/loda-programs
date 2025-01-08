@@ -10,10 +10,10 @@ add $0,1
 mov $1,312
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,56924 ; Number of divisors of n that are smaller than sqrt(n).
   sub $3,9
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   sub $2,$0

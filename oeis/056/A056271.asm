@@ -2,9 +2,13 @@
 ; Submitted by Hoshione
 ; 0,0,0,0,0,720,15120,191520,1905120,16435440,129230640,953028720,6711344640,45674173440,302899156560,1969146930240,12604139926560,79694818842240,499018753280880,3100376788241040
 
+#offset 1
+
 mov $1,2
+sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,56282 ; Number of primitive (aperiodic) word structures of length n which contain exactly six different symbols.
   mov $0,$1
   div $0,$1

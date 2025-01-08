@@ -4,13 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,5
+sub $0,1
+add $2,4
 pow $2,2
 lpb $2
   sub $2,$4
   mov $3,$1
+  add $3,1
   seq $3,56175 ; Number of nonunitary prime divisors of the central binomial coefficient C(n, floor(n/2)) (A001405).
   equ $3,1
   sub $0,$3

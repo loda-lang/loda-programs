@@ -2,8 +2,10 @@
 ; Submitted by treaclepumpkin
 ; 2,5,10,17,27,42,62,90,128,180,248,340,459,616,819,1082,1417,1848,2392,3083,3951,5042,6401,8098,10198,12799,16001,19941,24762,30662,37844,46583,57174,69996,85464,104109,126506,153385,185552,224003,269846
 
+#offset 1
+
 mov $1,$0
-add $1,1
+sub $0,1
 lpb $1
   mov $3,$1
   seq $3,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.

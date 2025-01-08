@@ -12,21 +12,19 @@ lpb $3
   lpb $5
     mov $7,$0
     mod $7,$2
-    cmp $7,0
+    equ $7,0
     div $0,$2
     sub $5,$7
     add $6,1
     mod $6,3
   lpe
-  cmp $6,0
-  cmp $6,0
+  neq $6,0
   mov $7,$2
   pow $7,$6
   mul $1,$7
   add $2,1
   mov $7,$0
-  cmp $7,1
-  cmp $7,0
+  neq $7,1
   sub $3,$6
   sub $3,$7
 lpe

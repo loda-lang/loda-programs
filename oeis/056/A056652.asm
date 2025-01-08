@@ -10,11 +10,11 @@ lpb $2
   mov $3,$1
   seq $3,336467 ; Fully multiplicative with a(2) = 1 and a(p) = A000265(p+1) for odd primes p, with A000265(k) giving the odd part of k.
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   add $1,$4
   mul $2,$4

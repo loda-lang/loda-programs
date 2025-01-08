@@ -8,5 +8,6 @@ lpb $0
   mov $1,0
   mov $2,$0
 lpe
+add $2,1
 seq $2,59522 ; a(1) = 1, then a(n) = n*(n^(n-1)-1)*(n-2)!/(n-1).
 mov $0,$2

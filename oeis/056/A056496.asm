@@ -2,8 +2,10 @@
 ; Submitted by artemis8
 ; 5,10,20,60,120,340,620,1800,3100,9240,15620,46440,78120,233740,390480,1170000,1953120,5855900,9765620,29287440,48827480,146468740,244140620,732373200,1220703000,3662031240
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -17,8 +19,15 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  add $0,1
-  seq $0,18421 ; Divisors of 375.
+  mov $6,$0
+  div $6,2
+  mov $7,5
+  pow $7,$6
+  mod $0,2
+  mul $0,4
+  mul $0,$7
+  div $0,2
+  add $0,$7
   mul $0,$4
   add $1,$0
 lpe

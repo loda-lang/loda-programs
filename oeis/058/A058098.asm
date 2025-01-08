@@ -4,8 +4,7 @@
 
 mov $1,$0
 add $1,1
-cmp $1,2
-cmp $1,0
+neq $1,2
 mov $4,3
 add $0,3
 lpb $0

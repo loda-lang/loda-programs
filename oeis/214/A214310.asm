@@ -31,6 +31,7 @@ lpb $5
   div $7,$8
   mov $1,$7
   div $1,91
+  add $6,1
   seq $6,56499 ; Number of primitive (period n) periodic palindromes using exactly three different symbols.
   sub $6,$1
   mul $1,2

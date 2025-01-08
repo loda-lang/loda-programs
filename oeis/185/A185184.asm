@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 add $0,1
 seq $0,55143 ; The first n digits of the juxtaposition of the base-2 numbers converted to decimal.
 sub $0,1

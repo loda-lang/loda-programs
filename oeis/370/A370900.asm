@@ -11,6 +11,7 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
+    add $2,1
     seq $2,57521 ; Powerful (1) part of n: if n = Product_i (pi^ei) then a(n) = Product_{i : ei > 1} (pi^ei); if n=b*c^2*d^3 then a(n)=c^2*d^3 when b is minimized.
     div $0,$2
   lpe

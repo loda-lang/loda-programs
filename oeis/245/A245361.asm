@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  add $3,1
   seq $3,55491 ; Smallest square divisible by n divided by largest square which divides n.
   equ $3,1
   sub $0,$3

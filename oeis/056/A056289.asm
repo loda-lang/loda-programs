@@ -1,9 +1,38 @@
 ; A056289: Number of primitive (period n) n-bead necklaces with exactly four different colored beads.
 ; Submitted by Alessandro Chimetto
 ; 0,0,0,6,48,260,1200,5100,20720,81828,318000,1222870,4675440,17813820,67769504,257695800,980240880,3731732200,14222737200,54278498154,207438936800,793940157900,3043140078000,11681056021300,44900438149248,172824327151140,666070256468960,2570217436761390,9929512340119920,38403264850118556,148684365733134000,576229125456274200,2235295154669942240,8678858721734390580,33725471278376392176,131160169574266334320,510477426937287853680,1988222640011122812780,7749108838111376714720,30221929723957611148380
-; Formula: a(n) = truncate(A056269(n)/(n+1))
 
 mov $1,$0
 add $1,1
-seq $0,56269 ; Number of primitive (aperiodic) words of length n which contain exactly four different symbols.
+mov $2,0
+mov $4,$0
+bin $4,2
+add $4,$0
+add $4,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$4
+  sub $0,$3
+  mov $5,$0
+  seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $6,0
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $7,4
+  pow $7,$0
+  mov $9,2
+  pow $9,$0
+  mov $8,3
+  pow $8,$0
+  sub $8,$9
+  mov $0,$8
+  mul $0,3
+  sub $7,1
+  sub $7,$0
+  mov $0,$7
+  mul $0,4
+  mul $0,$5
+  add $2,$0
+lpe
+mov $0,$2
 div $0,$1

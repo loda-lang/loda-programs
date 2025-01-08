@@ -6,6 +6,7 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  add $5,2
   seq $5,57963 ; Triangle T(n,k) of number of minimal 2-covers of a labeled n-set that cover k points of that set uniquely (k=2,..,n).
   mov $3,$1
   add $3,1

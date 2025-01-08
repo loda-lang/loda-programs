@@ -10,14 +10,13 @@ lpb $2
   mov $3,$1
   div $3,2
   seq $3,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
-  sub $3,1
   seq $3,56169 ; Number of unitary prime divisors of n.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

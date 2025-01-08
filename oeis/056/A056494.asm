@@ -17,7 +17,13 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  seq $0,38754 ; a(2n) = 3^n, a(2n+1) = 2*3^n.
+  mov $6,$0
+  div $6,2
+  sub $0,1
+  gcd $0,2
+  mov $7,3
+  pow $7,$6
+  mul $0,$7
   mul $0,$4
   add $1,$0
 lpe

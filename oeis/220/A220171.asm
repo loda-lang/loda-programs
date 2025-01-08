@@ -10,6 +10,7 @@ pow $2,3
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,58026 ; Number of positive integers, k, where k <= n and gcd(k,n) = gcd(k+1,n) = 1.
   mod $3,3
   sub $3,1

@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 0,0,0,0,60,900,8400,63000,417120,2551500,14804700,82764000,450518460,2404502100,12646078140,65771433000,339165516120,1737485731740,8855359634100,44952365429940,227475768899460
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -15,6 +18,7 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
   seq $0,56312 ; Number of reversible strings with n beads using exactly five different colors.
   mul $0,$4
   add $1,$0

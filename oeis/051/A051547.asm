@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   mov $3,$2
   mov $2,$0
+  add $2,1
   seq $2,55035 ; Degree of minimal polynomial of sin(Pi/n) over the rationals.
   lpb $3
     mov $3,0
