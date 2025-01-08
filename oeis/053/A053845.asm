@@ -7,7 +7,11 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,109723 ; Sum of the first 2n+1 primes.
+  mul $3,2
+  mov $6,$3
+  seq $6,101301 ; The sum of the first n primes, minus n.
+  add $3,$6
+  add $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

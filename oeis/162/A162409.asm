@@ -11,7 +11,6 @@ lpb $2
   add $3,1
   seq $3,69059 ; Numbers k such that k and sigma(k) are not relatively prime.
   mov $5,$3
-  sub $3,1
   seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.
   equ $3,2
   sub $0,$3

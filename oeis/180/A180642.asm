@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,7
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $3,1
   seq $3,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
   sub $3,3
   equ $3,1

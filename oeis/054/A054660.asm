@@ -12,6 +12,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $4,$2
+  add $4,1
   seq $4,54664 ; Number of 4-ary Lyndon words of length n with trace 0 mod 4.
   add $1,$4
   mov $3,$0

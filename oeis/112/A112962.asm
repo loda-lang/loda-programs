@@ -13,7 +13,6 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,106476 ; Sequence array of Euler phi function.
-  sub $0,1
   seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
   mul $0,$4
   add $1,$0

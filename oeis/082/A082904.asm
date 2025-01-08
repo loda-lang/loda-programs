@@ -8,17 +8,17 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $6,$1
+  add $6,1
   seq $6,51731 ; Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 <= k <= n.
   mov $3,$1
   seq $3,135278 ; Triangle read by rows, giving the numbers T(n,m) = binomial(n+1, m+1); or, Pascal's triangle A007318 with its left-hand edge removed.
   mul $3,$6
   mov $5,$3
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

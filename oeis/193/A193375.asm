@@ -14,8 +14,9 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,50155 ; Triangle T(n,k), k>=0 and n>=1, read by rows defined by: T(n,k) = (2k+3)*binomial(2n,n-k-1)/(n+k+2).
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

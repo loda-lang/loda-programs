@@ -8,6 +8,7 @@ lpb $0
   sub $0,$1
   mov $1,0
   mov $2,$0
+  add $2,1
   seq $2,51038 ; 11-smooth numbers: numbers whose prime divisors are all <= 11.
 lpe
 mov $0,$2

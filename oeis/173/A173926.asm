@@ -10,7 +10,6 @@ lpb $3
   add $0,$3
   add $0,1
   seq $0,40 ; The prime numbers.
-  sub $0,2
   seq $0,53001 ; Largest prime < n^2.
   mov $2,$3
   mul $2,$0

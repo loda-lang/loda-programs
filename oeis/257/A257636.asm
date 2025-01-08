@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,102069 ; Analogous to the oblong (promic or heteromecic) sequence formed but with reversal digits of factors multiplied.
-  sub $3,1
   seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.
   equ $3,2
   sub $0,$3

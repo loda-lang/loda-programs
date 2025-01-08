@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   mov $4,$0
   mul $4,2
+  add $4,1
   seq $4,53657 ; a(n) = Product_{p prime} p^{ Sum_{k>=0} floor[(n-1)/((p-1)p^k)]}.
   mov $2,$0
   seq $2,348948 ; a(n) = sigma(n) / gcd(sigma(n), A348944(n)), where A348944 is the arithmetic mean of A003959 and A034448, and sigma is the sum of divisors function.

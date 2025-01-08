@@ -11,13 +11,14 @@ lpb $2
   mov $0,$4
   sub $0,$2
   lpb $0
+    add $0,1
     seq $0,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
     add $1,$0
     sub $0,1
   lpe
   mov $3,$1
   seq $3,279228 ; Number of unit steps that are shared by the smallest and largest Dyck path of the symmetric representation of sigma(n).
-  cmp $3,0
+  equ $3,0
   add $5,$3
 lpe
 mov $0,$5

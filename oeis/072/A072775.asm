@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,51904 ; Minimal exponent in prime factorization of n.
   sub $6,1
   mov $7,$1

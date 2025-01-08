@@ -7,6 +7,7 @@ lpb $0
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,52467 ; Binomial transform of {b(n)}, where b(n)=1 for prime n and b(n)=0 otherwise.
   add $3,$4
 lpe

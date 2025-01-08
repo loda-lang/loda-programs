@@ -6,7 +6,8 @@ mov $1,$0
 add $1,2
 lpb $0
   mov $3,$0
-  seq $3,51903 ; Maximal exponent in prime factorization of n.
+  add $3,1
+  seq $3,51903 ; Maximum exponent in the prime factorization of n.
   sub $0,1
   add $2,$3
 lpe

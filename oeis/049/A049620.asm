@@ -10,7 +10,6 @@ lpb $3
   mov $0,$4
   sub $0,$3
   lpb $0
-    sub $0,1
     seq $0,51953 ; Cototient(n) := n - phi(n).
     mul $0,2
     sub $0,1

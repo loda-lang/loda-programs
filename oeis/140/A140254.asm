@@ -20,6 +20,7 @@ lpb $2
   mov $4,$0
   seq $4,138618 ; Triangle of exponentials of Mangoldt function M(n) read by rows, in which row products give the natural numbers.
   mul $5,$4
+  add $0,1
   seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
   mul $0,$5
   add $1,$0

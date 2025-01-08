@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   seq $3,37020 ; Numbers whose sum of proper (or aliquot) divisors is a prime.
   mov $5,$3
-  sub $3,1
   seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.
   equ $3,2
   sub $0,$3

@@ -9,5 +9,4 @@ add $0,1
 sub $1,$0
 dif $1,2
 add $0,$1
-sub $0,1
 seq $0,51953 ; Cototient(n) := n - phi(n).

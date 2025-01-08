@@ -7,9 +7,10 @@ seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,
 min $1,2
 pow $2,$0
 mov $3,$1
-cmp $3,2
+equ $3,2
 sub $3,$2
 mul $0,$3
+add $0,1
 seq $0,54527 ; Triangle read by rows: T(n,k) = Moebius mu(k) (n >= 1, 1 <= k <= n).
 mul $0,4
 mul $0,$3

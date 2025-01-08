@@ -8,9 +8,8 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  seq $3,66071 ; Nonprime numbers n such that phi(n) + 1 is prime.
+  seq $3,66071 ; Nonprime numbers k such that phi(k) + 1 is prime.
   mov $5,$3
-  sub $3,1
   seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.
   equ $3,2
   sub $0,$3

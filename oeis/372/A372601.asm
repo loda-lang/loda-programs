@@ -4,6 +4,7 @@
 
 mov $1,1
 mov $2,$0
+add $2,1
 seq $2,51903 ; Maximum exponent in the prime factorization of n.
 mov $3,1
 add $3,$2

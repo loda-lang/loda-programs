@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,51532 ; The abelian orders (or abelian numbers): numbers m such that every group of order m is abelian.
   sub $3,1
   add $0,1

@@ -8,6 +8,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
   mov $5,$1
   add $5,1

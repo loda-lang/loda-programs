@@ -13,7 +13,7 @@ lpb $0
     mov $7,$4
     seq $7,130107 ; Möbius transform of A063659.
     dif $7,3
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $6,$5

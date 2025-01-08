@@ -11,6 +11,7 @@ lpb $2
   seq $7,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $7,1
   mov $6,$1
+  add $6,1
   seq $6,53470 ; a(n) is the cototient of n (A051953) iterated twice.
   add $7,$6
   mov $6,$7

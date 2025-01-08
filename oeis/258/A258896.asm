@@ -5,6 +5,7 @@
 mov $1,2
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,52292 ; Primes of form 4*p^2 + 1, p prime.
   mov $0,0
 lpe

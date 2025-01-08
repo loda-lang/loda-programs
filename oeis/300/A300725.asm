@@ -18,6 +18,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,53645 ; Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
   mul $0,$4
   add $1,$0

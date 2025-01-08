@@ -8,8 +8,9 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,51903 ; Maximal exponent in prime factorization of n.
-  cmp $0,2
+  add $0,1
+  seq $0,51903 ; Maximum exponent in the prime factorization of n.
+  equ $0,2
   add $2,$0
 lpe
 mov $0,$2

@@ -12,7 +12,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     seq $7,345990 ; Smallest m such that n divides m*(m+1)*(m+2).
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $6,$5

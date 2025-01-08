@@ -6,5 +6,6 @@ mov $1,$0
 neq $1,0
 seq $0,193231 ; Blue code for n: in binary coding of a polynomial over GF(2), substitute x+1 for x (see Comments for precise definition).
 trn $0,1
+add $0,1
 seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
 mul $0,$1

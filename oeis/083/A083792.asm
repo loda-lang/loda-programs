@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,52213 ; Numbers k with prime signature(k) = prime signature(k+1).
   sub $3,1
   add $0,1

@@ -14,8 +14,11 @@ lpb $2
   seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $5,1
   mod $5,2
+  mov $6,$1
+  seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$1
-  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mov $3,$6
+  add $3,1
   mul $5,$3
   mov $3,$5
   seq $3,209229 ; Characteristic function of powers of 2, cf. A000079.

@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,52293 ; Numbers of the form 11 + x^2 + x or 11 + 2*x^2.
   mov $2,$3
   mul $2,$0

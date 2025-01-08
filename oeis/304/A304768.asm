@@ -8,6 +8,7 @@ add $0,1
 pow $2,5
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,51904 ; Minimal exponent in prime factorization of n.
   sub $5,1
   mov $3,$1

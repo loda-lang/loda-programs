@@ -2,7 +2,8 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,2,5,10,13,25,37,58,85,130
 
-add $0,1
+#offset 1
+
 lpb $0
   sub $0,1
   add $5,$6
@@ -15,7 +16,7 @@ lpb $0
   add $5,$6
   mov $1,$3
   mov $3,$5
-  cmp $6,3
+  equ $6,3
 lpe
 mov $0,$3
 add $0,1

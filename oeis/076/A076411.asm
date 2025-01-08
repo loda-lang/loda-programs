@@ -5,8 +5,9 @@
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
-  cmp $2,1
+  equ $2,1
   add $2,1
   mod $2,2
   sub $0,1

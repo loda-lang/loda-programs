@@ -14,8 +14,9 @@ lpb $2
   seq $5,154115 ; Numbers n such that n + 3 is prime.
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$5
+  seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   sub $3,1
-  seq $3,210625 ; Least semiprime dividing digit reversal of n, or 0 if no such factor.
+  seq $3,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.
   gcd $3,10
   equ $3,1
   mul $5,3

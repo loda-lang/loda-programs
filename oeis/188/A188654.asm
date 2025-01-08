@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,51903 ; Maximum exponent in the prime factorization of n.
   add $4,1
   mov $3,$1

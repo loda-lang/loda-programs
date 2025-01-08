@@ -11,6 +11,7 @@ max $2,8
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,50874 ; Binary numbers d(1)...d(j) such that d(i) = d(j+1-i) for all but 6 values of i.
   sub $3,1
   mov $5,$3

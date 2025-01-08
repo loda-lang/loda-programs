@@ -9,18 +9,19 @@ pow $3,2
 lpb $3
   add $7,1
   mov $8,$2
-  seq $8,51903 ; Maximal exponent in prime factorization of n.
+  add $8,1
+  seq $8,51903 ; Maximum exponent in the prime factorization of n.
   seq $4,111089 ; Largest prime factor of 2n.
   pow $4,$8
   mov $6,$4
   gcd $6,$7
   div $4,$6
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,1
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

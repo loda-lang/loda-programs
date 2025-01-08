@@ -1,11 +1,31 @@
 ; A054357: Number of unlabeled 2-ary cacti having n polygons. Also number of bicolored plane trees with n edges.
 ; Submitted by ChelseaOilman
 ; 1,1,2,3,6,10,28,63,190,546,1708,5346,17428,57148,191280,646363,2210670,7626166,26538292,93013854,328215300,1165060668,4158330416,14915635378,53746119972,194477856100,706437056648,2575316704200,9419571138368,34560076436256,127166221919456,469181807716999,1735439546192334,6434428194353158,23910118955392268,89036728425923330,332216622081697132,1241913630395182228,4650891126903999088,17446804403333246202,65553176060358476500,246680941259460930100,929629283629590049512,3508220446629891899088
-; Formula: a(n) = 2*A003239(n)-A000108(n)
 
 mov $1,$0
-seq $1,3239 ; Number of rooted planar trees with n non-root nodes: circularly cycling the subtrees at the root gives equivalent trees.
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $5,0
+bin $5,$0
+mov $3,$0
+add $3,$5
+mul $5,2
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $1,$3
+  gcd $1,$4
+  mov $6,$1
+  mul $1,2
+  bin $1,$6
+  add $5,$1
+lpe
+div $5,$3
+mov $1,$5
+div $1,2
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
 sub $0,$1
 sub $1,$0
 mov $0,$1

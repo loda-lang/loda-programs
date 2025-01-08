@@ -14,6 +14,7 @@ lpb $2
   mov $7,$8
   add $7,1
   mov $6,$1
+  add $6,1
   seq $6,53470 ; a(n) is the cototient of n (A051953) iterated twice.
   add $7,$6
   mov $6,$7
@@ -26,12 +27,12 @@ lpb $2
   sub $3,1
   sub $3,$5
   bin $3,$2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

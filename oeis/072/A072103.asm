@@ -8,6 +8,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   mul $5,-1
   mov $6,0

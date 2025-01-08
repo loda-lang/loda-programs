@@ -15,4 +15,5 @@ mul $1,$0
 mov $0,$1
 div $0,2
 seq $0,13636 ; a(n) = n*nextprime(n).
+add $0,1
 seq $0,51903 ; Maximum exponent in the prime factorization of n.

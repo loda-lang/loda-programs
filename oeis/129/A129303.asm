@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,50999 ; Sum of squares of odd divisors of n.
   mod $0,5
   add $3,$0

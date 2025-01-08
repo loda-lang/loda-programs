@@ -13,7 +13,7 @@ lpb $1
 lpe
 mov $1,$3
 div $1,2
-cmp $2,3
+equ $2,3
 add $2,2
 mul $1,$2
 mul $1,2

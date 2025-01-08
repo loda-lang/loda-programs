@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   seq $3,332822 ; One part of a 3-way classification of the positive integers. Numbers n for which A048675(n) == 2 (mod 3).
   mov $5,$3
-  sub $3,1
   seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.
   equ $3,2
   sub $0,$3

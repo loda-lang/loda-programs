@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,52294 ; Pernicious numbers: numbers with a prime number of 1's in their binary expansion.
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

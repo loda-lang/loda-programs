@@ -2,6 +2,9 @@
 ; Submitted by fzs600
 ; 1,1,1,1,1,1,18,3,1,1
 
+#offset 3
+
+sub $0,3
 mov $3,$0
 dif $0,8
 mul $3,$0

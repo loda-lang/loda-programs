@@ -8,7 +8,8 @@ pow $2,2
 lpb $2
   mov $6,0
   mov $3,$1
-  seq $3,51903 ; Maximal exponent in prime factorization of n.
+  add $3,1
+  seq $3,51903 ; Maximum exponent in the prime factorization of n.
   add $3,1
   lpb $3
     gcd $6,2
@@ -29,7 +30,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

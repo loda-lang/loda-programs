@@ -15,7 +15,7 @@ lpb $0
     mov $7,$4
     seq $7,194514 ; First coordinate of (3,4)-Lagrange pair for n.
     add $7,2
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

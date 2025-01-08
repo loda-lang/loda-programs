@@ -15,6 +15,7 @@ lpb $2
   mov $1,$4
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,52288 ; First differences of the average of two consecutive primes (A024675).
   add $3,$1
 lpe

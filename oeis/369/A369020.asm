@@ -12,6 +12,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,51903 ; Maximum exponent in the prime factorization of n.
     mov $6,$7
     mul $6,$3

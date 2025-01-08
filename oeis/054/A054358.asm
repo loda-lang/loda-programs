@@ -1,14 +1,39 @@
 ; A054358: Number of unlabeled asymmetric 2-ary cacti having n polygons.
 ; Submitted by skildude
 ; 1,1,0,1,2,8,18,61,170,538,1654,5344,17252,57146,190786,646305,2209050,7626164,26532732,93013852,328196780,1165060170,4158266282,14915635376,53745892932,194477856048,706436256598,2575316698792,9419568272632,34560076436254,127166211559646,469181807716997,1735439508623994,6434428194289020,23910118818121310,89036728425922788,332216621577294860,1241913630395182226,4650891125043722042,17446804403332446148,65553176053466139180,246680941259460930098,929629283603955856446,3508220446629891899086
-; Formula: a(n) = 2*truncate(A060165(max(n-1,0))/2)-A000108(n)
 
 mov $2,$0
 trn $2,1
-seq $2,60165 ; Number of orbits of length n under the map whose periodic points are counted by A000984.
+mov $4,0
+mov $5,$2
+add $5,1
+mov $6,$2
+bin $6,2
+add $6,$2
+add $6,$5
+lpb $5
+  sub $5,1
+  mov $2,$6
+  sub $2,$5
+  sub $2,1
+  mov $7,$2
+  seq $7,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $8,0
+  add $2,1
+  seq $2,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  seq $2,123611 ; Row sums of triangle A123610.
+  mul $2,$7
+  add $4,$2
+lpe
+mov $2,$4
+div $2,2
 mov $1,$2
-div $1,2
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mul $2,2
+mov $3,$0
+mul $0,2
+bin $0,$3
+add $3,1
+div $0,$3
 sub $0,$1
 sub $1,$0
 mov $0,$1

@@ -10,6 +10,7 @@ lpb $2
     gcd $5,2
     mov $3,$1
     add $3,$5
+    add $3,1
     seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
     mov $4,$5
     mul $4,$3

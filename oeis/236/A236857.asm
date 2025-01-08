@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   div $3,2
   trn $3,1
+  add $3,1
   seq $3,51426 ; Least common multiple of {2, 4, 6, ..., 2n}.
   div $3,2
   sub $0,$3

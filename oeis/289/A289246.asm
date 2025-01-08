@@ -11,6 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,50140 ; a(n) = 2*floor(n*phi)-n, where phi = (1+sqrt(5))/2.
     mov $9,10
     add $9,$5

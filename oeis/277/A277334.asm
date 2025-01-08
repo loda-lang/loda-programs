@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
   mul $3,2
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

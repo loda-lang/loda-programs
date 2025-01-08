@@ -2,6 +2,9 @@
 ; Submitted by NOSNHOP
 ; 192,768,2304,6144,11520,18432,32256,49152
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 add $1,$0

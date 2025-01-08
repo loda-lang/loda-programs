@@ -1,7 +1,7 @@
 ; A050141: a(n) = 2*floor((n+1)*phi) - 2*floor(n*phi) - 1 where phi = (1 + sqrt(5))/2 is the golden ratio.
 ; Submitted by Steve Dodd
 ; 3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,3,1,3,1,3,3,1,3,1,3,3,1,3,3
-; Formula: a(n) = 2*sqrtnint((truncate((sqrtnint(5*n^2,2)+n)/2)+2)*(5*truncate((sqrtnint(5*n^2,2)+n)/2)+10),2)+2*truncate((sqrtnint(5*n^2,2)+n)/2)-4*truncate((sqrtnint((truncate((sqrtnint(5*n^2,2)+n)/2)+2)*(5*truncate((sqrtnint(5*n^2,2)+n)/2)+10),2)+truncate((sqrtnint(5*n^2,2)+n)/2)+2)/2)+5
+; Formula: a(n) = 2*sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+2*truncate((sqrtint(5*n^2)+n)/2)-4*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+5
 
 #offset 1
 

@@ -7,10 +7,11 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
+  add $1,1
   seq $1,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   sub $1,1
   mov $4,$1
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,2
   sub $3,$0

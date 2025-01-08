@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,54973 ; Number of numbers whose divisors sum to n.
   neq $3,0
   sub $0,$3

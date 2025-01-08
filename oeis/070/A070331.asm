@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,50674 ; Inserting a digit '0' between adjacent digits of n makes a prime.
   sub $3,1
   add $0,1

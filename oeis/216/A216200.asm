@@ -8,6 +8,7 @@ add $0,1
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,54973 ; Number of numbers whose divisors sum to n.
   sub $0,$3
   add $1,1

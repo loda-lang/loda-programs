@@ -11,6 +11,7 @@ lpb $0
   add $0,$2
   sub $1,6
 lpe
+add $0,1
 seq $0,53289 ; First differences of consecutive perfect powers (A001597).
 mul $0,76
 sub $0,78

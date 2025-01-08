@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,1,1,1,2,1,1,1,2,1,1,2,3,2,1,1,1,2,3,2,1,1,2,1,1,1,2,1,1,2,3,2,1,1,2,3,2,1,1,1,2,3,2,1,1,2,1,1,1,2,3,2,1,1,2,1,1,2,3,2,1,1,2,3,4,3,2,1,1,2,1,1,1,2,1,1,1
 
-add $0,1
+#offset 1
+
 seq $0,2808 ; The composite numbers: numbers n of the form x*y for x > 1 and y > 1.
 mov $1,$0
 lpb $0

@@ -14,11 +14,10 @@ lpb $5
   gcd $2,$5
   bin $2,$1
   pow $1,$2
-  sub $1,1
   seq $1,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
   sub $1,1
   mov $7,$1
-  cmp $7,0
+  equ $7,0
   mov $1,$7
   mul $1,$6
   mul $2,$1

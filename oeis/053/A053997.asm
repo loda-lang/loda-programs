@@ -10,7 +10,13 @@ lpb $3
   add $0,$3
   mul $0,2
   trn $0,1
-  seq $0,109724 ; Sum of the first n^2 primes.
+  pow $0,2
+  mov $6,0
+  max $6,$0
+  add $6,1
+  seq $6,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
+  mov $0,$6
+  sub $0,1
   mov $2,$3
   mul $2,$0
   add $1,$2

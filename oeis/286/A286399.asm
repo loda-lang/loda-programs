@@ -14,6 +14,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,50470 ; a(n) = Sum_{d|n, n/d == 1 (mod 4)} d^2 - Sum_{d|n, n/d == 3 (mod 4)} d^2.
     mov $9,10
     add $9,$5

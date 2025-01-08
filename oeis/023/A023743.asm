@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,1
-sub $0,1
 seq $0,50278 ; Pandigital numbers: numbers containing the digits 0-9. Version 1: each digit appears exactly once.
 lpb $0
   mov $3,$0

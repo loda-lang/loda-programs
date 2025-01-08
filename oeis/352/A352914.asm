@@ -10,7 +10,8 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,52424 ; Numbers with no single-digit factors (apart from 1 and n).
+    add $7,1
+    seq $7,52424 ; Numbers k with no single-digit factors (apart from 1 and k).
     mul $7,$4
     mov $9,10
     add $9,$5

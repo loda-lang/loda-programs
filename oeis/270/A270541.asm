@@ -9,6 +9,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,53319 ; Distance between the smaller members of successive twin prime pairs.
   mov $2,$3
   mul $2,$0

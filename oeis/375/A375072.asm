@@ -11,6 +11,7 @@ lpb $2
   lpb $7
     mov $7,1
     mov $3,$1
+    add $3,1
     seq $3,51903 ; Maximum exponent in the prime factorization of n.
     sub $3,2
     add $5,1

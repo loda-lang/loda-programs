@@ -12,6 +12,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
     mov $6,$7
     mul $6,$3

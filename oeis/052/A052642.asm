@@ -10,7 +10,7 @@ lpb $0
 lpe
 mov $0,$2
 div $0,2
-cmp $1,3
+equ $1,3
 add $1,2
 mul $0,$1
 mul $0,2

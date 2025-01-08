@@ -7,7 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,54057 ; Numbers of form 41+n^2+n or 41+2*n^2.
   div $3,2
   sub $3,21

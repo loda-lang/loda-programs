@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,52291 ; Primes p such that 4p^2 + 1 is also prime.
   mul $1,$2
   mul $1,2

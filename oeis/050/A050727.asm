@@ -2,8 +2,11 @@
 ; Submitted by Orange Kid
 ; 0,1,2,3,4,8,11,13,14,15,26
 
+#offset 1
+
 mov $2,$0
-add $2,8
+sub $0,1
+add $2,7
 pow $2,3
 lpb $2
   add $5,$1

@@ -10,6 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,95048 ; Number of distinct digits needed to write all positive divisors of n in decimal representation.
+  add $3,1
   seq $3,53046 ; a(n) is the number of terms that are not powers of 2 among the iterates of the Euler phi function when it is iterated with initial value n!.
   equ $3,2
   sub $0,$3
