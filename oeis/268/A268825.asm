@@ -1,31 +1,43 @@
 ; A268825: Permutation of nonnegative integers: a(0) = 0, a(n) = A268717(1+A268823(n-1)).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,1,3,2,6,7,4,5,14,15,12,13,26,27,24,25,10,11,8,9,50,51,48,49,18,19,16,17,30,31,28,29,22,23,20,21,98,99,96,97,34,35,32,33,46,47,44,45,38,39,36,37,54,55,52,53,62,63,60,61,42,43,40,41,58,59,56,57,194,195,192,193,66,67,64,65,78,79,76,77
 
 mov $1,$0
+neq $1,0
 trn $0,1
 mov $2,$0
+neq $2,0
 trn $0,1
-cmp $3,$0
+equ $3,$0
 trn $0,1
 mov $4,$0
+neq $4,0
 trn $0,1
 seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,3188 ; Decimal equivalent of Gray code for n.
-cmp $4,0
-cmp $4,0
+mov $6,$0
+div $0,2
+bxo $6,$0
+mov $0,$6
 mul $0,$4
+seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
+mov $8,$0
+div $0,2
+bxo $8,$0
+mov $0,$8
 sub $0,$3
+seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
-cmp $2,0
-cmp $2,0
+mov $7,$0
+div $0,2
+bxo $7,$0
+mov $0,$7
 mul $0,$2
+seq $0,6068 ; a(n) is Gray-coded into n.
 add $0,1
-seq $0,268717 ; Permutation of natural numbers: a(0) = 0, a(n) = A003188(1+A006068(n-1)), where A003188 is binary Gray code and A006068 is its inverse.
-cmp $1,0
-cmp $1,0
+mov $5,$0
+div $0,2
+bxo $5,$0
+mov $0,$5
 mul $0,$1

@@ -4,12 +4,15 @@
 
 mov $2,$0
 add $2,1
-cmp $2,1
+equ $2,1
 mov $1,$0
 seq $1,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
 add $1,$2
 add $1,1
 mod $1,2
-seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+mov $3,$0
+seq $3,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+mov $0,$3
+add $0,1
 mul $1,$0
 mov $0,$1

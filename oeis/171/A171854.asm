@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,3
   seq $2,110239 ; Number of (1,1) steps in all peakless Motzkin paths of length n.
   add $1,$2
   mul $2,$3

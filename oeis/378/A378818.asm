@@ -9,6 +9,7 @@ lpb $0
   add $4,1
   max $4,$0
   sub $4,$3
+  max $4,3
   div $0,2
   add $2,$0
   bin $2,$0

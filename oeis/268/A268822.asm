@@ -1,5 +1,5 @@
 ; A268822: Permutation of nonnegative integers: a(0) = 0, a(n) = A268718(1+A268718(n-1)).
-; Submitted by Simon Strandgaard
+; Submitted by lauvii
 ; 0,1,3,2,9,8,5,4,13,12,17,16,7,6,15,14,21,20,25,24,31,30,23,22,11,10,27,26,33,32,29,28,37,36,41,40,47,46,39,38,59,58,43,42,49,48,45,44,19,18,51,50,57,56,53,52,61,60,65,64,55,54,63,62,69,68,73,72,79,78,71,70,91,90,75,74,81,80,77,76
 
 mov $1,$0
@@ -8,14 +8,13 @@ lpb $2
   sub $2,1
   add $0,$2
   trn $0,1
-  mov $3,$0
   seq $0,6068 ; a(n) is Gray-coded into n.
-  trn $0,1
-  seq $0,3188 ; Decimal equivalent of Gray code for n.
+  sub $0,1
+  mov $3,$0
+  div $0,2
+  bxo $3,$0
+  mov $0,$3
   add $0,1
-  cmp $3,0
-  cmp $3,0
-  mul $0,$3
 lpe
 min $1,1
 add $0,1

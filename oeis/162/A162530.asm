@@ -7,13 +7,13 @@ add $2,6
 pow $2,3
 lpb $2
   sub $2,1
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,33676 ; Largest divisor of n <= sqrt(n).
   sub $3,2
-  cmp $3,8
+  equ $3,8
   sub $0,$3
-  add $1,1
+  add $1,2
   sub $2,$0
 lpe
 mov $0,$1

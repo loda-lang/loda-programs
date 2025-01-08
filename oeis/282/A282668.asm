@@ -8,6 +8,7 @@ pow $2,3
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,33676 ; Largest divisor of n <= sqrt(n).
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
