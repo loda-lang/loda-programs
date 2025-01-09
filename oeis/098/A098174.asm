@@ -1,5 +1,5 @@
 ; A098174: a(n) is the smallest e > 0 such that the initial digit of n^e = 1 in decimal representation.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1,4,9,2,3,4,5,8,16,1,1,1,1,1,1,1,1,1,1,4,4,3,3,3,3,3,3,5,7,9,25,2,2,2,2,2,2,2,2,2,2,2,2,2,5,11,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,6,6,6,6,7,7,7,8
 
 add $0,1
@@ -14,11 +14,10 @@ lpb $2
     mul $5,2
     equ $5,2
     div $3,10
-    add $4,$5
   lpe
   mul $1,$0
-  add $2,$4
-  add $6,1
+  add $2,$5
+  add $4,1
 lpe
-mov $0,$6
+mov $0,$4
 add $0,1

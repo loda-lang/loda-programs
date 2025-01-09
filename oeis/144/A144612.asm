@@ -1,24 +1,24 @@
 ; A144612: Sturmian word of slope (3-sqrt(3))/2.
-; Submitted by zombie67 [MM]
+; Submitted by iBezanilla
 ; 1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,1,0,1
+; Formula: a(n) = -2*truncate((sqrtint((2*truncate((sqrtint((n+1)*(3*n+3))+n+1)/2)+4)*(6*truncate((sqrtint((n+1)*(3*n+3))+n+1)/2)+12))+1)/2)+sqrtint((2*truncate((sqrtint((n+1)*(3*n+3))+n+1)/2)+4)*(6*truncate((sqrtint((n+1)*(3*n+3))+n+1)/2)+12))+1
 
-add $0,3
-lpb $0
-  sub $0,3
-  sub $3,1
-  sub $0,$3
-  mov $2,$0
-  add $2,1
-  mov $4,$2
-  mul $4,2
-  add $4,$2
-  mul $4,$2
-  nrt $4,2
-  add $4,$2
-  div $4,2
-  mul $2,2
-  add $2,$4
-  add $1,$2
-lpe
+add $0,1
+mov $2,$0
+add $2,$0
+add $2,$0
+mul $2,$0
+nrt $2,2
+add $2,$0
+mov $0,$2
+div $0,2
+add $0,2
+mov $1,$0
+mul $0,2
+mul $1,4
+add $1,$0
+mul $1,$0
+nrt $1,2
 mov $0,$1
+add $0,1
 mod $0,2

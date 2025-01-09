@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   seq $0,85945 ; Number of subsets of {1,2,...,n} with relatively prime elements.
   mul $1,$0
   add $3,$1

@@ -1,5 +1,5 @@
 ; A098592: Number of primes between n*30 and (n+1)*30.
-; Submitted by Coleslaw
+; Submitted by Science United
 ; 10,7,7,6,5,6,5,6,5,5,4,6,5,4,6,5,5,2,5,5,5,6,4,4,4,5,3,6,4,4,4,4,4,5,5,4,6,3,3,4,5,4,4,6,2,3,3,5,4,7,2,5,4,6,3,4,4,3,4,4,3,2,7,3,3,3,5,5,3,5,3,5,2,3,4,4,5,3,4,7
 
 mov $5,$0
@@ -17,6 +17,7 @@ lpb $3
     trn $0,1
     seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
     add $1,3
+    gcd $5,$2
   lpe
   mov $0,$1
   mov $2,$3
