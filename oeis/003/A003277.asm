@@ -11,6 +11,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
+  add $3,1
   seq $3,62570 ; a(n) = phi(2*n).
   dif $3,2
   gcd $3,$5

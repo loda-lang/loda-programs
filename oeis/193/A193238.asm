@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   mod $2,10
+  add $2,1
   seq $2,62301 ; Number of ways writing n-th prime as a sum of two primes.
   mov $3,$2
   mul $3,2

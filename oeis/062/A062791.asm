@@ -19,7 +19,9 @@ lpb $2
   mul $4,2
   add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,1405 ; a(n) = binomial(n, floor(n/2)).
+  mov $6,$0
+  div $6,2
+  bin $0,$6
   mul $0,$4
   add $1,$0
 lpe

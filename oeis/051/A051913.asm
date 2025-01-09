@@ -12,7 +12,6 @@ lpb $2
   mov $5,$1
   add $5,3
   dif $5,2
-  sub $5,1
   seq $5,62570 ; a(n) = phi(2*n).
   mov $3,$5
   pow $3,2

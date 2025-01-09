@@ -6,7 +6,6 @@ lpb $0
   mov $4,$0
   add $4,1
   dif $4,2
-  sub $4,1
   seq $4,62570 ; a(n) = phi(2*n).
   mov $3,$4
   sub $3,1

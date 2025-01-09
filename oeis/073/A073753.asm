@@ -8,7 +8,6 @@ lpb $1
   sub $1,1
   mov $2,$0
   seq $2,52126 ; a(1) = 1; for n>1, a(n)=n/(largest prime dividing n).
-  sub $0,1
   seq $0,60681 ; Largest difference between consecutive divisors of n (ordered by size).
   gcd $0,$2
 lpe

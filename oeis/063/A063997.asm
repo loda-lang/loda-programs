@@ -13,7 +13,7 @@ lpb $2
   gcd $4,-1
   add $1,12
   add $3,$4
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   sub $2,$0
 lpe

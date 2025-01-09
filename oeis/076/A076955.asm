@@ -5,6 +5,7 @@
 mov $1,2
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,62481 ; a(n) = n^prime(n).
   sub $0,1
   mul $1,$2

@@ -10,11 +10,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
-  mov $6,$1
-  seq $6,60866 ; Sum of (d+d') over all unordered pairs (d,d') with d*d' = n.
   mov $5,$1
-  add $5,1
+  mov $6,$1
+  add $6,2
+  seq $6,60866 ; Sum of (d+d') over all unordered pairs (d,d') with d*d' = n.
+  add $1,1
+  add $5,2
   gcd $5,$6
   mov $3,$5
   neq $3,1

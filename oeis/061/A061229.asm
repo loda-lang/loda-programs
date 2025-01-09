@@ -1,10 +1,17 @@
 ; A061229: a(n) = floor of the geometric mean of n and the reversal of n.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,7,8,9,3,11,15,20,23,27,31,34,38,41,6,15,22,27,31,36,40,44,47,51,9,20,27,33,38,43,47,51,56,60,12,23,31,38,44,49,54,58,63,67,15,27,36,43,49,55,60,65,70,74,18,31,40,47,54,60,66,71,76,81,22,34,44,51,58,65,71,77,82,87,25
-; Formula: a(n) = A000196(A004086(n+1)*(n+1))
 
 add $0,1
 mov $1,$0
-seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
+mov $2,0
+lpb $0
+  mov $3,$0
+  mod $3,10
+  div $0,10
+  mul $2,10
+  add $2,$3
+lpe
+mov $0,$2
 mul $0,$1
-seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+nrt $0,2

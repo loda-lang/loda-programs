@@ -5,13 +5,12 @@
 #offset 1
 
 mov $1,$0
-sub $0,1
 mov $2,$0
 seq $2,62570 ; a(n) = phi(2*n).
 dif $2,2
 mov $3,$0
-add $3,1
 gcd $3,$2
+sub $0,1
 div $0,$3
 add $0,1
 mul $0,$1

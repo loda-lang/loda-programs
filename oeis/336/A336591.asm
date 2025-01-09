@@ -10,14 +10,13 @@ lpb $2
   mov $3,$1
   add $3,1
   gcd $3,$5
-  sub $3,1
   seq $3,56192 ; a(n) = n divided by its characteristic cube divisor A056191.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

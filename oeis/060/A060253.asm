@@ -20,8 +20,10 @@ lpb $2
   seq $3,40 ; The prime numbers.
   sub $3,$5
   gcd $3,$3
-  sub $3,1
-  seq $3,337174 ; Number of pairs of divisors of n (d1,d2) such that d1 <= d2 and d1*d2 >= n.
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  add $3,1
+  pow $3,2
+  div $3,4
   equ $3,2
   sub $0,$3
   add $1,1

@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,55067 ; Product of numbers < n which do not divide n (or 1 if no such numbers exist).
   sub $0,1
   mul $1,$2

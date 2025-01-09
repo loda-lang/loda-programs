@@ -5,6 +5,7 @@
 mov $1,1
 add $1,$0
 pow $1,2
+add $0,1
 seq $0,62570 ; a(n) = phi(2*n).
 dif $0,2
 gcd $0,$1

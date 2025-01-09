@@ -1,10 +1,15 @@
 ; A061680: a(n) = gcd(d(n^2), d(n)).
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,3,1,3,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,1,1,1,1,3,1,3,1,1,1,1,1,1,1,3,1,1,3,1,1,1,1,3,1,1,1,1,1,1,3,3,1,1,1,1
-; Formula: a(n) = gcd(A048691(n),A000005(n+1))
+; Formula: a(n) = gcd(2*truncate(A146564(n-1)/3)+1,A000005(n))
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-seq $0,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+sub $0,1
+seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+div $0,3
+mul $0,2
+add $0,1
 gcd $0,$1

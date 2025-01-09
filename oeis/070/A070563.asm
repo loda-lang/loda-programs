@@ -4,6 +4,7 @@
 lpb $0
   dif $0,5
 lpe
+add $0,1
 seq $0,64987 ; a(n) = n*sigma(n).
 add $0,7
 mov $1,$0

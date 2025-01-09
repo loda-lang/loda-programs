@@ -10,5 +10,6 @@ add $1,1
 mov $2,$0
 mov $0,$1
 mov $1,$2
+add $1,1
 seq $1,61142 ; Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 mod $0,$1

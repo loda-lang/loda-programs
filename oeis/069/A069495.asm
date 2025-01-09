@@ -11,6 +11,7 @@ lpb $2
   pow $5,2
   sub $5,5
   div $5,2
+  add $5,2
   seq $5,60265 ; Largest prime less than 2n.
   seq $5,13634 ; a(n) = nextprime(n) + n.
   div $5,2
@@ -18,12 +19,12 @@ lpb $2
   add $3,2
   pow $3,2
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

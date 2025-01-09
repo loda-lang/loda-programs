@@ -7,7 +7,7 @@ trn $0,2
 sub $1,$0
 sub $1,$0
 lpb $0
-  cmp $2,0
+  equ $2,0
   mul $2,$0
   add $2,2
   sub $0,2

@@ -12,7 +12,6 @@ lpb $2
   add $1,1
   div $3,2
   mul $3,2
-  sub $3,1
   seq $3,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   add $3,1
   mod $5,$3

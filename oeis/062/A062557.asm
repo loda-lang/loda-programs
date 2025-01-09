@@ -1,7 +1,7 @@
 ; A062557: 2n-1 1's followed by a 2.
 ; Submitted by omegaintellisys
 ; 1,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate((sqrtnint(4*n+6,2)+sqrtnint(4*n+4,2))/2)+sqrtnint(4*n+6,2)+sqrtnint(4*n+4,2)+1
+; Formula: a(n) = -2*truncate((sqrtint(4*n+6)+sqrtint(4*n+4))/2)+sqrtint(4*n+6)+sqrtint(4*n+4)+1
 
 mul $0,4
 add $0,4

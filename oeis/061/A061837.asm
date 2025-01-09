@@ -8,6 +8,7 @@ lpb $1
   add $0,1
   pow $0,$1
   trn $0,1
+  add $0,1
   seq $0,61743 ; Numbers k such that k! is divisible by (k+1)^2.
   sub $1,1
 lpe

@@ -11,12 +11,12 @@ lpb $2
   seq $3,225693 ; Alternating sum of digits of n.
   pow $3,2
   div $3,8
-  cmp $3,6
+  equ $3,6
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

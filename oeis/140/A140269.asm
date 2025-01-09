@@ -10,9 +10,9 @@ mov $1,1
 lpb $2
   add $3,1
   mov $5,$3
-  sub $3,1
   mov $6,$3
   seq $6,63655 ; Smallest semiperimeter of integral rectangle with area n.
+  sub $3,1
   seq $3,133156 ; Irregular triangle read by rows: coefficients of U(n,x), Chebyshev polynomials of the second kind with exponents in decreasing order.
   gcd $3,2
   mul $3,$6
@@ -20,7 +20,7 @@ lpb $2
   gcd $3,$5
   add $3,$4
   sub $3,1
-  cmp $3,1
+  equ $3,1
   gcd $3,2
   sub $0,$3
   add $0,1
@@ -28,7 +28,7 @@ lpb $2
   mov $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

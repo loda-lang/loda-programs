@@ -11,6 +11,7 @@ lpb $2
   pow $3,2
   sub $3,5
   div $3,2
+  add $3,2
   seq $3,60265 ; Largest prime less than 2n.
   add $3,1
   seq $3,13632 ; Difference between n and the next prime greater than n.

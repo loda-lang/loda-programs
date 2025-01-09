@@ -6,7 +6,6 @@
 
 mov $1,$0
 dif $1,2
-sub $1,1
 seq $1,62570 ; a(n) = phi(2*n).
 mov $2,$0
 seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

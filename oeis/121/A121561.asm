@@ -4,7 +4,6 @@
 
 add $0,1
 lpb $0
-  sub $0,1
   seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   max $0,1
   add $1,1

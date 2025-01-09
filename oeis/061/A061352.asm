@@ -1,7 +1,10 @@
 ; A061352: First row of array shown below.
 ; 1,2,6,7,5,6,8,9,5,6,6,7,1,2,0,1,3,4,0,1,1,2,6,7,5,6,8,9,5,6,6,7,1,2,0,1,3,4,0,1,1,2,6,7,5,6,8,9,5,6,6,7,1,2,0,1,3,4,0,1,1,2,6,7,5,6,8,9,5,6,6,7,1,2,0,1,3,4,0,1
-; Formula: a(n) = -10*truncate((binomial(-2*floor(n/2),2)+n+1)/10)+binomial(-2*floor(n/2),2)+n+1
+; Formula: a(n) = -10*truncate((binomial(-2*floor((n-1)/2),2)+n)/10)+binomial(-2*floor((n-1)/2),2)+n
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $0,2
 mul $0,-2

@@ -6,7 +6,6 @@ mov $1,2
 lpb $1
   div $1,2
   add $0,$1
-  sub $0,1
   seq $0,64106 ; 3rd column of 3rd-order Zeckendorf array A136189.
 lpe
 add $0,3

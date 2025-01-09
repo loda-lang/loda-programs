@@ -7,6 +7,7 @@ lpb $0
   sub $0,$1
 lpe
 sub $0,$1
+add $1,1
 seq $1,60401 ; a(n) = minimal m such that m>n, n divides m, n-1 divides m-1, n-2 divides m-2 and so on down to 1 divides m-n+1.
 add $1,$0
 mov $0,$1

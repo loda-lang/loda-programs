@@ -1,8 +1,11 @@
 ; A056349: Number of primitive (period n) bracelets using exactly three different colored beads.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,1,6,18,55,147,405,1083,2961,8043,22182,61278,170883,477910,1344825,3795750,10757763,30572427,87146139,248991674,713088309,2046303339,5883410760,16944543792,48879708297
-; Formula: a(n) = truncate((truncate(truncate((91*A056268(n)*(n+1))/(gcd(0,n+1)^2))/91)+A056499(n+1))/2)
+; Formula: a(n) = truncate((truncate(truncate((91*n*A056268(n-1))/(gcd(0,n)^2))/91)+A056499(n))/2)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,1
 add $2,$0

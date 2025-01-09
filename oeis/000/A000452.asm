@@ -11,6 +11,7 @@ pow $2,3
 lpb $2
   sub $2,16
   mov $3,$1
+  add $3,1
   seq $3,61200 ; tau_5(n) = number of ordered 5-factorizations of n.
   mod $3,3
   add $3,1

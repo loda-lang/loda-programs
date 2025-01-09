@@ -6,6 +6,6 @@ lpb $0
   sub $0,1
   add $1,1
   add $2,$1
-  dis $2,10
+  dgs $2,10
 lpe
 mov $0,$2

@@ -6,6 +6,7 @@ mul $0,2
 lpb $0
   mov $2,1
   add $2,$0
+  add $0,1
   seq $0,62570 ; a(n) = phi(2*n).
   sub $2,$0
   mov $0,$2

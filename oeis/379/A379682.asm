@@ -7,6 +7,7 @@ add $0,1
 pow $2,5
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mul $4,-1
   mov $3,$1

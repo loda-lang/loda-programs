@@ -11,6 +11,7 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
+    add $2,1
     seq $2,64784 ; Difference between n-th triangular number t(n) and the largest square <= t(n).
     mov $0,$2
     sub $0,1

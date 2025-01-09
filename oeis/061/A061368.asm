@@ -24,7 +24,15 @@ lpb $2
   div $3,2
   sub $3,1
   mov $5,$3
-  seq $3,349343 ; Dirichlet inverse of A193356, which is defined as n if n is odd, 0 if n is even.
+  mov $8,$3
+  add $8,1
+  seq $8,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
+  mov $7,$3
+  add $7,1
+  mul $7,$8
+  gcd $3,2
+  sub $3,1
+  mul $3,$7
   equ $3,0
   sub $0,$3
   add $1,1

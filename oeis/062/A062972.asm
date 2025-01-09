@@ -13,8 +13,11 @@ lpb $2
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $5,$1
   add $5,1
-  seq $5,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $5,$1
+  trn $5,2
   gcd $5,$3
+  mov $6,$1
   add $1,1
   div $3,$5
   equ $3,1

@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,55204 ; Squarefree part of n!: n! divided by its largest square divisor.
 lpb $1
   mul $0,$1

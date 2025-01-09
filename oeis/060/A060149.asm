@@ -2,7 +2,9 @@
 ; Submitted by [AF>Libristes>Jip] Elgrande71
 ; 1,3,2,13,16,106,166,1073,1934,12142
 
-add $0,2
+#offset 1
+
+add $0,1
 lpb $0
   sub $0,1
   mov $6,0

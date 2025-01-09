@@ -14,6 +14,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
+  add $5,1
   seq $5,64866 ; Write numbers 1, then 1 up to 2^2, then 1 up to 3^2, then 1 up to 4^2 and so on.
   mov $0,$5
   equ $0,1

@@ -11,7 +11,9 @@ lpb $2
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $4,$1
-  seq $4,62821 ; Number of divisors of totient of n.
+  add $4,1
+  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   gcd $4,$3
   div $3,$4
   equ $3,1

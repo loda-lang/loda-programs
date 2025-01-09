@@ -5,6 +5,7 @@
 mov $1,2
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,57820 ; First differences of sequence of consecutive prime powers (A000961).
   mov $0,0
   add $1,$2

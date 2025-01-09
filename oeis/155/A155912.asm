@@ -7,6 +7,7 @@ mov $2,$0
 add $2,4
 lpb $2
   max $0,0
+  add $0,1
   seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
   sub $0,1
   div $1,$3

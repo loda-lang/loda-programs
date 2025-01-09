@@ -14,7 +14,6 @@ lpb $3
   mov $0,$4
   sub $0,$3
   dif $4,$0
-  sub $0,1
   seq $0,56857 ; Triangle read by rows: T(n,c) = number of successive equalities in set partitions of n.
   add $2,$0
   mul $2,2

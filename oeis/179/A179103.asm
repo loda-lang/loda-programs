@@ -5,6 +5,7 @@ mov $2,13
 lpb $2
   div $2,8
   add $1,6
+  add $0,1
   seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
   add $0,$1
   add $0,9

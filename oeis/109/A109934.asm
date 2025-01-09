@@ -7,6 +7,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,61673 ; Even numbers k such that k+1 and k-1 are both composite.
   mul $0,0
 lpe

@@ -1,13 +1,14 @@
 ; A056191: Characteristic cube divisor of n: cube of g = gcd(K,F), where K is the largest square root divisor of n (A000188) and F = n/(K*K) = A007913(n) is its squarefree part; g^2 divides K^2 = A008833(n) = g^2*L^2 and g divides F = gf.
 ; Submitted by trigggl
 ; 1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,27,1,1,1,1,8,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,27,1,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8,1,1,1,1,1,1,1,1
-; Formula: a(n) = (truncate((truncate(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))/gcd(truncate((truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)/A003557(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))+truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))+1,truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))/gcd(truncate((truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)/A003557(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))+truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))+1,truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))-1)/A019554(max(0,truncate(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))/gcd(truncate((truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)/A003557(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))+truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))+1,truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))-1)+1))+1)^2)+1)/2)^2))+1)^3
+; Formula: a(n) = (truncate((truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/(truncate((sqrtint(4*(truncate(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)/A019554(max(0,truncate(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))/gcd(truncate((truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)/A003557(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))+truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))+1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))-1)+1))+1)^2)+1)/2)^2))+1)^3
+
+#offset 1
 
 mov $2,$0
-add $2,1
 mov $4,$0
-add $4,1
 seq $4,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+sub $0,1
 mov $3,$0
 div $3,$4
 add $0,$3

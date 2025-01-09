@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,60462 ; Integers k such that k! is divisible by k*(k+1)/2.
   add $0,$3
   trn $0,3

@@ -2,7 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,2,4,2,4,3,4,2,5,2,4,4,3,2,5,2,5,4,4,2,5,3,4,4,5,2,5,2,5,4,4,4,4,2,4,4,5,2,5,2,5,5,4,2,5,3,5,4,5,2,5,4,5,4,4,2,6,2,4,5,3,4,5,2,5,4,5,2,6,2,4,5,5,4,5,2,5,3
 
-add $0,1
+#offset 2
+
+sub $0,1
 lpb $0
   add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

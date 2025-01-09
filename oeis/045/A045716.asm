@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,1
-sub $0,1
 seq $0,57588 ; Kummer numbers: -1 + product of first n consecutive primes.
 nrt $0,2
 pow $0,2

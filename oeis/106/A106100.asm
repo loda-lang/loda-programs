@@ -11,7 +11,6 @@ lpb $2
   seq $3,74940 ; Numbers having at least one 2 in their ternary representation.
   seq $3,7089 ; Numbers in base 3.
   mov $5,$3
-  sub $3,1
   seq $3,61007 ; a(n) = -(n-1)! mod n.
   sub $0,$3
   add $1,1

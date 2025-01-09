@@ -8,8 +8,9 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $1,1
+  add $3,2
   seq $3,55388 ; Number of riffle shuffles of 2n cards required to return the deck to its initial state.
   sub $3,$1
   equ $3,$1

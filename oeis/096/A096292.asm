@@ -15,7 +15,6 @@ lpb $3
   mov $6,$4
   div $4,2
   mul $4,2
-  sub $4,1
   seq $4,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   equ $4,1
   sub $1,$4

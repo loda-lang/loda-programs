@@ -16,7 +16,6 @@ lpb $4
   add $5,$0
   add $0,1
   seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $0,1
   seq $0,61799 ; Smallest number with at least n divisors.
   div $0,$5
   mul $1,$0

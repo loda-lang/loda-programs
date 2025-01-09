@@ -7,7 +7,7 @@ add $0,3
 lpb $0
   sub $0,$1
   mov $3,$0
-  add $3,1
+  add $3,2
   seq $3,62570 ; a(n) = phi(2*n).
   mov $1,1
   add $2,$3

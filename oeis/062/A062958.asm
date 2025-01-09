@@ -11,8 +11,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     mod $4,6
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     div $3,$2
     sub $3,$4
   lpe

@@ -1,8 +1,11 @@
 ; A061007: a(n) = -(n-1)! mod n.
 ; Submitted by Penguin
 ; 0,1,1,2,1,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
-; Formula: a(n) = binomial(2,(n-2)*(A010051(n+1)-1)+2)
+; Formula: a(n) = binomial(2,(n-3)*(A010051(n)-1)+2)
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

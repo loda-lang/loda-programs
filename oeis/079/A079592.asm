@@ -12,7 +12,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  add $3,3
+  add $3,4
   seq $3,62389 ; a(n) = floor( (2n-1)*Pi/2 ).
   sub $3,11
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -11,7 +11,8 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,6
-  mov $5,$3
+  mov $5,$1
+  add $5,7
   seq $5,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   sub $5,$3
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.

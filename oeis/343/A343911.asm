@@ -5,7 +5,6 @@
 mov $1,$0
 add $1,1
 dif $1,2
-sub $1,1
 seq $1,62570 ; a(n) = phi(2*n).
 mov $0,$1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

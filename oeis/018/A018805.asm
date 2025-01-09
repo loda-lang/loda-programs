@@ -10,6 +10,7 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,62570 ; a(n) = phi(2*n).
   mov $4,1
   max $0,$5

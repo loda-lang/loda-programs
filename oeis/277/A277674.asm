@@ -9,6 +9,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,60151 ; Number of base n digits required to write n!.
   mov $2,$3
   mul $2,$0

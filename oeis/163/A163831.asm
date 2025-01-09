@@ -5,6 +5,7 @@
 seq $0,72668 ; Numbers one less than composite numbers.
 mov $1,1
 add $1,$0
+add $0,1
 seq $0,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
 sub $1,$0
 mov $0,$1

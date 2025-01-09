@@ -7,6 +7,7 @@ mov $3,2
 lpb $3
   sub $3,2
   trn $0,1
+  add $0,1
   seq $0,61094 ; The alternating group A_n contains an element x which is not conjugate to its inverse (equivalently not all the entries in the character table of A_n are real numbers).
   mov $2,$0
   add $2,1

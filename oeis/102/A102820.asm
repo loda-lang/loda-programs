@@ -12,7 +12,8 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,63124 ; a(n) = # { i prime | prime(n) <= i < prime(n)*2 } (prime(n) = A000040, the prime enumeration).
+    add $2,1
+    seq $2,63124 ; a(n) = # { primes p | prime(n) <= p < 2*prime(n) } where prime(n) is the n-th prime.
     mov $4,$2
     mov $6,$7
     mul $6,$2

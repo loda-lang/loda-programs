@@ -8,6 +8,7 @@ lpb $0
   mov $3,$0
   sub $3,1
   div $3,2
+  add $3,1
   seq $3,60594 ; Number of solutions to x^2 == 1 (mod n), that is, square roots of unity modulo n.
   sub $0,1
   add $2,$3

@@ -21,6 +21,7 @@ lpb $2
     sub $0,$5
   lpe
   mul $4,2
+  add $0,1
   seq $0,62401 ; a(n) = phi(sigma(n)).
   mul $0,$4
   add $1,$0

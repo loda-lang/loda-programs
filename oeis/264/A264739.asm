@@ -7,6 +7,7 @@ mov $3,1
 mov $1,$0
 lpb $1
   mov $3,$1
+  add $3,1
   seq $3,61026 ; Smallest number m such that phi(m) is divisible by n, where phi = Euler totient function A000010.
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   div $1,$3

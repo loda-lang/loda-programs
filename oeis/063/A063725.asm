@@ -13,8 +13,8 @@ lpb $0
   lpe
   add $3,2
   mov $4,$2
-  cmp $4,2
-  cmp $5,0
+  equ $4,2
+  equ $5,0
   sub $0,1
   add $1,$4
 lpe

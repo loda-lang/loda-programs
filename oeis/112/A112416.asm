@@ -2,6 +2,7 @@
 ; Submitted by Kotenok2000
 ; 0,1,0,1,0,1,0,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
 
+add $0,1
 seq $0,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
 lpb $0
   mov $2,$0

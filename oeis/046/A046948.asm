@@ -7,6 +7,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,64603 ; Partial sums of A001158: Sum_{j=1..n} sigma_3(j).
   mov $0,1
 lpe

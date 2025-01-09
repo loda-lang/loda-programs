@@ -9,7 +9,6 @@ lpb $2
   mov $8,$1
   add $8,1
   dif $8,2
-  sub $8,1
   seq $8,62570 ; a(n) = phi(2*n).
   mov $7,$8
   add $7,1

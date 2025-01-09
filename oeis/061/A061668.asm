@@ -21,8 +21,17 @@ lpb $3
   mov $4,$1
   mul $4,$2
   mul $4,6
-  seq $4,353464 ; Characteristic function of greater twin primes: a(n) = 1 if both n and n-2 are primes, otherwise 0.
-  sub $0,$4
+  mov $7,$4
+  add $7,2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $4,1
+  sub $4,$7
+  mul $7,$4
+  max $7,0
+  add $7,2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  mov $4,$7
   mov $5,$0
   max $5,0
   equ $5,$0

@@ -6,6 +6,7 @@ mov $1,$0
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,61168 ; Partial sums of floor(log_2(k)) (= A000523(k)).
   trn $0,$2
 lpe

@@ -5,6 +5,5 @@
 add $0,1
 seq $0,55071 ; Largest square dividing n!.
 lpb $0
-  sub $0,1
   seq $0,56554 ; Powerfree kernel of 4th-powerfree part of n.
 lpe

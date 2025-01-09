@@ -10,12 +10,12 @@ lpb $2
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   trn $3,1
   seq $3,131768 ; 2*(A007318 * A097807) - A000012.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,$5
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,1
   mul $2,$4
   sub $2,1

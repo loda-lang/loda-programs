@@ -9,13 +9,13 @@ mov $5,1
 mov $3,$0
 lpb $3
   mov $6,$2
-  cmp $0,$5
+  equ $0,$5
   max $1,$5
   add $2,1
   mul $5,$6
   mod $5,$4
   mov $6,$0
-  cmp $6,0
+  equ $6,0
   sub $3,$6
 lpe
 mov $0,$1

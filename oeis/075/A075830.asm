@@ -6,7 +6,8 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,58313 ; Numerator of the n-th alternating harmonic number, Sum_{k=1..n} (-1)^(k+1)/k.
-  cmp $0,1
+  equ $0,1
 lpe
 mov $0,$1

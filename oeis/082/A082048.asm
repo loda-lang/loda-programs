@@ -15,6 +15,7 @@ lpb $2
     div $6,2
     mov $0,$7
     add $0,$6
+    add $0,1
     seq $0,60681 ; Largest difference between consecutive divisors of n (ordered by size).
     add $4,$5
     mov $5,$0

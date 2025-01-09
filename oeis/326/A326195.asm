@@ -3,6 +3,7 @@
 
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,62570 ; a(n) = phi(2*n).
   dif $3,2
   mov $2,$0

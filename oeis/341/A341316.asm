@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,57661 ; a(n) = Sum_{k=1..n} lcm(n,k)/n.
   mov $1,$0
   mov $0,0

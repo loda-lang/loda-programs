@@ -7,9 +7,15 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  mov $5,0
+  seq $5,194899 ; Triangular array (and fractal sequence):  row n is the permutation of (1,2,...,n) obtained from the increasing ordering of fractional parts {r}, {2r}, ..., {nr}, where r=sqrt(12).
   mov $3,$1
-  add $3,4
-  seq $3,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
+  seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  add $5,$1
+  sub $5,$3
+  mov $3,$5
+  add $3,3
+  mod $3,10
   trn $3,5
   min $3,1
   sub $0,$3

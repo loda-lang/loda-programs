@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,64987 ; a(n) = n*sigma(n).
     mul $7,$$9
     add $5,1

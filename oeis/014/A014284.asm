@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,60939 ; a(n) = (Sum of the first n primes) + n.
   mov $1,$0
   mov $0,0

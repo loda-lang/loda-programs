@@ -5,7 +5,7 @@
 lpb $0
   mov $2,$0
   mul $2,9
-  add $2,8
+  add $2,9
   seq $2,62570 ; a(n) = phi(2*n).
   dif $2,2
   div $2,3

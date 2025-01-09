@@ -4,9 +4,10 @@
 
 lpb $0
   mov $1,$0
-  cmp $1,0
+  equ $1,0
   mov $2,$0
   add $0,$1
+  add $2,1
   seq $2,62481 ; a(n) = n^prime(n).
   sub $2,2
   div $2,$0

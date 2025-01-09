@@ -3,6 +3,7 @@
 
 mov $5,$0
 gcd $5,2
+add $0,1
 seq $0,59833 ; "Madonna's Sequence": add 1 (mod 10) to each digit of Pi.
 add $0,9
 mod $0,10

@@ -5,7 +5,7 @@
 mov $1,1
 bxo $0,1
 lpb $0
-  mul $1,2
   trn $0,6
+  mul $1,2
 lpe
 mov $0,$1

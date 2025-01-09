@@ -12,6 +12,7 @@ lpb $2
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $1,1
   add $6,$1
+  add $6,1
   seq $6,62401 ; a(n) = phi(sigma(n)).
   sub $6,$3
   mov $5,3

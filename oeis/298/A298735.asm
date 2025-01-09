@@ -6,6 +6,7 @@ lpb $0
   mul $0,2
   dif $0,4
 lpe
+add $0,1
 seq $0,57918 ; Number of pairs of numbers (r,s) each less than n such that (r,s,n) is in geometric progression.
 add $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

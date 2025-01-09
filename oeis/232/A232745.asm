@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,55881 ; a(n) = largest m such that m! divides n.
   gcd $3,2
   add $4,1

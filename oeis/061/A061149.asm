@@ -1,8 +1,17 @@
 ; A061149: Smallest number whose number of divisors = n-th primorial (A002110).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,12,720,907200,251475840000,14272938808128000000,1683176415906545239680000000000,216212806227686567939021962996416000000000000,297959150887656205712799656425991283941685160320000000000000000,22296851822462772414271966485579199448019357309159476064676778750976000000000000000000,70645232884614814994733270866771738311147298961970339232398294127157094726717269270148584960000000000000000000000
-; Formula: a(n) = A037019(A057588(n)+1)
+; Formula: a(n) = A124859(A108951(A290641(truncate((12*A002110(n)-23)/12)+1)-1)-1)
 
-seq $0,57588 ; Kummer numbers: -1 + product of first n consecutive primes.
+#offset 1
+
+seq $0,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
+mul $0,12
+sub $0,23
+div $0,12
 add $0,1
-seq $0,37019 ; Let n = p_1*p_2*...*p_k be the prime factorization of n, with the primes sorted in descending order. Then a(n) = 2^(p_1 - 1)*3^(p_2 - 1)*...*A000040(k)^(p_k - 1).
+seq $0,290641 ; Multiplicative with a(p^e) = prime(p-1)^e.
+sub $0,1
+seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+sub $0,1
+seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

@@ -9,15 +9,15 @@ add $3,6
 pow $3,4
 mul $3,2
 lpb $3
-  sub $5,2
-  add $2,4
   mov $4,$2
+  add $4,5
   seq $4,63377 ; Sophie Germain degree of n: number of iterations of n under f(k) = 2k+1 before we reach a number that is not a prime.
   bin $4,4
   div $4,2
   min $4,1
+  sub $5,2
   sub $0,$4
-  add $2,2
+  add $2,6
   add $2,$5
   mov $5,$0
   max $5,0

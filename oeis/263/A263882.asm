@@ -5,7 +5,8 @@
 add $0,2
 lpb $0
   trn $0,1
-  seq $0,60842 ; (C(2p,p)-2)/p^2 where p runs through the primes.
+  add $0,1
+  seq $0,60842 ; a(n) = (binomial(2*p,p)-2)/p^2 where p = prime(n).
   mov $1,$0
   mov $0,0
 lpe

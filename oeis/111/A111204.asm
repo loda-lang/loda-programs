@@ -12,6 +12,7 @@ lpb $2
   mov $4,$3
   add $4,$3
   mov $3,$4
+  add $4,1
   seq $4,62570 ; a(n) = phi(2*n).
   dif $4,2
   sub $3,$4

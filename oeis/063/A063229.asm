@@ -8,7 +8,7 @@ mov $2,$0
 mul $2,22
 div $2,3
 mov $3,$0
-cmp $3,0
+equ $3,0
 add $0,$3
 mod $0,3
 add $0,$2

@@ -1,13 +1,14 @@
 ; A366146: The sum of divisors of the largest divisor of n that is a cubefull number (A036966).
 ; Submitted by Science United
 ; 1,1,1,1,1,1,1,15,1,1,1,1,1,1,1,31,1,1,1,1,1,1,1,15,1,1,40,1,1,1,1,63,1,1,1,1,1,1,1,15,1,1,1,1,1,1,1,31,1,1,1,1,1,40,1,15,1,1,1,1,1,1,1,127,1,1,1,1,1,1,1,15,1,1,1,1,1,1,1,31
-; Formula: a(n) = truncate(A000203(n+1)/(A039653(A360541(truncate(truncate(((n+1)*A056552(n)^3)/gcd(A056552(n)^3,n+1))/(n+1))-1))+1))
+; Formula: a(n) = truncate(A000203(n+1)/(A039653(A360541(truncate(truncate(((n+1)*A056552(n+1)^3)/gcd(A056552(n+1)^3,n+1))/(n+1))-1))+1))
 
 mov $2,$0
 add $2,1
 mov $4,$0
 add $4,1
 mov $1,$0
+add $1,1
 seq $1,56552 ; Powerfree kernel of cubefree part of n.
 pow $1,3
 mov $3,$1

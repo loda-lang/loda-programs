@@ -8,13 +8,14 @@ add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,64353 ; Kolakoski-(1,3) sequence: the alphabet is {1,3}, and a(n) is the length of the n-th run.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,6
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

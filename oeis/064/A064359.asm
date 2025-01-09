@@ -2,7 +2,8 @@
 ; Submitted by MechWarrior
 ; 1,2,5,3,7,11,23,4,9,14,29,19,39
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $2,1
 lpb $0

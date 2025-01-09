@@ -7,6 +7,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $4,$1
+  add $4,1
   seq $4,63655 ; Smallest semiperimeter of integral rectangle with area n.
   mod $4,2
   mov $3,$4

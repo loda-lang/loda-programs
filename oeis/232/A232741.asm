@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $4,$1
   mov $3,$1
+  add $3,1
   seq $3,55881 ; a(n) = largest m such that m! divides n.
   add $3,$4
   gcd $3,2
@@ -17,7 +18,7 @@ lpb $2
   sub $3,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

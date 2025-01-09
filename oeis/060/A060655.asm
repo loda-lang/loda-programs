@@ -2,7 +2,10 @@
 ; Submitted by Science United
 ; 2,4,6,8,11,14,18,21,24,28,32,37,41,46,51,55,60
 
+#offset 1
+
 mov $5,1
+sub $0,1
 lpb $0
   sub $0,1
   add $4,1
@@ -22,7 +25,7 @@ lpb $0
   dif $6,2
   add $5,$6
   add $5,$4
-  cmp $2,1
+  equ $2,1
   mov $3,$5
 lpe
 mov $0,$1

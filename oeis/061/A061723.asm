@@ -6,6 +6,6 @@ mul $0,118
 div $0,81
 sub $0,14
 mov $1,$0
-cmp $1,0
+equ $1,0
 add $0,$1
 sub $0,1

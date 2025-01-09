@@ -17,8 +17,12 @@ lpb $2
   mul $6,$5
   add $6,1
   pow $6,2
+  mov $7,$1
+  add $7,1
   mov $3,$1
-  seq $3,38040 ; a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
+  add $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mul $3,$7
   gcd $6,$3
   div $3,$6
   add $3,1

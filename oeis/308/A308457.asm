@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,57661 ; a(n) = Sum_{k=1..n} lcm(n,k)/n.
     mov $9,10
     add $9,$5

@@ -13,6 +13,7 @@ lpb $0
     trn $4,1
     dif $6,2
     mov $7,$4
+    add $7,1
     seq $7,60613 ; Number of n X n {-1,0,1} matrices with no zero rows.
     mov $9,10
     add $9,$5

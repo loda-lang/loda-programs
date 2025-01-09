@@ -9,6 +9,7 @@ dif $1,2
 sub $1,1
 mov $2,$1
 trn $2,1
+add $1,1
 seq $1,62570 ; a(n) = phi(2*n).
 add $2,$1
 gcd $2,4

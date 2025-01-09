@@ -12,10 +12,8 @@ lpb $2
   div $2,2
   sub $0,$2
 lpe
+neq $1,0
 add $0,1
 seq $0,56539 ; Self-inverse permutation: reverse the bits in binary expansion of n and also complement them (0->1, 1->0) if the run count (A005811) is even.
-sub $0,1
 seq $0,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
-cmp $1,0
-cmp $1,0
 mul $0,$1

@@ -10,8 +10,20 @@ lpb $3
   sub $0,$3
   mov $1,$0
   mov $5,$0
-  seq $5,8833 ; Largest square dividing n.
-  seq $5,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  sub $5,1
+  mov $7,0
+  max $7,$5
+  mov $6,$7
+  add $7,1
+  seq $7,19554 ; Smallest number whose square is divisible by n.
+  div $6,$7
+  mov $5,$6
+  add $5,1
+  pow $5,2
+  mul $5,4
+  nrt $5,2
+  add $5,1
+  div $5,2
   sub $0,1
   div $0,$5
   add $0,1

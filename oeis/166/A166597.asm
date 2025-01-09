@@ -9,6 +9,7 @@ lpb $3
   mov $5,$0
   max $5,0
   mov $6,$5
+  add $6,1
   seq $6,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   trn $6,1
   sub $6,1

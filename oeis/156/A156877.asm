@@ -6,6 +6,7 @@ add $0,1
 lpb $0
   add $0,$2
   mov $2,$1
+  add $2,1
   seq $2,59455 ; Safe primes which are also Sophie Germain primes.
   sub $0,$2
   add $1,1

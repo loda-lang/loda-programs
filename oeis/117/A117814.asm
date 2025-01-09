@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   mod $1,10
+  add $1,1
   seq $1,62301 ; Number of ways writing n-th prime as a sum of two primes.
   gcd $0,$1
   div $0,10

@@ -12,7 +12,6 @@ lpb $2
   mov $3,$1
   seq $3,80565 ; Binary expansion of n has form 11**...*1.
   mov $5,$3
-  sub $3,1
   seq $3,61007 ; a(n) = -(n-1)! mod n.
   sub $0,$3
   add $1,1

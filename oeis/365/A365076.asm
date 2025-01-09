@@ -11,6 +11,7 @@ lpb $0
   sub $0,1
 lpe
 mov $1,$0
+add $1,1
 seq $1,57661 ; a(n) = Sum_{k=1..n} lcm(n,k)/n.
 mov $0,$1
 mul $0,2

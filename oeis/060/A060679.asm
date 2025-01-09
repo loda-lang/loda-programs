@@ -7,19 +7,19 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
-  mov $6,$1
-  seq $6,62570 ; a(n) = phi(2*n).
   mov $5,$1
-  add $5,1
+  mov $6,$1
+  add $6,2
+  seq $6,62570 ; a(n) = phi(2*n).
+  add $1,1
+  add $5,2
   gcd $5,$6
   mov $3,$5
-  cmp $3,1
-  cmp $3,0
+  neq $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

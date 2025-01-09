@@ -18,6 +18,7 @@ lpb $2
     add $0,$6
     trn $0,1
     seq $0,301653 ; Expansion of x*(1 + 2*x)/((1 - x)*(1 + x)*(1 - x - x^2)).
+    add $0,1
     seq $0,60762 ; Number of conjugacy classes (the same as the number of irreducible representations) in the dihedral group with 2n elements.
     sub $0,2
     mov $5,$6

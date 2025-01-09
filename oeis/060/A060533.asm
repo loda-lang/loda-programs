@@ -19,7 +19,7 @@ lpb $0
   mul $9,-1
   mov $1,$0
   mov $3,$8
-  cmp $4,98
+  equ $4,98
   mov $8,$5
   sub $8,$10
   mov $10,$7

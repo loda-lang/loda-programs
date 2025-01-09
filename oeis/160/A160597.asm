@@ -5,7 +5,6 @@
 mov $2,$0
 add $2,2
 dif $2,2
-sub $2,1
 seq $2,62570 ; a(n) = phi(2*n).
 add $0,1
 mov $1,$2

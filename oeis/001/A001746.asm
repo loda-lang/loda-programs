@@ -11,6 +11,7 @@ add $2,180
 lpb $2
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,57436 ; Contains digits 1 through 6 only.
   seq $3,222249 ; In the number n, replace all (decimal) digits '6' with '7' and vice versa.
   sub $3,1

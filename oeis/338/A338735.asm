@@ -14,6 +14,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,56857 ; Triangle read by rows: T(n,c) = number of successive equalities in set partitions of n.
   add $1,$0
 lpe

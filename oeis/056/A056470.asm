@@ -1,8 +1,11 @@
 ; A056470: Number of palindromic structures using a maximum of five different symbols.
 ; Submitted by pelpolaris
 ; 1,1,2,2,5,5,15,15,52,52,202,202,855,855,3845,3845,18002,18002,86472,86472,422005,422005,2079475,2079475,10306752,10306752,51263942,51263942,255514355,255514355,1275163905
-; Formula: a(n) = b(floor(n/2))+1, b(n) = b(n-1)+floor((3^n+2^n+truncate(5^(n-1)))/6), b(0) = 0
+; Formula: a(n) = b(floor((n-1)/2))+1, b(n) = b(n-1)+floor((5^(n-1)+3^n+2^n)/6), b(0) = 0
 
+#offset 1
+
+sub $0,1
 div $0,2
 lpb $0
   sub $0,1

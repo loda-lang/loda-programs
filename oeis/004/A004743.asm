@@ -9,11 +9,12 @@ mov $1,-2
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,56980 ; Number of blocks of {1, 1, 0} in binary expansion of n.
   equ $3,0
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

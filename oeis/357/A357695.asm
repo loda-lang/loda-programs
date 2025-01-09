@@ -15,6 +15,7 @@ lpb $2
   add $3,1
   mov $6,$5
   add $6,1
+  add $5,1
   seq $5,56552 ; Powerfree kernel of cubefree part of n.
   pow $5,3
   mov $7,$5
@@ -28,12 +29,12 @@ lpb $2
   add $5,1
   sub $5,$3
   div $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

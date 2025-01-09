@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,55464 ; Numbers n such that sum of EulerPhi and DivisorSum is an integer multiple of the number of divisors.
   sub $3,1
   mov $5,$3
