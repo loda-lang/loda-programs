@@ -1,8 +1,13 @@
 ; A287841: Number of iterations of number of distinct prime factors (A001221) needed to reach 1 starting at n (n is counted).
-; Submitted by arashai
+; Submitted by atannir
 ; 1,2,2,2,2,3,2,2,2,3,2,3,2,3,3,2,2,3,2,3,3,3,2,3,2,3,2,3,2,3,2,2,3,3,3,3,2,3,3,3,2,3,2,3,3,3,2,3,2,3,3,3,2,3,3,3,3,3,2,3,2,3,3,2,3,3,2,3,3,3,2,3,2,3,3,3,3,3,2,3
-; Formula: a(n) = min(A034444(n+1),3)
+; Formula: a(n) = min(n,1)*(A143731(n)+1)+1
 
-add $0,1
-seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-min $0,3
+mov $1,$0
+seq $1,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+add $1,1
+min $0,1
+mul $1,$0
+mov $2,$1
+add $2,1
+mov $0,$2

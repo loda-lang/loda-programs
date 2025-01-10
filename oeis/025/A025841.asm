@@ -1,25 +1,23 @@
 ; A025841: Expansion of 1/((1-x^3)(1-x^6)(1-x^7)).
-; Submitted by Science United
+; Submitted by Rodney Duane
 ; 1,0,0,1,0,0,2,1,0,2,1,0,3,2,1,3,2,1,4,3,2,5,3,2,6,4,3,7,5,3,8,6,4,9,7,5,10,8,6,11,9,7,13,10,8,14,11,9,16,13,10,17,14,11,19,16,13,20,17,14,22,19,16,24,20,17,26,22
 
-max $2,$0
-add $0,$2
-mov $1,$0
-mov $5,$0
-mov $7,2
-lpb $7
-  sub $7,1
-  add $1,$7
-  sub $1,1
-  mov $6,$1
-  max $6,0
-  seq $6,29110 ; Expansion of 1/((1-x)(1-x^6)(1-x^7)(1-x^12)).
-  mov $4,$7
-  mul $4,$6
-  mul $1,$7
-  add $3,$4
+add $0,3
+lpb $0
+  sub $0,3
+  sub $0,$3
+  mov $2,$0
+  add $2,6
+  lpb $2
+    mov $1,$2
+    mod $1,7
+    div $1,3
+    pow $1,2
+    div $1,4
+    sub $2,6
+    add $4,$1
+  lpe
+  add $0,1
+  mov $3,1
 lpe
-min $5,1
-mul $5,$6
-sub $3,$5
-mov $0,$3
+mov $0,$4

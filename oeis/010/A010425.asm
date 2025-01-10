@@ -1,30 +1,14 @@
 ; A010425: Squares mod 64.
-; Submitted by mmonnin
+; Submitted by Paulus
 ; 0,1,4,9,16,17,25,33,36,41,49,57
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-trn $0,1
-sub $1,$0
-mov $3,$0
-add $3,2
-pow $3,2
-lpb $3
-  mov $4,$2
-  seq $4,72400 ; (Factors of 4 removed from n) modulo 8.
-  equ $4,1
-  sub $0,$4
-  add $2,1
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mul $3,$5
-  sub $3,1
+lpb $0
+  mov $1,$0
+  seq $1,55044 ; Numbers of the form 2^(2i+1)*(8*j+1).
+  mov $0,0
 lpe
-mov $0,$2
-mul $0,2
-add $0,2
-mul $0,$1
+mov $0,$1
 div $0,2

@@ -1,14 +1,19 @@
 ; A112502: Third column of triangle A112500.
-; Submitted by PDW
+; Submitted by Science United
 ; 1,10,60,282,1149,4272,14932,49996,162369,515886,1613316,4987542,15290461,46592452,141350412,427459320,1289718225,3884883570,11688205420,35135919730,105558754461,316995030840,951656181540
-; Formula: a(n) = truncate(b(n)/12)+1, b(n) = b(n-1)+A353047(n), b(0) = 0
+; Formula: a(n) = truncate(f(n+4)/12), b(n) = 3*d(n-1)+b(n-1), b(4) = 216, b(3) = 60, b(2) = 12, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)+b(n-1)+e(n-1), c(4) = 108, c(3) = 12, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 3*d(n-1)+4, d(4) = 160, d(3) = 52, d(2) = 16, d(1) = 4, d(0) = 0, e(n) = 2*b(n-1)+2*e(n-1), e(4) = 168, e(3) = 24, e(2) = 0, e(1) = 0, e(0) = 0, f(n) = c(n-1)+f(n-1), f(4) = 12, f(3) = 0, f(2) = 0, f(1) = 0, f(0) = 0
 
+add $0,4
 lpb $0
-  mov $2,$0
-  seq $2,353047 ; Number of length n words on alphabet {0,1,2} that contain each of the subwords 01, 02, 10, 12, 20, and 21 as (not necessarily contiguous) subwords.
   sub $0,1
-  add $1,$2
+  mul $3,3
+  add $4,$1
+  add $5,$2
+  add $1,$3
+  mul $2,2
+  add $2,$4
+  add $3,4
+  mul $4,2
 lpe
-mov $0,$1
+mov $0,$5
 div $0,12
-add $0,1

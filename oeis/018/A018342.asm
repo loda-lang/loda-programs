@@ -13,6 +13,7 @@ lpb $2
   gcd $3,$1
   div $3,$1
   sub $0,$3
+  add $1,1
   sub $2,$0
 lpe
 mov $0,$1

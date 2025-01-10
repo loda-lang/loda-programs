@@ -11,7 +11,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,157454 ; Triangle read by rows: T(n, m) = min(2*m - 1, 2*(n - m) + 1).
   div $0,2
   add $0,1

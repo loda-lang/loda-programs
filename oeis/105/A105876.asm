@@ -1,25 +1,24 @@
 ; A105876: Primes for which -4 is a primitive root.
-; Submitted by PDW
+; Submitted by lee
 ; 3,7,11,19,23,47,59,67,71,79,83,103,107,131,139,163,167,179,191,199,211,227,239,263,271,311,347,359,367,379,383,419,443,463,467,479,487,491,503,523,547,563,587,599,607,619,647,659,719,743,751,787,823,827,839,859,863,883,887,907,947,967,983,991,1019,1031,1039,1063,1087,1091,1123,1151,1171,1187,1223,1231,1259,1279,1283,1291
 
 mov $2,$0
-pow $2,4
+pow $2,2
 lpb $2
-  sub $2,1
   mov $3,$1
-  mul $3,2
-  add $3,1
-  mov $4,$3
-  seq $4,3558 ; Least number m > 0 such that 2^m == +-1 (mod 2n + 1).
-  sub $4,$3
-  mov $5,0
-  sub $5,$4
-  mov $3,$5
-  cmp $3,0
+  add $1,1
+  add $3,2
+  seq $3,55388 ; Number of riffle shuffles of 2n cards required to return the deck to its initial state.
+  sub $3,$1
+  equ $3,$1
   sub $0,$3
   add $1,1
-  sub $2,$0
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-mul $0,4
+mul $0,2
 add $0,3
