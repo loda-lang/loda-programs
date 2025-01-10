@@ -14,4 +14,4 @@ lpb $0
   mul $2,4
 lpe
 mov $0,$1
-dis $0,2
+dgs $0,2

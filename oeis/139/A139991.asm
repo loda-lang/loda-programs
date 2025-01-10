@@ -12,6 +12,7 @@ lpb $2
   seq $3,295835 ; Numbers k == 3 (mod 4) such that 2^((k-1)/2), 3^((k-1)/2) and 5^((k-1)/2) are congruent to 1 (mod k).
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
   equ $3,0
   sub $0,$3

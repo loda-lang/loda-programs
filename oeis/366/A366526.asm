@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,61344 ; Numbers of form p^m + 1, p odd prime, m >= 1.
   mov $5,$3
   seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).

@@ -8,7 +8,6 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $3,$0
-  sub $0,1
   seq $0,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   mul $3,$0
   add $1,$3

@@ -1,10 +1,13 @@
 ; A069256: Size of the Sylow 2-subgroup of the group GL_2(Z_n): maximal power of 2 that divides A000252(n).
 ; Submitted by Jamie Morken(w4)
 ; 1,2,16,32,32,32,32,512,16,64,16,512,32,64,512,8192,512,32,16,1024,512,32,32,8192,32,64,16,1024,32,1024,128,131072,256,1024,1024,512,32,32,512,16384,128,1024,16,512,512,64,64,131072,32,64,8192,1024,32,32,512,16384,256,64,16,16384,32,256,512,2097152,1024,512,16,16384,512,2048,32,8192,128,64,512,512,512,1024,64,262144
-; Formula: a(n) = gcd(A000082(n+1)*A000010(n+1)^2,2^(n+2))
+; Formula: a(n) = gcd(n*A001615(n)*A000010(n)^2,2^(n+1))
+
+#offset 1
 
 mov $1,$0
-add $1,2
+add $1,1
+sub $0,1
 mov $2,2
 pow $2,$1
 mov $3,$0
@@ -12,6 +15,8 @@ add $3,1
 seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 pow $3,2
 add $0,1
-seq $0,82 ; a(n) = n^2*Product_{p|n} (1 + 1/p).
+mov $4,$0
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+mul $0,$4
 mul $0,$3
 gcd $0,$2

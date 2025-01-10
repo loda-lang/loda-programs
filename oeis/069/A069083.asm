@@ -8,8 +8,15 @@ add $2,11
 pow $2,2
 lpb $2
   sub $2,1
+  mov $7,$1
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,$7
+  gcd $5,$3
+  mov $6,$3
+  div $6,$5
+  mov $3,$6
   sub $3,2
   equ $3,2
   sub $0,$3

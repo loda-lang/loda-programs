@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,31345 ; Write primes in base 10 but interpret as if in base 13.
   mov $5,$3
   add $5,2

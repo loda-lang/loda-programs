@@ -13,6 +13,7 @@ lpb $2
   add $6,1
   add $3,$1
   sub $3,$6
+  add $4,1
   seq $4,30528 ; Triangle read by rows: a(n,k) = binomial(k,n-k).
   mul $4,$3
   add $4,1

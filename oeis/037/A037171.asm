@@ -2,7 +2,8 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,4,8,10,14,20,90
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2

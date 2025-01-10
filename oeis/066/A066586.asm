@@ -1,6 +1,9 @@
 ; A066586: Number of normal subgroups of the group of n X n signed permutations matrices (described in sequence A066051).
 ; 2,6,9,11,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
 
+#offset 1
+
+sub $0,1
 mov $1,7
 mov $3,2
 mov $4,1

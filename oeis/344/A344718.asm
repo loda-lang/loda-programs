@@ -10,6 +10,7 @@ lpb $2
   add $0,$2
   trn $0,1
   seq $0,237589 ; Sum of first n odd noncomposite numbers.
+  add $0,1
   seq $0,34387 ; Sum of primes <= n.
   mov $1,$2
   mul $1,$0

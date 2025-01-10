@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,66441 ; a(n) = 11^n mod n.
   sub $3,$4
   equ $3,0

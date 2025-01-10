@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,66750 ; Greatest common divisor of n and its digit sum.
   mov $3,$2
   min $3,1

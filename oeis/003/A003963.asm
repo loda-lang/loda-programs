@@ -30,7 +30,6 @@ lpb $0
     bin $3,$7
     max $3,$6
   lpe
-  sub $3,1
   seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $3,1
   lpb $0

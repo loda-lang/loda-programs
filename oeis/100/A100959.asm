@@ -7,8 +7,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

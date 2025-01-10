@@ -12,7 +12,7 @@ lpb $2
   sub $0,$2
   mov $4,$0
   add $4,1
-  dis $4,2
+  dgs $4,2
   mov $0,$4
   sub $0,1
   div $1,28

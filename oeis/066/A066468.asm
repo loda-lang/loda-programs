@@ -12,6 +12,7 @@ add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,66241 ; 1 + number of anti-divisors of n.
   equ $3,4
   sub $0,$3

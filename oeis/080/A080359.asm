@@ -7,6 +7,7 @@ add $0,1
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,35250 ; Number of primes between n and 2n (inclusive).
   add $1,1
   add $2,$3

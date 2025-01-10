@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,62354 ; a(n) = sigma(n)*phi(n).
   mul $3,$2
   add $3,$1

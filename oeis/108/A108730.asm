@@ -5,6 +5,7 @@
 mov $1,1
 lpb $1
   sub $1,1
+  add $0,1
   seq $0,66099 ; Triangle read by rows, in which row n lists the compositions of n in reverse lexicographic order.
 lpe
 sub $0,1

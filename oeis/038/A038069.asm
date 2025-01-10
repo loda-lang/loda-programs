@@ -12,6 +12,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $4,$2
+  add $4,1
   seq $4,38065 ; Product_{k>=1} 1/(1 - x^k)^a(k) = 1 + 4x.
   add $1,$4
   mov $3,$0

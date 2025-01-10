@@ -10,10 +10,12 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $2,$0
+  add $2,2
   seq $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   mul $2,$1
   sub $2,1
   trn $2,1
+  add $2,2
   seq $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   add $4,$2
 lpe

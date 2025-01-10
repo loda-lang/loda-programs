@@ -5,11 +5,11 @@
 add $0,1
 mov $2,$0
 mul $0,2
-add $0,2
 mov $1,$0
+add $1,3
 seq $1,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
 sub $0,$1
-add $0,1
+add $0,3
 lpb $0
   add $2,1
   sub $0,$2

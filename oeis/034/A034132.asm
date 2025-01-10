@@ -1,10 +1,12 @@
 ; A034132: Decimal part of cube root of a(n) starts with 6: first term of runs.
 ; Submitted by Simon Strandgaard
 ; 18,47,98,176,288,439,637,885,1192,1561,2001,2516,3113,3797,4575,5452,6435,7530,8742,10078,11544,13145,14887,16778,18822,21025,23394,25935,28653,31555,34646,37934,41422,45119,49028,53158,57513,62100,66924
-; Formula: a(n) = truncate(((5*n+13)^3)/125)+1
+; Formula: a(n) = truncate(((5*n+8)^3)/125)+1
+
+#offset 1
 
 mul $0,5
-add $0,13
+add $0,8
 pow $0,3
 div $0,125
 add $0,1

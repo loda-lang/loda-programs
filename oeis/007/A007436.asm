@@ -17,10 +17,8 @@ lpb $4
   sub $4,1
   mov $2,$5
   sub $2,$4
-  sub $2,1
   mov $1,$2
   seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  add $2,1
   seq $2,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
   seq $2,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
   mul $2,$1

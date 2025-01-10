@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  sub $3,1
   seq $3,68425 ; a(n) = floor(2^n*Pi).
   sub $3,1
   gcd $3,4

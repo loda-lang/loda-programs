@@ -11,10 +11,9 @@ lpb $2
   seq $3,177965 ; Indices m for which A177961(m) - m = 1.
   mul $3,2
   mov $5,$3
-  sub $3,2
+  sub $3,1
   seq $3,35195 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 13.
-  equ $3,0
-  equ $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0

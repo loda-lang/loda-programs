@@ -11,6 +11,7 @@ lpb $2
   seq $3,3601 ; Numbers j such that the average of the divisors of j is an integer: sigma_0(j) divides sigma_1(j). Alternatively, numbers j such that tau(j) (A000005(j)) divides sigma(j) (A000203(j)).
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,53866 ; Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
   equ $3,0
   sub $0,$3

@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,65081 ; Alternating bit sum (A065359) for n-th prime p: replace 2^k with (-1)^k in binary expansion of p.
   add $3,$0
   add $3,$4

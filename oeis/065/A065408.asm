@@ -12,8 +12,11 @@ lpb $2
   mov $3,$1
   seq $3,4159 ; Sum of digits of n^2.
   trn $3,1
+  mov $5,4
+  pow $5,$3
   add $3,1
-  seq $3,62175 ; a(n) = 4^(n-1) mod n.
+  mod $5,$3
+  mov $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

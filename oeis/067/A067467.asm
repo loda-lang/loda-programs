@@ -11,15 +11,17 @@ lpb $2
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   bin $5,2
   mov $3,$1
+  add $3,3
+  seq $3,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   add $3,1
-  seq $3,65151 ; a(n) = prime(1 + A064722(n)).
+  seq $3,40 ; The prime numbers.
   mul $3,2
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,2
   mul $2,$4
   sub $2,1

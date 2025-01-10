@@ -15,6 +15,7 @@ lpb $0
     sub $2,$7
     mov $6,$2
     max $6,0
+    add $6,1
     seq $6,65333 ; Characteristic function of 3-smooth numbers, i.e., numbers of the form 2^i*3^j (i, j >= 0).
     add $8,2
     add $5,$6

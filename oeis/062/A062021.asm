@@ -17,6 +17,7 @@ lpb $1
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,69482 ; a(n) = prime(n+1)^2 - prime(n)^2.
     add $3,$2
     add $6,$3

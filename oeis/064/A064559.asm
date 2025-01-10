@@ -9,6 +9,7 @@ mov $2,$0
 mov $3,$0
 lpb $3
   add $1,1
+  add $2,1
   seq $2,64553 ; a(1) = 1, a(prime(i)) = i + 1 for i > 0 and a(u * v) = a(u) * a(v) for u, v > 0.
   sub $2,1
   mov $3,$2

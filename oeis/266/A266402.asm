@@ -12,8 +12,7 @@ lpb $0
   lpb $4
     mov $5,$0
     mod $5,$3
-    cmp $5,0
-    cmp $5,0
+    neq $5,0
     add $3,1
     sub $4,$5
   lpe
@@ -26,12 +25,11 @@ lpb $0
     lpb $7
       mov $1,$5
       gcd $1,$7
-      cmp $1,1
+      equ $1,1
       mov $3,2
       sub $7,$1
     lpe
-    cmp $7,0
-    cmp $7,0
+    neq $7,0
     sub $6,$7
   lpe
   add $5,1
@@ -39,5 +37,4 @@ lpe
 mov $0,$2
 sub $0,1
 seq $0,163807 ; Reverse the order of inner digits (all digits but the first and last) of n written in binary. a(n) = the decimal value of the result.
-sub $0,1
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

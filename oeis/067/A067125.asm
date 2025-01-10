@@ -1,10 +1,12 @@
 ; A067125: Floor(cube root(concatenation of first n cubes)).
 ; Submitted by Ralfy
 ; 1,2,12,56,567,5674,56749,567497,5674971,122263545,2634088227,56749710539,1222635450364,26340882275280,567497105399112,12226354503645281,263408822752809483,5674971053991125006
-; Formula: a(n) = sqrtnint(A019522(n+1),3)
+; Formula: a(n) = sqrtnint(A019522(n),3)
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,19522 ; Concatenate cubes.
 nrt $1,3
+sub $0,1
 mov $0,$1

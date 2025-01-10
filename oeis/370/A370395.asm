@@ -8,6 +8,7 @@ lpb $1
   div $1,2
   mov $0,$2
   add $0,$1
+  add $0,1
   seq $0,61368 ; Lesser of twin primes (p, p+2) whose average p+1 is not squarefree.
   div $1,2
   mul $2,$1

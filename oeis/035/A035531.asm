@@ -5,7 +5,7 @@
 #offset 1
 
 mov $1,$0
-dis $1,2
+dgs $1,2
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
 sub $0,1
 add $0,$1

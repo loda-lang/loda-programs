@@ -6,5 +6,6 @@
 
 sub $0,1
 equ $1,$0
+add $0,1
 seq $0,66069 ; a(n) is the smallest positive integer m such that n divides (n + m)^m.
 sub $0,$1

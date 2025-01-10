@@ -10,7 +10,6 @@ lpb $3
   add $0,$3
   add $0,1
   seq $0,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  sub $0,1
   seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $2,$3
   mul $2,$0

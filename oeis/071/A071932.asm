@@ -13,6 +13,7 @@ lpb $0
   div $3,4
   mul $3,4
   add $3,$4
+  add $3,1
   seq $3,34947 ; Jacobi (or Kronecker) symbol (-1/n).
   sub $0,1
   add $2,$3

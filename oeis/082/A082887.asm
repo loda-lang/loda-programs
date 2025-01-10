@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,68496 ; n! reduced mod 2^n.
   bin $0,$3
   gcd $1,$2

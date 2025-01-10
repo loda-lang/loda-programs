@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  dis $5,2
+  dgs $5,2
   mov $3,$5
   sub $3,2
   equ $3,1

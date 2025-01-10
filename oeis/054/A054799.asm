@@ -16,6 +16,7 @@ lpb $2
     mov $3,$1
     add $3,$7
     add $3,$7
+    add $3,1
     seq $3,62967 ; a(n) = 2*(sigma(n)-n-1)+1, where sigma = A000203, sum of divisors of n.
     mov $6,$7
     mul $6,$3

@@ -11,7 +11,7 @@ lpb $2
   seq $3,348928 ; a(n) = gcd(n, A003958(n)), where A003958 is multiplicative with a(p^e) = (p-1)^e.
   sub $3,1
   add $3,$4
-  cmp $3,1
+  equ $3,1
   gcd $3,2
   sub $0,$3
   add $0,1
@@ -19,7 +19,7 @@ lpb $2
   mov $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

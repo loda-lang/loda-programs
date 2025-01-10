@@ -6,16 +6,17 @@ mov $1,-1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,34178 ; Number of solutions to n = a^2 - b^2, a > b >= 0.
   add $3,1
   dif $3,2
-  cmp $3,1
+  equ $3,1
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

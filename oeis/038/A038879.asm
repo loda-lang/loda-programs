@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,3,5,13,31,37,41,43,53,67,71,79,83,89,107,151,157,163,173,191,197,199,227,239,241,271,277,281,283,293,307,311,317,347,359,373,397,401,409,431,439,443,449,467,479,521,523,547,557,563,569,587,599,601,613,631,641,643,653,677,683,719,733,751,757,761,769,773,787,797,809,827,839,853,877,881,883,907,911,919
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,10
@@ -11,6 +14,7 @@ lpb $2
   add $6,1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$1
+  add $5,1
   seq $5,35192 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 10.
   equ $5,0
   add $5,$6

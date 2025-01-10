@@ -2,6 +2,9 @@
 ; Submitted by http://kodeks.karelia.ru/
 ; 4,6,2,8,1,7,3,5,9,10,11,12,13,17,19,15,21,14,25,27,31,16,35,37,39,43,47,23,49,18,53,55,57,61,63,29,67,71,73,33,77,20,81,83,85,22,89,93,95,99,101,41,103,107,111,113,117,45,119,24,123,127,129,133,137,51,141
 
+#offset 1
+
+sub $0,1
 mov $1,2
 lpb $1
   sub $1,1
@@ -9,7 +12,6 @@ lpb $1
   mov $2,$0
   add $2,1
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  sub $2,1
   seq $2,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mul $2,2
   sub $2,1

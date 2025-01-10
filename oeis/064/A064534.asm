@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 3,5,7,11,13,17,19,23,29,53,59
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 lpb $2

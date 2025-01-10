@@ -7,6 +7,7 @@ mov $3,$0
 pow $3,5
 lpb $3
   mov $1,$2
+  add $1,1
   seq $1,67742 ; Number of middle divisors of n, i.e., divisors in the half-open interval [sqrt(n/2), sqrt(n*2)).
   sub $0,$1
   add $2,1

@@ -6,10 +6,11 @@ mov $1,-1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $3,$1
   mov $6,$1
   add $6,2
   add $1,1
-  mov $3,$1
+  add $3,2
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   mov $5,$3
   gcd $5,$6

@@ -2,6 +2,9 @@
 ; Submitted by rajab
 ; 7,21,26,56,70,78,108,126,168,210
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 add $2,2

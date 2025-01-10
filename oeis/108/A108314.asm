@@ -15,6 +15,7 @@ lpb $3
   div $0,2
   add $0,2
   seq $0,60265 ; Largest prime less than 2n.
+  add $0,1
   seq $0,34387 ; Sum of primes <= n.
   mul $0,4
   mov $4,$3

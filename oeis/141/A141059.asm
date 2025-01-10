@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   seq $0,63974 ; Number of terms in inverse set of usigma = sum of unitary divisors = A034448.
   mul $1,$0
   add $3,$1

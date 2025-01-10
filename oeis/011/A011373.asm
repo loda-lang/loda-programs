@@ -11,4 +11,4 @@ lpe
 mul $0,$2
 add $0,$1
 div $0,3
-dis $0,2
+dgs $0,2

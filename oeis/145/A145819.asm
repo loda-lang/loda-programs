@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,2
+  add $1,1
   seq $1,32937 ; Numbers k whose base-2 representation Sum_{i=0..m} d(i)*2^(m-i) has d(i)=0 for all odd i, excluding 0. Here m is the position of the leading bit of k.
   mov $0,1
 lpe

@@ -10,7 +10,6 @@ lpb $2
   mov $5,$1
   add $5,1
   seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-  sub $5,1
   seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $3,$1
   seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.

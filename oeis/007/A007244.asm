@@ -10,6 +10,7 @@ lpb $0
   sub $0,2
   sub $1,1
 lpe
+sub $0,1
 seq $0,30182 ; McKay-Thompson series of class 3B for the Monster group with a(0) = -12.
 add $1,$0
 mov $0,$1

@@ -2,6 +2,9 @@
 ; Submitted by amazing
 ; 1,2,5,10,17,31,45,75
 
+#offset 3
+
+sub $0,3
 pow $0,2
 mov $4,$0
 lpb $0

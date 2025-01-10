@@ -11,7 +11,6 @@ lpb $2
   mov $3,$1
   seq $3,107145 ; Primes of the form x^2 + 40y^2.
   mov $5,$3
-  sub $3,1
   seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
   neq $3,0
   sub $0,$3

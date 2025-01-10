@@ -9,6 +9,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $5,$2
+  add $5,1
   seq $5,67856 ; Sum_{n >= 1} a(n)/n^s = 1/(Sum_{n >= 1} (-1)^(n + 1)/n^s).
   mul $2,$5
   add $2,$5

@@ -12,7 +12,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,66247 ; Characteristic function of composite numbers: 1 if n is composite else 0.
   add $1,$0
 lpe

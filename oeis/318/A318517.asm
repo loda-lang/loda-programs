@@ -4,6 +4,7 @@
 
 mov $4,1
 mov $5,$0
+add $5,1
 seq $5,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
 add $0,1
 sub $0,$5

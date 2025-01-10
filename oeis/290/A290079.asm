@@ -4,6 +4,7 @@
 
 seq $0,290091 ; Filter based on 1-digits of base-3 expansion: a(n) = A278222(A289813(n)).
 seq $0,6093 ; a(n) = prime(n) - 1.
+add $0,1
 seq $0,49782 ; a(n) = (0! + 1! + ... + (n-1)!) mod n.
 add $0,3
 lpb $0

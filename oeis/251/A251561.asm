@@ -10,7 +10,8 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
-  seq $0,63955 ; Sum of the unitary prime divisors (A056169, A056171) of n!.
+  add $0,1
+  seq $0,63955 ; Sum of the unitary prime divisors of n!.
   mov $2,$3
   mul $2,$0
   add $1,$2

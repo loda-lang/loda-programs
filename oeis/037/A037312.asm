@@ -11,7 +11,7 @@ lpb $2
   mov $4,$1
   seq $4,53828 ; Sum of digits of (n written in base 7).
   mov $3,$1
-  dis $3,3
+  dgs $3,3
   sub $3,$4
   equ $3,0
   sub $0,$3

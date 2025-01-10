@@ -11,6 +11,7 @@ pow $2,3
 lpb $2
   sub $2,18
   mov $3,$1
+  add $3,1
   seq $3,49777 ; Triangular array read by rows: T(m,n) = n + n+1 + ... + m = (m+n)(m-n+1)/2.
   mod $3,3
   gcd $3,4

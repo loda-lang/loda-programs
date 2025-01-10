@@ -13,6 +13,7 @@ lpb $3
   add $7,1
   seq $7,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $6,$2
+  add $6,1
   seq $6,35197 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 15.
   equ $6,0
   add $6,$7

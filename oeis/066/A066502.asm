@@ -2,17 +2,25 @@
 ; Submitted by Landjunge
 ; 29,43,49,58,71,86,87,98,113,116,127,129,142,145,147,172,174,196,197,203,211,213,215,226,232,239,245,254,258,261,281,284,290,294,301,319,337,339,343,344,348,355,377,379,381,387,392,394,406,421,422,426,430,435,441,449,452,463,464,473,478,490,491,493,497,508,516,522,539,547,551,559,562,565,568,580,588,591,602,609
 
+#offset 1
+
 mov $2,$0
-add $2,8
+sub $0,1
+add $2,7
 pow $2,4
 lpb $2
   sub $2,18
   mov $5,$1
   add $5,2
   seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  mov $6,$1
+  add $6,2
+  seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   mov $3,$1
-  add $3,1
-  seq $3,173557 ; a(n) = Product_{primes p dividing n} (p-1).
+  add $3,2
+  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  div $6,$3
+  mov $3,$6
   mul $3,$5
   mod $3,7
   dif $3,2

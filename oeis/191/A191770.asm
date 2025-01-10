@@ -4,7 +4,6 @@
 
 lpb $0
   seq $0,328661 ; If n is the k-th composite number then a(n) = a(k), otherwise a(n) = n.
-  sub $0,1
   seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $0,1
 lpe

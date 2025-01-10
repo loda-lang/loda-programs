@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(l1)
 ; 0,0,0,0,9,11,15,18,22,25
 
+#offset 1
+
+sub $0,1
 mov $7,$0
 mov $4,$0
 lpb $4

@@ -9,6 +9,7 @@ add $2,4
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $0,$3
   add $1,4

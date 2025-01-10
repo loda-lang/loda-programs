@@ -8,6 +8,7 @@ pow $2,4
 lpb $2
   sub $2,14
   mov $6,$1
+  add $6,1
   seq $6,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
   mov $3,$1
   sub $3,$6
@@ -17,12 +18,12 @@ lpb $2
   gcd $3,4
   add $3,1
   gcd $3,$5
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

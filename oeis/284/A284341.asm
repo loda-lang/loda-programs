@@ -4,6 +4,7 @@
 
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,54576 ; Largest proper factor of the largest proper factor of n.
   gcd $1,16
   div $0,$1

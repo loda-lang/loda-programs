@@ -10,7 +10,6 @@ lpb $2
   seq $3,139902 ; Primes of the form 16x^2+16xy+19y^2.
   mov $5,$3
   mul $5,2
-  sub $3,1
   seq $3,35146 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -44.
   neq $3,0
   sub $0,$3

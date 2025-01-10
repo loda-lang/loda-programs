@@ -8,6 +8,7 @@ add $2,2
 pow $2,2
 lpb $2
   max $5,$1
+  add $5,1
   seq $5,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   mov $3,$5
   sub $3,1

@@ -12,7 +12,6 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
   seq $0,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   mul $1,$0
   add $3,$1

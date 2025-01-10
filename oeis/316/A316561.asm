@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,61387 ; Sum of digits = 4 times number of digits.
   sub $3,1
   mov $5,$3

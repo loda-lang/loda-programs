@@ -2,6 +2,9 @@
 ; Submitted by Fornax
 ; 0,1,2,3,4,6,7,8,9,12,13,14,15,16,18,41
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,2

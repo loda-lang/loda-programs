@@ -7,11 +7,12 @@ sub $0,1
 pow $0,14
 lpb $0
   trn $0,2
+  add $0,1
   seq $0,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
   trn $1,1
   add $2,8
   mov $3,$1
-  cmp $3,0
+  equ $3,0
   add $1,$3
   sub $1,$2
 lpe
@@ -19,7 +20,7 @@ lpb $2
   mod $2,6
   mul $1,4
 lpe
-cmp $3,0
+equ $3,0
 add $4,$3
 div $1,$4
 mod $1,2

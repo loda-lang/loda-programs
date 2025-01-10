@@ -13,7 +13,6 @@ lpb $2
   seq $3,3586 ; 3-smooth numbers: numbers of the form 2^i*3^j with i, j >= 0.
   mov $5,$3
   add $5,1
-  sub $3,1
   seq $3,35195 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 13.
   neq $3,0
   sub $0,$3

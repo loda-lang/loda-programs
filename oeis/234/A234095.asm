@@ -14,15 +14,15 @@ lpb $3
   seq $6,307000 ; Number of unitary rings with additive group (Z/nZ)^2. Equivalently, number of unitary commutative rings with additive group (Z/nZ)^2.
   div $6,2
   mov $4,$2
-  add $4,1
+  add $4,2
   seq $4,69733 ; Number of divisors d of n such that d or n/d is odd. Number of non-orientable coverings of the Klein bottle with n lists.
   sub $4,$6
-  cmp $4,0
+  equ $4,0
   sub $0,$4
   add $2,4
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

@@ -8,12 +8,13 @@ add $3,3
 pow $3,2
 lpb $3
   max $4,$6
+  add $4,1
   seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
   add $6,$2

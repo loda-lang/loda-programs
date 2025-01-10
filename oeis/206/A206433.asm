@@ -13,6 +13,7 @@ lpb $3
   add $0,$3
   trn $0,1
   mov $5,$0
+  add $5,1
   seq $5,66898 ; Total number of even parts in all partitions of n.
   add $5,1
   add $0,1

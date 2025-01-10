@@ -5,8 +5,6 @@
 #offset 1
 
 sub $0,1
-add $0,1
-sub $0,1
 mov $6,4
 mov $2,$0
 pow $2,3

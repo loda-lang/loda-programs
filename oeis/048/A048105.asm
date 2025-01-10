@@ -1,8 +1,11 @@
 ; A048105: Number of non-unitary divisors of n.
 ; Submitted by forretrio
 ; 0,0,0,1,0,0,0,2,1,0,0,2,0,0,0,3,0,2,0,2,0,0,0,4,1,0,2,2,0,0,0,4,0,0,0,5,0,0,0,4,0,0,0,2,2,0,0,6,1,2,0,2,0,4,0,4,0,0,0,4,0,0,2,5,0,0,0,2,0,0,0,8,0,0,2,2,0,0,0,6
-; Formula: a(n) = -A034444(n+1)+A000005(n+1)
+; Formula: a(n) = -A034444(n)+A000005(n)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).

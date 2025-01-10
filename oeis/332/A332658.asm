@@ -11,11 +11,11 @@ lpb $2
   gcd $0,$2
   mov $5,$0
   seq $5,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  sub $0,1
   mov $4,$0
   seq $4,63445 ; Moebius transform of f(x) = EulerPhi(x^2) function (A002618).
   add $4,$5
   div $4,2
+  sub $0,1
   mul $0,$4
   add $0,$4
   add $3,$0

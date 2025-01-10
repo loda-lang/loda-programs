@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,4,6,6,8,8,12,12,12,12,24,14,16,24,24,18,24,20,36,32,24,24,48
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mov $2,2
 lpb $0

@@ -8,5 +8,5 @@ mov $1,$0
 div $0,2
 bxo $1,$0
 mov $0,$1
-dis $0,2
+dgs $0,2
 sub $0,1

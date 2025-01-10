@@ -9,7 +9,7 @@ lpb $2
   mov $5,$1
   add $5,1
   seq $5,40 ; The prime numbers.
-  mov $6,1
+  mov $6,2
   seq $6,54272 ; Number of primes in the interval [prime(n), prime(n)^2].
   sub $6,$5
   mov $7,0

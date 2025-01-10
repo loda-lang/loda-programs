@@ -6,6 +6,7 @@ lpb $0
   lpb $0
     sub $0,1
     mov $1,$2
+    add $1,1
     seq $1,48103 ; Numbers not divisible by p^p for any prime p.
     add $2,1
   lpe

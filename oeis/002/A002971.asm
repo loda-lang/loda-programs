@@ -4,8 +4,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 mov $2,24
 mov $4,-4
 mov $3,$0

@@ -4,15 +4,14 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
   seq $3,107169 ; Primes of the form 3x^2 + 20y^2.
   mov $5,$3
-  sub $3,1
   seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
   neq $3,0
   sub $0,$3

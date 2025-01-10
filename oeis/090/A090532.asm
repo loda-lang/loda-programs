@@ -4,6 +4,7 @@
 
 add $0,1
 lpb $0
+  add $0,1
   seq $0,65855 ; Number of composites <= n.
   add $1,1
 lpe

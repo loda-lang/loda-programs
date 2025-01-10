@@ -9,8 +9,8 @@ lpb $1
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $1,$3
-sub $1,1
 mul $1,2
+sub $1,1
 seq $1,62298 ; Number of nonprimes <= n.
 add $0,$1
 add $0,1

@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,67076 ; Numbers k such that 2*k + 3 is a prime.
   div $3,3
   mov $5,$3

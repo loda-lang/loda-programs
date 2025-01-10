@@ -12,12 +12,12 @@ lpb $3
   mov $4,$2
   seq $4,109814 ; a(n) is the largest k such that n can be written as sum of k consecutive positive integers.
   gcd $4,$6
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

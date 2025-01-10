@@ -1,8 +1,11 @@
-; A065344: a(n) = Mod( binomial(2*n,n), (n+1)*(n+2) ).
+; A065344: a(n) = binomial(2*n,n) mod ((n+1)*(n+2)).
 ; Submitted by Jon Maiga
 ; 2,6,0,10,0,28,48,0,0,88,0,0,140,120,0,0,0,0,0,0,0,0,0,0,468,0,0,580,0,496,704,0,0,420,0,0,494,0,0,574,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4320,0
-; Formula: a(n) = 2*(binomial(2*n+1,n)%binomial(n+3,2))
+; Formula: a(n) = -2*truncate(binomial(2*n-1,n-1)/binomial(n+2,2))*binomial(n+2,2)+2*binomial(2*n-1,n-1)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,1
 add $2,$0

@@ -6,7 +6,7 @@ lpb $0
   mov $2,$0
   lpb $0
     sub $0,$2
-    mov $1,8
+    mov $1,9
     seq $1,33198 ; Discriminants of real quadratic number fields.
   lpe
   mov $0,$1

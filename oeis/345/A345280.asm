@@ -15,7 +15,6 @@ lpb $0
   lpe
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,66169 ; Least k such that phi(k) >= n.
   lpb $0
     dif $0,$2

@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,2
     seq $7,48574 ; Self-convolution of 1 2 3 5 7 11 15 22 30 42 56 77 ... (A000041).
     mov $9,10
     add $9,$5

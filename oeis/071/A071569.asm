@@ -6,6 +6,7 @@ mov $1,-1
 pow $1,$0
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,67856 ; Sum_{n >= 1} a(n)/n^s = 1/(Sum_{n >= 1} (-1)^(n + 1)/n^s).
   sub $0,1
   add $2,$3

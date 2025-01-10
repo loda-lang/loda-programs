@@ -14,7 +14,7 @@ lpb $3
   max $0,0
   add $0,1
   seq $0,40 ; The prime numbers.
-  sub $0,2
+  sub $0,1
   seq $0,31218 ; Largest prime power <= n.
   add $1,$0
   mov $0,$1

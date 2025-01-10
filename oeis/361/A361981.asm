@@ -11,6 +11,7 @@ lpb $0
   mov $5,$2
   add $5,1
   mov $6,$2
+  add $6,1
   seq $6,67856 ; Sum_{n >= 1} a(n)/n^s = 1/(Sum_{n >= 1} (-1)^(n + 1)/n^s).
   mul $2,$6
   add $2,$6

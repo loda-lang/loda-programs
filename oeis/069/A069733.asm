@@ -2,9 +2,11 @@
 ; Submitted by frodenas
 ; 1,2,2,2,2,4,2,2,3,4,2,4,2,4,4,2,2,6,2,4,4,4,2,4,3,4,4,4,2,8,2,2,4,4,4,6,2,4,4,4,2,8,2,4,6,4,2,4,3,6,4,4,2,8,4,4,4,4,2,8,2,4,6,2,4,8,2,4,4,8,2,6,2,4,6,4,4,8,2,4
 
+#offset 1
+
 mov $2,$0
-add $2,1
 seq $2,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+sub $0,1
 mod $0,2
 sub $0,2
 add $0,$2

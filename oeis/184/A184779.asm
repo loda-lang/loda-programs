@@ -1,11 +1,11 @@
 ; A184779: Numbers m such that prime(m) is of the form 2k + floor(k*sqrt(2)); complement of A184776.
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 2,6,7,9,12,15,18,20,29,34,37,38,39,43,47,57,61,62,63,66,67,77,80,81,84,86,88,91,94,103,106,107,111,113,115,116,129,133,134,135,140,145,146,147,150,151,154,156,166,173,177,178,186,188,193,194,197,201,204,205,208,211,214,216,222,224,225,227,229,230,233,234,243,245,247,251,252,257,263,264
-; Formula: a(n) = A036234(2*A080755(A184778(n))-6)-1
+; Formula: a(n) = A036234(2*A080755(A184778(n))-5)-1
 
 seq $0,184778 ; Numbers k such that 2k + floor(k*sqrt(2)) is prime.
 seq $0,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
 mul $0,2
-sub $0,6
+sub $0,5
 seq $0,36234 ; Number of primes <= n, if 1 is counted as a prime.
 sub $0,1

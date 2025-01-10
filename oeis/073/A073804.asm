@@ -10,6 +10,7 @@ lpb $2
   add $6,1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
+  add $3,1
   seq $3,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
   sub $3,$6
   mul $3,2

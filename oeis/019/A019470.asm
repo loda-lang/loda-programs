@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,65347 ; Positions of zeros in A065344, i.e., binomial(2n,n) mod ((n+1)*(n+2)) = 0.
   add $1,1
   mov $0,0

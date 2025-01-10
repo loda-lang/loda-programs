@@ -15,6 +15,7 @@ lpb $2
   seq $4,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $4,1
   mov $3,$1
+  add $3,1
   seq $3,69513 ; Characteristic function of the prime powers p^k, k >= 1.
   sub $3,1
   mul $4,$3

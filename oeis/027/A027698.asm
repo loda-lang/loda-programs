@@ -13,7 +13,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
-  dis $3,2
+  dgs $3,2
   add $3,$4
   gcd $3,2
   sub $0,$3

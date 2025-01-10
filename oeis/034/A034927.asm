@@ -2,7 +2,9 @@
 ; Submitted by Science United
 ; 4,2,3,4,6,2,4,8
 
-add $0,2
+#offset 1
+
+add $0,1
 lpb $0
   sub $0,1
   sub $4,$6

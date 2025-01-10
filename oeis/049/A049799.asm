@@ -14,6 +14,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,3
   seq $0,49801 ; Triangular array T, read by rows: T(n,k) = n mod floor(k/3), k = 3..n and n >= 3.
   add $1,$0
 lpe

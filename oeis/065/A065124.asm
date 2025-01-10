@@ -6,7 +6,7 @@ mov $2,1
 lpb $0
   sub $0,1
   mov $1,$3
-  dis $1,10
+  dgs $1,10
   mov $3,$2
   add $2,$1
 lpe

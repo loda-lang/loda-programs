@@ -1,10 +1,12 @@
 ; A034130: Decimal part of cube root of a(n) starts with 4: first term of runs.
 ; Submitted by Jamie Morken(s2)
 ; 3,14,40,86,158,263,406,593,831,1125,1482,1907,2407,2986,3653,4411,5269,6230,7302,8490,9801,11240,12813,14527,16388,18400,20571,22907,25413,28095,30960,34013,37260,40708,44362,48229,52314,56624,61163
-; Formula: a(n) = truncate(((5*n+7)^3)/125)+1
+; Formula: a(n) = truncate(((5*n+2)^3)/125)+1
+
+#offset 1
 
 mul $0,5
-add $0,7
+add $0,2
 pow $0,3
 div $0,125
 add $0,1

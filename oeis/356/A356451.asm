@@ -6,19 +6,20 @@ mov $1,$0
 mov $3,$0
 pow $3,2
 lpb $3
-  add $2,1
   mov $6,$2
+  add $6,2
   seq $6,65764 ; Sum of divisors of square numbers.
+  add $2,1
   mov $4,$2
   mul $4,2
   add $4,2
   gcd $4,$6
-  cmp $4,1
+  equ $4,1
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

@@ -1,4 +1,4 @@
-; A067497: Smallest power of 2 with n+1 digits (n>=0). Also numbers k such that 1 is the first digit of 2^k.
+; A067497: Smallest k for which 2^k is n+1 decimal digits long, and equivalently numbers k such that 1 is the first digit of 2^k.
 ; Submitted by p3d-cluster
 ; 0,4,7,10,14,17,20,24,27,30,34,37,40,44,47,50,54,57,60,64,67,70,74,77,80,84,87,90,94,97,100,103,107,110,113,117,120,123,127,130,133,137,140,143,147,150,153,157,160,163,167,170,173,177,180,183,187,190,193,196,200,203,206,210,213,216,220,223,226,230,233,236,240,243,246,250,253,256,260,263
 

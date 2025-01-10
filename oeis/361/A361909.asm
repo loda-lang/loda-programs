@@ -11,7 +11,6 @@ lpb $2
   mov $5,$1
   add $5,2
   seq $5,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  sub $5,1
   seq $5,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $3,$1
   add $3,2

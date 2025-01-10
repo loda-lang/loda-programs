@@ -1,10 +1,9 @@
 ; A061400: Primes p such that there is no squarefree number between p and the next prime.
 ; Submitted by Science United
 ; 2,3,11,17,59,71,97,107,149,179,191,197,227,239,269,311,347,349,419,431,521,599,659,809,827,881,1019,1031,1049,1061,1091,1151,1277,1319,1427,1447,1451,1487,1607,1619,1663,1667,1787,1871,1931,1949,1997,2027,2087,2111,2141,2267,2339,2347,2549,2591,2687,2711,2789,2969,2999,3119,3167,3251,3257,3299,3329,3359,3371,3467,3527,3539,3581,3671,3697,3767,3821,3851,4019,4049
-; Formula: a(n) = A000040(A068360(n-1))
+; Formula: a(n) = A000040(A068360(n))
 
 #offset 1
 
-sub $0,1
 seq $0,68360 ; Numbers n such that there is no squarefree number between prime(n) and prime(n+1).
 seq $0,40 ; The prime numbers.

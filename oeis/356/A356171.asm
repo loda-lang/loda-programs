@@ -8,6 +8,7 @@ lpb $2
   mov $6,$1
   add $6,1
   mov $3,$1
+  add $3,1
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   mov $5,$3
   gcd $5,$6
@@ -18,7 +19,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

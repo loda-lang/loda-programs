@@ -9,6 +9,7 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,65801 ; Least k such that n^k > 2^n.
   add $1,1
   add $2,$3

@@ -12,7 +12,6 @@ lpb $2
   min $5,1
   mul $5,$4
   add $4,$5
-  sub $4,1
   seq $4,62298 ; Number of nonprimes <= n.
   mov $3,$4
   sub $3,3

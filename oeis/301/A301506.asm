@@ -7,6 +7,7 @@ lpb $0
   mov $2,$0
   add $2,1
   seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  add $2,1
   seq $2,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $2,1
   equ $2,3

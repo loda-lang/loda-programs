@@ -13,6 +13,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
+  add $4,1
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   add $0,1
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.

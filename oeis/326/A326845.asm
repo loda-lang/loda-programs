@@ -16,7 +16,6 @@ lpb $1
   lpe
   mov $4,$3
   gcd $4,$1
-  sub $4,1
   seq $4,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $4,1
   lpb $1

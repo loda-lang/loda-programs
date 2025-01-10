@@ -10,6 +10,7 @@ mov $3,$0
 pow $3,4
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,37802 ; Number of i such that d(i) < d(i-1), where Sum_{i=0..m} d(i)*4^i is the base-4 representation of n.
   equ $4,0
   sub $0,$4

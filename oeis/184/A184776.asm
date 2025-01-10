@@ -9,7 +9,7 @@ lpb $2
   seq $3,184778 ; Numbers k such that 2k + floor(k*sqrt(2)) is prime.
   seq $3,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
   mul $3,2
-  sub $3,6
+  sub $3,5
   seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $3,2
   add $0,1

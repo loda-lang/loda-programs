@@ -2,21 +2,31 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 4,9,12,25,28,52,63,75,76,84,108,117,121,124,148,156,171,172,175,180,196,228,243,244,268,279,289,292,316,325,333,363,364,372,387,388,396,412,436,441,444,475,508,516,525,529,532,549,556,588,603,604,628,652,657,675,676,711,724,732,756,772,775,796,804,819,828,841,844,847,867,868,873,876,892,916,925,927,948,964
 
+#offset 1
+
+sub $0,1
 mov $1,3
 mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
   sub $2,1
+  mov $7,$1
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,57021 ; Denominator of (sum of divisors of n / number of divisors of n).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,$7
+  gcd $5,$3
+  mov $6,$3
+  div $6,$5
+  mov $3,$6
   sub $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

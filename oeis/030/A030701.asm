@@ -2,6 +2,9 @@
 ; Submitted by boboviz
 ; 0,1,2,3,4,7,8,9,12,14,16,17,18,36,38,43
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,2

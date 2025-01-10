@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 mov $1,$0
 lpb $1
+  add $2,1
   seq $2,33270 ; Number of odd primes <= n.
   add $0,1
   add $0,$2

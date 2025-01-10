@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,33212 ; Primes congruent to 1 or 19 (mod 30).
   mov $5,$3
-  sub $3,1
   seq $3,35146 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -44.
   neq $3,0
   sub $0,$3

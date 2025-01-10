@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,$4
   seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
-  sub $3,1
   seq $3,68494 ; a(n) = n mod phi(n).
   trn $3,1
   mov $5,1

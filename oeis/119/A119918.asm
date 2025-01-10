@@ -19,6 +19,7 @@ lpb $2
   mul $1,2
   bin $3,$1
   mov $1,$0
+  add $1,1
   seq $1,38199 ; Row sums of triangle T(m,n) = number of solutions to 1 <= a(1) < a(2) < ... < a(m) <= n, where gcd(a(1), a(2), ..., a(m), n) = 1, in A020921.
   mul $3,$1
   add $5,$3

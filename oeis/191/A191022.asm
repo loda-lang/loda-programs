@@ -8,4 +8,5 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,38901 ; Primes p such that 29 is a square mod p.

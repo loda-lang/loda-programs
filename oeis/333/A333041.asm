@@ -9,7 +9,7 @@ lpb $2
   add $1,1
   mov $5,$1
   mul $5,2
-  add $5,1
+  add $5,2
   seq $5,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
   add $5,1
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

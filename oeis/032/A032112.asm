@@ -6,7 +6,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,6155 ; Expansion of e.g.f. 1/(2-x-e^x).
+seq $1,6155 ; Expansion of e.g.f.: 1/(2-x-exp(x)).
 div $1,2
 mov $0,$1
 add $0,1

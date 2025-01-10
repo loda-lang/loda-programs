@@ -13,8 +13,9 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,48669 ; The Jacobsthal function g(n): maximal gap in a list of all the integers relatively prime to n.
-    cmp $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
     mul $7,$$9

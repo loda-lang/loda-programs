@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,37279 ; If n is composite, replace n with the concatenation of its nontrivial divisors, otherwise a(n) = n.
 lpb $0
   dif $0,2

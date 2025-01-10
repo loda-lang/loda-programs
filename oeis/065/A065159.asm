@@ -10,6 +10,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,65160 ; Reduced binary string self-substitutions: a(n) is obtained by substituting n for each 1-bit in the binary expansion of n, then dividing by n.
 lpe
 mul $3,$2

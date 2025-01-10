@@ -9,8 +9,8 @@ lpb $2
   mov $0,$3
   add $0,$2
   mul $0,4
-  pow $0,6
-  nrt $0,4
+  pow $0,3
+  nrt $0,2
   div $0,8
   mov $4,$2
   mul $4,$0

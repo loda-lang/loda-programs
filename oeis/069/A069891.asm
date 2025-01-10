@@ -1,12 +1,28 @@
 ; A069891: a(n) = Sum_{k=1..n} A007913(k), the squarefree part of k.
 ; 0,1,3,6,7,12,18,25,27,28,38,49,52,65,79,94,95,112,114,133,138,159,181,204,210,211,237,240,247,276,306,337,339,372,406,441,442,479,517,556,566,607,649,692,703,708,754,801,804,805,807,858,871,924,930,985,999,1056,1114,1173,1188,1249,1311,1318,1319,1384,1450,1517,1534,1603,1673,1744,1746,1819,1893,1896,1915,1992,2070,2149
-; Formula: a(n) = a(n-1)+A007913(max(n-1,0)+1), a(0) = 0
+; Formula: a(n) = a(n-1)+floor(max(n-1,0)/(truncate((sqrtint(4*(truncate(max(0,max(n-1,0))/A019554(max(0,max(n-1,0))+1))+1)^2)+1)/2)^2))+1, a(0) = 0
 
 lpb $0
   trn $0,1
+  mov $6,0
+  max $6,$0
+  mov $5,$6
+  add $6,1
+  seq $6,19554 ; Smallest number whose square is divisible by n.
+  div $5,$6
+  mov $4,$5
+  add $4,1
+  pow $4,2
+  mul $4,4
+  nrt $4,2
+  add $4,1
+  div $4,2
+  pow $4,2
+  mov $3,$0
+  div $3,$4
   mov $2,$0
+  mov $2,$3
   add $2,1
-  seq $2,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
   add $1,$2
 lpe
 mov $0,$1

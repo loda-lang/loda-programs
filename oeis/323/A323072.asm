@@ -1,10 +1,11 @@
 ; A323072: a(n) = n/A323071(n) = n/gcd(n, 1+A060681(n)).
 ; 1,1,1,4,1,3,1,8,9,5,1,12,1,7,15,16,1,9,1,20,7,11,1,24,25,13,27,28,1,15,1,32,33,17,35,36,1,19,13,40,1,21,1,44,45,23,1,48,49,25,51,52,1,27,11,56,19,29,1,60,1,31,63,64,65,33,1,68,69,35,1,72,1,37,25,76,77,39,1,80
-; Formula: a(n) = truncate(n/gcd(n+1,-A032742(n)*truncate(n/A032742(n))+n))+1
+; Formula: a(n) = truncate(n/gcd(n+1,-A032742(n+1)*truncate(n/A032742(n+1))+n))+1
 
 mov $2,$0
 add $2,1
 mov $1,$0
+add $1,1
 seq $1,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
 mov $3,$0
 mod $3,$1

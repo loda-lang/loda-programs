@@ -9,13 +9,14 @@ add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,49847 ; a(n) = (2*n + 1 - prevprime(2*n+1))/2.
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,5
   mov $4,$0
   max $4,6
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

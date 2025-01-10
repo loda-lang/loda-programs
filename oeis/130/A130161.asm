@@ -7,6 +7,7 @@ mov $2,1
 lpb $2
   sub $2,1
   mov $4,$3
+  add $4,1
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   lpb $0
     add $1,1

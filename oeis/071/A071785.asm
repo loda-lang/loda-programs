@@ -30,7 +30,6 @@ lpb $0
     bin $3,$7
     max $3,$6
   lpe
-  sub $3,1
   seq $3,34690 ; Sum of digits of all the divisors of n.
   sub $3,1
   lpb $0

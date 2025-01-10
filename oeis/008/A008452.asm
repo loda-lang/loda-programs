@@ -13,6 +13,7 @@ lpb $0
     trn $4,1
     div $6,-1
     mov $7,$4
+    add $7,1
     seq $7,54785 ; a(n) = sigma(2n) - sigma(n), where sigma is the sum of divisors of n, A000203.
     mul $7,18
     mov $9,10

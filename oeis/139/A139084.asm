@@ -9,6 +9,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,34684 ; If n = p_1^e_1 * ... * p_k^e_k, p_1 < ... < p_k primes, then a(n) = min { p_i^e_i }.
   mul $1,$2
 lpe

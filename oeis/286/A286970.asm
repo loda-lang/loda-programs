@@ -13,8 +13,9 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,66746 ; Conjectured values of a(n) defined by a(n) = least number of applications of f(k) = k^2 + 1 to n to yield a prime, if this number exists; = -1 otherwise.
-    cmp $7,$1
+    equ $7,$1
     mov $9,10
     add $9,$5
     mul $7,$$9

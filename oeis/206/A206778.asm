@@ -10,6 +10,7 @@ lpb $2
   seq $3,27750 ; Triangle read by rows in which row n lists the divisors of n.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,48105 ; Number of non-unitary divisors of n.
   equ $3,0
   sub $0,$3

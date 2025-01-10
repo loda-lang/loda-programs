@@ -15,7 +15,8 @@ lpb $2
   sub $5,$1
   add $5,1
   mul $6,$5
-  seq $6,74589 ; Replace each number n in Pascal's triangle with the n-th prime.
+  seq $6,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  seq $6,40 ; The prime numbers.
   mov $3,$6
   mul $3,$1
   add $3,9

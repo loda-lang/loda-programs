@@ -11,6 +11,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   mov $6,$0
+  add $6,1
   seq $6,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   sub $0,$6
   add $0,1

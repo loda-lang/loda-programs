@@ -9,9 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,34742 ; Dirichlet convolution of Moebius function mu(n) (A008683) with Catalan numbers (A000108).
+  sub $0,1
   mul $0,$4
   add $0,$4
   add $3,$0

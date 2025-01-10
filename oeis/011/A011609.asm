@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,36187 ; Log base 2 (n) mod 131.
   sub $1,1
   pow $1,$0

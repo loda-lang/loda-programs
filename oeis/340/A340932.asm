@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
-  sub $3,1
   seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   sub $3,1
   mod $3,2

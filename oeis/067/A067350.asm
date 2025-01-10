@@ -2,6 +2,9 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 3,5,6,7,10,11,13,16,17,19,22,23,25,27,29,31,37,40,41,43,46,47,52,53,58,59,61,64,67,68,71,72,73,79,80,82,83,89,97,98,101,103,106,107,109,113,117,127,128,131,136,137,139,144,149,151,157,162,163,166,167,169,173,178,179,181,191,193,197,199,200,211,212,223,226,227,229,232,233,239
 
+#offset 1
+
+sub $0,1
 mov $1,2
 mov $2,$0
 add $2,4
@@ -14,8 +17,10 @@ lpb $2
   add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $3,$5
-  seq $3,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
-  sub $3,3
+  trn $3,1
+  add $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $3,4
   equ $3,0
   sub $0,$3
   add $1,1

@@ -10,12 +10,13 @@ pow $2,2
 lpb $2
   sub $5,1
   max $3,$5
+  add $3,1
   seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,$1
   max $1,42
   add $1,1

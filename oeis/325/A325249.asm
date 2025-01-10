@@ -4,7 +4,6 @@
 
 seq $0,325760 ; Heinz number of the frequency span of n.
 lpb $0
-  sub $0,1
   seq $0,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
   add $1,1
 lpe

@@ -14,7 +14,6 @@ lpb $2
   seq $3,2144 ; Pythagorean primes: primes of the form 4*k + 1.
   mov $5,$3
   add $5,1
-  sub $3,1
   seq $3,35195 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 13.
   neq $3,0
   sub $0,$3

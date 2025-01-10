@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,64630 ; Number of parts if 4^n is partitioned into parts of size 3^n as far as possible into parts of size 2^n as far as possible and into parts of size 1^n.
 lpb $0
   div $0,2

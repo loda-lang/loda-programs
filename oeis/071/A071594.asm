@@ -10,16 +10,16 @@ lpb $2
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   mov $3,$1
   mul $3,2
-  add $3,2
+  add $3,3
   seq $3,63787 ; a(2^k) = k + 1 and a(2^k + i) = 1 + a(i) for k >= 0 and 0 < i < 2^k.
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   sub $1,$4
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

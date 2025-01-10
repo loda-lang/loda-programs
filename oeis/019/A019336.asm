@@ -13,6 +13,7 @@ lpb $2
   seq $3,167794 ; Numbers with primitive root 6.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,53866 ; Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
   equ $3,0
   sub $0,$3

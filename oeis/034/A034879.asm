@@ -1,9 +1,12 @@
 ; A034879: a(n) = product of factorials of digits of a(n-1).
 ; Submitted by [DPC] hansR
 ; 3,6,720,10080,40320,288,3251404800,33443020800,10032906240,150493593600,1179600089304268800000,6494947622660923209343932825600000000,817033558319976619871285124179533435912396304547840000000000000
-; Formula: a(n) = A066459(a(n-1)), a(0) = 3
+; Formula: a(n) = b(n-1), b(n) = A066459(b(n-1)), b(0) = 3
+
+#offset 1
 
 mov $1,3
+sub $0,1
 lpb $0
   sub $0,1
   seq $1,66459 ; Product of factorials of the digits of n.

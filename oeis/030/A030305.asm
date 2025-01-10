@@ -11,6 +11,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,66099 ; Triangle read by rows, in which row n lists the compositions of n in reverse lexicographic order.
   mov $6,$4
   sub $6,1

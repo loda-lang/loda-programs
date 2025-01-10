@@ -8,4 +8,4 @@ lpb $0
   sub $0,1
 lpe
 mov $0,$1
-dis $0,10
+dgs $0,10

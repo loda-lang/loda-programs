@@ -6,6 +6,7 @@ mov $1,2
 pow $1,$0
 lpb $0
   sub $0,1
+  add $3,1
   seq $3,63776 ; Number of subsets of {1,2,...,n} which sum to 0 modulo n.
   add $2,$3
   mov $3,$0

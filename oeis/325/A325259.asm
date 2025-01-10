@@ -10,7 +10,6 @@ lpb $2
   sub $2,7
   mov $5,$1
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  sub $5,1
   seq $5,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   sub $5,1
   mov $3,$5

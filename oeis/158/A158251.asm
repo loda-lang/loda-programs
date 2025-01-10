@@ -6,6 +6,5 @@ mov $1,2
 lpb $1
   div $1,2
   add $0,$1
-  sub $0,1
   seq $0,54353 ; Partial sums of Kolakoski sequence A000002.
 lpe

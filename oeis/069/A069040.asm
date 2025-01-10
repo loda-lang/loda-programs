@@ -15,7 +15,7 @@ lpb $2
   mul $5,3
   mov $3,$5
   gcd $3,$4
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   sub $2,$0

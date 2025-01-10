@@ -11,7 +11,6 @@ lpb $3
   trn $0,1
   add $0,2
   pow $0,2
-  sub $0,1
   seq $0,66339 ; Number of primes p of the form 4m+1 with p <= n.
   mov $4,$3
   mul $4,$0

@@ -13,7 +13,7 @@ lpb $0
     sub $4,$0
     add $5,$0
     mul $7,$11
-    cmp $7,$8
+    equ $7,$8
     trn $8,1
     mov $9,10
     add $9,$5

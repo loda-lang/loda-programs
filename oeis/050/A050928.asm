@@ -21,4 +21,4 @@ lpb $0
   mov $3,$5
 lpe
 mov $0,$4
-dis $0,2
+dgs $0,2

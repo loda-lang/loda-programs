@@ -6,6 +6,7 @@ mov $1,$0
 lpb $1
   mov $3,$1
   trn $3,1
+  add $3,1
   seq $3,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
   sub $1,$3
   pow $3,2

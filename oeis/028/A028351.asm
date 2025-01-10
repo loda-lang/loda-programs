@@ -25,11 +25,9 @@ lpb $7
   sub $7,1
   mov $4,$8
   sub $4,$7
-  sub $4,1
   mov $9,$4
   seq $9,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $10,0
-  add $4,1
   seq $4,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
   seq $4,123611 ; Row sums of triangle A123610.
   mul $4,$9

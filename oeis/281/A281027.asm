@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,66570 ; Product of numbers <= n that have a prime factor in common with n.
   sub $0,1
   mul $1,$2

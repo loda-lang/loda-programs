@@ -1,9 +1,25 @@
 ; A069110: Squarefree part of F(n) (the Fibonacci numbers): the smallest number such that a(n)*F(n) is a square.
 ; Submitted by Science United
 ; 1,1,2,3,5,2,13,21,34,55,89,1,233,377,610,987,1597,646,4181,6765,10946,17711,28657,322,3001,121393,196418,317811,514229,208010,1346269,2178309,3524578,5702887,9227465,103683,24157817,39088169,63245986,102334155,165580141,66978574,433494437,701408733,1134903170,1836311903,2971215073,8346401,7778742049,503450761,20365011074,32951280099,53316291173,21566892818,139583862445,4609212933,365435296162,591286729879,956722026041,10750060805,2504730781961,4052739537881,6557470319842,10610209857723
-; Formula: a(n) = A007913(A000071(n+1)+1)
+; Formula: a(n) = truncate(A000071(n+1)/(truncate((sqrtint(4*(truncate(max(0,A000071(n+1))/A019554(max(0,A000071(n+1))+1))+1)^2)+1)/2)^2))+1
 
 add $0,1
 seq $0,71 ; a(n) = Fibonacci(n) - 1.
+mov $4,0
+max $4,$0
+mov $3,$4
+add $4,1
+seq $4,19554 ; Smallest number whose square is divisible by n.
+div $3,$4
+mov $2,$3
+add $2,1
+pow $2,2
+mul $2,4
+nrt $2,2
+add $2,1
+div $2,2
+pow $2,2
+mov $1,$0
+div $1,$2
+mov $0,$1
 add $0,1
-seq $0,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.

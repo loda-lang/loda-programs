@@ -7,6 +7,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,53814 ; a(n) = n modulo (sum of proper divisors of n).
   equ $3,1
   sub $0,$3

@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,66898 ; Total number of even parts in all partitions of n.
   mov $4,$3
   mul $4,$0

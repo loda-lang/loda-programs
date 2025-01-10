@@ -12,7 +12,7 @@ lpb $2
   sub $2,1
   mov $4,$1
   add $4,1
-  dis $4,2
+  dgs $4,2
   mov $3,$4
   sub $3,1
   equ $3,7

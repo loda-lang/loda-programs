@@ -17,6 +17,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,2
     seq $7,47654 ; Expansion of (Product_{j>=1} (1-(-x)^j) - 1)^2 in powers of x.
     mov $9,10
     add $9,$5

@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
+  add $3,5
   seq $3,31943 ; Numbers with no consecutive equal base-5 digits.
   sub $3,1
   add $0,1

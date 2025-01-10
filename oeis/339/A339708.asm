@@ -17,6 +17,7 @@ lpb $3
   mul $2,$1
   sub $2,1
   trn $2,1
+  add $2,1
   seq $2,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   add $4,$2
 lpe

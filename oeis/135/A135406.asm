@@ -11,6 +11,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,65516 ; Differences between products of 2 primes.
   pow $0,2
   add $2,$0

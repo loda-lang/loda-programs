@@ -1,10 +1,12 @@
 ; A038683: Seventh powers ending nontrivially in a nonzero seventh power.
 ; Submitted by gemini8
 ; 19487171,1801088541,27512614111,194754273881,897410677851,3142742836021,9095120158391,22876792454961,51676101935731,107213535210701,194871710000000,207616015289871,379749833583241
-; Formula: a(n) = truncate(((46*truncate((5*floor((56*floor((10*n+9)/11)+44*floor((10*n+21)/11)+152)/5)-90)/2)-88*truncate((2*truncate((5*floor((56*floor((10*n+9)/11)+44*floor((10*n+21)/11)+152)/5)-90)/2))/4)+6)^7)/10000000)
+; Formula: a(n) = truncate(((46*truncate((5*truncate((56*truncate((10*n-1)/11)+44*floor((10*n+11)/11)+152)/5)-90)/2)-88*truncate((2*truncate((5*truncate((56*truncate((10*n-1)/11)+44*floor((10*n+11)/11)+152)/5)-90)/2))/4)+6)^7)/10000000)
+
+#offset 1
 
 mul $0,10
-add $0,12
+add $0,2
 mov $3,$0
 add $0,9
 div $0,11

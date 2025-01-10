@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,63994 ; a(n) = Product_{primes p dividing n } gcd(p-1, n-1).
   mod $3,$1
   trn $3,2

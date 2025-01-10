@@ -7,6 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,65764 ; Sum of divisors of square numbers.
   mul $3,2
   mov $5,$1

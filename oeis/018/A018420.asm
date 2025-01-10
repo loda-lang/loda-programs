@@ -11,5 +11,4 @@ add $0,$1
 div $0,2
 sub $0,1
 seq $0,297002 ; Completely multiplicative with a(prime(k)) = prime(2 * k) (where prime(k) denotes the k-th prime).
-sub $0,1
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

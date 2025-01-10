@@ -10,14 +10,15 @@ lpb $2
   mov $5,$1
   add $5,1
   mov $3,$1
+  add $3,1
   seq $3,69549 ; Smallest composite k such that phi(k) > k*(1-1/n).
   gcd $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,$4
   add $1,1
   sub $2,$0
-  cmp $4,0
+  equ $4,0
 lpe
 mov $0,$1
 add $0,1

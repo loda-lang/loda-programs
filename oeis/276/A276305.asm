@@ -12,15 +12,15 @@ lpb $2
   div $5,2
   bin $5,2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,69733 ; Number of divisors d of n such that d or n/d is odd. Number of non-orientable coverings of the Klein bottle with n lists.
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,61536 ; a(1) = 1 and a(n) = a(n-1) + (the number of primes <= n) for n > 1.
   trn $3,2
   mov $5,$3

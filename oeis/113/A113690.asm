@@ -9,10 +9,11 @@ lpb $2
   sub $2,1
   add $5,$4
   max $3,$5
+  add $3,1
   seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $0,$3
   mov $4,$0
-  cmp $4,$0
+  equ $4,$0
   add $5,$1
   add $1,8
   sub $2,$0

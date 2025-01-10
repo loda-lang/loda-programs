@@ -3,6 +3,7 @@
 
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,65333 ; Characteristic function of 3-smooth numbers, i.e., numbers of the form 2^i*3^j (i, j >= 0).
   add $0,$1
   sub $0,1

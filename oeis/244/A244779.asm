@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,65959 ; a(n) = n^3*Product_{distinct primes p dividing n} (1+1/p^3).
   sub $3,1
   seq $3,11656 ; A binary m-sequence: expansion of reciprocal of x^3 + x^2 + 1 (mod 2), shifted by 2 initial 0's.

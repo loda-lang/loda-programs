@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,39915 ; Smallest k such that k(p-1)-1 is positive and divisible by p where p = n-th prime.
   mul $3,$2
   mul $3,-1

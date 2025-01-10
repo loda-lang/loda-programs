@@ -9,6 +9,7 @@ lpb $3
   add $4,$3
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,61214 ; Product of composite numbers between the n-th and (n+1)st primes.
   mov $2,$3
   mul $2,$0

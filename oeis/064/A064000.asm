@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,63974 ; Number of terms in inverse set of usigma = sum of unitary divisors = A034448.
   equ $3,0
   sub $0,$3

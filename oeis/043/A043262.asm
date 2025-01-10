@@ -18,4 +18,4 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-dis $0,3
+dgs $0,3

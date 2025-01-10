@@ -10,11 +10,12 @@ lpb $2
   add $2,1
   sub $2,$0
   mov $4,$1
+  add $4,1
   seq $4,66272 ; Number of anti-divisors of n.
   mov $3,$1
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
 lpe

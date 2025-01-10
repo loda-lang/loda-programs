@@ -12,6 +12,7 @@ add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,49847 ; a(n) = (2*n + 1 - prevprime(2*n+1))/2.
   equ $3,3
   sub $0,$3

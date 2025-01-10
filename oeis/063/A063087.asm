@@ -1,10 +1,12 @@
 ; A063087: Dimension of the space of weight 2n cusp forms for Gamma_0( 19 ).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,8,10,14,18,20,24,28,30,34,38,40,44,48,50,54,58,60,64,68,70,74,78,80,84,88,90,94,98,100,104,108,110,114,118,120,124,128,130,134,138,140,144,148,150,154,158,160,164
-; Formula: a(n) = truncate((4*floor((5*n+2)/3)-1)/2)+1
+; Formula: a(n) = truncate((4*truncate((5*n-3)/3)-1)/2)+1
+
+#offset 1
 
 mul $0,5
-add $0,2
+sub $0,3
 div $0,3
 mul $0,4
 sub $0,1

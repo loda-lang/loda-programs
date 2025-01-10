@@ -7,4 +7,5 @@ lpb $0
   div $0,2
   mul $0,6
 lpe
+add $0,1
 seq $0,38883 ; Odd primes p such that 13 is a square mod p.

@@ -11,7 +11,6 @@ add $3,4
 lpb $3
   sub $3,1
   mov $4,$2
-  sub $4,1
   seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   add $2,$0
   add $2,1

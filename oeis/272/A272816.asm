@@ -16,6 +16,7 @@ lpb $3
   sub $3,1
   sub $5,1
   max $4,$5
+  add $4,1
   seq $4,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $1,$4
   add $2,2

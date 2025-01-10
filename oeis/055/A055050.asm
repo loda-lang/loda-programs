@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,65882 ; Ultimate modulo 4: right-hand nonzero digit of n when written in base 4.
   equ $3,3
   sub $0,$3

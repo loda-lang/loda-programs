@@ -6,10 +6,9 @@ lpb $0
   add $1,$4
   mov $2,$0
   seq $2,288469 ; a(n) = n if n is a nonprime, otherwise take the prime index of n and repeat until you get a nonprime which is then a(n).
-  sub $2,1
   seq $2,62298 ; Number of nonprimes <= n.
   mov $3,$0
-  cmp $3,$0
+  equ $3,$0
   add $3,$2
   sub $3,2
   mov $4,$2

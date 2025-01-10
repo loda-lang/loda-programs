@@ -15,7 +15,6 @@ lpb $4
   bin $1,$0
   equ $1,0
   mov $5,$0
-  sub $0,1
   seq $0,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   mul $0,$5
   mul $1,$0

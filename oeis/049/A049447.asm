@@ -12,6 +12,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,8
   seq $0,49434 ; Stirling numbers of second kind: 8th column of Stirling2 triangle A008277.
   mul $1,9
   add $1,$0

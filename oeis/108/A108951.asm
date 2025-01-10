@@ -6,6 +6,7 @@ mov $1,1
 add $1,$0
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   mov $0,$2
   sub $0,1

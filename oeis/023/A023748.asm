@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,37821 ; Number of i such that d(i) > d(i-1), where Sum_{i=0..m} d(i)*6^i is the base-6 representation of n.
   mul $3,$0
   equ $3,0

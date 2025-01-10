@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   sub $3,1
   seq $3,72512 ; Product of all n - d, where 1 < d < n and d is a divisor of n.

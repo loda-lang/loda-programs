@@ -7,4 +7,4 @@ lpb $1
   div $1,2
   sub $0,$1
 lpe
-dis $0,2
+dgs $0,2

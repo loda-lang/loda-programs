@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,49128 ; Revert transform of x*(x - 1)^2/(1 - x + x^3).
   mul $1,$0
   add $3,$1

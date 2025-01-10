@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,63994 ; a(n) = Product_{primes p dividing n } gcd(p-1, n-1).
   dif $3,2
   equ $3,1

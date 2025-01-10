@@ -9,7 +9,6 @@ pow $2,5
 lpb $2
   mov $3,$1
   seq $3,135765 ; Distribute the odd numbers in columns based on the occurrence of "3" in each prime factorization; square array A(row, col) = 3^(row-1) * A007310(col), read by antidiagonals A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), ...
-  sub $3,1
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   gcd $3,$0
   add $1,1

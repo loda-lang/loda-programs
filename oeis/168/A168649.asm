@@ -18,9 +18,9 @@ lpb $4
   sub $4,1
   mov $2,$5
   sub $2,$4
-  sub $2,1
   mov $6,$2
   seq $6,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  sub $2,1
   seq $2,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
   mul $2,$6
   add $3,$2

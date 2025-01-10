@@ -9,6 +9,7 @@ lpb $2
   mov $5,$1
   div $5,2
   mov $3,$1
+  add $3,1
   seq $3,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
   trn $3,2
   add $3,2

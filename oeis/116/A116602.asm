@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40117 ; Primes congruent to 5 (mod 12). Also primes p such that x^4 = 9 has no solution mod p.
-  sub $3,3
+  sub $3,2
   seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   mov $5,$3
   mul $3,338

@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,67812 ; Nonprime n such that 2n+1 is prime.
 pow $1,$2
 lpb $2

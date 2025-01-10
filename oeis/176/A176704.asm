@@ -10,6 +10,7 @@ lpb $2
   add $0,$2
   max $0,0
   seq $0,167277 ; Largest nonprime<n-th single (or isolated or non-twin) prime.
+  add $0,1
   seq $0,48865 ; a(n) is the number of primes in the reduced residue system mod n.
   mov $1,$2
   mul $1,$0

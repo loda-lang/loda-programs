@@ -13,6 +13,7 @@ lpb $5
   mov $4,$0
   add $4,$5
   max $4,0
+  add $4,1
   seq $4,34387 ; Sum of primes <= n.
   mov $2,$5
   mul $2,$4

@@ -5,9 +5,8 @@
 lpb $0
   mov $2,$0
   seq $2,339443 ; Pairwise listing of the partitions of k into two parts (s,t), with 0 < t <= s ordered by decreasing values of s and where k = 2,3,... .
-  sub $2,1
   seq $2,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
-  cmp $2,0
+  equ $2,0
   sub $0,1
   add $1,$2
 lpe

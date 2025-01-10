@@ -7,6 +7,7 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$4
+  add $0,1
   seq $0,31218 ; Largest prime power <= n.
   sub $0,$4
   mov $2,$0

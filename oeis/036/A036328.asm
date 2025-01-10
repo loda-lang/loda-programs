@@ -11,6 +11,7 @@ pow $2,3
 lpb $2
   sub $2,28
   mov $3,$1
+  add $3,1
   seq $3,36329 ; Composite numbers n such that juxtaposition of prime factors of n has length 5.
   mov $5,$3
   mul $3,338

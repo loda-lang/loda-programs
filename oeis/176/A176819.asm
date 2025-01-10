@@ -9,6 +9,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,30229 ; Numbers that are the product of an even number of distinct primes.
   pow $0,2
   mov $2,$3

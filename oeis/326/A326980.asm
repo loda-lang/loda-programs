@@ -21,7 +21,6 @@ lpb $2
   sub $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mov $8,$3
-  sub $3,1
   seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
   mov $7,$3
   gcd $7,$8

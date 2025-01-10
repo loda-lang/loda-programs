@@ -1,10 +1,9 @@
 ; A253236: The unique prime p <= n such that n-th cyclotomic polynomial has a root mod p, or 0 if no such p exists.
 ; Submitted by Science United
 ; 0,2,3,2,5,3,7,2,3,5,11,0,13,7,0,2,17,3,19,5,7,11,23,0,5,13,3,0,29,0,31,2,0,17,0,0,37,19,13,0,41,7,43,0,0,23,47,0,7,5,0,13,53,3,11,0,19,29,59,0,61,31,0,2,0,0,67,17,0,0,71,0,73,37,0,0,0,13,79,0
-; Formula: a(n) = A036288(A014963(A275823(n))-1)-1
+; Formula: a(n) = A036288(A014963(A275823(n)))-1
 
 seq $0,275823 ; Least k such that n divides phi(k^2).
 seq $0,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
-sub $0,1
 seq $0,36288 ; a(n) = 1 + integer log of n: if the prime factorization of n is n = Product (p_j^k_j) then a(n) = 1 + Sum (p_j * k_j) (cf. A001414).
 sub $0,1

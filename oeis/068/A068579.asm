@@ -2,7 +2,8 @@
 ; Submitted by omegaintellisys
 ; 1,11,13,19,33,34,35,39,46,57,58,62,74,86,88,102,104,105,110,130,135,138,152,154,174,182,186,190,222,258,264,280,312,330,342,390,456,462,546,570,594,756,840,1080
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2
@@ -10,7 +11,12 @@ lpb $2
   add $4,1
   seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
-  seq $3,49099 ; a(n) = Euler phi function applied thrice to n.
+  add $3,3
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,2
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,2
+  seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   sub $3,$4
   mul $3,2
   mov $5,$3

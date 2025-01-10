@@ -9,18 +9,19 @@ lpb $2
   sub $2,2
   mov $3,$1
   seq $3,68229 ; Primes congruent to 7 (mod 12).
+  add $3,1
   seq $3,36234 ; Number of primes <= n, if 1 is counted as a prime.
   add $3,1
   mov $5,$3
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

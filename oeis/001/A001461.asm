@@ -17,6 +17,7 @@ lpb $1
   mov $9,0
   gcd $9,$8
   pow $9,2
+  add $0,1
   seq $0,31367 ; Inflation orbit counts.
   mul $0,91
   mul $8,$0

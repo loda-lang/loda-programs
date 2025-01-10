@@ -6,6 +6,7 @@ mov $1,$0
 mov $2,10
 lpb $2
   mov $2,3
+  add $0,1
   seq $0,65855 ; Number of composites <= n.
   add $0,2
   mov $3,$0

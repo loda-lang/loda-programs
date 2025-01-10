@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   mov $6,1
   max $6,$1
+  add $6,1
   seq $6,67132 ; Number of elements in the largest set of divisors of n which are in geometric progression.
   mul $6,2
   mov $3,$6

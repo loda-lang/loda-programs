@@ -6,11 +6,12 @@ mov $4,$0
 pow $4,2
 lpb $4
   max $5,$1
+  add $5,1
   seq $5,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   sub $0,$5
   mov $2,$0
   max $2,0
-  cmp $2,$0
+  equ $2,$0
   sub $1,2
   div $1,4
   add $3,1

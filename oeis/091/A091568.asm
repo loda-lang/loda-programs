@@ -9,6 +9,7 @@ add $2,2
 pow $2,2
 lpb $2
   max $3,$5
+  add $3,1
   seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
   add $6,10
   sub $0,$3

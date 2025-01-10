@@ -9,7 +9,8 @@ lpb $2
   mov $3,$1
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   div $3,2
-  seq $3,22971 ; a(n) = 15-n.
+  sub $3,15
+  mul $3,-1
   add $3,$4
   equ $3,2
   sub $0,$3

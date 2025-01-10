@@ -13,6 +13,7 @@ lpb $2
   seq $5,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   mod $5,2
   mov $3,$1
+  add $3,1
   seq $3,35194 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 12.
   mul $3,$5
   min $3,1

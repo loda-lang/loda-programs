@@ -13,6 +13,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,49419 ; a(1) = 1; for n > 1, a(n) = number of exponential divisors of n.
     mov $6,$7
     mul $6,$3
@@ -21,12 +22,12 @@ lpb $2
   lpe
   sub $5,$8
   mov $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

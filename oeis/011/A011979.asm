@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $2,6
-sub $0,4
 seq $0,36831 ; Schoenheim bound L_1(n,4,3).
 add $1,$2
 equ $1,1

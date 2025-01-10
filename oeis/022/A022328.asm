@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,65119 ; Numbers k such that the k-th cyclotomic polynomial is a trinomial.
 lpb $0
   dif $0,2
