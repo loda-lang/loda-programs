@@ -14,7 +14,7 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
-    add $7,1
+    add $7,2
     seq $7,55975 ; First differences of A003188 (decimal equivalent of the Gray Code).
     equ $7,1
     mov $9,10

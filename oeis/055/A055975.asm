@@ -1,21 +1,16 @@
 ; A055975: First differences of A003188 (decimal equivalent of the Gray Code).
-; Submitted by Jamie Morken(w1)
+; Submitted by Science United
 ; 1,2,-1,4,1,-2,-1,8,1,2,-1,-4,1,-2,-1,16,1,2,-1,4,1,-2,-1,-8,1,2,-1,-4,1,-2,-1,32,1,2,-1,4,1,-2,-1,8,1,2,-1,-4,1,-2,-1,-16,1,2,-1,4,1,-2,-1,-8,1,2,-1,-4,1,-2,-1,64,1,2,-1,4,1,-2,-1,8,1,2,-1,-4,1,-2,-1,16
 
 #offset 1
 
-mov $2,$0
-mul $0,4
+mov $1,$0
 lpb $0
-  sub $0,1
-  mov $3,$2
-  dif $3,$0
-  mov $4,$3
-  sub $4,$1
-  sub $0,1
-  add $3,$4
-  mov $1,$3
-  mov $2,$3
+  dif $0,2
 lpe
-mov $0,$1
+div $1,$0
 div $0,2
+mov $2,-1
+pow $2,$0
+mul $1,$2
+mov $0,$1
