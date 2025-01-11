@@ -4,6 +4,7 @@
 
 max $1,$0
 lpb $1
+  add $0,1
   seq $0,72436 ; Remove prime factors of form 4*k+3.
   div $1,$0
   mov $0,0

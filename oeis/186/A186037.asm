@@ -6,6 +6,7 @@ mov $1,$0
 lpb $0
   mov $0,3
   seq $1,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
+  add $1,1
   seq $1,67029 ; Exponent of least prime factor in prime factorization of n, a(1)=0.
 lpe
 mov $0,$1

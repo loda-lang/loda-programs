@@ -10,6 +10,27 @@ mov $1,3
 div $1,$0
 max $0,0
 add $0,1
-seq $0,32170 ; "CHK" (necklace, identity, unlabeled) transform of 1, 2, 3, 4, ...
-max $1,$0
+mov $3,0
+mov $4,$0
+sub $0,1
+mov $5,$0
+bin $5,2
+add $5,$0
+add $5,$4
+lpb $4
+  sub $4,1
+  mov $0,$5
+  sub $0,$4
+  mov $6,$0
+  seq $6,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $7,0
+  sub $0,1
+  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
+  seq $0,32198 ; "CIK" (necklace, indistinct, unlabeled) transform of 1,2,3,4,...
+  mul $0,$6
+  add $3,$0
+lpe
+max $1,$3
+mov $0,$3
 mov $0,$1

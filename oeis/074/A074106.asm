@@ -2,6 +2,9 @@
 ; Submitted by Steve Dodd
 ; 1,3,5,7,19,13,29,11,47
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,1
   sub $0,$1

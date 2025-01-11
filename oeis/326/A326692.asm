@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $5,$3
-  sub $3,1
   seq $3,69359 ; a(n) = n * Sum_{p|n} 1/p where p are primes dividing n.
   sub $3,1
   gcd $5,$3

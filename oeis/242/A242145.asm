@@ -7,6 +7,7 @@ mov $2,1
 add $2,$0
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,71816 ; Number of ordered solutions to x+y+z = u+v+w, 0 <= x, y, z, u, v, w < n.
   mov $0,0
   pow $2,6

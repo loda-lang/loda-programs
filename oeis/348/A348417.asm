@@ -14,6 +14,7 @@ lpb $2
   sub $6,1
   mov $7,$6
   gcd $7,2
+  add $6,1
   seq $6,70306 ; a(n) = 2*phi(n)/2^omega(n).
   div $6,$7
   mov $3,$6
@@ -21,13 +22,13 @@ lpb $2
   add $3,2
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

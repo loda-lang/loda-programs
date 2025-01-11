@@ -11,6 +11,7 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,72505 ; a(n) = n / (LCM of divisors of n which are <= sqrt(n)).
   equ $3,1
   sub $0,$3

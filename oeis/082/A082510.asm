@@ -8,6 +8,7 @@ add $2,10
 pow $2,2
 lpb $2
   sub $2,1
+  add $3,1
   seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
   mov $5,$3
   add $1,$3

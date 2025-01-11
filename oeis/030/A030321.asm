@@ -14,7 +14,6 @@ lpb $2
   seq $3,66099 ; Triangle read by rows, in which row n lists the compositions of n in reverse lexicographic order.
   mov $5,$3
   sub $5,1
-  sub $3,1
   seq $3,69531 ; Smallest positive k such that 10^k + 1 is divisible by n, or 0 if no such number exists.
   equ $3,0
   sub $0,$3

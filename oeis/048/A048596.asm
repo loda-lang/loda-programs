@@ -10,6 +10,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,70635 ; a(n) = n mod (sum of digits of n).
   mov $5,$1
   add $5,1

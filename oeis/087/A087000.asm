@@ -14,7 +14,6 @@ lpb $2
   seq $6,154115 ; Numbers n such that n + 3 is prime.
   seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$6
-  sub $3,1
   seq $3,69531 ; Smallest positive k such that 10^k + 1 is divisible by n, or 0 if no such number exists.
   mov $5,$3
   neq $3,0

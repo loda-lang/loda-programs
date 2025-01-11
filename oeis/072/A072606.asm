@@ -1,8 +1,11 @@
 ; A072606: Number of pretzel (stellar or prismatic) knots and links.
 ; Submitted by Egon Olsen
 ; 1,1,3,4,8,10,19,24
-; Formula: a(n) = truncate((floor(n/2)*(binomial(n-1,2)+8))/3)+1
+; Formula: a(n) = truncate((floor((n-6)/2)*(binomial(n-7,2)+8))/3)+1
 
+#offset 6
+
+sub $0,6
 mov $1,$0
 div $1,2
 sub $0,1

@@ -3,6 +3,7 @@
 
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,72668 ; Numbers one less than composite numbers.
   mov $2,$1
   add $2,1

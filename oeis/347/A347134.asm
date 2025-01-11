@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,69359 ; a(n) = n * Sum_{p|n} 1/p where p are primes dividing n.
   add $3,$0
 lpe

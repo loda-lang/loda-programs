@@ -11,6 +11,7 @@ lpb $2
   mov $3,$1
   mul $3,$1
   seq $3,7954 ; Product of decimal digits of n.
+  add $3,1
   seq $3,71797 ; Restart counting after each new odd integer (a fractal sequence).
   equ $3,1
   sub $0,$3

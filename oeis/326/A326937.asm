@@ -5,6 +5,7 @@ mov $1,$0
 sub $1,$0
 sub $1,1
 mov $2,$0
+add $2,1
 seq $2,73184 ; Number of cubefree divisors of n.
 mov $4,$2
 trn $2,56

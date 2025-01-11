@@ -7,6 +7,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   div $1,2
+  add $1,1
   seq $1,68231 ; Primes congruent to 11 mod 12.
   sub $1,3
   mov $0,1

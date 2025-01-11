@@ -9,6 +9,7 @@ add $0,6
 mov $1,16
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,70635 ; a(n) = n mod (sum of digits of n).
   add $3,1
   equ $3,6

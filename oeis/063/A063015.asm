@@ -13,6 +13,7 @@ lpb $2
   sub $3,$1
   sub $3,1
   mov $7,$1
+  add $7,1
   seq $7,73184 ; Number of cubefree divisors of n.
   mov $6,$7
   trn $7,56

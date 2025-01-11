@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 10,14,16,18,20,28,32,38,68
 
+#offset 1
+
+sub $0,1
 mov $1,4
 mov $2,$0
 add $2,3

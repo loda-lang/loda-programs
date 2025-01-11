@@ -3,7 +3,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,72668 ; Numbers one less than composite numbers.
 sub $0,1
 lpb $0

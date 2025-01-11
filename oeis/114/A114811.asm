@@ -6,6 +6,5 @@ mov $1,$0
 add $1,1
 dif $1,2
 dif $1,2
-sub $1,1
 seq $1,74823 ; a(n) = 2^omega(n)*mu(n)^2.
 mov $0,$1

@@ -6,6 +6,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $3,$2
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   div $3,2
   equ $3,2

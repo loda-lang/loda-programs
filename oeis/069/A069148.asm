@@ -10,6 +10,7 @@ pow $2,20
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,69149 ; Numbers k such that k*k!/A062758(k) is an integer where A062758(k) is the product of squares of divisors of k.
   sub $3,1
   add $0,1

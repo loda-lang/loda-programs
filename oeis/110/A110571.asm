@@ -7,6 +7,7 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,72031 ; Row sums of A072030.
   mov $0,1
 lpe

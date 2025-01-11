@@ -7,13 +7,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  add $3,1
   seq $3,71797 ; Restart counting after each new odd integer (a fractal sequence).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

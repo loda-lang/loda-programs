@@ -8,6 +8,7 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,71974 ; Numerator of rational number i/j such that Sagher map sends i/j to n.
   mov $0,$2
   sub $0,1

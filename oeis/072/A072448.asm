@@ -1,8 +1,29 @@
 ; A072448: Squares of the terms of the decimal expansion of Pi.
 ; Submitted by Skillz
 ; 9,1,16,1,25,81,4,36,25,9,25,64,81,49,81,9,4,9,64,16,36,4,36,16,9,9,64,9,4,49,81,25,0,4,64,64,16,1,81,49,1,36,81,9,81,81,9,49,25,1,0,25,64,4,0,81,49,16,81,16,16,25,81,4,9,0,49,64,1,36,16,0,36,4,64,36,4,0,64,81
-; Formula: a(n) = A000796(n+1)^2
 
-add $0,1
-seq $0,796 ; Decimal expansion of Pi (or digits of Pi).
+#offset 1
+
+mov $2,0
+mov $5,0
+mov $1,1
+mov $3,$0
+mul $3,7
+lpb $3
+  max $3,1
+  max $5,$2
+  div $5,$3
+  add $2,$1
+  sub $3,1
+  mul $1,2
+  add $1,$5
+lpe
+sub $0,1
+mov $4,10
+pow $4,$0
+div $2,$4
+mul $1,2
+div $1,$2
+mov $0,$1
+mod $0,10
 pow $0,2

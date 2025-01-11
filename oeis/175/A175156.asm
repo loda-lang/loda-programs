@@ -4,6 +4,7 @@
 
 mov $1,$0
 lpb $0
+  add $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
   mov $3,$0
   mov $0,0

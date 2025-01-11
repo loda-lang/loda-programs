@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,73634 ; Numbers k such that floor((3/2)^k) = A002379(k) is even.
   add $0,1
   mov $1,$0

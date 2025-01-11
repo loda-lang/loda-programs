@@ -12,6 +12,7 @@ lpb $2
   sub $2,1
   add $4,1
   mov $0,$1
+  add $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
   add $0,1
   mod $0,$4

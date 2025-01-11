@@ -9,4 +9,5 @@ lpb $0
   sub $0,2
   dif $0,4
 lpe
+add $0,1
 seq $0,72436 ; Remove prime factors of form 4*k+3.

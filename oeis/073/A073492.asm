@@ -2,6 +2,9 @@
 ; Submitted by misaki@med
 ; 10,14,20,21,22,26,28,33,34,38,39,40,42,44,46,50,51,52,55,56,57,58,62,63,65,66,68,69,70,74,76,78,80,82,84,85,86,87,88,91,92,93,94,95,98,99,100,102,104,106,110,111,112,114,115,116,117,118,119,122,123,124,126,129,130,132,133,134,136,138,140,141,142,145,146,147,148,152,153,154
 
+#offset 1
+
+sub $0,1
 mov $1,8
 mov $2,$0
 add $2,7
@@ -15,11 +18,11 @@ lpb $2
   sub $3,1
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   seq $3,340375 ; a(n) = 1 if n is of the form 2^i - 2^j with i >= j, and 0 otherwise.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -10,6 +10,7 @@ lpb $3
   add $0,$3
   mul $0,10
   trn $0,2
+  add $0,1
   seq $0,72000 ; Number of semiprimes (A001358) <= n.
   mov $4,$3
   mul $4,$0

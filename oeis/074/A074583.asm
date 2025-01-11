@@ -10,7 +10,20 @@ lpb $2
   add $4,$1
   mov $3,$1
   seq $3,275823 ; Least k such that n divides phi(k^2).
-  seq $3,14963 ; Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.
+  sub $3,1
+  mov $5,$3
+  seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $5,1
+  mod $5,2
+  add $3,1
+  mov $6,2
+  pow $6,$3
+  sub $6,2
+  gcd $3,$6
+  sub $3,1
+  mul $5,$3
+  mov $3,$5
+  add $3,1
   seq $3,36288 ; a(n) = 1 + integer log of n: if the prime factorization of n is n = Product (p_j^k_j) then a(n) = 1 + Sum (p_j * k_j) (cf. A001414).
   sub $3,1
   pow $3,$3

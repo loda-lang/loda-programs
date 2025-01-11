@@ -11,6 +11,7 @@ lpb $1
   mov $1,28
   add $0,1
 lpe
+add $0,1
 seq $0,67368 ; a(n) is the smallest positive even integer that cannot be expressed as the product of two or three previous terms (not necessarily distinct).
 div $0,2
 mul $0,32

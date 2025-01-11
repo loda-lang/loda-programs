@@ -10,7 +10,7 @@ mov $2,1
 add $2,$0
 mov $0,$2
 mul $0,2
-sub $0,2
 sub $0,$2
+sub $0,1
 seq $0,70669 ; Smallest m in range 2..n-1 such that m^4 == 1 mod n, or 1 if no such number exists.
 sub $0,$1

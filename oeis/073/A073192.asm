@@ -13,7 +13,11 @@ add $1,1
 seq $1,73190 ; Number of general plane trees which are either empty (the case a(0)), or whose root degree is either 1 (i.e., the planted trees) or the two leftmost subtrees (of the root node) are identical.
 add $1,$2
 div $1,2
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $4,$0
+mul $0,2
+bin $0,$4
+add $4,1
+div $0,$4
 sub $0,$1
 sub $1,$0
 mov $0,$1

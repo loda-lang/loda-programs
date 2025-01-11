@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,74823 ; a(n) = 2^omega(n)*mu(n)^2.
 pow $0,2
 mov $1,$0

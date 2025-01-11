@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,73438 ; Remainder of division G[n]/Pi[n], where G[n] is the number of composites not exceeding n.
   sub $0,$3
   add $1,1

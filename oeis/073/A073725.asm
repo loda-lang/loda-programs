@@ -5,8 +5,7 @@
 
 #offset 1
 
-sub $0,1
-add $0,3
+add $0,2
 seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 sub $0,1
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

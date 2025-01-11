@@ -11,6 +11,7 @@ lpb $1
   mov $2,$1
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,73353 ; Sum of n and its squarefree kernel.
   sub $4,1
   mov $5,$3

@@ -16,6 +16,7 @@ lpb $2
     mov $3,$1
     add $3,$7
     mul $3,2
+    add $3,1
     seq $3,71364 ; Smallest number with same sequence of exponents in canonical prime factorization as n.
     mov $6,$7
     mul $6,$3

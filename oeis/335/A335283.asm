@@ -8,5 +8,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
+add $1,1
 seq $1,67824 ; a(1) = 1; for n > 1, a(n) = 1 + Sum_{0 < d < n, d|n} a(d).
 mov $0,$1

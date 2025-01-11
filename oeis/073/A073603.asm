@@ -1,14 +1,21 @@
 ; A073603: Smallest multiple of n-th prime which is == 1 mod (n+1)-st prime.
 ; Submitted by JayPi
 ; 4,6,15,56,66,52,153,323,552,435,186,370,861,1505,2068,2597,1770,671,3551,2556,949,4898,6142,1068,2425,5151,8240,5778,3052,1017,12446,14934,9453,18626,11175,3926,4239,20375,24048,25777,16110,3439,18336,9457,19503,24477,27430,37910,25878,13282,46367,28680,6025,53714,56283,58912,36315,12466,19390,39621,58015,83505,71531,48516,24727,82420,18536,35048,60378,30712,105547,115239,22754,23499,108773,124092,96472,39700,20451,154193
-; Formula: a(n) = (A058077(n+1)-1)^2-A013636(A008578(n+2))*truncate(((A058077(n+1)-1)^2)/A013636(A008578(n+2)))
+; Formula: a(n) = (binomial(A000040(n+2),A064722(2*truncate(A000040(n+2)/2))+1)-1)^2-A013636(A008578(n+2))*truncate(((binomial(A000040(n+2),A064722(2*truncate(A000040(n+2)/2))+1)-1)^2)/A013636(A008578(n+2)))
 
 mov $1,$0
 add $1,2
 seq $1,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
 seq $1,13636 ; a(n) = n*nextprime(n).
+add $0,2
+seq $0,40 ; The prime numbers.
+mov $2,$0
+div $0,2
+mul $0,2
+seq $0,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
 add $0,1
-seq $0,58077 ; Binomial coefficients formed from consecutive primes: a(n) = binomial( prime(n+1), prime(n) ).
+bin $2,$0
+mov $0,$2
 sub $0,1
 pow $0,2
 mod $0,$1

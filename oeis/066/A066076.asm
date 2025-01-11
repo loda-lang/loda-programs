@@ -13,7 +13,6 @@ lpb $2
   seq $3,154115 ; Numbers n such that n + 3 is prime.
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
-  sub $3,1
   seq $3,70242 ; a(n) = Card( k>0 : sigma(k)=sigma(n) ).
   equ $3,1
   sub $0,$3

@@ -12,6 +12,7 @@ lpb $4
   sub $7,$3
   sub $7,1
   mov $8,$3
+  add $8,1
   seq $8,73184 ; Number of cubefree divisors of n.
   mov $1,$8
   trn $8,56

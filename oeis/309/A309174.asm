@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,67824 ; a(1) = 1; for n > 1, a(n) = 1 + Sum_{0 < d < n, d|n} a(d).
     mov $9,10
     add $9,$5

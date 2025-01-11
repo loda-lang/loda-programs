@@ -11,7 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,46
+  add $3,47
   seq $3,71637 ; Largest exponent k >=0 such that (n+1)^k divides n!.
   trn $3,10
   min $3,1

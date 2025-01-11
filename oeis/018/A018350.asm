@@ -9,13 +9,14 @@ mov $1,-1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,73103 ; Number of solutions to x^4 == 1 (mod n).
   mov $5,$1
-  add $5,1
+  add $5,2
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   div $5,$3
+  add $1,1
   mov $3,$5
   equ $3,1
   sub $0,$3

@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$1
   trn $0,1
+  add $0,1
   seq $0,72905 ; a(n) is the least k > n such that k*n is a square.
   sub $0,$1
 lpe

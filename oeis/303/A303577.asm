@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,74827 ; Numbers n such that tau(n) > tau(n+1) where tau(x) = A000005(x).
   mov $4,$3
   mul $4,$0

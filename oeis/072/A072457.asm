@@ -10,7 +10,7 @@ lpb $2
   sub $0,$2
   mov $1,$5
   gcd $1,$4
-  cmp $1,$4
+  equ $1,$4
   add $3,$1
 lpe
 mov $0,$3

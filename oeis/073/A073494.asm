@@ -16,7 +16,7 @@ lpb $2
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   seq $3,69010 ; Number of runs of 1's in the binary representation of n.
   sub $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

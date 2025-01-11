@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
   sub $3,3
   mov $5,$3

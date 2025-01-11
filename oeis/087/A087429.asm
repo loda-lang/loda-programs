@@ -5,6 +5,7 @@
 sub $0,1
 mov $2,$0
 max $2,0
+add $2,2
 seq $2,70221 ; a(n)=LPF(n+1)-LPF(n), where LPF(n) denotes the largest prime factor of n.
 lpb $2
   div $2,9

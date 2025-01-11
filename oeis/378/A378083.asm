@@ -8,6 +8,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   div $2,2
+  add $2,1
   seq $2,70195 ; Squarefree numbers sandwiched between a pair of twin primes.
   sub $2,3
   mov $0,1

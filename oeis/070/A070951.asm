@@ -14,7 +14,7 @@ lpb $0
   bxo $4,$3
   mov $5,$4
 lpe
-dis $5,2
+dgs $5,2
 mov $1,$2
 mul $1,2
 add $1,1

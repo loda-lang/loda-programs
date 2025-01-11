@@ -9,9 +9,10 @@ pow $2,4
 lpb $2
   add $2,1
   sub $2,$0
-  add $1,1
   mov $4,$1
+  add $4,2
   seq $4,69859 ; (Largest prime factor of n) modulo (smallest prime factor of n).
+  add $1,1
   mov $5,$1
   seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$5

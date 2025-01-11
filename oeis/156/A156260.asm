@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,73184 ; Number of cubefree divisors of n.
 add $2,$0
 add $2,$0

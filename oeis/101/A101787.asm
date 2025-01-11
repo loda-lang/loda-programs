@@ -11,6 +11,7 @@ lpb $1
   mov $0,$4
   sub $0,$1
   mul $0,2
+  add $0,1
   seq $0,67849 ; a(n) = max{k: f(n),...,f^k(n) are prime}, where f(m) = 2m+1 and f^k denotes composition of f with itself k times.
   add $0,1
   lpb $0

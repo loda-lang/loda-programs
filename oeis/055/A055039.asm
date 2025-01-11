@@ -11,6 +11,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
   equ $3,7
   sub $0,$3

@@ -10,10 +10,11 @@ mov $2,$0
 add $2,11
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,71650 ; Difference between sums of odd and even digits of n.
   equ $3,5
+  add $1,1
   add $1,$5
   add $1,1
   mov $5,8

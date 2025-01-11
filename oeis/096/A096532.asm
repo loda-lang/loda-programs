@@ -10,6 +10,7 @@ lpb $3
   mov $1,1
   mov $0,$2
   sub $0,$3
+  add $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
   add $0,1
   seq $0,7956 ; Product of the proper divisors of n.

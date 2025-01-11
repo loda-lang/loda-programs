@@ -2,7 +2,8 @@
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 7,9,15,16,22,54,66,120,210
 
-add $0,1
+#offset 1
+
 mov $2,$0
 mul $2,2
 pow $2,4

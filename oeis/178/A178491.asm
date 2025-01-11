@@ -7,6 +7,7 @@ add $2,8
 pow $2,4
 lpb $2
   mov $1,$5
+  add $1,1
   seq $1,73184 ; Number of cubefree divisors of n.
   mov $6,$1
   equ $6,3

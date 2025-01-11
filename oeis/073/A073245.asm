@@ -1,8 +1,11 @@
 ; A073245: Sum of all cubefree numbers with the same squarefree kernel as the n-th squarefree number.
 ; Submitted by Jamie Morken(l1)
 ; 1,6,12,30,72,56,180,132,182,336,360,306,380,672,792,552,1092,870,2160,992,1584,1836,1680,1406,2280,2184,1722,4032,1892,3312,2256,3672,2862,3960,4560,5220,3540,3782,5952,5460,9504,4556,6624,10080,5112,5402,8436,7392,13104,6320,10332,6972,9180,11352,10440,8010,10192,11904,13536,11400,9506,10302,22032,10712,20160,17172,11556,11990,23760,16872,12882,27360,16560,21240,17136,22692,20664,16256,22704,32760
-; Formula: a(n) = A000082(A005117(n+1))
+; Formula: a(n) = A005117(n)*A001615(A005117(n))
 
-add $0,1
+#offset 1
+
 seq $0,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
-seq $0,82 ; a(n) = n^2*Product_{p|n} (1 + 1/p).
+mov $1,$0
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+mul $0,$1

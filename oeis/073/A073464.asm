@@ -1,9 +1,11 @@
 ; A073464: a(n) = phi(n) mod PrimePi(n).
 ; Submitted by Landjunge
 ; 0,0,0,1,2,2,0,2,0,0,4,0,0,2,2,2,6,2,0,4,2,4,8,2,3,0,3,8,8,8,5,9,5,2,1,0,6,0,4,1,12,0,6,10,8,1,1,12,5,2,9,4,2,8,8,4,12,7,16,6,12,0,14,12,2,9,13,6,5,10,4,9,15,19,15,18,3,12,10,10
-; Formula: a(n) = -A000720(n+2)*truncate(A000010(n+2)/A000720(n+2))+A000010(n+2)
+; Formula: a(n) = -A000720(n)*truncate(A000010(n)/A000720(n))+A000010(n)
 
-add $0,1
+#offset 2
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...

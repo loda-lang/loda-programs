@@ -10,6 +10,7 @@ lpb $4
   mov $0,$2
   add $0,$4
   trn $0,1
+  add $0,1
   seq $0,70087 ; P(n) > P(n+1) where P(n) (A006530) is the largest prime factor of n.
   mov $1,$4
   mul $1,$0

@@ -11,10 +11,11 @@ add $1,$0
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   pow $3,2
   seq $3,37800 ; Number of occurrences of 01 in the binary expansion of n.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,$3
   add $1,1

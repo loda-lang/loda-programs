@@ -8,6 +8,7 @@ add $2,8
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   mov $5,2
   add $5,$3

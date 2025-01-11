@@ -12,7 +12,6 @@ lpb $2
   add $3,1
   pow $3,2
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  sub $3,1
   seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
   equ $3,1
   mov $5,$1

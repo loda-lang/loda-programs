@@ -11,7 +11,7 @@ lpb $3
   add $5,1
   seq $5,40 ; The prime numbers.
   mul $5,2
-  sub $5,2
+  sub $5,1
   seq $5,72000 ; Number of semiprimes (A001358) <= n.
   sub $0,1
   mov $2,$3

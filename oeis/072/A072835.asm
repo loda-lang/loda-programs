@@ -9,8 +9,7 @@ mul $0,9
 div $0,7
 sub $0,2
 mov $1,1
-cmp $1,$0
-cmp $1,0
+neq $1,$0
 mul $1,$0
 mov $0,$1
 mul $0,2

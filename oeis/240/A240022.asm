@@ -10,6 +10,7 @@ lpb $5
   mov $1,$3
   add $1,$5
   trn $1,1
+  add $1,1
   seq $1,70199 ; Number of palindromes of length <= n.
   mov $4,$5
   mul $4,$1

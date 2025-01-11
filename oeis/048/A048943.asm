@@ -16,6 +16,7 @@ lpb $2
   mul $3,2
   mov $5,-1
   add $5,$3
+  add $5,1
   seq $5,69157 ; Number of positive divisors of n that are divisible by the smallest prime that divides n.
   mov $3,$5
   add $3,$4

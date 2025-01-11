@@ -16,6 +16,7 @@ lpb $4
   add $1,1
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
   add $0,1
   mul $0,2

@@ -2,6 +2,7 @@
 ; Submitted by Skivelitis2
 ; 0,1,1,0,1,-1,1,1,0,-1,1,1,1,-1,-1,0,1,1,1,1,-1,-1,1,-1,0,-1,1,1,1,1,1,1,-1,-1,-1,0,1,-1,-1,-1,1,1,1,1,1,-1,1,1,0,1,-1,1,1,-1,-1,-1,-1,-1,1,-1,1,-1,1,0,-1,1,1,1,-1,1,1,1,1,-1,1,1,-1,1,1,1
 
+add $0,1
 seq $0,71321 ; Alternating sum of all prime factors of n; primes nondecreasing, starting with the least prime factor: A020639(n).
 mov $1,2
 pow $1,$0

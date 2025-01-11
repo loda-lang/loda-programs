@@ -7,6 +7,7 @@ sub $0,1
 mov $1,126
 lpb $1
   div $1,10
+  add $0,1
   seq $0,72668 ; Numbers one less than composite numbers.
 lpe
 add $0,1

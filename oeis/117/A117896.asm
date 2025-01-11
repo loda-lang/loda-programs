@@ -11,7 +11,6 @@ lpb $3
   trn $0,1
   add $0,2
   pow $0,2
-  sub $0,1
   seq $0,72292 ; Number of proper powers b^d <= n (b > 1, d > 1).
   mov $2,$0
   add $2,1

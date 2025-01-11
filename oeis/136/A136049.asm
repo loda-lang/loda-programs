@@ -15,6 +15,7 @@ lpb $3
   mul $2,$0
   add $0,$2
   trn $0,1
+  add $0,1
   seq $0,71538 ; Number of twin prime pairs (p, p+2) with p <= n.
   mov $1,$3
   mul $1,$0

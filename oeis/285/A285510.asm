@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,72437 ; Numbers with no prime factors of form 4*k+3.
   mul $3,2
   sub $3,1

@@ -10,7 +10,7 @@ lpb $2
   mov $6,$1
   add $6,3
   seq $6,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $6,2
+  sub $6,1
   seq $6,69859 ; (Largest prime factor of n) modulo (smallest prime factor of n).
   mov $3,$1
   add $3,1

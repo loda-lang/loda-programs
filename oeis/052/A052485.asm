@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   mod $3,2
   equ $3,0

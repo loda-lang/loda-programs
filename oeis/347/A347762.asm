@@ -14,8 +14,9 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,74591 ; If n is a prime power then 0 else n.
-    cmp $7,$8
+    equ $7,$8
     mov $9,10
     add $9,$5
     sub $4,$0

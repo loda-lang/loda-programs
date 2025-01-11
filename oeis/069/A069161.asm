@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,5,7,11,13,15,17,19,23,29,31,33,35,37,41,43,45,47,51,53,59,61
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 pow $2,2

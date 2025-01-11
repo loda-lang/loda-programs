@@ -11,6 +11,7 @@ lpb $3
   sub $2,$1
   sub $2,1
   mov $5,$1
+  add $5,1
   seq $5,73184 ; Number of cubefree divisors of n.
   mov $7,$5
   add $1,1

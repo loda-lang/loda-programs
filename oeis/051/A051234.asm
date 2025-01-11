@@ -10,6 +10,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,69161 ; Numbers n such that no group of order n can be a central factor.
   sub $3,1
   add $0,1

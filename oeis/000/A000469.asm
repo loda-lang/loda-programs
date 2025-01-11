@@ -10,6 +10,7 @@ add $3,1
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,74823 ; a(n) = 2^omega(n)*mu(n)^2.
   mov $7,8
   mov $1,8

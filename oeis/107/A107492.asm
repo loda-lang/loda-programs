@@ -3,6 +3,7 @@
 ; 1,0,0,0,4,2,0,0,0,4,0,4,12
 
 mov $2,$0
+add $2,1
 seq $2,72436 ; Remove prime factors of form 4*k+3.
 mov $4,1
 seq $0,175286 ; Pisano period of the Jacobsthal sequence A001045 modulo n.

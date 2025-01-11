@@ -15,7 +15,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  sub $3,1
   seq $3,66838 ; Product of primes < n that do not divide n.
   lpb $0
     dif $0,$2

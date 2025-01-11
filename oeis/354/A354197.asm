@@ -35,6 +35,5 @@ lpb $0
   add $5,1
 lpe
 mov $0,$2
-sub $0,1
 seq $0,66971 ; a(n) = sigma(sigma(sigma(n))).
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

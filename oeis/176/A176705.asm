@@ -14,7 +14,6 @@ lpb $2
   max $0,0
   seq $0,176656 ; The positions of single (or isolated or non-twin) primes in A000040.
   seq $0,40 ; The prime numbers.
-  sub $0,1
   seq $0,72000 ; Number of semiprimes (A001358) <= n.
   mov $1,$2
   mul $1,$0

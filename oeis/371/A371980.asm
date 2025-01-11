@@ -8,6 +8,7 @@ pow $2,2
 mul $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,67849 ; a(n) = max{k: f(n),...,f^k(n) are prime}, where f(m) = 2m+1 and f^k denotes composition of f with itself k times.
   equ $3,2
   sub $0,$3

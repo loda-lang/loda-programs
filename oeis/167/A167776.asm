@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   add $2,1
   add $4,1
+  add $3,1
   seq $3,71960 ; Largest k >= 0 such that Product_{i=0..k} (n+i) divides n!.
   sub $3,$4
   min $3,7
@@ -17,7 +18,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,2
   mov $3,$1

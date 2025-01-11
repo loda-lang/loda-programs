@@ -8,7 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  dis $3,2
+  dgs $3,2
   sub $3,4
   equ $3,2
   sub $0,$3

@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,72378 ; Numbers n such that 12*n divides F(12*n), where F(m) is the m-th Fibonacci number.
   sub $3,1
   add $0,1

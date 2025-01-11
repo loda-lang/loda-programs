@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,71350 ; Distinct values of A058250; these terms appear first at subscripts listed in A071349.
   mov $2,$3
   mul $2,$0

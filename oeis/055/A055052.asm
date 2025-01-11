@@ -10,14 +10,15 @@ mov $2,$0
 add $2,10
 pow $2,2
 lpb $2
-  add $1,5
   mov $3,$1
+  add $3,6
   seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
   add $3,1
   dif $3,2
   dif $3,2
   equ $3,1
   sub $0,$3
+  add $1,5
   mov $4,$0
   max $4,0
   equ $4,$0

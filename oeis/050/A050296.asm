@@ -17,7 +17,6 @@ lpb $1
   mov $5,$0
   gcd $5,$6
   mov $0,$5
-  sub $0,1
   seq $0,71521 ; Number of 3-smooth numbers <= n.
   mov $3,$0
   pow $3,2

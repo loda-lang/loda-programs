@@ -1,6 +1,6 @@
 ; A072791: Binary widths of A072790.
 ; Submitted by [AF>Libristes] Dudumomo
-; 0,1,2,4,6,8,13,23,43,82,160,316
+; 0,1,2,4,6,8,13,23,43,82,160,316,628,1252,2500,4997
 
 mov $2,1
 mov $5,-1
@@ -16,7 +16,7 @@ lpb $0
   add $6,$5
   add $2,$3
   sub $3,$1
-  cmp $3,-4
+  equ $3,-4
   mov $5,$4
   sub $5,1
   mov $4,$2

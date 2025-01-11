@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,70089 ; P(n) < P(n+1) where P(n) (A006530) is the largest prime factor of n.
   mov $2,$3
   mul $2,$0

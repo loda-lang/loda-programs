@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   trn $3,1
+  add $3,1
   seq $3,71650 ; Difference between sums of odd and even digits of n.
   mov $5,0
   pow $5,$1
@@ -23,7 +24,7 @@ lpb $2
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

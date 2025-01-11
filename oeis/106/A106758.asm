@@ -13,6 +13,7 @@ lpb $2
   mul $3,2
   seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
   mov $4,$3
+  add $4,1
   seq $4,72696 ; a(n) = lcm(d(n^3), d(n)), where d(n) = A000005, the number of divisors of n.
   add $1,9
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
@@ -20,7 +21,7 @@ lpb $2
   div $3,$4
   div $3,2
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
 lpe
 mov $0,$1

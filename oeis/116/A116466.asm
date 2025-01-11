@@ -12,6 +12,7 @@ lpb $1
   sub $1,1
   mov $3,$1
   max $3,0
+  add $3,1
   seq $3,72547 ; Main diagonal of the array in which first column and row are filled alternatively with 1's or 0's and then T(i,j) = T(i-1,j) + T(i,j-1).
   add $2,$3
 lpe

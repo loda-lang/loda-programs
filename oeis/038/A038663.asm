@@ -10,6 +10,7 @@ lpb $0
   add $3,1
   sub $0,1
   div $2,$3
+  add $2,1
   seq $2,72649 ; n occurs Fibonacci(n) times (cf. A000045).
   add $1,$2
 lpe

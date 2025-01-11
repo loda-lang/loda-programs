@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,69142 ; Primes p such that p+2, 2p+1, and 2p+3 are also prime.
   sub $0,2
   mov $1,$0

@@ -12,7 +12,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     seq $7,348308 ; a(n) = Sum_{k=0..floor(n/6)} (-1)^k * binomial(n-3*k,3*k).
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $6,$5

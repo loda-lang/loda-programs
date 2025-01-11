@@ -15,6 +15,7 @@ lpb $6
     sub $3,1
     mov $0,$1
     sub $0,$3
+    add $0,1
     seq $0,73610 ; Number of primes of the form n-p where p is a prime.
     add $2,$0
   lpe

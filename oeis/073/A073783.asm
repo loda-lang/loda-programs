@@ -5,8 +5,7 @@
 
 #offset 1
 
-sub $0,1
-add $0,4
+add $0,3
 mov $1,$0
 seq $1,171581 ; The natural numbers without primes > 3.
 sub $1,1

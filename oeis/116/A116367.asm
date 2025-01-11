@@ -11,6 +11,7 @@ lpb $3
   mov $5,$0
   add $5,1
   trn $0,1
+  add $0,1
   seq $0,71148 ; Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
   mul $0,$5
   mov $2,$3

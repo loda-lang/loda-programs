@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   gcd $3,2
   mul $4,2
@@ -15,7 +16,7 @@ lpb $2
   add $1,$4
   sub $2,$0
   mov $4,$0
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1
 add $0,1

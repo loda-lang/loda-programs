@@ -13,7 +13,6 @@ lpb $2
   mov $3,$1
   seq $3,244490 ; Triangle read by rows: T(n,k) (0 <= k <= n) = Sum_{i=0..[k/2]} (-1)^i*binomial(k,2*i)*(2*i-1)!!*n^(k-2*i).
   mov $5,$3
-  sub $3,1
   seq $3,69531 ; Smallest positive k such that 10^k + 1 is divisible by n, or 0 if no such number exists.
   neq $3,0
   sub $0,$3

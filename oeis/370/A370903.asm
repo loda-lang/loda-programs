@@ -13,6 +13,7 @@ lpb $1
   pow $5,$3
   mov $6,$3
   add $6,1
+  add $3,1
   seq $3,73353 ; Sum of n and its squarefree kernel.
   mov $7,$3
   gcd $7,$6

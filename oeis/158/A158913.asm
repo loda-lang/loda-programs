@@ -16,15 +16,13 @@ lpb $3
   mul $4,2
   sub $4,27
   mov $6,$4
-  sub $4,1
-  seq $4,70242 ; Card( k>0 : sigma(k)=sigma(n) ).
-  cmp $4,1
-  cmp $4,0
+  seq $4,70242 ; a(n) = Card( k>0 : sigma(k)=sigma(n) ).
+  neq $4,1
   sub $1,$4
   add $2,1
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   trn $3,1
 lpe

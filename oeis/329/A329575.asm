@@ -8,6 +8,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,72078 ; Number of 3-smooth divisors of n.
   add $4,$5
   gcd $4,2
@@ -16,7 +17,7 @@ lpb $3
   add $2,$5
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

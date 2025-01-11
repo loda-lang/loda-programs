@@ -7,6 +7,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   sub $3,1
   equ $3,2

@@ -6,5 +6,6 @@ lpb $0
   div $0,6
   sub $0,10
 lpe
+add $0,1
 seq $0,71562 ; Numbers n such that the sum of the middle divisors of n (A071090) is not zero.
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

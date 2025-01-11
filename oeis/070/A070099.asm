@@ -18,7 +18,17 @@ lpb $2
   add $4,1
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  seq $0,70098 ; Number of integer triangles with perimeter n which are acute and isosceles.
+  add $0,1
+  mov $5,$0
+  mov $6,$0
+  mul $6,2
+  mul $6,$0
+  nrt $6,2
+  mod $0,2
+  add $6,$0
+  mov $0,$6
+  sub $0,$5
+  div $0,2
   mul $0,$4
   add $1,$0
 lpe

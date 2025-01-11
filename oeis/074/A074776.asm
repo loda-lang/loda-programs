@@ -4,16 +4,21 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,7
+sub $0,1
+add $2,6
 pow $2,2
 lpb $2
   mov $6,$1
   seq $6,63727 ; a(n) = 2*a(n-1) + 4*a(n-2), a(0)=1, a(1)=2.
   add $5,3
   mul $5,2
-  seq $3,107078 ; Whether n has non-unitary prime divisors.
+  add $3,1
+  seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+  mul $3,2
+  max $3,1
+  sub $3,1
+  mod $3,2
   gcd $3,$5
   gcd $6,$3
   mov $3,$6

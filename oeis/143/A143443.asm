@@ -7,6 +7,7 @@ add $1,1
 mov $2,1
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   add $3,1
   mod $3,3

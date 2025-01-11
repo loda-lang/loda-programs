@@ -11,7 +11,7 @@ lpb $3
   add $2,1
   seq $2,40 ; The prime numbers.
   pow $2,2
-  sub $2,2
+  sub $2,1
   seq $2,72000 ; Number of semiprimes (A001358) <= n.
   sub $0,1
   mov $1,$4

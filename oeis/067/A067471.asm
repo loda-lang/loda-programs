@@ -2,7 +2,9 @@
 ; Submitted by Jamie Morken(m3)
 ; 1,4,5,6,7,7,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9
 
-add $0,3
+#offset 1
+
+add $0,2
 mov $2,26
 mov $1,26
 lpb $1

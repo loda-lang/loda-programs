@@ -5,10 +5,11 @@
 mov $1,3
 mov $2,$0
 lpb $2
-  add $1,2
   mov $3,$1
-  seq $3,69928 ; Number of k, 1<=k<=n, such that tau(k) divides sigma(k) where tau(x) is the number of divisors of x and sigma(x) the sum of divisors of x.
+  add $3,3
+  seq $3,69928 ; Number of integers k, 1<=k<=n, such that tau(k) divides sigma(k) where tau(k) is the number of divisors of k and sigma(k) the sum of divisors of k.
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

@@ -8,6 +8,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,74823 ; a(n) = 2^omega(n)*mu(n)^2.
   mov $7,11
   seq $7,173862 ; a(n) = A158772(n-1)/21.
@@ -20,7 +21,7 @@ lpb $3
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

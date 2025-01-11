@@ -9,5 +9,6 @@ mov $1,$0
 add $1,1
 gcd $1,$2
 mov $0,$1
-seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+trn $0,1
 add $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

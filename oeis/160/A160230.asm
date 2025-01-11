@@ -4,6 +4,7 @@
 
 mov $4,1
 mov $5,$0
+add $5,1
 seq $5,72400 ; (Factors of 4 removed from n) modulo 8.
 add $0,1
 max $2,$0

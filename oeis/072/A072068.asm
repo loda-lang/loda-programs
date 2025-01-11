@@ -2,6 +2,9 @@
 ; Submitted by [Team CHINA-hwt]Gimi Huang
 ; 2,4,0,0,10,12,0,0,16,12,0,0,10,16,0,0,16,24,0,0,32,12,0,0,18,24,0,0,16,36,0,0,32,12,0,0,16,28,0,0,34,36,0,0,48,24,0,0,16,36,0,0,32,36,0,0,32,24,0,0,26,24,0,0,48,60,0,0,32,36,0,0,32,28,0,0,48,48,0,0
 
+#offset 1
+
+sub $0,1
 sub $1,$0
 seq $0,246811 ; Expansion of phi(x)^2 * psi(x^4) in powers of x where phi(), psi() are Ramanujan theta functions.
 gcd $1,4

@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(l1)
 ; 1,3,7,11,21,27,43,51,69,83,111,123,157,171,199,227,273
 
+#offset 1
+
+sub $0,1
 mov $3,1
 mov $2,$0
 lpb $2

@@ -9,8 +9,9 @@ add $2,11
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,72400 ; (Factors of 4 removed from n) modulo 8.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,3
   sub $2,$0

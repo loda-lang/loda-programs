@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,73103 ; Number of solutions to x^4 == 1 (mod n).
 lpb $0
   div $0,2

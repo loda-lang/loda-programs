@@ -13,7 +13,6 @@ lpb $2
   add $3,1
   seq $3,341915 ; For any nonnegative number n with runs in binary expansion (r_1, ..., r_w), a(n) = Sum_{k = 1..w} 2^(r_1 + ... + r_k - 1).
   seq $3,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
-  sub $3,1
   seq $3,71650 ; Difference between sums of odd and even digits of n.
   equ $3,0
   sub $0,$3

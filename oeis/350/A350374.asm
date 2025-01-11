@@ -9,14 +9,14 @@ sub $0,1
 add $2,5
 pow $2,3
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,73184 ; Number of cubefree divisors of n.
   sub $3,6
   div $3,2
   equ $3,9
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

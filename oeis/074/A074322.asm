@@ -1,6 +1,9 @@
 ; A074322: 0 if pronounced name of n-th letter of English alphabet begin with a vowel sound, otherwise 1. Different from A054638.
 ; 0,1,1,1,0,0,1,0,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,0,1,1
 
+#offset 1
+
+sub $0,1
 mov $1,6
 lpb $1
   sub $1,1

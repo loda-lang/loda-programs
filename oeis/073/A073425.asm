@@ -5,6 +5,7 @@
 max $1,$0
 lpb $1
   trn $1,1
+  add $1,1
   seq $1,72668 ; Numbers one less than composite numbers.
   mov $2,$1
   mov $1,0

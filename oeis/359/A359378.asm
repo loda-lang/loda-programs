@@ -28,7 +28,6 @@ lpb $0
     bin $3,0
     max $3,$6
   lpe
-  sub $3,1
   seq $3,69192 ; Sum of the reversals of the divisors of n.
   equ $3,4
   sub $3,1

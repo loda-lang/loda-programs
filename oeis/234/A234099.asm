@@ -8,6 +8,7 @@ pow $2,3
 lpb $2
   sub $2,4
   mov $3,$1
+  add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
   dif $3,2
   gcd $3,4

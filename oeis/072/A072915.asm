@@ -2,6 +2,9 @@
 ; Submitted by Conan
 ; 9,8,0,6,6,5,0,0
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $3,1
