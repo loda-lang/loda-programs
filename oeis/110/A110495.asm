@@ -8,6 +8,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,263922 ; Highest exponent in prime factorization of n-th central binomial coefficient.
+  add $3,1
   seq $3,85238 ; Sort the numbers 2^i and 3^j. Then a(n) is the exponent of the n-th term.
   equ $3,1
   sub $0,$3

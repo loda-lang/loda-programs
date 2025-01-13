@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,6,7,10,11,13,16
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $2,$0
 lpb $0

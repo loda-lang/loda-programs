@@ -1,22 +1,23 @@
 ; A036711: a(n)=number of Gaussian integers z=a+bi satisfying |z|<=n+1/2, a>0, b>=0.
-; Submitted by Josemi
+; Submitted by Aurum
 ; 0,2,5,9,17,24,34,44,56,73,87,105,122,144,166,187,215,243,271,300,328,364,399,435,471,513,554,594,640,683,733,781,828,880,936,992,1049,1105,1167,1226,1292,1354,1420,1489,1555,1627,1696
 
-mov $3,3
 mul $0,2
+mov $2,0
+mov $1,0
+mov $4,3
 add $0,1
 pow $0,2
 div $0,4
 add $0,3
 lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  mov $5,$2
-  nrt $5,2
-  add $1,$5
-  mov $3,1
-  add $3,$4
-  add $4,2
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  nrt $3,2
+  mov $4,1
+  add $4,$1
+  add $1,2
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2

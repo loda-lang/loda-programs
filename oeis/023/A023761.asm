@@ -1,16 +1,28 @@
 ; A023761: Nialpdromes: digits in base 5 are in nonincreasing order.
-; Submitted by [AF>Libristes] nico8313
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,1,2,3,4,5,6,10,11,12,15,16,17,18,20,21,22,23,24,25,30,31,50,55,56,60,61,62,75,80,81,85,86,87,90,91,92,93,100,105,106,110,111,112,115,116,117,118,120,121,122,123,124,125,150,155,156,250,275,280,281,300,305,306,310,311,312,375,400,405,406,425,430,431,435,436,437,450,455,456
 
 #offset 1
 
 sub $0,1
 mov $2,$0
-pow $2,2
+pow $2,3
 lpb $2
+  mov $5,0
+  mov $7,0
   mov $3,$1
   add $3,1
-  seq $3,37846 ; a(n)=Sum{d(i-1)-d(i): d(i)<d(i-1), i=1,...,m}, where Sum{d(i)*5^i: i=0,1,...,m} is the base 5 representation of n.
+  lpb $3
+    mul $3,2
+    mov $6,$3
+    mod $6,10
+    div $3,10
+    sub $5,$6
+    max $7,$5
+    mov $5,$7
+    add $5,$6
+  lpe
+  mov $3,$7
   mul $3,$0
   equ $3,0
   sub $0,$3

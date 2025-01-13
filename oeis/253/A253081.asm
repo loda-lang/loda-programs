@@ -1,14 +1,17 @@
 ; A253081: Partial sums of A246029.
 ; Submitted by Science United
 ; 1,3,5,8,10,14,17,22,24,28,32,38,41,47,52,59,61,65,69,75,79,87,93,103,106,112,118,127,132,142,149,160,162,166,170,176,180,188,194,204,208,216,224,236,242,254,264,278,281,287,293,302,308,320,329,344,349,359,369,384,391,405,416,429,431,435,439,445,449,457,463,473,477,485,493,505,511,523,533,547
-; Formula: a(n) = a(n-1)+A319626(A278159(n)-1), a(0) = 1
+; Formula: a(n) = a(n-1)+truncate(A278159(n)/A064989(A278159(n))), a(0) = 1
 
 mov $1,1
 lpb $0
   mov $2,$0
   seq $2,278159 ; Run length transform of primorials, A002110.
-  sub $2,1
-  seq $2,319626 ; Primorial deflation of n (numerator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the numerator of g(n).
+  mov $4,$2
+  seq $2,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $3,$2
+  mov $2,$4
+  div $2,$3
   sub $0,1
   add $1,$2
 lpe

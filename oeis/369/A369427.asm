@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,368885 ; The number of unitary divisors of n that are squares of a squarefree number (A062503).
 lpb $0
   dif $0,2

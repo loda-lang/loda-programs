@@ -16,7 +16,7 @@ lpb $0
     mov $7,$4
     trn $7,1
     seq $7,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
-    cmp $7,$8
+    equ $7,$8
     mov $9,10
     add $9,$5
     mov $10,$0

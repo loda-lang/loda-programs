@@ -4,7 +4,7 @@
 
 mov $1,$0
 mov $2,6
-cmp $2,$0
+equ $2,$0
 add $0,$2
 div $1,2
 add $1,$0

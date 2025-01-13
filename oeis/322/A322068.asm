@@ -1,36 +1,14 @@
 ; A322068: a(n) = (1/2)*Sum_{p prime <= n} floor(n/p) * floor(1 + n/p).
-; Submitted by Skillz
+; Submitted by marianob [marche]
 ; 0,0,1,2,4,5,10,11,15,18,25,26,36,37,46,54,62,63,78,79,93,103,116,117,137,142,157,166,184,185,216,217,233,247,266,278,308,309,330,346,374,375,416,417,443,467,492,493,533,540,575,595,625,626,671,687,723,745
 
-mov $9,$0
-mov $7,$0
-lpb $7
-  sub $7,1
-  mov $0,$9
-  sub $0,$7
-  mov $1,0
-  mov $2,2
-  mov $5,1
-  mov $6,10
-  lpb $0
-    mov $3,$0
-    lpb $3
-      mov $4,$0
-      mod $4,$2
-      neq $4,0
-      add $2,1
-      sub $3,$4
-      add $6,6
-    lpe
-    div $0,$2
-    lpb $6
-      mod $6,5
-      mov $4,$0
-      mul $4,$5
-      add $1,$4
-    lpe
-    mul $5,$2
-  lpe
-  add $8,$1
+mov $1,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$1
+  sub $0,$3
+  seq $0,69359 ; a(n) = n * Sum_{p|n} 1/p where p are primes dividing n.
+  add $2,$0
 lpe
-mov $0,$8
+mov $0,$2
