@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,73302 ; Indices of prime digits (2, 3, 5, 7) in the decimal expansion of e.
   mov $2,$3
   mul $2,$0

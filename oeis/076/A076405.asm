@@ -1,13 +1,22 @@
 ; A076405: Next perfect power having the same least root of n-th perfect power, A001597.
 ; Submitted by scole
 ; 1,8,16,27,32,125,81,64,216,343,128,243,1000,1331,625,256,1728,2197,2744,1296,3375,729,512,4913,5832,2401,6859,8000,9261,10648,1024,12167,13824,3125,17576,2187,21952,24389,27000,29791,10000,2048,35937,39304,42875,7776,14641,50653,54872,59319,64000,68921,20736,74088,79507,85184,91125,4096,97336,6561,28561,103823,110592,16807,125000,132651,140608,38416,148877,157464,166375,15625,175616,185193,195112,50625,205379,216000,226981,238328
-; Formula: a(n) = A052410(A001597(n+1))*(A001597(n+1)-1)+A052410(A001597(n+1))
+; Formula: a(n) = gcd(A175070(A001597(n)-1),A001597(n))*(A001597(n)-1)+gcd(A175070(A001597(n)-1),A001597(n))
 
-add $0,1
+#offset 1
+
 seq $0,1597 ; Perfect powers: m^k where m > 0 and k >= 2.
 mov $1,$0
-seq $1,52410 ; Write n = m^k with m, k integers, k >= 1, then a(n) is the smallest possible choice for m.
+sub $1,1
+mov $3,$0
+mov $4,$1
+mov $5,$1
+seq $1,175070 ; a(n) is the sum of perfect divisors of n - n, where a perfect divisor of n is a divisor d such that d^k = n for some k >= 1.
+add $5,$1
+mov $1,$5
+sub $1,$4
+mov $2,$1
+gcd $2,$0
 sub $0,1
-mul $0,$1
-add $1,$0
-mov $0,$1
+mul $0,$2
+add $0,$2

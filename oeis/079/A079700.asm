@@ -2,7 +2,8 @@
 ; Submitted by Matthias Lehmkuhl
 ; 1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,2,1,1,1,3,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,3,1,1,1,1,1,2,1,1,1,1,4,2,1,1,1,1,1,1,2,1,1,1,2,1,1,3,1,1,1,1,1,2,1,1,2,1,1,1,2,1
 
-add $0,1
+#offset 1
+
 seq $0,5277 ; Nontotients: even numbers k such that phi(m) = k has no solution.
 lpb $0
   dif $0,2

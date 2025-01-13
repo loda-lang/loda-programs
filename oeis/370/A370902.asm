@@ -17,7 +17,6 @@ lpb $1
   gcd $5,$6
   mov $3,$6
   div $3,$5
-  sub $3,1
   seq $3,78310 ; a(n) = n*rad(n) + 1, where rad = A007947 (squarefree kernel).
   sub $3,1
   add $2,$3

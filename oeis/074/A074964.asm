@@ -2,6 +2,9 @@
 ; Submitted by biodoc
 ; 1,2,3,4,6,8,12,18,24,60
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $3,1

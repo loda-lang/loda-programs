@@ -10,6 +10,7 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
   mul $2,$1
   sub $2,1

@@ -6,6 +6,7 @@ trn $0,1
 mov $2,$0
 lpb $0
   mov $0,2
+  add $2,1
   seq $2,76225 ; Counts of the maximum value in n-th row of A076221.
 lpe
 mov $0,$2

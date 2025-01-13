@@ -8,6 +8,7 @@ mov $3,$0
 lpb $3
   mod $3,2
   mov $2,$1
+  add $2,1
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
   add $1,$2
   add $3,$2

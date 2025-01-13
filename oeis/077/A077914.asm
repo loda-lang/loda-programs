@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 16,18,20,22,26,28,32,62,68
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mul $2,$0
 sub $2,1
@@ -13,7 +16,7 @@ sub $3,15359
 mov $6,$0
 sub $6,$3
 mov $7,$6
-cmp $7,0
+equ $7,0
 mov $5,$0
 mul $5,5
 add $6,$7

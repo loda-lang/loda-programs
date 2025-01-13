@@ -11,6 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,77373 ; Fibonacci numbers whose external digits as well as internal digits form a Fibonacci number.
     mul $7,$4
     mov $9,10

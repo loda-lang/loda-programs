@@ -12,6 +12,7 @@ lpb $2
   add $4,$1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,78971 ; Numbers n such that C(4n,n)/(3n+1) (A002293) is not divisible by 4.
   seq $0,253563 ; Permutation of natural numbers: a(0) = 1, a(1) = 2; after which, a(2n) = A253560(a(n)), a(2n+1) = A253550(a(n)).
   add $1,$0

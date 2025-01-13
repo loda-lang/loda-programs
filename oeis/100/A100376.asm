@@ -10,6 +10,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   add $0,$1
+  add $0,1
   seq $0,78897 ; Number of times the greatest prime factor of n is a factor in all numbers <=n; a(1)=1.
   sub $0,$2
   mov $4,1

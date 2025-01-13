@@ -13,7 +13,6 @@ lpb $2
   seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
   sub $3,$5
-  sub $3,1
   seq $3,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
   equ $3,1
   sub $0,$3

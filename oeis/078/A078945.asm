@@ -13,7 +13,7 @@ lpb $0
     sub $4,1
     mov $9,10
     add $9,$5
-    cmp $7,$8
+    equ $7,$8
     div $7,2
     add $7,$0
     add $7,$4

@@ -10,6 +10,7 @@ add $2,5
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,76649 ; Number of digits required to write the prime factors of n.
   sub $3,1
   equ $3,6

@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,74822 ; Primes p such that p + 4 is prime and p == 9 (mod 10).
   mov $5,$3
   add $5,3

@@ -9,16 +9,17 @@ pow $2,3
 lpb $2
   sub $2,18
   mov $3,$1
+  add $3,1
   seq $3,75254 ; a(n) = n + (sum of prime factors of n taken with repetition).
   mod $3,3
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

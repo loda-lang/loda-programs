@@ -8,12 +8,13 @@ mov $4,$0
 lpb $0
   sub $4,2
   mov $5,$3
+  add $5,1
   seq $5,76259 ; Gaps between squarefree numbers: a(n) = A005117(n+1) - A005117(n).
   sub $0,$5
   add $3,1
   mov $6,$0
   max $6,1
-  cmp $6,$0
+  equ $6,$0
 lpe
 mul $4,$6
 add $4,1
@@ -23,6 +24,6 @@ add $0,$3
 sub $0,1
 mov $1,$3
 div $2,$0
-cmp $2,0
+equ $2,0
 add $0,$2
 sub $0,1

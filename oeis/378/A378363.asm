@@ -5,6 +5,7 @@
 mov $1,$0
 lpb $1
   mov $2,$1
+  add $2,1
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
   sub $1,$2
 lpe

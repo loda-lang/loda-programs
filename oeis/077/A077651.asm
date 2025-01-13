@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,4,2,6,4,6,4,1,4,1,6,8,8,1,6,1,8,1,1,2,8,2,1,1,1,2,8,3,1,2,1,2,1,3,1,2,1,4,1,4,2,2,2,4,1,4,2,3,2,5,1,4,2,3,2,5,1,6,3,3,3,4,2,6,3,4,2,7,2,7,3,4,3,6,2,7,3
 
+#offset 1
+
+sub $0,1
 seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 add $0,1
 lpb $0

@@ -5,6 +5,7 @@
 mov $1,6
 lpb $0
   trn $0,2
+  add $0,1
   seq $0,76271 ; a(1) = 1, a(2) = 2, and for n > 2, a(n) = a(n-1) + gpf(a(n-1)), where gpf = greatest prime factor = A006530.
   mov $2,1
   lpb $1

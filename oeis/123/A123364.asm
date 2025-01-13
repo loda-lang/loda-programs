@@ -11,7 +11,6 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   add $5,2
-  sub $3,1
   seq $3,78359 ; Number of ways to write n as sum of a positive square and a positive cube.
   sub $0,$3
   add $1,1

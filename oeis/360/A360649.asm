@@ -8,6 +8,7 @@ mov $2,7261
 lpb $2
   sub $2,18
   mov $3,$1
+  add $3,1
   seq $3,79450 ; a(n) = 2^(n-1)*u(n) where u(1)=1 and u(n) = frac(3/2*u(n-1)) + 1.
   mod $3,3
   gcd $3,4

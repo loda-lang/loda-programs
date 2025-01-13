@@ -1,10 +1,11 @@
 ; A074288: n-th term of the Kolakoski sequence (A000002) multiplied by the n-th partial sum.
 ; Submitted by PDW
 ; 1,6,10,6,7,18,10,24,28,15,34,38,20,21,46,24,25,54,58,30,64,33,34,72,37,78,82,42,43,90,46,47,98,50,104,108,55,114,118,60,61,126,64,132,136,69,142,72,73,150,76,77,158,162,82,168,172,87,88,180,91,186,190,96,196,200,101,102,208,105,106,216,109,222,226,114,232,117,118,240
-; Formula: a(n) = e(n+1)*d(n+1), b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -2, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = c(n-1)*(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2), c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 2, d(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, d(3) = 2, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+e(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, e(3) = 5, e(2) = 3, e(1) = 1, e(0) = 0
+; Formula: a(n) = e(n)*d(n), b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -2, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = c(n-1)*(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2), c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 2, d(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, d(3) = 2, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = -2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+e(n-1)+truncate((-c(n-1)+b(n-1))/2)+2, e(3) = 5, e(2) = 3, e(1) = 1, e(0) = 0
+
+#offset 1
 
 mov $2,2
-add $0,1
 lpb $0
   sub $0,1
   sub $1,$2

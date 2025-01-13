@@ -20,6 +20,7 @@ lpb $2
       add $0,$7
       sub $0,1
       div $0,4
+      add $0,1
       seq $0,77445 ; Numbers k such that (k^2 - 8)/2 is a square.
       mov $8,$7
       lpb $8

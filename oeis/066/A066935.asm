@@ -15,6 +15,7 @@ lpb $2
   seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$6
   add $3,1
+  add $5,1
   seq $5,76191 ; First differences of A001222.
   gcd $5,$3
   div $3,$5

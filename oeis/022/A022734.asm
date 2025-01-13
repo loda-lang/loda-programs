@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,78308 ; a(n) = Sum_{d divides n} d^(n/d + 1).
     mul $7,10
     mov $9,10

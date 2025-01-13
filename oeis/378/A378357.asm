@@ -11,6 +11,7 @@ lpb $3
   mul $3,$0
   mod $3,2
   mov $2,$4
+  add $2,1
   seq $2,75802 ; Characteristic function of perfect powers, A001597.
   add $4,$2
 lpe

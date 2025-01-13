@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,74940 ; Numbers having at least one 2 in their ternary representation.
   seq $3,7089 ; Numbers in base 3.
   mov $5,$3

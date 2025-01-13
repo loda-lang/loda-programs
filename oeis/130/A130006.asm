@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $3,2
+  sub $3,1
   seq $3,75255 ; a(n) = n - (sum of primes factors of n (with repetition)).
   trn $3,1
   mov $5,$3

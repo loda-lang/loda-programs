@@ -2,6 +2,9 @@
 ; Submitted by fzs600
 ; 1,1,2,3,5,11,131,39916931
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $4,$0
 add $4,1

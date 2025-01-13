@@ -11,6 +11,7 @@ lpb $1
   sub $1,1
   mov $0,$4
   sub $0,$1
+  add $0,1
   seq $0,76191 ; First differences of A001222.
   mov $2,$0
   gcd $2,$0

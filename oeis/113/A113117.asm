@@ -8,6 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$2
   sub $0,$1
+  add $0,1
   seq $0,75365 ; Smallest k such that (n+1)(n+2)...(n+k) is divisible by the product of all the primes up to n.
   sub $2,1
   add $2,$0

@@ -14,7 +14,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $1,$0
-  sub $0,1
   seq $0,75802 ; Characteristic function of perfect powers, A001597.
   mul $0,$3
   mul $1,$0

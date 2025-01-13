@@ -18,7 +18,11 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,87135 ; Number of positive numbers m such that A073642(m) = n.
+  mov $6,0
+  pow $6,$0
+  seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
+  mul $0,2
+  sub $0,$6
   mul $0,$4
   add $1,$0
 lpe

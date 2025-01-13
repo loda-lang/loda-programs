@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $3,$4
+    add $3,1
     seq $3,78308 ; a(n) = Sum_{d divides n} d^(n/d + 1).
     add $5,1
     add $6,$3

@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,78880 ; The sequence starting with 2 that equals its own run length sequence.
   sub $0,2
   add $1,$2

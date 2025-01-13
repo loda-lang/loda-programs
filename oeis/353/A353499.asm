@@ -4,6 +4,7 @@
 
 mov $2,$0
 seq $2,353498 ; a(n) = 1 if n > 1 and the 2-adic valuation of phi(n) does not exceed the 2-adic valuation of n-1, otherwise 0.
+add $0,1
 seq $0,78771 ; a(n) = A008475(n) - A001414(n).
 mov $1,$0
 lpb $1

@@ -1,9 +1,17 @@
 ; A076242: Remainder when 3rd order prime A038580(n) is divided by n-th prime=A000040(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,1,3,6,10,5,8,17,19,27,31,38,35,28,39,17,17,10,38,68,63,13,55,48,4,74,100,37,29,47,121,115,136,105,28,128,109,159,90,114,31,151,4,86,108,81,147,149,189,185,119,231,166,88,238,197,233,64,186,258,111,128,260,308,242,48,180,300,308,352,348,73,58,312,55,378,292,398,65
-; Formula: a(n) = A076241(A000040(n+1)-1)
+; Formula: a(n) = -A000040(n)*truncate(A000040(A000040(A000040(n)+1)+1)/A000040(n))+A000040(A000040(A000040(n)+1)+1)
 
-add $0,1
+#offset 1
+
 seq $0,40 ; The prime numbers.
 sub $0,1
-seq $0,76241 ; Remainder when 2nd order prime pp(n)=A006450(n) is divided by n.
+mov $1,$0
+add $0,1
+add $1,2
+seq $1,40 ; The prime numbers.
+add $1,1
+seq $1,40 ; The prime numbers.
+mod $1,$0
+mov $0,$1

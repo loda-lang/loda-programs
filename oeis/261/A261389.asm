@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,76577 ; Sum of squares of divisors d of n such that n/d is odd.
     mul $7,3
     mov $9,10

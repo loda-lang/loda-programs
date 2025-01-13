@@ -11,8 +11,15 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
-  add $3,4
-  seq $3,62389 ; a(n) = floor( (2n-1)*Pi/2 ).
+  mul $3,2
+  add $3,7
+  mov $6,97
+  mul $6,$3
+  div $6,113
+  mul $3,4
+  sub $3,1
+  sub $3,$6
+  div $3,2
   sub $3,12
   mov $5,$3
   div $5,2

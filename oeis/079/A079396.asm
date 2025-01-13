@@ -1,9 +1,10 @@
 ; A079396: Ramanujan's tau function squared applied to primes.
 ; Submitted by Landjunge
 ; 576,63504,23328900,280361536,285809990544,333781196644,47691924412356,113665876416400,347571590865984,16488262627956900,2792400404276224,33201691798862596,94938206778275364,293289874501264,7221841938953462016,2547393791118267204,26927835455229987600
-; Formula: a(n) = A249688(A000040(n+1)-1)
+; Formula: a(n) = A000594(A000040(n))^2
 
-add $0,1
+#offset 1
+
 seq $0,40 ; The prime numbers.
-sub $0,1
-seq $0,249688 ; a(n) = n-th Ramanujan number A000594(n), squared.
+seq $0,594 ; Ramanujan's tau function (or Ramanujan numbers, or tau numbers).
+pow $0,2

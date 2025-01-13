@@ -8,5 +8,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,76649 ; Number of digits required to write the prime factors of n.
 mov $0,$1

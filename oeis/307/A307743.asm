@@ -16,6 +16,7 @@ lpb $1
   sub $0,1
   mul $4,$0
   mov $0,$4
+  add $0,1
   seq $0,73933 ; Number of terms in n-th row of triangle in A073932.
   sub $0,1
   add $2,$0

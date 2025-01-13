@@ -9,7 +9,6 @@ equ $0,1
 lpb $2
   sub $2,1
   mov $3,$1
-  sub $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   add $1,$0
   add $1,1

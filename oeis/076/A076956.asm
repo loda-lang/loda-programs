@@ -4,8 +4,6 @@
 
 #offset 2
 
-sub $0,1
-sub $0,1
 seq $0,76957 ; Smallest k such that there are exactly n primes strictly between k^2 and (k+1)^2.
 mov $1,$0
 lpb $0

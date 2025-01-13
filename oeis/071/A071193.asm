@@ -9,6 +9,7 @@ mov $2,2
 lpb $2
   sub $2,1
   mov $1,$0
+  add $1,1
   seq $1,76191 ; First differences of A001222.
   equ $1,0
   sub $0,$1

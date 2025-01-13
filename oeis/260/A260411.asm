@@ -9,6 +9,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,78359 ; Number of ways to write n as sum of a positive square and a positive cube.
   add $4,1
   add $1,$2

@@ -8,5 +8,5 @@ lpb $1
   mov $1,6
   add $0,1
 lpe
-add $0,3
+add $0,4
 seq $0,78138 ; Primes which can be written as sum of squares > 1.

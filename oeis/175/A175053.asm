@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   add $3,$2
+  add $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   sub $0,$3
   mov $1,$0

@@ -11,6 +11,7 @@ pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,78359 ; Number of ways to write n as sum of a positive square and a positive cube.
   equ $3,0
   sub $0,$3

@@ -1,6 +1,9 @@
 ; A076523: Maximal number of halving lines for 2n points in plane.
 ; 1,3,6,9,13,18,22,27,33,38,44,51,57
 
+#offset 1
+
+sub $0,1
 mov $6,$0
 mov $3,$0
 add $3,1

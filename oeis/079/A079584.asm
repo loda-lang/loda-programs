@@ -7,9 +7,7 @@ lpb $0
   mul $1,$0
   sub $0,1
 lpe
+mov $2,$1
+dgs $2,2
 mov $0,$1
-mov $2,$0
-dis $2,2
 mov $0,$2
-mul $0,3
-div $0,3

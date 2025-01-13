@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,78191 ; a(n) = concatenation of n n times divided by n.
   add $3,$2
   sub $0,1

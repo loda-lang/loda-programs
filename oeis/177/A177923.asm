@@ -13,6 +13,7 @@ lpb $0
   mov $5,$1
   lpb $5
     mov $6,$5
+    add $6,1
     seq $6,78701 ; Least odd prime factor of n, or 1 if no such factor exists.
     div $5,$6
   lpe

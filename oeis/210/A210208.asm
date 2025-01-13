@@ -10,6 +10,7 @@ lpb $2
   seq $3,27750 ; Triangle read by rows in which row n lists the divisors of n.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,79275 ; Number of divisors of n that are semiprimes with distinct factors.
   equ $3,0
   sub $0,$3

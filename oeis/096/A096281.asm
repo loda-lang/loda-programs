@@ -7,6 +7,7 @@ mov $3,2
 lpb $3
   div $3,2
   mov $0,$2
+  add $0,1
   seq $0,77800 ; List of twin primes {p, p+2}.
   add $1,32
   add $1,$0

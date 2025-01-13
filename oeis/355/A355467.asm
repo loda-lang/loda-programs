@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $0,$3
+  add $0,1
   seq $0,76191 ; First differences of A001222.
   add $2,$1
   add $2,$0

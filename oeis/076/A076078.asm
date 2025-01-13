@@ -2,8 +2,10 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,2,4,2,10,2,8,4,10,2,44,2,10,10,16,2,44,2,44,10,10,2,184,4,10,8,44,2,218,2,32,10,10,10,400,2,10,10,184,2,218,2,44,44,10,2,752,4,44,10,44,2,184,10,184,10,10,2,3748,2,10,44,64,10,218,2,44,10,218,2,3392,2,10,44,44,10,218,2,752
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -17,7 +19,12 @@ lpb $2
   mov $5,0
   sub $0,1
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  seq $0,100587 ; Number of nonempty subsets of divisors of n.
+  add $0,1
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $6,2
+  pow $6,$0
+  sub $6,1
+  mov $0,$6
   mul $0,$4
   add $1,$0
 lpe

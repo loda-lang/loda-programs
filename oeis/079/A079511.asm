@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 1,3,5,7,10,13,16,19,22,25,29,32,37
 
+#offset 2
+
+sub $0,2
 mul $0,2
 lpb $0
   mov $2,$0

@@ -11,6 +11,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,78880 ; The sequence starting with 2 that equals its own run length sequence.
   add $3,$4
   gcd $3,2

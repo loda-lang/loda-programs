@@ -8,6 +8,7 @@ sub $0,1
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,77652 ; Primes whose initial and terminal decimal digits are identical.
   sub $0,1
   mul $1,$2

@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $5,$4
+    add $5,1
     seq $5,76835 ; Coefficients in expansion of Eisenstein series -q*E'_2.
     add $1,$5
     trn $4,$0

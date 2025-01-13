@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,76608 ; Number of nonprimes k < n such that also n-k is not a prime.
     mov $9,10
     add $9,$5

@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,76361 ; Numbers k such that d(sigma(k)) = sigma(d(k)).
   sub $3,1
   add $0,1

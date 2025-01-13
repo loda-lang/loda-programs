@@ -11,6 +11,7 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,76078 ; a(n) is the number of nonempty sets of distinct positive integers that have a least common multiple of n.
   sub $3,$1
   max $3,0

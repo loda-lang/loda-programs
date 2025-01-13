@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,78703 ; Number of ways of subtracting twice a triangular number from a perfect square to obtain the integer n.
     sub $7,1
     equ $7,0

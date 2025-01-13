@@ -11,6 +11,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,77373 ; Fibonacci numbers whose external digits as well as internal digits form a Fibonacci number.
   add $4,2
   add $1,$2

@@ -1,8 +1,11 @@
 ; A076511: Numerator of cototient(n)/totient(n).
 ; Submitted by Science United
 ; 0,1,1,1,1,2,1,1,1,3,1,2,1,4,7,1,1,2,1,3,3,6,1,2,1,7,1,4,1,11,1,1,13,9,11,2,1,10,5,3,1,5,1,6,7,12,1,2,1,3,19,7,1,2,3,4,7,15,1,11,1,16,3,1,17,23,1,9,25,23,1,2,1,19,7,10,17,9,1,3
-; Formula: a(n) = truncate((-A109606(n)+n)/gcd(-A109606(n)+n,n+1))
+; Formula: a(n) = truncate((-A109606(n-1)+n-1)/gcd(-A109606(n-1)+n-1,n))
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 mov $1,$0

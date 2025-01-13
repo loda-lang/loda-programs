@@ -10,6 +10,7 @@ lpb $1
   trn $0,1
   seq $0,253885 ; Permutation of even numbers: a(n) = A003961(n+1) - 1.
   max $0,1
+  add $0,1
   seq $0,78310 ; a(n) = n*rad(n) + 1, where rad = A007947 (squarefree kernel).
   sub $0,1
 lpe

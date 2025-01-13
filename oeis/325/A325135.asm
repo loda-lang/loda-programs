@@ -13,7 +13,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  sub $3,1
   seq $3,79067 ; Number of primes less than greatest prime factor of n but not dividing n.
   lpb $0
     dif $2,$0

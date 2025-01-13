@@ -5,6 +5,7 @@
 mov $1,$0
 add $0,1
 lpb $1
+  add $1,1
   seq $1,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
   add $0,$1
   sub $1,1

@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,76567 ; Greatest prime divisor of 4n+6 (sum of four successive integers).
   add $3,2
   div $3,2

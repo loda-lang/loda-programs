@@ -2,6 +2,9 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 2,3,5,13,37,61,73,157,193,277,313,397,421,457,541,613,661,673,733,757,877,997,1093,1153,1201,1213,1237,1321,1381,1453,1621,1657,1753,1873,1933,1993,2017,2137,2341,2473,2557,2593,2797,2857,2917,3061,3217,3253
 
+#offset 1
+
+sub $0,1
 equ $1,$0
 trn $0,1
 equ $2,$0
@@ -12,7 +15,8 @@ pow $4,2
 lpb $4
   max $5,$7
   add $5,1
-  seq $5,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  seq $5,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$5
   add $3,6
   mov $6,$0

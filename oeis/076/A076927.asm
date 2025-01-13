@@ -1,9 +1,10 @@
 ; A076927: a(n) = A076926(n)/n.
 ; Submitted by Jamie Morken(w1)
 ; 2,3,10,105,462,5005,72930,4849845,74364290,646969323,18232771830,1236789689135,23403866425170,934482952262145,40992652172566094,16294579238595022365,113103550009071331710,19548063559901161830545
-; Formula: a(n) = truncate(truncate(A102476(n+2)/4)/gcd(n+1,truncate(A102476(n+2)/4)))
+; Formula: a(n) = truncate(truncate(A102476(n+1)/4)/gcd(n,truncate(A102476(n+1)/4)))
 
-add $0,1
+#offset 1
+
 mov $1,$0
 add $0,1
 seq $0,102476 ; Least modulus with 2^n square roots of 1.

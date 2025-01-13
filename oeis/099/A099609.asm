@@ -9,6 +9,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   div $2,2
+  add $2,1
   seq $2,77800 ; List of twin primes {p, p+2}.
   sub $2,3
   mov $0,1

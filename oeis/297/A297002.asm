@@ -16,7 +16,6 @@ lpb $0
   lpe
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,73881 ; a(n) = smallest number m (obviously prime) such that pi(m) = 2*pi(n).
   lpb $0
     dif $0,$2

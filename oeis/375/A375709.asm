@@ -7,6 +7,7 @@ mov $2,$0
 add $2,161
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,78147 ; First differences of sequence of nonsquarefree numbers, A013929.
   equ $3,1
   sub $0,$3

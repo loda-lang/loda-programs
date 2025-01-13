@@ -1,7 +1,10 @@
 ; A076839: A simple example of the Lyness 5-cycle: a(1) = a(2) = 1; a(n) = (a(n-1)+1)/a(n-2) (for n>2).
 ; 1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2,1,1,2,3,2
-; Formula: a(n) = binomial(n,2)^3-5*truncate((binomial(n,2)^3)/5)+1
+; Formula: a(n) = binomial(n-1,2)^3-5*truncate((binomial(n-1,2)^3)/5)+1
 
+#offset 1
+
+sub $0,1
 bin $0,2
 pow $0,3
 mod $0,5

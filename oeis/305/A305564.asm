@@ -21,6 +21,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,76078 ; a(n) is the number of nonempty sets of distinct positive integers that have a least common multiple of n.
   mul $0,$4
   add $1,$0

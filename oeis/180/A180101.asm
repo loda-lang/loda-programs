@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,2
+  add $1,1
   seq $1,76272 ; Largest prime factor of A076271(n): A006530(A076271(n)).
   mov $0,0
 lpe

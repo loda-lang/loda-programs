@@ -8,7 +8,7 @@ mov $3,$0
 lpb $0
   sub $0,1
   mov $2,$1
-  add $2,1
+  add $2,2
   seq $2,78929 ; Least k > 0 such that A000002(n+k) = A000002(n).
   add $1,$2
 lpe

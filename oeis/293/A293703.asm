@@ -7,15 +7,16 @@ mov $2,$0
 add $2,10
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,76272 ; Largest prime factor of A076271(n): A006530(A076271(n)).
   div $3,6
   dif $3,2
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   sub $2,$3
   mul $2,$4
   sub $2,1

@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
   trn $3,1
   add $3,1

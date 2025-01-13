@@ -13,6 +13,7 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,78458 ; Total number of factors in a factorization of n into Gaussian primes.
   equ $3,2
   sub $0,$3

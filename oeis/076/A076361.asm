@@ -2,8 +2,11 @@
 ; Submitted by Landjunge
 ; 1,3,44,49,66,68,70,76,99,121,124,147,153,164,169,170,171,172,243,245,268,275,279,361,363,387,425,475,507,529,564,603,620,644,652,724,775,841,844,845,873,891,927,948,961,964,1075,1083,1132,1324,1348,1377,1395,1449,1467,1539,1573,1587,1629,1675,1732,1740,1805,1813,1824,1836,1849,1899,2092,2169,2188,2209,2308,2404,2425,2511,2523,2547,2738,2764
 
+#offset 1
+
 mov $2,$0
-add $2,10
+sub $0,1
+add $2,9
 pow $2,2
 lpb $2
   mov $5,$1
@@ -12,7 +15,8 @@ lpb $2
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
   add $3,1
-  seq $3,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $3,$5
   equ $3,0
   sub $0,$3

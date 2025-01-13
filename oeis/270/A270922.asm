@@ -16,6 +16,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,78306 ; a(n) = Sum_{d divides n} (-1)^(n/d+1)*d^2.
     mul $7,$11
     mul $7,$$9

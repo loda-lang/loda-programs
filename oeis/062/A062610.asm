@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,76608 ; Number of nonprimes k < n such that also n-k is not a prime.
 mov $1,$0
 mov $2,1

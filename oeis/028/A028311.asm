@@ -11,6 +11,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
+  add $3,1
   seq $3,76713 ; Harshad (Niven) triangular numbers: triangular numbers which are divisible by the sum of their digits.
   gcd $3,$5
   equ $3,1

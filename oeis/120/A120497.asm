@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  sub $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   neq $3,0
   sub $0,$3

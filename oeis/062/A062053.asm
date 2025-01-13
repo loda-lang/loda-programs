@@ -11,6 +11,7 @@ add $2,3
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,78719 ; Number of odd terms among n, f(n), f(f(n)), ...., 1 for the Collatz function (that is, until reaching "1" for the first time), or -1 if 1 is never reached.
   sub $3,3
   equ $3,0

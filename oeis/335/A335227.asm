@@ -11,6 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,78471 ; Sum of all odd divisors of all positive integers <= n.
     mov $9,10
     add $9,$5

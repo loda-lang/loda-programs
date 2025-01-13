@@ -11,7 +11,6 @@ lpb $3
   add $0,1
   seq $0,40 ; The prime numbers.
   seq $0,13636 ; a(n) = n*nextprime(n).
-  sub $0,1
   seq $0,79715 ; a(n) = pi(n) - pi(sqrt(n)) + 1.
   mov $2,$3
   mul $2,$0

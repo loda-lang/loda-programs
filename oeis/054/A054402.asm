@@ -11,6 +11,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,78359 ; Number of ways to write n as sum of a positive square and a positive cube.
   trn $3,1
   min $3,1

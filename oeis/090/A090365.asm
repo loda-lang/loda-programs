@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   sub $1,1
+  add $0,1
   seq $0,74664 ; Number of algebraically independent elements of degree n in the algebra of symmetric polynomials in noncommuting variables.
   bin $1,$4
   mul $1,$0

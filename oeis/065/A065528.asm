@@ -12,7 +12,6 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   neq $3,0
   sub $0,$3

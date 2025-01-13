@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 19,23,29,41,43,47,53,59,61,67,83,89,103,109,127,137,139,163,173,193,197,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,317,331,349,367,379,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,571,577,587,593,599,601,607,613,617,619
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,10
@@ -11,7 +14,10 @@ lpb $2
   add $6,1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $5,$1
-  seq $5,210625 ; Least semiprime dividing digit reversal of n, or 0 if no such factor.
+  add $5,1
+  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  sub $5,1
+  seq $5,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.
   equ $5,0
   add $5,$6
   mov $3,$1

@@ -9,6 +9,7 @@ add $0,1
 pow $4,5
 lpb $4
   mov $5,$3
+  add $5,1
   seq $5,79612 ; Largest number m such that a^n == 1 (mod m) whenever a is coprime to m.
   gcd $5,$0
   add $3,1

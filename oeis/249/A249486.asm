@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,78762 ; Numbers n such that n + sigma(n) is prime.
   sub $3,1
   mov $5,$3

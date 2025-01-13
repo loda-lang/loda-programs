@@ -8,7 +8,8 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,75084 ; Number of composite numbers between n and 2n.
+  add $3,1
+  seq $3,75084 ; Number of composite numbers c with n <= c <= 2*n.
   add $1,1
   add $2,$3
   sub $2,$0

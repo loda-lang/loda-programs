@@ -11,6 +11,7 @@ add $2,3
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,75877 ; Powering the decimal digits of n (left-associative).
   sub $3,$1
   max $3,0

@@ -8,12 +8,13 @@ lpb $2
   mov $3,$1
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
   trn $3,1
+  add $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,74206 ; Kalmár's [Kalmar's] problem: number of ordered factorizations of n.
-  sub $3,1
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
   sub $0,$3
   add $1,1

@@ -5,10 +5,7 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $1,1
-add $0,1
 seq $0,76952 ; n-th power associated with A076951, or 0 if no such number exists.
 add $0,1
 div $0,$1

@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,76191 ; First differences of A001222.
   mov $5,$1
   seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).

@@ -8,6 +8,7 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,77648 ; Initial digits of prime numbers.
   sub $2,1
   equ $2,1

@@ -23,6 +23,7 @@ lpb $4
       mov $2,0
       mov $0,$3
       max $0,0
+      add $0,1
       seq $0,78159 ; a(n) = A055086(2^n).
       div $0,2
     lpe
