@@ -10,6 +10,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,80717 ; Let S(0) = 1; obtain S(k) from S(k-1) by applying 1 -> 2, 2 -> 31, 3 -> 332; sequence is S(0), S(1), S(2), ...
   equ $3,1
   sub $0,$3

@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
-  sub $3,1
   seq $3,82928 ; If n is prime, a(n) = n+1; if n is even, a(n) = n/2; otherwise a(n) = n.
   gcd $3,2
   sub $0,$3

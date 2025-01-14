@@ -9,6 +9,7 @@ lpb $0
   sub $1,2
   mov $2,$0
   max $2,0
+  add $2,4
   seq $2,82467 ; Least k>0 such that n-k and n+k are both primes.
 lpe
 mov $0,$2

@@ -9,5 +9,6 @@ dif $1,2
 mov $2,$0
 add $2,1
 gcd $2,$1
+add $0,1
 seq $0,82299 ; Greatest common divisor of n and its sum of prime factors (with repetition).
 mod $0,$2

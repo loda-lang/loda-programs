@@ -14,6 +14,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,81737 ; a(n) = (n-1)*10 + n-th decimal digit of Pi=3.14159...
     mov $3,0
     mov $4,$2

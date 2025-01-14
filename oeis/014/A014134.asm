@@ -10,6 +10,7 @@ add $2,9
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,82660 ; Number of ways n can be expressed as the sum of a square and a triangular number.
   equ $3,0
   sub $0,$3

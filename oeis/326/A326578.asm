@@ -13,6 +13,7 @@ lpb $4
   mov $7,$2
   gcd $7,$4
   bin $7,$2
+  add $2,1
   seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   mul $2,$6
   add $2,1

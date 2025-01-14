@@ -11,10 +11,12 @@ add $2,10
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,2
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   mov $3,$1
   add $3,1
   pow $3,2
+  add $3,2
   seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $3,$5
   equ $3,0

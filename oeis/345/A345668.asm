@@ -9,10 +9,9 @@ mul $3,2
 trn $3,1
 add $3,2
 lpb $3
-  sub $3,1
   mov $2,$3
   seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $3,1
+  sub $3,2
   add $3,$2
   add $3,$2
 lpe

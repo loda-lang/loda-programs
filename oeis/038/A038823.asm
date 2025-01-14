@@ -10,6 +10,7 @@ lpb $2
   add $0,$2
   mul $0,1000
   trn $0,2
+  add $0,1
   seq $0,82460 ; a(n) = pi(n) - a(n - 1) where pi(n) = A000720(n).
   add $0,1
   mov $1,$2

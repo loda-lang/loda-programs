@@ -11,5 +11,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
+add $1,1
 seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 mov $0,$1

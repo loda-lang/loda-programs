@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,81759 ; Numbers n such that 5n+6 is prime.
   mov $5,$3
   add $3,1

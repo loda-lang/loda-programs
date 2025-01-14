@@ -18,6 +18,7 @@ lpb $2
   seq $5,35197 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 15.
   add $5,$6
   mov $3,$1
+  add $3,1
   seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $3,$5
   equ $3,0

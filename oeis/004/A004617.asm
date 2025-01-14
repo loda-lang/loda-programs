@@ -24,7 +24,6 @@ lpb $2
       sub $7,$8
     lpe
     mov $7,$6
-    sub $7,1
     seq $7,83913 ; Number of divisors of n that are congruent to 3 modulo 10.
     lpb $3
       dif $3,$6

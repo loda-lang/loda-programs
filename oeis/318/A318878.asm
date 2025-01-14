@@ -8,5 +8,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
+add $1,1
 seq $1,82729 ; Least positive number that can be written using all divisors of n and the operations add and subtract.
 mov $0,$1

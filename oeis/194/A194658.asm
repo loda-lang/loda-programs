@@ -5,6 +5,7 @@
 #offset 1
 
 mov $1,$0
+add $1,1
 seq $1,80359 ; The smallest integer x > 0 such that the number of primes in (x/2, x] equals n.
 mov $2,$0
 lpb $2

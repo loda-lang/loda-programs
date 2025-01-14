@@ -1,10 +1,13 @@
 ; A081815: Decimal expansion of electron charge to mass quotient (negated)
 ; Submitted by USTL-FIL (Lille Fr)
-; 1,7,5,8,8,2,0,1,7
+; 1,7,5,8,8,2,0,0,0
+
+#offset 12
 
 mov $1,1
 mov $4,1
 mov $5,1
+sub $0,12
 lpb $0
   sub $0,1
   add $1,1

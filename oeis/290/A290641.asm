@@ -26,6 +26,7 @@ lpb $0
   pow $7,4
   lpb $7
     max $8,$6
+    add $8,1
     seq $8,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
     mul $8,2
     sub $5,$8

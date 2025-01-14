@@ -8,6 +8,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,80085 ; Number of factors of 2 in the factorial of the n-th prime, counted with multiplicity.
   sub $0,1
   mov $2,$3

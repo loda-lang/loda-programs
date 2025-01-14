@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,81881 ; Pack bins of size 1 sequentially with items of size 1/1, 1/2, 1/3, 1/4, ... . Sequence gives values of n for which 1/n starts a new bin.
   mov $2,$3
   mul $2,$0

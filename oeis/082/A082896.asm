@@ -2,6 +2,9 @@
 ; Submitted by [TA]crashtech
 ; 2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mul $2,2
 max $2,1
@@ -11,6 +14,7 @@ mov $4,$2
 pow $4,4
 lpb $4
   max $5,$3
+  add $5,1
   seq $5,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   mul $5,2
   sub $2,$5

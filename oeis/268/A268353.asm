@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,80076 ; Proth primes: primes of the form k*2^m + 1 with odd k < 2^m, m >= 1.
 div $0,2
 lpb $0

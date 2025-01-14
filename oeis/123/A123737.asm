@@ -5,6 +5,7 @@ mov $1,$0
 mov $2,1
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,83035 ; a(n) = floor(sqrt(2)*n)-2*floor(n/sqrt(2)).
   sub $0,1
   add $2,$3

@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,80765 ; Integers m such that m+1 divides lcm(1 through m).
   mul $0,177147
   mov $4,$3

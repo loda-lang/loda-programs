@@ -14,7 +14,7 @@ lpb $0
     mov $7,$4
     div $7,2
     seq $7,296135 ; {0->01}-transform of the Fibonacci word A003849.
-    cmp $7,$8
+    equ $7,$8
     mov $9,10
     add $9,$5
     min $10,$0

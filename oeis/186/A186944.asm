@@ -9,4 +9,5 @@ mov $1,$0
 equ $1,0
 add $0,$1
 max $0,0
+add $0,1
 seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).

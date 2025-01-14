@@ -14,9 +14,10 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,83399 ; Number of divisors of n that are not divisors of other divisors of n.
     div $7,3
-    cmp $7,$8
+    equ $7,$8
     mov $9,10
     add $9,$5
     dif $0,-2

@@ -13,6 +13,7 @@ lpb $3
   seq $6,51903 ; Maximum exponent in the prime factorization of n.
   add $6,1
   mov $4,$2
+  add $4,1
   seq $4,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $4,$6
   add $4,$3

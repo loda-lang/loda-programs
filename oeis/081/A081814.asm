@@ -2,6 +2,9 @@
 ; Submitted by Katja
 ; 3,6,7,0,4,8,2,9,6,7
 
+#offset 4
+
+sub $0,4
 mov $2,1
 mov $3,$0
 lpb $0

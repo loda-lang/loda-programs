@@ -12,6 +12,7 @@ lpb $5
   seq $3,51903 ; Maximum exponent in the prime factorization of n.
   add $3,1
   mov $2,$4
+  add $2,1
   seq $2,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $2,$3
   max $2,0

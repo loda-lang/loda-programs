@@ -1,8 +1,39 @@
 ; A082522: Numbers of the form p^(2^k) with p prime and k>0.
 ; Submitted by Christian Krause
 ; 4,9,16,25,49,81,121,169,256,289,361,529,625,841,961,1369,1681,1849,2209,2401,2809,3481,3721,4489,5041,5329,6241,6561,6889,7921,9409,10201,10609,11449,11881,12769,14641,16129,17161,18769,19321,22201,22801,24649,26569,27889,28561,29929,32041,32761,36481,37249,38809,39601,44521,49729,51529,52441,54289,57121,58081,63001,65536,66049,69169,72361,73441,76729,78961,80089,83521,85849,94249,96721,97969,100489,109561,113569,120409,121801
-; Formula: a(n) = A050376(n+1)^2
 
+#offset 1
+
+sub $0,1
+mov $1,0
+mov $2,$0
 add $0,1
-seq $0,50376 ; "Fermi-Dirac primes": numbers of the form p^(2^k) where p is prime and k >= 0.
+add $2,3
+pow $2,2
+lpb $2
+  mov $5,$1
+  seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
+  add $5,1
+  mod $5,2
+  mov $6,$1
+  seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$1
+  mov $3,$6
+  add $3,1
+  mul $5,$3
+  mov $3,$5
+  seq $3,209229 ; Characteristic function of powers of 2, cf. A000079.
+  sub $3,1
+  gcd $3,2
+  sub $0,$3
+  add $0,1
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1
+add $0,1
 pow $0,2

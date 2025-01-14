@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,184778 ; Numbers k such that 2k + floor(k*sqrt(2)) is prime.
+  add $3,1
   seq $3,80755 ; a(n) = ceiling(n*(1+1/sqrt(2))).
   mul $3,2
   sub $3,5

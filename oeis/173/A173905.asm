@@ -8,8 +8,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   max $3,$1
+  add $3,1
   seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   sub $0,1
   add $1,2

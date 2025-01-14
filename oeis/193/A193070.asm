@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,65764 ; Sum of divisors of square numbers.
-  sub $3,1
   seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$3
   add $1,2

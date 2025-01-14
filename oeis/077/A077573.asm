@@ -5,7 +5,6 @@
 #offset 1
 
 seq $0,40 ; The prime numbers.
-sub $0,1
 seq $0,84680 ; Order of 10 modulo n [i.e., least m such that 10^m = 1 (mod n)] or 0 when no such number exists.
 mul $0,2
 add $2,$0

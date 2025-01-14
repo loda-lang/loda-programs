@@ -1,13 +1,22 @@
 ; A082911: a(n) = prime(n+pi(n)) - prime(n) = A000040(n+A000720(n)) - A000040(n).
 ; Submitted by zombie67 [MM]
 ; 0,2,6,6,8,10,14,18,18,14,22,22,26,28,26,26,30,36,36,36,36,34,48,48,42,48,48,50,58,60,54,60,56,58,50,60,70,66,66,66,72,76,78,78,80,82,82,84,84,84,84,92,106,98,96,96,98,102,106,108,118,116,112,110,118,116,112,112,110,112,114,120,124,126,124,126,132,126,146,148
-; Formula: a(n) = -A000040(n+1)+A077152(n+1)-1
+; Formula: a(n) = -A000040(n)+A000040(A036234(n)+n-1)
+
+#offset 1
 
 mov $1,$0
-add $0,1
+mov $2,$0
 seq $0,40 ; The prime numbers.
+seq $1,36234 ; Number of primes <= n, if 1 is counted as a prime.
+sub $1,2
+add $1,$2
+mov $2,$1
+mov $3,$1
 add $1,1
-seq $1,77152 ; Smallest k such that there are n primes between n and k.
+seq $1,40 ; The prime numbers.
+sub $1,$3
+add $1,$2
 sub $1,$0
 mov $0,$1
-sub $0,1
+add $1,1

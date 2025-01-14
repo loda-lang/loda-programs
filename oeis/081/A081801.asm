@@ -2,9 +2,11 @@
 ; Submitted by Science United
 ; 9,1,0,9,3,8,3,7,1
 
+#offset -30
+
 mov $1,1
 mov $2,6
-add $0,1
+add $0,31
 lpb $0
   sub $1,$2
   add $2,$1

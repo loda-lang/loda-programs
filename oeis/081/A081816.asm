@@ -1,7 +1,10 @@
 ; A081816: Electron mass energy equivalent m_e*c^2.
 ; Submitted by ATS
-; 8,1,8,7,1,0,5,0,6
+; 8,1,8,7,1,0,5,7
 
+#offset -13
+
+add $0,13
 sub $1,$0
 mov $4,1
 mov $5,1

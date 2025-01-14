@@ -14,6 +14,7 @@ lpb $1
   mov $5,$0
   mov $2,332203
   lpb $2
+    add $5,1
     seq $5,83721 ; Number of primes greater than the greatest prime factor of n but not greater than n.
     gcd $2,$5
   lpe

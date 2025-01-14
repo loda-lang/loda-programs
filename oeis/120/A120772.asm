@@ -18,6 +18,7 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
+  add $1,1
   seq $1,84109 ; n is congruent to 1 (mod 4) and is not the sum of two squares.
   sub $0,1
   mul $3,$1

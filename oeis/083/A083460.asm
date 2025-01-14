@@ -1,10 +1,20 @@
 ; A083460: Palindromes arising in A083456.
 ; Submitted by Christian Krause
 ; 2,5,9,626,33,1000001,10000001,100000001,1000000001,10000000001,100000000001,1000000000001,10000000000001,100000000000001,1000000000000001,10000000000000001,100000000000000001
-; Formula: a(n) = A083456(n)^(n+1)+1
+
+#offset 1
 
 mov $1,$0
-add $1,1
-seq $0,83456 ; Smallest nontrivial k such that k^n + 1 is a palindrome (k>1 for n>1).
+sub $0,1
+min $0,5
+lpb $0
+  dif $0,2
+lpe
+mov $2,1
+add $2,$0
+div $2,2
+pow $2,2
+add $2,1
+mov $0,$2
 pow $0,$1
 add $0,1

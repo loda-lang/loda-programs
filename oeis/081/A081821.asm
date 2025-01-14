@@ -2,6 +2,9 @@
 ; Submitted by damotbe
 ; 1,0,9,7,3,7,3,1,5,6,8,1
 
+#offset 8
+
+sub $0,8
 mov $1,1
 mov $2,1
 mov $3,$0

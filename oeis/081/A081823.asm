@@ -2,12 +2,15 @@
 ; Submitted by GolfSierra
 ; 1,6,0,2,1,7,6,6,3,4
 
+#offset -18
+
+add $0,18
 pow $0,2
 mov $1,1
 mov $3,$0
 mul $3,4
 mov $5,$0
-cmp $5,0
+equ $5,0
 add $0,$5
 mov $4,-2
 mul $4,$3

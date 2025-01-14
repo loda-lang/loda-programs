@@ -13,6 +13,7 @@ pow $2,2
 lpb $4
   sub $4,1
   mov $3,$2
+  add $3,1
   seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   add $5,$3
   add $2,1

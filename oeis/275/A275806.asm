@@ -10,6 +10,5 @@ seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for od
 mov $1,$0
 mov $0,$2
 div $0,$1
-sub $0,1
 seq $0,83399 ; Number of divisors of n that are not divisors of other divisors of n.
 sub $0,1

@@ -10,10 +10,11 @@ bin $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,81221 ; Number of consecutive numbers >= n having at least one square divisor > 1.
   add $1,$3
   add $1,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   sub $2,$0
 lpe

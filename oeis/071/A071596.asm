@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   mov $3,$1
   mul $3,2

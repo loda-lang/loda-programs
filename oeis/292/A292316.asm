@@ -7,6 +7,7 @@ lpb $1
   mov $1,4
   add $0,1
 lpe
+add $0,1
 seq $0,83510 ; Members of A000124 which are the arithmetic mean of two other members.
 mul $0,2
 sub $0,2

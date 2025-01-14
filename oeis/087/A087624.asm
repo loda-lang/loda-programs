@@ -7,5 +7,6 @@ lpb $0
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,1
 lpe
+add $0,1
 seq $0,83399 ; Number of divisors of n that are not divisors of other divisors of n.
 sub $0,1

@@ -10,18 +10,19 @@ pow $2,2
 lpb $2
   mov $5,$1
   sub $5,$3
+  add $5,2
   seq $5,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   bin $5,2
   mov $3,$1
-  sub $3,1
+  add $3,1
   seq $3,83399 ; Number of divisors of n that are not divisors of other divisors of n.
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

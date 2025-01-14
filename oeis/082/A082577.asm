@@ -1,9 +1,10 @@
 ; A082577: a(n) = first digit to the right of decimal point of n*(sqrt(5)-1)/2.
 ; Submitted by Skillz
 ; 6,2,8,4,0,7,3,9,5,1,7,4,0,6,2,8,5,1,7,3,9,5,2,8,4,0,6,3,9,5,1,7,3,0,6,2,8,4,1,7,3,9,5,1,8,4,0,6,2,9,5,1,7,3,9
-; Formula: a(n) = ((36*n+36)%199)%10
+; Formula: a(n) = ((36*n)%199)%10
 
-add $0,1
+#offset 1
+
 mul $0,36
 mod $0,199
 mod $0,10

@@ -2,9 +2,12 @@
 ; Submitted by ATS
 ; 1,6,6,0,5,3,9,0,6
 
+#offset -26
+
 mov $1,1
 mov $4,1
 mov $5,1
+add $0,26
 lpb $0
   sub $0,1
   dif $3,$2

@@ -20,6 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,84623 ; Numerator of 2^(n-1)/n.
   mul $0,$4
   add $1,$0

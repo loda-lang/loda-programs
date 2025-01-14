@@ -7,4 +7,5 @@ lpb $0
   sub $0,$1
 lpe
 add $0,$1
+add $0,1
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.

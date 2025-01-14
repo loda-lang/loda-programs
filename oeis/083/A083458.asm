@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1,2,6,10,100,1000,10000,100000,1000000
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,1
 mov $3,$0

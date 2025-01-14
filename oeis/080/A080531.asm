@@ -6,7 +6,7 @@ mov $1,4
 add $0,1
 lpb $0
   mov $2,$0
-  dis $2,2
+  dgs $2,2
   sub $0,1
   add $1,$2
 lpe

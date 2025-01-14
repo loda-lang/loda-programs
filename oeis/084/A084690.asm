@@ -2,7 +2,10 @@
 ; Submitted by [AF>EDLS] Jakez Sulli
 ; 0,1,2,3,4,5,6,7,10
 
+#offset 1
+
 mov $3,1
+sub $0,1
 lpb $0
   mov $2,$0
   mod $2,8

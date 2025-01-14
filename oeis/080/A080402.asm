@@ -10,6 +10,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,80401 ; Numbers k such that the sum of the squares of the divisors of k (A001157(k)) is squarefree.
   sub $3,1
   add $0,1

@@ -5,6 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,82524 ; a(1)=1, a(2)=2, then use the rule when a(n) is the end of a run, n appears a(n) times.
   sub $0,$2
   mul $1,2

@@ -10,6 +10,7 @@ lpb $0
   add $5,2
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   mov $4,$2
   mul $4,$5

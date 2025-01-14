@@ -9,11 +9,12 @@ sub $0,1
 add $2,10
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,83903 ; Number of divisors of n with largest digit <= 8 (base 10).
   equ $3,1
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

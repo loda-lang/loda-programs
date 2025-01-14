@@ -1,6 +1,7 @@
 ; A081147: First differences of A022839.
 ; Submitted by Science United
 ; 2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2,3,2,2,2
+; Formula: a(n) = -2*truncate((sqrtint((sqrtint(5*n^2)+n+4)*(5*sqrtint(5*n^2)+5*n+20))+sqrtint(5*n^2)+n+4)/2)+sqrtint((sqrtint(5*n^2)+n+4)*(5*sqrtint(5*n^2)+5*n+20))+sqrtint(5*n^2)+n+6
 
 mov $2,$0
 add $2,$0

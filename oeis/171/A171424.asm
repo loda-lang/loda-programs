@@ -3,13 +3,14 @@
 
 mov $1,$0
 mov $3,$0
-cmp $3,0
+equ $3,0
 add $3,$0
 mov $5,$3
 mov $6,$3
 lpb $6
   sub $6,1
   mov $7,$5
+  add $7,1
   seq $7,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   add $5,1
   add $6,$7

@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,1
-sub $0,1
 seq $0,80146 ; Binary encoding of quadratic residue set for each prime. a(n) = A055094(A000040(n)).
 add $0,1
 div $0,2

@@ -2,6 +2,9 @@
 ; Submitted by Fardringle
 ; 3,8,6,1,5,9,2,6,7
 
+#offset -12
+
+add $0,12
 mov $1,$0
 mov $2,8
 lpb $0

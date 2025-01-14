@@ -1,9 +1,10 @@
 ; A080278: a(n) = (3^(v_3(n) + 1) - 1)/2, where v_3(n) = highest power of 3 dividing n = A007949(n).
 ; Submitted by Facultad de Derecho
 ; 1,1,4,1,1,4,1,1,13,1,1,4,1,1,4,1,1,13,1,1,4,1,1,4,1,1,40,1,1,4,1,1,4,1,1,13,1,1,4,1,1,4,1,1,13,1,1,4,1,1,4,1,1,40,1,1,4,1,1,4,1,1,13,1,1,4,1,1,4,1,1,13,1,1,4,1,1,4,1,1
-; Formula: a(n) = 3*truncate(gcd(n+1,9^(n+1))/2)+1
+; Formula: a(n) = 3*truncate(gcd(n,9^n)/2)+1
 
-add $0,1
+#offset 1
+
 mov $1,9
 pow $1,$0
 gcd $0,$1

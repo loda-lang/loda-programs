@@ -2,7 +2,9 @@
 ; Submitted by ThrasherX-17
 ; 2,1,8,7,6,9,1,2,6
 
-add $0,4
+#offset 7
+
+sub $0,3
 lpb $0
   sub $0,1
   add $3,$0

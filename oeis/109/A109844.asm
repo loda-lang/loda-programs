@@ -7,6 +7,7 @@ add $1,$0
 lpb $0
   mov $2,$0
   trn $2,2
+  add $2,1
   seq $2,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
   mov $0,$2
   sub $0,1

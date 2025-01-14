@@ -2,14 +2,25 @@
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 2,6,6,10,30,42,28,12,30,110,66,78,182,210,60,68,102,114,190,210,462,506,276,60,130,234,126,406,870,930,248,264,1122,1190,210,222,1406,1482,780,820,1722,1806,946,330,690,2162,564,84,70,510,1326,1378,954,990,1540,1596,3306,3422,1770,1830,3782,1302,168,520,4290,4422,2278,2346,4830,4970,852,876,5402,1110,570,2926,6006,6162,1580,180
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $2,$0
 lpb $2
+  mov $5,0
+  max $5,$2
+  mov $4,$5
+  add $5,1
+  seq $5,19554 ; Smallest number whose square is divisible by n.
+  div $4,$5
   mov $3,$2
+  mov $3,$4
   add $3,1
-  seq $3,8833 ; Largest square dividing n.
-  seq $3,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  pow $3,2
+  mul $3,4
+  nrt $3,2
+  add $3,1
+  div $3,2
   div $2,$3
   add $2,1
   sub $0,1

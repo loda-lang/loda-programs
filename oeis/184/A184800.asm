@@ -11,6 +11,7 @@ lpb $2
   seq $5,3511 ; A Beatty sequence: floor( n * (1 + sqrt(3))/2 ).
   mov $3,$1
   add $3,$5
+  add $3,1
   seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
   sub $0,$3
   add $1,1

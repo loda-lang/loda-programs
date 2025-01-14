@@ -5,7 +5,7 @@
 mov $1,$0
 add $0,1
 lpb $0
-  cmp $2,1
+  equ $2,1
   sub $2,$0
   pow $2,2
   sub $2,$0

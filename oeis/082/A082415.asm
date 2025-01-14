@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,8,9,10,12,14,16,18,22,24,30
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 sub $0,2
 mov $3,$0

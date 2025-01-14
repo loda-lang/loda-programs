@@ -15,7 +15,14 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $5,$0
-  seq $5,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mul $5,21
+  mov $6,3
+  mul $6,$5
+  add $6,$5
+  mov $5,$6
+  sub $5,79
+  div $5,84
   sub $0,1
   mul $0,2
   sub $0,$5

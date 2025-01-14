@@ -6,6 +6,7 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+add $1,1
 seq $1,83503 ; n-th powers arising in A083502.
 pow $1,$0
 mov $0,$1

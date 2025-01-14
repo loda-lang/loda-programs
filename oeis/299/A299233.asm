@@ -6,6 +6,7 @@ mov $1,$0
 mov $2,3
 lpb $2
   div $2,2
+  add $1,1
   seq $1,80541 ; In binary representation: keep the first digit and left-rotate the others.
   sub $1,1
 lpe
