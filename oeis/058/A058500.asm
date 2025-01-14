@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,100368 ; Numbers of the form 2^k * p where k > 0 and p is an odd prime.
   mov $5,$3
   add $3,1

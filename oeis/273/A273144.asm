@@ -1,4 +1,4 @@
-; A273144: Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 597", based on the 5-celled von Neumann neighborhood.
+; A273144: Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 597", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jason Jung
 ; 1,8,20,41,57,104,116,193,193,312,292,457,409,632,548,833,705,1064,884,1321,1081,1608,1300,1921,1537,2264,1796,2633,2073,3032,2372,3457,2689,3912,3028,4393,3385,4904,3764,5441,4161,6008,4580,6601,5017,7224,5476,7873,5953,8552,6452,9257,6969,9992,7508,10753,8065,11544,8644,12361,9241,13208,9860,14081,10497,14984,11156,15913,11833,16872,12532,17857,13249,18872,13988,19913,14745,20984,15524,22081
 

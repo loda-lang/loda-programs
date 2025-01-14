@@ -11,7 +11,8 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,192570 ; a(n) = floor(sqrt(Bell(n)))
+  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  nrt $0,2
   mul $1,$0
   add $3,$1
 lpe

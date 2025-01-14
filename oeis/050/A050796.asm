@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   pow $3,2
+  add $3,1
   seq $3,340371 ; a(n) = 1 if the odd part of n is noncomposite, 0 otherwise.
   add $3,$4
   div $3,2

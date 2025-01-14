@@ -7,6 +7,7 @@ mov $3,$0
 pow $3,4
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,340371 ; a(n) = 1 if the odd part of n is noncomposite, 0 otherwise.
   sub $0,$4
   add $2,1
