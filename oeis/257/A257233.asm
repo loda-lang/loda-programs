@@ -12,6 +12,7 @@ lpb $1
   sub $0,1
   lpb $0
     trn $0,1
+    add $0,1
     seq $0,309355 ; Even numbers k such that k! is divisible by k*(k+1)/2.
     mov $2,$0
     mov $0,0

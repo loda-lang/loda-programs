@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,216998 ; Digit sum of n*7 mod 7.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,3
   sub $2,$0
