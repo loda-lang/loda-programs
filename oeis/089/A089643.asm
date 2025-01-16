@@ -4,6 +4,6 @@
 
 mov $1,$0
 mul $1,2
-dis $1,3
+dgs $1,3
 mov $0,$1
 div $0,2

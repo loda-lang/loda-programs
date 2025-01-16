@@ -18,4 +18,4 @@ lpb $2
   add $1,$3
 lpe
 mov $0,$1
-dis $0,2
+dgs $0,2

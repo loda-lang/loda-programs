@@ -9,6 +9,7 @@ lpb $0
   add $3,1
   lpb $3
     mov $2,$0
+    add $2,1
     seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
     add $1,$2
     sub $2,$3

@@ -4,6 +4,7 @@
 
 pow $0,$0
 lpb $0
+  add $2,1
   seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $0,$2
   add $1,1

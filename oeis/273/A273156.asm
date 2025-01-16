@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $0,$2
   max $1,1

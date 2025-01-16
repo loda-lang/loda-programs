@@ -4,6 +4,7 @@
 
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $0,$1
 lpe

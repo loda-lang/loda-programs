@@ -10,6 +10,7 @@ add $2,5
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,87780 ; Number of non-congruent solutions to x^2 == 2 mod n.
   sub $3,4
   equ $3,0

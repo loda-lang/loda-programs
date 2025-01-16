@@ -9,5 +9,5 @@ lpe
 sub $1,$0
 mul $1,$0
 add $0,1
-cmp $0,1
+equ $0,1
 add $0,$1

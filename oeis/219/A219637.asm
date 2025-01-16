@@ -16,6 +16,7 @@ div $1,2
 add $1,1
 mov $5,$0
 lpb $5
+  add $2,1
   seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
   add $3,1
   sub $5,$2

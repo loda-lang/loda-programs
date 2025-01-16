@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,3,1,2,2,2,2,2,2,2,2,2,3,1,2,2,2,2,2,2,2,2,2,3,1,2,2,2,2,2,2,2,2,2,3,1,2,2,2,2,2,2,2,2,2,3,1,2,2,2,2,2,2,2,2,2,3,1,2,2,2
 
-add $0,1
+#offset 1
+
 lpb $0
   seq $0,261424 ; Difference between n and the largest palindrome <= n.
   add $1,1

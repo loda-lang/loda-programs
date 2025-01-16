@@ -9,6 +9,7 @@ mul $2,2
 add $2,139
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,88569 ; Anti-Kolakoski sequence (sequence of run lengths never coincides with the sequence itself).
   equ $3,2
   sub $0,$3

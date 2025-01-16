@@ -8,8 +8,8 @@ mov $5,$0
 add $5,7
 pow $5,2
 lpb $5
-  add $4,1
   mov $3,$4
+  add $3,2
   seq $3,87810 ; First differences of A029931.
   add $3,1
   mod $3,2
@@ -17,7 +17,7 @@ lpb $5
   mov $2,$1
   max $2,0
   equ $2,$1
-  add $4,3
+  add $4,4
   mul $5,$2
   sub $5,1
 lpe

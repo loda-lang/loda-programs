@@ -8,8 +8,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,88722 ; Number of divisors d>1 of n such that d+1 also divides n.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,2
   sub $2,$0

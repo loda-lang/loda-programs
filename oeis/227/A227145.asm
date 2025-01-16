@@ -9,6 +9,7 @@ lpb $2
   mov $3,0
   mov $0,$4
   sub $0,$2
+  add $0,1
   seq $0,87157 ; Satisfies a(1)=1, a(A087158(n+1)) = a(n)+1, with a(m)=1 for all m not found in A087158, where A087158(n+2)=A087158(n+1)+a(n)+1.
   mov $1,$0
   lpb $1

@@ -14,6 +14,7 @@ lpb $2
   add $1,1
   mov $3,$1
   pow $3,2
+  add $3,1
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   neq $3,2
   sub $3,$4

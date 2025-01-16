@@ -1,9 +1,10 @@
 ; A088592: Let p be the n-th 4k+3 prime (A002145), g be any primitive root of p. The mapping x->g^x mod p gives a permutation of {1,2,...,p-1}. a(n) is 0 if the permutation is even for each g, 1 if odd for each g.
 ; Submitted by Wood
 ; 1,0,0,0,1,1,0,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,1,1,1,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1
-; Formula: a(n) = -2*truncate(gcd(truncate(A166387(A090658(n+1)-3)/2),A137447(n))/2)+gcd(truncate(A166387(A090658(n+1)-3)/2),A137447(n))
+; Formula: a(n) = -2*truncate(gcd(truncate(A166387(A090658(n)-3)/2),A137447(n-1))/2)+gcd(truncate(A166387(A090658(n)-3)/2),A137447(n-1))
 
-add $0,1
+#offset 1
+
 mov $1,$0
 seq $1,90658 ; Numbers n such that n-1 is a prime of the form 4k+3.
 sub $1,3

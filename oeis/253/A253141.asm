@@ -10,6 +10,7 @@ seq $1,143731 ; Characteristic function of numbers with at least two distinct pr
 add $1,$2
 add $1,1
 mod $1,2
+add $0,1
 seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
 mul $1,$0
 mov $0,$1

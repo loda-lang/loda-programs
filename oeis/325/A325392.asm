@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,89646 ; a(n) = Sum(a(floor(n/p)): p prime and p<=n); a(1) = 1.
   mov $2,$5
   mul $2,$4

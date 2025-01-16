@@ -7,5 +7,4 @@ lpb $0
   sub $0,1
 lpe
 seq $0,92621 ; Primes with exactly one prime digit.
-sub $0,1
 seq $0,85563 ; Sum of the prime digits of n.

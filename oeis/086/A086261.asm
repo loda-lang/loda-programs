@@ -2,7 +2,10 @@
 ; Submitted by Jamie Morken(l1)
 ; 1,2,0,16,0,0,0,30720,0,0,0,1486356480,0
 
+#offset 1
+
 mov $3,1
+sub $0,1
 lpb $0
   mov $1,$0
   add $2,2

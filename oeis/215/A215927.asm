@@ -11,15 +11,13 @@ lpb $2
   seq $3,154115 ; Numbers n such that n + 3 is prime.
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
-  sub $3,1
   seq $3,87380 ; Let Pricom(n) be defined as the number obtained by replacing each prime digit (2,3,5,7) of n with a '0' and a composite digit (0,4,6,8,9) with a '1' . A 1 remains the same. a(n) = Pricom(n).
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   trn $2,1
 lpe

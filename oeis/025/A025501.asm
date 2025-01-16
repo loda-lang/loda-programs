@@ -6,6 +6,7 @@ mul $0,2
 mov $1,3
 pow $1,$0
 lpb $1
+  add $3,1
   seq $3,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $1,$3
   add $2,1

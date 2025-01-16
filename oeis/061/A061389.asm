@@ -19,6 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
+    add $5,1
     seq $5,86296 ; Euler's totient of 7-smooth numbers.
     add $5,1
     add $4,1

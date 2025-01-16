@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,2,3,17,5,37,7,17859077
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 equ $2,0
 add $2,$0

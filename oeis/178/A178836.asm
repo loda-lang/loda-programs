@@ -10,13 +10,14 @@ pow $2,3
 lpb $2
   mov $3,$6
   mul $3,2
-  seq $3,87996 ; Residues when (n+rev[n]) is divided by abs(n-rev[n]); zero if n=rev[n] (when n is palindromic), or when the quotient is integer (see A087993).
-  cmp $3,0
+  add $3,1
+  seq $3,87996 ; Residues when (n+rev[n]) is divided by abs(n-rev[n]); zero if n=rev[n] (when n is palindromic), or when the quotient is an integer (see A087993).
+  equ $3,0
   sub $0,$3
   add $1,5
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,18
   mov $5,$1

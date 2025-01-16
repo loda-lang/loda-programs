@@ -2,7 +2,9 @@
 ; Submitted by omegaintellisys
 ; 1,1,1,3,3,9,17,44
 
-add $0,1
+#offset 3
+
+sub $0,2
 lpb $0
   sub $0,1
   add $2,$4

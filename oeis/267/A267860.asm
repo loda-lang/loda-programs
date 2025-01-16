@@ -7,6 +7,7 @@ mod $1,2
 div $0,2
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,87172 ; Greatest Fibonacci number that does not exceed n.
   sub $0,$3
 lpe

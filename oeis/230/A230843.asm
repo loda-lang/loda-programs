@@ -8,7 +8,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,46523 ; Smallest number with same prime signature as n.
-  sub $3,1
   seq $3,85089 ; Number of distinct prime signatures arising up to n.
   dif $3,3
   dif $3,2

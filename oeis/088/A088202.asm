@@ -1,6 +1,9 @@
 ; A088202: Chromatic number of the n X n queen graph.
 ; 1,4,5,5,5,7,7,9,10,11,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
 
+#offset 1
+
+sub $0,1
 mov $3,2
 mov $4,$0
 lpb $0

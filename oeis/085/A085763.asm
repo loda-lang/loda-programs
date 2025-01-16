@@ -2,16 +2,18 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,4,5,5,5,4,3,2,1,2,1,1,1,1,1,2,2,2,2,2,3,2,2,2,2,2,3,3,3,3,3,4,3,3,3,3,3,4,4,4,4,4,5,4,4,4,4,4,5,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,8,7,7,7,7,8,8,8,8,8,9,9,8,8,8
 
+#offset 1
+
 mov $1,$0
-add $1,1
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 lpb $2
   sub $2,1
   mov $5,$1
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $3,$1
-  cmp $3,$5
+  equ $3,$5
   add $1,1
   add $4,$3
 lpe

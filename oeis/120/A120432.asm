@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,88071 ; Number sandwiched between two numbers having only one prime divisor.
   sub $0,2
   mov $1,$0

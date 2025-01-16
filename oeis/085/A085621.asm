@@ -1,6 +1,9 @@
 ; A085621: Mean prime gaps that do not occur in A049036.
 ; 1,3,5,7,9,10,11,13,15,16,17,19
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $1,$0
 add $1,$0

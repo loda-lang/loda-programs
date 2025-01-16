@@ -2,6 +2,9 @@
 ; Submitted by Alexander
 ; 1,1,1,1,2,1,2,2,3,2,5,2,6,3,4,4,8,3,9,4,6,5,11,4
 
+#offset 1
+
+sub $0,1
 mov $1,6
 equ $1,$0
 trn $0,1

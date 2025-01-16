@@ -9,13 +9,14 @@ sub $0,1
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,87780 ; Number of non-congruent solutions to x^2 == 2 mod n.
   min $4,1
   sub $0,$4
   add $2,2
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

@@ -5,7 +5,7 @@
 pow $0,2
 lpb $0
   mov $2,$0
-  seq $2,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  nrt $2,2
   div $0,18
   add $1,$2
 lpe

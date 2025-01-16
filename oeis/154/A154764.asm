@@ -8,24 +8,25 @@ pow $2,2
 lpb $2
   mov $5,6
   mov $3,$1
+  add $3,1
   seq $3,85090 ; If 2n-1 is prime then a(n) = 2n-1, otherwise a(n) = 0.
   lpb $3
     mov $6,$3
     mod $6,2
     add $6,$7
-    cmp $6,2
+    equ $6,2
     div $3,10
     add $5,$6
   lpe
   sub $5,6
   mov $7,1
   mov $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

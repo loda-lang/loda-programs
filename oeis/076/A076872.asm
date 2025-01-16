@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,85252 ; Number of ways to write n as sum of two powerful numbers (A001694).
   min $3,1
   add $1,1

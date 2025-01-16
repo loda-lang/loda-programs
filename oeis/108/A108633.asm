@@ -8,16 +8,17 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,85711 ; Numbers k such that sopfr(k) is a semiprime.
   mov $5,$3
   sub $3,1
   seq $3,351414 ; Number of divisors of n that are either prime or have at least 1 square divisor > 1 and at least two distinct prime factors.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

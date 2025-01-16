@@ -7,6 +7,7 @@ add $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,89118 ; Nonnegative numbers in (3*A005836 - 1) [A005836 are the numbers with base representation containing no 2].
   add $1,1
   add $2,$3

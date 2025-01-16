@@ -10,7 +10,7 @@ lpb $2
   add $4,2
   seq $4,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   add $1,1
-  add $3,1
+  add $3,2
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   mov $5,$4
   gcd $5,$3

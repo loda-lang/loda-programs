@@ -7,7 +7,7 @@ lpb $0
   add $4,1
   add $2,$4
   bin $2,$0
-  cmp $2,1
+  equ $2,1
   mov $3,$4
   bin $3,$1
   mul $3,$2

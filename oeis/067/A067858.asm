@@ -19,7 +19,6 @@ lpb $4
   sub $2,$4
   mov $1,$2
   seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  sub $2,1
   seq $2,89072 ; Triangle read by rows: T(n,k) = k^n, n >= 1, 1 <= k <= n.
   mul $2,$1
   add $3,$2

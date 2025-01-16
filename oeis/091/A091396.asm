@@ -6,5 +6,4 @@ add $0,1
 lpb $0
   dif $0,2
 lpe
-sub $0,1
 seq $0,87780 ; Number of non-congruent solutions to x^2 == 2 mod n.

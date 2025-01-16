@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  sub $3,1
   seq $3,85563 ; Sum of the prime digits of n.
   neq $3,0
   sub $0,$3

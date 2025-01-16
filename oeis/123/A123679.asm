@@ -8,6 +8,7 @@ add $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,85262 ; Indices of nonzero terms of A085246, where a(n+2)=a(n+1)+A085246(n)+1 and a(2^(n-1)+1)=2^n.
   add $1,1
   add $2,1

@@ -14,6 +14,7 @@ lpb $2
   sub $2,1
   mov $1,$4
   add $1,$0
+  add $1,1
   seq $1,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
   mul $3,$1
   sub $4,1

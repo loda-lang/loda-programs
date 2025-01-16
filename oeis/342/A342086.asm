@@ -16,6 +16,7 @@ lpb $4
   mov $5,$0
   seq $0,264668 ; a(n) = A264600(n) - A061486(n).
   sub $0,1
+  add $5,1
   seq $5,88434 ; Number of ways to write n as n = u*v*w with 1 <= u < v < w.
   add $5,45
   mul $5,$0

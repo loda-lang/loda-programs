@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,85542 ; Determinant of the n X n matrix M_(i,j)=i/gcd(i,j)=lcm(i,j)/j.
 lpb $1
   mul $0,$1

@@ -9,6 +9,7 @@ lpb $0
   mov $4,$0
   sub $4,$2
   mod $0,$1
+  add $2,1
   seq $2,88435 ; 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k>=1,1/3^(2^k)).
   mul $2,$4
   add $3,$2

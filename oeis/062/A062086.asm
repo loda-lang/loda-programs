@@ -25,7 +25,6 @@ lpb $2
     mul $7,10
   lpe
   mov $3,$6
-  sub $3,1
   seq $3,85731 ; Greatest common divisor of n and its arithmetic derivative.
   equ $3,1
   mov $5,$6

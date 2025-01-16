@@ -1,8 +1,11 @@
 ; A087003: a(2n) = 0 and a(2n+1) = mu(2n+1); also the sum of Mobius function values computed for terms of 3x+1 trajectory started at n, provided that Collatz conjecture is true.
 ; Submitted by Science United
 ; 1,0,-1,0,-1,0,-1,0,0,0,-1,0,-1,0,1,0,-1,0,-1,0,1,0,-1,0,0,0,0,0,-1,0,-1,0,1,0,1,0,-1,0,1,0,-1,0,-1,0,0,0,-1,0,0,0,1,0,-1,0,1,0,1,0,-1,0,-1,0,0,0,1,0,-1,0,1,0,-1,0,-1,0,0,0,1,0,-1,0
-; Formula: a(n) = (gcd(n,2)-1)*(-A073184(n+1)*(max(A073184(n+1)-56,0)+56)+3*truncate((A073184(n+1)*(max(A073184(n+1)-56,0)+56)-32)/3)+33)
+; Formula: a(n) = (gcd(n-1,2)-1)*(-A073184(n)*(max(A073184(n)-56,0)+56)+3*truncate((A073184(n)*(max(A073184(n)-56,0)+56)-32)/3)+33)
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 sub $2,$0
 sub $2,1

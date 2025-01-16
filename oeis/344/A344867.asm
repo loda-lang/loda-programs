@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,86671 ; Sum of floor(sqrt(d)) where d runs through the divisors of n.
   add $3,$0
 lpe

@@ -22,7 +22,7 @@ lpb $0
   add $9,$2
   mov $3,$6
   mov $$9,$3
-  cmp $11,0
+  equ $11,0
   add $1,$6
   add $2,1
 lpe

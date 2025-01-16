@@ -1,7 +1,10 @@
-; A088034: Even numbers k such that k^2-1 is divisible by a square.
+; A088034: Even numbers k such that k^2-1 is divisible by a square > 1.
 ; Submitted by Athlici
 ; 8,10,24,26,28,44,46,48,50,62,64,74,76,80,82,98,100,116,118,120,122,124,126,134,136,146,148,152,154,168,170,172,174,176,188,190,206,208,224,226,242,244,246,260,262,274,276,278,280,288,290,296,298,314,316,324
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 add $2,180

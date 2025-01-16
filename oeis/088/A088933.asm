@@ -2,7 +2,10 @@
 ; Submitted by Dingo
 ; 0,0,0,1,1,4,3,13,21
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $2,$1

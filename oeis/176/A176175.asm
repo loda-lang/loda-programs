@@ -5,6 +5,7 @@
 lpb $0
   add $1,1
   mov $2,$0
+  add $2,1
   seq $2,85118 ; Primes together with twice the odd primes.
   div $0,$2
 lpe

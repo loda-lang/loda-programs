@@ -16,7 +16,6 @@ lpb $2
   add $3,$6
   mov $5,$3
   add $5,2
-  sub $3,1
   seq $3,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
   equ $3,1
   sub $0,$3

@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,86411 ; Greatest prime factor of 3-smooth numbers.
   mov $1,$0
   add $1,1

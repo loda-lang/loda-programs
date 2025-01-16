@@ -11,16 +11,16 @@ lpb $2
   seq $5,307000 ; Number of unitary rings with additive group (Z/nZ)^2. Equivalently, number of unitary commutative rings with additive group (Z/nZ)^2.
   div $5,2
   mov $3,$1
-  add $3,4
+  add $3,5
   seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   sub $3,$5
   bin $3,$1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

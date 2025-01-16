@@ -10,13 +10,14 @@ lpb $2
   mov $0,$1
   gcd $0,$2
   mov $5,$0
-  cmp $5,1
+  equ $5,1
   sub $0,1
   mov $4,$0
   seq $4,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $4,$5
   add $4,1
   mod $4,2
+  add $0,1
   seq $0,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   mul $4,$0
   add $3,$4

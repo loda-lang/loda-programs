@@ -12,6 +12,7 @@ lpb $2
   mov $5,6
   sub $7,1
   mov $3,$1
+  add $3,1
   seq $3,85090 ; If 2n-1 is prime then a(n) = 2n-1, otherwise a(n) = 0.
   lpb $3
     mov $6,$3

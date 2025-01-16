@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,89809 ; Complement of A078588.
   mov $2,$3
   mul $2,2

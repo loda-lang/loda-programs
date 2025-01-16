@@ -11,7 +11,7 @@ lpb $3
   mul $1,$3
   add $1,$4
   mul $2,-1
-  cmp $4,0
+  equ $4,0
   add $5,$4
   div $1,$5
   mul $1,$3

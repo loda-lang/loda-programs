@@ -5,7 +5,7 @@
 mov $2,1
 lpb $0
   add $3,$0
-  cmp $3,$0
+  equ $3,$0
   mul $3,$2
   mul $1,$0
   add $1,$3

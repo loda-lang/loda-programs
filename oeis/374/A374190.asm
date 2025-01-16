@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,2
+  add $3,1
   seq $3,88431 ; Half of the (n+1)-st component of the continued fraction expansion of Sum_{k>=0} 1/2^(2^k).
   add $3,$4
   gcd $3,2

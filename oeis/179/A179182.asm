@@ -8,6 +8,7 @@ sub $0,1
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,87572 ; Smallest prime of the form n + (n-1) + (n-2) + ...(n-k), k < n, or 0 if no such prime exists.
   min $3,1
   sub $0,$3
