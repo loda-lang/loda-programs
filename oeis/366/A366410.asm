@@ -2,7 +2,8 @@
 ; Submitted by marmuglia
 ; 0,3,0,15,6,3,0,15,0,9,0,15,0,3,6,15
 
-add $0,1
+#offset 1
+
 gcd $0,20
 mov $2,1
 mov $3,1

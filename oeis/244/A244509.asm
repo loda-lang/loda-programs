@@ -1,27 +1,15 @@
 ; A244509: Order of GL_2(p), the general linear group over F_p, where p runs through the primes.
-; Submitted by Kotenok2000
+; Submitted by Antares2022
 ; 6,48,480,2016,13200,26208,78336,123120,267168,682080,892800,1822176,2755200,3337488,4773696,7738848,11908560,13615200,19845936,25048800,28003968,38450880,46879728,62029440,87607296,103020000,111447648,129843216,139851360,161591808,258080256,292234800,349685376,370596240,489554400,516420000,603678816,701554608,773111136,890537568,1020858480,1067320800,1323859200,1380261888,1498454496,1560319200,1972681200,2461834368,2643489456,2737997280,2934592128,3249099840,3359347200,3953250000,4345430016
+; Formula: a(n) = A001615(A000040(n))*A000040(n)*A000010(A000040(n))^2
 
+#offset 1
+
+seq $0,40 ; The prime numbers.
+mov $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+pow $1,2
 mov $2,$0
-mul $2,2
-max $2,1
-sub $2,2
-mov $3,4
-mov $4,$2
-pow $4,4
-lpb $4
-  max $1,$3
-  add $1,1
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $1,2
-  sub $2,$1
-  add $3,2
-  sub $4,$2
-lpe
-add $2,$3
-sub $2,1
-mov $0,$2
-pow $0,3
-sub $0,$2
-sub $2,1
+seq $0,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
 mul $0,$2
+mul $0,$1

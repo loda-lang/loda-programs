@@ -8,7 +8,8 @@ dif $2,2
 seq $2,62570 ; a(n) = phi(2*n).
 add $1,$0
 add $1,1
-seq $1,62401 ; a(n) = phi(sigma(n)).
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 gcd $1,$2
 mov $0,$2
 div $0,$1

@@ -1,17 +1,18 @@
 ; A010843: Incomplete Gamma Function at -3.
-; Submitted by fzs600
+; Submitted by Dongha Hwang
 ; 1,-2,5,-12,33,-78,261,-360,3681,13446,193509,1951452,23948865,309740922,4341155877,65102989248,1041690874689,17708615729550,318755470552389,6056352778233924,121127059051462881,2543668229620367298
+; Formula: a(n) = a(n-1)*(n-1)+truncate((-2*truncate(b(n-1)/2)+b(n-1)-3)^(n-1)), a(2) = -2, a(1) = 1, a(0) = 0, b(n) = truncate((-2*truncate(b(n-1)/2)+b(n-1)-3)^(n-1))+1, b(2) = -2, b(1) = 2, b(0) = 0
 
 #offset 1
 
-sub $0,1
-mov $2,1
-mov $3,1
-mov $1,$0
-lpb $1
+lpb $0
+  sub $0,1
+  mod $3,2
+  sub $3,3
+  pow $3,$1
   mul $2,$1
-  mul $3,-3
-  add $3,$2
-  sub $1,1
+  add $2,$3
+  add $3,1
+  add $1,1
 lpe
-mov $0,$3
+mov $0,$2

@@ -9,6 +9,7 @@ seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 mov $5,$0
 max $5,$2
 mod $2,2
+add $2,1
 seq $2,142268 ; Primes congruent to 19 mod 43.
 lpb $2
   mov $2,3
@@ -17,8 +18,7 @@ lpb $2
   mov $1,$5
   mod $1,2
   add $3,$1
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   mul $3,$4
 lpe
 mov $0,$3

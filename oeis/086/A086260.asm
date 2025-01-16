@@ -2,7 +2,10 @@
 ; Submitted by Fornax
 ; 1,2,0,0,0,384,0,0,0,2580480,0,0,0
 
+#offset 1
+
 mov $2,2
+sub $0,1
 lpb $0
   sub $0,1
   sub $1,1

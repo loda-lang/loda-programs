@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,327985 ; Positions of zeros in A051023, the middle column of rule-30 1-D cellular automaton, when started from a lone 1 cell.
   mov $2,$3
   mul $2,$0

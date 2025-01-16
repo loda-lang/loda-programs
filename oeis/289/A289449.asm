@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,7,26,93,325,1129,3935,13813
 
-add $0,1
+#offset 1
+
 lpb $0
   sub $0,1
   mov $3,$4

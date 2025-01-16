@@ -1,20 +1,21 @@
 ; A353445: Let f be the completely multiplicative function from the positive integers to the cube roots of unity defined by f(prime(m)) = w^(2^(m-1)), where w is the cube root with positive imaginary part. a(n) is twice the real part of f(n).
-; Submitted by mmonnin
+; Submitted by Science United
 ; 2,-1,-1,-1,-1,2,-1,2,-1,-1,-1,-1,-1,2,2,-1,-1,-1,-1,2,-1,-1,-1,-1,-1,2,2,-1,-1,-1,-1,-1,2,-1,2,2,-1,2,-1,-1,-1,-1,-1,2,-1,-1,-1,2,-1,2,2,-1,-1,-1,-1,-1,-1,2,-1,-1,-1,-1,2,2,2,-1,-1,2,2,-1,-1,-1,-1,2,-1,-1,2,-1,-1,-1
 
-seq $0,322821 ; a(1) = 0; for n > 1, a(n) = A000265(A048675(n)).
-seq $0,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+#offset 1
+
+seq $0,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
+gcd $0,3
+div $0,3
 add $0,1
-mod $0,2
-sub $0,1
-mov $1,6
-add $2,$0
-add $0,1
+mov $2,$0
 lpb $0
-  mov $0,$2
-  lpb $1
-    mov $1,1
-    mov $2,2
+  mul $0,2
+  lpb $2
+    sub $0,4
+    mov $1,2
+    mov $2,$0
   lpe
 lpe
-mov $0,$2
+sub $1,$0
+mov $0,$1

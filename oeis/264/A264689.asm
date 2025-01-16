@@ -26,11 +26,11 @@ lpb $5
         mov $4,$0
         mod $4,$2
         lpb $9
-          cmp $4,0
+          equ $4,0
           lpb $4
-            cmp $4,0
+            equ $4,0
             mov $1,$9
-            cmp $1,0
+            equ $1,0
             add $2,1
             add $9,$1
             mod $3,$9

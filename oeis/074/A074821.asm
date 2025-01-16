@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,129574 ; Number of odd divisors of n plus the number of odd divisors of n - 1.
   mov $5,$1
   add $5,1

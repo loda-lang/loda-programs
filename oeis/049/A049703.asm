@@ -6,7 +6,6 @@ lpb $0
   sub $0,1
   add $3,1
   mov $2,$0
-  max $2,0
   add $2,1
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   add $2,1

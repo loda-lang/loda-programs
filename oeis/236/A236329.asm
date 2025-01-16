@@ -19,7 +19,7 @@ lpb $4
     pow $3,$4
     sub $4,1
     mul $6,$0
-    cmp $6,$2
+    equ $6,$2
     mul $6,$3
     sub $0,1
     add $5,$6

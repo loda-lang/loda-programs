@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,180498 ; a(n) = n^2 - 5*floor(n/sqrt(5))^2.
   add $3,$4
   gcd $3,2
