@@ -1,7 +1,10 @@
 ; A255743: a(1) = 1; for n > 1, a(n) = 9*8^{A000120(n-1)-1}.
-; Submitted by Jamie Morken(w1)
+; Submitted by [AF>Amis de la Mer] ComteZera
 ; 1,9,9,72,9,72,72,576,9,72,72,576,72,576,576,4608,9,72,72,576,72,576,576,4608,72,576,576,4608,576,4608,4608,36864,9,72,72,576,72,576,576,4608,72,576,576,4608,576,4608,4608,36864,72,576,576,4608,576,4608,4608,36864,576,4608,4608,36864,4608,36864,36864,294912,9,72,72,576,72,576,576,4608,72,576,576,4608,576,4608,4608,36864
 
-dif $0,2
-seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-seq $0,170642 ; Number of reduced words of length n in Coxeter group on 9 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
+dgs $0,2
+mov $1,8
+pow $1,$0
+mul $1,9
+div $1,8
+mov $0,$1

@@ -1,36 +1,33 @@
 ; A018246: A self-generating sequence: there are a(n) (k+1)'s between successive k's, where k=5.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Science United
 ; 5,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6,6,6,5,6,6,6,6
 
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
-  sub $0,1
-  mov $6,7
-  add $6,$0
-  div $6,6
-  add $6,$0
-  div $6,8
-  mov $4,7
-  sub $4,$6
-  mov $7,$0
-  mul $7,8
-  mov $6,$4
-  add $6,$7
-  mov $2,$5
-  lpb $2
-    sub $2,1
-    mov $1,$6
-  lpe
-lpe
+mov $6,$0
+mov $3,2
 lpb $3
-  mov $3,0
-  sub $1,$6
+  sub $3,1
+  mov $0,$6
+  add $0,$3
+  mov $5,6
+  mul $5,$0
+  mov $1,$5
+  mul $1,4
+  add $1,$5
+  mul $1,$5
+  nrt $1,2
+  add $1,$5
+  mov $5,$1
+  div $5,4
+  mov $0,$5
+  mov $2,$3
+  mul $2,$5
+  add $4,$2
 lpe
-sub $1,2
-mov $0,$1
+min $6,1
+mul $6,$0
+mov $0,$4
+sub $0,$6
+add $0,1

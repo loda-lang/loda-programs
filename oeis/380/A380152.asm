@@ -1,18 +1,22 @@
 ; A380152: Decimal expansion of 864/275.
-; Submitted by Science United
+; Submitted by Ryan Hothersall
 ; 3,1,4,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1
 
-mov $2,-1
-pow $2,$0
-mov $1,$2
-lpb $0
-  sub $0,1
-  mul $1,2
-  sub $1,$2
-  max $2,0
-  add $2,$1
-lpe
-mov $0,$2
-sub $0,8
+mov $4,-2
+pow $4,$0
+mov $1,2
+mul $1,$4
+mov $2,9
+trn $2,$1
+mul $1,2
+pow $1,2
+min $2,1
+mul $2,5
+add $2,1
+sub $1,$2
+mov $3,$0
+equ $3,2
+add $3,$1
+mov $0,$3
+sub $0,7
 mod $0,10
-add $0,10
