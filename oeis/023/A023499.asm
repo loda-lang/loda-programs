@@ -11,6 +11,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $4,$2
+  add $4,1
   seq $4,90946 ; Non-Lucas numbers: complement of A000204.
   max $4,1
   add $2,3

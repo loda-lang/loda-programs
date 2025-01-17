@@ -12,6 +12,7 @@ lpb $2
   mul $3,2
   max $3,1
   mov $5,$3
+  add $5,1
   seq $5,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $3,$5
   sub $3,1

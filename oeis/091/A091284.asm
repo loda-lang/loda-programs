@@ -2,7 +2,8 @@
 ; Submitted by Ralfy
 ; 0,5,5,6,5,5,7,5,6,5,8,5,6,5,7,5,5,5,5,6,6,7,5,6,8,5,6,5,5,7,10,5,6,5,5,6,5,5,6,5,5,5,9,9,5,6,5,8,5,5
 
-add $0,1
+#offset 1
+
 seq $0,6005 ; The odd prime numbers together with 1.
 pow $0,8
 sub $0,1

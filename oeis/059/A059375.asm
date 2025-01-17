@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,94047 ; Number of seating arrangements of n couples around a round table (up to rotations) so that each person sits between two people of the opposite sex and no couple is seated together.
 mul $0,2
 mul $0,$2

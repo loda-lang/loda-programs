@@ -6,7 +6,7 @@
 
 sub $0,1
 lpb $0
-  mov $0,4
+  mov $0,5
   seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
   sub $0,2
   seq $0,340648 ; a(n) is the maximum number of nonzero entries in an n X n sign-restricted matrix.

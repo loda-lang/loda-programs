@@ -5,6 +5,7 @@
 mov $2,1
 lpb $0
   sub $0,1
+  add $3,1
   seq $3,93879 ; First differences of A004001.
   mul $3,2
   sub $2,1

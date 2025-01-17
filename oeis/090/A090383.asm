@@ -2,11 +2,13 @@
 ; Submitted by emoga
 ; 4,7,8,8,10,11,8,12,10,8,10
 
-add $0,4
+#offset 1
+
+add $0,3
 mov $1,$0
 lpb $0
   pow $0,4
   sub $0,$1
-  seq $0,53735 ; Sum of digits of (n written in base 3).
+  dgs $0,3
 lpe
 add $0,2

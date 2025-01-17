@@ -4,7 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-cmp $3,$0
+equ $3,$0
 trn $0,1
 seq $0,129167 ; Number of base pyramids in all skew Dyck paths of semilength n.
 add $0,1

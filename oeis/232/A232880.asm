@@ -12,6 +12,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
   bin $4,2
   add $4,$5

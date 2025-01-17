@@ -9,6 +9,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   mov $6,$0
+  add $6,1
   seq $6,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $0,$6
   sub $0,1

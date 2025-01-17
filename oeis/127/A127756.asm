@@ -10,6 +10,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $4,$2
+  add $4,1
   seq $4,94304 ; Sum of all possible sums formed from all but one of the previous terms, starting 1.
   add $1,$4
   mov $3,$0

@@ -2,7 +2,8 @@
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
-add $0,1
+#offset 1
+
 seq $0,32619 ; Numbers k such that k concatenated with k+4 is a prime.
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
 add $0,5

@@ -7,6 +7,7 @@ pow $3,2
 lpb $3
   add $0,1
   mov $1,$2
+  add $1,1
   seq $1,92433 ; Positive numbers from the children's game "Buzz" or "Sevens": positive integers which are divisible by seven, or which contain a seven as a digit.
   sub $1,1
   add $2,1

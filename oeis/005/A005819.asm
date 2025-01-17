@@ -16,6 +16,7 @@ lpb $2
     mov $3,$0
     seq $3,49696 ; a(n)=T(n,n), array T as in A049695.
     trn $3,4
+    add $3,1
     seq $3,92038 ; a(n+1) = a(n) + (a(n) mod 2)^(n mod a(n)), a(1) = 1.
     mov $0,1
   lpe

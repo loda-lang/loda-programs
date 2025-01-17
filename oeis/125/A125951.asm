@@ -22,6 +22,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,93305 ; Number of binary necklaces of length n with no subsequence 000.
   mul $0,$4
   add $1,$0

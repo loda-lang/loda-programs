@@ -2,6 +2,7 @@
 ; Submitted by [AF>Amis des Lapins] Ceclo
 ; 0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
+add $0,1
 seq $0,90396 ; Remainder when the sum of the first n primes is divided by n.
 lpb $0
   div $0,10

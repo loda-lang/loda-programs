@@ -2,8 +2,11 @@
 ; Submitted by Conan
 ; 2,3,5,9,17,33,65,35,129,257,513,1025,2049
 
+#offset 1
+
 mov $1,1
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $1,$2

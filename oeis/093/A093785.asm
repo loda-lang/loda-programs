@@ -1,9 +1,12 @@
 ; A093785: Numbers that are divisible by every digit in their Roman numeral representation.
 ; Submitted by dkester788
 ; 1,2,3,5,10,20,30,50,100,200,300,500,1000,2000,3000
-; Formula: a(n) = a(n-1)+A194350(max(n-1,0)), a(0) = 1
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+A194350(max(n-1,0)), b(0) = 1
+
+#offset 1
 
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $2,$0

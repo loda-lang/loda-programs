@@ -5,6 +5,7 @@
 lpb $0
   add $1,1
   mov $2,$0
+  add $2,1
   seq $2,91732 ; Iphi(n): infinitary analog of Euler's phi function.
   sub $2,1
   mov $0,$2

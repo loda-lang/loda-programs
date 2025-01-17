@@ -8,7 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,91570 ; Sum of odd proper divisors of n. Sum of the odd divisors of n that are less than n.
   mov $4,$3
   mul $4,2

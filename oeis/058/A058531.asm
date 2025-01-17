@@ -7,6 +7,5 @@
 mov $1,$0
 add $1,2
 neq $1,2
-add $0,1
 seq $0,93073 ; McKay-Thompson series of class 18A for the Monster group with a(0) = -1.
 mul $0,$1

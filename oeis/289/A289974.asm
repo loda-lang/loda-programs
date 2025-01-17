@@ -10,7 +10,8 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,90909 ; Terms a(k) of A073869 for which a(k-1), a(k) and a(k+1) are distinct.
+    add $7,1
+    seq $7,90909 ; Terms a(k) of A073869 for which a(k-1) = a(k), and a(k) and a(k+1) are distinct.
     mov $9,10
     add $9,$5
     mov $10,1

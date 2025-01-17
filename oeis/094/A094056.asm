@@ -2,11 +2,14 @@
 ; Submitted by DoctorNow
 ; 1,1,2,3,6,9,14,21,28,37,48
 
+#offset 1
+
+sub $0,1
 pow $0,2
 lpb $0
   sub $0,1
   add $2,1
-  cmp $3,0
+  equ $3,0
   add $3,$2
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $2,$3

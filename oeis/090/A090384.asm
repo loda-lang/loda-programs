@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 4,7,10,13,14,13,16,17,20,19,20
 
+#offset 3
+
+sub $0,3
 mov $2,$0
 mul $2,5
 lpb $2

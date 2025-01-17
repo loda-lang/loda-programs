@@ -11,6 +11,7 @@ pow $3,4
 lpb $3
   mov $4,$2
   mul $4,3
+  add $4,1
   seq $4,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
   bin $4,2
   add $4,$5
@@ -20,7 +21,7 @@ lpb $3
   add $2,$5
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   sub $3,$5
 lpe
 mov $0,$2

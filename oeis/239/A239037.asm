@@ -6,5 +6,6 @@ lpb $0
   div $0,257
   sub $0,1
 lpe
+add $0,1
 seq $0,92621 ; Primes with exactly one prime digit.
 seq $0,85563 ; Sum of the prime digits of n.

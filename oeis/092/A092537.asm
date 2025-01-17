@@ -2,6 +2,9 @@
 ; Submitted by stoneageman
 ; 8,14,14,14,26,26,32,32,32,38,62,62,92
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $5,1
 lpb $0

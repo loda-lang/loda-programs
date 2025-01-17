@@ -11,6 +11,7 @@ lpb $2
   mul $0,2
   max $0,1
   mov $4,$0
+  add $4,1
   seq $4,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $0,$4
   sub $0,1

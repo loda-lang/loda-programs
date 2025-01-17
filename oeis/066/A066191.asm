@@ -10,7 +10,7 @@ lpb $2
   mov $5,$1
   add $5,2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,91570 ; Sum of odd proper divisors of n. Sum of the odd divisors of n that are less than n.
   mov $4,$3
   gcd $3,$5

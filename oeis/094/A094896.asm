@@ -10,7 +10,7 @@ lpb $0
   mov $1,$0
   max $0,0
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  cmp $0,$1
+  equ $0,$1
   sub $0,1
 lpe
 mov $0,$1

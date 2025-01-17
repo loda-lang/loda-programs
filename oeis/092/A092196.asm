@@ -10,7 +10,7 @@ lpb $0
     sub $3,$2
   lpe
   trn $3,1
-  cmp $3,0
+  equ $3,0
   add $1,$3
   mul $3,$0
   sub $0,1

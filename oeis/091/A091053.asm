@@ -2,6 +2,9 @@
 ; Submitted by Fabrice.ltn
 ; 1,2,3,6,9,21,33,78,129,309
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $3,$0
   mul $3,2

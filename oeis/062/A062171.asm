@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,90885 ; Sum of the squares of the exponents in the prime factorization of n.
   trn $3,5
   min $3,1

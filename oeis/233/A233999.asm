@@ -20,6 +20,7 @@ lpb $2
   mov $5,$1
   div $5,$6
   mov $3,$5
+  add $3,2
   seq $3,94828 ; Number of (s(0), s(1), ..., s(2n)) such that 0 < s(i) < 9 and |s(i) - s(i-1)| = 1 for i = 1,2,...,2n, s(0) = 1, s(2n) = 5.
   sub $3,1
   gcd $3,2

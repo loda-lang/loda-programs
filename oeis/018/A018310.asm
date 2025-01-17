@@ -1,7 +1,7 @@
 ; A018310: Divisors of 160.
 ; Submitted by respawner
 ; 1,2,4,5,8,10,16,20,32,40,80,160
-; Formula: a(n) = A094958(truncate((4*truncate(A080194(n)/7)-truncate((4*truncate(A080194(n)/7)-2)/2)-3)/2))
+; Formula: a(n) = A094958(truncate((4*truncate(A080194(n)/7)-truncate((4*truncate(A080194(n)/7)-2)/2)-3)/2)+1)
 
 #offset 1
 
@@ -15,4 +15,5 @@ sub $1,$0
 mov $0,$1
 sub $0,3
 div $0,2
+add $0,1
 seq $0,94958 ; Numbers of the form 2^k or 5*2^k.

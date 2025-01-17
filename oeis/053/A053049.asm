@@ -10,6 +10,7 @@ add $0,1
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,92249 ; Positions of the integers in the standard diagonal enumeration of the rationals (with the integers in the first column and diagonals moving up to the right).
   gcd $3,$0
   add $1,1

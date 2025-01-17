@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,93879 ; First differences of A004001.
   equ $2,0
   add $1,$2

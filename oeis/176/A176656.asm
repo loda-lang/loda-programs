@@ -7,6 +7,7 @@ add $2,2
 mul $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
   add $5,$3
   add $3,$4

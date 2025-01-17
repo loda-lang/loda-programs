@@ -11,6 +11,7 @@ pow $2,4
 lpb $2
   sub $2,15
   mov $3,$1
+  add $3,1
   seq $3,90302 ; Begin with n and consider numbers obtained by successively subtracting 0, 1, 2, 3, ...; a(n) = largest prime that arises in the process, i.e., largest prime of the form n - T(r), where T(r) is the r-th triangular number; or 0 if no such number exists.
   gcd $3,4
   add $3,1

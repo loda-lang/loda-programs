@@ -18,7 +18,6 @@ lpb $3
   sub $6,$0
   dif $6,2
   add $0,$6
-  sub $0,1
   seq $0,91818 ; Sum of the even proper divisors of 2n. Sum of the even divisors of 2n that are less than 2n.
   div $0,2
   mov $2,$3

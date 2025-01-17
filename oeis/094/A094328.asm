@@ -1,7 +1,10 @@
 ; A094328: Iterate the map in A006369 starting at 4.
 ; 4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6
-; Formula: a(n) = -3*n-5*truncate((3*n)/(-5))-10*truncate((-3*n-5*truncate((3*n)/(-5))-10*truncate((-3*n-5*truncate((3*n)/(-5))+binomial(-5,5*truncate((3*n)/(-5))+3*n)+3)/10)+binomial(-5,5*truncate((3*n)/(-5))+3*n)+13)/10)-10*truncate((-3*n-5*truncate((3*n)/(-5))+binomial(-5,5*truncate((3*n)/(-5))+3*n)+3)/10)+binomial(-5,5*truncate((3*n)/(-5))+3*n)+13
+; Formula: a(n) = -3*n-5*truncate((3*n-3)/(-5))-10*truncate((-3*n-5*truncate((3*n-3)/(-5))-10*truncate((-3*n-5*truncate((3*n-3)/(-5))+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+6)/10)+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+16)/10)-10*truncate((-3*n-5*truncate((3*n-3)/(-5))+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+6)/10)+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+16
 
+#offset 1
+
+sub $0,1
 mul $0,3
 mod $0,-5
 mov $1,-5

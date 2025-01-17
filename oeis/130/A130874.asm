@@ -5,6 +5,7 @@
 mov $1,4
 mov $2,$0
 lpb $2
+  add $2,3
   seq $2,91507 ; Product of the anti-divisors of n.
   sub $0,1
   mul $1,$2

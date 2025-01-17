@@ -13,7 +13,8 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,90908 ; Terms a(k) of A073869 for which a(k)=a(k+1).
+    add $7,1
+    seq $7,90908 ; Terms a(k) of A073869 for which a(k) is distinct from a(k-1).
     mov $9,10
     add $9,$5
     mul $7,$$9

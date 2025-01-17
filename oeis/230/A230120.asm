@@ -12,6 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,93505 ; a(n) = floor(A001969(n)/2 + 1/2).
     sub $7,1
     mul $7,$$9

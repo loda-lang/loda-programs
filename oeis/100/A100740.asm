@@ -1,10 +1,10 @@
 ; A100740: Inverse modulo 2 binomial transform of 7^n.
 ; Submitted by Jamie Morken(w1)
 ; 1,6,48,288,2400,14400,115200,691200,5764800,34588800,276710400,1660262400,13835520000,83013120000,664104960000,3984629760000,33232930569600,199397583417600,1595180667340800,9571084004044800
-; Formula: a(n) = A091732(7^n-1)
+; Formula: a(n) = A091732(7^n)
 
 mov $1,7
 pow $1,$0
-sub $1,1
 mov $0,$1
 seq $0,91732 ; Iphi(n): infinitary analog of Euler's phi function.
+sub $1,1

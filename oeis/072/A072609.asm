@@ -15,6 +15,7 @@ lpb $3
   add $6,1
   mul $0,2
   mov $7,$0
+  add $7,1
   seq $7,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $0,$7
   sub $0,1

@@ -16,6 +16,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,91830 ; a(1)=1; a(2n)=(a(n)+1) mod 2, a(2n+1)=a(2n)+1.
     sub $7,1
     equ $7,0

@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,90942 ; n-th arithmetic mean = prime(n).
   sub $3,1
   mov $5,$3

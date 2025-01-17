@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
+  add $3,5
   seq $3,91507 ; Product of the anti-divisors of n.
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
   mov $5,1

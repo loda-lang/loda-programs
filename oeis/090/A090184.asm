@@ -1,9 +1,14 @@
 ; A090184: Number of partitions of the n-th 3-smooth number into parts 2 and 3.
 ; Submitted by Jamie Morken(l1)
 ; 0,1,1,1,2,2,2,3,3,4,5,5,6,7,9,10,11,13,14,17,19,22,25,28,33,37,41,43,49,55,65,73,82,86,97,109,122,129,145,163,171,193,217,244,257,289,325,342,365,385,433,487,513,577,649,683,730,769,865,973,1025,1094,1153,1297,1366,1459,1537,1729,1945,2049,2188,2305,2593,2731,2917,3073,3281,3457,3889,4097
-; Formula: a(n) = A011960(A055600(n+1)-1)
+; Formula: a(n) = -truncate((A055600(n)-2)/3)+truncate((A055600(n)-1)/2)
 
-add $0,1
+#offset 1
+
 seq $0,55600 ; Numbers of form 2^i*3^j + 1 with i, j >= 0.
-sub $0,1
-seq $0,11960 ; Number of ferrites M_2Y_n that repeat after 6n+10 layers.
+sub $0,2
+mov $1,$0
+div $1,3
+add $0,1
+div $0,2
+sub $0,$1

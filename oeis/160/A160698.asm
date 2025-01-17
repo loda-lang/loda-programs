@@ -6,7 +6,7 @@ sub $0,1
 lpb $0
   trn $0,1
   mov $2,$0
-  add $2,1
+  add $2,2
   seq $2,91176 ; Numbers n such that prime(n) is of the form 2*k^2 - 1.
   div $0,2
   seq $0,264668 ; a(n) = A264600(n) - A061486(n).

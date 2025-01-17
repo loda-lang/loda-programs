@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,94920 ; a(n) = (5^n-1)/4 mod n.
   equ $3,0
   sub $0,$3

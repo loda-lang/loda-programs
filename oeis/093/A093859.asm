@@ -2,12 +2,16 @@
 ; Submitted by BlackOps13
 ; 2,4,9,11,18,21,23,29,36,41,43,45,47,58,61,67,72,75,82,85,89,90,94,115,116,122,128,130,143,144,149,150,162,163,165,167,168,170,175,178,180,185,202,206,207,209,211,213,214,218,219,223,227,229,230,233,237,243
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,2
 add $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,93811 ; Sum of the digital products of the divisors of n.
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2

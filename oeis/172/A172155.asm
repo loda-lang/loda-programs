@@ -7,6 +7,7 @@ add $0,3
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,91304 ; a(n) = Omega(2n-1) (number of prime factors of the n-th odd number, counted with multiplicity).
   sub $0,1
   mul $1,$2

@@ -2,7 +2,8 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,5,11,11,22,42,77,77,135,231,385,385,627,1002,627,1575,1575,2436,3718,5604,5604,8349,5604,12310,17977,17977,26015,37338,53174,53174,75175,105558,53174,147273,147273,204226,281589,204226,386155,386155
 
-add $0,1
+#offset 1
+
 seq $0,85271 ; Difference between n-th composite number and its smallest prime divisor.
 mul $0,2
 lpb $0

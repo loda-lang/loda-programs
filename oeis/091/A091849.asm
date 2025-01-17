@@ -1,9 +1,11 @@
 ; A091849: Maximal size of (n,4,2) optical orthogonal code.
 ; Submitted by Bok
 ; 1,1,1,3,3,3,4,6,7,8,9,11,12,14,15,17,18
-; Formula: a(n) = b(max(n-2,0))+1, b(n) = truncate((truncate((3*n-7)/2)*(3*n-4))/(3*n-1))+2, b(3) = 2, b(2) = 2, b(1) = 2, b(0) = 0
+; Formula: a(n) = b(max(n-9,0))+1, b(n) = truncate((truncate((3*n-7)/2)*(3*n-4))/(3*n-1))+2, b(3) = 2, b(2) = 2, b(1) = 2, b(0) = 0
 
-sub $0,2
+#offset 7
+
+sub $0,9
 lpb $0
   sub $0,1
   add $1,2

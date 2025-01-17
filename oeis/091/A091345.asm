@@ -15,7 +15,12 @@ lpb $2
   seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   mov $5,0
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  seq $0,123293 ; Number of permutations of n distinct letters (ABCD...) each of which appears 4 times and having n-3 fixed points.
+  add $0,1
+  bin $0,3
+  mov $6,0
+  max $6,$0
+  add $0,$6
+  mul $0,64
   mul $0,$4
   add $1,$0
 lpe

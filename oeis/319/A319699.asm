@@ -10,6 +10,5 @@ add $0,1
 sub $1,$0
 dif $1,2
 add $0,$1
-sub $0,1
 seq $0,91818 ; Sum of the even proper divisors of 2n. Sum of the even divisors of 2n that are less than 2n.
 div $0,2

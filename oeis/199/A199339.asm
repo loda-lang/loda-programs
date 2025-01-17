@@ -12,6 +12,7 @@ lpb $2
   sub $1,$2
   mul $1,2
   mov $5,$1
+  add $5,1
   seq $5,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $1,$5
   sub $1,1

@@ -9,9 +9,10 @@ lpb $3
   add $0,$3
   sub $0,2
   mov $6,$0
-  cmp $6,0
+  equ $6,0
   add $0,$6
   max $0,0
+  add $0,1
   seq $0,93515 ; Numbers k such that either k or k-1 is a prime.
   bin $0,2
   mov $2,$3

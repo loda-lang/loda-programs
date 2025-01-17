@@ -22,7 +22,7 @@ lpb $0
   mod $4,2
   sub $5,$3
   add $5,$4
-  cmp $3,0
+  equ $3,0
   mov $4,$6
 lpe
 mov $0,$5

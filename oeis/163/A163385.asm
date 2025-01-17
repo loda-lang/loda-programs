@@ -22,6 +22,7 @@ lpb $2
   add $1,1
   mov $3,$6
   mul $3,$1
+  add $3,1
   seq $3,90405 ; a(n) = PrimePi(n+2) - PrimePi(n).
   equ $3,1
   sub $0,$3

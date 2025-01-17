@@ -8,7 +8,7 @@ lpb $0
   dif $2,5
   dif $2,7
   dif $2,3
-  cmp $2,$0
+  equ $2,$0
   sub $0,1
   add $1,$2
 lpe

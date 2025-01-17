@@ -10,9 +10,9 @@ lpb $0
   div $2,2
   mov $3,4
   pow $3,$2
-  sub $3,1
   mov $2,$3
   seq $2,91732 ; Iphi(n): infinitary analog of Euler's phi function.
+  sub $3,1
   add $1,$2
 lpe
 mov $0,$2

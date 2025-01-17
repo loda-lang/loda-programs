@@ -1,7 +1,11 @@
 ; A090385: Maximal number of vertices of polytope P_T associated with any tree having n nodes.
 ; Submitted by Science United
 ; 7,8,11,14,15,20,21,22,25,28,31,32,34
+; Formula: a(n) = sqrtint(2*(sqrtint(2*(n-3)^2)+sqrtint(sqrtint(2*(n-3)^2)+n+2)-1)^2)+6
 
+#offset 3
+
+sub $0,3
 mov $1,$0
 pow $1,2
 mul $1,2

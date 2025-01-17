@@ -1,8 +1,9 @@
 ; A008310: Triangle of coefficients of Chebyshev polynomials T_n(x).
 ; Submitted by PDW
 ; 1,1,-1,2,-3,4,1,-8,8,5,-20,16,-1,18,-48,32,-7,56,-112,64,1,-32,160,-256,128,9,-120,432,-576,256,-1,50,-400,1120,-1280,512,-11,220,-1232,2816,-2816,1024,1,-72,840,-3584,6912,-6144,2048,13,-364,2912,-9984,16640,-13312,4096,-1,98,-1568,9408,-26880,39424,-28672,8192,-15,560,-6048,28800,-70400,92160,-61440,16384,1,-128,2688,-21504,84480,-180224,212992,-131072
-; Formula: a(n) = A118800(A091995(n)-1)
+; Formula: a(n) = A118800(A091995(n+1)-1)
 
+add $0,1
 seq $0,91995 ; Permutation of the natural numbers.
 sub $0,1
 seq $0,118800 ; Triangle read by rows: T satisfies the matrix products: C*T*C = T^-1 and T*C*T = C^-1, where C is Pascal's triangle.

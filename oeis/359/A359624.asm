@@ -8,6 +8,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,90885 ; Sum of the squares of the exponents in the prime factorization of n.
   equ $3,4
   add $5,9

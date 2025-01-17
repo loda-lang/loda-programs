@@ -11,6 +11,7 @@ lpb $2
   add $3,3
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$1
+  add $5,1
   seq $5,92403 ; a(n) = sigma(n) + sigma(n+1).
   sub $5,$3
   mov $3,$5

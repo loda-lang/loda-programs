@@ -13,6 +13,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,94954 ; Array T(k,n) read by antidiagonals. G.f.: x(1-x)/(1-kx+x^2), k>1.
   add $1,$0
 lpe
