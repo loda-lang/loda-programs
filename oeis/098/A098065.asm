@@ -2,8 +2,9 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,5,9,14,21,32,43,58,75,100
 
+#offset 2
+
 mov $3,1
-add $0,2
 lpb $0
   sub $0,1
   add $1,$0

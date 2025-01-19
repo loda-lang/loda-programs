@@ -8,6 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   trn $0,1
+  add $0,1
   seq $0,98780 ; First n numbers in binary representation concatenated in reverse order.
   div $0,2
   seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.

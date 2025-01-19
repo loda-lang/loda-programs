@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,104704 ; Numbers n such that in rearrangement A104696, they stay in place (position of n in A104696 is equal to n ).
 mov $1,$0
 mov $0,0

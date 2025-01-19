@@ -14,6 +14,7 @@ lpb $0
   add $2,1
   mov $3,2
   pow $3,$2
+  add $2,1
   seq $2,102091 ; Number of perfect matchings in the C_{2n} X P_3 graph (C_{2n} is the cycle graph on 2n vertices and P_3 is the path graph on 3 vertices).
   add $2,$3
   div $2,6

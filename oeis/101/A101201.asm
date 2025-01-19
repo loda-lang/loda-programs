@@ -2,7 +2,8 @@
 ; Submitted by Christian Krause
 ; 0,2,5,9,15,21,28,37,47,60,71,84
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mov $3,$0
 dif $3,2

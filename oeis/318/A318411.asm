@@ -8,20 +8,18 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,96226 ; a(n) is the least exponent k > 1 such that m^k is congruent to m modulo n for all natural numbers m, or a(n) = 1 if no such k exists.
   mov $6,1
-  cmp $6,$3
-  cmp $6,0
+  neq $6,$3
   mul $6,$3
   mov $3,$6
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   mov $5,$6
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

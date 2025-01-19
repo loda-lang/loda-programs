@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,104278 ; Numbers m such that 2m+1 and 2m-1 are not primes.
   pow $0,2
   mov $1,$0

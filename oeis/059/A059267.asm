@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,99475 ; Number of divisors d of n such that d+2 is also a divisor of n.
   min $3,1
   sub $0,$3

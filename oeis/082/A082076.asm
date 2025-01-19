@@ -11,6 +11,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,95278 ; Numbers k such that 4k + 3 is prime.
   mov $2,$3
   mul $2,$0

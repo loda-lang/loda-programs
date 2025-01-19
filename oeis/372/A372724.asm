@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,100367 ; Even numbers with two prime factors, not counting multiplicity.
   pow $0,2
   mov $1,$0

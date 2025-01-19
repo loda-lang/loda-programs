@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,103128 ; a(n) = floor(sqrt(2n-1)).
   sub $0,$2
   pow $2,2

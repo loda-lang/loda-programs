@@ -1,10 +1,12 @@
 ; A103898: Numbers n such that concatenation of next a(n) primes is prime.
 ; Submitted by Science United
 ; 2,3,17,2,5,6,2,7
-; Formula: a(n) = c(n+2)+1, b(n) = truncate((b(n-1)+b(n-3)+1)/b(n-1)), b(2) = 2, b(1) = 1, b(0) = 29, c(n) = b(n-1), c(2) = 1, c(1) = 29, c(0) = 0
+; Formula: a(n) = c(n+1)+1, b(n) = truncate((b(n-1)+b(n-3)+1)/b(n-1)), b(2) = 2, b(1) = 1, b(0) = 29, c(n) = b(n-1), c(2) = 1, c(1) = 29, c(0) = 0
+
+#offset 1
 
 mov $2,29
-add $0,2
+add $0,1
 lpb $0
   sub $0,1
   mov $1,$3

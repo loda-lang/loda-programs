@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,96500 ; Let f(n) = smallest prime > n; a(n) = f(n+1) - f(n).
   add $3,1
   seq $3,11960 ; Number of ferrites M_2Y_n that repeat after 6n+10 layers.

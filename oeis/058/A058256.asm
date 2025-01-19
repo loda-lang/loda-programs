@@ -16,7 +16,6 @@ lpb $3
   seq $4,102476 ; Least modulus with 2^n square roots of 1.
   add $4,1
   div $4,4
-  sub $4,1
   seq $4,96226 ; a(n) is the least exponent k > 1 such that m^k is congruent to m modulo n for all natural numbers m, or a(n) = 1 if no such k exists.
   sub $4,1
   mov $2,$3

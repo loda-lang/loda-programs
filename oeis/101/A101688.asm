@@ -1,6 +1,7 @@
 ; A101688: Once 1, once 0, repeat, twice 1, twice 0, repeat, thrice 1, thrice 0, ... and so on.
 ; Submitted by omegaintellisys
 ; 1,0,1,0,1,1,0,0,1,1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,0
+; Formula: a(n) = -2*truncate((sqrtint(8*n+6)+1)/2)+sqrtint(8*n+6)+1
 
 mul $0,8
 add $0,6

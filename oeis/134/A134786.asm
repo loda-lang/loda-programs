@@ -7,6 +7,7 @@ lpb $0
   div $0,2
   add $1,1
 lpe
+sub $0,1
 seq $0,97340 ; McKay-Thompson series of class 4A for the Monster group with a(0) = 24.
 mul $1,3
 add $1,$0

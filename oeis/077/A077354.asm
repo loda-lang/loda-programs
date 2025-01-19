@@ -12,9 +12,9 @@ lpb $5
   sub $6,$1
   mov $0,$7
   add $0,$5
-  sub $0,1
   mov $8,$0
   seq $8,101301 ; The sum of the first n primes, minus n.
+  sub $0,1
   add $0,$8
   add $2,$6
   mov $3,$2

@@ -14,8 +14,9 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,103440 ; a(n) = Sum[d|n, d==1 (mod 3), d^2] - Sum[d|n, d==2 (mod 3), d^2].
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

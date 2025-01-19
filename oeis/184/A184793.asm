@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,95281 ; Upper Wythoff primes, i.e., primes in A001950.
   seq $3,230980 ; Number of primes <= n, starting at n=0.
   sub $3,1

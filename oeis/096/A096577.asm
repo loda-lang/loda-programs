@@ -2,6 +2,9 @@
 ; Submitted by Gunnar Hjern
 ; 1,0,0,0,1,0,1,0,2,0,2,0,2,0,4
 
+#offset 1
+
+sub $0,1
 mov $8,$0
 mov $7,2
 lpb $7

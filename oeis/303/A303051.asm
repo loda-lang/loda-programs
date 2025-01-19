@@ -6,4 +6,5 @@ lpb $0
   add $0,1
   seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
 lpe
+add $0,1
 seq $0,98236 ; Number of ways to write n as the sum of two positive distinct squarefree numbers.

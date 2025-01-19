@@ -1,8 +1,10 @@
 ; A095857: Number of simple graphs g on n nodes with |Aut(g)| = 48.
 ; Submitted by USTL-FIL (Lille Fr)
-; 0,0,0,0,0,8,28,96,660
+; 0,0,0,0,0,8,28,96,660,6284
 
-sub $0,4
+#offset 1
+
+sub $0,5
 lpb $0
   sub $0,1
   add $3,1

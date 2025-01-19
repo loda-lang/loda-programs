@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,96461 ; a(1)=1, a(2)=2; for n >= 2, a(n+1) = a(n) + sum of prime factors of a(n).
   mul $0,$5
   mov $2,$5

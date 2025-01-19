@@ -9,14 +9,16 @@ lpb $2
   sub $2,7
   mov $3,$1
   seq $3,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-  seq $3,4174 ; Triangle of coefficients of Euler polynomials 2^n*E_n(x) (exponents in increasing order).
+  mov $6,$3
+  seq $6,81733 ; Triangle read by rows, T(n,k) = 2^(n-k)*[x^k] Euler_polynomial(n, x), for n >= 0, k >= 0.
+  seq $3,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+  mul $3,$6
   mov $5,$3
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

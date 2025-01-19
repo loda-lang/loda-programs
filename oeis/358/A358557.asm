@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,98464 ; Numbers k such that lcm(1,2,3,...,k) equals the denominator of the k-th harmonic number H(k).
   sub $3,1
   add $0,1

@@ -5,7 +5,7 @@ mul $0,2
 mov $1,2
 pow $1,$0
 gcd $1,$0
-cmp $0,$1
+equ $0,$1
 pow $1,$0
 mov $0,$1
 sub $0,1

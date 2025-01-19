@@ -6,6 +6,7 @@ lpb $1
   sub $1,1
   mov $2,$1
   max $2,0
+  add $2,1
   seq $2,99738 ; a(n) = 2*Sum_{k=1..n} (n+1-k) (Sum_{j|k} 1/floor(n/j)).
   add $0,$2
   trn $1,$0

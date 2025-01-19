@@ -1,8 +1,10 @@
 ; A095858: Number of simple graphs g on n nodes with |Aut(g)| = 72.
 ; Submitted by [SG]FX
-; 0,0,0,0,0,2,4,28,179
+; 0,0,0,0,0,2,4,28,179,1372
 
-sub $0,4
+#offset 1
+
+sub $0,5
 lpb $0
   sub $0,1
   div $3,2

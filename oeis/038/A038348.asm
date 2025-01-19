@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,2
   seq $0,96914 ; Number of partitions of 2*n into distinct parts with exactly two odd parts.
   mov $2,$3
   mul $2,$0

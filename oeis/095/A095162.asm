@@ -2,8 +2,9 @@
 ; Submitted by Landjunge
 ; 1,2,3,6,8,15,17,26,31,42,49,62
 
+#offset 1
+
 mov $6,-1
-add $0,1
 lpb $0
   sub $0,1
   sub $4,$7

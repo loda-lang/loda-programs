@@ -5,7 +5,7 @@
 lpb $0
   sub $0,1
   mov $2,$1
-  dis $2,2
+  dgs $2,2
   add $1,1
   add $1,$2
 lpe

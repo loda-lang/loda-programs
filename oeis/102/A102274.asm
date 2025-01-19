@@ -2,8 +2,11 @@
 ; Submitted by Ralfy
 ; 47,59,83,131,167,227,251,311,383,419,467,479,503,563,587,647,719,839,887,971,983,1091,1151,1223,1259,1307,1319,1427,1487,1511,1559,1571,1811,1823,1847,1907,1931,1979,2063,2099,2243,2267,2351,2399,2411,2579,2663,2687,2819,2903,2939,2999
 
+#offset 1
+
 mov $2,$0
-add $2,8
+sub $0,1
+add $2,7
 pow $2,3
 lpb $2
   mul $5,0
@@ -16,7 +19,10 @@ lpb $2
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $3,$1
-  seq $3,11657 ; A binary m-sequence: expansion of reciprocal of x^3 + x + 1 (mod 2, shifted by 2 initial 0's).
+  mod $3,7
+  trn $3,1
+  dif $3,2
+  mod $3,2
   sub $0,$3
   add $1,2
   mov $3,$5

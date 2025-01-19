@@ -13,7 +13,7 @@ lpb $2
   mov $5,$1
   add $5,2
   mul $6,$5
-  add $6,2
+  add $6,3
   seq $6,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
   mov $3,$6
   mul $3,$1

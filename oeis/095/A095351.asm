@@ -1,9 +1,10 @@
 ; A095351: Total number of edges in all labeled graphs on n nodes.
 ; Submitted by Science United
 ; 0,1,12,192,5120,245760,22020096,3758096384,1236950581248,791648371998720,990791918021509120,2434970217729660813312,11787026741242634453385216,112652543574969605015820304384
-; Formula: a(n) = floor((binomial(n+1,2)*2^binomial(n+1,2))/2)
+; Formula: a(n) = floor((binomial(n,2)*2^binomial(n,2))/2)
 
-add $0,1
+#offset 1
+
 bin $0,2
 mov $1,2
 pow $1,$0

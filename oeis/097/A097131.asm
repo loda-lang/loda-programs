@@ -9,6 +9,6 @@ lpb $0
   add $1,$2
   add $2,$1
 lpe
-cmp $0,0
+equ $0,0
 mul $0,$2
 add $0,$1

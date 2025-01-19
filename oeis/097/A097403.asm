@@ -12,7 +12,7 @@ lpb $3
   lpb $5
     sub $5,1
     mov $6,$0
-    cmp $6,0
+    equ $6,0
     div $0,$2
     add $1,$5
     add $2,1

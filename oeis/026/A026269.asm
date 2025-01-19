@@ -12,6 +12,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,102071 ; Pairwise sums of general ballot numbers (A002026).
   mov $4,$3
   mul $4,$0

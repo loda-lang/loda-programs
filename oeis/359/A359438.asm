@@ -4,6 +4,7 @@
 
 pow $0,2
 trn $0,1
+add $0,1
 seq $0,99774 ; Number of divisors of 2*n-1.
 lpb $0
   mov $0,8

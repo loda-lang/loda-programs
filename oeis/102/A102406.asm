@@ -11,7 +11,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   seq $0,238111 ; Twice the large Schroeder numbers A006318.
-  cmp $1,1
+  equ $1,1
   sub $1,$5
   mul $1,2
   bin $1,$4

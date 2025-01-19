@@ -1,8 +1,11 @@
 ; A102297: Number of distinct divisors of n+1 where n and n+1 are composite or twin composite numbers.
 ; Submitted by Vester
 ; 1,2,2,1,2,2,1,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,3,2,3,2,2,2,3,1,2,2,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,3,1,2,2,2,1,3,2,3,2,2,2,2,2,2,2,2,2,2,2,2
-; Formula: a(n) = A001221(2*A153238(floor(n/2))-2*floor(n/2)+n+3)
+; Formula: a(n) = A001221(2*A153238(floor((n-1)/2))-2*floor((n-1)/2)+n+2)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $0,2
 mov $2,$0

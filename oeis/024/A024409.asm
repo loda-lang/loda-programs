@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,4
+  add $3,1
   seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
   mul $3,4
   seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.

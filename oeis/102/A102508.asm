@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 1,3,7,13,21,31,39,57,73,91,95,133
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $2,$1
@@ -19,7 +22,7 @@ lpb $0
   add $4,1
   sub $1,$2
   add $1,2
-  cmp $5,$0
+  equ $5,$0
   add $5,$2
 lpe
 mov $0,$2

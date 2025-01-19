@@ -2,6 +2,9 @@
 ; Submitted by Jon Maiga
 ; 3,4,5,6,7,8,9,12,14,15,18,19,20,21,22,23,24,25
 
+#offset 1
+
+sub $0,1
 mov $6,$0
 mov $4,$0
 add $4,1

@@ -4,7 +4,7 @@
 
 lpb $0
   sub $0,3
-  cmp $1,1
+  equ $1,1
   mov $2,$0
   add $2,$4
   bin $2,$0

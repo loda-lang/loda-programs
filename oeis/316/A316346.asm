@@ -7,10 +7,10 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$4
-  sub $0,1
   mov $2,$0
   seq $2,102928 ; Numerator of the harmonic mean of the first n positive integers.
   mov $4,2
+  sub $0,1
   bin $0,$3
   gcd $1,$2
 lpe

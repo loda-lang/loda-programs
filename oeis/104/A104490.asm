@@ -2,6 +2,9 @@
 ; Submitted by GolfSierra
 ; 1,1,11,1,101,101,11,1,1001,1001,1011,1,101,101,11,1,10001,10001,10011,10001,101,101,11,1,1001,1001,1011,1,101,101,11,1
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 seq $2,105033 ; Read binary numbers downwards to the right.
 mov $4,4

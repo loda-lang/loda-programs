@@ -7,6 +7,7 @@ mov $3,2
 lpb $3
   sub $3,1
   trn $0,1
+  add $0,1
   seq $0,99896 ; A permutation of the natural numbers where a(n) = n XOR [n/2] XOR [n/4].
   mov $2,$0
 lpe

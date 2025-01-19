@@ -25,6 +25,7 @@ lpb $4
   div $9,2
   mov $10,2
   pow $10,$9
+  add $0,1
   seq $0,96010 ; Number of different cycles computed with the generalized 3x+1 problem using C=2, B=Cn+m, A=C^m.
   add $0,$10
   div $0,2

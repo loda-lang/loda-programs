@@ -7,6 +7,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,101301 ; The sum of the first n primes, minus n.
   mov $5,$1
   add $5,$6

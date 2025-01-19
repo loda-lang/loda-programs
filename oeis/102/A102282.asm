@@ -2,7 +2,8 @@
 ; Submitted by NeoGen
 ; 0,2,3,4,7,11,12,14
 
-add $0,1
+#offset 1
+
 lpb $0
   add $3,$0
   mov $2,$0

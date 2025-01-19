@@ -12,6 +12,7 @@ add $2,12
 lpb $2
   mov $3,$1
   trn $3,2
+  add $3,1
   seq $3,96501 ; Difference between primes preceding n+1 and n.
   mov $5,$3
   gcd $5,$1

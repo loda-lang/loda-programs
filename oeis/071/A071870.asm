@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,100387 ; a(n) is the largest number x such that for m=n to n+x-1, A006530(m) decreases.
   trn $3,2
   min $3,1

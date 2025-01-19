@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,103374 ; a(1) = a(2) = a(3) = a(4) = a(5) = a(6) = a(7) = 1 and for n>7: a(n) = a(n-6) + a(n-7).
   mov $2,$5
   mul $2,$4

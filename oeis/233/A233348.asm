@@ -7,7 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,12
+  add $3,13
   seq $3,96500 ; Let f(n) = smallest prime > n; a(n) = f(n+1) - f(n).
   dif $3,2
   dif $3,2

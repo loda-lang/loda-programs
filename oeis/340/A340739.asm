@@ -8,6 +8,7 @@ mov $1,2
 mov $2,$0
 lpb $2
   mul $2,2
+  add $2,1
   seq $2,102419 ; "Dropping time" in 3x+1 problem starting at n (number of steps to reach a lower number than starting value); a(1) = 0 by convention. Also called glide(n).
   mov $4,$2
   div $4,8

@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,99774 ; Number of divisors of 2*n-1.
   sub $0,1
   mul $1,$2

@@ -1,6 +1,17 @@
 ; A101566: Binary partition sequence matrix.
 ; 1,1,1,2,1,1,2,2,1,1,4,2,2,1,1,4,4,2,2,1,1,6,4,4,2,2,1,1,6,6,4,4,2,2,1,1,10,6,6,4,4,2,2,1,1,10,10,6,6,4,4,2,2,1,1,14,10,10,6,6,4,4,2,2,1,1,14,14,10,10,6,6,4,4,2,2,1,1,20,14
-; Formula: a(n) = A008643(A025581(n))
 
-seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
-seq $0,8643 ; Molien series for group of 4 X 4 upper triangular matrices over GF(2).
+mov $2,0
+lpb $0
+  add $2,1
+  sub $0,$2
+lpe
+sub $2,$0
+mov $0,$2
+div $0,2
+mov $1,$0
+dif $1,2
+add $0,5
+bin $0,3
+sub $0,$1
+div $0,8

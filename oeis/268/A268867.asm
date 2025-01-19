@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  add $0,1
+  add $0,2
   seq $0,96012 ; Numbers k such that k^2+1 and (k+2)^2+1 are both prime; twin k^2+1 primes.
   sub $0,1
   mov $2,$3

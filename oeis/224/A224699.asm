@@ -12,6 +12,7 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,104481 ; Bisection of A104477.
   add $4,1
   add $4,$3

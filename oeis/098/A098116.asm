@@ -1,16 +1,28 @@
 ; A098116: a(n) = 3^(p-1) + (3^p - 1) where p is the n-th prime.
 ; Submitted by gingavasalata
 ; 11,35,323,2915,236195,2125763,172186883,1549681955,125524238435,91507169819843,823564528378595,600378541187996483,48630661836227715203,437675956526049436835,35451752478610004383715
-; Formula: a(n) = 4*truncate(3^(A015919(n+1)-1))-1
 
 #offset 1
 
 mov $2,$0
 add $2,1
-seq $2,15919 ; Positive integers k such that 2^k == 2 (mod k).
-sub $2,1
+mov $3,0
+mov $4,0
+mov $5,$2
+pow $5,4
+lpb $5
+  add $3,1
+  mov $6,$4
+  gcd $6,$3
+  div $6,$3
+  sub $2,$6
+  add $4,1
+  mul $4,2
+  sub $5,$2
+lpe
 mov $1,3
-pow $1,$2
+pow $1,$3
+mov $2,$3
 mov $0,$1
 mul $0,4
 sub $0,1

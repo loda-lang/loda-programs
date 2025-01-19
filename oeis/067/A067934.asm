@@ -9,6 +9,7 @@ mov $2,$0
 mul $2,10
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,95250 ; a(n) = 11111111... (n times) = (10^n-1)/9 reduced mod n.
   equ $3,$4
   sub $0,$3

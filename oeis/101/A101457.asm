@@ -7,8 +7,15 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
-  seq $3,176055 ; Decimal expansion of (2+sqrt(5))/2.
+  mul $3,2
+  add $3,5
+  mov $6,10
+  pow $6,$3
+  mov $3,$6
+  div $3,8
+  add $3,4
+  nrt $3,2
+  mod $3,10
   trn $3,1
   mov $5,$3
   add $5,4

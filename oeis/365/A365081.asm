@@ -5,6 +5,7 @@
 #offset 1
 
 mov $2,2
+add $0,1
 seq $0,97932 ; Positive integers n such that 2n-19 is prime.
 sub $0,10
 bin $0,2

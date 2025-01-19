@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w4)
 ; 10040,110440,1014040,11154440,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 seq $0,6943 ; Rows of Sierpiński's triangle (Pascal's triangle mod 2).
 lpb $1

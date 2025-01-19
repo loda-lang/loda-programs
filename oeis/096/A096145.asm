@@ -8,5 +8,5 @@ lpb $0
 lpe
 mov $1,$2
 bin $1,$0
-dis $1,10
+dgs $1,10
 mov $0,$1

@@ -10,12 +10,13 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
   seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
   div $3,8
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

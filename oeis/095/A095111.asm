@@ -12,6 +12,6 @@ lpb $0
   div $2,2
 lpe
 mov $0,$2
-dis $0,2
+dgs $0,2
 add $0,1
 mod $0,2

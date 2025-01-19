@@ -14,12 +14,11 @@ lpb $2
   mod $5,$4
   mov $6,$4
   mul $6,$5
-  cmp $1,0
+  equ $1,0
   add $1,$6
   mov $5,$0
   trn $5,$4
-  cmp $5,0
-  cmp $5,0
+  neq $5,0
   sub $2,$5
   mov $3,$7
 lpe

@@ -2,9 +2,11 @@
 ; Submitted by Conan
 ; 0,1,1,2,1,0,1,3,2,0,1,0,1,0,0,4,1,0,1,0,0,0,1,0,2,0,3,0,1,0,1,5,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,2,0,0,0,1,0,0,0,0,0,1,0,1,0,0,6,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
 
+#offset 1
+
 mov $2,$0
-add $2,1
 equ $2,1
+sub $0,1
 mov $1,$0
 seq $1,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
 add $1,$2

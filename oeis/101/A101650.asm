@@ -13,13 +13,12 @@ lpb $0
   mov $10,$3
   trn $10,$0
   mov $5,$10
-  cmp $5,0
+  equ $5,0
   mul $5,$0
   mov $9,$10
   add $9,$5
   mov $11,$3
-  cmp $11,$0
-  cmp $11,0
+  neq $11,$0
   mul $9,$11
   mov $12,$0
   mov $8,$9
@@ -34,7 +33,7 @@ lpb $0
     mov $8,$9
     div $12,2
   lpe
-  cmp $4,0
+  equ $4,0
   add $1,$4
 lpe
 mov $0,$1

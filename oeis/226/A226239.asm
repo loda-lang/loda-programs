@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,2
   seq $2,98065 ; Minimal span for an absolute difference triangle of distinct entries whose base consists of a sequence of n positive integers.
   sub $0,2
   trn $0,8

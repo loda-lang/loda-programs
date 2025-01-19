@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,2
   seq $2,102693 ; a(n) is the number of digraphs (not allowing loops) with vertices 1,2,...,n that have a unique Eulerian tour (up to cyclic shift).
   sub $0,1
   mul $1,$2

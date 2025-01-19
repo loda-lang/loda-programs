@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   mov $5,$3
+  add $5,1
   seq $5,101301 ; The sum of the first n primes, minus n.
   add $3,$5
   add $3,2

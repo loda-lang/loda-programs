@@ -2,6 +2,9 @@
 ; Submitted by Gunnar Hjern
 ; 1,105,15,11,10,10,10,10,10,10,10,10,10,10,10
 
+#offset 1
+
+sub $0,1
 mov $5,13
 mov $3,$0
 mul $3,2
@@ -11,7 +14,7 @@ lpb $3
   add $6,$2
   add $2,$7
   add $4,$7
-  cmp $1,1
+  equ $1,1
   add $1,$6
   add $1,$2
   mul $1,16

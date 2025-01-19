@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   trn $0,1
   mov $1,$0
+  add $1,1
   seq $1,97697 ; Numbers k such that 4*k^2 + 3 is prime.
   div $0,$1
 lpe

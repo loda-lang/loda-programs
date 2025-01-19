@@ -30,6 +30,7 @@ lpb $2
   div $10,2
   mov $11,2
   pow $11,$10
+  add $0,1
   seq $0,96010 ; Number of different cycles computed with the generalized 3x+1 problem using C=2, B=Cn+m, A=C^m.
   add $0,$11
   div $0,2

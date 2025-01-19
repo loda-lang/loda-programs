@@ -5,6 +5,7 @@
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,97603 ; Multiples of perfect numbers.
   add $2,1
   mul $0,0

@@ -5,8 +5,9 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,100821 ; a(n) = 1 if prime(n) + 2 = prime(n+1), otherwise 0.
   sub $2,1
-  cmp $1,$0
+  equ $1,$0
 lpe
 mov $0,$1

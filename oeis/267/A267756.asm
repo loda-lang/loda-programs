@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,101301 ; The sum of the first n primes, minus n.
   bin $3,3
   gcd $3,2

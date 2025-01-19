@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,100872 ; a(n) = (1/sqrt(5)) * Sum_{k>0} k^(2n)/phi^(2k) where phi = (1+sqrt(5))/2 = A001622.
     mul $7,2
     mov $9,10

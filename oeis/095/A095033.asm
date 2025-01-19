@@ -2,8 +2,10 @@
 ; Submitted by mikey
 ; 1,4,5,6,7,9,11,16,17
 
+#offset 1
+
 mov $1,$0
-add $1,1
+sub $0,1
 mov $3,$1
 pow $3,2
 lpb $3
@@ -16,7 +18,7 @@ lpb $3
   add $2,2
   mov $5,$1
   max $5,0
-  cmp $5,$1
+  equ $5,$1
   mul $3,$5
   sub $3,1
 lpe

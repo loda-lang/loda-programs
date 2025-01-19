@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,100387 ; a(n) is the largest number x such that for m=n to n+x-1, A006530(m) decreases.
   equ $3,2
   sub $0,$3

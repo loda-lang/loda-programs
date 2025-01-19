@@ -14,7 +14,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,98059 ; Primes preceding gaps divisible by 4.
   seq $0,13634 ; a(n) = nextprime(n) + n.
   div $0,2

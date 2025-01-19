@@ -2,8 +2,11 @@
 ; Submitted by Kotenok2000
 ; 8,14,20,26,44,48,50,54,56,68,74,86,90,98,114,116,120,128,134,140,146,158,168,174,176,186,194,200,204,216,224,230,254,260,278,284,288,296,300,308,320,326,338,350,354,380,384,386,398,404,410,414,426,428,440
 
+#offset 1
+
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
@@ -17,7 +20,17 @@ lpb $2
   mul $3,$1
   add $3,$5
   add $3,1
-  seq $3,55976 ; Remainder when (n-1)! + 1 is divided by n.
+  mov $6,$3
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $6,1
+  sub $3,1
+  mov $8,2
+  sub $8,$3
+  mov $7,$8
+  equ $7,0
+  add $8,$7
+  div $3,$8
+  mul $3,$6
   sub $0,$3
   add $1,1
   mov $4,$0

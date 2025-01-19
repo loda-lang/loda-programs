@@ -11,6 +11,7 @@ lpb $2
   add $1,1
   mov $3,$1
   mul $3,4
+  add $3,1
   seq $3,99985 ; a(n) = rad(2n), where rad = A007947.
   seq $3,4018 ; Theta series of square lattice (or number of ways of writing n as a sum of 2 squares). Often denoted by r(n) or r_2(n).
   add $3,12

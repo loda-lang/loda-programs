@@ -11,6 +11,7 @@ pow $2,16
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,102487 ; Numbers in base-12 representation that can be written with decimal digits.
   sub $3,1
   add $0,1

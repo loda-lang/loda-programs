@@ -20,6 +20,7 @@ lpb $4
     add $3,1
     mov $6,$0
     max $6,0
+    add $6,1
     seq $6,99266 ; Partial sums of A056273.
     mov $7,$8
     mul $7,$6

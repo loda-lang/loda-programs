@@ -1,8 +1,11 @@
 ; A098357: a(n) = A061017(n) - pi(n+1).
 ; Submitted by Steve Dodd
 ; 0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,1,2,1,2,2,2,2,2,1,2,2,2,1,2,1,1,1,2,2,3,2,2,2
-; Formula: a(n) = -A000720(n+2)+A143502(n)-1
+; Formula: a(n) = -A000720(n+1)+A143502(n-1)-1
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,2
 seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...

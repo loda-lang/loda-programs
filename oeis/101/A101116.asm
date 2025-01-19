@@ -1,8 +1,9 @@
 ; A101116: Values in A101115 which are records.
 ; Submitted by USTL-FIL (Lille Fr)
-; 0,5,9,14,15,18,19,20
+; 0,5,9,14,15,18,19,20,22
 
-add $0,1
+#offset 1
+
 mov $2,$0
 lpb $0
   max $0,1

@@ -7,12 +7,12 @@ mov $3,$0
 add $3,4
 pow $3,2
 lpb $3
-  add $2,2
   mov $4,$2
+  add $4,3
   seq $4,96304 ; Numbers k such that 3k does not divide (6k-4)!/((3k-2)!*(3k-1)!).
   sub $4,1
   add $1,3
-  add $2,1
+  add $2,3
   add $3,$4
   sub $3,$1
 lpe

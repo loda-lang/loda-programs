@@ -8,6 +8,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,102487 ; Numbers in base-12 representation that can be written with decimal digits.
   mul $3,$1
   trn $3,1

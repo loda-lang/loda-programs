@@ -15,10 +15,9 @@ lpb $0
   pow $4,$5
   add $2,$4
 lpe
+neq $1,0
 div $2,$3
 mov $0,$2
 sub $0,1
-cmp $1,0
-cmp $1,0
 mul $0,$1
 add $0,1
