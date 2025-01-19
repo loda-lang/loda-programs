@@ -5,7 +5,7 @@
 mul $0,2
 add $0,3
 mov $5,$0
-mul $5,7
+mul $5,6
 lpb $5
   max $5,1
   add $4,10

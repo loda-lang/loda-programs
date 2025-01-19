@@ -8,11 +8,9 @@ lpb $0
   sub $0,1
   mov $2,$4
   bin $2,$0
-  mov $3,$4
-  sub $3,$0
-  div $3,-1
+  mov $3,$0
+  sub $3,$4
   pow $3,$1
-  mul $3,2
   mul $5,$1
   add $1,1
   mul $3,$2
@@ -21,4 +19,3 @@ lpb $0
   add $5,$3
 lpe
 mov $0,$5
-div $0,2

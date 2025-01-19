@@ -1,34 +1,20 @@
 ; A024900: Numbers k such that 7*k + 6 is prime.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,5,11,13,19,23,25,31,35,41,43,49,59,61,65,71,83,85,91,103,109,113,115,119,121,125,133,145,149,151,155,173,175,179,185,199,203,211,215,221,223,229,233,241,245,253,263,265,269,275,281,283,289,299,301,305,319,323,325,329,335,341,353,373,379,383,389,413,419,421,431,433,439,445,451,455,475,479,481,493
 
 #offset 1
 
-mov $1,-2
-mov $3,11
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  max $3,$1
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,3
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,1
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,14
+  add $3,12
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
-div $0,7
+mov $0,$3
+div $0,14
+mul $0,2
+add $0,1

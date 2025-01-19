@@ -1,6 +1,7 @@
 ; A190191: a(n) = [n*u+n*v]-[n*u]-[n*v], where u=sqrt(2), v=1/u, and []=floor.
 ; Submitted by Ralfy
 ; 1,1,0,1,0,0,1,0,1,0,1,1,0,1,0,0,0,1,1,0,1,0,0,1,1,1,0,1,0,0,1,0,1,0,1,1,0,1,0,0,1,1,1,0,1,0,0,1,0,1,0,1,1,0,1,0,0,0,1,1,0,1,0,0,1,1,1,0,1,1,0,1,0,0,0,1,1,0,1,0
+; Formula: a(n) = -2*truncate((sqrtint(2*(n+1)^2)+truncate((6*n+sqrtint(2*(3*n+3)^2)+6)/2)+truncate((2*n+sqrtint(2*(n+1)^2)+2)/2))/2)+sqrtint(2*(n+1)^2)+truncate((6*n+sqrtint(2*(3*n+3)^2)+6)/2)+truncate((2*n+sqrtint(2*(n+1)^2)+2)/2)
 
 mov $1,$0
 mul $1,3

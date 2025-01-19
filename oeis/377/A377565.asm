@@ -1,15 +1,21 @@
 ; A377565: a(n) is the least multiple of n with more decimal digits than n.
-; Submitted by Odd-Rod
+; Submitted by Torbj&#246;rn Eriksson
 ; 10,10,12,12,10,12,14,16,18,100,110,108,104,112,105,112,102,108,114,100,105,110,115,120,100,104,108,112,116,120,124,128,132,102,105,108,111,114,117,120,123,126,129,132,135,138,141,144,147,100,102,104,106,108,110,112,114,116,118,120,122,124,126,128,130,132,134,136,138,140,142,144,146,148,150,152,154,156,158,160
 
-add $0,1
-mov $1,$0
-mov $2,1
-lpb $2
-  bin $2,2
-  mov $3,$0
-  sub $3,1
-  seq $3,97327 ; Least positive integer m such that m*n has greater decimal digit length than n.
+mov $2,$0
+sub $4,$0
+mov $1,1
+mov $3,$0
+add $3,1
+lpb $3
+  div $3,10
+  mul $1,10
 lpe
-mul $1,$3
-mov $0,$1
+add $2,1
+sub $1,1
+add $1,$4
+add $1,$0
+div $1,$2
+add $1,1
+add $0,1
+mul $0,$1

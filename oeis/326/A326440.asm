@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,307704 ; Expansion of (1/(1 - x)) * Sum_{k>=1} (-x)^k/(1 - (-x)^k).
   mov $0,0
 lpe

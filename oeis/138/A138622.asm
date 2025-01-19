@@ -1,34 +1,19 @@
 ; A138622: Nonnegative integers k such that 14*k-1 is prime.
-; Submitted by damotbe
+; Submitted by Science United
 ; 1,3,6,7,10,12,13,16,18,21,22,25,30,31,33,36,42,43,46,52,55,57,58,60,61,63,67,73,75,76,78,87,88,90,93,100,102,106,108,111,112,115,117,121,123,127,132,133,135,138,141,142,145,150,151,153,160,162,163,165,168,171,177,187,190,192,195,207,210,211,216,217,220,223,226,228,238,240,241,247
 
-add $0,1
-mov $1,-2
-mov $3,11
+#offset 1
+
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  max $3,$1
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,3
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,1
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,14
+  add $3,12
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
+mov $0,$3
 div $0,14
 add $0,1

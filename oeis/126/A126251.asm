@@ -1,26 +1,30 @@
 ; A126251: a(n) = (p+2)!/p! where p is the n-th lesser twin prime, A001359(n).
-; Submitted by estatic707
+; Submitted by zombie67 [MM]
 ; 20,42,156,342,930,1806,3660,5256,10506,11772,19182,22650,32580,37056,39402,52212,57840,73170,79806,97656,121452,176820,187056,213906,273006,325470,360600,382542,412806,436260,656910,676506,686412,737022,778806,1041420,1066056,1103550,1128906,1193556,1328256,1514130,1634562,1665390,1696506,1743720,2040612,2109756,2197806,2215632,2587272,2626020,2783892,2884902,2967006,3198732,3506256,3528762,3734556,3804450,3994002,4114812,4336806,4361832,4462656,4539030,4590306,5010882,5146092,5338410,5477940
 
-add $0,1
+mov $1,-1
 mov $2,$0
-sub $0,1
-add $2,1
+add $2,8
 pow $2,4
 lpb $2
-  sub $5,1
-  add $6,$1
-  max $3,$5
+  mov $5,$6
+  add $5,3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $6,1
+  mov $3,$6
+  sub $3,$5
   add $3,1
-  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
+  mul $5,$3
+  seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$5
   mov $4,$0
   max $4,0
   equ $4,$0
-  add $5,$1
   add $1,2
+  add $1,$6
   mul $2,$4
-  sub $2,1
+  sub $2,18
 lpe
-mov $0,$6
+mov $0,$1
+mul $0,2
+add $0,8

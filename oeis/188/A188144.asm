@@ -11,7 +11,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  add $0,1
+  add $0,2
   seq $0,140456 ; a(n) is the number of indecomposable involutions of length n.
   mul $1,$0
   add $3,$1

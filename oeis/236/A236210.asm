@@ -2,6 +2,9 @@
 ; Submitted by TankbusterGames
 ; 1,2,2,3,3,4,8,9
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 lpb $0
   div $0,2

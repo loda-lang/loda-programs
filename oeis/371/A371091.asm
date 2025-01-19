@@ -1,7 +1,10 @@
 ; A371091: Number of 1's in the recursive decomposition of primorial base expansion of n.
 ; Submitted by BlisteringSheep
 ; 0,1,1,2,1,2,1,2,2,3,2,3,1,2,2,3,2,3,2,3,3,4,3,4,1,2,2,3,2,3,1,2,2,3,2,3,2,3,3,4,3,4,2,3,3,4,3,4,3,4,4,5,4,5,2,3,3,4,3,4,1,2,2,3,2,3,2,3,3,4,3,4,2,3,3,4,3,4,3,4
-; Formula: a(n) = A376886(A276086(n))
+; Formula: a(n) = A371090(A276086(n)-1)
 
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-seq $0,376886 ; The number of distinct factors of n of the form p^(k!), where p is a prime and k >= 1, when the factorization is uniquely done using the factorial-base representation of the exponents in the prime factorization of n.
+sub $0,1
+mov $1,$0
+seq $1,371090 ; Additive with a(p^1) = 1, a(p^e) = a(A276086(e)) for e > 1, where A276086 is the primorial base exp-function.
+mov $0,$1

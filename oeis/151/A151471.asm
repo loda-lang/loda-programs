@@ -12,7 +12,7 @@ mov $4,$0
 lpb $4
   mul $2,$4
   sub $4,1
-  cmp $5,2
+  equ $5,2
   add $6,$5
   div $2,$6
   add $3,$2

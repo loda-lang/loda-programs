@@ -10,6 +10,14 @@ dif $1,2
 seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
 mul $1,$2
 div $1,2
+mov $4,$0
+mod $4,2
+div $0,2
 add $0,1
-seq $0,66639 ; Number of partitions of n with floor(n/2) parts.
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+mov $3,1
+add $3,$0
+add $3,$4
+mov $0,$3
 add $0,$1
+sub $0,2

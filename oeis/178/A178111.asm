@@ -10,7 +10,7 @@ mul $0,-1
 add $0,$2
 mov $1,-1
 bin $1,$0
-cmp $1,1
+equ $1,1
 mul $2,-1
 add $2,$0
 div $0,2

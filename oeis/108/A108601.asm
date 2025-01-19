@@ -1,34 +1,20 @@
 ; A108601: Numbers n such that 7*n - 911 is prime.
-; Submitted by damotbe
+; Submitted by Science United
 ; 132,136,142,144,150,154,156,162,166,172,174,180,190,192,196,202,214,216,222,234,240,244,246,250,252,256,264,276,280,282,286,304,306,310,316,330,334,342,346,352,354,360,364,372,376,384,394,396,400,406,412,414,420,430,432,436,450,454,456,460,466,472,484,504,510,514,520,544,550,552,562,564,570,576,582,586,606,610,612,624
 
-add $0,1
-mov $1,-2
-mov $3,11
+#offset 1
+
 mov $2,$0
-pow $2,4
+pow $2,5
 lpb $2
-  mov $5,0
-  max $3,$1
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,3
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,1
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $1,14
+  add $3,12
+  mov $1,$3
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
   sub $2,$0
+  add $3,2
 lpe
-mov $0,$1
-div $0,7
-add $0,131
+mov $0,$3
+div $0,14
+add $0,66
+mul $0,2

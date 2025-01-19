@@ -7,7 +7,6 @@
 sub $0,1
 mov $1,-1
 add $1,$0
-max $1,0
 add $1,1
 seq $1,43349 ; Numbers having one 0 in base 5.
 mul $0,56700

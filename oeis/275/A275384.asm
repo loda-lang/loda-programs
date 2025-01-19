@@ -11,7 +11,10 @@ lpb $2
   sub $3,1
   mov $5,$3
   add $3,1
-  seq $3,48146 ; Sum of non-unitary divisors of n.
+  mov $6,$3
+  seq $6,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

@@ -8,7 +8,6 @@ pow $2,3
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
   seq $3,33676 ; Largest divisor of n <= sqrt(n).
   sub $3,1
   mul $3,2
@@ -18,5 +17,4 @@ lpb $2
   sub $2,$0
 lpe
 mov $0,$1
-add $0,1
 div $0,5

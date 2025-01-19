@@ -7,7 +7,7 @@ lpb $0
   seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
   sub $0,2
 lpe
-add $0,36
+add $0,37
 seq $0,162395 ; a(n) = -(-1)^n * n^2.
 div $0,8
 mod $0,2

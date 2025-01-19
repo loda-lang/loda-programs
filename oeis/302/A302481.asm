@@ -2,9 +2,10 @@
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,0,0,1,1,1,1,1,3,2,2,2,3,2,4,2,3,2,3,2,5,2,4,3,6,4,6,3,5,4,5,3,7,3,7,6,7,5,8,4,7,5,7,5,9,4,8,5,9,6,9,4,8,6,9,6,10,4,9,8,10,6,11,5,11,9,10,6,11,5,10,7,11,7,12,5,12,8
 
+#offset 1
+
 mov $2,1
 mov $10,1
-add $0,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -14,8 +15,6 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    trn $7,1
-    add $7,1
     seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     add $7,1
     equ $7,2

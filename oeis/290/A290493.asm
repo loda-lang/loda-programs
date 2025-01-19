@@ -22,7 +22,7 @@ lpb $0
   mov $1,$3
   mov $3,$8
   sub $3,1
-  cmp $4,98
+  equ $4,98
   mov $8,$5
   sub $8,$10
   sub $8,2

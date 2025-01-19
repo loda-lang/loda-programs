@@ -1,19 +1,17 @@
 ; A090142: Decimal expansion of e^2 - e.
-; Submitted by Qingyao Sun
+; Submitted by Science United
 ; 4,6,7,0,7,7,4,2,7,0,4,7,1,6,0,4,9,9,1,8,7,0,1,3,9,9,8,9,2,2,2,3,4,5,3,1,5,4,2,3,0,6,8,4,7,6,8,5,1,8,8,7,7,4,9,1,2,0,1,6,0,1,9,4,7,9,8,4,9,7,1,6,5,7,2,5,5,1,0,1
 
 #offset 1
 
 mov $2,1
 mov $3,$0
-mul $3,3
+mul $3,2
 add $3,2
 lpb $3
   mov $5,$3
   add $5,1
   mul $2,$5
-  mul $2,$5
-  div $2,$5
   sub $3,1
   sub $6,$2
   mul $1,2

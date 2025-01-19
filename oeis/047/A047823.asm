@@ -12,6 +12,7 @@ pow $2,3
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,321944 ; Starting from n, repeatedly compute the sum of the prime divisors until a fixed point or 0 is reached; a(n) is the number of terms, including n.
   equ $3,5
   sub $0,$3
