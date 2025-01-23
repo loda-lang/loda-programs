@@ -11,4 +11,5 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,106863 ; Primes of the form x^2+xy+5y^2.

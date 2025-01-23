@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,107755 ; Numbers k such that Sum_{j=1..k} Catalan(j) == 0 (mod 3).
   mov $5,$3
   mul $5,2

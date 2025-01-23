@@ -9,6 +9,7 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
+  add $4,1
   seq $4,109814 ; a(n) is the largest k such that n can be written as sum of k consecutive positive integers.
   add $0,$4
   sub $0,1

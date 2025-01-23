@@ -8,6 +8,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  add $3,1
   seq $3,108154 ; a(n) = n^2 - n + 1 if prime else 0.
   neq $3,0
   sub $0,$3

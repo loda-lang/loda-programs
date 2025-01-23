@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,106406 ; Expansion of (eta(q) * eta(q^15))^2 / (eta(q^3) * eta(q^5)) in powers of q.
 mul $0,2
 pow $1,$2

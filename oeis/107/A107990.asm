@@ -2,8 +2,11 @@
 ; Submitted by Stony666
 ; 2,3,5,43,89,113,131,163,457,467,509,541,587,739,773,887,1109,1123,1201,1307,1319,1409,1613,1741,1747,1787,1979,2063,2069,2459,2467,2671,2689,2741,2789,3187,3203,3539,3547,3557,3643,3823,3917,3989,4021,4441,4447
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   sub $2,1
@@ -11,7 +14,8 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,93 ; a(n) = floor(n^(3/2)).
+  pow $3,3
+  nrt $3,2
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2

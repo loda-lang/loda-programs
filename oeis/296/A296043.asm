@@ -16,6 +16,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,109506 ; Expansion of (1 - phi(-q)^4)/ 8 in powers of q where phi() is a Ramanujan theta function.
     mul $7,$11
     mul $7,$$9

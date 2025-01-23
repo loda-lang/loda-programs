@@ -5,7 +5,7 @@
 lpb $0
   mov $2,$0
   seq $2,8963 ; Initial digit of Fibonacci number F(n).
-  cmp $2,1
+  equ $2,1
   sub $0,1
   add $1,$2
 lpe

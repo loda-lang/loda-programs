@@ -11,6 +11,7 @@ lpb $2
   add $6,1
   seq $6,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
   mov $3,$1
+  add $3,1
   seq $3,107078 ; Whether n has non-unitary prime divisors.
   gcd $3,$5
   gcd $6,$3

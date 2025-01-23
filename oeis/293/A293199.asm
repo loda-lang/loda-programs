@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,108319 ; Numbers of the form (2^i)*(3^j)*(7^k), with i, j, k >= 0.
   trn $3,2
   mov $5,$3

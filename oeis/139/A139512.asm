@@ -8,6 +8,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,107152 ; Primes of the form x^2 + 45y^2.
   mov $6,$4
   seq $4,35199 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 17.

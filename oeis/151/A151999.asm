@@ -6,17 +6,18 @@ mov $2,$0
 mul $2,1682
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   seq $3,7947 ; Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
   add $1,$4
   mov $5,$1
   gcd $5,$3
   div $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

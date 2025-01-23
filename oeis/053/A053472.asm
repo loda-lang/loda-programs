@@ -9,10 +9,12 @@ lpb $1
   sub $1,1
   trn $0,1
   mov $2,$0
+  add $2,2
   seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   sub $0,$2
   trn $0,1
   mov $3,$0
+  add $3,2
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   sub $0,$3
 lpe

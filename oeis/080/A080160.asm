@@ -8,6 +8,7 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,108690 ; Square roots of the terms in A080160.
   div $0,$1
 lpe

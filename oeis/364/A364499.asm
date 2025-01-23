@@ -1,7 +1,7 @@
 ; A364499: a(n) = A005940(n) - n.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,2,0,-2,0,4,0,12,4,12,0,-6,-4,2,0,14,8,22,0,24,24,48,8,96,24,50,0,-20,-12,-2,-8,18,4,24,0,36,28,62,16,130,44,88,0,72,48,96,48,192,96,170,16,286,192,316,48,564,100,180,0,-48,-40,-28,-24,-4,-4,28,-16,18,36,90,8,198,48,110,0
-; Formula: a(n) = -n+A181819(A108951(truncate((A057335(n-1)-1)/A293810(A057335(n-1)-1)))-1)
+; Formula: a(n) = -n+A181819(A108951(truncate((A057335(n-1)-1)/A293810(A057335(n-1)-1))+1)-1)
 
 #offset 1
 
@@ -13,6 +13,7 @@ mov $2,$0
 seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
 div $2,$0
 mov $0,$2
+add $0,1
 seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
 sub $0,1
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).

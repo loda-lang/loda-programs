@@ -16,11 +16,13 @@ lpb $2
   mov $7,$8
   add $7,1
   mov $9,$1
+  add $9,4
   seq $9,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $6,$1
   sub $6,$9
   trn $6,1
   mov $10,$6
+  add $10,4
   seq $10,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   sub $6,$10
   add $7,$6
@@ -30,8 +32,10 @@ lpb $2
   sub $5,$6
   add $5,1
   mov $3,$1
+  add $3,4
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $11,$3
+  add $11,4
   seq $11,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   sub $3,1
   sub $3,$11

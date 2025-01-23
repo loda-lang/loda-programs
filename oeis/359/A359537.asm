@@ -13,8 +13,9 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,107017 ; Second largest term in Zeckendorf representation of n, a(n)=0 if n itself is a Fibonacci number.
-    cmp $7,$1
+    equ $7,$1
     mov $9,10
     add $9,$5
     sub $4,$0

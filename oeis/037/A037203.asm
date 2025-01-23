@@ -8,7 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  sub $0,1
+  add $0,1
   seq $0,107599 ; a(n) = 0,1,2 (resp.) if (1/2)[prime(n-1)+prime(n+1)] is less than, equal to or greater than prime(n) (resp.).
   lpb $0
     sub $0,2

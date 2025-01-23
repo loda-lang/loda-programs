@@ -13,10 +13,10 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,105477 ; Triangle read by rows: T(n,k) is the number of compositions of n into k parts when there are two kinds of part 2.
   mov $5,0
+  sub $0,1
   lpb $0
     add $5,1
     sub $0,$5

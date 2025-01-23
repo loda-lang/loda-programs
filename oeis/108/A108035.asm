@@ -1,7 +1,10 @@
-; A108035: Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n times.
+; A108035: Triangle read by rows: n-th row consists of n copies of the n-th nonzero Fibonacci number.
 ; Submitted by STE\/E
 ; 1,2,2,3,3,3,5,5,5,5,8,8,8,8,8,13,13,13,13,13,13,21,21,21,21,21,21,21,34,34,34,34,34,34,34,34,55,55,55,55,55,55,55,55,55,89,89,89,89,89,89,89,89,89,89,144,144,144,144,144,144,144,144,144,144,144,233,233,233,233,233,233,233,233,233,233,233,233,377,377
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $2,1
   add $3,1

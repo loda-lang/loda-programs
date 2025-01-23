@@ -12,7 +12,6 @@ lpb $2
   add $3,1
   seq $3,96500 ; Let f(n) = smallest prime > n; a(n) = f(n+1) - f(n).
   seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-  sub $3,1
   seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   sub $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).

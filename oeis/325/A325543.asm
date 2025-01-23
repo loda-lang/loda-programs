@@ -5,6 +5,7 @@
 max $0,2
 lpb $0
   sub $0,1
+  add $2,1
   seq $2,109129 ; Width (i.e., number of non-root vertices having degree 1) of the rooted tree with Matula-Goebel number n.
   add $1,$2
   mov $2,$0

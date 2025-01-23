@@ -5,6 +5,7 @@
 mov $1,$0
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $1,$0
   mov $0,1

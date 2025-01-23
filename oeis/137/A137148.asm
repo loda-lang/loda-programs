@@ -10,6 +10,7 @@ lpb $0
   mov $0,0
 lpe
 mov $2,$1
+add $2,1
 seq $2,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 add $2,1
 add $1,1

@@ -1,13 +1,38 @@
 ; A106519: a(n) = (2/n)*binomial(2*n-2, n-1) - (1/(2*n))*Sum_{d|n} Moebius(d)*binomial(2*n/d, n/d).
 ; Submitted by stoneageman
 ; 1,1,1,2,3,9,19,58,160,499,1527,4940,16001,53187,178305,606330,2079863,7203864,25138879,88367780,312577245,1112119079,3977502767,14294207172,51596165898,186998138529,680272336906,2483341820512,9094756956909,33408076476761,123064080712655,454519885617722,1682850450830331,6245180340560183,23226972632849503,86563486095728348,323237794212444689,1209231693218273007,4531637507359279531,17010634294972476780,63954318104304685581,240807585521596360197,908009997951266138587,3428488163775850025968
-; Formula: a(n) = 2*A000108(n)-truncate(A060165(n+1)/2)
+
+#offset 1
 
 mov $2,$0
-add $2,1
-seq $2,60165 ; Number of orbits of length n under the map whose periodic points are counted by A000984.
+sub $2,1
+mov $4,0
+mov $5,$0
+mov $6,$2
+bin $6,2
+add $6,$2
+add $6,$0
+sub $0,1
+lpb $5
+  sub $5,1
+  mov $2,$6
+  sub $2,$5
+  mov $7,$2
+  seq $7,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
+  mov $8,0
+  seq $2,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  seq $2,123611 ; Row sums of triangle A123610.
+  mul $2,$7
+  add $4,$2
+lpe
+mov $2,$4
+div $2,2
 mov $1,$2
-div $1,2
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mul $2,2
+mov $3,$0
+mul $0,2
+bin $0,$3
+add $3,1
+div $0,$3
 mul $0,2
 sub $0,$1

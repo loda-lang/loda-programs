@@ -3,7 +3,7 @@
 
 mov $1,$0
 mov $4,$0
-cmp $4,0
+equ $4,0
 mov $3,$0
 add $3,$4
 mov $2,5

@@ -6,6 +6,7 @@ mov $1,3
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,107013 ; Primes of the form x^2-xy+25y^2, with x and y nonnegative.
   mov $0,0
 lpe

@@ -11,6 +11,7 @@ lpb $2
   lpb $7
     div $7,2
     mov $3,$1
+    add $3,2
     seq $3,108415 ; a(n) = 1, 2 or 3 (resp.) if prime(n) is weak, balanced or strong (resp.).
     div $3,2
     mul $6,$3

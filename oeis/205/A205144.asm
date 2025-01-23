@@ -15,6 +15,7 @@ lpb $2
   mov $1,$4
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,109805 ; a(n) = prime(n+2)*prime(n+1) - prime(n)*prime(n+1).
   add $3,$1
 lpe

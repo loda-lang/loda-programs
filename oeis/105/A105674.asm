@@ -1,6 +1,9 @@
 ; A105674: Highest minimal distance of any Type I (strictly) singly-even binary self-dual code of length 2n.
 ; 2,2,2,2,2,4,4,4,4,4,6,6,6,6,6,8,6,8,8,8,8,8,10,10,10,10,10
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 lpb $1
   sub $1,4

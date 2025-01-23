@@ -10,7 +10,6 @@ lpb $3
   add $4,1
   seq $4,40 ; The prime numbers.
   mov $1,$4
-  sub $4,1
   seq $4,108784 ; Difference between A107757 and A107755.
   sub $0,$4
   add $2,1

@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,11
+sub $0,1
+add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
@@ -18,6 +18,7 @@ lpb $2
   seq $3,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
   div $6,$3
   mov $3,$6
+  add $3,1
   seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   sub $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).

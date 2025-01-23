@@ -11,6 +11,7 @@ pow $2,4
 lpb $2
   sub $2,15
   mov $6,$1
+  add $6,1
   seq $6,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   mov $3,$1
   sub $3,$6

@@ -18,6 +18,7 @@ lpb $6
     div $0,$2
     div $0,2
     max $0,0
+    add $0,1
     seq $0,105677 ; Highest minimal Hamming distance of any Type 4^E Euclidean linear self-dual code over GF(4) of length 2n.
     sub $0,1
     mul $3,$4

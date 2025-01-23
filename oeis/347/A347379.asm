@@ -20,6 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   mul $0,$4
   add $1,$0

@@ -14,7 +14,7 @@ lpb $3
   lpb $1
     div $1,10
     mov $4,$5
-    cmp $4,0
+    equ $4,0
     add $5,$4
     div $2,$5
     sub $3,1
@@ -23,7 +23,7 @@ lpb $3
   lpe
 lpe
 mov $4,$2
-cmp $4,0
+equ $4,0
 add $2,$4
 mov $0,$2
 mod $0,10

@@ -6,7 +6,7 @@ add $0,1
 mov $2,$0
 pow $2,4
 lpb $2
-  add $3,1
+  add $3,4
   seq $3,109893 ; a(n) = least integer of the form (n!-1)(n!-2)...(n!-k)/n!.
   add $4,1
   add $5,1

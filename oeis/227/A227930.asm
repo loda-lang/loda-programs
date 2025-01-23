@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,108269 ; Numbers of the form (2*m - 1)*4^k where m >= 1, k >= 1.
   mov $6,2
   gcd $6,$1

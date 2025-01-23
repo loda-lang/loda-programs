@@ -4,6 +4,7 @@
 
 mov $2,8
 seq $0,205441 ; Least h such that n divides the h-th difference between distinct odd-indexed Fibonacci numbers; the differences are ordered as in A205371.
+add $0,1
 seq $0,107436 ; a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.
 add $0,1
 lpb $0

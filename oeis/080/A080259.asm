@@ -10,6 +10,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   mov $3,$1
   add $3,1

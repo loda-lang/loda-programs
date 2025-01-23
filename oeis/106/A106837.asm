@@ -1,11 +1,14 @@
-; A106837: Numbers n such that both n and n+1 have odd part of form 4k+3.
+; A106837: Numbers m such that both m and m+1 have odd part of the form 4*k+3.
 ; Submitted by Jon Maiga
 ; 6,11,14,22,23,27,30,38,43,46,47,54,55,59,62,70,75,78,86,87,91,94,95,102,107,110,111,118,119,123,126,134,139,142,150,151,155,158,166,171,174,175,182,183,187,190,191,198,203,206,214,215,219,222,223,230,235,238,239,246,247,251,254,262,267,270,278,279,283,286,294,299,302,303,310,311,315,318,326,331
 
+#offset 1
+
 mov $3,$0
-add $3,2
+add $3,1
 mov $4,7
 mov $5,$3
+sub $0,1
 sub $3,1
 pow $5,4
 lpb $5
@@ -13,7 +16,7 @@ lpb $5
   mov $6,$4
   seq $6,89312 ; Write n in binary; a(n) = number represented by rightmost block of 1's.
   sub $6,1
-  cmp $6,0
+  equ $6,0
   sub $3,$6
   add $4,1
   sub $5,$3

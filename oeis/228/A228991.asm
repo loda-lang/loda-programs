@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,6005 ; The odd prime numbers together with 1.
   max $3,2
-  sub $3,1
   seq $3,107079 ; Minimal number of squared primes in a squarefree gap of length n.
   sub $3,1
   mov $5,$3

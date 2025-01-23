@@ -1,8 +1,9 @@
 ; A045731: Fibonacci numbers having initial digit '7'.
 ; Submitted by Cruncher Pete
 ; 75025,701408733,7778742049,72723460248141,7540113804746346429,70492524767089125814114,781774079430987230203437,7308805952221443105020355490,757791618667731139247631372100066,7084593923980518516849609894969925639
-; Formula: a(n) = A166876(A105507(n)-3)-1981
+; Formula: a(n) = A166876(A105507(n+1)-3)-1981
 
+add $0,1
 seq $0,105507 ; Numbers m such that 7 is the leading digit of the n-th Fibonacci number in decimal representation.
 sub $0,3
 seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.

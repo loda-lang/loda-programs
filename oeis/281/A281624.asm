@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   seq $3,79 ; Powers of 2: a(n) = 2^n.
   mul $3,2

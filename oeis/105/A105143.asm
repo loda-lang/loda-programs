@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard (M1)
 ; 1,4,8,14,24,45,94,205,440,912
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $4,$0
 lpb $4
@@ -17,7 +20,7 @@ lpb $4
     add $6,1
     add $0,$5
     sub $0,$6
-    cmp $5,0
+    equ $5,0
   lpe
   sub $6,$0
   lpb $0

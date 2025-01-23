@@ -13,6 +13,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,108524 ; Number of ordered rooted trees with n generators.
     mod $7,2
     mul $7,$$9

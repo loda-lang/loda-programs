@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   sub $3,1
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

@@ -1,9 +1,12 @@
-; A108900: Numbers n such that 2357*n + 11 is prime.
+; A108900: Numbers k such that 2357*k + 11 is prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,4,6,10,18,34,40,48,54,70,76,90,96,106,120,130,136,166,178,180,190,196,204,208,216,234,238,244,258,276,294,300,316,346,348,360,364,376,378,400,406,420,438,444,448,466,468,504,508,510,538,564,568,570,586
 
+#offset 1
+
 mov $2,$0
-add $2,8
+sub $0,1
+add $2,7
 pow $2,3
 lpb $2
   seq $3,132904 ; Numbers formed by concatenating 4 consecutive prime numbers.

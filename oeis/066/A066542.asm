@@ -11,6 +11,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
+  add $3,1
   seq $3,109814 ; a(n) is the largest k such that n can be written as sum of k consecutive positive integers.
   gcd $3,$5
   equ $3,1

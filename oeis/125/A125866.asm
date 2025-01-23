@@ -7,7 +7,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
+  add $3,3
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   add $3,1
   pow $3,2

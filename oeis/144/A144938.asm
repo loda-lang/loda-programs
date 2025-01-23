@@ -8,6 +8,7 @@ sub $0,1
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,106548 ; Perfect squares n^2 which are both the sum and the difference of two primes (otherwise 0).
   min $3,1
   sub $0,$3

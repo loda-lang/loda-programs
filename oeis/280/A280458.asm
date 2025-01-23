@@ -8,6 +8,7 @@ lpb $0
   sub $0,1
   mov $2,$1
   mov $4,$3
+  add $4,1
   seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   add $4,1
   mov $1,$3

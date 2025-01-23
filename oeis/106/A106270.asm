@@ -11,7 +11,7 @@ lpe
 mov $0,2
 mul $0,$2
 bin $0,$2
-cmp $1,0
+equ $1,0
 bin $1,$2
 mul $1,2
 sub $1,1

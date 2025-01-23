@@ -7,20 +7,19 @@ add $2,14
 pow $2,2
 lpb $2
   sub $2,7
-  mov $3,$1
-  add $3,1
-  mov $5,$3
+  mov $5,$1
+  add $5,2
   seq $5,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   sub $5,1
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  mov $3,$1
   sub $3,$5
-  add $3,1
-  cmp $3,0
-  cmp $3,0
+  add $3,2
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
 lpe

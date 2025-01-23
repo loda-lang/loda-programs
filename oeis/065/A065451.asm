@@ -5,6 +5,7 @@
 mov $1,$0
 neq $1,0
 trn $0,1
+add $0,1
 seq $0,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 add $0,1
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.

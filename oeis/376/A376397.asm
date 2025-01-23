@@ -8,6 +8,7 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
+  add $0,1
   seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   sub $0,1
   seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

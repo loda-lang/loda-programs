@@ -11,9 +11,10 @@ lpb $4
   sub $0,$4
   mov $1,$0
   gcd $1,$4
-  cmp $1,1
+  equ $1,1
   sub $0,$1
   mov $5,$0
+  add $5,1
   seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   add $5,1
   add $0,1

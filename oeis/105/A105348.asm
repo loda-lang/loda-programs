@@ -13,6 +13,6 @@ trn $0,1
 add $0,1
 mod $0,2
 mov $1,$2
-cmp $1,1
+equ $1,1
 add $1,$0
 mov $0,$1

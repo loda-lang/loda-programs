@@ -18,6 +18,7 @@ lpb $2
   mov $5,$3
   mul $5,2
   div $3,2
+  add $3,1
   seq $3,108151 ; a(n) = n^2 + 3*n + 1 if prime or 0 if composite.
   equ $3,0
   sub $0,$3

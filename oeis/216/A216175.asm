@@ -22,6 +22,7 @@ lpb $2
       sub $8,1
       mov $0,$6
       sub $0,$8
+      add $0,1
       seq $0,106252 ; Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
       add $7,$0
     lpe

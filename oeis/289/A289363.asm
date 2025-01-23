@@ -12,6 +12,7 @@ lpb $2
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,2
   mov $5,$3
+  add $3,1
   seq $3,108151 ; a(n) = n^2 + 3*n + 1 if prime or 0 if composite.
   equ $3,0
   sub $0,$3

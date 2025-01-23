@@ -1,10 +1,11 @@
 ; A106252: Number of positive integer triples (x,y,z), with x<=y<=z<=n, such that each of x,y and z divides the sum of the other two.
 ; 1,3,5,7,8,11,12,14,16,18,19,22,23,25,27,29,30,33,34,36,38,40,41,44,45,47,49,51,52,55,56,58,60,62,63,66,67,69,71,73,74,77,78,80,82,84,85,88,89,91,93,95,96,99,100,102,104,106,107,110,111,113,115,117,118,121,122
-; Formula: a(n) = floor((3*n+3)/9)+floor((3*n+3)/2)
+; Formula: a(n) = floor((3*n)/2)+floor(n/3)
 
-mul $0,3
-add $0,3
+#offset 1
+
 mov $1,$0
-div $1,9
+div $1,3
+mul $0,3
 div $0,2
 add $0,$1

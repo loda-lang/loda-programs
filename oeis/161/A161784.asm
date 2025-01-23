@@ -7,10 +7,10 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$4
-  sub $0,1
   mov $2,$0
   seq $2,109819 ; Product of primes between n and n^2.
   mov $4,2
+  sub $0,1
   bin $0,$3
   gcd $1,$2
 lpe

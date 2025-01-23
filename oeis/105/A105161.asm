@@ -4,7 +4,7 @@
 
 mov $1,$0
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $2,$0
 seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 add $3,$2

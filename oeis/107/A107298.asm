@@ -13,6 +13,6 @@ lpb $0
   add $1,$4
   mov $4,$3
 lpe
-cmp $0,$4
+equ $0,$4
 add $0,$3
 add $0,1

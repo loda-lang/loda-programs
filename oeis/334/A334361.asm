@@ -14,12 +14,11 @@ lpb $0
     gcd $4,$0
     mov $7,$4
     add $7,$2
-    sub $7,1
     seq $7,107078 ; Whether n has non-unitary prime divisors.
     add $7,2
     seq $7,227184 ; a(n) = product of parts of the unordered partition encoded with the runlengths of binary expansion of n.
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$4
     sub $4,$0

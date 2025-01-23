@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 1,4,6,5,8,7,8,7
 
+#offset 3
+
 mov $2,-1
+sub $0,3
 lpb $0
   sub $2,2
   mov $3,$0

@@ -2,6 +2,9 @@
 ; Submitted by Matthias Lehmkuhl
 ; 5,11,17,23,29,31,41,47,53,59,61,71,73,83,89,101,107,113,131,137,139,149,151,157,167,173,179,181,191,197,199,211,227,233,239,241,251,257,263,269,271,281,283,293,311,317,331,337,347,353,359,367,373,383,389
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $3,$0
 add $3,6
@@ -17,7 +20,17 @@ lpb $3
   mul $4,$2
   add $4,$6
   add $4,1
-  seq $4,55976 ; Remainder when (n-1)! + 1 is divided by n.
+  mov $7,$4
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $7,1
+  sub $4,1
+  mov $9,2
+  sub $9,$4
+  mov $8,$9
+  equ $8,0
+  add $9,$8
+  div $4,$9
+  mul $4,$7
   sub $1,$4
   mov $5,$1
   max $5,0

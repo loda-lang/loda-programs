@@ -9,6 +9,7 @@ lpb $2
   mov $0,$4
   add $0,$2
   trn $0,1
+  add $0,1
   seq $0,109826 ; Final terms of groups in the partition of the sequence of natural numbers A109411.
   mov $5,1
   add $5,$0

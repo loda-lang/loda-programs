@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,106401 ; Expansion of (eta(q) * eta(q^9))^3 / eta(q^3)^2 in powers of q.
     mov $9,10
     add $9,$5

@@ -13,6 +13,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,105561 ; a(n) is the m-th prime, where m is the number of distinct prime factors of n (A001221), a(1) = 1.
     mod $7,2
     equ $7,$8

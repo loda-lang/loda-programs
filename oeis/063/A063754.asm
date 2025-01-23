@@ -11,10 +11,10 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   sub $0,$4
+  sub $0,1
   mul $0,3
   add $3,$0
 lpe

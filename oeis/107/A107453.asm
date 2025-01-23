@@ -1,7 +1,10 @@
 ; A107453: 1 followed by repetitions of the period-4 sequence 1,1,1,2.
 ; 1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1
-; Formula: a(n) = -3*truncate(gcd(max(n-2,0),4)/3)+gcd(max(n-2,0),4)
+; Formula: a(n) = -3*truncate(gcd(max(n-6,0),4)/3)+gcd(max(n-6,0),4)
 
+#offset 4
+
+sub $0,4
 trn $0,2
 gcd $0,4
 mod $0,3

@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,107134 ; Primes of the form x^2+28y^2.
   sub $0,2
   mov $1,$0

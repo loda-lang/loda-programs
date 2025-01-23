@@ -14,7 +14,6 @@ lpb $3
   mov $6,$0
   add $0,1
   seq $0,40 ; The prime numbers.
-  sub $0,1
   seq $0,107079 ; Minimal number of squared primes in a squarefree gap of length n.
   sub $0,$6
   mov $2,$3

@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,2,4,4,4,4,6,6,8,8,8,8,8,10,12
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 mov $1,$0

@@ -6,6 +6,7 @@ mov $2,$0
 mul $2,1682
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
   seq $3,105899 ; Period 6: repeat [1, 1, 2, 2, 3, 3].
   add $1,$4

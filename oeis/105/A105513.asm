@@ -9,7 +9,7 @@ lpb $2
   mov $3,$1
   seq $3,8963 ; Initial digit of Fibonacci number F(n).
   sub $3,1
-  cmp $3,2
+  equ $3,2
   add $4,$3
 lpe
 mov $0,$4

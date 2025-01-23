@@ -6,6 +6,7 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+add $1,1
 seq $1,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
 add $1,1
 add $0,1

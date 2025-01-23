@@ -18,6 +18,6 @@ lpb $0
   add $5,$3
   sub $6,1
   sub $1,3
-  cmp $2,3
+  equ $2,3
 lpe
 mov $0,$5

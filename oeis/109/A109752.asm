@@ -2,8 +2,9 @@
 ; Submitted by LCB001
 ; 1,2,3,4,5,6,7,8,90
 
+#offset 1
+
 mov $1,1
-add $0,1
 lpb $0
   sub $0,1
   add $1,$0

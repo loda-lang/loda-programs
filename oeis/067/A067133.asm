@@ -13,6 +13,7 @@ lpb $3
   mov $6,1
   add $6,$2
   mov $4,$2
+  add $4,1
   seq $4,109814 ; a(n) is the largest k such that n can be written as sum of k consecutive positive integers.
   gcd $4,$6
   equ $4,1

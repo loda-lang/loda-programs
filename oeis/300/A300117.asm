@@ -10,6 +10,7 @@ lpb $2
   mov $6,$1
   seq $6,356655 ; Clausen numbers based on the strictly proper divisors of n, 1 < d < n.
   mov $3,$1
+  add $3,1
   seq $3,107078 ; Whether n has non-unitary prime divisors.
   gcd $3,$5
   gcd $6,$3
