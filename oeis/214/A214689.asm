@@ -12,7 +12,7 @@ lpb $0
   pow $5,$6
   sub $0,1
   mov $3,$2
-  cmp $3,$2
+  equ $3,$2
   add $3,1
   mov $4,$2
   bin $4,$0

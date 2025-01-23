@@ -1,5 +1,5 @@
 ; A095085: Fib000 primes, i.e., primes p whose Zeckendorf-expansion A014417(p) ends with three zeros.
-; Submitted by damotbe
+; Submitted by Matthias Lehmkuhl
 ; 5,13,29,47,73,89,97,107,131,149,157,173,191,199,233,241,251,293,317,419,461,479,487,521,547,563,631,673,683,691,733,751,809,827,877,911,919,937,953,971,1013,1021,1039,1063,1097,1123,1249,1259
 
 #offset 1
@@ -20,7 +20,7 @@ lpb $2
   sub $3,$5
   equ $3,0
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

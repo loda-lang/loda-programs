@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,139131 ; Squarefree kernel of n*(n+1)/2.
 dif $0,2
 mul $0,2

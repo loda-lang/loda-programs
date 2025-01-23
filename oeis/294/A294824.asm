@@ -1,12 +1,22 @@
 ; A294824: Number of permutations of [n] avoiding {1324, 2413, 2431}.
-; Submitted by [AF] Kalianthys
+; Submitted by Science United
 ; 1,1,2,6,21,77,285,1053,3875,14212,52021,190301,696532,2553047,9377034,34525630,127466481,471935813,1752332838,6525032251,24363932865,91214649344,342358204917,1288067835421,4857138874476,18354766803127,69500599635905,263661684179088,1002016365217651
-; Formula: a(n) = -A001906(n)+A000108(n+1)
+; Formula: a(n) = -b(n)+floor(binomial(2*n+2,n+1)/(n+2)), b(n) = 3*b(n-1)-b(n-2), b(3) = 8, b(2) = 3, b(1) = 1, b(0) = 0
 
+mov $4,1
 mov $1,$0
-seq $1,1906 ; F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).
+lpb $1
+  sub $1,1
+  add $2,$4
+  add $4,$2
+lpe
+mov $1,$2
 sub $1,2
 add $0,1
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-sub $0,2
+mov $3,$0
+mul $0,2
+bin $0,$3
+add $3,1
+div $0,$3
 sub $0,$1
+sub $0,2

@@ -1,5 +1,5 @@
 ; A053866: Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
-; Submitted by Aurum
+; Submitted by Goldislops
 ; 1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 
 #offset 1
@@ -26,10 +26,7 @@ lpb $4
   nrt $3,2
   mov $5,$3
   add $5,$2
-  mod $5,2
   add $6,$4
-  add $7,1
-  add $7,$5
 lpe
-mov $0,$7
-sub $0,1
+mov $0,$5
+mod $0,2

@@ -1,5 +1,5 @@
 ; A071841: Number of primes == 5 mod 8 <= n.
-; Submitted by Stony666
+; Submitted by Steve Dodd
 ; 0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
 
 #offset 1
@@ -8,14 +8,15 @@ sub $0,1
 mov $2,$0
 mov $3,$0
 lpb $3
-  sub $3,1
+  sub $3,4
   mov $0,$2
   sub $0,$3
   mov $4,$0
   add $0,1
   seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   div $4,2
-  add $4,2
+  add $4,3
+  sub $4,$0
   gcd $4,4
   div $4,3
   add $4,$0

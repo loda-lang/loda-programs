@@ -12,7 +12,7 @@ lpb $0
   add $3,1
   mov $4,$2
   lpb $4
-    trn $4,1
+    sub $4,1
     max $6,3
     mov $7,$4
     add $7,1

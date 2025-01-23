@@ -1,25 +1,29 @@
 ; A133115: Triangle read by rows: 2*A133113 - A000012 as infinite lower triangular matrices.
-; Submitted by Stony666
+; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 1,3,1,7,3,1,11,7,7,1,17,11,21,7,1,23,17,47,21,11,1,31,23,91,47,43,11,1,39,31,159,91,123,43,15,1,49,39,259,159,295,123,73,15,1,59,49,399,259,627,295,255,73,19,1,71,59,589,399,1219,627,733,255,111,19,1,83,71,839,589,2211,1219,1839,733,459,111,23,1
 
-mov $3,2
+#offset 1
+
+sub $0,1
 lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,1
+add $2,2
 sub $2,$0
 div $0,2
-add $0,1
-mul $0,2
+add $3,$0
+mov $4,$0
+mov $0,$2
 lpb $0
-  sub $0,1
-  add $2,1
-  add $4,1
-  mul $1,$2
-  div $1,$4
-  div $3,2
-  add $3,$1
+  sub $0,2
+  mul $3,2
+  add $3,$0
+  add $3,1
+  bin $3,$0
+  add $1,$3
+  mov $3,$4
 lpe
-mov $0,$3
+mov $0,$1
+mul $0,2
 sub $0,1

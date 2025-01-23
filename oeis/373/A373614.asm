@@ -1,14 +1,26 @@
 ; A373614: a(n) = Fibonacci(n)^2 * Catalan(n).
-; Submitted by Skyman
+; Submitted by Science United
 ; 0,1,2,20,126,1050,8448,72501,630630,5620472,50807900,465643906,4313336832,40331298100,380115482760,3607451824500,34444346026230,330647239219110,3189220347667200,30893105448487590,300408447948394500,2931423727834870320,28696206742447216440,281728667746183208850,2773282854528632549376
-; Formula: a(n) = A000108(n)*(A000045(n)*binomial(n,n))^2
+; Formula: a(n) = floor(binomial(2*n,n)/(n+1))*(truncate((min(n,n%2)*b(n)+c(n))/3)*binomial(n,n))^2, b(n) = 3*b(n-2)-b(n-4), b(6) = 15, b(5) = 6, b(4) = 6, b(3) = 3, b(2) = 3, b(1) = 3, b(0) = 3, c(n) = 2*c(n-2)+b(n-2), c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 0
 
+mov $4,3
 mov $3,$0
-seq $3,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+lpb $3
+  sub $3,2
+  add $4,$5
+  add $5,$4
+lpe
+mul $3,$4
+add $3,$5
+div $3,3
 mov $2,$0
 bin $2,$0
 mul $2,$3
 mov $1,$2
 mul $1,$2
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $6,$0
+mul $0,2
+bin $0,$6
+add $6,1
+div $0,$6
 mul $0,$1

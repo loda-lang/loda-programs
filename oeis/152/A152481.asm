@@ -2,7 +2,10 @@
 ; Submitted by ChelseaOilman
 ; 1,5,5,6,6,10,10,10,10,10,11,12,12,12,12
 
+#offset 1
+
 mov $5,3
+sub $0,1
 lpb $0
   sub $0,1
   sub $0,$6

@@ -1,24 +1,23 @@
 ; A109866: 9's complement of the digits of the golden ratio phi (A001622): 9.999999999999... - 1.6180339887... = 8.3819660112501051517954131656334...
-; Submitted by Jamie Morken(w2)
+; Submitted by rajab
 ; 8,3,8,1,9,6,6,0,1,1,2,5,0,1,0,5,1,5,1,7,9,5,4,1,3,1,6,5,6,3,4,3,6,1,8,8,2,2,7,9,6,9,0,8,2,0,1,9,4,2,3,7,1,3,7,8,6,4,5,5,1,3,7,7,2,9,4,7,3,9,5,3,7,1,8,1,0,9,7,5
-; Formula: a(n) = 10*truncate(truncate(truncate(b(3*n+3)/5)/truncate(c(3*n+3)/(10^(n+1))))/10)-truncate(truncate(b(3*n+3)/5)/truncate(c(3*n+3)/(10^(n+1))))+9, b(n) = 6*b(n-1)-4*b(n-2), b(3) = 104, b(2) = 20, b(1) = 4, b(0) = 1, c(n) = 4*b(n-1)+2*c(n-1), c(1) = 4, c(0) = 0
+; Formula: a(n) = -truncate((10^(n-1)+sqrtint(5*(10^(n-1))^2))/2)-10*truncate((-truncate((10^(n-1)+sqrtint(5*(10^(n-1))^2))/2)-10*truncate((-truncate((10^(n-1)+sqrtint(5*(10^(n-1))^2))/2)-121)/10)-111)/10)-10*truncate((-truncate((10^(n-1)+sqrtint(5*(10^(n-1))^2))/2)-121)/10)-111
 
-add $0,1
-mov $1,1
-mov $3,$0
-mul $3,3
-lpb $3
-  sub $3,1
-  mul $1,4
-  add $1,$2
-  add $2,$1
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,5
-div $1,$2
+#offset 1
+
+sub $0,1
+mov $1,10
+pow $1,$0
 mov $0,$1
-mod $0,10
+mul $1,4
+add $1,$0
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
+mov $0,$1
 mul $0,-1
-add $0,9
+sub $0,121
+mod $0,10
+add $0,10
+mod $0,10

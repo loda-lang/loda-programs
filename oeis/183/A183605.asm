@@ -10,15 +10,12 @@ lpb $0
   add $5,1
   add $6,1
   mov $3,$2
-  cmp $3,$2
+  equ $3,$2
   mov $4,$2
   bin $4,$0
   mul $2,$5
-  add $3,8
   mul $3,$4
-  mul $3,52
   mul $1,$6
   add $1,$3
 lpe
 mov $0,$1
-div $0,468

@@ -1,17 +1,10 @@
 ; A211263: Number of integer pairs (x,y) such that 0<x<y<=n and x*y=floor(n/2).
-; Submitted by Simon Strandgaard
+; Submitted by Ralfy
 ; 0,0,0,1,1,1,1,1,1,1,1,2,2,1,1,2,2,1,1,2,2,1,1,3,3,1,1,2,2,2,2,2,2,1,1,3,3,1,1,3,3,2,2,2,2,1,1,4,4,1,1,2,2,2,2,3,3,1,1,4,4,1,1,3,3,2,2,2,2,2,2,4,4,1,1,2,2,2,2,4
+; Formula: a(n) = truncate(A000005(floor(n/2))/2)
 
-add $0,1
+#offset 1
+
 div $0,2
-mov $2,$0
-lpb $2
-  add $3,2
-  sub $4,1
-  mov $5,$0
-  mod $5,$4
-  cmp $5,0
-  add $1,$5
-  sub $2,$3
-lpe
-mov $0,$1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+div $0,2

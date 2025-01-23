@@ -2,7 +2,8 @@
 ; Submitted by gingavasalata
 ; 2,4,6,8,9,12,12,16,17,20,18,24,21,27,28,32,27,36,30,40,39,41,36,48,42,48,49,56,45,60,48,64
 
-add $0,1
+#offset 1
+
 mov $2,2
 mov $3,$0
 mul $3,2
@@ -13,14 +14,13 @@ lpb $3
     add $1,2
     mov $4,$0
     mod $4,$2
-    cmp $4,0
+    equ $4,0
     sub $5,$4
   lpe
   pow $4,$1
   sub $1,1
   add $2,1
-  cmp $4,0
-  cmp $4,0
+  neq $4,0
   add $4,1
   sub $3,$4
   add $4,1

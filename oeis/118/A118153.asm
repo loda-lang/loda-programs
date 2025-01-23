@@ -1,7 +1,7 @@
 ; A118153: Start with 1 and repeatedly reverse the digits and add 57 to get the next term.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,58,142,298,949,1006,6058,8563,3715,5230,382,340,100,58,142,298,949,1006,6058,8563,3715,5230,382,340,100,58,142,298,949,1006,6058,8563,3715,5230,382,340,100,58,142,298,949,1006,6058,8563,3715,5230,382,340
-; Formula: a(n) = b(max(n-1,0)), b(n) = A004086(b(n-1))+57, b(1) = 1
+; Formula: a(n) = b(n-1), b(n) = A004086(b(n-1))+57, b(1) = 1
 
 #offset 1
 

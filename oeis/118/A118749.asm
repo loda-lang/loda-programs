@@ -1,18 +1,10 @@
 ; A118749: Largest prime <= 3*n.
-; Submitted by JZD
+; Submitted by Stephen Uitti
 ; 3,5,7,11,13,17,19,23,23,29,31,31,37,41,43,47,47,53,53,59,61,61,67,71,73,73,79,83,83,89,89,89,97,101,103,107,109,113,113,113,113,113,127,131,131,137,139,139,139,149,151,151,157,157,163,167,167,173,173,179,181
+; Formula: a(n) = A151799(3*n-2)
 
 #offset 1
 
 mul $0,3
-div $0,2
-lpb $0
-  sub $0,1
-  mov $1,$0
-  add $1,$0
-  add $1,1
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$1
-lpe
-mul $0,2
-sub $0,1
+sub $0,2
+seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
