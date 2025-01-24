@@ -1,27 +1,16 @@
 ; A071259: Integer part of the arithmetic mean of the n-th prime p(n) and the n-th composite number C(n).
-; Submitted by damotbe
+; Submitted by Science United
 ; 3,4,6,8,10,12,15,17,19,23,25,29,31,33,36,39,43,44,48,51,53,56,59,62,67,70,71,74,76,79,86,89,93,94,100,101,105,109,111,115,118,120,126,128,130,132,138,145,148,149,152,156,158,163,167,170,174,176,179,182,184,189,197,199,201,204,211,215,220,222,224,228,233,236,240,243,247,251,254,259
-; Formula: a(n) = truncate((A000040(n)+A122825(-truncate((-2*n)/n)+n)-1)/2)
+; Formula: a(n) = truncate((A000040(n)+A018252(n+1))/2)
 
 #offset 1
 
-sub $0,1
-mov $1,$0
 mov $2,$0
 add $2,1
-mov $3,$0
-add $3,2
-mov $4,$2
-mul $4,-2
-div $4,$2
-sub $2,$4
-seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-sub $2,1
-sub $2,$3
-add $0,1
-seq $0,40 ; The prime numbers.
-add $0,$2
-add $0,1
-add $0,$1
-add $0,1
+seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+mov $1,$0
+seq $1,40 ; The prime numbers.
+add $1,$2
+sub $0,1
+mov $0,$1
 div $0,2

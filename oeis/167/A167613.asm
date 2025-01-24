@@ -28,6 +28,7 @@ lpb $2
     mov $6,$1
     add $6,$9
     bin $6,$1
+    add $1,1
     seq $1,131531 ; Period 6: repeat [0, 0, 1, 0, 0, -1].
     mul $6,$1
     mul $8,-1

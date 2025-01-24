@@ -15,7 +15,6 @@ lpb $2
   sub $0,$2
   add $0,2
   seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-  sub $0,1
   seq $0,333791 ; Difference of sums of two subsets of divisors of n, those obtained by repeatedly dividing with the smallest remaining prime factor (A332993) and those obtained by repeatedly dividing with the largest remaining prime factor (A332994).
   lpb $0
     add $1,1

@@ -1,17 +1,13 @@
 ; A380340: a(n) = phi(1 + phi(2 + phi(3 + ... phi(n)))).
-; Submitted by ifurlender
+; Submitted by Science United
 ; 1,1,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
-; Formula: a(n) = d(n)+1, b(n) = truncate((-c(n-2)+b(n-2))/2), b(5) = 0, b(4) = 0, b(3) = -1, b(2) = -1, b(1) = 0, b(0) = 0, c(n) = -2*truncate(c(n-2)/2)+c(n-2), c(5) = 0, c(4) = 0, c(3) = 0, c(2) = 0, c(1) = 2, c(0) = 2, d(n) = -2*truncate((d(n-2)+truncate((-c(n-2)+b(n-2))/2))/2)+d(n-2)+truncate((-c(n-2)+b(n-2))/2)+2, d(5) = 3, d(4) = 3, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = (7*binomial(4,binomial(n,2))+4)%10
 
-mov $2,2
-lpb $0
-  sub $0,2
-  sub $1,$2
-  div $1,2
-  mod $2,2
-  add $3,$1
-  mod $3,2
-  add $3,2
-lpe
-add $3,1
-mov $0,$3
+bin $0,2
+mov $2,4
+bin $2,$0
+mov $1,7
+mul $1,$2
+mov $0,$1
+add $0,4
+mod $0,10

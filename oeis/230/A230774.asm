@@ -1,26 +1,8 @@
 ; A230774: Number of primes less than first prime above square root of n.
-; Submitted by mmonnin
+; Submitted by yoyo_rkn
 ; 1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+; Formula: a(n) = A000720(sqrtint(n))+1
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mov $1,0
-  mov $4,$2
-  add $4,1
-  lpb $4
-    sub $4,1
-    mov $5,$4
-    trn $5,1
-    add $5,1
-    seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-    sub $5,1
-    equ $5,2
-    add $1,$5
-    sub $4,$0
-  lpe
-  add $2,1
-  mov $3,$1
-lpe
-mov $0,$3
+nrt $0,2
+seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
 add $0,1

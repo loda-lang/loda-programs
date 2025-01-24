@@ -11,7 +11,6 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
   seq $3,52044 ; Numbers k such that k^3 lacks the digit zero in its decimal expansion.
   mov $5,$3
   mul $5,10

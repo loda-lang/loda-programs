@@ -1,23 +1,26 @@
 ; A130201: Odious oblong (promic) numbers.
-; Submitted by Simon Strandgaard
+; Submitted by nkbr
 ; 2,42,56,110,182,342,506,552,702,812,930,992,1190,1332,1640,1722,2162,2450,2756,2862,2970,3080,3306,3540,3782,4422,4692,4970,5700,6006,6320,6480,6806,7310,7832,8372,8742,9120,9506,9900,10302,10506,10712,11130,11342,11990,12210,13572,14042,14520,15006,15500,16002,16256,17030,17556,18090,18632,19182,19740,20592,20880,21170,21462,21756,22350,22952,24180,24806,25122,25760,26732,27390,27722,28392,28730,30102,32220,32580,33306
 
+#offset 1
+
 mov $2,$0
-add $2,2
-pow $2,2
+sub $0,1
+add $2,5
+pow $2,3
 lpb $2
-  mov $3,$1
-  seq $3,10059 ; Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
-  gcd $3,2
-  add $5,4
+  mov $3,$6
+  seq $3,5187 ; a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
+  mod $3,2
   sub $0,$3
-  add $0,1
-  add $1,$5
   mov $4,$0
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,18
+  add $5,$1
+  add $1,1
+  mov $6,$5
 lpe
-mov $0,$1
-div $0,2
+mov $0,$5
+mul $0,2

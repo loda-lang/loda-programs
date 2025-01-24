@@ -1,5 +1,5 @@
 ; A095086: Fib001 primes, i.e., primes p whose Zeckendorf-expansion A014417(p) ends with two zeros and final 1.
-; Submitted by Fardringle
+; Submitted by Hoshione
 ; 19,43,53,61,103,137,163,179,197,229,239,263,281,307,331,349,383,433,467,509,569,577,619,653,739,773,797,823,839,857,883,907,941,967,1009,1051,1061,1069,1103,1129,1153,1171,1187,1213,1229,1289
 
 #offset 1
@@ -19,7 +19,7 @@ lpb $2
   sub $3,$5
   equ $3,0
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
