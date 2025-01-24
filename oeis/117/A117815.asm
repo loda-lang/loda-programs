@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $5,$1
-  add $5,1
+  add $5,2
   seq $5,118950 ; Numbers containing at least one prime digit.
   mov $3,$5
   mul $3,2

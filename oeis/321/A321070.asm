@@ -8,10 +8,11 @@ pow $2,2
 add $0,1
 mov $1,1
 lpb $2
+  add $3,1
   seq $3,112624 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = Product_{p|n} b(p,n)!.
   mov $5,2
   max $5,$3
-  cmp $5,2
+  equ $5,2
   mov $3,$5
   add $3,$4
   sub $3,1
@@ -22,7 +23,7 @@ lpb $2
   mov $3,$1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

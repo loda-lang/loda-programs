@@ -13,7 +13,6 @@ lpb $2
   add $3,1
   seq $3,45468 ; Primes congruent to {1, 4} mod 5.
   mov $5,$3
-  sub $3,1
   seq $3,110399 ; Expansion of (theta_3(q)*theta_3(q^7) - 1)/2 in powers of q.
   neq $3,0
   sub $0,$3

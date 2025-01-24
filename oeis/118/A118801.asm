@@ -17,7 +17,7 @@ lpb $1
   add $4,$0
   add $4,3
   bin $4,$1
-  cmp $6,1
+  equ $6,1
   sub $6,1
   add $0,3
   mov $5,$6

@@ -11,6 +11,7 @@ lpb $5
   mov $4,$0
   max $4,0
   mov $6,$4
+  add $6,1
   seq $6,117298 ; Number of partitions of n with unique smallest part and unique largest part.
   seq $4,41 ; a(n) is the number of partitions of n (the partition numbers).
   sub $4,$6

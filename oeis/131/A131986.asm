@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,116607 ; Sum of the divisors of n which are not divisible by 9.
     mul $7,3
     mul $7,$$9

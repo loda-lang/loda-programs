@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,1
-sub $0,1
 seq $0,118600 ; Palindromes in base 9 (written in base 9).
 lpb $0
   mov $2,$0

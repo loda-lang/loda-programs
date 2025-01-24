@@ -8,11 +8,12 @@ lpb $2
   sub $2,1
   add $2,$4
   mov $3,$1
+  add $3,1
   seq $3,116127 ; Number of numbers that are congruent to {2, 4} mod 6 between prime(n) and prime(n+1) inclusive.
   min $3,1
   sub $0,$3
   add $1,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1
 add $0,1

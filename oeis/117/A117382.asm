@@ -10,7 +10,11 @@ lpb $2
   add $3,2
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,52343 ; Number of ways to write n as the unordered sum of two triangular numbers (zero allowed).
+  mov $6,$3
+  mul $6,4
+  add $6,1
+  mov $3,$6
+  seq $3,161 ; Number of partitions of n into 2 squares.
   equ $3,0
   sub $0,$3
   add $1,1

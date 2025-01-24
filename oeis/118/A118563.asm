@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 2,4,6,8,12,20,44,68,164
 
+#offset 1
+
+sub $0,1
 lpb $0
   trn $0,1
   mov $2,$0

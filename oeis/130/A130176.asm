@@ -7,6 +7,7 @@ mov $2,$0
 add $2,$0
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,111089 ; Largest prime factor of 2n.
   mul $3,2
   add $3,1

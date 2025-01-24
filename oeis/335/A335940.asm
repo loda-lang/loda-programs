@@ -13,5 +13,6 @@ equ $2,$1
 mul $2,$1
 sub $1,$2
 add $1,$3
+add $0,1
 seq $0,111089 ; Largest prime factor of 2n.
 sub $0,$1

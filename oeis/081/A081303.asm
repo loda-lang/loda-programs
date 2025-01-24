@@ -12,5 +12,6 @@ add $1,1
 seq $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
 mul $1,2
 add $1,$2
+add $0,1
 seq $0,111089 ; Largest prime factor of 2n.
 sub $0,$1

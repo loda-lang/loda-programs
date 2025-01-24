@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,111059 ; a(n) = Product_{k=1..n} A005117(k), the product of the first n squarefree positive integers.
 lpb $0
   dif $0,10

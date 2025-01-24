@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 1,2,3,4,5,7,9,12,816
 
-add $0,1
+#offset 1
+
 lpb $0
   mov $2,$0
   mod $2,3

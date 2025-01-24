@@ -12,6 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,113184 ; Absolute difference between sum of odd divisors of n and sum of even divisors of n.
     mov $9,10
     add $9,$5

@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,111150 ; a(n) is the number of integers of the form (n+k)/|(n-k)| for k>0.
   div $0,2
   sub $0,1

@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,117212 ; Sum_{d|n} a(d)/d = (-1)^(n-1)/n for n>=1; equals the logarithmic g.f. of A117210.
     mov $9,10
     add $9,$5

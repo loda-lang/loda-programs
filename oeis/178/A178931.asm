@@ -6,13 +6,14 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,117943 ; a(1) = 0, a(2) = 1; a(3n) = a(n); if every third term (a(3), a(6), a(9), ...) is deleted, this gives back the original sequence.
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

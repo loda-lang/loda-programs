@@ -15,10 +15,11 @@ lpb $4
   sub $0,$3
   add $0,2
   mul $0,2
+  mov $7,$0
+  add $7,3
+  seq $7,117298 ; Number of partitions of n with unique smallest part and unique largest part.
   mov $1,$0
   add $1,2
-  mov $7,$1
-  seq $7,117298 ; Number of partitions of n with unique smallest part and unique largest part.
   seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
   add $1,1
   sub $1,$7

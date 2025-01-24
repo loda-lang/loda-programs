@@ -6,6 +6,6 @@ mov $1,$0
 mov $0,1
 add $0,$1
 sub $0,1
-dir $0,10
+dgr $0,10
 pow $1,$0
 mov $0,$1

@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,115977 ; Expansion of elliptic modular function lambda in powers of the nome q.
     mov $9,10
     add $9,$5

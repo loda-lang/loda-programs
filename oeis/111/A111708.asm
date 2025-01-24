@@ -4,7 +4,7 @@
 mov $2,1
 add $2,$0
 mov $3,$0
-cmp $3,0
+equ $3,0
 add $0,$3
 lpb $0
   div $0,10

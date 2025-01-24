@@ -10,6 +10,7 @@ lpb $3
   sub $0,$3
   add $0,1
   seq $0,40 ; The prime numbers.
+  add $0,1
   seq $0,118822 ; Numerators of the convergents of the 2-adic continued fraction of zero given by A118821.
   add $2,$0
 lpe

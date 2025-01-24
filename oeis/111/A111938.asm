@@ -1,12 +1,70 @@
 ; A111938: a(n) = n times number of divisors of n of form 4m+1 - n times number of divisors of form 4m+3.
 ; Submitted by shiva
 ; 1,2,0,4,10,0,0,8,9,20,0,0,26,0,0,16,34,18,0,40,0,0,0,0,75,52,0,0,58,0,0,32,0,68,0,36,74,0,0,80,82,0,0,0,90,0,0,0,49,150,0,104,106,0,0,0,0,116,0,0,122,0,0,64,260,0,0,136,0,0,0,72,146,148,0,0,0,0,0,160
-; Formula: a(n) = truncate((truncate(A004531(4*n+4)/2)*(n+1))/2)
+
+#offset 1
 
 mov $1,$0
-add $1,1
 mul $1,4
-seq $1,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+mov $2,$1
+mov $11,0
+sub $0,1
+trn $1,1
+mov $3,$1
+mov $4,-1
+pow $4,$1
+mov $5,$1
+add $5,1
+mov $14,$5
+lex $14,2
+mov $15,2
+pow $15,$14
+div $5,$15
+div $5,2
+mov $6,-1
+pow $6,$5
+mul $6,2
+mov $7,-2
+bin $7,$5
+div $7,$6
+mov $8,0
+mov $10,3
+sub $5,$7
+mul $5,2
+add $5,3
+lpb $5
+  sub $5,$10
+  mov $9,$5
+  max $9,0
+  mul $9,4
+  mov $13,$9
+  nrt $13,2
+  add $9,2
+  mov $12,$9
+  nrt $12,2
+  mov $9,$12
+  add $9,$13
+  mod $9,2
+  mov $10,2
+  add $10,$11
+  add $8,$9
+  add $11,2
+lpe
+mov $5,$8
+mul $5,$6
+div $5,2
+max $5,0
+mul $5,2
+mod $1,4
+mul $1,$5
+sub $5,$1
+mov $1,$5
+div $1,2
+mul $1,$4
+mul $1,2
+sub $1,1
+sub $1,$3
+add $1,$2
 div $1,2
 add $0,1
 mul $0,$1

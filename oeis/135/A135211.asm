@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,113262 ; One quarter of the number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
     mov $9,10
     add $9,$5

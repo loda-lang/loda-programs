@@ -2,6 +2,9 @@
 ; Submitted by PDW
 ; 1,1,0,6,4,9,5,7,7,1,4
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mul $3,8
 lpb $3

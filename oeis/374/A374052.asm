@@ -7,6 +7,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,113177 ; Fully additive with a(p) = Fibonacci(p); If, for p prime, p^(m_{n,p}) is the highest power of p dividing n with m>=0, then a(n) = Sum_{p prime} F(p)*(m_{n,p}), where F(p) = p-th Fibonacci number.
   add $3,1
   mod $3,3

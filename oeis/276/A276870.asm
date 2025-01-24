@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,110117 ; a(n) = floor(n * (sqrt(2) + sqrt(3))).
   mov $2,$5
   mul $2,$4

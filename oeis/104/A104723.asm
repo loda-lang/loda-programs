@@ -19,6 +19,7 @@ lpb $5
     div $0,$2
     div $0,24
     max $2,0
+    add $2,1
     seq $2,119917 ; Number of rationals in [0, 1) consisting just of repeating bits of period at most n.
     add $3,$2
   lpe

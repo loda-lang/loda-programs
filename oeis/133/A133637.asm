@@ -10,6 +10,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,113447 ; Expansion of i * theta_2(i * q^3)^3 / (4 * theta_2(i * q)) in powers of q^2.
     mov $9,10
     add $9,$5

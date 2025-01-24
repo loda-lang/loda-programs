@@ -4,8 +4,9 @@
 
 mov $1,$0
 add $1,$0
-cmp $2,$1
+equ $2,$1
 trn $1,1
+add $1,1
 seq $1,113262 ; One quarter of the number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
 add $1,1
 sub $2,$1

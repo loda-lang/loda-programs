@@ -7,13 +7,32 @@ mov $2,$0
 mov $4,1
 lpb $0
   sub $2,2
+  mov $6,$1
+  add $6,$1
+  mul $6,2
+  add $6,$1
+  mul $6,$1
+  nrt $6,2
+  add $6,$1
   mov $3,$1
-  seq $3,276867 ; First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
+  mov $3,$6
+  div $3,2
+  add $3,2
+  mov $5,$3
+  add $5,$3
+  mul $5,2
+  add $5,$3
+  mul $5,$3
+  nrt $5,2
+  add $5,$3
+  mov $3,$5
+  mod $3,2
+  add $3,3
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mul $2,$4
 add $1,$2

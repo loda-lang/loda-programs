@@ -2,9 +2,10 @@
 ; Submitted by PDW
 ; 1,2,4,6,8,8,8,24,24,24
 
-lpb $0
-  mov $0,21
-lpe
+#offset 1
+
+sub $0,1
+min $0,21
 lpb $0
   sub $0,1
   sub $1,$2

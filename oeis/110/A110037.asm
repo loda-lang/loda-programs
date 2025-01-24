@@ -9,7 +9,7 @@ lpb $0
 lpe
 div $0,2
 mod $0,2
-cmp $0,0
+equ $0,0
 div $1,2
 mod $1,2
 mul $1,$0

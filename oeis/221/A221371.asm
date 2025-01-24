@@ -10,6 +10,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
+  add $0,1
   seq $0,110501 ; Unsigned Genocchi numbers (of first kind) of even index.
   bin $1,$4
   mul $1,$0

@@ -2,8 +2,11 @@
 ; Submitted by F14Claude
 ; 0,0,0,0,0,0,22,51,146
 
+#offset 1
+
 mov $2,1
 add $2,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $5,0

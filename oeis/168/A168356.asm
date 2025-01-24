@@ -11,6 +11,7 @@ lpb $3
   mov $2,$0
   add $2,1
   max $2,0
+  add $2,1
   seq $2,110883 ; Sum of consecutive digits in the decimal expansion of Pi.
   mov $4,$2
 lpe

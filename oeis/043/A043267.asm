@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,118599 ; Palindromes in base 8 (written in base 8).
 lpb $0
   mov $2,$0

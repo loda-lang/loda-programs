@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,117358 ; a(n) = A032742(A032742(A032742(n))) = ((n/lpf(n))/lpf(n/lpf(n)))/lpf((n/lpf(n))/lpf(n/lpf(n))), where lpf=A020639, least prime factor.
   mov $3,$1
   add $3,$5

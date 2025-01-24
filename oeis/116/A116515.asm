@@ -2,7 +2,8 @@
 ; Submitted by Skivelitis2
 ; 1,2,4,2,1,4,4,1,2,1,1,4,2,2,2,4,1,4,2,1,4,1,2,4,4,1,2,2,4,4,2,1,4,1,4,1,4,2,2,4,1,1,1,4,4,1,1,2,2,1,4,1,2,1,4,2,4,1,4,2,2,4,2,1,4,4,1,4,2,1,4,1,2,4,1,2,4,4,2,2
 
-add $0,1
+#offset 1
+
 seq $0,60305 ; Pisano periods for primes: period of Fibonacci numbers mod prime(n).
 sub $0,2
 max $1,$0

@@ -11,6 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,116477 ; a(n) = Sum_{1<=k<=n, gcd(k,n)=1} floor(n/k).
   add $0,1
   add $2,$0

@@ -7,6 +7,7 @@
 lpb $0
   add $0,$2
   mov $2,$1
+  add $2,1
   seq $2,111688 ; Primes and composite numbers alternately in increasing order.
   sub $0,$2
   add $1,1

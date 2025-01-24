@@ -11,13 +11,13 @@ lpb $2
   trn $3,1
   seq $3,284504 ; Expansion of Product_{k>=0} (1 - x^(7*k+6)) in powers of x.
   add $3,1
-  cmp $3,2
+  equ $3,2
   sub $5,1
   sub $0,$3
   sub $1,$5
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
   sub $5,1

@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,119913 ; Number of directed simple cycles in the complete graph K_n.
   sub $0,1
   add $1,$2

@@ -11,7 +11,13 @@ lpb $1
   add $4,1
   add $2,6
   add $3,1
-  seq $3,73353 ; Sum of n and its squarefree kernel.
+  mov $7,$3
+  seq $7,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $3,1
+  mov $6,$3
+  div $6,$7
+  add $3,$6
+  add $3,2
   mov $5,$3
   gcd $5,$4
   mov $3,$4

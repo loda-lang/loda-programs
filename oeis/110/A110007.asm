@@ -1,14 +1,17 @@
-; A110007: a(n)=n-floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*floor(phi*floor(phi^-1*n)))))) where phi=(1+sqrt(5))/2.
+; A110007: a(n) = n-F(F(F(n))) where F(x)=A120613(x)=floor(phi*floor(x/phi)) and phi=(1+sqrt(5))/2.
 ; Submitted by PDW
 ; 1,2,3,4,4,5,4,5,5,4,5,4,4,5,4,5,5,4,5,4,5,5,4,5,4,4,5,4,5,5,4,5,4,4,5,4,5,5,4,5,4,5,5,4,5,4,4,5,4,5,5,4,5,4,5,5,4,5,4,4,5,4,5,5,4,5,4,4,5,4,5,5,4,5,4,5,5,4,5,4
 
+#offset 1
+
 mov $2,2
+sub $0,1
 lpb $0
   mov $4,$3
   add $4,$0
   sub $1,$2
   div $1,2
-  cmp $3,4
+  equ $3,4
   add $3,$1
   mod $3,2
   add $3,2

@@ -9,6 +9,7 @@ lpb $2
   mov $4,$3
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,119608 ; Let b(1)=0, b(2)= 1. b(2^m +k) = (b(2^m+1-k) + b(k))/2, 1 <= k <= 2^m, m >= 0. a(n) is numerator of b(n).
   add $3,$0
   add $4,$3

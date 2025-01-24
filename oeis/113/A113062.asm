@@ -7,7 +7,7 @@ lpb $0
   dif $0,3
   mov $1,2
 lpe
-cmp $2,$0
+equ $2,$0
 seq $0,217219 ; Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
 mul $0,$1
 mul $2,2

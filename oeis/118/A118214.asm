@@ -1,8 +1,11 @@
 ; A118214: Start with 1 and repeatedly reverse the digits and add 67 to get the next term.
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 1,68,153,418,881,255,619,983,456,721,194,558,922,296,759,1024,4268,8691,2035,5369,9702,2146,6479,9813,3256,6590,1023,3268,8690,1035,5368,8702,2145,5479,9812,2256,6589,9923,3366,6700,143,408,871,245,609,973
-; Formula: a(n) = A004086(a(n-1))+67, a(0) = 1
+; Formula: a(n) = b(n-1), b(n) = A004086(b(n-1))+67, b(1) = 1
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $0,1
 lpb $1

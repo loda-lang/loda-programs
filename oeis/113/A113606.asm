@@ -1,9 +1,12 @@
 ; A113606: Binary power sequence: a(n) = a(n-1) + 2^a(n-2).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,3,5,13,45,8237,35184372097069
-; Formula: a(n) = 2*c(n)+1, b(n) = gcd(b(n-3)+c(n-3)+d(n-1)+1,2)^2, b(4) = 4, b(3) = 4, b(2) = 4, b(1) = 1, b(0) = 1, c(n) = d(n-1), c(4) = 6, c(3) = 2, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = d(n-1)+truncate(b(n-1)^c(n-1)), d(4) = 22, d(3) = 6, d(2) = 2, d(1) = 1, d(0) = 0
+; Formula: a(n) = 2*c(n-1)+1, b(n) = gcd(b(n-3)+c(n-3)+d(n-1)+1,2)^2, b(4) = 4, b(3) = 4, b(2) = 4, b(1) = 1, b(0) = 1, c(n) = d(n-1), c(4) = 6, c(3) = 2, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = d(n-1)+truncate(b(n-1)^c(n-1)), d(4) = 22, d(3) = 6, d(2) = 2, d(1) = 1, d(0) = 0
+
+#offset 1
 
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $6,$2

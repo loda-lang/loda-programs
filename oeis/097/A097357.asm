@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,110565 ; Results from a change in the rules leading to sequence A097357.
 mov $1,$0
 lpb $0

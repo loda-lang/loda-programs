@@ -10,9 +10,15 @@ lpb $0
   mov $2,$0
   add $2,1
   seq $2,40 ; The prime numbers.
-  mov $4,2
-  seq $4,54272 ; Number of primes in the interval [prime(n), prime(n)^2].
+  mov $6,2
+  seq $6,40 ; The prime numbers.
+  pow $6,2
+  seq $6,230980 ; Number of primes <= n, starting at n=0.
+  mov $7,-1
+  mov $4,1
+  mov $4,$6
   sub $4,$2
+  sub $4,1
   mov $5,0
   gcd $5,$4
   mov $2,$5

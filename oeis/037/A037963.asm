@@ -6,6 +6,7 @@ mov $1,$0
 lpb $0
   mov $2,$0
   trn $2,1
+  add $2,6
   seq $2,112494 ; Sixth diagonal of the Stirling2 triangle A048993 and sixth column of triangle A008278.
   trn $0,$2
 lpe

@@ -8,6 +8,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,112773 ; 3 together with primes multiplied by 3.
   sub $3,4
   sub $3,$4

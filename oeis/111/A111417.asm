@@ -11,7 +11,7 @@ lpb $0
 lpe
 bin $1,$0
 add $2,1
-cmp $2,$0
+equ $2,$0
 mul $2,$1
 mov $0,$2
 div $0,2

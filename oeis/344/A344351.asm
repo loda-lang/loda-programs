@@ -6,10 +6,11 @@ mov $2,$0
 lpb $2
   sub $2,1
   add $1,$0
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,112622 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = product_{p|n} b(p,n)^b(p,n).
-  cmp $3,1
+  equ $3,1
+  add $1,2
   add $4,$3
 lpe
 mov $0,$4

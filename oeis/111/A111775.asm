@@ -1,7 +1,10 @@
 ; A111775: Number of ways n can be written as a sum of at least three consecutive integers.
 ; 0,0,0,0,0,1,0,0,1,1,0,1,0,1,2,0,0,2,0,1,2,1,0,1,1,1,2,1,0,3,0,0,2,1,2,2,0,1,2,1,0,3,0,1,4,1,0,1,1,2,2,1,0,3,2,1,2,1,0,3,0,1,4,0,2,3,0,1,2,3,0,2,0,1,4,1,2,3,0,1
-; Formula: a(n) = truncate((max(n,4)%2+A054844(max(n,4)+1)-1)/2)-1
+; Formula: a(n) = truncate((max(n-1,4)%2+A054844(max(n-1,4)+1)-1)/2)-1
 
+#offset 1
+
+sub $0,1
 max $0,4
 mov $1,$0
 add $1,1

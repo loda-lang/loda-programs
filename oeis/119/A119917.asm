@@ -1,9 +1,12 @@
 ; A119917: Number of rationals in [0, 1) consisting just of repeating bits of period at most n.
 ; Submitted by Science United
 ; 1,3,9,21,51,105,231,471,975,1965,4011,8031,16221,32475,65205,130485,261555,523131,1047417,2094957,4191975,8384229,16772835,33545715,67100115,134200785,268418001,536837061,1073707971,2147415981
-; Formula: a(n) = 2*A000740(n+1)+a(n-1), a(0) = 1
+; Formula: a(n) = b(n-1), b(n) = 2*A000740(n+1)+b(n-1), b(0) = 1
+
+#offset 1
 
 mov $1,1
+sub $0,1
 lpb $0
   mov $2,$0
   add $2,1

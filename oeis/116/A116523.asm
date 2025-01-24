@@ -5,7 +5,7 @@
 lpb $0
   mov $3,$0
   sub $3,1
-  dis $3,2
+  dgs $3,2
   mov $2,16
   pow $2,$3
   sub $0,1

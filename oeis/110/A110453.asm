@@ -1,10 +1,13 @@
-; A110453: Floor[Product of all k-digit numbers starting from n where k is the number of digits in n divided by product of all k-digit numbers less than n].
+; A110453: Floor[Product of all k-digit numbers starting from n divided by product of all k-digit numbers less than n] where k is the number of digits in n.
 ; Submitted by ThrasherX-17
-; 362880,362880,90720,10080,630,25,0,0,0
-; Formula: a(n) = truncate(A110452(n)/A000142(n))
+; 362880,362880,90720,10080,630,25,0,0,0,2571820310955251121078572499345973889184192247144555265338209983884964726444827921322240519625124511856638500904630284343341744128000000000000000000000,25718203109552511210785724993459738891841922471445552653382099838849647264448279213222405196251245118566385009046302843433417441280000000000000000000,212547133136797613312278718954212718114396053483021096308942973874790473259903133993573596663233430731953595116085147466391879680000000000000000000
+; Formula: a(n) = truncate(A110452(n)/A000142(n-1))
+
+#offset 1
 
 mov $1,$0
 seq $1,110452 ; Product of all k-digit numbers starting from n where k is the number of digits in n. a(n) = n*(n+1)*...*(10^k-1), where k is the number of digits in n.
+sub $0,1
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 div $1,$0
 mov $0,$1

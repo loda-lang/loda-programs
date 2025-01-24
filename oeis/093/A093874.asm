@@ -11,6 +11,7 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,117490 ; Number of primes between n and n^2 (with n and n^2 excluded).
   add $1,1
   add $2,$3

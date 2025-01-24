@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,4,4,6,1,6,5,6,6,5
 
+#offset 3
+
+sub $0,3
 mov $1,-3
 mov $3,$0
 mul $3,5

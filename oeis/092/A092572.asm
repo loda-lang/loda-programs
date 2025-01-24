@@ -13,6 +13,7 @@ lpb $2
   mov $5,-1
   pow $5,$1
   mov $3,$1
+  add $3,1
   seq $3,115979 ; Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
   mul $3,$5
   trn $3,1

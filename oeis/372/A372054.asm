@@ -8,7 +8,6 @@ lpb $1
   sub $1,$0
 lpe
 mov $2,$0
-sub $0,1
 seq $0,112773 ; 3 together with primes multiplied by 3.
 mul $2,$0
 mov $3,$1

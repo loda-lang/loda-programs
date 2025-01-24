@@ -22,6 +22,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,115979 ; Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
   mul $0,$4
   add $1,$0

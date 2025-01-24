@@ -10,6 +10,7 @@ mov $5,2
 lpb $5
   sub $5,1
   mov $0,$1
+  add $0,1
   seq $0,117989 ; Number of partitions of n such that the least part occurs at least twice.
   sub $4,$3
   add $1,2

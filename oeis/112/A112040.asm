@@ -2,14 +2,19 @@
 ; Submitted by Landjunge
 ; 1,3,7,13,33,47,132,458,777,853,3845,4395,4783,4983,6038,6487,6719,6957,11707,12030,12688,13025,13365,13709,14057,14409,15861,17789,18598,19008,19845,20272,20702,21135,21570,22010,22458,23378,23850,24326
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,71148 ; Partial sums of sequence of odd primes (A065091); a(n) = sum of the first n odd primes.
   sub $3,1
+  mov $6,$1
+  add $6,2
+  seq $6,101301 ; The sum of the first n primes, minus n.
+  add $3,$6
   mov $5,$3
   add $3,2
   seq $3,135694 ; Period 6: repeat [1, -1, -1, -1, 0, 2].

@@ -2,6 +2,9 @@
 ; Submitted by p3d-cluster
 ; 362880,362880,181440,60480,15120,3024,504,72,9
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $0,8
 bin $0,$2

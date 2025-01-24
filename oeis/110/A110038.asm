@@ -21,7 +21,7 @@ lpb $0
     mov $9,10
     add $9,$5
     add $8,1
-    cmp $8,1
+    equ $8,1
     mul $7,$$9
     mul $7,$8
     add $5,1

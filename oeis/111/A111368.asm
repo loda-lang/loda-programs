@@ -1,6 +1,9 @@
 ; A111368: The number of maximal determinant {-1,1} matrices of order n.
 ; 1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,5,3,3,3,3,7
 
+#offset 1
+
+sub $0,1
 sub $1,$0
 lpb $0
   max $2,$0

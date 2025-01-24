@@ -6,7 +6,6 @@ mov $1,$0
 add $1,1
 dif $1,4
 dif $1,2
-sub $1,1
 seq $1,118235 ; Smallest positive number starting an interval of consecutive integers with element sum n.
 bin $1,2
 mov $0,$1

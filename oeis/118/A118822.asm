@@ -1,10 +1,11 @@
 ; A118822: Numerators of the convergents of the 2-adic continued fraction of zero given by A118821.
 ; Submitted by Science United
 ; 2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1,2,-1,0,-1,-2,1,0,1
-; Formula: a(n) = truncate(b(n+1)/2), b(n) = b(n-1)*(gcd(3*c(n-1),4)-2)+b(n-2), b(2) = -2, b(1) = 4, b(0) = 2, c(n) = 3*c(n-1)+1, c(2) = 4, c(1) = 1, c(0) = 0
+; Formula: a(n) = truncate(b(n)/2), b(n) = b(n-1)*(gcd(3*c(n-1),4)-2)+b(n-2), b(2) = -2, b(1) = 4, b(0) = 2, c(n) = 3*c(n-1)+1, c(2) = 4, c(1) = 1, c(0) = 0
+
+#offset 1
 
 mov $1,2
-add $0,1
 lpb $0
   sub $0,1
   mov $4,$2

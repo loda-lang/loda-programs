@@ -1,7 +1,26 @@
 ; A113479: Starting with the fraction 4/1 as the first term, a(n) is the numerator of the reduced fraction of the n-th term according to the rule: if n is even, multiply the previous term by n/(n+1); otherwise multiply the previous term by (n+1)/n.
 ; 4,8,32,128,256,512,4096,32768,65536,131072,524288,2097152,4194304,8388608,134217728,2147483648,4294967296,8589934592,34359738368,137438953472,274877906944,549755813888,4398046511104,35184372088832,70368744177664,140737488355328,562949953421312,2251799813685248,4503599627370496,9007199254740992,288230376151711744,9223372036854775808,18446744073709551616,36893488147419103232,147573952589676412928,590295810358705651712,1180591620717411303424,2361183241434822606848,18889465931478580854784
-; Formula: a(n) = A198633(A092054(n+1))
+
+#offset 1
 
 add $0,1
-seq $0,92054 ; Base-2 logarithm of the sum of numerator and denominator of the convergents of the continued fraction expansion [1; 1/2, 1/3, 1/4, ..., 1/n, ...].
-seq $0,198633 ; Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
+mov $3,0
+mov $4,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
+  div $0,2
+  lex $0,2
+  add $0,1
+  add $3,$0
+lpe
+mov $0,$3
+sub $0,1
+mov $1,0
+bin $1,$0
+add $0,1
+add $1,2
+pow $1,$0
+mov $0,$1

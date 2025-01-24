@@ -15,6 +15,7 @@ mul $0,2
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,116921 ; a(n) = largest integer <= n/2 which is coprime to n.
   div $0,199
 lpe

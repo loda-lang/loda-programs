@@ -10,5 +10,4 @@ add $0,1
 sub $1,$0
 dif $1,2
 add $0,$1
-sub $0,1
 seq $0,113415 ; Expansion of Sum_{k>0} x^k/(1-x^(2k))^2.

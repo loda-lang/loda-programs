@@ -1,7 +1,10 @@
-; A117548: Values of n for which there exist d(1),...,d(n), each in {0,1,2} and an r in {1,2} such that Sum[d(i)d(i+k),i=1,n-k]=r (mod 3) for all k=0,...,n-1. (Such a sequence is called a very(3,r) sequence. See the link.).
+; A117548: Values of n for which there exist d(1),...,d(n), each in {0,1,2} and an r in {1,2} such that Sum_{i=1..n-k} d(i)*d(i+k) == r (mod 3) for all k=0..n-1. (Such a sequence is called a very(3,r) sequence. See the link.).
 ; Submitted by Jon Maiga
 ; 1,2,5,6,7,12,14,17,20,24
 
+#offset 1
+
+sub $0,1
 mov $7,$0
 mov $4,$0
 lpb $4
@@ -18,7 +21,7 @@ lpb $4
     add $5,$2
     add $5,$2
     mov $8,$3
-    cmp $8,0
+    equ $8,0
     add $3,$8
     add $1,$5
     mod $1,$3

@@ -1,7 +1,10 @@
-; A114606: Numbers n such that n-th octagonal number is 3-almost prime.
+; A114606: Numbers k such that the k-th octagonal number is 3-almost prime.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,15,17,19,21,25,29,31,33,35,41,51,55,65,73,77,79,83,89,91,93,95,97,101,107,111,123,131,133,139,141,145,149,151,155,157,173,179,183,197,201,203,205,215,221,223,227,229,233,237,241,247,253
 
+#offset 1
+
+sub $0,1
 mov $4,1
 mov $2,$0
 add $2,6
@@ -12,14 +15,14 @@ lpb $2
   seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$6
   add $3,1
-  cmp $3,4
+  equ $3,4
   add $3,$4
   sub $0,$3
   add $0,1
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,12
   add $1,$5
   mul $2,$4

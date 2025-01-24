@@ -22,6 +22,7 @@ lpb $1
       mov $0,$2
       add $0,$9
       trn $0,1
+      add $0,1
       seq $0,114322 ; Largest number whose 4th power has n digits.
       add $0,1
       mul $0,20

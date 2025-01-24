@@ -4,6 +4,7 @@
 
 equ $1,$0
 trn $0,1
+add $0,1
 seq $0,113262 ; One quarter of the number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
 add $0,1
 sub $1,$0

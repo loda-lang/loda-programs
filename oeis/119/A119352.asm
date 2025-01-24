@@ -20,8 +20,7 @@ lpb $3
   lpe
   add $1,1
   mov $2,$0
-  cmp $2,1
-  cmp $2,0
+  neq $2,1
   sub $3,$2
 lpe
 mov $0,$1

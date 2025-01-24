@@ -1,7 +1,10 @@
 ; A118512: Define sequence S_m by: initial term = m, reverse digits and add 1 to get next term. Entry shows S_11. This reaches a cycle of length 9 in 18 steps.
 ; 11,12,22,23,33,34,44,45,55,56,66,67,77,78,88,89,99,100,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9
-; Formula: a(n) = A004086(a(n-1))+1, a(0) = 11
+; Formula: a(n) = b(n-1), b(n) = A004086(b(n-1))+1, b(1) = 11
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $0,11
 lpb $1

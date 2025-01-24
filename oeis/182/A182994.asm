@@ -11,6 +11,7 @@ lpb $3
   mov $6,$0
   mul $0,2
   trn $0,1
+  add $0,1
   seq $0,117298 ; Number of partitions of n with unique smallest part and unique largest part.
   mul $0,$6
   mul $0,2

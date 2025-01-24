@@ -1,8 +1,11 @@
 ; A118640: Result of left concatenation of the next Roman-numeral symbol.
 ; Submitted by zombie67 [MM]
 ; 1,6,16,66,166,666,1666,6666,16666,66666,166666,666666
-; Formula: a(n) = 5*floor((10^floor(n/2)+3*10^floor(n/2)*(n%2))/3)+1
+; Formula: a(n) = 5*floor((10^floor((n-1)/2)+3*10^floor((n-1)/2)*((n-1)%2))/3)+1
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $1,2
 mov $2,10

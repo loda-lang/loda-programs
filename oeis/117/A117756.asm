@@ -9,13 +9,13 @@ lpb $2
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   trn $3,1
   seq $3,151702 ; a(0)=1, a(1)=0; a(2^i + j) = a(j) + a(j+1) for 0 <= j < 2^i.
-  cmp $3,1
+  equ $3,1
   add $5,1
   sub $0,$3
   add $1,$5
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,1
   mul $2,$4
   sub $2,1

@@ -9,13 +9,14 @@ mov $4,12
 mov $1,48
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,112621 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = sum_{p|n} b(p,n)^b(p,n).
-  cmp $3,7
+  equ $3,7
   sub $0,$3
   add $1,$4
   mov $4,$0
   max $4,6
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

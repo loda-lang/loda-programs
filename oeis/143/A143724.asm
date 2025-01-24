@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,116477 ; a(n) = Sum_{1<=k<=n, gcd(k,n)=1} floor(n/k).
   mov $0,0
 lpe

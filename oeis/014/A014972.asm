@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,115977 ; Expansion of elliptic modular function lambda in powers of the nome q.
 pow $1,$2
 lpb $2

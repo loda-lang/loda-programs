@@ -1,8 +1,11 @@
-; A118016: Integers of the form 2^n/(n-1).
+; A118016: Integers of the form 2^k/(k-1).
 ; Submitted by Science United
 ; 4,4,8,64,8192,268435456,576460752303423488,5316911983139663491615228241121378304,904625697166532776746648320380374280103671755200316906558262375061821325312
-; Formula: a(n) = 2*truncate(2^(2^n-n))
+; Formula: a(n) = 2*truncate(2^(2^(n-1)-n+1))
 
+#offset 1
+
+sub $0,1
 mov $1,2
 pow $1,$0
 sub $1,$0

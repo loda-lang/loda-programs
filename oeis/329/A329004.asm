@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   sub $2,1
+  add $1,1
   seq $1,112275 ; Smallest number greater than n having at least as many divisors as n.
   sub $1,1
   add $2,$1

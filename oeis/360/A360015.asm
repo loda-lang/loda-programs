@@ -10,6 +10,7 @@ lpb $2
   mov $7,$1
   add $7,1
   seq $7,51903 ; Maximum exponent in the prime factorization of n.
+  add $3,1
   seq $3,111089 ; Largest prime factor of 2n.
   pow $3,$7
   mov $5,$3

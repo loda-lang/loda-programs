@@ -13,6 +13,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,112773 ; 3 together with primes multiplied by 3.
   mul $1,$0
   sub $1,$3

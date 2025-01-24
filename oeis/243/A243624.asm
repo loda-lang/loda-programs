@@ -6,10 +6,11 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,117929 ; Number of partitions of n into 2 distinct primes.
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

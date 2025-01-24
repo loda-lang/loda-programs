@@ -12,8 +12,7 @@ lpb $2
   mov $1,$0
   add $1,1
   trn $1,$4
-  cmp $1,0
-  cmp $1,0
+  neq $1,0
   sub $2,$1
   add $4,$3
 lpe

@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,119688 ; a(n) = n!! mod (n+1).
   mov $1,$0
   mov $0,0
