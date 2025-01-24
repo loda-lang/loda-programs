@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $5,$3
+  add $3,1
   seq $3,121706 ; a(n) = Sum_{k=1..n-1} k^n.
   mod $3,$5
   equ $3,0

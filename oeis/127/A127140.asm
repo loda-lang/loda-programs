@@ -2,6 +2,8 @@
 ; Submitted by wmaldito [CO]
 ; 1,-4,1,-6,0,1,4,-4,0,1,-10,0,0,0,1,24,-6,-4,0,0,1,-14,0,0,0,0,0,1,0,4,0,-4,0,0,0,1,9,0,-6,0,0,0,0,0,1,40,-10,0,0,-4,0,0,0,0,1
 
+#offset 1
+
 seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
 mul $0,2
 mov $2,$0

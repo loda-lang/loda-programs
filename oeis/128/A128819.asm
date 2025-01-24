@@ -2,6 +2,9 @@
 ; Submitted by Stony666
 ; 13,21,29,31,40,43,51,53,57,65
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $2,1
   sub $0,$2

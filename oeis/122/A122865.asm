@@ -1,13 +1,69 @@
 ; A122865: Expansion of chi(x) * phi(x^3) * psi(-x^3) in powers of x where chi(), phi(), psi() are Ramanujan theta functions.
 ; Submitted by shiva
 ; 1,1,0,2,2,1,0,0,3,0,0,2,2,2,0,0,1,2,0,2,2,1,0,0,2,0,0,2,4,0,0,0,2,3,0,2,2,0,0,0,1,0,0,4,0,2,0,0,4,2,0,0,2,2,0,0,3,0,0,2,2,0,0,0,2,1,0,2,4,2,0,0,0,0,0,2,2,2,0,0
-; Formula: a(n) = truncate((3*truncate(A004531(12*n+4)/4))/3)
 
 mov $2,3
 mul $2,$0
 add $2,1
 mul $2,4
-seq $2,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+mov $3,$2
+mov $12,0
+trn $2,1
+mov $4,$2
+mov $5,-1
+pow $5,$2
+mov $6,$2
+add $6,1
+mov $15,$6
+lex $15,2
+mov $16,2
+pow $16,$15
+div $6,$16
+div $6,2
+mov $7,-1
+pow $7,$6
+mul $7,2
+mov $8,-2
+bin $8,$6
+div $8,$7
+mov $9,0
+mov $11,3
+sub $6,$8
+mul $6,2
+add $6,3
+lpb $6
+  sub $6,$11
+  mov $10,$6
+  max $10,0
+  mul $10,4
+  mov $14,$10
+  nrt $14,2
+  add $10,2
+  mov $13,$10
+  nrt $13,2
+  mov $10,$13
+  add $10,$14
+  mod $10,2
+  mov $11,2
+  add $11,$12
+  add $9,$10
+  add $12,2
+lpe
+mov $6,$9
+mul $6,$7
+div $6,2
+max $6,0
+mul $6,2
+mod $2,4
+mul $2,$6
+sub $6,$2
+mov $2,$6
+div $2,2
+mul $2,$5
+mul $2,2
+sub $2,1
+sub $2,$4
+add $2,$3
 div $2,4
 add $1,$2
 mul $1,2

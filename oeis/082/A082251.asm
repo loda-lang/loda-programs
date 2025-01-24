@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,127336 ; Numbers that are the sum of 9 consecutive primes.
   sub $3,1
   mov $5,$3

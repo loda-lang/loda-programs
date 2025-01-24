@@ -18,6 +18,7 @@ lpb $3
   mul $5,-2
   div $5,$4
   sub $4,$5
+  add $4,1
   seq $4,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $4,1
   add $0,1

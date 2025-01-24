@@ -2,6 +2,9 @@
 ; Submitted by Kotenok2000
 ; 1,0,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $5,2
 lpb $5
@@ -10,6 +13,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,120509 ; Generalized meta-Fibonacci sequence a(n) with parameters s=2 and k=4.
   mov $2,$5
   mul $2,$4

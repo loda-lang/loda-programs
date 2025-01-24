@@ -1,6 +1,9 @@
 ; A127191: Related to the function "shin" - see reference for precise definition.
 ; 31,71,122,162,213,253,293,344,384,435,475,526,566,617,657,697,748,788,839,879,930,970,1021,1061,1112,1152
 
+#offset 1
+
+sub $0,1
 mov $1,4
 mov $2,5
 add $2,$0

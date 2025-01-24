@@ -12,6 +12,7 @@ lpb $3
   sub $3,1
   add $1,$3
   trn $1,1
+  add $1,1
   seq $1,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
 lpe
 mov $0,$1

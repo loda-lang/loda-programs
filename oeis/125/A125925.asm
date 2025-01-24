@@ -1,9 +1,10 @@
 ; A125925: Sprague-Grundy values for octal game .351.
 ; Submitted by Simon Strandgaard
 ; 1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,2
-; Formula: a(n) = truncate(gcd(4,gcd(floor((n+1)/4),2)*(n+1))/2)
+; Formula: a(n) = truncate(gcd(4,n*gcd(floor(n/4),2))/2)
 
-add $0,1
+#offset 1
+
 mov $2,$0
 div $0,4
 gcd $0,2

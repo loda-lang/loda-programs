@@ -4,8 +4,6 @@
 
 #offset 2
 
-sub $0,1
-add $0,1
 lpb $0
   mov $1,$0
   equ $2,0

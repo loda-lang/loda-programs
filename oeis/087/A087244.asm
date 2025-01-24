@@ -10,6 +10,7 @@ add $2,9
 pow $2,2
 lpb $2
   mov $6,$1
+  add $6,1
   seq $6,125746 ; a(n) = smallest divisor d of n such that n <= {sum of d and all smaller divisors of n}.
   mov $3,$1
   div $3,$6

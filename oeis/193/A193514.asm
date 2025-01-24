@@ -11,6 +11,7 @@ sub $1,4
 mov $2,$0
 trn $0,1
 mov $3,$0
+add $0,1
 seq $0,123331 ; Expansion of (c(q)^2/(3c(q^2))-1)/2 in powers of q where c(q) is a cubic AGM function.
 mul $0,2
 sub $0,1

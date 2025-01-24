@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   mov $3,$2
   mov $2,$0
+  add $2,1
   seq $2,124355 ; Number of (directed) Hamiltonian cycles on the complete graph K_n.
   add $2,1
   lpb $3

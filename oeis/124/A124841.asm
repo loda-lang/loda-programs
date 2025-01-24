@@ -14,7 +14,14 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $0,1
-  seq $0,1961 ; A Beatty sequence: floor(n * (sqrt(5) - 1)).
+  mov $5,$0
+  add $5,$0
+  mul $5,2
+  add $5,$0
+  mul $5,$0
+  nrt $5,2
+  sub $5,$0
+  mov $0,$5
   div $0,2
   mul $1,$0
   mul $3,-1

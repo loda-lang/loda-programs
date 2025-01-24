@@ -1,6 +1,9 @@
 ; A121151: Minimal number of vertices in an n-polytrimino (or n-polyiamond).
 ; 3,4,5,6,7,7,8,9,10,10,11,12,12,13
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,$0
   mov $0,2

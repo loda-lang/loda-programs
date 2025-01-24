@@ -2,6 +2,9 @@
 ; Submitted by mikey
 ; 71,1,51,21,41,61,31,81,11
 
+#offset 1
+
+sub $0,1
 max $1,$0
 mod $1,9
 mov $2,-2
@@ -12,7 +15,7 @@ lpb $4
   mul $5,$4
   add $2,$5
   add $2,$3
-  cmp $5,0
+  equ $5,0
   add $3,$5
   add $3,$2
   sub $4,1

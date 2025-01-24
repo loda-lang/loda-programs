@@ -12,6 +12,7 @@ lpb $1
   sub $1,$2
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,127647 ; Triangle read by rows: row n consists of n-1 zeros followed by Fibonacci(n).
 lpe
 mov $0,$2

@@ -4,8 +4,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 max $1,$0
 add $0,2
 lpb $0

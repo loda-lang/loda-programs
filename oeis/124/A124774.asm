@@ -7,8 +7,8 @@ mul $0,2
 lpb $0
   mov $3,$0
   lpb $3
-    cmp $4,0
-    cmp $6,0
+    equ $4,0
+    equ $6,0
     add $2,$6
     add $2,1
     sub $3,$4

@@ -9,7 +9,6 @@ lpb $5
   sub $6,$1
   mov $0,$7
   add $0,$5
-  sub $0,1
   seq $0,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
   add $2,$6
   mov $3,$2

@@ -11,6 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,123863 ; Expansion of (c(q^3) - c(q^6) - 2*c(q^12)) / 3 in powers of q where c(q) is a cubic AGM theta function.
     mov $9,10
     add $9,$5

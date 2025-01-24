@@ -7,6 +7,7 @@
 lpb $0
   add $0,$2
   mov $2,$1
+  add $2,1
   seq $2,120431 ; Numbers k such that k and k+2 are prime powers.
   sub $0,$2
   add $1,1

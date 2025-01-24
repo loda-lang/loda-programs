@@ -7,7 +7,7 @@ lpb $0
   sub $0,1
   sub $0,$1
   bin $2,$0
-  dis $2,2
+  dgs $2,2
   mod $2,2
   add $0,$1
   add $1,1

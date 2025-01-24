@@ -1,8 +1,11 @@
-; A126848: Arises in lower bound of the spectral norm of n X n symmetric random matrices.
+; A126848: a(n) = floor(2*n^(5/11)).
 ; Submitted by Science United
 ; 2,2,3,3,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,13,13,13,14,14,14
 
+#offset 1
+
 mov $3,3
+sub $0,1
 mul $0,2
 pow $0,2
 div $0,4

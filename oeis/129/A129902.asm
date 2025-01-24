@@ -4,9 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $4,$0
-add $4,1
+sub $0,1
 mov $5,2
 mov $6,$0
 lpb $6
@@ -20,7 +19,9 @@ lpb $6
   mov $7,$1
   seq $1,264668 ; a(n) = A264600(n) - A061486(n).
   sub $1,1
-  seq $7,11937 ; a(n) = floor( n*(n-1)*(n-2)*(n-3)/27 ).
+  bin $7,4
+  mul $7,8
+  div $7,9
   add $7,45
   mul $7,$1
   mov $2,3

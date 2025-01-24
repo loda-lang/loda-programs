@@ -11,6 +11,7 @@ lpb $0
   mul $2,3
   mov $5,-1
   pow $5,$2
+  add $2,1
   seq $2,128229 ; A natural number transform, inverse of signed A094587.
   mul $2,$5
   sub $4,1

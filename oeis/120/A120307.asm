@@ -1,9 +1,12 @@
 ; A120307: Inverse determinant of n X n matrix M[i,j] = i*j/(i+j-1).
 ; Submitted by Jamie Morken(w3)
 ; 1,3,60,10500,18522000,359400888000,81408613942656000,224737840779305293440000,7812628980363223707442752000000,3508978524227146242839564498172672000000
-; Formula: a(n) = floor((binomial(2*n+1,n)^2)/(2*n+1))*a(n-1), a(0) = 1
+; Formula: a(n) = b(n-1), b(n) = floor((binomial(2*n+1,n)^2)/(2*n+1))*b(n-1), b(0) = 1
+
+#offset 1
 
 mov $1,1
+sub $0,1
 lpb $0
   mov $3,1
   add $3,$0

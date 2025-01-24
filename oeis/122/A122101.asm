@@ -18,7 +18,7 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
-  seq $1,52841 ; E.g.f.: 1/(exp(x)*(2-exp(x))).
+  seq $1,52841 ; Expansion of e.g.f.: 1/(exp(x)*(2-exp(x))).
   mul $3,$1
   add $5,$3
 lpe

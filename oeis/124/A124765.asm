@@ -8,7 +8,7 @@ lpb $0
     sub $2,3
   lpe
   max $1,$2
-  cmp $1,$2
+  equ $1,$2
   pow $1,$3
   add $2,2
   add $3,$1

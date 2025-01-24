@@ -6,6 +6,7 @@ mov $2,$0
 lpb $2
   mov $5,$1
   div $5,2
+  add $5,1
   seq $5,123663 ; Number of shared edges in a spiral of n unit squares.
   mov $3,$1
   sub $3,$5
@@ -15,7 +16,7 @@ lpb $2
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

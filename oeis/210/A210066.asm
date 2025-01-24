@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,121455 ; Expansion of q*(phi(-q)psi(q^4))^2 in powers of q where phi(), psi() are Ramanujan theta functions.
     mul $7,4
     mul $7,$$9

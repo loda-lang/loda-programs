@@ -11,7 +11,6 @@ add $3,$2
 lpb $2
   sub $2,1
   mov $0,$3
-  sub $0,1
   seq $0,127139 ; Inverse triangle of A126988.
   max $3,2
   sub $3,1

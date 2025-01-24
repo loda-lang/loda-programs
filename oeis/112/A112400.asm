@@ -19,6 +19,7 @@ lpb $0
     dif $0,$2
     mov $5,$4
     bin $5,2
+    add $5,1
     seq $5,127475 ; Triangle T(n,k) read by rows: T(n,k) = mu(n)*phi(k) if k|n, else T(n,k)=0.
     add $4,1
   lpe

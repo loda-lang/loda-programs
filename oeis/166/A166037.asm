@@ -13,6 +13,7 @@ lpb $0
   add $2,1
   div $5,$2
   sub $2,$5
+  add $2,1
   seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $2,1
   mul $4,$1

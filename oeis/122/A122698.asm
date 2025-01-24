@@ -1,9 +1,29 @@
 ; A122698: a(1)=a(2)=1 then a(n) = Sum_{d|n, 1<d<n} a(d)*a(n/d).
 ; Submitted by Sphynx
 ; 1,1,0,1,0,0,0,2,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = A126120(A091860(n+1)-1)
 
-add $0,1
-seq $0,91860 ; a(1)=1, a(n)=sum(i=1,n-1,b(i)) where b(i)=0 if a(i) and a(n-i) are both even, b(i)=1 otherwise.
+#offset 1
+
+mov $2,0
+mov $3,0
+mov $4,1
 sub $0,1
-seq $0,126120 ; Catalan numbers (A000108) interpolated with 0's.
+mul $0,2
+lpb $0
+  sub $0,1
+  div $0,2
+  sub $3,$4
+  mov $4,12
+  add $4,$0
+  mod $4,2
+  mul $4,$3
+  add $0,$3
+  add $2,2
+  add $2,$4
+lpe
+mov $1,$2
+dif $1,2
+mov $0,$2
+bin $0,$1
+add $1,1
+div $0,$1

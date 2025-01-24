@@ -8,6 +8,6 @@ lpb $0
 lpe
 mov $2,$1
 bin $1,$0
-cmp $0,$2
+equ $0,$2
 gcd $0,2
 mul $0,$1

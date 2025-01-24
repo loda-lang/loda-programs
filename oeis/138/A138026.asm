@@ -9,8 +9,9 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,121561 ; The number of iterations of "subtract the largest prime less than or equal to the current value" to go from n to the limiting value 0 or 1.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

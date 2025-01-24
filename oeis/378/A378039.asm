@@ -9,6 +9,7 @@ lpb $2
   mov $0,$5
   add $0,$2
   max $0,0
+  add $0,1
   seq $0,120327 ; Smallest nonsquarefree number >= n.
   mov $4,$0
   sub $4,1

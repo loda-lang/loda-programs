@@ -14,6 +14,7 @@ add $1,1
 add $0,1
 lpb $0
   sub $0,1
+  add $1,1
   seq $1,127739 ; Triangle read by rows, in which row n contains the triangular number T(n) = A000217(n) repeated n times; smallest triangular number greater than or equal to n.
 lpe
 add $2,$1

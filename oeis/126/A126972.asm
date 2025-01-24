@@ -5,7 +5,7 @@ mov $1,1
 add $1,$0
 mov $0,$1
 bin $1,3
-cmp $0,$1
+equ $0,$1
 add $1,3
 sub $1,$0
 mov $0,$1

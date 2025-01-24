@@ -11,6 +11,7 @@ lpb $2
   sub $2,1
   add $2,$4
   mov $3,$1
+  add $3,1
   seq $3,128617 ; Expansion of q^2 * psi(q) * psi(q^15) in powers of q where psi() is a Ramanujan theta function.
   min $3,1
   sub $0,$3

@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   seq $3,66043 ; a(1) = 1; for m > 0, a(2m) = 2m, a(2m+1) = 4m+2.
-  sub $3,1
   seq $3,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
   sub $3,$1
   max $3,0

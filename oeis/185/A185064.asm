@@ -10,7 +10,6 @@ pow $3,2
 lpb $3
   mov $4,$2
   mul $4,2
-  sub $4,1
   seq $4,123001 ; Binary numbers that start 10...
   mod $4,$2
   div $4,2

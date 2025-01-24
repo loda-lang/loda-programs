@@ -9,6 +9,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,6005 ; The odd prime numbers together with 1.
+  add $3,1
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   add $3,$1

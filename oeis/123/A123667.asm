@@ -1,11 +1,11 @@
 ; A123667: a(n) = n * 2^bigomega(n).
 ; Submitted by Penguin
 ; 1,4,6,16,10,24,14,64,36,40,22,96,26,56,60,256,34,144,38,160,84,88,46,384,100,104,216,224,58,240,62,1024,132,136,140,576,74,152,156,640,82,336,86,352,360,184,94,1536,196,400,204,416,106,864,220,896,228,232,118,960,122,248,504,4096,260,528,134,544,276,560,142,2304,146,296,600,608,308,624,158,2560
-; Formula: a(n) = truncate(2^A001222(n+1))*(n+1)
+; Formula: a(n) = n*truncate(2^A001222(n))
+
+#offset 1
 
 mov $2,$0
-add $2,1
-add $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mov $1,2
 pow $1,$0

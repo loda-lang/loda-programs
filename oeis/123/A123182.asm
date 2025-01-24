@@ -2,6 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 1,2,3,2,3,4,3,3,4
 
+#offset 1
+
+sub $0,1
 lpb $0
   bin $1,$0
   mov $2,$0

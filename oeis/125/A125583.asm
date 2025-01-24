@@ -2,6 +2,9 @@
 ; Submitted by http://kodeks.karelia.ru/
 ; 4,5,4,4,4,6,7,7,10,9,10,10
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $1,$0
 add $1,1

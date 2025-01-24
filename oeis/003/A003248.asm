@@ -14,6 +14,7 @@ pow $5,3
 lpb $5
   sub $5,18
   mov $6,$4
+  add $6,1
   seq $6,120868 ; a(n) is the number k for which there exists a unique pair (j,k) of positive integers such that (j + k + 1)^2 - 4*k = 5*n^2.
   mod $6,5
   dif $6,2

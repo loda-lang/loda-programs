@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,127094 ; Triangle, reversal of A127093.
   mov $5,$3
   neq $3,0

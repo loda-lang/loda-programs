@@ -14,6 +14,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
+  add $0,1
   seq $0,127413 ; a(n) = Sum_{1<=k<=n, gcd(k,n)=1} prime(k).
   mul $1,$0
   add $3,$1

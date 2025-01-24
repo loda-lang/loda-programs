@@ -11,6 +11,6 @@ lpb $2
   seq $3,333516 ; Irregular triangle read by rows in which row n lists the first A000217(n) terms of A002260, n >= 1.
   sub $0,$3
   add $1,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1

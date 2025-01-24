@@ -4,6 +4,7 @@
 
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,124459 ; Square array resulting from the bisection of array A124458. (The other array is A093560.)
   sub $1,1
   mov $0,0

@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,129388 ; Primes that are equal to the mean of 5 consecutive squares.
   mov $2,$3
   mul $2,$0

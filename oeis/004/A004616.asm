@@ -24,7 +24,6 @@ lpb $2
       sub $7,$8
     lpe
     mov $7,$6
-    sub $7,1
     seq $7,126832 ; Ramanujan numbers (A000594) read mod 5.
     lpb $3
       dif $3,$6

@@ -15,6 +15,7 @@ lpb $2
   add $3,1
   div $6,$3
   sub $3,$6
+  add $3,1
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   seq $3,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.

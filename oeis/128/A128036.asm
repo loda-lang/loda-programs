@@ -2,7 +2,10 @@
 ; Submitted by kpmonaghan
 ; 3,3,4,9,9,11,13,17,19
 
+#offset 1
+
 mov $1,1
+sub $0,1
 pow $0,2
 add $0,1
 lpb $0

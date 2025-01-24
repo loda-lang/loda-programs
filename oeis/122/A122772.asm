@@ -1,10 +1,35 @@
 ; A122772: Numbers k, excluding powers of 2, such that a regular k-sided polygon can be constructed with a ruler and compass.
 ; Submitted by BarnardsStern
 ; 3,5,6,10,12,15,17,20,24,30,34,40,48,51,60,68,80,85,96,102,120,136,160,170,192,204,240,255,257,272,320,340,384,408,480,510,514,544,640,680,768,771,816,960,1020,1028,1088,1280,1285,1360,1536,1542,1632,1920,2040
-; Formula: a(n) = truncate(A070816(A014132(n+1)+1)/65537)
 
+#offset 1
+
+sub $0,1
+mov $1,$0
+mul $0,8
 add $0,1
-seq $0,14132 ; Complement of triangular numbers (A000217); also array T(n,k) = ((n+k)^2 + n-k)/2, n, k > 0, read by antidiagonals.
+nrt $0,2
 add $0,1
-seq $0,70816 ; Solutions to phi(gpf(x)) - gpf(phi(x)) = 65534 = c are special multiples of 65537, x=65537*k, where the largest prime factors of factor k were observed in {2, 3, 5, 17, 257}.
-div $0,65537
+div $0,2
+add $1,$0
+mov $2,0
+mov $0,$1
+add $0,1
+mov $3,$0
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,53575 ; Odd part of phi(n): a(n) = A000265(A000010(n)).
+  sub $4,1
+  equ $4,0
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,1

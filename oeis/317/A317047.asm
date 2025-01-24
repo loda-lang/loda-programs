@@ -7,13 +7,14 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,125238 ; Differences between consecutive deficient numbers.
-  cmp $4,1
+  equ $4,1
   sub $0,$4
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

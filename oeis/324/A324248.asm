@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   mov $5,$3
   mul $5,2
+  add $5,1
   seq $5,126241 ; Dropping times in the 3n+1 problem (or the Collatz problem). Let T(n):=n/2 if n is even, (3n+1)/2 otherwise (A014682). Let a(n) be the smallest integer k such that T^(k)(n)<n, where T^(k) is the k-th iterate, or infinity otherwise; a(n) is called the dropping time of n.
   mov $3,$5
   div $3,2

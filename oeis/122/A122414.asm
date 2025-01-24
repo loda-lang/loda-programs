@@ -2,7 +2,11 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,1,0,0,0,0
 
-add $0,1
+#offset 1
+
 seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
-seq $0,32741 ; a(0) = 0; for n > 0, a(n) = number of proper divisors of n (divisors of n which are less than n).
+trn $0,1
+add $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+sub $0,1
 equ $0,1

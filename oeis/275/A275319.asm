@@ -7,7 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   equ $3,0

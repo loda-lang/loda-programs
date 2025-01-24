@@ -7,7 +7,6 @@
 mov $1,$0
 add $1,2
 neq $1,2
-add $0,1
 seq $0,121666 ; McKay-Thompson series of class 6C for the Monster group with a(0) = -6.
 mul $0,$1
 gcd $0,$0

@@ -12,6 +12,6 @@ mul $0,$2
 div $0,10
 mul $0,3
 mov $1,$0
-cmp $1,0
+equ $1,0
 mul $0,6
 add $0,$1

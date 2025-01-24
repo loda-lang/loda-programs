@@ -12,7 +12,6 @@ lpb $3
   add $4,1
   seq $4,40 ; The prime numbers.
   mov $6,$4
-  sub $4,1
   seq $4,124897 ; a(n) = mu(n^2 + 1), mu = A008683.
   neq $4,0
   sub $0,$4

@@ -1,10 +1,13 @@
 ; A129874: Sequence h_n arising in enumeration of arrays of directed blocks (see Quaintance reference for precise definition).
 ; Submitted by Contact
 ; 2,1,4,4,16,19,76,98
-; Formula: a(n) = c(n)+1, b(n) = 4*b(n-2)+3, b(5) = 63, b(4) = 15, b(3) = 15, b(2) = 3, b(1) = 3, b(0) = 0, c(n) = b(n-1)+c(n-3)+d(n-3)+truncate((c(n-2)+d(n-2))/2)-1, c(5) = 18, c(4) = 15, c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 1, d(n) = c(n-1)+d(n-1)-1, d(5) = 17, d(4) = 3, d(3) = 1, d(2) = -1, d(1) = 0, d(0) = 0
+; Formula: a(n) = c(n-1)+1, b(n) = 4*b(n-2)+3, b(5) = 63, b(4) = 15, b(3) = 15, b(2) = 3, b(1) = 3, b(0) = 0, c(n) = b(n-1)+c(n-3)+d(n-3)+truncate((c(n-2)+d(n-2))/2)-1, c(5) = 18, c(4) = 15, c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 1, d(n) = c(n-1)+d(n-1)-1, d(5) = 17, d(4) = 3, d(3) = 1, d(2) = -1, d(1) = 0, d(0) = 0
+
+#offset 1
 
 mov $1,1
 mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
   add $4,$6

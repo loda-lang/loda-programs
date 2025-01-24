@@ -2,9 +2,12 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,0,2,2,10,6,34,88
 
+#offset 1
+
 mov $1,1
 mov $3,1
 mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $4,$2
@@ -15,7 +18,15 @@ lpb $0
   div $1,7
   sub $1,1
   seq $1,360496 ; a(n) is the remainder after dividing n by its largest prime factor plus 1, a(1) = 1.
-  seq $1,19446 ; a(n) = ceiling(n/tau), where tau = (1+sqrt(5))/2.
+  mov $5,$1
+  mul $5,4
+  add $5,$1
+  mul $5,$1
+  nrt $5,2
+  sub $5,$1
+  div $5,2
+  mov $1,$5
+  add $1,1
   mul $1,$2
   add $1,$4
   dif $2,2

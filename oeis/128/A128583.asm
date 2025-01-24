@@ -9,7 +9,15 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,5369 ; a(n) = 1 if n is of the form m(m+1), else 0.
+  mul $2,4
+  mov $6,$2
+  nrt $6,2
+  add $2,2
+  mov $5,$2
+  nrt $5,2
+  mov $2,$5
+  add $2,$6
+  mod $2,2
   add $1,$2
   add $3,$4
   mov $4,3

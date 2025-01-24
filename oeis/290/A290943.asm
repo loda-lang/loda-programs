@@ -9,6 +9,7 @@ lpb $0
   mov $2,$0
   trn $2,1
   mov $5,$2
+  add $2,1
   seq $2,123331 ; Expansion of (c(q)^2/(3c(q^2))-1)/2 in powers of q where c(q) is a cubic AGM function.
   mul $2,2
   sub $2,1

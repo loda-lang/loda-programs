@@ -2,6 +2,7 @@
 ; Submitted by Science United
 ; 1,1,1,2,0,1,3,1,0,1,5,0,0,0,1,7,2,1,0,0,1,11,0,0,0,0,0,1,15,3,0,1,0,0,0,1,22,0,2,0,0,0,0,0,1,30,5,0,0,1,0,0,0,0,1,42,0,0,0,0,0,0,0,0,0,1,56,7,3,2,0,1,0,0,0,0,0,1,77,0
 
+add $0,1
 seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
 mul $0,2
 lpb $0

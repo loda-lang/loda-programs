@@ -14,7 +14,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
   mul $4,2
@@ -39,6 +38,7 @@ lpb $2
   sub $6,$8
   mov $4,$6
   mov $5,0
+  sub $0,1
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   seq $0,343467 ; a(n) = -(1/n) * Sum_{d|n} phi(n/d) * (-5)^d.
   mul $0,$6

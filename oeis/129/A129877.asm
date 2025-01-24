@@ -2,7 +2,9 @@
 ; Submitted by Science United
 ; 2,0,6,12,58,220,958,4184
 
-add $0,2
+#offset 1
+
+add $0,1
 lpb $0
   sub $0,1
   mov $6,0
@@ -14,6 +16,7 @@ lpb $0
     mov $10,3
     sub $4,1
     trn $7,1
+    add $7,1
     seq $7,129876 ; Sequence i_n arising in enumeration of arrays of directed blocks (see Quaintance reference for precise definition).
     mul $7,$$9
     add $5,1

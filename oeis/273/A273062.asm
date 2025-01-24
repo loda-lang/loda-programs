@@ -16,6 +16,7 @@ lpb $2
   add $1,1
   sub $2,$5
   sub $5,$6
+  add $5,1
   seq $5,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $5,1
   seq $3,178692 ; Expansion of the polynomial (1+x^3)*(1+x^5)*(1+x^7)*(1+x^9)*(1+x^11)*(1+x^13)*(1+x^15).
@@ -23,11 +24,11 @@ lpb $2
   gcd $3,$3
   sub $3,1
   seq $3,337174 ; Number of pairs of divisors of n (d1,d2) such that d1 <= d2 and d1*d2 >= n.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

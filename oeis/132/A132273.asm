@@ -12,6 +12,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,126572 ; Array read by antidiagonals: a(n,m) = the m-th integer from among those positive integers coprime to n.
   add $1,$0
 lpe

@@ -5,7 +5,7 @@ mov $1,1
 lpb $0
   sub $1,$0
   mod $1,3
-  cmp $0,0
+  equ $0,0
   add $0,1
 lpe
 add $0,$1

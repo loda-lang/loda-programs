@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,124171 ; Sequence obtained by reading the triangles shown below by rows.
   sub $0,$2
   add $1,$2

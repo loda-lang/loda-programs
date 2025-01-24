@@ -9,7 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,3
+  add $3,4
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   seq $3,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.

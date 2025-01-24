@@ -2,8 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,0,0,1,1,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,1,0,0,0,1
 
+#offset 1
+
 mul $0,72
-add $0,68
+sub $0,4
 lpb $0
   add $2,$0
   div $0,2

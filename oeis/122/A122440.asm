@@ -13,7 +13,7 @@ mul $0,-1
 add $0,$2
 lpb $0
   sub $0,1
-  dis $0,8
+  dgs $0,8
   sub $4,1
   mul $5,2
   mov $6,$3

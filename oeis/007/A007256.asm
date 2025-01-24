@@ -6,6 +6,7 @@
 
 add $0,1
 mov $2,$0
+sub $0,1
 seq $0,121666 ; McKay-Thompson series of class 6C for the Monster group with a(0) = -6.
 lpb $2
   sub $1,72

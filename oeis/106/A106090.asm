@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,124825 ; Numbers k such that 10k + 7 and 7k + 10 are primes.
   sub $3,1
   mov $5,$3

@@ -1,9 +1,10 @@
 ; A337362: Number of pairs of divisors of n, (d1,d2), with d1 <= d2 such that d1 and d2 are nonconsecutive integers.
 ; Submitted by Kotenok2000
 ; 1,2,3,5,3,8,3,9,6,9,3,18,3,9,10,14,3,19,3,19,10,9,3,33,6,9,10,20,3,33,3,20,10,9,10,42,3,9,10,34,3,33,3,20,21,9,3,52,6,20,10,20,3,34,10,34,10,9,3,73,3,9,21,27,10,34,3,20,10,35,3,74,3,9,21,20,10,34,3,53
-; Formula: a(n) = -A129308(n)+binomial(A000005(n+1)+1,2)
+; Formula: a(n) = -A129308(n+1)+binomial(A000005(n+1)+1,2)
 
 mov $2,$0
+add $2,1
 seq $2,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
 mov $1,$0
 add $1,1

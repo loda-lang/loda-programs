@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   add $4,1
   mov $3,$1
+  add $3,1
   seq $3,124981 ; Odd numbers that are not the sum of 2 squares.
   mul $3,2
   sub $3,1

@@ -10,6 +10,7 @@ lpb $0
   mov $4,-1
   pow $4,$0
   mul $0,0
+  sub $2,1
   seq $2,121666 ; McKay-Thompson series of class 6C for the Monster group with a(0) = -6.
   mul $2,$4
   mov $1,1

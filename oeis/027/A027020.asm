@@ -15,6 +15,7 @@ lpb $2
   sub $0,$2
   sub $0,1
   trn $0,1
+  add $0,1
   seq $0,125608 ; Triangle read by rows: given the left border = the Lucas numbers, (1, 3, 4, 7, ...), T(n,k) = (n-1,k) + (n-1,k-1).
   add $0,1
   trn $1,$0

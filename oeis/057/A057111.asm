@@ -11,7 +11,7 @@ lpb $2
   mov $5,0
   sub $5,$1
   mov $6,$1
-  add $6,1
+  add $6,2
   seq $6,122145 ; Numbers k such that q(k) < M(k) where q(k) is the largest prime divisor of k and M(k) is the largest prime power divisor of k.
   add $3,1
   seq $3,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

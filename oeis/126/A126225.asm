@@ -2,6 +2,9 @@
 ; Submitted by matszpk
 ; 2,2,3,2,3,5,3,11,3,22
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   add $2,$3

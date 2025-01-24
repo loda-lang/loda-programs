@@ -1,13 +1,14 @@
 ; A127353: A007376(2n).
 ; Submitted by Maskwacis Sharing Circle Group
 ; 2,4,6,8,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8
-; Formula: a(n) = -10*truncate(truncate((10*A261138(n+8))/((-10^(n+1))^2))/10)+truncate((10*A261138(n+8))/((-10^(n+1))^2))
+; Formula: a(n) = -10*truncate(truncate((10*A261138(n+7))/((-10^n)^2))/10)+truncate((10*A261138(n+7))/((-10^n)^2))
 
-mov $2,$0
-add $2,8
-seq $2,261138 ; The concatenation of 123456...n and the reverse of this number.
-add $0,1
+#offset 1
+
 mov $1,$0
+mov $2,$0
+add $2,7
+seq $2,261138 ; The concatenation of 123456...n and the reverse of this number.
 mov $0,10
 pow $0,$1
 sub $3,$0

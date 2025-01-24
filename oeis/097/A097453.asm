@@ -17,6 +17,7 @@ lpb $2
   div $7,$3
   mov $6,$3
   sub $6,$7
+  add $6,1
   seq $6,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $6,1
   add $3,1

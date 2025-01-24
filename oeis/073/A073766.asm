@@ -17,6 +17,7 @@ lpb $4
   add $3,1
   div $5,$3
   sub $3,$5
+  add $3,1
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   mov $2,$4

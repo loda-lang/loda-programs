@@ -2,7 +2,8 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 4,9,2,3,5,7,8,1,6
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mul $1,12
 mov $4,$0

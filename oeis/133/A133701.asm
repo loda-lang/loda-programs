@@ -1,8 +1,9 @@
 ; A133701: A133698 * A051731.
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,0,2,1,1,0,1,2,0,0,0,2,2,2,2,0,0,2,2,0,0,0,0,0,2,1,1,0,1,0,0,0,1,3,0,3,0,0,0,0,0,3,2,2,0,0,2,0,0,0,0,2
-; Formula: a(n) = truncate(A000120(3*A127446(n)^2)/2)
+; Formula: a(n) = truncate(A000120(3*A127446(n+1)^2)/2)
 
+add $0,1
 seq $0,127446 ; Triangle T(n,k) = n*A051731(n,k) read by rows.
 pow $0,2
 mul $0,3

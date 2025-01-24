@@ -2,7 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,1,3,5,10,15,26,37,58
 
-sub $0,1
+#offset 1
+
+sub $0,2
 lpb $0
   sub $0,1
   mov $1,1

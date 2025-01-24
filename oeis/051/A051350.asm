@@ -11,7 +11,6 @@ lpb $3
   trn $4,2
   mul $0,2
   sub $0,$4
-  sub $0,1
   seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $0,1
   seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).

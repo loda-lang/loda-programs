@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,120452 ; Number of partitions of n-1 boys and one girl with no couple.
   mov $2,$5
   mul $2,$4

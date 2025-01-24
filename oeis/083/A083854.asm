@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,121443 ; Sum of divisors d of n which are odd and n/d is not divisible by 3.
   add $3,1
   gcd $3,2

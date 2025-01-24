@@ -6,6 +6,7 @@
 
 sub $0,1
 mov $2,$0
+add $0,1
 seq $0,120268 ; Numerator of Sum_{k=1..n} 1/(2*k-1)^2.
 lpb $2
   sub $2,1

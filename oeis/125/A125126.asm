@@ -2,6 +2,9 @@
 ; Submitted by pututu
 ; 7,2,9,2,1,1,5,0
 
+#offset -5
+
+add $0,5
 mov $1,1
 mov $2,$0
 mov $3,1

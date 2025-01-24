@@ -10,6 +10,7 @@ lpb $3
   sub $0,$3
   lpb $0
     mov $2,$0
+    add $2,1
     seq $2,126114 ; Ultimate fixed-point under the mapping n->f(n), where f(n)=n if n is square else f(n)=n-Floor(Sqrt(n)).
     add $0,$2
     trn $0,6

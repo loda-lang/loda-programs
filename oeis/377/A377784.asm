@@ -10,6 +10,7 @@ lpb $3
   add $0,$3
   add $0,1
   seq $0,40 ; The prime numbers.
+  add $0,1
   seq $0,120327 ; Smallest nonsquarefree number >= n.
   mov $2,$3
   mul $2,$0

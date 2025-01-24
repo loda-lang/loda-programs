@@ -5,6 +5,7 @@
 mov $2,$0
 dif $2,-2
 max $2,0
+add $2,1
 seq $2,129308 ; a(n) is the number of positive integers k such that k*(k+1) divides n.
 mov $1,$0
 add $1,1

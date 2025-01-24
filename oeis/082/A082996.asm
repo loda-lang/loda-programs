@@ -15,6 +15,7 @@ lpb $2
   mov $0,$5
   add $0,1
   equ $0,4
+  add $0,1
   seq $0,120518 ; a(n) = min{j : A120507(j) = n}.
   mov $3,$0
   sub $3,1

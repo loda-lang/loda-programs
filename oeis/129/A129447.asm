@@ -22,7 +22,7 @@ lpb $0
   mul $0,2
   sub $0,1
   mul $5,$6
-  cmp $5,$4
+  equ $5,$4
   mul $5,$0
   sub $3,$5
   sub $4,$6

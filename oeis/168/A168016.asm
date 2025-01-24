@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,2,1,0,3,1,0,2,5,1,0,0,0,7,1,0,0,2,3,11,1,0,0,0,0,0,15,1,0,0,0,2,0,5,22,1,0,0,0,0,0,3,0,30,1,0,0,0,0,2,0,0,7,42,1,0,0,0,0,0,0,0,0,0,56,1,0,0,0,0,0,2,0,3,5,11,77,1,0
 
-seq $0,127013 ; Triangle read by rows: reversal of A126988.
+add $0,1
+seq $0,127013 ; Triangle read by rows: row reversal of A126988.
 lpb $0
   mov $1,$0
   seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).

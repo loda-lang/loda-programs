@@ -11,7 +11,7 @@ lpe
 mul $1,2
 bin $1,$0
 div $0,142
-cmp $2,$0
+equ $2,$0
 mul $2,$1
 mul $1,2
 add $1,1

@@ -2,9 +2,11 @@
 ; Submitted by gemini8
 ; 2,9,8,2,5,7,2,2,3,5,6,3
 
+#offset 3
+
 mov $1,-7
 mov $3,3
-add $0,4
+add $0,1
 lpb $0
   sub $0,$3
   mov $2,$0

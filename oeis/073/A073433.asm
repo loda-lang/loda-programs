@@ -18,6 +18,7 @@ lpb $2
   mul $6,-2
   div $6,$7
   sub $7,$6
+  add $7,1
   seq $7,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $7,1
   sub $7,$8

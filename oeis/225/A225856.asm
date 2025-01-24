@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  sub $3,1
   seq $3,124897 ; a(n) = mu(n^2 + 1), mu = A008683.
   neq $3,0
   sub $0,$3

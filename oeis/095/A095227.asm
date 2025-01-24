@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,125289 ; Numbers with unique nonzero digit in decimal representation.
 lpb $0
   mov $2,$0

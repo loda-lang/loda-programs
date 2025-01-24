@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,121443 ; Sum of divisors d of n which are odd and n/d is not divisible by 3.
     mul $7,9
     mul $7,$$9

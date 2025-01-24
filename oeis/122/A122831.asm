@@ -5,6 +5,7 @@
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,122830 ; Expansion of c(q) * c(q^6) / c(q^2)^2 in powers of q where c() is a cubic AGM theta function.
   mov $0,0
   add $1,$2

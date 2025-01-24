@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,2
   seq $0,120070 ; Triangle of numbers used to compute the frequencies of the spectral lines of the hydrogen atom.
   mul $1,$0
   mul $3,-1

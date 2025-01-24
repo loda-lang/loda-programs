@@ -11,6 +11,7 @@ lpb $0
   mul $1,-1
   add $1,2
   mov $2,$0
+  add $2,1
   seq $2,129131 ; Alternately write composite and prime numbers.
   add $1,$2
 lpe

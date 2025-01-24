@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  add $3,4
+  add $3,5
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

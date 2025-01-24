@@ -12,14 +12,15 @@ lpb $2
   div $5,$1
   mov $3,$1
   sub $3,$5
+  add $3,1
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   sub $3,1
   mod $3,2
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

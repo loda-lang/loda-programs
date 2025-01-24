@@ -1,9 +1,12 @@
 ; A121192: Alkane systems (see Cyvin reference for precise definition).
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,1,4,13,39,116,341,997
-; Formula: a(n) = b(n)-1, b(n) = 4*b(n-3)+2*b(n-1)+2*b(n-4)+2*b(n-5)+b(n-2)+b(n-6)-3, b(6) = 342, b(5) = 117, b(4) = 40, b(3) = 14, b(2) = 5, b(1) = 2, b(0) = 1
+; Formula: a(n) = b(n-5)-1, b(n) = 4*b(n-3)+2*b(n-1)+2*b(n-4)+2*b(n-5)+b(n-2)+b(n-6)-3, b(6) = 342, b(5) = 117, b(4) = 40, b(3) = 14, b(2) = 5, b(1) = 2, b(0) = 1
+
+#offset 5
 
 mov $1,1
+sub $0,5
 lpb $0
   sub $0,1
   mov $5,$1

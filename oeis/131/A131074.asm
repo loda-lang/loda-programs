@@ -18,6 +18,7 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
+  add $1,1
   seq $1,129961 ; Main diagonal of triangular array T: T(j,1) = 1 for ((j-1) mod 8) < 4, else 0; T(j,k) = T(j-1,k-1)+T(j,k-1) for 2 <= k <= j.
   mul $3,$1
   dif $5,-1

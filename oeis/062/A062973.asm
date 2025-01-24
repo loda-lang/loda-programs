@@ -9,6 +9,6 @@ lpb $1
   mov $1,6
   add $0,1
 lpe
-add $0,3
+add $0,4
 seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 sub $0,1

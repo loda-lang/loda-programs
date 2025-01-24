@@ -7,7 +7,7 @@ lpb $0
     dif $0,2
     sub $2,3
   lpe
-  cmp $1,$2
+  equ $1,$2
   trn $3,$1
   add $3,1
   div $0,2

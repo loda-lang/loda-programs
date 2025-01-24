@@ -12,6 +12,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
+  add $3,1
   seq $3,127423 ; a(1) = 1; for n > 1, a(n) = n concatenated with n - 1.
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

@@ -6,15 +6,16 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,128202 ; Configuration of discs on pegs after n steps of the optimal solution to the Towers of Hanoi problem moving an odd number of discs from peg 0 to peg 2, or an even number from peg 0 to peg 1.
   gcd $5,8
   mov $3,8
   div $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,6
   mul $2,$4
   sub $2,1

@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  add $0,1
+  add $0,2
   seq $0,122437 ; Allowable values of the "dropping time" of the Collatz (3x+1) iteration.
   sub $0,1
   mov $2,$3

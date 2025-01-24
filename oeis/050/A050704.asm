@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,3
+  add $3,4
   seq $3,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
   mov $5,$3
   sub $3,1

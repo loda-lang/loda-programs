@@ -2,8 +2,10 @@
 ; Submitted by Dingo
 ; 7,9,12,16,24,36,56,90
 
+#offset -3
+
 mov $1,1
-add $0,1
+add $0,4
 lpb $0
   sub $0,1
   dif $3,2

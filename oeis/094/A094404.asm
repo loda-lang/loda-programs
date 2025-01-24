@@ -5,6 +5,7 @@
 #offset 1
 
 seq $0,32619 ; Numbers k such that k concatenated with k+4 is a prime.
+add $0,1
 seq $0,127421 ; Numbers whose decimal expansion is a concatenation of 2 consecutive increasing nonnegative numbers.
 add $0,5
 seq $0,8833 ; Largest square dividing n.

@@ -2,6 +2,9 @@
 ; Submitted by CFJH
 ; 0,0,1,2,3,8,5,11,39
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 lpb $0

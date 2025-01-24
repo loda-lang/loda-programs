@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   sub $0,1
-  dis $2,2
+  dgs $2,2
   mod $2,2
   add $3,1
   mul $3,$2
