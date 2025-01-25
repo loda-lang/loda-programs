@@ -15,6 +15,7 @@ lpb $0
   mov $5,-1
   pow $5,$0
   mul $0,0
+  sub $3,1
   seq $3,132319 ; Expansion of q^-1 * (chi(-q) * chi(-q^7))^3 in powers of q where chi() is a Ramanujan theta function.
   mul $3,$5
   mov $2,1

@@ -1,14 +1,38 @@
 ; A130835: Sum of all numbers having n or fewer digits and having the sum of their digits equal to n.
 ; Submitted by nenym
 ; 1,33,1110,38885,1399986,51333282,1906666476,71499999285,2701111108410,102631111100848,3917722222183045,150126888888738762,5771538888888311735,222499777777775552780,8598259999999991401740,332968856666666633369781,12918171566666666537484951,502011033333333332831322300,19537313583333333331379601975,761362937777777777770164148400,29705647001666666666636961019665,1160270621403333333333217306271193,45364001958888888888888435248869300,1775248511349999999999998224751488650
-; Formula: a(n) = truncate((A167403(n)*(A000042(n+2)-2)+A167403(n))/10)
 
+#offset 1
+
+sub $0,1
+mov $4,0
+mov $6,0
+mov $7,0
 mov $1,$0
-seq $1,167403 ; Number of decimal numbers having n or fewer digits and having the sum of their digits equal to n.
+add $1,1
+mov $3,$1
+mov $8,$1
+add $1,1
+lpb $1
+  sub $1,1
+  equ $4,1
+  sub $4,$8
+  bin $4,$1
+  sub $6,1
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  sub $1,7
+  trn $1,2
+  sub $3,1
+  add $7,$5
+lpe
 add $0,2
-seq $0,42 ; Unary representation of natural numbers.
+mov $2,10
+pow $2,$0
+mov $0,$2
+div $0,9
 sub $0,2
-mul $0,$1
-add $1,$0
-mov $0,$1
+mul $0,$7
+add $0,$7
 div $0,10

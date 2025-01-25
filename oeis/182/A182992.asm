@@ -14,7 +14,7 @@ lpb $2
   mov $0,0
   seq $0,171800 ; a(n) = ((n+1)*2^n + 1)*(2^n + 1)^(n-1).
   mul $0,$5
-  add $0,1
+  add $0,2
   seq $0,138135 ; Number of parts > 1 in the last section of the set of partitions of n.
   mov $1,$2
   mul $1,$0

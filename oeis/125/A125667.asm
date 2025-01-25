@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,133205 ; Fully multiplicative with a(p) = p*(p+1)/2 for prime p.
   gcd $3,2
   mul $4,2

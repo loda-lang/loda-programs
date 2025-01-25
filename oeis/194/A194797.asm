@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,138880 ; Sum of all parts of all partitions of n that do not contain 1 as a part.
   sub $0,1
   add $1,$2

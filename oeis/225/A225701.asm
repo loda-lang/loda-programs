@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,138519 ; Expansion of q * (psi(q^5) / psi(q))^2 in powers of q where psi() is a Ramanujan theta function.
 lpb $1
   mov $1,0

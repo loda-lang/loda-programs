@@ -7,15 +7,16 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,132349 ; If n is a k-th power with k >= 2 then a(n) = k, otherwise a(n) = 0.
   trn $3,1
   seq $3,296081 ; a(n) = gcd(tau(n)-1, sigma(n)-1), where tau = A000005 and sigma = A000203.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -4,6 +4,5 @@
 
 #offset 1
 
-sub $0,1
 seq $0,139708 ; Take n in binary. Rotate the binary digits to the left until a 1 once again appears as the leftmost digit. Convert back into decimal for a(n).
 lex $0,2

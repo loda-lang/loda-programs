@@ -1,8 +1,11 @@
 ; A137421: Decimal expansion of growth constant in random Fibonacci sequence.
 ; Submitted by [AF] Kalianthys
 ; 1,2,0,5,5,6,9,4,3,0,4,0,0,5,9,0,3,1,1,7,0,2,0,2,8,6,1,7,7,8,3,8,2,3,4,2,6,3,7,7,1,0,8,9,1,9,5,9,7,6,9,9,4,4,0,4,7,0,5,5,2,2,0,3,5,5,1,8,3,4,7,9,0,3,5,9,1,6,7,4
-; Formula: a(n) = -10*truncate(truncate((d(3*n)+1)/truncate(c(3*n)/(10^n)))/10)+truncate((d(3*n)+1)/truncate(c(3*n)/(10^n))), b(n) = 4*c(n-1)+2*b(n-1)+2*d(n-1), b(2) = 26, b(1) = 4, b(0) = 0, c(n) = 3*c(n-1)+b(n-1)+d(n-1), c(2) = 16, c(1) = 3, c(0) = 1, d(n) = 7*d(n-1)+2*d(n-3)-7*d(n-2), d(4) = 657, d(3) = 112, d(2) = 19, d(1) = 3, d(0) = 0
+; Formula: a(n) = -10*truncate(truncate((d(max(3*n-3,0))+1)/truncate(c(max(3*n-3,0))/(10^(n-1))))/10)+truncate((d(max(3*n-3,0))+1)/truncate(c(max(3*n-3,0))/(10^(n-1)))), b(n) = 4*c(n-1)+2*b(n-1)+2*d(n-1), b(2) = 26, b(1) = 4, b(0) = 0, c(n) = 3*c(n-1)+b(n-1)+d(n-1), c(2) = 16, c(1) = 3, c(0) = 1, d(n) = 7*d(n-1)+2*d(n-3)-7*d(n-2), d(4) = 657, d(3) = 112, d(2) = 19, d(1) = 3, d(0) = 0
 
+#offset 1
+
+sub $0,1
 mov $2,1
 mov $3,$0
 mul $3,3

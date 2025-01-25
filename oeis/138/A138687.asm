@@ -2,12 +2,16 @@
 ; Submitted by [AF>France>EST>Lorraine] vickk
 ; 28,34,55,58,76,88,100,106,118,133,145,148,160,166,178,184,202,208,214,232,238,244,253,259,262,265,268,286,298,301,310,328,340,343,352,358,361,364,370,385,388,391,403,412,418,430,442,445,448,454,475,478,490
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,138685 ; Numbers k such that there is no prime of the form 2k + p^2 for any prime p.
   mov $5,$3
   sub $5,1

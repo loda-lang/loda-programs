@@ -10,7 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
-  add $4,1
+  add $4,2
   seq $4,130082 ; Smallest number whose eighth power has at least n digits.
   mov $2,$5
   mul $2,$4

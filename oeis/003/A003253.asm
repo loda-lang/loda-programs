@@ -4,8 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mul $0,8
+sub $0,7
 seq $0,138302 ; Exponentially 2^n-numbers: 1 together with positive integers k such that all exponents in prime factorization of k are powers of 2.
 lpb $0
   div $0,6

@@ -2,6 +2,9 @@
 ; Submitted by Seth
 ; 1,1,2,3,2,4,3,3,5,4,4,4,3,6,5,5,5,4,5,4,4,7,6,6,6,5,6,5,5,6,5,5,5,4,8,7,7,7,6,7,6,6,7,6,6,6,5,7,6,6,6,5,6,5,5,9,8,8,8,7,8,7,7,8,7,7,7,6,8,7,7,7,6,7,6,6,8,7,7,7
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $0,3
   seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.

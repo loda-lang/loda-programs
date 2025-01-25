@@ -2,12 +2,14 @@
 ; Submitted by p3d-cluster
 ; 2,3,5,8,9,12,14,15
 
-add $0,7
+#offset 1
+
+add $0,6
 mul $0,2
 mov $1,$0
 add $1,1
 gcd $1,210
 sub $1,1
-cmp $1,0
+equ $1,0
 sub $0,$1
 sub $0,12

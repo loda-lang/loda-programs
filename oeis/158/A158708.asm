@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,130800 ; Numbers k such that both 2k+1 and 3k+1 are primes.
   mul $0,2
   sub $0,1

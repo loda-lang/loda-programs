@@ -7,4 +7,5 @@ lpb $0
   sub $0,1
   dif $0,3
 lpe
+add $0,1
 seq $0,136655 ; Product of odd divisors of n.

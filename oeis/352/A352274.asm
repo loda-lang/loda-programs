@@ -11,6 +11,7 @@ lpb $2
   seq $5,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
   mod $5,2
   mov $3,$1
+  add $3,1
   seq $3,137893 ; Fixed point of the morphism 0->100, 1->101, starting from a(1) = 1.
   mul $3,$5
   sub $0,$3

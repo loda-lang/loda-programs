@@ -18,6 +18,7 @@ lpb $2
   sub $0,1
   mul $0,$5
   mov $4,$0
+  add $4,1
   seq $4,138618 ; Triangle of exponentials of Mangoldt function M(n) read by rows, in which row products give the natural numbers.
   mul $5,$4
   add $0,1

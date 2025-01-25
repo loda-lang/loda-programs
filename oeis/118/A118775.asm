@@ -10,6 +10,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,139690 ; a(n) = A109611(n) + 2.
   add $1,$2
 lpe

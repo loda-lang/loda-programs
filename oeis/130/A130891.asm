@@ -11,7 +11,7 @@ lpb $0
     mod $4,$2
     min $4,1
     mov $5,$2
-    cmp $5,1
+    equ $5,1
     add $2,1
     max $4,$5
     sub $3,$4

@@ -6,5 +6,5 @@ mov $1,3
 sub $1,$0
 add $0,1
 gcd $1,$0
-cmp $1,$0
+equ $1,$0
 sub $0,$1

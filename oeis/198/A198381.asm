@@ -10,7 +10,6 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  sub $4,1
   seq $4,138137 ; First differences of A006128.
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   sub $4,$0

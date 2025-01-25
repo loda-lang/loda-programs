@@ -9,6 +9,7 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+add $1,1
 seq $1,133695 ; a(n) = 2*A008683 - 1.
 add $1,1
 add $0,1

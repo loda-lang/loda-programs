@@ -8,6 +8,6 @@ lpb $0
   mov $1,$3
   mul $1,100
   add $2,$1
-  dis $2,10
+  dgs $2,10
 lpe
 mov $0,$2

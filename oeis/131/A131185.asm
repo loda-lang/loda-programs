@@ -5,7 +5,7 @@
 sub $2,$0
 mod $2,2
 mov $3,$2
-cmp $3,0
+equ $3,0
 add $2,$3
 mod $0,3
 div $0,$2

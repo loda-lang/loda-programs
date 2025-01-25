@@ -10,6 +10,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,137920 ; Numbers k such that 24*k-1 and 24*k+1 are twin primes.
   mul $0,2
   sub $0,1

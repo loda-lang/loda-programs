@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,6,9,13,17,21,25,29,34,39,43,48,53,58,63,68
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mod $1,10
 trn $1,1

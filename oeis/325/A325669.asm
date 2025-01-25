@@ -15,8 +15,9 @@ lpb $4
   bin $1,$0
   trn $0,1
   mul $0,2
+  add $0,1
   seq $0,139764 ; Smallest term in Zeckendorf representation of n.
-  cmp $0,2
+  equ $0,2
   add $0,2
   mul $1,$0
   mul $3,-1

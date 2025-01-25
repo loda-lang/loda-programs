@@ -4,9 +4,9 @@
 
 #offset -1
 
-add $0,1
 mov $2,$0
 seq $2,131985 ; Expansion of (eta(q^3)^2 / (eta(q) * eta(q^9)))^6 in powers of q.
+add $0,1
 lpb $0
   div $0,2
   mov $1,$2

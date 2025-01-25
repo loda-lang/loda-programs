@@ -1,9 +1,10 @@
 ; A138323: a(n) = Sum_{k = 1..n} prime(k)^prime(k + 1).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 8,251,78376,1977405119,34524689549050,8650450444070886983,239081086135595395734136,257829867026393862843621801395
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+truncate(A000040(max(n-1,0)+2)^A000040(max(n-1,0)+3)), b(0) = 0
+; Formula: a(n) = a(n-1)+truncate(A000040(max(n-1,0)+2)^A000040(max(n-1,0)+3)), a(0) = 0
 
-add $0,1
+#offset 1
+
 lpb $0
   sub $0,1
   mov $2,$0

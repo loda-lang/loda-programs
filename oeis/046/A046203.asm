@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,8
   mov $3,$1
+  add $3,1
   seq $3,132751 ; Triangle T(n, k) = 2/Beta(n-k+1, k) - 1, read by rows.
   div $3,2
   add $3,1

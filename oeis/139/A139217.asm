@@ -2,7 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,4,7,13,22,49,97,190,385,769,1534,3073,6145,12286
 
-sub $0,1
+#offset 1
+
+sub $0,2
 mov $1,$0
 pow $0,2
 mod $0,3

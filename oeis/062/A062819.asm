@@ -13,6 +13,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   seq $0,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  add $0,1
   seq $0,139421 ; a(1)=1; for n>1, a(n) = largest prime divisor of n!!.
   mov $5,2
   pow $5,$0

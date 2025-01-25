@@ -2,7 +2,10 @@
 ; Submitted by Aexoden
 ; 1,2,3,4,10,24,71,322
 
+#offset 3
+
 mov $2,1
+sub $0,3
 lpb $0
   mul $5,$0
   sub $0,1

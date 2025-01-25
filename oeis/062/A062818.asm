@@ -21,6 +21,7 @@ lpb $2
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $0,1
   seq $0,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
+  add $0,1
   seq $0,139421 ; a(1)=1; for n>1, a(n) = largest prime divisor of n!!.
   mov $6,2
   pow $6,$0

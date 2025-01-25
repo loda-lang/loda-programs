@@ -1,12 +1,12 @@
 ; A131634: n-th even semiprime minus n-th odd semiprime.
 ; Submitted by Conan
 ; -5,-9,-11,-11,-11,-9,-5,-11,-5,3,5,9,13,9,9,19,27,29,39,31,31,39,45,55,65,69,65,71,73,71,95,101,105,101,115,117,127,125,131,141,149,149,167,169,175,177,187,209,207,209,213,219,217,235,227,237,247,247,255,261,263,281,305,303,305,311,335,345,359,359,365,363,373,381,387,389,397,403,409,423
-; Formula: a(n) = 2*A000040(n+1)-A046315(n+1)
+; Formula: a(n) = 2*A000040(n)-A046315(n)
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,46315 ; Odd semiprimes: odd numbers divisible by exactly 2 primes (counted with multiplicity).
-add $0,1
 seq $0,40 ; The prime numbers.
 mul $0,2
 sub $0,$1

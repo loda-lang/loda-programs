@@ -5,6 +5,7 @@
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,138505 ; Expansion of ((phi(q) * phi(-q^2)^2)^2 - 1) / 4 in powers of q where phi() is a Ramanujan theta function.
   mul $2,4
   sub $2,1

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,138840 ; Concatenation of initial and final digits of n-th prime.
 lpb $0
   mov $2,$0

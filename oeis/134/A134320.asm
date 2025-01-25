@@ -2,7 +2,8 @@
 ; Submitted by [AF>Le_Pommier] Jerome_C2005
 ; 2,4,6,12,20,30,42,90
 
-add $0,1
+#offset 1
+
 mov $4,$0
 lpb $0
   sub $0,1

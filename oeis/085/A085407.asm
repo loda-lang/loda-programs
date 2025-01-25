@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,8
-sub $0,1
 seq $0,139764 ; Smallest term in Zeckendorf representation of n.
 pow $0,2
 div $0,6

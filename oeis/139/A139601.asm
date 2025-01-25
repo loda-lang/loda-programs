@@ -1,4 +1,4 @@
-; A139601: Square array T(n,k) = (n+1)*(k-1)*k/2+k, of polygonal numbers, read by antidiagonals upwards.
+; A139601: Square array of polygonal numbers read by ascending antidiagonals: T(n, k) = (n + 1)*(k - 1)*k/2 + k.
 ; Submitted by Simon Strandgaard
 ; 0,0,1,0,1,3,0,1,4,6,0,1,5,9,10,0,1,6,12,16,15,0,1,7,15,22,25,21,0,1,8,18,28,35,36,28,0,1,9,21,34,45,51,49,36,0,1,10,24,40,55,66,70,64,45,0,1,11,27,46,65,81,91,92,81,55,0,1,12,30,52,75,96,112,120,117,100,66,0,1
 

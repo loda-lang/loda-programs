@@ -7,6 +7,5 @@
 mov $1,$0
 add $1,2
 neq $1,2
-add $0,1
 seq $0,132319 ; Expansion of q^-1 * (chi(-q) * chi(-q^7))^3 in powers of q where chi() is a Ramanujan theta function.
 mul $0,$1

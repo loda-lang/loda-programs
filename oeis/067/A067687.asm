@@ -6,6 +6,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,137682 ; Left border of triangle A137680.
   add $1,$2
 lpe

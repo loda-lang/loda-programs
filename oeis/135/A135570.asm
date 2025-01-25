@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  dis $2,2
+  dgs $2,2
   sub $0,1
   mul $1,2
   add $1,$2

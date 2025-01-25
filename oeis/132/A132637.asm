@@ -1,10 +1,18 @@
 ; A132637: Composite number C(n) raised to power C(n).
 ; Submitted by entity
 ; 256,46656,16777216,387420489,10000000000,8916100448256,11112006825558016,437893890380859375,18446744073709551616,39346408075296537575424,104857600000000000000000000,5842587018385982521381124421,341427877364219557396646723584
-; Formula: a(n) = truncate(A018252(n+2)^A018252(n+2))
 
-add $0,2
-seq $0,18252 ; The nonprime numbers: 1 together with the composite numbers, A002808.
+#offset 1
+
+lpb $0
+  trn $0,1
+  add $0,1
+  seq $0,72668 ; Numbers one less than composite numbers.
+  mov $2,$0
+  mov $0,0
+lpe
+mov $0,$2
+add $0,1
 mov $1,$0
 pow $1,$0
 mov $0,$1

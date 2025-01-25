@@ -8,7 +8,7 @@ add $2,6
 lpb $2
   mov $3,$1
   mul $3,2
-  add $3,3
+  add $3,5
   seq $3,139636 ; If n = the k-th prime, then a(n) = the (k+1)th prime. If n = the k-th composite, then a(n) = the (k+1)th composite.
   mod $3,3
   div $3,2
@@ -16,7 +16,7 @@ lpb $2
   add $1,3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

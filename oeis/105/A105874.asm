@@ -12,7 +12,6 @@ lpb $2
   mov $3,$1
   seq $3,216371 ; Odd primes with one coach: primes p such that A135303((p-1)/2) = 1.
   mov $5,$3
-  sub $3,1
   seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).
   equ $3,0
   sub $0,$3

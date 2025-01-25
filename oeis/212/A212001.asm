@@ -15,6 +15,7 @@ lpb $2
   mov $1,$4
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,138879 ; Sum of all parts of the last section of the set of partitions of n.
   add $3,$1
 lpe

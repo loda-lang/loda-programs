@@ -10,14 +10,12 @@ lpb $5
   seq $3,55235 ; Sums of two powers of 3.
   add $4,1
   mov $2,$3
-  sub $3,1
   seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $1,$0
   max $1,0
-  cmp $1,$0
+  equ $1,$0
   mul $5,$1
   trn $5,1
 lpe

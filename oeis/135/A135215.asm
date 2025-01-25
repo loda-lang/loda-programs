@@ -2,6 +2,9 @@
 ; Submitted by Conan
 ; 0,1,3,4,6,7,10,10,12,13,15
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,6
 equ $2,$0

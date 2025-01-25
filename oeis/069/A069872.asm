@@ -10,6 +10,7 @@ lpb $2
   mov $4,1
   add $4,$1
   mov $3,$1
+  add $3,1
   seq $3,137464 ; Concatenation of n and a list of the divisors of n.
   gcd $3,$4
   sub $4,1

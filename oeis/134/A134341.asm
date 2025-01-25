@@ -1,7 +1,8 @@
 ; A134341: Numbers whose fifth powers have a partition as a sum of fifth powers of four positive integers.
 ; Submitted by Science United
 ; 144,288,432,576,720,864,1008,1152,1296,1440,1584,1728,1872,2016,2160,2304,2448,2592,2736,2880,3024,3168,3312,3456,3600,3744,3888,4032,4176,4320,4464,4608,4752,4896,5040,5184,5328,5472,5616,5760,5904,6048,6192
-; Formula: a(n) = 144*n+144
+; Formula: a(n) = 144*n
 
-add $0,1
+#offset 1
+
 mul $0,144

@@ -8,10 +8,11 @@ lpb $2
   sub $2,1
   add $2,$4
   mov $3,$1
+  add $3,1
   seq $3,138806 ; Expansion of (theta_3(q) * theta_3(q^27) + theta_2(q) * theta_2(q^27) - 1) / 2 in powers of q.
   min $3,1
   sub $0,$3
   add $1,1
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1

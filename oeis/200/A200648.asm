@@ -5,6 +5,7 @@ trn $0,1
 lpb $0
   add $1,1
   mov $2,$0
+  add $2,1
   seq $2,130312 ; Each Fibonacci number F(n) appears F(n) times.
   sub $0,$2
 lpe

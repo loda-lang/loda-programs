@@ -1,7 +1,10 @@
-; A130207: Diagonalized matrix of A000010.
+; A130207: Diagonalized matrix of A000010, Euler totient function phi.
 ; Submitted by Daniel
 ; 1,0,1,0,0,2,0,0,0,2,0,0,0,0,4,0,0,0,0,0,2,0,0,0,0,0,0,6,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,4,0,0
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,1
   sub $0,$1

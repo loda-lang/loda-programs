@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,5,5,11,17,7,19,31,43
 
+#offset 1
+
+sub $0,1
 mod $0,10
 lpb $0
   add $2,1

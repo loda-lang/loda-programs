@@ -7,6 +7,7 @@ mul $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,135013 ; Partial sums of A000265.
   add $3,$4
   add $3,1
@@ -16,5 +17,5 @@ lpb $2
   add $0,1
   add $1,$4
   mov $4,$0
-  cmp $4,$0
+  equ $4,$0
 lpe

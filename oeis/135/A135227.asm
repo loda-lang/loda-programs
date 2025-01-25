@@ -9,7 +9,7 @@ lpe
 mov $1,$2
 bin $1,$0
 mov $3,$1
-cmp $0,0
+equ $0,0
 add $0,1
 lpb $0
   sub $0,1

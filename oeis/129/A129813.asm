@@ -16,7 +16,6 @@ lpb $2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$3
   mov $3,$6
-  sub $3,1
   seq $3,132342 ; a(n) = (a(n-1)*a(n-4)) - (a(n-2)*a(n-3)), with a(1)=a(2)=a(3)=a(4)=1.
   equ $3,0
   sub $0,$3

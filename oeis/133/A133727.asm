@@ -2,7 +2,8 @@
 ; Submitted by ChelseaOilman
 ; 1,1,2,1,0,5,1,2,0,7,1,0,0,0,14,1,2,5,0,0,13,1,0,0,0,0,0,27,1,2,0,7,0,0,0,26,1,0,5,0,0,0,0,0,39,1,2,0,0,14,0,0,0,0,38
 
-add $0,1
+#offset 1
+
 seq $0,127093 ; Triangle read by rows: T(n,k)=k if k is a divisor of n; otherwise, T(n,k)=0 (1 <= k <= n).
 mul $0,2
 sub $0,1

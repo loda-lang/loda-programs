@@ -11,7 +11,7 @@ lpb $0
   mov $2,$1
   mul $2,2
   mov $1,$3
-  seq $1,110161 ; Expansion of x(1-x^2)/(1-x^2+x^4).
+  seq $1,110161 ; Expansion of x*(1-x^2)/(1-x^2+x^4).
   add $1,$4
   add $3,1
 lpe

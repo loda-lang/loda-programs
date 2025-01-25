@@ -9,6 +9,7 @@ mov $0,$2
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,135342 ; Number of distinct means of nonempty subsets of {1,...,n}.
   div $0,100904
 lpe

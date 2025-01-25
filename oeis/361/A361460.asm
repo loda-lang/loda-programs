@@ -4,6 +4,7 @@
 
 seq $1,43555 ; Number of runs in base-3 representation of n.
 mov $3,$0
+add $3,1
 seq $3,135506 ; a(n) = x(n+1)/x(n) - 1 where x(1)=1 and x(k) = x(k-1) + lcm(x(k-1),k). Here x(n) = A135504(n).
 max $2,$0
 bin $2,$0

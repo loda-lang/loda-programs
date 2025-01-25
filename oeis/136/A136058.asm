@@ -2,13 +2,17 @@
 ; Submitted by STE\/E
 ; 11,13,23,31,41,59,79,83,101,109,113,151,163,223,233,239,241,251,331,353,359,373,409,431,433,449,461,463,491,499,503,571,619,631,641,659,661,683,751,769,773,811,821,823,829,839,853,883,911,919,953,1021,1031,1033,1049,1093,1103,1123,1129,1151,1163,1213,1229,1231,1283,1289,1361,1451,1493,1499,1579,1583,1609,1621,1723,1733,1753,1759,1871,1873
 
+#offset 1
+
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,2
 lpb $2
   max $3,$5
   add $3,1
-  seq $3,64911 ; If n is semiprime (or 2-almost prime) then 1 else 0.
+  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,39
   mov $4,$0

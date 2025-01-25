@@ -16,7 +16,7 @@ lpb $0
     div $7,2
     mul $7,$$9
     gcd $7,$2
-    cmp $7,$$9
+    equ $7,$$9
     add $5,2
     add $6,$7
   lpe

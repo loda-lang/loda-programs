@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,139902 ; Primes of the form 16x^2+16xy+19y^2.
   sub $3,1
   mov $5,$3

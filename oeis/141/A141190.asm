@@ -10,7 +10,6 @@ lpb $2
   add $3,1
   seq $3,45386 ; Primes congruent to {1, 2, 4} mod 7.
   mov $5,$3
-  sub $3,1
   seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).
   neq $3,0
   sub $0,$3

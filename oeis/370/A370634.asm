@@ -8,6 +8,7 @@ lpb $0
   mov $3,$1
   add $3,2
   mul $0,0
+  add $1,1
   seq $1,135507 ; a(1) = 1; for n > 1, a(n) = 2*a(n-1) + lcm(a(n-1),n).
   mov $2,$1
   gcd $2,$3

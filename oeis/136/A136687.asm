@@ -5,7 +5,7 @@ lpb $0
   mov $3,$0
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
   mov $2,$0
-  cmp $2,$3
+  equ $2,$3
   sub $0,1
   add $1,$2
 lpe

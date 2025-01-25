@@ -1,8 +1,11 @@
 ; A137150: Degree of Lagrange resolvent of polynomial of composite degree.
 ; Submitted by Jamie Morken(w3)
 ; 1,3,60,1260,6720,90720,9979200,1037836800,10897286400,163459296000,59281238016000,15205637551104000,202741834014720000,5109094217170944000,3231502092360622080000,31022420086661971968000,1292600836944248832000000,22405081173700313088000000,907405787534862680064000000,1105220249217462744317952000000,513927415886120176107847680000000,13156541846684676508360900608000000,542707351175742905969887150080000000,12301366626650172535317442068480000000,861095663865512077472220944793600000000
-; Formula: a(n) = A058161(A122825(-truncate((-2*n)/(n+1))+n+2)-1)
+; Formula: a(n) = truncate(A000142(A122825(-truncate((-2*n+2)/n)+n+1)-2)/A000010(A122825(-truncate((-2*n+2)/n)+n+1)-1))
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mul $1,-2
 add $0,1
@@ -11,4 +14,8 @@ sub $0,$1
 add $0,1
 seq $0,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
 sub $0,1
-seq $0,58161 ; Number of labeled cyclic groups with a fixed identity.
+mov $2,$0
+seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+sub $0,1
+seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+div $0,$2

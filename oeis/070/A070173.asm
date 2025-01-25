@@ -10,7 +10,6 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  sub $3,1
   seq $3,132083 ; a(n) = n-th positive integer which is coprime to (2^n +1). Also, a(n) = final term of row n in triangle A132082.
   mod $3,$1
   min $3,1

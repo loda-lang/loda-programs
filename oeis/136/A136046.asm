@@ -1,9 +1,34 @@
 ; A136046: Bisection of A138543.
 ; Submitted by Skivelitis2
 ; 1,3,26,345,5754,110586,2341548,53208441,1276027610,31930139670,826963069140,22035414489270,601361536493340,16749316314679500,474777481850283240,13665774112508864385
-; Formula: a(n) = A128079(n)*A000108(n)
 
+mov $3,0
+mov $4,0
+mov $6,0
+mov $7,0
+mov $8,0
 mov $1,$0
-seq $1,128079 ; a(n) = Sum_{k=0..n} A000984(k)*A001263(n+1,k+1), where A000984 is the central binomial coefficients and A001263 is the Narayana triangle.
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
-mul $0,$1
+add $1,1
+lpb $1
+  sub $1,1
+  add $4,$1
+  bin $4,$1
+  mov $5,$6
+  bin $5,$3
+  add $8,$4
+  add $3,1
+  mul $5,$4
+  mul $5,$8
+  div $5,$3
+  mov $8,$4
+  mov $4,$3
+  add $6,2
+  add $7,$5
+lpe
+mov $1,$7
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
+mul $0,$7

@@ -10,7 +10,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,140267 ; Nonnegative integers in balanced ternary representation (with 2 standing for -1 digit).
-  seq $3,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
+  mov $5,$3
+  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  equ $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

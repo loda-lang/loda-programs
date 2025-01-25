@@ -10,7 +10,6 @@ seq $0,205007 ; a(n) = (1/n)*A205006(n), where A205006(n) = s(k)-s(j), with (s(k
 mul $2,$0
 add $0,$2
 add $1,$0
-sub $0,2
 seq $0,138799 ; Values of T(j) corresponding to least possible T(k) with T(k)-T(j)=n, where T(i)>0 are the triangular numbers A000217.
 add $0,$1
 mul $0,2

@@ -15,14 +15,15 @@ lpb $4
     add $7,$0
     mov $2,$7
     max $2,0
+    add $2,1
     seq $2,132351 ; Partial sums of A132350.
     add $3,$2
     mov $8,$3
     bin $8,2
     div $7,2
     sub $7,$5
-    cmp $0,$7
-    cmp $3,2
+    equ $0,$7
+    equ $3,2
   lpe
   mov $1,$4
   mul $1,$8

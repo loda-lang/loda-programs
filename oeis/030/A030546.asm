@@ -7,7 +7,7 @@ add $0,1
 add $2,6
 lpb $2
   mov $2,66
-  mov $1,1
+  mov $1,2
   seq $1,135539 ; Triangle read by rows: T(n,k) = number of divisors of n that are >= k.
   add $0,9
   sub $0,$1

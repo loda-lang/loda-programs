@@ -1,7 +1,7 @@
 ; A131500: Radii of orbits of planets in solar system, in units of radius of orbit of Mercury, multiplied by 4.
 ; Submitted by Science United
 ; 4,7,10,16,28,52,100,196,292,388
-; Formula: a(n) = 3*c(max(n-1,0))+4, b(n) = b(n-1)+gcd(3380*b(n-3)+338*b(n-2)+27040,b(n-1)), b(4) = 16, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = b(n-1), c(4) = 8, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 0
+; Formula: a(n) = 3*c(n-1)+4, b(n) = b(n-1)+gcd(3380*b(n-3)+338*b(n-2)+27040,b(n-1)), b(4) = 16, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 1, c(n) = b(n-1), c(4) = 8, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 0
 
 #offset 1
 

@@ -2,6 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 8,16,64,256,16384,262144,1048576,4294967296
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   div $0,2

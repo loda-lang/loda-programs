@@ -14,6 +14,7 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  add $4,1
   seq $4,138137 ; First differences of A006128.
   mul $4,2
   sub $4,$0

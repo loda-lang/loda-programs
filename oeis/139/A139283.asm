@@ -1,6 +1,9 @@
 ; A139283: Numbers of spots seen on ladybugs.
 ; 0,2,4,5,6,7,9,10,11,12,13,14,15,16,17,18,19,20,22,24,26,28
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $3,10
 mov $4,$0

@@ -10,7 +10,6 @@ lpb $5
   seq $1,216371 ; Odd primes with one coach: primes p such that A135303((p-1)/2) = 1.
   mov $2,$1
   add $4,1
-  sub $1,1
   seq $1,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).
   equ $1,0
   sub $0,$1

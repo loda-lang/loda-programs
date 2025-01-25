@@ -2,7 +2,8 @@
 ; Submitted by Jamie Morken(l1)
 ; 1,2,3,1,4,1,2,3,1,2,3,1,4,1,2,3,1,4,1,2,3,1,2,3,1,4,1,2,3,1,2,3,1,4,1,2,3,1,4,1,2,3,1,2,3,1,4,1,2,3,1,4,1,2,3,1,2,3,1,4,1,2,3,1,2,3,1,4,1,2,3,1,4,1,2,3,1,2,3,1
 
-add $0,1
+#offset 1
+
 seq $0,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
 sub $0,3
 lpb $0

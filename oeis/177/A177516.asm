@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,136410 ; Numbers k having a proper divisor d > 2 such that d-1 divides k-1.
   mov $5,$3
   seq $3,51709 ; a(n) = sigma(n) + phi(n) - 2n.

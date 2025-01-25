@@ -2,8 +2,10 @@
 ; Submitted by Science United
 ; 1,10,100,1000,11111,111110,1111100,11111000
 
+#offset 1
+
 mov $5,$0
-add $5,1
+sub $0,1
 lpb $5
   sub $5,1
   div $0,2

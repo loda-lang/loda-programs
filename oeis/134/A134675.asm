@@ -1,10 +1,16 @@
 ; A134675: Row sums of triangle A134674.
 ; Submitted by Jamie Morken(l1)
 ; 1,4,9,15,25,30,49,55,76,80,121,112,169,154,201,207,289,237,361,310,395,374,529,420,606,520,661,604,841,618,961,799,975,884,1165,919,1369,1102,1361,1202,1681,1206,1849,1480,1761,1610,2209,1612,2360,1843,2325,2062,2809,2010,2897,2368,2903,2552,3481,2412,3721,2914,3497,3135,4051,2958,4489,3514,4251,3530,5041,3579,5329,4144,4849,4384,5779,4122,6241,4714
-; Formula: a(n) = A001065(n)+A007434(n+1)
+; Formula: a(n) = -n+A000203(n)+A007434(n)
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,7434 ; Jordan function J_2(n) (a generalization of phi(n)).
-seq $0,1065 ; Sum of proper divisors (or aliquot parts) of n: sum of divisors of n that are less than n.
+sub $0,1
+mov $2,$0
+add $0,1
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $0,1
+sub $0,$2
 add $0,$1

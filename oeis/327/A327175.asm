@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mul $3,$1
+  add $3,1
   seq $3,139764 ; Smallest term in Zeckendorf representation of n.
   pow $3,-1
   add $3,$4
@@ -16,7 +17,7 @@ lpb $2
   add $1,$4
   sub $2,$0
   mov $4,$0
-  cmp $4,$0
+  equ $4,$0
 lpe
 mov $0,$1
 add $0,1

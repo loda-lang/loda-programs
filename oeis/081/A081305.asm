@@ -15,6 +15,7 @@ lpb $6
   mov $5,$0
   lpb $0
     mov $2,$0
+    add $2,1
     seq $2,130065 ; a(n) = (n / GreatestPrimeFactor(n)) * SmallestPrimeFactor(n).
     mul $2,2
     mov $4,$2

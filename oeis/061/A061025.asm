@@ -11,6 +11,7 @@ lpb $3
   add $0,$3
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,139190 ; a(n) = (prime(n)!-2)/2.
   add $1,1
   sub $0,1

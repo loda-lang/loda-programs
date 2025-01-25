@@ -1,7 +1,10 @@
-; A130209: Diagonalized matrix of d(n), A000005.
+; A130209: Diagonalized matrix of d(n), A000005, number of divisors of n.
 ; Submitted by Science United
 ; 1,0,2,0,0,2,0,0,0,3,0,0,0,0,2,0,0,0,0,0,4,0,0,0,0,0,0,2,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,6,0,0
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,1
   sub $0,$1

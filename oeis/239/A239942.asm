@@ -8,6 +8,7 @@ lpb $3
   add $0,$3
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,139190 ; a(n) = (prime(n)!-2)/2.
   sub $0,1
   mov $2,$3

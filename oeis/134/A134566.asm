@@ -1,8 +1,21 @@
 ; A134566: a(n) = least m such that {-m*tau} > {n*tau}, where { } denotes fractional part and tau = (1 + sqrt(5))/2.
 ; Submitted by Simon Strandgaard
 ; 2,1,5,2,1,2,1,13,2,1,5,2,1,2,1,5,2,1,2,1,34,2,1,5,2,1,2,1,13,2,1,5,2,1,2,1,5,2,1,2,1,13,2,1,5,2,1,2,1,5,2,1,2,1,89,2,1,5,2,1,2,1,13,2,1,5,2,1,2,1,5,2,1,2,1,34,2,1,5,2
-; Formula: a(n) = A139764(A000201(n+1))
 
+#offset 1
+
+mov $1,$0
+mul $1,4
+add $1,$0
+mul $1,$0
+nrt $1,2
+add $1,$0
+mov $0,$1
+div $0,2
+lpb $0
+  mov $2,$0
+  add $2,1
+  seq $2,87172 ; Greatest Fibonacci number that does not exceed n.
+  sub $0,$2
+lpe
 add $0,1
-seq $0,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
-seq $0,139764 ; Smallest term in Zeckendorf representation of n.

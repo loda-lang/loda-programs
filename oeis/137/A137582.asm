@@ -2,6 +2,9 @@
 ; Submitted by Penguin
 ; 0,1,2,3,4,5,6,9,10,11,14,31,40
 
+#offset 1
+
+sub $0,1
 mov $2,100
 lpb $2
   mov $3,$1

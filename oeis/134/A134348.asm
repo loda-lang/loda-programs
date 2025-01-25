@@ -11,7 +11,7 @@ mov $2,-1
 sub $2,$0
 bin $2,$1
 add $0,1
-cmp $1,0
+equ $1,0
 mul $1,2
 pow $1,$0
 sub $1,$2

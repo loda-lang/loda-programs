@@ -6,6 +6,7 @@
 
 add $0,1
 mov $1,$0
+sub $0,1
 seq $0,131985 ; Expansion of (eta(q^3)^2 / (eta(q) * eta(q^9)))^6 in powers of q.
 lpb $1
   sub $1,1

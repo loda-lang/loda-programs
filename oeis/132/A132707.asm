@@ -2,7 +2,8 @@
 ; Submitted by Christian Krause
 ; 5,4,1,1,2,6,8,0,6,5,1,2,4,4,4,1,4,1,6,1,4,2,0,4,7,9,5,4,6,6,5
 
-add $0,1
+#offset 1
+
 mov $3,$0
 mul $3,4
 lpb $3

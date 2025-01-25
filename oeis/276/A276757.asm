@@ -4,7 +4,7 @@
 
 lpb $0
   mov $1,$0
-  add $1,4
+  add $1,5
   seq $1,130312 ; Each Fibonacci number F(n) appears F(n) times.
   sub $0,$1
 lpe

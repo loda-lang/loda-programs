@@ -2,6 +2,9 @@
 ; Submitted by http://amez.petrsu.ru/
 ; 0,1,2,4,8,9,10,11,12,15,20,22,29,34,35,54,59
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,14

@@ -1,8 +1,11 @@
 ; A135352: Period 5: repeat [1,2,2,1,3].
 ; Submitted by SkyHighWeFly
 ; 1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3,1,2,2,1,3
-; Formula: a(n) = binomial(2*n,2)^3-5*truncate((binomial(2*n,2)^3)/5)+1
+; Formula: a(n) = binomial(2*n-2,2)^3-5*truncate((binomial(2*n-2,2)^3)/5)+1
 
+#offset 1
+
+sub $0,1
 mul $0,2
 bin $0,2
 pow $0,3

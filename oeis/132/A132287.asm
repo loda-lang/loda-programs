@@ -2,12 +2,16 @@
 ; Submitted by damotbe
 ; 3,5,7,101,131,151,181,283,293,313,353,647,677,727,829,839,859,9091,9391,9491,9791,10301,10501,10601,11311,11411,11821,12421,12721,13331,13841,14341,14551,14851,14951,15451,15461,15661,15761,16061,16361,16871,17581
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,132286 ; Odd palindromes with an even number of digits divided by 11.
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

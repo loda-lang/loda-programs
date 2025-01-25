@@ -6,7 +6,6 @@
 
 mov $1,1
 mov $4,$0
-sub $0,1
 seq $0,138222 ; a(n) = the largest divisor of n that is <= the number of positive divisors of n.
 lpb $0
   sub $0,1

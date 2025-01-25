@@ -21,6 +21,7 @@ lpb $4
     sub $0,1
     mov $6,$0
     max $6,0
+    add $6,1
     seq $6,137803 ; a(n) = floor(n*(sqrt(2) + 1/2)).
     mov $7,$8
     mul $7,$6

@@ -1,8 +1,10 @@
 ; A137325: Number of terms in the Janet periodic table of the elements 32 columns: ordered 14 2's, 10 4's, 6 6's, 2 8's.
 ; 2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,6,6,6,6,6,6,8,8
-; Formula: a(n) = 2*floor(((n-5)^2+59863)/254)-468
+; Formula: a(n) = 2*floor(((n-6)^2+59863)/254)-468
 
-sub $0,5
+#offset 1
+
+sub $0,6
 pow $0,2
 mov $1,59863
 add $1,$0

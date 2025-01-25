@@ -8,6 +8,7 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,139706 ; Take n in binary. Rotate the binary digits to the right until a 1 once again appears as the leftmost digit. Convert back into decimal for a(n).
   seq $3,153141 ; Permutation of nonnegative integers: A059893-conjugate of A153151.
   gcd $3,$0

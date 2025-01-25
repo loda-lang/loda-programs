@@ -2,7 +2,8 @@
 ; Submitted by Jamie Morken(w2)
 ; 0,3,150,31185,12999420,9622703475,11539805487210,20981809690466625,54997428661808232600,199760599884519009411075,973866344327734952575230750,6207575427404936259602204502225
 
-add $0,1
+#offset 1
+
 mul $0,2
 mov $1,$0
 seq $0,337302 ; Number of X-based filling of diagonals in a diagonal Latin square of order n with the main diagonal in ascending order.

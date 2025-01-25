@@ -2,7 +2,9 @@
 ; Submitted by skildude
 ; 0,0,0,1,1,5,6,60,93
 
-add $0,1
+#offset 3
+
+sub $0,2
 lpb $0
   sub $0,2
   mul $2,2

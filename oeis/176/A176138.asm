@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,133534 ; Sum of third powers of two consecutive primes.
   sub $3,2
   mov $5,$3

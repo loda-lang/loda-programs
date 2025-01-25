@@ -2,16 +2,23 @@
 ; Submitted by Luca
 ; 5,173,293,677,773,797,1013,1277,1613,1637,1973,2357,2477,2693,2957,3533,3797,4133,4157,4373,4493,4637,4877,4973,5333,5477,5717,5813,6053,6173,6317,6653,7013,7517,7853,8237,8573,8693,8837,9173,9413,9533,9677,10037,10253,10853,11093,11213,11597,11717,11933,12197,12437,12893,13037,13397,13613,13877,14717,14957,15053,15077,15413,15797,16253,17093,17477,17573,17597,18077,18413,18773,18917,19157,19997,20117,20333,21773,22013,22133
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,139899 ; Primes of the form 5x^2+48y^2.
   sub $3,1
   mov $5,$3
   add $3,1
-  seq $3,35189 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 7.
+  mov $6,$3
+  seq $6,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+  seq $3,35210 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 28.
+  mul $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

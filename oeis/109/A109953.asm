@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,133395 ; Terms in A061725 that are of form 3*prime.
 mov $1,$0
 lpb $0

@@ -9,6 +9,7 @@ lpb $2
   mov $6,$1
   add $6,2
   mov $3,$1
+  add $3,1
   seq $3,135504 ; a(1)=1; for n>1, a(n) = a(n-1) + lcm(a(n-1),n).
   mov $5,$3
   gcd $5,$6
@@ -16,12 +17,12 @@ lpb $2
   div $3,$5
   mod $3,4
   sub $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

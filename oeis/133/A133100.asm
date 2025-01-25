@@ -7,4 +7,4 @@ lpb $0
   sub $1,1
   add $0,$1
 lpe
-cmp $0,1
+equ $0,1

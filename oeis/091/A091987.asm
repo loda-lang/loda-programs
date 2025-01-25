@@ -8,6 +8,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   trn $3,3
+  add $3,1
   seq $3,130241 ; Maximal index k of a Lucas number such that Lucas(k) <= n (the 'lower' Lucas (A000032) Inverse).
   sub $0,$3
   add $1,1
