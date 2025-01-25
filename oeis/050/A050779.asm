@@ -13,7 +13,6 @@ lpb $2
   seq $3,154115 ; Numbers n such that n + 3 is prime.
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
-  sub $3,1
   seq $3,346377 ; a(n) is the number of solutions k to A075254(k) = n.
   equ $3,0
   sub $0,$3

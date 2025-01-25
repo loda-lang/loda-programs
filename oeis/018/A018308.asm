@@ -7,7 +7,7 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,13
+  mov $3,14
   seq $3,295695 ; Numbers that have exactly five representations as a sum of six positive squares.
   add $4,1
   add $1,1

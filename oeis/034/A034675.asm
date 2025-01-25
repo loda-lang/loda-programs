@@ -9,12 +9,12 @@ add $2,$1
 mov $3,0
 mov $4,2
 pow $4,$0
-mov $0,4
+mov $0,2
 pow $1,2
 add $2,$1
 mul $2,2
-mov $5,1000
-lpb $5
+mov $5,512
+lpb $5,2
   div $5,8
   add $3,1
   mul $3,$4
