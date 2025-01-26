@@ -15,7 +15,7 @@ while read -r s f; do
   fi
 done < <(git status --porcelain)
 
-if (( num_added >= 10 )); then
+if (( num_added >= 5 )); then
   git commit -m "added $num_added programs"
 fi
 

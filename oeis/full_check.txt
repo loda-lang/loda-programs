@@ -221,6 +221,7 @@ A060143: a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
 A060632: a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
 A061142: Replace each prime factor of n with 2: a(n) = 2^bigomega(n), where bigomega = A001222, number of prime factors counted with multiplicity.
 A061357: Number of 0<k<n such that n-k and n+k are both primes.
+A061389: Number of (1+phi)-divisors of n.
 A061395: Let p be the largest prime factor of n; if p is the k-th prime then set a(n) = k; a(1) = 0 by convention.
 A061704: Number of cubes dividing n.
 A062116: a(n) = 2^n mod 17.
