@@ -11,7 +11,8 @@ pow $2,3
 lpb $2
   mov $3,$1
   add $3,1
-  mov $6,$3
+  mov $6,$1
+  add $6,2
   seq $6,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $6,1
   mov $5,$3

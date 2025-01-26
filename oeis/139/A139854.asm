@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,141304 ; Primes of the form -2*x^2+6*x*y+3*y^2 (as well as of the form 7*x^2+12*x*y+3*y^2).
   mov $5,$3
   seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).

@@ -20,7 +20,6 @@ lpb $2
   add $3,1
   mov $6,$3
   equ $6,1
-  sub $3,1
   seq $3,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $3,$6
   add $3,1

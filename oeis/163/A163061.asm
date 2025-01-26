@@ -10,6 +10,7 @@ lpb $2
   mov $0,$6
   sub $0,$2
   mov $1,$0
+  add $1,1
   seq $1,141468 ; Zero together with the nonprime numbers A018252.
   add $0,1
   seq $0,40 ; The prime numbers.

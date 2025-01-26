@@ -7,6 +7,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,141468 ; Zero together with the nonprime numbers A018252.
   pow $6,$3
   add $3,$6

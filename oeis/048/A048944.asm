@@ -11,6 +11,7 @@ pow $2,3
 lpb $2
   sub $2,6
   mov $5,$1
+  add $5,1
   seq $5,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
   div $5,3
   mov $3,$1

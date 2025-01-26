@@ -11,7 +11,6 @@ lpb $0
   seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mov $3,$2
   equ $3,1
-  sub $2,1
   seq $2,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $2,$3
   add $2,1

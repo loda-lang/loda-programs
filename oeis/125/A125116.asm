@@ -9,6 +9,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,145217 ; a(n) is the self-convolution series of the sum of 4th powers of the first n natural numbers.
   add $1,$2
   mul $2,$3

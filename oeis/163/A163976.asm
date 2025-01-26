@@ -6,6 +6,7 @@ mov $2,1
 lpb $2
   sub $2,1
   mov $1,$0
+  add $1,1
   seq $1,141468 ; Zero together with the nonprime numbers A018252.
   mod $1,2
   add $0,1

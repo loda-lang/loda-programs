@@ -2,6 +2,9 @@
 ; Submitted by Mumps
 ; 6,2,2,0,0,4,2,0,0
 
+#offset 3
+
+sub $0,3
 mov $1,$0
 pow $1,2
 mul $0,55

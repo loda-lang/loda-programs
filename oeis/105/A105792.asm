@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,141515 ; a(n) = phi(A067774(n)) where phi is Euler totient function.
   sub $1,6
   div $1,2

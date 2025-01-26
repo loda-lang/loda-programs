@@ -6,7 +6,7 @@
 
 sub $0,5
 mov $1,$0
-add $0,1
+add $0,7
 seq $0,144969 ; Stirling numbers of second kind S(n,n-6).
 lpb $1
   mul $0,$1

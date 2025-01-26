@@ -2,8 +2,10 @@
 ; Submitted by John Napoli
 ; 6,1,8,7,5,3,2,9,4
 
+#offset 1
+
 mov $3,-1
-add $0,6
+add $0,5
 lpb $0
   sub $0,5
   add $4,1

@@ -8,12 +8,12 @@ sub $0,1
 add $2,1
 pow $2,3
 lpb $2
-  mov $3,$1
-  add $3,1
-  mov $5,$3
+  mov $5,$1
+  add $5,2
   seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $5,1
-  add $3,3
+  mov $3,$1
+  add $3,4
   mul $5,$3
   mov $3,$5
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

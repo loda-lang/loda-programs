@@ -1,12 +1,21 @@
 ; A147878: The number of degree sequences with degree sum 2n representable by a connected graph (with multiple edges allowed).
 ; Submitted by Skillz
 ; 1,2,5,11,23,46,86,156,273,463,766,1241,1969,3073,4723,7157,10711,15850,23206,33654,48373,68955,97544,137002,191125,264955,365127,500349,682018,924982,1248502,1677530,2244229,2989952,3967732,5245354,6909211,9069188,11864609,15471721,20112977,26068461,33690006,43418718,55806346,71541671,91482892,116697164,148508969,188559327,238877663,301969480,380922919,479537907,602482723,755483702,945554112,1181270718,1473107239,1833835616,2279008681,2827540297,3502400828,4331451081,5348440752,6594202053
-; Formula: a(n) = -A025065(max(2*n-1,0))+A336106(max(2*n-1,0)+3)
+; Formula: a(n) = -A000070(floor(max(max(2*n-3,0)+1,0)/2))-A025065(max(2*n-3,0))+A000041(max(max(2*n-3,0)+1,0)+2)
 
+#offset 1
+
+sub $0,1
 mul $0,2
 trn $0,1
 mov $1,$0
 seq $1,25065 ; Number of palindromic partitions of n.
-add $0,3
-seq $0,336106 ; Number of integer partitions of n whose greatest part is at most one more than the sum of the other parts.
+add $0,2
+trn $0,1
+mov $2,$0
+div $2,2
+seq $2,70 ; a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
+add $0,2
+seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+sub $0,$2
 sub $0,$1

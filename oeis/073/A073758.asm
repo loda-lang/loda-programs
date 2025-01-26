@@ -6,6 +6,7 @@
 
 sub $0,1
 mov $3,$0
+add $0,1
 seq $0,141295 ; Largest m<=n such that all k with 1<=k<=m are divisors of n or coprime to n.
 mov $2,$3
 lpb $2

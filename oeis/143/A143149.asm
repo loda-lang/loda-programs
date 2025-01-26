@@ -2,7 +2,8 @@
 ; Submitted by Ciceronian
 ; 3,1,3,3,2,8,5,3,4,3,2,8,8,7,5,0,6,2,8,0,1,9,7,0,6,6,0,6,0,1,3,8,0,6,5,6,6,2,5,8,7,3,3,4,2,5,7,6,2,4,2,2,8,9,5,7,8,7,4,0,4,4,7,0,4,2,7,8,6,7,0,6,8,2,5,9,8,0,2,4
 
-add $0,1
+#offset 1
+
 mul $0,2
 seq $0,11545 ; a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
 mov $1,$0

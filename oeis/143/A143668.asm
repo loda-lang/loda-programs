@@ -1,10 +1,31 @@
 ; A143668: Result of the morphing 01->01021212, 02->0102121201, 12->01021201, iterated from '01'. Sequence of the Fibonacci word fractal.
 ; Submitted by vaughan
 ; 0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,1,2,0,1,0,2,1,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,0,1,0,1,0,2,1,2,1,2,0,1,0,2
-; Formula: a(n) = 2*n*A005614(n)-A005614(n)-4*truncate((n*A005614(n))/2)+1
+; Formula: a(n) = 2*(n-1)*(-2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)+2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)-sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))-truncate((sqrtint(5*n^2)+n)/2)-4*truncate(((n-1)*(-2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2))/2)-1
 
+#offset 1
+
+mov $3,$0
+add $3,$0
+mul $3,2
+add $3,$0
+mul $3,$0
+nrt $3,2
+add $3,$0
 mov $1,$0
-seq $1,5614 ; The binary complement of the infinite Fibonacci word A003849. Start with 1, apply 0->1, 1->10, iterate, take limit.
+mov $1,$3
+div $1,2
+add $1,2
+mov $2,$1
+add $2,$1
+mul $2,2
+add $2,$1
+mul $2,$1
+nrt $2,2
+add $2,$1
+mov $1,$2
+mod $1,2
+sub $0,1
 mul $0,$1
 mod $0,2
 mul $0,2

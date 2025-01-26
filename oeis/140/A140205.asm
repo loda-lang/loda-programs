@@ -9,7 +9,7 @@ lpb $1
   mov $0,$3
   sub $0,$1
   mod $0,8
-  dis $0,2
+  dgs $0,2
   add $2,$0
 lpe
 mov $0,$2

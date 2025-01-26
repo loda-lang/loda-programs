@@ -13,6 +13,7 @@ lpb $0
   add $4,1
   equ $4,1
   mov $2,$1
+  add $2,1
   seq $2,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $2,$4
   add $2,1

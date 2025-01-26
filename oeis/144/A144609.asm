@@ -11,7 +11,12 @@ lpb $3
   mul $0,4
   mov $8,$0
   add $8,1
-  seq $8,3151 ; Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
+  mov $9,$8
+  add $9,$8
+  mul $9,$8
+  nrt $9,2
+  add $9,$8
+  mov $8,$9
   add $8,945
   add $0,$8
   div $0,2

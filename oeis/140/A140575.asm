@@ -11,6 +11,6 @@ mov $2,-1
 sub $2,$0
 bin $2,$1
 mov $1,$0
-cmp $1,0
+equ $1,0
 sub $1,$2
 mov $0,$1

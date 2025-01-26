@@ -10,6 +10,7 @@ mov $2,$0
 mul $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,144078 ; a(n) = the number of digits in the binary representation of n that differ from the corresponding digit in the binary reversal of n. (I.e., a(n) = number of 1's in n XOR A030101(n).)
   equ $3,2
   sub $0,$3

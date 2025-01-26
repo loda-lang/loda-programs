@@ -16,16 +16,15 @@ lpb $2
   add $5,$6
   mul $6,6
   mov $3,$5
-  sub $3,1
   seq $3,147810 ; Half the number of divisors of n^2+1.
   mul $3,2
   sub $3,1
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$6

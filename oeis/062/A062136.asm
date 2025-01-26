@@ -9,6 +9,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,13
   seq $0,141783 ; Number of bracelets (turn over necklaces) with n beads: 1 blue, 12 green, and r = n - 13 red.
   mov $2,$3
   mul $2,$0

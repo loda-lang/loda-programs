@@ -2,6 +2,9 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,1,-1,1,-2,1,0,-1,-2,1,1,1,-2,-2,0,1,1,1,1,-2,-2,1,0,-1,-2,0,1,1,3,1,0,-2,-2,-2,0,1,-2,-2,0,1,3,1,1,1,-2,1,0,-1,1,-2,1,1,0,-2,0,-2,-2,1,-1,1,-2,1,0,-2,3,1,1,-2,3,1,0,1,-2,1,1,-2,3,1,0
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -15,7 +18,12 @@ lpb $2
   add $4,1
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   add $0,1
-  seq $0,122414 ; Triangle T(n,k) for 1 <= k <= n read by rows, where T(n,k) = 1 if gcd(n,k) is prime, 0 otherwise.
+  seq $0,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
+  trn $0,1
+  add $0,1
+  seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $0,1
+  equ $0,1
   mul $0,$4
   add $1,$0
 lpe

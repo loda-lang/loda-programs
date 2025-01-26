@@ -16,6 +16,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,143259 ; a(n) = 1 if n is a nonzero square, -1 if n is twice a nonzero square, 0 otherwise.
     mov $9,10
     add $9,$5

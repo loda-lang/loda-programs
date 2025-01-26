@@ -14,6 +14,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,144379 ; Triangle read by rows, first n terms of an array formed by A054521 * A054521(transform).
   add $1,$0
 lpe

@@ -13,7 +13,6 @@ lpb $2
   gcd $0,$2
   mov $4,$0
   equ $4,1
-  sub $0,1
   seq $0,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $0,$4
   add $0,1

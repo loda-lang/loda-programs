@@ -2,8 +2,11 @@
 ; Submitted by ChelseaOilman
 ; 1,2,3,4,5,6,7,8,10,12,14,16,18,24,30,36,42,48,60,90,210
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   sub $2,1

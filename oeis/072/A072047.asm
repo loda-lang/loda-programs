@@ -1,7 +1,7 @@
 ; A072047: Number of prime factors of the squarefree numbers: omega(A005117(n)).
 ; Submitted by JayPi
 ; 0,1,1,1,2,1,2,1,1,2,2,1,1,2,2,1,2,1,3,1,2,2,2,1,2,2,1,3,1,2,1,2,1,2,2,2,1,1,2,2,3,1,2,3,1,1,2,2,3,1,2,1,2,2,2,1,2,2,2,2,1,1,3,1,3,2,1,1,3,2,1,3,2,2,2,2,2,1,2,3
-; Formula: a(n) = A001221(min(n-1,1)+A144338(max(n-2,0))-1)
+; Formula: a(n) = A001221(min(n-1,1)+A144338(max(n-2,0)+1)-1)
 
 #offset 1
 
@@ -9,6 +9,7 @@ sub $0,1
 mov $1,$0
 min $1,1
 trn $0,1
+add $0,1
 seq $0,144338 ; Squarefree numbers > 1.
 add $1,$0
 mov $0,$1

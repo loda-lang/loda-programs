@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,145199 ; Nonsquarefree numbers k such that k+1 is prime.
   mov $5,$3
   mul $3,2

@@ -2,6 +2,9 @@
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 1,2,18,28,42,58,70,78,88,108,112,126,136,138,148,162,178,180,196,198,210,228,238,240,268,280,282,292,312,316,336,348,358,378,388,396,400,408,418,420,430,438,448,462,466,478,486,490,498,508,520,522,546,568
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 add $2,10
@@ -13,8 +16,10 @@ lpb $2
   mov $3,$1
   add $3,$5
   sub $5,5
+  mov $6,$3
+  seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$6
   add $3,1
-  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   div $3,2
   sub $3,$5
   equ $3,0

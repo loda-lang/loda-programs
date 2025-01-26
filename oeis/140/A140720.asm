@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,2,1,3,2,2,2,2,5,1,3,2,2,4,2,3,3,4,2,3,2,3,3,4,2,3,3,3
 
+#offset 1
+
+sub $0,1
 mov $3,2
 lpb $3
   sub $3,1

@@ -1,8 +1,10 @@
 ; A144478: Period 9: repeat 1,0,5,7,6,2,4,3,8.
 ; 1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8,1,0,5,7,6,2,4,3,8
-; Formula: a(n) = -9*truncate(binomial(3*n-1,4)/9)+binomial(3*n-1,4)
+; Formula: a(n) = -9*truncate(binomial(3*n-4,4)/9)+binomial(3*n-4,4)
+
+#offset 1
 
 mul $0,3
-sub $0,1
+sub $0,4
 bin $0,4
 mod $0,9

@@ -10,7 +10,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,4
-  add $2,2
+  add $2,3
   seq $2,143607 ; Numerators of principal and intermediate convergents to 2^(1/2).
   seq $2,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
   div $2,100

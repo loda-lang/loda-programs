@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,145818 ; Odd positive integers a(n) such that for every integer m == 3 (mod 4) there exists a unique representation of the form m = a(l) + 2*a(s), but there are no such representations for m == 1 (mod 4).
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1

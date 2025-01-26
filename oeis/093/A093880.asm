@@ -9,6 +9,7 @@ mov $3,$0
 lpb $0
   sub $0,1
   mov $5,$3
+  add $5,1
   seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $5,1
   mod $5,2

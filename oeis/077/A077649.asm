@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,140347 ; Composites of the form ((x+y)/3+2)/(x-y), where x=composite and y=prime.
 lpb $0
   mov $1,$0

@@ -20,7 +20,6 @@ lpb $0
   div $7,5
   mul $7,$8
   add $7,$8
-  sub $7,1
   seq $7,144330 ; Triangle read by rows, A144328 * A000012
   mov $1,$7
   seq $1,24639 ; n written in fractional base 7/2.

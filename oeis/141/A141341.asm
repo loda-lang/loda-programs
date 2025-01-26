@@ -1,8 +1,11 @@
 ; A141341: Totally Goldbach numbers: Positive integers n such that for all primes p < n-1 with p not dividing n, n-p is prime.
 ; Submitted by Simon Strandgaard
 ; 1,2,3,4,5,6,8,10,12,18,24,30
-; Formula: a(n) = 4*max(max(n-5,0)-3,0)+max(n-5,0)+n+1
+; Formula: a(n) = 4*max(max(n-6,0)-3,0)+max(n-6,0)+n
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 trn $0,5
 mov $1,$0

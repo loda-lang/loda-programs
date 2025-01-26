@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,142715 ; Primes congruent to 31 mod 58.
   mov $0,0
 lpe

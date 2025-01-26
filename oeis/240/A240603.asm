@@ -9,6 +9,7 @@ lpb $1
   mov $0,$3
   add $0,$1
   trn $0,1
+  add $0,1
   seq $0,144338 ; Squarefree numbers > 1.
   mul $0,2
   sub $0,2

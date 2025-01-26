@@ -9,6 +9,7 @@ lpb $0
   mov $1,1
 lpe
 lpb $0
+  add $0,1
   seq $0,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $0,1
   sub $1,$0

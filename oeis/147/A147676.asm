@@ -2,7 +2,10 @@
 ; Submitted by Jon Maiga
 ; 90,100,50,60,30,40,20,30,15,25
 
+#offset 1
+
 mov $2,42
+sub $0,1
 lpb $0
   sub $0,1
   mov $1,$2

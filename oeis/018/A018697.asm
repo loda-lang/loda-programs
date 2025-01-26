@@ -7,7 +7,7 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,8
+  mov $3,9
   seq $3,140540 ; Primes of form 17*n - 3.
   sub $3,6
   add $4,1

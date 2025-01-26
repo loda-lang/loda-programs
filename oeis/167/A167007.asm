@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,140990 ; Half the number of n X n binary matrices having equal row sums.
     mul $7,2
     mov $9,10

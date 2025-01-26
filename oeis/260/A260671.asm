@@ -4,6 +4,7 @@
 
 mov $1,$0
 trn $0,1
+add $0,1
 seq $0,140727 ; Expansion of (phi(q) * phi(q^15) - phi(q^3) * phi(q^5)) / 2 in powers of q where phi() is a Ramanujan theta function.
 lpb $1
   mov $1,0

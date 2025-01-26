@@ -1,4 +1,4 @@
-; A145225: T(n,k) is the number of odd permutations (of an n-set) with exactly k fixed points.
+; A145225: Triangle read by rows: T(n,k) is the number of odd permutations (of an n-set) with exactly k fixed points.
 ; Submitted by Landjunge
 ; 0,0,0,1,0,0,0,3,0,0,6,0,6,0,0,20,30,0,10,0,0,135,120,90,0,15,0,0,924,945,420,210,0,21,0,0,7420,7392,3780,1120,420,0,28,0,0,66744,66780,33264,11340,2520,756,0,36,0,0
 

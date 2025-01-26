@@ -11,6 +11,7 @@ add $2,2
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,144079 ; a(n) = the number of digits in the binary representation of n that equal the corresponding digit in the binary reversal of n. (I.e., a(n) = number of 0's in n XOR A030101(n).)
   sub $3,2
   equ $3,2

@@ -13,7 +13,16 @@ lpb $2
   add $3,1
   seq $3,2476 ; Primes of the form 6m + 1.
   mov $5,$3
-  seq $3,28641 ; Expansion of theta_3(q) * theta_3(q^19) + theta_2(q) * theta_2(q^19) in powers of q.
+  mov $6,$3
+  trn $3,1
+  mov $7,$3
+  add $3,1
+  seq $3,13957 ; a(n) = sigma_9(n), the sum of the 9th powers of the divisors of n.
+  mod $3,19
+  mul $3,2
+  sub $3,1
+  sub $3,$7
+  add $3,$6
   neq $3,0
   sub $0,$3
   add $1,1

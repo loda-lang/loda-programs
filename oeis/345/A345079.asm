@@ -7,6 +7,7 @@ mov $4,$0
 add $4,1
 equ $4,1
 mov $3,$0
+add $3,1
 seq $3,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
 add $3,$4
 add $3,1

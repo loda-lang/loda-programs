@@ -4,7 +4,7 @@
 
 add $0,1
 mov $1,2
-cmp $1,$0
+equ $1,$0
 mov $2,$1
 gcd $2,$0
 mul $0,$2

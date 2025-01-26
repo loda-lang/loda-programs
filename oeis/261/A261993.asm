@@ -16,6 +16,7 @@ lpb $1
     add $3,$0
     add $0,3
     add $2,$3
+    add $3,1
     seq $3,140365 ; a(n) = sum of primes in {6*n-5, 6*n-1}.
     add $3,$2
     div $3,2

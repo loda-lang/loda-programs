@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,140365 ; a(n) = sum of primes in {6*n-5, 6*n-1}.
   trn $3,2
   add $3,1

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,141468 ; Zero together with the nonprime numbers A018252.
 lpb $0
   div $0,2

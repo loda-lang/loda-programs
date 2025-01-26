@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 4,6,8,10,12,14,16,18,24,30,36,42,48,60,90,210
 
+#offset 1
+
+sub $0,1
 mov $1,5
 mov $2,$0
 pow $2,2

@@ -1,6 +1,7 @@
 ; A141638: Odd numbers which are not Yang numbers.
 ; Submitted by entity
 ; 35,43,47,55,63,67,71,75,79
+; Formula: a(n) = 4*floor((n+2)/6)+4*sqrtint(n-1)+4*n+31
 
 #offset 1
 

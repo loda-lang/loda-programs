@@ -11,12 +11,10 @@ lpb $2
   add $4,$1
   mov $3,$1
   seq $3,275823 ; Least k such that n divides phi(k^2).
-  sub $3,1
   mov $5,$3
   seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $5,1
   mod $5,2
-  add $3,1
   mov $6,2
   pow $6,$3
   sub $6,2

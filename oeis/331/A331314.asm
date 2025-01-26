@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,141258 ; Inverse Mobius transform of the Carmichael lambda function.
   add $3,$0
 lpe

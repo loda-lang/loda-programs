@@ -12,6 +12,7 @@ lpb $1
   div $0,2
   bxo $4,$0
   mov $0,$4
+  add $0,1
   seq $0,145812 ; Odd positive integers a(n) such that for every odd integer m > 1 there exists a unique representation of m as a sum of the form a(l) + 2a(s).
   div $0,2
   add $2,$0

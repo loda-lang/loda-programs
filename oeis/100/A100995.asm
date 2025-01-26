@@ -4,10 +4,10 @@
 
 #offset 1
 
+mov $1,$0
 mov $2,$0
 equ $2,1
 sub $0,1
-mov $1,$0
 seq $1,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
 add $1,$2
 add $1,1

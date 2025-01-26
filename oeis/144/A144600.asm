@@ -5,4 +5,4 @@ add $0,1
 mul $0,2
 mod $0,13
 div $0,2
-cmp $0,0
+equ $0,0

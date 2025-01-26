@@ -14,6 +14,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
     mod $7,2
     mul $7,$$9

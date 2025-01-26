@@ -2,8 +2,11 @@
 ; Submitted by Gunnar Hjern
 ; 5,6,14,30,62,90,126,254,510,1022,2046,4094,8190
 
+#offset 1
+
 mov $1,7
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   add $1,$2

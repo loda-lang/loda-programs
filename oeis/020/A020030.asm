@@ -14,6 +14,7 @@ lpb $0
     add $6,3
     div $6,7
     mov $7,$4
+    add $7,1
     seq $7,147585 ; a(1) = 1; a(n) = (7*n-9)*a(n-1) for n > 1.
     mov $9,10
     add $9,$5

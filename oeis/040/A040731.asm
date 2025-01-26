@@ -14,7 +14,6 @@ mul $3,4
 div $3,5
 mul $3,$4
 add $3,$4
-sub $3,1
 seq $3,144330 ; Triangle read by rows, A144328 * A000012
 mov $0,$3
 seq $0,24639 ; n written in fractional base 7/2.

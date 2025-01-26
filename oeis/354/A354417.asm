@@ -8,6 +8,7 @@ lpb $0
   min $4,1
   mov $2,$0
   trn $2,1
+  add $2,1
   seq $2,144338 ; Squarefree numbers > 1.
   add $4,$2
   mov $2,$4

@@ -1,7 +1,7 @@
 ; A040808: Continued fraction for sqrt(837).
 ; Submitted by Kotenok2000
 ; 28,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13,2,13,1,56,1,13
-; Formula: a(n) = 9*truncate((gcd(0,A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)-1))+2)/5)+A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)-1)
+; Formula: a(n) = 9*truncate((gcd(0,A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)))+2)/5)+A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2))
 
 mov $3,$0
 gcd $3,2
@@ -15,7 +15,6 @@ mul $2,4
 div $2,5
 mul $2,$3
 add $2,$3
-sub $2,1
 seq $2,144330 ; Triangle read by rows, A144328 * A000012
 gcd $1,$2
 add $1,2

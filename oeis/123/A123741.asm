@@ -14,7 +14,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,143061 ; Triangle read by rows, A000012 * A127647 * A000012.
   mul $1,$0
   max $1,$0

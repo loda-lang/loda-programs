@@ -10,6 +10,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   sub $0,$3
   add $1,2

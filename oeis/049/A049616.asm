@@ -10,7 +10,6 @@ lpb $3
   mov $0,$4
   sub $0,$3
   lpb $0
-    sub $0,1
     seq $0,140435 ; Number of new lattice points created at each step in an n X n grid that are not visible.
     add $2,$0
     mov $0,1

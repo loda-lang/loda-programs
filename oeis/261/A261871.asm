@@ -7,14 +7,14 @@ pow $2,2
 add $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,147645 ; Number of distinct Mersenne primes dividing n.
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

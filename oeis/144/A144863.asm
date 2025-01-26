@@ -1,10 +1,12 @@
 ; A144863: Start with 1, then at each step prepend 10 and append 01.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,10101,101010101,1010101010101,10101010101010101,101010101010101010101,1010101010101010101010101,10101010101010101010101010101,101010101010101010101010101010101
-; Formula: a(n) = floor((10^(4*n+2))/99)
+; Formula: a(n) = floor(truncate(10^(4*n-2))/99)
+
+#offset 1
 
 mul $0,4
-add $0,2
+sub $0,2
 mov $1,10
 pow $1,$0
 mov $0,$1

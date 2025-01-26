@@ -18,6 +18,7 @@ lpb $18
   mov $2,2
   lpb $2,2
     mul $2,20
+    add $3,1
     seq $3,140397 ; a(n) = floor(3*phi*n) - 3*floor(phi*n) where phi = (1+sqrt(5))/2.
     add $4,1
     gcd $2,$3

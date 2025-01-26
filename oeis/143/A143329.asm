@@ -1,7 +1,34 @@
 ; A143329: Primes in A143292.
 ; Submitted by Science United
 ; 3,2,7,11,19,61,47,109,73,223,211,251,239,167,151,157,137,439,421,419,499,463,331,787,827,971,991,1009,947,911,641,647,659,701,757,613,569,521,1549,1663,1747,1789,1697,1667,1933,1951,1877,1291,1367,1531,1447,1451,1279,1069,1051,3079,3121,3169,3187,3319,3323,3299,3251,3217,3229,3463,3511,3583,3529,3343,3331,3889,3881,3877,3919,4093,4079,4001,4021,3833
-; Formula: a(n) = A003188(A281316(n))
 
-seq $0,281316 ; Prime number p such that the decimal representation of its binary reflected Gray code is also a prime.
-seq $0,3188 ; Decimal equivalent of Gray code for n.
+#offset 1
+
+sub $0,1
+mov $2,1
+mov $3,$0
+mul $3,2
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  div $4,2
+  mov $6,$2
+  bxo $6,$4
+  mov $4,$6
+  mul $4,$2
+  seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+  equ $4,2
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+div $0,2
+mov $1,$2
+bxo $1,$0
+mov $0,$1

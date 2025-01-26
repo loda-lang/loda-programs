@@ -2,6 +2,9 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2521,3782,4623,5254,5759,6180,6541,6857,7138,7391
 
+#offset 1
+
+sub $0,1
 mov $5,$0
 mov $2,$0
 lpb $2

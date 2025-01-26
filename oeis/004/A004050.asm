@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,141747 ; a(n) is the number of nonnegative integer pairs i,j such that n = 2^i + 3^j.
   neq $3,0
   sub $0,$3
