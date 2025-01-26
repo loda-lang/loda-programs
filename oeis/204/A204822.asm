@@ -1,14 +1,18 @@
 ; A204822: Sum of divisors (A000203) of abundant numbers (A005101).
 ; Submitted by Ralfy
 ; 28,39,42,60,72,91,90,96,124,120,120,168,144,144,195,168,186,224,180,234,252,217,216,210,280,248,240,360,312,336,288,336,403,372,392,378,363,480,360,372,546,384,508,399,468,465,504,434,576,600,504,456,504,560,546,744,504,728,528,588,720,720,558,672,720,576,819,684,868,620,702,672,840,648,762,847,864,992,756,780
-; Formula: a(n) = A005101(n+1)+A048050(A005101(n+1))+1
+; Formula: a(n) = A000203(A005101(n))
 
-add $0,1
+#offset 1
+
 seq $0,5101 ; Abundant numbers (sum of divisors of m exceeds 2m).
 sub $0,1
 mov $1,$0
+mov $2,$0
 add $0,1
-seq $0,48050 ; Chowla's function: sum of divisors of n except for 1 and n.
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+sub $0,2
+sub $0,$2
 add $1,$0
 mov $0,$1
 add $0,2

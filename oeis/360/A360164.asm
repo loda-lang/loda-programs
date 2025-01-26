@@ -8,5 +8,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
+add $1,1
 seq $1,360162 ; a(n) is the sum of the square roots of the unitary divisors of n that are squares.
 mov $0,$1
