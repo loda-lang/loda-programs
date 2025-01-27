@@ -6,6 +6,7 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  add $3,3
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$1
   mul $5,$3
@@ -18,7 +19,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -9,7 +9,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,154115 ; Numbers n such that n + 3 is prime.
+  add $3,3
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   add $3,4
   seq $3,72627 ; Number of divisors d of n such that d-1 is prime.

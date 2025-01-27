@@ -2,6 +2,9 @@
 ; Submitted by Fornax
 ; 1,11,27,37,49,59,69,79,83,93
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 max $0,1
 lpb $0

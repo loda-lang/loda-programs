@@ -6,6 +6,7 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   seq $1,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $2,1

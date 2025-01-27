@@ -13,9 +13,11 @@ mov $3,$1
 mov $4,$1
 equ $4,0
 add $4,$1
+add $4,2
 seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 mov $5,$4
 mov $1,$4
+add $1,2
 seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 sub $1,3
 sub $1,$3

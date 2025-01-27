@@ -4,6 +4,6 @@
 ; Formula: a(n) = A097807(n)*A094385(n)
 
 mov $1,$0
-seq $1,94385 ; Another version of triangular array in A062991 unsigned and transposed : triangle T(n,k), 0<=k<=n, read by rows; given by [0, 1, 1, 1, 1, 1, 1, ...] DELTA [1, 1, 1, 1, 1, 1, 1, 1, 1, ...] where DELTA is the operator defined in A084938.
+seq $1,94385 ; Triangle read by rows: T(n, k) = binomial(2*n, k-1)*binomial(2*n-k-1, n-k)/n for n, k >= 1, and T(n, 0) = 0^n.
 seq $0,97807 ; Riordan array (1/(1+x),1) read by rows.
 mul $0,$1

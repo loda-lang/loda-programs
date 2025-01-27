@@ -4,8 +4,8 @@
 
 #offset 3
 
-sub $0,3
 mov $3,$0
 seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+sub $0,3
 add $$1,3
 mul $0,$3

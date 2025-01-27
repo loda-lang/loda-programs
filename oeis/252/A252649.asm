@@ -9,6 +9,7 @@ lpb $1
   mov $0,$5
   sub $0,$1
   mov $3,$0
+  add $3,1
   seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   div $3,2
   gcd $3,2

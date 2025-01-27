@@ -11,7 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
+  add $3,3
   seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   div $3,2
   equ $3,1

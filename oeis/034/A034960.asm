@@ -8,6 +8,7 @@ lpb $0
   sub $0,1
   equ $3,0
   add $3,$2
+  add $3,1
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $1,$2
   add $1,$3

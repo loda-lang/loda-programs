@@ -14,6 +14,7 @@ lpb $3
   add $2,1
   seq $2,40 ; The prime numbers.
   mov $4,$2
+  add $4,1
   seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $4,$2
   bin $0,$3

@@ -7,5 +7,6 @@
 sub $0,1
 equ $1,$0
 trn $0,1
+add $0,1
 seq $0,154764 ; Primes with exactly one odd decimal digit.
 sub $0,$1

@@ -13,7 +13,6 @@ lpb $0
   add $0,$1
   add $1,1
   mul $0,2
-  sub $0,3
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $0,$1
 lpe

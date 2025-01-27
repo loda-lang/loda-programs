@@ -6,6 +6,7 @@ mov $2,$0
 lpb $2
   sub $2,$0
   mov $1,1
+  add $0,1
   seq $0,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   div $0,3
   lpb $0

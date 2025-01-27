@@ -8,7 +8,7 @@ sub $0,1
 seq $0,175073 ; Primes q with result 1 under iterations of {r mod (max prime p < r)} starting at r = q.
 sub $0,2
 lpb $0
-  sub $0,1
+  add $0,2
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $0,1
 lpe

@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,158611 ; 0, 1 and the primes.
   add $0,$3
   trn $0,3

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,158899 ; These are numbers n such that the reciprocal, 1/n, is a repeating fraction whose period is n/2 - 1.
 sub $0,2
 lpb $0

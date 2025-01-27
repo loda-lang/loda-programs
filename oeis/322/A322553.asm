@@ -7,6 +7,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   equ $3,1

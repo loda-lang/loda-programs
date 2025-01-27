@@ -8,7 +8,7 @@ mov $4,$0
 mul $4,4
 lpb $4
   mov $6,$4
-  cmp $6,0
+  equ $6,0
   gcd $8,0
   add $8,$3
   add $4,$6

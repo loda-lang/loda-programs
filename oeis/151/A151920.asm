@@ -5,7 +5,7 @@
 add $0,1
 lpb $0
   mov $2,$0
-  dis $2,2
+  dgs $2,2
   sub $0,1
   mov $1,3
   pow $1,$2

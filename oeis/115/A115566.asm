@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,158204 ; Terms in A178335 not divisible by 10.
   gcd $3,2
   mul $3,2

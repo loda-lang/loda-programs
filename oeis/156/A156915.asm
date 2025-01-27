@@ -2,6 +2,9 @@
 ; Submitted by pututu
 ; 4,1,2,3,4,1,1,2,1,2,3,1,2,3,4,1,1,1,2,1,1,2,1,2,3,1,1,2,1,2,3,1,2,3,4,1,1,1,1,2,1,1,1,2,1,1,2,1,2,3,1,1,1,2,1,1,2,1,2,3,1,1,2,1,2,3,1,2,3,4,1,1,1,1,1,2,1,1,1,1
 
+#offset 1
+
+sub $0,1
 seq $0,360573 ; Odd numbers with exactly three zeros in their binary expansion.
 lpb $0
   add $0,1

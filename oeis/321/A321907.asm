@@ -16,6 +16,7 @@ lpb $6
     div $0,2
     mul $0,2
     trn $0,$6
+    add $0,3
     seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
     sub $0,1
     add $1,1

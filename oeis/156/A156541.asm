@@ -24,6 +24,7 @@ lpb $2
     lpe
     mov $7,$6
     mul $7,2
+    add $7,1
     seq $7,151763 ; If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
     lpb $3
       dif $3,$6

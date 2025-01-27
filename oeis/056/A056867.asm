@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  add $3,1
   seq $3,153038 ; Denominators of the fixed point a=(a_1,a_2,...) of the transformation x'= fix(x) where fix(x)_n = Sum_{d|n} d x_d, i.e., fix(a)=a.
   mov $5,$1
   add $5,1

@@ -16,6 +16,6 @@ lpb $0
   mov $1,$3
   sub $2,1
   mul $3,$2
-  cmp $2,0
+  equ $2,0
 lpe
 mov $0,$3

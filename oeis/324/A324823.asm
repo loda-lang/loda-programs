@@ -2,6 +2,7 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
 
+add $0,1
 seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
 mul $0,2
 sub $0,1

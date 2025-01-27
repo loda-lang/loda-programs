@@ -12,6 +12,7 @@ lpb $2
   mov $3,$7
   add $3,1
   equ $6,1
+  add $6,1
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$3
   mov $3,$6

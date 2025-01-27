@@ -15,7 +15,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  sub $3,1
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
   sub $3,1
   seq $3,179941 ; Number of times n appears in a 100 X 100 multiplication table.

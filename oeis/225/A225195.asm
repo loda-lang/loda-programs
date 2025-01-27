@@ -6,7 +6,7 @@ add $0,1
 seq $0,69495 ; Squares which are the arithmetic mean of two consecutive primes.
 sub $0,2
 lpb $0
-  sub $0,1
+  add $0,2
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $0,1
 lpe

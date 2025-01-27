@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,153775 ; Sequence S such that 1 is in S and if x is in S, then 3x-1 and 3x are in S.
   sub $3,2
   mov $5,$3

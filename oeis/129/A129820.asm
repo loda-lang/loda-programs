@@ -18,6 +18,7 @@ lpb $3
   mov $6,0
   seq $6,194899 ; Triangular array (and fractal sequence):  row n is the permutation of (1,2,...,n) obtained from the increasing ordering of fractional parts {r}, {2r}, ..., {nr}, where r=sqrt(12).
   mov $4,$2
+  add $4,3
   seq $4,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   add $6,$2
   sub $6,$4

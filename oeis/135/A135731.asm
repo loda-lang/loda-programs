@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,154115 ; Numbers n such that n + 3 is prime.
 lpb $0
   add $2,$0

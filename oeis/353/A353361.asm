@@ -12,7 +12,6 @@ lpb $4
   mov $1,$0
   gcd $1,$4
   bin $1,$0
-  sub $0,1
   seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
   mod $0,3
   dif $0,-2

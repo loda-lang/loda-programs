@@ -9,7 +9,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    add $7,1
+    add $7,2
     seq $7,158611 ; 0, 1 and the primes.
     mov $9,10
     add $9,$5

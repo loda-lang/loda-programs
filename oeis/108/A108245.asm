@@ -4,7 +4,7 @@
 
 #offset 2
 
-sub $0,2
+sub $0,1
 seq $0,154115 ; Numbers n such that n + 3 is prime.
 add $1,$0
 bxo $1,2

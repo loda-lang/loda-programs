@@ -11,6 +11,7 @@ lpb $2
   add $3,1
   seq $3,6005 ; The odd prime numbers together with 1.
   mov $6,$3
+  add $6,1
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$3
   mov $3,$6

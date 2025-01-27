@@ -6,6 +6,7 @@
 
 sub $0,1
 lpb $0
+  add $0,1
   seq $0,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
   sub $0,1
   add $1,2

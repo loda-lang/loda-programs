@@ -2,8 +2,10 @@
 ; Submitted by Kotenok2000
 ; 1,1,2,2,1,3,1,3,3,1,2,5,1,2,2,4,2,4,2,2,3,3,1,7,2,1,4,3,2,4,1,5,4,2,2,6,2,3,2,4,1,6,2,4,4,2,1,9,1,3,4,2,2,5,3,5,3,3,2,6,2,1,5,6,1,7,2,3,3,3,2,9,1,3
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $4,$0
 lpb $4
   sub $4,1
@@ -14,7 +16,14 @@ lpb $4
   sub $0,$1
   mov $5,$0
   add $5,1
-  seq $5,201 ; Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.
+  mov $7,$5
+  mul $7,4
+  add $7,$5
+  mul $7,$5
+  nrt $7,2
+  add $7,$5
+  mov $5,$7
+  div $5,2
   mov $6,$5
   gcd $6,$2
   div $6,$5

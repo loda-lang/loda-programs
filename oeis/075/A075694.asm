@@ -12,6 +12,7 @@ lpb $0
   equ $3,0
   add $3,$1
   mov $2,$3
+  add $2,1
   seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   sub $2,$1
   add $1,$2

@@ -1,10 +1,10 @@
 ; A158952: Inverse Euler transform of the number of partitions in expanding space (A023881).
 ; Submitted by fzs600
 ; 1,2,9,67,625,7903,117649,2105342,43048905,1000976352,25937424601,743191207969,23298085122481,793763217701693,29192928060852217,1152939097060278256,48661191875666868481,2185919903971766191000
-; Formula: a(n) = truncate(A353233(n+1)/(n+1))
+; Formula: a(n) = truncate(A353233(n)/n)
+
+#offset 1
 
 mov $1,$0
-add $1,1
-add $0,1
 seq $0,353233 ; Möbius transform of sigma_n(n).
 div $0,$1

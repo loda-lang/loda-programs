@@ -12,6 +12,7 @@ lpb $1
   add $4,1
   equ $5,0
   add $5,$4
+  add $5,1
   seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $4,$5
 lpe

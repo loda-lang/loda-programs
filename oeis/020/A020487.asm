@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,158275 ; Denominators of antiharmonic means of divisors of n.
   sub $3,1
   seq $3,62383 ; a(0) = 1: for n>0, a(n) = 2^floor(log_2(n)+1) or a(n) = 2*a(floor(n/2)).

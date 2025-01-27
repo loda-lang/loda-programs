@@ -3,7 +3,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,158894 ; Sawtooth pattern of one, then two, then three, then four etc. consecutive odd numbers, starting each time at 3.
 lpb $0
   mod $0,3

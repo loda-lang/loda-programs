@@ -2,11 +2,15 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,5,7,3,5,7,11,13,17,19,2,3,5,7,11,13,17,19,5,7,11,13,17,19,23,7,11,13,17,19,23,11,13,17,19,23,7,13,19,3,5,11,17,23,29,7,13,19,31,11,17,23,29,13,19,31,37,17,23,29,41,19,31,37,43,2,5,11,17,23,29,7,13,19,31,11,17,23,29
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,156207 ; Sum of the products of the digits in n and their position m in n.
   mov $5,$3
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

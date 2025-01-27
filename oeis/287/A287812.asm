@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     div $6,-1
     mov $7,$4
+    add $7,1
     seq $7,153340 ; Number of zig-zag paths from top to bottom of a rectangle of width 8 with n rows.
     mov $9,10
     add $9,$5

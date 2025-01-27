@@ -11,6 +11,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
+  add $3,1
   seq $3,156745 ; a(n) = Sum_{k=1..n} floor((n+k)/k) = n + Sum_{k=1..n} sigma_0(k), where sigma_0(k) is A000005(k). Also a(n) = n + A006218(n).
   gcd $3,$5
   equ $3,1

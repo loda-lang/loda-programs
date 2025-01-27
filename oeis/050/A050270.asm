@@ -11,6 +11,7 @@ mov $2,$0
 add $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   sub $0,$3
   add $1,$4

@@ -20,8 +20,10 @@ lpb $3
   mov $8,$6
   equ $8,0
   add $8,$6
+  add $8,2
   seq $8,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $6,$8
+  add $6,2
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   sub $6,$7
   mov $2,$3

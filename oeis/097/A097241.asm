@@ -17,6 +17,7 @@ lpb $2
   mov $6,$7
   sub $6,1
   mov $3,$1
+  add $3,1
   seq $3,152117 ; a(n) = n*(n-th prime) + (n+1)*((n+1)-th prime).
   sub $3,1
   sub $3,$6

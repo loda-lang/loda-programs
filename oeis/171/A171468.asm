@@ -7,6 +7,7 @@ mov $1,$0
 lpb $1
   mov $0,$1
   sub $1,2
+  add $2,1
   seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $1,$2

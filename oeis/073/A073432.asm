@@ -11,6 +11,7 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $3,$2
+  add $2,1
   seq $2,153238 ; Numbers k such that 2*k + 3 is composite.
   add $2,$3
   mov $1,$2

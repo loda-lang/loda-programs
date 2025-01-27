@@ -9,8 +9,9 @@ pow $2,2
 lpb $2
   mov $6,$1
   add $6,$4
+  add $6,1
   seq $6,156037 ; Largest nonprime < n-th prime.
-  mov $3,25
+  mov $3,26
   seq $3,158611 ; 0, 1 and the primes.
   add $3,$6
   add $3,1

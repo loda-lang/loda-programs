@@ -6,8 +6,10 @@ mov $1,$0
 mov $2,$0
 equ $2,0
 add $2,$0
+add $2,2
 seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 add $3,$2
 mov $0,$3
+add $0,2
 seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 sub $0,$1

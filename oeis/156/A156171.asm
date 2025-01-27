@@ -9,7 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
-  seq $0,251684 ;  G.f.: exp( Sum_{n>=1} A047863(n)*x^n/n ), where A047863(n) = Sum_{k=0..n} binomial(n, k) * (2^k)^(n-k).
+  seq $0,251684 ; G.f.: exp( Sum_{n>=1} A047863(n)*x^n/n ), where A047863(n) = Sum_{k=0..n} binomial(n, k) * (2^k)^(n-k).
   mov $4,$3
   mul $4,$0
   add $2,$4

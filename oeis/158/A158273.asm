@@ -1,10 +1,13 @@
 ; A158273: Indices of single-digit numbers in A061049.
 ; Submitted by Jamie Morken(w2)
 ; 8,10,12,16,24,40,56,72,120,136
-; Formula: a(n) = b(n)+8, b(n) = 2*c(n-1), b(2) = 4, b(1) = 2, b(0) = 0, c(n) = c(n-1)+gcd(2*c(n-2),24), c(2) = 4, c(1) = 2, c(0) = 1
+; Formula: a(n) = b(n-1)+8, b(n) = 2*c(n-1), b(2) = 4, b(1) = 2, b(0) = 0, c(n) = c(n-1)+gcd(2*c(n-2),24), c(2) = 4, c(1) = 2, c(0) = 1
+
+#offset 1
 
 mov $1,1
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   gcd $1,24

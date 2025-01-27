@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 1,6,21,36,55,80,108,140
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $2,$0

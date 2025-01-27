@@ -11,6 +11,7 @@ lpb $0
   lpb $4
     mov $7,$4
     trn $7,$10
+    add $7,1
     seq $7,157657 ; a(1) = 1, a(n) = -mu(n) for n >= 2.
     mov $9,10
     add $9,$5

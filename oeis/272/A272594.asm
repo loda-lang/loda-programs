@@ -8,6 +8,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,155828 ; Number of integers k in {1,2,3,..,n} such that kn+1 is a square.
   div $3,2
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).

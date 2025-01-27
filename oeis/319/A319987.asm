@@ -20,6 +20,7 @@ lpb $0
   sub $3,1
   lpb $3
     sub $3,1
+    add $5,1
     seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   lpe
   lpb $0

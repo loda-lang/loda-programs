@@ -11,7 +11,7 @@ lpb $1
   mul $0,2
   sub $0,1
   mov $5,$0
-  dis $5,2
+  dgs $5,2
   mov $4,2
   pow $4,$5
   mov $0,$4

@@ -1,8 +1,11 @@
-; A152519: Numbers n such that 2*A064413(n) = 3n.
+; A152519: Numbers k such that 2*A064413(k) = 3*k.
 ; Submitted by Mads Nissen
 ; 4,6,12,16,34,38,58,62
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   add $1,1
   add $2,1

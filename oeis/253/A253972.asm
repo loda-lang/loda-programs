@@ -8,11 +8,14 @@ pow $2,3
 lpb $2
   sub $2,2
   mov $6,$1
+  add $6,1
   seq $6,154115 ; Numbers n such that n + 3 is prime.
+  add $6,3
   seq $6,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$6
   sub $3,3
   mov $5,$6
+  add $5,1
   seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $5,$3
   mul $6,3

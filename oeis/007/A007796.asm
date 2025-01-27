@@ -9,9 +9,11 @@ sub $0,1
 mul $0,2
 lpb $0
   sub $0,1
+  add $2,2
   seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $0,$2
+add $0,2
 seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 mov $1,$2
 lpb $1

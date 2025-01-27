@@ -16,12 +16,13 @@ lpb $2
   sub $6,1
   seq $6,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
   sub $6,$5
-  add $5,2
+  add $5,4
   seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $6,$5
   mov $5,$6
   sub $5,$3
   sub $5,1
+  add $3,2
   seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   add $5,$3
   mov $3,$5

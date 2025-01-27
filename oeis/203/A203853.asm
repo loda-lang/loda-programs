@@ -4,6 +4,7 @@
 
 mov $1,$0
 equ $1,1
+add $1,1
 seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 add $0,1
 seq $0,32170 ; "CHK" (necklace, identity, unlabeled) transform of 1, 2, 3, 4, ...

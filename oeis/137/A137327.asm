@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,155836 ; 2^(2^n) mod n.
   mov $0,1
 lpe

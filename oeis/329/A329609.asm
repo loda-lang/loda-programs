@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,156552 ; Unary-encoded compressed factorization of natural numbers.
   mod $3,3
   equ $3,0

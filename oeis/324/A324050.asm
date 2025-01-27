@@ -6,6 +6,7 @@ seq $0,328075 ; Numbers such that the absolute values of the differences between
 sub $0,9
 lpb $0
   sub $0,1
+  add $1,1
   seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
 mov $0,$1

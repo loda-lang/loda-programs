@@ -11,4 +11,5 @@ lpb $1
   sub $1,27
   add $0,1
 lpe
+add $0,1
 seq $0,158276 ; Numbers k such that sigma_1(k) does not divide sigma_2(k).

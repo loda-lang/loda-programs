@@ -15,6 +15,7 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
+  add $0,1
   seq $0,157019 ; a(n) = Sum_{d|n} binomial(n/d+d-2, d-1).
   mul $1,$0
   add $3,$1

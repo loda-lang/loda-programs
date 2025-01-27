@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,153351 ; Numbers n such that 7*n+2 is not prime.
   mov $5,$3
   add $5,2

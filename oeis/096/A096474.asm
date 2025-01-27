@@ -17,9 +17,11 @@ mov $4,$1
 mov $5,$1
 equ $5,0
 add $5,$1
+add $5,2
 seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 mov $6,$5
 mov $1,$5
+add $1,2
 seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 sub $1,3
 sub $1,$4

@@ -2,8 +2,10 @@
 ; Submitted by GolfSierra
 ; 0,2,5,9,14,21,28,36,45,55,66,77,90,104,119,135,152,170
 
+#offset 1
+
 mov $5,$0
-add $5,1
+sub $0,1
 mov $6,$0
 add $0,1
 mov $2,$5

@@ -7,7 +7,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $6,$1
-  add $6,2
+  add $6,3
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mov $5,$1
   add $5,2

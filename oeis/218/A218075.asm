@@ -10,8 +10,10 @@ mov $2,$1
 mov $3,$1
 equ $3,0
 add $3,$1
+add $3,2
 seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 mov $1,$3
+add $1,2
 seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 sub $1,$2
 mul $0,2

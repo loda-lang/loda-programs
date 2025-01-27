@@ -12,10 +12,12 @@ mov $3,$2
 mov $4,$2
 equ $4,0
 add $4,$2
+add $4,2
 seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 mov $5,$4
 sub $0,1
 mov $2,$4
+add $2,2
 seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 sub $2,$3
 mov $1,$2

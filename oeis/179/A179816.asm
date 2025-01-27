@@ -15,6 +15,7 @@ lpb $4
     div $0,2
     mul $0,2
     trn $0,1
+    add $0,3
     seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
     add $5,$0
   lpe

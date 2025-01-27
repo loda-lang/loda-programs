@@ -2,8 +2,10 @@
 ; Submitted by shiva
 ; 2,8,5,12,5,14,8,14
 
+#offset 1
+
 mov $3,-2
-add $0,139
+add $0,138
 lpb $0
   sub $0,3
   add $4,$3

@@ -5,6 +5,7 @@
 #offset 1
 
 lpb $0
+  add $0,1
   seq $0,156686 ; The ordered set of a + b - c as (a,b,c) runs through all Pythagorean triples with a<b<c.
   dif $0,8
   add $1,1

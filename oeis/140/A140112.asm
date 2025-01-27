@@ -15,6 +15,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $6,$3
+  add $6,1
   seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   mul $6,3
   add $6,$3

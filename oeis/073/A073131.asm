@@ -14,7 +14,6 @@ lpb $3
   trn $0,1
   add $0,2
   seq $0,40 ; The prime numbers.
-  sub $0,1
   seq $0,156037 ; Largest nonprime < n-th prime.
   sub $0,2
   mov $2,$3

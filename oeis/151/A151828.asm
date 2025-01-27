@@ -2,7 +2,8 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,8,32,139,618,2779,12528,56404,253152,1131849,5040412,22359981,98837102
 
-add $0,2
+#offset 2
+
 lpb $0
   sub $0,1
   mov $5,0

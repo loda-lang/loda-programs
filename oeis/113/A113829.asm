@@ -12,6 +12,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,154571 ; Numbers that are congruent to {0, 3, 4, 5, 7, 8} mod 12.
   mov $4,2
   pow $4,$0

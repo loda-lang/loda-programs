@@ -1,10 +1,29 @@
 ; A151362: Number of walks within N^2 (the first quadrant of Z^2) starting and ending at (0,0) and consisting of 2*n steps taken from {(-1, -1), (-1, 0), (-1, 1), (1, -1), (1, 0), (1, 1)}.
 ; Submitted by Christian Krause
 ; 1,2,18,255,4522,91896,2047452,48748986,1220457810,31779889284,854110511124,23559266827278,664125694509564,19070108145820400,556345776173277960,16455889048642607295,492658546882981692690,14907686709710614053300,455413194094843994648100,14031461361934764231295350,435648856293614340734668740,13620488526144059079948040080,428548141422971375754505691160,13561908593219088667475617254600,431468388038783870998983921117996,13794356904850952287870388984339256,443012979564948287601402480317760312
-; Formula: a(n) = A001006(2*n)*A000108(n)
 
 mov $1,$0
 mul $1,2
-seq $1,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $4,0
+mov $6,0
+mov $7,0
+mov $3,1
+mov $5,$1
+lpb $5
+  mul $3,$5
+  sub $5,1
+  sub $6,2
+  sub $7,$6
+  mul $3,$5
+  div $3,$7
+  add $4,$3
+  sub $5,1
+lpe
+mov $1,$4
+add $1,1
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
 mul $0,$1

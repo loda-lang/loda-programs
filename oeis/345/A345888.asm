@@ -8,6 +8,7 @@ lpb $2
   sub $2,2
   div $2,2
   mul $2,2
+  add $2,3
   seq $2,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   add $1,1
 lpe

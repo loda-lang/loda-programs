@@ -12,6 +12,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,153483 ; a(n) = prime(n)^4 - 32.
   equ $2,$3
   add $2,1

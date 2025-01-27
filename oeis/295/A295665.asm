@@ -16,7 +16,6 @@ lpb $0
   lpe
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
   seq $3,89026 ; a(n) = n if n is a prime, otherwise a(n) = 1.
   lpb $0

@@ -18,6 +18,7 @@ lpb $0
   sub $3,1
   lpb $0
     dif $0,$2
+    add $3,1
     seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   lpe
   mul $1,$3

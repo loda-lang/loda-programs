@@ -10,7 +10,6 @@ lpb $2
   mov $6,$1
   add $6,1
   seq $6,51537 ; Triangle read by rows: T(i,j) = lcm(i,j)/gcd(i,j) for 1 <= j <= i.
-  sub $6,1
   seq $6,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
   pow $6,6
   mov $3,$1

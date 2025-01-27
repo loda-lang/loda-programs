@@ -1,11 +1,13 @@
 ; A154784: Row sums of triangle in A154721.
 ; Submitted by Pvtuttle
 ; 0,4,6,16,10,24,28,32,54,60,44,96,52,56,120,96,102,144,76,120,210,176,138,288,200,156,324,168,174,420,186,320,396,204,350,504,370,380,546,400,328,756,344,352,900,368,376,672,392,600,918,624,530,972,770,784,1254,696,590,1440,366,620,1260,512,910,1320,670,680,1242,1120,994,1584,730,740,1950,760,1232,1716,790,1280
-; Formula: a(n) = 2*n*A154804(n+1)+2*A154804(n+1)
+; Formula: a(n) = 2*A154804(n)*(n-1)+2*A154804(n)
+
+#offset 1
 
 mov $1,$0
-add $1,1
-seq $1,154804 ; Number of ways to represent 2n as the sum of two distinct primes (counting 1 as a prime).
+seq $1,154804 ; Number of ways to represent 2*n as the sum of two distinct primes (counting 1 as a prime).
+sub $0,1
 mul $0,$1
 add $0,$1
 mul $0,2

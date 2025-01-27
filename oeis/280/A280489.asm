@@ -1,9 +1,10 @@
 ; A280489: a(n) = gcd(n,A241909(n)).
 ; Submitted by dougblair
 ; 1,2,1,1,1,3,1,1,3,1,1,1,1,1,3,1,1,3,1,5,3,1,1,1,1,1,1,1,1,15,1,1,3,1,1,1,1,1,3,1,1,3,1,1,5,1,1,1,1,5,3,1,1,3,1,7,3,1,1,5,1,1,1,1,1,3,1,1,3,5,1,1,1,1,15,1,1,3,1,1
-; Formula: a(n) = gcd(n+1,A075159(A006068(A156552(n))+1))
+; Formula: a(n) = gcd(n+1,A075159(A006068(A156552(n+1))+1))
 
 mov $1,$0
+add $1,1
 seq $1,156552 ; Unary-encoded compressed factorization of natural numbers.
 seq $1,6068 ; a(n) is Gray-coded into n.
 add $1,1

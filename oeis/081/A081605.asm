@@ -8,11 +8,11 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,153775 ; Sequence S such that 1 is in S and if x is in S, then 3x-1 and 3x are in S.
   add $0,2
-  add $1,1
+  add $1,2
   add $2,$3
   sub $2,$0
 lpe

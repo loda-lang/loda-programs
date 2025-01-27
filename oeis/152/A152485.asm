@@ -2,8 +2,11 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,6,6,7,7,12,12,12,12,12,12,13,14,14,14,14,14
 
+#offset 1
+
 mov $3,-1
 mov $5,3
+sub $0,1
 lpb $0
   sub $0,1
   sub $0,$6

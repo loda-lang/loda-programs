@@ -1,8 +1,11 @@
 ; A153842: First Sunday in n-th month of 365-day year starting on Wednesday
 ; Submitted by PDW
 ; 5,2,2,6,4,1,6,3,7,5,2,7
-; Formula: a(n) = -truncate((24*floor((4*(n%16))/3)-40)/9)-7*truncate((-truncate((24*floor((4*(n%16))/3)-40)/9)-10*truncate((-truncate((24*floor((4*(n%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+14)/7)-10*truncate((-truncate((24*floor((4*(n%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*(n%16))/3)-40)/9))+15
+; Formula: a(n) = -truncate((24*floor((4*((n-1)%16))/3)-40)/9)-7*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)-10*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+14)/7)-10*truncate((-truncate((24*floor((4*((n-1)%16))/3)-40)/9)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+2)/10)+truncate(41^truncate((24*floor((4*((n-1)%16))/3)-40)/9))+15
 
+#offset 1
+
+sub $0,1
 mod $0,16
 mul $0,4
 div $0,3

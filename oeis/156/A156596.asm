@@ -1,11 +1,19 @@
 ; A156596: Infinite Fibonacci word fractal sequence.
 ; Submitted by Simon Strandgaard
 ; 1,0,1,2,0,2,0,2,1,0,1,2,0,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,0,2,1,0,1,2,0,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,1,0,1,0,1,2,0,2,0,2,1,0,1,2
-; Formula: a(n) = truncate((n%2+1)/(-2*A035612(n+1)*truncate(binomial(A035612(n+1),2)/A035612(n+1))+2*binomial(A035612(n+1),2)+1))
 
+#offset 1
+
+sub $0,1
+mov $3,0
 mov $1,$0
+add $1,2
+lpb $1
+  seq $1,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
+  add $3,1
+lpe
+mov $1,$3
 add $1,1
-seq $1,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
 mov $2,$1
 bin $1,2
 mod $1,$2

@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 2,1,1,2,2,1,1,2,2,1,1,1,3,2,2,1,1,1
 
+#offset 2
+
 mov $1,2
+sub $0,2
 lpb $0
   add $1,1
   sub $0,$1

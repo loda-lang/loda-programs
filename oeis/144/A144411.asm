@@ -12,6 +12,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,153238 ; Numbers k such that 2*k + 3 is composite.
   add $0,1
   mov $2,$3

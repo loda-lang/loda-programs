@@ -8,6 +8,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
+  add $3,1
   seq $3,152958 ; Alladi's third-order function phi_3(n).
   gcd $3,$5
   equ $3,1

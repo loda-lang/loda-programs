@@ -8,19 +8,21 @@ pow $2,3
 lpb $2
   sub $2,2
   mov $5,$1
+  add $5,1
   seq $5,154115 ; Numbers n such that n + 3 is prime.
+  add $5,3
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$5
   sub $3,1
   seq $3,210625 ; Least semiprime dividing digit reversal of n, or 0 if no such factor.
   sub $3,3
-  cmp $3,1
+  equ $3,1
   mul $5,3
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5
