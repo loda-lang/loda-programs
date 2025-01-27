@@ -1,9 +1,9 @@
 ; A063014: Number of solutions to n^2 = b^2 + c^2 (with c >= b >= 0).
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,1,1,1,1,2,1,1,1,1,2,1,1,2,1,2,1,2,1,1,2,1,1,1,1,3,2,1,1,2,2,1,1,1,2,2,1,2,1,2,2,2,1,1,1,2,1,1,1,1,3,2,2,2,1,2,1,1,2,1,2,2,1,1,1,5,1,1,2,1,2,1,1,2,2,3,1,1,2,1
+; Formula: a(n) = truncate(A146564(A170818(n))/3)+1
 
-lpb $0
-  dif $0,3
-lpe
-pow $0,2
-seq $0,161 ; Number of partitions of n into 2 squares.
+seq $0,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+div $0,3
+add $0,1

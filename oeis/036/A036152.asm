@@ -6,7 +6,9 @@ mov $1,2
 pow $1,$0
 mov $3,0
 mov $0,40
-mov $4,1936
+mov $4,$0
+add $4,4
+pow $4,2
 lpb $4
   mov $2,$3
   seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.

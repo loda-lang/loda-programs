@@ -1,5 +1,5 @@
 ; A307163: Minimum number of intercalates in a diagonal Latin square of order n.
-; 0,0,0,12,0,9,0,0,0,0,0,0,0
+; 0,0,0,12,0,9,0,0,0,0,0,0,0,0,0
 
 mov $2,2
 lpb $0

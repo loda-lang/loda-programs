@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,174973 ; Numbers whose divisors increase by a factor of at most 2.
   trn $3,2
   mov $5,$3

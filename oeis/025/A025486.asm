@@ -1,16 +1,15 @@
 ; A025486: Least k with A025485(k) = n.
-; Submitted by Christian Krause
+; Submitted by iBezanilla
 ; 0,3,5,10,26,170,7226,13053770,42600227803226,453694852221687377444001770,51459754733114686962148583993443846186613037940783226
+; Formula: a(n) = b(n-1)+1, a(1) = 3, a(0) = 0, b(n) = truncate((b(n-1)+2)/2)^2, b(1) = 4, b(0) = 2
 
-mov $1,1
 mov $2,2
 lpb $0
   sub $0,1
+  mov $1,$2
+  add $1,1
   add $2,2
-  mov $1,$0
-  add $1,$2
   div $2,2
   pow $2,2
 lpe
 mov $0,$1
-sub $0,1

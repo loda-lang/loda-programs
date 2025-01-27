@@ -1,34 +1,32 @@
 ; A069812: a(n) = Sum_{k=1..n} (bigomega(k)-omega(k)).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Conan
 ; 0,0,0,1,1,1,1,3,4,4,4,5,5,5,5,8,8,9,9,10,10,10,10,12,13,13,15,16,16,16,16,20,20,20,20,22,22,22,22,24,24,24,24,25,26,26,26,29,30,31,31,32,32,34,34,36,36,36,36,37,37,37,38,43,43,43,43,44,44,44,44,47,47,47,48,49,49,49,49,52
 
 #offset 1
 
-sub $0,1
 mov $7,$0
 mov $1,$0
 lpb $1
   sub $1,1
-  mov $2,2
-  mov $6,0
   mov $0,$7
   sub $0,$1
-  add $0,1
+  mov $3,0
+  mov $4,2
   lpb $0
-    mov $3,$0
-    lpb $3
-      mov $4,$0
-      mod $4,$2
-      mul $4,3
-      add $2,1
-      sub $3,$4
+    mov $5,$0
+    div $5,4
+    lpb $5
+      mov $6,$0
+      mod $6,$4
+      add $4,1
+      sub $5,$6
     lpe
     lpb $0
-      dif $0,$2
-      add $6,1
+      dif $0,$4
+      add $3,1
     lpe
-    sub $6,1
+    sub $3,1
   lpe
-  add $5,$6
+  add $2,$3
 lpe
-mov $0,$5
+mov $0,$2

@@ -1,17 +1,10 @@
 ; A335285: a(n) is the greatest possible greatest part of any partition of n into prime parts.
-; Submitted by nenym
+; Submitted by Science United
 ; 2,3,2,5,3,7,5,7,7,11,7,13,11,13,13,17,13,19,17,19,19,23,19,23,23,23,23,29,23,31,29,31,31,31,31,37,31,37,37,41,37,43,41,43,43,47,43,47,47,47,47,53,47,53,53,53,53,59,53,61,59,61,61,61,61,67,61,67,67,71,67,73,71,73,73,73,73,79,73,79
+; Formula: a(n) = A007917(bitxor(1,n+1))
 
-mov $2,-1
-pow $2,$0
-mov $1,2
-mul $1,$2
-sub $0,$1
-trn $0,1
-add $0,2
-lpb $0
-  mov $3,$0
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,1
-  add $0,$3
-lpe
+add $0,1
+mov $1,1
+bxo $1,$0
+seq $1,7917 ; Version 1 of the "previous prime" function: largest prime <= n.
+mov $0,$1
