@@ -28,10 +28,10 @@ lpb $5
   add $3,1
   mul $3,$4
 lpe
-add $4,2
+add $4,3
 mov $10,4
 add $12,$5
-mov $15,2
+mov $15,3
 mov $0,$3
 add $0,1
 mul $0,$2

@@ -1,5 +1,5 @@
 ; A259826: Numbers n such that n is a multiple of 6 and both n-1 and n+1 are composite.
-; Submitted by PDW
+; Submitted by iBezanilla
 ; 120,144,186,204,216,246,288,300,324,342,414,426,474,516,528,534,552,582,624,636,666,696,714,780,792,804,816,834,846,870,894,900,924,960,1002,1026,1044,1056,1074,1080,1134,1140,1146,1158,1176,1206,1242,1254,1266,1272,1314,1332,1338,1344,1350,1356,1386,1392,1404,1416,1464,1476,1506,1518,1536,1590,1632,1644,1650,1674,1680,1686,1704,1716,1728,1764,1770,1794,1806,1818
 
 mov $1,23
@@ -8,8 +8,12 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,4
-  seq $3,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
+  add $3,3
+  seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  mov $5,$1
+  sub $5,$3
+  mov $3,$5
+  add $3,3
   trn $3,5
   min $3,1
   sub $0,$3
@@ -22,3 +26,5 @@ lpb $2
 lpe
 mov $0,$1
 add $0,1
+div $0,6
+mul $0,6

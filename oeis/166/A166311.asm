@@ -1,25 +1,32 @@
 ; A166311: Numbers whose sum of digits is 11.
-; Submitted by Fornax
+; Submitted by Science United
 ; 29,38,47,56,65,74,83,92,119,128,137,146,155,164,173,182,191,209,218,227,236,245,254,263,272,281,290,308,317,326,335,344,353,362,371,380,407,416,425,434,443,452,461,470,506,515,524,533,542,551,560,605,614,623,632,641,650,704,713,722,731,740,803,812,821,830,902,911,920,1019,1028,1037,1046,1055,1064,1073,1082,1091,1109,1118
 
-mov $1,10002
+#offset 1
+
 mov $2,$0
-add $2,4
-pow $2,2
+sub $0,1
+add $2,1
+mul $2,243
 lpb $2
+  mov $5,0
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  mov $5,$1
-  seq $5,55642 ; Number of digits in the decimal expansion of n.
-  div $3,$5
-  cmp $3,2
+  lpb $3
+    mov $6,$5
+    mov $5,$3
+    mod $5,10
+    add $5,$6
+    div $3,10
+  lpe
+  mov $3,$5
+  sub $3,3
+  equ $3,8
   sub $0,$3
-  add $1,9
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
+  add $1,$4
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
-sub $0,10000
