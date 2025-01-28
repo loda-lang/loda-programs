@@ -6,14 +6,15 @@ mov $1,4
 mov $2,$0
 pow $2,4
 lpb $2
-  add $1,4
   mov $3,$1
+  add $3,5
   seq $3,165316 ; a(n) = the number of digits in the binary representation of n that each either precede and/or follow a similarly valued digit.
-  cmp $3,2
+  equ $3,2
   sub $0,$3
+  add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -13,5 +13,5 @@ add $0,1
 bin $2,$0
 bin $0,2
 mul $0,$2
-cmp $0,0
+equ $0,0
 gcd $0,$1

@@ -14,7 +14,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,168021 ; Triangle T(n,k) read by rows in which row n lists the number of partitions of n into parts divisible by k.
   add $1,$0
 lpe

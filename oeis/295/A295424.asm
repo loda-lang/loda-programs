@@ -17,6 +17,7 @@ lpb $3
   mul $2,$1
   sub $2,1
   trn $2,1
+  add $2,1
   seq $2,164292 ; Binary sequence identifying the twin primes (characteristic function of twin primes: 1 if n is a twin prime else 0).
   add $4,$2
 lpe

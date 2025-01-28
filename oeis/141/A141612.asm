@@ -10,6 +10,7 @@ lpb $1
   mov $0,$2
   add $0,$1
   trn $0,1
+  add $0,1
   seq $0,165317 ; a(n) = the number of digits in the binary representation of n that each do not precede or follow a similarly valued digit.
   pow $2,$1
   add $3,$0

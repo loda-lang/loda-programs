@@ -9,6 +9,7 @@ lpb $3
   sub $3,1
   add $0,$3
   mov $2,$0
+  add $2,1
   seq $2,161182 ; Successive differences between positions of squares in list of nonprimes.
   sub $0,1
   bin $0,$3

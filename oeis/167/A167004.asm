@@ -13,5 +13,5 @@ lpe
 add $0,$1
 div $0,$2
 mul $2,$0
-cmp $1,$2
+equ $1,$2
 mul $0,$1

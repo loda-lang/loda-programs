@@ -10,6 +10,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,160900 ; a(n) = the smallest positive multiple of n that has exactly a prime number of (non-leading) 0's in its binary representation.
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2

@@ -2,8 +2,11 @@
 ; Submitted by [AF>Occitania]franky82
 ; 1,5,6,12,18,24,36,42,48,60,84
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $5,$1

@@ -13,5 +13,6 @@ lpb $0
   mul $0,$1
 lpe
 trn $0,1
+add $0,1
 seq $0,164090 ; a(n) = 2*a(n-2) for n > 2; a(1) = 2, a(2) = 3.
 seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.

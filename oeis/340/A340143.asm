@@ -20,6 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,160595 ; Numerator of resilience R(n) = phi(n)/(n-1), with a(1) = 1 by convention.
   mul $0,$4
   add $1,$0

@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,168141 ; a(n) = pi(n + 1) - pi(n - 2), where pi is the prime counting function.
   min $3,1
   sub $0,$3

@@ -1,8 +1,10 @@
 ; A161462: Final digit of the sum of all the integers from n to 2*n-1.
 ; 1,5,2,2,5,1,0,2,7,5,6,0,7,7,0,6,5,7,2,0,1,5,2,2,5,1,0,2,7,5,6,0,7,7,0,6,5,7,2,0,1,5,2,2,5,1,0,2,7,5,6,0,7,7,0,6,5,7,2,0,1,5,2,2,5,1,0,2,7,5,6,0,7,7,0,6,5,7,2,0
-; Formula: a(n) = 3*binomial(n-2,2)-10*truncate((3*binomial(n-2,2)+2)/10)+2
+; Formula: a(n) = 3*binomial(n-3,2)-10*truncate((3*binomial(n-3,2)+2)/10)+2
 
-sub $0,2
+#offset 1
+
+sub $0,3
 bin $0,2
 mul $0,3
 add $0,2

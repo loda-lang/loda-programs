@@ -6,6 +6,7 @@ mov $1,$0
 lpb $1
   mov $2,$1
   trn $2,1
+  add $2,1
   seq $2,166257 ; Odd numbers not of the form prime(k) + phi(prime(k)).
   add $2,1
   mul $1,0

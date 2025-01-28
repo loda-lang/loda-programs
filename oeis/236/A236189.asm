@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
+  add $0,2
   seq $0,166061 ; 19-rough numbers: positive integers that have no prime factors less than 19.
   mov $2,$3
   mul $2,$0

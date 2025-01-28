@@ -5,7 +5,7 @@
 mul $0,2
 add $0,1
 mov $1,$0
-dis $1,2
+dgs $1,2
 mod $1,$0
 mov $2,2
 pow $2,$1

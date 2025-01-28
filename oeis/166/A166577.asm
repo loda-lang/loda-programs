@@ -12,16 +12,15 @@ lpb $0
     add $2,1
     mov $4,$1
     gcd $4,$2
+    neq $4,1
     mul $1,4
     mov $2,4
-    cmp $4,1
-    cmp $4,0
     sub $3,$4
     sub $6,$3
-    cmp $3,$4
+    equ $3,$4
   lpe
   mov $5,$6
-  cmp $5,0
+  equ $5,0
   add $6,$5
   div $1,$6
 lpe

@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,168539 ; Terms of A123239 which are prime in Z(i), Z(rho) and Z(sqrt(2)).
   mov $5,$3
   mov $6,$3

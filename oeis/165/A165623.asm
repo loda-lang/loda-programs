@@ -1,8 +1,11 @@
 ; A165623: Integers of the form a(n)=2^n/n^2.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,1,1,4,256,4194304,4503599627370496,20769187434139310514121985316880384,1766847064778384329583297500742918515827483896875618958121606201292619776
-; Formula: a(n) = truncate(2^(2^n-2*n))
+; Formula: a(n) = truncate(2^(2^(n-1)-2*n+2))
 
+#offset 1
+
+sub $0,1
 mov $1,2
 pow $1,$0
 sub $1,$0

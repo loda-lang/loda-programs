@@ -13,7 +13,6 @@ lpb $2
   seq $3,263922 ; Highest exponent in prime factorization of n-th central binomial coefficient.
   add $3,1
   seq $3,6899 ; Numbers of the form 2^i or 3^j.
-  sub $3,1
   seq $3,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
   equ $3,1
   sub $0,$3

@@ -2,8 +2,10 @@
 ; Submitted by zombie67 [MM]
 ; 0,2,5,8,10,14,20,26,30,35,50,62,80,110,170,350
 
+#offset 1
+
 mov $2,3
-add $0,4
+add $0,3
 lpb $0
   mul $1,5
   mov $3,$2
@@ -12,7 +14,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,2

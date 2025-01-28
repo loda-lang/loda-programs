@@ -2,8 +2,10 @@
 ; Submitted by Skillz
 ; 6,15,20,30,45,60,70,120,150,195,270,420,870
 
+#offset 1
+
 mov $2,1
-add $0,14
+add $0,13
 lpb $0
   mul $1,9
   mov $3,$2
@@ -12,7 +14,7 @@ lpb $0
     mov $4,$1
     gcd $4,$2
     trn $4,$3
-    cmp $4,0
+    equ $4,0
     sub $3,$4
   lpe
   add $2,1

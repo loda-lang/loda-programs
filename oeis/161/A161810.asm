@@ -2,7 +2,8 @@
 ; Submitted by Roadranner
 ; 1,3,7,16,33,35,47,61
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $4,$0
 lpb $0

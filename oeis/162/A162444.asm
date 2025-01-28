@@ -1,8 +1,11 @@
 ; A162444: Denominators of the BG1[ -5,n] coefficients of the BG1 matrix
 ; Submitted by Stony666
 ; 1,1,3,5,35,9,231,143,6435,12155,3553,88179,96577,1300075,5014575,102051,100180065,116680311,2268783825,210388475,6892326441,67282234305,17534158031,39583801575,8061900920775,169906729083
-; Formula: a(n) = truncate(truncate((2*truncate(binomial(2*n,n)/gcd(512*n+256,binomial(2*n,n))))/gcd((6*n+5)^12,2*truncate(binomial(2*n,n)/gcd(512*n+256,binomial(2*n,n)))))/2)
+; Formula: a(n) = truncate(truncate((2*truncate(binomial(2*n-2,n-1)/gcd(512*n-256,binomial(2*n-2,n-1))))/gcd((6*n-1)^12,2*truncate(binomial(2*n-2,n-1)/gcd(512*n-256,binomial(2*n-2,n-1)))))/2)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $3,$0
 mul $3,2

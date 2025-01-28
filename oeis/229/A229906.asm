@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,166459 ; Numbers whose sum of digits is 19.
   sub $3,1
   mov $5,$3

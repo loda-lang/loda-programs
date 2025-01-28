@@ -11,9 +11,9 @@ add $3,1
 mov $7,$3
 mov $6,$3
 lpb $6
-  cmp $3,$4
+  equ $3,$4
   mov $5,$3
-  cmp $5,0
+  equ $5,0
   sub $6,$5
   add $4,256
   mul $4,2

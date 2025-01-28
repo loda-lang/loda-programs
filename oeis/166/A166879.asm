@@ -14,6 +14,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,165938 ; a(n) = A002203(n^2) for n>=1.
     div $7,2
     mul $7,$$9

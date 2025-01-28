@@ -12,6 +12,7 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,162959 ; The pairs (x,y) such that (x^2 + y^2)/(x*y + 1) is a perfect square, i.e., 4.
   add $3,$0
   add $4,$3

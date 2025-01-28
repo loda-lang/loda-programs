@@ -15,6 +15,7 @@ lpb $5
   mov $2,$0
   add $2,$5
   bin $2,$0
+  add $0,1
   seq $0,166135 ; Number of possible paths to each node that lies along the edge of a cut 4-nomial tree, that is rooted one unit from the cut.
   mul $2,$0
   add $4,$2

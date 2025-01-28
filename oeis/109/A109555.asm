@@ -13,6 +13,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,167379 ; Let p and q be twin primes, excluding the pair (3,5). Then p+q is always divisible by 6 and we set a(n) = (p+q)/6.
   sub $2,1
   add $0,29

@@ -11,5 +11,6 @@ mov $2,$0
 add $2,$3
 mov $1,2
 div $1,$2
+add $0,1
 seq $0,161344 ; Numbers k with A033676(k)=2, where A033676 is the largest divisor <= sqrt(k).
 add $0,$1

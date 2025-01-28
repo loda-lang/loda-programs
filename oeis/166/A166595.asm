@@ -2,6 +2,9 @@
 ; Submitted by taurec
 ; 16,28,32,64,64,62,64,98,96,128,108,116,116,176
 
+#offset 1
+
+sub $0,1
 mov $2,1
 mov $3,$0
 add $3,14
@@ -18,7 +21,7 @@ lpb $3
   add $2,1
   mov $5,$0
   max $5,0
-  cmp $5,$0
+  equ $5,$0
   mul $3,$5
   sub $3,1
 lpe

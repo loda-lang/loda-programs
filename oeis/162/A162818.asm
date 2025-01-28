@@ -2,7 +2,10 @@
 ; Submitted by Skillz
 ; 7,21,42,56,84,105,154,210,252,399,546,840,1722
 
+#offset 1
+
 mov $2,7
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3
@@ -10,7 +13,7 @@ lpb $0
     mov $1,252
     gcd $1,$2
     trn $1,$3
-    cmp $1,0
+    equ $1,0
     sub $3,$1
   lpe
   add $2,1

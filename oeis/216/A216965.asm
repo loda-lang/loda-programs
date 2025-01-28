@@ -12,7 +12,6 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   add $1,1
-  sub $3,1
   seq $3,164029 ; a(n) = nonprime(n) + (-1)^(nonprime(n)).
   max $3,1
   seq $3,296065 ; Partial sums of A296064.

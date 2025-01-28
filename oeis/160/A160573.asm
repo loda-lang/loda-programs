@@ -10,7 +10,7 @@ lpb $0
   add $2,$4
   sub $0,1
   sub $2,2
-  dis $2,2
+  dgs $2,2
   bin $2,$0
   bin $3,0
   mul $3,$2

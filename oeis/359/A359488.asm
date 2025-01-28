@@ -11,7 +11,7 @@ lpb $3
   sub $0,1
   mov $1,$0
   min $1,1
-  add $0,2
+  add $0,3
   seq $0,164977 ; Numbers m such that the set {1..m} has only one nontrivial decomposition into subsets with equal element sum.
   add $0,$1
   div $0,2

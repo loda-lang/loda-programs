@@ -5,6 +5,7 @@
 add $0,6
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,160545 ; Numbers coprime to 21.
   mov $0,0
 lpe

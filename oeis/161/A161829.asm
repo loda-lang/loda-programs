@@ -2,6 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 0,3,0,6,0,6,6,12,6
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,$0
 div $2,2

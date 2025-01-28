@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,168146 ; Numbers n such that phi(n) > pi(n).
   sub $3,1
   add $0,1

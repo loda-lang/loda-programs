@@ -12,6 +12,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,164514 ; 1 followed by numbers that are not squares.
   add $1,$0
 lpe

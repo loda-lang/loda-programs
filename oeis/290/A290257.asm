@@ -3,6 +3,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,167204 ; Triangle read by rows in which row n lists the first 2^(n-1) terms of A003602.
   mov $0,$2
   sub $0,2

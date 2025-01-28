@@ -17,6 +17,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,164657 ; Denominators of partial sums of Theta(5) = Sum_{j>=1} 1/(2*j-1)^5.
     bin $7,2
     mov $6,$7

@@ -13,7 +13,6 @@ lpb $3
   add $0,$3
   add $0,1
   seq $0,6899 ; Numbers of the form 2^i or 3^j.
-  sub $0,1
   seq $0,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
   mov $2,$3
   mul $2,$0

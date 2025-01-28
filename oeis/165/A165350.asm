@@ -19,8 +19,17 @@ lpb $2
   mov $5,$3
   mul $5,2
   div $3,2
+  mov $6,$3
+  add $3,4
+  mul $6,$3
+  add $6,$3
+  mov $3,$6
   add $3,1
-  seq $3,108151 ; a(n) = n^2 + 3*n + 1 if prime or 0 if composite.
+  add $6,1
+  seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $6,3
+  mul $3,$6
+  div $3,3
   equ $3,0
   sub $0,$3
   add $1,1

@@ -11,6 +11,7 @@ add $2,5
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,166632 ; Totally multiplicative sequence with a(p) = 2*(p-1) for prime p.
   mod $3,6
   equ $3,0

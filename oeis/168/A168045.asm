@@ -10,6 +10,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,167706 ; The single or isolated numbers. The union of single (or isolated or non-twin) primes and single (or isolated or average of twin prime pairs) nonprimes.
   add $1,1
   add $2,1

@@ -2,9 +2,10 @@
 ; Submitted by Leviathan
 ; 5,19,29,37,41,43,47,53,59,61,67,71,79,83,89,97
 
+#offset 1
+
 mov $1,$0
-add $1,4
-add $0,1
+add $1,3
 pow $0,4
 lpb $0
   div $0,9

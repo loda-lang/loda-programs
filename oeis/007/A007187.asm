@@ -11,6 +11,7 @@ mul $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,163405 ; a(n) = (n-th nonprime) + (number of bits in binary expansion of n-th nonprime).
   sub $3,1
   add $0,1

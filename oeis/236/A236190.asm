@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
+  add $0,2
   seq $0,166063 ; 23-rough numbers: positive integers that have no prime factors less than 23.
   sub $0,$2
   mov $2,$0

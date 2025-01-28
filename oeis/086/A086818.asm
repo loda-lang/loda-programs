@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,14311 ; Numbers with exactly 3 ones in binary expansion.
+  add $3,1
   seq $3,169964 ; Numbers whose decimal expansion contains only 0's and 5's.
   div $3,5
   sub $3,1

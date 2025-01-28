@@ -9,6 +9,7 @@ mov $2,7261
 lpb $2
   sub $2,26
   mov $3,$1
+  add $3,1
   seq $3,163652 ; Triangle read by rows where T(n,m)=2*m*n + m + n + 6.
   mov $5,$3
   mod $3,3

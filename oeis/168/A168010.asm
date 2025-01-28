@@ -11,6 +11,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,168011 ; a(n) = Sum of all numbers of divisors of all numbers < (n+1)^2.
   mul $0,2
   mov $2,$3

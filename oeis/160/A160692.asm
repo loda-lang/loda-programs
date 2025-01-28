@@ -9,7 +9,7 @@ lpb $0
   lpb $3
     mov $1,$0
     bin $1,$3
-    cmp $1,0
+    equ $1,0
     mul $0,2
     add $2,1
     sub $3,$1

@@ -2,7 +2,8 @@
 ; Submitted by William Michael Kanar
 ; 1,4,28,352,7888,319168,23833792,3359617024,911281182976
 
-add $0,1
+#offset 1
+
 mov $2,1
 mov $3,$0
 mov $4,1

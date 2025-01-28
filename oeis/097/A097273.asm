@@ -10,7 +10,6 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  sub $3,1
   seq $3,167307 ; Totally multiplicative sequence with a(p) = 6*(p+2) for prime p.
   mod $3,$1
   min $3,1

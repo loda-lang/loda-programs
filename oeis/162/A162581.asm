@@ -7,7 +7,7 @@ mov $1,1
 lpb $0
   mov $2,$0
   div $2,2
-  seq $2,217553 ;  G.f.: exp( Sum_{n>=1} 4^A001511(n) * x^n/n ), where 2^A001511(n) is the highest power of 2 that divides 2*n.
+  seq $2,217553 ; G.f.: exp( Sum_{n>=1} 4^A001511(n) * x^n/n ), where 2^A001511(n) is the highest power of 2 that divides 2*n.
   sub $0,1
   add $1,$2
 lpe

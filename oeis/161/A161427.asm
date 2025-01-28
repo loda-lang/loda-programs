@@ -2,6 +2,9 @@
 ; Submitted by fzs600
 ; 1,3,3,7,5,7,9,17,11,7
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,2
   add $2,1

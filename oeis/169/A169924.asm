@@ -2,7 +2,9 @@
 ; Submitted by Skillz
 ; 0,1,3,6,9,11,15,21,27,31,36,51,63,81,111,171,351
 
-add $0,8
+#offset 1
+
+add $0,7
 lpb $0
   mul $1,5
   mov $3,$2

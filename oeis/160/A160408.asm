@@ -13,8 +13,18 @@ lpb $0
   mul $4,$2
   mov $2,$4
   div $2,2
-  seq $2,105161 ; Difference between n and the second-smallest prime larger than n.
+  mov $5,$2
+  mov $6,$2
+  equ $6,0
+  add $6,$2
+  add $6,2
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  mov $7,$6
+  mov $2,$6
+  add $2,2
+  seq $2,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   sub $2,3
+  sub $2,$5
   mov $3,10057
   add $3,$2
   mov $2,$3

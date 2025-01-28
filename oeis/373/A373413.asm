@@ -10,6 +10,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,162902 ; An increasing sequence of alternatingly squarefree and nonsquarefree numbers.
   bin $0,2
   mov $2,$3

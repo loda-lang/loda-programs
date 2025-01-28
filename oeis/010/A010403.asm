@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,4
   seq $3,164492 ; Number of binary strings of length n with no substrings equal to 0010 0101 or 0110.
   add $3,$4
   gcd $3,2

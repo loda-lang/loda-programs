@@ -4,10 +4,9 @@
 
 #offset 2
 
-sub $0,2
 mov $2,$0
 seq $2,164314 ; Largest prime factor of n^2 - 2.
-sub $0,1
+sub $0,3
 mov $1,$2
 lpb $2
   mov $2,$0

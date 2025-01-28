@@ -9,7 +9,7 @@ mod $0,4
 mul $0,$4
 div $0,2
 mov $1,$0
-cmp $1,0
+equ $1,0
 mov $3,$2
 mul $3,4
 add $0,$1

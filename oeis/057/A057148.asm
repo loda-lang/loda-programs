@@ -8,6 +8,7 @@ sub $0,1
 mov $1,$0
 neq $1,0
 trn $0,1
+add $0,1
 seq $0,164302 ; a(n) = 2* (the n-th positive (odd) integer that is a palindrome when written in base 2).
 mul $0,$1
 div $0,2

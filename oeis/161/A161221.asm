@@ -7,7 +7,7 @@ lpb $0
   mov $4,$0
   seq $4,54611 ; a(n) = Sum_{d|n} phi(d)*4^(n/d).
   mov $3,$0
-  cmp $3,0
+  equ $3,0
   add $0,$3
   div $4,$0
   mul $4,2

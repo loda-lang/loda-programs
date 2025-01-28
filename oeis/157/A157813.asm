@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,2
-sub $0,1
 seq $0,166527 ; Complement of A076537.
 sub $0,1
 lpb $0

@@ -15,6 +15,7 @@ lpb $0
     add $6,$7
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,168111 ; Sum of the partition numbers of the proper divisors of n, with a(1) = 0.
     equ $7,1
     mov $9,10

@@ -11,6 +11,7 @@ add $2,1
 lpb $2
   sub $2,1
   mov $0,$3
+  add $0,1
   seq $0,164292 ; Binary sequence identifying the twin primes (characteristic function of twin primes: 1 if n is a twin prime else 0).
   add $1,$0
   add $3,1

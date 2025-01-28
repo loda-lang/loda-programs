@@ -8,7 +8,7 @@ lpb $0
   sub $3,$4
   add $3,1
   mov $5,$1
-  cmp $1,$4
+  equ $1,$4
   add $1,$3
   add $2,$4
   mov $3,$4

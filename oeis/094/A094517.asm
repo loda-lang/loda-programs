@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,166563 ; Numbers n such that 12*n+5 is not prime.
   mul $3,2
   sub $3,2

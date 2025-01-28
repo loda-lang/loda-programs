@@ -20,7 +20,7 @@ lpb $2
     mov $1,$0
     add $1,1
     mov $8,$0
-    cmp $8,0
+    equ $8,0
     add $0,$8
     div $0,$0
     mul $0,2

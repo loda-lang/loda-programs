@@ -16,8 +16,7 @@ lpb $0
   sub $0,4
   mov $4,$3
   dif $4,$5
-  cmp $4,$3
-  cmp $4,0
+  neq $4,$3
   mul $2,-1
   add $2,$4
 lpe

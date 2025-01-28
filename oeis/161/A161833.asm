@@ -2,7 +2,10 @@
 ; Submitted by JayPi
 ; 1,1,2,1,2,2,4,2,2,2,4,3,4,5,9,5,2
 
+#offset 1
+
 mov $2,3
+sub $0,1
 lpb $0
   lpb $0
     dif $0,2

@@ -10,6 +10,7 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
+  add $0,1
   seq $0,160093 ; Number of digits in n, excluding any trailing zeros.
   mov $3,$0
   sub $3,1

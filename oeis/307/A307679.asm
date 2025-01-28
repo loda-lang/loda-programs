@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,160399 ; a(n) = Sum_{k=1..n} binomial(n,k) * d(k), where d(k) = the number of positive divisors of k.
     mov $9,10
     add $9,$5

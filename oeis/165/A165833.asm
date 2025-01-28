@@ -1,9 +1,10 @@
 ; A165833: Totally multiplicative sequence with a(p) = 12.
 ; Submitted by Jason Jung
 ; 1,12,12,144,12,144,12,1728,144,144,12,1728,12,144,144,20736,12,1728,12,1728,144,144,12,20736,144,144,1728,1728,12,1728,12,248832,144,144,144,20736,12,144,144,20736,12,1728,12,1728,1728,144,12,248832,144,1728,144,1728,12,20736,144,20736,144,144,12,20736,12,144,1728,2985984,144,1728,12,1728,144,1728,12,248832,12,144,1728,1728,144,1728,12,248832
-; Formula: a(n) = truncate(12^A001222(n+1))
+; Formula: a(n) = truncate(12^A001222(n))
 
-add $0,1
+#offset 1
+
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
 mov $1,12
 pow $1,$0

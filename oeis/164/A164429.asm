@@ -17,6 +17,6 @@ lpe
 mov $1,$6
 sub $1,1
 mov $2,$1
-cmp $2,0
+equ $2,0
 add $1,$2
 add $0,$1

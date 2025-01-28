@@ -15,6 +15,7 @@ lpb $1
   seq $0,85195 ; Partial sums of A085194.
   seq $0,7090 ; Numbers in base 4.
   mod $0,10
+  add $0,1
   seq $0,166104 ; Natural numbers whose prime factors are all congruent to 3 or 5 mod 6 (i.e., are in the sequence A045410).
   mul $0,4
   add $0,3

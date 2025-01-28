@@ -2,6 +2,9 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,7,4,2,3,5,0,6,9,8
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $1,1
 mov $2,$0

@@ -2,6 +2,9 @@
 ; Submitted by vonboedefeldt
 ; 1,2,2,1,2,3,2,2,4,6,5,3,5,5,2,2,4
 
+#offset 1
+
+sub $0,1
 mod $0,17
 add $0,2
 mov $2,$0

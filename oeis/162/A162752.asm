@@ -12,6 +12,7 @@ lpb $3
   max $3,1
   mov $4,$1
   mov $0,$2
+  add $0,1
   seq $0,162897 ; a(1)=a(2)=2. a(n) = the smallest integer >= 2 such that a(n-1)^a(n) > a(n-2)^a(n-1).
   sub $0,1
   seq $0,40 ; The prime numbers.

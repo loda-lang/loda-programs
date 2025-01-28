@@ -15,6 +15,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,161841 ; Number of factors, with repetition, in all distinct pairs (a <= b) such that a*b = n.
     mov $9,10
     add $9,$5

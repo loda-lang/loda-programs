@@ -2,6 +2,9 @@
 ; Submitted by William Michael Kanar
 ; 2,2,2,4,8,128,8192,134217728,9007199254740992
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,1
 mov $3,$0
@@ -11,7 +14,7 @@ lpb $3
   mov $4,$2
   pow $4,2
   mov $5,$1
-  cmp $5,1
+  equ $5,1
   mov $6,$1
   mul $6,$2
   mul $6,2

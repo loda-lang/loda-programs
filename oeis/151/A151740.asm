@@ -11,6 +11,7 @@ add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,166037 ; Numbers that are the sum of 2 successive nonprimes A141468.
   sub $4,1
   mov $6,$4

@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,166265 ; Numbers of the form 1+x^2+y^2, x, y integers >= 1.
   add $3,$4
   gcd $3,2

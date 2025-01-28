@@ -20,7 +20,6 @@ lpb $2
   mul $6,$5
   add $6,1
   seq $6,6899 ; Numbers of the form 2^i or 3^j.
-  sub $6,1
   seq $6,169611 ; Number of prime divisors of n that are not greater than 3, counted with multiplicity.
   mul $6,2
   mov $3,$6
