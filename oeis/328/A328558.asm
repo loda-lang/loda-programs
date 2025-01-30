@@ -6,8 +6,16 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
+  mov $7,$1
+  add $7,1
+  seq $7,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
-  seq $3,245656 ; Characteristic function of arithmetic numbers, cf. A003601.
+  add $3,1
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $6,$7
+  gcd $6,$3
+  div $6,$3
+  mov $3,$6
   gcd $3,2
   sub $0,$3
   add $0,1
@@ -15,7 +23,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $5,2
   mul $2,$4
   sub $2,1

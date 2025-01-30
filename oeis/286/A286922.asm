@@ -1,30 +1,11 @@
 ; A286922: {0->01}-transform of the Sturmian word A080764.
-; Submitted by Olde16
+; Submitted by yoyo_rkn
 ; 1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1
+; Formula: a(n) = -2*truncate(A077373(A286991(n-1))/2)+A077373(A286991(n-1))
 
-mov $1,1
-mov $2,1
-add $0,2
-lpb $0
-  sub $0,2
-  add $0,$1
-  mov $1,$2
-  seq $1,188295 ; [nr]-[nr-r], where r=1/sqrt(2), [ ]=floor.
-  add $2,1
-lpe
-lpb $2
-  mov $1,$0
-  add $1,1
-  mov $2,$1
-  add $1,2
-  seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $1,1
-  sub $1,$2
-  add $0,2
-  seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $0,$1
-lpe
-mov $1,$0
-seq $1,353749 ; a(n) = phi(n) * A064989(n), where phi is Euler totient function, and A064989 shifts the prime factorization one step towards lower primes.
-equ $1,1
-mov $0,$1
+#offset 1
+
+sub $0,1
+seq $0,286991 ; Positions of 0 in A286990; complement of A286992.
+seq $0,77373 ; Fibonacci numbers whose external digits as well as internal digits form a Fibonacci number.
+mod $0,2

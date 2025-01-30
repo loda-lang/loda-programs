@@ -7,6 +7,7 @@ sub $0,1
 mov $1,$0
 lpb $1
   mov $2,$1
+  add $2,1
   seq $2,309891 ; a(n) is the total number of trailing zeros in the representations of n over all bases b >= 2.
   add $0,$2
   sub $1,1

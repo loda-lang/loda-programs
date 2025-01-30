@@ -7,6 +7,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,284935 ; Fixed point of the morphism 0 -> 01, 1 -> 1100.
   gcd $3,4
   equ $3,4

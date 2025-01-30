@@ -1,18 +1,18 @@
 ; A037526: Base 9 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,0.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 2,19,171,1541,13870,124830,1123472,10111249,91001241,819011171,7371100540,66339904860,597059143742,5373532293679,48361790643111,435256115788001,3917305042092010,35255745378828090,317301708409452812,2855715375685075309,25701438381165677781,231312945430491100031
-; Formula: a(n) = b(n-1)+c(n-1), b(n) = 9*b(n-1)+9*c(n-1), b(1) = 18, b(0) = 0, c(n) = -3*truncate((c(n-1)+20)/3)+c(n-1)+20, c(1) = 1, c(0) = 2
+; Formula: a(n) = floor((6*floor((3^(2*n+2))/26)+floor((3*floor((3^(2*n+2))/26))/28))/9)
 
 #offset 1
 
-mov $2,2
-sub $0,1
-lpb $0
-  sub $0,1
-  add $1,$2
-  mul $1,9
-  add $2,20
-  mod $2,3
-lpe
-add $1,$2
+mul $0,2
+add $0,2
+mov $1,3
+pow $1,$0
+div $1,26
+mul $1,3
 mov $0,$1
+div $1,28
+add $1,$0
+add $0,$1
+div $0,9

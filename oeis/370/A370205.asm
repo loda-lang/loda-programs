@@ -9,6 +9,7 @@ pow $2,2
 bin $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,352696 ; a(n) = k if the binary representation of k has a 1 (0) exactly where a 1 in the n-th row of A237048 occurs at an odd (even) position, reading from left to right.
   mul $3,2
   equ $3,6

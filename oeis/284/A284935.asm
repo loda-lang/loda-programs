@@ -1,11 +1,12 @@
 ; A284935: Fixed point of the morphism 0 -> 01, 1 -> 1100.
 ; Submitted by [AF] Kalianthys
 ; 0,1,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1,1,1,0,0,0,1,1,1,0,0,1,1,0,0,1,1,0,0,0,1,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1
-; Formula: a(n) = truncate(d(n+1)/2), b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -11, b(1) = -5, b(0) = -1, c(n) = 2*gcd(-2*truncate(truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2)/2)+truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2),4)*c(n-1), c(2) = 144, c(1) = 18, c(0) = 9, d(n) = truncate(gcd(-2*truncate(truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2)/2)+truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2),4)/2), d(2) = 2, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate(d(n)/2), b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -11, b(1) = -5, b(0) = -1, c(n) = 2*gcd(-2*truncate(truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2)/2)+truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2),4)*c(n-1), c(2) = 144, c(1) = 18, c(0) = 9, d(n) = truncate(gcd(-2*truncate(truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2)/2)+truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2)-1)/2),4)/2), d(2) = 2, d(1) = 0, d(0) = 0
+
+#offset 1
 
 mov $1,-1
 mov $2,9
-add $0,1
 lpb $0
   sub $0,1
   sub $1,$2

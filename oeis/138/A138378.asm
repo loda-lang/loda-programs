@@ -1,12 +1,31 @@
 ; A138378: Number of embedded coalitions in an n-person game.
-; Submitted by matszpk
+; Submitted by paleheart
 ; 1,3,10,37,151,674,3263,17007,94828,562595,3535027,23430840,163254885,1192059223,9097183602,72384727657,599211936355,5150665398898,45891416030315,423145657921379,4031845922290572,39645290116637023,401806863439720943,4192631462935194064,44992656191388756921,496085801412441233115,5614822356663874663066,65179262534260340538717,775409212572949057258975,9446609931714567152645506,117771311103682337333829991,1501531222796098892945802503,19565443495794352855623928652,260405163630919906100951769771
-; Formula: a(n) = A123346(A061579(binomial(n+2,2)-2))
 
 #offset 1
 
-add $0,2
-bin $0,2
-sub $0,2
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
+mov $6,$0
+mov $4,2
+lpb $4
+  sub $4,1
+  mov $5,0
+  mov $2,$6
+  mov $3,2
+  lpb $3
+    sub $3,1
+    mov $0,$6
+    add $0,$3
+    sub $0,1
+    mov $1,1
+    add $1,$0
+    seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+    mov $7,$3
+    mul $7,$1
+    mov $0,$1
+    add $5,$7
+  lpe
+  min $2,1
+  mul $2,$0
+  mov $0,$5
+  sub $0,$2
+lpe

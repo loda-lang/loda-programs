@@ -10,6 +10,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,352696 ; a(n) = k if the binary representation of k has a 1 (0) exactly where a 1 in the n-th row of A237048 occurs at an odd (even) position, reading from left to right.
   add $3,1
   div $3,2

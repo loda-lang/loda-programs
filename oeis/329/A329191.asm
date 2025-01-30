@@ -2,13 +2,27 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,59,67,71
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
   mul $3,3
-  seq $3,189663 ; Partial sums of A189661.
+  mov $7,$3
+  add $7,$3
+  mov $6,$7
+  mul $7,2
+  add $7,$3
+  mul $7,$3
+  nrt $7,2
+  add $7,$3
+  mov $3,$7
+  div $3,2
+  sub $6,$3
+  mov $3,$6
   sub $3,1
   trn $3,2
   mov $5,$3
