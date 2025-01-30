@@ -5,6 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,173557 ; a(n) = Product_{primes p dividing n} (p-1).
   sub $0,1
   mul $1,$2

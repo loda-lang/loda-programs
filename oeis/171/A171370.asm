@@ -8,7 +8,7 @@ add $0,1
 lpb $0
   sub $0,1
   mov $5,0
-  cmp $6,2
+  equ $6,2
   mov $4,$2
   lpb $4
     trn $4,1

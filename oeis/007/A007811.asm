@@ -11,6 +11,7 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,173037 ; Numbers k such that k-4, k-2, k+2 and k+4 are prime.
   mov $2,$3
   mul $2,$4

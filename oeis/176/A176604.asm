@@ -13,7 +13,7 @@ lpb $4
   add $1,$4
   sub $1,1
   add $0,1
-  seq $0,25246 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-3)*a(3) for n >= 4.
+  seq $0,25246 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ... + a(n-3)*a(3) for n >= 4, with initial terms 1, 0, 1, 1.
   bin $1,$4
   mul $1,$0
   add $3,$1

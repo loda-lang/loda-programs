@@ -9,6 +9,7 @@ sub $0,1
 add $2,1
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,175083 ; Number of numbers whose sum of perfect divisors is equal to n.
   sub $0,$3
   add $1,1

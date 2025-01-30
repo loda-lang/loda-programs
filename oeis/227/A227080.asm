@@ -8,13 +8,14 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,173526 ; a(n) = 1 + A053827(n-1), where A053827 is the sum-of-digits function in base 6.
-  cmp $3,7
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,2
 lpe

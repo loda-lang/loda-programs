@@ -8,6 +8,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   max $3,1
+  add $3,1
   seq $3,173919 ; Numbers that are prime or one less than a prime.
   mul $3,3
   sub $3,1

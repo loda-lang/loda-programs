@@ -9,8 +9,9 @@ add $2,11
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,176360 ; a(n) = quadrant of unit circle corresponding to n radians.
-  cmp $3,3
+  equ $3,3
   sub $0,$3
   add $1,1
   sub $2,$0

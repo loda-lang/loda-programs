@@ -12,6 +12,7 @@ add $2,11
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,176360 ; a(n) = quadrant of unit circle corresponding to n radians.
   equ $3,4
   sub $0,$3

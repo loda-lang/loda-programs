@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   trn $3,1
+  add $3,1
   seq $3,171688 ; Twin primes > 3.
   add $3,1
   div $3,2

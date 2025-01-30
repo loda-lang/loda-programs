@@ -1,9 +1,10 @@
 ; A177329: Number of factors in the representation of n! as a product of distinct terms of A050376.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,3,4,3,4,6,6,4,5,7,8,9,10,11,12,8,9,9,11,12,13,13,14,15,16,14,15,16,17,19,21,17,16,15,16,17,18,19,20,22,23,21,21,21,22,23,22,23,25,22,23,22,24,26,28,28,29,27,28,29,30,32,34,30,31,31,28,27,28,29,30,31,33,31,31,30,31,33,33
-; Formula: a(n) = A064547(A000142(n+2))
+; Formula: a(n) = A064547(A000142(n))
 
-add $0,2
+#offset 2
+
 seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 mov $1,-1
 add $1,$0

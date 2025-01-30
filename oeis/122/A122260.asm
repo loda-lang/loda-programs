@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,173557 ; a(n) = Product_{primes p dividing n} (p-1).
   lpb $3
     dif $3,2

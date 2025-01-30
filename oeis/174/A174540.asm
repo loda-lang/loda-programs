@@ -2,7 +2,8 @@
 ; Submitted by ThrasherX-17
 ; 1,2,4,8,13,43,52,144,250
 
-add $0,2
+#offset 2
+
 lpb $0
   sub $0,1
   dif $4,2

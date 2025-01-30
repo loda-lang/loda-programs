@@ -1,9 +1,10 @@
 ; A179453: Decimal expansion of the inradius of an icosidodecahedron with edge length 1.
 ; Submitted by Science United
 ; 1,4,6,3,5,2,5,4,9,1,5,6,2,4,2,1,1,3,6,1,5,3,4,4,0,1,2,5,7,7,4,2,2,8,5,8,8,2,9,0,2,3,1,8,8,4,8,5,4,3,2,2,1,4,6,6,0,1,5,8,6,4,6,7,0,2,8,9,4,5,3,4,7,1,1,4,1,7,6,8
-; Formula: a(n) = -10*truncate(truncate(truncate((2*b(3*n+3)-d(3*n+3)+c(3*n+3))/(2*truncate((2*b(3*n+3)+c(3*n+3))/(10^(n+1)))))/4)/10)+truncate(truncate((2*b(3*n+3)-d(3*n+3)+c(3*n+3))/(2*truncate((2*b(3*n+3)+c(3*n+3))/(10^(n+1)))))/4), b(n) = 2*b(n-1)+2*max(e(n-1),c(n-1)), b(3) = 80, b(2) = 20, b(1) = 0, b(0) = 0, c(n) = 4*c(n-1)+2*max(e(n-1),c(n-1))-4*c(n-2), c(4) = 640, c(3) = 120, c(2) = 20, c(1) = 0, c(0) = 0, d(n) = -b(n-1)-max(e(n-1),c(n-1))+d(n-1), d(3) = -50, d(2) = -10, d(1) = 0, d(0) = 0, e(n) = max(e(n-1),c(n-1))+10, e(3) = 30, e(2) = 20, e(1) = 10, e(0) = 0
+; Formula: a(n) = -10*truncate(truncate(truncate((2*b(3*n)-d(3*n)+c(3*n))/(2*truncate((2*b(3*n)+c(3*n))/(10^n))))/4)/10)+truncate(truncate((2*b(3*n)-d(3*n)+c(3*n))/(2*truncate((2*b(3*n)+c(3*n))/(10^n))))/4), b(n) = 2*b(n-1)+2*max(e(n-1),c(n-1)), b(3) = 80, b(2) = 20, b(1) = 0, b(0) = 0, c(n) = 4*c(n-1)+2*max(e(n-1),c(n-1))-4*c(n-2), c(4) = 640, c(3) = 120, c(2) = 20, c(1) = 0, c(0) = 0, d(n) = -b(n-1)-max(e(n-1),c(n-1))+d(n-1), d(3) = -50, d(2) = -10, d(1) = 0, d(0) = 0, e(n) = max(e(n-1),c(n-1))+10, e(3) = 30, e(2) = 20, e(1) = 10, e(0) = 0
 
-add $0,1
+#offset 1
+
 mov $3,$0
 mul $3,3
 lpb $3

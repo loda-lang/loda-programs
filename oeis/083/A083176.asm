@@ -7,6 +7,7 @@ sub $0,1
 mov $1,$0
 mul $1,2
 max $1,1
+add $1,1
 seq $1,173919 ; Numbers that are prime or one less than a prime.
 mov $2,$1
 mov $3,$0

@@ -1,7 +1,10 @@
 ; A173499: Number of sequences of length n with terms from {0,1,...,n-1} such that the sum of terms is 0 modulo n and the i-th term is not i.
 ; 0,0,2,20,204,2604,39990,720600,14913080,348678440,9090909090,261535698060,8230246567620,281241170407092,10371206370520814,410525522232055664,17361641481138401520,781282469559318055056
-; Formula: a(n) = floor((n^(n+1))/(n+1))
+; Formula: a(n) = floor(((n-1)^n)/n)
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 pow $0,$1

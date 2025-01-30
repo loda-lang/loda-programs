@@ -1,12 +1,24 @@
 ; A175816: a(n) = Sum_{k=1..n} (-1)^A001622(k).
 ; Submitted by Jerzy_Przytocki
 ; -1,0,-1,0,1,0,-1,-2,-1,0,-1,0,-1,0,-1,0,1,2,3,4,5,6,5,6,7,8,7,8,7,8,7,8,7,8,7,6,5,4,5,6,5,6,5,4,3,2,3,4,3,2,3,4,5,6,7,6,5,4,5,6,7,8,9,10,9,10,9,10,11,12,13,14,15,16,15,16,15,16,17,18
-; Formula: a(n) = b(n)-1, b(n) = b(n-1)+truncate((-1)^A104457(n+1)), b(0) = 0
+; Formula: a(n) = b(n-1)-1, b(n) = b(n-1)+truncate((-1)^(10^n-10*truncate((10^n+truncate((10^n+sqrtint(5*(10^n)^2))/2))/10)+truncate((10^n+sqrtint(5*(10^n)^2))/2))), b(0) = 0
 
+#offset 1
+
+sub $0,1
 lpb $0
+  mov $4,10
+  pow $4,$0
   mov $2,$0
-  add $2,1
-  seq $2,104457 ; Decimal expansion of 1 + phi = phi^2 = (3 + sqrt(5))/2.
+  mov $2,$4
+  mul $4,4
+  add $4,$2
+  mul $4,$2
+  nrt $4,2
+  add $4,$2
+  div $4,2
+  add $2,$4
+  mod $2,10
   mov $3,-1
   pow $3,$2
   sub $0,1

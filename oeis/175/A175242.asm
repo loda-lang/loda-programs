@@ -2,10 +2,11 @@
 ; Submitted by Kotenok2000
 ; 1,1,2,1,2,2,2,1,3,2,1,2,1,2,4,1,2,3,1,2,4,1,1,2,2,1,4,2,1,4,2,1,3,2,3,3,1,1,2,2,1,4,1,1,6,1,1,2,2,2,4,1,1,4,2,2,2,1,1,4,1,2,6,1,3,3,1,2,2,3,1,3,2,1,4,1,2,2,1,2
 
+#offset 1
+
 mov $2,$0
-add $2,1
 mov $4,$0
-add $4,1
+sub $0,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -16,7 +17,7 @@ lpb $4
   mul $0,$1
   mov $5,$0
   seq $5,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
-  cmp $0,$5
+  equ $0,$5
   mul $1,$0
   add $3,$1
 lpe

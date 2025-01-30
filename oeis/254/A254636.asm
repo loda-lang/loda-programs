@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,174273 ; Inverse Moebius transform of A035263.
   dif $3,2
   equ $3,1

@@ -9,6 +9,7 @@ lpb $4
   mov $1,$5
   add $1,$4
   mov $7,$1
+  add $7,1
   seq $7,178475 ; Permutations of 12345: Numbers having each of the decimal digits 1,...,5 exactly once, and no other digit.
   seq $1,264668 ; a(n) = A264600(n) - A061486(n).
   sub $1,1

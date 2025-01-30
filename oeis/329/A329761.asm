@@ -8,6 +8,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,174813 ; a(n) = number whose product of digits equals a power of 3.
   sub $3,1
   mov $5,$3

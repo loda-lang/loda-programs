@@ -1,8 +1,11 @@
 ; A178356: Fibonacci numbers whose successive digits decrease by 1.
 ; Submitted by rboden
 ; 0,1,2,3,5,8,21,987
-; Formula: a(n) = A132636(b(n-1)+2), a(1) = 1, a(0) = 0, b(n) = truncate((b(n-1)+A132636(b(n-1)+2)+1)/2), b(1) = 1, b(0) = 0
+; Formula: a(n) = c(n-1), b(n) = truncate((b(n-1)+A132636(b(n-1)+2)+1)/2), b(1) = 1, b(0) = 0, c(n) = A132636(b(n-1)+2), c(1) = 1, c(0) = 0
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   mov $2,$1

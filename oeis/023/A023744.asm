@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,1
-sub $0,1
 seq $0,178478 ; Permutations of 12345678: Numbers having each of the decimal digits 1..8 exactly once, and no other digit.
 lpb $0
   mov $3,$0

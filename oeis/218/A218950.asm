@@ -9,6 +9,7 @@ lpb $0
   mov $2,$1
   mov $1,$3
   trn $1,$0
+  add $1,1
   seq $1,179194 ; Bases n in which 1/(n-2) is non-terminating and has period n-3.
   mul $2,$1
   add $3,1

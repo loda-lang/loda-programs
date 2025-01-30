@@ -2,8 +2,11 @@
 ; Submitted by Science United
 ; 0,1,3,4,9,19,24,49,99
 
+#offset 1
+
 mov $1,1
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   dif $2,4

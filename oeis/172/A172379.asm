@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1357,1358,1368,1468,2468,2469,2479,2579,3579
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,2
   mul $1,2

@@ -2,7 +2,10 @@
 ; Submitted by Josemi
 ; 1,2,3,4,81,82,83,84
 
+#offset 1
+
 mov $3,1
+sub $0,1
 lpb $0
   mul $3,8
   mov $2,$0

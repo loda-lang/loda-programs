@@ -7,6 +7,7 @@ lpb $0
   add $3,1
   sub $0,1
   div $2,$3
+  add $2,1
   seq $2,175318 ; a(n) = Sum_{k<=n} A007955(k), where A007955(m) = product of divisors of m.
   add $1,$2
 lpe

@@ -7,6 +7,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,173473 ; n-th prime^2-2*n is prime.
   sub $3,1
   add $0,1

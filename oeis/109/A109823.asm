@@ -13,6 +13,7 @@ add $2,4
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,174956 ; 0 unless n is the k-th semiprime when a(n) = k.
   sub $0,$3
   trn $4,1

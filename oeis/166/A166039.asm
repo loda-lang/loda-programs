@@ -12,6 +12,7 @@ lpb $3
   mov $0,$2
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,176100 ; Even numbers that are not semiprimes, or, twice the nonprimes.
   add $1,$0
 lpe

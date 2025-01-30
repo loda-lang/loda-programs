@@ -2,8 +2,9 @@
 ; Submitted by Dylan Delgado
 ; 0,2,3,5,6,12,14,17
 
+#offset 1
+
 mov $1,1
-add $0,1
 lpb $0
   mul $1,$0
   sub $0,1

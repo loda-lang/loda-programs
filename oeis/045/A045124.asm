@@ -12,6 +12,7 @@ pow $2,3
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,174026 ; Convolved with its aerated variant = (1, 2, 3, ...).
   div $3,2
   sub $3,2

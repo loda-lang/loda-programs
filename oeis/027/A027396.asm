@@ -12,7 +12,7 @@ lpb $0
     sub $4,1
     mul $6,$5
     mov $7,$4
-    add $7,1
+    add $7,2
     seq $7,175673 ; Number of n-digit terms in A179955.
     mov $9,10
     add $9,$5

@@ -1,7 +1,10 @@
-; A171729: Triangle of differences of Fibonacci numbers.
+; A171729: Triangle of differences of Fibonacci numbers, rows ascending.
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,2,1,2,3,2,3,4,5,3,5,6,7,8,5,8,10,11,12,13,8,13,16,18,19,20,21,13,21,26,29,31,32,33,34,21,34,42,47,50,52,53,54,55,34,55,68,76,81,84,86,87,88,89,55,89,110,123,131,136,139,141,142,143,144,89,144,178,199,212,220,225,228,230,231,232,233,144,233
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $2,1
   sub $0,$2

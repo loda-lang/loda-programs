@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,3
   seq $3,176775 ; Index of n as m-gonal number for the smallest possible m (=A176774(n)).
   sub $3,2
   min $3,1

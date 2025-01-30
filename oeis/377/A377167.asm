@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,175054 ; A positive integer n is included if there is no run of 0's in the binary representation of n that is only one digit long.
   sub $3,1
   add $0,1

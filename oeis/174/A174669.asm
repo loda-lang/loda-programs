@@ -6,6 +6,6 @@
 mov $1,$0
 seq $1,137688 ; 2^A003056: 2^n appears n+1 times.
 sub $1,1
-seq $0,154690 ; Triangle read by rows: T(n,m) = (2^(n-m) + 2^m)*binomial(n,m), 0 <= m <= n.
+seq $0,154690 ; Triangle read by rows: T(n, k) = (2^(n-k) + 2^k)*binomial(n,k), 0 <= k <= n.
 sub $0,1
 sub $0,$1

@@ -15,7 +15,6 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   add $5,3
-  sub $3,1
   seq $3,179804 ; Number of letter combinations on a standard telephone keypad represented by the digits in n
   neq $3,0
   sub $0,$3

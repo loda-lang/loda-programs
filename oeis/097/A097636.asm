@@ -12,6 +12,7 @@ lpb $2
   sub $0,1
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
   mul $0,$2
   add $1,$3

@@ -13,6 +13,7 @@ lpb $5
   mod $1,2
   lpb $1
     mul $0,$1
+    add $0,1
     seq $0,173919 ; Numbers that are prime or one less than a prime.
     add $2,$4
     sub $5,$1

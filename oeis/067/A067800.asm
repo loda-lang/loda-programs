@@ -10,6 +10,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,174889 ; First column of A174888.
   sub $0,$3
   mov $4,$0

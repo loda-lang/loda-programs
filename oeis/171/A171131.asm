@@ -2,6 +2,9 @@
 ; Submitted by Orange Kid
 ; 5,7,19,67,4099,65539,262147,1073741827
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   div $0,2

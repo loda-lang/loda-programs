@@ -13,6 +13,7 @@ mov $3,$1
 add $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,176656 ; The positions of single (or isolated or non-twin) primes in A000040.
   seq $4,40 ; The prime numbers.
   sub $4,1

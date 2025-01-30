@@ -1,6 +1,9 @@
 ; A178999: Number of n-node simple graphs that are not determined by their resistance distance multisets.
 ; 0,0,0,0,0,0,0,0,22,98
 
+#offset 1
+
+sub $0,1
 bin $0,8
 mov $1,$0
 lpb $1

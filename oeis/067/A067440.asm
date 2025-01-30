@@ -14,6 +14,7 @@ lpb $2
   sub $0,$2
   add $3,1
   mov $5,$0
+  add $5,1
   seq $5,175070 ; a(n) is the sum of perfect divisors of n - n, where a perfect divisor of n is a divisor d such that d^k = n for some k >= 1.
   mov $1,$0
   add $1,$5

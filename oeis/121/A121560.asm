@@ -11,6 +11,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,175072 ; Natural numbers m with result 2 under iterations of {r mod (max prime p < r)} starting at r = m.
   mov $2,$3
   mul $2,$0

@@ -2,8 +2,10 @@
 ; Submitted by Odd-Rod
 ; 1,2,3,4,5,6,7,8,19
 
+#offset 1
+
 mov $1,1
-add $0,2
+add $0,1
 lpb $0
   mul $1,2
   mul $1,$0

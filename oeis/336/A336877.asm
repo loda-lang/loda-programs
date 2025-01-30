@@ -8,6 +8,7 @@ lpb $2
   trn $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,178590 ; a(2n) = 3*a(n), a(2n+1) = a(n) + a(n+1).
   add $1,$0
   add $3,3

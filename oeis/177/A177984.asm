@@ -6,7 +6,7 @@
 mov $1,$0
 seq $1,8518 ; Triangle of Eulerian numbers with rows multiplied by 1 + x.
 mul $1,2
-seq $0,176198 ; A symmetrical triangle of polynomial coefficients:q=2;p(x,n,q)=(1 - x)^(n + 1)*Sum[((q*k + 1)^n + (q*k + q - 1)^n)*x^k, {k, 0, Infinity}]
+seq $0,176198 ; Triangle, read by rows, T(n, k) = f(n,k,q) - f(n,0,q) + 1, where f(n, k, q) = [x^k](p(x,n,q)), p(x, n, q) = (1-x)^(n+1)*Sum_{k >= 0} ( (q*k+1)^n + (q*(k+1)-1)^n )*x^k, and q = 2.
 add $1,$0
 mov $0,$1
 div $0,4

@@ -13,6 +13,7 @@ lpb $5
   mov $6,$4
   add $6,1
   mov $7,$6
+  add $6,1
   seq $6,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
   min $7,1
   mul $7,$6

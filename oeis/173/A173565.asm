@@ -2,6 +2,9 @@
 ; Submitted by fzs600
 ; 0,0,1,2,5,9,22,48,118,288
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $2,$1

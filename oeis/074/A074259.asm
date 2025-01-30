@@ -11,6 +11,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,175666 ; Sum of Sophie Germain prime p and corresponding safe prime q=2p+1.
   mov $2,$3
   mul $2,$0

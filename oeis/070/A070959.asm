@@ -13,6 +13,7 @@ lpb $1
   lpb $2
     div $4,$6
     max $4,0
+    add $4,1
     seq $4,175753 ; Numbers with 46 divisors.
     mov $5,$0
     seq $5,77116 ; n^3 - A065733(n).

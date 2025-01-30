@@ -9,6 +9,7 @@ lpb $2
   mov $6,0
   pow $6,$1
   mov $3,$1
+  add $3,1
   seq $3,177965 ; Indices m for which A177961(m) - m = 1.
   add $3,$6
   mul $3,2

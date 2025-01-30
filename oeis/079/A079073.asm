@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,171941 ; Backwards van Eck transform of A000120.
   sub $0,$2
   add $1,$0

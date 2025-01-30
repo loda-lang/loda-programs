@@ -7,6 +7,7 @@
 sub $0,1
 max $0,1
 max $1,$0
+add $1,1
 seq $1,176628 ; a(n) = prime(n) - n*(-1)^prime(n).
 lpb $1
   sub $1,1

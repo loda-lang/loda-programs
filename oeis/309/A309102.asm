@@ -6,8 +6,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,172398 ; Number of partitions of n into the sum of two refactorable numbers (A033950).
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -11,8 +11,9 @@ mul $2,3
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,171157 ; Number of distinct primes > 3 that divide n.
-  cmp $3,4
+  equ $3,4
   sub $0,$3
   add $1,1
   sub $2,$0

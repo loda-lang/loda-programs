@@ -14,8 +14,10 @@ lpb $2
   trn $3,1
   mov $5,$3
   min $5,1
+  mov $6,$3
+  seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $3,$6
   add $3,1
-  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
   mul $3,$5
   equ $3,1
   sub $0,$3

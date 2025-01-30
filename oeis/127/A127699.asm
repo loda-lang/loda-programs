@@ -7,6 +7,7 @@
 sub $0,1
 mov $1,49
 lpb $1
+  add $0,1
   seq $0,174824 ; a(n) = period of the sequence {m^m, m >= 1} modulo n.
   sub $0,1
   mul $1,5

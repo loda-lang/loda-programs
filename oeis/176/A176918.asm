@@ -2,10 +2,12 @@
 ; Submitted by Penguin
 ; 1,-1,0,-1,0,0,-1,1,0,0,-1,0,0,0,0,-1,1,1,0,0,0,-1,0,0,0,0,0,0,-1,1,0,0,0,0,0,0,-1,0,1,0,0,0,0,0,0,-1,1,0,0,1,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,-1,1,1,0,0,-1,0,0
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
 min $1,2
+sub $0,1
 pow $2,$0
 mov $3,$1
 equ $3,2

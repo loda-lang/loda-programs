@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,175073 ; Primes q with result 1 under iterations of {r mod (max prime p < r)} starting at r = q.
 sub $0,2
 lpb $0

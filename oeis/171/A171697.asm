@@ -2,6 +2,9 @@
 ; Submitted by emoga
 ; 1,119,121,143,145,185,187,203,205,215,217,245,247,287,289,299,301,323,325,341,343,413,415,425,427,473,475,515,517,527,529,533,535,551,553,581,583,623,625,635,637,665,667,695,697,713,715,779,781,791,793,803
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mod $2,2
 add $0,1
@@ -10,9 +13,16 @@ mov $4,$0
 add $4,7
 pow $4,2
 lpb $4
+  mov $7,0
+  seq $7,194899 ; Triangular array (and fractal sequence):  row n is the permutation of (1,2,...,n) obtained from the increasing ordering of fractional parts {r}, {2r}, ..., {nr}, where r=sqrt(12).
   mov $5,$3
-  add $5,4
-  seq $5,308050 ; a(n) = n - prevprime(n - 1), where prevprime(n) is the largest prime < n.
+  add $5,3
+  seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
+  add $7,$3
+  sub $7,$5
+  mov $5,$7
+  add $5,3
+  mod $5,10
   trn $5,6
   min $5,1
   sub $0,$5

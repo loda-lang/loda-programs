@@ -14,6 +14,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,178637 ; a(n) = sum of divisors d of n such that d is not equal to p^k where p = prime, k >=1.
     mul $7,$$9
     add $5,1

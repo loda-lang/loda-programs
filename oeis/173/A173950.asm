@@ -1,10 +1,22 @@
 ; A173950: a(n) = 1 if 6 divides (prime(n) + 1), a(n) = -1 if 6 divides (prime(n) - 1), a(n) = 0 otherwise.
 ; Submitted by Skillz
 ; 0,0,1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,1,1,1,-1,1,-1,1,-1,-1,-1,1,-1,1,1,-1,1,1,1,1,-1,-1,1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,1,-1,-1,-1,1,1,-1,1,-1
-; Formula: a(n) = truncate((-truncate((-2*A000040(n+1)+1)/(gcd(A000040(n+1),2)+2))*(gcd(A000040(n+1),2)+2)-2*A000040(n+1)+1)^(-truncate((-2*A000040(n+1)+1)/(gcd(A000040(n+1),2)+2))*(gcd(A000040(n+1),2)+2)-2*A000040(n+1)+1))
 
+#offset 1
+
+mov $3,0
+mov $4,$0
+pow $4,5
+lpb $4
+  mov $2,$3
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$2
+  add $3,2
+  sub $4,$0
+lpe
+mov $0,$3
 add $0,1
-seq $0,40 ; The prime numbers.
+max $0,2
 mov $1,1
 sub $1,$0
 sub $1,$0

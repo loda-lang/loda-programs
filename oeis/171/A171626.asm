@@ -1,8 +1,11 @@
 ; A171626: Ceiling(n-th noncomposite/n).
 ; Submitted by Simon Strandgaard (M1)
 ; 1,1,1,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
-; Formula: a(n) = truncate(truncate(((n+1)*(91*A008578(n+1)+91*n))/(gcd(0,n+1)^2))/91)
+; Formula: a(n) = truncate(truncate((n*(91*A008578(n)+91*n-91))/(gcd(0,n)^2))/91)
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 gcd $2,$1

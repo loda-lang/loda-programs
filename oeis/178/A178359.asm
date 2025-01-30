@@ -9,8 +9,7 @@ seq $2,55642 ; Number of digits in the decimal expansion of n.
 seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
 mov $3,$0
 mod $3,$2
-cmp $3,0
-cmp $3,0
+neq $3,0
 div $0,$2
 add $0,$3
 add $0,$1

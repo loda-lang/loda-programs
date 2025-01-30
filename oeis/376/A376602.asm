@@ -8,6 +8,7 @@ lpb $2
   mov $4,$1
   add $4,1
   mov $5,$4
+  add $4,1
   seq $4,174047 ; Numbers k such that exactly one of 2*k-1 and 2*k+1 is prime.
   min $5,1
   mul $5,$4

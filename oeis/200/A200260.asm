@@ -10,6 +10,7 @@ pow $3,2
 lpb $3
   mov $1,$2
   mul $1,2
+  add $1,1
   seq $1,173919 ; Numbers that are prime or one less than a prime.
   seq $1,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mod $1,2

@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,173137 ; n-th nonnegative noncomposite number plus n.
   trn $3,2
   mov $5,$3

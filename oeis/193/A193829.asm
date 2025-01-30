@@ -14,9 +14,9 @@ lpb $3
   pow $7,4
   lpb $7
     mov $8,$6
+    add $8,1
     seq $8,176917 ; Triangle read by rows, A077049 * the diagonalized version of A002033.
-    cmp $8,0
-    cmp $8,0
+    neq $8,0
     sub $0,$8
     add $6,1
     sub $7,$0

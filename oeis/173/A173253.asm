@@ -9,7 +9,27 @@ lpb $1
   sub $1,1
   mov $0,$3
   sub $0,$1
-  seq $0,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
+  bin $0,2
+  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  mov $4,$0
+  mul $0,8
+  add $0,1
+  nrt $0,2
+  add $0,1
+  div $0,2
+  add $4,$0
+  mov $0,$4
+  add $0,1
+  mov $5,$0
+  seq $5,319573 ; The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
+  add $5,$0
+  add $0,1
+  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  sub $5,$0
+  mov $0,$5
+  add $0,1
+  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
   add $2,$0
 lpe
 mov $0,$2

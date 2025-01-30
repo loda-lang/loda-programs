@@ -10,11 +10,12 @@ mul $2,20
 lpb $2
   mov $3,$1
   mul $3,2
-  add $3,2
   mov $5,$3
+  add $5,3
   seq $5,178493 ; Numbers of powers of phi in base-phi expansion of phi-antipalindromic numbers (A178482).
   mov $6,1
   sub $6,$5
+  add $3,2
   mod $3,$6
   equ $3,0
   sub $0,$3

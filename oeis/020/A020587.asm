@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,171581 ; The natural numbers without primes > 3.
   trn $3,2
   max $1,$5

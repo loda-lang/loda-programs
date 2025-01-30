@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,177029 ; Numbers that have exactly two different representations as polygonal numbers.
   mov $5,$3
   add $3,1

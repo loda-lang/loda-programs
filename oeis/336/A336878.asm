@@ -10,6 +10,7 @@ lpb $3
   add $0,$3
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,178590 ; a(2n) = 3*a(n), a(2n+1) = a(n) + a(n+1).
   mov $2,$3
   mul $2,$0

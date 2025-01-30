@@ -9,7 +9,7 @@ lpb $3
   mov $0,$5
   sub $0,$3
   mov $1,$0
-  dis $0,2
+  dgs $0,2
   mov $2,2
   pow $2,$0
   mul $1,2

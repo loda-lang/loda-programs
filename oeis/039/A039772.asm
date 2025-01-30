@@ -10,9 +10,10 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,174824 ; a(n) = period of the sequence {m^m, m >= 1} modulo n.
+  add $1,1
   mov $5,$3
   gcd $5,$1
   mov $3,$5

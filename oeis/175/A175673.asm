@@ -2,6 +2,9 @@
 ; Submitted by Aexoden
 ; 0,9,36,84,126,126,84,36,9,1
 
+#offset 1
+
+sub $0,1
 mov $2,9
 bin $2,$0
 lpb $0

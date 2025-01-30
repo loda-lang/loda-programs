@@ -21,7 +21,7 @@ lpb $4
   lpb $7
     mul $5,$7
     sub $7,1
-    cmp $8,2
+    equ $8,2
     sub $9,$8
     div $5,$9
     add $6,$5

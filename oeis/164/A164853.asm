@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   mov $3,$2
   mov $2,$0
+  add $2,1
   seq $2,176570 ; a(n)=n-th semiprime if n-th semiprime odd and n-th semiprime/2 if n-th semiprime even.
   lpb $3
     mov $3,0

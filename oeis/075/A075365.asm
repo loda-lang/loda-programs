@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,175851 ; a(n) = 1 for noncomposite n, a(n) = n - previousprime(n) + 1 for composite n.
   sub $3,$0
   add $3,$1

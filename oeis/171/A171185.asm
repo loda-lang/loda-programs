@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,171215 ; Row cubed sums of triangle of Lucas polynomials (A034807) for n>0: Sum_{k=0..[n/2]} A034807(n,k)^3.
     mov $9,10
     add $9,$5

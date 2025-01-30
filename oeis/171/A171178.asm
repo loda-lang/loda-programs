@@ -4,6 +4,7 @@
 
 lpb $0
   sub $0,1
+  add $2,1
   seq $2,171177 ; Triangle read by rows in which row n lists 3n-1 together with the first 2n-1 numbers <> 0 of A038608, in reverse order.
   add $1,$2
   mov $2,$0

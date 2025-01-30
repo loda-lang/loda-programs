@@ -4,6 +4,6 @@
 ; Formula: a(n) = -A005001(n)+A000110(n)
 
 mov $1,$0
-seq $1,5001 ; a(0) = 0; for n>0, a(n) = Sum_k={0..n-1} Bell(k), where the Bell numbers Bell(k) are given in A000110.
+seq $1,5001 ; a(n) = Sum_{k=0..n-1} Bell(k), where the Bell numbers Bell(k) are given in A000110.
 seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
 sub $0,$1

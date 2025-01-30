@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,171153 ; Numbers that are not in A169606.
 lpb $0
   mov $1,3

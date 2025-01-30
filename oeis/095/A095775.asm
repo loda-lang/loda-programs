@@ -15,6 +15,7 @@ lpb $2
   mov $3,$1
   add $3,1
   mov $6,$3
+  add $3,1
   seq $3,171947 ; P-positions for game of UpMark.
   sub $3,1
   sub $3,$6
