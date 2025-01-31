@@ -13,7 +13,7 @@ mov $4,$0
 add $4,7
 pow $4,2
 lpb $4
-  mov $7,0
+  mov $7,1
   seq $7,194899 ; Triangular array (and fractal sequence):  row n is the permutation of (1,2,...,n) obtained from the increasing ordering of fractional parts {r}, {2r}, ..., {nr}, where r=sqrt(12).
   mov $5,$3
   add $5,3

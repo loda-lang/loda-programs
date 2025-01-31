@@ -11,6 +11,7 @@ lpb $2
   mov $2,$0
   mov $1,$0
   add $1,$0
+  add $0,1
   seq $0,191558 ; a(n) = 0 if n prime, otherwise n.
   add $0,1
   trn $0,2

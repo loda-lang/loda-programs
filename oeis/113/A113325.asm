@@ -10,6 +10,7 @@ lpb $1
   sub $1,1
   add $0,$1
   mov $3,$0
+  add $0,1
   seq $0,193564 ; In A014675, replace the n-th occurrence of 1 with n-1 and also replace the n-th occurrence of 2 with n-1.
   mov $2,$0
   add $2,1

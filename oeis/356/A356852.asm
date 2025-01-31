@@ -10,6 +10,7 @@ lpb $3
   mov $0,$1
   sub $0,$3
   mul $0,2
+  add $0,1
   seq $0,190301 ; Smallest number h such that n*h is a repunit (A002275), or 0 if no such h exists.
   sub $0,1
   bin $2,$0

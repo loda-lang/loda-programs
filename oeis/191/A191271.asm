@@ -1,9 +1,35 @@
 ; A191271: Positions of 2 in A191269.
 ; Submitted by [SG]KidDoesCrunch
 ; 8,16,29,37,50,55,63,71,84,92,105,110,118,126,139,152,160,173,181,194,199,207,215,228,236,249,254,262,270,283,296,304,317,325,338,343,351,359,372,377,385,393,406,414,427,432,440,448,461,469,482,487,495,503,516,529,537,550,558,571,576,584,592,605,613,626,631,639
-; Formula: a(n) = A001950(A191270(n)+1)-2
 
-seq $0,191270 ; Positions of 1 in A191269.
-add $0,1
-seq $0,1950 ; Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.
+#offset 1
+
+sub $0,1
+mov $2,2
+mov $3,$0
+add $3,2
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,1
+  seq $4,191269 ; Fixed point of the morphism 0 -> 001, 1 -> 02, 2 -> 01.
+  equ $4,1
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,2
+mov $1,$0
+mul $1,4
+add $1,$0
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
+add $0,$1
 sub $0,2

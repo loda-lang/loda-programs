@@ -14,6 +14,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,192479 ; a(n) = 2^n*C(n-1) - A186997(n-1), where C(n) are the Catalan numbers (A000108).
     mov $9,10
     add $9,$5

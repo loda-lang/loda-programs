@@ -6,5 +6,6 @@
 
 sub $0,1
 equ $1,$0
+add $0,1
 seq $0,193315 ; Write 2n=j+q (j,q positive noncomposite numbers); j*q maximal; then a(n)=j*q.
 sub $0,$1

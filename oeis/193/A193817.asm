@@ -19,7 +19,7 @@ lpb $5
 lpe
 min $3,1
 mul $3,$4
-cmp $3,1
+equ $3,1
 sub $1,$3
 mov $0,$1
 sub $0,2

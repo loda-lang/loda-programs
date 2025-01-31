@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,192742 ; Number of matchings in the n-antiprism graph.
 mov $1,$0
 lpb $0

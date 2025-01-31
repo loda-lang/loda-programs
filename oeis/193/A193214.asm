@@ -16,7 +16,30 @@ lpb $2
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
   mov $5,$3
-  seq $3,287523 ; Fixed point starting with 1 of the morphism 0->01, 1->101.
+  sub $3,1
+  mov $7,$3
+  add $7,$3
+  mul $7,2
+  add $7,$3
+  mul $7,$3
+  nrt $7,2
+  add $7,$3
+  mov $3,$7
+  div $3,2
+  add $3,2
+  mov $6,$3
+  add $6,$3
+  mul $6,2
+  add $6,$3
+  mul $6,$3
+  nrt $6,2
+  add $6,$3
+  equ $7,1
+  sub $7,$6
+  mov $3,$7
+  sub $3,1
+  mod $3,2
+  add $3,1
   equ $3,0
   sub $0,$3
   add $1,1

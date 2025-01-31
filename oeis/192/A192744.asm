@@ -10,8 +10,7 @@ lpb $0
     add $2,1
     sub $2,$3
     mov $4,$1
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     sub $3,$4
     add $6,1
     add $7,$1

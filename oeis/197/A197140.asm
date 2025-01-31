@@ -1,8 +1,11 @@
 ; A197140: Decimal expansion of the x-intercept of the shortest segment from the x axis through (1,1) to the line y=2x.
 ; Submitted by Science United
 ; 1,4,4,0,6,1,9,7,0,0,5,3,8,1,9,9,1,1,7,6,3,3,2,5,2,3,0,2,5,8,9,2,7,7,4,3,5,3,7,9,9,0,9,4,7,2,6,0,8,9,0,3,3,7,7,3,9,8,4,6,7,3,6,4,2,5,6,5,6,3,7,3,8,9,3,2,7,7,8,9
-; Formula: a(n) = -10*truncate(truncate(b(3*n)/(truncate(c(3*n)/(10^n))+1))/10)+truncate(b(3*n)/(truncate(c(3*n)/(10^n))+1)), b(n) = 2*c(n-1)+2*e(n-1)+b(n-1), b(3) = 187, b(2) = 11, b(1) = 1, b(0) = 1, c(n) = 6*c(n-1)+4*e(n-1)+2*b(n-1), c(3) = 426, c(2) = 26, c(1) = 2, c(0) = 0, d(n) = 18*c(n-1)+14*e(n-1)+5*b(n-1)+2*d(n-1), d(3) = 1577, d(2) = 93, d(1) = 5, d(0) = 0, e(n) = 12*c(n-1)+10*e(n-1)+3*b(n-1)+d(n-1), e(3) = 1058, e(2) = 62, e(1) = 3, e(0) = 0
+; Formula: a(n) = -10*truncate(truncate(b(max(3*n-3,0))/(truncate(c(max(3*n-3,0))/(10^(n-1)))+1))/10)+truncate(b(max(3*n-3,0))/(truncate(c(max(3*n-3,0))/(10^(n-1)))+1)), b(n) = 2*c(n-1)+2*e(n-1)+b(n-1), b(3) = 187, b(2) = 11, b(1) = 1, b(0) = 1, c(n) = 6*c(n-1)+4*e(n-1)+2*b(n-1), c(3) = 426, c(2) = 26, c(1) = 2, c(0) = 0, d(n) = 18*c(n-1)+14*e(n-1)+5*b(n-1)+2*d(n-1), d(3) = 1577, d(2) = 93, d(1) = 5, d(0) = 0, e(n) = 12*c(n-1)+10*e(n-1)+3*b(n-1)+d(n-1), e(3) = 1058, e(2) = 62, e(1) = 3, e(0) = 0
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $3,$0
 mul $3,3

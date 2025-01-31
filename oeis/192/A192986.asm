@@ -10,7 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,5001 ; a(0) = 0; for n>0, a(n) = Sum_k={0..n-1} Bell(k), where the Bell numbers Bell(k) are given in A000110.
+  seq $2,5001 ; a(n) = Sum_{k=0..n-1} Bell(k), where the Bell numbers Bell(k) are given in A000110.
   bin $0,$3
   gcd $1,$2
 lpe

@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,190997 ; Product of digits of all the divisors of n.
   add $3,$4
   gcd $3,2

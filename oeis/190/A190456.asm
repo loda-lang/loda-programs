@@ -1,7 +1,40 @@
 ; A190456: Positions of 4 in A190451.
 ; Submitted by gemini8
 ; 8,21,42,55,76,97,110,131,144,152,165,186,199,220,241,254,275,288,309,330,343,364,377,385,398,419,432,453,474,487,508,521,542,563,576,597,618,631,652,665,686,707,720,741,754,762,775,796,809,830,851,864,885,898,919
-; Formula: a(n) = A101345(A190249(n))
 
-seq $0,190249 ; Positions of 0 in A190248.
-seq $0,101345 ; a(n) = Knuth's Fibonacci (or circle) product "2 o n".
+#offset 1
+
+mov $2,0
+mov $3,$0
+mov $5,0
+sub $0,1
+add $3,1
+pow $3,2
+lpb $3
+  mov $4,$2
+  add $4,2
+  seq $4,190248 ; a(n) = [nu+nv+nw]-[nu]-[nv]-[nw], where u=(1+sqrt(5))/2, v=u^2, w=u^3, []=floor.
+  add $4,$5
+  div $4,2
+  gcd $4,2
+  sub $0,$4
+  add $0,1
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
+lpe
+mov $0,$2
+add $0,3
+mov $1,$0
+mul $1,4
+add $1,$0
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
+mul $1,2
+add $0,$1
+sub $0,3

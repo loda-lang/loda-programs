@@ -5,9 +5,10 @@
 mov $1,$0
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,195311 ; Row sums of A195310.
   mul $0,2
-  cmp $0,$3
+  equ $0,$3
   add $2,$3
 lpe
 mov $0,$2

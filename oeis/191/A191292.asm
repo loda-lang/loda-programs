@@ -1,10 +1,23 @@
 ; A191292: Numbers k such that k-1 and k+1 are both digitally balanced.
 ; Submitted by zombie67 [MM]
 ; 11,36,43,51,140,148,155,164,171,179,196,203,211,227,540,556,564,571,588,596,603,612,619,627,652,660,667,676,683,691,708,715,723,739,780,788,795,804,811,819,836,843,851,867,900,907,915,931,963,2108,2140,2156,2164,2171,2204,2220,2228,2235,2252,2260,2267,2276,2283,2291,2332,2348,2356,2363,2380,2388,2395,2404,2411,2419,2444,2452,2459,2468,2475,2483
-; Formula: a(n) = A047468(A031443(n+1)+1)+2
 
-add $0,1
-seq $0,31443 ; Digitally balanced numbers: positive numbers that in base 2 have the same number of 0's as 1's.
-add $0,1
-seq $0,47468 ; Numbers that are congruent to {1, 2} mod 8.
-add $0,2
+#offset 1
+
+mov $2,1
+mov $3,$0
+pow $3,4
+lpb $3
+  mov $4,$2
+  seq $4,37861 ; (Number of 0's) - (number of 1's) in the base-2 representation of n.
+  equ $4,0
+  sub $0,$4
+  add $2,1
+  sub $3,$0
+lpe
+mov $1,$2
+div $1,2
+mul $1,6
+mov $0,$2
+add $0,$1
+add $0,3

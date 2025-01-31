@@ -10,9 +10,10 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,1
   mov $6,$1
+  add $6,2
   seq $6,191558 ; a(n) = 0 if n prime, otherwise n.
+  add $1,1
   mov $5,$1
   add $5,$6
   bin $5,$1

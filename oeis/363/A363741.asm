@@ -18,6 +18,7 @@ lpb $0
     dif $0,$2
     mov $1,$4
     bin $1,2
+    add $1,1
     seq $1,195050 ; Square array T(n,k) read by antidiagonals in which column k lists the number of divisors of n that are divisible by k.
     add $4,1
   lpe

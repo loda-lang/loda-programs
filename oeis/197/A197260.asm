@@ -1,4 +1,4 @@
-; A197260: Decimal expansion of least x>0 having sin(3x)=(sin x)^2.
+; A197260: Decimal expansion of least x>0 having sin(3x) = sin(x)^2.
 ; Submitted by skildude
 ; 8,4,8,0,6,2,0,7,8,9,8,1,4,8,1,0,0,8,0,5,2,9,4,4,3,3,8,9,9,8,4,1,8,0,8,0,0,7,3,3,6,6,2,1,3,2,6,3,1,1,2,6,4,2,8,6,0,7,1,8,1,6,3,5,7,0,2,0,0,8,2,1,2,2,8,4,7,4,2,3
 

@@ -1,8 +1,10 @@
 ; A194584: Differences of A035336.
 ; Submitted by Steve Dodd
 ; 5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,5,3,5,3,5,5,3,5,3,5,5,3,5,5
+; Formula: a(n) = 2*sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+2*truncate((sqrtint(5*n^2)+n)/2)-4*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+7
 
-add $0,1
+#offset 1
+
 mov $2,$0
 add $2,$0
 mul $2,2

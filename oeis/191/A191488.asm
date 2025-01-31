@@ -19,6 +19,6 @@ lpb $0
   mov $1,$2
 lpe
 sub $1,$3
-dis $1,2
+dgs $1,2
 mov $0,$1
 mul $0,2

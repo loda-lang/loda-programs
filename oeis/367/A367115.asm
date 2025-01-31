@@ -11,6 +11,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,190590 ; Expansion of series reversion of x/(1 + x + 2*x^4).
   mul $1,$0
   add $3,$1

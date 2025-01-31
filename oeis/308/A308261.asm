@@ -13,6 +13,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,198696 ; Positions of local maxima in differences of primes, A001223.
   mov $2,$5
   mul $2,$4

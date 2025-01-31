@@ -1,7 +1,11 @@
 ; A192002: Counting sequence for Wythoff AB-numbers smaller than n.
 ; Submitted by Science United
 ; 0,0,0,1,1,1,1,1,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,6,6,6,6,6,7,7,7,8,8,8,8,8,9,9,9,9,9,10,10,10,11,11,11,11,11,12,12,12,12,12,13,13,13,14,14,14,14,14,15,15,15,16,16,16,16,16,17,17,17,17,17,18,18,18,19
+; Formula: a(n) = b(n-1), b(n) = -2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+4)*(5*truncate((sqrtint(5*n^2)+n)/2)+20))+truncate((sqrtint(5*n^2)+n)/2)+4)/2)+b(n-1)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+4)*(5*truncate((sqrtint(5*n^2)+n)/2)+20))+truncate((sqrtint(5*n^2)+n)/2)+4, b(0) = 0
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $5,$0
   add $5,$0

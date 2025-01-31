@@ -2,6 +2,9 @@
 ; Submitted by Gunnar Hjern
 ; 1,2,4,5,10,15,20,25,30,32
 
+#offset 1
+
+sub $0,1
 mov $7,$0
 mov $4,$0
 lpb $4

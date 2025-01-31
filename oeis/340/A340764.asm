@@ -10,7 +10,7 @@ lpb $2
   add $0,81
   mov $5,0
   max $5,$0
-  sub $5,81
+  sub $5,80
   seq $5,191558 ; a(n) = 0 if n prime, otherwise n.
   add $5,$0
   add $0,$5

@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $5,$1
-  add $5,1
+  add $5,2
   seq $5,199985 ; Numbers with digital product = 5.
   mov $3,$5
   mul $3,2

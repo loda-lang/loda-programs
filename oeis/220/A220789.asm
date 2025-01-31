@@ -12,7 +12,6 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   pow $3,2
-  sub $3,1
   seq $3,196660 ; Smallest k>0 such that k*n+(n-1) is prime.
   div $3,2
   add $3,$4

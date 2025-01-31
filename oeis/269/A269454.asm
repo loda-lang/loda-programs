@@ -5,6 +5,7 @@
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,199427 ; Numbers n such that 4n+1 and 8n+3 are prime.
   mov $0,0
   add $1,$2

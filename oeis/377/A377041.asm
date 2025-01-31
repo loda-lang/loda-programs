@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,195085 ; Positive integers n for which there exist exactly two integers k in {1,2,3,...,n-1} such that k*n is square.
   mul $1,$0
   mul $3,-1

@@ -10,6 +10,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
   add $4,$3
   add $1,1

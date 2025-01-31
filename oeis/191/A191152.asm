@@ -1,11 +1,24 @@
 ; A191152: [4n*e]-2[2n*e], where [ ]=floor.
 ; Submitted by zombie67 [MM]
 ; 0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1
-; Formula: a(n) = truncate(((A190843(2*n+1)+2)^5)/211)
+
+#offset 1
 
 mul $0,2
-add $0,1
-seq $0,190843 ; a(n) = [2*n*e] - 2*[n*e], where [ ] = floor and e is the natural logarithm base.
+mov $2,0
+mov $3,$0
+mul $0,2
+add $3,5
+log $3,2
+mul $3,2
+lpb $3
+  max $3,1
+  div $2,$3
+  add $2,$0
+  sub $3,1
+lpe
+mov $0,$2
+mod $0,2
 mov $1,$0
 add $1,2
 pow $1,5

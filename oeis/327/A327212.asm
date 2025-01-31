@@ -8,6 +8,7 @@ lpb $0
   sub $3,1
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,190847 ; Positions of 0 in A190843; complement of A190860.
   add $1,$2
 lpe

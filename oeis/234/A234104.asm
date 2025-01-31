@@ -11,7 +11,7 @@ lpb $2
   mov $7,$1
   add $7,3
   seq $7,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
-  add $6,1
+  add $6,2
   seq $6,195735 ; a(n) = 2*sigma(n^2) - sigma(n)^2.
   add $6,$7
   equ $6,0

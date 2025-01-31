@@ -2,6 +2,9 @@
 ; Submitted by shiva
 ; 14400,28224,69696,72900,78400,97344,142884,166464,193600,207936,270400,304704,352836,379456,462400,484416,492804,529984,553536,562500,577600,788544,842724,846400,893025,906304,968256,1052676,1065024,1132096,1272384,1308736,1345600,1537600,1542564,1617984,1658944,2005056,2143296,2190400,2205225,2238016,2452356,2585664,2637376,2689600,2795584,2802276,2903616,2958400,3013696,3062500,3069504,3080025,3125824,3534400,3594816,3904576,3968064,3992004,4096576,4235364,4293184,4322241,4494400,4562496
 
+#offset 1
+
+sub $0,1
 mov $1,43
 mov $2,$0
 add $2,6
@@ -12,7 +15,12 @@ lpb $2
   seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $3,$1
   add $3,1
-  seq $3,183093 ; a(1) = 0; thereafter, a(n) = number of divisors d of n such that if d = Product_(i) (p_i^e_i) then all e_i <= 1.
+  seq $3,5361 ; Product of exponents of prime factorization of n.
+  mov $6,$1
+  add $6,1
+  seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  sub $6,$3
+  mov $3,$6
   sub $3,$5
   equ $3,8
   sub $0,$3

@@ -13,6 +13,7 @@ lpb $4
   lpb $0
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,194813 ; Number of integers k in [1,n] such that {n*r + k*r} < {n*r - k*r}, where { } = fractional part and r = (1+sqrt(5))/2 (the golden ratio).
     mod $0,2
     add $3,$2

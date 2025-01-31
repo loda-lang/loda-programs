@@ -2,6 +2,9 @@
 ; Submitted by STE\/E
 ; 0,2,6,9,12,16,21,24,29,34,39,45
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $1,$5
@@ -12,7 +15,7 @@ lpb $0
   bin $3,$6
   mov $4,$2
   mov $2,$1
-  cmp $2,$3
+  equ $2,$3
   add $5,2
   add $5,$6
   add $5,$4

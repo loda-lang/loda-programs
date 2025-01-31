@@ -2,6 +2,9 @@
 ; Submitted by Stony666
 ; 1,1,9,7,0,4,4,9
 
+#offset 1
+
+sub $0,1
 mov $1,-1
 mov $2,-9
 mov $3,1

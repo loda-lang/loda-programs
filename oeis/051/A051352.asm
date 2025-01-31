@@ -10,6 +10,7 @@ lpb $0
   add $1,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,191558 ; a(n) = 0 if n prime, otherwise n.
   add $1,$2
 lpe

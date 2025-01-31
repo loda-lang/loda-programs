@@ -2,6 +2,9 @@
 ; Submitted by atannir
 ; 2,3,5,12,23,32,45,52,58,72,107,137,138,175,182,270,278,287,325,562,577,578,597,703,747,753,872,980,1022,1160,1325,1372,1438,1477,1540,1892,1950,2007,2018,2313,2335,2387,2597,2608,2705,2742,2782,3008,3022,3237,3327,3393,3407,3413,3598,3693,3712,3762,3770,3840,3938,4070,4218,4235,4245,4447,4568,4725,4898,4960,5002,5015,5065,5180,5257,5288,5472,5525,5745,6018
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,4
 lpb $2
@@ -22,8 +25,17 @@ lpb $2
   mul $3,$1
   add $3,1
   mul $3,36
-  seq $3,353464 ; Characteristic function of greater twin primes: a(n) = 1 if both n and n-2 are primes, otherwise 0.
-  sub $0,$3
+  mov $7,$3
+  add $7,2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $3,1
+  sub $3,$7
+  mul $7,$3
+  max $7,0
+  add $7,2
+  seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$7
+  mov $3,$7
   mov $4,$0
   max $4,0
   equ $4,$0

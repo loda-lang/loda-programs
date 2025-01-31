@@ -9,8 +9,16 @@ lpb $2
   mov $0,$3
   add $0,$2
   trn $0,1
+  mov $5,0
+  bin $5,$0
   add $0,1
-  seq $0,78159 ; a(n) = A055086(2^n).
+  add $5,2
+  pow $5,$0
+  mul $5,4
+  mov $6,$5
+  nrt $6,2
+  mov $0,$6
+  sub $0,1
   div $0,2
   mov $1,$2
   mul $1,$0

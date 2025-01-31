@@ -18,6 +18,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
+    add $5,1
     seq $5,193564 ; In A014675, replace the n-th occurrence of 1 with n-1 and also replace the n-th occurrence of 2 with n-1.
     add $4,1
   lpe

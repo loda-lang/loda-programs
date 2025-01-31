@@ -2,6 +2,9 @@
 ; Submitted by TankbusterGames
 ; 1,2,4,7,9,13,15,18,20
 
+#offset 3
+
+sub $0,3
 mov $1,$0
 sub $0,1
 lpb $0

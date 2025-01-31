@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,195470 ; Number of numbers k with 0 <= k < n such that 2^k + 1 is multiple of n.
   equ $3,1
   sub $0,$3

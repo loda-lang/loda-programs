@@ -12,7 +12,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,191558 ; a(n) = 0 if n prime, otherwise n.
   equ $0,0
   mul $0,$2

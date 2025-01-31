@@ -8,6 +8,7 @@ pow $2,3
 lpb $2
   sub $2,18
   mov $3,$1
+  add $3,1
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
   add $3,1
   trn $3,2

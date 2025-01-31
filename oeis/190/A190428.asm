@@ -1,9 +1,42 @@
 ; A190428: Positions of 0 in A190427.
 ; Submitted by GolfSierra
 ; 5,10,13,18,26,31,34,39,47,52,60,65,68,73,81,86,89,94,99,102,107,115,120,123,128,136,141,149,154,157,162,170,175,178,183,188,191,196,204,209,212,217,225,230,233,238,243,246,251,259,264,267,272,280,285,293,298,301,306,314,319,322,327,332,335,340,348,353,356,361,369,374,382,387,390,395,403,408,411,416
-; Formula: a(n) = A022413(A005653(n+1))-3
 
+#offset 1
+
+mov $6,0
+mov $7,0
+mov $3,1
+mov $4,1
+mul $0,2
+lpb $0
+  sub $0,1
+  add $3,$7
+  add $6,1
+  add $7,$3
+  mov $5,$6
+  mul $5,2
+  mul $5,$3
+  div $5,$7
+  mod $5,2
+  sub $6,$4
+  add $6,$5
+  equ $4,0
+lpe
+mov $1,$6
+add $1,$6
+mul $1,2
+add $1,$6
+mul $1,$6
+nrt $1,2
+add $1,$6
+mov $0,$6
 add $0,1
-seq $0,5653 ; Lexicographically least increasing sequence, starting with 2, such that the sum of two distinct terms of the sequence is never a Fibonacci number.
-seq $0,22413 ; Kim-sums: "Kimberling sums" K_n + K_2.
-sub $0,3
+mov $2,$1
+div $2,2
+add $2,1
+add $2,$0
+mul $1,2
+min $1,$2
+mov $0,$1
+sub $0,2

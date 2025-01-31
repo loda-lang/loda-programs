@@ -10,6 +10,7 @@ add $2,1
 mul $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,194066 ; Natural fractal sequence of A087483.
   div $3,2
   sub $0,$3
