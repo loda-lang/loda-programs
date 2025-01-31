@@ -1,0 +1,9 @@
+; A003113: Coefficients in expansion of permanent of infinite tridiagonal matrix shown below.
+; Submitted by BrandyNOW
+; 2,1,2,2,3,3,5,5,7,8,10,11,15,16,20,23,28,31,38,42,51,57,67,75,89,99,115,129,149,166,192,213,244,272,309,344,391,433,489,543,611,676,760,839,939,1038,1157,1276,1422,1565,1738,1913,2119,2328,2576,2826,3120,3421,3768,4126,4541,4965,5453,5960,6535,7133,7813,8518,9316,10150,11085,12064,13164,14311,15594,16943,18440,20015,21764,23601
+; Formula: a(n) = A003106(n)+A003114(n)
+
+mov $1,$0
+seq $1,3106 ; Number of partitions of n into parts 5k+2 or 5k+3.
+seq $0,3114 ; Number of partitions of n into parts 5k+1 or 5k+4.
+add $0,$1
