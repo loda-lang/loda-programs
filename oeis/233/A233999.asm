@@ -15,7 +15,9 @@ lpb $2
   mov $6,$7
   add $6,1
   pow $6,2
-  seq $6,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  mul $6,4
+  nrt $6,2
+  div $6,2
   pow $6,2
   mov $5,$1
   div $5,$6

@@ -1,7 +1,11 @@
 ; A276869: First differences of the Beatty sequence A182769 for 2 + sqrt(1/2).
 ; Submitted by Skillz
 ; 2,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,2,3,3,3,2,3,3,2,3,3,3,2,3,3,2,3
+; Formula: a(n) = sqrtint(2*n^2)*sqrtint(2*(n-1)^2)-2*truncate((sqrtint(2*n^2)*sqrtint(2*(n-1)^2)+sqrtint(2*n^2)+1)/2)+sqrtint(2*n^2)+3
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 pow $1,2
 mul $1,2

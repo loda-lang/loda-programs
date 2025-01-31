@@ -17,6 +17,7 @@ lpb $8
     mov $0,$2
     add $0,$4
     trn $0,1
+    add $0,1
     seq $0,285526 ; Terms of A285524 that mark the beginning of four consecutive equal values.
     mov $5,$4
     mul $5,$0

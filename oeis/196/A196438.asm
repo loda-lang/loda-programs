@@ -1,10 +1,11 @@
 ; A196438: a(n) is the number of integers k <= n such that GCQ_A(n, k) >= 2 (see definition in comments).
-; Submitted by Christian Krause
+; Submitted by iBezanilla
 ; 0,0,1,1,3,2,5,5,6,7,9,7,11,11,12,13,15,14,17,16,18,19,21,19,23,23,24,25,27,26,29,29,30,31,33,31,35,35,36,36,39,38,41,41,42,43,45,43,47,47,48,49,51,50,53,53,54,55,57,53,59,59,60,61,63,62,65,65,66,67,69,67,71,71,72,73,75,74,77,76
 
-add $0,1
+#offset 1
+
 mov $2,$0
-sub $0,1
+div $0,2
 lpb $0
   trn $1,$0
   mov $3,$0

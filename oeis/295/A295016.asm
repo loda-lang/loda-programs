@@ -17,12 +17,12 @@ lpb $2
   lpe
   sub $3,$6
   add $3,7
-  cmp $3,1
+  equ $3,1
   sub $5,2
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
   add $1,1

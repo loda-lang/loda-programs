@@ -8,6 +8,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,285617 ; Fixed point of the morphism 0->11, 1->1000.
   sub $3,1
   add $3,$4
