@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,183039 ; a(n) = A051064(n)*3^A051064(n) where A051064(n) equals the 3-adic valuation of 3n.
     mov $9,10
     add $9,$5

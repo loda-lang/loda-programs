@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w3)
 ; 4,5,6,10,12,13,18,21,23,26
 
+#offset 1
+
+sub $0,1
 mov $7,$0
 mov $4,$0
 lpb $4

@@ -13,7 +13,6 @@ lpb $2
   sub $3,1
   seq $3,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
   seq $3,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
-  sub $3,1
   seq $3,181591 ; a(n) = binomial(bigOmega(n),omega(n)), where omega = A001221 and bigOmega = A001222.
   sub $3,1
   equ $3,2

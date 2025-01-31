@@ -5,6 +5,7 @@
 mov $2,$0
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,187562 ; Least k >= 0 such that prime(n)*(prime(n)-k)+1 is prime.
   sub $0,$3
   add $1,1

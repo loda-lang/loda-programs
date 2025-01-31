@@ -9,6 +9,7 @@ lpb $0
 lpe
 add $0,1
 seq $0,37 ; Numbers that are not squares (or, the nonsquares).
+add $0,1
 seq $0,183866 ; n+floor(2*sqrt(n-1)); complement of A035106.
 mul $0,2
 sub $0,9

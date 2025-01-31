@@ -23,7 +23,7 @@ lpb $2
   seq $4,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
   sub $4,$5
   mov $3,$4
-  sub $3,2
+  sub $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mod $3,2
   sub $0,$3

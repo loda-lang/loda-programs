@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,182986 ; Zero together with the prime numbers (A000040).
   sub $0,1
   add $1,$2

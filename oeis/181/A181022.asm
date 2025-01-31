@@ -2,6 +2,9 @@
 ; Submitted by William Michael Kanar
 ; 3,8,10,16,24,29,37,48,56
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   sub $3,$4

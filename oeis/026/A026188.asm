@@ -13,6 +13,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   mov $5,$3
+  add $3,1
   seq $3,189640 ; Fixed point of the morphism 0->001, 1->101.
   gcd $3,3
   div $5,$3

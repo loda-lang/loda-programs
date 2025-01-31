@@ -6,12 +6,12 @@ mov $2,$0
 pow $2,2
 lpb $2
   sub $2,3
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,188373 ; Positions of 1 in A188371; complement of A188372.
   sub $3,1
   add $0,1
-  add $1,1
+  add $1,2
   add $2,$3
   sub $2,$0
 lpe

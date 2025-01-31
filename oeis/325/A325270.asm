@@ -9,6 +9,7 @@ add $0,1
 mov $1,1
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   add $3,1
   seq $3,23817 ; Sum of exponents in prime-power factorization of C(2n,n-1).

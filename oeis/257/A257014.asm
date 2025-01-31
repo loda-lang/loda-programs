@@ -11,6 +11,7 @@ lpb $0
   mov $3,$2
   mov $2,$4
   div $2,2
+  add $2,1
   seq $2,186133 ; Number of (n+1) X 2 0..2 arrays with no 2 X 2 subblock trace equal to any horizontal or vertical neighbor 2 X 2 subblock trace.
   mul $3,$2
   add $4,1

@@ -1,7 +1,7 @@
 ; A177709: Sums of 4 distinct primorials.
 ; Submitted by atannir
 ; 39,219,243,247,248,2319,2343,2347,2348,2523,2527,2528,2551,2552,2556,30039,30063,30067,30068,30243,30247,30248,30271,30272,30276,32343,32347,32348,32371,32372,32376,32551,32552,32556,32580,510519,510543
-; Formula: a(n) = A276085(A181819(A108951(truncate((A057335(A048678(A014312(n)))-1)/A293810(A057335(A048678(A014312(n)))-1))+1)-1)-1)
+; Formula: a(n) = A276085(A181819(A108951(truncate((A057335(A048678(A014312(n)))-1)/A293810(A057335(A048678(A014312(n)))-1))+1))-1)
 
 #offset 1
 
@@ -15,7 +15,6 @@ div $1,$0
 mov $0,$1
 add $0,1
 seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
-sub $0,1
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 sub $0,1
 seq $0,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).

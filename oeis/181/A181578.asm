@@ -10,7 +10,7 @@ lpb $0
       sub $2,$0
       div $0,5
     lpe
-    cmp $2,1
+    equ $2,1
   lpe
   sub $0,1
 lpe

@@ -9,9 +9,10 @@ mul $4,2
 add $4,1
 mov $3,$4
 lpb $3
-  cmp $3,2
+  equ $3,2
   mov $2,729
   sub $2,$4
+  add $2,1
   seq $2,189727 ; Fixed point of the morphism 0->011, 1->110.
   add $2,$4
 lpe

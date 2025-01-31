@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,180433 ; Binary string formed from the binary expansion of Pi by exchanging 0's and 1's.
   gcd $3,2
   sub $0,$3

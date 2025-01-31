@@ -18,6 +18,7 @@ lpb $1
     sub $0,$6
     lpb $0
       mov $2,$0
+      add $2,1
       seq $2,185399 ; As p runs through the primes, sequence gives denominator of Sum_{k=1..p-1} 1/k.
       add $3,$2
       pow $0,7

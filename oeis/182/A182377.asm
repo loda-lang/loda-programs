@@ -2,7 +2,10 @@
 ; Submitted by Dylan Delgado
 ; 0,0,0,1,2,5,8,14,21,32,45,67,91
 
+#offset 1
+
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   add $3,$2

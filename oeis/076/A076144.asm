@@ -10,6 +10,7 @@ sub $0,2
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   mov $6,$1
   add $6,$1

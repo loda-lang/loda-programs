@@ -12,6 +12,7 @@ lpb $2
   sub $2,2
   mov $3,$5
   add $3,$1
+  add $3,1
   seq $3,188641 ; Characteristic function of Niven (or Harshad) numbers.
   sub $0,$3
   mov $4,$0

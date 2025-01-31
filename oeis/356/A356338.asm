@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   add $1,$4
+  add $0,1
   seq $0,185003 ; a(n) = Sum_{k=1..n} binomial(n,k)*sigma(k).
   bin $1,$4
   mul $1,$0

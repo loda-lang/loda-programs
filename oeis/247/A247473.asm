@@ -8,6 +8,7 @@ sub $0,1
 mov $1,$0
 neq $1,0
 trn $0,1
+add $0,1
 seq $0,180221 ; Numbers that can be written as sum of one or more distinct elements of A000043. Numbers k for which sigma(A180162(k))=2^k, k>=2.
 mul $0,$1
 mov $2,2

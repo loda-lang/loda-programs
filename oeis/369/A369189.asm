@@ -8,5 +8,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,185027 ; Sum of the triangular divisors of n.
 mov $0,$1

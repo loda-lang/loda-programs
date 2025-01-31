@@ -8,6 +8,7 @@ mov $2,$0
 lpb $0
   add $0,$3
   mov $3,$1
+  add $3,1
   seq $3,187482 ; Rank transform of the sequence ceiling(2n/3); complement of A187483.
   sub $0,$3
   add $1,1

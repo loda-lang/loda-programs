@@ -10,6 +10,7 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
+add $0,1
 seq $0,187107 ; Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
 sub $0,7
 add $0,$1

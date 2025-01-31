@@ -9,6 +9,7 @@ pow $2,3
 lpb $2
   sub $2,7
   mov $5,$1
+  add $5,1
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $5,1
   seq $5,287792 ; Positions of 1 in A287790; complement of A287791.

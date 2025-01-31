@@ -17,6 +17,7 @@ lpb $3
     add $0,$7
     sub $0,1
     pow $0,2
+    add $0,1
     seq $0,184103 ; a(n) = n-1+ceiling(n^2/16); complement of A184102.
     mov $4,$0
     div $4,2

@@ -11,6 +11,7 @@ mov $1,1
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,189298 ; Zero-one sequence based on the sequence (4n):  a(A008586(k))=a(k); a(A042968(k))=1-a(k), a(1)=0, a(2)=1, a(3)=1.
   equ $3,0
   sub $0,$3

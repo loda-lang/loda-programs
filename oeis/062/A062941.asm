@@ -11,6 +11,7 @@ lpb $3
   sub $3,1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,181354 ; Number of n-digit perfect cubes.
   mov $4,$3
   mul $4,$0

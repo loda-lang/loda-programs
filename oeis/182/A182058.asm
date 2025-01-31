@@ -1,6 +1,9 @@
 ; A182058: Number of moves needed to solve the Towers of Hanoi puzzle with 6 pegs and n disks.
 ; 1,3,5,7,9,13,17,21,25,29,33,37,41,45,49,57,65,73,81,89
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,$0
 mov $0,3

@@ -3,7 +3,7 @@
 
 mov $1,$0
 gcd $1,7
-cmp $0,2
+equ $0,2
 add $0,1
 bin $0,$1
 pow $0,2

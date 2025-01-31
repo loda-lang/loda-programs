@@ -6,6 +6,7 @@
 
 sub $0,1
 lpb $0
+  add $0,1
   seq $0,182105 ; Number of elements merged by bottom-up merge sort.
   sub $0,2
   add $1,8

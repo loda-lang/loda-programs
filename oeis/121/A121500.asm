@@ -4,7 +4,7 @@
 
 #offset 3
 
-sub $0,3
+sub $0,2
 seq $0,181021 ; Maximum number of 1s in an nX(n+2) binary matrix with no three 1s adjacent in a line along a row, column or diagonally.
 mov $1,$0
 mul $0,4

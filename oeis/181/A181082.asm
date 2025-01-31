@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,181083 ; a(n) = Sum_{k=0..floor(n/2)} binomial(n-k,k)^n * n/(n-k).
     mov $9,10
     add $9,$5

@@ -16,6 +16,7 @@ lpb $2
   div $3,$6
   add $3,1
   mov $5,$1
+  add $5,1
   seq $5,181434 ; First column in matrix inverse of a mixed convolution of A052542.
   add $5,1
   mul $5,$3

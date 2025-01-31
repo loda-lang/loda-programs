@@ -9,6 +9,7 @@ lpb $0
   div $0,6
   sub $0,9
 lpe
+add $0,1
 seq $0,181821 ; a(n) = smallest integer with factorization as Product p(i)^e(i) such that Product p(e(i)) = n.
 pow $0,2
 sub $0,1

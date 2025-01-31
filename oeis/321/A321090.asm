@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $0,0
+  add $0,1
   seq $0,189706 ; Fixed point of the morphism 0->011, 1->001.
   add $4,$0
   mov $2,$3

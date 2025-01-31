@@ -14,5 +14,4 @@ add $0,1
 lpb $0
   gcd $0,$1
 lpe
-sub $0,1
 seq $0,184096 ; Half the number of n X n toroidal binary arrays with each element having the sum of its vertical neighbors equal to the sum of its horizontal neighbors

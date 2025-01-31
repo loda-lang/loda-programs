@@ -11,6 +11,7 @@ lpb $4
   sub $1,1
   mov $5,$1
   max $1,0
+  add $1,1
   seq $1,189706 ; Fixed point of the morphism 0->011, 1->001.
   add $5,$1
   mov $3,$4
@@ -22,5 +23,5 @@ mul $6,$5
 sub $2,$6
 mov $1,$2
 sub $1,3
-cmp $0,0
+equ $0,0
 sub $0,$1

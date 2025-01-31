@@ -11,6 +11,7 @@ lpb $2
   mov $5,$4
   mov $0,$1
   sub $0,$2
+  add $0,1
   seq $0,188433 ; a(n) = [2r]-[nr]-[2r-nr], where r=(1+sqrt(5))/2 and [.]=floor.
   add $3,$0
   add $4,$3

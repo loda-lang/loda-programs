@@ -16,6 +16,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,186690 ; Expansion of - (1/8) theta_3''(0, q) / theta_3(0, q) in powers of q.
     mul $7,2
     mul $7,$$9

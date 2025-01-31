@@ -1,7 +1,11 @@
 ; A189687: Fixed point of the morphism 0->011, 1->01.
 ; Submitted by Skillz
 ; 0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1
+; Formula: a(n) = -2*truncate(truncate(sqrtint(2*(2*n+1)^2)^(-2*truncate(sqrtint(2*(2*n-1)^2)/2)+sqrtint(2*(2*n-1)^2)))/2)+truncate(sqrtint(2*(2*n+1)^2)^(-2*truncate(sqrtint(2*(2*n-1)^2)/2)+sqrtint(2*(2*n-1)^2)))
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $1,$0
 add $1,3

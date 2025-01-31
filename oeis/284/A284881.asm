@@ -12,7 +12,7 @@ lpb $3
   div $0,2
   mul $0,2
   mov $7,$0
-  add $7,1
+  add $7,2
   seq $7,189727 ; Fixed point of the morphism 0->011, 1->110.
   add $0,1
   sub $0,$7

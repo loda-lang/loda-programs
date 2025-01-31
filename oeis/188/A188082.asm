@@ -1,9 +1,10 @@
 ; A188082: [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
 ; Submitted by GPV67
 ; 1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1
-; Formula: a(n) = -2*truncate((sqrtint((sqrtint((n+1)*(3*n+3))+n+4)*(3*sqrtint((n+1)*(3*n+3))+3*n+12))+sqrtint((n+1)*(3*n+3))+n+4)/2)+sqrtint((sqrtint((n+1)*(3*n+3))+n+4)*(3*sqrtint((n+1)*(3*n+3))+3*n+12))+sqrtint((n+1)*(3*n+3))+n+4
+; Formula: a(n) = -2*truncate((sqrtint((sqrtint(3*n^2)+n+3)*(3*sqrtint(3*n^2)+3*n+9))+sqrtint(3*n^2)+n+3)/2)+sqrtint((sqrtint(3*n^2)+n+3)*(3*sqrtint(3*n^2)+3*n+9))+sqrtint(3*n^2)+n+3
 
-add $0,1
+#offset 1
+
 mov $2,$0
 mul $2,2
 add $2,$0

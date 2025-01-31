@@ -10,6 +10,7 @@ seq $0,57300 ; Binary counter with odd/even bit positions swapped; base-4 counte
 add $0,1
 bin $0,2
 mov $1,$0
+add $1,1
 seq $1,188012 ; Positions of 0 in A188011; complement of A188013.
 lpb $0
   mov $2,$1

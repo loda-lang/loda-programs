@@ -5,8 +5,7 @@
 mov $2,2
 lpb $0
   lpb $3
-    cmp $4,4
-    cmp $4,0
+    neq $4,4
     sub $3,$4
     add $6,1
     add $7,$1

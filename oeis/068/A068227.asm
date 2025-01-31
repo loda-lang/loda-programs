@@ -5,7 +5,6 @@
 #offset 1
 
 mov $2,2
-sub $0,1
 seq $0,180217 ; a(n) = (n-th prime modulo 3) + (n-th prime modulo 4).
 lpb $0
   mul $2,2

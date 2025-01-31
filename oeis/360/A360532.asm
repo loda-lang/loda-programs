@@ -11,7 +11,6 @@ lpb $2
   add $3,1
   seq $3,7298 ; Sums of consecutive Fibonacci numbers.
   mov $5,$3
-  sub $3,1
   seq $3,188432 ; Fixed point of the morphism 0->001, 1->01.
   sub $5,$3
   sub $0,$3

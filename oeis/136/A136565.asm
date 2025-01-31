@@ -1,13 +1,13 @@
 ; A136565: a(n) = sum of the distinct values making up the exponents in the prime-factorization of n.
 ; Submitted by vanos0512
 ; 0,1,1,2,1,1,1,3,2,1,1,3,1,1,1,4,1,3,1,3,1,1,1,4,2,1,3,3,1,1,1,5,1,1,1,2,1,1,1,4,1,1,1,3,3,1,1,5,2,3,1,3,1,4,1,4,1,1,1,3,1,1,3,6,1,1,1,3,1,1,1,5,1,1,3,3,1,1,1,5
-; Formula: a(n) = A056239(gcd(A181819(n-1),A002110(2*n-2)))
+; Formula: a(n) = A056239(gcd(A181819(n),A002110(2*n-2)))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $0,1
 mov $2,$0
 add $2,$0
 seq $2,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.

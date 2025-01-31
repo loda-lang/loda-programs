@@ -16,7 +16,6 @@ lpb $2
   mov $3,$5
   add $3,1
   seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
-  sub $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,181075 ; a(n) = Sum_{k=0..n-1} C(n-1,k)^(k+1) * n/(n-k).
     mov $9,10
     add $9,$5

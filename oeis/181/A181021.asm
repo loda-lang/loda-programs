@@ -2,7 +2,9 @@
 ; Submitted by Jon Maiga
 ; 2,6,9,13,20,26,33,42,52,62
 
-add $0,2
+#offset 1
+
+add $0,1
 bin $0,2
 mov $2,$0
 lpb $0

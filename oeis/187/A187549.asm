@@ -2,9 +2,11 @@
 ; Submitted by Cruncher Pete
 ; 1,0,0,2,1,9,1,6,8,3,4,0
 
+#offset 2
+
 mov $2,1
 mov $7,1
-add $0,1
+sub $0,1
 lpb $0
   sub $0,1
   sub $3,1
@@ -19,7 +21,7 @@ lpb $0
   sub $1,$2
   add $2,$1
   add $5,$4
-  cmp $6,2
+  equ $6,2
   add $6,$5
   add $6,$3
   mov $1,$3

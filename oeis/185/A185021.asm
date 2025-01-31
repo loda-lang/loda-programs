@@ -5,13 +5,13 @@ mov $2,1
 mov $3,$0
 lpb $3
   mov $1,$3
-  cmp $1,0
+  equ $1,0
   mul $2,$3
   add $3,$1
   add $4,1
   mod $4,$3
   mov $1,$4
-  cmp $1,0
+  equ $1,0
   mov $5,$4
   add $5,$1
   div $2,$5

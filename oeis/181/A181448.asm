@@ -1,9 +1,12 @@
-; A181448: Numbers n such that 5 is the largest prime factor of n^2 - 1.
+; A181448: Numbers k such that 5 is the largest prime factor of k^2 - 1.
 ; Submitted by Science United
 ; 4,9,11,19,26,31,49,161
 
+#offset 1
+
 mov $2,$0
-add $2,6
+sub $0,1
+add $2,5
 pow $2,3
 lpb $2
   mov $3,$1

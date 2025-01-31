@@ -8,10 +8,11 @@ mov $2,$0
 sub $0,1
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,188967 ; Zero-one sequence based on (3n-2): a(A016777(k))=a(k); a(A007494(k))=1-a(k); a(1)=0.
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

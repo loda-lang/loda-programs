@@ -7,5 +7,4 @@
 lpb $0
   dif $0,3
 lpe
-sub $0,1
 seq $0,181905 ; Expansion of (b(q^3)^3 - b(q)^3) / 9 in powers of q where b() is a cubic AGM theta function.

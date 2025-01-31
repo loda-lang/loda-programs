@@ -2,8 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 1,3,37,71,681,1291,12237,23183,219601,416019,3940597,7465175
 
+#offset 1
+
 mov $3,1
-add $0,1
 lpb $0
   sub $0,1
   add $2,$3

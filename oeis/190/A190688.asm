@@ -7,6 +7,7 @@ mov $5,2
 lpb $5
   sub $5,1
   mov $0,$2
+  add $0,1
   seq $0,182778 ; Beatty sequence for 3 + sqrt(3).
   sub $4,$3
   sub $4,$1

@@ -1,8 +1,9 @@
 ; A182581: (3-adic valuation of n), read mod 2.
 ; 0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0
-; Formula: a(n) = -4*truncate(truncate(gcd(gcd(0,n+1),81)/2)/4)+truncate(gcd(gcd(0,n+1),81)/2)
+; Formula: a(n) = -4*truncate(truncate(gcd(gcd(0,n),81)/2)/4)+truncate(gcd(gcd(0,n),81)/2)
 
-add $0,1
+#offset 1
+
 gcd $1,$0
 gcd $1,81
 div $1,2

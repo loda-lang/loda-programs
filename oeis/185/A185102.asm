@@ -2,8 +2,12 @@
 ; Submitted by Science United
 ; 0,1,1,2,1,1,1,2,2,1,1,2,1,1,1,3,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,2,1,1,3,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,2,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,3
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $2,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
   seq $0,264668 ; a(n) = A264600(n) - A061486(n).

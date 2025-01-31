@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,5811 ; Number of runs in binary expansion of n (n>0); number of 1's in Gray code for n.
+  add $3,1
   seq $3,188170 ; The number of divisors d of n of the form d == 3 (mod 8).
   mul $3,2
   equ $3,2

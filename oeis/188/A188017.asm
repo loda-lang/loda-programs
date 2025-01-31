@@ -1,10 +1,40 @@
 ; A188017: [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=6, [ ]=floor.
 ; Submitted by vanos0512
 ; 1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,0,1
-; Formula: a(n) = -2*truncate(A019587(A075317(n+1)+127)/2)+A019587(A075317(n+1)+127)
 
-add $0,1
-seq $0,75317 ; Pair the odd numbers such that the k-th pair is (r, r+2k) where r is the smallest odd number not included earlier: (1,3),(5,9),(7,13),(11,19),(15,25),(17,29),(21,35),(23,39),(27,45),... This is the sequence of the first member of pairs.
-add $0,127
-seq $0,19587 ; The left budding sequence: # of i such that 0<i<=n and 0 < {tau*i} <= {tau*n}, where {} is fractional part.
+#offset 1
+
+mov $1,$0
+mul $1,5
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
+mov $0,$1
+mul $0,2
+add $0,126
+mov $3,0
+mov $4,$0
+add $4,1
+sub $0,1
+lpb $0
+  mov $2,$0
+  add $2,1
+  mov $5,$2
+  mul $5,4
+  add $5,$2
+  mul $5,$2
+  nrt $5,2
+  sub $5,$2
+  div $5,2
+  sub $0,1
+  mov $2,$5
+  add $2,1
+  add $3,$2
+lpe
+add $3,2
+mov $0,$3
+mul $0,2
+sub $0,1
+mod $0,$4
 mod $0,2

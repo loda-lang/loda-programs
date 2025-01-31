@@ -10,6 +10,7 @@ lpb $2
   div $2,11
   mov $1,729
   sub $1,$3
+  add $1,1
   seq $1,189727 ; Fixed point of the morphism 0->011, 1->110.
   add $1,$3
 lpe

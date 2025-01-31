@@ -10,8 +10,8 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
-  pow $3,6
-  nrt $3,4
+  pow $3,3
+  nrt $3,2
   add $0,1
   add $1,1
   add $2,$3

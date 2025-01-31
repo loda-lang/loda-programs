@@ -12,7 +12,8 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,181069 ; Expansion of l.g.f.: Sum_{n>=1} [ Sum_{k>=0} C(n+k-1,k)^4 *x^k ] *x^n/n.
+    add $7,1
+    seq $7,181069 ; Expansion of l.g.f. Sum_{n>=1} [ Sum_{k>=0} C(n+k-1,k)^4 *x^k ] *x^n/n.
     mov $9,10
     add $9,$5
     mul $7,$$9

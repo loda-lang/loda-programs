@@ -2,19 +2,30 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $4,$1
-  seq $4,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $4,2
+  mul $4,2
+  mov $5,$4
+  nrt $5,2
   mov $3,$1
   add $3,1
-  seq $3,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+  pow $3,2
+  mul $3,2
+  mov $4,$5
+  mov $6,$3
+  nrt $6,2
+  mov $3,$6
   add $3,1
-  add $3,$4
+  add $3,$5
   mod $3,2
   add $3,3
   sub $0,$3
   add $1,1
   add $2,3
-  cmp $2,$0
+  equ $2,$0
 lpe
 mov $0,$2

@@ -9,5 +9,4 @@ seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2
 sub $0,1
 seq $0,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
 seq $0,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
-sub $0,1
 seq $0,181591 ; a(n) = binomial(bigOmega(n),omega(n)), where omega = A001221 and bigOmega = A001222.

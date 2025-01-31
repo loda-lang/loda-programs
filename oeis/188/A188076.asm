@@ -9,8 +9,9 @@ mov $1,148
 mov $2,$0
 lpb $2
   sub $2,1
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,188090 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=5, [ ]=floor.
+  add $1,1
 lpe
 mov $0,$3

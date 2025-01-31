@@ -9,6 +9,7 @@ lpb $0
   mov $1,-1
   pow $1,$0
   mov $2,$0
+  add $2,1
   seq $2,182038 ; Expansion of eta(q) * eta(q^36) / (eta(q^4) * eta(q^9)) in powers of q.
   mul $2,$1
   mul $0,0

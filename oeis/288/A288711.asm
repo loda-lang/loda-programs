@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   div $0,2
   max $0,2
+  add $0,1
   seq $0,189663 ; Partial sums of A189661.
   mov $2,$3
   mul $2,$0

@@ -2,6 +2,9 @@
 ; Submitted by [AF>WildWildWest]Sebastien
 ; 1,2,4,8,10,16,20,26,32,40,52,64,80,100
 
+#offset 1
+
+sub $0,1
 equ $1,$0
 sub $0,1
 mov $2,1

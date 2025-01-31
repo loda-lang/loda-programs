@@ -2,6 +2,9 @@
 ; Submitted by LCB001
 ; 1,1,2,3,5,7,11,22,77,101
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
@@ -15,7 +18,7 @@ lpb $2
   sub $6,2
   add $3,$6
   mov $5,$3
-  seq $3,337345 ; Number of divisors d of n for which A003961(d) > 2*d.
+  seq $3,337345 ; Number of divisors d of n for which A003961(d) > 2*d, where A003961 is fully multiplicative with a(p) = nextprime(p).
   equ $3,0
   sub $0,$3
   add $1,2

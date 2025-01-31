@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,186193 ; Numbers n such that n!! is divisible by (n+1).
   mov $5,$3
   add $3,3

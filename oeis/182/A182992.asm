@@ -2,6 +2,9 @@
 ; Submitted by Mumps
 ; 1,2,5,9,17,34,55,96,163,260,413,658,1000,1528,2304,3405,5003,7302,10497,15022,21330,30010,41980,58395,80607,110740,151334,205623,278119,374513,501842,669828,890461,1178960,1555314
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $2,2
 lpb $2
@@ -14,10 +17,15 @@ lpb $2
   mov $0,0
   seq $0,171800 ; a(n) = ((n+1)*2^n + 1)*(2^n + 1)^(n-1).
   mul $0,$5
-  add $0,2
-  seq $0,138135 ; Number of parts > 1 in the last section of the set of partitions of n.
+  add $0,1
+  mov $6,$0
+  seq $6,233968 ; Number of steps between two valleys at height 0 in the infinite Dyck path in which the k-th ascending line segment has A141285(k) steps and the k-th descending line segment has A194446(k) steps, k >= 1.
+  div $6,2
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  sub $6,$0
+  mov $0,$6
   mov $1,$2
-  mul $1,$0
+  mul $1,$6
   add $3,$1
 lpe
 min $4,1

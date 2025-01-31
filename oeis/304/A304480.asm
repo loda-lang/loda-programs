@@ -7,6 +7,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,185633 ; For odd n, a(n) = 2; for even n, a(n) = denominator of Bernoulli(n)/n; The number 2 alternating with the elements of A006953.
   max $3,$1
   mov $1,$2

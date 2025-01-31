@@ -10,5 +10,6 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
+add $1,1
 seq $1,187219 ; Number of partitions of n that do not contain parts less than the smallest part of the partitions of n-1.
 mov $0,$1

@@ -1,9 +1,10 @@
 ; A331048: Nearest integer to A001055(n)/A045778(n), where A001055 is factorizations and A045778 is strict factorizations.
 ; Submitted by Science United
 ; 1,1,1,2,1,1,1,2,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2
-; Formula: a(n) = A359289(gcd(A181819(n),A002110(2*n))-1)
+; Formula: a(n) = A359289(gcd(A181819(n+1),A002110(2*n))-1)
 
 mov $1,$0
+add $1,1
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 mov $2,$0
 add $2,$0

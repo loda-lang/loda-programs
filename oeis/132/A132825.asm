@@ -4,9 +4,9 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
 seq $2,182720 ; Triangle read by rows: T(n,k) = A000041(k) if k divides n, T(n,k)=0 otherwise.
+sub $0,1
 seq $0,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
 mov $1,$0
 lpb $1

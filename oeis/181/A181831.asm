@@ -11,7 +11,7 @@ lpb $0
   dif $3,$0
   add $3,$2
   pow $3,$0
-  cmp $4,$0
+  equ $4,$0
   sub $4,$0
   div $4,$3
   sub $0,1

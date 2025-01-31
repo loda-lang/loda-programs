@@ -9,7 +9,6 @@ lpb $2
   mov $6,$1
   add $6,3
   seq $6,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
-  sub $6,1
   seq $6,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   add $1,2
   mov $3,$1

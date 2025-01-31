@@ -26,6 +26,7 @@ lpb $1
       add $0,$4
       mul $0,2
       trn $0,1
+      add $0,1
       seq $0,183139 ; a(n) = [1/r]+[2/r]+...+[n/r], where r=sqrt(2) and []=floor.
       mul $0,9
       mov $5,$4

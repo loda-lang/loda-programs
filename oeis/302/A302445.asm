@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,185910 ; Array: T(n,k) = n^2 + k - 1, by antidiagonals.
   mov $5,$3
   add $3,1

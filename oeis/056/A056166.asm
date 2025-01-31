@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $5,1
   seq $5,257994 ; Number of prime parts in the partition having Heinz number n.

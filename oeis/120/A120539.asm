@@ -11,6 +11,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,183221 ; Complement of the 9-gonal numbers.
   mul $1,$0
   add $3,$1

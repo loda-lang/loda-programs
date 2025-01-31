@@ -10,6 +10,7 @@ sub $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,187970 ; Positions of 0 in A187969; complement of A187971.
   pow $3,2
   mul $3,2

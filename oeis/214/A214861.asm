@@ -8,6 +8,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,184738 ; floor(nr+h), where r=-1+sqrt(5), h=1/2; complement of A184735.
   mov $2,$3
   mul $2,$0

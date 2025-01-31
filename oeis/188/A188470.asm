@@ -2,8 +2,10 @@
 ; Submitted by Landjunge
 ; 1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
 
+#offset 1
+
 mov $1,3
-add $0,2
+add $0,1
 lpb $0
   seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
   sub $0,1
