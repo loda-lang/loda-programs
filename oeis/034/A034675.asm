@@ -6,15 +6,15 @@ mov $1,3
 pow $1,$0
 mov $2,1
 add $2,$1
-mov $3,0
 mov $4,2
 pow $4,$0
 mov $6,-1
 mov $7,0
 mov $9,2
-mov $11,1
+mov $11,-1
 mov $14,-2
 mov $15,0
+mov $16,1
 mov $0,2
 pow $1,2
 add $2,$1
@@ -27,10 +27,11 @@ lpb $5
   add $3,1
   mul $3,$4
 lpe
-mov $8,46
+div $2,2
 mov $12,0
 mov $13,-11
 mov $0,$3
 add $0,1
 mul $0,$2
-div $0,2
+bin $4,$2
+mov $17,1
