@@ -1,19 +1,22 @@
 ; A265411: a(0) = 1, a(1) = 7, otherwise, if A240025(n-1) = 1 [when n is in A033638] a(n) = 3, otherwise a(n) = 1.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 1,7,3,3,1,3,1,3,1,1,3,1,1,3,1,1,1,3,1,1,1,3,1,1,1,1,3,1,1,1,1,3,1,1,1,1,1,3,1,1,1,1,1,3,1,1,1,1,1,1,3,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,1,1,1,1,1
 
-mov $4,$0
+mov $1,$0
 mov $3,2
 lpb $3
-  div $3,2
-  mov $0,$4
+  sub $3,1
+  mov $0,$1
   add $0,$3
-  seq $0,265413 ; Positions of records in A265410: a(0) = 1; for n >= 1, a(n) = 1 + A265412(n-1).
+  trn $0,1
+  seq $0,307136 ; a(n) = ceiling(2*sqrt(A000037(n))), n >= 1.
   mov $2,$3
   mul $2,$0
-  add $1,$2
-  mul $4,$3
-  mov $5,$0
+  add $4,$2
 lpe
-sub $1,$5
-mov $0,$1
+min $1,1
+mul $1,$0
+mov $0,$4
+sub $0,$1
+mul $0,2
+add $0,1

@@ -2,5 +2,8 @@
 ; Submitted by UBT - wbiz
 ; 1,2,3,2,3,2,3,2,3,2,3,2,3,2,3
 
-dir $0,3
+#offset 1
+
+sub $0,1
+dgr $0,3
 add $0,1

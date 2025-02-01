@@ -588,6 +588,7 @@ A262774: Expansion of psi(x^2) * phi(-x^3) in powers of x where phi(), psi() are
 A262780: Expansion of phi(-x^6) * psi(x^4) + x * phi(-x^2) * psi(x^12) in powers of x where phi(), psi() are Ramanujan theta functions.
 A265673: Area A under the trajectory of each odd number in the "3x+1" problem.
 A268335: Exponentially odd numbers.
+A268340: Characteristic function of the prime powers p^k, k >= 2.
 A270248: Even Löschian numbers.
 A270672: Löschian numbers (A003136) that are multiples of 3.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).

@@ -1,24 +1,19 @@
 ; A379422: a(n) = n + floor(n*r/t) + floor(n*s/t), where r = 5^(1/4), s = 5^(1/2), t = 5^(3/4).
-; Submitted by Science United
+; Submitted by HansCCT
 ; 1,3,6,7,10,12,14,16,19,20,22,25,26,29,31,33,35,38,39,41,44,45,48,50,52,54,57,58,60,63,64,67,69,71,73,76,77,79,82,83,86,88,90,92,95,96,99,101,102,105,107,109,111,114,115,118,120,121,124,126,128,130
-; Formula: a(n) = sqrtint(floor(((n+1)^2)/5))+truncate(sqrtint((2*n+5)^2)/3)+n
+; Formula: a(n) = floor((2*n+5)/3)+sqrtint(floor(((n+1)^2)/5))+n
 
 mov $3,1
 add $3,$0
-mov $4,$3
-pow $4,2
-add $0,2
+mov $2,$3
+pow $2,2
 mul $0,2
-mov $1,$4
+add $0,5
+mov $1,$2
 div $1,5
 nrt $1,2
 add $1,1
 add $3,$1
-add $0,1
-pow $0,2
-mov $2,$0
-nrt $2,2
-mov $0,$2
 div $0,3
 sub $0,2
 add $0,$3

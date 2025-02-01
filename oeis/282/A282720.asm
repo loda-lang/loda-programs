@@ -1,12 +1,14 @@
 ; A282720: Number of nonzero terms in first n rows of the base-2 generalized Pascal triangle P_2 (see A282714).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Goldislops
 ; 0,1,3,6,9,13,18,23,27,32,39,47,54,61,69,76,81,87,96,107,117,128,141,153,162,171,183,196,207,217,228,237,243,250,261,275,288,303,321,338,351,365,384,405,423,440,459,475,486,497,513,532,549,567,588,607,621,634,651,669,684,697,711,722,729,737,750,767,783,802,825,847,864,883,909,938,963,987,1014,1037
-; Formula: a(n) = a(n-1)+A007306(n), a(0) = 0
+; Formula: a(n) = a(n-1)+A287896(2*max(n-1,0)), a(0) = 0
 
 lpb $0
-  mov $2,$0
-  seq $2,7306 ; Denominators of Farey tree fractions (i.e., the Stern-Brocot subtree in the range [0,1]).
   sub $0,1
+  mov $2,$0
+  max $2,0
+  mul $2,2
+  seq $2,287896 ; a(n) = A002487(n)*A001511(n).
   add $1,$2
 lpe
 mov $0,$1
