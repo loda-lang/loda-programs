@@ -12,7 +12,7 @@ lpb $2
   sub $2,$3
   add $2,1
   seq $2,122825 ; a(n) = n + number of previous prime terms, a(1) = 1.
-  sub $2,2
+  sub $2,1
   seq $2,205959 ; a(n) = n^omega(n)/rad(n).
   sub $0,1
   mul $1,$2

@@ -8,7 +8,7 @@ mov $3,4
 lpb $3
   div $3,2
   mov $0,$2
-  add $0,1
+  add $0,2
   seq $0,206555 ; Number of 5's in the last section of the set of partitions of n.
   add $1,$0
   add $2,1

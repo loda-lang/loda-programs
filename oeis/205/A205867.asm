@@ -2,6 +2,8 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 6,7,7,8,10,11,12,12,13,13,13,14,14,15,16,16,16,17,17,18,18,18,18,19,19,19,19,19,20,20,20,21,22,22,22,22,23,23,23,24,24,24,24,24,25,25,25,25,25,25
 
+#offset 1
+
 mov $1,1
 seq $0,205866 ; Positions of multiples of 8 in A204922 (differences of Fibonacci numbers).
 sub $0,2

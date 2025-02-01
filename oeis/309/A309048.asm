@@ -12,8 +12,9 @@ lpb $0
   add $4,6
   lpb $4
     mov $7,$4
-    seq $7,204164 ; Symmetric matrix based on f(i,j)=floor[(i+j)/2], by antidiagonals.
-    cmp $7,2
+    add $7,1
+    seq $7,204164 ; Symmetric matrix based on f(i,j) = floor((i+j)/2), by antidiagonals.
+    equ $7,2
     mov $9,10
     add $9,$5
     mov $10,1

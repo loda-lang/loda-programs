@@ -15,7 +15,7 @@ lpb $2
   bin $1,3
   div $1,4
   gcd $1,$4
-  cmp $1,$4
+  equ $1,$4
   add $3,$1
 lpe
 mov $0,$3

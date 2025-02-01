@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,202535 ; a(n) = n*phi(n)*abs( mobius(n) ).
   mod $3,3
   gcd $3,4

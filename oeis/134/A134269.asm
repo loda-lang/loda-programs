@@ -12,6 +12,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   add $0,$5
+  add $0,1
   seq $0,205959 ; a(n) = n^omega(n)/rad(n).
   sub $0,$2
   mov $5,$2

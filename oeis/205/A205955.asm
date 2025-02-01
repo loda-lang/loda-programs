@@ -1,11 +1,13 @@
 ; A205955: a(n) = prime(n) * (prime(n+2) - prime(n+1)).
 ; Submitted by Jamie Morken(w4)
 ; 4,6,20,14,44,26,68,114,46,174,124,74,164,258,282,106,354,244,134,426,292,474,664,356,194,404,206,428,1526,452,762,262,1370,278,894,906,628,978,1002,346,1790,362,764,386,2364,2388,844,446,908,1374,466,2390,1446,1506,1542,526,1614,1084,554,2810,3962,1172,614,1244,4382,1902,3310,674,1388,2094,2824,2154,2202,1492,2274,3064,1556,3176,4010,818
-; Formula: a(n) = A001223(n+2)*A000040(n+1)
+; Formula: a(n) = A013632(A000040(n+1))*A000040(n)
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,40 ; The prime numbers.
-add $0,2
-seq $0,1223 ; Prime gaps: differences between consecutive primes.
+add $0,1
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.
 mul $0,$1

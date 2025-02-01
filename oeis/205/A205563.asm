@@ -5,7 +5,6 @@
 #offset 1
 
 dif $0,2
-sub $0,1
 seq $0,204931 ; Least k such that n divides A204930(k), the k-th difference of two distinct factorials.
 add $0,1
 seq $0,107436 ; a(n) = (a^5)(n-1) + a(n-a(n-1)) = a(a(a(a(a(n-1))))) + a(n-a(n-1)), a(1) = a(2) = 1.

@@ -7,7 +7,7 @@ add $3,1
 lpb $3
   sub $3,1
   mov $2,$3
-  cmp $2,0
+  equ $2,0
   add $3,$2
   add $4,1
   mul $4,2

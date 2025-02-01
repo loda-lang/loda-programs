@@ -8,6 +8,7 @@ mov $1,1
 sub $0,2
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,202318 ; Let (n)_p denote the exponent of prime p in the prime power factorization of n. Then a(n) is defined by the formulas a(1)=1; for n >= 2, (a(n))_2 = (n)_2, (a(n))_3 = (n)_3 and, for p >= 5, (a(n))_p = 1 + ((2n)/(p-1))_p if p-1|2*n, and (a(n))_p = 0 otherwise.
   lpb $3
     mov $3,0

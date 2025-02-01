@@ -2,6 +2,8 @@
 ; Submitted by PDW
 ; 3,3,5,1,4,8,8,10,3,5,6,2,4,9,2,13,2,13,15,8,10,11,1,7,4,9,14,1,7,18,1,7,18,20,2,13,15,16,3,5,6,12,4,9,14,19,3,5,6,12,23,3,5,6,12,23,25,1,7,18
 
+#offset 1
+
 mov $1,1
 seq $0,205851 ; Positions of multiples of 5 in A204922 (differences of Fibonacci numbers).
 sub $0,2

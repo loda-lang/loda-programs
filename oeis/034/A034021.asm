@@ -11,6 +11,7 @@ lpb $2
   mov $5,$1
   seq $5,211776 ; a(n) = Product_{d | n} tau(d).
   mov $3,$1
+  add $3,1
   seq $3,206032 ; a(n) = Product_{d|n} sigma(d) where sigma = A000203.
   mul $5,$3
   mov $3,$5

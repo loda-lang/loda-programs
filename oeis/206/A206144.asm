@@ -1,14 +1,28 @@
 ; A206144: Number of (n+1) X 3 0..2 arrays with every 2 X 3 or 3 X 2 subblock having exactly three counterclockwise and three clockwise edge increases.
 ; Submitted by Simon Strandgaard
 ; 60,246,1122,5118,23346,106494,485778,2215902,10107954,46107966,210323922,959403678,4376370546,19963045374,91062485778,415386338142,1894806719154,8643260919486,39426691159122,179846933956638,820381287464946,3742212569411454,17070300272127378,77867076221813982,355194780564815154,1620239750380447806,7390809190772608722,33713566453102147998,153786213883965522546,701503936513623316734,3199947254800185538578,14596728400973681059422,66583747495268034219954,303725280674392808980926
-; Formula: a(n) = 3*A180104(A205312(n)+20)+3*A205312(n)-306
+; Formula: a(n) = 3*truncate(b(n+2)/4)+3*truncate(100/(truncate(b(n+2)/4)+21)), b(n) = 5*b(n-1)-2*b(n-2), b(3) = 72, b(2) = 16, b(1) = 4, b(0) = 2
 
-seq $0,205312 ; Number of (n+1) X 3 0..1 arrays with every 2 X 2 subblock having the same number of equal edges, and new values 0..1 introduced in row major order.
+#offset 1
+
+mov $3,2
+mov $4,1
+add $0,2
+lpb $0
+  sub $0,1
+  mul $4,2
+  add $3,$4
+  add $4,$3
+lpe
+mov $0,$3
+div $0,4
+add $0,2
 mov $1,18
 add $1,$0
-add $1,2
-seq $1,180104 ; Floor( 100*n/(n-1) ).
-add $1,$0
-mov $0,$1
+add $1,1
+mov $2,100
+div $2,$1
+add $2,100
+add $0,$2
 mul $0,3
 sub $0,306

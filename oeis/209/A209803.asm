@@ -20,7 +20,7 @@ lpb $0
   sub $3,$5
   mul $5,2
   add $5,$3
-  cmp $1,1
+  equ $1,1
   add $1,1
 lpe
 mov $0,$5

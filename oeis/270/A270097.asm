@@ -7,6 +7,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,204987 ; Least k such that n divides 2^k - 2^j for some j satisfying 1 <= j < k.
   mov $3,$1
   mod $3,2

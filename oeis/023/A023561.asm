@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,202278 ; Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
   add $0,$3
   trn $0,3

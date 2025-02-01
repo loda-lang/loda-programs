@@ -9,7 +9,13 @@ lpb $3
   div $3,2
   mov $0,$1
   add $0,$3
-  seq $0,109724 ; Sum of the first n^2 primes.
+  pow $0,2
+  mov $4,0
+  max $4,$0
+  add $4,1
+  seq $4,14284 ; Partial sums of primes, if 1 is regarded as a prime (as it was until quite recently, see A008578).
+  mov $0,$4
+  sub $0,1
   mul $1,$3
   mul $2,$0
 lpe

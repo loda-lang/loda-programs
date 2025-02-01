@@ -3,6 +3,8 @@
 ; 1,2,1,2,1,3,2,2,1,2,1,3,2,2,1,2,1,3,2,2,1,4,4,3,2,2,1,2,1,4,3,3,3,2,1,3,3,2,1,2,1,3,2,2,1,4,2,3,2,2,1,4,2,3,2,2,1,2,1,4,3,3,3,2,1,3,2,2,1,2
 ; Formula: a(n) = truncate(A065881(A013632(A204896(n)+1)+2)/2)
 
+#offset 1
+
 seq $0,204896 ; p(n)-q(n), where (p(n), q(n)) is the least pair of primes (ordered as in A204890) for which n divides p(n)-q(n).
 add $0,1
 seq $0,13632 ; Difference between n and the next prime greater than n.

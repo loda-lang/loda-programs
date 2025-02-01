@@ -11,6 +11,7 @@ lpb $1
   max $3,0
   mov $5,-1
   pow $5,$3
+  add $3,1
   seq $3,206369 ; a(p^k) = p^k - p^(k-1) + p^(k-2) - ... +- 1, and then extend by multiplicativity.
   mul $3,$5
   add $2,$3

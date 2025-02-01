@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,203010 ; (n-1)-st elementary symmetric function of first n Lucas numbers, starting with L(1)=1.
   bin $0,$3
   gcd $1,$2

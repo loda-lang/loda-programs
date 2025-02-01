@@ -12,6 +12,7 @@ lpb $2
   sub $2,19
   add $4,1
   mov $3,$1
+  add $3,1
   seq $3,204890 ; Ordered differences of primes.
   div $3,$4
   mov $5,$3

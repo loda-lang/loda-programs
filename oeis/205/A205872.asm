@@ -2,6 +2,8 @@
 ; Submitted by http://extinction.petrsu.ru/
 ; 7,9,10,12,12,13,13,13,14,16,17,17,18,19,20,21,21,21,21,22,22,22,23,24,24,24,24,25,25,25,25,25,26,26,27,27,28,28,29,29,29,29,29,30,30,31,31,31,32,32
 
+#offset 1
+
 mov $1,1
 seq $0,205871 ; Positions of multiples of 9 in A204922 (differences of Fibonacci numbers).
 sub $0,2

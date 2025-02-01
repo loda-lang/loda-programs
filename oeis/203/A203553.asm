@@ -4,12 +4,12 @@
 
 lpb $0
   add $1,$2
-  cmp $2,0
+  equ $2,0
   sub $0,$1
   sub $0,$2
 lpe
 mul $0,2
-cmp $2,0
+equ $2,0
 add $2,$1
 add $2,$0
 pow $1,2

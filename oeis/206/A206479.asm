@@ -2,6 +2,9 @@
 ; Submitted by Henk Haneveld
 ; 1,0,0,1,1,1,0,1,1,0,1,0,2,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,0,2,1,2,1,2,0,1,0,0,0,1,1,1,1,0,0,0,1,1,1,0,2,2,2,0,1,1,1,0,1,1,0,0,2,2,0,0,1,1,0,1,0
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 add $2,1

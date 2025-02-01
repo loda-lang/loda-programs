@@ -8,7 +8,7 @@ lpb $0
   mov $3,$0
   seq $3,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   mov $2,$0
-  cmp $2,$3
+  equ $2,$3
   add $1,$2
 lpe
 mov $0,$1

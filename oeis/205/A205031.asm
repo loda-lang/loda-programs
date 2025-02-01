@@ -7,6 +7,7 @@
 dif $0,2
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,205007 ; a(n) = (1/n)*A205006(n), where A205006(n) = s(k)-s(j), with (s(k),s(j)) the least pair of distinct triangular numbers for which n divides their difference.
 mul $1,$0
 add $0,$1

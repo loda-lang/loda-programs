@@ -5,8 +5,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 mov $1,$0
 seq $1,217450 ; Number of n X 1 arrays of the minimum value of corresponding elements and their horizontal and vertical neighbors in a random 0..2 n X 1 array.
 add $0,2

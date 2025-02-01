@@ -2,6 +2,9 @@
 ; Submitted by Sphynx
 ; 3,5,7,9,15,21,27,35,63,105,135
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 lpb $1

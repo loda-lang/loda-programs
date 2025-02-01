@@ -9,10 +9,10 @@ lpb $2
   seq $5,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
   mov $3,$1
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   mov $4,$0
   add $4,$3
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   mul $2,$4
   sub $2,1

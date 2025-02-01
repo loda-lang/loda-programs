@@ -8,7 +8,7 @@ lpb $0
   mov $3,$1
   bin $3,$0
   mod $3,10
-  cmp $3,0
+  equ $3,0
   add $2,$3
 lpe
 mov $0,$2

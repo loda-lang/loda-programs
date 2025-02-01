@@ -2,8 +2,11 @@
 ; Submitted by ATS
 ; 1,3,5,6,9,11,15,17,21,27,29,35,39,45,51
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1

@@ -9,6 +9,7 @@ mul $0,2
 sub $0,1
 lpb $0
   max $1,$0
+  add $1,1
   seq $1,209635 ; Möbius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
   mov $0,0
 lpe

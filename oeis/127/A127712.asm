@@ -13,6 +13,7 @@ lpb $5
   max $4,0
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,202278 ; Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
     sub $4,1
     div $4,2

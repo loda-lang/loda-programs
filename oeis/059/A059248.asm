@@ -11,6 +11,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,203006 ; (n-1)-st elementary symmetric function of the first n Fibonacci numbers.
   bin $0,$3
   gcd $1,$2

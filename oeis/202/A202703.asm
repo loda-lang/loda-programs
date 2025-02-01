@@ -2,6 +2,9 @@
 ; Submitted by Landjunge
 ; 1,0,1,1,1,0,6,7,8,8,29,23,16,8,0
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,1
   sub $0,$1

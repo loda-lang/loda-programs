@@ -9,14 +9,14 @@ mul $3,5
 lpb $3
   mov $5,$3
   div $5,3
-  cmp $7,0
+  equ $7,0
   mul $2,$3
   add $5,$7
   add $1,$2
   div $1,$5
   div $2,$5
   sub $3,1
-  cmp $7,0
+  equ $7,0
 lpe
 mov $6,10
 pow $6,$0

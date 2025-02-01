@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,204116 ; Symmetric matrix based on f(i,j) = gcd(2^i-1, 2^j-1), by antidiagonals.
   div $3,2
   gcd $3,2

@@ -1,11 +1,12 @@
 ; A324873: a(n) = gcd(n, A060968(n)).
 ; Submitted by amazing
 ; 1,2,1,4,1,2,1,8,3,2,1,4,1,2,1,16,1,6,1,4,1,2,1,8,5,2,9,4,1,2,1,32,3,2,1,12,1,2,3,8,1,2,1,4,3,2,1,16,7,10,1,4,1,18,1,8,1,2,1,4,1,2,3,64,1,6,1,4,3,2,1,24,1,2,5,4,1,6,1,16
-; Formula: a(n) = gcd(2*A204617(n),n+1)
+; Formula: a(n) = gcd(2*A204617(n+1),n+1)
 
 mov $2,$0
 add $2,1
-seq $0,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p = 1 (mod 4) and H(p) = p + 1 if p = 3 (mod 4).
+add $0,1
+seq $0,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p == 1 (mod 4) and H(p) = p + 1 if p == 3 (mod 4).
 mov $1,$0
 mul $1,2
 gcd $1,$2

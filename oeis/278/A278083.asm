@@ -7,4 +7,5 @@ lpb $0
   div $0,1048
   sub $0,1
 lpe
+add $0,1
 seq $0,204617 ; Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p == 1 (mod 4) and H(p) = p + 1 if p == 3 (mod 4).

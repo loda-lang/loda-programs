@@ -2,7 +2,8 @@
 ; Submitted by mmonnin
 ; 0,0,2,3,4,3,5,2,3,2,4
 
-add $0,1
+#offset 1
+
 lpb $0
   mul $0,2
   sub $0,1

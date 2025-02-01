@@ -1,18 +1,17 @@
 ; A207382: Sum of the even-indexed parts of all partitions of n.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,2,6,10,21,33,59,90,145,213,328,467,684,959,1361,1866,2588,3490,4741,6311,8422,11067,14579,18941,24630,31703,40788,52019,66315,83891,106034,133182,167045,208397,259637,321895,398498,491295,604725,741579,908008,1108036,1350034,1639978,1989023,2405831,2905593,3500353,4210609,5053485,6056202,7242634,8649363,10309083,12270582,14578857,17298374,20490492,24240849,28631900,33776836,39786939,46810636,54996817,64540692,75639816,88549807,103532698,120921404,141061655,164387256,191351305,222517049
-; Formula: a(n) = truncate((A000041(n+1)*(n+1)-A006128(n+1)+A066898(n+1))/2)
+; Formula: a(n) = truncate((n*A000041(n)-A006128(n)+A066898(n))/2)
+
+#offset 1
 
 mov $3,$0
-add $3,1
 seq $3,66898 ; Total number of even parts in all partitions of n.
 add $3,1
 mov $1,$0
-add $1,1
 seq $1,6128 ; Total number of parts in all partitions of n. Also, sum of largest parts of all partitions of n.
 add $1,1
 sub $1,$3
-add $0,1
 mov $2,$0
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 mul $0,$2

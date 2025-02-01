@@ -2,6 +2,8 @@
 ; Submitted by Chuck
 ; 2,5,5,5,89,13,34,13,233,233,13,13,610,89,10946,34,4181,233,89,233,34,89,75025,233,20365011074,1597,24157817,89,34,28657,1597,34,34,4181,165580141,233,63245986,89,514229,1346269,10946,89,1134903170
 
+#offset 1
+
 mov $2,8
 seq $0,205441 ; Least h such that n divides the h-th difference between distinct odd-indexed Fibonacci numbers; the differences are ordered as in A205371.
 add $0,1

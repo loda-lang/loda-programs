@@ -2,9 +2,11 @@
 ; Submitted by Science United
 ; 0,1,2,3,5,8,13,21,34,55,89
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,71 ; a(n) = Fibonacci(n) - 1.
+sub $0,1
 lpb $0
   div $0,9
   mov $2,1

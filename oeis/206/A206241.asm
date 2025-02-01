@@ -10,8 +10,7 @@ lpb $0
     add $1,$5
     add $2,1
     gcd $4,$2
-    cmp $4,1
-    cmp $4,0
+    neq $4,1
     sub $2,1
     sub $3,$4
   lpe

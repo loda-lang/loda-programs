@@ -9,4 +9,4 @@ lpb $0
   mov $2,$0
 lpe
 mov $0,$1
-dis $0,2
+dgs $0,2

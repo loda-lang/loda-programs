@@ -5,6 +5,7 @@
 lpb $0
   mov $0,$1
   seq $0,10227 ; Continued fraction for sqrt(185).
+  add $0,1
   seq $0,203016 ; Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
   sub $0,6
   pow $1,$1

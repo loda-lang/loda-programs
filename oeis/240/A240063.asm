@@ -11,6 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,206555 ; Number of 5's in the last section of the set of partitions of n.
     mov $3,0
     add $4,$2

@@ -5,6 +5,7 @@
 mov $2,1
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,206297 ; Position of n in the canonical bijection from the positive integers to the positive rational numbers.
   div $0,$1
   sub $2,2

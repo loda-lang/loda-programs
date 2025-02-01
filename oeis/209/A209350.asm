@@ -8,8 +8,7 @@ lpb $0
   mov $3,$2
   mul $3,$2
   dif $3,$0
-  equ $3,$2
-  equ $3,0
+  neq $3,$2
   mul $3,$0
   sub $0,1
   add $1,$3

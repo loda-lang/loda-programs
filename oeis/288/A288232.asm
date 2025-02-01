@@ -12,6 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,206805 ; Position of 2^n when {2^j} and {3^k} are jointly ranked; complement of A206807.
     mov $9,10
     add $9,$5

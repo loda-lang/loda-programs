@@ -15,6 +15,7 @@ lpb $0
     mov $9,10
     add $9,$5
     mov $7,$4
+    add $7,1
     seq $7,203161 ; (n-1)-st elementary symmetric function of the first n terms of  (3,1,2,3,1,2,3,1,2,...).
     mod $7,2
     mul $7,$$9

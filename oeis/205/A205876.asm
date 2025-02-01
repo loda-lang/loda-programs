@@ -10,6 +10,7 @@ mov $2,7260
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,204922 ; Ordered differences of Fibonacci numbers.
   mov $5,$3
   mul $3,2

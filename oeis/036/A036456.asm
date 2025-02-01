@@ -11,6 +11,7 @@ add $2,12
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,3
   seq $3,200815 ; Number of iterations of k -> d(k) until n reaches an odd prime.
   mul $3,2
   sub $3,2
