@@ -16,7 +16,6 @@ lpb $2
   mul $5,$1
   nrt $5,2
   add $5,$1
-  mov $3,$1
   mov $3,$5
   add $3,2
   div $3,4

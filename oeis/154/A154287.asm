@@ -1,17 +1,22 @@
 ; A154287: (L)-sieve transform of {1,4,9,16,...,n^2,...}=A000290.
-; Submitted by Jon Maiga
+; Submitted by Goldislops
 ; 1,3,6,9,13,18,23,29,35,42,49,57,66,75,85,95,106,117,129,141,154,167,181,195,210,225,241,258,275,293,311,330,349,369,389,410,431,453,475,498,521,545,569
+; Formula: a(n) = b(n-1)+1, b(n) = truncate((2*b(n-1)+sqrtint(4*b(n-1)+2)+1)/2)+1, b(0) = 0
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-lpb $1
+lpb $0
+  sub $0,1
+  mul $2,2
   add $2,1
-  mov $1,$0
-  div $1,$2
-  sub $1,$2
-  add $0,1
-  add $0,$1
+  mov $1,2
+  mul $1,$2
+  nrt $1,2
+  add $1,$2
+  div $1,2
+  mov $2,$1
+  add $2,1
 lpe
+mov $0,$2
 add $0,1

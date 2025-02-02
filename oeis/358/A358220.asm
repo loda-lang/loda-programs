@@ -7,5 +7,5 @@ seq $1,276086 ; Primorial base exp-function: digits in primorial base representa
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
 add $2,$0
 gcd $0,$1
-cmp $2,$0
+equ $2,$0
 mov $0,$2

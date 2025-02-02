@@ -1,17 +1,15 @@
 ; A185049: Last term in the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
-; Submitted by p3d-cluster
+; Submitted by Tom Poleski
 ; 1,1,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3,2,2,2,3
+; Formula: a(n) = gcd(max(n-2,0),truncate((max(n-2,0)-1)/2))+1
 
 #offset 1
 
 sub $0,1
-lpb $0
-  sub $0,4
-  mov $1,1
-lpe
-mov $2,$0
-equ $2,0
-add $0,$2
-div $1,$0
-add $1,$0
+trn $0,1
+mov $1,$0
+sub $0,1
+div $0,2
+gcd $1,$0
 mov $0,$1
+add $0,1
