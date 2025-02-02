@@ -13,6 +13,7 @@ lpb $1
   seq $4,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $4,1
   mod $4,2
+  add $0,1
   seq $0,214606 ; a(n) = gcd(n, 2^n - 2).
   sub $0,1
   mul $4,$0

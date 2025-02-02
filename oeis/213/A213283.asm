@@ -21,7 +21,7 @@ lpb $3
       mul $2,6
       mul $2,$0
       mul $2,2
-      cmp $7,4
+      equ $7,4
       add $7,8
       add $7,$2
       mov $0,1

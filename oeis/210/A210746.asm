@@ -2,7 +2,9 @@
 ; Submitted by wmaldito [CO]
 ; 1,1,1,1,1,3,3,3,3,3,3,5,5,7,7,7,9
 
-sub $0,1
+#offset 1
+
+sub $0,2
 lpb $0
   trn $0,9
   add $0,3

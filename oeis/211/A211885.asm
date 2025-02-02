@@ -2,6 +2,9 @@
 ; Submitted by Stony666
 ; 0,2,8,26,66,141,267,463,751
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $1,$0
   add $4,$0

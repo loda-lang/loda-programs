@@ -2,6 +2,9 @@
 ; Submitted by Jerry Musser
 ; 1,2,5,4,13,24,27,32
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mod $2,2
 mov $4,1

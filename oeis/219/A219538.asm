@@ -19,7 +19,7 @@ lpb $5
   bin $2,$0
   mul $4,2
   add $4,2
-  cmp $6,1
+  equ $6,1
   mov $7,$4
   add $0,1
   mul $1,$2

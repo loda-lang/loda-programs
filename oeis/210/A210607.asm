@@ -2,7 +2,8 @@
 ; Submitted by Stony666
 ; 0,1,4,9,12,16,20,25,36
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $2,$0
 pow $2,4

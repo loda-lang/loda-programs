@@ -2,10 +2,11 @@
 ; Submitted by Science United
 ; 2,1,2,1,1,1,2,1,2,1,1,1,2,1,2,2,1,1,2,1,2,3,1,1,2,1,2,1,1,1,2,1,2,1,1,1,2,1,2,2,2,1,2,1,2,3,1,1,2,1,2,1,1,1,2,1,2,1,1,1,2,1,2,2,1,1,2,1,2,2,1,1,2,1,2,1,1,2,2,1
 
+#offset 1
+
 mov $1,$0
-add $1,2
+add $1,1
 seq $1,202278 ; Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
-add $0,1
 lpb $0
   add $3,9
   lpb $3

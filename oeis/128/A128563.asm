@@ -16,6 +16,7 @@ mul $2,$3
 div $2,2
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
 add $0,3
+add $1,1
 seq $1,216053 ; a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
 mul $1,2
 sub $0,$2

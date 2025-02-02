@@ -10,7 +10,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,219069 ; Triangle read by rows: T(n,k) = n^4 + (n*k)^2 + k^4, 1 <= k <= n.
   add $1,$0
 lpe

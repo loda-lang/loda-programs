@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,213684 ; Logarithmic derivative of A001002.
   gcd $3,2
   sub $0,$3

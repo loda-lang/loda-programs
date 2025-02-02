@@ -10,13 +10,14 @@ lpb $2
   mov $4,$1
   seq $4,266265 ; Product of products of divisors of divisors of n.
   mov $3,$1
+  add $3,1
   seq $3,211776 ; a(n) = Product_{d | n} tau(d).
   gcd $4,$3
   mov $5,$3
   div $5,$4
   mov $3,$5
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

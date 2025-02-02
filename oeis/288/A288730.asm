@@ -14,6 +14,7 @@ lpb $3
   div $0,2
   lpb $0
     mov $2,$0
+    add $2,1
     seq $2,215020 ; a(n) = log_2( A182105(n) ).
     mov $0,$2
     add $1,1

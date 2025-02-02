@@ -12,7 +12,7 @@ add $2,4
 lpb $2
   sub $2,1
   mov $3,$1
-  sub $3,2
+  sub $3,1
   seq $3,210038 ; Triangle of coefficients of polynomials v(n,x) jointly generated with A210037; see the Formula section.
   add $4,1
   add $1,$4

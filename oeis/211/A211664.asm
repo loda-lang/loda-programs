@@ -1,8 +1,11 @@
 ; A211664: Number of iterations (...f_4(f_3(f_2(n))))...) such that the result is < 1, where f_j(x):=log_j(x).
 ; Submitted by p3d-cluster
 ; 1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = floor((4*n+8)/(n+5))
+; Formula: a(n) = floor((4*n+4)/(n+4))
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 add $1,3

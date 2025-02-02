@@ -6,6 +6,7 @@
 
 add $0,1
 mov $1,$0
+sub $0,1
 seq $0,215412 ; McKay-Thompson series of class 18C for the Monster group with a(0) = -2.
 lpb $1
   mul $1,2

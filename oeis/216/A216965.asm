@@ -14,7 +14,14 @@ lpb $2
   add $1,1
   seq $3,164029 ; a(n) = nonprime(n) + (-1)^(nonprime(n)).
   max $3,1
-  seq $3,296065 ; Partial sums of A296064.
+  mov $7,$3
+  add $7,1
+  trn $3,2
+  gcd $3,2
+  mov $6,$7
+  pow $7,$3
+  mod $6,$7
+  mov $3,$6
   neq $3,0
   sub $0,$3
   mov $4,$0

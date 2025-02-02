@@ -1,12 +1,11 @@
 ; A228720: Number of partitions in the first n compositions of j, according with the ordering of A228525, if 1<=n<=2^(j-1).
 ; Submitted by LeonsDev
 ; 1,2,2,3,3,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,7,8,8,9,9,9,9,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15
-; Formula: a(n) = b(n)+1, b(n) = b(n-1)+truncate(1/A319627(A122111(A217434(A057335(n)-1))-1)), b(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = b(n-1)+truncate(1/A319627(A122111(A217434(A057335(n)))-1)), b(0) = 0
 
 lpb $0
   mov $2,$0
   seq $2,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-  sub $2,1
   seq $2,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
   seq $2,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
   sub $2,1

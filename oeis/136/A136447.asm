@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,210455 ; Characteristic function of pseudoperfect (or semiperfect) numbers.
   equ $3,0
   sub $0,$3

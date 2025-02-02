@@ -20,7 +20,7 @@ lpb $3
     mod $0,3
     mul $0,10051
     mov $2,$0
-    cmp $2,0
+    equ $2,0
     add $0,$2
     add $5,1
     div $5,$0

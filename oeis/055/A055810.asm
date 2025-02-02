@@ -15,6 +15,7 @@ lpb $2
   add $5,1
   mov $3,$1
   trn $3,2
+  add $3,1
   seq $3,210038 ; Triangle of coefficients of polynomials v(n,x) jointly generated with A210037; see the Formula section.
   add $1,$4
   add $1,1

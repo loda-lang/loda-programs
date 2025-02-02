@@ -1,4 +1,4 @@
-; A216585:  G.f.: exp( Sum_{n>=1} A000984(n)*A002426(n)*x^n/n ), where A000984 is the central binomial coefficients and A002426 is the central trinomial coefficients.
+; A216585: G.f.: exp( Sum_{n>=1} A000984(n)*A002426(n)*x^n/n ), where A000984 is the central binomial coefficients and A002426 is the central trinomial coefficients.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,11,66,485,3842,32712,291568,2697610,25679316,250190125,2484270622,25062816127,256275246582,2650947762450,27697861115740,291943603838698,3101066786857876,33167191013319532,356924515784037128,3862299973917286526,42003704374124712172
 

@@ -9,12 +9,12 @@ lpb $2
   seq $3,336467 ; Fully multiplicative with a(2) = 1 and a(p) = A000265(p+1) for odd primes p, with A000265(k) giving the odd part of k.
   sub $3,$4
   mul $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   sub $5,1
   mul $2,$4
   sub $2,1

@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,4,60,1776,84720,5876640,556466400,68882446080
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,698 ; A problem of configurations: a(0) = 1; for n>0, a(n) = (2n-1)!! - Sum_{k=1..n-1} (2k-1)!! a(n-k). Also the number of shellings of an n-cube, divided by 2^n n!.

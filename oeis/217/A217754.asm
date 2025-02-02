@@ -2,7 +2,9 @@
 ; Submitted by Jamie Morken(s2.)
 ; 0,0,0,0,1,1,2,2,4,3,4,4,4,4,5
 
-sub $0,3
+#offset 3
+
+sub $0,6
 mul $0,2
 mov $2,$0
 add $2,$0

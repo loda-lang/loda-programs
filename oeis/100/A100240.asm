@@ -4,6 +4,7 @@
 
 lpb $0
   mov $1,$0
+  sub $1,1
   seq $1,214649 ; a(-1) = 1 and g.f. A(x) satisfies A(x) - 1/A(x) = 1/x - 1.
   mul $1,2
   sub $1,1

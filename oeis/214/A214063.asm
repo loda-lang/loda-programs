@@ -2,11 +2,11 @@
 ; Submitted by Ciceronian
 ; 1,2,3,4,1,2,1,8,9,5,1,2,1,14,5,16,1,2,1,5,10,1,1,2,1,2,2,28,1,2,1,10,33,6,1,2,1,38,4,5,1,2,1,44,5,1,1,2,1,2,1,21,1,2,1,7,1,58,1,2,1,62,3,64,1,2,1,68,69,1,1,2,1,2,5,76,1,1,1,5
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,202278 ; Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
 max $1,1
-add $0,1
 lpb $0
   add $3,9
   lpb $3

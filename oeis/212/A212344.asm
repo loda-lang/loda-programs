@@ -1,8 +1,11 @@
 ; A212344: Sequence of coefficients of x^(n-3) in marked mesh pattern generating function Q_{n,132}^(0,3,0,0)(x).
 ; Submitted by Science United
 ; 5,5,10,25,70,210,660,2145,7150,24310,83980,293930,1040060,3714500,13372200,48474225,176788350,648223950,2388193500,8836315950,32820602100,122331335100,457412818200,1715298068250,6449520736620,24309732007260,91836765360760
-; Formula: a(n) = 5*floor(binomial(2*n,n)/(n+1))
+; Formula: a(n) = 5*truncate(binomial(2*n-6,n-3)/(n-2))
 
+#offset 3
+
+sub $0,3
 mov $1,$0
 mul $0,2
 bin $0,$1

@@ -1,9 +1,12 @@
 ; A216676: Digital roots of squares of Fibonacci numbers.
 ; Submitted by Jamie Morken(s2)
 ; 1,1,4,9,7,1,7,9,4,1,1,9,1,1,4,9,7,1,7,9,4,1,1,9,1,1,4,9,7,1,7,9,4,1,1,9,1,1,4,9,7,1,7,9,4,1,1,9,1,1,4,9,7,1,7,9,4,1,1,9,1,1,4,9,7,1,7,9,4,1,1,9,1,1,4,9,7,1,7,9
-; Formula: a(n) = -10*truncate((truncate((b(n)^2-10)/9)+2)/10)+truncate((b(n)^2-10)/9)+2, b(n) = 10*c(n-1)+b(n-1), b(1) = 1, b(0) = 1, c(n) = 9*c(n-1)+b(n-1), c(1) = 1, c(0) = 0
+; Formula: a(n) = -10*truncate((truncate((b(n-1)^2-10)/9)+2)/10)+truncate((b(n-1)^2-10)/9)+2, b(n) = 10*c(n-1)+b(n-1), b(1) = 1, b(0) = 1, c(n) = 9*c(n-1)+b(n-1), c(1) = 1, c(0) = 0
+
+#offset 1
 
 mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $1,$3

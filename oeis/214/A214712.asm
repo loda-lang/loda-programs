@@ -2,11 +2,11 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 2,1,1,1,4,1,2,1,1,2,4,5,4,1,2,1,4,1,2,2,3,2,2,1,2,1,2,1,6,3,6,2,1,2,4,1,4,1,1,2,2,3,4,1,1,1,2,1,2,2,1,2,4,1,2,1,1,2,4,7,4,4,1,1,2,1,2,1,1,2,2,5,6,1,2,1,4,1,2,2
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,202278 ; Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
 max $1,1
-add $0,1
 lpb $0
   add $3,9
   lpb $3

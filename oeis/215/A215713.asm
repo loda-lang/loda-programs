@@ -15,7 +15,7 @@ lpb $3
     div $0,2
     sub $0,2
     mod $1,2
-    cmp $1,0
+    equ $1,0
     sub $5,$1
   lpe
   min $3,0

@@ -14,6 +14,7 @@ lpb $2
   mul $3,5
   mov $5,$3
   mov $6,$3
+  add $3,1
   seq $3,210622 ; Decimal expansion of 377/120.
   add $3,3
   lpb $5

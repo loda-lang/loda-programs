@@ -12,6 +12,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,212013 ; Triangle read by rows: total number of pairs of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
   mov $4,$0
   mul $4,$0

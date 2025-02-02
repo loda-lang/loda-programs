@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,216510 ; Number of positive integer solutions to the equation a^2 + 6*b^2 = n.
   min $3,1
   sub $0,$3

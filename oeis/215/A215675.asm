@@ -24,7 +24,7 @@ lpb $0
     sub $8,1
     div $8,2
   lpe
-  cmp $4,0
+  equ $4,0
   add $1,$4
 lpe
 mov $0,$1

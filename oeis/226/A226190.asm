@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,215000 ; a(n) = floor(exp(1 + 1/2 + 1/3 + ... + 1/n)).
   mov $3,$1
   add $3,$4

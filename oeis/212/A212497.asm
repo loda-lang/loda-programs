@@ -2,7 +2,9 @@
 ; Submitted by Kotenok2000
 ; 4,1,2,3,4,1,2,4,3,1,2,4
 
-add $0,3
+#offset 1
+
+add $0,2
 mov $1,$0
 div $0,2
 mul $0,2

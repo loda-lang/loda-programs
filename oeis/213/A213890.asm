@@ -13,7 +13,7 @@ lpb $3
   mov $4,$0
   mod $4,$5
   div $4,$2
-  cmp $4,0
+  equ $4,0
   div $0,$5
   add $0,1
   add $2,$4

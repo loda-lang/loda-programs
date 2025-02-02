@@ -8,7 +8,7 @@ pow $2,5
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,216998 ; Digit sum of n*7 mod 7.
   equ $3,0
   sub $0,$3

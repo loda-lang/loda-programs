@@ -13,7 +13,6 @@ lpb $2
   add $5,3
   seq $5,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $3,$5
-  sub $3,1
   seq $3,210625 ; Least semiprime dividing digit reversal of n, or 0 if no such factor.
   sub $3,3
   equ $3,1

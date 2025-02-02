@@ -11,6 +11,7 @@ add $4,2
 pow $4,2
 lpb $4
   mov $5,$3
+  add $5,1
   seq $5,216416 ; a(n) = smallest m such that 2n-1 | 10^m+1, or 0 if no such m exists.
   equ $5,$3
   sub $2,$5

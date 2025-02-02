@@ -4,17 +4,16 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $1,1
-mov $3,$1
 sub $1,1
+mov $3,$0
+sub $0,1
 add $3,3
 pow $3,4
 lpb $3
   mov $6,$2
   pow $6,2
-  dis $6,2
+  dgs $6,2
   mov $4,$6
   sub $4,2
   equ $4,1

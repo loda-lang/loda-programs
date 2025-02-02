@@ -18,7 +18,7 @@ lpb $0
   div $3,$5
   sub $4,$6
   add $4,$3
-  cmp $6,0
+  equ $6,0
   mov $3,$5
 lpe
 mov $0,$2

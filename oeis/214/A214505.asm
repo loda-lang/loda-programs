@@ -18,7 +18,7 @@ lpb $4
   mov $3,$5
   dif $3,$4
   mul $3,$2
-  cmp $3,$5
+  equ $3,$5
   sub $5,$2
   sub $6,$3
   mov $4,$5

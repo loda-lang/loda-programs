@@ -10,6 +10,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,214606 ; a(n) = gcd(n, 2^n - 2).
   mul $0,2
 lpe

@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,213515 ; L.g.f.: log( Sum_{n>=0} A000108(n)^2*x^n ) = Sum_{n>=1} a(n)*x^n/n, where A000108(n) = binomial(2*n,n)/(n+1) forms the Catalan numbers.
     mul $7,2
     mov $9,10

@@ -12,7 +12,7 @@ lpb $3
     mov $2,$0
     pow $2,31
     mod $2,$4
-    cmp $2,0
+    equ $2,0
     add $3,$1
     sub $4,$0
     sub $1,$2

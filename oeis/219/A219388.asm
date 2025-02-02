@@ -2,6 +2,9 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 8,7,7,6,6,6,5,5,5,5,4,4,4,4,3,3,3,2,2,1
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 add $4,$0
 mov $3,$4

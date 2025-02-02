@@ -7,7 +7,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   max $3,3
-  add $3,1
+  add $3,2
   seq $3,210517 ; Number of rectangles dissectable into n squares, unique up to aspect ratio.
   pow $3,12
   add $3,$4

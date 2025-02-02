@@ -17,7 +17,10 @@ lpb $2
   mov $0,$4
   add $0,1
   pow $0,2
-  seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  mul $0,4
+  nrt $0,2
+  add $0,1
+  div $0,2
   add $3,$0
 lpe
 mov $0,$3

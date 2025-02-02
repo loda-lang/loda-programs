@@ -1,6 +1,7 @@
 ; A214263: Expansion of f(x^1, x^7) in powers of x where f() is Ramanujan's general theta function.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+; Formula: a(n) = binomial(binomial(truncate((sqrtint(16*n+9)+1)/2),2),2*n+1)
 
 mul $0,2
 add $0,1

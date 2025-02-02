@@ -13,7 +13,14 @@ lpb $2
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
   mov $5,$3
-  seq $3,249066 ; a(n) is the number of new prime distinct divisors of n^2+1 not already present in m^2+1 for all m < n.
+  add $3,1
+  seq $3,120294 ; Numerator of determinant of n X n matrix with elements M[j,j] = (i+j)/(i+j-1).
+  div $3,2
+  mov $6,$3
+  equ $6,0
+  mov $3,$6
+  add $3,1
+  mod $3,2
   equ $3,0
   sub $0,$3
   add $1,1

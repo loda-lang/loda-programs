@@ -2,7 +2,10 @@
 ; Submitted by Luca
 ; 1,1,2,5,11,28,74,211
 
+#offset 1
+
 mov $3,2
+sub $0,1
 lpb $0
   sub $0,1
   mul $3,$0

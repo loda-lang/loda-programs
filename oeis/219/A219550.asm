@@ -1,10 +1,15 @@
 ; A219550: Sum(m^p, m=1..p-1)/p as p runs through the odd primes.
 ; Submitted by Groo
 ; 3,260,53823,12942210875,11901444483396,25627001801054931008,55413915436873048932459,490667517005738962388828685983,48588952813858892791005036793649985985124,303307728036900627681487165427498812641117375,158544898951978777519612048992784361843596346824881328548
-; Formula: a(n) = A294507(n)*A000040(n+2)
+; Formula: a(n) = A043300(2*truncate(A000040(n+2)/2)+1)*A000040(n+2)
 
 mov $1,$0
 add $1,2
 seq $1,40 ; The prime numbers.
-seq $0,294507 ; Sum(m^p, m=1..p-1) / p^2 as p runs through the odd primes.
+add $0,2
+seq $0,40 ; The prime numbers.
+div $0,2
+mul $0,2
+add $0,1
+seq $0,43300 ; Denominator of L(n) = (Sum_{k=1..n} k^n)/(Sum_{k=1..n-1} k^n).
 mul $0,$1

@@ -1,7 +1,7 @@
 ; A214211: Doubled Fibonacci word: the A003842 sequence replacing 1 with 1,1 and 2 with 2,2.
 ; Submitted by Science United
 ; 1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,2,1,1
-; Formula: a(n) = gcd(sqrtnint((truncate((floor(n/2)+sqrtnint((floor(n/2)+1)*(5*floor(n/2)+5),2)+1)/2)+2)*(5*truncate((floor(n/2)+sqrtnint((floor(n/2)+1)*(5*floor(n/2)+5),2)+1)/2)+10),2)+truncate((floor(n/2)+sqrtnint((floor(n/2)+1)*(5*floor(n/2)+5),2)+1)/2)+2,2)
+; Formula: a(n) = gcd(sqrtint((truncate((floor(n/2)+sqrtint((floor(n/2)+1)*(5*floor(n/2)+5))+1)/2)+2)*(5*truncate((floor(n/2)+sqrtint((floor(n/2)+1)*(5*floor(n/2)+5))+1)/2)+10))+truncate((floor(n/2)+sqrtint((floor(n/2)+1)*(5*floor(n/2)+5))+1)/2)+2,2)
 
 div $0,2
 add $0,1

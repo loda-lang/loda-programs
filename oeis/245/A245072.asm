@@ -16,6 +16,7 @@ lpb $2
   mov $5,$1
   add $5,1
   seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  add $5,1
   seq $5,210615 ; Least semiprime dividing n, or 0 if no semiprime divides n.
   equ $5,0
   add $5,$6

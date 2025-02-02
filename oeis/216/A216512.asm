@@ -7,8 +7,7 @@ mov $1,$0
 lpb $1
   mov $4,$0
   dif $4,$1
-  cmp $4,$0
-  cmp $4,0
+  neq $4,$0
   mul $4,$1
   pow $4,3
   sub $1,1

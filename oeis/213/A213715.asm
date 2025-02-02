@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,213719 ; Characteristic function for A179016.
   add $3,1
-  cmp $3,2
+  equ $3,2
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -12,12 +12,12 @@ lpb $2
   seq $3,80883 ; Distance of n to next square.
   sub $3,1
   seq $3,275437 ; Triangle read by rows: T(n,k) is the number of 01-avoiding binary words of length n having degree of asymmetry equal to k (n >= 0; 0 <= k <= floor(n/2)).
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

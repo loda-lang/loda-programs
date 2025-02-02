@@ -12,6 +12,7 @@ lpb $2
   add $5,1
   seq $5,7955 ; Product of divisors of n.
   mov $3,$1
+  add $3,1
   seq $3,211776 ; a(n) = Product_{d | n} tau(d).
   gcd $5,$3
   div $3,$5
