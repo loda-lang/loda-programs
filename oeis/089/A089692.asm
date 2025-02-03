@@ -1,13 +1,30 @@
 ; A089692: a(n) = phi(2n)/2^omega(n).
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 1,1,1,2,2,1,3,4,3,2,5,2,6,3,2,8,8,3,9,4,3,5,11,4,10,6,9,6,14,2,15,16,5,8,6,6,18,9,6,8,20,3,21,10,6,11,23,8,21,10,8,12,26,9,10,12,9,14,29,4,30,15,9,32,12,5,33,16,11,6,35,12,36,18,10,18,15,6,39,16
-; Formula: a(n) = truncate(A070306(n)/gcd(n-1,2))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-gcd $1,2
-add $0,1
-seq $0,70306 ; a(n) = 2*phi(n)/2^omega(n).
-div $0,$1
+dif $1,2
+mov $2,$1
+mov $3,3
+lpb $1
+  div $2,2
+  mov $4,$1
+  sub $4,3
+  lpb $4
+    mov $5,$1
+    mod $5,$3
+    min $5,2
+    add $3,2
+    sub $4,$5
+  lpe
+  lpb $1
+    dif $1,$3
+  lpe
+  mov $6,$2
+  div $6,$3
+  mul $6,-1
+  add $2,$6
+lpe
+mov $0,$2

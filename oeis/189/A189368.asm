@@ -6,10 +6,9 @@
 #offset 1
 
 mov $1,$0
-mov $4,$0
-pow $4,2
-mul $4,2
-mov $3,$4
+pow $1,2
+mul $1,2
+mov $3,$1
 nrt $3,2
 add $3,$0
 pow $0,2

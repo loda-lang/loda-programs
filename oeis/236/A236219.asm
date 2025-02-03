@@ -1,13 +1,11 @@
 ; A236219: Number of simple Hamilton-laceable graphs on n nodes.
-; Submitted by arkiss
+; Submitted by Aurum
 ; 1,1,0,1,0,2,0,12,0,226,0
 
 mov $1,2
 mov $2,3
 lpb $0
   mov $3,$0
-  sub $3,1
-  mul $3,2
   mul $3,$1
   sub $0,2
   mov $2,2

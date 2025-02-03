@@ -1,34 +1,13 @@
 ; A238981: Sum of n-th powers of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,5,28,257,3126,47450,823544,16777217,387420490,10009766650,285311670612,8916117756914,302875106592254,11112685048647250,437893920912786408,18446744073709551617,827240261886336764178,39346558169931834836690,1978419655660313589123980,104857600000096466943268402,5842587018944528395924761632,341427958766968944236412031210,20880467999847912034355032910568,1333735776855006490932233547593954,88817841970012523233890533447265626,6156119671940487504065290946866928650
+; Formula: a(n) = truncate((10*A034448((n+1)^(n+1)))/10)
 
-mov $1,1
 add $0,1
 pow $0,$0
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $6,$2
-    cmp $6,0
-    add $2,$6
-    mov $4,$0
-    mod $4,$2
-    cmp $4,0
-    cmp $4,0
-    mov $5,$2
-    cmp $5,1
-    add $2,1
-    max $4,$5
-    sub $3,$4
-  lpe
-  lpb $0
-    mov $5,1
-    lpb $0
-      dif $0,$2
-      mul $5,$2
-    lpe
-  lpe
-  add $5,1
-  mul $1,$5
-lpe
+seq $0,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+mov $1,$0
+mul $1,11
+sub $1,$0
 mov $0,$1
+div $0,10

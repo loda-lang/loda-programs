@@ -1,19 +1,12 @@
 ; A327180: a(n) = [(2n+1)r] - [(n+1)r] - [nr], where [ ] = floor and r = sqrt(3).
-; Submitted by zombie67 [MM]
+; Submitted by Science United
 ; 0,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,0,0,1
 
 mov $1,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$1
-  sub $0,$2
-  mov $3,$0
-  lpb $0
-    sub $3,1
-    add $0,$3
-    add $0,1
-    seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
-    add $3,$0
-  lpe
+lpb $0
+  sub $1,1
+  add $0,$1
+  add $0,1
+  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+  add $1,$0
 lpe
