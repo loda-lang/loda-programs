@@ -2,6 +2,9 @@
 ; Submitted by biodoc
 ; 1,1,1,1,2,4,6,6,24,96,240
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 trn $0,1
 add $0,1

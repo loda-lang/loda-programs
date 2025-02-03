@@ -1,14 +1,14 @@
 ; A229338: Product of products of elements of subsets of divisors of n.
 ; Submitted by eclipse99
 ; 1,4,9,4096,25,2821109907456,49,281474976710656,531441,10000000000000000,121,39939223824273992215667642551956428337968885602521915290518994217942463316460321327052965050967304175616,169,2177953337809371136,6568408355712890625,1461501637330902918203684832716283019655932542976
-; Formula: a(n) = truncate((n+1)^truncate((A000005(n+1)*truncate(2^A000005(n+1)))/4))
+; Formula: a(n) = truncate(n^truncate((A000005(n)*truncate(2^A000005(n)))/4))
+
+#offset 1
 
 mov $1,$0
-add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $2,2
 pow $2,$1
 mul $1,$2
 div $1,4
-add $0,1
 pow $0,$1

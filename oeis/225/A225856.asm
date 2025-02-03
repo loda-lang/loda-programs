@@ -10,7 +10,9 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,124897 ; a(n) = mu(n^2 + 1), mu = A008683.
+  pow $3,2
+  add $3,1
+  seq $3,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   neq $3,0
   sub $0,$3
   add $1,1

@@ -13,7 +13,7 @@ lpb $3
     div $0,2
     lpb $3
       mov $3,$0
-      cmp $1,0
+      equ $1,0
       sub $2,$1
     lpe
     add $4,1

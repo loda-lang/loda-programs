@@ -7,12 +7,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,62028 ; a(n) = n + sum of the digits of n.
-  seq $3,136522 ; a(n) = 1 if n is a palindrome, otherwise 0.
+  mov $5,$3
+  seq $5,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  equ $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

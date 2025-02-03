@@ -2,6 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,2,4,6,8,12,14,18,22,26,30,34,39,44,49
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   add $2,1

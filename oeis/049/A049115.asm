@@ -11,5 +11,6 @@ lpb $0
   dif $0,4
 lpe
 mov $1,$0
+add $1,1
 seq $1,227944 ; Number of iterations of "take odd part of phi" (A053575) to reach 1 from n.
 mov $0,$1

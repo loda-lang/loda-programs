@@ -2,7 +2,8 @@
 ; Submitted by [AF] Kalianthys
 ; -1,0,-1,1,1,0,-1,3,3,1,1,5,5,0,-1,7,7,3,3,9,9,1
 
-add $0,1
+#offset 1
+
 lpb $0
   sub $0,$1
   mov $2,$0

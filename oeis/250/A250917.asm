@@ -12,7 +12,7 @@ lpb $0
     sub $4,1
     mul $6,$5
     mov $7,$4
-    add $7,1
+    add $7,2
     seq $7,220101 ; Number of ordered set partitions of {1,...,n} into n-1 blocks avoiding the pattern 123.
     mov $9,10
     add $9,$5

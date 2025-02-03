@@ -12,7 +12,7 @@ lpb $2
   gcd $1,$3
   div $3,$1
   mov $1,$3
-  cmp $2,1
+  equ $2,1
 lpe
 add $2,$1
 mov $0,$2

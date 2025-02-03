@@ -2,20 +2,20 @@
 ; Submitted by Jamie Morken(w4)
 ; 1,2,24,4,120,24,336,8,72,120
 
+#offset 1
+
 mov $1,1
 mov $2,2
-add $0,1
 lpb $0
   mov $3,$0
   lpb $3
     mov $6,$2
-    cmp $6,0
+    equ $6,0
     add $1,1
     add $2,$6
     mov $4,$0
     mod $4,$2
-    cmp $4,0
-    cmp $4,0
+    neq $4,0
     add $2,1
     sub $3,$4
   lpe

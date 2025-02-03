@@ -1,6 +1,7 @@
 ; A221167: The infinite generalized Fibonacci word p^[3].
 ; Submitted by Science United
 ; 0,1,0,1,2,1,2,1,0,1,0,3,0,3,0,1,0,1,0,3,0,3,2,3,2,3,0,3,0,1,0,1,0,3,0,3,0,1,0,1,2,1,2,1,0,1,0,1,2,1,2,3,2,3,2,1,2,1,0,1,0,1,2,1,2,1,0,1,0,3,0,3,0,1,0,1,2,1,2,1
+; Formula: a(n) = -4*truncate(b(n)/4)+b(n), b(n) = 2*truncate((sqrtint(floor((n^2)/5))+n)/2)+b(n-1)+1, b(0) = 0
 
 lpb $0
   sub $0,1

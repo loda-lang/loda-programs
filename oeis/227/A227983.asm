@@ -9,9 +9,14 @@ lpb $2
   mov $3,$1
   add $3,3
   seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $6,$1
+  add $6,3
+  seq $6,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $5,$1
-  add $5,1
-  seq $5,92403 ; a(n) = sigma(n) + sigma(n+1).
+  add $5,2
+  seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $6,$5
+  mov $5,$6
   sub $5,$3
   mov $3,$5
   mul $3,20

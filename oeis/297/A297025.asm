@@ -5,6 +5,7 @@
 lpb $0
   sub $0,1
   max $0,1
+  add $0,1
   seq $0,220096 ; a(1)=0, n-1 if n is prime, else largest proper divisor of n.
   add $1,1
 lpe

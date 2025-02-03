@@ -1,6 +1,9 @@
 ; A226088: a(n) is the number of the distinct quadrilaterals in a regular n-gon, which Q3 type are excluded.
 ; 0,1,1,3,4,8,10,15,19,26,31,39,46,56,64,75,85,98,109,123,136,152,166,183,199,218
 
+#offset 3
+
+sub $0,3
 mov $5,$0
 mov $3,2
 lpb $3

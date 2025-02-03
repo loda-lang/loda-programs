@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,227872 ; Number of odious divisors (A000069) of n.
   equ $3,1
   sub $0,$3

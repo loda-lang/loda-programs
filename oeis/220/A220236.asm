@@ -1,9 +1,11 @@
 ; A220236: Binary palindromic numbers with only two 0 bits, both in the middle.
 ; Submitted by Science United
 ; 9,51,231,975,3999,16191,65151,261375,1047039,4191231,16771071,67096575,268410879,1073692671,4294868991,17179672575,68719083519,274877120511,1099510054911,4398043365375,17592179752959,70368731594751,281474951544831,1125899856510975
-; Formula: a(n) = 3*truncate(binomial(2^(n+3)-1,2)/6)
+; Formula: a(n) = 3*truncate(binomial(2^(n+2)-1,2)/6)
 
-add $0,3
+#offset 1
+
+add $0,2
 mov $1,2
 pow $1,$0
 sub $1,1

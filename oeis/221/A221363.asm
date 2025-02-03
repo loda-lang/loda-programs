@@ -2,7 +2,8 @@
 ; Submitted by Fardringle
 ; 1,0,1,3,6,4,3,2,6,4,7,7,0,5,0,7,8,1,2,5
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $3,$0
 mul $3,8

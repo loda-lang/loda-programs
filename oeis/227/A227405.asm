@@ -2,7 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 4,6,8,10,12,12,14,16,2,2,6,2
 
-add $0,1
+#offset 2
+
+sub $0,1
 mov $2,$0
 div $2,3
 pow $2,5

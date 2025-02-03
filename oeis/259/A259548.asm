@@ -21,7 +21,6 @@ lpb $2
       sub $7,$8
     lpe
     mov $7,$6
-    sub $7,1
     seq $7,221891 ; Number of 2 X n arrays of occupancy after each element moves to some horizontal, diagonal or antidiagonal neighbor, without 2-loops or left turns.
     lpb $3
       dif $3,$6
@@ -33,12 +32,12 @@ lpb $2
   mul $3,338
   gcd $3,4
   add $3,1
-  cmp $3,5
+  equ $3,5
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$1

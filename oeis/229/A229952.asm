@@ -2,6 +2,9 @@
 ; Submitted by NeoGen
 ; 2,7,3,0,9,2,4,2,9
 
+#offset -21
+
+add $0,21
 mov $5,14
 mov $3,$0
 mul $3,8

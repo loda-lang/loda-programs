@@ -2,6 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,3,7,12,17,24,32,41,51,61,73,85,98
 
+#offset 1
+
+sub $0,1
 mov $8,$0
 mov $4,$0
 add $4,1

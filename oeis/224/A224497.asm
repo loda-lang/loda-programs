@@ -12,7 +12,7 @@ lpb $3
     gcd $2,$6
     mul $4,2
     trn $4,$5
-    cmp $4,0
+    equ $4,0
     sub $5,$4
     mul $1,$2
   lpe

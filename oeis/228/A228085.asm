@@ -12,9 +12,13 @@ lpb $2
   sub $0,$2
   dif $0,2
   seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
-  seq $0,170643 ; Number of reduced words of length n in Coxeter group on 10 generators S_i with relations (S_i)^2 = (S_i S_j)^49 = I.
+  mov $4,9
+  pow $4,$0
+  mul $4,10
+  div $4,9
+  mov $0,$4
   div $3,9
-  add $3,$0
+  add $3,$4
 lpe
 mov $0,$3
 mod $0,10

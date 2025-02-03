@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 3,42,180,372,615,918,1281,1704,2187,2730
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $3,$0
 mul $3,2

@@ -2,7 +2,9 @@
 ; Submitted by [SG-FC] hl
 ; 1,0,6,7,8,7,1,0,9,3,7,5
 
-add $0,2
+#offset 1
+
+add $0,1
 mov $2,1
 mov $5,$0
 mov $3,$0

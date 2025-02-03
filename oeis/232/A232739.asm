@@ -8,6 +8,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,225687 ; a(n) = A030124(n) - n.
   add $1,$3
 lpe

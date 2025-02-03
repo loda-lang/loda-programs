@@ -2,7 +2,8 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,3,5,8,13,16,23,27,36,41,52
 
-add $0,1
+#offset 1
+
 mov $2,$0
 lpb $0
   div $0,2

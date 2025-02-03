@@ -13,6 +13,6 @@ pow $3,$0
 add $1,$0
 bin $1,$2
 mul $1,$3
-cmp $0,0
+equ $0,0
 mul $0,2
 add $0,$1

@@ -2,7 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,3,5,10,14,24,38,65
 
-add $0,5
+#offset 1
+
+add $0,4
 lpb $0
   sub $0,1
   add $6,$3

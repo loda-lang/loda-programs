@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
+  add $0,3
   seq $0,220589 ; Number of simple skew-merged permutations with n elements.
   div $0,2
   sub $0,$1

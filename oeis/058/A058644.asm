@@ -10,6 +10,7 @@ lpb $0
   sub $0,2
   sub $1,1
 lpe
+sub $0,1
 seq $0,227585 ; McKay-Thompson series of class 36A for the Monster group with a(0) = 2.
 add $1,$0
 mov $0,$1

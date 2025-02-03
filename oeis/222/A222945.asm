@@ -3,7 +3,7 @@
 
 mul $0,2
 mov $1,$0
-cmp $1,2
+equ $1,2
 add $0,$1
 mul $0,2
 add $0,1

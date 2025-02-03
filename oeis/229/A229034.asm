@@ -2,6 +2,9 @@
 ; Submitted by ML1
 ; 1,2,3,4,5,6,8,10,16,22,23,25,28
 
+#offset 1
+
+sub $0,1
 mov $6,$0
 mov $5,$0
 lpb $5
@@ -18,7 +21,7 @@ lpb $5
     sub $0,1
     add $0,$7
     add $3,3
-    cmp $6,1
+    equ $6,1
     mov $7,3
   lpe
   sub $0,$3

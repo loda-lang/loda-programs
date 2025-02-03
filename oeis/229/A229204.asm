@@ -9,7 +9,7 @@ add $3,$2
 div $3,3
 pow $3,2
 mov $1,2
-cmp $1,$0
+equ $1,$0
 sub $1,$0
 add $1,$3
 mov $0,$1
