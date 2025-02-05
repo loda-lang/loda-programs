@@ -1,12 +1,32 @@
 ; A107078: Whether n has non-unitary prime divisors.
 ; Submitted by Science United
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1
-; Formula: a(n) = -2*truncate((max(2*A046660(n),1)-1)/2)+max(2*A046660(n),1)-1
 
 #offset 1
 
-seq $0,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
+sub $0,1
+mov $1,$0
+mov $4,2
+add $0,1
+lpb $0
+  mov $5,$0
+  div $5,4
+  lpb $5
+    mov $2,$0
+    mod $2,$4
+    add $4,1
+    sub $5,$2
+  lpe
+  lpb $0
+    dif $0,$4
+    add $3,1
+  lpe
+  sub $3,1
+lpe
+mov $0,$3
 mul $0,2
 max $0,1
 sub $0,1
-mod $0,2
+mul $1,$0
+min $1,1
+mov $0,$1

@@ -1,17 +1,10 @@
 ; A130207: Diagonalized matrix of A000010, Euler totient function phi.
-; Submitted by Daniel
+; Submitted by Aurum
 ; 1,0,1,0,0,2,0,0,0,2,0,0,0,0,4,0,0,0,0,0,2,0,0,0,0,0,0,6,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,4,0,0
+; Formula: a(n) = A000010(A127648(n-1))
 
 #offset 1
 
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-bin $0,$1
-add $1,1
-seq $1,2246 ; a(1) = 3; for n > 1, a(n) = 4*phi(n); given a rational number r = p/q, where q>0, (p,q)=1, define its height to be max{|p|,q}; then a(n) = number of rational numbers of height n.
-add $1,1
-mul $0,$1
-div $0,4
+seq $0,127648 ; Triangle read by rows: row n consists of n zeros followed by n+1.
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.

@@ -8,5 +8,4 @@ mov $1,$0
 dif $1,4
 dif $1,2
 seq $1,118235 ; Smallest positive number starting an interval of consecutive integers with element sum n.
-sub $0,1
 mov $0,$1

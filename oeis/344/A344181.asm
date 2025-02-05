@@ -10,7 +10,7 @@ lpb $2
   mov $3,$1
   seq $3,93411 ; Divide n by the largest factorial that divides it and repeat until an odd number is reached, which will be the result; a(0) = 0.
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -14,10 +14,8 @@ add $3,$0
 mul $3,$0
 nrt $3,2
 add $3,$0
-mov $1,$0
 mov $1,$3
 div $1,2
 sub $2,$1
-sub $0,1
 mov $0,$2
 sub $0,1

@@ -1,24 +1,25 @@
 ; A359474: a(n) = 1 if the product of exponents in the prime factorization of n is 2, otherwise 0.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by Ncard00
 ; 0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0
 
-mov $2,-1
-mov $3,2
-add $0,1
+#offset 1
+
+mov $4,2
 lpb $0
-  mov $4,$0
-  lpb $4
-    mov $5,$0
-    mod $5,$3
-    mul $5,4
-    add $3,1
-    sub $4,$5
+  mov $1,$0
+  div $1,4
+  lpb $1
+    mov $2,$0
+    mod $2,$4
+    add $4,1
+    sub $1,$2
   lpe
-  sub $2,1
   lpb $0
-    dif $0,$3
-    add $2,1
+    dif $0,$4
+    add $3,1
   lpe
+  sub $3,1
 lpe
-bin $1,$2
-mov $0,$1
+mov $0,$3
+mul $0,2
+equ $0,2

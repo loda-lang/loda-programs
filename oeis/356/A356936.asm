@@ -17,7 +17,7 @@ lpb $1
   div $0,$5
   sub $0,1
   lpb $0
-    cmp $4,$0
+    equ $4,$0
     mov $0,0
   lpe
   mov $0,$4
