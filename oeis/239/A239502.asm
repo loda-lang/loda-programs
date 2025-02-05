@@ -1,9 +1,10 @@
 ; A239502: (Round(q^prime(n)) - 1)/prime(n), where q is the tribonacci constant (A058265).
 ; Submitted by bcavnaugh
 ; 4,10,74,212,1856,5618,53114,1630932,5161442,167427844,1729192432,5577731626,58401766802,2005139696964,69737304018266,228184540445268,8043367476888770,86866463049858250,285815985033409648,10225367934387562098,111384745483589787826
-; Formula: a(n) = A093305(A006005(n+3))-1
+; Formula: a(n) = A093305(A006005(n))-1
 
-add $0,3
+#offset 3
+
 seq $0,6005 ; The odd prime numbers together with 1.
 seq $0,93305 ; Number of binary necklaces of length n with no subsequence 000.
 sub $0,1

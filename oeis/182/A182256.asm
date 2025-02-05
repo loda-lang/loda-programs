@@ -16,6 +16,7 @@ lpb $7
   sub $0,1
   mov $6,$0
   max $6,0
+  add $6,1
   seq $6,237500 ; Number of binary strings of length 2n which contain the ones' complement of each of their two halves.
   mov $4,$7
   mul $4,$6

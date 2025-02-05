@@ -9,6 +9,7 @@ lpe
 mov $2,$0
 mov $0,$1
 mov $1,$2
+add $1,1
 seq $1,235596 ; Second column of triangle in A235595.
 add $1,1
 bin $0,$2

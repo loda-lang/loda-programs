@@ -7,7 +7,7 @@ add $0,1
 lpb $0
   mov $1,$0
   sub $1,1
-  dis $1,2
+  dgs $1,2
   mov $3,2
   pow $3,$1
   sub $0,1

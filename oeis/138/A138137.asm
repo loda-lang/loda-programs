@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,233968 ; Number of steps between two valleys at height 0 in the infinite Dyck path in which the k-th ascending line segment has A141285(k) steps and the k-th descending line segment has A194446(k) steps, k >= 1.
 add $$3,5
 add $0,1

@@ -5,6 +5,7 @@
 lpb $0
   trn $0,1
   mov $2,$0
+  add $2,1
   seq $2,233348 ; Numbers n such that 3*n+2 and 3*n-2 are both prime for n multiple of 5 (A008587).
   div $2,2
   mov $0,0

@@ -7,6 +7,7 @@ add $2,2
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,238161 ; Greatest common divisor of the prime factors of n, each increased by 1
   equ $3,1
   sub $0,$3

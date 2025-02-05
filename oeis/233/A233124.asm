@@ -1,13 +1,39 @@
 ; A233124: Number of n X 3 0..5 arrays with no element x(i,j) adjacent to itself or value 5-x(i,j) horizontally or vertically, top left element zero, and 1 appearing before 2 3 and 4, and 2 appearing before 3 in row major order (unlabelled 6-colorings with no clashing color pairs).
 ; Submitted by Penguin
 ; 3,80,2688,96256,3497984,127533056,4653056000,169793814528,6196127858688,226111237652480,8251342992703488,301111464108752896,10988286523845115904,400989192448372637696,14633067014086637649920,533996063859705064194048,19486809976022162995150848,711120902862340671961825280,25950524437526761218074738688,946997501934402612335724199936,34558232949370373214506187751424,1261113637727192947457201102913536,46021091691568162552878662407946240,1679421122033644624249004037733613568
-; Formula: a(n) = truncate((2*A013731(n)+A223197(n+1))/8)
+
+#offset 1
 
 mov $1,$0
 add $1,1
-seq $1,223197 ; Rolling cube footprints: number of n X 3 0..5 arrays starting with 0 where 0..5 label faces of a cube and every array movement to a horizontal or vertical neighbor moves across a corresponding cube edge.
-seq $0,13731 ; a(n) = 2^(3*n+2).
-mul $0,2
+mov $3,8
+pow $3,$1
+mov $4,7
+mov $5,20
+mov $6,1
+sub $0,1
+lpb $1
+  sub $1,1
+  add $4,$5
+  add $5,$6
+  sub $4,$5
+  max $4,2
+  sub $4,$5
+  mul $4,-1
+  add $5,$4
+  mul $4,2
+  add $6,$5
+lpe
+mov $1,$4
+mul $1,3
+add $1,6
+mul $1,$3
+div $1,1728
+mov $2,8
+pow $2,$0
+mov $0,$2
+mul $0,8
 add $1,$0
+mul $2,4
 mov $0,$1
 div $0,8

@@ -11,7 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
-    seq $2,107841 ; Series reversion of x(1-3x)/(1-x).
+    seq $2,107841 ; Series reversion of x*(1-3*x)/(1-x).
     mov $3,0
     add $4,$2
   lpe

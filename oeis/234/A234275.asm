@@ -4,7 +4,7 @@
 
 mul $0,2
 mov $1,2
-cmp $1,$0
+equ $1,$0
 sub $0,$1
 mul $0,4
 sub $0,1

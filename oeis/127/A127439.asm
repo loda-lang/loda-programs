@@ -9,5 +9,6 @@ lpb $0
   add $1,1
   sub $0,$1
 lpe
+add $0,1
 seq $0,230847 ; a(n) = 1 + A054541(n).
 sub $0,1

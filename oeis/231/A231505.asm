@@ -8,7 +8,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
-  dis $0,3
+  dgs $0,3
   pow $0,4
   add $2,$0
 lpe

@@ -9,6 +9,7 @@ lpe
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,230196 ; Number of pairs (p,q) such that 2*p + 3*q = n and p != q.
   mod $0,4
   mul $1,$2

@@ -2,12 +2,15 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 5,0,1,4,3,9,3,9,3
 
+#offset -18
+
 mov $1,1
 mov $3,6
 mov $4,1
+add $0,18
 lpb $0
   sub $0,1
-  cmp $3,1
+  equ $3,1
   mov $2,$3
   mul $3,6
   add $3,$1

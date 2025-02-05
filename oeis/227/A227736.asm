@@ -8,6 +8,7 @@ lpb $2
   sub $2,1
   mov $4,0
   mov $3,$1
+  add $3,1
   seq $3,233932 ; Irregular table read by rows: T(n,k) is the binary representation of n shifted right k times and incremented if the last bit shifted away was set.
   lpb $3
     dif $3,2

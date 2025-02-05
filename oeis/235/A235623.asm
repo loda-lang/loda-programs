@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,4,7,8,9,13,19,20,21
 
+#offset 1
+
+sub $0,1
 mov $1,3
 mov $2,$0
 pow $2,2

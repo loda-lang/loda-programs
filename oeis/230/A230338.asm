@@ -8,7 +8,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
-  seq $2,3487 ; a(n) = a(n-1)^2 - 2.
+  seq $2,3487 ; a(n) = a(n-1)^2 - 2, with a(0) = 5.
   mul $1,$2
 lpe
 mov $0,$1

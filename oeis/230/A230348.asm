@@ -11,7 +11,7 @@ add $3,$0
 add $2,6
 lpb $0
   sub $0,1
-  cmp $1,0
+  equ $1,0
   mul $1,$0
   add $3,$1
   add $1,$3

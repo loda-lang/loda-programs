@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w2)
 ; 9,1,9,2,6,3,1,7,7,0
 
+#offset 10
+
+sub $0,10
 mov $1,-1
 pow $1,$0
 mov $3,2

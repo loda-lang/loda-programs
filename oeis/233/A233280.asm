@@ -6,6 +6,19 @@ mov $1,$0
 neq $1,0
 trn $0,1
 add $0,1
-seq $0,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
-seq $0,3188 ; Decimal equivalent of Gray code for n.
+mov $3,3
+mov $5,$0
+div $0,2
+lpb $0
+  div $0,2
+  mul $3,2
+lpe
+mov $4,$3
+sub $4,$5
+mov $0,$4
+sub $0,1
+mov $2,$0
+div $0,2
+bxo $2,$0
+mov $0,$2
 mul $0,$1

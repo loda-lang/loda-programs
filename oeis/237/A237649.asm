@@ -10,12 +10,12 @@ lpb $0
   mul $1,2
   mov $3,$0
   lpb $3
-    cmp $4,0
+    equ $4,0
     add $2,$4
     mov $5,$2
     add $2,1
     mov $3,$5
-    cmp $5,1
+    equ $5,1
   lpe
   lpb $0
     dif $0,$2

@@ -9,7 +9,18 @@ lpb $0
   add $4,1
   seq $4,53657 ; a(n) = Product_{p prime} p^{ Sum_{k>=0} floor[(n-1)/((p-1)p^k)]}.
   mov $2,$0
-  seq $2,348948 ; a(n) = sigma(n) / gcd(sigma(n), A348944(n)), where A348944 is the arithmetic mean of A003959 and A034448, and sigma is the sum of divisors function.
+  add $2,1
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $6,$0
+  add $6,1
+  seq $6,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  mov $5,$0
+  add $5,1
+  seq $5,3959 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
+  add $5,$6
+  div $5,2
+  gcd $5,$2
+  div $2,$5
   div $4,$2
   mov $2,$4
   mul $3,$4

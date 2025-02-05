@@ -2,7 +2,9 @@
 ; Submitted by HansCCT
 ; 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 
-add $0,7
+#offset 2
+
+add $0,5
 lpb $0
   div $1,2
   seq $1,227349 ; Product of lengths of runs of 1-bits in binary representation of n.

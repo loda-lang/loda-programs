@@ -9,6 +9,7 @@ lpb $0
   equ $4,0
   add $1,$4
   mod $0,$1
+  add $2,1
   seq $2,238526 ; Record values of A238525.
   sub $2,$1
   add $3,$2

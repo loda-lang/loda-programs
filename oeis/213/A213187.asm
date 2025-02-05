@@ -4,7 +4,7 @@
 
 #offset 1
 
-sub $0,1
+add $0,1
 seq $0,234345 ; Smallest q such that n <= q < 2n with p, q both prime, p+q = 2n, and p <= q.
 sub $0,1
 max $1,$0

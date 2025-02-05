@@ -9,8 +9,9 @@ mov $1,$0
 mov $2,$0
 lpb $2
   sub $2,1
-  add $1,1
   mov $3,$1
+  add $1,1
+  add $3,2
   seq $3,230594 ; Number of ways to write n as n = x*y, where x, y = noncomposite numbers (A008578),  1 <= x <= n, 1 <= y <= n.
   lpb $3
     div $3,4

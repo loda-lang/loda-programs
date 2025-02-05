@@ -10,7 +10,7 @@ lpb $1
   sub $0,$1
   lpb $0
     mov $4,$0
-    dis $4,4
+    dgs $4,4
     mul $4,2
     equ $0,1
     trn $0,1

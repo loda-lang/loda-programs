@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,232555 ; Nonsquare numbers whose sum of proper square divisors is a square greater than 1.
 mov $1,$0
 lpb $1

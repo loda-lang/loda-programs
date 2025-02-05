@@ -12,6 +12,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,230780 ; Positive numbers without a prime factor congruent to 1 (mod 6).
   mod $0,3
 lpe

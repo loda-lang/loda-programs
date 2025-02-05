@@ -4,7 +4,7 @@
 add $0,1
 lpb $0
   dif $0,2
-  cmp $1,0
+  equ $1,0
   mod $1,$0
 lpe
 mov $0,$1

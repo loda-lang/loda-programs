@@ -5,7 +5,7 @@ mov $1,$0
 lpb $1
   pow $1,2
   mov $2,$0
-  cmp $2,0
+  equ $2,0
   add $0,$2
   div $1,$0
   trn $1,1

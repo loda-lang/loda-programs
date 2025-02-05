@@ -18,6 +18,7 @@ lpb $2
   mov $1,$4
   sub $1,$2
   add $1,$0
+  add $1,1
   seq $1,233968 ; Number of steps between two valleys at height 0 in the infinite Dyck path in which the k-th ascending line segment has A141285(k) steps and the k-th descending line segment has A194446(k) steps, k >= 1.
   add $3,$1
 lpe

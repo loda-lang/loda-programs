@@ -5,6 +5,7 @@
 equ $1,$0
 mul $0,2
 trn $0,1
+add $0,1
 seq $0,233693 ; Expansion of q * psi(-q) * chi(-q^6) * psi(-q^9) / (phi(-q) * phi(-q^18)) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
 add $0,1
 sub $1,$0

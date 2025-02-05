@@ -14,6 +14,6 @@ lpb $0
   bxo $2,$1
   mov $1,$2
 lpe
-dis $1,2
+dgs $1,2
 mov $0,$1
 div $0,2

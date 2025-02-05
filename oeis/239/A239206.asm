@@ -16,7 +16,7 @@ mov $4,2
 pow $4,$0
 sub $4,1
 mov $5,$4
-cmp $5,0
+equ $5,0
 add $4,$5
 div $2,$4
 div $1,$2

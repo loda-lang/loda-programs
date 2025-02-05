@@ -2,6 +2,9 @@
 ; Submitted by [AF>Amis de la Mer] ComteZera
 ; 1,2,5,1,3,3,2,2,2
 
+#offset 1
+
+sub $0,1
 pow $0,2
 mov $1,$0
 div $0,5

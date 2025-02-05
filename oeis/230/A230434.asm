@@ -1,10 +1,13 @@
 ; A230434: Magic numbers of nucleons. Another version of A018226, with 34 inserted.
 ; Submitted by stoneageman
 ; 2,8,20,28,34,50,82,126
-; Formula: a(n) = 2*b(n)+2*c(n), b(n) = 5, b(5) = 5, b(4) = 5, b(3) = 5, b(2) = 5, b(1) = 2, b(0) = 0, c(n) = 2*d(n-2)+truncate(7/2)+7, c(6) = 36, c(5) = 20, c(4) = 12, c(3) = 9, c(2) = 5, c(1) = 2, c(0) = 1, d(n) = 2*d(n-3)+d(n-1)+truncate(7/2)+6, d(6) = 43, d(5) = 24, d(4) = 13, d(3) = 5, d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = 2*b(n-1)+2*c(n-1), b(n) = 5, b(5) = 5, b(4) = 5, b(3) = 5, b(2) = 5, b(1) = 2, b(0) = 0, c(n) = 2*d(n-2)+truncate(7/2)+7, c(6) = 36, c(5) = 20, c(4) = 12, c(3) = 9, c(2) = 5, c(1) = 2, c(0) = 1, d(n) = 2*d(n-3)+d(n-1)+truncate(7/2)+6, d(6) = 43, d(5) = 24, d(4) = 13, d(3) = 5, d(2) = 1, d(1) = 0, d(0) = 0
+
+#offset 1
 
 mov $1,2
 mov $4,1
+sub $0,1
 lpb $0
   sub $0,1
   add $3,2

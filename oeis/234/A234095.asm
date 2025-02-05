@@ -2,6 +2,9 @@
 ; Submitted by Landjunge
 ; 7,17,19,43,47,59,61,71,79,101,107,109,149,151,163,167,197,223,257,263,271,311,317,347,349,353,383,389,401,421,439,449,461,479,503,521,523,557,569,599,601,613,631,673,677,691,701,811,821,827,839,853,863,881,919,941,947,971,983,991,1009,1051,1061,1063,1091,1097,1109,1153,1163,1181,1213,1217,1231,1259,1279,1283,1301,1307,1321,1361
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 min $1,1
 add $0,$1
@@ -15,8 +18,17 @@ lpb $3
   div $6,2
   mov $4,$2
   add $4,2
-  seq $4,69733 ; Number of divisors d of n such that d or n/d is odd. Number of non-orientable coverings of the Klein bottle with n lists.
+  mov $8,$4
+  seq $8,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+  sub $4,1
+  mod $4,2
+  sub $4,2
+  add $4,$8
+  mov $7,$4
+  dif $7,2
+  mov $4,$7
   sub $4,$6
+  add $4,1
   equ $4,0
   sub $0,$4
   add $2,4

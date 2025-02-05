@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1,1,1,2,2,3,2,4,3,4,3,6,4,7,4,8,5,10,5,13
 
+#offset 1
+
+sub $0,1
 mov $4,3
 add $4,$0
 mov $1,$0

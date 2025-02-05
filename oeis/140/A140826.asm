@@ -9,11 +9,12 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,231167 ; a(1) = a(2) = 0, for n>=3: (sum of non-divisors of n) modulo (number of non-divisors of n).
   equ $3,0
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

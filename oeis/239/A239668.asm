@@ -5,7 +5,5 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 pow $0,2
 seq $0,23891 ; Sum of composite divisors of n.
