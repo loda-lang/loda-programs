@@ -1,0 +1,27 @@
+; A202485: Number of (n+2)X3 binary arrays avoiding patterns 000 and 010 in rows, columns and nw-to-se diagonals
+; Submitted by omegaintellisys
+; 108,324,1170,4225,14560,50176,174720,608400,2113020,7338681,25513362,88698724,308204050,1070925625,3722206950,12937242564,44959937760,156246278400,543023015040,1887238517824,6558819027904,22794207851584,79218562516080,275314706612100,956820737139750,3325307006975625,11556687502790325,40163818184902129,139584261135011056,485107413516054784,1685929583834710032,5859235465085321361,20363032207684352340,70769144398116819600,245949220703491287840,854765444447910339136,2970629290730599100824
+; Formula: a(n) = truncate(b(n+1)/36), b(n) = 9*A232935(truncate(n/2)+1)*A232935(truncate((n-1)/2)+1)*A000045(truncate(n/2)+3)*A000045(truncate((n-1)/2)+3), b(2) = 3888, b(1) = 0, b(0) = 0
+
+#offset 1
+
+mov $3,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  mov $1,$3
+  div $1,2
+  mov $4,$1
+  add $4,1
+  seq $4,232935 ; Number of n X 2 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, vertically or antidiagonally.
+  add $1,3
+  seq $1,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+  mul $4,$1
+  mov $1,$4
+  mul $1,3
+  mul $2,$1
+  add $3,1
+lpe
+mov $0,$2
+div $0,36
