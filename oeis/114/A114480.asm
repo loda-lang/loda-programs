@@ -1,18 +1,21 @@
 ; A114480: Kekulé numbers for certain benzenoids.
-; Submitted by pututu
+; Submitted by Watewmark
 ; 4,50,650,8500,111250,1456250,19062500,249531250,3266406250,42757812500,559707031250,7326660156250,95907226562500,1255441894531250,16433947753906250,215123168945312500,2815998840332031250
-; Formula: a(n) = b(max(2*n-2,0)), b(n) = 4*b(n-1)-c(n-1), b(1) = 14, b(0) = 4, c(n) = b(n-1)+c(n-1), c(1) = 6, c(0) = 2
+; Formula: a(n) = 2*truncate((b(n)-10)/5)+4, b(n) = 15*b(n-1)-25*b(n-2), b(3) = 1625, b(2) = 125, b(1) = 10, b(0) = 1
 
 #offset 1
 
-mov $1,4
-mov $2,2
-sub $0,1
-mul $0,2
+mov $1,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $2,$1
+  add $1,$2
   mul $1,5
-  sub $1,$2
+  mul $2,5
+  add $2,$1
 lpe
 mov $0,$1
+sub $0,10
+div $0,5
+mul $0,2
+add $0,4

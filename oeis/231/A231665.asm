@@ -11,13 +11,10 @@ lpb $1
   lpb $0
     mov $4,$0
     dgs $4,4
-    mul $4,2
     equ $0,1
     trn $0,1
   lpe
   pow $4,2
-  mov $0,$4
-  div $0,4
-  add $2,$0
+  add $2,$4
 lpe
 mov $0,$2

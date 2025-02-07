@@ -14,12 +14,12 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,5
+    add $7,4
     seq $7,1725 ; a(n) = n!/5!.
     mov $9,10
     add $9,$5
+    sub $4,1
     sub $4,$0
     mul $7,$$9
     add $5,1

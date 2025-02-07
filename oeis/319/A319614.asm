@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 4,3,6,1,9,9,1,3
 
+#offset 2
+
+sub $0,2
 lpb $0
   add $1,1
   sub $0,$1

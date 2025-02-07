@@ -10,12 +10,12 @@ lpb $2
   seq $3,265388 ; a(n) = gcd{k=1..n-1} binomial(2*n, 2*k), a(1) = 0.
   sub $3,$1
   sub $3,$1
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

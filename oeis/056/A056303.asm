@@ -1,5 +1,5 @@
 ; A056303: Number of primitive (period n) n-bead necklace structures using exactly two different colored beads.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 0,1,1,2,3,5,9,16,28,51,93,170,315,585,1091,2048,3855,7280,13797,26214,49929,95325,182361,349520,671088,1290555,2485504,4793490,9256395,17895679,34636833,67108864,130150493,252645135,490853403,954437120,1857283155
 
 #offset 1
@@ -16,6 +16,7 @@ lpb $6
   max $5,0
   add $5,1
   seq $5,237500 ; Number of binary strings of length 2n which contain the ones' complement of each of their two halves.
+  sub $0,$2
   mov $3,$6
   mul $3,$5
   add $2,$3

@@ -1,22 +1,21 @@
 ; A262867: Total number of ON (black) cells after n iterations of the "Rule 153" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Kotenok2000
+; Submitted by Mumps
 ; 1,2,5,8,15,22,31,38,53,68,85,100,121,140,161,176,207,238,271,302,339,374,411,442,487,530,575,614,663,706,751,782,845,908,973,1036,1105,1172,1241,1304,1381,1456,1533,1604,1685,1760,1837,1900,1993,2084,2177,2264,2361,2452,2545,2624,2729,2828,2929,3016,3121,3212,3305,3368,3495,3622,3751,3878,4011,4142,4275,4402,4543,4682,4823,4958,5103,5242,5383,5510
 
-mov $1,1
-lpb $0
-  mov $4,$0
-  mov $3,$0
-  lpb $3
-    div $4,2
-    sub $3,$4
-  lpe
-  mov $4,2
-  pow $4,$3
-  sub $4,1
-  mov $2,$0
-  mul $2,2
-  sub $2,$4
-  sub $0,1
-  add $1,$2
+mov $5,$0
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $0,$5
+  sub $0,$3
+  mov $1,$0
+  dgs $0,2
+  mov $2,2
+  pow $2,$0
+  mul $1,2
+  add $1,1
+  sub $1,$2
+  add $4,$1
 lpe
-mov $0,$1
+mov $0,$4
+add $0,1
