@@ -13,6 +13,7 @@ lpb $4
   mov $7,$0
   sub $0,1
   div $5,4
+  add $5,1
   seq $5,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
   mul $5,2
   add $5,$7

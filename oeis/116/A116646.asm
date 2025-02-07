@@ -8,6 +8,7 @@ lpb $0
   trn $2,1
   mov $3,-1
   pow $3,$2
+  add $2,1
   seq $2,240690 ; Number of partitions p of n such that p contains fewer 1s than its conjugate.
   add $2,$3
   sub $0,2

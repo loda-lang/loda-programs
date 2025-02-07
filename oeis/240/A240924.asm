@@ -1,9 +1,11 @@
 ; A240924: Digital root of squares of numbers not divisible by 2, 3 or 5.
 ; Submitted by Jason Jung
 ; 1,4,4,7,1,1,7,4,7,1,7,4,4,7,1,7,4,7,1,1,7,4,4,1,1,4,4,7,1,1,7,4,7,1,7,4,4,7,1,7,4,7,1,1,7,4,4,1,1,4,4,7,1,1,7,4,7,1,7,4,4,7,1,7,4,7,1,1,7,4,4,1,1,4,4,7,1,1,7,4
-; Formula: a(n) = ((2*floor((5*floor((floor((n+4)/2)%4+6*n+25)/4)+4)/4)-15)^2)%9
+; Formula: a(n) = ((2*floor((5*floor((floor((n+3)/2)%4+6*n+19)/4)+4)/4)-15)^2)%9
 
-add $0,4
+#offset 1
+
+add $0,3
 mov $1,$0
 div $1,2
 mod $1,4

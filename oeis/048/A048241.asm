@@ -5,6 +5,7 @@
 lpb $0
   mov $1,$0
   trn $1,1
+  add $1,1
   seq $1,244396 ; a(n) = Sum_{k=1, n} phi(k)*index(k, n), with phi(k) the Euler totient A000010(k) and index(k,n) the position of 1/k in the n-th row of the Farey sequence of order k, A049805(n,k).
   add $1,1
   mul $0,0

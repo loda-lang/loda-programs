@@ -2,12 +2,13 @@
 ; Submitted by Jon Maiga
 ; 2,3,4,5,7,12,15,20,28,35
 
-add $0,1
+#offset 1
+
 mov $2,$0
 lpb $0
   mov $3,$2
   dif $3,$0
-  cmp $3,$2
+  equ $3,$2
   sub $3,$1
   add $3,2
   sub $0,1

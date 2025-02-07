@@ -1,6 +1,9 @@
 ; A243319: Number of simple connected graphs with n nodes that are bipartite and distance regular.
 ; 1,1,0,1,0,2,0,3,0,3
 
+#offset 1
+
+sub $0,1
 lpb $0
   dif $0,2
   mov $1,100

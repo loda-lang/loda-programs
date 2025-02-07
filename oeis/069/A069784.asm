@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,2
+  add $3,1
   seq $3,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
   mov $5,$3
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

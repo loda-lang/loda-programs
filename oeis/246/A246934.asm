@@ -1,11 +1,25 @@
 ; A246934: The closest square to n-th prime.
 ; 1,4,4,9,9,16,16,16,25,25,36,36,36,49,49,49,64,64,64,64,81,81,81,81,100,100,100,100,100,121,121,121,144,144,144,144,169,169,169,169,169,169,196,196,196,196,225,225,225,225,225,225,256,256,256,256,256,256,289,289,289,289,324,324,324,324,324,324,361,361,361,361,361,361,361,400,400,400,400,400
-; Formula: a(n) = A000194(2*truncate((A000040(n+1)+1)/2))^2
 
+#offset 1
+
+mov $2,0
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$1
+  add $2,2
+  sub $3,$0
+lpe
+mov $0,$2
 add $0,1
-seq $0,40 ; The prime numbers.
+max $0,2
 add $0,1
 div $0,2
-mul $0,2
-seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
 pow $0,2

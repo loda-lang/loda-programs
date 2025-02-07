@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,242491 ; Numbers avoiding subtractive notation when written in Roman numerals.
 mov $1,$0
 mov $0,0

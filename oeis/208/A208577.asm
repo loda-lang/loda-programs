@@ -9,6 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
+  add $0,1
   seq $0,242467 ; Number of length n+2 0..n arrays with no three equal elements in a row and new values 0..n introduced in 0..n order.
   sub $0,$1
   add $1,$0

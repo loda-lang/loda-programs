@@ -1,12 +1,12 @@
 ; A056675: Number of non-unitary but squarefree divisors of n!. Also number of unitary but not-squarefree divisors of n!.
 ; Submitted by [AF>Occitania]franky82
 ; 0,0,0,2,4,6,12,12,12,14,28,28,56,60,60,60,120,120,240,240,240,248,496,496,496,504,504,504,1008,1008,2016,2016,2016,2032,2032,2032,4064,4080,4080,4080,8160,8160,16320,16320,16320,16352,32704,32704,32704,32704,32704,32704,65408,65408,65408,65408,65408,65472,130944,130944,261888,262016,262016,262016,262016,262016,524032,524032,524032,524032,1048064,1048064,2096128,2096640,2096640,2096640,2096640,2096640,4193280,4193280
-; Formula: a(n) = -A056671(A249769(2*n-2))+A034444(A249769(2*n-2))
+; Formula: a(n) = -A056671(A249769(2*n-1))+A034444(A249769(2*n-1))
 
 #offset 1
 
-sub $0,1
 mul $0,2
+sub $0,1
 seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
 mov $1,$0
 seq $1,56671 ; 1 + the number of unitary and squarefree divisors of n = number of divisors of reduced squarefree part of n.

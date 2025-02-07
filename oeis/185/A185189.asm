@@ -10,6 +10,7 @@ add $2,3
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,246655 ; Prime powers: numbers of the form p^k where p is a prime and k >= 1.
   mov $5,$3
   add $3,1

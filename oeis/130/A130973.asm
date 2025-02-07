@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,2
   seq $3,242767 ; Numbers of repetitions of terms in A242758.
   mov $5,$3
   add $1,1

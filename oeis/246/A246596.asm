@@ -1,9 +1,23 @@
 ; A246596: Run Length Transform of Catalan numbers A000108.
 ; Submitted by Ciceronian
 ; 1,1,1,2,1,1,2,5,1,1,1,2,2,2,5,14,1,1,1,2,1,1,2,5,2,2,2,4,5,5,14,42,1,1,1,2,1,1,2,5,1,1,1,2,2,2,5,14,2,2,2,4,2,2,4,10,5,5,5,10,14,14,42,132,1,1,1,2,1,1,2,5,1,1,1,2,2,2,5,14
-; Formula: a(n) = A069739(A122111(A217434(A057335(n))))
+; Formula: a(n) = truncate(A317848(A181819(A108951(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1))-1)/gcd(A317848(A181819(A108951(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1))-1),A000005(A181819(A108951(truncate((A057335(n)-1)/A293810(A057335(n)-1))+1)))))
 
 seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-seq $0,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
-seq $0,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
-seq $0,69739 ; Size of the key space for isomorphism verification of circulant graphs of order n.
+sub $0,1
+mov $1,$0
+seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+div $1,$0
+mov $0,$1
+add $0,1
+seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $0,1
+mov $2,$0
+seq $2,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
+mov $3,$2
+add $0,1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+gcd $2,$0
+div $3,$2
+mov $0,$3

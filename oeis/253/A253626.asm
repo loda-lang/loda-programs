@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,244375 ; Expansion of (a(q) + 3*a(q^2) - 4*a(q^4)) / 6 in powers of q where a() is a cubic AGM theta function.
 pow $1,$2
 lpb $2

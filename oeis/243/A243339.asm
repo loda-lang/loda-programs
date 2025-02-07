@@ -2,6 +2,9 @@
 ; Submitted by Stony666
 ; 1,1,1,1,1,3,1,3,3,4
 
+#offset 1
+
+sub $0,1
 dif $0,2
 div $0,4
 add $0,4

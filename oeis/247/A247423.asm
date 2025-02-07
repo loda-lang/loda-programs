@@ -10,6 +10,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,247424 ; Odd numbers not of the form 2*A005206(A003249(m)) - 1.
   sub $3,1
   add $0,1

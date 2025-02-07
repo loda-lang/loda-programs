@@ -10,7 +10,7 @@ lpb $0
   mov $6,$4
   add $6,$8
   mov $8,$4
-  cmp $1,$4
+  equ $1,$4
   add $1,$3
   add $2,$4
   mov $3,$4

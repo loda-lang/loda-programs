@@ -12,8 +12,30 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
+  mov $6,0
+  max $6,$3
+  mov $9,$6
+  add $6,1
+  seq $6,19554 ; Smallest number whose square is divisible by n.
+  div $9,$6
+  mov $8,$9
+  add $8,1
+  pow $8,2
+  mul $8,4
+  nrt $8,2
+  add $8,1
+  div $8,2
+  pow $8,2
+  mov $7,$3
+  div $7,$8
+  mov $3,$7
   add $3,1
-  seq $3,55491 ; Smallest square divisible by n divided by largest square which divides n.
+  pow $3,2
+  mov $5,$3
+  add $3,$5
+  sub $3,1
+  div $3,2
+  add $3,1
   equ $3,1
   sub $0,$3
   add $1,1

@@ -17,6 +17,7 @@ lpb $4
   sub $0,1
   mov $5,-1
   pow $5,$0
+  add $0,1
   seq $0,245174 ; Second differences of A006450.
   mul $0,$5
   mul $1,$0

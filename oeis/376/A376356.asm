@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,242284 ; Greedy residue sequence of triangular numbers 3, 6, 10, 15, ...
   add $3,$4
   gcd $3,2

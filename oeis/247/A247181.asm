@@ -2,8 +2,11 @@
 ; Submitted by zombie67 [MM]
 ; 2,2,4,4,8,14,24,32,64,124
 
+#offset 1
+
 mov $2,1
 mov $5,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $4,$6

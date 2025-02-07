@@ -19,6 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
+    add $5,1
     seq $5,242643 ; a(n) = Sum_{d|n, d <= 6} d^2 + 6*Sum_{d|n, d>6} d.
     add $4,1
   lpe

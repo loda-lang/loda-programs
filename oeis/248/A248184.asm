@@ -12,6 +12,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $0,$3
+  add $0,1
   seq $0,248183 ; Least k such that 1/4 - Sum_{h = 1..k} 1/(h*(h+1)*(h+2)) < 1/n^2.
   mov $3,$1
   add $3,$0

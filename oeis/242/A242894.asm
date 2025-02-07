@@ -1,6 +1,9 @@
 ; A242894: Beginning with a central 'Star' configuration of a Penrose 'Kite' and 'Dart' tiling with rotational symmetry as the first step, number of tiles that can be added to the free edges of the current tiling.
 ; 5,10,10,20,20,25,35,40,40,45,45
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $3,1
 lpb $0

@@ -16,6 +16,7 @@ lpb $2
   seq $6,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $6,1
   mov $5,$3
+  add $5,1
   seq $5,242595 ; a(n) is the primitive period length for the sequence 2^k (mod n), k = 1, 2, ...
   mul $6,$5
   mov $3,$6

@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 2,0,2,4,4,0,0,0,8,0,0,12
 
+#offset 2
+
+sub $0,2
 mov $5,$0
 mov $7,2
 lpb $7
@@ -17,8 +20,7 @@ lpb $7
       add $2,1
       mov $4,$1
       gcd $4,$2
-      cmp $4,1
-      cmp $4,0
+      neq $4,1
       sub $3,$4
     lpe
     sub $0,1

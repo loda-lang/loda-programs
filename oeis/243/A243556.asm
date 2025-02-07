@@ -2,7 +2,8 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 1,1,1,2,1,3,2,3,0,14
 
-add $0,1
+#offset 1
+
 lpb $0
   sub $0,1
   dif $0,2

@@ -15,6 +15,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,248211 ; First differences of omega(n), the number of distinct prime factors function (A001221).
     mov $6,$7
     mul $6,$3

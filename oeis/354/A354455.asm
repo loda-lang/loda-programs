@@ -14,6 +14,7 @@ lpb $2
   sub $3,1
   sub $3,$1
   mov $4,$1
+  add $4,1
   seq $4,243291 ; Difference between n and the index of its largest prime factor: a(n) = n - A061395(n).
   mod $4,$3
   add $1,1

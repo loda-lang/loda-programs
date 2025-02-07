@@ -11,7 +11,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,247172 ; Expansion of -1-(sqrt(x^4+4*x^3-2*x^2-4*x+1)-x^2-2*x-1)/(4*x).
+    seq $7,247172 ; Expansion of -1 - (sqrt(x^4 + 4*x^3 - 2*x^2 - 4*x + 1) - x^2 - 2*x - 1)/(4*x).
     mov $9,10
     add $9,$5
     sub $4,1

@@ -9,6 +9,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $5,$2
+  add $5,1
   seq $5,242094 ; Complement of A003249.
   mov $4,$2
   add $4,$5

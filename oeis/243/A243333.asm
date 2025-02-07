@@ -2,7 +2,9 @@
 ; Submitted by respawner
 ; 1,1,1,1,2,5,5,9,15,38
 
-sub $0,3
+#offset 1
+
+sub $0,4
 mov $1,1
 mov $4,$0
 div $4,2

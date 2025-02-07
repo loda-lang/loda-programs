@@ -2,9 +2,12 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,2,3,4,5,6,7,8,9,11111111111
 
+#offset 1
+
 mov $1,$0
-sub $1,9
+sub $1,10
 mov $2,$1
+sub $0,1
 lpb $1
   mov $3,$1
   lpb $0

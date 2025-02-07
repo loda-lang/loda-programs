@@ -8,7 +8,7 @@ mov $5,1
 lpb $0
   sub $0,1
   mov $1,$3
-  dis $1,10
+  dgs $1,10
   mov $3,$4
   mov $4,$2
   mov $2,$5

@@ -1,8 +1,11 @@
 ; A245879: Number of distinct fractional chromatic numbers among all connected graphs on n nodes.
 ; Submitted by Jon Maiga
 ; 1,1,2,3,5,7,11,17,29,50
-; Formula: a(n) = floor((2^n+n*floor(n/2))/(n+2))+1
+; Formula: a(n) = floor((2^(n-1)+floor((n-1)/2)*(n-1))/(n+1))+1
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 div $0,2
 mul $0,$2

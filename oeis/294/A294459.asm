@@ -13,6 +13,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,245579 ; Number of odd divisors of n multiplied by n.
     div $7,-1
     mov $9,10

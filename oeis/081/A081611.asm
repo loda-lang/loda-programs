@@ -9,6 +9,7 @@ lpb $2
   add $3,3
   mov $4,$3
   div $3,6
+  add $3,1
   seq $3,240400 ; Numbers n having a partition into distinct parts of form 3^k-2^k.
   sub $3,1
   add $3,$4

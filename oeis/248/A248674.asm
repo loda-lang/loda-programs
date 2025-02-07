@@ -2,6 +2,9 @@
 ; Submitted by Saenger
 ; 1,7,9,7,2,2,9,9,1,4,4
 
+#offset 1
+
+sub $0,1
 mov $5,14
 mov $3,$0
 mul $3,9

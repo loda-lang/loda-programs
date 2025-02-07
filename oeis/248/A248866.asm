@@ -2,13 +2,16 @@
 ; Submitted by Jon Maiga
 ; 4,9,6,6,5,6,5,6,6,6,6
 
+#offset 3
+
+sub $0,3
 lpb $0
   mov $2,1
   mov $3,$0
   mul $3,5
   lpb $3
     mov $1,$0
-    cmp $1,0
+    equ $1,0
     mov $5,$0
     add $5,$1
     mul $2,$3

@@ -7,6 +7,7 @@ lpb $0
   add $3,1
   sub $0,1
   div $2,$3
+  add $2,1
   seq $2,245466 ; a(n) = sigma_1(1) + sigma_2(2) + sigma_3(3) + ... + sigma_n-1(n-1) + sigma_n(n).
   add $1,$2
 lpe

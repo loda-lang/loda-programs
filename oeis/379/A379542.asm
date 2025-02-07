@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,247010 ; Primes p such that (p-3)/2 and 2*p+3 are both prime.
   mul $1,$0
   mul $3,-1

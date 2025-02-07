@@ -2,7 +2,10 @@
 ; Submitted by Mumps
 ; 1,3,4,5,7,14,9,11,13,19
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $3,$1
@@ -16,5 +19,5 @@ lpb $0
   bxo $2,$1
   mov $1,$2
 lpe
-dis $1,2
+dgs $1,2
 mov $0,$1

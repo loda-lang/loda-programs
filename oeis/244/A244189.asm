@@ -2,6 +2,9 @@
 ; Submitted by omegaintellisys
 ; 0,3,7,3,7,3,7,7,3,3,1,7,3,7
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,2
 lpb $2

@@ -2,6 +2,9 @@
 ; Submitted by [AF] Kalianthys
 ; 1,1,3,9,34,134,568,2499
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   sub $3,$4

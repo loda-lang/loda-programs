@@ -11,6 +11,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,243501 ; Permutation of even numbers: a(n) = 2*A048673(n).
     max $5,$3
     mov $6,$3

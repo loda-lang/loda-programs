@@ -7,6 +7,7 @@ lpb $0
   sub $0,1
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,246600 ; Number of divisors d of n with property that the binary representation of d can be obtained from the binary representation of n by changing any number of 1's to 0's.
   add $2,$3
 lpe

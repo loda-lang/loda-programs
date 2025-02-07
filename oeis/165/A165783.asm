@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,249596 ; Analog of A097717 in base 2.
 mov $1,$0
 lpb $0

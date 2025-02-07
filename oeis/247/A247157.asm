@@ -2,6 +2,9 @@
 ; Submitted by Fornax
 ; 1,4,7,11,14,18,21,26,29,33,37,41
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mul $1,2
 mov $2,$0

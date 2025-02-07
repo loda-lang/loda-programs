@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   trn $3,1
   mov $5,$3
+  add $3,1
   seq $3,241404 ; Sum of n and the sum of the factorials of its digits.
   sub $3,$5
   sub $3,1

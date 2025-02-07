@@ -2,9 +2,11 @@
 ; Submitted by biodoc
 ; 1,1,1,2,1,4,1,3,0,15
 
+#offset 1
+
 mov $2,1
 mov $3,1
-sub $0,2
+sub $0,3
 lpb $0
   gcd $3,2
   pow $3,$0

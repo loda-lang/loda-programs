@@ -2,8 +2,10 @@
 ; Submitted by Stony666
 ; 0,0,0,0,0,0,1,12,180,2928
 
+#offset 1
+
 mov $1,2
-add $0,6
+add $0,5
 lpb $0
   sub $0,1
   max $0,11

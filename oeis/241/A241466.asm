@@ -1,8 +1,10 @@
-; A241466: Number of simple connected graphs g on n nodes with |Aut(g)| = 72
+; A241466: Number of simple connected graphs g on n nodes with |Aut(g)| = 72.
 ; Submitted by p3d-cluster
 ; 0,0,0,0,0,1,2,16,124,1070
 
-sub $0,4
+#offset 1
+
+sub $0,5
 lpb $0
   sub $0,1
   div $3,2

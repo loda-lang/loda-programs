@@ -13,6 +13,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,247636 ; Numbers k such that d(r,k) != d(s,k), where d(x,k) = k-th binary digit of x, r = {sqrt(2)}, s = {sqrt(8)}, and { } = fractional part.
   mov $2,$3
   mul $2,$0

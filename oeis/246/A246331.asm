@@ -5,7 +5,7 @@
 mul $0,2
 lpb $0
   mov $2,$0
-  dis $2,2
+  dgs $2,2
   mov $3,3
   pow $3,$2
   sub $0,1

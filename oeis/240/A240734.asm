@@ -11,7 +11,7 @@ lpb $3
   add $5,$2
   add $5,$2
   add $1,$5
-  cmp $2,2
+  equ $2,2
   add $2,$1
   add $4,3
   dif $4,2

@@ -8,12 +8,12 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,3
   mov $3,$1
+  add $3,4
   seq $3,249142 ; Let k be the difference between the smallest square >= n and n. Sequence gives difference between the smallest square >= k and k.
   min $3,1
   sub $0,1
-  add $1,1
+  add $1,4
   mov $4,$0
   max $4,0
   equ $4,$0

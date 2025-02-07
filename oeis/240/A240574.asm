@@ -11,5 +11,15 @@ seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
 mul $1,$2
 div $1,2
 div $0,2
-seq $0,281357 ; G.f.: (Product_{j>=1} 1/(1-q^j)^2 + Product_{j>=1} 1/(1-q^(2*j)))/2.
+mov $4,-1
+pow $4,$0
+add $4,1
+mov $3,$0
+dif $3,2
+seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
+mul $3,$4
+div $3,2
+seq $0,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+add $0,$3
+div $0,2
 sub $0,$1

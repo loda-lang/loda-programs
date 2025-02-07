@@ -8,6 +8,7 @@ lpb $0
   sub $0,2
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,240690 ; Number of partitions p of n such that p contains fewer 1s than its conjugate.
   sub $1,1
   mov $0,1

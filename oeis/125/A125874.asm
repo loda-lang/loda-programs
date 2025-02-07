@@ -15,6 +15,7 @@ lpb $2
   mov $5,1
   add $5,$3
   add $5,1
+  add $3,1
   seq $3,245486 ; Product of the greatest prime factor of n and the greatest prime factor of n+1.
   mov $6,$3
   gcd $6,$5

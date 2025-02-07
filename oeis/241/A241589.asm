@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,241587 ; Coefficients in an expansion of the trace of the log of the adjacency operator on the infinite grid Z x Z.
     add $7,1
     mov $9,10

@@ -4,5 +4,9 @@
 
 dif $0,2
 seq $0,278159 ; Run length transform of primorials, A002110.
-sub $0,1
-seq $0,319626 ; Primorial deflation of n (numerator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the numerator of g(n).
+mov $2,$0
+seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+mov $1,$0
+gcd $1,$2
+mov $0,$2
+div $0,$1

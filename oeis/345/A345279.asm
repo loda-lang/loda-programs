@@ -15,7 +15,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  sub $3,1
   seq $3,248101 ; Completely multiplicative with a(prime(n)) = prime(n)^((n+1) mod 2).
   lpb $0
     dif $0,$2

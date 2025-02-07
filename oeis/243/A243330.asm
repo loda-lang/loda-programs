@@ -2,7 +2,10 @@
 ; Submitted by gingavasalata
 ; 1,0,1,1,2,2,4,4,9,20
 
-cmp $4,$0
+#offset 1
+
+sub $0,1
+equ $4,$0
 add $0,1
 lpb $0
   sub $0,1

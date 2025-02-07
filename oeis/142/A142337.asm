@@ -16,6 +16,7 @@ lpb $2
   div $6,2
   mov $5,$3
   mul $5,$3
+  add $3,1
   seq $3,244048 ; Antisigma(n) minus the sum of remainders of n mod k, for k = 1,2,3,...,n.
   sub $3,$6
   add $3,$5

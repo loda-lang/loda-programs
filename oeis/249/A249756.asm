@@ -11,7 +11,7 @@ bin $1,$0
 add $0,1
 add $2,1
 bin $2,$0
-cmp $0,1
+equ $0,1
 gcd $0,2
 div $0,2
 mul $0,$2

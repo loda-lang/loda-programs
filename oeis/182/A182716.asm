@@ -10,6 +10,7 @@ lpb $0
   mov $2,-1
   pow $2,$1
   mov $0,1
+  add $1,1
   seq $1,240690 ; Number of partitions p of n such that p contains fewer 1s than its conjugate.
   add $1,$2
 lpe

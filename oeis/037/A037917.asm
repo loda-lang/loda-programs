@@ -10,6 +10,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,247193 ; a(n) = gcd(n!, Fibonacci(n)).
   mov $5,$3
   seq $5,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).

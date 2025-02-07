@@ -4,8 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mul $0,2
+sub $0,1
 seq $0,249769 ; Sequence of distinct least positive numbers such that the average of the first n terms is a factorial.
 mov $1,$0
 seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

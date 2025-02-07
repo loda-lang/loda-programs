@@ -7,18 +7,19 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,249802 ; a(n) is the smallest prime q such that n(q-1)-1 is prime, that is, the smallest prime q so that n = (p+1)/(q-1) with p prime; or a(n) = -1 if no such q exists.
   mov $5,$1
   seq $5,193238 ; Number of prime digits in decimal representation of n.
   div $5,2
   mul $5,2
   sub $3,$5
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

@@ -11,6 +11,7 @@ lpb $6
   sub $1,1
   mov $5,$1
   max $5,0
+  add $5,1
   seq $5,246439 ; Numbers m such that A164349(m) = 1.
   mov $3,$6
   mul $3,$5

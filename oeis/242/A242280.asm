@@ -16,7 +16,12 @@ lpb $2
   mov $4,$0
   seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
   mod $0,2
-  seq $0,1764 ; a(n) = binomial(3*n,n)/(2*n+1) (enumerates ternary trees and also noncrossing trees).
+  mov $5,$0
+  mul $5,2
+  add $0,$5
+  bin $0,$5
+  add $5,1
+  div $0,$5
   mul $0,$4
   pow $0,3
   add $1,$0

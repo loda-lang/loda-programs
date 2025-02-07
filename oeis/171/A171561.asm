@@ -10,6 +10,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,1
   seq $1,246551 ; Prime powers p^e where p is a prime and e is odd.
   mov $0,0
 lpe

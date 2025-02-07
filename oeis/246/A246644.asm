@@ -1,8 +1,11 @@
 ; A246644: Decimal expansion of the real root of s^3 - s^2 + s - 1/3 = 0.
 ; Submitted by Science United
 ; 4,4,2,4,9,3,3,3,4,0,2,4,4,4,2,1,0,3,3,2,8,1,6,5,0,1,0,6,6,4,6,9,3,3,0,3,2,7,3,7,4,7,2,8,7,7,3,2,7,8,1,6,7,6,5,7,5,4,3,6,8,8,3,2,2,3,3,0,5,6,0,9,7,0,3,4,1,9,8,9
-; Formula: a(n) = -10*truncate((-10*truncate((truncate((b(4*n)*(min(4*n,0)-10))/truncate((b(4*n)+c(4*n)+d(4*n))/(10^n)))-1)/10)+truncate((b(4*n)*(min(4*n,0)-10))/truncate((b(4*n)+c(4*n)+d(4*n))/(10^n)))+9)/10)-10*truncate((truncate((b(4*n)*(min(4*n,0)-10))/truncate((b(4*n)+c(4*n)+d(4*n))/(10^n)))-1)/10)+truncate((b(4*n)*(min(4*n,0)-10))/truncate((b(4*n)+c(4*n)+d(4*n))/(10^n)))+9, b(n) = 4*c(n-1)+2*b(n-1)+2*d(n-1), b(2) = 30, b(1) = 6, b(0) = 1, c(n) = 3*c(n-1)+b(n-1)+d(n-1), c(2) = 19, c(1) = 4, c(0) = 1, d(n) = c(n-1)+d(n-1), d(2) = 5, d(1) = 1, d(0) = 0
+; Formula: a(n) = -10*truncate((-10*truncate((truncate((b(max(4*n-4,0))*(min(4*n-4,0)-10))/truncate((b(max(4*n-4,0))+c(max(4*n-4,0))+d(max(4*n-4,0)))/(10^(n-1))))-1)/10)+truncate((b(max(4*n-4,0))*(min(4*n-4,0)-10))/truncate((b(max(4*n-4,0))+c(max(4*n-4,0))+d(max(4*n-4,0)))/(10^(n-1))))+9)/10)-10*truncate((truncate((b(max(4*n-4,0))*(min(4*n-4,0)-10))/truncate((b(max(4*n-4,0))+c(max(4*n-4,0))+d(max(4*n-4,0)))/(10^(n-1))))-1)/10)+truncate((b(max(4*n-4,0))*(min(4*n-4,0)-10))/truncate((b(max(4*n-4,0))+c(max(4*n-4,0))+d(max(4*n-4,0)))/(10^(n-1))))+9, b(n) = 4*c(n-1)+2*b(n-1)+2*d(n-1), b(2) = 30, b(1) = 6, b(0) = 1, c(n) = 3*c(n-1)+b(n-1)+d(n-1), c(2) = 19, c(1) = 4, c(0) = 1, d(n) = c(n-1)+d(n-1), d(2) = 5, d(1) = 1, d(0) = 0
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,1
 mov $3,$0
