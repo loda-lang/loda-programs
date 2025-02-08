@@ -1,15 +1,41 @@
 ; A255006: a(n) is the numerator of polygamma(2n+1, 1) / Pi^(2n+2).
 ; Submitted by GolfSierra
 ; 1,1,8,8,128,176896,2048,3703808,1437433856,11443306496,40728264704,123922856542208,5519125250048,56921405366730752,231279728174802403328,258681888643685023744,325620148558310146048,113023230705723814256110993408
-; Formula: a(n) = truncate((A000182(n+1)*2^n)/gcd(A115491(n+1),A000182(n+1)*2^n))
 
 mov $1,$0
 mov $2,2
 pow $2,$0
+mov $6,0
+mov $9,0
+mov $10,0
+mul $0,2
 add $0,1
-seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+mov $5,1
+mov $8,$0
+lpb $0
+  sub $0,1
+  div $10,2
+  add $10,$6
+  mul $10,2
+  mov $6,$5
+  pow $6,$8
+  sub $6,$10
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $5,1
+  mul $9,-1
+  add $9,$7
+lpe
+gcd $0,$9
 mul $0,$2
 add $1,1
-seq $1,115491 ; Number of monic irreducible polynomials of degree 5 in GF(2^n)[x].
+mov $4,2
+pow $4,$1
+mov $3,32
+pow $3,$1
+sub $3,$4
+mov $1,$3
+div $1,5
 gcd $1,$0
 div $0,$1

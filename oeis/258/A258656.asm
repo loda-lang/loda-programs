@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,258655 ; a(n) = A256357(n^2), where exp( Sum_{n>=1} A256357(n)*x^n/n )  =  1 + Sum_{n>=1} x^(n^2) + x^(2*n^2).
     mov $9,10
     add $9,$5

@@ -9,6 +9,7 @@ lpb $2
   mov $0,$4
   add $0,$2
   trn $0,1
+  add $0,1
   seq $0,258026 ; Numbers k such that prime(k+2) - 2*prime(k+1) + prime(k) < 0.
   mul $0,14
   mov $1,$2

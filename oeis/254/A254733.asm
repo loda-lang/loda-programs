@@ -10,7 +10,7 @@ lpb $2
   mov $5,$2
   pow $5,3
   mod $5,$4
-  cmp $5,0
+  equ $5,0
   sub $2,1
   add $3,$5
 lpe

@@ -8,7 +8,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  sub $3,1
   seq $3,257994 ; Number of prime parts in the partition having Heinz number n.
   seq $3,32357 ; Convolution of Catalan numbers and powers of -1.
   equ $3,1

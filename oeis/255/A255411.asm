@@ -8,9 +8,39 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
+  seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+  sub $3,1
+  mov $5,$3
+  seq $3,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+  div $5,$3
+  mov $3,$5
   add $3,1
-  seq $3,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
-  seq $3,55231 ; Powerfree part of n: product of primes that divide n only once.
+  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  mov $7,$3
+  mov $9,$3
+  seq $9,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $3,1
+  mov $8,$3
+  div $8,$9
+  add $3,$8
+  add $3,2
+  mov $6,$3
+  gcd $6,$7
+  mov $3,$7
+  div $3,$6
+  mov $11,$3
+  mov $13,$3
+  seq $13,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $3,1
+  mov $12,$3
+  div $12,$13
+  add $3,$12
+  add $3,2
+  mov $10,$3
+  gcd $10,$11
+  div $6,$10
+  mov $3,$6
   equ $3,1
   sub $0,$3
   add $1,1

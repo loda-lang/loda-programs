@@ -10,7 +10,7 @@ add $0,1
 bin $0,$2
 mul $1,$0
 add $1,1
-dis $1,90
+dgs $1,90
 mov $0,$1
 sub $0,3
 mod $0,10

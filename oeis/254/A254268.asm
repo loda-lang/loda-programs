@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 8,2,3,8,7,2,3,5,0
 
+#offset -7
+
+add $0,7
 mov $2,$0
 mul $2,2
 add $2,2

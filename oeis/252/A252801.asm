@@ -2,7 +2,10 @@
 ; Submitted by STE\/E
 ; 2,5,7,13,17,23,29,31,37,41,43
 
+#offset 1
+
 mov $2,2
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

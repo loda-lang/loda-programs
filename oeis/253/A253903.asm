@@ -12,4 +12,4 @@ lpb $1
 lpe
 add $1,1
 mov $0,$1
-cmp $0,1
+equ $0,1

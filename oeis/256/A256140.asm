@@ -7,6 +7,6 @@ lpb $0
   sub $0,$1
 lpe
 sub $1,$0
-dis $0,2
+dgs $0,2
 pow $1,$0
 mov $0,$1

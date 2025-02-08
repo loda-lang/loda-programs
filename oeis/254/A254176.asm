@@ -1,9 +1,11 @@
 ; A254176: Decimal expansion of (1 u)c^2/h in Hz.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 2,2,5,2,3,4,2,7
-; Formula: a(n) = (floor((floor((10^(n+1))/166)+1)/2)+2)%10
+; Formula: a(n) = (floor((floor((10^(n-23))/166)+1)/2)+2)%10
 
-add $0,1
+#offset 24
+
+sub $0,23
 mov $1,10
 pow $1,$0
 div $1,166

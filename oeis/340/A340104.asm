@@ -8,10 +8,9 @@ pow $2,4
 lpb $2
   mov $4,$1
   seq $4,351604 ; a(n) = n^6 * Sum_{d^2|n} 1 / d^6.
-  sub $4,1
   seq $4,257994 ; Number of prime parts in the partition having Heinz number n.
   mov $3,$4
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

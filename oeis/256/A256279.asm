@@ -1,7 +1,6 @@
 ; A256279: Expansion of psi(q) * chi(-q^3) * phi(-q^9) in powers of q where phi(), psi(), chi() are Ramanujan theta functions.
 ; Submitted by [AF] Kalianthys
 ; 1,1,0,0,-1,0,0,0,0,-4,-2,0,0,2,0,0,-1,0,4,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,-2,0,4,2,0,0,-2,0,0,0,0,-8,0,0,0,1,0,0,-2,0,0,0,0,0,-2,0,0,2,0,0,-1,0,0,0,0,0,0,0,4,2,0,0,0,0,0,0
-; Formula: a(n) = truncate((A004531(4*n)*(3*max((n+17)%3,1)-2)*(-1)^n)/4)*((n+8)%3-1)
 
 mov $1,8
 add $1,$0
@@ -16,7 +15,64 @@ sub $2,2
 mov $3,-1
 pow $3,$0
 mul $0,4
-seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+mov $4,$0
+mov $13,0
+trn $0,1
+mov $5,$0
+mov $6,-1
+pow $6,$0
+mov $7,$0
+add $7,1
+mov $16,$7
+lex $16,2
+mov $17,2
+pow $17,$16
+div $7,$17
+div $7,2
+mov $8,-1
+pow $8,$7
+mul $8,2
+mov $9,-2
+bin $9,$7
+div $9,$8
+mov $10,0
+mov $12,3
+sub $7,$9
+mul $7,2
+add $7,3
+lpb $7
+  sub $7,$12
+  mov $11,$7
+  max $11,0
+  mul $11,4
+  mov $15,$11
+  nrt $15,2
+  add $11,2
+  mov $14,$11
+  nrt $14,2
+  mov $11,$14
+  add $11,$15
+  mod $11,2
+  mov $12,2
+  add $12,$13
+  add $10,$11
+  add $13,2
+lpe
+mov $7,$10
+mul $7,$8
+div $7,2
+max $7,0
+mul $7,2
+mod $0,4
+mul $0,$7
+sub $7,$0
+mov $0,$7
+div $0,2
+mul $0,$6
+mul $0,2
+sub $0,1
+sub $0,$5
+add $0,$4
 mul $0,$3
 mul $0,$2
 div $0,4

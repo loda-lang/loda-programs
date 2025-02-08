@@ -2,8 +2,11 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,5,8,11,13,31,37,53,61,73,79,97,122,127
 
+#offset 1
+
 mov $2,$0
-add $2,7
+sub $0,1
+add $2,6
 pow $2,2
 lpb $2
   mov $3,$1

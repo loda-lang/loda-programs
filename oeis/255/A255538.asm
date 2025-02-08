@@ -2,7 +2,9 @@
 ; Submitted by Hans van der Giessen
 ; 1,0,0,0,0,0,2,26,544
 
-sub $0,2
+#offset 1
+
+sub $0,3
 mov $1,$0
 div $1,2
 mov $2,2

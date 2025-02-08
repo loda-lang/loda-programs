@@ -1,12 +1,39 @@
 ; A258394: Number of 2n-length strings of balanced parentheses of exactly 6 different types that are introduced in ascending order.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 132,9009,380380,12864852,383402292,10551322782,275335499824,6924802684800,169656773406120,4078556074277685,96700630711999860,2269529269318731420,52868514692841609300,1224857602490265215010,28265620407321158141280,650452332645092821924080,14939591099401341992619000,342706213527782287411478250,7855820721127513365237297720,180020454891822972013755528360,4125219097459753751275933882312,94551814181153112037078878894204,2168046700969692216840039816502560,49739594494844889125070926370792768
-; Formula: a(n) = truncate((A032180(n+6)*A000108(n+6))/120)
 
+#offset 6
+
+sub $0,6
+mov $4,$0
+mov $5,0
+mov $7,0
+mov $8,0
 mov $1,$0
 add $1,6
-seq $1,32180 ; Number of ways to partition n labeled elements into 6 pie slices.
+mov $3,$1
+sub $3,$0
+add $3,1
+lpb $3
+  sub $3,1
+  mov $6,$3
+  pow $6,$1
+  sub $7,2
+  sub $7,$3
+  bin $7,$5
+  mul $7,$6
+  add $8,$7
+  add $5,1
+  mul $7,0
+  add $7,1
+lpe
+mov $1,$8
+div $1,6
 add $0,6
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
 mul $0,$1
 div $0,120

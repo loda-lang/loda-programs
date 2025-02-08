@@ -1,8 +1,11 @@
 ; A254153: Decimal expansion of alpha particle mass in kg.
 ; Submitted by Fardringle
-; 6,6,4,4,6,5,7,3,3
+; 6,6,4,4,6,5,7,3,4
+
+#offset -26
 
 mov $1,-1
+add $0,26
 lpb $0
   sub $0,1
   mov $2,5

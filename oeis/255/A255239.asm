@@ -13,7 +13,7 @@ lpb $2
   sub $0,$2
   sub $0,1
   seq $0,335821 ; Triangular array T(n, k) = n^2 - k^2, read by rows.
-  seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  nrt $0,2
   add $0,1
   mod $0,2
   add $1,$0

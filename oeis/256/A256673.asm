@@ -9,7 +9,19 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
-  seq $3,63918 ; a(1) = 1 and - applying the sieve of Eratosthenes - for n > 1: a(n) = if n is prime then 0 else the first prime p which marks n as composite.
+  sub $3,1
+  mov $7,$3
+  equ $7,0
+  mov $5,$3
+  add $5,1
+  seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  mov $6,$3
+  add $6,1
+  equ $6,$5
+  mul $6,$5
+  sub $5,$6
+  add $5,$7
+  mov $3,$5
   equ $3,0
   sub $0,$3
   add $1,2

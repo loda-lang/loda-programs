@@ -4,12 +4,12 @@
 
 mov $1,$0
 mod $1,2
-cmp $1,0
+equ $1,0
 mul $0,2
 add $0,$1
 lpb $0
   sub $0,1
-  cmp $4,$2
+  equ $4,$2
   add $2,2
   add $2,$3
   mul $4,3

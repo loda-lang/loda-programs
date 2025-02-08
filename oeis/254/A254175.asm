@@ -1,8 +1,11 @@
 ; A254175: Decimal expansion of (1 u)c^2 in E_h.
 ; Submitted by Stony666
-; 3,4,2,3,1,7,7,6,8
+; 3,4,2,3,1,7,7,6,9
+
+#offset 8
 
 mov $2,1
+sub $0,8
 lpb $0
   sub $0,1
   sub $3,$4

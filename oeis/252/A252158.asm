@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w1)
 ; 1,2,1,11,2,1,155,15,2,1
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $1,2
   add $2,1

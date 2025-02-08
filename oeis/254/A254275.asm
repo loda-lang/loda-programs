@@ -2,6 +2,9 @@
 ; Submitted by Jave808
 ; 4,6,6,8,6,4,4,7,7
 
+#offset 2
+
+sub $0,2
 mov $2,$0
 mov $4,$0
 add $4,1

@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,253887 ; Row index of n in A191450: a(3n) = 2n, a(3n+1) = 2n+1, a(3n+2) = a(n+1).
   mov $5,$3
   div $3,2

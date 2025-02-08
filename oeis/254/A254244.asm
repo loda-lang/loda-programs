@@ -1,8 +1,11 @@
 ; A254244: Decimal expansion of atomic unit of charge density in C m^-3.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,8,1,2,0,2,3
-; Formula: a(n) = -10*truncate((-10*truncate((truncate((3*d(4*n)+4)/truncate(c(4*n)/(10^n)))-3)/10)+truncate((3*d(4*n)+4)/truncate(c(4*n)/(10^n)))+7)/10)-10*truncate((truncate((3*d(4*n)+4)/truncate(c(4*n)/(10^n)))-3)/10)+truncate((3*d(4*n)+4)/truncate(c(4*n)/(10^n)))+7, b(n) = 4*c(n-2)+2*b(n-2)+2*d(n-2), b(5) = 102, b(4) = 102, b(3) = 4, b(2) = 4, b(1) = 0, b(0) = 0, c(n) = 27*c(n-2)+12*b(n-2)+12*d(n-2), c(5) = 693, c(4) = 693, c(3) = 27, c(2) = 27, c(1) = 1, c(0) = 1, d(n) = -3*d(n-2)-4*b(n-2)-7*c(n-2), d(5) = -184, d(4) = -184, d(3) = -7, d(2) = -7, d(1) = 0, d(0) = 0
+; Formula: a(n) = -10*truncate((-10*truncate((truncate((3*d(max(4*n-52,0))+4)/truncate(c(max(4*n-52,0))/(10^(n-13))))-3)/10)+truncate((3*d(max(4*n-52,0))+4)/truncate(c(max(4*n-52,0))/(10^(n-13))))+7)/10)-10*truncate((truncate((3*d(max(4*n-52,0))+4)/truncate(c(max(4*n-52,0))/(10^(n-13))))-3)/10)+truncate((3*d(max(4*n-52,0))+4)/truncate(c(max(4*n-52,0))/(10^(n-13))))+7, b(n) = 4*c(n-2)+2*b(n-2)+2*d(n-2), b(5) = 102, b(4) = 102, b(3) = 4, b(2) = 4, b(1) = 0, b(0) = 0, c(n) = 27*c(n-2)+12*b(n-2)+12*d(n-2), c(5) = 693, c(4) = 693, c(3) = 27, c(2) = 27, c(1) = 1, c(0) = 1, d(n) = -3*d(n-2)-4*b(n-2)-7*c(n-2), d(5) = -184, d(4) = -184, d(3) = -7, d(2) = -7, d(1) = 0, d(0) = 0
 
+#offset 13
+
+sub $0,13
 mov $2,1
 mov $3,$0
 mul $3,4

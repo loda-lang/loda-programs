@@ -5,8 +5,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 seq $0,6005 ; The odd prime numbers together with 1.
 mov $1,$0
 seq $0,25527 ; a(n) = n!/lcm{1,2,...,n} = (n-1)!/lcm{C(n-1,0), C(n-1,1), ..., C(n-1,n-1)}.

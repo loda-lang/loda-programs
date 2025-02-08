@@ -6,6 +6,7 @@ mov $1,39
 lpb $0
   mov $1,$0
   mov $2,$0
+  add $2,1
   seq $2,255225 ; Number of (n+2)X(5+2) 0..1 arrays with no 3x3 subblock diagonal sum 0 and no antidiagonal sum 0 and no row sum 2 and no column sum 2
   sub $2,$0
   mov $0,0

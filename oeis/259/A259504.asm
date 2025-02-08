@@ -13,8 +13,11 @@ lpb $2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,1
   mul $6,$5
+  mov $7,$6
+  seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
+  mov $6,$7
   add $6,1
-  seq $6,101637 ; a(n) = 1 if n is a 4-almost prime, that is a product of exactly four (not necessarily distinct) primes, 0 otherwise.
+  equ $6,4
   add $1,1
   mov $3,$6
   mul $3,$1

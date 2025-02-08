@@ -11,7 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,256914 ; Trace of the enhanced squares representation of n.
   sub $3,1
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

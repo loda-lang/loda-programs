@@ -18,8 +18,7 @@ lpb $2
   mov $5,$0
   add $5,1
   trn $5,$4
-  cmp $5,0
-  cmp $5,0
+  neq $5,0
   sub $2,$5
   mov $3,$1
 lpe

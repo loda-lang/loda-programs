@@ -8,7 +8,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,262807 ; a(n) = (Product_{k=1..n} prime(k+1)) mod (Sum_{k=1..n} prime(k+1)) where prime(k) is the k-th prime number.
-  cmp $3,0
+  equ $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

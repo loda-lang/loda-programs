@@ -1,8 +1,11 @@
 ; A250108: n*(n-1)/2 mod 2 + n*(n-1)/2 - n*( (n-1) mod 2 ).
 ; Submitted by Jamie Morken(s3)
 ; 0,0,4,2,10,10,22,20,36,36,56,54,78,78,106,104,136,136,172,170,210,210,254,252,300,300,352,350,406,406,466,464,528,528,596,594,666,666,742,740,820,820,904,902,990,990,1082,1080,1176,1176,1276,1274,1378
-; Formula: a(n) = 2*truncate((binomial(truncate(gcd(n,2)/2)+n,2)+truncate(gcd(n,2)/2))/2)
+; Formula: a(n) = 2*truncate((binomial(truncate(gcd(n-1,2)/2)+n-1,2)+truncate(gcd(n-1,2)/2))/2)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 gcd $1,2
 div $1,2

@@ -18,7 +18,11 @@ lpb $2
   seq $4,117316 ; Riordan array ((1-x)/(1-x-2x^2),x(1-x)/(1-x-2x^2)).
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $0,1
-  seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+  mov $5,$0
+  mul $0,2
+  bin $0,$5
+  add $5,1
+  div $0,$5
   mul $0,$4
   add $1,$0
 lpe

@@ -9,7 +9,7 @@ add $2,9
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,250068 ; Maximum width of any region in the symmetric representation of sigma(n).
   seq $3,353292 ; a(n) is the number of positive integers k <= n that have at least one common 1-bit with n.
   div $3,2

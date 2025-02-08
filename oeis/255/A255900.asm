@@ -12,7 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
-    seq $7,464 ; Expansion of sin x /cos 2x.
+    seq $7,464 ; Expansion of e.g.f. sin(x)/cos(2*x).
     mov $9,10
     add $9,$5
     mul $7,$$9

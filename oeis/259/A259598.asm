@@ -16,8 +16,8 @@ lpb $0
     mov $7,$4
     trn $7,1
     seq $7,14675 ; The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
-    cmp $7,2
-    cmp $7,$10
+    equ $7,2
+    equ $7,$10
     mov $9,10
     add $9,$5
     min $10,$0

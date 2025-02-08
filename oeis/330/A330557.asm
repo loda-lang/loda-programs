@@ -6,6 +6,7 @@ mov $2,$0
 mul $0,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,259311 ; First differences of A098058.
   sub $0,$3
   add $1,1

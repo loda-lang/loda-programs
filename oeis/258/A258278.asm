@@ -1,7 +1,6 @@
 ; A258278: Expansion of f(-x, -x^5)^2 in powers of x where f(,) is Ramanujan's general theta function.
 ; Submitted by rajab
 ; 1,-2,1,0,0,-2,2,0,2,-2,1,0,0,-2,0,0,3,-2,0,0,0,-4,2,0,2,0,2,0,0,-2,0,0,1,-2,2,0,0,-2,2,0,2,-4,1,0,0,-2,0,0,2,-2,0,0,0,0,2,0,4,-2,0,0,0,-4,0,0,2,-2,3,0,0,0,2,0,2,-4,0,0,0,-2,0,0
-; Formula: a(n) = truncate((A004531(12*n+8)*(-1)^(3*n+2))/4)
 
 mov $1,$0
 add $0,2
@@ -16,6 +15,63 @@ add $0,$2
 mov $4,-1
 pow $4,$0
 mul $0,4
-seq $0,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
+mov $5,$0
+mov $14,0
+trn $0,1
+mov $6,$0
+mov $7,-1
+pow $7,$0
+mov $8,$0
+add $8,1
+mov $17,$8
+lex $17,2
+mov $18,2
+pow $18,$17
+div $8,$18
+div $8,2
+mov $9,-1
+pow $9,$8
+mul $9,2
+mov $10,-2
+bin $10,$8
+div $10,$9
+mov $11,0
+mov $13,3
+sub $8,$10
+mul $8,2
+add $8,3
+lpb $8
+  sub $8,$13
+  mov $12,$8
+  max $12,0
+  mul $12,4
+  mov $16,$12
+  nrt $16,2
+  add $12,2
+  mov $15,$12
+  nrt $15,2
+  mov $12,$15
+  add $12,$16
+  mod $12,2
+  mov $13,2
+  add $13,$14
+  add $11,$12
+  add $14,2
+lpe
+mov $8,$11
+mul $8,$9
+div $8,2
+max $8,0
+mul $8,2
+mod $0,4
+mul $0,$8
+sub $8,$0
+mov $0,$8
+div $0,2
+mul $0,$7
+mul $0,2
+sub $0,1
+sub $0,$6
+add $0,$5
 mul $0,$4
 div $0,4

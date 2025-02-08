@@ -26,10 +26,11 @@ lpb $12
       mov $1,1
       mov $2,$0
       lpb $2
-        add $1,2
         mov $3,$1
+        add $3,3
         seq $3,253671 ; a(n) = floor(A000111(n)/A000111(n-1)).
         sub $0,$3
+        add $1,2
         mov $4,$0
         max $4,0
         equ $4,$0

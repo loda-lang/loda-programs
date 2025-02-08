@@ -2,6 +2,9 @@
 ; Submitted by BlisteringSheep
 ; 1,4,9,2,4,1,8,0,8
 
+#offset -9
+
+add $0,9
 mov $5,14
 mov $3,$0
 mul $3,8

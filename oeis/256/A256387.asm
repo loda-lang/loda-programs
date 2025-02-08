@@ -19,7 +19,12 @@ lpb $2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   mul $6,$3
   mov $3,$6
-  seq $3,117900 ; Expansion of (1 + 2*x + 4*x^2 + 4*x^3 + 2*x^4)/((1+x)*(1-x^3)^2).
+  add $3,2
+  mov $7,$3
+  div $7,3
+  dif $3,3
+  div $3,2
+  add $3,$7
   equ $3,1
   mul $5,$4
   add $5,1
