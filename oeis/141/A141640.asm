@@ -1,0 +1,24 @@
+; A141640: Additive nonprimes: odd sum of digits is a nonprime.
+; Submitted by PaoloNasca
+; 1,9,10,18,27,36,45,54,63,69,72,78,81,87,90,96,100,108,117,126,135,144,153,159,162,168,171,177,180,186,195,207,216,225,234,243,249,252,258,261,267,270,276,285,294,306,315,324,333,339,342,348,351,357,360,366,375,384,393,399,405,414,423,429,432,438,441,447,450,456,465,474,483,489,492,498,504,513,519,522
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+add $2,1
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  seq $3,135681 ; a(n)=n if n=1 or if n=prime. Otherwise, n=4 if n is even and n=1 if n is odd.
+  equ $3,1
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
+lpe
+mov $0,$1

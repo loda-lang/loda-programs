@@ -1,0 +1,17 @@
+; A364370: Number of chordless cycles (of length > 3) in the complement of the n-hypercube graph.
+; Submitted by Rodney Duane
+; 0,0,0,6,160,1720,13056,82656,470016,2496384,12666880,62250496,298868736,1409660928,6556483584,30148976640,137316794368,620328091648,2782435737600,12402204475392,54971691171840,242433274675200
+
+mov $1,$0
+sub $0,2
+lpb $0
+  sub $0,1
+  mul $1,2
+  sub $2,$0
+  add $2,$3
+  add $2,1
+  add $3,1
+  add $3,$1
+lpe
+mul $2,$1
+mov $0,$2
