@@ -18,8 +18,7 @@ lpb $2
     sub $0,1
     mov $6,$5
     dif $6,$0
-    cmp $6,$5
-    cmp $6,0
+    neq $6,$5
     sub $7,$4
     sub $0,1
     add $6,$7

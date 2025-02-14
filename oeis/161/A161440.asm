@@ -10,12 +10,13 @@ mov $3,$0
 add $3,10
 pow $3,2
 lpb $3
-  add $2,4
   mov $4,$2
+  add $4,5
   seq $4,268389 ; a(n) = greatest k such that polynomial (X+1)^k divides the polynomial (in polynomial ring GF(2)[X]) that is encoded in the binary expansion of n. (See the comments for details).
   sub $4,2
   equ $4,1
   sub $0,$4
+  add $2,4
   mov $5,$0
   max $5,0
   equ $5,$0

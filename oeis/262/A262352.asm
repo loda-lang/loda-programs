@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,255270 ; Integer part of fourth root of n.
+  nrt $2,4
   sub $0,1
   add $1,$2
   div $1,-1

@@ -12,6 +12,7 @@ mul $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,261869 ; First differences of A055615.
   equ $3,0
   sub $0,$3

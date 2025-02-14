@@ -6,9 +6,9 @@ mov $2,$0
 lpb $2
   mov $3,$2
   seq $3,55953 ; n - reversal of base 6 digits of n (written in base 10).
-  cmp $3,0
+  equ $3,0
   trn $1,8
-  cmp $1,$3
+  equ $1,$3
   mul $2,$1
   sub $2,1
 lpe

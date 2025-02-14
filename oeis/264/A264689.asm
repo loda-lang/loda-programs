@@ -2,6 +2,9 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 1,3,8,14,23,35,50,66,85,107,134,162,193,227,264,302,343,387,436,488
 
+#offset 1
+
+sub $0,1
 mov $7,$0
 mov $5,$0
 add $5,1

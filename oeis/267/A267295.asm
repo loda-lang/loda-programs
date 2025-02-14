@@ -2,6 +2,9 @@
 ; Submitted by amargo133
 ; 3,6,9,14,17,22,27,36,39,46,49
 
+#offset 2
+
+sub $0,2
 mov $5,$0
 mov $6,$0
 add $6,1

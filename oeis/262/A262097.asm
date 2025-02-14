@@ -19,7 +19,7 @@ lpb $0
     mul $7,$$9
     add $9,$4
     pow $7,4
-    cmp $7,$$9
+    equ $7,$$9
     add $5,2
     add $6,$7
   lpe

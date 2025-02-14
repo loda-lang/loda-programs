@@ -2,7 +2,8 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 17,73,89,97,113,193,233,241,257,281,337,401,433,449
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $2,$0
 pow $2,4

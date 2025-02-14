@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,263027 ; a(n) = A002322(n) + 1, where A002322 is Carmichael lambda.
   sub $3,1
   sub $0,$3

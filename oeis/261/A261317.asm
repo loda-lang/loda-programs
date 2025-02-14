@@ -14,7 +14,7 @@ lpb $0
     mul $6,$5
     mov $7,$4
     seq $7,327917 ; Triangle T read by rows: T(k, n) = A(k-n, k) with the array A(k, n) = F(2*k+n) = A000045(2*k+n), for k >= 0 and n >= 0.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

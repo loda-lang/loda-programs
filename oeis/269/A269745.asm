@@ -2,6 +2,9 @@
 ; Submitted by Jon Maiga
 ; 1,3,6,10,14,18,23,29,36,44,52,60,68,76
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $2,$0
 lpb $2

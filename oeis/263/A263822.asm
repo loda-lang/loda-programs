@@ -2,6 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,0,0,0,0,0,0,14,141
 
+#offset 1
+
+sub $0,1
 lpb $0
   max $2,10
   add $2,1

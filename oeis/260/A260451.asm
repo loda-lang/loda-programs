@@ -2,14 +2,20 @@
 ; Submitted by Simon Strandgaard
 ; 2,3,1,2,1,3,2,3,2,3,1,2,1,3,2,1,2,3,1,2,1,3,2,3,2,3,1,2,1,3,2,2,2,3,1,2,1,3,2,3,2,3,1,2,1,3,2,1,2,3,1,2,1,3,2,3,2,3,1,2,1,3,2,1,2,3,1,2,1,3,2,3,2,3,1,2,1,3,2,1
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $0,1
   seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
   sub $0,2
 lpe
 add $0,36
-seq $0,83392 ; Alternating partial sums of A000217.
-div $0,2
+mov $1,-2
+bin $1,$0
+add $0,1
+mul $0,$1
+div $0,8
 add $0,1
 mod $0,2
 mul $0,9

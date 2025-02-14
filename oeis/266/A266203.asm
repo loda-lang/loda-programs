@@ -14,7 +14,7 @@ lpb $0
   mov $4,$3
   mov $5,2
   mul $5,$3
-  cmp $3,2
+  equ $3,2
   add $3,$1
 lpe
 mov $0,$5

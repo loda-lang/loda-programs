@@ -2,7 +2,8 @@
 ; Submitted by Gunnar Hjern
 ; 0,1,1,3,1,3,1,3,1,3,1,3,1,3,4,3,1,9,1
 
-add $0,1
+#offset 1
+
 lpb $0
   mov $3,$0
   lpb $3

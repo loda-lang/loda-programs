@@ -2,8 +2,10 @@
 ; Submitted by Autofuzzy
 ; 0,0,0,0,0,40,240,1980,18240
 
+#offset 1
+
 mov $2,1
-sub $0,4
+sub $0,5
 lpb $0
   sub $0,1
   div $3,2

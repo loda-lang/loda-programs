@@ -21,6 +21,7 @@ lpb $1
     mov $2,$6
     div $2,$5
     seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+    add $2,1
     seq $2,261306 ; a(n+1) = abs((n) - gcd(a(n), 6*n+5)), a(1) = 1.
     mul $2,2
     max $2,1

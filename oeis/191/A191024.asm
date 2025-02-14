@@ -10,4 +10,5 @@ lpb $1
   mov $1,3
   add $0,1
 lpe
+add $0,1
 seq $0,267481 ; Primes which are squares (mod 31).

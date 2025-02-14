@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,53735 ; Sum of digits of (n written in base 3).
+  dgs $2,3
   sub $0,$2
   add $1,1
 lpe

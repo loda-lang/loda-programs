@@ -6,6 +6,7 @@
 
 sub $0,1
 lpb $0
+  add $0,1
   seq $0,263027 ; a(n) = A002322(n) + 1, where A002322 is Carmichael lambda.
   sub $0,2
   add $1,2

@@ -1,6 +1,6 @@
 ; A261070: Irregular triangle read by rows: T(n,k) is the number of arrangements of n circles with 2k intersections (using the same rules as A250001).
 ; Submitted by Orange Kid
-; 1,1,2,1,4,4,2,4,9,15
+; 1,1,2,1,4,4,2,4,9,15,15,31,24,35,44,20,50
 
 mul $0,2
 mov $1,1

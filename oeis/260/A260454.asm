@@ -2,6 +2,24 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 3,2,1,3,1,2,3,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,3,2,1,3,1,2,3,3,3,2,1,3,1,2,3,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,3,2,1,3,1,2,3,1
 
-seq $0,260451 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (2,3,1) and midword sequence (a(n)); see Comments.
+#offset 1
+
+sub $0,1
+lpb $0
+  add $0,1
+  seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  sub $0,2
+lpe
+add $0,36
+mov $1,-2
+bin $1,$0
+add $0,1
+mul $0,$1
+div $0,8
+add $0,1
+mod $0,2
+mul $0,9
+add $0,12
+mod $0,10
 add $0,1
 dif $0,2

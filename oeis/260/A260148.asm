@@ -7,17 +7,16 @@ add $0,1
 lpb $0
   mov $3,$2
   dif $3,$0
-  mov $4,$3
   mov $6,0
   sub $6,$3
   mod $6,2
   sub $0,1
-  cmp $3,$2
-  cmp $3,0
   mov $5,$6
   pow $5,$6
+  mov $4,$3
   bin $4,$0
   mul $4,$5
+  neq $3,$2
   mul $3,$4
   mul $1,-1
   add $1,$3

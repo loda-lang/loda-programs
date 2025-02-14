@@ -11,7 +11,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
-  sub $3,2
+  sub $3,1
   seq $3,268389 ; a(n) = greatest k such that polynomial (X+1)^k divides the polynomial (in polynomial ring GF(2)[X]) that is encoded in the binary expansion of n. (See the comments for details).
   sub $3,2
   equ $3,1

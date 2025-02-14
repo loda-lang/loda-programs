@@ -2,7 +2,10 @@
 ; Submitted by pututu
 ; 0,0,0,3,12,66,432,3240,27360
 
+#offset 1
+
 mov $2,1
+sub $0,1
 lpb $0
   dif $4,$3
   mul $5,$0

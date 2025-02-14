@@ -8,6 +8,7 @@ sub $0,1
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,266265 ; Product of products of divisors of divisors of n.
   mov $3,$1
   add $3,1

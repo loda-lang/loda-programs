@@ -9,6 +9,7 @@ mov $4,$0
 pow $4,2
 lpb $4
   mov $3,$1
+  add $3,1
   seq $3,264739 ; Characteristic function of A002202, the range of Euler's totient function A000010.
   sub $0,$3
   add $1,1

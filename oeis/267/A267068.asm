@@ -11,14 +11,13 @@ lpb $3
   lpb $5
     mov $1,$0
     mod $1,$2
-    cmp $1,0
+    equ $1,0
     mov $3,1
     div $0,$2
     sub $5,$1
   lpe
   mov $1,$0
-  cmp $1,1
-  cmp $1,0
+  neq $1,1
   add $2,1
   sub $3,$1
 lpe

@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,262683 ; Characteristic function for A182859.
   add $3,$4
   div $3,2

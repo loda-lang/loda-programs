@@ -6,13 +6,13 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,264739 ; Characteristic function of A002202, the range of Euler's totient function A000010.
   sub $0,$3
   add $1,4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

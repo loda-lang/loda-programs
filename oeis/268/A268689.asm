@@ -12,7 +12,7 @@ lpb $1
   mul $2,$3
   mul $3,2
   mov $5,$4
-  cmp $4,2
+  equ $4,2
   add $4,$2
 lpe
 mov $1,$5

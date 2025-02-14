@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,260188 ; Greatest primorial less than or equal to n.
   sub $0,$2
   add $1,$2

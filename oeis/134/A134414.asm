@@ -15,6 +15,7 @@ lpb $0
     add $9,$5
     mov $10,3
     sub $4,1
+    add $7,1
     seq $7,266575 ; Expansion of q * f(-q^4)^6 / phi(-q) in powers of q where phi(), f() are Ramanujan theta functions.
     mul $7,$$9
     add $5,1

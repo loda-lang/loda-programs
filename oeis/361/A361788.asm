@@ -15,6 +15,7 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
+  add $0,1
   seq $0,264739 ; Characteristic function of A002202, the range of Euler's totient function A000010.
   mul $1,$0
   add $3,$1

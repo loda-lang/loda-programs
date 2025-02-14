@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,268335 ; Exponentially odd numbers.
   sub $3,1
   seq $3,372601 ; The maximal exponent in the prime factorization of the largest exponentially odd divisor of n.

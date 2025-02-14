@@ -1,8 +1,11 @@
 ; A263297: The greater of bigomega(n) and maximal prime index in the prime factorization of n.
 ; Submitted by fzs600
 ; 0,1,2,2,3,2,4,3,2,3,5,3,6,4,3,4,7,3,8,3,4,5,9,4,3,6,3,4,10,3,11,5,5,7,4,4,12,8,6,4,13,4,14,5,3,9,15,5,4,3,7,6,16,4,5,4,8,10,17,4,18,11,4,6,6,5,19,7,9,4,20,5,21,12,3,8,5,6,22,5
-; Formula: a(n) = max(A159081(n)-1,A001222(n+1))
+; Formula: a(n) = max(A159081(n-1)-1,A001222(n))
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

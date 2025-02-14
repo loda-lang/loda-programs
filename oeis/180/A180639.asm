@@ -8,6 +8,7 @@ sub $0,1
 mov $1,$0
 lpb $1
   mov $3,$1
+  add $3,1
   seq $3,264739 ; Characteristic function of A002202, the range of Euler's totient function A000010.
   sub $1,1
   add $2,$3

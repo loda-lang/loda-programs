@@ -5,8 +5,8 @@
 mov $1,$0
 nrt $1,2
 lpb $0
-  mov $2,-1
   mov $0,1
+  mov $2,-1
 lpe
 add $1,$2
 mov $0,$1

@@ -2,8 +2,9 @@
 ; Submitted by PDW
 ; 0,1,1,3,22,25,717,1057,39196,98829
 
+#offset 1
+
 mov $2,4
-add $0,1
 lpb $0
   sub $0,1
   mov $1,$5

@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,269795 ; Number of similarity classes of vectors with minimal Ducci period n.
   add $1,4
   mul $1,$0

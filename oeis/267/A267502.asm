@@ -2,6 +2,9 @@
 ; Submitted by pututu
 ; 0,3,0,0,0,3,9,18,45
 
+#offset 2
+
+sub $0,2
 lpb $0
   sub $1,2
   add $1,$0

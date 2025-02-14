@@ -11,6 +11,7 @@ lpb $0
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,261271 ; a(n) = a(n-1)-1+p, where p is the smallest prime number that is not a factor of a(n-1)-1.
   mov $4,$3
   add $4,2

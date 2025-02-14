@@ -2,6 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 3,5,17,65,4097,65537,262145,1073741825
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   div $0,2

@@ -8,6 +8,7 @@ sub $0,1
 mov $1,$0
 lpb $1
   mov $3,$1
+  add $3,1
   seq $3,260188 ; Greatest primorial less than or equal to n.
   sub $1,$3
   add $2,$3

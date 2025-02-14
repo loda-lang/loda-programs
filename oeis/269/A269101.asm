@@ -2,6 +2,9 @@
 ; Submitted by zombie67 [MM]
 ; 1,6,7,8,9,12,16,19,22,27
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,2
   add $1,$0

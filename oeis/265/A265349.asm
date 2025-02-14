@@ -8,7 +8,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
-  seq $3,246029 ; a(n) = Product_{i in row n of A245562} prime(i).
+  dif $3,2
+  seq $3,278159 ; Run length transform of primorials, A002110.
+  mov $6,$3
+  seq $3,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+  mov $5,$3
+  gcd $5,$6
+  mov $3,$6
+  div $3,$5
   seq $3,46523 ; Smallest number with same prime signature as n.
   sub $3,1
   div $3,2

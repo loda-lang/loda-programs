@@ -13,5 +13,13 @@ gcd $1,81
 mul $1,$3
 mul $1,$0
 sub $2,$1
+mov $4,$2
+seq $4,70939 ; Length of binary representation of n.
 mov $0,$2
-seq $0,57889 ; Bit-reverse of n, including as many leading as trailing zeros.
+seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+mov $5,$0
+seq $5,70939 ; Length of binary representation of n.
+sub $4,$5
+mov $6,2
+pow $6,$4
+mul $0,$6

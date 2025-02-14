@@ -9,6 +9,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,2
   seq $3,263730 ; Irregular triangle read by rows in which row n > 1 lists k such that (k^2 + k*n)/(k + 1) is an integer.
   mov $5,$3
   add $3,1

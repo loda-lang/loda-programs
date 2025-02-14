@@ -8,6 +8,7 @@ lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
+  add $0,1
   seq $0,265133 ; Beatty sequence for log(2).
   mov $1,$4
   sub $1,2

@@ -2,8 +2,10 @@
 ; Submitted by Science United
 ; 21821,21839,21841,21851,21859,21863,21871,21881,21893
 
+#offset 1
+
 mov $1,$0
-sub $1,2
+sub $1,3
 mov $0,2449
 add $0,$1
 mov $2,$0

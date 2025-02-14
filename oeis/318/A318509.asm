@@ -16,7 +16,6 @@ lpb $0
   lpe
   mov $3,$2
   seq $3,156061 ; a(n) = product of indices of distinct prime factors of n, where index(prime(k)) = k.
-  sub $3,1
   seq $3,261179 ; Take the list of positive rationals {R(n): n>=1} in the order defined by Calkin and Wilf (Recounting the Rationals, 1999); a(n) = numerator of R(prime(n)).
   lpb $0
     dif $0,$2

@@ -2,6 +2,9 @@
 ; Submitted by PDW
 ; 1,3,20,138,1488,20400,317520,5911920,126080640,2999566080,79604985600
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,134438 ; Number of tilings of a 3 X n rectangle with n trominoes.

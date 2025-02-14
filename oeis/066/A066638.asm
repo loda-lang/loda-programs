@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   add $1,1
   mov $2,$0
+  add $2,1
   seq $2,261969 ; Product of primes dividing n with maximum multiplicity.
   div $0,$2
 lpe

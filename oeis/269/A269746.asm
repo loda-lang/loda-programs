@@ -2,11 +2,14 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,2,4,6,8,10,13,16,20,24,28,32,36,40
 
+#offset 1
+
 mov $1,1
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
-  cmp $1,5
+  equ $1,5
   add $2,$3
   add $3,$1
   add $1,$2

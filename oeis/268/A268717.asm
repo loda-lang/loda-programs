@@ -4,9 +4,17 @@
 
 mov $1,$0
 trn $0,1
-seq $0,6068 ; a(n) is Gray-coded into n.
+mov $3,0
+mov $4,$0
+lpb $4
+  bxo $3,$4
+  div $4,2
+lpe
+mov $0,$3
 add $0,1
-seq $0,3188 ; Decimal equivalent of Gray code for n.
-cmp $1,0
-cmp $1,0
+mov $2,$0
+div $0,2
+neq $1,0
+bxo $2,$0
+mov $0,$2
 mul $0,$1
