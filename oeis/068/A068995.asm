@@ -1,18 +1,13 @@
 ; A068995: Integer parts of the square roots of the schizophrenic numbers (A014824).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,3,11,35,111,351,1111,3513,11111,35136,111111,351364,1111111,3513641,11111111,35136418,111111111,351364184,1111111111,3513641844,11111111111,35136418446,111111111111,351364184463,1111111111111
+; Formula: a(n) = truncate(sqrtint(10^(n+1))/9)
 
 #offset 1
 
 add $0,1
 mov $1,10
 pow $1,$0
-mov $2,$1
-lpb $1
-  mov $3,$2
-  div $3,$1
-  add $1,$3
-  div $1,2
-lpe
+nrt $1,2
 mov $0,$1
 div $0,9

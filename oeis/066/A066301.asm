@@ -1,5 +1,5 @@
 ; A066301: a(n) = 0 if n is squarefree, otherwise 1 + a(n/rad(n)) where rad = A007947 (squarefree kernel).
-; Submitted by Jave808
+; Submitted by Science United
 ; 0,0,0,1,0,0,0,2,1,0,0,1,0,0,0,3,0,1,0,1,0,0,0,2,1,0,2,1,0,0,0,4,0,0,0,1,0,0,0,2,0,0,0,1,1,0,0,3,1,1,0,1,0,2,0,2,0,0,0,1,0,0,1,5,0,0,0,1,0,0,0,2,0,0,1,1,0,0,0,3
 
 #offset 1
@@ -8,6 +8,7 @@ mov $1,1
 lpb $0
   mov $2,2
   mov $3,$0
+  div $3,5
   lpb $3
     mov $4,$0
     mod $4,$2

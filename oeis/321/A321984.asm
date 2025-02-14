@@ -2,6 +2,9 @@
 ; Submitted by [DPC] hansR
 ; 2,8,3,4,9,5,2,3,1,2,5
 
+#offset -1
+
+add $0,1
 mov $1,1
 mov $2,1
 mov $7,10

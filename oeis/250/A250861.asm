@@ -6,17 +6,21 @@
 
 sub $0,1
 mov $3,$0
-mov $4,2
 mov $1,9
 lpb $1
-  sub $1,1
+  sub $1,3
   mov $0,$3
   div $0,3
   mov $2,$0
   add $2,2
-  pow $2,3
   add $3,1
+  mov $5,$2
+  mul $5,$2
+  bin $2,3
+  add $2,$5
+  pow $2,3
+  max $4,2
   mul $4,$2
 lpe
 mov $0,$4
-div $0,20155392
+div $0,2

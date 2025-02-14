@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,2
   seq $2,347805 ; Expansion of (theta_3(x) - 1)^2 / (2 * (3 - theta_3(x))).
   add $4,$5
   mov $5,2

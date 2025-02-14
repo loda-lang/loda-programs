@@ -1,20 +1,21 @@
 ; A260794: Number of steps required by R. L. Graham's generalized binary merging algorithm.
-; Submitted by p3d-cluster
+; Submitted by BrandyNOW
 ; 2,3,5,7,11,15,19,27,35,43
-; Formula: a(n) = truncate((2*b(n))/9)+2, b(n) = b(n-1)+d(n-1), b(3) = 25, b(2) = 16, b(1) = 7, b(0) = 4, c(n) = truncate((6*n+c(n-1))/d(n-1)), c(3) = 2, c(2) = 1, c(1) = 3, c(0) = 3, d(n) = truncate((6*n+c(n-1))/d(n-1))*d(n-1), d(3) = 18, d(2) = 9, d(1) = 9, d(0) = 3
+; Formula: a(n) = truncate(((n+5)*(12*n+2*bitxor((n-3)^2,n-3)-18))/120)+1
 
-mov $2,4
-mov $3,3
-mov $4,3
-lpb $0
-  sub $0,1
-  add $1,6
-  add $2,$4
-  add $3,$1
-  div $3,$4
-  mul $4,$3
-lpe
-mov $0,$2
-add $0,$2
-div $0,9
-add $0,2
+#offset 3
+
+sub $0,3
+mov $1,$0
+pow $1,2
+bxo $1,$0
+mul $1,2
+mov $2,$0
+mul $2,11
+add $1,$2
+add $1,18
+add $1,$0
+add $0,8
+mul $0,$1
+div $0,120
+add $0,1

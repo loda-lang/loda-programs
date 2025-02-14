@@ -1,18 +1,13 @@
 ; A216195: Abelian complexity function of the period-doubling sequence (A096268).
-; Submitted by Athlici
+; Submitted by HansCCT
 ; 2,2,3,2,3,3,3,2,3,3,4,3,4,3,3,2,3,3,4,3,4,4,4,3,4,4,4,3,4,3,3,2,3,3,4,3,4,4,4,3,4,4,5,4,5,4,4,3,4,4,5,4,5,4,4,3,4,4,4,3,4,3,3,2,3,3,4,3,4,4,4,3,4,4,5,4,5,4,4,3
 
 #offset 1
 
-mov $2,$0
-mul $2,3
-lpb $0
-  mov $3,$0
-  add $3,$2
-  mod $3,2
-  div $0,2
-  add $1,$3
-  div $2,2
-lpe
+mov $1,$0
+div $0,2
+add $1,$0
+bxo $1,$0
 mov $0,$1
-add $0,2
+dgs $0,2
+add $0,1

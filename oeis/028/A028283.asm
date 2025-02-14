@@ -1,17 +1,15 @@
 ; A028283: Central elements in 4-Pascal triangle A028275 (by row).
-; Submitted by arashai
+; Submitted by mikey
 ; 1,4,10,32,110,392,1428,5280,19734,74360,281996,1074944,4115020,15808912,60917800,235350720,911315430,3535767000,13742347740,53495534400,208537056420,813950932080,3180614712600,12441628655040
-; Formula: a(n) = b(n+1), b(n) = 2*binomial(2*n-4,n-2)+binomial(2*n-2,n-1), b(3) = 10, b(2) = 4, b(1) = 1, b(0) = 0
+; Formula: a(n) = truncate(binomial(2*n,n)/(-2*n+1))*(-3*n+1)
 
-add $0,1
-lpb $0
-  sub $0,1
-  mul $3,2
-  mov $2,$3
-  mov $3,$4
-  bin $3,$1
-  add $4,2
-  add $1,1
-  add $2,$3
-lpe
-mov $0,$2
+mov $1,1
+sub $1,$0
+sub $1,$0
+mov $2,1
+sub $2,$1
+bin $2,$0
+div $2,$1
+sub $1,$0
+mul $1,$2
+mov $0,$1

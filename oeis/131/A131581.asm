@@ -5,8 +5,6 @@
 mov $1,10
 pow $1,$0
 nrt $1,2
-mov $3,0
-mov $0,$1
 mov $2,$1
 equ $2,0
 add $2,$1

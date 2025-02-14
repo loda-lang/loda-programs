@@ -1,19 +1,32 @@
 ; A110122: Number of Delannoy paths of length n with no EE's crossing the line y = x (i.e., no two consecutive E steps from the line y = x+1 to the line y = x-1).
-; Submitted by atannir
+; Submitted by Science United
 ; 1,3,12,53,247,1192,5897,29723,152020,786733,4111295,21661168,114925697,613442227,3291704108,17745496453,96062011319,521943400056,2845404909129,15558847792747,85311186002036,468951179698653,2583765541267647,14266052382826208,78924210138710977,437432008350304227,2428563757852609932,13504469257785490133,75205556046587339575,419397985139234908616,2341909525492449524425,13093262901446121548219,73287382161170322270676,410663581274735770256141,2303526613617262358938879,12933819151242362396114384
 
-mov $3,2
-lpb $3
-  sub $3,1
-  add $0,$3
-  sub $0,$1
-  mul $0,2
-  trn $0,1
-  seq $0,89324 ; Number of lattice paths from (0,0) to the line x+y=n that use the step set {(0,1),(1,0),(2,0),(3,0),...} and never pass below y=x.
-  mov $2,2
-  mul $2,$0
-  add $1,$2
-lpe
-mov $0,$1
+mul $0,2
+add $0,1
+mov $1,3
+mov $3,3
+mov $5,3
+mov $8,$0
+min $0,0
+add $0,$8
 div $0,2
-sub $0,1
+mov $2,$8
+sub $2,$0
+lpb $0
+  sub $0,1
+  add $4,1
+  add $6,$1
+  add $7,$6
+  add $5,$3
+  sub $5,$7
+  mov $1,$7
+  mul $1,$2
+  div $1,$4
+  add $3,$5
+  add $3,$1
+  add $5,$1
+  mul $7,2
+lpe
+mov $0,$5
+div $0,3

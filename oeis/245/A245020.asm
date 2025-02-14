@@ -1,18 +1,17 @@
 ; A245020: Number of ordered n-tuples of positive integers, whose minimum is 0 and maximum is 5.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,2,30,302,2550,19502,140070,963902,6433590,41983502,269335110,1705278302,10686396630,66425568302,410223570150,2520229093502,15417960407670,93999281613902,571487645261190,3466523088409502,20987674370482710,126870924446280302
-; Formula: a(n) = 5*a(n-1)+b(n-1), a(2) = 2, a(1) = 0, a(0) = 0, b(n) = 4*b(n-1)+2*c(n-1), b(2) = 20, b(1) = 2, b(0) = 0, c(n) = 6*c(n-1), c(2) = 36, c(1) = 6, c(0) = 1
+; Formula: a(n) = 6^n+4^n-2*5^n
 
 #offset 1
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mul $2,2
-  mul $3,5
-  add $3,$1
-  mul $1,4
-  add $1,$2
-  mul $2,3
-lpe
-mov $0,$3
+mov $2,5
+pow $2,$0
+mul $2,2
+mov $3,4
+pow $3,$0
+mov $1,6
+pow $1,$0
+sub $1,$2
+add $1,$3
+mov $0,$1

@@ -1,18 +1,11 @@
 ; A021243: Decimal expansion of 1/239.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4,1,8,4,1,0,0,4
+; Formula: a(n) = floor((10^(n+1))/239)%10
 
-lpb $0
-  mod $0,7
-lpe
-mov $2,$0
-sub $0,1
-lpb $0
-  mov $0,$1
-  mod $2,3
-  sub $1,2
-  pow $1,$2
-lpe
-add $1,10
-mod $1,10
+add $0,1
+mov $1,10
+pow $1,$0
+div $1,239
 mov $0,$1
+mod $0,10

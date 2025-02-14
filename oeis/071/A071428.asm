@@ -17,16 +17,10 @@ lpb $2
   mov $5,$3
   add $1,1
   seq $3,70676 ; Smallest m in range 1..phi(n) such that 3^m == 1 mod n, or 0 if no such number exists.
-  mov $7,$3
-  add $7,1
-  trn $3,2
-  gcd $3,2
-  mov $6,$7
-  pow $7,$3
-  mod $6,$7
+  mov $6,$3
+  add $6,1
   mov $3,$6
   sub $3,$5
-  div $3,2
   equ $3,0
   sub $0,$3
   mov $4,$0

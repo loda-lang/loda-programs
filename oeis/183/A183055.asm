@@ -18,6 +18,7 @@ lpb $2
   sub $6,2
   add $3,$6
   mov $5,$3
+  add $3,1
   seq $3,337345 ; Number of divisors d of n for which A003961(d) > 2*d, where A003961 is fully multiplicative with a(p) = nextprime(p).
   equ $3,0
   sub $0,$3

@@ -1,11 +1,10 @@
 ; A297111: Möbius transform of A005187, where A005187(n) = 2n - (number of 1's in binary representation of n).
-; Submitted by damotbe
+; Submitted by Athlici
 ; 1,2,3,4,7,4,10,8,12,8,18,8,22,12,15,16,31,12,34,16,25,20,41,16,39,24,34,24,53,16,56,32,42,32,49,24,70,36,48,32,78,24,81,40,48,44,88,32,84,40,63,48,101,36,79,48,72,56,112,32,116,60,69,64,98,40,130,64,90,48,137,48,142,72,81,72,121,48,152,64
 
 mov $2,$0
 add $2,1
 mov $4,$0
-add $4,1
 mul $4,2
 lpb $4
   sub $4,1
@@ -13,20 +12,17 @@ lpb $4
   sub $0,$4
   mov $1,$0
   gcd $1,$4
-  cmp $1,1
+  equ $1,1
+  sub $3,1
   sub $4,1
   mov $5,1
-  sub $0,$1
-  add $0,1
   lpb $0
-    mov $6,1
-    lpb $0
-      dif $0,2
-      add $6,1
-    lpe
-    mul $5,$6
+    dif $0,2
+    add $5,1
   lpe
   mul $1,$5
   add $3,$1
+  add $3,1
 lpe
 mov $0,$3
+add $0,1

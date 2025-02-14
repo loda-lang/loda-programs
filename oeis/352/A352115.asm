@@ -1,16 +1,14 @@
 ; A352115: Partial sums of the even triangular numbers (A014494).
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,6,16,44,80,146,224,344,480,670,880,1156,1456,1834,2240,2736,3264,3894,4560,5340,6160,7106,8096,9224,10400,11726,13104,14644,16240,18010,19840,21856,23936,26214,28560,31116,33744,36594,39520,42680,45920,49406,52976,56804
-; Formula: a(n) = truncate(((n+1)*(2*(n+1)^2+gcd(4,(n+1)^2)-3))/3)
+; Formula: a(n) = floor((2*floor((n+1)/2)*(2*n+2)+binomial(2*n+2,3))/2)
 
 add $0,1
 mov $1,$0
-pow $0,2
-mov $2,4
-gcd $2,$0
+div $1,2
+mul $1,2
 mul $0,2
-sub $0,3
-add $0,$2
 mul $1,$0
-mov $0,$1
-div $0,3
+bin $0,3
+add $0,$1
+div $0,2

@@ -1,21 +1,19 @@
 ; A309674: a(1) = 1, a(n) = hamming_weight(Sum_{k=1..n-1} a(k) ) for n>=2.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 1,1,1,2,2,3,2,2,3,2,3,3,3,3,5,2,3,3,3,5,3,5,4,1,2,3,3,3,3,5,3,5,4,2,3,4,4,5,4,5,6,2,3,3,3,3,5,3,5,4,2,3,4,4,5,4,5,6,3,3,5,4,3,5,4,5,4,5,5,7,6,6,2,2,3,3,3,5,3,5
 
-mov $3,$0
-sub $0,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  add $3,$1
-  mov $0,$3
-  sub $0,$2
-  mov $4,$0
-  dis $4,2
-  mov $0,$4
-  sub $0,1
-  div $1,28
-  max $1,$0
+#offset 1
+
+mov $1,1
+mov $2,1
+sub $0,2
+lpb $0
+  add $0,1
+  lpb $0
+    sub $0,1
+    mov $2,$1
+    dgs $2,2
+    add $1,$2
+  lpe
 lpe
-mov $0,$1
-add $0,1
+mov $0,$2

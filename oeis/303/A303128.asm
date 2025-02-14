@@ -1,48 +1,17 @@
 ; A303128: Decimal expansion of proton magnetic moment to nuclear magneton ratio.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 2,7,9,2,8,4,7,3
+; Formula: a(n) = -10*truncate((-10*truncate((truncate((5*n^3+3*n^5)/(-26))+2)/10)+truncate((5*n^3+3*n^5)/(-26))+12)/10)-10*truncate((truncate((5*n^3+3*n^5)/(-26))+2)/10)+truncate((5*n^3+3*n^5)/(-26))+12
 
-mov $5,14
-mov $3,$0
-mul $3,8
-lpb $3
-  sub $3,2
-  add $9,$19
-  sub $13,$17
-  sub $4,$13
-  add $6,$4
-  add $6,$2
-  add $7,$9
-  sub $7,$10
-  mul $1,18
-  add $1,$6
-  div $1,17
-  add $2,$7
-  add $2,$1
-  add $5,$2
-  add $6,$5
-  sub $8,$1
-  sub $9,$8
-  sub $10,$9
-  add $11,$5
-  sub $13,$11
-  cmp $14,$9
-  sub $15,$8
-  add $16,$15
-  add $17,$11
-  add $18,$13
-  add $4,$5
-  sub $4,$18
-  add $12,$10
-  sub $12,$14
-  sub $7,$8
-  sub $7,$12
-  add $7,$1
-  add $9,$15
-  add $9,$16
-  add $19,$16
-lpe
-mov $0,$12
+#offset 1
+
+mov $1,$0
+pow $0,5
+mul $0,3
+pow $1,3
+mul $1,5
+add $0,$1
+div $0,-26
 add $0,2
 mod $0,10
 add $0,10

@@ -6,7 +6,6 @@
 
 mov $1,$0
 sub $0,1
-mov $3,0
 mov $5,$0
 mov $7,2
 lpb $7
@@ -25,5 +24,4 @@ mul $5,$6
 sub $3,$5
 mov $2,$3
 mul $2,$1
-mov $0,$3
 mov $0,$2

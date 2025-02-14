@@ -6,7 +6,7 @@
 #offset 1
 
 mov $1,$0
-seq $1,219 ; Number of planar partitions (or plane partitions) of n.
+seq $1,219 ; Number of plane partitions (or planar partitions) of n.
 seq $0,990 ; Number of plane partitions of n with at most two rows.
 sub $0,1
 sub $1,$0

@@ -10,5 +10,4 @@ sub $1,3
 seq $1,73169 ; a(n)=A002808(n)-n, difference between n-th composite and n.
 add $1,1
 seq $1,69102 ; a(1) = 1; a(2) = 1; a(n) = Prime[n-1] + Prime[n-2] if n > 2.
-sub $0,4
 mov $0,$1

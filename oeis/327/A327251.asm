@@ -1,30 +1,27 @@
 ; A327251: Expansion of Sum_{k>=1} psi(k) * x^k / (1 - x^k)^2, where psi = A001615.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,5,7,16,11,35,15,44,33,55,23,112,27,75,77,112,35,165,39,176,105,115,47,308,85,135,135,240,59,385,63,272,161,175,165,528,75,195,189,484,83,525,87,368,363,235,95,784,161,425,245,432,107,675,253,660,273
 
+#offset 1
+
 mov $1,1
-mov $2,1
-add $0,1
+mov $2,2
+mov $4,1
 lpb $0
   mov $3,$0
-  sub $3,1
   lpb $3
     mov $4,$0
     mod $4,$2
     min $4,1
-    mov $5,$2
-    cmp $5,1
     add $2,1
-    max $4,$5
     sub $3,$4
   lpe
   mov $5,1
   lpb $0
     dif $0,$2
     mul $5,$2
-    sub $5,$4
+    add $5,$4
     mul $4,$2
-    add $4,2
     add $5,$4
   lpe
   mul $1,$5

@@ -1,24 +1,11 @@
 ; A180353: a(n) = n^n * prime(n).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 2,12,135,1792,34375,606528,14000231,318767104,8910671247,290000000000,8844661788941,329895716585472,12417879370282373,477816293498994688,20581012847900390625,977677435906606235648,48807175451293869086443,2400130892593088792100864
-; Formula: a(n) = truncate((4*(b(n-1)+max(c(n-1),2))*n^n)/4), b(n) = b(n-1), b(1) = 0, b(0) = 0, c(n) = A151800(c(n-1)+1), c(1) = 3, c(0) = 1
+; Formula: a(n) = A000040(n)*n^n
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mov $3,1
-lpb $0
-  sub $0,1
-  add $3,1
-  seq $3,151800 ; Least prime > n (version 2 of the "next prime" function).
-lpe
-mov $0,$3
-max $0,2
-add $1,$0
-add $2,1
-pow $2,$2
-mul $2,4
-mul $2,$1
-mov $0,$2
-div $0,4
+mov $1,$0
+pow $1,$1
+seq $0,40 ; The prime numbers.
+mul $0,$1

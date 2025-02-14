@@ -1,19 +1,12 @@
 ; A137931: Sum of the principal diagonals of a 2n X 2n square spiral.
-; Submitted by Mumps
+; Submitted by BrandyNOW
 ; 0,10,56,170,384,730,1240,1946,2880,4074,5560,7370,9536,12090,15064,18490,22400,26826,31800,37354,43520,50330,57816,66010,74944,84650,95160,106506,118720,131834,145880,160890,176896,193930,212024,231210,251520,272986,295640
-; Formula: a(n) = 2*truncate(((2*n)^3+2*n^2+2*n-truncate((n^2+2*n)/(-1)))/3)
+; Formula: a(n) = floor((8*n*(8*n+5)+binomial(8*n,3))/16)
 
-mov $2,$0
-add $2,$0
+mul $0,8
 mov $1,$0
-mul $1,$0
-mov $0,$1
-add $1,$2
+add $0,5
+mul $0,$1
+bin $1,3
 add $0,$1
-div $1,-1
-pow $2,3
-add $2,$0
-sub $2,$1
-mov $0,$2
-div $0,3
-mul $0,2
+div $0,16

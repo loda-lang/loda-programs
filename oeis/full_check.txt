@@ -301,6 +301,7 @@ A085405: Common residues of binomial(3n+2,n+1)/(3n+2) modulo 2.
 A086377: a(1)=1; a(n)=a(n-1)+2 if n is in the sequence; a(n)=a(n-1)+2 if n and (n-1) are not in the sequence; a(n)=a(n-1)+3 if n is not in the sequence but (n-1) is in the sequence.
 A087055: Largest square number less than 2*n^2.
 A087560: Smallest m > n such that gcd(m, n^2) = n.
+A088442: A linear version of the Josephus problem.
 A088462: a(1)=1, a(n) = ceiling((n - a(a(n-1)))/2).
 A088517: First differences of Golomb's sequence.
 A088534: Number of representations of n by the quadratic form x^2 + xy + y^2 with 0 <= x <= y.
@@ -610,6 +611,7 @@ A276866: First differences of the Beatty sequence A004976 for 2 + sqrt(5).
 A276879: Sums-complement of the Beatty sequence for 1 + sqrt(2).
 A276950: Characteristic function for A273670: 1 if there is at least one maximal digit present in the factorial representation of n (A007623), otherwise 0.
 A277022: Primorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
+A277051: a(n) = floor(n/(1-3/Pi)).
 A277052: a(n) = n+floor(n/(2/sqrt(Pi)-1)).
 A277722: a(n) = floor(n*tau^2) where tau is the tribonacci constant (A058265).
 A277723: a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).
@@ -811,9 +813,11 @@ A356159: Sum of the prime indices of the smallest number that has the same prime
 A358755: a(n) = 1 if A053669(n) [the smallest prime not dividing n] is of the form 6m-1, otherwise a(n) = 0.
 A358847: a(n) = 1 if A053669(6*n) [the smallest prime not dividing 6*n] is of the form 6m-1, otherwise a(n) = 0.
 A359098: Numbers with exactly four nonzero decimal digits and not ending with 0.
+A359429: a(n) = 1 if n is cubefree, but not squarefree, otherwise 0.
 A359550: Multiplicative with a(p^e) = 1 if p > e, otherwise 0.
 A359551: Dirichlet inverse of A359550, which is multiplicative sequence with a(p^e) = 1 if e < p, otherwise 0.
 A360158: a(n) is the number of unitary divisors of n that are odd squares minus the number of unitary divisors of n that are even squares.
+A368542: The number of divisors of n whose prime factors are all Mersenne primes (A000668).
 A373834: a(n) = 1 if n is a multiple of A276150(n), otherwise 0, where A276150 is the digit sum in the primorial base.
 A374130: a(n) = 1 if bitwise-XOR of the exponents of primes in the prime factorization of n is equal to 1, otherwise 0.
 A376928: The largest noncomposite number k such that n is divisible by all the primes that do not exceed k.

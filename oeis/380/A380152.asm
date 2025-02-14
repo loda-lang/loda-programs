@@ -1,22 +1,17 @@
 ; A380152: Decimal expansion of 864/275.
-; Submitted by Ryan Hothersall
+; Submitted by BrandyNOW
 ; 3,1,4,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1
+; Formula: a(n) = -truncate(truncate(((-4)^n)/2)/(5*n-truncate(((-4)^n)/2)+5))*(5*n-truncate(((-4)^n)/2)+5)-10*truncate((-truncate(truncate(((-4)^n)/2)/(5*n-truncate(((-4)^n)/2)+5))*(5*n-truncate(((-4)^n)/2)+5)-10*truncate((-truncate(truncate(((-4)^n)/2)/(5*n-truncate(((-4)^n)/2)+5))*(5*n-truncate(((-4)^n)/2)+5)+truncate(((-4)^n)/2)-7)/10)+truncate(((-4)^n)/2)+3)/10)-10*truncate((-truncate(truncate(((-4)^n)/2)/(5*n-truncate(((-4)^n)/2)+5))*(5*n-truncate(((-4)^n)/2)+5)+truncate(((-4)^n)/2)-7)/10)+truncate(((-4)^n)/2)+3
 
-mov $4,-2
-pow $4,$0
-mov $1,2
-mul $1,$4
-mov $2,9
-trn $2,$1
-mul $1,2
-pow $1,2
-min $2,1
-mul $2,5
-add $2,1
-sub $1,$2
-mov $3,$0
-equ $3,2
-add $3,$1
-mov $0,$3
+mov $1,-4
+pow $1,$0
+div $1,2
+add $0,1
+mul $0,5
+sub $0,$1
+mod $1,$0
+mov $0,$1
 sub $0,7
+mod $0,10
+add $0,10
 mod $0,10

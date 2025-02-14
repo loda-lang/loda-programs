@@ -8,7 +8,6 @@
 seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
 mul $0,2
 trn $0,1
-mov $1,0
 pow $1,$0
 mov $2,$0
 sub $0,1

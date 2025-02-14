@@ -7,14 +7,15 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,337345 ; Number of divisors d of n for which A003961(d) > 2*d.
+  add $3,1
+  seq $3,337345 ; Number of divisors d of n for which A003961(d) > 2*d, where A003961 is fully multiplicative with a(p) = nextprime(p).
   trn $3,1
   min $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,3
 lpe

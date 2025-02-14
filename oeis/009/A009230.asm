@@ -8,7 +8,6 @@ mov $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $2,$1
 gcd $2,$0
-mov $3,$0
 div $1,$2
 sub $0,1
 mul $0,$1

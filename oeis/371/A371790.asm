@@ -2,6 +2,9 @@
 ; Submitted by Dirk Broer
 ; 1,2,3,6,11,21,40,77,144,279
 
+#offset 1
+
+sub $0,1
 mov $1,2
 pow $1,$0
 mul $0,2
