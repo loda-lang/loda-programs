@@ -1,18 +1,18 @@
 ; A375056: Obverse convolution (n^2 - n)**(n^2 - n); see Comments.
-; Submitted by [AF>France>Sale-caractere] Antares
+; Submitted by BrandyNOW
 ; 0,0,0,144,20736,3686400,846720000,248961081600,91903601147904,41768738415968256,22963973960761344000,15039892634817600000000,11578453280457231826944000,10356817418502774061032013824,10655399435864041308654755905536
 
+add $0,1
+sub $2,$0
 mov $3,1
+sub $1,$2
+bin $1,2
+add $1,1
 lpb $0
-  mul $3,$0
   sub $0,1
-  add $2,1
-  mul $3,$0
-  add $3,$1
-  mov $4,$2
-  sub $4,1
-  mul $4,$2
-  max $1,$3
-  mul $1,$4
+  add $1,$2
+  add $2,2
+  mul $3,$1
+  mul $3,2
 lpe
-mov $0,$1
+mov $0,$3

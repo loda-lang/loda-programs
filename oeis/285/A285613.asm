@@ -12,7 +12,7 @@ lpb $0
   mov $5,0
   mov $9,$3
   trn $9,$0
-  cmp $6,0
+  equ $6,0
   mul $6,$0
   mov $4,$9
   add $4,$6
@@ -23,7 +23,7 @@ lpb $0
     mov $7,99
     mov $8,$4
   lpe
-  cmp $5,0
+  equ $5,0
   sub $6,1
   add $1,$5
 lpe

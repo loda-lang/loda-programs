@@ -1,16 +1,15 @@
 ; A059539: Beatty sequence for 3^(1/3).
-; Submitted by Bunteck
+; Submitted by BrandyNOW
 ; 1,2,4,5,7,8,10,11,12,14,15,17,18,20,21,23,24,25,27,28,30,31,33,34,36,37,38,40,41,43,44,46,47,49,50,51,53,54,56,57,59,60,62,63,64,66,67,69,70,72,73,74,76,77,79,80,82,83,85,86,87,89,90,92,93,95,96,98,99,100,102,103,105,106,108,109,111,112,113,115
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A081129(n), b(0) = 1
+; Formula: a(n) = sqrtnint(3*n^3,3)
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  mov $2,$0
-  seq $2,81129 ; Differences of Beatty sequence for cube root of 3.
-  sub $0,1
-  add $1,$2
-lpe
+mov $1,$0
+mul $1,2
+mov $2,$0
+mul $0,$2
+add $1,$2
+mul $1,$0
+nrt $1,3
 mov $0,$1

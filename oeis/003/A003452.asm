@@ -1,18 +1,15 @@
 ; A003452: Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals rooted at a cell up to rotation and reflection.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 2,7,15,28,45,69,98,136,180,235,297,372,455,553,660,784,918,1071,1235,1420,1617,1837,2070,2328,2600,2899,3213,3556,3915,4305,4712,5152,5610,6103,6615,7164,7733,8341,8970,9640,10332,11067,11825,12628,13455,14329,15228,16176,17150,18175,19227,20332,21465,22653,23870,25144,26448,27811,29205,30660,32147,33697,35280,36928,38610,40359,42143,43996,45885,47845,49842,51912,54020,56203,58425,60724,63063,65481,67940,70480
-; Formula: a(n) = truncate((truncate((floor(((n-1)^2)/2)+n-4)/2)*(n-4))/2)
+; Formula: a(n) = truncate(((n-4)*(floor((n^2)/2)-4))/4)
 
 #offset 5
 
-sub $0,5
 mov $1,$0
-add $0,1
-add $1,4
-pow $1,2
+mul $1,$0
+sub $0,4
 div $1,2
-add $1,$0
-div $1,2
+sub $1,4
 mul $1,$0
 mov $0,$1
-div $0,2
+div $0,4

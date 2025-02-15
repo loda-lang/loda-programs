@@ -1,38 +1,29 @@
 ; A153758: a(n) = Sum_{k=1..n} A153757(k).
-; Submitted by Jon Maiga
+; Submitted by sbo92
 ; 1,3,7,17,57,337,3737,72657,2369257,127188257,11156500857,1592432891857,369041278550057,138668563737942657,84415532990575319257,83213455958038482903857,132788829902694935512664457,342962001904259249964245209057
 
 #offset 1
 
 sub $0,1
-mov $6,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$6
-  sub $0,$4
-  mov $9,0
-  mov $10,$0
-  mov $7,$0
-  add $7,1
-  lpb $7
-    sub $7,1
-    mov $0,$10
-    sub $0,$7
-    mov $1,1
-    mov $2,1
-    mov $8,0
-    lpb $0
-      sub $0,1
-      mov $3,$2
-      mov $2,$8
-      add $2,1
-      mul $1,$2
-      add $8,$3
-    lpe
-    add $9,$1
+mov $5,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $3,0
+  mov $0,$5
+  sub $0,$1
+  mov $2,$0
+  mov $4,$0
+  add $4,1
+  lpb $4
+    sub $4,1
+    mov $0,$2
+    sub $0,$4
+    add $0,1
+    seq $0,3266 ; Product of first n nonzero Fibonacci numbers F(1), ..., F(n).
+    add $3,$0
   lpe
-  add $5,$9
+  add $6,$3
 lpe
-mov $0,$5
+mov $0,$6

@@ -1,5 +1,5 @@
 ; A112609: Number of representations of n as a sum of three times a triangular number and four times a triangular number.
-; Submitted by Science United
+; Submitted by cargoeagle
 ; 1,0,0,1,1,0,0,1,0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,0,0,1,0,0,2,0,0,1,1,0,0,0,0,0,1,0,2,1,0,1,0,0,0,2,0,0,0,0,1,0,0,1,1,0,1,0,0,2,0,0,0,1,0,2,1,0,0,0,0,1,0,0,1,0
 
 mov $4,$0
@@ -18,12 +18,10 @@ lpb $4
   sub $4,$9
   mov $8,$4
   max $8,0
-  mul $8,4
-  add $8,3
   mov $1,$8
   nrt $1,2
-  add $8,2
   mov $2,$8
+  add $2,1
   nrt $2,2
   mov $8,$2
   add $8,$1

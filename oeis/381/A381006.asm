@@ -4,12 +4,11 @@
 ; Formula: a(n) = (2^(2*n+2)+2)*2^(2*n+2)
 
 add $0,1
-mul $0,2
-mov $3,2
-pow $3,$0
-add $3,2
+sub $1,$0
+sub $0,$1
 mov $1,2
 pow $1,$0
-mov $2,$3
+mov $2,2
+add $2,$1
 mul $2,$1
 mov $0,$2

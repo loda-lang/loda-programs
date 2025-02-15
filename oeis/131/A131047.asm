@@ -1,23 +1,18 @@
 ; A131047: (1/2) * (A007318 - A007318^(-1)).
-; Submitted by iBezanilla
+; Submitted by BrandyNOW
 ; 1,0,2,1,0,3,0,4,0,4,1,0,10,0,5,0,6,0,20,0,6,1,0,21,0,35,0,7,0,8,0,56,0,56,0,8,1,0,36,0,126,0,84,0,9
 
 #offset 1
 
 sub $0,1
 lpb $0
-  add $2,1
-  sub $0,$2
+  add $1,1
+  sub $0,$1
 lpe
-mov $1,$2
+sub $1,$0
 add $1,1
-bin $1,$0
+mov $2,-1
 sub $2,$0
-add $3,$1
-mov $0,$2
-lpb $0
-  sub $0,1
-  mul $3,-1
-  add $3,$1
-lpe
+bin $2,$1
+trn $3,$2
 mov $0,$3

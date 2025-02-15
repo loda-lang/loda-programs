@@ -1,23 +1,20 @@
 ; A260682: Löschian numbers (A003136) of the form 6*k+1.
-; Submitted by mmonnin
+; Submitted by Athlici
 ; 1,7,13,19,25,31,37,43,49,61,67,73,79,91,97,103,109,121,127,133,139,151,157,163,169,175,181,193,199,211,217,223,229,241,247,259,271,277,283,289,301,307,313,325,331,337,343,349,361,367,373,379,397,403,409,421,427,433,439,457,463,469,475,481,487,499,511,523,529,541,547,553,559,571,577,589,601,607,613,619
 
 #offset 1
 
 sub $0,1
-mov $1,1
 mov $2,$0
-add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  dif $3,-2
-  max $3,0
-  seq $3,217219 ; Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
-  div $3,3
+  mul $3,3
+  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
+  seq $3,33762 ; Product t2(q^d); d | 3, where t2 = theta2(q) / (2 * q^(1/4)).
   min $3,1
   sub $0,$3
-  add $1,1
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0
@@ -25,3 +22,5 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
+mul $0,3
+add $0,1

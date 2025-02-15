@@ -35,6 +35,5 @@ lpb $0
   add $5,1
 lpe
 mov $0,$2
-sub $0,1
 seq $0,354197 ; a(n) = A064989(sigma(sigma(sigma(A003961(n))))), where A003961 shifts the prime factorization one step towards larger primes, and A064989 shifts it back towards smaller primes.
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.

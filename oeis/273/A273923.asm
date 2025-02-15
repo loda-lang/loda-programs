@@ -1,28 +1,16 @@
 ; A273923: Number of 13-tuples of primes in arithmetic progression less than 10^n.
-; Submitted by Cruncher Pete
+; Submitted by BrandyNOW
 ; 0,0,0,0,0,1,3,52
-; Formula: a(n) = truncate((d(n-1)+f(n-1))/12), a(7) = 52, a(6) = 3, a(5) = 1, a(4) = 0, a(3) = 0, a(2) = 0, a(1) = 0, a(0) = 0, b(n) = -b(n-2)-c(n-3)+b(n-1)+c(n-4)+d(n-1), b(8) = 168516, b(7) = 667, b(6) = 52, b(5) = 11, b(4) = 2, b(3) = 0, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = -b(n-1)+c(n-1)+d(n-1)+e(n-1)+1, c(7) = 631, c(6) = 52, c(5) = 17, c(4) = 8, c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 0, d(n) = binomial(-d(n-1)-e(n-1)+b(n-1)-1,2), d(7) = 167910, d(6) = 630, d(5) = 45, d(4) = 10, d(3) = 3, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = 0, e(7) = 0, e(6) = 0, e(5) = 0, e(4) = 0, e(3) = 0, e(2) = 0, e(1) = 0, e(0) = 0, f(n) = -b(n-1)+f1(n-1)-1, f(7) = -43, f(6) = -6, f(5) = 1, f(4) = 2, f(3) = 1, f(2) = 0, f(1) = -1, f(0) = 0, f1(n) = c(n-2)+2, f1(7) = 19, f1(6) = 10, f1(5) = 6, f1(4) = 4, f1(3) = 3, f1(2) = 2, f1(1) = 2, f1(0) = 0
+; Formula: a(n) = binomial(n-1,6)^2+max(4,n-1)-4
 
-lpb $0
-  sub $0,1
-  sub $1,$7
-  add $4,$3
-  add $5,$3
-  add $6,2
-  sub $7,$3
-  sub $3,1
-  add $3,$7
-  sub $3,$4
-  add $3,$1
-  mov $7,$6
-  mov $6,$2
-  add $1,$5
-  add $1,1
-  sub $2,$3
-  bin $3,2
-  mov $8,$5
-  div $8,12
-  mov $4,0
-  sub $5,$1
-lpe
-mov $0,$8
+#offset 1
+
+sub $0,1
+mov $2,4
+max $2,$0
+bin $0,6
+mov $1,$0
+mul $1,$0
+add $1,$2
+mov $0,$1
+sub $0,4

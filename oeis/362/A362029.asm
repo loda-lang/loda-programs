@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
+  add $0,2
   seq $0,303165 ; Sum of the squarefree differences |q-p| of the parts in the partitions of n into two distinct parts (p,q) where p < q.
   add $2,$5
   add $1,$2
