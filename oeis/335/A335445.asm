@@ -6,6 +6,7 @@ mov $1,$0
 mov $3,11
 lpb $3
   mov $4,$2
+  add $4,2
   seq $4,277674 ; a(n) = d(n+1) - d(n), where d(k) is the number of digits in the base-k representation of k!.
   sub $0,$4
   add $2,1

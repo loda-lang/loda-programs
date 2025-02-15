@@ -10,6 +10,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,277644 ; Beatty sequence for sqrt(6)/2.
     mov $9,10
     add $9,$5

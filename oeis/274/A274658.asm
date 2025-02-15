@@ -21,13 +21,12 @@ lpb $2
   mul $7,$6
   div $7,$3
   mov $3,$7
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   mov $5,$7
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   add $1,$3
   mul $2,$4

@@ -12,10 +12,10 @@ lpb $1
   sub $1,1
   mov $0,$4
   sub $0,$1
-  sub $0,1
   mov $3,$0
   seq $3,272171 ; Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
-  seq $0,133734 ; A000012 * A002865 as a diagonalized matrix.
+  seq $0,25675 ; Exponent of 8 (value of j) in n-th number of form 7^i*8^j.
+  seq $0,2865 ; Number of partitions of n that do not contain 1 as a part.
   mul $0,$3
   add $2,$0
 lpe

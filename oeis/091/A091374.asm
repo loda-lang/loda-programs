@@ -20,6 +20,7 @@ lpb $2
     sub $0,1
   lpe
   mov $3,$1
+  add $3,1
   seq $3,279228 ; Number of unit steps that are shared by the smallest and largest Dyck path of the symmetric representation of sigma(n).
   equ $3,0
   add $5,$3

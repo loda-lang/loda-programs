@@ -12,9 +12,9 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,272171 ; Triangle read by rows: T(n,k) in which row n lists the first n terms of A000005 in reverse order.
+  sub $0,1
   seq $0,133734 ; A000012 * A002865 as a diagonalized matrix.
   mul $0,$4
   sub $1,1

@@ -14,6 +14,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,274139 ; a(n) = 2^A000265(n) = 2^numerator(n/2^n), a sequence related to Oresme numbers.
     mov $9,10
     add $9,$5

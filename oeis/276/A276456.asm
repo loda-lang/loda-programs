@@ -1,8 +1,11 @@
 ; A276456: Integers n such that the Klein invariant J((-1+sqrt(-n))/2) is a rational number.
 ; Submitted by ThrasherX-17
 ; 1,3,7,11,19,27,43,67,163
-; Formula: a(n) = 2*d(n)+1, b(n) = 4*c(n-1)-2*b(n-2)-2, b(4) = 6, b(3) = 2, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = b(n-1)+binomial(c(n-1),7)+1, c(5) = 7, c(4) = 3, c(3) = 3, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 4*c(n-1)+3*b(n-1)-2*d(n-1)+1, d(3) = 5, d(2) = 3, d(1) = 1, d(0) = 0
+; Formula: a(n) = 2*d(n-1)+1, b(n) = 4*c(n-1)-2*b(n-2)-2, b(4) = 6, b(3) = 2, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = b(n-1)+binomial(c(n-1),7)+1, c(5) = 7, c(4) = 3, c(3) = 3, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 4*c(n-1)+3*b(n-1)-2*d(n-1)+1, d(3) = 5, d(2) = 3, d(1) = 1, d(0) = 0
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   mul $3,2

@@ -8,15 +8,16 @@ pow $2,2
 lpb $2
   add $4,$5
   mov $3,$1
+  add $3,1
   seq $3,277129 ; Largest m < n such that 2^m == 2^n (mod n).
   sub $3,1
   add $3,$4
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   add $1,2
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   sub $5,1
   mul $2,$4
   sub $2,1

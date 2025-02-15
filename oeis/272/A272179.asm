@@ -6,7 +6,7 @@ add $1,1
 pow $0,2
 bin $0,$1
 lpb $1
-  cmp $2,0
+  equ $2,0
   lpb $1
     mul $2,$1
     sub $1,1

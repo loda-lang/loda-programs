@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,277698 ; a(n) = least unitary prime divisor of n or 1 if no such prime-divisor exists.
   div $0,$1
 lpe

@@ -1,4 +1,4 @@
-; A273499: Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 771", based on the 5-celled von Neumann neighborhood.
+; A273499: Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 771", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jamie Morken(l1)
 ; 1,5,17,33,65,89,137,161,257,297,377,401,561,601,713,705,1025,1097,1241,1265,1553,1593,1769,1697,2273,2345,2553,2513,2993,2969,3209,2945,4097,4233,4505,4529,5073,5113,5417,5217,6305,6377,6713,6545,7409,7257,7625,6977,9153,9289,9689,9585,10513,10425,10857,10273,12257,12201,12665,12113,13617,13081,13577,12033,16385,16649,17177,17201,18257,18297,18857,18401,20513,20585,21177,20753,22385,21977,22601,21185
 

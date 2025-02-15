@@ -7,6 +7,7 @@ mov $2,$0
 mov $3,0
 lpb $0
   sub $0,1
+  add $3,1
   seq $3,276793 ; Indicator function for A003144.
   add $2,$3
   mov $3,$0

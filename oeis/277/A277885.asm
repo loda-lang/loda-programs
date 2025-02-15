@@ -1,10 +1,10 @@
 ; A277885: a(n) = index of the least non-unitary prime divisor of n or 0 if no such prime-divisor exists.
 ; 0,0,0,1,0,0,0,1,2,0,0,1,0,0,0,1,0,2,0,1,0,0,0,1,3,0,2,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,2,0,0,1,4,3,0,1,0,2,0,1,0,0,0,1,0,0,2,1,0,0,0,1,0,0,0,1,0,0,3,1,0,0,0,1
-; Formula: a(n) = A230980(A020639(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))))
+; Formula: a(n) = A230980(A020639(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))))
+
+#offset 1
 
 mov $2,$0
-add $2,1
-add $0,1
 mov $4,$0
 seq $4,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
 sub $0,1

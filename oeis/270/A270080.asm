@@ -1,4 +1,4 @@
-; A270080: Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
+; A270080: Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jamie Morken(w4)
 ; 1,5,20,72,280,1080,4216,16632,66040,263160,1050616,4198392,16785400,67125240,268468216,1073807352
 ; Formula: a(n) = floor(((3*2^n+floor((n+3)/(2^n)))*(2*2^n+floor((n+3)/(2^n))+4))/6)-8

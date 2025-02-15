@@ -2,6 +2,9 @@
 ; Submitted by jmorken
 ; 50,200,338,450,578,800,1352,1682,1800,2312,2450,2738,3042,3200,3362,4050,5202,5408,5618,6050,6728,7200,7442,9248,9800,10658,10952,12168,12800,13448,15138,15842,16200,16562,18050,18818,20402,20808,21632,22050,22472,23762,24200,24642,25538
 
+#offset 1
+
+sub $0,1
 mov $1,3
 mov $2,$0
 add $2,2
@@ -10,7 +13,10 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
-  seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  seq $3,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $3,3
+  mul $3,2
+  add $3,1
   mov $5,$3
   div $3,2
   sub $5,$3

@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   mul $3,2
   mov $5,$3
+  add $5,1
   seq $5,277129 ; Largest m < n such that 2^m == 2^n (mod n).
   add $3,1
   sub $3,$5

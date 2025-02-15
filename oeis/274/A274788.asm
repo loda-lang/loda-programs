@@ -10,7 +10,7 @@ lpb $4
   sub $0,$4
   mov $1,$0
   add $1,$2
-  seq $0,274786 ; Diagonal of the rational function 1/(1-(wxz + wy + wz + xy + xz + y + z)).
+  seq $0,274786 ; Diagonal of the rational function 1/(1 - (wxz + wy + wz + xy + xz + y + z)).
   bin $1,$4
   mul $1,$0
   add $3,$1

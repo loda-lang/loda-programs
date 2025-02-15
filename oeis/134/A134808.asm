@@ -11,6 +11,7 @@ lpb $2
   mov $2,0
   mov $0,$1
   trn $0,1
+  add $0,1
   seq $0,274612 ; Numbers not divisible by 10 with at least one zero but no two adjacent 0's among its decimal digits.
 lpe
 min $1,1

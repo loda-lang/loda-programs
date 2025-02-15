@@ -9,7 +9,7 @@ lpb $0
   seq $2,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n >= 0, S(n+3) = S(n+2) S(n+1) S(n).
   add $2,1
   mod $2,3
-  cmp $3,$0
+  equ $3,$0
   bin $3,$2
   sub $0,1
   add $1,$3

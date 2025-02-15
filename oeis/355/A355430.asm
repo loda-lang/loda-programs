@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,273892 ; Numbers starting with an even (decimal) digit.
   add $3,1
   trn $3,2

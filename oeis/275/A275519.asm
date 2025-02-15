@@ -2,6 +2,9 @@
 ; Submitted by [AF] Kalianthys
 ; 1,9,3,4,9,6,4,2,5,2
 
+#offset 1
+
+sub $0,1
 mov $2,1
 mov $3,$0
 mul $3,8

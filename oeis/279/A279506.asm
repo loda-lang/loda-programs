@@ -13,4 +13,4 @@ lpe
 mov $0,$1
 add $0,1
 div $0,2
-dis $0,2
+dgs $0,2

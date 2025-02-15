@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,274612 ; Numbers not divisible by 10 with at least one zero but no two adjacent 0's among its decimal digits.
   sub $3,1
   mov $5,$3

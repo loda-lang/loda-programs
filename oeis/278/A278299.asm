@@ -2,7 +2,9 @@
 ; Submitted by Jon Maiga
 ; 2,4,6,9,12,15,19,24,30,34
 
-add $0,3
+#offset 2
+
+add $0,1
 bin $0,2
 sub $0,1
 mov $1,$0

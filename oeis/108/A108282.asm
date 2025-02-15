@@ -9,6 +9,7 @@ lpb $0
   mov $4,$2
   mov $2,$1
   mov $1,$3
+  add $1,1
   seq $1,270788 ; Unique fixed point of the 3-symbol Fibonacci morphism phi-hat_2.
   dif $1,3
   mul $1,$2

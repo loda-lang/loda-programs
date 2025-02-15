@@ -3,7 +3,7 @@
 
 mov $1,14
 add $1,$0
-cmp $0,4
+equ $0,4
 sub $0,$1
 sub $1,$0
 div $1,3

@@ -13,6 +13,7 @@ lpb $5
   add $4,1
   seq $4,40 ; The prime numbers.
   mul $4,2
+  add $4,1
   seq $4,271342 ; Sum of all even divisors of all positive integers <= n.
   div $4,2
   mov $2,$5

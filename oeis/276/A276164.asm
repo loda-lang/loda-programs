@@ -2,6 +2,9 @@
 ; Submitted by WTBroughton
 ; 1,2,4,7,10,15,17,26,27,40
 
+#offset 1
+
+sub $0,1
 sub $1,$0
 mov $2,$0
 lpb $2

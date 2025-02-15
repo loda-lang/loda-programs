@@ -10,6 +10,7 @@ lpb $3
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,279513 ; Multiplicative with a(p^k) = p*a(k) for any prime p and k>0.
   bin $0,$3
   gcd $1,$2

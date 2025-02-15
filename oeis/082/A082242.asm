@@ -9,6 +9,7 @@ mov $2,1816
 lpb $2
   sub $2,24
   mov $3,$1
+  add $3,1
   seq $3,279204 ; Numbers whose decimal expansion is a concatenation of 4 consecutive increasing nonnegative numbers.
   mov $5,$3
   gcd $3,4

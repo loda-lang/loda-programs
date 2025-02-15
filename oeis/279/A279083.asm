@@ -2,6 +2,9 @@
 ; Submitted by Orange Kid
 ; 1,3,4,6,8,12,16,18,20,24,28,30,32,36,40
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 lpb $0
   sub $0,2

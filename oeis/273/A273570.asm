@@ -1,4 +1,4 @@
-; A273570: Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 798", based on the 5-celled von Neumann neighborhood.
+; A273570: Number of active (ON, black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 798", based on the 5-celled von Neumann neighborhood.
 ; Submitted by Jon Maiga
 ; 1,5,21,93,429,1869,7821,32013,129549,521229,2091021,8376333,33529869,134168589,536772621,2147287053
 

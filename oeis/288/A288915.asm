@@ -10,6 +10,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,270189 ; Numbers n for which (prime(n+1)-prime(n)) is not a multiple of three.
   mov $2,$5
   mul $2,$4

@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 0,2,3,5,8,11,14,17,20
 
+#offset 1
+
+sub $0,1
 equ $2,$0
 gcd $2,2
 mov $1,$0

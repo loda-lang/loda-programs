@@ -1,10 +1,43 @@
 ; A275736: a(n) has base-2 representation with ones in those digit-positions where n contains ones in its factorial base representation, and zeros in all the other positions.
 ; Submitted by Skivelitis2
 ; 0,1,2,3,0,1,4,5,6,7,4,5,0,1,2,3,0,1,0,1,2,3,0,1,8,9,10,11,8,9,12,13,14,15,12,13,8,9,10,11,8,9,8,9,10,11,8,9,0,1,2,3,0,1,4,5,6,7,4,5,0,1,2,3,0,1,0,1,2,3,0,1,0,1,2,3,0,1,4,5
-; Formula: a(n) = A087207(A055231(A005940(A277012(n)+1)))
+; Formula: a(n) = A334032(A181819(A108951(truncate(gcd(truncate((A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))-1)/A003557(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))+A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))+1,A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1)))/gcd(truncate((truncate(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))/gcd(truncate((A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))-1)/A003557(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))+A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))+1,A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))-1)/A003557(truncate(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))/gcd(truncate((A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))-1)/A003557(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))+A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))+1,A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))))+truncate(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))/gcd(truncate((A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))-1)/A003557(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))+A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))+1,A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))+1,truncate(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))/gcd(truncate((A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))-1)/A003557(A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))+A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))+1,A181819(A108951(truncate((A057335(A277012(n))-1)/A293810(A057335(A277012(n))-1))+1))))))))-1)
 
 seq $0,277012 ; Factorial base representation of n is rewritten as a base-2 number with each nonzero digit k replaced by a run of k 1's (followed by one extra zero if not the rightmost run of 1's) and with each 0 kept as 0.
+seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+sub $0,1
+mov $1,$0
+seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+div $1,$0
+mov $0,$1
 add $0,1
-seq $0,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
-seq $0,55231 ; Powerfree part of n: product of primes that divide n only once.
-seq $0,87207 ; A binary representation of the primes that divide a number, shown in decimal.
+seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+mov $3,$0
+mov $5,$0
+seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+sub $0,1
+mov $4,$0
+div $4,$5
+add $0,$4
+add $0,2
+mov $2,$0
+gcd $2,$3
+mov $0,$3
+div $0,$2
+mov $7,$0
+mov $9,$0
+seq $9,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+sub $0,1
+mov $8,$0
+div $8,$9
+add $0,$8
+add $0,2
+mov $6,$0
+gcd $6,$7
+div $2,$6
+mov $0,$2
+seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $0,1
+seq $0,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.

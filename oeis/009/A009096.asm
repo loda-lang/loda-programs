@@ -9,6 +9,7 @@ sub $0,1
 add $2,68
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,270417 ; Number of integer-sided right triangles with semiperimeter n.
   sub $0,$3
   add $1,1

@@ -1,9 +1,19 @@
 ; A272261: Number of one-to-one functions f from [n] to [2n] where f(x) may not be equal to x or to 2n+1-x.
 ; Submitted by Science United
 ; 1,0,4,40,576,10528,233920,6124032,184656640,6302821888,240245858304,10115537336320,466275700903936,23354247194542080,1262994451308888064,73347095164693676032,4552571878016243466240,300763132329730843475968,21071629550593224017182720
-; Formula: a(n) = A278990(n)*2^n
 
 mov $1,2
 pow $1,$0
-seq $0,278990 ; Number of loopless linear chord diagrams with n chords.
+mov $2,1
+mov $3,0
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $5,$4
+  mov $4,$3
+  add $2,2
+  mul $3,$2
+  add $3,$5
+lpe
+mov $0,$4
 mul $0,$1

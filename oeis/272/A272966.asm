@@ -1,9 +1,12 @@
 ; A272966: Number of n X n 0..1 arrays with exactly n+n-2 having value 1 and no three 1's forming an isosceles triangle.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,6,12,8,4,8,4,8
-; Formula: a(n) = c(n)+1, b(n) = -b(n-1), b(3) = -2, b(2) = 2, b(1) = 6, b(0) = 0, c(n) = b(n-1)+5, c(3) = 7, c(2) = 11, c(1) = 5, c(0) = 0
+; Formula: a(n) = c(n-1)+1, b(n) = -b(n-1), b(3) = -2, b(2) = 2, b(1) = 6, b(0) = 0, c(n) = b(n-1)+5, c(3) = 7, c(2) = 11, c(1) = 5, c(0) = 0
+
+#offset 1
 
 mov $2,2
+sub $0,1
 lpb $0
   sub $0,1
   add $1,5

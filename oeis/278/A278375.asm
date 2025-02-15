@@ -1,7 +1,10 @@
 ; A278375: Edge-distinguishing chromatic number of ladder graph with 2n vertices.
 ; 1,3,4,5,5,6,7,7,7,8,8,8,9,9
 
+#offset 1
+
 mov $1,1
+sub $0,1
 mul $0,2
 lpb $0
   sub $2,$1

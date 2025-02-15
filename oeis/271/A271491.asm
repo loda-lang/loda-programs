@@ -22,7 +22,7 @@ lpb $4
     mov $5,$7
     div $5,3
     mov $9,$5
-    cmp $9,0
+    equ $9,0
     add $5,$9
     div $1,$5
     div $2,$5

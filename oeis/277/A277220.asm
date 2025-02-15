@@ -10,7 +10,7 @@ lpb $3
   add $6,$2
   mul $1,$3
   sub $3,1
-  cmp $4,2
+  equ $4,2
   sub $5,$4
   div $1,$5
   mul $2,5

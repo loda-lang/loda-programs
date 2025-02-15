@@ -7,6 +7,7 @@ add $0,3
 lpb $0
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,279767 ; Numbers m such that m and m+2 have the same prime signature.
   add $1,$2
   sub $3,$1

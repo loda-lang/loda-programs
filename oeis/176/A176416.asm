@@ -6,7 +6,6 @@ mov $5,2
 lpb $5
   sub $5,1
   add $0,$5
-  sub $0,1
   seq $0,277545 ; a(n) = n/7^m mod 7, where 7^m is the greatest power of 7 that divides n.
   sub $4,$1
   mov $1,$0

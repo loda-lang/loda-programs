@@ -4,7 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-dis $0,2
+dgs $0,2
 mov $2,$0
 add $2,$1
 mov $0,$2

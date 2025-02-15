@@ -8,7 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,78482 ; G.f.: (1 - 3*x + x^2 - sqrt(1 - 6*x + 7*x^2 - 2*x^3 + x^4))/(2*x).
+  seq $0,78482 ; Expansion of g.f. (1 - 3*x + x^2 - sqrt(1 - 6*x + 7*x^2 - 2*x^3 + x^4))/(2*x).
   mov $2,$3
   mul $2,$0
   add $1,$2

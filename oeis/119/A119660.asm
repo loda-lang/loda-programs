@@ -17,7 +17,6 @@ lpb $2
   sub $3,1
   seq $3,356655 ; Clausen numbers based on the strictly proper divisors of n, 1 < d < n.
   mul $3,2
-  sub $3,1
   seq $3,275314 ; Euler's gradus ("suavitatis gradus", or degrees of softness) function.
   mov $6,$3
   seq $6,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.

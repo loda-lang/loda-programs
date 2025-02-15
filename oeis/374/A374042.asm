@@ -12,6 +12,7 @@ lpb $2
   seq $5,185395 ; a(3n) = n^2, a(3n+1) = a(3n+2) = 3*n*(n+1)/2.
   sub $5,21
   mov $3,$1
+  add $3,1
   seq $3,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
   gcd $5,$3
   mov $3,$5

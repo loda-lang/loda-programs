@@ -11,6 +11,7 @@ lpb $2
   mov $3,$1
   seq $3,31347 ; Multiplicative digital root of n (keep multiplying digits of n until reaching a single digit).
   trn $3,1
+  add $3,1
   seq $3,275973 ; A binary sequence due to Harold Jeffreys.
   sub $0,$3
   add $1,$5

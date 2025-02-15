@@ -11,7 +11,7 @@ lpb $4
   sub $0,$4
   mov $1,$0
   bin $1,$0
-  seq $0,219 ; Number of planar partitions (or plane partitions) of n.
+  seq $0,219 ; Number of plane partitions (or planar partitions) of n.
   mul $1,$0
   div $3,-1
   add $3,$1

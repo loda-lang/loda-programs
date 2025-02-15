@@ -8,6 +8,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,270807 ; Trajectory of 1 under the map n -> n + n/gpf(n) + 1 (see A269304).
   mov $2,$3
   mul $2,$0

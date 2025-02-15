@@ -2,9 +2,12 @@
 ; Submitted by pututu
 ; 2,0,7,8,6,1,4,9,5
 
+#offset 2
+
 mov $1,$0
-add $1,18
-cmp $0,0
+add $1,16
+sub $0,2
+equ $0,0
 mov $2,$0
 sub $2,74
 add $0,17

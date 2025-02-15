@@ -13,6 +13,7 @@ lpb $1
   mov $0,$4
   sub $0,$1
   mov $3,$0
+  add $3,1
   seq $3,270417 ; Number of integer-sided right triangles with semiperimeter n.
   mov $0,$3
   mul $0,12

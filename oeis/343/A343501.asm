@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,271519 ; Let n = (2*i + 1)*2^j; then a(n) = i + j.
   mod $3,2
   sub $0,$3

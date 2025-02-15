@@ -9,11 +9,10 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
-  mov $3,$1
-  sub $3,1
-  mov $5,$3
+  mov $5,$1
   seq $5,277169 ; Product of squares of proper divisors of n.
-  add $3,2
+  mov $3,$1
+  add $3,1
   seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   div $3,$5
   mod $3,$1

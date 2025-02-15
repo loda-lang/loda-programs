@@ -2,7 +2,10 @@
 ; Submitted by Christian Krause
 ; 1,1,6,72,1120,21600,498960,13453440,415134720,14435366400
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   max $1,$3
   add $2,1

@@ -16,6 +16,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,276856 ; First differences of the Beatty sequence A022840 for sqrt(6).
   mul $1,$0
   add $1,2

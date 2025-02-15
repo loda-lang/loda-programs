@@ -12,6 +12,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   max $0,0
+  add $0,1
   seq $0,278100 ; Number of squarefree positive integers less than n^2.
   sub $0,1
   mov $2,$3

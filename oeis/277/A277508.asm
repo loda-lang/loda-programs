@@ -11,7 +11,7 @@ lpb $2
   sub $0,$2
   mul $1,-1
   mul $1,$0
-  seq $0,277458 ; E.g.f.: -1/(1-LambertW(-x)).
+  seq $0,277458 ; Expansion of e.g.f. -1/(1-LambertW(-x)).
   add $1,$0
 lpe
 mov $0,$1

@@ -20,6 +20,7 @@ lpb $4
     mov $0,$7
     add $0,$1
     trn $0,1
+    add $0,2
     seq $0,271943 ; The sum of the widths of all bargraphs of semiperimeter n (n>=2).
     mov $2,$1
     mul $2,$0

@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,4
+  add $3,1
   seq $3,277547 ; a(n) = n/9^m mod 9, where 9^m is the greatest power of 9 that divides n.
   equ $3,6
   sub $0,$3

@@ -7,5 +7,4 @@
 lpb $0
   dif $0,2
 lpe
-sub $0,1
 seq $0,279186 ; Maximal entry in n-th row of A279185.

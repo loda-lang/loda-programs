@@ -2,7 +2,8 @@
 ; Submitted by [AF>Amis de la mer] Qingdan
 ; 5,10,14,18,21,25,29,32,35,39,42,46,49,53,56,60,63,66,70,73,76,80,83,87,90,93,97,100,104,107,110,114,117,120,124,127,130,134,137,140,144,147,151,154,157,161,164,167,171,174,177,181,184,187
 
-add $0,1
+#offset 1
+
 seq $0,267364 ; Binary representation of the n-th iteration of the "Rule 126" elementary cellular automaton starting with a single ON (black) cell.
 mov $1,$0
 mul $1,2

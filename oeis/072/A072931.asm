@@ -14,6 +14,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,276806 ; Height of the shortest binary factorization tree of n.
     sub $7,1
     equ $7,0

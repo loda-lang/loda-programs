@@ -10,6 +10,7 @@ lpb $1
   sub $1,27
   add $0,1
 lpe
+add $0,1
 seq $0,277570 ; Numbers k such that k/6^m == 4 (mod 6), where 6^m is the greatest power of 6 that divides k.
 mul $0,6
 sub $0,1

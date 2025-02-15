@@ -14,5 +14,5 @@ lpb $0
   mul $3,$2
   bxo $1,$3
 lpe
-dis $1,2
+dgs $1,2
 mov $0,$1

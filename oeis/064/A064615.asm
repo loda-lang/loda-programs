@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   add $3,2
   mul $3,$1
+  add $3,1
   seq $3,277544 ; a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
   sub $3,1
   equ $3,0

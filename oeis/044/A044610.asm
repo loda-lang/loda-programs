@@ -10,6 +10,7 @@ add $4,3
 pow $4,2
 lpb $4
   mov $5,$3
+  add $5,1
   seq $5,277546 ; a(n) = n/8^m mod 8, where 8^m is the greatest power of 8 that divides n.
   equ $5,6
   sub $0,$5

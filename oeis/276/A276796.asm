@@ -4,6 +4,7 @@
 
 lpb $0
   sub $0,1
+  add $2,1
   seq $2,276793 ; Indicator function for A003144.
   add $1,$2
   mov $2,$0

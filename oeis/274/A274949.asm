@@ -2,7 +2,8 @@
 ; Submitted by Landjunge
 ; 2,3,4,5,7,8,9,13,16,25,27,32
 
-add $0,1
+#offset 1
+
 mov $2,$0
 pow $2,4
 lpb $2

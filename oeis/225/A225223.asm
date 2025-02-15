@@ -16,6 +16,7 @@ lpb $2
   mul $3,2
   sub $3,27
   mov $5,$3
+  add $3,1
   seq $3,279048 ; a(n) = 0 whenever n is a practical number (A005153) otherwise least powers of 2 that when multiplied by n becomes practical.
   equ $3,0
   sub $0,$3

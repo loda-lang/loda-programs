@@ -1,6 +1,7 @@
 ; A274290: Arising in solving the keyboard problem.
 ; Submitted by Science United
 ; 1,8,15,21,27,34,40,46
+; Formula: a(n) = 6*n+sqrtint(2*n)+1
 
 mov $1,$0
 mul $1,2

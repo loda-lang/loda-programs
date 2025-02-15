@@ -9,7 +9,7 @@ lpb $2
   add $4,2
   seq $4,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
   mod $3,$4
   equ $3,0

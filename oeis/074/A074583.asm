@@ -10,6 +10,7 @@ lpb $2
   mov $4,1
   add $4,$1
   mov $3,$1
+  add $3,1
   seq $3,275823 ; Least k such that n divides phi(k^2).
   mov $5,$3
   seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).

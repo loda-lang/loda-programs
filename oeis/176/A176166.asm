@@ -4,6 +4,7 @@
 
 #offset 1
 
+add $0,1
 seq $0,278253 ; Least number with the prime signature of the n-th triangular number.
 lpb $0
   dif $0,2

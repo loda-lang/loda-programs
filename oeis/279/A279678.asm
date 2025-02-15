@@ -11,7 +11,7 @@ lpb $0
   dif $2,-1
   sub $2,$1
   add $3,$2
-  cmp $4,$1
+  equ $4,$1
   add $1,$4
   mul $1,2
 lpe

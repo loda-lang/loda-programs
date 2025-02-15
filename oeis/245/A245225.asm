@@ -5,6 +5,7 @@
 mov $2,7260
 lpb $2
   sub $2,$0
+  add $2,1
   seq $2,276859 ; First differences of the Beatty sequence A022843 for e.
   mul $2,300
   add $1,15
