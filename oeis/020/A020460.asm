@@ -11,6 +11,7 @@ pow $2,2
 bin $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,284923 ; Numbers with digits 2 and 9 only.
   sub $3,1
   mov $5,$3

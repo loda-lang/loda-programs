@@ -11,7 +11,7 @@ mul $4,$3
 add $4,$0
 div $4,106
 mov $2,$0
-mul $2,2
+add $2,1
 lpb $2
   max $2,1
   div $1,$2

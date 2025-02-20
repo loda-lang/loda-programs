@@ -1,26 +1,22 @@
 ; A234429: Numbers which are the digital sum of the square of some prime.
-; Submitted by kpmonaghan
+; Submitted by BrandyNOW
 ; 4,7,9,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,163,166,169,172,175,178
-; Formula: a(n) = d(n-1)+4, b(n) = b(n-1)+3, b(4) = 9, b(3) = 6, b(2) = 3, b(1) = 3, b(0) = 3, c(n) = 3, c(4) = 3, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 0, d(n) = b(n-2)+truncate(c(n-2)/2)+5, d(4) = 9, d(3) = 6, d(2) = 5, d(1) = 3, d(0) = 0
+; Formula: a(n) = min(n-2,1)+truncate((max(4*n-6,10)+min(n-2,1))/2)+n
 
 #offset 1
 
-mov $1,3
-mov $2,2
-mov $3,1
 sub $0,1
-lpb $0
-  sub $0,1
-  add $1,$3
-  add $2,1
-  mov $3,$4
-  mov $4,3
-  mov $5,$2
-  mov $2,$3
-  div $2,2
-  add $2,$1
-  sub $1,1
-  add $3,1
-lpe
-mov $0,$5
-add $0,4
+mov $1,$0
+mov $2,$0
+sub $0,1
+add $2,$0
+min $0,1
+add $1,$0
+mul $2,2
+max $2,10
+add $2,$0
+mov $0,$2
+div $0,2
+add $1,$0
+mov $0,$1
+add $0,1

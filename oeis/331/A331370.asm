@@ -1,30 +1,17 @@
 ; A331370: Decimal expansion of Sum_{(p1, p2) is twin prime pair} log(p2 / p1).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 1,8,7,2,1,7,8,8
+; Formula: a(n) = -10*truncate((truncate(((n+1)*(floor(((n+5)^2)/2)+4)-49)/4)+9)/10)+truncate(((n+1)*(floor(((n+5)^2)/2)+4)-49)/4)+9
 
-mov $2,1
-mov $4,1
-add $0,1
-lpb $0
-  sub $0,1
-  sub $4,$7
-  sub $4,$6
-  add $6,$2
-  mov $7,$4
-  add $7,1
-  mov $4,$2
-  sub $1,$2
-  add $1,1
-  add $2,$1
-  add $5,$4
-  mov $1,$3
-  sub $3,$7
-  add $6,$5
-  dif $6,2
-  add $5,1
-lpe
-mov $0,$7
-sub $0,1
-mod $0,10
-add $0,10
+add $0,5
+mov $1,$0
+mul $1,$0
+sub $0,4
+div $1,2
+add $1,4
+mul $1,$0
+sub $1,49
+mov $0,$1
+div $0,4
+add $0,9
 mod $0,10

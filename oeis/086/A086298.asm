@@ -1,30 +1,23 @@
 ; A086298: Numbers n such that 1-2n+3n^2 is prime.
-; Submitted by PDW
+; Submitted by Hoshione
 ; 1,4,6,10,12,18,22,28,40,42,46,52,54,64,70,78,84,88,90,94,96,112,120,130,132,136,138,142,154,160,174,216,222,226,232,238,240,276,282,288,292,294,306,310,316,328,336,358,360,370,396,400,408,424,436,438,466,492,502,514,526,538,540,546,570,580,582,616,618,628,648,666,670,682,684,732,738,754,766,768
 
 #offset 1
 
-sub $0,1
-mov $1,-8
-mov $6,1
-mov $2,$0
-add $2,6
-pow $2,3
-lpb $2
-  mov $3,$6
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $0,$3
-  add $1,16
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,18
-  add $5,$1
-  add $1,8
-  mov $6,$5
+mov $3,$0
+pow $3,5
+lpb $3
+  mov $1,$2
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  add $4,2
+  sub $0,$1
+  add $2,4
+  add $2,$4
+  add $2,$4
+  sub $3,$0
+  add $4,10
 lpe
-mov $0,$1
-div $0,12
-add $0,1
+mov $0,$4
+sub $0,16
+div $0,6
+add $0,3

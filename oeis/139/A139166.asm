@@ -8,7 +8,6 @@
 mov $1,$0
 seq $1,131491 ; 2*prime(n)!.
 div $1,8
-sub $0,3
 mov $0,$1
 sub $0,29
 div $0,2

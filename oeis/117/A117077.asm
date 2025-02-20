@@ -1,7 +1,21 @@
 ; A117077: Define binary strings S(0)=0, S(1)=1, S(n) = S(n-2)S(n-1); a(n) = S(n) converted to decimal.
-; Submitted by Jamie Morken(l1)
+; Submitted by Science United
 ; 0,1,1,5,13,173,3501,1420717,7343549869,24407739551034797,264579267653248177273154989,15107659029337673520218077770654501397966253,5900314832748922900613950065282124787723453785544193308390237364661677
-; Formula: a(n) = A030101(A005203(n))
+; Formula: a(n) = truncate(c(n)/2), b(n) = b(n-2)*b(n-1), b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 2, c(n) = c(n-2)*b(n-3)*b(n-2)+c(n-1), c(4) = 26, c(3) = 10, c(2) = 2, c(1) = 2, c(0) = 0
 
-seq $0,5203 ; Fibonacci numbers (or rabbit sequence) converted to decimal.
-seq $0,30101 ; a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+mov $1,2
+mov $3,1
+mov $4,2
+lpb $0
+  sub $0,1
+  mov $5,$1
+  mul $1,$3
+  mov $3,$4
+  mov $4,$2
+  mul $4,$1
+  add $4,$3
+  mov $2,$3
+  mov $3,$5
+lpe
+mov $0,$2
+div $0,2

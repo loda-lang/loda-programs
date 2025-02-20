@@ -1,23 +1,27 @@
 ; A329510: Expansion of (1 + x)*(1 + x + x^2)*(1 + x^2 - x^3) / (1 - x).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by BrandyNOW
 ; 1,3,6,8,8,7,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
-; Formula: a(n) = -c(n-1)+b(n-1)+truncate(a(n-1)/2)+3, a(2) = 6, a(1) = 3, a(0) = 1, b(n) = binomial(b(n-1)+truncate(a(n-1)/2)+1,11), b(2) = 0, b(1) = 0, b(0) = 0, c(n) = truncate((2*truncate(a(n-1)/2)+b(n-1)+c(n-1))/3)-2, c(2) = -2, c(1) = -2, c(0) = 0
+; Formula: a(n) = (max(9*binomial(n,5)+2*n-(21*binomial(n,6))^2-3*binomial(n,4)+floor(n/2)+6,1)+5)%10
 
-mov $4,1
-lpb $0
-  sub $0,1
-  div $4,2
-  add $2,1
-  add $2,$4
-  mov $1,$2
-  bin $2,11
-  sub $3,1
-  add $3,$4
-  add $4,1
-  add $4,$1
-  sub $4,$3
-  add $3,$1
-  div $3,3
-  sub $3,2
-lpe
-mov $0,$4
+mov $3,$0
+bin $3,4
+mul $3,3
+mov $4,$0
+bin $4,5
+mul $4,9
+mov $1,$0
+add $1,6
+mov $5,$0
+bin $5,6
+mul $5,21
+pow $5,2
+mov $2,$0
+div $2,2
+add $0,$1
+add $0,$2
+sub $0,$3
+add $0,$4
+sub $0,$5
+max $0,1
+add $0,5
+mod $0,10

@@ -1,25 +1,32 @@
 ; A234371: Bohr-Procopiu magneton.
-; Submitted by Heijo
+; Submitted by BrandyNOW
 ; 9,2,7,4,0,1,0,0
-; Formula: a(n) = -10*truncate((-10*truncate(d(n+24)/10)+d(n+24)+10)/10)-10*truncate(d(n+24)/10)+d(n+24)+10, b(n) = 2*b(n-1)+1, b(4) = 15, b(3) = 7, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = 2*c(n-1)+1, c(4) = 15, c(3) = 7, c(2) = 3, c(1) = 1, c(0) = 0, d(n) = truncate((binomial(7*n-2,b(n-1))*(-b(n-1)-1))/(b(n-1)+c(n-1)+1)), d(3) = -553, d(2) = -8, d(1) = -1, d(0) = 0
+; Formula: a(n) = -10*truncate((-10*truncate((truncate((7525*(n+11)^4+154*(n+19)^6-6*(n+23)^7-7302*n-18879*(n+23)^3-167946)/2520)-1)/10)+truncate((7525*(n+11)^4+154*(n+19)^6-6*(n+23)^7-7302*n-18879*(n+23)^3-167946)/2520)+9)/10)-10*truncate((truncate((7525*(n+11)^4+154*(n+19)^6-6*(n+23)^7-7302*n-18879*(n+23)^3-167946)/2520)-1)/10)+truncate((7525*(n+11)^4+154*(n+19)^6-6*(n+23)^7-7302*n-18879*(n+23)^3-167946)/2520)+9
 
 #offset -23
 
-add $0,24
-lpb $0
-  sub $0,1
-  add $4,5
-  mov $3,$4
-  bin $3,$1
-  add $1,$2
-  add $1,1
-  sub $2,$1
-  mul $3,$2
-  div $3,$1
-  add $4,2
-  mov $2,$1
-lpe
-mov $0,$3
+add $0,23
+mov $1,$0
+mov $3,$0
+mov $4,$0
+mov $2,$0
+mul $2,7302
+pow $0,7
+mul $0,-6
+sub $1,4
+pow $1,6
+mul $1,154
+sub $3,12
+pow $3,4
+mul $3,7525
+pow $4,3
+mul $4,18879
+add $0,$1
+add $0,$3
+sub $0,$4
+sub $0,$2
+div $0,2520
+sub $0,1
 mod $0,10
 add $0,10
 mod $0,10

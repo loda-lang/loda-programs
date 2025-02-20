@@ -1,24 +1,19 @@
 ; A335445: Maximum number of rooks within an n X n chessboard, where each rook has a path to an edge.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,4,8,13,21,28,37,50
+; Formula: a(n) = 2*n+truncate((sqrtint(2*(n-1)^2+4)*(n-1))/2)-1
+
+#offset 1
 
 mov $1,$0
-mov $3,11
-lpb $3
-  mov $4,$2
-  add $4,2
-  seq $4,277674 ; a(n) = d(n+1) - d(n), where d(k) is the number of digits in the base-k representation of k!.
-  sub $0,$4
-  add $2,1
-  mov $5,$0
-  max $5,0
-  equ $5,$0
-  mul $3,$5
-  sub $3,1
-lpe
-mov $0,$2
-add $0,1
-mul $0,$1
+sub $0,1
+add $1,$0
+mov $2,$0
+pow $2,2
+add $2,2
+mul $2,2
+nrt $2,2
+mul $0,$2
 div $0,2
-add $0,$1
-add $0,1
+add $1,$0
+mov $0,$1

@@ -1,15 +1,11 @@
 ; A088841: Numerator of the quotient sigma(7*n)/sigma(n).
-; Submitted by Lazarus-uk
+; Submitted by Jave808
 ; 8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,400,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8,8,8,8,57,8,8,8
-; Formula: a(n) = 49*truncate(gcd(343,n)/6)+8
+; Formula: a(n) = 49*truncate(gcd(n,343)/6)+8
 
 #offset 1
 
-mov $1,$0
-mov $2,343
-gcd $2,$0
-sub $0,1
-mov $0,$2
+gcd $0,343
 div $0,6
 mul $0,49
 add $0,8

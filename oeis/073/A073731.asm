@@ -5,7 +5,5 @@
 #offset 10
 
 mov $1,$0
-mov $2,$0
-dif $2,11
-sub $0,10
-mov $0,$2
+dif $1,11
+mov $0,$1

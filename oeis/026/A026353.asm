@@ -1,7 +1,7 @@
 ; A026353: a(n) = sum of the numbers between the two n's in A026350.
-; Submitted by Stony666
+; Submitted by Steve Dodd
 ; 0,4,8,17,29,38,55,67,89,114,131,161,194,216,254,279,322,368,398,449,482,538,597,635,699,766,809,881,927,1004,1084,1135,1220,1308,1364,1457,1516,1614,1715,1779,1885,1952,2063,2177,2249
-; Formula: a(n) = truncate((6*(n-1)*(2*truncate((55*n-55)/34)-n+2)-12)/12)
+; Formula: a(n) = truncate(((n-1)*(2*truncate((55*n-55)/34)-n+2))/2)-1
 
 #offset 2
 
@@ -13,6 +13,5 @@ mul $0,2
 add $0,1
 sub $0,$1
 mul $0,$1
-mul $0,6
-sub $0,12
-div $0,12
+div $0,2
+sub $0,1

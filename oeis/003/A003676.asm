@@ -1,33 +1,18 @@
 ; A003676: Decimal expansion of the Planck constant h (Joule * second).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 6,6,2,6,0,7,0,1,5
+; Formula: a(n) = -10*truncate((truncate((47*binomial(n+41,5)-1)/(33*n+1354))-3)/10)+truncate((47*binomial(n+41,5)-1)/(33*n+1354))-3
 
 #offset -33
 
-add $0,33
-mov $1,1
-mov $2,1
-mov $6,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  mul $2,$3
-  mul $1,$0
-  mul $1,3
-  add $1,$2
-  mov $2,$1
-  mov $4,$5
-  equ $4,0
-  add $5,$4
-  mul $6,$1
-  add $1,1
-  div $1,$5
-  div $2,$5
-  add $2,$1
-  mul $1,2
-  sub $3,1
-  add $5,1
-lpe
-mov $0,$6
-add $0,5
+add $0,41
+mov $1,$0
+bin $1,5
+mul $1,47
+sub $1,1
+mul $0,33
+add $0,1
+div $1,$0
+mov $0,$1
+sub $0,3
 mod $0,10

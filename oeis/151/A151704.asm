@@ -5,7 +5,7 @@
 mov $1,-1
 pow $1,$0
 equ $2,$0
-trn $0,1
+sub $0,1
 mov $5,$0
 mov $4,$0
 add $4,2

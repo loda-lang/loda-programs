@@ -1,18 +1,17 @@
 ; A295926: Number of (not necessarily maximal) cliques in the n-cube-connected cycle graph.
+; Submitted by BrandyNOW
 ; 69,161,401,961,2241,5121,11521,25601,56321,122881,266241,573441,1228801,2621441,5570561,11796481,24903681,52428801,110100481,230686721,482344961,1006632961,2097152001,4362076161,9059696641,18790481921,38923141121,80530636801,166429982721
+; Formula: a(n) = floor((2^n+(max(5*n-2,15)+1)*2^n)/2)+1
 
-mov $1,$0
-mov $2,$0
-add $2,11
-trn $0,1
-add $0,3
-add $1,3
-lpb $1
-  sub $1,1
-  trn $2,4
-  add $2,$0
-  add $0,1
-  add $0,$2
-  add $0,$1
-  mov $2,1
-lpe
+#offset 3
+
+mov $1,2
+pow $1,$0
+mul $0,5
+sub $0,2
+max $0,15
+add $0,1
+mul $0,$1
+add $0,$1
+div $0,2
+add $0,1

@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 0,0,0,12,0,0,0,2,0
 
+#offset 1
+
+sub $0,1
 mov $2,79503
 sub $2,$0
 sub $2,12

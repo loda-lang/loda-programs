@@ -1,23 +1,17 @@
 ; A355477: Maximum number of skew-tetrominoes that can be packed into an n X n square.
-; Submitted by Landjunge
+; Submitted by BrandyNOW
 ; 0,0,1,3,4,8,9,14,16,23,25,33,36,46,49,60,64,77,81,96,100
+; Formula: a(n) = truncate((floor((n*(n%2+n))/2)+truncate((sqrtint(n)*(n%2))/2))/2)
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  add $4,$0
-  mov $2,$1
-  mov $1,$3
-  add $1,2
-  seq $1,2407 ; Cuban primes: primes which are the difference of two consecutive cubes.
-  add $3,1
-  gcd $5,$1
-  add $5,2
-  div $5,5
-  add $1,$5
-  mod $1,2
-  add $1,$4
-lpe
+mov $1,$0
+mov $2,$0
+mod $0,2
+add $1,$0
+mul $1,$2
+div $1,2
+nrt $2,2
+mul $0,$2
+div $0,2
+add $1,$0
 mov $0,$1
-sub $0,1
+div $0,2

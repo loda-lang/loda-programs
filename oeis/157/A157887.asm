@@ -1,16 +1,20 @@
 ; A157887: The domatic number of the n-cube.
-; Submitted by zombie67 [MM]
+; Submitted by BrandyNOW
 ; 1,2,2,4,4,4,5,8,8,8
+; Formula: a(n) = floor(((max(floor((n+1)/4)+2,n-24)+8)*(22*floor((n+1)/4)+2*n+22))/120)
 
+mov $1,$0
+sub $1,24
 add $0,1
-mov $1,4
+div $0,4
+add $0,2
 mov $2,$0
-div $2,2
-lpb $2
-  div $2,2
-  mul $1,2
-lpe
-add $0,$1
-add $0,7
-div $0,5
-sub $0,1
+mul $2,11
+add $2,2
+max $0,$1
+add $1,$2
+mul $1,2
+add $1,22
+add $0,8
+mul $0,$1
+div $0,120

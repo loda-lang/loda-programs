@@ -1,27 +1,20 @@
 ; A018255: Divisors of 30.
-; Submitted by Ralfy
+; Submitted by BrandyNOW
 ; 1,2,3,5,6,10,15,30
+; Formula: a(n) = truncate(((max(n+7,n^2-n-26)+8)*(2*n^2-2*n-30))/120)+5
 
 #offset 1
 
-sub $0,1
-mov $1,-1
-mov $2,$0
-add $2,9
-pow $2,2
-lpb $2
-  add $1,1
-  mov $3,$1
-  seq $3,321029 ; Number of integers x such that 1 <= x <= n and gcd(x,n) = gcd(x+4,n) = gcd(x+6,n) = gcd(x+10,n) = gcd(x+12,n) = 1.
-  add $3,1
-  dif $3,2
-  equ $3,1
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,8
-lpe
-mov $0,$1
-add $0,2
+mov $1,$0
+pow $1,2
+sub $1,25
+add $0,1
+sub $1,$0
+add $0,6
+max $0,$1
+mul $1,2
+add $1,22
+add $0,8
+mul $0,$1
+div $0,120
+add $0,5

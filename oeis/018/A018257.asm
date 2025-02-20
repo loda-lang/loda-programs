@@ -1,25 +1,17 @@
 ; A018257: Divisors of 40.
-; Submitted by Stony666
+; Submitted by BrandyNOW
 ; 1,2,4,5,8,10,20,40
+; Formula: a(n) = floor(((max(n-1,(n-1)^2-25)+18)*((n-1)^2+110))/120)-15
 
 #offset 1
 
-mov $2,1
 sub $0,1
-lpb $0
-  div $1,16
-  mul $1,2
-  mov $3,$2
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    trn $4,$3
-    equ $4,0
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mov $1,165
-lpe
-mov $0,$2
+mov $1,$0
+pow $1,2
+sub $1,25
+max $0,$1
+add $1,135
+add $0,18
+mul $0,$1
+div $0,120
+sub $0,15

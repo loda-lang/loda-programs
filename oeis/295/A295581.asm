@@ -1,19 +1,15 @@
 ; A295581: Maximal value of a length-n "minimal cyclically good sequence" in the sense of Cavenagh et al. (2006).
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 3,5,6,8,9,11,13,15,18,21,23,26,29
+; Formula: a(n) = floor(((n+4)*(11*n+18))/120)+1
 
-mov $3,$0
-trn $0,6
-lpb $3
-  sub $3,1
-  add $2,5
-  mov $1,$2
-  div $1,3
-  add $1,$0
-  mov $4,$1
-  div $4,2
-  cmp $4,0
-lpe
-add $1,$4
-mov $0,$1
-add $0,3
+#offset 3
+
+mov $2,$0
+mul $2,11
+mov $1,$2
+add $1,18
+add $0,4
+mul $0,$1
+div $0,120
+add $0,1

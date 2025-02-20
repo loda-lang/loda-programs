@@ -10,6 +10,5 @@ add $1,4
 seq $1,171581 ; The natural numbers without primes > 3.
 sub $1,1
 seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-add $0,3
 mov $0,$1
 add $0,1

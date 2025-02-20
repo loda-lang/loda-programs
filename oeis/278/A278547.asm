@@ -6,7 +6,6 @@
 
 mov $4,$0
 add $4,1
-sub $0,1
 mod $0,2
 div $0,2
 add $0,13

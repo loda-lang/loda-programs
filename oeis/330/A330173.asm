@@ -1,17 +1,16 @@
 ; A330173: a(n) = n + floor(ns/r) + floor(nt/r), where r = sqrt(2), s = sqrt(2) + 1, t = sqrt(2) + 2.
-; Submitted by shiva
+; Submitted by BrandyNOW
 ; 4,9,15,19,25,30,34,40,45,51,55,60,66,70,76,81,87,91,96,102,106,112,117,121,127,132,138,142,148,153,157,163,168,174,178,183,189,193,199,204,208,214,219,225,229,235,240,244,250,255,261,265,270,276,280,286
+; Formula: a(n) = 2*n+sqrtint(2*n^2)+truncate((2*n+sqrtint(2*n^2))/2)
 
-mov $1,1
+#offset 1
+
+mov $1,$0
+mul $1,$0
+mul $0,2
+mul $1,2
+nrt $1,2
 add $1,$0
-mov $2,$1
-pow $2,2
-mul $2,2
-mov $3,$2
-nrt $3,2
-mul $1,6
-add $1,$3
 mov $0,$1
 div $0,2
-add $3,$0
-mov $0,$3
+add $0,$1

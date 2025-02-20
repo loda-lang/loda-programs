@@ -11,6 +11,7 @@ lpb $5
   mov $4,$0
   max $4,0
   seq $4,101495 ; Column 1 of triangle A101494.
+  mul $0,$5
   mov $2,$5
   mul $2,$4
   add $1,$2

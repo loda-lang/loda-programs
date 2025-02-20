@@ -1,23 +1,20 @@
 ; A194098: Decimal expansion of sum of reciprocals of cousin primes.
-; Submitted by Stony666
+; Submitted by BrandyNOW
 ; 1,1,9,7,0,4,4,9
+; Formula: a(n) = -10*truncate((truncate((floor(binomial(5*n+15,9)/2)*floor((2^(n+2))/30)-1)/16)+1)/10)+truncate((floor(binomial(5*n+15,9)/2)*floor((2^(n+2))/30)-1)/16)+1
 
 #offset 1
 
+add $0,2
+mov $1,2
+pow $1,$0
+div $1,30
+add $0,1
+mul $0,5
+bin $0,9
+div $0,2
+mul $0,$1
 sub $0,1
-mov $1,-1
-mov $2,-9
-mov $3,1
-mov $4,$0
-lpb $4
-  mul $2,$4
-  sub $4,1
-  add $1,$5
-  mul $2,2
-  div $2,$1
-  mul $3,3
-  add $3,$2
-  add $5,2
-lpe
-mov $0,$3
+div $0,16
+add $0,1
 mod $0,10

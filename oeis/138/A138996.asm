@@ -1,26 +1,21 @@
 ; A138996: First differences of Frobenius numbers for 5 successive numbers A138985.
+; Submitted by BrandyNOW
 ; 1,1,1,7,2,2,2,12,3,3,3,17,4,4,4,22,5,5,5,27,6,6,6,32,7,7,7,37,8,8,8,42,9,9,9,47,10,10,10,52,11,11,11,57,12,12,12,62,13,13,13,67,14,14,14,72,15,15,15,77,16,16,16,82,17,17,17,87,18,18,18,92,19,19,19,97,20,20,20,102
 
 #offset 1
 
-sub $0,1
+add $0,4
 mov $1,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$1
-  add $0,$4
-  mov $2,$0
-  add $0,2
-  div $2,4
-  mul $2,$0
-  mov $0,$2
-  mov $3,$4
-  mul $3,$2
-  add $5,$3
-lpe
-min $1,1
-mul $1,$0
-mov $0,$5
-sub $0,$1
-add $0,1
+div $1,2
+sub $1,1
+mul $1,2
+mov $2,$0
+mod $2,4
+equ $2,0
+bin $1,$2
+mov $3,$1
+mov $1,$0
+div $1,4
+add $1,$3
+mov $0,$1
+sub $0,1

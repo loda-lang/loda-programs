@@ -1,17 +1,14 @@
 ; A118406: Unsigned row sums of triangle A118404.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,2,2,4,4,8,14,28,52,104,206,412,820,1640,3278,6556,13108,26216,52430,104860,209716,419432,838862,1677724,3355444,6710888,13421774,26843548,53687092,107374184,214748366,429496732,858993460,1717986920,3435973838
-; Formula: a(n) = 6*truncate(a(n-1)/6)+2*a(n-2), a(1) = 2, a(0) = 1
+; Formula: a(n) = truncate((3*floor((2^(n+3))/30)+3*gcd(n+3,2))/4)+1
 
+add $0,3
 mov $1,2
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $2,$3
-  div $3,6
-  mul $3,6
-  add $3,$1
-  mov $1,$2
-  mul $1,2
-lpe
-mov $0,$3
+pow $1,$0
+div $1,30
+gcd $0,2
+add $0,$1
+mul $0,3
+div $0,4
+add $0,1

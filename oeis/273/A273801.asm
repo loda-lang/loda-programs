@@ -5,7 +5,6 @@
 #offset 1
 
 add $0,1
-mov $3,0
 mov $4,$0
 pow $4,5
 lpb $4

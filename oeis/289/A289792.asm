@@ -1,20 +1,17 @@
 ; A289792: Number of 4-cycles in the n-tetrahedral graph.
-; Submitted by mmonnin
+; Submitted by BrandyNOW
 ; 0,0,0,0,90,540,1995,5775,14280,31500,63630,119790,212850,360360,585585,918645,1397760,2070600,2995740,4244220,5901210,8067780,10862775,14424795,18914280,24515700,31439850,39926250,50245650,62702640,77638365,95433345,116510400
+; Formula: a(n) = 105*binomial(n-1,6)+90*binomial(n,5)
 
-mov $4,$0
-mov $0,7
-lpb $0
-  sub $0,1
-  mov $2,12
-  bin $2,$0
-  mov $3,$4
-  bin $3,$0
-  mul $3,$2
-  gcd $0,18
-  add $1,$3
-  add $4,1
-lpe
+#offset 1
+
+mov $2,$0
+bin $2,5
+mul $2,18
+sub $0,1
+mov $1,$0
+bin $1,6
+mul $1,21
+add $1,$2
 mov $0,$1
-div $0,132
-mul $0,15
+mul $0,5

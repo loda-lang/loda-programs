@@ -11,12 +11,11 @@ lpb $2
   seq $3,113062 ; Expansion of theta series of hexagonal net with respect to a node.
   mov $5,$3
   add $1,1
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
 lpe
 mov $0,$5

@@ -1,13 +1,15 @@
 ; A339899: a(n) = gcd(A019565(2n)-1, A000265(phi(A019565(2n)))).
-; Submitted by bashno
+; Submitted by BrandyNOW
 ; 1,1,1,1,3,1,1,1,5,1,1,1,1,5,3,1,3,1,1,1,9,1,1,1,1,1,3,1,5,1,9,1,1,1,1,1,1,1,3,1,1,5,1,1,3,1,1,1,1,1,3,1,1,1,3,1,15,1,1,1,3,5,1,1,9,1,1,1,3,1,1,1,1,1,9,1,1,1,3,1
-; Formula: a(n) = gcd(A339971(n),A005940(A048678(2*n)+1)-1)
+; Formula: a(n) = gcd(A181819(A108951(A057335(2*n)))-1,A000265(A000010(A181819(A108951(A057335(2*n))))-1))
 
+mul $0,2
+seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 mov $1,$0
-mul $1,2
-seq $1,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
-add $1,1
-seq $1,5940 ; The Doudna sequence: write n-1 in binary; power of prime(k) in a(n) is # of 1's that are followed by k-1 0's.
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $1,1
-seq $0,339971 ; Odd part of A339821(n).
+seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+sub $0,1
 gcd $0,$1

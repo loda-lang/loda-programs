@@ -7,6 +7,5 @@
 
 mov $1,$0
 seq $1,141285 ; Largest part of the n-th partition of j in the list of colexicographically ordered partitions of j, if 1 <= n <= A000041(j).
-sub $0,1
 mov $0,$1
 sub $0,1

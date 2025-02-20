@@ -1,17 +1,12 @@
 ; A083456: Smallest nontrivial k such that k^n + 1 is a palindrome (k>1 for n>1).
-; Submitted by omegaintellisys
+; Submitted by BrandyNOW
 ; 1,2,2,5,2,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
 
 #offset 1
 
 sub $0,1
-min $0,5
-lpb $0
-  dif $0,2
-lpe
-mov $1,1
-add $1,$0
-div $1,2
-pow $1,2
-add $1,1
-mov $0,$1
+pow $0,2
+min $0,19
+dgs $0,2
+pow $0,2
+add $0,1

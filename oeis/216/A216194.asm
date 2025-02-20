@@ -1,5 +1,5 @@
 ; A216194: a(n) = Smallest b for which the base b representation of n contains at least one 2 (or 0 if no such base exists).
-; Submitted by Ralfy
+; Submitted by Science United
 ; 0,3,0,0,3,3,3,3,4,4,3,5,5,3,3,3,3,3,3,3,3,3,3,3,3,3,4,10,3,4,11,3,3,3,3,4,4,3,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
 #offset 1
@@ -14,8 +14,7 @@ lpb $3
     lpb $0
       mov $6,$0
       mod $6,$2
-      sub $6,2
-      equ $6,0
+      equ $6,2
       div $0,$2
       sub $5,$6
     lpe

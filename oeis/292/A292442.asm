@@ -6,7 +6,7 @@
 mul $0,2
 trn $0,1
 mov $1,$0
-seq $1,283557 ; The number of positive integer sequences of length n with no duplicate substrings and a minimal product (i.e., the product of the sequence is A282164(n)).
+seq $1,283557 ; The number of positive integer sequences of length n with no duplicate substrings of length greater than 1 and a minimal product (= A282164(n)).
 add $1,1
 add $0,1
 seq $0,55772 ; Square root of largest square dividing n!.

@@ -1,9 +1,10 @@
 ; A368476: Decimal expansion of 109/65, being the highest possible win/loss points ratio in a completed 3-set tennis match, with 10-point final tie-break, which the player loses.
 ; Submitted by kotenok2000
 ; 1,6,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0,7,6,9,2,3,0
-; Formula: a(n) = -10*truncate(truncate(b(4*n+4)/truncate((2*b(4*n+4)-3*d(4*n+4))/(10^(n+1))))/10)+truncate(b(4*n+4)/truncate((2*b(4*n+4)-3*d(4*n+4))/(10^(n+1)))), b(n) = 4*b(n-1), b(3) = 64, b(2) = 16, b(1) = 4, b(0) = 1, c(n) = 4*b(n-1)+2*c(n-1), c(3) = 112, c(2) = 24, c(1) = 4, c(0) = 0, d(n) = -c(n-1)-truncate(d(n-2)/9)-2*b(n-1)+d(n-1), d(3) = -70, d(2) = -14, d(1) = -2, d(0) = 0
+; Formula: a(n) = -10*truncate(truncate(b(4*n)/truncate((2*b(4*n)-3*d(4*n))/(10^n)))/10)+truncate(b(4*n)/truncate((2*b(4*n)-3*d(4*n))/(10^n))), b(n) = 4*b(n-1), b(3) = 64, b(2) = 16, b(1) = 4, b(0) = 1, c(n) = 4*b(n-1)+2*c(n-1), c(3) = 112, c(2) = 24, c(1) = 4, c(0) = 0, d(n) = -c(n-1)-truncate(d(n-2)/9)-2*b(n-1)+d(n-1), d(3) = -70, d(2) = -14, d(1) = -2, d(0) = 0
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $3,$0
 mul $3,4

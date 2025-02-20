@@ -1,16 +1,14 @@
 ; A189176: Row sums of the Riordan matrix (1+x/sqrt(1-4*x),(1-sqrt(1-4*x))/2) (A189175).
-; Submitted by Penguin
+; Submitted by BrandyNOW
 ; 1,2,5,15,49,168,594,2145,7865,29172,109174,411502,1560090,5943200,22732740,87253605,335897865,1296447900,5015206350,19439895090,75487384830,293595204240,1143532045500,4459774977450,17413705988874,68067249620328,266326619546204
-; Formula: a(n) = floor((floor(binomial(2*n,n)/(n+1))*(n+3))/2)
+; Formula: a(n) = floor(binomial(2*n,n)/(n+1))+floor(binomial(2*n,n)/2)
 
-mov $1,$0
 mov $2,$0
-mov $3,$0
-add $3,1
 mul $0,2
 bin $0,$2
-div $0,$3
-add $1,3
-mul $1,$0
+mov $1,$0
+div $1,2
+add $2,1
+div $0,$2
+add $1,$0
 mov $0,$1
-div $0,2

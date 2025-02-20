@@ -6,27 +6,21 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
-mul $2,243
+add $2,8
+pow $2,2
 lpb $2
-  mov $5,0
+  add $1,1
   mov $3,$1
-  lpb $3
-    mov $6,$5
-    mov $5,$3
-    mod $5,10
-    add $5,$6
-    div $3,10
-  lpe
-  mov $3,$5
-  sub $3,3
-  equ $3,8
+  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  sub $3,13
+  mul $3,-1
+  equ $3,2
   sub $0,$3
   mov $4,$0
   max $4,0
   equ $4,$0
-  add $1,$4
   mul $2,$4
   sub $2,1
 lpe
 mov $0,$1
+add $0,1

@@ -1,11 +1,24 @@
 ; A379970: a(n) = 1 if n is twice its squarefree kernel (A007949), otherwise 0.
-; Submitted by Rutor
+; Submitted by shiva
 ; 0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
-; Formula: a(n) = -10*truncate(A001811(gcd(n+1,A345305(n)))/10)+A001811(gcd(n+1,A345305(n)))
+; Formula: a(n) = binomial(1,truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)*(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)
 
-mov $1,$0
-seq $1,345305 ; a(n) = n * Sum_{p|n, p prime} gcd(p,n/p) / p.
+mov $4,$0
+add $4,1
 add $0,1
-gcd $0,$1
-seq $0,1811 ; Coefficients of Laguerre polynomials.
-mod $0,10
+mov $2,$0
+seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+sub $0,1
+mov $3,$0
+div $3,$2
+add $0,$3
+add $0,2
+mov $5,$0
+gcd $5,$4
+mov $0,$4
+div $0,$5
+sub $0,1
+mov $1,1
+bin $1,$0
+mul $1,$0
+mov $0,$1

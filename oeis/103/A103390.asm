@@ -1,17 +1,22 @@
 ; A103390: Natural numbers but with nonprimes squared.
-; Submitted by Kotenok2000
+; Submitted by Joe
 ; 0,1,2,3,16,5,36,7,64,81,100,11,144,13,196,225,256,17,324,19,400,441,484,23,576,625,676,729,784,29,900,31,1024,1089,1156,1225,1296,37,1444,1521,1600,41,1764,43,1936,2025,2116,47,2304,2401,2500,2601,2704,53,2916,3025,3136,3249,3364,59,3600,61,3844,3969,4096,4225,4356,67,4624,4761,4900,71,5184,73,5476,5625,5776,5929,6084,79
-; Formula: a(n) = truncate(((n-1)^2)/(A010051(max(n-2,0)+1)*max(n-2,0)+1))
+; Formula: a(n) = truncate((n-1)/gcd(n-1,b(max(n-2,0))+1))*(n-1), b(n) = n*b(n-1), b(0) = 1
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-trn $1,1
-mov $2,$1
-add $1,1
-seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $2,$1
-add $2,1
-pow $0,2
-div $0,$2
+mov $2,$0
+mov $3,1
+mov $4,$0
+sub $0,1
+lpb $0
+  mul $3,$0
+  sub $0,1
+lpe
+add $3,1
+gcd $2,$3
+div $1,$2
+mov $0,$1
+mul $0,$4

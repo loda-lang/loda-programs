@@ -7,4 +7,3 @@ mov $1,7
 pow $1,$0
 mov $0,$1
 seq $0,91732 ; Iphi(n): infinitary analog of Euler's phi function.
-sub $1,1

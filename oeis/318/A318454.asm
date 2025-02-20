@@ -1,7 +1,13 @@
 ; A318454: Denominators of the sequence whose Dirichlet convolution with itself yields A001227, number of odd divisors of n.
+; Submitted by BrandyNOW
 ; 1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,128,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,256,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,128,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,1024,1,2,1,8,1,2,1,16,1,2,1,8,1,2,1,128
-; Formula: a(n) = A046161(A007814(n+1))
 
 add $0,1
-seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
-seq $0,46161 ; a(n) = denominator of binomial(2n,n)/4^n.
+lex $0,2
+mov $1,$0
+add $1,$0
+dgs $0,2
+sub $1,$0
+mov $2,2
+pow $2,$1
+mov $0,$2

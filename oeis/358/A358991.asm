@@ -6,7 +6,7 @@ seq $0,358990 ; a(n) is the product of the first n odd numbers not divisible by 
 lpb $0
   mov $2,$0
   mod $2,10
-  cmp $2,0
+  equ $2,0
   div $0,10
   add $1,$2
 lpe

@@ -1,16 +1,12 @@
 ; A267529: Total number of ON (black) cells after n iterations of the "Rule 141" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,2,4,7,12,18,26,35,46,58,72,87,104,122,142,163,186,210,236,263,292,322,354,387,422,458,496,535,576,618,662,707,754,802,852,903,956,1010,1066,1123,1182,1242,1304,1367,1432,1498,1566,1635,1706,1778,1852,1927,2004,2082,2162,2243,2326,2410,2496,2583,2672,2762,2854,2947,3042,3138,3236,3335,3436,3538,3642,3747,3854,3962,4072,4183,4296,4410,4526,4643
-; Formula: a(n) = b(max(n-1,0))+n+1, b(n) = c(n-1)+truncate(b(n-1)/3)+n, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = c(n-1)+n, c(2) = 3, c(1) = 1, c(0) = 0
+; Formula: a(n) = binomial(max(n-1,0),2)+floor(((n+2)^2)/4)
 
+add $0,2
 mov $1,$0
-sub $1,1
-lpb $1
-  sub $1,1
-  add $3,1
-  add $4,$3
-  div $2,3
-  add $2,$4
-lpe
-add $0,$2
-add $0,1
+mul $1,$0
+div $1,4
+trn $0,3
+bin $0,2
+add $0,$1
