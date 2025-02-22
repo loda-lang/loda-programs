@@ -1,0 +1,10 @@
+; A326995: a(n) = A002105(n+1) - A005046(n), reduced tangent numbers minus the number of partitions of a 2*n-set into even blocks.
+; Submitted by BrandyNOW
+; 0,0,0,3,117,4500,199155,10499643,663488532,50115742365,4497657826905,476074241776188,58963860817626567,8475738174076417335,1402598717609785850700,265126817539686778513113,56822367893441673215117997,13712983199783483607459996660,3702793973661590950848375537915
+; Formula: a(n) = -A005046(n)+A002105(n+1)
+
+mov $1,$0
+seq $1,5046 ; Number of partitions of a 2n-set into even blocks.
+add $0,1
+seq $0,2105 ; Reduced tangent numbers: 2^n*(2^{2n} - 1)*|B_{2n}|/n, where B_n = Bernoulli numbers.
+sub $0,$1
