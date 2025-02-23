@@ -11,6 +11,5 @@ seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002
 mov $1,$0
 seq $1,40 ; The prime numbers.
 add $1,$2
-sub $0,1
 mov $0,$1
 div $0,2

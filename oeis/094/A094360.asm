@@ -1,29 +1,12 @@
 ; A094360: Pair reversal of Jacobsthal-Lucas numbers.
+; Submitted by Science United
 ; 1,2,7,5,31,17,127,65,511,257,2047,1025,8191,4097,32767,16385,131071,65537,524287,262145,2097151,1048577,8388607,4194305,33554431,16777217,134217727,67108865,536870911,268435457,2147483647,1073741825
+; Formula: a(n) = -(-1)^n+truncate(2^((-1)^n+n))
 
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $5,1
-  mov $0,$6
-  add $0,$4
-  sub $0,1
-  mov $2,$0
-  lpb $2
-    sub $2,1
-    gcd $0,2
-    mul $5,2
-    add $5,$0
-  lpe
-  mov $3,$4
-  lpb $3
-    sub $3,1
-    mov $1,$5
-  lpe
-lpe
-lpb $6
-  mov $6,0
-  sub $1,$5
-lpe
-mov $0,$1
+mov $1,-1
+pow $1,$0
+add $0,$1
+mov $2,2
+pow $2,$0
+sub $2,$1
+mov $0,$2

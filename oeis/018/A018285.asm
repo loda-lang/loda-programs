@@ -10,7 +10,5 @@ mov $1,2
 pow $1,$0
 div $1,30
 mul $1,3
-add $1,1
 gcd $0,2
-sub $0,1
 add $0,$1

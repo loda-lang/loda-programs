@@ -1,17 +1,14 @@
 ; A127721: Floor of square root of sum of squares of n consecutive numbers.
-; Submitted by Vato
+; Submitted by joenoroian
 ; 1,2,3,5,7,9,11,14,16,19,22,25,28,31,35,38,42,45,49,53,57,61,65,70,74,78,83,87,92,97,102,106,111,116,122,127,132,137,143,148,154,159,165,171,177,183,188,194,201,207,213,219,225,232,238,245,251,258,264,271,278,285,292,299,306,313,320,327,334,341,349,356,363,371,378,386,393,401,409,416
+; Formula: a(n) = truncate(sqrtint(binomial(2*n+2,3))/2)
 
 #offset 1
 
-add $0,1
-mul $0,2
-bin $0,3
-mov $2,$0
-div $2,4
-lpb $2
-  sub $2,$1
-  add $1,1
-  sub $2,$1
-lpe
+mov $1,$0
+add $1,1
+mul $1,2
+bin $1,3
+nrt $1,2
+div $1,2
 mov $0,$1

@@ -1,19 +1,17 @@
 ; A085090: If 2n-1 is prime then a(n) = 2n-1, otherwise a(n) = 0.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,3,5,7,0,11,13,0,17,19,0,23,0,0,29,31,0,0,37,0,41,43,0,47,0,0,53,0,0,59,61,0,0,67,0,71,73,0,0,79,0,83,0,0,89,0,0,0,97,0,101,103,0,107,109,0,113,0,0,0,0,0,0,127,0,131,0,0,137,139,0,0,0,0,149,151,0,0,157,0
 
 #offset 1
 
 sub $0,1
-mul $0,2
 mov $1,$0
-seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+add $0,1
+add $1,$0
 mov $2,$0
-mul $0,$1
-add $1,$2
-mul $1,$0
-mov $3,$0
-equ $3,0
-add $0,$3
-div $1,$0
+add $2,$1
+bin $2,$0
+mod $2,$1
+equ $2,1
+mul $1,$2
 mov $0,$1

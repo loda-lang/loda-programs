@@ -1,21 +1,19 @@
 ; A115283: Diagonal sums of correlation triangle for 3-2*0^n.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,3,6,13,18,27,37,48,60,76,90,108,127,147,168,193,216,243,271,300,330,364,396,432,469,507,546,589,630,675,721,768,816,868,918,972,1027,1083,1140,1201,1260,1323,1387,1452,1518,1588,1656,1728,1801
-; Formula: a(n) = b(n+3), b(n) = b(n-3)+floor((6*floor(max(2*n-7,0)/4)+3*max(2*n-7,0)+3)/2), b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = truncate((3*floor(((n+1)^2)/2)+gcd(n,3)+3)/2)-2
 
-add $0,3
-lpb $0
-  sub $0,3
-  mov $2,$0
-  mul $2,2
-  trn $2,1
-  mov $3,$2
-  div $3,4
-  mul $3,2
-  add $2,$3
-  mul $2,3
-  add $2,3
-  div $2,2
-  add $1,$2
-lpe
+add $0,1
+mov $2,$0
+pow $2,2
+div $2,2
+add $2,1
+mul $2,3
+mov $3,$0
+sub $3,1
+mov $1,$3
+gcd $1,3
+add $1,$2
 mov $0,$1
+div $0,2
+sub $0,2

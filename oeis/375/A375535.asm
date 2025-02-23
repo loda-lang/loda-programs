@@ -5,8 +5,6 @@
 mov $1,$0
 add $1,1
 lpb $1
-  trn $1,1
-  add $1,1
   seq $1,8472 ; Sum of the distinct primes dividing n.
 lpe
 sub $0,$1

@@ -1,21 +1,23 @@
 ; A180491: Product of remainders of n mod k, for k = 2,3,4,...,n-1.
-; Submitted by Jamie Morken(l1)
+; Submitted by BrandyNOW
 ; 1,1,1,0,2,0,6,0,0,0,720,0,2160,0,0,0,2419200,0,65318400,0,0,0,754427520000,0,0,0,0,0,32953394073600000,0,311409573995520000,0,0,0,0,0,37269497815783833600000,0,0,0,7890485108998805913600000000,0
 
 #offset 1
 
-mov $1,1
-mov $2,2
-mov $3,$0
-lpb $3
-  mov $5,$0
-  lpb $5
-    mov $5,$2
-    mov $4,$0
-    mod $4,$2
-    mul $1,$4
+lpb $0
+  gcd $2,2
+  add $4,1
+  mov $3,$0
+  pow $3,2
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    add $2,1
+    sub $3,$1
+    mul $4,$1
   lpe
-  add $2,1
-  sub $3,1
+  div $0,$2
+  pow $0,2
+  mov $2,1
 lpe
-mov $0,$1
+mov $0,$4

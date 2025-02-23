@@ -1,15 +1,23 @@
 ; A095208: n if n is composite else 10*n.
+; Submitted by BrandyNOW
 ; 10,20,30,4,50,6,70,8,9,10,110,12,130,14,15,16,170,18,190,20,21,22,230,24,25,26,27,28,290,30,310,32,33,34,35,36,370,38,39,40,410,42,430,44,45,46,470,48,49,50,51,52,530,54,55,56,57
 
 #offset 1
 
-mov $1,$0
-sub $0,1
-mov $2,$0
-equ $2,0
-add $0,$2
-add $0,1
-seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $0,$1
-mul $0,9
-add $0,$1
+mov $4,$0
+lpb $0
+  gcd $2,2
+  mul $4,10
+  mov $3,$0
+  div $3,3
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    add $2,1
+    sub $3,$1
+  lpe
+  div $0,$2
+  pow $0,2
+  mov $2,1
+lpe
+mov $0,$4

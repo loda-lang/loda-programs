@@ -13,7 +13,6 @@ lpb $2
   add $3,1
   seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
-  sub $3,1
   seq $3,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
   sub $3,2
   bin $3,2

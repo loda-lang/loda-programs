@@ -1,16 +1,12 @@
 ; A299285: Coordination sequence for "tea" 3D uniform tiling.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,10,33,73,128,199,285,388,506,640,789,955,1136,1333,1545,1774,2018,2278,2553,2845,3152,3475,3813,4168,4538,4924,5325,5743,6176,6625,7089,7570,8066,8578,9105,9649,10208,10783,11373,11980,12602,13240,13893
+; Formula: a(n) = -0^(n^2)+floor((126*n^2+68)/16)-2
 
-mov $1,$0
-mul $1,3
-mul $0,21
-lpb $0
-  mul $1,$0
-  sub $1,6
-  div $1,8
-  add $1,2
-  gcd $0,3
-lpe
-mov $0,$1
-add $0,1
+pow $0,2
+pow $1,$0
+mul $0,126
+add $0,68
+div $0,16
+sub $0,2
+sub $0,$1

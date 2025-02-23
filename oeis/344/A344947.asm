@@ -6,7 +6,7 @@ mov $2,1
 mul $0,2
 lpb $0
   mov $1,$0
-  dis $1,2
+  dgs $1,2
   div $0,2
   mul $2,$1
 lpe

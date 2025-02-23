@@ -1,21 +1,17 @@
 ; A026275: Sum of numbers between the two n's in A026272.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 2,4,11,21,28,43,53,73,96,111,139,170,190,226,249,290,334,362,411,442,496,553,589,651,716,757,827,871,946,1024,1073,1156,1242,1296,1387,1444,1540,1639,1701,1805,1870,1979,2091,2161,2278
-; Formula: a(n) = -2*n+truncate((6*(n+1)*(2*floor((55*n+55)/34)-n)-12)/12)
+; Formula: a(n) = truncate(((n+1)*(2*floor((55*n+55)/34)-n-4))/2)+1
 
 #offset 1
 
-mov $1,$0
-mul $1,2
 add $0,1
-mov $2,$0
+mov $1,$0
 mul $0,55
 div $0,34
 mul $0,2
-add $0,1
-sub $0,$2
-mul $0,$2
-mul $0,6
-sub $0,12
-div $0,12
+sub $0,3
 sub $0,$1
+mul $0,$1
+div $0,2
+add $0,1

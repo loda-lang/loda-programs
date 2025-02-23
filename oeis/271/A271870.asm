@@ -1,20 +1,14 @@
 ; A271870: Convolution of nonzero hexagonal numbers (A000384) with themselves.
-; Submitted by ATS
+; Submitted by BrandyNOW
 ; 1,12,66,236,651,1512,3108,5832,10197,16852,26598,40404,59423,85008,118728,162384,218025,287964,374794,481404,610995,767096,953580,1174680,1435005,1739556,2093742,2503396,2974791,3514656,4130192,4829088,5619537,6510252,7510482,8630028
-; Formula: a(n) = a(n-1)+truncate((-binomial(-2*n-1,3)*(n+1)+n+1)/2), a(0) = 1
+; Formula: a(n) = floor((binomial(2*n+5,5)+binomial(n+2,2))/2)
 
 mov $1,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  mov $3,1
-  sub $3,$2
-  sub $3,$2
-  bin $3,3
-  mul $3,$2
-  sub $2,$3
-  div $2,2
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+add $1,$0
+mul $0,2
+add $0,5
+bin $0,5
+add $1,1
+bin $1,2
+add $0,$1
+div $0,2

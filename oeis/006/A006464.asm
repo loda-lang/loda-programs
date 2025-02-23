@@ -1,29 +1,27 @@
 ; A006464: Continued fraction for Sum_{n>=0} 1/4^(2^n).
-; Submitted by Simon Strandgaard
+; Submitted by Aurimas
 ; 0,3,6,4,4,2,4,6,4,2,6,4,2,4,4,6,4,2,6,4,4,2,4,6,2,4,6,4,2,4,4,6,4,2,6,4,4,2,4,6,4,2,6,4,2,4,4,6,2,4,6,4,4,2,4,6,2,4,6,4,2,4,4,6,4,2,6,4,4,2,4,6,4,2,6,4,2,4,4,6
 
+mov $2,$0
+trn $2,2
 mov $1,$0
-trn $0,2
-sub $1,$0
-mov $2,1
-add $0,1
-lpb $0
-  sub $0,1
-  mov $3,$5
-  bin $3,$0
-  mov $5,$2
-  mul $5,2
-  mov $4,$5
-  sub $4,$0
-  bin $4,$2
-  add $2,1
-  mul $4,$3
-  div $4,$2
-  mod $4,2
-  div $5,2
-  div $6,-1
-  add $6,$4
+sub $1,$2
+add $2,2
+mov $3,$2
+bin $2,2
+lpb $2
+  dif $2,2
 lpe
-mov $0,$6
-add $0,2
-mul $0,$1
+div $2,2
+mod $2,2
+equ $2,0
+div $3,2
+mod $3,2
+mul $3,$2
+mul $3,2
+sub $2,$3
+sub $4,$2
+mov $2,$4
+add $2,2
+mul $2,$1
+mov $0,$2

@@ -1,19 +1,23 @@
 ; A027556: Unbalanced strings of length n.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,0,0,2,6,18,42,98,210,450,930,1922,3906,7938,16002,32258,64770,130050,260610,522242,1045506,2093058,4188162,8380418,16764930,33538050,67084290,134184962,268386306,536805378,1073643522
-; Formula: a(n) = 2*b(n), b(n) = 2*b(n-2)+c(n-2)-1, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1), c(2) = 4, c(1) = 2, c(0) = 1
+; Formula: a(n) = 2*truncate((2^n-2^(floor(n/2)+1)-2^floor((n+1)/2)+2)/2)
 
-mov $1,1
-mov $3,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  mul $4,2
-  mov $2,$1
-  sub $2,1
-  mov $1,$3
-  add $1,$4
-  mul $3,2
-lpe
-mov $0,$2
+mov $1,2
+pow $1,$0
+mov $2,$0
+div $2,2
+add $2,1
+mov $4,$0
+add $4,1
+div $4,2
+mov $5,2
+pow $5,$2
+mov $3,2
+pow $3,$4
+mov $0,$1
+sub $0,$5
+sub $0,$3
+add $0,2
+div $0,2
 mul $0,2

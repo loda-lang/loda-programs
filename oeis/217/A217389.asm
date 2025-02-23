@@ -1,13 +1,32 @@
 ; A217389: Partial sums of the ordered Bell numbers (number of preferential arrangements) A000670.
-; Submitted by Jamie Morken(w3)
+; Submitted by Science United
 ; 1,2,5,18,93,634,5317,52610,598445,7685706,109933269,1732565842,29824133437,556682481818,11198025452261,241481216430114,5557135898411469,135927902927547370,3521462566184392693,96323049885512803826,2774010846129897006941,83898835844633970888762,2658743255647824355432965,88097194592393533650013378,3046376315666539006300662253,109743741754142314831884160394,4111969501598310807318011699477,160009733420219934056594237953170,6457571798370285967574968173287805,269935957061393975988468297217864666
-; Formula: a(n) = a(n-1)+A000670(n), a(0) = 1
 
-mov $1,1
+mov $2,1
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
   sub $0,1
-  add $1,$2
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $7,2
+    div $7,2
+    sub $7,1
+    add $7,$0
+    add $7,$4
+    bin $7,$0
+    mul $7,$$9
+    add $5,2
+    add $6,$7
+  lpe
+  add $6,3
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-mov $0,$1
+mov $0,$6
+div $0,3

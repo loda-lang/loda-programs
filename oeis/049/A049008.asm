@@ -1,48 +1,35 @@
 ; A049008: Greatest possible number of right angles that can occur as interior angles in a planar n-gon.
+; Submitted by BrandyNOW
 ; 1,4,3,5,5,6,7,7,8,9,9,10,11,11,12,13,13,14,15,15,16,17,17,18,19,19,20,21,21,22,23,23,24,25,25,26,27,27,28,29,29,30,31,31,32,33,33,34,35,35,36,37,37,38,39,39,40,41,41,42,43,43,44,45,45,46,47,47,48,49,49,50
+; Formula: a(n) = e(n-3)+1, b(n) = 2, b(5) = 2, b(4) = 2, b(3) = 2, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = -d(n-1)-e(n-1)-f(n-1)-truncate((-e(n-1)+b(n-1))/(-2))+c(n-1)+1, c(5) = -1, c(4) = -2, c(3) = 0, c(2) = -3, c(1) = 1, c(0) = 0, d(n) = (d(n-1)+f(n-1)+truncate((-e(n-1)+b(n-1))/(-2))-1)^0, d(5) = 1, d(4) = 1, d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = (d(n-1)+f(n-1)+truncate((-e(n-1)+b(n-1))/(-2))-1)^0-d(n-1)-f(n-1)-truncate((-e(n-1)+b(n-1))/(-2))+c(n-1)+2, e(5) = 5, e(4) = 4, e(3) = 4, e(2) = 2, e(1) = 3, e(0) = 0, f(n) = -e(n-1)-f1(n-1)-truncate((-e(n-1)+b(n-1))/(-2)), f(5) = -6, f(4) = -6, f(3) = -3, f(2) = -5, f(1) = 0, f(0) = 0, f1(n) = 1, f1(5) = 1, f1(4) = 1, f1(3) = 1, f1(2) = 1, f1(1) = 1, f1(0) = 0
 
 #offset 3
 
 sub $0,3
-mov $9,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$9
-  add $0,$4
+lpb $0
   sub $0,1
-  mov $2,$0
-  mov $6,$0
-  sub $6,1
-  mov $7,$0
-  add $7,$0
-  mov $0,$7
-  mov $5,$2
-  mov $8,$6
-  lpb $2
-    add $8,1
-    lpb $5
-      trn $5,$2
-      add $5,1
-      mul $8,$0
-      div $8,6
-    lpe
-    add $7,$8
-    mov $6,3
-    lpb $6
-      sub $6,1
-      mov $2,0
-    lpe
-  lpe
-  mov $3,$4
-  lpb $3
-    sub $3,1
-    mov $1,$7
-  lpe
+  sub $1,$4
+  div $1,-2
+  sub $3,1
+  add $3,$5
+  add $3,$6
+  sub $1,$6
+  add $1,$4
+  sub $3,$4
+  add $3,$1
+  mov $5,$6
+  mul $5,2
+  mov $6,1
+  add $1,$5
+  add $1,$5
+  sub $2,$4
+  sub $2,$3
+  pow $3,0
+  add $4,$3
+  add $4,1
+  add $4,$2
+  sub $5,$1
+  add $1,$5
 lpe
-lpb $9
-  mov $9,0
-  sub $1,$7
-lpe
-add $1,1
-mov $0,$1
+mov $0,$4
+add $0,1

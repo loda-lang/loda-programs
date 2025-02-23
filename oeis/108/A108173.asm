@@ -1,23 +1,12 @@
 ; A108173: Let beta = A058265. Sequence gives a(n) = 1 + ceiling((n-1)*beta^2).
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by BrandyNOW
 ; 1,5,8,12,15,18,22,25,29,32,35,39,42,45,49,52,56,59,62,66,69,73,76,79,83,86,89,93,96,100,103,106,110,113,117,120,123,127,130,133,137,140,144,147,150,154,157,160,164,167,171,174,177,181,184,188,191,194,198,201
+; Formula: a(n) = truncate((203*n-145)/60)+1
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mul $2,2
-mov $3,$0
-add $3,2
-mov $0,1
-lpb $0
-  div $0,2
-  mov $1,47
-  add $2,47
-lpe
-mul $2,56
-sub $2,1
-div $2,$1
-add $3,$2
-mov $0,$3
-sub $0,56
+mul $0,7
+sub $0,5
+mul $0,29
+div $0,60
+add $0,1

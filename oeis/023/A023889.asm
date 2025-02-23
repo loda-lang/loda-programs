@@ -1,24 +1,24 @@
 ; A023889: Sum of the prime power divisors of n (not including 1).
-; Submitted by damotbe
+; Submitted by BrandyNOW
 ; 0,2,3,6,5,5,7,14,12,7,11,9,13,9,8,30,17,14,19,11,10,13,23,17,30,15,39,13,29,10,31,62,14,19,12,18,37,21,16,19,41,12,43,17,17,25,47,33,56,32,20,19,53,41,16,21,22,31,59,14,61,33,19,126,18,16,67,23,26,14,71,26,73,39,33,25,18,18,79,35
 
 #offset 1
 
 mov $2,2
-mov $4,1
 lpb $0
   mov $3,$0
+  pow $3,2
   lpb $3
     mov $4,$0
     mod $4,$2
-    min $4,1
     add $2,1
     sub $3,$4
   lpe
+  mov $5,1
   lpb $0
     dif $0,$2
-    mul $4,$2
-    add $1,$4
+    mul $5,$2
+    add $1,$5
   lpe
 lpe
 mov $0,$1

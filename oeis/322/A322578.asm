@@ -1,25 +1,34 @@
 ; A322578: Decimal expansion of the Avogadro constant N_A in the 2019 SI system in units mol^(-1).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 6,0,2,2,1,4,0,7,6
 
-add $0,2
+#offset 24
+
+mov $3,3
+sub $0,22
 lpb $0
-  mov $2,$0
-  max $4,88
-  div $4,2
-  sub $0,2
-  sub $2,3
-  add $2,$4
-  bin $2,$0
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $0,1
-  add $1,1
-  add $5,$3
+  add $2,1
+  sub $0,$2
+  mul $2,$5
+  sub $3,2
+  mul $3,2
+  mov $5,1
 lpe
-mov $0,$5
-mul $0,3
-div $0,59
-add $0,6
+add $1,$3
+sub $3,6
+lpb $0
+  sub $0,1
+  mul $1,$2
+  sub $2,1
+  add $4,2
+  mov $6,$3
+  div $1,$4
+  mul $3,-1
+  add $3,$1
+lpe
+add $1,$6
+mov $0,$1
+sub $0,4
+mod $0,10
+add $0,10
 mod $0,10

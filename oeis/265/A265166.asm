@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
+  add $3,2
   seq $3,270390 ; Greatest common divisor of 2^n-1 and 5^n-1.
   equ $3,1
   sub $0,$3

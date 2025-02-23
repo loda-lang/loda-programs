@@ -4,21 +4,14 @@
 
 #offset 5
 
-sub $0,5
-mov $1,2
-add $1,$0
-add $0,1
-div $0,2
-mul $0,2
-trn $0,1
-add $0,2
+sub $0,3
+mod $0,99
 lpb $0
-  mov $2,$0
-  seq $2,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,2
-  add $0,$2
-  add $0,$2
+  mov $1,$0
+  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  add $2,1
+  sub $0,1
+  add $0,$1
 lpe
-sub $1,$0
-mov $0,$1
+mov $0,$2
 add $0,4

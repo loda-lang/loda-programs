@@ -1,20 +1,23 @@
 ; A318514: a(n) = n OR (greatest proper divisor of n).
-; Submitted by Jason Jung
+; Submitted by BrandyNOW
 ; 1,3,3,6,5,7,7,12,11,15,11,14,13,15,15,24,17,27,19,30,23,31,23,28,29,31,27,30,29,31,31,48,43,51,39,54,37,55,47,60,41,63,43,62,47,63,47,56,55,59,51,62,53,63,63,60,59,63,59,62,61,63,63,96,77,99,67,102,87,103,71,108,73,111,91,110,79,111,79,120
 
 #offset 1
 
-mov $2,$0
-seq $2,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-mov $4,1
-lpb $0
-  mov $3,$0
-  gcd $3,$2
-  mod $3,2
-  mul $3,$4
-  div $0,2
-  add $1,$3
-  div $2,2
-  mul $4,2
+mov $4,2
+trn $2,$0
+add $2,$0
+lpb $2
+  mov $3,$2
+  lpb $3
+    mov $1,$2
+    mod $1,$4
+    sub $3,$1
+    add $4,1
+  lpe
+  lpb $2
+    dif $2,$4
+    mov $4,1
+  lpe
 lpe
-mov $0,$1
+bor $0,$2

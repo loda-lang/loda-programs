@@ -2,6 +2,9 @@
 ; Submitted by Christian Krause
 ; 1,1,1,2,6,21,75,266,938,3305,11679
 
+#offset 1
+
+sub $0,1
 mov $6,$0
 mov $7,2
 lpb $7

@@ -20,7 +20,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
-  seq $0,219 ; Number of planar partitions (or plane partitions) of n.
+  seq $0,219 ; Number of plane partitions (or planar partitions) of n.
   mul $0,$4
   add $1,$0
 lpe

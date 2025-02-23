@@ -1,22 +1,17 @@
 ; A289764: Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 597", based on the 5-celled von Neumann neighborhood.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,2,6,13,29,58,122,245,501,1002,2026,4053,8149,16298,32682,65365,130901,261802,523946,1047893,2096469,4192938,8387242,16774485,33551701,67103402,134212266,268424533,536859989,1073719978,2147461802,4294923605,8589890901,17179781802,34359650986,68719301973,137438778709,274877557418,549755464362,1099510928725,2199022556501,4398045113002,8796091624106,17592183248213,35184369292629,70368738585258,140737482762922,281474965525845,562949942236501,1125899884473002,2251799791315626,4503599582631253
-; Formula: a(n) = truncate((4*b(n)-4)/3)+1, b(n) = 2*b(n-1)+c(n-2), b(4) = 22, b(3) = 10, b(2) = 5, b(1) = 2, b(0) = 1, c(n) = 2*c(n-2), c(3) = 0, c(2) = 2, c(1) = 0, c(0) = 1
+; Formula: a(n) = 2^(n+1)-floor((2^(floor((n+1)/2)+1))/3)-1
 
-mov $1,1
-mov $3,1
-mov $4,1
-lpb $0
-  sub $0,1
-  add $1,$3
-  mov $3,$4
-  mov $4,$2
-  mov $2,$3
-  mul $2,2
-  add $3,$1
-lpe
-mov $0,$1
-mul $0,4
-sub $0,4
-div $0,3
 add $0,1
+mov $1,2
+pow $1,$0
+mov $2,$0
+div $2,2
+add $2,1
+mov $3,2
+pow $3,$2
+div $3,3
+mov $0,$1
+sub $0,$3
+sub $0,1

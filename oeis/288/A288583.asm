@@ -1,16 +1,22 @@
 ; A288583: Related to study of weak Sidon sets.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 1,2,3,6,11,19,28,42,56
 
-mov $1,1
-mov $3,1
-lpb $0
-  sub $0,1
-  pow $3,2
-  add $1,$3
-  mov $3,$2
-  sub $2,1
-  add $3,$0
-  div $3,$2
-lpe
+#offset 1
+
+mov $4,8
+equ $4,$0
+mov $1,$0
+pow $1,3
+mov $2,$0
+pow $2,2
+mul $2,11
+mov $3,$0
+mul $3,38
+add $1,$2
+sub $1,$3
+add $1,120
 mov $0,$1
+div $0,24
+sub $0,2
+add $0,$4

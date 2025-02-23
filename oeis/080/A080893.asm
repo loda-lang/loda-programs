@@ -1,4 +1,4 @@
-; A080893: E.g.f. exp(x*C(x)) = exp((1-sqrt(1-4*x))/2), where C(x) is the g.f. of the Catalan numbers A000108.
+; A080893: Expansion of e.g.f. exp(x*C(x)) = exp((1-sqrt(1-4*x))/2), where C(x) is the g.f. of the Catalan numbers A000108.
 ; Submitted by Science United
 ; 1,1,3,19,193,2721,49171,1084483,28245729,848456353,28875761731,1098127402131,46150226651233,2124008553358849,106246577894593683,5739439214861417731,332993721039856822081,20651350143685984386753
 ; Formula: a(n) = b(n-1), a(2) = 3, a(1) = 1, a(0) = 1, b(n) = 2*b(n-1)*(2*n-1)+b(n-2), b(2) = 19, b(1) = 3, b(0) = 1

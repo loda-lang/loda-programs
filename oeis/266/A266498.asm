@@ -1,18 +1,12 @@
 ; A266498: Index of the smallest triangular number greater than 3^n.
-; Submitted by Jamie Morken(w1)
+; Submitted by BrandyNOW
 ; 2,3,4,7,13,22,38,66,115,198,344,595,1031,1786,3093,5357,9279,16071,27836,48213,83508,144640,250524,433920,751571,1301759,2254713,3905278,6764140,11715834,20292419,35147501,60877257,105442502,182631770,316327505,547895310,948982514,1643685930,2846947542
+; Formula: a(n) = truncate((2*3^n)/sqrtint(2*3^n))
 
-mov $2,$0
-mov $0,3
-pow $0,$2
-mov $1,$0
-lpb $0
-  add $2,$1
-  mul $2,2
-  div $2,$0
-  add $0,$2
-  sub $0,1
-  div $0,2
-  mul $2,0
-lpe
-add $0,1
+mov $1,3
+pow $1,$0
+mul $1,2
+mov $0,$1
+nrt $0,2
+div $1,$0
+mov $0,$1

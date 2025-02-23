@@ -1,15 +1,14 @@
 ; A110034: Row sums of a characteristic triangle for the Fibonacci numbers.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by BrandyNOW
 ; 1,0,-1,-4,-11,-30,-79,-208,-545,-1428,-3739,-9790,-25631,-67104,-175681,-459940,-1204139,-3152478,-8253295,-21607408,-56568929,-148099380,-387729211,-1015088254,-2657535551,-6957518400,-18215019649,-47687540548,-124847601995,-326855265438
 
 mov $1,1
-mov $3,-1
-lpb $0
-  sub $0,1
-  add $1,$3
-  dif $2,-1
-  add $3,$2
-  add $3,$1
-  add $2,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  equ $4,0
+  add $2,$4
+  sub $1,$2
+  sub $2,$1
 lpe
 mov $0,$1

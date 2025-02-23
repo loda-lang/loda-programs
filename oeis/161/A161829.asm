@@ -4,16 +4,13 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-mod $0,2
-mul $0,2
-add $1,6
-div $1,4
-pow $0,$1
-add $0,2
-max $1,$0
+add $1,9
 dif $1,2
-mov $0,$1
+div $1,4
+add $0,1
+div $0,4
+bin $0,2
 sub $0,1
+add $0,$1
 mul $0,3

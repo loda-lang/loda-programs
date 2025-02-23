@@ -12,6 +12,5 @@ lpe
 add $0,1
 seq $0,181821 ; a(n) = smallest integer with factorization as Product p(i)^e(i) such that Product p(e(i)) = n.
 pow $0,2
-sub $0,1
 seq $0,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
 div $0,2

@@ -17,13 +17,7 @@ lpb $2
   seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
   mov $4,$3
   add $4,1
-  mov $5,$4
-  seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mov $6,$5
   seq $4,48785 ; a(0) = 0; a(n) = tau(n^3), where tau = number of divisors (A000005).
-  gcd $5,$4
-  div $6,$5
-  mul $4,$6
   add $1,9
   seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
   mul $3,2

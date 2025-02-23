@@ -1,13 +1,22 @@
 ; A059013: Odd number of 0's and even number of 1's in binary expansion.
+; Submitted by Science United
 ; 0,5,6,17,18,20,23,24,27,29,30,65,66,68,71,72,75,77,78,80,83,85,86,89,90,92,95,96,99,101,102,105,106,108,111,113,114,116,119,120,123,125,126,257,258,260,263,264,267,269,270,272,275,277,278,281,282,284,287,288,291,293,294,297,298,300,303,305,306,308,311,312,315,317,318,320,323,325,326,329
-; Formula: a(n) = truncate((A128309(A053738(2*n-1)+1)-2)/4)
 
 #offset 1
 
+mov $1,1
 mul $0,2
-sub $0,1
-seq $0,53738 ; If k is in sequence then 2*k and 2*k+1 are not (and 1 is in the sequence); numbers with an odd number of digits in binary.
-add $0,1
-seq $0,128309 ; a(n) = 2*A000069(n).
 sub $0,2
+lpb $0
+  sub $0,$1
+  mul $1,4
+lpe
+add $0,$1
+mov $2,$0
+mul $2,2
+dgs $0,2
+gcd $0,2
+add $0,$2
+mul $0,2
+sub $0,4
 div $0,4

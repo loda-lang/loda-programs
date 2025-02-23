@@ -1,14 +1,23 @@
 ; A135684: a(n)=11 if n is a prime number. Otherwise, a(n)=n.
+; Submitted by BrandyNOW
 ; 1,11,11,4,11,6,11,8,9,10,11,12,11,14,15,16,11,18,11,20,21,22,11,24,25,26,27,28,11,30,11,32,33,34,35,36,11,38,39,40,11,42,11,44,45,46,11,48,49,50,51,52,11,54,55,56,57,58,11,60,11,62,63,64,65,66,11,68,69,70,11,72,11,74,75,76,77,78,11,80
-; Formula: a(n) = -A010051(n)*(n-11)+n
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-sub $0,10
-add $1,1
-seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-mul $1,$0
-sub $0,$1
-add $0,11
+mov $4,$0
+lpb $0
+  gcd $2,2
+  mov $3,$0
+  div $3,3
+  lpb $3
+    mov $1,$0
+    mod $1,$2
+    add $2,1
+    sub $3,$1
+  lpe
+  add $0,1
+  div $0,$2
+  pow $0,2
+  mov $4,11
+lpe
+mov $0,$4

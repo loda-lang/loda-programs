@@ -11,6 +11,8 @@ lpb $0
   seq $2,10052 ; Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
   sub $0,1
   add $1,$2
+  pow $3,2
   mul $3,10
+  div $3,3
 lpe
 mov $0,$1

@@ -1,17 +1,14 @@
 ; A087056: Difference between 2 * n^2 and the next smaller square number.
-; Submitted by Stony666
+; Submitted by BrandyNOW
 ; 1,4,2,7,1,8,17,7,18,4,17,32,14,31,9,28,2,23,46,16,41,7,34,63,25,56,14,47,1,36,73,23,62,8,49,92,34,79,17,64,113,47,98,28,81,7,62,119,41,100,18,79,142,56,121,31,98,4,73,144,46,119,17,92,169,63,142,32,113,196,82
+; Formula: a(n) = 2*n^2-sqrtint(2*n^2)^2
 
 #offset 1
 
+pow $0,2
+mul $0,2
 mov $1,$0
-mul $1,2
-mov $2,$1
-add $2,1
-mov $3,$0
-pow $3,2
-lpb $3
-  sub $3,$2
-  add $2,2
-lpe
-mov $0,$3
+nrt $0,2
+pow $0,2
+sub $1,$0
+mov $0,$1

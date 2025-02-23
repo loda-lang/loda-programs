@@ -1,18 +1,13 @@
 ; A096426: Floor of the area consecutive odd sided triangles.
-; Submitted by waffleironhead
+; Submitted by BrandyNOW
 ; 6,17,31,48,69,93,121,152,187,225,267,312,360,412,468,526,589,655,724,797,873,953,1036,1122,1212,1306,1403,1503,1607,1715,1826,1940,2058,2179,2304,2432,2563,2698,2837,2979,3125,3274,3426,3582,3741,3904,4070
-; Formula: a(n) = sqrtint(3*((n-1)^2+n-1)^2-14)-3
+; Formula: a(n) = sqrtint(12*binomial(n,2)^2-12)-3
 
 #offset 3
 
-sub $0,1
-mov $2,$0
-pow $2,2
-add $0,$2
-mov $1,$0
-pow $1,2
-mul $1,3
-sub $1,14
-nrt $1,2
-mov $0,$1
+bin $0,2
+pow $0,2
+mul $0,12
+sub $0,12
+nrt $0,2
 sub $0,3

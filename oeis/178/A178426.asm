@@ -1,16 +1,13 @@
 ; A178426: 11 followed by the Fermat numbers A152585.
-; Submitted by Stephen Uitti
+; Submitted by BrandyNOW
 ; 11,13,145,20737,429981697,184884258895036417,34182189187166852111368841966125057,1168422057627266461843148138873451659428421700563161428957815831003137
-; Formula: a(n) = b(n)+1, b(n) = (b(n-1)-1)*(b(n-1)+1)+1, b(2) = 144, b(1) = 12, b(0) = 10
+; Formula: a(n) = max(12^truncate(2^(n-1)),10)+1
 
-mov $1,1
-mov $2,10
-lpb $0
-  sub $0,1
-  add $2,1
-  mul $1,$2
-  mov $2,$1
-  add $2,1
-lpe
+sub $0,1
+mov $1,2
+pow $1,$0
+mov $2,12
+pow $2,$1
+max $2,10
 mov $0,$2
 add $0,1

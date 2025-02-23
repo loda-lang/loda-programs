@@ -1,17 +1,16 @@
 ; A114460: Integer part of sqrt(n)+sqrt(n+1)+sqrt(n+2)+sqrt(n+3)+sqrt(n+4).
-; Submitted by [AF>Occitania]franky82
+; Submitted by BrandyNOW
 ; 8,9,11,12,13,14,14,15,16,17,18,18,19,19,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,29,30,30,31,31,32,32,32,33,33,33,34,34,34,35,35,36,36,36,37,37,37,38,38,38,39,39,39,39,40,40,40,41,41,41,42,42,42,43,43,43,43,44,44,44,44,45
+; Formula: a(n) = truncate((sqrtint(2*bitxor(50*n+98,1))*(-2*truncate(bitxor(50*n+98,1)/2)+bitxor(50*n+98,1)))/2)
 
 #offset 1
 
-sub $0,1
-mov $2,1
+mul $0,50
+add $0,98
+bxo $0,1
 mov $1,$0
-mul $1,25
-add $1,74
-lpb $1
-  add $2,2
-  trn $1,$2
-lpe
-mov $0,$2
+mul $1,2
+nrt $1,2
+mod $0,2
+mul $0,$1
 div $0,2

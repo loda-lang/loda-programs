@@ -1,17 +1,19 @@
 ; A067622: Consider the power series (x + 1)^(1/3) = 1 + x/3-x^2/9 + 5x^3/81 + ...; sequence gives numerators of coefficients.
-; Submitted by Jamie Morken(l1)
+; Submitted by tosi
 ; 1,1,-1,5,-10,22,-154,374,-935,21505,-55913,147407,-1179256,3174920,-8617640,70664648,-194327782,537259162,-13431479050,37466757350,-104906920580,884215473460,-2491879970660,7042269482300,-59859290599550
 
 mov $1,1
-mov $2,1
-mov $3,$0
-mov $0,1
-lpb $3
-  mul $1,$0
-  sub $0,3
-  mul $2,$3
-  sub $3,1
+lpb $0
+  add $2,1
+  add $3,$1
+  mul $3,$0
+  sub $0,1
+  mul $1,$2
+  sub $2,5
+  mod $2,144
+  add $2,1
+  sub $3,$1
 lpe
-gcd $2,$1
-div $1,$2
+gcd $3,$1
+div $1,$3
 mov $0,$1
