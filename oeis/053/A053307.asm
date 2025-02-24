@@ -1,16 +1,16 @@
 ; A053307: Number of nonnegative integer 2 X 2 matrices with sum of elements equal to n, under row and column permutations.
-; Submitted by [AF>Amis de la Mer] ComteZera
+; Submitted by BrandyNOW
 ; 1,1,4,5,11,14,24,30,45,55,76,91,119,140,176,204,249,285,340,385,451,506,584,650,741,819,924,1015,1135,1240,1376,1496,1649,1785,1956,2109,2299,2470,2680,2870,3101,3311,3564,3795,4071,4324,4624,4900,5225,5525,5876,6201,6579,6930,7336,7714,8149,8555,9020,9455,9951,10416,10944,11440,12001,12529,13124,13685,14315,14910,15576,16206,16909,17575,18316,19019,19799,20540,21360,22140
-; Formula: a(n) = b(n+3), b(n) = b(n-1)+binomial(truncate(binomial(-2,-n)/2),2), b(1) = 0, b(0) = 0
+; Formula: a(n) = b(n)+1, b(n) = b(n-2)+floor(((n+1)^2+3)/4), b(1) = 0, b(0) = 0
 
-add $0,3
 lpb $0
-  sub $0,1
-  sub $2,1
-  mov $3,-2
-  bin $3,$2
-  div $3,2
-  bin $3,2
-  add $1,$3
+  mov $2,$0
+  add $2,1
+  pow $2,2
+  add $2,3
+  div $2,4
+  sub $0,2
+  add $1,$2
 lpe
+add $1,1
 mov $0,$1

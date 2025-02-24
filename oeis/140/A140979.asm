@@ -6,8 +6,7 @@
 #offset 1
 
 mov $2,$0
-add $2,$0
-mul $2,2
+mul $2,4
 add $2,$0
 mul $2,$0
 nrt $2,2
@@ -15,8 +14,7 @@ add $2,$0
 mov $0,$2
 div $0,2
 mov $1,$0
-add $1,$0
-mul $1,2
+mul $1,4
 add $1,$0
 mul $1,$0
 nrt $1,2

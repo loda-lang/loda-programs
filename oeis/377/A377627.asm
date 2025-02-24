@@ -1,4 +1,4 @@
-; A377627: Number of words of length 2n that reduce to the identity when using the presentation S^6, T^2, [S,T] of the 12-element group C6 x C2.
+; A377627: Cogrowth sequence of the 12-element group C6 X C2 = <S,T | S^6, T^2, [S,T]>.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,2,29,211,926,3095,9829,37130,164921,728575,2973350,11450531,43942081,174174002,708653429,2884834891,11582386286,46006694735,182670807229,729520967450,2926800830801,11743814559415,47006639297270,187791199242011,750176293590361
 

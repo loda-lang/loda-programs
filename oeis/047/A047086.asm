@@ -8,7 +8,6 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  max $0,0
   add $0,2
   seq $0,273716 ; The number of peaks of width 1 (i.e., UHD configurations, where U = (0,1), H=(1,0), D=(0,-1)) in all bargraphs of semiperimeter n (n>=2).
   mov $4,$3

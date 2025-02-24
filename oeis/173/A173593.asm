@@ -1,25 +1,18 @@
 ; A173593: Numbers having in binary representation exactly two ones in three consecutive digits.
-; Submitted by omegaintellisys
+; Submitted by BrandyNOW
 ; 3,5,6,11,13,22,27,45,54,91,109,182,219,365,438,731,877,1462,1755,2925,3510,5851,7021,11702,14043,23405,28086,46811,56173,93622,112347,187245,224694,374491,449389,748982,898779,1497965,1797558,2995931,3595117
-; Formula: a(n) = c(n+3), b(n) = d(n-1), b(5) = 95, b(4) = 22, b(3) = 5, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = 4*d(n-2)+3*c(n-2)-2*truncate((4*d(n-2)+c(n-2)+d(n-3)+e(n-2)+1)/2)+d(n-3)+e(n-2)+1, c(5) = 5, c(4) = 3, c(3) = 2, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 4*d(n-1)+b(n-1)+e(n-1)+1, d(5) = 409, d(4) = 95, d(3) = 22, d(2) = 5, d(1) = 1, d(0) = 0, e(n) = b(n-1)+e(n-1), e(5) = 28, e(4) = 6, e(3) = 1, e(2) = 0, e(1) = 0, e(0) = 0
+; Formula: a(n) = -b(n)+c(n), b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -1, b(1) = -1, b(0) = 0, c(n) = gcd(d(n-1)+1,2)*c(n-1), c(2) = 4, c(1) = 2, c(0) = 2, d(n) = gcd(d(n-1)+1,2), d(2) = 2, d(1) = 1, d(0) = 0
 
 #offset 1
 
-mov $2,1
-add $0,3
+mov $2,2
 lpb $0
   sub $0,1
-  add $6,$1
-  mov $1,$5
-  mod $2,2
-  add $2,$3
-  add $2,$3
-  mov $3,$4
-  mov $4,$2
-  mul $5,4
-  add $5,$6
-  add $5,1
-  mov $2,$3
-  add $2,$5
+  sub $1,$2
+  div $1,2
+  add $3,1
+  gcd $3,2
+  mul $2,$3
 lpe
-mov $0,$4
+sub $2,$1
+mov $0,$2

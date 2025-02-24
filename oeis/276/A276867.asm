@@ -1,5 +1,5 @@
 ; A276867: First differences of the Beatty sequence A003231 for 2 + tau, where tau = golden ratio = (1 + sqrt(5))/2.
-; Submitted by Athlici
+; Submitted by iBezanilla
 ; 3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,4,3,4,3,4,4,3,4,3,4,4,3,4
 ; Formula: a(n) = -2*truncate((sqrtint((truncate((sqrtint((n-1)*(5*n-5))+n-1)/2)+2)*(5*truncate((sqrtint((n-1)*(5*n-5))+n-1)/2)+10))+truncate((sqrtint((n-1)*(5*n-5))+n-1)/2)+2)/2)+sqrtint((truncate((sqrtint((n-1)*(5*n-5))+n-1)/2)+2)*(5*truncate((sqrtint((n-1)*(5*n-5))+n-1)/2)+10))+truncate((sqrtint((n-1)*(5*n-5))+n-1)/2)+5
 
@@ -16,8 +16,7 @@ mov $0,$2
 div $0,2
 add $0,2
 mov $1,$0
-add $1,$0
-mul $1,2
+mul $1,4
 add $1,$0
 mul $1,$0
 nrt $1,2

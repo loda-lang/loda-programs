@@ -10,6 +10,5 @@ mul $1,$0
 div $1,4
 bin $0,2
 sub $0,1
-mul $1,$0
-mov $0,$1
+mul $0,$1
 div $0,6

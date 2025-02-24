@@ -1,18 +1,19 @@
 ; A329360: The decimal expansion of a(n) is the first n terms of A000002.
-; Submitted by [SG-FC] hl
+; Submitted by BrandyNOW
 ; 0,1,12,122,1221,12211,122112,1221121,12211212,122112122,1221121221,12211212212,122112122122,1221121221221,12211212212211,122112122122112,1221121221221121,12211212212211211,122112122122112112,1221121221221121122,12211212212211211221
+; Formula: a(n) = truncate(e(n+1)/10), b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -2, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2)*c(n-1), c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 2, d(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),2), d(3) = 2, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = 10*d(n-1)+10*e(n-1), e(3) = 120, e(2) = 10, e(1) = 0, e(0) = 0
 
-mov $1,1
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $4,$1
-  mov $0,$3
-  sub $0,$2
-  add $0,1
-  seq $0,2 ; Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
-  mul $1,10
-  add $1,$0
+mov $2,2
+add $0,1
+lpb $0
+  sub $0,1
+  sub $1,$2
+  div $1,2
+  add $4,$3
+  mul $4,10
+  add $3,$1
+  gcd $3,2
+  mul $2,$3
 lpe
 mov $0,$4
+div $0,10

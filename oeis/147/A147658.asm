@@ -10,7 +10,6 @@ lpb $0
   sub $0,1
   sub $1,$4
   sub $1,$6
-  sub $4,1
   add $4,$3
   sub $3,1
   add $3,$5
@@ -18,12 +17,10 @@ lpb $0
   mov $6,1
   add $1,$5
   add $1,$5
-  sub $2,1
   sub $2,$4
   sub $2,$3
   pow $3,0
   add $4,$3
-  add $4,1
   add $4,$2
   add $5,1
   sub $5,$1

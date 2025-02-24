@@ -5,9 +5,8 @@
 #offset 1
 
 add $0,1
-gcd $1,$0
-div $0,2
-mul $1,$0
-lex $1,2
-mov $0,$1
-add $0,1
+mov $1,$0
+bin $1,2
+mul $0,2
+mul $0,$1
+lex $0,2

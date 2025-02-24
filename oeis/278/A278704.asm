@@ -5,10 +5,8 @@
 
 #offset 3
 
-add $0,4
 mov $2,$0
-sub $0,6
-sub $2,4
+sub $0,2
 bin $2,$0
 mov $1,2
 pow $1,$2

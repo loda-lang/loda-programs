@@ -1,19 +1,17 @@
 ; A010058: 1 if n is a Catalan number else 0.
-; Submitted by Jamie Morken(s2)
+; Submitted by BrandyNOW
 ; 0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
+mov $1,1
 mov $4,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  mov $1,$0
-  mul $1,2
-  bin $1,$0
-  add $0,1
-  div $1,$0
-  equ $1,$4
-  add $3,$1
+lpb $0
+  sub $0,$1
+  add $2,1
+  mul $1,$2
+  add $2,1
+  add $3,$2
+  mul $1,$2
+  div $1,$3
 lpe
-mov $0,$3
+equ $1,$4
+mov $0,$1

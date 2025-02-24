@@ -1,22 +1,19 @@
 ; A193659: Q-residue of the triangle A094727, where Q=Pascal's triangle.  (See Comments.)
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,2,8,43,265,1832,14160,121771,1157557,12080436,137505288,1696841395,22578385961,322377704664,4917809053032,79840791037379,1374705370985669,25024307510421060,480230285880218992
+; Formula: a(n) = truncate(d(n)/2)+1, b(n) = -2*b(n-2)*(n-2)+b(n-1)*(n-1)+4*b(n-1)+2, b(5) = 3134, b(4) = 444, b(3) = 70, b(2) = 12, b(1) = 2, b(0) = 0, c(n) = (n-1)*(-2*c(n-2)+c(n-1)-1)+4*c(n-1)+1, c(4) = 679, c(3) = 117, c(2) = 23, c(1) = 5, c(0) = 1, d(n) = b(n-1)*(n-1)+2*c(n-1)+d(n-1), d(3) = 84, d(2) = 14, d(1) = 2, d(0) = 0
 
-mov $5,-1
-add $0,1
+mov $3,1
 lpb $0
-  sub $2,$5
-  equ $3,$2
-  sub $3,$1
-  mov $4,$0
-  sub $4,1
   sub $0,1
-  mul $2,2
-  mul $5,$4
-  sub $5,$3
-  add $5,1
-  sub $1,1
-  add $1,$5
+  mul $3,2
+  mul $1,$2
+  add $1,$3
+  add $2,1
+  add $3,1
+  add $3,$1
+  add $4,$1
 lpe
-mov $0,$2
+mov $0,$4
 div $0,2
+add $0,1

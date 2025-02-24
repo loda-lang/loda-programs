@@ -1,21 +1,22 @@
 ; A043441: Numbers having one 5 in base 8.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by amazing
 ; 5,13,21,29,37,40,41,42,43,44,46,47,53,61,69,77,85,93,101,104,105,106,107,108,110,111,117,125,133,141,149,157,165,168,169,170,171,172,174,175,181,189,197,205,213,221,229,232,233,234
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-mul $2,240
-add $2,133
+sub $0,1
+add $2,161
+mul $2,2
 lpb $2
-  add $4,4
   mov $5,0
   mov $3,$1
   lpb $3
     mov $6,$3
+    add $6,4
     mod $6,8
-    equ $6,$4
+    mul $6,2
+    equ $6,2
     div $3,8
     add $5,$6
   lpe

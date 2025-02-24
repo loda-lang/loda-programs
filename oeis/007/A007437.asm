@@ -1,20 +1,13 @@
 ; A007437: Inverse Moebius transform of triangular numbers.
-; Submitted by ChelseaOilman
+; Submitted by [B S] fred
 ; 1,4,7,14,16,31,29,50,52,74,67,119,92,137,142,186,154,247,191,294,266,323,277,455,341,446,430,553,436,686,497,714,634,752,674,1001,704,935,878,1150,862,1298,947,1323,1222,1361,1129,1767,1254,1674,1486,1834,1432,2110,1622,2185,1850,2150,1771,2814,1892,2453,2327,2794,2252,3122,2279,3108,2698,3322,2557,3965,2702,3482,3317,3871,3098,4334,3161,4526
+; Formula: a(n) = truncate((A000203(n)+A001157(n))/2)
 
 #offset 1
 
-mov $2,$0
-lpb $0
-  add $1,$4
-  mov $3,$2
-  dif $3,$0
-  neq $3,$2
-  mul $3,$0
-  sub $0,1
-  add $4,$3
-lpe
-div $1,2
-add $4,$1
-mov $0,$4
-add $0,1
+mov $1,$0
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
+add $1,$0
+mov $0,$1
+div $0,2
