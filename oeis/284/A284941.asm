@@ -1,10 +1,13 @@
 ; A284941: Positions of 1 in A284939; complement of A080580.
 ; Submitted by Skillz
 ; 2,3,4,6,7,8,10,11,12,14,16,17,18,20,21,22,24,25,26,28,30,31,32,34,35,36,38,39,40,42,44,45,46,48,50,51,52,54,55,56,58,59,60,62,64,65,66,68,69,70,72,73,74,76,78,79,80,82,83,84,86,87,88,90,92,93,94,96,98,99,100,102,103,104,106,107,108,110,112,113
-; Formula: a(n) = -2*truncate((min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2))/2)+a(n-1)+min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2)+2, a(3) = 6, a(2) = 4, a(1) = 3, a(0) = 2, b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -18, b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 4*c(n-1)*(-2*truncate((min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2))/2)+min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2)+2), c(3) = 256, c(2) = 32, c(1) = 8, c(0) = 2, d(n) = -2*truncate((min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2))/2)+min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2)+2, d(3) = 2, d(2) = 1, d(1) = 1, d(0) = 0
+; Formula: a(n) = e(n-1), b(n) = truncate((-c(n-1)+b(n-1))/2), b(3) = -18, b(2) = -4, b(1) = -1, b(0) = 0, c(n) = 4*c(n-1)*(-2*truncate((min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2))/2)+min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2)+2), c(3) = 256, c(2) = 32, c(1) = 8, c(0) = 2, d(n) = -2*truncate((min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2))/2)+min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2)+2, d(3) = 2, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = -2*truncate((min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2))/2)+e(n-1)+min(d(n-1),b(n-1))+truncate((-c(n-1)+b(n-1))/2)+2, e(3) = 6, e(2) = 4, e(1) = 3, e(0) = 2
+
+#offset 1
 
 mov $2,2
 mov $4,2
+sub $0,1
 lpb $0
   sub $0,1
   min $3,$1

@@ -15,7 +15,7 @@ lpb $0
     max $4,2
     mov $7,$4
     seq $7,351418 ; Number of divisors of n that are either of the form p^k (p prime, k>1) or are nonprime squarefree numbers.
-    cmp $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
     mul $7,$$9

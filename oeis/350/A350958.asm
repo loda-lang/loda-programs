@@ -8,7 +8,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,2
-  add $3,1
+  add $3,2
   seq $3,282432 ; Number of primes of the form n - 3^k.
   equ $3,0
   sub $0,$3

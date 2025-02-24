@@ -7,6 +7,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,283760 ; Expansion of (Sum_{i>=1} x^prime(i))*(Sum_{j>=1} x^(j^3)).
   min $3,1
   sub $0,$3

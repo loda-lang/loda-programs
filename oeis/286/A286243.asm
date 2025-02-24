@@ -1,9 +1,24 @@
 ; A286243: Filter-sequence: a(n) = A278222(A064216(n)).
 ; Submitted by Groo
 ; 2,2,4,6,2,8,12,4,12,6,6,12,6,2,24,24,8,16,32,12,30,30,4,60,12,12,48,30,6,60,72,6,6,48,12,12,24,6,12,30,2,48,24,24,60,72,24,36,60,8,12,60,16,72,180,32,180,24,12,6,12,30,36,24,30,128,210,4,12,30,60,60,30,12,60,210,12,120,120,48
-; Formula: a(n) = A278222(A064989(2*n+1))
+
+#offset 1
 
 mul $0,2
-add $0,1
+sub $0,1
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
-seq $0,278222 ; The least number with the same prime signature as A005940(n+1).
+seq $0,6068 ; a(n) is Gray-coded into n.
+mov $1,$0
+div $0,2
+bxo $1,$0
+mov $0,$1
+seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
+sub $0,1
+mov $2,$0
+seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+div $2,$0
+mov $0,$2
+add $0,1
+seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+seq $0,46523 ; Smallest number with same prime signature as n.

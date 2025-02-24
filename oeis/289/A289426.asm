@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(s1)
 ; 0,4,6,8,10,12,14,16,24,28,40
 
+#offset 1
+
+sub $0,1
 mov $9,$0
 mov $4,$0
 lpb $4
@@ -19,7 +22,7 @@ lpb $4
     mov $5,$7
     div $5,3
     mov $10,$5
-    cmp $10,0
+    equ $10,0
     add $5,$10
     add $1,$2
     div $1,$5
@@ -32,7 +35,7 @@ lpb $4
   pow $6,$0
   div $2,$6
   mov $10,$2
-  cmp $10,0
+  equ $10,0
   add $2,$10
   div $1,$2
   mov $0,$1

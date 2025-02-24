@@ -13,6 +13,7 @@ lpb $2
   mov $3,$1
   lpb $3
     trn $3,3
+    add $3,1
     seq $3,280514 ; Index sequence of the reverse block-fractal sequence A003849.
     sub $3,1
     add $5,1

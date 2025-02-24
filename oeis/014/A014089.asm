@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,283183 ; Number of partitions of n into a prime and a square of an arbitrary integer.
   min $3,1
   sub $0,$3

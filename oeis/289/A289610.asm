@@ -2,6 +2,9 @@
 ; Submitted by zombie67 [MM]
 ; 1,1,1,2,8,31,112,392,1360,4727,16532
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $5,$0
 lpb $5

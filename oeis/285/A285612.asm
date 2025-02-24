@@ -7,6 +7,6 @@ lpb $0
   mul $1,10
 lpe
 mov $2,$1
-cmp $2,0
+equ $2,0
 add $1,$2
 mov $0,$1

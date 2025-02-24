@@ -9,7 +9,6 @@ mov $2,1
 lpb $2
   sub $2,1
   mov $0,$4
-  sub $0,1
   seq $0,287114 ; Positions of 1 in A287112.
 lpe
 min $4,1

@@ -5,7 +5,7 @@
 mov $1,1
 mov $2,$0
 lpb $2
-  dis $2,2
+  dgs $2,2
   add $2,1
   div $0,2
   mul $1,$2

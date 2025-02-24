@@ -1,7 +1,7 @@
 ; A280729: (p-1)/2 + phi(p-1) as p runs through the odd primes.
 ; Submitted by [SG]KidDoesCrunch
 ; 2,4,5,9,10,16,15,21,26,23,30,36,33,45,50,57,46,53,59,60,63,81,84,80,90,83,105,90,104,99,113,132,113,146,115,126,135,165,170,177,138,167,160,182,159,153,183,225,186,228,215,184,225,256,261,266,207,226,236,233,290,249,275,252,314,245,264,345,286,336,357,303,306,297,381,386,318,360,332,389
-; Formula: a(n) = -A176095(truncate((A173919(2*n+1)-3)/2)+1)+A000040(n+1)-1
+; Formula: a(n) = -truncate((A173919(2*n+1)-3)/2)+A000040(n+1)+A062570(truncate((A173919(2*n+1)-3)/2)+1)-2
 
 #offset 1
 
@@ -12,9 +12,13 @@ seq $2,173919 ; Numbers that are prime or one less than a prime.
 mov $1,$2
 sub $1,3
 div $1,2
+mov $3,1
+add $3,$1
 add $1,1
-seq $1,176095 ; a(n) = n - phi(2*n), where phi() is the Euler totient A000010().
+seq $1,62570 ; a(n) = phi(2*n).
+sub $3,$1
 add $0,1
 seq $0,40 ; The prime numbers.
 sub $0,1
-sub $0,$1
+sub $0,$3
+mov $1,$3

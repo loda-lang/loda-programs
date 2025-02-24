@@ -13,6 +13,7 @@ add $3,180
 lpb $3
   add $0,1
   mov $1,$4
+  add $1,1
   seq $1,285144 ; Positions of 1 in A285142; complement of A285143.
   sub $1,1
   add $3,$1

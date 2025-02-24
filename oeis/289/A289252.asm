@@ -2,7 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,0,8,9,2,2,1,4,7,3,8,6
 
-add $0,2
+#offset 1
+
+add $0,1
 lpb $0
   sub $0,1
   sub $2,$5

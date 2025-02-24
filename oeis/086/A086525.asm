@@ -6,6 +6,7 @@
 
 sub $0,1
 trn $0,1
+add $0,1
 seq $0,284895 ; Positions of 1 in A284893; complement of A284894.
 add $2,$0
 lpb $2

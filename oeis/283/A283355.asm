@@ -6,11 +6,11 @@ mov $5,$0
 sub $0,1
 lpb $5
   sub $5,1
-  cmp $3,$1
+  equ $3,$1
   mov $1,$3
   add $1,$5
   mul $1,2
-  cmp $3,$4
+  equ $3,$4
   bin $1,$3
   mul $4,$0
   add $4,$1

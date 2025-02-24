@@ -2,9 +2,12 @@
 ; Submitted by Bok
 ; 1,1,2,2,4,4,4,48,144,144
 
+#offset 1
+
 mov $1,1
 mov $2,2
 mov $4,1
+sub $0,1
 lpb $0
   mul $1,$4
   mov $3,$0

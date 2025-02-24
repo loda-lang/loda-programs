@@ -1,7 +1,7 @@
 ; A286996: {0->000, 11->null}-transform of the Sturmian word A080764.
 ; Submitted by zombie67 [MM]
 ; 0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-; Formula: a(n) = sqrtnint(2*n^2,2)*sqrtnint(2*(n+3)^2,2)-2*truncate((sqrtnint(2*n^2,2)*sqrtnint(2*(n+3)^2,2)+sqrtnint(2*n^2,2))/2)+sqrtnint(2*n^2,2)
+; Formula: a(n) = sqrtint(2*n^2)*sqrtint(2*(n+3)^2)-2*truncate((sqrtint(2*n^2)*sqrtint(2*(n+3)^2)+sqrtint(2*n^2))/2)+sqrtint(2*n^2)
 
 #offset 1
 

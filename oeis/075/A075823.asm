@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   gcd $3,100
+  add $3,1
   seq $3,283760 ; Expansion of (Sum_{i>=1} x^prime(i))*(Sum_{j>=1} x^(j^3)).
   sub $0,$3
   add $1,1

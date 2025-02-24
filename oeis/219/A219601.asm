@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,284326 ; Sum of the divisors of n that are not divisible by 6.
     mov $9,10
     add $9,$5

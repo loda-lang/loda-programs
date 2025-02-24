@@ -11,6 +11,7 @@ add $2,4
 pow $2,5
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,284584 ; a(1) = 0; for n > 1, if n is not squarefree, then a(n) = A057627(n), otherwise a(n) = A013928(n).
   mov $4,$3
   add $4,1

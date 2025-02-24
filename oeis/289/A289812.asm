@@ -1,6 +1,9 @@
 ; A289812: n for which a Factor Pair Latin Square of order n exists.
 ; 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,21,22,23,25,26,27,29,31,32
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $4,59
 mov $6,$0

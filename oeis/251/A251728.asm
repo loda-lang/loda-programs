@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,280363 ; a(n) = floor(log_p(n)) where p = A020639(n), i.e., the least prime factor of n.
   equ $3,2
   sub $0,$3

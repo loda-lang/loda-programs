@@ -11,6 +11,7 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,285686 ; Characteristic sequence of the Beatty sequence, A022840, of sqrt(6).
   sub $0,$3
   add $1,6

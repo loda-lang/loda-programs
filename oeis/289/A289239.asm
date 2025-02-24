@@ -7,6 +7,7 @@
 lpb $0
   add $0,$2
   mov $2,$1
+  add $2,1
   seq $2,289240 ; Positions of 0 in A289239; complement of A289241.
   sub $0,$2
   add $1,1

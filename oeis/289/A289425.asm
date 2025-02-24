@@ -2,6 +2,9 @@
 ; Submitted by Jon Maiga
 ; 0,4,6,8,10,12,14,22,30,46
 
+#offset 1
+
+sub $0,1
 lpb $0
   div $3,7
   add $3,1

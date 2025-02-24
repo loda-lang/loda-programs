@@ -2,7 +2,10 @@
 ; Submitted by Science United
 ; 4,6,7,6,7,6,6,7,7,8,8,7,7,8,8,8,8,8,8
 
+#offset 1
+
 mov $4,2
+sub $0,1
 lpb $0
   add $1,$3
   div $1,2

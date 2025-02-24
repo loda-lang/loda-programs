@@ -3,7 +3,7 @@
 
 mov $1,2
 pow $1,$0
-cmp $0,2
+equ $0,2
 sub $1,$0
 mul $1,2
 sub $1,1

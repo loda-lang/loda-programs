@@ -2,6 +2,9 @@
 ; Submitted by [AF] Kalianthys
 ; 1,1,1,3,10,34,114,382,1292,4426,15358
 
+#offset 1
+
+sub $0,1
 mov $8,2
 lpb $8
   sub $8,1

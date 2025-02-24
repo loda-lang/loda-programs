@@ -2,8 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,4,11,34,110,365,1234,4237
 
+#offset 1
+
 mov $4,2
-sub $0,1
+sub $0,2
 lpb $0
   sub $0,1
   mov $3,$4

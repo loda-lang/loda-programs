@@ -7,6 +7,7 @@
 mov $1,9
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,280076 ; Numbers n such that Sum_{d|n} tau(d) = Product_{d|n} tau(d).
   div $1,2
   mov $0,1

@@ -4,8 +4,7 @@
 
 mov $1,-1
 pow $1,$0
-cmp $1,1
+equ $1,1
 seq $0,3602 ; Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
-sub $0,1
 seq $0,285702 ; a(n) = A000010(A064216(n)).
 mul $0,$1

@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   sub $1,2
   mul $3,474
+  add $3,1
   seq $3,285383 ; Limiting 0-word of the morphism 0 -> 11, 1 -> 01.
   mul $3,$1
   add $3,1

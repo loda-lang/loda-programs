@@ -12,6 +12,7 @@ lpb $2
   seq $6,93709 ; Characteristic function of squares or twice squares.
   sub $6,$5
   mod $6,2
+  add $6,1
   seq $6,286051 ; Positions of 1 in A286049; complement of A286050.
   add $1,1
   mov $3,$6

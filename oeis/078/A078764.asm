@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,280682 ; Integers m such that floor(sqrt(m)) is even.
   mov $5,$3
   mov $7,0

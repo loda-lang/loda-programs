@@ -13,7 +13,7 @@ lpb $0
   sub $0,1
   mul $1,$2
   sub $2,1
-  cmp $3,$2
+  equ $3,$2
   add $3,1
   div $1,$3
 lpe

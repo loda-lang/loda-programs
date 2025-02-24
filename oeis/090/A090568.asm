@@ -15,6 +15,7 @@ lpb $0
   lpe
   mul $1,2
   seq $1,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  add $1,1
   seq $1,286905 ; Positions of 1 in A286903; complement of A286904.
   mov $0,$1
 lpe

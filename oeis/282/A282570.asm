@@ -16,7 +16,7 @@ lpb $0
     seq $7,354927 ; a(n) = 1 if the product of divisors of n is n^2, otherwise 0.
     add $7,2
     div $7,3
-    cmp $7,$8
+    equ $7,$8
     sub $7,1
     mov $9,10
     add $9,$5

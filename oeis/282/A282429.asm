@@ -1,8 +1,11 @@
 ; A282429: List of distinct terms of A282026.
 ; Submitted by Jamie Morken(s2)
 ; 1,2,4,5,7,8,11,13,14,16,17,19,22,23,26,28,29,31
-; Formula: a(n) = floor((6*floor((floor(n/2)*(floor(n/2)+11))/42)+6*n+9)/4)-1
+; Formula: a(n) = floor((6*floor((floor((n-1)/2)*(floor((n-1)/2)+11))/42)+6*n+3)/4)-1
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $0,2
 mov $2,$0

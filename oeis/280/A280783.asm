@@ -2,8 +2,10 @@
 ; Submitted by Caius Corp.
 ; 1,2,4,8,16,27,51,83,140,225,369
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0

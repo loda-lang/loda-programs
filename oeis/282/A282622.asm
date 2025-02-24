@@ -1,9 +1,11 @@
 ; A282622: Number of digits of the representation of n in the alternating sexagesimal-decimal number system.
 ; 1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
+#offset 1
+
 mov $1,-1
 mul $0,2
-add $0,8
+add $0,6
 lpb $0
   div $0,5
   add $1,1

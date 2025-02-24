@@ -4,7 +4,7 @@
 
 add $0,1
 mov $1,$0
-cmp $1,1
+equ $1,1
 add $1,2
 mul $0,2
 bin $0,$1

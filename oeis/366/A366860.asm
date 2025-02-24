@@ -6,6 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,284365 ; Positions of 0 in A284364; complement of A284366.
   sub $3,1
   add $0,1

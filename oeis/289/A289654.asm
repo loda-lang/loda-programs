@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w3)
 ; 1,1,1,3,13,40,130,427,1428,4860,16794
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mov $3,$0
 add $3,1

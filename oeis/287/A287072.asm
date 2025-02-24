@@ -11,7 +11,6 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  sub $0,1
   seq $0,287073 ; Positions of 0 in A287072.
   add $1,2
   mov $4,$3

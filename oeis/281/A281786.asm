@@ -9,6 +9,7 @@ lpb $2
   mov $0,$1
   trn $0,1
 lpe
+add $0,1
 seq $0,281785 ; a(n) is multiplicative with a(2^e) = 1, a(3^e) = -8 if e>0, a(p^e) = (p^(e+1) - 1) / (p - 1) if p>3.
 min $1,1
 add $1,2

@@ -1,10 +1,12 @@
 ; A282847: Given n people seated at a table, a(n) is the minimum number of swaps that must occur in order for everybody to have sat next to every other person.
 ; Submitted by Christian Krause
 ; 0,0,0,1,3,4,4,6,8,10,12,14,17,20
-; Formula: a(n) = floor(((floor((n*(n+1))/9)*(n+1))%4+2*floor((n*(n+1))/9))/2)
+; Formula: a(n) = floor(((n*floor((n*(n-1))/9))%4+2*floor((n*(n-1))/9))/2)
+
+#offset 1
 
 mov $1,$0
-add $1,1
+sub $0,1
 mul $1,$0
 div $1,9
 add $0,1

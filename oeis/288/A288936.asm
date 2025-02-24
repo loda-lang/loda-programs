@@ -1,9 +1,12 @@
 ; A288936: Fixed point of the mapping 00->0010, 01->011, 10->011, starting with 00.
 ; Submitted by [AF>EDLS]zOU
 ; 0,0,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate(b(n)/2)+b(n), b(n) = 2*truncate(c(n-1)/2)+truncate(b(n-1)/2)+44, b(1) = 46, b(0) = 0, c(n) = 2*truncate(c(n-1)/2)*(-3*truncate(gcd(c(n-1)+truncate(b(n-1)/2),4)/3)+gcd(c(n-1)+truncate(b(n-1)/2),4)), c(1) = 2, c(0) = 3
+; Formula: a(n) = -2*truncate(b(n-1)/2)+b(n-1), b(n) = 2*truncate(c(n-1)/2)+truncate(b(n-1)/2)+44, b(1) = 46, b(0) = 0, c(n) = 2*truncate(c(n-1)/2)*(-3*truncate(gcd(c(n-1)+truncate(b(n-1)/2),4)/3)+gcd(c(n-1)+truncate(b(n-1)/2),4)), c(1) = 2, c(0) = 3
+
+#offset 1
 
 mov $2,3
+sub $0,1
 lpb $0
   sub $0,1
   div $1,2

@@ -2,6 +2,9 @@
 ; Submitted by respawner
 ; 1,1,1,2,7,28,106,382,1345,4706,16504
 
+#offset 1
+
+sub $0,1
 mov $6,1
 mov $5,$0
 lpb $5

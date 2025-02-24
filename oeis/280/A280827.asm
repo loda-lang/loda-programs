@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; -1,0,0,1,0,1,0,2,1,0,0,1,0,0,0,2,0,1,0,1,0,1,0,2,0,1,1,1,0,1,0,3,1,1,0,2,0,1,1,2,0,1,0,2,1,1,0,3,0,1,1,2,0,2,1,2,1,1,0,2,0,1,1,4,1,2,0,2,1,1,0,3,0,1,1,2,1,2,0,3
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,76649 ; Number of digits required to write the prime factors of n.

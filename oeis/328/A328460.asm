@@ -12,6 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,281487 ; a(n+1) = -Sum_{d|n} a(d), a(1) = 1.
     mov $9,10
     add $9,$5

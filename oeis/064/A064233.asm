@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,283183 ; Number of partitions of n into a prime and a square of an arbitrary integer.
   trn $3,1
   equ $3,0

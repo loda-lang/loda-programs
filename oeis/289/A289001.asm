@@ -1,8 +1,10 @@
 ; A289001: Fixed point of the mapping 00->0010, 01->001, 10->010, starting with 00.
 ; Submitted by shiva
 ; 0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0
+; Formula: a(n) = sqrtint(2*n^2)*sqrtint(2*(n+1)^2)-2*truncate((sqrtint(2*n^2)*sqrtint(2*(n+1)^2)+sqrtint(2*(n+1)^2))/2)+sqrtint(2*(n+1)^2)
 
-add $0,1
+#offset 1
+
 mov $3,$0
 pow $3,2
 mul $3,2

@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 1,1,1,1,5,17,57,193,662,2299,8073
 
+#offset 1
+
+sub $0,1
 trn $0,2
 add $0,3
 lpb $0

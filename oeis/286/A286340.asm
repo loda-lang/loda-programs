@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,286339 ; {1101->1}-transform of the Thue-Morse word A010060.
   equ $3,0
   sub $0,$3

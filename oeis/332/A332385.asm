@@ -8,5 +8,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,289506 ; Write n as a product of primes p_{s_1}*p_{s_2}*p_{s_3}*... where p_i denotes the i-th prime; then a(n) = s_1^2 + s_2^2 + s_3^2 + ...
 mov $0,$1

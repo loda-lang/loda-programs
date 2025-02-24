@@ -10,6 +10,7 @@ mov $3,$0
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,1
   seq $4,286991 ; Positions of 0 in A286990; complement of A286992.
   bin $4,$0
   add $2,1

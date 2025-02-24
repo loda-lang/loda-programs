@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,287104 ; Start with 0 and repeatedly substitute 0->10, 1->12, 2->0.
   equ $3,1
   sub $0,$3

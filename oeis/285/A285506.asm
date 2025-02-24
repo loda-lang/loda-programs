@@ -10,6 +10,7 @@ mov $2,$0
 mul $2,$0
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,285503 ; Positions of 1 in A285501; complement of A285502.
   add $0,2
   add $1,2

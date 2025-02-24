@@ -9,8 +9,20 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,21424 ; Expansion of 1/((1-x)(1-3x)(1-5x)(1-7x)).
+  add $0,3
+  mov $4,7
+  pow $4,$0
+  mov $5,5
+  pow $5,$0
+  mul $5,3
+  add $0,1
+  mov $6,3
+  pow $6,$0
+  sub $4,$5
+  add $4,$6
+  div $4,48
+  mov $0,$4
   mul $1,9
-  add $1,$0
+  add $1,$4
 lpe
 mov $0,$1

@@ -4,6 +4,7 @@
 
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,280510 ; Index sequence of the Thue-Morse sequence (A010060) as a block-fractal sequence.
   dif $2,3
   sub $0,1

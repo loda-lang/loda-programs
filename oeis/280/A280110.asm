@@ -2,6 +2,9 @@
 ; Submitted by NeoGen
 ; 2,3,7,9,11,13,25,29,37
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,$0
 mov $3,$0

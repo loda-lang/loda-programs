@@ -12,6 +12,7 @@ lpb $4
   lpb $0
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,280076 ; Numbers n such that Sum_{d|n} tau(d) = Product_{d|n} tau(d).
     div $2,2
     mov $0,1

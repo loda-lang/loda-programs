@@ -6,7 +6,7 @@ lpb $0
   add $1,2
   sub $0,$1
 lpe
-cmp $0,0
+equ $0,0
 add $1,2
 sub $1,$0
 mov $0,$1

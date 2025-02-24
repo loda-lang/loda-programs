@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,284291 ; Primes containing a digit 6.
 sub $0,1
 lpb $0

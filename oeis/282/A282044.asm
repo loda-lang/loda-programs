@@ -26,14 +26,14 @@ lpb $6
       lpb $3
         mov $4,$0
         mod $4,$2
-        cmp $4,0
+        equ $4,0
         add $0,$5
         div $0,2
         mov $5,2
         lpb $10
           dif $10,2
           add $2,1
-          cmp $4,0
+          equ $4,0
           sub $3,$4
         lpe
         div $0,$2

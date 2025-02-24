@@ -2,6 +2,9 @@
 ; Submitted by omegaintellisys
 ; 1,1,1,2,7,25,86,292,995,3425,11926
 
+#offset 1
+
+sub $0,1
 mov $8,2
 lpb $8
   sub $0,1

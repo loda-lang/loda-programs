@@ -7,7 +7,7 @@
 sub $0,1
 lpb $0
   mov $3,$0
-  add $3,1
+  add $3,2
   seq $3,288932 ; Fixed point of the mapping 00->1000, 10->10101, starting with 00.
   sub $0,$3
   add $2,$3

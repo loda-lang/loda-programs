@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,2,3,4,5,6,11,18,22,71
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 sub $0,4
 mov $3,$0

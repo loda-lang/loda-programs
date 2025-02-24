@@ -16,6 +16,6 @@ sub $0,1
 mov $4,1
 add $4,$0
 mov $3,$4
-dis $3,10
+dgs $3,10
 sub $1,$3
 mov $0,$1

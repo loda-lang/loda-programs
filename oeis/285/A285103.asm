@@ -15,5 +15,5 @@ lpb $0
   bxo $1,$2
   add $3,1
 lpe
-dis $4,2
+dgs $4,2
 mov $0,$4
