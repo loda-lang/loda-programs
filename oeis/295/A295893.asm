@@ -10,8 +10,14 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
-  seq $0,217434 ; n divided by the product of all its prime divisors smaller than the largest prime divisor.
-  seq $0,122111 ; Self-inverse permutation of the positive integers induced by partition enumeration in A112798 and partition conjugation.
+  sub $0,1
+  mov $6,$0
+  seq $0,293810 ; The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
+  div $6,$0
+  mov $0,$6
+  add $0,1
+  seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mod $0,2
   mov $2,$3

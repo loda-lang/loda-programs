@@ -16,8 +16,7 @@ lpb $2
   mod $6,2
   div $0,2
   add $3,$6
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   mul $3,$4
   add $1,$3
   mul $4,2

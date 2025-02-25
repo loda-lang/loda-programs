@@ -10,11 +10,12 @@ mov $2,$0
 add $2,2
 pow $2,2
 lpb $2
-  add $1,8
   mov $3,$1
+  add $3,9
   seq $3,290260 ; a(n) = number of isolated 0's in the binary representation of n.
   equ $3,0
   sub $0,$3
+  add $1,8
   mov $4,$0
   max $4,0
   equ $4,$0

@@ -2,6 +2,9 @@
 ; Submitted by Kotenok2000
 ; 1,4,8,8,12,16,16,8,24,8
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $5,2
 lpb $5
@@ -10,6 +13,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,299770 ; a(n) is the total number of elements after n-th stage of a hybrid (and finite) cellular automaton on the infinite square grid, formed by toothpicks of length 2, D-toothpicks, toothpicks of length 1, and T-toothpicks.
   mov $2,$5
   mul $2,$4

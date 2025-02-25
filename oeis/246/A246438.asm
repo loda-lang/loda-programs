@@ -10,6 +10,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
   sub $3,1
   add $1,$3

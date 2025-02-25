@@ -14,6 +14,7 @@ lpb $2
   sub $0,1
   mov $4,2
   pow $4,$0
+  add $4,1
   seq $4,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
   mov $0,$4
   sub $0,1

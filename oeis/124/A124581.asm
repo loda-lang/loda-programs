@@ -14,6 +14,7 @@ lpb $2
   pow $3,3
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,294936 ; Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
   sub $0,$3
   add $1,1

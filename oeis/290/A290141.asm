@@ -2,6 +2,9 @@
 ; Submitted by pututu
 ; 12,18,20,24,30,102,120,138
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 lpb $0

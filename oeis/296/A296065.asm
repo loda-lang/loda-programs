@@ -1,9 +1,11 @@
 ; A296065: Partial sums of A296064.
 ; 0,2,3,0,5,0,7,0,9,0,11,0,13,0,15,0,17,0,19,0,21,0,23,0,25,0,27,0,29,0,31,0,33,0,35,0,37,0,39,0,41,0,43,0,45,0,47,0,49,0,51,0,53,0,55
-; Formula: a(n) = -truncate((n+1)/truncate((n+1)^gcd(max(n-2,0),2)))*truncate((n+1)^gcd(max(n-2,0),2))+n+1
+; Formula: a(n) = -truncate(n/truncate(n^gcd(max(n-3,0),2)))*truncate(n^gcd(max(n-3,0),2))+n
+
+#offset 1
 
 mov $2,$0
-add $2,1
+sub $0,1
 trn $0,2
 gcd $0,2
 mov $1,$2

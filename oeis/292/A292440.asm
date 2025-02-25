@@ -24,7 +24,7 @@ lpe
 div $0,2
 add $0,$5
 mul $0,2
-cmp $2,$0
+equ $2,$0
 add $0,$2
 add $0,57
 div $0,2

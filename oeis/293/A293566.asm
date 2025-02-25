@@ -5,5 +5,5 @@
 
 mov $1,-1
 pow $1,$0
-seq $0,293507 ; E.g.f.: exp(x/(1 - x^4)).
+seq $0,293507 ; Expansion of e.g.f. exp(x/(1 - x^4)).
 mul $0,$1

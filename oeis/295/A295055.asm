@@ -8,7 +8,7 @@ lpb $0
   mov $6,$12
   add $6,$11
   add $6,$1
-  cmp $7,$5
+  equ $7,$5
   add $2,1
   mov $5,0
   mov $10,1
@@ -22,7 +22,7 @@ lpb $0
     add $1,1
     add $2,$7
     gcd $7,$2
-    cmp $7,$$9
+    equ $7,$$9
     add $5,2
   lpe
   add $6,1

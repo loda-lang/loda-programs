@@ -1,10 +1,31 @@
 ; A290442: a(n) = Catalan(n-1)*Motzkin(n).
 ; Submitted by Christian Krause
 ; 1,2,8,45,294,2142,16764,138567,1194050,10638056,97383208,911829646,8702182020,84418698600,830606179680,8274230277615,83330214144930,847407871749780,8692682350690800,89868901315880610,935699342853054780,9805180025713805460,103353379063190310600,1095295964528435629050
-; Formula: a(n) = A001006(n+1)*A000108(n)
+
+#offset 1
 
 mov $1,$0
+mov $4,0
+mov $6,0
+mov $7,0
+sub $0,1
+mov $3,1
+mov $5,$1
+lpb $5
+  mul $3,$5
+  sub $5,1
+  sub $6,2
+  sub $7,$6
+  mul $3,$5
+  div $3,$7
+  add $4,$3
+  sub $5,1
+lpe
+mov $1,$4
 add $1,1
-seq $1,1006 ; Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $2,$0
+mul $0,2
+bin $0,$2
+add $2,1
+div $0,$2
 mul $0,$1

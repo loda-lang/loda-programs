@@ -8,7 +8,6 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    sub $4,1
     mov $3,$4
     seq $3,296975 ; Number of aperiodic normal sequences of length n.
     mov $4,1

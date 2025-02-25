@@ -2,7 +2,10 @@
 ; Submitted by Jon Maiga
 ; 0,1,2,3,4,5,6,8,9,11,12,14,17,20
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   add $1,$0
   mul $0,$1

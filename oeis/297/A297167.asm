@@ -2,10 +2,12 @@
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,1,1,2,1,3,2,2,2,4,2,5,3,2,3,6,2,7,3,3,4,8,3,3,5,3,4,9,2,10,4,4,6,3,3,11,7,5,4,12,3,13,5,3,8,14,4,4,3,6,6,15,3,4,5,7,9,16,3,17,10,4,5,5,4,18,7,8,3,19,4,20,11,3,8,4,5,21,5
 
+#offset 1
+
 mov $4,$0
-add $4,1
 seq $4,1221 ; Number of distinct primes dividing n (also called omega(n)).
 add $4,1
+sub $0,1
 mov $3,$0
 seq $3,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
 sub $3,$4

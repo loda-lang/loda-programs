@@ -10,13 +10,14 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,293899 ; Number of proper divisors of the form 3k+1 minus number of proper divisors of the form 3k+2.
   add $3,$4
   mul $0,2
   add $0,1
   sub $0,$3
+  add $1,2
   add $1,$4
   mov $4,$0
   max $4,0

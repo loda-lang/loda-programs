@@ -14,6 +14,7 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,296891 ; Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
   sub $3,1
   mov $5,-1

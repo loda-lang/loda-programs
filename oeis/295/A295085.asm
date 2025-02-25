@@ -9,7 +9,16 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,7067 ; Nearest integer to n*tau where tau = (1+sqrt(5))/2.
+  mov $5,$3
+  add $5,$3
+  mul $5,2
+  add $5,$3
+  mul $5,$3
+  add $3,1
+  nrt $5,2
+  add $5,$3
+  mov $3,$5
+  div $3,2
   mod $3,2
   equ $3,0
   sub $0,$3

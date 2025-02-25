@@ -17,7 +17,7 @@ lpb $0
     mov $7,$4
     add $7,5
     seq $7,130793 ; Periodic sequence with period 3: 1, 3, 5.
-    cmp $7,1
+    equ $7,1
     mul $7,-1
     mov $9,10
     add $9,$5

@@ -10,4 +10,5 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,296365 ; Numbers which appear prematurely in the binary Champernowne word (A030190).

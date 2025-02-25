@@ -12,7 +12,6 @@ lpb $5
   mov $2,$0
   gcd $2,$5
   bin $2,$0
-  sub $0,1
   seq $0,297112 ; Möbius transform of A156552.
   mul $2,$0
   add $4,$2

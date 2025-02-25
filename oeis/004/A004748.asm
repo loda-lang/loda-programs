@@ -12,7 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   mul $3,4
-  add $3,3
+  add $3,4
   seq $3,290260 ; a(n) = number of isolated 0's in the binary representation of n.
   min $3,1
   sub $0,$3

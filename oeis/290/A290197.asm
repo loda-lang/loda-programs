@@ -1,7 +1,27 @@
 ; A290197: Binary representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
 ; 1,1,101,1011,1111,11111,111111,1111111,11111111,111111111,1111111111,11111111111,111111111111,1111111111111,11111111111111,111111111111111,1111111111111111,11111111111111111,111111111111111111,1111111111111111111,11111111111111111111,111111111111111111111,1111111111111111111111,11111111111111111111111,111111111111111111111111,1111111111111111111111111,11111111111111111111111111,111111111111111111111111111,1111111111111111111111111111,11111111111111111111111111111,111111111111111111111111111111
-; Formula: a(n) = truncate(A099820(A290199(n))/10)
 
-seq $0,290199 ; Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 721", based on the 5-celled von Neumann neighborhood.
-seq $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
-div $0,10
+mov $1,0
+sub $1,$0
+div $1,2
+add $1,1
+mov $2,0
+bin $2,$1
+max $0,1
+mov $1,2
+pow $1,$0
+add $2,2
+mul $2,$1
+mov $0,$2
+div $0,2
+sub $0,1
+mov $3,$0
+mov $5,8
+lpb $0
+  div $0,2
+  mov $4,$0
+  mul $4,$5
+  mul $5,10
+  add $3,$4
+lpe
+mov $0,$3

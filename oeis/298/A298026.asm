@@ -4,5 +4,5 @@
 dif $0,2
 mul $0,6
 mov $1,$0
-cmp $1,0
+equ $1,0
 add $0,$1

@@ -10,6 +10,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,294448 ; Discrepancy of the Kolakoski sequence A000002.
   mul $3,4
   trn $3,3

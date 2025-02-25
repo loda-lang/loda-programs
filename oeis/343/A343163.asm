@@ -19,6 +19,7 @@ bin $1,$3
 dif $1,2
 add $2,1
 mod $2,2
+add $2,1
 seq $2,293838 ; "Look once to the left" sequence starting with 1,2 (see comment).
 mul $1,$2
 add $1,$0

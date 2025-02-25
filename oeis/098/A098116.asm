@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,293435 ; a(n) is the number of the proper divisors of n that are Fibonacci numbers (A000045).
   equ $3,1
   sub $0,$3

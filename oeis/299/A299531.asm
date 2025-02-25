@@ -21,7 +21,7 @@ lpb $0
     add $6,$10
     gcd $7,$2
     add $7,1
-    cmp $7,$$9
+    equ $7,$$9
     add $5,1
     add $6,1
     add $6,$7

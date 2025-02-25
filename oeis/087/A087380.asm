@@ -10,6 +10,7 @@ lpb $0
   mul $2,27
   add $2,55
   mod $2,10
+  add $2,1
   seq $2,293233 ; a(1) = 1; and for n > 1, a(n) = mu(n) * a(floor(n/2)), where mu is the Moebius function A008683.
   mov $3,$2
   sub $3,1

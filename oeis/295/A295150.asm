@@ -1,12 +1,12 @@
 ; A295150: Numbers that have exactly two representations as a sum of five nonnegative squares.
 ; 4,5,8,9,10,11,12,14,23,24
 
-add $0,1
+#offset 1
+
 mov $2,$0
 lpb $0
   sub $2,1
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   mul $3,$0
   mov $4,$2
   sub $2,5

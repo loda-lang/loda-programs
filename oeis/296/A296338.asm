@@ -2,6 +2,9 @@
 ; Submitted by Kotenok2000
 ; 1,0,0,1,1,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $2,$0
 add $2,1
@@ -13,7 +16,7 @@ lpb $2
   seq $0,322135 ; Table of truncated square pyramid numbers, read by antidiagonals.
   sub $0,1
   sub $0,$5
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

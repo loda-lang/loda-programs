@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,292926 ; a(n) = prime(n)*prime(n+1) + prime(n+2).
   mov $5,$3
   add $3,1

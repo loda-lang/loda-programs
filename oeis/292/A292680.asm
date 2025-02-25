@@ -10,7 +10,7 @@ lpb $0
   add $3,$2
   mod $3,10
   dif $3,2
-  cmp $3,1
+  equ $3,1
   mul $3,$4
   mul $4,2
   div $0,2

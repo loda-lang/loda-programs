@@ -13,6 +13,7 @@ lpb $2
   add $3,1
   seq $3,132349 ; If n is a k-th power with k >= 2 then a(n) = k, otherwise a(n) = 0.
   trn $3,1
+  add $3,1
   seq $3,296081 ; a(n) = gcd(tau(n)-1, sigma(n)-1), where tau = A000005 and sigma = A000203.
   equ $3,1
   sub $0,$3

@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,291876 ; Consider the graph with one central vertex connected to three outer vertices (a star graph). Then, a(n) is the minimum number of moves required to transfer a stack of n pegs from one outer vertex to another outer vertex, moving pegs to adjacent vertices, following the rules of the Towers of Hanoi.
   mov $1,$0
   mov $0,0

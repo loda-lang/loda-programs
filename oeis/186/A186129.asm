@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,293235 ; a(n) is the sum of proper divisors of n that are square.
   trn $3,7
   min $3,1

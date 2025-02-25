@@ -1,9 +1,10 @@
 ; A290348: Denominators of the Harary index for the n-halved cube graph.
 ; Submitted by Arkhenia
 ; 1,1,1,1,1,3,3,3,1,5,5,15,15,105,105,105,105,315,315,315,315,3465,3465,3465,693,9009,3003,3003,3003,5005,5005,5005,5005,85085,17017,153153,153153,2909907,2909907,14549535
-; Formula: a(n) = truncate(A000142(n+1)/gcd(A000142(n+1),64*A279683(n+1)))
+; Formula: a(n) = truncate(A000142(n)/gcd(A000142(n),64*A279683(n)))
 
-add $0,1
+#offset 1
+
 mov $1,$0
 seq $1,279683 ; Number of move operations required to sort all permutations of [n] by MTF sort.
 mul $1,64

@@ -12,8 +12,7 @@ lpb $0
   mov $6,0
   sub $6,$3
   sub $0,1
-  cmp $3,$2
-  cmp $3,0
+  neq $3,$2
   sub $5,$6
   max $2,$0
   bin $4,$0

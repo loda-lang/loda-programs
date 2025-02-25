@@ -19,7 +19,7 @@ lpb $0
     add $6,1
     gcd $7,$2
     add $7,1
-    cmp $7,$$9
+    equ $7,$$9
     sub $3,1
     add $5,2
     add $6,1

@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
+  add $0,1
   seq $0,290641 ; Multiplicative with a(p^e) = prime(p-1)^e.
   seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
   seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

@@ -6,13 +6,13 @@ mov $1,1
 mov $3,$0
 mul $3,5
 lpb $3
-  cmp $4,0
+  equ $4,0
   add $2,$4
   mul $2,$3
   mul $1,$0
   add $1,$2
   mov $4,$0
-  cmp $4,0
+  equ $4,0
   mov $5,$0
   add $5,$4
   div $1,$5
@@ -25,7 +25,7 @@ lpb $3
     div $3,$1
   lpe
   mov $4,$2
-  cmp $4,0
+  equ $4,0
   add $2,$4
   mul $1,$0
   div $1,$2

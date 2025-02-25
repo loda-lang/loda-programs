@@ -2,11 +2,12 @@
 ; Submitted by Jamie Morken(w3)
 ; 0,0,1,-1,1,1,1,0,-1,1,1,0,1,1,1,-1,1,-1,1,1,1,1,1,1,-1,1,1,1,1,1,1,0,1,1,1,-1,1,1,1,1,1,1,1,1,1,1,1,-1,1,-1,1,0,1,1,1,1,1,1,1,1,1,1,1,-1,1,1,1,1,1,1,1,-1,1,1,0,1,1,1,1,-1
 
+#offset 1
+
 mov $3,$0
-add $3,1
 seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-add $0,1
-seq $0,62068 ; a(n) = d(sigma(n)), where d(k) is the number of divisors function (A000005) and sigma(k) is the sum of divisor function (A000203).
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 sub $0,$3
 mul $0,2
 mov $2,$0

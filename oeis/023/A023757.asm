@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   add $2,1
   mov $3,$1
+  add $3,1
   seq $3,296761 ; Numbers whose base-16 digits d(m), d(m-1), ..., d(0) have #(rises) < #(falls); see Comments.
   sub $3,1
   add $0,1

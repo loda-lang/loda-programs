@@ -2,8 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,1,2,1,3,1,3,2,3,1,5,1,3,3,4,1,5,1,5,3,3,1,6,2,3,3,5,1,7,1,5,3,3,3,6,1,3,3,6,1,7,1,5,5,3,1,7,2,5,3,5,1,6,3,7,3,3,1,8,1,3,5,6,3,7,1,5,3,7,1,7,1,3,5,5,3,7,1,7
 
+#offset 1
+
 mov $2,1
-add $0,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -14,10 +15,11 @@ lpb $0
     gcd $4,$0
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,294937 ; Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
     add $7,1
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$5
     sub $4,$0

@@ -2,6 +2,9 @@
 ; Submitted by damotbe
 ; 1,1,1,2,4,3,4,6,6,6,8,9,9,9,11,9,13,15,10,14,16,14,16,19,18,17,21,18,20,25,18,24,27,19,26,28,25,27,32,26,28,35,29,29,39,30,32,38,30,37,41,35,37,42,38,41,47,40,40,54,38,42,53,39,48,52,46,46,52,50,52,60,50,50,64,48,57,64,51,59
 
+#offset 1
+
+sub $0,1
 mov $1,1
 add $1,$0
 mov $4,0
@@ -18,11 +21,30 @@ lpb $2
   mov $3,$0
   add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  seq $3,339825 ; Odd bisection of the infinite Fibonacci word A003849.
+  add $3,1
+  mov $6,$3
+  add $6,$3
+  mul $6,2
+  add $6,$3
+  mul $6,$3
+  nrt $6,2
+  add $6,$3
+  add $0,1
+  mov $3,$6
+  add $3,2
+  mov $5,$3
+  add $5,$3
+  mul $5,2
+  add $5,$3
+  mul $5,$3
+  nrt $5,2
+  add $5,$3
+  mov $3,$5
+  sub $3,1
+  mod $3,2
   mul $3,$2
   add $3,2
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,1
   add $4,$3
 lpe
 sub $1,$4

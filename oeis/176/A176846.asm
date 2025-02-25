@@ -6,6 +6,7 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,290080 ; a(1) = 0; for n > 1, a(n) = sigma(bigomega(n)).
   sub $0,$2
   add $1,1

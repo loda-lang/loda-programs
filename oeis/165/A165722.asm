@@ -11,6 +11,7 @@ pow $2,3
 lpb $2
   sub $2,64
   mov $3,$1
+  add $3,1
   seq $3,294652 ; Positive integers k such that the sum of decimal digits of (4^k - 1) equals 3*k.
   mov $5,$3
   add $1,1

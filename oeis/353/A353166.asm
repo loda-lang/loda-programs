@@ -12,6 +12,7 @@ lpb $0
     trn $4,1
     mul $6,$5
     mov $7,$4
+    add $7,1
     seq $7,295425 ; a(n) = smallest number > a(n-1) such that the number of preceding terms in the sequence dividing a(n) is divisible by 4; a(1) = 2.
     mov $9,10
     add $9,$5

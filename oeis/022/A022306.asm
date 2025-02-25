@@ -6,7 +6,7 @@ mov $2,$0
 mul $2,2
 lpb $2
   mov $3,$1
-  add $3,5
+  add $3,6
   seq $3,294448 ; Discrepancy of the Kolakoski sequence A000002.
   equ $3,0
   sub $0,$3
