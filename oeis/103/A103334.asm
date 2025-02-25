@@ -6,12 +6,11 @@ max $0,1
 mov $2,$0
 lpb $0
   sub $0,1
-  mov $4,$2
-  add $2,$5
   mov $3,2
-  pow $3,$4
-  mov $5,2
+  pow $3,$2
   add $1,$3
+  add $2,$4
+  mov $4,2
 lpe
 mov $0,$1
 div $0,2

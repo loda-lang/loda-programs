@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard (M1)
 ; 4,8,9,12,16,18,20,24,25,27,28,32,40,44,45,48,49,50,52,54,56,60,63,64,68,75,76,80,81,84,88,90,92,96,98,99,100,104,112,116,117,120,121,124,125,126,128,132,135,136,140,147,148,150,152,153,156,160,162,164,168,169,171,172,175,176,184,188,189
 
+#offset 1
+
+sub $0,1
 mov $4,1
 mov $2,$0
 add $2,2
@@ -10,8 +13,10 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  sub $3,1
-  seq $3,332881 ; If n = Product (p_j^k_j) then a(n) = denominator of Product (1 + 1/p_j).
+  mov $6,$3
+  seq $6,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  gcd $6,$3
+  div $3,$6
   mov $5,1
   add $5,$3
   add $3,$5

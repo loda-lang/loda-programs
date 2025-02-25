@@ -5,15 +5,12 @@
 
 #offset 2
 
-mov $1,$0
-sub $1,1
 mov $2,$0
 seq $2,40 ; The prime numbers.
-mov $3,$2
+mov $1,$2
 pow $2,2
-add $3,1
-seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-add $3,$2
-sub $0,2
-mov $0,$3
+add $1,1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+add $1,$2
+mov $0,$1
 div $0,2
