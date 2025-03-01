@@ -1,16 +1,11 @@
 ; A165862: Totally multiplicative sequence with a(p) = 41.
-; Submitted by Kotenok2000
+; Submitted by [AF] Kalianthys
 ; 1,41,41,1681,41,1681,41,68921,1681,1681,41,68921,41,1681,1681,2825761,41,68921,41,68921,1681,1681,41,2825761,1681,1681,68921,68921,41,68921,41,115856201,1681,1681,1681,2825761,41,1681,1681,2825761,41,68921,41,68921,68921,1681,41,115856201,1681,68921,1681,68921,41,2825761,1681,2825761,1681,1681,41,2825761,41,1681,68921,4750104241,1681,68921,41,68921,1681,68921,41,115856201,41,1681,68921,68921,1681,68921,41,115856201
+; Formula: a(n) = truncate(41^A001222(n))
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
-  div $0,$2
-  mul $1,41
-lpe
+seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+mov $1,41
+pow $1,$0
 mov $0,$1

@@ -1,15 +1,15 @@
 ; A046978: Numerators of Taylor series for exp(x)*sin(x).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by BrandyNOW
 ; 0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1,0,1,1,1,0,-1,-1,-1
+; Formula: a(n) = truncate((min(n,n%2)*c(n)+b(n))/3), b(n) = -b(n-4), b(4) = 0, b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = -c(n-4), c(4) = -3, c(3) = 0, c(2) = 0, c(1) = 3, c(0) = 3
 
-mov $2,1
+mov $2,3
 lpb $0
-  sub $0,1
-  add $1,1
-  mov $3,$4
-  mov $4,$2
-  mul $2,$1
-  sub $2,$3
-  equ $1,1
+  sub $0,2
+  add $1,$2
+  sub $2,$1
+  add $1,$2
 lpe
-mov $0,$4
+mul $0,$2
+add $0,$1
+div $0,3

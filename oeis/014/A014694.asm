@@ -4,7 +4,6 @@
 
 #offset 1
 
-mov $1,$0
 mov $2,-2
 bin $2,$0
 div $2,2
@@ -16,10 +15,10 @@ mov $4,4
 mov $5,$3
 pow $5,4
 lpb $5
-  max $6,$4
-  seq $6,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  mul $6,2
-  sub $3,$6
+  max $1,$4
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  mul $1,2
+  sub $3,$1
   add $4,2
   sub $5,$3
 lpe

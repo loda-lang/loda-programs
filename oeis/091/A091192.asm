@@ -10,7 +10,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
+  add $3,$1
   seq $3,294889 ; Sum of abundant proper divisors of n.
   trn $3,3
   min $3,1
@@ -23,4 +23,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+mul $0,2

@@ -1,20 +1,19 @@
 ; A049711: a(n) = n - prevprime(n).
-; Submitted by Science United
+; Submitted by Ralfy
 ; 1,1,2,1,2,1,2,3,4,1,2,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,1,2,3,4,5,6,1,2,3,4,5,6,1,2,1,2,3,4,5,6,1,2,3,4,1,2,1,2,3,4,5,6,1,2,3
 
 #offset 3
 
-mov $1,222223120
-sub $0,1
-mod $0,99
-lpb $0
-  sub $0,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $3,$1
+  add $4,2
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  mul $4,$3
+  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  add $1,$4
   add $2,1
-  mov $3,$0
-  add $3,1
-  seq $3,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  add $0,$3
+  mul $4,2
 lpe
-bxo $1,$2
-mov $0,$1
-sub $0,222223119
+mov $0,$2

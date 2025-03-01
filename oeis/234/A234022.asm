@@ -1,16 +1,6 @@
 ; A234022: a(n) = A000120(A193231(n)); number of 1-bits in blue code for n.
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 0,1,2,1,2,1,2,3,4,3,2,3,2,3,2,1,2,1,2,3,2,3,4,3,4,5,4,3,4,3,2,3,4,3,2,3,4,5,4,3,4,5,6,5,4,3,4,5,2,3,2,1,4,3,2,3,4,3,4,5,2,3,4,3,4,3,4,5,2,3,4,3,4,5,4,3,6,5,4,5
 
-lpb $0
-  mov $4,$0
-  div $4,2
-  seq $4,6068 ; a(n) is Gray-coded into n.
-  mov $2,$0
-  sub $2,$4
-  mov $3,$2
-  mod $3,2
-  sub $0,$2
-  add $1,$3
-lpe
-mov $0,$1
+seq $0,193231 ; Blue code for n: in binary coding of a polynomial over GF(2), substitute x+1 for x (see Comments for precise definition).
+dgs $0,2

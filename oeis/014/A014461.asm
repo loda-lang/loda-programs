@@ -15,7 +15,6 @@ lpb $2
   seq $3,14449 ; Numbers in the triangle of Eulerian numbers (A008292) that are not 1.
   mov $5,$3
   mod $3,2
-  neq $3,0
   sub $0,$3
   mov $4,$0
   max $4,0

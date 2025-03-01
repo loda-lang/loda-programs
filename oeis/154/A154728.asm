@@ -15,7 +15,6 @@ lpb $1
   mov $2,$0
   add $2,3
   seq $2,2476 ; Primes of the form 6m + 1.
-  add $0,2
   mul $4,$2
 lpe
 mov $0,$4

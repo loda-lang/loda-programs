@@ -1,18 +1,7 @@
 ; A065357: a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
-; Submitted by iBezanilla
+; Submitted by mmonnin
 ; 1,1,-1,1,1,-1,-1,1,1,1,1,-1,-1,1,1,1,1,-1,-1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,-1,-1,1,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,-1,-1,1,1,1,1,1,1,-1,-1,-1,-1,1,1,-1,-1,-1,-1,-1,-1,1
+; Formula: a(n) = A008683(A083907(n))
 
-mov $2,0
-add $0,1
-lpb $0
-  sub $0,2
-  div $0,2
-  mul $0,2
-  add $0,3
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  add $2,1
-lpe
-mov $1,-1
-bin $1,$2
-mov $0,$2
-mov $0,$1
+seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
+seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.

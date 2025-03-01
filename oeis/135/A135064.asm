@@ -1,19 +1,19 @@
 ; A135064: Numbers n such that the quintic polynomial x^5 - 10*n*x^2 - 24*n has Galois group A_5 over rationals.
-; Submitted by Jamie Morken(s1)
+; Submitted by BrandyNOW
 ; 1,11,29,76,199,521,1364,3571,9349,24476,64079,167761,439204,1149851,3010349,7881196,20633239,54018521,141422324,370248451,969323029,2537720636,6643838879,17393796001,45537549124,119218851371,312119004989,817138163596,2139295485799,5600748293801
-; Formula: a(n) = b(n-1), b(n) = 3*b(n-1)-b(n-2), b(4) = 199, b(3) = 76, b(2) = 29, b(1) = 11, b(0) = 1
+; Formula: a(n) = truncate((b(max(2*n-2,0))+c(max(2*n-2,0)))/3), b(n) = 2*max(b(n-2),9)+c(n-2), b(3) = 21, b(2) = 21, b(1) = 0, b(0) = 0, c(n) = c(n-2)+max(2*c(n-2)-c(n-4),9), c(6) = 87, c(5) = 33, c(4) = 33, c(3) = 12, c(2) = 12, c(1) = 3, c(0) = 3
 
 #offset 1
 
-mov $1,1
-mov $2,2
-mov $3,6
+mov $2,3
 sub $0,1
+mul $0,2
 lpb $0
-  sub $0,1
-  add $3,$1
-  add $2,$3
-  mov $1,$2
-  add $1,2
+  sub $0,2
+  max $1,9
+  add $2,$1
+  add $1,$2
 lpe
-mov $0,$1
+add $2,$1
+mov $0,$2
+div $0,3

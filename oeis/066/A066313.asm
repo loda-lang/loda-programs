@@ -16,16 +16,15 @@ lpb $2
   sub $0,$2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
-  mov $5,0
   sub $0,1
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $0,1
+  mov $5,$0
+  div $5,2
   mov $6,$0
-  mov $8,$0
-  div $8,2
-  seq $0,256216 ; a(n) = A053656(n) - A000011(n).
   mov $7,2
-  pow $7,$8
+  pow $7,$5
+  seq $0,256216 ; a(n) = A053656(n) - A000011(n).
   seq $6,13 ; Definition (1): Number of n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.
   add $6,$7
   div $6,2

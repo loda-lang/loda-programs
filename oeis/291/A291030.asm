@@ -8,13 +8,13 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,3
+    add $7,2
     seq $7,27929 ; a(n) = T(n, 2*n-6), T given by A027926.
     mov $9,10
     add $9,$5
     mov $10,3
+    sub $4,1
     mul $7,$$9
     add $5,1
     add $6,$7

@@ -1,28 +1,26 @@
 ; A122952: Decimal expansion of 3*Pi.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 9,4,2,4,7,7,7,9,6,0,7,6,9,3,7,9,7,1,5,3,8,7,9,3,0,1,4,9,8,3,8,5,0,8,6,5,2,5,9,1,5,0,8,1,9,8,1,2,5,3,1,7,4,6,2,9,2,4,8,3,3,7,7,6,9,2,3,4,4,9,2,1,8,8,5,8,6,2,6,9
 
 #offset 1
 
-mov $2,1
+mov $1,1
 mov $3,$0
-mul $3,5
+mul $3,7
 lpb $3
-  mov $5,$3
-  mul $5,2
-  add $5,1
-  mul $2,$5
-  mul $1,$3
-  add $1,$2
-  div $1,$0
-  div $2,$0
+  max $3,1
+  max $5,$2
+  div $5,$3
+  add $2,$1
   sub $3,1
+  mul $1,2
+  add $1,$5
 lpe
+sub $0,1
 mov $4,10
 pow $4,$0
-mul $4,$5
 div $2,$4
-div $1,5
+mul $1,6
 div $1,$2
 mov $0,$1
 mod $0,10

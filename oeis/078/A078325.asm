@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   sub $2,1
@@ -16,7 +15,6 @@ lpb $2
   add $5,2
   sub $3,1
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
-  seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   equ $3,1
   sub $0,$3
   add $1,1

@@ -1,13 +1,16 @@
 ; A321856: Number of primes of the form 3*m + 2 <= n minus number of primes of the form 3*m + 1 <= n.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Science United
 ; 0,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,1,2,2,2,2,2,2,3,3,2,2,2,2,2,2,1,1,1,1,2,2,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,3,3,3,3,3,3,2,2,2,2,3,3,2,2,2,2,2,2,1,1
 
+#offset 1
+
 mov $3,3
-add $0,3
+add $0,2
 lpb $0
   sub $0,$3
   mov $2,$0
   add $2,81
+  div $5,2
   max $5,$2
   sub $5,80
   seq $5,191558 ; a(n) = 0 if n prime, otherwise n.

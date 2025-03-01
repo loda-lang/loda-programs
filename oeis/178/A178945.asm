@@ -6,29 +6,24 @@
 
 sub $0,1
 mov $1,$0
-mov $4,$0
-min $4,1
 trn $0,1
 add $0,1
 mov $6,$0
 lpb $0
   sub $0,1
-  add $4,1
-  mov $7,2
-  pow $7,$6
-  add $5,$7
+  mov $4,2
+  pow $4,$6
+  add $5,$4
 lpe
-div $5,$6
-mov $0,$5
-mul $0,$4
-add $0,1
 sub $1,1
 mov $3,$1
 mod $3,2
-add $1,1
+mul $3,2
 div $1,2
 mov $2,2
 pow $2,$1
 mul $2,$3
+mov $0,$5
+add $0,$4
 add $0,$2
 div $0,2

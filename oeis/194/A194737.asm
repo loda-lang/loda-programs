@@ -1,27 +1,24 @@
 ; A194737: Number of k such that {-k*sqrt(2)} > {-n*sqrt(2)}, where { } = fractional part.
-; Submitted by Mumps
+; Submitted by [AF] Kalianthys
 ; 0,1,0,2,0,3,6,2,6,1,6,11,4,10,2,9,0,8,16,5,14,2,12,22,8,19,4,16,0,13,26,8,22,3,18,33,12,28,6,23,40,16,34,9,28,2,22,42,14,35,6,28,50,19,42,10,34,1,26,51,16,42,6,33,60,22,50,11,40,69,28,58,16,47,4,36,68,23,56,10
 
 #offset 1
 
-mov $1,$0
-add $1,1
 sub $0,1
+mov $1,$0
 lpb $0
-  mov $5,1
-  add $5,$0
-  mov $4,$5
-  pow $4,2
-  mul $4,2
-  mov $3,$4
-  nrt $3,2
-  add $5,$3
+  mov $3,$0
+  add $3,1
+  mov $4,$3
+  add $4,$3
+  mul $4,$3
+  nrt $4,2
   sub $0,1
-  add $2,$5
+  add $2,$4
 lpe
-add $2,2
+add $2,1
 mov $0,$2
 mul $0,2
-sub $0,1
+add $0,$1
+add $1,2
 mod $0,$1
-sub $0,1

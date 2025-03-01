@@ -4,7 +4,6 @@
 #offset 1
 
 mov $1,$0
-add $1,12
 mod $1,2
 mul $1,2
 sub $0,1

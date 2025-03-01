@@ -1,21 +1,23 @@
 ; A133603: The matrix-vector product A133566 * A000108.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Ralfy
 ; 1,1,3,5,19,42,174,429,1859,4862,21658,58786,266798,742900,3417340,9694845,45052515,129644790,607283490,1767263190,8331383610,24466267020,115948830660,343059613650,1632963760974,4861946401452
+; Formula: a(n) = floor(binomial(2*max(n-1,0),max(n-1,0))/(max(n-1,0)+1))*(max(n-1,0)%2)+floor(binomial(2*n,n)/(n+1))
 
-mov $3,$0
-trn $0,1
-mod $0,2
-mov $2,$0
-add $2,1
-lpb $2
-  div $2,2
-  mov $0,$3
-  sub $0,$2
-  mov $1,$0
-  add $1,$0
-  bin $1,$0
-  add $0,1
-  div $1,$0
-  add $4,$1
-lpe
-mov $0,$4
+mov $1,$0
+trn $1,1
+mov $2,$1
+mod $2,2
+mov $3,$1
+mov $4,$1
+add $4,1
+mul $1,2
+bin $1,$3
+div $1,$4
+mov $5,$0
+mul $0,2
+bin $0,$5
+add $5,1
+div $0,$5
+mul $1,$2
+add $1,$0
+mov $0,$1

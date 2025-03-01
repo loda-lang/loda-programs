@@ -1,5 +1,5 @@
 ; A290496: First differences of A001751.
-; Submitted by L@MiR
+; Submitted by Science United
 ; 1,1,1,1,1,3,1,2,1,3,2,3,1,3,3,2,3,3,1,3,2,3,1,6,5,1,2,1,5,4,2,1,5,3,1,3,3,5,3,4,2,3,1,2,4,5,4,5,4,3,3,2,3,4,3,2,6,1,5,3,1,6,5,1,2,10,2,1,3,2,3,4,5,3,4,5,3,1,2,4
 
 #offset 1
@@ -15,6 +15,7 @@ lpb $3
   seq $0,1751 ; Primes together with primes multiplied by 2.
   mov $2,$3
   mul $2,$0
+  mul $4,$3
   add $1,$2
   mov $5,$0
 lpe

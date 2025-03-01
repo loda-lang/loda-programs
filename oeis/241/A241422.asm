@@ -2,12 +2,10 @@
 ; Submitted by owensse
 ; 0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1
 
-mov $1,0
 add $0,102
 lpb $0
   seq $0,130526 ; A permutation of the integers induced by the lower and upper Wythoff sequences.
   add $1,1
 lpe
 mov $0,$1
-add $0,2
 mod $0,2

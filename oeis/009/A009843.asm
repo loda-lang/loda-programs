@@ -1,23 +1,18 @@
 ; A009843: E.g.f. x/cos(x) (odd powers only).
-; Submitted by atannir
+; Submitted by mmonnin
 ; 1,3,25,427,12465,555731,35135945,2990414715,329655706465,45692713833379,7777794952988025,1595024111042171723,387863354088927172625,110350957750914345093747,36315529600705266098580265,13687860690719716241164167451,5858139922124796551409938058945
+; Formula: a(n) = 2*truncate((gcd(A155585(2*n),A122045(2*n))*(2*n+1))/2)+1
 
 mul $0,2
-add $0,1
-mov $2,$0
-bin $2,2
+mov $2,1
 add $2,$0
-add $2,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
-  seq $0,109449 ; Triangle read by rows, T(n,k) = binomial(n,k)*A000111(n-k), 0 <= k <= n.
-  add $3,$1
-  mov $1,$2
-lpe
-add $0,3
-dif $0,2
+mov $1,$0
+seq $1,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$1
+mul $0,$2
+mov $1,$0
+div $1,2
+mov $0,$1
 mul $0,2
-sub $0,3
+add $0,1

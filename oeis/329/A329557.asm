@@ -2,12 +2,15 @@
 ; Submitted by Science United
 ; 1,3,15,165,2145,36465,1057485,32782035,1344063435,57794727705,2716352202135,160264779925965,10737740255039655,783855038617894815,61924548050813690385,5139737488217536301955,519113486309971166497455,56583370007786857148222595,6393920810879914857749153235
 
-mov $1,1
+add $0,1
+mov $2,1
+mov $1,$0
 lpb $1
-  mov $2,$0
-  add $2,1
-  seq $2,329558 ; Product of primes indexed by the first n squarefree numbers.
-  div $1,$2
+  mov $3,$1
+  seq $3,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
+  seq $3,40 ; The prime numbers.
+  sub $1,1
+  mul $2,$3
 lpe
 mov $0,$2
 div $0,2

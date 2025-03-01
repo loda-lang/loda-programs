@@ -1,8 +1,9 @@
 ; A367734: Numbers that have no balanced divisors except for 1.
-; Submitted by Karlsson
+; Submitted by [AF] Kalianthys
 ; 1,5,7,11,13,17,19,23,25,29,31,37,41,43,47,49,53,55,59,61,65,67,71,73,77,79,83,85,89,91,95,97,101,103,107,109,113,115,119,121,125,127,131,133,137,139,143,145,149,151,155,157,161,163,167,169,173,179,181,185,187,191,193,197,199,203,205,209,211,215,217,221,223,227,229,233,235,239,241,247
 
-add $0,1
+#offset 1
+
 mov $3,$0
 sub $0,1
 add $3,13
@@ -10,7 +11,7 @@ pow $3,2
 lpb $3
   sub $3,6
   mov $4,$2
-  seq $4,351113 ; Sum of the balanced numbers dividing n.
+  seq $4,351112 ; Number of balanced numbers dividing n.
   bin $4,2
   equ $4,0
   sub $0,$4
@@ -18,6 +19,7 @@ lpb $3
   max $1,0
   equ $1,$0
   add $2,1
+  add $2,$1
   mul $3,$1
 lpe
 mov $0,$2

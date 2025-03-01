@@ -1,33 +1,36 @@
 ; A222073: Decimal expansion of (32/25515)*Pi^4.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 1,2,2,1,6,6,9,9,6,3,9,7,7,2,9,8,8,4,0,5,1,1,8,9,1,2,9,7,6,8,3,1,5,2,4,8,2,8,4,9,8,0,7,0,7,0,9,4,8,8,2,7,5,5,0,1,1,8,3,5,0,5,7,8,2,7,9,0,7,7,9,4,4,1,9,6,9,3,1,3
 
-add $0,3
-mov $2,-2
+add $0,2
+mov $2,2
 mov $3,$0
-mul $3,4
+mul $3,3
 lpb $3
   mov $5,$3
   mul $5,2
   add $5,1
   mul $2,$5
-  add $5,1
   mul $1,$3
   add $1,$2
   div $1,$0
-  div $2,$0
   sub $3,1
+  sub $5,1
+  div $2,$0
+  mul $2,2
 lpe
-add $0,1
+pow $1,2
+div $1,$2
 mov $4,10
 pow $4,$0
-mul $2,10
+mul $2,5
+div $2,2
 pow $2,$5
 div $2,$4
-mul $2,252
-div $1,3
-mul $1,8
+div $2,4
 pow $1,$5
+mul $1,$5
 div $1,$2
+div $1,14
 mov $0,$1
 mod $0,10

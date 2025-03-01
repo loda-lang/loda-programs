@@ -1,17 +1,16 @@
 ; A022165: First row of spectral array W(sqrt(5)-1).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,5,6,26,32,136,168,712,880,3728,4608,19520,24128,102208,126336,535168,661504,2802176,3463680,14672384,18136064,76825600,94961664,402264064,497225728,2106281984,2603507712
+; Formula: a(n) = truncate((min(n+2,(n+2)%2)*b(n+2)+c(n+2))/3), b(n) = 4*b(n-2)+4*c(n-2), b(3) = 12, b(2) = 12, b(1) = 3, b(0) = 3, c(n) = 2*c(n-2)+b(n-2), c(3) = 3, c(2) = 3, c(1) = 0, c(0) = 0
 
-mov $2,1
-add $0,1
+mov $1,3
+add $0,2
 lpb $0
   sub $0,2
   add $1,$2
-  mul $2,4
   add $2,$1
+  mul $1,4
 lpe
-lpb $0
-  div $0,4
-  add $2,$1
-lpe
-mov $0,$2
+mul $0,$1
+add $0,$2
+div $0,3

@@ -1,21 +1,17 @@
 ; A134520: Triangle read by rows: A007318 + A128174 - A000012 as infinite lower triangular matrices.
-; Submitted by fzs600
+; Submitted by Science United
 ; 1,0,1,1,1,1,0,3,2,1,1,3,6,3,1,0,5,9,10,4,1,1,5,15,19,15,5,1,0,7,20,35,34,21,6,1,1,7,28,55,70,55,28,7,1,0,9,35,84,125,126,83,36,8,1,1,9,45,119,210,251,210,119,45,9,1,0,11,54,165,329,462,461,330,164,55,10,1
 
 lpb $0
-  add $1,1
-  sub $0,$1
-  mov $2,$1
-  sub $2,$0
+  add $2,1
+  sub $0,$2
 lpe
+mov $1,$2
 bin $1,$0
-mov $0,$2
-div $0,9
-add $0,1
-gcd $2,2
-add $1,$2
-add $1,$2
-div $2,$0
-sub $1,$2
-mov $0,$1
-sub $0,2
+mul $1,2
+add $0,3
+add $0,$2
+mod $0,2
+add $0,$1
+sub $0,1
+div $0,2

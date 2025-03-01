@@ -1,17 +1,24 @@
 ; A358206: Number of ways of making change for n cents using coins of 1, 2, 4, 10 and 20 cents.
-; Submitted by Science United
+; Submitted by Rutor
 ; 1,1,2,2,4,4,6,6,9,9,13,13,18,18,24,24,31,31,39,39,50,50,62,62,77,77,93,93,112,112,134,134,159,159,187,187,218,218,252,252,292,292,335,335,384,384,436,436,494,494,558,558,628,628,704,704,786,786,874,874,972,972
 
-mov $1,0
-mov $3,3
+mov $4,3
 div $0,2
 add $0,3
 lpb $0
-  sub $0,$3
+  sub $0,$4
   mov $2,$0
-  max $2,0
-  seq $2,1304 ; Expansion of 1/((1-x)^2*(1-x^2)*(1-x^5)).
-  add $1,$2
-  mov $3,10
+  pow $2,2
+  mul $2,2
+  mov $4,10
+  mov $1,$0
+  mul $1,11
+  add $2,$1
+  add $2,18
+  mov $5,$0
+  add $5,8
+  mul $5,$2
+  div $5,120
+  add $3,$5
 lpe
-mov $0,$1
+mov $0,$3
