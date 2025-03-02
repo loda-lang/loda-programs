@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 4,5,6,3,3,5,3,5,4,6,3,4
 
-add $0,1
+#offset 1
+
 mov $2,2
 mov $4,$0
 mov $3,$0
@@ -13,7 +14,7 @@ lpb $3
     add $6,1
     mov $7,$0
     mod $7,$2
-    cmp $7,0
+    equ $7,0
     div $0,$2
     add $4,$1
     sub $5,$7
@@ -26,7 +27,7 @@ lpb $3
   sub $3,1
   mod $3,11
   mov $7,$0
-  cmp $7,1
+  equ $7,1
 lpe
 mov $0,$1
 add $0,3

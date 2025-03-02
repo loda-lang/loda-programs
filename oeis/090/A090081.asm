@@ -14,6 +14,7 @@ add $3,7
 pow $3,2
 lpb $3
   mov $4,$2
+  add $4,2
   seq $4,307907 ; a(n) is the greatest k such that p^k <= n for any prime factor p of n.
   trn $4,2
   min $4,1

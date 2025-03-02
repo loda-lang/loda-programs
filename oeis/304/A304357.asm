@@ -11,7 +11,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,352361 ; Array read by ascending antidiagonals. T(n, k) = F(k, n), where F are the Fibonacci polynomials.
+  seq $0,352361 ; Array read by ascending antidiagonals. A(n, k) = Fibonacci(k, n), where Fibonacci(n, x) are the Fibonacci polynomials.
   add $1,$0
 lpe
 mov $0,$1

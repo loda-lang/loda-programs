@@ -2,7 +2,8 @@
 ; Submitted by PDW
 ; 1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2
 
-add $0,1
+#offset 1
+
 seq $0,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
 lpb $0
   mod $0,2

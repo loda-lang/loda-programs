@@ -10,7 +10,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   seq $0,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
-  cmp $1,1
+  equ $1,1
   add $1,$4
   mul $1,2
   bin $1,$4

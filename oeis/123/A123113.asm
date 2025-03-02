@@ -14,6 +14,7 @@ lpb $0
   add $3,1
   mov $4,$3
   add $4,$0
+  add $4,1
   seq $4,303502 ; Integers k such that the digits of k together with a single supplementary digit can be reordered to form a base-10 palindrome.
   pow $4,$2
   add $1,$4

@@ -2,7 +2,8 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1
 
-add $0,1
+#offset 1
+
 pow $0,2
 sub $0,1
 mov $4,$0
@@ -16,7 +17,7 @@ lpb $2
   seq $0,322135 ; Table of truncated square pyramid numbers, read by antidiagonals.
   sub $0,1
   sub $0,$5
-  cmp $0,$2
+  equ $0,$2
   sub $0,1
   gcd $0,3
   mov $3,$0

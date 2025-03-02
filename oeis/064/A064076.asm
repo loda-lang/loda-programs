@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,306298 ; Numbers k such that k^2-1 is divisible by exactly two distinct primes.
   mov $5,$3
   add $1,1

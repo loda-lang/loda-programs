@@ -1,7 +1,10 @@
-; A305237: Numbers n such that n, n+1 and n+2 all have primitive roots.
+; A305237: Numbers m such that m, m+1 and m+2 all have primitive roots.
 ; Submitted by titidestroy
 ; 1,2,3,4,5,9,17,25,81,241
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 lpb $0
   sub $0,2

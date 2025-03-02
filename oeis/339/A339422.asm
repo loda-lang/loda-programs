@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,307037 ; The unitary analog of the alternating sum-of-divisors function (A206369).
     sub $7,1
     mod $7,2

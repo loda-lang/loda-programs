@@ -2,8 +2,10 @@
 ; Submitted by Kotenok2000
 ; 1,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,-2,0,0,0,0,0,0,0,-1,-1,0,0,-1,0,-1,0,-1,0,0,0,0,0,0,0,-1,0,0,-1,0,0,0,0,-1,0,0,0,-2,0,0,-1,-1,0,0,0,-1
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $4,$0
 lpb $4
   sub $4,1
@@ -16,7 +18,11 @@ lpb $4
   seq $5,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   mov $6,-1
   pow $6,$5
-  seq $0,132350 ; If n > 1 is a k-th power with k >= 2 then a(n) = 0, otherwise a(n) = 1.
+  seq $0,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+  trn $0,1
+  mov $7,$0
+  equ $7,0
+  mov $0,$7
   mul $0,$6
   mul $1,$0
   add $3,$1

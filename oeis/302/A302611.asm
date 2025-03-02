@@ -9,9 +9,9 @@ lpb $3
   mov $8,$7
   sub $0,1
   add $1,$4
-  cmp $4,0
+  equ $4,0
   add $5,$4
-  cmp $6,0
+  equ $6,0
   mul $6,3
   mul $1,$3
   div $1,$5

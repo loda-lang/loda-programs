@@ -1,7 +1,16 @@
 ; A308467: The smallest positive n-digit 4th power.
 ; Submitted by shiva
 ; 1,16,256,1296,10000,104976,1048576,10556001,100000000,1003875856,10098039121,100469346961,1000000000000,10016218555281,100091400875761,1000417426149376,10000000000000000,100004631514837921,1000028258199628641
-; Formula: a(n) = A018074(n)^4
+; Formula: a(n) = (sqrtint(sqrtint(10^(n-1))-1)+1)^4
 
-seq $0,18074 ; Powers of fourth root of 10 rounded up.
+#offset 1
+
+sub $0,1
+mov $1,10
+pow $1,$0
+mov $0,$1
+nrt $0,2
+sub $0,1
+nrt $0,2
+add $0,1
 pow $0,4

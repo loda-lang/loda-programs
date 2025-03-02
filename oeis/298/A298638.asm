@@ -13,6 +13,7 @@ lpb $4
   mov $0,$2
   bin $0,2
   mov $3,$2
+  add $3,1
   seq $3,304367 ; Numbers n with additive persistence = 2.
   mov $1,$2
   bin $1,2

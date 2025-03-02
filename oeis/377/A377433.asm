@@ -10,7 +10,6 @@ lpb $3
   add $0,$3
   add $0,1
   seq $0,40 ; The prime numbers.
-  sub $0,1
   seq $0,304573 ; Number of non-perfect powers (A007916) less than n and relatively prime to n.
   mov $2,$3
   mul $2,$0

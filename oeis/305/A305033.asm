@@ -2,13 +2,16 @@
 ; Submitted by Skillz
 ; 1,2,5,11,13,17,23,29,31,37,41,43,53,59,61,67,71,73,83,97,101,103,107,127,131,137,149,157,163,167,173,181,193,211,223,229,239,241,263,277,283,293,307,313,317,337,373,383,389,409,421,449,457,463,479,523,541
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  nrt $5,2
   seq $5,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
   mov $3,$1
   add $3,$5

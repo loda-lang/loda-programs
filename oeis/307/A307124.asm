@@ -1,9 +1,10 @@
 ; A307124: a(n) is twice the square of the product of the first n primes each decreased by one.
 ; Submitted by entity
 ; 2,8,128,4608,460800,66355200,16986931200,5503765708800,2663822603059200,2088436920798412800,1879593228718571520000,2435952824419268689920000,3897524519070829903872000000,6875233251640943950430208000000
-; Formula: a(n) = 2*A005867(n+1)^2
+; Formula: a(n) = 2*A005867(n)^2
 
-add $0,1
+#offset 1
+
 mov $1,$0
 seq $1,5867 ; a(0) = 1; for n > 0, a(n) = (prime(n)-1)*a(n-1).
 mov $2,$1

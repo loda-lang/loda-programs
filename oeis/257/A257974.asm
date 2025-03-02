@@ -15,6 +15,7 @@ lpb $2
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
   mov $5,$3
+  add $3,1
   seq $3,307666 ; Number of partitions of n into consecutive positive triangular numbers.
   equ $3,0
   sub $0,$3

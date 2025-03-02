@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,304870 ; L.g.f.: log(Product_{k>=1} (1 + x^k)^(k^k)) = Sum_{n>=1} a(n)*x^n/n.
     mov $9,10
     add $9,$5

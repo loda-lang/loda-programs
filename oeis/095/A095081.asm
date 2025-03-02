@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,$4
+  add $5,1
   seq $5,307000 ; Number of unitary rings with additive group (Z/nZ)^2. Equivalently, number of unitary commutative rings with additive group (Z/nZ)^2.
   div $5,2
   pow $5,2

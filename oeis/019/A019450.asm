@@ -10,6 +10,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,308265 ; Sum of the largest parts in the partitions of n into 3 parts.
   add $1,$2
   mov $3,4

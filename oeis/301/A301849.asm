@@ -1,4 +1,4 @@
-; A301849: The Pagoda sequence: a sequence with isolated zeros in number-wall over finite fields.
+; A301849: The Pagoda sequence: a sequence with isolated zeros in its number wall over finite fields.
 ; Submitted by Simon Strandgaard
 ; -1,0,1,0,-1,1,1,-1,-1,0,1,1,-1,0,1,-1,-1,0,1,0,-1,1,1,0,-1,-1,1,1,-1,0,1,-1,-1,0,1,0,-1,1,1,-1,-1,0,1,1,-1,0,1,0,-1,-1,1,0,-1,1,1,0,-1,-1,1,1,-1,0,1,-1,-1,0,1,0,-1,1,1,-1,-1,0,1,1,-1,0,1,-1
 

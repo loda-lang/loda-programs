@@ -15,7 +15,7 @@ lpb $0
     mul $6,$5
     mov $7,$4
     seq $7,29131 ; Expansion of 1/((1-x)(1-x^8)(1-x^11)(1-x^12)).
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

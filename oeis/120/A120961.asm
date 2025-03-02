@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,306358 ; Odd numbers which are the sum of two squares in two or more different ways.
   mov $5,$3
   seq $3,224 ; Number of squares mod n.

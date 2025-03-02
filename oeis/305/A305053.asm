@@ -2,9 +2,10 @@
 ; Submitted by ChelseaOilman
 ; 0,-1,0,-1,0,-1,0,-1,1,-1,0,-1,1,-1,0,-1,0,0,0,-1,0,-1,0,-1,1,0,2,-1,1,-1,0,-1,0,-1,0,0,1,-1,1,-1,0,-1,1,-1,1,-1,1,-1,1,0,0,0,0,1,0,-1,0,0,0,-1,1,-1,1,-1,1,-1,0,-1,0,-1,1,0,1,0,1,-1,0
 
+#offset 1
+
 mov $1,1
 mov $2,2
-add $0,1
 lpb $0
   mov $3,$0
   lpb $3
@@ -16,7 +17,6 @@ lpb $0
   lpe
   sub $1,1
   mov $3,$2
-  sub $3,1
   seq $3,303975 ; Number of distinct prime factors in the product of prime indices of n.
   lpb $0
     dif $0,$2

@@ -1,10 +1,13 @@
 ; A305574: Number of primitive (1,1) pairs in the Fibonacci tree at depth 3n.
 ; Submitted by Jon Maiga
 ; 5,2,7,30,143,728,3876,21318,120175,690690,4032015,23841480,142498692,859515920,5225264024,31983672534,196947587823,1219199353190,7583142491925,47365474641870,296983176369495,1868545312633440,11793499763070480,74650344244967400
-; Formula: a(n) = floor(max(binomial(-n-2,2*n),5)/(2*n+1))
+; Formula: a(n) = truncate(max(binomial(-n-1,2*n-2),5)/(2*n-1))
+
+#offset 1
 
 mov $2,$0
-add $2,2
+add $2,1
+sub $0,1
 mul $0,2
 sub $1,$2
 bin $1,$0

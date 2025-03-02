@@ -1,9 +1,10 @@
 ; A301576: Number of longest cycles in the n X n antelope graph.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,1,4,1440
-; Formula: a(n) = truncate(((n-3)*(n+1)*2^binomial(n+1,8))/16)
+; Formula: a(n) = truncate((n*(n-4)*2^binomial(n,8))/16)
 
-add $0,1
+#offset 1
+
 mov $1,$0
 bin $0,8
 mov $2,2

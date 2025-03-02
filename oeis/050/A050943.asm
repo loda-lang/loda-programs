@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $5,$1
+  add $5,1
   seq $5,307666 ; Number of partitions of n into consecutive positive triangular numbers.
   mov $3,$1
   pow $3,$5

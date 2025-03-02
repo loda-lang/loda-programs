@@ -14,6 +14,7 @@ add $3,10
 pow $3,2
 lpb $3
   mov $6,$2
+  add $6,1
   seq $6,307000 ; Number of unitary rings with additive group (Z/nZ)^2. Equivalently, number of unitary commutative rings with additive group (Z/nZ)^2.
   div $6,2
   mov $4,$2

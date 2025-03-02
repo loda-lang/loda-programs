@@ -2,8 +2,10 @@
 ; Submitted by shiva
 ; 4,5,7,12,20,25,39,71
 
+#offset 3
+
 mov $2,1
-sub $0,1
+sub $0,4
 lpb $0
   mov $3,$0
   mod $3,2

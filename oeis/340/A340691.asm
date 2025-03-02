@@ -15,7 +15,6 @@ lpb $0
   lpe
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,302242 ; Total weight of the n-th multiset multisystem. Totally additive with a(prime(n)) = Omega(n).
   lpb $0
     dif $0,$2

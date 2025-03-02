@@ -2,6 +2,9 @@
 ; Submitted by arkiss
 ; 0,0,0,0,2,4,23,54,64
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   max $0,3
@@ -18,7 +21,7 @@ lpb $0
   add $3,1
   add $4,2
   add $4,$1
-  cmp $1,4
+  equ $1,4
   add $5,$2
 lpe
 mov $0,$4

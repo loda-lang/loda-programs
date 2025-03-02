@@ -2,9 +2,11 @@
 ; Submitted by Science United
 ; 1,4,16,64,64,256,256,256,256,1024,1024,1024,1024
 
+#offset 1
+
 mov $2,1
 mul $0,2
-sub $0,1
+sub $0,3
 lpb $0
   div $0,2
   mul $2,2

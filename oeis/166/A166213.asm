@@ -25,6 +25,7 @@ lpb $2
     div $0,$0
     mul $0,2
     mul $0,$1
+    add $0,1
     seq $0,308096 ; Take all the integer-sided triangles with perimeter n and sides a, b, and c such that a <= b <= c. a(n) is the sum of all the b's.
     add $6,$0
   lpe

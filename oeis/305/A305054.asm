@@ -17,7 +17,6 @@ lpb $0
   lpe
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,303975 ; Number of distinct prime factors in the product of prime indices of n.
   lpb $0
     dif $0,$2

@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,307666 ; Number of partitions of n into consecutive positive triangular numbers.
   equ $3,0
   sub $0,$3

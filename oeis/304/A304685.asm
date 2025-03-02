@@ -1,10 +1,12 @@
 ; A304685: a(n) = A000699(n) (mod 3).
 ; Submitted by Cruncher Pete
 ; 1,1,1,0,2,1,0,0,1,0,0,0,0,1,2,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = -3*truncate(truncate((truncate((2*binomial(-n-1,2*n))/binomial(2*n+2,2))*2^n)/2)/3)+truncate((truncate((2*binomial(-n-1,2*n))/binomial(2*n+2,2))*2^n)/2)
+; Formula: a(n) = -3*truncate(truncate((truncate((2*binomial(-n,2*n-2))/binomial(2*n,2))*2^(n-1))/2)/3)+truncate((truncate((2*binomial(-n,2*n-2))/binomial(2*n,2))*2^(n-1))/2)
+
+#offset 1
 
 mov $5,$0
-add $5,1
+sub $0,1
 mov $1,$0
 mul $1,2
 sub $4,$5

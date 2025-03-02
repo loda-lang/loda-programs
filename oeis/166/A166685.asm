@@ -12,6 +12,7 @@ lpb $1
   mov $0,$3
   add $0,$1
   trn $0,1
+  add $0,1
   seq $0,308833 ; Numbers r such that the r-th tetrahedral number A000292(r) divides r!.
   mov $2,$0
   add $2,1

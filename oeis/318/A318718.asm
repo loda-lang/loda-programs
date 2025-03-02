@@ -13,6 +13,7 @@ lpb $3
   equ $7,$2
   mov $4,$2
   trn $4,1
+  add $4,1
   seq $4,305078 ; Heinz numbers of connected integer partitions.
   sub $4,1
   sub $4,$7

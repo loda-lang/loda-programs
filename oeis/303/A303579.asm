@@ -2,12 +2,16 @@
 ; Submitted by Mumps
 ; 5,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,2
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $3,2
 lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,303580 ; List of starts of nondecreasing runs of values of the Euler totient function phi(n) (A000010(n)).
   mov $2,$3
   mul $2,$0

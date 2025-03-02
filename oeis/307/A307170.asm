@@ -2,6 +2,9 @@
 ; Submitted by davidBAM
 ; 0,0,0,12,0,21,0,24
 
+#offset 1
+
+sub $0,1
 lpb $0
   max $1,$0
   add $1,1

@@ -10,5 +10,5 @@ lpb $1
   mov $1,$0
   add $0,2
 lpe
-add $0,1
+add $0,2
 seq $0,305233 ; Smallest k such that binomial(k, floor(k/2)) >= n.

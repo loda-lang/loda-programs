@@ -2,6 +2,9 @@
 ; Submitted by vaughan
 ; 0,0,1,0,2,2,2,0,3,2,2,3,2,3,3,0,4,3,2,3
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 seq $2,249205 ; Decimal expansion of the logarithmic capacity of the unit disk.
 lpb $0

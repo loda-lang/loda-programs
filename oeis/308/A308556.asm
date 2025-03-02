@@ -2,7 +2,10 @@
 ; Submitted by TankbusterGames
 ; 0,1,2,4,12,30,85,300
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $5,$1

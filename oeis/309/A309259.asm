@@ -2,7 +2,8 @@
 ; Submitted by AlexxAl
 ; 1,3,18,80,75,63,196,144,405
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mov $2,$0
 mul $2,2

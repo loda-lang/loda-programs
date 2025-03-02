@@ -7,10 +7,10 @@ add $0,1
 mov $4,$0
 mov $3,$0
 lpb $3
-  cmp $0,$5
+  equ $0,$5
   add $1,1
   mov $2,$0
-  cmp $2,0
+  equ $2,0
   sub $3,$2
   sub $5,3
   mul $5,4

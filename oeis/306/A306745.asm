@@ -6,7 +6,8 @@ mov $1,$0
 mov $2,$0
 mul $2,2
 seq $2,363596 ; a(n) = (Product_{k=1..pi(n+1)} prime(k)^floor(n/(prime(k)-1) ) )/(n+1)!.
-seq $0,56603 ; Squarefree kernels of distinct values of lcm(1,...,m) (A051451).
+seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
+seq $0,34386 ; Primorial numbers (second definition): n# = product of primes <= n.
 gcd $2,$0
 mov $0,$2
 mul $1,2

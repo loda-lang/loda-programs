@@ -3,10 +3,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 seq $1,307989 ; a(n) = n - pi(2*n) + pi(n-1), where pi is the prime counting function.
-add $0,1
 lpb $0
   mov $0,1
   add $1,1

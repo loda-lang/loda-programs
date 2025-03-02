@@ -2,6 +2,9 @@
 ; Submitted by yoyo_rkn
 ; 2,2,2,3,4,4,5,5,6,7,7,8,9,9,10,10,10,11,12
 
+#offset 2
+
+sub $0,2
 mul $0,2
 lpb $0
   add $1,1

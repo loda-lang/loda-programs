@@ -9,6 +9,7 @@ lpb $0
   mov $0,21
   seq $0,5766 ; a(n) = cost of minimal multiplication-cost addition chain for n.
   mul $0,2
+  add $0,1
   seq $0,308048 ; a(n) = n - nextprime(ceiling(n/2) - 1), where nextprime(n) is the smallest prime > n.
   div $0,2
   sub $0,10

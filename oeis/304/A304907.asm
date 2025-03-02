@@ -5,6 +5,6 @@
 
 mov $1,2
 mul $1,$0
-seq $0,3242 ; Number of compositions of n such that no two adjacent parts are equal (Carlitz compositions).
+seq $0,3242 ; Number of compositions of n such that no two adjacent parts are equal (these are sometimes called Carlitz compositions).
 mul $0,$1
 div $0,2

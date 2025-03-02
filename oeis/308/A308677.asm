@@ -1,8 +1,11 @@
 ; A308677: Kuba-Panholzer Table 2 pattern 312, 213 for Stirling permutation k = 2.
 ; Submitted by Christian Krause
 ; 3,23,155,1014,6580,42636,276507,1796300,11692395,76257675,498286932,3261636728,21384163320,140407901032,923165093595,6077239852824,40052346318985,264243349910925,1745013401135235,11533997779931550,76298933599198800,505113085597039920,3346315941511650900
-; Formula: a(n) = 2*binomial(2*n+floor((2*n)/2)+5,floor((2*n)/2))+binomial(2*n+floor((2*n)/2)+4,floor((2*n)/2))
+; Formula: a(n) = 2*binomial(2*n+truncate((2*n-6)/2)-1,truncate((2*n-6)/2))+binomial(2*n+truncate((2*n-6)/2)-2,truncate((2*n-6)/2))
 
+#offset 3
+
+sub $0,3
 mul $0,2
 mov $1,$0
 div $0,2

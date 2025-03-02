@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,219 ; Number of planar partitions (or plane partitions) of n.
+  seq $2,219 ; Number of plane partitions (or planar partitions) of n.
   div $3,2
   add $1,$2
 lpe

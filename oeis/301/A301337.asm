@@ -1,8 +1,11 @@
 ; A301337: Number of steps required in the worst case for two knights to find the princess in a castle with n rooms arranged in a line (Castle and princess puzzle).
 ; Submitted by Simon Strandgaard
 ; 1,1,2,2,2,3,4,4,6,6,6,7,8,8,10,10,10,11,12,12
-; Formula: a(n) = floor((4*n+4)/12)+truncate((6*floor(n/2)-5)/9)+1
+; Formula: a(n) = floor((4*n)/12)+truncate((6*floor((n-1)/2)-5)/9)+1
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mul $0,4
 add $0,4

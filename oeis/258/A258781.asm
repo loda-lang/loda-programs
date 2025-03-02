@@ -10,6 +10,6 @@ lpb $0
   sub $0,6
   pow $1,$1
 lpe
-add $0,1
+add $0,2
 seq $0,304480 ; a(n) is the least m such that lambda(k) >= n for all k >= m where lambda is A002322, the Carmichael lambda function.
 sub $0,1

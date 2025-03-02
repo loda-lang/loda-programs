@@ -1,8 +1,24 @@
 ; A309407: a(n) = round(sqrt(3*n + 9/4)), with a(0) = 1.
 ; Submitted by zombie67 [MM]
 ; 1,2,3,3,4,4,4,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15,15,15,15
-; Formula: a(n) = A000194(A287452(n+1))
 
+mov $1,$0
+mov $2,0
+mov $4,1
+lpb $0
+  mov $3,$0
+  mul $3,$4
+  div $0,3
+  add $2,$3
+  mul $4,2
+lpe
+mov $0,$2
+mod $0,3
+mul $1,3
+add $1,$0
+mov $0,$1
 add $0,1
-seq $0,287452 ; Positions of 0 in A287451.
-seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+mul $0,4
+nrt $0,2
+add $0,1
+div $0,2

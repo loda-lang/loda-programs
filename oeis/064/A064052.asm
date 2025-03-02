@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,307907 ; a(n) is the greatest k such that p^k <= n for any prime factor p of n.
   equ $3,1
   sub $0,$3

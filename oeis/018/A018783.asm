@@ -5,6 +5,7 @@
 trn $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,300486 ; Number of relatively prime or monic partitions of n.
   mov $1,$0
   add $1,1

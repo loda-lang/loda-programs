@@ -2,8 +2,9 @@
 ; Submitted by Science United
 ; 5,7,8,9,10,11,12,13,13,14
 
+#offset 1
+
 mov $1,1
-add $0,1
 mul $0,18
 lpb $0
   sub $0,$1

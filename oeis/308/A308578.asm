@@ -2,7 +2,8 @@
 ; Submitted by Jamie Morken(w4)
 ; 0,1,1,4,5,9,10,16,20,25,30,36
 
-add $0,1
+#offset 1
+
 mov $4,$0
 lpb $0
   sub $0,1
