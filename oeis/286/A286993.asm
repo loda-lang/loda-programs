@@ -32,6 +32,5 @@ lpb $2
   gcd $0,3
   mov $3,$0
   div $3,2
-  mov $6,$7
 lpe
 mov $0,$3

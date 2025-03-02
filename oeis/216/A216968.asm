@@ -1,19 +1,20 @@
 ; A216968: Numbers n such that 2*n^2 + 3 is prime.
-; Submitted by LG@BOINC
+; Submitted by Science United
 ; 0,1,2,5,7,8,22,23,28,37,40,43,47,50,55,62,70,82,83,92,98,103,107,110,113,118,125,127,128,133,160,170,175,187,197,202,203,205,208,212,247,250,253,265,268,275,278,320,322,352,370,373,377,380,407,412,413,415,422,433,440,448,455,463,467,485,490,502,517,518,520,523,527,547,553,565,572,575,580,583
 
-add $0,1
+#offset 1
+
+mov $2,2
 mov $3,$0
 pow $3,5
 lpb $3
+  add $4,4
   mov $1,$2
-  add $1,3
-  seq $1,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$1
-  add $2,2
+  sub $2,2
   add $2,$4
   sub $3,$0
-  add $4,4
 lpe
 mov $0,$4
 div $0,4

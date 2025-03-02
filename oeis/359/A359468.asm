@@ -7,6 +7,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,349340 ; Dirichlet inverse of A003557, where A003557 is multiplicative with a(p^e) = p^(e-1).
   mov $3,$1
   add $3,1

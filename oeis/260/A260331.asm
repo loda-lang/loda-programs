@@ -1,16 +1,17 @@
 ; A260331: Labelings of n diamond-shaped posets with 4 vertices per diamond where the labels follow the poset relations.
-; Submitted by Groo
+; Submitted by Science United
 ; 1,2,280,277200,1009008000,9777287520000,207786914375040000,8508874143657888000000,611958228411875304960000000,72094798889203029677337600000000,13177487340968529764423766528000000000,3577714168047637768100581459885056000000000,1392303245637418713834022280928868392960000000000
-; Formula: a(n) = truncate(b(4*n)/(12^n)), b(n) = n*b(n-1), b(0) = 1
+; Formula: a(n) = truncate(b(n)/2), b(n) = 2*binomial(4*n,4)*b(n-1), b(1) = 4, b(0) = 2
 
-mov $2,1
-mov $3,$0
-mul $3,4
-lpb $3
-  mul $2,$3
-  sub $3,1
+mov $3,2
+lpb $0
+  sub $0,1
+  add $1,4
+  mov $2,$3
+  mov $3,$1
+  bin $3,4
+  mul $3,$2
+  mul $3,2
 lpe
-mov $1,12
-pow $1,$0
-div $2,$1
-mov $0,$2
+mov $0,$3
+div $0,2

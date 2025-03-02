@@ -1,5 +1,5 @@
 ; A057612: Numbers that are both Mersenne numbers (A001348) and lucky numbers (A000959).
-; Submitted by Science United
+; Submitted by mmonnin
 ; 3,7,31,127,8191,131071,524287,8388607
 
 #offset 1
@@ -11,12 +11,8 @@ lpb $2
   sub $0,$2
   div $2,2
 lpe
-mul $0,3
-mov $3,$0
-add $3,3
-div $3,3
 mov $1,2
-pow $1,$3
+pow $1,$0
 mov $0,$1
-mul $0,2
+mul $0,4
 sub $0,1

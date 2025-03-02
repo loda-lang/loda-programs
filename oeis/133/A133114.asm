@@ -1,5 +1,5 @@
 ; A133114: A000012 * A007318 * A133080.
-; Submitted by Simon Strandgaard
+; Submitted by yasiwo
 ; 1,1,1,2,1,1,2,2,3,1,3,2,7,3,1,3,3,13,7,5,1,4,3,22,13,16,5,1,4,4,34,22,40,16,7,1,5,4,50,34,86,40,29,7,1,5,5,70,50,166,86,91,29,9,1
 
 #offset 1
@@ -9,20 +9,18 @@ lpb $0
   add $2,1
   sub $0,$2
 lpe
-mov $1,1
+add $2,2
 sub $2,$0
-mov $3,2
 div $0,2
-mul $0,2
-add $0,1
+add $3,$0
+mov $4,$0
+mov $0,$2
 lpb $0
-  sub $0,1
-  add $2,1
-  add $4,1
-  mul $1,$2
-  div $1,$4
-  div $3,2
-  add $3,$1
+  sub $0,2
+  mul $3,2
+  add $3,$0
+  bin $3,$0
+  add $1,$3
+  mov $3,$4
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

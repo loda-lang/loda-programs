@@ -4,6 +4,7 @@
 
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,355297 ; a(n) = A007088(n) mod n.
   add $1,1
 lpe

@@ -1,21 +1,32 @@
 ; A000607: Number of partitions of n into prime parts.
-; Submitted by ChelseaOilman
+; Submitted by [AF] Kalianthys
 ; 1,0,1,1,1,2,2,3,3,4,5,6,7,9,10,12,14,17,19,23,26,30,35,40,46,52,60,67,77,87,98,111,124,140,157,175,197,219,244,272,302,336,372,413,456,504,557,614,677,744,819,899,987,1083,1186,1298,1420,1552,1695,1850,2018,2198,2394,2605,2833,3079,3344,3630,3936,4268,4624,5007,5419,5861,6336,6845,7393,7979,8608,9282
 
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
+mov $2,1
+mov $6,2
+lpb $0
   sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,34891 ; Number of different products of partitions of n; number of partitions of n into prime parts (1 included); number of distinct orders of Abelian subgroups of symmetric group S_n.
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    mov $7,$4
+    seq $7,8472 ; Sum of the distinct primes dividing n.
+    mov $9,10
+    add $9,$5
+    mul $10,2
+    sub $4,1
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  div $6,$2
+  mov $9,10
+  add $9,$2
+  mov $10,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
-mov $0,$1
+mov $0,$6
+div $0,2

@@ -1,19 +1,30 @@
 ; A040748: Continued fraction for sqrt(776).
-; Submitted by Science United
+; Submitted by [AF] Kalianthys
 ; 27,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1,54,1,5,1
 
-gcd $0,262156
-mul $0,42
-mod $0,13
-mov $1,$0
-div $1,5
-mul $1,4
-add $0,$1
-sub $0,2
-dif $0,4
-mul $0,8
-div $0,5
-mul $0,22
-sub $0,340
-div $0,11
-add $0,29
+mov $3,$0
+mul $3,2
+mov $4,10
+mov $2,$3
+gcd $3,8
+lpb $2
+  mov $2,3
+  add $3,6
+  mov $4,7
+lpe
+mul $3,$4
+trn $3,63
+mov $1,$3
+mul $1,2
+trn $1,1
+div $3,4
+mul $3,7
+add $3,$1
+dif $3,2
+add $3,10
+div $3,2
+mov $5,97
+mul $5,$3
+div $5,113
+mov $0,$5
+sub $0,3

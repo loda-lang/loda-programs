@@ -1,13 +1,29 @@
 ; A044314: Numbers n such that string 7,0 occurs in the base 9 representation of n but not of n-1.
-; Submitted by Jamie Morken(w3)
+; Submitted by gemini8
 ; 63,144,225,306,387,468,549,567,630,711,792,873,954,1035,1116,1197,1278,1296,1359,1440,1521,1602,1683,1764,1845,1926,2007,2025,2088,2169,2250,2331,2412,2493,2574,2655,2736,2754,2817
-; Formula: a(n) = 9*truncate((A044704(n+1)+1)/9)-90
 
 #offset 1
 
-add $0,1
-seq $0,44704 ; Numbers n such that string 8,0 occurs in the base 9 representation of n but not of n+1.
-add $0,1
-div $0,9
-sub $0,10
-mul $0,9
+sub $0,1
+mov $4,$0
+mov $2,$0
+add $2,3
+lpb $2
+  add $3,$2
+  mov $1,5
+  mov $2,0
+  sub $3,9
+  lpb $3
+    mul $1,8
+    add $2,$3
+    mov $3,0
+    sub $4,1
+  lpe
+  trn $2,1
+lpe
+mov $5,81
+mul $5,$4
+div $1,2
+add $1,$5
+mov $0,$1
+add $0,61

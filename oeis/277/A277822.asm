@@ -1,10 +1,13 @@
 ; A277822: a(n) = index of the column where n is located in array A277880.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,1,1,2,1,2,3,1,1,2,3,1,4,1,1,2,1,2,3,1,4,1,1,2,5,1,1,2,1,2,3,1,1,2,3,1,4,1,1,2,5,1,1,2,1,2,3,1,6,1,1,2,1,2,3,1,1,2,3,1,4,1,1,2,1,2,3,1,4,1,1,2,5,1,1,2,1,2,3,1
 
 equ $1,$0
-trn $0,1
-add $0,1
-seq $0,277808 ; a(n) = number of iterations of map k -> A003188(A006068(k)/2) that are required (when starting from k = n) until k is an odious number.
-add $0,1
+mov $2,$0
+add $2,$0
+dgs $0,2
+gcd $0,2
+lex $2,$0
+mov $0,$2
 sub $0,$1
+add $0,1

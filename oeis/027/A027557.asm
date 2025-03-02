@@ -1,21 +1,18 @@
 ; A027557: Number of 3-balanced strings of length n: let d(S)= #(1)'s in S - #(0)'s, then S is k-balanced if every substring T has -k<=d(T)<=k; here k=3.
-; Submitted by Fornax
+; Submitted by BrandyNOW
 ; 1,2,4,8,14,26,44,78,130,224,370,626,1028,1718,2810,4656,7594,12506,20356,33374,54242,88640,143906,234594,380548,619238,1003882,1631312,2643386,4291082,6950852,11274702,18258322,29598560
-; Formula: a(n) = a(n-1)+a(n-2)+b(n-2), a(3) = 8, a(2) = 4, a(1) = 2, a(0) = 1, b(n) = 2*b(n-2), b(3) = 4, b(2) = 2, b(1) = 2, b(0) = 1
+; Formula: a(n) = truncate((min(n+1,(n+1)%2)*b(n+1)+c(n+1))/3), b(n) = 3*b(n-2)-b(n-4)-d(n-4)+d(n-2), b(8) = 156, b(7) = 54, b(6) = 54, b(5) = 18, b(4) = 18, b(3) = 6, b(2) = 6, b(1) = 3, b(0) = 3, c(n) = 3*c(n-2)-c(n-4)+d(n-2), c(7) = 78, c(6) = 78, c(5) = 24, c(4) = 24, c(3) = 6, c(2) = 6, c(1) = 0, c(0) = 0, d(n) = 2*d(n-2), d(5) = 12, d(4) = 12, d(3) = 6, d(2) = 6, d(1) = 3, d(0) = 3
 
-mov $1,1
-mov $2,1
-mov $3,1
-mov $4,1
+mov $1,3
+mov $3,3
+add $0,1
 lpb $0
-  sub $0,1
-  mov $5,$1
-  add $5,$2
+  sub $0,2
   add $1,$3
-  mov $3,$4
-  mov $4,$2
-  mov $2,$3
-  mul $2,2
-  mov $3,$5
+  add $1,$2
+  add $2,$1
+  mul $3,2
 lpe
-mov $0,$1
+mul $0,$1
+add $0,$2
+div $0,3

@@ -1,28 +1,32 @@
 ; A019761: Decimal expansion of e/24.
-; Submitted by omegaintellisys
+; Submitted by Peter Hucker
 ; 1,1,3,2,6,1,7,4,2,8,5,2,4,6,0,2,1,8,1,4,0,0,1,1,9,7,7,9,7,3,0,2,7,6,0,4,0,7,3,2,1,8,6,2,8,9,0,4,1,6,4,9,8,2,2,9,0,2,9,0,3,1,7,8,2,1,8,3,6,5,2,6,2,6,4,7,3,1,1,4
 
-add $0,1
+add $0,2
+mov $2,2
 mov $3,$0
-mul $3,5
+mul $3,3
 lpb $3
-  mul $2,$3
   mov $5,$3
-  div $5,3
-  add $5,1
-  mul $1,2
+  mul $5,2
+  mul $2,$5
   add $1,$2
-  div $1,$5
+  div $1,$0
   div $1,2
-  add $2,$3
-  div $2,$5
+  div $2,$0
   sub $3,1
 lpe
+pow $1,2
+div $1,$2
+div $1,3
+sub $0,1
 mov $4,10
 pow $4,$0
-mul $2,6
+pow $2,$5
+div $2,3
 div $2,$4
+div $2,2
+pow $1,$5
 div $1,$2
-div $1,2
 mov $0,$1
 mod $0,10

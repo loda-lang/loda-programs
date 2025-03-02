@@ -6,7 +6,6 @@
 
 mov $2,$0
 mov $4,$0
-sub $0,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -14,7 +13,13 @@ lpb $4
   mov $1,$4
   bin $1,$0
   sub $2,2
-  seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  sub $0,1
+  mov $5,$0
+  max $5,0
+  seq $5,60719 ; a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).
+  mov $0,$5
+  div $0,2
+  add $0,1
   mul $1,$0
   add $3,$1
   sub $4,1

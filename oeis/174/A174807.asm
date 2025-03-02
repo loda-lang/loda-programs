@@ -4,10 +4,8 @@
 
 #offset 1
 
-lpb $0
-  mov $0,1
-  seq $0,250742 ; T(n,k)=Number of (n+1)X(k+1) 0..1 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nonincreasing x(i,j)-x(i-1,j) in the j direction
-  pow $0,3
-lpe
-seq $0,183226 ; Sum of digits of (2^n) in base 5, also sum of digits of (10^n) in base 5.
+mov $1,10
+pow $1,$0
+dgs $1,5
+mov $0,$1
 div $0,4

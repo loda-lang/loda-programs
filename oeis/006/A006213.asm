@@ -1,20 +1,28 @@
 ; A006213: Number of down-up permutations of n+4 starting with n+1.
-; Submitted by fzs600
+; Submitted by BrandyNOW
 ; 0,2,10,46,224,1202,7120,46366,329984,2551202,21306880,191252686,1836652544,18793429202,204154071040,2346705139006,28459289083904,363156549211202,4864231397785600,68237760828425326,1000569392347480064,15306487540377673202
-; Formula: a(n) = -min(floor((3^(n+1))/6)+1,2)*gcd(A155585(n+1),A122045(n+1))+A006212(n+1)
+; Formula: a(n) = A008280(A061579(-A002260(truncate(sqrtint(8*A061579(binomial(n+2,2)))/2)+A061579(binomial(n+2,2))+n+3)+truncate(sqrtint(8*A061579(binomial(n+2,2)))/2)+A061579(binomial(n+2,2))+A319573(truncate(sqrtint(8*A061579(binomial(n+2,2)))/2)+A061579(binomial(n+2,2))+n+2)+n+3))
 
 add $0,1
-mov $3,3
-pow $3,$0
-div $3,6
-add $3,1
-mov $2,$3
-min $2,2
-mov $4,$0
-seq $4,122045 ; Euler (or secant) numbers E(n).
 mov $1,$0
-seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $1,$4
-mul $1,$2
-seq $0,6212 ; Number of down-up permutations of n+3 starting with n+1.
-sub $0,$1
+add $0,1
+bin $0,2
+seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+mov $2,$0
+mul $0,8
+nrt $0,2
+div $0,2
+add $2,$1
+add $2,$0
+mov $0,$2
+add $0,1
+mov $3,$0
+seq $3,319573 ; The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
+add $3,$0
+add $0,1
+seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+sub $3,$0
+mov $0,$3
+add $0,1
+seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.

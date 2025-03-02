@@ -1,16 +1,18 @@
 ; A289896: Number of (undirected) cycles in the n-triangular honeycomb rook graph.
-; Submitted by Landjunge
+; Submitted by BrandyNOW
 ; 0,0,1,8,45,242,1414,9432,72246,628260,6116319,65856928,776628203,9950798214,137612550620,2042588039056,32384583304092,546155914771464,9761655297881037,184309987662192600,3665514979650544153,76586509823743735706,1677182881414143407490
 
 #offset 1
 
-sub $0,1
 lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,119913 ; Number of directed simple cycles in the complete graph K_n.
+  add $4,2
+  mul $5,$0
   sub $0,1
-  add $1,$2
+  mov $1,$5
+  mul $1,$0
+  add $2,$3
+  mov $3,$1
+  add $5,$4
 lpe
-dif $1,2
-mov $0,$1
+mov $0,$2
+div $0,4

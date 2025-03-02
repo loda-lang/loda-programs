@@ -1,28 +1,10 @@
 ; A153805: Decimal expansion of 3-e.
-; Submitted by Jamie Morken(s1)
+; Submitted by mmonnin
 ; 2,8,1,7,1,8,1,7,1,5,4,0,9,5,4,7,6,4,6,3,9,7,1,2,5,2,8,6,4,7,3,3,7,5,0,2,2,4,2,7,5,2,9,0,6,3,0,0,0,4,0,4,2,5,0,3,3,0,3,2,3,7,2,2,7,5,9,2,3,3,6,9,6,4,6,4,5,2,4,0
+; Formula: a(n) = -A001113(n+2)+9
 
 add $0,2
-mov $3,$0
-mul $3,5
-lpb $3
-  add $2,56
-  mul $2,$3
-  mov $5,$3
-  div $5,3
-  add $5,1
-  add $1,$2
-  div $1,$5
-  div $2,$5
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-mul $2,5
-div $2,$4
-div $1,2
-div $1,$2
+seq $0,1113 ; Decimal expansion of e.
+sub $1,$0
 mov $0,$1
-mod $0,10
-mul $0,-1
 add $0,9
