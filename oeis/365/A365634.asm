@@ -1,5 +1,5 @@
 ; A365634: The number of divisors of n that are terms of A048102.
-; Submitted by Skillz
+; Submitted by mmonnin
 ; 1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1
 
 #offset 1
@@ -17,7 +17,6 @@ lpb $3
   mul $4,$0
   dif $4,$0
   mov $0,$4
-  seq $0,72464 ; Code word lengths for non-redundant MML code for positive integers.
   div $0,2
   add $2,$0
 lpe

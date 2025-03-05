@@ -1,18 +1,17 @@
 ; A285194: Expansion of (1+x^2)/(1+x+x^4) mod 3.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,2,2,1,1,0,1,1,1,2,0,2,0,1,2,2,1,1,0,1,1,1,2,0,2,0,1,2,2,1,1,0,1,1,1,2,0,2,0,1,2,2,1,1,0,1,1,1,2,0,2,0,1,2,2,1,1,0,1,1,1,2,0,2,0,1,2,2,1,1,0,1,1,1,2,0,2,0,1,2
-; Formula: a(n) = -3*truncate((a(n-1)+a(n-2)+a(n-3)+2)/3)+a(n-1)+a(n-2)+a(n-3)+2, a(2) = 2, a(1) = 2, a(0) = 1
+; Formula: a(n) = -3*truncate((a(n-1)+a(n-2)+a(n-3)+2)/3)+a(n-1)+a(n-2)+a(n-3)+2, a(3) = 1, a(2) = 2, a(1) = 2, a(0) = 1
 
 mov $1,1
 lpb $0
   sub $0,1
-  mov $2,$1
   add $3,1
-  add $4,$1
-  add $4,1
+  mov $4,$1
   add $1,$3
+  add $1,$2
   mod $1,3
+  mov $2,$3
   mov $3,$4
-  mov $4,$2
 lpe
 mov $0,$1

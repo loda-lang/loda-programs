@@ -12,7 +12,6 @@ lpb $0
   pow $3,$2
   mov $2,$3
   seq $2,91732 ; Iphi(n): infinitary analog of Euler's phi function.
-  sub $3,1
   add $1,$2
 lpe
 mov $0,$2

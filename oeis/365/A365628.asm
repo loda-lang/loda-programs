@@ -1,11 +1,9 @@
 ; A365628: a(n) = binomial(primorial(n), n).
-; Submitted by Science United
+; Submitted by gemini8
 ; 1,2,15,4060,78738660,545754554499462,1018081517447240182211275,1793004475784081302284255717158418120,1943305407393725342965469143054357602760779899437185,3772316402417100592416011698371929155605067111502494326520988270728160
-; Formula: a(n) = binomial(truncate(A102476(n+1)/4),n)
+; Formula: a(n) = binomial(A002110(gcd(0,n)),n)
 
-mov $1,$0
-add $1,1
-seq $1,102476 ; Least modulus with 2^n square roots of 1.
-div $1,4
+gcd $1,$0
+seq $1,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
 bin $1,$0
 mov $0,$1

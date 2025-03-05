@@ -1,27 +1,28 @@
 ; A064437: a(1)=1, a(n) = a(n-1) + 3 if n is already in the sequence, a(n) = a(n-1) + 2 otherwise.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by [AF] Kalianthys
 ; 1,3,6,8,10,13,15,18,20,23,25,27,30,32,35,37,39,42,44,47,49,51,54,56,59,61,64,66,68,71,73,76,78,80,83,85,88,90,93,95,97,100,102,105,107,109,112,114,117,119,122,124,126,129,131,134,136,138,141,143,146,148,150,153,155,158,160,163,165,167,170,172,175,177,179,182,184,187,189,192
-; Formula: a(n) = truncate((e(n)-1)/2)+1, b(n) = truncate((-c(n-1)+b(n-1)-6)/4), b(3) = -34, b(2) = -4, b(1) = -2, b(0) = 0, c(n) = c(n-1)*gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)^2, c(3) = 512, c(2) = 128, c(1) = 8, c(0) = 2, d(n) = 2*truncate(gcd(binomial(d(n-1),c(n-1))+truncate((-c(n-1)+b(n-1)-6)/4),4)/2), d(3) = 2, d(2) = 4, d(1) = 2, d(0) = 0, e(n) = d(n-1)+e(n-1)+2, e(3) = 12, e(2) = 6, e(1) = 2, e(0) = 0
 
 #offset 1
 
-mov $2,2
-lpb $0
-  sub $0,1
-  sub $1,$2
-  sub $1,6
-  div $1,4
-  add $4,$3
-  add $4,2
-  bin $3,$2
-  add $3,$1
-  gcd $3,4
-  mul $2,$3
-  mul $2,$3
-  div $3,2
-  mul $3,2
-lpe
-mov $0,$4
-sub $0,1
-div $0,2
+sub $0,2
+mov $2,$0
+add $0,1
+sub $2,1
+add $2,$0
+mul $2,$0
+nrt $2,2
+add $2,$0
+mov $1,$2
+add $2,2
+add $0,$1
+max $0,1
+mov $3,$2
+div $3,$0
+sub $0,$3
+mov $4,$0
+max $4,0
+equ $4,$0
+mul $2,$4
+trn $2,1
+mov $0,$2
 add $0,1

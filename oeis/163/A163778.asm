@@ -1,29 +1,25 @@
 ; A163778: Odd terms in A054639.
-; Submitted by [AF>Libristes]Maeda
+; Submitted by [AF] Kalianthys
 ; 3,5,9,11,23,29,33,35,39,41,51,53,65,69,81,83,89,95,99,105,113,119,131,135,155,173,179,183,189,191,209,221,231,233,239,243,245,251,261,273,281,293,299,303,309,323,329,359,371,375,393,411,413,419,429,431,441,443,453,473,483,491,495,509,515,519,531,543,545,561,575,585,593,611,615,629,639,641,645,651
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-pow $2,4
+pow $2,2
 lpb $2
-  sub $2,1
   mov $3,$1
-  mul $3,2
-  add $3,1
-  mov $4,$3
-  seq $4,3558 ; Least number m > 0 such that 2^m == +-1 (mod 2n + 1).
-  sub $4,$3
-  mov $5,0
-  sub $5,$4
-  mov $3,$5
-  equ $3,0
+  add $3,2
+  seq $3,55388 ; Number of riffle shuffles of 2n cards required to return the deck to its initial state.
+  add $1,1
+  sub $3,$1
+  equ $3,$1
   sub $0,$3
   add $1,1
-  sub $2,$0
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  sub $2,1
 lpe
 mov $0,$1
-mul $0,2
 add $0,1

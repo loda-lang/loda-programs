@@ -1,15 +1,28 @@
 ; A057812: Numbers k such that pi(k) is odd.
-; Submitted by Conan
+; Submitted by mmonnin
 ; 2,5,6,11,12,17,18,23,24,25,26,27,28,31,32,33,34,35,36,41,42,47,48,49,50,51,52,59,60,67,68,69,70,73,74,75,76,77,78,83,84,85,86,87,88,97,98,99,100,103,104,105,106,109,110,111,112,127,128,129,130,137,138,149,150,157,158,159,160,161,162,167,168,169,170,171,172,179,180,191
-; Formula: a(n) = b(n-1), b(n) = A096457(b(n-1)+1), b(0) = 2
 
 #offset 1
 
-mov $1,2
+mov $1,1
 sub $0,1
 lpb $0
   sub $0,1
   add $1,1
-  seq $1,96457 ; If n is prime replace n with the next prime.
+  mov $2,$1
+  mov $3,0
+  lpb $1
+    mov $4,$2
+    add $4,1
+    seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+    add $2,2
+    sub $3,$4
+    trn $5,4
+    sub $5,$3
+    mul $1,$5
+    sub $1,1
+  lpe
+  mov $1,$2
 lpe
 mov $0,$1
+add $0,1

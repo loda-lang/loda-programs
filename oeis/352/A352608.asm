@@ -1,10 +1,28 @@
 ; A352608: a(n) = Bell(n)*n!!.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by BrandyNOW
 ; 1,1,4,15,120,780,9744,92085,1589760,19983915,445344000,7053735150,194162549760,3735730993995,123152970608640,2803291544678625,108175188829962240,2855475766145702700,126726160086516695040,3818865908630429932275,192201344414226343526400
 
-mov $1,$0
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-lpb $1
-  mul $0,$1
-  sub $1,2
+mov $4,1
+mov $7,$0
+lpb $0
+  sub $0,1
+  mul $4,$0
+  sub $0,1
 lpe
+mov $0,$7
+add $0,1
+lpb $0
+  sub $0,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,$1
+  add $6,$2
+  add $1,1
+  mul $3,$6
+  mul $5,-1
+  add $5,$3
+lpe
+mov $0,$5
+div $0,$4

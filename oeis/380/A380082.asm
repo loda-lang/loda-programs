@@ -1,20 +1,22 @@
 ; A380082: Number of Boolean intervals of rank 2 in the weak order of the Coxeter group of type C_n, for n >= 2
-; Submitted by fzs600
+; Submitted by [AF] Kalianthys
 ; 0,12,288,5760,115200,2419200,54190080,1300561920,33443020800,919683072000,26977370112000,841693947494400,27852417898905600,974834626461696000,35993893900124160000,1398619877261967360000,57063690992288268288000,2439472789920323469312000,109058783549379166863360000
 
-mov $1,1
-mov $3,$0
-mov $0,4
-lpb $3
-  mov $4,$1
-  mul $4,$3
-  add $0,2
-  add $2,1
-  mul $1,2
-  add $1,$4
-  mul $1,$0
-  div $1,$2
-  sub $3,1
+#offset 2
+
+mov $2,6
+mul $2,$0
+div $2,2
+lpb $0
+  max $0,2
+  sub $0,1
+  add $3,2
+  add $4,$1
+  add $1,$3
+  mul $2,$1
+  equ $3,1
 lpe
+mul $4,$2
 mov $0,$4
+div $0,144
 mul $0,12

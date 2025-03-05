@@ -1,11 +1,5 @@
 ; A007953: Digital sum (i.e., sum of digits) of n; also called digsum(n).
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,11,3,4,5,6,7,8,9,10,11,12,4,5,6,7,8,9,10,11,12,13,5,6,7,8,9,10,11,12,13,14,6,7,8,9,10,11,12,13,14,15,7,8,9,10,11,12,13,14,15,16
 
-lpb $0
-  mov $2,$0
-  mod $2,10
-  div $0,10
-  add $1,$2
-lpe
-mov $0,$1
+dgs $0,10

@@ -1,18 +1,19 @@
 ; A373339: Number of permutations in symmetric group S_n with an even number of cycles of length 2 or more.
-; Submitted by Coleslaw
+; Submitted by BrandyNOW
 ; 1,1,1,1,4,36,296,2360,19776,180544,1812352,19953792,239490560,3113487872,43589096448,653837077504,10461394714624,177843713556480,3201186851815424,60822550202187776,1216451004083601408,25545471085844758528,562000363888782868480
 
-lpb $0
-  mov $3,$0
-  sub $3,1
-  add $4,$2
-  mul $1,$0
-  add $1,$3
-  mov $2,$4
+mov $1,1
+mov $3,$0
+sub $0,1
+lpb $3
+  mov $2,$0
   sub $0,1
-  sub $4,$3
+  add $0,$2
+  mul $1,$3
+  mul $2,-1
+  sub $3,1
 lpe
-add $4,$1
-mov $0,$4
+add $1,$2
+mov $0,$1
 div $0,2
 add $0,1

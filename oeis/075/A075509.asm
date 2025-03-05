@@ -1,33 +1,28 @@
 ; A075509: Shifts one place left under 10th-order binomial transform.
-; Submitted by damotbe
+; Submitted by BrandyNOW
 ; 1,1,11,131,1761,27601,506651,10674211,251686881,6524202561,183991725451,5605930566051,183428104316161,6409252239788881,237948848526923611,9346097294356706051,386966245108218203201,16836505067572362863361,767645305770283165781131
 
-mov $2,1
-add $2,1
+mov $4,1
+mov $7,$0
+lpb $0
+  mul $4,$0
+  sub $0,1
+lpe
+mov $0,$7
+add $0,1
 lpb $0
   sub $0,1
-  mov $5,0
-  mov $6,0
-  mov $4,$2
-  lpb $4
-    sub $4,1
-    mov $9,10
-    mul $6,$9
-    add $9,$5
-    mov $11,1
-    mov $7,2
-    sub $7,2
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    add $5,1
-    add $6,$7
-  lpe
-  add $9,1
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
+  mov $2,$1
+  pow $2,$7
+  mov $3,$7
+  bin $3,$1
+  mul $6,10
+  mul $6,$1
+  add $6,$2
+  add $1,1
+  mul $3,$6
+  mul $5,-1
+  add $5,$3
 lpe
-pow $3,$11
-mov $0,$3
+mov $0,$5
+div $0,$4

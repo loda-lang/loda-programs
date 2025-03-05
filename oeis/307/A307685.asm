@@ -1,7 +1,7 @@
 ; A307685: Clique covering number of the n-Sierpinski sieve graph.
-; Submitted by BrandyNOW
+; Submitted by lee
 ; 1,3,6,17,48,143,426,1277
-; Formula: a(n) = truncate((7*truncate(3^(n-2))+truncate((-1)^(n-2))+1)/4)+1
+; Formula: a(n) = floor((7*truncate(3^(n-2))+6)/4)
 
 #offset 1
 
@@ -13,9 +13,6 @@ add $3,1
 mov $4,7
 mul $4,$3
 mov $2,-1
-pow $2,$0
 add $2,$4
 mov $0,$2
-sub $0,6
 div $0,4
-add $0,1

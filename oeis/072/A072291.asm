@@ -1,21 +1,19 @@
 ; A072291: a(n)=a(n-1)+a(n-2)^n with a(1)=a(2)=1.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,1,2,3,35,764,64339297639,116077185312567988110695,18892387313428899538307330663260392355466879654765476495891159778191517586427262736430696974019854
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+truncate(b(n-2)^(n+1)), b(2) = 2, b(1) = 1, b(0) = 1
 
 #offset 1
 
-mov $1,2
-mov $3,1
+mov $1,1
+mov $2,2
+sub $0,1
 lpb $0
   sub $0,1
-  pow $1,$3
-  add $1,$2
-  mov $4,$2
-  trn $4,1
-  mov $2,$1
-  equ $1,0
-  add $1,$4
-  add $3,1
+  pow $3,$2
+  mov $4,$1
+  add $1,$3
+  add $2,1
+  mov $3,$4
 lpe
-mov $0,$2
-sub $0,1
+mov $0,$1

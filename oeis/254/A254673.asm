@@ -1,9 +1,30 @@
 ; A254673: Primes prime(n) such that prime(n) + 4*n is also prime.
-; Submitted by Merlin2331
+; Submitted by iBezanilla
 ; 3,5,7,11,13,23,47,59,71,73,79,97,103,113,127,137,181,199,251,263,271,281,293,331,359,367,397,419,433,443,449,457,463,487,503,523,541,571,607,613,617,631,653,709,719,751,761,773,829,839,877,881,953,967,971,977,997,1013,1021,1031,1049,1051,1069,1087,1163,1231,1291,1297,1319,1367,1399,1429,1433,1439,1451,1453,1481,1483,1489,1559
-; Formula: a(n) = A000040(A076299(n))
 
 #offset 1
 
-seq $0,76299 ; Prime(n) + s*n is prime, s=4.
-seq $0,40 ; The prime numbers.
+mov $2,$0
+sub $0,1
+add $2,1
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,40 ; The prime numbers.
+  sub $3,1
+  add $5,4
+  mov $6,$3
+  add $3,$5
+  add $3,1
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$6
+add $0,1

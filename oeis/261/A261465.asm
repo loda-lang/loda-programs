@@ -1,19 +1,14 @@
 ; A261465: a(n) = prime(n+1)^2 - prime(n).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by SeHu
 ; 7,22,44,114,158,276,344,510,818,932,1338,1644,1808,2166,2762,3428,3662,4428,4974,5258,6168,6810,7838,9320,10104,10508,11346,11774,12660,16016,17034,18638,19184,22062,22652,24498,26412,27726,29762
-; Formula: a(n) = A159477(b(n-1)+2)^2-b(n-1), b(n) = A159477(b(n-1)+2), b(0) = 2
+; Formula: a(n) = A159477(A000040(n)+1)^2-A000040(n)
 
 #offset 1
 
-mov $1,2
-sub $0,1
-lpb $0
-  sub $0,1
-  add $1,2
-  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-lpe
+seq $0,40 ; The prime numbers.
+mov $1,$0
+add $1,1
+seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+pow $1,2
+sub $1,$0
 mov $0,$1
-add $0,2
-seq $0,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-pow $0,2
-sub $0,$1

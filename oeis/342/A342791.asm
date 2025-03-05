@@ -7,10 +7,10 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,342774 ; Length of n-th word in the ordering A342753 of all binary words.
   mod $3,2
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

@@ -1,21 +1,19 @@
 ; A034274: a(n)=f(n,n-1) where f is given in A034261.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 5,25,119,546,2442,10725,46475,199342,848198,3585946,15080870,63146500,263432340,1095517485,4543460595,18798494550,77616288750,319874637390,1316106144210,5407045011420,22184521682700,90910797617250,372137346502974
-; Formula: a(n) = floor((floor(binomial(2*n+2,n+1)/(n+2))*(12*(n+1)^2+12))/24)
+; Formula: a(n) = floor((floor(binomial(2*n+2,n+1)/(n+2))*(n+1)^2+floor(binomial(2*n+2,n+1)/(n+2)))/2)
 
 #offset 1
 
-mov $1,$0
-add $1,1
-pow $1,2
-add $1,1
-mul $1,12
 add $0,1
+mov $1,$0
 mov $2,$0
+mul $2,2
 mov $3,$0
 add $3,1
-mul $0,2
-bin $0,$2
-div $0,$3
+bin $2,$0
+div $2,$3
 mul $0,$1
-div $0,24
+mul $0,$2
+add $0,$2
+div $0,2

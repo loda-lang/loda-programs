@@ -6,9 +6,7 @@
 
 sub $0,1
 mul $0,2
-mov $2,$0
 mov $3,2
-mov $4,0
 mov $1,$0
 lpb $1
   div $1,$3
