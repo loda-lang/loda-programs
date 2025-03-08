@@ -1,11 +1,22 @@
 ; A180353: a(n) = n^n * prime(n).
-; Submitted by BrandyNOW
+; Submitted by mmonnin
 ; 2,12,135,1792,34375,606528,14000231,318767104,8910671247,290000000000,8844661788941,329895716585472,12417879370282373,477816293498994688,20581012847900390625,977677435906606235648,48807175451293869086443,2400130892593088792100864
-; Formula: a(n) = A000040(n)*n^n
 
 #offset 1
 
 mov $1,$0
-pow $1,$1
-seq $0,40 ; The prime numbers.
-mul $0,$1
+pow $1,$0
+mov $4,$0
+pow $4,2
+lpb $4
+  mov $2,$3
+  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  sub $0,$2
+  add $3,2
+  sub $4,$0
+lpe
+mov $0,$3
+add $0,1
+max $0,2
+mul $1,$0
+mov $0,$1

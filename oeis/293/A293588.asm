@@ -9,14 +9,13 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,98832 ; Square array read by antidiagonals: even-numbered rows of the table are of the form n*(n+m) and odd-numbered rows are of the form n*(n+m)/2.
     dif $7,2
     equ $7,1
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $6,$5
     mul $7,$$9
     add $5,1

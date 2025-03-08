@@ -1,19 +1,17 @@
 ; A008343: a(1)=1; thereafter a(n+1) = a(n)-n if a(n) >= n otherwise a(n+1) = a(n)+n.
-; Submitted by Aurum
+; Submitted by Coleslaw
 ; 1,0,2,5,1,6,0,7,15,6,16,5,17,4,18,3,19,2,20,1,21,0,22,45,21,46,20,47,19,48,18,49,17,50,16,51,15,52,14,53,13,54,12,55,11,56,10,57,9,58,8,59,7,60,6,61,5,62,4,63,3,64,2,65,1,66,0,67,135,66,136,65,137,64,138,63,139,62,140,61
-; Formula: a(n) = truncate((b(n-1)+min(n-1,0))/2), b(n) = -4*n*truncate((b(n-1)+truncate((4*n)/2))/(4*n))+b(n-1)+truncate((4*n)/2), b(1) = 0, b(0) = 2
+; Formula: a(n) = b(n-1), b(n) = -2*n*truncate((3*n+b(n-1))/(2*n))+3*n+b(n-1), b(2) = 2, b(1) = 0, b(0) = 1
 
 #offset 1
 
-mov $1,2
+mov $1,1
 sub $0,1
 lpb $0
   sub $0,1
-  add $3,4
-  mov $2,$3
-  div $2,2
-  add $1,$2
+  sub $2,3
+  add $3,2
+  sub $1,$2
   mod $1,$3
 lpe
-add $0,$1
-div $0,2
+mov $0,$1

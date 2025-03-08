@@ -1,20 +1,31 @@
 ; A368656: Decimal expansion of 271801/99990.
-; Submitted by tosi
+; Submitted by BrandyNOW
 ; 2,7,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8,2,8,1,8
-; Formula: a(n) = -10*truncate((-10*truncate((min(b(n),6)+2)/10)+min(b(n),6)+12)/10)-10*truncate((min(b(n),6)+2)/10)+min(b(n),6)+12, b(n) = 3*c(n-1)-3*b(n-1)+2, b(1) = 5, b(0) = 0, c(n) = 3*c(n-1)+1, c(1) = 4, c(0) = 1
 
-mov $2,1
-lpb $0
-  sub $0,1
-  mul $2,3
-  mul $1,-3
-  add $1,$2
-  add $1,2
-  add $2,1
-lpe
-min $1,6
-mov $0,$1
-add $0,2
+#offset 1
+
+mov $2,2
+equ $2,$0
+mul $2,9
+mod $0,4
+mov $3,3
+equ $3,$0
+sub $0,1
+mov $1,$0
+equ $1,2
+mov $4,$0
+equ $0,0
+mul $0,4
+sub $4,1
+equ $4,1
+mul $4,16
+add $0,$4
+add $0,$1
+mul $3,8
+pow $3,2
+add $0,$2
+sub $0,$3
+add $0,8
 mod $0,10
 add $0,10
 mod $0,10

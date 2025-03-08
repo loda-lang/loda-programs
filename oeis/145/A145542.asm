@@ -1,18 +1,19 @@
 ; A145542: Numerators in continued fraction expansion of sqrt(3/5).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,3,7,24,55,189,433,1488,3409,11715,26839,92232,211303,726141,1663585,5716896,13097377,45009027,103115431,354355320,811826071,2789833533,6391493137,21964312944,50320119025,172924670019,396169459063,1361433047208,3119035553479
+; Formula: a(n) = truncate((min(n,n%2)*b(n)+c(n))/3), b(n) = 5*c(n-2)+4*b(n-2), b(3) = 12, b(2) = 12, b(1) = 3, b(0) = 3, c(n) = 4*c(n-2)+3*b(n-2), c(3) = 9, c(2) = 9, c(1) = 0, c(0) = 0
 
 #offset 1
 
-mov $3,1
+mov $1,3
 lpb $0
-  sub $0,1
-  add $2,$3
+  sub $0,2
+  add $1,$2
   mov $3,$1
-  mov $1,$2
-  dif $2,6
-  mul $2,3
-  add $3,$2
+  mul $3,3
+  add $2,$3
+  add $1,$2
 lpe
-gcd $1,$2
-mov $0,$1
+mul $0,$1
+add $0,$2
+div $0,3

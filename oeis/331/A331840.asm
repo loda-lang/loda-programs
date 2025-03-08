@@ -4,26 +4,28 @@
 
 #offset 1
 
-mov $3,$0
 sub $0,1
-add $3,1
+mov $1,$0
+mov $3,$0
+add $3,2
 pow $3,2
 lpb $3
   mov $4,$2
-  mul $4,3
+  mul $4,15
   add $4,1
   seq $4,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
   bin $4,2
-  add $4,$1
-  sub $0,$4
-  add $0,1
-  mov $1,$0
-  max $1,0
-  equ $1,$0
-  add $2,5
-  mul $3,$1
+  add $4,$5
+  sub $1,$4
+  add $1,1
+  add $2,1
+  add $2,$5
+  mov $5,$1
+  max $5,0
+  equ $5,$1
+  mul $3,$5
   sub $3,1
 lpe
 mov $0,$2
-div $0,10
+div $0,2
 add $0,1

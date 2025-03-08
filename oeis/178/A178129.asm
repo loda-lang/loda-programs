@@ -1,12 +1,21 @@
 ; A178129: Partial sums of A050508.
-; Submitted by den777
+; Submitted by Science United
 ; 0,2,8,23,47,87,147,224,328,463,623,821,1049,1322,1644,2004,2420,2896,3418,4007,4647,5361,6153,7004,7940,8940,10032,11220,12480,13843,15313,16863,18527,20276,22146,24141,26229,28449,30767,33224,35824,38530
-; Formula: a(n) = a(n-1)+A050508(n), a(0) = 0
+; Formula: a(n) = b(n)-1, b(n) = n*truncate((sqrtint(5*n^2)+n+1)/2)+b(n-1), b(0) = 1
 
+mov $1,1
 lpb $0
-  mov $2,$0
-  seq $2,50508 ; Golden rectangle numbers: n * A007067(n).
+  mov $3,$0
+  mul $3,5
+  mul $3,$0
+  nrt $3,2
+  add $3,$0
+  add $3,1
+  div $3,2
+  mov $2,$3
+  mul $2,$0
   sub $0,1
   add $1,$2
 lpe
 mov $0,$1
+sub $0,1

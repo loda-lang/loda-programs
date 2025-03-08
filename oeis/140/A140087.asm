@@ -1,25 +1,20 @@
 ; A140087: Decimal expansion of a lower bound of the area of a convex universal cover for a unit length curve.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 2,3,2,2,3,9,2,1,0
-; Formula: a(n) = -10*truncate((d(n)+2)/10)+d(n)+2, b(n) = c(n-1)+truncate(((b(n-1)+1)^3)/n)-2, b(4) = 41, b(3) = 4, b(2) = -1, b(1) = -1, b(0) = 0, c(n) = n*(e(n-1)+1), c(4) = 124, c(3) = 12, c(2) = 6, c(1) = 1, c(0) = 0, d(n) = truncate(((b(n-1)+1)^3)/n), d(4) = 31, d(3) = 0, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = binomial(c(n-1)+e(n-1)+truncate(((b(n-1)+1)^3)/n)-1,2)+2, e(4) = 2558, e(3) = 30, e(2) = 3, e(1) = 2, e(0) = 0
+; Formula: a(n) = -10*truncate((floor(binomial(3*floor(binomial(2*n+10,n+5)/(n+6))*2^n,2)/(n+5))-3)/10)+floor(binomial(3*floor(binomial(2*n+10,n+5)/(n+6))*2^n,2)/(n+5))-3
 
-lpb $0
-  sub $0,1
-  add $1,1
-  add $2,1
-  pow $2,3
-  div $2,$1
-  sub $3,2
-  mov $4,$2
-  add $5,1
-  mov $2,$3
-  add $2,$4
-  mov $3,$5
-  mul $3,$1
-  add $5,$2
-  bin $5,2
-  add $5,2
-lpe
-mov $0,$4
-add $0,2
+mov $1,2
+pow $1,$0
+add $0,5
+mov $2,$0
+mov $3,$0
+mul $0,2
+bin $0,$3
+add $3,1
+div $0,$3
+mul $0,$1
+mul $0,3
+bin $0,2
+div $0,$2
+sub $0,3
 mod $0,10

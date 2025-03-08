@@ -1,8 +1,22 @@
 ; A183060: Number of "ON" cells at n-th stage in a simple 2-dimensional cellular automaton (see Comments for precise definition).
+; Submitted by Science United
 ; 0,1,4,7,14,17,24,31,50,53,60,67,86,93,112,131,186,189,196,203,222,229,248,267,322,329,348,367,422,441,496,551,714,717,724,731,750,757,776,795,850,857,876,895,950,969,1024,1079,1242,1249,1268,1287,1342,1361,1416,1471,1634,1653,1708,1763,1926,1981,2144,2307,2794,2797,2804,2811,2830,2837,2856,2875,2930,2937,2956,2975,3030,3049,3104,3159
-; Formula: a(n) = truncate(A147562(n)/2)+n
 
-mov $1,$0
-seq $0,147562 ; Number of "ON" cells at n-th stage in the "Ulam-Warburton" two-dimensional cellular automaton.
-div $0,2
-add $0,$1
+lpb $0
+  mov $2,$0
+  sub $2,1
+  dgs $2,2
+  mov $3,3
+  pow $3,$2
+  mov $2,$3
+  mul $2,4
+  sub $2,1
+  mov $3,$2
+  div $3,3
+  add $2,1
+  div $2,2
+  sub $2,$3
+  sub $0,1
+  add $1,$2
+lpe
+mov $0,$1

@@ -1,17 +1,16 @@
 ; A374891: Obverse convolution (1)**A000984; see Comments.
-; Submitted by arkiss
+; Submitted by mmonnin
 ; 2,6,42,882,62622,15843366,14655113550,50311004817150,647552943001537650,31484671641677762080650,5817013478501458288734652050,4103513269179719224996951799587650,11096544131445222000310082187517540861050
-; Formula: a(n) = b(n+1), b(n) = b(n-1)*(binomial(2*n-2,n-1)+1), b(0) = 1
+; Formula: a(n) = 2*b(n), b(n) = b(n-1)*(binomial(2*n,n)+1), b(0) = 1
 
-mov $2,1
-add $0,1
+mov $1,1
 lpb $0
-  mov $1,$0
-  add $1,$0
+  mov $2,$0
+  add $2,$0
+  bin $2,$0
+  add $2,1
   sub $0,1
-  sub $1,2
-  bin $1,$0
-  add $1,1
-  mul $2,$1
+  mul $1,$2
 lpe
-mov $0,$2
+mov $0,$1
+mul $0,2

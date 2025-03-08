@@ -1,15 +1,12 @@
 ; A016350: 186th cyclotomic polynomial.
-; Submitted by Christian Krause
+; Submitted by iBezanilla
 ; 1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1,0,-1,-1,0,1,1
 
+mov $1,1
 lpb $0
   sub $0,1
   dif $0,30
   add $1,$2
   sub $2,$1
-  add $1,3
 lpe
-mov $0,$2
-mul $0,3
-add $0,9
-div $0,9
+mov $0,$1

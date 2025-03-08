@@ -1,17 +1,16 @@
 ; A123268: X-values of solutions to the equation 3(X-Y)^4 - X*Y = 0 with X >= Y.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,8,1372,263640,51109688,9914526952,1923360309780,373121890730168,72383722120389232,14042068951066270920,2724088992528477983948,528459222478004446530712,102518365071690621381979560
-; Formula: a(n) = truncate((c(2*n)*(b(2*n)+1))/12), b(n) = 2*b(n-1)+c(n-1), b(1) = 2, b(0) = 1, c(n) = 3*b(n-1)+2*c(n-1), c(1) = 3, c(0) = 0
+; Formula: a(n) = truncate((b(n)*c(n)^3)/3), b(n) = 3*c(n-1)+2*b(n-1), b(1) = 3, b(0) = 0, c(n) = 2*c(n-1)+b(n-1), c(1) = 2, c(0) = 1
 
-mov $1,1
-mul $0,2
+mov $2,1
 lpb $0
   sub $0,1
-  add $2,$1
   add $1,$2
   add $2,$1
+  add $1,$2
 lpe
-add $1,1
+pow $2,3
 mul $2,$1
 mov $0,$2
-div $0,12
+div $0,3

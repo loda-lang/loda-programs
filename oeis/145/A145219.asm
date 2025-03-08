@@ -1,24 +1,19 @@
 ; A145219: a(n) is the number of even permutations (of an n-set) with exactly 1 fixed point.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,0,0,8,15,144,910,7440,66717,667520,7342236,88107480,1145396395,16035550608,240533257770,3848532125984,65425046139705,1177650830517120,22375365779822392,447507315596451240,9397653627525472071,206748379805560390160,4755212735527888968390
+; Formula: a(n) = gcd(c(n),b(n)-1), b(n) = -n*(b(n-1)+d(n-1))+1, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = c(n-1), c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = -n+d(n-1)+1, d(3) = -3, d(2) = -1, d(1) = 0, d(0) = 0
 
 #offset 1
 
-mov $1,$0
-mov $2,1
-mov $3,1
-mov $5,1
-sub $0,1
-mov $4,$0
-lpb $4
-  add $6,$5
-  mul $2,$4
-  div $2,$6
-  mul $3,-1
-  add $3,$2
-  mul $2,$6
-  sub $4,1
-  div $5,$6
+mov $1,1
+lpb $0
+  sub $0,1
+  add $1,$4
+  add $4,$2
+  sub $2,1
+  mul $1,$2
+  add $1,1
 lpe
+sub $1,1
+gcd $3,$1
 mov $0,$3
-mul $0,$1

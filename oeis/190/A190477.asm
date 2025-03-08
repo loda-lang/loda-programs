@@ -1,27 +1,37 @@
 ; A190477: Constant arising in lattice coverings of Nil space by congruent geodesic balls.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 1,4,2,9,0,0,6,1,5
-; Formula: a(n) = -10*truncate((-10*truncate((c(n-1)-7)/10)+c(n-1)+3)/10)-10*truncate((c(n-1)-7)/10)+c(n-1)+3, b(n) = d(n-2)^2+d(n-3)^2-d(n-1)^2+b(n-2)+b(n-3), b(5) = -39415817212817, b(4) = -3139083, b(3) = -883, b(2) = -14, b(1) = -1, b(0) = 1, c(n) = b(n-1), c(4) = -883, c(3) = -14, c(2) = -1, c(1) = 1, c(0) = -2, d(n) = 2*d(n-1)^2+2*b(n-1), d(4) = 6278202, d(3) = 1772, d(2) = 30, d(1) = 4, d(0) = 1
+; Formula: a(n) = -(n+4)*(n+6)*(2*n+7)*2^(n+4)-(n+6)*4^(n+4)-10*truncate((-(n+4)*(n+6)*(2*n+7)*2^(n+4)-(n+6)*4^(n+4)-10*truncate((-(n+4)*(n+6)*(2*n+7)*2^(n+4)-(n+6)*4^(n+4)+floor(((n+4)*(n+6)*(2*n+6))/24)+floor(((n+6)*3^(n+4))/2)-2)/10)+floor(((n+4)*(n+6)*(2*n+6))/24)+floor(((n+6)*3^(n+4))/2)+8)/10)-10*truncate((-(n+4)*(n+6)*(2*n+7)*2^(n+4)-(n+6)*4^(n+4)+floor(((n+4)*(n+6)*(2*n+6))/24)+floor(((n+6)*3^(n+4))/2)-2)/10)+floor(((n+4)*(n+6)*(2*n+6))/24)+floor(((n+6)*3^(n+4))/2)+8
 
 #offset 1
 
-mov $2,1
-mov $4,-2
-mov $5,1
+mov $5,$0
+add $5,6
+add $0,4
+mov $2,4
+pow $2,$0
+mul $2,$5
+mov $3,3
+pow $3,$0
+mul $3,$5
+div $3,2
+mov $4,2
+pow $4,$0
+mul $4,$5
+mul $4,$0
+mul $5,$0
+mul $0,2
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $4,$2
-  pow $5,2
-  sub $1,$5
-  mov $2,$3
-  add $2,$1
-  add $5,$4
-  mov $1,$3
-  mov $3,$5
-  mul $5,2
-lpe
-mov $0,$4
+mul $4,$0
+sub $0,1
+mul $5,$0
+div $5,24
+mov $1,5
+sub $1,$2
+add $1,$3
+sub $1,$4
+add $1,$5
+mov $0,$1
 sub $0,7
 mod $0,10
 add $0,10

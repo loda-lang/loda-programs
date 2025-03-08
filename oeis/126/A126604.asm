@@ -1,18 +1,18 @@
 ; A126604: a(1) = 4; a(2) = 3; for n > 2, a(n) = a(n-1)^2 + a(n-1) - 1.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by BrandyNOW
 ; 4,3,11,131,17291,298995971,89398590973228811,7992108067998667938125889533702531,63873791370569400659097694858350356285036046451665934814399129508491
-; Formula: a(n) = b(n-1), b(n) = b(n-1)*(b(n-1)+1)-1, b(2) = 11, b(1) = 3, b(0) = 4
+; Formula: a(n) = c(n-1)-1, b(n) = b(n-1)*(c(n-1)-1), b(1) = 4, b(0) = 1, c(n) = b(n-1)*(c(n-1)-1), c(1) = 4, c(0) = 5
 
 #offset 1
 
-mov $1,4
-mov $2,1
+mov $1,1
+mov $2,5
 sub $0,1
 lpb $0
   sub $0,1
+  sub $2,1
   mul $1,$2
-  mov $3,$1
-  sub $1,1
-  mov $2,$3
+  mov $2,$1
 lpe
-mov $0,$1
+mov $0,$2
+sub $0,1

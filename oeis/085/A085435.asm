@@ -1,18 +1,16 @@
 ; A085435: Resultant of the polynomial x^n-1 and the Chebyshev polynomial of the second kind U_2(x).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 3,9,63,225,1023,3969,16383,65025,262143,1046529,4194303,16769025,67108863,268402689,1073741823,4294836225,17179869183,68718952449,274877906943,1099509530625,4398046511103,17592177655809,70368744177663,281474943156225,1125899906842623
-; Formula: a(n) = 6*truncate(((2^(n-1)-1)*(2*2^(n-1)+2*gcd(n-1,2)-2))/3)+3
+; Formula: a(n) = 3*floor((2^n+1)/3)*(2^n-1)
 
 #offset 1
 
-sub $0,1
-mov $1,2
-pow $1,$0
+mov $2,2
+pow $2,$0
+mov $1,$2
 sub $1,1
-gcd $0,2
-add $0,$1
-mul $0,2
-mul $0,$1
-div $0,3
-mul $0,6
-add $0,3
+add $2,1
+div $2,3
+mul $1,$2
+mov $0,$1
+mul $0,3

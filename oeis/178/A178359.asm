@@ -1,15 +1,20 @@
 ; A178359: Rounded up arithmetic mean of digits of n appended to n, cf. A004427.
-; Submitted by Jamie Morken(w4)
+; Submitted by lee
 ; 0,11,22,33,44,55,66,77,88,99,101,111,122,132,143,153,164,174,185,195,201,212,222,233,243,254,264,275,285,296,302,312,323,333,344,354,365,375,386,396,402,413,423,434,444,455,465,476,486,497,503,513,524,534,545,555,566,576,587,597,603,614,624,635,645,656,666,677,687,698,704,714,725,735,746,756,767,777,788,798
 
 mov $1,$0
 mul $1,10
 mov $2,$0
-seq $2,55642 ; Number of digits in the decimal expansion of n.
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+div $2,10
+lpb $2
+  div $2,10
+  add $4,1
+lpe
+add $4,1
+dgs $0,10
 mov $3,$0
-mod $3,$2
+mod $3,$4
 neq $3,0
-div $0,$2
+div $0,$4
 add $0,$3
 add $0,$1

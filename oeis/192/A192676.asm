@@ -1,16 +1,15 @@
 ; A192676: Floor-Sqrt transform of derangement numbers (A000166).
-; Submitted by [AF>Amis de la Mer] ComteZera
+; Submitted by BrandyNOW
 ; 1,0,1,1,3,6,16,43,121,365,1155,3832,13274,47862,179084,693589,2774358,11438972,48531450,211543687,946052129,4335355493,20334619731,97521410321,477755388567,2388776942837,12180420245150,63291320166423,334906186618646,1803525009870353
+; Formula: a(n) = sqrtint(gcd(c(n),b(n))), b(n) = -n*b(n-1)+1, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = c(n-1), c(2) = 0, c(1) = 0, c(0) = 0
 
 mov $1,1
-mov $2,1
-mov $3,$0
-lpb $3
-  mul $2,$3
-  sub $3,1
-  sub $1,$2
-  mul $1,-1
+lpb $0
+  sub $0,1
+  sub $2,1
+  mul $1,$2
+  add $1,1
 lpe
-mov $3,$1
+gcd $3,$1
 nrt $3,2
 mov $0,$3

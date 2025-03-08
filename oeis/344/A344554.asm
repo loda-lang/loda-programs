@@ -1,13 +1,16 @@
 ; A344554: Decimal expansion of 2*(1+sqrt(26))/5.
-; Submitted by Christian Krause
+; Submitted by Wood
 ; 2,4,3,9,6,0,7,8,0,5,4,3,7,1,1,3,9,3,2,0,1,1,2,8,9,6,4,3,6,0,9,1,1,2,7,9,5,8,2,5,5,0,8,3,7,8,4,3,9,8,3,8,5,6,3,0,3,3,9,8,8,3,2,1,7,7,0,3,7,3,4,5,2,8,2,4,8,8,9,6
 
+#offset 1
+
+sub $0,1
 mov $1,1
 mov $2,1
 mov $3,$0
 mul $3,4
 lpb $3
-  cmp $6,0
+  equ $6,0
   mul $2,$3
   add $5,$6
   mul $1,$3
@@ -17,7 +20,7 @@ lpb $3
   add $2,$1
   mul $2,5
   mul $1,2
-  sub $3,1
+  sub $3,2
 lpe
 mov $4,10
 pow $4,$0

@@ -1,10 +1,34 @@
 ; A335690: a(1) = 1, a(2) = a(3) = 2; a(n) = (a(n-1) + a(n-2) + 1)/a(n-3) (for n>3).
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2,1,2,2,5,4,5,2,2
-; Formula: a(n) = A293544(A000203(A266313(n)+1))+1
 
-seq $0,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
-add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-seq $0,293544 ; a(n) is the integer k that minimizes | k/Fibonacci(n) - 1/3 |.
-add $0,1
+#offset 1
+
+sub $0,1
+mod $0,8
+mov $1,$0
+mov $2,$0
+mov $4,$0
+mov $5,$0
+mov $3,$0
+equ $3,7
+equ $0,0
+mul $0,4
+equ $1,1
+mul $1,16
+equ $2,2
+mul $2,37
+add $0,$1
+add $0,$2
+trn $0,1
+sub $4,599
+mul $4,89
+add $5,1
+equ $5,6
+mul $5,42
+add $0,$4
+add $0,$5
+add $0,$3
+sub $0,1
+mod $0,10
+add $0,10

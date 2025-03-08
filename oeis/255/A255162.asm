@@ -1,16 +1,14 @@
 ; A255162: Rational part of circle radii in nested circles and hexagons (see comment).
-; Submitted by Mumps
+; Submitted by BrandyNOW
 ; 2,0,24,-288,3744,-48384,625536,-8087040,104550912,-1351655424,17474476032,-225913577472,2920656642048,-37758842634240,488153991315456,-6310954007396352,81589295984541696,-1054802999903256576,13636707550653579264
-; Formula: a(n) = 2*b(n), b(n) = c(n-1), b(1) = 0, b(0) = 1, c(n) = 12*c(n-2)-12*c(n-1), c(1) = 12, c(0) = 0
+; Formula: a(n) = 2*c(n), b(n) = 12*b(n-2)-12*b(n-1), b(1) = 1, b(0) = 0, c(n) = 12*b(n-1), c(1) = 0, c(0) = 1
 
-mov $1,1
+mov $2,1
 lpb $0
   sub $0,1
-  sub $1,$3
-  mov $2,$3
-  mov $3,$1
-  mul $3,12
-  mov $1,$2
+  mul $1,-12
+  add $1,$2
+  sub $2,$1
 lpe
-mov $0,$1
+mov $0,$2
 mul $0,2

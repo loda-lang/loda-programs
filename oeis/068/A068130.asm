@@ -10,9 +10,8 @@ add $2,8
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
-  trn $3,1
-  sub $3,15
+  dgs $3,10
+  sub $3,16
   mul $3,-1
   add $3,$4
   equ $3,2
@@ -22,7 +21,7 @@ lpb $2
   max $4,0
   equ $4,$0
   mul $2,$4
-  sub $2,1
+  sub $2,3
   sub $5,1
 lpe
 mov $0,$1

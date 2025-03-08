@@ -1,21 +1,26 @@
 ; A073744: Decimal expansion of tanh(1).
-; Submitted by Solidair79
+; Submitted by Science United
 ; 7,6,1,5,9,4,1,5,5,9,5,5,7,6,4,8,8,8,1,1,9,4,5,8,2,8,2,6,0,4,7,9,3,5,9,0,4,1,2,7,6,8,5,9,7,2,5,7,9,3,6,5,5,1,5,9,6,8,1,0,5,0,0,1,2,1,9,5,3,2,4,4,5,7,6,6,3,8,4,8
 
-add $0,1
-mov $2,5
+add $0,2
 mov $3,$0
-add $3,1
-mul $3,4
+mul $3,5
 lpb $3
-  sub $3,2
-  add $5,$2
-  add $1,$5
-  add $2,$1
-  mul $5,$3
+  add $2,56
+  mul $2,$3
+  mov $5,$3
+  div $5,3
+  add $5,1
+  mul $1,2
+  add $1,$2
+  div $1,$5
+  div $2,$5
+  sub $3,1
 lpe
 mov $4,10
 pow $4,$0
+add $2,$1
+mul $2,5
 div $2,$4
 div $1,$2
 mov $0,$1

@@ -1,19 +1,15 @@
 ; A127948: Triangle, A004736 * A127899.
-; Submitted by BrandyNOW
+; Submitted by mmonnin
 ; 1,0,2,-1,1,3,-2,0,2,4,-3,-1,1,3,5,-4,-2,0,2,4,6,-5,-3,-1,1,3,5,7,-6,-4,-2,0,2,4,6,8,-7,-5,-3,-1,1,3,5,7,9,-8,-6,-4,-2,0,2,4,6,8,10
-; Formula: a(n) = 2*n-truncate((min(2*n+2,1)+sqrtint(8*n+8))/2)^2+2
+; Formula: a(n) = 2*n-truncate((sqrtint(8*n+8)+1)/2)^2+2
 
 add $0,1
-mul $0,2
 mov $1,$0
-mov $2,$0
-add $2,$0
-mul $2,2
-nrt $2,2
-min $0,1
-add $2,$0
-mov $0,$2
+mul $0,8
+nrt $0,2
+add $0,1
 div $0,2
 pow $0,2
+mul $1,2
 sub $1,$0
 mov $0,$1

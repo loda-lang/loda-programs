@@ -1,35 +1,41 @@
 ; A303127: Decimal expansion of proton magnetic moment to Bohr magneton ratio.
-; Submitted by [AF>Amis des Lapins] Ceclo
+; Submitted by BrandyNOW
 ; 1,5,2,1,0,3,2,2,0
-; Formula: a(n) = -10*truncate((-10*truncate((f(n+4)+2)/10)+f(n+4)+12)/10)-10*truncate((f(n+4)+2)/10)+f(n+4)+12, b(n) = d(n-5), b(11) = -2, b(10) = 0, b(9) = 1, b(8) = 1, b(7) = -2, b(6) = -1, b(5) = 0, b(4) = 0, b(3) = 1, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = d(n-3), c(9) = -2, c(8) = 0, c(7) = 1, c(6) = 1, c(5) = -2, c(4) = -1, c(3) = 0, c(2) = 0, c(1) = 1, c(0) = 0, d(n) = 2*d(n-4)-d(n-10)+d(n-1)+f1(n-3)+f1(n-4), d(15) = -11, d(14) = -8, d(13) = -4, d(12) = -2, d(11) = -3, d(10) = -3, d(9) = -1, d(8) = -1, d(7) = -1, d(6) = -2, d(5) = 0, d(4) = 1, d(3) = 1, d(2) = -2, d(1) = -1, d(0) = 0, e(n) = -d(n-1)-f1(n-1)+b(n-2)+1, e(9) = 0, e(8) = 0, e(7) = 2, e(6) = 2, e(5) = 1, e(4) = 1, e(3) = 0, e(2) = 4, e(1) = -1, e(0) = 0, f(n) = b(n-1)+c(n-1)+e(n-1)-1, f(9) = 0, f(8) = 0, f(7) = 1, f(6) = -2, f(5) = -1, f(4) = 0, f(3) = 3, f(2) = -1, f(1) = -1, f(0) = 0, f1(n) = -d(n-1)-f1(n-1), f1(9) = 1, f1(8) = 0, f1(7) = 1, f1(6) = 1, f1(5) = -1, f1(4) = 0, f1(3) = -1, f1(2) = 3, f1(1) = -2, f1(0) = 2
 
 #offset -2
 
-mov $8,1
-mov $9,2
-add $0,4
-lpb $0
-  sub $0,1
-  add $6,$3
-  mov $7,$6
-  add $9,$5
-  add $4,1
-  sub $4,$9
-  mov $6,$4
-  mul $9,-1
-  mov $4,$2
-  mov $2,$1
-  mov $1,$3
-  mov $3,$8
-  add $7,$4
-  sub $7,1
-  mov $8,$5
-  sub $8,$10
-  mov $10,$7
-  add $5,$7
-lpe
-mov $0,$7
-add $0,2
+add $0,3
+mov $1,1
+equ $1,$0
+mov $2,2
+equ $2,$0
+mov $4,4
+equ $4,$0
+mul $4,27
+sub $0,1
+mod $0,8
+mov $5,$0
+equ $5,1
+mov $6,$0
+mov $7,$0
+equ $7,3
+mov $3,$0
+equ $3,5
+equ $0,0
+mul $0,4
+equ $6,4
+mul $6,89
+add $0,$5
+add $0,$7
+add $0,$6
+mul $2,9
+div $2,5
+add $4,$0
+add $0,$3
+add $0,$1
+add $0,$2
+add $0,$4
+sub $0,28
 mod $0,10
 add $0,10
 mod $0,10

@@ -1,17 +1,26 @@
 ; A365444: Partial sums of A365414.
-; Submitted by Facultad de Derecho
+; Submitted by Science United
 ; 7,25,56,92,148,202,292,364,462,552,679,823,963,1089,1269,1413,1630,1792,2040,2220,2444,2696,2966,3182,3448,3736,4114,4366,4674,4944,5304,5664,6063,6369,6803,7127,7631,7973,8423,8855,9289,9757,10268,10664,11140,11554,12274,12778
 
-mov $3,$0
-mov $1,$0
-add $1,1
-lpb $1
-  sub $1,1
-  mov $0,$3
-  sub $0,$1
-  mul $0,6
-  add $0,4
+mov $4,$0
+mov $2,$0
+add $2,1
+lpb $2
+  sub $2,1
+  mov $0,$4
+  sub $0,$2
+  min $0,81
+  mul $0,54
+  add $0,36
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  add $2,$0
+  mul $0,21
+  mov $1,3
+  mul $1,$0
+  add $1,$0
+  mov $0,$1
+  sub $0,7639
+  div $0,1092
+  add $0,7
+  add $3,$0
 lpe
-mov $0,$2
+mov $0,$3

@@ -9,7 +9,26 @@ lpb $1
   mov $0,$3
   add $0,$1
   div $0,2
-  seq $0,301672 ; Coordination sequence for node of type V2 in "krr" 2-D tiling (or net).
+  mov $5,$0
+  bin $5,2
+  add $5,3
+  gcd $5,2
+  mov $6,$0
+  add $6,$5
+  div $6,2
+  sub $6,8
+  sub $6,$5
+  mov $7,$0
+  mul $7,2
+  mov $8,$0
+  add $8,$7
+  add $0,$8
+  sub $0,1
+  mul $0,2
+  div $0,3
+  sub $0,8
+  add $0,$7
+  sub $0,$6
   mov $2,$1
   mul $2,$0
   add $4,$2
