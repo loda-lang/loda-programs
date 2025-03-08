@@ -1,0 +1,12 @@
+; A318433: Number of n-element subsets of [5n] whose elements sum to a multiple of n.
+; Submitted by Wood
+; 1,5,20,155,1220,10630,98900,960650,9613700,98462675,1027222520,10877596900,116613287300,1263159501180,13803839298920,152000845788280,1684888825463940,18785707522181965,210536007879090140,2370423142929112065,26799168520704093720
+
+mov $1,$0
+trn $0,1
+add $0,1
+seq $0,309184 ; (1/5) times the number of n-member subsets of [5n] whose elements sum to a multiple of n.
+lpb $1
+  mov $1,0
+  mul $0,5
+lpe
