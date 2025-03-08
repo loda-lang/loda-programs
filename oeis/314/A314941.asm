@@ -12,7 +12,7 @@ mod $1,$2
 mov $4,$0
 sub $4,$1
 mov $5,$4
-cmp $5,0
+equ $5,0
 mov $3,$0
 mul $3,4
 add $4,$5

@@ -15,7 +15,16 @@ lpb $3
   mul $2,$1
   sub $2,1
   trn $2,1
-  seq $2,25426 ; Number of partitions of n into 2 nonzero squares.
+  mov $8,$2
+  seq $8,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
+  mov $6,$8
+  div $6,2
+  mov $7,$6
+  gcd $8,2
+  mul $8,-1
+  add $8,$6
+  mov $2,$8
+  add $2,2
   add $4,$2
 lpe
 mov $0,$4

@@ -12,6 +12,7 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
+  add $0,1
   seq $0,318249 ; a(n) = (n - 1)! * d(n), where d(n) = number of divisors of n (A000005).
   mul $1,$0
   mul $3,-1

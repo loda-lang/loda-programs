@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $1,5
-cmp $3,$0
+equ $3,$0
 gcd $4,$1
 add $4,2
 div $4,5

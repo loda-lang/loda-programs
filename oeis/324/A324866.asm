@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $2,$0
+  add $2,1
   seq $2,318458 ; a(n) = n AND A001065(n), where AND is bitwise-and (A004198) & A001065 = sum of proper divisors.
   mov $1,$0
   add $1,1

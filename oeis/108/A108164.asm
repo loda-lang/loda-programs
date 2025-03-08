@@ -11,6 +11,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,319986 ; Fully multiplicative with a(p^e) = prime(p mod 6)^e.
   add $3,1
   equ $3,5

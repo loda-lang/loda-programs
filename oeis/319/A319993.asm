@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,-1,1,0,1,-1,1,0,3,-1,1,0,1,-1,1,0,1,-3,1,0,1,-1,1,0,5,-1,9,0,1,-1,1,0,1,-1,1,0,1,-1,1,0,1,-1,1,0,3,-1,1,0,7,-5,1,0,1,-9,1,0,1,-1,1,0,1,-1,3,0,1,-1,1,0,1,-1,1,0,1,-1,5,0,1,-1,1,0
 
+#offset 1
+
+sub $0,1
 sub $1,$0
 add $0,1
 seq $0,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.

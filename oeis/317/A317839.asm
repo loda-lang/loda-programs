@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 1,0,1,0,2,0,2,0,2,0,4,0,4,0,0,0,4,0,6,0,4,0,6,0,4,0,4,0,6,0,4,0,0,0,4,0,10,0,4,0,10,0,12,0,6,0,8,0,6,0,6,0,12,0,4,0,2,0,10,0,8,0,-4,0,0,0,10,0,6,0,12,0,14,0,10,0,10,0,12,0
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $5,2
 lpb $5
@@ -9,7 +12,6 @@ lpb $5
   sub $6,$1
   mov $0,$4
   add $0,$5
-  sub $0,1
   seq $0,317840 ; Difference between Stern's Diatomic sequence (A002487) and its Möbius transform (A317839).
   add $2,$6
   mov $3,$2

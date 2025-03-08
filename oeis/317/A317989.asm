@@ -4,7 +4,6 @@
 
 #offset 2
 
-sub $0,2
 seq $0,317991 ; 2-rank of the narrow class group of real quadratic field with discriminant A003658(n), n >= 2.
 mul $0,200
 sub $0,54

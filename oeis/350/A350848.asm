@@ -9,7 +9,6 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
-  sub $3,1
   seq $3,316523 ; Number of odd multiplicities minus number of even multiplicities in the canonical prime factorization of n.
   equ $3,0
   sub $0,$3

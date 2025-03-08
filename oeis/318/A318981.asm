@@ -2,12 +2,17 @@
 ; Submitted by Skivelitis2
 ; 1,6,12,14,15,18,21,24,26,28,30,35,36,38,39,42,45,48,51,52,54,56,58,60,63,65,66,69,70,72,74,75,76,77,78,84,86,87,90,91,95,96,98,102,104,105,106,108,111,112,114,116,117,119,120,122,123,126,130,132,133
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mul $2,10
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $5,$3
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $3,1
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.

@@ -1,11 +1,10 @@
 ; A318307: Multiplicative with a(p^e) = 2^A002487(e).
 ; Submitted by Science United
 ; 1,2,2,2,2,4,2,4,2,4,2,4,2,4,4,2,2,4,2,4,4,4,2,8,2,4,4,4,2,8,2,8,4,4,4,4,2,4,4,8,2,8,2,4,4,4,2,4,2,4,4,4,2,8,4,8,4,4,2,8,2,4,4,4,4,8,2,4,4,8,2,8,2,4,4,4,4,8,2,4
-; Formula: a(n) = truncate(2^A318306(n-1))
+; Formula: a(n) = truncate(2^A318306(n))
 
 #offset 1
 
-sub $0,1
 seq $0,318306 ; Additive with a(p^e) = A002487(e).
 mov $1,2
 pow $1,$0

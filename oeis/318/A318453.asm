@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,3,1,1,1,5,1,1,1,3,1,1,1,35,1,1,1,3,1,1,1,5,1,1,1,3,1,1,1,63,1,1,1,3,1,1,1,5,1,1,1,3,1,1,1,35,1,1,1,3,1,1,1,5,1,1,1,3,1,1,1,231,1,1,1,3,1,1,1,5,1,1,1,3,1,1,1,35
 
-add $0,1
+#offset 1
+
 seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
 mov $1,$0
 mul $0,2

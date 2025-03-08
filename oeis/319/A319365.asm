@@ -11,7 +11,7 @@ lpb $0
   lpb $4
     sub $4,1
     mov $7,$4
-    cmp $7,3
+    equ $7,3
     seq $7,135042 ; a(n) = 5*(n - 1) for n >= 2; a(0) = 1, a(1) = 2.
     mov $9,10
     add $9,$5

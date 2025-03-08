@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   add $3,1
   pow $3,2
-  sub $3,1
   seq $3,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
   mod $3,2
   equ $3,0

@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,317946 ; Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
   mov $5,2
   pow $5,$3

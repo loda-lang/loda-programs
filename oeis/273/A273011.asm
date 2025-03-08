@@ -10,6 +10,7 @@ pow $2,2
 lpb $2
   mov $6,1
   mov $3,$1
+  add $3,1
   seq $3,317848 ; Multiplicative with a(p^e) = binomial(2*e, e).
   lpb $3
     dif $3,2

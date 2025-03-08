@@ -1,9 +1,12 @@
-; A316096: Numbers n such that A(n+1) = A(n) + 4, where A() = A005101() are the abundant numbers.
+; A316096: Numbers m such that A(m+1) = A(m) + 4, where A() = A005101() are the abundant numbers.
 ; Submitted by Science United
 ; 3,6,11,13,17,18,21,24,25,32,35,40,43,46,47,50,53,60,63,64,69,72,75,78,85,88,91,94,95,100,105,106,109,112,115,117,121,124,127,130,132,136,139,140,147,148,151,154,157,159,165,168,171,176,177,180,181,184
 
+#offset 1
+
 mov $2,$0
-add $2,4
+sub $0,1
+add $2,3
 pow $2,2
 lpb $2
   mov $5,0

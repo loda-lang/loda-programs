@@ -16,8 +16,7 @@ lpb $9
       div $0,2
       mov $4,$0
       mod $4,$2
-      cmp $4,0
-      cmp $4,0
+      neq $4,0
       add $2,1
       mov $3,$5
       sub $3,$4

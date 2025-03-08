@@ -2,7 +2,9 @@
 ; Submitted by emoga
 ; 1,2,6,6,8,6,5,3,0,0,0,0,0,0,0,0,0,0
 
-add $0,1
+#offset 18
+
+sub $0,17
 lpb $0
   sub $0,1
   mov $2,$4

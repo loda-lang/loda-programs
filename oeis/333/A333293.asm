@@ -11,6 +11,7 @@ lpb $3
     sub $0,1
     mov $2,$0
     max $2,0
+    add $2,1
     seq $2,319087 ; a(n) = Sum_{k=1..n} k^2*phi(k), where phi is the Euler totient function A000010.
     mov $3,0
     add $4,$2

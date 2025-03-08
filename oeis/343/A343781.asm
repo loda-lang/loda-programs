@@ -15,7 +15,6 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
   seq $0,319278 ; Square array sigma_k(n) read down antidiagonals: sum of the k-th powers of the divisors of n.
   add $1,$0
 lpe

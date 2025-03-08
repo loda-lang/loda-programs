@@ -7,7 +7,6 @@ lpb $0
   add $2,1
   seq $2,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
   mul $2,2
-  sub $2,1
   seq $2,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
   div $2,2
   mov $0,$2

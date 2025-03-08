@@ -6,4 +6,5 @@ lpb $0
   add $0,1
   seq $0,55615 ; a(n) = n * mu(n), where mu is the Möbius function A008683.
 lpe
+add $0,1
 seq $0,319627 ; Primorial deflation of n (denominator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n > 0, a(n) is the denominator of g(n).

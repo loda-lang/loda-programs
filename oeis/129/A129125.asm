@@ -10,7 +10,6 @@ lpb $2
   seq $3,114994 ; Numbers whose binary representation has monotonically decreasing sizes of groups of zeros (including zero-length groups between adjacent ones).
   seq $3,333219 ; Heinz number of the n-th composition in standard order.
   mov $5,$3
-  sub $3,1
   seq $3,319993 ; a(n) = A319997(n) / A173557(n).
   neq $3,0
   sub $0,$3

@@ -7,7 +7,7 @@ lpb $0
   seq $3,9 ; Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
   mov $2,$0
   seq $2,7706 ; a(n) = 1 + coefficient of x^n in Product_{k>=1} (1-x^k) (essentially the expansion of the Dedekind function eta(x)).
-  cmp $2,0
+  equ $2,0
   add $3,$2
   mov $2,$3
   div $2,2

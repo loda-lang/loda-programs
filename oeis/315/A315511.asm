@@ -11,6 +11,6 @@ div $0,3
 sub $0,1
 add $2,$0
 mov $1,$2
-cmp $1,0
+equ $1,0
 add $2,$1
 mov $0,$2

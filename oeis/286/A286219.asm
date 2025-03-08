@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,318676 ; Sum of divisors of n that have an even number of prime factors (counted with multiplicity).
     mov $9,10
     add $9,$5

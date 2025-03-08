@@ -4,7 +4,7 @@
 
 mov $1,$0
 mul $1,3
-cmp $2,$0
+equ $2,$0
 add $0,$2
 mov $2,$0
 dif $2,2

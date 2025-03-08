@@ -1,9 +1,10 @@
 ; A318369: Number of non-isomorphic set multipartitions (multisets of sets) of the multiset of prime indices of n.
 ; Submitted by Christian Krause
 ; 1,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,2,1,2,2,2,1,2,1,2,1,2,1,3,1,1,2,2,2,3,1,2,2,2,1,3,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,5,1,2,2,1,2,3,1,2,2,3,1,3,1,2,2,2,2,3,1,2
-; Formula: a(n) = truncate((A003132(truncate((A073184(n+1)+4)/4)+1)-4)/5)+1
+; Formula: a(n) = truncate((A003132(truncate((A073184(n)+4)/4)+1)-4)/5)+1
 
-add $0,1
+#offset 1
+
 seq $0,73184 ; Number of cubefree divisors of n.
 mov $1,2
 add $1,$0

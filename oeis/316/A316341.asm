@@ -6,4 +6,4 @@ lpb $0
   add $1,2
   dif $0,$1
 lpe
-cmp $0,1
+equ $0,1

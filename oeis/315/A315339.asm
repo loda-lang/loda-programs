@@ -8,6 +8,6 @@ sub $0,1
 mov $1,$0
 add $1,$0
 mov $2,$1
-cmp $2,0
+equ $2,0
 add $1,$2
 mov $0,$1

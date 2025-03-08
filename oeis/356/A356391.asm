@@ -15,9 +15,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  sub $0,1
   mov $5,$0
   seq $5,318250 ; a(n) = (n - 1)! * sigma_2(n), where sigma_2(n) = sum of squares of divisors of n (A001157).
+  sub $0,1
   mul $1,$5
   add $3,$1
 lpe

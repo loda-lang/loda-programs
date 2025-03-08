@@ -2,6 +2,9 @@
 ; Submitted by Jamie Morken(w3)
 ; 1,3,2,7,1,2,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0
 
+#offset 21
+
+sub $0,21
 mov $1,1
 mov $2,1
 mov $3,$0

@@ -5,7 +5,7 @@
 mov $1,2
 lpb $0
   mov $1,$0
-  add $1,1
+  add $1,2
   seq $1,316688 ; Number of nX3 0..1 arrays with every element unequal to 0, 1, 2, 6, 7 or 8 king-move adjacent elements, with upper left element zero.
   mov $0,0
 lpe

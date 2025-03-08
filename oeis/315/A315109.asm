@@ -7,7 +7,7 @@ dif $1,2
 mul $1,2
 add $1,1
 mod $1,3
-cmp $3,$0
+equ $3,$0
 mov $6,$0
 mul $6,2
 add $6,46078

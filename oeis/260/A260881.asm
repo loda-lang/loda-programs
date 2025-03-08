@@ -8,6 +8,7 @@ lpb $0
   max $2,0
   add $3,1
   mov $4,$2
+  add $4,1
   seq $4,319998 ; a(n) = Sum_{d|n, d is even} mu(n/d)*d, where mu(n) is Moebius function A008683.
   add $2,1
   seq $2,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
