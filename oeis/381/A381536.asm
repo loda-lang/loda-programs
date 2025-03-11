@@ -1,0 +1,17 @@
+; A381536: Number of labeled histories for rooted 4-furcating trees with 3n+1 leaves if simultaneous 4-furcations are not allowed.
+; Submitted by Science United
+; 1,1,35,7350,5255250,9564555000,37072215180000,271183254041700000,3430468163627505000000,70238835650273164875000000,2210064963735845132791875000000,102493972758213553878355995000000000,6769214430816214165896021689775000000000,618638506832293812621237422228537250000000000
+; Formula: a(n) = truncate(b(n)/2), b(n) = binomial(3*n+1,4)*b(n-1), b(1) = 2, b(0) = 2
+
+mov $3,2
+lpb $0
+  sub $0,1
+  add $1,4
+  mov $2,$3
+  mov $3,$1
+  bin $3,4
+  mul $3,$2
+  sub $1,1
+lpe
+mov $0,$3
+div $0,2
