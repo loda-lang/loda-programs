@@ -11,7 +11,34 @@ lpb $1
   sub $1,1
   mov $3,$2
   add $3,2
-  seq $3,505 ; Eulerian numbers (Euler's triangle: column k=5 of A008292, column k=4 of A173018).
+  mov $4,5
+  pow $4,$3
+  mov $8,$3
+  add $8,1
+  mov $5,4
+  pow $5,$3
+  mul $5,$8
+  mov $6,3
+  pow $6,$3
+  mul $6,$8
+  mul $6,$3
+  div $6,2
+  mov $7,2
+  pow $7,$3
+  mul $7,$8
+  mul $7,$3
+  mul $8,$3
+  sub $3,1
+  mul $7,$3
+  div $7,6
+  mul $8,$3
+  sub $3,1
+  mul $8,$3
+  div $8,24
+  sub $4,$5
+  add $4,$6
+  sub $4,$7
+  add $4,$8
   add $0,3
-  mul $0,$3
+  mul $0,$4
 lpe

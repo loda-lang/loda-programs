@@ -6,10 +6,10 @@ mov $4,1
 mov $7,$0
 lpb $0
   mul $4,$0
+  dif $4,-1
   sub $0,1
 lpe
 mov $0,$7
-mul $0,2
 add $0,1
 lpb $0
   sub $0,1

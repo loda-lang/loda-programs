@@ -11,6 +11,7 @@ lpb $0
     div $0,6
     sub $0,1
   lpe
+  sub $0,2
   mul $0,16
 lpe
 max $0,0

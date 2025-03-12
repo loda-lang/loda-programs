@@ -1,12 +1,21 @@
 ; A326691: a(n) = n/denominator(Sum_{prime p | n} 1/p - 1/n).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,2,3,1,5,2,7,1,1,2,11,3,13,2,1,1,17,2,19,1,3,2,23,1,1,2,1,1,29,30,31,1,1,2,1,1,37,2,3,1,41,2,43,1,1,2,47,3,1,2,1,1,53,2,5,7,3,2,59,1,61,2,1,1,1,6,67,1,1,2,71,1,73,2,3,1,1,2,79,5
-; Formula: a(n) = gcd(A003415(n+1)-1,n+1)
+; Formula: a(n) = gcd(-n,-c(n)+b(n)), b(n) = -n*b(n-1)+1, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = -b(n-1)+c(n-1), c(2) = -1, c(1) = -1, c(0) = 0
 
-add $0,1
-mov $1,$0
-seq $0,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
-sub $0,1
-mov $2,$0
-gcd $2,$1
-mov $0,$2
+#offset 1
+
+mov $1,1
+lpb $0
+  sub $0,1
+  sub $2,1
+  sub $4,$1
+  mul $1,$2
+  add $1,1
+lpe
+sub $4,1
+sub $1,1
+sub $1,$4
+mov $3,$2
+gcd $3,$1
+mov $0,$3

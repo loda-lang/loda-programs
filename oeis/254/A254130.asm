@@ -1,26 +1,17 @@
 ; A254130: Numbers whose factorials are exclusionary: numbers n such that n and n! have no digits in common.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 0,3,5,6,7,8,9,13,16
+; Formula: a(n) = max(n-2,5)+sqrtint(max(n-2,5)*(5*n-2))-8
 
-mov $1,3
-mov $2,$0
-add $2,4
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,1
-  seq $3,204922 ; Ordered differences of Fibonacci numbers.
-  gcd $3,4
-  add $3,1
-  equ $3,5
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-lpe
-mov $0,$1
-div $0,2
+#offset 1
+
+mov $1,$0
 sub $0,2
+mul $1,4
+add $1,$0
+max $0,5
+mul $1,$0
+nrt $1,2
+add $1,$0
+mov $0,$1
+sub $0,8

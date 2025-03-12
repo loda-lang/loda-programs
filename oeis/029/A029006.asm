@@ -1,20 +1,16 @@
 ; A029006: Expansion of 1/((1-x)(1-x^2)(1-x^3)(1-x^12)).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,1,2,3,4,5,7,8,10,12,14,16,20,22,26,30,34,38,44,48,54,60,66,72,81,87,96,105,114,123,135,144,156,168,180,192,208,220,236,252,268,284,304,320,340,360,380,400,425,445
-; Formula: a(n) = b(n+1), b(n) = b(n-1)+floor(((-floor((n+1)/3)+floor((n+1)/2)+1)^2)/4), b(0) = 0
+; Formula: a(n) = b(n+2), b(n) = b(n-2)+floor((floor((n+7)/3)^2)/8), b(1) = 0, b(0) = 0
 
-add $0,1
+add $0,2
 lpb $0
   mov $2,$0
-  add $2,1
-  mov $3,$2
-  div $3,3
-  div $2,2
-  sub $2,$3
-  add $2,1
+  add $2,7
+  div $2,3
   pow $2,2
-  div $2,4
-  sub $0,1
+  div $2,8
+  sub $0,2
   add $1,$2
 lpe
 mov $0,$1

@@ -1,37 +1,32 @@
 ; A188657: Decimal expansion of (3+sqrt(73))/8.
-; Submitted by Jon Maiga
+; Submitted by Stephen Uitti
 ; 1,4,4,3,0,0,0,4,6,8,1,6,4,6,9,1,3,9,5,9,8,3,9,5,6,0,4,0,7,7,9,9,6,3,3,0,4,3,2,4,3,0,6,9,1,6,1,9,1,6,6,0,2,8,0,2,3,8,5,8,1,4,0,6,7,2,1,4,5,6,1,0,2,4,1,5,9,1,2,2
+; Formula: a(n) = -10*truncate(truncate(b(max(3*n-3,0))/(truncate(c(max(3*n-3,0))/(10^(n-1)))+1))/10)+truncate(b(max(3*n-3,0))/(truncate(c(max(3*n-3,0))/(10^(n-1)))+1)), b(n) = 2*c(n-1)+2*e(n-1)+b(n-1), b(3) = 263, b(2) = 15, b(1) = 1, b(0) = 1, c(n) = 6*c(n-1)+4*e(n-1)+2*b(n-1), c(3) = 594, c(2) = 34, c(1) = 2, c(0) = 0, d(n) = 14*c(n-1)+10*e(n-1)+5*b(n-1)+2*d(n-1)+2*max(2*c(n-1)+2*e(n-1),3*c(n-1)+2*e(n-1)+b(n-1)), d(3) = 2307, d(2) = 131, d(1) = 7, d(0) = 0, e(n) = 8*c(n-1)+6*e(n-1)+3*b(n-1)+2*max(2*c(n-1)+2*e(n-1),3*c(n-1)+2*e(n-1)+b(n-1))+d(n-1), e(3) = 1582, e(2) = 90, e(1) = 5, e(0) = 0
 
 #offset 1
 
 sub $0,1
-mov $1,2
-mov $2,1
+mov $1,1
 mov $3,$0
-mul $3,4
-mov $7,3
-lpb $7
-  lpb $3
-    mul $2,$3
-    mul $1,$3
-    add $1,$2
-    equ $7,0
-    equ $8,0
-    add $5,$8
-    div $1,$5
-    div $2,$5
-    add $2,$1
-    mul $2,4
-    mul $1,3
-    sub $3,2
-  lpe
+mul $3,3
+lpb $3
+  sub $3,1
+  add $6,$2
+  mul $6,2
+  add $1,$6
+  add $2,$1
+  max $6,$2
+  mul $2,2
+  add $5,$2
+  mul $6,2
+  add $6,$1
+  add $6,$5
+  add $5,$6
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-mov $6,$2
-equ $6,1
-add $2,$6
+add $2,1
 div $1,$2
 mov $0,$1
 mod $0,10

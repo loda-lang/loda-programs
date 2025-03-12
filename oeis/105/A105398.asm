@@ -1,11 +1,10 @@
 ; A105398: A simple "Fractal Jump Sequence" (FJS).
-; Submitted by Christian Krause
+; Submitted by GPV67
 ; 4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8,4,8
-; Formula: a(n) = 4*((n-4)%2)+4
+; Formula: a(n) = 4*(n%2)+4
 
 #offset 4
 
-sub $0,4
 mod $0,2
 mul $0,4
 add $0,4

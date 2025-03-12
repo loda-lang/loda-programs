@@ -5,6 +5,7 @@
 mov $2,1
 add $2,$0
 mov $3,$0
+add $3,1
 seq $3,337177 ; Sum of the divisors d of n such that d is not equal to n/d.
 gcd $3,$2
 equ $3,1

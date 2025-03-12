@@ -1,17 +1,34 @@
 ; A353047: Number of length n words on alphabet {0,1,2} that contain each of the subwords 01, 02, 10, 12, 20, and 21 as (not necessarily contiguous) subwords.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 12,108,600,2664,10404,37476,127920,420768,1348476,4242204,13169160,40490712,123635028,375623892,1137095520,3433306896,10347106860,31141984140,93639862200,281372571720,845074016772,2537235316548,7615933808400,22856659795584,68588501433564
-; Formula: a(n) = c(n+3), b(n) = 3*d(n-1)+b(n-1), b(3) = 60, b(2) = 12, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1)+b(n-1)+e(n-1), c(3) = 12, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 3*d(n-1)+4, d(3) = 52, d(2) = 16, d(1) = 4, d(0) = 0, e(n) = 2*b(n-1)+2*e(n-1), e(3) = 24, e(2) = 0, e(1) = 0, e(0) = 0
+; Formula: a(n) = 12*truncate(truncate((6^(n-1)+(-2*n+6)*4^(n-1)+(-2*n+6)*2^(n-1))/(2^(n-1)))/4)-24
 
-add $0,3
-lpb $0
-  sub $0,1
-  mul $3,3
-  add $4,$1
-  add $1,$3
-  mul $2,2
-  add $2,$4
-  add $3,4
-  mul $4,2
-lpe
-mov $0,$2
+#offset 5
+
+mov $1,$0
+sub $1,1
+mov $3,6
+pow $3,$1
+mov $6,4
+pow $6,$1
+mov $5,$1
+mul $5,2
+mov $4,2
+pow $4,$1
+mul $1,2
+sub $1,2
+mov $2,2
+sub $2,$1
+mul $2,$6
+mul $1,2
+sub $5,$1
+mul $5,$4
+add $3,$2
+add $3,$5
+div $3,$4
+mov $1,$3
+div $1,4
+sub $1,2
+sub $0,5
+mov $0,$1
+mul $0,12

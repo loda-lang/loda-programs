@@ -1,5 +1,5 @@
 ; A307879: Expansion of e.g.f. exp(4*x)*(sec(x) + tan(x)).
-; Submitted by damotbe
+; Submitted by BrandyNOW
 ; 1,5,25,126,645,3380,18285,103036,610345,3833540,25714345,185107596,1433220045,11932724900,106613406405,1019012112556,10382757537745,112378069315460,1287787864054465,15576862520435916,198330820236011445,2651486893149253220,37135749401704458525
 
 mov $2,$0
@@ -12,9 +12,9 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,752 ; Boustrophedon transform of powers of 2.
+  seq $0,667 ; Boustrophedon transform of all-1's sequence.
   mul $1,$0
-  mul $3,2
+  mul $3,3
   add $3,$1
 lpe
 mov $0,$3

@@ -1,23 +1,15 @@
 ; A210607: Vertex number of an L-toothpick structure which give Recamán's sequence A005132.
-; Submitted by Stony666
+; Submitted by BrandyNOW
 ; 0,1,4,9,12,16,20,25,36
 
 #offset 1
 
-mov $1,1
-mov $2,$0
-pow $2,4
-lpb $2
-  mov $3,$1
-  add $3,8
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,7
-  sub $2,$0
-lpe
+mov $1,$0
+mul $1,4
+geq $1,12
+mul $1,$0
+nrt $1,2
+add $1,$0
 mov $0,$1
-div $0,7
-add $0,1
 pow $0,2
 div $0,4

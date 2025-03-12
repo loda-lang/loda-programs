@@ -11,6 +11,7 @@ lpb $2
   mov $5,1
   add $5,$1
   mov $3,$1
+  add $3,1
   seq $3,337177 ; Sum of the divisors d of n such that d is not equal to n/d.
   gcd $3,$5
   equ $3,1

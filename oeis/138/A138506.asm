@@ -11,12 +11,11 @@ lpb $0
   mov $11,5
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,138507 ; Expansion of (f(q)^5 / f(q^5) - 1) / 5 in powers of q where f() is a Ramanujan theta function.
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     add $5,1
     add $6,$7

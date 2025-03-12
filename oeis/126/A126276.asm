@@ -1,19 +1,16 @@
 ; A126276: Moment of inertia of all magic cubes of order n.
-; Submitted by Jamie Morken(s2)
+; Submitted by Rodney Duane
 ; 18,504,5200,31500,136710,471968,1378944,3547800,8258250,17728920,35603568,67606084,122399550,212688000,356602880,579419568,915652674,1411582200,2128266000,3145097340,4563969718,6514114464,9157680000,12696125000,17377501050
-; Formula: a(n) = 2*floor((binomial(n^2,2)*((n^2)^2+n))/12)
+; Formula: a(n) = floor((binomial(n^2,2)*((n^2)^2+n))/6)
 
 #offset 2
 
 mov $1,$0
-mov $3,$0
-mul $3,$0
-mov $2,$3
+mul $1,$0
+mov $2,$1
 pow $2,2
-bin $3,2
+bin $1,2
 add $2,$0
-mul $2,$3
-sub $0,2
+mul $2,$1
 mov $0,$2
-div $0,12
-mul $0,2
+div $0,6

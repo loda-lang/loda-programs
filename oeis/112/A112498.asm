@@ -1,12 +1,12 @@
 ; A112498: Third column of second-order Eulerian triangle A008517 divided by 2.
-; Submitted by Cruncher Pete
+; Submitted by tosi
 ; 3,29,164,726,2805,9975,33630,109424,347519,1085313,3349848,10253994,31203945,94561643,285716018,861472836,2593592883,7800176565,23441423340,70410252350,211411111133,634610819679,1904620987014
-; Formula: a(n) = truncate(b(n-1)/8), b(n) = 2*(2*n-1)*(4*n+2*c(n-1)-4)+3*b(n-1), b(2) = 24, b(1) = 0, b(0) = 0, c(n) = 4*n+2*c(n-1)-4, c(2) = 4, c(1) = 0, c(0) = 0
+; Formula: a(n) = truncate(b(n-2)/4), b(n) = (2*n+1)*(4*n+2*c(n-1))+3*b(n-1), b(2) = 116, b(1) = 12, b(0) = 0, c(n) = 4*n+2*c(n-1), c(2) = 16, c(1) = 4, c(0) = 0
 
 #offset 3
 
-mov $1,-1
-sub $0,1
+mov $1,1
+sub $0,2
 lpb $0
   sub $0,1
   add $1,2
@@ -15,9 +15,8 @@ lpb $0
   mul $4,2
   mov $3,$1
   mul $3,$4
-  mul $3,2
   mul $2,3
   add $2,$3
 lpe
 mov $0,$2
-div $0,8
+div $0,4

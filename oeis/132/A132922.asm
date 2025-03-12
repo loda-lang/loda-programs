@@ -9,12 +9,10 @@ pow $0,2
 sub $1,2
 lpb $1
   sub $1,1
-  add $3,1
-  add $5,$3
   mov $2,$4
-  mov $4,$6
-  add $6,$2
-  add $6,$5
-  sub $5,$3
+  add $3,1
+  mov $4,$5
+  add $5,$2
+  add $5,$3
 lpe
-add $0,$6
+add $0,$5

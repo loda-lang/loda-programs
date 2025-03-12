@@ -1,26 +1,28 @@
 ; A016323: Inverse of 2314th cyclotomic polynomial.
-; Submitted by TrikkStar
+; Submitted by atannir
 ; 1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,-1
 pow $1,$0
-mov $2,6
-mov $4,1
-mul $0,3
-lpb $0
-  sub $0,1
-  sub $2,2
-  sub $3,3
-  add $4,1
-  mul $4,$3
-  add $4,$2
-  mul $2,$3
+mov $2,$0
+mov $5,0
+mov $4,0
+mov $3,5
+mul $2,3
+lpb $2
+  sub $2,1
+  sub $4,3
+  mul $5,$4
+  add $5,$3
+  sub $5,7
+  mul $3,$4
 lpe
-mov $5,$4
-mul $4,$2
-gcd $4,$2
-div $5,$4
-mov $0,$5
-add $0,1
-mod $0,2
-mul $0,$1
+mov $6,$5
+mul $5,$3
+gcd $5,$3
+div $6,$5
+mov $2,$6
+add $2,1
+mod $2,2
+mul $2,$1
+mov $0,$2

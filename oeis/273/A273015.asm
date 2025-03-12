@@ -1,5 +1,5 @@
 ; A273015: Ramanujan's largely composite numbers having 3 as the greatest prime divisor.
-; Submitted by Mumps
+; Submitted by mudpuppie
 ; 3,6,12,18,24,36,48,72,96,108
 
 #offset 1
@@ -16,7 +16,7 @@ lpb $6
   mov $5,1
   mov $7,0
   lpb $0
-    mov $3,$0
+    add $3,1
     lpb $3
       gcd $2,$5
       mov $4,$0

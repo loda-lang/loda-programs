@@ -1,17 +1,15 @@
 ; A035492: Position of card 1 after n-th shuffle in Guy's shuffling problem (A035485).
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,2,4,1,2,4,8,1,2,4,8,16,7,14,28,25,17,34,31,23,5,10,20,40,31,11,22,44,31,3,6,12,24,48,27,54,35,70,63,47,13,26,52,17,34,68,43,86,75,51,1,2,4,8,16,32,64,13,26,52,104,85,45,90,51,102,71,7,14,28,56,112,79,11,22,44,88,21,42,84
-; Formula: a(n) = truncate(b(n)/2)+1, b(n) = -2*truncate(b(n-1)/(2*n+1))*(2*n+1)+2*b(n-1)+1, b(1) = 3, b(0) = 1
+; Formula: a(n) = truncate(b(n)/2), b(n) = -2*truncate(b(n-1)/(2*n+1))*(2*n+1)+2*b(n-1), b(1) = 4, b(0) = 2
 
-mov $1,1
+mov $1,2
 mov $2,1
 lpb $0
   sub $0,1
   add $2,2
   mod $1,$2
   mul $1,2
-  add $1,1
 lpe
 mov $0,$1
 div $0,2
-add $0,1

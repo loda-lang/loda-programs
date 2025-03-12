@@ -5,20 +5,17 @@
 #offset 1
 
 add $0,374
-mov $1,0
-equ $1,$0
 mul $0,2
 lpb $0
   sub $0,1
-  mov $2,$0
-  div $2,2
-  add $2,1
-  seq $2,7528 ; Primes of the form 6k-1.
-  sub $2,3
+  mov $1,$0
+  div $1,2
+  add $1,1
+  seq $1,7528 ; Primes of the form 6k-1.
+  sub $1,3
   mov $0,1
 lpe
-mov $0,$2
-sub $0,$1
+mov $0,$1
 add $0,3
 div $0,3
 mul $0,5616

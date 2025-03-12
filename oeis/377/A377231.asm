@@ -1,13 +1,15 @@
 ; A377231: a(n) = digital root of 2^Fibonacci(n).
-; Submitted by shiva
+; Submitted by BrandyNOW
 ; 1,2,2,4,8,5,4,2,8,7,2,5,1,5,5,7,8,2,7,5,8,4,5,2,1,2,2,4,8,5,4,2,8,7,2,5,1,5,5,7,8,2,7,5,8,4,5,2,1,2,2,4,8,5,4,2,8,7,2,5,1,5,5,7,8,2,7,5,8,4,5,2,1,2,2,4,8,5,4,2
+; Formula: a(n) = a(n-2)*a(n-1)-9*truncate((a(n-2)*a(n-1))/9), a(1) = 2, a(0) = 1
 
-add $0,1
-seq $0,48572 ; a(n) = sum of digits of a(n-1)*a(n-2).
+mov $1,1
+mov $3,2
 lpb $0
-  mov $1,$0
-  mod $1,10
-  div $0,10
-  add $2,$1
+  sub $0,1
+  mov $2,$1
+  mul $1,$3
+  mod $1,9
+  mov $3,$2
 lpe
-mov $0,$2
+mov $0,$1

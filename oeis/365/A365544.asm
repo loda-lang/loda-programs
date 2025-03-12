@@ -1,20 +1,18 @@
 ; A365544: Number of subsets of {1..n} containing two distinct elements summing to n.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 0,0,0,2,4,14,28,74,148,350,700,1562,3124,6734,13468,28394,56788,117950,235900,484922,969844,1979054,3958108,8034314,16068628,32491550,64983100,131029082,262058164,527304974,1054609948,2118785834,4237571668,8503841150,17007682300
+; Formula: a(n) = 2*truncate(b(n)/3), b(n) = 3*b(n-2)+3*c(n-3), b(3) = 3, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 2*c(n-1), c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 1
 
-mov $1,1
-mov $3,1
+mov $4,1
 lpb $0
   sub $0,1
-  max $0,2
-  mov $4,$3
-  add $4,$1
-  mul $2,3
-  mul $3,2
+  add $2,$1
   mov $1,$3
-  add $1,$2
+  mul $1,3
+  mov $3,$2
   mov $2,$4
+  mul $4,2
 lpe
-mov $0,$2
-div $0,2
+mov $0,$1
+div $0,3
 mul $0,2

@@ -1,16 +1,17 @@
 ; A115852: Dihedral D3 elliptical invariant transform on A000045: a[n+1]/a[n]= Phi^4=((1+Sqrt[5])/2)^4.
-; Submitted by [AF>Amis des Lapins] Phil1966
+; Submitted by Science United
 ; 0,0,4,20,156,1024,7140,48620,334084,2287656,15685560,107495424,736823880,5050163160,34614602500,237251310140,1626146516820,11145769206784,76394251284780,523613954825156,3588903524021764
-; Formula: a(n) = floor((b(n+1)^4)/4), b(n) = b(n-1)+b(n-2), b(1) = 1, b(0) = 0
+; Formula: a(n) = floor((truncate((min(n+1,(n+1)%2)*c(n+1)+b(n+1))/3)^4)/4), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
-mov $3,1
+mov $2,3
 add $0,1
 lpb $0
-  sub $0,1
-  mov $2,$1
-  add $1,$3
-  mov $3,$2
+  sub $0,2
+  add $2,$1
+  add $1,$2
 lpe
-mov $0,$1
+mul $0,$2
+add $0,$1
+div $0,3
 pow $0,4
 div $0,4
