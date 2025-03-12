@@ -18,7 +18,7 @@ mov $9,$0
 mul $9,2
 lpb $0
   sub $0,1
-  cmp $5,1
+  equ $5,1
   sub $5,$9
   bin $5,$0
   sub $7,1

@@ -6,6 +6,7 @@ lpb $0
   sub $0,2
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,328102 ; Column immediately left of the middle column of rule-30 1-D cellular automaton, when started from a lone 1 cell.
   mov $0,1
 lpe

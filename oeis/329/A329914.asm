@@ -2,6 +2,9 @@
 ; Submitted by http://asterion.petrsu.ru/
 ; 21,23,27,29,33,39,57,59,69,71,83,87,99,101,107
 
+#offset 1
+
+sub $0,1
 mov $1,4
 mov $2,$0
 add $2,2

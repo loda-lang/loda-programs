@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,320864 ; Powers of 2 with initial digit 8.
 lpb $0
   dif $0,2

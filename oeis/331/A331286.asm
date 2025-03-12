@@ -4,7 +4,6 @@
 
 add $0,1
 seq $0,253560 ; Multiply n by its largest prime factor: a(n) = A006530(n) * n.
-sub $0,1
 seq $0,329382 ; Product of exponents of prime factors of A108951(n), where A108951 is fully multiplicative with a(prime(i)) = prime(i)# = Product_{i=1..i} A000040(i).
 lpb $0
   dif $0,2

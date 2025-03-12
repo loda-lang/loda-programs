@@ -15,7 +15,7 @@ lpb $4
   div $3,$2
   sub $4,1
   mov $5,$0
-  cmp $5,0
+  equ $5,0
   add $0,$5
   mod $2,$0
 lpe

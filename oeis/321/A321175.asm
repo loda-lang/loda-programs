@@ -11,7 +11,7 @@ lpb $0
   add $3,$4
   add $4,$2
   add $1,$3
-  cmp $2,1
+  equ $2,1
   add $3,$4
   sub $4,$3
   add $3,$4

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,328075 ; Numbers such that the absolute values of the differences between any pair of digits are distinct.
 sub $0,9
 lpb $0

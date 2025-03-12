@@ -12,5 +12,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,323410 ; Unitary analog of cototient function A051953: a(n) = n - A047994(n).
 mov $0,$1

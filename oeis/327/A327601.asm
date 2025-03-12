@@ -16,7 +16,8 @@ lpb $2
   mov $4,$0
   seq $4,163626 ; Triangle read by rows: The n-th derivative of the logistic function written in terms of y, where y = 1/(1 + exp(-x)).
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  seq $0,299474 ; a(n) = 4*p(n), where p(n) is the number of partitions of n.
+  seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
+  mul $0,4
   mul $0,$4
   add $1,$0
 lpe

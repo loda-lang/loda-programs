@@ -6,6 +6,7 @@
 
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,328075 ; Numbers such that the absolute values of the differences between any pair of digits are distinct.
 lpb $0
   div $0,10

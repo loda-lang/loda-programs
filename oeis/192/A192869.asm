@@ -15,6 +15,7 @@ lpb $2
   add $3,3
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mov $5,$3
+  add $3,1
   seq $3,325135 ; Size of the integer partition with Heinz number n after its inner lining, or, equivalently, its largest hook, is removed.
   equ $3,0
   sub $0,$3

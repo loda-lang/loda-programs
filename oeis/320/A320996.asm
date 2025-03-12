@@ -2,8 +2,10 @@
 ; Submitted by Coleslaw
 ; 1,1,0,-2,-5,-9,-14,-34,-69,-125,-209,-461
 
+#offset 1
+
 mov $5,$0
-add $5,1
+sub $0,1
 lpb $5
   sub $5,1
   mov $1,$3

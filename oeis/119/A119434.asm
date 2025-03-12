@@ -9,10 +9,11 @@ sub $0,1
 add $2,15
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,323170 ; a(n) = 1 if (2*phi(n)) < n, 0 otherwise, where phi is Euler totient function (A000010).
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

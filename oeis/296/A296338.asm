@@ -13,6 +13,7 @@ lpb $2
   mov $0,$4
   sub $0,$2
   mov $5,$0
+  add $0,1
   seq $0,322135 ; Table of truncated square pyramid numbers, read by antidiagonals.
   sub $0,1
   sub $0,$5

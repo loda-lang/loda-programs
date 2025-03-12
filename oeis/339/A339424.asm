@@ -7,6 +7,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,322382 ; a(n) = p*a(n/p) + 1, where p is the smallest prime divisor of n; a(1)=0.
   sub $3,1
   mov $5,$1
@@ -14,11 +15,11 @@ lpb $2
   gcd $5,$3
   add $1,1
   div $3,$5
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

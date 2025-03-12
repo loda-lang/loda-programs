@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
+  add $0,1
   seq $0,323170 ; a(n) = 1 if (2*phi(n)) < n, 0 otherwise, where phi is Euler totient function (A000010).
   mul $1,$0
   add $3,$1

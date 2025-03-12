@@ -2,6 +2,7 @@
 ; Submitted by omegaintellisys
 ; 0,8,6,4,2,9,7,5,3,1,9,7,5,3,1,8,6,4,2,0,8,6,4,2,0,7,5,3,1,9,7,5,3,1,9,6,4,2,0,8,6,4,2,0,8,5,3,1,9,7,5,3,1,9,7,4,2,0,8,6,4,2,0,8,6,3,1,9,7,5,3,1,9,7,5,2,0,8,6,4
 
+add $0,1
 seq $0,328075 ; Numbers such that the absolute values of the differences between any pair of digits are distinct.
 add $0,6
 lpb $0

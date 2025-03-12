@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
   sub $1,1
   seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.

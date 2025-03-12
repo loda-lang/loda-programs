@@ -20,14 +20,14 @@ lpb $4
     mov $2,0
     mov $3,$0
     mov $5,$0
-    cmp $5,0
+    equ $5,0
     add $0,$5
     mul $3,4
     sub $3,1
     lpb $3
       add $5,$3
       mov $12,$5
-      cmp $12,0
+      equ $12,0
       add $5,$12
       div $1,$5
       add $1,$5

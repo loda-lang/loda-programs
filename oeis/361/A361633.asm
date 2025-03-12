@@ -10,7 +10,7 @@ pow $1,$0
 add $1,1
 mul $0,2
 dif $0,2
-add $0,1
+add $0,2
 seq $0,320656 ; Number of factorizations of n into squarefree semiprimes. Number of multiset partitions of the multiset of prime factors of n, into strict pairs.
 mul $0,$1
 div $0,2

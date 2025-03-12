@@ -2,7 +2,8 @@
 ; Submitted by Roadranner
 ; 8,81,816,8165,81654,816543,8165432,81654327
 
-add $0,1
+#offset 1
+
 mov $2,1
 mov $3,$0
 lpb $3

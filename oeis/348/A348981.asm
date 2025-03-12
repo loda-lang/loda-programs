@@ -9,7 +9,6 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   seq $0,322582 ; a(n) = n - A003958(n), where A003958 is fully multiplicative with a(p) = (p-1).
   add $3,$0
 lpe

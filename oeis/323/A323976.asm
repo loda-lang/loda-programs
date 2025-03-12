@@ -2,6 +2,9 @@
 ; Submitted by Dylan Delgado
 ; 0,1,2,4,5,8,10,12,14,15,19
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 div $0,5
 add $1,$0

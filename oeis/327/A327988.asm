@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,328176 ; a(n) is the maximal value of the expression d AND (n/d) where d runs through the divisors of n and AND denotes the bitwise AND operator.
   equ $3,0
   sub $0,$3

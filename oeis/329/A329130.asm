@@ -15,7 +15,7 @@ lpb $3
   add $0,$4
   lpb $0
     mov $0,0
-    cmp $8,0
+    equ $8,0
     add $2,$8
     mov $5,1
     add $5,$2

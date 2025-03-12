@@ -3,6 +3,8 @@
 ; 0,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,2,1,2,1,1,1,2,1,1,1,1,1,2,1,1,1,3,1,2,1,1,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1,2,1,1,1,1,1,2,1,2,1,1,1
 ; Formula: a(n) = -10*truncate(A261300(A324866(n))/10)+A261300(A324866(n))
 
+#offset 1
+
 seq $0,324866 ; a(n) = A156552(n) OR A324865(n), where OR is bitwise-OR, A003986.
 seq $0,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
 mod $0,10

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
 lpb $0
   dif $0,2

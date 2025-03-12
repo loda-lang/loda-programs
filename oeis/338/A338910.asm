@@ -10,7 +10,6 @@ lpb $2
   mov $3,$1
   seq $3,332822 ; One part of a 3-way classification of the positive integers. Numbers n for which A048675(n) == 2 (mod 3).
   mov $5,$3
-  sub $3,1
   seq $3,329647 ; Bitwise-XOR of exponents of prime factors of A108951(n), where A108951 is fully multiplicative with a(prime(i)) = prime(i)# = Product_{i=1..i} A000040(i).
   equ $3,2
   sub $0,$3

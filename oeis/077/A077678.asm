@@ -15,7 +15,6 @@ lpb $2
   seq $3,217394 ; Numbers starting with 2.
   mov $5,$3
   add $5,2
-  sub $3,1
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
   equ $3,1
   sub $0,$3

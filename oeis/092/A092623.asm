@@ -10,6 +10,7 @@ add $2,5
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.
   add $1,1
   mov $5,$1

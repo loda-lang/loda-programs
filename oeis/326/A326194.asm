@@ -1,6 +1,9 @@
 ; A326194: Number of iterations of x -> A009194(x) needed to reach a fixed point when starting from x = n, where A009194(x) = gcd(x, sigma(x)).
 ; 0,1,1,1,1,0,1,1,1,2,1,2,1,2,2,1,1,2,1,2,1,2,1,3,1,2,1,0,1,1,1,1,2,2,1,1,1,2,1,3,1,1,1,2,2,2,1,2,1,1,2,2,1,1,1,2,1,2,1,3,1,2,1,1,1,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   add $2,1

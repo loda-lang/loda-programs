@@ -2,8 +2,10 @@
 ; Submitted by Simon Strandgaard
 ; 0,0,0,1,0,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
 
+#offset 1
+
 mov $3,$0
-add $3,1
+sub $0,1
 mov $5,$0
 lpb $5
   sub $5,1
@@ -22,6 +24,7 @@ sub $0,1
 lpb $0
   div $0,2
   mov $1,$0
+  add $1,1
   seq $1,324903 ; a(n) = 1 if A007814(sigma(n)) > A007814(n), 0 otherwise. Here A007814(n) gives the 2-adic valuation of n.
   mul $0,2
 lpe

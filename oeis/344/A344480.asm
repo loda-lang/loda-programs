@@ -13,6 +13,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
+  add $0,1
   seq $0,321295 ; a(n) = n * sigma_n(n).
   mul $1,$0
   add $3,$1

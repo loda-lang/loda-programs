@@ -12,6 +12,7 @@ pow $2,2
 mul $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,325469 ; a(n) is the number of divisors d of n such that d divides sigma(d).
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

@@ -16,6 +16,7 @@ lpb $0
     gcd $4,$0
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,323170 ; a(n) = 1 if (2*phi(n)) < n, 0 otherwise, where phi is Euler totient function (A000010).
     add $7,2
     equ $7,2

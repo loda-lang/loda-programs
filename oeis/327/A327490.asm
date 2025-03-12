@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,2,2,2,1,1,1,1,4,2,4,2,4,3,3,3,3,3,3,2,4,2,4,2,4,2,1,1,1,1,1,1,1,1,8,2,4,2,8,2,4,2,8,7,7,3,3,7,7,3,3,7,7,6,8,6,4,6,8,6,4,6,8,6,5,5,5,5,5,5,5,5,5,5,5,5
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
 mov $4,1

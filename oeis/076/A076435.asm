@@ -18,6 +18,7 @@ lpb $4
   mul $0,$1
   sub $0,$1
   sub $0,$1
+  add $0,1
   seq $0,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
   mul $1,$0
   add $3,$1

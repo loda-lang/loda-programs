@@ -3,5 +3,7 @@
 ; 0,1,2,0,3,1,1,0,0,2,4,1,2,1,1,0,2,0,1,2,2,3,1,1,0,2,0,1,3,1,5,0,2,2,3,0,2,1,1,2,3,2,2,3,1,1,2,1,0,0,3,2,1,0,1,1,2,3,3,1,1,4,1,0,2,2,2,2,1,3,3,0,3,2,0,1,4,1,4,2
 ; Formula: a(n) = A056169(A324922(n))
 
+#offset 1
+
 seq $0,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
 seq $0,56169 ; Number of unitary prime divisors of n.

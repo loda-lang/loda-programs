@@ -6,6 +6,7 @@ mov $1,1
 lpb $0
   mov $2,$0
   mod $2,10
+  add $2,1
   seq $2,324050 ; Numbers satisfying Korselt's criterion: squarefree numbers n such that for every prime divisor p of n, p-1 divides n-1.
   div $0,10
   mul $1,$2

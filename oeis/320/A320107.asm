@@ -2,11 +2,11 @@
 ; Submitted by [AF>Amis des Lapins] Phil1966
 ; 1,1,1,1,2,2,2,1,1,2,2,2,2,2,2,1,2,3,2,2,2,2,2,2,3,2,1,2,2,4,2,1,2,2,4,3,2,2,2,2,2,4,2,2,2,2,2,2,3,3,2,2,2,4,4,2,2,2,2,4,2,2,2,1,4,4,2,2,2,4,2,3,2,2,3,2,4,4,2,2
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 sub $0,$1
-add $0,1
 sub $1,$0
 dif $1,2
 add $0,$1

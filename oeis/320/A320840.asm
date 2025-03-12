@@ -7,9 +7,9 @@ mov $2,1
 mov $3,$0
 lpb $3
   sub $3,2
-  cmp $2,1
+  equ $2,1
   max $1,$2
-  cmp $2,0
+  equ $2,0
   lpb $3
     sub $3,$2
     mul $2,2

@@ -7,9 +7,9 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,326815 ; Dirichlet g.f.: zeta(s)^3 * Product_{p prime} (1 - 2 * p^(-s)).
-  cmp $3,0
-  cmp $3,0
+  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

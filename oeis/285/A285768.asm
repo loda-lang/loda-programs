@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,320075 ; Number of length n primitive (=aperiodic or period n) 10-ary words which are earlier in lexicographic order than any other word derived by cyclic shifts of the alphabet.
 lpb $0
   mov $2,$0

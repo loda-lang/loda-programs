@@ -8,6 +8,7 @@ sub $0,1
 mov $3,2
 mov $4,$0
 lpb $0
+  add $2,1
   seq $2,323756 ; a(1) = 2; for n >= 2, if a(n-1) has not yet been assigned, then a(n-1) = 1 and a(2*n-1) = 2, otherwise a(2*n) = 3.
   add $3,$2
   mul $3,2

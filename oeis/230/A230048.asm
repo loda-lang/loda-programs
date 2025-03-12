@@ -15,7 +15,6 @@ lpb $2
   seq $3,69 ; Odious numbers: numbers with an odd number of 1's in their binary expansion.
   mov $5,$3
   add $5,2
-  sub $3,1
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   equ $3,1

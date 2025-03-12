@@ -8,12 +8,13 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,320042 ; a(n) = a(floor(n/2)) + (-1)^(n*(n+1)/2) with a(1)=0.
-  cmp $3,1
+  equ $3,1
   sub $0,$3
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   add $1,1
   add $1,$3
   mul $2,$4

@@ -21,6 +21,7 @@ lpb $2
     mov $0,$8
     lpb $0
       mov $3,$0
+      add $3,1
       seq $3,326186 ; a(n) = n - A057521(n), where A057521 gives the powerful part of n.
       mov $0,$3
       equ $3,2

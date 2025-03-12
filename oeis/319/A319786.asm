@@ -9,6 +9,7 @@ add $0,2
 lpb $0
   sub $0,$3
   mov $2,$0
+  add $2,1
   seq $2,327658 ; Number of factorizations of n that are empty or whose factors have a common divisor > 1.
   add $1,$2
   mov $3,-8

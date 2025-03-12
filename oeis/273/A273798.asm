@@ -14,6 +14,7 @@ lpb $2
   seq $3,67742 ; Number of middle divisors of n, i.e., divisors in the half-open interval [sqrt(n/2), sqrt(n*2)).
   min $3,1
   mul $3,$1
+  add $3,1
   seq $3,322865 ; a(n) = A000265(A122111(n)).
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   equ $3,2

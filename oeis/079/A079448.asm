@@ -13,6 +13,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
+  add $3,1
   seq $3,327166 ; Number of divisors d of n for which A000005(d)*d is equal to n, where A000005(x) gives the number of divisors of x.
   neq $3,0
   sub $0,$3

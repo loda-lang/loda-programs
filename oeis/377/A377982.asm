@@ -6,6 +6,7 @@ mov $2,$0
 lpb $2
   sub $2,1
   mov $4,$1
+  add $4,1
   seq $4,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
   pow $4,3
   add $1,1

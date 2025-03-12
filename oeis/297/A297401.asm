@@ -11,6 +11,7 @@ add $2,6
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,325770 ; Number of distinct nonempty contiguous subsequences of the integer partition with Heinz number n.
   equ $3,7
   sub $0,$3

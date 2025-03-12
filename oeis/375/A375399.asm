@@ -7,6 +7,7 @@ add $2,10
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,323439 ; Number of ways to fill a Young diagram with the prime indices of n such that all rows and columns are strictly increasing.
   equ $3,0
   sub $0,$3

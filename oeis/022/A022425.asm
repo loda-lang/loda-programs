@@ -8,6 +8,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,324143 ; This sequence and A324142 are a pair of complementary sequences studied by Bode, Harborth, and Kimberling (2007).
   add $0,1
   add $1,1

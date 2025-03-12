@@ -14,6 +14,7 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
+  add $3,1
   seq $3,322702 ; a(n) is the product of primes p such that p+1 divides n.
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

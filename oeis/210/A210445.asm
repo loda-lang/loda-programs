@@ -11,7 +11,6 @@ mov $3,$0
 lpb $3
   sub $3,1
   mov $4,$2
-  sub $4,1
   seq $4,322860 ; Characteristic function of practical numbers, A005153: If n is in A005153, a(n) = 1, otherwise a(n) = 0.
   add $2,$0
   add $2,1

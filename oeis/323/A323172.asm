@@ -1,9 +1,11 @@
 ; A323172: Denominator of the average of distinct prime factors of n (A008472(n)/A001221(n)).
 ; Submitted by Science United
 ; 1,1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,1,1,2,1,2,1,2,1,2,1,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,2,1,1,1,3,1,2,1,3,1,2,1,2,1,2,1,1,1,2,1
-; Formula: a(n) = truncate(A001221(n+2)/gcd(A008472(n+2),A001221(n+2)))
+; Formula: a(n) = truncate(A001221(n)/gcd(A008472(n),A001221(n)))
 
-add $0,1
+#offset 2
+
+sub $0,1
 mov $1,$0
 add $0,1
 seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).

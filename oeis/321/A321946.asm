@@ -3,6 +3,8 @@
 ; 2,4,10,28,36,66,144,192,340,570,1200,1656,3456,5616,9072,10752,22176
 ; Formula: a(n) = A069157(2*A322309(n))
 
+#offset 1
+
 seq $0,322309 ; Largest automorphism group size for a binary self-dual code of length 2n
 mul $0,2
 mov $1,-1

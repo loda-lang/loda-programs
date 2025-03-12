@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,328166 ; Heinz number of the run-lengths of the divisors of n.
 lpb $0
   dif $0,2

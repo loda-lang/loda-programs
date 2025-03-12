@@ -6,7 +6,7 @@ mul $0,2
 sub $0,1
 mov $1,6
 bin $1,$0
-cmp $1,0
+equ $1,0
 add $1,$0
 mov $0,$1
 add $0,1

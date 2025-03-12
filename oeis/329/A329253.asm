@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 1,4,15,52,190,680,2495,9164,33980
 
-add $0,2
+#offset 2
+
 mov $1,$0
 mov $2,$0
 lpb $2

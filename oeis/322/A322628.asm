@@ -9,6 +9,7 @@ lpb $3
   mov $0,$1
   add $0,$3
   trn $0,2
+  add $0,1
   seq $0,322052 ; Number of decimal strings of length n that contain a specific string xy where x and y are distinct digits.
   mov $2,$3
   mul $2,$0

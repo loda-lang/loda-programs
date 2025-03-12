@@ -15,7 +15,6 @@ lpb $2
   seq $3,112886 ; Positive integers that have no triangular divisors > 1.
   mov $5,$3
   add $5,2
-  sub $3,1
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   equ $3,1

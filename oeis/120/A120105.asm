@@ -17,6 +17,7 @@ lpb $2
   sub $1,$2
   add $1,$0
   mul $1,2
+  add $1,4
   seq $1,328202 ; a(n) is the greatest common divisor of all the numbers in row n of Pascal's triangle excluding 1 and n.
   max $2,1
   mul $3,$1

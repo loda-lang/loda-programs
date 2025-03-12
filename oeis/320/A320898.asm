@@ -16,7 +16,7 @@ lpb $0
     mul $6,$5
     mov $7,$4
     seq $7,305833 ; Triangle read by rows: T(0,0)=1; T(n,k) = 4*T(n-1,k) + T(n-2,k-1) for k = 0..floor(n/2); T(n,k)=0 for n or k < 0.
-    cmp $7,1
+    equ $7,1
     mov $9,10
     add $9,$5
     mul $7,$$9

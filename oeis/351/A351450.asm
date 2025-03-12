@@ -9,5 +9,6 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,326042 ; a(n) = A064989(sigma(A003961(n))), where A003961 shifts the prime factorization of n one step towards larger primes, and A064989 shifts it back towards smaller primes.
 mov $0,$1

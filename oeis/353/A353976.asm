@@ -14,11 +14,11 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   pow $0,$1
-  sub $0,1
   mov $5,$0
   seq $5,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
   mov $6,-1
   pow $6,$5
+  sub $0,1
   mul $0,$6
   add $0,$6
   mul $0,$3

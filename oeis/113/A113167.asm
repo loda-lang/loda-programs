@@ -16,7 +16,7 @@ lpb $2
   bin $1,2
   sub $1,$2
   add $1,$0
-  add $1,1
+  add $1,2
   seq $1,324050 ; Numbers satisfying Korselt's criterion: squarefree numbers n such that for every prime divisor p of n, p-1 divides n-1.
 lpe
 mov $0,$3

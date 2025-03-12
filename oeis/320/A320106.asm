@@ -1,10 +1,12 @@
 ; A320106: Möbius transform of A320107.
 ; 1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,1,1,1,0
-; Formula: a(n) = -2*truncate(truncate(gcd(n-1,n-5)/gcd(n-5,3))/2)+truncate(gcd(n-1,n-5)/gcd(n-5,3))
+; Formula: a(n) = -2*truncate(truncate(gcd(n-2,n-6)/gcd(n-6,3))/2)+truncate(gcd(n-2,n-6)/gcd(n-6,3))
+
+#offset 1
 
 mov $1,$0
-sub $1,5
-sub $0,1
+sub $1,6
+sub $0,2
 gcd $0,$1
 gcd $1,3
 div $0,$1

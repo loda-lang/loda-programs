@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,1
   seq $5,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
   pow $5,3
   mov $3,$5

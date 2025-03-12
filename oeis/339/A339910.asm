@@ -11,6 +11,7 @@ lpb $1
   mov $2,$0
   sub $2,$1
   max $2,0
+  add $2,1
   seq $2,322839 ; Numbers n with more prime factors (counted with multiplicity) than n+1.
   div $1,2
 lpe

@@ -12,6 +12,7 @@ lpb $2
   mov $3,$1
   add $3,2
   mov $5,$3
+  add $3,1
   seq $3,327649 ; Maximum value of powers of 2 mod n.
   div $3,$5
   gcd $3,2

@@ -6,7 +6,7 @@ lpb $0
   add $4,$0
   sub $0,1
   mov $6,$0
-  cmp $6,0
+  equ $6,0
   add $0,$6
   div $4,$0
   div $0,2

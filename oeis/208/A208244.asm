@@ -10,6 +10,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,322860 ; Characteristic function of practical numbers, A005153: If n is in A005153, a(n) = 1, otherwise a(n) = 0.
   add $4,1
   add $1,$2

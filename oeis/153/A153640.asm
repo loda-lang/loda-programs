@@ -14,6 +14,7 @@ lpb $3
   min $7,1
   mov $4,$2
   trn $4,1
+  add $4,1
   seq $4,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.
   mov $6,$2
   seq $6,193238 ; Number of prime digits in decimal representation of n.

@@ -7,6 +7,7 @@ pow $2,2
 lpb $2
   sub $4,$1
   mov $3,$1
+  add $3,1
   seq $3,320857 ; a(n) = Pi(8,5)(n) + Pi(8,7)(n) - Pi(8,1)(n) - Pi(8,3)(n) where Pi(a,b)(x) denotes the number of primes in the arithmetic progression a*k + b less than or equal to x.
   add $3,$4
   gcd $3,2

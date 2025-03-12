@@ -16,6 +16,7 @@ lpb $4
   mul $0,$1
   sub $0,$1
   mov $5,$0
+  add $5,1
   seq $5,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
   mov $6,-1
   pow $6,$5

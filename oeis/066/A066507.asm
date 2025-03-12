@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,329095 ; Odd numbers k such that x^2 == 2 (mod k) has no solution.
   sub $3,1
   add $0,1

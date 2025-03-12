@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,327276 ; a(n) = Sum_{d|n, d odd} mu(d) * mu(n/d).
   mov $3,$4
   add $3,2

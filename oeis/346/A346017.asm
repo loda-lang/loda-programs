@@ -6,6 +6,7 @@ mul $0,2
 mov $1,1
 mov $2,$0
 lpb $2
+  add $2,1
   seq $2,326715 ; Values of n for which the denominator of (Sum_{prime p | n} 1/p - 1/n) is 1.
   sub $0,1
   mul $1,$2

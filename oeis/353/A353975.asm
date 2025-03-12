@@ -17,7 +17,6 @@ lpb $4
   bin $1,$0
   pow $0,$1
   mul $1,$0
-  sub $0,1
   seq $0,322079 ; a(n) = n^2 * Sum_{ p^k | n } k / p^2, where p are primes dividing n with multiplicity k.
   mod $0,2
   mul $0,$3

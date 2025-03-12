@@ -2,7 +2,8 @@
 ; Submitted by Gunnar Hjern
 ; 0,1,11,3,19,11,97,7,35,19
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mov $2,$0
 lpb $0

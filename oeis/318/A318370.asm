@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,320390 ; Prime signature of n (sorted in decreasing order), concatenated.
 lpb $0
   add $1,1

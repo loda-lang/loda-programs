@@ -8,7 +8,10 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,28296 ; Expansion of e.g.f. Gudermannian(x) = 2*arctan(exp(x)) - Pi/2.
+  mov $6,-1
+  pow $6,$0
+  seq $0,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  mul $0,$6
   mov $2,$3
   mul $2,$0
   add $1,$2

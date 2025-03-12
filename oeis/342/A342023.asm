@@ -4,12 +4,12 @@
 
 #offset 1
 
-sub $0,1
 mov $3,$0
 seq $3,327936 ; Multiplicative with a(p^e) = p if e >= p, otherwise 1.
 div $3,2
 mov $1,$3
 equ $1,0
+sub $0,1
 mov $0,$3
 add $0,$1
 add $2,$3

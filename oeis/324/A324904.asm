@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,325636 ; a(n) = gcd(2n, sigma(n)).
 lpb $0
   dif $0,2

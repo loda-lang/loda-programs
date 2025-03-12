@@ -5,7 +5,7 @@
 lpb $0
   add $1,1
   sub $0,$1
-  cmp $2,10
+  equ $2,10
   sub $2,$0
 lpe
 bin $1,$0

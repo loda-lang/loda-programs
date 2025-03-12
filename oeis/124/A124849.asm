@@ -14,6 +14,7 @@ lpb $2
   seq $3,33868 ; Numbers n such that 7*n-11 is prime.
   mov $5,$3
   mul $3,3
+  add $3,1
   seq $3,325135 ; Size of the integer partition with Heinz number n after its inner lining, or, equivalently, its largest hook, is removed.
   equ $3,0
   sub $0,$3

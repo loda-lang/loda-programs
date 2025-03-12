@@ -15,6 +15,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,320389 ; Product_i prime(i)^e(i), where e are the nonzero exponents in the prime factorization of n, sorted in increasing order.
     mov $6,$7
     mul $6,$3

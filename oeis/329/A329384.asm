@@ -8,7 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,329289 ; G.f.: (1 + x) * (1 + x^2) * Product_{k>=1} (1 + x^k).
+  seq $2,329289 ; Expansion of g.f. (1 + x) * (1 + x^2) * Product_{k>=1} (1 + x^k).
   mul $4,$1
   add $1,$2
   add $3,$4

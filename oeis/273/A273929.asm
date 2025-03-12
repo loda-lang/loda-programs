@@ -17,7 +17,7 @@ lpb $2
   add $3,$6
   mov $5,$3
   add $5,6
-  add $3,3
+  add $3,4
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.
   equ $3,1
   sub $0,$3

@@ -6,4 +6,5 @@ lpb $0
   dif $0,2
 lpe
 trn $0,1
+add $0,1
 seq $0,322035 ; Let p1 <= p2 <= ... <= pk be the prime factors of n, with repetition; let s = 1/p1 + 1/(p1*p2) + 1/(p1*p2*p3) + ... + 1/(p1*p2*...*pk); a(n) = denominator of s. a(1)=1 by convention.

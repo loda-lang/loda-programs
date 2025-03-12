@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,325226 ; Number of prime factors of n that are less than the largest, counted with multiplicity.
   equ $3,1
   sub $0,$3

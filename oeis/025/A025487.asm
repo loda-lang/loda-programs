@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,322585 ; a(n) = 1 if n is a product of primorial numbers (A002110), 0 otherwise.
   sub $0,$3
   add $1,1

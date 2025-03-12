@@ -10,6 +10,7 @@ lpb $2
   add $3,1
   seq $3,190620 ; Odd numbers with a single zero in their binary expansion.
   mov $5,$3
+  add $3,1
   seq $3,325135 ; Size of the integer partition with Heinz number n after its inner lining, or, equivalently, its largest hook, is removed.
   equ $3,0
   sub $0,$3

@@ -18,6 +18,7 @@ lpb $2
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   sub $6,$5
   mul $6,2
+  add $3,1
   seq $3,322809 ; Lexicographically earliest such sequence a that a(i) = a(j) => f(i) = f(j) for all i, j, where f(n) = -1 if n is an odd prime, and f(n) = floor(n/2) for all other numbers.
   mul $3,4
   sub $3,$6

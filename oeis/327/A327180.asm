@@ -7,6 +7,20 @@ lpb $0
   sub $1,1
   add $0,$1
   add $0,1
-  seq $0,188082 ; [nr+kr]-[nr]-[kr], where r=sqrt(3), k=1, [ ]=floor.
+  mov $3,$0
+  mul $3,2
+  add $3,$0
+  mul $3,$0
+  nrt $3,2
+  add $3,3
+  add $3,$0
+  mov $2,$3
+  mul $2,2
+  add $2,$3
+  mul $2,$3
+  nrt $2,2
+  add $2,$3
+  mov $0,$2
+  mod $0,2
   add $1,$0
 lpe

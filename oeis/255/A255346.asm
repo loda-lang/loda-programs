@@ -7,6 +7,7 @@ mov $2,64
 mul $2,$0
 lpb $2
   mov $3,$1
+  add $3,4
   seq $3,328202 ; a(n) is the greatest common divisor of all the numbers in row n of Pascal's triangle excluding 1 and n.
   equ $3,1
   sub $0,$3

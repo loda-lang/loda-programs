@@ -6,5 +6,5 @@ sub $1,$0
 seq $0,295553 ; Expansion of 1/(1 - Sum_{k>=1} (2*k-1)!!*x^k).
 mul $0,2
 add $1,1
-cmp $1,1
+equ $1,1
 sub $0,$1

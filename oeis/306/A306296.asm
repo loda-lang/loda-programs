@@ -11,6 +11,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,324940 ; Numbers of the form x^2+7*y^2+7*z^2.
   sub $3,1
   add $0,1

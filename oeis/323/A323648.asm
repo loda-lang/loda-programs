@@ -1,8 +1,9 @@
 ; A323648: Numbers k such that the largest Dyck path of the symmetric representation of sigma(k) does not share any line segment with the largest Dyck path of the symmetric representation of sigma(k+1).
 ; Submitted by p3d-cluster
-; 1,2,3,5,7,9,11,15,17,19,23,27,29,31,35,39
+; 1,2,3,5,7,9,11,15,17,19,23,27,29,31,35,39,41,47,53,55,59,63,65,71,77,79,83,87,89,95,99,103,107,111,119,125,127,131,135,139,143,149,155,159,161,167,175,179,191,195,197,199,203,207,209,215,219,223,227,233,239,251,255
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mov $3,$0
 pow $3,2

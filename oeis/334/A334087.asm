@@ -26,6 +26,7 @@ lpb $9
       sub $4,1
       mov $0,$2
       sub $0,$4
+      add $0,1
       seq $0,326305 ; Dirichlet g.f.: zeta(s-1) * (1 - 2^(-s)) / zeta(s).
       add $0,1
       mov $1,3
