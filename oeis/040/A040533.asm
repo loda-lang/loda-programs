@@ -1,17 +1,13 @@
 ; A040533: Continued fraction for sqrt(557).
-; Submitted by PDW
+; Submitted by BrandyNOW
 ; 23,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1,46,1,1,1,1
+; Formula: a(n) = truncate(binomial(3*gcd(min(n,1)+4,n),3)/10)+1
 
-pow $1,$0
-gcd $1,3
-add $1,2
+mov $1,$0
+min $0,1
+add $0,4
 gcd $0,$1
-lpb $0
-  gcd $0,2
-  mul $1,4
-lpe
-sub $1,4
-mov $0,$1
-div $0,8
-mul $0,15
-add $0,$1
+mul $0,3
+bin $0,3
+div $0,10
+add $0,1

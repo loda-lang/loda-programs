@@ -1,19 +1,18 @@
 ; A072100: Column 2 of the array m(i,1)=m(1,j)=1 m(i,j)=m(i-1,j-1)+m(i-1,j+1) (a(n)=m(n,2)).
-; Submitted by Science United
+; Submitted by mmonnin
 ; 1,2,3,5,8,14,24,44,79,149,275,527,989,1913,3629,7061,13496,26366,50676,99296,191674,376430,729146,1434578,2786656,5490812,10691112,21091712,41150012,81266612,158825372,313942892,614483087,1215563477
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+binomial(n-1,floor((n-1)/2)), b(0) = 1
+; Formula: a(n) = b(n-1)+1, b(n) = b(n-1)+binomial(n-1,floor((n-1)/2)), b(0) = 0
 
 #offset 1
 
-mov $1,1
 sub $0,1
 lpb $0
-  mov $2,$0
-  sub $2,1
-  mov $3,$2
-  div $3,2
-  bin $2,$3
   sub $0,1
-  add $1,$2
+  mov $2,$0
+  div $2,2
+  mov $1,$0
+  bin $1,$2
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$3
+add $0,1

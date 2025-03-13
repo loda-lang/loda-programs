@@ -1,23 +1,24 @@
 ; A018482: Divisors of 488.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by BrandyNOW
 ; 1,2,4,8,61,122,244,488
-; Formula: a(n) = truncate(c(n-1)/20)+1, b(n) = truncate((-c(n-1)+b(n-1)-10)/2), b(2) = -17, b(1) = -5, b(0) = 0, c(n) = gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1)-10)/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1)-10)/2),4)*(2*c(n-1)+20), c(2) = 60, c(1) = 20, c(0) = 0, d(n) = truncate(gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1)-10)/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1)-10)/2),4)/2), d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = 3*b(n-1)+c(n-1)-3, b(n) = 15*c(n-4)+1, b(5) = 31, b(4) = 16, b(3) = 1, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = 2*c(n-1), c(4) = 16, c(3) = 8, c(2) = 4, c(1) = 2, c(0) = 1
 
 #offset 1
 
+mov $2,1
+mov $5,1
 sub $0,1
 lpb $0
   sub $0,1
-  add $2,10
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  gcd $3,4
-  mul $2,2
-  mul $2,$3
-  div $3,2
+  mul $1,15
+  mov $2,$1
+  add $2,1
+  mov $1,$3
+  mov $3,$4
+  mov $4,$5
+  mul $5,2
 lpe
 mov $0,$2
-div $0,20
-add $0,1
+mul $0,3
+sub $0,3
+add $0,$5

@@ -1,25 +1,14 @@
 ; A040670: Continued fraction for sqrt(697).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 26,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2,2,52,2
+; Formula: a(n) = 2*truncate(binomial(gcd(min(n,1)+2,n)+24,2)/2)-298
 
-add $0,1
-lpb $0
-  sub $0,1
-  equ $1,0
-  mov $2,$3
-  sub $2,$1
-  gcd $2,3
-  add $2,13
-  add $1,$2
-  pow $1,2
-  sub $1,194
-  mov $5,$1
-  mul $5,4
-  mov $4,$1
-  add $4,$5
-  mov $1,$4
-  div $1,6
-  add $1,1
-  add $3,1
-lpe
-mov $0,$1
+mov $1,$0
+min $0,1
+add $0,2
+gcd $0,$1
+add $0,24
+bin $0,2
+div $0,2
+mul $0,2
+sub $0,298

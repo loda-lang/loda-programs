@@ -1,16 +1,22 @@
 ; A203482: a(n) = Product_{1 <= i < j <= n} (i! + j!).
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 1,3,168,3276000,877449500928000,207244701437748852512194560000,4000516840149319128119305958853265913416777728000000,796608816253064941944831363792070377592412324940256242675178274726476775424000000000,270483733874882359830666026893946887649644780865672778411854849935049197181393407903804221508060473531709154918400000000000000000
-; Formula: a(n) = b(n-1), b(n) = A203483(n)*b(n-1), b(0) = 1
 
 #offset 1
 
-mov $1,1
+mov $2,$0
 sub $0,1
-lpb $0
-  mov $2,$0
-  seq $2,203483 ; a(n) = v(n+1)/v(n), where v = A203482.
-  sub $0,1
-  mul $1,$2
+mov $3,$0
+bin $3,2
+add $3,$0
+mov $1,1
+bin $2,2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,18900 ; Sums of two distinct powers of 2.
+  seq $0,59590 ; Numbers obtained by reinterpreting base-2 representation of n in the factorial base: a(n) = Sum_{k>=0} A030308(n,k)*A000142(k+1).
+  mul $1,$0
 lpe
 mov $0,$1

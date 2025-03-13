@@ -1,18 +1,14 @@
 ; A040894: Continued fraction for sqrt(925).
-; Submitted by fzs600
+; Submitted by BrandyNOW
 ; 30,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2,60,2,2,2,2
+; Formula: a(n) = 2*binomial(truncate((gcd(min(n,1)+4,n)+27)/2),2)-180
 
-pow $1,$0
-gcd $1,3
-add $1,2
+mov $1,$0
+min $0,1
+add $0,4
 gcd $0,$1
-lpb $0
-  gcd $0,2
-  mul $1,4
-lpe
-sub $1,4
-mov $0,$1
-div $0,8
-mul $0,7
-add $0,$1
+add $0,27
+div $0,2
+bin $0,2
 mul $0,2
+sub $0,180

@@ -1,20 +1,13 @@
 ; A010143: Continued fraction for sqrt(58).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 7,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1,1,1,1,1,14,1,1
+; Formula: a(n) = max(truncate(binomial(gcd(min(n,1)+6,n),3)/2)-4,0)+1
 
-mov $2,1
-max $2,$0
-mov $3,14
-add $0,14
-lpb $0
-  add $1,4
-  mul $1,$0
-  gcd $2,$0
-  trn $2,6
-  lpb $0
-    mul $0,$2
-    gcd $3,$1
-  lpe
-  div $3,2
-lpe
-mov $0,$3
+mov $1,$0
+min $0,1
+add $0,6
+gcd $0,$1
+bin $0,3
+div $0,2
+trn $0,4
+add $0,1

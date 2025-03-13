@@ -1,18 +1,12 @@
 ; A040830: Continued fraction for sqrt(860).
-; Submitted by Jamie Morken(s4)
+; Submitted by BrandyNOW
 ; 29,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14,3,58,3,14
-; Formula: a(n) = truncate(((truncate((84*gcd(n,262156)-26*truncate((42*gcd(n,262156))/13)-4)/5)+14)^2+26*truncate((42*gcd(n,262156))/13)-84*gcd(n,262156))/2)-92
+; Formula: a(n) = floor(floor((11*gcd(n,4)^2)/(0^n+1))/3)
 
-gcd $0,262156
-mul $0,42
-mod $0,13
-mul $0,2
-mov $1,$0
-sub $1,4
-div $1,5
-add $1,14
-pow $1,2
-sub $1,$0
-mov $0,$1
-div $0,2
-sub $0,92
+pow $1,$0
+add $1,1
+gcd $0,4
+pow $0,2
+mul $0,11
+div $0,$1
+div $0,3

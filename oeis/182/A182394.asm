@@ -1,5 +1,5 @@
 ; A182394: Signs of differences of number of divisors function: a(n) = sign(d(n)-d(n-1)), cf. A000005.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,0,1,-1,1,-1,1,-1,1,-1,1,-1,1,0,1,-1,1,-1,1,-1,0,-1,1,-1,1,0,1,-1,1,-1,1,-1,0,0,1,-1,1,0,1,-1,1,-1,1,0,-1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,0,-1,1,-1,1,1,1,-1,1,-1,1,-1,1,-1,1,-1,1,1,0,-1,1,-1,1,-1
 
 #offset 2
@@ -17,5 +17,6 @@ lpb $3
   equ $0,0
   gcd $0,$1
   div $1,$0
+  mod $0,2
 lpe
 mov $0,$1
