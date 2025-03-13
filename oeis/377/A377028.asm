@@ -10,6 +10,7 @@ lpb $5
   mov $0,$3
   sub $0,$5
   mov $1,$0
+  add $1,1
   seq $1,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   seq $1,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   mov $2,2

@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,332476 ; The number of unitary divisors of n in Gaussian integers.
 lpb $0
   dif $0,2

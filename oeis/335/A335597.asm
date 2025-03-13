@@ -2,7 +2,10 @@
 ; Submitted by Stony666
 ; 1,2,3,5,6,10,16,52
 
+#offset 1
+
 mov $1,1
+sub $0,1
 lpb $0
   mov $3,$2
   min $4,$5

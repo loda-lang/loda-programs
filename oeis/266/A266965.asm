@@ -15,13 +15,10 @@ lpb $2
   mov $5,$3
   sub $3,1
   seq $3,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
-  sub $3,1
   mov $6,$3
   seq $6,332994 ; a(1) = 1, for n > 1, a(n) = n + a(A052126(n)).
   mov $7,$3
-  add $7,1
   seq $7,6022 ; Sprague-Grundy (or Nim) values for the game of Maundy cake on an n X 1 sheet.
-  add $3,1
   add $7,$3
   mov $3,$7
   sub $3,$6

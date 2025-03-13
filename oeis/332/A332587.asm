@@ -2,7 +2,8 @@
 ; Submitted by biodoc
 ; 1,4,6,9,11,14,16,20,22,25,27,30,32,37,39,43
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $4,$0
 div $4,2

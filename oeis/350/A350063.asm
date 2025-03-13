@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   div $0,2
   gcd $1,$0
+  add $1,1
   seq $1,336158 ; The least number with the prime signature of the odd part of n: a(n) = A046523(A000265(n)).
   mul $0,2
 lpe

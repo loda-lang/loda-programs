@@ -9,6 +9,6 @@ lpb $0
   lpe
   div $0,2
 lpe
-dis $1,2
+dgs $1,2
 mov $0,$1
 add $0,1

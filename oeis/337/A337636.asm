@@ -7,6 +7,7 @@ add $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,337289 ; Numbers k such that k+1 is in A095096 and k is in A020899.
   add $1,1
   add $2,$3

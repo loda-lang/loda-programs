@@ -6,12 +6,12 @@ mov $1,1
 mov $4,1
 mov $3,$0
 lpb $3
-  cmp $4,0
+  equ $4,0
   mul $1,$3
   mul $1,$3
   add $5,$4
   mov $6,$5
-  cmp $6,0
+  equ $6,0
   add $5,$6
   div $1,$5
   div $1,$5

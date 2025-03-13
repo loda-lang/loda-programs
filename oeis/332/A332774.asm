@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 0,1,2,5,8,13,17,23,30,39,47,57,67,79,90,103
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 trn $1,1
 mod $1,2

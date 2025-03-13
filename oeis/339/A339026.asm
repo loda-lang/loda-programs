@@ -1,16 +1,27 @@
 ; A339026: Number of pairs (x,y): 1 <= x < y <= n*n, such that x*y is a square.
 ; Submitted by Penguin
 ; 0,1,4,8,16,27,40,58,80,105,128,158,198,237,278,336,382,435,502,574,632,699,798,868,968,1063,1176,1262,1362,1505,1590,1732,1880,2007,2150,2272,2434,2567,2746,2930,3062,3265,3444,3654,3832,4035,4284,4454,4668,4875,5142,5364,5590,5889,6078,6336,6614,6881,7166,7418,7746,8021,8306,8614,8918,9247,9588,9918,10216,10577,10886,11268,11652,12009,12412,12742,13188,13551,13898,14326
-; Formula: a(n) = b(max((n+1)^2-1,0)), b(n) = b(n-1)+A000194(A008833(n+1))-1, b(0) = 0
+; Formula: a(n) = b(max(n^2-1,0)), b(n) = b(n-1)+truncate((sqrtint(4*(truncate(max(0,n)/A019554(max(0,n)+1))+1)^2)+1)/2)-1, b(0) = 0
 
-add $0,1
+#offset 1
+
 pow $0,2
 sub $0,1
 lpb $0
+  mov $4,0
+  max $4,$0
+  mov $3,$4
+  add $4,1
+  seq $4,19554 ; Smallest number whose square is divisible by n.
+  div $3,$4
   mov $2,$0
+  mov $2,$3
   add $2,1
-  seq $2,8833 ; Largest square dividing n.
-  seq $2,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  pow $2,2
+  mul $2,4
+  nrt $2,2
+  add $2,1
+  div $2,2
   sub $2,1
   sub $0,1
   add $1,$2

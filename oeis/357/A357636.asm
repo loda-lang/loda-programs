@@ -13,7 +13,6 @@ lpb $2
   seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
   mul $3,$4
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
-  sub $3,1
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   seq $3,357623 ; Skew-alternating sum of the n-th composition in standard order.
   equ $3,0

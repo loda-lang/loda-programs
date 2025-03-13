@@ -15,7 +15,6 @@ lpb $2
   seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
   mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  sub $3,1
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   seq $3,65359 ; Alternating bit sum for n: replace 2^k with (-1)^k in binary expansion of n.
   equ $3,0

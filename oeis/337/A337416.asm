@@ -1,8 +1,11 @@
 ; A337416: Number of sets (in the Hausdorff metric geometry) at each location between two sets defined by a complete bipartite graph K(5,n) (with n at least 3) missing two edges, where the removed edges are incident to the same point in the 5 point part.
 ; Submitted by BrandyNOW
 ; 2240,133232,5366288,187074656,6126049760,194922245072,6118612137008,190822947290816,5932740419114240,184173665371614512,5713266248795701328,177169506604462719776,5493128593023515417120,170300095372377973419152,5279499596024093537691248
-; Formula: a(n) = 6975*31^n+1750*7^n-174*3^n-6315*15^n+4
+; Formula: a(n) = 6975*31^(n-3)+1750*7^(n-3)-174*3^(n-3)-6315*15^(n-3)+4
 
+#offset 3
+
+sub $0,3
 mov $1,31
 pow $1,$0
 mul $1,6975

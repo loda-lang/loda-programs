@@ -2,12 +2,16 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 21,35,39,49,57,63,65,69,77,87,91,95,105,111,115,117,119,129,133,141,143,145,147,159,161,169,171,175,183,185,189,195,203,207,209,213,215,217,219,221,231,235,237,245,247,253,259,261,265,267,273,285,287,291
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,330946 ; Odd numbers whose prime indices are not all prime numbers.
   mov $5,$3
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).

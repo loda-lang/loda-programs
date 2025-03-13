@@ -12,6 +12,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
+    add $7,1
     seq $7,330143 ; Beatty sequence for (3/2)^x, where (2/3)^x + (2/5)^x = 1.
     mov $9,10
     add $9,$5

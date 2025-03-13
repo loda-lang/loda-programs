@@ -10,7 +10,7 @@ lpb $0
   add $1,$0
   sub $5,$1
   mov $3,$2
-  cmp $3,0
+  equ $3,0
   add $3,$0
   sub $3,$5
   mov $0,$2

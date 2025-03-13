@@ -25,7 +25,6 @@ lpb $2
     mul $7,10
   lpe
   mov $3,$6
-  sub $3,1
   seq $3,330571 ; Square of number of unordered factorizations of n as n = i*j.
   equ $3,1
   add $6,$4

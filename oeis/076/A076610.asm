@@ -9,11 +9,12 @@ mov $1,-2
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,2
   mov $3,$1
+  add $3,3
   seq $3,330944 ; Number of nonprime prime indices of n.
   equ $3,0
   sub $0,$3
+  add $1,2
   mov $4,$0
   max $4,0
   equ $4,$0

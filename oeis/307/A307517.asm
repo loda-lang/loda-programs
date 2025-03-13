@@ -12,6 +12,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,335450 ; Number of (2,1,2)-avoiding permutations of the prime indices of n.
   add $3,$4
   div $3,2

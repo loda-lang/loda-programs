@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,339747 ; a(n) = (5^(valuation(n, 5) + 1) - 1) / 4.
     mul $7,2
     mov $9,10

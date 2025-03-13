@@ -9,11 +9,12 @@ mov $1,1
 mov $2,$0
 mul $2,4
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,334158 ; Number of Goldbach partitions (p,q) of 2n such that primes p and q can be written as the sum of two primes.
   equ $3,0
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

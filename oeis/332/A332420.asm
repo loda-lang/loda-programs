@@ -1,6 +1,9 @@
-; A332420: Number of Maclaurin polynomials of sin x having exactly n positive zeros.
-; 3,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5
+; A332420: Number of Maclaurin polynomials p(2m-1,x) of sin(x) having exactly n positive zeros.
+; 3,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 lpb $0
   mov $0,1

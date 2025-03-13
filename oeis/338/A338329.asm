@@ -11,7 +11,7 @@ lpb $0
 lpe
 add $0,$3
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $0,$2
 mul $0,2
 sub $0,1

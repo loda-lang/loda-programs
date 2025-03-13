@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,6
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,336466 ; Fully multiplicative with a(p) = A000265(p-1) for any prime p, where A000265(k) gives the odd part of k.
   equ $3,1
   sub $0,$3

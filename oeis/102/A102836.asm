@@ -12,6 +12,7 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   equ $3,6
   sub $0,$3

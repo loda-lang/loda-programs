@@ -7,13 +7,13 @@ lpb $0
   sub $0,1
   mov $5,0
   mov $6,0
-  cmp $6,$7
+  equ $6,$7
   mov $4,$2
   add $4,6
   lpb $4
     mov $7,$4
     seq $7,25781 ; Expansion of 1/((1-x)(1-x^5)(1-x^12)).
-    cmp $7,2
+    equ $7,2
     mov $9,10
     add $9,$5
     mov $10,$11

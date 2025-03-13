@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $5,$1
-  add $5,1
+  add $5,2
   seq $5,339952 ; Numbers that are the sum of an even square > 0 and an odd square.
   mov $3,$5
   mul $3,2

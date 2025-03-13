@@ -2,8 +2,9 @@
 ; Submitted by [AF&amp;gt;Libristes]IxPo
 ; 1,2,2,3,2,3,2,4,3,3,2,5,2,3,3,5,2,5,2,5,3,3,2,7,3,3,4,5,2,4,2,6,3,3,3,7,2,3,3,7,2,4,2,5,5,3,2,9,3,5,3,5,2,7,3,7,3,3,2,7,2,3,5,7,3,4,2,5,3,4,2,10,2,3,5,5,3,4,2,9
 
+#offset 1
+
 mov $1,1
-add $0,1
 seq $0,320390 ; Prime signature of n (sorted in decreasing order), concatenated.
 lpb $0
   mov $2,$0

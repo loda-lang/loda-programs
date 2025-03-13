@@ -2,6 +2,9 @@
 ; Submitted by Mumps
 ; 1,1,2,3,2,0,3,0,2,0
 
+#offset 1
+
+sub $0,1
 max $0,1
 lpb $0
   mov $1,$0

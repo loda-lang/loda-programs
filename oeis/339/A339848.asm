@@ -2,6 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 1,1,1,1,3,6,16,27,44,70
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   dif $2,2

@@ -2,6 +2,9 @@
 ; Submitted by arkiss
 ; 5,7,8,7,7,8,7,5,6,7
 
+#offset 1
+
+sub $0,1
 mul $0,6
 lpb $0
   add $2,$0

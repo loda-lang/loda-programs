@@ -2,6 +2,9 @@
 ; Submitted by stoneageman
 ; 1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
+#offset 1
+
+sub $0,1
 mov $5,$0
 mov $3,2
 lpb $3
@@ -9,6 +12,7 @@ lpb $3
   mov $0,$5
   add $0,$3
   trn $0,1
+  add $0,1
   seq $0,333214 ; Positions of adjacent unequal terms in the sequence of differences between primes.
   mov $2,$3
   mul $2,$0

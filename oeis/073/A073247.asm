@@ -17,6 +17,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,334657 ; Dirichlet g.f.: 1 / zeta(s-2).
     bin $7,2
     mov $6,$7

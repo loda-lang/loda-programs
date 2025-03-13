@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,332785 ; Nonsquarefree numbers that are not squareful.
   sub $3,1
   add $0,1

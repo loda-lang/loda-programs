@@ -15,6 +15,7 @@ lpb $5
   equ $2,1
   sub $0,$2
   mov $1,$0
+  add $1,1
   seq $1,330691 ; a(n) = gcd(n, A309639(n)), where A309639(n) is the index of the least harmonic number H_i whose denominator (A002805) is divisible by n.
   mov $0,2
   mul $0,$1

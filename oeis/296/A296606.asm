@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,337084 ; a(n) is the smallest nonzero digit d whose product d*n will contain the digit d, or 0 if no such digit exists.
   equ $3,0
   sub $0,$3

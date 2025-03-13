@@ -2,7 +2,10 @@
 ; Submitted by Contact
 ; 1,2,3,5,10,30,103,519
 
+#offset 3
+
 mov $1,1
+sub $0,3
 lpb $0
   sub $0,1
   add $2,$4

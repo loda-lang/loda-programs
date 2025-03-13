@@ -1,6 +1,9 @@
 ; A333870: The number of iterations of the absolute Möbius divisor function (A173557) required to reach from n to 1.
 ; 0,1,2,1,2,2,3,1,2,2,3,2,3,3,2,1,2,2,3,2,3,3,4,2,2,3,2,3,4,2,3,1,3,2,3,2,3,3,3,2,3,3,4,3,2,4,5,2,3,2,2,3,4,2,3,3,3,4,5,2,3,3,3,1,3,3,4,2,4,3,4,2,3,3,2,3,3,3,4,2
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $0,1
   seq $0,3958 ; If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).

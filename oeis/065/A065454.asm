@@ -10,6 +10,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,335024 ; Ratios of consecutive terms of A056612.
   add $3,$4
   sub $3,$1

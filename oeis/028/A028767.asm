@@ -9,6 +9,7 @@ sub $0,1
 lpb $0
   sub $0,1
   mov $1,$2
+  add $1,1
   seq $1,332712 ; a(n) = Sum_{d|n} mu(d/gcd(d, n/d)).
   equ $1,0
   sub $0,$1

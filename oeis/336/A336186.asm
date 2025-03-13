@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,17,127,1871,13969,205793,1536463,22635359,168996961,2489683697
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $3,1

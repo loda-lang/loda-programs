@@ -1,13 +1,14 @@
 ; A050320: Number of ways n is a product of squarefree numbers > 1.
 ; Submitted by [AF>Libristes] Dudumomo
 ; 1,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,1,2,1,2,2,2,1,2,1,2,1,2,1,5,1,1,2,2,2,3,1,2,2,2,1,5,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1,6,1,2,2,1,2,5,1,2,2,5,1,3,1,2,2,2,2,5,1,2
-; Formula: a(n) = (A264668(n-1)-1)*(truncate((3*A335516(n-1)-2)/3)+1)+A000005(n)+1
+; Formula: a(n) = (A264668(n-1)-1)*(truncate((3*A335516(n)-2)/3)+1)+A000005(n)+1
 
 #offset 1
 
 sub $0,1
 mov $1,$0
 mov $2,$0
+add $2,1
 seq $2,335516 ; Number of normal patterns contiguously matched by the prime indices of n in increasing or decreasing order, counting multiplicity.
 mul $2,3
 sub $2,2

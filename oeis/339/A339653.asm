@@ -2,7 +2,9 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,0,1,0,0,0,0,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-add $0,1
+#offset 2
+
+sub $0,1
 lpb $0
   gcd $2,2
   mov $1,$0

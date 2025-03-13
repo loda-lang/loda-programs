@@ -8,6 +8,7 @@ lpb $0
   sub $0,1
   mov $5,$0
   max $5,0
+  add $5,1
   seq $5,330242 ; Sum of largest emergent parts of the partitions of n.
   add $4,2
   add $4,$0

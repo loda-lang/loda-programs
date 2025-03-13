@@ -12,6 +12,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   add $3,2
   seq $3,145341 ; Convert 2n-1 to binary. Reverse its digits. Convert back to decimal to get a(n).

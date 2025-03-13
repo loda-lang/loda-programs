@@ -12,6 +12,7 @@ lpb $1
   sub $0,$1
   add $0,1
   mov $5,$3
+  add $5,1
   seq $5,330749 ; a(n) = gcd(n, A064989(n)), where A064989 is fully multiplicative with a(2) = 1 and a(prime(k)) = prime(k-1) for odd primes.
   gcd $5,$0
   div $0,$5

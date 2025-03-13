@@ -14,7 +14,18 @@ lpb $2
   seq $5,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
   mov $3,$1
   add $3,1
-  seq $3,78615 ; a(n) = rad(n)^2, where rad is the squarefree kernel of n (A007947).
+  mov $6,$3
+  mov $8,$3
+  seq $8,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+  sub $3,1
+  mov $9,$3
+  div $9,$8
+  add $3,$9
+  add $3,2
+  mov $7,$3
+  gcd $7,$6
+  pow $7,2
+  mov $3,$7
   sub $3,$5
   mul $3,-4
   trn $3,3

@@ -9,11 +9,11 @@ lpb $3
   sub $3,1
   add $2,$1
   add $2,$7
-  cmp $1,0
+  equ $1,0
   add $1,$6
   add $1,$2
   mul $1,4
-  cmp $2,4
+  equ $2,4
   add $2,$1
   mul $5,2
   add $5,$2

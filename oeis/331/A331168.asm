@@ -2,6 +2,9 @@
 ; Submitted by damotbe
 ; 1,1,0,1,0,1,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1
 
+#offset 1
+
+sub $0,1
 seq $0,352491 ; n minus the Heinz number of the conjugate of the integer partition with Heinz number n.
 add $0,1
 lpb $0

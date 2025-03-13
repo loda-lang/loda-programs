@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,335447 ; Number of (1,2)-matching permutations of the prime indices of n.
   sub $3,1
   gcd $3,4

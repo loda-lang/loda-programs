@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,335062 ; a(n) = 1 - Sum_{d|n, d > 1} (-1)^d * a(n/d).
   equ $3,0
   sub $0,$3

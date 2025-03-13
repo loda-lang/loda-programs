@@ -8,5 +8,6 @@ lpb $1
   sub $1,1
   mov $0,$2
   sub $0,$1
+  add $0,1
   seq $0,337690 ; a(n) is the number of primitive nondeficient numbers (A006039) dividing n.
 lpe

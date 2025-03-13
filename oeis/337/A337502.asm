@@ -2,7 +2,8 @@
 ; Submitted by BrandyNOW
 ; 0,1,3,6,9,15,20,27,34,43
 
-add $0,1
+#offset 1
+
 mov $1,$0
 bin $1,2
 add $0,5

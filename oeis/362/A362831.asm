@@ -11,6 +11,7 @@ lpb $3
   mov $2,$0
   max $2,0
   div $2,2
+  add $2,1
   seq $2,334208 ; Number of partitions of 2n into two composite parts, (r,s), such that r and s have the same number of primes less than or equal to them.
   add $1,$2
 lpe

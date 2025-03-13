@@ -2,6 +2,9 @@
 ; Submitted by ChelseaOilman
 ; 1,1,1,2,1,1,2,1,2,3,1,1,2,1,2,3,1,2,3,4,1,1,2,1,2,3,1,2,3,4,1,2,3,4,5,1,1,2,1,2,3,1,2,3,4,1,2,3,4,5,1,2,3,4,5,6,1,1,2,1,2,3,1,2,3,4,1,2,3,4,5,1,2,3,4,5,6,1,2,3
 
+#offset 1
+
+sub $0,1
 seq $0,332663 ; Even bisection of A332662: the x-coordinates of an enumeration of N X N.
 lpb $0
   add $1,1

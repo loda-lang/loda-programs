@@ -11,4 +11,5 @@ lpb $1
   mov $1,7
   add $0,1
 lpe
+add $0,1
 seq $0,330031 ; Sums of two nonzero tetrahedral numbers (A000292).

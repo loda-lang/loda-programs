@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,6
   mov $3,$1
+  add $3,1
   seq $3,333229 ; First sums of the Kolakoski sequence A000002.
   equ $3,2
   sub $0,$3

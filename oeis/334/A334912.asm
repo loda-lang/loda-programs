@@ -1,10 +1,44 @@
 ; A334912: a(n) = numerator (2^(4*n-1) * (2^(4*n-2) - 1) * (Bernoulli(4*n-2) / (4*n-2)!) * ((2*n-2)! / Euler(2*n-2))^2).
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 2,16,7936,11184128,209865342976,2475749026562048,123460740095103991808,5779796046952399460368384,3729407703720529571097509625856,485491405392529556189699853976076288,193817991886041515914007312001087567822848,56920344782482721622150071084079041150980194304
-; Formula: a(n) = truncate(A012853(n)/gcd(A033504(n),A012853(n)))
 
+#offset 1
+
+sub $0,1
 mov $1,$0
-seq $0,12853 ; Expansion of sec(x)^2+sech(x)^2 in powers of x^4.
-seq $1,33504 ; a(n)/4^n is the expected number of tosses of a coin required to obtain n+1 heads or n+1 tails.
+mov $5,0
+mov $8,0
+mov $9,0
+mul $0,4
+add $0,1
+mov $4,1
+mov $7,$0
+lpb $0
+  sub $0,1
+  div $9,2
+  add $9,$5
+  mul $9,2
+  mov $5,$4
+  pow $5,$7
+  sub $5,$9
+  mov $6,$7
+  bin $6,$4
+  mul $6,$5
+  add $4,1
+  mul $8,-1
+  add $8,$6
+lpe
+gcd $0,$8
+mul $0,2
+mov $2,$1
+mul $2,2
+add $2,1
+bin $2,$1
+mov $3,4
+pow $3,$1
+mul $3,2
+sub $3,$2
+add $1,1
+mul $1,$3
 gcd $1,$0
 div $0,$1

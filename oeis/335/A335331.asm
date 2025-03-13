@@ -1,9 +1,10 @@
 ; A335331: a(n) = prime(k) where k is the n-th 7-smooth number.
 ; Submitted by [AF] Kalianthys
 ; 2,3,5,7,11,13,17,19,23,29,37,43,47,53,61,71,73,89,97,103,107,113,131,149,151,173,181,197,223,227,229,251,263,281,307,311,349,359,379,409,419,433,463,503,521,541,571,593,613,659,691,701,719,761,809,827,853,863,941,953,997,1039,1069,1129,1163,1193,1223,1291,1321,1423,1427,1511,1543,1553,1583,1601,1619,1733,1811,1877
-; Formula: a(n) = truncate((A129075(truncate((4*truncate(A080194(n+1)/7)-truncate((4*truncate(A080194(n+1)/7)-2)/2)-3)/2))-10)/3)+2
+; Formula: a(n) = A000040(truncate((4*truncate(A080194(n)/7)-truncate((4*truncate(A080194(n)/7)-2)/2)-3)/2)+1)
 
-add $0,1
+#offset 1
+
 seq $0,80194 ; 7-smooth numbers which are not 5-smooth.
 div $0,7
 mul $0,4
@@ -14,7 +15,5 @@ sub $1,$0
 mov $0,$1
 sub $0,3
 div $0,2
-seq $0,129075 ; Numbers n such that (n-4)/3 is prime.
-sub $0,10
-div $0,3
-add $0,2
+add $0,1
+seq $0,40 ; The prime numbers.

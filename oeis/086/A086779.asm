@@ -10,6 +10,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,333871 ; Sum of the iterated absolute Möbius divisor function (A173557).
   div $3,2
   equ $3,4

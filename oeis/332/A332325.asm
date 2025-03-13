@@ -1,7 +1,10 @@
-; A332325: Number of Maclaurin polynomials p(2m,x) of cos x that have exactly n positive zeros.
+; A332325: Number of Maclaurin polynomials p(2m,x) of cos(x) that have exactly n positive zeros.
 ; Submitted by USTL-FIL (Lille Fr)
-; 3,4,4,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4
+; 3,4,4,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4,4,4,4,5,4,4,5,4
 
+#offset 1
+
+sub $0,1
 mov $2,1
 mov $1,2
 pow $1,$0

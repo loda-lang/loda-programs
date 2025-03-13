@@ -15,6 +15,7 @@ lpb $2
     div $7,2
     mov $3,$1
     add $3,$7
+    add $3,1
     seq $3,337333 ; Number of pairs of odd divisors of n, (d1,d2), such that d1 <= d2.
     mov $6,$7
     mul $6,$3

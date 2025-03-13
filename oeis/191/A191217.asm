@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,336937 ; The 2-adic valuation of sigma(n), the sum of divisors of n.
   equ $3,1
   sub $0,$3
