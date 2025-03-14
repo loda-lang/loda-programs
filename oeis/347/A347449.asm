@@ -12,8 +12,12 @@ seq $3,41 ; a(n) is the number of partitions of n (the partition numbers).
 mul $3,$2
 div $3,2
 add $3,1
+mov $4,$0
+seq $4,81362 ; Expansion of q^(1/24) * eta(q) / eta(q^2) in powers of q.
 mov $1,$0
-seq $1,27187 ; Number of partitions of n into an even number of parts.
+seq $1,41 ; a(n) is the number of partitions of n (the partition numbers).
+add $1,$4
+div $1,2
 add $1,1
 sub $1,$3
 seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).

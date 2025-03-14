@@ -8,17 +8,18 @@ pow $2,3
 lpb $2
   add $6,1
   mov $3,$1
+  add $3,1
   seq $3,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
   mov $5,$3
   gcd $5,$6
   mov $3,$5
   add $3,2
-  cmp $3,7
+  equ $3,7
   sub $0,$3
   add $1,1
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

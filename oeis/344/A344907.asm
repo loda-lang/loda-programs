@@ -1,7 +1,10 @@
 ; A344907: Number of polygon edges formed when every pair of vertices of a regular (2n-1)-gon are joined by an infinite line.
 ; 0,3,30,189,684,1815,3978,7665,13464,22059,34230,50853,72900,101439,137634,182745,238128,305235,385614,480909,592860,723303,874170,1047489,1245384,1470075,1723878,2009205,2328564,2684559,3079890,3517353,3999840,4530339,5111934,5747805,6441228,7195575
-; Formula: a(n) = 3*floor((2*n*(binomial(2*n,3)+1))/2)
+; Formula: a(n) = 3*truncate(((binomial(2*n-2,3)+1)*(2*n-2))/2)
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $1,$0
 bin $0,3

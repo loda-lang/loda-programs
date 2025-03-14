@@ -2,6 +2,9 @@
 ; Submitted by cargoeagle
 ; 1,1,1,3,1,5,3,7,5,9,5,11
 
+#offset 1
+
+sub $0,1
 dif $0,2
 lpb $0
   bin $0,2

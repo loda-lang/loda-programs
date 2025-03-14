@@ -4,6 +4,7 @@
 
 trn $0,1
 mov $2,$0
+add $0,1
 seq $0,345365 ; a(n) = (2*n)!*Pi^(-2*n)*PolyLog(2*n, 1)*Clausen(2*n - 1)/2, where Clausen(n) = A160014(n, 1).
 lpb $2
   sub $2,1

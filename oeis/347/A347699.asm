@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,2,1,1,4,3,1,1,6,9,4,1,1,9,23,17,5
 
+#offset 1
+
+sub $0,1
 mul $0,2
 lpb $0
   add $2,2

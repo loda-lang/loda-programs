@@ -13,7 +13,7 @@ lpb $1
   add $4,$3
   mod $4,4
   dif $4,2
-  cmp $4,1
+  equ $4,1
   mul $4,$5
   mul $5,2
   div $1,2

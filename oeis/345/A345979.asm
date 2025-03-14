@@ -2,8 +2,10 @@
 ; Submitted by [SG-FC] hl
 ; 1,3,5,8,11,14,17,17,21,25,26
 
+#offset 3
+
 mov $2,4
-add $0,1
+sub $0,2
 lpb $0
   sub $0,1
   add $4,$3

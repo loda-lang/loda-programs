@@ -19,6 +19,7 @@ lpb $2
   mov $5,0
   sub $0,1
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
   seq $0,343465 ; a(n) = -(1/n) * Sum_{d|n} phi(n/d) * (-3)^d.
   mul $0,$4
   add $1,$0

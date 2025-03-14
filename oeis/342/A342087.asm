@@ -6,6 +6,7 @@
 
 sub $0,1
 equ $1,$0
+add $0,1
 seq $0,342083 ; Number of chains of strictly inferior divisors from n to 1.
 mul $0,2
 sub $0,$1

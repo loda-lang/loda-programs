@@ -4,9 +4,15 @@
 
 mov $1,-1
 sub $1,$0
-seq $0,185549 ; a(n) = ceiling(n^(3/2)); complement of A185550.
+mov $4,$0
+pow $4,3
+min $0,1
+sub $4,$0
+nrt $4,2
+add $4,$0
 mov $2,$1
-add $2,$0
+add $2,$4
+mov $0,$4
 lpb $0
   mov $0,$2
   mov $3,$2

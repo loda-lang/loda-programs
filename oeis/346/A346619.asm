@@ -4,7 +4,7 @@
 
 seq $0,65040 ; Triangle read by rows: T(m,k) = exponent of the highest power of 2 dividing the binomial coefficient binomial(m,k).
 mov $2,$0
-cmp $2,0
+equ $2,0
 add $0,$2
 add $1,$0
 add $1,1

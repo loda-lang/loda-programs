@@ -9,7 +9,7 @@ lpb $2
   add $6,1
   mov $7,$1
   mul $7,2
-  add $7,1
+  add $7,2
   seq $7,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
   mov $3,$1
   sub $3,$7

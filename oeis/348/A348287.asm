@@ -7,7 +7,7 @@ seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the
 lpb $1
   mov $2,$1
   mod $2,10
-  cmp $2,0
+  equ $2,0
   mul $2,10
   max $2,1
   mul $0,$2

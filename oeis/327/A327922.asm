@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,349136 ; Möbius transform of Kimberling's paraphrases, A003602.
   gcd $3,2
   sub $0,$3

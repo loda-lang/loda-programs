@@ -8,12 +8,18 @@ mov $4,$0
 lpb $4
   mul $4,0
   mov $0,$2
+  bin $0,2
   mov $3,$2
   seq $3,349710 ; Paschal full moon dates expressed as days after March 21 (Julian calendar).
   mov $1,$2
-  seq $1,6125 ; a(n) = 2^(n*(n-1)/2).
+  bin $1,2
+  mov $5,2
+  pow $5,$1
+  mov $1,$5
   sub $1,$3
   mov $2,2
-  seq $0,6125 ; a(n) = 2^(n*(n-1)/2).
+  mov $6,2
+  pow $6,$0
+  mov $0,$6
   sub $0,$1
 lpe

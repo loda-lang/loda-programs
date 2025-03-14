@@ -12,6 +12,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,342739 ; Length of n-th word in the ordering A341334 of all binary words.
   add $3,1
   gcd $3,2

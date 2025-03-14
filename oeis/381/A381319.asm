@@ -7,6 +7,7 @@ lpb $3
   div $3,2
   mov $4,$1
   add $0,$3
+  add $0,1
   seq $0,348259 ; Number of bases 1<b<n and coprime to n, such that b^n == b (mod n).
   mov $2,$3
   mul $2,$0

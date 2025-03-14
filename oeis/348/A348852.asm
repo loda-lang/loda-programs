@@ -2,8 +2,10 @@
 ; Submitted by damotbe
 ; 2,93,94,97,98,101,102,105,106,117,118
 
+#offset 1
+
 mov $2,1
-add $0,7
+add $0,6
 mul $0,2
 lpb $0
   mov $3,$0

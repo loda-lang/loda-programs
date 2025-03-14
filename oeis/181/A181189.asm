@@ -10,6 +10,7 @@ lpb $1
   lpb $2
     dif $2,$1
     mov $3,$0
+    add $3,1
     seq $3,348513 ; Möbius transform of A048146, the sum of non-unitary divisors of n.
     mov $0,0
   lpe

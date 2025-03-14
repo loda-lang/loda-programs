@@ -11,8 +11,7 @@ lpb $8
     add $2,1
     mov $6,$2
     gcd $6,$3
-    cmp $6,1
-    cmp $6,0
+    neq $6,1
     sub $5,$6
   lpe
   add $2,1
@@ -25,7 +24,7 @@ lpb $8
   add $5,$3
   sub $5,1
   mov $7,$0
-  cmp $7,0
+  equ $7,0
   sub $1,$7
   mov $3,$4
 lpe

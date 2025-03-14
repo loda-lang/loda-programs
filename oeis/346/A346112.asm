@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 6,4,6,3,6,4,6,5,6,3,6,4,6,4,6,3,6,4
 
+#offset 3
+
+sub $0,3
 gcd $0,42
 mov $3,$0
 add $3,3

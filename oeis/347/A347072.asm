@@ -9,9 +9,14 @@ add $3,$0
 mov $2,$0
 lpb $2
   mov $0,$3
-  seq $0,109449 ; Triangle read by rows, T(n,k) = binomial(n,k)*A000111(n-k), 0 <= k <= n.
+  seq $0,247453 ; T(n,k) = binomial(n,k)*A000111(n-k)*(-1)^(n-k), 0 <= k <= n.
+  mov $4,0
+  gcd $4,$0
+  mov $5,0
+  gcd $5,$4
+  mov $0,$5
   mul $1,$2
-  add $1,$0
+  add $1,$5
   sub $2,1
   sub $3,1
 lpe

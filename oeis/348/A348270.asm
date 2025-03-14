@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 0,2,7,16,28,44,64,88,115,146,181,220,262,308,358,412,469,531
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   div $4,25

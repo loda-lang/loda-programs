@@ -2,6 +2,9 @@
 ; Submitted by Simon Strandgaard
 ; 2,4,5,7,8,10,11,13,14,18,19,23,24,29
 
+#offset 6
+
+sub $0,6
 mov $2,$0
 mul $2,2
 add $0,1

@@ -11,7 +11,7 @@ mul $1,2
 add $1,2
 seq $1,47994 ; Unitary totient (or unitary phi) function uphi(n).
 mul $0,2
-add $0,1
+add $0,2
 seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
 gcd $1,$0
 div $0,$1

@@ -1,10 +1,11 @@
 ; A343070: a(1) = 1, for n > 1, a(n) is the smallest positive integer for which a(n-1) + n + a(n) is a prime.
 ; Submitted by Simon Strandgaard
 ; 1,2,2,1,1,4,2,1,1,2,4,1,3,2,2,1,1,4,6,3,5,2,4,1,3,2,2,1,1,6,4,1,3,4,2,3,1,2,2,1,1,4,6,3,5,2,4,1,3,6,2,5,1,4,2,1,1,2,6,1,5,4,4,3,3,2,2,1,1,2,6,1,5,4,4,3,3,2,2,1
-; Formula: a(n) = b(n+1), b(n) = A013632(b(n-1)+n), b(1) = 1, b(0) = 0
+; Formula: a(n) = A013632(a(n-1)+n), a(1) = 1, a(0) = 0
+
+#offset 1
 
 mov $1,1
-add $0,1
 lpb $0
   sub $0,1
   add $2,$1

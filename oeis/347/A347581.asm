@@ -1,9 +1,11 @@
 ; A347581: The Barnyard sequence: a(n) is the minimum number of unit length line segments required to enclose areas of 1 through n on a square grid.
 ; Submitted by Jamie Morken(l1)
 ; 4,9,14,20,26,33,40,47,55,63
-; Formula: a(n) = floor(((n+12)^2+2)/5)-25
+; Formula: a(n) = floor(((n+11)^2+2)/5)-25
 
-add $0,12
+#offset 1
+
+add $0,11
 pow $0,2
 add $0,2
 div $0,5

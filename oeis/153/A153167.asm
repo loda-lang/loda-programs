@@ -17,6 +17,7 @@ lpb $2
   sub $3,$5
   add $3,3
   mul $5,$3
+  add $5,1
   seq $5,341591 ; Number of superior prime divisors of n.
   mov $3,$5
   gcd $3,2

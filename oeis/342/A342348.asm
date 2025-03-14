@@ -1,9 +1,11 @@
 ; A342348: Smallest number > 3 whose representation in all bases from 2 up to n consists only of '0's, '1's, '2's and '3's.
 ; Submitted by NOSNHOP
 ; 4,4,4,5,6,7,8,8281
-; Formula: a(n) = truncate(b(n+1)/4418)+4, b(n) = 2*d(n-1)*(c(n-1)+d(n-1)), b(4) = 4418, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)+d(n-1), c(4) = -47, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 2*d(n-4)*(c(n-4)+d(n-4))-47, d(5) = -47, d(4) = -47, d(3) = -47, d(2) = 0, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate(b(n-1)/4418)+4, b(n) = 2*d(n-1)*(c(n-1)+d(n-1)), b(4) = 4418, b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-1)+d(n-1), c(4) = -47, c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 2*d(n-4)*(c(n-4)+d(n-4))-47, d(5) = -47, d(4) = -47, d(3) = -47, d(2) = 0, d(1) = 0, d(0) = 0
 
-add $0,1
+#offset 2
+
+sub $0,1
 lpb $0
   sub $0,1
   add $3,$6

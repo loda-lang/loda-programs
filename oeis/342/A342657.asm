@@ -2,7 +2,8 @@
 ; Submitted by Simon Strandgaard (raspberrypi)
 ; 0,0,0,0,1,0,1,0,1,0,2,0,3,1,1,0,2,0,3,1,3,0,3,0,4,1,3,0,2,0,3,3,5,1,1,0,7,3,3,0,4,0,5,2,5,0,4,0,2,4,6,0,3,1,5,5,7,0,4,0,9,3,2,3,4,0,6,7,4,0,3,0,10,2,7,1,5,0,5,1
 
-add $0,2
+#offset 2
+
 seq $0,156552 ; Unary-encoded compressed factorization of natural numbers.
 mul $0,2
 sub $0,1

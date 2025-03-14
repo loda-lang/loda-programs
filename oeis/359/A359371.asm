@@ -8,6 +8,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,347235 ; Dirichlet convolution of Euler phi with A342001, where A342001(n) = A003415(n) / A003557(n).
   add $3,1
   mod $3,2
@@ -17,7 +18,7 @@ lpb $2
   add $1,$4
   mov $4,$0
   max $4,0
-  cmp $4,$0
+  equ $4,$0
   mul $2,$4
   sub $2,1
 lpe

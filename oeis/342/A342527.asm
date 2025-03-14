@@ -8,7 +8,7 @@ lpb $0
   add $0,1
   mov $4,$3
   gcd $4,$0
-  cmp $4,$0
+  equ $4,$0
   sub $0,2
   mul $4,$0
   add $2,$4

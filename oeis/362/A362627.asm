@@ -13,6 +13,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,344480 ; a(n) = Sum_{d|n} d * sigma_d(d), where sigma_k(n) is the sum of the k-th powers of the divisors of n.
     mov $9,10
     add $9,$5

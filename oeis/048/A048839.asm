@@ -8,12 +8,13 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,345951 ; a(n) = 1 if A002034(n), the smallest positive integer k such that n divides k!, is larger than A006530(n), the greatest prime factor of n, otherwise 0.
   gcd $3,2
   sub $0,$3
   add $0,1
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

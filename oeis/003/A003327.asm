@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $5,$1
+  add $5,4
   seq $5,340977 ; Number of ways to write n as an ordered sum of 4 positive cubes.
   mov $3,$5
   min $3,1

@@ -1,11 +1,14 @@
 ; A345949: a(n) = A153151(n) / gcd(A153151(n), A344875(n)).
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,5,1,1,1,3,1,11,1,13,7,1,1,17,1,19,5,7,1,23,1,25,1,9,1,29,1,1,8,11,17,5,1,37,19,13,1,41,1,43,11,15,1,47,1,49,25,17,1,53,27,11,14,19,1,59,1,61,31,1,4,13,1,67,17,23,1,71,1,73,37,25,19,77,1,79
-; Formula: a(n) = truncate(A153151(n+1)/gcd(A047994(2*n+2),max(A344005(2*n+1),n)))
+; Formula: a(n) = truncate(A153151(n)/gcd(A047994(2*n),max(A344005(2*n),n-1)))
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 mul $2,2
-add $2,1
+add $2,2
 seq $2,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
 max $2,$0
 mov $1,$0

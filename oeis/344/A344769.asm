@@ -1,14 +1,14 @@
 ; A344769: a(n) = A005187(n) - A011772(n).
 ; Submitted by [AF] Kalianthys
 ; 0,0,2,0,4,7,5,0,8,14,9,14,11,18,21,0,16,26,17,23,33,30,20,31,23,37,24,46,26,41,27,0,53,50,53,62,35,54,62,63,39,61,40,53,77,65,43,62,47,73,81,62,50,77,95,61,92,84,55,101,57,88,93,0,103,119,65,118,112,117,68,79,71,109,122,93,129,140,75,94
-; Formula: a(n) = -A344005(2*n-1)+A283208(n-1)+1
+; Formula: a(n) = -A344005(2*n)+A283208(n-1)+1
 
 #offset 1
 
 sub $0,1
 mov $1,$0
 mul $0,2
-add $0,1
+add $0,2
 seq $0,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
 seq $1,283208 ; Minimal exponent integer sequence associated with Vietoris sequence.
 add $1,1

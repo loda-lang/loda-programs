@@ -11,7 +11,6 @@ lpb $2
   add $3,1
   seq $3,176256 ; Numbers of the form 4k+1 with least prime divisor of the form 4m-1.
   mov $5,$3
-  sub $3,1
   seq $3,345957 ; Number of divisors of n with exactly half as many prime factors as n, counting multiplicity.
   equ $3,2
   sub $0,$3

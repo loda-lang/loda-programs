@@ -23,7 +23,7 @@ lpb $3
     add $5,$8
     mov $8,$0
     max $8,0
-    cmp $8,$0
+    equ $8,$0
     mul $6,$8
     sub $6,1
   lpe

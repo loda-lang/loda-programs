@@ -16,6 +16,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,5
     seq $7,340950 ; Number of ways to write n as an ordered sum of 5 nonzero triangular numbers.
     mov $9,10
     add $9,$5

@@ -12,7 +12,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
+  add $0,3
   seq $0,340949 ; Number of ways to write n as an ordered sum of 4 nonzero triangular numbers.
   add $1,$0
 lpe

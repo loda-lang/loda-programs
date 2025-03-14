@@ -2,12 +2,15 @@
 ; Submitted by Jamie Morken(l1)
 ; 1,0,6,8,1,1,7,7,5,6
 
+#offset -18
+
+add $0,18
 mov $1,2
 mov $2,2
 sub $2,$0
 mov $3,$0
 lpb $3
-  cmp $6,0
+  equ $6,0
   mul $2,$3
   mul $2,5
   add $5,$6
@@ -16,7 +19,7 @@ lpb $3
   mul $1,9
   div $2,$5
   mov $4,$2
-  cmp $4,0
+  equ $4,0
   add $2,$4
   div $6,$2
   add $2,$1

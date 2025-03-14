@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,345932 ; a(n) = A002034(n) / gcd(n, A002034(n)), where A002034(n) gives the smallest positive integer k such that n divides k!.
   pow $3,2
   trn $3,3

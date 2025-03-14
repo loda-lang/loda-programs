@@ -16,6 +16,7 @@ lpb $4
   bin $1,$0
   mul $0,$1
   sub $0,$1
+  add $0,1
   seq $0,341642 ; Number of strictly superior prime divisors of n.
   mul $1,$0
   add $3,$1

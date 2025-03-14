@@ -1,16 +1,21 @@
 ; A346087: a(n) = min(A071178(n), A329348(n)).
 ; Submitted by rolivos
 ; 0,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1
-; Formula: a(n) = truncate(A048691(gcd(A064989(A276086(A108951(n+1))),n+1))/2)
+; Formula: a(n) = truncate((2*truncate(A146564(gcd(A064989(A276086(n*A181811(n))),n))/3)+1)/2)
+
+#offset 1
 
 mov $2,$0
-add $2,1
-add $0,1
-seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mov $3,$0
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$3
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 mov $1,$0
 gcd $1,$2
 mov $0,$1
-seq $0,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+div $0,3
+mul $0,2
+add $0,1
 div $0,2

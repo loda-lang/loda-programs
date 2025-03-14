@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $0,$1
+  add $0,1
   seq $0,341619 ; Characteristic function of primitive nondeficient numbers (A006039): a(n) = 1 if proper multiples of n are all abundant, and proper divisors of n are all deficient, 0 otherwise.
   mul $1,$0
   add $3,$1

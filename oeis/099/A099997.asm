@@ -4,8 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mul $0,2
+sub $0,1
 seq $0,340588 ; Squares of perfect powers.
 mov $1,$0
 mov $2,4

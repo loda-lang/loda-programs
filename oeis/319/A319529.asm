@@ -9,6 +9,7 @@ mov $2,$0
 mul $2,6
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,347950 ; Characteristic function of numbers that have middle divisors.
   sub $0,$3
   add $1,2

@@ -8,6 +8,7 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
+  add $3,1
   seq $3,349131 ; a(n) = Sum_{d|n} phi(d) * A003958(n/d), where A003958 is fully multiplicative with a(p) = (p-1), and phi is Euler totient function.
   mov $5,$3
   mul $3,2

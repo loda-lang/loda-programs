@@ -11,4 +11,5 @@ lpb $0
   sub $0,$1
 lpe
 mul $0,2
+add $0,2
 seq $0,341945 ; Number of partitions of n into 2 primes (counting 1 as a prime).

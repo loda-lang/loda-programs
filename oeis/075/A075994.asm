@@ -9,6 +9,7 @@ lpb $0
   sub $0,1
   mov $1,$0
   max $1,0
+  add $1,2
   seq $1,348388 ; Irregular triangle read by rows: T(n, k) = floor((n-k)/k), for k = 1, 2, ..., floor(n/2) and n >= 2.
   mov $0,0
 lpe

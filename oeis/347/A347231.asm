@@ -2,8 +2,10 @@
 ; Submitted by Matthias Lehmkuhl
 ; 0,1,1,3,1,6,1,1,4,8,1,10,1,10,9,3,1,9,1,16,11,14,1,6,6,16,1,22,1,42,1,1,15,20,13,-5,1,22,17,8,1,54,1,34,21,26,1,10,8,13,21,40,1,6,17,10,23,32,1,54,1,34,29,3,19,78,1,52,27,74,1,9,1,40,19,58,19,90,1,16
 
+#offset 1
+
 mov $2,$0
-add $2,1
+sub $0,1
 mov $3,$0
 bin $3,2
 add $3,$0
@@ -23,6 +25,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,344695 ; a(n) = gcd(sigma(n), psi(n)), where sigma is the sum of divisors function, A000203, and psi is the Dedekind psi function, A001615.
   mul $0,$4
   add $1,$0

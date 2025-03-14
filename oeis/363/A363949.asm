@@ -11,6 +11,7 @@ lpb $3
   bin $1,$2
   mov $0,$2
   sub $0,$1
+  add $0,1
   seq $0,344296 ; Numbers with at least as many prime factors (counted with multiplicity) as half their sum of prime indices.
   add $1,1
   mul $1,$0

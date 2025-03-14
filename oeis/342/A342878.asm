@@ -2,6 +2,9 @@
 ; Submitted by [TA]crashtech
 ; 1,2,3,3,7,5,4,13,16,7,5,21,41,32,9,6,31,86
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $2,1
   sub $0,$2

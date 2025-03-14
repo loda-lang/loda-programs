@@ -6,7 +6,7 @@ lpb $0
   lpb $0
     dif $0,2
     add $1,10
-    cmp $1,10
+    equ $1,10
   lpe
   div $0,2
   add $2,$1

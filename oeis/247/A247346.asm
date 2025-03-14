@@ -8,6 +8,7 @@ sub $0,1
 mov $2,1600
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,347409 ; Longest run of halving steps in the trajectory from n to 1 in the Collatz map (or 3x+1 problem), or -1 if no such trajectory exists.
   div $3,2
   equ $3,5

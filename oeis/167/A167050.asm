@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,344478 ; Number of unitary prime divisors p of n such that n/p is squarefree.
   mov $5,$1
   add $5,1

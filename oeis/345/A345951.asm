@@ -2,11 +2,12 @@
 ; Submitted by ChelseaOilman
 ; 0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1
 
-mov $4,$0
-add $4,1
-seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+#offset 1
+
 mov $3,$0
-add $3,1
+mov $4,$0
+seq $4,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+sub $0,1
 seq $3,2034 ; Kempner numbers: smallest positive integer m such that n divides m!.
 sub $3,$4
 mov $2,4

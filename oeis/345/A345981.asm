@@ -2,7 +2,9 @@
 ; Submitted by Christian Krause
 ; 2,4,6,8,10,13,15,17,20,21,25
 
-add $0,1
+#offset 3
+
+sub $0,2
 mov $1,$0
 add $1,$0
 mov $2,1

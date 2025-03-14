@@ -14,6 +14,7 @@ lpb $2
   add $5,1
   seq $5,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mov $3,$1
+  add $3,1
   seq $3,346703 ; Product of primes at odd positions in the weakly increasing list (with multiplicity) of prime factors of n.
   seq $3,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   sub $5,$3

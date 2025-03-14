@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 2,0,4,0,7,0,9,7,7,6,5
 
+#offset 1
+
+sub $0,1
 mov $2,23
 mov $3,$0
 dif $3,2

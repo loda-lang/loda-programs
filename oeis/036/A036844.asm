@@ -8,10 +8,11 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
-  add $1,1
   mov $3,$1
+  add $3,2
   seq $3,342460 ; a(n) = 1 if n > 1 and is divisible by the sum of its prime factors (with repetition), otherwise 0.
   sub $0,$3
+  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0

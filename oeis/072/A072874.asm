@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,343844 ; Optimal lower bounds for the permanent of 312-pattern avoiding 0-1 matrices.
   mod $3,$1
   min $3,1

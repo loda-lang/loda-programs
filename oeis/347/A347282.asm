@@ -2,6 +2,9 @@
 ; Submitted by [AF>Libristes] Dudumomo
 ; 18,19,20,18,26,19,17,19
 
+#offset 1
+
+sub $0,1
 mov $5,14
 mov $3,$0
 mul $3,8

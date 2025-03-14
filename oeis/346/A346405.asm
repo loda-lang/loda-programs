@@ -6,7 +6,7 @@ mov $1,1
 mov $3,$0
 mov $0,1
 lpb $3
-  cmp $4,0
+  equ $4,0
   add $5,$4
   mul $1,$3
   div $1,$5

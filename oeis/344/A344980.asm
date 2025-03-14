@@ -16,7 +16,8 @@ lpb $2
   seq $5,47994 ; Unitary totient (or unitary phi) function uphi(n).
   mov $3,$1
   add $3,1
-  seq $3,11772 ; Smallest number m such that m(m+1)/2 is divisible by n.
+  mul $3,2
+  seq $3,344005 ; a(n) = smallest positive m such that n divides the oblong number m*(m+1).
   gcd $5,$3
   div $3,$5
   div $3,2

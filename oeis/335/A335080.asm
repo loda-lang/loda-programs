@@ -14,6 +14,7 @@ lpb $2
   mov $5,$1
   lpb $5
     mov $6,$5
+    add $6,1
     seq $6,345993 ; Let m = A344005(n) = smallest m such that n divides m*(m+1); a(n) = gcd(n,m+1).
     add $3,$6
     div $5,$6

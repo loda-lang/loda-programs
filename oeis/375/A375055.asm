@@ -11,6 +11,7 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,73184 ; Number of cubefree divisors of n.
+  add $3,1
   seq $3,342122 ; a(n) is the remainder when the binary reverse of n is divided by n.
   div $3,2
   mod $3,2

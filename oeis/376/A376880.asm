@@ -15,6 +15,7 @@ lpb $2
   seq $3,317048 ; Numbers k such that both k and k + 2 are consecutive deficient numbers.
   mov $5,$3
   add $1,1
+  add $3,1
   seq $3,347043 ; Smallest divisor of n with half (rounded up) as many prime factors (counting multiplicity) as n.
   mod $3,2
   equ $3,0

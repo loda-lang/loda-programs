@@ -13,7 +13,6 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   sub $4,1
-  sub $0,1
   seq $0,349136 ; Möbius transform of Kimberling's paraphrases, A003602.
   mul $1,$0
   add $3,$1

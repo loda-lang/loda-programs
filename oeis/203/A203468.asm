@@ -11,6 +11,7 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,343407 ; Number of proper divisors of n that are triangular numbers.
   equ $3,2
   sub $0,$3

@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,349355 ; Dirichlet convolution of A003958 with A063441 (Dirichlet inverse of A003959), where A003958 and A003959 are fully multiplicative with a(p) = p-1 and p+1 respectively.
   equ $3,4
   sub $0,$3
