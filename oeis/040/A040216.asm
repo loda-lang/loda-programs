@@ -1,34 +1,22 @@
 ; A040216: Continued fraction for sqrt(232).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 15,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4,3,7,3,4,30,4
+; Formula: a(n) = 3*floor((4*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10))/3)+gcd(-n+1,2)+2
 
-mov $1,1
-sub $1,$0
-mov $3,2
-trn $3,$0
-add $3,6
-gcd $0,$3
+mov $1,2
+trn $1,$0
+add $1,6
+sub $2,$0
+gcd $0,$1
 sub $0,3
-mov $2,3
-pow $2,$0
-mov $0,$2
+mov $3,3
+pow $3,$0
+add $2,1
+gcd $2,2
+mov $0,$3
 mod $0,10
-gcd $1,2
-add $1,$0
-mov $0,$1
-add $0,1
-mov $5,30
-mov $6,$0
-pow $6,5
-lpb $6
-  mov $4,$5
-  add $4,1
-  seq $4,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$4
-  add $5,46
-  sub $6,$0
-lpe
-add $0,$5
-sub $0,307
-div $0,46
-add $0,3
+mul $0,4
+div $0,3
+mul $0,3
+add $0,$2
+add $0,2

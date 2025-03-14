@@ -1,17 +1,14 @@
 ; A040451: Continued fraction for sqrt(473).
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 21,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1,42,1,2,1
-; Formula: a(n) = 20*truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13)-2)/5)+13*truncate((42*gcd(n,262156))/13)+2*truncate((42*gcd(n,262156)-13*truncate((42*gcd(n,262156))/13))/2)-42*gcd(n,262156)+2
+; Formula: a(n) = floor(((gcd(n,4)-1)^4+1)/(2*0^n+2))+1
 
-gcd $0,262156
-mul $0,42
-mod $0,13
-mov $1,$0
-mod $0,2
-sub $1,2
-div $1,5
+pow $1,$0
+gcd $0,4
+sub $0,1
 add $1,1
-mul $1,20
-sub $1,$0
-mov $0,$1
-sub $0,18
+mul $1,2
+pow $0,4
+add $0,1
+div $0,$1
+add $0,1

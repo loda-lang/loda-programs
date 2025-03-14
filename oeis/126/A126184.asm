@@ -1,16 +1,16 @@
 ; A126184: Number of hex trees with n edges and having no nonroot nodes of outdegree 2.
-; Submitted by Steve Dodd
+; Submitted by BrandyNOW
 ; 1,3,10,33,108,351,1134,3645,11664,37179,118098,373977,1180980,3720087,11691702,36669429,114791256,358722675,1119214746,3486784401,10847773692,33705582543,104603532030,324270949293,1004193907488
-; Formula: a(n) = 2*a(n-1)+b(n-1), a(2) = 10, a(1) = 3, a(0) = 1, b(n) = 4*b(n-1)-c(n-1), b(2) = 13, b(1) = 4, b(0) = 1, c(n) = 2*c(n-1)+b(n-1), c(3) = 33, c(2) = 10, c(1) = 3, c(0) = 0
+; Formula: a(n) = floor(((max(-n+1,0)+n+8)*3^(n+1))/27)
 
-mov $1,1
-mov $2,1
-lpb $0
-  sub $0,1
-  mul $1,2
-  add $1,$2
-  mul $2,4
-  sub $2,$3
-  mov $3,$1
-lpe
-mov $0,$1
+add $0,1
+sub $2,$0
+mov $1,2
+trn $1,$0
+sub $1,$2
+add $1,7
+mov $3,3
+pow $3,$0
+mul $3,$1
+mov $0,$3
+div $0,27

@@ -1,24 +1,14 @@
 ; A040595: Continued fraction for sqrt(620).
-; Submitted by Kotenok2000
+; Submitted by BrandyNOW
 ; 24,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1,48,1,8,1
+; Formula: a(n) = floor(max((2*gcd(n,4)-1)^2-2,0)/(0^n+1))+1
 
+pow $1,$0
+add $1,1
+gcd $0,4
+mul $0,2
+sub $0,1
 pow $0,2
-mov $2,10
-mov $3,$0
-gcd $0,8
-lpb $3
-  mov $3,3
-  add $0,6
-  mov $2,7
-lpe
-mul $0,$2
-trn $0,63
-mov $1,$0
-mul $1,2
-div $0,4
-mul $0,7
-add $0,$1
-div $0,2
-mul $0,3
-div $0,4
+trn $0,2
+div $0,$1
 add $0,1

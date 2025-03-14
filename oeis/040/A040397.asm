@@ -1,19 +1,22 @@
 ; A040397: Continued fraction for sqrt(418).
-; Submitted by crashtech
+; Submitted by BrandyNOW
 ; 20,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2,4,20,4,2,40,2
+; Formula: a(n) = 2*gcd(-n,2)*(truncate(3^(gcd(2*n,max(-n+2,0)+6)-3))%10)+2*gcd(-n,2)+2*truncate((gcd(-n,2)*(truncate(3^(gcd(2*n,max(-n+2,0)+6)-3))%10))/3)
 
-mov $2,6
-lpb $0
-  gcd $2,$0
-  mul $2,4
-  div $2,3
-  add $2,2
-  mov $0,0
-lpe
-mov $0,$2
-sub $0,2
-mov $1,$0
-div $1,3
-mul $1,6
-add $0,$1
+mov $1,2
+trn $1,$0
+add $1,6
+sub $2,$0
+gcd $2,2
+mul $0,2
+gcd $0,$1
+sub $0,3
+mov $3,3
+pow $3,$0
+mov $0,$3
+mod $0,10
+mul $0,$2
+add $2,$0
+div $0,3
+add $0,$2
 mul $0,2

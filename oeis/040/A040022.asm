@@ -1,23 +1,12 @@
 ; A040022: Continued fraction for sqrt(28).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 5,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3,10,3,2,3
+; Formula: a(n) = truncate(bitxor((gcd(n,4)-1)^2,3)/(0^n+1))
 
-mov $3,$0
-gcd $3,4
-mov $2,4
-pow $2,$3
-lpb $0
-  mov $0,1
-  mul $2,2
-lpe
-div $2,24
-mov $0,$2
-add $0,5
-mov $1,1
-add $1,$0
-mul $1,2
-mod $1,6
-sub $0,$1
-sub $0,2
-div $0,3
-add $0,2
+pow $1,$0
+add $1,1
+gcd $0,4
+sub $0,1
+pow $0,2
+bxo $0,3
+div $0,$1

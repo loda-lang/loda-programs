@@ -1,19 +1,14 @@
 ; A010177: Continued fraction for sqrt(112).
-; Submitted by [AF>Libristes] ElGuillermo
+; Submitted by BrandyNOW
 ; 10,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1,1,2,1,1,20,1
-; Formula: a(n) = (truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10+6*floor(((truncate(3^(gcd(n,max(-n+2,0)+6)-3))+1)%10)/3)
+; Formula: a(n) = truncate((2*binomial(gcd(min(n,1)+5,n),3)-3)/2)+2
 
-mov $2,2
-trn $2,$0
-add $2,6
-gcd $0,$2
-sub $0,3
-mov $3,3
-pow $3,$0
-mov $0,$3
-add $0,1
-mod $0,10
 mov $1,$0
-div $0,3
-mul $0,6
-add $0,$1
+min $0,1
+add $0,5
+gcd $0,$1
+bin $0,3
+mul $0,2
+sub $0,3
+div $0,2
+add $0,2

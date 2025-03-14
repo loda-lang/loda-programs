@@ -1,25 +1,23 @@
 ; A280392: Number of nX2 0..2 arrays with no element unequal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
-; Submitted by entity
+; Submitted by BrandyNOW
 ; 0,2,14,74,358,1666,7582,33978,150486,660210,2873870,12427562,53438534,228667234,974321278,4135894426,17498014902,73809808338,310510228206,1303124892170,5456835485990,22804685613122,95128117129054,396149967222394,1647149863714198,6838799434155186,28355997653814222,117427190284030698,485721559811217926,2006937433945252130,8283954514582530110,34160637173536206682,140741825154969171574,579364406463174065554,2383046049225885779118,9794537890396301183946,40227566335556237005542
-; Formula: a(n) = 2*truncate(c(n-1)/7), b(n) = 4*b(n-1)+4*n+4, b(3) = 192, b(2) = 44, b(1) = 8, b(0) = 0, c(n) = 6*n+4*c(n-1)+b(n-1)+1, c(3) = 259, c(2) = 49, c(1) = 7, c(0) = 0
+; Formula: a(n) = 2*truncate(e(n-1)/2), b(n) = 4*b(n-1), b(3) = 64, b(2) = 16, b(1) = 4, b(0) = 1, c(n) = b(n-1)+c(n-1), c(3) = 22, c(2) = 6, c(1) = 2, c(0) = 1, d(n) = b(n-1)+c(n-1)+d(n-1), d(3) = 31, d(2) = 9, d(1) = 3, d(0) = 1, e(n) = 4*e(n-1)+2*d(n-1), e(3) = 74, e(2) = 14, e(1) = 2, e(0) = 0
 
 #offset 1
 
+mov $1,1
+mov $2,1
+mov $3,1
 sub $0,1
 lpb $0
   sub $0,1
-  add $1,1
-  add $2,3
-  add $3,4
-  mov $5,$4
-  mul $5,2
-  add $5,$2
-  mov $4,$1
+  add $2,$1
+  mul $4,2
+  add $4,$3
+  mul $4,2
   mul $1,4
-  add $1,$3
-  add $4,$5
-  add $4,$5
+  add $3,$2
 lpe
 mov $0,$4
-div $0,7
+div $0,2
 mul $0,2

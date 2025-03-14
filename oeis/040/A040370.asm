@@ -1,19 +1,14 @@
 ; A040370: Continued fraction for sqrt(390).
-; Submitted by shiva
+; Submitted by BrandyNOW
 ; 19,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1,38,1,2,1
-; Formula: a(n) = 6*truncate((truncate(max(gcd(n,4)^2-3,0)/gcd(0,0^n+1))+1)/3)+truncate(max(gcd(n,4)^2-3,0)/gcd(0,0^n+1))+1
+; Formula: a(n) = floor(((gcd(n,4)^2-1)^2)/(6*0^n+6))+1
 
-pow $4,$0
-add $4,1
-gcd $3,$4
-mov $1,$0
-gcd $1,4
-pow $1,2
-trn $1,3
-div $1,$3
+pow $1,$0
 add $1,1
-mov $2,$1
-div $1,3
 mul $1,6
-add $1,$2
-mov $0,$1
+gcd $0,4
+pow $0,2
+sub $0,1
+pow $0,2
+div $0,$1
+add $0,1

@@ -1,16 +1,17 @@
 ; A040481: Continued fraction for sqrt(504).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by GPV67
 ; 22,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2,44,2,4,2
+; Formula: a(n) = 2*floor(floor((floor((gcd(n,4)^2)/2)^2)/(0^n+1))/3)+2
 
+pow $1,$0
+add $1,1
 mov $2,$0
 gcd $2,4
-mov $1,4
-pow $1,$2
-lpb $0
-  mov $0,1
-  mul $1,2
-lpe
-div $1,24
-mov $0,$1
-add $0,1
+pow $2,2
+div $2,2
+pow $2,2
+div $2,$1
+div $2,3
+add $2,1
+mov $0,$2
 mul $0,2

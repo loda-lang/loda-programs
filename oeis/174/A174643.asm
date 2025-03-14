@@ -1,17 +1,15 @@
 ; A174643: Partial sums of A050536.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 8,44,710,222821,24666982037,304224505147060828973,46276274758482720007096830321604756046489,1070746802761292462947634762387664148872052610197552503724569802262354342880260375
-; Formula: a(n) = b(n)+3, b(n) = b(n-1)+binomial(-b(n-1)+b(n-2),2), b(1) = 41, b(0) = 5
+; Formula: a(n) = b(n)+7, b(n) = b(n-1)+binomial(c(n-1)+1,2), b(1) = 37, b(0) = 1, c(n) = binomial(c(n-1)+1,2), c(1) = 36, c(0) = 8
 
-mov $1,5
-mov $2,14
+mov $1,1
+mov $2,8
 lpb $0
   sub $0,1
-  sub $2,$1
-  mov $3,$2
-  bin $3,2
-  mov $2,$1
-  add $1,$3
+  add $2,1
+  bin $2,2
+  add $1,$2
 lpe
 mov $0,$1
-add $0,3
+add $0,7

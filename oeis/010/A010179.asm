@@ -1,26 +1,21 @@
 ; A010179: Continued fraction for sqrt(114).
-; Submitted by shiva
+; Submitted by BrandyNOW
 ; 10,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1,2,10,2,1,20,1
-; Formula: a(n) = truncate((3*gcd(-n,2)*gcd(-((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10),2)*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)+1
+; Formula: a(n) = gcd(-n,2)*(truncate(3^(gcd(2*n,max(-n+2,0)+6)-3))%10)+gcd(-n,2)+truncate((gcd(-n,2)*(truncate(3^(gcd(2*n,max(-n+2,0)+6)-3))%10))/3)
 
-sub $1,$0
-gcd $1,2
+mov $1,2
+trn $1,$0
+add $1,6
+sub $2,$0
+gcd $2,2
 mul $0,2
-mov $4,2
-trn $4,$0
-add $4,6
-gcd $0,$4
+gcd $0,$1
 sub $0,3
 mov $3,3
 pow $3,$0
 mov $0,$3
-add $0,1
 mod $0,10
-sub $2,$0
-gcd $2,2
-mul $2,$0
-mov $0,$2
-mul $0,$1
-mul $0,3
-div $0,5
-add $0,1
+mul $0,$2
+add $2,$0
+div $0,3
+add $0,$2

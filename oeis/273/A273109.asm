@@ -8,13 +8,12 @@ mov $5,1
 sub $0,1
 lpb $0
   sub $0,1
+  mul $2,$6
   mov $4,$2
-  add $6,1
   mov $2,$1
-  mul $2,$5
   mov $1,$3
-  mov $3,$6
-  equ $3,$5
+  equ $3,$6
+  mov $6,$5
   mul $5,2
   sub $5,$4
 lpe

@@ -1,18 +1,20 @@
 ; A025802: Expansion of 1/((1-x^2)(1-x^4)(1-x^5)).
-; Submitted by BlisteringSheep
+; Submitted by Science United
 ; 1,0,1,0,2,1,2,1,3,2,4,2,5,3,6,4,7,5,8,6,10,7,11,8,13,10,14,11,16,13,18,14,20,16,22,18,24,20,26,22,29,24,31,26,34,29,36,31,39,34,42,36,45,39,48,42,51,45,54,48,58,51
-; Formula: a(n) = b(n+1), b(n) = -floor((2*n+2)/5)+b(n-4)+floor((n+1)/2), b(3) = 1, b(2) = 0, b(1) = 1, b(0) = 0
+; Formula: a(n) = b(n+3)-1, b(n) = b(n-5)+floor(max(-truncate(binomial(-2,n)/2),0)/2), b(4) = 1, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1
 
-add $0,1
+mov $1,1
+add $0,3
 lpb $0
-  mov $2,$0
-  add $2,1
-  mov $3,$2
-  mul $2,2
-  div $2,5
+  mov $3,-2
+  bin $3,$0
   div $3,2
-  sub $3,$2
-  trn $0,4
-  add $1,$3
+  mov $2,$0
+  sub $2,$3
+  trn $2,$0
+  div $2,2
+  trn $0,5
+  add $1,$2
 lpe
+sub $1,1
 mov $0,$1

@@ -1,18 +1,14 @@
 ; A040350: Continued fraction for sqrt(370).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 19,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4,4,38,4
-; Formula: a(n) = floor((24*((truncate(3^(gcd(2*n,max(-2*n+2,0)+6)-3))+1)%10))/5)
+; Formula: a(n) = binomial(2*binomial(0,n)-2*gcd(n,3)-4,2)-17
 
-mul $0,2
-mov $1,2
-trn $1,$0
-add $1,6
-gcd $0,$1
-sub $0,3
-mov $2,3
-pow $2,$0
-mov $0,$2
-add $0,1
-mod $0,10
-mul $0,24
-div $0,5
+mov $2,$0
+gcd $2,3
+add $2,2
+bin $1,$0
+sub $1,$2
+mul $1,2
+bin $1,2
+mov $0,$1
+sub $0,17

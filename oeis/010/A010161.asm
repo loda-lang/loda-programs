@@ -1,24 +1,13 @@
 ; A010161: Continued fraction for sqrt(89).
-; Submitted by Jamie Morken(s2)
+; Submitted by BrandyNOW
 ; 9,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2,18,2,3,3,2
+; Formula: a(n) = floor((9*((52*n)^2-10*truncate(((52*n)^2-14)/10)-14)^2)/20)+2
 
-mov $2,16
-mul $0,4
+mul $0,52
 pow $0,2
-lpb $0
-  mov $3,$0
-  mov $0,0
-  mul $2,9
-  add $2,6
-  mod $3,10
-  add $3,5
-  div $2,$3
-  sub $2,5
-lpe
-sub $2,7
-mov $1,1
-sub $1,$2
-div $1,2
-pow $1,$1
-mov $0,$2
-add $0,$1
+sub $0,14
+mod $0,10
+pow $0,2
+mul $0,9
+div $0,20
+add $0,2

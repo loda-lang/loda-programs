@@ -1,19 +1,15 @@
 ; A040232: Continued fraction for sqrt(248).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 15,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1,30,1,2,1
+; Formula: a(n) = floor(floor((((gcd(n,4)-1)^2+2)^2)/(2*0^n+2))/2)
 
-mov $1,$0
-dif $1,2
-mov $2,$1
-equ $1,0
-sub $2,$1
-gcd $2,2
-add $2,9
-add $1,$2
-mul $1,$2
-sub $1,99
+pow $1,$0
+gcd $0,4
+sub $0,1
+pow $0,2
+add $0,2
+pow $0,2
+add $1,1
 mul $1,2
-gcd $0,2
-mul $0,$1
-div $0,3
-add $0,1
+div $0,$1
+div $0,2

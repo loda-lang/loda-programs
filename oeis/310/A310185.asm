@@ -15,12 +15,9 @@ mov $3,$0
 mul $3,2
 sub $3,$1
 div $3,2
-mul $3,3
-add $3,$4
-add $3,1
 mul $3,2
-div $3,3
 add $3,1
+add $0,$4
 mov $5,$0
 add $5,7
 div $5,3

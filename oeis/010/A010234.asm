@@ -1,23 +1,14 @@
 ; A010234: Continued fraction for sqrt(192).
-; Submitted by Skillz
+; Submitted by BrandyNOW
 ; 13,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1,26,1,5,1
+; Formula: a(n) = floor((truncate((3*gcd(n,4)-2)/2)^2)/(0^n+1))+1
 
-mul $0,2
-mov $2,10
-mov $3,$0
-gcd $0,8
-lpb $3
-  mov $3,3
-  add $0,6
-  mov $2,7
-lpe
-mul $0,$2
-trn $0,63
-add $0,1
-dif $0,2
-mov $1,$0
-add $0,1
+pow $1,$0
+add $1,1
+gcd $0,4
+mul $0,3
+sub $0,2
 div $0,2
-add $1,$0
-mov $0,$1
-sub $0,1
+pow $0,2
+div $0,$1
+add $0,1

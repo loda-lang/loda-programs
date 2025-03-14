@@ -1,19 +1,10 @@
 ; A182771: Beatty sequence for (6+sqrt(3))/3.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 2,5,7,10,12,15,18,20,23,25,28,30,33,36,38,41,43,46,48,51,54,56,59,61,64,67,69,72,74,77,79,82,85,87,90,92,95,97,100,103,105,108,110,113,115,118,121,123,126,128,131,134,136,139,141,144,146,149
-; Formula: a(n) = 2*n+sqrtint(floor((n^2)/3))
+; Formula: a(n) = truncate((116*n-1)/45)
 
 #offset 1
 
+mul $0,116
 sub $0,1
-mov $2,1
-add $2,$0
-mul $0,2
-mov $1,$2
-pow $1,2
-div $1,3
-mov $3,$1
-nrt $3,2
-add $3,$0
-mov $0,$3
-add $0,2
+div $0,45
