@@ -2,6 +2,9 @@
 ; Submitted by omegaintellisys
 ; 1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2
 
+#offset 1
+
+sub $0,1
 lpb $0
   mul $0,20
   sub $0,79

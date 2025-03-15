@@ -11,6 +11,7 @@ mul $3,6
 lpb $3
   sub $3,3
   mov $2,$1
+  add $2,1
   seq $2,353480 ; a(n) = 1 if n is an odd semiprime, otherwise 0.
   add $4,$2
   add $1,1

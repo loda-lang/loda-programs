@@ -2,8 +2,10 @@
 ; Submitted by Fardringle
 ; 0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
 
+#offset 1
+
 mov $1,$0
-add $1,1
+sub $0,1
 seq $1,257993 ; Least gap in the partition having Heinz number n; index of the least prime not dividing n.
 lpb $1
   mov $0,$1

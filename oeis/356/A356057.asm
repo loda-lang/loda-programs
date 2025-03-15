@@ -1,11 +1,37 @@
 ; A356057: a(n) = A001951(A137804(n)).
 ; Submitted by eclipse99
 ; 2,5,8,11,14,16,19,22,25,28,32,35,38,41,43,46,49,52,55,57,60,65,67,70,73,76,79,82,84,87,90,94,97,100,103,106,108,111,114,117,120,123,127,130,132,135,138,141,144,147,149,152,155,159,162,165,168,171,173
-; Formula: a(n) = A001951(-n+A292641(n+1)-1)
 
-mov $1,$0
-add $0,1
-seq $0,292641 ; Rank of (4+r)*n when all the numbers (4-r)*j and (4+r)*k, where r = sqrt(2), j>=1, k>=1, are jointly ranked.
+#offset 1
+
 sub $0,1
+mov $1,$0
+mov $4,0
+mov $6,0
+mov $7,1
+add $0,1
+mov $3,1
+mov $5,$0
+lpb $5
+  sub $5,1
+  add $6,$7
+  add $3,$6
+  mul $4,3
+  add $4,$3
+  add $0,1
+  mov $3,$7
+  mov $6,$0
+  mul $7,6
+  add $7,$4
+lpe
+div $4,$0
+div $3,$4
+add $6,$3
+mov $0,$6
 sub $0,$1
-seq $0,1951 ; A Beatty sequence: a(n) = floor(n*sqrt(2)).
+sub $0,1
+pow $0,2
+mul $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2

@@ -12,7 +12,6 @@ lpb $2
   sub $2,7
   mov $6,$1
   seq $6,100852 ; Triangle read by rows: T(n,k) = 2^k * 3^n, 0 <= k <= n.
-  sub $6,1
   seq $6,351219 ; Multiplicative with a(p^e) = Fibonacci(e+1).
   mov $3,$1
   seq $3,135278 ; Triangle read by rows, giving the numbers T(n,m) = binomial(n+1, m+1); or, Pascal's triangle A007318 with its left-hand edge removed.

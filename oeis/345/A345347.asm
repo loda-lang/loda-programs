@@ -5,6 +5,7 @@
 lpb $0
   trn $0,1
   mov $2,$0
+  add $0,1
   seq $0,354415 ; First differences of A354414.
   add $2,$0
   mov $0,0

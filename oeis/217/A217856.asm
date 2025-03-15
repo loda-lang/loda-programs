@@ -8,6 +8,7 @@ add $2,11
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,351418 ; Number of divisors of n that are either of the form p^k (p prime, k>1) or are nonprime squarefree numbers.
   mov $5,$1
   add $5,1

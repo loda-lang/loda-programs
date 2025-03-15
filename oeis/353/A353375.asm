@@ -16,6 +16,7 @@ lpb $0
     gcd $4,$0
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,353374 ; a(n) = 1 if the prime factorization of n has an even number of prime factors that sum to an even number, otherwise 0.
     add $7,2
     equ $7,2

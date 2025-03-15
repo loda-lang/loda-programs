@@ -16,6 +16,7 @@ lpb $2
   add $6,1
   add $3,$1
   sub $3,$6
+  add $4,4
   seq $4,354487 ; Triangle read by rows: T(n,k) is the denominator of the n-th term of the Somos-k sequence, 4 <= k <= n.
   mul $4,$3
   add $4,1

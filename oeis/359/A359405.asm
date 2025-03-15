@@ -1,8 +1,11 @@
 ; A359405: Number of unordered pairs of self-avoiding paths with nodes that cover all vertices of a convex n-gon; one-node paths are allowed.
 ; Submitted by davidBAM
 ; 3,15,70,330,1596,7840,38592,188640,911680,4350720,20507136,95560192,440724480,2014003200,9128476672,41074384896,183618256896,816062464000,3607813816320,15874289958912,69544309424128,303465643376640,1319414897049600,5717462509158400,24699433622962176,106397550709309440
-; Formula: a(n) = truncate((binomial(n+3,2)*(binomial(2^n+2,2)-1))/2)
+; Formula: a(n) = truncate((binomial(n,2)*(binomial(2^(n-3)+2,2)-1))/2)
 
+#offset 3
+
+sub $0,3
 mov $1,2
 pow $1,$0
 add $1,2

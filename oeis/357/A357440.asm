@@ -2,8 +2,11 @@
 ; Submitted by amazing
 ; 3,11,15,23,35,36,39,44,51,63,75,83,95,99
 
+#offset 1
+
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1

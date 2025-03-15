@@ -1,9 +1,12 @@
-; A354086: 11-gonal (or hendecagonal) numbers which are products of four distinct primes.
+; A354086: 11-gonal numbers which are products of four distinct primes.
 ; Submitted by gemini8
 ; 4785,8170,11526,14421,27105,30710,38595,59110,60146,77946,94105,107570,118990,120458,121935,132526,140361,141955,156706,158390,161785,181101,199606,203415,213095,215058,217030,221001,243485,249806,267058,287155,298635,303290
 
+#offset 1
+
 mov $2,$0
-add $2,6
+sub $0,1
+add $2,5
 pow $2,3
 lpb $2
   mov $3,$1

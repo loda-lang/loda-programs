@@ -4,7 +4,7 @@
 
 sub $0,1
 mov $1,1
-cmp $1,$0
+equ $1,$0
 mul $0,2
 min $0,$1
 add $0,3

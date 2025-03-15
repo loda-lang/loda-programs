@@ -10,6 +10,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,350387 ; a(n) is the sum of the odd exponents in the prime factorization of n.
   equ $3,1
   sub $0,$3

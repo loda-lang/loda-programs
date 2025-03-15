@@ -1,11 +1,30 @@
 ; A353206: Number of graph minors in the cycle graph C_n.
 ; Submitted by Science United
 ; 7,13,21,33,49,72,103,146,203,281,383,519,696,928,1226,1612,2103,2731,3524,4527,5783,7359,9318,11755,14766,18485,23051,28656,35499,43849,53993,66304,81188,99166,120804,146820,178006,215345,259929,313104,376366,451542,540677,646236,770991,918265,1091791,1296018,1535962,1817552,2147484,2533640,2984917,3511741,4125896,4841117,5672938,6639406,7760912,9061069,10566569,12308200,14320759,16644280,19323970,22411706,25966052,30054021,34751227,40144011,46329701,53419202,61537467,70826559,81446423,93578588
-; Formula: a(n) = A216053(n+4)+n-1
+
+#offset 3
 
 mov $1,$0
-add $1,4
-seq $1,216053 ; a(n) is the position of the last two-tuple within the reverse lexicographic set of partitions of 2n and 2n+1, with a(1)-a(n) representing the positions of every 2-tuple partition of 2n and 2n+1.
+sub $0,3
+mov $3,0
+mov $5,$1
+mov $7,2
+lpb $7
+  sub $7,1
+  add $1,$7
+  sub $1,1
+  mov $6,$1
+  max $6,0
+  seq $6,14153 ; Expansion of 1/((1-x)^2*Product_{k>=1} (1-x^k)).
+  mov $4,$7
+  mul $4,$6
+  add $3,$4
+lpe
+min $5,1
+mul $5,$6
+sub $3,$5
+mov $1,$3
+add $1,1
 mov $2,$0
 add $2,$1
 mov $0,$2

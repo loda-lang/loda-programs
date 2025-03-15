@@ -2,15 +2,21 @@
 ; Submitted by Simon Strandgaard
 ; 1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,4,1,1,1,1,2,1,1,1,4,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,4,1,1,1,1,1,4,1,1,1,2,1,1,1,1,1,1,1,1,2,4
 
+#offset 1
+
 mov $2,$0
-add $2,14
+sub $0,1
+add $2,13
 pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
   add $3,2
   seq $3,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
-  seq $3,48691 ; a(n) = d(n^2), where d(k) = A000005(k) is the number of divisors of k.
+  seq $3,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $3,3
+  mul $3,2
+  add $3,1
   div $3,2
   mov $5,$3
   add $1,1

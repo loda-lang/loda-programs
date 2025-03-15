@@ -16,6 +16,7 @@ lpb $2
   mov $5,$3
   sub $3,1
   mov $6,$3
+  add $3,1
   seq $3,351418 ; Number of divisors of n that are either of the form p^k (p prime, k>1) or are nonprime squarefree numbers.
   add $6,1
   seq $6,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

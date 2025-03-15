@@ -2,10 +2,12 @@
 ; Submitted by scole
 ; 1,2,2,2,2,4,2,2,3,4,2,4,2,4,3,2,2,6,2,4,4,4,2,4,3,3,3,4,2,7,2,2,4,4,3,6,2,4,3,4,2,8,2,4,4,4,2,4,3,5,3,3,2,6,3,4,4,4,2,7,2,4,5,2,4,8,2,4,3,7,2,6,2,3,4,4,4,6,2,4
 
+#offset 1
+
 mov $2,$0
-add $2,1
 mov $4,$0
-add $4,2
+sub $0,1
+add $4,1
 lpb $4
   sub $4,1
   mov $0,$2
@@ -16,7 +18,7 @@ lpb $4
   seq $0,328308 ; a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
   mul $1,$0
   mul $1,2
-  cmp $1,2
+  equ $1,2
   add $3,$1
 lpe
 mul $3,2

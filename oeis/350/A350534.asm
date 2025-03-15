@@ -10,8 +10,7 @@ lpb $0
     dif $3,$0
     add $9,$3
     lpb $3
-      cmp $3,$2
-      cmp $3,0
+      neq $3,$2
       mul $3,$0
       sub $3,1
       add $2,5

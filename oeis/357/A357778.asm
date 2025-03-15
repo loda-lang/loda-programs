@@ -1,8 +1,11 @@
 ; A357778: Maximum number of edges in a 5-degenerate graph with n vertices.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,1,3,6,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180,185,190,195,200,205,210,215,220,225,230,235
-; Formula: a(n) = a(n-1)+min(b(n-1)+1,5), a(1) = 1, a(0) = 0, b(n) = min(b(n-1)+1,5), b(1) = 1, b(0) = 0
+; Formula: a(n) = b(n-1), b(n) = b(n-1)+min(c(n-1)+1,5), b(1) = 1, b(0) = 0, c(n) = min(c(n-1)+1,5), c(1) = 1, c(0) = 0
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $2,1

@@ -17,6 +17,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    sub $7,2
     seq $7,352479 ; Expansion of g.f.: 1/Sum_{p odd prime} x^p (odd powers only).
     mov $9,10
     add $9,$5

@@ -15,6 +15,7 @@ lpb $0
   lpb $4
     mov $7,$4
     div $7,2
+    add $7,1
     seq $7,357689 ; a(n) = n/A204455(n), where A204455(n) is the product of odd noncomposite divisors of n.
     div $7,3
     equ $7,$8

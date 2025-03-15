@@ -18,7 +18,7 @@ lpb $0
     add $7,$0
     add $7,$4
     bin $7,$0
-    cmp $8,2
+    equ $8,2
     mul $8,2
     add $8,1
     mul $7,$$9

@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,353519 ; a(n) = 1 if n has an odd number of square divisors, otherwise 0.
   sub $0,$3
   add $1,1

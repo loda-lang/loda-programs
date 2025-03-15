@@ -11,6 +11,7 @@ pow $3,2
 lpb $3
   sub $3,6
   mov $4,$2
+  add $4,1
   seq $4,351112 ; Number of balanced numbers dividing n.
   bin $4,2
   equ $4,0

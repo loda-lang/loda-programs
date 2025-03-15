@@ -2,8 +2,10 @@
 ; Submitted by Ralfy
 ; 13,23,31,41,53,61,73,97,103
 
+#offset 1
+
 mul $0,7
-add $0,14
+add $0,7
 mov $1,$0
 div $1,4
 sub $0,$1

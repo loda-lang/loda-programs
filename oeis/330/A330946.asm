@@ -10,6 +10,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,355742 ; Number of ways to choose a sequence of prime-power divisors, one of each prime index of n. Product of bigomega over the prime indices of n, with multiplicity.
   pow $3,2
   trn $3,3

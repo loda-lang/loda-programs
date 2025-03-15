@@ -2,7 +2,8 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 
-add $0,1
+#offset 1
+
 seq $0,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
 lpb $0
   add $0,1

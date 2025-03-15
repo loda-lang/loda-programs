@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,359983 ; Numbers with exactly two nonzero decimal digits and not ending with 0.
 lpb $0
   mov $2,$0

@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,352598 ; a(n) is the product of the squares of the nonzero digits of n.
   seq $3,55401 ; Number of positive cubes needed to sum to n using the greedy algorithm.
   equ $3,1

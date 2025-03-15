@@ -8,6 +8,7 @@ sub $0,1
 mov $2,$0
 lpb $0
   mov $3,$0
+  add $3,1
   seq $3,351517 ; a(n) = Product_{p|n, p prime} p^(pi(p) mod 2).
   div $0,$3
 lpe

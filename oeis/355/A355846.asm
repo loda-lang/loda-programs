@@ -2,7 +2,8 @@
 ; Submitted by Stony666
 ; 1,2,5,7,10,17,23,38,47,58,70,77,95,103,107,110,137,143,170,182,205,215,217,238,247,278,283,287,298,313,322,347,355,373,385,397,443,455,467,542,562,565,577,590,593,653,655,667,670,682,703,707,710,737,758,773,787,835,907,913,917,943,1015,1022,1033,1045,1115,1117,1130,1138,1145,1202,1222,1243,1258,1265,1313,1370,1382,1405
 
-add $0,1
+#offset 1
+
 mov $1,$0
 mov $3,$0
 pow $3,2
@@ -26,7 +27,10 @@ lpb $3
   sub $4,1
   mov $6,$4
   add $4,1
-  seq $4,48146 ; Sum of non-unitary divisors of n.
+  mov $8,$4
+  seq $8,34448 ; usigma(n) = sum of unitary divisors of n (divisors d such that gcd(d, n/d)=1); also called UnitarySigma(n).
+  seq $4,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  sub $4,$8
   equ $4,0
   sub $1,$4
   add $2,1

@@ -9,7 +9,7 @@ div $0,2
 lpb $3
   sub $3,1
   add $1,1
-  cmp $1,0
+  equ $1,0
   mul $2,$0
   mul $2,2
   add $2,$1

@@ -2,6 +2,9 @@
 ; Submitted by Athlici
 ; 2,2,9,2,1,7,3,6,9,5,3
 
+#offset 1
+
+sub $0,1
 mov $6,$0
 mul $0,2
 mov $1,1

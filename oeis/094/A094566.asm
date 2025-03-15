@@ -17,6 +17,5 @@ pow $0,$1
 mul $0,$2
 pow $0,2
 mul $0,2
-sub $0,1
 seq $0,351219 ; Multiplicative with a(p^e) = Fibonacci(e+1).
 seq $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).

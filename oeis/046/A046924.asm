@@ -16,7 +16,6 @@ lpb $0
     sub $4,1
     max $4,2
     mov $7,$4
-    sub $7,1
     seq $7,357531 ; Final value obtained by traveling clockwise around a circular array with positions numbered clockwise from 1 to n. Each move consists of traveling clockwise k places, where k is the position at the beginning of the move. The first move begins at position 1. a(n) is the position at the end of the n-th move.
     equ $7,2
     mov $9,10

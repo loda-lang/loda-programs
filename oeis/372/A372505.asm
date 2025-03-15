@@ -4,9 +4,9 @@
 
 add $0,1
 seq $0,138302 ; Exponentially 2^n-numbers: 1 together with positive integers k such that all exponents in prime factorization of k are powers of 2.
-sub $0,1
 mov $1,$0
 seq $1,353897 ; a(n) is the largest divisor of n whose exponents in its prime factorization are all powers of 2 (A138302).
+sub $0,1
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
 mul $1,$0

@@ -10,6 +10,7 @@ add $2,7
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,351347 ; Dirichlet g.f.: Product_{p prime} 1 / (1 - p^(-s) - 2*p^(-2*s)).
   sub $3,2
   equ $3,7

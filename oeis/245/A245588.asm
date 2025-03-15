@@ -2,6 +2,7 @@
 ; Submitted by ChelseaOilman
 ; 0,1,1,2,2,1,2,2,3,3,2,3,3,1,2,2,3,3,2,3,3,4,4,3,4,4,2,3,3,4,4,3,4,4,1,2,2,3,3,2,3,3,4,4,3,4,4,2,3,3,4,4,3,4,4,5,5,4,5,5,3,4,4,5,5,4,5,5,2,3,3,4,4,3,4,4,5,5,4,5
 
+add $0,1
 seq $0,353654 ; Numbers whose binary expansion has the same number of trailing 0 bits as other 0 bits.
 lpb $0
   add $2,$0

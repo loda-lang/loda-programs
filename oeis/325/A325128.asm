@@ -10,6 +10,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,353567 ; Number of divisors d of n such that d is a multiple of its prime shadow A181819(d).
   equ $3,1
   sub $0,$3

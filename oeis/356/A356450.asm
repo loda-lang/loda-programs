@@ -2,6 +2,9 @@
 ; Submitted by amazing
 ; 8,16,17,32,33,34,35,64,65,66,67,68,69,71,128,129,130,131,132,133,134,135,136,137,139,143,256,257,258,259,260,261,262,263,264,265,266,267,269,271,272,273,275,279,287,288,384,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530,531,533,535,539,543,544,545,547,551,559,575,576,577,640
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 add $2,3
@@ -15,7 +18,9 @@ lpb $2
   div $4,$3
   mov $3,$4
   add $3,1
-  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $5,$3
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $3,$1
   max $3,0

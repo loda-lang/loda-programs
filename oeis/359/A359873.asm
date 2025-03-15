@@ -2,6 +2,9 @@
 ; Submitted by p3d-cluster
 ; 6,12,18,24,30,36,38,42,48,52,56,60,66,72,78
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $1,$0
 add $1,1

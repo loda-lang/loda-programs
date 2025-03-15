@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,354202 ; Fully multiplicative with a(p^e) = A354200(A000720(p))^e.
 mul $0,2
 sub $0,1

@@ -2,8 +2,9 @@
 ; Submitted by [AF>Libristes] alain65
 ; 1,2,3,4,5,6,7,8,9,31381059609,1853020188851841
 
+#offset 1
+
 mov $2,1
-add $0,1
 lpb $0
   mov $3,$0
   mod $3,2

@@ -30,6 +30,6 @@ lpb $0
   mov $3,$6
   mov $$9,$3
   add $2,1
-  cmp $6,$4
+  equ $6,$4
 lpe
 mov $0,$3

@@ -11,6 +11,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,356451 ; Numbers k such that 4*k^2 is in A014567.
   sub $3,1
   add $0,1

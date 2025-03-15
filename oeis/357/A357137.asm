@@ -7,7 +7,7 @@ lpb $0
     dif $0,2
     sub $2,3
   lpe
-  cmp $1,$2
+  equ $1,$2
   add $3,$1
   pow $3,$1
   max $4,$3

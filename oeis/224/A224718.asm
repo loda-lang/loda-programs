@@ -11,6 +11,7 @@ lpb $2
   mov $3,$6
   add $3,$1
   mul $3,2
+  add $7,1
   seq $7,353626 ; a(n) = 1 if n is a multiple of the square of an odd prime (equally: if the odd part of n is not squarefree), otherwise 0.
   mul $7,$3
   add $7,1

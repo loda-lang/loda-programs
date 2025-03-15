@@ -2,13 +2,17 @@
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,0,0,1,1,1,0
 
+#offset 1
+
 mov $1,$0
-add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mov $2,$1
-add $0,1
-seq $0,75101 ; Numerator of 2^n/n.
-gcd $1,$0
+mov $3,2
+pow $3,$0
+gcd $0,$3
+div $3,$0
+gcd $1,$3
 div $2,$1
 equ $2,1
+mov $0,$3
 mov $0,$2

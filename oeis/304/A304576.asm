@@ -15,6 +15,7 @@ lpb $4
   gcd $1,$4
   equ $1,1
   sub $0,$1
+  add $0,1
   seq $0,359155 ; Dirichlet inverse of A359154, where A359154 is multiplicative with a(p^e) = (-1)^(p*e).
   mul $1,$0
   add $3,$1

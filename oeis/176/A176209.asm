@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,350698 ; Consider the positive squares summing to n as obtained by the greedy algorithm; a(n) is the least of these squares.
   mod $3,$1
   div $3,2

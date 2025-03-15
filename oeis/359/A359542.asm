@@ -1,9 +1,13 @@
 ; A359542: Inverse Möbius transform of A341999, which is the characteristic function of numbers that will never reach zero when iterated with the arithmetic derivative.
 ; Submitted by Stony666
 ; 0,0,0,1,0,0,0,2,0,0,0,2,0,0,1,3,0,0,0,2,0,0,0,4,0,1,1,2,0,1,0,4,0,0,1,3,0,0,1,4,0,0,0,2,2,0,0,6,0,1,1,3,0,2,1,4,0,0,0,5,0,0,1,5,0,0,0,2,1,1,0,6,0,1,2,2,0,2,0,6
-; Formula: a(n) = -A359541(n)+A000005(n+1)
+; Formula: a(n) = -A359541(n)+A000005(n)
 
+#offset 1
+
+sub $0,1
 mov $1,$0
+add $0,1
 seq $0,359541 ; Inverse Möbius transform of A328308, which is the characteristic function of numbers that eventually reach zero when iterated with the arithmetic derivative.
 add $1,1
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

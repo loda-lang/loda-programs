@@ -21,6 +21,6 @@ lpb $4
   lpe
   mul $1,$6
   add $3,$1
-  cmp $7,2
+  equ $7,2
 lpe
 mov $0,$3

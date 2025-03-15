@@ -11,6 +11,7 @@ pow $2,6
 lpb $2
   mov $5,6
   mov $3,$1
+  add $3,1
   seq $3,351569 ; Sum of divisors of the largest unitary divisor of n that is an exponentially odd number.
   lpb $3
     mov $6,$3

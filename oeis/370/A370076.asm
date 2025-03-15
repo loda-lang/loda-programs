@@ -12,7 +12,6 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  sub $3,1
   seq $3,355731 ; Number of ways to choose a sequence of divisors, one of each element of the multiset of prime indices of n (row n of A112798).
   equ $3,2
   sub $0,$3

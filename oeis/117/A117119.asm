@@ -17,6 +17,7 @@ lpb $0
     trn $4,1
     mov $7,$4
     mul $7,2
+    add $7,1
     seq $7,354924 ; a(n) = 1 if A047994(n) is equal to A344005(n), otherwise 0.
     mov $9,10
     add $9,$5

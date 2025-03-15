@@ -1,9 +1,10 @@
 ; A359129: q^12*(q^8+q^4+1)*(q^6-1)*(q^2-1) as q runs through the prime powers A000961.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 0,211341312,20560831566912,67802350642790400,35817806390625000000,450782974156649555296512,19045158721552047314829312,516964372056378442547769600,143027806714329275383382337600,15411735887347424297802263464512
-; Formula: a(n) = 18*truncate(A037253(A000961(n+1))/18)
+; Formula: a(n) = 18*truncate(A037253(A000961(n))/18)
 
-add $0,1
+#offset 1
+
 seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
 seq $0,37253 ; a(n) = n^12*(n^8+n^4+1)*(n^6-1)*(n^2-1).
 div $0,18

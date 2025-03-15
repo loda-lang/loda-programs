@@ -11,6 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,359938 ; Number of divisors d of n such that d-1 is square.
   gcd $0,262149
   add $2,$0

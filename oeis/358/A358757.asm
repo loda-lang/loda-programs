@@ -12,6 +12,7 @@ lpb $2
   mov $0,$1
   add $0,$2
   trn $0,1
+  add $0,1
   seq $0,358849 ; Numbers k for which A053669(6*k) [the smallest prime not dividing 6k] is of the form 6m-1.
   sub $2,1
 lpe

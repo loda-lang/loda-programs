@@ -15,7 +15,12 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mul $1,$0
-  seq $1,102391 ; Evil numbers in evil places.
+  mov $5,$1
+  dgs $1,2
+  gcd $1,2
+  sub $1,1
+  mul $5,$1
+  mov $1,$5
   bin $1,$0
   add $3,$1
 lpe

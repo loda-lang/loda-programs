@@ -11,6 +11,7 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,353627 ; a(n) = 1 if the odd part of n is squarefree, otherwise 0.
   gcd $3,2
   sub $0,$3

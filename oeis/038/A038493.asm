@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,30
-sub $0,1
 seq $0,352531 ; Numbers with multiplicative persistence value 10.
 lpb $0
   mov $3,$0

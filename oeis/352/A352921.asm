@@ -2,7 +2,9 @@
 ; Submitted by Cruncher Pete
 ; 1,2,3,4,5,7,7,9,9,11,12,13,13,15,15,17,17,19
 
-sub $0,2
+#offset 1
+
+sub $0,3
 mov $1,$0
 lpb $1
   sub $1,1

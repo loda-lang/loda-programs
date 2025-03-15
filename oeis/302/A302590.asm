@@ -13,6 +13,7 @@ lpb $2
   add $3,1
   seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $4,$1
+  add $4,1
   seq $4,353394 ; Product of prime shadows of prime indices of n (with multiplicity).
   equ $3,$4
   sub $0,$3

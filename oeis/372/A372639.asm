@@ -10,7 +10,7 @@ lpb $1
   mov $0,$3
   sub $0,$1
   mul $0,2
-  add $0,1
+  add $0,2
   seq $0,359101 ; a(n) = phi(5 * n)/4.
   add $2,$0
 lpe

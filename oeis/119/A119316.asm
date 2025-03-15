@@ -8,6 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,355453 ; a(n) = 1 if the third smallest divisor of n is not a prime, otherwise 0.
   equ $3,0
   sub $0,$3

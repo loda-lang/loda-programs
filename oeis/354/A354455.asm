@@ -2,6 +2,9 @@
 ; Submitted by Landjunge
 ; 4,8,8,16,16,24,24,32,32,32,45,48,48,54,64,64,64,72,80,81,90,96,105,108,108,108,120,128,128,128,144,144,160,160,162,175,180,180,192,192,192,200,200,216,216,240,240,240,240,243,243,256,256,270,280,288,288,288,288
 
+#offset 1
+
+sub $0,1
 mov $2,$0
 add $0,1
 add $2,11
@@ -14,8 +17,14 @@ lpb $2
   sub $3,1
   sub $3,$1
   mov $4,$1
+  sub $4,7
+  mov $6,8
+  add $6,$4
+  mov $5,$6
+  seq $5,159081 ; Let d be the largest element of A008578 which divides n, then a(n) is the position of d in A008578.
+  sub $6,$5
+  mov $4,$6
   add $4,1
-  seq $4,243291 ; Difference between n and the index of its largest prime factor: a(n) = n - A061395(n).
   mod $4,$3
   add $1,1
   add $2,$4

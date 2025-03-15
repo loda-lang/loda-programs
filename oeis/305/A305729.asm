@@ -14,6 +14,7 @@ lpb $3
   seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
   seq $4,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mov $6,$2
+  add $6,1
   seq $6,351436 ; a(n) = n - A351168(n).
   sub $4,$6
   equ $4,0

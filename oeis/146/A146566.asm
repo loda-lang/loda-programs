@@ -11,6 +11,7 @@ add $2,14
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,352483 ; Numerator of 1/d - 1/n = (n-d)/(n*d) where d is the number of divisors of n (A000005).
   equ $3,1
   sub $0,$3

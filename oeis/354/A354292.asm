@@ -2,13 +2,16 @@
 ; Submitted by Stony666
 ; 5,13,31,37,61,79,97,103
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 lpb $0
   mov $3,$0
   lpb $3
     pow $3,2
     mul $1,3
-    cmp $2,0
+    equ $2,0
     sub $3,$2
   lpe
   div $0,2

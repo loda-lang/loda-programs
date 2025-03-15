@@ -7,6 +7,7 @@
 sub $0,1
 lpb $0
   mov $1,$0
+  add $1,1
   seq $1,351517 ; a(n) = Product_{p|n, p prime} p^(pi(p) mod 2).
   div $0,$1
 lpe

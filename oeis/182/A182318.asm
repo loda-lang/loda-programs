@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,6
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,358347 ; a(n) is the sum of the unitary divisors of n that are squares.
   equ $3,1
   sub $0,$3

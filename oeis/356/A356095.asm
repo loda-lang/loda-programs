@@ -1,7 +1,10 @@
-; A356095: Tetrahedral (or triangular pyramidal) numbers which are products of three distinct primes (or sphenic numbers).
+; A356095: Tetrahedral numbers which are products of three distinct primes.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 165,286,455,969,1771,4495,9139,12341,32509,176851,437989,657359,939929,3737581,9290431,21084251,26536591,39338069,44101441,61690919,92568571,112805879,289442201,381588019,439918931,495593039,711215371,815946449,1008077071,1103914379
 
+#offset 1
+
+sub $0,1
 mov $5,-1
 mov $2,$0
 add $2,6

@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,3
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,354108 ; a(n) = 1 if n is neither an odd prime power nor twice an odd prime power, otherwise 0.
   sub $0,$3
   add $1,1

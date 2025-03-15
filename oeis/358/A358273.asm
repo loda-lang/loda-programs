@@ -4,8 +4,6 @@
 
 #offset 1
 
-sub $0,1
-add $0,1
 seq $0,7442 ; Inverse binomial transform of primes.
 mov $1,$0
 pow $1,2

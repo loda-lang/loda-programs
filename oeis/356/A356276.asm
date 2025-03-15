@@ -2,7 +2,8 @@
 ; Submitted by GolfSierra
 ; 2,2,3,2,4,3,4,5,4,4
 
-add $0,2
+#offset 2
+
 mov $1,$0
 dif $0,3
 div $0,5

@@ -7,6 +7,7 @@ lpb $0
   mov $5,$0
   add $5,1
   mov $2,$0
+  add $2,1
   seq $2,351262 ; a(n) = n^10 * Sum_{p|n, p prime} 1/p^10.
   mov $4,$2
   gcd $4,$5

@@ -6,7 +6,7 @@ mov $2,1
 lpb $0
   sub $0,1
   mov $5,0
-  cmp $5,$0
+  equ $5,$0
   mov $6,0
   mov $4,$2
   lpb $4

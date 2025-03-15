@@ -2,8 +2,9 @@
 ; Submitted by Kotenok2000
 ; 1,1,1,2,1,1,1,2,2,1,1,2,1,1,2,3,1,2,1,2,2,1,1,2,2,1,2,2,1,2,1,3,2,1,2,4,1,1,2,2,1,2,1,2,3,1,1,3,2,2,2,2,1,2,2,2,2,1,1,4,1,1,3,4,2,2,1,2,2,2,1,4,1,1,3,2,2,2,1,3
 
+#offset 1
+
 mov $2,1
-add $0,1
 lpb $0
   sub $0,1
   mov $5,0
@@ -15,10 +16,11 @@ lpb $0
     gcd $4,$0
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,353374 ; a(n) = 1 if the prime factorization of n has an even number of prime factors that sum to an even number, otherwise 0.
     add $7,2
-    cmp $7,2
-    cmp $7,$8
+    equ $7,2
+    equ $7,$8
     mov $9,10
     add $9,$5
     mov $10,$7

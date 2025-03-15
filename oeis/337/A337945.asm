@@ -12,6 +12,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
+  add $0,1
   seq $0,357689 ; a(n) = n/A204455(n), where A204455(n) is the product of odd noncomposite divisors of n.
   mov $2,$0
   mov $4,$0

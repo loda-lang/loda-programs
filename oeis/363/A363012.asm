@@ -9,9 +9,9 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  sub $0,1
   mov $4,$0
   seq $4,359954 ; a(n) = Sum_{d|n} tau(d)*phi(d)*mu(n/d).
+  sub $0,1
   mul $0,$4
   add $0,$4
   add $3,$0

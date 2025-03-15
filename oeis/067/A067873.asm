@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,354713 ; Number of solutions (n, D) for Pell equation n^2 - D*y^2 = 1 with fixed n.
   trn $3,2
   min $3,1

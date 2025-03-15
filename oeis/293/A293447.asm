@@ -16,7 +16,6 @@ lpb $0
   lpe
   mov $3,$2
   gcd $3,$0
-  sub $3,1
   seq $3,357215 ; a(n) = number of nonempty subsets S of {1, 2, ..., n} that contain only primes.
   lpb $0
     dif $0,$2

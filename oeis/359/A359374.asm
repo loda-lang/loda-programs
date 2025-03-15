@@ -1,9 +1,11 @@
 ; A359374: Parity of A252463(n).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0
-; Formula: a(n) = -2*truncate((truncate(gcd(n+31,12)/2)+3)/2)+truncate(gcd(n+31,12)/2)+3
+; Formula: a(n) = -2*truncate((truncate(gcd(n+30,12)/2)+3)/2)+truncate(gcd(n+30,12)/2)+3
 
-add $0,31
+#offset 1
+
+add $0,30
 gcd $0,12
 div $0,2
 add $0,3

@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   seq $3,65363 ; Sum of balanced ternary digits in n. Replace 3^k with 1 in balanced ternary expansion of n.
-  cmp $3,0
+  equ $3,0
   add $4,1
   add $1,$0
   add $2,$3
