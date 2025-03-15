@@ -1,9 +1,9 @@
 ; A014359: Inverse of 350th cyclotomic polynomial.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 1,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mul $0,4
-add $0,1
+add $0,2
 div $0,5
 mov $3,3
 mov $4,-7
@@ -16,8 +16,7 @@ lpb $0
   mov $5,$2
   seq $5,50519 ; Increments of arithmetic progression of at least 6 terms having the same value of phi in A050518.
   mov $2,$5
-  div $2,30
-  sub $2,1
+  div $2,29
   mov $6,-1
   pow $6,$2
   add $6,1

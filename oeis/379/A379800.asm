@@ -1,30 +1,26 @@
 ; A379800: Decimal expansion of (1+sqrt(6))/2.
-; Submitted by Steve Dodd
+; Submitted by Coleslaw
 ; 1,7,2,4,7,4,4,8,7,1,3,9,1,5,8,9,0,4,9,0,9,8,6,4,2,0,3,7,3,5,2,9,4,5,6,9,5,9,8,2,9,7,3,7,4,0,3,2,8,3,3,5,0,6,4,2,1,6,3,4,6,2,8,3,6,2,5,4,8,0,1,8,8,7,2,8,6,5,7,5
 
+#offset 1
+
 mov $3,$0
-add $3,1
-mul $3,3
+mul $3,2
 lpb $3
   sub $3,1
-  add $6,$2
-  add $7,$8
-  add $1,$6
-  add $2,$7
+  pow $5,0
+  add $1,$5
   add $2,$1
-  add $4,$1
-  add $5,$2
-  add $6,$5
-  mov $7,$0
-  sub $7,$2
-  add $7,$1
-  add $7,$4
-  add $8,$1
-  add $8,1
+  add $1,$2
+  mul $2,3
+  add $2,$1
+  mov $5,$1
+  mul $1,4
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-div $6,$2
-mov $0,$6
+mul $2,2
+div $5,$2
+mov $0,$5
 mod $0,10

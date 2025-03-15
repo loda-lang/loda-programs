@@ -1,17 +1,18 @@
 ; A005328: Certain subgraphs of a directed graph.
-; Submitted by Fornax
+; Submitted by BrandyNOW
 ; 1,3,28,510,18631,1351413,194192398,55272612720,31184369778961,34909296450535023,77616063417393956368,343049603717222441078130,3016429354620114423122804491,52801416275268069417410827891833
 
 #offset 2
 
 sub $0,1
+mul $0,2
 lpb $0
-  mul $2,2
-  add $2,1
-  add $1,$0
-  mul $1,$2
-  mul $1,-1
-  sub $0,1
+  sub $2,$0
+  sub $0,2
+  mul $1,2
+  sub $1,1
+  mul $2,$1
 lpe
-gcd $1,0
-mov $0,$1
+gcd $2,0
+mov $0,$2
+div $0,2

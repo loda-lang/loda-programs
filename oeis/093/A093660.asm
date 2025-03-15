@@ -1,17 +1,17 @@
 ; A093660: Row sums of lower triangular matrix A093658.
-; Submitted by Skillz
+; Submitted by BrandyNOW
 ; 1,2,2,5,2,5,5,16,2,5,5,16,5,16,16,65,2,5,5,16,5,16,16,65,5,16,16,65,16,65,65,326,2,5,5,16,5,16,16,65,5,16,16,65,16,65,65,326,5,16,16,65,16,65,65,326,16,65,65,326,65,326,326,1957
 
 #offset 1
 
 sub $0,1
 dgs $0,2
-mov $2,$0
-lpb $2
-  sub $2,1
-  add $3,1
-  add $1,1
-  mul $1,$3
+mov $3,1
+mov $1,$0
+lpb $1
+  mul $3,$1
+  sub $1,1
+  add $2,$3
 lpe
-mov $0,$1
+mov $0,$2
 add $0,1

@@ -10,7 +10,6 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
   seq $3,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
   mov $5,$3
   seq $3,13636 ; a(n) = n*nextprime(n).

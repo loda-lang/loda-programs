@@ -1,5 +1,5 @@
 ; A049434: Stirling numbers of second kind: 8th column of Stirling2 triangle A008277.
-; Submitted by iBezanilla
+; Submitted by BrandyNOW
 ; 1,36,750,11880,159027,1899612,20912320,216627840,2141764053,20415995028,189036065010,1709751003480,15170932662679,132511015347084,1142399079991620,9741955019900400,82318282158320505,690223721118368580,5749622251945664950
 
 #offset 8
@@ -14,14 +14,12 @@ lpb $1
   sub $1,1
   mov $4,$1
   pow $4,$0
-  sub $5,2
+  mov $5,-1
   sub $5,$1
   bin $5,$3
   mul $5,$4
   add $6,$5
   add $3,1
-  mul $5,0
-  add $5,1
 lpe
 mov $0,$6
 div $0,40320

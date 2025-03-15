@@ -1,17 +1,13 @@
 ; A349102: Increase the odd part of n to the next greater odd number.
-; Submitted by Jamie Morken(w3)
+; Submitted by jprange
 ; 3,6,5,12,7,10,9,24,11,14,13,20,15,18,17,48,19,22,21,28,23,26,25,40,27,30,29,36,31,34,33,96,35,38,37,44,39,42,41,56,43,46,45,52,47,50,49,80,51,54,53,60,55,58,57,72,59,62,61,68,63,66,65,192,67,70,69,76,71,74,73,88,75,78,77,84,79,82,81,112
+; Formula: a(n) = bitxor(n-1,n)+n+1
 
 #offset 1
 
 sub $0,1
-mov $1,2
-mov $2,$0
-add $0,1
-lpb $0
-  dif $0,2
-  mul $1,2
-lpe
-mov $0,$1
-add $0,$2
+mov $1,1
+add $1,$0
+bxo $0,$1
+add $0,$1
 add $0,1
