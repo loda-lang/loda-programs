@@ -8,6 +8,7 @@ sub $0,1
 lpb $0
   sub $0,1
   mov $1,$2
+  add $1,1
   seq $1,364377 ; The number of trailing 0's in the representation of n in Jacobsthal greedy base (A265747).
   sub $0,$1
   add $2,1

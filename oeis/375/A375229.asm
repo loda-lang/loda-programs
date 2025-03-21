@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,368781 ; The maximal exponent in the unique factorization of n in terms of distinct "Fermi-Dirac primes".
   dif $3,4
   add $3,1

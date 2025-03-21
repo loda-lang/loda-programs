@@ -7,7 +7,7 @@ add $0,1
 mov $3,$0
 mul $3,$2
 mov $1,$2
-dir $2,3
+dgr $2,3
 mul $1,$2
 add $1,2
 add $2,1

@@ -13,6 +13,7 @@ lpb $2
   add $5,1
   seq $5,33716 ; Number of integer solutions to the equation x^2 + 3y^2 = n.
   mov $3,$1
+  add $3,1
   seq $3,360720 ; a(n) is the sum of unitary divisors of n that are powerful (A001694).
   gcd $5,$3
   mov $6,$3

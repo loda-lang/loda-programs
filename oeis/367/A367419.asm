@@ -2,6 +2,8 @@
 ; Submitted by wareyore
 ; 1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,3,1,1,1,4,1,1,1,1,1,1,2,1,1,1,1,1,1,1,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,4,1,1,1,1,2,1,1,1,1,1,1
 
+#offset 1
+
 seq $0,367418 ; The exponentially odd numbers (A268335) divided by their squarefree kernels (A007947).
 mov $1,$0
 mul $0,4

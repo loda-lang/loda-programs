@@ -2,10 +2,12 @@
 ; Submitted by Science United
 ; 9,17,18,33,34,35,36,65,66,67,68,69,70,72,129,130,131,132,133,134,135,136,137,138,140,144,257,258,259,260,261,262,263,264,265,266,267,268,270,272,273,274,276,280,288,289,385,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530,531
 
+#offset 1
+
 mov $1,$0
-add $1,1
 mov $3,$0
-add $3,3
+sub $0,1
+add $3,2
 pow $3,4
 lpb $3
   mov $4,$2
@@ -16,7 +18,9 @@ lpb $3
   div $5,$4
   mov $4,$5
   add $4,1
-  seq $4,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $6,$4
+  seq $4,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $4,$6
   seq $4,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   sub $4,$2
   max $4,0

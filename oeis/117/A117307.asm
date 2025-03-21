@@ -17,6 +17,7 @@ lpb $2
   mov $6,$5
   mul $6,2
   mov $7,$6
+  add $7,1
   seq $7,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   mov $8,$6
   mul $6,$7

@@ -1,9 +1,11 @@
 ; A362153: Number of skew shapes in a 3 X n rectangle with no empty rows or columns.
 ; Submitted by skildude
 ; 1,8,29,73,151,276,463,729,1093,1576,2201,2993,3979,5188,6651,8401,10473,12904,15733,19001,22751,27028,31879,37353,43501,50376,58033,66529,75923,86276,97651,110113,123729,138568,154701,172201,191143,211604,233663,257401,282901,310248,339529
-; Formula: a(n) = truncate(binomial((n+3)^2-6,2)/6)+1
+; Formula: a(n) = truncate(binomial((n+2)^2-6,2)/6)+1
 
-add $0,3
+#offset 1
+
+add $0,2
 pow $0,2
 sub $0,6
 bin $0,2

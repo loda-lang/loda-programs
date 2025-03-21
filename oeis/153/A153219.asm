@@ -14,6 +14,7 @@ lpb $2
   sub $1,1
   max $3,$1
   mul $3,2
+  add $3,1
   seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   equ $3,0
   sub $0,$3

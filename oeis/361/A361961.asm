@@ -1,10 +1,13 @@
 ; A361961: Total semiperimeter of 3-Fuss-Catalan polyominoes of length 3n.
 ; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
 ; 2,18,150,1275,11033,96768,857440,7658001,68827440,621769016,5640718746,51355222113,468976190634,4293892636600,39403880112240,362321464909965,3337465898598408,30791007409655928,284475382593582680,2631594710532743340,24372218297220901965,225958143637966827240
-; Formula: a(n) = binomial(4*n+4,n)+binomial(4*n+1,n+1)
+; Formula: a(n) = binomial(4*n,n-1)+binomial(4*n-3,n)
+
+#offset 1
 
 mov $1,$0
-add $1,2
+sub $0,1
+add $1,1
 add $1,$0
 mul $1,2
 mov $2,$1

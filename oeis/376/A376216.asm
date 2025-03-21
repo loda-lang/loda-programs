@@ -8,6 +8,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,360160 ; a(n) is the sum of unitary divisors of n that are odd squares.
   sub $3,3
   mod $3,2

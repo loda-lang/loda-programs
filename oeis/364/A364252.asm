@@ -2,8 +2,9 @@
 ; Submitted by Kotenok2000
 ; 1,1,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 
+#offset 1
+
 mov $1,1
-add $0,1
 seq $0,336467 ; Fully multiplicative with a(2) = 1 and a(p) = A000265(p+1) for odd primes p, with A000265(k) giving the odd part of k.
 sub $0,1
 lpb $0

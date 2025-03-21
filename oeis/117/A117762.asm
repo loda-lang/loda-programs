@@ -8,6 +8,7 @@ mov $6,$0
 pow $6,5
 lpb $6
   mov $3,$5
+  add $3,1
   seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   sub $0,$3
   add $5,2

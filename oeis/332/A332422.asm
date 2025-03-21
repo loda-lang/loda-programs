@@ -12,6 +12,7 @@ lpb $0
   div $0,$2
 lpe
 mov $1,$0
+add $1,1
 seq $1,366749 ; Self-signed alternating sum of the prime indices of n.
 sub $3,$1
 mov $0,$3

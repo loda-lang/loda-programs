@@ -10,6 +10,7 @@ add $2,6
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,368647 ; The number of distinct primes of the form 3*k+2 dividing n minus the number of distinct primes of the form 3*k+1 dividing n.
   mul $3,38
   trn $3,2

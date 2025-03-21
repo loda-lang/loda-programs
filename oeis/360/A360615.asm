@@ -2,7 +2,8 @@
 ; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
 ; 0,1,1,2,1,1,1,3,1,2,1,3,1,1,2,4,1,3,1,1,1,2,1,2,2,1,3,3,1,1,1,5,2,2,1,2,1,1,1,4,1,3,1,3,1,2,1,5,1,1,2,1,1,2,2,1,1,1,1,4,1,2,3,6,1,3,1,3,2,3,1,5,1,1,1,3,2,1,1,5
 
-add $0,1
+#offset 1
+
 mov $1,1
 mov $2,$0
 pow $2,4
@@ -20,10 +21,12 @@ lpb $2
   gcd $5,$4
   mov $6,$4
   div $6,$5
+  mov $7,$1
+  seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$1
-  add $3,1
-  seq $3,86436 ; Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+  mov $3,$7
   sub $3,$4
+  add $3,1
   equ $3,0
   sub $0,$3
   add $1,1

@@ -10,6 +10,7 @@ mul $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,361393 ; Positive integers k such that 2*omega(k) > bigomega(k).
   sub $3,1
   add $0,1

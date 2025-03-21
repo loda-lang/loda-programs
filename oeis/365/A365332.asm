@@ -1,7 +1,7 @@
 ; A365332: The sum of divisors of the largest square dividing n.
 ; Submitted by AnandBhat
 ; 1,1,1,7,1,1,1,7,13,1,1,7,1,1,1,31,1,13,1,7,1,1,1,7,31,1,13,7,1,1,1,31,1,1,1,91,1,1,1,7,1,1,1,7,13,1,1,31,57,31,1,7,1,13,1,7,1,1,1,7,1,1,13,127,1,1,1,7,1,1,1,91,1,1,31,7,1,1,1,31
-; Formula: a(n) = A039653((truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)+1
+; Formula: a(n) = truncate((84*A000203((truncate(max(0,n-1)/A019554(max(0,n-1)+1))+1)^2)-79)/84)+1
 
 #offset 1
 
@@ -14,5 +14,12 @@ div $1,$2
 mov $0,$1
 add $0,1
 pow $0,2
-seq $0,39653 ; a(0) = 0; for n > 0, a(n) = sigma(n)-1.
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $0,21
+mov $3,3
+mul $3,$0
+add $3,$0
+mov $0,$3
+sub $0,79
+div $0,84
 add $0,1

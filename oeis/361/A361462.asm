@@ -1,11 +1,12 @@
 ; A361462: a(n) = A135506(n) mod 4.
 ; Submitted by Science United
 ; 2,1,2,1,1,3,1,1,1,3,1,1,1,1,1,1,1,3,1,1,3,3,1,1,1,1,1,1,1,3,1,3,1,1,1,1,1,1,1,1,1,3,1,1,3,3,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,3,1,3,1,3,1,1,1,1,1,1,1,3,1,1
-; Formula: a(n) = -4*truncate(truncate((n+2)/gcd(A135504(n+1),n+2))/4)+truncate((n+2)/gcd(A135504(n+1),n+2))
+; Formula: a(n) = -4*truncate(truncate((n+1)/gcd(A135504(n),n+1))/4)+truncate((n+1)/gcd(A135504(n),n+1))
+
+#offset 1
 
 mov $2,$0
-add $2,2
-add $0,1
+add $2,1
 seq $0,135504 ; a(1)=1; for n>1, a(n) = a(n-1) + lcm(a(n-1),n).
 mov $1,$0
 gcd $1,$2

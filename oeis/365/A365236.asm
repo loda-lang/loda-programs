@@ -2,8 +2,9 @@
 ; Submitted by p3d-cluster
 ; 0,1,1,3,2,4,3,3,4
 
+#offset 1
+
 mov $1,1
-add $0,1
 lpb $0
   dif $0,2
   pow $1,2

@@ -2,10 +2,23 @@
 ; Submitted by Mumps
 ; 0,1,1,2,1,1,1,2,2,1,1,2,1,1,1,4,1,2,1,2,1,1,1,2,2,1,2,2,1,1,1,4,1,1,1,2,1,1,1,2,1,1,1,2,2,1,1,4,2,2,1,2,1,2,1,2,1,1,1,2,1,1,2,4,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,4
 
+#offset 1
+
+sub $0,1
 lpb $0
+  mov $4,0
+  max $4,$0
+  mov $3,$4
+  add $4,1
+  seq $4,19554 ; Smallest number whose square is divisible by n.
+  div $3,$4
+  mov $0,$3
   add $0,1
-  seq $0,8833 ; Largest square dividing n.
-  seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  pow $0,2
+  mul $0,4
+  nrt $0,2
+  add $0,1
+  div $0,2
   sub $0,1
   add $2,1
 lpe

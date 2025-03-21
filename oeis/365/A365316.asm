@@ -11,7 +11,7 @@ lpb $0
   add $4,1
   max $0,$3
   add $2,$5
-  cmp $3,$2
+  equ $3,$2
   mul $3,$0
   sub $2,$4
   mov $5,1

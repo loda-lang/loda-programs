@@ -9,6 +9,7 @@ sub $0,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,369361 ; Numbers that are not products of primorials.
   sub $3,1
   mov $5,$3

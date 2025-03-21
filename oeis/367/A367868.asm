@@ -13,7 +13,10 @@ lpb $4
   bin $1,$0
   mov $5,$0
   seq $5,133686 ; Number of labeled n-node graphs with at most one cycle in each connected component.
-  seq $0,6125 ; a(n) = 2^(n*(n-1)/2).
+  bin $0,2
+  mov $6,2
+  pow $6,$0
+  mov $0,$6
   sub $0,$5
   mul $1,$0
   mul $3,-1

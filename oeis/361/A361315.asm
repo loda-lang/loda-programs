@@ -2,6 +2,9 @@
 ; Submitted by Stephen Uitti
 ; 31,26,19,17,17,19,21,23,25,27,29,31,33,35,37,39,41
 
+#offset 4
+
+sub $0,4
 mul $0,2
 mov $1,2
 pow $1,$0

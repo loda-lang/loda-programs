@@ -1,9 +1,12 @@
-; A364610: Centered pentagonal numbers which are products of three distinct primes (or sphenic numbers).
+; A364610: Centered pentagonal numbers which are products of three distinct primes.
 ; Submitted by Skillz
 ; 1266,1626,2806,3706,4731,6126,7426,7701,9766,10726,13506,15801,18706,19581,25251,26266,26781,31641,35106,36906,40006,50766,52926,56626,57381,62806,69306,71826,74391,76126,85101,90726,93606,95551,96531,99501,106606,108681,109726,117181,121551,123766
 
+#offset 1
+
 mov $2,$0
-add $2,5
+sub $0,1
+add $2,4
 pow $2,2
 lpb $2
   mov $3,$1

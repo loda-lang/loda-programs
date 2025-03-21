@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,360573 ; Odd numbers with exactly three zeros in their binary expansion.
 lpb $0
   add $0,1

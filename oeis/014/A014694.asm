@@ -16,6 +16,7 @@ mov $5,$3
 pow $5,4
 lpb $5
   max $1,$4
+  add $1,1
   seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
   mul $1,2
   sub $3,$1

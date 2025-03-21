@@ -15,7 +15,12 @@ lpb $2
   seq $3,191558 ; a(n) = 0 if n prime, otherwise n.
   add $3,1
   trn $3,2
-  seq $3,120478 ; Binomial(n+6,5)-binomial(n,5).
+  add $3,1
+  pow $3,2
+  add $3,8
+  bin $3,2
+  div $3,2
+  sub $3,12
   mov $5,$1
   add $5,1
   seq $5,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).

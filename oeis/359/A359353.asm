@@ -9,6 +9,7 @@ mov $1,2
 lpb $1
   sub $1,1
   add $0,$1
+  add $0,1
   seq $0,360393 ; Complement of A360392.
   add $0,1
 lpe

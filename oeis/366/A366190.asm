@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 4,24,30,34,36,40,42,44,46,48,50,52,54,56,58,60,62,64
 
+#offset 1
+
+sub $0,1
 sub $1,$0
 add $1,1
 mul $1,2

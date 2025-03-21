@@ -9,7 +9,7 @@ lpb $0
   mov $4,$3
   sub $4,1
   sub $0,1
-  cmp $3,$2
+  equ $3,$2
   mul $3,2
   mul $3,$4
   sub $1,$2

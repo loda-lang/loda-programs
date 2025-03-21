@@ -7,7 +7,7 @@ lpb $0
   sub $0,1
   max $4,$0
   add $4,1
-  cmp $2,0
+  equ $2,0
   sub $2,$1
   bin $2,$0
   mod $3,2

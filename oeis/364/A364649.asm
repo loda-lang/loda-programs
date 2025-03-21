@@ -2,7 +2,10 @@
 ; Submitted by entity
 ; 1,2,5,7,11,18,28,45,82
 
+#offset 1
+
 mov $5,1
+sub $0,1
 lpb $0
   sub $0,1
   mov $7,$6

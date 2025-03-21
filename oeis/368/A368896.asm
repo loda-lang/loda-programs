@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 0,0,3,4,7,10,16,20,25,31
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   div $2,2

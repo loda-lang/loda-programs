@@ -11,7 +11,7 @@ lpb $4
   sub $0,$4
   mov $1,$0
   add $1,$0
-  seq $0,4987 ; a(n) = (3^n/n!)*Product_{k=0..n-1} (3*k + 1).
+  seq $0,4987 ; a(n) = (3^n/n!)*Product_{k=0..n-1} (3*k + 1). 3-central binomial coefficients.
   bin $1,$4
   mul $1,$0
   add $3,$1

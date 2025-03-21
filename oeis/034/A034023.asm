@@ -11,6 +11,7 @@ lpb $2
   mul $5,4
   seq $5,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
   mov $3,$1
+  add $3,1
   seq $3,360720 ; a(n) is the sum of unitary divisors of n that are powerful (A001694).
   gcd $5,$3
   mov $6,$3

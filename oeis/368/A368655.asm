@@ -11,7 +11,11 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,117973 ; a(n) = 2^(wt(n)+1), where wt() = A000120().
+  dgs $0,2
+  mov $5,2
+  pow $5,$0
+  mov $0,$5
+  mul $0,2
   mul $1,$0
   add $3,$1
 lpe

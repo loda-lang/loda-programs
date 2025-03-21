@@ -2,6 +2,9 @@
 ; Submitted by Skyman
 ; 0,0,1,1,3,5,8,10,12,16,21,25,31,37,44,48,56,62,71,79,89,99,110,120,128,140,151,163,177,191,206,218,234,250,267,279,297,315,334,352,372,392,413,433,453,475,498,518,536,556,581,605,631,655,682,708,736,764,793,821,851,881,910,934,966,998,1031,1063,1097,1131,1166,1196,1232,1268,1301,1337,1375,1413,1452,1488
 
+#offset 1
+
+sub $0,1
 mov $4,$0
 mov $1,$0
 lpb $1
@@ -9,9 +12,19 @@ lpb $1
   mov $0,$4
   sub $0,$1
   mov $3,$0
+  mov $6,0
+  max $6,$0
+  mov $5,$6
+  add $6,1
+  seq $6,19554 ; Smallest number whose square is divisible by n.
+  div $5,$6
+  mov $0,$5
   add $0,1
-  seq $0,8833 ; Largest square dividing n.
-  seq $0,194 ; n appears 2n times, for n >= 1; also nearest integer to square root of n.
+  pow $0,2
+  mul $0,4
+  nrt $0,2
+  add $0,1
+  div $0,2
   sub $0,1
   div $3,2
   sub $3,$0

@@ -9,6 +9,7 @@ bin $1,2
 mov $2,$1
 mul $2,2
 mov $3,$2
+add $3,1
 seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
 mov $4,$2
 mul $2,$3

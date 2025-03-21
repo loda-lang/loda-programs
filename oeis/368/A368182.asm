@@ -2,6 +2,9 @@
 ; Submitted by Mads Nissen
 ; 1,1,1,2,2,9,23,61
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   div $4,25

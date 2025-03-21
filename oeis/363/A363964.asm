@@ -5,8 +5,7 @@
 
 #offset 3
 
-sub $0,3
-add $0,1
+sub $0,2
 mov $1,$0
 mov $2,2
 add $2,$0

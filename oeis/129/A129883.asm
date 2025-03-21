@@ -16,7 +16,6 @@ lpb $0
   mul $1,8
   add $1,10
   div $1,7
-  sub $1,1
   seq $1,360496 ; a(n) is the remainder after dividing n by its largest prime factor plus 1, a(1) = 1.
   mov $5,$1
   mul $5,4

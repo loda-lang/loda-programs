@@ -2,9 +2,12 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 6,16,47,96,224,512,1152,2560
 
+#offset 3
+
+sub $0,3
 mov $2,1
 mov $3,$0
-cmp $3,2
+equ $3,2
 add $0,5
 lpb $0
   sub $0,1

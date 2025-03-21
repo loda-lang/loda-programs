@@ -5,6 +5,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,361102 ; 1 together with numbers having at least two distinct prime factors.
   add $3,2
   lpb $3
