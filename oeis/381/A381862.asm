@@ -1,0 +1,12 @@
+; A381862: Number of pairs of triangles that are pairwise edge-disjoint in the complete graph K_n.
+; Submitted by Goldislops
+; 15,100,385,1120,2730,5880,11550,21120,36465,60060,95095,145600,216580,314160,445740,620160,847875,1141140,1514205,1983520,2567950,3289000,4171050,5241600,6531525,8075340,9911475,12082560,14635720,17622880,21101080,25132800,29786295
+; Formula: a(n) = floor((5*binomial(n+5,n)*(n+9))/3)
+
+mov $1,$0
+add $0,5
+bin $0,$1
+add $1,9
+mul $0,$1
+mul $0,5
+div $0,3
