@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   sub $2,1
@@ -16,17 +15,7 @@ lpb $2
   mov $5,$3
   seq $3,31176 ; Periods of sum of squares of digits iterated until the sequence becomes periodic.
   mul $3,2
-  sub $3,1
   mov $6,2
-  pow $6,$3
-  mov $7,$3
-  mov $8,1
-  add $8,$3
-  div $3,2
-  bin $7,$3
-  bin $3,$8
-  add $3,$8
-  mul $3,$7
   add $6,$3
   mov $3,$6
   div $3,2

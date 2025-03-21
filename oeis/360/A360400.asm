@@ -1,9 +1,22 @@
 ; A360400: a(n) = A356133(A360392(n)).
-; Submitted by Leviathan
+; Submitted by iBezanilla
 ; 7,13,20,22,29,32,34,40,47,49,53,58,62,67,74,76,83,85,89,94,97,104,110,112,115,122,127,131,137,140,142,148,155,157,161,166,169,176,182,184,187,193,200,202,208,211,215,220,223,229,236,238,244,247,251,257
-; Formula: a(n) = A356133(A026430(n+1)+2)
 
+#offset 1
+
+mov $3,$0
+div $3,2
+lpb $3
+  add $2,$3
+  div $3,2
+lpe
+mod $2,2
+mul $0,3
+add $0,$2
+div $0,2
 add $0,1
-seq $0,26430 ; a(n) is the sum of first n terms of A001285 (Thue-Morse sequence).
-add $0,2
-seq $0,356133 ; Complement of A026430.
+mov $1,$0
+mul $1,3
+dgs $0,2
+gcd $0,2
+add $0,$1

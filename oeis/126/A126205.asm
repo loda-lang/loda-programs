@@ -1,5 +1,5 @@
 ; A126205: Number of 3's in decimal expansion of 3^n, with n>=0.
-; Submitted by zombie67 [MM]
+; Submitted by Science United
 ; 0,1,0,0,0,1,0,0,0,1,0,0,1,2,0,1,1,1,1,0,1,3,2,1,1,1,1,0,0,4,1,3,1,1,0,1,1,3,1,1,0,3,2,3,2,4,1,2,3,4,0,4,2,3,3,0,7,2,2,4,4,3,2,3,4,5,6,2,4,8,3,1,2,6,3,4,5,4,3,2
 
 mov $1,$0
@@ -10,9 +10,7 @@ lpb $0
   mod $2,10
   mul $2,2
   equ $2,6
-  mul $2,2
   div $0,10
   add $3,$2
 lpe
 mov $0,$3
-div $0,2

@@ -1,15 +1,25 @@
 ; A360136: a(n) = 1 + A026430(A026430(n)).
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 2,6,9,10,13,15,16,19,22,24,25,28,29,32,36,37,40,42,43,46,47,51,53,55,56,60,62,64,67,69,70,73,76,78,79,82,83,87,89,91,92,96,99,100,103,104,106,109,110,114,117,118,121,122,124,127,130,131,133,136,137
-; Formula: a(n) = truncate((A356133(A026430(n)+1)-1)/2)+1
 
 #offset 1
 
-seq $0,26430 ; a(n) is the sum of first n terms of A001285 (Thue-Morse sequence).
+mov $4,$0
+div $4,2
+lpb $4
+  add $3,$4
+  div $4,2
+lpe
+mod $3,2
+mul $0,3
+add $0,$3
+div $0,2
+mov $2,$0
+mul $2,3
+dgs $0,2
+gcd $0,2
+add $0,$2
 add $0,1
-seq $0,356133 ; Complement of A026430.
-sub $0,1
 mov $1,$0
 div $1,2
 mov $0,$1
-add $0,1

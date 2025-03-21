@@ -1,28 +1,33 @@
 ; A092515: Decimal expansion of e^(1/6).
-; Submitted by shiva
+; Submitted by BrandyNOW
 ; 1,1,8,1,3,6,0,4,1,2,8,6,5,6,4,5,9,8,0,3,0,5,1,1,2,1,5,2,5,0,7,1,8,4,3,2,7,8,3,0,1,8,9,3,1,0,8,3,8,9,6,3,7,9,7,8,5,6,1,9,4,2,8,0,2,2,6,4,5,5,2,8,5,5,9,2,2,9,7,4
 
 #offset 1
 
-sub $0,1
-mov $2,1
+add $0,1
+mov $2,2
 mov $3,$0
-mul $3,5
+mul $3,3
 lpb $3
-  mul $2,$3
-  mov $5,$0
-  div $5,3
-  add $5,1
+  mov $5,$3
+  mul $5,2
+  mul $2,$5
   div $1,6
   add $1,$2
-  div $1,$5
-  div $2,$5
+  div $1,$0
+  div $1,2
+  div $2,$0
   sub $3,1
 lpe
+pow $1,2
+div $1,$2
 mov $4,10
 pow $4,$0
+mul $2,5
+pow $2,$5
 div $2,$4
+div $2,4
+pow $1,$5
 div $1,$2
-add $1,$4
-mod $1,10
 mov $0,$1
+mod $0,10

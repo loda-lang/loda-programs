@@ -284,6 +284,7 @@ A079578: Least coprime to n, greater than n+1.
 A079777: a(0) = 0, a(1) = 1; for n > 1, a(n) = (a(n-1) + a(n-2)) (mod n).
 A079947: Partial sums of A030300.
 A080081: Beatty sequence for (3+sqrt(13))/2.
+A080339: Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 A080463: Sum of the two numbers formed by alternate digits of n.
 A080754: a(n) = ceiling(n*(1+sqrt(2))).
 A080755: a(n) = ceiling(n*(1+1/sqrt(2))).
@@ -405,6 +406,7 @@ A137803: a(n) = floor(n*(sqrt(2) + 1/2)).
 A137979: Highest coefficient occurring in the factorization of x^n - 1 over the reals.
 A138026: Where A121561(n) = 3.
 A140099: A Beatty sequence: a(n) = [n*(1+t)], where t = tribonacci constant (A058265); complement of A140098.
+A140341: The number of bits needed to write the universal code for an Elias delta coding, the simplest asymptotically optimal code.
 A140868: a(n) = floor(floor(n*alpha)*alpha) where alpha = 1+sqrt(2) = A014176.
 A141105: Upper Even Swappage of Upper Wythoff Sequence.
 A141123: Primes of the form -x^2+2*x*y+2*y^2 (as well as of the form 3*x^2+6*x*y+2*y^2).

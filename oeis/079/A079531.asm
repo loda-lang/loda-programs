@@ -10,6 +10,5 @@ mul $1,$0
 sub $1,1
 nrt $1,3
 add $1,1
-mov $2,$0
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
 sub $0,$1

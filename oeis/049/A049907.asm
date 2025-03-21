@@ -11,9 +11,7 @@ lpb $0
   mov $5,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,593 ; Sum of odd divisors of n.
     equ $7,1
     add $7,1
@@ -22,6 +20,7 @@ lpb $0
     add $9,$5
     mov $12,1
     mov $3,$6
+    sub $4,1
     add $5,1
     mul $7,$$9
     add $5,1

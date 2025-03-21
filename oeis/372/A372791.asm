@@ -1,21 +1,9 @@
 ; A372791: a(n) = tau(11*n) = A000005(11*n).
-; Submitted by gemini8
+; Submitted by sbo92
 ; 2,4,4,6,4,8,4,8,6,8,3,12,4,8,8,10,4,12,4,12,8,6,4,16,6,8,8,12,4,16,4,12,6,8,8,18,4,8,8,16,4,16,4,9,12,8,4,20,6,12,8,12,4,16,6,16,8,8,4,24,4,8,12,14,8,12,4,12,8,16,4,24,4,8,12,12,6,16
+; Formula: a(n) = A000005(11*n)
 
-add $0,1
+#offset 1
+
 mul $0,11
-mov $1,1
-mov $2,$0
-lpb $0
-  mov $4,$0
-  equ $0,1
-  add $0,$4
-  mov $3,$2
-  dif $3,$0
-  neq $3,$2
-  mul $3,$0
-  div $3,$4
-  sub $0,1
-  add $1,$3
-lpe
-mov $0,$1
+seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

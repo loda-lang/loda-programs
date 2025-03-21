@@ -1,20 +1,25 @@
 ; A241526: Number of different positions in which a square with side length k, 1 <= k <= n - floor(n/3), can be placed within a bi-symmetric triangle of 1 X 1 squares of height n.
-; Submitted by Skillz
+; Submitted by BrandyNOW
 ; 2,7,16,31,53,83,123,174,237,314,406,514,640,785,950,1137,1347,1581,1841,2128,2443,2788,3164,3572,4014,4491,5004,5555,6145,6775,7447,8162,8921,9726,10578,11478,12428,13429,14482,15589,16751,17969,19245,20580,21975,23432,24952,26536,28186,29903,31688,33543,35469,37467,39539,41686,43909,46210,48590,51050,53592,56217,58926,61721,64603,67573,70633,73784,77027,80364,83796,87324,90950,94675,98500,102427,106457,110591,114831,119178
-; Formula: a(n) = b(max(truncate((4*n-1)/2)+4,0)), b(n) = b(n-3)+floor(((n-2)^2)/4), b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = truncate((-6*truncate((2*n-1)/6)+truncate((280*n+42*(2*n-1)^2+4*(2*n-1)^3-38)/8))/18)
 
 #offset 1
 
-mul $0,4
+mul $0,2
 sub $0,1
-div $0,2
-add $0,4
-lpb $0
-  mov $2,$0
-  sub $2,2
-  pow $2,2
-  div $2,4
-  sub $0,3
-  add $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+mov $2,$0
+mul $2,140
+mov $3,$0
+pow $0,3
+mul $0,4
+pow $1,2
+mul $1,42
+add $0,$1
+add $0,$2
+add $0,102
+div $0,8
+div $3,6
+mul $3,6
+sub $0,$3
+div $0,18

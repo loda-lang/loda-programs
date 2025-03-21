@@ -1,18 +1,15 @@
 ; A185869: (Odd,even)-polka dot array in the natural number array A000027; read by antidiagonals.
-; Submitted by [AF>Le_Pommier] Jerome_C2005
+; Submitted by BrandyNOW
 ; 2,7,9,16,18,20,29,31,33,35,46,48,50,52,54,67,69,71,73,75,77,92,94,96,98,100,102,104,121,123,125,127,129,131,133,135,154,156,158,160,162,164,166,168,170,191,193,195,197,199,201,203,205,207,209,232,234,236,238,240,242,244,246,248,250,252,277,279,281,283,285,287,289,291,293,295,297,299,326,328
-; Formula: a(n) = truncate((sqrtint(8*n-7)+1)/2)^2+max(0,n-1)+n
+; Formula: a(n) = sqrtint(2*n+sqrtint(2*n))^2+2*n-1
 
 #offset 1
 
-sub $0,1
-max $1,$0
+mul $0,2
+mov $1,$0
+nrt $1,2
 add $1,$0
-mul $0,8
-add $0,1
-nrt $0,2
-add $0,1
-div $0,2
-pow $0,2
+nrt $1,2
+pow $1,2
 add $0,$1
-add $0,1
+sub $0,1

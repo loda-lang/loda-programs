@@ -1,21 +1,20 @@
 ; A297474: Number of maximal matchings in the n-cocktail party graph.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,2,14,92,844,9304,121288,1822736,31030928,590248736,12406395616,285558273472,7143371664064,192972180052352,5598713198048384,173627942889668864,5731684010612723968,200669613102747214336,7426773564495661485568,289713958515451427511296
 
 #offset 1
 
-mov $1,1
-mov $2,1
-mov $3,1
 sub $0,1
+mov $2,2
+mov $3,1
+add $3,$0
 lpb $0
-  mul $2,2
   mul $2,$0
-  mul $3,$0
-  add $3,$1
+  add $3,$2
   sub $0,1
-  mov $1,$2
-  add $2,$3
-  mov $3,0
+  mov $1,$3
+  add $1,$3
+  mov $3,$2
+  mov $2,$1
 lpe
-mov $0,$1
+mov $0,$3

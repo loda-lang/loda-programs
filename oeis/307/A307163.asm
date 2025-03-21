@@ -1,16 +1,16 @@
 ; A307163: Minimum number of intercalates in a diagonal Latin square of order n.
+; Submitted by BrandyNOW
 ; 0,0,0,12,0,9,0,0,0,0,0,0,0,0,0
 
 #offset 1
 
+sub $0,2
 mov $2,2
-sub $0,1
-lpb $0
-  add $2,$0
-  mov $1,22
-  div $1,$2
-  add $0,$2
-  dif $0,$1
-lpe
-mul $1,3
+equ $2,$0
+mul $2,36
+mov $1,4
+equ $1,$0
+mul $1,27
+add $1,$2
 mov $0,$1
+div $0,3

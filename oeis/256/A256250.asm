@@ -1,20 +1,25 @@
 ; A256250: Total number of ON states after n generations of a cellular automaton on the square grid.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Aurum
 ; 1,5,9,21,25,37,57,85,89,101,121,149,185,229,281,341,345,357,377,405,441,485,537,597,665,741,825,917,1017,1125,1241,1365,1369,1381,1401,1429,1465,1509,1561,1621,1689,1765,1849,1941,2041,2149,2265,2389,2521,2661,2809,2965,3129,3301,3481,3669,3865,4069,4281,4501,4729,4965,5209,5461,5465,5477,5497,5525,5561,5605,5657,5717,5785,5861,5945,6037,6137,6245,6361,6485
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-lpb $1
-  mov $3,$1
-  trn $3,1
-  add $3,1
-  seq $3,62050 ; n-th chunk consists of the numbers 1, ..., 2^n.
-  sub $1,$3
-  pow $3,2
-  add $2,$3
+lpb $0
+  mov $4,1
+  mov $2,$0
+  sub $2,1
+  lpb $2
+    mov $3,$2
+    mul $4,2
+    trn $2,$4
+  lpe
+  mov $2,$3
+  pow $2,2
+  sub $0,$3
+  add $1,$2
 lpe
-mov $0,$2
+add $1,$0
+mov $0,$1
 mul $0,4
 add $0,1

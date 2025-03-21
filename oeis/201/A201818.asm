@@ -1,5 +1,5 @@
 ; A201818: Numbers k such that 90*k + 49 is prime.
-; Submitted by Kotenok2000
+; Submitted by iBezanilla
 ; 1,2,4,5,8,9,11,12,15,16,17,18,19,22,26,29,30,33,34,38,39,41,43,45,50,51,52,54,55,57,60,67,72,73,74,78,79,85,86,87,89,92,93,95,96,97,100,103,107,108,109,110,111,115,121,123,125,131,134,136,137,141,142,143,144,145,152,155,160,162,169,170,171,173,176,178,180,181,183,185
 
 #offset 1
@@ -8,12 +8,28 @@ mov $2,48
 mov $3,$0
 pow $3,5
 lpb $3
+  mov $5,0
   mov $1,$2
   add $1,1
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  sub $0,$1
+  lpb $1
+    gcd $5,3
+    mov $6,$1
+    div $6,5
+    lpb $6
+      mov $4,$1
+      mod $4,$5
+      add $5,2
+      sub $6,$4
+    lpe
+    div $1,$5
+    pow $1,2
+    mov $5,1
+  lpe
+  sub $0,$5
   add $2,90
   sub $3,$0
 lpe
 mov $0,$2
+sub $0,138
 div $0,90
+add $0,1

@@ -2,6 +2,9 @@
 ; Submitted by Science United
 ; 6,16,30,36,70,96,144,220,308,456,650
 
+#offset 3
+
+sub $0,3
 mov $2,3
 add $2,$0
 add $0,3

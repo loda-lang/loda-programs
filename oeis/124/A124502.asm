@@ -1,23 +1,19 @@
 ; A124502: a(1)=a(2)=1; thereafter, a(n+1) = a(n) + a(n-1) + 1 if n is a multiple of 5, otherwise a(n+1) = a(n) + a(n-1).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,2,3,5,9,14,23,37,60,98,158,256,414,670,1085,1755,2840,4595,7435,12031,19466,31497,50963,82460,133424,215884,349308,565192,914500,1479693,2394193,3873886,6268079,10141965,16410045,26552010,42962055,69514065,112476120
-; Formula: a(n) = truncate((b(max(n-2,0))+c(max(n-2,0))+min(n-2,0))/11)+1, b(n) = b(n-1)+b(n-2)+3, b(2) = 20, b(1) = 11, b(0) = 4, c(n) = c(n-1)+c(n-2)+5, c(3) = 18, c(2) = 9, c(1) = 4, c(0) = 2
+; Formula: a(n) = truncate(b(n-1)/11)+1, b(n) = b(n-1)+b(n-2)+9, b(1) = 5, b(0) = 0
 
 #offset 1
 
-mov $1,4
-mov $2,2
-sub $0,2
+sub $0,1
 lpb $0
   sub $0,1
-  add $3,$1
-  sub $3,$2
+  mul $2,-1
+  add $1,4
   add $1,$2
-  add $1,5
-  add $2,$3
-  mov $3,-2
+  sub $2,$1
+  add $1,1
 lpe
-add $0,$1
-add $0,$2
+mov $0,$1
 div $0,11
 add $0,1

@@ -1,21 +1,19 @@
 ; A027172: a(n) = (1/2) * A027170(2n, n).
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 5,21,78,285,1048,3892,14584,55053,209064,797808,3056870,11752676,45316898,175175818,678639148,2634146413,10241938408,39882831448,155519160718,607181138848,2373227900938,9285480209458,36364319046898
-; Formula: a(n) = 2*binomial(2*n+1,truncate((2*n-2)/2)+1)+binomial(2*n-1,truncate((2*n-2)/2))-2
+; Formula: a(n) = floor((4*binomial(2*n+1,floor((2*n)/2))+binomial(2*n,floor((2*n)/2)))/2)-2
 
 #offset 1
 
-sub $0,1
 mul $0,2
 mov $1,$0
-add $1,1
-mov $2,$1
+mov $2,$0
 div $0,2
+add $1,1
 bin $1,$0
-add $0,1
-add $2,2
+mul $1,4
 bin $2,$0
-mul $2,2
 add $2,$1
 mov $0,$2
+div $0,2
 sub $0,2

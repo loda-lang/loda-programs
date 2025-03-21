@@ -1,20 +1,19 @@
 ; A344397: a(n) = Stirling2(n, floor(n/2)) * floor(n/2)!.
-; Submitted by Fardringle
+; Submitted by BrandyNOW
 ; 1,0,1,1,14,30,540,1806,40824,186480,5103000,29607600,953029440,6711344640,248619571200,2060056318320,86355926616960,823172919528960,38528927611574400,415357755774998400,21473732319740064000,258323865658578720000,14620825330739032204800
 
-mov $2,$0
-div $2,2
-add $2,1
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  sub $0,1
-  mov $1,$0
-  seq $1,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
+mov $1,$0
+div $1,2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $4,$1
+  pow $4,$0
+  mov $5,-1
+  sub $5,$1
+  bin $5,$3
+  mul $5,$4
+  add $2,$5
+  add $3,1
 lpe
-mov $0,$1
+mov $0,$2

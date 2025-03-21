@@ -1,12 +1,14 @@
 ; A157968: 2^n - 1 (A000225) where n is nonprime number (A141468).
-; Submitted by Dongha Hwang
+; Submitted by Science United
 ; 0,1,15,63,127,255,511,1023,4095,16383,32767,65535,262143,1048575,2097151,4194303,16777215,33554431,67108863,134217727,268435455,1073741823,4294967295
 
 add $0,1
+mov $1,1
 mov $2,$0
-sub $0,1
 add $2,5
 pow $2,3
+mov $3,3
+sub $0,1
 lpb $2
   add $3,$1
   add $3,1
@@ -29,4 +31,4 @@ lpb $2
   sub $6,$4
 lpe
 mov $0,$1
-div $0,2
+div $0,3

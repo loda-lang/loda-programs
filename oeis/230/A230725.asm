@@ -1,7 +1,15 @@
 ; A230725: Digital sum of tribonacci numbers with a(0)=a(1)=a(2)=1.
-; Submitted by Christian Krause
+; Submitted by Tom Poleski
 ; 1,1,1,3,5,9,8,4,12,6,13,13,14,4,13,13,21,20,18,32,25,21,33,25,43,20,16,25,16,21,53,36,38,46,48,51,46,64,44,55,46,46,48,41,45,53,58,57,60,49,58,59,67,58,76,57,65,72,77,61,84,78,52,61,74,97,61,88,84,80,72,74,82,93,96,100,100,80,82,118
-; Formula: a(n) = A007953(A000213(n))
 
-seq $0,213 ; Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=a(1)=a(2)=1.
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+mov $1,1
+lpb $0
+  sub $0,1
+  add $1,$4
+  mov $3,$4
+  mov $4,$2
+  mov $2,$1
+  add $1,$3
+lpe
+mov $0,$1
+dgs $0,10

@@ -1,15 +1,16 @@
 ; A274052: Number of factor-free Dyck words with slope 5/2 and length 7n.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,3,13,94,810,7667,76998,805560,8684533,95800850,1076159466,12268026894,141565916433,1650395185407,19409211522550,229984643863260,2743097412254490,32907239462485422,396793477697214450,4806417317271974580,58460150525944945840,713685698665966837135,8742060290902752902340
 
-mov $3,3
-add $0,3
+mov $1,$0
+bin $1,$0
+add $0,1
 lpb $0
-  sub $0,$3
+  sub $0,$1
+  add $1,$3
   mov $2,$0
   max $2,0
   seq $2,381772 ; Expansion of ( (1/x) * Series_Reversion( x/((1+x) * C(x))^2 ) )^(1/2), where C(x) is the g.f. of A000108.
-  add $1,$2
-  div $3,2
+  add $3,$2
 lpe
-mov $0,$1
+mov $0,$3

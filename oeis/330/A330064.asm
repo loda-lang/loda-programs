@@ -1,18 +1,16 @@
 ; A330064: Beatty sequence for cosh(x), where 1/x + sech(x) = 1.
-; Submitted by Jamie Morken(s3)
+; Submitted by iBezanilla
 ; 2,5,7,10,13,15,18,20,23,26,28,31,34,36,39,41,44,47,49,52,55,57,60,62,65,68,70,73,75,78,81,83,86,89,91,94,96,99,102,104,107,110,112,115,117,120,123,125,128,130,133,136,138,141,144,146,149,151,154,157
-; Formula: a(n) = 2*n+truncate((2*n-floor((n-1)/7)-1)/3)
+; Formula: a(n) = truncate((sqrtint(5*n*(n+1))+n+1)/2)+n-1
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-div $1,7
-sub $1,1
-mov $2,$0
-mul $0,2
-sub $0,$1
-div $0,3
-add $2,1
-mul $2,2
-add $0,$2
+mul $1,5
+add $0,1
+mul $1,$0
+nrt $1,2
+add $1,$0
+div $1,2
+add $0,$1
+sub $0,2

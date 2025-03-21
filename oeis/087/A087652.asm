@@ -9,9 +9,7 @@ mov $1,$0
 seq $1,7955 ; Product of divisors of n.
 sub $0,1
 mov $2,$1
-mov $4,0
 sub $4,$0
-mov $3,0
 sub $3,$4
 mul $3,2
 bin $3,$0

@@ -11,13 +11,12 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,1157 ; a(n) = sigma_2(n): sum of squares of divisors of n.
     mul $7,3
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     div $7,-1
     add $5,1

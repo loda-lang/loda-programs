@@ -1,20 +1,18 @@
 ; A211213: n-alternating permutations of length 3n.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,61,1513,33661,750751,17116009,398840401,9464040829,227864057851,5550936701311,136526608389601,3384729259165801,84478081828015513,2120572560190269841,53494979095639780513,1355345459896317255037,34469858667289041256051,879619727291950363099291
-; Formula: a(n) = 3*binomial(3*n-1,n)*(binomial(2*n-1,n)-1)+1
+; Formula: a(n) = binomial(2*n+floor((2*n)/2),floor((2*n)/2))*(binomial(2*n,floor((2*n)/2))-2)+1
 
 #offset 1
 
-sub $0,1
+mul $0,2
 mov $1,$0
-add $0,1
-add $1,$0
 mov $2,$0
-add $2,$1
+div $0,2
+add $2,$0
 bin $2,$0
 bin $1,$0
-sub $1,1
+sub $1,2
 mul $1,$2
 mov $0,$1
-mul $0,3
 add $0,1

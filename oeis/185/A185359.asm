@@ -1,19 +1,20 @@
 ; A185359: Numbers k such that {m^m mod k: m >= 1} is not purely periodic.
-; Submitted by Landjunge
+; Submitted by Steve Dodd
 ; 8,16,24,32,40,48,56,64,72,80,81,88,96,104,112,120,128,136,144,152,160,162,168,176,184,192,200,208,216,224,232,240,243,248,256,264,272,280,288,296,304,312,320,324,328,336,344,352,360,368,376,384,392,400,405,408,416,424,432,440,448,456,464,472,480,486,488,496,504,512,520,528,536,544,552,560,567,568,576,584
 
 #offset 1
 
 sub $0,1
-mov $1,7
+mov $1,1
 mov $2,$0
-add $2,2
-pow $2,3
+add $2,7
+pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,182938 ; If n = Product (p_j^e_j) then a(n) = Product (binomial(p_j, e_j)).
-  equ $3,0
+  add $3,2
+  seq $3,368329 ; The largest term of A054743 that divide n.
+  trn $3,2
+  min $3,1
   sub $0,$3
   add $1,1
   mov $4,$0
@@ -23,4 +24,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1
+add $0,2

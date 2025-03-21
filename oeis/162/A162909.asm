@@ -1,23 +1,24 @@
 ; A162909: Numerators of Bird tree fractions.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,2,2,1,3,3,3,3,1,2,5,4,4,5,5,4,4,5,2,1,3,3,8,7,5,7,7,5,7,8,8,7,5,7,7,5,7,8,3,3,1,2,5,4,4,5,13,11,9,12,9,6,10,11,11,10,6,9,12,9,11,13,13,11,9,12,9,6,10,11,11,10,6,9,12,9,11,13,5
 
 #offset 1
 
-mov $1,2
-mov $2,2
-sub $0,1
-lpb $0
-  sub $2,$3
-  div $3,613
-  add $3,$0
-  div $3,2
-  mod $3,2
-  mul $3,$2
-  sub $0,1
-  div $0,2
-  add $2,$1
-  add $1,$3
+mul $0,2
+mov $3,1
+mov $1,$0
+mul $1,4
+lpb $1
+  div $1,2
+  mov $4,1
+  add $4,$1
+  sub $4,2
+  div $4,2
+  mod $4,2
+  mov $5,$3
+  sub $5,$2
+  add $3,$2
+  mul $4,$5
+  add $2,$4
 lpe
-mov $0,$1
-div $0,2
+mov $0,$2

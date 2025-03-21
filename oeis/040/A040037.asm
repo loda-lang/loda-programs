@@ -1,20 +1,10 @@
 ; A040037: Continued fraction for sqrt(44).
-; Submitted by Fardringle
+; Submitted by Athlici
 ; 6,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1,12,1,1,1,2,1,1,1
 
-mov $1,10
-mov $2,$0
-gcd $0,8
-lpb $2
-  mov $2,3
-  add $0,6
-  mov $1,7
-lpe
-mul $0,$1
-trn $0,63
-mov $3,$0
-div $0,4
-mul $0,7
-add $0,$3
-div $0,8
-add $0,1
+mov $1,$0
+dif $1,2
+seq $1,10197 ; Continued fraction for sqrt(138).
+div $1,2
+add $1,1
+mov $0,$1

@@ -1,17 +1,16 @@
 ; A244013: Denominators of rational approximations to sqrt(7) obtained from Newton's method.
-; Submitted by WTBroughton
+; Submitted by shiva
 ; 1,4,88,41008,8898489952,418997705236253480128,928971316248341903257187589777603944778112,4566501711345281867283814391125123371716411674583075407993026856131137508750543524608
 
-mov $3,1
 mov $1,2
 pow $1,$0
-lpb $1
-  sub $1,1
-  mul $3,3
-  mov $4,$2
-  mov $2,$3
-  add $3,$4
+mov $3,1
+mov $0,$1
+lpb $0
+  sub $0,1
   add $2,$3
+  sub $3,$2
+  sub $3,$2
+  mul $3,-3
 lpe
 mov $0,$2
-div $0,6
