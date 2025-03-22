@@ -1,12 +1,13 @@
 ; A379414: a(n) = n + floor(n*s/r) + floor(n*t/r), where r = 3^(1/4), s = 3^(1/2), t = 3^(3/4).
 ; Submitted by Science United
 ; 3,7,11,15,19,23,28,31,35,40,44,47,52,56,59,64,68,72,76,80,84,88,92,96,100,105,108,112,117,120,124,129,133,136,141,145,149,153,157,161,165,169,173,177,181,185,189,194,197,201,206,210,213,218,222,225,230
-; Formula: a(n) = 2*n+truncate((2*n+sqrtint((2*n+2)*(6*n+6))+2)/2)+truncate(truncate((2*n+sqrtint((2*n+2)*(6*n+6))+2)/2)/(-4))+1
+; Formula: a(n) = 2*n+truncate((2*n+sqrtint(12*n^2))/2)+truncate(truncate((2*n+sqrtint(12*n^2))/2)/(-4))-1
 
-mul $0,2
-add $0,2
+#offset 1
+
 mov $2,$0
-mul $2,2
+mul $0,2
+mul $2,4
 add $2,$0
 mul $2,$0
 nrt $2,2

@@ -1,9 +1,30 @@
 ; A371398: Expansion of (1/x) * Series_Reversion( x / ( (1+x) * (1+2*x)^3 ) ).
 ; Submitted by Science United
 ; 1,7,67,741,8909,113107,1492103,20251945,280978681,3967031839,56811348235,823250855181,12049087175493,177857857845675,2644773866954255,39581787842355409,595745692419162737,9011736489133233463,136932249972928786387
-; Formula: a(n) = A243675(n+1)
 
 mov $1,$0
 add $1,1
-seq $1,243675 ; Number of hypoplactic classes of 3-parking functions of length n.
+mov $2,$1
+mul $2,2
+mov $5,$1
+mov $6,356
+add $1,1
+lpb $1
+  sub $1,1
+  mov $3,$5
+  bin $3,$1
+  mov $4,$5
+  add $4,$2
+  bin $4,$2
+  mul $4,3
+  add $2,1
+  mul $4,$3
+  div $4,$2
+  add $6,$4
+lpe
+mov $1,$6
+sub $1,354
+div $1,12
+mul $1,2
+add $1,1
 mov $0,$1

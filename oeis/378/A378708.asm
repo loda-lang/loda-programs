@@ -1,8 +1,11 @@
 ; A378708: Circumference of the n-Lucas cube graph.
 ; Submitted by Science United
 ; 4,10,16,28,46,74,122,198,320
-; Formula: a(n) = 2*truncate(b(n)/2)+4, b(n) = b(n-1)+b(n-2)+5, b(3) = 24, b(2) = 13, b(1) = 6, b(0) = 0
+; Formula: a(n) = 2*truncate(b(n-4)/2)+4, b(n) = b(n-1)+b(n-2)+5, b(3) = 24, b(2) = 13, b(1) = 6, b(0) = 0
 
+#offset 4
+
+sub $0,4
 lpb $0
   sub $0,1
   add $1,6

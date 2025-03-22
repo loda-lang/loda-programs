@@ -10,6 +10,7 @@ pow $3,2
 lpb $3
   add $0,1
   mov $1,$2
+  add $1,1
   seq $1,375714 ; Positions of non-successions of consecutive non-perfect-powers. Numbers k such that the k-th non-perfect-power is at least two fewer than the next.
   sub $1,1
   add $2,1

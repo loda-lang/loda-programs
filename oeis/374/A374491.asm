@@ -5,8 +5,7 @@
 
 #offset -1
 
-add $0,2
-add $0,4
+add $0,6
 mov $1,1
 mov $3,$0
 mul $3,4

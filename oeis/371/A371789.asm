@@ -9,6 +9,7 @@ lpb $0
   sub $0,1
   mov $3,$0
   max $3,0
+  add $3,1
   seq $3,371797 ; Number of quanimous subsets of {1..n} containing n, meaning there is more than one set partition with equal block-sums.
   add $2,$3
 lpe

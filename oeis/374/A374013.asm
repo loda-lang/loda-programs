@@ -2,6 +2,9 @@
 ; Submitted by Mumps
 ; 0,1,0,1,1,1,2,2,2,2,3,3,3,3,3,4,4
 
+#offset 4
+
+sub $0,4
 mov $1,$0
 mul $1,8
 add $1,1

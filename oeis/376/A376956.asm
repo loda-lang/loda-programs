@@ -1,8 +1,19 @@
 ; A376956: a(n) = least k such that n^(2k)/(2 k)! < 1.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,2,4,5,6,7,9,10,11,13,14,15,17,18,19,21,22,24,25,26,28,29,30,32,33,34,36,37,38,40,41,42,44,45,46,48,49,51,52,53,55,56,57,59,60,61,63,64,65,67,68,69,71,72,74,75,76,78,79,80,82,83,84,86,87,88
-; Formula: a(n) = truncate((A065027(n)+1)/2)
 
-seq $0,65027 ; a(n) is the smallest k > 0 such that n^k < k!.
+mov $1,0
+mov $2,$0
 add $0,1
+pow $2,5
+lpb $2
+  mov $3,$1
+  add $3,1
+  seq $3,214046 ; Least m>0 such that n! <= m^n.
+  add $1,1
+  add $2,$3
+  sub $2,$0
+lpe
+mov $0,$1
+add $0,2
 div $0,2

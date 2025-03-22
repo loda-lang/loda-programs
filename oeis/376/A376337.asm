@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 3,7,9,31,127,8191,131071,524287
 
-add $0,1
+#offset 1
+
 mov $2,$0
 mul $2,1682
 lpb $2

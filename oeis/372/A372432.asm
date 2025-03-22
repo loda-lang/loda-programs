@@ -10,6 +10,7 @@ pow $2,2
 add $2,180
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,372431 ; Positive integers k such that the prime indices of k are disjoint from the binary indices of k.
   sub $3,1
   add $0,1

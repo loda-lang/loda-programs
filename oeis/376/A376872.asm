@@ -6,5 +6,16 @@ gcd $2,$0
 mov $1,$2
 equ $1,0
 add $0,$1
-seq $0,245066 ; Central terms of triangles A001497 and A001498.
-div $0,3
+mov $3,$0
+mov $4,1
+mul $0,3
+bin $0,$3
+mul $3,2
+sub $3,1
+lpb $3
+  mul $4,$3
+  sub $3,2
+lpe
+mul $4,2
+mul $0,$4
+div $0,6

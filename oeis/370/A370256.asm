@@ -2,7 +2,8 @@
 ; Submitted by fzs600
 ; 1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 
-add $0,1
+#offset 1
+
 seq $0,188585 ; Moebius inversion of sequence A000688, the number of factorizations of n into prime powers greater than 1.
 mov $1,$0
 dif $1,2

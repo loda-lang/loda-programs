@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
+  add $3,1
   seq $3,375241 ; Nontriangular numbers with digital root in {1, 3, 6, 9}.
   mov $5,$3
   mul $3,2

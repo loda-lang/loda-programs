@@ -2,7 +2,8 @@
 ; Submitted by fzs600
 ; 0,0,0,1,0,0,0,1,0,0,1,0,0,0,2,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,1,1,0,0,2,1,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,2,2,0,0,1,0,0,0,0,1
 
-add $0,1
+#offset 1
+
 seq $0,138302 ; Exponentially 2^n-numbers: 1 together with positive integers k such that all exponents in prime factorization of k are powers of 2.
 mov $1,$0
 seq $1,353897 ; a(n) is the largest divisor of n whose exponents in its prime factorization are all powers of 2 (A138302).
@@ -27,8 +28,16 @@ seq $0,293810 ; The truncated kernel function of n: the product of distinct prim
 div $4,$0
 mov $0,$4
 add $0,1
-seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mov $5,$0
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$5
 seq $0,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-seq $0,46523 ; Smallest number with same prime signature as n.
+mov $6,$0
+seq $6,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $0,1
+mov $0,$6
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$6
+seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
 div $0,2
 sub $0,1

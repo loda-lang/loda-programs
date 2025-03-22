@@ -11,6 +11,7 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
+add $0,1
 seq $0,376073 ; Number of solutions of the congruence y^2 + y == x^3 - x^2 (mod p) as p runs through the primes.
 div $0,5
 add $0,1

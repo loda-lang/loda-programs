@@ -27,6 +27,7 @@ lpb $2
   min $1,2
   mul $1,$6
   add $1,$4
+  add $1,1
   seq $1,378371 ; Distance between n and the least non prime power >= n, allowing 1.
   equ $1,1
   mod $6,17

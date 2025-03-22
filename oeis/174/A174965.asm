@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,7
   mov $3,$1
+  add $3,1
   seq $3,375708 ; First differences of non-prime-powers (exclusive, so 1 is not a prime-power).
   equ $5,$1
   add $5,$3

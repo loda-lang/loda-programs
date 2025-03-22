@@ -15,7 +15,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
+  add $0,1
   seq $0,373101 ; Triangle read by rows, T(n,k) = (binomial(n,k)^3 - binomial(n,k))/6 for k=1..n-1 and n >= 2.
   add $1,$0
 lpe

@@ -1,10 +1,20 @@
 ; A371689: Main diagonal of A365495: parity of the n-th term in the trajectory of n under the A014682 map.
 ; Submitted by Science United
 ; 1,1,0,0,1,0,0,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,0,0,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0
-; Formula: a(n) = -2*truncate(A368300(n+1)/2)+A368300(n+1)
+
+#offset 1
 
 mov $1,$0
-add $1,1
-seq $1,368300 ; Main diagonal of A365484: the n-th term in the trajectory of n under the A014682 map.
+mov $2,$0
+sub $0,1
+sub $1,1
+lpb $1
+  sub $1,1
+  mov $3,-2
+  bin $3,$2
+  div $3,2
+  sub $2,$3
+lpe
+add $1,$2
 mov $0,$1
 mod $0,2

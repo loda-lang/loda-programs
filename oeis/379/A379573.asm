@@ -2,8 +2,11 @@
 ; Submitted by iBezanilla
 ; 1,1,2,4,1,4,2,19
 
+#offset 1
+
 mov $1,1
 mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
   add $3,$1

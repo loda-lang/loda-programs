@@ -4,10 +4,8 @@
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 seq $1,375430 ; The maximum exponent in the unique factorization of n in terms of distinct terms of A115975 using the dual Zeckendorf representation of the exponents in the prime factorization of n; a(1) = 0.
-add $0,1
 lpb $0
   mov $0,1
   add $1,1

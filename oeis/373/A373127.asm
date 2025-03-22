@@ -2,6 +2,9 @@
 ; Submitted by ilkeryus
 ; 1,1,2,1,2,2,1,4,1,3,1,2,1,2,1,2,1,2,5,1,2,2,1,2,1,2,2,1,2,2,1,4,1,3,1,2,1,2,1,2,1,2,2,3,1,2,2,1,2,1,2,4,2,1,4,1,3,2,1,2,1,2,1,2,2,1,4,1,2,2,1,2,1,2,1,2,1,2,2,1
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $5,2
 lpb $5
@@ -10,6 +13,7 @@ lpb $5
   sub $0,1
   mov $4,$0
   max $4,0
+  add $4,1
   seq $4,375927 ; Numbers k such that A005117(k+1) - A005117(k) = 1. In other words, the k-th squarefree number is 1 less than the next.
   mov $2,$5
   mul $2,$4

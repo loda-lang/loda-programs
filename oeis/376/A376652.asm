@@ -14,7 +14,12 @@ lpb $2
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
   mov $3,$1
   add $3,1
-  seq $3,75526 ; a(n) = A008578(n+2) - A008578(n+1).
+  mov $7,$3
+  trn $7,1
+  add $7,1
+  seq $7,40 ; The prime numbers.
+  seq $7,13632 ; Difference between n and the next prime greater than n.
+  mov $3,$7
   sub $3,$5
   add $4,$6
   add $4,$3

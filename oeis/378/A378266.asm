@@ -2,7 +2,8 @@
 ; Submitted by owensse
 ; 0,0,1,1,2,4,5,7,10,12,15,20,23,28,34,39,45,54
 
-add $0,1
+#offset 1
+
 mov $1,$0
 div $1,2
 mov $4,3

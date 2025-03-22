@@ -1,8 +1,11 @@
 ; A372852: a(n) is the total number of runs of ascents over all flattened Catalan words of length n.
 ; Submitted by Christian Krause
 ; 1,3,10,35,123,427,1460,4923,16405,54131,177150,575731,1860047,5978715,19131880,60982859,193710249,613415779,1937102450,6101872707,19177314211,60147030923,188286357660,588394867675,1835791987133,5719198113747,17793060798310,55285581766163
-; Formula: a(n) = floor(((n+2)*3^n+n+2)/4)
+; Formula: a(n) = floor(((n+1)*3^(n-1)+n+1)/4)
 
+#offset 1
+
+sub $0,1
 mov $1,3
 pow $1,$0
 add $0,2

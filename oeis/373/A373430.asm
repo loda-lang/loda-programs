@@ -1,7 +1,7 @@
 ; A373430: Row sums of A373431.
 ; Submitted by Skillz
 ; 1,1,2,10,70,672,8052,116688,1980550,38584832,848550716,20798016512,562207553180,16617377382400,533178982025640,18456632057456640,685638687223902150,27207948318401495040,1148663601834061166700,51407715898046990254080,2431161079689601662760500
-; Formula: a(n) = truncate((2*A000108(n)*gcd(A155585(n),A122045(n)))/2)
+; Formula: a(n) = truncate((2*gcd(A155585(n),A122045(n))*floor(binomial(2*n,n)/(n+1)))/2)
 
 mov $2,$0
 seq $2,122045 ; Euler (or secant) numbers E(n).
@@ -9,6 +9,10 @@ mov $1,$0
 seq $1,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
 gcd $1,$2
 mul $1,2
-seq $0,108 ; Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
+mov $3,$0
+mul $0,2
+bin $0,$3
+add $3,1
+div $0,$3
 mul $0,$1
 div $0,2

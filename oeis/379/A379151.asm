@@ -7,4 +7,4 @@ mul $0,2
 bin $0,$1
 add $1,1
 div $0,$1
-dis $0,2
+dgs $0,2

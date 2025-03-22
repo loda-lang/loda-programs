@@ -17,7 +17,8 @@ lpb $3
   mov $1,$0
   seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
-  seq $0,65357 ; a(n) = (-1)^pi(n) where pi(n) is the number of primes <= n.
+  seq $0,83907 ; a(1) = 1; for n>1, a(n) = n*a(n-1) if GCD(n,a(n-1)) = 1 else a(n) = a(n-1).
+  seq $0,8683 ; Möbius (or Moebius) function mu(n). mu(1) = 1; mu(n) = (-1)^k if n is the product of k different primes; otherwise mu(n) = 0.
   mul $0,$1
   add $2,$0
 lpe

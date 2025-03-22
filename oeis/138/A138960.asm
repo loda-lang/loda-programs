@@ -10,6 +10,7 @@ lpb $0
   seq $0,158378 ; a(1) = 0, a(n) = gcd(A051904(n), A051903(n)) for n >= 2.
   add $0,4
   seq $0,24922 ; a(n) = Sum_{k=1..n} floor((n/k) * floor((n/k) * floor(n/k))).
+  add $0,1
   seq $0,376714 ; Sum of squares of the decimal digits of the n-th prime.
 lpe
 add $0,1

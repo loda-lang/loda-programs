@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 0,0,0,1,2,3,5,12,38,149
 
-add $0,1
+#offset 1
+
 lpb $0
   mul $0,2
   sub $0,1

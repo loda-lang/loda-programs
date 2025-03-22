@@ -1,12 +1,14 @@
 ; A374490: Greatest common divisor of sums of n consecutive cubes.
 ; Submitted by omegaintellisys
 ; 1,1,9,4,5,9,7,8,27,5,11,36,13,7,45,16,17,27,19,20,63,11,23,72,25,13,81,28,29,45,31,32,99,17,35,108,37,19,117,40,41,63,43,44,135,23,47,144,49,25,153,52,53,81,55,56,171,29,59,180,61,31,189,64,65,99,67,68,207,35,71,216,73,37,225,76,77,117,79,80
-; Formula: a(n) = truncate((3*n+3)/gcd(binomial(n,2),3*n+3))
+; Formula: a(n) = truncate((3*n)/gcd(binomial(n-1,2),3*n))
+
+#offset 1
 
 mov $1,$0
-add $1,1
 mov $2,3
-mul $2,$1
+mul $2,$0
+sub $0,1
 bin $0,2
 gcd $0,$2
 mov $1,$2

@@ -1,13 +1,13 @@
 ; A379970: a(n) = 1 if n is twice its squarefree kernel (A007949), otherwise 0.
 ; Submitted by shiva
 ; 0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
-; Formula: a(n) = binomial(1,truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)*(truncate((n+1)/gcd(truncate(n/A003557(n+1))+n+2,n+1))-1)
+; Formula: a(n) = binomial(1,truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)*(truncate(n/gcd(truncate((n-1)/A003557(n))+n+1,n))-1)
 
-mov $4,$0
-add $4,1
-add $0,1
+#offset 1
+
 mov $2,$0
 seq $2,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+mov $4,$0
 sub $0,1
 mov $3,$0
 div $3,$2

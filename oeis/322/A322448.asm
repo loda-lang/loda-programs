@@ -20,6 +20,7 @@ lpb $1
     mov $0,$7
     add $0,$5
     trn $0,1
+    add $0,1
     seq $0,374588 ; Numbers whose maximum exponent in their prime factorization is a composite number.
     mov $8,$0
     mul $8,3

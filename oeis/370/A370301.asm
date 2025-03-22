@@ -2,8 +2,10 @@
 ; Submitted by Skillz
 ; 3,5,6,7,9,10,11,12,13,14,16
 
+#offset 3
+
 mul $0,7
-add $0,2
+sub $0,19
 div $0,6
 mov $1,$0
 equ $1,0

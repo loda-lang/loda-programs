@@ -9,7 +9,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  seq $0,196 ; Integer part of square root of n. Or, number of positive squares <= n. Or, n appears 2n+1 times.
+  nrt $0,2
   mov $2,$3
   mul $2,$0
   add $1,$2

@@ -2,6 +2,9 @@
 ; Submitted by Stony666
 ; 64,81,100,121,144,169,196,224,251
 
+#offset 8
+
+sub $0,8
 mov $4,$0
 add $0,4
 add $4,8

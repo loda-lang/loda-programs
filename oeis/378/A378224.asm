@@ -2,8 +2,10 @@
 ; Submitted by Science United
 ; 1,-1,-2,-1,-2,0,-2,-1,0,0,-2,0,-2,0,2,-1,-2,0,-2,0,2,0,-2,0,0,0,0,0,-2,0,-2,-1,2,0,2,0,-2,0,2,0,-2,0,-2,0,0,0,-2,0,0,0,2,0,-2,0,2,0,2,0,-2,0,-2,0,0,-1,2,0,-2,0,2,0,-2,0,-2,0,0,0,2,0,-2,0
 
+#offset 1
+
 mov $3,$0
-add $3,1
+sub $0,1
 mov $4,$0
 bin $4,2
 add $4,$0
@@ -16,6 +18,7 @@ lpb $3
   seq $1,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   sub $0,1
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  add $0,1
   seq $0,378218 ; Dirichlet inverse of A345182.
   mul $0,$1
   add $2,$0

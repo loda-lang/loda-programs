@@ -1,8 +1,19 @@
 ; A371195: List of values q^5-q^4 as q runs through A000961 (that is, 1, primes, and prime powers).
 ; Submitted by Skillz
 ; 0,16,162,768,2500,14406,28672,52488,146410,342732,983040,1336336,2345778,6156502,9375000,13817466,19803868,27705630,32505856,67469796,113030440,143589642,224465326,276710448,410305012,702806938,830750460,1056964608,1329973986,1778817670,2044673352
-; Formula: a(n) = A085538(A000961(n+1))
+; Formula: a(n) = (b(n-1)-1)*b(n-1)^4, b(n) = A000015(b(n-1)+1), b(0) = 1
 
-add $0,1
-seq $0,961 ; Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).
-seq $0,85538 ; a(n) = n^5 - n^4.
+#offset 1
+
+mov $2,1
+sub $0,1
+lpb $0
+  sub $0,1
+  add $2,1
+  seq $2,15 ; Smallest prime power >= n.
+lpe
+mov $1,$2
+pow $1,4
+mov $0,$2
+sub $0,1
+mul $0,$1

@@ -1,11 +1,14 @@
 ; A373985: a(n) = gcd(A108951(n), A373158(n)), where A108951 is fully multiplicative and A373158 is fully additive with a(p) = p# for prime p, where x# is the primorial A034386(x).
 ; Submitted by fzs600
 ; 1,2,6,4,30,4,210,2,12,4,2310,2,30030,4,36,8,510510,2,9699690,2,36,4,223092870,12,60,4,18,2,6469693230,2,200560490130,2,12,4,60,16,7420738134810,4,12,12,304250263527210,2,13082761331670030,2,6,4,614889782588491410,2,420,2,36,2,32589158477190044730,4,180,24,36,4,1922760350154212639070,40,117288381359406970983270,4,6,4,180,2,7858321551080267055879090,2,12,2,557940830126698960967415390,18,40729680599249024150621323470,4,6,2,1260,2,3217644767340672907899084554130,2
-; Formula: a(n) = gcd(A108951(n+1),A373158(n))
+; Formula: a(n) = gcd(n*A181811(n),A373158(n))
+
+#offset 1
 
 mov $1,$0
-add $1,1
-seq $1,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mov $2,$0
 seq $0,373158 ; Fully additive with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mul $1,$2
 gcd $1,$0
 mov $0,$1

@@ -2,8 +2,11 @@
 ; Submitted by Boyan
 ; 1,1,2,5,2,5,11,33
 
+#offset 1
+
 mov $1,-1
 mov $2,2
+sub $0,1
 lpb $0
   lpb $0
     dif $0,2

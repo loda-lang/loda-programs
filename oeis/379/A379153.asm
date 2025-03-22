@@ -16,5 +16,5 @@ lpb $0
   add $1,1
   mov $2,$1
 lpe
-dis $5,2
+dgs $5,2
 mov $0,$5

@@ -2,7 +2,8 @@
 ; Submitted by Science United
 ; 1,2,3,5,1,7,1,11,13,1,1,17,19,1,1,23,1,29,1,31,1,1,1,37,1,1,41,1,43,1,47,1,53,1,1,1,59,61,1,1,1,67,1,1,71,73,1,1,1,79,1,83,1,1,1,89,1,1,1,1,97,101,1,103,1,1,107,109,1,1,113,1,1,1,1,1,1,127,1,1
 
-add $0,1
+#offset 1
+
 seq $0,5117 ; Squarefree numbers: numbers that are not divisible by a square greater than 1.
 mov $2,$0
 sub $0,1

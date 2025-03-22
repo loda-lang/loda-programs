@@ -2,6 +2,9 @@
 ; Submitted by Johnbodlis team
 ; 0,0,1,2,5,11,24,51,112,233
 
+#offset 1
+
+sub $0,1
 mul $0,2
 mov $1,1
 mov $2,$0
