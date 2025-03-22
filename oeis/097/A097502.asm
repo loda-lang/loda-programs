@@ -1,10 +1,11 @@
 ; A097502: Least integer m such that there are at least n composite numbers between m and 2*m.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 2,3,4,5,6,8,8,11,12,13,14,14,17,18,18,20,20,23,24,25,26,28,29,30,32,32,33,35,38,38,39,41,42,43,44,44,46,47,48,48,50,53,54,56,58,59,60,60,61,62,62,63,65,67,68,68,71,72,72,73,74,74,77,78,80,80,81,83,84,85,86,88
 
 #offset 1
 
 sub $0,1
+mov $1,$0
 mov $2,$0
 add $0,1
 add $2,5

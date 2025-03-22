@@ -37,6 +37,7 @@ lpb $2
   mod $6,13
   mul $2,$5
   sub $2,1
+  mul $4,0
 lpe
 mov $0,$3
 add $0,2

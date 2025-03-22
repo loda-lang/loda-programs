@@ -1,16 +1,13 @@
 ; A260190: Kronecker symbol(-6 / 2*n + 1).
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,1,0,1,-1,0,-1,-1,0,-1,1,0,1,1,0,1,-1,0
-; Formula: a(n) = -3*truncate(binomial(4*floor(binomial(9*n+15,2)/9)-binomial(9*n+15,2)-3*truncate((4*floor(binomial(9*n+15,2)/9)-binomial(9*n+15,2))/3),4*floor(binomial(9*n+15,2)/9)-binomial(9*n+15,2))/3)+binomial(4*floor(binomial(9*n+15,2)/9)-binomial(9*n+15,2)-3*truncate((4*floor(binomial(9*n+15,2)/9)-binomial(9*n+15,2))/3),4*floor(binomial(9*n+15,2)/9)-binomial(9*n+15,2))
 
-mul $0,9
-add $0,15
-bin $0,2
-mov $1,$0
-div $0,9
-mul $0,4
-sub $0,$1
-mov $2,$0
+mul $0,3
+add $0,1
+div $0,2
+mul $0,11
+div $0,3
+add $0,2
+dif $0,2
 mod $0,3
-bin $0,$2
-mod $0,3
+dif $0,-2

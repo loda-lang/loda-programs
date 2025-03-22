@@ -1,15 +1,18 @@
 ; A322407: Compound sequence a(n) = A319198(A278039(n)), for n >= 0.
-; Submitted by taurec
+; Submitted by Science United
 ; 0,1,3,4,4,5,7,8,9,11,12,12,13,15,16,18,19,19,20,22,23,24,26,27,27,28,30,31,31,32,34,35,36,38,39,39,40,42,43,45,46,46,47,49,50,51,53,54,54,55,57,58,59,61,62,62,63,65,66,68,69
-; Formula: a(n) = -3*truncate((A080843(max(n-1,0))+1)/3)+a(n-1)+A080843(max(n-1,0))+1, a(0) = 0
 
-lpb $0
-  mov $2,$0
-  trn $2,1
-  seq $2,80843 ; Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n >= 0, S(n+3) = S(n+2) S(n+1) S(n).
-  add $2,1
-  mod $2,3
-  sub $0,1
-  add $1,$2
+mov $3,$0
+mov $1,$0
+lpb $1
+  sub $1,1
+  mov $0,$3
+  sub $0,$1
+  seq $0,119647 ; Fixed point of the morphism 1->{1,2}, 2->{1,3}, 3->{1}.
+  mov $4,$0
+  lpb $4
+    sub $4,3
+  lpe
+  add $2,$4
 lpe
-mov $0,$1
+mov $0,$2
