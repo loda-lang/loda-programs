@@ -10,6 +10,7 @@ lpb $0
   mov $5,$0
   add $5,1
   mov $2,$0
+  add $2,1
   seq $2,380315 ; Denominator of sum of reciprocals of all prime divisors of all positive integers <= n.
   mov $4,$2
   gcd $4,$5

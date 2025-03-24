@@ -1,9 +1,10 @@
 ; A380269: The minimal rank of an n-universal Z-lattice.
 ; Submitted by Rodney Duane
 ; 4,5,6,7,8,13,15,16,28,30
-; Formula: a(n) = floor(((2*n+2)*(floor((n+1)/3)^2+3)+1)/9)+4
+; Formula: a(n) = floor((2*n*(floor(n/3)^2+3)+1)/9)+4
 
-add $0,1
+#offset 1
+
 mov $1,$0
 add $1,$0
 div $0,3

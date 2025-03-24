@@ -11,7 +11,21 @@ lpb $4
   mov $1,$0
   add $1,$4
   bin $1,$0
-  seq $0,8978 ; a(n) = (5*n)!/(n!)^5.
+  mov $5,$0
+  mov $9,$0
+  mul $0,2
+  mov $7,$0
+  bin $7,$5
+  mul $0,2
+  mul $5,2
+  mov $6,$0
+  bin $6,$5
+  mul $6,$7
+  mul $6,$7
+  mov $8,$0
+  add $0,$9
+  bin $0,$8
+  mul $0,$6
   mul $1,$0
   add $3,$1
 lpe
