@@ -1,19 +1,14 @@
 ; A000241: Crossing number of complete graph with n nodes.
-; Submitted by BrandyNOW
+; Submitted by ThrasherX-17
 ; 0,0,0,0,0,1,3,9,18,36,60,100,150,225,315
-; Formula: a(n) = truncate((truncate((n-3)/2)*truncate((n-2)/2)*truncate((n-1)/2)*floor(n/2))/4)
+; Formula: a(n) = floor((floor(((n-3)^2)/2)*floor(((n-1)^2)/2))/16)
 
+sub $0,1
 mov $1,$0
-sub $1,1
+mul $1,$0
 div $1,2
-mov $2,$0
-sub $2,2
-div $2,2
-mov $3,$0
-sub $3,3
-div $3,2
+sub $0,2
+pow $0,2
 div $0,2
 mul $0,$1
-mul $0,$2
-mul $0,$3
-div $0,4
+div $0,16

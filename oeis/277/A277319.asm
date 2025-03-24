@@ -11,12 +11,11 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $5,$3
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$5
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $3,328892 ; If n = Product (p_j^k_j) then a(n) = Sum (2^(k_j - 1)).
-  add $3,1
-  trn $3,2
-  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

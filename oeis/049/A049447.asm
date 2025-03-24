@@ -1,14 +1,14 @@
 ; A049447: Stirling numbers of second kind: 9th column of Stirling2 triangle A008277.
-; Submitted by Science United
+; Submitted by mmonnin
 ; 1,45,1155,22275,359502,5135130,67128490,820784250,9528822303,106175395755,1144614626805,12011282644725,123272476465204,1241963303533920,12320068811796900,120622574326072500,1167921451092973005,11201516780955125625,106563273280541795575
 
 #offset 9
 
 mov $1,$0
-sub $0,8
+sub $0,6
 mov $3,$1
 sub $3,$0
-add $3,2
+add $3,4
 lpb $3
   sub $3,1
   mov $6,$3
@@ -17,10 +17,15 @@ lpb $3
   sub $2,$3
   bin $2,$5
   mul $2,$6
+  add $4,12
   add $4,$2
   add $5,1
   mul $2,0
   add $2,1
 lpe
-mov $0,$4
-div $0,362880
+mov $1,$4
+div $1,12
+mov $0,$1
+sub $0,30250
+div $0,30240
+add $0,1

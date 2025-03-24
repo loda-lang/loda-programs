@@ -1,5 +1,5 @@
 ; A157968: 2^n - 1 (A000225) where n is nonprime number (A141468).
-; Submitted by Science United
+; Submitted by mmonnin
 ; 0,1,15,63,127,255,511,1023,4095,16383,32767,65535,262143,1048575,2097151,4194303,16777215,33554431,67108863,134217727,268435455,1073741823,4294967295
 
 add $0,1
@@ -16,6 +16,7 @@ lpb $2
   seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,2
   mul $5,$3
+  pow $5,2
   mul $5,$6
   add $5,2
   seq $5,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
