@@ -1,0 +1,9 @@
+; A371238: Euler totient function applied to the binary palindromes of even length.
+; Submitted by ThrasherX-17
+; 2,6,8,20,24,32,36,84,96,80,108,96,144,120,128,324,320,288,420,336,360,476,384,512,432,560,540,504,632,480,600,1364,960,1344,1296,1536,1440,1296,1584,1296,1772,1512,1280,1760,1440,1980,1800,1600,1800,2016,1536,1872,1824,2268,2384,1944,2456,1968,2552,2048,2628,2520,1728,5460,4032,5120,4872,5184,5940,4320,6132,4800,6048,5400,5168,6500,4608,6692,6804,5456
+; Formula: a(n) = A000010(A048701(n))
+
+#offset 1
+
+seq $0,48701 ; List of binary palindromes of even length (written in base 10).
+seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
