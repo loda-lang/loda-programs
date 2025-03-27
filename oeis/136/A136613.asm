@@ -4,7 +4,7 @@
 
 mov $1,$0
 mov $2,$0
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+dgs $0,10
 lpb $1
   div $1,10
   mul $0,10

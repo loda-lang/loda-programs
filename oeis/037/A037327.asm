@@ -9,9 +9,9 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $4,$1
-  seq $4,53827 ; Sum of digits of (n written in base 6).
+  dgs $4,6
   mov $3,$1
-  seq $3,53828 ; Sum of digits of (n written in base 7).
+  dgs $3,7
   sub $3,$4
   equ $3,0
   sub $0,$3

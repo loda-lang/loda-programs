@@ -16,6 +16,7 @@ lpb $0
   lpb $4
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,253900 ; a(n) is the number of squares of the form x^2 + x + n^2 for 0 <= x <= n^2.
     equ $7,2
     mov $9,10

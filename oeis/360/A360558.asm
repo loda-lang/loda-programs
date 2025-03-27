@@ -16,6 +16,7 @@ lpb $2
   add $3,1
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   mov $6,$5
+  add $6,1
   seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $5,$6
   div $5,$3

@@ -1,7 +1,9 @@
 ; A225595: Conjectured square array T(n,k) read by antidiagonals related to the existence of rectangles of size n*k in the toothpick structure of A139250.
 ; 1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0
 
-sub $0,1
+#offset 1
+
+sub $0,2
 lpb $0
   dif $0,3
   sub $0,2

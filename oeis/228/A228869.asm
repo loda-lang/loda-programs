@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,225821 ; a(n) = Product_{p | p is prime and p, p-1 both divide n}.
   trn $3,3
   equ $3,0

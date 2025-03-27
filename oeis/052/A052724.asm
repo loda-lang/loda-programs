@@ -1,9 +1,9 @@
-; A052724: A simple context-free grammar in a labeled universe.
+; A052724: A simple context-free grammar in a labeled universe: a(n) = A052743(n)-A052723(n), n>1.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,24,240,2160,30240,524160,9434880,188697600,4311014400,108254361600,2939153817600,86568043161600,2753962219008000,93838712647680000,3409619685728256000,131735241369059328000
 
 mov $1,$0
-seq $0,52702 ; A simple context-free grammar.
+seq $0,52702 ; Expansion of  (1/2)*(1/x^2 - 1/x)*(1-x-sqrt(1-2*x+x^2-4*x^3)) - x.
 lpb $1
   mul $0,$1
   sub $1,1

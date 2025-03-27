@@ -10,7 +10,13 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+  mul $5,2
+  mov $6,$5
+  sub $6,1
+  bxo $5,$6
+  add $5,1
+  div $5,2
+  log $5,2
   mod $5,2
   mov $3,$1
   add $3,1

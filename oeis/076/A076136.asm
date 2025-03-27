@@ -12,7 +12,6 @@ lpb $2
   mov $4,$1
   add $4,1
   seq $4,76191 ; First differences of A001222.
-  sub $1,1
   mov $5,$1
   seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$5
@@ -20,7 +19,7 @@ lpb $2
   add $3,1
   equ $3,0
   sub $0,$3
-  add $1,2
+  add $1,1
   sub $2,$0
 lpe
 mov $0,$1

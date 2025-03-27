@@ -10,7 +10,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,20782 ; Expansion of 1/((1-7x)(1-8x)(1-9x)).
+  seq $0,20782 ; Expansion of g.f. 1/((1-7*x)*(1-8*x)*(1-9*x)).
   sub $0,$1
   mul $1,6
   add $1,$0

@@ -11,4 +11,5 @@ lpb $1
   mov $1,7
   add $0,1
 lpe
+add $0,1
 seq $0,227858 ; Numbers which start and end with the same digit in decimal.

@@ -14,7 +14,12 @@ lpb $2
   add $3,1
   seq $3,40 ; The prime numbers.
   mov $5,$3
-  seq $3,53767 ; Sum of first n composite numbers.
+  add $3,2
+  seq $3,141468 ; Zero together with the nonprime numbers A018252.
+  mov $6,$3
+  seq $6,101203 ; a(n) = sum of nonprimes <= n.
+  mov $3,$6
+  sub $3,1
   mul $3,2
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2

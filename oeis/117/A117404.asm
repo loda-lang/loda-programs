@@ -9,7 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   trn $3,1
   seq $3,349812 ; Triangle read by rows: row 1 is [1]; for n >= 1, row n gives coefficients of expansion of (-1/x + x)*(1/x + 1 + x)^(n-1) in order of increasing powers of x.
   equ $3,1

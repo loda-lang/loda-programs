@@ -6,7 +6,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   trn $3,1
   seq $3,151702 ; a(0)=1, a(1)=0; a(2^i + j) = a(j) + a(j+1) for 0 <= j < 2^i.
   equ $3,1

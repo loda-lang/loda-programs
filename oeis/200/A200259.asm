@@ -15,7 +15,7 @@ lpb $2
   max $3,1
   add $3,1
   seq $3,173919 ; Numbers that are prime or one less than a prime.
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   mod $3,2
   mov $5,0
   pow $5,$3

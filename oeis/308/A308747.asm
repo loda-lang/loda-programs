@@ -8,9 +8,10 @@ sub $0,1
 mov $1,$0
 lpb $1
   sub $1,1
-  add $2,1
   mov $0,$2
+  add $0,2
   seq $0,237132 ; Values of x in the solutions to x^2 - 3xy + y^2 + 11 = 0, where 0 < x < y.
+  add $2,1
   sub $3,2
   add $3,$0
 lpe

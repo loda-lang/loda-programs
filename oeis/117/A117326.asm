@@ -11,14 +11,16 @@ add $2,4
 pow $2,2
 lpb $2
   mov $5,$1
-  add $5,2
-  seq $5,176540 ; 1 together with the semiprimes.
+  add $5,1
+  mov $6,$5
+  seq $6,1358 ; Semiprimes (or biprimes): products of two primes.
   mov $3,$1
   add $3,1
   seq $3,40 ; The prime numbers.
-  mod $3,$5
+  mod $3,$6
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2
+  mov $5,$6
   sub $0,$3
   add $1,1
   mov $4,$0

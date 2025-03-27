@@ -9,7 +9,8 @@ lpb $0
   mov $1,$0
   trn $1,2
   add $1,1
-  seq $1,32937 ; Numbers k whose base-2 representation Sum_{i=0..m} d(i)*2^(m-i) has d(i)=0 for all odd i, excluding 0. Here m is the position of the leading bit of k.
+  seq $1,33053 ; Numbers whose base-2 representation Sum_{i=0..m} d(i)*2^i has d(i)=1 when i != m mod 2.
+  seq $1,165199 ; a(n) is obtained by flipping every second bit in the binary representation of n starting at the second-most significant bit and on downwards.
   mov $0,1
 lpe
 mov $0,$1

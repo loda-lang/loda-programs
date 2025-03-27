@@ -1,4 +1,4 @@
-; A075614: Let P(k,X) = 4^k*Product_{i=1..k} (X - cos(Pi*i/k)) (which is a polynomial with integer coefficients). Sequence gives maximum values of coefficients of P(n,X).
+; A075614: Let P(k,X) = 4^k*Product_{i=1..k} (X - cos(Pi*i/k)) (which is a polynomial with integer coefficients). Sequence gives maximum absolute values of coefficients of P(n,X).
 ; Submitted by Skillz
 ; 4,16,64,256,1024,4096,20480,98304,458752,2097152,9437184,41943040,188743680,922746880,4429185024,20937965568,97710505984,450971566080,2061584302080,9620726743040,46729244180480,224300372066304
 

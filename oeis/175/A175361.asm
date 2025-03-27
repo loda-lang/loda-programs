@@ -1,12 +1,20 @@
 ; A175361: Partial sums of A000141.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,13,73,233,485,797,1341,2301,3321,4197,5757,8157,10237,12277,15541,19701,23793,27273,31653,38853,45405,50013,58173,68733,76957,84769,94969,108089,120569,130673,144817,164017,180397,191917,209317,234277,252673,269113,293593
-; Formula: a(n) = a(n-1)+A000141(n), a(0) = 1
 
 mov $1,1
 lpb $0
+  mov $4,0
+  equ $4,$0
+  mul $4,11
   mov $2,$0
-  seq $2,141 ; Number of ways of writing n as a sum of 6 squares.
+  seq $2,50470 ; a(n) = Sum_{d|n, n/d == 1 (mod 4)} d^2 - Sum_{d|n, n/d == 3 (mod 4)} d^2.
+  mul $2,16
+  mov $3,$0
+  seq $3,2173 ; a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.
+  mul $3,4
+  sub $2,$3
+  sub $2,$4
   sub $0,1
   add $1,$2
 lpe

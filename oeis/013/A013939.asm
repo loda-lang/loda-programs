@@ -12,7 +12,8 @@ lpb $2
   mov $0,$1
   sub $0,$2
   add $0,1
-  seq $0,322307 ; Number of multisets in the swell of the n-th multiset multisystem.
+  seq $0,34444 ; a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
+  lex $0,2
   add $3,$0
 lpe
 mov $0,$3

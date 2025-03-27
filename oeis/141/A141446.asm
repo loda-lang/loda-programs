@@ -7,7 +7,8 @@ lpb $0
   mov $2,$0
   max $2,0
   add $2,1
-  seq $2,1469 ; Genocchi numbers (of first kind); unsigned coefficients give expansion of x*tan(x/2).
+  mul $2,2
+  seq $2,226158 ; a(n) = 2*n*(2^n - 1)*zeta(1-n) where in the case n=0 the limit is understood, zeta(s) the Riemann zeta function.
   sub $1,$2
 lpe
 add $1,1

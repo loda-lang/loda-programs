@@ -1,9 +1,35 @@
 ; A040497: Continued fraction for sqrt(520).
 ; Submitted by Jamie Morken(w2)
 ; 22,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1,4,11,4,1,44,1
-; Formula: a(n) = A007091(A040151(n)-1)+1
 
-seq $0,40151 ; Continued fraction for sqrt(164).
-sub $0,1
-seq $0,7091 ; Numbers in base 5.
+mov $1,2
+trn $1,$0
+add $1,6
+mov $2,0
+sub $2,$0
+gcd $0,$1
+sub $0,3
+mov $3,3
+pow $3,$0
+mov $0,$3
+mod $0,10
+add $0,1
+gcd $2,2
+add $2,$0
+mov $0,$2
+bin $2,$3
+mul $0,3
+sub $0,7
+add $0,$2
+mov $4,0
+mov $6,1
+lpb $0
+  mov $5,$0
+  mod $5,5
+  mul $5,$6
+  div $0,5
+  add $4,$5
+  mul $6,10
+lpe
+mov $0,$4
 add $0,1

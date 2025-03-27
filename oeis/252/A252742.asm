@@ -1,7 +1,10 @@
 ; A252742: Characteristic function of A246282: if A003961(n) > 2*n, then a(n) = 1, otherwise 0 (when A003961(n) < 2*n) [where A003961(n) shifts the prime factorization of n one step towards larger primes].
 ; 0,0,0,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,0,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,1,1,0,0,1,1,1,0,1,0,1,0,1,1,0,0,1,0,0,1,1,0,1,0,1,1,1,0,1,0,0,1,1,0,1,0,1
-; Formula: a(n) = max(-2*n+A003961(n+1)-2,0)%2
+; Formula: a(n) = max(-2*n+A003961(n),0)%2
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 mov $2,$0
 add $0,1

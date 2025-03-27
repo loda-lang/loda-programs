@@ -2,6 +2,9 @@
 ; Submitted by NeoGen
 ; 0,2,2,6,4,22,14,102,62
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $4,2

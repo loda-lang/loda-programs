@@ -9,7 +9,7 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $4,$1
-  seq $4,53824 ; Sum of digits of (n written in base 5).
+  dgs $4,5
   mov $3,$1
   seq $3,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   sub $3,$4

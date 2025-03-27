@@ -12,7 +12,13 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,46523 ; Smallest number with same prime signature as n.
+  mov $6,$3
+  seq $6,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  mov $3,$6
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$6
+  seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $3,7955 ; Product of divisors of n.
   mul $3,2
   mov $5,-1

@@ -8,12 +8,23 @@ sub $0,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,$1
+  add $5,$1
+  sub $5,1
+  mul $5,2
+  nrt $5,2
   mov $3,$1
-  seq $3,274430 ; Positions in A274429 of products of distinct Fibonacci numbers > 1.
-  sub $3,1
+  min $3,1
+  add $5,$3
+  pow $5,2
+  mov $3,$5
+  div $3,4
+  mov $4,$1
+  add $4,$3
   add $0,1
   add $1,1
-  add $2,$3
+  add $2,$4
   sub $2,$0
+  mov $3,$4
 lpe
 add $0,1

@@ -13,7 +13,9 @@ lpb $2
   seq $3,341915 ; For any nonnegative number n with runs in binary expansion (r_1, ..., r_w), a(n) = Sum_{k = 1..w} 2^(r_1 + ... + r_k - 1).
   seq $3,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
   seq $3,115300 ; Greatest digit of n * least digit of n.
-  seq $3,240388 ; A sequence related to the Stern sequence s(n) (A002487), defined by w(n) = s(3n)/2.
+  mul $3,3
+  seq $3,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+  div $3,2
   equ $3,1
   sub $0,$3
   add $1,1

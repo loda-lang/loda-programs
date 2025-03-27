@@ -9,9 +9,13 @@ mov $1,1
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $5,2
+  pow $5,$1
+  sub $5,1
+  bor $5,2
+  pow $5,2
   mov $3,$1
-  add $3,1
-  seq $3,88037 ; Smallest square k == 1 (mod some n-th power), k > 1.
+  mov $3,$5
   mod $3,$1
   div $3,2
   min $3,1

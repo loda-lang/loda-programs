@@ -2,6 +2,9 @@
 ; Submitted by amazing
 ; 0,2,4,7,10,13,16,20,22
 
+#offset 1
+
+sub $0,1
 mov $3,$0
 mov $4,$0
 mov $1,$0

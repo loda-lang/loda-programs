@@ -29,6 +29,7 @@ lpb $2
     mov $6,$1
     add $6,$9
     bin $6,$1
+    add $1,1
     seq $1,226205 ; a(n) = F(n)^2 - F(n-1)^2 or F(n+1) * F(n-2) where F(n) = A000045(n), the Fibonacci numbers.
     mul $1,7
     mul $6,$1

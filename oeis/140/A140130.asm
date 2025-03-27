@@ -7,4 +7,4 @@
 
 seq $0,80079 ; Least number causing the longest carry sequence when adding numbers <= n to n in binary representation.
 sub $0,1
-seq $0,82908 ; Largest value of gcd(2^n, binomial(n,j)) with j=0..n-1; maximal value of largest power of 2 dividing binomial(n,j) in the n-th row of Pascal's triangle.
+seq $0,82908 ; Largest value of gcd(2^n, binomial(n,j)) with j=0..n-1; maximum value of largest power of 2 dividing binomial(n,j) in the n-th row of Pascal's triangle.

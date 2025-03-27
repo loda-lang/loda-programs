@@ -12,7 +12,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   seq $3,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   sub $3,$1
   equ $3,0
   sub $0,$3

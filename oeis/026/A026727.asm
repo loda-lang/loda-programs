@@ -9,7 +9,20 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,16305 ; Expansion of 1/((1-2*x)*(1-6*x)*(1-8*x)).
+  mov $4,4
+  pow $4,$0
+  mov $5,3
+  pow $5,$0
+  mul $5,27
+  add $0,4
+  mov $6,2
+  pow $6,$0
+  mul $4,32
+  add $4,1
+  sub $4,$5
+  mul $4,$6
+  mov $0,$4
+  div $0,96
   mul $1,11
   add $1,$0
 lpe

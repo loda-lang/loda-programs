@@ -1,8 +1,11 @@
 ; A382071: Connected domination number of the n X n zebra graph.
 ; Submitted by Science United
 ; 21,20,19,20,21,25,31,37
-; Formula: a(n) = max(2*n-8,0)+truncate((2*n*(2*n-7)-6)/9)+21
+; Formula: a(n) = max(2*n-20,0)+truncate((2*(n-6)*(2*n-19)-6)/9)+21
 
+#offset 6
+
+sub $0,6
 mov $1,$0
 mul $1,2
 sub $1,7

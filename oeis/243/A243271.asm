@@ -1,4 +1,4 @@
-; A243271: Number of graphs with n nodes that are Hamiltonian and distance-regular.
+; A243271: Number of unlabeled simple graphs with n nodes that are Hamiltonian and distance-regular.
 ; Submitted by Christian Krause
 ; 1,0,1,2,2,4,2,5,4,6
 

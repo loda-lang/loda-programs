@@ -7,9 +7,9 @@ pow $2,$0
 add $2,1
 mov $3,$0
 dif $3,2
+mov $5,0
 mov $1,-1
 pow $1,$3
-mov $5,0
 mov $4,0
 equ $4,$3
 mov $6,1

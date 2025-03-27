@@ -15,7 +15,7 @@ lpb $2
   seq $3,40 ; The prime numbers.
   mov $5,$3
   add $5,10
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   add $3,7
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3

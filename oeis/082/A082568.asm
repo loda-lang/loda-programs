@@ -6,4 +6,4 @@
 #offset 1
 
 seq $0,33949 ; Positive integers that do not have a primitive root.
-seq $0,215653 ; a(n) = smallest positive m such that m^2=1+k*n with positive k.
+seq $0,215653 ; a(n) = smallest positive m such that m^2 = 1+k*n with positive k.

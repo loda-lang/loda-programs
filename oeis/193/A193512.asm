@@ -1,9 +1,13 @@
 ; A193512: a(n) = Sum of odd divisors of Omega(n), a(1) = 0.
 ; 0,1,1,1,1,1,1,4,1,1,1,4,1,1,1,1,1,4,1,4,1,1,1,1,1,1,4,4,1,4,1,6,1,1,1,1,1,1,1,1,1,4,1,4,4,1,1,6,1,4,1,4,1,1,1,1,1,1,1,1,1,1,4,4,1,4,1,4,1,4,1,6,1,1,4,4,1,4,1,6
-; Formula: a(n) = truncate(A004011(A001222(n))/24)
 
 #offset 1
 
 seq $0,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
-seq $0,4011 ; Theta series of D_4 lattice; Fourier coefficients of Eisenstein series E_{gamma,2}.
+mov $1,0
+equ $1,$0
+mul $1,23
+seq $0,593 ; Sum of odd divisors of n.
+mul $0,24
+sub $0,$1
 div $0,24

@@ -6,7 +6,21 @@ add $0,1
 mov $1,3
 mov $2,$0
 lpb $2
-  seq $2,114242 ; a(n) = (n+1)(n+2)^2*(n+3)^2*(n+4)(2n+5)/720.
+  mov $3,$2
+  add $3,4
+  add $2,2
+  mov $5,$2
+  pow $5,2
+  bin $5,2
+  add $2,1
+  mov $4,$2
+  mul $4,2
+  bin $4,2
+  mov $2,2
+  mul $2,$3
+  mul $2,$4
+  mul $2,$5
+  div $2,720
   sub $0,1
   mul $1,$2
   mov $2,$0

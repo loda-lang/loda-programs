@@ -8,7 +8,7 @@ sub $0,1
 mov $2,7080
 lpb $2
   mov $3,$2
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   equ $3,6
   sub $0,$3
   add $1,1

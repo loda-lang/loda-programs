@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,11543 ; Decimal expansion of e truncated to n places.
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,1
   sub $0,$3

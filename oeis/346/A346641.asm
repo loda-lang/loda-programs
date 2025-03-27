@@ -10,6 +10,7 @@ sub $0,1
 pow $2,4
 lpb $2
   mov $4,$1
+  add $4,1
   seq $4,237271 ; Number of parts in the symmetric representation of sigma(n).
   mov $3,$1
   add $3,1

@@ -11,7 +11,7 @@ add $2,4
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,53830 ; Sum of digits of (n written in base 9).
+  dgs $3,9
   equ $3,9
   sub $0,$3
   add $1,1

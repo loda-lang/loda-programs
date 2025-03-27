@@ -1,7 +1,6 @@
-; A051369: a(n+1) = a(n) + sum of digits of a(n)^2.
+; A051369: a(n+1) = a(n) + sum of digits of a(n)^2, with a(1) = 3.
 ; Submitted by USTL-FIL (Lille Fr)
 ; 3,12,21,30,39,48,57,75,93,120,129,147,165,183,210,219,246,264,300,309,336,363,390,399,417,453,471,489,507,534,561,579,597,624,660,678,714,750,768,804,831,858,885,912,939,966,993,1029,1056,1074,1101,1110,1119
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+A007953(b(n-1)^2), b(0) = 3
 
 #offset 1
 
@@ -11,7 +10,7 @@ lpb $0
   sub $0,1
   mov $2,$1
   pow $1,2
-  seq $1,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $1,10
   add $1,$2
 lpe
 mov $0,$1

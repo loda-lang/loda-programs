@@ -16,7 +16,7 @@ lpb $1
   seq $4,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $0,$4
   sub $0,1
-  seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $0,10
   mod $0,2
   add $3,$0
 lpe

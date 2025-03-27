@@ -10,4 +10,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-seq $0,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+dgs $0,10

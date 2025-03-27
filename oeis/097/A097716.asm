@@ -1,15 +1,43 @@
 ; A097716: Left-hand edge of triangle in A097474.
 ; Submitted by Science United
 ; 1,-1,2,-17,124,-2764,43688,-1859138,51236656,-3550889296,151107728672,-15494138893232,941930695305664,-133994296272170944,11024086088089751168,-2077570618897716831248,222290021402867410844416,-53603997631397508980982016,7234385689981722178901729792
-; Formula: a(n) = truncate(A000182(n+1)/gcd(A164640(n+1),A000182(n+1)))*(-1)^n
 
 mov $1,-1
 pow $1,$0
 mov $2,$0
+mov $6,0
+mov $9,0
+mov $10,0
+mul $0,2
 add $0,1
-seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
-add $2,1
-seq $2,164640 ; a(n) = 8*a(n-2) for n > 2; a(1) = 1, a(2) = 6.
+mov $5,1
+mov $8,$0
+lpb $0
+  sub $0,1
+  div $10,2
+  add $10,$6
+  mul $10,2
+  mov $6,$5
+  pow $6,$8
+  sub $6,$10
+  mov $7,$8
+  bin $7,$5
+  mul $7,$6
+  add $5,1
+  mul $9,-1
+  add $9,$7
+lpe
+mov $3,$2
+mod $3,2
+mul $3,2
+add $3,1
+gcd $0,$9
+mul $2,3
+div $2,2
+mov $4,2
+pow $4,$2
+mul $3,$4
+mov $2,$3
 gcd $2,$0
 div $0,$2
 mul $0,$1

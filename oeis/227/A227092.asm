@@ -10,7 +10,7 @@ mov $2,$0
 add $2,4
 pow $2,2
 lpb $2
-  seq $3,53828 ; Sum of digits of (n written in base 7).
+  dgs $3,7
   equ $3,7
   sub $0,$3
   add $1,2

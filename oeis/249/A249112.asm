@@ -7,9 +7,7 @@
 sub $0,1
 gcd $5,$0
 mov $0,2
-mov $2,$0
-add $2,8
-pow $2,4
+mov $2,10000
 lpb $2
   mov $3,$6
   add $3,1

@@ -1,6 +1,6 @@
-; A175134: Define a(n) as the number of ways to achieve n from the following procedure. Let R={r(k)} and S={s(k)} each be some permutation of (1,2,3,...,j) for some nonnegative integer j (with R and S being empty sets if j=0). Define (b(0),b(1),...,b(j)) as follows. b(0)=1. b(m) = b(m-1)*r(m) + s(m), for 1<= m <= j. Does b(j) = n? If so, add 1 to the count. Calculate the b(j)'s by taking j over all nonnegative integers, and taking R and S over all permutations for a given j. The total count equals a(n).
+; A175134: a(n) = number of pairs of permutations (p, q) of the same (arbitrary) size m such that f_m(f_{m-1}(...f_1(1)...)) = n, where f_i(x) = p_i*x + q_i.
 ; Submitted by Jon Maiga
-; 1,1,0,0,2,1,1,0,0,0,0,0,2
+; 1,1,0,0,2,1,1,0,0,0,0,0,2,4,4,4,2,4,1,3,1,2,2,1,1,0,0,2,2,0,1,0,0,0,0,0,0,0,0,0,2,2,6,4,8,6,8,6,8,6,16,12,14,6,12,10,16,18,14,14,10,10,10,14,12,10,10,8,4,13,15,4,13,6,8,6,8,2,11,6
 
 #offset 1
 

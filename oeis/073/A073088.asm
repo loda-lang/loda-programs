@@ -10,7 +10,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,25242 ; Generalized Catalan numbers.
+  seq $3,25242 ; Generalized Catalan numbers A(x)^2 -(1+x)^2*A(x) +x*(2+x+x^2) =0.
   add $3,$4
   gcd $3,2
   sub $0,$3

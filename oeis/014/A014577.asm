@@ -1,4 +1,4 @@
-; A014577: The regular paper-folding sequence (or dragon curve sequence).
+; A014577: The regular paper-folding sequence (or dragon curve sequence). Alphabet {1,0}.
 ; Submitted by Stony666
 ; 1,1,0,1,1,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,0,0,0,1,1,0,1,1,0,0,0,1,1,0,0,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,0,1,0,0,1
 

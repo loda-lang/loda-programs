@@ -11,5 +11,7 @@ mov $1,$0
 gcd $1,$2
 mov $0,$2
 div $0,$1
-seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mov $3,$0
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$3
 seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

@@ -6,7 +6,7 @@
 mov $1,1
 lpb $0
   mov $2,$0
-  seq $2,219 ; Number of planar partitions (or plane partitions) of n.
+  seq $2,219 ; Number of plane partitions (or planar partitions) of n.
   sub $0,1
   add $1,$2
 lpe

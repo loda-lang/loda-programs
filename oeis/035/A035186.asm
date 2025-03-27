@@ -1,12 +1,32 @@
 ; A035186: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 3.
 ; Submitted by Simon Strandgaard
 ; 1,0,1,1,0,0,0,0,1,0,2,1,2,0,0,1,0,0,0,0,0,0,2,0,1,0,1,0,0,0,0,0,2,0,0,1,2,0,2,0,0,0,0,2,0,0,2,1,1,0,0,2,0,0,0,0,0,0,2,0,2,0,0,1,0,0,0,0,2,0,2,0,2,0,1,0,0,0,0,0
-; Formula: a(n) = A035194(n)*(-2*truncate(A001511(n)/2)+A001511(n))
 
 #offset 1
 
 mov $1,$0
-seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+mul $1,2
+mov $2,$1
+sub $2,1
+mov $6,0
+bxo $1,$2
+add $1,1
+div $1,2
+log $1,2
 mod $1,2
-seq $0,35194 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 12.
+mov $3,0
+mov $4,$0
+mul $0,2
+lpb $0
+  sub $0,1
+  mov $5,$4
+  dif $5,$0
+  neq $5,$4
+  sub $6,$3
+  sub $0,1
+  add $5,$6
+  add $3,$5
+lpe
+mov $0,$3
+add $0,1
 mul $0,$1

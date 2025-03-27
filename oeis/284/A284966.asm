@@ -1,4 +1,4 @@
-; A284966: Triangle read by rows: coefficients of the scaled Lucas polynomials x^(n/2) L(n, sqrt(x)) for n >= 0.
+; A284966: Triangle read by rows: coefficients of the scaled Lucas polynomials x^(n/2)*L(n, sqrt(x)) for n >= 0, sorted by descending powers of x.
 ; Submitted by Simon Strandgaard
 ; 2,1,0,2,1,0,0,3,1,0,0,2,4,1,0,0,0,5,5,1,0,0,0,2,9,6,1,0,0,0,0,7,14,7,1,0,0,0,0,2,16,20,8,1,0,0,0,0,0,9,30,27,9,1,0,0,0,0,0,2,25,50,35,10,1,0,0,0,0,0,0,11,55,77,44,11,1,0,0,0
 

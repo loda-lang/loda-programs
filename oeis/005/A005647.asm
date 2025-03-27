@@ -12,8 +12,13 @@ mov $4,$0
 lpb $4
   sub $4,2
   mov $0,$5
-  seq $0,109449 ; Triangle read by rows, T(n,k) = binomial(n,k)*A000111(n-k), 0 <= k <= n.
-  add $3,$0
+  seq $0,247453 ; T(n,k) = binomial(n,k)*A000111(n-k)*(-1)^(n-k), 0 <= k <= n.
+  mov $6,0
+  gcd $6,$0
+  mov $7,0
+  gcd $7,$6
+  mov $0,$7
+  add $3,$7
   add $5,2
 lpe
 mov $0,$3

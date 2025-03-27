@@ -10,7 +10,7 @@ lpb $2
   sub $2,1
   mov $0,$4
   sub $0,$2
-  seq $0,53824 ; Sum of digits of (n written in base 5).
+  dgs $0,5
   equ $0,$2
   sub $0,1
   gcd $0,3

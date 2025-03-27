@@ -2,6 +2,9 @@
 ; Submitted by Skillz
 ; 1,1,2,3,8,21,144,987,46368,2178309,4807526976
 
+#offset 1
+
+sub $0,1
 lpb $0
   lpb $0
     equ $0,1

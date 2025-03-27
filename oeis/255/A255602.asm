@@ -11,6 +11,7 @@ lpb $2
   mov $6,$1
   add $6,1
   mov $3,$1
+  add $3,1
   seq $3,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
   mov $5,$3
   gcd $5,$6

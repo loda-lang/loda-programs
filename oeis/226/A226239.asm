@@ -2,6 +2,9 @@
 ; Submitted by Landjunge
 ; 1,3,6,10,15,22,33,44,59,76,101,125,158
 
+#offset 1
+
+sub $0,1
 lpb $0
   mov $2,$0
   trn $2,1

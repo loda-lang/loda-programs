@@ -10,7 +10,14 @@ lpb $0
   mov $2,$1
   mov $1,$3
   dif $1,2
-  seq $1,10197 ; Continued fraction for sqrt(138).
+  mov $5,0
+  pow $5,$1
+  gcd $1,4
+  pow $1,4
+  add $5,1
+  mul $5,12
+  div $1,$5
+  add $1,1
   div $1,2
   add $1,1
   mul $1,$2

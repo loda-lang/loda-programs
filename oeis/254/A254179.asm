@@ -2,8 +2,10 @@
 ; Submitted by Jamie Morken(w1)
 ; 2,4,1,8,8,8,4,3,2,6
 
+#offset -16
+
 mov $1,2
-add $0,1
+add $0,17
 mul $0,9
 lpb $0
   add $1,2

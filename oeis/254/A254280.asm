@@ -2,6 +2,9 @@
 ; Submitted by Orange Kid
 ; 3,0,0,5,0,6,3,2,3
 
+#offset -9
+
+add $0,9
 mov $2,1
 mov $3,$0
 lpb $3

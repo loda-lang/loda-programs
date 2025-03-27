@@ -2,6 +2,9 @@
 ; Submitted by Dave Studdert
 ; 0,0,2,8,80,480,5040,40320
 
+#offset 2
+
+sub $0,2
 mov $1,$0
 div $1,2
 mul $1,8

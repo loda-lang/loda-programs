@@ -9,13 +9,13 @@ sub $0,1
 add $2,2
 pow $2,2
 lpb $2
-  mov $3,$1
-  add $3,1
-  mov $7,$3
+  mov $7,$1
+  add $7,2
   seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $5,$7
   add $5,1
-  add $3,1
+  mov $3,$1
+  add $3,2
   seq $3,1221 ; Number of distinct primes dividing n (also called omega(n)).
   pow $3,2
   mov $6,$3

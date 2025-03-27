@@ -1,11 +1,16 @@
 ; A317673: Moebius transform of A129502.
 ; Submitted by Simon Strandgaard
 ; 1,2,-1,3,-1,-2,-1,4,0,-2,-1,-3,-1,-2,1,5,-1,0,-1,-3,1,-2,-1,-4,0,-2,0,-3,-1,2,-1,6,1,-2,1,0,-1,-2,1,-4,-1,2,-1,-3,0,-2,-1,-5,0,0,1,-3,-1,0,1,-4,1,-2,-1,3,-1,-2,0,7,1,2,-1,-3,1,2,-1,0,-1,-2,0,-3,1,2,-1,-5
-; Formula: a(n) = A209635(n)*A001511(n)
 
 #offset 1
 
 mov $1,$0
-seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+mul $1,2
+mov $2,$1
+sub $2,1
+bxo $1,$2
+add $1,1
+div $1,2
+log $1,2
 seq $0,209635 ; Möbius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
 mul $0,$1

@@ -1,10 +1,12 @@
 ; A207119: Number of nX4 0..1 arrays avoiding 0 0 1 and 0 1 0 horizontally and 0 0 1 and 0 1 1 vertically
 ; Submitted by Fardringle
 ; 9,81,288,1024,2560,6400,13200,27225,49665,90601,151704,254016,399168,627264,938520,1404225,2020425,2907025,4051080,5645376,7660224,10394176,13789048,18292729,23801505,30969225,39622800,50694400,63909120,80568576,100252944,124746561,153428553,188705169,229682640,279558400,337075200,406425600,485876160,580858201,689023489,817330921,962648808,1133803584,1326676800,1552360000,1805505000,2099930625,2428770825,2809106001,3232212984,3719048256,4258634688,4876508224,5558976360,6336956025,7193505825
-; Formula: a(n) = truncate(b(n+2)/81), b(n) = 81*truncate((binomial(truncate(n/2)+2,2)*((truncate(n/2)+2)*(truncate(n/2)+5)-binomial(truncate(n/2)+2,2)-6))/3)*truncate((binomial(truncate((n-1)/2)+2,2)*((truncate((n-1)/2)+2)*(truncate((n-1)/2)+5)-binomial(truncate((n-1)/2)+2,2)-6))/3), b(2) = 729, b(1) = 0, b(0) = 0
+; Formula: a(n) = truncate(b(n+1)/81), b(n) = 81*truncate((binomial(truncate(n/2)+2,2)*((truncate(n/2)+2)*(truncate(n/2)+5)-binomial(truncate(n/2)+2,2)-6))/3)*truncate((binomial(truncate((n-1)/2)+2,2)*((truncate((n-1)/2)+2)*(truncate((n-1)/2)+5)-binomial(truncate((n-1)/2)+2,2)-6))/3), b(2) = 729, b(1) = 0, b(0) = 0
+
+#offset 1
 
 mov $3,1
-add $0,2
+add $0,1
 lpb $0
   sub $0,1
   mov $2,$1

@@ -11,11 +11,10 @@ mov $2,$0
 mov $3,2
 lpb $3
   bin $3,2
-  sub $2,1
   mov $0,$2
   seq $0,255045 ; a(n) = (1 + A160552(n))/2.
   add $1,$0
-  add $2,4
+  add $2,3
 lpe
 mov $0,$1
 div $0,2

@@ -16,10 +16,10 @@ lpb $2
   seq $6,93515 ; Numbers k such that either k or k-1 is a prime.
   mov $5,$6
   sub $5,1
-  seq $5,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $5,10
   mov $3,$1
   add $3,1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   sub $3,$5
   mul $3,4
   trn $3,3

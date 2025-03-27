@@ -4,6 +4,7 @@
 
 mov $2,$0
 trn $0,1
+add $0,1
 seq $0,209877 ; a(n) = A209874(n)/2: Least m > 0 such that 4*m^2 = -1 modulo the Pythagorean prime A002144(n).
 pow $1,$2
 lpb $2

@@ -17,7 +17,9 @@ lpb $4
   sub $0,$1
   add $0,1
   seq $0,290641 ; Multiplicative with a(p^e) = prime(p-1)^e.
-  seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $5,$0
+  seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $0,$5
   seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   mul $1,$0
   add $3,$1

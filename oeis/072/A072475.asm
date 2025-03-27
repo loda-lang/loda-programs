@@ -15,7 +15,12 @@ lpb $3
   mov $0,1
   add $0,$2
   bin $0,2
-  seq $0,53767 ; Sum of first n composite numbers.
+  add $0,2
+  seq $0,141468 ; Zero together with the nonprime numbers A018252.
+  mov $6,$0
+  seq $6,101203 ; a(n) = sum of nonprimes <= n.
+  mov $0,$6
+  sub $0,1
   mov $1,$3
   mul $1,$0
   add $4,$1

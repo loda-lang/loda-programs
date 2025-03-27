@@ -1,13 +1,14 @@
 ; A137701: a(n) = semiprime(n)^prime(n).
 ; Submitted by arkiss
 ; 16,216,59049,10000000,4049565169664,1946195068359375,30041942495081691894741,32064977213018365645815808,142108547152020037174224853515625,108199957741720996894562347292921981566976,118558347188026655500106547231096910504441858017
-; Formula: a(n) = truncate(A176540(n+1)^A000040(n))
+; Formula: a(n) = truncate(A001358(n)^A000040(n))
 
 #offset 1
 
+mov $2,$0
+seq $2,1358 ; Semiprimes (or biprimes): products of two primes.
 mov $1,$0
-add $1,1
-seq $1,176540 ; 1 together with the semiprimes.
+mov $1,$2
 seq $0,40 ; The prime numbers.
 pow $1,$0
 mov $0,$1

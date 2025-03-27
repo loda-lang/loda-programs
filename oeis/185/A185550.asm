@@ -9,8 +9,14 @@ mov $1,2
 mov $2,$0
 pow $2,2
 lpb $2
+  mov $4,$1
+  pow $4,3
   mov $3,$1
-  seq $3,185549 ; a(n) = ceiling(n^(3/2)); complement of A185550.
+  min $3,1
+  sub $4,$3
+  nrt $4,2
+  add $4,$3
+  mov $3,$4
   sub $3,2
   add $0,1
   add $1,1

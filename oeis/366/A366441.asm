@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 seq $0,254050 ; Permutation of odd numbers: a(n) = (2*(A249745(n))) - 1 = A064989(A007310(n)).
 mul $0,2
 sub $0,1

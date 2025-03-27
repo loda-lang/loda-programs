@@ -10,10 +10,16 @@ lpb $2
   add $0,$2
   mov $3,$0
   max $3,0
-  seq $3,185549 ; a(n) = ceiling(n^(3/2)); complement of A185550.
-  mov $0,$3
+  mov $6,$3
+  pow $6,3
+  min $3,1
+  sub $6,$3
+  nrt $6,2
+  add $6,$3
+  mov $0,$6
   mov $1,$2
-  mul $1,$3
+  mul $1,$6
+  mov $3,$6
   add $4,$1
 lpe
 min $5,1

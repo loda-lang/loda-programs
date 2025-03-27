@@ -2,7 +2,8 @@
 ; Submitted by Christian Krause
 ; 5,11,13,17,19,23,29,31,37,41,47,53,59,61,67,71,73
 
-add $0,1
+#offset 1
+
 mov $1,$0
 pow $0,2
 lpb $0

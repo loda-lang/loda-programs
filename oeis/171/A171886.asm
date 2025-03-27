@@ -10,7 +10,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,8949 ; Triangle read by rows of partial sums of binomial coefficients: T(n,k) = Sum_{i=0..k} binomial(n,i) (0 <= k <= n); also dimensions of Reed-Muller codes.
-  seq $3,240388 ; A sequence related to the Stern sequence s(n) (A002487), defined by w(n) = s(3n)/2.
+  mul $3,3
+  seq $3,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+  div $3,2
   equ $3,1
   sub $0,$3
   add $1,1

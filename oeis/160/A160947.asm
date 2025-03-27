@@ -4,6 +4,7 @@
 
 #offset 1
 
+add $0,1
 seq $0,253205 ; Natural numbers n such that n-1 is divisible by the sum of the decimal digits of n.
 sub $0,1
 mov $1,$0

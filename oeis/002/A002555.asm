@@ -7,7 +7,7 @@
 
 sub $0,1
 mov $1,$0
-seq $1,1824 ; Central factorial numbers.
+seq $1,1824 ; Central factorial numbers: 1st subdiagonal of A008956.
 add $0,1
 mul $0,2
 seq $0,165 ; Double factorial of even numbers: (2n)!! = 2^n*n!.

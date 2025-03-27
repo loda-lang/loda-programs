@@ -11,6 +11,7 @@ add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,2
   seq $3,237353 ; For n=g+h, a(n) is the minimum value of omega(g)+omega(h).
   equ $3,2
   sub $0,$3

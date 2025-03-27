@@ -13,7 +13,13 @@ lpb $2
   mov $3,$1
   seq $3,227870 ; Numbers with equal number of even and odd digits.
   mov $5,$3
-  seq $3,46523 ; Smallest number with same prime signature as n.
+  mov $6,$3
+  seq $6,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $3,1
+  mov $3,$6
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$6
+  seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $3,48675 ; If n = p_i^e_i * ... * p_k^e_k, p_i < ... < p_k primes (with p_i = prime(i)), then a(n) = (1/2) * (e_i * 2^i + ... + e_k * 2^k).
   add $3,1
   equ $3,2

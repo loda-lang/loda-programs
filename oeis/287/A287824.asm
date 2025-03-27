@@ -1,11 +1,35 @@
 ; A287824: a(n) = A287730(n)*A001511(n).
 ; Submitted by Matthias Lehmkuhl
 ; 0,2,1,0,1,2,2,4,3,4,3,3,2,2,1,0,1,2,2,3,3,4,3,4,4,6,5,6,5,6,4,6,5,8,7,9,8,10,7,8,7,10,8,9,7,8,5,5,4,6,5,6,5,6,4,4,3,4,3,3,2,2,1,0,1,2,2,3,3,4,3,4,4,6,5,6,5,6,4,5
-; Formula: a(n) = A287730(n)*A001511(n)
 
 #offset 1
 
 mov $1,$0
-seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
-seq $0,287730 ; The s-fusc function s(n) = a(n): a(1) = 0, a(2n) = A287729(n), a(2n+1) = A287729(n) + A287729(n+1).
+mul $1,2
+mov $2,$1
+sub $2,1
+mov $4,0
+bxo $1,$2
+add $1,1
+div $1,2
+log $1,2
+mov $3,1
+mov $7,1
+sub $0,1
+mul $0,4
+lpb $0
+  div $0,2
+  max $0,$7
+  mov $5,1
+  add $5,$0
+  div $5,2
+  mod $5,2
+  mov $6,$4
+  sub $6,$3
+  mul $7,-1
+  add $4,$3
+  mul $5,$6
+  add $3,$5
+lpe
+mov $0,$6
 mul $0,$1

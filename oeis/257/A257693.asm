@@ -2,6 +2,9 @@
 ; Submitted by Matt
 ; 18,72,90,114,360,378,432,450,456,474,498,552,570,594,618,672,690,714,2160,2178,2232,2250,2256,2274,2520,2538,2592,2610,2616,2634,2640,2658,2712,2730,2736,2754,2760,2778,2832,2850,2856,2874,2898,2952,2970,2994,3240,3258,3312,3330,3336,3354,3378,3432,3450,3474,3498,3552,3570,3594,3618,3672,3690,3714,3960,3978,4032,4050,4056,4074,4098,4152,4170,4194,4218,4272,4290,4314,4338,4392
 
+#offset 1
+
+sub $0,1
 mov $1,3
 mov $2,$0
 add $2,11
@@ -18,7 +21,9 @@ lpb $2
   div $4,$3
   mov $3,$4
   add $3,1
-  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $5,$3
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $3,37916 ; Concatenate exponents in prime factorization of n.
   seq $3,4186 ; Arrange digits of n in decreasing order.

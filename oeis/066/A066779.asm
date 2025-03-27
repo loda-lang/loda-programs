@@ -5,9 +5,9 @@
 #offset 1
 
 lpb $0
-  mov $2,$0
   mov $4,0
   mov $5,2
+  mov $2,$0
   lpb $2
     mov $6,$2
     div $6,4

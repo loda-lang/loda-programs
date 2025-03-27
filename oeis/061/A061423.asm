@@ -16,7 +16,7 @@ lpb $2
   seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
   mov $4,$3
   seq $4,55642 ; Number of digits in the decimal expansion of n.
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   mul $3,2
   div $3,$4
   add $3,1

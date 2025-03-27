@@ -11,7 +11,15 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,190440 ; [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(golden ratio,4,0) and []=floor.
+  mov $5,$3
+  mul $3,2
+  mul $5,8
+  add $5,$3
+  mul $5,$3
+  nrt $5,2
+  add $5,$3
+  mod $5,4
+  mov $3,$5
   equ $3,2
   sub $0,$3
   add $1,1

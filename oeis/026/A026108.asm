@@ -9,8 +9,22 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,16324 ; Expansion of 1/((1-2x)(1-9x)(1-12x)).
+  mov $4,12
+  pow $4,$0
+  mul $4,168
+  add $0,1
+  mov $5,2
+  pow $5,$0
+  mul $0,2
+  add $0,1
+  mov $6,3
+  pow $6,$0
+  mul $6,5
+  add $4,$5
+  sub $4,$6
+  div $4,35
+  mov $0,$4
   mul $1,5
-  add $1,$0
+  add $1,$4
 lpe
 mov $0,$1

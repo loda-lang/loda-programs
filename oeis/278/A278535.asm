@@ -1,7 +1,7 @@
 ; A278535: a(n) = A046523(A253565(n)).
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,2,4,2,4,6,8,2,4,6,8,6,12,12,16,2,4,6,8,6,12,12,16,6,12,30,24,12,36,24,32,2,4,6,8,6,12,12,16,6,12,30,24,12,36,24,32,6,12,30,24,30,60,60,48,12,36,60,72,24,72,48,64,2,4,6,8,6,12,12,16,6,12,30,24,12,36,24,32
-; Formula: a(n) = A046523(truncate((A057335(A341915(A335858(n)))-1)/A293810(A057335(A341915(A335858(n)))-1))+1)
+; Formula: a(n) = A124859(A181819(truncate((A057335(A341915(A335858(n)))-1)/A293810(A057335(A341915(A335858(n)))-1))+1)*A181811(A181819(truncate((A057335(A341915(A335858(n)))-1)/A293810(A057335(A341915(A335858(n)))-1))+1)))
 
 seq $0,335858 ; Nonnegative integers ordered by binary length and then lexicographically by run lengths (considering least significant runs first).
 seq $0,341915 ; For any nonnegative number n with runs in binary expansion (r_1, ..., r_w), a(n) = Sum_{k = 1..w} 2^(r_1 + ... + r_k - 1).
@@ -12,4 +12,10 @@ seq $0,293810 ; The truncated kernel function of n: the product of distinct prim
 div $1,$0
 mov $0,$1
 add $0,1
-seq $0,46523 ; Smallest number with same prime signature as n.
+mov $2,$0
+seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $0,1
+mov $0,$2
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$2
+seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

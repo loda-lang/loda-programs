@@ -7,7 +7,13 @@
 mov $1,$0
 seq $1,6068 ; a(n) is Gray-coded into n.
 mov $3,$1
-seq $0,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+mul $0,2
+mov $5,$0
+sub $5,1
+bxo $0,$5
+add $0,1
+div $0,2
+log $0,2
 div $1,2
 bxo $3,$1
 mov $1,$3
@@ -18,9 +24,17 @@ seq $1,293810 ; The truncated kernel function of n: the product of distinct prim
 div $4,$1
 mov $1,$4
 add $1,1
-seq $1,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mov $6,$1
+seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $1,$6
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-seq $1,46523 ; Smallest number with same prime signature as n.
+mov $7,$1
+seq $7,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $1,1
+mov $1,$7
+seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $1,$7
+seq $1,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
 mov $2,$0
 add $0,$1
 pow $0,2

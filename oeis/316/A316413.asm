@@ -13,7 +13,8 @@ lpb $2
   seq $7,56239 ; If n = Product_{k >= 1} (p_k)^(c_k) where p_k is k-th prime and c_k >= 0 then a(n) = Sum_{k >= 1} k*c_k.
   mov $3,$1
   add $3,1
-  mov $8,$3
+  mov $8,$1
+  add $8,2
   seq $8,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$8
   add $3,1

@@ -15,6 +15,7 @@ lpb $2
   seq $5,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
   add $5,1
   mov $6,$3
+  add $6,1
   seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   add $1,1
   mov $3,$6

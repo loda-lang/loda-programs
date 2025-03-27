@@ -16,7 +16,13 @@ lpb $2
   sub $0,$3
   trn $0,1
   add $0,1
-  seq $0,46523 ; Smallest number with same prime signature as n.
+  mov $4,$0
+  seq $4,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+  sub $0,1
+  mov $0,$4
+  seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $0,$4
+  seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $0,85089 ; Number of distinct prime signatures arising up to n.
   mov $1,0
 lpe

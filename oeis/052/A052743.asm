@@ -4,7 +4,7 @@
 
 mov $1,$0
 add $0,2
-seq $0,25246 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-3)*a(3) for n >= 4.
+seq $0,25246 ; a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ... + a(n-3)*a(3) for n >= 4, with initial terms 1, 0, 1, 1.
 lpb $1
   mul $0,$1
   sub $1,1

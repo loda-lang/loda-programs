@@ -11,4 +11,11 @@ lpb $1
   mov $1,14
   add $0,1
 lpe
-seq $0,51109 ; Expansion of g.f. (1+2*x+5*x^2)/(1-10*x^3).
+mov $3,$0
+div $3,3
+mov $2,10
+pow $2,$3
+mod $0,3
+pow $0,2
+add $0,1
+mul $0,$2

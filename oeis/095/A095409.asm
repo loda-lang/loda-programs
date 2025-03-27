@@ -1,4 +1,4 @@
-; A095409: Numbers n such that total number of decimal digits of all distinct prime factors of n is smaller than number of digits of n.
+; A095409: Numbers k such that total number of decimal digits of all distinct prime factors of k is smaller than number of digits of k.
 ; Submitted by ChelseaOilman
 ; 1,16,25,27,32,49,64,81,100,108,112,121,125,128,135,144,147,160,162,169,175,189,192,196,200,216,224,225,243,245,250,256,288,289,320,324,343,361,375,384,392,400,405,432,441,448,486,500,512,529,567,576,625,640
 

@@ -12,6 +12,7 @@ lpb $0
   lpb $4
     trn $4,1
     mov $7,$4
+    add $7,1
     seq $7,215947 ; Difference between the sum of the even divisors and the sum of the odd divisors of 2n.
     mov $9,10
     add $9,$5

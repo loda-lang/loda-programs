@@ -10,6 +10,7 @@ mov $2,$0
 add $2,7
 pow $2,2
 lpb $2
+  add $3,2
   seq $3,258409 ; Greatest common divisor of all (d-1)'s, where the d's are the positive divisors of n.
   mod $3,$1
   trn $3,2

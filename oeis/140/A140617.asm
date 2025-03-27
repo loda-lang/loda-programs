@@ -14,7 +14,13 @@ lpb $2
   seq $3,168539 ; Terms of A123239 which are prime in Z(i), Z(rho) and Z(sqrt(2)).
   mov $5,$3
   mov $6,$3
-  seq $6,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+  mul $6,2
+  mov $7,$6
+  sub $7,1
+  bxo $6,$7
+  add $6,1
+  div $6,2
+  log $6,2
   seq $3,35210 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 28.
   mul $3,$6
   equ $3,0

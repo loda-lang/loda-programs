@@ -1,10 +1,12 @@
 ; A037019: Let n = p_1*p_2*...*p_k be the prime factorization of n, with the primes sorted in descending order. Then a(n) = 2^(p_1 - 1)*3^(p_2 - 1)*...*A000040(k)^(p_k - 1).
 ; Submitted by Fardringle
 ; 1,2,4,6,16,12,64,30,36,48,1024,60,4096,192,144,210,65536,180,262144,240,576,3072,4194304,420,1296,12288,900,960,268435456,720,1073741824,2310,9216,196608,5184,1260,68719476736,786432,36864,1680,1099511627776,2880,4398046511104,15360,3600,12582912,70368744177664,4620,46656,6480,589824,61440,4503599627370496,6300,82944,6720,2359296,805306368,288230376151711744,5040,1152921504606846976,3221225472,14400,30030,331776,46080,73786976294838206464,983040,37748736,25920,1180591620717411303424,13860
-; Formula: a(n) = A124859(A108951(A290641(n)))
+; Formula: a(n) = A124859(A290641(n)*A181811(A290641(n)))
 
 #offset 1
 
 seq $0,290641 ; Multiplicative with a(p^e) = prime(p-1)^e.
-seq $0,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mov $1,$0
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$1
 seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.

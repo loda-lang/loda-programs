@@ -8,6 +8,7 @@ mov $1,$0
 sub $0,2
 lpb $0
   trn $0,1
+  add $0,1
   seq $0,209624 ; Primes separated from their previous adjacent primes by a prime number of successive composites.
   sub $0,1
   mov $1,$0

@@ -8,7 +8,18 @@ mov $2,$0
 pow $2,4
 lpb $2
   add $3,1
-  seq $3,126654 ; A 3 x 3 magic square.
+  mov $5,$3
+  mod $3,2
+  sub $3,4
+  mul $5,2
+  mod $5,7
+  mul $5,$3
+  mul $3,7
+  add $3,$5
+  add $3,5
+  mod $3,10
+  add $3,10
+  mul $3,4
   pow $3,2
   sub $3,1
   add $4,1

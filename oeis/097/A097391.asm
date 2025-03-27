@@ -1,4 +1,4 @@
-; A097391: The number of hierarchies with at least one subhierarchy composed of exactly 2 levels and no subhierarchy with more than 2 levels.
+; A097391: The number of hierarchies of n labeled elements with at least one subhierarchy composed of exactly 2 levels and no subhierarchy with more than 2 levels.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,3,8,17,37,71,138,252,458
 ; Formula: a(n) = 0^n-A000041(n)+A000219(n)

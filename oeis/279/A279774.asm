@@ -13,7 +13,7 @@ lpb $2
   mul $3,4
   mov $5,$3
   seq $5,55642 ; Number of digits in the decimal expansion of n.
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   mov $6,$3
   neq $6,0
   div $3,$5

@@ -18,8 +18,22 @@ lpb $4
   mov $6,6
   pow $6,$0
   mul $6,2
-  seq $0,1553 ; a(n) = 1^n + 2^n + ... + 6^n.
-  sub $6,$0
+  mov $7,2
+  pow $7,$0
+  mov $8,3
+  pow $8,$0
+  mov $10,6
+  pow $10,$0
+  mov $9,5
+  pow $9,$0
+  add $9,$8
+  add $9,$7
+  pow $7,2
+  add $9,$7
+  add $9,$10
+  add $9,1
+  sub $6,$9
+  mov $0,$9
   mov $0,$6
   add $0,$5
   add $0,1

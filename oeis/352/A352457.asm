@@ -1,6 +1,6 @@
 ; A352457: Codimension of Lyndon symmetric functions of degree n.
 ; Submitted by Simon Strandgaard
-; 0,0,0,1,1,1,2,3,4,4,4,7,10,12,15
+; 0,0,0,1,1,1,2,3,4,4,4,7,10,12,15,24,27,31,40,50,59,78
 
 #offset 1
 

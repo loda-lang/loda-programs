@@ -1,4 +1,4 @@
-; A093519: Numbers n with no representation as the sum of exactly 2 generalized pentagonal numbers.
+; A093519: Numbers with no representation as the sum of two (not necessarily distinct) generalized pentagonal numbers.
 ; Submitted by PDW
 ; 11,18,21,25,32,39,43,46,49,54,60,65,67,68,74,76,81,87,88,90,95,98,106,109,111,113,116,120,123,125,130,136,137,142,144,153,158,159,163,164,165,172,173,175,179,182,186,193,197,201,204,205,207,208,214,219,220
 

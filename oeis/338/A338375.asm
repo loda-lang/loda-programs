@@ -4,7 +4,6 @@
 
 #offset 1
 
-sub $0,1
 mul $0,2
 seq $0,259877 ; If n is even then a(n) = n!/( 2^(n/2)*(n/2)! ), otherwise a(n) = n!/( 3*2^((n-1)/2)*((n-3)/2)! ).
 lpb $0

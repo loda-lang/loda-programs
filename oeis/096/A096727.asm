@@ -16,7 +16,19 @@ lpb $0
   dif $3,2
   mov $6,-1
   pow $6,$3
-  seq $3,118 ; Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
+  mov $7,0
+  equ $7,$3
+  mul $7,23
+  sub $3,1
+  mov $8,-1
+  pow $8,$3
+  mul $8,2
+  bin $8,2
+  add $3,1
+  seq $3,593 ; Sum of odd divisors of n.
+  mul $3,$8
+  mul $3,8
+  sub $3,$7
   mul $3,$6
   mul $3,$1
   div $3,2

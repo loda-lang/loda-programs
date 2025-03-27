@@ -1,9 +1,10 @@
 ; A236185: Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
 ; Submitted by Science United
 ; 4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6
-; Formula: a(n) = 2*floor((binomial((n+1)%8+5,2)+2)/3)^2-10*truncate((2*floor((binomial((n+1)%8+5,2)+2)/3)^2-6)/10)-6
+; Formula: a(n) = 2*floor((binomial(n%8+5,2)+2)/3)^2-10*truncate((2*floor((binomial(n%8+5,2)+2)/3)^2-6)/10)-6
 
-add $0,1
+#offset 1
+
 mod $0,8
 add $0,5
 bin $0,2

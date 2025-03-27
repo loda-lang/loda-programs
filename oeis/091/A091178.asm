@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,227990 ; 3^a(n) is the highest power of 3 dividing prime(n)+1.
   equ $3,0
   sub $0,$3

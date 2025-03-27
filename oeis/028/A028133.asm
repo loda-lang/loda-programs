@@ -9,7 +9,21 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,19316 ; Expansion of 1/((1-4x)(1-6x)(1-7x)).
+  mov $4,4
+  pow $4,$0
+  mov $5,6
+  pow $5,$0
+  mul $5,18
+  mov $6,7
+  pow $6,$0
+  mul $4,8
+  div $4,3
+  mul $6,49
+  div $6,3
+  sub $4,$5
+  add $4,$6
+  mov $0,$4
+  add $0,1
   mul $1,11
   add $1,$0
 lpe

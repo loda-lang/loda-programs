@@ -1,12 +1,46 @@
 ; A338690: Inverse Moebius transform of A209615.
 ; Submitted by amargo133
 ; 1,0,0,1,2,0,0,0,1,0,0,0,2,0,0,1,2,0,0,2,0,0,0,0,3,0,0,0,2,0,0,0,0,0,0,1,2,0,0,0,2,0,0,0,2,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,2,0,0,1,4,0,0,2,0,0,0,0,2,0,0,0,0,0,0,2
-; Formula: a(n) = A002654(n)*(-2*truncate(A001511(n)/2)+A001511(n))
 
 #offset 1
 
 mov $1,$0
-seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+mul $1,2
+mov $2,$1
+sub $2,1
+mov $7,0
+mov $9,0
+bxo $1,$2
+add $1,1
+div $1,2
+log $1,2
 mod $1,2
-seq $0,2654 ; Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
+mov $4,$0
+lex $4,2
+mov $8,3
+mov $3,2
+pow $3,$4
+mov $6,$0
+div $6,$3
+div $6,2
+add $6,3
+lpb $6
+  sub $6,$8
+  mov $10,$6
+  max $10,0
+  mul $10,4
+  mov $4,$10
+  nrt $4,2
+  add $10,2
+  mov $5,$10
+  nrt $5,2
+  mov $10,$5
+  add $10,$4
+  mod $10,2
+  mov $8,2
+  add $8,$7
+  add $9,$10
+  add $7,2
+lpe
+mov $0,$9
 mul $0,$1

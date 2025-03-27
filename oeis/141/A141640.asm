@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   seq $3,135681 ; a(n)=n if n=1 or if n=prime. Otherwise, n=4 if n is even and n=1 if n is odd.
   equ $3,1
   sub $0,$3

@@ -2,6 +2,9 @@
 ; Submitted by [SG]KidDoesCrunch
 ; 0,1,3,11,103,343,4095,14571,190651,9586983,35791471
 
+#offset 1
+
+sub $0,1
 equ $1,$0
 add $0,1
 seq $0,40 ; The prime numbers.

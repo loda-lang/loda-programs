@@ -13,13 +13,13 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    sub $4,1
     mov $7,$4
     seq $7,216886 ; Primes p such that x^59 = 2 has a solution mod p.
     mov $9,10
     add $9,$5
     min $10,$0
     mov $11,2
+    sub $4,1
     max $4,$5
     mul $7,$$9
     gcd $4,$10

@@ -2,8 +2,11 @@
 ; Submitted by zombie67 [MM]
 ; 2,3,4,7,8,15,22,43,44,87,130,259,302,603,904,1807
 
+#offset 1
+
 mov $1,1
 mov $2,3
+sub $0,1
 lpb $0
   add $1,1
   mov $3,$0

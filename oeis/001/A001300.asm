@@ -10,7 +10,16 @@ lpb $1
   sub $1,$4
   mov $3,$1
   max $3,0
-  seq $3,1304 ; Expansion of 1/((1-x)^2*(1-x^2)*(1-x^5)).
+  mov $5,$3
+  pow $5,2
+  mul $5,2
+  mov $6,$3
+  mul $6,11
+  add $5,$6
+  add $5,18
+  add $3,8
+  mul $3,$5
+  div $3,120
   add $2,$3
   mov $4,10
 lpe

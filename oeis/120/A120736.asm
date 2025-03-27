@@ -11,7 +11,12 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,137927 ; a(n) = the largest divisor of A000005(n) that is coprime to n. (A000005(n) = the number of positive divisors of n.).
+  mov $6,$3
+  pow $6,8
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  mov $5,$3
+  gcd $5,$6
+  div $3,$5
   equ $3,1
   sub $0,$3
   add $1,1

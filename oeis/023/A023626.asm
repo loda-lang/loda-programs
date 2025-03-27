@@ -16,6 +16,7 @@ lpb $0
     sub $4,1
     mov $7,$4
     trn $7,1
+    add $7,1
     seq $7,216886 ; Primes p such that x^59 = 2 has a solution mod p.
     mov $9,10
     add $9,$5

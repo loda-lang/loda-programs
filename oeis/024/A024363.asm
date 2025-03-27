@@ -28,7 +28,9 @@ lpb $2
   add $6,1
   div $6,2
   add $0,1
-  seq $0,46079 ; Number of Pythagorean triangles with leg n.
+  dif $0,2
+  seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+  div $0,3
   add $0,$6
   mul $0,$4
   add $1,$0

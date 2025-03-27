@@ -4,7 +4,7 @@
 
 lpb $0
   mov $2,$0
-  seq $2,293543 ; a(n) is the least integer k such that k/Fibonacci(n) > 1/3.
+  seq $2,293543 ; a(n) = ceiling(Fibonacci(n)/3).
   sub $0,1
   add $1,$2
 lpe

@@ -11,10 +11,12 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $6,$5
   mov $3,$1
   add $3,1
   seq $3,125903 ; a(n) = product of the first n primes which are coprime to n.
+  seq $5,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $5,$6
   gcd $5,$3
   mov $3,$5
   seq $3,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.

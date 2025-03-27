@@ -10,8 +10,18 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,267541 ; Expansion of (2 + 4*x + x^2 + x^3 + 2*x^4 + x^5)/(1 - x - x^5 + x^6).
-  sub $3,1
+  mul $3,4
+  mov $6,$3
+  mod $6,5
+  pow $6,2
+  div $3,5
+  mov $7,$3
+  mul $7,11
+  add $6,$7
+  add $6,17
+  div $6,4
+  mov $3,$6
+  sub $3,3
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

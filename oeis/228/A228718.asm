@@ -2,7 +2,10 @@
 ; Submitted by Mumps
 ; 1,1,1,2,3,4,8,12,17,27,40
 
+#offset 1
+
 mov $1,126785
+sub $0,1
 lpb $0
   mov $3,$2
   lpb $3

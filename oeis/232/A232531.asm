@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,259829 ; a(n) = (-1)^floor(n/2) * A035185(n).
   equ $3,0
   sub $0,$3

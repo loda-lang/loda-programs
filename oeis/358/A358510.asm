@@ -10,7 +10,13 @@ add $2,2
 pow $2,2
 lpb $2
   add $3,1
-  seq $3,342991 ; Left(0)/right(1) turning sequence needed to traverse the Stern-Brocot tree (A007305, A047679) from the root down to e (A001113).
+  bxo $3,1
+  mul $3,4
+  nrt $3,2
+  add $3,1
+  div $3,2
+  add $3,1
+  mod $3,2
   add $3,$4
   sub $3,1
   gcd $3,2

@@ -10,4 +10,15 @@ lpb $1
   sub $1,4
   add $0,1
 lpe
-seq $0,267541 ; Expansion of (2 + 4*x + x^2 + x^3 + 2*x^4 + x^5)/(1 - x - x^5 + x^6).
+mul $0,4
+mov $2,$0
+mod $2,5
+pow $2,2
+div $0,5
+mov $3,$0
+mul $3,11
+add $2,$3
+add $2,17
+div $2,4
+mov $0,$2
+sub $0,2

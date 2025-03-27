@@ -9,8 +9,20 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,18206 ; Expansion of 1/((1-3x)(1-10x)(1-11x)).
+  add $0,2
+  mov $4,11
+  pow $4,$0
+  mul $4,7
+  mov $5,10
+  pow $5,$0
+  mul $5,8
+  mov $6,3
+  pow $6,$0
+  sub $4,$5
+  add $4,$6
+  div $4,56
+  mov $0,$4
   mul $1,12
-  add $1,$0
+  add $1,$4
 lpe
 mov $0,$1

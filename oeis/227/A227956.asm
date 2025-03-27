@@ -2,8 +2,11 @@
 ; Submitted by Sphynx
 ; 3,4,6,8,12,14,18,20,24,30,32,38,44,62
 
+#offset 1
+
 mov $2,$0
-add $2,6
+sub $0,1
+add $2,5
 pow $2,3
 lpb $2
   add $3,1

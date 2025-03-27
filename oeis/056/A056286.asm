@@ -11,8 +11,27 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,920 ; Differences of 0: 6!*Stirling2(n,6).
-  add $3,$0
+  mov $5,5
+  pow $5,$0
+  mul $5,6
+  mov $6,4
+  pow $6,$0
+  mul $6,15
+  mov $7,3
+  pow $7,$0
+  mul $7,20
+  mov $8,2
+  pow $8,$0
+  mul $8,15
+  mov $4,6
+  pow $4,$0
+  sub $4,$5
+  add $4,$6
+  sub $4,$7
+  add $4,$8
+  sub $4,6
+  mov $0,$4
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

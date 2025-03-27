@@ -9,9 +9,9 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $4,$1
-  seq $4,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $4,10
   mov $3,$1
-  seq $3,53737 ; Sum of digits of (n written in base 4).
+  dgs $3,4
   sub $3,$4
   equ $3,0
   sub $0,$3

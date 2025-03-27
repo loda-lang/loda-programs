@@ -1,11 +1,13 @@
 ; A239564: a(n) = (round(c^prime(n)) - 1)/prime(n), where c is the pentanacci constant (A103814).
 ; Submitted by NeoGen
 ; 154,504,5758,19912,245714,11251030,40679232,1967728552,26525975822,97753187576,1335948880418,68398141417510,3547322151373882,13260715720748120,697034813138756392,9825603574709578482,36935066391752894480,1970457739485406707872
-; Formula: a(n) = A280303(A000040(n+5))-1
+; Formula: a(n) = A280303(A000040(n))-1
+
+#offset 5
 
 mov $1,$0
-add $1,5
 seq $1,40 ; The prime numbers.
+sub $0,5
 mov $0,$1
 seq $0,280303 ; Number of binary necklaces of length n with no subsequence 00000.
 sub $0,1

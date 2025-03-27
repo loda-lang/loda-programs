@@ -1,4 +1,4 @@
-; A083534: First difference sequence of A007617. Difference between consecutive values not being in the range of phi[A000010].
+; A083534: First difference sequence of A007617. Difference between consecutive values not being in the range of phi (A000010).
 ; Submitted by TheKillerChicken
 ; 2,2,2,2,2,1,1,2,2,2,2,2,1,1,2,2,2,1,1,2,1,1,2,2,2,2,2,1,1,2,2,2,2,2,1,1,2,2,1,1,2,2,1,1,1,1,2,2,2,2,1,1,2,1,1,2,1,1,2,1,1,2,2,2,2,2,2,2,1,1,2,1,1,2,1,1,1,1,2,2
 

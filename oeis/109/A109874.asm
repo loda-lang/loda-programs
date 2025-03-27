@@ -4,7 +4,15 @@
 
 #offset 2
 
+mov $2,1
+mov $3,$0
 mov $1,$0
-seq $1,1142 ; a(n) = Product_{k=1..n} k^(2k - 1 - n).
+lpb $1
+  sub $1,1
+  mov $4,$0
+  bin $4,$1
+  mul $2,$4
+lpe
+mov $1,$2
 lex $1,$0
 mov $0,$1

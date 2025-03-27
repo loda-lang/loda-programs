@@ -13,6 +13,7 @@ lpb $4
   mov $0,$2
   sub $0,$4
   mov $1,$0
+  add $0,1
   seq $0,222890 ; Number of n X 1 0..7 arrays with no element equal to another at a city block distance of exactly two, and new values 0..7 introduced in row major order.
   bin $1,$4
   mul $1,$0

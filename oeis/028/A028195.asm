@@ -9,8 +9,21 @@ lpb $2
   trn $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,20981 ; Expansion of 1/((1-8*x)*(1-11*x)*(1-12*x)).
+  mov $4,8
+  pow $4,$0
+  mov $5,11
+  pow $5,$0
+  mov $6,12
+  pow $6,$0
+  mul $6,36
+  mul $4,16
+  div $4,3
+  mul $5,121
+  div $5,3
+  sub $4,$5
+  add $4,$6
+  mov $0,$4
   mul $1,5
-  add $1,$0
+  add $1,$4
 lpe
 mov $0,$1

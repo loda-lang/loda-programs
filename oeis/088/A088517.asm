@@ -11,6 +11,7 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
+  add $0,1
   seq $0,224731 ; b(n+1) - b(n) + n where b(n) = A095114(n).
   mov $2,$3
   mul $2,$0

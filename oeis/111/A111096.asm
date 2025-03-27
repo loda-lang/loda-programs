@@ -1,16 +1,17 @@
 ; A111096: Partial sums of A137701.
 ; Submitted by Stony666
 ; 16,232,59281,10059281,4049575228945,1950244643588320,30041944445326335483061,32095019157463691981298869,142108579247039194637916834814494,108199957883829576141601541930838816381470,118558455387984539329682688832638841343258239487
-; Formula: a(n) = a(n-1)+truncate(A176540(n+1)^A000040(n)), a(0) = 0
+; Formula: a(n) = a(n-1)+truncate(A001358(n)^A000040(n)), a(0) = 0
 
 #offset 1
 
 lpb $0
   mov $2,$0
   seq $2,40 ; The prime numbers.
+  mov $4,$0
+  seq $4,1358 ; Semiprimes (or biprimes): products of two primes.
   mov $3,$0
-  add $3,1
-  seq $3,176540 ; 1 together with the semiprimes.
+  mov $3,$4
   pow $3,$2
   sub $0,1
   add $1,$3

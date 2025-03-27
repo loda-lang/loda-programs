@@ -10,7 +10,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,86892 ; Greatest common divisor of 2^n-1 and 3^n-1.
+  mov $6,2
+  pow $6,$3
+  mov $5,3
+  pow $5,$3
+  sub $5,$6
+  sub $6,1
+  gcd $6,$5
+  mov $3,$6
   equ $3,1
   sub $0,$3
   add $1,1

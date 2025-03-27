@@ -6,5 +6,5 @@
 #offset 1
 
 sub $0,1
-seq $0,61345 ; Odd prime powers.
+seq $0,61345 ; Powers of odd primes.  Alternatively, 1 and the odd prime powers (p^k, p an odd prime, k >= 1).
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

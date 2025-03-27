@@ -1,6 +1,9 @@
 ; A225491: Maximal frequency depth for multisets over an alphabet of n letters.
 ; 0,4,5,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 
+#offset 1
+
+sub $0,1
 lpb $0
   add $0,2
   mov $2,14

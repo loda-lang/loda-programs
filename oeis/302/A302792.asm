@@ -9,6 +9,7 @@ mov $2,1
 mov $1,$0
 lpb $1
   mov $2,$1
+  add $2,1
   seq $2,223491 ; Largest Fermi-Dirac factor of n.
   div $1,$2
 lpe

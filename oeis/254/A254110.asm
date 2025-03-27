@@ -2,6 +2,7 @@
 ; Submitted by Jave808
 ; 0,1,0,0,2,1,0,0,1,0,0,3,2,1,0,0,1,0,0,2,1,0,0,1,0,0,4,3,2,1,0,0,1,0,0,2,1,0,0,1,0,0,3,2,1,0,0,1,0,0,2,1,0,0,1,0,0,5,4,3,2,1,0,0,1,0,0,2,1,0,0,1,0,0,3,2,1,0,0,1
 
-add $0,1
+#offset 1
+
 seq $0,123390 ; Triangle read by rows: n-th row starts with n and continues with half the previous value as long as that is even.
 lex $0,2

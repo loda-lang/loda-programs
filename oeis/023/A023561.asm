@@ -8,10 +8,22 @@ sub $0,1
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,202278 ; Right-truncatable Fibonacci numbers: every prefix is Fibonacci number.
+  mov $4,$2
+  mul $2,2
+  mov $5,$2
+  div $2,2
+  mul $4,4
+  add $4,1
+  bin $4,$2
+  nrt $4,4
+  add $2,2
+  bin $2,2
+  mul $4,$5
+  div $4,$2
   add $0,$3
   trn $0,3
-  add $1,$2
+  add $1,$4
+  mov $2,$4
   sub $3,1
 lpe
 mov $0,$1

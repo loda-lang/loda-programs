@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,209544 ; Primes not expressed in form n<+>2, where operation <+> defined in A206853.
   sub $3,1
   mov $5,$3

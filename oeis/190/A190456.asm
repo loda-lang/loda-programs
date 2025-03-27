@@ -13,7 +13,22 @@ pow $3,2
 lpb $3
   mov $4,$2
   add $4,2
-  seq $4,190248 ; a(n) = [nu+nv+nw]-[nu]-[nv]-[nw], where u=(1+sqrt(5))/2, v=u^2, w=u^3, []=floor.
+  mov $6,$4
+  mul $6,4
+  mov $7,$6
+  add $7,$6
+  mul $7,2
+  add $7,$6
+  mul $7,$6
+  nrt $7,2
+  add $7,$6
+  mov $6,$7
+  div $6,2
+  mod $6,4
+  add $6,1
+  div $6,2
+  sub $4,1
+  mov $4,$6
   add $4,$5
   div $4,2
   gcd $4,2

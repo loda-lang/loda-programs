@@ -25,7 +25,7 @@ lpb $2
   div $6,$5
   mul $4,$6
   add $1,9
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   mul $3,2
   div $3,$4
   div $3,2

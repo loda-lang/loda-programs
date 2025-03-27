@@ -8,7 +8,7 @@
 sub $0,1
 mov $1,$0
 add $0,1
-seq $0,215653 ; a(n) = smallest positive m such that m^2=1+k*n with positive k.
+seq $0,215653 ; a(n) = smallest positive m such that m^2 = 1+k*n with positive k.
 sub $0,1
 trn $1,1
 min $1,1

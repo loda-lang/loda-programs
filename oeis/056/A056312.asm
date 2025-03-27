@@ -7,8 +7,24 @@
 mov $1,2
 sub $0,1
 lpb $0
+  mov $4,4
+  pow $4,$0
+  mul $4,5
+  mov $5,3
+  pow $5,$0
+  mul $5,10
+  mov $6,2
+  pow $6,$0
+  mul $6,10
+  mov $3,5
+  pow $3,$0
+  sub $3,$4
+  add $3,$5
+  sub $3,$6
+  add $3,5
   mov $2,$0
-  seq $2,28245 ; a(n) = 5^(n-1) - 4*4^(n-1) + 6*3^(n-1) - 4*2^(n-1) + 1 (essentially Stirling numbers of second kind).
+  mov $2,$3
+  div $2,5
   div $0,$1
   add $1,$2
 lpe

@@ -16,7 +16,7 @@ lpb $4
   add $1,$4
   bin $1,$0
   add $0,2
-  seq $0,52706 ; A simple context-free grammar.
+  seq $0,52706 ; A simple context-free grammar: convolution square of A001002.
   mul $1,$0
   add $3,$1
 lpe

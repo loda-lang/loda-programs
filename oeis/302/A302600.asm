@@ -15,7 +15,16 @@ lpb $2
   seq $3,77106 ; Largest integer cube <= n^2.
   mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  seq $3,26238 ; a(n) = j if n is the j-th prime, else a(n) = k if n is the k-th composite.
+  mov $6,$3
+  seq $6,6530 ; Gpf(n): greatest prime dividing n, for n >= 2; a(1)=1.
+  seq $6,36234 ; Number of primes <= n, if 1 is counted as a prime.
+  mul $6,2
+  sub $6,1
+  seq $3,66246 ; a(n) = 0 unless n is a composite number A002808(k) then a(n) = k.
+  mul $3,2
+  max $6,$3
+  div $6,2
+  mov $3,$6
   equ $3,1
   pow $3,$1
   sub $0,$3

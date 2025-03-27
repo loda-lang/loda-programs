@@ -8,9 +8,13 @@ mov $1,9
 lpb $0
   mov $1,$0
   add $1,1
-  seq $1,280076 ; Numbers n such that Sum_{d|n} tau(d) = Product_{d|n} tau(d).
-  div $1,2
+  seq $1,1747 ; 2 together with primes multiplied by 2.
+  mov $2,$1
+  mul $2,2
+  mul $2,$1
   mov $0,1
+  mov $1,$2
+  div $1,16
 lpe
 mov $0,$1
 sub $0,4

@@ -1,4 +1,4 @@
-; A266576: Decimal expansion of a constant related to the asymptotics of A032302.
+; A266576: Decimal expansion of Pi^2/12 + log(2)^2 + Sum_{j>=1} 1 / (j^2 * 2^(2*j+1)).
 ; Submitted by Science United
 ; 1,4,3,6,7,4,6,3,6,6,8,8,3,6,8,0,9,4,6,3,6,2,9,0,2,0,2,3,8,9,3,5,8,3,3,5,4,2,4,9,9,5,6,4,3,5,6,5,4,8,7,2,1,0,2,6,6,7,2,4,3,9,2,4,8,6,5,0,1,5,7,8,9,2,7,7,3,9,7,7
 

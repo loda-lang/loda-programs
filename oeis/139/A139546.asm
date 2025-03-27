@@ -12,6 +12,7 @@ lpb $2
   trn $4,$0
   add $2,$4
   mov $3,$1
+  add $3,1
   seq $3,216283 ; Number of nonnegative solutions to the equation x^2+5*y^2 = n.
   sub $0,$3
   add $1,1

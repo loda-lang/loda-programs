@@ -8,7 +8,7 @@ lpb $2
   trn $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,53827 ; Sum of digits of (n written in base 6).
+  dgs $0,6
   pow $0,4
   add $1,$0
 lpe

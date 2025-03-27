@@ -11,8 +11,23 @@ lpb $2
   sub $2,1
   mov $0,$1
   gcd $0,$2
-  seq $0,1118 ; Number of labeled ordered set partitions into 5 parts for n>=1, a(0)=1.
-  add $3,$0
+  mov $5,4
+  pow $5,$0
+  mul $5,5
+  mov $6,3
+  pow $6,$0
+  mul $6,10
+  mov $7,2
+  pow $7,$0
+  mul $7,10
+  mov $4,5
+  pow $4,$0
+  sub $4,$5
+  add $4,$6
+  sub $4,$7
+  add $4,5
+  mov $0,$4
+  add $3,$4
 lpe
 div $3,$1
 mov $0,$3

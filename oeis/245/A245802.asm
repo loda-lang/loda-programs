@@ -9,7 +9,7 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,53829 ; Sum of digits of (n written in base 8).
+  dgs $3,8
   mov $4,$3
   add $5,1
   gcd $3,$5

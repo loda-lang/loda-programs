@@ -1,4 +1,4 @@
-; A069900: Integer quotient of largest and smallest prime factors of n is greater than one.
+; A069900: Numbers k such that the integer quotient of largest and smallest prime factors of k is greater than one.
 ; Submitted by LeChat51X
 ; 10,14,20,21,22,26,28,30,33,34,38,39,40,42,44,46,50,51,52,55,56,57,58,60,62,63,65,66,68,69,70,74,76,78,80,82,84,85,86,87,88,90,92,93,94,95,98,99,100,102,104,105,106,110,111,112,114,115,116,117,118,119,120,122,123,124,126,129,130,132,133,134,136,138,140,141,142,145,146,147
 

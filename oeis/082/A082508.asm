@@ -1,4 +1,4 @@
-; A082508: Differences between consecutive primes that are powers of 2 in order of their appearance. Differences the are not powers of 2 are deleted from A001223.
+; A082508: Differences between consecutive primes that are powers of 2 in order of their appearance. Differences that are not powers of 2 are deleted from A001223.
 ; Submitted by Athlici
 ; 1,2,2,4,2,4,2,4,2,4,2,4,2,4,2,4,8,4,2,4,2,4,4,2,2,4,2,2,4,2,4,2,4,2,2,4,2,4,2,4,2,4,8,4,8,4,8,2,2,4,8,4,2,4,8,4,8,4,2,2,2,4,2,2,4,2,4,8,8,8,4,8,4,8,4,2,2,4,2,4
 ; Formula: a(n) = A013632(A061771(n))

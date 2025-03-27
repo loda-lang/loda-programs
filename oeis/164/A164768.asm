@@ -12,7 +12,7 @@ lpb $2
   mov $0,$4
   add $0,$2
   mov $3,$0
-  add $0,1
+  add $0,2
   seq $0,227070 ; Powers n such that the set s(n) = {k > 0 such that k^n ends with k} does not occur for smaller n.
   sub $0,2
   sub $0,$3

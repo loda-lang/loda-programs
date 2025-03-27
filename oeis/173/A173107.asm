@@ -19,6 +19,7 @@ lpb $2
     add $4,1
     sub $0,$4
   lpe
+  add $0,1
   seq $0,224907 ; Numbers n such that the sum of reciprocals of even divisors of n > 1.
   add $1,$0
 lpe

@@ -1,4 +1,4 @@
-; A178441: INVERT transform of A058187, the tetrahedral numbers with repeats
+; A178441: INVERT transform of A058187, the tetrahedral numbers with repeats.
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,7,17,46,119,311,812,2118,5530,14431,37668,98313,256602,669742,1748052,4562490,11908280,31081099,81122927,211734137,552634698,1442399007,3764720003,9826072122,25646447377
 

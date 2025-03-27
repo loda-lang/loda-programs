@@ -11,7 +11,7 @@ lpb $3
   mov $5,$2
   seq $5,4159 ; Sum of digits of n^2.
   mov $4,$2
-  seq $4,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $4,10
   pow $4,2
   sub $4,$5
   equ $4,0

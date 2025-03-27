@@ -22,6 +22,7 @@ lpb $2
     add $5,1
     sub $0,$5
   lpe
+  add $0,1
   seq $0,208602 ; Number of n-bead necklaces labeled with numbers -1..1 not allowing reversal, with sum zero.
   mul $0,$4
   add $1,$0

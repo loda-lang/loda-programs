@@ -9,8 +9,12 @@ sub $0,1
 add $2,9
 pow $2,2
 lpb $2
+  mov $5,$1
+  dgs $5,3
   mov $3,$1
-  seq $3,180017 ; Difference of sums of digits of n in ternary and in binary.
+  dgs $3,2
+  sub $5,$3
+  mov $3,$5
   equ $3,0
   sub $0,$3
   add $1,1

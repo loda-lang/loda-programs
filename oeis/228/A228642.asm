@@ -1,8 +1,11 @@
 ; A228642: Squares of primes mod 100.
 ; Submitted by Skillz
 ; 1,4,9,21,25,29,41,49,61,69,81,89
-; Formula: a(n) = truncate((4*floor((3*floor((10*max(n-1,0)+14)/11)+2*floor((10*max(n-1,0)+24)/11)+17)/2)+n-47)/(4*floor((3*floor((10*max(n-1,0)+14)/11)+2*floor((10*max(n-1,0)+24)/11)+17)/2)-47))^2+4*floor((3*floor((10*max(n-1,0)+14)/11)+2*floor((10*max(n-1,0)+24)/11)+17)/2)-48
+; Formula: a(n) = truncate((4*floor((3*floor((10*max(n-2,0)+14)/11)+2*floor((10*max(n-2,0)+24)/11)+17)/2)+n-48)/(4*floor((3*floor((10*max(n-2,0)+14)/11)+2*floor((10*max(n-2,0)+24)/11)+17)/2)-47))^2+4*floor((3*floor((10*max(n-2,0)+14)/11)+2*floor((10*max(n-2,0)+24)/11)+17)/2)-48
 
+#offset 1
+
+sub $0,1
 mov $1,$0
 trn $0,1
 add $0,2

@@ -10,7 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+  dgs $3,10
   trn $3,2
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,381455 ; Number of multisets that can be obtained by taking the sum of each block of a multiset partition of the prime indices of n into a multiset of constant multisets.
+  seq $3,688 ; Number of Abelian groups of order n; number of factorizations of n into prime powers.
   mov $5,$3
   sub $3,1
   neq $3,0

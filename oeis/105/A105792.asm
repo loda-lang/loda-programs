@@ -8,13 +8,14 @@ sub $0,1
 lpb $0
   mov $1,$0
   trn $1,1
-  add $1,1
-  seq $1,141515 ; a(n) = phi(A067774(n)) where phi is Euler totient function.
-  sub $1,6
+  mov $2,$1
+  seq $2,100318 ; Numbers n such that at least one of n-1 and n+1 is composite.
+  mov $0,0
+  mov $1,$2
+  sub $1,7
   div $1,2
   mul $1,2
   add $1,5
-  mov $0,0
 lpe
 mov $0,$1
 add $0,2

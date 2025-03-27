@@ -10,12 +10,12 @@ mul $2,20
 lpb $2
   sub $2,1
   add $2,$4
-  add $1,7
   mov $3,$1
+  add $3,8
   seq $3,216283 ; Number of nonnegative solutions to the equation x^2+5*y^2 = n.
   min $3,1
   sub $0,$3
-  add $1,1
+  add $1,8
   equ $4,$0
 lpe
 mov $0,$1

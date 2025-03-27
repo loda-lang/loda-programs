@@ -14,6 +14,7 @@ lpb $0
   mul $5,2
   bin $5,2
   mov $4,$0
+  add $4,1
   seq $4,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
   mul $4,$5
   sub $0,1

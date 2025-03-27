@@ -10,7 +10,7 @@ lpb $0
   mov $4,$2
   lpb $4
     mov $7,$4
-    seq $7,100066 ; Expansion of x/((1-x)sqrt(1-4x^2)).
+    seq $7,100066 ; Expansion of x/((1-x)*sqrt(1-4*x^2)).
     mov $9,10
     add $9,$5
     sub $4,1

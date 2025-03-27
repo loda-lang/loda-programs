@@ -4,7 +4,21 @@
 
 mov $1,$0
 add $0,1
-seq $0,915 ; Stirling numbers of first kind s(n+4, n).
+mov $2,$0
+mov $3,$0
+mov $4,$0
+mul $4,485
+add $0,4
+bin $0,5
+pow $2,3
+mul $2,15
+pow $3,2
+mul $3,150
+add $2,$3
+add $2,$4
+add $2,502
+mul $0,$2
+div $0,48
 add $1,1
 lpb $1
   mul $0,$1

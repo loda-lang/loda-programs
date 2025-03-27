@@ -4,7 +4,14 @@
 
 mov $1,$0
 dif $1,2
-seq $1,10197 ; Continued fraction for sqrt(138).
+mov $2,0
+pow $2,$1
+gcd $1,4
+pow $1,4
+add $2,1
+mul $2,12
+div $1,$2
+add $1,1
 div $1,2
 add $1,1
 mov $0,$1

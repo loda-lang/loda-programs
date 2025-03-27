@@ -2,8 +2,11 @@
 ; Submitted by Skillz
 ; 1,0,8,0,9,5,4,0,2
 
+#offset 14
+
 mov $1,$0
-add $1,3
+sub $1,11
+sub $0,14
 mov $2,$0
 mul $0,2
 add $0,1

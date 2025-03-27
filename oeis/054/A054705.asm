@@ -5,8 +5,29 @@
 #offset 1
 
 mov $1,$0
-seq $1,1511 ; The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
+mul $1,2
+mov $2,$1
+sub $2,1
+mov $4,0
+bxo $1,$2
+add $1,1
 div $1,2
-seq $0,7733 ; Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
+log $1,2
+div $1,2
+mov $3,$0
+mov $7,$0
+sub $0,1
+mov $6,$3
+lpb $6
+  equ $3,$4
+  mov $5,$3
+  equ $5,0
+  sub $6,$5
+  add $4,256
+  mul $4,2
+  mod $4,$7
+lpe
+sub $0,$6
+add $0,1
 dif $0,2
 add $0,$1

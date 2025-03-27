@@ -1,6 +1,6 @@
 ; A096577: Number of fixed points of solid partitions under 'time-lapse' operation.
 ; Submitted by Gunnar Hjern
-; 1,0,0,0,1,0,1,0,2,0,2,0,2,0,4
+; 1,0,0,0,1,0,1,0,2,0,2,0,2,0,4,1,5,0,7,1,7,0,14
 
 #offset 1
 

@@ -11,6 +11,7 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
+  add $3,2
   seq $3,222946 ; Triangle for hypotenuses of primitive Pythagorean triangles.
   mov $5,$3
   mul $3,338

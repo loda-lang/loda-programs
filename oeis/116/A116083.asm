@@ -1,4 +1,4 @@
-; A116083: Numbers n such that phi(sigma(n))-sigma(phi(n))=1.
+; A116083: Numbers k such that phi(sigma(k)) - sigma(phi(k)) = 1.
 ; Submitted by Christian Krause
 ; 2,6,8,24,128,384,32768,98304,2147483648,6442450944
 ; Formula: a(n) = truncate(3^min(n-1,(n-1)%2))*b(n-1), b(n) = 2*b(n-2)^2, b(1) = 2, b(0) = 2

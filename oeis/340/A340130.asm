@@ -12,8 +12,15 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  add $0,1
-  seq $0,331390 ; Number of binary matrices with 3 distinct columns and any number of nonzero rows with n ones in every column and rows in nonincreasing lexicographic order.
+  mov $5,$0
+  mul $5,3
+  mov $6,$0
+  add $6,3
+  pow $6,4
+  div $6,16
+  sub $6,$5
+  mov $0,$6
+  sub $0,4
   add $3,$0
   add $4,$3
 lpe

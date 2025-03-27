@@ -6,6 +6,7 @@
 
 sub $0,1
 mov $1,$0
+add $0,1
 seq $0,208650 ; Number of constant paths through the subset array of {1,2,...,n}; see Comments.
 lpb $1
   mul $0,$1

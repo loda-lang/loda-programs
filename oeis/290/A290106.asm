@@ -19,7 +19,6 @@ lpb $0
     sub $3,$4
   lpe
   mov $3,$2
-  sub $3,1
   seq $3,252759 ; Manhattan distance of n in array A246278 from the top left corner: a(1) = 0; for n>1: a(n) = A055396(n) + A246277(n) - 1.
   mov $5,1
   lpb $0

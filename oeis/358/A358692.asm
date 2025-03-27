@@ -1,4 +1,4 @@
-; A358692: Gilbreath transform of primes p(2k) with 2 prefixed; see Comments.
+; A358692: Gilbreath transform of primes p(2*k) with 2 prefixed; see Comments.
 ; Submitted by Science United
 ; 1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 

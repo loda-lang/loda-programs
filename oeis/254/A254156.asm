@@ -2,6 +2,9 @@
 ; Submitted by Fornax
 ; 4,0,0,1,5,0,6,1,7,9
 
+#offset 1
+
+sub $0,1
 lpb $0
   sub $0,1
   add $1,$3

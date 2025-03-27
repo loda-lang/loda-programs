@@ -10,6 +10,7 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,217397 ; Numbers starting with 4.
   mov $5,$3
   seq $3,324910 ; Multiplicative with a(p^e) = (2^e)-1.

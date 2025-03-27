@@ -12,7 +12,23 @@ lpb $3
   mov $0,$4
   sub $0,$3
   add $0,5
-  seq $0,481 ; Stirling numbers of the second kind, S(n,5).
+  mov $6,4
+  pow $6,$0
+  mul $6,5
+  mov $7,3
+  pow $7,$0
+  mul $7,10
+  mov $8,2
+  pow $8,$0
+  mul $8,10
+  mov $5,5
+  pow $5,$0
+  sub $5,$6
+  add $5,$7
+  sub $5,$8
+  add $5,5
+  mov $0,$5
+  div $0,120
   mul $2,6
   add $2,$0
 lpe

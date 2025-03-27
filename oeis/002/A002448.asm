@@ -4,11 +4,11 @@
 
 mov $1,-1
 pow $1,$0
-mov $2,$0
-mov $4,0
 mov $3,0
-equ $3,$2
+equ $3,$0
+mov $4,0
 mov $5,1
+mov $2,$0
 lpb $2
   sub $5,2
   add $2,$5

@@ -12,7 +12,7 @@ lpb $2
   sub $2,1
   mov $3,$1
   add $3,1
-  seq $3,73803 ; Number of divisors of n is smaller than that of sigma(n).
+  seq $3,73803 ; Numbers k such that the number of divisors of k is smaller than that of sigma(k).
   sub $3,1
   mov $5,$3
   add $3,1

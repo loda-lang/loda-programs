@@ -11,6 +11,7 @@ add $2,7
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,216279 ; Number of solutions to the equation x^2+5y^2 = n with x and y > 0.
   min $3,1
   sub $0,$3

@@ -9,6 +9,7 @@ mov $2,$0
 pow $2,2
 lpb $2
   mov $3,$1
+  add $3,1
   seq $3,259179 ; Number of Dyck paths described in A237593 that contain the point (n,n) in the diagram of the symmetric representation of sigma.
   min $3,1
   sub $0,$3

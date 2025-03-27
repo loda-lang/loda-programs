@@ -12,7 +12,6 @@ lpb $2
   mov $3,$1
   add $3,2
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-  sub $3,1
   seq $3,256232 ; Multiplicative with a(2^e) = 1-e, a(3^e) = 1, a(p^e) = e+1 if p>3.
   equ $3,2
   sub $0,$3

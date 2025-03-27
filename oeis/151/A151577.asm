@@ -14,8 +14,30 @@ lpb $4
   mov $0,$2
   trn $0,1
   add $0,4
-  seq $0,498 ; Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3 of A173018).
-  mov $3,$0
+  mov $5,4
+  pow $5,$0
+  mul $5,6
+  mov $8,$0
+  add $8,1
+  mov $6,3
+  pow $6,$0
+  mul $6,$8
+  mul $6,6
+  mov $7,2
+  pow $7,$0
+  mul $7,$8
+  mul $7,$0
+  mul $7,3
+  sub $5,$6
+  add $5,$7
+  mov $9,$0
+  sub $9,1
+  mul $0,$8
+  mul $0,$9
+  sub $5,$0
+  div $5,6
+  mov $0,$5
+  mov $3,$5
 lpe
 min $2,1
 mul $2,$3

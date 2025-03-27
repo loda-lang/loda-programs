@@ -1,4 +1,4 @@
-; A214036: Numbers n such that floor(sqrt(1)) + floor(sqrt(2)) + floor(sqrt(3)) + ... + floor(sqrt(n)) is prime.
+; A214036: Numbers k such that floor(sqrt(1)) + floor(sqrt(2)) + floor(sqrt(3)) + ... + floor(sqrt(k)) is prime.
 ; Submitted by Landjunge
 ; 2,3,4,5,7,8,10,14,36,37,39,42,43,44,46,47
 

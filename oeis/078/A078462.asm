@@ -8,6 +8,7 @@ mov $1,1
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
   seq $2,259829 ; a(n) = (-1)^floor(n/2) * A035185(n).
   mov $3,$0
   equ $3,$2

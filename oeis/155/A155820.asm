@@ -11,8 +11,15 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,155819 ; a(n) = p(n+1)^2 + 2*p(n) + 1; p(n) is the n-th prime number and n >= 1.
-  sub $3,2
+  seq $3,40 ; The prime numbers.
+  mov $6,$3
+  mul $3,2
+  add $6,1
+  seq $6,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  pow $6,2
+  add $6,$3
+  mov $3,$6
+  sub $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

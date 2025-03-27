@@ -10,8 +10,21 @@ lpb $2
   dif $2,$1
   mov $0,$3
   sub $0,$2
-  seq $0,17918 ; Expansion of 1/((1-3x)(1-5x)(1-12x)).
+  add $0,2
+  mov $4,12
+  pow $4,$0
+  mul $4,2
+  mov $5,5
+  pow $5,$0
+  mul $5,9
+  mov $6,3
+  pow $6,$0
+  mul $6,7
+  sub $4,$5
+  add $4,$6
+  div $4,126
+  mov $0,$4
   mul $1,2
-  add $1,$0
+  add $1,$4
 lpe
 mov $0,$1

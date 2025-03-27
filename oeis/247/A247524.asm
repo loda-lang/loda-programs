@@ -9,8 +9,20 @@ sub $0,1
 add $2,1
 pow $2,2
 lpb $2
+  mov $6,$1
+  add $6,1
+  mul $6,2
+  mov $5,2
+  pow $5,$6
+  mov $6,$5
+  mul $5,2
+  mul $6,7
+  sub $6,$5
+  nrt $6,2
+  add $6,1
+  div $6,2
   mov $3,$1
-  seq $3,293333 ; The integer k that minimizes |k/2^n - sqrt(5)|.
+  mov $3,$6
   add $3,$4
   gcd $3,2
   sub $0,$3

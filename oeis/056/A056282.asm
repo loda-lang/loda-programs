@@ -20,7 +20,26 @@ lpb $2
   mov $5,0
   seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
   add $0,1
-  seq $0,920 ; Differences of 0: 6!*Stirling2(n,6).
+  mov $7,5
+  pow $7,$0
+  mul $7,6
+  mov $8,4
+  pow $8,$0
+  mul $8,15
+  mov $9,3
+  pow $9,$0
+  mul $9,20
+  mov $10,2
+  pow $10,$0
+  mul $10,15
+  mov $6,6
+  pow $6,$0
+  sub $6,$7
+  add $6,$8
+  sub $6,$9
+  add $6,$10
+  sub $6,6
+  mov $0,$6
   mul $0,$4
   add $1,$0
 lpe

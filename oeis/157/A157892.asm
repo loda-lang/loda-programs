@@ -1,9 +1,33 @@
 ; A157892: Values of k in A080075.
 ; 1,1,1,3,1,3,1,5,3,7,1,5,3,7,1,9,5,11,3,13,7,15,1,9,5,11,3,13,7,15,1,17,9,19,5,21,11,23,3,25,13,27,7,29,15,31,1,17,9,19,5,21,11,23,3,25,13,27,7,29,15,31,1,33,17,35,9,37,19,39,5,41,21,43,11,45,23,47,3,49
-; Formula: a(n) = truncate(A259445(A112714(n))/2)
+; Formula: a(n) = truncate(truncate((gcd(2*truncate((b(n+1)-15)/9)+1,2)*(2*truncate((b(n+1)-15)/9)+1))/gcd(2*truncate((b(n+1)-15)/9)+1,truncate(2^(2*truncate((b(n+1)-15)/9)+1))))/2), b(n) = b(n-1)+d(n-1), b(3) = 24, b(2) = 15, b(1) = 6, b(0) = 3, c(n) = truncate((6*n+c(n-1))/d(n-1)), c(3) = 2, c(2) = 1, c(1) = 3, c(0) = 3, d(n) = truncate((6*n+c(n-1))/d(n-1))*d(n-1), d(3) = 18, d(2) = 9, d(1) = 9, d(0) = 3
 
 #offset 1
 
-seq $0,112714 ; Numbers of the form k*2^m-1 with k<2^m and k odd.
-seq $0,259445 ; Multiplicative with a(n) = n if n is odd and a(2^s)=2.
+mov $3,0
+mov $4,3
+mov $5,3
+mov $6,3
+add $0,1
+lpb $0
+  sub $0,1
+  add $3,6
+  add $4,$6
+  add $5,$3
+  div $5,$6
+  mul $6,$5
+lpe
+mov $0,$4
+sub $0,15
+div $0,9
+mul $0,2
+add $0,1
+mov $2,2
+pow $2,$0
+mov $1,$0
+gcd $1,2
+mul $1,$0
+gcd $0,$2
+div $1,$0
+mov $0,$1
 div $0,2

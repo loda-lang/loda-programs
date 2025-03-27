@@ -8,6 +8,7 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
+  add $2,2
   seq $2,208529 ; Number of permutations of n > 1 having exactly 2 points on the boundary of their bounding square.
   add $1,$2
   mov $3,2

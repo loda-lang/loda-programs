@@ -1,12 +1,14 @@
 ; A078152: a(n) = A055086(n) - A000005(n).
 ; Submitted by Aurum
 ; 0,0,0,0,1,0,2,0,2,1,3,0,4,2,2,2,5,1,5,2,4,4,6,0,6,5,5,3,7,2,8,4,6,6,6,2,9,7,7,3,9,4,10,6,6,8,10,2,10,7,9,7,11,5,9,6,10,10,12,2,12,10,8,8,11,7,13,9,11,7,13,4,14,12,10,10,12,8,14,6
-; Formula: a(n) = -A000005(n)+A000267(n)-1
+; Formula: a(n) = -A000005(n)+sqrtint(4*n+1)-1
 
 #offset 1
 
 mov $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-seq $0,267 ; Integer part of square root of 4n+1.
+mul $0,4
+add $0,1
+nrt $0,2
 sub $0,1
 sub $0,$1

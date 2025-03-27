@@ -1,6 +1,6 @@
-; A141537: An example of a simple prime-generating formula similar to Rowland's ( a(1) = 7, n>1, a(n) = a(n-1) + gcd(n,a(n-1) ) that is a particular instance of a more general formula. The sequence submitted is the first 20 values that do not equal '1':.
+; A141537: An example of a simple prime-generating algorithm similar to Rowland's (A106108) that is a particular instance of a more general algorithm (see comments).
 ; Submitted by [AF>Amis des Lapins] Jean-Luc
-; 47,227,71,359,113,563,173,839,251,1187,347,1607,461,2099,593,2663,743,3299,911,4007
+; 47,227,71,359,113,563,173,839,251,1187,347,1607,461,2099,593,2663,743,3299,911,4007,1097,4787,1301,5639,1523,6563,43,7559,43,8627,2297,9767,2591,10979,2903,12263,53,13619,3581,41,3947,16547,61,18119,4733,19763,5153,47
 ; Formula: a(n) = A006530((3*n+2)^2+163)
 
 #offset 1

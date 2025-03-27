@@ -9,7 +9,7 @@ mov $1,$0
 lpb $0
   mov $0,$1
   add $0,1
-  seq $0,215653 ; a(n) = smallest positive m such that m^2=1+k*n with positive k.
+  seq $0,215653 ; a(n) = smallest positive m such that m^2 = 1+k*n with positive k.
   pow $1,0
 lpe
 mov $0,$1

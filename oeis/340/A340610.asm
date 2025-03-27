@@ -19,6 +19,7 @@ lpb $2
   seq $4,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   gcd $5,$4
   mov $6,$1
+  add $6,1
   seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$1
   mov $3,$6

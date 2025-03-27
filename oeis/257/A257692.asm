@@ -21,7 +21,9 @@ lpb $2
   div $4,$3
   mov $3,$4
   add $3,1
-  seq $3,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+  mov $5,$3
+  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+  mul $3,$5
   seq $3,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
   seq $3,37916 ; Concatenate exponents in prime factorization of n.
   seq $3,4186 ; Arrange digits of n in decreasing order.

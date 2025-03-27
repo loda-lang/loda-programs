@@ -4,4 +4,4 @@
 ; Formula: a(n) = A201701(A061579(n))
 
 seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-seq $0,201701 ; Riordan triangle ((1-x)/(1-2x), x^2/(1-2x)).
+seq $0,201701 ; Riordan triangle ((1-x)/(1-2*x), x^2/(1-2*x)).

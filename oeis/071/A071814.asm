@@ -12,6 +12,7 @@ lpb $2
   add $4,1
   seq $4,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
   mov $5,$1
+  add $5,1
   seq $5,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
   mov $3,$1
   mov $3,$5

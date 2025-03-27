@@ -13,6 +13,7 @@ seq $1,59893 ; Reverse the order of all but the most significant bit in binary e
 div $1,2
 seq $1,6068 ; a(n) is Gray-coded into n.
 mov $4,$1
+add $0,1
 div $1,2
 bxo $4,$1
 mov $1,$4
@@ -23,11 +24,24 @@ seq $1,293810 ; The truncated kernel function of n: the product of distinct prim
 div $3,$1
 mov $1,$3
 add $1,1
-seq $1,108951 ; Primorial inflation of n: Fully multiplicative with a(p) = p# for prime p, where x# is the primorial A034386(x).
+mov $5,$1
+seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $1,$5
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-seq $1,46523 ; Smallest number with same prime signature as n.
-add $0,1
-seq $0,46523 ; Smallest number with same prime signature as n.
+mov $6,$1
+seq $6,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $1,1
+mov $1,$6
+seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $1,$6
+seq $1,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
+mov $7,$0
+seq $7,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+sub $0,1
+mov $0,$7
+seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
+mul $0,$7
+seq $0,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
 mov $2,$0
 add $0,$1
 pow $0,2
