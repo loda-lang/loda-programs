@@ -328,6 +328,7 @@ A096309: a(1)=1; for n > 1, a(n) is the number of levels in the "stacked" prime 
 A096334: Triangle read by rows: T(n,k) = prime(n)#/prime(k)#, 0<=k<=n.
 A096936: Half of number of integer solutions to the equation x^2 + 3y^2 = n.
 A097272: Least integer with same "mod 2 prime signature" as n.
+A097326: Largest integer m such that m*n has the same decimal digit length as n.
 A098012: Triangle read by rows in which the k-th term in row n (n >= 1, k = 1..n) is Product_{i=0..k-1} prime(n-i).
 A098021: Positions of 0's in the zero-one sequence [nr+2r]-[nr]-[2r], where r=sqrt(2) and [ ]=floor; see A187967.
 A098033: Parity of p*(p+1)/2 for n-th prime p.

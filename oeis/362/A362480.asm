@@ -5,21 +5,19 @@
 mov $6,-1
 add $0,1
 lpb $0
+  gcd $3,$0
+  sub $3,1
   mov $5,$0
-  sub $0,1
-  mov $3,$2
-  equ $3,$2
-  mul $5,2
-  sub $5,1
+  add $5,$3
   pow $5,$6
+  sub $0,1
   mov $4,$2
   bin $4,$0
   mul $4,$5
-  add $2,1
-  mul $3,$4
   add $6,1
   mul $1,-1
   mul $1,$6
-  add $1,$3
+  add $1,$4
+  add $2,1
 lpe
 mov $0,$1

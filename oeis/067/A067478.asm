@@ -14,5 +14,4 @@ mul $1,8
 nrt $1,2
 add $1,1
 pow $1,2
-sub $0,2
 mov $0,$1

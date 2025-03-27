@@ -1,24 +1,11 @@
 ; A380836: a(n) is the smallest k such that tau(2*k) is equal to 2^n, where tau = A000005.
-; Submitted by Science United
+; Submitted by HansCCT
 ; 1,3,12,60,420,3780,41580,540540,8648640,147026880,2793510720,64250746560,1606268664000,46581791256000,1444035528936000,53429314570632000,2190601897395912000,94195881588024216000,4427206434637138152000,216933115297219769448000,11497455110752647780744000
+; Formula: a(n) = truncate(A037992(n)/2)
 
 #offset 1
 
-mov $1,1
-mov $2,1
-lpb $0
-  mov $3,$2
-  lpb $3
-    mov $5,$2
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    add $3,$5
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-  mul $1,$2
-lpe
+mov $1,$0
+seq $1,37992 ; Smallest number with 2^n divisors.
 mov $0,$1
 div $0,2

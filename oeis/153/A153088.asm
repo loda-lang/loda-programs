@@ -26,13 +26,9 @@ lpb $2
   mov $7,$3
   seq $7,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $7,1
-  sub $3,1
-  mov $9,2
-  sub $9,$3
-  mov $8,$9
-  equ $8,0
-  add $9,$8
-  div $3,$9
+  mov $8,2
+  sub $8,$3
+  div $3,$8
   mul $3,$7
   sub $0,$3
   add $1,$4

@@ -13,6 +13,7 @@ lpb $1
   sub $0,1
   mov $2,$0
   max $2,0
+  add $2,1
   seq $2,255346 ; Numbers n such that n and n+1 both have at least two distinct prime factors.
   div $0,2
 lpe

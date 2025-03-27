@@ -7,25 +7,20 @@ pow $2,$0
 add $2,1
 mov $3,$0
 dif $3,2
-mov $5,0
-mov $6,0
 mov $1,-1
 pow $1,$3
+mov $5,0
+mov $4,0
+equ $4,$3
+mov $6,1
 lpb $3
-  add $5,1
-  sub $3,$5
-  add $5,1
+  sub $6,2
+  add $3,$6
 lpe
-gcd $6,$5
-sub $5,1
-sub $3,$5
-max $6,$3
-add $5,$3
-add $5,$6
-add $5,$3
-mov $4,2
-bin $4,$5
-mov $3,$4
+bin $5,$3
+mov $3,$5
+mul $3,2
+sub $3,$4
 mul $3,$1
 mul $3,$2
 div $3,2

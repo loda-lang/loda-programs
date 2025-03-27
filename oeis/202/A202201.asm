@@ -10,6 +10,5 @@ add $2,2
 sub $1,$2
 bin $1,8
 mul $1,$2
-sub $0,1
 mov $0,$1
 mul $0,18

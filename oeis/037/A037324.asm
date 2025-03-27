@@ -1,5 +1,5 @@
 ; A037324: Numbers whose base-5 and base-8 expansions have the same digit sum.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Chad To
 ; 1,2,3,4,32,33,34,90,91,92,93,94,120,121,122,123,124,145,146,147,148,149,200,201,202,203,204,232,233,234,256,257,258,259,288,289,345,346,347,348,349,456,457,458,459,488,489,540,541,542,543,570,571,572,573,574,705,706,707,708,709,736,737,738,739,792,793,794,824,904,960,961,962,963,964,992,993,994,1045,1046
 
 #offset 1
@@ -9,9 +9,9 @@ pow $2,4
 lpb $2
   sub $2,1
   mov $4,$1
-  seq $4,53829 ; Sum of digits of (n written in base 8).
+  dgs $4,8
   mov $3,$1
-  seq $3,53824 ; Sum of digits of (n written in base 5).
+  dgs $3,5
   sub $3,$4
   equ $3,0
   sub $0,$3

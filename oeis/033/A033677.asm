@@ -1,23 +1,22 @@
 ; A033677: Smallest divisor of n >= sqrt(n).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by iBezanilla
 ; 1,2,3,2,5,3,7,4,3,5,11,4,13,7,5,4,17,6,19,5,7,11,23,6,5,13,9,7,29,6,31,8,11,17,7,6,37,19,13,8,41,7,43,11,9,23,47,8,7,10,17,13,53,9,11,8,19,29,59,10,61,31,9,8,13,11,67,17,23,10,71,9,73,37,15,19,11,13,79,10
 
 #offset 1
 
+mov $2,1
 mov $1,$0
-mov $3,$0
-lpb $0
+lpb $1
+  sub $1,$2
+  mov $3,$0
+  div $3,$2
+  mov $4,$0
+  gcd $4,$3
+  div $4,$2
   add $2,1
-  lpb $2
-    mov $4,$3
-    dif $4,$2
-    sub $4,1
-    mov $0,3
-    mov $2,$4
-  lpe
-  sub $0,2
+  sub $3,$5
+  min $4,1
+  mul $4,$3
+  add $5,$4
 lpe
-mov $0,$4
-add $0,1
-div $1,$0
-mov $0,$1
+mov $0,$5

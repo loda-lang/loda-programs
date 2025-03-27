@@ -1,6 +1,7 @@
 ; A077247: Combined Diophantine Chebyshev sequences A077245 and A077243.
-; Submitted by Simon Strandgaard
+; Submitted by amazing
 ; 1,2,10,17,79,134,622,1055,4897,8306,38554,65393,303535,514838,2389726,4053311,18814273,31911650,148124458,251239889,1166181391,1978007462,9181326670,15572819807,72284431969,122604550994,569094129082
+; Formula: a(n) = truncate(2^min(n,n%2))*c(n)+b(n), b(n) = 3*c(n-2)+b(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 7*c(n-2)+2*b(n-2), c(3) = 7, c(2) = 7, c(1) = 1, c(0) = 1
 
 mov $2,1
 lpb $0
@@ -11,9 +12,10 @@ lpb $0
   add $2,$1
   add $2,$1
 lpe
-lpb $0
-  div $0,4
-  mul $2,2
-lpe
+mov $4,2
+pow $4,$0
+mul $2,$4
+add $1,3
 add $1,$2
 mov $0,$1
+sub $0,3
