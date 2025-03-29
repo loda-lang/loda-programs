@@ -9,15 +9,13 @@ lpb $0
   mod $3,2
   add $3,$0
   add $3,$0
-  mov $4,$3
-  add $4,1
-  seq $4,154115 ; Numbers n such that n + 3 is prime.
-  add $4,3
-  seq $4,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  mov $2,$0
-  mov $2,$4
+  mov $2,$3
+  add $2,1
+  seq $2,154115 ; Numbers n such that n + 3 is prime.
+  add $2,3
+  seq $2,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $0,1
-  mul $1,$4
+  mul $1,$2
 lpe
 mul $1,2
 mov $0,$1

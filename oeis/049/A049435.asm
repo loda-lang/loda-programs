@@ -1,28 +1,25 @@
 ; A049435: Stirling numbers of second kind: 10th column of Stirling2 triangle A008277.
-; Submitted by iBezanilla
+; Submitted by shiva
 ; 1,55,1705,39325,752752,12662650,193754990,2758334150,37112163803,477297033785,5917584964655,71187132291275,835143799377954,9593401297313460,108254081784931500,1203163392175387500,13199555372846848005,143197070509423605675
 
 #offset 10
 
-sub $0,1
+sub $0,10
+mov $2,$0
+add $0,10
 mov $1,$0
-sub $0,6
-mov $3,$1
-sub $3,$0
-add $3,4
-lpb $3
-  mov $6,$3
-  pow $6,$1
-  sub $3,1
-  sub $2,2
-  sub $2,$3
-  bin $2,$5
-  mul $2,$6
-  add $4,$2
-  add $5,1
-  mul $2,0
-  add $2,1
+sub $1,$2
+add $1,1
+lpb $1
+  sub $1,1
+  mov $4,$1
+  pow $4,$0
+  mov $5,-1
+  sub $5,$1
+  bin $5,$3
+  mul $5,$4
+  add $6,$5
+  add $3,1
 lpe
-bin $0,0
-mul $0,$4
-div $0,362880
+mov $0,$6
+div $0,3628800

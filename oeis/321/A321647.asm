@@ -11,6 +11,5 @@ mul $1,$0
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 seq $1,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
 seq $1,124774 ; Multinomial coefficients for compositions in standard order.
-mov $2,$0
 seq $0,8480 ; Number of ordered prime factorizations of n.
 mul $0,$1

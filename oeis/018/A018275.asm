@@ -1,5 +1,5 @@
 ; A018275: Divisors of 80.
-; Submitted by Simon Strandgaard
+; Submitted by Eric
 ; 1,2,4,5,8,10,16,20,40,80
 
 #offset 1
@@ -10,8 +10,8 @@ lpb $5
   sub $5,5
   trn $5,2
   add $0,$5
+  pow $5,0
   trn $5,2
-  sub $0,$5
 lpe
 mov $1,$0
 div $1,2
