@@ -1,12 +1,18 @@
 ; A190302: Smallest number h such that the decimal expansion of n*h starts with 1.
-; Submitted by Conan
+; Submitted by Aurum
 ; 1,5,4,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,5,5,5,5,5,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 
 #offset 1
 
-seq $0,97327 ; Least positive integer m such that m*n has greater decimal digit length than n.
-lpb $0
-  mov $1,$0
-  div $0,6
+mov $1,$0
+mov $3,$0
+mov $0,1
+div $1,2
+lpb $1
+  div $1,10
+  mul $0,10
 lpe
-mov $0,$1
+gcd $2,$3
+sub $0,1
+div $0,$2
+add $0,1

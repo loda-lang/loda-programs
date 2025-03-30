@@ -10,10 +10,9 @@ mov $1,$0
 add $1,3
 lpb $1
   sub $1,$4
-  mov $3,$1
-  max $3,0
   mov $5,-1
-  pow $5,$3
+  pow $5,$1
+  mov $3,$1
   add $3,1
   seq $3,206369 ; a(p^k) = p^k - p^(k-1) + p^(k-2) - ... +- 1, and then extend by multiplicativity.
   mul $3,$5

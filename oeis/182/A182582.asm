@@ -7,8 +7,6 @@ lpb $0
   mul $0,2
   dif $0,3
 lpe
-lpb $0
-  dif $0,4
-lpe
+dir $0,4
 add $0,1
 mod $0,2

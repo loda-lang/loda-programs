@@ -6,18 +6,16 @@
 
 sub $0,1
 mov $1,2
-mov $2,4096
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   mov $3,$1
   dgs $3,10
   mov $5,$1
   seq $5,55642 ; Number of digits in the decimal expansion of n.
-  mov $6,$3
-  mod $6,$5
-  equ $6,0
   add $5,1
   div $3,$5
-  add $3,$6
   equ $3,4
   sub $0,$3
   add $1,9
@@ -28,4 +26,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-sub $0,10000
+sub $0,1000
