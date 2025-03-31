@@ -14,7 +14,6 @@ lpb $0
   add $4,1
   seq $4,19554 ; Smallest number whose square is divisible by n.
   div $3,$4
-  mov $2,$0
   mov $2,$3
   add $2,1
   pow $2,2

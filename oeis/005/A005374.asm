@@ -1,11 +1,23 @@
 ; A005374: Hofstadter H-sequence: a(n) = n - a(a(a(n-1))).
-; Submitted by Werinbert
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,1,2,3,4,4,5,5,6,7,7,8,9,10,10,11,12,13,13,14,14,15,16,17,17,18,18,19,20,20,21,22,23,23,24,24,25,26,26,27,28,29,29,30,31,32,32,33,33,34,35,35,36,37,38,38,39,40,41,41,42,42,43,44,45,45,46,46,47,48,48,49,50,51,51,52,53,54,54
 
+mov $4,2
+add $0,1
 lpb $0
-  mov $2,$1
-  seq $2,202340 ; Number of times n occurs in Hofstadter H-sequence A005374.
-  sub $0,$2
-  add $1,1
+  sub $0,1
+  mod $2,2
+  sub $3,$4
+  add $3,1
+  div $3,4
+  bin $5,$4
+  add $5,$3
+  gcd $5,4
+  add $1,$2
+  mov $2,$5
+  sub $2,1
+  mul $4,$5
+  div $5,2
+  dif $3,$5
 lpe
 mov $0,$1

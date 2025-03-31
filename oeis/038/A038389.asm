@@ -7,7 +7,6 @@
 mov $2,$0
 dif $2,2
 sub $2,1
-mov $4,0
 max $4,$2
 sub $0,1
 mov $3,$4
@@ -19,7 +18,6 @@ add $2,1
 pow $2,2
 mul $2,4
 nrt $2,2
-add $2,1
 div $2,2
 pow $2,2
 mov $1,$0

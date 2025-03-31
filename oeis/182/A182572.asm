@@ -10,7 +10,6 @@ add $2,3
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
   seq $3,14313 ; Numbers with exactly 5 ones in binary expansion.
   seq $3,48678 ; Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
   seq $3,22290 ; Replace 2^k in binary expansion of n with Fibonacci(k+2).

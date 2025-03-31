@@ -1,5 +1,5 @@
 ; A266444: Middle column of the "Rule 25" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by BlisteringSheep
+; Submitted by Aurum
 ; 1,0,0,0,1,0,1,0,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1
 
 mov $1,1
@@ -7,7 +7,7 @@ mov $3,$0
 sub $3,1
 mov $2,$0
 lpb $2
-  sub $2,1
+  div $2,4
   mov $0,$3
   mov $4,$3
   lpb $4

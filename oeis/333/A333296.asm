@@ -17,6 +17,5 @@ mod $4,$2
 add $4,$3
 add $4,$2
 max $4,3
-sub $0,1
 mov $0,$4
 sub $0,2

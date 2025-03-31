@@ -6,7 +6,33 @@ mov $2,$0
 add $2,$1
 mov $1,4
 pow $1,$2
-seq $2,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+mov $9,0
+mov $8,0
+mov $7,0
+mov $4,0
+mov $3,0
+mul $2,2
+mov $6,$2
+add $2,1
+lpb $2
+  sub $2,1
+  div $8,2
+  add $8,$4
+  mul $8,2
+  add $9,1
+  mov $4,$3
+  add $4,$9
+  pow $4,$6
+  sub $4,$8
+  mov $5,$6
+  bin $5,$3
+  mul $5,$4
+  add $3,1
+  mul $7,-1
+  add $7,$5
+lpe
+gcd $7,$2
+mov $2,$7
 div $2,$1
 mov $0,$2
 mul $0,2

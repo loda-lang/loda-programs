@@ -1,19 +1,35 @@
 ; A035182: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = -7.
-; Submitted by Science United
+; Submitted by Jave808
 ; 1,2,0,3,0,0,1,4,1,0,2,0,0,2,0,5,0,2,0,0,0,4,2,0,1,0,0,3,2,0,0,6,0,0,0,3,2,0,0,0,0,0,2,6,0,4,0,0,1,2,0,0,2,0,0,4,0,4,0,0,0,0,1,7,0,0,2,0,0,0,2,4,0,4,0,0,2,0,2,0
 
 #offset 1
 
-mov $2,$0
-lpb $0
-  mov $3,$2
-  dif $3,$0
-  neq $3,$2
-  mul $3,$0
-  pow $3,21
-  sub $0,1
-  add $1,$3
-lpe
+mov $1,$0
+mul $1,2
+mov $2,$1
+sub $2,1
+bxo $1,$2
 add $1,1
-mov $0,$1
-mod $0,49
+div $1,2
+log $1,2
+mov $4,$0
+sub $0,1
+mov $6,$0
+lpb $6
+  sub $6,2
+  mov $0,$4
+  sub $0,$6
+  mov $3,$0
+  gcd $3,$6
+  bin $3,$0
+  mod $0,7
+  pow $0,8
+  add $0,1
+  mod $0,17
+  sub $0,1
+  mul $3,$0
+  add $5,$3
+lpe
+mov $0,$5
+add $0,1
+mul $0,$1
