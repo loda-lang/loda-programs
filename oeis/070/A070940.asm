@@ -4,12 +4,6 @@
 
 #offset 1
 
-mov $2,1
 dir $0,2
-div $0,2
-mov $1,$0
-lpb $1
-  div $1,2
-  add $2,1
-lpe
-mov $0,$2
+log $0,2
+add $0,1

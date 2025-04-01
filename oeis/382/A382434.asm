@@ -1,8 +1,20 @@
 ; A382434: a(n) = Sum_{k=0..n} ( binomial(n,k) - binomial(n,k-1) )^4.
 ; Submitted by Science United
 ; 1,1,3,33,195,1763,15623,156257,1630947,17911299,203739015,2389928995,28749060871,353362388551,4424242664975,56290517376737,726355164976547,9490129871680355,125375330053632455,1672895457018337859,22522481793315373319,305695116823973096519
-; Formula: a(n) = 2*A129123(n)-1
 
-seq $0,129123 ; Number of 4-tuples of standard tableau with height less than or equal to 2.
-mul $0,2
-sub $0,1
+mov $2,$0
+mov $4,$0
+add $4,1
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  bin $1,$0
+  sub $1,$5
+  add $5,$1
+  pow $1,4
+  add $3,$1
+lpe
+mov $0,$3

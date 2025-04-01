@@ -1,20 +1,23 @@
 ; A302946: Number of minimal (and minimum) total dominating sets in the 2n-crossed prism graph.
-; Submitted by Stony666
+; Submitted by lee
 ; 4,36,196,1156,6724,39204,228484,1331716,7761796,45239076,263672644,1536796804,8957108164,52205852196,304278004996,1773462177796,10336495061764,60245508192804,351136554095044,2046573816377476,11928306344169796,69523264248641316
-; Formula: a(n) = 4*b(n-1)^2, b(n) = 2*c(n-1)+b(n-1), b(1) = 3, b(0) = 1, c(n) = 2*c(n-1)+c(n-2), c(2) = 5, c(1) = 2, c(0) = 1
+; Formula: a(n) = 8*floor(((2*min(n,n%2)*c(n)+b(n))^2)/2)+4, b(n) = 4*c(n-2)+3*b(n-2), b(3) = 3, b(2) = 3, b(1) = 1, b(0) = 1, c(n) = 3*c(n-2)+2*b(n-2), c(3) = 2, c(2) = 2, c(1) = 0, c(0) = 0
 
 #offset 1
 
 mov $1,1
-mov $2,1
-sub $0,1
 lpb $0
-  sub $0,1
-  mov $3,$1
-  mov $1,$2
-  add $2,$3
+  sub $0,2
+  add $1,$2
+  add $2,$1
+  add $2,$1
   add $1,$2
 lpe
-pow $1,2
-mov $0,$1
+mul $2,2
+mul $0,$2
+add $0,$1
+pow $0,2
+div $0,2
+mul $0,2
+add $0,1
 mul $0,4

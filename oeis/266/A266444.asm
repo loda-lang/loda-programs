@@ -8,6 +8,7 @@ sub $3,1
 mov $2,$0
 lpb $2
   div $2,4
+  sub $2,$4
   mov $0,$3
   mov $4,$3
   lpb $4
