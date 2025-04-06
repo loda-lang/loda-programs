@@ -12,7 +12,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,176166 ; Highest exponents of triangular numbers.
+  seq $3,176166 ; a(n) is the maximum exponent in the prime factorization of the n-th triangular number.
   trn $3,2
   min $3,1
   sub $0,$3

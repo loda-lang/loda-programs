@@ -1,20 +1,30 @@
 ; A135594: a(n) = (1/2^n) * Sum_{i=0..n} (-1)^(n-i) * binomial(n,i) * A000364(i).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Stephen Uitti
 ; 1,0,1,6,73,1380,37801,1417626,69802993,4369750440,339034806001,31935510092046,3590398569115513,474937566660074700,73024143791301120601,12914495107705743175266,2603190607000627341985633,593297406341867021292734160
 
-mov $2,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  add $1,$4
-  bin $1,$0
-  seq $0,5799 ; Generalized Euler numbers of type 2^n.
-  mul $1,$0
-  mul $3,-1
-  add $3,$1
+mov $1,2
+pow $1,$0
+mov $3,$0
+mov $5,$0
+add $5,1
+lpb $5
+  sub $5,1
+  mov $0,$3
+  sub $0,$5
+  mov $2,$0
+  add $2,$5
+  bin $2,$0
+  mov $6,4
+  pow $6,$0
+  mov $7,$0
+  seq $7,2436 ; E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
+  div $7,$6
+  mov $0,$7
+  mul $0,2
+  mul $2,$0
+  div $4,-1
+  add $4,$2
 lpe
-mov $0,$3
+mov $0,$4
+div $0,$1
+div $0,2

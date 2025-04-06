@@ -1,9 +1,12 @@
 ; A062356: a(n) = floor(n/phi(n)).
+; Submitted by Science United
 ; 1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2,1,2,1,3,1,2
-; Formula: a(n) = truncate(n/A000010(n))
+; Formula: a(n) = truncate((n^2)/A002618(n))
 
 #offset 1
 
 mov $1,$0
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-div $0,$1
+pow $1,2
+seq $0,2618 ; a(n) = n*phi(n).
+div $1,$0
+mov $0,$1

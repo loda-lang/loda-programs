@@ -4,32 +4,32 @@
 
 #offset 1
 
-mov $7,$0
-mov $3,2
-lpb $3
-  sub $3,1
+mov $4,$0
+mov $5,$0
+mov $7,2
+lpb $7
+  div $7,2
+  mov $0,$4
+  add $0,$7
   mov $2,$0
-  add $2,$3
-  mov $4,$2
-  add $4,$2
-  mul $4,2
-  add $4,$2
-  mul $4,$2
-  nrt $4,2
-  sub $4,$2
-  mov $5,$4
-  div $5,2
+  add $2,$0
   mul $2,2
-  mul $2,$5
-  div $2,2
-  mov $6,$3
-  mul $6,$2
-  add $1,$6
+  add $2,$0
+  mul $2,$0
+  nrt $2,2
+  sub $2,$0
+  mov $1,$2
+  div $1,2
+  mul $0,$1
+  mov $3,$7
+  mul $3,$0
+  add $6,$3
 lpe
-min $7,1
-mul $7,$2
-mov $2,$1
-sub $2,$7
-sub $2,$0
-gcd $2,0
-mov $0,$2
+min $4,1
+mul $4,$0
+mov $0,$6
+sub $0,$4
+sub $0,$5
+mul $0,9
+gcd $0,0
+div $0,9

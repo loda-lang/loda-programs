@@ -13,10 +13,7 @@ lpb $1
   sub $0,$1
   add $0,$2
   seq $0,308898 ; Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
-  mov $4,$0
-  pow $0,2
   mod $0,3
-  mul $0,$4
   add $0,1
   div $0,3
   add $0,1

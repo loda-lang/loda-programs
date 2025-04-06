@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,340072 ; a(n) = phi(x) / gcd(x-1, phi(x)), where x = A003961(n), i.e., n with its prime factorization shifted one step towards larger primes.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

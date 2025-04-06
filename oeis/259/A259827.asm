@@ -8,7 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  seq $2,25480 ; a(2n) = n, a(2n+1) = a(n).
+  add $2,1
+  dir $2,2
+  div $2,2
   seq $2,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
   mod $5,2
   add $5,1

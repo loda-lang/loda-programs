@@ -4,14 +4,14 @@
 
 #offset 1
 
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,1
-  seq $3,260393 ; Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,1) and midword sequence (a(n)); see Comments.
-  gcd $3,4
-  equ $3,4
-  add $1,1
+sub $0,1
+lpb $0
+  mov $1,$0
+  mod $1,3
+  mov $2,$0
+  add $0,1
+  lex $0,$1
 lpe
-mov $0,$3
+mov $0,$2
+add $0,1
+mod $0,2

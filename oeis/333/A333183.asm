@@ -1,23 +1,16 @@
 ; A333183: Number of digits in concatenation of first n positive even integers.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Dongha Hwang
 ; 1,2,3,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,97,100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,163,166,169,172,175,178,181,184,187
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$2
-  sub $0,$3
-  mul $0,2
-  add $0,2
-  lpb $0
-    div $0,10
-    add $1,3
+lpb $0
+  mov $2,$0
+  add $2,$0
+  lpb $2
+    div $2,10
+    add $1,1
   lpe
+  sub $0,1
 lpe
 mov $0,$1
-div $0,3

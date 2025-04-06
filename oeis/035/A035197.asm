@@ -1,5 +1,5 @@
 ; A035197: Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 15.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by amazing
 ; 1,2,1,3,1,2,2,4,1,2,2,3,0,4,1,5,2,2,0,3,2,4,0,4,1,0,1,6,0,2,0,6,2,4,2,3,0,0,0,4,0,4,2,6,1,0,0,5,3,2,2,0,2,2,2,8,0,0,2,3,2,0,2,7,0,4,2,6,0,4,2,4,0,0,1,0,4,0,0,5
 
 #offset 1
@@ -16,9 +16,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  lpb $5
-    dif $5,2
-  lpe
+  dir $5,2
   div $5,2
   mov $6,-1
   pow $6,$5

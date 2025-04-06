@@ -4,9 +4,7 @@
 
 #offset 1
 
-mov $1,$0
 mov $5,1
-mov $8,0
 mov $4,$0
 lpb $4
   sub $4,$5
@@ -27,7 +25,6 @@ div $3,$8
 mul $3,2
 sub $3,$8
 sub $2,$3
-mov $1,$8
 mov $1,$2
 trn $1,2
 sub $1,1

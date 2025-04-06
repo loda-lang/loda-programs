@@ -1,21 +1,19 @@
 ; A067395: First differences of A067368.
-; Submitted by Lord_Possum
+; Submitted by Science United
 ; 4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,2,2,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,2,2,4,4
 
 #offset 1
 
-sub $0,1
 mov $1,2
 mov $2,$0
-add $2,1
 lpb $2
   sub $2,1
   mov $3,$1
-  lpb $3
-    dif $3,8
-  lpe
+  dir $3,8
   gcd $3,2
   add $1,$3
 lpe
+equ $3,2
 mov $0,$3
 mul $0,2
+add $0,2

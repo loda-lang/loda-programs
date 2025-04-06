@@ -12,6 +12,4 @@ mod $2,16
 mod $2,$1
 sub $0,$2
 sub $0,1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

@@ -1,18 +1,16 @@
 ; A026136: Lexicographically earliest permutation of the positive integers such that |a(n)-n| = [a(n)/2].
-; Submitted by Fornax
+; Submitted by NyanDoggo
 ; 1,3,2,7,9,4,5,15,6,19,21,8,25,27,10,11,33,12,13,39,14,43,45,16,17,51,18,55,57,20,61,63,22,23,69,24,73,75,26,79,81,28,29,87,30,31,93,32,97,99,34,35,105,36,37,111,38,115,117,40,41,123,42,127,129,44,133,135,46,47,141,48,49,147,50,151,153,52,53,159
 
 #offset 1
 
-sub $0,1
 mul $0,2
+sub $0,2
 mov $1,$0
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 mod $0,3
 div $0,2
 gcd $0,3
 div $1,$0
-add $1,1
 mov $0,$1
+add $0,1

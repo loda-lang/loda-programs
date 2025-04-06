@@ -1,5 +1,5 @@
 ; A382490: The number of infinitary 3-smooth divisors of n.
-; Submitted by lee
+; Submitted by Stephen Uitti
 ; 1,2,2,2,1,4,1,4,2,2,1,4,1,2,2,2,1,4,1,2,2,2,1,8,1,2,4,2,1,4,1,4,2,2,1,4,1,2,2,4,1,4,1,2,2,2,1,4,1,2,2,2,1,8,1,4,2,2,1,4,1,2,2,4,1,4,1,2,2,2,1,8,1,2,2,2,1,4,1,2
 
 #offset 1
@@ -8,10 +8,10 @@ mov $6,1
 lpb $6
   sub $6,1
   mov $1,4
-  add $3,2
   lpb $0
     mul $1,2
     mov $2,2
+    mov $3,1
     lpb $3
       mov $4,$0
       mod $4,$2

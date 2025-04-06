@@ -1,43 +1,29 @@
 ; A022004: Initial members of prime triples (p, p+2, p+6).
-; Submitted by HansCCT
+; Submitted by Science United
 ; 5,11,17,41,101,107,191,227,311,347,461,641,821,857,881,1091,1277,1301,1427,1481,1487,1607,1871,1997,2081,2237,2267,2657,2687,3251,3461,3527,3671,3917,4001,4127,4517,4637,4787,4931,4967,5231,5477,5501,5651,6197,6827,7877,8087,8231,8291,8537,8861,9431,9461,10331,10427,10457,11171,11777,12107,12917,13001,13691,13757,13877,13901,14081,14321,14627,15641,15731,16061,16067,16187,17027,17387,18041,18251,18911
 
 #offset 1
 
+mov $6,1
 mov $2,$0
-sub $0,1
+mul $2,$0
 pow $2,2
 lpb $2
   mov $5,$1
-  add $5,7
-  mov $6,$5
-  mov $3,$1
-  add $3,5
-  sub $5,2
-  sub $6,1
-  seq $6,64722 ; a(1) = 0; for n >= 2, a(n) = n - (largest prime <= n).
-  sub $6,$5
-  add $5,4
-  seq $5,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
+  seq $5,40 ; The prime numbers.
+  add $5,$6
+  seq $5,13632 ; Difference between n and the next prime greater than n.
   add $6,$5
-  mov $5,$6
-  sub $5,$3
-  sub $5,2
-  add $3,2
-  seq $3,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
-  add $5,$3
   mov $3,$5
-  sub $3,1
-  equ $3,6
+  sub $3,$4
+  add $4,$3
+  pow $4,$4
+  gcd $3,$2
+  bin $3,$2
   sub $0,$3
-  add $1,6
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  trn $1,$3
+  sub $2,$0
 lpe
-mov $0,$1
-div $0,6
-mul $0,6
-add $0,5
+mov $0,$6
+sub $0,$4
+add $0,4

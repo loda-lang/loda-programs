@@ -1,14 +1,14 @@
 ; A382359: Number of labeled deterministic finite automata with n states and two letters.
-; Submitted by its_randomness
+; Submitted by BlisteringSheep
 ; 2,128,17496,4194304,1562500000,835884417024,607687873272704,576460752303423488,691636079448571949568,1024000000000000000000000,1833841138186726138360895488,3907429033741066770846918377472,9769232732262334599652925506494464
+; Formula: a(n) = 2*floor((n*(2*n^2)^n)/2)
 
-add $0,1
+#offset 1
+
 mov $1,$0
-mov $2,$0
-lpb $0
-  sub $0,1
-  mul $1,2
-  mul $1,$2
-  mul $1,$2
-lpe
-mov $0,$1
+mul $1,$0
+mul $1,2
+pow $1,$0
+mul $0,$1
+div $0,2
+mul $0,2

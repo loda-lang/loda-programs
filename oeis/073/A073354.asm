@@ -1,28 +1,14 @@
 ; A073354: Binomial coefficient ( n, squarefree kernel(n) ).
-; Submitted by waffleironhead
+; Submitted by omegaintellisys
 ; 1,1,1,6,1,1,1,28,84,1,1,924,1,1,1,120,1,18564,1,184756,1,1,1,134596,53130,1,2925,40116600,1,1,1,496,1,1,1,1947792,1,1,1,847660528,1,1,1,2104098963720,344867425584,1,1,12271512,85900584,10272278170,1,495918532948104,1,25827165,1,5804731963800,1,1,1,118264581564861424,1,1,27619435402363035,2016,1,1,1,28453041475240576740,1,1,1,156238908,1,1,2280012686716080,6892620648693261354600,1,1,1,1646492110120
+; Formula: a(n) = binomial(n,truncate(n/A003557(n)))
 
 #offset 1
 
-mov $2,$0
-mov $3,$0
-sub $0,1
-add $3,1
-lpb $3
-  mov $5,$0
-  add $5,1
-  seq $5,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  mov $3,$0
-  div $3,$5
-  add $4,$3
-  add $6,$0
-  add $6,$4
-lpe
-mov $0,$6
-div $0,2
-add $0,1
-mul $0,2
 mov $1,$0
-gcd $1,$2
-bin $2,$1
+seq $1,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
+mov $3,$0
+div $3,$1
+mov $2,$0
+bin $2,$3
 mov $0,$2

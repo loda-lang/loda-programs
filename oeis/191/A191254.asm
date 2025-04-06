@@ -5,11 +5,9 @@
 #offset 1
 
 mov $1,$0
-sub $0,1
-lpb $1
-  dif $1,4
-lpe
+dir $1,4
 mod $1,2
+sub $0,1
 mod $0,2
 mul $0,2
 bin $0,$1

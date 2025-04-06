@@ -1,7 +1,7 @@
 ; A165414: a(n) = number of run-lengths that each occur only once in the binary representation of n.
-; Submitted by mmonnin
+; Submitted by lee
 ; 1,0,1,2,0,2,1,2,1,0,1,0,1,2,1,2,1,1,1,1,0,1,1,2,1,1,1,2,1,2,1,2,1,1,3,0,1,0,3,1,1,0,1,0,1,1,1,2,3,0,0,0,1,0,3,0,3,1,3,2,1,2,1,2,1,1,3,2,1,2,1,2,0,1,0,1,0,2,3,1
-; Formula: a(n) = A051904(A181819(A057335(A341915(n))))-1
+; Formula: a(n) = A056169(A181819(A057335(A341915(n))))
 
 #offset 1
 
@@ -10,5 +10,4 @@ seq $0,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2
 mov $1,$0
 seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
 mov $0,$1
-seq $0,51904 ; Minimal exponent in prime factorization of n.
-sub $0,1
+seq $0,56169 ; Number of unitary prime divisors of n.
