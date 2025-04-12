@@ -1,22 +1,18 @@
 ; A091972: G.f.: (1 + x^5 ) / ( (1-x^3)*(1-x^4)).
-; Submitted by Dave Studdert
+; Submitted by Science United
 ; 1,0,0,1,1,1,1,1,2,2,1,2,3,2,2,3,3,3,3,3,4,4,3,4,5,4,4,5,5,5,5,5,6,6,5,6,7,6,6,7,7,7,7,7,8,8,7,8,9,8,8,9,9,9,9,9,10,10,9,10,11,10,10,11,11,11,11,11,12,12,11,12,13,12,12,13,13,13,13,13
-; Formula: a(n) = -truncate((gcd(binomial(n,2),2)+n-1)/2)-2*n+gcd(binomial(n,2),2)+truncate((8*n-3)/3)
+; Formula: a(n) = -truncate((gcd(floor(n/2),2)+n-1)/2)+floor((2*n+3)/3)+gcd(floor(n/2),2)-2
 
-mov $2,$0
-bin $2,2
-gcd $2,2
-sub $0,1
-mov $3,$0
-add $3,$2
-div $3,2
-sub $3,12
-sub $3,$2
 mov $1,$0
-mul $1,2
-mul $0,8
+div $1,2
+gcd $1,2
+sub $0,1
+mov $2,$0
+add $2,$1
+div $2,2
+sub $2,$1
+mul $0,2
 add $0,5
 div $0,3
-sub $0,14
-sub $0,$1
-sub $0,$3
+sub $0,2
+sub $0,$2

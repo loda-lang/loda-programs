@@ -1,5 +1,5 @@
 ; A014422: Inverse of 413th cyclotomic polynomial.
-; Submitted by Merlin2331
+; Submitted by Dongha Hwang
 ; 1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $1,-1
@@ -10,6 +10,7 @@ lpb $0
   sub $0,$4
   mov $3,$0
   max $3,0
+  add $3,1
   add $5,59
   mov $2,$3
   seq $2,50519 ; Increments of arithmetic progression of at least 6 terms having the same value of phi in A050518.

@@ -1,20 +1,22 @@
 ; A354384: Difference sequence of A356133.
-; Submitted by Ralfy
+; Submitted by shiva
 ; 2,3,4,2,4,3,2,3,4,3,2,4,2,3,4,2,4,3,2,4,2,3,4,3,2,3,4,2,4,3,2,3,4,3,2,4,2,3,4,3,2,3,4,2,4,3,2,4,2,3,4,2,4,3,2,3,4,3,2,4,2,3,4,2,4,3,2,4,2,3,4,3,2,3,4,2,4,3,2,4
 
 #offset 1
 
-mov $1,7
-mov $2,7
-sub $0,1
-lpb $0
-  sub $0,1
-  mul $2,4
-  bxo $2,$1
-  mov $1,$2
+mov $3,$0
+lpb $3
+  bxo $2,$3
+  div $3,2
 lpe
-mul $1,2
-sub $1,11
-mod $1,3
-mov $0,$1
+mov $0,$2
+sub $0,1
+mov $1,$0
+div $1,2
+add $1,1
+dir $1,4
+mod $1,2
+mod $0,2
+mul $0,2
+bin $0,$1
 add $0,2

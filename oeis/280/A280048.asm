@@ -1,11 +1,9 @@
 ; A280048: The Tower of Hanoi word, with a,b,c,a-bar,b-bar,c-bar encoded as 1,2,3,-1,-2,-3 respectively.
-; Submitted by Simon Strandgaard
+; Submitted by Vit Kliber
 ; 1,-3,2,1,3,-2,1,-3,2,-1,3,2,1,-3,2,1,3,-2,1,3,2,-1,3,-2,1,-3,2,1,3,-2,1,-3,2,-1,3,2,1,-3,2,-1,3,-2,1,3,2,-1,3,2,1,-3,2,1,3,-2,1,-3,2,-1,3,2,1,-3,2,1,3,-2,1,3,2,-1,3,-2,1,-3,2,1,3,-2,1,3
 
 add $0,1
-lpb $0
-  dif $0,4
-lpe
+dir $0,4
 sub $0,1
 mov $1,-1
 bin $1,$0

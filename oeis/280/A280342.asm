@@ -1,12 +1,14 @@
 ; A280342: Sum of digits of A003418(n).
-; Submitted by Ralfy
+; Submitted by Science United
 ; 1,1,2,6,3,6,6,6,12,9,9,18,18,18,18,18,18,18,18,36,36,36,36,45,45,36,36,27,27,54,54,54,54,54,54,54,54,54,54,54,54,72,72,81,81,81,81,72,72,90,90,90,90,99,99,99,99,99,99,99,99,90,90,90,99,99,99,117,117,117,117,117,117,117,117,117,117,117,117,144
 
-seq $0,3418 ; Least common multiple (or LCM) of {1, 2, ..., n} for n >= 1, a(0) = 1.
-mov $2,$0
-mov $1,2
-lpb $1
-  pow $1,0
-  seq $2,7953 ; Digital sum (i.e., sum of digits) of n; also called digsum(n).
+mov $1,1
+lpb $0
+  mov $2,$1
+  gcd $2,$0
+  mul $1,$0
+  div $1,$2
+  sub $0,1
 lpe
-mov $0,$2
+mov $0,$1
+dgs $0,10

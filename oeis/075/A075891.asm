@@ -3,7 +3,6 @@
 
 #offset 2
 
-mov $3,0
 mov $4,$0
 pow $4,5
 lpb $4
@@ -15,8 +14,6 @@ lpb $4
   sub $4,$0
 lpe
 mov $0,$3
-add $0,1
-max $0,2
 div $0,2
 mov $1,$0
 mul $0,2

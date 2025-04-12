@@ -1,17 +1,22 @@
 ; A007413: A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
-; Submitted by ChelseaOilman
+; Submitted by shiva
 ; 1,2,3,1,3,2,1,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,2,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,3,1,2,3,1,3,2,1,2,3,2,1,3,1,2,3,1,3,2,1,3,1,2,3,2,1,2,3,1,3,2,1,3
 
 #offset 1
 
-mov $2,14
-lpb $0
-  sub $0,1
-  mul $2,4
-  bxo $2,$1
-  mov $1,$2
+mov $3,$0
+lpb $3
+  bxo $2,$3
+  div $3,2
 lpe
-sub $1,5
-mod $1,3
-mov $0,$1
+mov $0,$2
+sub $0,1
+mov $1,$0
+div $1,2
+add $1,1
+dir $1,4
+mod $1,2
+mod $0,2
+mul $0,2
+bin $0,$1
 add $0,1

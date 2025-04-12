@@ -1,21 +1,18 @@
 ; A259346: If n = 2^k then a(n) = 3^k, otherwise a(n) = 0.
-; Submitted by crashtech
+; Submitted by shiva
 ; 1,3,0,9,0,0,0,27,0,0,0,0,0,0,0,81,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,243,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,729,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 #offset 1
 
 mov $1,2
-mov $2,1
+mul $0,2
 lpb $0
-  dif $0,2
+  div $0,2
   mul $1,3
+  mod $2,2
+  mul $2,$1
+  sub $1,$2
+  add $2,$0
 lpe
-lpb $0
-  add $3,$1
-  lpb $2
-    sub $0,1
-    mov $2,$0
-  lpe
-lpe
-mov $0,$3
-div $0,2
+mov $0,$2
+div $0,18

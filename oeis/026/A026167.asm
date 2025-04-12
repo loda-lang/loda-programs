@@ -5,16 +5,13 @@
 #offset 1
 
 sub $0,1
-equ $1,$0
 mul $0,3
 div $0,2
 sub $0,1
-mov $2,$0
+mov $1,$0
 dir $0,3
-mod $0,3
-div $0,2
+bin $0,2
 gcd $0,3
-div $2,$0
-mov $0,$2
-sub $0,$1
+div $1,$0
+mov $0,$1
 add $0,2

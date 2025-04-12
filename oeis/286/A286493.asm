@@ -1,5 +1,5 @@
 ; A286493: {1011->0}-transform of the Thue-Morse word A010060.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Science United
 ; 0,1,1,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,0,1,0,0,1
 
 #offset 1
@@ -14,9 +14,7 @@ lpb $0
   sub $1,3
   div $1,2
   add $1,1
-  lpb $1
-    dif $1,4
-  lpe
+  dir $1,4
   mod $1,2
   add $2,2
   sub $0,$1

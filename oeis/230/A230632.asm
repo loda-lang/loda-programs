@@ -1,5 +1,5 @@
 ; A230632: Number of integers m such that m + (sum of digits in base-4 representation of m) = n.
-; Submitted by Simon Strandgaard
+; Submitted by Dongha Hwang
 ; 1,0,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,2,0,2,0,2,1,1,1,0,1,1,1,1,0,1,1,1,2,0,2,0,2,1,1,1,0,1,1,1,1,0,1,1,1,2,0,2,0,2,1,1,1,0,1,1,1,1,0,2,1,2,1,1,2,1,2,0,1,1,1,1,0,1
 
 mov $4,$0
@@ -11,11 +11,9 @@ lpb $2
   mov $0,$4
   sub $0,$2
   lpb $0
-    add $5,1
-    lpb $0
-      dif $0,4
-    lpe
+    dir $0,4
     sub $0,1
+    add $5,1
   lpe
   mov $0,$5
   equ $0,$2

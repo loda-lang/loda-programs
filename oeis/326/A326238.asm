@@ -8,6 +8,4 @@
 mov $1,$0
 seq $1,2129 ; Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
 mul $1,$0
-mov $2,$0
-sub $0,1
 mov $0,$1

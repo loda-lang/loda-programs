@@ -1,46 +1,38 @@
 ; A228652: Numbers m such that if an urn contains m balls, with at least one each of c colors, there is no c > 1 for which a combination of c colors exists such that it is equally probable for c balls randomly selected from the urn to all be either the same color or distinct colors.
-; Submitted by Christian Krause
+; Submitted by omegaintellisys
 ; 1,2,3,5,7,15,19,27,31,47
 
 #offset 1
 
 sub $0,1
-mov $6,$0
-mov $4,$0
-add $4,1
-lpb $4
-  sub $4,1
-  mov $7,1
-  mov $0,$6
-  sub $0,$4
-  mov $2,$0
-  add $0,1
-  div $0,2
-  lpb $0
-    sub $0,1
-    mov $1,$0
-    mov $3,$2
-    sub $3,$0
-    sub $3,1
-    neq $10,$0
-    mov $12,$3
-    trn $12,$0
-    mov $11,$12
-    equ $11,0
-    mul $11,$0
-    div $0,2
-    mov $9,$12
-    add $9,$11
-    mul $9,$10
-    mov $8,$9
-    add $8,$1
-    lpb $8
-      div $9,2
-      mov $2,2
-      mul $7,2
-      mov $8,$9
-    lpe
+mov $3,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $5,2
+  mov $0,$3
+  sub $0,$1
+  mov $4,$0
+  mul $4,2
+  pow $0,2
+  add $4,$0
+  mov $6,-2
+  bin $6,$4
+  div $6,2
+  mov $7,3
+  sub $4,$6
+  mul $4,2
+  add $4,3
+  lpb $4
+    sub $4,$7
+    mul $5,2
+    mov $7,2
+    add $7,$5
+    mul $7,3
   lpe
-  add $5,$7
+  mov $0,$5
+  div $0,4
+  add $2,$0
 lpe
-mov $0,$5
+mov $0,$2

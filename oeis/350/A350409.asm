@@ -16,8 +16,6 @@ lpb $2
   add $5,1
   seq $5,307000 ; Number of unitary rings with additive group (Z/nZ)^2. Equivalently, number of unitary commutative rings with additive group (Z/nZ)^2.
   div $5,2
-  mov $3,$1
-  add $3,4
   mov $6,$1
   add $6,5
   seq $6,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).

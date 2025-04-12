@@ -9,8 +9,7 @@ mov $1,$0
 seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
 mul $1,$0
 mov $2,$0
-mov $3,$0
 seq $0,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
-mul $0,$3
+mul $0,$2
 seq $0,276086 ; Primorial base exp-function: digits in primorial base representation of n become the exponents of successive prime factors whose product a(n) is.
 mul $0,$1

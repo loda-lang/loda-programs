@@ -4,8 +4,6 @@
 
 mov $1,$0
 lpb $1
-  trn $1,1
-  add $1,1
   seq $1,40 ; The prime numbers.
   mov $3,$1
   add $3,1

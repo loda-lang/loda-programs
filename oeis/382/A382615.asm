@@ -4,9 +4,7 @@
 
 add $0,1
 lpb $0
-  mul $0,2
   sub $0,1
-  div $0,2
   add $4,2
   sub $2,1
   add $2,$0

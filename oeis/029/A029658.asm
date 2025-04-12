@@ -1,12 +1,13 @@
 ; A029658: Even numbers in the (2,1)-Pascal triangle A029653.
-; Submitted by Penguin
+; Submitted by Karlsson
 ; 2,2,2,4,2,2,16,14,6,2,30,20,2,36,50,8,2,2,64,140,196,182,112,44,10,2,204,336,378,294,156,54,2,100,540,714,672,450,210,12,2,1254,1386,1122,660,2,144,506,1210,2640,2508,1782,352,90,14,2,650,1716,5148,4290,442
 
-mov $2,7159
-sub $2,$0
-sub $2,$0
+mov $2,$0
+add $2,6
+pow $2,3
 lpb $2
   sub $2,69
+  add $2,$0
   mov $3,$1
   add $3,1
   seq $3,29656 ; Numbers in the (2,1)-Pascal triangle A029653 that are different from 1.

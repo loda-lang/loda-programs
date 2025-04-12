@@ -17,7 +17,6 @@ lpb $0
   dif $3,2
   mov $6,-1
   pow $6,$3
-  mov $8,0
   equ $8,$3
   mul $8,23
   sub $3,1

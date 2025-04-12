@@ -9,5 +9,4 @@ lpb $0
 lpe
 mov $2,$1
 dgs $2,2
-mov $0,$1
 mov $0,$2

@@ -11,7 +11,6 @@ lpb $3
   sub $3,1
   mov $0,$2
   add $0,$3
-  max $0,0
   mov $4,$0
   sub $4,1
   mov $0,1

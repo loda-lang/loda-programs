@@ -10,13 +10,11 @@ mov $1,$0
 add $0,1
 seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $0,1
-mov $4,0
 max $4,$0
 mov $3,$4
 add $4,1
 seq $4,19554 ; Smallest number whose square is divisible by n.
 div $3,$4
-mov $2,$0
 mov $2,$3
 add $2,1
 pow $2,2

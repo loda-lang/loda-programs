@@ -4,8 +4,6 @@
 #offset 1
 
 lpb $0
-  lpb $0
-    dif $0,9
-  lpe
+  dir $0,9
   mod $0,9
 lpe
