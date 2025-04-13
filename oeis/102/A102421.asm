@@ -8,7 +8,5 @@ lpb $1
   add $0,$1
   mul $0,3
   sub $0,1
-  lpb $0
-    dif $0,2
-  lpe
+  dir $0,2
 lpe

@@ -1,5 +1,5 @@
 ; A229099: Decimal expansion of 1 - 6/Pi^2.
-; Submitted by Jamie Morken(l1)
+; Submitted by Stephen Uitti
 ; 3,9,2,0,7,2,8,9,8,1,4,5,9,7,3,3,7,1,3,3,6,7,2,3,2,2,0,7,4,1,6,3,4,1,6,6,5,7,3,8,4,7,3,5,1,9,6,6,5,2,0,7,0,6,9,2,6,3,4,5,8,0,8,6,3,4,9,6,1,2,7,4,2,2,6,5,8,7,3,5
 
 add $0,1
@@ -7,26 +7,23 @@ mov $1,-1
 mov $3,$0
 mul $3,4
 lpb $3
-  mul $2,2
-  sub $2,1
   mov $5,$3
   mul $5,2
   add $5,1
+  sub $2,1
   mul $2,$5
   mul $1,$3
   add $1,$2
   div $1,$0
-  mul $1,2
   div $2,$0
   sub $3,1
 lpe
 bin $2,2
 mul $2,3
-pow $1,2
-sub $1,$2
 mov $4,10
 pow $4,$0
-mul $4,4
+pow $1,2
+sub $1,$2
 add $2,$1
 div $2,$4
 div $1,$2
