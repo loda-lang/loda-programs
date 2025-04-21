@@ -1,0 +1,29 @@
+; A094645: Triangle of generalized Stirling numbers of the first kind.
+; Submitted by loader3229
+; 1,-1,1,0,-1,1,0,-1,0,1,0,-2,-1,2,1,0,-6,-5,5,5,1,0,-24,-26,15,25,9,1,0,-120,-154,49,140,70,14,1,0,-720,-1044,140,889,560,154,20,1,0,-5040,-8028,-64,6363,4809,1638,294,27,1,0,-40320,-69264,-8540,50840,44835,17913,3990,510,35,1
+
+add $0,1
+mov $1,$0
+seq $1,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+mov $19,1
+seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
+mov $3,$0
+lpb $3
+  add $2,1
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,18
+    mov $6,$4
+    add $6,19
+    mov $7,$2
+    sub $7,3
+    mul $$6,$7
+    add $$6,$$5
+    sub $4,1
+  lpe
+  sub $3,1
+  mov $19,0
+lpe
+add $1,19
+mov $0,$$1
