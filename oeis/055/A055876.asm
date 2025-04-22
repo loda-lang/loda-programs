@@ -5,20 +5,20 @@
 #offset 1
 
 sub $0,2
-mov $3,$0
+mov $1,$0
+mov $2,1
 max $0,1
-mov $1,1
-mul $3,4
-lpb $3
-  add $2,$1
-  add $2,$1
-  mul $1,$3
-  div $1,$0
-  sub $3,1
+mul $1,4
+lpb $1
+  add $3,$2
+  mul $2,$1
+  div $2,$0
+  sub $1,1
 lpe
-add $2,$3
-add $2,$1
-div $2,2
-div $2,$1
-mov $0,$2
+mul $3,2
+add $3,$2
+add $3,$1
+div $3,$2
+mov $0,$3
+div $0,2
 add $0,2

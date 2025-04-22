@@ -1,21 +1,20 @@
 ; A260711: Numbers of the form x^2 - y^2 with x >= y; x and y are odd, x + y is a power of 2.
-; Submitted by Cruncher Pete
+; Submitted by BrandyNOW
 ; 0,8,16,32,48,64,96,128,160,192,224,256,320,384,448,512,576,640,704,768,832,896,960,1024,1152,1280,1408,1536,1664,1792,1920,2048,2176,2304,2432,2560,2688,2816,2944,3072,3200,3328,3456,3584,3712,3840,3968,4096,4352,4608,4864
-; Formula: a(n) = 8*truncate(b(n)/9), b(n) = b(n-1)+d(n-1), b(3) = 21, b(2) = 12, b(1) = 3, b(0) = 0, c(n) = truncate((6*n+c(n-1)+1)/d(n-1)), c(3) = 2, c(2) = 1, c(1) = 3, c(0) = 2, d(n) = truncate((6*n+c(n-1)+1)/d(n-1))*d(n-1), d(3) = 18, d(2) = 9, d(1) = 9, d(0) = 3
 
 #offset 1
 
-mov $1,1
-mov $3,2
-mov $4,3
-lpb $0
-  sub $0,1
-  add $1,6
-  add $2,$4
-  add $3,$1
-  div $3,$4
-  mul $4,$3
+sub $0,1
+mov $2,$0
+mov $4,2
+mov $1,$0
+div $1,2
+lpb $1
+  div $1,2
+  mov $3,$2
+  trn $2,$4
+  add $2,$3
+  mul $4,4
 lpe
 mov $0,$2
-div $0,9
 mul $0,8

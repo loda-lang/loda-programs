@@ -11,7 +11,11 @@ pow $2,2
 lpb $2
   mov $5,$1
   add $5,1
-  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  mov $6,$5
+  seq $6,2618 ; a(n) = n*phi(n).
+  div $6,$5
+  mov $5,$6
+  sub $5,1
   mov $3,$1
   sub $3,$5
   seq $3,78701 ; Least odd prime factor of n, or 1 if no such factor exists.

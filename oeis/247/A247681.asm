@@ -1,5 +1,5 @@
 ; A247681: Odd nonprimes congruent to 1 modulo 9.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by atannir
 ; 1,55,91,145,217,235,253,289,325,343,361,415,451,469,505,559,595,649,667,685,703,721,775,793,847,865,901,955,973,1027,1045,1081,1099,1135,1189,1207,1225,1243,1261,1315,1333,1351,1369,1387,1405,1441,1477,1495,1513,1585,1603,1639,1675,1711,1729,1765,1819,1837,1855,1891,1909,1927,1945,1963,1981,2035,2071,2107,2125,2197,2215,2233,2305,2323,2359,2395,2413,2431,2449,2485
 
 #offset 1
@@ -7,16 +7,19 @@
 sub $0,1
 mov $2,$0
 add $0,1
-add $2,3
+add $2,5
 pow $2,2
 lpb $2
-  mov $3,$1
+  add $2,1
+  max $3,$1
+  mul $3,2
   add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,18
+  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
+  equ $3,0
+  sub $0,$3
+  add $1,9
   sub $2,$0
 lpe
 mov $0,$1
+mul $0,2
 add $0,1

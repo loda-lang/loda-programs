@@ -6,17 +6,13 @@
 #offset 1
 
 add $0,2
-mov $2,2
-pow $2,$0
-mov $1,3
+mov $1,2
 pow $1,$0
-sub $1,$2
-mov $3,$1
-add $3,1
-mov $4,-13
-mul $4,$3
-add $2,$4
-sub $5,$2
-mov $0,$5
+mov $2,3
+pow $2,$0
+sub $2,$1
+mul $2,13
+sub $2,$1
+mov $0,$2
 mul $0,2
-add $0,23
+add $0,49

@@ -1,76 +1,34 @@
 ; A122856: Expansion of f(x, x^5)^2 in powers of x where f(, ) is Ramanujan's general theta function.
-; Submitted by matszpk
+; Submitted by BrandyNOW
 ; 1,2,1,0,0,2,2,0,2,2,1,0,0,2,0,0,3,2,0,0,0,4,2,0,2,0,2,0,0,2,0,0,1,2,2,0,0,2,2,0,2,4,1,0,0,2,0,0,2,2,0,0,0,0,2,0,4,2,0,0,0,4,0,0,2,2,3,0,0,0,2,0,2,4,0,0,0,2,0,0
 
-mov $1,$0
+mul $0,3
 add $0,2
-sub $1,1
-add $1,$0
-mov $3,$1
-add $3,1
-mov $2,2
-mul $2,$3
-sub $0,1
-mul $0,-1
-add $0,$2
-sub $0,1
-mul $0,4
+mov $2,$0
+lex $2,2
+mov $6,3
+mov $1,2
+pow $1,$2
 mov $4,$0
-mov $13,0
-trn $0,1
-mov $5,$0
-mov $6,-1
-pow $6,$0
-mov $7,$0
-add $7,1
-mov $16,$7
-lex $16,2
-mov $17,2
-pow $17,$16
-div $7,$17
-div $7,2
-mov $8,-1
-pow $8,$7
-mul $8,2
-mov $9,-2
-bin $9,$7
-div $9,$8
-mov $10,0
-mov $12,3
-sub $7,$9
-mul $7,2
-add $7,3
-lpb $7
-  sub $7,$12
-  mov $11,$7
-  max $11,0
-  mul $11,4
-  mov $15,$11
-  nrt $15,2
-  add $11,2
-  mov $14,$11
-  nrt $14,2
-  mov $11,$14
-  add $11,$15
-  mod $11,2
-  mov $12,2
-  add $12,$13
-  add $10,$11
-  add $13,2
+div $4,$1
+div $4,2
+add $4,3
+lpb $4
+  sub $4,$6
+  mov $8,$4
+  max $8,0
+  mul $8,4
+  mov $2,$8
+  nrt $2,2
+  add $8,2
+  mov $3,$8
+  nrt $3,2
+  mov $8,$3
+  add $8,$2
+  mod $8,2
+  mov $6,2
+  add $6,$5
+  add $7,$8
+  add $5,2
 lpe
-mov $7,$10
-mul $7,$8
-div $7,2
-max $7,0
-mul $7,2
-mod $0,4
-mul $0,$7
-sub $7,$0
 mov $0,$7
-div $0,2
-mul $0,$6
-mul $0,2
-sub $0,1
-sub $0,$5
-add $0,$4
-div $0,4

@@ -1,17 +1,14 @@
 ; A307618: A Calabi-Yau period integral: a(n) = C(4*n,2*n)*C(2*n,n)^3.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,48,15120,7392000,4414410000,2956651746048,2133278987583744,1621682968820428800,1281351259836532170000,1043032815185819858400000,869343653096068540955685120,738637974389826550020188712960,637665137404661719206664998969600
-; Formula: a(n) = binomial(4*n,2*n)*binomial(2*n,n)^3
+; Formula: a(n) = binomial(-2*n-1,2*n)*binomial(2*n,n)^3
 
-mov $1,$0
-mul $0,2
-mov $3,$0
-bin $3,$1
-mov $4,$0
+sub $1,$0
 mov $2,$0
-bin $2,$1
-mul $2,$3
-mul $2,$3
-mul $0,2
-bin $0,$4
-mul $0,$2
+sub $0,$1
+mul $1,2
+sub $1,1
+bin $1,$0
+bin $0,$2
+pow $0,3
+mul $0,$1

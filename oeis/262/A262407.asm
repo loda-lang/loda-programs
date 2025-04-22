@@ -1,24 +1,11 @@
 ; A262407: a(n) = Sum_{k=0..n-1} C(n,k+1)*C(n,k)*C(n-1,k).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 0,1,4,24,152,1010,6912,48328,343408,2471274,17966360,131717960,972488640,7223061040,53925450880,404400203280,3044645475296,23002424245754,174324246314184,1324800580881952,10093304926771600,77073430602848316,589761299099196224
 
-mov $4,-1
-add $0,2
-lpb $0
-  sub $0,1
-  mov $2,$4
-  add $2,1
-  div $2,-1
-  bin $2,$0
-  pow $2,2
-  mul $4,2
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $4,2
-  div $4,2
-  mov $1,$0
-  add $1,$4
-  add $5,$3
-lpe
-mov $0,$5
+equ $2,$0
+max $0,1
+mov $1,$0
+mul $1,3
+seq $0,279 ; Card matching: coefficients B[n,1] of t in the reduced hit polynomial A[n,n,n](t).
+div $0,$1
+sub $0,$2

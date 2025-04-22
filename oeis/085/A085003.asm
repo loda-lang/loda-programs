@@ -1,27 +1,19 @@
 ; A085003: Partial sums of A085002.
-; Submitted by Conan
+; Submitted by Athlici
 ; 1,2,2,2,2,3,4,4,4,4,5,6,7,7,7,8,9,10,10,10,11,12,13,13,13,13,14,15,15,15,15,16,17,18,18,18,19,20,21,21,21,22,23,24,24,24,24,25,26,26,26,26,27,28,28,28,28,29,30,31,31,31,32,33,34,34,34,34,35,36,36,36,36,37,38,38,38,38,39,40
+; Formula: a(n) = -2*truncate(truncate((sqrtint(5*n^2)+n)/2)/2)+a(n-1)+truncate((sqrtint(5*n^2)+n)/2), a(0) = 0
 
 #offset 1
 
-sub $0,1
-mov $4,$0
-mov $2,$0
-add $2,1
-lpb $2
-  sub $2,1
-  mov $0,$4
-  sub $0,$2
-  add $0,1
-  mov $1,$0
-  mul $1,5
-  mul $1,$0
-  nrt $1,2
-  add $1,$0
-  div $1,2
-  lpb $1
-    mod $1,2
-  lpe
-  add $3,$1
+lpb $0
+  mov $2,$0
+  mul $2,5
+  mul $2,$0
+  nrt $2,2
+  add $2,$0
+  div $2,2
+  mod $2,2
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

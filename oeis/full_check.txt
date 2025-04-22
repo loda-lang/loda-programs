@@ -53,6 +53,8 @@ A003754: Numbers with no adjacent 0's in binary expansion.
 A004016: Theta series of planar hexagonal lattice A_2.
 A004641: Fixed under 0 -> 10, 1 -> 100.
 A004921: a(n) = floor(n*phi^6), phi = golden ratio, A001622.
+A004928: a(n) = floor(n*phi^13), where phi is the golden ratio, A001622.
+A004929: a(n) = floor(n*phi^14), where phi is the golden ratio, A001622.
 A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
 A004937: Nearest integer to n*phi^2, where phi is the golden ratio, A001622.
 A004939: a(n) = round(n*phi^4), where phi is the golden ratio, A001622.
@@ -108,6 +110,7 @@ A023690: Numbers with exactly 8 ones in binary expansion.
 A024698: a(n) = (prime(n+1) - 1)/4 if this is an integer or (prime(n+1) + 1)/4 otherwise.
 A024702: a(n) = (prime(n)^2 - 1)/24.
 A024707: Positions of multiples of 5 in A024702.
+A025426: Number of partitions of n into 2 nonzero squares.
 A025441: Number of partitions of n into 2 distinct nonzero squares.
 A025456: Number of partitions of n into 3 positive cubes.
 A025465: Number of partitions of n into 3 distinct nonnegative cubes.
@@ -379,6 +382,7 @@ A123926: Greatest common divisor of sigma_k(n) for all k >= 1.
 A124218: a(n) is the m-th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n, d(n) is the number of positive divisors of n and m = phi(n) if phi(n)|d(n), else m = d(n) mod phi(n).
 A124333: a(n) = ((n mod phi(n)) +1)th positive integer which is coprime to n, where phi(n) is number of positive integers which are <= n and are coprime to n.
 A125070: a(n) = number of nonzero exponents in the prime-factorization of n which are not primes.
+A127699: Length of period of the sequence (1^1^1^..., 2^2^2^..., 3^3^3^..., 4^4^4^..., ...) modulo n.
 A127971: a(n) = fusc(n+1) + (1-(-1)^n)/2, fusc = A002487.
 A128309: a(n) = 2*A000069(n).
 A128703: Numbers of the form 5^k*p, where 1 <= k <= 5 and p is a prime different from 5.

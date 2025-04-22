@@ -1,7 +1,7 @@
 ; A018627: Divisors of 752.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,2,4,8,16,47,94,188,376,752
-; Formula: a(n) = truncate(c(n-1)/4)+1, b(n) = gcd(2*b(n-1)+c(n-1)+1,31), b(1) = 1, b(0) = 1, c(n) = 2*b(n-1)+2*c(n-1)+2, c(1) = 4, c(0) = 0
+; Formula: a(n) = truncate(b(n-1)/2)+1, b(n) = 2*b(n-1)+gcd(c(n-1),b(n-1)), b(1) = 3, b(0) = 1, c(n) = b(n-1)+gcd(c(n-1),b(n-1))-16, c(1) = -14, c(0) = 0
 
 #offset 1
 
@@ -9,12 +9,11 @@ mov $1,1
 sub $0,1
 lpb $0
   sub $0,1
-  add $2,1
+  gcd $2,$1
   add $2,$1
   add $1,$2
-  gcd $1,31
-  mul $2,2
+  sub $2,16
 lpe
-mov $0,$2
-div $0,4
+mov $0,$1
+div $0,2
 add $0,1

@@ -11,8 +11,15 @@ pow $2,3
 lpb $2
   sub $2,15
   mov $3,$1
+  mul $3,2
+  mov $6,$3
+  dir $3,3
+  mod $3,3
+  div $3,2
+  gcd $3,3
+  div $6,$3
+  mov $3,$6
   add $3,1
-  seq $3,26136 ; Lexicographically earliest permutation of the positive integers such that |a(n)-n| = [a(n)/2].
   add $3,$4
   mul $3,2
   mov $5,$3

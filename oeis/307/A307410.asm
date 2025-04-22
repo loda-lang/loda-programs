@@ -12,5 +12,4 @@ seq $1,2322 ; Reduced totient function psi(n): least k such that x^k == 1 (mod n
 mov $2,$3
 gcd $3,$1
 div $2,$3
-sub $0,1
 mov $0,$2

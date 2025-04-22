@@ -5,7 +5,6 @@
 mov $1,$0
 trn $1,1
 mov $2,$1
-mov $3,0
 add $1,1
 mov $4,$1
 lpb $1

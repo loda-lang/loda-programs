@@ -8,7 +8,6 @@ mov $1,$0
 seq $1,50873 ; Triangular array T read by rows: T(n,k) = gcd(n,k).
 equ $1,1
 mul $0,8
-sub $0,7
 nrt $0,2
 add $0,1
 div $0,2

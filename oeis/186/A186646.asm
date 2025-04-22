@@ -9,5 +9,4 @@ gcd $2,4
 div $2,2
 mov $1,$0
 dif $1,$2
-sub $0,1
 mov $0,$1

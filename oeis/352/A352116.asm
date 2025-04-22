@@ -1,20 +1,16 @@
 ; A352116: Partial sums of the odd triangular numbers (A014493).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,4,19,40,85,140,231,336,489,660,891,1144,1469,1820,2255,2720,3281,3876,4579,5320,6181,7084,8119,9200,10425,11700,13131,14616,16269,17980,19871,21824,23969,26180,28595,31080,33781,36556,39559,42640,45961,49364,53019,56760,60765
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+binomial(2*n+gcd(n,2),2), b(0) = 1
+; Formula: a(n) = truncate((2*n*bitor(n-1,1)+binomial(2*n,3))/2)
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  mov $3,$0
-  gcd $3,2
-  add $3,$0
-  mov $2,$0
-  add $2,$3
-  bin $2,2
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
+mov $1,$0
+bor $1,1
+mul $0,2
+add $0,2
+mul $1,$0
+bin $0,3
+add $0,$1
+div $0,2

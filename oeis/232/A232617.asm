@@ -1,18 +1,20 @@
 ; A232617: Product of first n odd numbers plus product of first n even numbers: (2n-1)!! + (2n)!!, where k!! = A006882(k).
-; Submitted by ChelseaOilman
+; Submitted by BrandyNOW
 ; 3,11,63,489,4785,56475,780255,12348945,220253985,4370620275,95498916975,2278224696825,58917607974225,1641787169697675,49040157044253375,1563094742062478625,52953322446161762625,1899986948191060603875,71977860935783603175375,2870913642898706235455625
-; Formula: a(n) = a(n-1)*(2*n-1)+b(n-1), a(2) = 11, a(1) = 3, a(0) = 2, b(n) = 2*n*b(n-1), b(2) = 8, b(1) = 2, b(0) = 1
+; Formula: a(n) = truncate((b(n)+c(n))/3), b(n) = b(n-1)*(2*n-1), b(2) = 9, b(1) = 3, b(0) = 3, c(n) = 2*n*c(n-1), c(2) = 24, c(1) = 6, c(0) = 3
 
 #offset 1
 
-mov $1,1
-mov $3,2
+mov $1,3
+mov $2,-1
+mov $3,3
 lpb $0
   sub $0,1
-  add $2,1
+  add $2,3
   mul $3,$2
-  add $3,$1
-  add $2,1
+  sub $2,1
   mul $1,$2
 lpe
 mov $0,$3
+add $0,$1
+div $0,3

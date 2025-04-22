@@ -4,24 +4,13 @@
 
 #offset 2
 
-sub $0,1
+sub $0,2
 mov $1,$0
-mov $3,1
-sub $0,1
-add $0,$1
-mov $2,$0
-lpb $2
-  mov $4,$2
-  div $2,2
-  mul $2,2
-  max $5,1
-  mul $5,$2
-  sub $2,1
-  mul $3,$4
-lpe
-gcd $5,$3
-div $3,$5
-mov $0,$3
+mov $2,1
+add $2,$0
+add $0,$2
+bin $0,$1
 pow $0,2
-gcd $1,$0
-div $0,$1
+mul $2,$0
+dir $2,2
+mov $0,$2

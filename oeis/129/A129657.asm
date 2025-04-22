@@ -14,7 +14,6 @@ lpb $2
   sub $3,1
   sub $3,$1
   trn $3,$1
-  neq $3,0
   equ $3,0
   sub $0,$3
   add $1,1

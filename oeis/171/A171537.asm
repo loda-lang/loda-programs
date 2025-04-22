@@ -1,27 +1,14 @@
 ; A171537: Decimal expansion of sqrt(3/7).
-; Submitted by [AF>Amis de la Mer] ComteZera
+; Submitted by tomkalei
 ; 6,5,4,6,5,3,6,7,0,7,0,7,9,7,7,1,4,3,7,9,8,2,9,2,4,5,6,2,4,6,8,5,8,3,5,5,5,6,9,2,0,8,0,8,2,3,9,5,4,2,4,5,5,7,5,1,5,3,2,0,3,0,3,4,1,5,2,6,6,9,1,7,9,3,5,3,9,5,8,4
+; Formula: a(n) = -10*truncate(sqrtint(18*floor((10^(2*n+2))/42))/10)+sqrtint(18*floor((10^(2*n+2))/42))
 
-add $0,1
-mov $1,1
-mov $3,$0
-mul $3,3
-lpb $3
-  sub $3,1
-  add $6,$2
-  add $1,$6
-  add $1,$2
-  mov $2,$5
-  add $2,$1
-  mul $2,2
-  add $6,$1
-  mul $1,2
-  mov $5,$1
-  add $5,$2
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-div $1,$2
+mul $0,2
+add $0,2
+mov $1,10
+pow $1,$0
+div $1,42
+mul $1,18
 mov $0,$1
+nrt $0,2
 mod $0,10

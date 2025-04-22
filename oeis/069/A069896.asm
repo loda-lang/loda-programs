@@ -8,13 +8,10 @@ mov $3,2
 lpb $3
   sub $3,1
   add $0,$3
-  sub $0,1
   mov $2,$0
-  max $2,0
-  mov $4,$2
-  add $2,1
+  sub $0,1
   seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-  sub $2,$4
+  sub $2,$0
   trn $2,2
   bin $0,$3
   gcd $1,$2

@@ -1,18 +1,19 @@
 ; A290195: Decimal representation of the diagonal from the origin to the corner of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 705", based on the 5-celled von Neumann neighborhood.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,1,5,11,7,47,31,191,127,767,511,3071,2047,12287,8191,49151,32767,196607,131071,786431,524287,3145727,2097151,12582911,8388607,50331647,33554431,201326591,134217727,805306367,536870911,3221225471,2147483647,12884901887,8589934591,51539607551,34359738367,206158430207,137438953471,824633720831,549755813887,3298534883327,2199023255551,13194139533311,8796093022207,52776558133247,35184372088831,211106232532991,140737488355327,844424930131967,562949953421311,3377699720527871,2251799813685247
+; Formula: a(n) = 2*max(truncate(truncate((114*binomial(-truncate(2^(n-2))+n-2,-truncate(2^(n-2))+n-2))/gcd(-truncate(2^(n-2))+n-2,2))/38)*truncate(2^(n-2)),1)-1
 
-mov $1,1
-lpb $0
-  sub $0,1
-  mov $3,-2
-  pow $3,$0
-  mov $0,1
-  gcd $2,$3
-  add $3,$2
-  add $2,$3
-  sub $2,1
-  mov $1,$2
-  max $1,5
-lpe
-mov $0,$1
+sub $0,2
+mov $2,2
+pow $2,$0
+sub $0,$2
+mov $1,$0
+bin $0,$1
+mul $0,114
+gcd $1,2
+div $0,$1
+div $0,38
+mul $0,$2
+max $0,1
+mul $0,2
+sub $0,1

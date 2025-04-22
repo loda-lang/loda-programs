@@ -29,10 +29,7 @@ lpb $0
   add $5,$6
   mul $7,3
 lpe
-mul $5,2
 mov $0,$5
-add $0,3
-div $0,6
+div $0,3
 mul $0,2
 add $0,1
-add $5,1

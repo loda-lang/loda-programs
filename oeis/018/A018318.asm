@@ -1,5 +1,5 @@
 ; A018318: Divisors of 174.
-; Submitted by Drago75
+; Submitted by BlisteringSheep
 ; 1,2,3,6,29,58,87,174
 
 #offset 1
@@ -18,7 +18,7 @@ lpb $0
   dif $2,$3
   pow $1,$4
   add $1,1
-  add $4,3
+  mov $4,3
 lpe
 mov $0,$2
 div $0,3

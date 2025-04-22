@@ -8,8 +8,7 @@ sub $0,1
 mov $1,$0
 sub $0,2
 lpb $0
-  trn $0,1
-  add $0,3
+  add $0,2
   seq $0,40 ; The prime numbers.
   mov $2,$0
   div $0,2

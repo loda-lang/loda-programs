@@ -8,7 +8,7 @@ sub $0,3
 mov $2,$0
 mov $1,1
 lpb $1
-  sub $1,1
+  div $1,2
   mov $3,$2
   add $3,2
   mov $4,5

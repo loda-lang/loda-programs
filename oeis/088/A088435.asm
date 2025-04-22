@@ -1,5 +1,5 @@
 ; A088435: 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k>=1,1/3^(2^k)).
-; Submitted by kl8610
+; Submitted by mmonnin
 ; 3,2,2,1,2,3,2,1,3,2,1,2,2,3,2,1,3,2,2,1,2,3,1,2,3,2,1,2,2,3,2,1,3,2,2,1,2,3,2,1,3,2,1,2,2,3,1,2,3,2,2,1,2,3,1,2,3,2,1,2,2,3,2,1,3,2,2,1,2,3,2,1,3,2,1,2,2,3,2,1
 
 #offset 1
@@ -7,9 +7,7 @@
 add $0,1
 mov $2,$0
 bin $0,2
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2
 mod $0,2
 equ $0,0

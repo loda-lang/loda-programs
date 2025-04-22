@@ -1,40 +1,33 @@
 ; A075512: Seventh column of triangle A075497.
-; Submitted by dthonon
+; Submitted by BrandyNOW
 ; 1,56,1848,47040,1023792,20076672,365787136,6314147840,104637781248,1680323893248,26325099300864,404403166003200,6115019304300544,91287994741981184,1348582723009708032
+; Formula: a(n) = truncate((3*truncate((7^(n+6)+5*3^(n+7)+3*5^(n+7)-6^(n+7)-3*2^(n+7)-5*4^(n+7)+1)/720)*2^(n+7))/384)
 
-mov $1,2
+add $0,6
+mov $1,7
 pow $1,$0
 add $0,1
-mov $2,1
-mov $4,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$4
-  sub $0,$3
-  add $0,5
-  mov $7,4
-  pow $7,$0
-  mul $7,5
-  mov $8,3
-  pow $8,$0
-  mul $8,10
-  mov $9,2
-  pow $9,$0
-  mul $9,10
-  mov $6,5
-  pow $6,$0
-  sub $6,$7
-  add $6,$8
-  sub $6,$9
-  add $6,5
-  mov $0,$6
-  div $0,120
-  mul $2,6
-  mul $5,7
-  add $5,$2
-  add $2,$0
-lpe
-mov $0,$5
-div $0,6
-mul $0,$1
+mov $2,6
+pow $2,$0
+mov $3,5
+pow $3,$0
+mul $3,3
+mov $4,4
+pow $4,$0
+mul $4,5
+mov $5,3
+pow $5,$0
+mul $5,5
+mov $6,2
+pow $6,$0
+mul $6,3
+sub $1,$2
+add $1,$3
+sub $1,$4
+add $1,$5
+sub $1,$6
+add $1,1
+div $1,720
+mul $6,$1
+mov $0,$6
+div $0,384

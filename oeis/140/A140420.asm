@@ -1,16 +1,14 @@
 ; A140420: Binomial transform of 0, 1, 1, 7, 7, 31, 31, ..., zero followed by duplicated A083420.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 0,1,3,13,45,151,483,1513,4665,14251,43263,130813,394485,1187551,3570843,10728913,32219505,96724051,290303223,871171813,2614039725,7843167751,23531600403,70598995513,211805375145,635432902651
-; Formula: a(n) = truncate((4*floor((3^(n+1))/2)-4*2^(n+1)+8)/8)
+; Formula: a(n) = -2^n+floor((3^(n+1))/4)+1
 
+mov $2,2
+pow $2,$0
 add $0,1
 mov $1,3
 pow $1,$0
-div $1,2
-mov $2,2
-pow $2,$0
+div $1,4
 sub $1,$2
 mov $0,$1
-mul $0,4
-add $0,8
-div $0,8
+add $0,1

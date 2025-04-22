@@ -8,8 +8,5 @@ seq $2,62570 ; a(n) = phi(2*n).
 dif $2,2
 mov $1,$0
 gcd $1,$2
-sub $0,1
 mov $0,$1
-trn $0,1
-add $0,1
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

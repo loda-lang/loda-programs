@@ -1,16 +1,17 @@
 ; A193045: Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) defined at Comments.
-; Submitted by Kotenok2000
+; Submitted by BrandyNOW
 ; 0,1,1,3,8,21,49,105,210,399,729,1293,2242,3821,6427,10703,17690,29073,47579,77621,126340,205291,333171,540233,875428,1417961,2295989,3716875,6016140,9736669,15756869,25498033,41259862,66763351,108029197
+; Formula: a(n) = 2*a(n-1)-a(n-3)+b(n-2), a(6) = 49, a(5) = 21, a(4) = 8, a(3) = 3, a(2) = 1, a(1) = 1, a(0) = 0, b(n) = b(n-1)+n, b(4) = 10, b(3) = 6, b(2) = 3, b(1) = 1, b(0) = 0
 
+mov $2,1
 lpb $0
-  mov $2,$0
-  trn $2,1
-  seq $2,192955 ; Coefficient of x in the reduction by x^2 -> x+1 of the polynomial p(n,x) defined at Comments.
-  sub $0,2
-  add $1,$2
-lpe
-lpb $0
-  add $1,$0
-  div $0,3
+  sub $0,1
+  add $4,1
+  mov $6,$2
+  mov $2,$1
+  add $1,$6
+  add $1,$3
+  add $3,$5
+  add $5,$4
 lpe
 mov $0,$1

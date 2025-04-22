@@ -1,19 +1,18 @@
 ; A358439: Number of even digits necessary to write all positive n-digit integers.
-; Submitted by Stony666
+; Submitted by Science United
 ; 4,85,1300,17500,220000,2650000,31000000,355000000,4000000000,44500000000,490000000000,5350000000000,58000000000000,625000000000000,6700000000000000,71500000000000000,760000000000000000,8050000000000000000,85000000000000000000,895000000000000000000
-; Formula: a(n) = 81*truncate(c(n+1)/20)+4, b(n) = 10*b(n-1)+1, b(1) = 1, b(0) = 0, c(n) = 10*c(n-1)+b(n-1), c(1) = 0, c(0) = 0
+; Formula: a(n) = truncate(((9*n-1)*10^n)/20)
 
 #offset 1
 
-add $0,1
-lpb $0
-  sub $0,1
-  mul $2,10
-  add $2,$1
-  mul $1,10
-  add $1,1
-lpe
-mov $0,$2
+mov $3,$0
+mul $3,3
+mov $4,3
+mul $4,$3
+mov $2,10
+pow $2,$0
+mov $1,-1
+add $1,$4
+mul $1,$2
+mov $0,$1
 div $0,20
-mul $0,81
-add $0,4

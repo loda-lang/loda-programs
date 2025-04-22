@@ -8,11 +8,9 @@ sub $0,1
 mov $1,$0
 mov $2,1
 lpb $0
-  sub $0,1
   mov $3,$0
-  max $3,0
-  add $3,1
   seq $3,123741 ; A second version of Fibonacci factorials besides A003266.
+  sub $0,1
   mul $2,$3
 lpe
 add $1,9

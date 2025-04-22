@@ -9,4 +9,3 @@ mul $1,9
 mov $0,$1
 seq $0,49417 ; a(n) = isigma(n): sum of infinitary divisors of n.
 div $0,10
-sub $1,1

@@ -1,18 +1,13 @@
 ; A326355: Number of permutations of length n with at most two descents.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,1,2,6,23,93,360,1312,4541,15111,48854,154674,482355,1487905,4553684,13857492,41998265,126912075,382702050,1152300166,3465813071,10416313221,31288785152,93950241096,282026883573,846449748943,2540120998190,7621973606682
+; Formula: a(n) = 3^n-n*2^n+binomial(n,2)
 
-lpb $0
-  sub $0,1
-  add $2,$1
-  mul $2,2
-  sub $1,$0
-  add $1,$3
-  mul $3,3
-  add $1,$3
-  add $1,2
-  add $3,1
-lpe
-mov $0,$2
-div $0,2
-add $0,1
+mov $2,2
+pow $2,$0
+mul $2,$0
+mov $1,3
+pow $1,$0
+sub $1,$2
+bin $0,2
+add $0,$1

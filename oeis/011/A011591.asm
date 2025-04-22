@@ -17,11 +17,8 @@ lpb $0
 lpe
 mod $1,2
 add $3,$1
-add $3,$1
 add $4,1
 mov $0,$4
 mod $0,43
 sub $0,1
-mov $1,$3
-div $1,2
-mul $0,$1
+mul $0,$3

@@ -1,20 +1,16 @@
 ; A061439: Largest number whose cube has n digits.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 2,4,9,21,46,99,215,464,999,2154,4641,9999,21544,46415,99999,215443,464158,999999,2154434,4641588,9999999,21544346,46415888,99999999,215443469,464158883,999999999,2154434690,4641588833,9999999999
-; Formula: a(n) = sqrtnint(b(n)+c(n)-1,3), b(n) = 10*b(n-1), b(3) = 1000, b(2) = 100, b(1) = 10, b(0) = 1, c(n) = c(n-1), c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = sqrtnint(truncate((2*10^n-1)/2),3)
 
 #offset 1
 
-mov $1,1
-mov $3,1
-lpb $0
-  sub $0,1
-  mul $1,8
-  mul $3,2
-  add $3,$1
-  mov $1,$3
-lpe
-sub $1,1
+mov $3,10
+pow $3,$0
+mov $1,$3
+mul $1,2
+mov $2,-1
 add $2,$1
 mov $0,$2
+div $0,2
 nrt $0,3

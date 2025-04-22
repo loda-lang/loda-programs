@@ -16,7 +16,6 @@ lpb $1
   mul $0,0
   mov $2,$4
   nrt $2,2
-  sub $2,1
   nrt $2,2
   add $2,1
   seq $2,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.

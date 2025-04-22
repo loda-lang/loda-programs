@@ -1,21 +1,16 @@
 ; A328984: If n is even, a(n) = floor((5t+1)/2) where t=n/2; if n == 1 (mod 4) then a(n) = 10t+1 where t = (n-1)/4; and if n == 3 (mod 4) then a(n) = 10t+7 where t = (n-3)/4.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,3,7,5,11,8,17,10,21,13,27,15,31,18,37,20,41,23,47,25,51,28,57,30,61,33,67,35,71,38,77,40,81,43,87,45,91,48,97,50,101,53,107,55,111,58,117,60,121,63,127,65,131,68,137,70,141,73,147,75,151,78,157,80,161,83,167,85,171,88,177,90,181,93,187,95,191,98,197,100
-; Formula: a(n) = truncate((-5*n+2)/4)*((5*n+3)%2-2)+1
+; Formula: a(n) = truncate((5*n-gcd(n-3,2))/4)*gcd(n-3,2)+1
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mul $2,5
-mov $1,$2
-add $1,8
-mov $3,4
-sub $3,$1
-add $3,1
-div $3,4
-mod $1,2
-sub $1,2
-mul $1,$3
-add $1,1
+mov $1,$0
+sub $1,3
+gcd $1,2
+mul $0,5
+sub $0,$1
+div $0,4
+mul $1,$0
 mov $0,$1
+add $0,1

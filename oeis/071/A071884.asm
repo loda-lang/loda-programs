@@ -1,19 +1,15 @@
 ; A071884: Trajectory of 37 under map x -> A002487(x)*A002487(x+1).
-; Submitted by Science United
+; Submitted by cargoeagle
 ; 37,77,170,714,3450,10414,68145,303610,721305,1815066,17782782,4598150,68178460,133118649,585506070,20663527908,777507763200,264506067126,73112062114130,5907184479605316,516068243814152148
 
 mov $1,37
-mov $2,41
+mov $2,39
 lpb $2
   seq $1,70871 ; a(n) = A002487(n) * A002487(n+1) (Conway's alimentary function).
   sub $3,$1
   mul $3,-4
   min $3,1
   sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,2
+  mov $2,$0
 lpe
 mov $0,$1

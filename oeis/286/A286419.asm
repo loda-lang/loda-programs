@@ -13,9 +13,7 @@ lpb $0
   mov $1,$2
   div $1,2
   add $1,1
-  lpb $1
-    dif $1,4
-  lpe
+  dir $1,4
   mod $1,2
   sub $0,$1
   add $2,2

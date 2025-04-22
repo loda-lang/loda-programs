@@ -11,12 +11,11 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,123532 ; Expansion of (eta(q) * eta(q^6))^7 / (eta(q^2) * eta(q^3))^5 in powers of q.
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     add $5,1
     add $6,$7

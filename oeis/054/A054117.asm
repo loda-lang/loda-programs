@@ -4,17 +4,15 @@
 
 #offset 2
 
-add $0,1
-mov $1,1
-mov $2,$0
-sub $0,2
+mov $2,1
+mov $4,1
 lpb $0
   sub $0,1
-  sub $2,1
-  mul $1,$2
-  add $1,1
+  mul $4,$2
+  add $2,1
+  add $3,$4
+  equ $1,1
+  add $1,$3
 lpe
-mul $2,2
-trn $1,$2
 mov $0,$1
-add $0,1
+sub $0,3

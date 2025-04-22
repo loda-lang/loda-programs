@@ -1,13 +1,20 @@
 ; A264989: Self-inverse permutation of nonnegative integers: a(n) = (A264987(n)-1) / 2.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by atannir
 ; 0,1,2,5,4,3,6,7,11,14,16,8,17,13,9,18,10,12,15,19,20,47,22,29,56,34,38,41,43,23,50,49,32,59,25,35,44,52,26,53,40,27,54,28,36,45,55,21,48,31,30,57,37,39,42,46,24,51,58,33,60,61,101,128,142,74,155,67,83,164,88,110,137,169,65,146,103,92,173,115
-; Formula: a(n) = truncate((-A264987(n)*(A264668(n)-1))/2)
 
+mul $0,2
+add $0,1
 mov $1,$0
-seq $1,264987 ; Odd bisection of A263272.
+mov $3,$0
+mul $3,2
+seq $3,30102 ; Base-3 reversal of n (written in base 10).
+div $0,2
+dif $0,2
 seq $0,264668 ; a(n) = A264600(n) - A061486(n).
 sub $0,1
+gcd $1,81
+mul $1,$3
 mul $1,$0
 sub $2,$1
 mov $0,$2
-div $0,2
+div $0,4

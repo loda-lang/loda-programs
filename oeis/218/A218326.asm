@@ -1,19 +1,17 @@
 ; A218326: Odd octagonal pyramidal numbers
-; Submitted by Skillz
+; Submitted by BrandyNOW
 ; 1,9,135,231,765,1045,2275,2835,5049,5985,9471,10879,15925,17901,24795,27435,36465,39865,51319,55575,69741,74949,92115,98371,118825,126225,150255,158895,186789,196765,228811,240219,276705,289641,330855,345415,391645,407925
-; Formula: a(n) = truncate((binomial(2*n-4*truncate((-n+1)/2),2)*(-2*truncate((-n+1)/2)+n+1))/2)
+; Formula: a(n) = truncate((binomial(2*bitor(n-1,1)+2*n-2,2)*(bitor(n-1,1)+n-1)+binomial(2*bitor(n-1,1)+2*n-2,2))/2)
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-mul $0,2
-sub $1,$0
-mod $1,2
+bor $0,1
+add $1,$0
+mov $0,2
+mul $0,$1
+bin $0,2
+mul $1,$0
 add $0,$1
-mov $2,$0
-add $0,2
-add $2,$0
-bin $2,2
-mul $0,$2
 div $0,2

@@ -5,7 +5,6 @@
 #offset 1
 
 mov $4,$0
-sub $0,1
 lpb $4
   sub $4,1
   mov $0,$2

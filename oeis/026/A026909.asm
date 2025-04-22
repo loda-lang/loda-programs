@@ -1,20 +1,18 @@
 ; A026909: (1/2)*T(2n,n), T given by A026907.
-; Submitted by stoneageman
+; Submitted by BrandyNOW
 ; 22,99,379,1412,5265,19758,74637,283560,1082449,4148603,15953607,61526969,237876571,921678876,3577968081,13913243136,54184698801,211307360871,825059443551,3225071709981,12619275028611,49423455006501
-; Formula: a(n) = 3*binomial(2*n+3,truncate((2*n-1)/2)+2)+binomial(2*n-1,truncate((2*n-1)/2))-9
+; Formula: a(n) = floor((3*binomial(2*n+4,n+2)+binomial(2*n,n))/2)-9
 
 #offset 1
 
-mul $0,2
-sub $0,1
 mov $1,$0
-mov $2,$0
-div $0,2
+mul $1,2
 bin $1,$0
 add $0,2
-add $2,4
-bin $2,$0
-mul $2,3
-add $2,$1
-mov $0,$2
+mov $2,$0
+mul $0,2
+bin $0,$2
+mul $0,3
+add $0,$1
+div $0,2
 sub $0,9

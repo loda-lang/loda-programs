@@ -1,17 +1,15 @@
 ; A172392: a(n) = C(2n,n)*C(2n+2,n+1)/(n+2).
-; Submitted by Mumps
+; Submitted by BrandyNOW
 ; 1,4,30,280,2940,33264,396396,4907760,62573940,816621520,10861066216,146738321184,2008917492400,27815780664000,388924218927000,5484594083378400,77926940934668100,1114620641232714000
-; Formula: a(n) = floor((2*floor(binomial(2*n,n)/(n+1))*binomial(2*n+2,n))/2)
+; Formula: a(n) = floor(binomial(2*n+1,n)/(2*n+1))*binomial(2*n+2,n)
 
 mov $1,$0
 mul $1,2
-add $1,2
+add $1,1
+mov $2,$1
+bin $2,$0
+div $2,$1
+add $1,1
 bin $1,$0
-mul $1,2
-mov $2,$0
-mul $0,2
-bin $0,$2
-add $2,1
-div $0,$2
-mul $0,$1
-div $0,2
+mul $1,$2
+mov $0,$1

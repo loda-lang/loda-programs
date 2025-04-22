@@ -15,5 +15,4 @@ seq $2,18252 ; The nonprime numbers: 1 together with the composite numbers, A002
 add $1,1
 seq $1,7821 ; Primes p such that pi(p) is not prime.
 sub $1,$2
-sub $0,2
 mov $0,$1
