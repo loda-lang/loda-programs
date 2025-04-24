@@ -1,0 +1,31 @@
+; A018853: a(n)^4 is smallest fourth power beginning with n.
+; Submitted by Science United
+; 0,1,4,14,8,15,5,29,3,31,10,33,6,19,11,35,2,65,37,21,12,68,69,22,7,4,72,23,13,74,132,42,134,24,43,77,138,44,14,25,8,45,144,81,46,26,147,83,47,84,15,151,85,27,86,273,154,49,276,88,157,28,5,159,283,9,286,51,91,289,29,92,164,52,93,166,296,167,53,168
+
+mov $1,$0
+seq $1,55642 ; Number of digits in the decimal expansion of n.
+mov $2,10
+mul $2,$0
+mov $4,1
+mov $5,1
+lpb $2
+  sub $2,1
+  add $5,1
+  mov $6,$4
+  seq $6,55642 ; Number of digits in the decimal expansion of n.
+  sub $6,$1
+  mov $3,10
+  pow $3,$6
+  max $3,1
+  mov $7,$4
+  div $7,$3
+  equ $7,$0
+  lpb $7
+    sub $7,1
+    mov $2,0
+  lpe
+  mov $4,$5
+  pow $4,4
+lpe
+mov $0,$5
+sub $0,1

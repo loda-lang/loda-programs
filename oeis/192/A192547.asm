@@ -1,0 +1,22 @@
+; A192547: sum(stirling1(n,k)*stirling1(n+1,k+1),k=0..n).
+; Submitted by Athlici
+; 1,1,4,41,746,20952,837222,45064203,3140545942,274969698158,29537121873656,3818716753252766,584845275604394884,104699320897565702206,21661251169082551846770,5128537368950263252563795,1377694241395636643874812070,416761124303151455907430308630,141023920433239903565812366203720,53061132717242996011251003072900510,22080482344408611057212535393458579820,10113093565514326291690619063105605426920,5075652064823027869620042105088351564558380,2780283454847630641520814386769982746872544270
+
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  mov $4,$0
+  seq $4,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+  seq $0,132393 ; Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 <= k <= n.
+  mul $0,$4
+  add $1,$0
+lpe
+mov $0,$1

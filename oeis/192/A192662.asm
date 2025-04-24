@@ -1,0 +1,13 @@
+; A192662: Floor-Sqrt transform of (signless) central Stirling numbers of the first kind (A187646).
+; Submitted by Athlici
+; 1,1,3,15,82,518,3652,28123,233733,2075597,19542826,193908574,2017519282,21921326573,247882099197,2908534759303,35322473621014,443010881207381,5726889928765906,76175517383629544,1040964231177762308,14594191539892866665
+
+seq $0,187646 ; (Signless) Central Stirling numbers of the first kind s(2n,n).
+mov $1,$0
+mul $0,4
+lpb $0
+  div $2,$0
+  add $0,$2
+  div $0,2
+  mov $2,$1
+lpe
