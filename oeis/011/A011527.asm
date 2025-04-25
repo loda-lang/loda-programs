@@ -1,0 +1,9 @@
+; A011527: Stirling numbers of first kind S1(17,n).
+; Submitted by Science United
+; 20922789888000,-70734282393600,102992244837120,-87077748875904,48366009233424,-18861567058880,5374523477960,-1146901283528,185953177553,-23057159840,2185031420,-156952432,8394022,-323680,8500,-136,1
+; Formula: a(n) = A008275(n+136)
+
+#offset 1
+
+add $0,136
+seq $0,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.

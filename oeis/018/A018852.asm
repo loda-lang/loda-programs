@@ -1,0 +1,32 @@
+; A018852: a(n)^3 is smallest cube beginning with n.
+; Submitted by Science United
+; 0,1,3,7,16,8,4,9,2,21,10,48,5,11,52,25,55,12,57,27,59,6,61,62,29,63,64,3,66,31,67,68,32,15,7,33,154,72,73,34,16,161,35,76,164,77,36,78,169,17,37,8,174,81,38,82,178,83,18,39,182,85,184,86,4,87,188,189,19,191,89,193,9,194,42,91,197,92,199,43
+
+mov $1,$0
+seq $1,55642 ; Number of digits in the decimal expansion of n.
+mov $2,10
+mul $2,$0
+mov $4,1
+mov $5,1
+lpb $2
+  sub $2,1
+  mul $4,$5
+  add $5,1
+  mov $6,$4
+  seq $6,55642 ; Number of digits in the decimal expansion of n.
+  sub $6,$1
+  mov $3,10
+  pow $3,$6
+  max $3,1
+  mov $7,$4
+  div $7,$3
+  equ $7,$0
+  lpb $7
+    sub $7,1
+    mov $2,0
+  lpe
+  mov $4,$5
+  pow $4,2
+lpe
+mov $0,$5
+sub $0,1

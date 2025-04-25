@@ -1,0 +1,24 @@
+; A342528: Number of compositions with alternating parts weakly decreasing (or weakly increasing).
+; Submitted by Science United
+; 1,1,2,4,7,12,20,32,51,79,121,182,272,399,582,839,1200,1700,2394,3342,4640,6397,8771,11955,16217,21878,29386,39285,52301,69334,91570,120465,157929,206313,268644,348674,451185,582074,748830,960676,1229208,1568716,1997064,2536184,3213380,4062107,5123765,6449019,8100289,10153724,12702835,15861433,19768688,24593658,30542370,37864434,46863157,57905166,71434545,87986978,108209506,132880792,162939022,199510803,243950003,297879137,363243399,442369048,538038840,653574070,792939036,960856321,1162951137
+
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  add $0,1
+  mov $5,$0
+  seq $5,6330 ; Number of corners, or planar partitions of n with only one row and one column.
+  seq $0,712 ; Generating function = Product_{m>=1} 1/(1 - x^m)^2; a(n) = number of partitions of n into parts of 2 kinds.
+  sub $0,$5
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
+lpe
+min $1,1
+mul $1,$0
+mov $0,$2
+sub $0,$1

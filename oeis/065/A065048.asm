@@ -1,0 +1,20 @@
+; A065048: Largest unsigned Stirling number of the first kind: max_k(s(n+1,k)); i.e., largest coefficient of polynomial x*(x+1)*(x+2)*(x+3)*...*(x+n).
+; Submitted by Science United
+; 1,1,3,11,50,274,1764,13132,118124,1172700,12753576,150917976,1931559552,26596717056,392156797824,6165817614720,102992244837120,1821602444624640,34012249593822720,668609730341153280,13803759753640704000,298631902863216384000,6756146673770930688000,159539850276066860544000,3936561409138663118131200,102339530601744675672576000,2761307967193712729035776000,77226989703299075087834112000,2236045380156380112643362816000,66951000306085302338993639424000,2070792202024594683660866641920000
+
+add $0,1
+mov $2,$0
+sub $0,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  seq $0,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+  max $1,$0
+lpe
+mov $0,$1
