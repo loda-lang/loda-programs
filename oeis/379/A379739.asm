@@ -1,18 +1,18 @@
 ; A379739: Subdiagonal of the Hurt-Sada array.
-; Submitted by Science United
+; Submitted by Tony Fitzgerald
 ; 2,3,4,3,7,8,9,6,7,13,14,9,10,18,19,12,13,23,24,25,16,28,29,30,19,20,34,35,22,23,39,40,25,26,44,45,46,29,49,50,51,32,54,55,56,35,36,60,61,38,39,65,66,67,42,70,71,72,45,75,76,77,48,49,81,82,51,52,86,87,88,55,91,92,93,58,96,97,98,61
 
 #offset 1
 
 mul $0,2
 add $0,2
+mov $4,$0
 mov $5,$0
-mov $6,$0
-mov $4,2
-lpb $4
-  sub $4,1
-  mov $0,$6
-  add $0,$4
+mov $7,2
+lpb $7
+  div $7,2
+  mov $0,$4
+  add $0,$7
   mov $2,$0
   add $2,$0
   mul $2,2
@@ -23,14 +23,14 @@ lpb $4
   mov $1,$2
   div $1,2
   mul $0,$1
-  mov $7,$4
-  mul $7,$0
-  add $3,$7
+  mov $3,$7
+  mul $3,$0
+  add $6,$3
 lpe
-min $6,1
-mul $6,$0
-mov $0,$3
-sub $0,$6
+min $4,1
+mul $4,$0
+mov $0,$6
+sub $0,$4
 sub $0,$5
 mul $0,9
 gcd $0,0

@@ -1,31 +1,16 @@
 ; A068310: n^2 - 1 divided by its largest square divisor.
-; Submitted by ChelseaOilman
+; Submitted by Solidair79
 ; 3,2,15,6,35,3,7,5,11,30,143,42,195,14,255,2,323,10,399,110,483,33,23,39,3,182,87,210,899,15,1023,17,1155,34,1295,38,1443,95,1599,105,1763,462,215,506,235,138,47,6,51,26,2703,78,2915,21,3135,203,3363,870,3599,930,427,62,455,66,4355,1122,4623,1190,4899,35,5183,37,219,1406,231,1482,6083,390,79,410
+; Formula: a(n) = truncate((A019554((n-1)^2+2*n-2)^2)/((n-1)^2+2*n-2))
 
 #offset 2
 
-pow $0,2
 sub $0,1
-dif $0,4
-dif $0,4
-dif $0,4
-mov $1,1
-mov $3,1
-mov $4,1
 mov $2,$0
-lpb $2
-  add $3,2
-  add $4,$3
-  mov $5,$0
-  mod $5,$4
-  equ $5,0
-  mov $6,$4
-  sub $6,$1
-  mul $6,$5
-  add $1,$6
-  mov $5,$0
-  trn $5,$4
-  neq $5,0
-  sub $2,$5
-lpe
+pow $2,2
+add $2,$0
+add $0,$2
+mov $1,$0
+seq $0,19554 ; Smallest number whose square is divisible by n.
+pow $0,2
 div $0,$1

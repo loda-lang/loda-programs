@@ -1,33 +1,15 @@
 ; A083481: Squarefree part of the n-th oblong number.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 2,6,3,5,30,42,14,2,10,110,33,39,182,210,15,17,34,38,95,105,462,506,138,6,26,78,21,203,870,930,62,66,1122,1190,35,37,1406,1482,390,410,1722,1806,473,55,230,2162,141,3,2,102,663,689,318,330,770,798,3306,3422,885,915,3782,434,7,65,4290,4422,1139,1173,4830,4970,142,146,5402,222,57,1463,6006,6162,395,5
+; Formula: a(n) = truncate((A019554(n^2+sqrtint(n^2))^2)/(n^2+sqrtint(n^2)))
 
 #offset 1
 
-mul $0,2
-add $0,1
 pow $0,2
-sub $0,1
-dif $0,4
-dif $0,4
-dif $0,4
-mov $1,1
-mov $3,1
-mov $4,1
 mov $2,$0
-lpb $2
-  add $3,2
-  add $4,$3
-  mov $5,$0
-  mod $5,$4
-  equ $5,0
-  mov $6,$4
-  sub $6,$1
-  mul $6,$5
-  add $1,$6
-  mov $5,$0
-  trn $5,$4
-  neq $5,0
-  sub $2,$5
-lpe
+nrt $2,2
+add $0,$2
+mov $1,$0
+seq $0,19554 ; Smallest number whose square is divisible by n.
+pow $0,2
 div $0,$1

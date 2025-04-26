@@ -1,13 +1,15 @@
 ; A354210: a(n) = floor(sqrt(Fibonacci(n+1)*Fibonacci(n))).
-; Submitted by Aurum
+; Submitted by Science United
 ; 0,1,1,2,3,6,10,16,26,43,69,113,183,296,479,775,1255,2031,3286,5318,8605,13923,22528,36452,58981,95433,154414,249847,404261,654109,1058371,1712480,2770851,4483332,7254184,11737516,18991701,30729217,49720919,80450136,130171055,210621192
+; Formula: a(n) = sqrtint(b(n)), b(n) = 3*b(n-1)-b(n-2)+c(n-1)+c(n-3)+1, b(4) = 15, b(3) = 6, b(2) = 2, b(1) = 1, b(0) = 0, c(n) = -c(n-1)-1, c(2) = 0, c(1) = -1, c(0) = 0
 
-seq $0,1654 ; Golden rectangle numbers: F(n)*F(n+1), where F(n) = A000045(n) (Fibonacci numbers).
-nrt $0,2
-mul $0,26
-mov $1,26
-lpb $1
-  gcd $1,97
-  div $0,2
+lpb $0
+  sub $0,1
+  add $2,1
+  add $1,$3
+  add $1,$2
+  mul $2,-1
+  add $3,$1
 lpe
-div $0,13
+mov $0,$1
+nrt $0,2

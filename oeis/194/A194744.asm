@@ -1,23 +1,19 @@
 ; A194744: Number of k such that {-k*sqrt(5)} < {-n*sqrt(5)}, where { } = fractional part.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,1,5,4,3,2,9,7,5,3,13,10,7,4,17,13,9,5,1,18,13,8,3,23,17,11,5,28,21,14,7,33,25,17,9,1,31,22,13,4,37,27,17,7,43,32,21,10,49,37,25,13,1,44,31,18,5,51,37,23,9,58,43,28,13,65,49,33,17,1,57,40,23,6
-; Formula: a(n) = -truncate(((n-1)*(2*n+truncate(((n-2)*(21*n-42)+21*n-42)/34)-1))/(n+1))*(n+1)+(n-1)*(2*n+truncate(((n-2)*(21*n-42)+21*n-42)/34)-1)+1
+; Formula: a(n) = -truncate(((n-1)*(truncate(((n-2)*(21*n-42)+21*n-42)/34)-3))/(n+1))*(n+1)+(n-1)*(truncate(((n-2)*(21*n-42)+21*n-42)/34)-3)+1
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-mov $3,$0
 sub $0,1
 mov $2,$0
 mul $2,21
-mov $4,$3
-mul $4,2
 mul $0,$2
 add $2,$0
 div $2,34
-add $2,1
-add $2,$4
+sub $2,3
 mov $0,$2
 mul $0,$1
 add $1,2

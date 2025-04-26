@@ -9,7 +9,6 @@ add $1,5
 lpb $1
   div $1,12
   mul $0,10
-  add $0,1
 lpe
 div $0,55
 add $0,$2

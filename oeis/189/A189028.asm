@@ -1,17 +1,15 @@
 ; A189028: Zero-one sequence based on the sequence (5n-4):  a(A016861(k))=a(k); a(A047203(k))=1-a(k); a(1)=0.
-; Submitted by Jamie Morken(w4)
+; Submitted by shiva
 ; 0,1,0,1,0,1,1,0,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,0,1,1,1,1,0,1,1,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1,0,1,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,1,0,0
 
 #offset 1
 
 sub $0,1
 lpb $0
-  mul $0,8
-  lpb $0
-    dif $0,5
-  lpe
-  div $0,10
+  mul $0,4
+  dir $0,5
+  div $0,5
   add $1,1
 lpe
-mod $1,2
 mov $0,$1
+mod $0,2

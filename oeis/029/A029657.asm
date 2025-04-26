@@ -6,10 +6,9 @@ mov $2,$0
 add $2,6
 pow $2,3
 lpb $2
-  sub $2,69
+  sub $2,59
   add $2,$0
   mov $3,$1
-  add $3,1
   seq $3,29656 ; Numbers in the (2,1)-Pascal triangle A029653 that are different from 1.
   mov $5,$3
   mul $5,22

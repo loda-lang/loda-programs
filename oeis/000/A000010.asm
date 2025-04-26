@@ -1,30 +1,34 @@
 ; A000010: Euler totient function phi(n): count numbers <= n and prime to n.
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by Science United
 ; 1,1,2,2,4,2,6,4,6,4,10,4,12,6,8,8,16,6,18,8,12,10,22,8,20,12,18,12,28,8,30,16,20,16,24,12,36,18,24,16,40,12,42,20,24,22,46,16,42,20,32,24,52,18,40,24,36,28,58,16,60,30,36,32,48,20,66,32,44,24,70,24,72,36,40,36,60,24,78,32
 
 #offset 1
 
 mov $1,$0
-dif $1,2
 mov $2,$1
-mov $3,3
-sub $0,1
-lpb $1
-  mov $4,$1
-  sub $4,3
-  lpb $4
-    mov $5,$1
-    mod $5,$3
-    min $5,2
-    add $3,2
-    sub $4,$5
+pow $2,2
+mov $4,$2
+dif $4,2
+mov $5,$4
+mov $6,3
+lpb $4
+  mov $7,$4
+  lpb $7
+    mov $8,$4
+    mod $8,$6
+    add $6,2
+    sub $7,$8
   lpe
-  lpb $1
-    dif $1,$3
-  lpe
-  mov $6,$2
-  div $6,$3
-  mul $6,-1
-  add $2,$6
+  dir $4,$6
+  mov $3,$5
+  div $3,$6
+  mul $3,-1
+  add $5,$3
 lpe
-mov $0,$2
+mov $2,$5
+div $2,$1
+mov $1,$2
+sub $1,1
+add $1,1
+sub $0,1
+mov $0,$1

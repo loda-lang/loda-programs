@@ -1,20 +1,14 @@
 ; A081050: Generalized Stirling numbers of the first kind.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,0,5,5,74,154,2484,8028,149904,663696,14257440,80627040,1965444480,13575738240,370643938560,3031488633600,91657072281600,867718162483200,28779361764249600,309920046408806400,11185850044938240000
 
-mov $1,$0
-mov $2,-1
-pow $2,$0
-mov $4,1
+mov $1,-1
+bin $1,$0
+mov $2,1
 lpb $0
+  mul $1,$0
+  add $1,$2
+  mul $2,$0
   sub $0,1
-  add $3,1
-  mul $4,$3
-  add $4,$2
-  mul $2,$3
 lpe
-mod $1,2
-mul $1,$4
-mul $1,2
-mov $0,$4
-sub $0,$1
+mov $0,$1

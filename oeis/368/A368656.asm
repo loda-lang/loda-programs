@@ -6,19 +6,10 @@
 
 mov $2,2
 equ $2,$0
-mul $2,9
-mod $0,4
-mov $3,3
-equ $3,$0
-mul $3,8
-sub $3,1
-sub $0,1
-mov $1,$0
-equ $1,2
-equ $0,0
-mul $0,4
-add $0,$1
-add $0,$2
-sub $0,$3
-add $0,17
-mod $0,10
+add $0,1
+pow $0,2
+gcd $0,8
+mov $1,8
+div $1,$0
+mov $0,$1
+sub $0,$2

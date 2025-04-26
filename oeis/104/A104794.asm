@@ -1,66 +1,39 @@
 ; A104794: Expansion of theta_4(q)^2 in powers of q.
-; Submitted by Jamie Morken(s3)
+; Submitted by Science United
 ; 1,-4,4,0,4,-8,0,0,4,-4,8,0,0,-8,0,0,4,-8,4,0,8,0,0,0,0,-12,8,0,0,-8,0,0,4,0,8,0,4,-8,0,0,8,-8,0,0,0,-8,0,0,0,-4,12,0,8,-8,0,0,0,0,8,0,0,-8,0,0,4,-16,0,0,8,0,0,0,4,-8,8,0,0,0,0,0
 
 mov $1,-1
 pow $1,$0
-mul $0,4
-mov $2,$0
-mov $11,0
-trn $0,1
-mov $3,$0
-mov $4,-1
-pow $4,$0
-mov $5,$0
-add $5,1
-mov $14,$5
-lex $14,2
-mov $15,2
-pow $15,$14
-div $5,$15
-div $5,2
-mov $6,-1
-pow $6,$5
-mul $6,2
-mov $7,-2
-bin $7,$5
-div $7,$6
-mov $8,0
-mov $10,3
-sub $5,$7
-mul $5,2
-add $5,3
-lpb $5
-  sub $5,$10
-  mov $9,$5
-  max $9,0
-  mul $9,4
-  mov $13,$9
-  nrt $13,2
-  add $9,2
-  mov $12,$9
-  nrt $12,2
-  mov $9,$12
-  add $9,$13
-  mod $9,2
-  mov $10,2
-  add $10,$11
-  add $8,$9
-  add $11,2
+equ $2,$0
+mul $2,3
+mov $4,$0
+lex $4,2
+mov $8,3
+mov $3,2
+pow $3,$4
+mov $6,$0
+div $6,$3
+div $6,2
+add $6,3
+lpb $6
+  sub $6,$8
+  mov $10,$6
+  max $10,0
+  mul $10,4
+  mov $4,$10
+  nrt $4,2
+  add $10,2
+  mov $5,$10
+  nrt $5,2
+  mov $10,$5
+  add $10,$4
+  mod $10,2
+  mov $8,2
+  add $8,$7
+  add $9,$10
+  add $7,2
 lpe
-mov $5,$8
-mul $5,$6
-div $5,2
-max $5,0
-mul $5,2
-mod $0,4
-mul $0,$5
-sub $5,$0
-mov $0,$5
-div $0,2
-mul $0,$4
-mul $0,2
-sub $0,1
-sub $0,$3
-add $0,$2
+mov $0,$9
+mul $0,4
+sub $0,$2
 mul $0,$1

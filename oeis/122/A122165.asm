@@ -1,5 +1,5 @@
 ; A122165: Continued fraction expansion of constant x = Sum_{n>=0} 1/5^(2^n).
-; Submitted by misaki@med
+; Submitted by Science United
 ; 0,4,7,5,5,3,5,7,5,3,7,5,3,5,5,7,5,3,7,5,5,3,5,7,3,5,7,5,3,5,5,7,5,3,7,5,5,3,5,7,5,3,7,5,3,5,5,7,3,5,7,5,5,3,5,7,3,5,7,5,3,5,5,7,5,3,7,5,5,3,5,7,5,3,7,5,3,5,5,7
 
 lpb $0
@@ -9,10 +9,22 @@ lpb $0
   mov $4,$0
   sub $4,$2
   mod $0,$1
-  add $2,1
-  seq $2,88435 ; 1/2 + half of the (n+1)-st component of the continued fraction expansion of sum(k>=1,1/3^(2^k)).
+  add $2,2
+  mov $3,$2
+  bin $2,2
+  dir $2,2
+  div $2,2
+  mod $2,2
+  equ $2,0
+  div $3,2
+  mod $3,2
+  mul $3,$2
+  mul $3,2
+  sub $2,$3
+  sub $5,$2
+  mov $2,$5
+  add $2,2
   mul $2,$4
-  add $3,$2
-  add $3,1
+  add $1,$2
 lpe
-mov $0,$3
+mov $0,$1

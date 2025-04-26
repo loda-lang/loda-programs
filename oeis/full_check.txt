@@ -768,6 +768,7 @@ A327527: Number of uniform divisors of n.
 A327829: Squarefree numbers with a prime number of prime factors.
 A328308: a(n) = 1 if k-th arithmetic derivative of n is zero for some k, otherwise 0.
 A328399: Lexicographically earliest infinite sequence such that a(i) = a(j) => A328475(i) = A328475(j) for all i, j.
+A328458: Maximum run-length of the nontrivial divisors (greater than 1 and less than n) of n.
 A328616: Number of digits in primorial base expansion of n that are maximal possible in their positions.
 A328819: Third digit after decimal point of square root of n.
 A328820: Fourth digit after decimal point of square root of n.

@@ -9,10 +9,16 @@ pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  mov $6,$3
+  seq $6,593 ; Sum of odd divisors of n.
+  bxo $3,$1
+  mul $3,$6
   mov $4,$1
   add $4,1
-  seq $4,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $5,$4
+  seq $5,109606 ; Number of numbers k with 1 < k < n which are relatively prime to n.
+  add $5,1
+  mov $4,$5
   gcd $4,$3
   mov $3,$4
   sub $3,1

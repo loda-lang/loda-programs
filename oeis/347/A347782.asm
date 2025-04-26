@@ -1,5 +1,5 @@
 ; A347782: Domination number of the n-tetrahedral (Johnson) graph.
-; Submitted by Simon Strandgaard
+; Submitted by Vit Kliber
 ; 2,4,5,7,8,10,11,13,14,18,19,23,24,29
 
 #offset 6
@@ -19,6 +19,7 @@ lpb $0
     sub $3,5
     div $3,2
     mov $1,$3
+    mul $3,$2
   lpe
 lpe
 mov $0,$2

@@ -1,19 +1,20 @@
 ; A382411: a(n) is the greatest possible length of a circular sequence on n symbols such that: no two adjacent symbols are the same, any group of n adjacent symbols contains at least n-1 different symbols, and all groups of n adjacent symbols within the sequence are unique.
-; Submitted by TankbusterGames
+; Submitted by BrandyNOW
 ; 1,2,12,96,840,7920,80640,887040,10523520,134265600,1836172800,26824089600,417210393600,6887085004800,120306041856000,2217815728128000,43038178799616000,877125197684736000,18733345462960128000,418459145406382080000,9758369954796503040000,237164153561075220480000,5997667883421314580480000,157593894040242817597440000,4296605182002683117568000000,121390729799108296310784000000,3549771440836382804410368000000,107320697303323278896529408000000,3351027795627347040772030464000000
-; Formula: a(n) = b(n-1), b(n) = (n+1)*(b(n-1)+c(n-1)), b(2) = 12, b(1) = 2, b(0) = 1, c(n) = 4*c(n-1)+2*b(n-1), c(2) = 12, c(1) = 2, c(0) = 0
+; Formula: a(n) = truncate((b(n-1)*((n-1)^3+n+1))/2), b(n) = n*b(n-1), b(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,1
 sub $0,1
-lpb $0
-  sub $0,1
-  add $1,1
-  add $2,$3
-  add $3,$2
-  mul $3,2
-  mul $2,$1
+mov $1,1
+mov $2,$0
+mov $3,$0
+lpb $3
+  mul $1,$3
+  sub $3,1
 lpe
-mov $0,$2
+pow $0,3
+add $0,$2
+add $0,2
+mul $0,$1
+div $0,2

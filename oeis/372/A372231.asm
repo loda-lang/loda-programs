@@ -1,46 +1,21 @@
 ; A372231: Fixed points of A372341.
-; Submitted by Orange Kid
+; Submitted by Ralfy
 ; 1,2,5,8,12,18,24,32,40,49,60,71,83,97,111,127,143,160,179,198,219,240,262,286,310,335,362,389,418,447,477,509,541,574,609,644,681,718,756,796,836,878,920,963,1008,1053,1099,1147,1195,1245,1295,1346,1399,1452
+; Formula: a(n) = -truncate((sqrtint(5*n^2)+n)/2)+floor(((n+1)^2+n+1)/2)-1
 
 #offset 1
 
-mov $2,$0
-sub $0,1
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  mov $6,$3
-  add $6,$3
-  mul $6,2
-  add $6,$3
-  mul $6,$3
-  nrt $6,2
-  add $6,$3
-  add $6,7
-  mov $5,$6
-  add $5,$6
-  mul $5,2
-  add $5,$6
-  mul $5,$6
-  nrt $5,2
-  add $6,1
-  mul $5,$6
-  mov $3,$5
-  sub $3,1
-  mod $3,2
-  gcd $3,4
-  equ $3,4
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$2
-sub $0,7
-div $0,2
+mov $1,$0
 add $0,1
+mov $2,$0
+pow $2,2
+add $0,$2
+div $0,2
+sub $0,1
+mov $3,$1
+pow $3,2
+mul $3,5
+nrt $3,2
+add $1,$3
+div $1,2
+sub $0,$1

@@ -1,9 +1,31 @@
 ; A137736: Number of set partitions of [n*(n-1)/2].
-; Submitted by Maurice Goulois
+; Submitted by BrandyNOW
 ; 1,1,1,5,203,115975,1382958545,474869816156751,6160539404599934652455,3819714729894818339975525681317,139258505266263669602347053993654079693415,359334085968622831041960188598043661065388726959079837
-; Formula: a(n) = A000110(binomial(n,2))
 
-mov $1,$0
-bin $1,2
-seq $1,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mov $0,$1
+mov $2,1
+add $2,1
+bin $0,2
+lpb $0
+  sub $0,1
+  mov $5,0
+  mov $6,0
+  mov $4,$2
+  lpb $4
+    sub $4,1
+    mov $9,10
+    add $9,$5
+    mov $11,1
+    mov $7,$0
+    add $7,$4
+    bin $7,$0
+    mul $7,$$9
+    add $5,1
+    add $6,$7
+  lpe
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+pow $3,$11
+mov $0,$3

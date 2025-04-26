@@ -4,31 +4,19 @@
 
 #offset 1
 
+mov $1,3
 mov $2,$0
-sub $0,1
-add $2,1
-pow $2,2
+pow $2,4
 lpb $2
   mov $3,$1
   add $3,1
-  mov $6,$3
-  seq $3,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
-  mul $3,$6
-  seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
-  seq $3,112623 ; If p^b(p,n) is the highest power of the prime p dividing n, then a(n) = sum_{p|n} b(p,n)!.
-  add $3,1
-  mul $3,380928
-  mod $3,9
-  sub $3,1
-  mod $3,2
-  mov $5,$3
-  bin $5,2
-  sub $0,$5
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  trn $2,1
+  seq $3,276085 ; Primorial base log-function: fully additive with a(p) = p#/p, where p# = A034386(p).
+  mod $3,3
+  equ $3,0
+  sub $0,$3
+  add $1,2
+  sub $2,$0
 lpe
 mov $0,$1
+add $0,1
+div $0,2

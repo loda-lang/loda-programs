@@ -1,18 +1,16 @@
 ; A185871: (Even,even)-polka dot array in the natural number array A000027, by antidiagonals.
-; Submitted by gemini8
+; Submitted by Science United
 ; 5,12,14,23,25,27,38,40,42,44,57,59,61,63,65,80,82,84,86,88,90,107,109,111,113,115,117,119,138,140,142,144,146,148,150,152,173,175,177,179,181,183,185,187,189,212,214,216,218,220,222,224,226,228,230,255,257,259,261,263,265,267,269,271,273,275,302,304,306,308,310,312,314,316,318,320,322,324,353,355
-; Formula: a(n) = truncate((sqrtint(8*n-7)+3)/2)^2+max(0,n-1)+n
+; Formula: a(n) = (sqrtint(2*n+sqrtint(2*n))+1)^2+2*n-1
 
 #offset 1
 
-sub $0,1
-max $1,$0
+mul $0,2
+mov $1,$0
+nrt $1,2
 add $1,$0
-mul $0,8
-add $0,1
-nrt $0,2
-add $0,3
-div $0,2
-pow $0,2
+nrt $1,2
+add $1,1
+pow $1,2
 add $0,$1
-add $0,1
+sub $0,1

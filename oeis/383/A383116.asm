@@ -1,17 +1,18 @@
 ; A383116: Permissible phase values, in degrees, associated with restricted Fourier amplitudes obtained via Fourier transform of a three-dimensional crystal lattice.
-; Submitted by Science United
+; Submitted by hustlebankwrecktank
 ; 0,30,45,60,90,120,135,150,180,210,225,240,270,300,315,330
-; Formula: a(n) = 15*b(n+3)-120, b(n) = 3*b(n-1)-b(n-2)-3*truncate((2*b(n-1)-b(n-2))/3)+1, b(3) = 8, b(2) = 6, b(1) = 5, b(0) = 4
+; Formula: a(n) = 15*sqrtint(n*sqrtint(5*(n+1)^2))
 
-mov $1,4
-add $0,3
-lpb $0
-  sub $0,1
-  mod $2,3
-  add $2,1
-  add $1,$2
-  add $2,$1
-lpe
+mov $3,$0
+add $3,2
+add $0,1
+mov $2,$0
+pow $2,2
+mul $2,5
+nrt $2,2
+mov $1,$3
+sub $1,2
+mul $1,$2
+nrt $1,2
 mov $0,$1
-sub $0,8
 mul $0,15

@@ -1,23 +1,15 @@
 ; A135339: Number of Dyck paths of semilength n having no DUDU's starting at level 1.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,1,2,4,11,32,99,318,1051,3550,12200,42520,149930,533890,1917181,6934722,25243539,92405718,339940116,1256122632,4660081434,17350844808,64814186646,242838410652,912333763806,3436240272972,12972454874704,49078874293528,186051766180496,706609952443798,2688304467350801,10244273396356042,39097025030619139,149425935587473638,571862216131895772,2191323746743555064,8406994835540615858,32289845877854667376,124152711972127986122,477845594828241479716,1840933026847604465642,7098832510536626843204
 
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  add $4,1
-  seq $4,193215 ; Number of Dyck paths of semilength n having the property that the heights of the first and the last peaks coincide.
-  sub $0,1
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
-lpe
-min $3,1
-mul $3,$4
-sub $1,$3
-mov $0,$1
+mov $2,1
+equ $2,$0
+equ $3,$0
+trn $0,1
+mov $1,$0
+add $1,1
+seq $1,958 ; Number of ordered rooted trees with n edges having root of odd degree.
+seq $0,958 ; Number of ordered rooted trees with n edges having root of odd degree.
+add $0,$1
+sub $0,$3
+sub $0,$2

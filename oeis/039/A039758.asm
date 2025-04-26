@@ -1,30 +1,7 @@
 ; A039758: Triangle of B-analogs of Stirling numbers of first kind.
-; Submitted by Science United
+; Submitted by Athlici
 ; 1,1,-1,1,-4,3,1,-9,23,-15,1,-16,86,-176,105,1,-25,230,-950,1689,-945,1,-36,505,-3480,12139,-19524,10395,1,-49,973,-10045,57379,-177331,264207,-135135,1,-64,1708,-24640,208054,-1038016,2924172,-4098240,2027025,1,-81,2796,-53676,626934,-4574934,20570444,-53809164,71697105,-34459425,1,-100,4335,-106800,1646778,-16486680,107494190,-444647600,1094071221,-1396704420,654729075,1,-121,6435,-197835,3889578,-51069018,453714470,-2702025590,10431670821,-24372200061,29985521895,-13749310575,1,-144
+; Formula: a(n) = A039757(A061579(n))
 
-add $0,1
-mov $1,$0
-seq $1,4736 ; Triangle read by rows: row n lists the first n positive integers in decreasing order.
-mov $19,1
-seq $0,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
-mov $3,$0
-lpb $3
-  add $2,1
-  mov $4,$2
-  lpb $4
-    mov $5,$4
-    add $5,18
-    mov $6,$4
-    add $6,19
-    mov $7,2
-    sub $7,$2
-    mul $$6,$7
-    add $$6,$$5
-    sub $4,1
-  lpe
-  add $2,1
-  sub $3,1
-  mov $19,0
-lpe
-add $1,19
-mov $0,$$1
+seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+seq $0,39757 ; Triangle of coefficients in expansion of (x-1)*(x-3)*(x-5)*...*(x-(2*n-1)).

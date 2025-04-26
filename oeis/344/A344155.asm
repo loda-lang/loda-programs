@@ -1,5 +1,5 @@
 ; A344155: Numbers k such that the k-th word in A342910 ends with 1.
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 2,4,7,8,12,13,14,19,21,22,23,26,30,33,34,36,38,40,41,44,46,51,52,55,58,59,61,63,65,67,68,70,71,78,79,80,84,88,90,92,93,96,99,101,102,103,104,106,108,110,116,118,120,121,122,125,127,133,134,136,139
 
 #offset 1
@@ -13,9 +13,7 @@ lpb $2
   lpb $3
     add $3,2
     mul $3,2
-    lpb $3
-      dif $3,3
-    lpe
+    dir $3,3
     div $3,3
     sub $3,2
   lpe

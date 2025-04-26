@@ -1,38 +1,17 @@
 ; A011248: Twice A000364.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 2,2,10,122,2770,101042,5405530,398721962,38783024290,4809759350882,740742376475050,138697748786275802,31029068327114173810,8174145018586247784722,2504519282807259730936570,883087786498046209107365642,355038783159078578873329579330,161446598471775796124336494906562
 
+mov $1,$0
+equ $1,0
+add $0,$1
 mov $2,$0
-add $2,$1
-mov $1,4
-pow $1,$2
-mov $9,0
-mov $8,0
-mov $7,0
-mov $4,0
-mov $3,0
-mul $2,2
-mov $6,$2
-add $2,1
-lpb $2
-  sub $2,1
-  div $8,2
-  add $8,$4
-  mul $8,2
-  add $9,1
-  mov $4,$3
-  add $4,$9
-  pow $4,$6
-  sub $4,$8
-  mov $5,$6
-  bin $5,$3
-  mul $5,$4
-  add $3,1
-  mul $7,-1
-  add $7,$5
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $2,1
+  mov $4,$2
+  seq $4,111 ; Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2, half the number of alternating permutations on n letters (A001250).
 lpe
-gcd $7,$2
-mov $2,$7
-div $2,$1
-mov $0,$2
+mov $0,$4
 mul $0,2

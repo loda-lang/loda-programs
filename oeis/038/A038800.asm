@@ -11,7 +11,7 @@ lpb $3
   mov $4,10
   lpb $4
     sub $4,1
-    equ $0,2
+    sub $4,$3
     mov $2,$5
     seq $2,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
     add $5,1

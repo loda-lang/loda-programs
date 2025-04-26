@@ -1,19 +1,14 @@
 ; A071860: Number of k 1<=k<=n such that sigma(k) is odd.
-; Submitted by Kotenok2000
+; Submitted by Just Jake
 ; 1,2,2,3,3,3,3,4,5,5,5,5,5,5,5,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14
+; Formula: a(n) = sqrtint(floor(n/2))+sqrtint(n)
 
 #offset 1
 
-mov $1,1
-mov $4,$0
-lpb $0
-  sub $0,$1
-  mov $2,$4
-  div $2,$1
-  mov $3,$2
-  div $3,$1
-  min $3,2
-  add $5,$3
-  add $1,1
-lpe
-mov $0,$5
+mov $1,$0
+nrt $1,2
+div $0,2
+mov $2,$0
+nrt $2,2
+mov $0,$2
+add $0,$1

@@ -21,4 +21,3 @@ lpb $4
   add $3,$1
 lpe
 mov $0,$3
-mul $3,2
