@@ -1,0 +1,22 @@
+; A243569: Unsigned Stirling numbers of the first kind s(n,8).
+; Submitted by BlisteringSheep
+; 1,36,870,18150,357423,6926634,135036473,2681453775,54631129553,1146901283528,24871845297936,557921681547048,12953636989943896,311333643161390640,7744654310169576800,199321978221066137360,5304713715525445812976,145901905527662649288000,4144457803247115877036800,121502371102392939781636800,3673742549077683082376236224,114481515057741551880042390144,3674201658710345201899117607040,121365366674745136523074652102400,4123257155075936045020928754053376,143984983283859317750146955086368768
+
+#offset 8
+
+mov $3,$0
+sub $0,7
+bin $3,2
+add $3,$0
+mov $2,$0
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,1
+  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  seq $0,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+  gcd $1,2
+  mul $1,$0
+lpe
+mov $0,$1
+div $0,2

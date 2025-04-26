@@ -1,0 +1,21 @@
+; A049120: Row sums of triangle A049029.
+; Submitted by Science United
+; 1,6,61,871,15996,358891,9509641,290528316,10051973371,388433817091,16579346005806,774580047063901,39313104018590221,2153825039102763846,126681355435102649161,7961385691338995966371,532402860878855993673036,37746950872336992298209151
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  sub $0,1
+  seq $0,49029 ; Triangle read by rows, the Bell transform of the quartic factorial numbers A007696(n+1) without column 0.
+  add $1,$0
+lpe
+mov $0,$1

@@ -1,0 +1,11 @@
+; A095341: Total number of nodes in all planted trees on n nodes.
+; Submitted by Athlici
+; 0,2,3,8,20,54,140,384,1035,2860,7909,22104,61958,174804,494595,1404976,4001477,11427246,32702021,93773520,269350788,774880304,2232269163,6438788520,18593124600,53746540770,155510185770,450344561212,1305204921801,3785596629240,10987232275507
+; Formula: a(n) = n*A000081(n-1)
+
+#offset 1
+
+mov $1,$0
+sub $0,1
+seq $0,81 ; Number of unlabeled rooted trees with n nodes (or connected functions with a fixed point).
+mul $0,$1
