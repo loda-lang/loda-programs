@@ -1,0 +1,14 @@
+; A011575: Stirling numbers of second kind S2(26,n).
+; Submitted by GPV67
+; 1,33554431,423610750290,187226356946265,12230196160292565,224595186974125331,1631853797991016600,5749622251945664950,11201516780955125625,13199555372846848005,10029078340998476760,5149507353856958820,1850568574253550060,477898618396288260,90449030191104000,12725877242482560,1343731795378830,107025546101760,6433839018750,290622864675,9759104355,238929405,4126200,47450,325,1
+; Formula: a(n) = truncate(A028246(n+325)/A000142(A002262(n+324)))
+
+#offset 1
+
+add $0,324
+mov $1,$0
+add $0,1
+seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+seq $1,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+div $0,$1
