@@ -1,0 +1,33 @@
+; A113722: A variant of Golomb's sequence using odd numbers: a(n) is the number of times 2*n+1 occurs, starting with a(1) = 1.
+; Submitted by Stephen Uitti
+; 1,3,5,5,5,7,7,7,7,7,9,9,9,9,9,11,11,11,11,11,13,13,13,13,13,13,13,15,15,15,15,15,15,15,17,17,17,17,17,17,17,19,19,19,19,19,19,19,21,21,21,21,21,21,21,23,23,23,23,23,23,23,23,23,25,25,25,25,25,25,25,25,25,27
+
+add $0,1
+mov $1,2
+mov $2,20
+mov $3,20
+mov $20,$1
+sub $1,1
+mov $5,$0
+lpb $5
+  mov $4,$$2
+  lpb $4
+    add $6,$1
+    mov $7,$6
+    geq $7,$0
+    mov $$3,$1
+    sub $4,1
+    mov $9,$7
+    add $3,1
+    mul $7,$4
+    sub $4,$7
+  lpe
+  add $1,2
+  add $2,1
+  sub $5,1
+  mul $9,$5
+  sub $5,$9
+lpe
+mov $0,$3
+mul $0,2
+sub $0,41

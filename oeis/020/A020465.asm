@@ -1,0 +1,26 @@
+; A020465: Primes that contain digits 4 and 7 only.
+; Submitted by Dongha Hwang
+; 7,47,4447,7477,44777,47777,74747,77447,77477,77747,4444747,4447747,4747747,4774477,4774747,7444477,7447777,7474477,7477777,7747477,7774777,7777447,44447747,44747447,44747777,44774777,47447747,47774477,47774747,74444477,74447447,77474447,77744747,77774447,77777747,4444444447,4444444777,4447444447,4447444747,4447444777,4447747747,4447777777,4474444747,4474747447,4477474447,4477477747,4477747777,4744444447,4744444477,4744474447,4744477447,4744477747,4744744447,4744744747,4744747477,4744747747
+
+#offset 1
+
+mov $2,$0
+sub $0,1
+add $2,1
+pow $2,2
+lpb $2
+  mov $3,$1
+  seq $3,72668 ; Numbers one less than composite numbers.
+  add $3,1
+  seq $3,302938 ; Lexicographically first sequence of distinct terms such that the sum of any two terms is not a term of the sequence, and the sum of any two digits is not a digit of the sequence.
+  mov $5,$3
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
+  sub $0,$3
+  add $1,1
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$5
