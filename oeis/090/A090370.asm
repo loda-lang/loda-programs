@@ -1,19 +1,22 @@
 ; A090370: Least m > 3 such that gcd(n-1, m*n - 1) = m-1.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 4,5,6,4,8,5,4,6,12,4,14,8,4,5,18,4,20,5,4,12,24,4,6,14,4,5,30,4,32,5,4,18,6,4,38,20,4,5,42,4,44,5,4,24,48,4,8,6,4,5,54,4,6,5,4,30,60,4,62,32,4,5,6,4,68,5,4,6,72,4,74,38,4,5,8,4,80,5,4,42
 
 #offset 4
 
-mov $1,2
-sub $0,4
-lpb $0
-  add $1,1
-  mov $2,$0
-  mod $2,$1
-  mov $3,1
-  trn $3,$2
-  sub $0,1
-  add $0,$3
+sub $0,3
+mov $4,3
+mov $2,$0
+lpb $2
+  mov $3,$2
+  lpb $3
+    sub $2,1
+    mov $1,$2
+    mod $1,$4
+    min $1,2
+    sub $3,$1
+    add $4,1
+  lpe
 lpe
-mov $0,$1
-add $0,2
+mov $0,$4
+add $0,1

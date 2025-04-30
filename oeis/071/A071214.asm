@@ -1,20 +1,19 @@
 ; A071214: Number of labeled ordered trees with n nodes such that the root is smaller than all its children.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,5,46,614,10716,230712,5903472,174942000,5890370400,222069752640,9265980286080,423888544154880,21094789126924800,1134492559101619200,65567415318776985600,4052502049455940147200,266725354163752808755200,18624661769541550593024000
 
 #offset 2
 
-sub $0,2
-mov $1,2
-add $1,$0
-mov $3,1
+sub $0,1
+mov $1,-1
+mov $2,1
+mov $3,$0
 lpb $0
   sub $0,1
-  gcd $2,$1
-  add $2,1
-  mul $3,$2
-  add $3,$1
-  mul $1,$2
+  add $3,1
+  mul $1,$3
+  add $1,$2
+  mul $2,$3
 lpe
-sub $1,$3
 mov $0,$1
+mul $0,-1

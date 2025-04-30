@@ -12,19 +12,17 @@ mov $2,$0
 add $0,21
 sub $2,1
 lpb $2
-  mov $6,$1
   mov $3,$1
   sub $3,1
   mov $4,$1
-  sub $4,2
   mov $5,$1
+  mov $6,$1
+  add $1,1
   sub $5,$$3
+  mov $23,2
   sub $6,$$4
-  sub $6,1
-  sub $5,1
   mov $$1,$$5
   add $$1,$$6
-  add $1,1
   sub $2,1
 lpe
 mov $0,$$0

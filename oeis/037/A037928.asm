@@ -1,5 +1,5 @@
 ; A037928: Trajectory of 25 under prime factor concatenation procedure.
-; Submitted by loader3229
+; Submitted by shiva
 ; 25,5,5,5,11,7,73,773
 
 mov $1,25
@@ -32,7 +32,7 @@ lpb $2
   mov $1,$5
   mov $9,$4
   equ $9,0
-  sub $2,1
+  sub $2,2
   mul $2,$9
 lpe
 mov $0,$4

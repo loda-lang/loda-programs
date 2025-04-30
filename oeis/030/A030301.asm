@@ -1,13 +1,11 @@
 ; A030301: n-th run has length 2^(n-1).
-; Submitted by hoppisaur
+; Submitted by loader3229
 ; 0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = -2*truncate(logint(n,2)/2)+logint(n,2)
 
 #offset 1
 
 mov $1,$0
-lpb $1
-  mov $2,$1
-  div $1,4
-lpe
-div $2,2
-mov $0,$2
+log $1,2
+mov $0,$1
+mod $0,2

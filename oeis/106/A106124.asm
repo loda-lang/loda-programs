@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,2
 mul $2,10
 lpb $2
   mov $5,6

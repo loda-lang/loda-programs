@@ -1,5 +1,5 @@
 ; A037934: Trajectory of 35 under prime factor concatenation procedure.
-; Submitted by loader3229
+; Submitted by Science United
 ; 35,5,7,3,19,11,29,1129
 
 mov $1,35
@@ -32,7 +32,7 @@ lpb $2
   mov $1,$5
   mov $9,$4
   equ $9,0
-  sub $2,1
+  sub $2,2
   mul $2,$9
 lpe
 mov $0,$4

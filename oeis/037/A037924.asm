@@ -1,11 +1,12 @@
 ; A037924: Trajectory of 15 under prime factor concatenation procedure.
-; Submitted by loader3229
+; Submitted by sbo92
 ; 15,3,5,5,7,3,19,11,29,1129
 
 mov $1,15
 mov $4,15
 mov $2,$0
 lpb $2
+  sub $2,1
   add $3,1
   mov $5,$1
   seq $5,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.

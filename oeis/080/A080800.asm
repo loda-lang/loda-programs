@@ -1,15 +1,12 @@
 ; A080800: Similar to A080799 but count only division steps.
-; Submitted by arkiss
+; Submitted by loader3229
 ; 4,4,5,5,5,5,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
+; Formula: a(n) = logint(n+1,2)+3
 
 #offset 1
 
 add $0,1
-div $0,4
-lpb $0
-  div $0,2
-  add $1,2
-lpe
+mov $1,$0
+log $1,2
 mov $0,$1
-div $0,2
-add $0,4
+add $0,3

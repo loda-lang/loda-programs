@@ -1,11 +1,9 @@
 ; A011528: Stirling numbers of first kind S1(18,n).
-; Submitted by atannir
+; Submitted by Athlici
 ; -355687428096000,1223405590579200,-1821602444624640,1583313975727488,-909299905844112,369012649234384,-110228466184200,24871845297936,-4308105301929,577924894833,-60202693980,4853222764,-299650806,13896582,-468180,10812,-153,1
-; Formula: a(n) = A048994(n+171)
+; Formula: a(n) = A008275(n+153)
 
 #offset 1
 
-mov $1,$0
-add $1,171
-seq $1,48994 ; Triangle of Stirling numbers of first kind, s(n,k), n >= 0, 0 <= k <= n.
-mov $0,$1
+add $0,153
+seq $0,8275 ; Triangle read by rows of Stirling numbers of first kind, s(n,k), n >= 1, 1 <= k <= n.

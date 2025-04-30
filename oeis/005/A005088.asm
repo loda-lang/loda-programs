@@ -1,17 +1,15 @@
 ; A005088: Number of primes = 1 mod 3 dividing n.
-; Submitted by fzs600
+; Submitted by BrandyNOW
 ; 0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1,1,1,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,1,0
-; Formula: a(n) = A000005(truncate(A000010(n)/A115070(n)))-1
+; Formula: a(n) = -truncate(gcd(n,3)/2)-A005090(n)+A001221(n)
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
-seq $0,115070 ; a(n) = phi(n)/3^b(n), where b(n) is #{primes p=1 mod 3 dividing n}.
-add $1,1
-seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-div $1,$0
-mov $0,$1
-seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-sub $0,1
+seq $1,5090 ; Number of primes == 2 mod 3 dividing n.
+mov $2,$0
+gcd $2,3
+div $2,2
+seq $0,1221 ; Number of distinct primes dividing n (also called omega(n)).
+sub $0,$1
+sub $0,$2

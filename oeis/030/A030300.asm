@@ -1,15 +1,12 @@
 ; A030300: Runs have lengths 2^n, n >= 0.
-; Submitted by Solidair79
+; Submitted by loader3229
 ; 1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = -2*truncate(logint(2*n,2)/2)+logint(2*n,2)
 
 #offset 1
 
+mul $0,2
 mov $1,$0
-lpb $1
-  mov $2,$1
-  div $1,4
-lpe
-div $2,2
-mov $0,$2
-add $0,1
+log $1,2
+mov $0,$1
 mod $0,2

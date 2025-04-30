@@ -1,10 +1,13 @@
 ; A025581: Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
-; Submitted by Jamie Morken(m3)
+; Submitted by loader3229
 ; 0,1,0,2,1,0,3,2,1,0,4,3,2,1,0,5,4,3,2,1,0,6,5,4,3,2,1,0,7,6,5,4,3,2,1,0,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0,10,9,8,7,6,5,4,3,2,1,0,11,10,9,8,7,6,5,4,3,2,1,0,12,11
+; Formula: a(n) = -n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-sub $1,$0
-mov $0,$1
+add $0,1
+mov $1,$0
+mul $0,8
+nrt $0,2
+add $0,3
+div $0,2
+bin $0,2
+sub $0,$1

@@ -1,31 +1,33 @@
 ; A000203: a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,3,4,7,6,12,8,15,13,18,12,28,14,24,24,31,18,39,20,42,32,36,24,60,31,42,40,56,30,72,32,63,48,54,48,91,38,60,56,90,42,96,44,84,78,72,48,124,57,93,72,98,54,120,72,120,80,90,60,168,62,96,104,127,84,144,68,126,96,144,72,195,74,114,124,140,96,168,80,186
 
 #offset 1
 
 mov $1,$0
-sub $1,1
-mov $2,$0
-mov $3,1
-mov $4,3
-lpb $2
-  mov $5,$2
-  lpb $5
-    mov $6,$2
-    mod $6,$4
-    min $6,2
-    add $4,2
-    sub $5,$6
-  lpe
-  mov $7,1
+nrt $1,2
+lpb $1
+  max $1,1
+  mov $2,$0
+  mod $2,$1
+  equ $2,0
   lpb $2
-    dif $2,$4
-    mul $7,$4
-    add $7,1
+    sub $2,1
+    mov $3,$0
+    div $3,$1
+    add $4,$3
+    add $4,$1
   lpe
-  mul $3,$7
+  sub $1,1
 lpe
-mov $2,$3
-bxo $0,$1
-mul $0,$2
+mov $7,$0
+nrt $0,2
+mov $6,$0
+lpb $0
+  mul $0,$6
+  sub $0,$7
+  mov $5,$6
+lpe
+mov $0,$5
+sub $4,$0
+mov $0,$4

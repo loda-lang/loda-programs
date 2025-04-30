@@ -1,24 +1,22 @@
 ; A043535: Number of distinct base-8 digits of n.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,3,3,3,3,3,3,2,1,2,2,2,2,2,2,3
 
 #offset 1
 
-seq $0,242491 ; Numbers avoiding subtractive notation when written in Roman numerals.
-mov $1,$0
+mov $20,$0
+mov $22,8
 mov $0,0
-mov $2,10
-lpb $2
-  sub $2,1
-  mov $3,$1
-  lpb $3
-    mov $5,$3
-    mod $5,10
-    equ $5,$2
-    div $3,10
-    add $4,$5
-  lpe
-  min $4,1
-  add $0,$4
-  min $4,0
+lpb $20
+  mov $21,$20
+  mod $21,$22
+  div $20,$22
+  bor $$21,1
 lpe
+add $0,$1
+add $0,$2
+add $0,$3
+add $0,$4
+add $0,$5
+add $0,$6
+add $0,$7
