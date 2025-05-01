@@ -1,0 +1,14 @@
+; A118628: "Say what you see".
+; Submitted by Science United
+; 3,13,1113,3113,2123,112213,312213,212223,114213,31121314,41122314,31221324,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314,21322314
+; Formula: a(n) = b(n-1), b(n) = A047842(b(n-1)), b(1) = 3
+
+#offset 1
+
+sub $0,1
+mov $1,$0
+mov $0,3
+lpb $1
+  sub $1,1
+  seq $0,47842 ; Describe n (count digits in order of increasing value, ignoring missing digits).
+lpe
