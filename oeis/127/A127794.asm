@@ -1,0 +1,18 @@
+; A127794: A007376(8n+1).
+; Submitted by Science United
+; 1,9,3,7,1,5,9,3,7,1,5,9,3,7,1,5,9,3,7,1,5,9,3,7,1,3,0,1,1,1,1,9,2,1,7,3,1,5,3,1,3,4,1,1,5,1,9,6,1,7,7,1,5,7,1,3,8,1,1,9,1,9,0,2,7,1,2,5,1,2,3,2,2,1,3,2,9,4,2,7
+
+add $0,1
+mov $2,$0
+sub $0,1
+mov $1,$0
+mul $1,6
+add $1,$0
+add $1,$2
+lpb $2
+  sub $2,1
+  mod $2,4
+  mov $0,$1
+  sub $0,1
+  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
+lpe
