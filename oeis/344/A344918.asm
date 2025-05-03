@@ -22,7 +22,5 @@ lpb $1
   div $3,$2
   mul $3,4
 lpe
-mov $1,$3
-mul $1,3
 mov $0,$3
 div $0,2

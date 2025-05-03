@@ -1,24 +1,27 @@
 ; A268038: List of y-coordinates of point moving in clockwise square spiral.
-; Submitted by arkiss
+; Submitted by loader3229
 ; 0,0,-1,-1,-1,0,1,1,1,1,0,-1,-2,-2,-2,-2,-2,-1,0,1,2,2,2,2,2,2,1,0,-1,-2,-3,-3,-3,-3,-3,-3,-3,-2,-1,0,1,2,3,3,3,3,3,3,3,3,2,1,0,-1,-2,-3,-4,-4,-4,-4,-4,-4,-4,-4,-4,-3,-2,-1,0,1,2,3,4,4,4,4,4,4,4,4
-; Formula: a(n) = e(n-1), b(n) = b(n-1)+c(n-1)+e(n-1)+1, b(3) = 6, b(2) = 5, b(1) = 4, b(0) = 2, c(n) = truncate((2*d(n-1)-2*e(n-1)+2)/(b(n-1)+c(n-1)+e(n-1))), c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 1, d(n) = -e(n-1)+d(n-1)+1, d(3) = 4, d(2) = 2, d(1) = 1, d(0) = 0, e(n) = c(n-1)+e(n-1)-1, e(3) = -1, e(2) = -1, e(1) = 0, e(0) = 0
+; Formula: a(n) = -(-4*truncate(gcd(sqrtint(4*n-4),4)/4)+gcd(sqrtint(4*n-4),4)-1)*(-floor(((sqrtint(4*n-4)+1)^2)/4)+n-1)-truncate(binomial(-2,truncate(sqrtint(4*n-4)/2))/(-2))
 
 #offset 1
 
-mov $1,2
-mov $2,1
 sub $0,1
-lpb $0
-  sub $0,1
-  sub $4,1
-  add $2,$4
-  add $1,1
-  add $1,$2
-  sub $3,$4
-  mov $4,$2
-  mov $2,$3
-  mul $2,2
-  div $2,$1
-  add $1,1
-lpe
-mov $0,$4
+mov $1,$0
+mul $1,4
+nrt $1,2
+mov $2,$1
+div $2,2
+mov $4,-2
+bin $4,$2
+div $4,-2
+mov $3,$1
+gcd $3,4
+mod $3,4
+sub $3,1
+add $1,1
+pow $1,2
+div $1,4
+sub $0,$1
+mul $0,$3
+add $0,$4
+mul $0,-1

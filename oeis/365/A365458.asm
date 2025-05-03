@@ -1,13 +1,12 @@
 ; A365458: The largest power of 3 that is less than or equal to n.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,3,3,3,3,3,3,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27
+; Formula: a(n) = truncate(3^logint(n,3))
 
 #offset 1
 
-mov $1,1
-lpb $0
-  div $0,3
-  mul $1,3
-lpe
-mov $0,$1
-div $0,3
+mov $1,$0
+log $1,3
+mov $2,3
+pow $2,$1
+mov $0,$2

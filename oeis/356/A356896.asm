@@ -13,8 +13,10 @@ lpb $2
   mov $3,$1
   add $3,1
   seq $3,3796 ; Numbers with no 3 adjacent 0's in binary expansion.
+  mov $5,$3
   add $3,1
-  seq $3,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  bxo $3,$5
+  log $3,2
   gcd $3,2
   sub $0,$3
   add $0,1

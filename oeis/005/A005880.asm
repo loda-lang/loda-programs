@@ -1,27 +1,12 @@
 ; A005880: Theta series of D_4 lattice with respect to edge.
-; Submitted by zelandonii
+; Submitted by AnandBhat
 ; 2,8,12,16,26,24,28,48,36,40,64,48,62,80,60,64,96,96,76,112,84,88,156,96,114,144,108,144,160,120,124,208,168,136,192,144,148,248,192,160,242,168,216,240,180,224,256,240,196,312,204,208,384,216,220,304,228,288,364,288,266,336,312,256,352,264,320,480,276,280,384,336,360,456,300,304,468,384,316,432
+; Formula: a(n) = 2*A000203(2*n+1)
 
-mov $1,1
-mov $2,3
-mul $0,2
-add $0,1
-lpb $0
-  mov $3,$0
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,2
-    add $2,2
-    sub $3,$4
-  lpe
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$2
-    add $5,1
-  lpe
-  mul $1,$5
-lpe
-mov $0,$1
+mov $1,$0
+mul $1,2
+add $1,1
+mov $2,$1
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $0,$2
 mul $0,2

@@ -24,10 +24,9 @@ lpb $2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $6,1
   sub $3,1
+  equ $7,0
   mov $8,2
   sub $8,$3
-  mov $7,$8
-  equ $7,0
   add $8,$7
   div $3,$8
   mul $3,$6

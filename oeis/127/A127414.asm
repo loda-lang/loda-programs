@@ -1,19 +1,39 @@
 ; A127414: a(n) = A007376(4*n+1).
-; Submitted by pututu
+; Submitted by omegaintellisys
 ; 1,5,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,3,5,7,9,1,0,3,1,0,7,1,1,1,1,1,5,1,1,9,1,2,3,1,2,7,1,3,1,1,3,5,1,3,9,1,4
-; Formula: a(n) = -10*truncate(truncate(A261138(2*n+7)/((-10^(2*n))^2))/10)+truncate(A261138(2*n+7)/((-10^(2*n))^2))
 
-mov $2,$0
-add $2,6
-add $2,$0
-add $2,1
-seq $2,261138 ; The concatenation of 123456...n and the reverse of this number.
-mul $0,2
-mov $1,$0
-mov $0,10
-pow $0,$1
-sub $3,$0
-pow $3,2
-mov $0,$2
-div $0,$3
+mov $1,1
+mov $5,2
+lpb $5
+  sub $5,1
+  mov $6,10
+  pow $6,$1
+  mul $0,2
+  mov $3,$1
+  mul $3,$6
+  div $6,9
+  sub $3,$6
+  mov $4,$0
+  geq $4,$3
+  lpb $4
+    sub $4,1
+    add $1,1
+    mov $2,$3
+  lpe
+lpe
+mov $4,$0
+sub $4,$2
+mod $4,$1
+mov $5,$1
+sub $5,$4
+sub $5,1
+mov $4,10
+pow $4,$5
+mov $3,10
+pow $3,$1
+div $3,10
+sub $0,$2
+div $0,$1
+add $0,$3
+div $0,$4
 mod $0,10

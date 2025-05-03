@@ -11,6 +11,7 @@ lpb $5
   sub $5,1
   mov $6,3
   pow $6,$1
+  mov $2,$3
   mov $3,$1
   mul $3,$6
   div $6,2
@@ -18,11 +19,7 @@ lpb $5
   mov $4,$0
   geq $4,$3
   mul $5,$4
-  lpb $4
-    sub $4,1
-    add $1,1
-    mov $2,$3
-  lpe
+  add $1,$4
 lpe
 mov $4,$0
 sub $4,$2

@@ -1,34 +1,19 @@
 ; A130296: Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 < j <= i = 1,2,3,...
-; Submitted by m0laki
+; Submitted by loader3229
 ; 1,2,1,3,1,1,4,1,1,1,5,1,1,1,1,6,1,1,1,1,1,7,1,1,1,1,1,1,8,1,1,1,1,1,1,1,9,1,1,1,1,1,1,1,1,10,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,12,1,1,1,1,1,1,1,1,1,1,1,13,1
+; Formula: a(n) = binomial(truncate((sqrtint(8*n)-1)/2),(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^5)+1
 
 #offset 1
 
+mov $1,$0
+mul $0,8
+nrt $0,2
 sub $0,1
-mov $4,$0
-mul $4,2
-mov $3,-2
-bin $3,$4
-div $3,2
-sub $4,$3
-mul $4,2
-add $4,3
-lpb $4
-  sub $4,3
-  mov $5,$4
-  max $5,0
-  mul $5,4
-  mov $1,$5
-  nrt $1,2
-  add $5,2
-  mov $2,$5
-  nrt $2,2
-  mov $5,$2
-  add $5,$1
-  mod $5,2
-  mul $4,$5
-  sub $4,2
-lpe
-mov $0,$1
 div $0,2
+mov $2,$0
+add $2,1
+bin $2,2
+sub $1,$2
+pow $1,5
+bin $0,$1
 add $0,1

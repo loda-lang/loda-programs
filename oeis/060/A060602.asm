@@ -1,14 +1,12 @@
 ; A060602: Number of tilings of the d-dimensional zonotope constructed from d+3 vectors.
-; Submitted by Science United
+; Submitted by tosi
 ; 8,24,62,148,338,752,1646,3564,7658,16360,34790,73700,155618,327648,688094,1441756,3014618,6291416,13107158,27262932,56623058,117440464,243269582,503316428,1040187338,2147483592,4429184966
+; Formula: a(n) = (n+7)*(2^(n+1)-2)+8
 
-mov $2,3
-add $2,$0
-add $2,4
-lpb $0
-  sub $0,1
-  mul $2,2
-  add $1,$2
-lpe
-mov $0,$1
+add $0,1
+mov $1,2
+pow $1,$0
+sub $1,2
+add $0,6
+mul $0,$1
 add $0,8

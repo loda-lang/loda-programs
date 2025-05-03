@@ -1,23 +1,21 @@
 ; A344299: Expansion of Sum_{k>=1} (-1)^(k+1) * x^(k^2) / (1 - x^(k^2)).
-; Submitted by gemini8
+; Submitted by mmonnin
 ; 1,1,1,0,1,1,1,0,2,1,1,0,1,1,1,-1,1,2,1,0,1,1,1,0,2,1,2,0,1,1,1,-1,1,1,1,0,1,1,1,0,1,1,1,0,2,1,1,-1,2,2,1,0,1,2,1,0,1,1,1,0,1,1,2,-2,1,1,1,0,1,1,1,0,1,1,2,0,1,1,1,-1
 
 #offset 1
 
 mov $2,$0
-mov $4,$0
-sub $0,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  seq $0,258998 ; a(n) = -(-1)^n if n = k^2 for positive integer k, otherwise 0.
-  mul $1,$0
-  add $3,$1
+lpb $0
+  mov $4,$0
+  equ $4,0
+  add $0,$4
+  mov $3,$2
+  dif $3,$0
+  mod $3,$0
+  add $3,$2
+  equ $3,$2
+  sub $0,1
+  mul $1,-1
+  add $1,$3
 lpe
-mov $0,$3
-add $0,$3
-div $0,2
+mov $0,$1

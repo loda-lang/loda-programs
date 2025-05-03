@@ -1,13 +1,13 @@
 ; A143721: Aliquot sequence starting at 38.
-; Submitted by Kotenok2000
+; Submitted by mmonnin
 ; 38,22,14,10,8,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-; Formula: a(n) = truncate((2*A000203(max(a(n-1)-1,0)+1)-2*max(a(n-1)-1,0)-1)/2), a(0) = 38
+; Formula: a(n) = truncate((2*A000203(a(n-1))-2*a(n-1)+1)/2), a(0) = 38
 
 mov $1,$0
 mov $0,38
 lpb $1
   sub $1,1
-  trn $0,1
+  sub $0,1
   mov $2,$0
   add $0,1
   seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).

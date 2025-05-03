@@ -1,35 +1,28 @@
 ; A001241: Differences of reciprocals of unity.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,50,1660,46760,1217776,30480800,747497920,18139003520,437786795776,10536798272000,253246254177280,6082300519393280,146028165842661376,3505313580591718400,84135194495708938240,2019336829962040279040
+; Formula: a(n) = truncate((12^(n+2)+27*4^(n+2)-12*6^(n+2)-16*3^(n+2))/432)*2^(n-1)
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-mov $4,$0
-mov $0,2
-pow $0,$1
-mov $2,1
-mov $3,$1
-lpb $3
-  sub $3,1
-  mov $1,$4
-  sub $1,$3
-  add $1,1
-  mov $5,3
-  pow $5,$1
-  add $1,1
-  mov $6,2
-  pow $6,$1
-  sub $5,$6
-  mov $1,$5
-  mul $1,2
-  add $5,2
-  mul $5,$6
-  add $5,$1
-  mov $1,$5
-  div $1,2
-  mul $2,12
-  add $2,$1
-lpe
-mul $0,$2
+mov $5,2
+pow $5,$0
+add $0,3
+mov $2,6
+pow $2,$0
+mul $2,12
+mov $3,4
+pow $3,$0
+mul $3,27
+mov $4,3
+pow $4,$0
+mul $4,16
+mov $1,12
+pow $1,$0
+sub $1,$2
+add $1,$3
+sub $1,$4
+div $1,432
+mov $0,$1
+mul $0,$5

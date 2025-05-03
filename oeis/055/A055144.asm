@@ -1,5 +1,5 @@
 ; A055144: The first n digits of the juxtaposition of the base-3 numbers converted to decimal.
-; Submitted by Science United
+; Submitted by fzs600
 ; 1,5,16,48,145,436,1309,3929,11789,35367,106103,318310,954932,2864798,8594395,25783185,77349555,232048666,696145998,2088437995,6265313986,18795941958,56387825876,169163477629,507490432888,1522471298664
 
 #offset 1
@@ -9,7 +9,7 @@ pow $3,$0
 mov $4,1
 add $0,6
 lpb $0
-  sub $0,1
+  sub $0,2
   div $6,$4
   mul $6,$4
   add $4,$6

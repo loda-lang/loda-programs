@@ -5,8 +5,6 @@
 #offset 1
 
 sub $0,1
-lpb $0
-  dif $0,4
-lpe
+dir $0,4
 max $0,1
 mod $0,2

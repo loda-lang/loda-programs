@@ -1,18 +1,24 @@
 ; A326345: a(n) is the number of arm movements when expressing n in flag semaphore, counting the movement of each arm separately.
-; Submitted by Fardringle
+; Submitted by sbo92
 ; 6,6,6,6,5,5,6,6,6,5,7,6,7
 
-lpb $0
-  mod $0,2
-  add $0,12
+add $0,1
+mov $20,$0
+mov $22,11
+mov $0,0
+mov $10,1
+lpb $20
+  mov $21,$20
+  mod $21,$22
+  div $20,$22
+  bor $$21,1
 lpe
-mov $1,1
-lpb $0
-  mov $2,$0
-  add $2,1
-  seq $2,230196 ; Number of pairs (p,q) such that 2*p + 3*q = n and p != q.
-  mod $0,4
-  mul $1,$2
-lpe
-mov $0,$1
-add $0,5
+add $0,$1
+add $0,$2
+add $0,$3
+add $0,$4
+add $0,$7
+add $0,$8
+add $0,$9
+add $0,$10
+add $0,4

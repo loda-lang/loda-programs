@@ -1,33 +1,21 @@
 ; A222810: Number of n-digit numbers N with distinct digits such that the reversal of N divides N.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 9,9,3,5,3,2,0,0,0
-; Formula: a(n) = -10*truncate((-10*truncate((truncate((12*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+6*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-8*truncate((4*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+2*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-150)/4)-450)/2)-167)/10)+truncate((12*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+6*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-8*truncate((4*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+2*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-150)/4)-450)/2)-157)/10)-10*truncate((truncate((12*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+6*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-8*truncate((4*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+2*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-150)/4)-450)/2)-167)/10)+truncate((12*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+6*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-8*truncate((4*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/6)+2*floor(((floor((10*n+27)/11)+4)^2+10*n+15)/2)-150)/4)-450)/2)-157
+; Formula: a(n) = floor((117*max(n-1,1)*binomial(5,max(n-1,1)))/(40*max(n-1,1)+20))%10
 
 #offset 1
 
-add $0,2
-mul $0,10
+sub $0,1
+max $0,1
 mov $2,$0
-sub $2,5
-add $0,7
-div $0,11
-add $0,4
-pow $0,2
-add $0,$2
-mov $2,$0
-div $2,6
-div $0,2
-add $0,$2
-add $0,$2
-sub $0,75
-mul $0,2
-mov $1,$0
-mod $0,4
-mul $0,2
-add $1,$0
-mov $0,$1
-div $0,2
-sub $0,167
-mod $0,10
-add $0,10
+mul $2,2
+add $2,1
+mov $1,5
+mul $1,$2
+mul $1,4
+mov $2,5
+bin $2,$0
+mul $0,117
+mul $0,$2
+div $0,$1
 mod $0,10

@@ -1,17 +1,18 @@
 ; A305258: List of y-coordinates of a point moving in a smooth counterclockwise spiral rotated by Pi/4.
+; Submitted by loader3229
 ; 0,0,1,0,-1,-1,0,1,2,1,0,-1,-2,-2,-1,0,1,2,3,2,1,0,-1,-2,-3,-3,-2,-1,0,1,2,3,4,3,2,1,0,-1,-2,-3,-4,-4,-3,-2,-1,0,1,2,3,4,5,4,3,2,1,0,-1,-2,-3,-4,-5,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,5,4,3,2,1,0,-1
-; Formula: a(n) = truncate((-d(2*n)+b(2*n))/2), b(n) = b(n-1), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = 2*e(n-1)-2*truncate((2*e(n-1)+c(n-1))/2)+c(n-1), c(3) = 1, c(2) = 1, c(1) = -1, c(0) = -1, d(n) = 2*truncate((2*e(n-1)+c(n-1))/2)-c(n-1)-2*e(n-1)+d(n-1), d(3) = -1, d(2) = 0, d(1) = 1, d(0) = 0, e(n) = 2*truncate((2*e(n-1)+c(n-1))/2)-c(n-1)-e(n-2), e(4) = -2, e(3) = 0, e(2) = 1, e(1) = 1, e(0) = 0
+; Formula: a(n) = truncate((truncate((-1)^truncate((sqrtint(8*n)+2)/2))*(2*n-2*binomial(truncate((sqrtint(8*n)+2)/2),2)))/2)
 
-mov $2,-1
-mul $0,2
-lpb $0
-  sub $0,1
-  add $2,$4
-  add $2,$4
-  mod $2,2
-  sub $3,$2
-  add $4,$3
-lpe
-sub $1,$3
+mov $1,$0
+mul $1,8
+nrt $1,2
+add $1,2
 div $1,2
-mov $0,$1
+mov $2,-1
+pow $2,$1
+bin $1,2
+mul $1,2
+mul $0,2
+sub $0,$1
+mul $0,$2
+div $0,2

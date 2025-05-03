@@ -9,6 +9,7 @@ mov $21,1
 mov $22,1
 mov $1,23
 mov $2,$0
+sub $10,4
 add $0,21
 sub $2,1
 lpb $2

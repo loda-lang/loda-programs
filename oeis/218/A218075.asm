@@ -1,21 +1,17 @@
 ; A218075: a(n) = 2^(prime(n+1) - prime(n)).
-; Submitted by owensse
+; Submitted by mmonnin
 ; 2,4,4,16,4,16,4,16,64,4,64,16,4,16,64,64,4,64,16,4,64,16,64,256,16,4,16,4,16,16384,16,64,4,1024,4,64,64,16,64,64,4,1024,4,16,4,4096,4096,16,4,16,64,4,1024,64,64,64,4,64,16,4,1024,16384,16,4,16
+; Formula: a(n) = 2*truncate(2^(A013632(A000040(min(n,97)))-1))
 
 #offset 1
 
+min $0,97
 mov $1,$0
 seq $1,40 ; The prime numbers.
-mov $4,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  mul $4,2
-  add $1,1
-  add $2,$3
-lpe
-mov $0,$4
+seq $1,13632 ; Difference between n and the next prime greater than n.
+mov $0,$1
+sub $0,1
+mov $2,2
+pow $2,$0
+mov $0,$2
 mul $0,2

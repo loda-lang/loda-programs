@@ -4,11 +4,23 @@
 
 #offset 1
 
-seq $0,160356 ; First differences of Recamán's sequence A005132.
-mov $1,1
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $1,0
+mov $2,20
+mov $20,1
+lpb $0
+  sub $0,1
+  add $1,1
+  mov $3,$2
+  add $3,$1
+  sub $2,$1
+  max $2,20
+  mov $4,$$2
+  mov $11,$4
+  lpb $4
+    mov $4,0
+    mov $2,$3
+  lpe
+  mov $$2,1
 lpe
-mov $0,$1
+mov $0,$11
+add $0,1
+mod $0,2

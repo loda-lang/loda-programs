@@ -1,14 +1,14 @@
 ; A014766: Numbers k such that the 3k shuffle group does not accomplish a perfect shuffle.
-; Submitted by iBezanilla
+; Submitted by AnandBhat
 ; 9,12,24,27,36,48,60,72,81,84,96,108,120
 
 #offset 1
 
 sub $0,1
+mov $1,2
 mov $4,1
 lpb $4
   add $0,2
-  mov $1,2
   lpb $1
     equ $1,1
     add $2,1

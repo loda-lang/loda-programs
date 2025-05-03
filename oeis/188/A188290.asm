@@ -1,30 +1,24 @@
 ; A188290: Positions of 0 in the zero-one sequence [nr+4r]-[nr]-[4r], where r=sqrt(5) and []=floor.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 17,34,51,68,89,106,123,140,161,178,195,212,233,250,267,284,305,322,339,356,373,394,411,428,445,466,483,500,517,538,555,572,589,610,627,644,661,678,699,716,733,750,771,788,805,822,843,860,877,894,915,932,949,966,983,1004,1021,1038,1055,1076,1093,1110,1127,1148,1165,1182,1199,1220,1237,1254,1271,1288,1309,1326,1343,1360,1381,1398,1415,1432
-; Formula: a(n) = 4*n+2*sqrtint(5*n^2)+sqrtint((2*n+sqrtint(5*n^2)-2)*(10*n+5*sqrtint(5*n^2)-10))+5
+; Formula: a(n) = 4*n+2*sqrtint(5*n^2)+sqrtint(5*(2*n+sqrtint(5*n^2)-1)^2)+3
 
 #offset 1
 
-sub $0,3
+sub $0,1
 mov $1,$0
-add $0,3
-mov $2,$0
-add $2,$0
-mul $2,2
-add $2,$0
-mul $2,$0
-nrt $2,2
-add $2,$0
-add $1,$2
-mov $0,$1
 add $0,1
-mov $3,$0
-add $3,$0
-mul $3,2
-add $3,$0
-mul $3,$0
-mul $0,2
+mov $2,$0
+pow $2,2
+mul $2,5
+nrt $2,2
+add $0,$2
+add $1,$0
+mov $3,$1
+pow $3,2
+mul $3,5
 nrt $3,2
-add $3,$0
-mov $0,$3
-add $0,9
+mul $1,2
+add $1,$3
+mov $0,$1
+add $0,5

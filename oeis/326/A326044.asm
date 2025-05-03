@@ -8,7 +8,6 @@
 mov $1,$0
 seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 sub $1,1
-mov $3,0
 max $3,$1
 mov $2,$3
 add $3,1

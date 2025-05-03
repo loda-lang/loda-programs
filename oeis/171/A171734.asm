@@ -1,23 +1,27 @@
 ; A171734: First differences of A171733.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,0,6,24,10,96,14,240,18,480,22,840,26,1344,30,2016,34,2880,38,3960,42,5280,46,6864,50,8736,54,10920,58,13440,62,16320,66,19584,70,23256,74,27360,78,31920,82,36960,86,42504,90,48576,94,55200,98,62400,102
+; Formula: a(n) = binomial(-2,n)*(-floor(((2*n+1)^2)/4)+floor((n^2)/2))*(((n+1)%2+2*n)%4-1)+2*binomial(-2,n)
 
 add $0,1
-mov $3,3
-mov $4,$0
-lpb $0
-  lpb $3
-    sub $3,2
-    mov $2,2
-  lpe
-  lpb $0
-    dif $0,$2
-    mov $1,$4
-  lpe
-  dif $1,$2
-  pow $1,2
-  sub $1,1
-  mul $4,$1
-lpe
-mov $0,$4
-mul $0,2
+mov $2,$0
+mod $2,2
+sub $0,1
+mov $1,$0
+mul $1,2
+mov $4,-2
+bin $4,$0
+mov $3,$1
+add $3,$2
+mod $3,4
+sub $3,1
+mul $3,$4
+mul $4,2
+add $1,1
+pow $1,2
+div $1,4
+pow $0,2
+div $0,2
+sub $0,$1
+mul $0,$3
+add $0,$4

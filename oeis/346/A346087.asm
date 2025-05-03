@@ -1,7 +1,7 @@
 ; A346087: a(n) = min(A071178(n), A329348(n)).
 ; Submitted by rolivos
 ; 0,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1
-; Formula: a(n) = truncate((2*truncate(A146564(gcd(A064989(A276086(n*A181811(n))),n))/3)+1)/2)
+; Formula: a(n) = truncate(A146564(gcd(A064989(A276086(n*A181811(n))),n))/3)
 
 #offset 1
 
@@ -16,6 +16,3 @@ gcd $1,$2
 mov $0,$1
 seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
 div $0,3
-mul $0,2
-add $0,1
-div $0,2

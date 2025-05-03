@@ -1,5 +1,5 @@
 ; A181354: Number of n-digit perfect cubes.
-; Submitted by Xenon
+; Submitted by AnandBhat
 ; 2,2,5,12,25,53,116,249,535,1155,2487,5358,11545,24871,53584,115444,248715,535841,1154435,2487154,5358411,11544347,24871542,53584111,115443470,248715414,535841116,1154434691,2487154143,5358411166
 
 #offset 1
@@ -11,8 +11,11 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  add $0,1
-  seq $0,18005 ; Smallest number whose cube has n digits.
+  mov $6,10
+  pow $6,$0
+  sub $6,1
+  mov $0,$6
+  nrt $0,3
   mov $2,$3
   mul $2,$0
   add $1,$2

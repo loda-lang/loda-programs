@@ -6,7 +6,6 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
@@ -15,16 +14,7 @@ lpb $2
   sub $3,1
   mov $5,$3
   add $3,1
-  mov $6,$3
-  mul $6,2
-  mov $7,$6
-  sub $7,1
-  bxo $6,$7
-  add $6,1
-  div $6,2
-  log $6,2
   seq $3,35210 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 28.
-  mul $3,$6
   equ $3,0
   sub $0,$3
   add $1,1

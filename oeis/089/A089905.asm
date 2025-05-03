@@ -1,16 +1,14 @@
 ; A089905: Sum of digits of numbers between 0 and (3/9)*(10^n-1).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,6,183,3285,47787,627789,7777791,92777793,1077777795,12277777797,137777777799,1527777777801,16777777777803,182777777777805,1977777777777807,21277777777777809,227777777777777811
 
 mov $2,$0
 lpb $0
   sub $0,1
-  add $1,1
   mul $2,10
   sub $2,$1
-  add $1,4
+  add $1,6
   sub $2,$1
-  add $1,1
 lpe
 mov $0,$2
 div $0,2

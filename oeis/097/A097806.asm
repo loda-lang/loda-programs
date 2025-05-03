@@ -1,19 +1,18 @@
 ; A097806: Riordan array (1+x, 1) read by rows.
-; Submitted by Fire$torm [BlackOps]
+; Submitted by loader3229
 ; 1,1,1,0,1,1,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0
-; Formula: a(n) = -2*truncate((binomial(b(n+1),3)+1)/2)+binomial(b(n+1),3)+1, b(n) = c(n-1)+truncate(b(n-1)/2), b(1) = 2, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(1) = 4, c(0) = 2
+; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1,truncate((sqrtint(8*n+8)-1)/2))-1)
 
-mov $2,2
 add $0,1
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $1,$2
-  mul $2,$3
-lpe
-bin $1,3
-mov $0,$1
-add $0,1
-mod $0,2
+mov $1,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+mov $2,$0
+add $2,1
+bin $2,2
+sub $1,$2
+bin $1,$0
+sub $1,1
+bin $0,$1

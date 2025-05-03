@@ -1,39 +1,12 @@
 ; A095114: a(1)=1. a(n) = a(n-1) + (number of elements of {a(1),...,a(n-1)} that are <= n-1).
 ; Submitted by Science United
 ; 1,2,4,6,9,12,16,20,24,29,34,39,45,51,57,63,70,77,84,91,99,107,115,123,132,141,150,159,168,178,188,198,208,218,229,240,251,262,273,285,297,309,321,333,345,358,371,384,397,410,423,437,451,465,479,493,507,522,537,552,567,582,597,613,629,645,661,677,693,709,726,743,760,777,794,811,828,846,864,882
+; Formula: a(n) = A001463(n-1)+1
 
 #offset 1
 
 sub $0,1
-mov $6,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$6
-  sub $0,$3
-  sub $1,$4
-  mov $5,$0
-  mov $7,2
-  lpb $7
-    mov $7,0
-    equ $1,1
-    sub $0,1
-    lpb $0
-      mov $2,$1
-      add $2,1
-      seq $2,163563 ; n occurs 1+a(n) times starting with a(1)=1.
-      sub $0,$2
-      max $0,$1
-      add $1,1
-    lpe
-    mov $0,$1
-    add $0,1
-  lpe
-  min $5,1
-  sub $0,$5
-  add $0,1
-  add $4,$0
-lpe
-mov $0,$4
-sub $0,1
+mov $1,$0
+seq $1,1463 ; Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
+mov $0,$1
+add $0,1

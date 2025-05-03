@@ -1,13 +1,15 @@
 ; A260445: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (0,0,1) and midword sequence (a(n)); see Comments.
-; Submitted by Raul Prisacariu
+; Submitted by mmonnin
 ; 0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,1
 
 #offset 1
 
 sub $0,1
 lpb $0
+  mov $2,$0
   add $0,1
-  seq $0,7814 ; Exponent of highest power of 2 dividing n, a.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+  bxo $0,$2
+  log $0,2
   sub $0,2
 lpe
 mov $1,-2

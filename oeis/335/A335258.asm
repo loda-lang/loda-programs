@@ -1,10 +1,14 @@
 ; A335258: Denominators of expansion of arctanh(tan(x)) (odd powers only).
-; Submitted by mmonnin
+; Submitted by Science United
 ; 1,3,3,315,567,155925,93555,638512875,127702575,1856156927625,7795859096025,49308808782358125,56894779364259375,1298054391195577640625,95646113035463615625,122529844256906551386796875,47570410123269602303109375,2405873491984360136479756640625
 
 #offset 1
 
 sub $0,1
-min $0,17
-seq $0,13523 ; Denominator of [x^(2n+1)] in the Taylor expansion arcsinh(cosec(x) - cot(x)).
+mod $0,21
+mov $1,$0
+seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
+seq $1,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+gcd $1,$0
+div $0,$1
 dir $0,2

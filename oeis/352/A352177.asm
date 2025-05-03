@@ -1,21 +1,15 @@
 ; A352177: a(n) is the number of symmetric Toeplitz anti-Hadamard matrices of order n whose sum of the inverse squares of their singular values is maximal.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,1,2,1,3,1,1,2,1,1,1,1,1,1,1,1,1,1
 
 #offset 1
 
-mov $1,1
-mov $2,1
-lpb $0
-  mov $3,$0
-  lpb $3
-    div $3,2
-    bin $3,4
-    add $2,1
-  lpe
-  lpb $0
-    dif $0,$2
-  lpe
-  add $1,1
-lpe
-mov $0,$1
+mov $1,$0
+mul $0,8
+nrt $0,2
+sub $0,1
+div $0,2
+dif $1,$0
+sub $1,$0
+bin $0,$1
+add $0,1

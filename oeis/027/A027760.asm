@@ -4,30 +4,24 @@
 
 #offset 1
 
-mov $1,$0
-sub $0,1
-mov $3,2
-mov $4,$0
-gcd $4,2
-mov $7,$1
-mov $2,$1
-lpb $2
-  sub $2,2
-  mov $1,$7
-  sub $1,$2
-  mov $5,$1
-  mov $6,$1
-  gcd $6,$2
-  bin $6,$1
-  add $1,1
-  seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
-  mul $1,$5
-  add $1,1
-  mul $1,$3
-  div $2,$4
-  mul $6,$1
-  max $3,$6
+mov $3,$0
+mov $4,2
+mov $5,$0
+lpb $5
+  sub $5,2
+  mov $0,$3
+  sub $0,$5
+  mov $1,$0
+  mov $2,$0
+  gcd $2,$5
+  bin $2,$0
+  add $0,1
+  mul $0,$2
+  seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
+  mul $0,$1
+  add $0,1
+  mul $0,$4
+  mul $2,$0
+  max $4,$2
 lpe
-mov $0,$3
-div $0,2
-mul $0,2
+mov $0,$4

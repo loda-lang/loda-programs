@@ -1,30 +1,43 @@
 ; A009994: Numbers with digits in nondecreasing order.
-; Submitted by respawner
+; Submitted by loader3229
 ; 0,1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,22,23,24,25,26,27,28,29,33,34,35,36,37,38,39,44,45,46,47,48,49,55,56,57,58,59,66,67,68,69,77,78,79,88,89,99,111,112,113,114,115,116,117,118,119,122,123,124,125,126,127,128,129,133,134,135,136,137,138,139,144
 
 #offset 1
 
 sub $0,1
-mov $1,-1
-mov $2,$0
-add $2,11
-pow $2,2
-lpb $2
-  add $1,1
-  mov $3,$1
-  seq $3,343638 ; a(n) = (Sum of decimal digits of 3*n) / 3.
-  add $3,1
-  equ $3,6
+mov $1,9
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $4,$1
+  bin $4,9
+  mov $5,$0
+  geq $5,$4
   add $1,$5
-  add $1,1
-  mov $5,8
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  mul $3,$5
 lpe
-mov $0,$1
-sub $0,31
-div $0,30
+sub $1,1
+mov $2,8
+mov $4,$1
+bin $4,9
+sub $0,$4
+lpb $1
+  sub $1,1
+  mov $4,$1
+  bin $4,$2
+  mov $5,$4
+  leq $5,$0
+  sub $2,$5
+  mul $4,$5
+  bxo $5,1
+  mov $6,9
+  mul $6,$5
+  add $6,1
+  mul $7,$6
+  sub $0,$4
+  mov $6,9
+  sub $6,$2
+  mul $6,$5
+  add $7,$6
+lpe
+mov $0,$7

@@ -1,14 +1,15 @@
 ; A131432: Triangle read by rows: (A000012 * A131431) + (A131431 * A000012) - A000012 as infinite lower triangular matrices.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,4,7,7,10,13,10,13,16,19,13,16,19,22,25,16,19,22,25,28,31,19,22,25,28,31,34,37,22,25,28,31,34,37,40,43,25,28,31,34,37,40,43,46,49,28,31,34,37,40,43,46,49,52,55,31,34,37,40,43,46,49,52,55,58,61,34,37,40,43,46,49,52,55,58,61,64,67
+; Formula: a(n) = 3*n-3*binomial(truncate((sqrtint(8*n+8)-1)/2),2)+1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $1,6
-mov $2,3
-mul $2,$1
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+bin $1,2
+sub $0,$1
 mul $0,3
-sub $0,17
-add $0,$2
+sub $0,2

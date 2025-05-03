@@ -1,11 +1,11 @@
 ; A046103: Numerators of convergents to the diesis, log_2(5/4).
-; Submitted by crashtech
+; Submitted by mmonnin
 ; 0,1,9,19,47,207,1289,2785,4074,6859,24651,31510,591831,623341,4331877,4955218,14242313,19197531,33439844,152956907,186396751,7981620449,48076119445,56057739894,272307079021,600671897936
 
 #offset 1
 
 mov $1,$0
-mul $1,2
+add $1,3
 mov $2,10
 pow $2,$1
 seq $1,227689 ; a(n) is the least integer k such that 2^k - 1 has at least 10^n digits.

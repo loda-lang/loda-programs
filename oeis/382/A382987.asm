@@ -10,6 +10,7 @@ lpb $3
   add $0,$3
   trn $0,1
   seq $0,5322 ; Column of Motzkin triangle.
+  sub $1,$2
   add $2,$0
 lpe
 mov $0,$2

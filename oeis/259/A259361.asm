@@ -1,11 +1,10 @@
 ; A259361: n occurs 2n+2 times.
-; Submitted by Bunteck
+; Submitted by loader3229
 ; 0,0,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8
-; Formula: a(n) = truncate((sqrtint(4*n+1)+1)/2)-1
+; Formula: a(n) = truncate((sqrtint(4*n+1)-1)/2)
 
 mul $0,4
 add $0,1
 nrt $0,2
-add $0,1
-div $0,2
 sub $0,1
+div $0,2

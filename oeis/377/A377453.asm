@@ -16,7 +16,13 @@ lpb $2
   sub $0,1
   mov $4,$0
   seq $4,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
   add $0,1
   mov $6,$0
   add $6,$0

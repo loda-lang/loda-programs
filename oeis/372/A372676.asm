@@ -1,22 +1,14 @@
 ; A372676: a(n) = phi(11 * n)/10.
-; Submitted by Contact
+; Submitted by Science United
 ; 1,1,2,2,4,2,6,4,6,4,11,4,12,6,8,8,16,6,18,8,12,11,22,8,20,12,18,12,28,8,30,16,22,16,24,12,36,18,24,16,40,12,42,22,24,22,46,16,42,20,32,24,52,18,44,24,36,28,58,16,60,30,36,32,48,22,66,32,44,24,70,24,72,36,40,36
+; Formula: a(n) = truncate(A000010(11*n)/10)
 
 #offset 1
 
+mov $1,11
+mul $1,$0
+seq $1,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+mov $2,$0
 sub $0,1
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $2,$0
-  add $2,1
-  gcd $2,$3
-  mov $4,$0
-  sub $4,11
-  sub $4,$0
-  mod $4,$2
-  pow $2,$4
-  add $1,$2
-lpe
-add $1,1
 mov $0,$1
+div $0,10

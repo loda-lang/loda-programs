@@ -1,21 +1,18 @@
 ; A090988: a(n) = 2^A004736(n).
-; Submitted by skildude
+; Submitted by BrandyNOW
 ; 2,4,2,8,4,2,16,8,4,2,32,16,8,4,2,64,32,16,8,4,2,128,64,32,16,8,4,2,256,128,64,32,16,8,4,2,512,256,128,64,32,16,8,4,2,1024,512,256,128,64,32,16,8,4,2,2048,1024,512,256,128,64,32,16,8,4,2,4096,2048,1024,512,256
-; Formula: a(n) = -2*truncate(c(n-1)/b(n-1))*b(n-1)+2*c(n-1)+2, b(n) = truncate((-truncate(c(n-1)/b(n-1))*b(n-1)+2*b(n-1)+c(n-1))/2)+1, b(1) = 2, b(0) = 1, c(n) = -truncate(c(n-1)/b(n-1))*b(n-1)+b(n-1)+c(n-1), c(1) = 1, c(0) = 0
+; Formula: a(n) = truncate(2^(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1))
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  sub $0,1
-  mod $2,$1
-  add $2,$1
-  add $1,$2
-  div $1,2
-  add $1,1
-lpe
-mod $2,$1
-mov $0,$2
-mul $0,2
-add $0,2
+mov $2,$0
+mul $0,8
+nrt $0,2
+add $0,3
+div $0,2
+bin $0,2
+add $0,1
+sub $0,$2
+mov $1,2
+pow $1,$0
+mov $0,$1

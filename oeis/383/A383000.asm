@@ -1,20 +1,20 @@
 ; A383000: a(n) = Sum_{d|n} phi(n/d) * (-3)^(d-1).
-; Submitted by pi worker
+; Submitted by Science United
 ; 1,-2,11,-28,85,-238,735,-2216,6585,-19610,59059,-177428,531453,-1593606,4783175,-14351152,43046737,-129134082,387420507,-1162281100,3486785925,-10460294174,31381059631,-94143360856,282429536825,-847288078026,2541865841523,-7625599078020,22876792454989
 
 add $0,1
-mov $3,$0
-bin $3,2
-add $3,$0
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
+lpb $0
+  add $3,$1
+  neq $3,$2
+  mul $3,$0
+  mov $4,$2
+  gcd $4,$3
+  add $4,1
   sub $0,1
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-  add $0,1
-  seq $0,343465 ; a(n) = -(1/n) * Sum_{d|n} phi(n/d) * (-3)^d.
-  add $1,$0
+  mov $3,-3
+  pow $3,$4
+  add $1,$3
 lpe
 mov $0,$1
-div $0,3
+div $0,9

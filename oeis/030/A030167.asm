@@ -8,9 +8,10 @@ pow $1,2
 min $1,400
 mov $3,$1
 seq $3,58183 ; Number of digits in concatenation of first n positive integers.
-seq $1,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
 mov $2,10
 pow $2,$3
+seq $1,7908 ; Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
+sub $1,1
 div $3,$2
 lpb $0
   sub $0,1

@@ -1,17 +1,22 @@
 ; A091044: One half of odd-numbered entries of even-numbered rows of Pascal's triangle A007318.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,2,3,10,3,4,28,28,4,5,60,126,60,5,6,110,396,396,110,6,7,182,1001,1716,1001,182,7,8,280,2184,5720,5720,2184,280,8,9,408,4284,15912,24310,15912,4284,408,9,10,570,7752,38760,83980,83980,38760,7752,570,10,11,770,13167,85272,248710,352716,248710,85272,13167,770,11,12,1012,21252,173052,653752,1248072,1248072,653752,173052,21252,1012,12,13,1300
+; Formula: a(n) = truncate(binomial(2*truncate((sqrtint(8*n)-1)/2)+2,2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-1)/2)
 
 #offset 1
 
+mov $1,$0
+mul $0,8
+nrt $0,2
 sub $0,1
-mul $0,2
-lpb $0
-  add $1,2
-  sub $0,$1
-lpe
+div $0,2
+mov $2,$0
+add $2,1
+bin $2,2
+sub $1,$2
+mul $1,2
+sub $1,1
 add $0,1
-add $1,2
-bin $1,$0
-mov $0,$1
+mul $0,2
+bin $0,$1
 div $0,2

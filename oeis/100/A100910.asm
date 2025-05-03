@@ -1,18 +1,17 @@
 ; A100910: Table of number of occurrences in n of each decimal digit from 0 to 9.
-; Submitted by thorsam
+; Submitted by loader3229
 ; 1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
 
-mov $4,3
-add $0,3
+mov $1,$0
+equ $1,0
+mov $2,$0
+mod $2,10
+div $0,10
 lpb $0
-  sub $0,$4
   mov $3,$0
-  max $3,0
-  pow $1,$3
-  add $3,1
-  seq $3,19280 ; Let sigma_m(n) be result of applying the sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m(n) = k*n; sequence gives log_2 of the (2,2)-perfect numbers.
-  mul $3,$1
-  add $2,$3
-  mov $4,11
+  mod $3,10
+  equ $3,$2
+  div $0,10
+  add $1,$3
 lpe
-mov $0,$2
+mov $0,$1

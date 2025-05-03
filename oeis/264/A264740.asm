@@ -1,30 +1,31 @@
 ; A264740: Sum of odd parts of divisors of n.
-; Submitted by amazing
+; Submitted by BrandyNOW
 ; 1,2,4,3,6,8,8,4,13,12,12,12,14,16,24,5,18,26,20,18,32,24,24,16,31,28,40,24,30,48,32,6,48,36,48,39,38,40,56,24,42,64,44,36,78,48,48,20,57,62,72,42,54,80,72,32,80,60,60,72,62,64,104,7,84,96,68,54,96,96,72,52,74,76,124,60,96,112,80,30
 
 #offset 1
 
-mov $1,1
-mov $2,2
-mov $4,1
-lpb $0
-  mov $3,$0
-  sub $3,1
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
+mov $1,$0
+sub $1,1
+mov $3,1
+mov $4,3
+mov $2,$0
+lpb $2
+  mov $5,$2
+  lpb $5
+    mov $6,$2
+    mod $6,$4
+    min $6,2
+    add $4,2
+    sub $5,$6
   lpe
-  mov $3,$2
-  dif $3,2
-  mov $5,1
-  lpb $0
-    dif $0,$2
-    mul $5,$3
-    add $5,$4
+  mov $7,1
+  lpb $2
+    dif $2,$4
+    mul $7,$4
+    add $7,1
   lpe
-  mul $1,$5
+  mul $3,$7
 lpe
-mov $0,$1
+bxo $0,$1
+dgs $0,2
+mul $0,$3

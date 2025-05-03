@@ -1,22 +1,16 @@
 ; A127508: A007376(4n+2).
-; Submitted by pututu
+; Submitted by Science United
 ; 2,6,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,6,6,6,6,6,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9,1,0,2,1,0,6,1,0,0,1,1,4,1,1,8,1,2,2,1,2,6,1,2,0,1,3,4,1,3,8,1,4,2
-; Formula: a(n) = -10*truncate(truncate((10*A261138(2*n+7))/((-10^(2*n+1))^2))/10)+truncate((10*A261138(2*n+7))/((-10^(2*n+1))^2))
 
-mov $2,$0
-add $2,6
-add $2,$0
-add $2,1
-seq $2,261138 ; The concatenation of 123456...n and the reverse of this number.
 add $0,1
-mul $0,2
+mov $2,$0
+sub $0,1
 mov $1,$0
-sub $1,1
-mov $0,10
-pow $0,$1
-sub $3,$0
-pow $3,2
-mov $0,$2
-mul $0,10
-div $0,$3
-mod $0,10
+mul $1,3
+add $1,$2
+lpb $2
+  sub $2,1
+  mod $2,4
+  mov $0,$1
+  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
+lpe
