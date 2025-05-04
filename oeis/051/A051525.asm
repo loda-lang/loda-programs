@@ -1,18 +1,18 @@
 ; A051525: Third unsigned column of triangle A051338.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 0,0,1,21,335,5000,74524,1139292,18083484,299705400,5198985576,94461323616,1797180658272,35776357096896,744402741205824,16169795109262080,366214212167489280,8636605663418933760
 
-mov $2,1
-add $0,2
+mov $2,2
+add $0,4
 lpb $0
-  add $0,3
-  add $1,$2
-  mul $2,$0
-  sub $0,1
+  add $0,1
   max $0,6
-  mul $3,$0
-  add $3,$1
   mul $1,$0
-  sub $0,3
+  add $1,$3
+  mul $3,$0
+  add $3,$2
+  mul $2,$0
+  sub $0,2
 lpe
-mov $0,$3
+mov $0,$1
+div $0,2

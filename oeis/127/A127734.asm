@@ -1,13 +1,41 @@
 ; A127734: A007376(4n).
-; Submitted by Science United
+; Submitted by loader3229
 ; 4,8,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,6,6,6,6,6,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9,0,1,0,4,1,0,8,1,1,2,1,1,6,1,1,0,1,2,4,1,2,8,1,3,2,1,3,6,1,3,0,1,4
 
 #offset 1
 
-mul $0,4
-mov $1,$0
 sub $0,1
-lpb $1
-  mod $1,4
-  seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
+mul $0,4
+mov $1,1
+mov $5,$0
+add $0,3
+lpb $5
+  sub $5,1
+  mov $6,10
+  pow $6,$1
+  mov $2,$3
+  mov $3,$1
+  mul $3,$6
+  div $6,9
+  sub $3,$6
+  mov $4,$0
+  geq $4,$3
+  mul $5,$4
+  add $1,$4
 lpe
+mov $4,$0
+sub $4,$2
+mod $4,$1
+mov $5,$1
+sub $5,$4
+sub $5,1
+mov $4,10
+pow $4,$5
+mov $3,10
+pow $3,$1
+div $3,10
+sub $0,$2
+div $0,$1
+add $0,$3
+div $0,$4
+mod $0,10

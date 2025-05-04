@@ -7,19 +7,21 @@
 mov $2,$0
 add $2,15
 pow $2,2
-mov $5,$0
-sub $0,1
 lpb $2
   add $3,1
   mov $4,2
   pow $4,$3
+  mov $8,$4
+  log $8,10
+  mov $5,10
+  pow $5,$8
   mov $1,$4
-  seq $1,30 ; Initial digit of n.
+  div $1,$5
   sub $1,3
   equ $1,5
   add $6,$1
   mov $7,$6
-  neq $7,$5
+  neq $7,$0
   sub $2,$7
 lpe
 mov $0,$4

@@ -12,8 +12,8 @@ bxo $1,$2
 add $1,1
 div $1,2
 log $1,2
-sub $0,1
-seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).
+dir $0,2
+div $0,2
 seq $0,3558 ; Least number m > 0 such that 2^m == +-1 (mod 2n + 1).
 add $1,$0
 mov $0,$1

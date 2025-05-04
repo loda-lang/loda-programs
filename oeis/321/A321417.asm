@@ -12,14 +12,13 @@ lpb $0
   mov $4,$2
   add $4,1
   lpb $4
-    sub $4,1
     mov $7,$4
-    trn $7,1
-    add $7,3
+    add $7,1
     seq $7,53090 ; Number of F^3-convex polyominoes on honeycomb lattice with given semiperimeter.
     mov $9,10
     add $9,$5
     min $10,$0
+    sub $4,1
     mul $7,$$9
     gcd $4,$10
     add $5,1

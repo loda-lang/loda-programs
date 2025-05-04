@@ -1,23 +1,25 @@
 ; A128439: a(n) = floor(n*t^n), where t=golden ratio=(1+sqrt(5))/2.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,5,12,27,55,107,203,375,684,1229,2189,3863,6773,11801,20460,35311,60707,104003,177631,302539,513996,871265,1473817,2488367,4194025,7057517,11858508,19898115,33345679,55814939,93320819,155867103
+; Formula: a(n) = c(n-1)+1, b(n) = -b(n-1)-c(n-1)+truncate((c(n-1)+1)/n)+3, b(2) = 0, b(1) = 1, b(0) = 3, c(n) = 2*c(n-1)+b(n-1)+truncate((c(n-1)+1)/n), c(2) = 11, c(1) = 4, c(0) = 0
 
 #offset 1
 
+mov $2,3
 sub $0,1
-mov $1,$0
-gcd $1,2
-add $0,1
-mov $2,$0
-mov $3,2
-mov $4,1
 lpb $0
   sub $0,1
-  mov $5,$3
-  mov $3,$4
-  add $4,$5
+  add $2,$3
+  add $3,$2
+  add $4,1
+  sub $2,3
+  mov $1,$3
+  sub $1,$2
+  sub $1,2
+  div $1,$4
+  mul $2,-1
+  add $2,$1
+  add $3,$1
 lpe
-mul $2,$3
-add $2,$1
-mov $0,$2
-sub $0,2
+mov $0,$3
+add $0,1

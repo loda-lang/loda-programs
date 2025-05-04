@@ -7,9 +7,7 @@
 sub $0,1
 lpb $0
   add $0,1
-  lpb $0
-    dif $0,7
-  lpe
+  dir $0,7
   add $1,$0
   lpb $1
     trn $1,7

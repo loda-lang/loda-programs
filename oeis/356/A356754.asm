@@ -1,19 +1,15 @@
 ; A356754: Triangle read by rows: T(n,k) = ((n-1)*(n+2))/2 + 2*k.
-; Submitted by loader3229
+; Submitted by Science United
 ; 2,4,6,7,9,11,11,13,15,17,16,18,20,22,24,22,24,26,28,30,32,29,31,33,35,37,39,41,37,39,41,43,45,47,49,51,46,48,50,52,54,56,58,60,62,56,58,60,62,64,66,68,70,72,74,67,69,71,73,75,77,79,81,83,85,87
 ; Formula: a(n) = 2*n-binomial(truncate((sqrtint(8*n)-1)/2),2)
 
 #offset 1
 
 mov $1,$0
-mul $1,2
+mul $1,8
+nrt $1,2
 sub $1,1
-mul $0,8
-nrt $0,2
-sub $0,1
-div $0,2
-mov $2,$0
-bin $2,2
-sub $1,$2
-mov $0,$1
-add $0,1
+div $1,2
+bin $1,2
+mul $0,2
+sub $0,$1

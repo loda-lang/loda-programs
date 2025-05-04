@@ -8,5 +8,4 @@
 mov $1,$0
 seq $1,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 seq $1,327278 ; a(n) = Sum_{d|n, d odd} d * mu(d) * mu(n/d).
-sub $0,1
 mov $0,$1

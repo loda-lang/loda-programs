@@ -17,7 +17,14 @@ lpb $2
   mov $4,$0
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   sub $0,1
-  seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $7,$0
+  mul $7,8
+  add $7,1
+  nrt $7,2
+  add $7,1
+  div $7,2
+  bin $7,2
+  sub $0,$7
   mov $6,$0
   div $6,2
   sub $0,1
