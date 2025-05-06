@@ -1,9 +1,9 @@
 ; A096320: a(n) = (n^2+n+4)/2, modulo 10.
-; Submitted by Christian Krause
+; Submitted by Egon Olsen
 ; 2,3,5,8,2,7,3,0,8,7,7,8,0,3,7,2,8,5,3,2,2,3,5,8,2,7,3,0,8,7,7,8,0,3,7,2,8,5,3,2,2,3,5,8,2,7,3,0,8,7,7,8,0,3,7,2,8,5,3,2,2,3,5,8,2,7,3,0,8,7,7,8,0,3,7,2,8,5,3,2
-; Formula: a(n) = -10*truncate((binomial(n+11,2)-53)/10)+binomial(n+11,2)-53
+; Formula: a(n) = (binomial(n+1,2)+2)%10
 
-add $0,11
+add $0,1
 bin $0,2
-sub $0,53
+add $0,2
 mod $0,10

@@ -1,11 +1,10 @@
 ; A061501: a(1) = 1, a(n+1) = (a(n) + n) mod 10.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,2,4,7,1,6,2,9,7,6,6,7,9,2,6,1,7,4,2,1,1,2,4,7,1,6,2,9,7,6,6,7,9,2,6,1,7,4,2,1,1,2,4,7,1,6,2,9,7,6,6,7,9,2,6,1,7,4,2,1,1,2,4,7,1,6,2,9,7,6,6,7,9,2,6,1,7,4,2,1
-; Formula: a(n) = -10*truncate((binomial(n+10,2)-54)/10)+binomial(n+10,2)-54
+; Formula: a(n) = (binomial(n,2)+1)%10
 
 #offset 1
 
-add $0,10
 bin $0,2
-sub $0,54
+add $0,1
 mod $0,10

@@ -1,12 +1,9 @@
 ; A136480: Number of trailing equal digits in binary representation of n.
+; Submitted by fzs600
 ; 1,1,1,2,2,1,1,3,3,1,1,2,2,1,1,4,4,1,1,2,2,1,1,3,3,1,1,2,2,1,1,5,5,1,1,2,2,1,1,3,3,1,1,2,2,1,1,4,4,1,1,2,2,1,1,3,3,1,1,2,2,1,1,6,6,1,1,2,2,1,1,3,3,1,1,2,2,1,1,4
 
-mov $1,7
+sub $0,1
+div $0,2
 add $0,1
-bin $0,2
-lpb $0
-  dif $0,2
-  add $1,1
-lpe
-sub $1,6
-mov $0,$1
+lex $0,2
+add $0,1

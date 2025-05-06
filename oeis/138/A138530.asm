@@ -4,17 +4,18 @@
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,1
-add $1,2
+mov $1,$0
+mov $2,$0
+seq $2,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+mov $3,$2
+equ $3,1
+mov $0,0
+seq $1,2024 ; k appears k times; a(n) = floor(sqrt(2n) + 1/2).
 lpb $1
-  sub $1,1
-  dir $1,$0
-  add $2,1
+  mov $4,$1
+  mod $4,$2
+  add $4,$3
+  add $0,$4
+  sub $1,$4
+  div $1,$2
 lpe
-mov $0,$2
-sub $0,1

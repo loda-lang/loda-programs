@@ -1,17 +1,16 @@
 ; A082115: Fibonacci sequence (mod 3).
-; Submitted by modesti
+; Submitted by loader3229
 ; 0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1
+; Formula: a(n) = (n%4-(floor(n/2)%2))*(floor(n/4)%2+1)-3*truncate(((n%4-(floor(n/2)%2))*(floor(n/4)%2+1))/3)
 
-mov $1,1
-add $1,$0
-mov $2,$1
-add $2,$1
-gcd $2,4
-div $2,2
-dif $1,$2
-add $1,2
+mov $1,$0
 div $1,2
-mul $2,$1
-gcd $2,4
-div $2,2
-mov $0,$2
+mod $1,2
+mov $2,$0
+div $2,4
+mod $2,2
+add $2,1
+mod $0,4
+sub $0,$1
+mul $0,$2
+mod $0,3

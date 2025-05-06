@@ -1,13 +1,17 @@
 ; A099375: Sequence matrix for odd numbers.
-; Submitted by Christian Krause
+; Submitted by rolivos
 ; 1,3,1,5,3,1,7,5,3,1,9,7,5,3,1,11,9,7,5,3,1,13,11,9,7,5,3,1,15,13,11,9,7,5,3,1,17,15,13,11,9,7,5,3,1,19,17,15,13,11,9,7,5,3,1,21,19,17,15,13,11,9,7,5,3,1,23,21,19,17,15,13,11,9,7,5,3,1,25,23
+; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n+8)+3)/2),2)-2*n-1
 
-mov $1,2
-mul $0,2
-lpb $0
-  sub $0,$1
-  add $1,2
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+add $1,3
+div $1,2
+bin $1,2
+add $1,1
 sub $1,$0
 mov $0,$1
+mul $0,2
 sub $0,1

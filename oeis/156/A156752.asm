@@ -1,9 +1,8 @@
 ; A156752: a(n) = floor(Catalan(n+1)/Catalan(n)).
-; Submitted by Science United
+; Submitted by Ralfy
 ; 1,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-; Formula: a(n) = min(truncate((n-2)/2),1)+2
+; Formula: a(n) = min(sqrtint(n),2)+1
 
-sub $0,2
-div $0,2
-min $0,1
-add $0,2
+nrt $0,2
+min $0,2
+add $0,1

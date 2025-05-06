@@ -1,14 +1,10 @@
 ; A079643: a(n) = floor(n/floor(sqrt(n))).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,3,2,2,3,3,4,3,3,3,4,4,4,5,4,4,4,4,5,5,5,5,6,5,5,5,5,5,6,6,6,6,6,7,6,6,6,6,6,6,7,7,7,7,7,7,8,7,7,7,7,7,7,7,8,8,8,8,8,8,8,9,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,10
+; Formula: a(n) = truncate(n/sqrtint(n))
 
 #offset 1
 
-mov $2,1
 mov $1,$0
-lpb $1
-  add $2,2
-  trn $1,$2
-lpe
-div $2,2
-div $0,$2
+nrt $1,2
+div $0,$1

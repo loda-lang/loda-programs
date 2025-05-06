@@ -4,19 +4,13 @@
 
 #offset 1
 
-mov $1,-1
 mov $2,$0
-lpb $2
-  sub $2,1
-  mov $4,$1
-  add $4,3
-  seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  mov $3,$1
-  add $3,2
-  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-  gcd $4,$3
-  add $1,1
-  div $3,$4
-  equ $3,1
-lpe
-mov $0,$3
+add $2,1
+seq $2,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $1,$0
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+gcd $2,$1
+div $1,$2
+equ $1,1
+sub $0,1
+mov $0,$1

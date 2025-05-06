@@ -1,19 +1,11 @@
 ; A105209: Nearest integer to the cube root of n.
-; Submitted by pascal768
+; Submitted by loader3229
 ; 1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+; Formula: a(n) = truncate((sqrtnint(8*n,3)+1)/2)
 
 #offset 1
 
-mov $1,3
-mov $2,6
+mul $0,8
+nrt $0,3
 add $0,1
-lpb $0
-  sub $0,1
-  trn $0,$1
-  add $2,5
-  add $1,$2
-  sub $1,3
-  add $2,2
-lpe
-mov $0,$2
-div $0,7
+div $0,2

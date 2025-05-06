@@ -1,18 +1,20 @@
 ; A084595: For n > 0: a(n) = Sum_{r=0..2^(n-1)-1} binomial(2^n, 2r+1)*3^r.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,16,896,2781184,26794772135936,2487085750646543836443049984,21427531469765285263614058238314319540132878612321796096
+; Formula: a(n) = 2*b(n-1)*a(n-1), a(1) = 2, a(0) = 1, b(n) = b(n-1)^2+3*a(n-1)^2, b(1) = 4, b(0) = 1
 
-mov $1,$0
-mov $4,3
-mov $0,2
-pow $0,$1
-add $0,1
+mov $2,1
+mov $4,1
 lpb $0
   sub $0,1
-  add $4,$3
-  mul $4,2
-  mov $3,$2
-  mov $2,$4
+  mov $1,$2
+  mul $2,$4
+  mul $2,2
+  pow $1,2
+  mul $1,3
+  mov $3,$4
+  pow $3,2
+  add $1,$3
+  mov $4,$1
 lpe
-mov $0,$3
-div $0,6
+mov $0,$2

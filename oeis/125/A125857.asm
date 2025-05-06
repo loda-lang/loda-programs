@@ -1,12 +1,11 @@
 ; A125857: Numbers whose base-9 representation is 22222222.......2.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,2,20,182,1640,14762,132860,1195742,10761680,96855122,871696100,7845264902,70607384120,635466457082,5719198113740,51472783023662,463255047212960,4169295424916642,37523658824249780,337712929418248022
-; Formula: a(n) = floor((9^(n-1))/4)
+; Formula: a(n) = floor((9^n)/36)
 
 #offset 1
 
-sub $0,1
 mov $1,9
 pow $1,$0
 mov $0,$1
-div $0,4
+div $0,36

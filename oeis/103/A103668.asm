@@ -11,8 +11,7 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
-  add $0,2
+  add $0,1
   seq $0,40 ; The prime numbers.
   sub $0,1
   seq $0,72000 ; Number of semiprimes (A001358) <= n.

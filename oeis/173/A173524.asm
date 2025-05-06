@@ -1,15 +1,11 @@
 ; A173524: a(n) = A053737(4^k+n-1) in the limit k->infinity, where k plays the role of a row index in A053737.
-; Submitted by Cruncher Pete
+; Submitted by fzs600
 ; 1,2,3,4,2,3,4,5,3,4,5,6,4,5,6,7,2,3,4,5,3,4,5,6,4,5,6,7,5,6,7,8,3,4,5,6,4,5,6,7,5,6,7,8,6,7,8,9,4,5,6,7,5,6,7,8,6,7,8,9,7,8,9,10,2,3,4,5,3,4,5,6,4,5,6,7,5,6,7,8
 
 #offset 1
 
 sub $0,1
-lpb $0
-  mov $2,$0
-  mod $2,4
-  div $0,4
-  add $1,$2
-lpe
+mov $1,$0
+dgs $1,4
 mov $0,$1
 add $0,1

@@ -6,7 +6,7 @@
 
 sub $0,1
 equ $1,$0
-trn $0,1
+sub $0,1
 mul $0,2
 lpb $0
   sub $0,1

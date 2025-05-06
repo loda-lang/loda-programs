@@ -1,21 +1,25 @@
 ; A089094: Convoluted convolved Fibonacci numbers G_j^(7).
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,1,5,20,70,222,654,1817,4815,12265,30217,72344,168950,386050,865264,1906260,4135320,8846700,18687800,39023300,80630770,164990461,334599050,672958200,1343096325,2661417579,5238577803,10246976040,19926439195
+; Formula: a(n) = truncate(b(n-1)/21), b(n) = truncate((7*d(n-1))/n), b(3) = 420, b(2) = 105, b(1) = 21, b(0) = 0, c(n) = -c(n-1)-d(n-1)+truncate((7*d(n-1))/n), c(3) = 180, c(2) = 60, c(1) = 15, c(0) = 3, d(n) = 2*d(n-1)+c(n-1)+truncate((7*d(n-1))/n), d(3) = 840, d(2) = 180, d(1) = 30, d(0) = 3
 
 #offset 1
 
+mov $2,3
+mov $3,3
+sub $0,1
 lpb $0
   sub $0,1
-  mov $2,$1
-  bin $2,$0
-  add $4,2
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  div $3,$4
-  mov $4,$1
-  add $4,6
-  add $1,1
-  add $5,$3
+  add $2,$3
+  add $3,$2
+  add $4,1
+  mov $1,$3
+  sub $1,$2
+  mul $1,7
+  div $1,$4
+  mul $2,-1
+  add $2,$1
+  add $3,$1
 lpe
-mov $0,$5
+mov $0,$1
+div $0,21

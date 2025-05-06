@@ -27,4 +27,3 @@ add $5,1
 seq $5,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
 gcd $5,$1
 mov $0,$5
-mov $1,$5

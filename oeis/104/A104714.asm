@@ -1,16 +1,35 @@
 ; A104714: Greatest common divisor of a Fibonacci number and its index.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,1,1,1,1,5,2,1,1,1,5,1,12,1,1,5,1,1,2,1,5,1,1,1,24,25,1,1,1,1,10,1,1,1,1,5,36,1,1,1,5,1,2,1,1,5,1,1,48,1,25,1,1,1,2,5,7,1,1,1,60,1,1,1,1,5,2,1,1,1,5,1,72,1,1,25,1,1,2,1
-; Formula: a(n) = gcd(truncate((min(n,n%2)*b(n)+c(n))/2),n), b(n) = 3*b(n-2)-b(n-4), b(6) = 10, b(5) = 4, b(4) = 4, b(3) = 2, b(2) = 2, b(1) = 2, b(0) = 2, c(n) = 2*c(n-2)+b(n-2), c(3) = 2, c(2) = 2, c(1) = 0, c(0) = 0
 
 mov $1,$0
-mov $2,2
+mov $4,1
 lpb $0
-  sub $0,2
-  add $2,$3
-  add $3,$2
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  sub $7,$8
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mul $9,$6
+  div $0,2
+  mov $2,$7
+  mul $2,$6
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mov $4,$8
 lpe
-mul $0,$2
-add $0,$3
-div $0,2
-gcd $0,$1
+gcd $1,$3
+mov $0,$1

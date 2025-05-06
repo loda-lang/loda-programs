@@ -9,10 +9,10 @@ sub $0,1
 mov $1,$0
 add $1,$2
 lpb $2
+  gcd $2,7
   sub $2,1
-  mod $2,4
   mov $0,$1
-  sub $0,1
-  mul $0,$1
+  bin $0,2
+  mul $0,2
   seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.
 lpe
