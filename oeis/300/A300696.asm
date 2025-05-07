@@ -1,0 +1,35 @@
+; A300696: a(n) is the number of n-place formulas in first-order logic when variables are allowed to coincide.
+; Submitted by Mr P Hucker
+; 1,2,8,46,350,3324,37874,503458,7648564,130722474,2482437926,51856030736,1181704007894,29172943488602,775597634145192,22093062633006326,671280598744505190,21671112459225274300,740767465663838556074,26727829360555847269034,1015130495615180334568612,40482689585005333291992962,1691298361968838672597357902,73871386989444812539056470112,3366787329032268995040165199390,159839415120790266024600846847266,7891969873499515502645394247761000,404647975499282520738597853695111710
+
+mov $20,1
+add $20,1
+mov $3,$0
+lpb $3
+  add $2,1
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,18
+    mov $6,$4
+    add $6,19
+    mul $$6,$4
+    add $$6,$$5
+    sub $4,1
+  lpe
+  sub $3,1
+lpe
+mov $2,0
+mov $3,$0
+lpb $3
+  add $2,1
+  mov $4,$2
+  seq $4,670 ; Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
+  add $2,19
+  mul $$2,$4
+  add $1,$$2
+  sub $2,19
+  sub $3,1
+lpe
+equ $0,0
+add $0,$1
