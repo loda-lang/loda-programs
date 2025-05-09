@@ -1,15 +1,18 @@
 ; A346305: Positions of words in A076478 that start with 1 and end with 1.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 2,6,12,14,24,26,28,30,48,50,52,54,56,58,60,62,96,98,100,102,104,106,108,110,112,114,116,118,120,122,124,126,192,194,196,198,200,202,204,206,208,210,212,214,216,218,220,222,224,226,228,230,232,234,236,238
+; Formula: a(n) = 2*n+truncate(2^(logint(2*n-1,2)+1))-2
 
 #offset 1
 
-sub $0,1
-mov $2,1
-mov $1,$0
-lpb $1
-  div $1,2
-  mul $2,2
-lpe
-add $0,$2
 mul $0,2
+sub $0,1
+mov $1,$0
+log $1,2
+add $1,1
+mov $2,$0
+mov $0,2
+pow $0,$1
+add $2,$0
+mov $0,$2
+sub $0,1

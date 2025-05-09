@@ -1,15 +1,19 @@
 ; A101342: Fibonacci-Mersenne numbers.
-; Submitted by Merlin2331
+; Submitted by Aurum
 ; 0,1,2,13,610,1346269,6557470319842,155576970220531065681649693,87571595343018854458033386304178158174356588264390370,27745922289305716855338470916082815029348872029647830861914852073402148308000613611082094085891168867554589
-; Formula: a(n) = truncate(A022360(b(n+1)-1)/26), b(n) = A047236(b(n-1)+1), b(0) = 0
+; Formula: a(n) = b(n-1)^2+c(n-1)^2, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = 2*c(n-1)*b(n-1)-b(n-1)^2, b(2) = -3, b(1) = -1, b(0) = 1, c(n) = b(n-1)^2+c(n-1)^2, c(2) = 2, c(1) = 1, c(0) = 0
 
-add $0,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $1,1
-  seq $1,47236 ; Numbers that are congruent to {1, 2, 4} mod 6.
+  mov $1,$2
+  pow $1,2
+  mul $2,$4
+  mul $2,2
+  sub $2,$1
+  mov $3,$4
+  pow $3,2
+  add $1,$3
+  mov $4,$1
 lpe
-sub $1,1
 mov $0,$1
-seq $0,22360 ; Fibonacci sequence beginning 0, 26.
-div $0,26

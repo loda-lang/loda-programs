@@ -1,13 +1,13 @@
 ; A254379: Characteristic function of the even odious numbers (A128309).
-; Submitted by Science United
+; Submitted by JagDoc
 ; 0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0
 
-mov $2,$0
-dif $2,2
-sub $0,$2
-lpb $0
-  add $1,$0
-  div $0,2
-lpe
+add $0,1
+mov $1,$0
+dgs $1,2
+add $1,1
+mul $0,4
+mul $1,$0
 mov $0,$1
+div $0,4
 mod $0,2

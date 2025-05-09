@@ -1,11 +1,11 @@
 ; A134021: Length of n in balanced ternary representation.
+; Submitted by Aurum
 ; 1,1,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+; Formula: a(n) = logint(max(n,1)+n,3)+1
 
-mul $0,2
-div $0,3
-lpb $0
-  div $0,3
-  add $1,1
-lpe
-add $1,1
+mov $1,$0
+max $1,1
+add $1,$0
+log $1,3
 mov $0,$1
+add $0,1

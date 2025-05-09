@@ -6,6 +6,4 @@
 
 sub $0,1
 dgs $0,2
-div $0,2
-mul $0,2
-add $0,1
+bor $0,1

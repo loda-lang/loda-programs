@@ -12,7 +12,7 @@ lpb $3
   mov $0,$4
   add $0,$3
   add $0,1
-  seq $0,53810 ; Prime powers of prime numbers.
+  seq $0,53810 ; Numbers of the form p^e where both p and e are prime numbers.
   mov $2,$3
   mul $2,$0
   add $1,$2

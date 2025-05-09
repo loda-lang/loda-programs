@@ -1,9 +1,9 @@
 ; A328979: Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
-; Submitted by fzs600
+; Submitted by BrandyNOW
 ; 0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0
 
 #offset 1
 
 sub $0,1
 lex $0,2
-mod $0,2
+ban $0,1

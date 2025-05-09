@@ -1,5 +1,5 @@
 ; A092404: a(n) = phi(n) + phi(n+1).
-; Submitted by Science United
+; Submitted by Karlsson
 ; 2,3,4,6,6,8,10,10,10,14,14,16,18,14,16,24,22,24,26,20,22,32,30,28,32,30,30,40,36,38,46,36,36,40,36,48,54,42,40,56,52,54,62,44,46,68,62,58,62,52,56,76,70,58,64,60,64,86,74,76,90,66,68,80,68,86,98,76,68,94,94,96,108,76,76,96,84,102,110,86
 
 #offset 1
@@ -10,8 +10,9 @@ add $3,$0
 add $3,$0
 mov $2,$0
 lpb $2
-  sub $2,1
+  mul $0,2
   mov $1,$3
   seq $1,110663 ; Triangle read by rows: T(n,k) = Sum_{j=k..n} phi(j) (1<=k<=n), where phi is Euler's totient function.
+  div $2,$0
 lpe
 mov $0,$1

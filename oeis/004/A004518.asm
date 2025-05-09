@@ -1,14 +1,7 @@
 ; A004518: Generalized nim sum n + n in base 8.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,2,4,6,0,2,4,6,16,18,20,22,16,18,20,22,32,34,36,38,32,34,36,38,48,50,52,54,48,50,52,54,0,2,4,6,0,2,4,6,16,18,20,22,16,18,20,22,32,34,36,38,32,34,36,38,48,50,52,54
+; Formula: a(n) = 2*bitand(n,91)
 
-mov $3,2
-lpb $0
-  mov $2,$0
-  mod $2,4
-  mul $2,$3
-  div $0,8
-  add $1,$2
-  mul $3,8
-lpe
-mov $0,$1
+ban $0,91
+mul $0,2

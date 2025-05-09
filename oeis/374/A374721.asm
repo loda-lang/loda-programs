@@ -1,18 +1,16 @@
 ; A374721: Number of nonisomorphic spanning trees of the triangular snake nC_3.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,3,7,21,57,171,495,1485,4401,13203,39447,118341,354537,1063611,3189375,9568125,28700001,86100003,258286887,774860661,2324542617,6973627851,20920765455,62762296365,188286534801,564859604403,1694577750327,5083733250981,15251196564297,45753589692891
-; Formula: a(n) = floor((3^floor(n/2)+2*3^(n-1))/3)
+; Formula: a(n) = 2*truncate(3^(n-2))+truncate(3^truncate((n-2)/2))
 
 #offset 1
 
-sub $0,1
+sub $0,2
 mov $1,3
 pow $1,$0
-add $0,1
+mul $1,2
 div $0,2
 mov $2,3
 pow $2,$0
-mul $1,2
 add $1,$2
 mov $0,$1
-div $0,3

@@ -20,9 +20,9 @@ add $5,$2
 div $5,2
 mov $6,1
 mov $8,$1
-mul $8,7
+mul $8,6
 lpb $8
-  sub $8,1
+  sub $8,2
   max $3,$7
   add $7,$6
   mul $6,2

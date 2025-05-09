@@ -11,7 +11,6 @@ add $2,7
 pow $2,2
 lpb $2
   mov $5,$1
-  add $5,1
   seq $5,232744 ; Numbers k for which the largest m such that m! divides k is odd.
   dif $5,2
   mov $3,$5

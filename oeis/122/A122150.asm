@@ -11,7 +11,6 @@ pow $2,3
 lpb $2
   mod $1,2
   mov $3,$6
-  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $5,$1
   mul $5,2

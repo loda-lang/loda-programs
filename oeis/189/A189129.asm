@@ -9,9 +9,7 @@ pow $1,$0
 lpb $0
   mul $0,8
   add $0,2
-  lpb $0
-    dif $0,5
-  lpe
+  dir $0,5
   div $0,10
   add $1,1
 lpe

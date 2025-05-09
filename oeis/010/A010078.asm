@@ -1,17 +1,18 @@
 ; A010078: Shortest representation of -n in 2's-complement format.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,5,4,11,10,9,8,23,22,21,20,19,18,17,16,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,191,190,189,188,187,186,185,184,183,182,181,180,179,178,177,176
+; Formula: a(n) = -n+truncate(2^(logint(max(n-1,1)+n-1,2)+1))
 
 #offset 1
 
 sub $0,1
-mov $1,2
-mov $2,$0
-add $2,2
-lpb $0
-  div $0,2
-  mul $1,2
-lpe
-sub $1,$2
+mov $1,$0
+max $1,1
+add $1,$0
+log $1,2
 add $1,1
-mov $0,$1
+mov $2,$0
+mov $0,2
+pow $0,$1
+sub $0,$2
+sub $0,1

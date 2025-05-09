@@ -1,7 +1,7 @@
 ; A224753: a(2)=2; thereafter a(n) = smallest number m such that a(n-1)+m = (a(n-1) followed by the leading digit of m).
-; Submitted by gemini8
+; Submitted by loader3229
 ; 2,19,172,1549,13942,125479,1129312,10163809,91474290,823268618,7409417569,66684758127,600162823149,5401465408346,48613188675118,437518698076066,3937668282684597,35439014544161376,318951130897452387,2870560178077071485,25835041602693643367,232515374424242790305,2092638369818185112747
-; Formula: a(n) = b(n-1), b(n) = 9*b(n-1)+A000030(9*b(n-1)), b(0) = 2
+; Formula: a(n) = b(n-1), b(n) = 9*b(n-1)+truncate((9*b(n-1))/truncate(10^logint(9*b(n-1),10))), b(0) = 2
 
 #offset 1
 
@@ -10,8 +10,12 @@ sub $0,1
 lpb $0
   sub $0,1
   mul $1,9
+  mov $4,$1
+  log $4,10
+  mov $3,10
+  pow $3,$4
   mov $2,$1
-  seq $2,30 ; Initial digit of n.
+  div $2,$3
   add $1,$2
 lpe
 mov $0,$1

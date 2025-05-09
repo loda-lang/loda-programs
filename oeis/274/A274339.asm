@@ -1,12 +1,13 @@
 ; A274339: The period 3 sequence of the iterated sum of deficient divisors function (A187793) starting at 15.
+; Submitted by Aurum
 ; 15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24,18,15,24
-; Formula: a(n) = 24*n-15*truncate((8*n-24*truncate((8*n-8)/24)-8)/5)-72*truncate((8*n-8)/24)-9
+; Formula: a(n) = 3*max(4*n-6*truncate((4*n-4)/6)-4,1)+12
 
 #offset 1
 
 sub $0,1
-mul $0,8
-mod $0,24
-mod $0,5
+mul $0,4
+mod $0,6
+max $0,1
 mul $0,3
-add $0,15
+add $0,12

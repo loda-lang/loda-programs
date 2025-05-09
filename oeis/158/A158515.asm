@@ -1,9 +1,7 @@
 ; A158515: Number of colors needed to paint a wheel graph on n nodes.
+; Submitted by BrandyNOW
 ; 0,1,2,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3,4,3
-; Formula: a(n) = max(n-3,0)%2-max(n-3,0)+n
 
-mov $1,$0
-trn $1,3
-sub $0,$1
-mod $1,2
-add $0,$1
+sub $0,2
+dgr $0,3
+add $0,2

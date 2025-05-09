@@ -1,13 +1,12 @@
 ; A005610: Number of Boolean functions realized by cascades of n gates.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 2,14,86,518,3110,18662,111974,671846,4031078,24186470,145118822,870712934,5224277606,31345665638,188073993830,1128443962982,6770663777894,40623982667366,243743896004198,1462463376025190
-; Formula: a(n) = 12*floor((6^n)/30)+2
+; Formula: a(n) = 2*floor((6^n)/5)
 
 #offset 1
 
 mov $1,6
 pow $1,$0
+div $1,5
 mov $0,$1
-div $0,30
-mul $0,12
-add $0,2
+mul $0,2

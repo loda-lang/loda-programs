@@ -1,11 +1,9 @@
 ; A080846: Fixed point of the morphism 0->010, 1->011, starting from a(1) = 0.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,1,0,1,0,0,1,1,0,1,1,0,1,0,0,1,1,0,1,0,0,1,0,0,1,1,0,1,1,0,1,0,0,1,1,0,1
 
 #offset 1
 
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 mod $0,3
 sub $0,1

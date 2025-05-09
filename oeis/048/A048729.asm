@@ -1,12 +1,9 @@
 ; A048729: Differences between A008587 (multiples of 5) and A048725
-; Submitted by Skillz
+; Submitted by loader3229
 ; 0,0,0,0,0,8,0,8,0,0,16,16,0,8,16,24,0,0,0,0,32,40,32,40,0,0,16,16,32,40,48,56,0,0,0,0,0,8,0,8,64,64,80,80,64,72,80,88,0,0,0,0,32,40,32,40,64,64,80,80,96,104,112,120,0
-; Formula: a(n) = 8*truncate(bitand(floor(n/2),2*max(0,n))/2)
+; Formula: a(n) = bitand(2*n,8*n)
 
-max $1,$0
-mov $2,$1
-add $2,$1
-div $0,2
-ban $0,$2
-div $0,2
-mul $0,8
+mov $1,$0
+mul $1,8
+mul $0,2
+ban $0,$1

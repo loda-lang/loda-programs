@@ -1,16 +1,14 @@
 ; A089809: Complement of A078588.
-; Submitted by Josemi
+; Submitted by Athlici
 ; 0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,0,1
-; Formula: a(n) = n^2-2*truncate((n^2+sqrtint(5*n^2-1)-1)/2)+sqrtint(5*n^2-1)-1
+; Formula: a(n) = -2*truncate((sqrtint(5*n^2)+n+1)/2)+sqrtint(5*n^2)+n+1
 
 #offset 1
 
-pow $0,2
 mov $1,$0
-mul $1,4
-sub $0,1
-add $1,$0
+mul $1,5
+mul $1,$0
 nrt $1,2
-add $1,$0
-mov $0,$1
+add $1,1
+add $0,$1
 mod $0,2

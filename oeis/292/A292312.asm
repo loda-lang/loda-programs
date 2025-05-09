@@ -11,12 +11,11 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,294645 ; a(n) = Sum_{d|n} d^(n+1).
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     div $7,-1
     add $5,1

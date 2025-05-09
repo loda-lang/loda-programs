@@ -15,8 +15,7 @@ mul $1,6
 add $1,$0
 add $1,$2
 lpb $2
-  sub $2,1
-  mod $2,4
+  mov $2,0
   mov $0,$1
   sub $0,1
   seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.

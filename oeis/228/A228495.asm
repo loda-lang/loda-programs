@@ -1,11 +1,11 @@
 ; A228495: Characteristic function of the odd odious numbers (A092246).
-; Submitted by Science United
+; Submitted by JagDoc
 ; 0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1
 
-dif $0,-2
-lpb $0
-  add $1,$0
-  div $0,2
-lpe
+mov $1,$0
+dgs $1,2
+mul $0,4
+mul $1,$0
 mov $0,$1
+div $0,4
 mod $0,2

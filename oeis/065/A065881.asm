@@ -1,10 +1,8 @@
 ; A065881: Ultimate modulo 10: right-hand nonzero digit of n.
-; Submitted by kpmonaghan
+; Submitted by loader3229
 ; 1,2,3,4,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,2,1,2,3,4,5,6,7,8,9,3,1,2,3,4,5,6,7,8,9,4,1,2,3,4,5,6,7,8,9,5,1,2,3,4,5,6,7,8,9,6,1,2,3,4,5,6,7,8,9,7,1,2,3,4,5,6,7,8,9,8
 
 #offset 1
 
-lpb $0
-  dif $0,10
-lpe
+dir $0,10
 mod $0,10

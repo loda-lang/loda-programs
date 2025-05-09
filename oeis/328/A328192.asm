@@ -5,7 +5,6 @@
 #offset 1
 
 mov $1,$0
-add $1,1
 mul $1,2
 mov $2,10
 pow $2,$1

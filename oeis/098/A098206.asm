@@ -1,21 +1,21 @@
 ; A098206: A first order iteration: n-th term is obtained from (n-1)-th by adding n-th prime and then multiplying by the n-th prime; initial value is 1.
-; Submitted by Christian Krause
+; Submitted by BlisteringSheep
 ; 1,12,85,644,7205,93834,1595467,30314234,697227911,20219610260,626807919021,23191893005146,950867613212667,40887307368146530,1921703446302889119,101850282654053126116,6009166676589134444325,366559167271937201107546,24559464207219792474210071,1743721958712605265668920082,127291702986020184393831171315,10056044535895594567112662540126,834651696479334349070350990837347,74284000986660757067261238184531804,7205548095706093435524340103899594397,727760357666315436987958350493859044298
+; Formula: a(n) = -min(n-1,0)+c(n-1), b(n) = A159477(b(n-1)+1), b(1) = 5, b(0) = 3, c(n) = b(n-1)*(b(n-1)+c(n-1)), c(1) = 12, c(0) = 1
 
 #offset 1
 
+mov $1,3
+mov $2,1
 sub $0,1
-mov $1,1
-mov $3,$0
-mov $2,$0
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,$2
-  add $0,1
-  seq $0,40 ; The prime numbers.
-  mul $1,$0
-  pow $0,2
-  add $1,$0
+lpb $0
+  sub $0,1
+  add $2,$1
+  mul $2,$1
+  add $1,1
+  seq $1,159477 ; a(n) = smallest prime >= n, if 1 is counted as a prime.
 lpe
-mov $0,$1
+add $0,1
+sub $2,$0
+mov $0,$2
+add $0,1

@@ -8,5 +8,4 @@
 mov $1,$0
 seq $1,324922 ; a(n) = unique m such that m/A003963(m) = n, where A003963 is product of prime indices.
 seq $1,109129 ; Width (i.e., number of non-root vertices having degree 1) of the rooted tree with Matula-Goebel number n.
-sub $0,1
 mov $0,$1

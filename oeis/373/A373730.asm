@@ -7,7 +7,5 @@ mul $0,8
 add $0,2
 mov $1,$0
 add $1,$2
-lpb $1
-  dif $1,2
-lpe
+dir $1,2
 mov $0,$1

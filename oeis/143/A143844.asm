@@ -1,9 +1,14 @@
 ; A143844: Triangle T(n,k) = k^2 read by rows.
-; Submitted by McShane of TSBT
+; Submitted by Athlici
 ; 0,0,1,0,1,4,0,1,4,9,0,1,4,9,16,0,1,4,9,16,25,0,1,4,9,16,25,36,0,1,4,9,16,25,36,49,0,1,4,9,16,25,36,49,64,0,1,4,9,16,25,36,49,64,81,0,1,4,9,16,25,36,49,64,81,100,0,1,4,9,16,25,36,49,64,81,100,121
+; Formula: a(n) = (-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)^2
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+mov $1,$0
+mul $1,8
+add $1,1
+nrt $1,2
+add $1,1
+div $1,2
+bin $1,2
+sub $0,$1
 pow $0,2

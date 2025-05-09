@@ -8,7 +8,8 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
-  seq $4,4159 ; Sum of digits of n^2.
+  mul $4,$1
+  dgs $4,10
   mov $3,$1
   pow $3,3
   mul $3,$1

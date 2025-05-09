@@ -1,15 +1,13 @@
 ; A079343: Period 6: repeat [0, 1, 1, 2, 3, 1]; also F(n) mod 4, where F(n) = A000045(n).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1,1,2,3,1,0,1
-; Formula: a(n) = -4*truncate(truncate((min(n,n%2)*c(n)+b(n))/3)/4)+truncate((min(n,n%2)*c(n)+b(n))/3), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
+; Formula: a(n) = n%6-floor((n%6)/2)+binomial(-(n%6)+3,-3)
 
-mov $2,3
-lpb $0
-  sub $0,2
-  add $2,$1
-  add $1,$2
-lpe
-mul $0,$2
+mod $0,6
+mov $1,$0
+mul $0,-1
+add $0,3
+bin $0,-3
 add $0,$1
-div $0,3
-mod $0,4
+div $1,2
+sub $0,$1

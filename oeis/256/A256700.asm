@@ -8,7 +8,14 @@ mov $1,$0
 add $0,1
 lpb $1
   add $1,1
-  seq $1,25669 ; Exponent of 7 (value of i) in n-th number of form 7^i*8^j.
-  add $0,$1
+  mov $2,$1
+  mul $2,8
+  nrt $2,2
+  add $2,3
+  div $2,2
+  bin $2,2
+  sub $2,$1
+  add $0,$2
+  mov $1,$2
   sub $1,1
 lpe

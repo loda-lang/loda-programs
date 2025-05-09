@@ -1,8 +1,7 @@
 ; A089129: Greatest common divisor of n^2 - 7 and n^2 + 7.
-; Submitted by Science United
+; Submitted by Athlici
 ; 7,2,1,2,1,2,1,14,1,2,1,2,1,2,7,2,1,2,1,2,1,14,1,2,1,2,1,2,7,2,1,2,1,2,1,14,1,2,1,2,1,2,7,2,1,2,1,2,1,14,1,2,1,2,1,2,7,2,1,2,1,2,1,14,1,2,1,2,1,2,7,2,1,2,1,2,1,14,1,2
-; Formula: a(n) = gcd(n^5+7,686)
+; Formula: a(n) = gcd(n+7,14)
 
-pow $0,5
 add $0,7
-gcd $0,686
+gcd $0,14

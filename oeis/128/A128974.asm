@@ -1,21 +1,61 @@
 ; A128974: Numbers k such that 12k does not divide Fibonacci(12k).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 7,11,13,17,19,21,22,23,26,29,31,33,34,35,37,38,39,41,43,44,47,49,52,53,58,59,61,62,63,65,66,67,68,69,71,73,74,76,77,78,79,82,83,85,86,87,88,89,91,93,94,95,97,99,101,103,104,105,106,107,109,111,113,115,116,117,118,119,121,122,123,124,127,129,130,131,132,133,134,136
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-pow $2,2
-add $2,180
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,72378 ; Numbers n such that 12*n divides F(12*n), where F(m) is the m-th Fibonacci number.
-  sub $3,1
-  add $0,1
-  add $1,1
-  add $2,$3
-  sub $2,$0
-lpe
+mov $3,12
+mov $5,$0
+equ $5,0
+mul $5,5
 add $0,1
+mov $1,$0
+pow $1,10
+lpb $1
+  mov $9,0
+  mov $10,1
+  mov $13,0
+  mov $4,$3
+  lpb $4
+    mul $13,$10
+    mul $13,2
+    mov $6,$9
+    pow $6,2
+    mov $7,$10
+    pow $7,2
+    sub $13,$6
+    add $6,$7
+    mov $7,$6
+    sub $7,$13
+    mov $11,$4
+    max $11,1
+    log $11,2
+    mov $12,2
+    pow $12,$11
+    ban $12,$3
+    neq $12,0
+    div $4,2
+    mul $7,$12
+    mov $8,$13
+    mul $8,$12
+    add $13,$7
+    add $6,$8
+    mov $9,$13
+    mod $9,$3
+    mov $10,$6
+    mod $10,$3
+  lpe
+  mov $4,$9
+  neq $4,0
+  add $2,$4
+  mov $4,$2
+  geq $4,$0
+  bxo $4,1
+  mul $1,$4
+  sub $1,1
+  add $3,12
+lpe
+mov $0,$3
+div $0,12
+add $0,$5
