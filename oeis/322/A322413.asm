@@ -5,15 +5,13 @@
 mov $1,$0
 mov $2,1
 lpb $0
-  sub $0,1
   mov $3,$0
-  max $3,0
-  add $3,1
   seq $3,3726 ; Numbers with no 3 adjacent 1's in binary expansion.
   seq $3,100892 ; a(n) = (2*n-1) XOR (2*n+1), bitwise.
   div $3,4
   mov $4,0
   sub $4,$3
+  sub $0,1
   mov $3,$4
   add $3,7
   add $2,$3

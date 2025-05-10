@@ -14,7 +14,6 @@ sub $0,1
 gcd $1,81
 mul $1,$3
 mul $1,$0
-mov $2,0
 sub $2,$1
 mov $0,$2
 div $0,2
