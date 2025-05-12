@@ -1,5 +1,5 @@
 ; A177869: Integers divisible by their number of digits in binary.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,2,6,8,12,20,25,30,36,42,48,54,60,70,77,84,91,98,105,112,119,126,128,136,144,152,160,168,176,184,192,200,208,216,224,232,240,248,261,270,279,288,297,306,315,324,333,342,351,360,369,378,387,396,405,414,423,432,441,450,459,468,477,486,495,504,520,530,540,550,560,570,580,590,600,610,620,630,640,650
 
 #offset 1
@@ -8,10 +8,12 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  add $3,2
-  seq $3,29837 ; Binary order of n: log_2(n) rounded up to next integer.
+  mul $3,2
+  add $3,3
   mov $4,$3
+  log $4,2
   add $5,1
+  mov $3,$4
   gcd $3,$5
   div $3,$4
   sub $0,$3

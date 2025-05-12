@@ -5,16 +5,15 @@
 #offset 1
 
 gcd $1,$0
-mov $2,$0
 mov $4,$0
 mul $4,2
-mov $5,$0
-pow $5,5
-lpb $5
+mov $2,$0
+pow $2,5
+lpb $2
   mov $3,$4
   seq $3,196564 ; Number of odd digits in decimal representation of n.
   add $4,$0
-  sub $5,$3
+  sub $2,$3
 lpe
 mov $0,$4
 div $0,$1

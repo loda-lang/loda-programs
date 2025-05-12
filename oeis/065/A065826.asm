@@ -1,15 +1,22 @@
 ; A065826: Triangle with T(n,k) = k*E(n,k) where E(n,k) are Eulerian numbers A008292.
 ; Submitted by UBT - Mikeejones
 ; 1,1,2,1,8,3,1,22,33,4,1,52,198,104,5,1,114,906,1208,285,6,1,240,3573,9664,5955,720,7,1,494,12879,62476,78095,25758,1729,8,1,1004,43824,352936,780950,529404,102256,4016,9,1,2026,143520,1820768,6551770,7862124,3186344,382720,9117,10,1,4072,457911,8813952,48690570,94345488,68166798,17627904,1373733,20360,11,1,8166,1434813,40750740,331592370,975073716,1137586002,530547792,91689165,4782710,44913,12,1,16356
-; Formula: a(n) = truncate(((A176200(n-1)+1)*(A002262(n-1)+1))/2)
+; Formula: a(n) = truncate(((A176200(n-1)+1)*(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n))/2)
 
 #offset 1
 
 sub $0,1
+mov $2,$0
+mul $2,8
+add $2,1
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
 mov $1,$0
-seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-add $0,1
 seq $1,176200 ; A symmetrical triangle T(n, m) = 2*Eulerian(n+1, m) -1, read by rows.
 add $1,1
+add $0,1
+sub $0,$2
 mul $0,$1
 div $0,2

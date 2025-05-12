@@ -1,12 +1,12 @@
 ; A099944: Number of 3 X n binary matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1) and (11;0).
+; Submitted by loader3229
 ; 76,164,340,692,1396,2804,5620,11252,22516,45044,90100,180212,360436,720884,1441780,2883572,5767156,11534324,23068660,46137332,92274676,184549364,369098740,738197492,1476394996,2952790004,5905580020
-; Formula: a(n) = 88*2^(n-3)-12
+; Formula: a(n) = 11*2^n-12
 
 #offset 3
 
-sub $0,3
 mov $1,2
 pow $1,$0
-mul $1,88
-sub $1,12
 mov $0,$1
+mul $0,11
+sub $0,12

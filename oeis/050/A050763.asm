@@ -1,15 +1,65 @@
 ; A050763: Numbers k such that the decimal expansion of k^k contains no pair of consecutive equal digits (probably finite).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,2,3,4,5,7,9,15,18
 
 #offset 1
 
 sub $0,1
+mov $1,$0
+mov $4,1
 lpb $0
-  seq $0,7094 ; Numbers in base 8.
-  lpb $0
-    add $1,$0
-    trn $0,5
-  lpe
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mov $7,$2
+  mul $7,$2
+  mul $7,2
+  mul $2,2
+  mov $8,$2
+  mul $8,$3
+  mov $9,$2
+  mul $9,$4
+  mov $10,$3
+  mul $10,$3
+  mov $11,$3
+  mul $11,$4
+  mul $11,2
+  mov $12,$4
+  div $0,2
+  add $2,$9
+  sub $2,$8
+  sub $2,$7
+  mov $3,$11
+  sub $3,$10
+  add $3,$7
+  add $4,$10
+  sub $12,$7
+  mul $12,$6
+  mul $7,$6
+  mul $8,$6
+  mul $9,$6
+  mul $10,$6
+  mul $10,2
+  mul $11,$6
+  add $2,$7
+  add $2,$7
+  add $2,$8
+  sub $2,$9
+  sub $2,$10
+  add $2,$11
+  sub $3,$7
+  add $3,$8
+  add $3,$10
+  sub $3,$11
+  add $3,$12
+  sub $4,$8
+  add $4,$9
 lpe
-mov $0,$1
+mov $0,$4
+add $0,$2
+div $0,2
+add $0,$3

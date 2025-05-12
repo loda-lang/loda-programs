@@ -10,7 +10,14 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,108872 ; Sums of ordinal references for a triangular table read by columns, top to bottom.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  bin $6,2
+  sub $3,$6
+  add $3,1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

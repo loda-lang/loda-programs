@@ -1,18 +1,16 @@
 ; A188010: Positions of 0 in A188009; complement of A101866.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by BlisteringSheep
 ; 1,2,3,4,6,7,8,9,11,12,14,15,16,17,19,20,21,22,24,25,27,28,29,30,32,33,35,36,37,38,40,41,42,43,45,46,48,49,50,51,53,54,55,56,58,59,61,62,63,64,66,67,69,70,71,72,74,75,76,77,79,80,82,83,84,85,87,88,90,91,92,93,95,96,97,98,100,101,103,104
-; Formula: a(n) = truncate((2*floor((n-1)/2)-floor((n-1)/14)-1)/3)+n
+; Formula: a(n) = -floor((n-1)/2)+floor((55*floor((n-1)/2))/34)+n
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-div $1,14
-add $1,1
-mov $2,$0
 div $0,2
-mul $0,2
-sub $0,$1
-div $0,3
+sub $1,$0
+mul $0,55
+div $0,34
+add $1,$0
+mov $0,$1
 add $0,1
-add $0,$2

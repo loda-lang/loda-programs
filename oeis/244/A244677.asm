@@ -8,10 +8,12 @@ mov $2,$0
 sub $0,1
 mov $1,$0
 bin $1,2
-mul $1,8
-add $1,$2
+mul $1,6
+pow $0,2
+add $0,1
+add $1,$0
 lpb $2
-  sub $2,1
+  mod $2,2
   mov $0,$1
   sub $0,1
   seq $0,33307 ; Decimal expansion of Champernowne constant (or Mahler's number), formed by concatenating the positive integers.

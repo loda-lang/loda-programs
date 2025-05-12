@@ -1,23 +1,66 @@
 ; A369988: Decimal expansion of Mallows's constant or stribolic constant kappa (of order 1).
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 2,7,8,8,7,7,0,6,1
-; Formula: a(n) = -10*truncate((-10*truncate((b(n)+1)/10)+b(n)+11)/10)-10*truncate((b(n)+1)/10)+b(n)+11, b(n) = d(n-1)*(2*n-1)+4*b(n-1)+c(n-1)+1, b(3) = 107, b(2) = 27, b(1) = 6, b(0) = 1, c(n) = d(n-1)*(2*n-1)+c(n-1)+1, c(3) = -1, c(2) = 3, c(1) = 2, c(0) = 0, d(n) = d(n-1)*(2*n-1)-1, d(3) = -6, d(2) = -1, d(1) = 0, d(0) = 1
 
-mov $1,1
-mov $2,1
+mov $1,$0
 mov $4,1
 lpb $0
-  sub $0,1
-  mul $4,$2
-  add $4,1
-  add $2,2
-  add $3,$4
-  sub $4,2
-  mul $1,4
-  add $1,$3
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mov $7,$2
+  mul $7,$2
+  mul $2,2
+  mov $8,$2
+  mul $8,$3
+  mov $9,$2
+  mul $9,$4
+  mov $10,$3
+  mul $10,$3
+  add $10,5
+  mov $11,$3
+  mul $11,$4
+  mul $11,2
+  mov $12,$4
+  mul $12,$4
+  div $0,2
+  mov $2,$10
+  add $2,$9
+  sub $2,$8
+  sub $2,$7
+  sub $8,1
+  mov $3,$11
+  sub $3,$10
+  add $3,$7
+  mov $4,$12
+  add $4,$10
+  add $4,$8
+  mul $7,$6
+  mul $8,$6
+  mul $9,$6
+  mul $10,$6
+  mul $10,2
+  mul $11,$6
+  mul $12,$6
+  add $2,$7
+  add $2,$7
+  sub $2,$9
+  sub $2,$10
+  add $2,$11
+  div $11,2
+  sub $3,$7
+  add $3,$10
+  sub $3,$11
+  add $3,$12
+  sub $4,$8
+  add $4,$11
 lpe
-mov $0,$1
-add $0,1
+mov $0,$2
+add $0,2
 mod $0,10
 add $0,10
 mod $0,10

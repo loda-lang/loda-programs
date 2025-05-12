@@ -1,10 +1,24 @@
 ; A091952: a(1)=1, a(2n)=(a(n)+1) mod 2; a(2n+1)=2*a(2n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,0,0,1,2,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0,0,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,1,2,1,2,0,0,1,2,0
-; Formula: a(n) = A245187(A092754(n)-1)
 
 #offset 1
 
-seq $0,92754 ; a(1)=1, a(2n)=2a(n)+1, a(2n+1)=2a(n)+2.
+mov $2,$0
+log $2,2
+mov $3,$0
+mul $3,-1
+mov $0,2
+pow $0,$2
+sub $0,$3
+sub $0,2
+mov $1,$0
+mod $0,2
+add $0,12
+div $1,2
+add $1,1
+dir $1,4
+mod $1,2
+bin $0,$1
 sub $0,1
-seq $0,245187 ; Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
+mod $0,10

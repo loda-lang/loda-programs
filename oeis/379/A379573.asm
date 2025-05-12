@@ -1,23 +1,60 @@
 ; A379573: Numbers of connected uniquely graceful graph on n vertices.
-; Submitted by iBezanilla
+; Submitted by loader3229
 ; 1,1,2,4,1,4,2,19
 
 #offset 1
 
-mov $1,1
-mov $3,1
 sub $0,1
+mov $1,$0
 lpb $0
-  sub $0,1
-  add $3,$1
-  add $1,$2
-  add $1,1
-  mul $2,84
-  dif $2,2
-  add $2,$3
-  dif $2,6
-  mod $2,$1
-  add $1,1
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mov $7,$2
+  mul $7,$2
+  mul $2,2
+  mov $8,$2
+  mul $8,$3
+  mov $9,$2
+  mul $9,$4
+  mov $10,$3
+  mul $10,$3
+  mov $11,$3
+  mul $11,$4
+  mul $11,2
+  mov $12,$4
+  mul $12,$4
+  sub $12,1
+  div $0,2
+  sub $1,74
+  max $7,$9
+  mov $2,$10
+  sub $2,$8
+  sub $2,$7
+  mov $3,$11
+  sub $3,$10
+  add $3,$7
+  mov $4,$12
+  add $4,$10
+  add $4,$8
+  mul $8,$6
+  mul $9,$6
+  mul $10,$6
+  mul $10,2
+  mul $11,$6
+  add $2,$7
+  add $2,$7
+  add $2,$8
+  sub $2,$9
+  add $2,$11
+  sub $3,$7
+  add $3,$8
+  add $3,$10
+  add $3,$12
 lpe
 mov $0,$2
 add $0,1

@@ -1,13 +1,13 @@
 ; A108903: Numbers such that the outer 2 digits are 9 and the inner digits are 5.
+; Submitted by vonboedefeldt
 ; 959,9559,95559,955559,9555559,95555559,955555559,9555555559,95555555559,955555555559,9555555555559,95555555555559,955555555555559,9555555555555559,95555555555555559,955555555555555559
-; Formula: a(n) = 8600*floor((10^(n-1))/9)+959
+; Formula: a(n) = 8600*floor((10^n)/90)+959
 
 #offset 1
 
-sub $0,1
 mov $1,10
 pow $1,$0
-div $1,9
-mul $1,8600
-add $1,959
 mov $0,$1
+div $0,90
+mul $0,8600
+add $0,959

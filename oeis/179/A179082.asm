@@ -1,5 +1,5 @@
 ; A179082: Even numbers having an even sum of digits in their decimal representation.
-; Submitted by BlisteringSheep
+; Submitted by Carl@Home
 ; 0,2,4,6,8,20,22,24,26,28,40,42,44,46,48,60,62,64,66,68,80,82,84,86,88,110,112,114,116,118,130,132,134,136,138,150,152,154,156,158,170,172,174,176,178,190,192,194,196,198,200,202,204,206,208,220,222,224,226,228,240,242,244,246,248,260,262,264,266,268,280,282,284,286,288,310,312,314,316,318
 
 #offset 1
@@ -7,8 +7,10 @@
 mov $2,$0
 pow $2,4
 lpb $2
-  mov $3,$1
-  seq $3,179081 ; Parity of sum of digits of n.
+  mov $4,$1
+  dgs $4,10
+  mov $3,$4
+  mod $3,2
   equ $3,0
   sub $0,$3
   add $1,2

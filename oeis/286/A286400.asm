@@ -1,5 +1,5 @@
 ; A286400: {1010->1}-transform of the Thue-Morse word A010060.
-; Submitted by Simon Strandgaard
+; Submitted by Aurum
 ; 0,1,1,0,1,1,0,0,1,0,1,1,0,1,0,1,1,0,0,1,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,0,1,1,0,1,1,0,0,1,0,1,1,0,1,0,1,1,0,0,1,1,0,1,0,1,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,1,0,0
 
 #offset 1
@@ -10,7 +10,10 @@ lpb $0
   sub $0,1
   sub $2,$1
   mov $1,$2
-  seq $1,39963 ; The period-doubling sequence A035263 repeated.
+  div $1,2
+  add $1,1
+  dir $1,4
+  mod $1,2
   sub $0,$1
   add $2,2
   add $3,1

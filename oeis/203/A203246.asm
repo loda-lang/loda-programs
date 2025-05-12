@@ -1,42 +1,34 @@
 ; A203246: Second elementary symmetric function of the first n terms of (1,1,2,2,3,3,4,4,...).
+; Submitted by jprange
 ; 1,5,13,31,58,106,170,270,395,575,791,1085,1428,1876,2388,3036,3765,4665,5665,6875,8206,9790,11518,13546,15743,18291,21035,24185,27560,31400,35496,40120,45033,50541,56373,62871,69730,77330,85330,94150,103411,113575
 
 #offset 2
 
 sub $0,2
-mov $9,$0
-mov $3,$0
-add $3,1
-lpb $3
-  sub $3,1
-  mov $0,$9
-  sub $0,$3
-  mov $11,$0
-  mov $8,0
-  mov $10,$0
-  add $10,1
-  lpb $10
-    sub $10,1
-    mov $0,$11
-    sub $0,$10
-    mov $4,$0
-    mov $5,$0
-    add $5,9
-    mov $2,$0
-    lpb $2
-      mov $7,$2
-      lpb $4
-        gcd $7,2
-        sub $4,$7
-        add $5,1
-        add $5,$4
-      lpe
-      sub $2,1
-    lpe
-    mov $6,$5
-    sub $6,8
-    add $8,$6
+mov $5,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $2,0
+  mov $0,$5
+  sub $0,$1
+  mov $4,$0
+  mov $6,$0
+  add $6,1
+  lpb $6
+    sub $6,1
+    mov $0,$4
+    sub $0,$6
+    mov $7,$0
+    add $0,2
+    mul $0,$7
+    dif $0,2
+    add $0,$7
+    div $0,2
+    add $0,1
+    add $2,$0
   lpe
-  add $1,$8
+  add $3,$2
 lpe
-mov $0,$1
+mov $0,$3

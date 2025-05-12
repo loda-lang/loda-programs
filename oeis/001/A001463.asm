@@ -1,33 +1,16 @@
 ; A001463: Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
-; Submitted by loader3229
+; Submitted by Aurum
 ; 1,3,5,8,11,15,19,23,28,33,38,44,50,56,62,69,76,83,90,98,106,114,122,131,140,149,158,167,177,187,197,207,217,228,239,250,261,272,284,296,308,320,332,344,357,370,383,396,409,422,436,450,464,478,492,506,521,536,551,566,581,596,612,628,644,660,676,692,708,725,742,759,776,793,810,827,845,863,881,899
+; Formula: a(n) = b(n)-1, b(n) = b(n-1)+A001462(n), b(0) = 1
 
 #offset 1
 
 mov $1,1
-mov $2,20
-mov $3,20
-mov $20,1
-mov $21,2
-mov $5,$0
-lpb $5
-  mov $4,$$2
-  lpb $4
-    add $6,$1
-    sub $0,1
-    mov $7,$0
-    leq $7,0
-    mov $$3,$1
-    sub $4,1
-    mov $9,$7
-    add $3,1
-    mul $7,$4
-    sub $4,$7
-  lpe
-  add $1,1
-  add $2,1
-  sub $5,1
-  mul $9,$5
-  sub $5,$9
+lpb $0
+  mov $2,$0
+  seq $2,1462 ; Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
+  sub $0,1
+  add $1,$2
 lpe
-mov $0,$6
+mov $0,$1
+sub $0,1

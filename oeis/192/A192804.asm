@@ -1,18 +1,65 @@
 ; A192804: Constant term in the reduction of the polynomial 1+x+x^2+...+x^n by x^3->x^2+x+1. See Comments.
-; Submitted by Skyman
+; Submitted by loader3229
 ; 1,1,1,2,3,5,9,16,29,53,97,178,327,601,1105,2032,3737,6873,12641,23250,42763,78653,144665,266080,489397,900141,1655617,3045154,5600911,10301681,18947745,34850336,64099761,117897841,216847937,398845538
-; Formula: a(n) = truncate((b(n)+d(n))/2)+1, b(n) = b(n-1), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = c(n-2)+d(n-2), c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = 2*c(n-1)+d(n-1), d(3) = 3, d(2) = 1, d(1) = 1, d(0) = 1
 
-mov $5,1
+mov $1,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  mov $3,$4
-  add $5,$4
-  mov $4,$2
-  mov $2,$5
-  add $5,$3
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mov $7,$2
+  mul $7,$2
+  mul $2,2
+  mov $8,$2
+  mul $8,$3
+  mov $9,$2
+  mul $9,$4
+  mov $10,$3
+  mul $10,$3
+  mov $11,$3
+  mul $11,$4
+  mul $11,2
+  mov $12,$4
+  mul $12,$4
+  div $0,2
+  mov $2,$10
+  add $2,$9
+  sub $2,$8
+  sub $2,$7
+  mov $3,$11
+  sub $3,$10
+  add $3,$7
+  mov $4,$12
+  add $4,$10
+  add $4,$8
+  mul $7,$6
+  mul $8,$6
+  mul $9,$6
+  mul $10,$6
+  mul $10,2
+  mul $11,$6
+  mul $12,$6
+  add $2,$7
+  add $2,$7
+  add $2,$8
+  sub $2,$9
+  sub $2,$10
+  add $2,$11
+  sub $3,$7
+  add $3,$8
+  add $3,$10
+  sub $3,$11
+  add $3,$12
+  sub $4,$8
+  add $4,$9
+  add $4,$11
 lpe
-add $1,$5
-mov $0,$1
+sub $4,$2
+mov $0,$4
 div $0,2
 add $0,1

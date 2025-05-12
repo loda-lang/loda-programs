@@ -1,30 +1,11 @@
 ; A085405: Common residues of binomial(3n+2,n+1)/(3n+2) modulo 2.
-; Submitted by rajab
+; Submitted by JohnDoe
 ; 1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0
 
 mov $1,$0
-mov $4,1
-lpb $0
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mul $7,2
-  sub $7,$3
-  mov $9,$4
-  sub $9,$7
-  mul $9,$6
-  div $0,2
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  mov $8,$3
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
-lpe
-mov $0,$4
-mod $0,2
+add $1,$0
+add $1,1
+ban $0,$1
+mov $2,$0
+equ $2,0
+mov $0,$2

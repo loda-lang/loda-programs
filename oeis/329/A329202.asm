@@ -6,6 +6,4 @@
 #offset 1
 
 pow $0,2
-mov $1,$0
-log $1,2
-mov $0,$1
+log $0,2

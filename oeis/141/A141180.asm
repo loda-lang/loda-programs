@@ -14,24 +14,16 @@ lpb $2
   seq $3,38872 ; Primes congruent to {0, 1, 4} mod 5.
   mov $5,$3
   mul $3,3
-  mov $8,$3
-  seq $8,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
-  mod $8,4
+  mov $6,$3
+  seq $6,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
   seq $3,40329 ; Continued fraction for sqrt(348).
-  add $3,$8
+  add $3,$6
   div $3,2
   mov $7,$3
   div $3,8
   add $3,$7
-  mov $6,0
-  gcd $6,$3
-  add $6,2
-  div $6,5
-  mul $6,10
-  add $3,$6
   bin $3,2
   sub $0,$3
-  pow $1,$4
   add $1,1
   mov $4,$0
   max $4,0

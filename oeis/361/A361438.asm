@@ -1,5 +1,5 @@
 ; A361438: Triangle T(n,k), n >= 1, 1 <= k <= A046801(n), read by rows, where T(n,k) is k-th smallest divisor of 2^n-1.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by Stephen Uitti
 ; 1,1,3,1,7,1,3,5,15,1,31,1,3,7,9,21,63,1,127,1,3,5,15,17,51,85,255,1,7,73,511,1,3,11,31,33,93,341,1023,1,23,89,2047,1,3,5,7,9,13,15,21,35,39,45,63,65,91,105,117,195,273,315,455,585,819,1365,4095,1,8191,1,3,43,127,129,381,5461,16383,1,7,31
 
 #offset 1
@@ -8,8 +8,13 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,6257 ; Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
+  mul $3,2
+  add $3,3
+  mov $7,$3
+  log $7,2
+  mov $6,2
+  pow $6,$7
+  sub $3,$6
   mov $4,$3
   add $5,1
   gcd $3,$5

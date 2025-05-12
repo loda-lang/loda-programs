@@ -5,7 +5,6 @@
 #offset 1
 
 sub $0,1
-mov $6,0
 max $6,$0
 mov $5,$6
 add $6,1
@@ -16,7 +15,6 @@ add $4,1
 pow $4,2
 mul $4,4
 nrt $4,2
-add $4,1
 div $4,2
 pow $4,2
 mov $3,$0

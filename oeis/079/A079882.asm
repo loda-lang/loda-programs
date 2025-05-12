@@ -1,13 +1,12 @@
 ; A079882: A run of 2^n 1's followed by a run of 2^n 2's, for n=0, 1, 2, ...
-; Submitted by loader3229
+; Submitted by amazing
 ; 1,2,1,1,2,2,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-; Formula: a(n) = -logint(n+2,2)+logint(floor((4*n+8)/3),2)+1
+; Formula: a(n) = -logint(n+2,2)+logint(floor((8*n+16)/3),2)
 
 add $0,2
 mov $1,$0
 log $1,2
-mul $0,4
+mul $0,8
 div $0,3
 log $0,2
-add $0,1
 sub $0,$1

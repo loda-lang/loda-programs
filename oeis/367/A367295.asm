@@ -1,5 +1,5 @@
 ; A367295: Numbers k such that 6 is the first digit of 2^k.
-; Submitted by Skillz
+; Submitted by Science United
 ; 6,16,26,36,79,89,99,109,119,129,139,182,192,202,212,222,232,275,285,295,305,315,325,335,368,378,388,398,408,418,428,471,481,491,501,511,521,564,574,584,594,604,614,624,667,677,687,697,707,717,760,770,780,790
 
 #offset 1
@@ -7,19 +7,21 @@
 mov $2,$0
 add $2,15
 pow $2,2
-mov $5,$0
-sub $0,1
 lpb $2
   add $3,1
   mov $4,2
   pow $4,$3
+  mov $5,$4
+  log $5,10
+  mov $8,10
+  pow $8,$5
   mov $1,$4
-  seq $1,30 ; Initial digit of n.
+  div $1,$8
   sub $1,1
   equ $1,5
   add $6,$1
   mov $7,$6
-  neq $7,$5
+  neq $7,$0
   sub $2,$7
 lpe
 mov $0,$3

@@ -1,18 +1,16 @@
 ; A130321: Triangle, (2^0, 2^1, 2^2, ...) in every column.
-; Submitted by Athlici
+; Submitted by Conan
 ; 1,2,1,4,2,1,8,4,2,1,16,8,4,2,1,32,16,8,4,2,1,64,32,16,8,4,2,1,128,64,32,16,8,4,2,1,256,128,64,32,16,8,4,2,1,512,256,128,64,32,16,8,4,2,1,1024,512,256,128,64,32,16,8,4,2,1,2048,1024,512,256,128,64,32,16,8,4,2,1,4096,2048
-; Formula: a(n) = floor(truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)))/2)
+; Formula: a(n) = truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1))
 
 add $0,1
-mov $2,$0
+mov $1,$0
 mul $0,8
 nrt $0,2
 add $0,3
 div $0,2
 bin $0,2
-add $0,1
-sub $0,$2
-mov $1,2
-pow $1,$0
-mov $0,$1
-div $0,2
+sub $0,$1
+mov $2,2
+pow $2,$0
+mov $0,$2

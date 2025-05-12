@@ -1,18 +1,38 @@
 ; A002708: a(n) = Fibonacci(n) mod n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,2,3,0,2,6,5,7,5,1,0,12,13,10,11,16,10,1,5,5,1,22,0,0,25,20,11,1,20,1,5,13,33,30,0,36,1,37,35,1,34,42,25,20,45,46,0,36,25,32,23,52,8,5,21,40,1,1,0,1,1,43,59,60,52,66,65,44,15,1,0,72,73,50,3,2,44,1,5
-; Formula: a(n) = -n*truncate(truncate((min(n,n%2)*c(n)+b(n))/3)/n)+truncate((min(n,n%2)*c(n)+b(n))/3), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
 #offset 1
 
 mov $1,$0
-mov $3,3
+mov $4,1
+mov $10,$0
 lpb $0
-  sub $0,2
-  add $3,$2
-  add $2,$3
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  sub $7,$8
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mul $9,$6
+  div $0,2
+  mov $2,$7
+  mul $2,$6
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mod $3,$10
+  mov $4,$8
 lpe
-mul $0,$3
-add $0,$2
-div $0,3
-mod $0,$1
+mov $0,$3

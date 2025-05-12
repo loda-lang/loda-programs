@@ -1,18 +1,40 @@
 ; A000040: The prime numbers.
+; Submitted by Hayden Chesnut
 ; 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409
 
 #offset 1
 
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
-  add $2,2
-  sub $3,$0
+sub $0,2
+mov $1,5
+mov $4,$0
+mul $4,2
+add $4,3
+mov $7,2
+mov $9,$0
+pow $9,5
+lpb $9
+  mov $2,5
+  mov $5,2
+  mov $8,$6
+  nrt $8,2
+  div $8,3
+  lpb $8
+    mov $3,$6
+    mod $3,$2
+    neq $3,0
+    add $2,$5
+    mul $5,2
+    mod $5,6
+    sub $8,$3
+  lpe
+  equ $8,0
+  sub $0,$8
+  add $1,$7
+  mov $6,$1
+  mul $7,2
+  mod $7,6
+  sub $9,$0
 lpe
-mov $0,$2
-add $0,1
+mov $0,$6
+max $0,$4
 max $0,2

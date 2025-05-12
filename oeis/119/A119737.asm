@@ -1,37 +1,19 @@
 ; A119737: a(n) = Sum{k=1..n} Fibonacci(floor(n/k)).
-; Submitted by Simon Strandgaard
+; Submitted by PaulS
 ; 1,2,4,6,9,14,20,30,45,69,104,165,255,405,642,1029,1640,2645,4243,6852,11040,17840,28787,46567,75227,121685,196725,318269,514688,832760,1346990,2179417,3525722,5704642,9229228,14933176,24160642,39092592
 
 #offset 1
 
 sub $0,1
-mov $6,$0
-mov $8,$0
-add $8,1
-lpb $8
-  sub $8,1
-  mov $1,0
-  mov $5,0
-  mov $0,$6
-  sub $0,$8
-  add $0,1
+lpb $0
   mov $2,$0
-  lpb $0
-    mov $3,$2
-    dif $3,$0
-    sub $0,1
-    max $0,2
-    equ $3,$2
-    sub $3,$1
-    equ $4,2
-    sub $4,1
-    mul $5,$4
-    sub $5,$3
-    add $5,1
-    add $1,$5
-  lpe
-  mov $0,$1
-  add $0,1
-  add $7,$0
+  add $3,1
+  sub $0,1
+  div $2,$3
+  add $2,1
+  seq $2,22362 ; Fibonacci sequence beginning 0, 28.
+  add $1,$2
 lpe
-mov $0,$7
+mov $0,$1
+div $0,28
+add $0,1

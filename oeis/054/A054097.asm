@@ -1,21 +1,19 @@
 ; A054097: T(n,3), array T as in A054090.
-; Submitted by Jamie Morken(s1.)
+; Submitted by BrandyNOW
 ; 3,8,26,108,554,3392,24138,195716,1781018,17974584,199254842,2406840668,31466482506,442700857328,6669158209514,107112774491892,1827078520647098
 
 #offset 3
 
 mov $1,1
 mov $2,1
-mov $3,1
 sub $0,3
 lpb $0
   sub $0,1
+  add $1,$2
   add $1,1
-  add $3,$1
   mul $2,$0
-  add $2,$3
-  mov $1,$2
-  mul $1,2
+  add $2,$1
+  add $1,$2
 lpe
 mov $0,$1
 add $0,2

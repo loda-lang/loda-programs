@@ -1,12 +1,12 @@
 ; A099945: Number of 4 X n binary matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1) and (11;0).
+; Submitted by loader3229
 ; 188,404,836,1700,3428,6884,13796,27620,55268,110564,221156,442340,884708,1769444,3538916,7077860,14155748,28311524,56623076,113246180,226492388,452984804,905969636,1811939300,3623878628,7247757284
-; Formula: a(n) = 216*2^(n-3)-28
+; Formula: a(n) = 27*2^n-28
 
 #offset 3
 
-sub $0,3
 mov $1,2
 pow $1,$0
-mul $1,216
-sub $1,28
 mov $0,$1
+mul $0,27
+sub $0,28
