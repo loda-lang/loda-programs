@@ -1,0 +1,14 @@
+; A381846: Area of the unique primitive Pythagorean triple (a,b,c) such that (a-b+c)/2 = A000108(n) and its long leg and hypotenuse are consecutive natural numbers.
+; Submitted by Aurum
+; 0,0,6,180,4914,142926,4547796,157355484,5842280730,229795151586,9475645552620,406294220860710,18000809380947036,820011973477512900,38258534425043501640,1822437060664227775020,88405827105467677196970,4358079981772447955690490,217935769988152202470568700
+; Formula: a(n) = 6*floor(binomial(2*floor(binomial(2*n,n)/(n+1)),3)/4)
+
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+div $0,$1
+mul $0,2
+bin $0,3
+div $0,4
+mul $0,6
