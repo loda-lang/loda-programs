@@ -1,22 +1,26 @@
 ; A047674: Row 5 of square array defined in A047671.
-; Submitted by www.urfak.petrsu.ru
+; Submitted by BrandyNOW
 ; 1,16,91,346,1021,2524,5479,10774,19609,33544,54547,85042,127957,186772,265567,369070,502705,672640,885835,1150090,1474093,1867468,2340823,2905798,3575113,4362616,5283331,6353506,7590661,9013636
-; Formula: a(n) = truncate(b(n-1)/2)+1, b(n) = 4*(n^2+5)*n^2+b(n-1)+6, b(0) = 0
+; Formula: a(n) = truncate((23*n+20*n^3+2*n^5-5*n^4-25*n^2-10)/5)
 
 #offset 1
 
-sub $0,1
-lpb $0
-  mov $2,$0
-  pow $2,2
-  mov $3,4
-  mul $3,$2
-  add $2,5
-  mul $2,$3
-  add $2,6
-  sub $0,1
-  add $1,$2
-lpe
-mov $0,$1
-div $0,2
-add $0,1
+mov $1,$0
+mov $2,$0
+mov $3,$0
+mov $4,$0
+mul $4,23
+pow $0,5
+mul $0,2
+pow $1,4
+mul $1,5
+pow $2,3
+mul $2,20
+pow $3,2
+mul $3,25
+sub $0,$1
+add $0,$2
+sub $0,$3
+add $0,$4
+sub $0,10
+div $0,5

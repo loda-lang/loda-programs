@@ -1,25 +1,18 @@
 ; A100688: a(n) = prime(n) * 3^prime(n) - 1.
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 17,80,1214,15308,1948616,20726198,2195382770,22082967872,2165293113020,1990280943581606,19147875284802356,16660504517966902430,1495392851464002242522,14115049597965094337960,1249674274871002654525988,1027312020387041054530226318
+; Formula: a(n) = truncate((2*A000040(n)*truncate(A000040(2)^A000040(n)))/2)-1
 
 #offset 1
 
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $5,$4
-  add $5,1
-  seq $5,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$5
-  sub $3,$0
-  add $4,2
-lpe
-mov $0,$4
-add $0,1
-max $0,2
-add $2,$0
-mov $1,3
-pow $1,$0
+mov $2,$0
+seq $2,40 ; The prime numbers.
+mov $0,2
+seq $0,40 ; The prime numbers.
+mov $1,$0
+pow $1,$2
+mul $2,2
 mul $1,$2
 mov $0,$1
+div $0,2
 sub $0,1

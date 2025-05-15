@@ -1,34 +1,11 @@
 ; A097480: Positive integers n such that 2n-15 is prime.
-; Submitted by Cruncher Pete [B@A]
+; Submitted by Science United
 ; 9,10,11,13,14,16,17,19,22,23,26,28,29,31,34,37,38,41,43,44,47,49,52,56,58,59,61,62,64,71,73,76,77,82,83,86,89,91,94,97,98,103,104,106,107,113,119,121,122,124,127,128,133,136,139,142,143,146,148,149,154,161,163,164,166,173,176,181,182,184,187,191,194,197,199,202,206,208,212,217
+; Formula: a(n) = truncate(A000040(n+1)/2)+8
 
 #offset 1
 
-mov $2,2
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $5,0
-  mov $1,$2
-  add $1,1
-  lpb $1
-    gcd $5,3
-    mov $6,$1
-    div $6,5
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $2,2
-  sub $3,$0
-lpe
-mov $0,$2
+add $0,1
+seq $0,40 ; The prime numbers.
 div $0,2
 add $0,8

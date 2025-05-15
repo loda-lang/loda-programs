@@ -1,24 +1,11 @@
 ; A247159: Sum of divisors of even semiprimes.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 7,12,18,24,36,42,54,60,72,90,96,114,126,132,144,162,180,186,204,216,222,240,252,270,294,306,312,324,330,342,384,396,414,420,450,456,474,492,504,522,540,546,576,582,594,600,636,672,684,690,702,720,726,756,774,792,810,816,834,846,852,882,924,936,942,954,996,1014,1044,1050,1062,1080,1104,1122,1140,1152,1170,1194,1206,1230
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
-mov $1,$0
-mul $1,2
-trn $1,3
-add $1,$0
-mov $0,$1
-add $0,6
+seq $0,40 ; The prime numbers.
+sub $0,1
+mul $0,3
+bxo $0,1
+add $0,5

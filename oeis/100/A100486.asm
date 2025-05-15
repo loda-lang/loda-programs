@@ -1,11 +1,19 @@
 ; A100486: a(n) = pi(n) + prime(n).
-; Submitted by Jamie Morken(s2)
+; Submitted by Athlici
 ; 2,4,7,9,14,16,21,23,27,33,36,42,47,49,53,59,66,68,75,79,81,87,92,98,106,110,112,116,119,123,138,142,148,150,160,162,169,175,179,185,192,194,205,207,211,213,226,238,242,244,248,254,257,267,273,279,285,287,294,298,301,311,325,329,331,335,350,356,366,368,373,379,388,394,400,404,410,418,423,431
-; Formula: a(n) = A000040(n)+A000720(n)
+; Formula: a(n) = -A062298(n)+A000040(n)+n
 
 #offset 1
 
+sub $0,1
 mov $1,$0
-seq $1,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
-seq $0,40 ; The prime numbers.
-add $0,$1
+add $0,1
+seq $0,62298 ; Number of nonprimes <= n.
+add $0,1
+sub $0,$1
+add $1,1
+seq $1,40 ; The prime numbers.
+sub $1,1
+sub $1,$0
+mov $0,$1
+add $0,3

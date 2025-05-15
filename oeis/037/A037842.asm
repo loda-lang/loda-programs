@@ -1,19 +1,40 @@
 ; A037842: Fibonacci numbers in base 1.
 ; Submitted by BrandyNOW
 ; 1,11,111,11111,11111111,1111111111111,111111111111111111111,1111111111111111111111111111111111,1111111111111111111111111111111111111111111111111111111
-; Formula: a(n) = floor(truncate(10^truncate((min(n+2,(n+2)%2)*c(n+2)+b(n+2))/3))/9), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
 
-mov $2,3
-add $0,2
-lpb $0
-  sub $0,2
-  add $2,$1
-  add $1,$2
+add $0,1
+mov $5,1
+mov $1,$0
+lpb $1
+  mul $8,$5
+  mul $8,2
+  mov $9,$4
+  pow $9,2
+  mov $2,$5
+  pow $2,2
+  sub $8,$9
+  add $9,$2
+  mov $2,$9
+  sub $2,$8
+  mov $6,$1
+  max $6,1
+  log $6,2
+  mov $7,2
+  pow $7,$6
+  ban $7,$0
+  neq $7,0
+  div $1,2
+  mul $2,$7
+  mov $3,$8
+  mul $3,$7
+  add $8,$2
+  add $9,$3
+  mov $4,$8
+  mov $5,$9
+  mov $10,10
 lpe
-mul $0,$2
-add $0,$1
-div $0,3
-mov $3,10
-pow $3,$0
-mov $0,$3
+pow $10,$9
+mov $0,$10
+sub $0,10
 div $0,9
+add $0,1

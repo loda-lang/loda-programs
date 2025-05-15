@@ -1,25 +1,18 @@
 ; A129726: a(n) = a(n-1) + prime(n) - prime(n-1) + 2; a(1) = 2.
-; Submitted by infcode
+; Submitted by Just Jake
 ; 2,5,9,13,19,23,29,33,39,47,51,59,65,69,75,83,91,95,103,109,113,121,127,135,145,151,155,161,165,171,187,193,201,205,217,221,229,237,243,251,259,263,275,279,285,289,303,317,323,327,333,341,345,357,365,373,381,385,393,399,403,415,431,437,441,447,463,471,483,487,493,501,511,519,527,533,541,551,557,567
+; Formula: a(n) = 91*A073425(1)+2*n+A000040(n)-184
 
 #offset 1
 
-mov $1,$0
 sub $0,1
-mov $5,$1
-pow $5,5
-lpb $5
-  mov $3,$4
-  add $3,1
-  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $1,$3
-  add $4,2
-  sub $5,$1
-lpe
-mov $1,$4
-add $1,1
-max $1,2
-mov $2,$0
-add $2,$0
-add $2,$1
-mov $0,$2
+mov $1,$0
+mul $1,2
+mov $2,1
+seq $2,73425 ; a(0)=0; for n>0, a(n) = number of primes not exceeding n-th composite number.
+mul $2,91
+add $0,1
+seq $0,40 ; The prime numbers.
+sub $0,182
+add $0,$2
+add $0,$1

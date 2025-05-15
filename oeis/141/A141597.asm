@@ -1,10 +1,10 @@
 ; A141597: Triangle T(n,k) = 2*binomial(n,k)^2 - 1, read by rows, 0<=k<=n.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 1,1,1,1,7,1,1,17,17,1,1,31,71,31,1,1,49,199,199,49,1,1,71,449,799,449,71,1,1,97,881,2449,2449,881,97,1,1,127,1567,6271,9799,6271,1567,127,1,1,161,2591,14111,31751,31751,14111,2591,161,1,1,199,4049,28799,88199,127007,88199,28799,4049,199,1,1,241,6049,54449,217799,426887,426887,217799,54449,6049,241,1,1,287
-; Formula: a(n) = floor(((2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))^2)/2)-1
+; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)^2-1
 
-add $0,1
 mov $2,$0
+add $0,1
 mul $0,8
 nrt $0,2
 sub $0,1
@@ -13,9 +13,7 @@ mov $1,$0
 add $1,1
 bin $1,2
 sub $2,$1
-sub $2,1
 bin $0,$2
-mul $0,2
 pow $0,2
-div $0,2
+mul $0,2
 sub $0,1

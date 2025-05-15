@@ -1,17 +1,12 @@
 ; A239053: Sum of divisors of 4*n-1.
-; Submitted by Ralfy
+; Submitted by Science United
 ; 4,8,12,24,20,24,40,32,48,56,44,48,72,72,60,104,68,72,124,80,84,120,112,120,156,104,108,152,144,144,168,128,132,240,140,168,228,152,192,216,164,168,260,248,180,248,216,192,336,200,240,312,212,264,296,224,228,384,288,240,364,280,252,432,304,264,360,272,372,416,284,336,392,360,336,408,308,312,624,360
-; Formula: a(n) = truncate(A000203(8*n-2)/3)
+; Formula: a(n) = A000203(4*n-1)
 
 #offset 1
 
+mul $0,4
 sub $0,1
 mov $1,$0
-add $0,1
-sub $1,$0
-sub $1,$0
-sub $0,$1
-mul $0,4
-sub $0,6
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-div $0,3
+seq $1,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $0,$1

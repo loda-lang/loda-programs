@@ -1,33 +1,14 @@
 ; A062301: Number of ways writing n-th prime as a sum of two primes.
-; Submitted by LCB001
+; Submitted by Egon Olsen
 ; 0,0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = -2*truncate((A136548(A013632(A000040(n-1))+1)+1)/2)+A136548(A013632(A000040(n-1))+1)+1
 
 #offset 1
 
-mov $4,2
-mov $5,$0
-pow $5,5
-lpb $5
-  mov $2,0
-  mov $3,$4
-  add $3,1
-  lpb $3
-    gcd $2,3
-    mov $1,$3
-    div $1,5
-    lpb $1
-      mov $6,$3
-      mod $6,$2
-      sub $1,$6
-      add $2,2
-    lpe
-    div $3,$2
-    pow $3,2
-    mov $2,1
-  lpe
-  sub $0,$2
-  add $4,2
-  add $5,1
-  sub $5,$0
-lpe
-mov $0,$2
+sub $0,1
+seq $0,40 ; The prime numbers.
+seq $0,13632 ; Difference between n and the next prime greater than n.
+add $0,1
+seq $0,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
+add $0,1
+mod $0,2

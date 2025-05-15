@@ -1,14 +1,33 @@
 ; A226506: a(n) = B(n+2)-3*B(n+1)+B(n), where B(i) are the Bell numbers A000110.
-; Submitted by mg13 [HWU]
+; Submitted by Aurum
 ; 0,0,2,12,62,320,1712,9604,56674,351792,2293862,15682216,112179608,837905016,6522165834,52807401908,443962338894,3869376656384,34908008426360,325530083655692,3133830448212442,31106728455899128,318009567467999574,3344865730200667832,36161434396223563504,401461898697433719920,4573019507315373440562,53403900772996531223196,638890148099828441529086,7824451704629808762936384,98031342225741393696088832,1255695241642507841793046868,16434316380152246355913398002,219644680746485192782939184320
-; Formula: a(n) = -A000110(n+1)+A000110(n)+A033452(n)
 
-mov $2,$0
-seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mov $1,$0
-seq $1,33452 ; "STIRLING" transform of squares A000290.
-add $0,1
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-add $1,$2
-sub $1,$0
+mov $20,1
+mov $3,$0
+lpb $3
+  add $2,1
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,18
+    mov $6,$4
+    add $6,19
+    mul $$6,$4
+    add $$6,$$5
+    sub $4,1
+  lpe
+  sub $3,1
+lpe
+mov $2,0
+mov $3,$0
+lpb $3
+  mov $4,$2
+  seq $4,217 ; Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.
+  add $2,20
+  mul $$2,$4
+  add $1,$$2
+  sub $2,19
+  sub $3,1
+lpe
 mov $0,$1
+mul $0,2

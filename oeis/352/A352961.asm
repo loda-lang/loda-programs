@@ -5,12 +5,6 @@
 mov $1,$0
 mov $4,1
 lpb $0
-  mul $7,2
-  sub $7,$3
-  mov $8,$3
-  add $8,$4
-  mov $9,$8
-  sub $9,$7
   mov $5,$0
   max $5,1
   log $5,2
@@ -18,8 +12,11 @@ lpb $0
   pow $6,$5
   ban $6,$1
   neq $6,0
+  mov $9,$4
   mul $9,$6
   div $0,2
+  mov $8,$4
+  add $8,$7
   mov $2,$7
   mul $2,$6
   add $7,$9

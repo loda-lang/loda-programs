@@ -1,18 +1,37 @@
 ; A002726: a(n) = Fibonacci(n+1) mod n.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by BrandyNOW
 ; 0,0,0,1,3,1,0,2,1,9,1,5,0,8,12,13,0,5,1,6,8,13,0,1,18,14,21,9,1,19,1,2,25,1,17,17,0,2,27,21,1,5,0,38,8,1,0,1,8,24,18,41,0,31,52,34,22,31,1,41,1,2,42,29,3,35,0,2,47,69,1,1,0,38,57,5,76,31,1,66
 
 #offset 1
 
+mov $5,1
 mov $1,$0
-mov $2,1
-mov $3,1
-sub $0,1
-lpb $0
-  sub $0,1
-  mov $4,$3
-  mov $3,$2
-  add $2,$4
+lpb $1
+  mul $8,$5
+  mul $8,2
+  mov $9,$4
+  pow $9,2
+  mov $2,$5
+  pow $2,2
+  sub $8,$9
+  add $9,$2
+  mov $2,$9
+  sub $2,$8
+  mov $6,$1
+  max $6,1
+  log $6,2
+  mov $7,2
+  pow $7,$6
+  ban $7,$0
+  neq $7,0
+  div $1,2
+  mul $2,$7
+  mov $3,$8
+  mul $3,$7
+  add $8,$2
+  add $9,$3
+  mov $4,$8
+  mov $5,$9
 lpe
-mov $0,$2
-mod $0,$1
+mod $5,$0
+mov $0,$5

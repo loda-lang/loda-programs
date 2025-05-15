@@ -1,14 +1,17 @@
 ; A001699: Number of binary trees of height n; or products (ways to insert parentheses) of height n when multiplication is non-commutative and non-associative.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,1,3,21,651,457653,210065930571,44127887745696109598901,1947270476915296449559659317606103024276803403,3791862310265926082868235028027893277370233150300118107846437701158064808916492244872560821,14378219780015246281818710879551167697596193767663736497089725524386087657390556152293078719361431113087404796988428136378916338317849145612138035273593140724388243970453865496952651
-; Formula: a(n) = a(n-1)*(b(n-1)+a(n-1)), a(1) = 1, a(0) = 1, b(n) = 2*a(n-1)+b(n-1), b(1) = 2, b(0) = 0
+; Formula: a(n) = (b(max(n-1,0))^2)^2+b(max(n-1,0))^2+1, b(n) = b(n-1)^2+1, b(0) = 0
 
-mov $3,1
+sub $0,1
 lpb $0
   sub $0,1
-  add $1,$3
-  mov $2,$3
-  mul $3,$1
-  add $1,$2
+  pow $1,2
+  add $1,1
 lpe
-mov $0,$3
+mov $0,$1
+pow $0,2
+mov $1,$0
+pow $0,2
+add $0,1
+add $0,$1

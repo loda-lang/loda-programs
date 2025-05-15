@@ -1,18 +1,15 @@
 ; A278705: Number of length-4 cycles in all simple labeled graphs on n nodes.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 12,960,92160,13762560,3523215360,1623497637888,1385384650997760,2229281815548395520,6848353737364671037440,40517904423021555933511680,464691742246749620690258755584,10382058415869198798257999252029440,453599053561602541628424159320667586560
-; Formula: a(n) = floor(truncate(2^(binomial(n-1,2)+n-4))/2)*binomial(binomial(n-1,2),2)
+; Formula: a(n) = 12*floor((binomial(n,4)*2^binomial(n,2))/64)
 
 #offset 4
 
 mov $1,$0
-sub $1,1
 bin $1,2
-sub $0,4
-add $0,$1
 mov $2,2
-pow $2,$0
-div $2,2
-bin $1,2
-mul $1,$2
-mov $0,$1
+pow $2,$1
+bin $0,4
+mul $0,$2
+div $0,64
+mul $0,12

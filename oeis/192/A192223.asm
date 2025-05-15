@@ -1,8 +1,15 @@
 ; A192223: a(n) = Lucas(2^n + 1).
-; Submitted by Skillz
+; Submitted by Science United
 ; 3,4,11,76,3571,7881196,38388099893011,910763447271179530132922476,512653048485188394162163283930413917147479973138989971
-; Formula: a(n) = A000204(A219531(n)+1)
 
-seq $0,219531 ; a(n) = Sum_{k=0..11} C(n, k).
-add $0,1
-seq $0,204 ; Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.
+mov $1,2
+pow $1,$0
+mov $2,2
+mov $3,1
+lpb $1
+  sub $1,1
+  mov $4,$2
+  mov $2,$3
+  add $3,$4
+lpe
+mov $0,$3

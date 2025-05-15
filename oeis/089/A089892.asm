@@ -1,36 +1,67 @@
 ; A089892: Number of knots with unknotting number U=1.
 ; Submitted by BrandyNOW
 ; 1,1,1,3,3,9,17,44
-; Formula: a(n) = f(n-3)+1, b(n) = truncate((d(n-1)+e(n-1))/5), b(5) = 16, b(4) = 6, b(3) = 2, b(2) = 0, b(1) = 0, b(0) = 0, c(n) = -b(n-1)-d(n-1)-f(n-1)+c(n-1)+e(n-1)+2, c(5) = 118, c(4) = 46, c(3) = 18, c(2) = 6, c(1) = 2, c(0) = 0, d(n) = (-2*e(n-1)+b(n-1)+f(n-1)-1)^0, d(5) = 1, d(4) = 1, d(3) = 1, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = (-2*e(n-1)+b(n-1)+f(n-1)-1)^0+2*e(n-1)-b(n-1)-f(n-1)+c(n-1)+2, e(5) = 199, e(4) = 79, e(3) = 31, e(2) = 11, e(1) = 3, e(0) = 0, f(n) = -b(n-1)-d(n-1)-f(n-1)+truncate((d(n-1)+e(n-1))/5)+1, f(5) = 8, f(4) = 2, f(3) = 2, f(2) = 0, f(1) = 0, f(0) = 0
 
 #offset 3
 
 sub $0,3
+mov $1,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  sub $1,$4
-  sub $1,$6
-  add $4,$3
-  mov $7,$5
-  sub $3,1
-  add $3,$5
-  add $3,$6
-  sub $3,$4
-  add $3,$1
-  add $5,$4
-  mov $6,1
-  add $1,$5
-  sub $2,$4
-  sub $2,$3
-  sub $5,$7
-  div $5,5
-  sub $5,$1
-  pow $3,0
-  add $4,$3
-  add $4,1
-  add $4,$2
-  add $1,$5
-  add $2,1
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mov $7,$2
+  mul $7,$2
+  mul $2,2
+  mov $8,$2
+  mul $8,$3
+  mov $9,$2
+  mul $9,$4
+  mov $10,$3
+  mul $10,$3
+  mov $11,$3
+  mul $11,$4
+  mul $11,2
+  mov $12,$4
+  mul $12,$4
+  div $0,2
+  mov $2,$10
+  add $2,$9
+  sub $2,$8
+  sub $2,$7
+  mov $3,$11
+  sub $3,$10
+  add $3,$7
+  mov $4,$12
+  add $4,$10
+  add $4,$8
+  mul $7,$6
+  mul $8,$6
+  mul $9,$6
+  mul $10,$6
+  mul $10,2
+  mul $11,$6
+  mul $12,$6
+  add $2,$7
+  add $2,$7
+  sub $2,$9
+  sub $2,$10
+  add $2,$11
+  sub $3,$7
+  add $3,$8
+  add $3,$10
+  sub $3,$11
+  add $3,$12
+  mul $11,2
+  add $4,$9
+  add $4,$11
 lpe
-mov $0,$5
+mov $0,$4
+sub $0,$2
+div $0,2
 add $0,1

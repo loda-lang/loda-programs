@@ -1,18 +1,22 @@
 ; A108918: Reversed binary words in reversed lexicographic order.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,3,2,5,7,6,4,9,11,10,13,15,14,12,8,17,19,18,21,23,22,20,25,27,26,29,31,30,28,24,16,33,35,34,37,39,38,36,41,43,42,45,47,46,44,40,49,51,50,53,55,54,52,57,59,58,61,63,62,60,56,48,32,65,67,66,69,71,70,68,73,75,74,77,79,78,76,72,81,83
 
 #offset 1
 
-mov $3,$0
-lpb $3
-  add $1,$2
-  neq $2,1
-  lpb $3
-    sub $3,$2
-    mul $2,2
-  lpe
-  add $1,$2
+mov $1,$0
+lpb $1
+  mov $5,$1
+  max $5,1
+  log $5,2
+  mov $3,2
+  pow $3,$5
+  ban $3,$0
+  neq $3,0
+  add $0,$3
+  div $1,2
+  mul $2,2
+  add $2,$3
+  mov $4,$2
 lpe
-mov $0,$1
-div $0,2
+mov $0,$4

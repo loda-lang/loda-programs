@@ -1,7 +1,8 @@
 ; A266660: Binary representation of the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Penguin
+; Submitted by sjmielh
 ; 1,110,11,1111100,11,11111111100,11,111111111111100,11,1111111111111111100,11,11111111111111111111100,11,111111111111111111111111100,11,1111111111111111111111111111100,11,11111111111111111111111111111111100,11,111111111111111111111111111111111111100,11,1111111111111111111111111111111111111111100,11,11111111111111111111111111111111111111111111100,11,111111111111111111111111111111111111111111111111100,11,1111111111111111111111111111111111111111111111111111100,11
-; Formula: a(n) = A007088(A266661(n))
+; Formula: a(n) = truncate(A099820(A266661(n))/10)
 
 seq $0,266661 ; Decimal representation of the n-th iteration of the "Rule 47" elementary cellular automaton starting with a single ON (black) cell.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+seq $0,99820 ; Even nonnegative integers in base 2 (bisection of A007088).
+div $0,10

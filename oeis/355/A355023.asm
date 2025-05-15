@@ -1,21 +1,19 @@
 ; A355023: Number of labeled trees on n nodes with maximum degree three and three vertices of degree three.
-; Submitted by AXm 77
+; Submitted by BrandyNOW
 ; 5040,317520,12700800,419126400,12573792000,359610451200,10069092633600,280496151936000,7853892254208000,222526947202560000,6408776079433728000,188184970332463104000,5645549109973893120000,173274930375352565760000,5445783526082509209600000,175354229539856796549120000
+; Formula: a(n) = truncate((binomial(n-2,6)*b(n))/8), b(n) = n*b(n-1), b(0) = 1
 
 #offset 8
 
-sub $0,8
+sub $0,2
 mov $1,$0
-mov $3,$0
-add $3,8
-mov $2,7
-sub $2,$3
-bin $2,6
-bin $3,$0
-mul $2,$3
-mov $0,$2
-lpb $1
-  mul $0,$1
-  sub $1,1
+mov $2,1
+add $0,2
+lpb $0
+  mul $2,$0
+  sub $0,1
 lpe
-mul $0,5040
+bin $1,6
+mov $0,$2
+mul $0,$1
+div $0,8

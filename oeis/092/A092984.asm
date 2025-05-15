@@ -1,13 +1,11 @@
 ; A092984: a(n) = the least k >= 1 such that n! + k is squarefree.
-; Submitted by Kotenok2000
+; Submitted by vonboedefeldt
 ; 1,1,1,2,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-equ $2,0
-add $0,$2
+max $0,2
 mov $1,64
 mod $1,$0
 mul $1,72

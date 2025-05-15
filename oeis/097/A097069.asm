@@ -1,34 +1,13 @@
 ; A097069: Positive integers n such that 2n - 9 is prime.
-; Submitted by Science United
+; Submitted by Eric Liskay
 ; 6,7,8,10,11,13,14,16,19,20,23,25,26,28,31,34,35,38,40,41,44,46,49,53,55,56,58,59,61,68,70,73,74,79,80,83,86,88,91,94,95,100,101,103,104,110,116,118,119,121,124,125,130,133,136,139,140,143,145,146,151,158,160,161,163,170,173,178,179,181,184,188,191,194,196,199,203,205,209,214
+; Formula: a(n) = truncate((2*A000040(n+1)-6)/4)+6
 
 #offset 1
 
-mov $3,2
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $6,0
-  mov $2,$3
-  add $2,1
-  lpb $2
-    gcd $6,3
-    mov $1,$2
-    div $1,5
-    lpb $1
-      mov $5,$2
-      mod $5,$6
-      add $6,2
-      sub $1,$5
-    lpe
-    div $2,$6
-    pow $2,2
-    mov $6,1
-  lpe
-  sub $0,$6
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-div $0,2
-add $0,5
+add $0,1
+seq $0,40 ; The prime numbers.
+mul $0,2
+sub $0,6
+div $0,4
+add $0,6

@@ -1,14 +1,42 @@
 ; A324015: Number of nonempty subsets of {1, ..., n} containing no two cyclically successive elements.
-; Submitted by respawner
+; Submitted by BrandyNOW
 ; 0,1,2,3,6,10,17,28,46,75,122,198,321,520,842,1363,2206,3570,5777,9348,15126,24475,39602,64078,103681,167760,271442,439203,710646,1149850,1860497,3010348,4870846,7881195,12752042,20633238,33385281,54018520,87403802
-; Formula: a(n) = b(n-1)+binomial(a(n-1),b(n-1)), a(1) = 1, a(0) = 0, b(n) = b(n-1)+a(n-1)+1, b(1) = 1, b(0) = 0
 
+mov $10,1
+equ $10,$0
+equ $11,$0
+mov $1,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  mov $2,$3
-  bin $3,$1
-  add $3,$1
-  add $1,$2
-  add $1,1
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  sub $7,$8
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mul $9,$6
+  div $0,2
+  mov $2,$7
+  mul $2,$6
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mov $4,$8
 lpe
-mov $0,$3
+mov $0,$4
+add $0,$4
+sub $0,$3
+sub $0,$11
+add $0,$10
+sub $0,1

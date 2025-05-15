@@ -1,24 +1,14 @@
 ; A098117: a(n) = 5^(prime(n) - 1) + 5^prime(n) - 1.
-; Submitted by Science United
+; Submitted by owensse
 ; 29,149,3749,93749,58593749,1464843749,915527343749,22888183593749,14305114746093749,223517417907714843749,5587935447692871093749,87311491370201110839843749,54569682106375694274902343749,1364242052659392356872558593749
+; Formula: a(n) = 6*truncate(5^(A000040(n)-1))-1
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
+seq $0,40 ; The prime numbers.
+sub $0,1
 mov $1,5
 pow $1,$0
 mov $0,$1
-div $0,100
-mul $0,120
-add $0,29
+mul $0,6
+sub $0,1

@@ -1,8 +1,25 @@
 ; A087734: a(n) = f(f(n)), where f() = A035327().
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,0,0,0,0,1,0,0,0,1,2,3,0,1,0,0,0,1,2,3,4,5,6,7,0,1,2,3,0,1,0,0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0,1,2,3,4,5,6,7,0,1,2,3,0,1,0,0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
-; Formula: a(n) = truncate(A261693(A035327(n))/2)
+; Formula: a(n) = truncate((4*n-4*truncate(2^(logint(max(n,1),2)+1))+truncate(2^(logint(max(4*truncate(2^(logint(max(n,1),2)+1))-4*n-4,1),2)+1))+2)/4)
 
-seq $0,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
-seq $0,261693 ; Irregular triangle read by rows in which row n lists the positive odd numbers in decreasing order starting with 2^n - 1. T(0, 1) = 0 and T(n, k) for n >= 1, 1 <= k <= 2^(n-1).
-div $0,2
+mov $4,$0
+max $4,1
+log $4,2
+add $4,1
+mov $1,2
+pow $1,$4
+sub $1,$0
+sub $1,1
+mul $1,4
+mov $2,$1
+max $2,1
+log $2,2
+add $2,1
+mov $3,$1
+mov $1,2
+pow $1,$2
+sub $1,$3
+sub $1,2
+div $1,4
+mov $0,$1

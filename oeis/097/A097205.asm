@@ -1,25 +1,16 @@
 ; A097205: Numbers of the form 3^p * p^3 for p prime.
+; Submitted by BlisteringSheep
 ; 72,729,30375,750141,235782657,3502727631,634465620819,7971951402153,1145440056788109,1673826273552131487,18401108148695065077,22808230685096689428039,2513755383310987769681163,26098726706637459430889889,2760530473190044863847909701
+; Formula: a(n) = truncate(A000040(2)^A000040(n))*truncate(A000040(n)^A000040(2))
 
 #offset 1
 
-mov $4,0
-mov $5,$0
-pow $5,5
-lpb $5
-  mov $3,$4
-  add $3,1
-  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$3
-  add $4,2
-  sub $5,$0
-lpe
-mov $0,$4
-add $0,1
-max $0,2
-mov $2,3
-pow $2,$0
+mov $2,$0
+seq $2,40 ; The prime numbers.
+mov $0,2
+seq $0,40 ; The prime numbers.
 mov $1,$0
-pow $1,3
+pow $1,$2
+pow $2,$0
 mul $1,$2
 mov $0,$1

@@ -1,34 +1,16 @@
 ; A067076: Numbers k such that 2*k + 3 is a prime.
-; Submitted by Science United
+; Submitted by BlisteringSheep
 ; 0,1,2,4,5,7,8,10,13,14,17,19,20,22,25,28,29,32,34,35,38,40,43,47,49,50,52,53,55,62,64,67,68,73,74,77,80,82,85,88,89,94,95,97,98,104,110,112,113,115,118,119,124,127,130,133,134,137,139,140,145,152,154,155,157,164,167,172,173,175,178,182,185,188,190,193,197,199,203,208
+; Formula: a(n) = truncate((A000040(n+1)+1)/2)-2
 
 #offset 1
 
-mov $3,2
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $6,0
-  mov $2,$3
-  add $2,1
-  lpb $2
-    gcd $6,3
-    mov $1,$2
-    div $1,5
-    lpb $1
-      mov $5,$2
-      mod $5,$6
-      add $6,2
-      sub $1,$5
-    lpe
-    div $2,$6
-    pow $2,2
-    mov $6,1
-  lpe
-  sub $0,$6
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-div $0,2
+mov $2,$0
+add $2,1
+seq $2,40 ; The prime numbers.
+mov $1,1
+add $1,$2
 sub $0,1
+mov $0,$1
+div $0,2
+sub $0,2

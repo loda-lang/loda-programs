@@ -1,11 +1,24 @@
 ; A295515: The Euclid tree, read across levels.
-; Submitted by Ralfy
+; Submitted by Aurum
 ; 0,1,1,1,1,2,2,1,1,3,3,2,2,3,3,1,1,4,4,3,3,5,5,2,2,5,5,3,3,4,4,1,1,5,5,4,4,7,7,3,3,8,8,5,5,7,7,2,2,7,7,5,5,8,8,3,3,7,7,4,4,5,5,1,1,6,6,5,5,9,9,4,4,11,11,7,7,10,10,3
-; Formula: a(n) = A002487(floor(n/2))
 
 #offset 1
 
+mov $4,2
 mov $1,$0
 div $1,2
-seq $1,2487 ; Stern's diatomic series (or Stern-Brocot sequence): a(0) = 0, a(1) = 1; for n > 0: a(2*n) = a(n), a(2*n+1) = a(n) + a(n+1).
+mul $1,4
+lpb $1
+  div $1,2
+  sub $4,$3
+  mov $3,5
+  add $3,$1
+  div $3,2
+  mod $3,2
+  mul $3,$4
+  add $4,$2
+  add $2,$3
+lpe
+mov $1,$2
+div $1,2
 mov $0,$1

@@ -1,34 +1,11 @@
 ; A105760: Nonnegative numbers k such that 2k+7 is prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by sbo92
 ; 0,2,3,5,6,8,11,12,15,17,18,20,23,26,27,30,32,33,36,38,41,45,47,48,50,51,53,60,62,65,66,71,72,75,78,80,83,86,87,92,93,95,96,102,108,110,111,113,116,117,122,125,128,131,132,135,137,138,143,150,152,153,155,162,165,170,171,173,176,180,183,186,188,191,195,197,201,206,207,212
+; Formula: a(n) = truncate(A000040(n+3)/2)-3
 
 #offset 1
 
-mov $1,6
-mov $2,$0
-pow $2,3
-lpb $2
-  mov $3,$1
-  mov $5,0
-  add $1,2
-  add $3,1
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,5
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,-1
-  lpe
-  add $0,$5
-  sub $2,$0
-lpe
-mov $0,$1
+add $0,3
+seq $0,40 ; The prime numbers.
 div $0,2
 sub $0,3

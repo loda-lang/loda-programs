@@ -1,29 +1,23 @@
 ; A111046: Difference between squares of twin prime pairs.
-; Submitted by Eric
+; Submitted by Science United
 ; 16,24,48,72,120,168,240,288,408,432,552,600,720,768,792,912,960,1080,1128,1248,1392,1680,1728,1848,2088,2280,2400,2472,2568,2640,3240,3288,3312,3432,3528,4080,4128,4200,4248,4368,4608,4920,5112,5160,5208,5280,5712,5808,5928,5952,6432,6480,6672,6792,6888,7152,7488,7512,7728,7800,7992,8112,8328,8352,8448,8520,8568,8952,9072,9240,9360,9528,10200,10368,10632,10752,10848,10920,11160,11208
+; Formula: a(n) = 24*A002822(floor(max(2*n-3,0)/2)+1)+8*gcd(max(2*n-3,0)-1,2)-16
 
 #offset 1
 
-mov $2,$0
-mul $2,$0
-add $2,2
-pow $2,2
-lpb $2
-  gcd $4,2
-  mov $5,0
-  seq $5,40 ; The prime numbers.
-  add $5,$1
-  seq $5,13632 ; Difference between n and the next prime greater than n.
-  add $1,$5
-  add $1,1
-  mov $3,$5
-  sub $3,$4
-  add $4,$3
-  gcd $3,$2
-  bin $3,$2
-  sub $0,$3
-  sub $2,$0
-lpe
-mov $0,$1
-mul $0,4
-add $0,8
+sub $0,1
+mov $1,$0
+mul $1,2
+trn $1,1
+mov $2,$1
+sub $1,1
+gcd $1,2
+div $2,2
+add $2,1
+seq $2,2822 ; Numbers m such that 6m-1, 6m+1 are twin primes.
+sub $2,1
+mul $2,3
+add $2,$1
+mov $0,$2
+add $0,1
+mul $0,8

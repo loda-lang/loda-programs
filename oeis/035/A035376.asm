@@ -11,6 +11,7 @@ add $0,3
 lpb $0
   dif $3,2
   add $4,1
+  pow $4,2
   mul $4,2
   sub $0,$3
   mov $2,$0

@@ -1,15 +1,29 @@
 ; A089911: a(n) = Fibonacci(n) mod 12.
-; Submitted by Mumps
+; Submitted by loader3229
 ; 0,1,1,2,3,5,8,1,9,10,7,5,0,5,5,10,3,1,4,5,9,2,11,1,0,1,1,2,3,5,8,1,9,10,7,5,0,5,5,10,3,1,4,5,9,2,11,1,0,1,1,2,3,5,8,1,9,10,7,5,0,5,5,10,3,1,4,5,9,2,11,1,0,1,1,2,3,5,8,1
-; Formula: a(n) = -12*truncate(truncate((min(n,n%2)*c(n)+b(n))/3)/12)+truncate((min(n,n%2)*c(n)+b(n))/3), b(n) = 2*b(n-2)+c(n-2), b(3) = 3, b(2) = 3, b(1) = 0, b(0) = 0, c(n) = 3*c(n-2)-c(n-4), c(6) = 15, c(5) = 6, c(4) = 6, c(3) = 3, c(2) = 3, c(1) = 3, c(0) = 3
+; Formula: a(n) = 4*(n%4-(floor(n/2)%2))*(floor(n/4)%2+1)+3*floor((n%6)/2)-3*(n%6)-3*binomial(-(n%6)+3,-3)-12*truncate((4*(n%4-(floor(n/2)%2))*(floor(n/4)%2+1)+3*floor((n%6)/2)-3*(n%6)-3*binomial(-(n%6)+3,-3)+12)/12)+12
 
-mov $2,3
-lpb $0
-  sub $0,2
-  add $2,$1
-  add $1,$2
-lpe
-mul $0,$2
+mov $1,$0
+mod $1,6
+mov $2,$0
+div $2,2
+mod $2,2
+mov $3,$0
+div $3,4
+mod $3,2
+add $3,1
+mov $4,$1
+mod $0,4
+sub $0,$2
+mul $0,$3
+mul $0,4
+mul $1,-1
+add $1,3
+bin $1,-3
+add $1,$4
+div $4,2
+sub $1,$4
+mul $1,-3
 add $0,$1
-div $0,3
+add $0,12
 mod $0,12

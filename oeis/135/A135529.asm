@@ -1,19 +1,29 @@
 ; A135529: Guy Steele's sequence GS(4,5) (see A135416).
-; Submitted by Simon Strandgaard
+; Submitted by vonboedefeldt
 ; 1,2,2,3,4,3,4,4,6,5,8,4,6,5,8,5,8,7,12,6,10,9,16,5,8,7,12,6,10,9,16,6,10,9,16,8,14,13,24,7,12,11,20,10,18,17,32,6,10,9,16,8,14,13,24,7,12,11,20,10,18,17,32,7,12,11,20,10,18,17,32,9,16,15,28,14,26,25,48,8
 
 #offset 1
 
-mov $2,1
-sub $0,1
+mov $1,$0
 lpb $0
-  sub $0,1
-  mov $3,1
-  add $3,$0
-  gcd $3,2
+  mov $4,$3
+  sub $4,2
+  mul $7,2
+  sub $7,$4
+  add $4,1
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
   div $0,2
-  add $1,$2
-  mul $2,$3
+  mov $2,$4
+  mul $2,$6
+  add $7,$2
+  mov $3,$7
 lpe
-add $1,1
-mov $0,$1
+mov $0,$7
+div $0,2
+add $0,1

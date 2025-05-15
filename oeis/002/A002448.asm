@@ -16,9 +16,7 @@ lpb $0
   add $3,1
   sub $3,$0
   mov $4,$3
-  mod $3,2
-  add $3,1
-  mov $0,$3
+  equ $0,1
 lpe
 add $4,1
 mov $0,$4

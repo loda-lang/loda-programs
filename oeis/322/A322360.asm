@@ -1,27 +1,14 @@
 ; A322360: Multiplicative with a(p^e) = p^2 - 1.
-; Submitted by Simon Strandgaard
+; Submitted by Eric Liskay
 ; 1,3,8,3,24,24,48,3,8,72,120,24,168,144,192,3,288,24,360,72,384,360,528,24,24,504,8,144,840,576,960,3,960,864,1152,24,1368,1080,1344,72,1680,1152,1848,360,192,1584,2208,24,48,72,2304,504,2808,24,2880,144,2880,2520,3480,576,3720,2880,384,3,4032,2880,4488,864,4224,3456,5040,24,5328,4104,192,1080,5760,4032,6240,72
 
 #offset 1
 
-mov $1,1
-mov $2,2
 lpb $0
-  mov $3,$0
-  sub $3,2
-  lpb $3
-    mov $4,$0
-    mod $4,$2
-    min $4,1
-    add $2,1
-    sub $3,$4
-  lpe
-  mov $3,$2
-  pow $3,2
-  sub $3,1
-  lpb $0
-    dif $0,$2
-  lpe
-  mul $1,$3
+  mov $2,$0
+  seq $2,71773 ; a(n) = gcd(rad(n), n/rad(n)), where rad(n) = A007947(n) is the squarefree kernel of n.
+  div $0,$2
 lpe
-mul $0,$1
+mov $1,$0
+seq $1,167344 ; Totally multiplicative sequence with a(p) = (p-1)*(p+1) = p^2-1 for prime p.
+mov $0,$1

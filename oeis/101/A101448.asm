@@ -1,41 +1,13 @@
 ; A101448: Nonnegative numbers k such that 2k + 11 is prime.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by AnandBhat
 ; 0,1,3,4,6,9,10,13,15,16,18,21,24,25,28,30,31,34,36,39,43,45,46,48,49,51,58,60,63,64,69,70,73,76,78,81,84,85,90,91,93,94,100,106,108,109,111,114,115,120,123,126,129,130,133,135,136,141,148,150,151,153,160,163,168,169,171,174,178,181,184,186,189,193,195,199,204,205,210,211
+; Formula: a(n) = truncate((2*A000040(n+4)-14)/4)-2
 
 #offset 1
 
-mov $1,$0
-add $1,3
-mov $3,2
-mov $4,$1
-pow $4,5
-lpb $4
-  mov $6,0
-  mov $2,$3
-  add $2,1
-  lpb $2
-    gcd $6,3
-    mov $7,$2
-    div $7,5
-    lpb $7
-      mov $5,$2
-      mod $5,$6
-      add $6,2
-      sub $7,$5
-    lpe
-    div $2,$6
-    pow $2,2
-    mov $6,1
-  lpe
-  sub $1,$6
-  add $3,2
-  sub $4,$1
-lpe
-mov $1,$3
-div $1,2
-mul $1,6
-add $1,3
-div $1,3
-mov $0,$1
-sub $0,11
-div $0,2
+add $0,4
+seq $0,40 ; The prime numbers.
+mul $0,2
+sub $0,14
+div $0,4
+sub $0,2

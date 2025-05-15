@@ -1,34 +1,11 @@
 ; A097363: Positive integers n such that 2n-13 is prime.
-; Submitted by Cruncher Pete [B@A]
+; Submitted by Athlici
 ; 8,9,10,12,13,15,16,18,21,22,25,27,28,30,33,36,37,40,42,43,46,48,51,55,57,58,60,61,63,70,72,75,76,81,82,85,88,90,93,96,97,102,103,105,106,112,118,120,121,123,126,127,132,135,138,141,142,145,147,148,153,160,162,163,165,172,175,180,181,183,186,190,193,196,198,201,205,207,211,216
+; Formula: a(n) = truncate(A000040(n+1)/2)+7
 
 #offset 1
 
-mov $2,2
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $5,0
-  mov $1,$2
-  add $1,1
-  lpb $1
-    gcd $5,3
-    mov $6,$1
-    div $6,5
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $2,2
-  sub $3,$0
-lpe
-mov $0,$2
+add $0,1
+seq $0,40 ; The prime numbers.
 div $0,2
 add $0,7

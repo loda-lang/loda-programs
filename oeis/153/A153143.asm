@@ -1,34 +1,11 @@
 ; A153143: Nonnegative numbers k such that 2k + 19 is prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by atannir
 ; 0,2,5,6,9,11,12,14,17,20,21,24,26,27,30,32,35,39,41,42,44,45,47,54,56,59,60,65,66,69,72,74,77,80,81,86,87,89,90,96,102,104,105,107,110,111,116,119,122,125,126,129,131,132,137,144,146,147,149,156,159,164,165,167,170,174,177,180,182,185,189,191,195,200,201,206,207,210,212,215
+; Formula: a(n) = truncate((A000040(n+7)-19)/2)
 
 #offset 1
 
-mov $1,6
-mov $2,$0
-pow $2,3
-lpb $2
-  mov $3,$1
-  mov $5,0
-  add $1,2
-  add $3,13
-  lpb $3
-    gcd $5,3
-    mov $6,$3
-    div $6,5
-    lpb $6
-      mov $4,$3
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $3,$5
-    pow $3,2
-    mov $5,-1
-  lpe
-  add $0,$5
-  sub $2,$0
-lpe
-mov $0,$1
+add $0,7
+seq $0,40 ; The prime numbers.
+sub $0,19
 div $0,2
-sub $0,3

@@ -1,15 +1,37 @@
 ; A131711: Period 12: repeat 0, 1, 2, 5, 2, 9, 0, 9, 8, 5, 8, 1.
-; Submitted by Odd-Rod
+; Submitted by loader3229
 ; 0,1,2,5,2,9,0,9,8,5,8,1,0,1,2,5,2,9,0,9,8,5,8,1,0,1,2,5,2,9,0,9,8,5,8,1,0,1,2,5,2,9,0,9,8,5,8,1
-; Formula: a(n) = -10*truncate(b(n)/10)+b(n), b(n) = 2*b(n-1)+b(n-2), b(3) = 5, b(2) = 2, b(1) = 1, b(0) = 0
 
-mov $3,1
+mov $1,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  add $2,$3
-  mov $3,$1
-  add $3,$2
-  mov $1,$2
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  sub $7,$8
+  sub $7,$8
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mul $9,$6
+  div $0,2
+  mov $2,$7
+  add $2,$8
+  mul $2,$6
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mov $4,$8
 lpe
-mov $0,$1
+mov $0,$3
 mod $0,10

@@ -1,23 +1,19 @@
 ; A035867: Coordination sequence for A_41 lattice.
-; Submitted by Simon Strandgaard
+; Submitted by vonboedefeldt
 ; 1,1722,742182,142663682,15514489872,1088445250494,53568798667706,1960718646502086,55727804060652486,1271609411092944406,23921455510392255018,379124273790705666510,5154221723429907663360
 
 add $0,2
 lpb $0
   mov $2,$0
-  max $4,92
-  div $4,2
-  sub $4,5
   sub $0,2
-  sub $2,3
-  add $2,$4
+  add $2,38
   bin $2,$0
-  mov $3,$4
+  mov $3,41
   bin $3,$1
   add $0,1
   add $1,1
   pow $3,2
   mul $3,$2
-  add $5,$3
+  add $4,$3
 lpe
-mov $0,$5
+mov $0,$4

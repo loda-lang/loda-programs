@@ -1,20 +1,11 @@
 ; A082542: a(n) = prime(n) + 2 - (prime(n) mod 4).
-; Submitted by Matt
+; Submitted by AnandBhat
 ; 2,2,6,6,10,14,18,18,22,30,30,38,42,42,46,54,58,62,66,70,74,78,82,90,98,102,102,106,110,114,126,130,138,138,150,150,158,162,166,174,178,182,190,194,198,198,210,222,226,230,234,238,242,250,258,262,270,270,278,282,282,294,306,310,314,318,330,338,346,350,354,358,366,374,378,382,390,398,402,410
+; Formula: a(n) = 4*truncate(A000040(n)/4)+2
 
 #offset 1
 
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
-  add $2,2
-  sub $3,$0
-lpe
-mov $0,$2
+seq $0,40 ; The prime numbers.
 div $0,4
 mul $0,4
 add $0,2

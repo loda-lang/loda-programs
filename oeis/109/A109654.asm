@@ -11,7 +11,6 @@ nrt $1,2
 add $1,$0
 div $1,2
 add $0,$1
-mov $3,0
 mov $4,$0
 pow $4,5
 lpb $4
@@ -24,4 +23,3 @@ lpb $4
 lpe
 mov $0,$3
 add $0,1
-max $0,2

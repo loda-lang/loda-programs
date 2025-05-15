@@ -1,15 +1,32 @@
 ; A003128: Number of driving-point impedances of an n-terminal network.
-; Submitted by Groo
+; Submitted by Aurum
 ; 0,0,1,6,31,160,856,4802,28337,175896,1146931,7841108,56089804,418952508,3261082917,26403700954,221981169447,1934688328192,17454004213180,162765041827846,1566915224106221,15553364227949564,159004783733999787,1672432865100333916,18080717198111781752,200730949348716859960,2286509753657686720281,26701950386498265611598,319445074049914220764543,3912225852314904381468192,49015671112870696848044416,627847620821253920896523434,8217158190076123177956699001,109822340373242596391469592160
-; Formula: a(n) = truncate((-A000110(n+1)+A000110(n)+A033452(n))/2)
 
-mov $2,$0
-seq $2,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-mov $1,$0
-seq $1,33452 ; "STIRLING" transform of squares A000290.
-add $0,1
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
-add $1,$2
-sub $1,$0
+mov $20,1
+mov $3,$0
+lpb $3
+  add $2,1
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,18
+    mov $6,$4
+    add $6,19
+    mul $$6,$4
+    add $$6,$$5
+    sub $4,1
+  lpe
+  sub $3,1
+lpe
+mov $2,0
+mov $3,$0
+lpb $3
+  mov $4,$2
+  seq $4,217 ; Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.
+  add $2,20
+  mul $$2,$4
+  add $1,$$2
+  sub $2,19
+  sub $3,1
+lpe
 mov $0,$1
-div $0,2

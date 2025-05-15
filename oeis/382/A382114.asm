@@ -1,25 +1,13 @@
 ; A382114: Semiperimeter of the unique primitive Pythagorean triple whose inradius is A000108(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
-; Submitted by Conan
+; Submitted by Science United
 ; 6,6,15,66,435,3655,35245,369370,4094091,47292675,564261621,6911763951,86538608325,1103803048701,14305266650521,187980068232586,2500329761730811,33615543537222571,456277456908296101,6246438370759741771,86175353796214314061,1197196443861278161861,16738118900567747790121,235379797036403711485951
+; Formula: a(n) = binomial(2*floor((binomial(2*n,n)+n+1)/(n+1)),2)
 
-add $0,1
-mov $4,$0
-add $4,$0
-lpb $0
-  sub $4,1
-  mov $2,$4
-  bin $2,$0
-  mul $2,2
-  max $4,1
-  mul $0,$1
-  pow $3,0
-  mul $3,2
-  mul $3,$2
-  div $3,$4
-  add $1,6
-  add $1,$3
-lpe
-mov $0,$1
-mul $0,$3
-div $0,8
-add $0,1
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+add $0,$1
+div $0,$1
+mul $0,2
+bin $0,2

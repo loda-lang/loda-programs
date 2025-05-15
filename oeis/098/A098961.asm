@@ -1,29 +1,18 @@
 ; A098961: Sums of two squares and divisible by 13.
-; Submitted by Christian Krause
+; Submitted by Aurum
 ; 13,26,52,65,104,117,130,169,208,221,234,260,325,338,377,416,442,468,481,520,533,585,637,650,676,689,754,793,832,845,884,936,949,962,1040,1053,1066,1105,1157,1170,1261,1274,1300,1313,1352,1378,1417,1469,1508,1521,1573,1586,1625,1664,1690,1768,1781,1872,1885,1898,1924,1937,1989,2041,2080,2106,2132,2197,2210,2249,2314,2340,2353,2405,2509,2522,2548,2561,2600,2626
 
 #offset 1
 
-sub $0,1
+mov $1,1
 mov $2,$0
-pow $2,2
 lpb $2
-  add $1,1
-  mov $3,$1
-  mul $3,4
-  seq $3,4531 ; Number of integer solutions to x^2 + 4 * y^2 = n.
-  mov $5,$3
-  equ $5,0
-  mov $3,$5
-  add $3,1
-  mod $3,2
-  sub $0,$3
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
   sub $2,1
+  mov $3,$1
+  seq $3,70176 ; Let s(n) be smallest number >= n which is a sum of two squares (A001481); sequence gives s(n) - n.
+  add $1,$3
+  add $1,1
 lpe
 mov $0,$1
 mul $0,13
-add $0,13
+sub $0,13

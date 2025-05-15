@@ -1,18 +1,15 @@
 ; A004201: Accept one, reject one, accept two, reject two, ...
-; Submitted by loader3229
+; Submitted by Vertys001
 ; 1,3,4,7,8,9,13,14,15,16,21,22,23,24,25,31,32,33,34,35,36,43,44,45,46,47,48,49,57,58,59,60,61,62,63,64,73,74,75,76,77,78,79,80,81,91,92,93,94,95,96,97,98,99,100,111,112,113,114,115,116,117,118,119,120,121,133,134,135,136,137,138,139,140,141,142,143,144,157,158
-; Formula: a(n) = binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n
+; Formula: a(n) = binomial(truncate((sqrtint(8*n)+1)/2),2)+n
 
 #offset 1
 
-sub $0,1
 mov $1,$0
 mul $1,8
-add $1,1
 nrt $1,2
 add $1,1
 div $1,2
 bin $1,2
-add $0,1
 add $1,$0
 mov $0,$1

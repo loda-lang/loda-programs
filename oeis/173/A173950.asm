@@ -1,27 +1,18 @@
 ; A173950: a(n) = 1 if 6 divides (prime(n) + 1), a(n) = -1 if 6 divides (prime(n) - 1), a(n) = 0 otherwise.
-; Submitted by Skillz
+; Submitted by Karlsson
 ; 0,0,1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,1,1,1,-1,-1,1,-1,-1,1,1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,1,1,1,-1,1,-1,1,-1,-1,-1,1,-1,1,1,-1,1,1,1,1,-1,-1,1,-1,1,-1,1,-1,1,-1,-1,1,-1,1,1,-1,-1,-1,1,1,-1,1,-1
+; Formula: a(n) = truncate((-truncate((-2*A000040(n)+1)/(gcd(A000040(n),2)+2))*(gcd(A000040(n),2)+2)-2*A000040(n)+1)^(-truncate((-2*A000040(n)+1)/(gcd(A000040(n),2)+2))*(gcd(A000040(n),2)+2)-2*A000040(n)+1))
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
-mov $0,$3
-add $0,1
-max $0,2
+mov $2,$0
+seq $2,40 ; The prime numbers.
 mov $1,1
-sub $1,$0
-sub $1,$0
-gcd $0,2
-add $0,2
-mod $1,$0
+sub $1,$2
+sub $1,$2
+gcd $2,2
+add $2,2
+mod $1,$2
 pow $1,$1
+sub $0,1
 mov $0,$1

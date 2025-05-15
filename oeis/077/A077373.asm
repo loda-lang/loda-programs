@@ -1,37 +1,38 @@
 ; A077373: Fibonacci numbers whose external digits as well as internal digits form a Fibonacci number.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,1,1,2,3,5,8,13,21,34,55,89
 
 #offset 1
 
 sub $0,1
-mov $1,$0
-mov $4,1
+min $0,97
+mov $3,$0
+mov $6,1
 lpb $0
-  mul $7,$4
-  mul $7,2
-  mov $8,$3
-  pow $8,2
-  mov $9,$4
-  pow $9,2
-  sub $7,$8
-  add $8,$9
-  mov $9,$8
-  sub $9,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
   mul $9,$6
+  mul $9,2
+  mov $2,$5
+  pow $2,2
+  sub $9,$2
+  mov $1,$6
+  pow $1,2
+  add $2,$1
+  mov $1,$2
+  sub $1,$9
+  mov $7,$0
+  max $7,1
+  log $7,2
+  mov $8,2
+  pow $8,$7
+  ban $8,$3
+  neq $8,0
   div $0,2
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
+  mul $1,$8
+  mov $4,$9
+  mul $4,$8
+  add $9,$1
+  add $2,$4
+  mov $5,$9
+  mov $6,$2
 lpe
-mov $0,$3
+mov $0,$5

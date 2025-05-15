@@ -1,17 +1,20 @@
 ; A026232: a(n) = (1/3)*(s(n) + 1), where s = A026231.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 3,6,7,9,12,15,16,18,19,21,24,25,27,30,33,34,36,39,42,43,45,46,48,51,52,54,55,57,60,61,63,66,69,70,72,73,75,78,79,81,84,87,88,90,93,96,97,99,100,102,105,106,108,111,114,115,117,120,123
 
 #offset 1
 
-mov $2,2
 sub $0,1
-lpb $0
+mov $2,2
+mov $3,$0
+lpb $3
   mov $1,$2
   add $1,1
-  seq $1,60236 ; If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
-  sub $0,$1
+  dir $1,3
+  mod $1,3
   add $2,3
+  sub $3,$1
 lpe
-add $0,$2
+add $3,$2
+mov $0,$3
 add $0,1

@@ -1,10 +1,9 @@
 ; A141138: a(n) = prime(A028815(n) - 1) - 1.
-; Submitted by Science United
+; Submitted by Matthias Lehmkuhl
 ; 1,2,4,10,16,30,40,58,66,82,108,126,156,178,190,210,240,276,282,330,352,366,400,430,460,508,546,562,586,598,616,708,738,772,796,858,876,918,966,990,1030,1062,1086,1152,1170,1200,1216,1296,1408,1432,1446,1470,1498,1522,1596,1620,1668,1722,1740,1786,1822,1846,1912,2026,2062,2080,2098,2220,2268,2340,2350,2380,2416,2476,2548,2608,2646,2682,2718,2748
-; Formula: a(n) = A008578(A008578(n+2)+2)-1
+; Formula: a(n) = A000040(A008578(n+1))-1
 
-add $0,2
+add $0,1
 seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
-add $0,2
-seq $0,8578 ; Prime numbers at the beginning of the 20th century (today 1 is no longer regarded as a prime).
+seq $0,40 ; The prime numbers.
 sub $0,1

@@ -1,20 +1,18 @@
 ; A359212: Number of divisors of 3*n-2 of form 3*k+1.
-; Submitted by Science United
+; Submitted by Dongha Hwang
 ; 1,2,2,2,2,3,2,2,2,4,2,2,2,4,2,2,3,4,2,2,2,4,2,4,2,4,2,2,2,4,4,2,2,5,2,2,2,6,2,2,2,4,2,4,4,4,2,2,2,4,2,4,2,6,2,2,3,4,4,2,2,4,2,4,2,6,2,2,2,6,2,2,4,6,2,2,2,4,2,4
 
 #offset 1
 
-mov $2,$0
-mov $4,$0
-sub $0,1
-lpb $4
-  sub $4,1
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  gcd $1,$4
-  bin $1,$0
-  add $2,2
-  add $3,$1
+mov $1,1
+mov $2,34
+lpb $0
+  sub $0,1
+  mov $3,$0
+  gcd $3,$1
+  div $3,$1
+  add $1,3
+  add $2,$3
 lpe
-mov $0,$3
+mov $0,$2
+sub $0,34

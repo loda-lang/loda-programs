@@ -4,24 +4,16 @@
 
 mov $1,$0
 lpb $0
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  pow $3,$6
-  mov $7,$3
-  mul $2,2
-  mov $4,$2
+  mov $4,$0
+  max $4,1
+  log $4,2
+  mov $3,2
+  pow $3,$4
+  ban $3,$1
+  neq $3,0
   div $0,2
-  mov $2,$3
-  add $2,$4
-  add $2,1
-  mov $3,0
-  sub $3,$7
-  mul $7,2
-  sub $2,$7
-  add $3,$7
+  mul $1,$3
+  mul $2,2
+  add $2,$3
 lpe
 mov $0,$2
