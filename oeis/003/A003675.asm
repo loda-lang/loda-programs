@@ -1,29 +1,30 @@
 ; A003675: Decimal expansion of neutron mass (mass units).
-; Submitted by NeoGen
+; Submitted by loader3229
 ; 1,0,0,8,6,6,4,9,1
-; Formula: a(n) = -10*truncate((-10*truncate(c(n+1)/10)+c(n+1)+10)/10)-10*truncate(c(n+1)/10)+c(n+1)+10, b(n) = -b(n-1)-c(n-2)-e(n-3)+c(n-3)+e(n-2)+1, b(5) = 6, b(4) = -2, b(3) = 1, b(2) = 0, b(1) = 1, b(0) = 0, c(n) = -d(n-1)+b(n-1), c(5) = -2, c(4) = 0, c(3) = 0, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = truncate((-e(n-1)+c(n-1))/2), d(5) = 0, d(4) = 0, d(3) = 1, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = -b(n-1)+c(n-1)+d(n-1), e(5) = 2, e(4) = 0, e(3) = 1, e(2) = -1, e(1) = 0, e(0) = 0
 
 #offset 1
 
-add $0,1
+mov $1,$0
+mov $3,1
+mov $4,1
 lpb $0
-  sub $0,1
-  sub $4,$6
-  mul $2,-1
-  add $2,$4
-  sub $3,$4
-  add $5,$2
-  sub $1,$4
-  sub $4,$5
-  add $6,$5
-  add $2,$1
-  add $2,1
-  add $5,$4
-  mov $1,$3
-  mov $3,$5
-  div $5,2
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mov $7,$3
+  div $0,2
+  bxo $2,1
+  bor $2,$4
+  sub $6,$1
+  bor $6,$3
+  bxo $3,$2
+  bxo $4,$6
 lpe
-mov $0,$4
+mov $0,$7
 mod $0,10
 add $0,10
 mod $0,10

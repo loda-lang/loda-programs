@@ -1,5 +1,5 @@
 ; A054403: Result of third stage of sieve of Eratosthenes (after eliminating multiples of 2, 3 and 5).
-; Submitted by Josemi
+; Submitted by vonboedefeldt
 ; 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,49,53,59,61,67,71,73,77,79,83,89,91,97,101,103,107,109,113,119,121,127,131,133,137,139,143,149,151,157,161,163,167,169,173,179,181,187,191,193,197,199,203,209,211
 
 #offset 1
@@ -13,9 +13,6 @@ mov $7,2
 mov $2,$0
 pow $2,5
 lpb $2
-  mov $5,$6
-  nrt $5,2
-  div $5,5
   lpb $5
     mov $3,$6
     mod $3,5

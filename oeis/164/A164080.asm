@@ -1,18 +1,44 @@
 ; A164080: Perfect squares one less than a triangular number.
-; Submitted by Jamie Morken(w3)
+; Submitted by amazing
 ; 0,9,324,11025,374544,12723489,432224100,14682895929,498786237504,16944049179225,575598885856164,19553418069930369,664240615491776400,22564627508650467249,766533094678624110084,26039560591564569275625
-; Formula: a(n) = c(n-1)^2, b(n) = 4*c(n-1)+b(n-1), b(1) = 3, b(0) = 3, c(n) = 5*c(n-1)+b(n-1), c(1) = 3, c(0) = 0
 
 #offset 1
 
-mov $2,3
 sub $0,1
+mul $0,2
+mov $1,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  mov $1,$3
-  mul $1,4
-  add $2,$1
-  add $3,$2
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  sub $7,$8
+  sub $7,$8
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mul $9,$6
+  div $0,2
+  mov $2,$7
+  add $2,$8
+  mul $2,$6
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mov $4,$8
 lpe
-pow $3,2
-mov $0,$3
+mul $7,2
+pow $7,2
+mov $0,$7
+div $0,16
+mul $0,9

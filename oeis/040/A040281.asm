@@ -1,28 +1,17 @@
 ; A040281: Continued fraction for sqrt(299).
-; Submitted by matszpk
+; Submitted by shiva
 ; 17,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3,34,3,2,3
+; Formula: a(n) = gcd(floor(max((2*gcd(n,4)-2)^2-3,0)/(0^n+1)),max(2,floor(max((2*gcd(n,4)-2)^2-3,0)/(0^n+1))))+1
 
+pow $1,$0
+add $1,1
+gcd $0,4
+sub $0,1
 mul $0,2
-mov $1,$0
-mov $2,10
-mov $4,$0
-mod $4,4
-gcd $0,8
-lpb $1
-  mov $1,3
-  add $0,6
-  mov $2,7
-lpe
-mul $0,$2
-trn $0,63
+pow $0,2
+trn $0,3
+div $0,$1
+mov $2,2
+max $2,$0
+gcd $0,$2
 add $0,1
-add $0,$4
-dif $0,2
-mov $3,$0
-mul $3,2
-div $0,4
-add $3,$0
-mul $0,7
-add $0,$3
-dif $0,2
-dif $0,4

@@ -1,21 +1,23 @@
 ; A259566: Numbers following gaps in the sequence of base-3 numbers that don't contain 0.
-; Submitted by GolfSierra
+; Submitted by loader3229
 ; 1,4,7,13,16,22,25,40,43,49,52,67,70,76,79,121,124,130,133,148,151,157,160,202,205,211,214,229,232,238,241,364,367,373,376,391,394,400,403,445,448,454,457,472,475,481,484,607,610,616,619,634,637,643,646,688,691,697,700,715,718,724,727,1093,1096,1102,1105,1120
 
 #offset 1
 
 mov $1,$0
-mov $3,1
-div $0,2
-sub $0,1
 lpb $0
-  mov $2,$0
-  mul $2,$3
-  sub $0,1
+  mov $4,$0
+  max $4,1
+  log $4,2
+  mov $3,2
+  pow $3,$4
+  ban $3,$1
+  neq $3,0
+  add $3,$2
   div $0,2
-  add $1,$2
-  mul $3,3
+  mov $2,$3
+  bor $2,1
+  mul $2,3
 lpe
-mov $0,$1
-mul $0,3
-sub $0,2
+mov $0,$2
+div $0,2

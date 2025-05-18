@@ -1,12 +1,10 @@
 ; A069283: a(n) = -1 + number of odd divisors of n.
-; Submitted by ChelseaOilman
+; Submitted by vonboedefeldt
 ; 0,0,0,1,0,1,1,1,0,2,1,1,1,1,1,3,0,1,2,1,1,3,1,1,1,2,1,3,1,1,3,1,0,3,1,3,2,1,1,3,1,1,3,1,1,5,1,1,1,2,2,3,1,1,3,3,1,3,1,1,3,1,1,5,0,3,3,1,1,3,3,1,2,1,1,5,1,3,3,1
-; Formula: a(n) = truncate((A054844(max(n-1,0)+1)-2)/2)
+; Formula: a(n) = max(A001227(n),1)-1
 
-mov $1,$0
-trn $1,1
-add $1,1
-seq $1,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+seq $0,1227 ; Number of odd divisors of n.
+add $1,$0
+max $1,1
 mov $0,$1
-sub $0,2
-div $0,2
+sub $0,1

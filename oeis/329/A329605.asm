@@ -9,5 +9,4 @@ mov $1,$0
 seq $1,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
 mul $1,$0
 seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $2,$0
 mov $0,$1

@@ -11,12 +11,12 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,2
+    add $7,1
     seq $7,193383 ; G.f. is the imaginary part of the function C(x) that satisfies: C(x) = 1 + x/C(I*x).
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     add $5,1
     add $6,$7

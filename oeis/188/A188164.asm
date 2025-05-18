@@ -1,12 +1,36 @@
 ; A188164: Number of palindromic structures of length n.
-; Submitted by BarnardsStern
+; Submitted by Science United
 ; 1,1,1,2,2,5,5,15,15,52,52,203,203,877,877,4140,4140,21147,21147,115975,115975,678570,678570,4213597,4213597,27644437,27644437,190899322,190899322,1382958545,1382958545
-; Formula: a(n) = truncate(A137341(floor((n+1)/2))/A000142(floor((n+1)/2)))
 
-add $0,1
-div $0,2
-mov $1,$0
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $1,137341 ; a(n) = n! * A000110(n) where A000110 is the sequence of Bell numbers.
-div $1,$0
+mov $19,1
+mov $20,2
+mov $3,$0
+lpb $3
+  sub $3,1
+  add $2,1
+  mov $4,$2
+  lpb $4
+    mov $5,$4
+    add $5,18
+    mov $6,$4
+    add $6,19
+    mov $7,$4
+    mul $$6,$7
+    add $$6,$$5
+    max $3,1
+    sub $4,1
+  lpe
+  sub $3,1
+  mov $19,0
+lpe
+mov $2,1
+mov $3,$0
+lpb $3
+  add $2,20
+  add $1,$$2
+  sub $2,19
+  sub $3,1
+lpe
 mov $0,$1
+div $0,3
+add $0,1

@@ -1,7 +1,7 @@
 ; A354030: a(n) = 1 if n is either 1 or a prime power of the form 4m+1, otherwise 0.
-; Submitted by zelandonii
+; Submitted by Ralfy
 ; 1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-; Formula: a(n) = -2*truncate((truncate((A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1)/gcd(A010055(max(0,n-1)+1)*(n+9)+truncate((A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1))/A003557(A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1))+A010055(max(0,n-1)+1)+2,A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1))-1)/2)+truncate((A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1)/gcd(A010055(max(0,n-1)+1)*(n+9)+truncate((A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1))/A003557(A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1))+A010055(max(0,n-1)+1)+2,A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1))-1
+; Formula: a(n) = -2*truncate((truncate((A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1)/gcd(2,A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1))-1)/2)+truncate((A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1)/gcd(2,A010055(max(0,n-1)+1)*(n+9)+A010055(max(0,n-1)+1)+1))-1
 
 #offset 1
 
@@ -14,16 +14,7 @@ mul $0,$2
 add $0,$2
 mov $4,$0
 add $4,1
-mov $1,$0
-add $1,1
-mov $6,$1
-seq $6,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-sub $1,1
-mov $5,$1
-div $5,$6
-add $1,$5
-add $1,2
-mov $3,$1
+mov $3,2
 gcd $3,$4
 mov $1,$4
 div $1,$3

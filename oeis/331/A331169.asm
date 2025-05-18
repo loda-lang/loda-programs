@@ -8,7 +8,6 @@ mov $2,$0
 seq $2,181811 ; a(n) = smallest integer that, upon multiplying any divisor of n, produces a member of A025487.
 mul $2,$0
 seq $2,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
-mov $3,$0
 sub $0,$2
 max $0,0
 mov $1,$0

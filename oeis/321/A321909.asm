@@ -11,11 +11,11 @@ lpb $3
       mov $1,$0
       mod $1,$2
       div $0,$2
-      add $3,2
       sub $4,$1
     lpe
   lpe
   mov $1,$0
+  add $1,1
   neq $1,1
   add $2,1
   sub $3,$1

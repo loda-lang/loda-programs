@@ -2,7 +2,6 @@ A000004: The zero sequence.
 A000012: The simplest sequence of positive numbers: the all 1's sequence.
 A000034: Period 2: repeat [1, 2]; a(n) = 1 + (n mod 2).
 A000065: -1 + number of partitions of n.
-A000120: 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
 A000142: Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 A000169: Number of labeled rooted trees with n nodes: n^(n-1).
 A000265: Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.

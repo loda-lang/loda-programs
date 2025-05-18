@@ -6,12 +6,8 @@ mov $1,$0
 lpb $0
   mov $4,$3
   pow $4,2
-  mul $7,2
-  sub $7,$4
-  add $4,1
   mov $2,$4
-  sub $2,$7
-  equ $2,1
+  neq $2,4
   mov $5,$0
   max $5,1
   log $5,2
@@ -21,6 +17,8 @@ lpb $0
   neq $6,0
   div $0,2
   mul $2,$6
+  mul $7,2
+  sub $7,$4
   add $7,$2
   mov $3,$7
 lpe

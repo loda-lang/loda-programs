@@ -1,5 +1,5 @@
 ; A129968: a(n) = sum of digits of A061909(n).
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by srobards
 ; 1,2,3,1,2,3,4,2,3,4,3,4,1,2,3,4,2,3,4,5,3,4,5,4,2,3,4,3,4,5,4,5,3,4,4,5,1,2,3,4,2,3,4,5,3,4,5,4,5,2,3,4,5,3,4,5,6,4,5,6,5,3,4,5,4,5,6,5,4,5,2,3,4,3,4,5,4,5,6,3
 
 #offset 1
@@ -9,7 +9,8 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
-  seq $4,4159 ; Sum of digits of n^2.
+  mul $4,$1
+  dgs $4,10
   mov $3,$1
   dgs $3,10
   pow $3,2

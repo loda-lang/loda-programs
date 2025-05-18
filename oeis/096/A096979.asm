@@ -1,40 +1,42 @@
 ; A096979: Sum of the areas of the first n+1 Pell triangles.
-; Submitted by loader3229
+; Submitted by Science United
 ; 0,1,6,36,210,1225,7140,41616,242556,1413721,8239770,48024900,279909630,1631432881,9508687656,55420693056,323015470680,1882672131025,10973017315470,63955431761796,372759573255306,2172602007770041
 
-mov $1,$0
-mov $4,1
+mov $2,$0
+mov $5,1
 lpb $0
-  mul $7,$4
-  mul $7,2
-  mov $8,$3
-  pow $8,2
+  mul $8,$5
+  mul $8,2
   mov $9,$4
   pow $9,2
-  sub $7,$8
-  sub $7,$8
-  add $8,$9
-  mov $9,$8
-  sub $9,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mul $9,$6
+  mov $10,$5
+  pow $10,2
+  sub $8,$9
+  sub $8,$9
+  add $9,$10
+  mov $10,$9
+  sub $10,$8
+  mov $6,$0
+  max $6,1
+  log $6,2
+  mov $7,2
+  pow $7,$6
+  ban $7,$2
+  neq $7,0
+  mul $10,$7
   div $0,2
-  mov $2,$7
-  add $2,$8
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $10,$8
-  mov $3,$7
+  mov $3,$8
+  add $3,$9
+  mul $3,$7
+  add $8,$10
+  add $9,$3
   mov $4,$8
-  mul $8,$10
-  div $8,2
+  mov $5,$9
 lpe
-mov $0,$8
+add $4,$5
+mov $0,$4
 div $0,2
+add $0,1
+mov $1,$0
+bin $1,2
+mov $0,$1

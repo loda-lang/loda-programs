@@ -1,19 +1,12 @@
 ; A040104: First ten consecutive primes which are emirps.
-; Submitted by arkiss
+; Submitted by Dirk Broer
 ; 1193,1201,1213,1217,1223,1229,1231,1237,1249,1259
+; Formula: a(n) = A000040(n+195)
 
 #offset 1
 
-add $0,195
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $1,$3
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
-  sub $2,$0
-  add $3,2
-lpe
-mov $0,$3
-add $0,1
+sub $0,1
+mov $1,196
+add $1,$0
+seq $1,40 ; The prime numbers.
+mov $0,$1

@@ -1,31 +1,18 @@
 ; A132194: a(n) = 1 if n-th prime is 0 or 2 mod 3, otherwise 0.
-; Submitted by LCB001
+; Submitted by Science United
 ; 1,1,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0
+; Formula: a(n) = gcd(binomial(2*A000040(n)-6*truncate(A000040(n)/3)+1,3),4*A000040(n)-12*truncate(A000040(n)/3)-2)-1
 
 #offset 1
 
-mov $5,$0
-pow $5,5
-lpb $5
-  mov $3,$4
-  add $3,1
-  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$3
-  add $4,2
-  sub $5,$0
-lpe
-mov $0,$4
-trn $0,2
-add $0,2
-gcd $0,3
-mov $1,1
-div $1,$0
-mov $2,$1
-add $2,11
-pow $2,2
-mov $0,$2
+seq $0,40 ; The prime numbers.
+mod $0,3
 mul $0,2
-pow $0,2
-add $1,$0
-mul $0,$1
-div $0,3459729276
+sub $0,1
+mov $1,$0
+mul $0,2
+add $1,2
+bin $1,3
+gcd $1,$0
+mov $0,$1
+sub $0,1

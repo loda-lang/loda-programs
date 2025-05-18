@@ -1,11 +1,21 @@
 ; A109263: A Catalan transform of F(n-1)-0^n.
-; Submitted by Christian Krause
+; Submitted by Athlici
 ; 0,0,1,3,10,34,118,416,1485,5355,19473,71313,262735,973027,3619955,13521307,50684778,190597594,718788034,2717755820,10300186824,39121645886,148884623768,567643844338,2167882951110,8292331115104
 
-seq $0,165201 ; Expansion of 1/(1-x*c(x)^3), c(x) the g.f. of A000108.
-lpb $0
-  mov $1,$0
-  seq $1,66628 ; a(n) = n - the largest Fibonacci number <= n.
-  mov $0,0
+mov $5,$0
+lpb $5
+  sub $5,1
+  mov $7,$6
+  mul $4,-1
+  mov $1,$3
+  add $1,$5
+  mul $1,2
+  bin $1,$3
+  sub $1,$6
+  add $1,$2
+  add $2,$4
+  add $3,1
+  add $4,$6
+  mov $6,$1
 lpe
-mov $0,$1
+mov $0,$7

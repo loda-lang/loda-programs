@@ -22,7 +22,6 @@ lpb $4
   mov $5,$6
   gcd $5,$0
   div $5,$0
-  mov $0,$5
   mul $1,$5
   add $3,$1
 lpe

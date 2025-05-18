@@ -1,26 +1,12 @@
 ; A277589: Numbers k such that k/10^m == 2 mod 10, where 10^m is the greatest power of 10 that divides n.
-; Submitted by Skillz
+; Submitted by omegaintellisys
 ; 2,12,20,22,32,42,52,62,72,82,92,102,112,120,122,132,142,152,162,172,182,192,200,202,212,220,222,232,242,252,262,272,282,292,302,312,320,322,332,342,352,362,372,382,392,402,412,420,422,432,442,452,462,472,482,492,502,512,520,522,532,542,552,562,572,582,592,602,612,620,622,632,642,652,662,672,682,692,702,712
+; Formula: a(n) = truncate((20*A277597(n)-19)/10)+2
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mul $2,2
-add $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,65881 ; Ultimate modulo 10: right-hand nonzero digit of n.
-  equ $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
-lpe
-mov $0,$1
-add $0,1
+seq $0,277597 ; a(n) = (1/2)*A277589(n).
+mul $0,20
+sub $0,19
+div $0,10
+add $0,2

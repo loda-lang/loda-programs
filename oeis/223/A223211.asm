@@ -1,18 +1,46 @@
 ; A223211: 3 X 3 X 3 triangular graph coloring a rectangular array: number of n X 1 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 6,18,60,192,624,2016,6528,21120,68352,221184,715776,2316288,7495680,24256512,78495744,254017536,822018048,2660106240,8608284672,27856994304,90147127296,291722231808,944032972800,3054954872832,9886041636864,31991902765056,103527972077568,335023555215360,1084158998740992,3508412218343424,11353460431650816,36740569736675328,118894981199953920,384752241346609152,1245084407493033984,4029177780372504576,13038693190717145088,42194097502924308480,136542967768717197312,441862325549131628544
-; Formula: a(n) = 6*gcd(c(n-1),min(n-1,0)), b(n) = b(n-1)+c(n-1), b(1) = 1, b(0) = 0, c(n) = -3*c(n-1)+b(n-1), c(1) = -3, c(0) = 1
 
 #offset 1
 
-mov $2,1
 sub $0,1
+mov $1,$0
+mov $4,1
 lpb $0
-  sub $0,1
-  add $1,$2
-  mul $2,-4
-  add $2,$1
+  mul $7,$4
+  mul $7,2
+  mov $8,$3
+  pow $8,2
+  mov $9,$4
+  pow $9,2
+  mov $10,$8
+  mul $10,3
+  sub $7,$8
+  sub $7,$10
+  add $8,$9
+  mov $9,$8
+  sub $9,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  mul $9,$6
+  mov $10,$8
+  mul $10,3
+  trn $7,$9
+  div $0,2
+  mov $2,$7
+  add $2,$10
+  mul $2,$6
+  sub $2,$9
+  add $7,$9
+  add $8,$2
+  mov $3,$7
+  mov $4,$8
 lpe
-gcd $2,$0
-mov $0,$2
+mov $0,$4
 mul $0,6

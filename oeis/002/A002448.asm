@@ -12,8 +12,6 @@ lpb $0
   equ $0,$2
   mul $0,8
   add $0,63
-  div $3,2
-  add $3,1
   sub $3,$0
   mov $4,$3
   equ $0,1

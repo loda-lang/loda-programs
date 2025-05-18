@@ -13,7 +13,6 @@ lpb $2
   mov $3,$1
   mul $3,2
   add $3,1
-  mov $6,0
   max $6,$3
   mov $5,$6
   add $6,1

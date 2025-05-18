@@ -1,7 +1,13 @@
 ; A100279: a(n) = A100107(A000032(n)).
-; Submitted by [SG-FC] hl
+; Submitted by Aurum
 ; 4,1,5,11,30,200,5880,1149852,6643838880,7639424866275970,50755107359004694925071660,387739824812222466915538827541705412334750,19679776435706023589554719270187917683310683639911856695096924149852
-; Formula: a(n) = A100107(A000032(n))
 
-seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
-seq $0,100107 ; Inverse Moebius transform of Lucas numbers (A000032) 1,3,4,7,11,..
+add $0,1
+mov $1,3
+lpb $1
+  mov $1,1
+  min $0,13
+  sub $0,1
+  seq $0,32 ; Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
+  seq $0,100107 ; Inverse Moebius transform of Lucas numbers (A000032) 1,3,4,7,11,..
+lpe
