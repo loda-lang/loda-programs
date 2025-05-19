@@ -1,38 +1,19 @@
 ; A208088: Number of 7 X (n+1) 0..1 arrays with every 2 X 2 subblock having the same number of equal edges as its horizontal neighbors and a different number from its vertical neighbors, and new values 0..1 introduced in row major order.
-; Submitted by loader3229
+; Submitted by Science United
 ; 108,180,288,468,756,1224,1980,3204,5184,8388,13572,21960,35532,57492,93024,150516,243540,394056,637596,1031652,1669248,2700900,4370148,7071048,11441196,18512244,29953440,48465684,78419124,126884808,205303932,332188740,537492672,869681412,1407174084,2276855496,3684029580,5960885076,9644914656,15605799732,25250714388,40856514120,66107228508,106963742628,173070971136,280034713764,453105684900,733140398664,1186246083564,1919386482228,3105632565792,5025019048020,8130651613812,13155670661832
+; Formula: a(n) = 36*truncate(b(n+4)/2), b(n) = b(n-1)+b(n-2), b(1) = 0, b(0) = 2
 
 #offset 1
 
-add $0,3
-mov $1,$0
-mov $4,1
+mov $1,2
+mov $2,-2
+add $0,4
 lpb $0
-  mul $7,$4
-  mul $7,2
-  mov $8,$3
-  pow $8,2
-  mov $9,$4
-  pow $9,2
-  sub $7,$8
-  add $8,$9
-  mov $9,$8
-  sub $9,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mul $9,$6
-  div $0,2
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
+  sub $0,1
+  mov $3,$2
+  mov $2,$1
+  add $1,$3
 lpe
-mov $0,$3
+mov $0,$1
+div $0,2
 mul $0,36

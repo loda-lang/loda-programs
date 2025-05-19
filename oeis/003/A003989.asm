@@ -1,17 +1,18 @@
 ; A003989: Triangle T from the array A(x, y) = gcd(x,y), for x >= 1, y >= 1, read by antidiagonals.
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,1,1,1,2,1,1,1,1,1,1,2,3,2,1,1,1,1,1,1,1,1,2,1,4,1,2,1,1,1,3,1,1,3,1,1,1,2,1,2,5,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,3,4,1,6,1,4,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2
+; Formula: a(n) = gcd(truncate((sqrtint(8*n)+1)/2)+1,-binomial(truncate((sqrtint(8*n)+1)/2),2)+n)
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  sub $0,$1
-  add $1,1
-lpe
-add $1,1
+mov $2,$0
+mul $0,8
+nrt $0,2
 add $0,1
-lpb $0
-  gcd $0,$1
-lpe
+div $0,2
+mov $1,$0
+add $1,1
+bin $0,2
+sub $2,$0
+gcd $1,$2
+mov $0,$1

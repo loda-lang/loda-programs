@@ -4,6 +4,4 @@
 
 add $0,1
 seq $0,98350 ; Multiplication table of the primes read by antidiagonals.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

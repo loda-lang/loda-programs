@@ -14,7 +14,13 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  add $5,2
+  div $5,2
+  bin $5,2
+  equ $0,$5
   add $3,$0
   add $4,$3
 lpe

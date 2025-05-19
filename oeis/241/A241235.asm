@@ -1,17 +1,14 @@
 ; A241235: a(n) = number of times n appears in A006949.
-; Submitted by [AF] Kalianthys
+; Submitted by loader3229
 ; 3,3,1,4,1,2,1,5,1,2,1,3,1,2,1,6,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,7,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,8,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1,5
 
 #offset 1
 
-sub $0,1
-max $0,1
-mul $0,2
-lpb $0
-  div $0,2
-  dif $0,-2
-  add $1,3
-lpe
-div $1,3
+mov $1,$0
+max $1,2
+lex $1,2
+dir $0,2
+equ $0,1
+add $1,$0
 mov $0,$1
 add $0,1

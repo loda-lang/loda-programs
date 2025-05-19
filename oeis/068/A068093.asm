@@ -1,19 +1,16 @@
 ; A068093: Smallest n-digit triangular number.
 ; Submitted by Science United
 ; 1,10,105,1035,10011,100128,1000405,10001628,100005153,1000006281,10000020331,100000404505,1000001326005,10000002437316,100000012392316,1000000042485480,10000000037150046,100000000000018810,1000000000179470703,10000000002237948990
-; Formula: a(n) = truncate((truncate((sqrtint(8*10^(n-1))+1)/2)*(truncate((sqrtint(8*10^(n-1))+1)/2)+1))/2)
+; Formula: a(n) = binomial(truncate((sqrtint(8*10^(n-1))+3)/2),2)
 
 #offset 1
 
 sub $0,1
-mov $2,10
-pow $2,$0
-mov $0,$2
-mul $0,8
-nrt $0,2
-add $0,1
-div $0,2
-mov $1,$0
-add $0,1
-mul $0,$1
-div $0,2
+mov $1,10
+pow $1,$0
+mul $1,8
+nrt $1,2
+add $1,3
+div $1,2
+bin $1,2
+mov $0,$1

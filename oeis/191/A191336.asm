@@ -14,7 +14,6 @@ mov $6,$7
 nrt $6,2
 mul $5,3
 add $5,$6
-mov $4,$0
 mov $4,$5
 add $0,1
 mov $2,2

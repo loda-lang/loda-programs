@@ -1,9 +1,28 @@
 ; A084472: Write n in binary and replace 0 with 00.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,100,11,10000,1001,1100,111,1000000,100001,100100,10011,110000,11001,11100,1111,100000000,10000001,10000100,1000011,10010000,1001001,1001100,100111,11000000,1100001,1100100,110011,1110000
-; Formula: a(n) = A007088(A084471(n))
 
 #offset 1
 
-seq $0,84471 ; Change 0 to 00 in binary representation of n.
-seq $0,7088 ; The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
+mov $1,$0
+lpb $0
+  mov $4,$3
+  add $4,1
+  mul $7,10
+  mov $2,$4
+  sub $2,$7
+  mov $5,$0
+  max $5,1
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  ban $6,$1
+  neq $6,0
+  div $0,2
+  mul $2,$6
+  add $7,$2
+  mul $7,10
+  mov $3,$7
+lpe
+mov $0,$3
+div $0,10

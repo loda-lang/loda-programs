@@ -5,6 +5,4 @@
 
 seq $0,3961 ; Completely multiplicative with a(prime(k)) = prime(k+1).
 seq $0,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

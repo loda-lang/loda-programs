@@ -17,7 +17,6 @@ lpb $4
   mov $5,$0
   sub $5,1
   seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  sub $0,2
   mul $1,$5
   add $3,$1
 lpe

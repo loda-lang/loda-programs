@@ -5,7 +5,6 @@
 pow $0,2
 mul $0,4
 mov $1,$0
-mov $10,0
 trn $0,1
 mov $2,$0
 mov $3,-1
@@ -24,7 +23,6 @@ mul $5,2
 mov $6,-2
 bin $6,$4
 div $6,$5
-mov $7,0
 mov $9,3
 sub $4,$6
 mul $4,2
@@ -50,7 +48,6 @@ lpe
 mov $4,$7
 mul $4,$5
 div $4,2
-max $4,0
 mul $4,2
 mod $0,4
 mul $0,$4

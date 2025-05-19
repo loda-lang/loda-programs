@@ -11,7 +11,6 @@ pow $2,2
 lpb $2
   sub $2,1
   mov $3,$1
-  add $3,1
   seq $3,292666 ; Rank of n*(e+1) when all the numbers j*(e-1) and k*(e+1), for j>=1, k>=1, are jointly ranked.
   div $3,2
   mov $5,$3

@@ -1,13 +1,32 @@
 ; A290583: a(n) is the factor R(n) having prime factors < (2/3)*n^2 in A285388(n) = R(n)P(n).
 ; Submitted by vanos0512
 ; 1,1,15,45,28665,119301,5945469075,349882586625,37442407704398235,16728192398775,15367416005321626675,25155676359358573576275,8796919422969373203777212374275,276042834397113472381083873409429425
-; Formula: a(n) = gcd(A285388(n),A000142(n^2))
 
 #offset 1
 
+mov $2,$0
+pow $2,2
+sub $2,1
+mov $4,$2
+mul $4,4
+mov $5,$2
+mul $2,2
+bin $2,$5
+dir $2,2
+mov $3,2
+add $3,$4
+mul $3,$2
+mov $2,$3
+div $2,2
 mov $1,$0
-seq $1,285388 ; a(n) = numerator of ((1/n) * Sum_{k=0..n^2-1} binomial(2k,k)/4^k).
+gcd $1,$2
+div $2,$1
+mov $1,$2
+mov $6,1
 pow $0,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-gcd $1,$0
+lpb $0
+  mul $6,$0
+  sub $0,1
+lpe
+gcd $1,$6
 mov $0,$1

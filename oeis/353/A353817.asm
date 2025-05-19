@@ -1,21 +1,17 @@
 ; A353817: a(n) = 1 if n is a prime power with an odd exponent, otherwise 0.
-; Submitted by DoctorNow
+; Submitted by iBezanilla
 ; 0,1,1,0,1,0,1,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0
 
 #offset 1
 
-mov $1,$0
-mov $2,$0
-equ $2,1
-sub $0,1
-seq $1,143731 ; Characteristic function of numbers with at least two distinct prime factors (A024619).
-add $1,$2
-add $1,1
-mov $3,$0
-add $3,1
-seq $3,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
-mov $0,$3
-add $0,1
-mul $1,$0
+lpb $0
+  mov $2,$0
+  seq $2,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smallest prime factor of n, or smallest prime divisor of n.
+  max $2,2
+  pow $0,11
+  mov $1,$0
+  log $1,$2
+  dir $0,$2
+lpe
 mov $0,$1
 mod $0,2

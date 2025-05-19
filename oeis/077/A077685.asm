@@ -13,7 +13,6 @@ lpb $2
   mov $6,0
   mov $7,1
   mov $3,$1
-  add $3,1
   lpb $3
     add $3,8
     mov $8,$3

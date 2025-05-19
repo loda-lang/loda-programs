@@ -1,5 +1,5 @@
 ; A352247: Number of minimum edge cuts in the n-Fibonacci cube graph.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 1,2,1,7,3,1,9,4,1,14
 
 #offset 1
@@ -17,7 +17,7 @@ lpb $0
   pow $2,2
   div $2,8
   mul $2,$1
-  mul $1,10
+  mov $0,0
 lpe
 mov $0,$2
 div $0,3

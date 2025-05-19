@@ -1,19 +1,15 @@
 ; A152663: Number of leading odd entries in all permutations of {1,2,...,n} (see example).
-; Submitted by Christian Krause
+; Submitted by estatic707
 ; 1,1,6,16,120,540,5040,32256,362880,3024000,39916800,410572800,6227020800,76281004800,1307674368000,18598035456000,355687428096000,5762136335155200,121645100408832000,2211729098342400000,51090942171709440000,1030334000462807040000
 
 #offset 1
 
-mov $1,1
 mov $2,1
-sub $0,1
 lpb $0
-  add $2,1
-  add $3,$1
+  sub $1,1
+  add $3,$2
   mul $3,$0
-  div $3,-1
   sub $0,1
-  mul $1,$2
+  mul $2,$1
 lpe
-mov $0,$1
-add $0,$3
+mov $0,$3

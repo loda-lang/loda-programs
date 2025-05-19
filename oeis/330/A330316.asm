@@ -12,9 +12,7 @@ mov $3,-1
 pow $3,$0
 mov $4,$0
 add $4,1
-lpb $4
-  dif $4,2
-lpe
+dir $4,2
 div $4,2
 mov $5,-1
 pow $5,$4

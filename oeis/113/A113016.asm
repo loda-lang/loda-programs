@@ -14,8 +14,6 @@ lpb $2
   add $3,1
   seq $3,102487 ; Numbers in base-12 representation that can be written with decimal digits.
   mul $3,$1
-  trn $3,1
-  add $3,1
   seq $3,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
   equ $3,2
   add $5,2
