@@ -1,17 +1,19 @@
 ; A093421: Triangle read by rows: T(n,k) is the denominator of f(n, k) = (Product_{i = 0..k-1} (n-i))/(Sum_{i = 1..k} i) for 1 <= k <= n.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 1,1,3,1,1,1,1,1,1,5,1,3,1,1,1,1,1,1,1,1,7,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,13,1,1
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
 mov $4,-1
-add $0,1
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
 sub $2,$0
 mov $3,1
 lpb $0

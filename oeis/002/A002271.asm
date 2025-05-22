@@ -1,26 +1,23 @@
 ; A002271: Numbers m such that all odd numbers k, 1 < k < m, relatively prime to m are primes.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 2,3,4,5,6,7,8,9,12,15,18,21,24,30,45,105
+; Formula: a(n) = 3*max(3*max(2*max(n-8,0)+n-26,0)+2*max(n-8,0)+max(2*max(n-8,0)+n-23,0)+n-44,0)+3*max(2*max(n-8,0)+n-26,0)+2*max(n-8,0)+max(2*max(n-8,0)+n-23,0)+n+1
 
 #offset 1
 
-sub $0,1
-mov $1,5
+add $0,1
+mov $1,$0
+trn $1,9
+add $0,$1
+add $0,$1
+mov $1,$0
+trn $1,24
 mov $2,$0
-pow $2,2
-lpb $2
-  sub $2,1
-  mov $3,$1
-  add $3,1
-  seq $3,124441 ; a(n) = Product_{1<=k<=n/2, gcd(k,n)=1} k.
-  seq $3,3557 ; n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
-  equ $3,1
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-lpe
-mov $0,$1
-div $0,2
+trn $2,27
+mul $2,3
+add $0,$1
+add $0,$2
+mov $1,$0
+trn $1,45
+mul $1,3
+add $0,$1

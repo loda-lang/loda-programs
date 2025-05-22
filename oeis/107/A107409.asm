@@ -1,20 +1,17 @@
 ; A107409: Each term is sum of three previous terms mod 10.
-; Submitted by loader3229
+; Submitted by mmonnin
 ; 0,1,2,3,6,1,0,7,8,5,0,3,8,1,2,1,4,7,2,3,2,7,2,1,0,3,4,7,4,5,6,5,6,7,8,1,6,5,2,3,0,5,8,3,6,7,6,9,2,7,8,7,2,7,6,5,8,9,2,9,0,1,0,1,2,3,6,1,0,7,8,5,0,3,8,1,2,1,4,7
-; Formula: a(n) = -10*truncate((b(n)-1)/10)+b(n)-1, b(n) = 2*d(n-1)+b(n-1)-1, b(2) = 13, b(1) = 2, b(0) = 1, c(n) = 3*d(n-1)+b(n-1)+c(n-1), c(2) = 25, c(1) = 5, c(0) = 1, d(n) = 4*d(n-1)+b(n-1)+c(n-1), d(2) = 31, d(1) = 6, d(0) = 1
+; Formula: a(n) = -10*truncate(c(n+2)/10)+c(n+2), b(n) = 2*c(n-1)+b(n-1), b(2) = 2, b(1) = 0, b(0) = 0, c(n) = b(n-2)+c(n-2), c(2) = 0, c(1) = 1, c(0) = 0
 
-mov $1,1
 mov $2,1
-mov $3,1
+add $0,2
 lpb $0
   sub $0,1
+  add $1,$4
+  mov $3,$4
+  mov $4,$2
+  mov $2,$1
   add $1,$3
-  add $1,$3
-  add $2,$1
-  add $2,$3
-  sub $1,1
-  add $3,$2
 lpe
-mov $0,$1
-sub $0,1
+mov $0,$4
 mod $0,10

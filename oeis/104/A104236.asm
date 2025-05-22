@@ -1,23 +1,35 @@
 ; A104236: n*Golomb's sequence.
-; Submitted by ChelseaOilman
+; Submitted by BrandyNOW
 ; 1,4,6,12,15,24,28,32,45,50,55,72,78,84,90,112,119,126,133,160,168,176,184,216,225,234,243,252,290,300,310,320,330,374,385,396,407,418,468,480,492,504,516,528,585,598,611,624,637,650,714,728,742,756,770,784,855,870,885,900,915,930
 
 #offset 12
 
-mov $1,$0
-sub $1,11
-sub $0,12
-mov $3,$0
-pow $3,2
-lpb $3
-  mov $4,$2
-  add $4,1
-  seq $4,1463 ; Partial sums of A001462; also a(n) is the last occurrence of n in A001462.
-  sub $4,1
+sub $0,11
+mov $1,1
+mov $2,20
+mov $3,20
+mov $20,1
+mov $21,2
+mov $5,$0
+lpb $5
+  mov $4,$$2
+  lpb $4
+    add $6,$1
+    mov $7,$6
+    geq $7,$0
+    mov $$3,$1
+    mov $9,$7
+    add $20,$0
+    add $3,1
+    sub $4,1
+    mul $7,$4
+    sub $4,$7
+  lpe
+  add $1,1
   add $2,1
-  add $3,$4
-  sub $3,$0
+  sub $5,1
+  mul $9,$5
+  sub $5,$9
 lpe
-mov $0,$2
-add $0,1
-mul $0,$1
+mov $0,$20
+sub $0,1

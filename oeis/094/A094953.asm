@@ -1,14 +1,20 @@
 ; A094953: Triangle T(n,m) read by rows: number of rises (drops) in the compositions of n with m parts, m>=2.
-; Submitted by [SG]KidDoesCrunch
+; Submitted by loader3229
 ; 1,1,2,2,4,3,2,8,9,4,3,12,21,16,5,3,18,39,44,25,6,4,24,66,96,80,36,7,4,32,102,184,200,132,49,8,5,40,150,320,430,372,203,64,9,5,50,210,520,830,888,637,296,81,10,6,60,285,800,1480,1884,1673,1024,414,100,11,6
 
 #offset 2
 
-sub $0,2
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+sub $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 sub $2,$0
 add $0,1
 mov $1,$0

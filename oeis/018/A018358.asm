@@ -4,15 +4,16 @@
 
 #offset 1
 
-mov $4,1
+mov $1,1
+mov $2,1
+sub $0,1
 lpb $0
   sub $0,1
-  mov $2,0
-  bor $2,$4
-  mul $3,2
-  mov $1,1
-  bor $1,$3
-  bxo $3,$2
-  bxo $4,$1
+  mov $3,$1
+  mul $1,2
+  bxo $3,$1
+  mul $2,0
+  bxo $2,$3
+  mov $1,$2
 lpe
-mov $0,$1
+mov $0,$2

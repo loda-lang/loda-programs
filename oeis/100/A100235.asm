@@ -1,13 +1,20 @@
 ; A100235: Triangle, read by rows, of the coefficients of [x^k] in G100234(x)^n such that the row sums are 6^n-1 for n>0, where G100234(x) is the g.f. of A100234.
-; Submitted by Simon Strandgaard (M1)
+; Submitted by loader3229
 ; 1,1,4,1,8,26,1,12,63,139,1,16,116,436,726,1,20,185,965,2830,3774,1,24,270,1790,7335,17634,19601,1,28,371,2975,15505,52444,106827,101784,1,32,488,4584,28860,124424,358748,633952,528526,1,36,621,6681,49176,256194
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,3
 sub $2,1
 sub $2,$0

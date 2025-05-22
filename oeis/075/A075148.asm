@@ -1,12 +1,19 @@
 ; A075148: Table E(n,k) (listed antidiagonalwise as E(0,0), E(1,0), E(0,1), E(2,0), E(1,1), E(0,2), ...) where E(n,k) is F(n+k) for all even n and L(n+k) for all odd n. F(n) and L(n) are the n-th Fibonacci (A000045) and Lucas (A000032) numbers respectively.
-; Submitted by NOSNHOP
+; Submitted by loader3229
 ; 0,1,1,1,3,1,4,2,4,2,3,7,3,7,3,11,5,11,5,11,5,8,18,8,18,8,18,8,29,13,29,13,29,13,29,13,21,47,21,47,21,47,21,47,21,76,34,76,34,76,34,76,34,76,34,55,123,55,123,55,123,55,123,55,123,55,199,89,199,89,199,89,199
 
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
 mov $3,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,3
 add $2,$0
 mul $0,-1

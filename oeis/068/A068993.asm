@@ -1,19 +1,20 @@
 ; A068993: Numbers k such that A062799(k) = 4.
-; Submitted by biodoc
+; Submitted by Sebastian Matuschka (aka versat)
 ; 6,10,14,15,16,21,22,26,33,34,35,38,39,46,51,55,57,58,62,65,69,74,77,81,82,85,86,87,91,93,94,95,106,111,115,118,119,122,123,129,133,134,141,142,143,145,146,155,158,159,161,166,177,178,183,185,187,194,201,202,203,205,206,209,213,214,215,217,218,219,221,226,235,237,247,249,253,254,259,262
 
 #offset 1
 
-sub $0,1
-mov $1,3
 mov $2,$0
-add $2,3
+sub $0,1
+add $2,2
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,2
-  seq $3,291208 ; Number of noncube divisors of n.
-  sub $3,1
+  add $3,3
+  pow $3,2
+  seq $3,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+  div $3,2
+  sub $3,2
   equ $3,2
   sub $0,$3
   add $1,1
@@ -24,4 +25,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,2
+add $0,3

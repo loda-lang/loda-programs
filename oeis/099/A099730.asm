@@ -1,14 +1,19 @@
 ; A099730: Array read by antidiagonals. Rows contain odd numbers reaching same odd successor in Collatz function iteration.
-; Submitted by taurec
+; Submitted by loader3229
 ; 1,5,3,21,13,7,85,53,29,9,341,213,117,37,11,1365,853,469,149,45,15,5461,3413,1877,597,181,61,17,21845,13653,7509,2389,725,245,69,19,87381,54613,30037,9557,2901,981,277,77,23
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,$0
 mul $1,4
 add $2,1

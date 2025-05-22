@@ -1,17 +1,22 @@
 ; A104472: Triangle of degree numbers for certain polynomials.
-; Submitted by davidtgx
+; Submitted by loader3229
 ; 1,2,4,3,5,8,4,8,11,15,5,9,12,16,21,6,12,18,22,27,33,7,13,19,23,28,34,41,8,16,22,30,35,41,48,56,9,17,26,34,39,45,52,60,69,10,20,29,37,47,53,60,68,77,87,11,21,30,38,48,54,61,69,78,88,99,12,24,36,48,58,70,77,85
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
 mov $4,1
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $1,$2
+add $1,1
+bin $1,2
 add $2,1
 mov $3,$2
+sub $0,$1
+sub $0,1
 lpb $0
   sub $0,1
   add $4,1

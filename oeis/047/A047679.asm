@@ -1,19 +1,16 @@
 ; A047679: Denominators in full Stern-Brocot tree.
-; Submitted by Science United
+; Submitted by Athlici
 ; 1,2,1,3,3,2,1,4,5,5,4,3,3,2,1,5,7,8,7,7,8,7,5,4,5,5,4,3,3,2,1,6,9,11,10,11,13,12,9,9,12,13,11,10,11,9,6,5,7,8,7,7,8,7,5,4,5,5,4,3,3,2,1,7,11,14,13,15,18,17,13,14,19,21,18,17,19,16,11,11
 
-mov $1,2
-mov $3,2
+mov $1,1
+mov $2,1
 add $0,1
 lpb $0
-  add $2,$0
+  lpb $0
+    dif $0,2
+    add $1,$2
+  lpe
   div $0,2
-  add $2,$0
-  mod $2,2
-  mul $2,$3
-  add $3,$1
-  sub $3,$2
-  add $1,$2
+  add $2,$1
 lpe
-mov $0,$3
-div $0,2
+mov $0,$1

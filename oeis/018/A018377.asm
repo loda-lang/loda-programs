@@ -1,25 +1,20 @@
 ; A018377: Divisors of 290.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,5,10,29,58,145,290
+; Formula: a(n) = truncate((3*min(n-1,(n-1)%2)*c(n-1)+3*c(n-1))/3), b(n) = 4*b(n-2)+4*c(n-2)-12*truncate(b(n-2)/3), b(3) = 4, b(2) = 4, b(1) = 0, b(0) = 0, c(n) = 5*c(n-2)+4*b(n-2)-12*truncate(b(n-2)/3), c(3) = 5, c(2) = 5, c(1) = 1, c(0) = 1
 
 #offset 1
 
-mov $1,1
-mov $2,3
+mov $2,1
 sub $0,1
 lpb $0
-  add $1,1
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
-  div $0,2
-  mul $2,$1
-  dif $2,$3
-  sub $1,1
-  bin $1,2
-  add $1,1
+  sub $0,2
+  mod $1,3
+  add $1,$2
   mul $1,4
+  add $2,$1
 lpe
-mov $0,$2
+mul $2,3
+mul $0,$2
+add $0,$2
 div $0,3

@@ -1,13 +1,20 @@
 ; A100224: Triangle, read by rows, of the coefficients of [x^k] in G100224(x)^n such that the row sums are 2^n-1 for n>0, where G100224(x) is the g.f. of A100224.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,1,0,1,0,2,1,0,3,3,1,0,4,4,6,1,0,5,5,10,10,1,0,6,6,15,18,17,1,0,7,7,21,28,35,28,1,0,8,8,28,40,60,64,46,1,0,9,9,36,54,93,117,117,75,1,0,10,10,45,70,135,190,230,210,122
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,3
 sub $2,$0
 lpb $0

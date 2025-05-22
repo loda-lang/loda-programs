@@ -1,22 +1,32 @@
 ; A008288: Square array of Delannoy numbers D(i,j) (i >= 0, j >= 0) read by antidiagonals.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1,1,1,1,3,1,1,5,5,1,1,7,13,7,1,1,9,25,25,9,1,1,11,41,63,41,11,1,1,13,61,129,129,61,13,1,1,15,85,231,321,231,85,15,1,1,17,113,377,681,681,377,113,17,1,1,19,145,575,1289,1683,1289,575,145,19,1,1,21,181,833,2241,3653,3653,2241,833,181,21,1,1,23
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $3,$0
-sub $1,$0
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
 add $1,1
-lpb $1
-  sub $1,1
-  mov $4,$0
-  bin $4,$1
-  mov $5,$3
-  bin $5,$0
-  mul $5,$4
-  add $2,$5
-  add $3,1
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $1,1
+sub $2,$0
+lpb $0
+  add $4,2
+  mul $1,$2
+  mul $1,$0
+  mul $1,8
+  div $1,$4
+  div $1,$4
+  add $3,$1
+  sub $0,1
+  sub $2,1
 lpe
-mov $0,$2
+mov $0,$3
+div $0,2
+mul $0,2
+add $0,1

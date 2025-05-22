@@ -1,13 +1,20 @@
 ; A081281: Square array of binomial transforms of Chebyshev polynomial coefficients.
-; Submitted by Abby Normal
+; Submitted by loader3229
 ; 1,1,2,1,4,5,1,6,15,14,1,8,29,54,41,1,10,47,126,189,122,1,12,69,238,513,648,365,1,14,95,398,1101,1998,2187,1094,1,16,125,614,2057,4788,7533,7290,3281,1,18,159,894,3501,9858,19899,27702,24057,9842,1,20,197,1246
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,3
 sub $2,1
 sub $2,$0

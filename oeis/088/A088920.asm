@@ -1,12 +1,12 @@
 ; A088920: Solutions k to the Diophantine equation k = 2n^2 = m^2+1.
-; Submitted by Josemi
+; Submitted by Science United
 ; 2,50,1682,57122,1940450,65918162,2239277042,76069501250,2584123765442,87784138523762,2982076586042450,101302819786919522,3441313796169221282,116903366249966604050,3971273138702695316402
-; Formula: a(n) = truncate((c(max(2*n-1,0))-6)/4)+2, b(n) = 3*b(n-1)+2*c(n-1), b(1) = 4, b(0) = 0, c(n) = 4*b(n-1)+3*c(n-1), c(1) = 6, c(0) = 2
+; Formula: a(n) = 8*floor((b(n-1)^2)/8)+2, b(n) = 3*b(n-1)+2*c(n-1), b(1) = 7, b(0) = 1, c(n) = 4*b(n-1)+3*c(n-1), c(1) = 10, c(0) = 2
 
 #offset 1
 
+mov $1,1
 mov $2,2
-mul $0,2
 sub $0,1
 lpb $0
   sub $0,1
@@ -15,7 +15,8 @@ lpb $0
   add $1,$2
   add $2,$1
 lpe
-mov $0,$2
-sub $0,6
-div $0,4
+pow $1,2
+mov $0,$1
+div $0,8
+mul $0,8
 add $0,2

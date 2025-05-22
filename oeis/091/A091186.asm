@@ -1,13 +1,20 @@
 ; A091186: Triangle read by rows, in which n-th row gives expansion of x^n/((1-x)(1-x-x^2)^n).
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,1,1,2,1,1,4,3,1,1,7,8,4,1,1,12,18,13,5,1,1,20,38,35,19,6,1,1,33,76,86,59,26,7,1,1,54,147,197,164,91,34,8,1,1,88,277,430,420,281,132,43,9,1,1,143,512,904,1014,792,447,183,53,10,1,1,232,932,1846,2338,2087,1371
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

@@ -1,11 +1,18 @@
 ; A098495: Array T(r,c) read by antidiagonals: values of triangle A098493 interpreted as polynomials, r >= 0.
-; Submitted by Jamie Morken(w2)
+; Submitted by loader3229
 ; 1,1,0,1,-1,-1,1,-2,-1,-1,1,-3,1,1,0,1,-4,5,1,1,1,1,-5,11,-7,-2,-1,1,1,-6,19,-29,9,1,-1,0,1,-7,29,-71,76,-11,1,1,-1,1,-8,41,-139,265,-199,13,-2,1,-1,1,-9,55,-239,666,-989,521,-15,1,-1,0,1,-10,71,-377,1393,-3191,3691,-1364,17,1,-1,1,1,-11
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 add $2,1
 sub $2,$0
 mov $3,1

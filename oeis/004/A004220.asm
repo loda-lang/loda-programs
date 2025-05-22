@@ -1,25 +1,13 @@
 ; A004220: a(n) = 10*log_10(n) rounded to the nearest integer.
-; Submitted by Gunnar Hjern
+; Submitted by loader3229
 ; 0,3,5,6,7,8,8,9,10,10,10,11,11,11,12,12,12,13,13,13,13,13,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,17,17,17,17,18,18,18,18,18,18,18,18,18,18,18,18,18,18,19
+; Formula: a(n) = truncate((logint(n^20,10)+1)/2)
 
 #offset 1
 
-sub $0,1
-mov $2,5
-mul $2,$0
-add $2,6
-bin $2,3
-lpb $0
-  mov $0,0
-  mov $3,-1
-  mov $1,$2
-  mul $1,9
-  lpb $1
-    div $1,2
-    add $3,1
-  lpe
-  mov $1,$3
-  mov $2,0
-lpe
-trn $1,7
+pow $0,20
+mov $1,$0
+log $1,10
+add $1,1
+div $1,2
 mov $0,$1

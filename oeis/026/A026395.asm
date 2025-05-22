@@ -1,36 +1,16 @@
 ; A026395: a(n) = 5*a(n-2), starting 1,2,4.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,4,10,20,50,100,250,500,1250,2500,6250,12500,31250,62500,156250,312500,781250,1562500,3906250,7812500,19531250,39062500,97656250,195312500,488281250,976562500,2441406250,4882812500,12207031250
+; Formula: a(n) = truncate(2^(-2*truncate((n-1)/2)+n))*truncate(5^truncate((n-1)/2))
 
 mov $1,$0
-mov $4,1
-lpb $0
-  mul $7,$4
-  mul $7,2
-  mov $8,$3
-  pow $8,2
-  mov $9,$4
-  pow $9,2
-  sub $7,$8
-  add $8,$9
-  mov $9,$8
-  sub $9,$7
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mul $9,$6
-  div $0,2
-  sub $6,1
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
-  mul $4,2
-lpe
-mov $0,$4
+sub $1,1
+div $1,2
+mov $2,5
+pow $2,$1
+mul $1,2
+sub $0,$1
+mov $1,2
+pow $1,$0
+mul $1,$2
+mov $0,$1

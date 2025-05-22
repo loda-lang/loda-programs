@@ -1,30 +1,40 @@
 ; A003675: Decimal expansion of neutron mass (mass units).
 ; Submitted by loader3229
 ; 1,0,0,8,6,6,4,9,1
+; Formula: a(n) = -max(2*binomial(truncate(sqrtint(8*n)/2)+1,2)-truncate(truncate(sqrtint(8*n)/2)/2)-2*n+truncate(sqrtint(8*n)/2)+2,0)*(4*n-4*binomial(truncate(sqrtint(8*n)/2)+1,2)+max(2*binomial(truncate(sqrtint(8*n)/2)+1,2)-truncate(truncate(sqrtint(8*n)/2)/2)-2*n+truncate(sqrtint(8*n)/2)+2,0)-3)-10*truncate((-max(2*binomial(truncate(sqrtint(8*n)/2)+1,2)-truncate(truncate(sqrtint(8*n)/2)/2)-2*n+truncate(sqrtint(8*n)/2)+2,0)*(4*n-4*binomial(truncate(sqrtint(8*n)/2)+1,2)+max(2*binomial(truncate(sqrtint(8*n)/2)+1,2)-truncate(truncate(sqrtint(8*n)/2)/2)-2*n+truncate(sqrtint(8*n)/2)+2,0)-3)+binomial((min(2*binomial(truncate(sqrtint(8*n)/2)+1,2)-truncate(truncate(sqrtint(8*n)/2)/2)-2*n+truncate(sqrtint(8*n)/2)+2,0)+truncate(truncate(sqrtint(8*n)/2)/2)+1)^2+1,2))/10)+binomial((min(2*binomial(truncate(sqrtint(8*n)/2)+1,2)-truncate(truncate(sqrtint(8*n)/2)/2)-2*n+truncate(sqrtint(8*n)/2)+2,0)+truncate(truncate(sqrtint(8*n)/2)/2)+1)^2+1,2)
 
 #offset 1
 
 mov $1,$0
-mov $3,1
-mov $4,1
-lpb $0
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mov $7,$3
-  div $0,2
-  bxo $2,1
-  bor $2,$4
-  sub $6,$1
-  bor $6,$3
-  bxo $3,$2
-  bxo $4,$6
-lpe
-mov $0,$7
-mod $0,10
-add $0,10
+mul $1,8
+nrt $1,2
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $6,$1
+div $6,2
+add $6,1
+mov $5,$1
+sub $5,$0
+sub $5,$0
+sub $5,$6
+add $5,1
+mov $7,$5
+min $7,0
+max $5,0
+add $6,$7
+pow $6,2
+mov $4,$0
+mul $4,4
+add $4,$5
+add $4,1
+mul $4,$5
+mov $3,$6
+add $3,1
+bin $3,2
+sub $3,$4
+mov $0,$3
 mod $0,10

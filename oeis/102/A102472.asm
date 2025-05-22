@@ -1,16 +1,21 @@
 ; A102472: Triangle read by rows. Let S(k) be the sequence defined by F(0)=0, F(1)=1, F(n-1) + (n+k)*F(n) = F(n+1). E.g. S(0) = 0, 1, 1, 3, 10, 43, 225, 1393, 9976, 81201, ... Then S(0), S(1), S(2), ... are written vertically, next to each other, with the initial term of each on the next row down.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 1,1,1,3,2,1,10,7,3,1,43,30,13,4,1,225,157,68,21,5,1,1393,972,421,130,31,6,1,9976,6961,3015,931,222,43,7,1,81201,56660,24541,7578,1807,350,57,8,1,740785,516901,223884,69133,16485,3193,520,73,9,1,7489051,5225670,2263381,698908,166657,32280,5257,738,91,10,1,83120346,57999271,25121075,7757121,1849712,358273,58347,8191,1010,111,11,1,1004933203,701216922
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
 mov $3,1
+sub $0,$1
 sub $0,$2
+sub $0,1
 dif $0,-1
 lpb $0
   sub $0,1

@@ -1,12 +1,12 @@
 ; A097579: Triangular numbers k such that 2*k-1 is also a triangular number.
-; Submitted by Josemi
+; Submitted by tomkalei
 ; 1,28,946,32131,1091503,37078966,1259593336,42789094453,1453569618061,49378577919616,1677418079648878,56982836130142231,1935739010345186971,65758143515606214778,2233841140520266115476,75884840634173441711401
-; Formula: a(n) = 27*truncate(c(max(2*n-1,0))/192)+1, b(n) = 3*b(n-1)+2*c(n-1), b(1) = 4, b(0) = 0, c(n) = 4*b(n-1)+3*c(n-1), c(1) = 6, c(0) = 2
+; Formula: a(n) = 27*floor((b(n-1)^2)/96)+1, b(n) = 3*b(n-1)+2*c(n-1), b(1) = 10, b(0) = 2, c(n) = 4*b(n-1)+3*c(n-1), c(1) = 14, c(0) = 2
 
 #offset 1
 
+mov $1,2
 mov $2,2
-mul $0,2
 sub $0,1
 lpb $0
   sub $0,1
@@ -15,7 +15,8 @@ lpb $0
   add $1,$2
   add $2,$1
 lpe
-mov $0,$2
-div $0,192
+pow $1,2
+mov $0,$1
+div $0,96
 mul $0,27
 add $0,1

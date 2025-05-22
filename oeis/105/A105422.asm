@@ -1,16 +1,23 @@
 ; A105422: Triangle read by rows: T(n,k) is the number of compositions of n having exactly k parts equal to 1.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,0,1,1,0,1,1,2,0,1,2,2,3,0,1,3,5,3,4,0,1,5,8,9,4,5,0,1,8,15,15,14,5,6,0,1,13,26,31,24,20,6,7,0,1,21,46,57,54,35,27,7,8,0,1,34,80,108,104,85,48,35,8,9,0,1,55,139,199,209,170,125,63,44,9,10,0,1,89,240
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mul $0,-1
 add $0,$2
+mov $1,3
 sub $2,$0
 lpb $0
   sub $0,1

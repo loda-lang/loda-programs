@@ -1,11 +1,18 @@
 ; A089900: Square array, read by antidiagonals, where the n-th row is the n-th binomial transform of the factorials, starting with row 0: {1!,2!,3!,...}.
-; Submitted by emoga
+; Submitted by loader3229
 ; 1,2,1,6,3,1,24,11,4,1,120,49,18,5,1,720,261,92,27,6,1,5040,1631,536,159,38,7,1,40320,11743,3552,1029,256,51,8,1,362880,95901,26608,7353,1848,389,66,9,1,3628800,876809,223456,58095,14384,3125,564,83,10,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mul $0,-1
 add $0,$2
 mov $1,1

@@ -4,12 +4,11 @@
 
 #offset 1
 
-mov $2,2
+sub $0,1
+mov $2,3
 mov $3,$0
-sub $3,1
 lpb $3
   mov $1,$2
-  add $1,1
   dir $1,3
   mod $1,3
   add $2,3

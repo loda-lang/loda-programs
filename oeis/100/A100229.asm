@@ -1,13 +1,20 @@
 ; A100229: Triangle, read by rows, of the coefficients of [x^k] in G100228(x)^n such that the row sums are 4^n-1 for n>0, where G100228(x) is the g.f. of A100228.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,2,1,4,10,1,6,21,35,1,8,36,92,118,1,10,55,185,380,392,1,12,78,322,879,1506,1297,1,14,105,511,1715,3948,5803,4286,1,16,136,760,3004,8536,17020,21904,14158,1,18,171,1077,4878,16344,40395,71109,81387,46763
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,3
 sub $2,1
 sub $2,$0

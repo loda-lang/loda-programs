@@ -1,11 +1,19 @@
 ; A038300: Triangle whose (i,j)-th entry is binomial(i,j)*9^(i-j)*10^j.
-; Submitted by GolfSierra
+; Submitted by loader3229
 ; 1,9,10,81,180,100,729,2430,2700,1000,6561,29160,48600,36000,10000,59049,328050,729000,810000,450000,100000,531441,3542940,9841500,14580000,12150000,5400000,1000000,4782969,37200870,124002900,229635000
+; Formula: a(n) = truncate(9^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))*truncate(10^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$1
 sub $2,$0
 mov $3,10
