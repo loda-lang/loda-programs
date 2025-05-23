@@ -1,12 +1,17 @@
 ; A143970: Eigentriangle by rows, n terms of (10 * A002535) followed by A002535(n)
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,10,1,10,10,11,10,10,110,31,10,10,110,310,161,10,10,110,310,1610,601,10,10,110,310,1610,6010,2651,10,10,110,310,1610,6010,26510,10711
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
 mov $1,9
 sub $2,$0
 add $2,1

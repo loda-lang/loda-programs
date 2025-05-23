@@ -5,10 +5,9 @@
 #offset 1
 
 mov $2,$0
-add $2,1
-pow $2,2
 mov $5,-1
 add $0,1
+pow $2,2
 mul $2,4
 lpb $2
   max $3,$5

@@ -1,19 +1,21 @@
 ; A130299: A130296 * A051340.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,3,2,5,3,3,7,4,4,4,9,5,5,5,5,11,6,6,6,6,6,13,7,7,7,7,7,7,15,8,8,8,8,8,8,8,17,9,9,9,9,9,9,9,9,19,10,10,10,10,10,10,10,10,10
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+equ $0,1
+add $1,2
+sub $1,$0
+add $0,1
+mul $0,$1
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $0,1
-lpb $0
-  pow $0,2
-  sub $0,1
-  mul $1,2
-lpe
-mov $0,$1
-add $0,1

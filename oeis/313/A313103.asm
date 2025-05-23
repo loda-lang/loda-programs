@@ -23,8 +23,8 @@ lpb $1
   sub $7,1
 lpe
 mul $6,5
-trn $1,1
 add $1,$6
+sub $1,1
 mul $1,2
 div $1,3
 sub $1,8

@@ -1,30 +1,25 @@
 ; A163672: Triangle T(n,m) = 2mn + m + n + 7 read by rows.
 ; Submitted by loader3229
 ; 11,14,19,17,24,31,20,29,38,47,23,34,45,56,67,26,39,52,65,78,91,29,44,59,74,89,104,119,32,49,66,83,100,117,134,151,35,54,73,92,111,130,149,168,187,38,59,80,101,122,143,164,185,206,227,41,64,87,110,133,156,179,202,225,248,271,44,69,94,119,144,169,194,219,244,269,294,319,47,74
-; Formula: a(n) = (truncate((-n+binomial(truncate((sqrtint(8*n)+1)/2),2)+truncate((sqrtint(8*n)+1)/2)+2)/(truncate((sqrtint(8*n)+1)/2)*(2*n-2*binomial(truncate((sqrtint(8*n)+1)/2),2)+2)-n+binomial(truncate((sqrtint(8*n)+1)/2),2)+truncate((sqrtint(8*n)+1)/2)+2))-2)*(-n+binomial(truncate((sqrtint(8*n)+1)/2),2)+truncate((sqrtint(8*n)+1)/2)+2)+truncate((sqrtint(8*n)+1)/2)*(2*n-2*binomial(truncate((sqrtint(8*n)+1)/2),2)+2)-n+binomial(truncate((sqrtint(8*n)+1)/2),2)+truncate((sqrtint(8*n)+1)/2)+11
+; Formula: a(n) = truncate(((2*truncate((sqrtint(8*n)-1)/2)+3)*(2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+1)-9)/2)+11
 
 #offset 1
 
 mov $1,$0
-mov $4,$0
-mul $0,8
-nrt $0,2
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $1,$2
+add $1,3
+add $2,1
+bin $2,2
+mul $0,2
 add $0,1
+sub $0,$2
+sub $0,$2
+mul $0,$1
+sub $0,9
 div $0,2
-mov $5,$0
-bin $0,2
-sub $4,$0
-add $0,$5
-sub $0,$1
-add $0,2
-add $4,1
-mul $4,2
-mul $4,$5
-mov $2,$4
-add $2,$0
-mov $3,$0
-div $0,$2
-sub $0,2
-mul $0,$3
-add $0,$2
-add $0,9
+add $0,11

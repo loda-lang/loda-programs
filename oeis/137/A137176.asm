@@ -1,11 +1,18 @@
 ; A137176: Hyperlucas number array T(r,n) = L(n)^(r), read by ascending antidiagonals (r >= 0, n >= 0).
-; Submitted by Penguin
+; Submitted by loader3229
 ; 0,0,1,0,1,3,0,1,4,4,0,1,5,8,7,0,1,6,13,15,11,0,1,7,19,28,26,18,0,1,8,26,47,54,44,29,0,1,9,34,73,101,98,73,47,0,1,10,43,107,174,199,171,120,76,0,1,11,53,150,281,373,370,291,196,123
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,1
 sub $2,$0
 sub $2,1

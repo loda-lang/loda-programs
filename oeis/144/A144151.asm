@@ -1,11 +1,18 @@
 ; A144151: Triangle T(n,k), n>=0, 0<=k<=n, read by rows: T(n,k) = number of ways an undirected cycle of length k can be built from n labeled nodes.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,2,1,1,3,3,1,1,4,6,4,3,1,5,10,10,15,12,1,6,15,20,45,72,60,1,7,21,35,105,252,420,360,1,8,28,56,210,672,1680,2880,2520,1,9,36,84,378,1512,5040,12960,22680,20160,1,10,45,120,630,3024,12600,43200,113400,201600,181440,1,11,55,165,990,5544,27720,118800,415800,1108800,1995840,1814400,1,12
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,$2
 bin $1,$0
 mov $2,$0

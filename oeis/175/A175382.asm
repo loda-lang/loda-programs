@@ -11,7 +11,7 @@ pow $2,2
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,175381 ; A positive integer of n is included if all positive integers that, when written in binary, occur as substrings in binary n divide n.
+  seq $3,175381 ; A positive integer k is included if all positive integers that, when written in binary, occur as substrings in binary k divide k.
   sub $3,1
   add $0,1
   add $1,1

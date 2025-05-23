@@ -1,22 +1,30 @@
 ; A005530: Number of Boolean functions of n variables from Post class F(8,inf); number of degenerate Boolean functions of n variables.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by BrandyNOW
 ; 2,6,38,942,325262,25768825638,129127208425774833206,2722258935367507707190488025630791841374,1042128803135845758812138865078191170667179696781611291671986296705324955840030,134078079299425970995740249982058461274793658205923933777235614437217640300730259124003063752874973582574927626011504193111615515353301839320617814724605270
 
 #offset 1
 
 sub $0,1
-mov $3,2
+mov $2,$0
 mov $4,$0
-add $4,1
-add $0,1
-lpb $0
-  mov $1,$4
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  add $1,$4
+  add $1,1
   bin $1,$0
-  mul $1,$3
-  sub $1,$2
-  sub $1,$2
-  sub $0,1
-  add $2,$1
-  pow $3,2
+  mov $5,2
+  pow $5,$0
+  mov $0,2
+  pow $0,$5
+  sub $0,2
+  div $0,2
+  mul $1,$0
+  mul $3,-1
+  add $3,$1
 lpe
-mov $0,$2
+mov $0,$3
+mul $0,2
+add $0,2

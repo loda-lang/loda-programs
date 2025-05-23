@@ -1,23 +1,28 @@
 ; A208101: Triangle read by rows: T(n,0) = 1; for n > 0: T(n,1) = n, for n>1: T(n,n) = T(n-1,n-2); T(n,k) = T(n-2,k-1) + T(n-1,k) for k: 1 < k < n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,2,1,1,3,2,2,1,4,3,5,2,1,5,4,9,5,5,1,6,5,14,9,14,5,1,7,6,20,14,28,14,14,1,8,7,27,20,48,28,42,14,1,9,8,35,27,75,48,90,42,42,1,10,9,44,35,110,75,165,90,132,42,1,11,10,54,44,154,110,275,165,297,132,132,1,12
 
-lpb $0
-  add $1,1
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
 sub $2,1
-sub $0,$2
-sub $2,$0
 div $2,2
-sub $2,$1
-add $0,$2
-add $0,$2
 mov $1,$2
-bin $1,$0
-add $2,1
-bin $2,$0
-add $2,$1
-gcd $3,$2
-mov $0,$3
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $1,1
+sub $2,$0
+add $0,1
+lpb $0
+  sub $0,2
+  add $2,1
+  mul $1,$2
+  add $2,1
+  add $3,$2
+  mul $1,$2
+  div $1,$3
+lpe
+mov $0,$1

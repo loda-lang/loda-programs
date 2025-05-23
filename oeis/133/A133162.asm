@@ -1,15 +1,14 @@
 ; A133162: Trajectory of 1 under the morphism 1 -> {1,1,2,1}, 2 -> {2}.
-; Submitted by Science United
+; Submitted by SirSexington
 ; 1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,1,1,2,1,1,1,2,1,2,1,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,1
 
 #offset 1
 
 sub $0,1
-mov $2,2
+mov $2,3
 mov $3,$0
 lpb $3
   mov $1,$2
-  add $1,1
   dir $1,3
   mod $1,3
   add $2,3

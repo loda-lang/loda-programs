@@ -1,7 +1,6 @@
 ; A333236: Largest digit in the decimal expansion of 1/n.
-; Submitted by Jon Maiga
+; Submitted by Science United
 ; 1,5,3,5,2,6,8,5,1,1,9,8,9,8,6,6,9,5,9,5,9,5,9,6,4,8,7,8,9,3,9,5,3,9,8,7,7,9,6,5,9,9,9,7,2,9,9,8,9,2,9,9,9,8,8,8,9,9,9,6,9,9,8,6,8,5,9,9,9,8,9,8,9,5,3,9,9,8,8,5
-; Formula: a(n) = -10*truncate(A004185(floor((10^(n-1))/n))/10)+A004185(floor((10^(n-1))/n))
 
 #offset 1
 
@@ -12,5 +11,81 @@ mov $1,10
 pow $1,$0
 div $1,$2
 mov $0,$1
-seq $0,4185 ; Arrange digits of n in increasing order, then (for n > 0) omit the zeros.
+lpb $0
+  mov $4,$0
+  mod $4,10
+  div $0,10
+  mov $3,$4
+  equ $3,9
+  add $12,$3
+  mov $3,$4
+  equ $3,8
+  add $11,$3
+  mov $3,$4
+  equ $3,7
+  add $10,$3
+  mov $3,$4
+  equ $3,6
+  add $9,$3
+  mov $3,$4
+  equ $3,5
+  add $8,$3
+  mov $3,$4
+  equ $3,4
+  add $7,$3
+  mov $3,$4
+  equ $3,3
+  add $6,$3
+  mov $3,$4
+  equ $3,2
+  add $5,$3
+lpe
+mov $13,10
+pow $13,$5
+mov $0,$13
+div $13,9
+mul $13,2
+add $0,$13
+mov $13,10
+pow $13,$6
+mul $0,$13
+div $13,9
+mul $13,3
+add $0,$13
+mov $13,10
+pow $13,$7
+mul $0,$13
+div $13,9
+mul $13,4
+add $0,$13
+mov $13,10
+pow $13,$8
+mul $0,$13
+div $13,9
+mul $13,5
+add $0,$13
+mov $13,10
+pow $13,$9
+mul $0,$13
+div $13,9
+mul $13,6
+add $0,$13
+mov $13,10
+pow $13,$10
+mul $0,$13
+div $13,9
+mul $13,7
+add $0,$13
+mov $13,10
+pow $13,$11
+mul $0,$13
+div $13,9
+mul $13,8
+add $0,$13
+mov $13,10
+pow $13,$12
+mul $0,$13
+div $13,9
+mul $13,9
+add $0,$13
 mod $0,10

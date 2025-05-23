@@ -1,11 +1,18 @@
 ; A144066: T(n, k) is the number of order-preserving partial transformations (of an n-element chain) of height k (height(alpha) = |Im(alpha)|); triangle T read by rows.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,1,1,1,6,1,1,21,15,1,1,60,102,28,1,1,155,490,310,45,1,1,378,1935,2220,735,66,1,1,889,6741,12285,7315,1491,91,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,$2
 bin $1,$0
 pow $1,2

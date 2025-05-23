@@ -1,17 +1,16 @@
 ; A265694: a(n) = n!! mod n^2 where n!! is a double factorial number (A006882).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 0,2,3,8,15,12,7,0,54,40,110,0,104,84,0,0,221,0,342,0,0,220,506,0,0,312,0,0,493,0,930,0,0,544,0,0,222,684,0,0,369,0,1806,0,0,1012,47,0,0,0,0,0,1590,0,0,0,0,1624,59,0,3050,1860,0,0,0,0,4422,0,0,0
+; Formula: a(n) = -truncate(b(n)/(n^2))*n^2+b(n), b(n) = n*b(n-2), b(1) = 1, b(0) = 1
 
 #offset 1
 
-mov $2,$0
-lpb $0
-  equ $1,0
-  pow $2,2
-  lpb $0
-    mul $1,$0
-    mod $1,$2
-    sub $0,2
-  lpe
+mov $1,$0
+mov $2,1
+pow $0,2
+lpb $1
+  mul $2,$1
+  sub $1,2
 lpe
-mov $0,$1
+mod $2,$0
+mov $0,$2

@@ -1,40 +1,18 @@
 ; A267661: Number of nX2 0..1 arrays with every repeated value in every row unequal to the previous repeated value, and in every column equal to the previous repeated value, and new values introduced in row-major sequential order.
 ; Submitted by BrandyNOW
 ; 2,8,32,98,288,800,2178,5832,15488,40898,107648,282752,741762,1944392,5094432,13343778,34944800,91503392,239586050,627288200,1642332672,4299797378,11257201152,29472035328,77159275778,202006392200,528860871968,1384577795042,3624875055648,9490051485728,24845286057858,65045817457992,170292183742592,445830761966402,1167200147779712,3055769755192448,8000109237240450,20944558149791432,54833565524839200,143556138930694050,375834852085916192,983948418651695648,2576010406012485122,6744082802853715208
+; Formula: a(n) = floor((c(n)^2)/2), b(n) = b(n-1)+b(n-2), b(2) = 4, b(1) = 2, b(0) = 2, c(n) = -b(n-1)+c(n-1), c(2) = -4, c(1) = -2, c(0) = 0
 
 #offset 1
 
-add $0,1
-mov $2,$0
-mov $5,1
+mov $2,2
 lpb $0
-  mul $8,$5
-  mul $8,2
-  mov $9,$4
-  pow $9,2
-  mov $1,$5
-  pow $1,2
-  sub $8,$9
-  add $9,$1
-  mov $1,$9
-  sub $1,$8
-  mov $6,$0
-  max $6,1
-  log $6,2
-  mov $7,2
-  pow $7,$6
-  ban $7,$2
-  neq $7,0
-  div $0,2
-  mul $1,$7
-  mov $3,$8
-  mul $3,$7
-  add $8,$1
-  add $9,$3
-  mov $4,$8
-  mov $5,$9
+  sub $0,1
+  mov $1,$3
+  mov $3,$2
+  sub $4,$2
+  add $2,$1
 lpe
-sub $9,1
-pow $9,2
-mov $0,$9
-mul $0,2
+pow $4,2
+mov $0,$4
+div $0,2

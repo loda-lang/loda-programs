@@ -1,12 +1,17 @@
 ; A143908: Eigentriangle by rows, n terms of (3 * A026150) followed by A026150(n).
-; Submitted by [TA]crashtech
+; Submitted by loader3229
 ; 1,3,1,3,3,4,3,3,12,10,3,3,12,30,28,3,3,12,30,84,76,3,3,12,30,84,228,208,3,3,12,30,84,228,624,568,3,3,12,30,84,228,624,1704,1552
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
 mov $1,2
 sub $2,$0
 add $2,1

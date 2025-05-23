@@ -1,19 +1,21 @@
 ; A166124: Triangle, read by rows, given by [0,1/2,1/2,0,0,0,0,0,0,0,...] DELTA [2,-1,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
-; Submitted by fzs600
+; Submitted by loader3229
 ; 1,0,2,0,1,2,0,1,1,2,0,1,1,1,2,0,1,1,1,1,2,0,1,1,1,1,1,2,0,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,2,0,1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $1,1
-mov $2,$1
 add $0,1
 mov $1,$0
-div $1,$2
-add $1,10
-mul $0,$2
-div $2,$0
-sub $1,$2
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+equ $1,$0
+add $1,3
+equ $0,0
+sub $1,$0
 mov $0,$1
-sub $0,9
+sub $0,2

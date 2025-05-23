@@ -1,32 +1,9 @@
 ; A176044: n-th-prime without last digit.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 0,0,0,0,1,1,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,7,8,8,9,10,10,10,10,11,12,13,13,13,14,15,15,16,16,17,17,18,19,19,19,19,21,22,22,22,23,23,24,25,25,26,26,27,27,28,28,29,30,31,31,31,33,33,34,34,35,35,36,37,37,38,38,39,40,40
+; Formula: a(n) = truncate(A000040(n)/10)
 
 #offset 1
 
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $5,0
-  mov $1,$2
-  add $1,1
-  lpb $1
-    gcd $5,3
-    mov $6,$1
-    div $6,5
-    lpb $6
-      mov $4,$1
-      mod $4,$5
-      add $5,2
-      sub $6,$4
-    lpe
-    div $1,$5
-    pow $1,2
-    mov $5,1
-  lpe
-  sub $0,$5
-  add $2,2
-  sub $3,$0
-lpe
-mov $0,$2
+seq $0,40 ; The prime numbers.
 div $0,10

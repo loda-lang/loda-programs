@@ -1,18 +1,20 @@
 ; A209634: Triangle with (1,4,7,10,13,16...,(3*n-2),...) in every column, shifted down twice.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,4,7,1,10,4,13,7,1,16,10,4,19,13,7,1,22,16,10,4,25,19,13,7,1,28,22,16,10,4,31,25,19,13,7,1,34,28,22,16,10,4,37,31,25,19,13,7,1,40,34,28,22,16,10,4,43,37,31,25,19,13,7,1,46,40,34,28,22,16,10
+; Formula: a(n) = 6*floor((sqrtint(4*n-3)^2)/4)+3*sqrtint(4*n-3)-6*n+4
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  mov $2,$1
-  mul $2,$0
-  add $1,2
-  trn $0,$1
-lpe
-mod $2,$1
-mov $0,$2
+mov $1,$0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $2,$0
+pow $2,2
+div $2,4
+add $2,1
+sub $1,$2
+mul $1,-2
+add $0,$1
 mul $0,3
-add $0,1
+sub $0,2

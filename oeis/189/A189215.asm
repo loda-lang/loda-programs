@@ -1,5 +1,5 @@
 ; A189215: Zero-one sequence based on the sequence (3n):  a(A008585(k))=a(k); a(A001651(k))=1-a(k), a(1)=0, a(2)=1.
-; Submitted by [AF>Libristes] erik
+; Submitted by mmonnin
 ; 1,0,1,0,1,0,0,1,1,1,0,0,0,0,1,1,1,0,1,1,0,0,0,1,0,1,1,0,0,1,1,1,0,1,0,0,1,0,0,0,1,0,1,0,1,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1
 
 #offset 1
@@ -8,11 +8,9 @@ sub $0,1
 lpb $0
   add $0,1
   mul $0,6
-  lpb $0
-    dif $0,3
-  lpe
-  mov $2,$1
+  dir $0,3
   div $0,3
+  mov $2,$1
   sub $1,1
 lpe
 add $0,$2

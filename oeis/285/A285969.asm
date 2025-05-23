@@ -1,20 +1,21 @@
 ; A285969: {0110->0}-transform of the Thue-Morse word A010060.
-; Submitted by loreson
+; Submitted by Science United
 ; 0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,0
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,285971 ; Positions of 0 in A285969; complement of A285970.
-  sub $3,1
-  equ $3,$0
+mul $0,2
+lpb $0
+  sub $0,1
+  sub $2,$1
+  mov $1,$2
   add $1,1
-  add $2,$3
-  sub $2,$0
+  dir $1,4
+  mod $1,2
+  add $3,1
+  sub $0,$1
+  add $2,2
 lpe
-mov $0,$2
+mov $0,$3
+sub $0,1
+mod $0,2

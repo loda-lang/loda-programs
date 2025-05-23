@@ -1,18 +1,22 @@
 ; A000455: Digits of powers of 2.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,2,4,8,1,6,3,2,6,4,1,2,8,2,5,6,5,1,2,1,0,2,4,2,0,4,8,4,0,9,6,8,1,9,2,1,6,3,8,4,3,2,7,6,8,6,5,5,3,6,1,3,1,0,7,2,2,6,2,1,4,4,5,2,4,2,8,8,1,0,4,8,5,7,6,2,0,9,7,1
 
 mov $3,$0
 lpb $3
-  mov $4,$1
-  seq $4,34887 ; Number of digits in 2^n.
+  mov $4,2
+  pow $4,$1
+  log $4,10
+  add $4,1
   add $1,1
   add $2,$4
   mov $3,$0
   sub $3,$2
 lpe
-mov $3,$1
-seq $3,34887 ; Number of digits in 2^n.
+mov $3,2
+pow $3,$1
+log $3,10
+add $3,1
 add $2,$3
 sub $2,$0
 sub $2,1

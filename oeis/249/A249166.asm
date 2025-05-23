@@ -1,17 +1,17 @@
 ; A249166: Odd integers concatenated with themselves.
-; Submitted by Jamie Morken(s1)
+; Submitted by loader3229
 ; 11,33,55,77,99,1111,1313,1515,1717,1919,2121,2323,2525,2727,2929,3131,3333,3535,3737,3939,4141,4343,4545,4747,4949,5151,5353,5555,5757,5959,6161,6363,6565,6767,6969,7171,7373,7575,7777,7979,8181,8383,8585,8787
+; Formula: a(n) = truncate(10^(logint(2*n-1,10)+1))*(2*n-1)+2*n-1
 
 #offset 1
 
-sub $0,1
 mul $0,2
-mov $1,$0
-add $0,1
+sub $0,1
 mov $2,$0
-add $1,6
-lpb $1
-  div $1,16
-  mul $0,10
-lpe
-add $0,$2
+log $2,10
+add $2,1
+mov $3,10
+pow $3,$2
+mov $1,$0
+mul $1,$3
+add $0,$1

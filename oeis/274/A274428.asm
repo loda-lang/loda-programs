@@ -1,19 +1,17 @@
 ; A274428: Positions in A274426 of products of distinct Lucas numbers > 1.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 3,6,9,10,14,15,19,20,21,26,27,28,33,34,35,36,42,43,44,45,51,52,53,54,55,62,63,64,65,66,73,74,75,76,77,78,86,87,88,89,90,91,99,100,101,102,103,104,105,114,115,116,117,118,119,120,129,130,131,132,133,134,135,136,146,147,148,149,150,151,152,153,163,164,165,166,167,168,169,170
-; Formula: a(n) = truncate((2*n+floor(((sqrtint(4*n-2)+2)^2)/2)-1)/2)+1
+; Formula: a(n) = floor((sqrtint(4*n-3)^2)/4)+sqrtint(4*n-3)+n+1
 
 #offset 1
 
-mul $0,2
-sub $0,1
-mov $1,2
-mul $1,$0
-nrt $1,2
-add $1,2
-pow $1,2
-div $1,2
-add $1,$0
-div $1,2
-mov $0,$1
-add $0,1
+mov $1,$0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $2,$0
+pow $2,2
+div $2,4
+add $2,1
+add $1,$2
+add $0,$1

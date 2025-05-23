@@ -1,15 +1,22 @@
 ; A132169: Irregular triangle read by rows. A141616(n)/4.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,3,6,4,8,5,12,10,6,15,12,7,20,18,14,8,24,21,16,9,30,28,24,18,10,35,32,27,20,11,42,40,36,30,22,12,48,45,40,33,24,13,56,54,50,44,36,26,14,63,60,55,48,39,28,15,72,70,66,60,52,42,30,16
+; Formula: a(n) = -(-floor(((sqrtint(4*n+1)-1)^2)/4)+n)*(-floor(((sqrtint(4*n+1)-1)^2)/4)+n+2)+sqrtint(4*n+1)*(-floor(((sqrtint(4*n+1)-1)^2)/4)+n+2)
 
-mov $2,1
-lpb $0
-  add $1,$2
-  sub $0,$1
-  equ $2,0
-lpe
-sub $2,$0
-add $0,2
-add $0,$1
-add $1,$2
-mul $0,$1
+add $0,1
+mov $1,$0
+mul $0,4
+sub $0,3
+nrt $0,2
+mov $2,$0
+sub $2,1
+pow $2,2
+div $2,4
+add $2,1
+sub $1,$2
+mov $2,$1
+add $1,2
+mul $2,$1
+mul $1,$0
+sub $1,$2
+mov $0,$1

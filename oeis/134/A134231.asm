@@ -1,20 +1,19 @@
 ; A134231: Triangle T(n, k) = n -k +1 with T(n, n-1) = 2*n-1 and T(n, n) = 1, read by rows.
-; Submitted by Jason Jung
+; Submitted by loader3229
 ; 1,3,1,3,5,1,4,3,7,1,5,4,3,9,1,6,5,4,3,11,1,7,6,5,4,3,13,1,8,7,6,5,4,3,15,1,9,8,7,6,5,4,3,17,1,10,9,8,7,6,5,4,3,19,1,11,10,9,8,7,6,5,4,3,21,1,12,11,10,9,8,7,6,5,4,3,23,1,13,12
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+bin $2,2
+mul $1,2
+sub $0,$2
+dif $0,$1
+add $1,2
 sub $1,$0
-mov $2,$0
-mov $0,$1
-equ $0,1
-add $2,1
-mul $2,2
-pow $2,$0
-add $1,$2
 mov $0,$1

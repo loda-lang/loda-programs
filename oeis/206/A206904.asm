@@ -1,13 +1,11 @@
 ; A206904: n+[nr/s]+[nt/s], where []=floor, r=3, s=sqrt(3), t=1/s.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by Science United
 ; 2,5,9,11,14,18,21,23,27,30,33,36,39,42,45,48,51,55,57,60,64,67,69,73,76,79,82,85,88,91,94,97,101,103,106,110,113,115,119,122,125,128,131,134,137,140,143,147,149,152,156,159,161,165,168,170,174,177
 ; Formula: a(n) = floor(n/3)+sqrtint(3*n^2)+n
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-add $0,1
 mov $2,$0
 mul $2,2
 add $2,$0
@@ -17,4 +15,3 @@ nrt $2,2
 add $2,$0
 add $1,$2
 mov $0,$1
-add $0,1

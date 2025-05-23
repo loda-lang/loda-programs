@@ -1,23 +1,18 @@
 ; A223346: 3 X 3 X 3 triangular graph without horizontal edges coloring a rectangular array: number of n X 1 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,2 1,3 1,4 2,4 2,5 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 6,12,28,60,140,300,700,1500,3500,7500,17500,37500,87500,187500,437500,937500,2187500,4687500,10937500,23437500,54687500,117187500,273437500,585937500,1367187500,2929687500,6835937500,14648437500,34179687500,73242187500,170898437500,366210937500,854492187500,1831054687500,4272460937500,9155273437500,21362304687500,45776367187500,106811523437500,228881835937500,534057617187500,1144409179687500,2670288085937500,5722045898437500,13351440429687500,28610229492187500,66757202148437500
-; Formula: a(n) = 2*truncate((2*b(n-1)-12)/5)+6, b(n) = 5*b(n-2), b(1) = 15, b(0) = 7
+; Formula: a(n) = min(n,n%2)*(3*c(n)+b(n))+3*c(n), b(n) = 5*b(n-2), b(5) = 20, b(4) = 20, b(3) = 4, b(2) = 4, b(1) = 0, b(0) = 0, c(n) = 5*c(n-2), c(5) = 20, c(4) = 20, c(3) = 4, c(2) = 4, c(1) = 1, c(0) = 1
 
 #offset 1
 
-mov $1,7
-mov $2,3
-sub $0,1
+mov $2,1
 lpb $0
-  sub $0,1
-  mul $2,5
-  mov $3,$1
-  mov $1,$2
-  mov $2,$3
+  sub $0,2
+  mul $2,4
+  add $1,$2
+  mov $2,$1
 lpe
-sub $1,6
-mul $1,2
-div $1,5
-mov $0,$1
-mul $0,2
-add $0,6
+mul $2,3
+add $1,$2
+mul $0,$1
+add $0,$2

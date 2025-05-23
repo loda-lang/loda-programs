@@ -1,12 +1,33 @@
 ; A109083: Convolution of A002324 and A010815.
-; Submitted by Dataman
+; Submitted by Joe
 ; 1,-1,0,0,-2,0,2,0,0,0,0,3,0,0,-3,0,0,0,0,0,0,-4,0,0,0,4,0,0,0,0,0,0,0,0,5,0,0,0,0,-5,0,0,0,0,0,0,0,0,0,0,-6,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,-7,0,0,0
-; Formula: a(n) = truncate((-A109127(3*n))/2)
 
 #offset 1
 
+mov $5,$0
+mul $5,24
+nrt $5,2
+sub $5,1
+div $5,2
+mov $4,$5
+add $4,1
+bin $4,2
 mul $0,3
-seq $0,109127 ; Expansion of q^(-1/8) * (eta(q^3) - eta(q)^3) / 3 in powers of q.
-sub $1,$0
+sub $0,1
+sub $0,$4
+mov $4,1
+sub $5,$0
+mov $2,$5
+lpb $0
+  sub $0,1
+  sub $5,2
+  add $2,1
+  mul $4,$5
+  div $4,$2
+  add $5,1
+  div $3,2
+  add $3,$4
+lpe
+sub $1,$3
 mov $0,$1
 div $0,2

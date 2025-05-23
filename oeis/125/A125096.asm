@@ -4,7 +4,6 @@
 
 #offset 1
 
-mov $1,0
 sub $1,$0
 seq $0,33715 ; Number of integer solutions (x, y) to the equation x^2 + 2y^2 = n.
 gcd $1,4

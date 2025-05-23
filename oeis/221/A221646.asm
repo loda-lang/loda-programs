@@ -1,5 +1,5 @@
 ; A221646: A continuous "Look and Say" sequence (without repetition, method 2).
-; Submitted by iBezanilla
+; Submitted by shiva
 ; 1,1,1,2,1,1,2,2,1,2,2,1,1,2,2,2,1,3,2,1,1,1,3,1,2,3,1,1,3,1,1,1,2,1,3,2,1,1,3,3,1,1,2,1,1,1,3,1,2,2,1,2,3,2,1,1,2,3,1,1,3,1,1,2,2,1,1,1,2,1,3,1,2,2,1,1,2,1,3,2
 
 #offset 1
@@ -7,9 +7,9 @@
 mov $1,$0
 mov $2,10
 mov $3,11
-mov $10,2
-div $10,2
+mov $10,1
 add $0,9
+div $1,2
 lpb $1
   add $2,2
   mov $4,$$2

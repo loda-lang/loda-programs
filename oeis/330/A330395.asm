@@ -1,43 +1,70 @@
 ; A330395: Number of nontrivial equivalence classes of S_n under the {1234,3412} pattern-replacement equivalence.
-; Submitted by Sphynx
+; Submitted by loader3229
 ; 1,9,26,51,85,129,184,251,331,425,534,659,801,961,1140,1339,1559,1801,2066,2355,2669,3009,3376,3771,4195,4649,5134,5651,6201,6785,7404,8059,8751,9481,10250,11059,11909,12801,13736,14715,15739,16809,17926,19091,20305,21569,22884,24251,25671,27145,28674,30259,31901,33601,35360,37179,39059,41001,43006,45075,47209,49409,51676,54011,56415,58889,61434,64051,66741,69505,72344,75259,78251,81321,84470,87699,91009,94401,97876,101435
+; Formula: a(n) = -binomial(-min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0),2)*(min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+truncate((8*n-25)/8)+1)+(-min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)*(min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+truncate((8*n-25)/8)+1)+binomial(-min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+2,2))*(2*n+min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)-8)+binomial(min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+truncate((8*n-25)/8)+2,2)*(n-3)+binomial(min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+n-3,2)*(n-4)-binomial(-min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0),2)-truncate(binomial(2*min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+2,3)/(-4))+floor((max(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)+1)/2)+truncate(binomial(-2*min(-truncate((8*n-25)/8)-2*n+truncate((8*n-25)/4)+8,0)-2*n+8,3)/(-4))-1
 
 #offset 4
 
-sub $0,4
-mov $6,$0
-mov $3,$0
-lpb $3
-  sub $3,1
-  mov $0,$6
-  sub $0,$3
-  mov $9,$0
-  mov $10,0
-  mov $7,$0
-  add $7,1
-  lpb $7
-    sub $7,1
-    mov $0,$9
-    sub $0,$7
-    mov $4,$0
-    mov $5,8
-    mov $8,5
-    mov $2,$0
-    lpb $2
-      lpb $5
-        add $8,$4
-        mul $0,2
-        trn $5,$8
-      lpe
-      add $0,8
-      mov $2,0
-    lpe
-    mov $4,$0
-    div $4,2
-    add $4,1
-    add $10,$4
-  lpe
-  add $1,$10
-lpe
-mov $0,$1
-add $0,1
+sub $0,3
+mov $1,$0
+mul $1,8
+sub $1,1
+mov $6,$1
+div $6,8
+add $6,1
+sub $0,1
+div $1,4
+mov $5,$1
+sub $5,$0
+sub $5,$0
+sub $5,$6
+add $5,1
+mov $7,$5
+min $7,0
+mov $4,$0
+add $4,$7
+max $5,0
+add $6,$7
+mul $7,-1
+mov $9,$4
+mul $9,-2
+bin $9,3
+div $9,-4
+mov $8,$4
+add $8,1
+bin $8,2
+mul $8,$0
+mov $11,$0
+add $11,1
+add $0,$4
+mov $10,$5
+add $10,1
+div $10,2
+mov $12,$6
+add $12,1
+bin $12,2
+mul $12,$11
+mov $2,$7
+mul $2,$6
+mov $3,$7
+add $3,2
+bin $3,2
+add $2,$3
+mul $2,$0
+mov $3,$7
+bin $3,2
+sub $2,$3
+mul $3,$6
+sub $2,$3
+mov $3,$7
+sub $3,1
+mul $3,-2
+bin $3,3
+div $3,-4
+sub $2,$3
+add $8,$9
+add $8,$10
+add $8,$12
+add $8,$2
+mov $0,$8
+sub $0,1

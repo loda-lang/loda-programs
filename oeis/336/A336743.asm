@@ -1,12 +1,15 @@
 ; A336743: a(n) is the product of the first n positive evil numbers.
-; Submitted by Jamie Morken(w4)
+; Submitted by Athlici
 ; 1,3,15,90,810,8100,97200,1458000,24786000,446148000,8922960000,205228080000,4925473920000,132987795840000,3856646079360000,115699382380800000,3818079618566400000,129814707031257600000,4673329453125273600000,182259848671885670400000
 
 mov $1,1
 mov $2,$0
 lpb $2
-  add $2,1
-  seq $2,1969 ; Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
+  mov $3,$2
+  mul $3,2
+  dgs $2,2
+  mod $2,2
+  add $2,$3
   sub $0,1
   mul $1,$2
   mov $2,$0

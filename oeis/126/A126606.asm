@@ -1,29 +1,21 @@
 ; A126606: Fixed point of transformation of the seed sequence {0,2}.
-; Submitted by AnandBhat
+; Submitted by loader3229
 ; 0,2,2,4,2,6,4,6,2,8,6,10,4,10,6,8,2,10,8,14,6,16,10,14,4,14,10,16,6,14,8,10,2,12,10,18,8,22,14,20,6,22,16,26,10,24,14,18,4,18,14,24,10,26,16,22,6,20,14,22,8,18,10,12,2,14,12,22,10,28,18,26,8,30,22,36,14,34,20,26
+; Formula: a(n) = 2*b(n-1), b(n) = c(n-1), b(1) = 1, b(0) = 0, c(n) = 2*truncate(c(n-2)/c(n-1))*c(n-1)-c(n-2)+c(n-1), c(1) = 1, c(0) = 1
 
 #offset 1
 
+mov $2,1
 sub $0,1
-mov $4,$0
-div $4,85
-mul $4,$0
-mov $5,1
-sub $0,$4
-mov $3,$0
-mul $3,4
-lpb $3
-  div $3,2
-  mov $2,1
-  add $2,$3
-  div $2,2
-  mod $2,2
-  mov $1,$5
-  sub $1,$6
-  mul $2,$1
-  add $5,$6
-  add $6,$2
+lpb $0
+  sub $0,1
+  mov $3,$1
+  mod $3,$2
+  mul $3,-2
+  add $3,$1
+  add $3,$2
+  mov $1,$2
+  mov $2,$3
 lpe
-mov $0,$6
-sub $0,$4
+mov $0,$1
 mul $0,2

@@ -1,14 +1,24 @@
 ; A278481: Number of neighbors of the n-th term in a full isosceles triangle read by rows.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 2,4,4,4,6,4,4,6,6,4,4,6,6,6,4,4,6,6,6,6,4,4,6,6,6,6,6,4,4,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,6,6,4,4,6
+; Formula: a(n) = 2*truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+n)/truncate((sqrtint(8*n+8)-1)/2))+6
 
 #offset 1
 
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,2
+bin $2,2
 sub $0,1
-lpb $0
-  seq $0,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
-  pow $0,2
-lpe
-min $0,2
-mul $0,2
-add $0,2
+sub $0,$2
+div $0,$1
+mov $3,$0
+add $3,1
+mul $3,2
+mov $0,$3
+add $0,4

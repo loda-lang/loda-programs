@@ -1,13 +1,20 @@
 ; A246654: T(n,k) = 2*(K(n,2)*I(k,2) - (-1)^(n+k)*I(n,2)*K(k,2)), where I(n,x) and K(n,x) are Bessel functions; triangle read by rows for 0 <= k <= n.
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 0,1,0,1,1,0,3,2,1,0,10,7,3,1,0,43,30,13,4,1,0,225,157,68,21,5,1,0,1393,972,421,130,31,6,1,0,9976,6961,3015,931,222,43,7,1,0,81201,56660,24541,7578,1807,350,57,8,1,0,740785,516901,223884,69133,16485,3193,520,73,9,1,0
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
 mov $3,1
+sub $0,$1
 sub $0,$2
+sub $0,1
 dif $0,-1
 lpb $0
   sub $0,1

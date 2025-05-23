@@ -1,19 +1,20 @@
 ; A282004: Decimal representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 413", based on the 5-celled von Neumann neighborhood.
-; Submitted by [AF>HFR>RR] liegeus
+; Submitted by loader3229
 ; 1,2,3,14,3,62,3,254,3,1022,3,4094,3,16382,3,65534,3,262142,3,1048574,3,4194302,3,16777214,3,67108862,3,268435454,3,1073741822,3,4294967294,3,17179869182,3,68719476734,3,274877906942,3,1099511627774,3,4398046511102,3,17592186044414,3,70368744177662,3,281474976710654,3,1125899906842622,3,4503599627370494,3,18014398509481982,3,72057594037927934,3,288230376151711742,3,1152921504606846974,3,4611686018427387902,3,18446744073709551614,3,73786976294838206462,3,295147905179352825854,3
-; Formula: a(n) = -truncate(b(n)/(c(n)-1))*(c(n)-1)+b(n)+1, b(n) = 2*c(n-1)+1, b(1) = 1, b(0) = 1, c(n) = 2*c(n-2)+c(n-1)+3, c(1) = 3, c(0) = 0
+; Formula: a(n) = min(n,n%2)*(3*c(n)+b(n))+truncate((3*c(n))/3), b(n) = 4*b(n-2)+42, b(4) = 50, b(3) = 2, b(2) = 2, b(1) = -2, b(0) = -2, c(n) = 3, c(3) = 3, c(2) = 3, c(1) = 1, c(0) = 1
 
-mov $1,1
+mov $1,-2
+mov $2,1
 lpb $0
-  sub $0,1
-  add $1,2
-  mov $2,$3
-  mul $2,2
-  add $2,1
-  add $3,$1
-  mov $1,$2
+  sub $0,2
+  mul $2,4
+  add $1,$2
+  mul $1,4
+  sub $1,6
+  mov $2,3
 lpe
-sub $3,1
-mov $0,$1
-mod $0,$3
-add $0,1
+mul $2,3
+add $1,$2
+div $2,3
+mul $0,$1
+add $0,$2

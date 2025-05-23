@@ -5,6 +5,4 @@
 #offset 1
 
 seq $0,243502 ; Permutation of even numbers: a(n) = 2 * A064216(n).
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

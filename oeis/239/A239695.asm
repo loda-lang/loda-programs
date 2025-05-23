@@ -1,20 +1,10 @@
 ; A239695: Base 9 sum of digits of prime(n).
+; Submitted by Aionel
 ; 2,3,5,7,3,5,9,3,7,5,7,5,9,11,7,13,11,13,11,15,9,15,3,9,9,5,7,11,5,9,7,11,9,11,13,15,13,3,7,5,11,5,7,9,13,7,11,15,11,13,17,15,17,11,9,7,13,7,13,9,11,13,11,15,17,13,11,9,11,13,9,15,15,13,11,15,13,13,17,9
 
 #offset 1
 
-mov $2,0
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $1,$2
-  add $1,1
-  seq $1,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$1
-  add $2,2
-  sub $3,$0
-lpe
-mov $0,$2
-add $0,1
-max $0,2
-dgs $0,9
+seq $0,40 ; The prime numbers.
+mov $1,$0
+dgs $1,9
+mov $0,$1

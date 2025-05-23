@@ -1,15 +1,22 @@
 ; A176282: Triangle T(n,k) = 1 + A000330(n) - A000330(k) - A000330(n-k), read by rows.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,1,4,1,1,9,9,1,1,16,21,16,1,1,25,37,37,25,1,1,36,57,64,57,36,1,1,49,81,97,97,81,49,1,1,64,109,136,145,136,109,64,1,1,81,141,181,201,201,181,141,81,1,1,100,177,232,265,276,265,232,177,100,1,1,121,217,289,337,361,361,337,289,217,121,1,1,144
+; Formula: a(n) = (truncate((sqrtint(8*n+8)-1)/2)+1)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))+1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,$2
-add $1,1
-sub $2,$0
-mul $2,$0
-mul $2,$1
-mov $0,$2
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+mov $3,$1
+add $3,1
+sub $0,$2
+sub $0,1
+sub $1,$0
+mul $0,$3
+mul $0,$1
 add $0,1

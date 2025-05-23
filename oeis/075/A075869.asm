@@ -1,20 +1,22 @@
 ; A075869: Numbers k such that 5*k^2 - 9 is a square.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 3,51,915,16419,294627,5286867,94868979,1702354755,30547516611,548152944243,9836205479763,176503545691491,3167227616967075,56833593559715859,1019837456457918387,18300240622682815107
-; Formula: a(n) = 24*truncate(b(max(3*n-3,0))/16)+3, b(n) = 3*b(n-1)-b(n-2), b(3) = 34, b(2) = 13, b(1) = 5, b(0) = 2
+; Formula: a(n) = 12*c(max(2*n-2,0))+3, b(n) = truncate((16*c(n-2)+4*b(n-2)+4)/4), b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = 16*c(n-2)+4*b(n-2)+truncate((4*c(n-2))/4)+4, c(3) = 4, c(2) = 4, c(1) = 0, c(0) = 0
 
 #offset 1
 
-mov $1,2
-mov $2,3
 sub $0,1
-mul $0,3
+mul $0,2
 lpb $0
-  sub $0,1
+  sub $0,2
+  mul $2,4
+  add $1,1
   add $1,$2
+  mul $1,4
+  div $2,4
   add $2,$1
+  div $1,4
 lpe
-mov $0,$1
-div $0,16
-mul $0,24
+mov $0,$2
+mul $0,12
 add $0,3

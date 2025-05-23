@@ -1,11 +1,18 @@
 ; A141665: A signed half of Pascal's triangle A007318: p(x,n) = (1+I*x)^n; t(n,m) = real part of coefficients(p(x,n)).
-; Submitted by Jamie Morken(w4)
+; Submitted by loader3229
 ; 1,1,0,1,0,-1,1,0,-3,0,1,0,-6,0,1,1,0,-10,0,5,0,1,0,-15,0,15,0,-1,1,0,-21,0,35,0,-7,0,1,0,-28,0,70,0,-28,0,1,1,0,-36,0,126,0,-84,0,9,0,1,0,-45,0,210,0,-210,0,45,0,-1,1,0,-55,0,330,0,-462,0,165,0,-11,0,1,0
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
 mov $1,$2
 bin $1,$0
 lpb $0
