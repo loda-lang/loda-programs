@@ -1,0 +1,54 @@
+; A220516: Nonnegative integers in square maze arrangement T(n,k), read by antidiagonals, n>=0, k>=0.
+; Submitted by loader3229
+; 0,1,3,8,2,4,9,7,5,15,24,10,6,14,16,25,23,11,13,17,35,48,26,22,12,18,34,36,49,47,27,21,19,33,37,63,80,50,46,28,20,32,38,62,64,81,79,51,45,29,31,39,61,65,99,120,82,78,52,44,30,40,60,66,98,100
+; Formula: a(n) = max((-(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)-truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+binomial(truncate((sqrtint(8*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+8*truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)+8*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+8*truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)+8*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8)-1)/2)+1)^2-(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)-truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+binomial(truncate((sqrtint(8*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+8*truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)+8*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8)-1)/2)+1,2),((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)-binomial(truncate((sqrtint(8*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+8*truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)+8*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8)-1)/2)+1,2)+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))^2-(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)-truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+binomial(truncate((sqrtint(8*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+8*truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)+8*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(4*truncate((sqrtint(floor(n/2))+n)/2)-2*sqrtint(floor(n/2))-2*n+1)+8*truncate((sqrtint(8*n+8)-1)/2)*(-2*truncate((sqrtint(floor(n/2))+n)/2)+sqrtint(floor(n/2))+n)+8*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+8)-1)/2)+1)-1
+
+mov $3,$0
+mov $5,$0
+div $5,2
+nrt $5,2
+add $0,1
+add $3,$5
+mod $3,2
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+mul $1,$3
+add $1,$2
+mov $4,1
+sub $4,$3
+sub $4,$3
+sub $0,1
+sub $0,$2
+mul $0,$4
+add $0,$1
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+add $1,1
+sub $0,$2
+mul $0,-1
+add $0,$1
+add $0,1
+mov $2,$0
+pow $2,2
+add $2,$0
+sub $2,$1
+mov $3,$1
+sub $3,$0
+pow $3,2
+add $3,$0
+mov $0,$2
+max $0,$3
+sub $0,1
