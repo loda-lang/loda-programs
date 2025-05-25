@@ -1,9 +1,28 @@
 ; A040361: Continued fraction for sqrt(381).
 ; Submitted by Jon Maiga
 ; 19,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1,1,12,1,1,38,1
-; Formula: a(n) = truncate((6*truncate((5*A010225(n))/4))/5)
+; Formula: a(n) = truncate((6*truncate((5*floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-5)/4))/5)
 
-seq $0,10225 ; Continued fraction for sqrt(183).
+mov $1,2
+trn $1,$0
+add $1,6
+gcd $0,$1
+sub $0,3
+sub $1,2
+mov $3,3
+pow $3,$0
+mov $0,$3
+mod $0,10
+mov $2,2
+add $2,$0
+mov $0,$2
+div $0,3
+mul $0,3
+mul $2,2
+mul $0,$1
+add $0,$2
+div $0,2
+sub $0,1
 mul $0,5
 div $0,4
 mul $0,6

@@ -9,8 +9,20 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,18911 ; Expansion of 1/((1-4x)(1-5x)(1-9x)).
+  add $0,2
+  mov $4,9
+  pow $4,$0
+  mov $6,4
+  pow $6,$0
+  sub $6,$4
+  div $6,5
+  mov $5,5
+  pow $5,$0
+  sub $5,$4
+  div $5,4
+  sub $6,$5
+  mov $0,$6
   mul $1,7
-  add $1,$0
+  add $1,$6
 lpe
 mov $0,$1

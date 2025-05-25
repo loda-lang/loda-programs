@@ -1,7 +1,7 @@
 ; A011577: Stirling numbers of second kind S2(28,n).
 ; Submitted by m0laki
 ; 1,134217727,3812664524766,2998587019946701,307440364830580800,8220146115188676396,82892803728383735268,392678226281361931131,1006698291338432496375,1538533978374777852325,1501910658871554621690,985397416171213883565,451512851236272407400,148782988064375309400,36060660300744309600,6539643128396047620,898741468057510350,94432767017711850,7626292886912700,474194413703010,22653141490980,825906183960,22693687380,460192005,6654375,64701,378,1
-; Formula: a(n) = truncate(A028246(n+378)/A000142(A002262(n+377)))
+; Formula: a(n) = truncate(A028246(n+378)/((-binomial(truncate((sqrtint(8*n+3017)+1)/2),2)+n+377)!))
 
 #offset 1
 
@@ -10,7 +10,14 @@ add $1,377
 mov $2,$1
 add $1,1
 seq $1,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
-seq $2,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+mov $3,$2
+mul $3,8
+add $3,1
+nrt $3,2
+add $3,1
+div $3,2
+bin $3,2
+sub $2,$3
 seq $2,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 div $1,$2
 mov $0,$1

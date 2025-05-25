@@ -11,7 +11,13 @@ lpb $2
   mov $3,$1
   pow $3,7
   mod $3,43
-  seq $3,10054 ; a(n) = 1 if n is a triangular number, otherwise 0.
+  mov $5,$3
+  mul $5,8
+  nrt $5,2
+  add $5,2
+  div $5,2
+  bin $5,2
+  equ $3,$5
   sub $0,$3
   add $1,1
   mov $4,$0

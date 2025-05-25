@@ -1,7 +1,7 @@
 ; A041990: Numerators of continued fraction convergents to sqrt(518).
 ; Submitted by Kotenok2000
 ; 22,23,91,569,1798,2367,105946,108313,430885,2693623,8511754,11205377,501548342,512753719,2039809499,12751610713,40294641638,53046252351,2374329745082,2427375997433,9656457737381,60366122421719,190754825002538,251120947424257,11240076511669846,11491197459094103,45713668888952155,285773210792807033,903033301267373254,1188806512060180287,53210519831915305882,54399326343975486169,216408498863841764389,1352850319527026072503,4274959457444919981898,5627809776971946054401,251898589644210546375542
-; Formula: a(n) = b(n+1), b(n) = truncate((gcd(-6*truncate(truncate((5*truncate((2*A010225(n-1)*(truncate((-1)^(n-1))+2)-1)/3)+5)/3)/6)+truncate((5*truncate((2*A010225(n-1)*(truncate((-1)^(n-1))+2)-1)/3)+5)/3),truncate((5*truncate((2*A010225(n-1)*(truncate((-1)^(n-1))+2)-1)/3)+5)/3))+truncate((5*truncate((2*A010225(n-1)*(truncate((-1)^(n-1))+2)-1)/3)+5)/3))/2)*b(n-1)+b(n-2), b(2) = 23, b(1) = 22, b(0) = 1
+; Formula: a(n) = b(n+1), b(n) = truncate((gcd(-6*truncate(truncate((5*truncate((2*(truncate((-1)^(n-1))+2)*(floor((3*floor((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10+2)/3)*(max(-n+3,0)+4)+2*(truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3)/6)+truncate((5*truncate((2*(truncate((-1)^(n-1))+2)*(floor((3*floor((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10+2)/3)*(max(-n+3,0)+4)+2*(truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3),truncate((5*truncate((2*(truncate((-1)^(n-1))+2)*(floor((3*floor((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10+2)/3)*(max(-n+3,0)+4)+2*(truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3))+truncate((5*truncate((2*(truncate((-1)^(n-1))+2)*(floor((3*floor((truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10+2)/3)*(max(-n+3,0)+4)+2*(truncate(3^(gcd(n-1,max(-n+3,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3))/2)*b(n-1)+b(n-2), b(2) = 23, b(1) = 22, b(0) = 1
 
 mov $1,1
 add $0,1
@@ -12,8 +12,27 @@ lpb $0
   mov $6,-1
   pow $6,$3
   add $6,2
+  mov $7,2
+  trn $7,$3
+  add $7,6
   mov $1,$3
-  seq $1,10225 ; Continued fraction for sqrt(183).
+  gcd $1,$7
+  sub $1,3
+  sub $7,2
+  mov $9,3
+  pow $9,$1
+  mov $1,$9
+  mod $1,10
+  mov $8,2
+  add $8,$1
+  mov $1,$8
+  div $1,3
+  mul $1,3
+  mul $8,2
+  mul $1,$7
+  add $1,$8
+  div $1,2
+  sub $1,1
   mul $1,$6
   mul $1,2
   sub $1,1

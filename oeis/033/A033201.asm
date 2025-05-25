@@ -13,7 +13,16 @@ lpb $2
   add $3,1
   seq $3,45468 ; Primes congruent to {1, 4} mod 5.
   mov $5,$3
-  seq $3,131079 ; Periodic sequence (2, 2, 2, 1, 0, 0, 0, 1).
+  mul $3,3
+  add $3,2
+  div $3,4
+  dif $3,2
+  mul $3,2
+  add $3,1
+  mod $3,3
+  mul $3,9
+  add $3,2
+  mod $3,10
   neq $3,0
   sub $0,$3
   add $1,1

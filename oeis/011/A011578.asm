@@ -1,7 +1,7 @@
 ; A011578: Stirling numbers of second kind S2(29,n).
 ; Submitted by hooperr
 ; 1,268435455,11438127792025,11998160744311570,1540200411172850701,49628317055962639176,588469772213874823272,3224318613979279184316,9452962848327254398506,16392038075086211019625,18059551225961878690915,13326679652926121224470,6855064482242755179765,2534474684137526739000,689692892575539953400,140694950355081071520,21818248085373723570,2598531274376323650,239332331869053150,17110181160972900,949910385013590,40823077538100,1347860993700,33738295500,626551380,8336601,74907,406,1
-; Formula: a(n) = truncate(A028246(n+406)/A000142(A002262(n+405)))
+; Formula: a(n) = truncate(A028246(n+406)/((-binomial(truncate((sqrtint(8*n+3241)+1)/2),2)+n+405)!))
 
 #offset 1
 
@@ -9,6 +9,13 @@ add $0,405
 mov $1,$0
 add $0,1
 seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
-seq $1,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+mov $2,$1
+mul $2,8
+add $2,1
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+sub $1,$2
 seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
 div $0,$1

@@ -10,7 +10,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  seq $3,55642 ; Number of digits in the decimal expansion of n.
+  max $3,1
+  log $3,10
+  add $3,1
   add $3,$4
   gcd $3,2
   sub $0,$3

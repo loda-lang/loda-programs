@@ -13,8 +13,12 @@ bin $2,2
 lpb $2
   sub $2,1
   add $3,$1
-  add $3,1
-  seq $3,23962 ; First digit after decimal point of cube root of n.
+  mov $4,1
+  add $4,$3
+  mul $4,1000
+  nrt $4,3
+  mov $3,$4
+  mod $3,10
   add $3,5
   equ $3,5
   sub $0,$3

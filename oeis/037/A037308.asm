@@ -8,7 +8,7 @@ mov $2,$0
 pow $2,4
 lpb $2
   mov $4,$1
-  seq $4,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $4,2
   mov $3,$1
   dgs $3,10
   sub $3,$4

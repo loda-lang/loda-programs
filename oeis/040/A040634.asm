@@ -1,12 +1,31 @@
 ; A040634: Continued fraction for sqrt(660).
 ; Submitted by Skillz
 ; 25,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1,2,4,2,1,50,1
-; Formula: a(n) = truncate(truncate(A006882(truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1)/(truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1))/(truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1))*(truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1)-truncate(A006882(truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1)/(truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1))+truncate((3*truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)-20*truncate(truncate((5*truncate((2*A010225(n)*((-1)^n+2)-1)/3)+5)/3)/10))/2)+1
 
 mov $3,-1
 pow $3,$0
 add $3,2
-seq $0,10225 ; Continued fraction for sqrt(183).
+mov $4,2
+trn $4,$0
+add $4,6
+mov $7,1
+gcd $0,$4
+sub $0,3
+sub $4,2
+mov $6,3
+pow $6,$0
+mov $0,$6
+mod $0,10
+mov $5,2
+add $5,$0
+mov $0,$5
+div $0,3
+mul $0,3
+mul $5,2
+mul $0,$4
+add $0,$5
+div $0,2
+sub $0,1
 mul $0,$3
 mul $0,2
 sub $0,1
@@ -21,7 +40,11 @@ add $0,$2
 div $0,2
 add $0,1
 mov $1,$0
-seq $1,6882 ; Double factorials n!!: a(n) = n*a(n-2) for n > 1, a(0) = a(1) = 1.
+lpb $1
+  mul $7,$1
+  sub $1,2
+lpe
+mov $1,$7
 div $1,$0
 mod $1,$0
 sub $0,$1

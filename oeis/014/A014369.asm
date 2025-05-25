@@ -4,15 +4,17 @@
 
 #offset 1
 
-sub $0,1
 mov $2,$0
-add $2,8
+sub $0,1
+add $2,7
 pow $2,4
 lpb $2
   mov $3,$1
   dgs $3,10
   mov $5,$1
-  seq $5,55642 ; Number of digits in the decimal expansion of n.
+  max $5,1
+  log $5,10
+  add $5,1
   mov $6,$3
   mod $6,$5
   equ $6,0

@@ -6,6 +6,4 @@
 
 add $0,2
 seq $0,60055 ; Denominators of nonzero numbers appearing in the Euler-Maclaurin summation formula. (See A060054 for the definition of these numbers.)
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

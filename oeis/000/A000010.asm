@@ -5,7 +5,7 @@
 #offset 1
 
 mov $1,$0
-mov $2,$1
+mov $2,$0
 pow $2,2
 mov $4,$2
 dif $4,2
@@ -19,16 +19,14 @@ lpb $4
     add $6,2
     sub $7,$8
   lpe
-  dir $4,$6
   mov $3,$5
   div $3,$6
   mul $3,-1
+  dir $4,$6
   add $5,$3
 lpe
 mov $2,$5
-div $2,$1
-mov $1,$2
-sub $1,1
-add $1,1
+div $2,$0
 sub $0,1
-mov $0,$1
+mov $0,$2
+mov $1,$2

@@ -10,9 +10,16 @@ mov $2,0
 mov $4,0
 lpb $0
   mov $3,$0
+  add $3,1
+  mov $5,$3
   add $0,$4
   trn $0,3
-  seq $3,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
+  mul $3,8
+  nrt $3,2
+  add $3,3
+  div $3,2
+  bin $3,2
+  sub $3,$5
   equ $3,0
   add $2,$3
   sub $4,1

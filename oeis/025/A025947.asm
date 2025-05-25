@@ -9,7 +9,21 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,16315 ; Expansion of g.f. 1/((1 - 2*x)*(1 - 7*x)*(1 - 12*x)).
+  add $0,2
+  mov $4,2
+  pow $4,$0
+  mov $5,6
+  pow $5,$0
+  mul $5,$4
+  sub $5,$4
+  div $5,4
+  mov $6,7
+  pow $6,$0
+  sub $6,$4
+  sub $6,$5
+  sub $5,$6
+  mov $0,$5
+  div $0,25
   mul $1,3
   add $1,$0
 lpe

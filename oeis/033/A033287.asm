@@ -11,9 +11,13 @@ lpb $4
   sub $0,1
   mov $3,$0
   max $0,0
+  add $0,2
+  mov $6,$0
+  seq $6,40 ; The prime numbers.
+  div $6,2
+  mov $0,$6
+  mul $0,2
   add $0,1
-  seq $0,154115 ; Numbers n such that n + 3 is prime.
-  add $0,3
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mul $3,$0
   add $3,$0

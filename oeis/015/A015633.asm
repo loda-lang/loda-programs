@@ -18,8 +18,15 @@ lpb $3
   mov $6,$1
   add $6,1
   seq $6,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
-  add $1,1
-  seq $1,1615 ; Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
+  mov $7,-1
+  pow $7,$1
+  mul $7,2
+  bin $7,2
+  mov $8,$1
+  add $8,1
+  seq $8,253629 ; Multiplicative function defined for prime powers by a(p^e) = p^(e-1)(p+1) if p > 2 and a(2^e) = 2^(e-1).
+  mul $8,$7
+  mov $1,$8
   add $1,1
   mul $1,$6
   div $1,2

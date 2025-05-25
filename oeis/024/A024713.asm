@@ -6,9 +6,13 @@
 
 sub $0,3
 lpb $0
-  add $0,3
-  seq $0,154115 ; Numbers n such that n + 3 is prime.
-  add $0,3
+  add $0,4
+  mov $2,$0
+  seq $2,40 ; The prime numbers.
+  div $2,2
+  mov $0,$2
+  mul $0,2
+  add $0,1
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   pow $0,2
   div $0,8

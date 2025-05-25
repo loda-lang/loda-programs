@@ -1,12 +1,20 @@
 ; A040502: Continued fraction for sqrt(525).
 ; Submitted by BarnardsStern
 ; 22,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10,2,10,1,44,1,10
-; Formula: a(n) = 6*truncate((gcd(0,A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)))+2)/5)+A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2))
 
 mov $3,$0
 gcd $3,2
+mov $8,6
 mov $2,$0
-seq $2,10126 ; Continued fraction for sqrt(22).
+lpb $2
+  gcd $8,$2
+  mul $8,4
+  div $8,3
+  add $8,2
+  mov $2,0
+lpe
+mov $2,$8
+sub $2,2
 mov $4,$2
 div $4,3
 mul $4,3
@@ -15,7 +23,27 @@ mul $2,4
 div $2,5
 mul $2,$3
 add $2,$3
-seq $2,144330 ; Triangle read by rows, A144328 * A000012
+mov $6,$2
+mul $6,8
+nrt $6,2
+sub $6,1
+div $6,2
+mov $7,$6
+add $7,1
+bin $7,2
+sub $2,$7
+sub $2,1
+mov $5,$6
+add $5,$2
+sub $6,$2
+add $6,1
+mul $5,$6
+mov $6,0
+bin $6,$2
+add $5,$6
+add $6,$5
+mov $2,$6
+div $2,2
 gcd $1,$2
 add $1,2
 div $1,5

@@ -11,12 +11,31 @@ pow $2,3
 lpb $2
   sub $2,8
   mov $3,$1
-  seq $3,29635 ; The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
-  mov $5,$3
+  add $3,1
+  mov $7,$3
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $3,$6
+  sub $3,1
+  dif $3,-1
+  add $3,$7
+  mov $6,$7
+  bin $6,$3
+  sub $7,1
+  mov $8,$7
+  bin $8,$3
+  add $8,$6
+  mov $3,$8
   mul $3,338
   gcd $3,4
   add $3,1
   equ $3,5
+  mov $5,$8
   sub $0,$3
   add $1,1
   mov $4,$0

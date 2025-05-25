@@ -12,7 +12,9 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-  seq $3,55642 ; Number of digits in the decimal expansion of n.
+  max $3,1
+  log $3,10
+  add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $0,$3
   add $1,1

@@ -1,28 +1,68 @@
 ; A006215: Number of down-up permutations of n+6 starting with n+1.
 ; Submitted by [AF] Kalianthys
 ; 0,16,122,800,5296,36976,275792,2204480,18870016,172585936,1681843712,17411416160,190939611136,2211961358896,26999750469632,346419349043840,4661658528710656,65657186909139856,966054350401175552,14822897275566895520
-; Formula: a(n) = A008280(A061579(-A002260(truncate(sqrtint(8*A061579(binomial(n+4,2)))/2)+A061579(binomial(n+4,2))+n+3)+truncate(sqrtint(8*A061579(binomial(n+4,2)))/2)+A061579(binomial(n+4,2))+A319573(truncate(sqrtint(8*A061579(binomial(n+4,2)))/2)+A061579(binomial(n+4,2))+n+2)+n+3))
+; Formula: a(n) = A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2))*(-(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)-n+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)+1,2)+binomial(n+4,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)-1)-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2))*((truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)+1,2)-binomial(n+4,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+n+1)+8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)+1)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)+1,2)-8*binomial(n+4,2)+16)-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2))*(-(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)-n+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)+1,2)+binomial(n+4,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)-1)+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2))*((truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)+1,2)-binomial(n+4,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+n+1)-(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)+1)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)-n+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n+4,2)+8)-1)/2)+1)^2-8*binomial(n+4,2)-8)/2)+8*n-8*binomial(n+4,2)+16)-1)/2)+1,2)+binomial(n+4,2)-2)
 
 add $0,1
 mov $1,$0
 add $0,3
 bin $0,2
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
-mov $2,$0
+add $0,1
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+pow $4,2
+sub $4,$0
+mov $0,$4
 mul $0,8
 nrt $0,2
 div $0,2
+mov $2,$4
 add $2,$1
 add $2,$0
 mov $0,$2
 add $0,1
-mov $3,$0
-seq $3,319573 ; The y coordinates of the stripe enumeration of N X N where N = {0, 1, 2, ...}.
+mov $3,$2
+add $3,2
+mov $5,$3
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+sub $3,$6
+sub $3,1
+mov $7,$5
+mod $7,2
+sub $5,$3
+mul $5,$7
+mul $7,$3
+sub $3,$7
+add $3,$5
 add $3,$0
 add $0,1
-seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+mov $8,$0
+mul $8,8
+nrt $8,2
+add $8,1
+div $8,2
+bin $8,2
+sub $0,$8
 sub $3,$0
 mov $0,$3
-add $0,1
-seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+add $0,2
+mov $9,$0
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+add $9,1
+pow $9,2
+sub $9,$0
+mov $0,$9
 seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.

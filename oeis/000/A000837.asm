@@ -15,7 +15,13 @@ lpb $2
   seq $4,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   mov $5,0
   add $0,1
-  seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+  mov $6,$0
+  mul $6,8
+  nrt $6,2
+  add $6,1
+  div $6,2
+  bin $6,2
+  sub $0,$6
   seq $0,41 ; a(n) is the number of partitions of n (the partition numbers).
   sub $0,1
   mul $0,$4

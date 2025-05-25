@@ -20,7 +20,19 @@ lpb $4
   div $5,2
   mov $6,-1
   pow $6,$5
-  seq $0,316569 ; a(n) = Jacobi (or Kronecker) symbol (n, 15).
+  mov $7,$0
+  pow $7,2
+  mul $7,24
+  sub $7,3
+  div $7,5
+  add $7,1
+  mov $8,$0
+  mul $8,$7
+  mul $0,6
+  sub $0,$8
+  sub $0,1
+  mod $0,3
+  add $0,1
   mul $0,$6
   mul $1,$0
   add $3,$1

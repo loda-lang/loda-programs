@@ -7,7 +7,8 @@ mov $3,$0
 lpb $3
   sub $3,1
   mov $2,$1
-  seq $2,10060 ; Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+  dgs $2,2
+  mod $2,2
   equ $2,0
   mul $2,$0
   bin $2,$1

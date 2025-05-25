@@ -9,7 +9,7 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  seq $0,16307 ; Expansion of 1/((1-2*x)*(1-6*x)*(1-10*x)).
+  seq $0,16307 ; Expansion of g.f. 1/((1-2*x)*(1-6*x)*(1-10*x)).
   mul $1,3
   add $1,$0
 lpe

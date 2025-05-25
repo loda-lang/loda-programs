@@ -1,9 +1,21 @@
 ; A011576: Stirling numbers of second kind S2(27,n).
 ; Submitted by Science United
 ; 1,67108863,1270865805301,749329038535350,61338207158409090,1359801318005044551,11647571772911241531,47628831813556336200,106563273280541795575,143197070509423605675,123519417123830092365,71823166587281982600,29206898819153109600,8541149231801585700,1834634071262848260,294063066070824960,35569317763922670,3270191625210510,229268487458010,12246296312250,495564056130,15015551265,333832005,5265000,55575,351,1
-; Formula: a(n) = A008277(n+351)
+; Formula: a(n) = truncate(A028246(n+351)/((-binomial(truncate((sqrtint(8*n+2801)+1)/2),2)+n+350)!))
 
 #offset 1
 
-add $0,351
-seq $0,8277 ; Triangle of Stirling numbers of the second kind, S2(n,k), n >= 1, 1 <= k <= n.
+add $0,350
+mov $1,$0
+add $0,1
+seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
+mov $2,$1
+mul $2,8
+add $2,1
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+sub $1,$2
+seq $1,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+div $0,$1

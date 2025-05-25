@@ -1,6 +1,7 @@
 ; A040369: Continued fraction for sqrt(389).
 ; Submitted by [AF] Kalianthys
 ; 19,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2,1,38,1,2,1,1,1,1,2
+; Formula: a(n) = truncate(b(n+1)/2), b(n) = 24*floor(((truncate(3^(gcd(truncate((4*n-3)/3),max(-truncate((4*n-3)/3)+2,0)+6)-3))+1)%10)/3)+4*((truncate(3^(gcd(truncate((4*n-3)/3),max(-truncate((4*n-3)/3)+2,0)+6)-3))+1)%10)+2*gcd(sumdigits((truncate(3^(gcd(truncate((4*n-3)/3),max(-truncate((4*n-3)/3)+2,0)+6)-3))+1)%10+6*floor(((truncate(3^(gcd(truncate((4*n-3)/3),max(-truncate((4*n-3)/3)+2,0)+6)-3))+1)%10)/3)-1,2)*sign((truncate(3^(gcd(truncate((4*n-3)/3),max(-truncate((4*n-3)/3)+2,0)+6)-3))+1)%10+6*floor(((truncate(3^(gcd(truncate((4*n-3)/3),max(-truncate((4*n-3)/3)+2,0)+6)-3))+1)%10)/3)-1),2)-6, b(1) = 38, b(0) = 0
 
 add $0,1
 lpb $0

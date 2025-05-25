@@ -6,9 +6,7 @@
 
 mul $0,2
 mov $1,$0
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 bin $0,2
 gcd $0,3
 div $1,$0

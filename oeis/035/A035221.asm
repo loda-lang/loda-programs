@@ -16,9 +16,7 @@ lpb $4
   gcd $1,$4
   bin $1,$0
   mov $5,$0
-  lpb $5
-    dif $5,2
-  lpe
+  dir $5,2
   div $5,2
   mov $6,-1
   pow $6,$5

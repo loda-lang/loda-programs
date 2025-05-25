@@ -18,7 +18,14 @@ lpb $1
   mov $3,$0
   add $0,1
   seq $0,28246 ; Triangular array a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n >= 1, 1 <= k <= n, read by rows.
-  seq $3,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
+  mov $4,$3
+  mul $4,8
+  add $4,1
+  nrt $4,2
+  add $4,1
+  div $4,2
+  bin $4,2
+  sub $3,$4
   seq $3,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
   div $0,$3
 lpe

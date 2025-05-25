@@ -8,7 +8,26 @@ gcd $1,2
 bin $1,2
 add $0,$1
 div $0,2
-seq $0,10225 ; Continued fraction for sqrt(183).
+mov $2,2
+trn $2,$0
+add $2,6
+gcd $0,$2
+sub $0,3
+sub $2,2
+mov $4,3
+pow $4,$0
+mov $0,$4
+mod $0,10
+mov $3,2
+add $3,$0
+mov $0,$3
+div $0,3
+mul $0,3
+mul $3,2
+mul $0,$2
+add $0,$3
+div $0,2
+sub $0,1
 dif $0,4
 mul $0,5
 div $0,4

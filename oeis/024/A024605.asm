@@ -10,7 +10,11 @@ lpb $2
   sub $2,$0
   mov $3,$1
   add $3,1
-  seq $3,2324 ; Number of divisors of n == 1 (mod 3) minus number of divisors of n == 2 (mod 3).
+  mov $4,$3
+  seq $4,35191 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 9.
+  seq $3,1817 ; G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).
+  mul $3,2
+  sub $3,$4
   sub $0,$3
   add $1,1
 lpe

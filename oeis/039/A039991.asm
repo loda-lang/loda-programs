@@ -1,14 +1,67 @@
 ; A039991: Triangle of coefficients of cos(x)^n in polynomial for cos(nx).
 ; Submitted by Hoshione
 ; 1,1,0,2,0,-1,4,0,-3,0,8,0,-8,0,1,16,0,-20,0,5,0,32,0,-48,0,18,0,-1,64,0,-112,0,56,0,-7,0,128,0,-256,0,160,0,-32,0,1,256,0,-576,0,432,0,-120,0,9,0,512,0,-1280,0,1120,0,-400,0,50,0,-1,1024,0,-2816,0,2816,0,-1232,0,220,0,-11,0,2048,0
-; Formula: a(n) = truncate((A108045(max(n,1)+A114327(max(n,1)))*A059268(max(n,1)+A114327(max(n,1))))/2)
 
 max $0,1
 mov $1,$0
-seq $0,114327 ; Table T(n,m) = n - m read by upwards antidiagonals.
+mov $11,0
+mov $12,0
+add $0,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
+mul $0,-2
+add $0,$3
 add $0,$1
+mov $8,3
+mov $10,3
 mov $2,$0
-seq $2,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
-seq $0,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+add $2,1
+mov $9,$2
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+mov $13,$9
+add $13,1
+bin $13,2
+sub $2,$13
+sub $2,1
+mul $2,-1
+add $2,$9
+sub $9,$2
+lpb $2
+  sub $2,1
+  add $9,1
+  sub $11,1
+  add $12,$8
+  mov $8,$10
+  sub $8,$12
+  mul $8,$9
+  div $8,$11
+  add $10,$8
+  mul $12,-1
+lpe
+mov $2,$8
+div $2,3
+mov $7,$0
+mul $7,8
+add $7,1
+nrt $7,2
+add $7,1
+div $7,2
+bin $7,2
+mov $5,$0
+sub $5,$7
+mov $6,2
+pow $6,$5
+mov $0,$6
 mul $0,$2
 div $0,2

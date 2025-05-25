@@ -4,15 +4,21 @@
 
 mov $3,$0
 lpb $3
-  mov $4,$1
-  seq $4,34887 ; Number of digits in 2^n.
+  mov $4,2
+  pow $4,$1
+  log $4,10
+  add $4,1
+  mov $6,$1
   add $1,3
   add $2,$4
   mov $3,$0
   sub $3,$2
 lpe
-mov $3,$1
-seq $3,34887 ; Number of digits in 2^n.
+mov $3,2
+pow $3,$1
+log $3,10
+add $3,1
+mov $5,$1
 add $2,$3
 sub $2,$0
 sub $2,1

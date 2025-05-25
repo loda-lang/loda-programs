@@ -1,6 +1,7 @@
 ; A004079: a(n) = maximal m such that an m X n Florentine rectangle exists.
 ; Submitted by MJKelleher
 ; 1,2,2,4,4,6,6,7,8,10,10,12
+; Formula: a(n) = ((gcd(-14,n-1)*(n-1))==(n-1))+n-1
 
 #offset 1
 

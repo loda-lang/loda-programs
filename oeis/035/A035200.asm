@@ -5,6 +5,32 @@
 #offset 1
 
 dir $0,3
+mov $4,0
+mov $6,0
 mov $1,$0
-seq $1,35185 ; Number of divisors of n == 1 or 7 (mod 8) minus number of divisors of n == 3 or 5 (mod 8).
-mov $0,$1
+dif $1,2
+mov $7,$1
+mov $5,$1
+lpb $5
+  add $4,1
+  min $5,$4
+  mov $8,$7
+  dif $8,$5
+  mov $5,$8
+  div $5,2
+  mod $5,2
+  mul $5,2
+  sub $5,1
+  mul $8,$4
+  equ $8,$7
+  mul $8,$5
+  sub $7,$4
+  mov $5,$7
+  sub $6,$8
+lpe
+mov $2,$1
+equ $2,$6
+mov $3,$6
+gcd $3,$2
+mov $0,$3
+mov $1,$3

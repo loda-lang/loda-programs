@@ -10,7 +10,8 @@ pow $2,5
 lpb $2
   mov $3,$1
   add $3,1
-  seq $3,65881 ; Ultimate modulo 10: right-hand nonzero digit of n.
+  dir $3,10
+  mod $3,10
   mov $5,$1
   add $5,1
   seq $5,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

@@ -12,9 +12,69 @@ lpb $3
   sub $0,1
   mov $4,$0
   max $4,0
-  seq $4,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+  mov $5,$4
+  add $5,$4
+  bin $5,2
+  add $5,1
+  mov $9,$5
+  mul $9,8
+  nrt $9,2
+  sub $9,1
+  div $9,2
+  add $9,1
+  pow $9,2
+  sub $9,$5
+  mov $5,$9
+  mul $5,8
+  nrt $5,2
+  div $5,2
+  mov $6,$9
+  add $6,$5
+  mov $5,$6
+  add $5,1
+  mov $7,$6
+  add $7,2
+  mov $10,$7
+  mul $10,8
+  nrt $10,2
+  sub $10,1
+  div $10,2
+  mov $11,$10
+  add $11,1
+  bin $11,2
+  sub $7,$11
+  sub $7,1
+  mov $12,$10
+  mod $12,2
+  sub $10,$7
+  mul $10,$12
+  mul $12,$7
+  sub $7,$12
+  add $7,$10
+  add $7,$5
+  add $5,1
+  mov $8,$5
+  mul $8,8
+  nrt $8,2
+  div $8,2
+  bin $8,2
+  sub $5,$8
+  sub $7,$5
+  mov $5,$7
+  add $5,1
+  mov $13,$5
+  mul $13,8
+  nrt $13,2
+  sub $13,1
+  div $13,2
+  add $13,1
+  pow $13,2
+  sub $13,$5
+  mov $5,$13
+  seq $5,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
   mov $2,$3
-  mul $2,$4
+  mul $2,$5
+  mov $4,$5
   add $1,$2
 lpe
 div $1,$4

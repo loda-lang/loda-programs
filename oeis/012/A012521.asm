@@ -12,11 +12,23 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  add $4,1
-  seq $4,46899 ; Triangle in which n-th row is {binomial(n+k,k), k=0..n}, n >= 0.
+  add $4,2
+  mov $7,$4
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  sub $4,$6
+  sub $4,1
+  add $7,$4
+  bin $7,$4
   sub $0,1
   seq $0,131689 ; Triangle of numbers T(n,k) = k!*Stirling2(n,k) = A000142(k)*A048993(n,k) read by rows, T(n, k) for 0 <= k <= n.
-  mul $0,$4
+  mul $0,$7
+  mov $4,$7
   mul $5,2
   add $5,$0
 lpe

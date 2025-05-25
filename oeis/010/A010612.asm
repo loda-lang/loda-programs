@@ -1,6 +1,7 @@
 ; A010612: Decimal expansion of cube root of 41.
 ; Submitted by Christian Krause
 ; 3,4,4,8,2,1,7,2,4,0,3,8,2,7,3,0,3,8,4,0,9,7,4,2,3,8,6,4,2,6,0,7,8,9,6,1,7,1,6,9,9,9,2,8,8,1,6,0,8,1,5,7,2,1,2,1,2,1,9,7,9,7,7,2,1,9,4,0,2,3,1,0,2,0,8,3,1,7,6,9
+; Formula: a(n) = -10*truncate(truncate((2*d(max(6*n-6,0)))/truncate((c(max(6*n-6,0))+10)/(10^(n-1))))/10)+truncate((2*d(max(6*n-6,0)))/truncate((c(max(6*n-6,0))+10)/(10^(n-1)))), b(n) = truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11))/3), b(3) = 54, b(2) = 20, b(1) = 0, b(0) = 0, c(n) = 4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11)-truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11))/3)+c(n-1), c(3) = 150, c(2) = 40, c(1) = 0, c(0) = 0, d(n) = 4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11)-truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11))/3)+c(n-1)+d(n-1), d(3) = 359, d(2) = 209, d(1) = 169, d(0) = 169, e(n) = 4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11)+2*c(n-1)-truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/11))/3)+d(n-1)+e(n-1), e(3) = 777, e(2) = 378, e(1) = 169, e(0) = 0
 
 #offset 1
 

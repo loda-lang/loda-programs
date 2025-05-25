@@ -6,8 +6,14 @@
 
 sub $0,2
 lpb $0
-  add $0,1
-  seq $0,67076 ; Numbers k such that 2*k + 3 is a prime.
+  mov $3,$0
+  add $3,2
+  seq $3,40 ; The prime numbers.
+  mov $2,1
+  add $2,$3
+  mov $0,$2
+  div $0,2
+  sub $0,2
   mov $1,$0
   mov $0,0
 lpe

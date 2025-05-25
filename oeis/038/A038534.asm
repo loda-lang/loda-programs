@@ -4,7 +4,5 @@
 mov $1,$0
 mul $0,2
 bin $0,$1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 pow $0,2

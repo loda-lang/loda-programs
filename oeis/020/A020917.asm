@@ -1,6 +1,6 @@
 ; A020917: Maximum number of K4's (complete 4 graphs) a graph can contain if it contains at most n distinct K3's (triangles).
 ; Submitted by Dr Who Fan
-; 1,1,1,2,2,2,5,5,5,6,6,6,9,9,9,10,15
+; 0,0,0,0,1,1,1,2,2,2,5,5,5,6,6,6,9,9,9,10,15
 
 add $0,1
 lpb $0

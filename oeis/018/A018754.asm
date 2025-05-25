@@ -1,6 +1,7 @@
 ; A018754: Divisors of 976.
 ; Submitted by Jamie Morken(s3)
 ; 1,2,4,8,16,61,122,244,488,976
+; Formula: a(n) = b(n-1), b(n) = 2*b(n-1)+c(n-1), b(1) = 2, b(0) = 1, c(n) = 29*((b(n-1)+c(n-1))==8), c(1) = 0, c(0) = 0
 
 #offset 1
 

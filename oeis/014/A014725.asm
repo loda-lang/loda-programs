@@ -11,8 +11,19 @@ pow $2,3
 lpb $2
   sub $2,32
   mov $3,$1
-  add $3,2
-  seq $3,14410 ; Elements in Pascal's triangle (by row) that are not 1.
+  add $3,1
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  add $6,2
+  bin $6,$3
+  mov $3,$6
   add $3,1
   mov $5,$3
   mul $3,338

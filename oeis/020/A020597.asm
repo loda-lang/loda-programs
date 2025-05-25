@@ -1,6 +1,7 @@
 ; A020597: Smallest nonempty set S containing prime divisors of 5k+3 for each k in S.
 ; Submitted by stoneageman
 ; 2,7,11,13,17,19,29,37,47
+; Formula: a(n) = sumdigits(truncate((10*3^(n+2)+8*6^(n+2)-15*5^(n+2))/120)*2^(n-1),7)*sign(truncate((10*3^(n+2)+8*6^(n+2)-15*5^(n+2))/120)*2^(n-1))+1
 
 #offset 1
 

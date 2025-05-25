@@ -7,9 +7,16 @@
 sub $0,1
 lpb $0
   mov $2,$0
+  add $2,1
+  mov $4,$2
   add $0,$3
   trn $0,3
-  seq $2,25581 ; Triangle read by rows: T(n, k) = n-k, for 0 <= k <= n.
+  mul $2,8
+  nrt $2,2
+  add $2,3
+  div $2,2
+  bin $2,2
+  sub $2,$4
   equ $2,0
   add $1,$2
   sub $3,1

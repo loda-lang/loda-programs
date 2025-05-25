@@ -7,6 +7,18 @@
 mov $1,$0
 add $1,1
 add $0,1
-seq $0,441 ; a(n) = Sum_{k=1..n-1} k*sigma(k)*sigma(n-k).
+mov $3,$0
+mul $3,6
+mov $2,1
+sub $2,$3
+mul $2,$0
+mov $4,$0
+seq $4,1158 ; sigma_3(n): sum of cubes of divisors of n.
+mul $4,$0
+mul $4,5
+seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mul $0,$2
+add $0,$4
+div $0,24
 mul $0,2
 dif $0,$1

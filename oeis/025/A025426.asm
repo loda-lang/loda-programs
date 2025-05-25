@@ -1,10 +1,23 @@
 ; A025426: Number of partitions of n into 2 nonzero squares.
 ; Submitted by Science United
 ; 0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,2,0,1,1,0,0,0,0,1,0,0,1,0,0,0,2,0,0,1,0,0,0,1,1,1,0,0,0,0,0
-; Formula: a(n) = -gcd(A063725(n),2)+truncate(A063725(n)/2)+2
 
 mov $3,$0
-seq $3,63725 ; Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
+mov $5,1
+mov $7,1
+mov $4,$0
+lpb $4
+  sub $4,$5
+  add $5,2
+  mov $6,$4
+  max $6,3
+  nrt $6,2
+  pow $6,2
+  equ $6,$4
+  add $7,$6
+lpe
+mov $3,$7
+sub $3,1
 add $1,$3
 div $1,2
 add $2,$1

@@ -4,5 +4,27 @@
 
 #offset 1
 
-seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+mov $2,0
+mov $5,0
+mov $6,0
+mul $0,2
+sub $0,1
+mov $1,1
+mov $4,$0
+lpb $0
+  sub $0,1
+  div $6,2
+  add $6,$2
+  mul $6,2
+  mov $2,$1
+  pow $2,$4
+  sub $2,$6
+  mov $3,$4
+  bin $3,$1
+  mul $3,$2
+  add $1,1
+  mul $5,-1
+  add $5,$3
+lpe
+gcd $0,$5
 dir $0,2

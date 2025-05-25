@@ -20,7 +20,18 @@ lpb $3
   mov $5,$1
   seq $5,54525 ; Triangle T(n,k): T(n,k) = mu(n/k) if k divides n, T(n,k) = 0 otherwise (n >= 1, 1 <= k <= n).
   sub $1,1
-  seq $1,59268 ; Concatenate subsequences [2^0, 2^1, ..., 2^n] for n = 0, 1, 2, ...
+  mov $8,$1
+  mul $8,8
+  add $8,1
+  nrt $8,2
+  add $8,1
+  div $8,2
+  bin $8,2
+  mov $6,$1
+  sub $6,$8
+  mov $7,2
+  pow $7,$6
+  mov $1,$7
   mul $1,$5
   add $2,$1
 lpe

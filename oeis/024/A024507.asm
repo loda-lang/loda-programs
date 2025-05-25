@@ -11,8 +11,16 @@ add $2,2
 pow $2,2
 lpb $2
   trn $3,1
-  seq $3,25480 ; a(2n) = n, a(2n+1) = a(n).
-  seq $3,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
+  add $3,1
+  dir $3,2
+  div $3,2
+  mov $5,-1
+  pow $5,$3
+  mul $3,2
+  add $3,1
+  seq $3,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
+  mul $5,$3
+  mov $3,$5
   max $3,0
   div $3,2
   sub $0,$3

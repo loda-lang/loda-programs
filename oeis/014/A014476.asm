@@ -11,12 +11,26 @@ lpb $2
   sub $2,38
   mov $3,$1
   add $3,1
-  seq $3,14413 ; Triangular array formed from elements to right of middle of Pascal's triangle.
-  mov $5,$3
+  mov $6,$3
+  mul $3,4
+  sub $3,3
+  nrt $3,2
+  mov $7,$3
+  sub $7,1
+  pow $7,2
+  div $7,4
+  add $7,1
+  sub $6,$7
+  mov $7,$6
+  add $7,1
+  mov $8,$3
+  bin $8,$7
+  mov $3,$8
   mul $3,338
   gcd $3,4
   add $3,1
   equ $3,5
+  mov $5,$8
   sub $0,$3
   add $1,1
   mov $4,$0

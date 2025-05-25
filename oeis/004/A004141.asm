@@ -16,10 +16,17 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  sub $0,1
-  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  add $5,1
+  pow $5,2
+  sub $5,$0
   mov $4,0
-  pow $4,$0
+  pow $4,$5
+  mov $0,$5
   seq $0,108045 ; Triangle read by rows: lower triangular matrix obtained by inverting the lower triangular matrix in A108044.
   gcd $0,$4
   add $0,$4

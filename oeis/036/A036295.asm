@@ -8,6 +8,4 @@ pow $1,$0
 sub $1,$0
 mov $0,$1
 sub $0,1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2

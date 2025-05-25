@@ -10,8 +10,6 @@ mov $2,$0
 add $2,$3
 mov $1,1
 add $1,$2
-lpb $1
-  dif $1,10
-lpe
+dir $1,10
 sub $1,1
 mov $0,$1

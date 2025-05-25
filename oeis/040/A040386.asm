@@ -2,10 +2,30 @@
 ; Submitted by Skillz
 ; 20,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5,1,2,1,5,40,5
 
+mov $1,1
 mov $3,-1
 pow $3,$0
 add $3,2
-seq $0,10225 ; Continued fraction for sqrt(183).
+mov $4,2
+trn $4,$0
+add $4,6
+gcd $0,$4
+sub $0,3
+sub $4,2
+mov $6,3
+pow $6,$0
+mov $0,$6
+mod $0,10
+mov $5,2
+add $5,$0
+mov $0,$5
+div $0,3
+mul $0,3
+mul $5,2
+mul $0,$4
+add $0,$5
+div $0,2
+sub $0,1
 mul $0,$3
 mul $0,2
 sub $0,1
@@ -14,10 +34,18 @@ mov $2,$0
 add $2,13
 dif $2,2
 div $2,2
+mov $7,0
 mov $0,$2
 sub $0,2
-seq $0,24639 ; n written in fractional base 7/2.
-mov $1,$0
+lpb $0
+  mov $8,$0
+  div $0,7
+  mul $0,2
+  mod $8,7
+  mul $8,$1
+  mul $1,10
+  add $7,$8
+lpe
+mov $0,$7
 equ $0,4
-add $1,$0
-mov $0,$1
+add $0,$7

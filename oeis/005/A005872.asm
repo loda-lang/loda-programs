@@ -10,7 +10,18 @@ lpb $0
   mov $2,$0
   max $2,0
   mul $2,2
-  seq $2,217219 ; Theta series of planar hexagonal net (honeycomb) with respect to deep hole.
+  dir $2,4
+  mov $7,$2
+  trn $7,1
+  add $7,1
+  seq $7,1158 ; sigma_3(n): sum of cubes of divisors of n.
+  mov $5,$2
+  mul $5,$7
+  mov $6,$2
+  mul $2,$5
+  mul $2,$6
+  mod $2,9
+  mul $2,6
   add $4,4
   add $1,$2
   mov $3,$4

@@ -28,6 +28,6 @@ lpb $0
   sub $0,$7
   mov $5,$6
 lpe
+sub $4,$5
 mov $0,$5
-sub $4,$0
 mov $0,$4

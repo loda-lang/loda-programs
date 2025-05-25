@@ -4,7 +4,5 @@
 
 #offset 1
 
-lpb $0
-  dif $0,3
-lpe
+dir $0,3
 seq $0,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.

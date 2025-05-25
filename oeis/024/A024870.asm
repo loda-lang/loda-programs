@@ -14,7 +14,14 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  seq $0,73424 ; Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
+  mov $5,$0
+  mul $5,8
+  add $5,16
+  nrt $5,2
+  add $5,1
+  div $5,2
+  bin $5,2
+  equ $0,$5
   add $3,$0
   add $4,$3
 lpe

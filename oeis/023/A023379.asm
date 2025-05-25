@@ -9,6 +9,6 @@ mov $1,5
 sub $0,1
 lpb $0
   sub $0,1
-  seq $1,37465 ; Sum{d(i)*6^i: i=0,1,...,m}, where Sum{d(i)*5^i: i=0,1,...,m} is the base 5 representation of n.
+  seq $1,37465 ; a(n) = Sum_{i=0..m} d(i)*6^i, where Sum_{i=0..m} d(i)*5^i is the base 5 representation of n.
 lpe
 mov $0,$1

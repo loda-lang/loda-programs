@@ -1,7 +1,7 @@
 ; A014185: Volume of (the dilation by 2) of the Relaxed Boolean Quadric polytope of order n.
 ; Submitted by BrandyNOW
 ; 1,2,8,384,552960,44281036800,314557027319808000,288790528806744175411200000,46980324198376789468214678519808000000,1777353426040215691809284069185041541260902400000000
-; Formula: a(n) = truncate((A000142(n)*A000142(binomial(n+1,2))*4^n)/A000142(2*n))
+; Formula: a(n) = truncate(((n!)*(binomial(n+1,2)!)*4^n)/((2*n)!))
 
 mov $1,$0
 add $1,1

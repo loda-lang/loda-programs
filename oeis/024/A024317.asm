@@ -10,7 +10,7 @@ lpb $0
   mov $1,$0
   max $1,0
   add $1,2
-  seq $1,24880 ; a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = A023531, t = A023532.
+  seq $1,24880 ; Duplicate of A024317.
   mov $0,0
 lpe
 mov $0,$1

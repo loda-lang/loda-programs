@@ -8,7 +8,24 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  seq $3,97207 ; Triangle read by rows: T(n,k) = binomial(n,k) + 2*binomial(n,k-1).
+  add $3,1
+  mov $8,$3
+  mul $8,8
+  nrt $8,2
+  sub $8,1
+  div $8,2
+  mov $7,$8
+  add $7,1
+  bin $7,2
+  sub $3,$7
+  sub $3,1
+  mov $7,$8
+  bin $7,$3
+  sub $3,1
+  bin $8,$3
+  mul $8,2
+  add $8,$7
+  mov $3,$8
   sub $3,1
   bin $6,$3
   add $3,$6

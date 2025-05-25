@@ -1,12 +1,17 @@
 ; A024709: Least prime divisor of A024702(n).
 ; Submitted by Jamie Morken(w1)
 ; 2,5,7,2,3,2,5,2,3,2,7,2,3,5,5,11,2,2,2,7,2,2,5,2,3,3,2,2,5,2,5,5,2,13,3,2,29,3,3,2,2,3,2,5,2,19,5,2,2,2,3,2,2,3,2,23,2,47,7,3,2,2,53,5,2,29,5,2,2,2,11,3,2,5,3,2,2,5,5,2
-; Formula: a(n) = A115561(4*truncate((2*floor((A151799(A154115(n)+3)^2)/8)-4)/6)+4)
+; Formula: a(n) = A115561(4*truncate((2*floor((A151799(2*truncate(A000040(n+1)/2)+1)^2)/8)-4)/6)+4)
 
 #offset 4
 
-seq $0,154115 ; Numbers n such that n + 3 is prime.
-add $0,3
+add $0,1
+mov $1,$0
+seq $1,40 ; The prime numbers.
+div $1,2
+mov $0,$1
+mul $0,2
+add $0,1
 seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
 pow $0,2
 div $0,8

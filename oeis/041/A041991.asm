@@ -1,7 +1,7 @@
 ; A041991: Denominators of continued fraction convergents to sqrt(518).
 ; Submitted by Orange Kid
 ; 1,1,4,25,79,104,4655,4759,18932,118351,373985,492336,22036769,22529105,89624084,560273609,1770444911,2330718520,104322059791,106652778311,424280394724,2652335146655,8381285834689,11033620981344,493860609013825,504894229995169,2008543298999332,12556154023991161,39677005370972815,52233159394963976,2337936018749387759,2390169178144351735,9508443553182442964,59440830497239009519,187830935044899471521,247271765542138481040,11067788618898992637281,11315060384441131118321,45012969772222385992244
-; Formula: a(n) = truncate((gcd(-6*truncate(truncate((5*truncate((2*A010225(n)*(truncate((-1)^n)+2)-1)/3)+5)/3)/6)+truncate((5*truncate((2*A010225(n)*(truncate((-1)^n)+2)-1)/3)+5)/3),truncate((5*truncate((2*A010225(n)*(truncate((-1)^n)+2)-1)/3)+5)/3))+truncate((5*truncate((2*A010225(n)*(truncate((-1)^n)+2)-1)/3)+5)/3))/2)*a(n-1)+a(n-2), a(2) = 4, a(1) = 1, a(0) = 1
+; Formula: a(n) = truncate((gcd(-6*truncate(truncate((5*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3)/6)+truncate((5*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3),truncate((5*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3))+truncate((5*truncate((2*(truncate((-1)^n)+2)*(floor((3*floor((truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10+2)/3)*(max(-n+2,0)+4)+2*(truncate(3^(gcd(n,max(-n+2,0)+6)-3))%10)+4)/2)-1)-1)/3)+5)/3))/2)*a(n-1)+a(n-2), a(2) = 4, a(1) = 1, a(0) = 1
 
 mov $1,1
 lpb $0
@@ -12,8 +12,27 @@ lpb $0
   mov $6,-1
   pow $6,$3
   add $6,2
+  mov $7,2
+  trn $7,$3
+  add $7,6
   mov $1,$3
-  seq $1,10225 ; Continued fraction for sqrt(183).
+  gcd $1,$7
+  sub $1,3
+  sub $7,2
+  mov $9,3
+  pow $9,$1
+  mov $1,$9
+  mod $1,10
+  mov $8,2
+  add $8,$1
+  mov $1,$8
+  div $1,3
+  mul $1,3
+  mul $8,2
+  mul $1,$7
+  add $1,$8
+  div $1,2
+  sub $1,1
   mul $1,$6
   mul $1,2
   sub $1,1

@@ -1,6 +1,7 @@
 ; A010618: Decimal expansion of cube root of 47.
 ; Submitted by Christian Krause
 ; 3,6,0,8,8,2,6,0,8,0,1,3,8,6,9,4,6,8,9,2,5,2,5,1,7,2,9,5,9,5,8,8,9,2,6,1,4,9,0,5,5,5,1,6,9,0,1,6,2,3,3,7,8,7,6,8,9,7,9,0,6,0,5,7,8,6,9,4,7,7,9,8,5,9,4,2,1,2,3,7
+; Formula: a(n) = -10*truncate(truncate((2*d(max(6*n-6,0)))/truncate((c(max(6*n-6,0))+10)/(10^(n-1))))/10)+truncate((2*d(max(6*n-6,0)))/truncate((c(max(6*n-6,0))+10)/(10^(n-1)))), b(n) = truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13))/3), b(3) = 45, b(2) = 17, b(1) = 0, b(0) = 0, c(n) = 4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13)-truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13))/3)+c(n-1), c(3) = 126, c(2) = 35, c(1) = 0, c(0) = 0, d(n) = 4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13)-truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13))/3)+c(n-1)+d(n-1), d(3) = 330, d(2) = 204, d(1) = 169, d(0) = 169, e(n) = 4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13)+2*c(n-1)-truncate((4*truncate(((b(n-1)==1)+2*c(n-1)+e(n-1))/13))/3)+d(n-1)+e(n-1), e(3) = 738, e(2) = 373, e(1) = 169, e(0) = 0
 
 #offset 1
 

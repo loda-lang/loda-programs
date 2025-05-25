@@ -12,7 +12,16 @@ lpb $2
   sub $2,88
   mov $3,$1
   add $3,1
-  seq $3,26142 ; Lexicographically earliest permutation of the positive integers such that for n >= 2, |a(n)-n| = [(a(n)+1)/2].
+  mul $3,2
+  mov $6,$3
+  dir $3,3
+  sub $3,6
+  mod $3,3
+  div $3,2
+  gcd $3,3
+  div $6,$3
+  mov $3,$6
+  max $3,1
   mov $5,$3
   mul $3,338
   gcd $3,4
