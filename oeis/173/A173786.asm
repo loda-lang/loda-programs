@@ -1,7 +1,7 @@
 ; A173786: Triangle read by rows: T(n,k) = 2^n + 2^k, 0 <= k <= n.
-; Submitted by loader3229
+; Submitted by iBezanilla
 ; 2,3,4,5,6,8,9,10,12,16,17,18,20,24,32,33,34,36,40,48,64,65,66,68,72,80,96,128,129,130,132,136,144,160,192,256,257,258,260,264,272,288,320,384,512,513,514,516,520,528,544,576,640,768,1024,1025,1026,1028,1032,1040,1056,1088,1152,1280,1536,2048,2049,2050,2052,2056,2064,2080,2112,2176,2304,2560,3072,4096,4097,4098
-; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))+truncate(2^truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = floor(truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1))/2)+truncate(2^truncate((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $1,$0
@@ -13,10 +13,9 @@ mov $2,$1
 add $2,1
 bin $2,2
 sub $0,$2
-sub $0,1
 mov $2,2
 pow $2,$0
+div $2,2
 mov $0,2
 pow $0,$1
-add $2,$0
-mov $0,$2
+add $0,$2

@@ -1,16 +1,34 @@
 ; A116071: Triangle T, read by rows, equal to Pascal's triangle to the matrix power of Pascal's triangle, so that T = C^C, where C(n,k) = binomial(n,k) and T(n,k) = A000248(n-k)*C(n,k).
-; Submitted by CFJH
+; Submitted by loader3229
 ; 1,1,1,3,2,1,10,9,3,1,41,40,18,4,1,196,205,100,30,5,1,1057,1176,615,200,45,6,1,6322,7399,4116,1435,350,63,7,1,41393,50576,29596,10976,2870,560,84,8,1,293608,372537,227592,88788,24696,5166,840,108,9,1,2237921,2936080,1862685,758640,221970,49392,8610,1200,135,10,1,18210094,24617131,16148440,6829845,2086260,488334,90552,13530,1650,165,11,1,157329097,218521128
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
-add $1,1
-seq $1,235596 ; Second column of triangle in A235595.
+mov $6,$1
+sub $1,1
+lpb $1
+  mov $4,$6
+  sub $4,$1
+  pow $4,$1
+  mov $5,$6
+  bin $5,$1
+  mul $5,$4
+  sub $1,1
+  add $3,$5
+lpe
+mov $1,$3
 add $1,1
 mul $0,$1

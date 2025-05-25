@@ -1,11 +1,18 @@
 ; A165241: Triangle T(n,k), 0 <= k <= n, read by rows, given by [1,1,0,0,0,0,0,0,0,...] DELTA [1,0,1,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,2,3,1,4,9,6,1,8,24,25,10,1,16,60,85,55,15,1,32,144,258,231,105,21,1,64,336,728,833,532,182,28,1,128,768,1952,2720,2241,1092,294,36,1,256,1728,5040,8280,8361,5301,2058,450,45,1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2

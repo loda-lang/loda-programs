@@ -1,16 +1,37 @@
 ; A186705: The maximum number of occurrences of the same distance among n points in the plane.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,3,5,7,9,12,14,18,20,23,27,30,33
-; Formula: a(n) = truncate((2*truncate((A029102(n)-1)/2)+A130252(n)-1)/2)
+; Formula: a(n) = truncate((sqrtint(8*(-2*sqrtint(floor((n-1)/2))-2*n-7)*(-binomial(truncate((8*n-1)/2),2)+n-1)+8*truncate((8*n-1)/2)*(sqrtint(floor((n-1)/2))+n+4)+8*binomial(truncate((8*n-1)/2),2)+8)+1)/20)-1
 
 #offset 1
 
+mov $3,$0
+sub $3,1
+mov $5,$3
+div $5,2
+nrt $5,2
 mov $1,$0
-seq $1,29102 ; Expansion of 1/((1-x)(1-x^5)(1-x^9)(1-x^12)).
+mul $1,8
 sub $1,1
 div $1,2
-mul $1,2
-seq $0,130252 ; Partial sums of A130250.
-add $0,$1
+add $3,$5
+add $3,5
+mov $2,$1
+bin $2,2
+mul $1,$3
+add $1,$2
+mov $4,1
+sub $4,$3
+sub $4,$3
 sub $0,1
-div $0,2
+sub $0,$2
+mul $0,$4
+add $0,$1
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,20
+mov $0,$1
+sub $0,1

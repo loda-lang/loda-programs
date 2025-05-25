@@ -1,21 +1,14 @@
 ; A122059: Number of different polygonal knots with n straight line segments.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,0,0,1,1,2,3,0,4
-; Formula: a(n) = -10*truncate((truncate(((2*max(n-3,(n-3)^2-n-22)+8)*((n-3)^2-25))/120)+2)/10)+truncate(((2*max(n-3,(n-3)^2-n-22)+8)*((n-3)^2-25))/120)+2
+; Formula: a(n) = -truncate((n-2)/(sqrtint(2*n-5)+1))*(sqrtint(2*n-5)+1)+n-2
 
 #offset 3
 
-sub $0,3
+sub $0,2
 mov $1,$0
-pow $1,2
-sub $1,25
-sub $1,$0
-mov $2,$0
-max $0,$1
-add $1,$2
-mul $0,2
-add $0,8
-mul $0,$1
-div $0,120
-add $0,2
-mod $0,10
+mul $1,2
+sub $1,1
+nrt $1,2
+add $1,1
+mod $0,$1

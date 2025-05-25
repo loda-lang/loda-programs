@@ -1,11 +1,18 @@
 ; A146543: The LerchPhi functional part of A060187 MacMahon numbers is treated/ solved for as a curvature to give a set of polynomial triangle sequence coefficients: p(x,n)=Sum[A060187(n,m)*x^(m-1),{m,0,n}]; q(x,n)=k from Solve[FullSimplify[ExpandAll[p[x, n]/(x - 1)^n]] - (1 + k/x^2) == 0, k].
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 2,0,8,2,20,26,0,80,224,80,2,232,1692,1672,242,0,728,10528,23568,10528,728,2,2172,60678,259688,259758,60636,2186,0,6560,331584,2485344,4674944,2485344,331584,6560,2,19664,1756376,21707888,69413420,69413168
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 add $0,1

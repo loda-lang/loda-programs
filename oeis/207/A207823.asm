@@ -1,13 +1,20 @@
 ; A207823: Triangle of coefficients of Chebyshev's S(n,x+4) polynomials (exponents of x in increasing order).
-; Submitted by Landjunge
+; Submitted by loader3229
 ; 1,4,1,15,8,1,56,46,12,1,209,232,93,16,1,780,1091,592,156,20,1,2911,4912,3366,1200,235,24,1,10864,21468,17784,8010,2120,330,28,1,40545,91824,89238,48624,16255,3416,441,32,1,151316,386373,430992,275724,111524,29589,5152,568,36,1
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

@@ -1,20 +1,14 @@
 ; A049077: a(n) = n / gcd(n, binomial(n, floor(n/2))).
-; Submitted by Jamie Morken(l1)
+; Submitted by Just Jake
 ; 1,1,1,2,1,3,1,4,1,5,1,1,1,7,1,8,1,9,1,5,1,11,1,6,1,13,1,7,1,1,1,16,1,17,1,3,1,19,1,2,1,7,1,11,1,23,1,4,1,25,1,13,1,27,1,1,1,29,1,15,1,31,1,32,1,11,1,17,1,5,1,18,1,37,1,19,1,39,1,4
+; Formula: a(n) = truncate(n/gcd(binomial(n,floor(n/2)),n))
 
 #offset 1
 
-mov $1,1
-sub $0,1
-lpb $0
-  mov $2,$0
-  max $3,$1
-  mul $3,$0
-  sub $0,1
-  div $2,2
-  add $2,1
-  mul $1,$2
-lpe
-gcd $3,$1
-div $1,$3
-mov $0,$1
+mov $1,$0
+div $1,2
+mov $3,$0
+bin $3,$1
+mov $2,$3
+gcd $2,$0
+div $0,$2

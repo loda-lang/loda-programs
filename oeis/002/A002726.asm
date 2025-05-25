@@ -1,37 +1,20 @@
 ; A002726: a(n) = Fibonacci(n+1) mod n.
-; Submitted by BrandyNOW
+; Submitted by omegaintellisys
 ; 0,0,0,1,3,1,0,2,1,9,1,5,0,8,12,13,0,5,1,6,8,13,0,1,18,14,21,9,1,19,1,2,25,1,17,17,0,2,27,21,1,5,0,38,8,1,0,1,8,24,18,41,0,31,52,34,22,31,1,41,1,2,42,29,3,35,0,2,47,69,1,1,0,38,57,5,76,31,1,66
+; Formula: a(n) = -n*truncate(b(n+2)/n)+b(n+2), b(n) = b(n-1)+b(n-2), b(2) = 1, b(1) = 0, b(0) = 1
 
 #offset 1
 
-mov $5,1
-mov $1,$0
-lpb $1
-  mul $8,$5
-  mul $8,2
-  mov $9,$4
-  pow $9,2
-  mov $2,$5
-  pow $2,2
-  sub $8,$9
-  add $9,$2
-  mov $2,$9
-  sub $2,$8
-  mov $6,$1
-  max $6,1
-  log $6,2
-  mov $7,2
-  pow $7,$6
-  ban $7,$0
-  neq $7,0
-  div $1,2
-  mul $2,$7
-  mov $3,$8
-  mul $3,$7
-  add $8,$2
-  add $9,$3
-  mov $4,$8
-  mov $5,$9
+mov $4,$0
+sub $0,1
+mov $1,1
+mov $3,$0
+add $3,3
+lpb $3
+  sub $3,1
+  add $2,$1
+  mul $1,-1
+  add $1,$2
 lpe
-mod $5,$0
-mov $0,$5
+mod $1,$4
+mov $0,$1

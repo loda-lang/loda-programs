@@ -1,15 +1,38 @@
 ; A171651: Triangle T, read by rows : T(n,k) = A007318(n,k)*A005773(n+1-k).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,1,5,4,1,13,15,6,1,35,52,30,8,1,96,175,130,50,10,1,267,576,525,260,75,12,1,750,1869,2016,1225,455,105,14,1,2123,6000,7476,5376,2450,728,140,16,1,6046,19107,27000,22428,12096,4410,1092,180,18,1,17303,60460,95535,90000,56070,24192,7350,1560,225,20,1,49721,190333,332530,350295,247500,123354,44352,11550,2145,275,22,1,143365,596652
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 bin $0,$2
 sub $1,$2
 add $1,1
-seq $1,5773 ; Number of directed animals of size n (or directed n-ominoes in standard position).
+mov $6,$1
+add $1,2
+lpb $1
+  mov $4,$1
+  add $4,$6
+  sub $1,2
+  div $4,2
+  bin $4,$1
+  mov $5,$6
+  sub $5,1
+  bin $5,$3
+  mul $5,$4
+  add $3,1
+  add $7,$5
+lpe
+mov $1,$7
+div $1,2
 mul $0,$1

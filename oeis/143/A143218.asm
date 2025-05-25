@@ -1,15 +1,24 @@
 ; A143218: Triangle read by rows, A127775 * A000012 * A127775; 1<=k<=n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,3,9,5,15,25,7,21,35,49,9,27,45,63,81,11,33,55,77,99,121,13,39,65,91,117,143,169,15,45,75,105,135,165,195,225,17,51,85,119,153,187,221,255,289,19,57,95,133,171,209,247,285,323,361,21,63,105,147,189,231,273,315,357,399,441,23,69,115,161,207,253,299,345,391,437,483,529,25,75
+; Formula: a(n) = 4*truncate((sqrtint(8*n)-1)/2)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+2*truncate((sqrtint(8*n)-1)/2)+2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-1
 
 #offset 1
 
-mov $1,2
-mul $0,2
-sub $0,1
-lpb $0
-  sub $0,$1
-  add $1,2
-lpe
+mov $1,$0
+mul $1,8
+nrt $1,2
 sub $1,1
-mul $0,$1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $2,$1
+mul $1,$0
+mul $1,2
+add $0,$2
+add $0,$1
+mul $0,2
+add $0,1

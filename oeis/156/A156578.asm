@@ -1,14 +1,20 @@
 ; A156578: Triangle of coefficients of 1 - (n+1)*x^n + n*x^(n+1), read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,-2,1,1,0,-3,2,1,0,0,-4,3,1,0,0,0,-5,4,1,0,0,0,0,-6,5,1,0,0,0,0,0,-7,6,1,0,0,0,0,0,0,-8,7,1,0,0,0,0,0,0,0,-9,8,1,0,0,0,0,0,0,0,0,-10,9,1,0,0,0,0,0,0,0,0,0,-11,10,1,0,0,0
 
-add $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,2
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
 mov $3,1
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
 sub $0,$2
+sub $0,1
 dif $0,-1
 lpb $0
   sub $0,1

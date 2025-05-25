@@ -1,16 +1,21 @@
 ; A208907: Triangle of coefficients of polynomials u(n,x) jointly generated with A208756; see the Formula section.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,2,1,4,4,1,6,8,8,1,8,12,20,16,1,10,16,36,44,32,1,12,20,56,84,100,64,1,14,24,80,136,212,220,128,1,16,28,108,200,376,500,484,256,1,18,32,140,276,600,936,1188,1052,512,1,20,36,176,364,892,1560
 
 #offset 1
 
 mov $3,3
 mov $5,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $0,$8
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,3
 sub $2,$0
 add $0,1

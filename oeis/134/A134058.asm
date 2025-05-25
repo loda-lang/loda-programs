@@ -1,12 +1,20 @@
 ; A134058: Triangle T(n, k) = 2*binomial(n, k) with T(0, 0) = 1, read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,2,2,4,2,2,6,6,2,2,8,12,8,2,2,10,20,20,10,2,2,12,30,40,30,12,2,2,14,42,70,70,42,14,2,2,16,56,112,140,112,56,16,2,2,18,72,168,252,252,168,72,18,2,2,20,90,240,420,504,420,240,90,20,2,2,22,110,330,660,924,924,660,330,110,22,2,2,24
+; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)-0^n
 
 pow $1,$0
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 bin $2,$0
 mov $0,$2
 mul $0,2

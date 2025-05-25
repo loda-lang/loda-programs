@@ -1,17 +1,22 @@
 ; A203553: Lodumo_2 of A118175, which is n 1's followed by n 0's.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,0,3,5,2,4,7,9,11,6,8,10,13,15,17,19,12,14,16,18,21,23,25,27,29,20,22,24,26,28,31,33,35,37,39,41,30,32,34,36,38,40,43,45,47,49,51,53,55,42,44,46,48,50,52,54,57,59,61,63,65,67,69,71,56,58,60,62,64,66,68,70
+; Formula: a(n) = -min((sqrtint(n)+1)^2-n-1,sqrtint(n)+1)+min(-sqrtint(n)^2+n+1,sqrtint(n)+1)+n
 
-lpb $0
-  add $1,$2
-  equ $2,0
-  sub $0,$1
-  sub $0,$2
-lpe
-mul $0,2
-equ $2,0
-add $2,$1
-add $2,$0
+mov $3,$0
+nrt $3,2
+add $3,1
+add $0,1
+mov $1,$3
 pow $1,2
-add $1,$2
-mov $0,$1
+sub $1,$0
+min $1,$3
+mov $2,$3
+sub $2,1
+pow $2,2
+mul $2,-1
+add $2,$0
+min $2,$3
+sub $0,$1
+add $0,$2
+sub $0,1

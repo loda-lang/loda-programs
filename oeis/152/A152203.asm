@@ -1,14 +1,19 @@
 ; A152203: Triangle T(n,k) = (2n+1-2k)*fibonacci(k), read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,3,1,5,3,2,7,5,6,3,9,7,10,9,5,11,9,14,15,15,8,13,11,18,21,25,24,13,15,13,22,27,35,40,39,21,17,15,26,33,45,56,65,63,34,19,17,30,39,55,72,91,105,102,55,21,19,34,45,65,88,117,147,170,165
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $2,$0
 mul $2,2
 add $2,1

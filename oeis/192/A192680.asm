@@ -1,13 +1,15 @@
-; A192680:  Floor-Sqrt transform of Sylvester continuants (A002801).
-; Submitted by Coleslaw
+; A192680: Floor-Sqrt transform of Sylvester continuants (A002801).
+; Submitted by W, Walter Fergusson
 ; 1,1,1,2,7,20,65,232,883,3581,15383,69579,329769,1631137,8391824,44777342,247182082,1408611456,8270902948,49953724226,309870713560,1971523962002,12849924998486,85702472618249,584305721381119,4068533850711783,28907888594859403
+; Formula: a(n) = sqrtint(b(n)), b(n) = (n-1)*(2*b(n-1)-b(n-2))+b(n-1), b(4) = 50, b(3) = 8, b(2) = 2, b(1) = 1, b(0) = 1
 
-seq $0,2801 ; a(n) = (2*n-1)*a(n-1) - (n-1)*a(n-2) with a(0) = a(1) = 1.
-mov $1,$0
-mul $0,4
+mov $3,1
 lpb $0
-  div $2,$0
-  add $0,$2
-  div $0,2
-  mov $2,$1
+  sub $0,1
+  mul $1,$2
+  add $2,1
+  add $3,$1
+  add $1,$3
 lpe
+mov $0,$3
+nrt $0,2

@@ -1,27 +1,28 @@
 ; A165689: Numbers n such that pi(n) = (1/10)*n.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 64540,64580,64610,64620,64650,64690,64700,64710,64720
+; Formula: a(n) = 20*sqrtint(n-1)+10*binomial(truncate((2*sqrtint(n-1)+min((sqrtint(n-1)+1)^2-n+1,sqrtint(n-1)+1)+n-1)/(sqrtint(n-1)+1)),2)+10*n+64530
 
 #offset 1
 
-sub $0,1
-mov $1,16
-mov $2,$0
+mov $3,$0
+sub $3,1
+nrt $3,2
+add $3,1
+mov $1,$3
+pow $1,2
+add $1,1
+sub $1,$0
+min $1,$3
+mov $2,$3
+sub $2,1
 mul $2,2
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  add $0,$3
-  sub $0,1
-  add $1,18
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  sub $2,$4
-lpe
+add $2,$0
 mov $0,$1
-div $0,18
+add $0,$2
+sub $0,1
+div $0,$3
+bin $0,2
+add $0,$2
 mul $0,10
-add $0,64540
+add $0,64530

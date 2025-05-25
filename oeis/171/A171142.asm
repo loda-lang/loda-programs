@@ -1,14 +1,19 @@
 ; A171142: Triangle T(n,k) of the coefficients [x^k] of the polynomial p_n(x), where p_n(x)=(1+x)*p_{n-1}(x) if n even, p_n(x) = (x^2+4x+1)^((n-1)/2) if n odd.
-; Submitted by LM
+; Submitted by loader3229
 ; 1,1,1,1,4,1,1,5,5,1,1,8,18,8,1,1,9,26,26,9,1,1,12,51,88,51,12,1,1,13,63,139,139,63,13,1,1,16,100,304,454,304,100,16,1,1,17,116,404,758,758,404,116,17,1,1,20,165,720,1770,2424,1770,720,165,20,1,1,21,185,885
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 mov $2,$0
 mov $0,$1
 mov $1,$2

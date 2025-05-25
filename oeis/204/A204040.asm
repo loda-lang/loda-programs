@@ -1,14 +1,21 @@
 ; A204040: Triangle T(n,k), read by rows, given by (0, 2, -2, 1, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (1, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,0,1,0,2,1,0,0,4,1,0,-4,4,6,1,0,-4,-8,12,8,1,0,4,-24,-4,24,10,1,0,12,-8,-60,16,40,12,1,0,4,56,-84,-96,60,60,14,1,0,-20,88,84,-272,-100,136,84,16,1,0,-28,-40
 
+mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

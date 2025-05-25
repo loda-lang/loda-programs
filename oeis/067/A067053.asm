@@ -1,17 +1,21 @@
 ; A067053: Floor[ Sum_{1..n} 1/i ]^n.
-; Submitted by Ciceronian
+; Submitted by loader3229
 ; 1,1,1,16,32,64,128,256,512,1024,177147,531441,1594323,4782969,14348907,43046721,129140163,387420489,1162261467,3486784401,10460353203,31381059609,94143178827,282429536481,847288609443
+; Formula: a(n) = (truncate((sqrtint(8*truncate((sqrtint(8*n)-1)/2))-1)/2)+1)^n
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mul $2,$0
-add $0,1
-add $2,1
-lpb $2
-  div $2,10
-  add $1,1
-lpe
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
 pow $1,$0
 mov $0,$1

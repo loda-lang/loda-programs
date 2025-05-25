@@ -1,5 +1,5 @@
 ; A056528: Sum of digits of square of sum of digits of square.
-; Submitted by Jamie Morken(s1)
+; Submitted by Science United
 ; 1,7,9,13,13,9,16,1,9,1,7,9,13,13,9,16,10,9,1,7,9,13,13,9,16,10,9,10,16,9,13,13,9,16,1,9,10,16,9,13,13,9,16,10,9,1,16,9,13,13,9,16,10,9,1,16,9,13,13,9,16,10,18,10,16,9,13,13,9,16,1,9,10,16,9,13,13,9,16,1
 
 #offset 1
@@ -9,5 +9,8 @@ mov $1,2
 lpb $1
   sub $1,1
   add $0,$1
-  seq $0,4159 ; Sum of digits of n^2.
+  mov $2,$0
+  mul $2,$0
+  dgs $2,10
+  mov $0,$2
 lpe

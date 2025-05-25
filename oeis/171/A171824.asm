@@ -1,11 +1,19 @@
 ; A171824: Triangle T(n,k)= binomial(n + k,n) + binomial(2*n-k,n) read by rows.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 2,3,3,7,6,7,21,14,14,21,71,40,30,40,71,253,132,77,77,132,253,925,469,238,168,238,469,925,3433,1724,828,450,450,828,1724,3433,12871,6444,3048,1452,990,1452,3048,6444,12871,48621,24320,11495,5225,2717,2717,5225,11495,24320,48621,184757,92389,43824,19734,9009,6006,9009,19734,43824,92389,184757,705433,352728,168038,75946,33189,16744,16744,33189,75946,168038,352728,705433,2704157,1352091
+; Formula: a(n) = binomial(2*truncate((sqrtint(8*n+8)-1)/2)-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2),truncate((sqrtint(8*n+8)-1)/2))+binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$1
 mul $2,2
 sub $2,$0

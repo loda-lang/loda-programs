@@ -1,16 +1,19 @@
 ; A144379: Triangle read by rows, first n terms of an array formed by A054521 * A054521(transform).
-; Submitted by [SG]ATA-Rolf
+; Submitted by loader3229
 ; 1,1,1,1,1,2,1,1,1,2,1,1,2,2,4,1,1,1,1,1,2,1,1,2,2,4,2,6,1,1,1,2,2,2,3,4,1,1,2,1,3,2,4,3,6,1,1,1,2,2,1,2,3,2,4,1,1,2,2,4,2,6,4,6,4,10,1,1,1,1,1,2,2,3,3,2,3,4,1,1
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
 add $2,1
-add $0,1
+sub $0,$5
 lpb $0
   sub $0,1
   add $4,1

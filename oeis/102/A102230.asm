@@ -1,14 +1,21 @@
 ; A102230: Triangle, read by rows, where each column equals the convolution of A032349 with the prior column, starting with column 0 equal to A032349 shift right.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,1,4,5,1,24,32,9,1,172,236,76,13,1,1360,1896,656,136,17,1,11444,16116,5828,1348,212,21,1,100520,142544,53112,13184,2376,304,25,1,911068,1298524,494364,128924,25436,3804,412,29,1,8457504,12100952
 
 mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0

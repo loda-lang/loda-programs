@@ -1,11 +1,18 @@
 ; A163840: Triangle interpolating the binomial transform of the swinging factorial (A163865) with the swinging factorial (A056040).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,1,5,3,2,16,11,8,6,47,31,20,12,6,146,99,68,48,36,30,447,301,202,134,86,50,20,1380,933,632,430,296,210,160,140,4251,2871,1938,1306,876,580,370,210,70,13102,8851,5980,4042,2736,1860,1280,910,700,630,40343,27241,18390,12410,8368,5632,3772,2492,1582,882,252,124136,83793,56552,38162,25752,17384,11752,7980,5488,3906,3024,2772,381625,257489
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 mov $4,$1
 mov $2,$1
@@ -18,7 +25,14 @@ lpb $2
   add $3,$2
   bin $3,$1
   add $1,$0
-  seq $1,56040 ; Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).
+  mov $6,$1
+  div $6,2
+  mov $7,0
+  sub $7,$6
+  add $7,$1
+  bin $7,$6
+  bin $1,$6
+  mul $1,$7
   mul $3,$1
   add $5,$3
 lpe

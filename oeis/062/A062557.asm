@@ -1,16 +1,15 @@
 ; A062557: 2n-1 1's followed by a 2.
-; Submitted by omegaintellisys
+; Submitted by loader3229
 ; 1,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1
-; Formula: a(n) = -2*truncate((sqrtint(4*n+6)+sqrtint(4*n+4))/2)+sqrtint(4*n+6)+sqrtint(4*n+4)+1
+; Formula: a(n) = (((sqrtint(n+1)+1)^2-n-1)==(sqrtint(n+1)+1))+1
 
-mul $0,4
-add $0,4
+add $0,1
 mov $2,$0
 nrt $2,2
-add $0,2
-mov $1,$0
-nrt $1,2
+add $2,1
+mov $1,$2
+pow $1,2
+sub $1,$0
+equ $1,$2
+add $1,1
 mov $0,$1
-add $0,$2
-mod $0,2
-add $0,1

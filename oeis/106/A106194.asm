@@ -1,16 +1,23 @@
 ; A106194: Triangle read by rows, generated from binomial transforms of odd numbers.
-; Submitted by davidtgx
+; Submitted by loader3229
 ; 1,4,1,12,5,1,32,17,6,1,80,49,23,7,1,192,129,72,30,8,1,448,321,201,102,38,9,1,1024,769,522,303,140,47,10,1,2304,1793,1291,825,443,187,57,11,1,5120,4097,3084,2116,1268,630,244,68,12,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 add $2,2
 sub $2,$0
 add $0,1
 add $0,$2
-add $3,$0
+mov $3,$0
 mov $4,$0
 mov $0,$2
 lpb $0

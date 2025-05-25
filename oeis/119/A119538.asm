@@ -1,19 +1,17 @@
 ; A119538: Fixed point of the morphism a -> {a, a + 1, 2a + 2} beginning with 0.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 0,1,2,1,2,4,2,3,6,1,2,4,2,3,6,4,5,10,2,3,6,3,4,8,6,7,14,1,2,4,2,3,6,4,5,10,2,3,6,3,4,8,6,7,14,4,5,10,5,6,12,10,11,22,2,3,6,3,4,8,6,7,14,3,4,8,4,5,10,8,9,18,6,7,14,7,8,16,14,15
 
 #offset 1
 
-mov $2,4
+mov $3,1
 sub $0,1
 lpb $0
-  mov $3,$0
+  mov $2,$0
+  mod $2,3
+  mul $2,$3
   div $0,3
-  add $3,$0
-  mod $3,4
-  mul $3,$2
-  add $1,$3
-  max $2,$3
+  add $1,$2
+  max $3,$2
 lpe
 mov $0,$1
-div $0,4

@@ -1,13 +1,20 @@
 ; A201638: Triangle read by rows, T(n,k) for 0<=k<=n, generalizes the colored Motzkin paths of A107264.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,3,1,12,6,1,54,33,9,1,261,180,63,12,1,1323,990,405,102,15,1,6939,5508,2511,756,150,18,1,37341,30996,15309,5229,1260,207,21,1,205011,176256,92610,34776,9630,1944,273,24,1,1143801,1011609,558414,225828,69498,16281,2835,348,27,1
 
-mov $3,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
 mov $1,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0

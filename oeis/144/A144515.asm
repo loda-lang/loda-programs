@@ -1,15 +1,21 @@
 ; A144515: Triangle read by rows: A051731 * A103451.
-; Submitted by Coleslaw
+; Submitted by loader3229
 ; 1,2,1,2,0,1,3,1,0,1,2,0,0,0,1,4,1,1,0,0,1,2,0,0,0,0,0,1,4,1,0,1,0,0,0,1,3,0,1,0,0,0,0,0,1,4,1,0,0,1,0,0,0,0,1
 
-mov $4,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 add $2,1
-mul $4,$0
-add $5,$0
+mov $4,$0
+mov $5,$0
 mov $0,$2
 lpb $0
   sub $0,1

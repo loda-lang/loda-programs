@@ -1,12 +1,20 @@
 ; A163285: Triangle read by rows in which row n lists n+1 terms, starting with n^5 and ending with n^6, such that the difference between successive terms is equal to n^5 - n^4.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,1,32,48,64,243,405,567,729,1024,1792,2560,3328,4096,3125,5625,8125,10625,13125,15625,7776,14256,20736,27216,33696,40176,46656,16807,31213,45619,60025,74431,88837,103243,117649,32768,61440,90112,118784,147456,176128,204800,233472,262144,59049,111537,164025,216513,269001,321489,373977,426465,478953,531441,100000,190000,280000,370000,460000,550000,640000,730000,820000,910000,1000000,161051,307461,453871,600281,746691,893101,1039511,1185921,1332331,1478741,1625151,1771561,248832,476928
+; Formula: a(n) = ((truncate((sqrtint(8*n+8)-1)/2)-1)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+truncate((sqrtint(8*n+8)-1)/2))*truncate((sqrtint(8*n+8)-1)/2)^4
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
 sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $1,1
+sub $0,1
+sub $0,$2
 mul $0,$1
 add $1,1
 add $0,$1

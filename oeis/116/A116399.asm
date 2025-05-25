@@ -1,11 +1,18 @@
 ; A116399: Triangle whose k-th column has e.g.f. sum{j=0..k, Bessel_I(k+j,2x)}.
-; Submitted by Roberto Erler
+; Submitted by loader3229
 ; 1,0,1,2,1,1,0,3,1,1,6,4,5,1,1,0,10,5,6,1,1,20,15,21,7,7,1,1,0,35,21,28,8,8,1,1,70,56,84,36,37,9,9,1,1,0,126,84,120,45,46,10,10,1,1,252,210,330,165,175,56,56,11,11,1,1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2

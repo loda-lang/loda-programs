@@ -1,17 +1,21 @@
 ; A164295: Triangle T(n,k) read by rows: sum of the triangles A054521 and A051731.
-; Submitted by www.urfak.petrsu.ru
+; Submitted by loader3229
 ; 2,2,1,2,1,1,2,1,1,1,2,1,1,1,1,2,1,1,0,1,1,2,1,1,1,1,1,1,2,1,1,1,1,0,1,1,2,1,1,1,1,0,1,1,1,2,1,1,0,1,0,1,0,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,0,0,0,1,1,2,1
 
 #offset 1
 
-mov $3,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 add $2,1
-mul $3,$0
+mov $3,$0
 bin $0,0
 lpb $0
   sub $0,1

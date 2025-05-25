@@ -75,6 +75,7 @@ A006996: a(n) = C(2n,n) mod 3.
 A007066: a(n) = 1 + ceiling((n-1)*phi^2), phi = (1+sqrt(5))/2.
 A007067: Nearest integer to n*tau.
 A007376: The almost-natural numbers: write n in base 10 and juxtapose digits.
+A007413: A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
 A007424: a(n) = 1 if n is squarefree, otherwise 2.
 A007457: Number of (j,k): j+k=n, (j,n)=(k,n)=1, j,k squarefree.
 A007916: Numbers that are not perfect powers.
@@ -85,6 +86,7 @@ A010051: Characteristic function of primes: 1 if n is prime, else 0.
 A010055: 1 if n is a prime power p^k (k >= 0), otherwise 0.
 A010059: Another version of the Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 1 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
 A010060: Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 = 0 and for k >= 0, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+A010816: Expansion of Product_{k>=1} (1 - x^k)^3.
 A011371: a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
 A014587: Nim function for Take-a-Factorial-Game (a subtraction game).
 A014675: The infinite Fibonacci word (start with 1, apply 1->2, 2->21, take limit).
@@ -151,6 +153,13 @@ A035337: Third column of Wythoff array.
 A036234: Number of primes <= n, if 1 is counted as a prime.
 A036349: Numbers whose sum of prime factors (taken with multiplicity) is even.
 A036453: a(n) = d(d(d(d(d(n))))), the 5th iterate of the number-of-divisors function with initial value n.
+A036577: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+A036579: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+A036580: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+A036581: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+A036582: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+A036583: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
+A036585: Ternary Thue-Morse sequence: closed under a->abc, b->ac, c->b.
 A036987: Fredholm-Rueppel sequence.
 A037126: Triangle T(n,k) = prime(k) for k = 1..n.
 A037178: Longest cycle when squaring modulo n-th prime.
@@ -192,8 +201,8 @@ A045460: Primes congruent to {0, 4, 6} mod 7.
 A045461: Primes congruent to {0, 1, 4} mod 7.
 A045833: Expansion of eta(q^9)^3 / eta(q^3) in powers of q.
 A046027: Smallest multiple prime factor of the n-th nonsquarefree number (A013929).
-A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046337: Odd numbers with an even number of prime factors (counted with multiplicity).
+A046363: Composite numbers whose sum of prime factors (with multiplicity) is prime.
 A046660: Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
 A046933: Number of composites between successive primes.
 A048128: Becomes prime or 4 after exactly 6 iterations of f(x) = sum of prime factors of x.
@@ -265,9 +274,9 @@ A071222: Smallest k such that gcd(n,k) = gcd(n+1,k+1).
 A071928: Kolakoski-(2,4) sequence: a(n) is length of n-th run.
 A071974: Numerator of rational number i/j such that Sagher map sends i/j to n.
 A072292: Number of proper powers b^d <= n (b > 1, d > 1).
-A072911: Number of "phi-divisors" of n.
 A072586: Number of numbers <= n having prime factors with odd exponents only.
 A072613: Number of numbers of the form p*q (p, q distinct primes) less than or equal to n.
+A072911: Number of "phi-divisors" of n.
 A073093: Number of prime power divisors of n.
 A073783: First differences of composite numbers.
 A074264: Values of Kolakoski sequence A000002 at positions n = 0 mod 3.
@@ -668,7 +677,6 @@ A285141: Positions of 1 in A285139; complement of A285140.
 A285142: 1-limiting word of the morphism 0->10, 1->0010.
 A285143: Positions of 0 in A285142; complement of A285144.
 A285256: Positions of 0 in A285255; complement of A285257.
-A285597: Positions of 0 in A285596; complement of A285598.
 A285258: 1-limiting word of the morphism 0->10, 1-> 0110.
 A285259: Positions of 0 in A285258; complement of A285260.
 A285260: Positions of 1 in A285258; complement of A285259.
@@ -676,6 +684,7 @@ A285326: a(0) = 0, for n > 0, a(n) = n + A006519(n).
 A285401: Positions of 0 in A285177; complement of A285402.
 A285405: Positions of 1 in A285403; complement of A285404.
 A285422: Positions of 0 in A285421; complement of A285423.
+A285597: Positions of 0 in A285596; complement of A285598.
 A285601: Positions of 1 in A285599; complement of A285600.
 A285682: Positions of 1 in A285680.
 A285699: a(1) = 1; for n > 1, a(n) = n - A079277(n).
@@ -730,17 +739,16 @@ A305390: A ternary tribonacci sequence: define the morphism f: 1 -> 2, 2 -> 3, 3
 A305490: Fixed point of the morphism 0->120, 1->110, 2->100.
 A305847: Solution a() of the complementary equation a(n) + b(n) = 5*n, where a(1) = 1. See Comments.
 A305848: Solution b() of the complementary equation a(n) + b(n) = 5n, where a(1) = 1. See Comments.
-A308898: Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
-A302253: Positions of 3 in A190436.
 A307743: a(n) = Sum_{k=1..n} A307742(k).
+A308898: Fixed point of the morphism 0 -> 01, 1 -> 2, 2 -> 3, 3 -> 012.
 A317047: Numbers k such that both k and k + 1 are deficient.
 A317048: Numbers k such that both k and k + 2 are consecutive deficient numbers.
 A317108: Numbers missing from A317106.
+A317440: Numbers missing from A317438.
 A317594: Lexicographically first sequence of different terms such that erasing the last three digits of a(n+1) and adding this new reshaped integer to a(n) gives back a(n+1).
 A317621: Numbers missing from A317619.
 A317622: Numbers missing from A317620.
 A317682: Number of partitions of n into a prime and two distinct squares.
-A317440: Numbers missing from A317438.
 A318622: Number of irreducible factors in the factorization of the n-th cyclotomic polynomial over GF(2) (counted with multiplicity).
 A319432: The first differences (A129761) of the tribonacci representation numbers (A003714 or A014417) consists of runs of 1's separated by the terms of the present sequence.
 A319433: Take Zeckendorf representation of n (A014417(n)), drop least significant bit, take inverse Zeckendorf representation.

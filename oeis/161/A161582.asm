@@ -1,20 +1,19 @@
 ; A161582: The list of the k values in the common solutions to the 2 equations 5*k+1=A^2, 9*k+1=B^2.
-; Submitted by loader3229
+; Submitted by AnandBhat
 ; 0,7,336,15792,741895,34853280,1637362272,76921173511,3613657792752,169764995085840,7975341111241735,374671267233275712,17601574218852716736,826899317018844410887,38846666325666834594960,1824966417989322381552240,85734574979172485098360327
-; Formula: a(n) = truncate((c(n-1)^2+min(n-1,0))/5), b(n) = 4*c(n-1)+b(n-1), b(1) = 4, b(0) = 0, c(n) = 4*c(n-1)+b(n-1)+truncate((8*c(n-1)+b(n-1))/4), c(1) = 6, c(0) = 1
+; Formula: a(n) = floor((c(n-1)^2)/5), b(n) = 5*c(n-1)+b(n-1), b(1) = -5, b(0) = 0, c(n) = 6*c(n-1)+b(n-1), c(1) = -6, c(0) = -1
 
 #offset 1
 
-mov $2,1
+mov $3,-1
 sub $0,1
 lpb $0
   sub $0,1
-  mul $2,4
-  add $1,$2
+  mov $1,$3
+  mul $1,5
   add $2,$1
-  div $2,4
-  add $2,$1
+  add $3,$2
 lpe
-pow $2,2
-add $0,$2
+pow $3,2
+mov $0,$3
 div $0,5

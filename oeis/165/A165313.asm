@@ -1,12 +1,30 @@
 ; A165313: Triangle T(n,k) = A091137(k-1) read by rows.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,1,2,1,2,12,1,2,12,24,1,2,12,24,720,1,2,12,24,720,1440,1,2,12,24,720,1440,60480,1,2,12,24,720,1440,60480,120960,1,2,12,24,720,1440,60480,120960,3628800,1,2,12,24,720,1440,60480,120960,3628800,7257600,1,2,12
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
+mov $3,1
+mov $5,$0
+lpb $5
+  sub $5,1
+  mov $6,$4
+  add $6,2
+  add $4,1
+  mov $7,$0
+  div $7,$4
+  pow $6,$7
+  dif $3,$6
+  mul $3,$6
 lpe
-seq $0,91137 ; The Hirzebruch numbers. a(n) = Product_{2 <= p <= n+1, p prime} p^floor(n / (p - 1)).
+mov $0,$3

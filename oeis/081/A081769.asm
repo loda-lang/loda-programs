@@ -11,9 +11,24 @@ lpb $3
   sub $3,1
   mov $0,$1
   sub $0,$3
-  seq $0,92910 ; a(n) is the (3n+2)-th component of the continued fraction for sum(k>=0,2^(-k!)).
+  mov $5,$0
+  add $5,1
+  mov $4,$5
+  bin $5,2
+  dir $5,2
+  div $5,2
+  mod $5,2
+  equ $5,0
+  div $4,2
+  mod $4,2
+  mul $4,$5
+  mul $4,2
+  sub $5,$4
+  equ $6,$0
+  sub $6,$5
+  mov $0,$6
   mul $0,3
-  sub $0,4
+  add $0,5
   add $2,$0
 lpe
 mov $0,$2

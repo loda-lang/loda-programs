@@ -1,13 +1,20 @@
 ; A122851: Number triangle T(n,k) = C(k,n-k)*(n-k)!.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,0,1,0,1,1,0,0,2,1,0,0,2,3,1,0,0,0,6,4,1,0,0,0,6,12,5,1,0,0,0,0,24,20,6,1,0,0,0,0,24,60,30,7,1,0,0,0,0,0,120,120,42,8,1,0,0,0,0,0,120,360,210,56,9,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 sub $2,$0
-add $1,$0
+mov $1,$0
 bin $1,$2
 mov $0,$2
 lpb $0

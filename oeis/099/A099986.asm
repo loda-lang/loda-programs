@@ -1,32 +1,29 @@
 ; A099986: Bisection of A001113 (digits of e).
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 2,1,2,1,2,4,9,4,2,5,6,2,7,7,3,2,6,4,7,5,2,7,9,6,9,5,5,4,6,9,7,2,7,4,7,6,0,5,5,7,9,5,1,8,1,8,2,1,6,2,4,7,6,3,1,3,0,3,5,9,1,1,4,3,9,6,9,4,5,2,0,3,4,9,2,0,9,6,0,3
 
 mul $0,2
-add $0,2
-mov $1,0
-mov $2,2
-mov $3,$0
-mul $3,3
-lpb $3
-  mov $5,$3
-  mul $5,2
-  mul $2,$5
-  add $1,$2
-  div $1,$0
-  div $1,2
-  div $2,$0
-  sub $3,1
-lpe
-pow $1,2
-div $1,$2
+add $0,1
+mov $2,1
 mov $4,10
 pow $4,$0
-mul $2,5
-pow $2,$5
-div $2,$4
-div $2,4
-pow $1,$5
-div $1,$2
-mov $0,$1
+mov $6,$4
+pow $4,2
+mov $0,$4
+lpb $0
+  mov $0,0
+  add $2,$1
+  mul $1,-1
+  add $1,$2
+  mov $5,$4
+  sub $5,2
+  div $5,$1
+  add $0,$5
+  mov $1,1
+  add $3,$0
+  mov $4,$0
+lpe
+mov $0,$3
+div $0,$6
+div $0,10
 mod $0,10

@@ -85,7 +85,7 @@ function update_program {
     echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     echo
   fi
-  read -p "Update program? (Y)es, (n)o, (c)heck, c(o)mpare, (e)dit, (r)evert, (u)nfold: " a
+  read -p "Update program? (Y)es, (n)o, (c)heck, c(o)mpare, (e)dit, (f)ull check, (r)evert, (p)rotect, (u)nfold: " a
   if [ "$a" = "c" ] || [ "$a" = "C" ]; then
     loda check -b $f
     update_program "$f"
@@ -122,6 +122,16 @@ function update_program {
     git checkout -- "$f"
   elif [ "$a" = "e" ] || [ "$a" = "E" ]; then
     mcedit "$f"
+    update_program "$f"
+  elif [ "$a" = "f" ] || [ "$a" = "F" ]; then
+    killall loda
+    $HOME/git/loda-cpp/loda add-to-list $anumber full_check.txt
+    git add $HOME/loda/programs/oeis/full_check.txt
+    update_program "$f"
+  elif [ "$a" = "p" ] || [ "$a" = "P" ]; then
+    killall loda
+    $HOME/git/loda-cpp/loda add-to-list $anumber protect.txt
+    git add $HOME/loda/programs/oeis/protect.txt
     update_program "$f"
   elif [ "$a" = "r" ] || [ "$a" = "R" ]; then
     git checkout -- "$f"

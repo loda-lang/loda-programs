@@ -1,13 +1,20 @@
 ; A200073: Coefficients of a generalized Jaco-Lucas polynomial (odd indices) read by rows.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,4,3,11,15,5,29,56,35,7,76,189,171,66,9,199,605,715,407,110,11,521,1872,2730,2054,832,169,13,1364,5655,9810,9180,4965,1533,245,15,3571,16779,33745,37774,25585,10642,2618,340,17,9349,49096,112309,146357,119168,62453,20862,4218,456,19
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

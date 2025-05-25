@@ -1,15 +1,19 @@
 ; A159974: Triangle read by rows, M * Q; M = an infinite lower triangular Toeplitz matrix with (1, 1, 2, 3, 4, 5, ...) in every column. Q = a matrix with A034943: (1, 1, 2, 5, 12, 28, ...) as the main diagonal and the rest zeros.
-; Submitted by [AF>Libristes] alain65
+; Submitted by loader3229
 ; 1,1,1,2,1,2,3,2,2,5,4,3,4,5,12,5,4,6,10,12,28,6,5,8,15,24,28,65,7,6,10,20,36,56,65,151,8,7,12,25,48,84,130,151,351,9,8,14,30,60,112,195,302,351,816,10,9,16,35,72,140,260,453,702,816,1897
 
 #offset 2
 
-sub $0,2
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-add $0,1
+sub $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
 sub $2,$0
 add $2,1
 mov $5,1

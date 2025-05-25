@@ -1,11 +1,19 @@
 ; A116089: Riordan array (1, x*(1+x)^3).
-; Submitted by Cruncher Pete
+; Submitted by loader3229
 ; 1,0,1,0,3,1,0,3,6,1,0,1,15,9,1,0,0,20,36,12,1,0,0,15,84,66,15,1,0,0,6,126,220,105,18,1,0,0,1,126,495,455,153,21,1,0,0,0,84,792,1365,816,210,24,1,0,0,0,36,924,3003,3060,1330,276,27,1,0,0,0,9,792,5005,8568,5985,2024,351,30,1,0,0
+; Formula: a(n) = binomial(3*n-3*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 mul $0,3
 bin $0,$1

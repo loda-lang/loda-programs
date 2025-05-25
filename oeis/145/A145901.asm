@@ -1,11 +1,18 @@
 ; A145901: Triangle of f-vectors of the simplicial complexes dual to the permutohedra of type B_n.
-; Submitted by Landjunge
+; Submitted by loader3229
 ; 1,1,2,1,8,8,1,26,72,48,1,80,464,768,384,1,242,2640,8160,9600,3840,1,728,14168,72960,151680,138240,46080,1,2186,73752,595728,1948800,3037440,2257920,645120,1,6560,377504,4612608,22305024,52899840
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 mov $1,$2

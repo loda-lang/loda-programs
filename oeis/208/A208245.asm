@@ -1,16 +1,19 @@
 ; A208245: Triangle read by rows: a(n,k) = a(n-2,k) + a(n-2,k-1).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,3,3,2,1,1,1,3,4,3,2,1,1,1,4,6,5,3,2,1,1,1,4,7,7,5,3,2,1,1,1,5,10,11,8,5,3,2,1,1,1,5,11,14,12,8,5,3,2,1,1,1,6,15,21,19,13,8,5,3,2,1,1,1,6
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-add $4,$2
-add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
 lpb $0
   sub $0,1
   sub $4,1

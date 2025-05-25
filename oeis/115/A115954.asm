@@ -1,24 +1,30 @@
 ; A115954: Inverse of number triangle A115952.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,1,0,1,1,0,1,1,1,1,0,0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,1,0,1,0,0,0,1,1,1,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,1,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 add $2,1
-add $3,$0
+mov $3,$0
 mov $4,$0
 mov $0,$2
 lpb $0
   sub $0,1
   bin $3,$0
-  sub $3,4
   dif $0,2
   max $0,$4
-  mov $1,3
-  add $1,$3
+  sub $1,$3
   mov $3,$4
 lpe
 mov $0,$1
-add $0,1
+add $0,2
+mod $0,2
