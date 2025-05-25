@@ -1,16 +1,21 @@
 ; A249866: Characteristic triangle for primitive Pythagorean triples.
-; Submitted by p3d-cluster
+; Submitted by loader3229
 ; 1,0,1,1,0,1,0,1,0,1,1,0,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0
+; Formula: a(n) = truncate(1/gcd(-binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+n+1,-n+binomial(truncate((sqrtint(8*n-8)-1)/2)+1,2)+truncate((sqrtint(8*n-8)-1)/2)+3))
 
 #offset 2
 
-sub $0,2
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+sub $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 add $1,2
-add $0,1
 mov $2,$0
 add $0,$1
 sub $1,$2

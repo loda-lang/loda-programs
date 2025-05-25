@@ -1,13 +1,20 @@
 ; A210992: Square array read by antidiagonals, in which column k starts with k plateaus of lengths k+1, k, k-1, k-2, k-3,..2 and of levels A000124: 1, 2, 4, 7, 11..., if k >= 1, connected by consecutive integers. After the last plateau the length remains 1.
-; Submitted by [AF>France>Sale-caractere] Antares
+; Submitted by loader3229
 ; 1,2,1,3,1,1,4,2,1,1,5,3,1,1,1,6,4,2,1,1,1,7,5,2,1,1,1,1,8,6,3,2,1,1,1,1,9,7,4,2,1,1,1,1,1,10,8,5,2,2,1,1,1,1,1,11,9,6,3,2,1,1,1,1,1,1,12,10,7,4,2,2,1,1,1,1,1,1,13,11
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 add $2,1
-add $5,$0
+mov $5,$0
 mov $0,$2
 lpb $0
   sub $0,1

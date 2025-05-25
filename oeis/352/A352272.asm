@@ -10,7 +10,6 @@ add $2,5
 pow $2,3
 lpb $2
   sub $2,6
-  mov $8,0
   max $8,$1
   mov $7,$8
   add $8,1
@@ -21,12 +20,10 @@ lpb $2
   pow $6,2
   mul $6,4
   nrt $6,2
-  add $6,1
   div $6,2
   pow $6,2
   mov $5,$1
   div $5,$6
-  mov $3,$1
   mov $3,$5
   add $3,1
   mod $3,6

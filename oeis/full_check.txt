@@ -692,6 +692,7 @@ A285708: a(n) = n / A285707(n).
 A285970: Positions of 0 in A285969; complement of A285971.
 A285980: Positions of 1 in A285978; complement of A285979.
 A286046: {011->1}-transform of the Thue-Morse word A010060.
+A286063: Fixed point of the mapping 00->001, 1->100, starting with 00.
 A286375: a(n) = A278222(n^3).
 A286666: Positions of 0 in A286665; complement of A286667.
 A286690: Positions of 1 in A286688; complement of A286689.

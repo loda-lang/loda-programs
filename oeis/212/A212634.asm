@@ -1,17 +1,22 @@
 ; A212634: Triangle read by rows: T(n,k) is the number of dominating subsets with cardinality k of the cycle C_n (n >= 1, 1 <= k <= n).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,1,3,3,1,0,6,4,1,0,5,10,5,1,0,3,14,15,6,1,0,0,14,28,21,7,1,0,0,8,38,48,28,8,1,0,0,3,36,81,75,36,9,1,0,0,0,25,102,150,110,45,10,1,0,0,0,11,99,231,253,154,55,11,1
 
 #offset 1
 
+mov $1,3
 mov $3,3
 mov $5,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
 mul $0,-1
 add $0,$2
 sub $2,$0

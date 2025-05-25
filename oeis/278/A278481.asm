@@ -1,5 +1,5 @@
 ; A278481: Number of neighbors of the n-th term in a full isosceles triangle read by rows.
-; Submitted by loader3229
+; Submitted by GPV67
 ; 2,4,4,4,6,4,4,6,6,4,4,6,6,6,4,4,6,6,6,6,4,4,6,6,6,6,6,4,4,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,6,6,4,4,6
 ; Formula: a(n) = 2*truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+n)/truncate((sqrtint(8*n+8)-1)/2))+6
 
@@ -17,8 +17,5 @@ bin $2,2
 sub $0,1
 sub $0,$2
 div $0,$1
-mov $3,$0
-add $3,1
-mul $3,2
-mov $0,$3
-add $0,4
+add $0,3
+mul $0,2

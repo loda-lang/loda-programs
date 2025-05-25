@@ -1,11 +1,18 @@
 ; A225054: Triangle read by rows: Eulerian numbers T(n,k) = A008292(n,k) reduced mod n+1.
-; Submitted by treaclepumpkin
+; Submitted by loader3229
 ; 0,1,1,1,1,1,1,3,3,1,1,1,1,1,1,1,3,2,2,3,1,1,1,1,1,1,1,1,1,7,5,3,3,5,7,1,1,7,1,7,4,7,1,7,1,1,3,0,2,4,4,2,0,3,1,1,1,1,1,1,1,1,1,1,1,1,1,3,11,9,6,6,6
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 add $0,1

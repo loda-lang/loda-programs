@@ -1,5 +1,5 @@
 ; A289438: The arithmetic function v_4(n,4).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 0,1,0,1,2,2,1,3,2,3,4,3,4,5,3,4,6,5,4,7,6,6,8,6,6,9,8,7,10,8,7,11,8,10,12,9,10,13,9,10,14,11,12,15,12,12,16,14,12,17,12,13,18,15,16,19,14,15,20,15,16,21,15,16,22,17,16,23,20
 
 #offset 2
@@ -9,15 +9,11 @@ mov $1,$0
 lpb $1
   sub $1,1
   mul $1,2
-  mov $2,$1
-  equ $2,0
-  add $1,$2
-  mov $3,$0
-  dif $3,$1
-  add $1,1
-  lpb $3
-    neq $3,$0
-    mul $3,$1
+  mov $2,$0
+  dif $2,$1
+  equ $2,$0
+  lpb $2
+    bin $2,$1
     div $1,2
     sub $1,1
   lpe

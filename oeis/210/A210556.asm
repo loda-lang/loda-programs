@@ -1,16 +1,21 @@
 ; A210556: Triangle of coefficients of polynomials v(n,x) jointly generated with A210555; see the Formula section.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,2,2,3,4,4,4,6,10,8,5,8,18,22,16,6,10,28,42,50,32,7,12,40,68,106,110,64,8,14,54,100,188,250,242,128,9,16,70,138,300,468,594,526,256,10,18,88,182,446,780,1188,1378,1138,512,11,20,108,232,630,1202
 
 #offset 1
 
 mov $3,3
 mov $5,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $0,$8
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,3
 sub $2,$0
 add $0,2

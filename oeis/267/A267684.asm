@@ -9,16 +9,14 @@ mov $3,$0
 sub $3,1
 mov $4,$3
 gcd $4,3
+mov $6,1
 add $3,$4
 div $3,3
 bin $1,2
 max $1,2
-mov $2,0
 pow $2,$3
 mov $0,$1
 sub $0,$2
-mov $5,0
-mov $6,1
 sub $0,1
 lpb $0
   mov $7,$0

@@ -556,6 +556,7 @@ A278227: Least number with the prime signature of prime(n)-1.
 A278568: Twice odd prime powers.
 A282704: (Twice product of first n primes) - 1.
 A284600: a(n) = n/(largest prime power dividing n).
+A286387: a(n) = A002487(n^2).
 A287922: a(n) = prime(1)^2 + prime(n)^2.
 A287925: a(n) = prime(1)^4 + prime(n)^4
 A294628: a(n) = 8*(sigma(n) - n + (1/2)).

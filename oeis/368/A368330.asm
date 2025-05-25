@@ -17,7 +17,6 @@ lpb $3
   mul $2,$0
   dif $2,$0
   mov $0,$2
-  seq $0,72464 ; Code word lengths for non-redundant MML code for positive integers.
   div $0,2
   mov $3,$0
 lpe

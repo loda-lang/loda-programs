@@ -1,33 +1,29 @@
 ; A287659: Positions of 1 in A287657; complement of A287658.
 ; Submitted by Science United
 ; 2,3,6,8,9,12,13,16,18,19,22,24,25,28,29,32,34,35,38,39,42,44,45,48,50,51,54,55,58,60,61,64,66,67,70,71,74,76,77,80,81,84,86,87,90,92,93,96,97,100,102,103,106,107,110,112,113,116,118,119,122,123,126,128,129,132,134,135,138,139,142,144,145,148,149,152,154,155,158,160
-; Formula: a(n) = 2*n-2*truncate((sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+2)/2)+sqrtint((truncate((sqrtint(5*n^2)+n)/2)+2)*(5*truncate((sqrtint(5*n^2)+n)/2)+10))+truncate((sqrtint(5*n^2)+n)/2)+1
 
 #offset 1
 
-mov $1,$0
-mov $3,$0
-add $3,$0
-mul $3,2
-add $3,$0
-mul $3,$0
-nrt $3,2
-add $3,$0
+mov $2,$0
+add $2,1
+mov $4,$0
 sub $0,1
 mul $0,2
-mov $1,$3
-div $1,2
-add $1,2
-mov $4,$1
-add $4,$1
-mul $4,2
-add $4,$1
-mul $4,$1
-nrt $4,2
-add $4,$1
-mov $1,$4
-mod $1,2
-mov $2,$0
+mov $1,1
+bxo $1,$0
+mov $5,$2
+pow $5,2
+mul $5,5
+nrt $5,2
+add $2,$5
+div $2,2
+mov $3,$4
+pow $3,2
+mul $3,5
+nrt $3,2
+add $4,$3
+div $4,2
+sub $2,$4
 add $2,$1
 mov $0,$2
-add $0,1
+sub $0,1

@@ -19,14 +19,11 @@ lpb $0
   add $3,$2
   mov $5,$1
   div $5,$3
-  add $7,2
   add $0,$5
+  mov $1,$5
   mov $2,$3
   add $6,$0
-  mov $1,$6
 lpe
-div $4,2
-max $4,$7
 mov $0,$6
 div $0,$4
 div $0,10
