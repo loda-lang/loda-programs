@@ -1,0 +1,26 @@
+; A384130: Number of permutations of 4*n objects with exactly 3*n cycles.
+; Submitted by vonboedefeldt
+; 1,6,322,32670,4899622,973941900,241276443496,71603372991150,24764667228756390,9781650150525639540,4344363139637533397580,2143082171052546774398348,1162585907585797437278546956,687872810620417599693839111880,440840269604491448260396623711300,304215527004115213046601295970388750,224904340895562951824913745623528209670,177339062343308592135470918533619275553220,148561997855972019009655596785271070058797900,131767264509809126485047446505685517349060682500
+
+add $0,1
+mov $2,$0
+sub $0,1
+mov $1,$0
+mul $1,3
+add $1,$0
+bin $1,2
+add $1,$2
+lpb $2
+  sub $2,1
+  mov $0,$1
+  mul $0,8
+  nrt $0,2
+  sub $0,1
+  div $0,2
+  mov $3,$0
+  add $3,1
+  pow $3,2
+  sub $3,$1
+  mov $0,$3
+  seq $0,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
+lpe
