@@ -1,11 +1,19 @@
 ; A321500: Triangular table T(n,k) = (n+k)*(n^2+k^2), n >= k >= 0; read by rows n = 0, 1, 2, ...
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,4,8,15,32,27,40,65,108,64,85,120,175,256,125,156,203,272,369,500,216,259,320,405,520,671,864,343,400,477,580,715,888,1105,1372,512,585,680,803,960,1157,1400,1695,2048,729,820,935,1080,1261,1484,1755,2080,2465,2916,1000,1111,1248,1417,1624,1875,2176,2533,2952,3439,4000,1331,1464,1625,1820,2055,2336,2669,3060,3515,4040,4641,5324,1728,1885
+; Formula: a(n) = truncate(((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n)^3+(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n)*(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))^2)/2)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 mul $0,2
 add $0,$1

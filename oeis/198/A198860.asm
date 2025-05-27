@@ -1,33 +1,9 @@
 ; A198860: E.g.f. satisfies A(x) = 1/(1 - log(1 + x*A(x))).
-; Submitted by Science United
+; Submitted by shiva
 ; 1,1,3,17,144,1634,23312,401274,8096680,187472136,4900535832,142766286552,4587190461840,161161214978880,6146415080939520,252902928346825104,11167368115492742400,526752556713346955520,26433830208985721222400,1406218428780691953635712
+; Formula: a(n) = truncate(A227457(n+1)/(n+1))
 
-mov $2,1
 add $0,1
-lpb $0
-  sub $0,1
-  mov $5,2
-  max $6,1
-  mov $4,$2
-  lpb $4
-    mov $8,$4
-    trn $8,1
-    seq $8,371342 ; E.g.f. satisfies A(x) = log(1 + x/(1 - A(x))).
-    mov $9,10
-    add $9,$5
-    sub $4,1
-    mul $7,$1
-    add $7,$0
-    add $7,$4
-    bin $7,$0
-    mul $7,$$9
-    mul $7,$8
-    add $5,1
-    add $6,$7
-  lpe
-  sub $6,$3
-  mov $3,$6
-  mov $$9,$3
-  add $2,1
-lpe
-mov $0,$3
+mov $1,$0
+seq $0,227457 ; E.g.f. equals the series reversion of x - x*log(1+x).
+div $0,$1

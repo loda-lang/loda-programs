@@ -1,12 +1,18 @@
 ; A156861: Triangle read by rows: T(n, k) = 2^k - binomial(n, k+1).
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,0,2,-1,1,4,-2,-1,3,8,-3,-4,0,7,16,-4,-8,-6,3,15,32,-5,-13,-16,-7,10,31,64,-6,-19,-31,-27,-5,25,63,128,-7,-26,-52,-62,-40,4,56,127,256,-8,-34,-80,-118,-110,-52,28,119,255,512,-9,-43,-116,-202,-236,-178,-56,83,246,511,1024,-10,-53,-161,-322,-446,-430,-266,-37,201,501,1023,2048,-11,-64
+; Formula: a(n) = truncate((-2*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)+truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1)))/2)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
 bin $1,$0
 mul $1,2
 mov $2,2
