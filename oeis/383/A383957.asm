@@ -1,0 +1,14 @@
+; A383957: Sum of the legs of the unique primitive Pythagorean triple whose inradius is A000108(n) and such that its long leg and its hypotenuse are consecutive natural numbers.
+; Submitted by crashtech
+; 7,7,17,71,449,3697,35377,369799,4095521,47297537,564278417,6911822737,86538816337,1103803791601,14305269324961,187980077927431,2500329797088481,33615543666867361,456277457385934801,6246438372527004961,86175353802778434481,1197196443885744428881,16738118900659230353761
+; Formula: a(n) = 2*(floor(binomial(2*n,n)/(n+1))+1)^2-1
+
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+div $0,$1
+add $0,1
+pow $0,2
+mul $0,2
+sub $0,1
