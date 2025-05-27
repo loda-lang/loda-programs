@@ -1,30 +1,24 @@
 ; A068094: Number of n-digit triangular numbers.
-; Submitted by Science United
+; Submitted by loader3229
 ; 3,10,31,96,306,967,3058,9670,30579,96700,305793,967000,3057922,9670000,30579224,96699996,305792239,966999967,3057922393,9669999669,30579223926,96699996687,305792239263,966999966873,3057922392627,9669999668731,30579223926265
+; Formula: a(n) = -truncate((sqrtint(8*10^(n-1))+1)/2)+truncate((sqrtint(8*10^n)+1)/2)
 
 #offset 1
 
-sub $0,1
-mov $5,$0
-mov $3,2
-lpb $3
-  sub $3,1
-  mov $0,$5
-  add $0,$3
-  mov $6,10
-  pow $6,$0
-  mov $0,$6
-  mul $0,8
-  nrt $0,2
-  add $0,1
-  div $0,2
-  mov $2,$3
-  mul $2,$0
-  gcd $5,$4
-  add $1,$2
-  mov $4,$0
-lpe
-min $5,1
-mul $5,$4
-sub $1,$5
-mov $0,$1
+mov $1,$0
+sub $1,1
+mov $2,10
+pow $2,$1
+mov $1,$2
+mul $1,8
+nrt $1,2
+add $1,1
+div $1,2
+mov $3,10
+pow $3,$0
+mov $0,$3
+mul $0,8
+nrt $0,2
+add $0,1
+div $0,2
+sub $0,$1

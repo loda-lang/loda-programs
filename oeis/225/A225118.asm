@@ -1,11 +1,18 @@
 ; A225118: Triangle read by rows, coefficients of the generalized Eulerian polynomials A_{n, 4}(x) in descending order.
-; Submitted by gera
+; Submitted by loader3229
 ; 1,3,1,9,22,1,27,235,121,1,81,1996,3446,620,1,243,15349,63854,40314,3119,1,729,112546,963327,1434812,422087,15618,1,2187,806047,12960063,37898739,26672209,4157997,78117,1,6561,5705752,162711868,840642408,1151050534
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2

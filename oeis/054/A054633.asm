@@ -1,12 +1,27 @@
 ; A054633: Partial sums of A030190.
-; Submitted by Science United
+; Submitted by LCB001
 ; 0,1,2,2,3,4,5,5,5,6,6,7,8,9,9,10,11,12,13,13,13,13,14,14,14,15,16,16,17,17,18,18,19,20,21,22,22,22,23,24,24,25,26,27,28,28,29,30,31,32,33,33,33,33,33,34,34,34,34,35,36,36,36,37,37,38,38,38,39,40,41,41,42,42,42,43,43,44,44,45
-; Formula: a(n) = a(n-1)+A030190(n), a(0) = 0
 
+mov $1,1
+mov $2,1
+add $0,1
 lpb $0
-  mov $2,$0
-  seq $2,30190 ; Binary Champernowne sequence (or word): write the numbers 0,1,2,3,4,... in base 2 and juxtapose.
   sub $0,1
-  add $1,$2
+  div $4,$2
+  mul $4,$2
+  add $2,$4
+  mov $4,$5
+  mul $4,$2
+  mov $5,$3
+  add $5,$4
+  add $6,1
+  mul $1,$2
+  dif $1,2
+  mov $3,$6
+  mov $4,$6
 lpe
-mov $0,$1
+mov $0,$5
+div $0,$1
+dgs $0,2
+div $0,-1
+mul $0,-1

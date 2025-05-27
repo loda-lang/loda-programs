@@ -1,18 +1,18 @@
 ; A007664: Reve's puzzle: number of moves needed to solve the Towers of Hanoi puzzle with 4 pegs and n disks, according to the Frame-Stewart algorithm.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,3,5,9,13,17,25,33,41,49,65,81,97,113,129,161,193,225,257,289,321,385,449,513,577,641,705,769,897,1025,1153,1281,1409,1537,1665,1793,2049,2305,2561,2817,3073,3329,3585,3841,4097,4609,5121,5633,6145,6657,7169,7681,8193,8705,9217,10241,11265,12289,13313,14337,15361,16385,17409,18433,19457,20481,22529,24577,26625,28673,30721,32769,34817,36865,38913,40961,43009,45057,49153
-; Formula: a(n) = truncate(d(n+1)/2), b(n) = c(n-1)+truncate(b(n-1)/2), b(2) = 2, b(1) = 1, b(0) = 0, c(n) = gcd(truncate(b(n-1)/2),2)*c(n-1), c(2) = 4, c(1) = 2, c(0) = 1, d(n) = c(n-1)+d(n-1), d(2) = 3, d(1) = 1, d(0) = 0
+; Formula: a(n) = truncate(2^truncate((sqrtint(8*n)-1)/2))*(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1)+1
 
-mov $2,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+bin $2,2
+sub $0,$2
+sub $0,1
+mov $2,2
+pow $2,$1
+mul $0,$2
 add $0,1
-lpb $0
-  sub $0,1
-  div $1,2
-  mov $3,$1
-  gcd $3,2
-  add $4,$2
-  add $1,$2
-  mul $2,$3
-lpe
-mov $0,$4
-div $0,2

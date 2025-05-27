@@ -1,25 +1,15 @@
 ; A245071: a(n) = 12n - prime(n).
-; Submitted by [TA]crashtech
+; Submitted by Science United
 ; 10,21,31,41,49,59,67,77,85,91,101,107,115,125,133,139,145,155,161,169,179,185,193,199,203,211,221,229,239,247,245,253,259,269,271,281,287,293,301,307,313,323,325,335,343,353,353,353,361,371,379,385,395,397,403,409,415,425,431,439,449,451,449,457,467,475,473,479,481,491,499,505,509,515,521,529,535,539,547,551
+; Formula: a(n) = 12*n-A000040(n)
 
 #offset 1
 
-mov $1,$0
+mov $2,$0
+seq $2,40 ; The prime numbers.
 sub $0,1
-mov $3,0
-mov $4,$1
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $1,$2
-  add $3,2
-  sub $4,$1
-lpe
-mov $1,$3
-add $1,1
-max $1,2
-mul $0,12
-add $0,12
-sub $0,$1
+mov $1,$0
+mul $1,12
+add $1,12
+sub $1,$2
+mov $0,$1

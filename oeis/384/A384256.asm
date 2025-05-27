@@ -4,12 +4,9 @@
 
 mov $1,2
 mov $2,$0
-sub $2,1
-mov $3,2
+sub $2,2
 lpb $0
   sub $0,1
-  bin $3,2
-  sub $2,$3
   add $2,3
   mul $1,$2
 lpe

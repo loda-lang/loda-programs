@@ -11,7 +11,6 @@ lpb $2
   add $3,1
   seq $3,61767 ; a(n) = smallest composite number of the form k*n + 1.
   seq $3,75802 ; Characteristic function of perfect powers, A001597.
-  neq $3,0
   sub $0,$3
   add $1,1
   sub $2,$0

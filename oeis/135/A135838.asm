@@ -1,15 +1,21 @@
 ; A135838: Triangle read by rows: T(n,k) = 2^floor(n/2)*binomial(n-1,k-1).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,2,2,4,2,4,12,12,4,4,16,24,16,4,8,40,80,80,40,8,8,48,120,160,120,48,8,16,112,336,560,560,336,112,16,16,128,448,896,1120,896,448,128,16,32,288,1152,2688,4032,4032,2688,1152,288,32,32,320,1440,3840,6720,8064,6720,3840,1440,320,32,64,704,3520,10560,21120,29568,29568,21120,10560,3520,704,64,64,768
+; Formula: a(n) = truncate(2^truncate((truncate((sqrtint(8*n)-1)/2)+1)/2))*binomial(truncate((sqrtint(8*n)-1)/2),-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)
 
 #offset 1
 
-mov $2,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+mov $2,1
 add $2,$1
 div $2,2
 bin $1,$0

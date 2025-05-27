@@ -1,14 +1,19 @@
 ; A213821: Rectangular array:  (row n) = b**c, where b(h) = 3*h-1, c(h) = n-1+h, n>=1, h>=1, and ** = convolution.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,9,4,24,16,6,50,39,23,8,90,76,54,30,10,147,130,102,69,37,12,224,204,170,128,84,44,14,324,301,261,210,154,99,51,16,450,424,378,318,250,180,114,58,18,605,576,524,455,375,290,206
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 sub $3,$0
 mov $4,$0
 mul $4,3

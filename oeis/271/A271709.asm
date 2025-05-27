@@ -1,11 +1,19 @@
 ; A271709: Table T(n,k) = 2^n + 2^k read by antidiagonals.
-; Submitted by Penguin
+; Submitted by loader3229
 ; 2,3,3,5,4,5,9,6,6,9,17,10,8,10,17,33,18,12,12,18,33,65,34,20,16,20,34,65,129,66,36,24,24,36,66,129,257,130,68,40,32,40,68,130,257,513,258,132,72,48,48,72,132,258,513,1025,514,260,136,80,64,80,136,260,514,1025,2049,1026,516,264,144,96,96,144,264,516,1026,2049,4097,2050
+; Formula: a(n) = truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))+truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 sub $1,$0
 mov $2,2
 pow $2,$0

@@ -1,12 +1,20 @@
 ; A108086: Triangle, read by rows, where T(0,0) = 1, T(n,k) = (-1)^(n+k)*T(n-1,k) + T(n-1,k-1); a signed version of Pascal's triangle.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,-1,1,-1,-2,1,1,-3,-3,1,1,4,-6,-4,1,-1,5,10,-10,-5,1,-1,-6,15,20,-15,-6,1,1,-7,-21,35,35,-21,-7,1,1,8,-28,-56,70,56,-28,-8,1,-1,9,36,-84,-126,126,84,-36,-9,1,-1,-10,45,120,-210,-252,210,120,-45,-10,1,1,-11,-55,165,330,-462,-462,330,165,-55,-11,1,1,12
+; Formula: a(n) = truncate((-1)^binomial(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)-3,2))*binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
 mov $2,$1
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 bin $1,$0
 add $0,3
 sub $2,$0

@@ -1,25 +1,22 @@
 ; A084468: Odd numbers with exactly 3 ones in binary expansion.
-; Submitted by loader3229
+; Submitted by PaulS
 ; 7,11,13,19,21,25,35,37,41,49,67,69,73,81,97,131,133,137,145,161,193,259,261,265,273,289,321,385,515,517,521,529,545,577,641,769,1027,1029,1033,1041,1057,1089,1153,1281,1537,2051,2053,2057,2065,2081,2113,2177,2305,2561,3073,4099,4101,4105,4113,4129,4161,4225,4353,4609,5121,6145,8195,8197,8201,8209,8225,8257,8321,8449,8705,9217,10241,12289,16387,16389
-; Formula: a(n) = 4*truncate(2^truncate((sqrtint(8*n)-1)/2))+2*truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+1
+; Formula: a(n) = 2*truncate(2^truncate((sqrtint(8*n)+1)/2))+truncate(2^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))+1
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $2,$1
-add $2,1
 bin $2,2
 sub $0,$2
-sub $0,1
 mov $2,2
 pow $2,$0
 mov $0,2
 pow $0,$1
 add $2,$0
 add $0,$2
-mul $0,2
 add $0,1

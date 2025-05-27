@@ -1,38 +1,15 @@
 ; A177018: a(n) is the smallest integer >= a(n-1) such that a(n) + A067076(n) + n-1 is an odd prime.
-; Submitted by Conan
+; Submitted by walkingsophie
 ; 3,3,3,4,4,5,5,6,8,8,10,11,11,12,14,16,16,18,19,19,21,22,24,27,28,28,29,29,30,36,37,39,39,43,43,45,47,48,50,52,52,56,56,57,57,62,67,68,68,69,71,71,75,77,79,81,81,83,84,84,88,94,95,95,96,102,104,108,108,109,111,114,116,118,119,121,124,125,128,132
+; Formula: a(n) = truncate((-2*n+A000040(n+1)+6)/2)
 
 #offset 1
 
-sub $0,1
-mov $1,$0
 add $0,1
-mov $4,2
-mov $5,$0
-pow $5,5
-lpb $5
-  mov $7,0
-  mov $3,$4
-  add $3,1
-  lpb $3
-    gcd $7,3
-    mov $2,$3
-    div $2,5
-    lpb $2
-      mov $6,$3
-      mod $6,$7
-      add $7,2
-      sub $2,$6
-    lpe
-    div $3,$7
-    pow $3,2
-    mov $7,1
-  lpe
-  sub $0,$7
-  add $4,2
-  sub $5,$0
-lpe
-mov $0,$4
+mov $1,$0
+seq $1,40 ; The prime numbers.
+sub $0,4
+sub $1,$0
+sub $1,$0
+mov $0,$1
 div $0,2
-add $0,2
-sub $0,$1

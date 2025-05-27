@@ -1,20 +1,22 @@
 ; A112002: Seventh diagonal of triangle A008275 (Stirling1) and seventh column of |A008276|.
-; Submitted by Science United
+; Submitted by loader3229
 ; 720,13068,118124,723680,3416930,13339535,44990231,135036473,368411615,928095740,2185031420,4853222764,10246937272,20692933630,40171771630,75289668850,136717357942,241276443496,414908513800,696829576300,1145254303050,1845173352165,2918785153245,4539323721075,6949189247325,10483481622120,15600262127208,22919129064744,33269993069280,47754281618780,67821194441660,95362077054596,132826483829468,183364070382740,250997093658740,340829013148520,459295484924354,614464928630267,816396833693155
+; Formula: a(n) = floor((binomial(n+6,7)*(n*(n*(n*(n*(63*n+1575)+15435)+73801)+171150)+152696))/576)
 
 #offset 1
 
-mov $2,$0
-add $0,5
-mov $3,$0
-bin $3,2
-add $3,$0
-add $3,$2
-lpb $2
-  sub $2,1
-  mov $0,$3
-  sub $0,1
-  mov $1,$0
-  seq $1,130534 ; Triangle T(n,k), 0 <= k <= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing powers of x. T(n,k) is also the unsigned Stirling number |s(n+1, k+1)|, denoting the number of permutations on n+1 elements that contain exactly k+1 cycles.
-lpe
-mov $0,$1
+mov $1,63
+mul $1,$0
+add $1,1575
+mul $1,$0
+add $1,15435
+mul $1,$0
+add $1,73801
+mul $1,$0
+add $1,171150
+mul $1,$0
+add $1,152696
+add $0,6
+bin $0,7
+mul $0,$1
+div $0,576

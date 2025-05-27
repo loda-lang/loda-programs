@@ -1,25 +1,22 @@
 ; A131437: (A000012 * A131436) + (A131436 * A000012) - A000012.
-; Submitted by loader3229
+; Submitted by shiva
 ; 1,3,5,7,9,13,15,17,21,29,31,33,37,45,61,63,65,69,77,93,125,127,129,133,141,157,189,253,255,257,261,269,285,317,381,509,511,513,517,525,541,573,637,765,1021,1023,1025,1029,1037,1053,1085,1149,1277,1533,2045
-; Formula: a(n) = 2*truncate(2^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+2*truncate(2^truncate((sqrtint(8*n)-1)/2))-3
+; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*n)+1)/2),2)+n))+truncate(2^truncate((sqrtint(8*n)+1)/2))-3
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $2,$1
-add $2,1
 bin $2,2
 sub $0,$2
-sub $0,1
 mov $2,2
 pow $2,$0
 mov $0,2
 pow $0,$1
 add $2,$0
 mov $0,$2
-mul $0,2
 sub $0,3

@@ -1,28 +1,29 @@
 ; A019784: Decimal expansion of sqrt(e)/11.
-; Submitted by Jamie Morken(s2)
+; Submitted by Rodney Duane
 ; 1,4,9,8,8,3,7,5,1,8,8,1,8,2,9,8,3,1,5,3,1,6,9,5,5,2,6,1,6,4,9,2,3,9,6,1,0,5,9,4,3,4,1,9,0,9,7,3,6,4,9,8,1,9,2,3,4,0,9,8,1,1,9,2,4,0,0,6,0,0,9,2,8,3,5,8,3,7,7,8
 
 add $0,1
-mov $3,$0
-mul $3,5
-lpb $3
-  sub $2,2
-  mul $2,$3
-  equ $4,0
-  mov $5,$3
-  div $5,3
-  add $5,$4
-  div $1,2
-  add $1,$2
-  div $1,$5
-  div $2,$5
-  sub $3,1
-  equ $4,0
-lpe
-mov $6,10
-pow $6,$0
-mul $2,11
-div $2,$6
-div $1,$2
-mod $1,10
+mov $1,10
+pow $1,$0
+mov $4,$1
+pow $1,2
+mov $2,1
 mov $0,$1
+lpb $0
+  mov $0,0
+  add $2,$3
+  mul $3,-1
+  add $3,$2
+  mov $5,$1
+  sub $5,2
+  div $5,$3
+  add $0,$5
+  mov $1,$0
+  add $2,1
+  mov $3,1
+  add $6,$0
+lpe
+mov $0,$6
+div $0,$4
+div $0,11
+mod $0,10

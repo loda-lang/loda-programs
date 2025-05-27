@@ -7,8 +7,6 @@
 sub $0,1
 lpb $0
   mov $2,$0
-  trn $2,1
-  add $2,1
   seq $2,166257 ; Odd numbers not of the form prime(k) + phi(prime(k)).
   add $2,1
   mul $0,0

@@ -1,11 +1,19 @@
 ; A101492: Triangle read by rows: T(n,k) = (n-k+1)*(4*k+1).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,5,3,10,9,4,15,18,13,5,20,27,26,17,6,25,36,39,34,21,7,30,45,52,51,42,25,8,35,54,65,68,63,50,29,9,40,63,78,85,84,75,58,33,10,45,72,91,102,105,100,87,66,37,11,50,81,104,119,126,125,116,99,74,41,12,55,90,117,136,147,150,145,132,111,82,45,13,60
+; Formula: a(n) = (-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))*(4*n-4*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1)+4*n-4*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 mul $0,4
 add $0,1

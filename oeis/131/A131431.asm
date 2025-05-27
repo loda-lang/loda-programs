@@ -1,11 +1,19 @@
 ; A131431: 3n + 1 preceded by n zeros.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,0,4,0,0,7,0,0,0,10,0,0,0,0,13,0,0,0,0,0,16,0,0,0,0,0,0,19,0,0,0,0,0,0,0,22,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,28,0,0,0,0,0,0,0,0,0,0,31,0,0,0,0,0,0,0,0,0,0,0,34,0,0
+; Formula: a(n) = (((-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))==0)+3*n-3*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2))*((-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))==0)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 equ $1,0
 mul $0,3

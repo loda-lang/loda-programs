@@ -1,11 +1,19 @@
 ; A132775: A007818 * A132774.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,3,5,10,5,7,21,21,7,9,36,54,36,9,11,55,110,110,55,11,13,78,195,260,195,78,13,15,105,315,525,525,315,105,15,17,136,476,952,1190,952,476,136,17,19,171,684,1596,2394,2394,1596,684,171,19
+; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(2*truncate((sqrtint(8*n+8)-1)/2)+1)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 mov $2,$1
 mul $2,2
 add $2,1

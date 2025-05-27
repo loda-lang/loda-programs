@@ -1,27 +1,29 @@
 ; A019759: Decimal expansion of e/22.
-; Submitted by jprange
+; Submitted by Science United
 ; 1,2,3,5,5,8,2,6,4,9,2,9,9,5,6,6,0,1,6,0,7,2,8,5,7,9,4,1,5,2,3,9,3,7,4,9,8,9,8,0,5,6,6,8,6,0,7,7,2,7,0,8,8,9,7,7,1,2,2,5,8,0,1,2,6,0,1,8,5,3,0,1,3,7,9,7,0,6,7,0
 
-add $0,2
-mov $3,$0
-mul $3,5
-lpb $3
-  add $2,56
-  mul $2,$3
-  mov $5,$3
-  div $5,3
-  add $5,1
-  add $1,$2
-  div $1,$5
-  div $2,$5
-  sub $3,1
-lpe
-mov $4,10
-pow $4,$0
-mul $2,10
-div $2,$4
+add $0,1
+mov $1,10
+pow $1,$0
+mov $2,1
+mov $4,$1
+pow $1,2
 div $1,2
-div $1,$2
 mov $0,$1
+lpb $0
+  mov $0,0
+  add $2,$3
+  mul $3,-1
+  add $3,$2
+  mov $5,$1
+  sub $5,2
+  div $5,$3
+  add $0,$5
+  mov $1,$0
+  mov $3,1
+  add $6,$0
+lpe
+mov $0,$6
+div $0,$4
 div $0,11
 mod $0,10

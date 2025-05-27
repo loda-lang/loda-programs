@@ -1,13 +1,20 @@
 ; A126890: Triangle read by rows: T(n,k) = n*(n+2*k+1)/2, 0 <= k <= n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,1,2,3,5,7,6,9,12,15,10,14,18,22,26,15,20,25,30,35,40,21,27,33,39,45,51,57,28,35,42,49,56,63,70,77,36,44,52,60,68,76,84,92,100,45,54,63,72,81,90,99,108,117,126,55,65,75,85,95,105,115,125,135,145,155,66,77,88,99,110,121,132,143,154,165,176,187,78,90
+; Formula: a(n) = truncate((truncate((sqrtint(8*n+8)-1)/2)*(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+1))/2)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-mul $0,2
 add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+mul $0,2
+sub $0,1
 add $0,$1
 mul $1,$0
 mov $0,$1

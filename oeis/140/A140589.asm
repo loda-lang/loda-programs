@@ -1,11 +1,19 @@
 ; A140589: Triangle A(k,n) = (-2)^k+2^n read by rows.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,-1,0,5,6,8,-7,-6,-4,0,17,18,20,24,32,-31,-30,-28,-24,-16,0,65,66,68,72,80,96,128,-127,-126,-124,-120,-112,-96,-64,0,257,258,260,264,272,288,320,384,512,-511,-510,-508,-504,-496,-480,-448,-384,-256,0,1025,1026,1028,1032
+; Formula: a(n) = truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))+truncate((-2)^truncate((sqrtint(8*n+8)-1)/2))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 mov $2,2
 pow $2,$0
 mov $0,-2

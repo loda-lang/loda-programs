@@ -1,11 +1,19 @@
 ; A131816: Triangle read by rows: A130321 + A059268 - A000012 as infinite lower triangular matrices, where A130321 = (1; 2,1; 4,2,1; ...), A059268 = (1; 1,2; 1,2,4; ...) and A000012 = (1; 1,1; 1,1,1; ...).
-; Submitted by Coleslaw
+; Submitted by loader3229
 ; 1,2,2,4,3,4,8,5,5,8,16,9,7,9,16,32,17,11,11,17,32,64,33,19,15,19,33,64,128,65,35,23,23,35,65,128,256,129,67,39,31,39,67,129,256,512,257,131,71,47,47,71,131,257,512,1024,513,259,135,79,63,79,135,259,513,1024,2048,1025,515,263,143,95,95,143,263,515,1025,2048,4096,2049
+; Formula: a(n) = truncate(2^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))+truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))-1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 sub $1,$0
 mov $2,2
 pow $2,$0

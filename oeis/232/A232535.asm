@@ -1,17 +1,26 @@
 ; A232535: Triangle T(n,k), 0 <= k <= n, read by rows defined by: T(n,k) = (binomial(2*n,2*k) + binomial(2*n+1,2*k))/2.
-; Submitted by Jamie Morken(w1)
+; Submitted by loader3229
 ; 1,1,2,1,8,3,1,18,25,4,1,32,98,56,5,1,50,270,336,105,6,1,72,605,1320,891,176,7,1,98,1183,4004,4719,2002,273,8,1,128,2100,10192,18590,13728,4004,400,9,1,162,3468,22848,59670,68068,34476,7344,561,10,1,200,5415
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mul $2,2
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,$1
+sub $0,1
 mul $0,2
-mov $1,$2
-bin $1,$0
-add $2,1
+mul $1,2
+add $0,$1
+mov $2,$1
+bxo $2,1
 bin $2,$0
-add $2,$1
-mov $0,$2
+bin $1,$0
+add $1,$2
+mov $0,$1
 div $0,2

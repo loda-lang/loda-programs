@@ -1,11 +1,19 @@
 ; A123254: Triangle T(n,k), 0<=k<=n, read by rows given by [ -1,1,-1,1,-1,1,-1,1,-1,1,...] DELTA [1,-1,1,-1,1,-1,1,-1,1,-1,...] where DELTA is the operator defined in A084938.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,-1,1,0,0,0,1,-3,3,-1,0,0,0,0,0,-2,10,-20,20,-10,2,0,0,0,0,0,0,0,5,-35,105,-175,175,-105,35,-5,0,0,0,0,0,0,0,0,0,-14,126,-504,1176,-1764,1764,-1176,504,-126,14,0,0,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = truncate((-1)^truncate((sqrtint(8*n+8)-1)/2))*binomial(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-truncate((sqrtint(8*n+8)-1)/2)+n-1,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(2*binomial(truncate((-truncate((sqrtint(8*n+8)-1)/2)-2)/2)+1,truncate((-truncate((sqrtint(8*n+8)-1)/2)-2)/2)+truncate((sqrtint(8*n+8)-1)/2)+1)-binomial(truncate((-truncate((sqrtint(8*n+8)-1)/2)-2)/2),truncate((-truncate((sqrtint(8*n+8)-1)/2)-2)/2)+truncate((sqrtint(8*n+8)-1)/2)+1))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $6,$1
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mov $2,$0
 mov $3,-1
 pow $3,$1

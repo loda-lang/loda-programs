@@ -1,11 +1,19 @@
 ; A103218: Triangle read by rows: T(n, k) = (2*k+1)*(n+1-k)^2.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,4,3,9,12,5,16,27,20,7,25,48,45,28,9,36,75,80,63,36,11,49,108,125,112,81,44,13,64,147,180,175,144,99,52,15,81,192,245,252,225,176,117,60,17,100,243,320,343,324,275,208,135,68,19,121,300,405,448,441,396,325,240
+; Formula: a(n) = (2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1)*(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+1)^2
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 add $1,1
 mul $0,2

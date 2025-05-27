@@ -1,12 +1,20 @@
-; A104978: Triangle where g.f. satisfies: A(x,y) = 1 + x*A(x,y)^2 + x*y*A(x,y)^3, read by rows.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; A104978: Triangle read by rows, where the g.f. satisfies A(x, y) = 1 + x*A(x, y)^2 + x*y*A(x, y)^3.
+; Submitted by loader3229
 ; 1,1,1,2,5,3,5,21,28,12,14,84,180,165,55,42,330,990,1430,1001,273,132,1287,5005,10010,10920,6188,1428,429,5005,24024,61880,92820,81396,38760,7752,1430,19448,111384,352716,678300,813960,596904,245157,43263,4862,75582,503880,1899240,4476780,6864396,6864396,4326300,1562275,246675,16796,293930,2238390,9806280,27457584,51482970,65615550,56241900,31081050,10015005,1430715,58786,1144066,9806280,49031400,159352050,354323970,551170620,600900300,450675225,221760825,64512240,8414640,208012,4457400
+; Formula: a(n) = truncate((binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*binomial(2*truncate((sqrtint(8*n+8)-1)/2)-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n,-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n))/(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n+1))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
 mov $2,$1
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 bin $1,$0
 add $0,$2
 add $2,$0

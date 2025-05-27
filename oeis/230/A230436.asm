@@ -1,28 +1,21 @@
 ; A230436: Decimal expansion of Compton wavelength in meters.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 2,4,2,6,3,1,0,2,3
-; Formula: a(n) = -10*truncate((truncate(((n+11)*(n+12)*(2*n+23)*(18*n+9*max((n+11)^4-3,0)+199))/42)+2)/10)+truncate(((n+11)*(n+12)*(2*n+23)*(18*n+9*max((n+11)^4-3,0)+199))/42)+2
+; Formula: a(n) = -floor((n+13)/2)-10*truncate((-floor((n+13)/2)+gcd(n+13,15)+truncate(sqrtint(n+13)/2)+2)/10)+gcd(n+13,15)+truncate(sqrtint(n+13)/2)+2
 
 #offset -11
 
-add $0,11
-mov $3,$0
-mov $4,$0
-mul $4,6
+add $0,12
 mov $1,$0
-add $1,1
+add $0,1
 mov $2,$0
-mul $2,2
-add $2,1
-mul $0,$1
-mul $0,$2
-pow $3,4
-trn $3,3
-mul $3,3
-add $3,$4
-mul $3,3
-add $3,1
-mul $0,$3
-div $0,42
+nrt $2,2
+div $2,2
+div $0,2
+sub $0,$2
+add $1,1
+gcd $1,15
+sub $1,$0
+mov $0,$1
 add $0,2
 mod $0,10

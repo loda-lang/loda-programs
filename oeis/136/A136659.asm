@@ -1,17 +1,22 @@
 ; A136659: Unsigned third column (k=2) of triangle A136656 divided by 4.
-; Submitted by crashtech
+; Submitted by loader3229
 ; 1,9,75,660,6300,65520,740880,9072000,119750400,1696464000,25686460800,414096883200,7083236160000,128152088064000,2445351068160000,49084865077248000,1033983353475072000,22808456326656000000
-; Formula: a(n) = c(n+1), b(n) = b(n-1)*(n+4), b(2) = 30, b(1) = 5, b(0) = 1, c(n) = c(n-1)*(n+2)+b(n-1), c(2) = 9, c(1) = 1, c(0) = 0
+; Formula: a(n) = truncate((b(n+3)*(n+1)*(n+8))/48), b(n) = n*b(n-1), b(1) = 1, b(0) = 1
 
 mov $1,1
-mov $2,4
-add $0,1
+mov $3,1
+add $0,3
 lpb $0
   sub $0,1
-  sub $2,1
-  mul $3,$2
-  add $3,$1
-  add $2,2
-  mul $1,$2
+  mul $1,$3
+  add $3,1
 lpe
-mov $0,$3
+sub $3,3
+mov $0,$1
+mul $0,$3
+mov $2,$3
+add $2,7
+mov $4,$0
+mul $4,$2
+mov $0,$4
+div $0,48

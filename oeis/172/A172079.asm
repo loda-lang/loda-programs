@@ -4,15 +4,18 @@
 
 #offset 1
 
+sub $0,1
+mov $4,$0
 mov $3,2
 lpb $3
-  sub $3,1
-  add $0,$4
+  div $3,2
+  mov $0,$4
+  add $0,$3
+  add $0,1
+  seq $0,181669 ; Primes p of the form 6n-1 such that p-1 is a semiprime and p+2 is prime or prime squared.
+  mov $1,$2
   mov $2,$0
-  seq $2,181669 ; Primes p of the form 6n-1 such that p-1 is a semiprime and p+2 is prime or prime squared.
-  sub $2,$1
-  mov $4,2
-  sub $0,1
-  gcd $1,$2
+  mul $4,$3
 lpe
-mov $0,$2
+sub $1,$2
+mov $0,$1
