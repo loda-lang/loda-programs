@@ -1,0 +1,13 @@
+; A383958: Sum of the legs of the unique primitive Pythagorean triple (a,b,c) such that (a-b+c)/2 = A000108(n) and its long leg and hypotenuse are consecutive natural numbers.
+; Submitted by sascha.gibson@gmx.de
+; 1,1,7,49,391,3527,34847,368081,4089799,47278087,564211231,6911587591,86537984287,1103800819999,14305258627199,187980039148049,2500329655657799,33615543148288199,456277455475379999,6246438365457952199,86175353776521952799,1197196443787879360799,16738118900293300099199
+; Formula: a(n) = 2*floor(binomial(2*n,n)/(n+1))^2-1
+
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+div $0,$1
+pow $0,2
+mul $0,2
+sub $0,1
