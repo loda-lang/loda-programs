@@ -1,0 +1,36 @@
+; A005412: Number of non-vanishing Feynman diagrams of order 2n for the vacuum polarization (the proper two-point function of the photon) and for the self-energy (the proper two-point function of the electron) in quantum electrodynamics (QED).
+; Submitted by Science United
+; 1,3,18,153,1638,20898,307908,5134293,95518278,1961333838,44069970348,1075902476058,28367410077468,803551902237828,24342558819042888,785445178323709773,26896354975287884358,974297972094661642518,37225733779871789177628,1496237868417003741147438,63113404969663813572720948,2787761272058309405706490908,128686363809566593599464192568,6196600723990845571232771666178,310729537630615542888773250056988,16200916448896009417681808646452748,876989854207120964078967743234321208
+
+#offset 1
+
+mov $1,1
+mov $20,1
+lpb $0
+  sub $0,1
+  add $1,2
+  mov $3,$1
+  mov $23,3
+  add $1,20
+  lpb $3
+    mov $4,$3
+    lpb $4
+      mov $5,$4
+      add $5,19
+      mov $5,$$5
+      add $7,$5
+      bin $4,$11
+      sub $4,1
+    lpe
+    mov $6,$1
+    sub $6,$3
+    sub $6,2
+    mul $7,$$6
+    add $$1,$7
+    sub $3,1
+  lpe
+  sub $1,19
+  max $21,2
+  add $21,2
+lpe
+mov $0,$7
