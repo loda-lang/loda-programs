@@ -1,0 +1,20 @@
+; A384162: Number of length n words over an n-ary alphabet such that a single letter in every run of letters is marked.
+; Submitted by Science United
+; 1,6,45,460,5945,92736,1694329,35487432,838341009,22054058290,639434542021,20260243575936,696512594466793,25822887652517970,1027054229302256625,43622499402922710256,1970666970910292873249,94353519890358073478880,4772755056209685781141981
+
+#offset 1
+
+mov $1,1
+mov $2,1
+mov $4,$0
+sub $4,1
+lpb $0
+  sub $0,1
+  mov $3,$2
+  mul $3,$4
+  add $1,$3
+  add $2,$1
+  add $1,1
+lpe
+mov $0,$1
+sub $0,1
