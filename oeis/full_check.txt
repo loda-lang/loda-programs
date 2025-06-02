@@ -841,8 +841,10 @@ A359429: a(n) = 1 if n is cubefree, but not squarefree, otherwise 0.
 A359550: Multiplicative with a(p^e) = 1 if p > e, otherwise 0.
 A359551: Dirichlet inverse of A359550, which is multiplicative sequence with a(p^e) = 1 if e < p, otherwise 0.
 A360158: a(n) is the number of unitary divisors of n that are odd squares minus the number of unitary divisors of n that are even squares.
+A368333: The largest term of A054744 that divide n.
 A368542: The number of divisors of n whose prime factors are all Mersenne primes (A000668).
 A373834: a(n) = 1 if n is a multiple of A276150(n), otherwise 0, where A276150 is the digit sum in the primorial base.
 A374130: a(n) = 1 if bitwise-XOR of the exponents of primes in the prime factorization of n is equal to 1, otherwise 0.
 A376573: Numbers that are not squares of triangular numbers. Complement of A000537.
 A376928: The largest noncomposite number k such that n is divisible by all the primes that do not exceed k.
+A382767: Smallest number k that is powerful but not a prime power that is also coprime to n.
