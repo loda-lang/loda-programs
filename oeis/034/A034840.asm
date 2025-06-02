@@ -1,19 +1,14 @@
 ; A034840: Concatenation of 3 or more numbers in arithmetic progression.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 111,123,135,147,159,210,222,234,246,258,321,333,345,357,369,420,432,444,456,468,531,543,555,567,579,630,642,654,666,678,741,753,765,777,789,840,852,864,876,888,951,963,975,987,999,1050,1062,1074,1086,1098
-; Formula: a(n) = 27*floor(n/5)+12*floor((3*floor(n/5))/2)+12*n+111
+; Formula: a(n) = 3*bitxor(15*floor(n/5)+4*n,1)+108
 
 mov $1,$0
 div $1,5
-mul $1,3
-mov $3,$0
+mul $1,5
 add $0,$1
-div $1,2
-mov $2,$1
-mul $2,2
-add $2,$0
-mul $2,2
-add $0,$3
-add $0,$2
+mul $0,4
+sub $0,$1
+bxo $0,1
 mul $0,3
-add $0,111
+add $0,108

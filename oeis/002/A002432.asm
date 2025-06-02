@@ -1,28 +1,34 @@
 ; A002432: Denominators of zeta(2*n)/Pi^(2*n).
-; Submitted by treaclepumpkin
+; Submitted by BrandyNOW
 ; 2,6,90,945,9450,93555,638512875,18243225,325641566250,38979295480125,1531329465290625,13447856940643125,201919571963756521875,11094481976030578125,564653660170076273671875,5660878804669082674070015625,62490220571022341207266406250,12130454581433748587292890625,20777977561866588586487628662044921875,2403467618492375776343276883984375,20080431172289638826798401128390556640625,2307789189818960127712594427864667427734375,37913679547025773526706908457776679169921875
-; Formula: a(n) = truncate(gcd(0,2*truncate(truncate((((2*n+1)!)^2)/gcd(A129814(2*n),((2*n+1)!)^2))/(2*n+1)))/gcd(2*truncate(truncate((((2*n+1)!)^2)/gcd(A129814(2*n),((2*n+1)!)^2))/(2*n+1)),2^(2*n)))
 
-mov $5,2
-mul $5,$0
-mov $7,$5
-seq $7,129814 ; a(n) = Bernoulli(n) * (n+1)!.
-mov $8,$5
-add $8,1
-seq $8,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-pow $8,2
-mov $4,$5
-add $4,1
-gcd $7,$8
-div $8,$7
-div $8,$4
-mul $8,2
 mov $1,$0
-mul $1,2
-mov $6,2
-pow $6,$1
-mov $2,$8
-gcd $2,$6
-gcd $3,$8
-div $3,$2
-mov $0,$3
+seq $1,10050 ; a(n) = (2n)!.
+mov $2,$0
+seq $2,2445 ; Denominators of Bernoulli numbers B_{2n}.
+mov $3,$0
+mov $4,$0
+seq $4,367 ; Numerators of Bernoulli numbers B_2n.
+mov $5,$0
+trn $5,1
+add $5,$0
+seq $5,350972 ; E.g.f. = tan(x).
+mul $5,$0
+gcd $6,$0
+add $6,$5
+sub $6,1
+mul $0,2
+seq $0,52653 ; E.g.f. (1-2x^2)/(1-x-2x^2).
+gcd $5,$0
+div $6,$5
+mov $7,-4
+pow $7,$3
+dif $7,2
+mov $3,$7
+mul $3,$4
+mov $0,$6
+mul $0,-1
+mul $0,$1
+mul $0,$2
+div $0,$3
+max $0,2

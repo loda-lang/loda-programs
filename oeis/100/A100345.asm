@@ -1,7 +1,7 @@
 ; A100345: Triangle read by rows: T(n,k) = n*(n+k), 0 <= k <= n.
-; Submitted by loader3229
+; Submitted by mmonnin
 ; 0,1,2,4,6,8,9,12,15,18,16,20,24,28,32,25,30,35,40,45,50,36,42,48,54,60,66,72,49,56,63,70,77,84,91,98,64,72,80,88,96,104,112,120,128,81,90,99,108,117,126,135,144,153,162,100,110,120,130,140,150,160,170,180,190
-; Formula: a(n) = truncate((2*truncate((sqrtint(8*n+8)-1)/2)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n))/2)
+; Formula: a(n) = truncate((sqrtint(8*n+8)-1)/2)*(-binomial(truncate((sqrtint(8*n+8)-1)/2),2)+n)
 
 add $0,1
 mov $1,$0
@@ -10,12 +10,8 @@ nrt $1,2
 sub $1,1
 div $1,2
 mov $2,$1
-add $2,1
 bin $2,2
-sub $0,1
 sub $0,$2
-add $0,$1
-mul $1,2
+sub $0,1
 mul $1,$0
 mov $0,$1
-div $0,2

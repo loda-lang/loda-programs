@@ -1,14 +1,21 @@
 ; A060556: Bisection of triangle A060098: odd-indexed members of column sequences of A060098 (not counting leading zeros).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,2,1,6,3,1,12,16,4,1,20,50,32,5,1,30,120,140,55,6,1,42,245,448,316,86,7,1,56,448,1176,1284,622,126,8,1,72,756,2688,4170,3102,1113,176,9,1,90,1200,5544,11550,12122
 
 mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

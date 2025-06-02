@@ -1,21 +1,18 @@
 ; A095890: Triangle read by rows: T(n,k) = (n-k+1)^(n-k), n>=1, 1<=k<=n.
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,2,1,9,2,1,64,9,2,1,625,64,9,2,1,7776,625,64,9,2,1,117649,7776,625,64,9,2,1,2097152,117649,7776,625,64,9,2,1,43046721,2097152,117649,7776,625,64,9,2,1,1000000000,43046721,2097152,117649,7776,625,64,9,2,1,25937424601,1000000000,43046721,2097152,117649,7776,625,64,9,2,1,743008370688,25937424601,1000000000,43046721,2097152,117649,7776,625,64,9,2,1,23298085122481,743008370688
-; Formula: a(n) = truncate((-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1))
+; Formula: a(n) = truncate((-n+binomial(truncate((sqrtint(8*n)+3)/2),2)+1)^(-n+binomial(truncate((sqrtint(8*n)+3)/2),2)))
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,3
 div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-sub $0,1
+bin $1,2
+add $1,1
 sub $1,$0
 mov $0,$1
-add $0,1
+sub $1,1
 pow $0,$1

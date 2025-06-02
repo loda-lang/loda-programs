@@ -6,16 +6,15 @@
 
 mov $1,$0
 pow $1,$0
-mov $2,$0
 mov $3,$0
 add $0,1
 mov $5,$0
 pow $5,4
 lpb $5
   add $7,1
-  add $8,1
+  add $2,1
   mov $6,$4
-  gcd $6,$8
+  gcd $6,$2
   div $6,$7
   sub $0,$6
   add $4,1

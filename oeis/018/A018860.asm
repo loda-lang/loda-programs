@@ -1,13 +1,29 @@
 ; A018860: 4^a(n) is smallest power of 4 beginning with n.
-; Submitted by Science United
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,4,39,1,51,3,23,53,78,5,25,40,60,75,90,2,17,27,42,52,62,72,82,92,4,9,19,24,34,39,49,54,59,64,74,79,84,89,94,6,11,16,21,119,26,31,36,41,46,51,56,154,61,66,71,267,76,81,86,184,91,96,194,3,8,204,13,18,116,23,317,28,33,131,38,234,43,239,48,342
 
 #offset 1
 
-seq $0,18859 ; Smallest power of 4 that begins with n.
-lpb $0
-  dif $0,2
-  add $1,1
+mov $2,$0
+log $2,10
+add $2,1
+mov $3,1
+mov $1,$0
+pow $1,4
+lpb $1
+  mov $5,$3
+  log $5,10
+  add $5,1
+  trn $5,$2
+  mov $6,10
+  pow $6,$5
+  add $7,2
+  mov $4,$3
+  div $4,$6
+  neq $4,$0
+  mul $1,$4
+  sub $1,1
+  mul $3,4
 lpe
-mov $0,$1
+mov $0,$7
 div $0,2

@@ -1,14 +1,15 @@
 ; A108355: Expansion of (1+2x^2)/((1-x)^2(1+x^2)^2).
-; Submitted by Kotenok2000
+; Submitted by loader3229
 ; 1,2,3,4,4,4,6,8,7,6,9,12,10,8,12,16,13,10,15,20,16,12,18,24,19,14,21,28,22,16,24,32,25,18,27,36,28,20,30,40,31,22,33,44,34,24,36,48,37,26,39,52,40,28,42,56,43,30,45,60,46,32,48,64,49,34,51,68,52,36,54,72,55
-; Formula: a(n) = b(n+4), b(n) = b(n-4)+A211010(max(n-3,0)), b(3) = 0, b(2) = 0, b(1) = 0, b(0) = 0
+; Formula: a(n) = -sign((n+1)%4)*floor((n+1)/4)*(((n+1)%4-1)%2+1)+n+1
 
-add $0,4
-lpb $0
-  mov $2,$0
-  trn $2,3
-  seq $2,211010 ; Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
-  sub $0,4
-  add $1,$2
-lpe
-mov $0,$1
+add $0,1
+mov $1,$0
+mod $1,4
+dgr $1,3
+sub $2,$1
+mov $1,$0
+div $1,4
+mul $2,$1
+add $2,$0
+mov $0,$2

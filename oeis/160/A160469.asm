@@ -1,17 +1,12 @@
 ; A160469: The left hand column of the triangle A160468.
-; Submitted by BarnardsStern
+; Submitted by BrandyNOW
 ; 1,1,2,17,62,1382,21844,929569,6404582,443861162,18888466084,1936767361654,58870668456604,8374643517010684,689005380505609448,129848163681107301953,1736640792209901647222,418781231495293038913922
-; Formula: a(n) = truncate((A000182(n)*2^(n-1))/gcd(A091019(n-1),A000182(n)*2^(n-1)))
+; Formula: a(n) = A048896(n-1)*A002425(n)
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-mov $2,2
-pow $2,$0
-add $0,1
-seq $0,182 ; Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
-mul $0,$2
-seq $1,91019 ; Denominators of the Taylor series of arccosh(z)/sqrt(2(x-1)) about 1.
-gcd $1,$0
-div $0,$1
+seq $1,2425 ; Denominator of Pi^(2n)/(Gamma(2n)*(1-2^(-2n))*zeta(2n)).
+sub $0,1
+seq $0,48896 ; a(n) = 2^(A000120(n+1) - 1), n >= 0.
+mul $0,$1

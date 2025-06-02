@@ -1,17 +1,27 @@
 ; A089802: Expansion of q^(-1/3) * (theta_4(q^3) - theta_4(q^(1/3))) / 2 in powers of q.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,-1,0,0,0,-1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,-1
-pow $1,$0
-mov $3,3
 mul $0,3
 add $0,1
+mov $1,-1
+pow $1,$0
+mov $3,2
 lpb $0
-  sub $0,$3
-  add $3,2
+  mov $2,$0
+  nrt $0,2
+  pow $0,2
+  equ $0,$2
+  mul $0,8
+  add $0,63
+  sub $3,$0
+  mov $4,$3
+  equ $0,1
 lpe
-sub $0,1
-bin $2,$0
-mov $0,$2
+add $4,1
+mov $0,$4
+mod $0,10
+add $0,10
+mod $0,10
 mul $0,$1
+div $0,-2

@@ -1,13 +1,11 @@
 ; A023416: Number of 0's in binary expansion of n.
-; Submitted by shiva
+; Submitted by loader3229
 ; 1,0,1,0,2,1,1,0,3,2,2,1,2,1,1,0,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,0,5,4,4,3,4,3,3,2,4,3,3,2,3,2,2,1,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,0,6,5,5,4,5,4,4,3,5,4,4,3,4,3,3,2
+; Formula: a(n) = -sumdigits(n,2)+logint(max(n,1),2)+1
 
-mov $2,1
 mov $1,$0
-lpb $1
-  div $0,2
-  sub $1,$0
-  add $2,1
-lpe
-sub $2,$1
-mov $0,$2
+dgs $1,2
+max $0,1
+log $0,2
+add $0,1
+sub $0,$1

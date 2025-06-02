@@ -1,19 +1,13 @@
 ; A038759: a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
 ; Submitted by loader3229
 ; 0,1,2,2,4,6,6,6,6,9,12,12,12,12,12,12,16,20,20,20,20,20,20,20,20,25,30,30,30,30,30,30,30,30,30,30,36,42,42,42,42,42,42,42,42,42,42,42,42,49,56,56,56,56,56,56,56,56,56,56,56,56,56,56,64,72,72,72,72,72,72,72
-; Formula: a(n) = sqrtint(n)*(min(n+1,sqrtint(n))+truncate((sqrtint(n)^2-n-1)^(sqrtint(n)^2-n-1))+1)
+; Formula: a(n) = sqrtint(n)*(((sqrtint(n)^2)!=n)+sqrtint(n))
 
-mov $3,$0
-nrt $3,2
-add $0,1
-mov $1,$3
+mov $1,$0
+nrt $1,2
+mov $2,$1
 pow $1,2
-sub $1,$0
-pow $1,$1
-add $1,1
-mov $2,$0
-min $2,$3
-mov $0,$1
-add $0,$2
-mul $3,$0
-mov $0,$3
+neq $1,$0
+add $1,$2
+mul $2,$1
+mov $0,$2

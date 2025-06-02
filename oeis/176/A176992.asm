@@ -1,11 +1,19 @@
 ; A176992: Triangle T(n,m) = binomial(2n-k+1, n+1) read by rows, 0 <= k <= n.
-; Submitted by Gunnar Hjern
+; Submitted by loader3229
 ; 1,3,1,10,4,1,35,15,5,1,126,56,21,6,1,462,210,84,28,7,1,1716,792,330,120,36,8,1,6435,3003,1287,495,165,45,9,1,24310,11440,5005,2002,715,220,55,10,1,92378,43758,19448,8008,3003,1001,286,66,11,1,352716,167960,75582,31824,12376,4368,1365,364,78,12,1
+; Formula: a(n) = binomial(2*truncate((sqrtint(8*n+8)-1)/2)-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 mul $0,-1
 add $0,$1
 add $1,1

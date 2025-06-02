@@ -1,11 +1,10 @@
 ; A040604: Continued fraction for sqrt(630).
-; Submitted by kpmonaghan
+; Submitted by loader3229
 ; 25,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50,10,50
-; Formula: a(n) = 5*truncate((5*gcd(-2*truncate((n-1)/2)+n-2,4))/2)
+; Formula: a(n) = 5*truncate((5*gcd(sign(n)*((n-1)%2+1)-2,4))/2)
 
-sub $0,1
-mod $0,2
-sub $0,1
+dgr $0,3
+sub $0,2
 gcd $0,4
 mul $0,5
 div $0,2

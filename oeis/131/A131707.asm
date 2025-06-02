@@ -1,20 +1,14 @@
 ; A131707: Period 12: repeat 1, 1, 3, 7, 7, 1, 9, 9, 7, 3, 3, 9 .
-; Submitted by loader3229
+; Submitted by lee
 ; 1,1,3,7,7,1,9,9,7,3,3,9,1,1,3,7,7,1,9,9,7,3,3,9,1,1,3,7,7,1,9,9,7,3,3,9,1,1,3,7,7,1,9,9,7,3,3,9,1,1,3,7,7,1,9,9,7,3,3,9,1,1,3,7,7,1,9,9,7,3,3,9,1,1,3,7,7,1,9,9
-; Formula: a(n) = (2*max(n%3-1,0)+1)*2^floor(n/3)+5*bitxor(1,(2*max(n%3-1,0)+1)*2^floor(n/3))-10*truncate(((2*max(n%3-1,0)+1)*2^floor(n/3)+5*bitxor(1,(2*max(n%3-1,0)+1)*2^floor(n/3)))/10)
+; Formula: a(n) = -10*truncate(gcd(3^n,truncate((12^n-3^n)/9))/10)+gcd(3^n,truncate((12^n-3^n)/9))
 
-mov $1,$0
-div $1,3
-mov $2,2
-pow $2,$1
-mov $1,$0
-mod $1,3
-trn $1,1
-mul $1,2
-add $1,1
-mul $1,$2
-mov $0,1
-bxo $0,$1
-mul $0,5
-add $0,$1
+mov $2,3
+pow $2,$0
+mov $1,12
+pow $1,$0
+sub $1,$2
+div $1,9
+gcd $2,$1
+mov $0,$2
 mod $0,10

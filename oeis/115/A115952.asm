@@ -1,5 +1,5 @@
 ; A115952: Expansion of (1-x+x*y)/(1-x^2*y^2) - x^2/(1-x^2*y).
-; Submitted by [AF] Kalianthys
+; Submitted by lee
 ; 1,-1,1,-1,0,1,0,0,-1,1,0,-1,0,0,1,0,0,0,0,-1,1,0,0,-1,0,0,0,1,0,0,0,0,0,0,-1,1,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,-1,1,0,0,0,0,-1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-1,1,0,0
 
 mov $3,$0
@@ -7,12 +7,27 @@ mov $5,2
 lpb $5
   sub $5,1
   add $0,$5
-  sub $0,1
+  mov $7,$0
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $6,$7
+  add $6,1
+  bin $6,2
+  dif $7,2
   mov $4,$0
-  seq $4,115955 ; Product of A115952 and summing matrix (1/(1-x),x).
+  sub $4,1
+  sub $4,$6
+  bin $4,$7
+  mov $7,0
+  bin $7,$4
+  mov $4,$7
+  add $4,1
+  mod $4,2
   mov $2,$5
   mul $2,$4
-  add $0,2
+  add $0,1
   add $1,$2
 lpe
 min $3,1

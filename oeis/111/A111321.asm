@@ -9,7 +9,6 @@ sub $0,1
 add $2,5
 pow $2,3
 lpb $2
-  add $3,2
   seq $3,158620 ; Partial products of A068601.
   mov $6,$1
   add $6,1

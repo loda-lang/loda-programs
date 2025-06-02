@@ -1,17 +1,15 @@
 ; A094328: Iterate the map in A006369 starting at 4.
+; Submitted by loader3229
 ; 4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6,4,5,7,9,6
-; Formula: a(n) = -3*n-5*truncate((3*n-3)/(-5))-10*truncate((-3*n-5*truncate((3*n-3)/(-5))-10*truncate((-3*n-5*truncate((3*n-3)/(-5))+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+6)/10)+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+16)/10)-10*truncate((-3*n-5*truncate((3*n-3)/(-5))+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+6)/10)+binomial(-5,5*truncate((3*n-3)/(-5))+3*n-3)+16
 
 #offset 1
 
 sub $0,1
-mul $0,3
-mod $0,-5
-mov $1,-5
-bin $1,$0
-sub $1,$0
+mod $0,5
+mov $1,$0
+add $1,1
+pow $1,2
+div $1,3
+dif $1,$0
 mov $0,$1
-add $0,3
-mod $0,10
-add $0,10
-mod $0,10
+add $0,4

@@ -9,9 +9,7 @@ seq $0,1597 ; Perfect powers: m^k where m > 0 and k >= 2.
 mov $2,$0
 seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
 mul $2,-1
-mov $1,0
 sub $1,$2
-sub $0,1
 mov $0,$1
 trn $0,1
 add $0,1

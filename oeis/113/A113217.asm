@@ -1,8 +1,7 @@
 ; A113217: Parity of decimal digital root of n.
+; Submitted by loader3229
 ; 0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1
-; Formula: a(n) = -2*truncate((-9*truncate((n-1)/9)+n)/2)-9*truncate((n-1)/9)+n
+; Formula: a(n) = sign(n)*((n-1)%9+1)-2*truncate((sign(n)*((n-1)%9+1))/2)
 
-sub $0,1
-mod $0,9
-add $0,1
+dgr $0,10
 mod $0,2

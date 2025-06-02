@@ -1,15 +1,12 @@
 ; A127321: First 4-dimensional hyper-tetrahedral coordinate; repeat m C(m+3,3) times; 4-D analog of A056556.
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5
+; Formula: a(n) = truncate((sqrtint(sqrtint(384*n+16)+5)-3)/2)
 
-mov $1,3
-mov $2,3
-mov $3,1
-lpb $0
-  add $3,$2
-  trn $0,$3
-  add $2,$1
-  add $1,1
-lpe
-mov $0,$1
+mul $0,384
+add $0,16
+nrt $0,2
+add $0,5
+nrt $0,2
 sub $0,3
+div $0,2

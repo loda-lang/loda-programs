@@ -1,11 +1,19 @@
 ; A082043: Square array, A(n, k) = (k*n)^2 + 2*k*n + 1, read by antidiagonals.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 1,1,1,1,4,1,1,9,9,1,1,16,25,16,1,1,25,49,49,25,1,1,36,81,100,81,36,1,1,49,121,169,169,121,49,1,1,64,169,256,289,256,169,64,1,1,81,225,361,441,441,361,225,81,1,1,100,289,484,625,676,625,484,289,100,1,1,121,361,625,841,961,961,841,625,361,121,1,1,144
+; Formula: a(n) = ((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))+1)^2
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
+sub $0,1
 sub $1,$0
 mul $1,$0
 mov $0,$1

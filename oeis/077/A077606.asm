@@ -14,9 +14,7 @@ mov $2,$1
 add $2,1
 bin $2,2
 sub $0,$2
-mov $3,$1
-sub $3,$0
-sub $3,$0
-mov $4,$3
-bin $4,-2
-mov $0,$4
+mul $0,2
+sub $1,$0
+bin $1,-2
+mov $0,$1

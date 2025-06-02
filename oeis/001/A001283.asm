@@ -1,7 +1,7 @@
 ; A001283: Triangle read by rows, in which row n consists of n(n+m) for m = 1 .. n-1.
-; Submitted by loader3229
+; Submitted by crashtech
 ; 6,12,15,20,24,28,30,35,40,45,42,48,54,60,66,56,63,70,77,84,91,72,80,88,96,104,112,120,90,99,108,117,126,135,144,153,110,120,130,140,150,160,170,180,190,132,143,154,165,176,187,198,209,220,231,156,168,180,192,204,216,228,240,252,264,276,182,195,208,221,234,247,260,273,286,299,312,325,210,224
-; Formula: a(n) = (truncate((sqrtint(8*n-8)-1)/2)+2)*(-binomial(truncate((sqrtint(8*n-8)-1)/2),2)+n+2)-truncate((sqrtint(8*n-8)-1)/2)-2
+; Formula: a(n) = (truncate((sqrtint(8*n-8)-1)/2)+2)*(-binomial(truncate((sqrtint(8*n-8)-1)/2),2)+n+1)
 
 #offset 2
 
@@ -14,7 +14,6 @@ div $1,2
 mov $2,$1
 bin $2,2
 add $1,2
-add $0,3
+add $0,2
 sub $0,$2
 mul $0,$1
-sub $0,$1

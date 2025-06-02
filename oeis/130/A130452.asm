@@ -1,20 +1,23 @@
 ; A130452: Triangle read by rows: A097806 * A130321 as infinite lower triangular matrices.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,3,1,6,3,1,12,6,3,1,24,12,6,3,1,48,24,12,6,3,1,96,48,24,12,6,3,1,192,96,48,24,12,6,3,1,384,192,96,48,24,12,6,3,1,768,384,192,96,48,24,12,6,3,1,1536,768,384,192,96,48,24,12,6,3,1,3072,1536,768,384,192,96,48,24,12,6,3,1
-; Formula: a(n) = -truncate(c(n-1)/b(n-1))*b(n-1)+c(n-1)+1, b(n) = truncate((-truncate(c(n-1)/b(n-1))*b(n-1)+2*b(n-1)+c(n-1))/2)+1, b(1) = 3, b(0) = 2, c(n) = -truncate(c(n-1)/b(n-1))*b(n-1)+b(n-1)+c(n-1), c(1) = 2, c(0) = 0
+; Formula: a(n) = floor((3*truncate(2^(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+1)))/2)
 
 #offset 1
 
-mov $1,2
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
 sub $0,1
-lpb $0
-  sub $0,1
-  mod $2,$1
-  add $2,$1
-  add $1,$2
-  div $1,2
-  add $1,1
-lpe
-mod $2,$1
+sub $0,$3
+sub $1,$0
+mov $2,2
+pow $2,$1
 mov $0,$2
-add $0,1
+mul $0,3
+div $0,2

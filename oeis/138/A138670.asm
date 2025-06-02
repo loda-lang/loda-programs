@@ -10,7 +10,8 @@ sub $0,1
 lpb $0
   mov $3,$1
   add $3,1
-  seq $3,60236 ; If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
+  dir $3,3
+  mod $3,3
   sub $0,$3
   add $1,3
 lpe

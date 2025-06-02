@@ -1,22 +1,27 @@
 ; A178902: Expansion of q^(-1/24) * eta(q^2)^13 / (eta(q)^5 * eta(q^4)^5) in powers of q.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,5,7,0,0,11,0,-13,0,0,0,0,-17,0,0,-19,0,0,0,0,0,0,-23,0,0,0,25,0,0,0,0,0,0,0,0,29,0,0,0,0,31,0,0,0,0,0,0,0,0,0,0,35,0,0,0,0,0,-37,0,0,0,0,0,0,0,0,0,0,0,0,-41,0,0,0,0,0,0,-43,0,0
 
 mov $1,-1
 pow $1,$0
 mul $0,3
-lpb $0
-  add $3,1
-  sub $0,$3
-lpe
-sub $0,1
+add $0,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $2,$3
+add $2,1
+bin $2,2
+sub $0,2
+sub $0,$2
 bin $0,$3
 mul $3,2
 add $3,1
 mul $3,$0
-add $2,$3
 mov $0,$3
 mod $0,3
-mul $0,$2
+mul $0,$3
 dif $0,-2
 mul $0,$1

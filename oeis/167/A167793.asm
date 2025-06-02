@@ -5,26 +5,19 @@
 #offset 1
 
 mov $2,$0
-sub $0,1
 pow $2,2
 lpb $2
-  lpb $7
-    div $7,2
-    mov $3,$1
-    add $3,$7
-    add $3,1
-    seq $3,327814 ; Number of irreducible factors in the factorization of the n-th cyclotomic polynomial over GF(5) (counted with multiplicity).
-    mov $6,$7
-    mul $6,$3
-    add $5,$6
-    mov $8,$3
-  lpe
-  sub $5,$8
-  add $7,3
-  mov $3,$5
-  equ $3,0
-  sub $0,$3
   add $1,1
+  mov $5,$1
+  seq $5,10 ; Euler totient function phi(n): count numbers <= n and prime to n.
+  mov $6,$5
+  mov $3,$1
+  seq $3,7736 ; Period of repeating digits of 1/n in base 5.
+  gcd $5,$3
+  div $6,$5
+  mov $3,$6
+  equ $3,1
+  sub $0,$3
   mov $4,$0
   max $4,0
   equ $4,$0
@@ -32,4 +25,4 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,2
+add $0,1

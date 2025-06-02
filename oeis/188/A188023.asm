@@ -1,13 +1,37 @@
 ; A188023: Triangle read by rows, T(n,k) = k*A115361(n-1,k-1).
-; Submitted by Jamie Morken(w2)
+; Submitted by Science United
 ; 1,1,2,0,0,3,1,2,0,4,0,0,0,0,5,0,0,3,0,0,6,0,0,0,0,0,0,7,1,2,0,4,0,0,0,8,0,0,0,0,0,0,0,0,9,0,0,0,0,5,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,11,0,0,3,0,0,6,0,0,0,0,0,12
-; Formula: a(n) = A002260(n)*A154269(A051537(n))^6
 
 #offset 1
 
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $5,$3
+add $5,1
+bin $5,2
 mov $1,$0
-seq $1,51537 ; Triangle read by rows: T(i,j) = lcm(i,j)/gcd(i,j) for 1 <= j <= i.
-seq $1,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
+sub $1,$5
+add $3,1
+mov $4,$3
+mul $3,$1
+gcd $1,$4
+pow $1,2
+div $3,$1
+mov $1,$3
+dir $1,4
+mov $2,1
+sub $2,$1
+pow $2,$2
+mov $1,$2
 pow $1,6
-seq $0,2260 ; Triangle read by rows: T(n,k) = k for n >= 1, k = 1..n.
+mov $6,$0
+mul $6,8
+nrt $6,2
+add $6,1
+div $6,2
+bin $6,2
+sub $0,$6
 mul $0,$1

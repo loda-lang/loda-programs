@@ -1,14 +1,21 @@
 ; A059594: Convolution triangle based on A008619 (positive integers repeated).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,2,2,1,2,5,3,1,3,8,9,4,1,3,14,19,14,5,1,4,20,39,36,20,6,1,4,30,69,85,60,27,7,1,5,40,119,176,160,92,35,8,1,5,55,189,344,376,273,133,44,9,1,6,70,294,624,820,714,434
 
 mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

@@ -1,20 +1,17 @@
 ; A002461: Coefficients of Legendre polynomials.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,3,20,35,126,231,3432,6435,24310,46189,352716,676039,2600150,5014575,155117520,300540195,1166803110,2268783825,17672631900,34461632205,134564468610,263012370465,4116715363800,8061900920775,31602651609438,61989816618513,486734856412028
-; Formula: a(n) = truncate(binomial(2*n-2,n-1)/gcd(8*n,binomial(2*n-2,n-1)))*(n%(n-1)+n-1)
 
 #offset 2
 
+sub $0,2
 mov $1,$0
-sub $1,1
-mod $0,$1
+min $0,1
 add $0,$1
-mov $2,$1
-mul $2,2
-mov $3,2
-add $3,$2
-bin $2,$1
-mul $3,4
-gcd $3,$2
-div $2,$3
-mul $0,$2
+mov $1,$0
+mul $0,2
+bin $0,$1
+add $1,1
+div $0,$1
+dir $0,2
+mul $0,$1

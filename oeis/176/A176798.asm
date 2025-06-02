@@ -1,22 +1,19 @@
 ; A176798: Triangle read by rows: T(n,m)=1 + n*(2*m + 1 + n)/2, 0<=m<=n.
 ; Submitted by loader3229
 ; 1,2,3,4,6,8,7,10,13,16,11,15,19,23,27,16,21,26,31,36,41,22,28,34,40,46,52,58,29,36,43,50,57,64,71,78,37,45,53,61,69,77,85,93,101,46,55,64,73,82,91,100,109,118,127,56,66,76,86,96,106,116,126,136,146,156,67,78,89,100,111,122,133,144,155,166,177,188,79,91
-; Formula: a(n) = truncate((truncate((sqrtint(8*n+8)-1)/2)*(2*n-2*binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+1))/2)+1
+; Formula: a(n) = truncate((sqrtint(8*n+8)-1)/2)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+1
 
 add $0,1
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $2,$1
-add $2,1
-bin $2,2
-sub $0,$2
-mul $0,2
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
 sub $0,1
+sub $0,$1
+mul $0,$2
 add $0,$1
-mul $1,$0
-mov $0,$1
-div $0,2
 add $0,1

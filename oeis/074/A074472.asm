@@ -8,4 +8,3 @@ pow $1,$0
 mov $0,$1
 seq $0,6577 ; Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
 add $0,1
-sub $1,1

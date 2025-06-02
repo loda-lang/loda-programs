@@ -1,11 +1,18 @@
 ; A061290: Square array read by antidiagonals of T(n,k) = T(n-1,k) + T(n-1, floor(k/2)) with T(0,0)=1.
-; Submitted by [AF>Amis de la Mer] ComteZera
+; Submitted by loader3229
 ; 1,0,2,0,1,4,0,0,3,8,0,0,1,7,16,0,0,1,4,15,32,0,0,0,4,11,31,64,0,0,0,1,11,26,63,128,0,0,0,1,5,26,57,127,256,0,0,0,1,5,16,57,120,255,512,0,0,0,1,5,16,42,120,247,511,1024,0,0,0,0,5,16,42,99,247,502,1023,2048,0,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $0,$2

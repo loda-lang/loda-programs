@@ -1,28 +1,12 @@
 ; A086747: Baum-Sweet sequence: a(n) = 1 if binary representation of n contains no block of consecutive zeros of odd length; otherwise a(n) = 0.
-; Submitted by Ralfy
+; Submitted by Athlici
 ; 0,1,0,1,1,0,0,1,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1
 
-mov $1,$0
-mov $4,1
 lpb $0
-  mov $8,$3
-  add $8,$4
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mov $9,$8
-  mul $9,$6
-  div $0,2
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
+  add $0,1
+  sub $1,2
+  bin $1,2
+  sub $0,$1
+  dif $0,2
 lpe
-mov $0,$8
 mod $0,2

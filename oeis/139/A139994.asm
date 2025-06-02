@@ -13,16 +13,7 @@ lpb $2
   add $3,1
   seq $3,139859 ; Primes of the form 11x^2+2xy+11y^2.
   mov $5,$3
-  mov $6,$3
-  mul $6,2
-  mov $7,$6
-  sub $7,1
-  bxo $6,$7
-  add $6,1
-  div $6,2
-  log $6,2
   seq $3,35210 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 28.
-  mul $3,$6
   neq $3,0
   sub $0,$3
   add $1,1

@@ -1,22 +1,19 @@
 ; A131914: 3*A002024 - 2*A051340.
 ; Submitted by loader3229
 ; 1,4,2,7,5,3,10,8,6,4,13,11,9,7,5,16,14,12,10,8,6,19,17,15,13,11,9,7,22,20,18,16,14,12,10,8,25,23,21,19,17,15,13,11,9,28,26,24,22,20,18,16,14,12,10
-; Formula: a(n) = 3*truncate((sqrtint(8*n)-1)/2)+2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*n+3
+; Formula: a(n) = 2*binomial(truncate((sqrtint(8*n)+1)/2)+1,2)-2*n+truncate((sqrtint(8*n)+1)/2)
 
 #offset 1
 
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
 mov $2,$1
 add $2,1
 bin $2,2
 sub $0,$2
-sub $0,1
+mul $0,2
 sub $1,$0
-mul $1,3
-add $1,1
-add $1,$0
 mov $0,$1

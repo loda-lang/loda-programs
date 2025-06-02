@@ -1,5 +1,5 @@
 ; A123565: a(n) is the number of positive integers k which are <= n and where k, k-1 and k+1 are each coprime to n.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by mmonnin
 ; 1,0,0,0,2,0,4,0,0,0,8,0,10,0,0,0,14,0,16,0,0,0,20,0,10,0,0,0,26,0,28,0,0,0,8,0,34,0,0,0,38,0,40,0,0,0,44,0,28,0,0,0,50,0,16,0,0,0,56,0,58,0,0,0,20,0,64,0,0,0,68,0,70,0,0,0,32,0,76,0
 
 #offset 1
@@ -25,6 +25,7 @@ lpb $0
     mov $4,1
   lpe
   mul $1,$5
+  sub $2,1
 lpe
 mov $0,$1
 div $0,11

@@ -1,25 +1,67 @@
 ; A178238: Triangle read by rows: partial column sums of the triangle of natural numbers (written sequentially by rows).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,3,3,7,8,6,14,16,15,10,25,28,28,24,15,41,45,46,43,35,21,63,68,70,68,61,48,28,92,98,101,100,94,82,63,36,129,136,140,140,135,124,106,80,45,175,183,188,189,185,175,158,133,99,55,231,240,246,248,245,236,220,196,163,120,66,298,308,315,318,316,308,293,270,238,196,143,78,377,388
+; Formula: a(n) = -binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1,2)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)+((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)*(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2)+binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n,2))*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+3,2)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)+binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+2,2)*(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1)+2*truncate(binomial(2*n-2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2,3)/(-4))-binomial(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1,2)-truncate(binomial(2*binomial(truncate((sqrtint(8*n)-1)/2)+1,2)-2*n+2,3)/(-4))+binomial(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2,3)
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $4,$0
-add $0,1
-sub $3,$0
+mov $6,$1
+add $6,1
+mov $5,$1
+sub $5,$0
+sub $5,$6
+add $5,1
+add $6,$5
+mov $7,$5
+mul $7,-1
+mov $9,$5
+mul $9,-2
+bin $9,3
+div $9,-4
+mov $8,$5
+add $8,1
+bin $8,2
+mov $11,$0
+add $11,1
+mov $4,$6
+add $4,1
+bin $4,2
+mov $10,$7
+mul $10,$6
+mov $3,$7
+add $3,1
 bin $3,2
-add $2,2
-sub $2,$0
-mov $0,$2
-lpb $0
-  sub $0,1
-  add $1,$3
-  add $4,1
-  add $3,$4
-lpe
-mov $0,$1
+add $10,$3
+mul $10,$0
+mov $3,$7
+bin $3,2
+mul $4,$11
+add $4,$9
+sub $10,$3
+mul $3,$6
+sub $10,$3
+mov $3,$7
+mul $3,-2
+bin $3,3
+div $3,-4
+sub $10,$3
+mul $8,$0
+add $8,$9
+add $8,$4
+add $8,$10
+add $0,2
+sub $1,$0
+add $1,3
+bin $1,3
+add $8,$1
+mov $0,$8

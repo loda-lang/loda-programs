@@ -1,15 +1,21 @@
 ; A073222: A073214/2.
-; Submitted by Pheidologeton
+; Submitted by loader3229
 ; 1,10,19,181,190,361,3430,3439,3610,6859,65161,65170,65341,68590,130321,1238050,1238059,1238230,1241479,1303210,2476099,23522941,23522950,23523121,23526370,23588101,24760990,47045881,446935870
+; Formula: a(n) = floor((truncate(19^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))+truncate(19^truncate((sqrtint(8*n)-1)/2)))/2)
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
 mov $2,$1
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 mov $1,19
 pow $1,$2
 mov $2,19

@@ -1,14 +1,21 @@
 ; A057884: A square array based on tetrahedral numbers (A000292) with each term being the sum of 2 consecutive terms in the previous row.
-; Submitted by BarnardsStern
+; Submitted by loader3229
 ; 1,0,1,4,1,1,0,4,2,1,10,4,5,3,1,0,10,8,7,4,1,20,10,14,13,10,5,1,0,20,20,22,20,14,6,1,35,20,30,34,35,30,19,7,1,0,35,40,50,56,55,44,25,8,1,56,35,55,70,84,91,85,63,32,9,1,0,56,70,95,120,140,146,129,88,40,10,1
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 add $2,2
 sub $2,$0
-add $3,$0
+mov $3,$0
 mov $4,$0
 mov $0,$2
 lpb $0

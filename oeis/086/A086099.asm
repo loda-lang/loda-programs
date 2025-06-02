@@ -1,16 +1,16 @@
 ; A086099: a(n) = OR(k AND (n-k): 0<=k<=n), AND and OR bitwise.
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 0,0,1,0,3,2,3,0,7,6,7,4,7,6,7,0,15,14,15,12,15,14,15,8,15,14,15,12,15,14,15,0,31,30,31,28,31,30,31,24,31,30,31,28,31,30,31,16,31,30,31,28,31,30,31,24,31,30,31,28,31,30,31,0,63,62,63,60,63,62,63,56,63,62,63,60,63,62,63,48
+; Formula: a(n) = gcd(n+1,truncate(2^logint(n+1,2)))*(floor((n+1)/truncate(2^logint(n+1,2)))-2)+truncate(2^logint(n+1,2))
 
 add $0,1
-mov $1,1
-mov $2,$0
-mul $2,2
-lpb $0
-  div $0,2
-  mul $1,2
-lpe
-gcd $2,$1
-sub $1,$2
-mov $0,$1
-div $0,2
+mov $1,$0
+log $1,2
+mov $2,2
+pow $2,$1
+mov $3,$0
+gcd $3,$2
+div $0,$2
+sub $0,2
+mul $0,$3
+add $0,$2

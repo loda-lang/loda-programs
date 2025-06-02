@@ -1,15 +1,11 @@
 ; A102396: A mod 2 related Jacobsthal sequence.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 0,1,1,1,1,1,1,3,1,1,1,3,1,3,3,5,1,1,1,3,1,3,3,5,1,3,3,5,3,5,5,11,1,1,1,3,1,3,3,5,1,3,3,5,3,5,5,11,1,3,3,5,3,5,5,11,3,5,5,11,5,11,11,21,1,1,1,3,1,3,3,5,1,3,3,5,3,5,5,11
+; Formula: a(n) = floor((2^sumdigits(n,2)+1)/3)
 
-mov $1,$0
-lpb $1
-  div $1,2
-  sub $0,$1
-lpe
-mov $2,$0
-mov $0,2
-pow $0,$2
-add $0,4
-div $0,3
-sub $0,1
+dgs $0,2
+mov $1,2
+pow $1,$0
+add $1,1
+div $1,3
+mov $0,$1

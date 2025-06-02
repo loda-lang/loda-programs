@@ -1,16 +1,14 @@
 ; A126951: List of pairs: k followed by k^3.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,1,2,8,3,27,4,64,5,125,6,216,7,343,8,512,9,729,10,1000,11,1331,12,1728,13,2197,14,2744,15,3375,16,4096,17,4913,18,5832,19,6859,20,8000,21,9261,22,10648,23,12167,24,13824,25,15625,26,17576,27,19683,28,21952
-; Formula: a(n) = truncate((floor((n-1)/2)+1)^gcd(floor((n-1)/2)+n+1,3))
+; Formula: a(n) = truncate(floor((n+1)/2)^(sign(2*n-1)*((abs(2*n-1)-1)%4+1)))
 
 #offset 1
 
-mov $2,$0
-sub $2,1
-div $2,2
-add $2,1
 mov $1,$0
-add $1,$2
-gcd $1,3
-pow $2,$1
-mov $0,$2
+mul $1,2
+sub $1,1
+dgr $1,5
+add $0,1
+div $0,2
+pow $0,$1

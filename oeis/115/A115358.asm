@@ -1,8 +1,26 @@
 ; A115358: Inverse of matrix (1,x)+(x,x^2) (expressed in Riordan array notation).
-; Submitted by Simon Strandgaard
+; Submitted by omegaintellisys
 ; 1,-1,1,0,0,1,1,-1,0,1,0,0,0,0,1,0,0,-1,0,0,1,0,0,0,0,0,0,1,-1,1,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,-1,0,0,0,0,0,1,0,0
-; Formula: a(n) = A154269(A051537(n+1))
 
 add $0,1
-seq $0,51537 ; Triangle read by rows: T(i,j) = lcm(i,j)/gcd(i,j) for 1 <= j <= i.
-seq $0,154269 ; Dirichlet inverse of A019590; Fully multiplicative with a(2^e) = (-1)^e, a(p^e) = 0 for odd primes p.
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $2,$3
+add $2,1
+bin $2,2
+add $3,1
+mov $4,$3
+sub $0,$2
+mul $3,$0
+gcd $0,$4
+pow $0,2
+div $3,$0
+mov $0,$3
+dir $0,4
+mov $1,1
+sub $1,$0
+pow $1,$1
+mov $0,$1

@@ -1,18 +1,16 @@
 ; A188219: Positions of 0 in the zero-one sequence [nr]-[4r]-[nr-4r], where r=sqrt(5), n>=1.
-; Submitted by Jamie Morken(w1)
+; Submitted by lee
 ; 4,21,38,55,72,93,110,127,144,165,182,199,216,237,254,271,288,309,326,343,360,377,398,415,432,449,470,487,504,521,542,559,576,593,614,631,648,665,682,703,720,737,754,775,792,809,826,847,864,881,898,919,936,953,970,987,1008
-; Formula: a(n) = 5*n+4*truncate((110*n-110)/34)-1
+; Formula: a(n) = 9*n+4*sqrtint(5*(n-1)^2)-5
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-mul $0,2
-mov $2,$0
-mul $0,55
-div $0,34
-mul $0,2
-add $0,$2
-add $0,2
-mul $0,2
+pow $1,2
+mul $1,5
+nrt $1,2
+mul $1,4
+mul $0,9
 add $0,$1
+add $0,4
