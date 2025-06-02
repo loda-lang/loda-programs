@@ -1,6 +1,7 @@
 ; A288583: Related to study of weak Sidon sets.
 ; Submitted by BrandyNOW
 ; 1,2,3,6,11,19,28,42,56
+; Formula: a(n) = (8==n)+truncate((n^3+11*n^2-38*n+120)/24)-2
 
 #offset 1
 

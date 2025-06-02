@@ -1,11 +1,19 @@
 ; A247936: Riordan array ((1-2x)/(1-3x), 2x).
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,1,2,3,2,4,9,6,4,8,27,18,12,8,16,81,54,36,24,16,32,243,162,108,72,48,32,64,729,486,324,216,144,96,64,128,2187,1458,972,648,432,288,192,128,256,6561,4374,2916,1944,1296,864,576,384,256,512,19683,13122
+; Formula: a(n) = truncate((truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(3^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))))/gcd(3,truncate(2^(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n))*truncate(3^(-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)))))
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
 sub $2,$0
 mov $3,2
 pow $3,$0

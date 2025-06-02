@@ -1,18 +1,27 @@
 ; A204125: Symmetric matrix based on f(i,j)=(i if i=j and 1 otherwise), by antidiagonals.
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,1,2,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = truncate(binomial(2*truncate((sqrtint(8*n)-1)/2)-4*gcd(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1,truncate((sqrtint(8*n)-1)/2))-2,2*truncate((sqrtint(8*n)-1)/2)-2*gcd(-binomial(truncate((sqrtint(8*n)-1)/2),2)+n-1,truncate((sqrtint(8*n)-1)/2)))/2)+1
 
 #offset 1
 
-sub $0,1
-lpb $0
-  add $1,4
-  sub $0,$1
-lpe
-equ $0,0
-add $0,1
-div $1,$0
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
 div $1,2
+mov $3,$1
+bin $3,2
 sub $0,1
-mul $0,$1
+sub $0,$3
+gcd $0,$1
+sub $1,$0
+sub $0,$1
+mul $1,2
+mov $2,-1
+sub $2,$0
+mul $2,2
+bin $2,$1
+mov $0,$2
+div $0,2
 add $0,1

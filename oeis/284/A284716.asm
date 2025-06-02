@@ -21,7 +21,6 @@ lpb $3
     add $0,$7
     sub $0,1
     mov $2,1
-    seq $2,7913 ; Squarefree part of n: a(n) is the smallest positive number m such that n/m is a square.
     add $2,$0
     max $2,0
     seq $2,5802 ; Number of permutations in S_n with longest increasing subsequence of length <= 3 (i.e., 1234-avoiding permutations); vexillary permutations (i.e., 2143-avoiding).

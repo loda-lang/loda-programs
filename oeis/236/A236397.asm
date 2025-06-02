@@ -1,14 +1,13 @@
 ; A236397: Weight of the largest-weight sunflower-free set of width n.
-; Submitted by pututu
+; Submitted by loader3229
 ; 1,2,4,8,20,40,96,224
+; Formula: a(n) = truncate(((2*sqrtnint(binomial(n,4),3)+8)*2^n)/8)
 
-lpb $0
-  mov $2,$0
-  bin $2,$1
-  seq $2,298603 ; Number of partitions of n into odd prime parts (including 1).
-  sub $0,1
-  mul $1,2
-  add $1,$2
-lpe
-mov $0,$1
-add $0,1
+mov $1,2
+pow $1,$0
+bin $0,4
+nrt $0,3
+mul $0,2
+add $0,8
+mul $0,$1
+div $0,8

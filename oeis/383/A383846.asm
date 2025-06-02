@@ -6,11 +6,9 @@
 
 mov $1,2
 lpb $1
-  sub $1,1
-  add $0,$1
+  sub $1,2
   sub $0,1
   mov $2,$0
-  max $2,0
   seq $2,381051 ; A version of the Josephus problem: a(n) is the surviving integer under the eliminate-skip-eliminate version of the elimination process.
   bin $0,$1
 lpe

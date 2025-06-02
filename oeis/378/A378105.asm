@@ -1,18 +1,14 @@
 ; A378105: Number of non-colorable strings of length n considered by the alternating coloring function.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,2,4,4,8,12,24,44,88,172,344,684,1368,2732,5464,10924,21848,43692,87384,174764,349528,699052,1398104,2796204,5592408,11184812,22369624,44739244,89478488,178956972,357913944,715827884,1431655768,2863311532,5726623064,11453246124,22906492248,45812984492
+; Formula: a(n) = floor((floor((2^n+1)/3)%4+floor((2^n+1)/3))/2)+1
 
-mov $1,1
-mov $2,1
-lpb $0
-  sub $0,1
-  dif $2,2
-  sub $2,1
-  mul $1,$2
-  add $1,1
-lpe
-sub $4,$2
-gcd $3,$1
-mul $3,$4
-mov $0,$3
-add $0,2
+mov $1,2
+pow $1,$0
+add $1,1
+div $1,3
+mov $0,$1
+mod $1,4
+add $0,$1
+div $0,2
+add $0,1

@@ -1,19 +1,24 @@
 ; A365618: Table read by antidiagonals: T(n, k) = A000120(n) + A000120(k).
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 0,1,1,1,2,1,2,2,2,2,1,3,2,3,1,2,2,3,3,2,2,2,3,2,4,2,3,2,3,3,3,3,3,3,3,3,1,4,3,4,2,4,3,4,1,2,2,4,4,3,3,4,4,2,2,2,3,2,5,3,4,3,5,2,3,2,3,3,3,3,4,4,4,4,3,3,3,3,2,4
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
 mov $2,$0
-mul $2,2
-mul $0,17
-add $1,$0
-sub $1,$2
-mov $3,$1
-lpb $3
-  div $1,2
-  sub $3,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $1,$2
+add $1,1
+bin $1,2
+sub $0,$1
+sub $0,1
+mov $1,$0
+sub $2,$0
+lpb $0
+  div $0,2
+  mul $2,2
 lpe
-mov $0,$3
+add $2,$1
+mov $0,$2
+dgs $0,2

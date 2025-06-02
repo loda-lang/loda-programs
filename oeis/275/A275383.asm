@@ -1,20 +1,17 @@
 ; A275383: Number of prime factors (with multiplicity) of generalized Fermat number 12^(2^n) + 1.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,2,3,2,2,5,2,5
-; Formula: a(n) = gcd(2*n,floor((2*n+floor((sqrtint(2*n)^2)/2))/2))+1
+; Formula: a(n) = sign(16*sqrtnint(n,10))*((abs(16*sqrtnint(n,10))-1)%(truncate((2*truncate((87*n-48)/80))/3)+1)+1)+1
 
-mov $1,$0
-add $1,$0
-mov $2,$0
+mov $2,87
+mul $2,$0
+sub $2,48
+div $2,80
 mul $2,2
-nrt $2,2
-mov $3,$1
-mov $0,$2
-mul $0,$2
-div $0,2
-add $1,$0
-mov $0,$1
-div $0,2
-gcd $3,$0
-mov $0,$3
+div $2,3
+mov $1,$2
+add $1,2
+nrt $0,10
+mul $0,16
+dgr $0,$1
 add $0,1

@@ -1,27 +1,16 @@
 ; A254280: Decimal expansion of deuteron mass energy equivalent in J.
-; Submitted by Orange Kid
+; Submitted by loader3229
 ; 3,0,0,5,0,6,3,2,3
+; Formula: a(n) = floor(((n+24)*binomial(n+45,n+9)^2)/5)%10
 
 #offset -9
 
 add $0,9
-mov $2,1
-mov $3,$0
-lpb $3
-  equ $4,0
-  mul $2,$3
-  add $5,$4
-  mul $1,$3
-  add $1,2
-  add $1,$2
-  div $1,$5
-  div $1,2
-  mul $2,7
-  add $2,$1
-  mul $1,4
-  sub $3,1
-  mov $4,0
-lpe
-mov $0,$2
-add $0,2
+mov $1,$0
+add $0,36
+bin $0,$1
+pow $0,2
+add $1,15
+mul $0,$1
+div $0,5
 mod $0,10

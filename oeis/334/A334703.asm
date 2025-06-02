@@ -1,10 +1,18 @@
 ; A334703: Triangle read by rows: T(n,k) = binomial(n*k,3) (0 <= k <= n).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,0,0,0,0,4,0,1,20,84,0,4,56,220,560,0,10,120,455,1140,2300,0,20,220,816,2024,4060,7140,0,35,364,1330,3276,6545,11480,18424,0,56,560,2024,4960,9880,17296,27720,41664,0,84,816,2925,7140,14190,24804,39711,59640,85320
+; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n),3)
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,1
+sub $0,$2
 mul $0,$1
 bin $0,3

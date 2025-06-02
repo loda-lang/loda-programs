@@ -1,20 +1,15 @@
 ; A381866: Number of labeled histories for rooted 5-furcating trees with 4n+1 leaves if simultaneous 5-furcations are not allowed.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,126,162162,1003458456,20419376121144,1084881453316380720,128835096988586792403600,30577206578883234961900809600,13328512616115465470187677202211200,9988360697491697592427704919982668857600,12203369577406758958826880335333105520792518400
+; Formula: a(n) = binomial(4*n+1,5)*a(n-1), a(1) = 1, a(0) = 1
 
 mov $1,1
-mov $3,$0
-mov $0,1
-add $3,2
-lpb $3
-  max $3,2
-  sub $3,1
-  equ $4,0
+lpb $0
+  sub $0,1
+  add $3,5
+  mov $2,$3
   bin $2,5
-  add $2,$4
-  sub $4,3
-  add $0,4
   mul $1,$2
-  mov $2,$0
+  sub $3,1
 lpe
 mov $0,$1

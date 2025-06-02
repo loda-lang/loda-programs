@@ -1,33 +1,28 @@
 ; A211850: Number of nonnegative integer arrays of length 2n+5 with new values 0 upwards introduced in order, no three adjacent elements all unequal, and containing the value n+1.
 ; Submitted by loader3229
 ; 63,147,286,494,785,1173,1672,2296,3059,3975,5058,6322,7781,9449,11340,13468,15847,18491,21414,24630,28153,31997,36176,40704,45595,50863,56522,62586,69069,75985,83348,91172,99471,108259,117550,127358,137697,148581,160024,172040,184643,197847,211666,226114,241205,256953,273372,290476,308279,326795,346038,366022,386761,408269,430560,453648,477547,502271,527834,554250,581533,609697,638756,668724,699615,731443,764222,797966,832689,868405,905128,942872,981651,1021479,1062370,1104338,1147397,1191561
-; Formula: a(n) = truncate((binomial(-2*n-1,2)*(n+9)+22*n-truncate(binomial(4*n+4,3)/(-4))+22)/2)+4
+; Formula: a(n) = truncate((n*(-2*n+binomial(-2*n-4,2)-5)-binomial(-2*n-5,2)-truncate(binomial(4*n+12,3)/(-4)))/2)
 
 #offset 1
 
-mov $1,$0
-mul $1,4
-sub $0,1
-mov $5,$1
-sub $5,$0
-sub $5,$0
-add $0,10
-mov $2,$5
-mul $2,-1
+mov $4,$0
+add $4,5
+sub $2,$0
+sub $2,$4
+mov $1,$2
+add $1,1
+bin $1,2
 mov $3,$2
-add $3,1
-bin $3,2
-mov $4,$3
-mul $4,$0
-mov $3,$2
-mul $3,10
-sub $4,$2
-sub $4,$3
-mov $3,$2
-mul $3,-2
-bin $3,3
-div $3,-4
-sub $4,$3
-mov $0,$4
+add $3,$1
+mul $3,$0
+mov $1,$2
+bin $1,2
+sub $3,$1
+mov $1,$2
+sub $1,1
+mul $1,-2
+bin $1,3
+div $1,-4
+sub $3,$1
+mov $0,$3
 div $0,2
-add $0,4

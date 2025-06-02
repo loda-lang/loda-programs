@@ -1,9 +1,96 @@
 ; A283001: a(n) = (A004186(n) - n)/9.
 ; Submitted by Simon Strandgaard
 ; 0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,0,0,0,1,2,3,4,5,6,7,0,0,0,0,1,2,3,4,5,6,0,0,0,0,0,1,2,3,4,5,0,0,0,0,0,0,1,2,3,4,0,0,0,0,0,0,0,1,2,3,0,0,0,0,0,0,0,0,1,2
-; Formula: a(n) = truncate((-n+A004186(n))/9)
 
 mov $1,$0
-seq $0,4186 ; Arrange digits of n in decreasing order.
+lpb $0
+  mov $12,$0
+  mod $12,10
+  mov $13,$12
+  equ $13,9
+  div $0,10
+  add $10,$13
+  mov $13,$12
+  equ $13,8
+  add $9,$13
+  mov $13,$12
+  equ $13,7
+  add $8,$13
+  mov $13,$12
+  equ $13,6
+  add $7,$13
+  mov $13,$12
+  equ $13,5
+  add $6,$13
+  mov $13,$12
+  equ $13,4
+  add $5,$13
+  mov $13,$12
+  equ $13,3
+  add $4,$13
+  mov $13,$12
+  equ $13,2
+  add $3,$13
+  mov $13,$12
+  equ $13,1
+  add $2,$13
+  mov $13,$12
+  equ $13,0
+  add $14,$13
+lpe
+mov $0,10
+pow $0,$10
+div $0,9
+mul $0,9
+mov $11,10
+pow $11,$9
+mul $0,$11
+div $11,9
+mul $11,8
+add $0,$11
+mov $11,10
+pow $11,$8
+mul $0,$11
+div $11,9
+mul $11,7
+add $0,$11
+mov $11,10
+pow $11,$7
+mul $0,$11
+div $11,9
+mul $11,6
+add $0,$11
+mov $11,10
+pow $11,$6
+mul $0,$11
+div $11,9
+mul $11,5
+add $0,$11
+mov $11,10
+pow $11,$5
+mul $0,$11
+div $11,9
+mul $11,4
+add $0,$11
+mov $11,10
+pow $11,$4
+mul $0,$11
+div $11,9
+mul $11,3
+add $0,$11
+mov $11,10
+pow $11,$3
+mul $0,$11
+div $11,9
+mul $11,2
+add $0,$11
+mov $11,10
+pow $11,$2
+mul $0,$11
+div $11,9
+add $0,$11
+mov $11,10
+pow $11,$14
+mul $0,$11
 sub $0,$1
 div $0,9

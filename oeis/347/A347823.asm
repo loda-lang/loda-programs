@@ -1,11 +1,19 @@
 ; A347823: Triangle read by rows: T(n,k) = (n+k+1)*binomial(n,k), 0 <= k <= n.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,3,3,8,5,4,15,18,7,5,24,42,32,9,6,35,80,90,50,11,7,48,135,200,165,72,13,8,63,210,385,420,273,98,15,9,80,308,672,910,784,420,128,17,10,99,432,1092,1764,1890,1344,612,162,19,11,120,585,1680,3150,4032,3570,2160,855,200,21,12,143,770,2475,5280,7854,8316,6270,3300,1155,242,23,13,168
+; Formula: a(n) = binomial(truncate((sqrtint(8*n+8)-1)/2),-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)*(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2)+n+1)
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
 mov $1,$2
 bin $1,$0
 add $0,1

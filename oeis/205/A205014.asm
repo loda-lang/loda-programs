@@ -8,5 +8,4 @@
 mov $1,$0
 seq $1,205009 ; Least k such that n divides the k-th difference between distinct central binomials coefficients.
 seq $1,205008 ; Ordered differences of central binomial coefficients.
-sub $0,1
 mov $0,$1

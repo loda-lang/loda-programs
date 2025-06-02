@@ -11,6 +11,7 @@ bin $1,2
 add $1,$2
 lpb $2
   sub $2,1
+  div $2,$1
   mov $0,$1
   mul $0,8
   nrt $0,2

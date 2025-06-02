@@ -1,21 +1,20 @@
 ; A279340: First differences of A055938.
-; Submitted by loader3229
+; Submitted by Jason Smith
 ; 3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,1,1,3,3,1,3,3,1,1,3,3,1,3,3,1,1,1,3,3,1
+; Formula: a(n) = d(n+1)+1, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -2, b(1) = 0, b(0) = 0, c(n) = gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),4)*c(n-1), c(2) = 16, c(1) = 4, c(0) = 1, d(n) = truncate(gcd(d(n-1)+truncate((-c(n-1)+b(n-1))/2),4)/2), d(2) = 2, d(1) = 2, d(0) = 0
 
 #offset 1
 
-mov $1,1
+mov $2,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,1
-  mov $3,$1
-  lex $3,2
-  add $3,1
-  mov $4,$2
-  div $4,$3
-  add $1,$4
-  mod $2,$3
+  sub $1,$2
+  div $1,2
+  add $3,$1
+  gcd $3,4
+  mul $2,$3
+  div $3,2
 lpe
-mov $0,$4
-mul $0,2
+mov $0,$3
 add $0,1

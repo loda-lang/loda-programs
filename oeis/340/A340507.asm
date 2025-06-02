@@ -1,26 +1,14 @@
 ; A340507: a(n) = floor(sqrt(2*n)) - A003056(n).
-; Submitted by yasiwo
+; Submitted by loader3229
 ; 0,0,1,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,0
+; Formula: a(n) = -truncate((sqrtint(8*n+8)-1)/2)+sqrtint(2*n)
 
-mov $4,$0
-mul $4,2
-mov $6,-2
-bin $6,$4
-div $6,2
-mov $3,3
-sub $4,$6
-mul $4,2
-add $4,3
-lpb $4
-  sub $4,$3
-  sub $5,20
-  mov $1,$4
-  mul $1,4
-  add $1,2
-  mov $2,$1
-  nrt $2,2
-  add $3,$5
-lpe
-mov $0,$2
-sub $0,1
-mod $0,2
+mov $1,$0
+add $1,1
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mul $0,2
+nrt $0,2
+sub $0,$1

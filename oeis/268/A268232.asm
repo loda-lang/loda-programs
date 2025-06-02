@@ -1,23 +1,36 @@
 ; A268232: Indices of 0's in A047999.
-; Submitted by Kotenok2000
+; Submitted by Science United
 ; 4,11,12,13,17,18,22,24,26,37,38,39,40,41,42,43,47,48,49,50,51,52,56,58,59,60,61,62,64,70,71,72,73,79,80,81,83,84,85,87,88,89,93,94,97,98,101,102,106,108,110,112,114,116,118,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,155,156,157,158,159,160,161,162,163,164
 
 #offset 1
 
-mov $2,$0
+mov $6,$0
 sub $0,1
-add $2,3
-pow $2,2
-lpb $2
-  mov $3,$1
-  seq $3,143333 ; Pascal's triangle binomial(n,m) read by rows, all even elements replaced by zero.
-  equ $3,0
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
+add $6,3
+pow $6,2
+lpb $6
+  mov $4,$5
+  add $4,1
+  mov $2,$4
+  mul $2,8
+  nrt $2,2
   sub $2,1
+  div $2,2
+  add $5,1
+  mov $1,$2
+  add $1,1
+  bin $1,2
+  sub $4,$1
+  sub $4,1
+  bin $2,$4
+  mov $4,$2
+  mod $4,2
+  equ $4,0
+  sub $0,$4
+  mov $3,$0
+  max $3,0
+  equ $3,$0
+  mul $6,$3
+  sub $6,1
 lpe
-mov $0,$1
+mov $0,$5

@@ -1,18 +1,14 @@
 ; A372206: Largest prime that occurs infinitely often as an order of a rational point of an elliptic curve over a number field of degree n.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 7,13,13,17,19,19,23,23
-; Formula: a(n) = 2*sqrtint(5*n-8*truncate((5*n-5)/8)-5)+2*n+5
+; Formula: a(n) = 2*truncate((3*sqrtint(6*n-3))/2)+5
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-add $1,$0
-mul $1,2
-add $1,$0
-mod $1,8
-nrt $1,2
-add $1,$0
-mov $0,$1
+mul $0,6
+sub $0,3
+nrt $0,2
+mul $0,3
+div $0,2
 mul $0,2
-add $0,7
+add $0,5

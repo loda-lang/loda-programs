@@ -1,10 +1,8 @@
 ; A279816: Digital roots of tetrahedral numbers (A000292).
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 0,1,4,1,2,8,2,3,3,3,4,7,4,5,2,5,6,6,6,7,1,7,8,5,8,9,9,9,1,4,1,2,8,2,3,3,3,4,7,4,5,2,5,6,6,6,7,1,7,8,5,8,9,9,9,1,4,1,2,8,2,3,3,3,4,7,4,5,2,5,6,6,6,7,1,7,8,5,8,9
-; Formula: a(n) = -9*truncate((binomial(n+2,3)-1)/9)+binomial(n+2,3)
+; Formula: a(n) = sign(binomial(n+2,3))*((binomial(n+2,3)-1)%9+1)
 
 add $0,2
 bin $0,3
-sub $0,1
-mod $0,9
-add $0,1
+dgr $0,10

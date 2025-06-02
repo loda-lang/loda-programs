@@ -1,20 +1,14 @@
 ; A256436: Characteristic function of pentatope numbers.
+; Submitted by loader3229
 ; 1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+; Formula: a(n) = gcd(binomial(sqrtnint(24*n,4)+2,4),n)>=n
 
-lpb $0
-  add $3,1
-  add $2,$3
-  add $4,$3
-  lpb $4
-    div $4,2
-    add $3,1
-  lpe
-  sub $0,$2
-lpe
-lpb $0
-  div $0,9
-  mov $1,15
-lpe
-add $1,1
-mod $1,2
-mov $0,$1
+mov $1,$0
+mul $0,24
+nrt $0,4
+mov $2,$0
+add $2,2
+bin $2,4
+gcd $2,$1
+geq $2,$1
+mov $0,$2

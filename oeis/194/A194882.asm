@@ -1,14 +1,12 @@
 ; A194882: Write n = C(i,4)+C(j,3)+C(k,2)+C(l,1) with i>j>k>l>=0; sequence gives i values.
-; Submitted by Science United
+; Submitted by loader3229
 ; 3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8
+; Formula: a(n) = truncate((sqrtint(sqrtint(384*n+16)+5)+3)/2)
 
-mov $1,3
-mov $2,3
-mov $3,1
-lpb $0
-  add $3,$2
-  trn $0,$3
-  add $2,$1
-  add $1,1
-lpe
-mov $0,$1
+mul $0,384
+add $0,16
+nrt $0,2
+add $0,5
+nrt $0,2
+add $0,3
+div $0,2

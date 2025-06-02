@@ -1,13 +1,12 @@
 ; A354034: a(n) = 1 if n is an even number or a square, otherwise 0.
-; Submitted by Skillz
+; Submitted by loader3229
 ; 1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
+; Formula: a(n) = (n*((sqrtint(n)^2)!=n)+1)%2
 
-mov $2,1
-dif $0,-2
-max $0,0
-lpb $0
-  sub $2,2
-  add $0,$2
-lpe
-bin $1,$0
-mov $0,$1
+mov $1,$0
+nrt $1,2
+pow $1,2
+neq $1,$0
+mul $0,$1
+add $0,1
+mod $0,2

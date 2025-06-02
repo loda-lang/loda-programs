@@ -1,28 +1,57 @@
 ; A348434: Decimal expansion of (1/3)*e in Coulombs, one third of the elementary charge.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 5,3,4,0,5,8,8,7,8
-; Formula: a(n) = -10*truncate((-10*truncate((d(n+19)+5)/10)+d(n+19)+15)/10)-10*truncate((d(n+19)+5)/10)+d(n+19)+15, b(n) = 4*c(n-1)+4*d(n-1)+2*b(n-1), b(4) = -272, b(3) = -48, b(2) = -4, b(1) = 0, b(0) = 0, c(n) = 1, c(4) = 1, c(3) = 1, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 4*d(n-1)+2*b(n-2)+c(n-2)+d(n-3)-1, d(8) = -89067, d(7) = -19018, d(6) = -4057, d(5) = -867, d(4) = -190, d(3) = -45, d(2) = -11, d(1) = -2, d(0) = 0
+; Formula: a(n) = binomial(2*n-2*binomial(sqrtint(8*n+160),2)+33,2)*(-binomial(sqrtint(8*n+160),2)+n+18)+binomial(min(binomial(sqrtint(8*n+160),2),1)+truncate((sqrtint(8*n+160)-1)/2)+2,2)*(-binomial(sqrtint(8*n+160),2)+n+19)-10*truncate((binomial(2*n-2*binomial(sqrtint(8*n+160),2)+33,2)*(-binomial(sqrtint(8*n+160),2)+n+18)+binomial(min(binomial(sqrtint(8*n+160),2),1)+truncate((sqrtint(8*n+160)-1)/2)+2,2)*(-binomial(sqrtint(8*n+160),2)+n+19)-10*truncate((binomial(2*n-2*binomial(sqrtint(8*n+160),2)+33,2)*(-binomial(sqrtint(8*n+160),2)+n+18)+binomial(min(binomial(sqrtint(8*n+160),2),1)+truncate((sqrtint(8*n+160)-1)/2)+2,2)*(-binomial(sqrtint(8*n+160),2)+n+19)+truncate(((-binomial(sqrtint(8*n+160),2)+n+19)*(-truncate((sqrtint(8*n+160)-1)/2)-n+binomial(sqrtint(8*n+160),2)+sqrtint(8*n+160)-22)*(2*binomial(sqrtint(8*n+160),2)-truncate((sqrtint(8*n+160)-1)/2)-2*n+sqrtint(8*n+160)-41))/2)+truncate(binomial(2*binomial(sqrtint(8*n+160),2)-2*n-32,3)/(-4))+8)/10)+truncate(((-binomial(sqrtint(8*n+160),2)+n+19)*(-truncate((sqrtint(8*n+160)-1)/2)-n+binomial(sqrtint(8*n+160),2)+sqrtint(8*n+160)-22)*(2*binomial(sqrtint(8*n+160),2)-truncate((sqrtint(8*n+160)-1)/2)-2*n+sqrtint(8*n+160)-41))/2)+truncate(binomial(2*binomial(sqrtint(8*n+160),2)-2*n-32,3)/(-4))+18)/10)-10*truncate((binomial(2*n-2*binomial(sqrtint(8*n+160),2)+33,2)*(-binomial(sqrtint(8*n+160),2)+n+18)+binomial(min(binomial(sqrtint(8*n+160),2),1)+truncate((sqrtint(8*n+160)-1)/2)+2,2)*(-binomial(sqrtint(8*n+160),2)+n+19)+truncate(((-binomial(sqrtint(8*n+160),2)+n+19)*(-truncate((sqrtint(8*n+160)-1)/2)-n+binomial(sqrtint(8*n+160),2)+sqrtint(8*n+160)-22)*(2*binomial(sqrtint(8*n+160),2)-truncate((sqrtint(8*n+160)-1)/2)-2*n+sqrtint(8*n+160)-41))/2)+truncate(binomial(2*binomial(sqrtint(8*n+160),2)-2*n-32,3)/(-4))+8)/10)+truncate(((-binomial(sqrtint(8*n+160),2)+n+19)*(-truncate((sqrtint(8*n+160)-1)/2)-n+binomial(sqrtint(8*n+160),2)+sqrtint(8*n+160)-22)*(2*binomial(sqrtint(8*n+160),2)-truncate((sqrtint(8*n+160)-1)/2)-2*n+sqrtint(8*n+160)-41))/2)+truncate(binomial(2*binomial(sqrtint(8*n+160),2)-2*n-32,3)/(-4))+18
 
 #offset -19
 
-add $0,19
-lpb $0
-  sub $0,1
-  sub $4,3
-  add $5,$3
-  add $1,$5
-  add $1,$5
-  mul $1,2
-  sub $3,$4
-  sub $3,1
-  sub $2,$3
-  mov $3,1
-  add $4,$1
-  add $4,$2
-  add $5,$2
-lpe
-mov $0,$5
-add $0,5
+add $0,20
+mov $1,$0
+mul $1,8
+nrt $1,2
+mov $2,$1
+bin $2,2
+sub $0,$2
+sub $0,2
+sub $1,1
+min $2,1
+mov $6,$1
+div $6,2
+add $6,1
+mov $5,$1
+sub $5,$0
+sub $5,$0
+sub $5,$6
+sub $5,3
+mov $4,$0
+sub $4,2
+mov $9,$4
+mul $9,-2
+bin $9,3
+div $9,-4
+mov $8,$4
+mul $8,2
+add $8,1
+bin $8,2
+mov $10,$0
+add $10,$5
+add $10,1
+mov $7,$0
+add $7,1
+mul $10,$5
+mul $10,$7
+div $10,2
+mov $3,$6
+add $3,$2
+add $3,1
+bin $3,2
+mul $3,$7
+mul $8,$0
+add $8,$9
+add $8,$10
+add $8,$3
+mov $0,$8
+add $0,8
 mod $0,10
 add $0,10
 mod $0,10
