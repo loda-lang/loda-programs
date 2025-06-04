@@ -5,39 +5,26 @@
 #offset 1
 
 sub $0,1
-mov $3,$0
-mov $1,1
-lpb $1
-  sub $1,1
-  mov $5,2
-  lpb $5
-    sub $5,1
-    mov $0,$3
-    add $0,$5
-    sub $0,1
-    mov $2,$0
-    mov $9,2
-    lpb $9
-      sub $9,1
-      mov $0,$2
-      add $0,$9
-      trn $0,1
-      add $0,1
-      seq $0,114322 ; Largest number whose 4th power has n digits.
-      add $0,1
-      mul $0,20
-      mov $8,$9
-      mul $8,$0
-      add $7,$8
-    lpe
-    min $2,1
-    mul $2,$0
-    mov $0,$7
-    sub $0,$2
-    mov $4,$5
-    mul $4,$0
-    add $6,$4
-  lpe
+mov $5,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$5
+  add $0,$3
+  trn $0,1
+  add $0,1
+  mov $1,10
+  pow $1,$0
+  mov $0,$1
+  nrt $0,2
+  sub $0,1
+  nrt $0,2
+  add $0,1
+  mov $2,$3
+  mul $2,$0
+  add $4,$2
 lpe
-mov $0,$6
-div $0,20
+min $5,1
+mul $5,$0
+mov $0,$4
+sub $0,$5

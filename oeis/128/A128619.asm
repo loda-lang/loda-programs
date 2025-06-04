@@ -1,9 +1,48 @@
 ; A128619: Triangle T(n, k) = A127647(n,k) * A128174(n,k), read by rows.
 ; Submitted by Jon Maiga
 ; 1,0,1,2,0,2,0,3,0,3,5,0,5,0,5,0,8,0,8,0,8,13,0,13,0,13,0,13,0,21,0,21,0,21,0,21,34,0,34,0,34,0,34,0,34,0,55,0,55,0,55,0,55,0,55,89,0,89,0,89,0,89,0,89,0,89,0,144,0,144,0,144,0,144,0,144,0,144,233,0
-; Formula: a(n) = A000045(A128621(n))
 
 #offset 1
 
-seq $0,128621 ; A127648 * A128174 as an infinite lower triangular matrix.
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+bin $2,2
+sub $0,$2
+mod $0,2
+mov $3,$1
+add $3,1
+mul $0,$3
+mov $4,$0
+mov $7,1
+lpb $0
+  mul $10,$7
+  mul $10,2
+  mov $11,$6
+  pow $11,2
+  mov $12,$7
+  pow $12,2
+  sub $10,$11
+  add $11,$12
+  mov $12,$11
+  sub $12,$10
+  mov $8,$0
+  max $8,1
+  log $8,2
+  mov $9,2
+  pow $9,$8
+  ban $9,$4
+  neq $9,0
+  mul $12,$9
+  div $0,2
+  mov $5,$10
+  mul $5,$9
+  add $10,$12
+  add $11,$5
+  mov $6,$10
+  mov $7,$11
+lpe
+mov $0,$6

@@ -1,14 +1,20 @@
 ; A057075: Table read by antidiagonals of T(n,k)=floor(n^n/k) with n,k >= 1.
-; Submitted by Jamie Morken(s4)
+; Submitted by loader3229
 ; 1,0,4,0,2,27,0,1,13,256,0,1,9,128,3125,0,0,6,85,1562,46656,0,0,5,64,1041,23328,823543,0,0,4,51,781,15552,411771,16777216,0,0,3,42,625,11664,274514,8388608,387420489,0,0,3,36,520,9331,205885,5592405,193710244,10000000000,0,0,3,32,446,7776,164708,4194304,129140163,5000000000,285311670611,0,0,2,28,390,6665,137257,3355443,96855122,3333333333,142655835305,8916100448256,0,0
+; Formula: a(n) = truncate(truncate((-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n)^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n))/(-n+binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+truncate((sqrtint(8*n)-1)/2)+2))
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 sub $1,$0
 add $1,1
 add $0,1

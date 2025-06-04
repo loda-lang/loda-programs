@@ -696,6 +696,7 @@ A286063: Fixed point of the mapping 00->001, 1->100, starting with 00.
 A286375: a(n) = A278222(n^3).
 A286666: Positions of 0 in A286665; complement of A286667.
 A286690: Positions of 1 in A286688; complement of A286689.
+A286747: Characteristic sequence of the Beatty sequence, A177102, of sqrt(10).
 A286904: Positions of 0 in A286903; complement of A286905.
 A286923: Positions of 0 in A286922; complement of A286924.
 A286927: Positions of 1 in A286925; complement of A286926.

@@ -1,16 +1,19 @@
 ; A244734: Numerators of the triangle T(n,k) = (n*(n+1)/2 + k + 1)/(k+1) for n >= k >= 0.
-; Submitted by Jon Maiga
+; Submitted by mmonnin
 ; 1,2,3,4,5,2,7,4,3,5,11,6,13,7,3,16,17,6,19,4,7,22,23,8,25,26,9,4,29,15,31,8,33,17,5,9,37,19,13,10,41,7,43,11,5,46,47,16,49,10,17,52,53,6,11,56,57,58,59,12,61,62,63,64,13,6,67,34,23,35,71,12,73,37,25,38,7,13
+; Formula: a(n) = truncate((n+1)/gcd(binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n+1,n+1))
 
+mov $1,$0
 add $0,1
 mov $2,$0
-lpb $0
-  mov $3,$2
-  gcd $3,$0
-  sub $0,1
-  trn $0,$1
-  add $1,1
-  mov $4,$2
-  div $4,$3
-lpe
-mov $0,$4
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+add $1,$3
+add $1,1
+gcd $1,$0
+div $0,$1

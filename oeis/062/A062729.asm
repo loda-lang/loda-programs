@@ -7,7 +7,7 @@
 mov $1,$0
 seq $1,74040 ; Product of first n twin prime pair products.
 lpb $0
-  add $3,9
+  add $3,14
   lpb $3
     add $2,1
     mov $4,$1

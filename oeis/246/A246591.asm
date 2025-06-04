@@ -11,10 +11,8 @@ lpb $0
 lpe
 mov $0,$1
 add $0,$4
-mul $0,2
 mov $3,$0
 log $3,2
 mov $2,2
 pow $2,$3
 sub $0,$2
-div $0,2

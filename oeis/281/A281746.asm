@@ -1,22 +1,20 @@
 ; A281746: Nonnegative numbers k such that k == 0 (mod 3) or k == 0 (mod 5).
-; Submitted by Jason Jung
+; Submitted by loader3229
 ; 0,3,5,6,9,10,12,15,18,20,21,24,25,27,30,33,35,36,39,40,42,45,48,50,51,54,55,57,60,63,65,66,69,70,72,75,78,80,81,84,85,87,90,93,95,96,99,100,102,105,108,110,111,114,115,117,120,123,125,126,129,130,132,135,138,140,141,144,145,147,150,153,155,156,159,160,162,165,168,170
+; Formula: a(n) = 2*n-2*truncate(min((((n-1)%7)>=2)+(n-1)%7,6)/2)+floor((n-1)/7)+min((((n-1)%7)>=2)+(n-1)%7,6)-2
 
 #offset 1
 
-mov $1,1
-seq $1,74040 ; Product of first n twin prime pair products.
 sub $0,1
-lpb $0
-  add $3,9
-  lpb $3
-    add $2,1
-    mov $4,$1
-    gcd $4,$2
-    equ $4,1
-    sub $3,$4
-  lpe
-  add $2,1
-  sub $0,1
-lpe
-mov $0,$2
+mov $1,$0
+div $1,7
+mov $2,$0
+mod $2,7
+mov $3,$2
+geq $3,2
+add $2,$3
+min $2,6
+mod $2,2
+mul $0,2
+add $0,$1
+add $0,$2

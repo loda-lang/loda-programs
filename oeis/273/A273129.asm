@@ -1,25 +1,12 @@
 ; A273129: The Rote-Fibonacci infinite sequence.
-; Submitted by mmonnin
+; Submitted by Torbj&#246;rn Eriksson
 ; 0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,0,1,1,0,1
+; Formula: a(n) = -2*truncate((A073869(A351219(0)+n)-1)/2)+A073869(A351219(0)+n)-1
 
-mov $2,2
-mov $3,1
-add $0,1
-lpb $0
-  sub $0,$3
-  dif $3,2
-  mul $3,2
-  sub $1,$2
-  add $1,1
-  div $1,2
-  mul $2,2
-  add $3,$1
-  gcd $3,4
-  dif $1,2
-  sub $4,1
-lpe
-mov $0,$4
+sub $1,$0
+mul $0,0
+seq $0,351219 ; Multiplicative with a(p^e) = Fibonacci(e+1).
+sub $0,$1
+seq $0,73869 ; a(n) = Sum_{i=0..n} A002251(i)/(n+1).
 sub $0,1
-mod $0,2
-add $0,2
 mod $0,2

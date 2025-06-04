@@ -1,7 +1,16 @@
 ; A078565: Number of zeros in the binary expansion of n!.
-; Submitted by shiva
+; Submitted by Matthias Lehmkuhl
 ; 0,0,1,1,3,3,6,7,10,13,11,19,17,21,25,23,27,27,30,40,40,41,42,44,51,54,54,56,56,63,60,71,76,77,77,77,88,86,90,90,97,99,106,105,107,117,115,117,114,122,126,130,138,138,151,144,146,157,160,158,160,176,172,170,176,194,186,194,191,206,196,199,200,204,206,222,226,216,227,217
-; Formula: a(n) = A080791(A000142(n))
+; Formula: a(n) = -sumdigits(b(n),2)*sign(b(n))+logint(b(n),2)+1, b(n) = n*b(n-1), b(0) = 1
 
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-seq $0,80791 ; Number of nonleading 0's in binary expansion of n.
+mov $2,1
+lpb $0
+  mul $2,$0
+  sub $0,1
+lpe
+mov $1,$2
+dgs $1,2
+mov $0,$2
+log $0,2
+add $0,1
+sub $0,$1

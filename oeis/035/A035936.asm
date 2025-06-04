@@ -5,11 +5,9 @@
 mov $2,$0
 mov $4,2
 lpb $4
-  sub $4,1
+  div $4,2
   mov $0,$2
   add $0,$4
-  trn $0,1
-  add $0,1
   pow $0,3
   nrt $0,2
   mov $1,$4

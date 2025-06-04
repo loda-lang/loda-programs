@@ -10,9 +10,10 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,97932 ; Positive integers n such that 2n-19 is prime.
-  add $3,3
+  add $3,2
+  seq $3,40 ; The prime numbers.
+  div $3,2
+  add $3,13
   mov $6,1
   add $6,$3
   mov $3,$6
@@ -21,18 +22,14 @@ lpb $2
   mov $5,$3
   add $3,1
   mov $7,$3
-  mov $10,$3
   seq $3,75423 ; rad(n) - 1, where rad(n) is the squarefree kernel of n (A007947).
-  mov $11,$3
-  add $11,1
-  add $3,1
-  mul $3,$11
   mov $9,$3
-  gcd $9,$10
-  mov $8,$9
+  add $9,1
+  add $3,1
+  mul $3,$9
+  mov $8,$3
   mod $8,$7
   equ $8,0
-  mov $3,$9
   mov $3,$8
   equ $3,0
   sub $0,$3

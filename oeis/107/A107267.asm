@@ -1,11 +1,18 @@
 ; A107267: A square array of Motzkin related transforms, read by antidiagonals.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1,0,1,0,1,1,0,2,2,1,0,4,6,3,1,0,9,20,12,4,1,0,21,72,54,20,5,1,0,51,272,261,112,30,6,1,0,127,1064,1323,672,200,42,7,1,0,323,4272,6939,4224,1425,324,56,8,1,0,835,17504,37341,27456,10625,2664,490,72,9,1,0,2188,72896,205011,183040,81875,22896,4557,704,90,10,1,0,5798
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 sub $1,$0
 mov $4,$1
 mov $2,$1
@@ -18,7 +25,11 @@ lpb $2
   add $3,$2
   mul $1,2
   bin $3,$1
-  seq $1,126120 ; Catalan numbers (A000108) interpolated with 0's.
+  mov $6,$1
+  dif $6,2
+  bin $1,$6
+  add $6,1
+  div $1,$6
   mul $3,$1
   mul $5,$0
   add $5,$3

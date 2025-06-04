@@ -18,7 +18,18 @@ lpb $2
   sub $5,$1
   add $5,1
   mul $6,$5
-  seq $6,7318 ; Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 <= k <= n.
+  add $6,1
+  mov $7,$6
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
+  sub $7,$8
+  sub $7,1
+  bin $6,$7
   seq $6,40 ; The prime numbers.
   mov $3,$6
   mul $3,$1

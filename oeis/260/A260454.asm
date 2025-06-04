@@ -6,10 +6,8 @@
 
 sub $0,1
 lpb $0
-  mov $2,$0
   add $0,1
-  bxo $0,$2
-  log $0,2
+  lex $0,2
   sub $0,2
 lpe
 add $0,36

@@ -1,13 +1,12 @@
 ; A168368: Number of stable connected piles of n bricks.
-; Submitted by mmonnin
+; Submitted by shiva
 ; 0,1,1,2,4,7,12,21
-; Formula: a(n) = truncate(truncate((48*2^(n+1)-48)/(n+1))/70)
+; Formula: a(n) = floor(floor(binomial(n+3,floor((n+3)/2))/(floor((n+3)/2)+1))/2)
 
-add $0,1
-mov $1,2
-pow $1,$0
-sub $1,1
-mul $1,48
-div $1,$0
-div $1,70
-mov $0,$1
+add $0,3
+mov $1,$0
+div $1,2
+bin $0,$1
+add $1,1
+div $0,$1
+div $0,2

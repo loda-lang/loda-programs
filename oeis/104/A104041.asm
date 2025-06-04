@@ -1,11 +1,18 @@
 ; A104041: Triangular matrix T, read by rows, such that column k is equal (in absolute value) to row (k-1) in the matrix inverse T^-1 (with extrapolated zeros) for k>0, with T(n,n)=1 (n>=0) and T(n,n-1)=-n (n>=1).
-; Submitted by ChelseaOilman
+; Submitted by loader3229
 ; 1,-1,1,0,-2,1,0,2,-3,1,0,0,4,-4,1,0,0,-4,8,-5,1,0,0,0,-8,12,-6,1,0,0,0,8,-20,18,-7,1,0,0,0,0,16,-32,24,-8,1,0,0,0,0,-16,48,-56,32,-9,1,0,0,0,0,0,-32,80,-80,40,-10,1,0,0,0,0,0,32,-112,160,-120,50,-11,1,0,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2

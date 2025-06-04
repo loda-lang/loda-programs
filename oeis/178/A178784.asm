@@ -1,24 +1,21 @@
 ; A178784: Let d be the vector of divisors of 100 sorted from largest to smallest, i.e., [100,50,25,20,10,5,4,2,1]. Then a(n) = 100/d(n) - 1.
 ; Submitted by loader3229
 ; 0,1,3,4,9,19,24,49,99
-; Formula: a(n) = max(2*min(n-1,(n-1)%3),1)*d(n-1)-1, b(n) = 6*b(n-3)-5*b(n-6)+b(n-9), b(15) = 1146, b(14) = 227, b(13) = 227, b(12) = 227, b(11) = 45, b(10) = 45, b(9) = 45, b(8) = 9, b(7) = 9, b(6) = 9, b(5) = 2, b(4) = 2, b(3) = 2, b(2) = 1, b(1) = 1, b(0) = 1, c(n) = 6*c(n-3)-5*c(n-6)+c(n-9), c(14) = 283, c(13) = 283, c(12) = 283, c(11) = 56, c(10) = 56, c(9) = 56, c(8) = 11, c(7) = 11, c(6) = 11, c(5) = 2, c(4) = 2, c(3) = 2, c(2) = 0, c(1) = 0, c(0) = 0, d(n) = 3*c(n-3)+3*d(n-3)+2*b(n-3), d(8) = 25, d(7) = 25, d(6) = 25, d(5) = 5, d(4) = 5, d(3) = 5, d(2) = 1, d(1) = 1, d(0) = 1
+; Formula: a(n) = truncate(((-4*floor(n/4)+floor(n/3)+n)*5^(floor(n/4)+1))/5)-1
 
 #offset 1
 
-mov $1,1
-mov $3,1
-sub $0,1
-lpb $0
-  sub $0,3
-  add $1,$2
-  add $1,$3
-  add $2,$1
-  add $3,$1
-  add $3,$2
-lpe
-mov $4,$0
-mul $4,2
-max $4,1
-mul $3,$4
-mov $0,$3
+mov $1,$0
+div $1,4
+mov $2,$1
+mul $2,4
+mov $3,$0
+div $3,3
+sub $0,$2
+add $0,$3
+add $1,1
+mov $2,5
+pow $2,$1
+mul $0,$2
+div $0,5
 sub $0,1

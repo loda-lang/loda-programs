@@ -1,5 +1,5 @@
 ; A260453: Infinite palindromic word (a(1),a(2),a(3),...) with initial word w(1) = (3,1,2) and midword sequence (a(n)); see Comments.
-; Submitted by Vertys001
+; Submitted by Ralfy
 ; 3,1,2,3,2,1,3,1,3,1,2,3,2,1,3,2,3,1,2,3,2,1,3,1,3,1,2,3,2,1,3,3,3,1,2,3,2,1,3,1,3,1,2,3,2,1,3,2,3,1,2,3,2,1,3,1,3,1,2,3,2,1,3,2,3,1,2,3,2,1,3,1,3,1,2,3,2,1,3,2
 
 #offset 1
@@ -10,7 +10,7 @@ lpb $0
   lex $0,2
   sub $0,2
 lpe
-add $0,36
+add $0,8
 mov $1,-2
 bin $1,$0
 add $0,1
@@ -18,8 +18,4 @@ mul $0,$1
 div $0,8
 add $0,1
 mod $0,2
-mul $0,9
-add $0,12
-mod $0,10
-mod $0,3
-add $0,1
+add $0,2

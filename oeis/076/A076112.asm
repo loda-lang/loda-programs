@@ -1,21 +1,20 @@
 ; A076112: Triangle (read by rows) in which the n-th row contains first n terms of n geometric progression with first term 1 and common ratio (n-1).
 ; Submitted by loader3229
 ; 1,1,2,1,3,9,1,4,16,64,1,5,25,125,625,1,6,36,216,1296,7776,1,7,49,343,2401,16807,117649,1,8,64,512,4096,32768,262144,2097152,1,9,81,729,6561,59049,531441,4782969,43046721,1,10,100,1000,10000,100000,1000000,10000000,100000000,1000000000,1,11,121,1331,14641,161051,1771561,19487171,214358881,2357947691,25937424601,1,12,144,1728,20736,248832,2985984,35831808,429981696,5159780352,61917364224,743008370688,1,13
-; Formula: a(n) = truncate((truncate((sqrtint(8*n)-1)/2)+1)^(-binomial(truncate((sqrtint(8*n)-1)/2)+1,2)+n-1))
+; Formula: a(n) = truncate(truncate((sqrtint(8*n-7)+1)/2)^(-binomial(truncate((sqrtint(8*n-7)+1)/2),2)+n-1))
 
 #offset 1
 
-mov $1,$0
-mul $1,8
-nrt $1,2
-sub $1,1
-div $1,2
-mov $3,$1
-add $3,1
-bin $3,2
-sub $0,$3
 sub $0,1
-add $1,1
-mov $2,$1
-pow $2,$0
+mov $3,$0
+mul $3,8
+add $3,1
+nrt $3,2
+add $3,1
+div $3,2
+mov $2,$3
+bin $3,2
+mov $1,$0
+sub $1,$3
+pow $2,$1
 mov $0,$2

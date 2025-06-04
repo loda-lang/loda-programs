@@ -1,15 +1,20 @@
 ; A101030: Triangle read by rows: T(n,k) = number of functions from an n-element set into but not onto a k-element set.
-; Submitted by Sagittarius Lupus
+; Submitted by loader3229
 ; 0,0,2,0,2,21,0,2,45,232,0,2,93,784,3005,0,2,189,2536,13825,45936,0,2,381,7984,61325,264816,818503,0,2,765,24712,264625,1488096,5623681,16736896,0,2,1533,75664,1119005,8172576,38025127,132766208,387057609,0
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
 mov $3,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 mov $2,$0
 mov $0,$1
 mov $1,$2

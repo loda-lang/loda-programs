@@ -6,13 +6,11 @@
 
 sub $0,1
 lpb $0
-  mov $2,$0
   add $0,1
-  bxo $0,$2
-  log $0,2
+  lex $0,2
   sub $0,2
 lpe
-add $0,36
+add $0,40
 mov $1,-2
 bin $1,$0
 add $0,1
@@ -20,7 +18,6 @@ mul $0,$1
 div $0,8
 add $0,1
 mod $0,2
-add $0,13
+mul $0,9
+add $0,12
 mod $0,10
-mod $0,3
-add $0,1
