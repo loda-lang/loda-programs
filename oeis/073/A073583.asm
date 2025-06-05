@@ -1,18 +1,16 @@
 ; A073583: Decimal expansion of 23/19.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,1,0,5,2,6,3,1,5,7,8,9,4,7,3,6,8,4,2,1,0,5,2,6,3,1,5,7,8,9,4,7,3,6,8,4,2,1,0,5,2,6,3,1,5,7,8,9,4,7,3,6,8,4,2,1,0,5,2,6,3,1,5,7,8,9,4,7,3,6,8,4,2,1,0,5,2,6,3
-; Formula: a(n) = -10*truncate(c(n-1)/10)+c(n-1), b(n) = 10*b(n-1), b(1) = 20, b(0) = 2, c(n) = b(n-1)+truncate(c(n-1)/2), c(1) = 2, c(0) = 1
+; Formula: a(n) = (0^(n-1)+floor((4*10^(n-1))/19))%10
 
 #offset 1
 
-mov $1,2
-mov $2,1
 sub $0,1
-lpb $0
-  sub $0,1
-  div $2,2
-  add $2,$1
-  mul $1,10
-lpe
-mov $0,$2
+pow $2,$0
+mov $1,10
+pow $1,$0
+mul $1,4
+div $1,19
+add $1,$2
+mov $0,$1
 mod $0,10

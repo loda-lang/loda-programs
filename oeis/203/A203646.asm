@@ -10,7 +10,7 @@ add $0,$19
 mov $3,$0
 mov $0,16
 lpb $3
-  add $2,1
+  mov $2,$0
   mov $4,$2
   lpb $4
     mov $5,$4
@@ -28,9 +28,11 @@ lpe
 mov $2,0
 mov $3,$0
 lpb $3
+  mov $20,$13
   add $2,20
   add $1,$$2
   sub $2,19
   sub $3,1
 lpe
 mov $0,$1
+add $0,1

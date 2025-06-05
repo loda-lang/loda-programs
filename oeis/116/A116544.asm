@@ -10,8 +10,16 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,31347 ; Multiplicative digital root of n (keep multiplying digits of n until reaching a single digit).
-  trn $3,1
-  seq $3,131768 ; 2*(A007318 * A097807) - A000012.
+  mov $6,$3
+  mul $3,8
+  nrt $3,2
+  div $3,2
+  mov $7,$3
+  bin $7,2
+  sub $6,$7
+  bin $3,$6
+  mul $3,2
+  sub $3,1
   equ $3,1
   sub $0,$3
   add $1,$5

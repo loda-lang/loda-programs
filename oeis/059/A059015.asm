@@ -4,17 +4,16 @@
 
 mov $2,$0
 mov $4,$0
-add $4,1
 lpb $4
   sub $4,1
   mov $0,$2
   sub $0,$4
   mov $1,$0
   dgs $1,2
-  max $0,1
   log $0,2
   add $0,1
   sub $0,$1
   add $3,$0
 lpe
 mov $0,$3
+add $0,1

@@ -1,21 +1,16 @@
 ; A133264: Smallest number whose sum of digits is 3n+1.
-; Submitted by loader3229
+; Submitted by Torbj&#246;rn Eriksson
 ; 1,4,7,19,49,79,199,499,799,1999,4999,7999,19999,49999,79999,199999,499999,799999,1999999,4999999,7999999,19999999,49999999,79999999,199999999,499999999,799999999,1999999999,4999999999,7999999999
-; Formula: a(n) = truncate((10^(floor(n/3)+1)+(3*n-9*floor(n/3)+1)*10^(floor(n/3)+1))/10)-1
+; Formula: a(n) = (3*n-9*floor(n/3)+2)*10^floor(n/3)-1
 
 mov $1,$0
 div $1,3
 mov $2,$1
 mul $2,9
 mul $0,3
-add $0,1
+add $0,2
 sub $0,$2
-add $1,1
 mov $2,10
 pow $2,$1
 mul $0,$2
-mov $3,$0
-add $3,$2
-mov $0,$3
-div $0,10
 sub $0,1

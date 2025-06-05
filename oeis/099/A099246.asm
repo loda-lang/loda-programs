@@ -1,4 +1,4 @@
-; A099246: Denominator of relative frequency of number of ones in binary representation of n.
+; A099246: Denominator of relative frequency of number of ones in the binary representation of n.
 ; Submitted by Joe
 ; 1,1,2,1,3,3,3,1,4,2,2,4,2,4,4,1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,6,3,3,2,3,2,2,3,3,2,2,3,2,3,3,6,3,2,2,3,2,3,3,6,2,3,3,6,3,6,6,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
 

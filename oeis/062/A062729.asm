@@ -5,6 +5,7 @@
 #offset 1
 
 mov $1,$0
+sub $1,1
 seq $1,74040 ; Product of first n twin prime pair products.
 lpb $0
   add $3,14

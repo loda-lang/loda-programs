@@ -8,12 +8,13 @@ lpb $3
   div $3,2
   mov $0,$4
   add $0,$3
-  seq $0,1316 ; Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).
+  dgs $0,2
+  mov $6,2
+  pow $6,$0
   mov $2,$3
-  mul $2,$0
+  mul $2,$6
   add $1,$2
-  mul $4,$3
-  mov $5,$0
+  mov $5,$6
 lpe
 sub $1,$5
 mov $0,$1

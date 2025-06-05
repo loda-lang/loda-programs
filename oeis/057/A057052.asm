@@ -1,22 +1,17 @@
 ; A057052: Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057052(n) = i(n^3).
-; Submitted by loader3229
+; Submitted by Science United
 ; 1,2,6,9,5,6,18,16,26,10,5,17,52,43,54,1,62,54,73,125,81,63,77,129,49,185,180,7,79,204,145,128,159,244,97,296,250,257,323,97,286,168,106,106,174,316,83,377,279,250,296,423,92,384,199,88,57,112,259,504,180,623,476,418,455,593,63,404,54,622,476,432,496,674,54,460,43,701,511,434
-; Formula: a(n) = ((n^3-binomial(truncate((sqrtint(8*n^3+8)-1)/2)+1,2))==0)+n^3-binomial(truncate((sqrtint(8*n^3+8)-1)/2)+1,2)
+; Formula: a(n) = n^3-binomial(truncate((sqrtint(8*n^3)-1)/2)+1,2)
 
 #offset 1
 
 pow $0,3
-add $0,1
 mov $1,$0
 mul $1,8
 nrt $1,2
 sub $1,1
 div $1,2
-mov $3,$1
-add $3,1
-bin $3,2
-sub $0,$3
-sub $0,1
-mov $2,$0
-equ $2,0
-add $0,$2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2

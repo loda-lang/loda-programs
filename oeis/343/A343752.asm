@@ -1,17 +1,21 @@
 ; A343752: a(1) = 1; for n > 1, a(n) = n if a(n-1) is divisible by n, otherwise a(n) = a(n-1)+n.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,3,3,7,12,6,13,21,30,10,21,33,46,60,15,31,48,66,85,105,21,43,66,90,115,141,168,28,57,87,118,150,183,217,252,36,73,111,150,190,231,273,316,360,45,91,138,186,235,285,336,388,441,495,55,111,168,226,285,345,406,468,531,595,660,66,133,201,270,340,411,483,556,630,705,781,858,78,157,237
+; Formula: a(n) = truncate(((binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n)*(-binomial(truncate((sqrtint(8*n+1)+1)/2),2)+n+1))/2)
 
 #offset 1
 
 mov $2,$0
-lpb $2
-  sub $1,1
-  add $2,$1
-lpe
-bin $1,2
-add $1,$0
+mul $2,8
 add $2,1
+nrt $2,2
+add $2,1
+div $2,2
+bin $2,2
+mov $1,$0
+sub $1,$2
+add $1,1
+add $2,$0
 mul $2,$1
 mov $0,$2
 div $0,2

@@ -16,7 +16,6 @@ lpb $2
   div $6,2
   mov $3,$6
   mul $3,2
-  add $3,1
   seq $3,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   sub $3,1
   mov $5,$3

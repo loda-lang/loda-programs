@@ -1,20 +1,18 @@
 ; A278597: One half of A278481.
-; Submitted by GPV67
+; Submitted by loader3229
 ; 1,2,2,2,3,2,2,3,3,2,2,3,3,3,2,2,3,3,3,3,2,2,3,3,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,2,2,3
-; Formula: a(n) = truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+2,2)+n)/truncate((sqrtint(8*n+8)-1)/2))+3
+; Formula: a(n) = truncate((2*n)/(binomial(truncate((sqrtint(8*n+1)+1)/2),2)+2))+1
 
 #offset 1
 
-add $0,1
 mov $1,$0
 mul $1,8
+add $1,1
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
-mov $2,$1
-add $2,2
-bin $2,2
-sub $0,1
-sub $0,$2
+bin $1,2
+add $1,2
+mul $0,2
 div $0,$1
-add $0,3
+add $0,1

@@ -10,7 +10,6 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
   seq $3,107144 ; Primes of the form 5x^2 + 8y^2.
   mov $5,$3
   seq $3,35195 ; Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 13.
