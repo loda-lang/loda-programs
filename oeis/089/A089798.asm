@@ -2,26 +2,15 @@
 ; Submitted by Science United
 ; 1,0,-2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,-2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
 
-mov $2,-1
-pow $2,$0
-add $2,1
-mov $3,$0
-dif $3,2
-mov $5,0
+mov $3,-1
+pow $3,$0
+add $3,1
+mov $2,$0
+dif $2,2
 mov $1,-1
-pow $1,$3
-mov $4,0
-equ $4,$3
-mov $6,1
-lpb $3
-  sub $6,2
-  add $3,$6
-lpe
-bin $5,$3
-mov $3,$5
-mul $3,2
-sub $3,$4
-mul $3,$1
-mul $3,$2
-div $3,2
-mov $0,$3
+pow $1,$2
+seq $2,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
+mul $2,$1
+mul $2,$3
+div $2,2
+mov $0,$2

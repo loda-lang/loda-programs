@@ -10,5 +10,4 @@ seq $1,181819 ; Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(
 add $2,$1
 seq $2,2110 ; Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
 gcd $1,$2
-sub $0,1
 mov $0,$1

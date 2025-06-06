@@ -1,27 +1,23 @@
 ; A144299: Triangle of Bessel numbers read by rows. Row n gives T(n,n), T(n,n-1), T(n,n-2), ..., T(n,0) for n >= 0.
-; Submitted by loader3229
+; Submitted by lee
 ; 1,1,0,1,1,0,1,3,0,0,1,6,3,0,0,1,10,15,0,0,0,1,15,45,15,0,0,0,1,21,105,105,0,0,0,0,1,28,210,420,105,0,0,0,0,1,36,378,1260,945,0,0,0,0,0,1,45,630,3150,4725,945,0,0,0,0,0,1,55,990,6930,17325,10395,0,0,0,0,0,0,1,66
 
 add $0,1
-mov $2,$0
-mul $2,8
-nrt $2,2
-sub $2,1
-div $2,2
-mov $1,$2
-add $1,1
-bin $1,2
-sub $0,$1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $2,$1
+add $2,1
+bin $2,2
+sub $0,$2
 sub $0,1
-mov $1,$2
+mul $0,2
 bin $1,$0
-sub $2,$0
 lpb $0
-  mul $1,$0
-  mul $1,$2
-  sub $2,1
-  add $3,2
   sub $0,1
-  div $1,$3
+  mul $1,$0
+  sub $0,1
 lpe
 mov $0,$1

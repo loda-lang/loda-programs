@@ -7,7 +7,15 @@
 sub $0,1
 mov $1,$0
 lpb $0
-  seq $0,35327 ; Write n in binary, interchange 0's and 1's, convert back to decimal.
+  mov $3,$0
+  max $3,1
+  log $3,2
+  add $3,1
+  mov $4,$0
+  mov $0,2
+  pow $0,$3
+  sub $0,$4
+  sub $0,1
   add $2,$0
   sub $0,1
 lpe

@@ -1,5 +1,5 @@
 ; A014289: Inverse of 280th cyclotomic polynomial.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by omegaintellisys
 ; 1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,-1,0,0,0,1,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 mov $3,3
@@ -13,8 +13,7 @@ lpb $0
   mov $5,$2
   seq $5,50519 ; Increments of arithmetic progression of at least 6 terms having the same value of phi in A050518.
   mov $2,$5
-  div $2,30
-  sub $2,1
+  div $2,29
   mov $6,-1
   pow $6,$2
   add $6,1

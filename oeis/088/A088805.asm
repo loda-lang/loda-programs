@@ -1,24 +1,17 @@
 ; A088805: 10^p + p for prime p.
-; Submitted by Skillz
+; Submitted by DukeBox
 ; 102,1003,100005,10000007,100000000011,10000000000013,100000000000000017,10000000000000000019,100000000000000000000023,100000000000000000000000000029,10000000000000000000000000000031
+; Formula: a(n) = (A000040(n-1)==0)+truncate(10^((A000040(n-1)==0)+A000040(n-1)))+A000040(n-1)
 
 #offset 2
 
 sub $0,1
-mov $2,$0
-pow $2,5
-lpb $2
-  mov $3,$4
-  add $3,1
-  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  add $4,2
-  sub $0,$3
-  sub $2,$0
-lpe
-mov $0,$4
+seq $0,40 ; The prime numbers.
+mov $1,$0
+sub $1,1
+equ $0,0
+add $0,$1
 add $0,1
-max $0,2
 mov $1,10
 pow $1,$0
-add $1,$0
-mov $0,$1
+add $0,$1

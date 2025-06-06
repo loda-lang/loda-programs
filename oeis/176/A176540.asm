@@ -4,26 +4,28 @@
 
 #offset 1
 
-mov $1,$0
-sub $1,2
-mov $2,1
-mov $3,$0
-pow $3,7
-lpb $3
-  max $4,$6
+sub $0,1
+mov $4,1
+mov $5,$0
+sub $5,1
+add $0,1
+mov $6,$0
+pow $6,6
+lpb $6
+  max $3,$1
+  add $3,1
+  seq $3,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
+  seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $4,1
-  seq $4,32742 ; a(1) = 1; for n > 1, a(n) = largest proper divisor of n (that is, for n>1, maximum divisor d of n in range 1 <= d < n).
-  seq $4,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-  sub $1,$4
-  add $2,1
-  mov $5,$1
-  max $5,0
-  equ $5,$1
-  sub $6,2
-  div $6,4
-  add $6,$2
-  mul $3,$5
-  sub $3,13
+  sub $5,$3
+  mov $2,$5
+  max $2,0
+  equ $2,$5
+  sub $1,2
+  div $1,4
+  add $1,$4
+  mul $6,$2
+  sub $6,11
 lpe
-mov $0,$6
+mov $0,$1
 add $0,1

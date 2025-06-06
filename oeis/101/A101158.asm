@@ -1,5 +1,5 @@
 ; A101158: Let j be the smallest integer for which n+(n+1)+...+(n+j) is a square; sequence gives the squares.
-; Submitted by mikey
+; Submitted by Coleslaw
 ; 1,9,25,4,81,121,169,225,9,361,36,25,625,729,841,16,1089,100,1369,1521,196,1849,2025,49,25,81,2809,3025,3249,3481,3721,324,4225,4489,225,36,324,5625,484,81,6561,6889,225,7569,441,676,144,9025,49,9801,10201,1089,900,11449,11881,12321,484,625,13689,121,14641,1764,15625,64,16641,17161,1444,18225,2025,19321,441,20449,21025,225,22201,1521,729,400,24649,25281
 
 #offset 1
@@ -13,7 +13,9 @@ lpb $3
   sub $3,1
   add $0,1
   mov $1,$2
-  seq $1,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
+  nrt $1,2
+  pow $1,2
+  equ $1,$2
   add $2,$0
   add $3,$1
 lpe

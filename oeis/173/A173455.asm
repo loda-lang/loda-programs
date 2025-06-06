@@ -1,13 +1,17 @@
 ; A173455: Row sums of triangle A027751.
+; Submitted by modesti
 ; 1,1,1,3,1,6,1,7,4,8,1,16,1,10,9,15,1,21,1,22,11,14,1,36,6,16,13,28,1,42,1,31,15,20,13,55,1,22,17,50,1,54,1,40,33,26,1,76,8,43,21,46,1,66,17,64,23,32,1,108,1,34,41,63,19,78,1,58,27,74,1,123,1,40,49,64,19,90,1,106
-; Formula: a(n) = max(-n+A000203(n)-1,0)+1
 
 #offset 1
 
-sub $0,1
+mov $3,$0
+sub $3,1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
 mov $1,$0
-add $0,1
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-sub $0,$1
-trn $0,2
-add $0,1
+bxo $1,$3
+mul $1,$2
+sub $1,$0
+mov $0,$1
+max $0,1

@@ -5,14 +5,14 @@
 #offset 1
 
 mov $1,$0
-sub $1,1
 seq $1,74040 ; Product of first n twin prime pair products.
 lpb $0
-  add $3,14
+  add $3,12
   lpb $3
     add $2,1
     mov $4,$1
     gcd $4,$2
+    max $1,$4
     neq $4,1
     sub $3,$4
   lpe

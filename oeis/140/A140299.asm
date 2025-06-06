@@ -1,12 +1,10 @@
 ; A140299: a(n) = A100626(n+1)/A100626(n).
-; Submitted by KetamiNO [YouTube]
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 4,16,16,256,16,256,16,256,4096,16,4096,256,16,256,4096,4096,16,4096,256,16,4096,256,4096,65536,256,16,256,16,256,268435456,256,4096,16,1048576,16,4096,4096,256,4096,4096,16,1048576,16,256,16,16777216
-; Formula: a(n) = (2*truncate(2^(A013632(A000040(min(n+1,97)))-1)))^2
+; Formula: a(n) = (2*truncate(2^(A013632(A000040(n%88+1))-1)))^2
 
 add $0,1
-mov $1,$0
-min $1,97
-mov $2,$1
+mov $2,$0
 seq $2,40 ; The prime numbers.
 seq $2,13632 ; Difference between n and the next prime greater than n.
 mov $1,$2

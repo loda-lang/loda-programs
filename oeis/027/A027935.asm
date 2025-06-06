@@ -1,22 +1,27 @@
 ; A027935: Triangular array T read by rows: T(n,k)=t(n,2k), t given by A027926; 0 <= k <= n, n >= 0.
-; Submitted by Stony666
+; Submitted by Science United
 ; 1,1,1,1,2,1,1,2,4,1,1,2,5,7,1,1,2,5,12,11,1,1,2,5,13,26,16,1,1,2,5,13,33,51,22,1,1,2,5,13,34,79,92,29,1,1,2,5,13,34,88,176,155,37,1,1,2,5,13,34,89,221,365,247,46,1,1,2,5,13,34,89,232,530,709,376,56,1,1,2
 
-lpb $0
-  add $2,1
-  add $3,1
-  sub $0,$2
-lpe
-sub $2,$0
-mul $2,2
-mov $4,$3
-mov $0,$2
-lpb $0
-  bin $3,$0
-  sub $4,1
-  sub $0,2
-  add $1,$3
-  mov $3,$4
-lpe
-mov $0,$1
 add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $4,$1
+add $4,1
+bin $4,2
+sub $0,$4
+sub $0,1
+mov $6,$0
+sub $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $5,$6
+  bin $5,$3
+  add $2,$5
+  add $3,2
+  add $6,1
+lpe
+mov $0,$2

@@ -1,13 +1,20 @@
 ; A118801: Triangle T that satisfies the matrix products: C*[T^-1]*C = T and T*[C^-1]*T = C, where C is Pascal's triangle.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1,1,-1,1,-3,1,1,-7,5,-1,1,-15,17,-7,1,1,-31,49,-31,9,-1,1,-63,129,-111,49,-11,1,1,-127,321,-351,209,-71,13,-1,1,-255,769,-1023,769,-351,97,-15,1,1,-511,1793,-2815,2561,-1471,545,-127,17,-1,1,-1023,4097,-7423,7937,-5503,2561,-799,161,-19,1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 sub $1,$0
-add $3,$0
+mov $3,$0
 mov $0,$1
 add $1,1
 lpb $1

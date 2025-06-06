@@ -1,5 +1,5 @@
 ; A101157: Let j be the smallest integer for which n+(n+1)+...+(n+j) is a square, say k^2; then a(n)=k.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Coleslaw
 ; 1,3,5,2,9,11,13,15,3,19,6,5,25,27,29,4,33,10,37,39,14,43,45,7,5,9,53,55,57,59,61,18,65,67,15,6,18,75,22,9,81,83,15,87,21,26,12,95,7,99,101,33,30,107,109,111,22,25,117,11,121,42,125,8,129,131,38,135,45,139,21,143,145,15,149,39,27,20,157,159
 
 #offset 1
@@ -13,12 +13,13 @@ lpb $3
   sub $3,1
   add $0,1
   mov $1,$2
-  seq $1,122 ; Expansion of Jacobi theta function theta_3(x) = Sum_{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).
+  nrt $1,2
+  pow $1,2
+  equ $1,$2
   add $2,$0
   add $3,$1
 lpe
 mov $0,$2
 mul $0,4
 nrt $0,2
-add $0,1
 div $0,2

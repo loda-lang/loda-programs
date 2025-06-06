@@ -40,12 +40,9 @@ lpb $2
   seq $10,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   sub $10,1
   sub $3,1
-  mov $12,2
-  sub $12,$3
-  mov $11,$12
-  equ $11,0
-  add $12,$11
-  div $3,$12
+  mov $11,2
+  sub $11,$3
+  div $3,$11
   mul $3,$10
   sub $0,$3
   add $1,1

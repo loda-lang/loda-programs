@@ -1,12 +1,9 @@
 ; A026492: a(n) = t(3n), where t = A001285 (Thue-Morse sequence).
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,2,2,2,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1
+; Formula: a(n) = sumdigits(3*n,2)%2+1
 
-mul $0,6
-lpb $0
-  div $0,2
-  add $1,$0
-lpe
-mov $0,$1
+mul $0,3
+dgs $0,2
 mod $0,2
 add $0,1

@@ -1,14 +1,20 @@
 ; A120434: Triangle read by rows: counts permutations by number of big descents.
-; Submitted by NeoGen
+; Submitted by loader3229
 ; 2,4,2,8,14,2,16,66,36,2,32,262,342,82,2,64,946,2416,1436,176,2,128,3222,14394,16844,5364,366,2,256,10562,76908,156190,99560,18654,748,2,512,33734,381566,1242398,1378310,528818,61946,1514,2
 
 #offset 2
 
-sub $0,2
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+sub $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $8,$1
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 mov $2,$0
 mov $0,$1
 add $0,1

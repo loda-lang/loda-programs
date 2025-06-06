@@ -1,16 +1,16 @@
 ; A359216: X-coordinates of a point moving in a counterclockwise undulating spiral in a square grid.
-; Submitted by Conan
+; Submitted by loader3229
 ; 0,1,1,0,0,-1,-1,-2,-2,-1,-1,0,0,1,1,2,2,3,3,2,2,1,1,0,0,-1,-1,-2,-2,-3,-3,-4,-4,-3,-3,-2,-2,-1,-1,0,0,1,1,2,2,3,3,4,4,5,5,4,4,3,3,2,2,1,1,0,0,-1,-1,-2,-2,-3,-3,-4,-4,-5,-5,-6,-6,-5,-5,-4,-4,-3,-3,-2
-; Formula: a(n) = c(n+1), b(n) = 2*d(n-2)-2*truncate((2*d(n-2)+b(n-2))/2)+b(n-2), b(5) = 1, b(4) = 1, b(3) = -1, b(2) = -1, b(1) = -1, b(0) = -1, c(n) = 2*truncate((2*d(n-2)+b(n-2))/2)-b(n-2)-2*d(n-2)+c(n-2), c(5) = 0, c(4) = 0, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = 2*truncate((2*d(n-2)+b(n-2))/2)-b(n-2)-d(n-4), d(7) = 0, d(6) = 0, d(5) = 1, d(4) = 1, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0
+; Formula: a(n) = truncate((-1)^sqrtint(floor((n+1)/2)))*(-sqrtint(floor((n+1)/2))*(sqrtint(floor((n+1)/2))+1)+floor((n+1)/2))
 
-mov $1,-1
 add $0,1
-lpb $0
-  sub $0,2
-  add $1,$3
-  add $1,$3
-  mod $1,2
-  sub $2,$1
-  add $3,$2
-lpe
-mov $0,$2
+div $0,2
+mov $1,$0
+nrt $1,2
+mov $2,$1
+mov $3,-1
+pow $3,$1
+add $1,1
+mul $2,$1
+sub $0,$2
+mul $0,$3

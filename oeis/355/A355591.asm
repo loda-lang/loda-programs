@@ -7,8 +7,7 @@ add $0,1
 seq $0,40 ; The prime numbers.
 sub $0,1
 lpb $0
-  trn $0,1
-  add $0,3
+  add $0,2
   seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
   mul $1,$0
   sub $2,$0

@@ -1,5 +1,5 @@
 ; A328770: Numbers in whose primorial base expansion any digit is at most half of the maximal allowed digit for that position.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 0,2,6,8,12,14,30,32,36,38,42,44,60,62,66,68,72,74,90,92,96,98,102,104,210,212,216,218,222,224,240,242,246,248,252,254,270,272,276,278,282,284,300,302,306,308,312,314,420,422,426,428,432,434,450,452,456,458,462,464,480,482,486,488,492,494,510,512,516,518,522,524,630,632,636,638,642,644,660,662
 
 #offset 1
@@ -15,7 +15,7 @@ lpb $2
   gcd $3,2
   sub $0,$3
   add $0,1
-  add $1,2
+  add $1,4
   mov $4,$0
   max $4,0
   equ $4,$0

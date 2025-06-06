@@ -1,17 +1,14 @@
 ; A336302: a(n) = n^2 mod ceiling(sqrt(n)).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,0,1,0,1,0,1,1,0,0,1,0,1,0,1,0,4,4,1,0,1,4,4,1,0,4,3,4,1,0,1,4,3,4,1,0,4,2,2,4,1,0,1,4,2,2,4,1,0,4,1,0,1,4,1,0,1,4,1,0,1,4,1,0,4,0,7,7,0,4,1,0,1,4,0,7,7,0,4,1
+; Formula: a(n) = (-sqrtint(n-1)+n-1)^2-truncate(((-sqrtint(n-1)+n-1)^2)/(sqrtint(n-1)+1))*(sqrtint(n-1)+1)
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  sub $0,$1
-  add $1,2
-lpe
-add $0,2
+mov $1,$0
+nrt $1,2
+sub $0,$1
 pow $0,2
-add $1,2
-div $1,2
+add $1,1
 mod $0,$1

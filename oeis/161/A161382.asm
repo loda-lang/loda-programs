@@ -1,6 +1,7 @@
 ; A161382: (0,1)-sequence where n-th run has length n^2.
 ; Submitted by Aurum
 ; 0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = ((n-1)>=truncate(binomial(-2*truncate(sqrtnint(24*n-24,3)/2),3)/(-4)))-2*truncate((((n-1)>=truncate(binomial(-2*truncate(sqrtnint(24*n-24,3)/2),3)/(-4)))+truncate(sqrtnint(24*n-24,3)/2)+1)/2)+truncate(sqrtnint(24*n-24,3)/2)+1
 
 #offset 1
 

@@ -4,7 +4,6 @@
 
 #offset 1
 
-mov $4,0
 mov $5,$0
 pow $5,5
 lpb $5
@@ -20,7 +19,6 @@ add $0,1
 max $0,2
 mov $1,$0
 nrt $1,2
-mov $2,0
 gcd $2,$0
 sub $2,$1
 mov $0,$2

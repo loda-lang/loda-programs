@@ -1,14 +1,21 @@
 ; A118384: Gaussian column reduction of Hankel matrix for central Delannoy numbers.
-; Submitted by LM
+; Submitted by loader3229
 ; 1,3,1,13,6,1,63,33,9,1,321,180,62,12,1,1683,985,390,100,15,1,8989,5418,2355,720,147,18,1,48639,29953,13923,4809,1197,203,21,1,265729,166344,81340,30744,8806,1848,268,24,1,1462563,927441,471852,191184,60858
 
+mov $1,3
 mov $3,6
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0
