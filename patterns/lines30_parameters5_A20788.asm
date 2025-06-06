@@ -28,3 +28,27 @@ lpe
 div $2,100
 mov $0,$2
 mod $0,10
+
+; parameter 0
+; number of unique values: 2
+; value: 1,5
+
+; parameter 1
+; number of unique values: 2
+; value: 1,2
+
+; parameter 2
+; number of unique values: 3
+; value: 6,7,8
+
+; parameter 3
+; number of unique values: 2
+; value: 1,2
+
+; parameter 4
+; number of unique values: 15
+; value: 31,33,34,41,62,78,82,83,84,85,86,93,94,95,99
+
+; programs with this pattern
+; number of programs: 15
+; program id: 20788,20790,20791,20798,20819,20835,20839,20840,20841,20842,20843,20850,20851,20852,20856

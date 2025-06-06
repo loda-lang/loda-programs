@@ -7,3 +7,15 @@ lpb $0
 lpe
 mul $0,$1
 add $0,$2
+
+; parameter 0
+; number of unique values: 14
+; value: 2,3,4,5,6,7,8,9,10,11,14,17,18,30
+
+; parameter 1
+; number of unique values: 7
+; value: 1,2,3,4,5,6,41
+
+; programs with this pattern
+; number of programs: 27
+; program id: 285,22095,22097,22098,22099,22100,22101,22102,22105,22108,22109,22113,22114,22115,22119,22122,22123,22124,22131,22136,22137,22139,22368,22378,22388,22401,157194

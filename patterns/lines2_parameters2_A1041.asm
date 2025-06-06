@@ -1,2 +1,14 @@
 seq $0,2110 ; source=parameter 0
 mul $0,12 ; source=parameter 1
+
+; parameter 0
+; number of unique values: 18
+; value: 41,1222,1232,2110,3586,3591,3592,6964,7522,22567,61345,78644,80671,160889,181578,188553,194403,319553
+
+; parameter 1
+; number of unique values: 11
+; value: 2,3,4,5,6,8,10,12,14,15,24
+
+; programs with this pattern
+; number of programs: 22
+; program id: 1041,33845,33846,33847,38059,49089,65119,86761,105094,160892,178389,181579,183008,192096,194402,255201,278568,285040,299473,299474,354591,361689

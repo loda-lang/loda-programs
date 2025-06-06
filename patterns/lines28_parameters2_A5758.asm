@@ -26,3 +26,15 @@ lpb $0
 lpe
 mov $0,$8
 max $0,1
+
+; parameter 0
+; number of unique values: 5
+; value: 203,78306,78308,186690,300786
+
+; parameter 1
+; number of unique values: 14
+; value: 2,3,4,5,6,7,8,9,10,12,21,22,23,48
+
+; programs with this pattern
+; number of programs: 16
+; program id: 5758,8453,22631,22633,22649,22733,23003,23005,23006,23007,23009,23020,23021,26011,27906,82558

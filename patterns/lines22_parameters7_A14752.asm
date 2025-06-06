@@ -1,0 +1,54 @@
+mov $2,$0
+sub $0,1
+add $2,1 ; source=parameter 0
+pow $2,2
+lpb $2
+  mov $3,$1
+  add $3,1 ; source=parameter 1
+  seq $3,16108 ; source=parameter 2
+  sub $3,1 ; source=parameter 3
+  mov $5,$3
+  add $3,1 ; source=parameter 4
+  seq $3,10051
+  sub $0,$3
+  add $1,1 ; source=parameter 5
+  mov $4,$0
+  max $4,0
+  equ $4,$0
+  mul $2,$4
+  trn $2,1
+lpe
+mov $0,$5
+add $0,1 ; source=parameter 6
+
+; parameter 0
+; number of unique values: 3
+; value: 1,2,3
+
+; parameter 1
+; number of unique values: 3
+; value: 1,2,4
+
+; parameter 2
+; number of unique values: 59
+; value: 1358,4756,7932,16108,18900,23721,28771,28775,34964,36435,39790,43739,45532,51244,69484,73169,75255,81765,82741,88198,90942,94677,106563,107289,110480,118951,124115,124825,127338,127423,133530,133534,133562,136272,136333,152834,166733,184792,185300,186300,192861,208259,213084,226502,229221,235331,244607,247193,256340,262713,276037,278580,284064,284963,297271,326833,359039,359610,361875
+
+; parameter 3
+; number of unique values: 3
+; value: 1,2,3
+
+; parameter 4
+; number of unique values: 2
+; value: 1,6
+
+; parameter 5
+; number of unique values: 2
+; value: 1,2
+
+; parameter 6
+; number of unique values: 2
+; value: 1,6
+
+; programs with this pattern
+; number of programs: 59
+; program id: 14752,20453,20456,20464,20470,34965,38902,52089,62332,62350,77652,84667,91633,92104,93155,95743,100723,105435,106090,106103,107579,118624,119488,124114,126142,127340,130006,133560,141784,153165,158293,164129,166566,168032,176138,180404,181173,191021,191067,192862,194991,214629,219602,225319,226802,227340,239712,247052,250445,257002,260271,262286,289866,307508,329106,330406,338175,361180,374912

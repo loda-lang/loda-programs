@@ -33,3 +33,19 @@ div $2,$3
 div $1,$2
 mod $1,$9
 mov $0,$1
+
+; parameter 0
+; number of unique values: 2
+; value: 9,10
+
+; parameter 1
+; number of unique values: 5
+; value: 3,5,6,7,10
+
+; parameter 2
+; number of unique values: 6
+; value: 4,5,6,7,8,9
+
+; programs with this pattern
+; number of programs: 16
+; program id: 4551,4552,4559,4563,4564,4565,4567,4571,4572,4573,4574,4575,4588,4590,4591,4592

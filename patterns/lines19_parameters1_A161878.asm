@@ -17,3 +17,11 @@ lpb $4
   trn $4,1
 lpe
 mov $0,$3
+
+; parameter 0
+; number of unique values: 14
+; value: 17,18,19,21,23,25,27,29,32,33,37,39,42,43
+
+; programs with this pattern
+; number of programs: 18
+; program id: 161878,161879,161880,161900,161933,161988,162166,162181,162364,162366,162368,162370,162377,162380,162381,162392,162402,162413
