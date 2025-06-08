@@ -1,9 +1,17 @@
 ; A062731: Sum of divisors of 2*n.
-; Submitted by Christian Krause
+; Submitted by mmonnin
 ; 3,7,12,15,18,28,24,31,39,42,36,60,42,56,72,63,54,91,60,90,96,84,72,124,93,98,120,120,90,168,96,127,144,126,144,195,114,140,168,186,126,224,132,180,234,168,144,252,171,217,216,210,162,280,216,248,240,210,180,360,186,224,312,255,252,336,204,270,288,336,216,403,222,266,372,300,288,392,240,378
-; Formula: a(n) = A000203(2*n)
 
 #offset 1
 
-mul $0,2
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $3,$0
+sub $3,1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,2
+mul $1,$2
+add $2,$1
+mov $0,$2

@@ -35,13 +35,18 @@ for f in $files; do
   if (( full_check > 0 )); then
     echo "Full check enabled."
   fi
-  read -p "Delete program? (Y)es, (n)o, (c)heck: " a
+  read -p "Delete program? (Y)es, (n)o, (c)heck, (f)ull check: " a
   if [ "$a" = "c" ] || [ "$a" = "C" ]; then
     git checkout -- $f
     mv $f /tmp/deleted_prog.asm
     loda check -b /tmp/deleted_prog.asm
     echo
     git diff -- $f
+    read -p "Delete program? (Y)es, (n)o: " a
+  elif [ "$a" = "f" ] || [ "$a" = "F" ]; then
+    killall loda
+    $HOME/git/loda-cpp/loda add-to-list $anumber full_check.txt
+    git add $HOME/loda/programs/oeis/full_check.txt
     read -p "Delete program? (Y)es, (n)o: " a
   fi
   if [ -z "$a" ] || [ "$a" = "y" ] || [ "$a" = "Y" ]; then

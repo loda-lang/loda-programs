@@ -1,8 +1,16 @@
 ; A132652: Sum of divisors of n, sigma(n) raised to power sigma(n).
+; Submitted by rajab
 ; 1,27,256,823543,46656,8916100448256,16777216,437893890380859375,302875106592253,39346408075296537575424,8916100448256,33145523113253374862572728253364605812736,11112006825558016,1333735776850284124449081472843776
-; Formula: a(n) = truncate(A000203(n)^A000203(n))
 
 #offset 1
 
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-pow $0,$0
+mov $3,$0
+sub $3,1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+pow $1,$1
+mov $0,$1

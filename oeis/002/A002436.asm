@@ -1,26 +1,61 @@
 ; A002436: E.g.f.: Sum_{n >= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
-; Submitted by [SG]KidDoesCrunch
+; Submitted by Ralfy
 ; 1,4,80,3904,354560,51733504,11070525440,3266330312704,1270842139934720,630424777638805504,388362339077351014400,290870261262635870715904,260290690801376575335956480,274278793184290987427604987904,336150887870579862992197737512960,474104145313267354501614098138005504,762439981239939030877553534925893795840,1386815720973441246796777590645908731592704,2832758416511474992456807967186624470707077120,6456766730266149985574675183597358370381317013504
+; Formula: a(n) = A008280((truncate((sqrtint(16*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2))/2),2)+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)-8*truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)+8)-1)/2)+8)-1)/2)+1)^2-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2))/2),2)-truncate(sqrtint(8*binomial(2*n,2)+8)/2)-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2)+8)-1)/2)-1)*2^(2*n)
 
 mul $0,2
-mov $4,$0
+mov $1,2
+pow $1,$0
+bin $0,2
 add $0,1
-lpb $0
-  sub $0,1
-  div $6,2
-  add $6,$2
-  mul $6,2
-  add $7,1
-  mov $2,$1
-  add $2,$7
-  pow $2,$4
-  sub $2,$6
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $1,1
-  mul $5,-1
-  add $5,$3
-lpe
-gcd $5,$0
-mov $0,$5
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+pow $4,2
+sub $4,$0
+mul $0,8
+nrt $0,2
+div $0,2
+mov $2,$4
+add $2,$0
+mov $3,$2
+add $3,2
+mov $5,$3
+mul $5,8
+nrt $5,2
+sub $5,1
+div $5,2
+mov $6,$5
+add $6,1
+bin $6,2
+mov $7,$5
+mod $7,2
+sub $3,1
+sub $3,$6
+sub $3,$7
+add $3,$2
+mov $0,$2
+add $0,1
+mov $8,$0
+mul $8,8
+nrt $8,2
+div $8,2
+bin $8,2
+sub $0,$8
+sub $3,$0
+mov $0,$3
+add $0,2
+mov $9,$0
+mul $9,8
+nrt $9,2
+sub $9,1
+div $9,2
+add $9,1
+pow $9,2
+sub $9,$0
+mov $0,$9
+seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+mul $0,$1

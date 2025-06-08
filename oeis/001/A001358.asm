@@ -6,9 +6,9 @@
 
 mov $5,$0
 sub $5,1
-add $0,1
+add $0,7
 mov $6,$0
-pow $6,18
+pow $6,20
 lpb $6
   max $3,$1
   add $3,1
@@ -23,7 +23,7 @@ lpb $6
   div $1,4
   add $1,$4
   mul $6,$2
-  sub $6,15
+  sub $6,19
 lpe
 mov $0,$1
 add $0,1

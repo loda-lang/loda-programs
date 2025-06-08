@@ -1,18 +1,28 @@
 ; A104763: Triangle read by rows: Fibonacci(1), Fibonacci(2), ..., Fibonacci(n) in row n.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1,1,1,1,1,2,1,1,2,3,1,1,2,3,5,1,1,2,3,5,8,1,1,2,3,5,8,13,1,1,2,3,5,8,13,21,1,1,2,3,5,8,13,21,34,1,1,2,3,5,8,13,21,34,55,1,1,2,3,5,8,13,21,34,55,89,1,1,2,3,5,8,13,21,34,55,89,144,1,1
+; Formula: a(n) = d(n-1)+1, b(n) = -(b(n-1)+1)*((b(n-1)+1)>=c(n-1))+b(n-1)+1, b(3) = 0, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = ((b(n-1)+1)>=c(n-1))+c(n-1), c(3) = 3, c(2) = 2, c(1) = 2, c(0) = 1, d(n) = e(n-1)*(-((b(n-1)+1)>=c(n-1))+1), d(3) = 0, d(2) = 0, d(1) = 0, d(0) = 0, e(n) = (-((b(n-1)+1)>=c(n-1))+1)*(e(n-2)*(-((b(n-2)+1)>=c(n-2))+1)+e(n-1)+1), e(3) = 0, e(2) = 1, e(1) = 0, e(0) = 0
 
 #offset 1
 
+mov $2,1
 sub $0,1
-seq $0,2262 ; Triangle read by rows: T(n,k) = k, 0 <= k <= n, in which row n lists the first n+1 nonnegative integers.
-gcd $2,$0
 lpb $0
-  sub $0,2
-  sub $2,1
-  mov $3,$2
-  bin $3,$0
-  add $1,$3
+  sub $0,1
+  add $1,1
+  mov $3,$1
+  geq $3,$2
+  mov $6,1
+  sub $6,$3
+  add $2,$3
+  mul $3,$1
+  mov $7,$4
+  sub $1,$3
+  mov $4,$5
+  mul $4,$6
+  add $5,$7
+  add $5,1
+  mul $5,$6
 lpe
-mov $0,$1
+mov $0,$4
 add $0,1

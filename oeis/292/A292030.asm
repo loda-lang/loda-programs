@@ -1,17 +1,23 @@
 ; A292030: Table read by ascending antidiagonals: T(n,k) = A000045(k+1)*n + A000045(k).
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,1,1,2,2,1,3,3,3,2,4,4,5,5,3,5,5,7,8,8,5,6,6,9,11,13,13,8,7,7,11,14,18,21,21,13,8,8,13,17,23,29,34,34,21,9,9,15,20,28,37,47,55,55,34,10,10,17,23,33,45,60,76,89,89,55,11,11,19,26,38,53,73,97,123,144,144,89,12,12
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $4,$2
+add $4,1
+bin $4,2
+sub $0,$4
 sub $2,$0
 mov $3,1
 lpb $0
   sub $0,1
   mov $1,$3
-  mov $3,$2
-  add $2,$1
+  add $3,$2
+  mov $2,$1
 lpe
-mov $0,$2
+mov $0,$3

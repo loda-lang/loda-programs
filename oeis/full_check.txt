@@ -613,6 +613,7 @@ A263042: a(n) = Sum_{i >= 1} d_i(n) * prime(i) where d_i(n) is the i-th digit of
 A265673: Area A under the trajectory of each odd number in the "3x+1" problem.
 A268335: Exponentially odd numbers.
 A268340: Characteristic function of the prime powers p^k, k >= 2.
+A270050: Numbers of the form 2 * (x^2 + xy + y^2).
 A270248: Even Löschian numbers.
 A270672: Löschian numbers (A003136) that are multiples of 3.
 A270814: a(1)=0; thereafter a(2k)=k+a(k), a(2k+1)=6k+4+a(6k+4).

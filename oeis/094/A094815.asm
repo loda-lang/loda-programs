@@ -1,15 +1,12 @@
 ; A094815: (prime(prime(n)))^n.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 3,25,1331,83521,28629151,4750104241,2488651484819,406067677556641,186940255267540403,236736367459211723401,138624799340320978519423,224282727500720205065439601,193682063179592517160024627139
+; Formula: a(n) = A000040(A000040(n))^n
 
 #offset 1
 
-mov $3,$0
-mov $1,2
-lpb $1
-  sub $1,1
-  seq $0,40 ; The prime numbers.
-  mov $2,$0
-  pow $2,$3
-lpe
-mov $0,$2
+mov $1,$0
+seq $1,40 ; The prime numbers.
+seq $1,40 ; The prime numbers.
+pow $1,$0
+mov $0,$1

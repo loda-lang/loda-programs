@@ -1,4 +1,4 @@
-; A366076: The number of primes factors of the largest divisor of n that is a cubefull number (A036966), counted with multiplicity.
+; A366076: The number of prime factors of the largest divisor of n that is a cubefull number (A036966), counted with multiplicity.
 ; Submitted by Science United
 ; 0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,5,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,4,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,4
 ; Formula: a(n) = -A366145(n)*(A264668(floor((n-1)/2))-1)+A264668(floor((n-1)/2))-1

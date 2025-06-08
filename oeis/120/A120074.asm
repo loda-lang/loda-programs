@@ -15,8 +15,27 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  add $0,2
-  seq $0,172370 ; Mirrored triangle A120072 read by rows.
+  add $0,1
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $0,$5
+  sub $0,1
+  add $4,1
+  mov $5,$0
+  sub $5,$4
+  sub $4,$5
+  add $4,1
+  add $0,1
+  mul $0,$4
+  pow $5,4
+  gcd $5,$0
+  div $0,$5
   add $1,$0
 lpe
 mov $0,$1

@@ -1,16 +1,64 @@
 ; A007286: E.g.f.: (sin x + cos 2x) / cos 3x.
-; Submitted by Dingo
+; Submitted by Steve Dodd
 ; 1,1,5,26,205,1936,22265,297296,4544185,78098176,1491632525,31336418816,718181418565,17831101321216,476768795646785,13658417358350336,417370516232719345,13551022195053101056,465849831125196593045,16904445127772847865856,645702241048404020542525,25897209257346701848477696,1088120580608731523115639305,47797616265803264724357349376,2190881346273790815462670984105,104606878795860836051383679451136,5194394974639568992714753512193565,267855218253636752089721194881744896
-; Formula: a(n) = truncate((gcd(A155585(n),A122045(n))*(8*floor((3^n)/8)+2))/2)
+; Formula: a(n) = truncate((A008280((truncate((sqrtint(-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-binomial(n,2)+truncate(sqrtint(8*binomial(n,2)+8)/2))+8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2))/2),2)+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-8*binomial(n,2)+8)-1)/2)+1)^2+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)-binomial(n,2)+truncate(sqrtint(8*binomial(n,2)+8)/2))-(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2))/2),2)-truncate(sqrtint(8*binomial(n,2)+8)/2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(n,2)+8)/2)-8*binomial(n,2)+8)-1)/2)+1,2)+binomial(n,2)-1)*gcd(0,(-3)^n+1))/2)
 
-mov $2,3
-pow $2,$0
-div $2,8
+mov $4,-3
+pow $4,$0
+add $4,1
+bin $0,2
+add $0,1
+gcd $3,$4
+mov $7,$0
+mul $7,8
+nrt $7,2
+sub $7,1
+div $7,2
+add $7,1
+pow $7,2
+sub $7,$0
+mul $0,8
+nrt $0,2
+div $0,2
+mov $5,$7
+add $5,$0
+mov $6,$5
+add $6,2
+mov $8,$6
+mul $8,8
+nrt $8,2
+sub $8,1
+div $8,2
+mov $9,$8
+add $9,1
+bin $9,2
+sub $6,$9
+sub $6,1
+mov $10,$8
+mod $10,2
+mul $10,$6
+sub $6,$10
+add $6,$5
+mov $0,$5
+add $0,1
+mov $2,$0
 mul $2,8
-add $2,2
+nrt $2,2
+div $2,2
+bin $2,2
+sub $0,$2
+sub $6,$0
+mov $0,$6
+add $0,2
 mov $1,$0
-seq $1,122045 ; Euler (or secant) numbers E(n).
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $0,$1
-mul $0,$2
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+add $1,1
+pow $1,2
+sub $1,$0
+mov $0,$1
+seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+mul $0,$3
 div $0,2

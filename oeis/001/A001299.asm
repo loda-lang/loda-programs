@@ -1,17 +1,16 @@
 ; A001299: Number of ways of making change for n cents using coins of 1, 5, 10, 25 cents.
-; Submitted by Science United
+; Submitted by KetamiNO [YouTube]
 ; 1,1,1,1,1,2,2,2,2,2,4,4,4,4,4,6,6,6,6,6,9,9,9,9,9,13,13,13,13,13,18,18,18,18,18,24,24,24,24,24,31,31,31,31,31,39,39,39,39,39,49,49,49,49,49,60,60,60,60,60,73,73,73,73,73,87,87,87,87,87,103,103,103,103,103,121,121,121,121,121
-; Formula: a(n) = truncate(b(floor(n/5)+1)/2), b(n) = b(n-5)+floor(((n+1)^2)/2), b(4) = 12, b(3) = 8, b(2) = 4, b(1) = 2, b(0) = 0
+; Formula: a(n) = floor(((floor(n/5)+8)*(11*floor(n/5)+2*floor(n/5)^2+18))/120)
 
 div $0,5
-add $0,1
-lpb $0
-  mov $1,$0
-  add $1,1
-  pow $1,2
-  div $1,2
-  trn $0,5
-  add $2,$1
-lpe
-mov $0,$2
-div $0,2
+mov $2,$0
+pow $2,2
+mul $2,2
+mov $1,$0
+mul $1,11
+add $2,$1
+add $2,18
+add $0,8
+mul $0,$2
+div $0,120

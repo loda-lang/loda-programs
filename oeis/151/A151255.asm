@@ -1,4 +1,4 @@
-; A151255: Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0) and consisting of n steps taken from {(-1, -1), (-1, 1), (1, 0)}
+; A151255: Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0) and consisting of n steps taken from {(-1, -1), (-1, 1), (1, 0)}.
 ; Submitted by Science United
 ; 1,1,2,3,8,15,39,77,216,459,1265,2739,7842,17641,49854,113175,327604,761787,2182833,5101595,14868582,35338401,102146176,243510453,713019480,1721265625,5005198029,12105626337,35565979706,86870058279,253706973975,620415879229,1827423157812,4504531840875,13199126952109
 

@@ -1,26 +1,13 @@
 ; A100689: a(n) = prime(n) * 4^prime(n) - 1.
-; Submitted by Dave Studdert
+; Submitted by omegaintellisys
 ; 31,191,5119,114687,46137343,872415231,292057776127,5222680231935,1618481116086271,8358680908399640575,142962266571249025023,698910239464707491627007,198263834416799184651812863,3326963855579459488791396351,930930909542605966724141416447
+; Formula: a(n) = A000040(n)*truncate(4^A000040(n))-1
 
 #offset 1
 
-mov $4,$0
-pow $4,5
-lpb $4
-  mov $2,$3
-  add $2,1
-  seq $2,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$2
-  add $3,2
-  sub $4,$0
-lpe
+seq $0,40 ; The prime numbers.
 mov $1,4
-pow $1,$3
-mov $0,$3
-add $0,1
-mul $0,$1
-mul $0,3
-sub $0,24
-div $0,24
-mul $0,32
-add $0,31
+pow $1,$0
+mul $1,$0
+mov $0,$1
+sub $0,1

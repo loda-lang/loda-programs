@@ -11,13 +11,11 @@ mov $1,14
 add $2,8
 pow $2,2
 lpb $2
-  mov $6,1
-  add $6,$1
-  mov $5,$6
+  mov $5,$1
   mul $5,100
-  mov $7,$5
-  nrt $7,2
-  mov $3,$7
+  mov $6,$5
+  nrt $6,2
+  mov $3,$6
   mod $3,10
   equ $3,9
   sub $0,$3
@@ -29,4 +27,3 @@ lpb $2
   sub $2,1
 lpe
 mov $0,$1
-add $0,1

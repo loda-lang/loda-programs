@@ -189,6 +189,7 @@ A059786: Smallest prime after 2*(n-th prime).
 A060418: Largest decimal digit in n-th prime.
 A060429: a(n) = 4*prime(n)^2+1.
 A060497: a(n) = binomial(2^n, prime(n)).
+A060604: a(n) = binomial(prime(n), n) where prime(n) = n-th prime.
 A060800: a(n) = p^2 + p + 1 where p runs through the primes.
 A060904: Largest power of 5 that divides n.
 A061066: a(n) = (prime(n)^2 - 1)/8.
@@ -295,6 +296,7 @@ A092769: Squares of A006450: a(n) = prime(prime(n))^2.
 A092771: Prime(prime(n))^2-1.
 A092772: (Prime(prime(n))^2-1)/24.
 A093460: a(n) = 2n^(n-1) - 1.
+A094815: (prime(prime(n)))^n.
 A095116: a(n) = prime(n) + n - 1.
 A095901: A004001 (mod 2).
 A096197: a(n) = (1+prime(n)) mod n.
@@ -366,6 +368,7 @@ A121239: Decimal expansion of 10-e.
 A122566: Primes with index k^2+k+1.
 A124669: Product of successive primes minus 2.
 A125137: a(n) = p^p + 1, where p = prime(n).
+A126588: a(n) = prime(13*n).
 A126996: a(n) = binomial(prime(3+n), prime(3)).
 A127114: n! in base 7.
 A127884: a(n) = floor(Fibonacci(n)/n).

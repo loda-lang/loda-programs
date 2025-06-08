@@ -1,19 +1,19 @@
 ; A049638: a(n) = T(n,4), array T as in A049627.
-; Submitted by Science United
+; Submitted by [AF>Amis de la Mer] ComteZera
 ; 2,7,9,12,14,18,19,23,25,28,30,34,35,39,41,44,46,50,51,55,57,60,62,66,67,71,73,76,78,82,83,87,89,92,94,98,99,103,105,108,110,114,115,119,121,124,126,130,131,135,137,140,142,146,147,151,153,156,158,162
-; Formula: a(n) = truncate(c(n)/3)+2, b(n) = -3*truncate((4*n+b(n-1)-1)/3)-12*n+3, b(2) = -18, b(1) = -12, b(0) = 0, c(n) = 12*n+3*truncate((4*n+b(n-1)-1)/3), c(2) = 21, c(1) = 15, c(0) = 0
+; Formula: a(n) = floor((2*n+2)/3)+floor((n+1)/2)+truncate((3*min(n,1)*(n+1))/2)+2
 
-mov $1,1
-lpb $0
-  sub $0,1
-  sub $1,4
-  sub $2,$1
-  div $2,3
-  sub $2,$1
-  mul $2,-3
-  mov $3,3
-  sub $3,$2
-lpe
-mov $0,$3
+mov $1,$0
+add $1,1
+div $1,2
+mov $2,$0
+add $0,1
+min $2,1
+mul $2,$0
+mul $2,3
+div $2,2
+mul $0,2
 div $0,3
+add $0,$2
 add $0,2
+add $0,$1

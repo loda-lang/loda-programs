@@ -1,19 +1,17 @@
 ; A004748: Binary expansion contains 101.
-; Submitted by fpar
+; Submitted by Owdjim
 ; 5,10,11,13,20,21,22,23,26,27,29,37,40,41,42,43,44,45,46,47,52,53,54,55,58,59,61,69,74,75,77,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,101,104,105,106,107,108,109,110,111,116,117,118,119,122,123,125,133,138,139,141,148,149,150,151,154,155,157,160,161,162,163,164,165
 
 #offset 1
 
-sub $0,1
-mov $1,1
 mov $2,$0
-add $2,2
+sub $0,1
+add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  mul $3,4
-  add $3,4
-  seq $3,290260 ; a(n) = number of isolated 0's in the binary representation of n.
+  add $3,1
+  seq $3,56979 ; Number of blocks of {1, 0, 1} in binary expansion of n.
   min $3,1
   sub $0,$3
   add $1,1

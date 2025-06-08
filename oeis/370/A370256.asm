@@ -19,7 +19,7 @@ lpb $0
   lpb $0
     dif $0,$2
     mov $5,$4
-    seq $5,127687 ; Number of unlabeled maximal independent sets in the n-cycle graph.
+    seq $5,304093 ; a(n) is the number of the proper divisors of n that are Lucas numbers (A000204, with 2 excluded).
     add $4,1
   lpe
   mul $1,$5
