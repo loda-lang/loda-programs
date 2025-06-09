@@ -3,8 +3,6 @@
 
 #offset 1
 
-mov $4,0
-mov $8,0
 sub $0,1
 mov $2,$0
 mov $5,1
@@ -36,8 +34,6 @@ lpb $0
   mov $5,$9
 lpe
 add $1,$5
-max $1,1
 log $1,2
 add $1,1
-mov $0,$5
 mov $0,$1

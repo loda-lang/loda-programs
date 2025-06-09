@@ -6,7 +6,7 @@
 
 mov $2,118
 mov $3,$0
-pow $3,16
+pow $3,3
 lpb $3
   mov $1,$2
   add $1,1

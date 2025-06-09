@@ -11,12 +11,11 @@ lpb $0
   mov $6,0
   mov $4,$2
   lpb $4
-    trn $4,1
     mov $7,$4
-    add $7,1
     seq $7,300853 ; L.g.f.: log(Product_{k>=1} (1 + x^(k^2))) = Sum_{n>=1} a(n)*x^n/n.
     mov $9,10
     add $9,$5
+    sub $4,1
     mul $7,$$9
     div $7,-1
     add $5,1

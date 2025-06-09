@@ -1,20 +1,28 @@
 ; A112301: Expansion of (eta(q) * eta(q^16))^2 / (eta(q^2) * eta(q^8)) in powers of q.
-; Submitted by Jon Maiga
+; Submitted by lee
 ; 1,-2,0,0,2,0,0,0,1,-4,0,0,2,0,0,0,2,-2,0,0,0,0,0,0,3,-4,0,0,2,0,0,0,0,-4,0,0,2,0,0,0,2,0,0,0,2,0,0,0,1,-6,0,0,2,0,0,0,0,-4,0,0,2,0,0,0,4,0,0,0,0,0,0,0,2,-4,0,0,0,0,0,0
-; Formula: a(n) = floor((2*max(A129447(A025480(n-1)),0)*(n%4))/2)*(-1)^(n-1)
 
 #offset 1
 
-sub $0,1
-mov $1,-1
-pow $1,$0
-mov $2,$0
-seq $2,25480 ; a(2n) = n, a(2n+1) = a(n).
-seq $2,129447 ; Expansion of psi(q) * psi(q^3) * phi(q^3) / phi(q) in powers of q where psi(), phi() are Ramanujan theta functions.
-max $2,0
-mul $2,2
-add $0,1
-mod $0,4
-mul $0,$2
-div $0,2
-mul $0,$1
+mov $3,3
+add $0,2
+lpb $0
+  sub $0,$3
+  mov $2,$0
+  max $2,0
+  mov $4,-1
+  pow $4,$2
+  mov $6,$2
+  nrt $2,2
+  pow $2,2
+  equ $2,$6
+  equ $6,0
+  mul $2,2
+  sub $2,$6
+  mul $2,$4
+  add $5,4
+  add $1,$2
+  mov $3,2
+  mul $3,$5
+lpe
+mov $0,$1

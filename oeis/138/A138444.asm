@@ -1,28 +1,20 @@
 ; A138444: a(n) = ((n-th prime)^6-(n-th prime^2))/5.
-; Submitted by Science United
+; Submitted by iBezanilla
 ; 12,144,3120,23520,354288,965328,4827456,9409104,29607072,118964496,177500544,513145008,950020512,1264272240,2155842624,4432871664,8436106032,10304074128,18091675536,25620055776,30266844192,48617489856
+; Formula: a(n) = 12*truncate(((A000040(n)^2+1)*((A000040(n)^2)^2-A000040(n)^2)-60)/60)+12
 
 #offset 1
 
-mov $3,$0
-pow $3,5
-lpb $3
-  mov $5,$4
-  add $5,1
-  seq $5,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$5
-  sub $3,$0
-  add $4,2
-lpe
-mov $0,$4
-add $0,1
-max $0,2
+seq $0,40 ; The prime numbers.
 pow $0,2
-mov $2,$0
-pow $2,2
-sub $2,$0
 mov $1,$0
-mul $1,$2
-add $1,$2
-mov $0,$1
-div $0,5
+pow $0,2
+sub $0,$1
+add $1,1
+mov $2,$0
+mul $2,$1
+mov $0,$2
+sub $0,60
+div $0,60
+mul $0,12
+add $0,12

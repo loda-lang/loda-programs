@@ -327,6 +327,7 @@ A100672: Second least-significant bit in the binary expansion of the n-th prime.
 A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A101202: Multiples of 142857.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
+A101404: a(n) = n*A101403(n).
 A101987: Product of nonzero digits of n-th prime.
 A102348: Decimated primes: every 10th prime has been omitted.
 A102689: a(n) = 10000*n + 2468.
@@ -528,6 +529,7 @@ A231620: a(n) = A000930(n^2), where A000930 is Narayana's cows sequence.
 A231821: a(n) = mu(n) + 3, where mu is the Mobius function (A008683).
 A234645: Sum of the divisors of n^3+1.
 A239050: a(n) = 4*sigma(n).
+A239691: Base 5 sum of digits of prime(n).
 A240068: Number of prime Lipschitz quaternions having norm prime(n).
 A241676: 2^p - 3 where p is prime.
 A241677: 2^p + 5 where p is prime.

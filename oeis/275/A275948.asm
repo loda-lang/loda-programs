@@ -8,7 +8,6 @@ seq $0,278159 ; Run length transform of primorials, A002110.
 mov $2,$0
 seq $0,64989 ; Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
 mov $1,$0
-gcd $1,$2
 mov $0,$2
 div $0,$1
 seq $0,56169 ; Number of unitary prime divisors of n.
