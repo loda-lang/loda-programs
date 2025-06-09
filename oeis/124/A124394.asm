@@ -1,13 +1,20 @@
 ; A124394: Inverse of Fine number renewal array.
-; Submitted by waffleironhead
+; Submitted by loader3229
 ; 1,0,1,-1,0,1,-2,-2,0,1,-3,-4,-3,0,1,-4,-5,-6,-4,0,1,-5,-4,-6,-8,-5,0,1,-6,0,0,-6,-10,-6,0,1,-7,8,14,8,-5,-12,-7,0,1,-8,21,36,36,20,-3,-14,-8,0,1,-9,40,63,72,65,36,0,-16,-9,0,1
 
-mov $3,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
 mov $1,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

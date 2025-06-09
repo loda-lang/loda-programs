@@ -1,15 +1,13 @@
 ; A167746: Number of prime divisors of A001222 (counted with multiplicity), with a(1) = 1 by convention.
-; Submitted by amargo133
+; Submitted by mmonnin
 ; 1,0,0,1,0,1,0,1,1,1,0,1,0,1,1,2,0,1,0,1,1,1,0,2,1,1,1,1,0,1,0,1,1,1,1,2,0,1,1,2,0,1,0,1,1,1,0,1,1,1,1,1,0,2,1,2,1,1,0,2,0,1,1,2,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1
-; Formula: a(n) = gcd(A036430(n),A067626(n-1))-1
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-seq $0,67626 ; a(n) = 2^(2n+1)*(2n+1)!.
-add $1,1
-seq $1,36430 ; Number of iterations needed to reach 1 under the map n -> Omega(n).
-gcd $1,$0
+mov $2,$0
+lpb $0
+  bin $0,$2
+  seq $1,1222 ; Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).
+lpe
 mov $0,$1
-sub $0,1

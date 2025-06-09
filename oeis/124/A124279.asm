@@ -1,14 +1,21 @@
 ; A124279: Riordan array (1/(1-x),x(1-x+x^2)/(1-x)).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,1,1,1,2,1,1,1,3,3,1,1,1,4,5,4,1,1,1,5,8,7,5,1,1,1,6,12,13,9,6,1,1,1,7,17,22,19,11,7,1,1,1,8,23,35,35,26,13,8,1,1,1,9,30,53
 
+mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mov $1,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $8,$2
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

@@ -1,9 +1,16 @@
 ; A361147: a(n) = sigma(n)^3.
-; Submitted by NeoGen
+; Submitted by Science United
 ; 1,27,64,343,216,1728,512,3375,2197,5832,1728,21952,2744,13824,13824,29791,5832,59319,8000,74088,32768,46656,13824,216000,29791,74088,64000,175616,27000,373248,32768,250047,110592,157464,110592,753571,54872,216000,175616
-; Formula: a(n) = A000203(n)^3
 
 #offset 1
 
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
-pow $0,3
+mov $3,$0
+sub $3,1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+pow $1,3
+mov $0,$1

@@ -1,18 +1,23 @@
 ; A189723: Fixed point of the morphism 0->011, 1->101.
-; Submitted by iBezanilla
+; Submitted by Science United
 ; 0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0
+; Formula: a(n) = -2*truncate(c(n-1)/2)+c(n-1), b(n) = truncate((8*c(n-1)+b(n-1)+1)/(4*d(n-1))), b(2) = 0, b(1) = 0, b(0) = 0, c(n) = -4*truncate((8*c(n-1)+b(n-1)+1)/(4*d(n-1)))*d(n-1)+8*c(n-1)+b(n-1)+1, c(2) = 9, c(1) = 1, c(0) = 0, d(n) = 4*d(n-1), d(2) = 16, d(1) = 4, d(0) = 1
 
 #offset 1
 
+mov $3,1
 sub $0,1
-mov $3,$0
-lpb $3
-  equ $1,0
-  lpb $3
-    dif $3,3
-    mov $2,$0
-  lpe
-  neq $2,1
-  sub $3,$2
+lpb $0
+  sub $0,1
+  add $1,1
+  mul $2,8
+  add $2,$1
+  mul $3,4
+  mov $1,$2
+  div $1,$3
+  mov $4,$1
+  mul $4,$3
+  sub $2,$4
 lpe
-mov $0,$1
+mov $0,$2
+mod $0,2

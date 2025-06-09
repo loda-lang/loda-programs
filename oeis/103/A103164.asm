@@ -1,13 +1,10 @@
 ; A103164: Integers but with the primes squared.
-; Submitted by [AF>Amis des Lapins] Jean-Luc
+; Submitted by iBezanilla
 ; 0,1,4,9,4,25,6,49,8,9,10,121,12,169,14,15,16,289,18,361,20,21,22,529,24,25,26,27,28,841,30,961,32,33,34,35,36,1369,38,39,40,1681,42,1849,44,45,46,2209,48,49,50,51,52,2809,54,55,56,57,58,3481,60,3721,62,63,64,65,66,4489,68,69,70,5041,72,5329,74,75,76,77,78,6241
+; Formula: a(n) = truncate(n^(A080339(n)+1))
 
 mov $1,$0
-trn $0,1
+seq $0,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.
 add $0,1
-seq $0,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
-lpb $0
-  trn $0,3
-  pow $1,2
-lpe
+pow $1,$0
 mov $0,$1

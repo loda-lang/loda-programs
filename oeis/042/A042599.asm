@@ -1,7 +1,7 @@
 ; A042599: Denominators of continued fraction convergents to sqrt(828).
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by mmonnin
 ; 1,1,4,9,31,40,2271,2311,9204,20719,71361,92080,5227841,5319921,21187604,47695129,164272991,211968120,12034487711,12246455831,48773855204,109794166239,378156353921,487950520160,27703385482881,28191336003041,112277393492004,252746122987049,870515762453151,1123261885440200,63773181347104351,64896443232544551,258462511044738004,581821465322020559,2003926907010799681,2585748372332820240,146805835757648733121,149391584129981553361,594980588147593393204,1339352760425168339769,4613038869423098412511
-; Formula: a(n) = a(n-1)*(8*truncate((truncate(A024639(A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)))/2)+1)/6)+truncate(A024639(A144330(truncate((12*truncate(A010126(n)/3)+4*A010126(n))/5)*gcd(n,2)+gcd(n,2)))/2)+1)+a(n-2), a(2) = 4, a(1) = 1, a(0) = 1
+; Formula: a(n) = a(n-1)*(2*gcd(-n+b(n-1),2)+2*truncate(3^(gcd(n,6)-3))+binomial(gcd(n,6)-3,truncate(3^(gcd(n,6)-3)))-2)+a(n-2), a(3) = 9, a(2) = 4, a(1) = 1, a(0) = 1, b(n) = 2*gcd(-n+b(n-1),2)+2*truncate(3^(gcd(n,6)-3)), b(3) = 4, b(2) = 4, b(1) = 2, b(0) = 0
 
 mov $1,1
 lpb $0
@@ -9,27 +9,18 @@ lpb $0
   mov $4,$2
   mov $2,$1
   add $3,1
-  mov $7,$3
-  gcd $7,2
-  mov $6,$3
-  seq $6,10126 ; Continued fraction for sqrt(22).
-  mov $8,$6
-  div $8,3
-  mul $8,3
-  add $6,$8
-  mul $6,4
-  div $6,5
-  mul $6,$7
-  add $6,$7
-  seq $6,144330 ; Triangle read by rows, A144328 * A000012
-  mov $1,$6
-  seq $1,24639 ; n written in fractional base 7/2.
-  div $1,2
-  add $1,1
-  mov $5,$1
-  div $1,6
-  mul $1,8
-  add $1,$5
+  mov $1,$3
+  gcd $1,6
+  sub $1,3
+  mov $5,3
+  pow $5,$1
+  sub $6,$3
+  gcd $6,2
+  add $6,$5
+  mul $6,2
+  bin $1,$5
+  add $1,$6
+  sub $1,2
   mul $1,$2
   add $1,$4
 lpe

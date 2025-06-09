@@ -4,8 +4,6 @@
 
 max $0,1
 mov $1,$0
-mov $11,0
-mov $12,0
 add $0,1
 mov $3,$0
 mul $3,8

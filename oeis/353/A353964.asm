@@ -1,18 +1,17 @@
 ; A353964: Number of tilings of a 2 X n rectangle using 2 X 2 and 1 X 1 tiles and right trominoes.
-; Submitted by Daniel
+; Submitted by iBezanilla
 ; 1,1,6,13,45,122,373,1073,3182,9293,27349,80178,235509,691097,2028998,5955501,17482685,51318186,150642613,442198913,1298048350,3810328141,11184967717,32832705122,96378199989,282911661033,830468071222,2437782776365,7155946454541
-; Formula: a(n) = 5*a(n-2)+2*a(n-3)+a(n-1), a(3) = 13, a(2) = 6, a(1) = 1, a(0) = 1
 
-mov $1,1
+mov $2,1
+add $0,1
 lpb $0
   sub $0,1
-  add $2,$3
-  mov $4,$2
-  mul $4,2
-  mov $2,$3
+  add $1,$3
+  add $1,$2
+  dif $2,-1
   add $2,$1
-  mov $3,$1
-  mov $1,$2
-  add $1,$4
+  mul $2,2
+  mul $3,-1
+  add $3,$1
 lpe
-mov $0,$1
+mov $0,$3

@@ -1,10 +1,26 @@
 ; A025238: a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-2)*a(2) for n >= 3.
-; Submitted by BarnardsStern
+; Submitted by BrandyNOW
 ; 3,1,3,10,36,137,543,2219,9285,39587,171369,751236,3328218,14878455,67030785,304036170,1387247580,6363044315,29323149825,135700543190,630375241380,2938391049395,13739779184085,64430797069375,302934667061301
 
 #offset 1
 
 sub $0,1
-mov $1,2
-mov $$0,$1
-seq $0,2212 ; Number of restricted hexagonal polyominoes with n cells.
+mov $4,3
+mov $1,1
+mov $2,1
+mov $3,$0
+add $3,$0
+sub $3,1
+lpb $3
+  sub $3,1
+  mul $1,$4
+  mul $1,$3
+  sub $3,1
+  add $5,$4
+  div $1,$5
+  add $2,$1
+  add $4,2
+lpe
+sub $2,$3
+mov $0,$2
+add $0,1

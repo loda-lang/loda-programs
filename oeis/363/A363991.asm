@@ -1,10 +1,26 @@
 ; A363991: a(n) = Sum_{d|n, d odd} d^(d+1).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,1,82,1,15626,82,5764802,1,3486784483,15626,3138428376722,82,3937376385699290,5764802,6568408355712906332,1,14063084452067724991010,3486784483,37589973457545958193355602,15626,122694327386105632949009377724,3138428376722
-; Formula: a(n) = A283498(A000265(n-1))
 
 #offset 1
 
-sub $0,1
-seq $0,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
-seq $0,283498 ; a(n) = Sum_{d|n} d^(d+1).
+dir $0,2
+mov $5,$0
+div $0,2
+add $0,1
+lpb $0
+  mov $2,$0
+  sub $0,1
+  add $2,$0
+  mov $3,$5
+  gcd $3,$2
+  bin $3,$2
+  mul $3,$2
+  mov $4,$2
+  pow $4,$3
+  mul $4,$3
+  mul $4,2
+  add $1,$4
+lpe
+mov $0,$1
+div $0,2

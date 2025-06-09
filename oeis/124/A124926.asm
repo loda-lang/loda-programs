@@ -1,14 +1,35 @@
 ; A124926: Triangle read by rows: T(n,k) = binomial(n,k)*r(k), where r(k) are the Riordan numbers (r(k) = A005043(k); 0 <= k <= n).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,0,1,0,1,1,0,3,1,1,0,6,4,3,1,0,10,10,15,6,1,0,15,20,45,36,15,1,0,21,35,105,126,105,36,1,0,28,56,210,336,420,288,91,1,0,36,84,378,756,1260,1296,819,232,1,0,45,120,630,1512,3150,4320,4095,2320,603,1,0,55,165,990,2772,6930,11880,15015,12760,6633,1585,1,0
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $8,$1
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 mov $2,$0
 mov $0,$1
 mov $1,$2
-seq $1,5043 ; Riordan numbers: a(n) = (n-1)*(2*a(n-1) + 3*a(n-2))/(n+1).
+add $1,2
+lpb $1
+  sub $1,2
+  mov $6,$7
+  div $6,2
+  bin $6,$1
+  sub $4,1
+  mov $5,$4
+  bin $5,$7
+  add $7,1
+  mul $5,$6
+  div $5,$7
+  add $7,1
+  add $3,$5
+lpe
 bin $0,$2
-mul $0,$1
+mul $0,$3

@@ -1,14 +1,21 @@
 ; A092860: "3 times the prime sequence".
 ; Submitted by iBezanilla
 ; 3,4,5,6,7,10,11,12,13,16,17,18,19,22,23,28,29,30,31,36,37,40,41,42,43,46,47,52,53,58,59,60,61,66,67,70,71,72,73,78,79,82,83,88,89,96,97,100,101,102,103,106,107,108,109,112,113,126,127,130,131,136,137,138,139
-; Formula: a(n) = 2*A008507(floor(n/2)+1)+n+2
+; Formula: a(n) = 2*truncate((-2*floor(n/2)+A000040(floor(n/2)+2)-2)/2)+n+2
 
 #offset 1
 
 mov $1,$0
 div $0,2
-add $0,1
-seq $0,8507 ; Number of odd composite numbers less than n-th odd prime.
+add $0,2
+mov $3,$0
+seq $3,40 ; The prime numbers.
+sub $0,4
+sub $3,$0
+sub $3,$0
+mov $0,$3
+sub $0,6
+div $0,2
 mul $0,2
 sub $0,1
 mov $2,$0

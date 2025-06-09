@@ -4,16 +4,24 @@
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0
 sub $2,1
+mul $0,2
 lpb $0
-  sub $0,1
+  sub $0,2
   add $2,1
   add $5,$3
   add $3,$5

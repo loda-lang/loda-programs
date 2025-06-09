@@ -1,9 +1,16 @@
 ; A193553: Sum of divisors of 4*n.
-; Submitted by Jamie Morken(w4)
+; Submitted by BrandyNOW
 ; 7,15,28,31,42,60,56,63,91,90,84,124,98,120,168,127,126,195,140,186,224,180,168,252,217,210,280,248,210,360,224,255,336,270,336,403,266,300,392,378,294,480,308,372,546,360,336,508,399,465,504,434,378,600,504,504,560,450,420,744,434,480,728,511,588,720,476,558,672,720,504,819,518,570,868,620,672,840,560,762
-; Formula: a(n) = A000203(4*n)
 
 #offset 1
 
 mul $0,4
-seq $0,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $3,$0
+sub $3,1
+mov $2,$0
+dir $2,2
+seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+mov $1,$0
+bxo $1,$3
+mul $1,$2
+mov $0,$1

@@ -1,21 +1,29 @@
 ; A193842: Triangular array: the fission of the polynomial sequence ((x+1)^n: n >= 0) by the polynomial sequence ((x+2)^n: n >= 0). (Fission is defined at Comments.)
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 1,1,4,1,7,13,1,10,34,40,1,13,64,142,121,1,16,103,334,547,364,1,19,151,643,1549,2005,1093,1,22,208,1096,3478,6652,7108,3280,1,25,274,1720,6766,17086,27064,24604,9841,1,28,349,2542,11926,37384,78322,105796,83653,29524,1,31,433,3589,19552,73162,190474,340762,401041,280483,88573,1,34,526,4888,30319,131818,409960,912184,1423327,1483606,930022,265720,1,37
 
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 mov $1,1
 sub $2,$0
+add $2,1
 mul $2,3
 mov $3,1
 lpb $0
   sub $0,1
-  add $2,3
   add $4,1
   mul $1,$2
   div $1,$4
+  add $2,3
   add $3,$1
 lpe
 mov $0,$3

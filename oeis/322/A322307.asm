@@ -5,8 +5,7 @@
 #offset 1
 
 sub $0,2
-mov $1,3
-seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
+mov $1,2
 add $1,$0
 lpb $0
   mov $0,124

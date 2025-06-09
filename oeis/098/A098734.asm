@@ -1,39 +1,45 @@
 ; A098734: Consider the sequence {b(n), n >= 1} of digits of the integers: 0 1 2 3 4 5 6 7 8 9 1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 2 0... (A033307); a(n) = n*b(n).
-; Submitted by Aexoden
+; Submitted by Science United
 ; 0,2,6,12,20,30,42,56,72,90,11,0,13,14,15,32,17,54,19,80,21,110,23,144,25,182,27,224,29,270,62,0,66,34,70,72,74,114,78,160,82,210,86,264,90,322,94,384,98,450,153,0,159,54,165,112,171,174,177,240,183,310,189,384
 
 #offset 1
 
-mov $1,$0
-mov $2,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $3,$0
-  max $3,0
-  mov $6,$3
-  add $6,1
-  seq $6,261138 ; The concatenation of 123456...n and the reverse of this number.
-  add $3,1
-  mov $5,$3
-  mov $3,10
-  pow $3,$5
-  sub $7,$3
-  mov $3,$6
-  mul $3,10
-  div $3,$7
-  add $3,9
-  mod $3,10
-  add $3,10
-  mod $3,10
-  mov $4,1
-  seq $4,422 ; Concatenation of numbers from n down to 1.
-  sub $4,$3
-  mov $3,$4
-  add $3,8
-  mov $0,0
-  add $2,$3
+mov $2,$0
+mov $5,1
+sub $0,1
+mov $3,$0
+lpb $3
+  sub $3,1
+  mov $4,10
+  pow $4,$5
+  mov $6,$7
+  mov $7,$5
+  mul $7,$4
+  div $4,9
+  sub $7,$4
+  mov $8,$0
+  geq $8,$7
+  mul $3,$8
+  add $5,$8
 lpe
-mov $0,$2
-sub $0,1
-mul $0,$1
+mov $8,$0
+sub $8,$6
+mod $8,$5
+mov $3,$5
+sub $3,$8
+sub $3,1
+mov $8,10
+pow $8,$3
+mov $7,10
+pow $7,$5
+div $7,10
+sub $0,$6
+div $0,$5
+add $0,$7
+div $0,$8
+mod $0,10
+mul $2,$0
+mov $1,$0
+add $1,$2
+mov $0,$1

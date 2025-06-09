@@ -1,17 +1,20 @@
 ; A271638: The total sum of the cubes of all parts of all compositions of n.
-; Submitted by Jamie Morken(s1)
+; Submitted by BrandyNOW
 ; 1,10,48,170,512,1398,3580,8770,20808,48206,109652,245850,544864,1196134,2605164,5636210,12124280,25952382,55312516,117440650,248512656,524288150,1103102108,2315255970,4848615592,10133438638,21139292340,44023414970,91536490688
+; Formula: a(n) = truncate(c(n)/2), b(n) = 6*n+2*b(n-1)-1, b(2) = 29, b(1) = 9, b(0) = 2, c(n) = 2*b(n-1)+2*c(n-1)-2, c(2) = 20, c(1) = 2, c(0) = 0
 
 #offset 1
 
-mov $2,$0
+mov $2,2
 lpb $0
   sub $0,1
   mul $2,2
-  add $2,$1
-  add $3,12
-  add $1,$3
+  sub $2,1
   mul $3,2
+  sub $3,1
+  add $3,$2
+  add $1,6
+  add $2,$1
 lpe
-mov $0,$2
+mov $0,$3
 div $0,2
