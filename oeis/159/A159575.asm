@@ -1,12 +1,11 @@
 ; A159575: Decimal expansion of (339+26*sqrt(2))/337.
-; Submitted by Christian Krause
+; Submitted by Spot T
 ; 1,1,1,5,0,4,3,1,8,2,8,5,3,7,1,0,5,9,7,2,3,6,9,2,5,5,3,9,5,5,3,2,7,0,4,7,4,9,0,4,4,8,5,0,7,0,5,0,3,8,5,9,4,9,5,2,5,9,9,2,1,8,7,8,8,9,5,4,2,7,4,3,1,5,7,2,7,4,4,1
 
 #offset 1
 
 sub $0,1
-bin $1,$0
-mov $2,2
+mov $5,1
 mov $3,$0
 mul $3,4
 lpb $3
@@ -17,14 +16,16 @@ lpb $3
   mov $1,$2
 lpe
 add $2,$5
+mul $2,2
 mov $4,10
 pow $4,$0
 add $5,$2
-div $2,4
-mul $2,44
+div $2,9
+mul $2,45
 add $2,$5
 div $2,$4
 mul $1,2
 div $1,$2
+max $1,1
 mov $0,$1
 mod $0,10

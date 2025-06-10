@@ -1,12 +1,9 @@
 ; A026517: a(n) = t(5n), where t = A001285 (Thue-Morse sequence).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 1,1,1,1,1,2,1,2,1,1,2,2,1,1,2,1,1,1,1,1,2,1,2,2,1,1,1,1,2,2,1,2,1,1,1,1,1,2,1,1,2,2,1,1,2,1,2,1,1,1,1,1,1,2,1,1,2,2,2,2,1,1,2,1,1,1,1,1,1,2,1,2,1,1,2,2,1,2,1,2
+; Formula: a(n) = sumdigits(5*n,2)%2+1
 
-mul $0,10
-mov $1,$0
-lpb $1
-  add $0,$1
-  div $1,2
-lpe
+mul $0,5
+dgs $0,2
 mod $0,2
 add $0,1

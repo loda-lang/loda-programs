@@ -1,37 +1,14 @@
 ; A020796: Decimal expansion of 1/sqrt(39).
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,6,0,1,2,8,1,5,3,8,0,5,0,8,7,1,3,3,4,8,3,2,5,3,6,6,9,7,6,7,6,8,7,0,3,7,4,6,3,4,0,9,2,3,0,2,0,4,9,1,4,2,6,4,3,1,9,3,0,6,9,7,2,5,7,9,7,3,3,6,2,0,5,2,7,7,8,2,4,2
+; Formula: a(n) = -10*truncate(sqrtint(2*floor((10^(2*n+2))/78))/10)+sqrtint(2*floor((10^(2*n+2))/78))
 
-mov $1,1
-mov $2,1
-mov $4,$0
-add $4,3
-mov $7,10
-pow $7,$4
-mov $3,$0
-add $3,6
-lpb $3
-  sub $3,1
-  mov $4,$2
-  pow $4,2
-  mul $4,39
-  mov $5,$1
-  pow $5,2
-  mov $0,2
-  add $4,$5
-  mov $6,$1
-  mul $6,$2
-  mul $6,2
-  mov $8,$4
-  div $8,$7
-  max $8,2
-  mov $1,$4
-  div $1,$8
-  mov $2,$6
-  div $2,$8
-lpe
-mov $3,10
-pow $3,$0
-div $2,$3
-mov $0,$2
+add $0,1
+mul $0,2
+mov $1,10
+pow $1,$0
+mov $0,$1
+div $0,78
+mul $0,2
+nrt $0,2
 mod $0,10

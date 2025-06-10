@@ -8,5 +8,4 @@
 mov $1,$0
 seq $1,19522 ; Concatenate cubes.
 nrt $1,3
-sub $0,1
 mov $0,$1

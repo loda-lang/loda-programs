@@ -1,10 +1,15 @@
 ; A104129: Integers of the form p^(p-1)+p where p is prime.
-; Submitted by Sphynx
+; Submitted by fzs600
 ; 4,12,630,117656,25937424612,23298085122494,48661191875666868498,104127350297911241532860,907846434775996175406740561352,88540901833145211536614766025207452637390
-; Formula: a(n) = A342394(A000040(n))+1
+; Formula: a(n) = (A000040(n)==0)+truncate(A000040(n)^((A000040(n)==0)+A000040(n)-1))+A000040(n)
 
 #offset 1
 
 seq $0,40 ; The prime numbers.
-seq $0,342394 ; a(n) = Sum_{k=1..n} k^(gcd(k,n) - 1).
+mov $1,$0
+equ $0,0
+sub $0,1
+add $0,$1
+pow $1,$0
+add $0,$1
 add $0,1

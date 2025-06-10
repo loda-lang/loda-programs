@@ -10,7 +10,7 @@ mul $3,2
 add $3,1
 mov $2,$3
 lpb $2
-  div $2,7
+  equ $2,10
   mov $0,$3
   mul $0,3
   mov $1,729

@@ -1,27 +1,39 @@
 ; A000816: E.g.f.: Sum_{n >= 0} a(n) * x^(2*n) / (2*n)! = sin(x)^2 / cos(2*x).
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by DukeBox
 ; 0,2,40,1952,177280,25866752,5535262720,1633165156352,635421069967360,315212388819402752,194181169538675507200,145435130631317935357952,130145345400688287667978240,137139396592145493713802493952,168075443935289931496098868756480,237052072656633677250807049069002752,381219990619969515438776767462946897920,693407860486720623398388795322954365796352,1416379208255737496228403983593312235353538560,3228383365133074992787337591798679185190658506752,8164506450210656504892913116365138753721534408294400
+; Formula: a(n) = truncate((2*A008280(binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*binomial(2*n,2)+8)/2)-8*binomial(2*n,2))/2),2)+1)*2^(2*n))/4)
 
 mul $0,2
-mov $4,$0
+mov $1,2
+pow $1,$0
+mul $1,2
+bin $0,2
 add $0,1
-lpb $0
-  sub $0,1
-  div $6,2
-  add $6,$2
-  mul $6,2
-  add $7,1
-  mov $2,$1
-  add $2,$7
-  pow $2,$4
-  sub $2,$6
-  mov $3,$4
-  bin $3,$1
-  mul $3,$2
-  add $1,1
-  mul $5,-1
-  add $5,$3
-lpe
-gcd $5,$0
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+add $4,1
+pow $4,2
+sub $4,$0
+mul $0,8
+nrt $0,2
+div $0,2
+mov $2,$4
+add $2,$0
+mov $0,$2
+add $0,1
+mov $5,$0
+mul $5,8
+nrt $5,2
 div $5,2
-mov $0,$5
+bin $5,2
+sub $0,$5
+mov $3,$2
+sub $3,$0
+mov $0,$3
+add $0,2
+seq $0,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
+mul $0,$1
+div $0,4

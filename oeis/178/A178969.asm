@@ -1,19 +1,17 @@
 ; A178969: Last nonzero decimal digit of (10^10^n)!.
-; Submitted by Jamie Morken(s2)
+; Submitted by loader3229
 ; 8,2,6,4,2,2,6,2,6,4,2,2
-; Formula: a(n) = 32*truncate((binomial(-8,4*n)*(-n+7))/2)-10*truncate((32*truncate((binomial(-8,4*n)*(-n+7))/2)-10*truncate((32*truncate((binomial(-8,4*n)*(-n+7))/2)+2)/10)+12)/10)-10*truncate((32*truncate((binomial(-8,4*n)*(-n+7))/2)+2)/10)+12
+; Formula: a(n) = -gcd(floor((2*10^n)/13)%10,64)-10*truncate((-gcd(floor((2*10^n)/13)%10,64)-10*truncate((-gcd(floor((2*10^n)/13)%10,64)+floor((2*10^n)/13)+2)/10)+floor((2*10^n)/13)+12)/10)-10*truncate((-gcd(floor((2*10^n)/13)%10,64)+floor((2*10^n)/13)+2)/10)+floor((2*10^n)/13)+12
 
-mov $3,-2
-add $3,$0
-mul $0,4
-mov $1,5
-sub $1,$3
-mov $2,-8
-bin $2,$0
-mul $2,$1
-div $2,2
-mov $0,$2
-mul $0,32
+mov $1,10
+pow $1,$0
+mul $1,2
+div $1,13
+mov $0,$1
+mod $0,10
+gcd $0,64
+sub $1,$0
+mov $0,$1
 add $0,2
 mod $0,10
 add $0,10

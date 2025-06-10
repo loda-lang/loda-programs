@@ -1,24 +1,30 @@
 ; A045785: Squares with initial digit '2'.
-; Submitted by Sphynx
+; Submitted by KetamiNO [YouTube]
 ; 25,225,256,289,2025,2116,2209,2304,2401,2500,2601,2704,2809,2916,20164,20449,20736,21025,21316,21609,21904,22201,22500,22801,23104,23409,23716,24025,24336,24649,24964,25281,25600,25921,26244,26569
 
 #offset 1
 
-mov $2,$0
 sub $0,1
-add $2,1
-pow $2,4
-lpb $2
-  mov $3,$1
-  seq $3,2993 ; Initial digits of squares.
-  equ $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+mov $2,2
+mov $3,$0
+add $3,2
+pow $3,4
+lpb $3
+  mov $4,$2
+  pow $4,2
+  mov $6,$4
+  log $6,10
+  mov $1,10
+  pow $1,$6
+  div $4,$1
+  equ $4,2
+  sub $0,$4
+  add $2,1
+  mov $5,$0
+  max $5,0
+  equ $5,$0
+  mul $3,$5
+  sub $3,1
 lpe
-pow $1,2
-mov $0,$1
+mov $0,$2
+pow $0,2

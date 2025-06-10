@@ -1,20 +1,24 @@
 ; A374190: Complement of A374189 in A005843.
-; Submitted by tosi
+; Submitted by iBezanilla
 ; 0,4,6,8,14,16,20,22,30,32,36,38,40,46,52,54,62,64,68,70,72,78,80,84,86,94,100,102,104,110,116,118,126,128,132,134,136,142,144,148,150,158,160,164,166,168,174,180,182,190,196,198,200,206,208,212,214,222
 
 #offset 1
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
   mul $3,2
   add $3,1
-  seq $3,88431 ; Half of the (n+1)-st component of the continued fraction expansion of Sum_{k>=0} 1/2^(2^k).
+  mov $5,$3
+  bin $5,2
+  dir $5,2
+  div $5,2
+  mod $5,2
+  equ $5,0
+  mov $3,$5
   add $3,$4
-  gcd $3,2
   sub $0,$3
   add $0,1
   add $1,$4

@@ -1,25 +1,32 @@
-; A145733: Indices of palindromes in A001127
-; Submitted by hugo75
+; A145733: Indices of palindromes in A001127.
+; Submitted by Athlici
 ; 1,2,3,4,6,9,10,11,12,16,18
 
 #offset 1
 
 sub $0,1
-mov $2,$0
-pow $2,2
-add $2,6
-lpb $2
-  mov $3,$1
-  seq $3,3415 ; a(n) = n' = arithmetic derivative of n: a(0) = a(1) = 0, a(prime) = 1, a(m*n) = m*a(n) + n*a(m).
-  mod $3,3
-  mod $3,2
-  sub $0,$3
-  add $1,1
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+mov $4,$0
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $3,0
+  mov $0,$4
+  sub $0,$1
+  lpb $0
+    add $3,1
+    sub $0,$3
+    mul $0,2
+    mov $2,$0
+    gcd $0,24
+    sub $0,5
+    max $2,0
+    seq $2,52409 ; a(n) = largest integer power m for which a representation of the form n = k^m exists (for some k).
+    add $3,$2
+  lpe
+  mov $0,$3
+  div $0,2
+  add $0,1
+  add $5,$0
 lpe
-mov $0,$1
-sub $0,1
+mov $0,$5

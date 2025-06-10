@@ -1,16 +1,13 @@
 ; A020783: Decimal expansion of 1/sqrt(26).
-; Submitted by Mumps
+; Submitted by loader3229
 ; 1,9,6,1,1,6,1,3,5,1,3,8,1,8,4,0,3,1,9,2,4,1,6,2,4,6,5,7,3,1,6,4,5,4,6,1,1,3,7,0,6,8,1,1,3,3,1,1,5,2,2,9,3,8,7,5,3,2,6,8,1,0,7,8,6,2,5,3,5,9,0,8,9,2,5,4,7,0,1,6
-; Formula: a(n) = -10*truncate(truncate(sqrtint(26*10^(2*n+2))/26)/10)+truncate(sqrtint(26*10^(2*n+2))/26)
+; Formula: a(n) = -10*truncate(sqrtint(floor((10^(2*n+2))/26))/10)+sqrtint(floor((10^(2*n+2))/26))
 
+add $0,1
 mul $0,2
-add $0,2
 mov $1,10
 pow $1,$0
 mov $0,$1
-mul $0,14
-sub $0,$1
-mul $0,2
-nrt $0,2
 div $0,26
+nrt $0,2
 mod $0,10

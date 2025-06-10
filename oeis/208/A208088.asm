@@ -1,23 +1,15 @@
 ; A208088: Number of 7 X (n+1) 0..1 arrays with every 2 X 2 subblock having the same number of equal edges as its horizontal neighbors and a different number from its vertical neighbors, and new values 0..1 introduced in row major order.
-; Submitted by mmonnin
+; Submitted by Science United
 ; 108,180,288,468,756,1224,1980,3204,5184,8388,13572,21960,35532,57492,93024,150516,243540,394056,637596,1031652,1669248,2700900,4370148,7071048,11441196,18512244,29953440,48465684,78419124,126884808,205303932,332188740,537492672,869681412,1407174084,2276855496,3684029580,5960885076,9644914656,15605799732,25250714388,40856514120,66107228508,106963742628,173070971136,280034713764,453105684900,733140398664,1186246083564,1919386482228,3105632565792,5025019048020,8130651613812,13155670661832
-; Formula: a(n) = 36*min(n+1,(n+1)%2)*b(n+1)+36*c(n+1), b(n) = 3*b(n-2)-b(n-4), b(6) = 13, b(5) = 5, b(4) = 5, b(3) = 2, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = 2*c(n-2)+b(n-2), c(3) = 3, c(2) = 3, c(1) = 1, c(0) = 1
 
 #offset 1
 
-mov $2,1
-mov $3,1
-add $0,1
-lpb $0
-  sub $0,2
-  add $2,$3
-  add $3,$2
-lpe
-mul $0,$2
-add $0,$3
-mul $0,2
-sub $0,6
 mov $1,$0
-add $0,$1
-mul $0,9
-add $0,108
+add $1,4
+lpb $0
+  equ $0,84
+lpe
+gcd $0,$1
+sub $0,1
+seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mul $0,36

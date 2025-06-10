@@ -1,6 +1,6 @@
 ; A276168: a(n) is the minimum first-player score difference of a "Coins in a Row" game over all permutations of coins 1..n with both players using a minimax strategy.
 ; Submitted by [SG-FC] hl
-; 1,1,0,0,-3,1,-8,0,-15,1
+; 1,1,0,0,-3,1,-8,0,-15,1,-24,0,-35,1,-48,0
 
 #offset 1
 

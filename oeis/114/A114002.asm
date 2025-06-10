@@ -1,8 +1,30 @@
 ; A114002: Expansion of g.f. x^k(1+x^(k+1))/(1-x^(k+1)).
-; Submitted by WTBroughton
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,2,1,2,0,1,2,2,0,1,2,0,0,0,1,2,2,2,0,0,1,2,0,0,0,0,0,1,2,2,0,2,0,0,0,1,2,0,2,0,0,0,0,0,1,2,2,0,0,2,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,1,2,2,2,2,0,2,0,0,0,0,0,1,2,0
-; Formula: a(n) = min(A126988(n+1),2)
 
 add $0,1
-seq $0,126988 ; Triangle read by rows: T(n,k) = n/k if k is a divisor of n; T(n,k) = 0 if k is not a divisor of n (1 <= k <= n).
-min $0,2
+mov $2,1
+mov $3,$0
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $4,$3
+add $4,1
+bin $4,2
+add $3,2
+sub $0,$4
+lpb $0
+  bin $2,$0
+  sub $3,1
+  gcd $0,$3
+lpe
+sub $3,$0
+mul $3,$2
+mov $0,$3
+sub $0,1
+add $1,$0
+mov $5,$1
+min $5,1
+mov $0,$5
+add $0,1
