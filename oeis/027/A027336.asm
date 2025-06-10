@@ -1,21 +1,20 @@
 ; A027336: Number of partitions of n that do not contain 2 as a part.
-; Submitted by [AF>Libristes] alain65
+; Submitted by Science United
 ; 1,1,1,2,3,4,6,8,11,15,20,26,35,45,58,75,96,121,154,193,242,302,375,463,573,703,861,1052,1282,1555,1886,2277,2745,3301,3961,4740,5667,6754,8038,9548,11323,13398,15836,18678,22001,25873,30383,35620,41715,48771
 
-mov $3,$0
-mov $5,2
-lpb $5
-  sub $5,1
-  add $0,$5
-  sub $0,1
-  mov $4,$0
-  max $4,0
-  seq $4,84376 ; G.f.: (1+x)/Product_{m>0} (1 - x^m).
-  mov $2,$5
-  mul $2,$4
-  add $1,$2
+mov $1,$0
+mov $3,2
+lpb $3
+  sub $3,1
+  mov $0,$1
+  add $0,$3
+  trn $0,1
+  gcd $1,$0
+  seq $0,84376 ; G.f.: (1+x)/Product_{m>0} (1 - x^m).
+  mov $4,$3
+  mul $4,$0
+  add $2,$4
 lpe
-min $3,1
-mul $3,$4
-sub $1,$3
-mov $0,$1
+mul $1,$0
+mov $0,$2
+sub $0,$1

@@ -11,11 +11,9 @@ lpb $3
   sub $3,1
   mov $0,$1
   add $0,$3
-  trn $0,1
   mov $5,$0
-  add $5,2
+  add $5,1
   seq $5,101301 ; The sum of the first n primes, minus n.
-  add $0,1
   add $0,$5
   seq $0,720 ; pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
   mov $2,$3

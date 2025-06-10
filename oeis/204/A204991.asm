@@ -5,7 +5,6 @@
 #offset 1
 
 sub $0,1
-min $0,63
 mov $2,$0
 add $2,1
 seq $0,25480 ; a(2n) = n, a(2n+1) = a(n).

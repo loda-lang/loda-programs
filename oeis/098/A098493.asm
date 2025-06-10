@@ -1,13 +1,20 @@
 ; A098493: Triangle T(n,k) read by rows: difference between A098489 and A098490 at triangular rows.
-; Submitted by LM
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,0,-1,-1,-1,1,-1,1,2,-1,0,3,0,-3,1,1,2,-5,-2,4,-1,1,-2,-7,6,5,-5,1,0,-5,0,15,-5,-9,6,-1,-1,-3,12,9,-25,1,14,-7,1,-1,3,15,-18,-29,35,7,-20,8,-1,0,7,0,-42,14,63,-42,-20,27,-9,1,1,4,-22,-24,85,14,-112,42
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 sub $1,$0
-add $3,$0
+mov $3,$0
 sub $0,$3
 add $1,1
 lpb $1

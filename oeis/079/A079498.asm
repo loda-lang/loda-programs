@@ -1,16 +1,19 @@
 ; A079498: Numbers whose sum of digits in base b gives 0 (mod b), for b = 3.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by loader3229
 ; 0,5,7,11,13,15,19,21,26,29,31,33,37,39,44,45,50,52,55,57,62,63,68,70,74,76,78,83,85,87,91,93,98,99,104,106,109,111,116,117,122,124,128,130,132,135,140,142,146,148,150,154,156,161,163,165,170,171,176,178,182,184,186,189,194,196,200,202,204,208,210,215,218,220,222,226,228,233,234,239
+; Formula: a(n) = 3*n+2*truncate((-sumdigits(3*n-3,3)*sign(3*n-3)+3*n-3)/2)-3*truncate((2*truncate((-sumdigits(3*n-3,3)*sign(3*n-3)+3*n-3)/2))/3)-3
 
 #offset 1
 
 sub $0,1
 mov $1,$0
-lpb $0
-  add $2,$0
-  div $0,3
-lpe
 mul $1,3
+mul $0,3
+mov $3,$0
+dgs $0,3
+sub $3,$0
+div $3,2
+mov $2,$3
 mul $2,2
 mod $2,3
 add $2,$1

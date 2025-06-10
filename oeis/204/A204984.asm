@@ -5,7 +5,6 @@
 #offset 1
 
 sub $0,1
-min $0,63
 add $0,1
 dir $0,2
 div $0,2

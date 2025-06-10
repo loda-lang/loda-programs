@@ -1,19 +1,18 @@
 ; A285950: Positions of 0's in A285949; complement of A285951.
-; Submitted by loader3229
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,4,5,7,8,10,12,13,14,16,18,19,21,22,23,25,26,28,30,31,33,34,35,37,39,40,41,43,44,46,48,49,50,52,54,55,57,58,59,61,63,64,65,67,68,70,72,73,75,76,77,79,80,82,84,85,86,88,90,91,93,94,95,97,98,100,102,103,105,106,107,109,111,112,113,115,116,118,120
-; Formula: a(n) = b(n-1), b(n) = b(n-1)+truncate((4*gcd(sumdigits(n-1,2),2))/3), b(0) = 1
+; Formula: a(n) = truncate((-sumdigits(2*n-2,2)*sign(2*n-2)+5*n-2*truncate((-sumdigits(2*n-2,2)*sign(2*n-2)+2*n-2)/2)-5)/2)+1
 
 #offset 1
 
-mov $1,1
 sub $0,1
-lpb $0
-  sub $0,1
-  mov $2,$0
-  dgs $2,2
-  gcd $2,2
-  mul $2,4
-  div $2,3
-  add $1,$2
-lpe
-mov $0,$1
+mov $2,$0
+mul $2,2
+mov $1,$2
+dgs $2,2
+sub $1,$2
+mod $1,2
+mul $0,3
+add $0,$1
+div $0,2
+add $0,1

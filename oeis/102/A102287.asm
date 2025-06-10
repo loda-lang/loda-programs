@@ -12,11 +12,20 @@ lpb $2
   mov $0,$3
   sub $0,$2
   mov $4,$0
-  seq $4,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+  mul $4,2
+  seq $4,188164 ; Number of palindromic structures of length n.
   add $0,3
   bin $0,2
-  sub $0,2
-  seq $0,61579 ; Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
+  sub $0,1
+  mov $5,$0
+  mul $5,8
+  nrt $5,2
+  sub $5,1
+  div $5,2
+  add $5,1
+  pow $5,2
+  sub $5,$0
+  mov $0,$5
   seq $0,123346 ; Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
   sub $0,$4
   div $0,2

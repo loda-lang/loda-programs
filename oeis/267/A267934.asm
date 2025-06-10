@@ -1,23 +1,17 @@
 ; A267934: Binary representation of the n-th iteration of the "Rule 249" elementary cellular automaton starting with a single ON (black) cell.
-; Submitted by Christian Krause
+; Submitted by BlisteringSheep
 ; 1,1,11011,1111111,111111111,11111111111,1111111111111,111111111111111,11111111111111111,1111111111111111111,111111111111111111111,11111111111111111111111,1111111111111111111111111,111111111111111111111111111,11111111111111111111111111111,1111111111111111111111111111111,111111111111111111111111111111111,11111111111111111111111111111111111,1111111111111111111111111111111111111,111111111111111111111111111111111111111,11111111111111111111111111111111111111111
 
-mov $1,4
-pow $1,$0
-mov $2,34
-div $2,$1
-mov $4,1
-sub $1,1
-trn $1,$2
-mov $0,$1
-mul $0,2
-add $0,1
-lpb $0
-  mov $5,$0
-  mod $5,2
-  mul $5,$4
-  div $0,2
-  add $3,$5
-  mul $4,10
+seq $0,267886 ; Decimal representation of the n-th iteration of the "Rule 235" elementary cellular automaton starting with a single ON (black) cell.
+seq $0,204093 ; Numbers whose set of base-10 digits is {0,6}.
+div $0,6
+mov $1,2
+mov $2,2
+mul $2,$0
+lpb $2
+  mov $2,216
+  add $0,1
+  mov $1,$0
 lpe
-mov $0,$3
+mov $0,$1
+sub $0,1

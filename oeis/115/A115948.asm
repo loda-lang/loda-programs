@@ -5,7 +5,6 @@
 #offset 1
 
 sub $0,1
-min $0,60
 add $0,1
 mov $3,$0
 sub $0,1

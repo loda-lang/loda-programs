@@ -5,7 +5,6 @@
 #offset 5
 
 sub $0,3
-mod $0,99
 lpb $0
   mov $1,$0
   seq $1,80339 ; Characteristic function of {1} union {primes}: 1 if n is 1 or a prime, else 0.

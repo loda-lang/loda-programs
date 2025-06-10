@@ -1,27 +1,24 @@
 ; A121444: Expansion of f(x^3, x^9) * f(x, x^2) in powers of x where f(, ) is Ramanujan's general theta functions.
-; Submitted by ChelseaOilman
+; Submitted by iBezanilla
 ; 1,1,1,1,1,2,0,1,1,1,2,1,1,0,1,2,1,0,2,1,1,1,1,1,1,2,1,0,0,1,2,2,1,1,0,3,0,1,1,0,2,0,1,1,2,2,1,1,0,1,1,1,2,1,1,0,1,2,1,0,3,0,0,1,1,2,1,1,1,1,3,1,0,1,0,2,0,1,1,1
 
-mov $4,3
-add $0,3
-lpb $0
-  sub $0,$4
-  mov $3,$0
+mov $5,3
+mov $2,$0
+add $2,3
+lpb $2
+  sub $2,$5
+  mov $3,$2
   max $3,0
-  mov $7,$3
-  mul $7,24
-  mov $6,$7
+  mov $6,$3
+  mul $6,24
   nrt $6,2
-  mul $3,12
-  add $3,1
-  mul $3,2
-  mov $1,$3
-  nrt $1,2
-  add $6,$1
-  mov $3,$6
-  mod $3,2
-  add $2,$3
-  add $4,$5
-  mov $5,3
+  add $6,2
+  div $6,2
+  bin $6,2
+  mul $3,3
+  equ $3,$6
+  add $5,$4
+  add $1,$3
+  mov $4,3
 lpe
-mov $0,$2
+mov $0,$1
