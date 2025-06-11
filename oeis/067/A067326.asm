@@ -13,7 +13,29 @@ lpb $2
   mov $0,$3
   sub $0,$2
   add $0,1
-  seq $0,178518 ; Triangle read by rows: T(n,k) is the number of permutations p of {1,2,...,n} having genus 0 and such that p(1)=k (see first comment for definition of genus).
-  add $1,$0
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $6,$4
+  add $6,1
+  bin $6,2
+  sub $0,$6
+  sub $0,2
+  mov $5,$4
+  sub $5,$0
+  sub $4,$5
+  mul $4,2
+  bin $4,$0
+  add $0,1
+  div $4,$0
+  mov $0,2
+  mul $0,$5
+  bin $0,$5
+  add $5,1
+  div $0,$5
+  mul $4,$0
+  add $1,$4
 lpe
 mov $0,$1

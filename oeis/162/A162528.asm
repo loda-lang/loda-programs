@@ -4,6 +4,7 @@
 
 #offset 1
 
+mov $1,8
 mov $2,$0
 sub $0,1
 add $2,5
@@ -14,7 +15,7 @@ lpb $2
   seq $3,33676 ; Largest divisor of n <= sqrt(n).
   equ $3,8
   sub $0,$3
-  add $1,2
+  add $1,4
   sub $2,$0
 lpe
 mov $0,$1

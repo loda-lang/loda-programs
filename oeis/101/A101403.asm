@@ -7,13 +7,11 @@ mov $5,2
 lpb $5
   bin $5,$4
   add $0,$5
-  sub $0,1
   mov $4,$0
-  max $4,0
-  add $4,1
   seq $4,246439 ; Numbers m such that A164349(m) = 1.
   mov $2,$5
   mul $2,$4
+  sub $0,1
   mul $0,$5
   add $1,$2
 lpe

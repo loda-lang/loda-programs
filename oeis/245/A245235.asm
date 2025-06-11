@@ -1,16 +1,15 @@
 ; A245235: Repeat 2^(n*(n+1)/2) n+1 times.
-; Submitted by iBezanilla
+; Submitted by BrandyNOW
 ; 1,2,2,8,8,8,64,64,64,64,1024,1024,1024,1024,1024,32768,32768,32768,32768,32768,32768,2097152,2097152,2097152,2097152,2097152,2097152,2097152,268435456,268435456,268435456,268435456,268435456,268435456,268435456,268435456
-; Formula: a(n) = truncate(2^(binomial(truncate((sqrtint(8*n+8)-1)/2),2)+truncate((sqrtint(8*n+8)-1)/2)))
+; Formula: a(n) = truncate(2^binomial(truncate((sqrtint(8*n+8)+1)/2),2))
 
 add $0,1
 mov $1,$0
 mul $1,8
 nrt $1,2
-sub $1,1
+add $1,1
 div $1,2
-mov $2,$1
-bin $2,2
-add $1,$2
-mov $0,2
-pow $0,$1
+bin $1,2
+mov $2,2
+pow $2,$1
+mov $0,$2

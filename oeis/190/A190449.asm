@@ -24,10 +24,8 @@ lpb $2
   div $5,2
   mod $5,4
   add $5,1
-  div $5,2
-  sub $3,1
   mov $3,$5
-  div $3,2
+  div $3,4
   sub $0,$3
   add $1,$4
   mov $4,$0

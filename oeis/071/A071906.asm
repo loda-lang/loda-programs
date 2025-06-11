@@ -1,12 +1,13 @@
 ; A071906: Sum of digits of 2^n (mod 2).
-; Submitted by Steve Dodd
+; Submitted by loader3229
 ; 1,0,0,0,1,1,0,1,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,0,1,0,0,0,0
+; Formula: a(n) = 10*2^n-sumdigits(10*2^n,10)-2*truncate((10*2^n-sumdigits(10*2^n,10))/2)
 
 mov $1,2
 pow $1,$0
-lpb $1
-  add $2,$1
-  div $1,10
-lpe
+mul $1,10
+mov $2,$1
+dgs $1,10
+sub $2,$1
 mov $0,$2
 mod $0,2

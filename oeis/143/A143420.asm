@@ -1,5 +1,5 @@
 ; A143420: Row sums of triangle A373101.
-; Submitted by kpmonaghan
+; Submitted by Owdjim
 ; 1,8,55,370,2520,17472,123151,880070,6360706,46402312,341153384,2524722928,18789734496,140521154048,1055383259791,7956220907758,60179579570382,456545145078408,3472804505717170
 
 #offset 2
@@ -15,8 +15,19 @@ lpb $2
   sub $2,1
   mov $0,$3
   sub $0,$2
-  add $0,1
-  seq $0,373101 ; Triangle read by rows, T(n,k) = (binomial(n,k)^3 - binomial(n,k))/6 for k=1..n-1 and n >= 2.
-  add $1,$0
+  mov $4,$0
+  mul $4,8
+  nrt $4,2
+  sub $4,1
+  div $4,2
+  mov $5,$4
+  add $5,1
+  bin $5,2
+  sub $0,$5
+  add $4,2
+  bin $4,$0
+  add $4,1
+  bin $4,3
+  add $1,$4
 lpe
 mov $0,$1

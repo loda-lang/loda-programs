@@ -1,23 +1,12 @@
 ; A294013: Sum of the differences of the larger and smaller parts in the partitions of 2n into two parts with the smaller part prime.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by DukeBox
 ; 0,0,2,6,10,16,22,30,38,46,54,64,74,86,98,110,122,136,150,166,182,198,214,232,250,268,286,304,322,342,362,384,406,428,450,472,494,518,542,566,590,616,642,670,698,726,754,784,814,844,874,904,934,966,998,1030,1062,1094,1126,1160,1194,1230,1266,1302,1338,1374,1410,1448,1486,1524,1562,1602,1642,1684,1726,1768,1810,1852,1894,1938
+; Formula: a(n) = 2*A002815(n-1)-2*n+2
 
 #offset 1
 
+sub $0,1
 mov $1,$0
-mul $1,2
-mov $2,1
-lpb $0
-  sub $0,1
-  div $0,2
-  mul $0,2
-  trn $0,1
-  add $0,3
-  seq $0,151799 ; Version 2 of the "previous prime" function: largest prime < n.
-  sub $2,$0
-  sub $2,$0
-  add $2,$1
-  sub $0,1
-lpe
-sub $2,1
-mov $0,$2
+seq $0,2815 ; a(n) = n + Sum_{k=1..n} pi(k), where pi() = A000720.
+sub $0,$1
+mul $0,2

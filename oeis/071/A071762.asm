@@ -1,7 +1,46 @@
 ; A071762: Leftmost 1 is converted to a 2, which then propagates one step at a time until it is rightmost; then it changes to a pair of 1's and the process repeats.
 ; Submitted by Christian Krause
 ; 0,1,2,11,21,12,111,211,121,112,1111,2111,1211,1121,1112,11111,21111,12111,11211,11121,11112,111111,211111,121111,112111,111211,111121,111112,1111111,2111111,1211111,1121111,1112111,1111211,1111121,1111112,11111111,21111111,12111111,11211111,11121111,11112111,11111211,11111121,11111112,111111111,211111111,121111111,112111111,111211111,111121111,111112111,111111211,111111121,111111112,1111111111,2111111111,1211111111,1121111111,1112111111,1111211111,1111121111,1111112111,1111111211,1111111121
-; Formula: a(n) = A261300(A089633(n))
 
-seq $0,89633 ; Numbers having no more than one 0 in their binary representation.
-seq $0,261300 ; Concatenate successive run lengths of 0's in the binary expansion of n, each increased by 1.
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $3,$1
+add $3,1
+bin $3,2
+sub $0,$3
+sub $0,1
+sub $1,$0
+add $0,2
+mov $2,2
+pow $2,$0
+sub $2,2
+mov $0,$2
+mov $2,2
+pow $2,$1
+mul $2,$0
+mov $0,$2
+sub $0,2
+div $0,2
+mov $4,$0
+lpb $0
+  mov $8,$0
+  max $8,1
+  log $8,2
+  mov $9,2
+  pow $9,$8
+  ban $9,$4
+  neq $9,0
+  div $0,2
+  mov $6,$7
+  mul $6,9
+  mov $5,$6
+  mul $5,$9
+  add $7,$5
+  add $7,8
+lpe
+mov $0,$7
+div $0,8

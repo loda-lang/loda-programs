@@ -4,14 +4,10 @@
 
 #offset 1
 
-sub $0,1
-mov $4,0
-mov $6,0
-mov $7,0
 mov $1,$0
-add $1,1
-mov $3,$1
-mov $8,$1
+mov $3,$0
+mov $8,$0
+sub $0,1
 add $1,1
 lpb $1
   sub $1,1

@@ -33,7 +33,6 @@ lpb $4
   add $9,$10
   add $9,1
   sub $6,$9
-  mov $0,$9
   mov $0,$6
   add $0,$5
   add $0,1

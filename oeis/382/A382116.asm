@@ -1,17 +1,15 @@
 ; A382116: a(n) = floor(n*g+(g-1)/2), where g is the golden ratio.
-; Submitted by Science United
+; Submitted by shiva
 ; 0,1,3,5,6,8,10,11,13,14,16,18,19,21,22,24,26,27,29,31,32,34,35,37,39,40,42,43,45,47,48,50,52,53,55,56,58,60,61,63,65,66,68,69,71,73,74,76,77,79,81,82,84,86,87,89,90,92,94,95,97,99,100,102,103,105
-; Formula: a(n) = truncate((truncate((2*n+sqrtint(5*(2*n+1)^2)+1)/2)-1)/2)
+; Formula: a(n) = truncate((sqrtint(5*(n+28)^2)+n+28)/2)-45
 
-mul $0,2
-add $0,1
-mov $2,$0
+mov $1,$0
+add $1,28
+mov $2,$1
 pow $2,2
 mul $2,5
 nrt $2,2
-add $0,$2
-div $0,2
-sub $0,1
-mov $1,$0
+add $1,$2
 div $1,2
 mov $0,$1
+sub $0,45

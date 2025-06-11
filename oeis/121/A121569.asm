@@ -1,17 +1,14 @@
 ; A121569: a(n) = Fibonacci((prime(n)+3)/2) - 1.
+; Submitted by mmonnin
 ; 1,2,4,12,20,54,88,232,986,1596,6764,17710,28656,75024,317810,1346268,2178308,9227464,24157816,39088168,165580140,433494436,1836311902,12586269024,32951280098,53316291172,139583862444,225851433716
-; Formula: a(n) = A166876(truncate(A093515(2*n-1)/2)-1)-1982
+; Formula: a(n) = truncate((2*A097280(truncate(A000040(n)/2))-14)/4)+1
 
 #offset 2
 
-sub $0,1
-mov $1,$0
-mul $1,2
-mov $2,$1
-add $2,1
-seq $2,93515 ; Numbers k such that either k or k-1 is a prime.
-mov $0,$2
+seq $0,40 ; The prime numbers.
 div $0,2
-sub $0,1
-seq $0,166876 ; a(n) = a(n-1) + Fibonacci(n), a(1)=1983.
-sub $0,1982
+seq $0,97280 ; Perimeter of integer triangle (A001611(n), A001611(n+1), A001611(n+2)).
+mul $0,2
+sub $0,14
+div $0,4
+add $0,1

@@ -1,24 +1,25 @@
 ; A285351: a(n) = 2n + 1 - A285346(n).
-; Submitted by iBezanilla
+; Submitted by KetamiNO [YouTube]
 ; 0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1
-; Formula: a(n) = -2*truncate((truncate(d(4*n)/4)+1)/2)+truncate(d(4*n)/4)+1, b(n) = truncate((-c(n-1)+b(n-1))/2), b(2) = -8, b(1) = -1, b(0) = 0, c(n) = 2*gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2),4)*c(n-1), c(2) = 128, c(1) = 16, c(0) = 2, d(n) = gcd(-2*truncate((d(n-1)+truncate((-c(n-1)+b(n-1))/2))/2)+d(n-1)+truncate((-c(n-1)+b(n-1))/2),4), d(2) = 4, d(1) = 4, d(0) = 1
+; Formula: a(n) = -2*truncate((b(n-1)+1)/2)+b(n-1)+1, b(n) = truncate((8*c(n-1)+b(n-1)+1)/(4*d(n-1))), b(2) = 1, b(1) = 0, b(0) = 1, c(n) = -4*truncate((8*c(n-1)+b(n-1)+1)/(4*d(n-1)))*d(n-1)+8*c(n-1)+b(n-1)+1, c(2) = 1, c(1) = 2, c(0) = 0, d(n) = 4*d(n-1), d(2) = 16, d(1) = 4, d(0) = 1
 
 #offset 1
 
-mov $2,2
+mov $1,1
 mov $3,1
-mul $0,4
+sub $0,1
 lpb $0
   sub $0,1
-  sub $1,$2
-  div $1,2
-  add $3,$1
-  mod $3,2
-  gcd $3,4
-  mul $2,2
-  mul $2,$3
+  add $1,1
+  mul $2,8
+  add $2,$1
+  mul $3,4
+  mov $1,$2
+  div $1,$3
+  mov $4,$1
+  mul $4,$3
+  sub $2,$4
 lpe
-mov $0,$3
-div $0,4
+mov $0,$1
 add $0,1
 mod $0,2

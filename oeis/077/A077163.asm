@@ -1,15 +1,14 @@
 ; A077163: n-th power of next n numbers.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by loader3229
 ; 1,4,9,64,125,216,2401,4096,6561,10000,161051,248832,371293,537824,759375,16777216,24137569,34012224,47045881,64000000,85766121,2494357888,3404825447,4586471424,6103515625,8031810176,10460353203
+; Formula: a(n) = truncate(n^(truncate((sqrtint(8*n)-1)/2)+1))
 
 #offset 1
 
-sub $0,1
 mov $1,$0
-lpb $1
-  add $2,1
-  sub $1,$2
-lpe
-add $2,1
-add $0,1
-pow $0,$2
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+add $1,1
+pow $0,$1

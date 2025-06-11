@@ -1,22 +1,22 @@
 ; A003159: Numbers whose binary representation ends in an even number of zeros.
-; Submitted by Science United
+; Submitted by fzs600
 ; 1,3,4,5,7,9,11,12,13,15,16,17,19,20,21,23,25,27,28,29,31,33,35,36,37,39,41,43,44,45,47,48,49,51,52,53,55,57,59,60,61,63,64,65,67,68,69,71,73,75,76,77,79,80,81,83,84,85,87,89,91,92,93,95,97,99,100,101,103,105,107,108,109,111,112,113,115,116,117,119
 
 #offset 1
 
-mov $2,2
-add $0,1
+mov $1,1
+mov $2,1
 lpb $0
   sub $0,1
-  add $4,$3
-  dif $1,$3
-  sub $1,$2
-  div $1,2
-  sub $1,1
-  bin $3,$2
-  add $3,$1
-  gcd $3,4
-  mul $2,$3
-  div $3,2
+  mov $3,$1
+  add $3,1
+  bxo $3,$1
+  div $3,3
+  add $2,$3
+  bxo $2,$3
+  mov $1,$2
 lpe
-mov $0,$4
+mov $0,$1
+sub $0,3
+div $0,2
+add $0,1
