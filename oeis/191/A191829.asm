@@ -11,11 +11,10 @@ lpb $0
   mov $4,$2
   sub $4,1
   lpb $4
-    trn $4,1
     mov $3,$4
-    add $3,1
     seq $3,55507 ; a(n) = Sum_{k=1..n} d(k)*d(n+1-k), where d(k) is number of positive divisors of k.
     add $1,$3
+    sub $4,1
     trn $4,$0
   lpe
   add $2,1

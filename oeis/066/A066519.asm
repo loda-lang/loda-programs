@@ -4,22 +4,19 @@
 
 #offset 1
 
-mov $3,1
-mov $5,$0
-mov $1,2
-lpb $1
-  sub $1,1
-  add $0,$1
-  sub $0,1
-  mov $2,$0
-  max $2,0
-  seq $2,190276 ; Numbers k such that tau(2k-1) = tau(2k+1) where tau(k) = A000005(k).
-  mov $4,$1
-  mul $4,$2
-  add $3,$4
-lpe
-min $5,1
-mul $5,$2
-sub $3,$5
-mov $0,$3
 sub $0,1
+mov $5,$0
+mov $4,3
+lpb $4
+  div $4,2
+  mov $0,$5
+  add $0,$4
+  seq $0,190276 ; Numbers k such that tau(2k-1) = tau(2k+1) where tau(k) = A000005(k).
+  mov $3,$4
+  mul $3,$0
+  mul $5,$4
+  mov $1,$0
+  add $2,$3
+lpe
+sub $2,$1
+mov $0,$2

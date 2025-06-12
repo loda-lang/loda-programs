@@ -1,11 +1,14 @@
 ; A090239: a(n) = A053838(n) + 2 modulo 3.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by loader3229
 ; 2,0,1,0,1,2,1,2,0,0,1,2,1,2,0,2,0,1,1,2,0,2,0,1,0,1,2,0,1,2,1,2,0,2,0,1,1,2,0,2,0,1,0,1,2,2,0,1,0,1,2,1,2,0,1,2,0,2,0,1,0,1,2,2,0,1,0,1,2,1,2,0,0,1,2,1,2,0,2,0
+; Formula: a(n) = -3*truncate((truncate((3*n-sumdigits(3*n,3))/2)+20)/3)+truncate((3*n-sumdigits(3*n,3))/2)+20
 
-lpb $0
-  add $1,$0
-  div $0,3
-lpe
+mul $0,3
+mov $2,$0
+dgs $0,3
+sub $2,$0
+div $2,2
+mov $1,$2
 add $1,20
 mod $1,3
 mov $0,$1

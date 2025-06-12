@@ -14,7 +14,5 @@ bin $2,2
 add $1,1
 sub $0,$2
 mod $0,$1
-add $0,2
 add $2,$0
 mov $0,$2
-sub $0,2

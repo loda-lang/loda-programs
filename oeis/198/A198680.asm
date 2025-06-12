@@ -1,19 +1,14 @@
 ; A198680: Multiples of 3 whose sum of base-3 digits are also multiples of 3.
-; Submitted by KetamiNO [YouTube]
+; Submitted by DukeBox
 ; 0,15,21,33,39,45,57,63,78,87,93,99,111,117,132,135,150,156,165,171,186,189,204,210,222,228,234,249,255,261,273,279,294,297,312,318,327,333,348,351,366,372,384,390,396,405,420,426,438,444,450,462,468,483,489,495,510,513,528,534,546,552,558,567,582,588,600,606,612,624,630,645,654,660,666,678,684,699,702,717
-; Formula: a(n) = -3*sumdigits(3*n-3,3)*sign(3*n-3)+18*n-9*truncate((-sumdigits(3*n-3,3)*sign(3*n-3)+3*n-3)/3)-18
+; Formula: a(n) = -3*sumdigits(3*n-1,3)*sign(3*n-1)+9*truncate((sumdigits(3*n-1,3)*sign(3*n-1))/3)+9*n-3
 
 #offset 1
 
+mul $0,3
 sub $0,1
 mov $1,$0
-mul $1,3
-mul $0,3
-mov $3,$0
-dgs $0,3
-sub $3,$0
-mov $2,$3
-mod $2,3
-add $2,$1
-mov $0,$2
+dgs $1,3
+mod $1,3
+sub $0,$1
 mul $0,3

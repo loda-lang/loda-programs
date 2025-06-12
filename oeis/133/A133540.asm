@@ -11,7 +11,6 @@ lpb $3
   sub $3,1
   mov $0,$5
   add $0,$3
-  max $0,0
   add $0,1
   seq $0,40 ; The prime numbers.
   pow $0,4

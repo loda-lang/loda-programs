@@ -1,17 +1,24 @@
 ; A285982: a(n) = n! (mod n + 3).
-; Submitted by shiva
+; Submitted by Science United
 ; 1,1,2,0,3,0,0,0,5,0,6,0,0,0,8,0,9,0,0,0,11,0,0,0,0,0,14,0,15,0,0,0,0,0,18,0,0,0,20,0,21,0,0,0,23,0,0,0,0,0,26,0,0,0,0,0,29,0,30,0,0,0,0,0,33,0,0,0,35,0,36,0,0,0,0,0,39,0,0,0
-; Formula: a(n) = -truncate((b(n)+1)/(n+3))*(n+3)+b(n), b(n) = n*b(n-1), b(0) = 1
 
-mov $1,$0
-add $1,2
-mov $2,1
-lpb $0
-  mul $2,$0
-  sub $0,1
-lpe
-add $1,1
-mov $0,$2
+mov $2,$0
 add $0,1
-mod $0,$1
-sub $0,1
+add $2,4
+pow $2,2
+lpb $2
+  sub $2,1
+  mov $4,$5
+  add $4,1
+  mov $3,$1
+  nrt $3,2
+  add $3,1
+  seq $3,136548 ; a(n) = max {k >= 1 | sigma(k) <= n}.
+  mov $5,$1
+  add $5,1
+  gcd $5,$3
+  add $1,1
+lpe
+mov $0,$4
+sub $0,2
+div $0,2

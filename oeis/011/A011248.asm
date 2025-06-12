@@ -1,67 +1,12 @@
 ; A011248: Twice A000364.
 ; Submitted by Science United
 ; 2,2,10,122,2770,101042,5405530,398721962,38783024290,4809759350882,740742376475050,138697748786275802,31029068327114173810,8174145018586247784722,2504519282807259730936570,883087786498046209107365642,355038783159078578873329579330,161446598471775796124336494906562
-; Formula: a(n) = 2*A008280((truncate((sqrtint(8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))-8*(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))+8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)-8*binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))-1)/2)+1)^2-(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*(-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))+(-2*truncate(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)/2)+truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2))*((truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(2*n,2)-binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2)+truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2))-(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-binomial(truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)/2),2)-truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)+binomial(2*n,2)+binomial(truncate((sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2+8*truncate(sqrtint(8*(truncate((sqrtint(8*binomial(2*n,2)+8)-1)/2)+1)^2-8*binomial(2*n,2)-8)/2)-8*binomial(2*n,2)+8)-1)/2)+1,2))
+; Formula: a(n) = 2*gcd(A155585(2*min(n,27)),A122045(2*min(n,27)))
 
+min $0,27
+mul $0,2
 mov $1,$0
-add $1,$0
-bin $1,2
-add $1,1
-mov $5,$1
-mul $5,8
-nrt $5,2
-sub $5,1
-div $5,2
-add $5,1
-pow $5,2
-sub $5,$1
-mov $1,$5
-mul $1,8
-nrt $1,2
-div $1,2
-mov $2,$5
-add $2,$1
-mov $1,$2
-add $1,1
-mov $3,$2
-add $3,2
-mov $6,$3
-mul $6,8
-nrt $6,2
-sub $6,1
-div $6,2
-mov $7,$6
-add $7,1
-bin $7,2
-sub $3,$7
-sub $3,1
-mov $8,$6
-mod $8,2
-sub $6,$3
-mul $6,$8
-mul $8,$3
-sub $3,$8
-add $3,$6
-add $3,$1
-add $1,1
-mov $4,$1
-mul $4,8
-nrt $4,2
-div $4,2
-bin $4,2
-sub $1,$4
-sub $3,$1
-mov $1,$3
-add $1,1
-mov $9,$1
-mul $9,8
-nrt $9,2
-sub $9,1
-div $9,2
-add $9,1
-pow $9,2
-sub $9,$1
-mov $1,$9
-seq $1,8280 ; Boustrophedon version of triangle of Euler-Bernoulli or Entringer numbers read by rows.
-mul $1,2
-mov $0,$1
+seq $1,122045 ; Euler (or secant) numbers E(n).
+seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
+gcd $0,$1
+mul $0,2

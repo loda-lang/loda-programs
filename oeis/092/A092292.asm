@@ -1,13 +1,16 @@
 ; A092292: a(n) = 3*n + A053838(n).
-; Submitted by Science United
+; Submitted by loader3229
 ; 0,4,8,10,14,15,20,21,25,28,32,33,38,39,43,45,49,53,56,57,61,63,67,71,73,77,78,82,86,87,92,93,97,99,103,107,110,111,115,117,121,125,127,131,132,135,139,143,145,149,150
+; Formula: a(n) = 3*n-3*truncate(truncate((3*n-sumdigits(3*n,3))/2)/3)+truncate((3*n-sumdigits(3*n,3))/2)
 
 mov $1,$0
-lpb $0
-  add $2,$0
-  div $0,3
-lpe
 mul $1,3
+mul $0,3
+mov $3,$0
+dgs $0,3
+sub $3,$0
+div $3,2
+mov $2,$3
 mod $2,3
 add $2,$1
 mov $0,$2
