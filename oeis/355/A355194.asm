@@ -1,0 +1,33 @@
+; A355194: The number of evenly tagged partitions: partitions of n elements together with an involution defined on the set of classes which has at most one fixed point, such that a class and its image have the same number of elements.
+; Submitted by fzs600
+; 1,1,2,4,13,41,176,722,3774,18958,116302,687182,4812226,32541874,255274826,1938568634,16798483589,141220228149,1337121257864,12305678519102,126208299343263,1260257489267963,13901541357573146,149520289244078172,1763398965493327476,20305273554132394116,254757111936065037366,3124397083380404466442,41522224675984320242344,539984024148212076555968,7573027615460998060034266,104031198056922847619666326,1534634064222957503649104462,22193869689322584103833516494,343376710628813722533801779798
+
+mov $2,1
+add $0,1
+lpb $0
+  sub $0,1
+  mov $5,2
+  max $6,1
+  mov $4,$2
+  lpb $4
+    mov $8,$4
+    trn $8,1
+    seq $8,138364 ; The number of Motzkin n-paths with exactly one flat step.
+    mov $9,10
+    add $9,$5
+    sub $4,1
+    mul $7,$1
+    add $7,$0
+    add $7,$4
+    bin $7,$0
+    mul $7,$$9
+    mul $7,$8
+    add $5,1
+    add $6,$7
+  lpe
+  add $9,1
+  mov $3,$6
+  mov $$9,$3
+  add $2,1
+lpe
+mov $0,$3
