@@ -280,7 +280,6 @@ A088190: Largest quadratic residue modulo prime(n).
 A088308: 2 followed by list of composite numbers mod 10.
 A088377: (Smallest prime-factor of n)^2.
 A088580: a(n) = 1 + sigma(n).
-A088673: n mod A002024(n), where A002024 is "n appears n times": 1, 2, 2, 3, 3, 3, ...
 A088707: Semiprimes + 1.
 A088730: Numbers of the form p^p - 1, where p is a prime.
 A088837: Numerator of sigma(2*n)/sigma(n). Denominator see in A038712.
