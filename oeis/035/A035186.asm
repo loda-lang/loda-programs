@@ -8,13 +8,11 @@ mov $1,$0
 mul $1,2
 mov $2,$1
 sub $2,1
-mov $6,0
 bxo $1,$2
 add $1,1
 div $1,2
 log $1,2
 mod $1,2
-mov $3,0
 mov $4,$0
 mul $0,2
 lpb $0

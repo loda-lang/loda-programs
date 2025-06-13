@@ -1,11 +1,8 @@
 ; A228039: Thue-Morse sequence along the squares: A010060(n^2).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 0,1,1,0,1,1,0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,0,1,1,0,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,1,0,0,1,0,1,1,1,1,1,0,1,1,1,0,0,1,1,1,1,1
+; Formula: a(n) = sumdigits(n^2,2)%2
 
 pow $0,2
-lpb $0
-  add $1,$0
-  div $0,2
-lpe
-mov $0,$1
+dgs $0,2
 mod $0,2

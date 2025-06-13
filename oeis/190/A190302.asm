@@ -1,18 +1,16 @@
 ; A190302: Smallest number h such that the decimal expansion of n*h starts with 1.
-; Submitted by Aurum
+; Submitted by loader3229
 ; 1,5,4,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,5,5,5,5,5,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+; Formula: a(n) = truncate((truncate(10^logint(5*n,10))+n-1)/n)
 
 #offset 1
 
 mov $1,$0
-mov $3,$0
-mov $0,1
-div $1,2
-lpb $1
-  div $1,10
-  mul $0,10
-lpe
-gcd $2,$3
-sub $0,1
-div $0,$2
-add $0,1
+mul $1,5
+log $1,10
+mov $2,10
+pow $2,$1
+sub $2,1
+add $2,$0
+div $2,$0
+mov $0,$2

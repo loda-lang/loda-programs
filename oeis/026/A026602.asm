@@ -1,15 +1,13 @@
 ; A026602: Numbers k such that A026600(k) = 2.
-; Submitted by sascha.gibson@gmx.de
+; Submitted by PaulS
 ; 2,4,9,10,15,17,21,23,25,28,33,35,39,41,43,47,49,54,57,59,61,65,67,72,73,78,80,82,87,89,93,95,97,101,103,108,111,113,115,119,121,126,127,132,134,137,139,144,145,150,152,156,158,160
-; Formula: a(n) = -sumdigits(3*n-3,3)*sign(3*n-3)+3*truncate((sumdigits(3*n-3,3)*sign(3*n-3)+4)/3)+3*n-4
+; Formula: a(n) = -sumdigits(3*n-2,3)*sign(3*n-2)+3*truncate((sumdigits(3*n-2,3)*sign(3*n-2))/3)+3*n
 
 #offset 1
 
-sub $0,1
 mul $0,3
 mov $1,$0
+sub $1,2
 dgs $1,3
-add $1,4
 mod $1,3
 sub $0,$1
-add $0,3

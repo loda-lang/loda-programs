@@ -1,19 +1,21 @@
 ; A184590: floor[(n*e+1)/(e-1)]; complement of A184589.
-; Submitted by FritzB
+; Submitted by Science United
 ; 2,3,5,6,8,10,11,13,14,16,17,19,21,22,24,25,27,29,30,32,33,35,36,38,40,41,43,44,46,48,49,51,52,54,55,57,59,60,62,63,65,67,68,70,71,73,74,76,78,79,81,82,84,86,87,89,90,92,93,95,97,98,100,101,103,104,106,108,109,111,112,114,116,117,119,120,122,123,125,127
 
 #offset 1
 
-add $0,1
-mov $1,-9
-mov $3,$0
-lpb $3
-  mul $2,$3
-  add $2,$1
-  sub $3,1
-  add $1,$2
-lpe
-mul $1,$0
-div $1,$2
-mov $0,$1
 sub $0,1
+mov $2,$0
+pow $2,2
+add $2,180
+lpb $2
+  mov $3,$1
+  seq $3,292663 ; Rank of n*(e-1) when all the numbers j*(e+1) and k*e, for j>=1, k>=1, are jointly ranked.
+  sub $3,1
+  add $0,1
+  add $1,1
+  add $2,$3
+  sub $2,$0
+lpe
+mov $0,$1
+sub $0,2

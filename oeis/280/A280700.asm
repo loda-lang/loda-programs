@@ -1,10 +1,11 @@
 ; A280700: Binary weight of terms of A005187: a(n) = A000120(A005187(n)).
-; Submitted by Skillz
+; Submitted by loader3229
 ; 0,1,2,1,3,1,2,3,4,1,2,3,3,4,3,3,5,1,2,3,3,4,3,3,4,5,3,3,4,4,3,4,6,1,2,3,3,4,3,3,4,5,3,3,4,4,3,4,5,6,3,3,4,4,3,4,5,5,3,4,4,5,6,4,7,1,2,3,3,4,3,3,4,5,3,3,4,4,3,4
+; Formula: a(n) = sumdigits(2*n-sumdigits(2*n,2),2)*sign(2*n-sumdigits(2*n,2))
 
-lpb $0
-  add $1,$0
-  div $0,2
-lpe
+mul $0,2
+mov $1,$0
+dgs $0,2
+sub $1,$0
 dgs $1,2
 mov $0,$1

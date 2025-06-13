@@ -1,20 +1,16 @@
 ; A060142: Ordered set S defined by these rules: 0 is in S and if x is in S then 2x+1 and 4x are in S.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by Science United
 ; 0,1,3,4,7,9,12,15,16,19,25,28,31,33,36,39,48,51,57,60,63,64,67,73,76,79,97,100,103,112,115,121,124,127,129,132,135,144,147,153,156,159,192,195,201,204,207,225,228,231,240,243,249,252,255,256,259,265,268,271,289,292,295,304,307,313,316,319,385,388,391,400,403,409,412,415,448,451,457,460
 
-mov $1,1
 mov $2,$0
-pow $2,2
+pow $2,4
 lpb $2
   mov $3,$1
   seq $3,316832 ; In A316831, replace 2's and 3's with 0's.
+  sub $3,1
+  equ $3,0
   sub $0,$3
-  add $1,2
-  mov $4,$0
-  max $4,0
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+  add $1,1
+  sub $2,$0
 lpe
 mov $0,$1
-div $0,2

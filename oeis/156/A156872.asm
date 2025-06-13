@@ -1,18 +1,21 @@
 ; A156872: Period 12: 1,3,-1,3,1,0,-1,-3,1,-3,-1,0 repeated.
-; Submitted by Jon Maiga
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0,1,3,-1,3,1,0,-1,-3,1,-3,-1,0
-; Formula: a(n) = b(2*n+1), b(n) = 19*b(n-1)-9*truncate((20*b(n-1))/9)+b(n-2), b(1) = 1, b(0) = 1
+; Formula: a(n) = truncate((-10*truncate((-18*b(n)+81)/10)-18*b(n)+81)/2), b(n) = 2*b(n-1)-9*truncate((2*b(n-1)+c(n-1))/9)+c(n-1)+1, b(1) = 3, b(0) = 1, c(n) = b(n-1)+c(n-1), c(1) = 1, c(0) = 0
 
-mov $3,1
-mul $0,2
-add $0,1
+mov $2,1
 lpb $0
   sub $0,1
-  sub $1,$3
-  mov $2,$3
-  mul $3,20
-  mod $3,9
-  add $3,$1
-  mov $1,$2
+  add $3,$2
+  add $2,$3
+  mod $2,9
+  add $2,1
 lpe
-mov $0,$3
+mov $1,6
+sub $1,$2
+mul $1,2
+sub $1,3
+mov $0,$1
+mul $0,9
+mod $0,10
+div $0,2

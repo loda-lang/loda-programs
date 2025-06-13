@@ -1,21 +1,20 @@
 ; A333296: Largest number of non-congruent integer-sided bricks that can be assembled into an n X n X n cube.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,1,6,10,15,21,28,35,43,52
+; Formula: a(n) = -max(n-1,1)+floor((3*(n-1)^2)/10)+truncate((43*max(n-1,1)-6)/10)-1
 
 #offset 1
 
-mov $3,$0
-min $3,7
-mov $4,11
-seq $4,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
-mov $2,$0
-bin $2,$4
-mov $1,$2
-equ $1,0
-add $2,$1
-mod $4,$2
-add $4,$3
-add $4,$2
-max $4,3
-mov $0,$4
+sub $0,1
+mov $1,$0
+max $1,1
+pow $0,2
+mul $0,3
+div $0,10
 sub $0,2
+sub $0,$1
+mul $1,43
+sub $1,6
+div $1,10
+add $1,1
+add $0,$1
