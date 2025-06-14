@@ -13,9 +13,6 @@ lpb $0
   div $2,4
   add $3,$2
   trn $0,6
-  mov $2,$3
-  mul $2,2
-  add $1,$2
+  add $1,$3
 lpe
 mov $0,$1
-div $0,2

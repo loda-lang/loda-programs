@@ -1,18 +1,17 @@
 ; A269695: Number of active (ON, black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 6", based on the 5-celled von Neumann neighborhood.
-; Submitted by jprange
+; Submitted by shiva
 ; 1,5,4,20,4,20,16,80,4,20,16,80,16,80,64,320,4,20,16,80,16,80,64,320,16,80,64,320,64,320,256,1280,4,20,16,80,16,80,64,320,16,80,64,320,64,320,256,1280,16,80,64,320,64,320,256,1280,64,320,256,1280,256,1280,1024,5120,4,20,16,80,16,80,64,320,16,80,64,320,64,320,256,1280
 
 mov $1,1
 mov $2,1
 lpb $0
-  add $1,4
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
+  mul $1,4
+  lpb $0
+    dif $0,2
+    mul $2,0
+  lpe
   div $0,2
-  mul $2,$1
-  dif $2,$3
-  equ $1,0
+  add $1,$2
+  mul $2,0
 lpe
-mov $0,$2
+mov $0,$1

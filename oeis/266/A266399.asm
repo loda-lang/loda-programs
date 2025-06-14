@@ -11,7 +11,12 @@ add $2,7
 pow $2,2
 lpb $2
   add $3,1
-  seq $3,54429 ; Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
+  mov $5,$3
+  log $5,2
+  mov $6,2
+  pow $6,$5
+  sub $6,1
+  bxo $3,$6
   seq $3,265754 ; Reduced frequency counts for A004001: a(n) = A265332(n+1) - A036987(n).
   trn $3,2
   min $3,1

@@ -1,13 +1,15 @@
 ; A060632: a(n) = 2^wt(floor(n/2)) (i.e., 2^A000120(floor(n/2)), or A001316(floor(n/2))).
-; Submitted by [AF>France>Ouest>Normandie]The Stress Man (-:
+; Submitted by loader3229
 ; 1,1,2,2,2,2,4,4,2,2,4,4,4,4,8,8,2,2,4,4,4,4,8,8,4,4,8,8,8,8,16,16,2,2,4,4,4,4,8,8,4,4,8,8,8,8,16,16,4,4,8,8,8,8,16,16,8,8,16,16,16,16,32,32,2,2,4,4,4,4,8,8,4,4,8,8,8,8,16,16
+; Formula: a(n) = truncate(2^(-2*floor(n/4)+floor(n/2)+sumdigits(2*floor(n/4),2)))
 
-div $0,2
 mov $2,$0
-lpb $2
-  div $2,2
-  sub $0,$2
-lpe
+div $2,4
+mul $2,2
+div $0,2
+sub $0,$2
+dgs $2,2
+add $0,$2
 mov $1,$0
 mov $0,2
 pow $0,$1

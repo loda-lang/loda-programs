@@ -1,16 +1,26 @@
 ; A166356: Expansion of e.g.f. 1 + x*arctanh(x), even powers only.
-; Submitted by Irish Republican
+; Submitted by BrandyNOW
 ; 1,2,8,144,5760,403200,43545600,6706022400,1394852659200,376610217984000,128047474114560000,53523844179886080000,26976017466662584320000,16131658445064225423360000,11292160911544957796352000000,9146650338351415815045120000000
-; Formula: a(n) = gcd(c(2*n),b(2*n)), b(n) = n*b(n-2)*(n-3), b(3) = 0, b(2) = -2, b(1) = 1, b(0) = 1, c(n) = c(n-2), c(3) = 0, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = floor((floor(floor((10*binomial(2*n,n))/(max(2*n-2,0)+1))/5)*b(n)^2)/2), b(n) = n*b(n-1), b(0) = 1
 
-mov $1,1
-mul $0,2
-lpb $0
-  mov $2,$0
-  sub $2,3
-  mul $1,$0
-  mul $1,$2
-  sub $0,2
+add $0,3
+mov $3,1
+mov $1,$0
+sub $1,3
+lpb $1
+  mul $3,$1
+  sub $1,1
 lpe
-gcd $3,$1
-mov $0,$3
+sub $0,3
+mov $2,$0
+pow $3,2
+mul $0,2
+bin $0,$2
+mul $0,10
+mul $2,2
+trn $2,2
+add $2,1
+div $0,$2
+div $0,5
+mul $0,$3
+div $0,2

@@ -12,6 +12,5 @@ mov $2,$0
 sub $2,3
 bin $2,5
 mul $1,$2
-sub $0,7
 mov $0,$1
 div $0,6

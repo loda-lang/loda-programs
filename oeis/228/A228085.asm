@@ -1,5 +1,5 @@
 ; A228085: a(n) = number of distinct k which satisfy n = k + wt(k), where wt(k) (A000120) gives the number of 1's in binary representation of a nonnegative integer k.
-; Submitted by Kotenok2000
+; Submitted by Athlici
 ; 1,0,1,1,0,2,0,1,1,1,1,1,1,0,2,0,1,2,0,2,1,0,2,0,1,1,1,1,1,1,0,2,0,2,1,1,2,0,2,0,1,1,1,1,1,1,0,2,0,1,2,0,2,1,0,2,0,1,1,1,1,1,1,0,2,1,1,2,1,1,2,0,1,1,1,1,1,1,0,2
 
 mov $1,$0
@@ -10,13 +10,11 @@ lpb $2
   sub $2,1
   mov $0,$1
   sub $0,$2
-  dif $0,2
-  seq $0,120 ; 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).
+  dgs $0,2
   mov $4,9
   pow $4,$0
   mul $4,10
   div $4,9
-  mov $0,$4
   div $3,9
   add $3,$4
 lpe

@@ -1,29 +1,24 @@
 ; A131337: Row sums of triangle A131336.
-; Submitted by Jamie Morken(w3)
+; Submitted by BrandyNOW
 ; 1,2,4,9,16,32,57,106,188,337
-; Formula: a(n) = truncate(b(n+1)/2), b(n) = -c(n-2)+b(n-1)+b(n-2)+2, b(6) = 32, b(5) = 18, b(4) = 8, b(3) = 4, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = 2*c(n-2)+c(n-3)-4, c(5) = -12, c(4) = -4, c(3) = -4, c(2) = 0, c(1) = 0, c(0) = 0
+; Formula: a(n) = c(n-1)+1, a(4) = 9, a(3) = 4, a(2) = 2, a(1) = 1, a(0) = 0, b(n) = b(n-1)+b(n-2)+2, b(4) = 8, b(3) = 4, b(2) = 2, b(1) = 0, b(0) = 0, c(n) = 2*c(n-2)+b(n-1)+c(n-3)+4, c(4) = 15, c(3) = 8, c(2) = 3, c(1) = 1, c(0) = 0
 
 #offset 1
 
-add $0,1
 lpb $0
   sub $0,1
-  sub $2,$5
-  sub $3,$4
-  mov $5,$1
+  sub $5,$4
   mov $6,$4
-  sub $6,4
-  add $2,$3
-  add $2,$4
+  add $6,$2
+  add $6,1
+  mov $2,$4
+  add $2,1
+  mov $4,$1
   add $1,$3
-  add $1,2
-  mov $3,$4
-  mul $3,2
-  mov $4,$2
-  mov $2,$3
-  add $2,$7
-  mov $3,$5
-  mov $7,$6
+  mov $3,2
+  add $3,$4
+  add $4,$5
+  add $4,$6
+  mov $5,$6
 lpe
-mov $0,$3
-div $0,2
+mov $0,$2

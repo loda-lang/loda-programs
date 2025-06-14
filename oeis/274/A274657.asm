@@ -1,8 +1,18 @@
 ; A274657: Numerators of the coefficients of z^n/n! for the expansion of hypergeometric([1/2,1/2],[1];z).
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,1,9,75,3675,59535,2401245,57972915,13043905875,418854310875,30241281245175,1212400457192925,213786613951685775,10278202593831046875,1070401384414690453125,60013837619516978071875,57673297952355815927071875,3694483615889146090857721875
 
-seq $0,92563 ; Coefficients in asymptotic expansion of I_0(x)sqrt(2*Pi*x)/e^x in powers of 1/(16x).
+mov $1,1
+mov $2,1
+mov $3,2
 lpb $0
-  dif $0,2
+  sub $0,1
+  gcd $1,$3
+  dif $2,$1
+  add $3,1
+  mov $1,$2
+  mul $2,$3
+  mul $2,$3
+  add $3,1
 lpe
+mov $0,$1

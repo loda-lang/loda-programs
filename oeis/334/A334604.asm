@@ -1,18 +1,19 @@
 ; A334604: Denominator of Sum_{k=1..n} (-1)^(k+1)/k^5.
-; Submitted by [AF>Libristes] Dudumomo
+; Submitted by BrandyNOW
 ; 1,32,7776,248832,777600000,777600000,13069123200000,418211942400000,101625502003200000,101625502003200000,16366888723117363200000,16366888723117363200000,6076911214672415134617600000
-; Formula: a(n) = truncate(b(n)/c(n))^5, b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = gcd(n*c(n-1),b(n-1)), c(2) = 1, c(1) = 1, c(0) = 0
 
 #offset 1
 
-mov $1,1
+mov $2,1
+mov $3,2
+sub $0,1
 lpb $0
   sub $0,1
-  add $2,1
-  mul $3,$2
-  gcd $3,$1
-  mul $1,$2
+  gcd $1,$3
+  dif $2,$1
+  mov $1,$2
+  mul $2,$3
+  add $3,1
 lpe
-div $1,$3
-mov $0,$1
-pow $0,5
+pow $2,5
+mov $0,$2

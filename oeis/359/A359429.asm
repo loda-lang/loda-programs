@@ -1,18 +1,14 @@
 ; A359429: a(n) = 1 if n is cubefree, but not squarefree, otherwise 0.
-; Submitted by Science United
+; Submitted by Ralfy
 ; 0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0
 
 #offset 1
 
-mov $3,1
 sub $0,1
-lpb $0
-  add $1,1
-  mov $2,$0
-  add $2,1
-  seq $2,261969 ; Product of primes dividing n with maximum multiplicity.
-  mov $3,2
-  div $0,$2
+mov $1,$0
+lpb $1
+  equ $1,2
+  add $0,1
+  seq $0,51903 ; Maximum exponent in the prime factorization of n.
+  equ $0,2
 lpe
-equ $3,$1
-mov $0,$3

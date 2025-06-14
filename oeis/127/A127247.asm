@@ -1,19 +1,21 @@
 ; A127247: A Thue-Morse falling factorial triangle.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by ledwards
 ; 1,1,1,1,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0
 
-mov $1,40
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
-mul $0,-1
-add $0,$2
-lpb $0
-  sub $0,1
-  sub $2,1
-  dif $1,$2
-lpe
+mov $1,$0
+add $1,1
+mov $3,$1
+mul $3,8
+nrt $3,2
+sub $3,1
+div $3,2
+mov $2,$3
+add $2,1
+bin $2,2
+sub $1,$2
+bin $3,$1
+dif $3,2
+bin $1,$3
+dgs $1,2
+mod $1,2
 mov $0,$1
-sub $0,20
-div $0,20

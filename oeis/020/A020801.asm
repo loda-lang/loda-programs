@@ -1,29 +1,13 @@
 ; A020801: Decimal expansion of 1/sqrt(44).
-; Submitted by Science United
+; Submitted by Hoshione
 ; 1,5,0,7,5,5,6,7,2,2,8,8,8,8,1,8,1,1,3,2,3,4,0,6,0,3,3,4,8,5,0,3,1,2,1,2,9,0,5,7,7,6,7,5,2,0,7,2,2,4,3,3,4,5,3,2,0,8,4,9,1,8,8,4,5,9,8,4,0,2,1,1,0,2,7,6,8,3,8,1
-; Formula: a(n) = -10*truncate(truncate(truncate((-e(4*n+4))/2)/truncate(c(4*n+4)/(10^(n+1))))/10)+truncate(truncate((-e(4*n+4))/2)/truncate(c(4*n+4)/(10^(n+1)))), b(n) = 7*b(n-1)-5*d(n-1)+1, b(4) = 65, b(3) = 17, b(2) = 3, b(1) = 1, b(0) = 0, c(n) = b(n-1)+c(n-1), c(4) = 21, c(3) = 4, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = 5*b(n-1)-5*d(n-1)+1, d(4) = 31, d(3) = 11, d(2) = 1, d(1) = 1, d(0) = 0, e(n) = -max(f(n-1),c(n-1))+e(n-1), e(4) = -5, e(3) = -1, e(2) = 0, e(1) = 0, e(0) = 0, f(n) = max(f(n-1),c(n-1)), f(4) = 4, f(3) = 1, f(2) = 0, f(1) = 0, f(0) = 0
+; Formula: a(n) = -10*truncate(sqrtint(floor((10^(2*n+2))/44))/10)+sqrtint(floor((10^(2*n+2))/44))
 
 add $0,1
-mov $3,$0
-mul $3,4
-lpb $3
-  sub $3,1
-  max $6,$2
-  add $2,$1
-  mul $4,-1
-  add $4,$1
-  mul $4,5
-  add $4,1
-  sub $5,$6
-  mul $1,2
-  add $1,$4
-lpe
-mov $4,10
-pow $4,$0
-div $2,$4
-mov $1,0
-sub $1,$5
-div $1,2
-div $1,$2
+mul $0,2
+mov $1,10
+pow $1,$0
 mov $0,$1
+div $0,44
+nrt $0,2
 mod $0,10

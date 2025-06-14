@@ -1,14 +1,13 @@
 ; A106147: Image of 1 under the repeated morphism 1 -> 21, 2 -> 32, 3 -> 43, 4 -> 14.
-; Submitted by Bill F
+; Submitted by loader3229
 ; 1,4,4,3,4,3,3,2,4,3,3,2,3,2,2,1,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,4,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,4,3,2,2,1,2,1,1,4,2,1,1,4,1,4,4,3,4,3,3,2,3,2,2,1,3,2,2,1,2,1,1,4
+; Formula: a(n) = 4*n-sumdigits(4*n,2)-4*truncate((4*n-sumdigits(4*n,2))/4)+1
 
-mul $0,2
-lpb $0
-  add $2,$0
-  div $0,2
-lpe
-pow $1,$0
-mul $1,$2
+mul $0,4
+mov $2,$0
+dgs $0,2
+sub $2,$0
+mov $1,$2
 mod $1,4
 mov $0,$1
 add $0,1

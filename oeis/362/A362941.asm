@@ -4,25 +4,18 @@
 
 #offset 1
 
-mov $2,$0
-pow $2,2
-lpb $2
-  mov $3,$1
-  add $3,1
-  seq $3,90406 ; a(n) = PrimePi(n+3) - PrimePi(n).
-  bin $3,2
-  add $3,$4
-  sub $0,$3
-  add $0,1
-  add $1,1
-  add $1,$4
-  mov $4,$0
-  max $4,1
-  equ $4,$0
-  mul $2,$4
-  sub $2,1
+lpb $0
+  seq $0,14574 ; Average of twin prime pairs.
+  sub $0,2
+  mov $2,$0
+  mov $0,0
 lpe
-mov $0,$1
-add $0,4
-pow $0,2
-sub $0,1
+mov $0,$2
+add $0,3
+div $0,2
+mul $0,2
+mov $1,$0
+add $1,2
+mul $0,2
+mul $0,$1
+div $0,2

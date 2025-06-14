@@ -1,21 +1,29 @@
 ; A076151: a(n) = (n-1)!*binomial(3*n,n)/(3*(2*n+1)).
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,8,110,2184,57120,1860480,72681840,3315312000,173059286400,10178348544000,666172912204800,48032775105638400,3783468344527872000,323279062935013785600,29783920485745730304000,2943352142120754524160000,310589942708652231905280000
+; Formula: a(n) = truncate((truncate(b(n+1)/n)*floor(floor((10*binomial(3*n,n))/binomial(2*n+2,2))/5))/6), b(n) = n*b(n-1), b(0) = 1
 
 #offset 2
 
-sub $0,1
+add $0,1
+mov $3,1
 mov $1,$0
-add $0,1
-mov $2,$0
-mul $0,2
-add $2,$0
-bin $2,$0
-add $0,1
-div $2,$0
-mov $0,$2
 lpb $1
-  mul $0,$1
+  mul $3,$1
   sub $1,1
 lpe
-div $0,3
+sub $0,1
+mov $1,$3
+div $1,$0
+mov $2,$0
+mul $0,2
+add $0,$2
+bin $0,$2
+mul $0,10
+mul $2,2
+add $2,2
+bin $2,2
+div $0,$2
+div $0,5
+mul $0,$1
+div $0,6

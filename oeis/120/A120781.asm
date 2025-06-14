@@ -1,13 +1,14 @@
 ; A120781: Denominators of partial sums of Catalan numbers scaled by powers of 1/8.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,8,32,512,2048,16384,65536,2097152,8388608,67108864,268435456,4294967296,17179869184,137438953472,549755813888,35184372088832,140737488355328,1125899906842624,4503599627370496,72057594037927936
+; Formula: a(n) = floor(truncate(2^(3*n-sumdigits(2*n+2,2)+3))/4)
 
 add $0,1
 mov $1,$0
-lpb $1
-  add $0,$1
-  div $1,2
-lpe
+mul $1,2
+add $0,$1
+dgs $1,2
+sub $0,$1
 mov $2,2
 pow $2,$0
 mov $0,$2
