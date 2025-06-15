@@ -1,17 +1,16 @@
 ; A068595: Number of functions from {1,2,...,n} to {1,2,...,n} such that the sum of the function values is 0 mod 3.
-; Submitted by [AF>Amis de la Mer] ComteZera
+; Submitted by BrandyNOW
 ; 0,2,9,85,1041,15552,274514,5592406,129140163,3333333333,95103890203,2972033482752,100958368864084,3704002275186006,145964630126953125,6148914691236517205,275746753962112254725,13115469358432179191808,659473218553437863041326,34952533333333333333333334
+; Formula: a(n) = truncate((n^n+3*truncate((-n+floor((n-1)/2))/3)-floor((n-1)/2)+n)/3)
 
 #offset 1
 
-pow $0,$0
+sub $0,1
 mov $1,$0
-pow $1,2
-lpb $1
-  dif $1,2
-  add $2,1
-lpe
-mov $1,$2
-mod $1,5
-add $0,$1
+div $1,2
+add $0,1
+sub $1,$0
+mod $1,3
+pow $0,$0
+sub $0,$1
 div $0,3

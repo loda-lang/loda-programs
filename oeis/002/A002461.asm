@@ -4,14 +4,12 @@
 
 #offset 2
 
-sub $0,2
-mov $1,$0
-min $0,1
-add $0,$1
+sub $0,1
 mov $1,$0
 mul $0,2
 bin $0,$1
 add $1,1
+dif $1,$0
 div $0,$1
 dir $0,2
 mul $0,$1

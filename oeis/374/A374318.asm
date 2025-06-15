@@ -1,5 +1,5 @@
 ; A374318: For any n > 0, let b_n(n+1) = 0, and for k = 1..n, if b_n(k+1) >= k then b_n(k) = b_n(k+1) - k otherwise b_n(k) = b_n(k+1) + k; a(n) = b_n(1).
-; Submitted by Skillz
+; Submitted by Dirk Broer
 ; 0,1,1,0,2,1,1,2,0,1,1,2,0,1,1,2,2,1,1,0,2,1,1,0,2,1,1,0,2,1,1,0,2,1,1,0,2,1,1,0,2,1,1,2,2,1,1,2,2,1,1,2,0,1,1,2,0,1,1,2,0,1,1,2,0,1,1,2,0,1,1,2,0,1,1,2,0,1,1,2
 
 lpb $0
@@ -8,8 +8,6 @@ lpb $0
     sub $0,1
     sub $1,$0
   lpe
-  mul $0,2
   sub $0,1
-  div $0,2
 lpe
 mov $0,$1

@@ -1,9 +1,19 @@
 ; A052741: A simple context-free grammar in a labeled universe.
-; Submitted by Simon Strandgaard
+; Submitted by shiva
 ; 0,0,0,0,24,360,6480,141120,3628800,107775360,3632428800,136994457600,5716405094400,261472603392000,13009267682611200,699459327350784000,40413205580267520000,2497069798642298880000
-; Formula: a(n) = n*A052719(max(n-1,0))
 
 mov $1,$0
-trn $0,1
-seq $0,52719 ; Expansion of e.g.f. (1 - 2*x*sqrt(1-4*x))*(1 - sqrt(1-4*x))/4.
-mul $0,$1
+mov $3,1
+mov $5,2
+sub $0,2
+lpb $0
+  sub $0,1
+  mov $2,$4
+  mul $4,$5
+  add $4,$3
+  add $5,4
+  mul $3,$5
+lpe
+mul $2,$1
+mov $0,$2
+mul $0,6

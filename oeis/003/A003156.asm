@@ -1,22 +1,22 @@
 ; A003156: A self-generating sequence (see Comments for definition).
-; Submitted by taurec
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,4,5,6,9,12,15,16,17,20,21,22,25,26,27,30,33,36,37,38,41,44,47,48,49,52,55,58,59,60,63,64,65,68,69,70,73,76,79,80,81,84,85,86,89,90,91,94,97,100,101,102,105,106,107,110,111,112,115,118,121,122,123,126,129,132,133,134,137,140,143,144,145,148,149,150,153,154,155,158
-; Formula: a(n) = a(n-1)+truncate(gcd(truncate((-c(n-2)+b(n-2))/2)+1,4)/2)+1, a(3) = 5, a(2) = 4, a(1) = 1, a(0) = 0, b(n) = truncate(truncate((-c(n-1)+b(n-1))/2)/gcd(truncate((-c(n-1)+b(n-1))/2)+1,4)), b(3) = -90, b(2) = -20, b(1) = -1, b(0) = 0, c(n) = 4*c(n-1), c(3) = 640, c(2) = 160, c(1) = 40, c(0) = 10
 
 #offset 1
 
-mov $2,10
-lpb $0
-  sub $0,1
-  sub $1,$2
-  div $1,2
-  add $4,$3
-  add $4,1
-  mov $3,1
-  add $3,$1
-  gcd $3,4
-  div $1,$3
-  mul $2,4
-  div $3,2
+sub $0,1
+mov $3,1
+mov $1,$0
+add $1,1
+lpb $1
+  sub $1,1
+  mov $2,$3
+  add $2,1
+  bxo $2,$3
+  div $2,3
+  add $3,$2
+  bxo $3,$2
 lpe
-mov $0,$4
+sub $3,$0
+mov $0,$3
+sub $0,2

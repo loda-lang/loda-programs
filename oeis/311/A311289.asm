@@ -4,13 +4,10 @@
 ; Formula: a(n) = floor((n+5)/10)+truncate((41*n-6)/10)+1
 
 mov $1,$0
-mov $2,$0
-mul $2,2
 add $0,5
 div $0,10
-mul $1,43
+mul $1,41
 sub $1,6
-sub $1,$2
 div $1,10
 add $1,1
 add $0,$1

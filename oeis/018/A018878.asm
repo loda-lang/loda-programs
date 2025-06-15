@@ -1,9 +1,11 @@
 ; A018878: a(n)^8 is smallest eighth power beginning with n.
-; Submitted by BlisteringSheep
+; Submitted by loader3229
 ; 0,1,2,5,9,7,3,23,13,42,10,18,58,78,14,25,6,34,81,61,26,11,35,47,63,2,113,85,27,86,115,65,87,49,277,37,66,21,158,5,67,283,12,9,286,51,287,91,289,122,29,69,123,39,22,93,221,7,222,125,94,223,53,126,71,3,95,127,226,17,227,303,54,171,305,229,129,545,23,41
 
 mov $1,$0
-seq $1,55642 ; Number of digits in the decimal expansion of n.
+max $1,1
+log $1,10
+add $1,1
 mov $2,10
 mul $2,$0
 mov $4,1
@@ -12,18 +14,16 @@ lpb $2
   sub $2,1
   add $5,1
   mov $6,$4
-  seq $6,55642 ; Number of digits in the decimal expansion of n.
+  log $6,10
+  add $6,1
   sub $6,$1
   mov $3,10
   pow $3,$6
   max $3,1
   mov $7,$4
   div $7,$3
-  equ $7,$0
-  lpb $7
-    sub $7,1
-    mov $2,0
-  lpe
+  neq $7,$0
+  mul $2,$7
   mov $4,$5
   pow $4,8
 lpe

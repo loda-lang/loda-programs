@@ -1,16 +1,13 @@
 ; A048896: a(n) = 2^(A000120(n+1) - 1), n >= 0.
-; Submitted by loader3229
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,2,1,2,2,4,1,2,2,4,2,4,4,8,1,2,2,4,2,4,4,8,2,4,4,8,4,8,8,16,1,2,2,4,2,4,4,8,2,4,4,8,4,8,8,16,2,4,4,8,4,8,8,16,4,8,8,16,8,16,16,32,1,2,2,4,2,4,4,8,2,4,4,8,4,8,8,16,2
-; Formula: a(n) = floor(truncate(2^(-2*floor((n+1)/2)+sumdigits(2*floor((n+1)/2),2)+n+1))/2)
+; Formula: a(n) = truncate(2^(sumdigits(n+1,2)-1))
 
-add $0,1
 mov $2,$0
-div $2,2
-mul $2,2
+add $2,1
 sub $0,$2
 dgs $2,2
 add $0,$2
 mov $1,$0
 mov $0,2
 pow $0,$1
-div $0,2

@@ -1,13 +1,58 @@
 ; A176291: A symmetrical triangle based on Narayana numbers and Eulerian numbers of type B: T(n, k) = 2 + A060187(n, k) - 2*binomial(n, k)*binomial(n+1, k)/(k+1).
 ; Submitted by USTL-FIL (Lille Fr)
 ; 1,1,1,1,2,1,1,13,13,1,1,58,192,58,1,1,209,1584,1584,209,1,1,682,10335,23200,10335,682,1,1,2125,60267,258745,258745,60267,2125,1,1,6482,330942,2482938,4671488,2482938,330942,6482,1,1,19585,1755262,21702934,69402712,69402712,21702934,1755262,19585,1,1,58930,9114493,178291006,906895564,1527053662,906895564,178291006,9114493,58930,1,1,177005,46700009,1403062577,10836757760,28587897848,28587897848,10836757760,1403062577,46700009,177005,1,1,531274
-; Formula: a(n) = -2*A001263(n+1)+A060187(n+1)+2
 
 mov $1,$0
 add $1,1
-seq $1,1263 ; Triangle of Narayana numbers T(n,k) = C(n-1,k-1)*C(n,k-1)/k with 1 <= k <= n, read by rows. Also called the Catalan triangle.
-mul $1,2
+mov $2,$1
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
 add $0,1
-seq $0,60187 ; Triangle read by rows: Eulerian numbers of type B, T(n,k) (1 <= k <= n) given by T(n, 1) = T(n,n) = 1, otherwise T(n, k) = (2*n - 2*k + 1)*T(n-1, k-1) + (2*k - 1)*T(n-1, k).
-add $0,2
+sub $1,$3
+sub $1,1
+mov $3,$2
+add $3,1
+bin $3,$1
+bin $2,$1
+add $1,1
+mul $2,$3
+div $2,$1
+mov $1,$2
+mul $1,2
+mov $4,$0
+mul $4,8
+nrt $4,2
+sub $4,1
+div $4,2
+mov $5,$4
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
+mov $5,$0
+mov $0,$4
+sub $4,$5
+add $4,1
+lpb $4
+  sub $4,1
+  mov $7,$4
+  mul $7,2
+  add $7,1
+  pow $7,$0
+  sub $8,2
+  sub $8,$4
+  bin $8,$6
+  mul $8,$7
+  add $9,$8
+  add $6,1
+  mul $8,0
+  sub $8,$5
+lpe
+mov $0,$9
 sub $0,$1
+add $0,2

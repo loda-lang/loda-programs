@@ -1,19 +1,16 @@
 ; A120182: a(1)=5; a(n)=floor((34+sum(a(1) to a(n-1)))/6).
-; Submitted by Simon Strandgaard
+; Submitted by iBezanilla
 ; 5,6,7,8,10,11,13,15,18,21,24,28,33,38,45,52,61,71,83,97,113,132,154,179,209,244,285,332,388,452,528,616,718,838,978,1141,1331,1553,1811,2113
-; Formula: a(n) = b(n-1)+6, b(n) = truncate((b(n-1)+c(n-1))/6), b(1) = 0, b(0) = -1, c(n) = b(n-1)+c(n-1)+6, c(1) = 9, c(0) = 4
+; Formula: a(n) = truncate((b(n-1)+a(n-1))/6), a(1) = 5, a(0) = -1, b(n) = b(n-1)+a(n-1), b(1) = 34, b(0) = 35
 
 #offset 1
 
-mov $1,-1
-mov $2,4
-sub $0,1
+mov $1,35
+mov $2,-1
 lpb $0
   sub $0,1
   add $2,$1
   mov $1,$2
-  div $1,6
-  add $2,6
+  div $2,6
 lpe
-add $1,6
-mov $0,$1
+mov $0,$2

@@ -1,17 +1,29 @@
 ; A120214: Start with 1013 and repeatedly reverse the digits and add 2 to get the next term.
-; Submitted by Jason Jung
+; Submitted by Science United
 ; 1013,3103,3015,5105,5017,7107,7019,9109,9021,1211,1123,3213,3125,5215,5127,7217,7129,9219,9131,1321,1233,3323,3235,5325,5237,7327,7239,9329,9241,1431,1343,3433,3345,5435,5347,7437,7349,9439,9351,1541,1453,3543,3455,5545,5457,7547,7459,9549,9461,1651,1563,3653,3565,5655,5567,7657,7569,9659,9571,1761,1673,3763,3675,5765,5677,7767,7679,9769,9681,1871,1783,3873,3785,5875,5787,7877,7789,9879,9791,1981
-; Formula: a(n) = b(n-1)-2, b(n) = A004086(b(n-1)-2)+4, b(1) = 1015
+; Formula: a(n) = 1000*a(n-1)+10*truncate(a(n-1)/100)-100*truncate(truncate(a(n-1)/100)/10)-1000*truncate(truncate(a(n-1)/10)/10)-9900*truncate(a(n-1)/10)+truncate(a(n-1)/1000)+2, a(0) = 1101
 
 #offset 1
 
-sub $0,1
-mov $1,$0
-mov $0,1015
-lpb $1
-  sub $1,1
-  sub $0,2
-  seq $0,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  add $0,4
+mov $1,1101
+lpb $0
+  sub $0,1
+  mov $3,$1
+  div $3,100
+  mod $3,10
+  mul $3,10
+  mov $4,$1
+  div $4,1000
+  sub $4,2
+  mov $2,$1
+  div $2,10
+  mod $2,10
+  mul $2,100
+  mod $1,10
+  mul $1,1000
+  add $1,$2
+  add $1,$3
+  add $1,$4
+  add $1,4
 lpe
-sub $0,2
+mov $0,$1
