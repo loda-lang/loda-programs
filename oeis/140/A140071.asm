@@ -1,14 +1,19 @@
 ; A140071: Triangle read by rows: iterates of X * [1,0,0,0,...]; where X = an infinite lower bidiagonal matrix with [3,1,3,1,3,1...] in the main diagonal and [1,1,1,...] in the subdiagonal.
-; Submitted by Mads Nissen
+; Submitted by loader3229
 ; 1,3,1,9,4,1,27,13,7,1,81,40,34,8,1,243,121,142,42,11,1,729,364,547,184,75,12,1,2187,1093,2005,731,409,87,15,1,6561,3280,7108,2736,1958,496,132,16,1,19683,9841,24604,9844,8610,2454,892,148,19,1
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 mov $2,$0
 mov $0,$1
 sub $1,$2

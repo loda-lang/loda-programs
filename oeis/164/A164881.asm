@@ -1,16 +1,21 @@
-; A164881: Inverse of A164844
-; Submitted by Saenger
+; A164881: Inverse of A164844.
+; Submitted by loader3229
 ; 1,10,1,100,9,1,1000,91,8,1,10000,909,83,7,1,100000,9091,826,76,6,1,1000000,90909,8265,750,70,5,1,10000000,909091,82644,7515,680,65,4,1
 
 #offset 1
 
-mov $3,3
-sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $1,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

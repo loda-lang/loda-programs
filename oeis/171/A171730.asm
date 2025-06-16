@@ -1,14 +1,19 @@
 ; A171730: Triangle of differences of Fibonacci numbers, rows descending.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,2,1,3,2,1,5,4,3,2,8,7,6,5,3,13,12,11,10,8,5,21,20,19,18,16,13,8,34,33,32,31,29,26,21,13,55,54,53,52,50,47,42,34,21,89,88,87,86,84,81,76,68,55,34,144,143,142,141,139,136,131,123,110,89,55,233,232,231,230,228,225,220,212,199,178,144,89,377,376
 
 #offset 1
 
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $5,$2
+add $5,1
+bin $5,2
+sub $0,$5
 sub $0,1
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
 mov $4,1
 sub $4,$0
 add $4,$2

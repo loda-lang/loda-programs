@@ -1,14 +1,21 @@
 ; A168216: Riordan array (1/(1-x),xc(x)/(1-xc(x))) where c(x)is the g.f. of A000108.It factorizes as A007318*A106566.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,1,3,1,1,8,5,1,1,23,19,7,1,1,74,69,34,9,1,1,262,256,147,53,11,1,1,993,986,615,265,76,13,1,1,3943,3935,2571,1235,431,103,15,1,1,16178,16169,10862,5591,2216,653,134,17,1
 
 mov $1,3
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0

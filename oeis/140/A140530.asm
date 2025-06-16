@@ -1,12 +1,19 @@
 ; A140530: Triangle read by rows of coefficients of polynomials defined in comments lines.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,1,1,2,1,2,3,3,1,3,6,6,4,1,4,11,13,10,5,1,5,18,27,24,15,6,1,6,28,51,55,40,21,7,1
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $6,$0
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
+mov $6,$0
 sub $1,$0
 add $1,1
 lpb $1

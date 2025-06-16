@@ -1,26 +1,43 @@
 ; A051467: (Terms in A029640)/2.
-; Submitted by Cruncher Pete
+; Submitted by Coleslaw
 ; 1,1,2,1,1,3,7,8,1,10,15,1,4,25,18,1,1,5,22,56,91,98,70,32,1,27,78,147,189,168,102,1,6,105,225,336,357,270,50,1,330,561,693,627,1,7,45,176,891,1254,1320,605,253,72,1,52,221,2145,2574,858,325,1,8,273,2002,4719
 
 mov $2,$0
-add $0,1
-add $2,7
+add $2,6
 pow $2,3
 lpb $2
-  sub $2,8
+  sub $2,37
+  mov $7,$1
+  mul $7,8
+  nrt $7,2
+  sub $7,1
+  div $7,2
+  mov $5,$7
+  add $5,1
+  bin $5,2
   mov $3,$1
-  seq $3,29635 ; The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
-  mov $5,$3
+  sub $3,$5
+  sub $3,1
+  mov $6,$7
+  bin $6,$3
+  add $6,2
+  add $3,1
+  add $7,1
+  bin $7,$3
+  add $6,$7
+  mov $3,$6
   mul $3,338
   gcd $3,4
-  add $3,1
+  mul $3,2
+  sub $3,3
   equ $3,5
   sub $0,$3
-  add $1,1
   mov $4,$0
   max $4,0
   equ $4,$0
+  add $1,1
   mul $2,$4
 lpe
-mov $0,$5
+mov $0,$6
 div $0,2
+sub $0,1

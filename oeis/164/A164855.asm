@@ -1,13 +1,20 @@
-; A164855: Generalized Lucas-Pascal triangle: (101*100^n,1)
-; Submitted by Cruncher Pete
+; A164855: Generalized Lucas-Pascal triangle: (101*100^n,1).
+; Submitted by loader3229
 ; 1,101,1,10100,102,1,1010000,10202,103,1,101000000,1020202,10305,104,1,10100000000,102020202,1030507,10409,105,1,1010000000000,10202020202,103050709,1040916,10514,106,1,101000000000000,1020202020202
 
-mov $3,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
 mov $1,3
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,3
+mov $6,$2
+add $6,1
+bin $6,2
+sub $0,$6
+sub $0,1
 mul $0,-1
 add $0,$2
 sub $2,$0

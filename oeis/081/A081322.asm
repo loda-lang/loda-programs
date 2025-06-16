@@ -1,7 +1,38 @@
 ; A081322: F(P(n)), where F(n) = Fibonacci numbers A000045, P(n) = Pell numbers A000129.
-; Submitted by Ralfy
+; Submitted by loader3229
 ; 0,1,1,5,144,514229,190392490709135,93202207781383214849429075266681969,8269366108663463411004717981412027167937978847386801205243459016220834185059487057696
-; Formula: a(n) = A000045(A000129(n))
+; Formula: a(n) = c(n-1), a(3) = 5, a(2) = 1, a(1) = 1, a(0) = 0, b(n) = d(n-1), b(3) = 11, b(2) = 3, b(1) = 1, b(0) = 2, c(n) = truncate((d(n-1)*c(n-1)*b(n-1)+floor((d(n-1)^2+5*c(n-1)^2)/2)*a(n-1))/2), c(3) = 144, c(2) = 5, c(1) = 1, c(0) = 1, d(n) = truncate((5*d(n-1)*c(n-1)*a(n-1)+floor((d(n-1)^2+5*c(n-1)^2)/2)*b(n-1))/2), d(3) = 322, d(2) = 11, d(1) = 3, d(0) = 1
 
-seq $0,129 ; Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2*a(n-1) + a(n-2).
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+mov $2,2
+mov $3,1
+mov $4,1
+lpb $0
+  sub $0,1
+  mov $9,$3
+  mul $9,$4
+  mov $10,$3
+  mul $10,$3
+  mul $10,5
+  mov $11,$4
+  mul $11,$4
+  add $10,$11
+  div $10,2
+  mov $5,$1
+  mul $5,$10
+  mov $6,$2
+  mul $6,$9
+  mov $7,$1
+  mul $7,$9
+  mul $7,5
+  mov $8,$2
+  mul $8,$10
+  add $5,$6
+  div $5,2
+  add $7,$8
+  div $7,2
+  mov $1,$3
+  mov $2,$4
+  mov $3,$5
+  mov $4,$7
+lpe
+mov $0,$1

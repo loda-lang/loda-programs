@@ -1,14 +1,11 @@
 ; A071055: Number of 0's in n-th row of triangle in A071038.
-; Submitted by fzs600
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 0,0,2,0,2,2,6,0,2,2,6,2,6,6,14,0,2,2,6,2,6,6,14,2,6,6,14,6,14,14,30,0,2,2,6,2,6,6,14,2,6,6,14,6,14,14,30,2,6,6,14,6,14,14,30,6,14,14,30,14,30,30,62,0,2,2,6,2,6,6,14,2,6,6,14,6,14,14,30,2
 ; Formula: a(n) = 2^sumdigits(n+1,2)-2
 
-add $0,1
-mov $2,$0
-sub $0,$2
-dgs $2,2
-add $0,$2
 mov $1,$0
+add $1,1
+dgs $1,2
 mov $0,2
 pow $0,$1
 sub $0,2

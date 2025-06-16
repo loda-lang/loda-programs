@@ -1,5 +1,5 @@
 ; A094193: Values y of the generator pairs (x, y), x>y of primitive Pythagorean triples, sorted on x.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,1,3,2,4,1,5,2,4,6,1,3,5,7,2,4,8,1,3,7,9,2,4,6,8,10,1,5,7,11,2,4,6,8,10,12,1,3,5,9,11,13,2,4,8,14,1,3,5,7,9,11,13,15,2,4,6,8,10,12,14,16,1,5,7,11,13,17,2,4,6,8,10,12,14,16,18,1,3
 
 #offset 1
@@ -10,13 +10,16 @@ add $2,3
 pow $2,2
 lpb $2
   sub $2,2
-  mov $6,0
+  mov $6,$1
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $8,$6
+  add $8,1
+  bin $8,2
   mov $3,$1
-  lpb $3
-    add $6,1
-    sub $3,$6
-  lpe
-  add $3,1
+  sub $3,$8
   mov $5,$3
   add $6,2
   sub $6,$3

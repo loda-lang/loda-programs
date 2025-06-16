@@ -1,5 +1,5 @@
 ; A043360: Numbers having four 2's in base 5.
-; Submitted by ChelseaOilman
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 312,937,1312,1437,1512,1537,1552,1557,1560,1561,1563,1564,1567,1572,1587,1612,1687,1812,2187,2812,3437,4062,4437,4562,4637,4662,4677,4682,4685,4686,4688,4689,4692,4697,4712,4737,4812
 
 #offset 1
@@ -14,8 +14,7 @@ lpb $2
   mov $3,$1
   lpb $3
     mov $5,$3
-    add $5,1
-    mul $5,4
+    mul $5,96
     mod $5,10
     equ $5,2
     div $3,5

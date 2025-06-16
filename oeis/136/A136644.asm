@@ -1,16 +1,21 @@
 ; A136644: Triangle of coefficients of characteristic polynomials of asymmetrical tridiagonal matrices: Middle diagonal: a=1; Lower first subdiagonal: b=2; Upper first subdiagonal: c=1; Example: M(3) {{1, 1, 0}, {2, 1, 1}, {0, 2, 1}}.
-; Submitted by damotbe
+; Submitted by loader3229
 ; 1,1,-1,-1,-2,1,-3,1,3,-1,-1,8,0,-4,1,5,7,-14,-2,5,-1,7,-14,-21,20,5,-6,1,-3,-35,21,45,-25,-9,7,-1,-17,-4,98,-16,-80,28,14,-8,1,-11,83,60,-204,-14,126,-28,-20,9,-1,23,102,-219,-232,350,84,-182,24,27,-10,1
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 sub $1,$0
-add $3,$0
+mov $3,$0
 sub $0,$3
 add $1,1
 lpb $1

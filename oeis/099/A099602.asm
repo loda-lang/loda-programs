@@ -1,11 +1,18 @@
 ; A099602: Triangle, read by rows, such that row n equals the inverse binomial transform of column n of the triangle of trinomial coefficients (A027907), omitting leading zeros.
-; Submitted by PDW
+; Submitted by loader3229
 ; 1,1,1,1,2,1,2,5,4,1,1,5,8,5,1,3,13,22,18,7,1,1,9,26,35,24,8,1,4,26,70,101,84,40,10,1,1,14,61,131,160,116,49,11,1,5,45,171,363,476,400,215,71,13,1,1,20,120,363,654,752,565,275,83,14,1,6,71,356,1017,1856,2282,1932
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $8,$1
+add $8,1
+bin $8,2
+sub $0,$8
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2
