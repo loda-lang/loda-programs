@@ -1,0 +1,69 @@
+; A352909: Pairs (i,j) of nonnegative integers with disjoint binary expansions sorted first by i+j then by i.
+; Submitted by loader3229
+; 0,0,0,1,1,0,0,2,2,0,0,3,1,2,2,1,3,0,0,4,4,0,0,5,1,4,4,1,5,0,0,6,2,4,4,2,6,0,0,7,1,6,2,5,3,4,4,3,5,2,6,1,7,0,0,8,8,0,0,9,1,8,8,1,9,0,0,10,2,8,8,2,10,0,0,11,1,10,2,9
+
+#offset 1
+
+sub $0,1
+mov $13,$0
+mod $13,2
+div $0,2
+mov $3,$0
+max $3,1
+log $3,3
+mov $4,3
+pow $4,$3
+mov $5,2
+pow $5,$3
+lpb $3
+  mov $8,1
+  sub $0,$4
+  add $1,$5
+  mov $7,0
+  mov $10,$0
+  lpb $10
+    mov $9,$10
+    mod $9,2
+    mov $11,$10
+    div $11,2
+    mov $12,$11
+    min $12,1
+    max $11,1
+    log $11,3
+    add $11,$12
+    mov $12,3
+    pow $12,$11
+    div $12,3
+    sub $10,$12
+    sub $10,$12
+    add $9,$12
+    mul $9,$8
+    min $12,1
+    add $12,1
+    add $7,$9
+    mul $8,2
+    div $10,$12
+  lpe
+  mov $6,$10
+  mul $6,$5
+  mov $0,$7
+  add $2,$6
+  mov $3,$7
+  max $3,1
+  log $3,3
+  mov $4,3
+  pow $4,$3
+  mov $5,2
+  pow $5,$3
+lpe
+mov $3,$0
+min $3,1
+trn $0,1
+add $1,$3
+mul $1,$13
+mul $13,-2
+add $13,1
+add $2,$0
+mul $2,$13
+mov $0,$1
+add $0,$2
