@@ -1,28 +1,36 @@
 ; A038622: Triangular array that counts rooted polyominoes.
-; Submitted by [AF>Le_Pommier>MacBidouille.com]Prof
+; Submitted by Stephen Uitti
 ; 1,2,1,5,3,1,13,9,4,1,35,26,14,5,1,96,75,45,20,6,1,267,216,140,71,27,7,1,750,623,427,238,105,35,8,1,2123,1800,1288,770,378,148,44,9,1,6046,5211,3858,2436,1296,570,201,54,10,1,17303,15115,11505,7590,4302,2067,825,265,65,11,1,49721,43923,34210,23397,13959,7194,3157,1155,341,77,12,1,143365,127854
 
-mul $0,2
-lpb $0
-  add $2,2
-  sub $0,$2
-lpe
-mov $1,1
-add $2,1
-mov $3,1
+mov $3,3
+mov $5,3
+mov $6,3
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0
-  sub $0,2
-  add $1,$5
+  sub $0,1
+  add $3,$5
+  mov $1,$3
+  sub $1,$5
   mul $1,$2
   sub $2,1
   add $4,1
-  mov $5,$3
   div $1,$4
-  add $1,$3
-  dif $1,2
-  mul $3,-1
   add $3,$1
+  mul $5,-1
+  add $5,$1
+  add $6,$1
 lpe
-mov $0,$1
+mov $0,$6
+div $0,3

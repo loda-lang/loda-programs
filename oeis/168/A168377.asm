@@ -1,13 +1,20 @@
 ; A168377: Riordan array (1/(1 + x), x*c(x)), where c(x) is the o.g.f. of Catalan numbers A000108.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,-1,1,1,0,1,-1,2,1,1,1,3,4,2,1,-1,11,10,7,3,1,1,31,32,21,11,4,1,-1,101,100,69,37,16,5,1,1,328,329,228,128,59,22,6,1,-1,1102,1101,773,444,216,88,29,7,1,1,3760,3761,2659,1558,785,341,125,37,8,1
 
 mov $3,3
 mov $5,3
-lpb $0
-  add $2,1
-  sub $0,$2
-lpe
+add $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $7,$2
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mul $0,-1
 add $0,$2
 lpb $0

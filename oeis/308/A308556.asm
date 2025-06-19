@@ -1,5 +1,5 @@
 ; A308556: Number of (not necessarily connected) ungraceful graphs on n nodes.
-; Submitted by TankbusterGames
+; Submitted by fzs600
 ; 0,1,2,4,12,30,85,300
 
 #offset 1
@@ -14,6 +14,7 @@ lpb $0
   add $6,$8
   sub $6,$7
   mul $6,$3
+  max $6,0
   trn $7,1
   mov $8,$4
   add $1,1

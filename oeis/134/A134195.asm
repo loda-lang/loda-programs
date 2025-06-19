@@ -1,13 +1,18 @@
 ; A134195: Antidiagonal sums of square array A126885.
-; Submitted by Fardringle
+; Submitted by fzs600
 ; 1,3,7,15,32,72,178,494,1543,5373,20581,85653,383494,1833250,9301792,49857540,281193501,1663183383,10286884195,66365330811,445598473612,3107611606908,22470529228910,168190079241210,1301213084182483,10391369994732593,85553299734530113
-; Formula: a(n) = a(n-1)+A104879(n), a(0) = 1
 
-mov $1,1
-lpb $0
-  mov $2,$0
-  seq $2,104879 ; Row sums of a sum-of-powers triangle.
-  sub $0,1
-  add $1,$2
+mov $2,$0
+add $2,1
+mov $3,$0
+bin $3,2
+add $3,$0
+add $3,$2
+lpb $2
+  sub $2,1
+  mov $0,$3
+  sub $0,$2
+  seq $0,126885 ; T(n,k) = n*T(n,k-1) + k, with T(n,1) = 1, square array read by ascending antidiagonals (n >= 0, k >= 1).
+  add $1,$0
 lpe
 mov $0,$1

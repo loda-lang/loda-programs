@@ -1,26 +1,14 @@
 ; A040257: Continued fraction for sqrt(274).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 16,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1,4,4,1,1,32,1,1
+; Formula: a(n) = (truncate((sign(n)*((n-1)%7+1)+1)/8)+1)*gcd(truncate((sign(n)*((n-1)%7+1)+1)/2),4)^2
 
-mul $0,4
-add $0,10
-div $0,7
-sub $0,1
-gcd $0,262156
-mul $0,42
-mod $0,13
-add $0,3
-mov $1,$0
-div $1,5
-mul $1,25
-div $0,3
-sub $0,27
-add $0,$1
-mov $2,$0
-lpb $2
-  div $0,2
-  sub $2,$0
-lpe
-add $2,1
+dgr $0,8
 add $0,1
-pow $0,$2
+mov $1,$0
+div $1,8
+add $1,1
+div $0,2
+gcd $0,4
+pow $0,2
+mul $0,$1

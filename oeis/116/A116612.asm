@@ -11,7 +11,6 @@ pow $2,2
 lpb $2
   sub $2,2
   mov $3,$1
-  add $3,1
   seq $3,68228 ; Primes congruent to 1 (mod 12).
   seq $3,230980 ; Number of primes <= n, starting at n=0.
   add $3,1

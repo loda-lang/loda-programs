@@ -1,27 +1,28 @@
 ; A058265: Decimal expansion of the tribonacci constant t, the real root of x^3 - x^2 - x - 1.
-; Submitted by Penguin
+; Submitted by Science United
 ; 1,8,3,9,2,8,6,7,5,5,2,1,4,1,6,1,1,3,2,5,5,1,8,5,2,5,6,4,6,5,3,2,8,6,6,0,0,4,2,4,1,7,8,7,4,6,0,9,7,5,9,2,2,4,6,7,7,8,7,5,8,6,3,9,4,0,4,2,0,3,2,2,2,0,8,1,9,6,6,4
-; Formula: a(n) = -10*truncate(truncate((b(max(3*n-3,0))+d(max(3*n-3,0)))/truncate(c(max(3*n-3,0))/(10^(n-1))))/10)+truncate((b(max(3*n-3,0))+d(max(3*n-3,0)))/truncate(c(max(3*n-3,0))/(10^(n-1)))), b(n) = 7*b(n-1)-5*b(n-2)+b(n-3), b(5) = 2632, b(4) = 423, b(3) = 68, b(2) = 11, b(1) = 2, b(0) = 1, c(n) = 4*c(n-1)+3*d(n-1)+2*b(n-1), c(2) = 37, c(1) = 6, c(0) = 1, d(n) = 2*c(n-1)+2*d(n-1)+b(n-1), d(2) = 20, d(1) = 3, d(0) = 0
+; Formula: a(n) = -10*truncate(truncate(d(6*n+163)/truncate(c(6*n+163)/(10^(n-1))))/10)+truncate(d(6*n+163)/truncate(c(6*n+163)/(10^(n-1)))), b(n) = (b(n-2)==0)+c(n-2)+e(n-2), b(7) = 9, b(6) = 9, b(5) = 2, b(4) = 2, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 0, c(n) = (b(n-2)==0)+2*c(n-2)+e(n-2), c(7) = 12, c(6) = 12, c(5) = 3, c(4) = 3, c(3) = 1, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = (b(n-2)==0)+2*c(n-2)+2*d(n-2)+e(n-2), d(7) = 22, d(6) = 22, d(5) = 5, d(4) = 5, d(3) = 1, d(2) = 1, d(1) = 0, d(0) = 0, e(n) = (b(n-2)==0)+2*c(n-2)+2*d(n-2)+2*e(n-2), e(7) = 28, e(6) = 28, e(5) = 6, e(4) = 6, e(3) = 1, e(2) = 1, e(1) = 0, e(0) = 0
 
 #offset 1
 
 sub $0,1
-mov $1,1
-mov $2,1
 mov $3,$0
-mul $3,3
+mul $3,6
+add $3,169
 lpb $3
-  sub $3,1
-  add $5,$2
-  add $1,$5
-  add $5,$1
+  sub $3,2
+  equ $1,0
+  add $1,$6
+  add $1,$2
   add $2,$1
-  add $2,$5
+  mul $5,2
+  add $5,$2
+  add $6,$5
 lpe
 mov $4,10
 pow $4,$0
 div $2,$4
-add $1,$5
+mov $1,$5
 div $1,$2
 mov $0,$1
 mod $0,10

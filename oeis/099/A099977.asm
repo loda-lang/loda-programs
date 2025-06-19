@@ -1,8 +1,14 @@
 ; A099977: Bisection of Bell numbers, A000110.
-; Submitted by [SG-FC] hl
+; Submitted by DukeBox
 ; 1,5,52,877,21147,678570,27644437,1382958545,82864869804,5832742205057,474869816156751,44152005855084346,4638590332229999353,545717047936059989389,71339801938860275191172
-; Formula: a(n) = A000110(2*n+1)
+; Formula: a(n) = truncate((A186021(2*n+1)-1)/2)+1
 
-mul $0,2
+mov $1,$0
+mul $1,2
+add $1,1
+mov $2,$1
+seq $2,186021 ; a(n) = Bell(n)*(2 - 0^n).
+mov $0,$2
+sub $0,1
+div $0,2
 add $0,1
-seq $0,110 ; Bell or exponential numbers: number of ways to partition a set of n labeled elements.

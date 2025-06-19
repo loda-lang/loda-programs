@@ -1,29 +1,15 @@
 ; A007663: Fermat quotients: (2^(p-1)-1)/p, where p=prime(n).
-; Submitted by Science United
+; Submitted by DukeBox
 ; 1,3,9,93,315,3855,13797,182361,9256395,34636833,1857283155,26817356775,102280151421,1497207322929,84973577874915,4885260612740877,18900352534538475,1101298153654301589,16628050996019877513,64689951820132126215,3825714619033636628817,58261485282632731311141,3477359660913989536233495,816785180559426160758185055,12550996041863657440561417875,49229149523426384524143813801,758220919762679268184943973309,2977234437233272722781247895195,45949529721547147155137135656815
+; Formula: a(n) = truncate(truncate(truncate(2^truncate(A062876(n)/4))/truncate(A062876(n)/4))/2)
 
 #offset 2
 
-mov $5,$0
-pow $5,5
-lpb $5
-  mov $3,$4
-  add $3,1
-  seq $3,365605 ; Characteristic function of numbers without an inferior odd divisor > 1.
-  sub $0,$3
-  add $4,2
-  sub $5,$0
-lpe
-mov $0,$4
-add $0,1
-mov $1,2
-pow $1,$0
-div $1,$0
-mul $1,4
-mov $2,4
-add $2,$1
-mul $2,4
+mov $1,$0
+seq $1,62876 ; Numbers of lattice points corresponding to incrementally largest circle radii in A062875.
+div $1,4
+mov $2,2
+pow $2,$1
+div $2,$1
 mov $0,$2
-sub $0,48
-div $0,32
-add $0,1
+div $0,2

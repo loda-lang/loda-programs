@@ -1,9 +1,21 @@
 ; A107359: a(n) = A003754(n+1) - A003754(n).
-; Submitted by Simon Strandgaard
+; Submitted by Science United
 ; 1,1,1,2,1,1,3,1,2,1,1,6,1,1,3,1,2,1,1,11,1,2,1,1,6,1,1,3,1,2,1,1,22,1,1,3,1,2,1,1,11,1,2,1,1,6,1,1,3,1,2,1,1,43,1,2,1,1,6,1,1,3,1,2,1,1,22,1,1,3,1,2,1,1,11,1,2,1,1,6
-; Formula: a(n) = A129761(A280514(n+1)-1)
 
+mov $1,$0
+sub $1,1
 add $0,1
-seq $0,280514 ; Index sequence of the reverse block-fractal sequence A003849.
-sub $0,1
-seq $0,129761 ; First differences of Fibbinary numbers (A003714).
+mov $2,1
+mov $4,$1
+add $4,1
+lpb $4
+  sub $4,1
+  mov $3,$2
+  add $3,1
+  bxo $3,$2
+  div $3,6
+  add $2,1
+  bxo $2,$3
+lpe
+mov $0,$3
+add $0,1

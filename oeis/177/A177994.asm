@@ -1,4 +1,4 @@
-; A177994: Triangle read by rows, A177990 * A070909
+; A177994: Triangle read by rows, A177990 * A070909.
 ; Submitted by loader3229
 ; 1,1,1,2,1,1,2,1,1,1,3,1,2,1,1,3,1,2,1,1,1,4,1,3,1,2,1,1,4,1,3,1,2,1,1,1,5,1,4,1,3,1,2,1,1,5,1,4,1,3,1,2,1,1,1,6,1,5,1,4,1,3,1,2,1,1,6,1,5,1,4,1,3,1,2,1,1,1,7,1
 ; Formula: a(n) = truncate(gcd(-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)-2*truncate((-binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+n)/2)+n,-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))/2)+1

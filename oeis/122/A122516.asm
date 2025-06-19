@@ -10,9 +10,9 @@ add $2,1
 pow $2,2
 lpb $2
   mov $3,$1
-  add $3,1
-  seq $3,61536 ; a(1) = 1 and a(n) = a(n-1) + (the number of primes <= n) for n > 1.
-  trn $3,2
+  seq $3,2815 ; a(n) = n + Sum_{k=1..n} pi(k), where pi() = A000720.
+  sub $3,1
+  sub $3,$1
   mov $5,$3
   add $3,1
   seq $3,10051 ; Characteristic function of primes: 1 if n is prime, else 0.

@@ -1,16 +1,11 @@
 ; A004162: Sum of digits of pentagonal numbers.
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 1,5,3,4,8,6,7,11,9,10,14,3,13,17,6,16,11,18,10,14,12,13,17,15,16,2,9,10,14,12,13,8,15,16,11,18,10,14,12,13,8,15,16,20,9,10,14,12,22,17,24,7,20,18,10,23,21,13,17,15,16,20,18,10,14,12,13,17,15,16,20,18,28,23,12,22,26
+; Formula: a(n) = sumdigits(floor(binomial(3*n,2)/3),10)
 
 #offset 1
 
 mul $0,3
 bin $0,2
 div $0,3
-lpb $0
-  mov $2,$0
-  mod $2,10
-  div $0,10
-  add $1,$2
-lpe
-mov $0,$1
+dgs $0,10

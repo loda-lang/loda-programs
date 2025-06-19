@@ -1,16 +1,14 @@
 ; A161511: Number of 1...0 pairs in the binary representation of 2n.
-; Submitted by kpmonaghan
+; Submitted by Athlici
 ; 0,1,2,2,3,3,4,3,4,4,5,4,6,5,6,4,5,5,6,5,7,6,7,5,8,7,8,6,9,7,8,5,6,6,7,6,8,7,8,6,9,8,9,7,10,8,9,6,10,9,10,8,11,9,10,7,12,10,11,8,12,9,10,6,7,7,8,7,9,8,9,7,10,9,10,8,11,9,10,7
 
-mov $2,-1
+mov $2,1
 lpb $0
-  mov $3,$0
-  mod $3,2
+  lpb $0
+    dif $0,2
+    add $2,1
+  lpe
+  add $1,$2
   div $0,2
-  sub $2,1
-  add $2,$3
-  mul $3,-1
-  mul $3,$2
-  add $1,$3
 lpe
 mov $0,$1

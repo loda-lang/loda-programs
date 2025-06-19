@@ -1,9 +1,59 @@
 ; A330315: a(n) = r(n)*r(n+1), where r(n) = A004018(n) is the number of ways of writing n as a sum of two squares.
-; Submitted by stoneageman
+; Submitted by Science United
 ; 4,16,0,0,32,0,0,0,16,32,0,0,0,0,0,0,32,32,0,0,0,0,0,0,0,96,0,0,0,0,0,0,0,0,0,0,32,0,0,0,64,0,0,0,0,0,0,0,0,48,0,0,64,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,32,64,0,0,0,0,0,0
-; Formula: a(n) = 4*A330316(n)
 
 mov $1,$0
-seq $1,330316 ; a(n) = r(n)*r(n+1)/4, where r(n) = A004018(n) is the number of ways of writing n as a sum of two squares.
+add $1,1
+bin $1,2
+mul $1,4
+mov $2,$1
+trn $1,1
+mov $3,$1
+mov $4,-1
+pow $4,$1
+mov $5,$1
+add $5,1
+dir $5,2
+div $5,2
+mov $6,-1
+pow $6,$5
+mul $6,2
+mov $7,-2
+bin $7,$5
+div $7,$6
+mov $10,3
+sub $5,$7
+add $5,3
+lpb $5
+  sub $5,$10
+  mov $9,$5
+  max $9,0
+  mov $12,$9
+  nrt $9,2
+  pow $9,2
+  equ $9,$12
+  equ $12,0
+  mul $9,2
+  sub $9,$12
+  add $8,$9
+  mov $10,2
+  add $10,$11
+  add $11,2
+lpe
+mov $5,$8
+mul $5,$6
+div $5,2
+max $5,0
+mul $5,2
+mod $1,4
+mul $1,$5
+sub $5,$1
+mov $1,$5
+div $1,2
+mul $1,$4
+mul $1,2
+sub $1,1
+sub $1,$3
+add $1,$2
 mov $0,$1
 mul $0,4

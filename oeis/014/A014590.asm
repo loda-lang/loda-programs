@@ -1,18 +1,14 @@
 ; A014590: Inverse of 581st cyclotomic polynomial.
-; Submitted by Skillz
+; Submitted by shiva
 ; 1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-mov $1,$0
-lpb $1
-  mov $3,$1
-  div $1,2
-  sub $3,$1
-  bin $4,$3
-  mul $4,2
-  add $4,$3
+mov $1,2
+sub $0,1
+div $0,3
+sub $0,1
+lpb $0
+  trn $0,6
+  pow $1,$0
 lpe
-mov $1,$4
-div $1,26
-mov $2,$1
-equ $2,0
-mov $0,$2
+mov $0,$1
+sub $0,1

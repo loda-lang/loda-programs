@@ -1,14 +1,19 @@
 ; A208334: Triangle of coefficients of polynomials u(n,x) jointly generated with A208335; see the Formula section.
-; Submitted by Simon Strandgaard
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,1,3,1,1,6,4,1,1,10,11,6,1,1,15,25,21,7,1,1,21,50,57,30,9,1,1,28,91,133,99,45,10,1,1,36,154,280,275,168,58,12,1,1,45,246,546,675,523,250,78,13,1,1,55,375,1002,1509,1433,885,370,95,15,1,1,66,550
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 mov $2,$0
 mov $0,$1
 sub $1,$2

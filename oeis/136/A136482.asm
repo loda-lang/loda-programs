@@ -1,11 +1,18 @@
 ; A136482: Triangle read by rows: T(n,k) = 2*A007318(n,k) - A034851(n,k) (i.e., twice Pascal's triangle - the Losanitch triangle).
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 1,1,1,1,3,1,1,4,4,1,1,6,8,6,1,1,7,14,14,7,1,1,9,21,30,21,9,1,1,10,30,51,51,30,10,1,1,12,40,84,102,84,40,12,1,1,13,52,124,186,186,124,52,13,1,1,15,65,180,310,378,310,180,65,15,1,1,16,80,245,490,688,688,490,245
 
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
+add $0,1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
+sub $0,1
 mov $2,$0
 mov $0,$1
 sub $1,$2

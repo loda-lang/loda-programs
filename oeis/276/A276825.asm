@@ -11,8 +11,12 @@ lpb $0
   mov $2,$0
   max $2,0
   mov $6,$2
+  mov $7,$2
   add $2,1
-  seq $2,23890 ; Sum of the nonprime divisors of n.
+  seq $2,203 ; a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
+  add $7,1
+  seq $7,8472 ; Sum of the distinct primes dividing n.
+  sub $2,$7
   sub $2,$6
   trn $2,2
   equ $2,0

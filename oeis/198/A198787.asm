@@ -1,19 +1,24 @@
 ; A198787: Triangle read by rows: T(n,k) is the number of edges in the (n,k)-Turán graph.
-; Submitted by pututu
+; Submitted by lee
 ; 0,0,1,0,2,3,0,4,5,6,0,6,8,9,10,0,9,12,13,14,15,0,12,16,18,19,20,21,0,16,21,24,25,26,27,28,0,20,27,30,32,33,34,35,36,0,25,33,37,40,41,42,43,44,45,0,30,40,45,48,50,51,52,53,54,55,0,36,48,54,57,60,61,62,63,64,65,66,0,42
 
 #offset 1
 
-sub $0,1
+mov $2,$0
+mul $2,8
+nrt $2,2
+sub $2,1
+div $2,2
+mov $3,$2
+add $3,1
+bin $3,2
+sub $0,$3
+mov $1,$3
+add $2,1
+mov $4,$0
+mov $0,$2
 lpb $0
-  add $1,1
-  sub $0,$1
+  sub $0,$4
+  sub $1,$0
 lpe
-add $1,1
-lpb $1
-  sub $1,1
-  add $3,$2
-  add $2,$0
-  min $2,$1
-lpe
-mov $0,$3
+mov $0,$1

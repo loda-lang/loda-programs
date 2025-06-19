@@ -1,16 +1,14 @@
 ; A059600: Expansion of (1+6*x+x^2)/(1-x)^8.
-; Submitted by Christian Krause
+; Submitted by BrandyNOW
 ; 1,14,85,344,1086,2892,6798,14520,28743,53482,94523,159952,260780,411672,631788,945744,1384701,1987590,2802481,3888104,5315530,7170020,9553050,12584520,16405155,21179106,27096759
-; Formula: a(n) = binomial(n+5,n-1)*(n+5)+binomial(n+7,n)
+; Formula: a(n) = truncate((binomial(n+5,5)*(8*(n+3)^2-30))/42)
 
+add $0,3
 mov $1,$0
-add $1,5
-mov $2,$1
-sub $0,1
-bin $1,$0
-mul $1,$2
-add $0,1
-add $2,2
-bin $2,$0
-add $2,$1
-mov $0,$2
+pow $1,2
+mul $1,8
+sub $1,30
+add $0,2
+bin $0,5
+mul $0,$1
+div $0,42

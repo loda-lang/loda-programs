@@ -1,15 +1,18 @@
 ; A193658: Q-residue of the triangle A051162, where Q is the triangular array (t(i,j)) given by t(i,j)=1.  (See Comments.)
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,1,3,15,83,503,3403,25807,218451,2049687,21160667,238690847,2923054435,38641535143,548635554795,8328494925615,134634766604915,2309386642312631,41897258229334267,801610384425038911,16132033041827096451
+; Formula: a(n) = 2*c(n)+1, b(n) = 2*b(n-1)+2*c(n-1)+2*d(n-1)+n, b(3) = 13, b(2) = 4, b(1) = 1, b(0) = 0, c(n) = n*c(n-1)+b(n-1), c(3) = 7, c(2) = 1, c(1) = 0, c(0) = 0, d(n) = c(n-1)+d(n-1), d(3) = 1, d(2) = 0, d(1) = 0, d(0) = 0
 
 lpb $0
   sub $0,1
-  add $3,$1
-  add $3,$2
-  add $1,$3
-  mul $1,2
+  add $4,$3
   add $2,1
-  mul $3,$0
+  mul $3,$2
+  add $3,$1
+  add $1,$4
+  mul $1,2
+  add $1,$2
 lpe
-mov $0,$1
+mov $0,$3
+mul $0,2
 add $0,1

@@ -1,16 +1,14 @@
 ; A134444: (A000012 * A128174 + A128174 * A000012) - A000012.
-; Submitted by aendgraend
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,1,1,3,1,1,3,3,1,1,5,3,3,1,1,5,5,3,3,1,1,7,5,5,3,3,1,1,7,7,5,5,3,3,1,1,9,7,7,5,5,3,3,1,1,9,9,7,7,5,5,3,3,1,1
-; Formula: a(n) = 2*truncate((-n+binomial(truncate((sqrtint(8*n+8)+3)/2),2)-1)/2)+1
 
 add $0,1
 mov $1,$0
-mul $0,8
-nrt $0,2
-add $0,3
-div $0,2
-bin $0,2
-sub $0,$1
-div $0,2
-mul $0,2
-add $0,1
+mul $1,8
+nrt $1,2
+add $1,3
+div $1,2
+bin $1,2
+sub $1,$0
+min $0,1
+bor $0,$1

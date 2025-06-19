@@ -1,5 +1,5 @@
 ; A230847: a(n) = 1 + A054541(n).
-; Submitted by Ralfy
+; Submitted by Dirk Broer
 ; 3,2,3,3,5,3,5,3,5,7,3,7,5,3,5,7,7,3,7,5,3,7,5,7,9,5,3,5,3,5,15,5,7,3,11,3,7,7,5,7,7,3,11,3,5,3,13,13,5,3,5,7,3,11,7,7,7,3,7,5,3,11,15,5,3,5,15,7,11,3,5,7,9,7,7,5,7,9,5,9
 
 #offset 1
@@ -14,7 +14,7 @@ lpb $2
   trn $0,1
   lpb $0
     min $0,2
-    seq $0,142538 ; Primes congruent to 8 mod 53.
+    seq $0,142537 ; Primes congruent to 7 mod 53.
   lpe
   add $0,1
   seq $0,40 ; The prime numbers.

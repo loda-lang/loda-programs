@@ -10,10 +10,17 @@ mul $0,$1
 add $0,1
 lpb $0
   mov $3,$0
-  seq $3,66568 ; a(n) = n - sum of digits of n.
-  mov $4,$3
+  div $3,10
+  mul $3,10
+  mov $6,$3
+  dgs $3,10
+  sub $6,$3
+  div $6,9
+  mov $5,$6
+  mul $5,9
+  mov $4,$5
   min $4,1
-  sub $0,$3
+  sub $0,$5
   add $2,$4
 lpe
 mov $0,$2

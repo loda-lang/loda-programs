@@ -1,60 +1,31 @@
 ; A379573: Numbers of connected uniquely graceful graph on n vertices.
-; Submitted by loader3229
+; Submitted by BrandyNOW
 ; 1,1,2,4,1,4,2,19
+; Formula: a(n) = c(n-1)-1, b(n) = -b(n-1)+max(d(n-2),1), b(6) = 2, b(5) = -1, b(4) = 2, b(3) = -1, b(2) = 2, b(1) = -1, b(0) = 1, c(n) = 2*max(d(n-1),1)-max(d(n-2),1)+gcd(e(n-1),d(n-1)), c(7) = 20, c(6) = 3, c(5) = 5, c(4) = 2, c(3) = 5, c(2) = 3, c(1) = 2, c(0) = 2, d(n) = -gcd(e(n-2),d(n-2))-2*max(d(n-2),1)+d(n-1)+max(d(n-3),1), d(7) = -22, d(6) = -19, d(5) = -14, d(4) = -12, d(3) = -7, d(2) = -4, d(1) = -2, d(0) = 0, e(n) = 4*b(n-1)+4*gcd(e(n-1),d(n-1))-4, e(6) = 0, e(5) = 20, e(4) = -4, e(3) = 20, e(2) = 0, e(1) = 0, e(0) = 0
 
 #offset 1
 
+mov $2,1
+mov $3,2
 sub $0,1
-mov $1,$0
 lpb $0
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  neq $6,0
-  mov $7,$2
-  mul $7,$2
-  mul $2,2
-  mov $8,$2
-  mul $8,$3
-  mov $9,$2
-  mul $9,$4
-  mov $10,$3
-  mul $10,$3
-  mov $11,$3
-  mul $11,$4
-  mul $11,2
-  mov $12,$4
-  mul $12,$4
-  sub $12,1
-  div $0,2
-  sub $1,74
-  max $7,$9
-  mov $2,$10
-  sub $2,$8
-  sub $2,$7
-  mov $3,$11
-  sub $3,$10
-  add $3,$7
-  mov $4,$12
-  add $4,$10
-  add $4,$8
-  mul $8,$6
-  mul $9,$6
-  mul $10,$6
-  mul $10,2
-  mul $11,$6
-  add $2,$7
-  add $2,$7
-  add $2,$8
-  sub $2,$9
-  add $2,$11
+  sub $0,1
+  gcd $6,$5
+  sub $4,$7
+  sub $4,$6
+  sub $5,$3
+  add $6,$2
+  add $3,$5
+  max $3,1
+  mov $7,$4
+  sub $7,$3
+  sub $1,$2
+  sub $1,$2
+  add $2,$1
+  sub $6,1
+  mul $6,4
+  mov $1,$3
   sub $3,$7
-  add $3,$8
-  add $3,$10
-  add $3,$12
 lpe
-mov $0,$2
-add $0,1
+mov $0,$3
+sub $0,1

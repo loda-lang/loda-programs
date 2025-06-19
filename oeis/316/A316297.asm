@@ -1,20 +1,19 @@
 ; A316297: a(n) = n! times the denominator of the n-th harmonic number H(n).
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,4,36,288,7200,14400,705600,11289600,914457600,9144576000,1106493696000,13277924352000,2243969215488000,31415569016832000,471233535252480000,15079473128079360000,4357967734014935040000,26147806404089610240000,9439358111876349296640000
+; Formula: a(n) = truncate((b(n)^2)/gcd(c(n),b(n))), b(n) = n*b(n-1), b(2) = 2, b(1) = 1, b(0) = 1, c(n) = n*c(n-1)+b(n-1), c(2) = 3, c(1) = 1, c(0) = 0
 
 #offset 1
 
 mov $1,1
-sub $0,1
 lpb $0
-  mov $2,$0
-  add $2,1
-  add $3,$1
-  mul $3,$0
   sub $0,1
+  add $2,1
+  mul $3,$2
+  add $3,$1
   mul $1,$2
 lpe
-pow $1,2
 gcd $3,$1
+pow $1,2
 div $1,$3
 mov $0,$1

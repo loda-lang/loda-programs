@@ -1,6 +1,7 @@
 ; A284743: Positive numbers that are not the sum of (any number of) distinct perfect powers (A001597).
 ; Submitted by BrandyNOW
 ; 2,3,6,7,11,15,19,23
+; Formula: a(n) = floor((3*sumdigits(n^2,2)+2*n^2)/6)+2
 
 #offset 1
 

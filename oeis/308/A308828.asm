@@ -6,6 +6,5 @@
 #offset 1
 
 gcd $1,$0
-mov $2,$0
 seq $0,135616 ; Number of permutations p of {1,2,...,n} such that p(x) is a polynomial in x, modulo n, of degree at most 2, for x=1,2,3,...,n.
 div $0,$1

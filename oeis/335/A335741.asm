@@ -1,15 +1,28 @@
 ; A335741: Number of Pell numbers (A000129) <= n.
-; Submitted by BrandyNOW
+; Submitted by Wood
 ; 1,2,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7
+; Formula: a(n) = b(n)+1, b(n) = 0^max(min(2*n^2-sqrtint(2*n^2)^2,(sqrtint(2*n^2)+1)^2-2*n^2)-1,0)+b(n-1), b(0) = 0
 
-mov $3,1
 lpb $0
-  add $1,1
-  add $3,$2
-  add $4,$3
-  sub $0,$3
-  mov $3,$2
-  mov $2,$4
+  mov $2,$0
+  pow $2,2
+  mul $2,2
+  mov $4,$2
+  nrt $4,2
+  mov $5,$4
+  add $5,1
+  pow $5,2
+  sub $5,$2
+  pow $4,2
+  sub $2,$4
+  min $2,$5
+  sub $2,1
+  mov $6,$2
+  max $6,0
+  mov $3,0
+  pow $3,$6
+  sub $0,1
+  add $1,$3
 lpe
 mov $0,$1
 add $0,1

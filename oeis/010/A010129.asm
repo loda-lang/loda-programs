@@ -1,18 +1,29 @@
 ; A010129: Continued fraction for sqrt(31).
-; Submitted by Jim1348
+; Submitted by Ralfy
 ; 5,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1,10,1,1,3,5,3,1,1
-; Formula: a(n) = gcd(truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/5),truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)+1)+truncate(truncate((-4*truncate(A266313(n)/4)+A040329(n)+A266313(n))/2)/2)
 
-mov $2,$0
-seq $2,266313 ; Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].
-mod $2,4
-seq $0,40329 ; Continued fraction for sqrt(348).
-add $0,$2
-div $0,2
-mov $1,$0
-div $0,2
+mov $3,$0
+mod $3,8
+mov $5,$0
+gcd $0,8
+mov $1,8
+sub $1,$3
+min $3,$1
+mod $3,4
+mov $4,10
+lpb $5
+  mov $5,3
+  add $0,6
+  mov $4,7
+lpe
+mul $0,$4
+trn $0,63
 add $0,1
-div $1,5
-gcd $1,$0
-add $0,$1
+add $0,$3
+mov $2,$0
+div $2,10
+div $0,4
+add $0,1
+gcd $2,$0
+add $0,$2
 sub $0,1

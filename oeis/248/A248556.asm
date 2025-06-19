@@ -16,7 +16,6 @@ mov $1,$0
 add $0,1
 mov $4,$0
 mov $3,$0
-add $3,1
 lpb $3
   div $3,10
   mul $0,10

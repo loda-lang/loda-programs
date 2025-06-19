@@ -1,17 +1,13 @@
 ; A096398: Nonnegative numbers k such that 0 = #{ 0 <= i <= k : K(k, i) = -1 } where K(k, i) is the Kronecker symbol.
-; Submitted by lee
+; Submitted by shiva
 ; 0,1,2,4,6,9,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400,441,484,529,576,625,676,729,784,841,900,961,1024,1089,1156,1225,1296,1369,1444,1521,1600,1681,1764,1849,1936,2025,2116,2209,2304,2401
-; Formula: a(n) = floor(((n*((4*n+4)>=12)+max(n-6,0))^2)/4)
+; Formula: a(n) = floor(((max(n-6,0)+n)^2)/4)
 
 #offset 1
 
 mov $1,$0
-add $1,1
-mul $1,4
-geq $1,12
-mul $1,$0
-trn $0,6
+trn $1,6
 add $1,$0
+pow $1,2
 mov $0,$1
-pow $0,2
 div $0,4

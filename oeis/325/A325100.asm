@@ -16,6 +16,7 @@ lpb $2
   seq $3,124859 ; Multiplicative with p^e -> primorial(e), p prime and e > 0.
   seq $3,334032 ; The a(n)-th composition in standard order (graded reverse-lexicographic) is the unsorted prime signature of n.
   seq $3,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
+  seq $3,59893 ; Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
   seq $3,57335 ; a(0) = 1, and for n > 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.
   seq $3,335447 ; Number of (1,2)-matching permutations of the prime indices of n.
   add $3,1

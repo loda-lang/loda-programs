@@ -1,5 +1,5 @@
 ; A054541: Sum of first n terms equals n-th prime.
-; Submitted by Ralfy
+; Submitted by Dirk Broer
 ; 2,1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8
 
 #offset 1
@@ -14,7 +14,7 @@ lpb $2
   trn $0,1
   lpb $0
     min $0,2
-    seq $0,11543 ; Decimal expansion of e truncated to n places.
+    seq $0,142537 ; Primes congruent to 7 mod 53.
   lpe
   add $0,1
   seq $0,40 ; The prime numbers.

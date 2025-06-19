@@ -1,26 +1,29 @@
 ; A361654: Triangle read by rows where T(n,k) is the number of nonempty subsets of {1,...,2n-1} with median n and minimum k.
-; Submitted by Science United
+; Submitted by yasiwo
 ; 1,2,1,5,3,1,15,9,4,1,50,29,14,5,1,176,99,49,20,6,1,638,351,175,76,27,7,1,2354,1275,637,286,111,35,8,1,8789,4707,2353,1078,441,155,44,9,1,33099,17577,8788,4081,1728,650,209,54,10,1,125477,66197,33098,15521,6733,2652,924,274,65,11,1,478193,250953,125476,59279,26181,10660,3927,1275,351,77,12,1,1830271,956385
 
 #offset 1
 
-mov $4,-1
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $4,$1
+add $4,1
+bin $4,2
+sub $0,$4
+mov $6,$0
+sub $6,2
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
-add $4,$0
-sub $4,1
 sub $1,$0
 add $1,1
 lpb $1
   sub $1,1
-  add $4,1
-  mov $5,$4
+  mov $5,$6
   bin $5,$3
   add $2,$5
   add $3,1
-  add $4,1
+  add $6,2
 lpe
 mov $0,$2

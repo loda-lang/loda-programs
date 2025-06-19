@@ -6,7 +6,6 @@ mov $1,$0
 nrt $1,2
 mov $2,1
 add $2,$1
-mov $5,0
 mul $1,$2
 add $1,$0
 mov $0,$1

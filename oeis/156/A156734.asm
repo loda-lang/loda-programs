@@ -1,5 +1,5 @@
 ; A156734: Square array read by antidiagonals up. T(n,k) = if k divides n then +1 else -1.
-; Submitted by iBezanilla
+; Submitted by mmonnin
 ; 1,1,-1,1,1,-1,1,-1,-1,-1,1,1,1,-1,-1,1,-1,-1,-1,-1,-1,1,1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,-1,1,-1,-1,-1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 
 #offset 1
@@ -16,8 +16,7 @@ mov $1,1
 add $2,2
 sub $0,$3
 lpb $0
-  bin $1,$0
-  sub $1,1
   gcd $0,$2
+  sub $1,2
 lpe
 mov $0,$1

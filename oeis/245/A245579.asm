@@ -1,12 +1,11 @@
 ; A245579: Number of odd divisors of n multiplied by n.
-; Submitted by owensse
+; Submitted by Science United
 ; 1,2,6,4,10,12,14,8,27,20,22,24,26,28,60,16,34,54,38,40,84,44,46,48,75,52,108,56,58,120,62,32,132,68,140,108,74,76,156,80,82,168,86,88,270,92,94,96,147,150,204,104,106,216,220,112,228,116,118,240,122,124,378,64,260,264,134,136,276,280,142,216,146,148,450,152,308,312,158,160
-; Formula: a(n) = truncate((n*A054844(n))/2)
 
 #offset 1
 
 mov $1,$0
-seq $1,54844 ; Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
+dir $1,2
+seq $1,5 ; d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
 mul $1,$0
 mov $0,$1
-div $0,2

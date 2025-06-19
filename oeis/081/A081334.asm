@@ -1,16 +1,20 @@
-; A081334: sigma(2*n^2) modulo 4.
-; Submitted by Atheze
+; A081334: a(n) = sigma(2*n^2) modulo 4.
+; Submitted by Science United
 ; 3,3,3,3,1,3,3,3,3,1,3,3,1,3,1,3,1,3,3,1,3,3,3,3,3,1,3,3,1,1,3,3,3,1,1,3,1,3,1,1,1,3,3,3,1,3,3,3,3,3,1,1,1,3,1,3,3,1,3,1,1,3,3,3,3,3,3,1,3,1,3,3,1,1,3,3,3,1,3,1
-; Formula: a(n) = 2*A341885(A000265(n-1))-4*truncate((A341885(A000265(n-1))+1)/2)+3
 
 #offset 1
 
-sub $0,1
+seq $0,170818 ; a(n) is the product of primes (with multiplicity) of form 4*k+1 that divide n.
+seq $0,146564 ; a(n) is the number of solutions of the equation k*n/(k-n) = c. k,c integers.
+div $0,3
+mul $0,2
+add $0,1
 mov $1,$0
-seq $1,265 ; Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
-seq $1,341885 ; a(n) is the sum of A000217(p) over the prime factors p of n, counted with multiplicity.
-add $1,1
-mod $1,2
+div $0,2
+sub $1,$0
+add $0,1
+dif $1,2
+bin $1,$0
 mov $0,$1
 mul $0,2
 add $0,1

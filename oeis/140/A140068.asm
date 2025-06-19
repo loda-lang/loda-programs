@@ -1,14 +1,19 @@
 ; A140068: Triangle read by rows, n-th row = (n-1)-th power of the matrix X * [1,0,0,0,...] where X = an infinite lower triangular matrix with [1,2,1,2,1,2,...] in the main diagonal and [1,1,1,...] in the subdiagonal.
-; Submitted by damotbe
+; Submitted by DenMartin
 ; 1,1,1,1,3,1,1,7,4,1,1,15,11,6,1,1,31,26,23,7,1,1,63,57,72,30,9,1,1,127,120,201,102,48,10,1,1,255,247,522,303,198,58,12,1,1,511,502,1291,825,699,256,82,13,1,1,1023,1013,3084,2116,2223,955,420,95,15,1,1,2047,2036
 
 #offset 1
 
+mov $1,$0
+mul $1,8
+nrt $1,2
+sub $1,1
+div $1,2
+mov $7,$1
+add $7,1
+bin $7,2
+sub $0,$7
 sub $0,1
-lpb $0
-  add $1,1
-  sub $0,$1
-lpe
 mov $2,$0
 mov $0,$1
 sub $1,$2

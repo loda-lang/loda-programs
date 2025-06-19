@@ -1,23 +1,15 @@
 ; A190676: [(bn+c)r]-b[nr]-[cr], where (r,b,c)=(sqrt(3),3,0) and [ ]=floor.
+; Submitted by BrandyNOW
 ; 2,1,0,2,1,1,0,2,1,0,0,2,1,0,2,2,1,0,2,1,1,0,2,1,0,0,2,1,0,2,2,1,0,2,1,1,0,2,1,0,0,2,1,0,2,2,1,0,2,1,1,0,2,1,0,2,2,1,0,2,1,1,0,2,1,0,0,2,1,0,2,2,1,0,2,1,1,0,2,1
+; Formula: a(n) = -3*truncate(sqrtint(27*n^2)/3)+sqrtint(27*n^2)
 
 #offset 1
 
-sub $0,1
-mul $0,6
 mov $1,$0
-add $1,6
-add $0,5
-mov $3,1
-mov $4,26
-lpb $4
-  sub $4,3
-  add $3,$2
-  add $3,$2
-  add $2,$3
-lpe
-mul $2,$1
-div $2,$3
-add $0,$2
-add $0,1
-mod $0,-3
+mul $0,3
+mul $1,6
+add $1,$0
+mul $1,$0
+nrt $1,2
+mod $1,3
+mov $0,$1

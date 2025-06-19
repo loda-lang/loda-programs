@@ -1,6 +1,7 @@
 ; A230709: Union of even odious (cf. A128309) and evil numbers (cf. A001969).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 0,2,3,4,5,6,8,9,10,12,14,15,16,17,18,20,22,23,24,26,27,28,29,30,32,33,34,36,38,39,40,42,43,44,45,46,48,50,51,52,53,54,56,57,58,60,62,63,64,65,66,68,70,71,72,74,75,76,77,78,80,82,83,84,85,86,88,89,90,92,94,95,96,98,99,100,101,102,104,105
+; Formula: a(n) = truncate((gcd(sumdigits(truncate((8*n-10)/3),2)*sign(truncate((8*n-10)/3))-1,2)+truncate((8*n-10)/3))/2)
 
 #offset 1
 
@@ -9,11 +10,7 @@ sub $0,5
 mul $0,2
 div $0,3
 mov $1,$0
-mov $2,$0
-lpb $0
-  div $2,2
-  sub $0,$2
-lpe
+dgs $0,2
 sub $0,1
 gcd $0,2
 add $0,$1
