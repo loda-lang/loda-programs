@@ -1,0 +1,61 @@
+; A328732: Irregular table read by rows; for any n >= 0, the n-th row contains the numbers of the form u - v with u + v = n and u AND v = 0 (where AND denotes the bitwise AND operator), in ascending order.
+; Submitted by Science United
+; 0,-1,1,-2,2,-3,-1,1,3,-4,4,-5,-3,3,5,-6,-2,2,6,-7,-5,-3,-1,1,3,5,7,-8,8,-9,-7,7,9,-10,-6,6,10,-11,-9,-7,-5,5,7,9,11,-12,-4,4,12,-13,-11,-5,-3,3,5,11,13,-14,-10,-6,-2,2,6,10,14,-15,-13,-11,-9,-7,-5,-3,-1,1,3,5,7,9,11,13
+
+mov $3,$0
+max $3,1
+log $3,3
+mov $4,3
+pow $4,$3
+mov $5,2
+pow $5,$3
+lpb $3
+  mov $8,1
+  sub $0,$4
+  add $1,$5
+  mov $7,0
+  mov $10,$0
+  lpb $10
+    mov $9,$10
+    mod $9,2
+    mov $11,$10
+    div $11,2
+    mov $12,$11
+    min $12,1
+    max $11,1
+    log $11,3
+    add $11,$12
+    mov $12,3
+    pow $12,$11
+    div $12,3
+    sub $10,$12
+    sub $10,$12
+    add $9,$12
+    mul $9,$8
+    min $12,1
+    add $12,1
+    add $7,$9
+    mul $8,2
+    div $10,$12
+  lpe
+  mov $6,$10
+  mul $6,$5
+  mov $0,$7
+  add $2,$6
+  mov $3,$7
+  max $3,1
+  log $3,3
+  mov $4,3
+  pow $4,$3
+  mov $5,2
+  pow $5,$3
+lpe
+mov $3,$0
+min $3,1
+trn $0,1
+add $1,$3
+mul $1,-1
+add $2,$0
+mul $2,2
+mov $0,$1
+add $0,$2
