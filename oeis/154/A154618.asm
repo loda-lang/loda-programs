@@ -10,7 +10,22 @@ lpb $2
   sub $2,26
   mov $3,$1
   add $3,1
-  seq $3,163652 ; Triangle read by rows where T(n,m)=2*m*n + m + n + 6.
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  sub $6,1
+  div $6,2
+  mov $7,$6
+  add $7,1
+  add $6,$7
+  add $6,2
+  bin $7,2
+  add $3,1
+  sub $3,$7
+  mul $3,$6
+  div $6,2
+  sub $3,$6
+  add $3,5
   mov $5,$3
   mod $3,3
   gcd $3,4

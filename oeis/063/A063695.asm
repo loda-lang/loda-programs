@@ -1,12 +1,11 @@
 ; A063695: Remove even-positioned bits from the binary expansion of n.
-; Submitted by vanos0512
+; Submitted by BrandyNOW
 ; 0,0,2,2,0,0,2,2,8,8,10,10,8,8,10,10,0,0,2,2,0,0,2,2,8,8,10,10,8,8,10,10,32,32,34,34,32,32,34,34,40,40,42,42,40,40,42,42,32,32,34,34,32,32,34,34,40,40,42,42,40,40,42,42,0,0,2,2,0,0,2,2,8,8,10,10,8,8,10,10
 ; Formula: a(n) = bitxor(2730,floor(n/2))+floor(n/2)-2730
 
-div $0,2
-mov $1,2730
-bxo $1,$0
-sub $0,3
-add $1,$0
-mov $0,$1
-sub $0,2727
+mov $1,$0
+div $1,2
+mov $0,2730
+bxo $0,$1
+add $0,$1
+sub $0,2730

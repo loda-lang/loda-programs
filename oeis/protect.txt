@@ -137,7 +137,6 @@ A037239: Numerator of Pi^(2n)/(GAMMA(2n)*(1-2^(-2n))*Zeta(2n)); = 8*(highest pow
 A038040: a(n) = n*d(n), where d(n) = number of divisors of n (A000005).
 A038189: Bit to left of least significant 1-bit in binary expansion of n.
 A038194: Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
-A038500: Highest power of 3 dividing n.
 A038702: Prime(n)^2 mod prime(n-1).
 A038712: Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
 A039643: Number of steps to fixed point of "k -> k/2 or (k-1)/2 until result is prime", starting with prime(n)+1.
@@ -555,7 +554,6 @@ A259547: a(n) = n^4*Fibonacci(n).
 A261872: a(n) = phi(n) mod 5, where phi is the Euler totient function.
 A263846: Floor of cube root of n-th prime.
 A265538: Largest base-7 palindrome m <= n, written in base 7.
-A268354: Highest power of 7 dividing n.
 A272027: a(n) = 3*sigma(n).
 A272470: 7 times the primes.
 A274535: a(n) = 5*sigma(n).

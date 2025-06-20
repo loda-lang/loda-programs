@@ -8,7 +8,6 @@ lpb $3
   sub $3,1
   mov $0,$4
   add $0,$3
-  max $0,0
   add $0,1
   seq $0,71 ; a(n) = Fibonacci(n) - 1.
   add $0,2

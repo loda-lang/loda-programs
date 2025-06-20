@@ -10,5 +10,4 @@ seq $1,20639 ; Lpf(n): least prime dividing n (when n > 1); a(1) = 1. Or, smalle
 mov $2,$0
 div $2,$1
 sub $1,$2
-sub $0,1
 mov $0,$1

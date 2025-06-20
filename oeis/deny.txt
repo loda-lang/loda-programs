@@ -1716,5 +1716,6 @@ A338734: Erroneous version of A123828.
 A339386: a(n) is the number of non-isomorphic, serial/parallel indecomposable resistor networks with n edges. (Erroneous version of A338487)
 A344002: Erroneous version of A077868 (if initial 0 is ignored).
 A344003: Erroneous version of A050228 (if initial 0 is ignored).
+A348264: a(n) is the number of iterations that n requires to reach a fixed point under the map x -> A348173(x).
 A350408: Erroneous version of A187015.
 A362102: Erroneous version of A000260.
