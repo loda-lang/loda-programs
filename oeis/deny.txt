@@ -1112,6 +1112,7 @@ A094300: Duplicate of A055773.
 A094355: Duplicate of A087334.
 A094356: Duplicate of A087335.
 A094481: Duplicate of A045637.
+A094497: Triangular table A(n,j) = C(n,j) - C(n,j) mod n^3, difference of binomial coefficient and its residue mod n^3, read by rows.
 A094532: Duplicate of A092980.
 A094579: Duplicate of A029729.
 A094583: Erroneous version of A002058.
