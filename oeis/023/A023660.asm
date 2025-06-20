@@ -9,7 +9,6 @@ lpb $0
   sub $0,3
   sub $0,$3
   mov $2,$0
-  max $2,0
   add $2,1
   seq $2,23543 ; Convolution of natural numbers with A023533.
   mul $2,2

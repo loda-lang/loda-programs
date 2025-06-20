@@ -13,14 +13,14 @@ mov $6,0
 mov $7,6
 mov $8,0
 mov $9,1
-mov $10,6
+mov $10,7
 mov $11,0
 mov $12,2
 mov $13,0
 mov $14,0
 mov $0,-1
 mov $1,125
-lpb $1,2
+lpb $1
   mov $4,$1
   mod $4,$2
   add $4,$5

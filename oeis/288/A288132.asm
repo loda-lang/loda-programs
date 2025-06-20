@@ -1,6 +1,7 @@
 ; A288132: Fixed point of the mapping 00->0010, 1->11, starting with 00.
 ; Submitted by loader3229
 ; 0,0,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+; Formula: a(n) = -((truncate(2^logint(n,2))*(logint(n,2)<=2))==n)-((logint(n,2)+truncate(2^logint(n,2))+1)==n)+1
 
 #offset 1
 

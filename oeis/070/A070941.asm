@@ -1,11 +1,9 @@
 ; A070941: Length of binary representation of 2n+1.
-; Submitted by Science United
+; Submitted by loader3229
 ; 1,2,3,3,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
 ; Formula: a(n) = logint(2*n+1,2)+1
 
 mul $0,2
 add $0,1
-mov $1,$0
-log $1,2
-mov $0,$1
+log $0,2
 add $0,1

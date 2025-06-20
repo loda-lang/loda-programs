@@ -1,18 +1,15 @@
 ; A007673: Number of coins needed for ApSimon's mints problem.
-; Submitted by BrandyNOW
+; Submitted by loader3229
 ; 1,2,4,8,15,28,51,90
-; Formula: a(n) = truncate(sqrtint(2^(n+2)+(binomial(n+2,2)^2-2)*2^(n+2))/16)+1
+; Formula: a(n) = sqrtint(4*3^(n-1)+16)-3
 
 #offset 1
 
-add $0,2
-mov $1,2
+sub $0,1
+mov $1,3
 pow $1,$0
-bin $0,2
-pow $0,2
-sub $0,2
-mul $0,$1
-add $0,$1
+mov $0,$1
+add $0,4
+mul $0,4
 nrt $0,2
-div $0,16
-add $0,1
+sub $0,3

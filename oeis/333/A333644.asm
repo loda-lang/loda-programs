@@ -4,31 +4,18 @@
 
 #offset 1
 
-sub $0,1
-mov $7,$0
-mov $6,$0
-add $6,1
-lpb $6
-  sub $6,1
-  mov $0,$7
-  sub $0,$6
-  mov $1,1
-  mov $2,1
+mov $2,$0
+mov $4,$0
+lpb $4
+  sub $4,1
+  mov $0,$2
+  sub $0,$4
+  mov $1,$0
+  bin $1,$0
+  sub $0,$1
   add $0,1
-  lpb $0
-    mov $3,$2
-    lpb $3
-      add $2,1
-      mov $4,$1
-      gcd $4,$2
-      neq $4,1
-      sub $3,$4
-    lpe
-    add $2,1
-    sub $0,1
-    trn $0,$6
-    mul $1,$2
-    add $5,$2
-  lpe
+  seq $0,7445 ; Inverse Moebius transform of primes.
+  mul $1,$0
+  add $3,$1
 lpe
-mov $0,$5
+mov $0,$3

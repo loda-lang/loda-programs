@@ -1,5 +1,5 @@
 ; A334987: Sum of centered triangular numbers dividing n.
-; Submitted by Jamie Morken(s4)
+; Submitted by iBezanilla
 ; 1,1,1,5,1,1,1,5,1,11,1,5,1,1,1,5,1,1,20,15,1,1,1,5,1,1,1,5,1,11,32,5,1,1,1,5,1,20,1,15,1,1,1,5,1,47,1,5,1,11,1,5,1,1,1,5,20,1,1,15,1,32,1,69,1,1,1,5,1,11,1,5,1,1,1,24,1,1,1,15
 
 #offset 1
@@ -9,6 +9,7 @@ mov $3,1
 mov $4,1
 mov $2,$0
 lpb $2
+  div $2,2
   add $3,2
   add $4,$3
   mov $5,$0
@@ -18,10 +19,5 @@ lpb $2
   mul $6,$5
   add $1,$6
   add $3,1
-  mov $5,$0
-  add $5,1
-  trn $5,$4
-  neq $5,0
-  sub $2,$5
 lpe
 mov $0,$1

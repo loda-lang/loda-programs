@@ -1,19 +1,17 @@
 ; A145011: First differences of A007775.
-; Submitted by USTL-FIL (Lille Fr)
+; Submitted by loader3229
 ; 6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2,6,4,2,4,2,4,6,2
-; Formula: a(n) = (2*floor((binomial((n-1)%8+5,2)+2)/3)^2+4)%10
+; Formula: a(n) = sumdigits(4*((-(n%8)+8)==4)+2*max(n%8,-(n%8)+8)-8,7)*sign(4*((-(n%8)+8)==4)+2*max(n%8,-(n%8)+8)-8)
 
 #offset 1
 
-sub $0,1
 mod $0,8
-add $0,5
-bin $0,2
-add $0,2
-div $0,3
-mov $1,$0
-add $1,$0
-mul $1,$0
-mov $0,$1
-add $0,4
-mod $0,10
+mov $1,8
+sub $1,$0
+max $0,$1
+mul $0,2
+sub $0,8
+equ $1,4
+mul $1,4
+add $0,$1
+dgs $0,7

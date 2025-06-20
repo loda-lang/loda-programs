@@ -1,10 +1,12 @@
 ; A320394: Number of ones in binary expansion n^5.
-; Submitted by omegaintellisys
+; Submitted by loader3229
 ; 0,1,1,6,1,6,6,7,1,9,6,10,6,11,7,12,1,10,9,9,6,11,10,14,6,11,11,15,7,15,12,15,1,10,10,13,9,11,9,13,6,16,11,15,10,21,14,18,6,15,11,13,11,13,15,19,7,17,15,14,12,14,15,18,1,10,10,14,10,18,13,18
+; Formula: a(n) = n^5+sumdigits(2*truncate((n^5)/2),2)*sign(2*truncate((n^5)/2))-2*truncate((n^5)/2)
 
 pow $0,5
 mov $1,$0
-lpb $1
-  div $1,2
-  sub $0,$1
-lpe
+div $1,2
+mul $1,2
+sub $0,$1
+dgs $1,2
+add $0,$1

@@ -1,16 +1,21 @@
 ; A316825: Fibonacci word A003849 with its initial term changed to 2.
-; Submitted by Mumps
+; Submitted by loader3229
 ; 2,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0
+; Formula: a(n) = -n+max(truncate((-truncate((sqrtint(5*(n+1)^2)+n+1)/2)+sqrtint(5*(truncate((sqrtint(5*(n+1)^2)+n+1)/2)+2)^2)-2)/2),3)-1
 
-mov $1,1
-mov $2,2
-lpb $0
-  sub $0,1
-  sub $1,$2
-  add $1,1
-  dif $1,2
-  mul $2,2
-lpe
-mov $0,$1
-mod $0,2
 add $0,1
+mov $1,$0
+pow $0,2
+mul $0,5
+nrt $0,2
+add $0,$1
+div $0,2
+add $0,2
+mov $2,$0
+pow $0,2
+mul $0,5
+nrt $0,2
+sub $0,$2
+div $0,2
+max $0,3
+sub $0,$1

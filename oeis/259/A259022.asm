@@ -1,10 +1,16 @@
 ; A259022: Period 9 sequence [ 1, -1, -1, 1, 0, -1, 1, 1, -1, ...].
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1,1,0,-1,1,1,-1,1,-1,-1
+; Formula: a(n) = sign(-n*floor((4*binomial(n,2)+164)/3)+n-1)*((abs(-n*floor((4*binomial(n,2)+164)/3)+n-1)-1)%3+1)+2
 
-mul $0,4
+mov $1,$0
+bin $1,2
+add $1,41
+mul $1,4
+div $1,3
+mov $2,$0
+mul $2,$1
+sub $0,$2
+sub $0,1
+dgr $0,4
 add $0,2
-seq $0,277544 ; a(n) = n/6^m mod 6, where 6^m is the greatest power of 6 that divides n.
-mul $0,2
-mod $0,3
-dif $0,-2

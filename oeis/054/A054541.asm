@@ -1,5 +1,5 @@
 ; A054541: Sum of first n terms equals n-th prime.
-; Submitted by Dirk Broer
+; Submitted by Science United
 ; 2,1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8
 
 #offset 1
@@ -15,6 +15,7 @@ lpb $2
   lpb $0
     min $0,2
     seq $0,142537 ; Primes congruent to 7 mod 53.
+    sub $2,2
   lpe
   add $0,1
   seq $0,40 ; The prime numbers.

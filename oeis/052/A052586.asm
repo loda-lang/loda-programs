@@ -1,11 +1,20 @@
 ; A052586: Expansion of e.g.f.: (1-x^3)/(1-x-x^3).
-; Submitted by Christian Krause
+; Submitted by Science United
 ; 1,1,2,6,48,360,2880,30240,362880,4717440,68947200,1117670400,19639065600,373621248000,7671689625600,168689993472000,3954407288832000,98525417582592000,2599363724525568000
+; Formula: a(n) = n*max(b(n-2)*(n-1),1), a(3) = 6, a(2) = 2, a(1) = 1, a(0) = 1, b(n) = n*max(b(n-3)*(n-2),1)*(n-1)+n*b(n-1), b(3) = 18, b(2) = 4, b(1) = 1, b(0) = 0
 
-mov $1,$0
-trn $0,1
-seq $0,930 ; Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
-lpb $1
-  mul $0,$1
-  sub $1,1
+mov $3,1
+lpb $0
+  sub $0,1
+  add $1,1
+  sub $4,$3
+  add $3,$4
+  sub $4,$3
+  mul $4,$1
+  mul $2,$1
+  sub $2,$4
+  max $3,1
+  mul $3,$1
+  add $4,$2
 lpe
+mov $0,$3

@@ -7,12 +7,12 @@ trn $0,2
 sub $1,$0
 mov $2,1
 lpb $0
-  trn $0,1
   mov $3,$0
-  add $3,2
+  add $3,1
   seq $3,205593 ; a(2) = 0, a(3k) = a(3k+1) = a(2k), a(3k+2) = a(2k+1) + 1 for k >= 1.
   mov $4,2
   pow $4,$3
+  sub $0,1
   add $2,$4
 lpe
 mov $0,$2
