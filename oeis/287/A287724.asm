@@ -1,35 +1,29 @@
 ; A287724: Positions of 1 in A287722; complement of A287723.
-; Submitted by Coleslaw
+; Submitted by Science United
 ; 1,3,5,6,8,10,12,14,15,17,19,20,22,24,26,28,29,31,33,35,37,38,40,42,43,45,47,49,51,52,54,56,57,59,61,63,65,66,68,70,72,74,75,77,79,80,82,84,86,88,89,91,93,95,97,98,100,102,103,105,107,109,111,112,114,116,117,119,121,123,125,126,128,130,132,134,135,137,139,140
+; Formula: a(n) = b(n-1)+1, b(n) = -n+b(n-1)+truncate((-truncate((sqrtint(5*n^2)+n)/2)+sqrtint(5*(truncate((sqrtint(5*n^2)+n)/2)+4)^2)-4)/2), b(1) = 2, b(0) = 0
 
 #offset 1
 
-mov $3,2
-lpb $3
-  sub $3,1
-  add $0,$3
-  mov $2,$0
-  mov $5,$0
-  add $5,$0
-  mul $5,2
-  add $5,$0
-  mul $5,$0
-  nrt $5,2
-  mov $6,$0
-  div $6,-1
+sub $0,1
+lpb $0
   sub $0,1
-  add $5,$6
-  mov $6,$5
-  div $6,2
-  mov $7,$2
-  sub $7,$6
-  mov $4,$7
-  mul $4,2
-  add $2,$4
-  sub $2,2
-  add $1,$2
+  add $4,1
+  mov $3,$4
+  pow $3,2
+  mul $3,5
+  nrt $3,2
+  add $3,$4
+  div $3,2
+  add $3,4
+  mov $2,$3
+  pow $3,2
+  mul $3,5
+  nrt $3,2
+  sub $3,$2
+  div $3,2
+  sub $3,$4
+  add $1,$3
 lpe
 mov $0,$1
-sub $0,3
-div $0,2
 add $0,1

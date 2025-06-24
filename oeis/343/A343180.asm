@@ -4,9 +4,7 @@
 mov $1,$0
 pow $1,2
 add $0,1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 add $0,$1
 sub $0,1
 mod $0,4

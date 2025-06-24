@@ -1,23 +1,19 @@
 ; A285260: Positions of 1 in A285258; complement of A285259.
-; Submitted by Simon Strandgaard (raspberrypi)
+; Submitted by omegaintellisys
 ; 1,4,5,8,9,11,14,15,17,20,21,23,25,28,29,32,33,35,37,40,41,44,45,47,50,51,53,56,57,59,61,64,65,68,69,71,73,76,77,80,81,83,86,87,89,91,94,95,98,99,101,104,105,107,110,111,113,115,118,119,122,123,125,127,130,131,134,135,137,140,141,143,145,148,149,152,153,155,158,159
+; Formula: a(n) = 2*n+A189727(-6*n+735)-1
 
 #offset 1
 
-sub $0,1
-mov $3,$0
-mul $3,2
-add $3,1
-mov $2,$3
-lpb $2
-  add $2,$0
-  div $2,7
-  mov $0,$3
-  mul $0,3
-  mov $1,731
-  sub $1,$0
-  add $1,1
-  seq $1,189727 ; Fixed point of the morphism 0->011, 1->110.
-  add $1,$3
-lpe
+mul $0,2
+sub $0,3
+mov $2,2
+add $2,$0
+mov $0,$2
+mul $0,3
+mov $1,729
+sub $1,$0
+add $1,3
+seq $1,189727 ; Fixed point of the morphism 0->011, 1->110.
+add $1,$2
 mov $0,$1

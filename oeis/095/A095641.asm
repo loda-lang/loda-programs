@@ -12,8 +12,8 @@ equ $5,1
 mov $6,0
 mov $7,6
 mov $8,0
-mov $9,1
-mov $10,7
+mov $9,2
+mov $10,6
 mov $11,0
 mov $12,2
 mov $13,0

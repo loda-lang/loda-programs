@@ -1,19 +1,23 @@
 ; A299920: Motzkin numbers (A001006) mod 6.
-; Submitted by Christian Krause
+; Submitted by loader3229
 ; 1,1,2,4,3,3,3,1,5,1,4,2,1,3,0,0,3,3,0,0,3,3,3,3,3,1,2,4,1,5,1,3,3,3,4,2,1,1,5,1,3,3,0,0,3,3,0,0,3,3,0,0,3,3,3,3,3,3,0,0,3,3,0,0,3,3,0,0,3,3,3,3,3,3,0,0,3,3,0,4
+; Formula: a(n) = -6*truncate((b(n)+c(n))/6)+b(n)+c(n), b(n) = c(n-1), b(2) = 1, b(1) = 0, b(0) = 1, c(n) = truncate((n*(3*c(n-2)+2*c(n-1)))/(n+2)), c(2) = 1, c(1) = 1, c(0) = 0
 
-mov $1,1
-mov $3,$0
-lpb $3
-  mul $1,$3
-  sub $3,1
+mov $1,3
+mov $2,1
+lpb $0
+  sub $0,1
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
   sub $4,2
-  sub $5,$4
-  mul $1,$3
-  div $1,$5
-  add $2,$1
-  sub $3,1
+  mul $4,$2
+  div $4,$1
+  add $1,1
+  mov $2,$3
+  mov $3,$4
 lpe
 mov $0,$2
-add $0,1
+add $0,$3
 mod $0,6

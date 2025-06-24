@@ -1,26 +1,18 @@
 ; A129229: a(n) = floor(n*r)-a(n-1), where r is the golden mean, (1+sqrt(5))/2.
-; Submitted by Irish Republican
+; Submitted by DukeBox
 ; 0,1,2,2,4,4,5,6,6,8,8,9,10,11,11,13,12,15,14,16,16,17,18,19,19,21,21,22,23,23,25,25,26,27,28,28,30,29,32,31,33,33,34,35,36,36,38,38,39,40,40,42,42,43,44,44,46,46,47,48,49,49,51,50,53,52,54,54,56,55,58,56,60,58,61,60,62,62,64,63
+; Formula: a(n) = -a(n-1)+truncate((sqrtint(5*n^2)+n)/2), a(1) = 1, a(0) = 0
 
-mov $2,$0
-mov $4,$0
-lpb $4
-  sub $4,1
-  mov $6,26
-  mov $0,$2
-  sub $0,$4
-  mov $1,$0
-  bin $1,$0
-  mov $7,9
-  lpb $7
-    sub $7,1
-    add $6,$5
-    add $5,$6
-  lpe
-  mul $5,$0
-  div $5,$6
-  mul $1,$5
-  mul $3,-1
+lpb $0
+  sub $0,1
+  add $1,1
+  mov $3,$1
+  pow $3,2
+  mul $3,5
+  nrt $3,2
   add $3,$1
+  div $3,2
+  sub $3,$2
+  mov $2,$3
 lpe
-mov $0,$3
+mov $0,$2

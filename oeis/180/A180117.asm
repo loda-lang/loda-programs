@@ -11,15 +11,12 @@ pow $2,4
 lpb $2
   mov $5,$1
   add $5,3
-  mov $6,$1
-  add $6,2
   seq $6,10051 ; Characteristic function of primes: 1 if n is prime, else 0.
   add $6,1
   mul $6,$5
   mov $7,$6
   add $7,3
   seq $7,252736 ; a(1) = a(2) = 0; for n > 2: a(2n) = 1 + a(n), a(2n+1) = a(A064989(2n+1)).
-  add $6,2
   mov $6,$7
   add $6,1
   equ $6,4

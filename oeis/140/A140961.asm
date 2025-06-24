@@ -1,22 +1,24 @@
 ; A140961: Number of 3 X n {0,1}-matrices such that: (a) first and second row have a common 1, (b) second and third row have a common 1.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 1,17,205,2129,20341,184457,1615405,13808609,116015461,962575097,7913168605,64610052689,524855128981,4247421698537,34274519697805,275985344786369,2218709434248901,17815093293410777,142915542082163005,1145704555158361649,9179974972732223221
-; Formula: a(n) = b(n-1), b(n) = 6*d(n-1)+5*b(n-1)-2*c(n-1), b(2) = 205, b(1) = 17, b(0) = 1, c(n) = 6*d(n-1)+2*c(n-1), c(2) = 168, c(1) = 12, c(0) = 0, d(n) = 12*d(n-1)-4*c(n-1), d(2) = 240, d(1) = 24, d(0) = 2
+; Formula: a(n) = truncate((12*8^n+12*5^n-24*6^n-12)/12)+1
 
 #offset 1
 
-mov $1,1
-mov $3,2
-sub $0,1
-lpb $0
-  sub $0,1
-  mul $2,2
-  mul $3,6
-  sub $3,$2
-  mul $1,5
-  add $1,$3
-  mul $2,2
-  add $2,$3
-  mul $3,2
-lpe
+mov $2,8
+pow $2,$0
+mul $2,-12
+mov $3,6
+pow $3,$0
+mul $3,24
+mov $4,5
+pow $4,$0
+mul $4,12
+mov $1,15
+sub $1,$2
+sub $1,$3
+add $1,$4
 mov $0,$1
+sub $0,27
+div $0,12
+add $0,1

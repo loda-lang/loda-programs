@@ -1,17 +1,16 @@
 ; A048678: Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0->0, 1->01.
-; Submitted by atannir
+; Submitted by BrandyNOW
 ; 0,1,2,5,4,9,10,21,8,17,18,37,20,41,42,85,16,33,34,69,36,73,74,149,40,81,82,165,84,169,170,341,32,65,66,133,68,137,138,277,72,145,146,293,148,297,298,597,80,161,162,325,164,329,330,661,168,337,338,677,340,681,682,1365,64,129,130,261,132,265,266,533,136,273,274,549,276,553,554,1109
 
-mov $3,-1
+mov $1,1
 lpb $0
-  mov $2,$0
-  mul $2,2
-  mod $2,4
-  mul $2,$3
-  mul $3,2
-  add $3,$2
+  lpb $0
+    dif $0,2
+    mul $1,2
+  lpe
   div $0,2
-  sub $1,$2
+  mul $1,4
+  add $2,$1
 lpe
-mov $0,$1
-div $0,2
+add $0,$2
+div $0,4

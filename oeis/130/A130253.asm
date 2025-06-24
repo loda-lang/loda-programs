@@ -1,13 +1,12 @@
 ; A130253: Number of Jacobsthal numbers (A001045) <=n.
-; Submitted by vaughan
+; Submitted by loader3229
 ; 1,3,3,4,4,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+; Formula: a(n) = logint(2*floor((3*n+1)/2)+1,2)+1
 
 mul $0,3
 add $0,1
 div $0,2
-lpb $0
-  div $0,2
-  add $1,1
-lpe
-add $1,1
-mov $0,$1
+mul $0,2
+add $0,1
+log $0,2
+add $0,1

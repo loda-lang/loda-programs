@@ -10,7 +10,5 @@ add $1,30
 div $1,18
 sub $1,1
 mov $0,$1
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 div $0,2

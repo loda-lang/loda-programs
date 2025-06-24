@@ -1,6 +1,7 @@
 ; A166242: Sequence generated from A014577, the dragon curve.
 ; Submitted by zombie67 [MM]
 ; 1,2,4,2,4,8,4,2,4,8,16,8,4,8,4,2,4,8,16,8,16,32,16,8,4,8,16,8,4,8,4,2,4,8,16,8,16,32,16,8,16,32,64,32,16,32,16,8,4,8,16,8,16,32,16,8,4,8,16,8,4,8,4,2,4,8,16,8,16,32,16,8,16,32,64,32,16,32,16,8
+; Formula: a(n) = truncate(2^(sumdigits(bitxor(n+1,floor((n+1)/2)),2)*sign(bitxor(n+1,floor((n+1)/2)))))
 
 #offset -1
 

@@ -1,14 +1,14 @@
 ; A075105: Numerator of n/floor(log_2(n)); denominator is A075106(n).
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,3,2,5,3,7,8,3,10,11,4,13,14,5,4,17,9,19,5,21,11,23,6,25,13,27,7,29,15,31,32,33,34,7,36,37,38,39,8,41,42,43,44,9,46,47,48,49,10,51,52,53,54,11,56,57,58,59,12,61,62,63,32,65,11,67,34,23,35,71,12,73,37,25,38,77,13,79,40,27
+; Formula: a(n) = truncate(n/gcd(-logint(2*n,2)+1,n))
 
 #offset 2
 
 mov $2,$0
-lpb $2
-  div $2,2
-  sub $1,1
-lpe
-add $1,1
+mul $2,2
+log $2,2
+mov $1,1
+sub $1,$2
 gcd $1,$0
 div $0,$1

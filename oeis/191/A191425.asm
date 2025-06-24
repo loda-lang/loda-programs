@@ -4,34 +4,20 @@
 
 #offset 1
 
-mov $4,1
 sub $0,1
 lpb $0
-  mul $7,$4
-  mul $7,2
-  mov $8,$3
-  pow $8,2
-  mov $9,$4
-  pow $9,2
-  sub $7,$8
-  add $8,$9
-  mov $5,$0
-  max $5,1
-  log $5,2
-  mov $6,2
-  pow $6,$5
-  ban $6,$1
-  bin $6,$3
-  gcd $1,$0
-  pow $9,2
-  sub $9,$7
-  mul $9,$6
-  div $0,2
-  mov $2,$7
-  mul $2,$6
-  add $7,$9
-  add $8,$2
-  mov $3,$7
-  mov $4,$8
+  sub $0,1
+  min $4,2
+  add $4,1
+  div $5,2
+  add $2,$5
+  dif $2,2
+  add $3,$4
+  mov $5,$4
+  sub $1,1
+  add $1,$3
+  add $4,$1
+  add $5,$4
 lpe
-mov $0,$4
+mov $0,$2
+add $0,1

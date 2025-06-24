@@ -1,18 +1,13 @@
 ; A006681: Number of binary phylogenetic trees with n labels.
 ; Submitted by Science United
 ; 1,4,16,85,646,6664,86731,1354630,24607816,509000899,11802833296,303129872500,8539567141561,261785254856584,8674697402099836,308953306192527445,11768768651529113506,477433786852228938844
+; Formula: a(n) = truncate(A375991(n)/3)+1
 
 #offset 2
 
-mov $2,$0
-sub $2,1
-sub $0,2
-mov $1,1
-lpb $1
-  sub $1,1
-  mov $0,$2
-  add $0,1
-  seq $0,375991 ; Expansion of e.g.f. (3 - 2 * exp(x))^(3/2).
-lpe
+mov $1,$0
+seq $1,375991 ; Expansion of e.g.f. (3 - 2 * exp(x))^(3/2).
+sub $0,1
+mov $0,$1
 div $0,3
 add $0,1

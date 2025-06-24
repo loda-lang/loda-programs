@@ -1,12 +1,12 @@
 ; A011248: Twice A000364.
 ; Submitted by Science United
 ; 2,2,10,122,2770,101042,5405530,398721962,38783024290,4809759350882,740742376475050,138697748786275802,31029068327114173810,8174145018586247784722,2504519282807259730936570,883087786498046209107365642,355038783159078578873329579330,161446598471775796124336494906562
-; Formula: a(n) = 2*gcd(A155585(2*min(n,27)),A122045(2*min(n,27)))
 
-min $0,27
-mul $0,2
-mov $1,$0
-seq $1,122045 ; Euler (or secant) numbers E(n).
-seq $0,155585 ; a(n) = 2^n*E(n, 1) where E(n, x) are the Euler polynomials.
-gcd $0,$1
+mov $2,$0
+lpb $2
+  add $1,17
+  mov $2,$1
+lpe
+seq $2,364 ; Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
+mov $0,$2
 mul $0,2

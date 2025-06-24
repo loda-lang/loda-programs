@@ -1,17 +1,16 @@
 ; A062033: Binary expansion of n does not contain 1-bits at even positions. Integers whose base 4 representation consists of only 0's and 2s.
-; Submitted by Jon Maiga
+; Submitted by BrandyNOW
 ; 0,10,1000,1010,100000,100010,101000,101010,10000000,10000010,10001000,10001010,10100000,10100010,10101000,10101010,1000000000,1000000010,1000001000,1000001010,1000100000,1000100010,1000101000,1000101010,1010000000,1010000010,1010001000
 
-mov $2,7
+mov $1,1
 lpb $0
-  mov $3,$0
-  mod $3,2
-  mul $3,$2
-  pow $3,2
+  lpb $0
+    dif $0,2
+    mul $1,100
+  lpe
+  add $2,$1
   div $0,2
-  add $1,$3
-  mul $2,10
+  mul $0,2
 lpe
-mov $0,$1
-div $0,49
+add $0,$2
 mul $0,10

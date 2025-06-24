@@ -1,16 +1,16 @@
 ; A349496: Numbers of the form 4*t^2-2 (A060626) when t >= 1 is an integer that is not a term in A001542.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 2,34,62,98,142,194,254,322,398,482,674,782,898,1022,1154,1294,1442,1598,1762,1934,2114,2302,2498,2702,2914,3134,3362,3598,3842,4094,4354,4622,4898,5182,5474,5774,6082,6398,6722,7054,7394,7742,8098,8462,8834,9214,9602,9998,10402
+; Formula: a(n) = 4*(logint(10*n-9,10)+n)^2-2
 
 #offset 1
 
 mov $1,$0
-sub $0,1
-lpb $0
-  div $0,10
-  add $1,1
-lpe
-add $0,$1
+mul $0,10
+sub $0,9
+log $0,10
+add $1,$0
+mov $0,$1
 pow $0,2
 mul $0,4
 sub $0,2

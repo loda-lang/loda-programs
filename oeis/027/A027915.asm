@@ -1,18 +1,27 @@
 ; A027915: a(n) = Sum_{0<=j<=i, 0<=i<=n} A027907(i, j).
-; Submitted by Gunnar Hjern
+; Submitted by loader3229
 ; 1,3,9,26,76,223,658,1948,5782,17193,51194,152594,455209,1358841,4058439,12126696,36248370,108385917,324172566,969801726,2901883611,8684735577,25995833145,77824036620,233012973051,697745695923
-; Formula: a(n) = a(n-1)+truncate((3^n+A002426(n))/2), a(0) = 1
+; Formula: a(n) = truncate(e(n+1)/3), b(n) = c(n-1), b(4) = 3, b(3) = 1, b(2) = 1, b(1) = 0, b(0) = 1, c(n) = truncate((n*(3*c(n-2)+2*c(n-1)))/(n+2)), c(4) = 6, c(3) = 3, c(2) = 1, c(1) = 1, c(0) = 0, d(n) = 3*d(n-1)-b(n-1), d(4) = 50, d(3) = 17, d(2) = 6, d(1) = 2, d(0) = 1, e(n) = 3*d(n-1)+e(n-1), e(4) = 78, e(3) = 27, e(2) = 9, e(1) = 3, e(0) = 0
 
-mov $1,1
+mov $1,3
+mov $2,1
+mov $5,1
+add $0,1
 lpb $0
-  mov $2,3
-  pow $2,$0
-  mov $3,$0
-  seq $3,2426 ; Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
-  add $3,$2
-  mov $2,$3
-  div $2,2
   sub $0,1
-  add $1,$2
+  mul $5,3
+  add $6,$5
+  sub $5,$2
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
+  sub $4,2
+  mul $4,$2
+  div $4,$1
+  add $1,1
+  mov $2,$3
+  mov $3,$4
 lpe
-mov $0,$1
+mov $0,$6
+div $0,3

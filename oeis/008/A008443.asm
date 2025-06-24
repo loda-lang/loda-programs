@@ -1,5 +1,5 @@
 ; A008443: Number of ordered ways of writing n as the sum of 3 triangular numbers.
-; Submitted by [AF>Libristes] alain65
+; Submitted by [AF>Amis des Lapins] Jean-Luc
 ; 1,3,3,4,6,3,6,9,3,7,9,6,9,9,6,6,15,9,7,12,3,15,15,6,12,12,9,12,15,6,13,21,12,6,15,9,12,24,9,18,12,9,18,15,12,13,24,9,15,24,6,18,27,6,12,15,18,24,21,15,12,27,9,13,18,15,27,27,9,12,27,15,24,21,12,15,30,15,12,30
 
 mov $3,3
@@ -8,13 +8,9 @@ lpb $0
   sub $0,$3
   mov $2,$0
   max $2,0
-  mul $2,4
-  add $2,1
-  seq $2,35154 ; a(n) = Sum_{d|n} Kronecker(-36, d).
-  mul $2,4
+  seq $2,8441 ; Number of ways of writing n as the sum of 2 triangular numbers.
   add $4,1
   add $1,$2
   mov $3,$4
 lpe
 mov $0,$1
-div $0,4

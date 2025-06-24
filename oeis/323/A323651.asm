@@ -1,23 +1,20 @@
 ; A323651: Number of elements added at n-th stage to the toothpick structure of A323650.
-; Submitted by Orange Kid
+; Submitted by BrandyNOW
 ; 1,2,4,8,4,8,12,24,4,8,12,24,12,24,36,72,4,8,12,24,12,24,36,72,12,24,36,72,36,72,108,216,4,8,12,24,12,24,36,72,12,24,36,72,36,72,108,216,12,24,36,72,36,72,108,216,36,72,108,216,108,216,324,648,4,8,12,24,12,24,36,72,12,24,36,72,36,72,108,216
 
 #offset 1
 
 mov $1,1
-mov $2,4
 sub $0,1
 lpb $0
-  add $1,1
-  mov $3,$0
-  sub $3,1
-  mod $3,2
-  mul $3,$1
+  lpb $0
+    dif $0,2
+    mov $1,2
+    add $1,$2
+  lpe
+  mul $1,2
+  add $2,$1
   div $0,2
-  mul $2,$1
-  dif $2,$3
-  pow $1,0
-  add $1,1
+  mul $0,2
 lpe
-mov $0,$2
-div $0,3
+mov $0,$1

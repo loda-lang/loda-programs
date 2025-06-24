@@ -317,7 +317,6 @@ A100005: Bisection of A001414.
 A100429: Bisection of Kolakoski sequence A000002.
 A100484: The primes doubled.
 A100672: Second least-significant bit in the binary expansion of the n-th prime.
-A100892: a(n) = (2*n-1) XOR (2*n+1), bitwise.
 A101202: Multiples of 142857.
 A101264: a(n) = 1 if 2*n + 1 is prime, otherwise a(n) = 0.
 A101404: a(n) = n*A101403(n).
@@ -361,6 +360,8 @@ A118153: Start with 1 and repeatedly reverse the digits and add 57 to get the ne
 A118154: Start with 1 and repeatedly reverse the digits and add 58 to get the next term.
 A118156: Start with 1 and repeatedly reverse the digits and add 61 to get the next term.
 A118160: Start with 1 and repeatedly reverse the digits and add 48 to get the next term.
+A118163: Start with 1 and repeatedly reverse the digits and add 65 to get the next term.
+A118215: Start with 1 and repeatedly reverse the digits and add 68 to get the next term.
 A118226: Start with 1 and repeatedly reverse the digits and add 76 to get the next term.
 A118636: Start with 1 and repeatedly reverse the digits and add 40 to get the next term.
 A118755: Smallest prime >= 6*n.

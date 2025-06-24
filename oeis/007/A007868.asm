@@ -1,12 +1,19 @@
 ; A007868: Number of inverse pairs of elements in symmetric group S_n, or pairs of total orders on n nodes (average of A000085 and A000142).
-; Submitted by mmonnin
+; Submitted by BrandyNOW
 ; 1,1,2,5,17,73,398,2636,20542,182750,1819148,19976248,239570876,3113794652,43590340840,653842358768,10461418047368,177843819947656,3201187351520912,60822552609266720,1216451015967652048,25545471145831066448,562000364198246159456,12926008371071410261312,310224200875365814968800,7755605021713333213880288,201645730563569310396100288,5444434725210686418756987776,152444172305865635889435695552,4420880996869901972384935353280,132626429906095832776789194524288,4111419327088963242174810215122688
-; Formula: a(n) = truncate((2*A000085(n)+2*(n!))/4)
+; Formula: a(n) = truncate((b(n)+c(n))/2), b(n) = n*b(n-1), b(3) = 6, b(2) = 2, b(1) = 1, b(0) = 1, c(n) = c(n-2)*(n-1)+c(n-1), c(3) = 4, c(2) = 2, c(1) = 1, c(0) = 1
 
-mov $1,$0
-seq $1,85 ; Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.
-mul $1,2
-seq $0,142 ; Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
-mul $0,2
-add $0,$1
-div $0,4
+mov $2,1
+mov $3,1
+lpb $0
+  sub $0,1
+  add $1,1
+  mul $2,$1
+  add $3,$4
+  sub $4,$3
+  mul $4,$1
+  mul $4,-1
+lpe
+add $3,$2
+mov $0,$3
+div $0,2

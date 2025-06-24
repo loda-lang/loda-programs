@@ -1,9 +1,9 @@
 ; A322303: a(n) = Fibonacci(semiprime(n)).
-; Submitted by Jon Maiga
+; Submitted by DukeBox
 ; 3,8,34,55,377,610,10946,17711,75025,121393,3524578,5702887,9227465,39088169,63245986,1836311903,7778742049,20365011074,139583862445,365435296162,591286729879,4052739537881,17167680177565,117669030460994,1304969544928657,5527939700884757
-; Formula: a(n) = A000045(A001358(n))
+; Formula: a(n) = A147316(A001358(n))
 
 #offset 1
 
 seq $0,1358 ; Semiprimes (or biprimes): products of two primes.
-seq $0,45 ; Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+seq $0,147316 ; Fibonacci numbers (A000045) starting at offset -20.

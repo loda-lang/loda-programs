@@ -1,24 +1,21 @@
 ; A361195: Numerator of the discriminant of the n-th Legendre polynomial.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,3,135,23625,260465625,11371668721875,7888446990683634375,21776965089186101310140625,15330043202319289712414934678515625,43033523436556282747812223470803609794921875,1927983533652930855481078826533672813447199742802734375
 
 #offset 1
 
+mov $1,1
 sub $0,1
-mov $1,4
-mov $2,$0
-lpb $2
-  mov $3,$2
+lpb $0
+  mov $3,$0
   mul $3,2
-  mov $4,$3
-  bin $4,$2
-  dir $4,2
+  mov $2,$3
+  bin $2,$0
+  dir $2,2
+  pow $2,2
   add $3,1
-  mul $3,$4
-  mul $3,$4
+  mul $3,$2
   sub $0,1
   mul $1,$3
-  mov $2,$0
 lpe
 mov $0,$1
-div $0,4

@@ -1,38 +1,24 @@
 ; A033790: Product t2(q^d); d | 31, where t2 = theta2(q)/(2*q^(1/4)).
-; Submitted by bcavnaugh
+; Submitted by x8CdHfMQ4f
 ; 1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0
 
-mov $3,3
-add $0,3
-lpb $0
-  sub $0,$3
-  mov $2,$0
-  max $2,0
-  add $2,1
-  mov $5,$2
-  mul $5,8
-  nrt $5,2
-  sub $5,1
-  div $5,2
-  mov $6,$5
-  add $6,1
+mov $5,3
+mov $2,$0
+add $2,3
+lpb $2
+  sub $2,$5
+  mov $3,$2
+  max $3,0
+  mov $6,$3
+  mul $6,8
+  nrt $6,2
+  add $6,2
+  div $6,2
   bin $6,2
-  sub $2,$6
-  sub $2,1
-  add $5,1
-  mov $6,3
-  pow $6,$2
-  mov $2,3
-  pow $2,$5
-  div $2,2
-  add $6,$2
-  mov $2,$6
-  seq $2,7089 ; Numbers in base 3.
-  add $4,29
-  add $1,$2
-  sub $1,1
-  mov $3,2
-  add $3,$4
+  equ $3,$6
+  add $5,28
+  add $5,$4
+  add $1,$3
+  mov $4,3
 lpe
 mov $0,$1
-mod $0,10

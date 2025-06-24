@@ -1,6 +1,7 @@
 ; A373481: a(n) = 1 if A003415(n) is a multiple of A001414(n), otherwise 0, where A003415 is the arithmetic derivative, and A001414 is the sum of prime factors with multiplicity.
 ; Submitted by Merlin2331
 ; 1,0,0,1,0,1,0,1,1,1,0,0,0,1,1,1,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0
+; Formula: a(n) = gcd(A003415(n),A001414(n))==A001414(n)
 
 #offset 1
 

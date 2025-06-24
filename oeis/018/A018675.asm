@@ -1,13 +1,24 @@
 ; A018675: Divisors of 837.
-; Submitted by Fardringle
+; Submitted by loader3229
 ; 1,3,9,27,31,93,279,837
-; Formula: a(n) = truncate((2*A062548(A018749(n))-28)/24)+1
 
 #offset 1
 
-seq $0,18749 ; Divisors of 968.
-seq $0,62548 ; Even integers that are not partial sums of A062547.
-mul $0,2
-sub $0,28
-div $0,24
-add $0,1
+mov $1,3
+mov $2,1
+sub $0,1
+lpb $0
+  sub $0,1
+  mul $2,3
+  add $2,$3
+  add $2,$3
+  mov $4,$1
+  dif $4,6
+  mul $4,$2
+  div $4,$1
+  add $1,1
+  mov $2,$3
+  mov $3,$4
+lpe
+mov $0,$2
+add $0,$3

@@ -4,7 +4,5 @@
 
 #offset 1
 
-lpb $0
-  dif $0,2
-lpe
+dir $0,2
 mod $0,4

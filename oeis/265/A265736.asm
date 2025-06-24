@@ -13,7 +13,27 @@ lpb $2
   mov $0,$3
   sub $0,$2
   sub $0,1
-  seq $0,265705 ; Triangle read by rows: T(n,k) = k IMPL n, 0 <= k <= n, bitwise logical IMPL.
+  mov $5,$0
+  mul $5,8
+  add $5,1
+  nrt $5,2
+  add $5,1
+  div $5,2
+  mov $4,$5
+  sub $4,1
+  bin $5,2
+  mov $6,$0
+  sub $6,$5
+  mov $7,$4
+  mul $7,2
+  add $7,1
+  log $7,2
+  ban $4,$6
+  mov $0,2
+  pow $0,$7
+  add $0,$4
+  sub $0,$6
+  sub $0,1
   add $1,$0
 lpe
 mov $0,$1

@@ -5,22 +5,19 @@
 #offset 1
 
 mov $1,$0
-lpb $1
-  mov $6,$1
-  max $6,1
-  log $6,2
-  mov $4,2
-  pow $4,$6
-  ban $4,$0
-  neq $4,0
-  add $4,$2
-  div $1,2
-  mov $2,1
+mov $2,-1
+lpb $0
+  mov $4,$0
+  max $4,1
+  log $4,2
+  mov $3,2
+  pow $3,$4
+  ban $3,$1
+  neq $3,0
   add $3,1
-  mul $3,$4
-  mov $5,$3
+  div $0,2
+  add $2,2
+  mul $2,$3
 lpe
-mov $1,$5
-add $1,$5
-mov $0,$1
+mov $0,$2
 div $0,2

@@ -1,24 +1,27 @@
 ; A300077: Decimal expansion of Pi/2 truncated to n places.
-; Submitted by Science United
+; Submitted by BrandyNOW
 ; 1,15,157,1570,15707,157079,1570796,15707963,157079632,1570796326,15707963267,157079632679,1570796326794,15707963267948,157079632679489,1570796326794896,15707963267948966,157079632679489661,1570796326794896619,15707963267948966192
 
 #offset 1
 
-mov $1,1
+mov $2,2
 mov $3,$0
-mul $3,7
+mul $3,4
 lpb $3
-  max $3,1
-  max $5,$2
-  div $5,$3
-  add $2,$1
+  mov $5,$3
+  mul $5,2
+  add $5,1
+  mul $2,$5
+  mul $1,$3
+  add $1,$2
+  div $1,$0
+  div $2,$0
   sub $3,1
-  mul $1,2
-  add $1,$5
 lpe
-sub $0,1
 mov $4,10
 pow $4,$0
+mul $2,5
 div $2,$4
+mul $2,2
 div $1,$2
 mov $0,$1

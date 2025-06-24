@@ -1,17 +1,18 @@
 ; A192463: Coefficient of x in the reduction by x^2->x+1 of the polynomial p(n,x) = (x+1) * (2x+1) * ... *(nx+1).
-; Submitted by Simon Strandgaard
+; Submitted by BrandyNOW
 ; 0,1,5,29,217,1972,21118,260301,3629725,56486815,970463065,18243125340,372459101520,8206928319095,194114174537635,4905364150059835,131898098954671115,3759963420179237480,113267438410706216450,3595408176533129846175
+; Formula: a(n) = n*b(n-1)+a(n-1), a(2) = 5, a(1) = 1, a(0) = 0, b(n) = n*b(n-1)+n*a(n-1)+b(n-1), b(2) = 8, b(1) = 2, b(0) = 1
 
-mov $2,-1
+mov $1,1
+mov $2,1
 lpb $0
-  mul $3,$0
-  mov $4,$2
-  mul $4,$0
   sub $0,1
-  add $3,$4
-  sub $1,$3
-  add $2,$4
+  mov $3,$4
+  mul $3,$1
+  add $3,$2
+  mul $2,$1
+  add $4,$2
+  add $1,1
   add $2,$3
-  mov $3,$1
 lpe
-mov $0,$1
+mov $0,$4

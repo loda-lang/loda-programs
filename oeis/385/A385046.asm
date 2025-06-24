@@ -9,10 +9,7 @@ mov $2,2
 lpb $0
   mov $3,$0
   mod $3,2
-  lpb $3
-    sub $3,1
-    mov $2,3
-  lpe
+  add $2,$3
   mov $4,1
   lpb $0
     dif $0,$2
