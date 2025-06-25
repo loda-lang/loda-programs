@@ -31,7 +31,6 @@ A004258: Duplicate of A029837.
 A004577: Erroneous version of A000940.
 A004644: Duplicate of A000866
 A004792: Erroneous version of A003278.
-A004934: a(n) = floor(n*phi^19), where phi is the golden ratio, A001622.
 A005000: Erroneous version of A006505.
 A005170: Erroneous version of A226999.
 A005497: Erroneous version of A210696.

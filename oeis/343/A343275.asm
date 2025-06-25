@@ -1,22 +1,19 @@
 ; A343275: a(n) = |2*n - 10^length(n)|.
-; Submitted by Jamie Morken(l1)
+; Submitted by BrandyNOW
 ; 8,6,4,2,0,2,4,6,8,80,78,76,74,72,70,68,66,64,62,60,58,56,54,52,50,48,46,44,42,40,38,36,34,32,30,28,26,24,22,20,18,16,14,12,10,8,6,4,2,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60
+; Formula: a(n) = truncate((-2*n+truncate(10^(logint(n,10)+1)))/(-2*truncate((-2*n+truncate(10^(logint(n,10)+1))-1)/2)-2*n+truncate(10^(logint(n,10)+1))-1))
 
 #offset 1
 
-sub $0,1
-mov $2,$0
-mov $3,$0
-sub $4,$0
-mov $0,1
-add $3,1
-lpb $3
-  div $3,10
-  mul $0,10
-lpe
-add $0,$4
-sub $0,1
+mov $1,$0
+log $1,10
+add $1,1
+mul $0,2
+mov $2,10
+pow $2,$1
 sub $2,$0
-add $2,1
-gcd $1,$2
-mov $0,$1
+mov $1,$2
+sub $1,1
+mod $1,2
+div $2,$1
+mov $0,$2

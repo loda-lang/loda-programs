@@ -1,17 +1,16 @@
 ; A175852: a(n) = the highest power of 5 with n decimal digits.
-; Submitted by Jon Maiga
+; Submitted by loader3229
 ; 5,25,625,3125,78125,390625,9765625,48828125,244140625,6103515625,30517578125,762939453125,3814697265625,95367431640625,476837158203125,2384185791015625,59604644775390625,298023223876953125
+; Formula: a(n) = 5*floor(truncate(5^(logint(5*2^n,5)+n))/25)
 
 #offset 1
 
-mov $3,$0
-sub $0,1
 mov $2,2
-pow $2,$3
-lpb $2
-  div $2,5
-  add $3,1
-lpe
+pow $2,$0
+mul $2,5
+log $2,5
+mov $3,$0
+add $3,$2
 mov $1,5
 pow $1,$3
 mov $0,$1

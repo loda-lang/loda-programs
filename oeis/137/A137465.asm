@@ -1,20 +1,20 @@
 ; A137465: 1 concatenated with n n's concatenated with 1.
-; Submitted by http://kodeks.karelia.ru/
+; Submitted by BrandyNOW
 ; 111,1221,13331,144441,1555551,16666661,177777771,1888888881,19999999991,1101010101010101010101,111111111111111111111111,11212121212121212121212121,1131313131313131313131313131,114141414141414141414141414141,11515151515151515151515151515151
+; Formula: a(n) = 10*truncate((truncate(10^(logint(n,10)+1))^n)/(truncate(10^(logint(n,10)+1))-1))*(truncate(10^(logint(n,10)+1))+n-1)+11
 
 #offset 1
 
-mov $1,1
-mov $3,$0
-lpb $0
-  add $2,$3
-  lpb $2
-    div $2,10
-    mul $1,10
-  lpe
-  add $1,$3
-  sub $0,1
-lpe
-mov $0,$1
+mov $1,$0
+log $1,10
+add $1,1
+mov $2,10
+pow $2,$1
+mov $1,$2
+sub $1,1
+pow $2,$0
+div $2,$1
+add $0,$1
+mul $0,$2
 mul $0,10
-add $0,1
+add $0,11

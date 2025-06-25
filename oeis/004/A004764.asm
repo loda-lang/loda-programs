@@ -1,23 +1,19 @@
 ; A004764: Numbers whose binary expansion does not begin 110.
-; Submitted by lotusexcelle
+; Submitted by loader3229
 ; 0,1,2,3,4,5,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86
+; Formula: a(n) = -(0==(n-1))+max(n-2,0)+truncate(2^logint(2*floor(max(n-2,0)/5)+1,2))
 
 #offset 1
 
 sub $0,1
-mov $3,1
-lpb $3
-  add $1,1
-  mov $2,$0
-  sub $2,5
-  lpb $2
-    mul $2,2
-    trn $2,$0
-    mul $0,$3
-    mul $1,2
-  lpe
-  sub $1,1
-  mov $3,0
-lpe
-add $1,$0
-mov $0,$1
+equ $3,$0
+trn $0,1
+mov $2,$0
+div $2,5
+mul $2,2
+add $2,1
+log $2,2
+mov $1,2
+pow $1,$2
+add $0,$1
+sub $0,$3

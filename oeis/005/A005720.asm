@@ -1,21 +1,18 @@
 ; A005720: Quadrinomial coefficients.
-; Submitted by ckaz
+; Submitted by BrandyNOW
 ; 1,10,44,135,336,728,1428,2598,4455,7282,11440,17381,25662,36960,52088,72012,97869,130986,172900,225379,290444,370392,467820,585650,727155,895986,1096200,1332289,1609210,1932416,2307888,2742168,3242393,3816330,4472412,5219775
-; Formula: a(n) = -floor((3*binomial(n+1,n-2))/(n-1))-3*binomial(n+1,n-2)+binomial(n+5,n-1)
+; Formula: a(n) = -n*binomial(n+1,n-1)+binomial(n+5,n-1)
 
 #offset 2
 
-sub $0,2
-mov $2,5
+sub $0,1
+mov $2,2
 add $2,$0
 mov $1,$2
-sub $1,2
+sub $2,1
 bin $1,$0
-mul $1,3
-add $0,1
-add $2,2
+mul $1,$2
+add $2,5
 bin $2,$0
-sub $2,$1
-div $1,$0
 sub $2,$1
 mov $0,$2

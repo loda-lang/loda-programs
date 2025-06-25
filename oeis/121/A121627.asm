@@ -1,19 +1,21 @@
 ; A121627: Real part of a complex operation analogous to the factorials.
-; Submitted by Jon Maiga
+; Submitted by atannir
 ; 1,0,-12,-96,-480,0,40320,645120,5806080,0,-1277337600,-30656102400,-398529331200,0,167382319104000,5356234211328000,91055981592576000,0,-62282291409321984000,-2491291656372879360000,-52317124783830466560000,0
+; Formula: a(n) = b(n-1), b(n) = (n+1)*(-2*n*b(n-2)+2*b(n-1)), b(2) = -12, b(1) = 0, b(0) = 1
 
 #offset 1
 
-sub $0,1
 mov $1,1
-add $1,$0
-mov $3,$0
-lpb $3
-  mul $2,2
-  sub $2,$1
-  mul $2,$3
-  mul $1,$3
-  add $1,$2
-  sub $3,1
+mov $2,-1
+mov $3,1
+sub $0,1
+lpb $0
+  sub $0,1
+  add $1,1
+  add $3,$2
+  sub $2,$3
+  mul $2,$1
+  mul $3,2
+  mul $3,$1
 lpe
-mov $0,$1
+mov $0,$3

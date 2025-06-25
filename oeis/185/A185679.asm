@@ -1,12 +1,13 @@
 ; A185679: Number of digits in decimal expansion of n^2.
-; Submitted by Jamie Morken(w3)
+; Submitted by loader3229
 ; 1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+; Formula: a(n) = logint(10*floor((n^2)/10)+1,10)+1
 
 pow $0,2
 div $0,10
-lpb $0
-  div $0,10
-  add $1,1
-lpe
+mul $0,10
+add $0,1
+log $0,10
+mov $1,$0
 add $1,1
 mov $0,$1

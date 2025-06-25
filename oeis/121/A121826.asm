@@ -1,18 +1,25 @@
 ; A121826: a(n) = Product_{k=1..n} D(k), where D() are the doublets, A020338.
-; Submitted by Jamie Morken(l1)
+; Submitted by JagDoc
 ; 11,242,7986,351384,19326120,1275523920,98215341840,8642950081920,855652058110080,864208578691180800,960135730925901868800,1163684505882193064985600,1527917756223319494326092800,2160475707299773764977095219200,3273120696559157253940299257088000
-; Formula: a(n) = 11*b(n-1), b(n) = A020338(n+1)*b(n-1), b(0) = 1
+; Formula: a(n) = truncate((11*b(n-1))/2), b(n) = b(n-1)*(truncate(10^(logint(n+1,10)+1))*(n+1)+n+1), b(0) = 2
 
 #offset 1
 
-mov $1,1
+mov $1,2
 sub $0,1
 lpb $0
   mov $2,$0
   add $2,1
-  seq $2,20338 ; Doublets: base-10 representation is the juxtaposition of two identical strings.
+  mov $4,$2
+  log $4,10
+  add $4,1
+  mov $3,10
+  pow $3,$4
+  mul $3,$2
+  add $3,$2
   sub $0,1
-  mul $1,$2
+  mul $1,$3
 lpe
 mov $0,$1
 mul $0,11
+div $0,2

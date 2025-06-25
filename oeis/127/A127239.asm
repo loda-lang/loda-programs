@@ -1,14 +1,10 @@
 ; A127239: Central coefficients of Thue-Morse binomial triangle A127236.
-; Submitted by Simon Strandgaard
+; Submitted by loader3229
 ; 1,1,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,1,1,1,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,1,1,1,1,1,0
+; Formula: a(n) = sumdigits(binomial(2*n,n),2)%2
 
 mov $1,$0
 mul $0,2
 bin $0,$1
-mov $2,-2
-bin $2,$0
-lpb $2
-  div $2,2
-  sub $0,$2
-lpe
+dgs $0,2
 mod $0,2

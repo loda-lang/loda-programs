@@ -1,7 +1,7 @@
 ; A092392: Triangle read by rows: T(n,k) = C(2*n - k,n), 0 <= k <= n.
 ; Submitted by loader3229
 ; 1,2,1,6,3,1,20,10,4,1,70,35,15,5,1,252,126,56,21,6,1,924,462,210,84,28,7,1,3432,1716,792,330,120,36,8,1,12870,6435,3003,1287,495,165,45,9,1,48620,24310,11440,5005,2002,715,220,55,10,1,184756,92378,43758,19448,8008,3003,1001,286,66,11,1,705432,352716,167960,75582,31824,12376,4368,1365,364,78,12,1,2704156,1352078
-; Formula: a(n) = binomial(2*truncate((sqrtint(8*n+8)-1)/2)-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2),-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2)+truncate((sqrtint(8*n+8)-1)/2))
+; Formula: a(n) = binomial(2*truncate((sqrtint(8*n+8)-1)/2)-n+binomial(truncate((sqrtint(8*n+8)-1)/2)+1,2),truncate((sqrtint(8*n+8)-1)/2))
 
 add $0,1
 mov $1,$0
@@ -14,9 +14,8 @@ add $3,1
 bin $3,2
 sub $0,$3
 sub $0,1
-mul $0,-1
-add $0,$1
 mov $2,$1
-add $2,$0
-bin $2,$0
+mul $2,2
+sub $2,$0
+bin $2,$1
 mov $0,$2

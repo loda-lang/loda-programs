@@ -11,8 +11,6 @@ pow $2,2
 lpb $2
   mov $3,$1
   seq $3,4086 ; Read n backwards (referred to as R(n) in many sequences).
-  trn $3,1
-  add $3,1
   seq $3,46660 ; Excess of n = number of prime divisors (with multiplicity) - number of prime divisors (without multiplicity).
   mul $3,2
   max $3,1

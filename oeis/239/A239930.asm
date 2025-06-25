@@ -1,5 +1,5 @@
 ; A239930: Number of distinct quarter-squares dividing n.
-; Submitted by Jamie Morken(w1)
+; Submitted by Science United
 ; 1,2,1,3,1,3,1,3,2,2,1,5,1,2,1,4,1,4,1,4,1,2,1,5,2,2,2,3,1,4,1,4,1,2,1,7,1,2,1,4,1,4,1,3,2,2,1,6,2,3,1,3,1,4,1,4,1,2,1,7,1,2,2,5,1,3,1,3,1,2,1,8,1,2,2,3,1,3,1,5
 
 #offset 1
@@ -8,7 +8,7 @@ mov $3,1
 mov $4,1
 mov $2,$0
 lpb $2
-  sub $2,2
+  sub $2,$3
   add $3,$5
   add $4,$3
   mov $5,$0

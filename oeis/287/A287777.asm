@@ -6,21 +6,19 @@
 
 mov $2,$0
 sub $0,1
-add $2,1
 pow $2,2
 lpb $2
   add $1,1
   mov $5,$1
   div $5,3
-  add $5,1
-  seq $5,35612 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 1) contains n.
-  add $5,1
+  mov $7,$5
+  seq $7,35614 ; Horizontal para-Fibonacci sequence: says which column of Wythoff array (starting column count at 0) contains n+1.
   mov $3,$1
   add $3,1
   mov $6,$3
   mul $6,2
   div $6,3
-  add $6,$5
+  add $6,$7
   mod $6,2
   sub $0,$6
   mov $4,$0

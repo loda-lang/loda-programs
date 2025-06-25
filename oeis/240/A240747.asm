@@ -1,5 +1,5 @@
 ; A240747: Least number k > 0 such that n^k - (n-1)^k - ... - 3^k - 2^k - 1 is prime, or 0 if no such k exists.
-; Submitted by loader3229
+; Submitted by shiva
 ; 2,0,2,4,4,0,0,0,8,0,0,12
 
 #offset 2
@@ -14,9 +14,7 @@ lpb $5
   mov $2,$3
   mov $3,$1
   sub $3,1
-  mov $4,$0
-  geq $4,$3
-  add $1,$4
+  add $1,1
 lpe
 mov $4,$0
 sub $4,$2
